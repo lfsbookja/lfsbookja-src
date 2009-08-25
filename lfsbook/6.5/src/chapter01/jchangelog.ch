@@ -42,6 +42,15 @@
 -->
 
     <listitem>
+      <para>2009-08-25, 訳出率 93.8%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/pkgmgt.ch: 修正。#18398</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-08-24, 訳出率 93.8%</para>
       <itemizedlist>
         <listitem>

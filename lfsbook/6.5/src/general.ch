@@ -13,7 +13,7 @@
 @y
 <!ENTITY version "6.5">
 <!ENTITY releasedate "2009年8月16日">
-<!ENTITY jversion "20090824">
+<!ENTITY jversion "20090825">
 <!ENTITY ratio_japanese "93.8">
 <!ENTITY copyrightdate "1999-2009"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "6.5">
