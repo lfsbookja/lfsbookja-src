@@ -1,0 +1,22 @@
+BOOKdir = $(top_builddir)/@bookdir@/server/other
+EXTRA_DIST = cvsserver.ch dhcp.ch leafnode.ch openldap.ch other.ch rsync.ch \
+	svnserver.ch
+srcdir = @srcdir@
+srcs = cvsserver.xml dhcp.xml leafnode.xml openldap.xml other.xml rsync.xml \
+	svnserver.xml
+SUFFIXES = .ch .xml
+.ch.xml:
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+
+all: ctie $(srcs)
+
+ctie:
+	cd $(top_builddir)/ctie && make ctie
+
+cvsserver.xml: $(BOOKdir)/$@ $(srcdir)/cvsserver.ch
+dhcp.xml: $(BOOKdir)/$@ $(srcdir)/dhcp.ch
+leafnode.xml: $(BOOKdir)/$@ $(srcdir)/leafnode.ch
+openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
+other.xml: $(BOOKdir)/$@ $(srcdir)/other.ch
+rsync.xml: $(BOOKdir)/$@ $(srcdir)/rsync.ch
+svnserver.xml: $(BOOKdir)/$@ $(srcdir)/svnserver.ch
