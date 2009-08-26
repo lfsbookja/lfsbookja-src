@@ -449,8 +449,8 @@ uninstall-am: uninstall-binPROGRAMS
 	uninstall-am uninstall-binPROGRAMS
 
 
-all: ctie
-ctie: ctie.o
+all: ctie$(EXEEXT)
+ctie$(EXEEXT): ctie.o
 	$(CC) $(CFLAGS) $^ -o $@
 ctie.o: $(srcdir)/ctie.c
 	$(CC) $(CFLAGS) -c $^
