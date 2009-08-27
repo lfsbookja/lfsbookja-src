@@ -47,6 +47,64 @@
     <title>変更履歴：</title>
 @z
 
+@x
+      <para>2009-08-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgraded to Udev-146. Fixes
+          <ulink url="&lfs-ticket-root;2473">#2473</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Perl-5.10.1. Fixes
+          <ulink url="&lfs-ticket-root;2479">#2479</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Linux-2.6.30.5. Fixes
+          <ulink url="&lfs-ticket-root;2475">#2475</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgraded to Less-436. Fixes
+          <ulink url="&lfs-ticket-root;2471">2471</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgraded to E2fsprogs-1.41.9. Fixes
+          <ulink url="&lfs-ticket-root;2478">2478</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgraded to Coreutils-7.5. Fixes
+          <ulink url="&lfs-ticket-root;2477">#2477</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-08-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Udev-146へのアップグレード。
+          <ulink url="&lfs-ticket-root;2473">#2473</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Perl-5.10.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2479">#2479</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.30.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2475">#2475</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Less-436 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2471">2471</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - E2fsprogs-1.41.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2478">2478</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils-7.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2477">#2477</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x 2009-08-19
           <para>[bdubbs] - Reworded the notes in the General Compilation
           Instructions and added a note to bin-utils to have users
