@@ -26,6 +26,7 @@
   go Beyond LFS - hence BLFS.</para>
 @y
 <para>
+
 Having helped out with Linux From Scratch for a short time, I
 noticed that we were getting many queries as to how to do things beyond
 the base LFS system.  At the time, the only assistance specifically offered
@@ -77,7 +78,7 @@ go Beyond LFS - hence BLFS.
 @x
   <para>Enjoy using BLFS.</para>
 @y
-  <para>Enjoy using BLFS.</para>
+  <para>BLFS を楽しんでください。</para>
 @z
 
 @x

@@ -129,52 +129,6 @@ it in a custom location.
 @z
 
 @x
-    <para>If you've installed the X Window System in any prefix other than
-    <filename>/usr</filename>, become the <systemitem
-    class="username">root</systemitem> user and update the library linker's
-    cache by adding <filename class='directory'>/usr/X11R6/lib</filename>
-    to <filename>/etc/ld.so.conf</filename> and running
-    <command>ldconfig</command>.</para>
-@y
-    <para>If you've installed the X Window System in any prefix other than
-    <filename>/usr</filename>, become the <systemitem
-    class="username">root</systemitem> user and update the library linker's
-    cache by adding <filename class='directory'>/usr/X11R6/lib</filename>
-    to <filename>/etc/ld.so.conf</filename> and running
-    <command>ldconfig</command>.</para>
-@z
-
-@x
-    <para>Additionally, while still the <systemitem
-    class="username">root</systemitem> user, ensure
-    <filename class="directory">/usr/X11R6/bin</filename> and
-    <filename class="directory">/usr/X11R6/lib/pkgconfig</filename> are added
-    to the <envar>PATH</envar> and <envar>PKG_CONFIG_PATH</envar>
-    environment variables, respectively. Instructions for doing this are
-    described in the section <xref linkend="postlfs-config-profile"/>.</para>
-@y
-    <para>Additionally, while still the <systemitem
-    class="username">root</systemitem> user, ensure
-    <filename class="directory">/usr/X11R6/bin</filename> and
-    <filename class="directory">/usr/X11R6/lib/pkgconfig</filename> are added
-    to the <envar>PATH</envar> and <envar>PKG_CONFIG_PATH</envar>
-    environment variables, respectively. Instructions for doing this are
-    described in the section <xref linkend="postlfs-config-profile"/>.</para>
-@z
-
-@x
-    <para>Ensure you replace
-    <filename class="directory">/usr/X11R6</filename> with
-    <envar>$XORG_PREFIX</envar> in the previous two paragraphs if you did not
-    create the compatibility symlink in the previous step.</para>
-@y
-    <para>Ensure you replace
-    <filename class="directory">/usr/X11R6</filename> with
-    <envar>$XORG_PREFIX</envar> in the previous two paragraphs if you did not
-    create the compatibility symlink in the previous step.</para>
-@z
-
-@x
     <para>As the <systemitem class="username">root</systemitem> user
     create a basic X Window System configuration file with the following
     command:</para>
@@ -222,17 +176,17 @@ it in a custom location.
     man page.  Some things you may want to do are:</para>
 @z
 
-@x
-        <para>Section "Files". Change the order of the font paths searched.
-        You may want to put 100dpi fonts ahead of 75dpi fonts if your system
-        normally comes up closer to 100 dots per inch. You may want to remove
-        some font directories completely.</para>
-@y
-        <para>Section "Files". Change the order of the font paths searched.
-        You may want to put 100dpi fonts ahead of 75dpi fonts if your system
-        normally comes up closer to 100 dots per inch. You may want to remove
-        some font directories completely.</para>
-@z
+% @x
+%         <para>Section "Files". Change the order of the font paths searched.
+%         You may want to put 100dpi fonts ahead of 75dpi fonts if your system
+%         normally comes up closer to 100 dots per inch. You may want to remove
+%         some font directories completely.</para>
+% @y
+%         <para>Section "Files". Change the order of the font paths searched.
+%         You may want to put 100dpi fonts ahead of 75dpi fonts if your system
+%         normally comes up closer to 100 dots per inch. You may want to remove
+%         some font directories completely.</para>
+% @z
 
 @x
         <para>Section "Module". If you are going to install NVIDIA
@@ -306,15 +260,15 @@ it in a custom location.
     wrong.</para>
 @z
 
-@x
-    <para>As the <systemitem class="username">root</systemitem> user, create
-    the configuration directory and move the configuration file to the new
-    directory:</para>
-@y
-    <para>As the <systemitem class="username">root</systemitem> user, create
-    the configuration directory and move the configuration file to the new
-    directory:</para>
-@z
+% @x
+%     <para>As the <systemitem class="username">root</systemitem> user, create
+%     the configuration directory and move the configuration file to the new
+%     directory:</para>
+% @y
+%     <para>As the <systemitem class="username">root</systemitem> user, create
+%     the configuration directory and move the configuration file to the new
+%     directory:</para>
+% @z
 
 @x
     <para>As the <systemitem class="username">root</systemitem> user, create
@@ -811,19 +765,11 @@ it in a custom location.
 @x
           <para><ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>
           - These fonts are replacements for the Bitstream Vera fonts and
-          provide Latin-based scripts with accents and Cyrillic glyphs.
-          The DejaVu fonts by are not aliased to the generic family names
-          by default, so <filename>/etc/fonts/fonts.conf</filename> will
-          have to be edited for it to be recognized by the generic names such
-          as "Sans".  This will be described below.</para>
+          provide Latin-based scripts with accents and Cyrillic glyphs.</para>
 @y
           <para><ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>
           - These fonts are replacements for the Bitstream Vera fonts and
-          provide Latin-based scripts with accents and Cyrillic glyphs.
-          The DejaVu fonts by are not aliased to the generic family names
-          by default, so <filename>/etc/fonts/fonts.conf</filename> will
-          have to be edited for it to be recognized by the generic names such
-          as "Sans".  This will be described below.</para>
+          provide Latin-based scripts with accents and Cyrillic glyphs.</para>
 @z
 
 @x
