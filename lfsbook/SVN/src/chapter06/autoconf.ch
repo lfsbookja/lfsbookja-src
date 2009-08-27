@@ -86,10 +86,13 @@ Autoconf パッケージは、ソースコードを自動的に設定するシ�
           The configuration scripts it produces are independent&mdash;running
           them does not require the <command>autoconf</command> program.</para>
 @y
-          <para>Produces shell scripts that automatically configure software
-          source code packages to adapt to many kinds of Unix-like systems.
-          The configuration scripts it produces are independent&mdash;running
-          them does not require the <command>autoconf</command> program.</para>
+<para>
+
+Produces shell scripts that automatically configure software
+source code packages to adapt to many kinds of Unix-like systems.
+The configuration scripts it produces are independent&mdash;running
+them does not require the <command>autoconf</command> program.
+</para>
 @z
 
 @x autoheader

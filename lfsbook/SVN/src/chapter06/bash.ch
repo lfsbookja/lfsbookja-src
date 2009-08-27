@@ -170,9 +170,8 @@ Bash-&bash-version; の初期リリース以降に発見されたバグを解消
           formatted bug reports concerning <command>bash</command></para>
 @y
 <para>
-
-A shell script to help the user compose and mail standard
-formatted bug reports concerning <command>bash</command>
+<command>bash</command>
+に関連したバグ報告を、標準書式で生成しメール送信することを補助するシェルスクリプトです。
 </para>
 @z
 
@@ -184,12 +183,12 @@ formatted bug reports concerning <command>bash</command>
           well</para>
 @y
 <para>
-
-A symlink to the <command>bash</command> program; when invoked
-as <command>sh</command>, <command>bash</command> tries to mimic the
-startup behavior of historical versions of <command>sh</command> as
-closely as possible, while conforming to the POSIX standard as
-well
+<command>bash</command> プログラムへのシンボリックリンク。
+<command>sh</command>
+として起動された際には、かつてのバージョンである
+<command>sh</command>
+の起動時の動作と、出来るだけ同じになるように振舞います。
+同時に POSIX 標準に適合するよう動作します。
 </para>
 @z
 

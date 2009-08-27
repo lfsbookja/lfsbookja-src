@@ -252,260 +252,334 @@ tty ポートを開いてログイン名の入力を受け付けます。
 </para>
 @z
 
-@x
+@x ctrlaltdel
           <para>Sets the function of the Ctrl+Alt+Del key combination to a
           hard or a soft reset</para>
 @y
-          <para>Sets the function of the Ctrl+Alt+Del key combination to a
-          hard or a soft reset</para>
+<para>
+ハードリセットまたはソフトリセットを行うために
+Ctrl+Alt+Del キー押下時の機能を設定します。
+</para>
 @z
 
-@x
+@x cytune
           <para>Tunes the parameters of the serial line drivers for
           Cyclades cards</para>
 @y
-          <para>Tunes the parameters of the serial line drivers for
-          Cyclades cards</para>
+<para>
+Cyclades カード用のシリアルラインドライバのパラメータを設定します。
+</para>
 @z
 
-@x
+@x ddate
           <para>Gives the Discordian date or converts the given Gregorian date
           to a Discordian one</para>
 @y
-          <para>Gives the Discordian date or converts the given Gregorian date
-          to a Discordian one</para>
+<para>
+ディスコルディア暦の (Discordian) 日付を表示します。
+または指定されたグレゴリオ暦の (Gregorian) 日付をディスコルディア暦の日付に変換します。
+</para>
 @z
 
-@x
+@x delpart
           <para>Asks the Linux kernel to remove a partition</para>
 @y
-          <para>Asks the Linux kernel to remove a partition</para>
+<para>
+Linux カーネルに対してパーティションが削除されているかどうかを確認します。
+</para>
 @z
 
-@x
+@x dmesg
           <para>Dumps the kernel boot messages</para>
 @y
-          <para>Dumps the kernel boot messages</para>
+<para>
+カーネルのブートメッセージをダンプします。
+</para>
 @z
 
-@x
+@x fdformat
           <para>Low-level formats a floppy disk</para>
 @y
-          <para>Low-level formats a floppy disk</para>
+<para>
+フロッピーディスクの低レベル (low-level) フォーマットを行います。
+</para>
 @z
 
-@x
+@x fdisk
           <para>Manipulates the paritition table of the given device</para>
 @y
-          <para>Manipulates the paritition table of the given device</para>
+<para>
+指定されたデバイスのパーティションテーブルを操作します。
+</para>
 @z
 
-@x
+@x findfs
           <para>Finds a file system by label or Universally Unique Identifier
           (UUID)</para>
 @y
-          <para>Finds a file system by label or Universally Unique Identifier
-          (UUID)</para>
+<para>
+ファイルシステムに対するラベルまたは UUID (Universally Unique Identifier)
+を使ってファイルシステムを検索します。
+</para>
 @z
 
-@x
+@x flock
           <para>Acquires a file lock and then executes a command with the lock
           held</para>
 @y
-          <para>Acquires a file lock and then executes a command with the lock
-          held</para>
+<para>
+ファイルロックを取得して、ロックしたままコマンドを実行します。
+</para>
 @z
 
-@x
+@x fsck
           <para>Is used to check, and optionally repair, file systems</para>
 @y
-          <para>Is used to check, and optionally repair, file systems</para>
+<para>
+ファイルシステムのチェックを行い、必要に応じて修復を行います。
+</para>
 @z
 
-@x
+@x fsck.cramfs
           <para>Performs a consistency check on the Cramfs file system on the
           given device</para>
 @y
-          <para>Performs a consistency check on the Cramfs file system on the
-          given device</para>
+<para>
+指定されたデバイス上の Cramfs ファイルシステムに対して一貫性検査
+(consistency check) を行います。
+</para>
 @z
 
-@x
+@x fsck.minix
           <para>Performs a consistency check on the Minix file system on the
           given device</para>
 @y
-          <para>Performs a consistency check on the Minix file system on the
-          given device</para>
+<para>
+指定されたデバイス上の Minix ファイルシステムに対して一貫性検査
+(consistency check) を行います。
+</para>
 @z
 
-@x
+@x getopt
           <para>Parses options in the given command line</para>
 @y
-          <para>Parses options in the given command line</para>
+<para>
+指定されたコマンドラインのオプション引数を解析します。
+</para>
 @z
 
-@x
+@x hexdump
           <para>Dumps the given file in hexadecimal or in another given
           format</para>
 @y
-          <para>Dumps the given file in hexadecimal or in another given
-          format</para>
+<para>
+指定されたファイルを 16進数書式または他の指定された書式でダンプします。
+</para>
 @z
 
-@x
+@x hwclock
           <para>Reads or sets the system's hardware clock, also called
           the Real-Time Clock (RTC) or Basic Input-Output System (BIOS)
           clock</para>
 @y
-          <para>Reads or sets the system's hardware clock, also called
-          the Real-Time Clock (RTC) or Basic Input-Output System (BIOS)
-          clock</para>
+<para>
+システムのハードウェアクロックを読み取ったり設定したりします。
+このハードウェアクロックはリアルタイムクリック
+(Real-Time Clock; RTC)
+または BIOS (Basic Input-Output System) クロックとも呼ばれます。
+</para>
 @z
 
-@x
+@x i386
           <para>A symbolic link to setarch</para>
 @y
-          <para>A symbolic link to setarch</para>
+<para>
+setarch へのシンボリックリンク。
+</para>
 @z
 
-@x
+@x ionice
           <para>Gets or sets the io scheduling class and priority for a program</para>
 @y
-          <para>Gets or sets the io scheduling class and priority for a program</para>
+<para>
+プログラムに対する I/O スケジュールクラスとスケジュール優先度を取得または設定します。
+</para>
 @z
 
-@x
+@x ipcmk
           <para>Creates various IPC resources</para>
 @y
-          <para>Creates various IPC resources</para>
+<para>
+様々な IPC リソースを生成します。
+</para>
 @z
 
-@x
+@x ipcrm
           <para>Removes the given Inter-Process Communication (IPC) resource</para>
 @y
-          <para>Removes the given Inter-Process Communication (IPC) resource</para>
+<para>
+指定された IPC (Inter-Process Communication) リソースを削除します。
+</para>
 @z
 
-@x
+@x ipcs
           <para>Provides IPC status information</para>
 @y
-          <para>Provides IPC status information</para>
+<para>
+IPC のステータス情報を提供します。
+</para>
 @z
 
-@x
+@x isosize
           <para>Reports the size of an iso9660 file system</para>
 @y
-          <para>Reports the size of an iso9660 file system</para>
+<para>
+iso9660 ファイルシステムのサイズを表示します。
+</para>
 @z
 
-@x
+@x ldattach
           <para>Attaches a line discipline to a serial line</para>
 @y
-          <para>Attaches a line discipline to a serial line</para>
+<para>
+シリアル回線 (serial line) に対して回線規則 (line discipline)
+を割り当てます。
+</para>
 @z
 
-@x
+@x line
           <para>Copies a single line</para>
 @y
-          <para>Copies a single line</para>
+<para>
+単一行をコピーします。
+</para>
 @z
 
-@x
+@x linux32
           <para>A symbolic link to setarch</para>
 @y
-          <para>A symbolic link to setarch</para>
+<para>
+setarch へのシンボリックリンク。
+</para>
 @z
 
-@x
+@x linux64
           <para>A symbolic link to setarch</para>
 @y
-          <para>A symbolic link to setarch</para>
+<para>
+setarch へのシンボリックリンク。
+</para>
 @z
 
-@x
+@x logger
           <para>Enters the given message into the system log</para>
 @y
-          <para>Enters the given message into the system log</para>
+<para>
+指定したメッセージをシステムログに出力します。
+</para>
 @z
 
-@x
+@x look
           <para>Displays lines that begin with the given string</para>
 @y
-          <para>Displays lines that begin with the given string</para>
+<para>
+指定された文字列で始まる行を表示します。
+</para>
 @z
 
-@x
+@x losetup
           <para>Sets up and controls loop devices</para>
 @y
-          <para>Sets up and controls loop devices</para>
+<para>
+ループデバイス (loop device) の設定と制御を行います。
+</para>
 @z
 
-@x
+@x lscpu
           <para>Prints CPU architechture information</para>
 @y
-          <para>Prints CPU architechture information</para>
+<para>
+CPU アーキテクチャの情報を表示します。
+</para>
 @z
 
-@x
+@x mcookie
           <para>Generates magic cookies (128-bit random hexadecimal numbers) for
           <command>xauth</command></para>
 @y
-          <para>Generates magic cookies (128-bit random hexadecimal numbers) for
-          <command>xauth</command></para>
+<para>
+<command>xauth</command>
+のためのマジッククッキー (128ビットのランダムな16進数値) を生成します。
+</para>
 @z
 
-@x
+@x mkfs
           <para>Builds a file system on a device (usually a hard disk
           partition)</para>
 @y
-          <para>Builds a file system on a device (usually a hard disk
-          partition)</para>
+<para>
+デバイス上にファイルシステムを構築します。
+(通常はハードディスクパーティションに対して行います。)
+</para>
 @z
 
-@x
+@x mkfs.bfs
           <para>Creates a Santa Cruz Operations (SCO) bfs file system</para>
 @y
-          <para>Creates a Santa Cruz Operations (SCO) bfs file system</para>
+<para>
+SCO (Santa Cruz Operations) の bfs ファイルシステムを生成します。
+</para>
 @z
 
-@x
+@x mkfs.cramfs
           <para>Creates a cramfs file system</para>
 @y
-          <para>Creates a cramfs file system</para>
+<para>
+cramfs ファイルシステムを生成します。
+</para>
 @z
 
-@x
+@x mkfs.minix
           <para>Creates a Minix file system</para>
 @y
-          <para>Creates a Minix file system</para>
+<para>
+Minix ファイルシステムを生成します。
+</para>
 @z
 
-@x
+@x mkswap
           <para>Initializes the given device or file to be used as a swap
           area</para>
 @y
-          <para>Initializes the given device or file to be used as a swap
-          area</para>
+<para>
+指定されたデバイスまたはファイルをスワップ領域として初期化します。
+</para>
 @z
 
-@x
+@x more
           <para>A filter for paging through text one screen at a time</para>
 @y
-          <para>A filter for paging through text one screen at a time</para>
+<para>
+テキストを一度に一画面分だけ表示するフィルタプログラム。
+</para>
 @z
 
-@x
+@x mount
           <para>Attaches the file system on the given device to a specified
           directory in the file-system tree</para>
 @y
-          <para>Attaches the file system on the given device to a specified
-          directory in the file-system tree</para>
+<para>
+ファイルシステムツリー内の特定のディレクトリを、指定されたデバイス上のファイルシステムに割り当てます。
+</para>
 @z
 
-@x
+@x namei
           <para>Shows the symbolic links in the given pathnames</para>
 @y
-          <para>Shows the symbolic links in the given pathnames</para>
+<para>
+
+Shows the symbolic links in the given pathnames
+</para>
 @z
 
 @x

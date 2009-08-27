@@ -42,6 +42,18 @@
 -->
 
     <listitem>
+      <para>2009-08-27, 訳出率 93.9%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/bash.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/util-linux-ng.ch: 修正。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-08-25, 訳出率 93.8%</para>
       <itemizedlist>
         <listitem>
