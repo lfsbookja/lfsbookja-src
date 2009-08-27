@@ -23,13 +23,12 @@
 @z
 
 @x
-    <para>First apply the following patch to address security issues and adapt
-    some hard-wired paths to the C library:</para>
+    <para>First apply the following patch to adapt some hard-wired paths to the
+    C library:</para>
 @y
 <para>
 以下のパッチを適用します。
-これによりセキュリティに関する問題を解消します。
-また C ライブラリに対する固定的なパスを指定します。
+これは C ライブラリに対する固定的なパスを適用します。
 </para>
 @z
 

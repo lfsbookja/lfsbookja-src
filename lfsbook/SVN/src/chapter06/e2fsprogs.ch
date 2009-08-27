@@ -35,14 +35,14 @@ E2fsprogs パッケージは <systemitem class="filesystem">ext2</systemitem>
 %</para>
 %@z
 
-@x
-    <para>Make sure the version date is in a format compatible with 
-    <command>configure</command>:</para>
-@y
-<para>
-バージョン日付の書式を <command>configure</command> と互換があるように変更します。
-</para>
-@z
+% @x
+%     <para>Make sure the version date is in a format compatible with 
+%     <command>configure</command>:</para>
+% @y
+% <para>
+% バージョン日付の書式を <command>configure</command> と互換があるように変更します。
+% </para>
+% @z
 
 @x
     <para>The E2fsprogs documentation recommends that the package be built in

@@ -272,19 +272,19 @@
       </listitem>
 @z
 
-@x
-      <term>Perl Consolidated Patch - <token>&perl-consolidated-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&perl-consolidated-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-consolidated-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Perl Consolidated Patch - <token>&perl-consolidated-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&perl-consolidated-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-consolidated-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Perl Consolidated Patch - <token>&perl-consolidated-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&perl-consolidated-patch;"/></para>
+%         <para>MD5 sum: <literal>&perl-consolidated-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Perl Consolidated Patch - <token>&perl-consolidated-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&perl-consolidated-patch;"/></para>
+%         <para>MD5 sum: <literal>&perl-consolidated-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Procps Watch Patch - <token>&procps-watch-patch-size;</token>:</term>

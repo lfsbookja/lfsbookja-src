@@ -31,14 +31,14 @@ Perl の設定ファイルが <filename>/etc/hosts</filename>
 </para>
 @z
 
-@x
-    <para>The following patch fixes known vulnerabilities and other issues
-    identified by the developers:</para>
-@y
-<para>
-以下のパッチは、開発者が認識している脆弱性とその他の不備を修正するものです。
-</para>
-@z
+% @x
+%     <para>The following patch fixes known vulnerabilities and other issues
+%     identified by the developers:</para>
+% @y
+% <para>
+% 以下のパッチは、開発者が認識している脆弱性とその他の不備を修正するものです。
+% </para>
+% @z
 
 @x
     <para>This version of Perl now builds the Compress::Raw::Zlib module. By
