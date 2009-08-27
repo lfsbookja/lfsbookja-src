@@ -42,7 +42,7 @@
 -->
 
     <listitem>
-      <para>2009-08-27, 訳出率 93.9%</para>
+      <para>2009-08-27, 訳出率 94.0%</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] - SVN-20090826 対応。</para>

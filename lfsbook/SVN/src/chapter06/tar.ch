@@ -68,15 +68,18 @@
           <para>Remotely manipulates a magnetic
           tape drive through an interprocess communication connection</para>
 @y
-          <para>Remotely manipulates a magnetic
-          tape drive through an interprocess communication connection</para>
+<para>
+プロセス間通信のコネクションを通じて磁気テープドライブを遠隔操作します。
+</para>
 @z
 
 @x tar
           <para>Creates, extracts files from, and lists the contents of archives,
           also known as tarballs</para>
 @y
-          <para>Creates, extracts files from, and lists the contents of archives,
-          also known as tarballs</para>
+<para>
+アーカイブの生成、アーカイブからのファイル抽出、アーカイブの内容一覧表示を行います。
+アーカイブは tarball とも呼ばれます。
+</para>
 @z
 
