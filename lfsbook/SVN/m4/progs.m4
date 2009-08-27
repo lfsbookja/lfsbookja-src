@@ -43,12 +43,3 @@ else
 fi
 AC_SUBST(bookdir)
 
-SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
-AC_MSG_CHECKING([for the original XML version])
-if test ! "$SVNVER" = "svn-20090819"; then
-  AC_MSG_RESULT([no])
-  AC_MSG_ERROR([Version of the original XML not suitable, should be svn-20090819])
-else
-  AC_MSG_RESULT([$SVNVER])
-fi
-AC_SUBST(SVNVER)
