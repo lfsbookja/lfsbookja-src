@@ -575,7 +575,7 @@ lfs: maketar validxml profile-html wget-list
 	  $(MKDIR_P) $(BASEDIR)/stylesheets; \
 	fi;
 
-	cp $(BOOKdir)/stylesheets/lfs-xsl/*.css $(BASEDIR)/stylesheets
+	cp stylesheets/lfs-xsl/*.css $(BASEDIR)/stylesheets
 	if [ ! -e $(BASEDIR)/images ]; then \
 	  $(MKDIR_P) $(BASEDIR)/images; \
 	fi;

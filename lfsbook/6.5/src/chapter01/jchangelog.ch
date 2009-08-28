@@ -42,7 +42,7 @@
 -->
 
     <listitem>
-      <para>2009-08-28, 訳出率 95.0%</para>
+      <para>2009-08-28, 訳出率 95.6%</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] - src/chapter06/coreutils.ch: 修正。</para>
@@ -67,6 +67,9 @@
         </listitem>
         <listitem>
           <para>[matsuand] - src/appendices/dependencies.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/stylesheets/lfs-xsl/lfs_css.ch: 追加。lfs.css での segbody 幅の調整。</para>
         </listitem>
       </itemizedlist>
     </listitem>
