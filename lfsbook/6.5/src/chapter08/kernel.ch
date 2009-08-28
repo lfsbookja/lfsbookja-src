@@ -389,11 +389,9 @@ ehci_hcd は ohci_hcd や uhci_hcd よりも先にロードしなければなり
 <para>
 Linux システムのエンジンです。
 コンピュータを起動した際には、オペレーティングシステム内にて最初にロードされるものです。
-カーネルはコンピュータのあらゆるハードウェアを検知して初期化します。
-
-then makes these components available as a tree of files to the
-software and turns a single CPU into a multitasking machine capable
-of running scores of programs seemingly at the same time
+カーネルはコンピュータのハードウェアを構成するあらゆるコンポーネントを検知して初期化します。
+そしてそれらのコンポーネントをツリー階層のファイルとして、ソフトウェアが利用できるようにします。
+ただひとつの CPU からマルチタスクを処理するマシンとして、あたかも多数のプログラムが同時稼動しているように仕向けます。
 </para>
 @z
 

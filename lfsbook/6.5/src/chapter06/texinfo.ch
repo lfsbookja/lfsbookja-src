@@ -120,18 +120,21 @@ Makefile 変数である <envar>TEXMF</envar>
           line options. For example, compare <command>man bison</command> and
           <command>info bison</command>.</para>
 @y
-          <para>Used to read info pages which are similar to man pages, but
-          often go much deeper than just explaining all the available command
-          line options. For example, compare <command>man bison</command> and
-          <command>info bison</command>.</para>
+<para>
+info ページを見るために利用します。
+これは man ページに似ていますが、単に利用可能なコマンドラインオプションを説明するだけのものではなく、おそらくはもっと充実しています。
+例えば <command>man bison</command> と <command>info bison</command>
+を比較してみてください。
+</para>
 @z
 
 @x infokey
           <para>Compiles a source file containing Info customizations into a
           binary format</para>
 @y
-          <para>Compiles a source file containing Info customizations into a
-          binary format</para>
+<para>
+Info のカスタマイズ情報を設定したソースファイルをバイナリ形式にコンパイルします。
+</para>
 @z
 
 @x install-info
@@ -148,37 +151,46 @@ info ページをインストールします。
           <para>Translates the given Texinfo source documents into
           info pages, plain text, or HTML</para>
 @y
-          <para>Translates the given Texinfo source documents into
-          info pages, plain text, or HTML</para>
+<para>
+指定された Texinfo ソースファイルを Info ページ、プレーンテキスト、HTML
+ファイルに変換します。
+</para>
 @z
 
 @x pdftexi2dvi
           <para>Used to format the given Texinfo document into a
           Portable Document Format (PDF) file</para>
 @y
-          <para>Used to format the given Texinfo document into a
-          Portable Document Format (PDF) file</para>
+<para>
+指定された Texinfo ドキュメントファイルを PDF
+(Portable Document Format) ファイルに変換します。
+</para>
 @z
 
 @x texi2dvi
           <para>Used to format the given Texinfo document into a
           device-independent file that can be printed</para>
 @y
-          <para>Used to format the given Texinfo document into a
-          device-independent file that can be printed</para>
+<para>
+指定された Texinfo ドキュメントファイルを、デバイスに依存しない印刷可能なファイルに変換します。
+</para>
 @z
 
 @x texi2pdf
           <para>Used to format the given Texinfo document into a
           Portable Document Format (PDF) file</para>
 @y
-          <para>Used to format the given Texinfo document into a
-          Portable Document Format (PDF) file</para>
+<para>
+指定された Texinfo ドキュメントファイルを PDF
+(Portable Document Format) ファイルに変換します。
+</para>
 @z
 
 @x texindex
           <para>Used to sort Texinfo index files</para>
 @y
-          <para>Used to sort Texinfo index files</para>
+<para>
+Texinfo 索引ファイルの並び替えを行います。
+</para>
 @z
 

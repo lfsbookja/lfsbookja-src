@@ -221,7 +221,155 @@ Udev 提供の、一般的に利用されるルールファイルについての
           <para>Provides Udev with a unique string and
           additional information (uuid, label) for an ATA drive</para>
 @y
-          <para>Provides Udev with a unique string and
-          additional information (uuid, label) for an ATA drive</para>
+<para>
+ATA ドライブに対するユニークな文字列と追加情報 (uuid、ラベル)
+を Udev に提供します。
+</para>
+@z
+
+@x cdrom_id
+          <para>Provides Udev with the capabilities of a
+          CD-ROM or DVD-ROM drive</para>
+@y
+<para>
+CD-ROM ドライブや DVD-ROM ドライブの情報を Udev に提供します。
+</para>
+@z
+
+@x collect
+          <para>Given an ID for the current uevent and a list of
+          IDs (for all target uevents), registers the current ID
+          and indicates whether all target IDs have been registered</para>
+@y
+<para>
+現在の uevent の ID と (すべての対象 uevent に対する) ID
+のリストを与えることで、現在の ID を登録し、すべての対象 ID が既に登録済みであるかどうかを示します。
+</para>
+@z
+
+@x create_floppy_devices
+          <para>Creates all possible floppy devices based on the CMOS type</para>
+@y
+<para>
+CMOS タイプに基づく、すべてのフロッピーデバイスを生成します。
+</para>
+@z
+
+@x edd_id
+          <para>Provides Udev with the EDD ID for a BIOS disk drive</para>
+@y
+<para>
+BIOS ディスクドライブに対する EDD ID を Udev に提供する。
+</para>
+@z
+
+@x firmware.sh
+          <para>Uploads firmware to devices</para>
+@y
+<para>
+ファームウェアをデバイスにアップロードします。
+</para>
+@z
+
+@x fstab_import
+          <para>Finds an entry in <filename>/etc/fstab</filename> that
+          matches the current device, and provides its information to
+          Udev</para>
+@y
+<para>
+<filename>/etc/fstab</filename>
+に記述された項目の中から現在のデバイスに合致するものを探し出し、その情報を Udev に提供します。
+</para>
+@z
+
+@x path_id
+          <para>Provides the shortest possible unique hardware path to a
+          device</para>
+@y
+<para>
+デバイスへのパスとして、可能な限り最も短くユニークなハードウェアパスを提供します。
+</para>
+@z
+
+@x scsi_id
+          <para>Provides Udev with a unique SCSI identifier
+          based on the data returned from sending a SCSI INQUIRY command to
+          the specified device</para>
+@y
+<para>
+特定のデバイスに対する SCSI INQUIRY コマンド送信の結果として得られるデータに基づく、ユニークな
+SCSI 識別子を Udev に対して提供します。
+</para>
+@z
+
+@x udevadm
+          <para>Generic udev administration tool: controls the udevd daemon,
+          provides info from the Udev database, monitors uevents, waits for
+          uevents to finish, tests Udev configuration, and triggers uevents
+          for a given device</para>
+@y
+<para>
+汎用的な Udev 管理ツール。
+udevd デーモンの制御、Udev データベースデータの提供、uevent の監視、uevent
+の完了までの待機、Udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
+</para>
+@z
+
+@x udevd
+          <para>A daemon that listens for uevents on the netlink socket,
+          creates devices and runs the configured external programs in
+          response to these uevents</para>
+@y
+<para>
+ネットワークソケット上の uevent を待ち受けるデーモン。
+デバイスを生成し、その uevent に対応する外部プログラムを起動します。
+</para>
+@z
+
+@x usb_id
+          <para>Provides Udev with information about USB
+          devices</para>
+@y
+<para>
+USB デバイスに関する情報を Udev に対して提供します。
+</para>
+@z
+
+@x write_cd_rules
+          <para>A script which generates Udev rules to provide stable names for
+          optical drives (see also <xref linkend="ch-scripts-symlinks"/>)</para>
+@y
+<para>
+光学ドライブに対する固定的な名称を定めた Udev ルールを生成するためのスクリプト。
+(<xref linkend="ch-scripts-symlinks"/> も参照のこと。)
+</para>
+@z
+
+@x write_net_rules
+          <para>A script which generates rules to provide stable names for
+          network interfaces (see also <xref linkend="ch-scripts-network"/>)
+          </para>
+@y
+<para>
+ネットワークインターフェースに対する固定的な名称を定めた Udev ルールを生成するためのスクリプト。
+(<xref linkend="ch-scripts-network"/> も参照のこと。)
+</para>
+@z
+
+@x libudev
+          <para>A library interface to udev device information</para>
+@y
+<para>
+Udev デバイス情報のインターフェースライブラリ。
+</para>
+@z
+
+@x /etc/udev
+          <para>Contains Udev configuration files,
+          device permissions, and rules for device naming</para>
+@y
+<para>
+Udev 設定ファイル、デバイスのパーミッション、デバイス命名規則を定めます。
+</para>
 @z
 

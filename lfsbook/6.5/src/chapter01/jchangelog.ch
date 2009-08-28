@@ -42,6 +42,30 @@
 -->
 
     <listitem>
+      <para>2009-08-28, 訳出率 95.0%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/groff.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/texinfo.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/udev.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter08/kernel.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter09/whatnow.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/appendices/dependencies.ch: 修正。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-08-27, 訳出率 94.0%</para>
       <itemizedlist>
         <listitem>
