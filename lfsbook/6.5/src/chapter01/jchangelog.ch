@@ -45,6 +45,9 @@
       <para>2009-08-28, 訳出率 95.0%</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - src/chapter06/coreutils.ch: 修正。</para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - src/chapter06/groff.ch: 修正。</para>
         </listitem>
         <listitem>
@@ -52,6 +55,9 @@
         </listitem>
         <listitem>
           <para>[matsuand] - src/chapter06/udev.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/util-linux-ng.ch: 修正。</para>
         </listitem>
         <listitem>
           <para>[matsuand] - src/chapter08/kernel.ch: 修正。</para>

@@ -745,3 +745,355 @@ Type ですが日本語訳にはほとんど影響ありません。
 @z
 
 %----------------------------------------------------------------------
+@x MPFR
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
+         Make, Sed and Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
+         Make, Sed, Texinfo</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>GCC</seg>
+@y
+          <seg>GCC</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Ncurses
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, Patch, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, Patch, Sed</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Bash, GRUB, Inetutils, Less, Procps, Psmisc, Readline, Texinfo,
+          Util-linux-ng, and Vim</seg>
+@y
+          <seg>Bash, GRUB, Inetutils, Less, Procps, Psmisc, Readline, Texinfo,
+          Util-linux-ng, Vim</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Patch
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Perl
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
+         Groff, Make, Sed, and Zlib</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
+         Groff, Make, Sed, Zlib</seg>
+@z
+@x
+          <seg>Iana-Etc and Procps</seg>
+@y
+          <seg>Iana-Etc, Procps</seg>
+@z
+@x
+          <seg>Autoconf</seg>
+@y
+          <seg>Autoconf</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Pkg-config
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Procps
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, and Ncurses</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Psmisc
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses,
+         and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make, Ncurses,
+         Sed</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Readline
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Ncurses,
+         Patch, Sed, and Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, Ncurses,
+         Patch, Sed, Texinfo</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Bash</seg>
+@y
+          <seg>Bash</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Sed
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
+         Sed, and Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
+         Sed, Texinfo</seg>
+@z
+@x
+          <seg>Diffutils and Gawk</seg>
+@y
+          <seg>Diffutils, Gawk</seg>
+@z
+@x
+          <seg>E2fsprogs, File, Libtool, and Shadow</seg>
+@y
+          <seg>E2fsprogs, File, Libtool, Shadow</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Shadow
+         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
+         Gettext, Glibc, Grep, Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
+         Gettext, Glibc, Grep, Make, Sed</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Sysklogd
+         <seg>Binutils, Coreutils, GCC, Glibc, Make, and Patch</seg>
+@y
+         <seg>Binutils, Coreutils, GCC, Glibc, Make, Patch</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Sysvinit
+         <seg>Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
+@y
+         <seg>Binutils, Coreutils, GCC, Glibc, Make, Sed</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Tar
+         <seg>Bash, Binutils, Bison, Coreutils, GCC, Gettext, Glibc,
+         Grep, Inetutils, Make, Sed, and Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Bison, Coreutils, GCC, Gettext, Glibc,
+         Grep, Inetutils, Make, Sed, Texinfo</seg>
+@z
+@x
+          <seg>Diffutils, Findutils, Gawk, and Gzip</seg>
+@y
+          <seg>Diffutils, Findutils, Gawk, Gzip</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Tcl
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep,
+         Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep,
+         Make, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Texinfo
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
+         Ncurses, Patch, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
+         Ncurses, Patch, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Udev
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, Sed</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Util-linux-ng
+         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, and Zlib</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
+         Gettext, Glibc, Grep, Make, Ncurses, Sed, Zlib</seg>
+@z
+@x
+          <seg>No testsuite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Vim
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
+         Ncurses, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
+         Ncurses, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Zlib
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>File, Module-Init-Tools, Perl, and Util-linux-ng</seg>
+@y
+          <seg>File, Module-Init-Tools, Perl, Util-linux-ng</seg>
+@z
+

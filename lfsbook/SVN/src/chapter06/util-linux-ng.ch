@@ -577,31 +577,36 @@ Minix ファイルシステムを生成します。
           <para>Shows the symbolic links in the given pathnames</para>
 @y
 <para>
-
-Shows the symbolic links in the given pathnames
+指定されたパスに存在するシンボリックリンクを表示します。
 </para>
 @z
 
-@x
+@x partx
           <para>Tells the kernel about the presence and numbering of on-disk
           partitions</para>
 @y
-          <para>Tells the kernel about the presence and numbering of on-disk
-          partitions</para>
+<para>
+
+Tells the kernel about the presence and numbering of on-disk
+partitions
+</para>
 @z
 
-@x
+@x pg
           <para>Displays a text file one screen full at a time</para>
 @y
-          <para>Displays a text file one screen full at a time</para>
+<para>
+テキストファイルを一度に一画面分表示します。
+</para>
 @z
 
-@x
+@x pivot_root
           <para>Makes the given file system the new root file system of the
           current process</para>
 @y
-          <para>Makes the given file system the new root file system of the
-          current process</para>
+<para>
+指定されたファイルシステムを、現在のプロセスに対する新しいルートファイルシステムにします。
+</para>
 @z
 
 @x
