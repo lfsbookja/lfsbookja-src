@@ -51,7 +51,7 @@
           <para>[matsuand] - src/appendices/license.ch: 修正。</para>
         </listitem>
         <listitem>
-          <para>[matsuand] - src/chapter05/toolchaintechnotes.ch: 修正。</para>
+          <para>[matsuand] - src/chapter05/toolchaintechnotes.ch: 修正。訳出変更予定部分の見直し。</para>
         </listitem>
         <listitem>
           <para>[matsuand] - src/chapter06/autoconf.ch: 修正。</para>

@@ -275,18 +275,19 @@ GCC の configure スクリプトは、利用するツール類を探し出す�
   generally does not rely on toolchain defaults.</para>
 @y
 <para>
-[訳出変更予定]
 次のパッケージは Glibc です。
 Glibc 構築の際に気にかけるべき重要なものは、コンパイラ、バイナリツール、カーネルヘッダです。
 コンパイラについては、一般にはあまり問題にはなりません。
-Glibc は常に PATH ディレクトリにある <command>gcc</command> を用いるからです。
+Glibc は常に configure スクリプトにて指定される <parameter>--host</parameter>
+パラメータに関連づけしたコンパイラを用いるからです。
+我々の作業では <command>i686-lfs-linux-gnu-gcc</command> になります。
 バイナリツールとカーネルヘッダは多少複雑です。
 従って無理なことはせずに有効な configure オプションを選択することが必要です。
 <command>configure</command> 実行の後は
 <filename class="directory">glibc-build</filename>
 ディレクトリにある <filename>config.make</filename>
-ファイルに重要な情報が示されていますので確認してみてください。
-なお <parameter>CC="gcc -B/tools/bin/"</parameter>
+ファイルに重要な情報が示されているので確認してみてください。
+なお <parameter>CC="i686-lfs-gnu-gcc"</parameter>
 とすれば、どこにある実行モジュールを利用するかを制御でき
 <parameter>-nostdinc</parameter> と <parameter>-isystem</parameter>
 を指定すれば、コンパイラに対してインクルードファイルの検索パスを制御できます。
@@ -309,17 +310,14 @@ Glibc がビルドされるメカニズムは自己完結したビルドが行�
   linker in <filename class="directory">/tools/lib</filename>.</para>
 @y
 <para>
-[訳出変更予定]
-Glibc をインストールした後は、検索パスやリンク先のディレクトリを調整して
-<filename class="directory">/tools</filename> ディレクトリのみが用いられるようにします。
-<command>ld</command> はその検索パスを
-<filename class="directory">/tools/lib</filename>
-となるように調整した上でインストールします。
-そして <command>gcc</command> に対してはそのスペックファイルにて
+Glibc をインストールした後は、
+<command>gcc</command> のスペックファイルにて
 <filename class="directory">/tools/lib</filename>
 ディレクトリにある新しいダイナミックリンカを用いるような修正を行います。
-この修正がこの後の処理すべてに有効となります。
-既に述べているように、ダイナミックリンカに対する固定的な検索パスの設定は、ここから生成されるすべての ELF
+この修正により
+<filename class="directory">/tools</filename>
+内での検索とリンクが行われるようにします。
+ダイナミックリンカに対する固定的な検索パスの設定は、ここから生成されるすべての ELF
 (Executable and Link Format) 形式の実行モジュールにも埋め込まれていきます。
 その結果は <userinput>readelf -l &lt;実行モジュール名&gt; | grep interpreter</userinput>
 を実行すれば確認できます。
@@ -377,7 +375,6 @@ Binutils の2回めのビルドにおいては <command>ld</command>
   LFS system.</para>
 @y
 <para>
-[訳出変更予定]
 <xref linkend="chapter-building-system"/>
 での chroot による環境下では、実質的なパッケージとして Glibc を初めにビルドします。
 これは上に述べているように自己完結した性質を目指すためです。
