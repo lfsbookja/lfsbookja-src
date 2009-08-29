@@ -119,13 +119,14 @@ Glibc が提供するこのダイナミックリンカは、プログラムが�
       cross-compiler will produce binaries compatible with the current
       hardware.</para>
 @y
-      <para>Slightly adjusting the name of the working platform, by changing the
-      &quot;vendor&quot; field target triplet by way of the
-      <envar>LFS_TGT</envar> variable, ensures that the first build of Binutils
-      and GCC produces a compatible cross-linker and cross-compiler. Instead of
-      producing binaries for another architecture, the cross-linker and
-      cross-compiler will produce binaries compatible with the current
-      hardware.</para>
+<para>
+動作させているプラットフォームの名前を微妙に変えます。
+三つの組の &quot;ベンダー &quot; フィールドを変更するもので、
+<envar>LFS_TGT</envar> 変数に定め利用します。
+こうしておいて Binutils と GCC
+の初回の構築を行なえば、互換性のあるクロスコンパイラ、クロスリンカを確実に構築できるようになります。
+もう一つ別のアーキテクチャに対する実行モジュールを作らなくても、そのクロスコンパイラとクロスリンカを使えば、生成される実行モジュールは現在のハードウェアに適合したものとなります。
+</para>
 @z
 
 @x

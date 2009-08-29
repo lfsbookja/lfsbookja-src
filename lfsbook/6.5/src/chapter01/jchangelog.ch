@@ -42,6 +42,21 @@
 -->
 
     <listitem>
+      <para>2009-08-29, 訳出率 96.5%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/autoconf.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter05/toolchaintechnotes.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/appendices/acknowledgments.ch: 修正。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-08-28, 訳出率 95.6%</para>
       <itemizedlist>
         <listitem>
