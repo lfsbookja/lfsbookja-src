@@ -343,9 +343,10 @@ Vim がインストールするスペルファイル (spell files)
           commands can be started and <command>view</command> cannot be
           suspended</para>
 @y
-          <para>Is a restricted version of <command>view</command>; no shell
-          commands can be started and <command>view</command> cannot be
-          suspended</para>
+<para>
+<command>view</command> の機能限定版。
+シェルは起動できず、サスペンドも行うことはできません。
+</para>
 @z
 
 @x
@@ -353,50 +354,62 @@ Vim がインストールするスペルファイル (spell files)
           commands can be started and <command>vim</command> cannot be
           suspended</para>
 @y
-          <para>Is a restricted version of <command>vim</command>; no shell
-          commands can be started and <command>vim</command> cannot be
-          suspended</para>
+<para>
+<command>vim</command> の機能限定版。
+シェルは起動できず、サスペンドも行うことはできません。
+</para>
 @z
 
 @x
           <para>Link to <command>vim</command></para>
 @y
-          <para>Link to <command>vim</command></para>
+<para>
+<command>vim</command> へのリンク。
+</para>
 @z
 
 @x
           <para>Starts <command>vim</command> in read-only mode</para>
 @y
-          <para>Starts <command>vim</command> in read-only mode</para>
+<para>
+<command>vim</command> を読み込み専用モード (read-only mode) で起動します。
+</para>
 @z
 
 @x
           <para>Is the editor</para>
 @y
-          <para>Is the editor</para>
+<para>
+エディタ。
+</para>
 @z
 
 @x
           <para>Edits two or three versions of a file with <command>vim</command>
           and show differences</para>
 @y
-          <para>Edits two or three versions of a file with <command>vim</command>
-          and show differences</para>
+<para>
+<command>vim</command> により、同一ファイルにおける２つまたは３つの版を同時に編集し、差異を表示します。
+</para>
 @z
 
 @x
           <para>Teaches the basic keys and commands of
           <command>vim</command></para>
 @y
-          <para>Teaches the basic keys and commands of
-          <command>vim</command></para>
+<para>
+<command>vim</command>
+の基本的なキー操作とコマンドについて教えてくれます。
+</para>
 @z
 
 @x
           <para>Creates a hex dump of the given file; it can
           also do the reverse, so it can be used for binary patching</para>
 @y
-          <para>Creates a hex dump of the given file; it can
-          also do the reverse, so it can be used for binary patching</para>
+<para>
+指定されたファイルの内容を 16進数ダンプとして変換します。
+逆の変換も行うことができるため、バイナリパッチにも利用されます。
+</para>
 @z
 

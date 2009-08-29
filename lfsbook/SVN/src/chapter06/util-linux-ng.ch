@@ -586,9 +586,7 @@ Minix ファイルシステムを生成します。
           partitions</para>
 @y
 <para>
-
-Tells the kernel about the presence and numbering of on-disk
-partitions
+カーネルに対して、ディスク上にパーティションが存在するか、何番が存在するかを伝えます。
 </para>
 @z
 
@@ -609,58 +607,78 @@ partitions
 </para>
 @z
 
-@x
+@x readprofile
           <para>Reads kernel profiling information</para>
 @y
-          <para>Reads kernel profiling information</para>
+<para>
+カーネルのプロファイリング情報を読み込みます。
+</para>
 @z
 
 @x
           <para>Renames the given files, replacing a given string with
           another</para>
 @y
-          <para>Renames the given files, replacing a given string with
-          another</para>
+<!--
+日本語訳註：2009-08-29 matsuand
+これを正直に訳すと回りくどくなってしまう。
+-->
+<para>
+指定されたファイルの名称を変更します。
+</para>
 @z
 
-@x
+@x renice
           <para>Alters the priority of running processes</para>
 @y
-          <para>Alters the priority of running processes</para>
+<para>
+実行中のプロセスの優先度を変更します。
+</para>
 @z
 
-@x
+@x rev
           <para>Reverses the lines of a given file</para>
 @y
-          <para>Reverses the lines of a given file</para>
+<para>
+指定されたファイル内の行の並びを入れ替えます。
+</para>
 @z
 
-@x
+@x rtcwake
           <para>Used to enter a system sleep state until specified wakeup
           time</para>
 @y
-          <para>Used to enter a system sleep state until specified wakeup
-          time</para>
+<para>
+指定された起動時刻までの間、システムをスリープ状態とするモードを指定します。
+</para>
 @z
 
-@x
+@x script
           <para>Makes a typescript of a terminal session</para>
 @y
-          <para>Makes a typescript of a terminal session</para>
+<para>
+端末セッション上での出力結果の写し (typescript) を生成します。
+</para>
 @z
 
-@x
+@x scriptreplay
           <para>Plays back typescripts using timing information</para>
 @y
-          <para>Plays back typescripts using timing information</para>
+<para>
+タイミング情報 (timing information) を利用して、出力結果の写し
+(typescript) を再生します。
+</para>
 @z
 
 @x
           <para>Changes reported architecture in a new program environment and
           sets personality flags</para>
 @y
-          <para>Changes reported architecture in a new program environment and
-          sets personality flags</para>
+<para>
+
+Changes reported architecture in a new program environment and
+sets personality flags
+</para>
 @z
 
 @x

@@ -32,8 +32,8 @@
 本書は <xref linkend="CC"/> に従います。
 </para>
 <para>
-Computer instructions may be extracted from the book under the 
-<xref linkend="MIT"/>.
+本書のインストール手順のコマンドを抜き出したものは
+<xref linkend="MIT"/> に従ってください。
 </para>
 @z
 

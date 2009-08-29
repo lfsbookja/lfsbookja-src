@@ -42,16 +42,31 @@
 -->
 
     <listitem>
-      <para>2009-08-29, 訳出率 96.5%</para>
+      <para>2009-08-29, 訳出率 96.8%</para>
       <itemizedlist>
         <listitem>
-          <para>[matsuand] - src/chapter06/autoconf.ch: 修正。</para>
+          <para>[matsuand] - src/appendices/acknowledgments.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/appendices/license.ch: 修正。</para>
         </listitem>
         <listitem>
           <para>[matsuand] - src/chapter05/toolchaintechnotes.ch: 修正。</para>
         </listitem>
         <listitem>
-          <para>[matsuand] - src/appendices/acknowledgments.ch: 修正。</para>
+          <para>[matsuand] - src/chapter06/autoconf.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/gzip.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/util-linux-ng.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/vim.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/prologue/bookinfo.ch: 修正。</para>
         </listitem>
       </itemizedlist>
     </listitem>
