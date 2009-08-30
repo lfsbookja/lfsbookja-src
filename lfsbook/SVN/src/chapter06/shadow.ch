@@ -315,3 +315,292 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
 </para>
 @z
 
+@x chfn
+          <para>Used to change a user's full name and other information</para>
+@y
+<para>
+ユーザーのフルネームや他の情報を変更します。
+</para>
+@z
+
+@x chgpasswd
+          <para>Used to update group passwords in batch mode</para>
+@y
+<para>
+グループのパスワードをバッチモードにて更新します。
+</para>
+@z
+
+@x chpasswd
+          <para>Used to update user passwords in batch mode</para>
+@y
+<para>
+ユーザーのパスワードをバッチモードにて更新します。
+</para>
+@z
+
+@x chsh
+          <para>Used to change a user's default login shell</para>
+@y
+<para>
+ユーザーのデフォルトのログインシェルを変更します。
+</para>
+@z
+
+@x expiry
+          <para>Checks and enforces the current password expiration policy</para>
+@y
+<para>
+現時点でのパスワード失効に関する設定をチェックし更新します。
+</para>
+@z
+
+@x faillog
+          <para>Is used to examine the log of login failures, to set a maximum
+          number of failures before an account is blocked, or to reset the
+          failure count</para>
+@y
+<para>
+ログイン失敗のログを調査します。
+ログインの失敗を繰り返すことでアカウントがロックされる際の、最大の失敗回数を設定します。
+またその失敗回数をリセットします。
+</para>
+@z
+
+@x gpasswd
+          <para>Is used to add and delete members and administrators to
+          groups</para>
+@y
+<para>
+グループに対してメンバーや管理者を追加・削除します。
+</para>
+@z
+
+@x groupadd
+          <para>Creates a group with the given name</para>
+@y
+<para>
+指定した名前でグループを生成します。
+</para>
+@z
+
+@x groupdel
+          <para>Deletes the group with the given name</para>
+@y
+<para>
+指定された名前のグループを削除します。
+</para>
+@z
+
+@x groupmems
+          <para>Allows a user to administer his/her own group membership list
+          without the requirement of super user privileges.</para>
+@y
+<para>
+スーパーユーザー権限を持たなくても、自分自身のグループのメンバーリストを管理可能とします。
+</para>
+@z
+
+@x groupmod
+          <para>Is used to modify the given group's name or GID</para>
+@y
+<para>
+指定されたグループの名前や GID を修正します。
+</para>
+@z
+
+@x grpck
+          <para>Verifies the integrity of the group files
+          <filename>/etc/group</filename> and
+          <filename>/etc/gshadow</filename></para>
+@y
+<para>
+グループファイル
+<filename>/etc/group</filename> と
+<filename>/etc/gshadow</filename>
+の整合性を確認します。
+</para>
+@z
+
+@x grpconv
+          <para>Creates or updates the shadow group file from the normal
+          group file</para>
+@y
+<para>
+通常のグループファイルから Shadow グループファイルを生成・更新します。
+</para>
+@z
+
+@x grpunconv
+          <para>Updates <filename>/etc/group</filename> from
+          <filename>/etc/gshadow</filename> and then deletes the latter</para>
+@y
+<para>
+<filename>/etc/gshadow</filename> ファイルを元に <filename>/etc/group</filename>
+ファイルを更新し <filename>/etc/gshadow</filename> ファイルを削除します。
+</para>
+@z
+
+@x lastlog
+          <para>Reports the most recent login of all users or of a
+          given user</para>
+@y
+<para>
+全ユーザーの中での最新ログインの情報、または指定ユーザーの最新ログインの情報を表示します。
+</para>
+@z
+
+@x login
+          <para>Is used by the system to let users sign on</para>
+@y
+<para>
+ユーザーのログインを行います。
+</para>
+@z
+
+@x logoutd
+          <para>Is a daemon used to enforce restrictions on log-on time
+          and ports</para>
+@y
+<para>
+ログオン時間とポートに対する制限を実施するためのデーモン。
+</para>
+@z
+
+@x newgrp
+          <para>Is used to change the current GID during a login session</para>
+@y
+<para>
+ログインセッション中に現在の GID を変更します。
+</para>
+@z
+
+@x newusers
+          <para>Is used to create or update an entire series of user
+          accounts</para>
+@y
+<!--
+日本語訳註： 2009-08-30 matsuand
+an entire series は何を意図しているのか
+-->
+<para>
+ユーザーアカウントの情報を生成または更新します。
+</para>
+@z
+
+@x nologin
+          <para>Displays a message that an account is not available. Designed
+          to be used as the default shell for accounts that have been
+          disabled</para>
+@y
+<para>
+ユーザーアカウントが利用不能であることをメッセージ表示します。
+利用不能なユーザーアカウントに対するデフォルトシェルとして利用することを意図しています。
+</para>
+@z
+
+@x passwd
+          <para>Is used to change the password for a user or group account</para>
+@y
+<para>
+ユーザーアカウントまたはグループアカウントに対するパスワードを変更します。
+</para>
+@z
+
+@x pwck
+          <para>Verifies the integrity of the password files
+          <filename>/etc/passwd</filename> and
+          <filename>/etc/shadow</filename></para>
+@y
+<para>
+パスワードファイル
+<filename>/etc/passwd</filename> と
+<filename>/etc/shadow</filename>
+の整合性を確認します。
+</para>
+@z
+
+@x pwconv
+          <para>Creates or updates the shadow password file from the normal
+          password file</para>
+@y
+<para>
+通常のパスワードファイルを元に shadow パスワードファイルを生成・更新します。
+</para>
+@z
+
+@x pwunconv
+          <para>Updates <filename>/etc/passwd</filename> from
+          <filename>/etc/shadow</filename> and then deletes the latter</para>
+@y
+<para>
+<filename>/etc/shadow</filename> ファイルを元に <filename>/etc/passwd</filename>
+ファイルを更新し <filename>/etc/shadow</filename> を削除します。
+</para>
+@z
+
+@x sg
+          <para>Executes a given command while the user's GID
+          is set to that of the given group</para>
+@y
+<para>
+ユーザーの GID を指定されたグループにセットした上で、指定されたコマンドを実行します。
+</para>
+@z
+
+@x su
+          <para>Runs a shell with substitute user and group IDs</para>
+@y
+<para>
+ユーザー ID とグループ ID を変更してシェルを実行します。
+</para>
+@z
+
+@x useradd
+          <para>Creates a new user with the given name, or updates the default
+          new-user information</para>
+@y
+<para>
+指定した名前で新たなユーザーを生成します。
+あるいは新規ユーザーのデフォルトの情報を更新します。
+</para>
+@z
+
+@x userdel
+          <para>Deletes the given user account</para>
+@y
+<para>
+指定されたユーザーアカウントを削除します。
+</para>
+@z
+
+@x usermod
+          <para>Is used to modify the given user's login name, User
+          Identification (UID), shell, initial group, home directory, etc.</para>
+@y
+<para>
+指定されたユーザーのログイン名、UID
+(User Identification)、利用シェル、初期グループ、ホームディレクトリなどを変更します。
+</para>
+@z
+
+@x vigr
+          <para>Edits the <filename>/etc/group</filename> or
+          <filename>/etc/gshadow</filename> files</para>
+@y
+<para>
+<filename>/etc/group</filename> ファイル、あるいは
+<filename>/etc/gshadow</filename> ファイルを編集します。
+</para>
+@z
+
+@x vipw
+          <para>Edits the <filename>/etc/passwd</filename> or
+          <filename>/etc/shadow</filename> files</para>
+@y
+<para>
+<filename>/etc/passwd</filename> ファイル、あるいは
+<filename>/etc/shadow</filename> ファイルを編集します。
+</para>
+@z
+
