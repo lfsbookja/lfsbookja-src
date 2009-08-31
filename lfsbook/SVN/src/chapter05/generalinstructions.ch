@@ -51,10 +51,9 @@
     problem, but does prompt the warning.</para>
 @y
 <para>
-コンパイルの最中に、警告メッセージが画面上に出力されることがよくありますが、これらは普通のことで問題はないため無視して構いません。
-
-These warnings are as they appear&mdash;warnings about
-deprecated, but not invalid, use of the C or C++ syntax. 
+コンパイルの最中に、警告メッセージが画面上に出力されることがよくあります。
+これは問題はないため無視して構いません。
+警告メッセージは、メッセージ内に説明されているように、C や C++ の文法が誤りではないものの推奨されていないものであることを示しています。
 C 言語の標準はよく変更されますが、パッケージの中には古い基準に従っているものもあります。
 問題はないのですが、警告として画面表示されることになるわけです。
 </para>
