@@ -13,8 +13,8 @@
 @y
 <!ENTITY version "6.5">
 <!ENTITY releasedate "2009年8月16日">
-<!ENTITY jversion "20090829">
-<!ENTITY ratio_japanese "97.1">
+<!ENTITY jversion "20090901">
+<!ENTITY ratio_japanese "97.2">
 <!ENTITY copyrightdate "1999-2009"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "6.5">
 <!ENTITY generic-version "6.5"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->

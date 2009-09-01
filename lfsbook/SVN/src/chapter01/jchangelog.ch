@@ -42,6 +42,24 @@
 -->
 
     <listitem>
+      <para>2009-09-01, 訳出率 97.2%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/coreutils.ch: 修正。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2009-08-31, 訳出率 97.1%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter05/generalinstructions.ch: 修正。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-08-30, 訳出率 97.1%</para>
       <itemizedlist>
         <listitem>
