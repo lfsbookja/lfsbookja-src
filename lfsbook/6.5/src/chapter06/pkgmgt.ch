@@ -400,17 +400,19 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
       ensure that the package manager does not break anything and logs all the
       appropriate files.</para>
 @y
-      <para>The <envar>LD_PRELOAD</envar> environment variable can be set to
-      point to a library to be preloaded before installation.  During
-      installation, this library tracks the packages that are being installed by
-      attaching itself to various executables such as <command>cp</command>,
-      <command>install</command>, <command>mv</command> and tracking the system
-      calls that modify the filesystem. For this approach to work, all the
-      executables need to be dynamically linked without the suid or sgid bit.
-      Preloading the library may cause some unwanted side-effects during
-      installation. Therefore, it is advised that one performs some tests to
-      ensure that the package manager does not break anything and logs all the
-      appropriate files.</para>
+<para>
+環境変数 <envar>LD_PRELOAD</envar>
+を使えば、インストール前にあらかじめロードされるライブラリを定めることができます。
+パッケージのインストール中には
+<command>cp</command>、
+<command>install</command>、
+<command>mv</command>
+など様々な実行モジュールにそのライブラリをリンクさせ、ファイルシステムを変更するようなシステムコールを監視することで、そのライブラリがパッケージを追跡管理できるようになります。
+この方法を実現するためには、動的リンクする実行モジュールはすべて
+suid ビット、sgid ビットがオフでなければなりません。
+事前にライブラリをロードしておくと、インストール中に予期しない副作用が発生するかもしれません。
+したがって、ある程度のテスト確認を行って、パッケージ管理ツールが不具合を引き起こさないこと、しかるべきファイルの記録を取っておくことが必要とされます。
+</para>
 @z
 
 @x
@@ -418,9 +420,10 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
       logs all system calls made during the execution of the installation
       scripts.</para>
 @y
-      <para>The second technique is to use <command>strace</command>, which
-      logs all system calls made during the execution of the installation
-      scripts.</para>
+<para>
+二つめの方法は <command>strace</command> を用いるものです。
+これはインストールスクリプトの実行中に発生するシステムコールを記録するものです。
+</para>
 @z
 
 @x
@@ -438,11 +441,19 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
       This archive is then used to install the package either on the local
       machine or can even be used to install the package on other machines.</para>
 @y
-      <para>In this scheme, the package installation is faked into a separate
-      tree as described in the Symlink style package management. After the
-      installation, a package archive is created using the installed files.
-      This archive is then used to install the package either on the local
-      machine or can even be used to install the package on other machines.</para>
+<!--
+日本語訳註： 2009-09-01 matsuand
+faked が難しい。
+同一ディレクトリに「あたかも」インストールされるようでいて、
+実は別々のディレクトリにインストールされる。
+faked と into a separete だけから、どう日本語表現するか・・・
+faked の明らかな訳出は諦めた。
+-->
+<para>
+この方法では、シンボリックリンク方式によるパッケージ管理にて説明したのと同じように、パッケージが個別のディレクトリにインストールされます。
+インストールされた後には、インストールファイルを使ってアーカイブが生成されます。
+このアーカイブはこの後に、ローカルPCへのインストールに用いられ、他のPCのインストールに利用することもできます。
+</para>
 @z
 
 @x
@@ -455,22 +466,25 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
       package management for LFS systems is located at <ulink
       url="&hints-root;fakeroot.txt"/>.</para>
 @y
-      <para>This approach is used by most of the package managers found in the
-      commercial distributions. Examples of package managers that follow this
-      approach are RPM (which, incidentally, is required by the <ulink
-      url="http://www.linux-foundation.org/en/Specifications">Linux
-      Standard Base Specification</ulink>), pkg-utils, Debian's apt, and
-      Gentoo's Portage system.  A hint describing how to adopt this style of
-      package management for LFS systems is located at <ulink
-      url="&hints-root;fakeroot.txt"/>.</para>
+<para>
+商用ディストリビューションが採用しているパッケージ管理ツールは、ほとんどがこの方法によるものです。
+この方法に従ったパッケージ管理ツールの例に RPM があります。
+(これは <ulink url="http://www.linux-foundation.org/en/Specifications">Linux Standard Base Specification</ulink>
+が規定しています。)
+また pkg-utils、Debian の apt、Gentoo の Portage システムがあります。
+このパッケージ管理手法を LFS システムに適用するヒント情報が
+<ulink url="&hints-root;fakeroot.txt"/>
+にあります。
+</para>
 @z
 
 @x
       <para>Creation of package files that include dependency information is
       complex and is beyond the scope of LFS.</para>
 @y
-      <para>Creation of package files that include dependency information is
-      complex and is beyond the scope of LFS.</para>
+<para>
+パッケージファイルにその依存パッケージ情報まで含めてアーカイブ生成することは、非常に複雑となり LFS の範疇を超えるものです。
+</para>
 @z
 
 @x
@@ -480,11 +494,14 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
       management, see <ulink
       url="http://www.slackbook.org/html/package-management.html"/>.</para>
 @y
-      <para>Slackware uses a <command>tar</command> based system for package
-      archives.  This system purposely does not handle package dependencies
-      as more complex package managers do.  For details of Slackware package
-      management, see <ulink
-      url="http://www.slackbook.org/html/package-management.html"/>.</para>
+<para>
+Slackware は、パッケージアーカイブに対して
+<command>tar</command> ベースのシステムを利用しています。
+他のパッケージ管理ツールはパッケージの依存性を取り扱いますが、このシステムは意図的にこれを行っていません。
+Slackware のパッケージ管理に関する詳細は
+<ulink url="http://www.slackbook.org/html/package-management.html"/>
+を参照してください。
+</para>
 @z
 
 @x
@@ -545,24 +562,24 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
     <filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>.
     </para>
 @y
-    <para>One of the advantages of a LFS system is that there are no files that
-    depend on the position of files on a disk system.  Cloning an LFS build to
-    another computer with an architecture similar to the base system is as
-    simple as using <command>tar</command> on the LFS partition that contains
-    the root directory (about 250MB uncompressed for a base LFS build), copying
-    that file via network transfer or CD-ROM to the new system and expanding
-    it.  From that point, a few configuration files will have to be changed.
-    Configuration files that may need to be updated include:
-    <filename>/etc/hosts</filename>,
-    <filename>/etc/fstab</filename>,
-    <filename>/etc/passwd</filename>,
-    <filename>/etc/group</filename>,
-    <filename>/etc/shadow</filename>,
-    <filename>/etc/ld.so.conf</filename>,
-    <filename>/etc/scsi_id.config</filename>,
-    <filename>/etc/sysconfig/network</filename> and
-    <filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>.
-    </para>
+<para>
+LFS システムの利点の一つとして、どのファイルもディスク上のどこに位置していても構わないことです。
+他のコンピュータに対してビルドした LFS の複製を作ろうとするなら、それが同等のアーキテクチャであれば容易に実現できます。
+つまり <command>tar</command>
+コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度)
+をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
+この場合でも、設定ファイルはいくらか変更することが必要です。
+変更が必要となる設定ファイルは以下のとおりです。
+<filename>/etc/hosts</filename>、
+<filename>/etc/fstab</filename>、
+<filename>/etc/passwd</filename>、
+<filename>/etc/group</filename>、
+<filename>/etc/shadow</filename>、
+<filename>/etc/ld.so.conf</filename>、
+<filename>/etc/scsi_id.config</filename>、
+<filename>/etc/sysconfig/network</filename>、
+<filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>
+</para>
 @z
 
 @x

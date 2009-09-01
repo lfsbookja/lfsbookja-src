@@ -14,7 +14,7 @@
 <!ENTITY version "SVN-20090826">
 <!ENTITY releasedate "2009年8月26日">
 <!ENTITY jversion "20090901">
-<!ENTITY ratio_japanese "97.2">
+<!ENTITY ratio_japanese "97.6">
 <!ENTITY copyrightdate "1999-2009"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.0">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
