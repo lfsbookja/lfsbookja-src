@@ -276,8 +276,8 @@ Cyclades カード用のシリアルラインドライバのパラメータを�
           to a Discordian one</para>
 @y
 <para>
-ディスコルディア暦の (Discordian) 日付を表示します。
-または指定されたグレゴリオ暦の (Gregorian) 日付をディスコルディア暦の日付に変換します。
+ディスコルディア暦 (Discordian) の日付を表示します。
+または指定されたグレゴリオ暦 (Gregorian) の日付をディスコルディア暦の日付に変換します。
 </para>
 @z
 
@@ -615,7 +615,7 @@ Minix ファイルシステムを生成します。
 </para>
 @z
 
-@x
+@x rename
           <para>Renames the given files, replacing a given string with
           another</para>
 @y
@@ -670,146 +670,175 @@ Minix ファイルシステムを生成します。
 </para>
 @z
 
-@x
+@x setarch
           <para>Changes reported architecture in a new program environment and
           sets personality flags</para>
 @y
 <para>
-
-Changes reported architecture in a new program environment and
-sets personality flags
+新しいプログラム環境にて、表示されるアーキテクチャを変更します。
+また設定フラグ (personality flag) の設定も行います。
 </para>
 @z
 
-@x
+@x setsid
           <para>Runs the given program in a new session</para>
 @y
-          <para>Runs the given program in a new session</para>
+<para>
+新しいセッションで指定されたプログラムを実行します。
+</para>
 @z
 
-@x
+@x setterm
           <para>Sets terminal attributes</para>
 @y
-          <para>Sets terminal attributes</para>
+<para>
+端末の属性を設定します。
+</para>
 @z
 
-@x
+@x sfdisk
           <para>A disk partition table manipulator</para>
 @y
-          <para>A disk partition table manipulator</para>
+<para>
+ディスクパーティションテーブルを操作します。
+</para>
 @z
 
-@x
+@x swapoff
           <para>Disables devices and files for paging and swapping</para>
 @y
-          <para>Disables devices and files for paging and swapping</para>
+<para>
+ページングまたはスワッピングに利用しているデバイスまたはファイルを無効にします。
+</para>
 @z
 
-@x
+@x swapon
           <para>Enables devices and files for paging and swapping and
           lists the devices and files currently in use</para>
 @y
-          <para>Enables devices and files for paging and swapping and
-          lists the devices and files currently in use</para>
+<para>
+ページングまたはスワッピングに利用しているデバイスまたはファイルを有効にします。
+また現在利用されているデバイスまたはファイルを一覧表示します。
+</para>
 @z
 
-@x
+@x switch_root
           <para>Switches to another filesystem as the root of the mount tree</para>
 @y
-          <para>Switches to another filesystem as the root of the mount tree</para>
+<para>
+別のファイルシステムを、マウントツリーのルートとして変更します。
+</para>
 @z
 
-@x
+@x tailf
           <para>Tracks the growth of a log file. Displays the last 10 lines
           of a log file, then continues displaying any new entries in the
           log file as they are created</para>
 @y
-          <para>Tracks the growth of a log file. Displays the last 10 lines
-          of a log file, then continues displaying any new entries in the
-          log file as they are created</para>
+<para>
+ログファイルの更新を監視します。
+ログファイルの最終の10行が表示され、ログファイルに新たに書き込みが行われると表示更新します。
+</para>
 @z
 
-@x
+@x taskset
           <para>Retrieves or sets a process' CPU affinity</para>
 @y
-          <para>Retrieves or sets a process' CPU affinity</para>
+<para>
+プロセスの CPU 親和性 (affinity) を表示または設定します。
+</para>
 @z
 
-@x
+@x tunelp
           <para>Tunes the parameters of the line printer</para>
 @y
-          <para>Tunes the parameters of the line printer</para>
+<para>
+ラインプリンタのパラメータを設定します。
+</para>
 @z
 
-@x
+@x ul
           <para>A filter for translating underscores into escape sequences
           indicating underlining for the terminal in use</para>
 @y
-          <para>A filter for translating underscores into escape sequences
-          indicating underlining for the terminal in use</para>
+<para>
+使用中の端末にて、アンダースコア文字を、エスケープシーケンスを用いた下線文字に変換するためのフィルタ。
+</para>
 @z
 
-@x
+@x umount
           <para>Disconnects a file system from the system's file tree</para>
 @y
-          <para>Disconnects a file system from the system's file tree</para>
+<para>
+システムのファイルツリーからファイルシステムを切断します。
+</para>
 @z
 
-@x
+@x uuidd
           <para>A daemon used by the UUID library to generate time-based
           UUIDs in a secure and guranteed-unique fashion.</para>
 @y
-          <para>A daemon used by the UUID library to generate time-based
-          UUIDs in a secure and guranteed-unique fashion.</para>
+<para>
+UUID ライブラリから利用されるデーモン。
+時刻情報に基づく UUID を、安全にそして一意性を確保して生成します。
+</para>
 @z
 
-@x
+@x uuidgen
           <para>Creates new UUIDs. Each new UUID can reasonably be considered
           unique among all UUIDs created, on the local system and on other
           systems, in the past and in the future</para>
 @y
-          <para>Creates new UUIDs. Each new UUID can reasonably be considered
-          unique among all UUIDs created, on the local system and on other
-          systems, in the past and in the future</para>
+<para>
+新しい UUID を生成します。
+生成される UUID は当然、他に生成されている UUID とは異なり、自他システムでも過去現在にわたってもユニークなものです。
+</para>
 @z
 
-@x
+@x wall
           <para>Displays the contents of a file or, by default, its standard
           input, on the terminals of all currently logged in users</para>
 @y
-          <para>Displays the contents of a file or, by default, its standard
-          input, on the terminals of all currently logged in users</para>
+<para>
+ファイルの内容、あるいはデフォルトでは標準入力から入力された内容を、現在ログインしている全ユーザーの端末上に表示します。
+</para>
 @z
 
-@x
+@x whereis
           <para>Reports the location of the binary, source, and man page
           for the given command</para>
 @y
-          <para>Reports the location of the binary, source, and man page
-          for the given command</para>
+<para>
+指定されたコマンドの実行モジュール・ソース・man ページの場所を表示します。
+</para>
 @z
 
-@x
+@x write
           <para>Sends a message to the given user <emphasis>if</emphasis> that
           user has not disabled receipt of such messages</para>
 @y
-          <para>Sends a message to the given user <emphasis>if</emphasis> that
-          user has not disabled receipt of such messages</para>
+<para>
+指定されたユーザーに対してメッセージを送信します。
+<emphasis>ただし </emphasis>
+そのユーザーがメッセージ受信が可能である場合に限ります。
+</para>
 @z
 
-@x
+@x libblkid
           <para>Contains routines for device identification and token
           extraction</para>
 @y
-          <para>Contains routines for device identification and token
-          extraction</para>
+<para>
+デバイスの識別やトークンの抽出を行う処理ルーチンを提供します。
+</para>
 @z
 
-@x
+@x libuuid
           <para>Contains routines for generating unique identifiers for objects
           that may be accessible beyond the local system</para>
 @y
-          <para>Contains routines for generating unique identifiers for objects
-          that may be accessible beyond the local system</para>
+<para>
+ローカルシステム内だけに限らずアクセスされるオブジェクトに対して、一意性が保証された識別子を生成する処理ルーチンを提供します。
+</para>
 @z
 
