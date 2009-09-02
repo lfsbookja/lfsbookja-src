@@ -301,13 +301,12 @@ Udev がインターフェースに対して割り当てる名前をキーの値
 @y
 <para>
 <envar>SERVICE</envar> 変数はIP アドレスの取得方法を指定します。
-
-The LFS-Bootscripts package has a modular IP
-assignment format, and creating additional files in the <filename
-class="directory">/etc/sysconfig/network-devices/services</filename>
-directory allows other IP assignment methods. This is commonly used for
-Dynamic Host Configuration Protocol (DHCP), which is addressed in the
-BLFS book.
+LFS-ブートスクリプトは IP アドレス割り当て方法をモジュール化しています。
+そして <filename class="directory">/etc/sysconfig/network-devices/services</filename>
+ディレクトリに追加でファイルを生成すれば、他の IP アドレス割り当て方法をとることもできます。
+通常は DHCP (Dynamic Host Configuration Protocol)
+において利用されるものです。
+これについては BLFS ブックにて説明しています。
 </para>
 @z
 

@@ -42,10 +42,16 @@
 -->
 
     <listitem>
-      <para>2009-09-02, 訳出率 97.7%</para>
+      <para>2009-09-02, 訳出率 97.9%</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - src/chapter06/e2fsprogs.ch: 修正。</para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - src/chapter06/util-linux-ng.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter07/network.ch: 修正。</para>
         </listitem>
       </itemizedlist>
     </listitem>

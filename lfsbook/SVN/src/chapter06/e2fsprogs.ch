@@ -235,7 +235,332 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           <para>Searches a device (usually a disk partition) for bad
           blocks</para>
 @y
-          <para>Searches a device (usually a disk partition) for bad
-          blocks</para>
+<para>
+デバイス (通常はディスクパーティション) の不良ブロックを検索します。
+</para>
+@z
+
+@x chattr
+          <para>Changes the attributes of files on an <systemitem
+          class="filesystem">ext2</systemitem> file system; it also
+          changes <systemitem class="filesystem">ext3</systemitem>
+          file systems, the journaling version of <systemitem
+          class="filesystem">ext2</systemitem> file systems</para>
+@y
+<para>
+<systemitem class="filesystem">ext2</systemitem> 
+ファイルシステム上のファイル属性を変更します。
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステムのジャーナリング版である
+<systemitem class="filesystem">ext3</systemitem>
+ファイルシステムにおいても変更を行います。
+</para>
+@z
+
+@x compile_et
+          <para>An error table compiler; it converts a table of error-code
+          names and messages into a C source file suitable for use with the
+          <filename class="libraryfile">com_err</filename> library</para>
+@y
+<para>
+エラーテーブルコンパイラ。
+これはエラーコード名とメッセージの一覧を、
+<filename class="libraryfile">com_err</filename>
+ライブラリを利用する C ソースコードとして変換するものです。
+</para>
+@z
+
+@x debugfs
+          <para>A file system debugger; it can be used to examine and change
+          the state of an <systemitem class="filesystem">ext2</systemitem>
+          file system</para>
+@y
+<para>
+ファイルシステムデバッガ。
+これは <systemitem class="filesystem">ext2</systemitem>
+ファイルシステムの状態を調査し変更することができます。
+</para>
+@z
+
+@x dumpe2fs
+          <para>Prints the super block and blocks group information for the
+          file system present on a given device</para>
+@y
+<para>
+指定されたデバイス上にあるファイルシステムについて、
+スーパーブロックの情報とブロックグループの情報を表示します。
+</para>
+@z
+
+@x e2fsck
+          <para>Is used to check, and optionally repair <systemitem
+          class="filesystem">ext2</systemitem> file systems and <systemitem
+          class="filesystem">ext3</systemitem> file systems</para>
+@y
+<para>
+<systemitem class="filesystem">ext2</systemitem> ファイルシステムと
+<systemitem class="filesystem">ext3</systemitem>
+ファイルシステムをチェックし、必要なら修復を行うことができます。
+</para>
+@z
+
+@x e2image
+          <para>Is used to save critical <systemitem
+          class="filesystem">ext2</systemitem> file system data to a file</para>
+@y
+<para>
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステムの重要なデータをファイルに保存します。
+</para>
+@z
+
+@x e2initrd_helper
+          <para>Prints the FS type of a given filesystem, given either a
+          device name or label</para>
+@y
+<para>
+指定されたファイルシステムの FS タイプを表示します。
+デバイス名やラベルを指定することもできます。
+</para>
+@z
+
+@x e2label
+          <para>Displays or changes the file system label on the <systemitem
+          class="filesystem">ext2</systemitem> file system present on a given
+          device</para>
+@y
+<para>
+指定されたデバイス上にある
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステムのラベルを表示または変更します。
+</para>
+@z
+
+@x e2undo
+          <para>Replays the undo log undo_log for an ext2/ext3/ext4 filesystem 
+          found on a device. This can be used to undo a failed operation by an 
+          e2fsprogs program.</para>
+@y
+<para>
+デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
+これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
+</para>
+@z
+
+@x filefrag
+          <para>Reports on how badly fragmented a particular file might be</para>
+@y
+<para>
+特定のファイルのフラグメンテーション化がどれほど進んでいるかを表示します。
+</para>
+@z
+
+@x fsck.ext2
+          <para>By default checks <systemitem class="filesystem">ext2</systemitem>
+          file systems. This is a hard link to <command>fsck</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext2</systemitem>
+ファイルシステムをチェックします。
+これは <command>fsck</command> へのハードリンクです。
+</para>
+@z
+
+@x fsck.ext3
+          <para>By default checks <systemitem class="filesystem">ext3</systemitem>
+          file systems. This is a hard link to <command>fsck</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext3</systemitem>
+ファイルシステムをチェックします。
+これは <command>fsck</command> へのハードリンクです。
+</para>
+@z
+
+@x fsck.ext4
+          <para>By default checks <systemitem class="filesystem">ext4</systemitem>
+          file systems. This is a hard link to <command>fsck</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext4</systemitem>
+ファイルシステムをチェックします。
+これは <command>fsck</command> へのハードリンクです。
+</para>
+@z
+
+@x fsck.ext4dev
+          <para>By default checks <systemitem class="filesystem">ext4</systemitem>
+          development file systems. This is a hard link to 
+          <command>fsck</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext4</systemitem>
+ファイルシステムの開発版をチェックします。
+これは <command>fsck</command> へのハードリンクです。
+</para>
+@z
+
+@x logsave
+          <para>Saves the output of a command in a log file</para>
+@y
+<para>
+コマンドの出力結果をログファイルに保存します。
+</para>
+@z
+
+@x lsattr
+          <para>Lists the attributes of files on a second extended file
+          system</para>
+@y
+<para>
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステム上のファイル属性を一覧表示します。
+</para>
+@z
+
+@x mk_cmds
+          <para>Converts a table of command names and help messages into a C
+          source file suitable for use with the <filename
+          class="libraryfile">libss</filename> subsystem library</para>
+@y
+<para>
+コマンド名とヘルプメッセージの一覧を、
+サブシステムライブラリ
+<filename class="libraryfile">libss</filename>
+を利用する C ソースコードとして変換するものです。
+</para>
+@z
+
+@x mke2fs
+          <para>Creates an <systemitem class="filesystem">ext2</systemitem>
+          or <systemitem class="filesystem">ext3</systemitem> file system on
+          the given device</para>
+@y
+<para>
+指定されたデバイス上に
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステム、または
+<systemitem class="filesystem">ext3</systemitem>
+ファイルシステムを生成します。
+</para>
+@z
+
+@x mkfs.ext2
+          <para>By default creates <systemitem class="filesystem">ext2</systemitem>
+          file systems.  This is a hard link to <command>mke2fs</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext2</systemitem>
+ファイルシステムを生成します。
+これは <command>mke2fs</command> へのハードリンクです。
+</para>
+@z
+
+@x mkfs.ext3
+          <para>By default creates <systemitem class="filesystem">ext3</systemitem>
+          file systems.  This is a hard link to <command>mke2fs</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext3</systemitem>
+ファイルシステムを生成します。
+これは <command>mke2fs</command> へのハードリンクです。
+</para>
+@z
+
+@x mkfs.ext4
+          <para>By default creates <systemitem class="filesystem">ext4</systemitem>
+          file systems.  This is a hard link to <command>mke2fs</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext4</systemitem>
+ファイルシステムを生成します。
+これは <command>mke2fs</command> へのハードリンクです。
+</para>
+@z
+
+@x mkfs.ext4dev
+          <para>By default creates <systemitem class="filesystem">ext4</systemitem>
+          development file systems.  This is a hard link to <command>mke2fs</command>.</para>
+@y
+<para>
+デフォルトでは <systemitem class="filesystem">ext4</systemitem>
+ファイルシステム開発版を生成します。
+これは <command>mke2fs</command> へのハードリンクです。
+</para>
+@z
+
+@x mklost-found
+          <para>Used to create a <filename class="directory">lost+found</filename>
+          directory on an <systemitem class="filesystem">ext2</systemitem> file
+          system; it pre-allocates disk blocks to this directory to lighten the
+          task of <command>e2fsck</command></para>
+@y
+<para>
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステム上に <filename class="directory">lost+found</filename>
+ディレクトリを生成するために利用します。
+このコマンドはそのディレクトリに対してあらかじめディスクブロックの情報を割り当てておくことで、
+<command>e2fsck</command> コマンドの負荷を軽減します。
+</para>
+@z
+
+@x resize2fs
+          <para>Can be used to enlarge or shrink an <systemitem
+          class="filesystem">ext2</systemitem> file system</para>
+@y
+<para>
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステムを拡張または縮小するために利用します。
+</para>
+@z
+
+@x tune2fs
+          <para>Adjusts tunable file system parameters on an <systemitem
+          class="filesystem">ext2</systemitem> file system</para>
+@y
+<para>
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステム上にて調整可能なシステムパラメータを調整します。
+</para>
+@z
+
+@x libcom_err
+          <para>The common error display routine</para>
+@y
+<para>
+共通的なエラー表示ルーチン。
+</para>
+@z
+
+@x libe2p
+          <para>Used by <command>dumpe2fs</command>, <command>chattr</command>,
+          and <command>lsattr</command></para>
+@y
+<para>
+以下のコマンド
+<command>dumpe2fs</command>、
+<command>chattr</command>、
+<command>lsattr</command>
+が利用します。
+</para>
+@z
+
+@x libext2fs
+          <para>Contains routines to enable user-level programs to manipulate an
+          <systemitem class="filesystem">ext2</systemitem> file system</para>
+@y
+<para>
+ユーザーレベルのプログラムが
+<systemitem class="filesystem">ext2</systemitem>
+ファイルシステムを操作可能とするためのルーチンを提供します。
+</para>
+@z
+
+@x libss
+          <para>Used by <command>debugfs</command></para>
+@y
+<para>
+<command>debugfs</command> コマンドが利用します。
+</para>
 @z
 
