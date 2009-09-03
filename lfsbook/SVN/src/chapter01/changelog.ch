@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2009-09-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Removed more documentation in the Chapter 5
+          stripping section.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-09-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第5章のストリップにてドキュメント削除の量を是正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-08-26</para>
       <itemizedlist>
         <listitem>

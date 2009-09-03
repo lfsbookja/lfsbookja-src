@@ -49,10 +49,10 @@
 @z
 
 @x
-  <para>To save nearly 20 MB more, remove the documentation:</para>
+  <para>To save nearly 25 MB more, remove the documentation:</para>
 @y
 <para>
-さらに 20 MB ほどを節約するためにドキュメント類を削除します。
+さらに 25 MB ほどを節約するためにドキュメント類を削除します。
 </para>
 @z
 
