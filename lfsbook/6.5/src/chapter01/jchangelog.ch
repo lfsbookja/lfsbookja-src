@@ -42,6 +42,33 @@
 -->
 
     <listitem>
+      <para>2009-09-06, 訳出率 98.0%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/appendices/acronymlist.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter04/abouttestsuites.ch: 微修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter04/creatingtoolsdir.ch: 微修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/gettext.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/glibc.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/perl.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/sysvinit.ch: 修正。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-02, 訳出率 97.9%</para>
       <itemizedlist>
         <listitem>

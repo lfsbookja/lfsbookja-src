@@ -753,191 +753,243 @@ RPC サーバーに対しての RPC コールを行います。
 </para>
 @z
 
-@x 
+@x xtrace
           <para>Traces the execution of a program by printing the currently
           executed function</para>
 @y
-          <para>Traces the execution of a program by printing the currently
-          executed function</para>
+<para>
+プログラム内にて現在実行されている関数を表示することで、そのプログラムの実行状況を追跡します。
+</para>
 @z
 
-@x
+@x zdump
           <para>The time zone dumper</para>
 @y
-          <para>The time zone dumper</para>
+<para>
+タイムゾーンをダンプします。
+</para>
 @z
 
-@x
+@x zic
           <para>The time zone compiler</para>
 @y
-          <para>The time zone compiler</para>
+<para>
+タイムゾーンコンパイラ。
+</para>
 @z
 
-@x
+@x ld.so
           <para>The helper program for shared library executables</para>
 @y
-          <para>The helper program for shared library executables</para>
+<para>
+共有ライブラリのためのヘルパープログラム。
+</para>
 @z
 
-@x
+@x libBrokenLocale
           <para>Used internally by Glibc as a gross hack to get broken programs
           (e.g., some Motif applications) running. See comments in
           <filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename>
           for more information</para>
 @y
-          <para>Used internally by Glibc as a gross hack to get broken programs
-          (e.g., some Motif applications) running. See comments in
-          <filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename>
-          for more information</para>
+<para>
+
+Used internally by Glibc as a gross hack to get broken programs
+(e.g., some Motif applications) running. 
+
+詳しくは
+<filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename>
+に書かれたコメントを参照してください。
+</para>
 @z
 
-@x
+@x libSegFault
           <para>The segmentation fault signal handler, used by
           <command>catchsegv</command></para>
 @y
-          <para>The segmentation fault signal handler, used by
-          <command>catchsegv</command></para>
+<para>
+セグメンテーションフォールトのシグナルハンドラ。
+<command>catchsegv</command> が利用します。
+</para>
 @z
 
-@x
+@x libanl
           <para>An asynchronous name lookup library</para>
 @y
-          <para>An asynchronous name lookup library</para>
+<para>
+非同期の名前解決 (asynchronous name lookup) ライブラリ。
+</para>
 @z
 
-@x
+@x libbsd-compat
           <para>Provides the portability needed in order to run certain
           Berkeley Software Distribution (BSD) programs under Linux</para>
 @y
-          <para>Provides the portability needed in order to run certain
-          Berkeley Software Distribution (BSD) programs under Linux</para>
+<para>
+特定の BSD (Berkeley Software Distribution)
+プログラムを Linux 上で動作させるために必要な可搬ライブラリを提供します。
+</para>
 @z
 
-@x
+@x libc
           <para>The main C library</para>
 @y
-          <para>The main C library</para>
+<para>
+主要な C ライブラリ。
+</para>
 @z
 
-@x
+@x libcidn
           <para>Used internally by Glibc for handling internationalized domain
           names in the <function>getaddrinfo()</function> function</para>
 @y
-          <para>Used internally by Glibc for handling internationalized domain
-          names in the <function>getaddrinfo()</function> function</para>
+<para>
+Glibc が内部的に利用するもので
+<function>getaddrinfo()</function>
+関数によって国際化ドメイン名 (internationalized domain names)
+を取り扱います。
+</para>
 @z
 
-@x
+@x libcrypt
           <para>The cryptography library</para>
 @y
-          <para>The cryptography library</para>
+<para>
+暗号化ライブラリ。
+</para>
 @z
 
-@x
+@x libdl
           <para>The dynamic linking interface library</para>
 @y
-          <para>The dynamic linking interface library</para>
+<para>
+ダイナミックリンクのインターフェースライブラリ。
+</para>
 @z
 
-@x
+@x libg
           <para>Dummy library containing no functions. Previously was a runtime
           library for <command>g++</command></para>
 @y
-          <para>Dummy library containing no functions. Previously was a runtime
-          library for <command>g++</command></para>
+<para>
+関数を全く含まないダミーのライブラリ。
+かつては <command>g++</command> のランタイムライブラリであったものです。
+</para>
 @z
 
-@x
+@x libieee
           <para>Linking in this module forces error handling rules for math
           functions as defined by the Institute of Electrical and Electronic
           Engineers (IEEE). The default is POSIX.1 error handling</para>
 @y
-          <para>Linking in this module forces error handling rules for math
-          functions as defined by the Institute of Electrical and Electronic
-          Engineers (IEEE). The default is POSIX.1 error handling</para>
+<para>
+
+Linking in this module forces error handling rules for math
+functions as defined by the Institute of Electrical and Electronic
+Engineers (IEEE). The default is POSIX.1 error handling
+</para>
 @z
 
-@x
+@x libm
           <para>The mathematical library</para>
 @y
-          <para>The mathematical library</para>
+<para>
+数学ライブラリ。
+</para>
 @z
 
-@x
+@x libmcheck
           <para>Turns on memory allocation checking when linked to</para>
 @y
-          <para>Turns on memory allocation checking when linked to</para>
+<para>
+このライブラリにリンクした場合、メモリ割り当てのチェック機能を有効にします。
+</para>
 @z
 
-@x
+@x libmemusage
           <para>Used by <command>memusage</command> to help collect
           information about the memory usage of a program</para>
 @y
-          <para>Used by <command>memusage</command> to help collect
-          information about the memory usage of a program</para>
+<para>
+<command>memusage</command>
+コマンドが利用するもので、プログラムのメモリ使用に関する情報を収集します。
+</para>
 @z
 
-@x
+@x libnsl
           <para>The network services library</para>
 @y
-          <para>The network services library</para>
+<para>
+ネットワークサービスライブラリ。
+</para>
 @z
 
-@x
+@x libnss
           <para>The Name Service Switch libraries, containing functions for
           resolving host names, user names, group names, aliases, services,
           protocols, etc.</para>
 @y
-          <para>The Name Service Switch libraries, containing functions for
-          resolving host names, user names, group names, aliases, services,
-          protocols, etc.</para>
+<para>
+NSS (Name Service Switch) ライブラリ。
+ホスト、ユーザー名、エイリアス、サービス、プロトコルなどの名前解決を行う関数を提供します。
+</para>
 @z
 
-@x
+@x libpcprofile
           <para>Contains profiling functions used to track the amount of CPU
           time spent in specific source code lines</para>
 @y
-          <para>Contains profiling functions used to track the amount of CPU
-          time spent in specific source code lines</para>
+<para>
+プロファイリングを行う関数を提供するもので、特定のソース行に費やされる
+CPU 時間を追跡するために利用します。
+</para>
 @z
 
-@x
+@x libpthread
           <para>The POSIX threads library</para>
 @y
-          <para>The POSIX threads library</para>
+<para>
+POSIX スレッドライブラリ。
+</para>
 @z
 
-@x
+@x libresolv
           <para>Contains functions for creating, sending, and interpreting
           packets to the Internet domain name servers</para>
 @y
-          <para>Contains functions for creating, sending, and interpreting
-          packets to the Internet domain name servers</para>
+<para>
+インターネットドメインネームサーバーに対しての、パケットの生成・送信・解析を行う関数を提供します。
+</para>
 @z
 
-@x
+@x librpcsvc
           <para>Contains functions providing miscellaneous RPC services</para>
 @y
-          <para>Contains functions providing miscellaneous RPC services</para>
+<para>
+様々な RPC サービスを実現する関数を提供します。
+</para>
 @z
 
-@x
+@x librt
           <para>Contains functions providing most of the interfaces specified
           by the POSIX.1b Realtime Extension</para>
 @y
-          <para>Contains functions providing most of the interfaces specified
-          by the POSIX.1b Realtime Extension</para>
+<para>
+POSIX.1b リアルタイム拡張 (Realtime Extension)
+にて既定されている、インターフェースをほぼ網羅した関数を提供します。
+</para>
 @z
 
-@x
+@x libthread_db
           <para>Contains functions useful for building debuggers for
           multi-threaded programs</para>
 @y
-          <para>Contains functions useful for building debuggers for
-          multi-threaded programs</para>
+<para>
+マルチスレッドプログラム用のデバッガを構築するための有用な関数を提供します。
+</para>
 @z
 
-@x
+@x libutil
           <para>Contains code for <quote>standard</quote> functions used in
           many different Unix utilities</para>
 @y

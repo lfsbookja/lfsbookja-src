@@ -221,9 +221,10 @@ Udev ブートスクリプト
 <para>
 初期起動スクリプト <command>S10udev</command>
 は、Linux のブート時にデバイスノード生成を受け持ちます。
+このスクリプトは <command>/sbin/hotplug</command>
+のデフォルトから uevent ハンドラを取り除きます。
 
-The script unsets the uevent handler
-from the default of <command>/sbin/hotplug</command>.  This is done
+This is done
 because the kernel no longer needs to call out to an external binary.
 Instead <command>udevd</command> will listen on a netlink socket for
 uevents that the kernel raises. Next, the bootscript copies any static
@@ -272,24 +273,27 @@ any devices that have already been registered and then waits for
       </para>
 @y
 <para>
-
-To obtain the right major and minor number for a device, Udev relies
-on the information provided by <systemitem
-class="filesystem">sysfs</systemitem> in <filename
-class="directory">/sys</filename>.  For example,
-<filename>/sys/class/tty/vcs/dev</filename> contains the string
-<quote>7:0</quote>. This string is used by <command>udevd</command>
-to create a device node with major number <emphasis>7</emphasis> and minor
-<emphasis>0</emphasis>. The names and permissions of the nodes created
-under the <filename class="directory">/dev</filename> directory are
-determined by rules specified in the files within the <filename
-class="directory">/etc/udev/rules.d/</filename> directory. These are
-numbered in a similar fashion to the LFS-Bootscripts package. If
-<command>udevd</command> can't find a rule for the device it is creating,
-it will default permissions to <emphasis>660</emphasis> and ownership to
-<emphasis>root:root</emphasis>. Documentation on the syntax of the Udev
-rules configuration files are available in
+Udev はデバイスのメジャー番号、マイナー番号を認識するために
+<filename class="directory">/sys</filename> ディレクトリ内の
+<systemitem class="filesystem">sysfs</systemitem>
+の情報を参照します。
+例えば <filename>/sys/class/tty/vcs/dev</filename>
+には <quote>7:0</quote> という文字があります。
+この文字は <command>udevd</command> が利用するもので、メジャー番号が
+<emphasis>7</emphasis>、マイナー番号が <emphasis>0</emphasis>
+のデバイスノードを生成します。
+<filename class="directory">/dev</filename>
+ディレクトリ配下に生成されるノードの名称とパーミッションは、
+<filename class="directory">/etc/udev/rules.d/</filename>
+ディレクトリにある各種ファイルが指定する規則に従って決まります。
+それらのファイルは番号付けがされています。
+LFS-ブートスクリプトパッケージにおける方法に似ています。
+Udev がデバイスを生成しようとしてその生成規則が見つけられなかった場合は、デフォルトのパーミッションは
+<emphasis>660</emphasis>、デフォルトの所有者は <emphasis>root:root</emphasis>
+となります。
+Udev におけるデバイス生成規則を設定するファイルについて、その文法を示したドキュメントが
 <filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename>
+にあります。
 </para>
 @z
 
@@ -322,10 +326,10 @@ rules configuration files are available in
       expansion.</para>
 @y
 <para>
-
-Device drivers compiled as modules may have aliases built into them.
-Aliases are visible in the output of the <command>modinfo</command>
-program and are usually related to the bus-specific identifiers of devices
+モジュールとしてコンパイルされたデバイスドライバの場合、デバイス名の別名が作り出されています。
+その別名は <command>modinfo</command> プログラムを使えば確認することができます。
+そしてこの別名は、モジュールがサポートする
+and are usually related to the bus-specific identifiers of devices
 supported by a module. For example, the <emphasis>snd-fm801</emphasis>
 driver supports PCI devices with vendor ID 0x1319 and device ID 0x0801,
 and has an alias of <quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote>.
@@ -376,8 +380,7 @@ protocols, filesystems and NLS support on demand.
       <title>Handling Hotpluggable/Dynamic Devices</title>
 @y
 <title>
-
-Handling Hotpluggable/Dynamic Devices
+ホットプラグ可能な/ダイナミックなデバイスの扱い
 </title>
 @z
 
@@ -430,13 +433,15 @@ generates a uevent. This uevent is then handled by
       SERIO and FireWire devices.</para>
 @y
 <para>
-
-Udev will only load a module if it has a bus-specific alias and the
-bus driver properly exports the necessary aliases to <systemitem
-class="filesystem">sysfs</systemitem>. In other cases, one should
-arrange module loading by other means. With Linux-&linux-version;, Udev is
-known to load properly-written drivers for INPUT, IDE, PCI, USB, SCSI,
-SERIO and FireWire devices.
+Udev がモジュールをロードできるためには、バス固有のエイリアスがあって、バスドライバが
+<systemitem class="filesystem">sysfs</systemitem>
+に対して適切なエイリアスを提供していることが必要です。
+そうでない場合は、別の手段を通じてモジュールのロードを仕組まなければなりません。
+Linux-&linux-version; においての Udev
+は、
+INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire
+の各デバイスに対するドライバをロードします。
+それらのデバイスドライバが適切に構築されているからです。
 </para>
 @z
 
@@ -448,12 +453,12 @@ SERIO and FireWire devices.
       a <filename>modalias</filename> file there.</para>
 @y
 <para>
-
-To determine if the device driver you require has the necessary
-support for Udev, run <command>modinfo</command> with the module name as
-the argument.  Now try locating the device directory under
-<filename class="directory">/sys/bus</filename> and check whether there is
-a <filename>modalias</filename> file there.
+目的のデバイスドライバが Udev に対応しているかどうかは、
+<command>modinfo</command> コマンドに引数としてモジュール名を与えて実行します。
+<filename class="directory">/sys/bus</filename>
+ディレクトリ配下にあるそのデバイス用のディレクトリを見つけ出して、
+<filename>modalias</filename>
+ファイルが存在しているかどうかを見ることで分かります。
 </para>
 @z
 
@@ -465,12 +470,12 @@ a <filename>modalias</filename> file there.
       to be fixed later.</para>
 @y
 <para>
-
-If the <filename>modalias</filename> file exists in <systemitem
-class="filesystem">sysfs</systemitem>, the driver supports the device and
-can talk to it directly, but doesn't have the alias, it is a bug in the
-driver. Load the driver without the help from Udev and expect the issue
-to be fixed later.
+<systemitem class="filesystem">sysfs</systemitem>
+に <filename>modalias</filename>
+ファイルが存在しているなら、そのドライバはデバイスをサポートし、デバイスとの直接のやり取りが可能であることを表します。
+ただしエイリアスを持っていなければ、それはドライバのバグです。
+その場合は Udev に頼ることなくドライバをロードするしかありません。
+そしてそのバグが解消されるのを待つしかありません。
 </para>
 @z
 
@@ -482,12 +487,14 @@ to be fixed later.
       busses. Expect this issue to be fixed in later kernel versions.</para>
 @y
 <para>
-
-If there is no <filename>modalias</filename> file in the relevant
-directory under <filename class="directory">/sys/bus</filename>, this
-means that the kernel developers have not yet added modalias support to
-this bus type. With Linux-&linux-version;, this is the case with ISA
-busses. Expect this issue to be fixed in later kernel versions.
+<filename class="directory">/sys/bus</filename>
+ディレクトリ配下の対応するディレクトリ内に
+<filename>modalias</filename>
+ファイルがなかったら、これはカーネル開発者がそのバス形式に対する
+modalias のサポートをまだ行っていないことを意味します。
+Linux-&linux-version;
+では ISA バスがこれに該当します。
+最新のカーネルにて解消されることを願うしかありません。
 </para>
 @z
 
@@ -497,10 +504,10 @@ busses. Expect this issue to be fixed in later kernel versions.
       <emphasis>loop</emphasis> at all.</para>
 @y
 <para>
-
-Udev is not intended to load <quote>wrapper</quote> drivers such as
-<emphasis>snd-pcm-oss</emphasis> and non-hardware drivers such as
-<emphasis>loop</emphasis> at all.
+Udev は <emphasis>snd-pcm-oss</emphasis>
+のような <quote>ラッパー (wrapper)</quote> ドライバや
+<emphasis>loop</emphasis>
+のような、現実のハードウェアに対するものではないドライバは、ロードすることができません。
 </para>
 @z
 
@@ -725,8 +732,11 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
         <para>The <systemitem class="filesystem">sysfs</systemitem> Filesystem
         <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/></para>
 @y
-        <para>The <systemitem class="filesystem">sysfs</systemitem> Filesystem
-        <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/></para>
+<para>
+
+The <systemitem class="filesystem">sysfs</systemitem> Filesystem
+<ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/>
+</para>
 @z
 
 @x
@@ -734,8 +744,10 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
         <ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
         </para>
 @y
-        <para>Pointers to further reading
-        <ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
-        </para>
+<para>
+
+Pointers to further reading
+<ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
+</para>
 @z
 

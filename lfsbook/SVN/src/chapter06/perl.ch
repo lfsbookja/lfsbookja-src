@@ -167,3 +167,355 @@ Perl がデフォルトで定める設定でも構わない場合は、以下の
       <bridgehead renderas="sect3">概略説明</bridgehead>
 @z
 
+@x a2p
+          <para>Translates awk to Perl</para>
+@y
+<para>
+awk スクリプトを Perl スクリプトに変換します。
+</para>
+@z
+
+@x c2ph
+          <para>Dumps C structures as generated from
+          <command>cc -g -S</command></para>
+@y
+<para>
+<command>cc -g -S</command>
+によって生成されるような C 言語構造体をダンプします。
+</para>
+@z
+
+@x config_data
+          <para>Queries or changes configuration of Perl modules</para>
+@y
+<para>
+Perl モジュールの設定を検索または変更します。
+</para>
+@z
+
+@x corelist
+          <para>A commandline frontend to Module::CoreList</para>
+@y
+<para>
+Module::CoreList に対するコマンドラインフロントエンド。
+</para>
+@z
+
+@x cpan
+          <para>Interact with the Comprehensive Perl Archive Network (CPAN)
+          from the command line</para>
+@y
+<para>
+コマンドラインから CPAN
+(Comprehensive Perl Archive Network)
+との通信を行います。
+</para>
+@z
+
+@x cpan2dist
+          <para>The CPANPLUS distribution creator</para>
+@y
+<para>
+CPANPLUS の配布物生成ツール。
+</para>
+@z
+
+@x cpanp
+          <para>The CPANPLUS launcher</para>
+@y
+<para>
+CPANPLUS ランチャー。
+</para>
+@z
+
+@x cpanp-run-perl
+          <para>Perl script that (description needed)</para>
+@y
+<para>
+Perl スクリプト。(説明要。)
+</para>
+@z
+
+@x dprofpp
+          <para>Displays Perl profile data</para>
+@y
+<para>
+Perl プロファイルデータを表示します。
+</para>
+@z
+
+@x enc2xs
+          <para>Builds a Perl extension for the Encode module from either
+          Unicode Character Mappings or Tcl Encoding Files</para>
+@y
+<para>
+Unicode キャラクターマッピングまたは Tcl エンコーディングファイルから、
+Perl の Encode 拡張モジュールを構築します。
+</para>
+@z
+
+@x find2perl
+          <para>Translates <command>find</command> commands to Perl</para>
+@y
+<para>
+<command>find</command> コマンドを Perl に変換します。
+</para>
+@z
+
+@x h2ph
+          <para>Converts <filename class="extension">.h</filename> C header
+          files to <filename class="extension">.ph</filename> Perl header
+          files</para>
+@y
+<para>
+C 言語のヘッダーファイル <filename class="extension">.h</filename>
+を Perl のヘッダーファイル <filename class="extension">.ph</filename>
+に変換します。
+</para>
+@z
+
+@x h2xs
+          <para>Converts <filename class="extension">.h</filename> C header
+          files to Perl extensions</para>
+@y
+<para>
+C 言語のヘッダーファイル <filename class="extension">.h</filename>
+を Perl 拡張 (Perl extension) に変換します。
+</para>
+@z
+
+@x instmodsh
+          <para>Shell script for examining installed Perl modules,
+          and can even create a tarball from an installed module</para>
+@y
+<para>
+インストールされている Perl モジュールを調査するシェルスクリプト。
+インストールされたモジュールから tarball を作ることもできます。
+</para>
+@z
+
+@x libnetcfg
+          <para>Can be used to configure the
+          <filename class="libraryfile">libnet</filename></para>
+@y
+<para>
+<filename class="libraryfile">libnet</filename>
+ライブラリの設定に利用します。
+</para>
+@z
+
+@x perl
+          <para>Combines some of the best features of C, <command>sed</command>,
+          <command>awk</command> and <command>sh</command> into a single
+          swiss-army language</para>
+@y
+<!--
+日本語訳註：2009-09-05 matsuand
+"swiss-army" はどうにも訳しにくい。Perl言語がそもそも
+「Swiss army chainsaw」と呼び表されることに通じるものと捉えるが、
+"s" が小文字なのも気にかかるし「スイス軍」などとは間違っても
+訳せない。取り除くことにした。
+-->
+<para>
+C 言語、
+<command>sed</command>、
+<command>awk</command>、
+<command>sh</command>
+の持つ機能を寄せ集めて出来上がった言語。
+</para>
+@z
+
+@x perl5.10.1
+          <para>A hard link to <command>perl</command></para>
+@y
+<para>
+<command>perl</command> へのハードリンク。
+</para>
+@z
+
+@x perlbug
+          <para>Used to generate bug reports about Perl, or the modules that come
+          with it, and mail them</para>
+@y
+<para>
+Perl およびそのモジュールに関するバグ報告を生成して、電子メールを送信します。
+</para>
+@z
+
+@x perldoc
+          <para>Displays a piece of documentation in pod format that is embedded
+          in the Perl installation tree or in a Perl script</para>
+@y
+<para>
+pod フォーマットのドキュメントを表示します。
+pod フォーマットは Perl のインストールツリーあるいは Perl スクリプト内に埋め込まれています。
+</para>
+@z
+
+@x perlivp
+          <para>The Perl Installation Verification Procedure; it can be used to
+          verify that Perl and its libraries have been installed
+          correctly</para>
+@y
+<para>
+Perl Installation Verification Procedure のこと。
+Perl とライブラリが正しくインストールできているかを調べるものです。
+</para>
+@z
+
+@x piconv
+          <para>A Perl version of the character encoding converter
+          <command>iconv</command></para>
+@y
+<para>
+キャラクターエンコーディングを変換する
+<command>iconv</command>
+の Perl バージョン。
+</para>
+@z
+
+@x pl2pm
+          <para>A rough tool for converting Perl4
+          <filename class="extension">.pl</filename> files to Perl5
+          <filename class="extension">.pm</filename> modules</para>
+@y
+<para>
+
+A rough tool for converting Perl4
+<filename class="extension">.pl</filename> files to Perl5
+<filename class="extension">.pm</filename> modules
+</para>
+@z
+
+@x pod2html
+          <para>Converts files from pod format to HTML format</para>
+@y
+<para>
+pod フォーマットから HTML フォーマットに変換します。
+</para>
+@z
+
+@x pod2latex
+          <para>Converts files from pod format to LaTeX format</para>
+@y
+<para>
+pod フォーマットから LaTeX フォーマットへ変換します。
+</para>
+@z
+
+@x pod2man
+          <para>Converts pod data to formatted *roff input</para>
+@y
+<para>
+pod データを *roff の入力ファイル形式に変換します。
+</para>
+@z
+
+@x pod2text
+          <para>Converts pod data to formatted ASCII text</para>
+@y
+<para>
+pod データをアスキーテキスト形式に変換します。
+</para>
+@z
+
+@x pod2usage
+          <para>Prints usage messages from embedded pod docs in files</para>
+@y
+<para>
+ファイル内に埋め込まれた pod ドキュメントから使用方法の記述部分を表示します。
+</para>
+@z
+
+@x podchecker
+          <para>Checks the syntax of pod format documentation files</para>
+@y
+<para>
+pod 形式の文書ファイルに対して文法をチェックします。
+</para>
+@z
+
+@x podselect
+          <para>Displays selected sections of pod documentation</para>
+@y
+<para>
+pod ドキュメントに対して指定したセクションを表示します。
+</para>
+@z
+
+@x prove
+          <para>Command line tool for running tests against the Test::Harness
+          module.</para>
+@y
+<para>
+Test::Harness モジュールのテストを行うコマンドラインツール。
+</para>
+@z
+
+@x psed
+          <para>A Perl version of the stream editor <command>sed</command></para>
+@y
+<para>
+ストリームエディタ <command>sed</command> の Perl バージョン。
+</para>
+@z
+
+@x pstruct
+          <para>Dumps C structures as generated from <command>cc -g -S</command>
+          stabs</para>
+@y
+<para>
+<command>cc -g -S</command>
+によって生成されるような C 言語構造体をダンプします。
+</para>
+@z
+
+@x ptar
+          <para>A <command>tar</command>-like program written in Perl</para>
+@y
+<para>
+Perl で書かれた <command>tar</command> 相当のプログラム。
+</para>
+@z
+
+@x ptardiff
+          <para>A Perl program that compares an extracted archive with an
+          unextracted one</para>
+@y
+<para>
+アーカイブの抽出前後を比較する Perl プログラム。
+</para>
+@z
+
+@x s2p
+          <para>Translates <command>sed</command> scripts to Perl</para>
+@y
+<para>
+<command>sed</command> スクリプトを Perl スクリプトに変換します。
+</para>
+@z
+
+@x shasum
+          <para>Prints or checks SHA checksums</para>
+@y
+<para>
+SHA チェックサム値を表示またはチェックします。
+</para>
+@z
+
+@x splain
+          <para>Is used to force verbose warning diagnostics in Perl</para>
+@y
+<para>
+Perl スクリプトの警告エラーの診断結果を詳細 (verbose) に出力するために利用します。
+</para>
+@z
+
+@x xsubpp
+          <para>Converts Perl XS code into C code</para>
+@y
+<para>
+Perl の XS コードを C 言語コードに変換します。
+</para>
+@z
+
