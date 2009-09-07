@@ -48,6 +48,9 @@
           <para>[matsuand] - src/chapter03/packages.ch: 修正。</para>
         </listitem>
         <listitem>
+          <para>[matsuand] - src/chapter06/e2fsprogs.ch: 修正。"s/fsck/e2fsck/"</para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - src/chapter06/gettext.ch: 修正。</para>
         </listitem>
         <listitem>
