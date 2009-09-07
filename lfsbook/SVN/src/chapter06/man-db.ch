@@ -443,8 +443,10 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
           <para>Dumps the <command>whatis</command> database contents in
           human-readable form</para>
 @y
-          <para>Dumps the <command>whatis</command> database contents in
-          human-readable form</para>
+<para>
+<command>whatis</command>
+データベースの内容をダンプして読みやすい形で出力します。
+</para>
 @z
 
 @x apropos
@@ -452,8 +454,83 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
           the short descriptions of system commands that contain a given
           string</para>
 @y
+<para>
+<command>whatis</command>
+データベースを検索して、指定した文字列を含むシステムコマンドの概略説明を表示します。
+</para>
+@z
+
+@x catman
+          <para>Creates or updates the pre-formatted manual pages</para>
+@y
+<para>
+フォーマット済マニュアルページを生成、更新します。
+</para>
+@z
+
+@x lexgrog
+          <para>Displays one-line summary information about a given manual
+          page</para>
+@y
+<para>
+指定されたマニュアルページについて、一行のサマリー情報を表示します。
+</para>
+@z
+
+@x man
+          <para>Formats and displays the requested manual page</para>
+@y
+<para>
+指定されたマニュアルページを整形して表示します。
+</para>
+@z
+
+@x mandb
+          <para>Creates or updates the <command>whatis</command> database</para>
+@y
+<para>
+<command>whatis</command>
+データベースを生成、更新します。
+</para>
+@z
+
+@x manpath
+          <para>Displays the contents of $MANPATH or (if $MANPATH is not set)
+          a suitable search path based on the settings in man.conf and the
+          user's environment</para>
+@y
+<para>
+$MANPATH の内容を表示します。
+あるいは ($MANPATH が設定されていない場合は)
+man.conf 内の設定とユーザー設定に基づいて適切な検索パスを表示します。
+</para>
+@z
+
+@x whatis
           <para>Searches the <command>whatis</command> database and displays
-          the short descriptions of system commands that contain a given
-          string</para>
+          the short descriptions of system commands that contain the given
+          keyword as a separate word</para>
+@y
+<!--
+日本語訳註： 2009-09-07 matsuand
+separate word の意味が分からなかったため訳出しなかった。
+-->
+<para>
+<command>whatis</command>
+データベースを検索して、指定されたキーワードを含むシステムコマンドの概略説明を表示します。
+</para>
+@z
+
+@x zsoelim
+          <para>Reads files and replaces lines of the form <emphasis>.so
+          file</emphasis> by the contents of the mentioned
+          <emphasis>file</emphasis></para>
+@y
+<para>
+ファイルの内容を読み込んで、
+<emphasis>.so file</emphasis>
+の形で書かれている記述行を、その <emphasis>file</emphasis>
+の内容に置き換えます。
+</para>
 @z
 

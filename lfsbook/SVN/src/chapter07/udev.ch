@@ -70,7 +70,7 @@ Udev による方法では、カーネルが検知したデバイスだけがデ
 <systemitem class="filesystem">tmpfs</systemitem>
 ファイルシステム上に保存されます。
 (<systemitem class="filesystem">tmpfs</systemitem>
-は仮想ファイルシステムであり、モリ上に置かれます。)
+は仮想ファイルシステムであり、メモリ上に置かれます。)
 デバイスノードの情報はさほど多くないので、消費するメモリ容量は無視できるほど少ないものです。
 </para>
 @z
@@ -530,14 +530,15 @@ Udev は <emphasis>snd-pcm-oss</emphasis>
       <filename>/etc/modprobe.conf</filename>. For example:</para>
 @y
 <para>
-
-If the <quote>wrapper</quote> module only enhances the functionality
-provided by some other module (e.g., <emphasis>snd-pcm-oss</emphasis>
-enhances the functionality of <emphasis>snd-pcm</emphasis> by making the
-sound cards available to OSS applications), configure
-<command>modprobe</command> to load the wrapper after Udev loads the
-wrapped module. To do this, add an <quote>install</quote> line in
-<filename>/etc/modprobe.conf</filename>. For example:
+<quote>ラッパー (wrapper)</quote>
+モジュールが単に他のモジュールの機能を拡張するだけのものであるなら
+(例えば <emphasis>snd-pcm-oss</emphasis> は
+<emphasis>snd-pcm</emphasis> の機能拡張を行うもので、
+OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため)
+<command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
+これは以下のように
+<filename>/etc/modprobe.conf</filename>
+ファイル内にて <quote>install</quote> の記述行を加えることで実現します。
 </para>
 @z
 
@@ -549,12 +550,12 @@ wrapped module. To do this, add an <quote>install</quote> line in
       This works for wrapper modules too, but is suboptimal in that case.</para>
 @y
 <para>
-
-If the module in question is not a wrapper and is useful by itself,
-configure the <command>S05modules</command> bootscript to load this
-module on system boot. To do this, add the module name to the
-<filename>/etc/sysconfig/modules</filename> file on a separate line.
-This works for wrapper modules too, but is suboptimal in that case.
+問題のモジュールがラッパーモジュールではなく、単独で利用できるものであれば、
+<command>S05modules</command>
+ブートスクリプトを編集して、システム起動時にこのモジュールがロードされるようにします。
+これは <filename>/etc/sysconfig/modules</filename>
+ファイルにて、そのモジュール名を単独の行に記述することで実現します。
+この方法はラッパーモジュールに対しても動作しますが、この場合は次善策となります。
 </para>
 @z
 
@@ -572,10 +573,11 @@ Udev が不必要なモジュールをロードする問題
       <emphasis>forte</emphasis> module in the example below:</para>
 @y
 <para>
-
-Either don't build the module, or blacklist it in
-<filename>/etc/modprobe.conf</filename> file as done with the
-<emphasis>forte</emphasis> module in the example below:
+不必要なモジュールはこれをビルドしないことにするか、あるいは
+<filename>/etc/modprobe.conf</filename>
+ファイルにブラックリスト (blacklist) として登録してください。
+例えば <emphasis>forte</emphasis>
+モジュールをブラックリストに登録するには以下のようにします。
 </para>
 @z
 
@@ -584,9 +586,8 @@ Either don't build the module, or blacklist it in
       explicit <command>modprobe</command> command.</para>
 @y
 <para>
-
-Blacklisted modules can still be loaded manually with the
-explicit <command>modprobe</command> command.
+ブラックリストに登録されたモジュールは <command>modprobe</command>
+コマンドを使えば手動でロードすることもできます。
 </para>
 @z
 
@@ -605,17 +606,23 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
       Find the offending rule and make it more specific, with the help of the
       <command>udevadm info</command> command.</para>
 @y
-      <para>This usually happens if a rule unexpectedly matches a device. For
-      example, a poorly-writen rule can match both a SCSI disk (as desired)
-      and the corresponding SCSI generic device (incorrectly) by vendor.
-      Find the offending rule and make it more specific, with the help of the
-      <command>udevadm info</command> command.</para>
+<para>
+デバイス生成規則が意図したデバイスに合致していないと、この状況が往々にして起こります。
+例えば生成規則の記述が不十分であった場合、SCSI ディスク (本来望んでいるデバイス)
+と、それに対応づいたものとしてベンダーが提供する SCSI ジェネリックデバイス
+(これは誤ったデバイス) の両方に生成規則が合致してしまいます。
+記述されている生成規則を探し出して正確に記述してください。
+その際には <command>udevadm info</command>
+コマンドを使って情報を確認してください。
+</para>
 @z
 
 @x
       <title>Udev rule works unreliably</title>
 @y
-      <title>Udev rule works unreliably</title>
+<title>
+Udev 規則が不審な動きをする問題
+</title>
 @z
 
 @x
@@ -628,20 +635,27 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
       file (create this file if it does not exist). Please notify the LFS
       Development list if you do so and it helps.</para>
 @y
-      <para>This may be another manifestation of the previous problem. If not,
-      and your rule uses <systemitem class="filesystem">sysfs</systemitem>
-      attributes, it may be a kernel timing issue, to be fixed in later kernels.
-      For now, you can work around it by creating a rule that waits for the used
-      <systemitem class="filesystem">sysfs</systemitem> attribute and appending
-      it to the <filename>/etc/udev/rules.d/10-wait_for_sysfs.rules</filename>
-      file (create this file if it does not exist). Please notify the LFS
-      Development list if you do so and it helps.</para>
+<para>
+この問題は、一つ前に示したものが別の症状となって現れたものかもしれません。
+そのような理由でなく、生成規則が正しく
+<systemitem class="filesystem">sysfs</systemitem>
+の属性を利用しているのであれば、それはカーネルの処理タイミングに関わる問題であって、カーネルを修正すべきものです。
+今の時点では、該当する <systemitem class="filesystem">sysfs</systemitem>
+の属性の利用を待ち受けるような生成規則を生成し、
+<filename>/etc/udev/rules.d/10-wait_for_sysfs.rules</filename>
+ファイルにそれを追加することで対処できます。
+(<filename>/etc/udev/rules.d/10-wait_for_sysfs.rules</filename>
+ファイルがなければ新規に生成します。)
+もしこれを実施してうまくいった場合は LFS 開発メーリングリストにお知らせください。
+</para>
 @z
 
 @x
       <title>Udev does not create a device</title>
 @y
-      <title>Udev does not create a device</title>
+<title>
+Udev がデバイスを生成しない問題
+</title>
 @z
 
 @x
@@ -649,9 +663,11 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
       kernel or already loaded as a module, and that you have already checked
       that Udev doesn't create a misnamed device.</para>
 @y
-      <para>Further text assumes that the driver is built statically into the
-      kernel or already loaded as a module, and that you have already checked
-      that Udev doesn't create a misnamed device.</para>
+<para>
+ここでは以下のことを前提としています。
+まずドライバがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
+そして Udev が異なった名前のデバイスを生成していないことです。
+</para>
 @z
 
 @x
@@ -667,23 +683,27 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
       <filename class="directory">/dev</filename> by the
       <command>S10udev</command> bootscript.</para>
 @y
-      <para>Udev has no information needed to create a device node if a kernel
-      driver does not export its data to <systemitem
-      class="filesystem">sysfs</systemitem>.
-      This is most common with third party drivers from outside the kernel
-      tree. Create a static device node in
-      <filename>/lib/udev/devices</filename> with the appropriate major/minor
-      numbers (see the file <filename>devices.txt</filename> inside the kernel
-      documentation or the documentation provided by the third party driver
-      vendor). The static device node will be copied to
-      <filename class="directory">/dev</filename> by the
-      <command>S10udev</command> bootscript.</para>
+<para>
+Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバが
+<systemitem class="filesystem">sysfs</systemitem>
+に対して属性データを提供していなければなりません。
+これはカーネルツリーの外に配置されるサードパーティ製のドライバであれば当たり前のことです。
+したがって <filename>/lib/udev/devices</filename>
+において、適切なメジャー・マイナー番号を用いた静的なデバイスノードを生成してください。
+(カーネルのドキュメント <filename>devices.txt</filename>
+またはサードパーティベンダーが提供するドキュメントを参照してください。)
+この静的デバイスノードは、<command>S10udev</command>
+ブートスクリプトによって <filename class="directory">/dev</filename>
+にコピーされます。
+</para>
 @z
 
 @x
       <title>Device naming order changes randomly after rebooting</title>
 @y
-      <title>Device naming order changes randomly after rebooting</title>
+<title>
+再起動後にデバイスの命名順がランダムに変わってしまう問題
+</title>
 @z
 
 @x
@@ -696,36 +716,42 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
       See <xref linkend="ch-scripts-symlinks"/> and
       <xref linkend="ch-scripts-network"/> for examples.</para>
 @y
-      <para>This is due to the fact that Udev, by design, handles uevents and
-      loads modules in parallel, and thus in an unpredictable order. This will
-      never be <quote>fixed</quote>. You should not rely upon the kernel device
-      names being stable. Instead, create your own rules that make symlinks with
-      stable names based on some stable attributes of the device, such as a
-      serial number or the output of various *_id utilities installed by Udev.
-      See <xref linkend="ch-scripts-symlinks"/> and
-      <xref linkend="ch-scripts-network"/> for examples.</para>
+<para>
+これは Udev の設計仕様に従って発生するもので、uevent の扱いとモジュールのロードが平行して行われるためです。
+このために命名順が予期できないものになります。
+これを <quote>固定的に</quote> することはできません。
+ですからカーネルがデバイス名を固定的に定めるようなことを求めるのではなく、シンボリックリンクを用いた独自の生成規則を作り出して、そのデバイスの固定的な属性を用いた固定的な名前を用いる方法を取ります。
+固定的な属性とは例えば、Udev によってインストールされる様々な *_id という名のユーティリティが出力するシリアル番号などです。
+設定例については
+<xref linkend="ch-scripts-symlinks"/> や
+<xref linkend="ch-scripts-network"/> を参照してください。
+</para>
 @z
 
 @x
     <title>Useful Reading</title>
 @y
-    <title>Useful Reading</title>
+    <title>参考情報</title>
 @z
 
 @x
     <para>Additional helpful documentation is available at the following
     sites:</para>
 @y
-    <para>Additional helpful documentation is available at the following
-    sites:</para>
+<para>
+さらに参考になるドキュメントが以下のサイトにあります：
+</para>
 @z
 
 @x
         <para>A Userspace Implementation of <systemitem class="filesystem">devfs</systemitem>
         <ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/></para>
 @y
-        <para>A Userspace Implementation of <systemitem class="filesystem">devfs</systemitem>
-        <ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/></para>
+<para>
+<systemitem class="filesystem">devfs</systemitem>
+のユーザー空間での実装方法
+<ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/>
+</para>
 @z
 
 @x
@@ -733,8 +759,7 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
         <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/></para>
 @y
 <para>
-
-The <systemitem class="filesystem">sysfs</systemitem> Filesystem
+<systemitem class="filesystem">sysfs</systemitem> ファイルシステム
 <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/>
 </para>
 @z
@@ -745,8 +770,7 @@ The <systemitem class="filesystem">sysfs</systemitem> Filesystem
         </para>
 @y
 <para>
-
-Pointers to further reading
+より詳細なドキュメントへのリンク
 <ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
 </para>
 @z

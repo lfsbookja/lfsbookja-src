@@ -42,6 +42,30 @@
 -->
 
     <listitem>
+      <para>2009-09-xx, 訳出率 99.0%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter03/packages.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/gettext.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/iproute2.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/man-db.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter07/symlinks.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter07/udev.ch: 修正。脱字修正: "s/、モリ上に/、メモリ上に/"</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-06, 訳出率 98.0%</para>
       <itemizedlist>
         <listitem>

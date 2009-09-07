@@ -386,11 +386,10 @@ Linux カーネルはわりと頻繁に更新されます。
           cost for a subsequent patch level upgrade within a minor release.
           </para>
 @y
-          <para>For users with limited speed or expensive bandwidth who wish to
-          update the Linux kernel, a baseline version of the package and
-          patches can be downloaded separately.  This may save some time or
-          cost for a subsequent patch level upgrade within a minor release.
-          </para>
+<para>
+低速度のネットワークや高負荷の帯域幅を利用するユーザーが Linux カーネルをアップデートしようとする場合は、同一バージョンのカーネルパッケージとそのパッチを個別にダウンロードする方法もあります。
+その場合、時間の節約を図ることができ、あるいはマイナーバージョンが同一であれば複数パッチを当ててアップグレードする作業時間の短縮が図れます。
+</para>
 @z
 
 @x

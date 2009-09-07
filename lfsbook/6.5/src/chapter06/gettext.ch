@@ -110,10 +110,12 @@ Gettext 標準のインフラストラクチャーファイル (infrastructure f
           <para>Outputs a system-dependent table of character encoding
           aliases</para>
 @y
+<!--
+日本語訳註： 2009-09-07 matsuand
+とりあえずの訳。本コマンドの意味が分からない。
+-->
 <para>
-
-Outputs a system-dependent table of character encoding
-aliases
+システム依存の、キャラクターエンコーディングのエイリアス対応表を出力します。
 </para>
 @z
 
@@ -122,11 +124,13 @@ aliases
           to set the runtime search path of shared libraries in an
           executable</para>
 @y
+<!--
+日本語訳註： 2009-09-07 matsuand
+とりあえずの訳。本コマンドの意味が分からない。
+-->
 <para>
-
-Outputs a system-dependent set of variables, describing how
-to set the runtime search path of shared libraries in an
-executable
+システムに依存する変数一覧を出力します。
+その変数とは、実行モジュールにおける共有ライブラリの検索パスをどのように設定するかを示すものです。
 </para>
 @z
 
@@ -392,11 +396,15 @@ Gettext が提供する標準的なアプリケーション
           <filename class="libraryfile">libintl</filename> in logging
           untranslated messages.</para>
 @y
+<!--
+日本語訳註： 2009-09-07 matsuand
+コマンド不明。
+-->
 <para>
-
-A library, intended to be used by LD_PRELOAD that assists
-<filename class="libraryfile">libintl</filename> in logging
-untranslated messages.
+LD_PRELOAD が利用するライブラリ。
+翻訳されていないメッセージを収集 (log) する
+<filename class="libraryfile">libintl</filename>
+をサポートします。
 </para>
 @z
 

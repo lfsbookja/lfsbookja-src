@@ -196,13 +196,12 @@ LFS システムを初めてブートした時に生成されます。
 <para>
 もっとも CD-ROM デバイスが複数あると、ブート時に生成されるシンボリックリンクが、ホスト利用時に指し示されていたものとは異なる場合が発生します。
 デバイスの検出順は予測できないものだからです。
-
-The
-assignments created when you first boot the LFS system will be stable, so
-this is only an issue if you need the symlinks on both systems to point to
-the same device. If you need that, then inspect (and possibly edit) the
-generated <filename>/etc/udev/rules.d/70-persistent-cd.rules</filename>
-file after booting, to make sure the assigned symlinks match what you need.
+LFS システムを初めて起動した時の割り当ては、たぶん固定的に行われるはずです。
+つまりこのことは、ホストシステムと LFS システムの双方で、シンボリックリンクが同じデバイスを指し示すことが必要である場合にのみ問題となります。
+これが必要であるなら、生成されている
+<filename>/etc/udev/rules.d/70-persistent-cd.rules</filename>
+ファイルを起動後に調査して (おそらくは編集して)
+割り当てられたシンボリックリンクが望むものになっているかどうかを確認してください。
 </para>
 @z
 
