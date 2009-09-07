@@ -357,46 +357,46 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
 
 @x fsck.ext2
           <para>By default checks <systemitem class="filesystem">ext2</systemitem>
-          file systems. This is a hard link to <command>fsck</command>.</para>
+          file systems. This is a hard link to <command>e2fsck</command>.</para>
 @y
 <para>
 デフォルトでは <systemitem class="filesystem">ext2</systemitem>
 ファイルシステムをチェックします。
-これは <command>fsck</command> へのハードリンクです。
+これは <command>e2fsck</command> へのハードリンクです。
 </para>
 @z
 
 @x fsck.ext3
           <para>By default checks <systemitem class="filesystem">ext3</systemitem>
-          file systems. This is a hard link to <command>fsck</command>.</para>
+          file systems. This is a hard link to <command>e2fsck</command>.</para>
 @y
 <para>
 デフォルトでは <systemitem class="filesystem">ext3</systemitem>
 ファイルシステムをチェックします。
-これは <command>fsck</command> へのハードリンクです。
+これは <command>e2fsck</command> へのハードリンクです。
 </para>
 @z
 
 @x fsck.ext4
           <para>By default checks <systemitem class="filesystem">ext4</systemitem>
-          file systems. This is a hard link to <command>fsck</command>.</para>
+          file systems. This is a hard link to <command>e2fsck</command>.</para>
 @y
 <para>
 デフォルトでは <systemitem class="filesystem">ext4</systemitem>
 ファイルシステムをチェックします。
-これは <command>fsck</command> へのハードリンクです。
+これは <command>e2fsck</command> へのハードリンクです。
 </para>
 @z
 
 @x fsck.ext4dev
           <para>By default checks <systemitem class="filesystem">ext4</systemitem>
           development file systems. This is a hard link to 
-          <command>fsck</command>.</para>
+          <command>e2fsck</command>.</para>
 @y
 <para>
 デフォルトでは <systemitem class="filesystem">ext4</systemitem>
 ファイルシステムの開発版をチェックします。
-これは <command>fsck</command> へのハードリンクです。
+これは <command>e2fsck</command> へのハードリンクです。
 </para>
 @z
 
