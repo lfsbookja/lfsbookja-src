@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -109,88 +118,88 @@
         <para>ダイナミック ホスト コンフィギュレーション プロトコル (Dynamic Host Configuration Protocol)</para>
 @z
 
-@x
+@x DNS
         <para>Domain Name Service</para>
 @y
         <para>Domain Name Service</para>
 @z
 
-@x
+@x EGA
         <para>Enhanced Graphics Adapter</para>
 @y
         <para>Enhanced Graphics Adapter</para>
 @z
 
-@x
+@x ELF
         <para>Executable and Linkable Format</para>
 @y
         <para>Executable and Linkable Format</para>
 @z
 
-@x
+@x EOF
         <para>End of File</para>
 @y
-        <para>End of File</para>
+        <para>ファイルの終端 (End of File)</para>
 @z
 
-@x
+@x EQN
         <para>equation</para>
 @y
-        <para>equation</para>
+        <para>式 (equation)</para>
 @z
 
-@x
+@x EVMS
         <para>Enterprise Volume Management System</para>
 @y
         <para>Enterprise Volume Management System</para>
 @z
 
-@x
+@x ext2
         <para>second extended file system</para>
 @y
         <para>second extended file system</para>
 @z
 
-@x
+@x ext3
         <para>third extended file system</para>
 @y
         <para>third extended file system</para>
 @z
 
-@x
+@x ext4
         <para>fourth extended file system</para>
 @y
         <para>fourth extended file system</para>
 @z
 
-@x
+@x FAQ
         <para>Frequently Asked Questions</para>
 @y
-        <para>Frequently Asked Questions</para>
+        <para>よく尋ねられる質問 (Frequently Asked Questions)</para>
 @z
 
-@x
+@x FHS
         <para>Filesystem Hierarchy Standard</para>
 @y
-        <para>Filesystem Hierarchy Standard</para>
+        <para>ファイルシステム階層標準 (Filesystem Hierarchy Standard)</para>
 @z
 
-@x
+@x FIFO
         <para>First-In, First Out</para>
 @y
-        <para>First-In, First Out</para>
+        <para>ファーストイン、ファーストアウト (First-In, First Out)</para>
 @z
 
-@x
+@x FQDN
         <para>Fully Qualified Domain Name</para>
 @y
-        <para>Fully Qualified Domain Name</para>
+        <para>完全修飾ドメイン名 (Fully Qualified Domain Name)</para>
 @z
 
-@x
+@x FTP
         <para>File Transfer Protocol</para>
 @y
-        <para>File Transfer Protocol</para>
+        <para>ファイル転送プロトコル (File Transfer Protocol)</para>
 @z
 
 @x

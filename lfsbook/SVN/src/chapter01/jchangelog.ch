@@ -5,6 +5,14 @@
   %general-entities;
 ]>
 
+<!--
+ This is part of LFSbookja package.
+
+ $Author$
+ $Rev$
+ $Date$
+-->
+
 <sect1 id="ch-scatter-jchangelog">
   <?dbhtml filename="jchangelog.html"?>
 
@@ -42,8 +50,11 @@
 -->
 
     <listitem>
-      <para>2009-09-08, 訳出率 99.1%</para>
+      <para>2009-09-08, 訳出率 99.3%</para>
       <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/glibc.ch: 修正。</para>
+        </listitem>
         <listitem>
           <para>[matsuand] - src/chapter06/kbd.ch: 修正。</para>
         </listitem>

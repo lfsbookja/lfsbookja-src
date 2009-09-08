@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -792,11 +801,13 @@ RPC サーバーに対しての RPC コールを行います。
           <filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename>
           for more information</para>
 @y
+<!--
+日本語訳註： 2009-09-08 matsuand
+gross hack の真の意味が分からない。
+-->
 <para>
-
-Used internally by Glibc as a gross hack to get broken programs
-(e.g., some Motif applications) running. 
-
+Glibc が内部で利用するもので、異常が発生しているプログラムを見つけ出します。
+(例えば Motif アプリケーションなど)
 詳しくは
 <filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename>
 に書かれたコメントを参照してください。
