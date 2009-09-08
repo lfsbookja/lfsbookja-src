@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -157,5 +166,213 @@ LFS-ブートスクリプトパッケージの中には
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">概略説明</bridgehead>
+@z
+
+@x chvt
+          <para>Changes the foreground virtual terminal</para>
+@y
+<para>
+現在表示されている仮想端末を切り替えます。
+</para>
+@z
+
+@x deallocvt
+          <para>Deallocates unused virtual terminals</para>
+@y
+<para>
+未使用の仮想端末への割り当てを開放します。
+</para>
+@z
+
+@x dumpkeys
+          <para>Dumps the keyboard translation tables</para>
+@y
+<para>
+キーボード変換テーブル (keyboard translation table) の情報をダンプします。
+</para>
+@z
+
+@x fgconsole
+          <para>Prints the number of the active virtual terminal</para>
+@y
+<para>
+アクティブな仮想端末数を表示します。
+</para>
+@z
+
+@x getkeycodes
+          <para>Prints the kernel scancode-to-keycode mapping table</para>
+@y
+<para>
+カーネルのスキャンコード-キーコード (scancode-to-keycode)
+マッピングテーブルを表示します。
+</para>
+@z
+
+@x kbd_mode
+          <para>Reports or sets the keyboard mode</para>
+@y
+<para>
+キーボードモードの表示または設定を行います。
+</para>
+@z
+
+@x kbdrate
+          <para>Sets the keyboard repeat and delay rates</para>
+@y
+<para>
+キーボードのリピート速度 (repeat rate) と遅延時間 (delay rate)
+を設定します。
+</para>
+@z
+
+@x loadkeys
+          <para>Loads the keyboard translation tables</para>
+@y
+<para>
+キーボード変換テーブル (keyboard translation tables) をロードします。
+</para>
+@z
+
+@x loadunimap
+          <para>Loads the kernel unicode-to-font mapping table</para>
+@y
+<para>
+カーネルのユニコード-フォント (unicode-to-font) マッピングテーブルをロードします。
+</para>
+@z
+
+@x mapscrn
+          <para>An obsolete program that used to load a user-defined output
+          character mapping table into the console driver; this is now done
+          by <command>setfont</command></para>
+@y
+<para>
+かつてのプログラムです。
+これはユーザー定義の文字マッピングテーブルをコンソールドライバーにロードするために利用します。
+現在では <command>setfont</command> を利用します。
+</para>
+@z
+
+@x openvt
+          <para>Starts a program on a new virtual terminal (VT)</para>
+@y
+<para>
+新しい仮想端末 (virtual terminal; VT) 上でプログラムを起動します。
+</para>
+@z
+
+@x psfaddtable
+          <para>A link to <command>psfxtable</command></para>
+@y
+<para>
+<command>psfxtable</command> へのリンク。
+</para>
+@z
+
+@x psfgettable
+          <para>A link to <command>psfxtable</command></para>
+@y
+<para>
+<command>psfxtable</command> へのリンク。
+</para>
+@z
+
+@x psfstriptable
+          <para>A link to <command>psfxtable</command></para>
+@y
+<para>
+<command>psfxtable</command> へのリンク。
+</para>
+@z
+
+@x psfxtable
+          <para>Handle Unicode character tables for console fonts</para>
+@y
+<para>
+コンソールフォント用のユニコード文字テーブルを取り扱います。
+</para>
+@z
+
+@x resizecons
+          <para>Changes the kernel idea of the console size</para>
+@y
+<para>
+カーネルが認識しているコンソールサイズを変更します。
+</para>
+@z
+
+@x setfont
+          <para>Changes the Enhanced Graphic Adapter (EGA) and Video Graphics
+          Array (VGA) fonts on the console</para>
+@y
+<para>
+EGA (Enhanced Graphic Adapter) フォントや
+VGA (Video Graphics Array) フォントを変更します。
+</para>
+@z
+
+@x setkeycodes
+          <para>Loads kernel scancode-to-keycode mapping table entries; this is
+          useful if there are unusual keys on the keyboard</para>
+@y
+<para>
+カーネルのスキャンコード-キーコード (scancode-to-keycode)
+マッピングテーブルの項目をロードします。
+キーボード上に特殊キーがある場合に利用します。
+</para>
+@z
+
+@x setleds
+          <para>Sets the keyboard flags and Light Emitting Diodes (LEDs)</para>
+@y
+<para>
+キーボードフラグや LED (Light Emitting Diode) を設定します。
+</para>
+@z
+
+@x setmetamode
+          <para>Defines the keyboard meta-key handling</para>
+@y
+<para>
+キーボードのメタキー (meta-key) 設定を定義します。
+</para>
+@z
+
+@x showconsolefont
+          <para>Shows the current EGA/VGA console screen font</para>
+@y
+<para>
+現在設定されている EGA/VGA コンソールスクリーンフォントを表示します。
+</para>
+@z
+
+@x showkey
+          <para>Reports the scancodes, keycodes, and ASCII codes of the keys
+          pressed on the keyboard</para>
+@y
+<para>
+キーボード上にて押下されたキーのスキャンコード、キーコード、ASCII コードを表示します。
+</para>
+@z
+
+@x unicode_start
+          <para>Puts the keyboard and console in UNICODE mode. Don't use this
+          program unless your keymap file is in the ISO-8859-1 encoding. For
+          other encodings, this utility produces incorrect results.</para>
+@y
+<para>
+キーボードとコンソールをユニコードモードにします。
+キーマップファイルが ISO-8859-1 エンコーディングで書かれている場合にのみこれを利用します。
+他のエンコーディングの場合、このプログラムの出力結果は正しいものになりません。
+</para>
+@z
+
+@x unicode_stop
+          <para>Reverts keyboard and console from UNICODE mode</para>
+@y
+<para>
+キーボードとコンソールをユニコードモードから戻します。
+</para>
 @z
 

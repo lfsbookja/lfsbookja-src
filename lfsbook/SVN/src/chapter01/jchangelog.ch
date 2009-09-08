@@ -42,6 +42,15 @@
 -->
 
     <listitem>
+      <para>2009-09-08, 訳出率 99.1%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/kbd.ch: 修正。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-07, 訳出率 99.0%</para>
       <itemizedlist>
         <listitem>
