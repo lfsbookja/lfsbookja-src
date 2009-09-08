@@ -50,13 +50,16 @@
 -->
 
     <listitem>
-      <para>2009-09-08, 訳出率 99.3%</para>
+      <para>2009-09-08, 訳出率 99.5%</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] - src/chapter06/glibc.ch: 修正。</para>
         </listitem>
         <listitem>
           <para>[matsuand] - src/chapter06/kbd.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter07/udev.ch: 修正。</para>
         </listitem>
       </itemizedlist>
     </listitem>

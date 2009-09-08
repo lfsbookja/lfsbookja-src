@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -223,24 +232,19 @@ Udev ブートスクリプト
 は、Linux のブート時にデバイスノード生成を受け持ちます。
 このスクリプトは <command>/sbin/hotplug</command>
 のデフォルトから uevent ハンドラを取り除きます。
-
-This is done
-because the kernel no longer needs to call out to an external binary.
-Instead <command>udevd</command> will listen on a netlink socket for
-uevents that the kernel raises. Next, the bootscript copies any static
-device nodes that exist in <filename
-class="directory">/lib/udev/devices</filename> to <filename
-class="directory">/dev</filename>. This is necessary because some devices,
-directories, and symlinks are needed before the dynamic device handling
-processes are available during the early stages of booting a system, or
-are required by <command>udevd</command> itself.  Creating static device
-nodes in <filename class="directory">/lib/udev/devices</filename> also
-provides an easy workaround for devices that are not supported by the
-dynamic device handling infrastructure. The bootscript then starts the
-Udev daemon, <command>udevd</command>, which will act on any uevents it
-receives. Finally, the bootscript forces the kernel to replay uevents for
-any devices that have already been registered and then waits for
-<command>udevd</command> to handle them.
+この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
+そのかわりに、カーネルが起動する uevent をネットリンクソケット (netlink socket)
+上で待ち受けます。
+そしてブートスクリプトが <filename class="directory">/lib/udev/devices</filename>
+内にある静的なデバイスノードをすべて <filename class="directory">/dev</filename>
+にコピーします。
+デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
+あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
+<filename class="directory">/lib/udev/devices</filename>
+内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
+こうしてブートスクリプトは Udev デーモン、つまり <command>udevd</command> を起動し、それがどのような uevent であっても対応できるものとなります。
+最後にブートスクリプトはカーネルに対して、すべてのデバイスにおいて既に登録されている uevent を再起動させ、
+<command>udevd</command> がそれを待ち受けるものとなります。
 </para>
 @z
 
@@ -328,23 +332,21 @@ Udev におけるデバイス生成規則を設定するファイルについて
 <para>
 モジュールとしてコンパイルされたデバイスドライバの場合、デバイス名の別名が作り出されています。
 その別名は <command>modinfo</command> プログラムを使えば確認することができます。
-そしてこの別名は、モジュールがサポートする
-and are usually related to the bus-specific identifiers of devices
-supported by a module. For example, the <emphasis>snd-fm801</emphasis>
-driver supports PCI devices with vendor ID 0x1319 and device ID 0x0801,
-and has an alias of <quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote>.
-For most devices, the bus driver exports the alias of the driver that
-would handle the device via <systemitem
-class="filesystem">sysfs</systemitem>. E.g., the
-<filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename> file
-might contain the string
-<quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote>.
-The default rules provided with Udev will cause <command>udevd</command>
-to call out to <command>/sbin/modprobe</command> with the contents of the
-<envar>MODALIAS</envar> uevent environment variable (which should be the
-same as the contents of the <filename>modalias</filename> file in sysfs),
-thus loading all modules whose aliases match this string after wildcard
-expansion.
+そしてこの別名は、モジュールがサポートするバス固有の識別子に関連づけられます。
+例えば <emphasis>snd-fm801</emphasis>
+ドライバは、ベンダーID 0x1319 とデバイスID 0x0801 の PCI ドライバをサポートします。
+そして <quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote>
+というエイリアスがあります。
+たいていのデバイスでは、<systemitem class="filesystem">sysfs</systemitem>
+を通じてドライバがデバイスを扱うものであり、ドライバのエイリアスをバスドライバが提供します。
+<filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename>
+ファイルならば <quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote>
+という文字列を含んでいるはずです。
+Udev が提供するデフォルトの生成規則によって <command>udevd</command>
+から <command>/sbin/modprobe</command> が呼び出されることになり、その際には uevent に関する環境変数
+<envar>MODALIAS</envar> の設定内容が利用されます。
+(この環境変数の内容は sysfs 内の <filename>modalias</filename> ファイルの内容と同じはずです。)
+そしてワイルドカードが指定されているならそれが展開された上で、エイリアス文字列に合致するモジュールがすべてロードされることになります。
 </para>
 @z
 
@@ -356,12 +358,10 @@ expansion.
       be prevented.</para>
 @y
 <para>
-
-In this example, this means that, in addition to
-<emphasis>snd-fm801</emphasis>, the obsolete (and unwanted)
-<emphasis>forte</emphasis> driver will be loaded if it is
-available. See below for ways in which the loading of unwanted drivers can
-be prevented.
+上の例で <emphasis>forte</emphasis>
+ドライバがあったとすると、<emphasis>snd-fm801</emphasis> の他にそれもロードされてしまいます。
+これは古いものでありロードされて欲しくないものです。
+不要なドライバのロードを防ぐ方法については後述しているので参照してください。
 </para>
 @z
 
@@ -370,9 +370,7 @@ be prevented.
       protocols, filesystems and NLS support on demand.</para>
 @y
 <para>
-
-The kernel itself is also able to load modules for network
-protocols, filesystems and NLS support on demand.
+カーネルは、ネットワークプロトコル、ファイルシステム、NLS サポートといった各種モジュールも、要求に応じてロードすることもできます。
 </para>
 @z
 
@@ -391,11 +389,8 @@ protocols, filesystems and NLS support on demand.
       <command>udevd</command> as described above.</para>
 @y
 <para>
-
-When you plug in a device, such as a Universal Serial Bus (USB) MP3
-player, the kernel recognizes that the device is now connected and
-generates a uevent. This uevent is then handled by
-<command>udevd</command> as described above.
+USB (Universal Serial Bus) で MP3 プレイヤーを接続しているような場合、カーネルは現在そのデバイスが接続されているということを認識しており、uevent が生成済の状態にあります。
+その uevent は上で述べたように <command>udevd</command> が取り扱うことになります。
 </para>
 @z
 
