@@ -9,8 +9,8 @@
   <?dbhtml filename="japanese.html"?>
 
   <sect1info>
-    <othername>$LastChangedBy: matsuyama $</othername>
-    <date>$Date: 2009-08-08 08:40:55 +0900 (土, 08 8 2009) $</date>
+    <othername>$LastChangedBy$</othername>
+    <date>$Date$</date>
   </sect1info>
 
   <title>日本語訳について</title>

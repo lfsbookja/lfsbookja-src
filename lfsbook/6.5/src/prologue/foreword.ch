@@ -1,5 +1,5 @@
-% $LastChangedBy: matsuyama $
-% $Date: 2009-08-03 19:54:58 +0900 (月, 03 8 2009) $
+% $LastChangedBy$
+% $Date$
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
