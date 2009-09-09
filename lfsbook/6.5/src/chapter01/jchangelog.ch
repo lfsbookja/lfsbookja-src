@@ -50,6 +50,21 @@
 -->
 
     <listitem>
+      <para>2009-09-09, 訳出率 100%</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/appendices/acronymlist.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/prologue/bookinfo.ch: 訳出率の表記削除。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/prologue/japanese.ch: 訳出率の説明削除。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-08, 訳出率 99.5%</para>
       <itemizedlist>
         <listitem>

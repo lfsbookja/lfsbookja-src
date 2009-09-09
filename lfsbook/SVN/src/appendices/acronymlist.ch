@@ -23,7 +23,7 @@
    <para>
     本節における日本語訳は、訳語が一般的に普及していると思われるものは、その訳語とカッコ書き内に原語を示します。
     逆に訳語に適当なものがないと思われるものは、無理に訳出せず原語だけを示すことにします。
-    なお現時点では、訳出がまだすべての用語について至っていません。
+    この判断はあくまで訳者によるものであるため、不適切・不十分な個所についてはご指摘ください。
    </para>
   </note>
 @z
@@ -121,7 +121,7 @@
 @x DNS
         <para>Domain Name Service</para>
 @y
-        <para>Domain Name Service</para>
+        <para>ドメインネームサービス (Domain Name Service)</para>
 @z
 
 @x EGA
@@ -202,315 +202,315 @@
         <para>ファイル転送プロトコル (File Transfer Protocol)</para>
 @z
 
-@x
+@x GB
         <para>Gigabytes</para>
 @y
-        <para>Gigabytes</para>
+        <para>ギガバイト (gigabytes)</para>
 @z
 
-@x
+@x GCC
         <para>GNU Compiler Collection</para>
 @y
-        <para>GNU Compiler Collection</para>
+        <para>GNU コンパイラ コレクション (GNU Compiler Collection)</para>
 @z
 
-@x
+@x GID
         <para>Group Identifier</para>
 @y
-        <para>Group Identifier</para>
+        <para>グループ識別子 (Group Identifier)</para>
 @z
 
-@x
+@x GMT
         <para>Greenwich Mean Time</para>
 @y
-        <para>Greenwich Mean Time</para>
+        <para>グリニッジ標準時 (Greenwich Mean Time)</para>
 @z
 
-@x
+@x GPG
         <para>GNU Privacy Guard</para>
 @y
         <para>GNU Privacy Guard</para>
 @z
 
-@x
+@x HTML
         <para>Hypertext Markup Language</para>
 @y
-        <para>Hypertext Markup Language</para>
+        <para>ハイパーテキスト マークアップ ランゲージ (Hypertext Markup Language)</para>
 @z
 
-@x
+@x IDE
         <para>Integrated Drive Electronics</para>
 @y
         <para>Integrated Drive Electronics</para>
 @z
 
-@x
+@x IEEE
         <para>Institute of Electrical and Electronic Engineers</para>
 @y
         <para>Institute of Electrical and Electronic Engineers</para>
 @z
 
-@x
+@x IO
         <para>Input/Output</para>
 @y
-        <para>Input/Output</para>
+        <para>入出力 (Input/Output)</para>
 @z
 
-@x
+@x IP
         <para>Internet Protocol</para>
 @y
-        <para>Internet Protocol</para>
+        <para>インターネット プロトコル (Internet Protocol)</para>
 @z
 
-@x
+@x IPC
         <para>Inter-Process Communication</para>
 @y
-        <para>Inter-Process Communication</para>
+        <para>プロセス間通信 (Inter-Process Communication)</para>
 @z
 
-@x
+@x IRC
         <para>Internet Relay Chat</para>
 @y
-        <para>Internet Relay Chat</para>
+        <para>インターネット リレイ チャット (Internet Relay Chat)</para>
 @z
 
-@x
+@x ISO
         <para>International Organization for Standardization</para>
 @y
-        <para>International Organization for Standardization</para>
+        <para>国際標準化機構 (International Organization for Standardization)</para>
 @z
 
-@x
+@x ISP
         <para>Internet Service Provider</para>
 @y
-        <para>Internet Service Provider</para>
+        <para>インターネット サービス プロバイダ (Internet Service Provider)</para>
 @z
 
-@x
+@x KB
         <para>Kilobytes</para>
 @y
-        <para>Kilobytes</para>
+        <para>キロバイト (kilobytes)</para>
 @z
 
-@x
+@x LED
         <para>Light Emitting Diode</para>
 @y
-        <para>Light Emitting Diode</para>
+        <para>発光ダイオード (Light Emitting Diode)</para>
 @z
 
-@x
+@x LFS
         <para>Linux From Scratch</para>
 @y
         <para>Linux From Scratch</para>
 @z
 
-@x
+@x LSB
         <para>Linux Standard Base</para>
 @y
         <para>Linux Standard Base</para>
 @z
 
-@x
+@x MB
         <para>Megabytes</para>
 @y
-        <para>Megabytes</para>
+        <para>メガバイト (megabytes)</para>
 @z
 
-@x
+@x MBR
         <para>Master Boot Record</para>
 @y
-        <para>Master Boot Record</para>
+        <para>マスタ ブート レコード (Master Boot Record)</para>
 @z
 
-@x
+@x MD5
         <para>Message Digest 5</para>
 @y
         <para>Message Digest 5</para>
 @z
 
-@x
+@x NIC
         <para>Network Interface Card</para>
 @y
-        <para>Network Interface Card</para>
+        <para>ネットワーク インターフェース カード (Network Interface Card)</para>
 @z
 
-@x
+@x NLS
         <para>Native Language Support</para>
 @y
         <para>Native Language Support</para>
 @z
 
-@x
+@x NNTP
         <para>Network News Transport Protocol</para>
 @y
         <para>Network News Transport Protocol</para>
 @z
 
-@x
+@x NPTL
         <para>Native POSIX Threading Library</para>
 @y
         <para>Native POSIX Threading Library</para>
 @z
 
-@x
+@x OSS
         <para>Open Sound System</para>
 @y
         <para>Open Sound System</para>
 @z
 
-@x
+@x PCH
         <para>Pre-Compiled Headers</para>
 @y
-        <para>Pre-Compiled Headers</para>
+        <para>プリコンパイル済みヘッダ (Pre-Compiled Headers)</para>
 @z
 
-@x
+@x PCRE
         <para>Perl Compatible Regular Expression</para>
 @y
         <para>Perl Compatible Regular Expression</para>
 @z
 
-@x
+@x PID
         <para>Process Identifier</para>
 @y
-        <para>Process Identifier</para>
+        <para>プロセス識別子 (Process Identifier)</para>
 @z
 
-@x
+@x PLFS
         <para>Pure Linux From Scratch</para>
 @y
         <para>Pure Linux From Scratch</para>
 @z
 
-@x
+@x PTY
         <para>pseudo terminal</para>
 @y
-        <para>pseudo terminal</para>
+        <para>仮想端末 (pseudo terminal)</para>
 @z
 
-@x
+@x QA
         <para>Quality Assurance</para>
 @y
-        <para>Quality Assurance</para>
+        <para>品質保証 (Quality Assurance)</para>
 @z
 
-@x
+@x QOS
         <para>Quality Of Service</para>
 @y
-        <para>Quality Of Service</para>
+        <para>クオリティ オブ サービス (Quality Of Service)</para>
 @z
 
-@x
+@x RAM
         <para>Random Access Memory</para>
 @y
-        <para>Random Access Memory</para>
+        <para>ランダム アクセス メモリ (Random Access Memory)</para>
 @z
 
-@x
+@x RPC
         <para>Remote Procedure Call</para>
 @y
-        <para>Remote Procedure Call</para>
+        <para>リモート プロシージャ コール (Remote Procedure Call)</para>
 @z
 
-@x
+@x RTC
         <para>Real Time Clock</para>
 @y
-        <para>Real Time Clock</para>
+        <para>リアルタイムクロック (Real Time Clock)</para>
 @z
 
-@x
+@x SBU
         <para>Standard Build Unit</para>
 @y
-        <para>Standard Build Unit</para>
+        <para>標準ビルド時間 (Standard Build Unit)</para>
 @z
 
-@x
+@x SCO
         <para>The Santa Cruz Operation</para>
 @y
-        <para>The Santa Cruz Operation</para>
+        <para>サンタ クルズ オペレーション社 (The Santa Cruz Operation)</para>
 @z
 
-@x
+@x SGR
         <para>Select Graphic Rendition</para>
 @y
         <para>Select Graphic Rendition</para>
 @z
 
-@x
+@x SHA1
         <para>Secure-Hash Algorithm 1</para>
 @y
         <para>Secure-Hash Algorithm 1</para>
 @z
 
-@x
+@x SMP
         <para>Symmetric Multi-Processor</para>
 @y
-        <para>Symmetric Multi-Processor</para>
+        <para>対称型マルチプロセッサ (Symmetric Multi-Processor)</para>
 @z
 
-@x
+@x TLDP
         <para>The Linux Documentation Project</para>
 @y
         <para>The Linux Documentation Project</para>
 @z
 
-@x
+@x TFTP
         <para>Trivial File Transfer Protocol</para>
 @y
         <para>Trivial File Transfer Protocol</para>
 @z
 
-@x
+@x TLS
         <para>Thread-Local Storage</para>
 @y
-        <para>Thread-Local Storage</para>
+        <para>スレッド ローカル ストレージ (Thread-Local Storage)</para>
 @z
 
-@x
+@x UID
         <para>User Identifier</para>
 @y
-        <para>User Identifier</para>
+        <para>ユーザー識別子 (User Identifier)</para>
 @z
 
-@x
+@x umask
         <para>user file-creation mask</para>
 @y
         <para>user file-creation mask</para>
 @z
 
-@x
+@x USB
         <para>Universal Serial Bus</para>
 @y
-        <para>Universal Serial Bus</para>
+        <para>ユニバーサル シリアル バス (Universal Serial Bus)</para>
 @z
 
-@x
+@x UTC
         <para>Coordinated Universal Time</para>
 @y
-        <para>Coordinated Universal Time</para>
+        <para>協定世界時 (Coordinated Universal Time)</para>
 @z
 
-@x
+@x UUID
         <para>Universally Unique Identifier</para>
 @y
-        <para>Universally Unique Identifier</para>
+        <para>汎用一意識別子 (Universally Unique Identifier)</para>
 @z
 
-@x
+@x VC
         <para>Virtual Console</para>
 @y
-        <para>Virtual Console</para>
+        <para>仮想コンソール (Virtual Console)</para>
 @z
 
-@x
+@x VGA
         <para>Video Graphics Array</para>
 @y
-        <para>Video Graphics Array</para>
+        <para>ビデオ グラフィックス アレイ (Video Graphics Array)</para>
 @z
 
-@x
+@x VT
         <para>Virtual Terminal</para>
 @y
-        <para>Virtual Terminal</para>
+        <para>仮想端末 (Virtual Terminal)</para>
 @z
 

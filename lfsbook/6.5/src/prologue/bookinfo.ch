@@ -18,7 +18,7 @@
       <surname>Beekmans</surname>
     </author>
     <collab>
-      <collabname>日本語訳： 松山道夫 (&jversion; 版、訳出率: &ratio_japanese;%)</collabname>
+      <collabname>日本語訳： 松山道夫 (&jversion; 版)</collabname>
     </collab>
   </authorgroup>
 @z

@@ -5,6 +5,14 @@
   %general-entities;
 ]>
 
+<!--
+ This is part of LFSbookja package.
+
+ $Author$
+ $Rev$
+ $Date$
+-->
+
 <sect1 id="pre-japanese">
   <?dbhtml filename="japanese.html"?>
 
@@ -20,8 +28,6 @@
    <para>
     本節はオリジナルの LFS ブックにはないものです。
     日本語訳に関する情報を示すために設けました。
-    なお現時点において、この日本語版は構築途中です。
-    訳出の終わっていない箇所では、いきなり原文が登場します。ご容赦ください。
    </para>
   </note>
 
@@ -85,6 +91,7 @@
 
   </sect2>
 
+<!--
   <sect2 role="ratio_japanese" id="sect_ratio_japanese">
     <title>日本語版の訳出率</title>
 
@@ -99,6 +106,7 @@
 </para>
 
   </sect2>
+-->
 
   <sect2 role="caution_japanese">
     <title>日本語版における注意点</title>
