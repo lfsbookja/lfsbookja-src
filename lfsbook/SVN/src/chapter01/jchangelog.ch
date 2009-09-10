@@ -50,6 +50,21 @@
 -->
 
     <listitem>
+      <para>2009-09-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - SVN-20090910 対応。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch: 修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/prologue/architecture.ch: 追加。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-09, 訳出率 100%</para>
       <itemizedlist>
         <listitem>

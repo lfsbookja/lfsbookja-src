@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2009-09-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added a section to the Preface about LFS
+          supported architectures.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-09-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 序文 (preface) の章に LFS がサポートする CPU アーキテクチャの説明を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-09-02</para>
       <itemizedlist>
         <listitem>
