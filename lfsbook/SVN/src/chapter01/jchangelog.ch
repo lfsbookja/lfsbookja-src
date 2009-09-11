@@ -50,6 +50,21 @@
 -->
 
     <listitem>
+      <para>2009-09-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, src/chapter06/{aboutdebug.ch,introduction.ch}： SVN-20090911 r9067 対応。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/strippingagain.ch: 微修正。</para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/prologue/architecture.ch: オリジナル r9066 対応。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-10</para>
       <itemizedlist>
         <listitem>

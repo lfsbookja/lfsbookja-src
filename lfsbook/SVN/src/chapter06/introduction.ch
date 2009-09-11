@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -39,8 +48,7 @@ Linux システムがどのようにして動作しているかを学ぶには�
 @z
 
 @x
-  <para>If using compiler optimizations, please review the optimization hint at
-  <ulink url="&hints-root;optimization.txt"/>.  Compiler optimizations can make
+  <para>We do not recommend using optimizations.  They can make
   a program run slightly faster, but they may also cause compilation
   difficulties and problems when running the program.  If a package refuses to
   compile when using optimization, try to compile it without optimization and
@@ -56,8 +64,7 @@ Linux システムがどのようにして動作しているかを学ぶには�
   at the same time.</para>
 @y
 <para>
-コンパイラの最適化オプションを利用する場合は、最適化のヒントを示した
-<ulink url="&hints-root;optimization.txt"/> を参照してください。
+コンパイラには最適化オプションがありますが、これを利用することはお勧めしません。
 コンパイラの最適化を用いればプログラムが若干速くなる場合もありますが、そもそもコンパイルが出来なかったり、プログラムの実行時に問題が発生したりする場合があります。
 もしコンパイラの最適化によってパッケージビルドが出来なかったら、最適化をなしにしてもう一度コンパイルすることで解決するかどうかを確認してください。
 最適化を行ってパッケージがコンパイル出来たとしても、コードとビルドツールの複雑な関連に起因してコンパイルが適切に行われないリスクをはらんでいます。
@@ -82,8 +89,8 @@ Linux システムがどのようにして動作しているかを学ぶには�
 @y
 <para>
 本章にてインストールしていくパッケージ類のビルド順は、必ず本書どおりに行ってください。
-どのプログラムも <filename class="directory">/tools</filename>
-ディレクトリを直接参照する形でビルドされることがないようにしなければなりません。
+プログラムはすべて <filename class="directory">/tools</filename>
+ディレクトリを直接参照するような形でビルドしてはなりません。
 また同じ理由でパッケージ類を同時並行でビルドしないでください。
 特にデュアル CPU マシンにおいて同時にビルドしていくと時間の節約を図ることができますが
 <filename class="directory">/tools</filename>
@@ -101,6 +108,6 @@ Linux システムがどのようにして動作しているかを学ぶには�
 @y
 <para>
 各ページではインストール手順の説明よりも前に、パッケージの内容やそこに何が含まれているかを簡単に説明し、ビルドにどれくらいの時間を要するか、ビルド時に必要となるディスク容量はどれくらいかを示しています。
-またインストール手順の最後には、そのパッケージがインストールするプログラムやライブラリの一覧を示し、それらがどのようなものかを簡単に説明しています。
+またインストール手順の最後には、パッケージがインストールするプログラムやライブラリの一覧を示し、それらがどのようなものかを簡単に説明しています。
 </para>
 @z

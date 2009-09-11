@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -92,15 +101,12 @@
   <para>Because most users will never use a debugger on their system software,
   a lot of disk space can be regained by removing these symbols. The next
   section shows how to strip all debugging symbols from the programs and
-  libraries. Additional information on system optimization can be found at
-  <ulink url="&hints-root;optimization.txt"/>.</para>
+  libraries.</para>
 @y
 <para>
 プログラムをデバッグするユーザーはそう多くはありません。
 デバッグシンボルを削除すればディスク容量はかなり節減できます。
 次節ではプログラムやライブラリからデバッグシンボルを取り除く (strip する) 方法を示します。
-システム最適化に関する情報は以下を参照してください。
-<ulink url="&hints-root;optimization.txt"/>
 </para>
 @z
 

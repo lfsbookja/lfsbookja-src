@@ -35,7 +35,7 @@ LFS システムの構築に初めて取りかかる方は、おそらくこの�
 @x
 <para>On the other hand, the instructions in this book are known to work, with
 some modifications, with both Power PC and 64-bit AMD/Intel CPUs.  To build a
-system that utilizes these CPUs, the main prerequsite in addition to those on
+system that utilizes these CPUs, the main prerequisite in addition to those on
 the next few pages, is an existing system such as an earlier LFS system,
 Ubuntu, Red Hat/Fedora, SuSE, or other distribution that targets the system
 that you have.  Also note that a 32-bit system can be installed and used as a

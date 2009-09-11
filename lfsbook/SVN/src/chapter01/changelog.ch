@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -45,6 +54,23 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴：</title>
+@z
+
+@x
+      <para>2009-09-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Deleted the reference to the outdated and
+          incomplete optimization hint.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-09-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - コンパイル最適化のヒントが古くなって役立たないため削除。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x
