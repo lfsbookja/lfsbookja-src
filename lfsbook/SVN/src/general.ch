@@ -14,17 +14,17 @@
 @z
 
 @x
-<!ENTITY version "SVN-20090911">
-<!ENTITY releasedate "September 11, 2009">
+<!ENTITY version "SVN-20090917">
+<!ENTITY releasedate "September 17, 2009">
 <!ENTITY copyrightdate "1999-2009"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.0">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @y
-<!ENTITY version "SVN-20090911">
-<!ENTITY releasedate "2009年9月11日">
-<!ENTITY jversion "20090912">
+<!ENTITY version "SVN-20090917">
+<!ENTITY releasedate "2009年9月17日">
+<!ENTITY jversion "20090918">
 <!--
-<!ENTITY ratio_japanese "99.5">
+<!ENTITY ratio_japanese "100.0">
 -->
 <!ENTITY copyrightdate "1999-2009"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.0">

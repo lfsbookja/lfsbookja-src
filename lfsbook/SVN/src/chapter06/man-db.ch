@@ -20,18 +20,6 @@ Man-DB パッケージは man ページを検索したり表示したりする�
 @z
 
 @x
-    <para>Apply a patch to fix a problem with the testsuite, which doesn't
-    expect <command>col</command> to be UTF-8 aware, which Util-Linux-NG's
-    version is:</para>
-@y
-<para>
-テストスイートにおいて発生する問題を解消するために以下のパッチを当てます。
-これは <command>col</command> コマンドが UTF-8 対応ではないため
-Util-Linux-NG が提供するバージョンを用いて対処しようとするものです。
-</para>
-@z
-
-@x
     <para>Prepare Man-DB for compilation:</para>
 @y
     <para>Man-DB をコンパイルするための準備をします。</para>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -245,20 +254,6 @@
 @z
 
 @x
-      <term>Man-DB Testsuite Patch - <token>&man-db-testsuite-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&man-db-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&man-db-testsuite-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Man-DB Testsuite Patch - <token>&man-db-testsuite-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&man-db-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&man-db-testsuite-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Patch Carriage Return Fix Patch - <token>&patch-fixes-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&patch-fixes-patch;"/></para>
@@ -272,19 +267,37 @@
       </listitem>
 @z
 
-% @x
-%       <term>Perl Consolidated Patch - <token>&perl-consolidated-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&perl-consolidated-patch;"/></para>
-%         <para>MD5 sum: <literal>&perl-consolidated-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Perl Consolidated Patch - <token>&perl-consolidated-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&perl-consolidated-patch;"/></para>
-%         <para>MD5 sum: <literal>&perl-consolidated-patch-md5;</literal></para>
-%       </listitem>
-% @z
+@x コメント部分につき本来は不要なチェンジ
+    <!-- <varlistentry>
+      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
+      </listitem>
+    </varlistentry> -->
+@y
+    <!-- <varlistentry>
+      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
+      </listitem>
+    </varlistentry> -->
+@z
+
+@x
+      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&perl-libc-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
+      </listitem>
+@z
 
 @x
       <term>Procps Watch Patch - <token>&procps-watch-patch-size;</token>:</term>

@@ -57,6 +57,56 @@
 @z
 
 @x
+      <para>2009-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgraded to Bash-4.0-fixes-4.patch. Fixes
+          <ulink url="&lfs-ticket-root;2484">#2484</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Linux-2.6.31. Fixes
+          <ulink url="&lfs-ticket-root;2485">#2485</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Util-Linux-NG-2.16.1. Fixes
+          <ulink url="&lfs-ticket-root;2483">#2483</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Coreutils-7.6. Fixes
+          <ulink url="&lfs-ticket-root;2487">#2487</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Man-DB-2.5.6. Fixes
+          <ulink url="&lfs-ticket-root;2481">#2481</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Bash-4.0-fixes-4.patch のアップグレード。
+                <ulink url="&lfs-ticket-root;2484">#2484</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.31 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2485">#2485</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Util-Linux-NG-2.16.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2483">#2483</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Coreutils-7.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2487">#2487</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Man-DB-2.5.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2481">#2481</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-09-11</para>
       <itemizedlist>
         <listitem>

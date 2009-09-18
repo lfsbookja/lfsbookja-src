@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -202,7 +211,7 @@ LFS-ブートスクリプトパッケージにあるスクリプトでは、
         mktemp, mv, nice, nl, nohup, od, paste, pathchk, pinky, pr, printenv,
         printf, ptx, pwd, readlink, rm, rmdir, runcon, seq, sha1sum, sha224sum,
         sha256sum, sha384sum, sha512sum, shred, shuf, sleep, sort, split, stat,
-        stty, sum, sync, tac, tail, tee, test, timeout, touch, tr, true,
+        stdbuf, stty, sum, sync, tac, tail, tee, test, timeout, touch, tr, true,
         truncate, tsort, tty, uname, unexpand, uniq, unlink, users, vdir, wc,
         who, whoami, and yes</seg>
 @y
@@ -213,7 +222,7 @@ LFS-ブートスクリプトパッケージにあるスクリプトでは、
         mktemp, mv, nice, nl, nohup, od, paste, pathchk, pinky, pr, printenv,
         printf, ptx, pwd, readlink, rm, rmdir, runcon, seq, sha1sum, sha224sum,
         sha256sum, sha384sum, sha512sum, shred, shuf, sleep, sort, split, stat,
-        stty, sum, sync, tac, tail, tee, test, timeout, touch, tr, true,
+        stdbuf, stty, sum, sync, tac, tail, tee, test, timeout, touch, tr, true,
         truncate, tsort, tty, uname, unexpand, uniq, unlink, users, vdir, wc,
         who, whoami, yes</seg>
 @z
@@ -858,6 +867,19 @@ C 言語の printf 関数に似ています。
 @y
 <para>
 ファイルやファイルシステムのステータスを表示します。
+</para>
+@z
+
+@x stdbuf
+          <para>Runs commands with altered buffering operations for its standard
+          streams</para>
+@y
+<!--
+日本語訳註： 2009-09-18 matsuand
+どんなコマンドなのか不明。訳出も内容理解できていないため不十分。
+-->
+<para>
+本コマンド実行により、標準ストリームに対するバッファリング操作を変更します。
 </para>
 @z
 
