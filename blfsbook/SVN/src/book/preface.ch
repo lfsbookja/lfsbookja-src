@@ -26,14 +26,12 @@
   go Beyond LFS - hence BLFS.</para>
 @y
 <para>
-
-Having helped out with Linux From Scratch for a short time, I
-noticed that we were getting many queries as to how to do things beyond
-the base LFS system.  At the time, the only assistance specifically offered
-relating to LFS were the LFS hints (<ulink url="&hints-root;"/>).
-Most of the LFS hints are extremely good and well written
-but I (and others) could still see a need for more comprehensive help to
-go Beyond LFS - hence BLFS.
+Linux From Scratch の開発作業のお手伝いをしてみたところ、このベースとなる LFS システムの先をどう進めていくのかという問合せが、いかに多いかを感じるようになりました。
+その時点では、LFS に関して具体的な手助けとなる情報といえば、
+LFS ヒント (<ulink url="&hints-root;"/>) しかなかったのです。
+LFS ヒントは非常に有用で、親切に書かれてはいるのですが、私やまわりの者はもっと分かりやすいものが必要で、
+LFS を超える (=beyond LFS) その先が必要だと思ったのです。
+だから BLFS なのです。
 </para>
 @z
 
@@ -45,12 +43,13 @@ go Beyond LFS - hence BLFS.
   what you want, whether it be a web server or a multimedia desktop system,
   but also that you will learn a lot about system configuration as you go.</para>
 @y
-  <para>BLFS aims to be more than the LFS-hints converted to XML although
-  much of our work is based around the hints and indeed some authors write
-  both hints and the relevant BLFS sections.  We hope that we can provide
-  you with enough information to not only manage to build your system up to
-  what you want, whether it be a web server or a multimedia desktop system,
-  but also that you will learn a lot about system configuration as you go.</para>
+<para>
+BLFS が目指すのは、単に LFS ヒントを XML ソースファイルに置き換えるだけではありません。
+とは言うもののこの作業は LFS ヒントに基づいて行われており、実際に、ある編集者はヒントを書き、BLFS の対応する節を書いている者もいます。
+我々が望むのは、読者の皆さんに有用な情報を提供することです。
+それは Web サーバーやマルチメディアデスクトップシステムを作りたいという皆さんが、頑張ってビルドできるようになることを望むのではなく、
+作業を進めるにつれてシステムの成り立ちをより一層学んで頂けるようにすることです。
+</para>
 @z
 
 @x
@@ -58,9 +57,12 @@ go Beyond LFS - hence BLFS.
   community; especially those who have contributed instructions, written text,
   answered questions and generally shouted when things were wrong!</para>
 @y
-  <para>Thanks as ever go to everyone in the LFS/BLFS
-  community; especially those who have contributed instructions, written text,
-  answered questions and generally shouted when things were wrong!</para>
+<para>
+
+Thanks as ever go to everyone in the LFS/BLFS
+community; especially those who have contributed instructions, written text,
+answered questions and generally shouted when things were wrong!
+</para>
 @z
 
 @x
@@ -69,10 +71,13 @@ go Beyond LFS - hence BLFS.
   irc.&lfs-domainname;. You can find more details about all of these in the
   <xref linkend="introduction"/> section of the book.</para>
 @y
-  <para>Finally, we encourage you to become involved in the community; ask
-  questions on the mailing list or news gateway and join in the fun on #lfs at
-  irc.&lfs-domainname;. You can find more details about all of these in the
-  <xref linkend="introduction"/> section of the book.</para>
+<para>
+
+Finally, we encourage you to become involved in the community; ask
+questions on the mailing list or news gateway and join in the fun on #lfs at
+irc.&lfs-domainname;. You can find more details about all of these in the
+<xref linkend="introduction"/> section of the book.
+</para>
 @z
 
 @x

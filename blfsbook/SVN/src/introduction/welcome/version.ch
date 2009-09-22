@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -29,13 +38,11 @@
 @y
 <para>
 本書は BLFS ブック、バージョン &version; &releasedate; です。
-
-This is the
-development branch of the BLFS book, currently targeting the LFS development
-book. If this version (&version;) is older than a month, it's likely that
-your mirror hasn't been synchronized recently and a newer version is probably
-available for download or viewing. Check one of the mirror sites at
-<ulink url="http://www.&lfs-domainname;/mirrors.html"/> for an updated
-version.</para>
+これは BLFS の開発ブランチであり、LFS の開発版に対応づいています。
+このバージョン (&version;) が 1ヶ月以上古ければ、入手したミラーサイトが最新を提供していないのかもしれません。
+それよりも新しいバージョンが入手可能であるはずです。
+<ulink url="http://www.&lfs-domainname;/mirrors.html"/>
+に示されるミラーサイトのいずれかを確認して、最新版を入手してください。
+</para>
 @z
 

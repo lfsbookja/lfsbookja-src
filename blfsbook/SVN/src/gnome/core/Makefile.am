@@ -9,7 +9,7 @@ EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
 	gnome-vfs.ch gtk-engines.ch libbonobo.ch libbonoboui.ch libgnome.ch \
 	libgnomecanvas.ch libgnomekbd.ch libgnomeui.ch libgtop.ch \
 	nautilus.ch orbit2.ch pre-install-config.ch vte.ch yelp.ch \
-	libgweather.ch gnome-settings-daemon.ch
+	libgweather.ch gnome-settings-daemon.ch gvfs.ch
 srcdir = @srcdir@
 srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
 	dummy-platform.xml gconf.xml gnome-applets.xml \
@@ -21,7 +21,7 @@ srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
 	gnome-vfs.xml gtk-engines.xml libbonobo.xml libbonoboui.xml libgnome.xml \
 	libgnomecanvas.xml libgnomekbd.xml libgnomeui.xml libgtop.xml \
 	nautilus.xml orbit2.xml pre-install-config.xml vte.xml yelp.xml \
-	libgweather.xml gnome-settings-daemon.xml
+	libgweather.xml gnome-settings-daemon.xml gvfs.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -70,3 +70,5 @@ orbit2.xml: $(BOOKdir)/$@ $(srcdir)/orbit2.ch
 pre-install-config.xml: $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
 vte.xml: $(BOOKdir)/$@ $(srcdir)/vte.ch
 yelp.xml: $(BOOKdir)/$@ $(srcdir)/yelp.ch
+gvfs.xml: $(BOOKdir)/$@ $(srcdir)/gvfs.ch
+
