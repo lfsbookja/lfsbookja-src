@@ -139,12 +139,24 @@ C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用し�
 @x
           <para>The Linux API SCSI Headers</para>
 @y
-          <para>The Linux API Sound ヘッダファイル</para>
+          <para>The Linux API SCSI ヘッダファイル</para>
 @z
 
 @x
           <para>The Linux API Sound Headers</para>
 @y
+          <para>The Linux API Sound ヘッダファイル</para>
+@z
+
+@x
+          <para>The Linux API Video Headers</para>
+@y
           <para>The Linux API Video ヘッダファイル</para>
+@z
+
+@x
+          <para>The Linux API Xen Headers</para>
+@y
+          <para>The Linux API Xen ヘッダファイル</para>
 @z
 
