@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -92,50 +101,50 @@ C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用し�
 @z
 
 @x
-         <para>The Linux API ASM Headers</para>
+          <para>The Linux API ASM Headers</para>
 @y
-         <para>The Linux API ASM ヘッダファイル</para>
+          <para>The Linux API ASM ヘッダファイル</para>
 @z
 
 @x
-         <para>The Linux API ASM Generic Headers</para>
+          <para>The Linux API ASM Generic Headers</para>
 @y
-         <para>The Linux API ASM の汎用的なヘッダファイル</para>
+          <para>The Linux API ASM の汎用的なヘッダファイル</para>
 @z
 
 @x
-         <para>The Linux API DRM Headers</para>
+          <para>The Linux API DRM Headers</para>
 @y
-         <para>The Linux API DRM ヘッダファイル</para>
+          <para>The Linux API DRM ヘッダファイル</para>
 @z
 
 @x
-         <para>The Linux API Linux Headers</para>
+          <para>The Linux API Linux Headers</para>
 @y
-         <para>The Linux API Linux ヘッダファイル</para>
+          <para>The Linux API Linux ヘッダファイル</para>
 @z
 
 @x
-         <para>The Linux API MTD Headers</para>
+          <para>The Linux API MTD Headers</para>
 @y
-         <para>The Linux API MTD ヘッダファイル</para>
+          <para>The Linux API MTD ヘッダファイル</para>
 @z
 
 @x
-         <para>The Linux API RDMA Headers</para>
+          <para>The Linux API RDMA Headers</para>
 @y
-         <para>The Linux API RDMA ヘッダファイル</para>
+          <para>The Linux API RDMA ヘッダファイル</para>
 @z
 
 @x
-         <para>The Linux API Sound Headers</para>
+          <para>The Linux API SCSI Headers</para>
 @y
-         <para>The Linux API Sound ヘッダファイル</para>
+          <para>The Linux API Sound ヘッダファイル</para>
 @z
 
 @x
-         <para>The Linux API Video Headers</para>
+          <para>The Linux API Sound Headers</para>
 @y
-         <para>The Linux API Video ヘッダファイル</para>
+          <para>The Linux API Video ヘッダファイル</para>
 @z
 

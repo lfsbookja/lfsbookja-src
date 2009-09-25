@@ -57,6 +57,38 @@
 @z
 
 @x
+      <para>2009-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Update list of installed headers for Linux.  Thanks to
+          Chris Staub for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;2495">#2495</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Update list of installed programs for various
+          packages.  Thanks to Chris Staub for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;2494">#2494</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-09-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Linux のインストールヘッダ一覧の更新。
+          Chris Staub によりパッチ提供。
+          <ulink url="&lfs-ticket-root;2495">#2495</ulink> を Fix に。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] さまざまなパッケージにおけるインストールプログラム一覧の更新。
+          Chris Staub によりパッチ提供。
+          <ulink url="&lfs-ticket-root;2494">#2494</ulink> を Fix に。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-09-17</para>
       <itemizedlist>
         <listitem>

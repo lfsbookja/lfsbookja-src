@@ -50,6 +50,15 @@
 -->
 
     <listitem>
+      <para>2009-09-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, src/chapter06/{iproute2.ch,linux-headers.ch}： SVN-20090924 r9075 対応。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-18</para>
       <itemizedlist>
         <listitem>
