@@ -22,7 +22,7 @@
 @y
 <!ENTITY version "SVN-20090924">
 <!ENTITY releasedate "2009年9月24日">
-<!ENTITY jversion "20090925">
+<!ENTITY jversion "20090926">
 <!--
 <!ENTITY ratio_japanese "100.0">
 -->

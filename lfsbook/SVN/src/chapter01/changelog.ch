@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2009-09-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bryan] Upgrade to udev-config-20090925.  Fixes <ulink
+              url="&lfs-ticket-root;2497">#2497</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-09-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bryan] udev-config-20090925 へのアップグレード。
+              <ulink url="&lfs-ticket-root;2497">#2497</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-09-24</para>
       <itemizedlist>
         <listitem>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -47,8 +56,7 @@ LFS システムの構築作業中にエラー発生したり、疑問を抱い�
 @y
 <para>
 <uri>linuxfromscratch.org</uri>
-サーバーでは、
-LFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
+サーバーでは、LFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
 このメーリングリストは主となる開発用とは別に、サポート用のものもあります。
 FAQ だけでは問題解決に至らなかった場合に、次の手としてメーリングリストを検索する以下のサイトを参照してください。
 <ulink url="&lfs-root;search.html"/>
@@ -82,9 +90,9 @@ FAQ だけでは問題解決に至らなかった場合に、次の手として�
     #LFS-support.</para>
 @y
 <para>
-LFS コミュニティのメンバーの中には、インターネットリレイチャット (Internet Relay Chat; IRC)
+LFS コミュニティのメンバーの中には、インターネットリレーチャット (Internet Relay Chat; IRC)
 によるサポートを行っている者もいます。
-ここに対して質問を挙げる前には、FAQ やメーリングリストに同様の質問や答えがないかどうかを必ず確認してください。
+ここに対して質問を挙げる場合は、FAQ やメーリングリストに同様の質問や答えがないかどうかを必ず確認してください。
 IRC は <uri>irc.linuxfromscratch.org</uri>
 において、チャネル名 #LFS-support により提供しています。
 </para>
