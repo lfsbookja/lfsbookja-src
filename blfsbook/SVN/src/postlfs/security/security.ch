@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -16,7 +25,9 @@
   and detection.</para>
 @y
 <para>
-Security takes many forms in a computing environment. This chapter
+コンピュータ環境におけるセキュリティというものには、実にさまざまなものがあります。
+本章では三種類のセキュリティ、つまりアクセス制御、
+This chapter
 gives examples of three different types of security: access, prevention
 and detection.
 </para>

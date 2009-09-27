@@ -7,7 +7,7 @@ EXTRA_DIST = glib2.ch libesmtp.ch libpthread-stubs.ch pcre.ch \
 	libxslt.ch gdbm.ch libassuan.ch libidl.ch lzo.ch genlib.ch \
 	libcroco.ch libidn.ch mcs.ch glib.ch libdrm.ch libksba.ch \
 	mowgli.ch pcre.ch popt.ch pth.ch slang.ch slib.ch liboil.ch \
-	libtasn1.ch libunique.ch nspr.ch
+	libtasn1.ch libunique.ch nspr.ch libxcb.ch xcb-proto.ch
 srcdir = @srcdir@
 srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	aspell.xml gmime.xml libgcrypt.xml libusb-compat.xml popt.xml \
@@ -17,7 +17,7 @@ srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	libxslt.xml gdbm.xml libassuan.xml libidl.xml lzo.xml genlib.xml \
 	libcroco.xml libidn.xml mcs.xml glib.xml libdrm.xml libksba.xml \
 	mowgli.xml pcre.xml popt.xml pth.xml slang.xml slib.xml liboil.xml \
-	libtasn1.xml libunique.xml nspr.xml
+	libtasn1.xml libunique.xml nspr.xml libxcb.xml xcb-proto.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -77,4 +77,6 @@ liboil.xml: $(BOOKdir)/$@ $(srcdir)/liboil.ch
 libtasn1.xml: $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
 libunique.xml: $(BOOKdir)/$@ $(srcdir)/libunique.ch
 nspr.xml: $(BOOKdir)/$@ $(srcdir)/nspr.ch
+libxcb.xml: $(BOOKdir)/$@ $(srcdir)/libxcb.ch
+xcb-proto.xml: $(BOOKdir)/$@ $(srcdir)/xcb-proto.ch
 
