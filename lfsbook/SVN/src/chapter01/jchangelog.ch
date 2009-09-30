@@ -50,6 +50,15 @@
 -->
 
     <listitem>
+      <para>2009-09-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, src/chapter06/psmisc.sh： SVN-20090929 r9079 対応。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-26</para>
       <itemizedlist>
         <listitem>

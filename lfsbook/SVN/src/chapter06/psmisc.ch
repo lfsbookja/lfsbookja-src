@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -26,29 +35,6 @@ Psmisc パッケージは稼動中プロセスの情報表示を行うプログ�
 @z
 
 @x
-      <title>The meaning of the configure options:</title>
-@y
-      <title>configure オプションの意味：</title>
-@z
-
-@x
-          <para>This ensures that the Psmisc binaries will install into
-          <filename class="directory">/bin</filename> instead of <filename
-          class="directory">/usr/bin</filename>. This is the correct location
-          according to the FHS, because some of the Psmisc binaries are used
-          by the LFS-Bootscripts package.</para>
-@y
-<para>
-このオプションは Psmisc の実行ファイル類を
-<filename class="directory">/usr/bin</filename> ではなく
-<filename class="directory">/bin</filename>
-にインストールすることを指定します。
-このインストール先は FHS に従ったものです。
-LFS-ブートスクリプトパッケージにて、Psmisc の実行ファイルがいくつか利用されています。
-</para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>パッケージをコンパイルします。</para>
@@ -64,21 +50,6 @@ LFS-ブートスクリプトパッケージにて、Psmisc の実行ファイル
     <para>Install the package:</para>
 @y
     <para>パッケージをインストールします。</para>
-@z
-
-@x
-    <para>There is no reason for the <command>pstree</command> and
-    <command>pstree.x11</command> programs to reside in <filename
-    class="directory">/bin</filename>. Therefore, move them to <filename
-    class="directory">/usr/bin</filename>:</para>
-@y
-<para>
-<command>pstree</command> プログラムと <command>pstree.x11</command>
-プログラムを <filename class="directory">/bin</filename>
-ディレクトリに置いておく理由がありません。
-したがってこれらを <filename class="directory">/usr/bin</filename>
-に移動します。
-</para>
 @z
 
 @x

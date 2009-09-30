@@ -57,6 +57,39 @@
 @z
 
 @x
+      <para>2009-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgraded to Linux-2.6.31.1. Fixes
+          <ulink url="&lfs-ticket-root;2496">#2496</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Install psmisc's binaries in
+          <filename class="directory">/usr/bin</filename> instead of
+          <filename class="directory">/bin</filename> as they are only
+          called whilst <filename class="directory">/usr</filename> is mounted.
+          Fixes <ulink url="&lfs-ticket-root;2469">#2469</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Linux-2.6.31.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2496">#2496</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] psmisc の実行モジュールのインストール先を
+          <filename class="directory">/bin</filename> から
+          <filename class="directory">/usr/bin</filename> に変更。
+          これは <filename class="directory">/usr</filename>
+          がマウントされている時に実行されるものであるため。
+          <ulink url="&lfs-ticket-root;2469">#2469</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-09-25</para>
       <itemizedlist>
         <listitem>
