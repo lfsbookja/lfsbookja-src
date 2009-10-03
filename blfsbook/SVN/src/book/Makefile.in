@@ -135,10 +135,10 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/book
 EXTRA_DIST = dedication.ch foreword.ch preface.ch bookinfo.ch errata.ch \
-	organization.ch whoread.ch
+	organization.ch whoread.ch japanese.ch
 
 srcs = dedication.xml foreword.xml preface.xml bookinfo.xml errata.xml \
-	organization.xml whoread.xml
+	organization.xml whoread.xml japanese.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -334,6 +334,8 @@ bookinfo.xml: $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
 errata.xml: $(BOOKdir)/$@ $(srcdir)/errata.ch
 organization.xml: $(BOOKdir)/$@ $(srcdir)/organization.ch
 whoread.xml: $(BOOKdir)/$@ $(srcdir)/whoread.ch
+japanese.xml: $(srcdir)/japanese.ch
+	cp -p $(srcdir)/japanese.ch $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

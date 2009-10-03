@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -16,10 +25,7 @@
     </corpauthor>
 @y
     <corpauthor>
-      &copyholder;
-    </corpauthor>
-    <corpauthor>
-      (日本語訳： 松山道夫)
+      &copyholder; (日本語訳： 松山道夫)
     </corpauthor>
 @z
 
@@ -27,6 +33,21 @@
 		<para>This book is licensed under a <xref linkend="CC"/>.</para>
 @y
 		<para>本書のライセンスは <xref linkend="CC"/> に基づきます。</para>
+@z
+
+@x
+		<para>Computer instructions may be extracted from the book under the
+		<xref linkend="MIT"/>.</para>
+@y
+		<para>本書のインストール手順のコマンドを抜き出したものは
+                <xref linkend="MIT"/> に従ってください。</para>
+@z
+
+@x
+    <para><trademark class='registered'>Linux</trademark> is a registered trademark of
+    Linus Torvalds.</para>
+@y
+    <para><trademark class='registered'>Linux</trademark> は Linus Torvalds の登録商標です。</para>
 @z
 
 @x
@@ -85,10 +106,11 @@
 @y
 <para>
 本書は Linux From Scratch ブックに続くものです。
-It introduces
-and guides the reader through additions to the system including networking,
-graphical interfaces, sound support, and printer and scanner
-support.
+システムに追加していく機能として、
+ネットワーク、
+グラフィカルインターフェース、
+サウンド機能、
+プリンタ・スキャナ機能などを紹介し説明していきます。
 </para>
 @z
 

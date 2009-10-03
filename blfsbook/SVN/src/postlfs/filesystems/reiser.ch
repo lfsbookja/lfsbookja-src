@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -47,13 +56,13 @@
 @x
         <para>Estimated disk space required: &reiser-buildsize;</para>
 @y
-        <para>Estimated disk space required: &reiser-buildsize;</para>
+        <para>必要ディスク容量: &reiser-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &reiser-time;</para>
 @y
-        <para>Estimated build time: &reiser-time;</para>
+        <para>概算ビルド時間: &reiser-time;</para>
 @z
 
 @x
@@ -75,7 +84,7 @@
     commands:</para>
 @y
 <para>
-以下のコマンドを実行して <application>ReiserFS</application> をインストールします。
+以下のコマンドを実行して <application>ReiserFS</application> をビルドします。
 </para>
 @z
 
@@ -108,10 +117,12 @@
     installing the programs in <filename class="directory">/sbin</filename> as
     they should be.</para>
 @y
-    <para><parameter>--prefix=/usr</parameter>: This ensures that
-    the manual pages are installed in the correct location while still
-    installing the programs in <filename class="directory">/sbin</filename> as
-    they should be.</para>
+<para>
+<parameter>--prefix=/usr</parameter>:
+これを指定するのは man ページを適切なディレクトリにインストールするためです。
+これを指定しても、プログラム類は <filename class="directory">/sbin</filename>
+ディレクトリにインストールされます。
+</para>
 @z
 
 @x
@@ -119,9 +130,13 @@
     <application>ReiserFS</application> utilities are installed in
     <filename class="directory">/sbin</filename> as they should be.</para>
 @y
-    <para><parameter>--sbindir=/sbin</parameter>: This ensures that the
-    <application>ReiserFS</application> utilities are installed in
-    <filename class="directory">/sbin</filename> as they should be.</para>
+<para>
+<parameter>--sbindir=/sbin</parameter>:
+このオプションは <application>ReiserFS</application>
+のユーティリティプログラムを
+<filename class="directory">/sbin</filename>
+ディレクトリにインストールします。
+</para>
 @z
 
 @x
@@ -165,10 +180,54 @@
           <application>ReiserFS</application> file
           system found on the device.</para>
 @y
-          <para>can sometimes help to solve problems with
-          <application>ReiserFS</application> file systems. If it is called
-          without options, it prints the super block of any
-          <application>ReiserFS</application> file
-          system found on the device.</para>
+<para>
+<application>ReiserFS</application>
+ファイルシステムに発生したトラブルを解消するために利用することができます。
+本コマンドをオプションなしに実行すると、デバイス上に存在する
+<application>ReiserFS</application>
+ファイルシステムのスーパーブロックをすべて表示します。
+</para>
+@z
+
+@x mkreiserfs
+          <para>creates a <application>ReiserFS</application> file system.</para>
+@y
+<para>
+<application>ReiserFS</application>
+ファイルシステムを生成します。
+</para>
+@z
+
+@x reiserfsck
+          <para>is used to check or repair a
+          <application>ReiserFS</application> file system.</para>
+@y
+<para>
+<application>ReiserFS</application>
+ファイルシステムをチェックまたは修復します。
+</para>
+@z
+
+@x reiserfstune
+          <para>is used for tuning the <application>ReiserFS</application>
+          journal. <emphasis>WARNING</emphasis>: Don't use this utility without
+          first reading the man page thoroughly.</para>
+@y
+<para>
+<application>ReiserFS</application>
+のジャーナルを調整するために利用します。
+<emphasis>注意</emphasis>:
+本プログラムは、必ず man ページを一通り読んでから利用してください。
+</para>
+@z
+
+@x resize_reiserfs
+          <para>is used to resize an unmounted
+          <application>ReiserFS</application> file system.</para>
+@y
+<para>
+<application>ReiserFS</application>
+ファイルシステムをリサイズまたはアンマウントします。
+</para>
 @z
 

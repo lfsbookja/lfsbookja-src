@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -7,7 +16,7 @@
 @x
   <!ENTITY openssl-time          "1.1 SBU (additional 0.3 SBU to run the test suite)">
 @y
-  <!ENTITY openssl-time          "1.1 SBU (テスト・スイート実行の場合、さらに 0.3 SBU)">
+  <!ENTITY openssl-time          "1.1 SBU (テストスイート実行の場合、さらに 0.3 SBU)">
 @z
 
 @x
@@ -28,7 +37,7 @@
 パッケージは暗号化に関する管理ツールやライブラリを提供します。
 それらは暗号化の処理を行う他のパッケージにおいて利用されており、特に
 <application>OpenSSH</application>
-や Email アプリケーション、ウェブ・ブラウザ (HTTPS サイトへのサクセス時)
+や Email アプリケーション、ウェブブラウザ (HTTPS サイトへのサクセス時)
 において活用されています。
 </para>
 @z
@@ -60,7 +69,7 @@
 @x
         <para>Download size: &openssl-size;</para>
 @y
-        <para>ダウンロード・サイズ: &openssl-size;</para>
+        <para>ダウンロードサイズ: &openssl-size;</para>
 @z
 
 @x
@@ -120,7 +129,7 @@
 @y
     <bridgehead renderas="sect4">推奨</bridgehead>
     <para role="recommended"><xref linkend="bc"/>
-    (テスト・スイートを実行する場合に必要。)</para>
+    (テストスイートを実行する場合に必要。)</para>
 @z
 
 @x
@@ -318,9 +327,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -333,12 +342,13 @@
         and /usr/share/doc/openssl-&openssl-version;</seg>
 @y
         <seg>c_rehash and openssl</seg>
-        <seg>libcrypto.{so,a}, libssl.{so,a}, and additional encryption
-        libraries in /usr/lib/engines/ (lib4758cca.so, libaep.so,
+        <seg>libcrypto.{so,a}, libssl.{so,a},
+        /usr/lib/engines/ にインストールされるその他の暗号化ライブラリ
+        (lib4758cca.so, libaep.so,
         libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so, libnuron.so,
-        libsureware.so, and libubsec.so)</seg>
-        <seg>/etc/ssl, /usr/include/ssl, /usr/lib/engines
-        and /usr/share/doc/openssl-&openssl-version;</seg>
+        libsureware.so, libubsec.so)</seg>
+        <seg>/etc/ssl, /usr/include/ssl, /usr/lib/engines,
+        /usr/share/doc/openssl-&openssl-version;</seg>
 @z
 
 @x

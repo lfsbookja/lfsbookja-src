@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -18,8 +27,8 @@
 @y
 <para>
 LFS システムを構築した皆さんであれば、ソフトウェアのダウンロードと伸張 (解凍)
-の方法は既にご存知のことでしょう。
-ここではソフトウェア構築に不慣れな方に向けて、そういった情報を再度説明することにします。
+の方法は既にご存知のはずです。
+しかしここでは、ソフトウェア構築に不慣れな方に向けてそういった情報も再度説明することにします。
 </para>
 @z
 
@@ -44,11 +53,14 @@ instructions.
   uncompressed any required patches and they are in the directory immediately
   above the 'build' directory.</para>
 @y
-  <para>While you can keep the source files anywhere you like, we assume that
-  you have unpacked the package and changed into the directory created by the
-  unpacking process (the 'build' directory).  We also assume you have
-  uncompressed any required patches and they are in the directory immediately
-  above the 'build' directory.</para>
+<para>
+
+While you can keep the source files anywhere you like, we assume that
+you have unpacked the package and changed into the directory created by the
+unpacking process (the 'build' directory).  We also assume you have
+uncompressed any required patches and they are in the directory immediately
+above the 'build' directory.
+</para>
 @z
 
 @x
@@ -74,7 +86,7 @@ instructions.
 @x
     <title>Building Software as an Unprivileged (non-root) User</title>
 @y
-    <title>Building Software as an Unprivileged (non-root) User</title>
+    <title>(root ではない) 一般ユーザーによるソフトウェア構築</title>
 @z
 
 @x
@@ -87,14 +99,16 @@ instructions.
     unprivileged user. The book will advise you on instructions that need
     <systemitem class='username'>root</systemitem> privileges.</para>
 @y
-    <para>The golden rule of Unix System Administration is to use your
-    superpowers only when necessary. Hence, BLFS recommends that you
-    build software as an unprivileged user and only become the
-    <systemitem class='username'>root</systemitem> user when installing the
-    software. This philosophy is followed in all the packages in this book.
-    Unless otherwise specified, all instructions should be executed as an
-    unprivileged user. The book will advise you on instructions that need
-    <systemitem class='username'>root</systemitem> privileges.</para>
+<para>
+Unix システム管理における鉄則は、スーパーユーザーによる操作は必要な時にのみ行うということです。
+そこで BLFS でも、ソフトウェアをビルドする際には一般ユーザーにて行い、インストール時のみ
+<systemitem class='username'>root</systemitem>
+ユーザーとなって作業することとしています。
+
+This philosophy is followed in all the packages in this book.
+Unless otherwise specified, all instructions should be executed as an
+unprivileged user. The book will advise you on instructions that need
+<systemitem class='username'>root</systemitem> privileges.</para>
 @z
 
 @x
@@ -121,11 +135,13 @@ instructions.
       extraction as well as make any errors produced during the extraction
       more obvious to you.</para>
 @y
-      <para>You may omit using the <option>v</option> parameter in the commands
-      shown above and below if you wish to suppress the verbose listing of all
-      the files in the archive as they are extracted. This can help speed up the
-      extraction as well as make any errors produced during the extraction
-      more obvious to you.</para>
+<para>
+上に示すコマンドや、これ以降に示すコマンドにおいても
+<option>v</option>
+パラメータはつけなくても構いません。
+これをつけないようにすれば、アーカイブから抽出されるファイル一覧の表示が省略されます。
+抽出処理時間が短縮されて、抽出中にエラーが発生した場合には判別しやすくなります。
+</para>
 @z
 
 @x
@@ -139,14 +155,14 @@ instructions.
 @x
     <para>Finally, you sometimes need to be able to unpack patches which are
     generally not in <filename class='extension'>.tar</filename> format. The
-    best way to do this is to copy the patch file to parent of the 'build'
+    best way to do this is to copy the patch file to the parent of the 'build'
     directory and then run one of the following commands depending on whether
     the file is a <filename class='extension'>.gz</filename> or <filename
     class='extension'>.bz2</filename> file:</para>
 @y
     <para>Finally, you sometimes need to be able to unpack patches which are
     generally not in <filename class='extension'>.tar</filename> format. The
-    best way to do this is to copy the patch file to parent of the 'build'
+    best way to do this is to copy the patch file to the parent of the 'build'
     directory and then run one of the following commands depending on whether
     the file is a <filename class='extension'>.gz</filename> or <filename
     class='extension'>.bz2</filename> file:</para>
@@ -238,8 +254,8 @@ instructions.
   <sect2 id="automating-builds" xreflabel="Automated Building Procedures">
     <title>Automated Building Procedures</title>
 @y
-  <sect2 id="automating-builds" xreflabel="Automated Building Procedures">
-    <title>Automated Building Procedures</title>
+  <sect2 id="automating-builds" xreflabel="ビルド作業の自動化">
+    <title>ビルド作業の自動化</title>
 @z
 
 @x
@@ -590,6 +606,47 @@ run-time.
 
 Often BLFS will describe the
 dependency to explain the added functionality that will result.
+</para>
+@z
+
+@x
+    <title>Using the Most Current Package Sources</title>
+@y
+    <title>最新のパッケージソースの利用</title>
+@z
+
+@x
+    <para>On occasion you may run into a situation in the book when a package
+    will not build or work properly. Though the Editors attempt to ensure
+    that every package in the book builds and works properly, sometimes a
+    package has been overlooked or was not tested with this particular version
+    of BLFS.</para>
+@y
+<para>
+本書内のパッケージをビルドしようとした際に、ビルド出来なかったり正常に動作しなかったりすることが発生するかもしれません。
+本書の編集者は、各パッケージが正常にビルド出来、正常に動作するように常に確認を行っています。
+しかしパッケージの確認に見落としがあったり、BLFS の特定バージョンでのテスト確認が不十分であったりするものもあります。
+</para>
+@z
+
+@x
+    <para>If you discover that a package will not build or work properly, you
+    should see if there is a more current version of the package. Typically
+    this means you go to the maintainer's web site and download the most current
+    tarball and attempt to build the package. If you cannot determine the
+    maintainer's web site by looking at the download URLs, use Google and query
+    the package's name. For example, in the Google search bar type:
+    'package_name download' (omit the quotes) or something similar. Sometimes
+    typing: 'package_name home page' will result in you finding the
+    maintainer's web site.</para>
+@y
+<para>
+パッケージのビルド不備や動作不備に気づいた方は、そのパッケージのより新しいバージョンが存在しているかどうかを確認してください。
+これはつまり、パッケージ管理サイトを参照して最新バージョンを入手し、そのバージョンでのビルドを試して頂きたいのです。
+パッケージのダウンロード URL だけでは管理サイトが見つけられなかった場合は、Google を利用してパッケージ名を検索してください。
+例えば Google にて 'パッケージ名 download' (引用符は除きます) といった検索語を入力してみてください。
+あるいは 'パッケージ名 home page' と入力するのが良いかもしれません。
+そうすることでパッケージ管理サイトが見つけ出せるはずです。
 </para>
 @z
 

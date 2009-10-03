@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,24 +31,31 @@
   <ulink url="&files-anduin;/compressdoc"/> (the file should be installed in
   the <filename class="directory">/usr/sbin</filename> directory).</para>
 @y
-  <para>Man and info reader programs can transparently process files compressed
-  with <command>gzip</command> or <command>bzip2</command>, a feature you can
-  use to free some disk space while keeping your documentation
-  available. However, things are not that simple; man directories tend to
-  contain links&mdash;hard and symbolic&mdash;which defeat simple ideas like
-  recursively calling <command>gzip</command> on them. A better way to go is
-  to use the script below. If you would prefer to download the file instead of
-  creating it by typing or cut-and-pasting, you can find it at
-  <ulink url="&files-anduin;/compressdoc"/> (the file should be installed in
-  the <filename class="directory">/usr/sbin</filename> directory).</para>
+<para>
+
+Man and info reader programs can transparently process files compressed
+with <command>gzip</command> or <command>bzip2</command>, a feature you can
+use to free some disk space while keeping your documentation
+available. However, things are not that simple; man directories tend to
+contain links&mdash;hard and symbolic&mdash;which defeat simple ideas like
+recursively calling <command>gzip</command> on them. A better way to go is
+to use the script below. If you would prefer to download the file instead of
+creating it by typing or cut-and-pasting, you can find it at
+<ulink url="&files-anduin;/compressdoc"/> (the file should be installed in
+the <filename class="directory">/usr/sbin</filename> directory).
+</para>
 @z
 
 @x
   <para>As <systemitem class="username">root</systemitem>, make
   <command>compressdoc</command> executable for all users:</para>
 @y
-  <para>As <systemitem class="username">root</systemitem>, make
-  <command>compressdoc</command> executable for all users:</para>
+<para>
+<systemitem class="username">root</systemitem>
+ユーザーでログインして以下を実行します。
+これはすべてのユーザーが <command>compressdoc</command>
+プログラムを実行できるようにします。
+</para>
 @z
 
 @x

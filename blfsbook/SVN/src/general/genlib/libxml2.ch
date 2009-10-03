@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -16,8 +25,8 @@
   <!ENTITY libxml2-download-ftp  "ftp://xmlsoft.org/libxml2/libxml2-&libxml2-version;.tar.gz">
   <!ENTITY libxml2-md5sum        "8f4fda3969237c2a33bdb1583b5d06b2">
   <!ENTITY libxml2-size          "4.7 MB">
-  <!ENTITY libxml2-buildsize     "116 MB (テスト・スイートをすべて実施するなら、さらに 21 MB)">
-  <!ENTITY libxml2-time          "1.4 SBU (additional 0.3 SBU to run the full test suite)">
+  <!ENTITY libxml2-buildsize     "116 MB (テストスイートをすべて実施するなら、さらに 21 MB)">
+  <!ENTITY libxml2-time          "1.4 SBU (テストスイートをすべて実施するなら、さらに 0.3 SBU)">
 @z
 
 @x
@@ -63,13 +72,13 @@ XML ファイルの処理に用いられます。
 @x
         <para>Download size: &libxml2-size;</para>
 @y
-        <para>ダウンロード・サイズ: &libxml2-size;</para>
+        <para>ダウンロードサイズ: &libxml2-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &libxml2-buildsize;</para>
 @y
-        <para>概算ディスク容量: &libxml2-buildsize;</para>
+        <para>必要ディスク容量: &libxml2-buildsize;</para>
 @z
 
 @x
@@ -91,11 +100,13 @@ XML ファイルの処理に用いられます。
           that this is <emphasis>not</emphasis> the latest version of the
           testsuite, but it is the one specified by the developers.</para>
 @y
-        <para>Optional Testsuite: <ulink
-          url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> - This
-          enables <command>make check</command> to do complete testing. Note
-          that this is <emphasis>not</emphasis> the latest version of the
-          testsuite, but it is the one specified by the developers.</para>
+<para>任意のテストスイート: 
+<ulink url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> -
+これを利用すると <command>make check</command>
+により完全なテストを行うことができます。
+これはテストスイートの最新版<emphasis>ではありません</emphasis>。
+もっとも開発者が指定しているものです。
+</para>
 @z
 
 @x
@@ -110,10 +121,12 @@ XML ファイルの処理に用いられます。
     <application>Python</application> library module, additionally it is
     required to run the full suite of tests)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python"/> (to build and install a
-    <application>Python</application> library module, additionally it is
-    required to run the full suite of tests)</para>
+<bridgehead renderas="sect4">任意</bridgehead>
+<para role="optional"><xref linkend="python"/>
+(<application>Python</application>
+ライブラリモジュールをビルドしインストールする場合には必要です。
+またテストスイートをすべて実施する際にも必要です。)
+</para>
 @z
 
 @x
@@ -125,20 +138,23 @@ XML ファイルの処理に用いられます。
       properly if the <application>Python</application> module is not
       available.</para>
 @y
-      <para>Some packages which utilize
-      <application>libxml2</application> (such as
-      <application>GNOME Doc Utils</application>) need the
-      <application>Python</application> module installed to function
-      properly and some packages (such as GNOME Panel) will not build
-      properly if the <application>Python</application> module is not
-      available.</para>
+<para>
+<application>libxml2</application>
+を利用するパッケージの中には
+<application>Python</application>
+モジュールがないと正しく動作しないものがあります。
+(例えば <application>GNOME Doc Utils</application> など。)
+また <application>Python</application>
+モジュールがないとビルドができないパッケージもあります。
+(例えば GNOME Panel など。)
+</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libxml2"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">ユーザー情報:
     <ulink url="&blfs-wiki;/libxml2"/></para>
 @z
 
@@ -161,27 +177,29 @@ XML ファイルの処理に用いられます。
     commands:</para>
 @y
 <para>
-Install <application>libxml2</application> by running the following
-commands:
+以下のコマンドを実行して <application>libxml2</application> をインストールします。
 </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>コンパイル結果をテストする場合は <command>make check</command> を実行します。</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+<para>
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>コマンド説明</title>
 @z
 
 @x
@@ -190,10 +208,13 @@ commands:
     <command>xmlcatalog</command> or <command>xmllint</command> in shell
     mode.</para>
 @y
-    <para><parameter>--with-history</parameter>: If this option is used, it
-    enables <application>Readline</application> support when running
-    <command>xmlcatalog</command> or <command>xmllint</command> in shell
-    mode.</para>
+<para>
+<parameter>--with-history</parameter>:
+このオプションを指定すれば
+<command>xmlcatalog</command> や <command>xmllint</command>
+をシェルモードで実行する際に <application>Readline</application>
+サポートを利用することができます。
+</para>
 @z
 
 @x
@@ -203,11 +224,13 @@ commands:
       <option>show-all-if-ambiguous</option> or
       <option>show-all-if-available</option> turned on.</para>
 @y
-      <para>When using history support, <command>make check</command> will
-      hang forever if either <filename>/etc/inputrc</filename> or
-      <filename>~/.inputrc</filename> has the option
-      <option>show-all-if-ambiguous</option> or
-      <option>show-all-if-available</option> turned on.</para>
+<para>
+<filename>/etc/inputrc</filename> や <filename>~/.inputrc</filename>
+において <option>show-all-if-ambiguous</option> や
+<option>show-all-if-available</option>
+が有効に設定されている状態で history サポートを利用すると
+<command>make check</command> がハングしたまま終了しません。
+</para>
 @z
 
 @x
@@ -215,15 +238,16 @@ commands:
     of switches prevents the static libraries in this package from being
     built and installed.</para>
 @y
-    <para><parameter>--enable-shared --disable-static</parameter>: This pair
-    of switches prevents the static libraries in this package from being
-    built and installed.</para>
+<para>
+<parameter>--enable-shared --disable-static</parameter>:
+この２つのオプションを指定すれば、スタティックライブラリのビルドとインストールが行われなくなります。
+</para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>パッケージ構成</title>
 @z
 
 @x
@@ -231,9 +255,9 @@ commands:
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -244,18 +268,18 @@ commands:
         /usr/share/doc/libxml2-python-&libxml2-version; and
         /usr/share/gtk-doc/html/libxml2</seg>
 @y
-        <seg>xml2-config, xmlcatalog, and xmllint</seg>
+        <seg>xml2-config, xmlcatalog, xmllint</seg>
         <seg>libxml2.{so,a} and optionally, the libxml2mod.{so,a}
         <application>Python</application> module</seg>
         <seg>/usr/include/libxml2, /usr/share/doc/libxml2-&libxml2-version;,
-        /usr/share/doc/libxml2-python-&libxml2-version; and
+        /usr/share/doc/libxml2-python-&libxml2-version;,
         /usr/share/gtk-doc/html/libxml2</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">概略説明</bridgehead>
 @z
 
 @x xml2-config
@@ -272,23 +296,31 @@ commands:
           <para>is used to monitor and manipulate XML
           and SGML catalogs.</para>
 @y
-          <para>is used to monitor and manipulate XML
-          and SGML catalogs.</para>
+<para>
+
+is used to monitor and manipulate XML
+and SGML catalogs.
+</para>
 @z
 
 @x xmllint
           <para>parses XML files and outputs reports (based
           upon options) to detect errors in XML coding.</para>
 @y
-          <para>parses XML files and outputs reports (based
-          upon options) to detect errors in XML coding.</para>
+<para>
+
+parses XML files and outputs reports (based
+upon options) to detect errors in XML coding.
+</para>
 @z
 
 @x libxml2.{so,a}
           <para> libraries provide the functions for programs to parse files
           that use the XML format.</para>
 @y
-          <para> libraries provide the functions for programs to parse files
-          that use the XML format.</para>
+<para>
+libraries provide the functions for programs to parse files
+that use the XML format.
+</para>
 @z
 

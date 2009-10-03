@@ -138,9 +138,9 @@
    <l:gentext key="Table" text="&#34920;"/>
    <l:gentext key="task" text="Task" lang="en"/>
    <l:gentext key="Task" text="Task" lang="en"/>
-   <l:gentext key="tip" text="&#12486;&#12451;&#12483;&#12503;"/>
-   <l:gentext key="TIP" text="&#12486;&#12451;&#12483;&#12503;"/>
-   <l:gentext key="Tip" text="&#12486;&#12451;&#12483;&#12503;"/>
+   <l:gentext key="tip" text="情報"/>
+   <l:gentext key="TIP" text="情報"/>
+   <l:gentext key="Tip" text="情報"/>
    <l:gentext key="Warning" text="&#35686;&#21578;"/>
    <l:gentext key="warning" text="&#35686;&#21578;"/>
    <l:gentext key="WARNING" text="&#35686;&#21578;"/>
@@ -489,7 +489,10 @@
    <l:context name="xref-number-and-title">
       <l:template name="appendix" text="&#20184;&#37682;&#160;%n. %t"/>
       <l:template name="bridgehead" text="&#38917;&#160;%n. &#12300;%t&#12301;"/>
+<!-- for BLFSbookja
       <l:template name="chapter" text="&#31456;&#160;%n. %t"/>
+-->
+      <l:template name="chapter" text="第%n章 %t"/>
       <l:template name="equation" text="&#24335;&#160;%n. &#12300;%t&#12301;"/>
       <l:template name="example" text="&#20363;&#160;%n. &#12300;%t&#12301;"/>
       <l:template name="figure" text="&#22259;&#160;%n. &#12300;%t&#12301;"/>
