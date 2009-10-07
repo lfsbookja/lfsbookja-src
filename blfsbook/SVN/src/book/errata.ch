@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -33,10 +42,8 @@ BLFS にて構築するアプリケーションソフトウェア類は常に更
 BLFS ブックが公開された後には、セキュリティフィックスやバグフィックスが提供されているかもしれません。
 本バージョンの BLFS ブックにて、作業するパッケージのバージョンや作業手順において、セキュリティフィックス・バグフィックスが必要かどうかはビルド前に
 <ulink url="&errata;"/> を確認してください。
-
-You should note
-any changes shown and apply them to the relevant section of the book as you
-progress with building the applications in BLFS.
+そしてそこに説明されている内容をよく確認し、対応する説明箇所に適用してください。
+アプリケーションの構築作業を行う際には必ずこれを行ってください。
 </para>
 @z
 

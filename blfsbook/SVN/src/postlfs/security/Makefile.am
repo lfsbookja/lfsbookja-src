@@ -2,7 +2,7 @@ BOOKdir = $(top_builddir)/@bookdir@/postlfs/security
 EXTRA_DIST = cracklib.ch cyrus-sasl.ch firewalling.ch gnupg.ch gnupg2.ch \
 	gnutls.ch heimdal.ch iptables.ch linux-pam.ch mitkrb.ch nessus.ch \
 	nss.ch openssl.ch security.ch shadow.ch stunnel.ch sudo.ch syslog.ch \
-	tripwire.ch policykit.ch consolekit.ch
+	tripwire.ch policykit.ch consolekit.ch firewalling.sed
 srcdir = @srcdir@
 srcs = cracklib.xml cyrus-sasl.xml firewalling.xml gnupg.xml gnupg2.xml \
 	gnutls.xml heimdal.xml iptables.xml linux-pam.xml mitkrb.xml nessus.xml \
@@ -19,7 +19,10 @@ ctie:
 
 cracklib.xml: $(BOOKdir)/$@ $(srcdir)/cracklib.ch
 cyrus-sasl.xml: $(BOOKdir)/$@ $(srcdir)/cyrus-sasl.ch
-firewalling.xml: $(BOOKdir)/$@ $(srcdir)/firewalling.ch
+firewalling.xml: $(BOOKdir)/$@ $(srcdir)/firewalling.ch $(srcdir)/firewalling.sed
+	sed -f $(srcdir)/firewalling.sed < $(BOOKdir)/$@ > $@.tmp
+	$(top_builddir)/$(CTIE) -m $@ $@.tmp $(srcdir)/$*.ch
+	rm -f $@.tmp
 gnupg.xml: $(BOOKdir)/$@ $(srcdir)/gnupg.ch
 gnupg2.xml: $(BOOKdir)/$@ $(srcdir)/gnupg2.ch
 gnutls.xml: $(BOOKdir)/$@ $(srcdir)/gnutls.ch
