@@ -7,12 +7,6 @@
 % $Rev$
 % $Date$
 %
-@x Get rid of the Subversion items to avoid getting a plenty of warning messages when processing.
-# $LastChangedBy$
-# $Date$
-@y
-@z
-
 @x
 input-encoding: latin1
 output-encoding: latin1

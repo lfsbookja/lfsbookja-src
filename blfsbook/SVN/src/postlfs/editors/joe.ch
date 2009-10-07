@@ -28,7 +28,7 @@
 <application>JOE</application> (Joe's own editor)
 は、WordStar, <application>Pico</application>,
 <application>Emacs</application>
-といったエディタのエミュレート機能を含んだ軽量なテキストエディタです。
+といったエディタの機能をエミュレートする軽量なテキストエディタです。
 </para>
 @z
 
@@ -176,9 +176,10 @@
           launch <application>Emacs</application> emulation mode.</para>
 @y
 <para>
-
-is a symbolic link to <command>joe</command> used to
-launch <application>Emacs</application> emulation mode.
+<command>joe</command>
+へのシンボリックリンクであり
+<application>Emacs</application>
+エミュレーションモードで起動します。
 </para>
 @z
 
@@ -188,10 +189,9 @@ launch <application>Emacs</application> emulation mode.
           <application>Emacs</application>.</para>
 @y
 <para>
-
-is a small text editor capable of emulating
-WordStar, <application>Pico</application>, and
-<application>Emacs</application>.
+軽量なテキストエディタであり、
+WordStar, <application>Pico</application>, <application>Emacs</application>
+といったエディタ機能をエミュレートします。
 </para>
 @z
 
@@ -199,16 +199,23 @@ WordStar, <application>Pico</application>, and
           <para>is a symbolic link to <command>joe</command> used to
           launch <application>Pico</application> emulation mode.</para>
 @y
-          <para>is a symbolic link to <command>joe</command> used to
-          launch <application>Pico</application> emulation mode.</para>
+<para>
+<command>joe</command>
+へのシンボリックリンクであり
+<application>Pico</application>
+エミュレーションモードで起動します。
+</para>
 @z
 
 @x jstar
           <para>is a symbolic link to <command>joe</command> used to
           launch WordStar emulation mode.</para>
 @y
-          <para>is a symbolic link to <command>joe</command> used to
-          launch WordStar emulation mode.</para>
+<para>
+<command>joe</command>
+へのシンボリックリンクであり
+WordStar エミュレーションモードで起動します。
+</para>
 @z
 
 @x rjoe
@@ -216,16 +223,20 @@ WordStar, <application>Pico</application>, and
           <application>JOE</application> to editing only files which are
           specified on the command-line.</para>
 @y
-          <para>is a symbolic link to <command>joe</command> that restricts
-          <application>JOE</application> to editing only files which are
-          specified on the command-line.</para>
+<para>
+<command>joe</command>
+へのシンボリックリンクであり、コマンドラインから指定されたファイルのみを編集するように、限定的に
+<application>JOE</application> を起動します。
+</para>
 @z
 
 @x termidx
           <para>is a program used by <command>joe</command> to generate the
           termcap index file.</para>
 @y
-          <para>is a program used by <command>joe</command> to generate the
-          termcap index file.</para>
+<para>
+<command>joe</command>
+を利用して termcap インデックスファイルを生成します。
+</para>
 @z
 

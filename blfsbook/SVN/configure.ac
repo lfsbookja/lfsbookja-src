@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
-AC_INIT([BLFSbook.ja], [SVN-20090611-j20090613], [michio_matsuyama AT yahoo DOT co DOT jp])
+AC_INIT([BLFSbookja], [svn], [michio_matsuyama AT yahoo DOT co DOT jp])
 AM_INIT_AUTOMAKE
 
 m4_include([m4/progs.m4])

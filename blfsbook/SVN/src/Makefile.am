@@ -1,6 +1,6 @@
 SUBDIRS=appendices basicnet book general gnome introduction kde multimedia \
 	postlfs pst server stylesheets template x xincludes xsoft
-EXTRA_DIST = general.ch index.ch tidy.ch
+EXTRA_DIST = general.ch index.ch tidy.ch tidy.sed
 BOOKdir = $(top_builddir)/@bookdir@
 srcdir = @srcdir@
 srcs = general.ent index.xml tidy.conf
@@ -25,8 +25,10 @@ general.ent: $(BOOKdir)/general.ent $(srcdir)/general.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
 index.xml: $(BOOKdir)/index.xml $(srcdir)/index.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
-tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch $(srcdir)/tidy.sed
+	sed -f $(srcdir)/tidy.sed < $(BOOKdir)/tidy.conf > tidy.conf.tmp
+	$(top_builddir)/$(CTIE) -m $@ tidy.conf.tmp $(srcdir)/tidy.ch
+	rm -f tidy.conf.tmp
 
 stylesheets:
 	$(MKDIR_P) stylesheets
