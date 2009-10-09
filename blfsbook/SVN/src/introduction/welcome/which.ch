@@ -38,9 +38,8 @@
 <para>
 Linux From Scratch ブックとは違って BLFS
 は、記述の順番どおりに作業を進めるものではありません。
-LFS は Web サーバーやらマルチメディアデスクトップ環境やらを作り出していく元となるベースシステムを作り出すものです。
+そもそも LFS は Web サーバーやらマルチメディアデスクトップ環境やらを作り出していく元となるベースシステムを作り出すものでした。
 BLFS が説明するのは、ベースシステムからお望みのシステムへと構築作業を進めていくことです。
-
 選択肢は数多くあります。
 </para>
 @z
@@ -74,15 +73,17 @@ BLFS が説明するのは、ベースシステムからお望みのシステム
   system.</para>
 @y
 <para>
-
-The part on <xref linkend="postlfs"/> is where most people will want
-to turn next.  This deals with not just configuration but also Security
-(<xref linkend="postlfs-security"/>), File Systems (<xref
-linkend="postlfs-filesystems"/>), Editors (<xref
-linkend="postlfs-editors"/>) and Shells (<xref linkend="postlfs-shells"/>).
-Indeed, you may wish to reference certain parts of this chapter (especially
-the sections on Editors and File Systems) while building your LFS
-system.
+<xref linkend="postlfs"/>
+の部では、たいていの方にお読みいただくことになる内容を示しています。
+そこでは、設定をほどこしていくといった内容だけでなく、
+セキュリティ (<xref linkend="postlfs-security"/>)、
+ファイルシステム (<xref linkend="postlfs-filesystems"/>)、
+エディタ (<xref linkend="postlfs-editors"/>)、
+シェル (<xref linkend="postlfs-shells"/>)
+に関することも取り扱っています。
+実際に LFS システムのビルド作業をさらに進めていけば、特定の章
+(特にエディタやファイルシステムなど)
+を参照していくことになるはずです。
 </para>
 @z
 
@@ -98,9 +99,10 @@ system.
   what it needs.</para>
 @y
 <para>
+上のような基本的な項を参照した次には、<xref linkend="general"/>
+といった部にも目を通すことが多いかと思います。
 
-Following these basic items, most people will want to at least browse
-through the <xref linkend="general"/> part of the book.  This part contains
+This part contains
 information on many items which are prerequisites for other sections of the
 book as well as some items (such as <xref linkend="general-prog"/>)
 which are useful in their own right.  Note that you don't have to install all

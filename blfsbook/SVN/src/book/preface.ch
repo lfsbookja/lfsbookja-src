@@ -118,12 +118,12 @@ BLFS 編集者 (2001年7月 &ndash; 2003年3月)</literallayout>
 私が BLFS プロジェクトに出会った経緯や、その頃の作業手順に基づいて BLFS 構築を行った時のことをよく覚えています。
 アプリケーションが実際に立ち上がり、しかも素早く起動するとは、何とも信じられない程でした。
 BLFS ブックではさまざまなものがどういった方法で実現されているのかも説明されていました。
-Unfortunately, for me, it wasn't long before I was opening applications that
-had nothing more  than "To be done" on the page.  I did what most would do,
-I waited for someone else to do it.  It wasn't too long before I am looking
-through  <application>Bugzilla</application> for something easy to do.
-As with any learning experience, the definition of what was easy kept
-changing.</para>
+ただし、アプリケーションを説明するページを開いても「為すべきこと」が書かれているばかりで、じっくりと時間をかけて読み解く余裕がありませんでした。
+私にできることと言えば、たいていの方ならできるものばかりで、後はどなたかが完成してくれるのを待つくらいしかできなかったのです。
+さらには <application>Bugzilla</application>
+でも調べて、もっと簡単な手順があることを調べてみたかったのですが、それも時間がありませんでした。
+経験していけば明らかなことですが、何が的確であるかという定義は時とともに変わるものです。
+</para>
 @z
 
 @x
@@ -250,7 +250,7 @@ BLFS メーリングリストのかつての投稿を目にしたのです。
 <para>
 BLFS プロジェクトはここ数年の間に大きく進展しています。
 パッケージが新たに加えられ、パッケージの依存関係も充実してきました。
-今後の発展を考えると本プロジェクトには皆さんからの声が欠かせません。
+今後の発展のことを考えると本プロジェクトには皆さんからの声が欠かせません。
 BLFS 構築を楽しんで頂けたなら、次は、何かの形で本プロジェクトを手助けすることを考えてみてください。
 BLFS を維持していくには多大な時間を要します。
 皆さんの中で文章表現に自信をお持ちの方は、是非 BLFS チームに参加してください。

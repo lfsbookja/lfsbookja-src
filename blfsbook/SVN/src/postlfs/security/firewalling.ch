@@ -60,12 +60,9 @@
     to have a firewall.</para>
 @y
 <para>
-
-In a perfect world, every daemon or service on every machine
-is perfectly configured and immune to flaws such as buffer overflows
-or other problems regarding its security. Furthermore, you trust
-every user accessing your services. In this world, you do not need
-to have a firewall.
+理想の話をすれば、コンピュータ上のデーモンプログラムやサービスは、設定が完璧に行われ、バッファオーバーフローなどのセキュリティに関する危険にさらされないようになっているべきものです。
+さらにサービスを利用するユーザーはすべて信頼のおける人ばかりであるはずです。
+こういう状況であればファイアウォールなど一切必要ないということになります。
 </para>
 @z
 
@@ -100,14 +97,17 @@ Internet. In this world, a firewall is essential.
     configured and up to date.  A firewall is not a cure all, but should
     be an essential part of your overall security strategy.</para>
 @y
-    <para>Don't assume however, that having a firewall makes careful
-    configuration redundant, or that it makes any negligent
-    misconfiguration harmless. It doesn't prevent anyone from exploiting
-    a service you intentionally offer but haven't recently updated or
-    patched after an exploit went public.  Despite having a firewall, you
-    need to keep applications and daemons on your system properly
-    configured and up to date.  A firewall is not a cure all, but should
-    be an essential part of your overall security strategy.</para>
+<para>
+
+Don't assume however, that having a firewall makes careful
+configuration redundant, or that it makes any negligent
+misconfiguration harmless. It doesn't prevent anyone from exploiting
+a service you intentionally offer but haven't recently updated or
+patched after an exploit went public.  Despite having a firewall, you
+need to keep applications and daemons on your system properly
+configured and up to date.  A firewall is not a cure all, but should
+be an essential part of your overall security strategy.
+</para>
 @z
 
 @x
@@ -133,13 +133,16 @@ Internet. In this world, a firewall is essential.
       that access, especially if they are always online and connected
       via broadband links.</para>
 @y
-      <para>This is a hardware device or software program commercially sold (or
-      offered via freeware) by companies such as Symantec which claims that
-      it secures a home or desktop computer connected to the Internet. This
-      type of firewall is highly relevant for users who do not know how their
-      computers might be accessed via the Internet or how to disable
-      that access, especially if they are always online and connected
-      via broadband links.</para>
+<para>
+
+This is a hardware device or software program commercially sold (or
+offered via freeware) by companies such as Symantec which claims that
+it secures a home or desktop computer connected to the Internet. This
+type of firewall is highly relevant for users who do not know how their
+computers might be accessed via the Internet or how to disable
+that access, especially if they are always online and connected
+via broadband links.
+</para>
 @z
 
 @x
@@ -152,14 +155,17 @@ Internet. In this world, a firewall is essential.
       to come from the firewall itself) are commonly considered relatively
       secure.</para>
 @y
-      <para>This is a system placed between the Internet and an intranet.
-      To minimize the risk of compromising the firewall itself, it should
-      generally have only one role&mdash;that of protecting the intranet.
-      Although not completely risk free, the tasks of doing the routing and
-      IP masquerading (rewriting IP headers of the packets it routes from
-      clients with private IP addresses onto the Internet so that they seem
-      to come from the firewall itself) are commonly considered relatively
-      secure.</para>
+<para>
+
+This is a system placed between the Internet and an intranet.
+To minimize the risk of compromising the firewall itself, it should
+generally have only one role&mdash;that of protecting the intranet.
+Although not completely risk free, the tasks of doing the routing and
+IP masquerading (rewriting IP headers of the packets it routes from
+clients with private IP addresses onto the Internet so that they seem
+to come from the firewall itself) are commonly considered relatively
+secure.
+</para>
 @z
 
 @x
