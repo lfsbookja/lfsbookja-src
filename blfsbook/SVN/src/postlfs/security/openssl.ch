@@ -124,7 +124,7 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="bc"/>(if you run the test suite
+    <para role="recommended"><xref linkend="bc"/> (if you run the test suite
     during the build)</para>
 @y
     <bridgehead renderas="sect4">推奨</bridgehead>

@@ -1,11 +1,13 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
 EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	lzma-utils.ch mc.ch pciutils.ch pkgconfig.ch sysstat.ch sysutils.ch \
-	unrar.ch unzip.ch usbutils.ch which.ch zip.ch
+	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
+	DeviceKit.ch DeviceKit-power.ch
 srcdir = @srcdir@
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	lzma-utils.xml mc.xml pciutils.xml pkgconfig.xml sysstat.xml sysutils.xml \
-	unrar.xml unzip.xml usbutils.xml which.xml zip.xml
+	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
+	DeviceKit.xml DeviceKit-power.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -33,3 +35,6 @@ unzip.xml: $(BOOKdir)/$@ $(srcdir)/unzip.ch
 usbutils.xml: $(BOOKdir)/$@ $(srcdir)/usbutils.ch
 which.xml: $(BOOKdir)/$@ $(srcdir)/which.ch
 zip.xml: $(BOOKdir)/$@ $(srcdir)/zip.ch
+DeviceKit.xml: $(BOOKdir)/$@ $(srcdir)/DeviceKit.ch
+DeviceKit-power.xml: $(BOOKdir)/$@ $(srcdir)/DeviceKit-power.ch
+

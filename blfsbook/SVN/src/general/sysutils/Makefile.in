@@ -136,11 +136,13 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
 EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	lzma-utils.ch mc.ch pciutils.ch pkgconfig.ch sysstat.ch sysutils.ch \
-	unrar.ch unzip.ch usbutils.ch which.ch zip.ch
+	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
+	DeviceKit.ch DeviceKit-power.ch
 
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	lzma-utils.xml mc.xml pciutils.xml pkgconfig.xml sysstat.xml sysutils.xml \
-	unrar.xml unzip.xml usbutils.xml which.xml zip.xml
+	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
+	DeviceKit.xml DeviceKit-power.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -347,6 +349,8 @@ unzip.xml: $(BOOKdir)/$@ $(srcdir)/unzip.ch
 usbutils.xml: $(BOOKdir)/$@ $(srcdir)/usbutils.ch
 which.xml: $(BOOKdir)/$@ $(srcdir)/which.ch
 zip.xml: $(BOOKdir)/$@ $(srcdir)/zip.ch
+DeviceKit.xml: $(BOOKdir)/$@ $(srcdir)/DeviceKit.ch
+DeviceKit-power.xml: $(BOOKdir)/$@ $(srcdir)/DeviceKit-power.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

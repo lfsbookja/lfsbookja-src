@@ -6,7 +6,8 @@ EXTRA_DIST = alsa-firmware.ch alsa-lib.ch alsa-oss.ch alsa-plugins.ch \
 	libao.ch libdriv.ch libdv.ch libdvdcss.ch libdvdread.ch libfame.ch \
 	libmad.ch libmikmod.ch libmpeg2.ch libmpeg3.ch libmusicbrainz.ch \
 	libogg.ch libquicktime.ch libtheora.ch libvorbis.ch nas.ch \
-	openquicktime.ch sdl.ch speex.ch xine-lib.ch xvid.ch
+	openquicktime.ch sdl.ch speex.ch xine-lib.ch xvid.ch \
+	libcanberra.ch
 srcdir = @srcdir@
 srcs = alsa-firmware.xml alsa-lib.xml alsa-oss.xml alsa-plugins.xml \
 	alsa-tools.xml alsa-utils.xml alsa.xml arts.xml audiofile.xml esound.xml \
@@ -15,7 +16,8 @@ srcs = alsa-firmware.xml alsa-lib.xml alsa-oss.xml alsa-plugins.xml \
 	libao.xml libdriv.xml libdv.xml libdvdcss.xml libdvdread.xml libfame.xml \
 	libmad.xml libmikmod.xml libmpeg2.xml libmpeg3.xml libmusicbrainz.xml \
 	libogg.xml libquicktime.xml libtheora.xml libvorbis.xml nas.xml \
-	openquicktime.xml sdl.xml speex.xml xine-lib.xml xvid.xml
+	openquicktime.xml sdl.xml speex.xml xine-lib.xml xvid.xml \
+	libcanberra.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -66,3 +68,5 @@ sdl.xml: $(BOOKdir)/$@ $(srcdir)/sdl.ch
 speex.xml: $(BOOKdir)/$@ $(srcdir)/speex.ch
 xine-lib.xml: $(BOOKdir)/$@ $(srcdir)/xine-lib.ch
 xvid.xml: $(BOOKdir)/$@ $(srcdir)/xvid.ch
+libcanberra.xml: $(BOOKdir)/$@ $(srcdir)/libcanberra.ch
+
