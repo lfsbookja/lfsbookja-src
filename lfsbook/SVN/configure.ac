@@ -6,14 +6,29 @@ AC_INIT([LFSbookja], [svn], [matsuand AT users DOT sourceforge DOT jp])
 AM_INIT_AUTOMAKE
 
 m4_include([m4/progs.m4])
+m4_include([m4/ax_compare_version.m4])
+m4_include([m4/ac_check_docbook_xslt.m4])
+m4_include([m4/ac_check_docbook_dtd.m4])
 
 # Checks for programs.
 AC_PROG_CC
-AC_PROG_XSLTPROC
+
+XSLTPROC_FLAGS='--nonet '
+AC_CHECK_DOCBOOK_XSLT
+if test "x$HAVE_DOCBOOK_XSLT" = "xno"; then
+  AC_MSG_ERROR([Docbook XSLT not found])
+fi
+
+XSLTPROC_FLAGS='--nonet '
+AC_CHECK_DOCBOOK_DTD([4.5])
+if test "x$HAVE_DOCBOOK_DTD_VERS" = "xno"; then
+  AC_MSG_ERROR([Docbook DTD 4.5 not found])
+fi
+
 AC_PROG_XMLLINT
 AC_PROG_TIDY
 
-TARGETVER=svn-20090924
+TARGETVER=svn-20090929
 
 SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 AC_MSG_CHECKING([for the original XML version])
