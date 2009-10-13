@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,17 +31,17 @@
     <title>Gzip のインストール</title>
 @z
 
-@x
-    <para>The version of the function <quote>futimens</quote> used
-    by Gzip is incompatible with the version that current
-    Glibc provides, so we'll rename the function:</para>
-@y
-<para>
-Gzip にて利用される <quote>futimens</quote>
-関数のバージョンは、この時点での Glibc が提供するバージョンとは互換性がありません。
-したがってその関数名を変更しておくことにします。
-</para>
-@z
+% @x
+%     <para>The version of the function <quote>futimens</quote> used
+%     by Gzip is incompatible with the version that current
+%     Glibc provides, so we'll rename the function:</para>
+% @y
+% <para>
+% Gzip にて利用される <quote>futimens</quote>
+% 関数のバージョンは、この時点での Glibc が提供するバージョンとは互換性がありません。
+% したがってその関数名を変更しておくことにします。
+% </para>
+% @z
 
 @x
     <para>Prepare Gzip for compilation:</para>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -19,26 +28,27 @@ Gzip パッケージはファイルの圧縮、伸長 (解凍) を行うプロ�
     <title>Gzip のインストール</title>
 @z
 
-@x
-    <para>The version of the function <quote>futimens</quote> used
-    by Gzip is incompatible with the version that current
-    Glibc provides, so we'll rename the function:</para>
-@y
-<para>
-Gzip にて利用される <quote>futimens</quote>
-関数のバージョンは、この時点での
-Glibc が提供するバージョンとは互換性がありません。
-したがってその関数名を変更しておくことにします。
-</para>
-@z
+% @x
+%     <para>The version of the function <quote>futimens</quote> used
+%     by Gzip is incompatible with the version that current
+%     Glibc provides, so we'll rename the function:</para>
+% @y
+% <para>
+% Gzip にて利用される <quote>futimens</quote>
+% 関数のバージョンは、この時点での
+% Glibc が提供するバージョンとは互換性がありません。
+% したがってその関数名を変更しておくことにします。
+% </para>
+% @z
 
 @x
-    <para>There is also a bug in the <filename>zdiff</filename> script that
-    needs to be fixed:</para>
+    <para>Fix a bug in gzip, whereby zdiff doesn't work correctly when invoked
+    on two compressed inputs:</para>
 @y
 <para>
 <filename>zdiff</filename>
-スクリプトにもバグがあるため、以下により修正します。
+スクリプトにおいて、入力として二つの圧縮ファイルを与えた際に正常に動作しないバグがあります。
+以下によりこれを修正します。
 </para>
 @z
 

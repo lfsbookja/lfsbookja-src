@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -208,16 +217,16 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
 @z
 
 @x
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2fsck,
-        e2image, e2initrd_helper, e2label, e2undo, filefrag, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
+        e2fsck, e2image, e2initrd_helper, e2label, e2undo, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
         resize2fs, and tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so} and
         libss.{a,so}</seg>
 @y
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2fsck,
-        e2image, e2initrd_helper, e2label, e2undo, filefrag, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
+        e2fsck, e2image, e2initrd_helper, e2label, e2undo, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
         resize2fs, tune2fs</seg>
