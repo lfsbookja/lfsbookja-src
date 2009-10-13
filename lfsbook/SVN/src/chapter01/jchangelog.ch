@@ -50,6 +50,16 @@
 -->
 
     <listitem>
+      <para>2009-10-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, src/chapter05/gzip.ch,
+          src/chapter05/{e2fsprogs.ch, gzip.ch}： SVN-20091012 r9084 対応。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-09-30</para>
       <itemizedlist>
         <listitem>

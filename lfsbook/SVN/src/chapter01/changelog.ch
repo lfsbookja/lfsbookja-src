@@ -57,6 +57,48 @@
 @z
 
 @x
+      <para>2009-10-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgraded to Kbd-1.15.1. Fixes
+          <ulink url="&lfs-ticket-root;2501">#2501</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Man-Pages-3.23. Fixes
+          <ulink url="&lfs-ticket-root;2498">#2498</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Linux-2.6.31.3. Fixes
+          <ulink url="&lfs-ticket-root;2499">#2499</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Gzip-1.3.13. Fixes
+          <ulink url="&lfs-ticket-root;2500">#2500</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-10-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Kbd-1.15.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2501">#2501</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Man-Pages-3.23 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2498">#2498</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.31.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2499">#2499</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Gzip-1.3.13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2500">#2500</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-09-29</para>
       <itemizedlist>
         <listitem>
