@@ -79,9 +79,15 @@
    <l:gentext key="msglevel" text="&#12524;&#12505;&#12523;"/>
    <l:gentext key="MsgOrig" text="&#30330;&#20449;&#20803;"/>
    <l:gentext key="msgorig" text="&#30330;&#20449;&#20803;"/>
+<!-- matsu modified: START
    <l:gentext key="NOTE" text="&#27880;&#24847;"/>
    <l:gentext key="Note" text="&#27880;&#24847;"/>
    <l:gentext key="note" text="&#27880;&#24847;"/>
+-->
+   <l:gentext key="NOTE" text="注記"/>
+   <l:gentext key="Note" text="注記"/>
+   <l:gentext key="note" text="注記"/>
+<!-- matsu modified: END -->
    <l:gentext key="Part" text="&#12497;&#12540;&#12488;"/>
    <l:gentext key="part" text="&#12497;&#12540;&#12488;"/>
    <l:gentext key="Preface" text="&#24207;&#25991;"/>
