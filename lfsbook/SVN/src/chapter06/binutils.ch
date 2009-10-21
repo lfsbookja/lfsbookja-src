@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -58,14 +67,14 @@ Binutils や GCC のテストスイートを実行する前に、この症状は
 </para>
 @z
 
-@x
-    <para>Fix an issue that causes one of the tests to fail to compile against
-    Glibc-&glibc-version;:</para>
-@y
-<para>
-Glibc-&glibc-version; に対してコンパイルテストが失敗するため、これを修正します。
-</para>
-@z
+% @x
+%     <para>Fix an issue that causes one of the tests to fail to compile against
+%     Glibc-&glibc-version;:</para>
+% @y
+% <para>
+% Glibc-&glibc-version; に対してコンパイルテストが失敗するため、これを修正します。
+% </para>
+% @z
 
 @x
     <para>The Binutils documentation recommends building Binutils outside of the

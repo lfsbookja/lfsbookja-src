@@ -57,6 +57,40 @@
 @z
 
 @x
+      <para>2009-10-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgraded to Linux-2.6.31.4. Fixes
+          <ulink url="&lfs-ticket-root;2503">#2503</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to GCC-4.4.2. Fixes
+          <ulink url="&lfs-ticket-root;2504">#2504</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Binutils-2.20. Fixes
+          <ulink url="&lfs-ticket-root;2505">#2505</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-10-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Linux-2.6.31.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2503">#2503</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] GCC-4.4.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2504">#2504</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Binutils-2.20 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2505">#2505</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-10-12</para>
       <itemizedlist>
         <listitem>
