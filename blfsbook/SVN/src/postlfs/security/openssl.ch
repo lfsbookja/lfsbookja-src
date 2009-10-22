@@ -45,7 +45,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -93,19 +93,19 @@
 @x
         <para>Estimated disk space required: &openssl-buildsize;</para>
 @y
-        <para>必要ディスク容量: &openssl-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &openssl-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &openssl-time;</para>
 @y
-        <para>概算ビルド時間: &openssl-time;</para>
+        <para>&j-Estimatedbuildtime;: &openssl-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">追加ダウンロード</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -127,7 +127,7 @@
     <para role="recommended"><xref linkend="bc"/> (if you run the test suite
     during the build)</para>
 @y
-    <bridgehead renderas="sect4">推奨</bridgehead>
+    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
     <para role="recommended"><xref linkend="bc"/>
     (テストスイートを実行する場合に必要。)</para>
 @z
@@ -137,7 +137,7 @@
     <para role="optional"><xref linkend="mitkrb"/> or
     <xref linkend="heimdal"/></para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="mitkrb"/> または
     <xref linkend="heimdal"/></para>
 @z
@@ -146,7 +146,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/OpenSSL'/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url='&blfs-wiki;/OpenSSL'/></para>
 @z
 
@@ -161,23 +161,24 @@
     the following commands:</para>
 @y
 <para>
-<application>OpenSSL</application>
-をインストールするために以下を実行します。
+以下のコマンドを実行して
+<application>OpenSSL</application> をビルドします。
 </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make test</command>.</para>
 @y
-    <para>テストを実施する場合は <command>make test</command> を実行してください。</para>
+<para>
+ビルド結果をテストする場合は <command>make test</command> を実行します。
+</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 </para>
 @z
 
@@ -194,7 +195,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド情報</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -214,8 +215,12 @@
     <para><parameter>shared</parameter>: This parameter forces the creation of
     shared libraries along with the static libraries.</para>
 @y
-    <para><parameter>shared</parameter>: This parameter forces the creation of
-    shared libraries along with the static libraries.</para>
+<para>
+<parameter>shared</parameter>:
+
+This parameter forces the creation of
+shared libraries along with the static libraries.
+</para>
 @z
 
 @x
@@ -223,9 +228,13 @@
     compression/decompression functionality using the
     <filename class="libraryfile">libz</filename> library.</para>
 @y
-    <para><parameter>zlib-dynamic</parameter>: This parameter adds
-    compression/decompression functionality using the
-    <filename class="libraryfile">libz</filename> library.</para>
+<para>
+<parameter>zlib-dynamic</parameter>:
+
+This parameter adds
+compression/decompression functionality using the
+<filename class="libraryfile">libz</filename> library.
+</para>
 @z
 
 @x
@@ -234,10 +243,14 @@
     of those encryption methods. Patent licenses may be needed for you to
     utilize either of those methods in your projects.</para>
 @y
-    <para><option>no-rc5 no-idea</option>: When added to the
-    <command>./config</command> command, this will eliminate the building
-    of those encryption methods. Patent licenses may be needed for you to
-    utilize either of those methods in your projects.</para>
+<para>
+<option>no-rc5 no-idea</option>:
+
+When added to the
+<command>./config</command> command, this will eliminate the building
+of those encryption methods. Patent licenses may be needed for you to
+utilize either of those methods in your projects.
+</para>
 @z
 
 @x
@@ -246,10 +259,14 @@
     <filename class='directory'>/usr/share/man</filename> instead of
     <filename class='directory'>/etc/ssl/man</filename>.</para>
 @y
-    <para><command>make MANDIR=/usr/share/man install</command>: This command
-    installs <application>OpenSSL</application> with the man pages in
-    <filename class='directory'>/usr/share/man</filename> instead of
-    <filename class='directory'>/etc/ssl/man</filename>.</para>
+<para>
+<command>make MANDIR=/usr/share/man install</command>:
+
+This command
+installs <application>OpenSSL</application> with the man pages in
+<filename class='directory'>/usr/share/man</filename> instead of
+<filename class='directory'>/etc/ssl/man</filename>.
+</para>
 @z
 
 @x
@@ -258,10 +275,14 @@
     <application>OpenSSL</application>, and the certificates that were extracted
     from the BLFS-ca-bundle-&ca-bundle-version; package.</para>
 @y
-    <para><command>cp -v -r certs /etc/ssl</command>: This installs both the
-    sample certificates and documentation included with
-    <application>OpenSSL</application>, and the certificates that were extracted
-    from the BLFS-ca-bundle-&ca-bundle-version; package.</para>
+<para>
+<command>cp -v -r certs /etc/ssl</command>:
+
+This installs both the
+sample certificates and documentation included with
+<application>OpenSSL</application>, and the certificates that were extracted
+from the BLFS-ca-bundle-&ca-bundle-version; package.
+</para>
 @z
 
 @x
@@ -289,13 +310,13 @@
 @x
       <title>Config Files</title>
 @y
-      <title>設定ファイル</title>
+      <title>&j-ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>設定情報</title>
+      <title>&j-ConfigInfo;</title>
 @z
 
 @x
@@ -307,19 +328,22 @@
       who do would normally be expected to either know how to do it or to be
       able to find out how to do it.</para>
 @y
-      <para>Most people who just want to use <application>OpenSSL</application>
-      for providing functions to other programs such as
-      <application>OpenSSH</application> and web browsers won't need to worry
-      about configuring <application>OpenSSL</application>. Configuring
-      <application>OpenSSL</application> is an advanced topic and so those
-      who do would normally be expected to either know how to do it or to be
-      able to find out how to do it.</para>
+<para>
+
+Most people who just want to use <application>OpenSSL</application>
+for providing functions to other programs such as
+<application>OpenSSH</application> and web browsers won't need to worry
+about configuring <application>OpenSSL</application>. Configuring
+<application>OpenSSL</application> is an advanced topic and so those
+who do would normally be expected to either know how to do it or to be
+able to find out how to do it.
+</para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -327,9 +351,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -354,7 +378,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x c_rehash
@@ -362,9 +386,12 @@
           all files in a directory and adds symbolic links to their hash
           values.</para>
 @y
-          <para>is a <application>Perl</application> script that scans
-          all files in a directory and adds symbolic links to their hash
-          values.</para>
+<para>
+
+is a <application>Perl</application> script that scans
+all files in a directory and adds symbolic links to their hash
+values.
+</para>
 @z
 
 @x openssl
@@ -373,10 +400,13 @@
           library from the shell. It can be used for various functions which are
           documented in <command>man 1 openssl</command>.</para>
 @y
-          <para>is a command-line tool for using the various cryptography
-          functions of <application>OpenSSL</application>'s crypto
-          library from the shell. It can be used for various functions which are
-          documented in <command>man 1 openssl</command>.</para>
+<para>
+
+is a command-line tool for using the various cryptography
+functions of <application>OpenSSL</application>'s crypto
+library from the shell. It can be used for various functions which are
+documented in <command>man 1 openssl</command>.
+</para>
 @z
 
 @x libcrypt
@@ -387,12 +417,15 @@
           <application>OpenSSH</application>, <application>OpenPGP</application>,
           and other cryptographic standards.</para>
 @y
-          <para>implements a wide range of cryptographic algorithms used in
-          various Internet standards. The services provided by  this library
-          are used by the <application>OpenSSL</application> implementations of
-          SSL, TLS and S/MIME, and they have also been used to implement
-          <application>OpenSSH</application>, <application>OpenPGP</application>,
-          and other cryptographic standards.</para>
+<para>
+
+implements a wide range of cryptographic algorithms used in
+various Internet standards. The services provided by  this library
+are used by the <application>OpenSSL</application> implementations of
+SSL, TLS and S/MIME, and they have also been used to implement
+<application>OpenSSH</application>, <application>OpenPGP</application>,
+and other cryptographic standards.
+</para>
 @z
 
 @x libssl
@@ -400,8 +433,11 @@
           Layer Security (TLS v1) protocols. It provides a rich API, documentation
           on which can be found by running <command>man 3 ssl</command>.</para>
 @y
-          <para>implements the Secure Sockets Layer (SSL v2/v3) and Transport
-          Layer Security (TLS v1) protocols. It provides a rich API, documentation
-          on which can be found by running <command>man 3 ssl</command>.</para>
+<para>
+
+implements the Secure Sockets Layer (SSL v2/v3) and Transport
+Layer Security (TLS v1) protocols. It provides a rich API, documentation
+on which can be found by running <command>man 3 ssl</command>.
+</para>
 @z
 

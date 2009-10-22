@@ -37,7 +37,7 @@ users.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -67,19 +67,19 @@ users.
 @x
         <para>Estimated disk space required: &linux-pam-buildsize;</para>
 @y
-        <para>必要ディスク容量: &linux-pam-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &linux-pam-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &linux-pam-time;</para>
 @y
-        <para>概算ビルド時間: &linux-pam-time;</para>
+        <para>&j-Estimatedbuildtime;: &linux-pam-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">追加のダウンロード</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -119,7 +119,7 @@ users.
     <xref linkend="db"/> (for the pam_userdb module), and
     <ulink url="http://www.prelude-ids.org/">Prelude</ulink></para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="cracklib"/>,
     <xref linkend="x-window-system"/>,
     <xref linkend="db"/> (pam_userdb モジュール利用時),
@@ -134,7 +134,7 @@ users.
     <xref linkend="w3m"/>, and
     <xref linkend="fop"/></para>
 @y
-    <bridgehead renderas="sect4">任意
+    <bridgehead renderas="sect4">&j-Optional;
     (ドキュメントの(再)生成時に必要)</bridgehead>
     <para role="optional"><xref linkend="libxslt"/>,
     <xref linkend="DocBook"/>,
@@ -147,7 +147,7 @@ users.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/linux-pam"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/linux-pam"/></para>
 @z
 
@@ -224,7 +224,7 @@ tarball を解凍します。
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -330,7 +330,7 @@ library filenames.</para>
 @x
       <title>Config Files</title>
 @y
-      <title>設定ファイル</title>
+      <title>&j-ConfigFiles;</title>
 @z
 
 @x
@@ -346,7 +346,7 @@ library filenames.</para>
 @x
       <title>Configuration Information</title>
 @y
-      <title>設定情報</title>
+      <title>&j-ConfigInfo;</title>
 @z
 
 @x
@@ -400,7 +400,7 @@ for a list of various third-party modules available.</para>
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -408,9 +408,9 @@ for a list of various third-party modules available.</para>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -432,22 +432,28 @@ for a list of various third-party modules available.</para>
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x pam_tally
           <para>is used to view or manipulate the <filename>faillog</filename>
           file.</para>
 @y
-          <para>is used to view or manipulate the <filename>faillog</filename>
-          file.</para>
+<para>
+
+is used to view or manipulate the <filename>faillog</filename>
+file.
+</para>
 @z
 
 @x libpam.{so,a}
           <para>provides the interfaces between applications and the
           PAM modules.</para>
 @y
-          <para>provides the interfaces between applications and the
-          PAM modules.</para>
+<para>
+
+provides the interfaces between applications and the
+PAM modules.
+</para>
 @z
 

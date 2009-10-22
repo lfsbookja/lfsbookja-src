@@ -36,15 +36,17 @@
   <application>Emacs</application> users!</para>
 @y
 <para>
-
-The LFS book installs <application>Vim</application>
-as its text editor.  At this point it should be noted that there are a
-<emphasis>lot</emphasis> of different editing applications out there including
-<application>Emacs</application>, <application>nano</application>,
-<application>Joe</application> and many more.  Anyone who has been around the
-Internet (especially usenet) for a short time will certainly have observed at
-least one flame war, usually involving <application>Vim</application> and
-<application>Emacs</application> users!
+LFS ブックではテキストエディタとして <application>Vim</application>
+をインストールしました。
+エディタと言えば他にも<emphasis>たくさんの</emphasis>ものが存在し、例えば
+<application>Emacs</application>、
+<application>nano</application>、
+<application>Joe</application>
+などがあります。
+どなたでもインターネット (あるいは特に USENET) をちょっとでも調べてみると、すぐに行き着く話題があります。
+かつて激しく行われた論争です。
+特に <application>Vim</application> ユーザーと
+<application>Emacs</application> ユーザーの間に繰り広げられたものです！
 </para>
 @z
 
@@ -91,41 +93,50 @@ least one flame war, usually involving <application>Vim</application> and
   usual # or //.  This is correct, the syntax for
   <filename>vimrc</filename> is slightly unusual.</para>
 @y
-  <para>Note that the comment tags are " instead of the more
-  usual # or //.  This is correct, the syntax for
-  <filename>vimrc</filename> is slightly unusual.</para>
+<para>
+コメントを表す記号は、ごく普通には # や // が用いられますが、ここでは " であることに注意してください。
+これは誤りでもなんでもなく <filename>vimrc</filename>
+における文法が少々変わっているのです。
+</para>
 @z
 
 @x
   <para>Below you'll find a quick explanation of what each of the
   options in this example file means here:</para>
 @y
-  <para>Below you'll find a quick explanation of what each of the
-  options in this example file means here:</para>
+<para>
+以下に説明するのは、このファイル例に示している内容です。
+</para>
 @z
 
 @x
       <para><option>set columns=80</option>: This simply sets the
       number of columns used on the screen.</para>
 @y
-      <para><option>set columns=80</option>: This simply sets the
-      number of columns used on the screen.</para>
+<para>
+<option>set columns=80</option>:
+これは端末画面上での文字カラム数を定めるものです。
+</para>
 @z
 
 @x
       <para><option>set wrapmargin=8</option>: This is the number of
       characters from the right window border where wrapping starts.</para>
 @y
-      <para><option>set wrapmargin=8</option>: This is the number of
-      characters from the right window border where wrapping starts.</para>
+<para>
+<option>set wrapmargin=8</option>:
+これは、画面右端からどれくらいの文字数になったら、改行を始めるかを指定するものです。
+</para>
 @z
 
 @x
       <para><option>set ruler</option>: This makes <command>vim</command>
       show the current row and column at the bottom right of the screen.</para>
 @y
-      <para><option>set ruler</option>: This makes <command>vim</command>
-      show the current row and column at the bottom right of the screen.</para>
+<para>
+<option>set ruler</option>:
+これは <command>vim</command> の画面最下段の右端に、現在の行とカラム位置を表示するようにするものです。
+</para>
 @z
 
 @x
@@ -138,14 +149,14 @@ least one flame war, usually involving <application>Vim</application> and
   the User Manual Table of Contents.</para>
 @y
 <para>
-
-More information on the <emphasis>many</emphasis>
-<command>vim</command> options can be found by reading the help
-inside <command>vim</command> itself.  Do this by typing
-<command>:</command><option>help</option> in
-<command>vim</command> to get the general help, or by typing
-<command>:</command><option>help usr_toc.txt</option> to view
-the User Manual Table of Contents.
+<command>vim</command> には <emphasis>たくさん</emphasis>
+のオプションがあります。
+これに対する詳細な情報は <command>vim</command>
+の実行中にヘルプとして参照することができます。
+<command>vim</command> にて <command>:</command><option>help</option>
+と入力してください。ヘルプ画面が表示されます。
+または <command>:</command><option>help usr_toc.txt</option>
+と入力すれば、ユーザーマニュアルの目次を参照することもできます。
 </para>
 @z
 

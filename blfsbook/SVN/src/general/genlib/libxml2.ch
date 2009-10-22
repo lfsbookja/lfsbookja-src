@@ -14,18 +14,10 @@
 @z
 
 @x
-  <!ENTITY libxml2-download-http "http://xmlsoft.org/sources/libxml2-&libxml2-version;.tar.gz">
-  <!ENTITY libxml2-download-ftp  "ftp://xmlsoft.org/libxml2/libxml2-&libxml2-version;.tar.gz">
-  <!ENTITY libxml2-md5sum        "8f4fda3969237c2a33bdb1583b5d06b2">
-  <!ENTITY libxml2-size          "4.7 MB">
-  <!ENTITY libxml2-buildsize     "116 MB (additional 21 MB to run the full test suite)">
+  <!ENTITY libxml2-buildsize     "74 MB (additional 19 MB to run the full test suite)">
   <!ENTITY libxml2-time          "1.4 SBU (additional 0.3 SBU to run the full test suite)">
 @y
-  <!ENTITY libxml2-download-http "http://xmlsoft.org/sources/libxml2-&libxml2-version;.tar.gz">
-  <!ENTITY libxml2-download-ftp  "ftp://xmlsoft.org/libxml2/libxml2-&libxml2-version;.tar.gz">
-  <!ENTITY libxml2-md5sum        "8f4fda3969237c2a33bdb1583b5d06b2">
-  <!ENTITY libxml2-size          "4.7 MB">
-  <!ENTITY libxml2-buildsize     "116 MB (テストスイートをすべて実施するなら、さらに 21 MB)">
+  <!ENTITY libxml2-buildsize     "74 MB (テストスイートをすべて実施するなら、さらに 19 MB)">
   <!ENTITY libxml2-time          "1.4 SBU (テストスイートをすべて実施するなら、さらに 0.3 SBU)">
 @z
 
@@ -48,7 +40,7 @@ XML ファイルの処理に用いられます。
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -78,19 +70,19 @@ XML ファイルの処理に用いられます。
 @x
         <para>Estimated disk space required: &libxml2-buildsize;</para>
 @y
-        <para>必要ディスク容量: &libxml2-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &libxml2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libxml2-time;</para>
 @y
-        <para>概算ビルド時間: &libxml2-time;</para>
+        <para>&j-Estimatedbuildtime;: &libxml2-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">追加ダウンロード</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -121,7 +113,7 @@ XML ファイルの処理に用いられます。
     <application>Python</application> library module, additionally it is
     required to run the full suite of tests)</para>
 @y
-<bridgehead renderas="sect4">任意</bridgehead>
+<bridgehead renderas="sect4">&j-Optional;</bridgehead>
 <para role="optional"><xref linkend="python"/>
 (<application>Python</application>
 ライブラリモジュールをビルドしインストールする場合には必要です。
@@ -154,7 +146,7 @@ XML ファイルの処理に用いられます。
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libxml2"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/libxml2"/></para>
 @z
 
@@ -177,7 +169,7 @@ XML ファイルの処理に用いられます。
     commands:</para>
 @y
 <para>
-以下のコマンドを実行して <application>libxml2</application> をインストールします。
+以下のコマンドを実行して <application>libxml2</application> をビルドします。
 </para>
 @z
 
@@ -199,7 +191,7 @@ XML ファイルの処理に用いられます。
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -247,7 +239,7 @@ XML ファイルの処理に用いられます。
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -255,9 +247,9 @@ XML ファイルの処理に用いられます。
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -269,8 +261,9 @@ XML ファイルの処理に用いられます。
         /usr/share/gtk-doc/html/libxml2</seg>
 @y
         <seg>xml2-config, xmlcatalog, xmllint</seg>
-        <seg>libxml2.{so,a} and optionally, the libxml2mod.{so,a}
-        <application>Python</application> module</seg>
+        <seg>libxml2.{so,a} さらに任意として
+        <application>Python</application> モジュールの libxml2mod.{so,a}
+        </seg>
         <seg>/usr/include/libxml2, /usr/share/doc/libxml2-&libxml2-version;,
         /usr/share/doc/libxml2-python-&libxml2-version;,
         /usr/share/gtk-doc/html/libxml2</seg>
@@ -279,7 +272,7 @@ XML ファイルの処理に用いられます。
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x xml2-config
@@ -287,9 +280,12 @@ XML ファイルの処理に用いられます。
           compile and link programs that use
           <filename class='libraryfile'>libxml2</filename>.</para>
 @y
-          <para>determines the compile and linker flags that should be used to
-          compile and link programs that use
-          <filename class='libraryfile'>libxml2</filename>.</para>
+<para>
+
+determines the compile and linker flags that should be used to
+compile and link programs that use
+<filename class='libraryfile'>libxml2</filename>.
+</para>
 @z
 
 @x xmlcalalog
@@ -297,9 +293,7 @@ XML ファイルの処理に用いられます。
           and SGML catalogs.</para>
 @y
 <para>
-
-is used to monitor and manipulate XML
-and SGML catalogs.
+XML カタログや SGML カタログを監視したり操作するために利用します。
 </para>
 @z
 
@@ -308,9 +302,8 @@ and SGML catalogs.
           upon options) to detect errors in XML coding.</para>
 @y
 <para>
-
-parses XML files and outputs reports (based
-upon options) to detect errors in XML coding.
+XML ファイルを精査して (オプションの指示状況に従った) 結果報告を行います。
+XML 記述に誤りがあれば検出し報告します。
 </para>
 @z
 
@@ -319,8 +312,7 @@ upon options) to detect errors in XML coding.
           that use the XML format.</para>
 @y
 <para>
-libraries provide the functions for programs to parse files
-that use the XML format.
+XML 形式で書かれたファイルを精査するためのプログラム関数を提供するライブラリです。
 </para>
 @z
 

@@ -43,7 +43,7 @@ other Internet security standards into an application.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -73,19 +73,19 @@ other Internet security standards into an application.
 @x
         <para>Estimated disk space required: &nss-buildsize;</para>
 @y
-        <para>必要ディスク容量: &nss-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &nss-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &nss-time;</para>
 @y
-        <para>概算ビルド時間: &nss-time;</para>
+        <para>&j-Estimatedbuildtime;: &nss-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">追加のダウンロード</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -104,7 +104,7 @@ other Internet security standards into an application.
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="nspr"/></para>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="nspr"/></para>
 @z
 
@@ -113,7 +113,7 @@ other Internet security standards into an application.
     <para role="recommended"><xref linkend="sqlite"/> (internal sqlite is
     incompatable with existing or future installations)</para>
 @y
-    <bridgehead renderas="sect4">推奨</bridgehead>
+    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
     <para role="recommended"><xref linkend="sqlite"/> (internal sqlite is
     incompatable with existing or future installations)</para>
 @z
@@ -122,22 +122,24 @@ other Internet security standards into an application.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/nss"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/nss"/></para>
 @z
 
 @x
     <title>Installation of NSS</title>
 @y
-    <title>Installation of NSS</title>
+    <title>NSS のインストール</title>
 @z
 
 @x
     <para>Install <application>NSS</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>NSS</application> by running the following
-    commands:</para>
+<para>
+以下のコマンドを実行して
+<application>NSS</application> をビルドします。
+</para>
 @z
 
 @x
@@ -150,20 +152,25 @@ other Internet security standards into an application.
     e.g., <parameter>mydomain.com</parameter> and issue the following
     commands:</para>
 @y
-    <para>To test the results, you'll need to set the domain name of your
-    system in the <envar>DOMSUF</envar> environment variable. Most of the tests
-    will fail if you don't provide the correct domain name. A self-generated
-    log file will be parsed at the end of the test to display how many tests
-    passed. It should return 800. To run the tests, ensure you change the
-    <command>export DOMSUF</command> command below to an appropriate value,
-    e.g., <parameter>mydomain.com</parameter> and issue the following
-    commands:</para>
+<para>
+
+To test the results, you'll need to set the domain name of your
+system in the <envar>DOMSUF</envar> environment variable. Most of the tests
+will fail if you don't provide the correct domain name. A self-generated
+log file will be parsed at the end of the test to display how many tests
+passed. It should return 800. To run the tests, ensure you change the
+<command>export DOMSUF</command> command below to an appropriate value,
+e.g., <parameter>mydomain.com</parameter> and issue the following
+commands:
+</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+<para>
+<systemitem class="username">root</systemitem> になって以下を実行します。
+</para>
 @z
 
 @x
@@ -171,15 +178,18 @@ other Internet security standards into an application.
     shell started at the beginning of the installation to restore the
     environment to the original state.</para>
 @y
-    <para>Now as the unprivileged user, exit the <command>bash</command>
-    shell started at the beginning of the installation to restore the
-    environment to the original state.</para>
+<para>
+
+Now as the unprivileged user, exit the <command>bash</command>
+shell started at the beginning of the installation to restore the
+environment to the original state.
+</para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -188,10 +198,14 @@ other Internet security standards into an application.
     serves the purpose of restoring the environment and returning back to the
     original directory when the installation is complete.</para>
 @y
-    <para><command>bash</command>: Shells are started as many environment
-    variables are created during the installation process. Exiting the shells
-    serves the purpose of restoring the environment and returning back to the
-    original directory when the installation is complete.</para>
+<para>
+<command>bash</command>:
+
+Shells are started as many environment
+variables are created during the installation process. Exiting the shells
+serves the purpose of restoring the environment and returning back to the
+original directory when the installation is complete.
+</para>
 @z
 
 @x
@@ -199,17 +213,25 @@ other Internet security standards into an application.
     the build is performed with no debugging symbols built into the binaries
     and that the default compiler optimizations are used.</para>
 @y
-    <para><command>export BUILD_OPT=1</command>: This variable is set so that
-    the build is performed with no debugging symbols built into the binaries
-    and that the default compiler optimizations are used.</para>
+<para>
+<command>export BUILD_OPT=1</command>:
+
+This variable is set so that
+the build is performed with no debugging symbols built into the binaries
+and that the default compiler optimizations are used.
+</para>
 @z
 
 @x
     <para><command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>: This 
     command sets the location of the nspr headers.</para>
 @y
-    <para><command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>: This 
-    command sets the location of the nspr headers.</para>
+<para>
+<command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>:
+
+This 
+command sets the location of the nspr headers.
+</para>
 @z
 
 @x
@@ -217,17 +239,25 @@ other Internet security standards into an application.
     the system installed libraries are used instead of the in-tree
     versions.</para> 
 @y
-    <para><command>export USE_SYSTEM_*</command>: These commands ensure that
-    the system installed libraries are used instead of the in-tree
-    versions.</para> 
+<para>
+<command>export USE_SYSTEM_*</command>:
+
+These commands ensure that
+the system installed libraries are used instead of the in-tree
+versions.
+</para> 
 @z
 
 @x
     <para><command>export ZLIB_LIBS=-lz</command>: This command provides the
     needed linker flags to link to the system zlib.</para>
 @y
-    <para><command>export ZLIB_LIBS=-lz</command>: This command provides the
-    needed linker flags to link to the system zlib.</para>
+<para>
+<command>export ZLIB_LIBS=-lz</command>:
+
+This command provides the
+needed linker flags to link to the system zlib.
+</para>
 @z
 
 @x
@@ -273,7 +303,7 @@ other Internet security standards into an application.
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -281,9 +311,9 @@ other Internet security standards into an application.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -296,21 +326,24 @@ other Internet security standards into an application.
         <seg>nss-config</seg>
         <seg>libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so,
         libnssdbm3.so, libnssutil3.so, libsmime3.so, libsoftokn3.so
-        and libssl3.so</seg>
+        libssl3.so</seg>
         <seg>/usr/include/nss</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x nss-config
           <para>is used to determine the NSS library settings
           of the installed NSS libraries.</para>
 @y
-          <para>is used to determine the NSS library settings
-          of the installed NSS libraries.</para>
+<para>
+
+is used to determine the NSS library settings
+of the installed NSS libraries.
+</para>
 @z
 

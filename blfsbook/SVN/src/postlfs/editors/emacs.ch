@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -24,7 +33,7 @@ customizable, self-documenting real-time display editor.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package 情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -54,13 +63,13 @@ customizable, self-documenting real-time display editor.
 @x
         <para>Estimated disk space required: &emacs-buildsize;</para>
 @y
-        <para>概算ディスク容量: &emacs-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &emacs-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &emacs-time;</para>
 @y
-        <para>概算ビルド時間: &emacs-time;</para>
+        <para>&j-Estimatedbuildtime;: &emacs-time;</para>
 @z
 
 @x
@@ -72,14 +81,14 @@ customizable, self-documenting real-time display editor.
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/emacs"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/emacs"/></para>
 @z
 
@@ -101,27 +110,36 @@ customizable, self-documenting real-time display editor.
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+<para>
+&j-notTestSuite;
+</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+<para>
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
     <para><option>--libexecdir=/usr/lib</option>: Place library
     executables in a Filesystem Hierarchy Standard (FHS) location.</para>
 @y
-    <para><option>--libexecdir=/usr/lib</option>: Place library
-    executables in a Filesystem Hierarchy Standard (FHS) location.</para>
+<para>
+<option>--libexecdir=/usr/lib</option>:
+
+Place library
+executables in a Filesystem Hierarchy Standard (FHS) location.
+</para>
 @z
 
 @x
@@ -137,7 +155,7 @@ customizable, self-documenting real-time display editor.
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -145,9 +163,9 @@ customizable, self-documenting real-time display editor.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -165,6 +183,6 @@ customizable, self-documenting real-time display editor.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 

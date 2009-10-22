@@ -7,7 +7,7 @@
 @x
   <title>Other Server Software</title>
 @y
-  <title>その他のサーバー・ソフトウェア</title>
+  <title>その他のサーバーソフトウェア</title>
 @z
 
 @x

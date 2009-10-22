@@ -40,7 +40,7 @@ restricting client access to the display.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,13 +70,13 @@ restricting client access to the display.
 @x
         <para>Estimated disk space required: &libXau-buildsize;</para>
 @y
-        <para>必要ディスク容量: &libXau-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &libXau-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libXau-time;</para>
 @y
-        <para>概算ビルド時間: &libXau-time;</para>
+        <para>&j-Estimatedbuildtime;: &libXau-time;</para>
 @z
 
 @x
@@ -88,14 +88,14 @@ restricting client access to the display.
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libXau"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/libXau"/></para>
 @z
 
@@ -110,8 +110,8 @@ restricting client access to the display.
     commands:</para>
 @y
 <para>
-<application>libXau</application>
-をビルドするために以下を実行します。
+以下のコマンドを実行して
+<application>libXau</application> をビルドします。
 </para>
 @z
 
@@ -119,8 +119,8 @@ restricting client access to the display.
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
 <para>
-コンパイル結果をテストする場合は <command>make check</command>
-を実行します。
+ビルド結果をテストする場合は
+<command>make check</command> を実行します。
 </para>
 @z
 
@@ -128,27 +128,27 @@ restricting client access to the display.
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-
-Now, as the <systemitem class="username">root</systemitem> user:
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行します。
 </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
       <segtitle>Installed Library</segtitle>
 @y
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x libXau-x7

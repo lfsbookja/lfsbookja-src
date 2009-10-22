@@ -36,7 +36,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -66,13 +66,13 @@
 @x
         <para>Estimated disk space required: &libxslt-buildsize;</para>
 @y
-        <para>必要ディスク容量: &libxslt-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &libxslt-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libxslt-time;</para>
 @y
-        <para>概算ビルド時間: &libxslt-time;</para>
+        <para>&j-Estimatedbuildtime;: &libxslt-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="libxml2"/></para>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="libxml2"/></para>
 @z
 
@@ -94,7 +94,7 @@
     <para role="optional"><xref linkend="python"/> and
     <xref linkend="libgcrypt"/></para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="python"/>,
     <xref linkend="libgcrypt"/></para>
 @z
@@ -103,7 +103,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libxslt"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/libxslt"/></para>
 @z
 
@@ -118,8 +118,8 @@
     commands:</para>
 @y
 <para>
-以下のコマンドを実行して <application>libxslt</application>
-をビルドします。
+以下のコマンドを実行して
+<application>libxslt</application> をビルドします。
 </para>
 @z
 
@@ -144,7 +144,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -152,9 +152,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -167,8 +167,8 @@
         /usr/share/doc/libxslt-python-&libxslt-version;</seg>
 @y
         <seg>xslt-config, xsltproc</seg>
-        <seg>libexslt.{so,a}, libxslt.{so,a} またオプションで libxsltmod.{so,a}
-        <application>Python</application> モジュール</seg>
+        <seg>libexslt.{so,a}, libxslt.{so,a} さらに任意として
+        <application>Python</application> モジュールの libxsltmod.{so,a}</seg>
         <seg>/usr/include/lib{e}xslt,
         /usr/lib/libxslt-plugins,
         /usr/share/doc/libxslt-&libxslt-version;,
@@ -178,7 +178,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x xslt-config

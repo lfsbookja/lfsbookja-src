@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -26,7 +35,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -56,20 +65,20 @@
 @x
         <para>Estimated disk space required: &libjpeg-buildsize;</para>
 @y
-        <para>Estimated disk space required: &libjpeg-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &libjpeg-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libjpeg-time;</para>
 @y
-        <para>Estimated build time: &libjpeg-time;</para>
+        <para>&j-Estimatedbuildtime;: &libjpeg-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libjpeg"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/libjpeg"/></para>
 @z
 
@@ -84,8 +93,8 @@
     commands:</para>
 @y
 <para>
-<application>libjpeg</application>
-をインストールするために以下を実行します。
+以下のコマンドを実行して
+<application>libjpeg</application> をビルドします。
 </para>
 @z
 
@@ -93,8 +102,8 @@
     <para>To test the results, issue: <command>make test</command>.</para>
 @y
 <para>
-コンパイル結果をテストする場合は <command>make test</command>
-を実行してください。
+ビルド結果をテストする場合は
+<command>make test</command> を実行します。
 </para>
 @z
 
@@ -110,7 +119,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -118,9 +127,13 @@
     tell <application>libjpeg</application> to build both shared and static
     libraries.</para>
 @y
-    <para><parameter>--enable-static --enable-shared</parameter>: These switches
-    tell <application>libjpeg</application> to build both shared and static
-    libraries.</para>
+<para>
+<parameter>--enable-static --enable-shared</parameter>:
+
+These switches
+tell <application>libjpeg</application> to build both shared and static
+libraries.
+</para>
 @z
 
 @x
@@ -132,13 +145,13 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>設定情報</title>
+      <title>&j-ConfigInfo;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -146,9 +159,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -164,7 +177,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x cjpeg
@@ -211,7 +224,8 @@
           <para>library is used by many programs for reading and writing
           JPEG format files.</para>
 @y
-          <para>library is used by many programs for reading and writing
-          JPEG format files.</para>
+<para>
+JPEG フォーマットのファイルの読み書きを行うために、数多くのプログラムが利用するライブラリです。
+</para>
 @z
 

@@ -39,7 +39,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -69,20 +69,20 @@
 @x
         <para>Estimated disk space required: &pcre-buildsize;</para>
 @y
-        <para>必要ディスク容量: &pcre-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &pcre-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &pcre-time;</para>
 @y
-        <para>概算ビルド時間: &pcre-time;</para>
+        <para>&j-Estimatedbuildtime;: &pcre-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/pcre"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/pcre"/></para>
 @z
 
@@ -98,7 +98,7 @@
 @y
 <para>
 以下のコマンドを実行して <application>PCRE</application>
-をインストールします。
+をビルドします。
 </para>
 @z
 
@@ -108,7 +108,7 @@
     from the system.</para>
 @y
 <para>
-コンパイル結果をテストする場合は <command>make check</command>
+ビルド結果をテストする場合は <command>make check</command>
 を実行します。
 ただしロケール "fr_FR" がシステムに存在しない場合、テストのうち、３つめのセットは起動することができません。
 </para>
@@ -118,8 +118,7 @@
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 </para>
 @z
 
@@ -155,7 +154,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -223,7 +222,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -231,9 +230,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -249,7 +248,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x pcregrep
@@ -257,10 +256,8 @@
           <application>Perl</application> compatible regular expressions.</para>
 @y
 <para>
-<command>grep</command>
-コマンドと同等であり
-<application>Perl</application>
-互換の正規表現を扱います。
+<command>grep</command> コマンドと同等であり
+<application>Perl</application> 互換の正規表現を扱います。
 </para>
 @z
 
@@ -269,8 +266,7 @@
           regular expression.</para>
 @y
 <para>
-<application>Perl</application>
-互換の正規表現をテストします。
+<application>Perl</application> 互換の正規表現をテストします。
 </para>
 @z
 
@@ -279,8 +275,7 @@
           the <application>PCRE</application> libraries.</para>
 @y
 <para>
-プログラムのコンパイル中に
-<application>PCRE</application>
+プログラムのコンパイル中に <application>PCRE</application>
 ライブラリをリンクするために利用されます。
 </para>
 @z

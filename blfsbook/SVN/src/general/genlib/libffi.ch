@@ -37,7 +37,7 @@ description at run time.</para>
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -67,13 +67,13 @@ description at run time.</para>
 @x
         <para>Estimated disk space required: &libffi-buildsize;</para>
 @y
-        <para>必要ディスク容量: &libffi-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &libffi-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libffi-time;</para>
 @y
-        <para>概算ビルド時間: &libffi-time;</para>
+        <para>&j-Estimatedbuildtime;: &libffi-time;</para>
 @z
 
 @x
@@ -96,7 +96,7 @@ description at run time.</para>
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -112,7 +112,7 @@ description at run time.</para>
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -120,9 +120,9 @@ description at run time.</para>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -138,7 +138,7 @@ description at run time.</para>
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x libffi.{so,a}
@@ -146,8 +146,7 @@ description at run time.</para>
           functions.</para>
 @y
 <para>
-<application>libffi</application> API
-関数を提供します。
+<application>libffi</application> API 関数を提供します。
 </para>
 @z
 

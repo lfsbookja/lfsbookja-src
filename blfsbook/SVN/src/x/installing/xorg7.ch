@@ -43,7 +43,7 @@ standardized application interface (API).
   <para condition="html" role="usernotes">User Notes:
   <ulink url='&blfs-wiki;/Xorg7'/></para>
 @y
-  <para condition="html" role="usernotes">ユーザー情報:
+  <para condition="html" role="usernotes">&j-UserNotes;:
   <ulink url='&blfs-wiki;/Xorg7'/></para>
 @z
 

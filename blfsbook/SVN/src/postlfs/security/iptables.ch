@@ -44,7 +44,7 @@ form of a firewall.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -74,20 +74,20 @@ form of a firewall.
 @x
         <para>Estimated disk space required: &iptables-buildsize;</para>
 @y
-        <para>必要ディスク容量: &iptables-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &iptables-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &iptables-time;</para>
 @y
-        <para>概算ビルド時間: &iptables-time;</para>
+        <para>&j-Estimatedbuildtime;: &iptables-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/iptables"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/iptables"/></para>
 @z
 
@@ -178,7 +178,7 @@ code.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -186,15 +186,14 @@ code.
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-<title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -278,7 +277,7 @@ iptables によるファイヤウォールの設定を起動時に有効とす�
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -286,9 +285,9 @@ iptables によるファイヤウォールの設定を起動時に有効とす�
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -306,7 +305,7 @@ iptables によるファイヤウォールの設定を起動時に有効とす�
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x iptables

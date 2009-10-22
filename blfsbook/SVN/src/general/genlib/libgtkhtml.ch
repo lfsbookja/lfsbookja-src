@@ -35,7 +35,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,13 +65,13 @@
 @x
         <para>Estimated disk space required: &libgtkhtml-buildsize;</para>
 @y
-        <para>必要ディスク容量: &libgtkhtml-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &libgtkhtml-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libgtkhtml-time;</para>
 @y
-        <para>概算ビルド時間: &libgtkhtml-time;</para>
+        <para>&j-Estimatedbuildtime;: &libgtkhtml-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
     <para role="required"><xref linkend="gtk2"/> and
     <xref linkend="libxml2"/></para>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gtk2"/>,
     <xref linkend="libxml2"/></para>
 @z
@@ -95,7 +95,7 @@
     <para role="optional"><xref linkend="gail"/> and
     <xref linkend="gnome-vfs"/> (only used in the test suite)</para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="gail"/>,
     <xref linkend="gnome-vfs"/> (テストスイート実行時のみ必要)</para>
 @z
@@ -104,7 +104,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libgtkhtml"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/libgtkhtml"/></para>
 @z
 
@@ -130,7 +130,7 @@
     <command>( cd tests; ./testgtkhtml )</command></para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 ただしテストプログラムがあって、数多くのテストケースを実施することができます。
 これを実行したい場合は
 <command>( cd tests; ./testgtkhtml )</command>
@@ -150,7 +150,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -172,7 +172,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -180,9 +180,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -198,7 +198,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x libgtkhtml-2.{so,a}

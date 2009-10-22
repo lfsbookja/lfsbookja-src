@@ -35,7 +35,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,13 +65,13 @@
 @x
         <para>Estimated disk space required: &slang-buildsize;</para>
 @y
-        <para>必要ディスク容量: &slang-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &slang-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &slang-time;</para>
 @y
-        <para>概算ビルド時間: &slang-time;</para>
+        <para>&j-Estimatedbuildtime;: &slang-time;</para>
 @z
 
 @x
@@ -86,7 +86,7 @@
     <xref linkend="pcre"/>, and
     <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink></para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="libpng"/>,
     <xref linkend="pcre"/>,
     <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink></para>
@@ -96,7 +96,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/slang"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/slang"/></para>
 @z
 
@@ -111,8 +111,8 @@
     commands:</para>
 @y
 <para>
-以下のコマンドを実行して <application>S-Lang</application>
-をビルドします。
+以下のコマンドを実行して
+<application>S-Lang</application> をビルドします。
 </para>
 @z
 
@@ -122,10 +122,8 @@
     installed in the next step.</para>
 @y
 <para>
-
-To test the results, issue: <command>make check</command>. Note that
-this will also create a static version of the library which will then be
-installed in the next step.
+ビルド結果をテストする場合は <command>make check</command> を実行します。
+テストを行うとスタティックライブラリが生成されますので、これが次の作業を通じてインストールされることになります。
 </para>
 @z
 
@@ -133,15 +131,14 @@ installed in the next step.
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-
-Now, as the <systemitem class="username">root</systemitem> user:
+<systemitem class="username">root</systemitem> になって以下を実行します。
 </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -154,10 +151,8 @@ Now, as the <systemitem class="username">root</systemitem> user:
 <para>
 <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
 SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
-
-This command installs the static library as well as
-the dynamic shared version and related modules. It also changes the
-documentation installation directories to a versioned directory.
+このコマンドは、動的な共有ライブラリや関連モジュールをインストールし、さらにスタティックライブラリもインストールします。
+またドキュメントを収めるディレクトリの名前にバージョン番号をつけた上でドキュメントをインストールします。
 </para>
 @z
 
@@ -168,10 +163,10 @@ documentation installation directories to a versioned directory.
 @y
 <para>
 <option>--with-readline=gnu</option>:
-
-Use this parameter to use the
-Gnu <application>Readline</application> parser instead of the
-<application>S-Lang</application> internal version.
+このパラメータは <application>S-Lang</application>
+が内部に持っている <application>Readline</application>
+モジュールではなく Gnu <application>Readline</application>
+モジュールを利用することを指示します。
 </para>
 @z
 
@@ -186,7 +181,7 @@ Gnu <application>Readline</application> parser instead of the
       <para><filename>~/.slshrc</filename> and
       <filename>/etc/slsh.rc</filename></para>
 @y
-      <title>設定ファイル</title>
+      <title>&j-ConfigFiles;</title>
       <para><filename>~/.slshrc</filename>,
       <filename>/etc/slsh.rc</filename></para>
 @z
@@ -194,13 +189,13 @@ Gnu <application>Readline</application> parser instead of the
 @x
       <title>Configuration Information</title>
 @y
-      <title>設定情報</title>
+      <title>&j-ConfigInfo;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -208,9 +203,9 @@ Gnu <application>Readline</application> parser instead of the
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -228,7 +223,7 @@ Gnu <application>Readline</application> parser instead of the
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x slsh
@@ -239,12 +234,11 @@ Gnu <application>Readline</application> parser instead of the
           use.</para>
 @y
 <para>
-
-is a simple program for interpreting
-<application>S-Lang</application> scripts. It supports dynamic loading
-of <application>S-Lang</application> modules and includes a
-<application>Readline</application> interface for interactive
-use.
+<application>S-Lang</application>
+スクリプトを解釈する単純なプログラムです。
+これは <application>S-Lang</application>
+モジュールの動的ローディングをサポートし、対話的な操作時には
+<application>Readline</application> インターフェースも提供します。
 </para>
 @z
 

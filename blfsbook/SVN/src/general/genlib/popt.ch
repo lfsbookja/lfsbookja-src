@@ -31,16 +31,15 @@
     some programs to parse command-line options.</para>
 @y
 <para>
-<application>popt</application> パッケージは
-<application>popt</application>
-ライブラリを提供するもので、これはコマンドラインオプションを処理するプログラムが利用します。
+<application>popt</application> パッケージは <application>popt</application>
+ライブラリを提供するもので、コマンドラインオプションを処理するプログラムが利用します。
 </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,20 +69,20 @@
 @x
         <para>Estimated disk space required: &popt-buildsize;</para>
 @y
-        <para>必要ディスク容量: &popt-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &popt-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &popt-time;</para>
 @y
-        <para>概算ビルド時間: &popt-time;</para>
+        <para>&j-Estimatedbuildtime;: &popt-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/popt"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/popt"/></para>
 @z
 
@@ -109,7 +108,7 @@
 @y
 <para>
 <xref linkend="doxygen"/>
-をインストール済であって、API ドキュメントをビルドする場合は
+をインストール済であって API ドキュメントをビルドする場合は
 <command>doxygen</command> を実行します。
 </para>
 @z
@@ -146,7 +145,7 @@ API ドキュメントをビルドした場合は
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -154,9 +153,9 @@ API ドキュメントをビルドした場合は
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -172,7 +171,7 @@ API ドキュメントをビルドした場合は
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x libpopt

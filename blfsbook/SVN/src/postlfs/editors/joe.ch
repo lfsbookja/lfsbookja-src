@@ -35,7 +35,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,20 +65,20 @@
 @x
         <para>Estimated disk space required: &joe-buildsize;</para>
 @y
-        <para>必要ディスク容量: &joe-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &joe-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &joe-time;</para>
 @y
-        <para>概算ビルド時間: &joe-time;</para>
+        <para>&j-Estimatedbuildtime;: &joe-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/joe"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/joe"/></para>
 @z
 
@@ -102,7 +102,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -124,7 +124,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>設定ファイル</title>
+      <title>&j-ConfigFiles;</title>
 @z
 
 @x
@@ -142,7 +142,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -150,9 +150,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -168,7 +168,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x
@@ -176,8 +176,7 @@
           launch <application>Emacs</application> emulation mode.</para>
 @y
 <para>
-<command>joe</command>
-へのシンボリックリンクであり
+<command>joe</command> へのシンボリックリンクであり
 <application>Emacs</application>
 エミュレーションモードで起動します。
 </para>

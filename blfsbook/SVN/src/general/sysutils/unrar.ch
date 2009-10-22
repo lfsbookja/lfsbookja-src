@@ -47,7 +47,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -77,20 +77,20 @@
 @x
         <para>Estimated disk space required: &unrar-buildsize;</para>
 @y
-        <para>必要ディスク容量: &unrar-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &unrar-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &unrar-time;</para>
 @y
-        <para>概算ビルド時間: &unrar-time;</para>
+        <para>&j-Estimatedbuildtime;: &unrar-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/unrar"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/unrar"/></para>
 @z
 
@@ -114,7 +114,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -130,7 +130,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -138,9 +138,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -156,15 +156,14 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x unrar
           <para>uncompresses a <filename>RAR</filename> archive.</para>
 @y
 <para>
-<filename>RAR</filename>
-形式アーカイブを解凍します。
+<filename>RAR</filename> 形式アーカイブを解凍します。
 </para>
 @z
 

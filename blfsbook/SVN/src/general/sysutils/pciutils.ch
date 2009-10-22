@@ -62,7 +62,7 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -92,20 +92,20 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
 @x
         <para>Estimated disk space required: &pciutils-buildsize;</para>
 @y
-        <para>必要ディスク容量: &pciutils-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &pciutils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &pciutils-time;</para>
 @y
-        <para>概算ビルド時間: &pciutils-time;</para>
+        <para>&j-Estimatedbuildtime;: &pciutils-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/pciutils"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/pciutils"/></para>
 @z
 
@@ -129,7 +129,7 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -158,7 +158,7 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -223,7 +223,7 @@ periodically.
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -231,9 +231,9 @@ periodically.
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -249,7 +249,7 @@ periodically.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x lspci

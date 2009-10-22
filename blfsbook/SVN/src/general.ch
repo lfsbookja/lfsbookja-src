@@ -1,7 +1,40 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <!ENTITY copyholder   "The BLFS Development Team">
 @y
 <!ENTITY copyholder   "BLFS 開発チーム">
+@z
+
+@x
+<!ENTITY lfs-domainname       "linuxfromscratch.org">
+@y
+<!ENTITY lfs-domainname       "linuxfromscratch.org">
+
+<!ENTITY j-Estimateddiskspacerequired "必要ディスク容量">
+<!ENTITY j-Estimatedbuildtime         "概算ビルド時間">
+<!ENTITY j-Required             "必須">
+<!ENTITY j-Recommended          "推奨">
+<!ENTITY j-Optional             "任意">
+<!ENTITY j-UserNotes            "ユーザー情報">
+<!ENTITY j-PackageInformation   "パッケージ情報">
+<!ENTITY j-AdditionalDownloads  "追加のダウンロード">
+<!ENTITY j-notTestSuite         "このパッケージにテストスイートはありません。">
+<!ENTITY j-CommandExplanations  "コマンド説明">
+<!ENTITY j-ConfigFiles          "設定ファイル">
+<!ENTITY j-ConfigInfo           "設定情報">
+<!ENTITY j-Contents             "パッケージ構成">
+<!ENTITY j-InstalledPrograms    "インストールプログラム">
+<!ENTITY j-InstalledLibraries   "インストールライブラリ">
+<!ENTITY j-InstalledDirectories "インストールディレクトリ">
+<!ENTITY j-ShortDescriptions    "概略説明">
 @z
 
 @x

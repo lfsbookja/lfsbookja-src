@@ -39,7 +39,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -94,7 +94,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
         <para>Estimated disk space required: &xulrunner-buildsize; (using
         recommended dependencies)</para>
 @y
-        <para>必要ディスク容量: &xulrunner-buildsize; (using
+        <para>&j-Estimateddiskspacerequired;: &xulrunner-buildsize; (using
         recommended dependencies)</para>
 @z
 
@@ -102,14 +102,14 @@ tarball が大きなサイズであるため、同じものを二度もダウン
         <para>Estimated build time: &xulrunner-time; (using recommended
         dependencies)</para>
 @y
-        <para>概算ビルド時間: &xulrunner-time; (using recommended
+        <para>&j-Estimatedbuildtime;: &xulrunner-time; (using recommended
         dependencies)</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">追加ダウンロード</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -138,7 +138,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <xref linkend="python"/>, and
     <xref linkend="zip"/></para>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="alsa-lib"/>
     <xref linkend="gtk2"/>,
     <xref linkend="libidl"/>,
@@ -168,7 +168,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <para role="recommended"><xref linkend="sqlite"/> (internal sqlite is
     incompatable with existing or future installations)</para>
 @y
-    <bridgehead renderas="sect4">推奨</bridgehead>
+    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
     <para role="recommended"><xref linkend="sqlite"/>
     (internal sqlite is
     incompatable with existing or future installations)</para>
@@ -193,7 +193,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     jemalloc code), and
     <xref linkend="wget"/></para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <xref linkend="doxygen"/>,
     <xref linkend="curl"/> (crash-reporter 構築時のみ必要),
@@ -214,7 +214,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/xulrunner"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/xulrunner"/></para>
 @z
 
@@ -279,7 +279,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -289,7 +289,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @y
 <para>
 <systemitem class="username">root</systemitem>
-ユーザーでログインしてパッケージをインストールします。
+ユーザーになってパッケージをインストールします。
 </para>
 @z
 
@@ -309,7 +309,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド情報</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -390,7 +390,7 @@ new plugin directory.
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -398,9 +398,9 @@ new plugin directory.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -413,9 +413,15 @@ new plugin directory.
         /usr/lib/xulrunner-devel-&xulrunner-version;</seg>
 @y
         <seg>xulrunner</seg>
-        <seg>Numerous libraries, browser components, plugins, extensions, and
-        helper modules installed in <filename
-        class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename></seg>
+        <seg>
+        数々のライブラリ、
+        ブラウザコンポーネント、
+        プラグイン、
+        機能拡張モジュール、
+        ヘルパーモジュール、
+        <filename class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename>
+        にインストールされる。
+        </seg>
         <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-devel-&xulrunner-version;</seg>
@@ -431,7 +437,10 @@ new plugin directory.
           <para>is a shell script, useful for identifying the version
           installed.</para>
 @y
-          <para>is a shell script, useful for identifying the version
-          installed.</para>
+<para>
+
+is a shell script, useful for identifying the version
+installed.
+</para>
 @z
 

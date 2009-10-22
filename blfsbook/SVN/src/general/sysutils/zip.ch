@@ -36,7 +36,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -66,20 +66,20 @@
 @x
         <para>Estimated disk space required: &zip-buildsize;</para>
 @y
-        <para>必要ディスク容量: &zip-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &zip-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &zip-time;</para>
 @y
-        <para>概算ビルド時間: &zip-time;</para>
+        <para>&j-Estimatedbuildtime;: &zip-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/zip"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/zip"/></para>
 @z
 
@@ -103,7 +103,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-このパッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -119,7 +119,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -146,7 +146,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -154,9 +154,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -172,15 +172,14 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x zip
           <para>compresses files into a <filename>ZIP</filename> archive.</para>
 @y
 <para>
-<filename>ZIP</filename>
-アーカイブとしてファイルを圧縮します。
+<filename>ZIP</filename> アーカイブとしてファイルを圧縮します。
 </para>
 @z
 
@@ -188,8 +187,7 @@
           <para>is a utility to encrypt and decrypt a <filename>ZIP</filename> archive.</para>
 @y
 <para>
-<filename>ZIP</filename>
-アーカイブの暗号化と復号化を行います。
+<filename>ZIP</filename> アーカイブの暗号化と復号化を行います。
 </para>
 @z
 
@@ -208,8 +206,7 @@
           smaller files.</para>
 @y
 <para>
-<filename>ZIP</filename>
-ファイルを、容量の小さなファイルに分割します。
+<filename>ZIP</filename> ファイルを容量の小さなファイルに分割します。
 </para>
 @z
 

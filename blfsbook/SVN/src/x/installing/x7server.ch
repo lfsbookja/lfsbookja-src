@@ -38,7 +38,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -68,13 +68,13 @@
 @x
         <para>Estimated disk space required: &xorg-server-buildsize;</para>
 @y
-        <para>必要ディスク容量: &xorg-server-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &xorg-server-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &xorg-server-time;</para>
 @y
-        <para>概算ビルド時間: &xorg-server-time;</para>
+        <para>&j-Estimatedbuildtime;: &xorg-server-time;</para>
 @z
 
 @x
@@ -89,7 +89,7 @@
     <xref linkend="xorg7-font"/>, and
     <xref linkend="xkeyboard-config"/></para>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="pixman"/>,
     <xref linkend="xorg7-font"/>,
     <xref linkend="xkeyboard-config"/></para>
@@ -100,7 +100,7 @@
     <para role="recommended"><xref linkend="hal"/> (required for hotplugging of
     input devices), and <xref linkend="mesalib"/> (required for DRI)</para>
 @y
-    <bridgehead renderas="sect4">推奨</bridgehead>
+    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
     <para role="recommended"><xref linkend="hal"/>
     (入力デバイスのホットプラグ対応において必要), 
     <xref linkend="mesalib"/> (DRI において必要)</para>
@@ -109,14 +109,14 @@
 @x
 <bridgehead renderas="sect4">Optional</bridgehead>
 @y
-<bridgehead renderas="sect4">任意</bridgehead>
+<bridgehead renderas="sect4">&j-Optional;</bridgehead>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/Xorg7Server'/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url='&blfs-wiki;/Xorg7Server'/></para>
 @z
 
@@ -138,7 +138,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-本パッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -155,7 +155,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -217,7 +217,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -225,9 +225,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -248,7 +248,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x cvt-x7

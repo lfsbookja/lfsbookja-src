@@ -33,7 +33,7 @@ C library for parsing XML.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -63,20 +63,20 @@ C library for parsing XML.
 @x
         <para>Estimated disk space required: &expat-buildsize;</para>
 @y
-        <para>必要ディスク容量: &expat-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &expat-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &expat-time;</para>
 @y
-        <para>概算ビルド時間: &expat-time;</para>
+        <para>&j-Estimatedbuildtime;: &expat-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/expat"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/expat"/></para>
 @z
 
@@ -112,7 +112,7 @@ commands:
     installed.</para>
 @y
 <para>
-コンパイル結果をテストする場合は、一般ユーザーで <command>make check</command>
+ビルド結果をテストする場合は、一般ユーザーで <command>make check</command>
 を実行します。
 ただしこれはパッケージをインストールした後に行う必要があります。
 </para>
@@ -121,7 +121,7 @@ commands:
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -129,9 +129,9 @@ commands:
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -147,7 +147,7 @@ commands:
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x xmlwf

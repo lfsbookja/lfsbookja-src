@@ -50,7 +50,7 @@ legacy X11R6 installation methods.</para>
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -80,19 +80,19 @@ legacy X11R6 installation methods.</para>
 @x
         <para>Estimated disk space required: &x7utils-buildsize;</para>
 @y
-        <para>必要ディスク容量: &x7utils-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &x7utils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &x7utils-time;</para>
 @y
-        <para>概算ビルド時間: &x7utils-time;</para>
+        <para>&j-Estimatedbuildtime;: &x7utils-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">追加のダウンロード</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -110,14 +110,14 @@ legacy X11R6 installation methods.</para>
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/Xorg7Utilities'/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url='&blfs-wiki;/Xorg7Utilities'/></para>
 @z
 
@@ -173,7 +173,7 @@ Xorg ユーティリティをビルドするために、個々のパッケージ
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -181,9 +181,9 @@ Xorg ユーティリティをビルドするために、個々のパッケージ
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -203,7 +203,7 @@ Xorg ユーティリティをビルドするために、個々のパッケージ
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x ccmakedep

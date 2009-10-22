@@ -35,7 +35,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">パッケージ情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,19 +65,19 @@
 @x
         <para>Estimated disk space required: &cracklib-buildsize;</para>
 @y
-        <para>必要ディスク容量: &cracklib-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &cracklib-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &cracklib-time;</para>
 @y
-        <para>概算ビルド時間: &cracklib-time;</para>
+        <para>&j-Estimatedbuildtime;: &cracklib-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">追加のダウンロード</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -169,7 +169,7 @@ combinations</quote> that make bad passwords.
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="python"/></para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="python"/></para>
 @z
 
@@ -177,7 +177,7 @@ combinations</quote> that make bad passwords.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/cracklib"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/cracklib"/></para>
 @z
 
@@ -267,7 +267,7 @@ password support on your system. If you are now going to install the
 @x
     <title>Command Explanations</title>
 @y
-    <title>コマンド説明</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -364,7 +364,7 @@ password support on your system. If you are now going to install the
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -372,9 +372,9 @@ password support on your system. If you are now going to install the
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -394,7 +394,7 @@ password support on your system. If you are now going to install the
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x create-cracklib-dict
