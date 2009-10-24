@@ -184,6 +184,20 @@
 @z
 
 @x
+      <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grep-debian-patch;"/></para>
@@ -222,6 +236,20 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&grub-inode-patch;"/></para>
         <para>MD5 sum: <literal>&grub-inode-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
+        <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
+        <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
       </listitem>
 @z
 
