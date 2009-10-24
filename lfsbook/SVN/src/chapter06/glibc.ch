@@ -122,9 +122,20 @@ tarball を Glibc のソースディレクトリにて解凍します。
 が定める文法書式により構成されています。
 デフォルトで記述されているインタープリタを <command>/bin/bash</command>
 に変更します。
-BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">Shells</ulink>
+BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink>
 で説明しているように、別の <command>/bin/sh</command>
 がインストールされている場合もあるからです。
+</para>
+@z
+
+@x
+    <para>Apply a patch so that Glibc will build against
+    Binutils-&binutils-version;:</para>
+@y
+<para>
+以下のパッチを当てることで
+Binutils-&binutils-version;
+に応じて Glibc をビルドするようにします。
 </para>
 @z
 
@@ -894,10 +905,10 @@ Glibc が内部的に利用するもので
           Engineers (IEEE). The default is POSIX.1 error handling</para>
 @y
 <para>
-
-Linking in this module forces error handling rules for math
-functions as defined by the Institute of Electrical and Electronic
-Engineers (IEEE). The default is POSIX.1 error handling
+このモジュールをリンクすると、数学関数におけるエラー制御方法を IEEE
+(the Institute of Electrical and Electronic Engineers)
+が定義するものに従うようになります。
+デフォルトは POSIX.1 エラー制御方法です。
 </para>
 @z
 

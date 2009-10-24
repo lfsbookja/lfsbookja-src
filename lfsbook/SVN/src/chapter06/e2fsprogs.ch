@@ -301,6 +301,14 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
 </para>
 @z
 
+@x e2freefrag
+          <para> Reports free space fragmentation information</para>
+@y
+<para>
+空きディスク部分のフラグメンテーションに関する情報を表示します。
+</para>
+@z
+
 @x e2fsck
           <para>Is used to check, and optionally repair <systemitem
           class="filesystem">ext2</systemitem> file systems and <systemitem

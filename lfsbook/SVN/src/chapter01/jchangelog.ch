@@ -50,6 +50,27 @@
 -->
 
     <listitem>
+      <para>2009-10-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter05/glibc.ch,
+          src/chapter06/{e2fsprogs.ch,glibc.ch,gettext.ch,kbd.ch}:
+          訳出漏れ修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/appendices/dependencies.ch: 微修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter05/{coreutils.ch,gawk.ch,gettext.ch,findutils.ch}:
+          さくいん出力 (indexterm タグ) での訳出漏れ修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-10-21</para>
       <itemizedlist>
         <listitem>

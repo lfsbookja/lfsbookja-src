@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -788,7 +797,7 @@ Type ですが日本語訳にはほとんど影響ありません。
 @x Patch
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, and Sed</seg>
+         <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
 @z
 @x
           <seg>No testsuite available</seg>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -5,9 +14,32 @@
 @z
 
 @x
+  <indexterm zone="ch-tools-glibc">
+    <primary sortas="a-Glibc">Glibc</primary>
+    <secondary>tools</secondary>
+  </indexterm>
+@y
+  <indexterm zone="ch-tools-glibc">
+    <primary sortas="a-Glibc">Glibc</primary>
+    <secondary>ツール</secondary>
+  </indexterm>
+@z
+
+@x
     <title>Installation of Glibc</title>
 @y
     <title>Glibc のインストール</title>
+@z
+
+@x
+    <para>Apply a patch so that Glibc will build against
+    Binutils-&binutils-version;:</para>
+@y
+<para>
+以下のパッチを当てることで
+Binutils-&binutils-version;
+に応じて Glibc をビルドするようにします。
+</para>
 @z
 
 @x

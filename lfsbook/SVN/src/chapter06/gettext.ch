@@ -314,9 +314,8 @@ Gettext 標準のインフラストラクチャーファイル (infrastructure f
           grammatical form depends on a number</para>
 @y
 <para>
-
-Displays native language translations of a textual message whose
-grammatical form depends on a number
+出力メッセージをユーザーの利用言語に変換します。
+特に複数形のメッセージを取り扱います。
 </para>
 @z
 
