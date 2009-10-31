@@ -57,6 +57,35 @@
 @z
 
 @x
+      <para>2009-10-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Upgraded to GRUB-1.97.  Split the
+          build/install portion from the configuration of /boot and 
+          the mbr and placed the build portion in Chapter 6. 
+          Expanded the discussion about the /boot mbr portion in Chapter 8.
+          Fixes <ulink url="&lfs-ticket-root;2093">#2093</ulink>.
+          This also eliminates the need for an initramfs as
+          specified in 
+          <ulink url="&lfs-ticket-root;2033">#2033</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-10-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] GRUB-1.97 へのアップデート。
+          /boot や MBR の設定の説明から、ビルドとインストールに関する記述を分離させ、ビルドの説明を第6章に。
+          また /boot や MBR に関する説明を充足させ第8章に。
+          <ulink url="&lfs-ticket-root;2093">#2093</ulink> を Fix に。
+          これは <ulink url="&lfs-ticket-root;2033">#2033</ulink>
+          で指摘されている initramfs が不要とすることでもある。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-10-20</para>
       <itemizedlist>
         <listitem>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -184,11 +193,17 @@ menuconfig の ncurses による行表示を適切に行うために必要とな
 @z
 
 @x
-    <para>The path to the kernel image may vary depending on the platform
-    being used. The following command assumes an x86 architecture:</para>
+    <para>The path to the kernel image may vary depending on the platform being
+    used. The filename below can be changed to suit your taste, but the stem of
+    the filename should be <emphasis>vmlinux</emphasis> to be compatible with
+    the automatic setup of the boot process described in the next section.  The
+    following command assumes an x86 architecture:</para>
 @y
 <para>
-カーネルイメージへのパスは、利用しているプラットフォームによって様々です。
+カーネルイメージへのパスは、利用しているプラットフォームによってさまざまです。
+そのファイル名は、好みにより自由に変更して構いません。
+ただし <emphasis>vmlinux</emphasis> という語は必ず含めてください。
+これにより、次節で説明するブートプロセスを自動的に設定するために必要なことです。
 以下のコマンドは x86 アーキテクチャの場合の例です。
 </para>
 @z

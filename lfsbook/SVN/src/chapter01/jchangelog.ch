@@ -50,6 +50,17 @@
 -->
 
     <listitem>
+      <para>2009-10-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, src/chapter06/grub.ch, src/chapter08/{grub.ch, kernel.ch}:
+          SVN-20091029 r9091 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-10-24</para>
       <itemizedlist>
         <listitem>
