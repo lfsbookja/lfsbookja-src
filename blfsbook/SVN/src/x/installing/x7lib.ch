@@ -105,14 +105,12 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="ed"/>,
     <xref linkend="fontconfig"/>,
-    <!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="xorg7-proto"/>, and
     <xref linkend="libXdmcp"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="ed"/>,
     <xref linkend="fontconfig"/>,
-    <!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="xorg7-proto"/>,
     <xref linkend="libXdmcp"/></para>
 @z

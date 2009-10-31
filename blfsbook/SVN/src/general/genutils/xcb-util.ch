@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY xcb-util-time          "less than 0.1 SBU">
-@y
-  <!ENTITY xcb-util-time          "0.1 SBU 以下">
-@z
-
-@x
     <title>Introduction to xcb-util</title>
 @y
     <title>xcb-util の概要</title>

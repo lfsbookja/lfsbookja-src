@@ -139,16 +139,16 @@ packages.</para>
 @x
   <para>Additionally, because of the large number of repetitive commands,
   you are encouraged to partially automate the build.  The commands below
-  (or similar) can be entered at the command line to compile each group of
-  packages (proto, utils, libs, apps, drivers).  The wiki links on each
-  group's page contain specific commands to compile the entire group of
+  (or similar) can be entered at the command line to compile each
+  section (proto, util, lib, app, driver).  The wiki links on each
+  section's page contain specific commands to compile the entire group of
   packages, based on the content of the wget files.</para>
 @y
   <para>Additionally, because of the large number of repetitive commands,
   you are encouraged to partially automate the build.  The commands below
-  (or similar) can be entered at the command line to compile each group of
-  packages (proto, utils, libs, apps, drivers).  The wiki links on each
-  group's page contain specific commands to compile the entire group of
+  (or similar) can be entered at the command line to compile each
+  section (proto, util, lib, app, driver).  The wiki links on each
+  section's page contain specific commands to compile the entire group of
   packages, based on the content of the wget files.</para>
 @z
 

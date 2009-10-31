@@ -62,12 +62,12 @@ Set an environment variable to resolve the prefix destination.
 
 @x
   <para>If you created the symbolic link, change all instances of <filename
-  class='directory'>/opt/gnome-&gnome-old-version;&gnome-minor-version;</filename>
+  class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>
   to <filename class='directory'>/opt/gnome</filename> in the instructions
   below.</para>
 @y
   <para>If you created the symbolic link, change all instances of <filename
-  class='directory'>/opt/gnome-&gnome-old-version;&gnome-minor-version;</filename>
+  class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>
   to <filename class='directory'>/opt/gnome</filename> in the instructions
   below.</para>
 @z
