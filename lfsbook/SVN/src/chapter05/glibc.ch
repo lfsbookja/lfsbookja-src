@@ -31,26 +31,26 @@
     <title>Glibc のインストール</title>
 @z
 
-@x
-    <para>Apply a patch so that Glibc will build against
-    Binutils-&binutils-version;:</para>
-@y
-<para>
-以下のパッチを当てることで
-Binutils-&binutils-version;
-に応じて Glibc をビルドするようにします。
-</para>
-@z
-
-@x
-    <para>Fix an error in the constants that get passed to the futex system
-    call in some cases, causing certain pthread_mutex operations to fail:</para>
-@y
-<para>
-futex システムコールに受け渡される定数値がエラーを引き起こす場合があるため修正します。
-これを行っておかないと pthread_mutex の処理が失敗します。
-</para>
-@z
+% @x
+%     <para>Apply a patch so that Glibc will build against
+%     Binutils-&binutils-version;:</para>
+% @y
+% <para>
+% 以下のパッチを当てることで
+% Binutils-&binutils-version;
+% に応じて Glibc をビルドするようにします。
+% </para>
+% @z
+% 
+% @x
+%     <para>Fix an error in the constants that get passed to the futex system
+%     call in some cases, causing certain pthread_mutex operations to fail:</para>
+% @y
+% <para>
+% futex システムコールに受け渡される定数値がエラーを引き起こす場合があるため修正します。
+% これを行っておかないと pthread_mutex の処理が失敗します。
+% </para>
+% @z
 
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source

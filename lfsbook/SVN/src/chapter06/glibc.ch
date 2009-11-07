@@ -72,23 +72,23 @@ Glibc は自らによってビルドされるものであり、そうして完�
 </para>
 @z
 
-@x
-    <para>The glibc-libidn tarball adds support for internationalized domain
-    names (IDN) to Glibc. Many programs that support IDN require the full
-    <filename class="libraryfile">libidn</filename> library, not this add-on (see
-    <ulink url="&blfs-root;view/svn/general/libidn.html"/>).
-    Unpack the tarball from within the Glibc source directory:</para>
-@y
-<para>
-glibc-libidn という tarball は国際化ドメイン名 (Internationalized Domain Names; IDN)
-へのサポートを加えるものです。
-ただし IDN に対応するプログラムはたいていは 純粋な
-<filename class="libraryfile">libidn</filename>
-ライブラリを利用しており、ここで加える tarball を用いているわけではありません。
-(詳しくは <ulink url="&blfs-root;view/svn/general/libidn.html"/> を参照してください。)
-tarball を Glibc のソースディレクトリにて解凍します。
-</para>
-@z
+% @x
+%     <para>The glibc-libidn tarball adds support for internationalized domain
+%     names (IDN) to Glibc. Many programs that support IDN require the full
+%     <filename class="libraryfile">libidn</filename> library, not this add-on (see
+%     <ulink url="&blfs-root;view/svn/general/libidn.html"/>).
+%     Unpack the tarball from within the Glibc source directory:</para>
+% @y
+% <para>
+% glibc-libidn という tarball は国際化ドメイン名 (Internationalized Domain Names; IDN)
+% へのサポートを加えるものです。
+% ただし IDN に対応するプログラムはたいていは 純粋な
+% <filename class="libraryfile">libidn</filename>
+% ライブラリを利用しており、ここで加える tarball を用いているわけではありません。
+% (詳しくは <ulink url="&blfs-root;view/svn/general/libidn.html"/> を参照してください。)
+% tarball を Glibc のソースディレクトリにて解凍します。
+% </para>
+% @z
 
 @x
     <para>When running <command>make install</command>, a script called
@@ -128,36 +128,36 @@ BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル
 </para>
 @z
 
-@x
-    <para>Apply a patch so that Glibc will build against
-    Binutils-&binutils-version;:</para>
-@y
-<para>
-以下のパッチを当てることで
-Binutils-&binutils-version;
-に応じて Glibc をビルドするようにします。
-</para>
-@z
-
-@x
-    <para>Fix an error in one of the make check routines.  Note that the escaped
-    newline in the second <command>sed</command> is required:</para>
-@y
-<para>
-メイク時のチェック処理におけるエラーを修正します。
-二つめの <command>sed</command> では改行文字にエスケープ文字をつけることが必要です。
-</para>
-@z
-
-@x
-    <para>Fix an error in the constants that get passed to the futex system
-    call in some cases, causing certain pthread_mutex operations to fail:</para>
-@y
-<para>
-futex システムコールにおいて受け渡される定数にてエラーが発生することがあるため、これを修正します。
-こうしておかないと pthread_mutex 処理が失敗することがあります。
-</para>
-@z
+% @x
+%     <para>Apply a patch so that Glibc will build against
+%     Binutils-&binutils-version;:</para>
+% @y
+% <para>
+% 以下のパッチを当てることで
+% Binutils-&binutils-version;
+% に応じて Glibc をビルドするようにします。
+% </para>
+% @z
+% 
+% @x
+%     <para>Fix an error in one of the make check routines.  Note that the escaped
+%     newline in the second <command>sed</command> is required:</para>
+% @y
+% <para>
+% メイク時のチェック処理におけるエラーを修正します。
+% 二つめの <command>sed</command> では改行文字にエスケープ文字をつけることが必要です。
+% </para>
+% @z
+% 
+% @x
+%     <para>Fix an error in the constants that get passed to the futex system
+%     call in some cases, causing certain pthread_mutex operations to fail:</para>
+% @y
+% <para>
+% futex システムコールにおいて受け渡される定数にてエラーが発生することがあるため、これを修正します。
+% こうしておかないと pthread_mutex 処理が失敗することがあります。
+% </para>
+% @z
 
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source

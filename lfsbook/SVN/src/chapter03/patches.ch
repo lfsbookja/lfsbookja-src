@@ -183,19 +183,19 @@
       </listitem>
 @z
 
-@x
-      <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
+%         <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
+%         <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>

@@ -57,6 +57,46 @@
 @z
 
 @x
+      <para>2009-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgraded to Glibc-2.11. Fixes
+          <ulink url="&lfs-ticket-root;2509">#2509</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to latest upstream patches for Bash.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Linux-2.6.31.5. Fixes
+          <ulink url="&lfs-ticket-root;2508">#2508</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Module-Init-Tools-3.11.1. Fixes
+          <ulink url="&lfs-ticket-root;2507">#2507</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Glibc-2.11 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2509">#2509</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Bash のアップストリームが提供する最新のパッチを利用。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.31.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2508">#2508</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Module-Init-Tools-3.11.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2507">#2507</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-10-29</para>
       <itemizedlist>
         <listitem>
