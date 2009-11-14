@@ -129,10 +129,7 @@
 @y
 <para>
 <parameter>--enable-static --enable-shared</parameter>:
-
-These switches
-tell <application>libjpeg</application> to build both shared and static
-libraries.
+これらのパラメータは共有ライブラリとスタティックライブラリの両方をビルドすることを指示します。
 </para>
 @z
 

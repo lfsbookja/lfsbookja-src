@@ -24,10 +24,9 @@
      encodes and decodes DER/BER data following an ASN.1 schema.</para>
 @y
 <para>
-<application>libtasn1</application>
-パッケージは、
-is a highly portable C library that
-encodes and decodes DER/BER data following an ASN.1 schema.
+<application>libtasn1</application> パッケージは
+ASN.1 スキーマに基づく DER/BER データのエンコードおよびデコードを行う、
+可搬性の高い C ライブラリを提供します。
 </para>
 @z
 

@@ -23,10 +23,14 @@
     <para>The <application>Emacs</application> package contains an extensible,
     customizable, self-documenting real-time display editor.</para>
 @y
+<!--
+日本語訳情報：2009-10-31 matsuand
+self-documenting という語にはいつも悩まされる。
+訳語から除いてしまった・・
+-->
 <para>
-
-The <application>Emacs</application> package contains an extensible,
-customizable, self-documenting real-time display editor.
+<application>Emacs</application>
+パッケージは、拡張性やカスタマイズ性に優れた、リアルタイムなディスプレイエディタを提供します。
 </para>
 @z
 
@@ -80,8 +84,18 @@ customizable, self-documenting real-time display editor.
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional"><xref linkend="x-window-system"/>,
+    <xref linkend="libjpeg"/>,
+    <xref linkend="libpng"/>,
+    <xref linkend="libtiff"/>, and
+    <ulink url="http://sourceforge.net/projects/libungif">libungif</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <para role="optional"><xref linkend="x-window-system"/>,
+    <xref linkend="libjpeg"/>,
+    <xref linkend="libpng"/>,
+    <xref linkend="libtiff"/>,
+    <ulink url="http://sourceforge.net/projects/libungif">libungif</ulink></para>
 @z
 
 @x
@@ -136,9 +150,8 @@ customizable, self-documenting real-time display editor.
 @y
 <para>
 <option>--libexecdir=/usr/lib</option>:
-
-Place library
-executables in a Filesystem Hierarchy Standard (FHS) location.
+ファイルシステム階層標準 (Filesystem Hierarchy Standard; FHS)
+に従ってライブラリを配置するように指示します。
 </para>
 @z
 
@@ -147,9 +160,12 @@ executables in a Filesystem Hierarchy Standard (FHS) location.
     in <filename class='directory'>/var/games/emacs</filename> instead
     of <filename class='directory'>/usr/var/games/emacs</filename>.</para>
 @y
-    <para><option>--localstatedir=/var</option>: Create game score files
-    in <filename class='directory'>/var/games/emacs</filename> instead
-    of <filename class='directory'>/usr/var/games/emacs</filename>.</para>
+<para>
+<option>--localstatedir=/var</option>:
+ゲームスコアのファイルを
+<filename class='directory'>/usr/var/games/emacs</filename> ではなく
+<filename class='directory'>/var/games/emacs</filename> に生成します。
+</para>
 @z
 
 @x
@@ -184,5 +200,66 @@ executables in a Filesystem Hierarchy Standard (FHS) location.
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+@z
+
+@x b2m
+          <para>is a program to convert mail files from RMAIL
+          format to Unix <quote>mbox</quote> format.</para>
+@y
+<para>
+メールファイルを RMAIL フォーマットから Unix の <quote>mbox</quote> フォーマットに変換します。
+</para>
+@z
+
+@x ctags
+          <para>creates cross-reference tagfile database files
+          for source code.</para>
+@y
+          <para>creates cross-reference tagfile database files
+          for source code.</para>
+@z
+
+@x ebrowse
+          <para>permits browsing of C++ class hierarchies from
+          within <command>emacs</command>.</para>
+@y
+          <para>permits browsing of C++ class hierarchies from
+          within <command>emacs</command>.</para>
+@z
+
+@x emacs
+          <para>is an editor.</para>
+@y
+          <para>is an editor.</para>
+@z
+
+@x emacsclient
+          <para>attaches an <command>emacs</command> session to an already
+          running <command>emacsserver</command> instance.</para>
+@y
+          <para>attaches an <command>emacs</command> session to an already
+          running <command>emacsserver</command> instance.</para>
+@z
+
+@x etags
+          <para>is another program to generate source code
+          cross-reference tagfiles.</para>
+@y
+          <para>is another program to generate source code
+          cross-reference tagfiles.</para>
+@z
+
+@x grep-changelog
+          <para>prints entries in Change Logs matching
+          various criteria.</para>
+@y
+          <para>prints entries in Change Logs matching
+          various criteria.</para>
+@z
+
+@x rcs-checkin
+          <para>is a shell script used to check files into RCS.</para>
+@y
+          <para>is a shell script used to check files into RCS.</para>
 @z
 

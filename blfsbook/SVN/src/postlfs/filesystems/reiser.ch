@@ -54,6 +54,12 @@
 @z
 
 @x
+        <para>Download size: &reiser-size;</para>
+@y
+        <para>ダウンロードサイズ: &reiser-size;</para>
+@z
+
+@x
         <para>Estimated disk space required: &reiser-buildsize;</para>
 @y
         <para>&j-Estimateddiskspacerequired;: &reiser-buildsize;</para>

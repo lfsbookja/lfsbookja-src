@@ -92,20 +92,20 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="policykit"/></para>
+    <para role="recommended"><xref linkend="polkit"/></para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="policykit"/></para>
+    <para role="recommended"><xref linkend="polkit"/></para>
 @z
 
 @x
       <para>If you intend <emphasis role="strong">NOT</emphasis> to install
-      <application>PolicyKit</application>, you will need to manually edit the
+      <application>polkit</application>, you will need to manually edit the
       ConsoleKit.conf file to lock down the service. Failure to do so may be a
       huge SECURITY HOLE.</para>
 @y
 <para>
-<application>PolicyKit</application>
+<application>polkit</application>
 パッケージをインストール <emphasis role="strong">しない</emphasis>
 場合、ConsoleKit.conf ファイルを編集してサービスを停止することが必要です。
 これを行っていないと、極めて重大な <emphasis role="strong">セキュリティホール</emphasis>
@@ -243,15 +243,17 @@
         console-kit-daemon, ck-collect-session-info, ck-get-x11-display-device,
         ck-get-x11-server-pid, ck-system-restart, and ck-system-stop</seg>
         <seg>libck-connector.so and pam_ck_connector.so</seg>
-        <seg>/etc/ConsoleKit/seats.d,/usr/{include/ConsoleKit/ck-connector,
-        lib/ConsoleKit/scripts,share/doc/ConsoleKit/spec}</seg>
+        <seg>/etc/ConsoleKit/{run-seat.d,run-session.d,seats.d},
+        /usr/{include/ConsoleKit/ck-connector,lib/ConsoleKit/{run-seat.d,
+        run-session.d,scripts},share/doc/ConsoleKit/spec}</seg>
 @y
         <seg>ck-history, ck-launch-session, ck-list-sessions,
         ck-log-system-restart, ck-log-system-start, ck-log-system-stop,
         console-kit-daemon, ck-collect-session-info, ck-get-x11-display-device,
-        ck-get-x11-server-pid, ck-system-restart, ck-system-stop</seg>
+        ck-get-x11-server-pid, ck-system-restart, and ck-system-stop</seg>
         <seg>libck-connector.so and pam_ck_connector.so</seg>
-        <seg>/etc/ConsoleKit/seats.d,/usr/{include/ConsoleKit/ck-connector,
-        lib/ConsoleKit/scripts,share/doc/ConsoleKit/spec}</seg>
+        <seg>/etc/ConsoleKit/{run-seat.d,run-session.d,seats.d},
+        /usr/{include/ConsoleKit/ck-connector,lib/ConsoleKit/{run-seat.d,
+        run-session.d,scripts},share/doc/ConsoleKit/spec}</seg>
 @z
 
