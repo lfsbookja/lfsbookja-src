@@ -57,6 +57,50 @@
 @z
 
 @x
+      <para>2009-11-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Added a note to 'About SBUs' to address
+          parallel make procedures and how SBU values will be
+          affected.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Minor changes to GRUB-1.97.1 instructions.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] 「SBU 値について」において並行的な処理についての注記を追加。
+          そして SBU 値にどのように影響するかを説明。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] GRUB-1.97.1 での説明手順の若干の変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2009-11-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Upgraded to GRUB-1.97.1 Fixes
+          <ulink url="&lfs-ticket-root;2510">#2510</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] GRUB-1.97.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2510">#2510</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-06</para>
       <itemizedlist>
         <listitem>

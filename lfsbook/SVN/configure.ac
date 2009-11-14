@@ -1,5 +1,14 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
+#
+# This is part of LFSbookja package.
+#
+# This is a CTIE change file for the original XML source of the LFSbook.
+#
+# $Author$
+# $Rev$
+# $Date$
+#
 
 AC_PREREQ([2.63])
 AC_INIT([LFSbookja], [svn], [matsuand AT users DOT sourceforge DOT jp])
@@ -28,7 +37,7 @@ fi
 AC_PROG_XMLLINT
 AC_PROG_TIDY
 
-TARGETVER=svn-20091106
+TARGETVER=svn-20091112
 
 SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 AC_MSG_CHECKING([for the original XML version])

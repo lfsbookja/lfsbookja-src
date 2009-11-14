@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -64,17 +73,13 @@ SBU の測定は以下のようにします。
 
 @x
   <para>In general, SBUs are not entirely accurate because they depend on many
-  factors, including the host system's version of GCC. Note that on Symmetric
-  Multi-Processor (SMP)-based machines, SBUs are even less accurate. They are
-  provided here to give an estimate of how long it might take to install a
-  package, but the numbers can vary by as much as dozens of minutes in some
-  cases.</para>
+  factors, including the host system's version of GCC.  They are provided here
+  to give an estimate of how long it might take to install a package, but the
+  numbers can vary by as much as dozens of minutes in some cases.</para>
 @y
 <para>
 一般にコンパイル時間は、例えばホストシステムの GCC のバージョンの違いなど、多くの要因に左右されるため
 SBU 値は正確なものになりません。
-特に対称型マルチプロセッサ (Symmetric Multi-Processor; SMP)
-によるマシンでは SBU 値はさらに正確ではなくなります。
 SBU 値は、インストールに要する時間の目安を示すものに過ぎず、場合によっては十数分の誤差が出ることもあります。
 </para>
 @z
@@ -87,6 +92,49 @@ SBU 値は、インストールに要する時間の目安を示すものに過�
 特定マシンにおける実際の処理時間については、以下の
 LinuxFromScratch SBU ホームページに示していますので参照してください。
 <ulink url="&lfs-root;~sbu/"/>
+</para>
+@z
+
+@x
+  <note><para>For many modern systems with multiple processors (or cores) the
+  compilation time for a package can be reduced by performing a "parallel make"
+  by either setting an environment variable or telling the
+  <command>make</command> program how many processors are available.  For
+  instance, a Core2Duo can support two simultaneous processes with:</para>
+@y
+<note>
+<para>
+最新のシステムは複数プロセッサ (デュアルコアとも言います)
+であることが多く、パッケージのビルドにあたっては「同時並行のビルド」によりビルド時間を削減できます。
+その場合プロセッサ数がいくつなのかを環境変数に指定するか、あるいは
+<command>make</command> プログラムの実行時に指定する方法があります。
+例えばコア2デュオであれば、以下のようにして同時並行の二つのプロセスを実行することができます。
+</para>
+@z
+
+@x
+  <para>or just building with:</para>
+@y
+<para>
+あるいはビルド時の指定として以下のようにすることもできます。
+</para>
+@z
+
+@x
+  <para>When multiple processors are used in this way, the SBU units in the
+  book will vary even more than they normally would.  Analyzing the output of
+  the build process will also be more difficult because the lines of different
+  processes will be interleaved.  If you run into a problem with a build step,
+  revert back to a single processor build to properly analyze the error
+  messages.</para>
+@y
+<para>
+上のようにして複数プロセッサが利用されると、
+本書に示している SBU 単位は、通常の場合に比べて大きく変化します。
+したがってビルド結果を検証するにしても話が複雑になります。
+複数のプロセスラインがインターリーブにより多重化されるためです。
+ビルド時に何らかの問題が発生したら、
+単一プロセッサ処理を行ってエラーメッセージを分析してください。
 </para>
 @z
 
