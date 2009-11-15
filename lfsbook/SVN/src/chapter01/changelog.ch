@@ -57,6 +57,23 @@
 @z
 
 @x
+      <para>2009-11-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Removed obsolete note on the Host System 
+          requirements page.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] ホストシステム要件の説明より、古くなった記述を削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-12</para>
       <itemizedlist>
         <listitem>

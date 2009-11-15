@@ -50,6 +50,18 @@
 -->
 
     <listitem>
+      <para>2009-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, 
+          src/prologue/hostreqs.ch:
+          SVN-20091114 r9101 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-11-14</para>
       <itemizedlist>
         <listitem>
