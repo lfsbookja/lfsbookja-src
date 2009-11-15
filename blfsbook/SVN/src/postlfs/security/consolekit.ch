@@ -116,11 +116,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/> and
-    <ulink url="http://cyberelk.net/tim/software/xmlto/">xmlto</ulink></para>
+    <xref linkend="xmlto"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <ulink url="http://cyberelk.net/tim/software/xmlto/">xmlto</ulink></para>
+    <para role="optional"><xref linkend="linux-pam"/> と
+    <xref linkend="xmlto"/></para>
 @z
 
 @x
