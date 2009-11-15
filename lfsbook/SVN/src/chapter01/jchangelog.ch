@@ -53,6 +53,11 @@
       <para>2009-11-15</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - src/prologue/japanese.ch:
+          本書の開発提供を SourceForge.jp にて行っている説明を追記。
+          </para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - src/chapter01/changelog.ch, 
           src/prologue/hostreqs.ch:
           SVN-20091114 r9101 対応。

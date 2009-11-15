@@ -41,6 +41,23 @@
 
   </sect2>
 
+  <sect2 role="dist_japanese">
+    <title>日本語版の提供について</title>
+
+    <para>
+    日本語版 LFS ブックは SourceForge.jp 内に開発の場を設け
+    <ulink url="http://sourceforge.jp/projects/lfsbookja/"/>
+    にて <quote>LFSブック日本語版</quote>
+    のプロジェクト名で提供するものです。
+    </para>
+
+    <para>
+    HTML ファイル類や日本語化のために構築しているソース類について、あるいはそれらの取り扱い
+    (ライセンス) については上記サイトを参照してください。
+    </para>
+
+  </sect2>
+
   <sect2 role="about_japanese">
     <title>日本語版の生成について</title>
 
@@ -90,23 +107,6 @@
     </itemizedlist>
 
   </sect2>
-
-<!--
-  <sect2 role="ratio_japanese" id="sect_ratio_japanese">
-    <title>日本語版の訳出率</title>
-
-<para>
-日本語版 LFS ブックでは鋭意訳出を行っていますが、まだ訳出率 100 %ではありません。
-現時点の訳出率を、適当な基準を設けてカウント集計しています。
-その集計方法は明記するほどのことはないため特に示しません。
-</para>
-<para>
-現時点の訳出率は &ratio_japanese; %です。
-90% 程度以上になれば LFS ブックに基づく作業を支障なく (日本語だけで) 進めて頂くことができるかと思います。
-</para>
-
-  </sect2>
--->
 
   <sect2 role="caution_japanese">
     <title>日本語版における注意点</title>
