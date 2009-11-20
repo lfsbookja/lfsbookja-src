@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -130,16 +139,19 @@ Glibc が提供するこのダイナミックリンカは、プログラムが�
 @z
 
 @x
-      <para>The temporary libraries are cross-compiled. This removes all
-      dependency on the host system, lessens the chance of headers or libraries
-      from the host corrupting the new tools and allows for the possibility of
-      building both 32-bit and 64-bit libraries on 64-bit capable hardware.</para>
+      <para> The temporary libraries are cross-compiled.  Because a
+      cross-compiler by its nature cannot rely on anything from its host
+      system, this method removes potential contamination of the target
+      system by lessening the chance of headers or libraries from the host
+      being incorporated into the new tools.  Cross-compilation also allows for
+      the possibility of building both 32-bit and 64-bit libraries on 64-bit
+      capable hardware.</para>
 @y
 <para>
 一時的に構築するライブラリはクロスコンパイルにより生成します。
-こうすることでホストシステムへの依存を無くすことができます。
-またホストシステムのヘッダやライブラリが、一時的なツール類を壊してしまうような危険を減らすことができ、同時に 64
-ビットマシンにて 32 ビット、あるいは 64 ビットの双方のライブラリを構築することができるようになります。
+クロスコンパイラというものは元来、ホストシステムへ依存するものではないためです。
+こうすることで、ホストシステムのヘッダやライブラリが、一時的なツール類を壊してしまうような危険を減らすことができ、同時に 64
+ビットマシンにて 32 ビットあるいは 64 ビットの双方のライブラリを構築することができるようになります。
 </para>
 @z
 

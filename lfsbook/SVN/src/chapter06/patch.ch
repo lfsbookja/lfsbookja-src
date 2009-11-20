@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,17 +30,17 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
     <title>Patch のインストール</title>
 @z
 
-@x
-    <para>Apply a patch that fixes a bug whereby <command>patch</command>
-    fails to apply patches whose lines contain trailing carriage return
-    characters:</para>
-@y
-<para>
-バグを修正するためにパッチを当てます。
-これは行末に改行文字が含まれているパッチファイルを適用すると
-<command>patch</command> コマンドがパッチ適用に失敗する不具合を修正するものです。
-</para>
-@z
+% @x
+%     <para>Apply a patch that fixes a bug whereby <command>patch</command>
+%     fails to apply patches whose lines contain trailing carriage return
+%     characters:</para>
+% @y
+% <para>
+% バグを修正するためにパッチを当てます。
+% これは行末に改行文字が含まれているパッチファイルを適用すると
+% <command>patch</command> コマンドがパッチ適用に失敗する不具合を修正するものです。
+% </para>
+% @z
 
 @x
     <para>Prepare Patch for compilation:</para>
@@ -46,9 +55,11 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+<para>
+コンパイル結果をテストするには以下を実行します。
+</para>
 @z
 
 @x

@@ -50,20 +50,20 @@ LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などのディ�
 </para>
 @z
 
-@x
-<para>If you decide to target a 64-bit AMD/Intel system, LFS does have some
-limitations.  First, it does not currently provide instructions for a 64-bit
-boot loader.  If there is an existing boot loader, it can be used to boot to
-any LFS system you build, but <xref linkend="ch-bootable-grub"/> cannot be
-built on a 64-bit system.</para>
-@y
-<para>
-64 ビットの AMD/インテルを対象とするなら、LFS には多少の制約があります。
-まず今のところは 64ビットのブートローダーの説明ができていないことです。
-既にブートローダーが手元にあるなら、構築する LFS システムのブート処理に利用することができます。
-しかし <xref linkend="ch-bootable-grub"/> は 64ビットシステム上ではビルドすることができません。
-</para>
-@z
+% @x
+% <para>If you decide to target a 64-bit AMD/Intel system, LFS does have some
+% limitations.  First, it does not currently provide instructions for a 64-bit
+% boot loader.  If there is an existing boot loader, it can be used to boot to
+% any LFS system you build, but <xref linkend="ch-bootable-grub"/> cannot be
+% built on a 64-bit system.</para>
+% @y
+% <para>
+% 64 ビットの AMD/インテルを対象とするなら、LFS には多少の制約があります。
+% まず今のところは 64ビットのブートローダーの説明ができていないことです。
+% 既にブートローダーが手元にあるなら、構築する LFS システムのブート処理に利用することができます。
+% しかし <xref linkend="ch-bootable-grub"/> は 64ビットシステム上ではビルドすることができません。
+% </para>
+% @z
 
 @x
 <para>Some other facts about a 64-bit systems need to be added here.  When

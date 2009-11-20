@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,17 +31,17 @@
     <title>Patch のインストール</title>
 @z
 
-@x
-    <para>Apply a patch that fixes a bug whereby <command>patch</command>
-    fails to apply patches whose lines contain trailing carriage return
-    characters:</para>
-@y
-<para>
-バグを修正するためにパッチを当てます。
-これは行末に改行文字が含まれているパッチファイルを適用すると
-<command>patch</command> コマンドがパッチ適用に失敗する不具合を修正するものです。
-</para>
-@z
+% @x
+%     <para>Apply a patch that fixes a bug whereby <command>patch</command>
+%     fails to apply patches whose lines contain trailing carriage return
+%     characters:</para>
+% @y
+% <para>
+% バグを修正するためにパッチを当てます。
+% これは行末に改行文字が含まれているパッチファイルを適用すると
+% <command>patch</command> コマンドがパッチ適用に失敗する不具合を修正するものです。
+% </para>
+% @z
 
 @x
     <para>Prepare Patch for compilation:</para>
@@ -47,9 +56,15 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>Compilation is now complete. As discussed earlier, running the test
+    suite is not mandatory for the temporary tools here in this chapter. To run
+    the Patch test suite anyway, issue the following command:</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+<para>
+コンパイルが終了しました。
+前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+しかしテストスイートを実行するなら、以下を実行します。
+</para>
 @z
 
 @x

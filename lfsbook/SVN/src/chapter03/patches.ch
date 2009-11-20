@@ -281,19 +281,19 @@
       </listitem>
 @z
 
-@x
-      <term>Patch Carriage Return Fix Patch - <token>&patch-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&patch-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&patch-fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Patch Carriage Return Fix Patch - <token>&patch-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&patch-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&patch-fixes-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Patch Carriage Return Fix Patch - <token>&patch-fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&patch-fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&patch-fixes-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Patch Carriage Return Fix Patch - <token>&patch-fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&patch-fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&patch-fixes-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x コメント部分につき本来は不要なチェンジ
     <!-- <varlistentry>

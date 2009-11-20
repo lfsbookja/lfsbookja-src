@@ -50,6 +50,43 @@
 -->
 
     <listitem>
+      <para>2009-11-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] 
+          SVN-20091119 r9108 対応。(訳出箇所該当なしにつき日本語化ソース変更なし。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2009-11-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, 
+          src/chapter05/toolchaintechnotes.ch,
+          src/prologue/architecture.ch:
+          SVN-20091117 r9107 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2009-11-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, 
+          src/chapter03/patches.ch,
+          src/{chapter05,chapter06}/patch.ch:
+          SVN-20091115 r9104 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-11-15</para>
       <itemizedlist>
         <listitem>

@@ -57,6 +57,58 @@
 @z
 
 @x
+      <para>2009-11-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Removed paragraph in LFS Target Architectures
+          that said that we can't build a 64-bit loader.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] 「LFS が対象とする CPU アーキテクチャ」にて、64 ビットのローダーがビルドできないと説明していた段落を削除。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2009-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgraded to Patch-2.6. Fixes
+          <ulink url="&lfs-ticket-root;2513">#2513</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Udev-147. Fixes
+          <ulink url="&lfs-ticket-root;2512">#2512</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Linux-2.6.31.6. Fixes
+          <ulink url="&lfs-ticket-root;2511">#2511</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Patch-2.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2513">#2513</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Udev-147 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2512">#2512</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.31.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2511">#2511</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-14</para>
       <itemizedlist>
         <listitem>
