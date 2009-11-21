@@ -57,6 +57,48 @@
 @z
 
 @x
+      <para>2009-11-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Remove unneccessary .install and ..install.cmd
+          files that were being installed by the Linux headers.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Coreutils-8.1. Fixes
+          <ulink url="&lfs-ticket-root;2518">#2518</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Tcl-8.4.8. Fixes
+          <ulink url="&lfs-ticket-root;2517">#2517</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgraded to Libtool-2.2.6b. Fixes
+          <ulink url="&lfs-ticket-root;2514">#2514</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Linux ヘッダによってインストールされるファイルのうち、不要な
+          .install ファイルと ..install.cmd ファイルを削除。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Coreutils-8.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2518">#2518</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Tcl-8.4.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2517">#2517</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Libtool-2.2.6b へのアップグレード。
+          <ulink url="&lfs-ticket-root;2514">#2514</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-16</para>
       <itemizedlist>
         <listitem>
@@ -70,6 +112,25 @@
         <listitem>
           <para>[bdubbs] 「LFS が対象とする CPU アーキテクチャ」にて、64 ビットのローダーがビルドできないと説明していた段落を削除。
           </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2009-11-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Clarified explanation of why we use cross
+          compilation techniques in the Toolchain Technical Notes.
+          Fixes <ulink url="&lfs-ticket-root;2412">#2412</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] ツールチェーンの技術的情報において、なぜクロスコンパイラを用いた手法を採用するのかについて明確な説明とする。
+          <ulink url="&lfs-ticket-root;2412">#2412</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
