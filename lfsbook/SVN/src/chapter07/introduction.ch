@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -17,7 +26,7 @@
   information.</para>
 @y
 <para>
-この章では LFS ブートスクリプト・パッケージのインストールと設定について説明します。
+この章では LFS ブートスクリプトパッケージのインストールと設定について説明します。
 スクリプトのほとんどは修正する必要がありませんが、
 中にはハードウェアに依存する情報を取り扱うため追加設定を要するものもあります。
 </para>
@@ -34,7 +43,7 @@
 System V系のスクリプトが広く用いられていることから、本書でもこれを利用します。
 これとは別の方法として BSD 系の初期化スクリプトがあり
 <ulink url="&hints-root;bsd-init.txt"/>
-にて説明されています。また LFS メーリング・リストで
+にて説明されています。また LFS メーリングリストで
 <quote>depinit</quote> という語を検索してみれば、さらに別の方法が示されていますので確認してください。
 </para>
 @z

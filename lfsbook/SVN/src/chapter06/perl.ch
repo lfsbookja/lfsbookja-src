@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -380,10 +389,9 @@ Perl とライブラリが正しくインストールできているかを調べ
           <filename class="extension">.pm</filename> modules</para>
 @y
 <para>
-
-A rough tool for converting Perl4
-<filename class="extension">.pl</filename> files to Perl5
-<filename class="extension">.pm</filename> modules
+Perl4 の <filename class="extension">.pl</filename>
+ファイルを Perl5 の <filename class="extension">.pm</filename>
+モジュールファイルへの変換を行うツール。
 </para>
 @z
 

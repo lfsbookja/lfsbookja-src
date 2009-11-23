@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -105,6 +114,19 @@ Udev はそれらを認識できません。
 をインストールしないようにします。
 他のプログラム類は、さらに外部ライブラリを必要としており、それらは LFS システムには含まれていません。
 詳しくは Udev が提供する <filename>README</filename> ファイルを参照してください。
+</para>
+@z
+
+@x
+          <para>This option prevents Udev's instrospection feature, which
+          requires packages not installed as part of the base LFS system.  See
+          the Udev <filename>README</filename> file for more information.</para>
+@y
+<para>
+このオプションは Udev のイントロスペクション (introspection)
+機能を無効にします。
+この機能は、LFS システムにてインストールするパッケージではなく、別のパッケージにて必要となるものです。
+詳しくは Udev の <filename>README</filename> ファイルを参照してください。
 </para>
 @z
 

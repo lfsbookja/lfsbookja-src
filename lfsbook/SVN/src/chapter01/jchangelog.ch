@@ -64,6 +64,16 @@
           訳出改正, [lfsbookja-general 00003]
           </para>
         </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter06/{perl.ch, udev.ch}:
+          訳出漏れ改正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter07/introduction.ch:
+          微修正。
+          </para>
+        </listitem>
       </itemizedlist>
     </listitem>
 
