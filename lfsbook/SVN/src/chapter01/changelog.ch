@@ -57,6 +57,37 @@
 @z
 
 @x
+      <para>2009-11-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Update host requirements script to 
+          print a comment that makeinfo is used to identify
+          the Texinfo package version.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Added a section to each package's dependencies
+          in the Appendix to list external (non-LFS) dependencies for
+          LFS packages.  Fixes
+          <ulink url="&lfs-ticket-root;1682">#1682</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] ホスト要件を確認するスクリプトにて
+          Texinfo パッケージのバージョンを確認する makeinfo にてコメント出力を更新。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] 各パッケージの依存関係を示す付録において、外部の (LFS 内にはない)
+          依存関係を示す項を追加。
+          <ulink url="&lfs-ticket-root;1682">#1682</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-21</para>
       <itemizedlist>
         <listitem>

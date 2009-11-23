@@ -73,12 +73,16 @@ C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用し�
     <para>Now test and extract the user-visible kernel headers from the source.
     They are placed in an intermediate local directory and copied to the needed
     location because the extraction process removes any existing files in 
-    the target directory.</para>
+    the target directory.  There are also some hidden files used by
+    the kernel developers and not needed by LFS that are removed from
+    the intermediate directory.</para>
 @y
 <para>
 そしてユーザーが利用するカーネルヘッダファイルをテストし、ソースから抽出します。
 それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
 ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
+なおファイルの中にはカーネル開発者が隠しファイルとしているものがあります。
+それらは LFS では必要ないため、中間ディレクトリから削除します。
 </para>
 @z
 

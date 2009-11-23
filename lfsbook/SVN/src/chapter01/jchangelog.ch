@@ -50,6 +50,24 @@
 -->
 
     <listitem>
+      <para>2009-11-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/changelog.ch, 
+          src/chapter06/linux-headers.ch,
+          src/appendices/dependencies.ch:
+          SVN-20091122 r9115 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter05/gcc-pass2.ch:
+          訳出改正, [lfsbookja-general 00003]
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-11-21</para>
       <itemizedlist>
         <listitem>

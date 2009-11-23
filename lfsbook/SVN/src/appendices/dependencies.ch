@@ -30,12 +30,12 @@
 @z
 
 @x
-  <para>Every package built in LFS relies on one or more other packages
-  in order to build and install properly. Some packages even participate
-  in circular dependencies, that is, the first package depends on the second
-  which in turn depends on the first. Because of these dependencies, the
-  order in which packages are built in LFS is very important. The purpose
-  of this page is to document the dependencies of each package built in LFS.</para>
+  <para>Every package built in LFS relies on one or more other packages in
+  order to build and install properly. Some packages even participate in
+  circular dependencies, that is, the first package depends on the second which
+  in turn depends on the first. Because of these dependencies, the order in
+  which packages are built in LFS is very important. The purpose of this page
+  is to document the dependencies of each package built in LFS.</para>
 @y
 <para>
 LFS にて構築するパッケージはすべて、他のいくつかのパッケージに依存していて、それらがあって初めて適切にインストールができます。
@@ -48,27 +48,45 @@ LFS においてパッケージを構築する順番は非常に重要なもの�
 @z
 
 @x
-  <para>For each package we build, we have listed three types of dependencies.
-  The first lists what other packages need to be available in order to compile
-  and install the package in question. The second lists what packages, in
-  addition to those on the first list, need to be available in order to run the
-  testsuites. The last list of dependencies are packages that require this
-  package to be built and installed in its final location before they are built
-  and installed. In most cases, this is because these packages will hardcode
-  paths to binaries within their scripts. If not built in a certain order,
-  this could result in paths of /tools/bin/[binary] being placed inside
-  scripts installed to the final system. This is obviously not desirable.
-  </para>
+  <para>For each package we build, we have listed three, and sometimes four,
+  types of dependencies.  The first lists what other packages need to be
+  available in order to compile and install the package in question. The second
+  lists what packages, in addition to those on the first list, need to be
+  available in order to run the testsuites. The third list of dependencies are
+  packages that require this package to be built and installed in its final
+  location before they are built and installed. In most cases, this is because
+  these packages will hardcode paths to binaries within their scripts. If not
+  built in a certain order, this could result in paths of /tools/bin/[binary]
+  being placed inside scripts installed to the final system. This is obviously
+  not desirable.</para>
 @y
 <para>
-ビルドするパッケージの個々には三種類の依存関係を示しています。
-一つめは対象パッケージをコンパイルしてビルドするために必要となるパッケージです。
-二つめは一つめのものに加えて、テストスイートを実行するために必要となるパッケージです。
-三つめは対象パッケージをビルドし、最終的にインストールするために必要となるパッケージです。
+ビルドするパッケージの個々には、3種類あるいは4種類の依存関係を示しています。
+1つめは対象パッケージをコンパイルしてビルドするために必要となるパッケージです。
+2つめは一つめのものに加えて、テストスイートを実行するために必要となるパッケージです。
+3つめは対象パッケージをビルドし、最終的にインストールするために必要となるパッケージです。
 たいていの場合、それらのパッケージに含まれているスクリプトが、実行モジュールへのパスを固定的に取り扱っています。
 所定の順番どおりにパッケージのビルドを行わないと、最終的にインストールされるシステムにおいて、スクリプトの中に
 /tools/bin/[実行モジュール] といったパスが含まれてしまうことになりかねません。
 これは明らかに不適切なことです。
+</para>
+@z
+
+@x
+  <para>The last list of dependencies are optional packages that are not
+  addressed in LFS, but could be useful to the user.  These packages may have
+  additional mandatory or optional dependencies of their own.  For these
+  dependencies, the recommeded practice is to install them after completion of
+  the LFS book and then go back an rebuild the LFS package.  In several cases,
+  reinstallation is addressed in BLFS.</para>
+@y
+<para>
+依存関係として4つめに示すのは任意のパッケージであり LFS では説明していないものです。
+しかし皆さんにとっては有用なパッケージであるはずです。
+それらのパッケージは、さらに別のパッケージを必要としていたり、互いに依存し合っていることがあります。
+そういった依存関係があるため、それらをインストールする場合には、LFS をすべて仕上げた後に再度 LFS
+内のパッケージを再構築する方法をお勧めします。
+再インストールに関しては、たいていは BLFS にて説明しています。
 </para>
 @z
 
@@ -94,13 +112,17 @@ LFS においてパッケージを構築する順番は非常に重要なもの�
 @z
 @x
           <seg>Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
-          Flex, GCC, Gettext, Gzip, Libtool, and Tar. Can also use several
-          other packages that are not installed in LFS.</seg>
+          Flex, GCC, Gettext, Gzip, Libtool, and Tar.</seg>
 @y
-<seg>Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
-Flex, GCC, Gettext, Gzip, Libtool, Tar. 
-この他に LFS ではインストールしないパッケージが数種類。
+<seg>
+Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
+Flex, GCC, Gettext, Gzip, Libtool, Tar.
 </seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -145,6 +167,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x bison
@@ -164,6 +191,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
           <seg>Flex, Kbd, Tar</seg>
 @z
+@x
+          <seg>Doxygen (testsuite)</seg>
+@y
+          <seg>Doxygen (テストスイート用)</seg>
+@z
 
 %----------------------------------------------------------------------
 @x bzip2
@@ -172,6 +204,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Make,
          Patch</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -202,6 +239,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
           <seg>Bash, Diffutils, Findutils, Man-DB, Udev</seg>
 @z
+@x
+          <seg>Perl Expect and IO:Tty modules (for testsuite)</seg>
+@y
+          <seg>Perl Expect と IO:Tty モジュール (テストスイート用)</seg>
+@z
 
 %----------------------------------------------------------------------
 @x DejaGNU
@@ -219,6 +261,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Diffutils
@@ -226,12 +273,17 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
           Make, Patch, Sed, and Texinfo</seg>
 @y
           <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc, Grep,
-          Make, Patch, Sed, and Texinfo</seg>
+          Make, Patch, Sed, Texinfo</seg>
 @z
 @x
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -246,6 +298,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
          Patch, Sed, Tcl</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -276,6 +333,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x File
@@ -289,6 +351,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -314,6 +381,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Flex
@@ -333,6 +405,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 @y
           <seg>IPRoute2, Kbd, Man-DB</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Gawk
@@ -342,7 +419,7 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 <!--
 日本語訳註：2009-08-28
 "Sed and, Texinfo"
-Type ですが日本語訳にはほとんど影響ありません。
+Typo ですが日本語訳には影響ありません。
 -->
          <seg>Bash, Binutils, Coreutils, GCC, Gettext, Glibc, Grep, Make,
          Patch, Sed, Texinfo</seg>
@@ -351,6 +428,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>Diffutils</seg>
 @y
           <seg>Diffutils</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -395,6 +477,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Gettext
@@ -414,6 +501,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>Automake</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Glibc
@@ -422,6 +514,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
          Grep, Gzip, Make, Perl, Sed, Texinfo</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -452,6 +549,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>MPFR, GCC</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Grep
@@ -470,6 +572,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>Man-DB</seg>
 @y
           <seg>Man-DB</seg>
+@z
+@x
+          <seg>Pcre, Xorg, and CUPS</seg>
+@y
+          <seg>Pcre, Xorg, CUPS</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -509,6 +616,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Gzip
@@ -528,6 +640,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>Man-DB</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Iana-Etc
@@ -545,14 +662,19 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>Perl</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Inetutils
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Ncurses,
-         Patch, Sed, and Texinfo</seg>
+         Patch, Sed, Texinfo, and Zlib</seg>
 @y
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Ncurses,
-         Patch, Sed, Texinfo</seg>
+         Patch, Sed, Texinfo, Zlib</seg>
 @z
 @x
           <seg>No testsuite available</seg>
@@ -563,6 +685,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>Tar</seg>
 @y
           <seg>Tar</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -583,6 +710,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Kbd
@@ -596,6 +728,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -640,6 +777,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Linux Kernel
@@ -653,6 +795,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -678,6 +825,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>Autoconf, Bison</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Make
@@ -691,6 +843,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>Perl and Procps</seg>
 @y
           <seg>Perl, Procps</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -716,6 +873,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Man-Pages
@@ -727,6 +889,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -752,6 +919,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x MPFR
@@ -770,6 +942,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>GCC</seg>
 @y
           <seg>GCC</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -792,6 +969,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>Bash, GRUB, Inetutils, Less, Procps, Psmisc, Readline, Texinfo,
           Util-linux-ng, Vim</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Patch
@@ -803,6 +985,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -828,6 +1015,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>Autoconf</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Pkg-config
@@ -836,6 +1028,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
          Make, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -864,6 +1061,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Psmisc
@@ -877,6 +1079,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -901,6 +1108,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>Bash</seg>
 @y
           <seg>Bash</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -940,6 +1152,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Sysklogd
@@ -957,6 +1174,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Sysvinit
@@ -968,6 +1190,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -993,6 +1220,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Tcl
@@ -1001,6 +1233,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep,
          Make, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -1031,6 +1268,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Udev
@@ -1044,6 +1286,11 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>No testsuite available</seg>
 @y
           <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>
@@ -1069,6 +1316,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Vim
@@ -1088,6 +1340,11 @@ Type ですが日本語訳にはほとんど影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg>Xorg, GTK+2, LessTif, Python, Tcl, Ruby, and GPM</seg>
+@y
+          <seg>Xorg, GTK+2, LessTif, Python, Tcl, Ruby, GPM</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Zlib
@@ -1104,5 +1361,10 @@ Type ですが日本語訳にはほとんど影響ありません。
           <seg>File, Module-Init-Tools, Perl, and Util-linux-ng</seg>
 @y
           <seg>File, Module-Init-Tools, Perl, Util-linux-ng</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
 @z
 
