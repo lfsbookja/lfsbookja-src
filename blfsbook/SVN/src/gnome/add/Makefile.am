@@ -10,7 +10,7 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	gucharmap.ch java-access-bridge.ch libgail-gnome.ch libgnomecups.ch \
 	libgnomeprint.ch libgnomeprintui.ch nautilus-cd-burner.ch orca.ch \
 	sound-juicer.ch system-tools-backends.ch totem.ch zenity.ch \
-	eel.ch gail.ch
+	eel.ch gail.ch gnome-power-manager.ch
 srcdir = @srcdir@
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
@@ -23,7 +23,7 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	gucharmap.xml java-access-bridge.xml libgail-gnome.xml libgnomecups.xml \
 	libgnomeprint.xml libgnomeprintui.xml nautilus-cd-burner.xml orca.xml \
 	sound-juicer.xml system-tools-backends.xml totem.xml zenity.xml \
-	eel.xml gail.xml
+	eel.xml gail.xml gnome-power-manager.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -58,6 +58,7 @@ gnome-mag.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mag.ch
 gnome-media.xml: $(BOOKdir)/$@ $(srcdir)/gnome-media.ch
 gnome-mount.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mount.ch
 gnome-netstatus.xml: $(BOOKdir)/$@ $(srcdir)/gnome-netstatus.ch
+gnome-power-manager.xml: $(BOOKdir)/$@ $(srcdir)/gnome-power-manager.ch
 gnome-screensaver.xml: $(BOOKdir)/$@ $(srcdir)/gnome-screensaver.ch
 gnome-speech.xml: $(BOOKdir)/$@ $(srcdir)/gnome-speech.ch
 gnome-system-monitor.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-monitor.ch
