@@ -1,11 +1,13 @@
 BOOKdir = $(top_builddir)/@bookdir@/prologue
 EXTRA_DIST = audience.ch bookinfo.ch dedication.ch errata.ch foreword.ch \
 	hostreqs.ch organization.ch preface.ch prerequisites.ch \
-	typography.ch japanese.ch architecture.ch
+	typography.ch japanese.ch architecture.ch standards.ch \
+	why.ch
 srcdir = @srcdir@
 srcs = audience.xml bookinfo.xml dedication.xml errata.xml foreword.xml \
 	hostreqs.xml organization.xml preface.xml prerequisites.xml \
-	typography.xml japanese.xml architecture.xml
+	typography.xml japanese.xml architecture.xml standards.xml \
+	why.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -29,3 +31,6 @@ typography.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/typography.ch
 japanese.xml: $(srcdir)/japanese.ch
 	cp -p $^ $@
 architecture.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/architecture.ch
+standards.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/standards.ch
+why.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/why.ch
+

@@ -57,6 +57,49 @@
 @z
 
 @x
+      <para>2009-11-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Separate standards page and rationale page
+          and reformat.  Provided more information about packages
+          needed to satisfy LSB.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] LFS と各種標準のページを分割し、各パッケージを用いる理由のページを設ける。
+          各種パッケージが LSB 要求を満足するかどうかの詳細情報を追加。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2009-11-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Add a page describing the Linux standards LFS
+          uses to guide its procedures. Included a sub-section on why
+          each package is in the book.
+          Fixes <ulink url="&lfs-ticket-root;1673">#1673</ulink>
+          and <ulink url="&lfs-ticket-root;2196">#2196</ulink></para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] LFS と各種標準のページを追加しその内容を説明。
+          <ulink url="&lfs-ticket-root;1673">#1673</ulink> と
+          <ulink url="&lfs-ticket-root;2196">#2196</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-22</para>
       <itemizedlist>
         <listitem>

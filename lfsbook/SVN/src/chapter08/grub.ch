@@ -273,7 +273,7 @@ GRUB-&grub-version; をロードすることが可能です。
 
 @x
      <para>If you tested the GRUB configuration as specified above, re-enter
-     the <command>chroot</command> envronment.</para>
+     the <command>chroot</command> environment.</para>
 @y
 <para>
 上で示したように GRUB の設定に対するテストを終えたら、再び

@@ -131,7 +131,7 @@ that cannot currently be built in a "pure" 64-bit system or require specialized
 build instructions.  Generally, these packages have some embedded 32-bit
 specific assembly language instructions that fail when building on a 64-bit
 system.  Examples include the  <ulink
-url="http://www.linuxfromscratch.org/blfs/view/cvs/">Beyond Linux From Scratch
+url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch
 (BLFS)</ulink> packages Zip and some Xorg drivers. Many of these problems can
 be worked around, but may require some specialized procedures or
 patches.</para>
@@ -141,7 +141,7 @@ patches.</para>
 パッケージの中には現時点にて "純粋な" 64ビットシステム上でビルドできないものがあり、あるいは特別なビルド手順を必要とするものがあります。
 一般的に言えば、そのようなパッケージには 32ビット固有のアセンブリ言語の命令が含まれるからであり、
 だから 64ビットシステムでのビルドに失敗するということです。
-例としては <ulink url="http://www.linuxfromscratch.org/blfs/view/cvs/">Beyond Linux From Scratch (BLFS)</ulink>
+例としては <ulink url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch (BLFS)</ulink>
 にある Zip パッケージや Xorg ドライバの一部分などです。
 このような問題はたいていは解消していくことができますが、中には特別なビルド手順やパッチを要するものとなるかもしれません。
 </para>
