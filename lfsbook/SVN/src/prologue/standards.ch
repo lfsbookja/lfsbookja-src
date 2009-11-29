@@ -136,36 +136,36 @@ LFS の構築にあたっては LSB に適合していることを確認する�
 @z
 
 @x
-        <term><emphasis>LSB Desktop</emphasis></term>
+        <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB デスクトップ</emphasis></term>
+        <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Runtime Languages</emphasis></term>
+        <term><emphasis>LSB Runtime Languages:</emphasis></term>
         <listitem>
           <para>Perl</para>
         </listitem>
 @y
-        <term><emphasis>LSB ランタイム言語</emphasis></term>
+        <term><emphasis>LSB ランタイム言語:</emphasis></term>
         <listitem>
           <para>Perl</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Printing</emphasis></term>
+        <term><emphasis>LSB Printing:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB 印刷</emphasis></term>
+        <term><emphasis>LSB 印刷:</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
@@ -217,14 +217,14 @@ LFS の構築にあたっては LSB に適合していることを確認する�
 @z
 
 @x
-        <term><emphasis>LSB Desktop</emphasis></term>
+        <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
           <para>ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
                 Glib2, GTK+2, Icon-naming-utils, Libjpeg, Libpng, Libxml2,
                 MesaLib, Pango, Qt3, Qt4, Xorg</para>
         </listitem>
 @y
-        <term><emphasis>LSB デスクトップ</emphasis></term>
+        <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
           <para>ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
                 Glib2, GTK+2, Icon-naming-utils, Libjpeg, Libpng, Libxml2,
@@ -233,24 +233,24 @@ LFS の構築にあたっては LSB に適合していることを確認する�
 @z
 
 @x
-        <term><emphasis>LSB Runtime Languages</emphasis></term>
+        <term><emphasis>LSB Runtime Languages:</emphasis></term>
         <listitem>
           <para>Python</para>
         </listitem>
 @y
-        <term><emphasis>LSB ランタイム言語</emphasis></term>
+        <term><emphasis>LSB ランタイム言語:</emphasis></term>
         <listitem>
           <para>Python</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Printing</emphasis></term>
+        <term><emphasis>LSB Printing:</emphasis></term>
         <listitem>
           <para>CUPS</para>
         </listitem>
 @y
-        <term><emphasis>LSB 印刷</emphasis></term>
+        <term><emphasis>LSB 印刷:</emphasis></term>
         <listitem>
           <para>CUPS</para>
         </listitem>
@@ -303,36 +303,36 @@ LFS の構築にあたっては LSB に適合していることを確認する�
 @z
 
 @x
-        <term><emphasis>LSB Desktop</emphasis></term>
+        <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB デスクトップ</emphasis></term>
+        <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Runtime Languages</emphasis></term>
+        <term><emphasis>LSB Runtime Languages:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB ランタイム言語</emphasis></term>
+        <term><emphasis>LSB ランタイム言語:</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>
 @z
 
 @x
-        <term><emphasis>LSB Printing</emphasis></term>
+        <term><emphasis>LSB Printing:</emphasis></term>
         <listitem>
           <para>None</para>
         </listitem>
 @y
-        <term><emphasis>LSB 印刷</emphasis></term>
+        <term><emphasis>LSB 印刷:</emphasis></term>
         <listitem>
           <para>なし</para>
         </listitem>

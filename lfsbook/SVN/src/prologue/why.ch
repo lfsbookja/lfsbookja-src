@@ -24,14 +24,14 @@ rationale は理論的根拠とか原理とか。
 -->
   <title>各パッケージを用いる理由</title>
 
-  <note>
+  <caution>
    <title>日本語訳情報</title>
    <para>
     現時点にて本節は訳出未完です。早期に仕上げます。
     このところ比較的頻繁にオリジナル版が更新されるため、開発作業上の都合として暫定的に対処するものです。
     訳出が終わり次第、この注記を除きます。
    </para>
-  </note>
+  </caution>
 @z
 
 @x
@@ -45,13 +45,12 @@ rationale は理論的根拠とか原理とか。
 @y
 <para>
 既に説明しているように LFS が目指すのは、完成した形での実用可能な基盤システムを構築することです。
-
-This includes all packages needed to replicate 
-itself while providing a relativly minimal base from which to customize
-a more complete system based on the choices of the user.  This does not
-mean that LFS is the smallest system possible.  Several important packages
-are included that are not strictly required.  The lists below document the
-rationale for each package in the book.
+LFS に含まれるパッケージ群は、パッケージの個々を構築していくために必要となるものばかりです。
+そこからは最小限の基盤となるシステムを作り出します。
+そしてユーザーの望みに応じて、より完璧なシステムへと拡張していくものとなります。
+LFS は極小システムを意味するわけではありません。
+厳密には必要のないパッケージであっても、重要なものとして含んでいるものもあります。
+以下に示す一覧は、本書内の各パッケージの採用根拠について説明するものです。
 </para>
 @z
 
@@ -87,11 +86,9 @@ rationale for each package in the book.
         capabilities beyond basic shell functions. </para>
 @y
 <para>
-
-This package satisfies an LSB core requirement to provide
-a Bourne Shell interface to the system.  It was chosen over
-other shell packages because of its common usage and extensive
-capabilities beyond basic shell functions. 
+このパッケージは、システムとのインターフェースを実現する
+Bourne シェルを提供し、LSB コア要件を満たします。
+他のシェルを選ばずにこれを選ぶのは、一般的に多用されていることと、基本的なシェル関数においての拡張性が高いからです。
 </para>
 @z
 
@@ -310,9 +307,8 @@ This package contains programs for searching through files.
         </para>
 @y
 <para>
-
-This package is the Grand Unified Boot Loader.  It is one 
-of several boot loaders available, but is the most flexible.
+これは Grand Unified Boot Loader です。
+ブートローダーとして利用可能なものの中でも、これが最も柔軟性に富むものです。
 </para>
 @z
 
@@ -323,5 +319,43 @@ of several boot loaders available, but is the most flexible.
 <para>
 このパッケージは、ファイルの圧縮と伸張 (解凍) を行うプログラムを提供します。
 </para>
+@z
+
+@x Iana-etc
+        <para>This package provides data for network services and protocols.
+        It is needed to enable proper networking capabilities.
+        </para>
+@y
+        <para>This package provides data for network services and protocols.
+        It is needed to enable proper networking capabilities.
+        </para>
+@z
+
+@x Inetutils
+        <para>This package contains programs for basic network 
+        administration.  
+        </para>
+@y
+        <para>This package contains programs for basic network 
+        administration.  
+        </para>
+@z
+
+@x IProute2
+        <para>This package contains programs for basic and advanced IPv4 and
+        IPv6 networking.  It was chosen over the other common network
+        tools package (net-tools) for its IPv6 capabilities.  </para>
+@y
+        <para>This package contains programs for basic and advanced IPv4 and
+        IPv6 networking.  It was chosen over the other common network
+        tools package (net-tools) for its IPv6 capabilities.  </para>
+@z
+
+@x Kbd
+        <para>This package contains key-table files and keyboard utilities
+        for non-US keyboards. </para>
+@y
+        <para>This package contains key-table files and keyboard utilities
+        for non-US keyboards. </para>
 @z
 

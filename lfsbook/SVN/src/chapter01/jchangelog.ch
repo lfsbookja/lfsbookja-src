@@ -50,6 +50,22 @@
 -->
 
     <listitem>
+      <para>2009-11-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/prologue/standards.ch:
+          r9121 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/prologue/why.ch:
+          訳出中。(未完。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2009-11-25</para>
       <itemizedlist>
         <listitem>
