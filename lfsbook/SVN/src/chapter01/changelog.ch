@@ -57,11 +57,30 @@
 @z
 
 @x
+      <para>2009-11-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Provided more information about grub
+          configuration.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-11-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Grub の設定に関して詳細情報を追加。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-24</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] Separate standards page and rationale page
-          and reformat.  Provided more information about packages
+          <para>[bdubbs] Create separate standards and rationale pages
+          and reformated.  Provided more information about packages
           needed to satisfy LSB.
           </para>
         </listitem>

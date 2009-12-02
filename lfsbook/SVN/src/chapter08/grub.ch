@@ -304,6 +304,19 @@ GRUB-&grub-version; をロードすることが可能です。
 @z
 
 @x
+    <para>Change the DEVICE above to your boot disk, normally '(hd0)' or /dev/sda.  
+    If using (hd0) be sure to escape the parentheses with backslashes or single
+    quotes to prevent the shell from interpreting them as a sub-shell.</para>
+@y
+<para>
+DEVICE の部分はブートディスクに応じて書き換えてください。
+通常は '(hd0)' あるいは /dev/sda となるはずです。
+(hd0) を指定する場合は、カッコの文字をバックスラッシュによりエスケープするか、シングルクォートで囲むようにしてください。
+そうしておかないと、サブシェルを表わすものとして解釈されてしまうからです。
+</para>
+@z
+
+@x
     <para>This program uses the following defaults and are correct if you did not
     deviate from the instructions above:</para>
 @y
@@ -318,12 +331,31 @@ GRUB-&grub-version; をロードすることが可能です。
       <listitem><para>core image  - core.img  </para></listitem>
       <listitem><para>directory   - /boot/grub</para></listitem>
       <listitem><para>device map  - device.map</para></listitem>
-      <listitem><para>root device - guessed   </para></listitem>
+      <listitem><para>default root setting - guessed</para></listitem>
 @y
 <listitem><para>ブートイメージ  - boot.img  </para></listitem>
 <listitem><para>コアイメージ  - core.img  </para></listitem>
 <listitem><para>ディレクトリ   - /boot/grub</para></listitem>
 <listitem><para>デバイスマップ  - device.map</para></listitem>
-<listitem><para>ルートデバイス - 自動認識   </para></listitem>
+<listitem><para>デフォルトルート設定 - 自動推測   </para></listitem>
+@z
+
+@x
+   <note><para>The root setting is the default value if a 'set root'
+   instruction is not found in grub.cfg.  This is the partition that is
+   searched for the kernel and other supporting files.  It is different from
+   the 'root=' parameter on the 'linux' line in the configuration line.  The
+   later is the partition the kernel mounts as '/'.  In the example grub.cfg
+   above, both values point to /dev/sda2, but if there is a separate boot
+   partition, they will be different.</para></note>
+@y
+<note><para>
+ルート設定は grub.cfg ファイル内にて 'set root' の指定がない場合のデフォルト値です。
+これは、カーネルや他の関連ファイルが検出するパーティションとなり、
+'linux' の設定行内にあるパラメータ 'root=' での設定内容とは異なります。
+'root=' での設定は、カーネルが '/' としてマウントしたパーティションを意味します。
+上に示した grub.cfg のサンプルでは、どちらも /dev/sda2
+に設定していますが、ブートパーティションを別に用意している場合は設定値が異なることとなります。
+</para></note>
 @z
 
