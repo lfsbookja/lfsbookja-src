@@ -57,6 +57,40 @@
 @z
 
 @x
+      <para>2009-12-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Util-Linux-NG-2.16.2. Fixes
+          <ulink url="&lfs-ticket-root;2523">#2523</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to MPFR-2.4.2. Fixes
+          <ulink url="&lfs-ticket-root;2522">#2522</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Autoconf-2.65. Fixes
+          <ulink url="&lfs-ticket-root;2520">#2520</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-12-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Util-Linux-NG-2.16.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2523">#2523</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] MPFR-2.4.2. Fixes
+          <ulink url="&lfs-ticket-root;2522">#2522</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Autoconf-2.65 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2520">#2520</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-11-29</para>
       <itemizedlist>
         <listitem>

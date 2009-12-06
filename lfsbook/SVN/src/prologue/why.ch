@@ -172,10 +172,8 @@ toolchain.
         tested file systems that Linux supports.</para>
 @y
 <para>
-
-This package contains the utilities for handling the ext2, ext3
-and ext4 file systems.  These are the most common and thouroughly
-tested file systems that Linux supports.
+このパッケージは ext2, ext3, ext4 の各ファイルシステムを取り扱うユーティリティを提供します。
+各ファイルシステムは Linux がサポートする一般的なものであり、十分なテストが実施されているものです。
 </para>
 @z
 
@@ -216,9 +214,8 @@ LFS packages.
         It is the GNU version of awk (Aho-Weinberg-Kernighan). </para>
 @y
 <para>
-
-This package contains programs for manipulating text files.
-It is the GNU version of awk (Aho-Weinberg-Kernighan). 
+このパッケージはテキストファイルを操作するプログラムを提供します。
+プログラムは GNU 版の awk (Aho-Weinberg-Kernighan) です。	
 </para>
 @z
 
@@ -239,9 +236,8 @@ C コンパイラと C++ コンパイラを含みます。また LFS ではビ�
         </para>
 @y
 <para>
-
-This package contains the GNU Database Manager library.  It
-is used by one other LFS package, Man-DB.
+このパッケージは GNU データベースマネージャライブラリを提供します。
+LFS が扱う Man-DB パッケージがこれを利用しています。
 </para>
 @z
 
@@ -251,9 +247,7 @@ is used by one other LFS package, Man-DB.
         </para>
 @y
 <para>
-
-This package contains utilities and libraries for 
-internationalization and localization of numerous packages.
+このパッケージは、各種パッケージが国際化を行うために利用するユーティリティやライブラリを提供します。
 </para>
 @z
 
@@ -262,9 +256,7 @@ internationalization and localization of numerous packages.
         not run without it. </para>
 @y
 <para>
-
-This package contains the main C library.  Linux programs would
-not run without it. 
+このパッケージは C ライブラリです。Linux 上のプログラムはこれがなければ動作させることができません。
 </para>
 @z
 
