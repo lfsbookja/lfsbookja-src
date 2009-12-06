@@ -85,12 +85,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pixman"/>,
+    <para role="required"><xref linkend="openssl"/>,
+    <xref linkend="pixman"/>,
     <xref linkend="xorg7-font"/>, and
     <xref linkend="xkeyboard-config"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="pixman"/>,
+    <para role="required"><xref linkend="openssl"/>,
+    <xref linkend="pixman"/>,
     <xref linkend="xorg7-font"/>,
     <xref linkend="xkeyboard-config"/></para>
 @z
@@ -104,12 +106,6 @@
     <para role="recommended"><xref linkend="hal"/>
     (入力デバイスのホットプラグ対応において必要), 
     <xref linkend="mesalib"/> (DRI において必要)</para>
-@z
-
-@x
-<bridgehead renderas="sect4">Optional</bridgehead>
-@y
-<bridgehead renderas="sect4">&j-Optional;</bridgehead>
 @z
 
 @x

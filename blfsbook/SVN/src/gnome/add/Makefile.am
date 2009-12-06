@@ -10,7 +10,7 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	gucharmap.ch java-access-bridge.ch libgail-gnome.ch libgnomecups.ch \
 	libgnomeprint.ch libgnomeprintui.ch nautilus-cd-burner.ch orca.ch \
 	sound-juicer.ch system-tools-backends.ch totem.ch zenity.ch \
-	eel.ch gail.ch gnome-power-manager.ch
+	eel.ch gail.ch gnome-power-manager.ch totem-pl-parser.ch
 srcdir = @srcdir@
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
@@ -23,7 +23,7 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	gucharmap.xml java-access-bridge.xml libgail-gnome.xml libgnomecups.xml \
 	libgnomeprint.xml libgnomeprintui.xml nautilus-cd-burner.xml orca.xml \
 	sound-juicer.xml system-tools-backends.xml totem.xml zenity.xml \
-	eel.xml gail.xml gnome-power-manager.xml
+	eel.xml gail.xml gnome-power-manager.xml totem-pl-parser.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -79,3 +79,5 @@ sound-juicer.xml: $(BOOKdir)/$@ $(srcdir)/sound-juicer.ch
 system-tools-backends.xml: $(BOOKdir)/$@ $(srcdir)/system-tools-backends.ch
 totem.xml: $(BOOKdir)/$@ $(srcdir)/totem.ch
 zenity.xml: $(BOOKdir)/$@ $(srcdir)/zenity.ch
+totem-pl-parser.xml: $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
+
