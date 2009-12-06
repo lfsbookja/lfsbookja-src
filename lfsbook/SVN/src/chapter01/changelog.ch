@@ -57,6 +57,41 @@
 @z
 
 @x
+      <para>2009-12-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Move some of inetutils' programs to an FHS-compliant
+          location. Fixes
+          <ulink url="&lfs-ticket-root;2524">#2524</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.32. Fixes
+          <ulink url="&lfs-ticket-root;2526">#2526</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Udev-149. Fixes
+          <ulink url="&lfs-ticket-root;2525">#2525</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-12-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] inetutils のプログラムのいくつかを FHS に従うように移動。
+          <ulink url="&lfs-ticket-root;2524">#2524</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.32 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2526">#2526</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Udev-149 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2525">#2525</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-12-02</para>
       <itemizedlist>
         <listitem>

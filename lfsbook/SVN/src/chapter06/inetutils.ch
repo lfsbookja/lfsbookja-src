@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -134,11 +143,10 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
 @z
 
 @x
-    <para>Move the <command>ping</command> program to its FHS-compliant
-    place:</para>
+    <para>Move some programs to their FHS-compliant place:</para>
 @y
 <para>
-<command>ping</command> プログラムを FHS コンプライアントが定めるディレクトリに移動させます。
+プログラムのいくつかを FHS コンプライアントが定めるディレクトリに移動させます。
 </para>
 @z
 
