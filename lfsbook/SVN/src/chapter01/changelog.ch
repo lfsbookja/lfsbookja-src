@@ -57,6 +57,32 @@
 @z
 
 @x
+      <para>2009-12-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.32.2. Fixes
+          <ulink url="&lfs-ticket-root;2534">#2534</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Inetutils-1.7. Fixes
+          <ulink url="&lfs-ticket-root;2533">#2533</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-12-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Linux-2.6.32.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2534">#2534</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Inetutils-1.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2533">#2533</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-12-16</para>
       <itemizedlist>
         <listitem>

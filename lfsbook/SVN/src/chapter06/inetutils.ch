@@ -27,24 +27,11 @@ Inetutils パッケージはネットワーク制御を行う基本的なプロ�
     <title>Inetutils のインストール</title>
 @z
 
-@x
-    <para>Not all programs that come with Inetutils will be installed.
-    However, the Inetutils build system will insist on installing all the
-    man pages anyway. The following patch will correct this
-    situation:</para>
-@y
-<para>
-Inetutils が提供するプログラムをすべてインストールすることはしません。
-ただし Inetutils をビルドすると、あらゆる man ページがインストールされてしまいます。
-そこで以下のパッチにより、その状況を修正します。
-</para>
-@z
-
-@x
-<para>Prepare Inetutils for compilation:</para>
-@y
-<para>Inetutils をコンパイルするための準備をします。</para>
-@z
+% @x
+% <para>Prepare Inetutils for compilation:</para>
+% @y
+% <para>Inetutils をコンパイルするための準備をします。</para>
+% @z
 
 @x
       <title>The meaning of the configure options:</title>
@@ -71,13 +58,13 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
           <para>This option prevents Inetutils from installing the
           <command>logger</command> program, which is used by scripts to
           pass messages to the System Log Daemon. Do not install it because
-          Util-linux installs a better version later.</para>
+          Util-linux installed a version earlier.</para>
 @y
 <para>
 このオプションは <command>logger</command>
 プログラムをインストールしないようにします。
 このプログラムはシステムログデーモンに対してメッセージ出力を行うスクリプトにて利用されます。
-ここでこれをインストールしないのは、後に Util-linux パッケージにおいて、より良いバージョンをインストールするためです。
+ここでこれをインストールしないのは、後に Util-linux パッケージにおいて、以前のバージョンをインストールするためです。
 </para>
 @z
 
@@ -163,10 +150,10 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
 @z
 
 @x
-        <seg>ftp, hostname, ping, ping6, rcp, rlogin, rsh, talk, telnet,
+        <seg>ftp, hostname, ping, ping6, rcp, rexec, rlogin, rsh, talk, telnet,
         tftp, and traceroute</seg>
 @y
-        <seg>ftp, hostname, ping, ping6, rcp, rlogin, rsh, talk, telnet,
+        <seg>ftp, hostname, ping, ping6, rcp, rexec, rlogin, rsh, talk, telnet,
         tftp, traceroute</seg>
 @z
 
@@ -216,6 +203,14 @@ IPv6 ネットワーク向けの <command>ping</command>
 @y
 <para>
 リモートファイルコピーを行います。
+</para>
+@z
+
+@x rexec
+          <para>executes commands on a remote host</para>
+@y
+<para>
+リモートホスト上にてコマンドを実行します。
 </para>
 @z
 
