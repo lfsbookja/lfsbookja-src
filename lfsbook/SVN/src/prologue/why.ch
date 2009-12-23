@@ -201,11 +201,9 @@ toolchain.
         LFS packages. </para>
 @y
 <para>
-
-This package contains a utility for generating programs that 
-recognize patterns in text.  It is the GNU version of the lex 
-(lexical analyzer) program.  It is required to build several 
-LFS packages. 
+このパッケージは、テキスト内の特定パターンの認識プログラムを生成するユーティリティを提供します。
+これは lex (字句解析; lexical analyzer) プログラムの GNU 版です。
+LFS 内の他のパッケージの中にこれを必要としているものがあります。
 </para>
 @z
 
@@ -266,10 +264,9 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
         is required to build Gcc. </para>
 @y
 <para>
-
-This package package contains math libraries and have
-useful functions for arbitrary precision arithmetic.  It
-is required to build Gcc. 
+このパッケージは数値演算ライブラリを提供するもので、任意精度演算
+(arbitrary precision arithmetic) 関数を含みます。
+これは GCC をビルドするために必要です。
 </para>
 @z
 
@@ -278,8 +275,7 @@ is required to build Gcc.
         </para>
 @y
 <para>
-
-This package contains programs for searching through files.
+このパッケージはファイル内を検索するプログラムを提供します。
 </para>
 @z
 
@@ -288,9 +284,10 @@ This package contains programs for searching through files.
         One important function of these programs is to format man pages.
         </para>
 @y
-        <para>This package contains programs for processing and formatting text.
-        One important function of these programs is to format man pages.
-        </para>
+<para>
+このパッケージは、テキストを処理し整形するプログラムをいくつか提供します。
+重要なものプログラムとして man ページを生成するものを含みます。
+</para>
 @z
 
 @x GRUB
@@ -318,9 +315,10 @@ This package contains programs for searching through files.
         It is needed to enable proper networking capabilities.
         </para>
 @y
-        <para>This package provides data for network services and protocols.
-        It is needed to enable proper networking capabilities.
-        </para>
+<para>
+このパッケージは、ネットワークサービスやプロトコルに関するデータを提供します。
+ネットワーク機能を適切に有効なものとするために、これが必要です。
+</para>
 @z
 
 @x Inetutils
@@ -328,9 +326,9 @@ This package contains programs for searching through files.
         administration.  
         </para>
 @y
-        <para>This package contains programs for basic network 
-        administration.  
-        </para>
+<para>
+このパッケージは、ネットワーク管理を行う基本的なプログラム類を提供します。
+</para>
 @z
 
 @x IProute2
@@ -338,9 +336,12 @@ This package contains programs for searching through files.
         IPv6 networking.  It was chosen over the other common network
         tools package (net-tools) for its IPv6 capabilities.  </para>
 @y
-        <para>This package contains programs for basic and advanced IPv4 and
-        IPv6 networking.  It was chosen over the other common network
-        tools package (net-tools) for its IPv6 capabilities.  </para>
+<para>
+
+This package contains programs for basic and advanced IPv4 and
+IPv6 networking.  It was chosen over the other common network
+tools package (net-tools) for its IPv6 capabilities.  
+</para>
 @z
 
 @x Kbd

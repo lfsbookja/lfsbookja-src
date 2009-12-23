@@ -57,6 +57,40 @@
 @z
 
 @x
+      <para>2009-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.32.1. Fixes
+          <ulink url="&lfs-ticket-root;2532">#2532</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Automake-1.11.1. Fixes
+          <ulink url="&lfs-ticket-root;2529">#2529</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Coreutils-8.2. Fixes
+          <ulink url="&lfs-ticket-root;2524">#2524</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2009-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Linux-2.6.32.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2532">#2532</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Automake-1.11.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2529">#2529</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Coreutils-8.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2524">#2524</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-12-06</para>
       <itemizedlist>
         <listitem>
