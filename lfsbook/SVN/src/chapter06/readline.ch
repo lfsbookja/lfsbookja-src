@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -32,16 +41,6 @@ Readline を再インストールすると、それまでの古いライブラ�
 <command>ldconfig</command>
 によるリンクに際してエラーを引き起こすことがあります。
 これを避けるため以下の二つの sed コマンドを実行します。
-</para>
-@z
-
-@x
-    <para>Apply fixes for several bugs discovered since the initial release of
-    Readline-&readline-version;:</para>
-@y
-<para>
-Readline-&readline-version;
-の初期リリース以降に発見されたいくつかのバグを修正します。
 </para>
 @z
 

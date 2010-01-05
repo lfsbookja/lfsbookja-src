@@ -30,17 +30,14 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
     <title>Patch のインストール</title>
 @z
 
-% @x
-%     <para>Apply a patch that fixes a bug whereby <command>patch</command>
-%     fails to apply patches whose lines contain trailing carriage return
-%     characters:</para>
-% @y
-% <para>
-% バグを修正するためにパッチを当てます。
-% これは行末に改行文字が含まれているパッチファイルを適用すると
-% <command>patch</command> コマンドがパッチ適用に失敗する不具合を修正するものです。
-% </para>
-% @z
+@x
+    <para>Apply a patch to prevent a test that requires <command>ed</command>
+    from being run:</para>
+@y
+<para>
+<command>ed</command> プログラムを必要とするテストの実行を行わないよう、パッチを適用します。
+</para>
+@z
 
 @x
     <para>Prepare Patch for compilation:</para>

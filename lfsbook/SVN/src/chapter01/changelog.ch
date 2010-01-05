@@ -57,6 +57,71 @@
 @z
 
 @x
+      <para>2010-01-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Prevent a failure in GCC's testsuite due to a conflict
+          with Glibc's getline function.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Readline-6.1. Fixes
+          <ulink url="&lfs-ticket-root;2540">#2540</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Bash-4.1. Fixes
+          <ulink url="&lfs-ticket-root;2539">#2539</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Patch-2.6.1. Fixes
+          <ulink url="&lfs-ticket-root;2538">#2538</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Glibc-2.11.1. Fixes
+          <ulink url="&lfs-ticket-root;2537">#2537</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Psmisc-22.9. Fixes
+          <ulink url="&lfs-ticket-root;2536">#2536</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to IPRoute2-2.6.31. Fixes
+          <ulink url="&lfs-ticket-root;2535">#2535</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-01-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] GCC のテストスイート実行にあたり、Glibc の getline 関数との不整合によるテスト失敗を解消。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Readline-6.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2540">#2540</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Bash-4.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2539">#2539</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Patch-2.6.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2538">#2538</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Glibc-2.11.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2537">#2537</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Psmisc-22.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2536">#2536</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] IPRoute2-2.6.31 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2535">#2535</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2009-12-21</para>
       <itemizedlist>
         <listitem>

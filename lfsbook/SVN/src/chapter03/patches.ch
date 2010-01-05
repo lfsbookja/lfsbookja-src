@@ -43,19 +43,19 @@
 </note>
 @z
 
-@x
-      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
@@ -327,19 +327,19 @@
       </listitem>
 @z
 
-@x
-      <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Vim Fixes Patch - <token>&vim-fixes-patch-size;</token>:</term>

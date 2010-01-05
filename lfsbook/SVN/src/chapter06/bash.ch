@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,15 +23,6 @@
     <title>Installation of Bash</title>
 @y
     <title>Bash のインストール</title>
-@z
-
-@x
-    <para>Apply fixes for several bugs discovered since the initial release of
-    Bash-&bash-version;:</para>
-@y
-<para>
-Bash-&bash-version; の初期リリース以降に発見されたバグを解消するために以下のコマンドを実行します。
-</para>
 @z
 
 @x
