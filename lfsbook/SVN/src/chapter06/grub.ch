@@ -35,7 +35,7 @@ GRUB をコンパイルするための準備をします。
 
 @x
     <para>Using a separate build directory keeps the 2400 generated 
-    files out of the main directory and is recommeded by the developers.
+    files out of the main directory and is recommended by the developers.
     The --disable switches just minimize what is built by disabling
     features and testing programs not really needed for LFS.</para>
 @y

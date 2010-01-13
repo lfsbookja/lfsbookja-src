@@ -37,7 +37,7 @@ rationale は理論的根拠とか原理とか。
 @x
     <para>As stated earlier, the goal of LFS is to build a complete and usable 
     foundation-level system.  This includes all packages needed to replicate 
-    itself while providing a relativly minimal base from which to customize
+    itself while providing a relatively minimal base from which to customize
     a more complete system based on the choices of the user.  This does not
     mean that LFS is the smallest system possible.  Several important packages
     are included that are not strictly required.  The lists below document the
@@ -94,7 +94,7 @@ Bourne シェルを提供し、LSB コア要件を満たします。
 
 @x Binutils
         <para>This package package contains a linker, an assembler, and other 
-        tools for handling object files.  </para>
+        tools for handling object files.</para>
 @y
 <para>
 このパッケージは、リンカ、アセンブラのような、オブジェクトファイルを取り扱うプログラムを提供します。
@@ -103,7 +103,7 @@ Bourne シェルを提供し、LSB コア要件を満たします。
 
 @x Bison
         <para>This package contains the GNU version of yacc (Yet Another
-        Compiler Compiler) needed to build several other LFS  programs.
+        Compiler Compiler) needed to build several other LFS programs.
         </para>
 @y
 <para>
@@ -168,7 +168,7 @@ toolchain.
 
 @x E2fsprogs
         <para>This package contains the utilities for handling the ext2, ext3
-        and ext4 file systems.  These are the most common and thouroughly
+        and ext4 file systems.  These are the most common and thoroughly
         tested file systems that Linux supports.</para>
 @y
 <para>

@@ -57,6 +57,25 @@
 @z
 
 @x
+      <para>2010-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Grammar and spelling updates from 
+          Chris Staub. Fixes
+          <ulink url="&lfs-ticket-root;2548">#2548</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Chris Staub による文法とスペルの更新。
+          <ulink url="&lfs-ticket-root;2548">#2548</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-01-03</para>
       <itemizedlist>
         <listitem>

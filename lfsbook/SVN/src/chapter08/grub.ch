@@ -174,7 +174,7 @@ Linux システムでの取り扱いとは違って GRUB
 @z
 
 @x
-    <para>We use --grub-setup=/bin/true for now to prevent update the 
+    <para>We use --grub-setup=/bin/true for now to prevent updating the
     Master Boot Record (MBR).  In this way, we can test our installation 
     before committing to a change that is hard to revert.</para>
 @y
@@ -209,7 +209,7 @@ Linux システムでの取り扱いとは違って GRUB
 
 @x
   <para>Note that even though there is a warning not to edit the file, you can
-  do so as long as you do not re-reun <command>grub-mkconfig</command>.  The
+  do so as long as you do not re-run <command>grub-mkconfig</command>.  The
   <emphasis>search</emphasis> lines are not meaningful for LFS systems as that
   command needs an initrd image for processing. If installing on a separate
   partition the linux and initrd lines will not have the /boot on the file
@@ -345,7 +345,7 @@ DEVICE の部分はブートディスクに応じて書き換えてください�
    instruction is not found in grub.cfg.  This is the partition that is
    searched for the kernel and other supporting files.  It is different from
    the 'root=' parameter on the 'linux' line in the configuration line.  The
-   later is the partition the kernel mounts as '/'.  In the example grub.cfg
+   latter is the partition the kernel mounts as '/'.  In the example grub.cfg
    above, both values point to /dev/sda2, but if there is a separate boot
    partition, they will be different.</para></note>
 @y

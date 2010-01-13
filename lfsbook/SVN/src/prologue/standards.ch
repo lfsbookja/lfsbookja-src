@@ -32,7 +32,7 @@ LFS の構成は出来る限り Linux の各種標準に従うようにしてい
 @x
         <para><ulink url="http://www.unix.org/single_unix_specification">The 
         Single UNIX Specification Version 3 (POSIX)</ulink>.  Note: 
-        Free registratration is required.</para>
+        Free registration is required.</para>
 @y
         <para><ulink url="http://www.unix.org/single_unix_specification">The 
         Single UNIX Specification Version 3 (POSIX)</ulink>.
@@ -90,7 +90,7 @@ LFS はソースコードから構築するシステムですから、どのパ�
     <para>Creating a complete LFS system capable of passing the LSB
     certifications tests is possible, but not without many additional packages
     that are beyond the scope of LFS.  Most of these additional packages have
-    intallation instructions in BLFS. </para> 
+    installation instructions in BLFS. </para> 
 @y
 <para>
 LFS の構築にあたっては LSB に適合していることを確認するテスト

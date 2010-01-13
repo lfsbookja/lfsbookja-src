@@ -20,9 +20,9 @@
 @z
 
 @x
-<para>The primary target architecture of LFS is the 32-bit Intel CPU.  If you
+<para>The primary target architecture of LFS is the 32-bit Intel CPU. If you
 have not built an LFS system before, you should probably start with that
-target.  The 32-bit architecture is the most widely supported Linux system and
+target. The 32-bit architecture is the most widely supported Linux system and
 is most compatible with both open source and proprietary software.</para>
 @y
 <para>
@@ -34,12 +34,12 @@ LFS システムの構築に初めて取りかかる方は、おそらくこの�
 
 @x
 <para>On the other hand, the instructions in this book are known to work, with
-some modifications, with both Power PC and 64-bit AMD/Intel CPUs.  To build a
-system that utilizes these CPUs, the main prerequisite in addition to those on
-the next few pages, is an existing system such as an earlier LFS system,
-Ubuntu, Red Hat/Fedora, SuSE, or other distribution that targets the system
-that you have.  Also note that a 32-bit system can be installed and used as a
-host system on a 64-bit AMD/Intel system.</para>
+some modifications, with both Power PC and 64-bit AMD/Intel CPUs. To build a
+system that utilizes one of these CPUs, the main prerequisite, in addition to
+those on the next few pages, is an existing Linux system such as an earlier LFS
+installation, Ubuntu, Red Hat/Fedora, SuSE, or other distribution that targets
+the architecture that you have. Also note that a 32-bit distribution can be
+installed and used as a host system on a 64-bit AMD/Intel computer.</para>
 @y
 <para>
 本書の作業手順は、多少の変更を加えれば Power PC や 64ビット AMD/インテル CPU
@@ -66,9 +66,9 @@ LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などのディ�
 % @z
 
 @x
-<para>Some other facts about a 64-bit systems need to be added here.  When
+<para>Some other facts about a 64-bit systems need to be added here. When
 compared to a 32-bit system, the sizes of executable programs are slightly
-larger and the execution speeds are only slightly faster.  For example, in a
+larger and the execution speeds are only slightly faster. For example, in a
 test build of LFS-6.5 on a Core2Duo CPU based system, the following statistics
 were measured:</para>
 @y
@@ -106,10 +106,10 @@ data that exceeds 4GB, the advantages of a 64-bit system are substantial.</para>
 
 @x
 <para>The default 64-bit build that results from LFS is considered a "pure"
-64-bit system.  That is, it supports 64-bit executables only.  Building a
-"multi-lib" system requires building many applications twice, once for a 32-bit
-system and once for a 64-bit system.  Currently this is not directly supported
-in the book, but is under consideration for a future release.  In the meantime,
+64-bit system. That is, it supports 64-bit executables only. Building a
+"multi-lib" system requires compiling many applications twice, once for a 32-bit
+system and once for a 64-bit system. Currently this is not directly supported
+in the book, but is under consideration for a future release. In the meantime,
 you can refer to the <ulink url="http://trac.cross-lfs.org/">Cross Linux From
 Scratch</ulink> project for this advanced topic.</para>
 @y
@@ -126,9 +126,9 @@ LFS の手順に従って作り出す 64ビットシステムは、"純粋な" 6
 @z
 
 @x
-<para>There is one last comment about 64-bit systems.  There are some packages
+<para>There is one last comment about 64-bit systems. There are some packages
 that cannot currently be built in a "pure" 64-bit system or require specialized
-build instructions.  Generally, these packages have some embedded 32-bit
+build instructions. Generally, these packages have some embedded 32-bit
 specific assembly language instructions that fail when building on a 64-bit
 system.  Examples include the  <ulink
 url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch
