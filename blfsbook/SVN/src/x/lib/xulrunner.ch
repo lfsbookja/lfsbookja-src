@@ -239,19 +239,21 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <filename class='directory'>mozilla</filename> directory, and named
     <filename>.mozconfig</filename>).</para>
 @y
-    <para>The configuration of <application>Xulrunner</application> is
-    accomplished by creating a <filename>.mozconfig</filename> file containing
-    the desired configuration options. A default <filename>.mozconfig</filename>
-    is created below. To see the entire list of available configuration options
-    (and an abbreviated description of each one), issue
-    <command>./configure --help</command>. You should review the entire file
-    and comment or uncomment options as necessary. If you would prefer to
-    download the file instead of creating it by typing or cut-and-pasting, you
-    can find it at
-    <ulink url="&files-anduin;/xulrunner-&xulrunner-version;-mozconfig"/>
-    (the file must be installed in the root of the source tree
-    <filename class='directory'>mozilla</filename> directory, and named
-    <filename>.mozconfig</filename>).</para>
+<para>
+<application>Xulrunner</application> の設定は <filename>.mozconfig</filename>
+ファイルにより行います。このファイルには必要な設定オプションを指定します。
+デフォルトの <filename>.mozconfig</filename> ファイルを以下に示します。
+利用可能な設定オプション (また各オプションに対する簡単な説明)
+については <command>./configure --help</command>
+を実行して確認することができます。
+設定ファイル内を十分に確認して、設定オプションの行を、必要に応じてコメント化したりコメントをはずしたりすることが必要です。
+この設定ファイルをタイプ入力したり貼り付けたりするのではなく
+<ulink url="&files-anduin;/xulrunner-&xulrunner-version;-mozconfig"/>
+からダウンロードすることもできます。
+(設定ファイルは、ソースディレクトリ配下の <filename class='directory'>mozilla</filename>
+ディレクトリに配置し、ファイル名は <filename>.mozconfig</filename>
+としてください。)
+</para>
 @z
 
 @x

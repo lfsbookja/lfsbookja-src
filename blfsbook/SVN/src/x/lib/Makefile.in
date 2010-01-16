@@ -140,12 +140,12 @@ BOOKdir = $(top_builddir)/@bookdir@/x/lib
 EXTRA_DIST = atk.ch cairo.ch freeglut.ch goffice.ch gtk+.ch gtk+2.ch \
 	hicolor-icon-theme.ch lesstif.ch lib.ch libwnck.ch libxklavier.ch \
 	mesalib.ch pango.ch qt.ch qt4.ch shared-mime-info.ch \
-	startup-notification.ch xulrunner.ch
+	startup-notification.ch xulrunner.ch webkitgtk.ch
 
 srcs = atk.xml cairo.xml freeglut.xml goffice.xml gtk+.xml gtk+2.xml \
 	hicolor-icon-theme.xml lesstif.xml lib.xml libwnck.xml libxklavier.xml \
 	mesalib.xml pango.xml qt.xml qt4.xml shared-mime-info.xml \
-	startup-notification.xml xulrunner.xml
+	startup-notification.xml xulrunner.xml webkitgtk.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -352,6 +352,7 @@ qt4.xml: $(BOOKdir)/$@ $(srcdir)/qt4.ch
 shared-mime-info.xml: $(BOOKdir)/$@ $(srcdir)/shared-mime-info.ch
 startup-notification.xml: $(BOOKdir)/$@ $(srcdir)/startup-notification.ch
 xulrunner.xml: $(BOOKdir)/$@ $(srcdir)/xulrunner.ch
+webkitgtk.xml: $(BOOKdir)/$@ $(srcdir)/webkitgtk.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

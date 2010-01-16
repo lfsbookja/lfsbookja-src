@@ -197,12 +197,12 @@ is an ASN.1 syntax tree generator for
 
 @x libtasn1.{so,a}
           <para>is a library for Abstract Syntax Notation One (ASN.1) and
-           Distinguish Encoding Rules (DER) manipulation..</para>
+           Distinguish Encoding Rules (DER) manipulation.</para>
 @y
 <para>
 
 is a library for Abstract Syntax Notation One (ASN.1) and
-Distinguish Encoding Rules (DER) manipulation..
+Distinguish Encoding Rules (DER) manipulation.
 </para>
 @z
 

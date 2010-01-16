@@ -140,7 +140,7 @@ BOOKdir = $(top_builddir)/@bookdir@/gnome/add
 EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	dummy-libraries.ch dummy-utilities.ch ekiga.ch eog.ch \
 	epiphany.ch evince.ch evolution-data-server.ch file-roller.ch \
-	gcalctool.ch gconf-editor.ch gdm.ch gedit.ch gnome-audio.ch \
+	gcalctool.ch gconf-editor.ch gdm.ch gedit.ch \
 	gnome-games.ch gnome-keyring-manager.ch gnome-mag.ch gnome-media.ch \
 	gnome-mount.ch gnome-netstatus.ch gnome-screensaver.ch \
 	gnome-speech.ch gnome-system-monitor.ch gnome-utils.ch \
@@ -148,12 +148,13 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	gucharmap.ch java-access-bridge.ch libgail-gnome.ch libgnomecups.ch \
 	libgnomeprint.ch libgnomeprintui.ch nautilus-cd-burner.ch orca.ch \
 	sound-juicer.ch system-tools-backends.ch totem.ch zenity.ch \
-	eel.ch gail.ch gnome-power-manager.ch totem-pl-parser.ch
+	eel.ch gail.ch gnome-power-manager.ch totem-pl-parser.ch \
+	brasero.ch
 
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
 	epiphany.xml evince.xml evolution-data-server.xml file-roller.xml \
-	gcalctool.xml gconf-editor.xml gdm.xml gedit.xml gnome-audio.xml \
+	gcalctool.xml gconf-editor.xml gdm.xml gedit.xml \
 	gnome-games.xml gnome-keyring-manager.xml gnome-mag.xml gnome-media.xml \
 	gnome-mount.xml gnome-netstatus.xml gnome-screensaver.xml \
 	gnome-speech.xml gnome-system-monitor.xml gnome-utils.xml \
@@ -161,7 +162,8 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	gucharmap.xml java-access-bridge.xml libgail-gnome.xml libgnomecups.xml \
 	libgnomeprint.xml libgnomeprintui.xml nautilus-cd-burner.xml orca.xml \
 	sound-juicer.xml system-tools-backends.xml totem.xml zenity.xml \
-	eel.xml gail.xml gnome-power-manager.xml totem-pl-parser.xml
+	eel.xml gail.xml gnome-power-manager.xml totem-pl-parser.xml \
+	brasero.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -368,7 +370,6 @@ gcalctool.xml: $(BOOKdir)/$@ $(srcdir)/gcalctool.ch
 gconf-editor.xml: $(BOOKdir)/$@ $(srcdir)/gconf-editor.ch
 gdm.xml: $(BOOKdir)/$@ $(srcdir)/gdm.ch
 gedit.xml: $(BOOKdir)/$@ $(srcdir)/gedit.ch
-gnome-audio.xml: $(BOOKdir)/$@ $(srcdir)/gnome-audio.ch
 gnome-games.xml: $(BOOKdir)/$@ $(srcdir)/gnome-games.ch
 gnome-keyring-manager.xml: $(BOOKdir)/$@ $(srcdir)/gnome-keyring-manager.ch
 gnome-mag.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mag.ch
@@ -397,6 +398,7 @@ system-tools-backends.xml: $(BOOKdir)/$@ $(srcdir)/system-tools-backends.ch
 totem.xml: $(BOOKdir)/$@ $(srcdir)/totem.ch
 zenity.xml: $(BOOKdir)/$@ $(srcdir)/zenity.ch
 totem-pl-parser.xml: $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
+brasero.xml: $(BOOKdir)/$@ $(srcdir)/brasero.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

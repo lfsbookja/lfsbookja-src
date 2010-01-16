@@ -73,10 +73,12 @@ locations.
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libsoup"/></para>
+    <para role="required"><xref linkend="gtk2"/> and
+    <xref linkend="libsoup"/></para>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
-    <para role="required"><xref linkend="libsoup"/></para>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <para role="required"><xref linkend="gtk2"/>、
+    <xref linkend="libsoup"/></para>
 @z
 
 @x

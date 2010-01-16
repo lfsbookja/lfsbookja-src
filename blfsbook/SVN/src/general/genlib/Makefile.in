@@ -147,7 +147,8 @@ EXTRA_DIST = glib2.ch libesmtp.ch libpthread-stubs.ch pcre.ch \
 	mowgli.ch pcre.ch popt.ch pth.ch slang.ch slib.ch liboil.ch \
 	libtasn1.ch libunique.ch nspr.ch libxcb.ch xcb-proto.ch \
 	libffi.ch gir-repository.ch gobject-introspection.ch \
-	libnotify.ch
+	libnotify.ch enchant.ch icu.ch libical.ch libelf.ch libggz.ch \
+	libsigc++.ch ptlib.ch
 
 srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	aspell.xml gmime.xml libgcrypt.xml libusb-compat.xml popt.xml \
@@ -159,7 +160,8 @@ srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	mowgli.xml pcre.xml popt.xml pth.xml slang.xml slib.xml liboil.xml \
 	libtasn1.xml libunique.xml nspr.xml libxcb.xml xcb-proto.xml \
 	libffi.xml gir-repository.xml gobject-introspection.xml \
-	libnotify.xml
+	libnotify.xml enchant.xml icu.xml libical.xml libelf.xml libggz.xml \
+        libsigc++.xml ptlib.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -403,6 +405,13 @@ libffi.xml: $(BOOKdir)/$@ $(srcdir)/libffi.ch
 gir-repository.xml: $(BOOKdir)/$@ $(srcdir)/gir-repository.ch
 gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
 libnotify.xml: $(BOOKdir)/$@ $(srcdir)/libnotify.ch
+enchant.xml: $(BOOKdir)/$@ $(srcdir)/enchant.ch
+icu.xml: $(BOOKdir)/$@ $(srcdir)/icu.ch
+libical.xml: $(BOOKdir)/$@ $(srcdir)/libical.ch
+libelf.xml: $(BOOKdir)/$@ $(srcdir)/libelf.ch
+libggz.xml: $(BOOKdir)/$@ $(srcdir)/libggz.ch
+libsigc++.xml: $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
+ptlib.xml: $(BOOKdir)/$@ $(srcdir)/ptlib.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

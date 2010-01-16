@@ -23,15 +23,16 @@
   <para>Set an environment variable to resolve the prefix destination.</para>
 @y
 <para>
-
-Set an environment variable to resolve the prefix destination.
+環境変数にプリフィックスを設定しインストール先を指定します。
 </para>
 @z
 
 @x
   <para>If <application>GNOME</application> is your desktop of choice:</para>
 @y
-  <para>If <application>GNOME</application> is your desktop of choice:</para>
+<para>
+If <application>GNOME</application> is your desktop of choice:
+</para>
 @z
 
 @x
@@ -51,13 +52,13 @@ Set an environment variable to resolve the prefix destination.
     issue the following commands as the
     <systemitem class='username'>root</systemitem> user:</para>
 @y
-    <para>You may wish to create a symbolic link to the actual versioned
-    directory using a non-versioned name. This has the advantage of an easier
-    path to type in all the changes below and also makes it easy to point
-    to a different/newer version of GNOME without changing all the edits
-    below. If you wish to use a non-versioned name in the changes below,
-    issue the following commands as the
-    <systemitem class='username'>root</systemitem> user:</para>
+<para>You may wish to create a symbolic link to the actual versioned
+directory using a non-versioned name. This has the advantage of an easier
+path to type in all the changes below and also makes it easy to point
+to a different/newer version of GNOME without changing all the edits
+below. If you wish to use a non-versioned name in the changes below,
+issue the following commands as the
+<systemitem class='username'>root</systemitem> user:</para>
 @z
 
 @x

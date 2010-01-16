@@ -2,12 +2,14 @@ BOOKdir = $(top_builddir)/@bookdir@/basicnet/netprogs
 EXTRA_DIST = ncpfs.ch ntp.ch rsync-client.ch wget.ch cvs.ch net-tools.ch \
 	openssh-client.ch samba3-client.ch wireless-tools.ch \
 	inetutils.ch netprogs.ch othernetprogs.ch subversion.ch \
-	ncftp.ch nfs-utils-client.ch portmap.ch tcpwrappers.ch
+	ncftp.ch nfs-utils-client.ch portmap.ch tcpwrappers.ch \
+	ggz-client-libs.ch
 srcdir = @srcdir@
 srcs = ncpfs.xml ntp.xml rsync-client.xml wget.xml cvs.xml net-tools.xml \
 	openssh-client.xml samba3-client.xml wireless-tools.xml \
 	inetutils.xml netprogs.xml othernetprogs.xml subversion.xml \
-	ncftp.xml nfs-utils-client.xml portmap.xml tcpwrappers.xml
+	ncftp.xml nfs-utils-client.xml portmap.xml tcpwrappers.xml \
+	ggz-client-libs.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -35,3 +37,4 @@ ncftp.xml: $(BOOKdir)/$@ $(srcdir)/ncftp.ch
 nfs-utils-client.xml: $(BOOKdir)/$@ $(srcdir)/nfs-utils-client.ch
 portmap.xml: $(BOOKdir)/$@ $(srcdir)/portmap.ch
 tcpwrappers.xml: $(BOOKdir)/$@ $(srcdir)/tcpwrappers.ch
+ggz-client-libs.xml: $(BOOKdir)/$@ $(srcdir)/ggz-client-libs.ch

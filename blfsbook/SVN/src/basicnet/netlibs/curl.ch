@@ -98,7 +98,7 @@
     <xref linkend="openldap"/>,
     <xref linkend="libidn"/>,
     <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>,
-    <ulink url="http://www.libssh2.org/wiki/index.php/Main_Page">libssh2</ulink> 
+    <ulink url="http://www.libssh2.org">libssh2</ulink> 
     (for secure transfers),
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
     <ulink url="http://www.vintela.com/resources/topics/spnego/">SPNEGO</ulink>, and
@@ -110,7 +110,7 @@
     <xref linkend="openldap"/>,
     <xref linkend="libidn"/>,
     <xref linkend="mitkrb"/> または <xref linkend="heimdal"/>,
-    <ulink url="http://www.libssh2.org/wiki/index.php/Main_Page">libssh2</ulink> 
+    <ulink url="http://www.libssh2.org">libssh2</ulink> 
     (セキュアな転送のため),
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
     <ulink url="http://www.vintela.com/resources/topics/spnego/">SPNEGO</ulink>,
