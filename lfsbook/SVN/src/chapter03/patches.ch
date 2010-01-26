@@ -239,20 +239,6 @@
       </listitem>
 @z
 
-% @x
-%       <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
-%         <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
-%         <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
-%       </listitem>
-% @z
-
 @x
       <term>Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:</term>
       <listitem>
@@ -267,19 +253,13 @@
       </listitem>
 @z
 
-% @x
-%       <term>Patch Carriage Return Fix Patch - <token>&patch-fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&patch-fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&patch-fixes-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Patch Carriage Return Fix Patch - <token>&patch-fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&patch-fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&patch-fixes-patch-md5;</literal></para>
-%       </listitem>
-% @z
+@x Patch Testsuite Fix Patch
+        <para>Download: <ulink url="&patches-root;&patch-test-patch;"/></para>
+        <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
+@y
+        <para>ダウンロード: <ulink url="&patches-root;&patch-test-patch;"/></para>
+        <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
+@z
 
 @x コメント部分につき本来は不要なチェンジ
     <!-- <varlistentry>

@@ -54,6 +54,12 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] - src/chapter03/patches.ch,
+          chapter06/gcc.ch:
+          訳出漏れの訂正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter03/patches.ch,
           chapter06/gzip.ch:
           SVN-20100124, r9162 対応。
           </para>
