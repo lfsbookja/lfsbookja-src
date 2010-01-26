@@ -57,6 +57,117 @@
 @z
 
 @x
+      <para>2010-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Update to GRUB-1.97.2.
+          Fixes
+          <ulink url="&lfs-ticket-root;2556">#2556</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Update to lfs-bootscripts-20100124, which checks that
+          /dev isn't already mounted.. Fixes
+          <ulink url="&lfs-ticket-root;2550">#2550</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Don't create /lib/udev/devices/kmsg as Udev >= 142
+          creates it automatically. Fixes
+          <ulink url="&lfs-ticket-root;2552">#2552</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to File-5.04. Fixes
+          <ulink url="&lfs-ticket-root;2555">#2555</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to GCC-4.4.3. Fixes
+          <ulink url="&lfs-ticket-root;2553">#2553</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Gzip-1.4. Fixes
+          <ulink url="&lfs-ticket-root;2551">#2551</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Udev-150. Fixes
+          <ulink url="&lfs-ticket-root;2547">#2547</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to GMP-5.0.0. Fixes
+          <ulink url="&lfs-ticket-root;2546">#2546</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Coreutils-8.4. Fixes
+          <ulink url="&lfs-ticket-root;2545">#2545</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Util-Linux-NG-2.17. Fixes
+          <ulink url="&lfs-ticket-root;2544">#2544</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.32.5. Fixes
+          <ulink url="&lfs-ticket-root;2542">#2542</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Psmisc-22.10. Fixes
+          <ulink url="&lfs-ticket-root;2541">#2541</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] GRUB-1.97.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2556">#2556</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] lfs-bootscripts-20100124 へのアップグレード。
+          /dev がマウントされていない場合のチェックを行う。
+          <ulink url="&lfs-ticket-root;2550">#2550</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Udev >= 142 の場合は /lib/udev/devices/kmsg
+          を自動生成するため、生成しないように。
+          <ulink url="&lfs-ticket-root;2552">#2552</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] File-5.04. へのアップグレード。
+          <ulink url="&lfs-ticket-root;2555">#2555</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] GCC-4.4.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2553">#2553</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Gzip-1.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2551">#2551</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Udev-150  へのアップグレード。
+          <ulink url="&lfs-ticket-root;2547">#2547</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] GMP-5.0.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2546">#2546</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Coreutils-8.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2545">#2545</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Util-Linux-NG-2.17 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2544">#2544</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.32.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2542">#2542</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Psmisc-22.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2541">#2541</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-01-09</para>
       <itemizedlist>
         <listitem>

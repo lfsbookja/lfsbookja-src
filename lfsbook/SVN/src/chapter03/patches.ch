@@ -239,19 +239,19 @@
       </listitem>
 @z
 
-@x
-      <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
-        <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
-        <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
+%         <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Gzip Zdiff Patch - <token>&gzip-zdiff-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&gzip-zdiff-patch;"/></para>
+%         <para>MD5 sum: <literal>&gzip-zdiff-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:</term>
