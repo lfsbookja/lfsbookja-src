@@ -178,7 +178,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = contrib
 BOOKdir = $(top_builddir)/@bookdir@/udev-config
-srcs = 55-lfs.rules 61-cdrom.rules
+srcs = 55-lfs.rules
 all: all-recursive
 
 .SUFFIXES:
@@ -522,8 +522,6 @@ uninstall-am:
 all: $(srcs)
 
 55-lfs.rules: $(BOOKdir)/55-lfs.rules
-	cp -p $(BOOKdir)/$@ $@
-61-cdrom.rules: $(BOOKdir)/61-cdrom.rules
 	cp -p $(BOOKdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

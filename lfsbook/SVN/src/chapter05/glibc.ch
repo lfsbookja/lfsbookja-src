@@ -154,28 +154,62 @@ Linux カーネル 2.6.18 以上のサポートを行うよう指示します。
 @z
 
 @x
-          <para>The build requires support for forced unwind, but because it is
-          being cross compiled, it cannot auto detect it. Setting this variable
-          on the command line explicitly tells the
-          <command>configure</command> script that support is available.</para>
+          <para>The linker installed during
+          <xref linkend="ch-tools-binutils-pass1"/> was cross-compiled and as
+          such cannot be used until Glibc has been installed.  This means that
+          the configure test for force-unwind support will fail, as it relies on
+          a working linker.  The libc_cv_forced_unwind=yes variable is passed in
+          order to inform <command>configure</command> that force-unwind
+          support is available without it having to run the test.</para>
 @y
 <para>
-ここでビルドする Glibc には <quote>forced unwind</quote> サポートを必要とします。
-ただここではクロスコンパイルが行われているため、自動的にはそのサポートが為されません。
-そこでコマンドラインから明示的に変数値を設定することで
-<command>configure</command> スクリプトに対してそのサポートを有効とするように指示します。
+<xref linkend="ch-tools-binutils-pass1"/>
+においてインストールしたリンカは、クロスコンパイルにより生成したものです。
+これは Glibc をインストールするまでは使えません。
+これはつまり force-unwind サポートに対するテストは失敗することを意味します。
+正しく動作するリンカに依存するためです。
+libc_cv_forced_unwind=yes の変数設定は、
+<command>configure</command> スクリプトに対して
+テストを実行しなくても force-unwind サポート機能を利用可能とすることを指示します。
 </para>
 @z
 
 @x
-          <para>The build also requires support for C cleanup handling, which it
-          cannot auto detect when being cross compiled. Enable it explicitly.</para>
+          <para>Simlarly, we pass libc_cv_c_cleanup=yes through to the
+          <command>configure</command> script so that the test is skipped and C
+          cleanup handling support is configured.</para>
 @y
 <para>
-同じく Glibc には <quote>C cleanup handling</quote> サポートを必要とします。
-クロスコンパイル時には自動的には検出されないため、明示的に指定します。
+上と同様に <command>configure</command>
+スクリプトに対して libc_cv_c_cleanup=yes を指示します。
+これによりテストが省略され、C のクリーンアップハンドリング
+(cleanup handling) のサポートを指定します。
 </para>
 @z
+
+% @x
+%           <para>The build requires support for forced unwind, but because it is
+%           being cross compiled, it cannot auto detect it. Setting this variable
+%           on the command line explicitly tells the
+%           <command>configure</command> script that support is available.</para>
+% @y
+% <para>
+% ここでビルドする Glibc には <quote>forced unwind</quote> サポートを必要とします。
+% ただここではクロスコンパイルが行われているため、自動的にはそのサポートが為されません。
+% そこでコマンドラインから明示的に変数値を設定することで
+% <command>configure</command> スクリプトに対してそのサポートを有効とするように指示します。
+% </para>
+% @z
+% 
+% @x
+%           <para>The build also requires support for C cleanup handling, which it
+%           cannot auto detect when being cross compiled. Enable it explicitly.</para>
+% @y
+% <para>
+% 同じく Glibc には <quote>C cleanup handling</quote> サポートを必要とします。
+% クロスコンパイル時には自動的には検出されないため、明示的に指定します。
+% </para>
+% @z
 
 @x
     <para>During this stage the following warning might appear:</para>

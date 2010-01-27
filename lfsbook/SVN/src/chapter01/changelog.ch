@@ -57,6 +57,35 @@
 @z
 
 @x
+      <para>2010-01-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Remove a lot of redundant Udev rules, using upstream's
+          rules instead. Fixes
+          <ulink url="&lfs-ticket-root;2527">#2527</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bryan] Use /etc/modprobe.d/*.conf files instead of a single
+          /etc/modprobe.conf file, since module-init-tools now warns.  Fixes
+          <ulink url="&lfs-ticket-root;2560">#2560</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-01-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] 無用な Udev ルールを大幅に削除し、アップストリームによるルールを利用。
+          <ulink url="&lfs-ticket-root;2527">#2527</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bryan] 単一の /etc/modprobe.conf ファイルではなく、/etc/modprobe.d/*.conf
+          ファイルを利用するように変更。最近の module-init-tools が警告を出すため。
+          <ulink url="&lfs-ticket-root;2560">#2560</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-01-24</para>
       <itemizedlist>
         <listitem>

@@ -155,17 +155,18 @@ menuconfig の ncurses による行表示を適切に行うために必要とな
 @z
 
 @x
-    <para>If using kernel modules, an <filename>/etc/modprobe.conf</filename>
-    file may be needed. Information pertaining to modules and kernel
-    configuration is located in <xref linkend="ch-scripts-udev"/> and in the
-    kernel documentation in the <filename
+    <para>If using kernel modules, module configuration in <filename
+    class="directory">/etc/modprobe.d</filename> may be required.
+    Information pertaining to modules and kernel configuration is
+    located in <xref linkend="ch-scripts-udev"/> and in the kernel
+    documentation in the <filename
     class="directory">linux-&linux-version;/Documentation</filename> directory.
     Also, <filename>modprobe.conf(5)</filename> may be of interest.</para>
 @y
 <para>
 カーネルモジュールを利用する場合
-<filename>/etc/modprobe.conf</filename>
-ファイルを必要とします。
+<filename class="directory">/etc/modprobe.d</filename>
+ディレクトリ内での設定を必要とします。
 モジュールやカーネル設定に関する情報は
 <xref linkend="ch-scripts-udev"/>
 や <filename class="directory">linux-&linux-version;/Documentation</filename>
@@ -333,15 +334,15 @@ Glibc のコンパイルによって得られるものでなければならず�
 @z
 
 @x
-    <para>The <filename>/etc/modprobe.conf</filename> file needs to be created
-    so that if the USB drivers (ehci_hcd, ohci_hcd and uhci_hcd) have been built
-    as modules, they will be loaded in the correct order; ehci_hcd needs to be
-    loaded prior to ohci_hcd and uhci_hcd in order to avoid a warning being
-    output at boot time.</para>
+    <para>The <filename>/etc/modprobe.d/usb.conf</filename> file needs to be
+    created so that if the USB drivers (ehci_hcd, ohci_hcd and uhci_hcd) have
+    been built as modules, they will be loaded in the correct order; ehci_hcd
+    needs to be loaded prior to ohci_hcd and uhci_hcd in order to avoid a
+    warning being output at boot time.</para>
 @y
 <para>
 USB ドライバをモジュールとして構築した場合は
-<filename>/etc/modprobe.conf</filename>
+<filename>/etc/modprobe.d/usb.conf</filename>
 ファイルを生成する必要があります。
 USB ドライバには ehci_hcd、ohci_hcd、uhci_hcd があります。
 これらのロード順は正しく行う必要があります。
@@ -351,11 +352,11 @@ ehci_hcd は ohci_hcd や uhci_hcd よりも先にロードしなければなり
 @z
 
 @x
-    <para>Create a new file <filename>/etc/modprobe.conf</filename> by running
+    <para>Create a new file <filename>/etc/modprobe.d/usb.conf</filename> by running
     the following:</para>
 @y
 <para>
-以下のコマンドを実行して <filename>/etc/modprobe.conf</filename> ファイルを生成します。
+以下のコマンドを実行して <filename>/etc/modprobe.d/usb.conf</filename> ファイルを生成します。
 </para>
 @z
 

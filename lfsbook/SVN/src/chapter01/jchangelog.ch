@@ -50,17 +50,29 @@
 -->
 
     <listitem>
+      <para>2010-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter05/glibc.ch,
+          src/chapter07/udev.ch, src/chapter08/kernel.ch:
+          SVN-20100126, r9167 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-01-26</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] - src/chapter03/patches.ch,
-          chapter06/gcc.ch:
+          src/chapter06/gcc.ch:
           訳出漏れの訂正。
           </para>
         </listitem>
         <listitem>
           <para>[matsuand] - src/chapter03/patches.ch,
-          chapter06/gzip.ch:
+          src/chapter06/gzip.ch:
           SVN-20100124, r9162 対応。
           </para>
         </listitem>

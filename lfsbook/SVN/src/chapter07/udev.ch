@@ -521,8 +521,9 @@ Udev は <emphasis>snd-pcm-oss</emphasis>
       enhances the functionality of <emphasis>snd-pcm</emphasis> by making the
       sound cards available to OSS applications), configure
       <command>modprobe</command> to load the wrapper after Udev loads the
-      wrapped module. To do this, add an <quote>install</quote> line in
-      <filename>/etc/modprobe.conf</filename>. For example:</para>
+      wrapped module. To do this, add an <quote>install</quote> line in any
+      <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename>
+      file. For example:</para>
 @y
 <para>
 <quote>ラッパー (wrapper)</quote>
@@ -531,8 +532,7 @@ Udev は <emphasis>snd-pcm-oss</emphasis>
 <emphasis>snd-pcm</emphasis> の機能拡張を行うもので、
 OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため)
 <command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
-これは以下のように
-<filename>/etc/modprobe.conf</filename>
+これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename>
 ファイル内にて <quote>install</quote> の記述行を加えることで実現します。
 </para>
 @z
@@ -563,13 +563,13 @@ Udev が不必要なモジュールをロードする問題
 @z
 
 @x
-      <para>Either don't build the module, or blacklist it in
-      <filename>/etc/modprobe.conf</filename> file as done with the
+      <para>Either don't build the module, or blacklist it in a
+      <filename>/etc/modprobe.d/blacklist.conf</filename> file as done with the
       <emphasis>forte</emphasis> module in the example below:</para>
 @y
 <para>
 不必要なモジュールはこれをビルドしないことにするか、あるいは
-<filename>/etc/modprobe.conf</filename>
+<filename>/etc/modprobe.d/blacklist.conf</filename>
 ファイルにブラックリスト (blacklist) として登録してください。
 例えば <emphasis>forte</emphasis>
 モジュールをブラックリストに登録するには以下のようにします。
