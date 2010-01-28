@@ -117,10 +117,18 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libxcb"/></para>
+    <para role="optional"><xref linkend="libxcb"/> (a modern Xlib replacement)
+    and <xref linkend="xmlto"/> with one or more of the following:
+    <xref linkend="fop"/>, <xref linkend="Links"/>, <xref linkend="lynx"/>,
+    and <xref linkend="w3m"/> (to generate additional PDF or text
+    documentation for the libXfont package).</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libxcb"/></para>
+    <para role="optional"><xref linkend="libxcb"/> (最近の Xlib に変わるもの),
+    <xref linkend="xmlto"/>、さらに以下のいずれか１つ：
+    <xref linkend="fop"/>, <xref linkend="Links"/>, <xref linkend="lynx"/>,
+    <xref linkend="w3m"/> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)
+    </para>
 @z
 
 @x
@@ -189,18 +197,16 @@
 @x
     <para><parameter>--without-xcb</parameter>: By default,
     <application>libX11</application> will use <xref linkend="libxcb"/>
-    for its transport layer. This parameter is necessary in the
-    <command>./configure</command> command if <xref linkend="libxcb"/>
-    is not installed.</para>
+    for its transport layer. Omit this parameter (or the <command>case</command>
+    statement) if you've installed <xref linkend="libxcb"/>.</para>
 @y
 <para>
 <parameter>--without-xcb</parameter>:
 <application>libX11</application>
 はデフォルトで、トランスポート層 (transport layer) の機能に <xref linkend="libxcb"/>
 を利用します。
-<xref linkend="libxcb"/>
-をインストールしていない場合は <command>./configure</command>
-スクリプトにて本パラメータの指定が必要です。
+<xref linkend="libxcb"/> をインストールしている場合は <command>./configure</command>
+スクリプトにて本パラメータ (あるいは <command>case</command> 文) を除いてください。
 </para>
 @z
 
@@ -214,14 +220,14 @@
     <para>If you've chosen to install <application>Xorg</application> into
     <filename class="directory">/usr</filename>, then no further
     configuration is necessary and you can skip the rest of this section.
-    If you've opted for an alternate prefix, you should create two symlinks
+    If you've opted for an alternate prefix, you should create three symlinks
     to satisfy the expected environment of several packages.
     Execute the following commands as the root user:</para>
 @y
     <para>If you've chosen to install <application>Xorg</application> into
     <filename class="directory">/usr</filename>, then no further
     configuration is necessary and you can skip the rest of this section.
-    If you've opted for an alternate prefix, you should create two symlinks
+    If you've opted for an alternate prefix, you should create three symlinks
     to satisfy the expected environment of several packages.
     Execute the following commands as the root user:</para>
 @z
@@ -244,9 +250,9 @@
 
 @x
         <seg>cxpm, makestrs, sxpm, xft-config</seg>
-        <seg>libAppleWM.{so,a}, libdmx.{so,a}, libfontenc.{so,a},
+        <seg>libdmx.{so,a}, libfontenc.{so,a},
         libFS.{so,a}, libICE.{so,a}, libpciaccess.{so,a}, libSM.{so,a},
-        libWindowsWM.{so,a}, libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
+        libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
         libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
         libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
         libXfontcache.{so,a}, libXfont.{so,a}, libXft.{so,a},
@@ -258,9 +264,9 @@
         <seg>None</seg>
 @y
         <seg>cxpm, makestrs, sxpm, xft-config</seg>
-        <seg>libAppleWM.{so,a}, libdmx.{so,a}, libfontenc.{so,a},
+        <seg>libdmx.{so,a}, libfontenc.{so,a},
         libFS.{so,a}, libICE.{so,a}, libpciaccess.{so,a}, libSM.{so,a},
-        libWindowsWM.{so,a}, libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
+        libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
         libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
         libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
         libXfontcache.{so,a}, libXfont.{so,a}, libXft.{so,a},
