@@ -57,6 +57,32 @@
 @z
 
 @x
+      <para>2010-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Udev-151. Fixes
+          <ulink url="&lfs-ticket-root;2561">#2561</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.32.6. Fixes
+          <ulink url="&lfs-ticket-root;2559">#2559</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Udev-151 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2561">#2561</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.32.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2559">#2559</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-01-26</para>
       <itemizedlist>
         <listitem>

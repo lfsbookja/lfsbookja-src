@@ -50,6 +50,14 @@ Udev はそれらを認識できません。
 </para>
 @z
 
+% @x
+%     <para>Correct permissions for floppy devices:</para>
+% @y
+% <para>
+% フロッピーデバイスの権限を正しく設定します。
+% </para>
+% @z
+
 @x
     <para>Prepare the package for compilation:</para>
 @y
@@ -194,14 +202,14 @@ LFS 固有のカスタムルールファイルについて説明しているド�
 </para>
 @z
 
-@x
-    <para>Install the documentation that explains the commonly-used rules
-    files provided by Udev:</para>
-@y
-<para>
-Udev 提供の、一般的に利用されるルールファイルについてのドキュメントをインストールします。
-</para>
-@z
+% @x
+%     <para>Install the documentation that explains the commonly-used rules
+%     files provided by Udev:</para>
+% @y
+% <para>
+% Udev 提供の、一般的に利用されるルールファイルについてのドキュメントをインストールします。
+% </para>
+% @z
 
 @x
     <title>Contents of Udev</title>

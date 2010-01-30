@@ -50,6 +50,29 @@
 -->
 
     <listitem>
+      <para>2010-01-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/udev.ch,
+          src/chapter07/symlinks.ch:
+          SVN-20100128, r9171 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2010-01-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/udev.ch:
+          訳出漏れの訂正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-01-27</para>
       <itemizedlist>
         <listitem>

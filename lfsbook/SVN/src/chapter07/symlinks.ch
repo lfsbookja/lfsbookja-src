@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -297,15 +306,15 @@ Udev ルールを適切に記述することで、固定的なシンボリック
 </para>
 @z
 
-@x
-    <para>More information on writing Udev rules can be found in
-    <filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename>.
-    </para>
-@y
-<para>
-Udev ルールの記述方法については
-<filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename>
-に詳しく説明されています。
-</para>
-@z
+% @x
+%     <para>More information on writing Udev rules can be found in
+%     <filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename>.
+%     </para>
+% @y
+% <para>
+% Udev ルールの記述方法については
+% <filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename>
+% に詳しく説明されています。
+% </para>
+% @z
 
