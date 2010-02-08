@@ -57,6 +57,51 @@
 @z
 
 @x
+      <para>2010-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Have Module-Init-Tools use Zlib's dynamic instead of
+          static library. Fixes
+          <ulink url="&lfs-ticket-root;2562">#2562</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.32.7. Fixes
+          <ulink url="&lfs-ticket-root;2563">#2563</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Module-Init=tools にて Zlib のスタティックライブラリ利用でなく、ダイナミックライブラリに。
+          <ulink url="&lfs-ticket-root;2562">#2562</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.32.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2563">#2563</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-01-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Reword paragraph in 'Target Architectures'
+          discussing multi-lib systems.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-01-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] '対象アーキテクチャ' の説明において、マルチライブラリシステムにおける説明を削除。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-01-28</para>
       <itemizedlist>
         <listitem>

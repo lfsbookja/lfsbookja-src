@@ -107,17 +107,18 @@ data that exceeds 4GB, the advantages of a 64-bit system are substantial.</para>
 @x
 <para>The default 64-bit build that results from LFS is considered a "pure"
 64-bit system. That is, it supports 64-bit executables only. Building a
-"multi-lib" system requires compiling many applications twice, once for a 32-bit
-system and once for a 64-bit system. Currently this is not directly supported
-in the book, but is under consideration for a future release. In the meantime,
-you can refer to the <ulink url="http://trac.cross-lfs.org/">Cross Linux From
-Scratch</ulink> project for this advanced topic.</para>
+"multi-lib" system requires compiling many applications twice, once for a
+32-bit system and once for a 64-bit system. This is not directly supported in
+LFS becuase it would interfere with the educational objective of providing the
+instructions needed for a straight forward base Linux system.  You can refer to
+the <ulink url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink>
+project for this advanced topic.</para>
 @y
 <para>
 LFS の手順に従って作り出す 64ビットシステムは、"純粋な" 64ビットシステムと言えます。
 つまりそのシステムは 64ビット実行モジュールのみをサポートするということです。
 "複数のライブラリ" によるシステムをビルドするのなら、多くのアプリケーションを二度ビルドしなければなりません。
-これが 32ビットだけとか 64ビットだけであれば一回で済みます。
+一度は 32ビット用であり、一度は 64ビット用です。
 現時点にて本書はこの点をサポートしませんが、後々のリリースに向けて検討中です。
 さしあたりそのような応用的なトピックに関しては
 <ulink url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink>
@@ -132,7 +133,7 @@ build instructions. Generally, these packages have some embedded 32-bit
 specific assembly language instructions that fail when building on a 64-bit
 system.  Examples include the  <ulink
 url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch
-(BLFS)</ulink> packages Zip and some Xorg drivers. Many of these problems can
+(BLFS)</ulink> some Xorg drivers. Many of these problems can
 be worked around, but may require some specialized procedures or
 patches.</para>
 @y
@@ -142,7 +143,7 @@ patches.</para>
 一般的に言えば、そのようなパッケージには 32ビット固有のアセンブリ言語の命令が含まれるからであり、
 だから 64ビットシステムでのビルドに失敗するということです。
 例としては <ulink url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch (BLFS)</ulink>
-にある Zip パッケージや Xorg ドライバの一部分などです。
+にある Xorg ドライバの一部分などです。
 このような問題はたいていは解消していくことができますが、中には特別なビルド手順やパッチを要するものとなるかもしれません。
 </para>
 @z

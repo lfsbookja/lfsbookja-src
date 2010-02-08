@@ -50,6 +50,18 @@
 -->
 
     <listitem>
+      <para>2010-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/prologue/architecture.ch,
+          src/chapter06/gmp.ch:
+          SVN-20100201, r9181 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-01-30</para>
       <itemizedlist>
         <listitem>

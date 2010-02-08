@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,11 +100,11 @@ Berkeley MP に対する互換ライブラリをビルドします。
 @z
 
 @x
-    <para>Ensure that all 143 tests in the test suite passed.  
+    <para>Ensure that all 162 tests in the test suite passed.  
     Check the results by issuing the following command:</para>
 @y
 <para>
-143個のテストが完了することを確認してください。
+162個のテストが完了することを確認してください。
 テスト結果は以下のコマンドにより確認することができます。
 </para>
 @z
