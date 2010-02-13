@@ -57,6 +57,22 @@
 @z
 
 @x
+      <para>2010-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Update the book's attribution.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] 本書の属性情報の更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-02-01</para>
       <itemizedlist>
         <listitem>
@@ -73,7 +89,7 @@
       <para>2010-02-01</para>
       <itemizedlist>
         <listitem>
-          <para>[matthew] Module-Init=tools にて Zlib のスタティックライブラリ利用でなく、ダイナミックライブラリに。
+          <para>[matthew] Module-Init-tools にて Zlib のスタティックライブラリ利用でなく、ダイナミックライブラリに。
           <ulink url="&lfs-ticket-root;2562">#2562</ulink> を Fix に。</para>
         </listitem>
         <listitem>

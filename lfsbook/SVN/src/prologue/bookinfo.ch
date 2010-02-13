@@ -16,15 +16,23 @@
 @x
   <authorgroup>
     <author>
-      <firstname>Gerard</firstname>
+      <firstname>Created by Gerard</firstname>
       <surname>Beekmans</surname>
+    </author>
+    <author>
+      <firstname>Edited by Matthew Burgess</firstname>
+      <surname>and Bruce Dubbs</surname>
     </author>
   </authorgroup>
 @y
   <authorgroup>
     <author>
-      <firstname>Gerard</firstname>
+      <firstname>製作： Gerard</firstname>
       <surname>Beekmans</surname>
+    </author>
+    <author>
+      <firstname>編集： Matthew Burgess</firstname>
+      <surname>、Bruce Dubbs</surname>
     </author>
     <collab>
       <collabname>日本語訳： 松山道夫 (&jversion; 版)</collabname>
