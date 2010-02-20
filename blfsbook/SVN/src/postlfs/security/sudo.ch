@@ -253,8 +253,8 @@ arguments.
 
 @x
       <para>There are many options to <application>sudo</application>'s
-      <command>configure</command> command.  Check the
-      <command>configure --help</command>  output for a complete list.</para>
+      <command>configure</command> command. Check the
+      <command>configure --help</command> output for a complete list.</para>
 @y
 <para>
 <application>sudo</application> の <command>configure</command>

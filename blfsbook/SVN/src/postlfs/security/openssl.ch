@@ -122,24 +122,26 @@
     <bridgehead renderas="sect3">OpenSSL の依存パッケージ</bridgehead>
 @z
 
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="bc"/> (if you run the test suite
-    during the build)</para>
-@y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="bc"/>
-    (テストスイートを実行する場合に必要。)</para>
-@z
+% @x
+%     <bridgehead renderas="sect4">Recommended</bridgehead>
+%     <para role="recommended"><xref linkend="bc"/> (if you run the test suite
+%     during the build)</para>
+% @y
+%     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+%     <para role="recommended"><xref linkend="bc"/>
+%     (テストスイートを実行する場合に必要。)</para>
+% @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="mitkrb"/> or
-    <xref linkend="heimdal"/></para>
+    <xref linkend="heimdal"/>, and <xref linkend="bc"/> (required to run the
+    test suite during the build)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="mitkrb"/> または
-    <xref linkend="heimdal"/></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional"><xref linkend="mitkrb"/> or
+    <xref linkend="heimdal"/>, and <xref linkend="bc"/> (required to run the
+    test suite during the build)</para>
 @z
 
 @x

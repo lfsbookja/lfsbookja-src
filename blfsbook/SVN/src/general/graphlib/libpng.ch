@@ -78,10 +78,10 @@
 @z
 
 @x
-        <para>Recommended patch to include apng functionality in
+        <para>Patch to include apng functionality in
         <application>libpng</application> : <ulink
         url="&patch-root;/libpng-&libpng-version;-apng-1.patch"/></para>
-        <para>Although rejected by upstream, this is required if you want
+        <para>Although rejected by upstream, the patch is required if you want
         to use the system <application>libpng</application> in 
         <application>Firefox</application> 3.</para>
 @y

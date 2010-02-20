@@ -116,34 +116,34 @@
 </para>
 @z
 
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&j-CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--enable-static --enable-shared</parameter>: These switches
-    tell <application>libjpeg</application> to build both shared and static
-    libraries.</para>
-@y
-<para>
-<parameter>--enable-static --enable-shared</parameter>:
-これらのパラメータは共有ライブラリとスタティックライブラリの両方をビルドすることを指示します。
-</para>
-@z
-
-@x
-    <title>Configuring libjpeg</title>
-@y
-    <title>libjpeg の設定</title>
-@z
-
-@x
-      <title>Configuration Information</title>
-@y
-      <title>&j-ConfigInfo;</title>
-@z
+% @x
+%     <title>Command Explanations</title>
+% @y
+%     <title>&j-CommandExplanations;</title>
+% @z
+% 
+% @x
+%     <para><parameter>--enable-static --enable-shared</parameter>: These switches
+%     tell <application>libjpeg</application> to build both shared and static
+%     libraries.</para>
+% @y
+% <para>
+% <parameter>--enable-static --enable-shared</parameter>:
+% これらのパラメータは共有ライブラリとスタティックライブラリの両方をビルドすることを指示します。
+% </para>
+% @z
+% 
+% @x
+%     <title>Configuring libjpeg</title>
+% @y
+%     <title>libjpeg の設定</title>
+% @z
+% 
+% @x
+%       <title>Configuration Information</title>
+% @y
+%       <title>&j-ConfigInfo;</title>
+% @z
 
 @x
     <title>Contents</title>

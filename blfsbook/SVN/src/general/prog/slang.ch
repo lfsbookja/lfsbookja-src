@@ -20,16 +20,15 @@
 @z
 
 @x
-    <para>The <application>S-Lang</application> package contains the
-    <application>S-Lang</application> library, which provides facilities
-    such as display/screen management, keyboard input, and keymaps.</para>
+    <para><application>S-Lang</application> is an interpreted language that
+    maybe be embedded into an application to make the application extensible.
+    It provides facilities required by interactive applications such as
+    display/screen management, keyboard input and keymaps.</para>
 @y
-<para>
-<application>S-Lang</application> パッケージは 
-<application>S-Lang</application>
-ライブラリを提供します。
-これは画面管理、キーボード入力、キーマップなどに対する機能を提供するものです。
-</para>
+    <para><application>S-Lang</application> is an interpreted language that
+    maybe be embedded into an application to make the application extensible.
+    It provides facilities required by interactive applications such as
+    display/screen management, keyboard input and keymaps.</para>
 @z
 
 @x
@@ -186,11 +185,11 @@ SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
       <filename>/etc/slsh.rc</filename></para>
 @z
 
-@x
-      <title>Configuration Information</title>
-@y
-      <title>&j-ConfigInfo;</title>
-@z
+% @x
+%       <title>Configuration Information</title>
+% @y
+%       <title>&j-ConfigInfo;</title>
+% @z
 
 @x
     <title>Contents</title>

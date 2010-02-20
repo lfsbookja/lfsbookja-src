@@ -221,11 +221,10 @@ combinations</quote> that make bad passwords.
 これにより、推奨されている語句リストをインストールし
 <application>CrackLib</application>
 の辞書情報を生成します。
-
-Other word lists (text based, one word per line) can also be
-used by simply installing them into
-<filename class='directory'>/usr/share/dict</filename> and adding them
-to the <command>create-cracklib-dict</command> command.
+これ以外の語句リストでも、テキストベースであり、一語につき一行のものであれば利用することができます。
+利用する場合は、そのファイルを <filename class='directory'>/usr/share/dict</filename>
+にインストールし <command>create-cracklib-dict</command>
+コマンドを使ってそのファイルの追加登録を行います。
 </para>
 @z
 
@@ -234,9 +233,7 @@ to the <command>create-cracklib-dict</command> command.
     unprivileged user by issuing the following command:</para>
 @y
 <para>
-
-If desired, check the proper operation of the library as an
-unprivileged user by issuing the following command:
+必要なら以下のコマンドを実行して、一般ユーザーであってもライブラリの動作が正しく行われるかをチェックします。
 </para>
 @z
 
@@ -251,16 +248,15 @@ unprivileged user by issuing the following command:
       <application>Linux-PAM</application> installation.</para>
 @y
 <para>
-LFS の構築後に <application>CrackLib</application>
-をインストールした
- after
-your LFS system has been completed and you have the
-<application>Shadow</application> package installed, you must
-reinstall <xref linkend="shadow"/> if you wish to provide strong
-password support on your system. If you are now going to install the
-<xref linkend="linux-pam"/> package, you may disregard this note as
-<application>Shadow</application> will be reinstalled after the
-<application>Linux-PAM</application> installation.
+LFS を構築することで <application>Shadow</application>
+パッケージがインストールされているので、その後に <application>CrackLib</application>
+をインストールしたら、<xref linkend="shadow"/> を再インストールしてください。
+これを行わないと強力なパスワードを実現することはできません。
+今から <xref linkend="linux-pam"/>
+パッケージをインストールしようとしている場合は、上の説明は無視して
+<application>Linux-PAM</application>
+をインストールした後に <application>Shadow</application>
+をインストールしてください。
 </para>
 @z
 
@@ -286,8 +282,8 @@ password support on your system. If you are now going to install the
 
 @x
     <para><command>mv -v /usr/lib/libcrack.so.2* /lib</command> and
-    <command>ln -v -sf ../../lib/libcrack.so.2.8.0 ...</command>: These two
-    commands move the <filename class='libraryfile'>libcrack.so.2.8.0</filename>
+    <command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>: These two
+    commands move the <filename class='libraryfile'>libcrack.so.2.8.1</filename>
     library and associated symlink from
     <filename class='directory'>/usr/lib</filename> to
     <filename class='directory'>/lib</filename>, then recreates the
@@ -296,9 +292,9 @@ password support on your system. If you are now going to install the
 @y
 <para>
 <command>mv -v /usr/lib/libcrack.so.2* /lib</command> と
-<command>ln -v -sf ../../lib/libcrack.so.2.8.0 ...</command>:
+<command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>:
 この２つのコマンドは、
-<filename class='libraryfile'>libcrack.so.2.8.0</filename>
+<filename class='libraryfile'>libcrack.so.2.8.1</filename>
 ライブラリとこれに関するシンボリックリンクを
 <filename class='directory'>/usr/lib</filename>
 ディレクトリから <filename class='directory'>/lib</filename>
@@ -356,9 +352,12 @@ password support on your system. If you are now going to install the
     <application>CrackLib</application> dictionary from the word lists. Modify
     the command to add any additional word lists you have installed.</para>
 @y
-    <para><command>create-cracklib-dict ...</command>: This command creates the
-    <application>CrackLib</application> dictionary from the word lists. Modify
-    the command to add any additional word lists you have installed.</para>
+<para>
+<command>create-cracklib-dict ...</command>: 
+このコマンドは語句リスト (word list) から <application>CrackLib</application>
+の辞書情報を生成します。
+語句リストを追加インストールしたい場合は、このコマンドを修正してください。
+</para>
 @z
 
 @x
@@ -401,15 +400,18 @@ password support on your system. If you are now going to install the
           <para>is used to create the <application>CrackLib</application>
           dictionary from the given word list(s).</para>
 @y
-          <para>is used to create the <application>CrackLib</application>
-          dictionary from the given word list(s).</para>
+<para>
+指定された語句リスト (word list) から <application>CrackLib</application>
+の辞書情報を生成します。
+</para>
 @z
 
 @x libcrack.{so,a}
           <para>provides a fast dictionary lookup method for strong
           password enforcement.</para>
 @y
-          <para>provides a fast dictionary lookup method for strong
-          password enforcement.</para>
+<para>
+強力なパスワード機能に対しての、高速な辞書情報の検索を実現します。
+</para>
 @z
 

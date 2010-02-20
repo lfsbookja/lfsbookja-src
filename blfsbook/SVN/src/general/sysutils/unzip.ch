@@ -42,20 +42,26 @@
 @z
 
 @x
-      <para>The <application>UnZip</application> package has some locale
-      related issues. See the discussion below in
-      <xref linkend="unzip-locale-issues"/>. A more general
-      discussion of these problems can be found in the
-      <xref linkend="locale-assumed-encoding"/>
-      section of the
+      <para>The previous version of the <application>UnZip</application>
+      package had some locale related issues. Currently there are no BLFS
+      editors capable of testing these local issues. Therefore, the
+      locale related information is left on this page, but has not been
+      tested. Note that the patch recommended for the locale issues will not
+      apply to this version of <application>UnZip</application>. See the
+      discussion below in <xref linkend="unzip-locale-issues"/>. A more
+      general discussion of these problems can be found in the
+      <xref linkend="locale-assumed-encoding"/> section of the
       <xref linkend="locale-issues"/> page.</para>
 @y
-      <para>The <application>UnZip</application> package has some locale
-      related issues. See the discussion below in
-      <xref linkend="unzip-locale-issues"/>. A more general
-      discussion of these problems can be found in the
-      <xref linkend="locale-assumed-encoding"/>
-      section of the
+      <para>The previous version of the <application>UnZip</application>
+      package had some locale related issues. Currently there are no BLFS
+      editors capable of testing these local issues. Therefore, the
+      locale related information is left on this page, but has not been
+      tested. Note that the patch recommended for the locale issues will not
+      apply to this version of <application>UnZip</application>. See the
+      discussion below in <xref linkend="unzip-locale-issues"/>. A more
+      general discussion of these problems can be found in the
+      <xref linkend="locale-assumed-encoding"/> section of the
       <xref linkend="locale-issues"/> page.</para>
 @z
 
@@ -124,10 +130,10 @@
 @z
 
 @x
-        <para>Optional patch: <ulink
+        <para>Optional patch (will not apply properly): <ulink
         url="&patch-root;/unzip-5.50-alt-iconv-v1.1.patch"/></para>
 @y
-        <para>任意のパッチ: <ulink
+        <para>任意のパッチ (適用はうまくいかない): <ulink
         url="&patch-root;/unzip-5.50-alt-iconv-v1.1.patch"/></para>
 @z
 
@@ -294,13 +300,13 @@
 @z
 
 @x
-    <para>Note that if you applied the patch described above for locale issues,
+    <!-- <para>Note that if you applied the patch described above for locale issues,
     the first required security patch will have some offsets.  Now install
-    <application>UnZip</application> by running the following commands:</para>
+    <application>UnZip</application> by running the following commands:</para> -->
 @y
-    <para>Note that if you applied the patch described above for locale issues,
+    <!-- <para>Note that if you applied the patch described above for locale issues,
     the first required security patch will have some offsets.  Now install
-    <application>UnZip</application> by running the following commands:</para>
+    <application>UnZip</application> by running the following commands:</para> -->
 @z
 
 @x
@@ -334,13 +340,13 @@
 @z
 
 @x
-    <para><parameter>LOCAL_UNZIP=...</parameter>:
+    <!-- <para><parameter>LOCAL_UNZIP=...</parameter>:
     This sets the compilation flags to allow <application>UnZip</application>
-    to handle files up to 4 GB.</para>
+    to handle files up to 4 GB.</para> -->
 @y
-    <para><parameter>LOCAL_UNZIP=...</parameter>:
+    <!-- <para><parameter>LOCAL_UNZIP=...</parameter>:
     This sets the compilation flags to allow <application>UnZip</application>
-    to handle files up to 4 GB.</para>
+    to handle files up to 4 GB.</para> -->
 @z
 
 @x

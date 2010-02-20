@@ -114,12 +114,12 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 
 @x
         <para>Optional patch: <ulink
-        url="&patch-root;/firefox-&firefox-version;-provide_system_nspr_nss-2.patch"/>
+        url="&patch-root;/firefox-&firefox-version;-provide_system_nspr_nss-1.patch"/>
         (Required if using the included NSPR and NSS libs as system versions for
         other packages)</para>
 @y
         <para>任意のパッチ: <ulink
-        url="&patch-root;/firefox-&firefox-version;-provide_system_nspr_nss-2.patch"/>
+        url="&patch-root;/firefox-&firefox-version;-provide_system_nspr_nss-1.patch"/>
         (他パッケージ用に既にインストール済の NSPR, NSS を利用する場合に必要。)</para>
 @z
 
