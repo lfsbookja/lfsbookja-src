@@ -53,6 +53,11 @@
       <para>2010-02-21</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - src/chapter06/e2fsprogs.ch:
+          SVN-20100221, r9199 対応。
+          </para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - src/chapter01/changelog.ch,
 src/chapter02/creatingpartition.ch
 src/chapter06/{gdbm.ch,glibc.ch},

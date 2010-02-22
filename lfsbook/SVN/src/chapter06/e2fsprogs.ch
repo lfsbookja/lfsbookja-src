@@ -54,6 +54,14 @@ E2fsprogs パッケージは <systemitem class="filesystem">ext2</systemitem>
 % @z
 
 @x
+    <para>First fix a programming error:</para>
+@y
+<para>
+まず初めにプログラミング不備を修正します。
+</para>
+@z
+
+@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
