@@ -70,12 +70,12 @@ LFS では前節にて示したように、各アーキテクチャに適合す�
 @z
 
 @x
-        <note><para>Many people do not agree with the requirements of LSB.  The
-        main purpose of defining it is to ensure that proprietary software will
-        be able to be installed and run properly on a compliant system.  Since LFS
-        is source based, the user has complete control over what packages are
-        desired and many choose not to install some packages that are specified
-        by the LSB.  </para></note>
+        <note><para>Many people do not agree with the requirements of the LSB.
+        The main purpose of defining it is to ensure that proprietary software
+        will be able to be installed and run properly on a compliant system.
+        Since LFS is source based, the user has complete control over what
+        packages are desired and many choose not to install some packages that
+        are specified by the LSB.</para></note>
 @y
 <note><para>
 LSB の要求に対しては異論のある方も多いでしょう。
@@ -102,7 +102,7 @@ LFS の構築にあたっては LSB に適合していることを確認する�
 
 @x
       <bridgehead renderas="sect3">Packages supplied by LFS needed to
-          satisfy LSB Requirements</bridgehead>
+          satisfy the LSB Requirements</bridgehead>
 @y
       <bridgehead renderas="sect3">LFS 提供のパッケージで LSB 要求に従うもの</bridgehead>
 @z
@@ -185,7 +185,7 @@ LFS の構築にあたっては LSB に適合していることを確認する�
 
 @x
       <bridgehead renderas="sect3">Packages supplied by BLFS needed to
-          satisfy LSB Requirements</bridgehead>
+          satisfy the LSB Requirements</bridgehead>
 @y
       <bridgehead renderas="sect3">BLFS 提供のパッケージで LSB 要求に従うもの</bridgehead>
 @z
@@ -270,7 +270,7 @@ LFS の構築にあたっては LSB に適合していることを確認する�
 
 @x
       <bridgehead renderas="sect3">Packages not supplied by LFS or BLFS 
-      needed to satisfy LSB Requirements</bridgehead>
+      needed to satisfy the LSB Requirements</bridgehead>
 @y
       <bridgehead renderas="sect3">LFS, BLFS で提供しないパッケージで
       LSB 要求に従うもの</bridgehead>

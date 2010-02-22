@@ -258,16 +258,23 @@ Glibc のドキュメントではソースディレクトリ以外の専用の�
 @z
 
 @x
-        <para>The <emphasis>nptl/tst-clock2</emphasis> and
-        <emphasis>tst-attr3</emphasis> tests sometimes
-        fail.  The reason is not completely understood, but indications
-        are that a heavy system load can trigger these failures.</para>
+        <para>The <emphasis>nptl/tst-clock2</emphasis>,
+        <emphasis>nptl/tst-attr3</emphasis>, and 
+        <emphasis>rt/tst-cpuclock2</emphasis>
+        tests have been known to fail.  The
+        reason is not completely understood, but indications are that minor
+        timing issues can trigger these failures.</para>
 @y
+<!--
+minor timing issues が何を意味するのか不明であった。
+訳出不十分
+-->
 <para>
-<emphasis>nptl/tst-clock2</emphasis> テストと
-<emphasis>tst-attr3</emphasis> テストは失敗することがあります。
+<emphasis>nptl/tst-clock2</emphasis>,
+<emphasis>nptl/tst-clock2</emphasis>,
+<emphasis>tst-attr3</emphasis> の各テストは失敗することがあります。
 失敗の理由は明確ではありません。
-ただシステムに過大な負荷がかかっている場合にそれらが発生すると思われます。
+ただ処理速度が原因してそれらが発生すると思われます。
 </para>
 @z
 

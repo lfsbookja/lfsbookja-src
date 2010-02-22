@@ -158,11 +158,9 @@ LFS において利用する他のプログラムの中に、これを必要と�
         toolchain.</para>
 @y
 <para>
-
-This package contains a program for carrying out scripted 
-dialogues with other interactive programs.  It is commonly used
-for testing other packages.  It is only installed in the temporary 
-toolchain.
+このパッケージは、スクリプトで作られた対話型プログラムを通じて、他のプログラムとのやりとりを行うプログラムを提供します。
+通常は他のパッケージをテストするために利用します。
+本書では一時的なツールチェーンの構築時にしかインストールしません。
 </para>
 @z
 
@@ -259,9 +257,8 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
 @z
 
 @x GMP
-        <para>This package package contains math libraries and have
-        useful functions for arbitrary precision arithmetic.  It
-        is required to build Gcc. </para>
+        <para>This package contains math libraries and have useful functions for
+        arbitrary precision arithmetic.  It is required to build Gcc. </para>
 @y
 <para>
 このパッケージは数値演算ライブラリを提供するもので、任意精度演算
@@ -337,10 +334,9 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
         tools package (net-tools) for its IPv6 capabilities.  </para>
 @y
 <para>
-
-This package contains programs for basic and advanced IPv4 and
-IPv6 networking.  It was chosen over the other common network
-tools package (net-tools) for its IPv6 capabilities.  
+このパッケージは、IPv4、IPv6 による基本的な、あるいは拡張したネットワーク制御を行うプログラムを提供します。
+IPv6 への対応があることから、よく使われてきたネットワークツールパッケージ
+(net-tools) に変わって採用されました。
 </para>
 @z
 
@@ -348,7 +344,287 @@ tools package (net-tools) for its IPv6 capabilities.
         <para>This package contains key-table files and keyboard utilities
         for non-US keyboards. </para>
 @y
-        <para>This package contains key-table files and keyboard utilities
-        for non-US keyboards. </para>
+<para>
+このパッケージは、米国以外のキーボードに対してのキーテーブルファイルやキーボードユーティリティを提供します。
+</para>
+@z
+
+@x Less
+        <para>This package contains a very nice text file viewer that
+        allows scrolling up or down when viewing a file.
+        </para>
+@y
+<para>
+このパッケージは
+This package contains a very nice text file viewer that
+allows scrolling up or down when viewing a file.
+</para>
+@z
+
+@x Libtool
+        <para>This package contains the GNU generic library support 
+        script. It wraps the complexity of using shared libraries in a 
+        consistent, portable interface.  It is needed by the test
+        suites in other LFS packages.
+        </para>
+@y
+<para>
+このパッケージは GNU の汎用的なライブラリに対してのサポートスクリプトを提供します。
+
+It wraps the complexity of using shared libraries in a 
+consistent, portable interface.  It is needed by the test
+suites in other LFS packages.
+</para>
+@z
+
+@x Linux Kernel
+        <para>This package is the Operating System.  It is the Linux in
+        the GNU/Linux environment.
+        </para>
+@y
+<para>
+このパッケージは "オペレーティングシステム" であり
+GNU/Linux 環境における Linux です。
+</para>
+@z
+
+@x M4
+        <para>This package contains a general text macro processor useful
+        as a build tool for other programs. 
+        </para>
+@y
+<para>
+このパッケージは汎用的なテキストマクロプロセッサであり、他のプログラムを構築するツールとして利用することができます。
+</para>
+@z
+
+@x Make
+        <para>This package contains a program for directing the building
+        of packages.  It is required by almost every package in LFS.
+        </para>
+@y
+<para>
+このパッケージは、パッケージ構築を指示するプログラムを提供します。
+LFS におけるパッケージでは、ほぼすべてにおいて必要となります。
+</para>
+@z
+
+@x Man-DB
+        <para>This package contains programs for finding and viewing man pages.
+        It was chosen instead of the <application>man</application> package
+        due to superior internationalization capabilities.  It supplies
+        the man program. </para>
+@y
+<para>
+
+This package contains programs for finding and viewing man pages.
+It was chosen instead of the <application>man</application> package
+due to superior internationalization capabilities.  It supplies
+the man program. 
+</para>
+@z
+
+@x Man-pages
+        <para>This package contains the actual contents of the basic
+        Linux man pages. </para>
+@y
+        <para>This package contains the actual contents of the basic
+        Linux man pages. </para>
+@z
+
+@x Module-Init-Tools
+        <para>This package contains programs needed to administer Linux
+        kernel modules.</para>
+@y
+        <para>This package contains programs needed to administer Linux
+        kernel modules.</para>
+@z
+
+@x MPFR
+        <para>This package contains functions for multiple precision 
+        arithmetic.  It is required by Gcc.
+        </para>
+@y
+        <para>This package contains functions for multiple precision 
+        arithmetic.  It is required by Gcc.
+        </para>
+@z
+
+@x Ncurses
+        <para>This package contains libraries for terminal-independent 
+        handling of character screens.  It is often used to provide 
+        cursor control for a menuing system.  </para>
+@y
+        <para>This package contains libraries for terminal-independent 
+        handling of character screens.  It is often used to provide 
+        cursor control for a menuing system.  </para>
+@z
+
+@x Patch
+        <para>This package contains a program for modifying or creating files by
+        applying a <emphasis>patch</emphasis> file typically created 
+        by the <application>diff</application> program.  It is needed by
+        the build procedure for several LFS packages. </para>
+@y
+        <para>This package contains a program for modifying or creating files by
+        applying a <emphasis>patch</emphasis> file typically created 
+        by the <application>diff</application> program.  It is needed by
+        the build procedure for several LFS packages. </para>
+@z
+
+@x Perl
+        <para>This package is an interpreter for the runtime language
+        PERL.</para>
+@y
+        <para>This package is an interpreter for the runtime language
+        PERL.</para>
+@z
+
+@x Pkg-config
+        <para>This package contains a tool for passing the include path 
+        and/or library paths to build tools during the configure and make 
+        processes.  It is needed by many LFS packages. </para>
+@y
+        <para>This package contains a tool for passing the include path 
+        and/or library paths to build tools during the configure and make 
+        processes.  It is needed by many LFS packages. </para>
+@z
+
+@x Procps
+        <para>This package contains programs for monitoring processes.
+        </para>
+@y
+        <para>This package contains programs for monitoring processes.
+        </para>
+@z
+
+@x Psmisc
+        <para>This package contains programs for displaying information 
+        about running processes. </para>
+@y
+        <para>This package contains programs for displaying information 
+        about running processes. </para>
+@z
+
+@x Readline
+        <para>This package is a set of libraries that offers command-line 
+        editing and history capabilities.  It is used by Bash. </para>
+@y
+        <para>This package is a set of libraries that offers command-line 
+        editing and history capabilities.  It is used by Bash. </para>
+@z
+
+@x Sed
+        <para>This package allows editing of text without opening it in a 
+        text editor. It is also needed by most LFS packages' configure 
+        scripts. </para>
+@y
+        <para>This package allows editing of text without opening it in a 
+        text editor. It is also needed by most LFS packages' configure 
+        scripts. </para>
+@z
+
+@x Shadow
+        <para>This package contains programs for handling passwords 
+        in a secure way.</para>
+@y
+        <para>This package contains programs for handling passwords 
+        in a secure way.</para>
+@z
+
+@x Sysklogd
+        <para>This package contains programs for logging system messages, 
+        such as those given by the kernel or daemon processes when unusual 
+        events occur.  
+        </para>
+@y
+        <para>This package contains programs for logging system messages, 
+        such as those given by the kernel or daemon processes when unusual 
+        events occur.  
+        </para>
+@z
+
+@x Sysvinit
+        <para>This package provides the <application>init</application>
+        program, which is the parent of all other processes on the Linux
+        system. </para>
+@y
+        <para>This package provides the <application>init</application>
+        program, which is the parent of all other processes on the Linux
+        system. </para>
+@z
+
+@x Tar
+        <para>This package provides archiving and extraction capabilities
+        of virtually all packages used in LFS.  </para>
+@y
+        <para>This package provides archiving and extraction capabilities
+        of virtually all packages used in LFS.  </para>
+@z
+
+@x Tcl
+        <para>This package contains the Tool Command Language used
+        in many testsuites in LFS packages.  It is only installed in 
+        the temporary toolchain. </para>
+@y
+        <para>This package contains the Tool Command Language used
+        in many testsuites in LFS packages.  It is only installed in 
+        the temporary toolchain. </para>
+@z
+
+@x Texinfo
+        <para>This package contains programs for reading, writing, and 
+        converting info pages.  It is used in the installation 
+        procedures of many LFS packages. </para>
+@y
+        <para>This package contains programs for reading, writing, and 
+        converting info pages.  It is used in the installation 
+        procedures of many LFS packages. </para>
+@z
+
+@x Udev
+        <para>This package contains programs for dynamic creation of 
+        device nodes.  It is an alternative to creating thousands of
+        static devices in the /dev directory.  
+        </para>
+@y
+        <para>This package contains programs for dynamic creation of 
+        device nodes.  It is an alternative to creating thousands of
+        static devices in the /dev directory.  
+        </para>
+@z
+
+@x Util-linux-ng
+        <para>This package contains miscellaneous utility programs. 
+        Among them are utilities for handling file systems, consoles, 
+        partitions, and messages. </para>
+@y
+        <para>This package contains miscellaneous utility programs. 
+        Among them are utilities for handling file systems, consoles, 
+        partitions, and messages. </para>
+@z
+
+@x Vim
+        <para>This package contains an editor. It was chosen because of its
+        compatibility with the classic vi editor and its huge number of powerful
+        capabilities.  An editor is a very personal choice for
+        many users and any other editor could be substituted if desired.
+        </para>
+@y
+        <para>This package contains an editor. It was chosen because of its
+        compatibility with the classic vi editor and its huge number of powerful
+        capabilities.  An editor is a very personal choice for
+        many users and any other editor could be substituted if desired.
+        </para>
+@z
+
+@x Zlib
+        <para>This package contains compression and decompression routines 
+        used by some programs. 
+        </para>
+@y
+        <para>This package contains compression and decompression routines 
+        used by some programs. 
+        </para>
 @z
 

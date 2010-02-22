@@ -66,7 +66,7 @@ LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などのディ�
 % @z
 
 @x
-<para>Some other facts about a 64-bit systems need to be added here. When
+<para>Some other facts about 64-bit systems need to be added here. When
 compared to a 32-bit system, the sizes of executable programs are slightly
 larger and the execution speeds are only slightly faster. For example, in a
 test build of LFS-6.5 on a Core2Duo CPU based system, the following statistics
@@ -110,7 +110,7 @@ data that exceeds 4GB, the advantages of a 64-bit system are substantial.</para>
 "multi-lib" system requires compiling many applications twice, once for a
 32-bit system and once for a 64-bit system. This is not directly supported in
 LFS becuase it would interfere with the educational objective of providing the
-instructions needed for a straight forward base Linux system.  You can refer to
+instructions needed for a straightforward base Linux system.  You can refer to
 the <ulink url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink>
 project for this advanced topic.</para>
 @y
@@ -131,18 +131,19 @@ LFS の手順に従って作り出す 64ビットシステムは、"純粋な" 6
 that cannot currently be built in a "pure" 64-bit system or require specialized
 build instructions. Generally, these packages have some embedded 32-bit
 specific assembly language instructions that fail when building on a 64-bit
-system.  This includes some  <ulink
+system.  This includes some Xorg drivers from <ulink
 url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch
-(BLFS)</ulink> Xorg drivers. Many of these problems can
-be worked around, but may require some specialized procedures or
-patches.</para>
+(BLFS)</ulink>. Many of these problems can be worked around, but may require
+some specialized procedures or patches.</para>
 @y
 <para>
 最後に 64ビットシステムについてもう一つ述べておきます。
 パッケージの中には現時点にて "純粋な" 64ビットシステム上でビルドできないものがあり、あるいは特別なビルド手順を必要とするものがあります。
 一般的に言えば、そのようなパッケージには 32ビット固有のアセンブリ言語の命令が含まれるからであり、
 だから 64ビットシステムでのビルドに失敗するということです。
-例としては <ulink url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch (BLFS)</ulink>
+例としては <ulink
+url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch
+(BLFS)</ulink>
 にある Xorg ドライバの一部分などです。
 このような問題はたいていは解消していくことができますが、中には特別なビルド手順やパッチを要するものとなるかもしれません。
 </para>

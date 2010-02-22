@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -8,6 +17,15 @@
   <title>Creating a New Partition</title>
 @y
   <title>新しいパーティションの生成</title>
+
+  <caution>
+   <title>日本語訳情報</title>
+   <para>
+    現時点にて本節は訳出未完です。早期に仕上げます。
+    このところ比較的頻繁にオリジナル版が更新されるため、開発作業上の都合として暫定的に対処するものです。
+    訳出が終わり次第、この注記を除きます。
+   </para>
+  </caution>
 @z
 
 @x
@@ -103,6 +121,215 @@ LFS システムそのものがそれだけの容量を要するわけではあ�
 パーティションの名前も忘れないでください。
 これらの名前は、後に生成する <filename>/etc/fstab</filename>
 ファイルに記述するために必要となります。
+</para>
+@z
+
+@x
+  <title>Other Partition Issues</title>
+@y
+  <title>パーティションに関するその他の問題</title>
+@z
+
+@x
+  <para>Requests for advice on system partitioning are often posted on the LFS mailing 
+  lists.  This is a highly subjective topic.  The default size for most distributions
+  is to use the entire drive with the exception of one small swap partition.  This
+  is not optimal for LFS for several reasons.  It reduces flexibility, makes 
+  sharing of data across multiple distributions or LFS builds more difficult, makes
+  backups more time consuming, and can waste disk space through inefficient 
+  allocation of file system structures.</para>
+@y
+<para>
+LFS メーリングリストにてパーティションに関する有用情報を望む声をよく聞きます。
+これは個人の趣味にもよる極めて主観的なものです。
+たいていのディストリビューションが採用しているデフォルトのパーティションサイズと言えば、スワップパーティションを小容量で配置した上で、そのドライブ内の残容量すべてのサイズを割り当てています。
+このようなサイズ設定は LFS では最適ではなく、その理由はいくつかあります。
+
+It reduces flexibility, makes 
+sharing of data across multiple distributions or LFS builds more difficult, makes
+backups more time consuming, and can waste disk space through inefficient 
+allocation of file system structures.
+</para>
+@z
+
+@x
+    <title>The Root Partition</title>
+@y
+    <title>ルートパーティション</title>
+@z
+
+@x
+    <para>A root LFS partition (not to be confused with the /root directory) of
+    ten gigabytes is a good compromise for most systems.  It provides enough
+    space to build LFS and most of BLFS, but is small enough so that multiple
+    partitions can be easily created for experimentation.</para> </sect3>
+@y
+<para>
+ルートパーティション (これを /root ディレクトリと混同しないでください)
+が
+A root LFS partition (not to be confused with the /root directory) of
+ten gigabytes is a good compromise for most systems.  It provides enough
+space to build LFS and most of BLFS, but is small enough so that multiple
+partitions can be easily created for experimentation.</para> 
+</sect3>
+@z
+
+@x
+    <title>The Swap Partition</title>
+@y
+    <title>スワップパーティション</title>
+@z
+
+@x
+    <para>Most distributions automatically create a swap partition.  Generally
+    the recommneded size of the swap partition is about twice the amount of
+    physical RAM, however this is rarely needed.  If disk space is limited,
+    hold the swap partition to two gigabytes and monitor the amount of disk
+    swapping.</para>
+@y
+<para>
+既存のディストリビューションは、たいていはスワップパーティションを自動的に生成します。
+一般にスワップパーティションのサイズは、物理 RAM サイズの二倍の容量とすることが推奨されています。
+しかしそれだけの容量はほとんど必要ありません。
+ディスク容量が限られているなら、スワップパーティションの容量を 2GB 程度に抑えておいて、ディスクスワップがどれだけ発生するかを確認してみてください。
+</para>
+@z
+
+@x
+    <para>Swapping is never good.  Generally you can tell if a system is
+    swapping by just listening to disk activity and observing how the system
+    reacts to commands.  The first reaction to swapping should be to check for
+    an unreasonable command such as trying to edit a five gigabyte file.  If
+    swapping becomes a normal occurance, the best solution is to purchase more
+    RAM for your system.</para> </sect3>
+@y
+<para>
+スワップは好ましいことではありません。
+
+Generally you can tell if a system is
+swapping by just listening to disk activity and observing how the system
+reacts to commands.  The first reaction to swapping shouuld be to check for
+an unresonable command such as trying to edit a five gigabyte file.  If
+swapping becomes a normal occurance, the best solution is to purchase more
+RAM for your system.</para> </sect3>
+@z
+
+@x
+    <title>Convenience Partitions</title>
+@y
+    <title>有用なパーティション</title>
+@z
+
+@x
+    <para>There are several other partitions that are not required, but should
+    be considered when designing a disk layout,  The following list
+    is not comprehensive, but is meant as a guide.</para>
+@y
+<para>
+この他にも、必要のないパーティションというものがいくつかあります。
+しかしディスクレイアウトを取り決めるには考えておく必要があります。
+
+The following list
+is not comprehensive, but is meant as a guide.
+</para>
+@z
+
+@x
+      <listitem><para>/boot &ndash; Highly recommended.  Use this partition to
+      store kernels and other booting information.  To minimize potential boot
+      problems with larger disks, make this the first physical partition on
+      your first disk drive.  A partition size of 100 megabytes is quite
+      adequate.</para></listitem>
+@y
+<listitem><para>
+/boot &ndash; 作成することが強く推奨されます。
+カーネルやブート情報を収納するために利用するパーティションです。
+
+To minimize potential boot
+problems with larger disks, make this the first physical partition on
+your first disk drive.  A partition size of 100 megabytes is quite
+adequate.</para></listitem>
+@z
+
+@x
+      <listitem><para>/home &ndash; Highly recommended.  Share your home
+      directory and user customization across multiple distributions or LFS
+      builds.  The size is generally fairly large and depends on available disk
+      space.</para></listitem>
+@y
+<listitem><para>
+/home &ndash; 作成することが強く推奨されます。
+
+Share your home
+directory and user customization across multiple distributions or LFS
+builds.  The size is generally fairly large and depends on available disk
+space.</para></listitem>
+@z
+
+@x
+      <listitem><para>/usr &ndash; A separate /usr partition is generally used
+      if providing a server for a thin client or diskless workstation.  It is
+      normally not needed for LFS.  A size of five gigabytes will handle most
+      installations.</para></listitem>
+@y
+<listitem><para>
+/usr &ndash; A separate /usr partition is generally used
+if providing a server for a thin client or diskless workstation.  It is
+normally not needed for LFS.  A size of five gigabytes will handle most
+installations.
+</para></listitem>
+@z
+
+@x
+      <listitem><para>/opt &ndash; This directory is most useful for
+      BLFS where multiple installations of large packages like Gnome or KDE can
+      be installed without embedding the files in the /usr hierarchy.  If
+      used, five to ten gigabytes is generally adequate.</para>
+@y
+<listitem><para>
+/opt &ndash; This directory is most useful for
+BLFS where multiple installations of large packages like Gnome or KDE can
+be installed without embedding the files in the /usr hierarchy.  If
+used, five to ten gigabytes is generally adequate.</para>
+@z
+
+@x
+      <listitem><para>/tmp &ndash; A separate /tmp directory is rare, but
+      useful if coufiguring a thin client.  This partition, if used, will
+      usually not need to exceed a couple of gigabytes.</para></listitem>
+@y
+<listitem><para>
+/tmp &ndash; A separate /tmp directory is rare, but
+useful if coufiguring a thin client.  This partition, if used, will
+usually not need to exceed a couple of gigabytes.
+</para></listitem>
+@z
+
+@x
+      <listitem><para>/usr/src &ndash; This partition is very
+      useful for providing a location to store BLFS source files and
+      share them across LFS builds.  It can also be used as a location
+      for building BLFS packages.  A reasonably large partition of 30-50
+      gigabytes allows plenty of room.</para></listitem>
+@y
+<listitem><para>
+/usr/src &ndash; This partition is very
+useful for providing a location to store BLFS source files and
+share them across LFS builds.  It can also be used as a location
+for building BLFS packages.  A reasonably large partition of 30-50
+gigabytes allows plenty of room.</para></listitem>
+@z
+
+@x
+    <para>Any separate partition that you want automatically mounted upon boot
+    needs to be specified in the <filename>/etc/fstab</filename>.  Details
+    about how to specify partitions will be discussed in <xref
+    linkend="ch-bootable-fstab"/>.  </para>
+@y
+<para>
+ブート時に自動的にパーティションをマウントしたい場合は
+<filename>/etc/fstab</filename> ファイルにて設定します。
+パーティションの設定方法については <xref linkend="ch-bootable-fstab"/> で説明しています。
 </para>
 @z
 

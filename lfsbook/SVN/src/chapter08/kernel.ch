@@ -213,14 +213,16 @@ menuconfig の ncurses による行表示を適切に行うために必要とな
     <para><filename>System.map</filename> is a symbol file for the kernel.
     It maps the function entry points of every function in the kernel API,
     as well as the addresses of the kernel data structures for the running
-    kernel. Issue the following command to install the map file:</para>
+    It is used as a resource when investigating kernel problems. 
+    Issue the following command to install the map file:</para>
 @y
 <para>
 <filename>System.map</filename>
 はカーネルに対するシンボルファイルです。
 このファイルはカーネル API の各関数のエントリポイントをマッピングしています。
 同様に実行中のカーネルのデータ構成のアドレスを保持します。
-マップファイルをインストールするために以下を実行します。
+このファイルは、カーネルに問題があった場合にその状況を調べる手段として利用できます。
+マップファイルをインストールするには以下を実行します。
 </para>
 @z
 

@@ -57,6 +57,93 @@
 @z
 
 @x
+      <para>2010-02-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Fix an error in e2fsprogs. Fixes
+          <ulink url="&lfs-ticket-root;2586">#2586</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Tag for lfs-6.6-rc2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] e2fsprogs におけるエラーを修正。
+          <ulink url="&lfs-ticket-root;2586">#2586</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] lfs-6.6-rc2 に対するタグ追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Upgrade to Linux-2.6.32.8. Fixes
+          <ulink url="&lfs-ticket-root;2575">#2575</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Linux-2.6.32.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2575">#2575</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-02-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Add a discussion about disk partitioning.
+          Fixes <ulink url="&lfs-ticket-root;2582">#2582</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Ensure that GDBM is added to the info 'dir' file.
+          Thanks to Randy McMurchy for the fix.
+          Fixes <ulink url="&lfs-ticket-root;2574">#2574</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Put file before gcc in chapter 6 for better test 
+          coverage.  Fixes <ulink url="&lfs-ticket-root;2568">#2568</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Update known failure problems in glibc tests.
+          Fixes <ulink url="&lfs-ticket-root;2569">#2569</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] ディスクパーティションに関する議論について加筆。
+          <ulink url="&lfs-ticket-root;2582">#2582</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] GDBM における 'dir' ファイルを確実に追加するように変更。
+          変更修正にあたっては Randy McMurchy に感謝する。
+          <ulink url="&lfs-ticket-root;2574">#2574</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] 第6章にて File パッケージを GCC の前に置く。
+          テストの成功率を上げるため。
+          <ulink url="&lfs-ticket-root;2568">#2568</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Glibc にて知られているテスト失敗の情報を追記。
+          <ulink url="&lfs-ticket-root;2569">#2569</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-02-11</para>
       <itemizedlist>
         <listitem>
