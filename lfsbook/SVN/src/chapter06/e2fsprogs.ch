@@ -34,33 +34,6 @@ E2fsprogs パッケージは <systemitem class="filesystem">ext2</systemitem>
     <title>E2fsprogs のインストール</title>
 @z
 
-%@x
-%    <para>Fix a hardcoded path to <filename>/bin/rm</filename> in E2fsprogs'
-%    testsuite:</para>
-%@y
-%<para>
-%E2fsprogs のテストスイートの中で <filename>/bin/rm</filename>
-%のファイルパスが固定的に指定されている箇所を修正します。
-%</para>
-%@z
-
-% @x
-%     <para>Make sure the version date is in a format compatible with 
-%     <command>configure</command>:</para>
-% @y
-% <para>
-% バージョン日付の書式を <command>configure</command> と互換があるように変更します。
-% </para>
-% @z
-
-@x
-    <para>First fix a programming error:</para>
-@y
-<para>
-まず初めにプログラミング不備を修正します。
-</para>
-@z
-
 @x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>

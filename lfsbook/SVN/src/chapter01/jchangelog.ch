@@ -50,6 +50,19 @@
 -->
 
     <listitem>
+      <para>2010-02-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/packages.ch,
+src/chapter01/changelog.ch,
+src/chapter06/{e2fsprogs.ch,readline.ch}:
+          SVN-201002022, r9201 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-02-21</para>
       <itemizedlist>
         <listitem>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -53,11 +62,11 @@
 @z
 
 @x
-<!ENTITY e2fsprogs-ch6-du "41 MB testsuite included">
-<!ENTITY e2fsprogs-ch6-sbu "0.7 SBU testsuite included">
+<!ENTITY e2fsprogs-ch6-du "45 MB testsuite included">
+<!ENTITY e2fsprogs-ch6-sbu "0.5 SBU testsuite included">
 @y
-<!ENTITY e2fsprogs-ch6-du "41 MB テストスイート込み">
-<!ENTITY e2fsprogs-ch6-sbu "0.7 SBU テストスイート込み">
+<!ENTITY e2fsprogs-ch6-du "45 MB テストスイート込み">
+<!ENTITY e2fsprogs-ch6-sbu "0.5 SBU テストスイート込み">
 @z
 
 @x

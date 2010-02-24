@@ -45,6 +45,14 @@ Readline を再インストールすると、それまでの古いライブラ�
 @z
 
 @x
+    <para>Correct the version number used in Readline's documentation:</para>
+@y
+<para>
+Readline のドキュメントに示されるバージョン番号を適切なものにします。
+</para>
+@z
+
+@x
     <para>Prepare Readline for compilation:</para>
 @y
     <para>Readline をコンパイルするための準備をします。</para>

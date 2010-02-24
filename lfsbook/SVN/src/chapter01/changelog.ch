@@ -57,6 +57,43 @@
 @z
 
 @x
+      <para>2010-02-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Correct the version number used in Readline's
+          documentation. This is the equivalent of upstream's 002 patch.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Update to e2fsprogs-1.41.10. Fixes
+          <ulink url="&lfs-ticket-root;2576">#2576</ulink>. This
+          also reverts the changes made in response to 
+          <ulink url="&lfs-ticket-root;2586">#2586</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Make more robust output in version check
+          for glibc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Readline パッケージのドキュメントバージョンを正しくする。
+          これはアップストリームの 002 patch に対応するもの。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] e2fsprogs-1.41.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2576">#2576</ulink> を Fix に。
+          これに伴って <ulink url="&lfs-ticket-root;2586">#2586</ulink>
+          によって変更した内容は元に戻すことに。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Glibc に対するバージョンチェックの出力結果を、より確実なものに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-02-21</para>
       <itemizedlist>
         <listitem>
