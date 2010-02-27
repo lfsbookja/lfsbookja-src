@@ -57,6 +57,32 @@
 @z
 
 @x
+      <para>2010-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Add make-3.81-upstream_fixes-1.patch. Fixes
+          <ulink url="&lfs-ticket-root;2588">#2588</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Add perl-5.10.1-utf8-1.patch. Fixes
+          <ulink url="&lfs-ticket-root;2589">#2589</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] make-3.81-upstream_fixes-1.patch を追加。
+          <ulink url="&lfs-ticket-root;2588">#2588</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] perl-5.10.1-utf8-1.patch を追加。
+          <ulink url="&lfs-ticket-root;2589">#2589</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-02-22</para>
       <itemizedlist>
         <listitem>

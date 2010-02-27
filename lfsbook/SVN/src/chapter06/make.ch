@@ -17,6 +17,15 @@
 @z
 
 @x
+    <para>First fix some problems that have been identified since
+    the last package release:</para>
+@y
+<para>
+最新のパッケージリリース以降に判明した不備を修正します。
+</para>
+@z
+
+@x
     <para>Prepare Make for compilation:</para>
 @y
     <para>Make をコンパイルするための準備をします。</para>

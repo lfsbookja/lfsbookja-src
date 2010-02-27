@@ -50,6 +50,31 @@
 -->
 
     <listitem>
+      <para>2010-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/prologue/architecture.ch,
+          src/chapter06/{make.ch,perl.ch}:
+          SVN-201002026, r9204 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter08/kernel.ch:
+          SVN-201002022, r9203 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - src/chapter02/creatingpartition.ch,
+          src/prologue/why.ch:
+          訳出未済分の完了。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-02-23</para>
       <itemizedlist>
         <listitem>

@@ -213,7 +213,7 @@ menuconfig の ncurses による行表示を適切に行うために必要とな
     <para><filename>System.map</filename> is a symbol file for the kernel.
     It maps the function entry points of every function in the kernel API,
     as well as the addresses of the kernel data structures for the running
-    It is used as a resource when investigating kernel problems. 
+    kernel.  It is used as a resource when investigating kernel problems. 
     Issue the following command to install the map file:</para>
 @y
 <para>

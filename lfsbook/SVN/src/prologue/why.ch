@@ -23,15 +23,6 @@ rationale は理論的根拠とか原理とか。
 「～を用いる理由」とした。
 -->
   <title>各パッケージを用いる理由</title>
-
-  <caution>
-   <title>日本語訳情報</title>
-   <para>
-    現時点にて本節は訳出未完です。早期に仕上げます。
-    このところ比較的頻繁にオリジナル版が更新されるため、開発作業上の都合として暫定的に対処するものです。
-    訳出が終わり次第、この注記を除きます。
-   </para>
-  </caution>
 @z
 
 @x
@@ -93,7 +84,7 @@ Bourne シェルを提供し、LSB コア要件を満たします。
 @z
 
 @x Binutils
-        <para>This package package contains a linker, an assembler, and other 
+        <para>This package contains a linker, an assembler, and other 
         tools for handling object files.</para>
 @y
 <para>
@@ -109,7 +100,7 @@ Bourne シェルを提供し、LSB コア要件を満たします。
 <para>
 このパッケージは yacc (Yet Another Compiler Compiler)
 の GNU バージョンを提供します。
-LFS において利用する他のプログラムの中に、これを必要とするものがあります。
+LFS において利用するプログラムの中に、これを必要とするものがあります。
 </para>
 @z
 
@@ -355,9 +346,7 @@ IPv6 への対応があることから、よく使われてきたネットワー
         </para>
 @y
 <para>
-このパッケージは
-This package contains a very nice text file viewer that
-allows scrolling up or down when viewing a file.
+このパッケージはテキストファイルを表示する機能を提供するものであり、表示中にスクロールを可能とします。
 </para>
 @z
 
@@ -370,10 +359,8 @@ allows scrolling up or down when viewing a file.
 @y
 <para>
 このパッケージは GNU の汎用的なライブラリに対してのサポートスクリプトを提供します。
-
-It wraps the complexity of using shared libraries in a 
-consistent, portable interface.  It is needed by the test
-suites in other LFS packages.
+これは、複雑な共有ライブラリの取り扱いを単純なものとし、移植性に優れた一貫した方法を提供します。
+LFS パッケージのテストスイートにおいて必要となります。
 </para>
 @z
 
@@ -416,11 +403,10 @@ LFS におけるパッケージでは、ほぼすべてにおいて必要とな�
         the man program. </para>
 @y
 <para>
-
-This package contains programs for finding and viewing man pages.
-It was chosen instead of the <application>man</application> package
-due to superior internationalization capabilities.  It supplies
-the man program. 
+このパッケージは man ページを検索し表示するプログラムを提供します。
+<application>man</application>
+パッケージではなく本パッケージを採用しているのは、その方が国際化機能が優れているためです。
+このパッケージは man プログラムを提供しています。
 </para>
 @z
 
@@ -428,16 +414,18 @@ the man program.
         <para>This package contains the actual contents of the basic
         Linux man pages. </para>
 @y
-        <para>This package contains the actual contents of the basic
-        Linux man pages. </para>
+<para>
+このパッケージは Linux の基本的な man ページを提供します。
+</para>
 @z
 
 @x Module-Init-Tools
         <para>This package contains programs needed to administer Linux
         kernel modules.</para>
 @y
-        <para>This package contains programs needed to administer Linux
-        kernel modules.</para>
+<para>
+このパッケージは Linux カーネルモジュールを管理するのに必要なプログラムを提供します。
+</para>
 @z
 
 @x MPFR
@@ -445,9 +433,10 @@ the man program.
         arithmetic.  It is required by Gcc.
         </para>
 @y
-        <para>This package contains functions for multiple precision 
-        arithmetic.  It is required by Gcc.
-        </para>
+<para>
+このパッケージは倍精度演算 (multiple precision) の関数を提供します。
+GCC パッケージがこれを必要としています。
+</para>
 @z
 
 @x Ncurses
@@ -455,9 +444,10 @@ the man program.
         handling of character screens.  It is often used to provide 
         cursor control for a menuing system.  </para>
 @y
-        <para>This package contains libraries for terminal-independent 
-        handling of character screens.  It is often used to provide 
-        cursor control for a menuing system.  </para>
+<para>
+このパッケージは、端末に依存せず文字キャラクタを取り扱うライブラリを提供します。
+メニュー表示時のカーソル制御を実現する際に利用されます。
+</para>
 @z
 
 @x Patch
@@ -466,18 +456,22 @@ the man program.
         by the <application>diff</application> program.  It is needed by
         the build procedure for several LFS packages. </para>
 @y
-        <para>This package contains a program for modifying or creating files by
-        applying a <emphasis>patch</emphasis> file typically created 
-        by the <application>diff</application> program.  It is needed by
-        the build procedure for several LFS packages. </para>
+<para>
+このパッケージは、<emphasis>パッチ</emphasis>
+ファイルの適用により、特定のファイルを修正したり新規生成したりするためのプログラムを提供します。
+パッチファイルは <application>diff</application>
+プログラムにより生成されます。
+LFS パッケージの中には、構築時にこれを必要とするものがあります。
+</para>
 @z
 
 @x Perl
         <para>This package is an interpreter for the runtime language
         PERL.</para>
 @y
-        <para>This package is an interpreter for the runtime language
-        PERL.</para>
+<para>
+このパッケージは、ランタイムに利用されるインタープリタ言語 PERL を提供します。
+</para>
 @z
 
 @x Pkg-config
@@ -485,33 +479,38 @@ the man program.
         and/or library paths to build tools during the configure and make 
         processes.  It is needed by many LFS packages. </para>
 @y
-        <para>This package contains a tool for passing the include path 
-        and/or library paths to build tools during the configure and make 
-        processes.  It is needed by many LFS packages. </para>
+<para>
+このパッケージは、configure や make を行う際に、ビルドツールに対してインクルードパスやライブラリパスを受け渡すツールプログラムを提供します。
+LFS パッケージでは、ほとんどがこれを必要としています。
+</para>
 @z
 
 @x Procps
         <para>This package contains programs for monitoring processes.
         </para>
 @y
-        <para>This package contains programs for monitoring processes.
-        </para>
+<para>
+このパッケージは、プロセスの監視を行うプログラムを提供します。
+</para>
 @z
 
 @x Psmisc
         <para>This package contains programs for displaying information 
         about running processes. </para>
 @y
-        <para>This package contains programs for displaying information 
-        about running processes. </para>
+<para>
+このパッケージは、実行中のプロセスに関する情報を表示するプログラムを提供します。
+</para>
 @z
 
 @x Readline
         <para>This package is a set of libraries that offers command-line 
         editing and history capabilities.  It is used by Bash. </para>
 @y
-        <para>This package is a set of libraries that offers command-line 
-        editing and history capabilities.  It is used by Bash. </para>
+<para>
+このパッケージは、コマンドライン上での入力編集や履歴管理を行うライブラリを提供します。
+これは Bash が利用しています。
+</para>
 @z
 
 @x Sed
@@ -519,17 +518,19 @@ the man program.
         text editor. It is also needed by most LFS packages' configure 
         scripts. </para>
 @y
-        <para>This package allows editing of text without opening it in a 
-        text editor. It is also needed by most LFS packages' configure 
-        scripts. </para>
+<para>
+このパッケージは、テキストの編集を、テキストエディタを用いることなく可能とします。
+LFS パッケージにおける configure スクリプトは、たいていこれを必要としています。
+</para>
 @z
 
 @x Shadow
         <para>This package contains programs for handling passwords 
         in a secure way.</para>
 @y
-        <para>This package contains programs for handling passwords 
-        in a secure way.</para>
+<para>
+このパッケージは、セキュアな手法によりパスワード制御を行うプログラムを提供します。
+</para>
 @z
 
 @x Sysklogd
@@ -538,10 +539,10 @@ the man program.
         events occur.  
         </para>
 @y
-        <para>This package contains programs for logging system messages, 
-        such as those given by the kernel or daemon processes when unusual 
-        events occur.  
-        </para>
+<para>
+このパッケージは、システムメッセージログを扱うプログラムを提供します。
+例えばカーネルが出力するログや、デーモンプロセスが異常発生時に出力するログなどです。
+</para>
 @z
 
 @x Sysvinit
@@ -549,17 +550,20 @@ the man program.
         program, which is the parent of all other processes on the Linux
         system. </para>
 @y
-        <para>This package provides the <application>init</application>
-        program, which is the parent of all other processes on the Linux
-        system. </para>
+<para>
+このパッケージは <application>init</application> プログラムを提供します。
+これは Linux システム上のすべてのプロセスの基点となるものです。
+</para>
 @z
 
 @x Tar
         <para>This package provides archiving and extraction capabilities
         of virtually all packages used in LFS.  </para>
 @y
-        <para>This package provides archiving and extraction capabilities
-        of virtually all packages used in LFS.  </para>
+<para>
+このパッケージは、アーカイブや圧縮機能を提供するもので
+LFS が扱うすべてのパッケージにて利用されています。
+</para>
 @z
 
 @x Tcl
@@ -567,9 +571,11 @@ the man program.
         in many testsuites in LFS packages.  It is only installed in 
         the temporary toolchain. </para>
 @y
-        <para>This package contains the Tool Command Language used
-        in many testsuites in LFS packages.  It is only installed in 
-        the temporary toolchain. </para>
+<para>
+このパッケージはツールコマンド言語 (Tool Command Language) を提供します。
+LFS が扱うパッケージにてテストスイートの実行に必要となります。
+これは一時的なツールチェーンの構築時にのみインストールします。
+</para>
 @z
 
 @x Texinfo
@@ -577,9 +583,10 @@ the man program.
         converting info pages.  It is used in the installation 
         procedures of many LFS packages. </para>
 @y
-        <para>This package contains programs for reading, writing, and 
-        converting info pages.  It is used in the installation 
-        procedures of many LFS packages. </para>
+<para>
+このパッケージは Info ページに関しての入出力や変換を行うプログラムを提供します。
+LFS が扱うパッケージのインストール時には、たいてい利用されます。
+</para>
 @z
 
 @x Udev
@@ -588,10 +595,10 @@ the man program.
         static devices in the /dev directory.  
         </para>
 @y
-        <para>This package contains programs for dynamic creation of 
-        device nodes.  It is an alternative to creating thousands of
-        static devices in the /dev directory.  
-        </para>
+<para>
+このパッケージはデバイスノードの動的生成を行うプログラムを提供します。
+/dev ディレクトリに、デバイスを静的にいくつも作り出す方法を取らないためのものです。
+</para>
 @z
 
 @x Util-linux-ng
@@ -599,9 +606,10 @@ the man program.
         Among them are utilities for handling file systems, consoles, 
         partitions, and messages. </para>
 @y
-        <para>This package contains miscellaneous utility programs. 
-        Among them are utilities for handling file systems, consoles, 
-        partitions, and messages. </para>
+<para>
+このパッケージは数多くのユーティリティプログラムを提供します。
+その中には、ファイルシステムやコンソール、パーティション、メッセージなどを取り扱うユーティリティがあります。
+</para>
 @z
 
 @x Vim
@@ -611,11 +619,11 @@ the man program.
         many users and any other editor could be substituted if desired.
         </para>
 @y
-        <para>This package contains an editor. It was chosen because of its
-        compatibility with the classic vi editor and its huge number of powerful
-        capabilities.  An editor is a very personal choice for
-        many users and any other editor could be substituted if desired.
-        </para>
+<para>
+このパッケージはテキストエディタを提供します。
+これを採用しているのは、従来の vi エディタとの互換性があり、しかも数々の有用な機能を提供するものだからです。
+テキストエディタは個人により好みはさまざまですから、もし別のエディタを利用したいなら、そちらを用いても構いません。
+</para>
 @z
 
 @x Zlib
@@ -623,8 +631,8 @@ the man program.
         used by some programs. 
         </para>
 @y
-        <para>This package contains compression and decompression routines 
-        used by some programs. 
-        </para>
+<para>
+このパッケージは、圧縮や解凍の機能を提供するもので、他のプログラムがこれを利用しています。
+</para>
 @z
 

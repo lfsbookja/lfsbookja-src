@@ -253,6 +253,20 @@
       </listitem>
 @z
 
+@x
+      <term>Make Upstream Fixes Patch - <token>&make-upstream_fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&make-upstream_fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&make-upstream_fixes-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Make Upstream Fixes Patch - <token>&make-upstream_fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&make-upstream_fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&make-upstream_fixes-patch-md5;</literal></para>
+      </listitem>
+@z
+
 @x Patch Testsuite Fix Patch
         <para>Download: <ulink url="&patches-root;&patch-test-patch;"/></para>
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
@@ -290,6 +304,20 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&perl-libc-patch;"/></para>
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
       </listitem>
 @z
 

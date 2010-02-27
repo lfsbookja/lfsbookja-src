@@ -17,15 +17,6 @@
   <title>Creating a New Partition</title>
 @y
   <title>新しいパーティションの生成</title>
-
-  <caution>
-   <title>日本語訳情報</title>
-   <para>
-    現時点にて本節は訳出未完です。早期に仕上げます。
-    このところ比較的頻繁にオリジナル版が更新されるため、開発作業上の都合として暫定的に対処するものです。
-    訳出が終わり次第、この注記を除きます。
-   </para>
-  </caution>
 @z
 
 @x
@@ -142,13 +133,10 @@ LFS システムそのものがそれだけの容量を要するわけではあ�
 <para>
 LFS メーリングリストにてパーティションに関する有用情報を望む声をよく聞きます。
 これは個人の趣味にもよる極めて主観的なものです。
-たいていのディストリビューションが採用しているデフォルトのパーティションサイズと言えば、スワップパーティションを小容量で配置した上で、そのドライブ内の残容量すべてのサイズを割り当てています。
-このようなサイズ設定は LFS では最適ではなく、その理由はいくつかあります。
-
-It reduces flexibility, makes 
-sharing of data across multiple distributions or LFS builds more difficult, makes
-backups more time consuming, and can waste disk space through inefficient 
-allocation of file system structures.
+既存ディストリビューションが採用しているデフォルトのパーティションサイズと言えば、たいていはスワップパーティションを小容量で配置した上で、そのドライブ内の残容量すべてのサイズを割り当てています。
+このようなサイズ設定は LFS では最適ではありません。その理由はいくつかあります。
+そのようにしてしまうと、複数のディストリビューションの導入時や LFS 構築時に、柔軟さを欠き、構築がしにくくなります。
+バックアップを取る際にも無用な時間を要し、ファイルシステム上にて不適当なファイル配置を生み出すため、余計なディスク消費を発生させます。
 </para>
 @z
 
@@ -166,11 +154,10 @@ allocation of file system structures.
 @y
 <para>
 ルートパーティション (これを /root ディレクトリと混同しないでください)
-が
-A root LFS partition (not to be confused with the /root directory) of
-ten gigabytes is a good compromise for most systems.  It provides enough
-space to build LFS and most of BLFS, but is small enough so that multiple
-partitions can be easily created for experimentation.</para> 
+は 10 GB もあれば、どんなシステムであっても妥当なところでしょう。
+それだけあれば LFS 構築も、また BLFS においてもおそらく十分なはずです。
+実験的に複数パーティションを設けるとしても、これだけのサイズは必要です。
+</para>
 </sect3>
 @z
 
@@ -205,13 +192,10 @@ partitions can be easily created for experimentation.</para>
 @y
 <para>
 スワップは好ましいことではありません。
-
-Generally you can tell if a system is
-swapping by just listening to disk activity and observing how the system
-reacts to commands.  The first reaction to swapping shouuld be to check for
-an unresonable command such as trying to edit a five gigabyte file.  If
-swapping becomes a normal occurance, the best solution is to purchase more
-RAM for your system.</para> </sect3>
+一般にスワップが発生しているかどうかは、ディスクアクセスの様子やコマンド実行時にシステムがどのように反応するかを見てみれば分かります。
+例えば 5GB くらいのファイルを編集するといった極端なコマンド実行を行ってみて、スワップが起きるかどうかを確認することが重要です。
+スワップがごく普通に発生するようであれば、RAMを増設するのが適切です。
+</para> </sect3>
 @z
 
 @x
@@ -228,9 +212,7 @@ RAM for your system.</para> </sect3>
 <para>
 この他にも、必要のないパーティションというものがいくつかあります。
 しかしディスクレイアウトを取り決めるには考えておく必要があります。
-
-The following list
-is not comprehensive, but is meant as a guide.
+以下に示すのは十分な説明ではありませんが、一つの目安として示すものです。
 </para>
 @z
 
@@ -244,11 +226,9 @@ is not comprehensive, but is meant as a guide.
 <listitem><para>
 /boot &ndash; 作成することが強く推奨されます。
 カーネルやブート情報を収納するために利用するパーティションです。
-
-To minimize potential boot
-problems with larger disks, make this the first physical partition on
-your first disk drive.  A partition size of 100 megabytes is quite
-adequate.</para></listitem>
+容量の大きなディスクの場合、ブート時に問題が発生することがあるので、これを回避するには、一つ目のディスクドライブの物理的に一番最初のパーティションを選びます。
+パーティションサイズを 100MB とすればそれで十分です。
+</para></listitem>
 @z
 
 @x
@@ -259,11 +239,9 @@ adequate.</para></listitem>
 @y
 <listitem><para>
 /home &ndash; 作成することが強く推奨されます。
-
-Share your home
-directory and user customization across multiple distributions or LFS
-builds.  The size is generally fairly large and depends on available disk
-space.</para></listitem>
+複数のディストリビューションや LFS の間で、ホームディレクトリおよびユーザー固有の設定を共有することができます。
+パーティションサイズは、ある程度大きく取ることになりますが、利用可能なディスク残容量に依存します。
+</para></listitem>
 @z
 
 @x
@@ -273,10 +251,11 @@ space.</para></listitem>
       installations.</para></listitem>
 @y
 <listitem><para>
-/usr &ndash; A separate /usr partition is generally used
-if providing a server for a thin client or diskless workstation.  It is
-normally not needed for LFS.  A size of five gigabytes will handle most
-installations.
+/usr &ndash; 
+/usr ディレクトリを別パーティションとして設けるのは、一般にはシンクライアント
+(thin client) 向けサーバーやディスクレスワークステーションにおいて行われます。
+普通 LFS では必要ありません。
+5 GB くらいの容量があれば、たいていのアプリケーションをインストールするのに十分なものでしょう。
 </para></listitem>
 @z
 
@@ -287,10 +266,12 @@ installations.
       used, five to ten gigabytes is generally adequate.</para>
 @y
 <listitem><para>
-/opt &ndash; This directory is most useful for
-BLFS where multiple installations of large packages like Gnome or KDE can
-be installed without embedding the files in the /usr hierarchy.  If
-used, five to ten gigabytes is generally adequate.</para>
+/opt &ndash; 
+このディレクトリは BLFS などにおいて、Gnome や KDE
+といった巨大なパッケージをいくつもインストールする際に活用されます。
+/usr ディレクトリ以外にインストールする場合です。
+これを別パーティションとするなら、一般的には 5 ～ 10 GB 程度が適当でしょう。
+</para>
 @z
 
 @x
@@ -299,9 +280,10 @@ used, five to ten gigabytes is generally adequate.</para>
       usually not need to exceed a couple of gigabytes.</para></listitem>
 @y
 <listitem><para>
-/tmp &ndash; A separate /tmp directory is rare, but
-useful if coufiguring a thin client.  This partition, if used, will
-usually not need to exceed a couple of gigabytes.
+/tmp &ndash; 
+/tmp ディレクトリを別パーティションとするのは普通は行いません。
+ただしシンクライアント (thin client) では有効です。
+別パーティションとする場合であっても、数GB程度あれば十分です。
 </para></listitem>
 @z
 
@@ -312,12 +294,18 @@ usually not need to exceed a couple of gigabytes.
       for building BLFS packages.  A reasonably large partition of 30-50
       gigabytes allows plenty of room.</para></listitem>
 @y
+<!--
+前段にて BLFS source files を収容するような説明。
+ただしこれは LFS のソースであると解釈しそのように訳出。
+その直後に BLFS ソースのことが出てくるため、論理がつながらないため。
+-->
 <listitem><para>
-/usr/src &ndash; This partition is very
-useful for providing a location to store BLFS source files and
-share them across LFS builds.  It can also be used as a location
-for building BLFS packages.  A reasonably large partition of 30-50
-gigabytes allows plenty of room.</para></listitem>
+/usr/src &ndash; 
+このパーティションは LFS のパッケージソースを収容し
+LFS ビルド工程にて共用するものとして有効に利用することができます。
+さらに BLFS パッケージソースを収容しビルドする場所としても利用可能です。
+30～50GBくらいの容量があれば、十分なものです。
+</para></listitem>
 @z
 
 @x
