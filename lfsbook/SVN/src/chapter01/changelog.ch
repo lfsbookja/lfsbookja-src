@@ -57,6 +57,25 @@
 @z
 
 @x
+      <para>2010-02-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Fix location of change to config.h in Bison. 
+          Fixes
+          <ulink url="&lfs-ticket-root;2595">#2595</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-02-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Bison にて config.h の場所変更に伴い修正。
+          <ulink url="&lfs-ticket-root;2595">#2595</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-02-26</para>
       <itemizedlist>
         <listitem>
