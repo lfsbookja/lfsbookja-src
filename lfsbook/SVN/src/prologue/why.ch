@@ -248,12 +248,12 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
 @z
 
 @x GMP
-        <para>This package contains math libraries and have useful functions for
-        arbitrary precision arithmetic.  It is required to build Gcc. </para>
+        <para>This package contains math libraries that provide useful functions
+        for arbitrary precision arithmetic.  It is required to build Gcc.</para>
 @y
 <para>
 このパッケージは数値演算ライブラリを提供するもので、任意精度演算
-(arbitrary precision arithmetic) 関数を含みます。
+(arbitrary precision arithmetic) についての有用な関数を含みます。
 これは GCC をビルドするために必要です。
 </para>
 @z

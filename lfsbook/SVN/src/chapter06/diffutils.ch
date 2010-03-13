@@ -19,36 +19,36 @@ Diffutils パッケージはファイルやディレクトリの差分を表示�
     <title>Diffutils のインストール</title>
 @z
 
-@x
-    <para>POSIX requires the <command>diff</command> command to treat whitespace
-    characters according to the current locale. The following patch fixes the
-    non-compliance issue:</para>
-@y
-<para>
-POSIX によると <command>diff</command>
-コマンドは、設定されているロケールに従って空白文字を適切に取り扱うことが必要になります。
-以下のパッチは、標準に対応していない問題を修正します。
-</para>
-@z
-
-@x
-    <para>The above patch will cause the Diffutils build system to attempt to
-    rebuild the <filename>diff.1</filename> man page using the unavailable
-    program <command>help2man</command>. The result is an unreadable man page for
-    <command>diff</command>. We can avoid this by updating the timestamp on
-    the file <filename>man/diff.1</filename>:</para>
-@y
-<para>
-上のパッチを適用すると Diffutils は man ページ <filename>diff.1</filename>
-を再生成しようとしますが、その際には現時点で存在しない
-<command>help2man</command> プログラムを呼び出そうとします。
-その結果として <command>diff</command>
-コマンドの man ページが読めなくなってしまいます。
-そこでこれを解消するために
-<filename>man/diff.1</filename>
-ファイルのタイムスタンプを更新します。
-</para>
-@z
+% @x
+%     <para>POSIX requires the <command>diff</command> command to treat whitespace
+%     characters according to the current locale. The following patch fixes the
+%     non-compliance issue:</para>
+% @y
+% <para>
+% POSIX によると <command>diff</command>
+% コマンドは、設定されているロケールに従って空白文字を適切に取り扱うことが必要になります。
+% 以下のパッチは、標準に対応していない問題を修正します。
+% </para>
+% @z
+% 
+% @x
+%     <para>The above patch will cause the Diffutils build system to attempt to
+%     rebuild the <filename>diff.1</filename> man page using the unavailable
+%     program <command>help2man</command>. The result is an unreadable man page for
+%     <command>diff</command>. We can avoid this by updating the timestamp on
+%     the file <filename>man/diff.1</filename>:</para>
+% @y
+% <para>
+% 上のパッチを適用すると Diffutils は man ページ <filename>diff.1</filename>
+% を再生成しようとしますが、その際には現時点で存在しない
+% <command>help2man</command> プログラムを呼び出そうとします。
+% その結果として <command>diff</command>
+% コマンドの man ページが読めなくなってしまいます。
+% そこでこれを解消するために
+% <filename>man/diff.1</filename>
+% ファイルのタイムスタンプを更新します。
+% </para>
+% @z
 
 @x
     <para>Prepare Diffutils for compilation:</para>

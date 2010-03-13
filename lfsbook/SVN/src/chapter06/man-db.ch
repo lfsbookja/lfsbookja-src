@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -133,12 +142,12 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
             <entry>Danish (da)</entry>
             <entry>ISO-8859-1</entry>
             <entry>Croatian (hr)</entry>
-            <entry>ISO-8859-1</entry>
+            <entry>ISO-8859-2</entry>
 @y
             <entry>デンマーク語 (da)</entry>
             <entry>ISO-8859-1</entry>
             <entry>クロアチア語 (hr)</entry>
-            <entry>ISO-8859-1</entry>
+            <entry>ISO-8859-2</entry>
 @z
 
 @x
