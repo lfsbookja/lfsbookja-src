@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxml2-buildsize     "74 MB (additional 19 MB to run the full test suite)">
-  <!ENTITY libxml2-time          "1.4 SBU (additional 0.3 SBU to run the full test suite)">
+  <!ENTITY libxml2-buildsize     "113 MB (additional 19 MB to run the full test suite)">
+  <!ENTITY libxml2-time          "1.2 SBU (additional 0.3 SBU to run the full test suite)">
 @y
-  <!ENTITY libxml2-buildsize     "74 MB (テストスイートをすべて実施するなら、さらに 19 MB)">
-  <!ENTITY libxml2-time          "1.4 SBU (テストスイートをすべて実施するなら、さらに 0.3 SBU)">
+  <!ENTITY libxml2-buildsize     "113 MB (テストスイートをすべて実施するなら、さらに 19 MB)">
+  <!ENTITY libxml2-time          "1.2 SBU (テストスイートをすべて実施するなら、さらに 0.3 SBU)">
 @z
 
 @x
@@ -79,27 +79,27 @@ XML ファイルの処理に用いられます。
         <para>&j-Estimatedbuildtime;: &libxml2-time;</para>
 @z
 
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Optional Testsuite: <ulink
-          url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> - This
-          enables <command>make check</command> to do complete testing. Note
-          that this is <emphasis>not</emphasis> the latest version of the
-          testsuite, but it is the one specified by the developers.</para>
-@y
-<para>任意のテストスイート: 
-<ulink url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> -
-これを利用すると <command>make check</command>
-により完全なテストを行うことができます。
-これはテストスイートの最新版<emphasis>ではありません</emphasis>。
-もっとも開発者が指定しているものです。
-</para>
-@z
+% @x
+%     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+% @y
+%     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+% @z
+% 
+% @x
+%         <para>Optional Testsuite: <ulink
+%           url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> - This
+%           enables <command>make check</command> to do complete testing. Note
+%           that this is <emphasis>not</emphasis> the latest version of the
+%           testsuite, but it is the one specified by the developers.</para>
+% @y
+% <para>任意のテストスイート: 
+% <ulink url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> -
+% これを利用すると <command>make check</command>
+% により完全なテストを行うことができます。
+% これはテストスイートの最新版<emphasis>ではありません</emphasis>。
+% もっとも開発者が指定しているものです。
+% </para>
+% @z
 
 @x
     <bridgehead renderas="sect3">libxml2 Dependencies</bridgehead>
@@ -156,13 +156,13 @@ XML ファイルの処理に用いられます。
     <title>libxml2 のインストール</title>
 @z
 
-@x
-    <para>If you downloaded the testsuite, issue the following command:</para>
-@y
-<para>
-テストスイート用のファイルをダウンロードしている場合は以下を実行します。
-</para>
-@z
+% @x
+%     <para>If you downloaded the testsuite, issue the following command:</para>
+% @y
+% <para>
+% テストスイート用のファイルをダウンロードしている場合は以下を実行します。
+% </para>
+% @z
 
 @x
     <para>Install <application>libxml2</application> by running the following

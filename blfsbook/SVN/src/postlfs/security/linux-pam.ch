@@ -26,11 +26,10 @@
     users.</para>
 @y
 <para>
-
-The <application>Linux-PAM</application> package contains
-Pluggable Authentication Modules. This is useful to enable the
-local system administrator to choose how applications authenticate
-users.
+<application>Linux-PAM</application>
+パッケージは、プラグイン方式の認証モジュール
+(Pluggable Authentication Modules) を提供します。
+これはローカルのシステム管理者が、各アプリケーションに対してどのユーザーにどのような権限を与えるかを制御する有用な機能です。
 </para>
 @z
 
@@ -234,19 +233,22 @@ tarball を解凍します。
     The other executable is later moved to the
     <filename class='directory'>/sbin</filename> directory.</para>
 @y
-<para><parameter>--sbindir=/lib/security</parameter>: This parameter
-results in three executables, two of which are not intended to be run from
-the command line, being installed in the same directory as the PAM modules.
-The other executable is later moved to the
-<filename class='directory'>/sbin</filename> directory.</para>
+<para><parameter>--sbindir=/lib/security</parameter>:
+このパラメータは、三つの実行モジュールに対するものです。
+そのうちの二つは、コマンドラインから直接実行するようなものではなく
+PAM モジュールと同じディレクトリにインストールされます。
+三つめの実行モジュールは、後に <filename class='directory'>/sbin</filename>
+に移動させます。
+</para>
 @z
 
 @x
     <para><parameter>--docdir=...</parameter>: This parameter results in
     the documentation being installed in a versioned directory name.</para>
 @y
-<para><parameter>--docdir=...</parameter>: This parameter results in
-the documentation being installed in a versioned directory name.</para>
+<para><parameter>--docdir=...</parameter>:
+このパラメータは、ドキュメントをバージョン番号を用いたディレクトリにインストールすることを指示します。
+</para>
 @z
 
 @x
@@ -254,7 +256,9 @@ the documentation being installed in a versioned directory name.</para>
     allows the local administrator to choose which configuration file setup to
     use.</para>
 @y
-<para><parameter>--enable-read-both-confs</parameter>: This parameter
+<para><parameter>--enable-read-both-confs</parameter>:
+
+This parameter
 allows the local administrator to choose which configuration file setup to
 use.</para>
 @z
@@ -355,10 +359,11 @@ library filenames.</para>
       <filename>/etc/pam.conf</filename> depending on system administrator
        preference. Below are example files of each type:</para>
 @y
-<para>Configuration information is placed in
-<filename class='directory'>/etc/pam.d/</filename> or
-<filename>/etc/pam.conf</filename> depending on system administrator
-preference. Below are example files of each type:</para>
+<para>
+設定情報は <filename class='directory'>/etc/pam.d/</filename> か
+<filename>/etc/pam.conf</filename> に保持します。
+いずれにするかはシステム管理者が適宜定めます。
+</para>
 @z
 
 @x
@@ -369,12 +374,15 @@ preference. Below are example files of each type:</para>
       Linux-PAM System Administrators' Guide</ulink>
       is recommended for additional information.</para>
 @y
-<para>The <application>PAM</application> man page
-(<command>man pam</command>) provides a good starting point for
+<para>
+<application>PAM</application> パッケージの Man ページ (<command>man pam</command>)
+は、
+ provides a good starting point for
 descriptions of fields and allowable entries. The <ulink
 url="http://www.kernel.org/pub/linux/libs/pam/Linux-PAM-html/Linux-PAM_SAG.html">
 Linux-PAM System Administrators' Guide</ulink>
-is recommended for additional information.</para>
+is recommended for additional information.
+</para>
 @z
 
 @x

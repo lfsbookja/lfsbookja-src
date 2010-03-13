@@ -135,10 +135,10 @@ CVS からソース入手し、かつ autotools のスクリプト類を生成�
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>This package does not come with a test suite.</para>
 @y
 <para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
+&j-notTestSuite;
 </para>
 @z
 
@@ -152,14 +152,21 @@ CVS からソース入手し、かつ autotools のスクリプト類を生成�
 @z
 
 @x
-    <para>If you wish to install the API documentation, issue the following
-    command as the <systemitem class="username">root</systemitem> user:</para>
+    <para>If you wish to install the API documentation you must have
+    <xref linkend="doxygen"/> installed, then change directories into the
+    <filename class='directory'>htmldoc</filename> of the source tree and
+    issue the command <command>doxygen</command>. Then as the
+    <systemitem class="username">root</systemitem> user copy
+    the <filename class='directory'>api</filename> directory to
+    <filename class='directory'>/usr/share/doc/tidy-&tidy-version;.</filename></para>
 @y
-<para>
-API ドキュメントをインストールする場合は
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-</para>
+    <para>If you wish to install the API documentation you must have
+    <xref linkend="doxygen"/> installed, then change directories into the
+    <filename class='directory'>htmldoc</filename> of the source tree and
+    issue the command <command>doxygen</command>. Then as the
+    <systemitem class="username">root</systemitem> user copy
+    the <filename class='directory'>api</filename> directory to
+    <filename class='directory'>/usr/share/doc/tidy-&tidy-version;.</filename></para>
 @z
 
 @x
@@ -224,11 +231,11 @@ to <command>tidy</command> via command line parameters or the
 @x
     <seg>tab2space and tidy</seg>
     <seg>libtidy.{so,a}</seg>
-    <seg>/usr/share/doc/tidy-&tidy-docs-version;</seg>
+    <seg>/usr/share/doc/tidy-&tidy-version;</seg>
 @y
-    <seg>tab2space, tidy</seg>
+    <seg>tab2space and tidy</seg>
     <seg>libtidy.{so,a}</seg>
-    <seg>/usr/share/doc/tidy-&tidy-docs-version;</seg>
+    <seg>/usr/share/doc/tidy-&tidy-version;</seg>
 @z
 
 @x

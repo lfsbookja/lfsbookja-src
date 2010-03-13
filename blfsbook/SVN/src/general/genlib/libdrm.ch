@@ -104,10 +104,13 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To check the results, issue <command>make check</command>. Note that
+    some tests may fail depending on the video hardware installed in the
+    machine.</para>
 @y
 <para>
-&j-notTestSuite;
+ビルド結果を確認するなら <command>make check</command> を実行します。
+テストの中には、搭載されているビデオ関連のハードウェアにてエラーとなる場合があります。
 </para>
 @z
 
@@ -127,7 +130,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
@@ -137,11 +140,11 @@
 
 @x
         <seg>None</seg>
-        <seg>libdrm.{so,a}</seg>
+        <seg>libdrm.{so,a} and libdrm_intel.{so,a}</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @y
         <seg>なし</seg>
-        <seg>libdrm.{so,a}</seg>
+        <seg>libdrm.{so,a}, libdrm_intel.{so,a}</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @z
 

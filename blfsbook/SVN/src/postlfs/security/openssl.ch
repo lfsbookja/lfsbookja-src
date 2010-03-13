@@ -138,10 +138,10 @@
     <xref linkend="heimdal"/>, and <xref linkend="bc"/> (required to run the
     test suite during the build)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="mitkrb"/> or
-    <xref linkend="heimdal"/>, and <xref linkend="bc"/> (required to run the
-    test suite during the build)</para>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <para role="optional"><xref linkend="mitkrb"/> または
+    <xref linkend="heimdal"/>, かつ <xref linkend="bc"/>
+    (ビルド時にテストスイートを実行する場合に必要。)</para>
 @z
 
 @x
@@ -219,9 +219,7 @@
 @y
 <para>
 <parameter>shared</parameter>:
-
-This parameter forces the creation of
-shared libraries along with the static libraries.
+このパラメータは、スタティックライブラリとともに共有ライブラリを生成するよう指示します。
 </para>
 @z
 

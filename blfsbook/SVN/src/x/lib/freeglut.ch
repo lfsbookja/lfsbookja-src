@@ -34,16 +34,6 @@ GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL �
 @z
 
 @x
-    <para>If you built the GLUT library during an installation of
-    <xref linkend="mesalib"/>, you do not need to install this package.</para>
-@y
-<para>
-<xref linkend="mesalib"/>
-のインストール時に GLUT ライブラリもビルドしている場合は、このパッケージをインストールする必要はありません。
-</para>
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
@@ -173,11 +163,11 @@ GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL �
 @x
         <seg>None</seg>
         <seg>libglut.{so,a}</seg>
-        <seg>/usr/share/doc/freeglut-&freeglut-version;</seg>
+        <seg>/<replaceable>&lt;$XORG_PREFIX&gt;</replaceable>/share/doc/freeglut-&freeglut-version;</seg>
 @y
-        <seg>None</seg>
+        <seg>なし</seg>
         <seg>libglut.{so,a}</seg>
-        <seg>/usr/share/doc/freeglut-&freeglut-version;</seg>
+        <seg>/<replaceable>&lt;$XORG_PREFIX&gt;</replaceable>/share/doc/freeglut-&freeglut-version;</seg>
 @z
 
 @x

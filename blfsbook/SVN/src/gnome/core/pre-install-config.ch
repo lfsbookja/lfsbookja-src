@@ -31,7 +31,7 @@
   <para>If <application>GNOME</application> is your desktop of choice:</para>
 @y
 <para>
-If <application>GNOME</application> is your desktop of choice:
+デスクトップ環境として <application>GNOME</application> を採用するため、以下を実行します。
 </para>
 @z
 
@@ -39,8 +39,11 @@ If <application>GNOME</application> is your desktop of choice:
   <para>If you want to try-out <application>GNOME</application>, or install
   it in an easy-to-remove location:</para>
 @y
-  <para>If you want to try-out <application>GNOME</application>, or install
-  it in an easy-to-remove location:</para>
+<para>
+
+If you want to try-out <application>GNOME</application>, or install
+it in an easy-to-remove location:
+</para>
 @z
 
 @x

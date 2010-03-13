@@ -10,19 +10,19 @@
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY doxygen-time          "1.6 SBU (includes building the GUI frontend)">
+  <!ENTITY doxygen-time          "1.5 SBU (includes building the GUI frontend)">
 @y
-  <!ENTITY doxygen-time          "1.6 SBU (includes building the GUI frontend)">
+  <!ENTITY doxygen-time          "1.5 SBU (GUI フロントエンドのビルドを含む)">
 @z
 
 @x
     <title>Introduction to Doxygen</title>
 @y
-    <title>Introduction to Doxygen</title>
+    <title>Doxygen の概要</title>
 @z
 
 @x

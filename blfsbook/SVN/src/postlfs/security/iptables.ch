@@ -21,23 +21,16 @@
 
 @x
   <para>The next part of this chapter deals with firewalls.  The principal
-  firewall tool for Linux, as of the 2.4 kernel series, is
-  <application>iptables</application>.  It replaces
-  <application>ipchains</application> from the 2.2 series and
-  <application>ipfwadm</application> from the 2.0 series. You will need to
-  install <application>iptables</application> if you intend on using any
-  form of a firewall.</para>
+  firewall tool for Linux is <application>iptables</application>.  You will
+  need to install <application>iptables</application> if you intend on using
+  any form of a firewall.</para>
 @y
 <para>
 この節の次ではファイヤウォールについて説明します。
-Linux カーネル 2.4 でも同じことですが、ファイヤウォールを取り扱う重要なツールが
+Linux においてファイヤウォールを取り扱う重要なツールが
 <application>iptables</application> です。
-
-It replaces
-<application>ipchains</application> from the 2.2 series and
-<application>ipfwadm</application> from the 2.0 series. You will need to
-install <application>iptables</application> if you intend on using any
-form of a firewall.
+どのような形にせよ、ファイアウォールを実現するなら
+<application>iptables</application> をインストールすることが必要です。
 </para>
 @z
 
@@ -101,19 +94,14 @@ form of a firewall.
     <para>A firewall in Linux is accomplished through a portion of the
     kernel called netfilter. The interface to netfilter is
     <application>iptables</application>. To use it, the appropriate
-    kernel configuration parameters are found in Networking &rArr;
-    Networking Options &rArr; Network Packet Filtering &rArr;
-    Core Netfilter Configuration (and) IP: Netfilter Configuration.</para>
+    kernel configuration parameters are found in Networking Support &rArr;
+    Networking Options &rArr; Network Packet Filtering Framework.</para>
 @y
-<para>
-
-A firewall in Linux is accomplished through a portion of the
-kernel called netfilter. The interface to netfilter is
-<application>iptables</application>. To use it, the appropriate
-kernel configuration parameters are found in Networking &rArr;
-Networking Options &rArr; Network Packet Filtering &rArr;
-Core Netfilter Configuration (and) IP: Netfilter Configuration.
-</para>
+    <para>A firewall in Linux is accomplished through a portion of the
+    kernel called netfilter. The interface to netfilter is
+    <application>iptables</application>. To use it, the appropriate
+    kernel configuration parameters are found in Networking Support &rArr;
+    Networking Options &rArr; Network Packet Filtering Framework.</para>
 @z
 
 @x
@@ -197,47 +185,31 @@ code.
 @z
 
 @x
-    <para><command>sed -i 's/name="$node/name="node/' iptables.xslt</command>:
-    This corrects a syntax error in the XSLT stylesheet for use with
-    <command>iptables-xml</command>.</para>
+    <para><parameter>--bindir=/sbin</parameter>, 
+    <parameter>--sbindir=/sbin</parameter>:  Ensure all the executables go
+    in <filename class="directory">/sbin</filename>.</para>
 @y
-    <para><command>sed -i 's/name="$node/name="node/' iptables.xslt</command>:
-    This corrects a syntax error in the XSLT stylesheet for use with
-    <command>iptables-xml</command>.</para>
+    <para><parameter>--bindir=/sbin</parameter>, 
+    <parameter>--sbindir=/sbin</parameter>:  Ensure all the executables go
+    in <filename class="directory">/sbin</filename>.</para>
 @z
 
 @x
-    <para><parameter>PREFIX=/usr LIBDIR=/lib BINDIR=/sbin</parameter>:
-    Compiles and installs <application>iptables</application> modules
-    into <filename class="directory">/lib</filename>, binaries into
-    <filename class="directory">/sbin</filename> and the remainder into
-    the <filename class="directory">/usr</filename> hierarchy instead of
-    <filename class="directory">/usr/local</filename>. Firewalls are
-    generally activated during the boot process and
-    <filename class="directory">/usr</filename> may not be mounted at
-    that time.</para>
+    <para><parameter>--libdir=/lib</parameter>, 
+    <parameter>--libexecdir=/lib</parameter>:  Ensure all the libraries are 
+    in the <filename class="directory">/lib</filename> directory tree.</para>
 @y
-    <para><parameter>PREFIX=/usr LIBDIR=/lib BINDIR=/sbin</parameter>:
-    Compiles and installs <application>iptables</application> modules
-    into <filename class="directory">/lib</filename>, binaries into
-    <filename class="directory">/sbin</filename> and the remainder into
-    the <filename class="directory">/usr</filename> hierarchy instead of
-    <filename class="directory">/usr/local</filename>. Firewalls are
-    generally activated during the boot process and
-    <filename class="directory">/usr</filename> may not be mounted at
-    that time.</para>
+    <para><parameter>--libdir=/lib</parameter>, 
+    <parameter>--libexecdir=/lib</parameter>:  Ensure all the libraries are 
+    in the <filename class="directory">/lib</filename> directory tree.</para>
 @z
 
 @x
-    <para><parameter>KERNEL_DIR=/usr</parameter>: This parameter is used to
-    point at the sanitized kernel headers in
-    <filename class='directory'>/usr</filename> and not use the raw kernel
-    headers in <filename class='directory'>/usr/src/linux</filename>.</para>
+    <para><parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:  
+    Ensure all the pkgconfig files are in the standard location.</para>
 @y
-    <para><parameter>KERNEL_DIR=/usr</parameter>: This parameter is used to
-    point at the sanitized kernel headers in
-    <filename class='directory'>/usr</filename> and not use the raw kernel
-    headers in <filename class='directory'>/usr/src/linux</filename>.</para>
+    <para><parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:  
+    Ensure all the pkgconfig files are in the standard location.</para>
 @z
 
 @x
@@ -283,7 +255,7 @@ iptables によるファイヤウォールの設定を起動時に有効とす�
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
       <segtitle>&j-InstalledLibraries;</segtitle>
@@ -291,15 +263,19 @@ iptables によるファイヤウォールの設定を起動時に有効とす�
 @z
 
 @x
-        <seg>iptables, iptables-restore, iptables-save, iptables-xml and
-        ip6tables</seg>
-        <seg>libip6t_*.so and libipt_*.so</seg>
-        <seg>/lib/iptables</seg>
+        <seg>iptables, iptables-restore, iptables-save, iptables-xml, 
+        iptables-multi, ip6tables, ip6tables-restore, ip6tables-save, 
+        and ip6tables-multii</seg>
+        <seg>libip4tc.so, libip6tc.so, libiptc.so, libxtables.so,
+        and numerous modules in /lib/xtables/</seg>
+        <seg>/lib/xtables/xtables and /usr/include/libiptc</seg>
 @y
-        <seg>iptables, iptables-restore, iptables-save, iptables-xml and
-        ip6tables</seg>
-        <seg>libip6t_*.so and libipt_*.so</seg>
-        <seg>/lib/iptables</seg>
+        <seg>iptables, iptables-restore, iptables-save, iptables-xml, 
+        iptables-multi, ip6tables, ip6tables-restore, ip6tables-save, 
+        ip6tables-multii</seg>
+        <seg>libip4tc.so, libip6tc.so, libiptc.so, libxtables.so,
+        /lib/xtables/ 以下にある数々のモジュール</seg>
+        <seg>/lib/xtables/xtables, /usr/include/libiptc</seg>
 @z
 
 @x
@@ -310,63 +286,59 @@ iptables によるファイヤウォールの設定を起動時に有効とす�
 
 @x iptables
           <para>is used to set up, maintain, and inspect the tables of
-          IP packet filter rules in the Linux kernel.</para>
+          IP packet filter rules in the Linux kernel.  It is a 
+          symbolic link to iptables-multi.</para>
 @y
           <para>is used to set up, maintain, and inspect the tables of
-          IP packet filter rules in the Linux kernel.</para>
+          IP packet filter rules in the Linux kernel.  It is a 
+          symbolic link to iptables-multi.</para>
 @z
 
 @x iptables-restore
           <para>is used to restore IP Tables from data
           specified on STDIN. Use I/O redirection provided by your
-          shell to read from a file.</para>
+          shell to read from a file. It is a symbolic link to 
+          iptables-multi.</para>
 @y
           <para>is used to restore IP Tables from data
           specified on STDIN. Use I/O redirection provided by your
-          shell to read from a file.</para>
+          shell to read from a file. It is a symbolic link to 
+          iptables-multi.</para>
 @z
 
 @x iptables-save
           <para>is used to dump the contents of an IP Table
           in easily parseable format to STDOUT. Use I/O-redirection
-          provided by your shell to write to a file.</para>
+          provided by your shell to write to a file. It is a symbolic link to
+          iptables-multi.</para>
 @y
           <para>is used to dump the contents of an IP Table
           in easily parseable format to STDOUT. Use I/O-redirection
-          provided by your shell to write to a file.</para>
+          provided by your shell to write to a file. It is a symbolic link to
+          iptables-multi.</para>
 @z
 
 @x iptables-xml
           <para>is used to convert the output of
           <command>iptables-save</command> to an XML format. Using the
           <filename>iptables.xslt</filename> stylesheet converts the XML
-          back to the format of <command>iptables-restore</command>.</para>
+          back to the format of <command>iptables-restore</command>.
+          It is a symbolic link to iptables-multi.</para>
 @y
           <para>is used to convert the output of
           <command>iptables-save</command> to an XML format. Using the
           <filename>iptables.xslt</filename> stylesheet converts the XML
-          back to the format of <command>iptables-restore</command>.</para>
+          back to the format of <command>iptables-restore</command>.
+          It is a symbolic link to iptables-multi.</para>
 @z
 
 @x ip6tables
-          <para>is used to set up, maintain, and inspect the tables of
-          IPv6 packet filter rules in the Linux kernel. Several different
-          tables may be defined. Each table contains a number of built-in
-          chains and may also contain user-defined chains.</para>
+          <para>are a set of commands for IPV6 that parallel the iptables
+          commands above.  All of these commands are symbolic 
+          links to ip6tables-multi.</para>
 @y
-          <para>is used to set up, maintain, and inspect the tables of
-          IPv6 packet filter rules in the Linux kernel. Several different
-          tables may be defined. Each table contains a number of built-in
-          chains and may also contain user-defined chains.</para>
-@z
-
-@x libip*.so
-          <para>library modules are various modules (implemented as dynamic
-          libraries) which extend the core functionality of
-          <command>iptables</command>.</para>
-@y
-          <para>library modules are various modules (implemented as dynamic
-          libraries) which extend the core functionality of
-          <command>iptables</command>.</para>
+          <para>are a set of commands for IPV6 that parallel the iptables
+          commands above.  All of these commands are symbolic 
+          links to ip6tables-multi.</para>
 @z
 
