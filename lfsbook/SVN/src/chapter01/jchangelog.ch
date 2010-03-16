@@ -50,6 +50,18 @@
 -->
 
     <listitem>
+      <para>2010-03-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/{perl.ch,pkgmgt.ch},
+          src/chapter08/grub.ch:
+          SVN-20100301, r9224 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-03-13</para>
       <itemizedlist>
         <listitem>

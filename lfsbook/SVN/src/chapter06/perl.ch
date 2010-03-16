@@ -238,10 +238,11 @@ CPANPLUS ランチャー。
 @z
 
 @x cpanp-run-perl
-          <para>Perl script that (description needed)</para>
+          <para>Perl script that is used to enable flushing of the output 
+          buffer after each write in spawned processes</para>
 @y
 <para>
-Perl スクリプト。(説明要。)
+Spawn プロセスにおいて出力処理が行われた後に、出力バッファをクリアするために利用するPerl スクリプト。
 </para>
 @z
 

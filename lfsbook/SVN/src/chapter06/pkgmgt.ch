@@ -543,7 +543,7 @@ Slackware のパッケージ管理に関する詳細は
 @z
 
 @x
-    <para>One of the advantages of a LFS system is that there are no files that
+    <para>One of the advantages of an LFS system is that there are no files that
     depend on the position of files on a disk system.  Cloning an LFS build to
     another computer with an architecture similar to the base system is as
     simple as using <command>tar</command> on the LFS partition that contains
