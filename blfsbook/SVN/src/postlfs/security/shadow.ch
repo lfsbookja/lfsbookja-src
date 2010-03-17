@@ -30,15 +30,19 @@
     reinstalling <application>Shadow</application> will allow programs such as
     <command>login</command> and <command>su</command> to utilize PAM.</para>
 @y
-    <para><application>Shadow</application> was indeed installed in LFS and
-    there is no reason to reinstall it unless you installed
-    <application>CrackLib</application> or
-    <application>Linux-PAM</application> after your LFS system was completed.
-    If you have installed <application>CrackLib</application> after LFS, then
-    reinstalling <application>Shadow</application> will enable strong password
-    support. If you have installed <application>Linux-PAM</application>,
-    reinstalling <application>Shadow</application> will allow programs such as
-    <command>login</command> and <command>su</command> to utilize PAM.</para>
+<para>
+<application>Shadow</application> は LFS において既にインストールしています。
+これを再インストールする必要があるのは、LFS の構築後に
+<application>CrackLib</application> または
+<application>Linux-PAM</application>
+をインストールした場合です。
+<application>CrackLib</application> と
+<application>Shadow</application> をインストールすれば、強力なパスワード機能を利用できます。
+<application>Linux-PAM</application> と
+<application>Shadow</application> をインストールすれば、
+<command>login</command> や <command>su</command>
+において PAM モジュールを利用できます。
+</para>
 @z
 
 @x
@@ -96,7 +100,7 @@
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="linux-pam"/> と
-    <xref linkend="cracklib"/> の双方またはいずれか。</para>
+    <xref linkend="cracklib"/> の両方またはいずれか。</para>
 @z
 
 @x
@@ -121,12 +125,13 @@
       <application>Linux-PAM</application> installation.</para>
 @y
 <para>
-
-The installation commands shown below are for installations where
-<application>Linux-PAM</application> has been installed (with or
-without a <application>CrackLib</application> installation) and
-<application>Shadow</application> is being reinstalled to support the
-<application>Linux-PAM</application> installation.
+以下に説明するビルド手順は <application>Linux-PAM</application>
+がインストールされていることを前提としています。
+(<application>CrackLib</application>
+はインストールしているかどうかはどちらでも変わりません。)
+<application>Shadow</application>
+を再インストールすることによって
+<application>Linux-PAM</application> の機能を活用するものです。
 </para>
 @z
 
@@ -139,13 +144,18 @@ without a <application>CrackLib</application> installation) and
       <command>configure</command> script below and also issue the following
       command:</para>
 @y
-      <para> If you are reinstalling <application>Shadow</application> to
-      provide strong password support using the
-      <application>CrackLib</application> library without using
-      <application>Linux-PAM</application>, ensure you add the
-      <parameter>--with-libcrack</parameter> parameter to the
-      <command>configure</command> script below and also issue the following
-      command:</para>
+<para>
+<application>Shadow</application>
+を再インストールするにあたって、
+<application>CrackLib</application>
+による強力なパスワード機能を導入しようとする場合で、
+かつ <application>Linux-PAM</application>
+の機能は利用しないことにする場合は、
+<command>configure</command> スクリプトのパラメータとして
+<parameter>--with-libcrack</parameter>
+を指定してください。
+そしてさらに以下のコマンドも実行してください。
+</para>
 @z
 
 @x
@@ -188,10 +198,12 @@ without a <application>CrackLib</application> installation) and
     preferred.</para>
 @y
 <para><command>sed -i 's/groups$(EXEEXT) //' src/Makefile.in</command>:
-This command is used to suppress the installation of the
-<command>groups</command> program as the version from the
-<application>Coreutils</application> package installed during LFS is
-preferred.</para>
+このコマンドは <command>groups</command>
+プログラムをインストールしないようにします。
+<command>groups</command>
+プログラムは LFS 構築時の <application>Coreutils</application>
+パッケージが提供するものの方が適切であるためです。
+</para>
 @z
 
 @x
@@ -200,10 +212,11 @@ preferred.</para>
     <command>groups</command> man pages so the existing ones installed from
     the <application>Coreutils</application> package are not replaced.</para>
 @y
-<para><command>find man -name Makefile.in -exec ... {} \;</command>: This
-command is used to suppress the installation of the
-<command>groups</command> man pages so the existing ones installed from
-the <application>Coreutils</application> package are not replaced.</para>
+<para><command>find man -name Makefile.in -exec ... {} \;</command>:
+このコマンドは <command>groups</command> の man ページをインストールしないようにします。
+LFS 構築時に <application>Coreutils</application>
+パッケージによってインストールされた man ページを置き換えないようにするものです。
+</para>
 @z
 
 @x
@@ -211,9 +224,11 @@ the <application>Coreutils</application> package are not replaced.</para>
     command disables the installation of Chinese and Korean manual pages, since
     <application>Man-DB</application> cannot format them properly.</para>
 @y
-<para><command>sed -i -e '...' -e '...' man/Makefile.in</command>: This
-command disables the installation of Chinese and Korean manual pages, since
-<application>Man-DB</application> cannot format them properly.</para>
+<para><command>sed -i -e '...' -e '...' man/Makefile.in</command>:
+このコマンドは中国語および韓国語による man ページをインストールしないようにします。
+これらのページは <application>Man-DB</application>
+が適切に取り扱うことができないためです。
+</para>
 @z
 
 @x
@@ -613,7 +628,7 @@ links:</para>
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x

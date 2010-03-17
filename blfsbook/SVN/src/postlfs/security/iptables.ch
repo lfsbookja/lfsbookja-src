@@ -26,8 +26,8 @@
   any form of a firewall.</para>
 @y
 <para>
-この節の次ではファイヤウォールについて説明します。
-Linux においてファイヤウォールを取り扱う重要なツールが
+この節の次ではファイアウォールについて説明します。
+Linux においてファイアウォールを取り扱う重要なツールが
 <application>iptables</application> です。
 どのような形にせよ、ファイアウォールを実現するなら
 <application>iptables</application> をインストールすることが必要です。
@@ -238,7 +238,7 @@ code.
       in the <xref linkend="bootscripts"/> package.</para>
 @y
 <para>
-iptables によるファイヤウォールの設定を起動時に有効とするには、
+iptables によるファイアウォールの設定を起動時に有効とするには、
 <xref linkend="bootscripts"/>
 パッケージに含まれる初期起動スクリプト
 <filename>/etc/rc.d/init.d/iptables</filename>
