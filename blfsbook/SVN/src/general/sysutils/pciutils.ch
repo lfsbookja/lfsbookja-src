@@ -55,7 +55,7 @@
 <para>
 <application>PCI ユーティリティ</application> (PCI Utilties)
 パッケージは PCI デバイスを取り扱うプログラム類を提供します。
-PCI デバイスの一覧の取得、動作ステータスの精査、設定レジスタへの設定などを行うものです。
+PCI デバイスの一覧の取得、動作ステータスの精査、設定レジスタの登録などを行うものです。
 </para>
 @z
 
@@ -168,10 +168,10 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
 @y
 <para>
 <parameter>ZLIB=no</parameter>:
-
-This parameter prevents compression of 
-the <filename>pci.ids</filename> file which is needed by other applications 
-such as <xref linkend="hal"/>.
+このパラメータは <filename>pci.ids</filename>
+ファイルが圧縮されないようにします。
+<filename>pci.ids</filename> ファイルは <xref linkend="hal"/>
+などのようなアプリケーションが必要としているファイルです。
 </para>
 @z
 
@@ -192,14 +192,15 @@ such as <xref linkend="hal"/>.
     <filename class='directory'>/usr/share</filename>.</para>
 @y
 <para>
-The <filename>pci.ids</filename> data file is constantly being
-updated. To get a current version of this file, run
-<command>update-pciids</command> as the <systemitem
-class="username">root</systemitem> user. This program requires the
-<xref linkend="which"/> script or program to find <xref linkend="curl"/>,
-<xref linkend="wget"/> or <xref linkend="lynx"/> which are used to
-download the most current file, and then replace the existing file in
-<filename class='directory'>/usr/share</filename>.
+<filename>pci.ids</filename>
+データファイルは、常に更新が行われています。
+最新版を入手する場合は <systemitem class="username">root</systemitem>
+ユーザーになって <command>update-pciids</command> コマンドを実行します。
+このプログラムは <xref linkend="curl"/>、<xref linkend="wget"/>、<xref linkend="lynx"/>
+が存在しているかどうかを調べるために <xref linkend="which"/> を用いています。
+三つのプログラムのいずれかを使って、最新のデータファイルをダウンロードするものです。
+ダウンロードが出来たら <filename class='directory'>/usr/share</filename>
+ディレクトリ配下にあるファイルが上書きされます。
 </para>
 @z
 
@@ -211,12 +212,11 @@ download the most current file, and then replace the existing file in
     periodically.</para>
 @y
 <para>
-
-You may wish to add an entry to
-<systemitem class="username">root</systemitem>'s (or any other user who
-has write privilege to <filename class='directory'>/usr/share</filename>)
-crontab to automatically update the <filename>pci.ids</filename> file
-periodically.
+crontab に対して <systemitem class="username">root</systemitem>
+ユーザー (または <filename class='directory'>/usr/share</filename>
+ディレクトリに対して書き込み権限を有する他のユーザー)
+の設定を行って、<filename>pci.ids</filename>
+ファイルの定期的な自動更新を実現することもできます。
 </para>
 @z
 

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openldap-time          "1.2 SBU and approximately 30 minutes to run the tests (processor independent)">
+  <!ENTITY openldap-time          "1.9 SBU and approximately 30 minutes to run the tests (processor independent)">
 @y
-  <!ENTITY openldap-time          "1.2 SBU and approximately 30 minutes to run the tests (processor independent)">
+  <!ENTITY openldap-time          "1.9 SBU and approximately 30 minutes to run the tests (processor independent)">
 @z
 
 @x
@@ -191,12 +191,12 @@
 
 @x
     <para><parameter>--libexecdir=/usr/sbin</parameter>: Installs the
-    <command>slapd</command> and <command>slurpd</command> daemon programs in
+    <command>slapd</command> daemon programs in
     <filename class="directory">/usr/sbin</filename> instead of
     <filename class="directory">/usr/libexec</filename>.</para>
 @y
     <para><parameter>--libexecdir=/usr/sbin</parameter>: Installs the
-    <command>slapd</command> and <command>slurpd</command> daemon programs in
+    <command>slapd</command> daemon programs in
     <filename class="directory">/usr/sbin</filename> instead of
     <filename class="directory">/usr/libexec</filename>.</para>
 @z
@@ -359,19 +359,17 @@ command to enable other options or dependency packages.
 @z
 
 @x
-      <para>Configuring the <command>slapd</command> and
-      <command>slurpd</command> servers can be complex. Securing the LDAP
-      directory, especially if you are storing non-public data such as
-      password databases, can also be a challenging task. You'll need to
-      modify the <filename>/etc/openldap/slapd.conf</filename> and
+      <para>Configuring the <command>slapd</command> servers can be complex.
+      Securing the LDAP directory, especially if you are storing non-public
+      data such as password databases, can also be a challenging task. You'll
+      need to modify the <filename>/etc/openldap/slapd.conf</filename> and
       <filename>/etc/openldap/ldap.conf</filename> files to set up
       <application>OpenLDAP</application> for your particular needs.</para>
 @y
-      <para>Configuring the <command>slapd</command> and
-      <command>slurpd</command> servers can be complex. Securing the LDAP
-      directory, especially if you are storing non-public data such as
-      password databases, can also be a challenging task. You'll need to
-      modify the <filename>/etc/openldap/slapd.conf</filename> and
+      <para>Configuring the <command>slapd</command> servers can be complex.
+      Securing the LDAP directory, especially if you are storing non-public
+      data such as password databases, can also be a challenging task. You'll
+      need to modify the <filename>/etc/openldap/slapd.conf</filename> and
       <filename>/etc/openldap/ldap.conf</filename> files to set up
       <application>OpenLDAP</application> for your particular needs.</para>
 @z
@@ -402,13 +400,13 @@ command to enable other options or dependency packages.
 
 @x
           <para>The <ulink
-          url="http://www.openldap.org/doc/admin23/">OpenLDAP 2.3
+          url="http://www.openldap.org/doc/admin24/">OpenLDAP 2.4
           Administrator's Guide</ulink> (also installed locally in
           <filename class='directory'>
           /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>)</para>
 @y
           <para>The <ulink
-          url="http://www.openldap.org/doc/admin23/">OpenLDAP 2.3
+          url="http://www.openldap.org/doc/admin24/">OpenLDAP 2.4
           Administrator's Guide</ulink> (also installed locally in
           <filename class='directory'>
           /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>)</para>
@@ -485,27 +483,15 @@ LDAP サーバーをシステムブート時に自動起動するには
 @z
 
 @x
-      <para><emphasis>Note:</emphasis> The init script you just installed only
-      starts the <command>slapd</command> daemon. If you wish to also start the
-      <command>slurpd</command> daemon at system startup, install a modified
-      version of the script using this command:</para>
-@y
-      <para><emphasis>Note:</emphasis> The init script you just installed only
-      starts the <command>slapd</command> daemon. If you wish to also start the
-      <command>slurpd</command> daemon at system startup, install a modified
-      version of the script using this command:</para>
-@z
-
-@x
-        <para>The init script starts the daemons without any parameters.
+        <para>The init script starts the daemon without any parameters.
         You'll need to modify the script to include the parameters needed for
-        your specific configuration. See the <command>slapd</command> and
-        <command>slurpd</command> man pages for parameter information.</para>
+        your specific configuration. See the <command>slapd</command>
+        man page for parameter information.</para>
 @y
-        <para>The init script starts the daemons without any parameters.
+        <para>The init script starts the daemon without any parameters.
         You'll need to modify the script to include the parameters needed for
-        your specific configuration. See the <command>slapd</command> and
-        <command>slurpd</command> man pages for parameter information.</para>
+        your specific configuration. See the <command>slapd</command>
+        man page for parameter information.</para>
 @z
 
 @x
@@ -558,15 +544,15 @@ LDAP サーバーをシステムブート時に自動起動するには
 @x
         <seg>ldapadd, ldapcompare, ldapdelete, ldapmodify, ldapmodrdn,
         ldappasswd, ldapsearch, ldapwhoami, slapadd, slapcat, slapd, slapdn,
-        slapindex, slappasswd, slaptest, and slurpd</seg>
+        slapindex, slappasswd, and slaptest</seg>
         <seg>liblber.{so,a}, libldap.{so,a}, and libldap_r.{so,a}</seg>
         <seg>/etc/openldap, /srv/ldap, and /usr/share/openldap</seg>
 @y
         <seg>ldapadd, ldapcompare, ldapdelete, ldapmodify, ldapmodrdn,
         ldappasswd, ldapsearch, ldapwhoami, slapadd, slapcat, slapd, slapdn,
-        slapindex, slappasswd, slaptest, slurpd</seg>
-        <seg>liblber.{so,a}, libldap.{so,a}, libldap_r.{so,a}</seg>
-        <seg>/etc/openldap, /srv/ldap, /usr/share/openldap</seg>
+        slapindex, slappasswd, and slaptest</seg>
+        <seg>liblber.{so,a}, libldap.{so,a}, and libldap_r.{so,a}</seg>
+        <seg>/etc/openldap, /srv/ldap, and /usr/share/openldap</seg>
 @z
 
 @x
@@ -689,12 +675,6 @@ LDAP サーバーをシステムブート時に自動起動するには
 @y
           <para>checks the sanity of the <filename>slapd.conf</filename>
           file.</para>
-@z
-
-@x slurpd
-          <para>is the stand-alone LDAP replication server.</para>
-@y
-          <para>is the stand-alone LDAP replication server.</para>
 @z
 
 @x liblber.{so,a}

@@ -116,6 +116,7 @@ directly embedded into the HTML markup.
     <!-- <xref linkend="gamin"/>, -->
     <xref linkend="pcre"/>,
     <xref linkend="aspell"/>,
+    <xref linkend="enchant"/>,
     <!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="recode"/>,
     <xref linkend="expat"/> (deprecated alternative to <xref linkend="libxml2"/>),
@@ -133,6 +134,7 @@ directly embedded into the HTML markup.
     <!-- <xref linkend="gamin"/>, -->
     <xref linkend="pcre"/>,
     <xref linkend="aspell"/>,
+    <xref linkend="enchant"/>,
     <!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="recode"/>,
     <xref linkend="expat"/> (deprecated alternative to <xref linkend="libxml2"/>),
@@ -155,8 +157,8 @@ directly embedded into the HTML markup.
     <xref linkend="freetype2"/>,
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
-    <ulink url="http://www.boutell.com/gd/">GD</ulink>,
-    <ulink url="http://gd.tuwien.ac.at/visual/ibiblio/libs/graphics/t1lib-5.1.0.tar.gz">
+    <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
+    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib-5.1.2.tar.gz/">
     t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @y
@@ -168,8 +170,8 @@ directly embedded into the HTML markup.
     <xref linkend="freetype2"/>,
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
-    <ulink url="http://www.boutell.com/gd/">GD</ulink>,
-    <ulink url="http://gd.tuwien.ac.at/visual/ibiblio/libs/graphics/t1lib-5.1.0.tar.gz">
+    <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
+    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib-5.1.2.tar.gz/">
     t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @z
@@ -385,14 +387,6 @@ directly embedded into the HTML markup.
 @z
 
 @x
-      <para><command>sed -i '...' ext/dba/dba_db4.c</command>: This command is
-      used to fix an issue with the use of Berkeley DB &gt;= 4.3.x.</para>
-@y
-      <para><command>sed -i '...' ext/dba/dba_db4.c</command>: This command is
-      used to fix an issue with the use of Berkeley DB &gt;= 4.3.x.</para>
-@z
-
-@x
       <para><parameter>--with-apxs2</parameter>: This parameter
       builds the Apache HTTPD 2.0 module.</para>
 @y
@@ -445,19 +439,11 @@ directly embedded into the HTML markup.
 @z
 
 @x
-      <para><parameter>--enable-dba</parameter>: This parameter enables
+      <para><parameter>--enable-dba=shared</parameter>: This parameter enables
       support for database (dbm-style) abstraction layer functions.</para>
 @y
-      <para><parameter>--enable-dba</parameter>: This parameter enables
+      <para><parameter>--enable-dba=shared</parameter>: This parameter enables
       support for database (dbm-style) abstraction layer functions.</para>
-@z
-
-@x
-      <para><parameter>--enable-exif</parameter>: Enables functions
-      to access metadata from images.</para>
-@y
-      <para><parameter>--enable-exif</parameter>: Enables functions
-      to access metadata from images.</para>
 @z
 
 @x
@@ -482,14 +468,6 @@ directly embedded into the HTML markup.
 @y
       <para><parameter>--enable-mbstring</parameter>: This parameter
       enables multibyte string support.</para>
-@z
-
-@x
-      <para><parameter>--with-ncurses</parameter>: Provides ncurses
-      terminal independent cursor handling.</para>
-@y
-      <para><parameter>--with-ncurses</parameter>: Provides ncurses
-      terminal independent cursor handling.</para>
 @z
 
 @x
