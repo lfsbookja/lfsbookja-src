@@ -19,23 +19,23 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
     <title>Zlib のインストール</title>
 @z
 
-@x
-      <para>Zlib is known to build its shared library incorrectly if
-      <envar>CFLAGS</envar> is specified in the environment. If using
-      a specified <envar>CFLAGS</envar> variable, be sure to add the
-      <parameter>-fPIC</parameter> directive to the <envar>CFLAGS</envar>
-      variable for the duration of the configure command below, then
-      remove it when building the static library.</para>
-@y
-<para>
-Zlib は <envar>CFLAGS</envar>
-が設定されているときに、共有ライブラリ (shared library) を生成してしまうことが知られています。
-したがって <envar>CFLAGS</envar> 変数を設定している場合は、
-以下に示す configure スクリプトを実行する際には
-<parameter>-fPIC</parameter> ディレクティブを追加設定してください。
-そしてスタティックライブラリを生成できたら、そのディレクティブを取り除いて元に戻してください。
-</para>
-@z
+% @x
+%       <para>Zlib is known to build its shared library incorrectly if
+%       <envar>CFLAGS</envar> is specified in the environment. If using
+%       a specified <envar>CFLAGS</envar> variable, be sure to add the
+%       <parameter>-fPIC</parameter> directive to the <envar>CFLAGS</envar>
+%       variable for the duration of the configure command below, then
+%       remove it when building the static library.</para>
+% @y
+% <para>
+% Zlib は <envar>CFLAGS</envar>
+% が設定されているときに、共有ライブラリ (shared library) を生成してしまうことが知られています。
+% したがって <envar>CFLAGS</envar> 変数を設定している場合は、
+% 以下に示す configure スクリプトを実行する際には
+% <parameter>-fPIC</parameter> ディレクティブを追加設定してください。
+% そしてスタティックライブラリを生成できたら、そのディレクティブを取り除いて元に戻してください。
+% </para>
+% @z
 
 @x
     <para>Prepare Zlib for building the dynamic library:</para>
@@ -77,29 +77,29 @@ Zlib は <envar>CFLAGS</envar>
 </para>
 @z
 
-@x
-    <para>Build the static library:</para>
-@y
-    <para>スタティックライブラリをビルドします。</para>
-@z
-
-@x
-    <para>To test the results again, issue:</para>
-@y
-    <para>コンパイル結果を再度テストするには以下を実行します。</para>
-@z
-
-@x
-    <para>Install the static library:</para>
-@y
-    <para>スタティックライブラリをインストールします。</para>
-@z
-
-@x
-    <para>Fix the permissions on the static library:</para>
-@y
-    <para>スタティックライブラリのパーミッションを設定します。</para>
-@z
+% @x
+%     <para>Build the static library:</para>
+% @y
+%     <para>スタティックライブラリをビルドします。</para>
+% @z
+% 
+% @x
+%     <para>To test the results again, issue:</para>
+% @y
+%     <para>コンパイル結果を再度テストするには以下を実行します。</para>
+% @z
+% 
+% @x
+%     <para>Install the static library:</para>
+% @y
+%     <para>スタティックライブラリをインストールします。</para>
+% @z
+% 
+% @x
+%     <para>Fix the permissions on the static library:</para>
+% @y
+%     <para>スタティックライブラリのパーミッションを設定します。</para>
+% @z
 
 @x
     <title>Contents of Zlib</title>

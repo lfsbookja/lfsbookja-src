@@ -50,6 +50,18 @@
 -->
 
     <listitem>
+      <para>2010-03-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter03/patches.ch,
+          src/chapter06/{bash.ch,grub.ch,zlib.ch}:
+          SVN-20100318, r9232 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-03-17</para>
       <itemizedlist>
         <listitem>

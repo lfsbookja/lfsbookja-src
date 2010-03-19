@@ -57,6 +57,73 @@
 @z
 
 @x
+      <para>2010-03-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.33.1. Fixes
+          <ulink url="&lfs-ticket-root;2608">#2608</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to E2fsprogs-1.41.11. Fixes
+          <ulink url="&lfs-ticket-root;2607">#2607</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Zlib-1.2.4. Fixes
+          <ulink url="&lfs-ticket-root;2606">#2606</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Tar-1.23. Fixes
+          <ulink url="&lfs-ticket-root;2603">#2603</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Grub-1.98. Fixes
+          <ulink url="&lfs-ticket-root;2602">#2602</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Remove commands no longer necessary in order to run
+          the Bash test suite. Fixes
+          <ulink url="&lfs-ticket-root;2601">#2601</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Binutils-2.20.1. Fixes
+          <ulink url="&lfs-ticket-root;2599">#2599</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-03-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Linux-2.6.33.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2608">#2608</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] E2fsprogs-1.41.11 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2607">#2607</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Zlib-1.2.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2606">#2606</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Tar-1.23 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2603">#2603</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Grub-1.98 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2602">#2602</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Bash のテストスイートの実行に際して不要なコマンドを削除。
+          <ulink url="&lfs-ticket-root;2601">#2601</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Binutils-2.20.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2599">#2599</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-03-01</para>
       <itemizedlist>
         <listitem>

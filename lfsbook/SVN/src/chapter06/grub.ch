@@ -33,16 +33,25 @@ GRUB をコンパイルするための準備をします。
 </para>
 @z
 
+% @x
+%     <para>Using a separate build directory keeps the 2400 generated 
+%     files out of the main directory and is recommended by the developers.
+%     The --disable switches just minimize what is built by disabling
+%     features and testing programs not really needed for LFS.</para>
+% @y
+% <para>
+% ビルドの際には専用のディレクトリを設けます。
+% 生成ファイルが 2,400 個もあるため、それらをソースディレクトリの外で生成します。
+% これは開発者が推奨していることです。
+% --disable オプションは、LFS で本当に必要となる機能やテストプログラムだけを生成するもので、ビルド結果を最小限に抑えます。
+% </para>
+% @z
+
 @x
-    <para>Using a separate build directory keeps the 2400 generated 
-    files out of the main directory and is recommended by the developers.
-    The --disable switches just minimize what is built by disabling
-    features and testing programs not really needed for LFS.</para>
+    <para>The --disable switches minimize what is built by disabling features
+    and testing programs not really needed for LFS.</para>
 @y
 <para>
-ビルドの際には専用のディレクトリを設けます。
-生成ファイルが 2,400 個もあるため、それらをソースディレクトリの外で生成します。
-これは開発者が推奨していることです。
 --disable オプションは、LFS で本当に必要となる機能やテストプログラムだけを生成するもので、ビルド結果を最小限に抑えます。
 </para>
 @z

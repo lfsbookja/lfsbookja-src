@@ -374,13 +374,13 @@
   optional patches created by the LFS community. These optional patches
   solve minor problems or enable functionality that is not enabled by
   default. Feel free to peruse the patches database located at
-  <ulink url="&lfs-root;patches/"/> and acquire any additional
+  <ulink url="&lfs-root;patches/downloads/"/> and acquire any additional
   patches to suit your system needs.</para>
 @y
 <para>
 上に挙げた必須のパッチに加えて LFS コミュニティが提供する任意のパッチが数多くあります。
 それらは微小な不備改修や、デフォルトでは利用できない機能を有効にするなどを行います。
-<ulink url="&lfs-root;patches/"/>
+<ulink url="&lfs-root;patches/downloads/"/>
 にて提供しているパッチ類を確認してください。
 そして自分のシステムにとって必要なものは自由に適用してください。
 </para>

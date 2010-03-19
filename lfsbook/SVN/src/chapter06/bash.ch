@@ -78,15 +78,11 @@
 @z
 
 @x
-    <para>To prepare the tests, ensure that the locale
-    setting from our environment will be used and that the <systemitem
-    class="username">nobody</systemitem> user can read the standard input
-    device and write to the sources tree:</para>
+    <para>To prepare the tests, ensure that the <systemitem class="username">nobody</systemitem> user can write to the sources tree:</para>
 @y
 <para>
-テストを実施するにあたっては、既に設定しているロケールが用いられるように変更します。
-また <systemitem class="username">nobody</systemitem>
-ユーザーに対して標準入力からの読み込みを可能とし、ソースツリーへの書き込みを可能とします。
+テストを実施するにあたっては <systemitem class="username">nobody</systemitem>
+ユーザーによるソースツリーへの書き込みを可能とします。
 </para>
 @z
 
