@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2010-03-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a sed to the tar command to fix an
+          error in the latest release. The fix is from upstream.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-03-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 最新の tar パッケージにて発生するエラーを、sed コマンドを使って修正。
+          これは開発元による修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-03-18</para>
       <itemizedlist>
         <listitem>
