@@ -460,6 +460,15 @@ Typo ですが日本語訳には影響ありません。
 @y
           <seg>なし</seg>
 @z
+@x
+          <seg><ulink url="http://gcc.gnu.org/wiki/Graphite">CLooG-PPL</ulink>,
+               <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink> and
+               <ulink url="http://gcc.gnu.org/wiki/Graphite">PPL</ulink></seg>
+@y
+          <seg><ulink url="http://gcc.gnu.org/wiki/Graphite">CLooG-PPL</ulink>,
+               <ulink url="http://gcc.gnu.org/wiki/GNAT">GNAT</ulink>,
+               <ulink url="http://gcc.gnu.org/wiki/Graphite">PPL</ulink></seg>
+@z
 
 %----------------------------------------------------------------------
 @x GDBM
@@ -516,9 +525,9 @@ Typo ですが日本語訳には影響ありません。
          Grep, Gzip, Make, Perl, Sed, Texinfo</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>File</seg>
 @y
-          <seg>なし</seg>
+          <seg>File</seg>
 @z
 @x
           <seg>None</seg>
@@ -826,9 +835,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>Autoconf, Bison</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>libsigsegv</seg>
 @y
-          <seg>なし</seg>
+          <seg>libsigsegv</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -992,9 +1001,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Ed</seg>
 @y
-          <seg>なし</seg>
+          <seg>Ed</seg>
 @z
 
 %----------------------------------------------------------------------

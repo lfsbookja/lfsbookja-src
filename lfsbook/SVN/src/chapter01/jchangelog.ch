@@ -50,6 +50,17 @@
 -->
 
     <listitem>
+      <para>2010-03-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/appendices/dependencies.ch:
+          訳出漏れおよび処理不能を訂正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-03-21</para>
       <itemizedlist>
         <listitem>
