@@ -425,15 +425,15 @@ for a list of various third-party modules available.</para>
         <seg>pam_tally</seg>
         <seg>libpam.{so,a}, libpamc.{so,a}, libpam_misc.{so,a} and
         numerous PAM modules</seg>
-        <seg>/etc/pam.d, /etc/security, /lib/security,
-        /usr/include/security, /usr/share/doc/Linux-PAM-&linux-pam-version;
+        <seg>/etc/security, /lib/security, /usr/include/security,
+        /usr/share/doc/Linux-PAM-&linux-pam-version;,
         and /var/run/sepermit</seg>
 @y
         <seg>pam_tally</seg>
         <seg>libpam.{so,a}, libpamc.{so,a}, libpam_misc.{so,a},
         数々の PAM モジュール</seg>
-        <seg>/etc/pam.d, /etc/security, /lib/security,
-        /usr/include/security, /usr/share/doc/Linux-PAM-&linux-pam-version;,
+        <seg>/etc/security, /lib/security, /usr/include/security,
+        /usr/share/doc/Linux-PAM-&linux-pam-version;,
         /var/run/sepermit</seg>
 @z
 

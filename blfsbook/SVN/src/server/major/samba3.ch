@@ -101,27 +101,25 @@ amongst other things provides LAN browsing support).
     <xref linkend="cups"/>,
     <xref linkend="openldap"/>,
     <xref linkend="gamin"/>,
+    <xref linkend="acl"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
     <xref linkend="python"/> (to build Samba API bindings for the
     <application>Python</application> installation),
-    <ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libacl</ulink>
-    (requires <ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libattr</ulink>),
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="popt"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="cups"/>,
     <xref linkend="openldap"/>,
     <xref linkend="gamin"/>,
+    <xref linkend="acl"/>,
     <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
     <xref linkend="python"/> (to build Samba API bindings for the
     <application>Python</application> installation),
-    <ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libacl</ulink>
-    (requires <ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libattr</ulink>),
-    <ulink url="http://valgrind.org/">Valgrind</ulink>
-    (optionally used by the test suite)</para>
+    さらに <ulink url="http://valgrind.org/">Valgrind</ulink>
+    (テストスイート実行時に任意で用いられる。)</para>
 @z
 
 @x
@@ -191,7 +189,7 @@ amongst other things provides LAN browsing support).
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-<systemitem class="username">root</systemitem> になって以下を実行します。
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 </para>
 @z
 
@@ -203,8 +201,7 @@ amongst other things provides LAN browsing support).
 @y
 <para>
 <command>configure</command> スクリプトにおいて
-<option>--with-python</option>
-パラメータを指定した場合は、
+<option>--with-python</option> パラメータを指定した場合は、
 <systemitem class="username">root</systemitem>
 ユーザーになって以下を実行することで
 <application>Python</application>

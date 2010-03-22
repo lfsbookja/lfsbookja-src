@@ -103,20 +103,18 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gtk2"/> (Required if building
-    <application>GNOME</application>. Without this,
-    <command>gconf-sanity-check-2</command> will not be built.
-    <command>gconf-sanity-check-2</command> is required for building
-    <application>GNOME Session</application>.)</para>
+    <para role="recommended"><xref linkend="gtk2"/> (Required if building a
+    <application>GNOME</application> desktop because it will build the program
+    <command>gconf-sanity-check-2</command>, which is required for
+    building <application>GNOME Session</application>.)</para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="gtk2"/>
-    (<application>GNOME</application> を構築する場合に必要。
-    これを導入していない場合 
-    <command>gconf-sanity-check-2</command> がビルドされない。
-    この <command>gconf-sanity-check-2</command> は
+    (<application>GNOME</application> デスクトップ環境を構築する場合に必要。
+    これにより <command>gconf-sanity-check-2</command>
     <application>GNOME Session</application>
-    を構築するために必要。)</para>
+    を構築するために必要。)
+    </para>
 @z
 
 @x
