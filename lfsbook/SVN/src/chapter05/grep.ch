@@ -48,17 +48,17 @@
 </para>
 @z
 
-@x
-          <para>The configure check for Glibc's regex library is broken when
-          building against Glibc-&glibc-version;.  This switch forces the use of
-          Glibc's regex library.</para>
-@y
-<para>
-Glibc-&glibc-version; を用いている環境で本パッケージをビルドすると Glibc
-の正規表現ライブラリのチェックが適切に動作しません。
-このオプションは Glibc の正規表現ライブラリを常時使うように指示します。
-</para>
-@z
+% @x
+%           <para>The configure check for Glibc's regex library is broken when
+%           building against Glibc-&glibc-version;.  This switch forces the use of
+%           Glibc's regex library.</para>
+% @y
+% <para>
+% Glibc-&glibc-version; を用いている環境で本パッケージをビルドすると Glibc
+% の正規表現ライブラリのチェックが適切に動作しません。
+% このオプションは Glibc の正規表現ライブラリを常時使うように指示します。
+% </para>
+% @z
 
 @x
     <para>Compile the package:</para>

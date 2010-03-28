@@ -57,6 +57,40 @@
 @z
 
 @x
+      <para>2010-03-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Grep-2.6.1. Fixes
+          <ulink url="&lfs-ticket-root;2617">#2617</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Util-Linux-NG-2.17.2. Fixes
+          <ulink url="&lfs-ticket-root;2616">#2616</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Bison-2.4.2. Fixes
+          <ulink url="&lfs-ticket-root;2615">#2615</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-03-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Grep-2.6.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2617">#2617</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Util-Linux-NG-2.17.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2616">#2616</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Bison-2.4.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2615">#2615</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-03-20</para>
       <itemizedlist>
         <listitem>

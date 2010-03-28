@@ -123,7 +123,7 @@ LFS システムそのものがそれだけの容量を要するわけではあ�
 
 @x
   <para>Requests for advice on system partitioning are often posted on the LFS mailing 
-  lists.  This is a highly subjective topic.  The default size for most distributions
+  lists.  This is a highly subjective topic.  The default for most distributions
   is to use the entire drive with the exception of one small swap partition.  This
   is not optimal for LFS for several reasons.  It reduces flexibility, makes 
   sharing of data across multiple distributions or LFS builds more difficult, makes
@@ -147,13 +147,15 @@ LFS メーリングリストにてパーティションに関する有用情報�
 @z
 
 @x
-    <para>A root LFS partition (not to be confused with the /root directory) of
+    <para>A root LFS partition (not to be confused with the
+    <filename class="directory">/root</filename> directory) of
     ten gigabytes is a good compromise for most systems.  It provides enough
     space to build LFS and most of BLFS, but is small enough so that multiple
     partitions can be easily created for experimentation.</para> </sect3>
 @y
 <para>
-ルートパーティション (これを /root ディレクトリと混同しないでください)
+ルートパーティション (これを <filename class="directory">/root</filename>
+ディレクトリと混同しないでください)
 は 10 GB もあれば、どんなシステムであっても妥当なところでしょう。
 それだけあれば LFS 構築も、また BLFS においてもおそらく十分なはずです。
 実験的に複数パーティションを設けるとしても、これだけのサイズは必要です。
@@ -169,7 +171,7 @@ LFS メーリングリストにてパーティションに関する有用情報�
 
 @x
     <para>Most distributions automatically create a swap partition.  Generally
-    the recommneded size of the swap partition is about twice the amount of
+    the recommended size of the swap partition is about twice the amount of
     physical RAM, however this is rarely needed.  If disk space is limited,
     hold the swap partition to two gigabytes and monitor the amount of disk
     swapping.</para>
@@ -206,7 +208,7 @@ LFS メーリングリストにてパーティションに関する有用情報�
 
 @x
     <para>There are several other partitions that are not required, but should
-    be considered when designing a disk layout,  The following list
+    be considered when designing a disk layout.  The following list
     is not comprehensive, but is meant as a guide.</para>
 @y
 <para>
@@ -276,7 +278,7 @@ LFS メーリングリストにてパーティションに関する有用情報�
 
 @x
       <listitem><para>/tmp &ndash; A separate /tmp directory is rare, but
-      useful if coufiguring a thin client.  This partition, if used, will
+      useful if configuring a thin client.  This partition, if used, will
       usually not need to exceed a couple of gigabytes.</para></listitem>
 @y
 <listitem><para>

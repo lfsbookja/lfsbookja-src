@@ -197,19 +197,19 @@
 %       </listitem>
 % @z
 
-@x
-      <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&grep-debian-patch;"/></para>
-        <para>MD5 sum: <literal>&grep-debian-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&grep-debian-patch;"/></para>
-        <para>MD5 sum: <literal>&grep-debian-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&grep-debian-patch;"/></para>
+%         <para>MD5 sum: <literal>&grep-debian-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&grep-debian-patch;"/></para>
+%         <para>MD5 sum: <literal>&grep-debian-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>

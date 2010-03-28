@@ -114,9 +114,9 @@ GRUB を使ってシステムのブート起動設定を行う方法について
 @z
 
 @x
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /usr/inclue/grub</seg>
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /usr/include/grub</seg>
 @y
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /usr/inclue/grub</seg>
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /usr/include/grub</seg>
 @z
 
 @x

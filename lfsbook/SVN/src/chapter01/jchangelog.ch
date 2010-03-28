@@ -50,6 +50,19 @@
 -->
 
     <listitem>
+      <para>2010-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - chapter01/changelog.ch,
+          chapter02/{creatingfilesystem,creatingpartition.ch},
+          chapter03/patches.ch, chapter05/grep.ch,
+          chapter06/{grep.ch,grub.ch}: SVN-20100327, r9238 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-03-22</para>
       <itemizedlist>
         <listitem>

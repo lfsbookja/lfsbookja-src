@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -17,14 +26,14 @@
   high-capacity hard disks, journaling file systems are becoming increasingly
   popular. The third extended filesystem (<systemitem
   class="filesystem">ext3</systemitem>) is a widely used enhancement to
-  <systemitem class="filesystem">ext2</systemitem>, which adds journalling
+  <systemitem class="filesystem">ext2</systemitem>, which adds journaling
   capabilities and is compatible with the E2fsprogs utilities.
   We will create an <systemitem class="filesystem">ext3</systemitem>
   file system. Instructions for creating other file systems can be found at
   <ulink url="&blfs-root;view/svn/postlfs/filesystems.html"/>.</para>
 @y
 <para>
-空のパーティションが準備できましたのでファイルシステムを作ります。
+空のパーティションが準備できたのでファイルシステムを作ります。
 Linux において広く用いられるファイルシステムは
 <systemitem class="filesystem">ext2</systemitem> (second extended file system) です。
 より新しく大容量のハードディスクに対しては、ジャーナリングファイルシステムが一般的となりつつあります。
