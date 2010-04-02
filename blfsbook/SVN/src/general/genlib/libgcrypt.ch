@@ -103,13 +103,11 @@ API.
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="pth"/> and
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">
-    Linux Capabilities (libcap)</ulink></para>
+    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="pth"/>,
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">
-    Linux Capabilities (libcap)</ulink></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional"><xref linkend="pth"/> and
+    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink></para>
 @z
 
 @x

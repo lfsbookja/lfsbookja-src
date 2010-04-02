@@ -16,7 +16,7 @@
 @x
     <para><option>--enable-gtk-doc</option>: Use this parameter if
     <application>GTK-Doc</application> is installed and you wish to rebuild
-    the API documentation.</para>
+    and install the API documentation.</para>
 @y
 <para>
 <option>--enable-gtk-doc</option>:

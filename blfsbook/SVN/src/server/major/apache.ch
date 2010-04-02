@@ -95,19 +95,19 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="db"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="openldap"/>,
+    <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="pcre"/>,
+    <xref linkend="rsync"/>,
+    <xref linkend="lynx"/>,
     <ulink url="http://apr.apache.org/">APR</ulink>,
     <ulink url="http://apr.apache.org/">APR-util</ulink>, and
     <ulink url="http://www.distcache.org/">distcache</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="db"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="openldap"/>,
+    <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="pcre"/>,
+    <xref linkend="rsync"/>,
+    <xref linkend="lynx"/>,
     <ulink url="http://apr.apache.org/">APR</ulink>,
     <ulink url="http://apr.apache.org/">APR-util</ulink>,
     <ulink url="http://www.distcache.org/">distcache</ulink></para>
@@ -116,22 +116,24 @@
 @x
     <bridgehead renderas="sect4">Optional (Only if Using the Bundled
     APR-util)</bridgehead>
-@y
-    <bridgehead renderas="sect4">&j-Optional;
-    (バンドルされている APR-util を利用する場合にのみ)</bridgehead>
-@z
-
-@x
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
+    <xref linkend="openssl"/>,
     <xref linkend="expat"/>,
     <!-- <xref linkend="gdbm"/>, -->
+    <xref linkend="db"/>,
+    <xref linkend="unixodbc"/>,
     <xref linkend="postgresql"/>, and
     <xref linkend="sqlite"/></para>
 @y
+    <bridgehead renderas="sect4">&j-Optional;
+    (バンドルされている APR-util を利用する場合にのみ)</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
+    <xref linkend="openssl"/>,
     <xref linkend="expat"/>,
     <!-- <xref linkend="gdbm"/>, -->
-    <xref linkend="postgresql"/>,
+    <xref linkend="db"/>,
+    <xref linkend="unixodbc"/>,
+    <xref linkend="postgresql"/>, and
     <xref linkend="sqlite"/></para>
 @z
 
@@ -324,13 +326,15 @@ server using the run-time configuration directives.</para>
     to create the <filename class="libraryfile">mod_ssl</filename>
     module and enable SSL support. This parameter is mentioned as one of many
     parameters which can be passed to the <command>configure</command> command
-    to create additional DSO modules.</para>
+    to create additional DSO modules. Note that it really only affects the
+    APR-Util sub-package, which the HTTPD installation then uses.</para>
 @y
     <para><option>--enable-ssl</option>: Use this parameter
     to create the <filename class="libraryfile">mod_ssl</filename>
     module and enable SSL support. This parameter is mentioned as one of many
     parameters which can be passed to the <command>configure</command> command
-    to create additional DSO modules.</para>
+    to create additional DSO modules. Note that it really only affects the
+    APR-Util sub-package, which the HTTPD installation then uses.</para>
 @z
 
 @x

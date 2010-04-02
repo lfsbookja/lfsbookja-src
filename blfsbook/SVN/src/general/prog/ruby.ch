@@ -115,10 +115,12 @@ is useful for object-oriented scripting.
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>.</para>
+    <para>To test the results, issue: <command>make test</command>. As many
+    as seven of the 6000+ tests may show failure.</para>
 @y
 <para>
 ビルド結果をテストする場合は <command>make test</command> を実行します。
+6000+ テストのうち 7つほどは失敗します。
 </para>
 @z
 
@@ -173,15 +175,15 @@ threading library into the <application>Ruby</application> build.
 @z
 
 @x
-        <seg>ruby, irb, erb, rdoc, ri, and testrb</seg>
+        <seg>erb, gem, irb, rake, rdoc, ri, ruby, and testrb</seg>
         <seg>libruby.so, libruby-static.a and numerous modules located in the
         <filename class='directory'>/usr/lib/ruby</filename> hierarchy.</seg>
-        <seg>/usr/lib/ruby and /usr/share/ri</seg>
+        <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby and /usr/share/ri</seg>
 @y
-        <seg>ruby, irb, erb, rdoc, ri, testrb</seg>
-        <seg>libruby.so, libruby-static.a,
-        <filename class='directory'>/usr/lib/ruby</filename> ディレクトリ配下にインストールされる数多くのモジュール</seg>
-        <seg>/usr/lib/ruby, /usr/share/ri</seg>
+        <seg>erb, gem, irb, rake, rdoc, ri, ruby, and testrb</seg>
+        <seg>libruby.so, libruby-static.a and numerous modules located in the
+        <filename class='directory'>/usr/lib/ruby</filename> hierarchy.</seg>
+        <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby and /usr/share/ri</seg>
 @z
 
 @x

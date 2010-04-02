@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openssl-time          "1.1 SBU (additional 0.3 SBU to run the test suite)">
+  <!ENTITY openssl-time          "1.2 SBU (additional 0.3 SBU to run the test suite)">
 @y
-  <!ENTITY openssl-time          "1.1 SBU (テストスイート実行の場合、さらに 0.3 SBU)">
+  <!ENTITY openssl-time          "1.2 SBU (テストスイート実行の場合、さらに 0.3 SBU)">
 @z
 
 @x
@@ -287,17 +287,17 @@ from the BLFS-ca-bundle-&ca-bundle-version; package.
 
 @x
     <para><command>for pem in /etc/ssl/certs/*.pem...</command>: This group of
-    commands creates a single-file certificate bundle
+    commands creates a single-file certificate bundle 
     (<filename>/etc/ssl/ca-bundle.crt</filename>) that is usable by many
     other software packages.  <filename>ca-bundle.crt</filename> should be
-    recreated anytime that a certificate is added to
+    recreated every time a new or updated certificate is added to
     <filename class="directory">/etc/ssl/certs</filename>.</para>
 @y
     <para><command>for pem in /etc/ssl/certs/*.pem...</command>: This group of
-    commands creates a single-file certificate bundle
+    commands creates a single-file certificate bundle 
     (<filename>/etc/ssl/ca-bundle.crt</filename>) that is usable by many
     other software packages.  <filename>ca-bundle.crt</filename> should be
-    recreated anytime that a certificate is added to
+    recreated every time a new or updated certificate is added to
     <filename class="directory">/etc/ssl/certs</filename>.</para>
 @z
 

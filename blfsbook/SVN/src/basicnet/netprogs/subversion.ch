@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY subversion-buildsize     "111 MB (additional 74 MB to install all bindings and 592 MB to run all test suites)">
-  <!ENTITY subversion-time          "1.6 SBU (add 1.8 SBU for bindings and 6.7 SBU to run test suites)">
+  <!ENTITY subversion-buildsize     "170 MB (additional 43 MB to install all bindings and 740 MB to run all test suites)">
+  <!ENTITY subversion-time          "2.8 SBU (add 2.3 SBU for bindings and 6.0 SBU to run test suites)">
 @y
-  <!ENTITY subversion-buildsize     "111 MB (additional 74 MB to install all bindings and 592 MB to run all test suites)">
-  <!ENTITY subversion-time          "1.6 SBU (add 1.8 SBU for bindings and 6.7 SBU to run test suites)">
+  <!ENTITY subversion-buildsize     "170 MB (additional 43 MB to install all bindings and 740 MB to run all test suites)">
+  <!ENTITY subversion-time          "2.8 SBU (add 2.3 SBU for bindings and 6.0 SBU to run test suites)">
 @z
 
 @x
@@ -140,41 +140,33 @@ is covered at <xref linkend="svnserver"/>.</para>
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="python"/> (required to run the test suite),
     <xref linkend="db"/>,
+    <xref linkend="sqlite"/>,
+    <xref linkend="cyrus-sasl"/>,
+    <xref linkend="openssl"/>,
+    <xref linkend="dbus-glib"/>,
+    <xref linkend="gnome-keyring"/>,
+    <xref linkend="kdelibs"/>,
     <xref linkend="apache"/> (if you have <application>Apache Portable
-    Runtime</application> installed),
-    <ulink url="http://www.webdav.org/neon/">neon</ulink>*, and
+    Runtime</application> installed), and
+    <ulink url="http://www.webdav.org/neon/">neon</ulink> or 
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="python"/> (required to run the test suite),
     <xref linkend="db"/>,
+    <xref linkend="sqlite"/>,
+    <xref linkend="cyrus-sasl"/>,
+    <xref linkend="openssl"/>,
+    <xref linkend="dbus-glib"/>,
+    <xref linkend="gnome-keyring"/>,
+    <xref linkend="kdelibs"/>,
     <xref linkend="apache"/> (if you have <application>Apache Portable
-    Runtime</application> installed),
-    <ulink url="http://www.webdav.org/neon/">neon</ulink>*, and
+    Runtime</application> installed), and
+    <ulink url="http://www.webdav.org/neon/">neon</ulink> or 
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @z
 
 @x
-    <para>* The <command>configure</command> script will warn that the
-    installed <application>neon</application> version is not supported if the
-    version is greater than &svn-neon-version;. You can circumvent this
-    warning by passing <option>--disable-neon-version-check</option> to the
-    <command>configure</command> command. Note that this may or may not work,
-    depending on the version of <application>neon</application> you have
-    installed, but <application>neon</application>-0.26.3 is known to
-    work.</para>
-@y
-    <para>* The <command>configure</command> script will warn that the
-    installed <application>neon</application> version is not supported if the
-    version is greater than &svn-neon-version;. You can circumvent this
-    warning by passing <option>--disable-neon-version-check</option> to the
-    <command>configure</command> command. Note that this may or may not work,
-    depending on the version of <application>neon</application> you have
-    installed, but <application>neon</application>-0.26.3 is known to
-    work.</para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional to Build the Java Bindings</bridgehead>
     <para role="optional"><xref linkend="jdk"/> or
     <ulink url="http://www.inet.no/dante/">Dante</ulink> or
@@ -205,13 +197,13 @@ is covered at <xref linkend="svnserver"/>.</para>
     the installed version of <application>SWIG</application> is greater than
     &svn-swig-version;, but will attempt to use it anyway if you build the
     <application>SWIG</application> bindings. Versions of
-    <application>SWIG</application> up to 1.3.37 are known to work.</para>
+    <application>SWIG</application> up to 1.3.40 are known to work.</para>
 @y
     <para>** The <command>configure</command> script will issue warnings if
     the installed version of <application>SWIG</application> is greater than
     &svn-swig-version;, but will attempt to use it anyway if you build the
     <application>SWIG</application> bindings. Versions of
-    <application>SWIG</application> up to 1.3.37 are known to work.</para>
+    <application>SWIG</application> up to 1.3.40 are known to work.</para>
 @z
 
 @x
@@ -376,22 +368,6 @@ is covered at <xref linkend="svnserver"/>.</para>
     <application>Apache HTTPD</application> installation as
     <command>apxs</command> might not be in an unprivileged user's
     <envar>PATH</envar> and won't be properly discovered.</para>
-@z
-
-@x
-    <para><parameter>--with-installbuilddir=/usr/lib/apr-0</parameter>:
-    This parameter is used (and only has an effect if you used the
-    <application>Subversion dependencies</application> package) to force the
-    installation of some APR-related support programs to
-    <filename class="directory">/usr/lib/apr-0</filename> instead of
-    <filename class="directory">/usr/build</filename>.</para>
-@y
-    <para><parameter>--with-installbuilddir=/usr/lib/apr-0</parameter>:
-    This parameter is used (and only has an effect if you used the
-    <application>Subversion dependencies</application> package) to force the
-    installation of some APR-related support programs to
-    <filename class="directory">/usr/lib/apr-0</filename> instead of
-    <filename class="directory">/usr/build</filename>.</para>
 @z
 
 @x

@@ -80,10 +80,12 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/> and
+    <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional"><xref linkend="gtk-doc"/> and
+    <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @z
 
 @x
@@ -153,11 +155,13 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
 @x
         <seg>asn1Coding, asn1Decoding, and asn1Parser</seg>
         <seg>libtasn1.{so,a}</seg>
-        <seg>None</seg>
+        <seg>/usr/share/doc/libtasn1-&libtasn1-version; and
+        /usr/share/gtk-doc/html/libtasn1</seg>
 @y
-        <seg>asn1Coding, asn1Decoding, asn1Parser</seg>
+        <seg>asn1Coding, asn1Decoding, and asn1Parser</seg>
         <seg>libtasn1.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>/usr/share/doc/libtasn1-&libtasn1-version; and
+        /usr/share/gtk-doc/html/libtasn1</seg>
 @z
 
 @x

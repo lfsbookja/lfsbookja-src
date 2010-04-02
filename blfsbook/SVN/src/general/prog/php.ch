@@ -158,8 +158,7 @@ directly embedded into the HTML markup.
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
     <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
-    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib-5.1.2.tar.gz/">
-    t1lib</ulink>, and
+    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @y
     <bridgehead renderas="sect4">Optional Graphics Utilities and Libraries</bridgehead>
@@ -171,8 +170,7 @@ directly embedded into the HTML markup.
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
     <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
-    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib-5.1.2.tar.gz/">
-    t1lib</ulink>, and
+    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @z
 

@@ -24,9 +24,9 @@
     C library for parsing XML.</para>
 @y
 <para>
-
-The <application>Expat</application> package contains a stream oriented
-C library for parsing XML.
+<application>Expat</application>
+パッケージは XML を解析するための、ストリーム指向 (stream oriented)
+の C ライブラリを提供します。
 </para>
 @z
 
@@ -93,7 +93,6 @@ C library for parsing XML.
 <para>
 以下のコマンドを実行して <application>Expat</application>
 をビルドします。
-commands:
 </para>
 @z
 
@@ -155,7 +154,7 @@ commands:
           XML documents are well formed.</para>
 @y
 <para>
-
+XML ドキュメントが正規化されているかどうかをチェックする・・・
 is a non-validating utility to check whether or not
 XML documents are well formed.
 </para>

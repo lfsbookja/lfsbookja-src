@@ -127,29 +127,17 @@ extension and X.509 and OpenPGP certificate handling.
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
-    <ulink url="http://www.gnu.org/software/gnutls/download.html">OpenCDK</ulink>,
     <xref linkend="guile"/>,
     <xref linkend="libtasn1"/>,
     <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
     <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
-    <ulink url="http://www.gnu.org/software/gnutls/download.html">OpenCDK</ulink>,
     <xref linkend="guile"/>,
     <xref linkend="libtasn1"/>,
-    <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>,
+    <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
     <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional Debugging Libraries</bridgehead>
-    <para role="optional"><ulink url="http://dmalloc.com/">Dmalloc</ulink> and
-    <ulink url="http://perens.com/FreeSoftware/ElectricFence/">Electric Fence</ulink></para>
-@y
-    <bridgehead renderas="sect4">任意のデバッグ用ライブラリ</bridgehead>
-    <para role="optional"><ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-    <ulink url="http://perens.com/FreeSoftware/ElectricFence/">Electric Fence</ulink></para>
 @z
 
 @x
@@ -213,15 +201,17 @@ extension and X.509 and OpenPGP certificate handling.
         psktool, and srptool</seg>
         <seg>libgnutls.{so,a}, libgnutls-extra.{so,a},
         libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
-        <seg>/usr/include/gnutls and
-        /usr/share/doc/gnutls-&gnutls-version;</seg>
+        <seg>/usr/include/gnutls,
+        /usr/share/doc/gnutls-&gnutls-version;, and
+        /usr/share/gtk-doc/html/gnutls</seg>
 @y
         <seg>certtool, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-        psktool, srptool</seg>
+        psktool, and srptool</seg>
         <seg>libgnutls.{so,a}, libgnutls-extra.{so,a},
         libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
         <seg>/usr/include/gnutls,
-        /usr/share/doc/gnutls-&gnutls-version;</seg>
+        /usr/share/doc/gnutls-&gnutls-version;, and
+        /usr/share/gtk-doc/html/gnutls</seg>
 @z
 
 @x

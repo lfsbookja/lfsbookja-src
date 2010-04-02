@@ -26,59 +26,69 @@
 @z
 
 @x
-      <para>In its current condition, building <application>Heimdal</application>
-      will overwrite <filename class='libraryfile'>/usr/lib/libcom_err.so</filename>
-      and install an additional
-      <filename class='libraryfile'>libcom_err</filename> library in
+      <para>If you are using an LFS-&lfs-version; based system, building
+      <application>Heimdal</application> will overwrite <filename
+      class='libraryfile'>/usr/lib/libcom_err.so</filename> and install an
+      additional <filename class='libraryfile'>libcom_err</filename> library in
       <filename class='directory'>/usr/lib</filename>. This will directly
       conflict with the <filename class='libraryfile'>/lib/libcom_err</filename>
       library installed by the <application>E2fsprogs</application> package in LFS.
-      Both upstream maintainers are aware of the problem and both have taken action
-      to eliminate this condition. However, the combination that currently exists
-      will cause this problem.</para>
+      Both upstream maintainers have taken steps to eliminate this condition.
+      However, the combination that currently exists causes this problem.</para>
 @y
-<para>
-<application>Heimdal</application>
-をビルドすると、<filename class='directory'>/usr/lib</filename>
-ディレクトリ内に既にある <filename class='libraryfile'>/usr/lib/libcom_err.so</filename>
-を上書きし、さらに <filename class='libraryfile'>libcom_err</filename>
-ライブラリをいくつか追加します。
-このことは、LFS 構築時の <application>E2fsprogs</application>
-パッケージがインストールする <filename class='libraryfile'>/lib/libcom_err</filename>
-と競合する結果となります。
-それぞれの開発者はこのことを認識しており、その解消に向けた作業を進めています。
-しかし
-However, the combination that currently exists
-will cause this problem.
-</para>
+      <para>If you are using an LFS-&lfs-version; based system, building
+      <application>Heimdal</application> will overwrite <filename
+      class='libraryfile'>/usr/lib/libcom_err.so</filename> and install an
+      additional <filename class='libraryfile'>libcom_err</filename> library in
+      <filename class='directory'>/usr/lib</filename>. This will directly
+      conflict with the <filename class='libraryfile'>/lib/libcom_err</filename>
+      library installed by the <application>E2fsprogs</application> package in LFS.
+      Both upstream maintainers have taken steps to eliminate this condition.
+      However, the combination that currently exists causes this problem.</para>
 @z
+
+%@x
+%      <para>In its current condition, building <application>Heimdal</application>
+%      will overwrite <filename class='libraryfile'>/usr/lib/libcom_err.so</filename>
+%      and install an additional
+%      <filename class='libraryfile'>libcom_err</filename> library in
+%      <filename class='directory'>/usr/lib</filename>. This will directly
+%      conflict with the <filename class='libraryfile'>/lib/libcom_err</filename>
+%      library installed by the <application>E2fsprogs</application> package in LFS.
+%      Both upstream maintainers are aware of the problem and both have taken action
+%      to eliminate this condition. However, the combination that currently exists
+%      will cause this problem.</para>
+%@y
+%<para>
+%<application>Heimdal</application>
+%をビルドすると、<filename class='directory'>/usr/lib</filename>
+%ディレクトリ内に既にある <filename class='libraryfile'>/usr/lib/libcom_err.so</filename>
+%を上書きし、さらに <filename class='libraryfile'>libcom_err</filename>
+%ライブラリをいくつか追加します。
+%このことは、LFS 構築時の <application>E2fsprogs</application>
+%パッケージがインストールする <filename class='libraryfile'>/lib/libcom_err</filename>
+%と競合する結果となります。
+%それぞれの開発者はこのことを認識しており、その解消に向けた作業を進めています。
+%しかし
+%However, the combination that currently exists
+%will cause this problem.
+%</para>
+%@z
 
 @x
       <para>There is a fix for the problem, but it will require you to recompile
-      the LFS <application>E2fsprogs</application> package with a patch. The patch is
-      located at <ulink url="&patch-root;/e2fsprogs-1.41.8-heimdal_compat-1.patch"/>.
-      Download the patch, and while you are still in the
-      <filename class='directory'>e2fsprogs-&lfs-e2fsprogs-version;</filename>
-      source directory, install it using the command:</para>
-@y
-      <para>There is a fix for the problem, but it will require you to recompile
-      the LFS <application>E2fsprogs</application> package with a patch. The patch is
-      located at <ulink url="&patch-root;/e2fsprogs-1.41.8-heimdal_compat-1.patch"/>.
-      Download the patch, and while you are still in the
-      <filename class='directory'>e2fsprogs-&lfs-e2fsprogs-version;</filename>
-      source directory, install it using the command:</para>
-@z
-
-@x
-      <para>Then follow the existing instructions to build
-      <application>E2fsprogs</application> located at
-      <ulink url="&lfs-root;/chapter06/e2fsprogs.html"/>. After
+      the LFS-&lfs-version; <application>E2fsprogs</application> package to a
+      newer version than the &lfs-e2fsprogs-version; version used in that book.
+      Any version equal to or greater than the one used in the
+      <ulink url="&lfs-dev;">LFS-Development</ulink> book will do. After
       recompiling <application>E2fsprogs</application>, you are now ready to
       install <application>Heimdal</application>.</para>
 @y
-      <para>Then follow the existing instructions to build
-      <application>E2fsprogs</application> located at
-      <ulink url="&lfs-root;/chapter06/e2fsprogs.html"/>. After
+      <para>There is a fix for the problem, but it will require you to recompile
+      the LFS-&lfs-version; <application>E2fsprogs</application> package to a
+      newer version than the &lfs-e2fsprogs-version; version used in that book.
+      Any version equal to or greater than the one used in the
+      <ulink url="&lfs-dev;">LFS-Development</ulink> book will do. After
       recompiling <application>E2fsprogs</application>, you are now ready to
       install <application>Heimdal</application>.</para>
 @z

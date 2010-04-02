@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY samba3-time          "2.3 SBU (additional 1.0 SBU to run the test suite)">
+  <!ENTITY samba3-time          "5 SBU (additional 1.5 SBU to run the test suite)">
 @y
-  <!ENTITY samba3-time          "2.3 SBU (テストスイートを実行する場合は、さらに 1.0 SBU)">
+  <!ENTITY samba3-time          "5 SBU (テストスイートを実行する場合は、さらに 1.5 SBU)">
 @z
 
 @x
@@ -102,9 +102,17 @@ amongst other things provides LAN browsing support).
     <xref linkend="openldap"/>,
     <xref linkend="gamin"/>,
     <xref linkend="acl"/>,
+    <xref linkend="xfs"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <xref linkend="python"/> (to build Samba API bindings for the
-    <application>Python</application> installation),
+    <!-- <xref linkend="python"/> (to build Samba API bindings for the
+    <application>Python</application> installation), -->
+    <ulink url="http://tdb.samba.org/">tdb</ulink>,
+    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
+    <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
+    <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
+    (required to build the <command>cifs.upcall</command> program),
+    <ulink url="http://www.avahi.org">Avahi</ulink>,
+    <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>
 @y
@@ -115,11 +123,19 @@ amongst other things provides LAN browsing support).
     <xref linkend="openldap"/>,
     <xref linkend="gamin"/>,
     <xref linkend="acl"/>,
-    <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
-    <xref linkend="python"/> (to build Samba API bindings for the
-    <application>Python</application> installation),
-    さらに <ulink url="http://valgrind.org/">Valgrind</ulink>
-    (テストスイート実行時に任意で用いられる。)</para>
+    <xref linkend="xfs"/>,
+    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+    <!-- <xref linkend="python"/> (to build Samba API bindings for the
+    <application>Python</application> installation), -->
+    <ulink url="http://tdb.samba.org/">tdb</ulink>,
+    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
+    <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
+    <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
+    (required to build the <command>cifs.upcall</command> program),
+    <ulink url="http://www.avahi.org">Avahi</ulink>,
+    <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
+    and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
+    used by the test suite)</para>
 @z
 
 @x
@@ -166,23 +182,15 @@ amongst other things provides LAN browsing support).
 @z
 
 @x
-    <para>You must become the <systemitem class="username">root</systemitem>
-    user to run the test framework. To run the tests, issue:
-    <command>make test</command>. If you have
+    <para>To test the results, issue: <command>make test</command>. If you have
     <application>Linux-PAM</application> installed and built the PAM library
     modules, you can perform a dlopen test by issuing:
     <command>make test_pam_modules</command>.</para>
 @y
-<para>
-テストフレームワークを実行するなら
-<systemitem class="username">root</systemitem>
-ユーザーになる必要があります。
-そして <command>make test</command> を実行します。
-<application>Linux-PAM</application>
-をインストール済で PAM ライブラリモジュールもビルドしているなら
-<command>make test_pam_modules</command>
-の実行により dlopen テストを実施することもできます。
-</para>
+    <para>To test the results, issue: <command>make test</command>. If you have
+    <application>Linux-PAM</application> installed and built the PAM library
+    modules, you can perform a dlopen test by issuing:
+    <command>make test_pam_modules</command>.</para>
 @z
 
 @x
@@ -190,22 +198,6 @@ amongst other things provides LAN browsing support).
 @y
 <para>
 <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
-@z
-
-@x
-  <para>If you passed the <option>--with-python</option> option to the
-  <command>configure</command> script, issue the following command as the
-  <systemitem class="username">root</systemitem> user to install the
-  <application>Python</application> extensions:</para>
-@y
-<para>
-<command>configure</command> スクリプトにおいて
-<option>--with-python</option> パラメータを指定した場合は、
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行することで
-<application>Python</application>
-拡張モジュールをインストールします。
 </para>
 @z
 
@@ -254,22 +246,6 @@ amongst other things provides LAN browsing support).
 @z
 
 @x
-    <para><parameter>--with-smbmount</parameter>: Orders the creation of an
-    extra binary for use by the <command>mount</command> command so that
-    mounting remote SMB (Windows) shares becomes no more complex than
-    mounting remote NFS shares.</para>
-@y
-<para>
-<parameter>--with-smbmount</parameter>:
-
-Orders the creation of an
-extra binary for use by the <command>mount</command> command so that
-mounting remote SMB (Windows) shares becomes no more complex than
-mounting remote NFS shares.
-</para>
-@z
-
-@x
     <para><option>--with-pam</option>: Use this parameter to link
     <application>Linux-PAM</application> into the build. This
     also builds the <filename class='libraryfile'>pam_winbind.so</filename>
@@ -290,24 +266,6 @@ and <filename class='libraryfile'>pam_smbpass.so</filename>
 instructions on how to configure and use the
 <filename class='libraryfile'>pam_winbind.so</filename>module by running
 <command>man winbindd</command>.
-</para>
-@z
-
-@x
-    <para><command>mv -v /usr/lib/samba/libsmbclient.so ...; ln -v -sf
-    ../libsmbclient.so ...</command>: The
-    <filename class='libraryfile'>libsmbclient.so</filename> library is needed
-    by other packages. This command moves it to a location where other packages
-    can find it.</para>
-@y
-<para>
-<command>mv -v /usr/lib/samba/libsmbclient.so ...; ln -v -sf
-../libsmbclient.so ...</command>:
-
-The
-<filename class='libraryfile'>libsmbclient.so</filename> library is needed
-by other packages. This command moves it to a location where other packages
-can find it.
 </para>
 @z
 
@@ -381,29 +339,24 @@ section for minimum values which must be set.
 
 @x
       <para>If it is desired for unprivileged users to directly mount (and
-      unmount) SMB and CIFS shares, the <command>smbmnt</command>,
-      <command>smbumount</command>, <command>mount.cifs</command> and
+      unmount) CIFS shares, the <command>mount.cifs</command> and
       <command>umount.cifs</command> commands must be setuid
       <systemitem class='username'>root</systemitem>. Note that users can
-      only mount SMB/CIFS shares on a mount point owned by that user (requires
+      only mount CIFS shares on a mount point owned by that user (requires
       write access also). If desired, change these programs to setuid
       <systemitem class='username'>root</systemitem> by issuing the following
       command as the <systemitem class='username'>root</systemitem>
       user:</para>
 @y
-<para>
-
-If it is desired for unprivileged users to directly mount (and
-unmount) SMB and CIFS shares, the <command>smbmnt</command>,
-<command>smbumount</command>, <command>mount.cifs</command> and
-<command>umount.cifs</command> commands must be setuid
-<systemitem class='username'>root</systemitem>. Note that users can
-only mount SMB/CIFS shares on a mount point owned by that user (requires
-write access also). If desired, change these programs to setuid
-<systemitem class='username'>root</systemitem> by issuing the following
-command as the <systemitem class='username'>root</systemitem>
-user:
-</para>
+      <para>If it is desired for unprivileged users to directly mount (and
+      unmount) CIFS shares, the <command>mount.cifs</command> and
+      <command>umount.cifs</command> commands must be setuid
+      <systemitem class='username'>root</systemitem>. Note that users can
+      only mount CIFS shares on a mount point owned by that user (requires
+      write access also). If desired, change these programs to setuid
+      <systemitem class='username'>root</systemitem> by issuing the following
+      command as the <systemitem class='username'>root</systemitem>
+      user:</para>
 @z
 
 @x
@@ -1024,10 +977,10 @@ the corresponding bootscript are needed.</para>
 @z
 
 @x
-        <seg>eventlogadm, findsmb, mount.cifs, mount.smbfs, net, nmbd,
+        <seg>cifs.upcall, eventlogadm, findsmb, mount.cifs, mount.smbfs, net, nmbd,
         nmblookup, ntlm_auth, pdbedit, profiles, rpcclient, smbcacls,
-        smbclient, smbcontrol, smbcquotas, smbd, smbget, smbmnt, smbmount,
-        smbpasswd, smbspool, smbstatus, smbtar, smbtree, smbumount, swat,
+        smbclient, smbcontrol, smbcquotas, smbd, smbget,
+        smbpasswd, smbspool, smbstatus, smbtar, smbtree, swat,
         tdbbackup, tdbdump, tdbtool, testparm, umount.cifs, wbinfo
         and winbindd</seg>
         <seg>libnss_winbind.so, libnss_wins.so, libsmbclient.so, libmsrpc.so,
@@ -1037,10 +990,10 @@ the corresponding bootscript are needed.</para>
         /usr/lib/samba, /usr/share/doc/samba-&samba3-version;,
         /usr/share/samba, /var/lib/samba and /var/log/samba</seg>
 @y
-        <seg>eventlogadm, findsmb, mount.cifs, mount.smbfs, net, nmbd,
+        <seg>cifs.upcall, eventlogadm, findsmb, mount.cifs, mount.smbfs, net, nmbd,
         nmblookup, ntlm_auth, pdbedit, profiles, rpcclient, smbcacls,
-        smbclient, smbcontrol, smbcquotas, smbd, smbget, smbmnt, smbmount,
-        smbpasswd, smbspool, smbstatus, smbtar, smbtree, smbumount, swat,
+        smbclient, smbcontrol, smbcquotas, smbd, smbget,
+        smbpasswd, smbspool, smbstatus, smbtar, smbtree, swat,
         tdbbackup, tdbdump, tdbtool, testparm, umount.cifs, wbinfo
         and winbindd</seg>
         <seg>libnss_winbind.so, libnss_wins.so, libsmbclient.so, libmsrpc.so,

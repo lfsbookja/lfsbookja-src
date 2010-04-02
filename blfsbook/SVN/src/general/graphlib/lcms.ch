@@ -139,9 +139,9 @@
 @z
 
 @x
-    <para><option>--with-python</option>: Use this if you installed
+    <para><option>--with-python</option>: Use this parameter if 
     <application>Python</application> and
-    <application>SWIG</application>.</para>
+    <application>SWIG</application> are installed.</para>
 @y
 <para>
 <option>--with-python</option>:
@@ -179,12 +179,12 @@
 @x
         <seg>icc2ps, icclink, icctrans, wtpt and
         optionally, jpegicc, tiffdiff and tifficc</seg>
-        <seg>liblcms.{so,a} and the optional _lcms.so Python module</seg>
+        <seg>liblcms.{so,a} and the optional _lcms.{so,a} Python module</seg>
         <seg>/usr/share/doc/lcms-&lcms-version;</seg>
 @y
-        <seg>icc2ps, icclink, icctrans, wtpt、
-        また任意のものとして jpegicc, tiffdiff, tifficc</seg>
-        <seg>liblcms.{so,a} and the optional _lcms.so Python module</seg>
+        <seg>icc2ps, icclink, icctrans, wtpt and
+        optionally, jpegicc, tiffdiff and tifficc</seg>
+        <seg>liblcms.{so,a} and the optional _lcms.{so,a} Python module</seg>
         <seg>/usr/share/doc/lcms-&lcms-version;</seg>
 @z
 
