@@ -50,6 +50,17 @@
 -->
 
     <listitem>
+      <para>2010-04-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          ビルド時のオリジナルソースディレクトリのデフォルトを修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-03-02</para>
       <itemizedlist>
         <listitem>
@@ -59,6 +70,7 @@
         </listitem>
       </itemizedlist>
     </listitem>
+
   </itemizedlist>
 
 </sect1>
