@@ -50,6 +50,22 @@
 -->
 
     <listitem>
+      <para>2010-04-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - chapter01/changelog.ch,
+          chapter06/zlib.ch: SVN-20100412, r9239 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          ビルド時のオリジナルソースディレクトリのデフォルトを修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-03-28</para>
       <itemizedlist>
         <listitem>

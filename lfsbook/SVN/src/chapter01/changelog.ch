@@ -57,6 +57,27 @@
 @z
 
 @x
+      <para>2010-04-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Adjust zlib instructions to ensure .pc
+          file and all libraries are in the proper location.
+          Thanks to Chris Staub.
+          Fixes <ulink url="&lfs-ticket-root;2630">#2630</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-04-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Zlib のビルド手順にて、.pc ファイルを適切に利用すること、およびすべてのライブラリを適切なディレクトリにインストールするように修正。
+          Chris Staub 氏に感謝する。
+          <ulink url="&lfs-ticket-root;2630">#2630</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-03-27</para>
       <itemizedlist>
         <listitem>

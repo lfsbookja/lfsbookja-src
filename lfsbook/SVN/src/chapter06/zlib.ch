@@ -9,7 +9,7 @@
     some programs.</para>
 @y
 <para>
-Zlib パッケージは、各種プログラムから呼び出される、圧縮・伸張 (解凍) を行う関数を提供します。
+Zlib パッケージは、各種プログラムから呼び出される、圧縮、伸張 (解凍) を行う関数を提供します。
 </para>
 @z
 
@@ -38,9 +38,9 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
 % @z
 
 @x
-    <para>Prepare Zlib for building the dynamic library:</para>
+    <para>Prepare Zlib for compilation:</para>
 @y
-    <para>Zlib のダイナミックライブラリを生成する準備をします。</para>
+    <para>Zlib を生成する準備をします。</para>
 @z
 
 @x
@@ -56,50 +56,24 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
 @z
 
 @x
-    <para>Install the shared library:</para>
+    <para>Install the package:</para>
 @y
-    <para>共有ライブラリをインストールします。</para>
+    <para>パッケージをインストールします。</para>
 @z
 
 @x
-    <para>The previous command installed a <filename
-    class="extension">.so</filename> file in <filename
-    class="directory">/lib</filename>. We will remove it and relink it into
-    <filename class="directory">/usr/lib</filename>:</para>
+    <para>The shared library needs to be moved to
+    <filename class="directory">/lib</filename>, and as a result the
+    <filename class="extension">.so</filename> file in
+    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
 @y
-<para>
-上のコマンドを実行すると
-<filename class="extension">.so</filename>
-ファイルが <filename class="directory">/lib</filename>
-ディレクトリにインストールされます。
-これを削除して <filename class="directory">/usr/lib</filename>
-へのリンクを再作成します。
-</para>
+    <para>共有ライブラリは
+    <filename class="directory">/lib</filename>
+    に移す必要があります。
+    またそれに合わせて <filename class="directory">/usr/lib</filename>
+    にある <filename class="extension">.so</filename>
+    ファイルを再生成する必要があります。</para>
 @z
-
-% @x
-%     <para>Build the static library:</para>
-% @y
-%     <para>スタティックライブラリをビルドします。</para>
-% @z
-% 
-% @x
-%     <para>To test the results again, issue:</para>
-% @y
-%     <para>コンパイル結果を再度テストするには以下を実行します。</para>
-% @z
-% 
-% @x
-%     <para>Install the static library:</para>
-% @y
-%     <para>スタティックライブラリをインストールします。</para>
-% @z
-% 
-% @x
-%     <para>Fix the permissions on the static library:</para>
-% @y
-%     <para>スタティックライブラリのパーミッションを設定します。</para>
-% @z
 
 @x
     <title>Contents of Zlib</title>
@@ -124,7 +98,7 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
           some programs</para>
 @y
 <para>
-各種プログラムから呼び出される、圧縮・伸張 (解凍) を行う関数を提供します。
+各種プログラムから呼び出される、圧縮、伸張 (解凍) を行う関数を提供します。
 </para>
 @z
 

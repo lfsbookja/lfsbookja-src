@@ -25,9 +25,9 @@ fi;dnl
 CTIE=ctie/ctie$EXEEXT
 AC_SUBST(CTIE)
 
-bookdir=../LFS-BOOK-6.5-XML
+bookdir=../BOOK
 AC_ARG_WITH(bookdir,
-[  --with-bookdir=DIR      Specify BOOK sources directory [[DIR=../LFS-BOOK-6.5-XML]]],
+[  --with-bookdir=DIR      Specify BOOK sources directory [[DIR=../BOOK]]],
 [
   if test -d "${with_bookdir}" ; then
     bookdir=${with_bookdir}
