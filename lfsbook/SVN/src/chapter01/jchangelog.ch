@@ -54,7 +54,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] - chapter01/changelog.ch,
-          chapter06/zlib.ch: SVN-20100412, r9239 対応。
+          chapter06/zlib.ch: SVN-20100412, r9240 対応。
           </para>
         </listitem>
         <listitem>
