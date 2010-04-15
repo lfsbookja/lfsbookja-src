@@ -50,11 +50,22 @@
 -->
 
     <listitem>
+      <para>2010-04-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/how.ch,
+          src/prologue/foreword.ch: SVN-20100412, r9244 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-04-13</para>
       <itemizedlist>
         <listitem>
-          <para>[matsuand] - chapter01/changelog.ch,
-          chapter06/zlib.ch: SVN-20100412, r9240 対応。
+          <para>[matsuand] - src/chapter01/changelog.ch,
+          src/chapter06/zlib.ch: SVN-20100412, r9240 対応。
           </para>
         </listitem>
         <listitem>
@@ -69,10 +80,10 @@
       <para>2010-03-28</para>
       <itemizedlist>
         <listitem>
-          <para>[matsuand] - chapter01/changelog.ch,
-          chapter02/{creatingfilesystem,creatingpartition.ch},
-          chapter03/patches.ch, chapter05/grep.ch,
-          chapter06/{grep.ch,grub.ch}: SVN-20100327, r9238 対応。
+          <para>[matsuand] - src/chapter01/changelog.ch,
+          src/chapter02/{creatingfilesystem,creatingpartition.ch},
+          src/chapter03/patches.ch, chapter05/grep.ch,
+          src/chapter06/{grep.ch,grub.ch}: SVN-20100327, r9238 対応。
           </para>
         </listitem>
       </itemizedlist>
