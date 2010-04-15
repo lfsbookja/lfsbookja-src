@@ -36,24 +36,21 @@ LFS システムは、既にインストールされている Linux ディスト
   machine, you may wish to use the Linux From Scratch LiveCD or a LiveCD from a
   commercial distribution. The LFS LiveCD works well as a host system,
   providing all the tools you need to successfully follow the instructions in
-  this book. Unfortunately, development of the LiveCD has not progressed
-  recently and it only contains older versions of the source packages and
-  patches (the versions not labeled <quote>-nosrc</quote> or
-  <quote>-min</quote>), and this book.  For more
-  information about the LFS LiveCD or to download a copy, visit <ulink
-  url="&livecd-root;"/>.</para>
+  this book. The LiveCD version is behind the current book, but is still useful
+  as a host for building the current book.  The <quote>-nosrc</quote> or
+  <quote>-min</quote> editions of the LiveCD are the most appropriate for
+  building a current LFS system.  For more information about the LFS LiveCD or
+  to download a copy, visit <ulink url="&livecd-root;"/>.</para>
 @y
 <para>
 コンピュータ内にインストールされているディストリビューションを利用するのではなく、
-Linux From Scratch LiveCD、あるいは他の提供されている LiveCD を利用することもできます。
-LFS LiveCD はホストシステムとして利用することができます。
-この LiveCD には本書に示す手順を実施するために必要なツール類がすべて含まれます。
-ただし LiveCD の開発が順調に進まず、そこに含まれるソースパッケージやパッチ
-(<quote>-nosrc</quote> や <quote>-min</quote> という名称が含まれていない版)
-や本書自身も古い可能性があります。
+Linux From Scratch LiveCD、あるいは他に提供されている LiveCD を利用することもできます。
+LFS LiveCD はホストシステムとして利用することができ、本書の手順を実施するための必要なツール類がすべて含まれます。
+LiveCD の開発は思うように進んでいませんが、ホストシステムとして利用することが可能です。
+現時点にて本書によるビルド作業を進めるなら
+<quote>-nosrc</quote> や <quote>-min</quote> という名称が含まれている版を用いてください。
 LFS LiveCD の詳細や LiveCD ダウンロード方法については
-<ulink url="&livecd-root;"/>
-を参照してください。
+<ulink url="&livecd-root;"/> を参照してください。
 </para>
 @z
 
