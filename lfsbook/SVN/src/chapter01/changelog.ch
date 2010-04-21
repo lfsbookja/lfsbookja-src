@@ -57,6 +57,99 @@
 @z
 
 @x
+      <para>2010-04-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to GCC-4.5.0, including the addition of its
+          new dependency, MPC.  Fixes
+          <ulink url="&lfs-ticket-root;2636">#2636</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Perl-5.12.0.  Fixes
+          <ulink url="&lfs-ticket-root;2635">#2635</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Kbd-1.15.2.  Fixes
+          <ulink url="&lfs-ticket-root;2634">#2634</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Remove the now unused --docdir parameter for Udev.
+          Fixes <ulink url="&lfs-ticket-root;2633">#2633</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Psmisc-22.11.  Fixes
+          <ulink url="&lfs-ticket-root;2631">#2631</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Move <command>killall</command> to
+          <filename class="directory">/bin</filename> so that installs with a
+          separate <filename class="directory">/usr</filename> partition and no
+          <package>Sysvinit</package> installed will boot.  Fixes
+          <ulink url="&lfs-ticket-root;2622">#2622</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Grep-2.6.3.  Fixes
+          <ulink url="&lfs-ticket-root;2621">#2621</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Add upstream fixes 001-005 for Bash.  Fixes
+          <ulink url="&lfs-ticket-root;2620">#2620</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Remove the Vim fixes patch as it is out of date and
+          looks to be applying fixes still in upstream's development cycle.
+          Fixes <ulink url="&lfs-ticket-root;2597">#2597</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-04-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] GCC-4.5.0 へのアップグレード。
+          新たな依存パッケージ MPC の追加。
+          <ulink url="&lfs-ticket-root;2636">#2636</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Perl-5.12.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2635">#2635</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Kbd-1.15.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2634">#2634</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Udev にて、使われていないパラメータ --docdir を削除。
+          <ulink url="&lfs-ticket-root;2633">#2633</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Psmisc-22.11 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2631">#2631</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] <command>killall</command> を
+          <filename class="directory">/bin</filename> へ移動するように。
+          これは、<filename class="directory">/usr</filename>
+          パーティションが別に分かれている場合で、かつ
+          <package>Sysvinit</package> がインストールされていない状況でもブートを可能とするため。
+          <ulink url="&lfs-ticket-root;2622">#2622</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Grep-2.6.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2621">#2621</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Bash にてアップストリームの修正 001 ～ 005 を追加。
+          <ulink url="&lfs-ticket-root;2620">#2620</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Vim の修正パッチを削除。
+          このパッチは既に古くなっていることと、アップストリームの開発サイクルにて適用済と思われるため。
+          <ulink url="&lfs-ticket-root;2597">#2597</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-04-12</para>
       <itemizedlist>
         <listitem>

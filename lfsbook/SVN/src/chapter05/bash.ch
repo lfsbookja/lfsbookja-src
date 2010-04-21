@@ -32,6 +32,14 @@
 @z
 
 @x
+    <para>Apply a patch that fixes several bugs reported and fixed by the upstream Bash maintainer:</para>
+@y
+<para>
+Bash のアップストリームにより報告あるいは修正された数種のバグフィックスを適用します。
+</para>
+@z
+
+@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>Bash をコンパイルするための準備をします。</para>

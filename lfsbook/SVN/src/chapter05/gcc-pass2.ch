@@ -178,11 +178,12 @@ x86_64 では GCC の multilib スペックを無効化します。
 @z
 
 @x
-    <para>As in the first build of GCC it requires the GMP and MPFR packages.
-    Unpack the tarballs and move them into the required directory names:</para>
+    <para>As in the first build of GCC it requires the GMP, MPFR and MPC
+    packages. Unpack the tarballs and move them into the required directory
+    names:</para>
 @y
 <para>
-GCC を初めてビルドする際には GMP パッケージと MPFR パッケージを必要とします。
+GCC を初めてビルドする際には GMP、MPFR、MPC の各パッケージを必要とします。
 tarball を解凍して、所定のディレクトリ名に移動させます。
 </para>
 @z

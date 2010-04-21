@@ -52,16 +52,16 @@ Vim パッケージは強力なテキストエディタを提供します。
 </para>
 @z
 
-@x
-    <para>Apply a patch which fixes various issues already found and fixed by
-    the upstream maintainers since the inital release of Vim-&vim-version;:
-    </para>
-@y
-<para>
-Vim-&vim-version;
-の初期版リリース以降に開発者によって発見された種々の問題を解消するために、以下のパッチを適用します。
-</para>
-@z
+% @x
+%     <para>Apply a patch which fixes various issues already found and fixed by
+%     the upstream maintainers since the inital release of Vim-&vim-version;:
+%     </para>
+% @y
+% <para>
+% Vim-&vim-version;
+% の初期版リリース以降に開発者によって発見された種々の問題を解消するために、以下のパッチを適用します。
+% </para>
+% @z
 
 @x
     <para>Change the default location of the

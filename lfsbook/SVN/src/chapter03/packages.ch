@@ -452,6 +452,16 @@ Linux カーネルはわりと頻繁に更新されます。
 @z
 
 @x
+        <para>Home page: <ulink url="&mpc-home;"/></para>
+        <para>Download: <ulink url="&mpc-url;"/></para>
+        <para>MD5 sum: <literal>&mpc-md5;</literal></para>
+@y
+        <para>ホームページ: <ulink url="&mpc-home;"/></para>
+        <para>ダウンロード: <ulink url="&mpc-url;"/></para>
+        <para>MD5 sum: <literal>&mpc-md5;</literal></para>
+@z
+
+@x
         <para>Home page: <ulink url="&mpfr-home;"/></para>
         <para>Download: <ulink url="&mpfr-url;"/></para>
         <para>MD5 sum: <literal>&mpfr-md5;</literal></para>

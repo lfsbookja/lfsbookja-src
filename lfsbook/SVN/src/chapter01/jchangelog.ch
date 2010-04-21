@@ -50,6 +50,20 @@
 -->
 
     <listitem>
+      <para>2010-04-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter01/{changelog.ch,jchangelog.ch},
+          src/chapter03/{patches.ch,packages.ch},
+          src/chapter05/{bash.ch,gcc-pass1.ch,perl.ch,glibc.ch,gcc-pass2.ch},
+          src/chapter06/{mpc.ch,Makefile.in,udev.ch,bison.ch,bash.ch,perl.ch,glibc.ch,vim.ch,kbd.ch},
+          src/appendices/dependencies.ch: SVN-20100420, r9256 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-04-15</para>
       <itemizedlist>
         <listitem>

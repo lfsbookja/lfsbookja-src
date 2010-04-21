@@ -28,16 +28,6 @@ Kbd パッケージは、キーテーブル (key-table) ファイルとキーボ
 @z
 
 @x
-    <para>The Kbd package doesn't come shipped with the standard configure
-    scripts, so generate them now:</para>
-@y
-<para>
-Kbd パッケージには標準的な configure スクリプトが用意されていません。
-そこで以下のようにして生成します。
-</para>
-@z
-
-@x
     <para>The behaviour of the Backspace and Delete keys is not consistent
     across the keymaps in the Kbd package. The following patch fixes this
     issue for i386 keymaps:</para>

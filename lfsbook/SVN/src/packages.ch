@@ -156,6 +156,14 @@
 @z
 
 @x
+<!ENTITY mpc-ch6-du "10.5 MB testsuite included">
+<!ENTITY mpc-ch6-sbu "0.3 SBU testsuite included">
+@y
+<!ENTITY mpc-ch6-du "10.5 MB テストスイート込み">
+<!ENTITY mpc-ch6-sbu "0.3 SBU テストスイート込み">
+@z
+
+@x
 <!ENTITY mpfr-ch6-du "27.1 MB testsuite included">
 <!ENTITY mpfr-ch6-sbu "1.1 SBU testsuite included">
 @y

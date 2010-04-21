@@ -41,15 +41,6 @@ Perl の設定ファイルが <filename>/etc/hosts</filename>
 @z
 
 @x
-    <para>Fix a problem where invalid utf-8 characters cause a segmentation 
-    fault:</para>
-@y
-<para>
-不正な utf-8 エンコーディングの文字があるとセグメンテーションフォールトを起こすため、これを修正します。
-</para>
-@z
-
-@x
     <para>This version of Perl now builds the Compress::Raw::Zlib module. By
     default Perl will use an internal copy of the Zlib source for the build.
     Issue the following command so that Perl will use the Zlib library
@@ -64,17 +55,16 @@ Perl の設定ファイルが <filename>/etc/hosts</filename>
 @z
 
 @x
-    <para>To have full control over the way Perl is set up, you can run the
-    interactive <command>Configure</command> script and hand-pick the way this
-    package is built. If you prefer, you can use the defaults that Perl
-    auto-detects, by preparing Perl for compilation with:</para>
+    <para>To have full control over the way Perl is set up, you can remove the
+    <quote>-des</quote> options from the following command and hand-pick the way
+    this package is built. Alteratively, use the command exactly as below to
+    use the defaults that Perl auto-detects:</para>
 @y
 <para>
-Perl のビルド設定を完全に制御したい場合は
-対話的な <command>Configure</command>
-スクリプトを用いて手作業により行います。
-Perl がデフォルトで定める設定でも構わない場合は、以下のコマンドにより Perl
-をコンパイルするための準備をします。
+Perl のビルド設定を完全に制御したい場合は、以下のコマンドから
+<quote>-des</quote> オプションを取り除くことで、手作業により操作を進めます。
+Perl が自動的に判別するデフォルト設定に従うので良いのであれば、以下のコマンドにより
+Perl をコンパイルするための準備をします。
 </para>
 @z
 

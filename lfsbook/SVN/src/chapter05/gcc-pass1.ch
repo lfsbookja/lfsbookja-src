@@ -29,12 +29,12 @@
 @z
 
 @x
-    <para>GCC now requires the GMP and MPFR packages. As these packages may
+    <para>GCC now requires the GMP, MPFR and MPC packages. As these packages may
     not be included in your host distribution, they will be built with
     GCC:</para>
 @y
 <para>
-最近の GCC は GMP パッケージと MPFR パッケージを必要とします。
+最近の GCC は GMP、MPFR、MPC の各パッケージを必要とします。
 これらのパッケージはホストシステムに含まれていないかもしれないため、以下を実行してビルドの準備をします。
 </para>
 @z

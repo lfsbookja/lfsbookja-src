@@ -34,12 +34,12 @@
 
 @x
     <para>Prepare Perl for compilation (make sure to get the
-    'Data/Dumper Fcntl IO POSIX' part of the command correct&mdash;they are all
+    'Data/Dumper Fcntl IO' part of the command correct&mdash;they are all
     letters):</para>
 @y
 <para>
 Perl をコンパイルするための準備をします。
-(以下のコマンドにて 'Data/Dumper Fcntl IO POSIX'
+(以下のコマンドにて 'Data/Dumper Fcntl IO'
 の部分は間違いなく入力してください。
 それらはすべて英字です。)
 </para>

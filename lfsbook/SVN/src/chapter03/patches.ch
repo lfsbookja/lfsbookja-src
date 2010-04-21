@@ -43,19 +43,33 @@
 </note>
 @z
 
-% @x
-%       <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-%       </listitem>
-% @z
+@x
+      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Bison GCC-4.5.0 Patch - <token>&bison-gcc-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&bison-gcc-patch;"/></para>
+        <para>MD5 sum: <literal>&bison-gcc-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Bison GCC-4.5.0 Patch - <token>&bison-gcc-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&bison-gcc-patch;"/></para>
+        <para>MD5 sum: <literal>&bison-gcc-patch-md5;</literal></para>
+      </listitem>
+@z
 
 @x
       <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
@@ -183,6 +197,20 @@
       </listitem>
 @z
 
+@x
+      <term>Glibc GCC Build Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc GCC Build Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
+      </listitem>
+@z
+
 % @x
 %       <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
 %       <listitem>
@@ -307,19 +335,19 @@
       </listitem>
 @z
 
-@x
-      <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
+%         <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
+%         <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Procps Watch Patch - <token>&procps-watch-patch-size;</token>:</term>
@@ -332,34 +360,6 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&procps-watch-patch;"/></para>
         <para>MD5 sum: <literal>&procps-watch-patch-md5;</literal></para>
-      </listitem>
-@z
-
-% @x
-%       <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-%       </listitem>
-% @z
-
-@x
-      <term>Vim Fixes Patch - <token>&vim-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&vim-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&vim-fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Vim Fixes Patch - <token>&vim-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&vim-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&vim-fixes-patch-md5;</literal></para>
       </listitem>
 @z
 

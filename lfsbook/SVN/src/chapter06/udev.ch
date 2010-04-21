@@ -50,14 +50,6 @@ Udev はそれらを認識できません。
 </para>
 @z
 
-% @x
-%     <para>Correct permissions for floppy devices:</para>
-% @y
-% <para>
-% フロッピーデバイスの権限を正しく設定します。
-% </para>
-% @z
-
 @x
     <para>Prepare the package for compilation:</para>
 @y
@@ -72,7 +64,7 @@ Udev はそれらを認識できません。
 <title>configure オプションの意味：</title>
 @z
 
-@x
+@x --with-rootlibdir=/lib
           <para>This controls where the <filename
           class="libraryfile">libudev</filename> library is installed.  The
           library needs to be in <filename class="directory">/lib</filename>
@@ -91,7 +83,7 @@ Udev はそれらを認識できません。
 </para>
 @z
 
-@x
+@x --libexecdir=/lib/udev
           <para>This controls where Udev-internal rules and helper programs
           are installed.</para>
 @y
@@ -100,30 +92,42 @@ Udev はそれらを認識できません。
 </para>
 @z
 
-@x
-          <para>This option installs the Udev documentation in the
-          proper location with the naming convention consistent with
-          other packages.</para>
-@y
-<para>
-このオプションは、Udev のドキュメントをインストールします。
-インストールにあたっては、他のパッケージとの整合を保った名称が用いられます。
-</para>
-@z
-
-@x
+@x --disable-extras
           <para>This option prevents Udev from installing helper programs and
           other extras which require more external libraries.  These libraries
           are not part of the base LFS system.  See the Udev
           <filename>README</filename> file for more information.</para>
 @y
-<para>
-このオプションは、特定のヘルパープログラムや他のプログラム類 (extras)
-をインストールしないようにします。
-他のプログラム類は、さらに外部ライブラリを必要としており、それらは LFS システムには含まれていません。
-詳しくは Udev が提供する <filename>README</filename> ファイルを参照してください。
-</para>
+          <para>This option prevents Udev from installing helper programs and
+          other extras which require more external libraries.  These libraries
+          are not part of the base LFS system.  See the Udev
+          <filename>README</filename> file for more information.</para>
 @z
+
+% @x
+%           <para>This option installs the Udev documentation in the
+%           proper location with the naming convention consistent with
+%           other packages.</para>
+% @y
+% <para>
+% このオプションは、Udev のドキュメントをインストールします。
+% インストールにあたっては、他のパッケージとの整合を保った名称が用いられます。
+% </para>
+% @z
+% 
+% @x
+%           <para>This option prevents Udev from installing helper programs and
+%           other extras which require more external libraries.  These libraries
+%           are not part of the base LFS system.  See the Udev
+%           <filename>README</filename> file for more information.</para>
+% @y
+% <para>
+% このオプションは、特定のヘルパープログラムや他のプログラム類 (extras)
+% をインストールしないようにします。
+% 他のプログラム類は、さらに外部ライブラリを必要としており、それらは LFS システムには含まれていません。
+% 詳しくは Udev が提供する <filename>README</filename> ファイルを参照してください。
+% </para>
+% @z
 
 @x
           <para>This option prevents Udev's instrospection feature, which

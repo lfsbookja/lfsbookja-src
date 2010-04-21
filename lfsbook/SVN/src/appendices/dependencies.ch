@@ -443,11 +443,11 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Gcc
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, GMP, Grep, M4, Make, MPFR, Patch, Perl, Sed, Tar,
+         Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed, Tar,
          and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
-         Gettext, Glibc, GMP, Grep, M4, Make, MPFR, Patch, Perl, Sed, Tar,
+         Gettext, Glibc, GMP, Grep, M4, Make, MPC, MPFR, Patch, Perl, Sed, Tar,
          Texinfo</seg>
 @z
 @x
@@ -927,6 +927,30 @@ Typo ですが日本語訳には影響ありません。
           <seg>None</seg>
 @y
           <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x MPC
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
+         Make, MPFR, Sed and Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep, GMP,
+         Make, MPFR, Sed, Texinfo</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>GCC</seg>
+@y
+          <seg>GCC</seg>
 @z
 @x
           <seg>None</seg>
