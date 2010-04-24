@@ -366,13 +366,13 @@ server using the run-time configuration directives.</para>
 @z
 
 @x
-    <para><option>--with-dbm=db45 --with-berkeley-db</option>: Use these
+    <para><option>--with-dbm=db4 --with-berkeley-db</option>: Use these
     parameters if you require <application>Berkeley DB</application> support in
     the bundled version of <application>APR-util</application> (required for
     <application>Berkeley DB</application> back-end support in
     <application>Subversion</application>).</para>
 @y
-    <para><option>--with-dbm=db45 --with-berkeley-db</option>: Use these
+    <para><option>--with-dbm=db4 --with-berkeley-db</option>: Use these
     parameters if you require <application>Berkeley DB</application> support in
     the bundled version of <application>APR-util</application> (required for
     <application>Berkeley DB</application> back-end support in

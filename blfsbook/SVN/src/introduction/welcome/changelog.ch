@@ -56,3 +56,71 @@ who wrote what.
     <title>変更履歴</title>
 @z
 
+@x
+      <para>April 13th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Added new package, Device-mapper-1.02.45.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/04/13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ Device-mapper-1.02.45 追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>April 12th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Magnifier-0.15.9.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/04/12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GNOME Magnifier-0.15.9 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>April 11th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Removed GNOME Keyring Manager-2.18.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Removed GAIL-1.18.0 and minor dependency
+          ammendments to gtkhtml, webkitgtk, and libgtkhtml.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Removed EEL-2.18.3.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to AT SPI-1.28.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/04/11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GNOME Keyring Manager-2.18.0 の削除。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GAIL-1.18.0 の削除。
+          これに伴い gtkhtml, webkitgtk, libgtkhtml での依存関係の修正。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - EEL-2.18.3 の削除。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - AT SPI-1.28.1 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+

@@ -92,11 +92,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gail"/> and
+    <para role="optional"><!--<xref linkend="gail"/> and
+      Gail no longer required since libgailutil is now part of GTK+.-->
     <xref linkend="gnome-vfs"/> (only used in the test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gail"/>,
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional"><!--<xref linkend="gail"/> and
+      Gail no longer required since libgailutil is now part of GTK+.-->
     <xref linkend="gnome-vfs"/> (テストスイート実行時のみ必要)</para>
 @z
 
@@ -147,27 +149,27 @@
 </para>
 @z
 
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&j-CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--disable-accessibility</parameter>: This forces the
-    package to build without linking to the
-    <filename class='libraryfile'>libgailutil</filename> accessibility
-    library. Remove this switch if you have <application>GAIL</application>
-    installed.</para>
-@y
-<para>
-<parameter>--disable-accessibility</parameter>:
-このオプションは <filename class='libraryfile'>libgailutil</filename>
-ライブラリをリンクせずにビルドすることを指示します。
-<application>GAIL</application>
-をインストールしている場合は、このオプションを指定しないでください。
-</para>
-@z
+% @x
+%     <title>Command Explanations</title>
+% @y
+%     <title>&j-CommandExplanations;</title>
+% @z
+% 
+% @x
+%     <para><parameter>--disable-accessibility</parameter>: This forces the
+%     package to build without linking to the
+%     <filename class='libraryfile'>libgailutil</filename> accessibility
+%     library. Remove this switch if you have <application>GAIL</application>
+%     installed.</para>
+% @y
+% <para>
+% <parameter>--disable-accessibility</parameter>:
+% このオプションは <filename class='libraryfile'>libgailutil</filename>
+% ライブラリをリンクせずにビルドすることを指示します。
+% <application>GAIL</application>
+% をインストールしている場合は、このオプションを指定しないでください。
+% </para>
+% @z
 
 @x
     <title>Contents</title>

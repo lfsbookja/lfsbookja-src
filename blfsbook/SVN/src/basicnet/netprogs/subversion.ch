@@ -102,20 +102,16 @@ is covered at <xref linkend="svnserver"/>.</para>
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="apache"/> (for the
+    <para role="required"><xref linkend="sqlite"/>, and
+    <xref linkend="apache"/> (for the
     <application>APR</application> only) or
-    <ulink url="http://apr.apache.org/">Apache Portable Runtime</ulink> or
-    <ulink url="http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=260&amp;expandFolder=74">
-    Subversion dependencies</ulink> (see the <filename>INSTALL</filename> file
-    for information on how to utilize this package)</para>
+    <ulink url="http://apr.apache.org/">Apache Portable Runtime</ulink></para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="apache"/> (for the
+    <para role="required"><xref linkend="sqlite"/>, and
+    <xref linkend="apache"/> (for the
     <application>APR</application> only) or
-    <ulink url="http://apr.apache.org/">Apache Portable Runtime</ulink> or
-    <ulink url="http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=260&amp;expandFolder=74">
-    Subversion dependencies</ulink> (see the <filename>INSTALL</filename> file
-    for information on how to utilize this package)</para>
+    <ulink url="http://apr.apache.org/">Apache Portable Runtime</ulink></para>
 @z
 
 @x

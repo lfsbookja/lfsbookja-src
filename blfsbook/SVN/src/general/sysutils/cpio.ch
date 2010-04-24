@@ -71,20 +71,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required Patch: <ulink
-        url="&patch-root;/cpio-&cpio-version;-gcc43_inline-1.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink
-        url="&patch-root;/cpio-&cpio-version;-gcc43_inline-1.patch"/></para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/cpio"/></para>
 @y
@@ -109,14 +95,12 @@
 
 @x
     <para>If you have <xref linkend="tetex"/> installed and wish to create
-    alternate forms of the documentation, issue the any or all of the following
+    PDF or Postscript documentation, issue one or both of the following
     commands:</para>
 @y
-<para>
-If you have <xref linkend="tetex"/> installed and wish to create
-alternate forms of the documentation, issue the any or all of the following
-commands:
-</para>
+    <para>If you have <xref linkend="tetex"/> installed and wish to create
+    PDF or Postscript documentation, issue one or both of the following
+    commands:</para>
 @z
 
 @x
@@ -136,16 +120,13 @@ commands:
 @z
 
 @x
-    <para>If you built any of the alternate forms of documentation, install it
+    <para>If you built PDF or Postscript documentation, install it
     by issuing the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-
-If you built any of the alternate forms of documentation, install it
-by issuing the following commands as the
-<systemitem class="username">root</systemitem> user:
-</para>
+    <para>If you built PDF or Postscript documentation, install it
+    by issuing the following commands as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -154,16 +135,16 @@ by issuing the following commands as the
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><parameter>CPIO_MT_PROG=mt</parameter>: This parameter forces the
-    building and installation of the <command>mt</command> program.</para>
-@y
-<para>
-<parameter>CPIO_MT_PROG=mt</parameter>:
-このパラメータは <command>mt</command>
-プログラムをビルドしインストールすることを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>CPIO_MT_PROG=mt</parameter>: This parameter forces the
+%     building and installation of the <command>mt</command> program.</para>
+% @y
+% <para>
+% <parameter>CPIO_MT_PROG=mt</parameter>:
+% このパラメータは <command>mt</command>
+% プログラムをビルドしインストールすることを指示します。
+% </para>
+% @z
 
 @x
     <para><parameter>--bindir=/bin</parameter>: This parameter installs
@@ -224,11 +205,11 @@ installed by the <application>Tar</application> package in LFS.
 @x
         <seg>cpio and mt</seg>
         <seg>None</seg>
-        <seg>None</seg>
+        <seg>/usr/share/doc/cpio-&cpio-version;</seg>
 @y
-        <seg>cpio, mt</seg>
+        <seg>cpio and mt</seg>
         <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>/usr/share/doc/cpio-&cpio-version;</seg>
 @z
 
 @x

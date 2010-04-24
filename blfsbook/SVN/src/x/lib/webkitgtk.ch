@@ -80,9 +80,9 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="gail"/>,
     <xref linkend="gperf"/>,
     <xref linkend="gst-plugins-base"/>,
+    <xref linkend="gtk2"/>,
     <xref linkend="icu"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="libsoup"/>,
@@ -93,9 +93,9 @@
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="gail"/>,
     <xref linkend="gperf"/>,
     <xref linkend="gst-plugins-base"/>,
+    <xref linkend="gtk2"/>,
     <xref linkend="icu"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="libsoup"/>,
@@ -107,12 +107,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="curl"/> and
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink></para>
+    <para role="optional"><xref linkend="curl"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>, and
+    <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="curl"/> and
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink></para>
+    <para role="optional"><xref linkend="curl"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>, and
+    <xref linkend="gtk-doc"/></para>
 @z
 
 @x

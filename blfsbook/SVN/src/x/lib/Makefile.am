@@ -2,12 +2,14 @@ BOOKdir = $(top_builddir)/@bookdir@/x/lib
 EXTRA_DIST = atk.ch cairo.ch freeglut.ch goffice.ch gtk+.ch gtk+2.ch \
 	hicolor-icon-theme.ch lesstif.ch lib.ch libwnck.ch libxklavier.ch \
 	mesalib.ch pango.ch qt.ch qt4.ch shared-mime-info.ch \
-	startup-notification.ch xulrunner.ch webkitgtk.ch
+	startup-notification.ch xulrunner.ch webkitgtk.ch cairomm.ch \
+	pangomm.ch gtkmm.ch
 srcdir = @srcdir@
 srcs = atk.xml cairo.xml freeglut.xml goffice.xml gtk+.xml gtk+2.xml \
 	hicolor-icon-theme.xml lesstif.xml lib.xml libwnck.xml libxklavier.xml \
 	mesalib.xml pango.xml qt.xml qt4.xml shared-mime-info.xml \
-	startup-notification.xml xulrunner.xml webkitgtk.xml
+	startup-notification.xml xulrunner.xml webkitgtk.xml cairomm.xml \
+	pangomm.xml gtkmm.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -36,3 +38,7 @@ shared-mime-info.xml: $(BOOKdir)/$@ $(srcdir)/shared-mime-info.ch
 startup-notification.xml: $(BOOKdir)/$@ $(srcdir)/startup-notification.ch
 xulrunner.xml: $(BOOKdir)/$@ $(srcdir)/xulrunner.ch
 webkitgtk.xml: $(BOOKdir)/$@ $(srcdir)/webkitgtk.ch
+cairomm.xml: $(BOOKdir)/$@ $(srcdir)/cairomm.ch
+pangomm.xml: $(BOOKdir)/$@ $(srcdir)/pangomm.ch
+gtkmm.xml: $(BOOKdir)/$@ $(srcdir)/gtkmm.ch
+

@@ -24,7 +24,7 @@
     applications, and forms the major part of the <application>Mozilla</application>
     codebase.  In particular, it provides the gecko engine together with pkgconfig
     files so that applications such as <application>Epiphany</application> and
-    <application>Yelp</application> can use it.</para>
+    <application>Yelp</application> can find and use it.</para>
 @y
 <para>
 <application>Xulrunner</application>
@@ -50,29 +50,29 @@
 
 @x
         <para>Download (FTP): <ulink url="&xulrunner-download-ftp;"/></para>
-	<tip><para>When a new version of <application>firefox</application> is
+	<tip><para>When a new version of <application>Firefox</application> is
 	released, sometimes a corresponding new version of
-	<application>xulrunner</application> appears at the same time. At other
+	<application>Xulrunner</application> appears at the same time. At other
 	times it appears several days later or not at all. So far in the
-	<application>firefox-3.x</application> series, every new release has
+	<application>Firefox-3.x</application> series, every new release has
 	created xulrunner libraries with a corresponding new version. Whenever
-	a separate xulrunner tarball has been released, it has been bitwise
-	identical to the corresponding firefox tarball. So, we will use the
-	<application>firefox</application> tarball to save downloading this
+	a separate Xulrunner tarball has been released, it has been bitwise
+	identical to the corresponding Firefox tarball. Use the
+	<application>Firefox</application> tarball to save downloading this
 	large package twice.</para></tip>
 @y
         <para>ダウンロード (FTP): <ulink url="&xulrunner-download-ftp;"/></para>
 <tip>
 <para>
-<application>firefox</application> の新バージョンがリリースされると、対応する
-<application>xulrunner</application> も同時にリリースされることがあります。
+<application>Firefox</application> の新バージョンがリリースされると、対応する
+<application>Xulrunner</application> も同時にリリースされることがあります。
 あるいは数日後にリリースされることもあり、リリースされないこともあります。
-<application>firefox-3.x</application> 系までであれば、新バージョンのリリースに合わせて
-xulrunner ライブラリも生成できるものとなっています。
-xulrunner の tarball は個別にリリースされますが、これに対応する
-firefox の tarball と全く変わりがありません。
-したがってここでは <application>firefox</application>
-の tarball を利用することにします。
+<application>Firefox-3.x</application> 系までであれば、新バージョンのリリースに合わせて
+Xulrunner ライブラリも生成できるものとなっています。
+Xulrunner の tarball は個別にリリースされますが、これに対応する
+Firefox の tarball と全く変わりがありません。
+したがってここでは <application>Firefox</application>
+の tarball を利用してください。
 tarball が大きなサイズであるため、同じものを二度もダウンロードするようなことは避けるためです。
 </para>
 </tip>
@@ -183,30 +183,31 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     (for gnome integration),
     <xref linkend="lcms"/>,
     <xref linkend="libpng"/> (patched for apng support),
+    <!-- Redundant as NSS requires this
     <xref linkend="nspr"/> (recommended if you build any other Mozilla.org
-    packages),
+    packages), -->
     <xref linkend="nss"/> (recommended if you build any other Mozilla.org
     packages),
-    <xref linkend="startup-notification"/>.
+    <xref linkend="startup-notification"/>,
     <xref linkend="unzip"/>,
     <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing the
     jemalloc code), and
     <xref linkend="wget"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <xref linkend="doxygen"/>,
     <xref linkend="curl"/> (crash-reporter 構築時のみ必要),
-    <xref linkend="gnome-vfs"/>, <xref linkend="libgnomeui"/>
+    <xref linkend="gnome-vfs"/> と <xref linkend="libgnomeui"/>
     (for gnome integration),
     <xref linkend="lcms"/>,
     <xref linkend="libpng"/> (patched for apng support),
-    <xref linkend="nspr"/> (Mozilla.org の数多くのパッケージをビルドする場合には推奨),
+    <!-- Redundant as NSS requires this
+    <xref linkend="nspr"/> (Mozilla.org の数多くのパッケージをビルドする場合には推奨), -->
     <xref linkend="nss"/> (Mozilla.org の数多くのパッケージをビルドする場合には推奨),
-    <xref linkend="startup-notification"/>.
+    <xref linkend="startup-notification"/>,
     <xref linkend="unzip"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink>
-    (jemalloc コードのテスト時のみ必要),
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink> (jemalloc コードのテスト時のみ必要),
     <xref linkend="wget"/></para>
 @z
 
@@ -235,9 +236,10 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     download the file instead of creating it by typing or cut-and-pasting, you
     can find it at
     <ulink url="&files-anduin;/xulrunner-&xulrunner-version;-mozconfig"/>
-    (the file must be installed in the root of the source tree
-    <filename class='directory'>mozilla</filename> directory, and named
-    <filename>.mozconfig</filename>).</para>
+    (the file must be installed in the root of the source tree,
+    <!-- directory name changes depending on version of Xulrunner
+    <filename class='directory'>mozilla</filename> directory,--> and named
+    <filename>.mozconfig</filename> or <filename>mozconfig</filename>).</para>
 @y
 <para>
 <application>Xulrunner</application> の設定は <filename>.mozconfig</filename>
@@ -250,9 +252,8 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 この設定ファイルをタイプ入力したり貼り付けたりするのではなく
 <ulink url="&files-anduin;/xulrunner-&xulrunner-version;-mozconfig"/>
 からダウンロードすることもできます。
-(設定ファイルは、ソースディレクトリ配下の <filename class='directory'>mozilla</filename>
-ディレクトリに配置し、ファイル名は <filename>.mozconfig</filename>
-としてください。)
+(設定ファイルは、ソースディレクトリ配下のルートディレクトリに配置し、ファイル名は <filename>.mozconfig</filename>
+または <filename>mozconfig</filename> としてください。)
 </para>
 @z
 
@@ -268,12 +269,12 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @z
 
 @x
-    <para>Compile <application>Xulrunner</application> by issuing the
+    <para>Install <application>Xulrunner</application> by issuing the
     following commands:</para>
 @y
 <para>
 <application>Xulrunner</application>
-をコンパイルするために以下を実行します。
+をビルドするために以下を実行します。
 </para>
 @z
 
@@ -286,12 +287,11 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user,
-    install the package:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
 <systemitem class="username">root</systemitem>
-ユーザーになってパッケージをインストールします。
+ユーザーになって以下を実行します。
 </para>
 @z
 
@@ -315,15 +315,17 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @z
 
 @x
-    <para><command>echo "Requires: nspr" >>xulrunner/installer/libxul-embedding.pc.in</command>
-    : If you try to build <application>Yelp</application> without this, the
-    prtypes header from nspr will not be found.  It is arguable whose error this
+    <para><command>echo "Requires: nspr"
+    >>xulrunner/installer/libxul-embedding.pc.in</command>: If you try to build
+    <application>Yelp</application> without this, the
+    prtypes header from NSPR will not be found.  It is arguable whose error this
     is (the code presumably works on earlier geckos), but this fix is unlikely
     to cause any damage in other packages.</para>
 @y
-    <para><command>echo "Requires: nspr" >>xulrunner/installer/libxul-embedding.pc.in</command>
-    : If you try to build <application>Yelp</application> without this, the
-    prtypes header from nspr will not be found.  It is arguable whose error this
+    <para><command>echo "Requires: nspr"
+    >>xulrunner/installer/libxul-embedding.pc.in</command>: If you try to build
+    <application>Yelp</application> without this, the
+    prtypes header from NSPR will not be found.  It is arguable whose error this
     is (the code presumably works on earlier geckos), but this fix is unlikely
     to cause any damage in other packages.</para>
 @z
@@ -351,42 +353,45 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @z
 
 @x
-    <para><command>for DL in ...</command>: The nspr and nss libraries shipped
-    with this package are installed into /usr/lib/xulrunner-&xulrunner-version;
+    <para><command>for DL in ...</command>: The NSPR and NSS libraries shipped
+    with this package are installed into
+    <filename class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename>
     which means they will not be found at runtime.  By using symbolic links from
-    <filename class="directory">/usr/lib</filename> they will be found and we can
-    easily change the links to point to a newer version when we upgrade.</para>
+    <filename class="directory">/usr/lib</filename> the libraries will be found
+    and the links can be easily changed to point to a newer version during an
+    upgrade.</para>
 @y
-    <para><command>for DL in ...</command>: The nspr and nss libraries shipped
-    with this package are installed into /usr/lib/xulrunner-&xulrunner-version;
+    <para><command>for DL in ...</command>: The NSPR and NSS libraries shipped
+    with this package are installed into
+    <filename class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename>
     which means they will not be found at runtime.  By using symbolic links from
-    <filename class="directory">/usr/lib</filename> they will be found and we can
-    easily change the links to point to a newer version when we upgrade.</para>
+    <filename class="directory">/usr/lib</filename> the libraries will be found
+    and the links can be easily changed to point to a newer version during an
+    upgrade.</para>
 @z
 
 @x
     <para><command>ln -sv /usr/lib/xulrunner-&xulrunner-version;/plugins
-    /usr/lib/mozilla/plugins</command>: Some packages will install browser plugins
-    into /usr/lib/mozilla/plugins. By creating this as a symlink to the basic
-    plugins we keep them all together.</para>
+    /usr/lib/mozilla</command>: Some packages will install browser plugins
+    into <filename class='directory'>/usr/lib/mozilla/plugins</filename>.
+    Creating this as a symlink to the <application>Xulrunner</application>
+    plugins keeps additional plugins in a common directory.</para>
 @y
     <para><command>ln -sv /usr/lib/xulrunner-&xulrunner-version;/plugins
-    /usr/lib/mozilla/plugins</command>: Some packages will install browser plugins
-    into /usr/lib/mozilla/plugins. By creating this as a symlink to the basic
-    plugins we keep them all together.</para>
+    /usr/lib/mozilla</command>: Some packages will install browser plugins
+    into <filename class='directory'>/usr/lib/mozilla/plugins</filename>.
+    Creating this as a symlink to the <application>Xulrunner</application>
+    plugins keeps additional plugins in a common directory.</para>
 @z
 
 @x
-    <para>When you upgrade xulrunner, remember to update the symlinks and to
-    copy any additional plugins compiled agaisnt this series of xulrunner to the
-    new plugin directory.</para>
+     <para>When you upgrade Xulrunner, remember to update the symlinks and to
+     copy any additional plugins compiled against this series of Xulrunner to the
+     new plugin directory.</para>
 @y
-<para>
-
-When you upgrade xulrunner, remember to update the symlinks and to
-copy any additional plugins compiled agaisnt this series of xulrunner to the
-new plugin directory.
-</para>
+     <para>When you upgrade Xulrunner, remember to update the symlinks and to
+     copy any additional plugins compiled against this series of Xulrunner to the
+     new plugin directory.</para>
 @z
 
 @x
