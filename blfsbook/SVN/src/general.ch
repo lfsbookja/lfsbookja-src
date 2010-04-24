@@ -14,6 +14,12 @@
 @z
 
 @x
+<!ENTITY releasedate  "April &day;th, &year;">
+@y
+<!ENTITY releasedate "&year;/&month;/&day;">
+@z
+
+@x
 <!ENTITY lfs-domainname       "linuxfromscratch.org">
 @y
 <!ENTITY lfs-domainname       "linuxfromscratch.org">

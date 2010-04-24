@@ -2,12 +2,14 @@ BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
 EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	lzma-utils.ch mc.ch pciutils.ch pkgconfig.ch sysstat.ch sysutils.ch \
 	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
-	DeviceKit.ch DeviceKit-power.ch udev.ch Device-mapper.ch
+	DeviceKit.ch DeviceKit-power.ch udev.ch Device-mapper.ch \
+	sg3_utils.ch parted.ch
 srcdir = @srcdir@
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	lzma-utils.xml mc.xml pciutils.xml pkgconfig.xml sysstat.xml sysutils.xml \
 	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
-	DeviceKit.xml DeviceKit-power.xml udev.xml Device-mapper.xml
+	DeviceKit.xml DeviceKit-power.xml udev.xml Device-mapper.xml \
+	sg3_utils.xml parted.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -39,4 +41,6 @@ DeviceKit.xml: $(BOOKdir)/$@ $(srcdir)/DeviceKit.ch
 DeviceKit-power.xml: $(BOOKdir)/$@ $(srcdir)/DeviceKit-power.ch
 udev.xml: $(BOOKdir)/$@ $(srcdir)/udev.ch
 Device-mapper.xml: $(BOOKdir)/$@ $(srcdir)/Device-mapper.ch
+sg3_utils.xml: $(BOOKdir)/$@ $(srcdir)/sg3_utils.ch
+parted.xml: $(BOOKdir)/$@ $(srcdir)/parted.ch
 

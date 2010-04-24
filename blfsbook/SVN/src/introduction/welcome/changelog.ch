@@ -57,6 +57,34 @@ who wrote what.
 @z
 
 @x
+      <para>April 24th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Added new package, libatasmart-0.17.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, sg3_utils-1.29.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, Parted-2.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/04/24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ libatasmart-0.17 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ sg3_utils-1.29 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ Parted-2.2 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>April 13th, 2010</para>
       <itemizedlist>
         <listitem>
