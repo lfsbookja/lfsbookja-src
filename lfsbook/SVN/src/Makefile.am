@@ -13,6 +13,7 @@ BASEDIR=../svn.ja
 ROOT_ID =
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
+NOCHUNKS_OUTPUT = ../LFS-BOOK.html
 
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
@@ -76,6 +77,22 @@ lfs: maketar validxml profile-html wget-list
 	  ${SHELL} $(BOOKdir)/obfuscate.sh $$filename; \
 	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
 	done;
+
+@MAINT@nochunks: maketar validxml profile-html wget-list
+@MAINT@	@echo "Generating non chunked XHTML file..."
+@MAINT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
+@MAINT@	  --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
+@MAINT@	  stylesheets/lfs-nochunks.xsl $(RENDERTMP)/lfs-html.xml
+
+@MAINT@	@echo "Running Tidy..."
+@MAINT@	$(TIDY) -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || true
+@MAINT@	@echo "Running obfuscate.sh..."
+@MAINT@	${SHELL} $(BOOKdir)/obfuscate.sh $(BASEDIR)/$(NOCHUNKS_OUTPUT)
+@MAINT@	sed -i -e "s@text/html@application/xhtml+xml@g"  \
+@MAINT@	  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
+
+@MAINT@txt: nochunks
+@MAINT@	cat ../LFS-BOOK.html | LANG=ja w3m -dump -T text/html -cols 72 -s > ../LFS-BOOK.txt
 
 tmpdir: $(ALLXML)
 	@echo "Creating and cleaning $(RENDERTMP)"
