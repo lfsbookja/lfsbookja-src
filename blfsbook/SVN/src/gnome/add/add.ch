@@ -25,10 +25,9 @@
   install them on an as needed or as desired basis.</para>
 @y
 <para>
-
-These packages are modular and add desktop applications and assorted
-utilities to the <application>GNOME</application> environment. Feel free to
-install them on an as needed or as desired basis.
+以下に示すパッケージは <application>GNOME</application>
+環境に対しての、モジュール化された追加のデスクトップアプリケーションや種々のユーティリティです。
+これらのパッケージの導入は必要に応じて行ってください。
 </para>
 @z
 

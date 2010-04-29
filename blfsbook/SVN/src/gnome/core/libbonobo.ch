@@ -84,29 +84,29 @@ This is a component and compound document system for
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="ORBit2"/>,
+    <para role="required"><xref linkend="dbus-glib"/>,
+    <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
+    <xref linkend="ORBit2"/>,
     <xref linkend="popt"/>,
-    <xref linkend="perl-xml-parser"/>, and
-    <xref linkend="dbus-glib"/></para>
+    <xref linkend="perl-xml-parser"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="ORBit2"/>,
+    <para role="required"><xref linkend="dbus-glib"/>,
+    <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
+    <xref linkend="ORBit2"/>,
     <xref linkend="popt"/>,
-    <xref linkend="perl-xml-parser"/>, and
-    <xref linkend="dbus-glib"/></para>
+    <xref linkend="perl-xml-parser"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="intltool"/>, and
+    <para role="optional"><xref linkend="x-window-system"/> and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="intltool"/>, and
     <xref linkend="gtk-doc"/></para>
 @z
 

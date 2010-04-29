@@ -57,6 +57,60 @@ who wrote what.
 @z
 
 @x
+      <para>April 29th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Speech-0.4.25.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/04/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GNOME Speech-0.4.25 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>April 26th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Added new package, gnome-disk-utility-2.28.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/04/26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ gnome-disk-utility-2.28.1 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>April 25th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Added new package, DeviceKit-disks-009.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to Gutenprint-5.2.5.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/04/25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ DeviceKit-disks-009 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Gutenprint-5.2.5 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>April 24th, 2010</para>
       <itemizedlist>
         <listitem>
