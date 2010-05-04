@@ -34,6 +34,16 @@
 @z
 
 @x
+    <para>Also, fix a bug that causes a buffer overflow when creating a new
+    tar file.  This fix is needed when building with gcc-4.5 and later.</para>
+@y
+<para>
+新たな tar ファイルを生成する際に、バッファオーバーフローが発生するバグを修正します。
+この修正は gcc-4.5 以上においてパッケージをビルドする際に必要となります。
+</para>
+@z
+
+@x
     <para>Prepare Tar for compilation:</para>
 @y
     <para>Tar をコンパイルするための準備をします。</para>

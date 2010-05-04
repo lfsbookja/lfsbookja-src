@@ -74,7 +74,7 @@ LFS は極小システムを意味するわけではありません。
         <para>This package satisfies an LSB core requirement to provide
         a Bourne Shell interface to the system.  It was chosen over
         other shell packages because of its common usage and extensive
-        capabilities beyond basic shell functions. </para>
+        capabilities beyond basic shell functions.</para>
 @y
 <para>
 このパッケージは、システムとのインターフェースを実現する
@@ -85,17 +85,19 @@ Bourne シェルを提供し、LSB コア要件を満たします。
 
 @x Binutils
         <para>This package contains a linker, an assembler, and other 
-        tools for handling object files.</para>
+        tools for handling object files. The programs in this package are
+        needed to compile most of the packages in an LFS system and beyond.</para>
 @y
 <para>
 このパッケージは、リンカ、アセンブラのような、オブジェクトファイルを取り扱うプログラムを提供します。
+各プログラムは LFS における他のパッケージをコンパイルするために必要となり、さらに LFS
+にて示される以外のパッケージでも必要となります。
 </para>
 @z
 
 @x Bison
         <para>This package contains the GNU version of yacc (Yet Another
-        Compiler Compiler) needed to build several other LFS programs.
-        </para>
+        Compiler Compiler) needed to build several other LFS programs.</para>
 @y
 <para>
 このパッケージは yacc (Yet Another Compiler Compiler)
@@ -116,10 +118,14 @@ LFS において利用するプログラムの中に、これを必要とする�
 
 @x Coreutils
         <para>This package contains a number of essential programs for viewing 
-        and manipulating files and directories. </para>
+        and manipulating files and directories. These programs are needed for
+        command line file management, and are necessary for the installation
+        procedures of every package in LFS.</para>
 @y
 <para>
-このパッケージは、ファイルやディレクトリを参照あるいは操作するための数多くの基本的なプログラムを提供します。
+このパッケージは、ファイルやディレクトリを参照あるいは操作するための基本的なプログラムを数多く提供します。
+各プログラムはコマンドラインからの実行によりファイル制御を行うために必要です。
+また LFS におけるパッケージのインストールに必要となります。
 </para>
 @z
 
@@ -135,10 +141,13 @@ LFS において利用するプログラムの中に、これを必要とする�
 
 @x Diffutils
         <para>This package contains programs that show the differences 
-        between files or directories. </para>
+        between files or directories. These programs can be used to create
+        patches, and are also used in many packages' build procedures.</para>
 @y
 <para>
 このパッケージは、ファイルやディレクトリ間の差異を表示するプログラムを提供します。
+各プログラムはパッチを生成するために利用されます。
+したがってパッケージのビルド時に利用されることが多々あります。
 </para>
 @z
 
@@ -168,18 +177,21 @@ LFS において利用するプログラムの中に、これを必要とする�
 
 @x File
         <para>This package contains a utility for determining the type of a 
-        given file or files.</para>
+        given file or files. A few packages need it to build.</para>
 @y
 <para>
 このパッケージは、指定されたファイルの種類を判別するユーティリティプログラムを提供します。
+他のパッケージにおいて、ビルド時にこれを必要とするものもあります。
 </para>
 @z
 
 @x Findutils
-        <para>This package contains programs to find files in a file system.</para>
+        <para>This package contains programs to find files in a file system.
+        It is used in many packages' build scripts.</para>
 @y
 <para>
 このパッケージは、ファイルシステム上のファイルを検索するプログラムを提供します。
+これは他のパッケージにて、ビルド時のスクリプトにおいて利用されています。
 </para>
 @z
 
@@ -187,7 +199,7 @@ LFS において利用するプログラムの中に、これを必要とする�
         <para>This package contains a utility for generating programs that 
         recognize patterns in text.  It is the GNU version of the lex 
         (lexical analyzer) program.  It is required to build several 
-        LFS packages. </para>
+        LFS packages.</para>
 @y
 <para>
 このパッケージは、テキスト内の特定パターンの認識プログラムを生成するユーティリティを提供します。
@@ -198,11 +210,13 @@ LFS 内の他のパッケージの中にこれを必要としているものが�
 
 @x Gawk
         <para>This package contains programs for manipulating text files.
-        It is the GNU version of awk (Aho-Weinberg-Kernighan). </para>
+        It is the GNU version of awk (Aho-Weinberg-Kernighan). It is used in
+        many other packages' build scripts.</para>
 @y
 <para>
 このパッケージはテキストファイルを操作するプログラムを提供します。
-プログラムは GNU 版の awk (Aho-Weinberg-Kernighan) です。	
+プログラムは GNU 版の awk (Aho-Weinberg-Kernighan) です。
+これは他のパッケージにて、ビルド時のスクリプトにおいて利用されています。
 </para>
 @z
 
@@ -219,8 +233,7 @@ C コンパイラと C++ コンパイラを含みます。また LFS ではビ�
 
 @x GDBM
         <para>This package contains the GNU Database Manager library.  It
-        is used by one other LFS package, Man-DB.
-        </para>
+        is used by one other LFS package, Man-DB.</para>
 @y
 <para>
 このパッケージは GNU データベースマネージャライブラリを提供します。
@@ -230,8 +243,7 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
 
 @x Gettext
         <para>This package contains utilities and libraries for 
-        internationalization and localization of numerous packages.
-        </para>
+        internationalization and localization of numerous packages.</para>
 @y
 <para>
 このパッケージは、各種パッケージが国際化を行うために利用するユーティリティやライブラリを提供します。
@@ -240,7 +252,7 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
 
 @x Glibc
         <para>This package contains the main C library.  Linux programs would
-        not run without it. </para>
+        not run without it.</para>
 @y
 <para>
 このパッケージは C ライブラリです。Linux 上のプログラムはこれがなければ動作させることができません。
@@ -259,18 +271,18 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
 @z
 
 @x Grep
-        <para>This package contains programs for searching through files.
-        </para>
+        <para>This package contains programs for searching through files. These
+        programs are used by most packages' build scripts.</para>
 @y
 <para>
 このパッケージはファイル内を検索するプログラムを提供します。
+これは他のパッケージにて、ビルド時のスクリプトにおいて利用されています。
 </para>
 @z
 
 @x Groff
         <para>This package contains programs for processing and formatting text.
-        One important function of these programs is to format man pages.
-        </para>
+        One important function of these programs is to format man pages.</para>
 @y
 <para>
 このパッケージは、テキストを処理し整形するプログラムをいくつか提供します。
@@ -291,17 +303,18 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
 
 @x Gzip
         <para>This package contains programs for compressing and 
-        decompressing files. </para>
+        decompressing files. It is needed to decompress many packages in LFS
+        and beyond.</para>
 @y
 <para>
 このパッケージは、ファイルの圧縮と伸張 (解凍) を行うプログラムを提供します。
+LFS において、パッケージを伸張 (解凍) するために必要です。
 </para>
 @z
 
 @x Iana-etc
         <para>This package provides data for network services and protocols.
-        It is needed to enable proper networking capabilities.
-        </para>
+        It is needed to enable proper networking capabilities.</para>
 @y
 <para>
 このパッケージは、ネットワークサービスやプロトコルに関するデータを提供します。
@@ -311,8 +324,7 @@ LFS が扱う Man-DB パッケージがこれを利用しています。
 
 @x Inetutils
         <para>This package contains programs for basic network 
-        administration.  
-        </para>
+        administration.</para>
 @y
 <para>
 このパッケージは、ネットワーク管理を行う基本的なプログラム類を提供します。
@@ -332,21 +344,23 @@ IPv6 への対応があることから、よく使われてきたネットワー
 @z
 
 @x Kbd
-        <para>This package contains key-table files and keyboard utilities
-        for non-US keyboards. </para>
+        <para>This package contains key-table files, keyboard utilities
+        for non-US keyboards, and a number of console fonts.</para>
 @y
 <para>
 このパッケージは、米国以外のキーボードに対してのキーテーブルファイルやキーボードユーティリティを提供します。
+また端末上のフォントも提供します。
 </para>
 @z
 
 @x Less
         <para>This package contains a very nice text file viewer that
-        allows scrolling up or down when viewing a file.
-        </para>
+        allows scrolling up or down when viewing a file. It is also used by
+        Man-DB for viewing manpages.</para>
 @y
 <para>
 このパッケージはテキストファイルを表示する機能を提供するものであり、表示中にスクロールを可能とします。
+また Man-DB において man ページを表示する際にも利用されます。
 </para>
 @z
 
@@ -354,8 +368,7 @@ IPv6 への対応があることから、よく使われてきたネットワー
         <para>This package contains the GNU generic library support 
         script. It wraps the complexity of using shared libraries in a 
         consistent, portable interface.  It is needed by the test
-        suites in other LFS packages.
-        </para>
+        suites in other LFS packages.</para>
 @y
 <para>
 このパッケージは GNU の汎用的なライブラリに対してのサポートスクリプトを提供します。
@@ -366,8 +379,7 @@ LFS パッケージのテストスイートにおいて必要となります。
 
 @x Linux Kernel
         <para>This package is the Operating System.  It is the Linux in
-        the GNU/Linux environment.
-        </para>
+        the GNU/Linux environment.</para>
 @y
 <para>
 このパッケージは "オペレーティングシステム" であり
@@ -377,8 +389,7 @@ GNU/Linux 環境における Linux です。
 
 @x M4
         <para>This package contains a general text macro processor useful
-        as a build tool for other programs. 
-        </para>
+        as a build tool for other programs.</para>
 @y
 <para>
 このパッケージは汎用的なテキストマクロプロセッサであり、他のプログラムを構築するツールとして利用することができます。
@@ -387,8 +398,7 @@ GNU/Linux 環境における Linux です。
 
 @x Make
         <para>This package contains a program for directing the building
-        of packages.  It is required by almost every package in LFS.
-        </para>
+        of packages.  It is required by almost every package in LFS.</para>
 @y
 <para>
 このパッケージは、パッケージ構築を指示するプログラムを提供します。
@@ -400,7 +410,7 @@ LFS におけるパッケージでは、ほぼすべてにおいて必要とな�
         <para>This package contains programs for finding and viewing man pages.
         It was chosen instead of the <application>man</application> package
         due to superior internationalization capabilities.  It supplies
-        the man program. </para>
+        the man program.</para>
 @y
 <para>
 このパッケージは man ページを検索し表示するプログラムを提供します。
@@ -412,7 +422,7 @@ LFS におけるパッケージでは、ほぼすべてにおいて必要とな�
 
 @x Man-pages
         <para>This package contains the actual contents of the basic
-        Linux man pages. </para>
+        Linux man pages.</para>
 @y
 <para>
 このパッケージは Linux の基本的な man ページを提供します。
@@ -428,10 +438,19 @@ LFS におけるパッケージでは、ほぼすべてにおいて必要とな�
 </para>
 @z
 
+@x MPC
+        <para>This package contains functions for the arithmetic of complex
+        numbers. It is required by Gcc.</para>
+@y
+<para>
+このパッケージは複素数演算のための関数を提供します。
+GCC パッケージがこれを必要としています。
+</para>
+@z
+
 @x MPFR
         <para>This package contains functions for multiple precision 
-        arithmetic.  It is required by Gcc.
-        </para>
+        arithmetic.  It is required by Gcc.</para>
 @y
 <para>
 このパッケージは倍精度演算 (multiple precision) の関数を提供します。
@@ -442,11 +461,13 @@ GCC パッケージがこれを必要としています。
 @x Ncurses
         <para>This package contains libraries for terminal-independent 
         handling of character screens.  It is often used to provide 
-        cursor control for a menuing system.  </para>
+        cursor control for a menuing system. It is needed by a number of
+        packages in LFS.</para>
 @y
 <para>
 このパッケージは、端末に依存せず文字キャラクタを取り扱うライブラリを提供します。
 メニュー表示時のカーソル制御を実現する際に利用されます。
+LFS の他のパッケージでは、たいていはこれを必要としています。
 </para>
 @z
 
@@ -454,7 +475,7 @@ GCC パッケージがこれを必要としています。
         <para>This package contains a program for modifying or creating files by
         applying a <emphasis>patch</emphasis> file typically created 
         by the <application>diff</application> program.  It is needed by
-        the build procedure for several LFS packages. </para>
+        the build procedure for several LFS packages.</para>
 @y
 <para>
 このパッケージは、<emphasis>パッチ</emphasis>
@@ -467,17 +488,19 @@ LFS パッケージの中には、構築時にこれを必要とするものが�
 
 @x Perl
         <para>This package is an interpreter for the runtime language
-        PERL.</para>
+        PERL. It is needed for the installation and testsuites of several LFS
+        packages.</para>
 @y
 <para>
 このパッケージは、ランタイムに利用されるインタープリタ言語 PERL を提供します。
+LFS の他のパッケージでは、インストール時やテストスイートの実行時にこれを必要とするものがあります。
 </para>
 @z
 
 @x Pkg-config
         <para>This package contains a tool for passing the include path 
         and/or library paths to build tools during the configure and make 
-        processes.  It is needed by many LFS packages. </para>
+        processes.  It is needed by many LFS packages.</para>
 @y
 <para>
 このパッケージは、configure や make を行う際に、ビルドツールに対してインクルードパスやライブラリパスを受け渡すツールプログラムを提供します。
@@ -486,26 +509,31 @@ LFS パッケージでは、ほとんどがこれを必要としています。
 @z
 
 @x Procps
-        <para>This package contains programs for monitoring processes.
-        </para>
+        <para>This package contains programs for monitoring processes. These
+        programs are useful for system administration, and are also used by
+        the LFS Bootscripts.</para>
 @y
 <para>
 このパッケージは、プロセスの監視を行うプログラムを提供します。
+システム管理にはこのパッケージが必要となります。
+また LFS ブートスクリプトではこれを利用しています。
 </para>
 @z
 
 @x Psmisc
         <para>This package contains programs for displaying information 
-        about running processes. </para>
+        about running processes. These programs are useful for system
+        administration.</para>
 @y
 <para>
 このパッケージは、実行中のプロセスに関する情報を表示するプログラムを提供します。
+システム管理にはこのパッケージが必要となります。
 </para>
 @z
 
 @x Readline
         <para>This package is a set of libraries that offers command-line 
-        editing and history capabilities.  It is used by Bash. </para>
+        editing and history capabilities.  It is used by Bash.</para>
 @y
 <para>
 このパッケージは、コマンドライン上での入力編集や履歴管理を行うライブラリを提供します。
@@ -516,7 +544,7 @@ LFS パッケージでは、ほとんどがこれを必要としています。
 @x Sed
         <para>This package allows editing of text without opening it in a 
         text editor. It is also needed by most LFS packages' configure 
-        scripts. </para>
+        scripts.</para>
 @y
 <para>
 このパッケージは、テキストの編集を、テキストエディタを用いることなく可能とします。
@@ -536,8 +564,7 @@ LFS パッケージにおける configure スクリプトは、たいていこ�
 @x Sysklogd
         <para>This package contains programs for logging system messages, 
         such as those given by the kernel or daemon processes when unusual 
-        events occur.  
-        </para>
+        events occur.</para>
 @y
 <para>
 このパッケージは、システムメッセージログを扱うプログラムを提供します。
@@ -558,7 +585,7 @@ LFS パッケージにおける configure スクリプトは、たいていこ�
 
 @x Tar
         <para>This package provides archiving and extraction capabilities
-        of virtually all packages used in LFS.  </para>
+        of virtually all packages used in LFS.</para>
 @y
 <para>
 このパッケージは、アーカイブや圧縮機能を提供するもので
@@ -569,7 +596,7 @@ LFS が扱うすべてのパッケージにて利用されています。
 @x Tcl
         <para>This package contains the Tool Command Language used
         in many testsuites in LFS packages.  It is only installed in 
-        the temporary toolchain. </para>
+        the temporary toolchain.</para>
 @y
 <para>
 このパッケージはツールコマンド言語 (Tool Command Language) を提供します。
@@ -581,7 +608,7 @@ LFS が扱うパッケージにてテストスイートの実行に必要とな�
 @x Texinfo
         <para>This package contains programs for reading, writing, and 
         converting info pages.  It is used in the installation 
-        procedures of many LFS packages. </para>
+        procedures of many LFS packages.</para>
 @y
 <para>
 このパッケージは Info ページに関しての入出力や変換を行うプログラムを提供します。
@@ -592,8 +619,7 @@ LFS が扱うパッケージのインストール時には、たいてい利用�
 @x Udev
         <para>This package contains programs for dynamic creation of 
         device nodes.  It is an alternative to creating thousands of
-        static devices in the /dev directory.  
-        </para>
+        static devices in the /dev directory.</para>
 @y
 <para>
 このパッケージはデバイスノードの動的生成を行うプログラムを提供します。
@@ -604,7 +630,7 @@ LFS が扱うパッケージのインストール時には、たいてい利用�
 @x Util-linux-ng
         <para>This package contains miscellaneous utility programs. 
         Among them are utilities for handling file systems, consoles, 
-        partitions, and messages. </para>
+        partitions, and messages.</para>
 @y
 <para>
 このパッケージは数多くのユーティリティプログラムを提供します。
@@ -616,8 +642,7 @@ LFS が扱うパッケージのインストール時には、たいてい利用�
         <para>This package contains an editor. It was chosen because of its
         compatibility with the classic vi editor and its huge number of powerful
         capabilities.  An editor is a very personal choice for
-        many users and any other editor could be substituted if desired.
-        </para>
+        many users and any other editor could be substituted if desired.</para>
 @y
 <para>
 このパッケージはテキストエディタを提供します。
@@ -628,8 +653,7 @@ LFS が扱うパッケージのインストール時には、たいてい利用�
 
 @x Zlib
         <para>This package contains compression and decompression routines 
-        used by some programs. 
-        </para>
+        used by some programs.</para>
 @y
 <para>
 このパッケージは、圧縮や解凍の機能を提供するもので、他のプログラムがこれを利用しています。

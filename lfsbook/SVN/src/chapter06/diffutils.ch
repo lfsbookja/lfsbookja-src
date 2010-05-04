@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -63,9 +72,9 @@ Diffutils パッケージはファイルやディレクトリの差分を表示�
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>ビルド結果をテストするなら以下を実行します。</para>
 @z
 
 @x

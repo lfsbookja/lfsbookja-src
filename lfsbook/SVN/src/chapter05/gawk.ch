@@ -74,11 +74,11 @@
 </para>
 @z
 
-@x
-    <para>To test the results, issue:</para>
-@y
-<para>コンパイル結果をテストするなら以下を実行します。</para>
-@z
+% @x
+%     <para>To test the results, issue:</para>
+% @y
+% <para>コンパイル結果をテストするなら以下を実行します。</para>
+% @z
 
 @x
     <para>Install the package:</para>

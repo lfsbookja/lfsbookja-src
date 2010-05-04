@@ -151,11 +151,11 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 
 %----------------------------------------------------------------------
 @x binutils
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc, Grep,
          Make, Perl, Sed, Texinfo and Zlib</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Make, Perl, Sed, Texinfo Zlib</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, File, Gawk, GCC, Glibc, Grep,
+         Make, Perl, Sed, Texinfo, Zlib</seg>
 @z
 @x
           <seg>DejaGNU and Expect</seg>
@@ -269,16 +269,16 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 
 %----------------------------------------------------------------------
 @x Diffutils
-          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc, Grep,
-          Make, Patch, Sed, and Texinfo</seg>
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Gettext, Glibc, Grep,
+          Make, Sed, and Texinfo</seg>
 @y
-          <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Gettext, Glibc, Grep,
-          Make, Patch, Sed, Texinfo</seg>
+          <seg>Bash, Binutils, Coreutils, Gawk, GCC, Gettext, Glibc, Grep,
+          Make, Sed, Texinfo</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>Diffutils, Perl</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>Diffutils, Perl</seg>
 @z
 @x
           <seg>None</seg>

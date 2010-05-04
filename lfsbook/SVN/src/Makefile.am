@@ -92,7 +92,7 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@	  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 
 @MAINT@txt: nochunks
-@MAINT@	cat ../LFS-BOOK.html | LANG=ja w3m -dump -T text/html -cols 72 -s > ../LFS-BOOK.txt
+@MAINT@	w3m -dump ../LFS-BOOK.html -cols 72 -s > ../LFS-BOOK.txt
 
 tmpdir: $(ALLXML)
 	@echo "Creating and cleaning $(RENDERTMP)"

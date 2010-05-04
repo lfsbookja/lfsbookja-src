@@ -364,6 +364,20 @@
 @z
 
 @x
+      <term>Tar Overflow Patch - <token>&tar-overflow-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&tar-overflow-patch;"/></para>
+        <para>MD5 sum: <literal>&tar-overflow-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Tar Overflow Patch - <token>&tar-overflow-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&tar-overflow-patch;"/></para>
+        <para>MD5 sum: <literal>&tar-overflow-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
   <para>Total size of these patches: about <returnvalue/></para>
 @y
   <para>全パッチの合計サイズ: 約 <returnvalue/></para>

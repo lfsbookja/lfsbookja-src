@@ -14,27 +14,23 @@
 @z
 
 @x
-  <indexterm zone="ch-tools-diffutils">
-    <primary sortas="a-Diffutils">Diffutils</primary>
+    <primary sortas="a-File">File</primary>
     <secondary>tools</secondary>
-  </indexterm>
 @y
-  <indexterm zone="ch-tools-diffutils">
-    <primary sortas="a-Diffutils">Diffutils</primary>
+    <primary sortas="a-File">File</primary>
     <secondary>ツール</secondary>
-  </indexterm>
 @z
 
 @x
-    <title>Installation of Diffutils</title>
+    <title>Installation of File</title>
 @y
-    <title>Diffutils のインストール</title>
+    <title>File のインストール</title>
 @z
 
 @x
-    <para>Prepare Diffutils for compilation:</para>
+    <para>Prepare File for compilation:</para>
 @y
-    <para>Diffutils をコンパイルするための準備をします。</para>
+    <para>File をコンパイルするための準備をします。</para>
 @z
 
 @x
@@ -46,7 +42,7 @@
 @x
     <para>Compilation is now complete. As discussed earlier, running the test
     suite is not mandatory for the temporary tools here in this chapter. To run
-    the Diffutils test suite anyway, issue the following command:</para>
+    the File test suite anyway, issue the following command:</para>
 @y
 <para>
 コンパイルが終了しました。
@@ -63,11 +59,9 @@
 
 @x
     <para>Details on this package are located in
-    <xref linkend="contents-diffutils" role="."/></para>
+    <xref linkend="contents-file" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-diffutils" role=""/>
-を参照してください。
-</para>
+    <para>本パッケージの詳細は
+    <xref linkend="contents-file" role=""/> を参照してください。</para>
 @z
+

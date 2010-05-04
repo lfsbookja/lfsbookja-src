@@ -57,6 +57,70 @@
 @z
 
 @x
+      <para>2010-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added a patch to fix a buffer overflow 
+          errror in tar.  The fix is specific to building with gcc-4.5
+          and later.
+          Fixes <ulink url="&lfs-ticket-root;2651">#2610</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added precedures for the new diffutils test
+          suite.
+          Thanks to Chris Staub.
+          Fixes <ulink url="&lfs-ticket-root;2650">#2650</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Made minor text changes in Chapter 5, gawk
+          and Chapter 6, patch.
+          Thanks to Chris Staub.
+          Fixes <ulink url="&lfs-ticket-root;2649">#2649</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Made several text changes in Section v,
+          Rationale for Packages in the Book. Thanks to Chris 
+          Staub for the patch.
+          Fixes <ulink url="&lfs-ticket-root;2644">#2644</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add file to Chapter 5 to remove several warning
+          messages in Chapter 6 binutils.
+          Fixes <ulink url="&lfs-ticket-root;2640">#2640</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-05-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Tar パッケージにてバッファオーバーフローを修正するパッチを追加。
+          この修正は gcc-4.5 以上にてビルドする際に必要。
+          <ulink url="&lfs-ticket-root;2651">#2610</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Diffutils における新たなテストスイートの手順を追加。
+          Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;2650">#2650</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第5章の Gawk、第6章の Patch にて若干の説明修正。
+          Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;2649">#2649</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第5章および「各パッケージを用いる理由」のページにて若干の説明修正。
+          パッチ提供をしてくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;2644">#2644</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第6章における Binutils にて、警告メッセージをなくすために
+          File パッケージを第5章に追加。
+          <ulink url="&lfs-ticket-root;2640">#2640</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-04-20</para>
       <itemizedlist>
         <listitem>

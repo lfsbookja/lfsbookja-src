@@ -31,11 +31,11 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
 @z
 
 @x
-    <para>Apply a patch to prevent a test that requires <command>ed</command>
-    from being run:</para>
+    <para>Apply a patch to prevent the testsuite from running a test that
+    requires <command>ed</command>:</para>
 @y
 <para>
-<command>ed</command> プログラムを必要とするテストの実行を行わないよう、パッチを適用します。
+<command>ed</command> プログラムを必要とするテストスイートの実行を行わないよう、パッチを適用します。
 </para>
 @z
 
