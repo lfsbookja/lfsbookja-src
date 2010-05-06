@@ -57,6 +57,26 @@
 @z
 
 @x
+      <para>2010-05-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Removed a sed in Chapter 6 GCC instructions that
+          has been fixed in GCC-4.5.0.
+          Fixes <ulink url="&lfs-ticket-root;2653">#2653</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-05-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第6章の GCC 構築手順にて sed コマンド操作を削除。
+          GCC-4.5.0 では解消されたため。
+          <ulink url="&lfs-ticket-root;2653">#2653</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-05-03</para>
       <itemizedlist>
         <listitem>

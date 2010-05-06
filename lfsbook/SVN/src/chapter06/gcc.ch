@@ -63,14 +63,14 @@ GCC パッケージは C コンパイラや C++ コンパイラなどの GNU コ
 </para>
 @z
 
-@x
-    <para>Apply a <command>sed</command> substitution to prevent a testsuite
-error:</para>
-@y
-<para>
-<command>sed</command> による置換を実行して、テストスイートのエラーを回避します。
-</para>
-@z
+% @x
+%     <para>Apply a <command>sed</command> substitution to prevent a testsuite
+% error:</para>
+% @y
+% <para>
+% <command>sed</command> による置換を実行して、テストスイートのエラーを回避します。
+% </para>
+% @z
 
 @x
     <para>The GCC documentation recommends building GCC outside of the source
