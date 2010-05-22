@@ -86,6 +86,20 @@
 @z
 
 @x
+      <term>Bzip2 Version Fixes Patch - <token>&bzip2-version-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&bzip2-version-patch;"/></para>
+        <para>MD5 sum: <literal>&bzip2-version-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Bzip2 Version Fixes Patch - <token>&bzip2-version-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&bzip2-version-patch;"/></para>
+        <para>MD5 sum: <literal>&bzip2-version-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>

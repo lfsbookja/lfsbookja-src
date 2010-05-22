@@ -57,6 +57,149 @@
 @z
 
 @x
+      <para>2010-05-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Remove an empty documentation directory created by
+          Udev-154.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-2.6.34.  Fixes
+          <ulink url="&lfs-ticket-root;2668">#2668</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to E2fsprogs-1.41.12.  Fixes
+          <ulink url="&lfs-ticket-root;2667">#2667</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Perl-5.12.1.  Fixes
+          <ulink url="&lfs-ticket-root;2666">#2666</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Added latest upstream patches for Bash.  Fixes
+          <ulink url="&lfs-ticket-root;2665">#2665</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to MPC-0.8.2. Fixes
+          <ulink url="&lfs-ticket-root;2664">#2664</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Inetutils-1.8. Fixes
+          <ulink url="&lfs-ticket-root;2663">#2663</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Gawk-3.1.8. Fixes
+          <ulink url="&lfs-ticket-root;2659">#2659</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Install Man-DB's documentation in a versioned
+          directory. Fixes
+          <ulink url="&lfs-ticket-root;2658">#2658</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Diffutils-3.0.  Fixes
+          <ulink url="&lfs-ticket-root;2656">#2656</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Correct documentation installation instructions for
+          MPFR. Thanks to Chris Staub for the patch. Fixes
+          <ulink url="&lfs-ticket-root;2655">#2655</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Coreutils-8.5. Fixes
+          <ulink url="&lfs-ticket-root;2643">#2643</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-154. Fixes
+          <ulink url="&lfs-ticket-root;2639">#2639</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Zlib-1.2.5. Fixes
+          <ulink url="&lfs-ticket-root;2638">#2638</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.34. Fixes
+          <ulink url="&lfs-ticket-root;2628">#2628</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add a patch to fix incorrect version numbers in
+          Bzip2.  Thanks to Jeremy Huntwork (LightCube OS) for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;2624">#2624</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-05-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Udev-154 にて生成される空のドキュメントディレクトリを削除。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - IPRoute2-2.6.34 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2668">#2668</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - E2fsprogs-1.41.12 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2667">#2667</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Perl-5.12.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2666">#2666</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bash に対する最新のアップストリームによるパッチを追加。
+          <ulink url="&lfs-ticket-root;2665">#2665</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPC-0.8.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2664">#2664</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Inetutils-1.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2663">#2663</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Gawk-3.1.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2659">#2659</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-DB のドキュメントを、バージョン番号つきのディレクトリにインストールする。
+          <ulink url="&lfs-ticket-root;2658">#2658</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Diffutils-3.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2656">#2656</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPFR においてドキュメントインストールの手順を修正。
+          パッチ提供をしてくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;2655">#2655</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils-8.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2643">#2643</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Udev-154 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2639">#2639</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Zlib-1.2.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2638">#2638</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-2.6.34 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2628">#2628</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bzip2 にて適切でないバージョン番号を修正するためのパッチを追加。
+          パッチ提供してくれた Jeremy Huntwork (LightCube OS) に感謝。
+          <ulink url="&lfs-ticket-root;2624">#2624</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-05-06</para>
       <itemizedlist>
         <listitem>

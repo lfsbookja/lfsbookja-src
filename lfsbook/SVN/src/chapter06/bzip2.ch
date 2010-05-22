@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -25,10 +34,12 @@ Bzip2 パッケージはファイル圧縮・伸長 (解凍) を行うプログ�
 @z
 
 @x
-    <para>Apply a patch to install the documentation for this package:</para>
+    <para>Apply 2 patches that will install the documentation for this package
+    and correct some hard-coded version numbers:</para>
 @y
 <para>
-本パッケージのドキュメントをインストールするためにパッチを当てます。
+以下の２つのパッチを適用します。
+本パッケージのドキュメントをインストールするとともに、ハードコーディングされているバージョン番号を修正します。
 </para>
 @z
 

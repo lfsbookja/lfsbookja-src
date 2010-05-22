@@ -92,11 +92,12 @@ Ncurses をコンパイルするための準備をします。
 @z
 
 @x
-    <para>Move the libraries to the <filename class="directory">/lib</filename> directory,
-    where they are expected to reside:</para>
+    <para>Move the shared libraries to the
+    <filename class="directory">/lib</filename> directory, where they are
+    expected to reside:</para>
 @y
 <para>
-ライブラリを <filename class="directory">/lib</filename>
+共有ライブラリを <filename class="directory">/lib</filename>
 ディレクトリに移動します。
 これらはここにあるべきものです。
 </para>

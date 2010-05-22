@@ -98,10 +98,11 @@ Udev はそれらを認識できません。
           are not part of the base LFS system.  See the Udev
           <filename>README</filename> file for more information.</para>
 @y
-          <para>This option prevents Udev from installing helper programs and
-          other extras which require more external libraries.  These libraries
-          are not part of the base LFS system.  See the Udev
-          <filename>README</filename> file for more information.</para>
+<para>
+このオプションは、ヘルパープログラムやその他の追加プログラムをインストールしないことを指定します。
+追加プログラムには、さらに外部ライブラリが必要となり、それらは LFS ベースシステムでは取り扱っていません。
+詳しくは Udev の <filename>README</filename> ファイルを参照してください。
+</para>
 @z
 
 % @x
@@ -160,32 +161,50 @@ Udev はそれらを認識できません。
     <para>パッケージをインストールします。</para>
 @z
 
+% @x
+%     <para>Udev has to be configured in order to work properly, as its default
+%     configuration does not cover all devices. First install two extra rules
+%     files from Udev to help support device-mapper and RAID setups:</para>
+% @y
+% <para>
+% Udev を正しく作動させるためには正しい設定が必要です。
+% しかしデフォルトの設定ではすべてのデバイスを網羅できていません。
+% まずは Udev が提供する以下の特別な2つのルールをインストールします。
+% これらはデバイスマッパー (device-mapper) と RAID の設定をサポートします。
+% </para>
+% @z
+% 
+% @x
+%     <para>Now install a file to create symlinks for certain hand-held devices:</para>
+% @y
+% <para>
+% 特定のハンドヘルド (hand-held) デバイスへのシンボリックリンクを生成するファイルをインストールします。
+% </para>
+% @z
+% 
+% @x
+%     <para>Now install a file to handle ISDN devices:</para>
+% @y
+% <para>
+% ISDN デバイスを取り扱うファイルをインストールします。
+% </para>
+% @z
+
 @x
-    <para>Udev has to be configured in order to work properly, as its default
-    configuration does not cover all devices. First install two extra rules
-    files from Udev to help support device-mapper and RAID setups:</para>
+    <para>Remove an empty documentation directory:</para>
 @y
 <para>
-Udev を正しく作動させるためには正しい設定が必要です。
-しかしデフォルトの設定ではすべてのデバイスを網羅できていません。
-まずは Udev が提供する以下の特別な2つのルールをインストールします。
-これらはデバイスマッパー (device-mapper) と RAID の設定をサポートします。
+空のドキュメントディレクトリを削除します。
 </para>
 @z
 
 @x
-    <para>Now install a file to create symlinks for certain hand-held devices:</para>
+    <para>Udev's default configuration covers most but not all devices. Install
+    a file to create symlinks for certain hand-held devices:</para>
 @y
 <para>
-特定のハンドヘルド (hand-held) デバイスへのシンボリックリンクを生成するファイルをインストールします。
-</para>
-@z
-
-@x
-    <para>Now install a file to handle ISDN devices:</para>
-@y
-<para>
-ISDN デバイスを取り扱うファイルをインストールします。
+Udev のデフォルトの設定は、ほとんどのデバイスを網羅しますが、すべてという訳にはいきません。
+以下のファイルをインストールして、特定のハンドヘルドデバイスに対するシンボリックリンクを作成します。
 </para>
 @z
 
