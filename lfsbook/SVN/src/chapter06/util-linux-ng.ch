@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -104,9 +113,11 @@ FHS では <filename>adjtime</filename>
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -121,6 +132,7 @@ FHS では <filename>adjtime</filename>
         swapoff (link to swapon), swapon, switch_root, tailf, taskset, tunelp,
         ul, umount, uuidd, uuidgen, wall, whereis, and write</seg>
         <seg>libblkid.{a,so}, libuuid.{a,so}</seg>
+        <seg>/usr/share/getopt, /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
@@ -133,6 +145,7 @@ FHS では <filename>adjtime</filename>
         swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, tunelp,
         ul, umount, uuidd, uuidgen, wall, whereis, write</seg>
         <seg>libblkid.{a,so}, libuuid.{a,so}</seg>
+        <seg>/usr/share/getopt, /var/lib/hwclock</seg>
 @z
 
 @x

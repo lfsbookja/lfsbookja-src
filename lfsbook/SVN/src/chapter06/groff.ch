@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -84,8 +93,10 @@ Groff はデフォルトの用紙サイズを設定する環境変数
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -96,6 +107,8 @@ Groff はデフォルトの用紙サイズを設定する環境変数
         pic2graph, post-grohtml, preconv, pre-grohtml, refer, roff2dvi,
         roff2html, roff2pdf, roff2ps, roff2text, roff2x, soelim, tbl, tfmtodit,
         and troff</seg>
+        <seg>/usr/lib/groff, /usr/share/doc/groff-&groff-version;,
+        /usr/share/groff</seg>
 @y
         <seg>addftinfo, afmtodit, chem, eqn, eqn2graph, gdiffmk,
         geqn (eqn へのリンク), grap2graph, grn, grodvi, groff, groffer, grog,
@@ -104,6 +117,8 @@ Groff はデフォルトの用紙サイズを設定する環境変数
         pic2graph, post-grohtml, preconv, pre-grohtml, refer, roff2dvi,
         roff2html, roff2pdf, roff2ps, roff2text, roff2x, soelim, tbl, tfmtodit,
         troff</seg>
+        <seg>/usr/lib/groff, /usr/share/doc/groff-&groff-version;,
+        /usr/share/groff</seg>
 @z
 
 @x

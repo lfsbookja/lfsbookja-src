@@ -89,14 +89,18 @@ LFS ブートスクリプトパッケージでは、いくつかのスクリプ�
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>bigram, code, find, frcode, locate, oldfind, updatedb, and xargs</seg>
+        <seg>/usr/lib/findutils</seg>
 @y
         <seg>bigram, code, find, frcode, locate, oldfind, updatedb, xargs</seg>
+        <seg>/usr/lib/findutils</seg>
 @z
 
 @x

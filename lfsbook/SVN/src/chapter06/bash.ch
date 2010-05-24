@@ -141,14 +141,18 @@ Bash のアップストリームにより報告あるいは修正された数種
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>bash, bashbug, and sh (link to bash)</seg>
+        <seg>/usr/share/doc/bash-&bash-version;</seg>
 @y
         <seg>bash, bashbug, sh (bash へのリンク)</seg>
+        <seg>/usr/share/doc/bash-&bash-version;</seg>
 @z
 
 @x

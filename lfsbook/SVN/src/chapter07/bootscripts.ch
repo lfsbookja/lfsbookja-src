@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -39,8 +48,10 @@ LFS-ブートスクリプトパッケージは LFS システムの起動、終�
 
 @x
       <segtitle>Installed scripts</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールスクリプト</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -48,11 +59,13 @@ LFS-ブートスクリプトパッケージは LFS システムの起動、終�
         ifup, localnet, modules, mountfs, mountkernfs, network, rc, reboot,
         sendsignals, setclock, static, swap, sysctl, sysklogd, template,
         udev, and udev_retry</seg>
+        <seg>/etc/rc.d, /etc/sysconfig</seg>
 @y
         <seg>checkfs, cleanfs, console, consolelog, functions, halt, ifdown,
         ifup, localnet, modules, mountfs, mountkernfs, network, rc, reboot,
         sendsignals, setclock, static, swap, sysctl, sysklogd, template,
         udev, udev_retry</seg>
+        <seg>/etc/rc.d, /etc/sysconfig</seg>
 @z
 
 @x

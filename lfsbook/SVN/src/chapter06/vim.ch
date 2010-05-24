@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -312,18 +321,22 @@ Vim がインストールするスペルファイル (spell files)
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>ex (link to vim), rview (link to vim), rvim (link to vim),
         vi (link to vim), view (link to vim), vim,
         vimdiff (link to vim), vimtutor, and xxd</seg>
+        <seg>/usr/share/vim</seg>
 @y
         <seg>ex (vim へのリンク), rview (vim へのリンク), rvim (vim へのリンク),
         vi (vim へのリンク), view (vim へのリンク), vim,
         vimdiff (vim へのリンク), vimtutor, xxd</seg>
+        <seg>/usr/share/vim</seg>
 @z
 
 @x

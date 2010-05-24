@@ -57,6 +57,47 @@
 @z
 
 @x
+      <para>2010-05-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Reword the ABI note in gmp (chapter06) to correct
+	  it, and to stress that it is for 32-bit. Fixes
+	  <ulink url="&lfs-ticket-root;2648">#2648</ulink></para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a patch to fix some internal problems 
+          in Man-DB when viewing some pages. Thanks to William Immendorf
+          for posting the patch.  Fixes
+          <ulink url="&lfs-ticket-root;2652">#2652</ulink></para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add installed directories information to
+          each package.  Thanks to Chris Staub for the patch. Fixes
+          <ulink url="&lfs-ticket-root;2657">#2655</ulink></para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-05-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Gmp パッケージにおける ABI の記述 (第6章) を修正。
+	  これは 32 ビットに対するものであることを明示。
+	  <ulink url="&lfs-ticket-root;2648">#2648</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Man-DB にて内部処理に関わる問題を修正するパッチを追加。
+          パッチ提供をしてくれた William Immendorf に感謝。
+          <ulink url="&lfs-ticket-root;2652">#2652</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 各パッケージに、インストールディレクトリの情報を追加。
+          パッチ提供をしてくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;2657">#2655</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-05-21</para>
       <itemizedlist>
         <listitem>

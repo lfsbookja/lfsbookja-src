@@ -243,7 +243,7 @@ LFS 固有のカスタムルールファイルについて説明しているド�
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
@@ -255,13 +255,13 @@ LFS 固有のカスタムルールファイルについて説明しているド�
         firmware.sh, fstab_import, path_id, scsi_id, udevadm, udevd,
         usb_id, write_cd_rules, and write_net_rules</seg>
         <seg>libudev.{a,so}</seg>
-        <seg>/etc/udev</seg>
+        <seg>/etc/udev, /lib/udev, /lib/firmware</seg>
 @y
         <seg>ata_id, cdrom_id, collect, create_floppy_devices, edd_id,
         firmware.sh, fstab_import, path_id, scsi_id, udevadm, udevd,
         usb_id, write_cd_rules, write_net_rules</seg>
         <seg>libudev.{a,so}</seg>
-        <seg>/etc/udev</seg>
+        <seg>/etc/udev, /lib/udev, /lib/firmware</seg>
 @z
 
 @x

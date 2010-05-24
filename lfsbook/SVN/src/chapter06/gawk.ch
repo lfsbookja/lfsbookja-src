@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -54,16 +63,20 @@
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>awk (link to gawk), gawk, gawk-&gawk-version;, grcat, igawk, pgawk,
         pgawk-&gawk-version;, and pwcat</seg>
+        <seg>/usr/lib/awk, /usr/share/awk</seg>
 @y
         <seg>awk (gawk へのリンク), gawk, gawk-&gawk-version;, grcat, igawk, pgawk,
         pgawk-&gawk-version;, pwcat</seg>
+        <seg>/usr/lib/awk, /usr/share/awk</seg>
 @z
 
 @x

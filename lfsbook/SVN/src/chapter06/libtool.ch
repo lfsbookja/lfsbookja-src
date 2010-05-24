@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -54,17 +63,21 @@ Libtool パッケージは GNU 汎用ライブラリをサポートするスク�
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>libtool and libtoolize</seg>
         <seg>libltdl.{a,so}</seg>
+        <seg>/usr/include/libltdl, /usr/share/libtool</seg>
 @y
         <seg>libtool,libtoolize</seg>
         <seg>libltdl.{a,so}</seg>
+        <seg>/usr/include/libltdl, /usr/share/libtool</seg>
 @z
 
 @x

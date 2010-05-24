@@ -94,8 +94,10 @@ C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用し�
 
 @x
       <segtitle>Installed headers</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールヘッダ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x

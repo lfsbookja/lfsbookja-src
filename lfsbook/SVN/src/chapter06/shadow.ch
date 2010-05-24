@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -282,8 +291,10 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -292,12 +303,14 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
         lastlog, login, logoutd, newgrp, newusers, nologin, passwd, pwck,
         pwconv, pwunconv, sg (link to newgrp), su, useradd, userdel, usermod,
         vigr (link to vipw), and vipw</seg>
+        <seg>/etc/default</seg>
 @y
         <seg>chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog, gpasswd,
         groupadd, groupdel, groupmems, groupmod, grpck, grpconv, grpunconv,
         lastlog, login, logoutd, newgrp, newusers, nologin, passwd, pwck,
         pwconv, pwunconv, sg (newgrp へのリンク), su, useradd, userdel, usermod,
         vigr (vipw へのリンク), vipw</seg>
+        <seg>/etc/default</seg>
 @z
 
 @x

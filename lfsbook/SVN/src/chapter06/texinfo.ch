@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -96,16 +105,20 @@ Makefile 変数である <envar>TEXMF</envar>
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, texi2dvi, texi2pdf, and
         texindex</seg>
+        <seg>/usr/share/texinfo</seg>
 @y
         <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, texi2dvi, texi2pdf,
         texindex</seg>
+        <seg>/usr/share/texinfo</seg>
 @z
 
 @x

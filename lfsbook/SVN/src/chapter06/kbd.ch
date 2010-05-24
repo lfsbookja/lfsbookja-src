@@ -142,8 +142,10 @@ LFS-ブートスクリプトパッケージの中には
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -153,6 +155,7 @@ LFS-ブートスクリプトパッケージの中には
         psfxtable), psfstriptable (link to psfxtable), psfxtable, resizecons,
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, and unicode_stop</seg>
+        <seg>/lib/kbd</seg>
 @y
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbd_mode,
         kbdrate, loadkeys, loadunimap,
@@ -160,6 +163,7 @@ LFS-ブートスクリプトパッケージの中には
         (psfxtable へのリンク), psfstriptable (psfxtable へのリンク), psfxtable, resizecons,
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, unicode_stop</seg>
+        <seg>/lib/kbd</seg>
 @z
 
 @x

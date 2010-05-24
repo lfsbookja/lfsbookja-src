@@ -31,22 +31,22 @@ GMP パッケージは数値演算ライブラリを提供します。
 @z
 
 @x
-      <para>If you have a CPU which is capable of running 64-bit code
-      and you have specified <envar>CFLAGS</envar> in the environment,
-      the configure script will attempt to configure for 64-bits and fail.
-      Avoid this by adding <parameter>ABI=32</parameter> to the
-      <envar>CFLAGS</envar> variable for the duration of the configure
-      command below, then remove it afterwards.</para>
+      <para>If you are building for 32-bit x86, but you have a CPU which is
+      capable of running 64-bit code <emphasis>and</emphasis> you have specified
+      <envar>CFLAGS</envar> in the environment, the configure script will
+      attempt to configure for 64-bits and fail.
+      Avoid this by invoking the configure command below with
+      <screen><userinput><parameter>ABI=32</parameter>  ./configure ...</userinput>
+      </screen></para>
 @y
 <para>
-64 ビットコードを扱う CPU 環境にて
+32 ビット x86 CPU にて環境構築する際に、
+64 ビットコードを扱う CPU 環境であって <emphasis>かつ</emphasis>
 <envar>CFLAGS</envar> を指定していると、
 本パッケージの configure スクリプトは 64 ビット用の処理を行い失敗します。
-これを回避するには、本パッケージのビルド作業時にのみ、
-<envar>CFLAGS</envar> 変数にパラメータ
-<parameter>ABI=32</parameter> を加えて処理を行ってください。
-そして作業を終えたら、そのパラメータを取り除いておいてください。
-</para>
+これを回避するには、以下のように処理してください。
+<screen><userinput><parameter>ABI=32</parameter>  ./configure ...</userinput>
+</screen></para>
 @z
 
 @x
@@ -129,8 +129,10 @@ Berkeley MP に対する互換ライブラリをビルドします。
 
 @x
       <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -69,9 +78,11 @@ Gettext パッケージは国際化を行うユーティリティを提供しま
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -81,6 +92,8 @@ Gettext パッケージは国際化を行うユーティリティを提供しま
         ngettext, recode-sr-latin, and xgettext</seg>
         <seg>libasprintf.{a,so}, libgettextlib.so, libgettextpo.{a,so},
         libgettextsrc.so, and preloadable_libintl.so</seg>
+        <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
+        /usr/share/gettext</seg>
 @y
         <seg>autopoint, config.charset, config.rpath, envsubst, gettext, gettext.sh,
         gettextize, hostname, msgattrib, msgcat, msgcmp, msgcomm, msgconv, msgen,
@@ -88,6 +101,8 @@ Gettext パッケージは国際化を行うユーティリティを提供しま
         ngettext, recode-sr-latin, xgettext</seg>
         <seg>libasprintf.{a,so}, libgettextlib.so, libgettextpo.{a,so},
         libgettextsrc.so, preloadable_libintl.so</seg>
+        <seg>/usr/lib/gettext, /usr/share/doc/gettext-&gettext-version;,
+        /usr/share/gettext</seg>
 @z
 
 @x

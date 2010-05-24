@@ -370,16 +370,20 @@ ehci_hcd は ohci_hcd や uhci_hcd よりも先にロードしなければなり
 
 @x
       <segtitle>Installed files</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールファイル</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>config-&linux-version;, lfskernel-&linux-version;, and
         System.map-&linux-version;</seg>
+        <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @y
         <seg>config-&linux-version;, lfskernel-&linux-version;,
         System.map-&linux-version;</seg>
+        <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @z
 
 @x

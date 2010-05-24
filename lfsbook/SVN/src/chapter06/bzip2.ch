@@ -115,9 +115,11 @@ Bzip2 パッケージはファイル圧縮・伸長 (解凍) を行うプログ�
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -125,11 +127,13 @@ Bzip2 パッケージはファイル圧縮・伸長 (解凍) を行うプログ�
         bzdiff), bzdiff, bzegrep (link to bzgrep), bzfgrep (link to bzgrep),
         bzgrep, bzip2, bzip2recover, bzless (link to bzmore), and bzmore</seg>
         <seg>libbz2.{a,so}</seg>
+        <seg>/usr/share/doc/bzip2-&bzip2-version;</seg>
 @y
         <seg>bunzip2 (bzip2 へのリンク), bzcat (bzip2 へのリンク), bzcmp (bzdiff へのリンク),
         bzdiff, bzegrep (bzgrep へのリンク), bzfgrep (bzgrep へのリンク),
         bzgrep, bzip2, bzip2recover, bzless (bzmore へのリンク), bzmore</seg>
         <seg>libbz2.{a,so}</seg>
+        <seg>/usr/share/doc/bzip2-&bzip2-version;</seg>
 @z
 
 @x

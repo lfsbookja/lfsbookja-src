@@ -135,9 +135,11 @@ Perl をコンパイルするための準備をします。
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -149,6 +151,7 @@ Perl をコンパイルするための準備をします。
         psed (link to s2p), pstruct (link to c2ph), ptar, ptardiff, s2p,
         shasum, splain, and xsubpp</seg>
         <seg>Several hundred which cannot all be listed here</seg>
+        <seg>/usr/lib/perl5</seg>
 @y
         <seg>a2p, c2ph, config_data, corelist, cpan, cpan2dist, cpanp,
         cpanp-run-perl, dprofpp, enc2xs, find2perl, h2ph, h2xs,
@@ -158,6 +161,7 @@ Perl をコンパイルするための準備をします。
         psed (s2p へのリンク), pstruct (c2ph へのリンク), ptar, ptardiff, s2p,
         shasum, splain, xsubpp</seg>
         <seg>ここでは列記できないほどの数多くのライブラリ</seg>
+        <seg>/usr/lib/perl5</seg>
 @z
 
 @x

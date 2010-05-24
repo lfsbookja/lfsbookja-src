@@ -129,14 +129,20 @@ Readline のドキュメントに示されるバージョン番号を適切な�
 
 @x
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>libhistory.{a,so}, and libreadline.{a,so}</seg>
+        <seg>/usr/include/readline, /usr/share/readline,
+        /usr/share/doc/readline-&readline-version;</seg>
 @y
         <seg>libhistory.{a,so}, libreadline.{a,so}</seg>
+        <seg>/usr/include/readline, /usr/share/readline,
+        /usr/share/doc/readline-&readline-version;</seg>
 @z
 
 @x

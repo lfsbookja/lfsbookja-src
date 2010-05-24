@@ -192,9 +192,11 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -205,6 +207,8 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
         resize2fs, and tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so} and
         libss.{a,so}</seg>
+        <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
+        /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @y
         <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
         e2fsck, e2image, e2initrd_helper, e2label, e2undo, filefrag, fsck.ext2,
@@ -213,6 +217,8 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
         resize2fs, tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so},
         libss.{a,so}</seg>
+        <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
+        /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @z
 
 @x

@@ -57,8 +57,10 @@ Automake パッケージは Autoconf が利用する Makefile などを生成す
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -66,11 +68,15 @@ Automake パッケージは Autoconf が利用する Makefile などを生成す
         automake-&automake-version;, compile, config.guess, config.sub,
         depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
         py-compile, symlink-tree, and ylwrap</seg>
+        <seg>/usr/share/aclocal-1.11, /usr/share/automake-1.11,
+        /usr/share/doc/automake-&automake-version;</seg>
 @y
         <seg>acinstall, aclocal, aclocal-&automake-version;, automake,
         automake-&automake-version;, compile, config.guess, config.sub,
         depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
         py-compile, symlink-tree, ylwrap</seg>
+        <seg>/usr/share/aclocal-1.11, /usr/share/automake-1.11,
+        /usr/share/doc/automake-&automake-version;</seg>
 @z
 
 @x

@@ -50,6 +50,50 @@
 -->
 
     <listitem>
+      <para>2010-05-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter03/patches.ch,
+          src/chapter06/{autoconf.ch,
+          automake.ch,
+          bash.ch,
+          binutils.ch,
+          bison.ch,
+          bzip2.ch,
+          coreutils.ch,
+          e2fsprogs.ch,
+          findutils.ch,
+          gawk.ch,
+          gcc.ch,
+          gettext.ch,
+          glibc.ch,
+          gmp.ch,
+          groff.ch,
+          grub.ch,
+          iproute2.ch,
+          kbd.ch,
+          libtool.ch,
+          linux-headers.ch,
+          man-db.ch,
+          mpfr.ch,
+          ncurses.ch,
+          perl.ch,
+          readline.ch,
+          sed.ch,
+          shadow.ch,
+          texinfo.ch,
+          udev.ch,
+          util-linux-ng.ch,
+          vim.ch},
+          src/chapter07/bootscripts.ch,
+          src/chapter08/kernel.ch:
+          SVN-20100523, r9287 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-05-22</para>
       <itemizedlist>
         <listitem>

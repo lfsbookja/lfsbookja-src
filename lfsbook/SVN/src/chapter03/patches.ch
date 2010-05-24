@@ -309,6 +309,20 @@
       </listitem>
 @z
 
+@x
+      <term>Man-DB Upstream Fix Assertion Patch - <token>&man-db-upstream_fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&man-db-upstream_fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&man-db-upstream_fixes-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Man-DB Upstream Fix Assertion Patch - <token>&man-db-upstream_fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&man-db-upstream_fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&man-db-upstream_fixes-patch-md5;</literal></para>
+      </listitem>
+@z
+
 @x Patch Testsuite Fix Patch
         <para>Download: <ulink url="&patches-root;&patch-test-patch;"/></para>
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>

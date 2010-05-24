@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -62,16 +71,20 @@ Autoconf パッケージは、ソースコードを自動的に設定するシ�
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>autoconf, autoheader, autom4te, autoreconf, autoscan, autoupdate,
         and ifnames</seg>
+        <seg>/usr/share/autoconf</seg>
 @y
         <seg>autoconf, autoheader, autom4te, autoreconf, autoscan, autoupdate,
         ifnames</seg>
+        <seg>/usr/share/autoconf</seg>
 @z
 
 @x

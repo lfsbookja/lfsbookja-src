@@ -113,18 +113,24 @@ CONFIG_IKCONFIG_PROC
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>ctstat (link to lnstat), genl, ifcfg, ifstat, ip, lnstat,
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (link to lnstat), ss,
         and tc</seg>
+        <seg>/etc/iproute2, /lib/tc, /usr/share/doc/iproute2-&iproute2-version;,
+        /usr/lib/tc</seg>
 @y
         <seg>ctstat (lnstat へのリンク), genl, ifcfg, ifstat, ip, lnstat,
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (lnstat へのリンク), ss,
         tc</seg>
+        <seg>/etc/iproute2, /lib/tc, /usr/share/doc/iproute2-&iproute2-version;,
+        /usr/lib/tc</seg>
 @z
 
 @x

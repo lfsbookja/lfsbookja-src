@@ -29,6 +29,15 @@ Man-DB パッケージは man ページを検索したり表示したりする�
 @z
 
 @x
+    <para>First apply the following patch to fix problems when viewing
+    some man pages:</para>
+@y
+<para>
+特定の man ページを表示する際に発生する問題を修正するために、以下のパッチを適用します。
+</para>
+@z
+
+@x
     <para>Prepare Man-DB for compilation:</para>
 @y
     <para>Man-DB をコンパイルするための準備をします。</para>
@@ -418,16 +427,20 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
         <seg>accessdb, apropos (link to whatis), catman, lexgrog, man, mandb,
         manpath, whatis, and zsoelim</seg>
+        <seg>/usr/lib/man-db, /usr/share/doc/man-db</seg>
 @y
         <seg>accessdb, apropos (whatis へのリンク), catman, lexgrog, man, mandb,
         manpath, whatis, zsoelim</seg>
+        <seg>/usr/lib/man-db, /usr/share/doc/man-db</seg>
 @z
 
 @x

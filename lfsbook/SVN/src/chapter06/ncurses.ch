@@ -168,9 +168,11 @@ LSB 対応を要する場合で、それがワイド文字対応ではないラ�
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
+      <segtitle>インストールディレクトリ</segtitle>
 @z
 
 @x
@@ -180,6 +182,7 @@ LSB 対応を要する場合で、それがワイド文字対応ではないラ�
         libformw.{a,so}, libmenuw.{a,so}, libncurses++w.a, libncursesw.{a,so},
         libpanelw.{a,so} and their non-wide-character counterparts without "w"
         in the library names.</seg>
+        <seg>/usr/share/tabset, /usr/share/terminfo</seg>
 @y
         <seg>captoinfo (tic へのリンク), clear, infocmp, infotocap (tic へのリンク),
         ncursesw5-config, reset (tset へのリンク), <!--tabs,--> tic, toe, tput, tset</seg>
@@ -188,6 +191,7 @@ LSB 対応を要する場合で、それがワイド文字対応ではないラ�
         libpanelw.{a,so}
         これらに加えてワイド文字対応ではない通常のライブラリで、その名称から "w" を取り除いたもの。
         </seg>
+        <seg>/usr/share/tabset, /usr/share/terminfo</seg>
 @z
 
 @x
