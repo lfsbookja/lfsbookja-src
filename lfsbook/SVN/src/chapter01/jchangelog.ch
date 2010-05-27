@@ -50,6 +50,16 @@
 -->
 
     <listitem>
+      <para>2010-05-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter05/generalinstructions.ch: SVN-20100526, r9268 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-05-24</para>
       <itemizedlist>
         <listitem>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -121,5 +130,41 @@ C 言語の標準はよく変更されますが、パッケージの中には古
 ユーザーによってパッケージファイルの伸張 (解凍) を行い、<command>cd</command>
 コマンドによりそのパッケージディレクトリに移動します。
 </para>
+@z
+
+@x
+  <para>To re-emphasize the build process:</para>
+@y
+<para>
+ビルド作業では以下の点が重要です。
+</para>
+@z
+
+@x
+<screen role="nodump">
+1. Place all the sources and patches in a directory that will be accessible from the 
+   chroot envronment such as /mnt/lfs/sources/.  Do <emphasis>not</emphasis> put sources in /mnt/lfs/tools/.
+2. Change to the sources directory.
+3. For each package:
+   a. Using the tar program, extract the package to be built.
+   b. Change to the directory created when the package was extracted.
+   c. Follow the book's instructions for building the package.
+   d. Change back to the sources directory.
+   e. Delete the extracted source directory and any &lt;package&gt;-build 
+      directories that were created in the build process.</screen>
+@y
+<screen role="nodump">
+1. ソースやパッチファイルを配置するディレクトリは /mnt/lfs/sources/ などのように
+   chroot 環境でもアクセスが出来るディレクトリとしてください。
+   /mnt/lfs/tools/ ディレクトリにソースを置くことは <emphasis>やめて</emphasis> ください。
+2. ソースディレクトリに入ります。
+3. 各パッケージにおいては、
+   a. tar コマンドを使ってパッケージの tarball を伸張 (解凍) します。
+   b. パッケージの伸張 (解凍) 後に生成されたディレクトリに入ります。
+   c. 本書の手順に従ってビルド作業を行っていきます。
+   d. ソースディレクトリに戻ります。
+   e. ビルド作業を通じて生成されたパッケージディレクトリを削除します。さらに
+      &lt;package&gt;-build なるディレクトリを生成していた場合は、それも削除します。
+</screen>
 @z
 

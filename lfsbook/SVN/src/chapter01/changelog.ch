@@ -57,6 +57,23 @@
 @z
 
 @x
+      <para>2010-05-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add additional information to clarify the 
+          build process.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-05-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ビルド手順を明確にするための記述を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-05-23</para>
       <itemizedlist>
         <listitem>
