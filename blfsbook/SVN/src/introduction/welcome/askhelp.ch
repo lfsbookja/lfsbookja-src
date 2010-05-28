@@ -46,7 +46,9 @@
 @x
     <para>Before asking for help, you should review the following items:</para>
 @y
-    <para>Before asking for help, you should review the following items:</para>
+<para>
+質問を投げる前に以下の項目を確認してください。
+</para>
 @z
 
 @x
@@ -112,45 +114,56 @@
 @x
     <title>Things to Mention</title>
 @y
-    <title>Things to Mention</title>
+    <title>特記事項</title>
 @z
 
 @x
     <para>Apart from a brief explanation of the problem you're having, the
     essential things to include in your request are:</para>
 @y
-    <para>Apart from a brief explanation of the problem you're having, the
-    essential things to include in your request are:</para>
+<para>
+問題が発生し問い合わせをする場合には、以下に示す基本的な情報を含めてください。
+</para>
 @z
 
 @x
         <para>the version of the book you are using (being &version;),</para>
 @y
-        <para>the version of the book you are using (being &version;),</para>
+<para>
+お使いの本ブックのバージョン。 (本書の場合 &version;)
+</para>
 @z
 
 @x
         <para>the package or section giving you problems,</para>
 @y
-        <para>the package or section giving you problems,</para>
+<para>
+問題が発生したパッケージ、または本書内の該当の章または節。
+</para>
 @z
 
 @x
         <para>the exact error message or symptom you are receiving,</para>
 @y
-        <para>the exact error message or symptom you are receiving,</para>
+<para>
+問題となったエラーメッセージや状況に対する詳細な情報。
+</para>
 @z
 
 @x
         <para>whether you have deviated from the book or LFS at all,</para>
 @y
-        <para>whether you have deviated from the book or LFS at all,</para>
+<para>
+本書や LFS ブックどおりに作業しているか、逸脱していないかの情報。
+</para>
 @z
 
 @x
         <para>if you are installing a BLFS package on a non-LFS system.</para>
 @y
-        <para>if you are installing a BLFS package on a non-LFS system.</para>
+<para>
+BLFS パッケージ類を LFS システム以外にてインストールしているかどうか。
+</para>
 @z
 
 @x

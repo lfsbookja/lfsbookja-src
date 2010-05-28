@@ -84,19 +84,25 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="alsa-lib"/>,
+    <xref linkend="cyrus-sasl"/>
+    <xref linkend="expat"/>
     <ulink url="http://sourceforge.net/projects/libavc1394/">libavc1394</ulink>,
     <xref linkend="libdv"/>,
     <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
     <xref linkend="openldap"/>,
+    <xref linkend="openssl"/>,
     <xref linkend="sdl"/>, and
     <xref linkend="speex"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="alsa-lib"/>,
+    <xref linkend="cyrus-sasl"/>
+    <xref linkend="expat"/>
     <ulink url="http://sourceforge.net/projects/libavc1394/">libavc1394</ulink>,
     <xref linkend="libdv"/>,
     <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
     <xref linkend="openldap"/>,
+    <xref linkend="openssl"/>,
     <xref linkend="sdl"/>,
     <xref linkend="speex"/></para>
 @z

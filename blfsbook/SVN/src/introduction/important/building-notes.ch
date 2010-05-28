@@ -348,8 +348,8 @@ unprivileged user. The book will advise you on instructions that need
     <bridgehead renderas="sect3">Using <command>yes</command> to Automate
     Input</bridgehead>
 @y
-    <bridgehead renderas="sect3">Using <command>yes</command> to Automate
-    Input</bridgehead>
+    <bridgehead renderas="sect3"><command>yes</command>
+    を使った入力の自動化</bridgehead>
 @z
 
 @x
@@ -362,22 +362,25 @@ unprivileged user. The book will advise you on instructions that need
     <keycap>Y</keycap> key or entering a string of text. Perhaps the easiest
     way to show its use is in an example.</para>
 @y
-    <para>Sometimes you will only need to provide one response, or provide the
-    same response to many prompts. For these instances, the
-    <command>yes</command> command works really well. The
-    <command>yes</command> command can be used to provide a response (the same
-    one) to one or more instances of questions. It can be used to simulate
-    pressing just the <keycap>Enter</keycap> key, entering the
-    <keycap>Y</keycap> key or entering a string of text. Perhaps the easiest
-    way to show its use is in an example.</para>
+<para>
+入力プロンプトに対して決まった内容を入力したり、それが複数回あってもすべて同一の答えを入力するような場合があります。
+そういった時は <command>yes</command> コマンドを利用すると便利です。
+<command>yes</command> コマンドは、何度かある問合せ入力に対して同一の答えを入力するものです。
+入力内容として、単に <keycap>Enter</keycap>
+キーを入力する、<keycap>Y</keycap>
+キーを入力する、所定の文字列を入力する、といったことが可能です。
+単純な利用例を以下に示します。
+</para>
 @z
 
 @x
     <para>First, create a short <application>Bash</application> script by
     entering the following commands:</para>
 @y
-    <para>First, create a short <application>Bash</application> script by
-    entering the following commands:</para>
+<para>
+初めに以下のコマンドを実行して <application>Bash</application>
+スクリプトを生成します。
+</para>
 @z
 
 @x
@@ -388,12 +391,13 @@ unprivileged user. The book will advise you on instructions that need
     <command>yes</command> command to automate the entering of a
     response:</para>
 @y
-    <para>Now run the script by issuing <command>./blfs-yes-test1</command> from
-    the command line. It will wait for a response, which can be anything (or
-    nothing) followed by the <keycap>Enter</keycap> key. After entering
-    something, the result will be echoed to the screen. Now use the
-    <command>yes</command> command to automate the entering of a
-    response:</para>
+<para>
+まずはこのスクリプト <command>./blfs-yes-test1</command> をコマンドラインから実行してみます。
+入力が促されて処理が止まるので、何かを入力して
+(あるいは何も入力せずに) <keycap>Enter</keycap> キーを入力します。
+入力した内容は画面上に表示されます。
+さてそこで <command>yes</command> コマンドを用い、入力を自動化することにします。
+</para>
 @z
 
 @x
@@ -401,9 +405,11 @@ unprivileged user. The book will advise you on instructions that need
     results in <keycap>y</keycap> being passed to the script. Now try it with a
     string of text:</para>
 @y
-    <para>Notice that piping <command>yes</command> by itself to the script
-    results in <keycap>y</keycap> being passed to the script. Now try it with a
-    string of text:</para>
+<para>
+この場合、<command>yes</command> のパイプ処理を通じて、スクリプトに対しては
+<keycap>y</keycap> が入力されたものとして受け渡されます。
+以下は特定の文字列を受け渡すような例です。
+</para>
 @z
 
 @x

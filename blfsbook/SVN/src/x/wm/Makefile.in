@@ -328,7 +328,10 @@ ctie:
 
 fluxbox.xml: $(BOOKdir)/$@ $(srcdir)/fluxbox.ch
 metacity.xml: $(BOOKdir)/$@ $(srcdir)/metacity.ch
-other-wms.xml: $(BOOKdir)/$@ $(srcdir)/other-wms.ch
+other-wms.xml.tmp: $(BOOKdir)/other-wms.xml
+	sed -e "s/Motif\xAE/Motif\&reg;/" $^ > $@
+other-wms.xml: ./other-wms.xml.tmp $(srcdir)/other-wms.ch
+	$(top_builddir)/$(CTIE) -m $@ $^
 sawfish.xml: $(BOOKdir)/$@ $(srcdir)/sawfish.ch
 wm.xml: $(BOOKdir)/$@ $(srcdir)/wm.ch
 xfce.xml: $(BOOKdir)/$@ $(srcdir)/xfce.ch

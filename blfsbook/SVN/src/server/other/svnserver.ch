@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -28,8 +37,10 @@
     <para>This section will describe how to set up, administer and secure
     a <application>Subversion</application> server.</para>
 @y
-    <para>This section will describe how to set up, administer and secure
-    a <application>Subversion</application> server.</para>
+<para>
+この節では <application>Subversion</application>
+サーバーの構築、および安全な管理方法などについて説明します。
+</para>
 @z
 
 @x
@@ -43,7 +54,7 @@
     <para><xref linkend="subversion"/> and
     <xref linkend="openssh"/></para>
 @y
-    <bridgehead renderas="sect4">必須</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para><xref linkend="subversion"/> と
     <xref linkend="openssh"/></para>
 @z
@@ -75,8 +86,8 @@ access.
     consists of the following steps:</para>
 @y
 <para>
-Configuration of the <application>Subversion</application> server
-consists of the following steps:
+<application>Subversion</application>
+サーバーの設定は、以下に示す手順により実施します。
 </para>
 @z
 
@@ -95,10 +106,10 @@ consists of the following steps:
       user and group with the following commands:</para>
 @y
 <para>
-You'll need to be user
-<systemitem class='username'>root</systemitem> for the initial portion of
-configuration. Create the <systemitem class="username">svn</systemitem>
-user and group with the following commands:
+設定を行うには、まずは <systemitem class='username'>root</systemitem> 
+ユーザーになって操作します。
+以下のコマンドを実行して <systemitem class="username">svn</systemitem>
+ユーザーおよびグループを生成します。
 </para>
 @z
 
@@ -110,11 +121,11 @@ user and group with the following commands:
       user to that group with the following commands:</para>
 @y
 <para>
-If you plan to have multiple repositories, you should have a
-group dedicated to each repository for ease of administration. Create
-the <systemitem class="groupname">svntest</systemitem> group for the test
-repository and add the <systemitem class="username">svn</systemitem>
-user to that group with the following commands:
+複数のリポジトリを利用するなら、それらのリポジトリを取り扱うグループを1つ作っておけば、管理が容易になります。
+以下のコマンドにより、テストリポジトリを取り扱う <systemitem class="groupname">svntest</systemitem>
+グループを生成します。
+そして <systemitem class="username">svn</systemitem>
+ユーザーをそのグループに加えます。
 </para>
 @z
 
@@ -125,10 +136,10 @@ user to that group with the following commands:
       <command>svn</command> and <command>svnserve</command>:</para>
 @y
 <para>
-Additionally you should set <command>umask 002</command> while
-working with a repository so that all new files will be writable by
-owner and group. This is made mandatory by creating a wrapper script for
-<command>svn</command> and <command>svnserve</command>:
+さらに新しいファイルへの書き込み権限を与えるには、所有者とそのグループがリポジトリを取り扱えるものとしなければならず、
+<command>umask 002</command> を実行する必要があります。
+<command>svn</command> と <command>svnserve</command>
+に対して、ラッパースクリプトを生成することで、これを確実に実現します。
 </para>
 @z
 
@@ -138,9 +149,10 @@ owner and group. This is made mandatory by creating a wrapper script for
         <command>/usr/sbin/httpd</command> in a similar script.</para>
 @y
 <para>
-If you use <application>Apache</application> for working with
-the repository over HTTP, even for anonymous access, you should wrap
-<command>/usr/sbin/httpd</command> in a similar script.
+<application>Apache</application>
+を使ってリポジトリに対し HTTP 経由でのアクセスを行う場合、特に匿名アクセスも可能とする場合、
+<command>/usr/sbin/httpd</command>
+コマンドに対して、上と同様のラップスクリプトを生成する必要があります。
 </para>
 @z
 
