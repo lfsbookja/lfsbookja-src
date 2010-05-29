@@ -57,6 +57,48 @@
 @z
 
 @x
+      <para>2010-05-29</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Udev-156.  Fixes
+           <ulink url="&lfs-ticket-root;2671">#2671</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Pkg-config-0.25.  Fixes
+           <ulink url="&lfs-ticket-root;2670">#2670</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Glibc-2.11.2.  Fixes
+           <ulink url="&lfs-ticket-root;2669">#2669</ulink>.</para>
+         </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Gettext-0.18. Fixes
+          <ulink url="&lfs-ticket-root;2660">#2660</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-05-29</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Udev-156 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2671">#2671</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Pkg-config-0.25 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2670">#2670</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Glibc-2.11.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2669">#2669</ulink> を Fix に。</para>
+         </listitem>
+        <listitem>
+          <para>[matthew] - Gettext-0.18 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2660">#2660</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-05-26</para>
       <itemizedlist>
         <listitem>

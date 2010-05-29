@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,6 +31,16 @@
 @y
 <para>
 最新のパッケージリリース以降に判明した不備を修正します。
+</para>
+@z
+
+@x
+    <para>Now, fix a known issue with the test suite that causes one of the
+    tests to fail:</para>
+@y
+<para>
+テストスイートにて、テストの一部が失敗してしまうことが知られています。
+これを修正します。
 </para>
 @z
 

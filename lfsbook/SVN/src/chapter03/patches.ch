@@ -197,17 +197,31 @@
       </listitem>
 @z
 
+% @x
+%       <term>Gettext Upstream Fix Patch - <token>&gettext-upstream_fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&gettext-upstream_fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&gettext-upstream_fixes-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Gettext Upstream Fix Patch - <token>&gettext-upstream_fixes-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&gettext-upstream_fixes-patch;"/></para>
+%         <para>MD5 sum: <literal>&gettext-upstream_fixes-patch-md5;</literal></para>
+%       </listitem>
+% @z
+
 @x
-      <term>Gettext Upstream Fix Patch - <token>&gettext-upstream_fixes-patch-size;</token>:</term>
+      <term>Gettext Skip Test Patch - <token>&gettext-skip_test-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&gettext-upstream_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&gettext-upstream_fixes-patch-md5;</literal></para>
+        <para>Download: <ulink url="&patches-root;&gettext-skip_test-patch;"/></para>
+        <para>MD5 sum: <literal>&gettext-skip_test-patch-md5;</literal></para>
       </listitem>
 @y
-      <term>Gettext Upstream Fix Patch - <token>&gettext-upstream_fixes-patch-size;</token>:</term>
+      <term>Gettext Skip Test Patch - <token>&gettext-skip_test-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&gettext-upstream_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&gettext-upstream_fixes-patch-md5;</literal></para>
+        <para>ダウンロード: <ulink url="&patches-root;&gettext-skip_test-patch;"/></para>
+        <para>MD5 sum: <literal>&gettext-skip_test-patch-md5;</literal></para>
       </listitem>
 @z
 
