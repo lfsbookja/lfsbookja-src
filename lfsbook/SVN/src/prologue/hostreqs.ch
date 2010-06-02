@@ -43,9 +43,7 @@
    been tested.</para>
 @y
 <para>
-
-Earlier versions of the listed software packages may work, but has not
-been tested.
+各パッケージにて、示しているバージョンより古いものでも動作するかもしれませんが、テストは行っていません。
 </para>
 @z
 
