@@ -50,6 +50,16 @@
 -->
 
     <listitem>
+      <para>2010-06-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/prologue/hostreqs.ch: SVN-20100601, r9295 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-05-29</para>
       <itemizedlist>
         <listitem>

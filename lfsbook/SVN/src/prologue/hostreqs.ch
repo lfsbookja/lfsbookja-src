@@ -39,116 +39,106 @@
 @z
 
 @x
-      <para><emphasis role="strong">Bash-2.05a</emphasis> (/bin/sh
+   <para>Earlier versions of the listed software packages may work, but has not
+   been tested.</para>
+@y
+<para>
+
+Earlier versions of the listed software packages may work, but has not
+been tested.
+</para>
+@z
+
+@x
+      <para><emphasis role="strong">Bash-3.2</emphasis> (/bin/sh
       should be a symbolic or hard link to bash)</para>
 @y
 <para>
-<emphasis role="strong">Bash-2.05a</emphasis>
+<emphasis role="strong">Bash-3.2</emphasis>
 (/bin/sh が bash に対するシンボリックリンクまたはハードリンクである必要があります。)
 </para>
 @z
 
 @x
-      <para><emphasis role="strong">Binutils-2.12</emphasis> (Versions
+      <para><emphasis role="strong">Binutils-2.17</emphasis> (Versions
       greater than &binutils-version; are not recommended as they have
       not been tested)</para>
 @y
 <para>
-<emphasis role="strong">Binutils-2.12</emphasis>
+<emphasis role="strong">Binutils-2.17</emphasis>
 (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
 </para>
 @z
 
 @x
-      <para><emphasis role="strong">Bison-1.875</emphasis> (/usr/bin/yacc
+      <para><emphasis role="strong">Bison-2.3</emphasis> (/usr/bin/yacc
       should be a link to bison or small script that executes bison)</para>
 @y
 <para>
-<emphasis role="strong">Bison-1.875</emphasis>
+<emphasis role="strong">Bison-2.3</emphasis>
 (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
 </para>
 @z
 
 @x
-      <para><emphasis role="strong">Coreutils-5.0</emphasis> (or Sh-Utils-2.0,
-      Textutils-2.0, and Fileutils-4.1)</para>
-@y
-<para>
-<emphasis role="strong">Coreutils-5.0</emphasis>
-(または Sh-Utils-2.0 と Textutils-2.0 と Fileutils-4.1)
-</para>
-@z
-
-@x
-      <para><emphasis role="strong">Gawk-3.0</emphasis> (/usr/bin/awk
+      <para><emphasis role="strong">Gawk-3.1.5</emphasis> (/usr/bin/awk
       should be a link to gawk)</para>
 @y
 <para>
-<emphasis role="strong">Gawk-3.0</emphasis>
+<emphasis role="strong">Gawk-3.1.5</emphasis>
 (/usr/bin/awk が gawk へのリンクである必要があります。)
 </para>
 @z
 
 @x
-      <para><emphasis role="strong">Gcc-3.0.1</emphasis> (Versions
+      <para><emphasis role="strong">Gcc-4.1.2</emphasis> (Versions
       greater than &gcc-version; are not recommended as they have not
       been tested)</para>
 @y
 <para>
-<emphasis role="strong">Gcc-3.0.1</emphasis>
+<emphasis role="strong">Gcc-4.1.2</emphasis>
 (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
 </para>
 @z
 
 @x
-      <para><emphasis role="strong">Glibc-2.2.5</emphasis> (Versions
+      <para><emphasis role="strong">Glibc-2.5.1</emphasis> (Versions
       greater than &glibc-version; are not recommended as they have
       not been tested)</para>
 @y
 <para>
-<emphasis role="strong">Glibc-2.2.5</emphasis>
+<emphasis role="strong">Glibc-2.5.1</emphasis>
 (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
 </para>
 @z
 
 @x
-      <para><emphasis role="strong">Linux Kernel-2.6.18</emphasis>
-      (having been compiled with GCC-3.0 or greater)</para>
+      <para><emphasis role="strong">Linux Kernel-2.6.22.5</emphasis>
+      (having been compiled with GCC-4.12 or greater)</para>
 @y
 <para>
-<emphasis role="strong">Linux Kernel-2.6.18</emphasis>
-(GCC-3.0 以上でコンパイルされたもの)
+<emphasis role="strong">Linux Kernel-2.6.22.5</emphasis>
+(GCC-4.12 以上でコンパイルされたもの)
 </para>
 @z
 
 @x
       <para>The reason for the kernel version requirement is that we specify
       that version when building <application>glibc</application> in Chapter 6
-      at the recommendation of the developers.  This can be overridden if
-      desired but at least a 2.6.0 kernel is required because thread-local
-      storage support in Binutils will not be built and the Native POSIX
-      Threading Library (NPTL) test suite will segfault if the host's kernel
-      isn't at least a 2.6.0 version compiled with a 3.0 or later release of
-      GCC.</para>
+      at the recommendation of the developers.  </para>
 @y
 <para>
 カーネルのバージョンを指定しているのは、第6章にて
 <application>glibc</application>
 をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
-指定されたバージョンにきっちり従う必要はありませんが、少なくともバージョン 2.6.0 以上である必要があります。
-カーネルのバージョンが 2.6.0 以上でなく、さらにカーネルをビルドした際の GCC
-のバージョンが 3.0 以上ではない場合、Binutils のスレッドローカル格納領域
-(thread-local storage)
-へのサポートが適切に構築されず、ネイティブ POSIX スレッド・ライブラリ (NPTL)
-のテストスイートがセグメンテーションフォールトを起こしてしまいます。
 </para>
 @z
 
 @x
-      <para>If the host kernel is either earlier than 2.6.18, or it was not
-      compiled using a GCC-3.0 (or later) compiler, you will need to replace
+      <para>If the host kernel is either earlier than 2.6.22.5, or it was not
+      compiled using a GCC-4.12 (or later) compiler, you will need to replace
       the kernel with one adhering to the specifications. There are two ways
-      you can go about this. First, see if your Linux vendor provides a 2.6.18
+      you can go about this. First, see if your Linux vendor provides a 2.6.22.5
       or later kernel package. If so, you may wish to install it. If your
       vendor doesn't offer an acceptable kernel package, or you would prefer not to
       install it, you can compile a kernel yourself. Instructions for
@@ -156,15 +146,15 @@
       uses GRUB) are located in <xref linkend="chapter-bootable"/>.</para>
 @y
 <para>
-ホストシステムのカーネルバージョンが 2.6.0 以前であったり、カーネルをビルドした際の GCC
-のバージョンが 3.0 以前であった場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
+ホストシステムのカーネルバージョンが 2.6.22.5 より古い場合、あるいはカーネルをビルドした際の GCC
+のバージョンが 4.12 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
 これを実施するには２つの方法があります。
-お使いの Linux システムのベンダーがカーネル 2.6.18 を提供しているかを調べることです。
-もしそれがあるなら、これを利用することができます。
-もしそれがない場合、あるいはあったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
-カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダーの設定方法については
+お使いの Linux システムのベンダーが 2.6.22.5 以上のバージョンのカーネルを提供しているかを調べることです。
+提供していれば、それをインストールします。
+もしそれがない場合や、あったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
+カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダの設定方法については
 <xref linkend="chapter-bootable"/>
-が参考になります。
+を参照してください。
 </para>
 @z
 

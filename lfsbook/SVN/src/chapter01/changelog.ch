@@ -57,6 +57,23 @@
 @z
 
 @x
+      <para>2010-06-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update host requirements to those packages
+          built in LFS-6.3.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-6.3 にて構築していたホスト要件を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-05-29</para>
       <itemizedlist>
          <listitem>
