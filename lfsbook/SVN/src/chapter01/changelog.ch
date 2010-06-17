@@ -57,6 +57,41 @@
 @z
 
 @x
+      <para>2010-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update kernel version specified in Chapter 5
+          glibc instructions to be consistent with host requirements and
+          Chapter 6 glibc.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第5章、第6章の Glibc の構築にて指定するカーネルのバージョンを、ホスト要件に合致するように更新。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-06-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[robert] - Make rmdir verbose when installing udev.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[robert] - Udev のインストール時に rmdir に -v オプション追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-06-01</para>
       <itemizedlist>
         <listitem>

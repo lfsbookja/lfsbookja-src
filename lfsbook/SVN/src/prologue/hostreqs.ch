@@ -112,11 +112,11 @@
 
 @x
       <para><emphasis role="strong">Linux Kernel-2.6.22.5</emphasis>
-      (having been compiled with GCC-4.12 or greater)</para>
+      (having been compiled with GCC-4.1.2 or greater)</para>
 @y
 <para>
 <emphasis role="strong">Linux Kernel-2.6.22.5</emphasis>
-(GCC-4.12 以上でコンパイルされたもの)
+(GCC-4.1.2 以上でコンパイルされたもの)
 </para>
 @z
 
