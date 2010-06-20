@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -17,6 +26,16 @@ DejaGNU パッケージは、他のプログラムをテストするフレーム
     <title>Installation of DejaGNU</title>
 @y
     <title>DejaGNUのインストール</title>
+@z
+
+@x
+    <para>The most recent version of this package was released in 2004.  Apply
+    some fixes that have accumulated since then:</para>
+@y
+<para>
+本パッケージの最新バージョンは 2004 年にリリースされています。
+それ以降に発生した修正を適用します。
+</para>
 @z
 
 @x

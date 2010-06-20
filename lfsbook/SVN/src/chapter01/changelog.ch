@@ -57,6 +57,55 @@
 @z
 
 @x
+      <para>2010-06-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a consolidated set of patches to DejaGNU.
+          Fixes <ulink url="&lfs-ticket-root;2684">#2684</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - DejaGNU に対する累積的なパッチを追加。
+          <ulink url="&lfs-ticket-root;2684">#2684</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-06-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Module-Init-Tools-3.12.
+          Fixes <ulink url="&lfs-ticket-root;2675">#2675</ulink>
+          and <ulink url="&lfs-ticket-root;2688">#2688</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a sed to the current kernel to work around
+          a bug in linux-2.6.34 and earlier.  This change will be removed 
+          when incorporated into a subsequent verion of the kernel. 
+          Fixes <ulink url="&lfs-ticket-root;2662">#2662</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Module-Init-Tools-3.12 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2675">#2675</ulink>
+          と <ulink url="&lfs-ticket-root;2688">#2688</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-2.6.34 以前に対してのバグを一時的に sed コマンドにより解消。
+          この変更は、後にカーネル最新版に組み入れられた際に削除予定。
+          <ulink url="&lfs-ticket-root;2662">#2662</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-06-16</para>
       <itemizedlist>
         <listitem>

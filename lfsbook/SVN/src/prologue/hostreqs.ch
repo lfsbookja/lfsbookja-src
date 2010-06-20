@@ -134,7 +134,7 @@
 
 @x
       <para>If the host kernel is either earlier than 2.6.22.5, or it was not
-      compiled using a GCC-4.12 (or later) compiler, you will need to replace
+      compiled using a GCC-4.1.2 (or later) compiler, you will need to replace
       the kernel with one adhering to the specifications. There are two ways
       you can go about this. First, see if your Linux vendor provides a 2.6.22.5
       or later kernel package. If so, you may wish to install it. If your
@@ -145,7 +145,7 @@
 @y
 <para>
 ホストシステムのカーネルバージョンが 2.6.22.5 より古い場合、あるいはカーネルをビルドした際の GCC
-のバージョンが 4.12 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
+のバージョンが 4.1.2 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
 これを実施するには２つの方法があります。
 お使いの Linux システムのベンダーが 2.6.22.5 以上のバージョンのカーネルを提供しているかを調べることです。
 提供していれば、それをインストールします。

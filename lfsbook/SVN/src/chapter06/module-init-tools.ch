@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -17,6 +26,15 @@ Module-Init-Tools パッケージは、Linux カーネル 2.5.47 以上におい
     <title>Installation of Module-Init-Tools</title>
 @y
     <title>Module-Init-Tools のインストール</title>
+@z
+
+@x
+    <para>To avoid a problem with regenerating the man pages when not needed, 
+    first rewrite a file that just points to another man page:</para>
+@y
+<para>
+Man ページの生成が不要であるにも関わらず再生成してしまう不備を修正するために、適切な他の Man ページを指し示すような修正を行います。
+</para>
 @z
 
 @x

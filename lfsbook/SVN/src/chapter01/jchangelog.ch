@@ -50,6 +50,21 @@
 -->
 
     <listitem>
+      <para>2010-06-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter03/patches.ch,
+          src/chapter05/dejagnu.ch,
+          src/chapter06/module-init-tools.ch,
+          src/chapter08/kernel.ch,
+          src/prologue/hostreqs.ch
+          : SVN-20100618, r9304 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-06-17</para>
       <itemizedlist>
         <listitem>

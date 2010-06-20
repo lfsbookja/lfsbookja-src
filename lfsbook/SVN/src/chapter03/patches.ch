@@ -127,19 +127,19 @@
       </listitem>
 @z
 
-% @x
-%       <term>Diffutils Internationalization Fixes Patch - <token>&diffutils-i18n-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&diffutils-i18n-patch;"/></para>
-%         <para>MD5 sum: <literal>&diffutils-i18n-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Diffutils Internationalization Fixes Patch - <token>&diffutils-i18n-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&diffutils-i18n-patch;"/></para>
-%         <para>MD5 sum: <literal>&diffutils-i18n-patch-md5;</literal></para>
-%       </listitem>
-% @z
+@x
+      <term>Dejagnu Consolidated Patch - <token>&dejagnu-consolidated-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&dejagnu-consolidated-patch;"/></para>
+        <para>MD5 sum: <literal>&dejagnu-consolidated-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Dejagnu Consolidated Patch - <token>&dejagnu-consolidated-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&dejagnu-consolidated-patch;"/></para>
+        <para>MD5 sum: <literal>&dejagnu-consolidated-patch-md5;</literal></para>
+      </listitem>
+@z
 
 @x
       <term>Expect Spawn Patch - <token>&expect-spawn-patch-size;</token>:</term>
