@@ -28,6 +28,10 @@
     本節はオリジナルの LFS ブックにはないものです。
     LFS ブック日本語版の変更履歴を示すために設けています。
    </para>
+   <para>
+   「SVN-20100101」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
+   また「r1234」は、オリジナル LFS ブックの XML ソースファイルが Subversion により管理されており、そのリビジョン番号を意味します。
+   </para>
   </note>
 
   <itemizedlist>
@@ -52,6 +56,17 @@
     <listitem>
       <para>2010-06-22</para>
       <itemizedlist>
+        <listitem>
+          <para>[matsuand] - 
+          「日本語訳情報」欄にて、若干の説明追記。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - 
+          src/chapter05/gcc-pass1.ch
+          : SVN-20100622, r9310 対応。
+          </para>
+        </listitem>
         <listitem>
           <para>[matsuand] - 
           src/chapter03/patches.ch,

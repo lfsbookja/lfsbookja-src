@@ -57,6 +57,32 @@
 @z
 
 @x
+      <para>2010-06-22</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Man-Pages-3.25.  Fixes
+           <ulink url="&lfs-ticket-root;2695">#2695</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to MPFR-3.0.0.  Fixes
+           <ulink url="&lfs-ticket-root;2687">#2687</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-22</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Man-Pages-3.25 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2695">#2695</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - MPFR-3.0.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2687">#2687</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-06-21</para>
       <itemizedlist>
          <listitem>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -102,6 +111,22 @@ x86_64 に対して LFS は まだ multilib のサポートをしていません
 <para>
 このオプションは C コンパイラのみビルドすることを指示します。
 この時点で必要なのはこの言語だけだからです。
+</para>
+@z
+
+@x
+          <para>This option tells GCC where the GMP headers are located.</para>
+@y
+<para>
+このオプションは GCC に対して GMP のヘッダファイルの場所を指定するものです。
+</para>
+@z
+
+@x
+          <para>This option tells GCC where the GMP library is located.</para>
+@y
+<para>
+このオプションは GCC に対して GMP のライブラリファイルの場所を指定するものです。
 </para>
 @z
 
