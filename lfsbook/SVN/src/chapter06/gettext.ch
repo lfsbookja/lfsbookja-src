@@ -33,15 +33,6 @@ Gettext パッケージは国際化を行うユーティリティを提供しま
 @z
 
 @x
-    <para>Apply a patch that skips a test that otherwise fails due to the absence of an XML parsing library:</para>
-@y
-<para>
-以下のパッチを適用して、テストの一部を実施しないようにします。
-これをしておかないと、XML 解析ライブラリを必要とするテストであるのに、それが存在しないためテストが失敗します。
-</para>
-@z
-
-@x
     <para>Prepare Gettext for compilation:</para>
 @y
     <para>Gettext をコンパイルするための準備をします。</para>

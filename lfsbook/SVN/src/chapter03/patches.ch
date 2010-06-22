@@ -142,30 +142,16 @@
 @z
 
 @x
-      <term>Expect Spawn Patch - <token>&expect-spawn-patch-size;</token>:</term>
+      <term>Expect Tk Configure Patch - <token>&expect-tk-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&expect-spawn-patch;"/></para>
-        <para>MD5 sum: <literal>&expect-spawn-patch-md5;</literal></para>
+        <para>Download: <ulink url="&patches-root;&expect-tk-patch;"/></para>
+        <para>MD5 sum: <literal>&expect-tk-patch-md5;</literal></para>
       </listitem>
 @y
-      <term>Expect Spawn Patch - <token>&expect-spawn-patch-size;</token>:</term>
+      <term>Expect Tk Configure Patch - <token>&expect-tk-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&expect-spawn-patch;"/></para>
-        <para>MD5 sum: <literal>&expect-spawn-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Expect Tcl Patch - <token>&expect-tcl-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&expect-tcl-patch;"/></para>
-        <para>MD5 sum: <literal>&expect-tcl-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Expect Tcl Patch - <token>&expect-tcl-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&expect-tcl-patch;"/></para>
-        <para>MD5 sum: <literal>&expect-tcl-patch-md5;</literal></para>
+        <para>ダウンロード: <ulink url="&patches-root;&expect-tk-patch;"/></para>
+        <para>MD5 sum: <literal>&expect-tk-patch-md5;</literal></para>
       </listitem>
 @z
 
@@ -194,34 +180,6 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&gcc-startfiles-patch;"/></para>
         <para>MD5 sum: <literal>&gcc-startfiles-patch-md5;</literal></para>
-      </listitem>
-@z
-
-% @x
-%       <term>Gettext Upstream Fix Patch - <token>&gettext-upstream_fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&gettext-upstream_fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&gettext-upstream_fixes-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Gettext Upstream Fix Patch - <token>&gettext-upstream_fixes-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&gettext-upstream_fixes-patch;"/></para>
-%         <para>MD5 sum: <literal>&gettext-upstream_fixes-patch-md5;</literal></para>
-%       </listitem>
-% @z
-
-@x
-      <term>Gettext Skip Test Patch - <token>&gettext-skip_test-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&gettext-skip_test-patch;"/></para>
-        <para>MD5 sum: <literal>&gettext-skip_test-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Gettext Skip Test Patch - <token>&gettext-skip_test-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&gettext-skip_test-patch;"/></para>
-        <para>MD5 sum: <literal>&gettext-skip_test-patch-md5;</literal></para>
       </listitem>
 @z
 

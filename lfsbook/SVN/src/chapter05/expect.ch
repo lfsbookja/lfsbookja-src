@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,20 +29,14 @@ Expect パッケージは、他のプログラムと対話的に処理を行う�
 @z
 
 @x
-    <para>First, fix a bug that can result in false failures during the GCC test
-    suite run:</para>
+    <para>First, apply a patch to remove the dependency on Tk, that may be
+    present on the host but will not be available once we enter the
+    <command>chroot</command> environment:</para>
 @y
 <para>
-まずバグフィックスを行います。
-これは GCC のテストスイートの失敗を回避するものです。
-</para>
-@z
-
-@x
-    <para>Next, fix a bug that is a result of recent Tcl changes:</para>
-@y
-<para>
-次のバグフィックスは Tcl の最近の変更に対応するものです。
+Tk への依存性をなくすためのパッチを適用します。
+Tk はホストシステム上に存在するかもしれませんが、<command>chroot</command>
+環境に入った後には利用できなくなります。
 </para>
 @z
 

@@ -57,6 +57,48 @@
 @z
 
 @x
+      <para>2010-06-21</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Udev-157.  Fixes
+           <ulink url="&lfs-ticket-root;2676">#2676</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Gettext-0.18.1.1.  Fixes
+           <ulink url="&lfs-ticket-root;2686">#2686</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Libtool-2.2.10.  Fixes
+           <ulink url="&lfs-ticket-root;2690">#2690</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Expect-5.44.1.15.  Fixes
+           <ulink url="&lfs-ticket-root;2689">#2689</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-21</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Udev-157 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2676">#2676</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Gettext-0.18.1.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2686">#2686</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Libtool-2.2.10 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2690">#2690</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Expect-5.44.1.15 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2689">#2689</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-06-19</para>
       <itemizedlist>
         <listitem>
