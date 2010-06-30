@@ -23,6 +23,12 @@ Udev パッケージはデバイスノードを動的に生成するプログラ
 @z
 
 @x
+        <seg>&udev-ch6-du; plus &udev-testfiles-du; for testfiles</seg>
+@y
+        <seg>&udev-ch6-du; 、また testfiles については &udev-testfiles-du;</seg>
+@z
+
+@x
     <title>Installation of Udev</title>
 @y
     <title>Udev のインストール</title>
@@ -36,6 +42,18 @@ Udev パッケージはデバイスノードを動的に生成するプログラ
 udev-config という Tar アーカイブファイルには
 Udev パッケージをビルドする際の LFS 独自のファイルが含まれています。
 以下のようにしてこのファイルを Udev ソースディレクトリに展開します。
+</para>
+@z
+
+@x
+    <para>The udev-testfiles tarball contains files needed to test udev. The 
+    file expands to an apparant size of about 37MB but the actual disk usage
+    is less than 7MB.</para>
+@y
+<para>
+udev-testfiles という Tar アーカイブファイルには
+Udev のテストに必要なファイルが含まれます。
+このアーカイブファイル内には、見かけ上 37MB のファイルが含まれますが、実際に要するディスク容量は 7MB 以下です。
 </para>
 @z
 
@@ -150,9 +168,9 @@ Udev はそれらを認識できません。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>Test the package.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>本パッケージのテストを実行します。</para>
 @z
 
 @x

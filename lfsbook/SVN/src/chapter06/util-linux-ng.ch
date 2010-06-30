@@ -123,27 +123,27 @@ FHS では <filename>adjtime</filename>
 @x
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
-        dmesg, fdformat, fdisk, findfs, flock, fsck, fsck.cramfs, fsck.minix,
-        getopt, hexdump, hwclock, i386, ionice, ipcmk, ipcrm, ipcs, isosize,
-        ldattach, line, linux32, linux64, logger, look, losetup, lscpu,
+        dmesg, fallocate, fdformat, fdisk, findfs, flock, fsck, fsck.cramfs,
+        fsck.minix, getopt, hexdump, hwclock, i386, ionice, ipcmk, ipcrm, ipcs,
+        isosize, ldattach, line, linux32, linux64, logger, look, losetup, lscpu,
         mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap, more, mount,
         namei, partx, pg, pivot_root, readprofile, rename, renice, rev,
         rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
         swapoff (link to swapon), swapon, switch_root, tailf, taskset, tunelp,
-        ul, umount, uuidd, uuidgen, wall, whereis, and write</seg>
+        ul, umount, unshare, uuidd, uuidgen, wall, whereis, wipefs, and write</seg>
         <seg>libblkid.{a,so}, libuuid.{a,so}</seg>
         <seg>/usr/share/getopt, /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
-        dmesg, fdformat, fdisk, findfs, flock, fsck, fsck.cramfs, fsck.minix,
-        getopt, hexdump, hwclock, i386, ionice, ipcmk, ipcrm, ipcs, isosize,
-        ldattach, line, linux32, linux64, logger, look, losetup, lscpu,
+        dmesg, fallocate, fdformat, fdisk, findfs, flock, fsck, fsck.cramfs,
+        fsck.minix, getopt, hexdump, hwclock, i386, ionice, ipcmk, ipcrm, ipcs,
+        isosize, ldattach, line, linux32, linux64, logger, look, losetup, lscpu,
         mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap, more, mount,
         namei, partx, pg, pivot_root, readprofile, rename, renice, rev,
         rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
         swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, tunelp,
-        ul, umount, uuidd, uuidgen, wall, whereis, write</seg>
+        ul, umount, unshare, uuidd, uuidgen, wall, whereis, wipefs, write</seg>
         <seg>libblkid.{a,so}, libuuid.{a,so}</seg>
         <seg>/usr/share/getopt, /var/lib/hwclock</seg>
 @z
@@ -307,6 +307,14 @@ Linux カーネルに対してパーティションが削除されているか�
 @y
 <para>
 カーネルのブートメッセージをダンプします。
+</para>
+@z
+
+@x fallocate
+          <para>Preallocates space to a file</para>
+@y
+<para>
+ファイルのための領域を事前割り当てします。
 </para>
 @z
 
@@ -787,6 +795,19 @@ Minix ファイルシステムを生成します。
 </para>
 @z
 
+@x unshare
+          <para>Runs a program with some namespaces unshared from parent</para>
+@y
+<!--
+日本語訳註： 内容がよく分からない..
+namespace とは、プログラミング言語に出てくるものと同一か否か?
+調べるべきところ、さぼっている..
+-->
+<para>
+上位の名前空間とは異なる名前空間にてプログラムを実行します。
+</para>
+@z
+
 @x uuidd
           <para>A daemon used by the UUID library to generate time-based
           UUIDs in a secure and guranteed-unique fashion.</para>
@@ -822,7 +843,15 @@ UUID ライブラリから利用されるデーモン。
           for the given command</para>
 @y
 <para>
-指定されたコマンドの実行モジュール・ソース・man ページの場所を表示します。
+指定されたコマンドの実行モジュール、ソース、man ページの場所を表示します。
+</para>
+@z
+
+@x wipefs
+          <para>Wipes a filesystem signature from a device</para>
+@y
+<para>
+ファイルシステムのシグニチャをデバイスから消去します。
 </para>
 @z
 

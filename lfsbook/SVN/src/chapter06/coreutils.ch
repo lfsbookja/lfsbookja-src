@@ -199,9 +199,11 @@ LFS-ブートスクリプトパッケージにあるスクリプトでは、
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed library</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
       <segtitle>インストールプログラム</segtitle>
+      <segtitle>インストールライブラリ</segtitle>
       <segtitle>インストールディレクトリ</segtitle>
 @z
 
@@ -216,7 +218,6 @@ LFS-ブートスクリプトパッケージにあるスクリプトでは、
         split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test, timeout,
         touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq, unlink,
         users, vdir, wc, who, whoami, and yes</seg>
-        <seg>/usr/lib/coreutils</seg>
 @y
         <seg>base64, basename, cat, chcon, chgrp, chmod, chown, chroot, cksum,
         comm, cp, csplit, cut, date, dd, df, dir, dircolors, dirname, du, echo,
@@ -228,7 +229,6 @@ LFS-ブートスクリプトパッケージにあるスクリプトでは、
         split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test, timeout,
         touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq, unlink,
         users, vdir, wc, who, whoami, yes</seg>
-        <seg>/usr/lib/coreutils</seg>
 @z
 
 @x
@@ -1107,3 +1107,10 @@ C 言語の printf 関数に似ています。
 </para>
 @z
 
+@x libstdbuf
+          <para>Library used by <command>stdbuf</command></para>
+@y
+<para>
+<command>stdbuf</command> が利用するライブラリ。
+</para>
+@z

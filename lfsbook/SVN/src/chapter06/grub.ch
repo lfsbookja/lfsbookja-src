@@ -104,18 +104,16 @@ GRUB を使ってシステムのブート起動設定を行う方法について
 @z
 
 @x
-        <seg>grub-editenv, grub-mkelfimage, grub-mkfont, grub-mkimage,
-        grub-mkrescue, grub-dumpbios, grub-install, grub-mkconfig, 
-        grub-mkdevicemap,  grub-probe, grub-setup</seg>
-@y
-        <seg>grub-editenv, grub-mkelfimage, grub-mkfont, grub-mkimage,
-        grub-mkrescue, grub-dumpbios, grub-install, grub-mkconfig, 
-        grub-mkdevicemap,  grub-probe, grub-setup</seg>
-@z
-
-@x
+        <seg>grub-bin2h, grub-editenv, grub-install, grub-mkconfig,
+        grub-mkdevicemap, grub-mkelfimage, grub-mkimage, grub-mkisofs,
+        grub-mkpasswd-pbkdf2, grub-mkrelpath, grub-mkrescue, grub-probe,
+        grub-reboot, grub-script-check, grub-set-default, grub-setup</seg>
         <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub</seg>
 @y
+        <seg>grub-bin2h, grub-editenv, grub-install, grub-mkconfig,
+        grub-mkdevicemap, grub-mkelfimage, grub-mkimage, grub-mkisofs,
+        grub-mkpasswd-pbkdf2, grub-mkrelpath, grub-mkrescue, grub-probe,
+        grub-reboot, grub-script-check, grub-set-default, grub-setup</seg>
         <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub</seg>
 @z
 
@@ -123,6 +121,14 @@ GRUB を使ってシステムのブート起動設定を行う方法について
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">概略説明</bridgehead>
+@z
+
+@x grub-bin2h
+          <para>Converts a binary file to a C header</para>
+@y
+<para>
+バイナリファイルを C ヘッダファイルに変換します。
+</para>
 @z
 
 @x grub-editenv
@@ -133,50 +139,12 @@ GRUB を使ってシステムのブート起動設定を行う方法について
 </para>
 @z
 
-@x grub-mkelfimage
-          <para>Make a bootable image of GRUB</para>
-@y
-<para>
-GRUB のブートイメージ (bootable image) を生成します。
-</para>
-@z
-
-@x grub-mkfont
-          <para>Update fonts for GRUB use</para>
-@y
-<para>
-GRUB にて利用するフォントを更新します。
-</para>
-@z
-
-@x grub-mkimage
-          <para>Make a bootable image of GRUB</para>
-@y
-<para>
-GRUB のブートイメージを生成します。
-</para>
-@z
-
-@x grub-mkrescue
-          <para>Make a bootable image of GRUB suitable for a floppy disk</para>
-@y
-<para>
-フロッピーディスク用の GRUB のブートイメージを生成します。
-</para>
-@z
-
-@x grub-dumpbios
-          <para>Create vbios and int10 dump</para>
-@y
-<para>
-vbios と int10 ダンプを生成します。
-</para>
-@z
-
 @x grub-install
           <para>Install GRUB on your drive</para>
 @y
-          <para>指定したドライブに GRUB をインストールします。</para>
+<para>
+指定したドライブに GRUB をインストールします。
+</para>
 @z
 
 @x grub-mkconfig
@@ -195,11 +163,85 @@ GRUB の設定ファイルを生成します。
 </para>
 @z
 
+@x grub-mkelfimage
+          <para>Make a bootable image of GRUB</para>
+@y
+<para>
+GRUB のブートイメージ (bootable image) を生成します。
+</para>
+@z
+
+@x grub-mkimage
+          <para>Make a bootable image of GRUB</para>
+@y
+<para>
+GRUB のブートイメージを生成します。
+</para>
+@z
+
+@x grub-mkisofs
+          <para>Creates a bootable ISO image</para>
+@y
+<para>
+ブータブルな ISO イメージを生成します。
+</para>
+@z
+
+@x grub-mkpasswd-pbkdf2
+          <para>Generates an encrypted PBKDF2 password for use in the boot
+          menu</para>
+@y
+<para>
+ブートメニューにて利用する、PBKDF2 により暗号化されたパスワードを生成します。
+</para>
+@z
+
+@x grub-mkrelpath
+          <para>Makes a system pathname relative to its root</para>
+@y
+<para>
+システムのパスをルートからの相対パスとします。
+</para>
+@z
+
+@x grub-mkrescue
+          <para>Make a bootable image of GRUB suitable for a floppy disk</para>
+@y
+<para>
+フロッピーディスク用の GRUB のブートイメージを生成します。
+</para>
+@z
+
 @x grub-probe
           <para>Probe device information for a given path or device</para>
 @y
 <para>
 指定されたパスやデバイスに対するデバイス情報を検証 (probe) します。
+</para>
+@z
+
+@x grub-reboot
+          <para>Sets the default boot entry for GRUB for the next boot only</para>
+@y
+<para>
+デフォルトのブートメニューを設定します。
+これは次にブートした時だけ有効なものです。
+</para>
+@z
+
+@x grub-script-check
+          <para>Checks GRUB configuration script for syntax errors</para>
+@y
+<para>
+GRUB の設定スクリプトにおける文法をチェックします。
+</para>
+@z
+
+@x grub-set-default
+          <para>Sets the default boot entry for GRUB</para>
+@y
+<para>
+デフォルトのブートメニューを設定します。
 </para>
 @z
 
@@ -210,4 +252,3 @@ GRUB の設定ファイルを生成します。
 デバイスからのブートを行うためにイメージファイルをセットアップします。
 </para>
 @z
-

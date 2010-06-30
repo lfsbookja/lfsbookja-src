@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -31,9 +40,9 @@ each other. One of the best things that this learning experience can provide is
 the ability to customize a Linux system to suit your own unique needs.</para>
 @y
 <para>
-本プロジェクトを提供する最大の理由は Linux システムがどのようにして動作しているのか、これを学ぶための手助けをすることです。
-LFS システムを構築してみれば、様々なものが関連しあって依存しながら動作している様子を知ることができます。
-そうした経験をすれば Linux システムを自分が望む形に作りかえる手法も身につけることができます。
+本プロジェクトを提供する最大の理由は Linux システムがどのようにして動作しているのか、これを学ぶためのお手伝いをすることです。
+LFS システムを構築してみれば、様々なものが連携し依存しながら動作している様子を知ることができます。
+そうした経験をした人であれば Linux システムを自分の望む形に作りかえる手法も身につけることができます。
 </para>
 @z
 

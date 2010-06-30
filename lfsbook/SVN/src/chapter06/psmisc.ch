@@ -83,9 +83,9 @@ Psmisc のインストールを完了させます。
 @z
 
 @x
-        <seg>fuser, killall, peekfd, pstree, and pstree.x11 (link to pstree)</seg>
+        <seg>fuser, killall, peekfd, prtstat, pstree, and pstree.x11 (link to pstree)</seg>
 @y
-        <seg>fuser, killall, peekfd, pstree, pstree.x11 (pstree へのリンク)</seg>
+        <seg>fuser, killall, peekfd, prtstat, pstree, pstree.x11 (pstree へのリンク)</seg>
 @z
 
 @x
@@ -120,6 +120,14 @@ Psmisc のインストールを完了させます。
 @y
 <para>
 PID を指定することによって、稼動中のそのプロセスのファイルディスクリプタを調べます。
+</para>
+@z
+
+@x prtstat
+          <para>Prints information about a process</para>
+@y
+<para>
+プロセスに関する情報を表示します。
 </para>
 @z
 

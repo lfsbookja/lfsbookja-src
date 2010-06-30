@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -19,28 +28,34 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
     <title>Zlib のインストール</title>
 @z
 
-% @x
-%       <para>Zlib is known to build its shared library incorrectly if
-%       <envar>CFLAGS</envar> is specified in the environment. If using
-%       a specified <envar>CFLAGS</envar> variable, be sure to add the
-%       <parameter>-fPIC</parameter> directive to the <envar>CFLAGS</envar>
-%       variable for the duration of the configure command below, then
-%       remove it when building the static library.</para>
-% @y
-% <para>
-% Zlib は <envar>CFLAGS</envar>
-% が設定されているときに、共有ライブラリ (shared library) を生成してしまうことが知られています。
-% したがって <envar>CFLAGS</envar> 変数を設定している場合は、
-% 以下に示す configure スクリプトを実行する際には
-% <parameter>-fPIC</parameter> ディレクティブを追加設定してください。
-% そしてスタティックライブラリを生成できたら、そのディレクティブを取り除いて元に戻してください。
-% </para>
-% @z
+@x
+    <para>First, fix a typo in the package header file:</para>
+@y
+<para>
+まずパッケージ内のヘッダーファイルのタイポを修正します。
+</para>
+@z
 
 @x
     <para>Prepare Zlib for compilation:</para>
 @y
     <para>Zlib を生成する準備をします。</para>
+@z
+
+@x
+      <title>The meaning of the new configure environment variable:</title>
+@y
+      <title>configure における環境変数の意味：</title>
+@z
+
+@x
+          <para>Setting CFLAGS overrides the default optimization in the
+          package to prevent some run time errors.</para>
+@y
+<para>
+CFLAGS を設定することで、デフォルトの最適化オプション指定を上書きします。
+実行時エラーが発生する場合があるため、それを修正するものです。
+</para>
 @z
 
 @x

@@ -284,10 +284,15 @@ LFS パーティションを <parameter>noatime</parameter>
 
 @x
         <para>When running on older and slower hardware or on systems under
-        load, some tests can fail because of test timeouts being exceeded.</para>
+        load, some tests can fail because of test timeouts being exceeded.
+        Modifying the make check command to set a TIMEOUTFACTOR is reported to 
+        help eliminate these errors (e.g. <command>TIMEOUTFACTOR=16
+        make -k check</command>).</para>
 @y
 <para>
 旧式のハードウェアや性能の低いハードウェア、あるいは負荷の高いシステムにおいてテストを行うと、処理時間をオーバーしてタイムアウトが発生しテストが失敗します。
+make check コマンドにて TIMEOUTFACTOR をセットするものに修正すれば、それらのエラーは回避できると報告されています。
+(例： <command>TIMEOUTFACTOR=16 make -k check</command>)
 </para>
 @z
 

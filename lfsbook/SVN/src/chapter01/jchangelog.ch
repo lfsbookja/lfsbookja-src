@@ -54,6 +54,25 @@
 -->
 
     <listitem>
+      <para>2010-06-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/prologue/{architecture.ch, audience.ch},
+          src/chapter03/introduction.ch: 訳出再考、微修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - 
+          src/chapter03/packages.ch
+          src/chapter05/glibc.ch
+          src/chapter06/{coreutils.ch,glibc.ch,grub.ch,perl.ch,psmisc.ch,udev.ch,util-linux-ng.ch,zlib.ch}
+          : SVN-20100627, r9327 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-06-22</para>
       <itemizedlist>
         <listitem>

@@ -57,6 +57,71 @@
 @z
 
 @x
+      <para>2010-06-27</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Update to udev-158.  Also add a new
+           udev-testfiles tarball and an instuction to make check.
+           Fixes
+           <ulink url="&lfs-ticket-root;2692">#2692</ulink> and
+           <ulink url="&lfs-ticket-root;2700">#2700</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Update to sysvinit-2.88dsf.
+           Fixes
+           <ulink url="&lfs-ticket-root;2677">#2677</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Added new CFLAGS options to zlib configure
+           instruction in order to prevent some seg faults when building
+           with gcc-4.5.
+           Fixes
+           <ulink url="&lfs-ticket-root;2691">#2691</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Updated explanation of glibc timeout 
+           errors and added TIMEOUTFACTOR as a possible solution.
+           Fixes
+           <ulink url="&lfs-ticket-root;2683">#2683</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Update installed programs lists.
+           Thanks to Chris Staub for the patch.  Fixes
+           <ulink url="&lfs-ticket-root;2678">#2678</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-06-27</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - udev-158 へのアップグレード。
+           また udev-testfiles 配布の追加と make check における手順追加。
+           <ulink url="&lfs-ticket-root;2692">#2692</ulink> と
+           <ulink url="&lfs-ticket-root;2700">#2700</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - sysvinit-2.88dsf へのアップグレード。
+           <ulink url="&lfs-ticket-root;2677">#2677</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Zlib の configure にて CFLAGS オプションを追加。
+           これは GCC-4.5 にてビルドする際に、セグメンテーションフォールトが発生することを回避するため。
+           <ulink url="&lfs-ticket-root;2691">#2691</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Glibc のタイムアウトエラーについて加筆。
+           また TIMEOUTFACTOR により解決可能である旨を追記。
+           <ulink url="&lfs-ticket-root;2683">#2683</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - 各種パッケージにてインストールプログラムの一覧を更新。
+           パッチ提供してくれた Chris Staub に感謝。
+           <ulink url="&lfs-ticket-root;2678">#2678</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-06-22</para>
       <itemizedlist>
          <listitem>

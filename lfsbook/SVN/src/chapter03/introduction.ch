@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,7 +30,7 @@
   book.</para>
 @y
 <para>
-この章では基本的な Linux システム構築のためにダウンロードするべきパッケージ一覧を示します。
+この章では基本的な Linux システム構築のためにダウンロードするべきパッケージの一覧を示します。
 各パッケージのバージョンは動作が確認されているものを示しており、本書ではこれに基づいて説明します。
 ここに示すバージョンよりも新しいものは使わないようお勧めします。
 あるバージョンでビルドしたコマンドが、新しいバージョンでも動作する保証はないからです。
@@ -117,7 +126,6 @@ LFS ビルドを行う全工程において常に利用することが出来ま�
 へのリンクです。
 本書を Web サイト上に搭載した場合に
 MIME 設定 (その制約) によりアクセスが出来ないファイルとなってしまう可能性があります。
-(実際に訳者がオンライン公開しているサイトでは、拡張子を持たないファイルを表示・ダウンロードできません。)
 そこで本書では <filename>wget-list.txt</filename>
 のように拡張子 <filename class="extension">.txt</filename>
 をつけるようにしました。
@@ -141,8 +149,7 @@ MIME 設定 (その制約) によりアクセスが出来ないファイルと�
 </para>
 
 <screen><userinput remap="wget-wgetlist">cd $LFS/sources
-wget -N -i wget-list
-</userinput></screen>
+wget -N -i wget-list</userinput></screen>
 
 <para>
 LFS ブック原版では、それらの URL が主に米国サイトの URL となっています。
@@ -155,26 +162,29 @@ LFS ブック原版では、それらの URL が主に米国サイトの URL と
 <para>
 国内から入手可能なものは国内から入手することを目指し、訳者は以下の手順により <ulink url="../wget-list.txt">wget-list</ulink>
 を書き換えて利用しています。
-一例として国内には理化学研究所 (ftp.riken.jp) があります。
+一例として国内には理化学研究所のサイト (ftp.riken.jp) があります。
 そこでは GNU パッケージ類がミラー提供されています。
 そこで <ulink url="../wget-list.txt">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
 また Linux カーネルの入手先 (www.kernel.org) についても理化学研究所より入手可能ですので、これも置き換えます。
 </para>
 
-<screen><userinput remap="sed-wgetlist">cp -pv wget-list wget-list.orig
+<screen><userinput remap="sed-wgetlist">cp -pv wget-list{,.orig}
 sed -e 's|http://ftp\.gnu\.org/gnu/|http://ftp.riken.jp/GNU/ftp/gnu/|g' \
     -e 's|http://www\.kernel\.org/pub/linux/|http://ftp.riken.jp/Linux/kernel.org/linux/|g' \
-       wget-list.orig > wget-list
-</userinput></screen>
+       wget-list.orig > wget-list</userinput></screen>
 
 <para>
-注意する点として各パッケージが更新されたばかりの日付では、国内ミラーサイトへの同期・反映が間に合わず、ソース類が存在しないことが考えられます。
+注意する点として各パッケージが更新されたばかりの日付では、国内ミラーサイトへの同期、反映が間に合わず、ソース類が存在しないことが考えられます。
 その場合には上の方法はすんなりとは実現できません。オリジナルの URL を用いるしかありません。
 </para>
 
 <para>
-上記はあくまで一例です。
-国内のミラーサイトは、ネットワーク的に "より近い" ものを選んでください。
+上記はあくまで一例です。しかもすべてのパッケージについて、国内サイトからの入手となるわけではありません。
+ただし上記を行うだけでも、大半のパッケージは国内サイトを向くことになります。
+</para>
+
+<para>
+上記にて国内のミラーサイトは、ネットワーク的に "より近い" ものを選んでください。
 またミラーサイトのディレクトリ構成はサイトによって変わります。必要に応じてコマンドを書き換えてください。
 さらに上記の <command>sed</command> による一括置換は、パッケージやソースの今後の更新状況によっては提供 URL が変わり、
 <ulink url="../wget-list.txt">wget-list</ulink> のすべての URL が正しいものにはならない可能性がありますから十分注意してください。

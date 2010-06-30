@@ -120,11 +120,11 @@ Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設
 
 @x
           <para>This tells Glibc to compile the library with support
-          for 2.6.18 and later Linux kernels.  Workarounds for older
+          for 2.6.22.5 and later Linux kernels.  Workarounds for older
           kernels are not enabled.</para>
 @y
 <para>
-Linux カーネル 2.6.18 以上のサポートを行うよう指示します。
+Linux カーネル 2.6.22.5 以上のサポートを行うよう指示します。
 これ以前のカーネルは利用することができません。
 </para>
 @z

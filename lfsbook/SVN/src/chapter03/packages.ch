@@ -611,7 +611,7 @@ Linux カーネルはわりと頻繁に更新されます。
         <para>MD5 sum: <literal>&texinfo-md5;</literal></para>
 @z
 
-@x
+@x Udev (&udev-version;) - <token>&udev-size;</token>:
         <para>Home page: <ulink url="&udev-home;"/></para>
         <para>Download: <ulink url="&udev-url;"/></para>
         <para>MD5 sum: <literal>&udev-md5;</literal></para>
@@ -621,12 +621,18 @@ Linux カーネルはわりと頻繁に更新されます。
         <para>MD5 sum: <literal>&udev-md5;</literal></para>
 @z
 
+@x Udev Test Tarball  (&udev-version;) - <token>&udev-testfiles-size;</token>:
+        <para>Download: <ulink url="&udev-testfiles-url;"/></para>
+        <para>MD5 sum: <literal>&udev-testfiles-md5;</literal></para>
+@y
+        <para>ダウンロード: <ulink url="&udev-testfiles-url;"/></para>
+        <para>MD5 sum: <literal>&udev-testfiles-md5;</literal></para>
+@z
+
 @x
-        <para>Home page: <ulink url="&udev-config-home;"/></para>
         <para>Download: <ulink url="&udev-config-url;"/></para>
         <para>MD5 sum: <literal>&udev-config-md5;</literal></para>
 @y
-        <para>ホームページ: <ulink url="&udev-config-home;"/></para>
         <para>ダウンロード: <ulink url="&udev-config-url;"/></para>
         <para>MD5 sum: <literal>&udev-config-md5;</literal></para>
 @z
