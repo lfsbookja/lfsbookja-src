@@ -20,7 +20,7 @@
     <command>gzip</command>.</para>
 @y
 <para>
-Bzip2 パッケージはファイル圧縮・伸長 (解凍) を行うプログラムを提供します。
+Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログラムを提供します。
 テキストファイルであれば、これまでよく用いられてきた
 <command>gzip</command> に比べて <command>bzip2</command>
 の方が圧縮率の高いファイルを生成できます。

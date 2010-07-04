@@ -123,28 +123,30 @@ FHS では <filename>adjtime</filename>
 @x
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
-        dmesg, fallocate, fdformat, fdisk, findfs, flock, fsck, fsck.cramfs,
-        fsck.minix, getopt, hexdump, hwclock, i386, ionice, ipcmk, ipcrm, ipcs,
-        isosize, ldattach, line, linux32, linux64, logger, look, losetup, lscpu,
-        mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap, more, mount,
-        namei, partx, pg, pivot_root, readprofile, rename, renice, rev,
-        rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
-        swapoff (link to swapon), swapon, switch_root, tailf, taskset, tunelp,
-        ul, umount, unshare, uuidd, uuidgen, wall, whereis, wipefs, and write</seg>
-        <seg>libblkid.{a,so}, libuuid.{a,so}</seg>
+        dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        fsck.cramfs, fsck.minix, fsfreeze, getopt, hexdump, hwclock, i386,
+        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
+        logger, look, losetup, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
+        mkfs.minix, mkswap, more, mount, namei, partx, pg, pivot_root,
+        readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
+        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
+        swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
+        uuidd, uuidgen, wall, whereis, wipefs, and write</seg>
+        <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
         <seg>/usr/share/getopt, /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
-        dmesg, fallocate, fdformat, fdisk, findfs, flock, fsck, fsck.cramfs,
-        fsck.minix, getopt, hexdump, hwclock, i386, ionice, ipcmk, ipcrm, ipcs,
-        isosize, ldattach, line, linux32, linux64, logger, look, losetup, lscpu,
-        mcookie, mkfs, mkfs.bfs, mkfs.cramfs, mkfs.minix, mkswap, more, mount,
-        namei, partx, pg, pivot_root, readprofile, rename, renice, rev,
-        rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
-        swapoff (swapon へのリンク), swapon, switch_root, tailf, taskset, tunelp,
-        ul, umount, unshare, uuidd, uuidgen, wall, whereis, wipefs, write</seg>
-        <seg>libblkid.{a,so}, libuuid.{a,so}</seg>
+        dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        fsck.cramfs, fsck.minix, fsfreeze, getopt, hexdump, hwclock, i386,
+        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
+        logger, look, losetup, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
+        mkfs.minix, mkswap, more, mount, namei, partx, pg, pivot_root,
+        readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
+        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
+        swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
+        uuidd, uuidgen, wall, whereis, wipefs, write</seg>
+        <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
         <seg>/usr/share/getopt, /var/lib/hwclock</seg>
 @z
 

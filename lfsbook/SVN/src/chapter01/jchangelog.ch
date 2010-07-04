@@ -54,6 +54,23 @@
 -->
 
     <listitem>
+      <para>2010-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/bzip2.ch: 微修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] - 
+          src/packages.ch,
+          src/chapter06/{grub.ch, mpfr.ch, util-linux-ng.ch}
+          : SVN-20100702, r9332 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-06-30</para>
       <itemizedlist>
         <listitem>

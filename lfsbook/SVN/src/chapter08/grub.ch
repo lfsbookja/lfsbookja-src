@@ -208,26 +208,83 @@ Linux システムでの取り扱いとは違って GRUB
 @z
 
 @x
-  <para>Note that even though there is a warning not to edit the file, you can
-  do so as long as you do not re-run <command>grub-mkconfig</command>.  The
-  <emphasis>search</emphasis> lines are not meaningful for LFS systems as that
-  command needs an initrd image for processing. If installing on a separate
-  partition the linux and initrd lines will not have the /boot on the file
-  names.  In this example the kernel files for a Ubuntu installation are
-  also found in <filename class="directory">/boot</filename>.</para>
+      <listitem><para>Even though there is a warning not to edit the file, you
+      can do so as long as you do not re-run
+      <command>grub-mkconfig</command>.</para></listitem>
 @y
-<para>
+<listitem><para>
 このファイルを無闇に編集するのは避けるべきですが、
 <command>grub-mkconfig</command>
 コマンドを再実行しない限りは、編集作業を行っても構いません。
+</para></listitem>
+@z
+
+@x
+      <listitem><para>The <emphasis>search</emphasis> lines are generally not
+      useful for LFS systems as that command only sets an internal GRUB
+      variable used to find the kernel image.  The <emphasis>set root</emphasis> 
+      command provides the same capability without the overhead of 
+      searching.</para></listitem>
+@y
+<listitem><para>
 <emphasis>search</emphasis> と書かれた行は LFS システムにとっては意味がありません。
-これは initrd イメージを取り扱う際に必要となるコマンドであるからです。
-ブートパーティションを別のパーティションとしてインストールするのであれば、
-linux や initrd と書かれた行で、ファイル名称に含まれる /boot の記述は不要です。
-このファイル例では、Ubuntu のカーネルファイルが
+そこに示されるコマンドは GRUB の内部変数をセットし、カーネルイメージを検索するためのものです。
+<emphasis>set root</emphasis>
+コマンドの記述があれば、同等の機能が実現され、検索のオーバーヘッドを抑えることができます。
+</para></listitem>
+@z
+
+@x
+      <listitem><para>The <emphasis>set root</emphasis> and 
+      <emphasis>insmod ext2</emphasis> commands can be moved out of the  
+      <emphasis>menuentry</emphasis> sections to apply to all sections of the file.
+      This leads to a simple section like:</para></listitem>
+@y
+<listitem><para>
+<emphasis>set root</emphasis> と
+<emphasis>insmod ext2</emphasis>
+の２つのコマンドは <emphasis>menuentry</emphasis>
+のセクションの外に記述することもできます。
+そうすると本ファイル内のすべてのセクションに適用されるものとなります。
+したがって個々のセクションは、例えば以下のように単純な記述とすることもできます。
+</para></listitem>
+@z
+
+@x
+      <listitem><para>Passing a UUID to the kernel requires an initial ram disk
+      (initrd) not built by LFS.</para></listitem>
+@y
+<listitem><para>
+カーネルに対して UUID を指定する場合は、初期 RAM ディスク
+(initial ram disk; initrd) を必要としますが、
+LFS ではこれを構築しません。
+</para></listitem>
+@z
+
+@x
+      <listitem><para>If the <filename>/boot</filename> partition is installed
+      on a separate partition, the linux and initrd lines should not have the
+      string <emphasis>/boot</emphasis> prefixed to the file
+      names.</para></listitem> 
+@y
+<listitem><para>
+<filename>/boot</filename>
+パーティションが独立したパーティションとして設けられている場合は
+linux と initrd の行において <emphasis>/boot</emphasis>
+の記述は取り除く必要があります。
+</para></listitem> 
+@z
+
+@x
+      <listitem><para>In this example the kernel files for a Ubuntu
+      installation are also found in <filename
+      class="directory">/boot</filename>.</para></listitem>
+@y
+<listitem><para>
+上のサンプル記述では
 <filename class="directory">/boot</filename>
-に同様にあるものとして示しています。
-</para>
+に Ubuntu のカーネルファイルがインストールされている例を含んでいます。
+</para></listitem>
 @z
 
 @x

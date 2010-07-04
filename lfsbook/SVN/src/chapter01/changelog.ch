@@ -57,6 +57,63 @@
 @z
 
 @x
+      <para>2010-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Clarified that SBU data is not included in 
+           Chapter 5, but is included in Chapter 6.  Thanks to 
+           littlebat for the patch.
+           Fixes
+           <ulink url="&lfs-ticket-root;2702">#2702</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Exapand and reformat notes concerning
+           grub.cfg.</para>
+        </listitem>
+         <listitem>
+           <para>[bdubbs] - Updated to util-linix-ng-2.18. 
+           Fixes
+           <ulink url="&lfs-ticket-root;2681">#2681</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-07-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - SBU 値においてテストスイートに要する時間は、第6章では含めるが第5章では含めないものとする。                   パッチ提供してくれた littlebat に感謝。
+          <ulink url="&lfs-ticket-root;2702">#2702</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grub.cfg ファイルについての注意書きを充足させる。
+           </para>
+        </listitem>
+         <listitem>
+           <para>[bdubbs] - Util-linix-ng-2.18 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2681">#2681</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Minor text correction.
+           Fixes
+           <ulink url="&lfs-ticket-root;2701">#2701</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - 記述修正。
+           <ulink url="&lfs-ticket-root;2701">#2701</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-06-27</para>
       <itemizedlist>
          <listitem>

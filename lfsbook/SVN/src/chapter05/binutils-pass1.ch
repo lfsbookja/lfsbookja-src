@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -75,6 +84,15 @@ Binutils のドキュメントでは Binutils をビルドする際に、ソー�
 <userinput>time { ./configure ... &amp;&amp; make &amp;&amp; make install; }</userinput>
 と入力すれば実現できます。
 </para>
+@z
+
+@x
+    <note><para>The approximate build SBU values and required disk space
+    in Chapter 5 does not include testsuite data.</para></note>
+@y
+<note><para>
+概算ビルド時間と必要ディスク容量は、この第5章ではテストスイートに関わる時間や容量は含めないことにします。
+</para></note>
 @z
 
 @x
