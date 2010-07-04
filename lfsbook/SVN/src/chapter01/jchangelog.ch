@@ -57,6 +57,10 @@
       <para>2010-07-04</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - SVN-20100702, r9333 対応。
+          </para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - src/chapter06/bzip2.ch: 微修正。
           </para>
         </listitem>

@@ -57,6 +57,22 @@
 @z
 
 @x
+      <para>2010-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[robert] - Fixed the util-linux tarball url.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-07-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[robert] - Util-linux tarball の URL を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-07-02</para>
       <itemizedlist>
         <listitem>
