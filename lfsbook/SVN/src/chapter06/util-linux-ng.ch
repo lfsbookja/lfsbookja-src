@@ -346,6 +346,16 @@ Linux カーネルに対してパーティションが削除されているか�
 </para>
 @z
 
+@x findmnt
+          <para>Is a command line interface to the libmount library 
+          for work with mountinfo, fstab and mtab files</para>
+@y
+<para>
+libmount ライブラリに対するコマンドラインインターフェース。
+mountinfo, fstab, mtab の各ファイルに対しての処理を行います。
+</para>
+@z
+
 @x flock
           <para>Acquires a file lock and then executes a command with the lock
           held</para>
@@ -380,6 +390,18 @@ Linux カーネルに対してパーティションが削除されているか�
 <para>
 指定されたデバイス上の Minix ファイルシステムに対して一貫性検査
 (consistency check) を行います。
+</para>
+@z
+
+@x fsfreeze
+          <para>Is a very simple wrapper around FIFREEZE/FITHAW ioctl 
+          kernel driver operations</para>
+@y
+<!--
+日本語訳註： 意味不理解
+-->
+<para>
+カーネルドライバ制御における FIFREEZE/FITHAW ioctl に対する単純なラッパープログラム。
 </para>
 @z
 
@@ -724,6 +746,17 @@ Minix ファイルシステムを生成します。
 @y
 <para>
 ディスクパーティションテーブルを操作します。
+</para>
+@z
+
+@x swaplabel
+          <para>Allows to change swaparea UUID and label</para>
+@y
+<!--
+日本語訳註： 意味不理解
+-->
+<para>
+スワップエリアの UUID とラベルを変更します。
 </para>
 @z
 

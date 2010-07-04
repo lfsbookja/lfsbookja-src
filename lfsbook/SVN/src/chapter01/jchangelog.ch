@@ -57,6 +57,10 @@
       <para>2010-07-04</para>
       <itemizedlist>
         <listitem>
+          <para>[matsuand] - src/chapter06/util-linux-ng.ch: 訳出漏れ訂正。
+          </para>
+        </listitem>
+        <listitem>
           <para>[matsuand] - SVN-20100702, r9333 対応。
           </para>
         </listitem>
