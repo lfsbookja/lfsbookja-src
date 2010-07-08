@@ -57,6 +57,17 @@ GRUB に関する特別なファイル類をハードドライブ上の所定デ
 @z
 
 @x
+    <para>Alternatively, a boot CD can be created by using your host system's
+    CD burning tools to burn the <filename>grub-img.iso</filename> on to a
+    blank CD.</para>
+@y
+<para>
+または、ホストシステムにある CD ライティングツールを使えば、ブート CD を作ることもできます。
+その場合は <filename>grub-img.iso</filename> を空の CD に書き込みます。
+</para>
+@z
+
+@x
     <para>GRUB uses its own naming structure for drives and partitions in
     the form of <emphasis>(hdn,m)</emphasis>, where <emphasis>n</emphasis>
     is the hard drive number and <emphasis>m</emphasis> is the partition

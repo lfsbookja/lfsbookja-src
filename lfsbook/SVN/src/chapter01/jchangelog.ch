@@ -54,6 +54,16 @@
 -->
 
     <listitem>
+      <para>2010-07-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter08/grub.ch: SVN-20100702, r9336 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-07-04</para>
       <itemizedlist>
         <listitem>

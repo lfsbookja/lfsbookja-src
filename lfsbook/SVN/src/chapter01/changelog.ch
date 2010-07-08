@@ -57,6 +57,26 @@
 @z
 
 @x
+      <para>2010-07-07</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Fixed creation of a GRUB boot disk.  Fixes
+           <ulink url="&lfs-ticket-root;2706">#2706</ulink>. Thanks to
+           Sebastian Plotz for the report and fix.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-07-07</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - GRUB のブートディスク作成方法について修正。
+           <ulink url="&lfs-ticket-root;2706">#2706</ulink> を Fix に。
+           報告および修正をしてくれた Sebastian Plotz に感謝。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-07-04</para>
       <itemizedlist>
         <listitem>
@@ -83,7 +103,7 @@
            <ulink url="&lfs-ticket-root;2702">#2702</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Exapand and reformat notes concerning
+          <para>[bdubbs] - Expand and reformat notes concerning
            grub.cfg.</para>
         </listitem>
          <listitem>
@@ -291,7 +311,7 @@
         <listitem>
           <para>[bdubbs] - Add a sed to the current kernel to work around
           a bug in linux-2.6.34 and earlier.  This change will be removed 
-          when incorporated into a subsequent verion of the kernel. 
+          when incorporated into a subsequent version of the kernel. 
           Fixes <ulink url="&lfs-ticket-root;2662">#2662</ulink>.</para>
         </listitem>
       </itemizedlist>
