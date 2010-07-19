@@ -72,9 +72,9 @@ Linux が起動パラメータ <parameter>init=/bin/bash</parameter> によっ�
       class="filesystem">tmpfs</systemitem>) on the <filename
       class="directory">/dev</filename> directory, and allow the devices to be
       created dynamically on that virtual filesystem as they are detected or
-      accessed. This is generally done during the boot process by Udev. Since
-      this new system does not yet have Udev and has not yet been booted, it is
-      necessary to mount and populate <filename
+      accessed. Device creation is generally done during the boot process
+      by Udev. Since this new system does not yet have Udev and has not yet
+      been booted, it is necessary to mount and populate <filename
       class="directory">/dev</filename> manually. This is accomplished by bind
       mounting the host system's <filename class="directory">/dev</filename>
       directory. A bind mount is a special type of mount that allows you to
@@ -87,7 +87,7 @@ Linux が起動パラメータ <parameter>init=/bin/bash</parameter> によっ�
 ディレクトリに対して <systemitem class="filesystem">tmpfs</systemitem>
 のような仮想ファイルシステムをマウントすることが推奨されます。
 こうすることで各デバイスが検出されアクセスされる際に、その仮想ファイルシステム上にて動的にデバイスを生成する形を取ることができます。
-このような処理は一般的にはシステム起動時に Udev によって行われます。
+このデバイス生成処理は一般的にはシステム起動時に Udev によって行われます。
 今構築中のシステムにはまだ Udev を導入していませんし、再起動も行っていませんので
 <filename class="directory">/dev</filename>
 のマウントと有効化は手動で行ないます。

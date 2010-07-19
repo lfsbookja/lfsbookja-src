@@ -519,10 +519,10 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Glibc
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
-         Grep, Gzip, Make, Perl, Sed, and Texinfo</seg>
+         Grep, Gzip, Linux API Headers, Make, Perl, Sed, and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
-         Grep, Gzip, Make, Perl, Sed, Texinfo</seg>
+         Grep, Gzip, Linux API ヘッダ, Make, Perl, Sed, Texinfo</seg>
 @z
 @x
           <seg>File</seg>
@@ -609,11 +609,11 @@ Typo ですが日本語訳には影響ありません。
 
 %----------------------------------------------------------------------
 @x GRUB
-         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
-         Ncurses, Sed, and Texinfo</seg>
+         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Glibc, Grep,
+         Make, Ncurses, Sed, and Texinfo</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Grep, Make,
-         Ncurses, Sed, Texinfo</seg>
+         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Glibc, Grep,
+         Make, Ncurses, Sed, Texinfo</seg>
 @z
 @x
           <seg>None</seg>

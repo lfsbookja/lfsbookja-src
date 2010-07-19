@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2010-07-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] - src/chapter06/{introduction.ch,kernfs.ch},
+          src/appendices/dependencies.ch:
+          SVN-20100718, r9339 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-07-08</para>
       <itemizedlist>
         <listitem>

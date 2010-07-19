@@ -81,9 +81,9 @@ Linux システムがどのようにして動作しているかを学ぶには�
   <para>The order that packages are installed in this chapter needs to be
   strictly followed to ensure that no program accidentally acquires a path
   referring to <filename class="directory">/tools</filename> hard-wired into
-  it. For the same reason, do not compile packages in parallel. Compiling in
-  parallel may save time (especially on dual-CPU machines), but it could result
-  in a program containing a hard-wired path to <filename
+  it.  For the same reason, do not compile separate packages in parallel.
+  Compiling in parallel may save time (especially on dual-CPU machines), but it
+  could result in a program containing a hard-wired path to <filename
   class="directory">/tools</filename>, which will cause the program to stop
   working when that directory is removed.</para>
 @y

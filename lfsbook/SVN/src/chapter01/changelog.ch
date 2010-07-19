@@ -57,6 +57,45 @@
 @z
 
 @x
+      <para>2010-07-18</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Updated discussion of building packages
+           in parallel. Fixes 
+           <ulink url="&lfs-ticket-root;2712">#2712</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Updated dependencies for GRUB and Glibc.
+           Thanks to splotz90 for the patch. Fixes 
+           <ulink url="&lfs-ticket-root;2716">#2716</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Clarified wording about device creation
+           when mounting virtual filesystems. Fixes
+           <ulink url="&lfs-ticket-root;2715">#2715</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-07-18</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - パッケージを同時並行でビルドする問題点について説明修正。
+           <ulink url="&lfs-ticket-root;2712">#2712</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - GRUB と Glibc の依存パッケージを更新。
+           パッチを提供してくれた splotz90 に感謝。
+           <ulink url="&lfs-ticket-root;2716">#2716</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - 
+           仮想ファイルシステムのマウント時におけるデバイス生成処理に関して明確化。
+           <ulink url="&lfs-ticket-root;2715">#2715</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-07-07</para>
       <itemizedlist>
          <listitem>
