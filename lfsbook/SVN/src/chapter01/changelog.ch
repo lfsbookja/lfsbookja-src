@@ -57,6 +57,57 @@
 @z
 
 @x
+      <para>2010-07-26</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Make GCC use the system-wide copy of Zlib rather
+           than its bundled version. Fixes
+           <ulink url="&lfs-ticket-root;2718">#2718</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Psmisc-22.12.  Fixes
+           <ulink url="&lfs-ticket-root;2717">#2717</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Udev-160.  Fixes
+           <ulink url="&lfs-ticket-root;2711">#2711</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-2.6.34.1.  Fixes
+           <ulink url="&lfs-ticket-root;2709">#2709</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Autoconf-2.66.  Fixes
+           <ulink url="&lfs-ticket-root;2705">#2705</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-07-26</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - GCC のビルドにあたって、Zlib はバンドルされているものではなく、既にインストールされているものを利用するように。
+           <ulink url="&lfs-ticket-root;2718">#2718</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Psmisc-22.12 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2717">#2717</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Udev-160 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2711">#2711</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-2.6.34.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2709">#2709</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Autoconf-2.66 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2705">#2705</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-07-18</para>
       <itemizedlist>
          <listitem>

@@ -108,6 +108,21 @@ GCC がサポートする他のプログラム言語の構築方法について�
 @z
 
 @x
+      <title>The meaning of the new configure option:</title>
+@y
+      <title>Configure オプションの意味:</title>
+@z
+
+@x --with-system-zlib
+          <para>This switch tells GCC to link to the system installed copy of
+          the Zlib library, rather than its own internl copy.</para>
+@y
+<para>
+このオプションはシステムに既にインストールされている Zlib ライブラリをリンクすることを指示するものであり、内部にて作成されるライブラリを用いないようにします。
+</para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>パッケージをコンパイルします。</para>
