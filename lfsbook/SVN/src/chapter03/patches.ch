@@ -197,33 +197,19 @@
       </listitem>
 @z
 
-% @x
-%       <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
-%         <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Glibc Binutils Patch - <token>&glibc-binutils-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&glibc-binutils-patch;"/></para>
-%         <para>MD5 sum: <literal>&glibc-binutils-patch-md5;</literal></para>
-%       </listitem>
-% @z
-
-% @x
-%       <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&grep-debian-patch;"/></para>
-%         <para>MD5 sum: <literal>&grep-debian-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Grep Debian Patch - <token>&grep-debian-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&grep-debian-patch;"/></para>
-%         <para>MD5 sum: <literal>&grep-debian-patch-md5;</literal></para>
-%       </listitem>
-% @z
+@x
+      <term>Glibc Makefile Fix Patch - <token>&glibc-makefile_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-makefile_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-makefile_fix-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc Makefile Fix Patch - <token>&glibc-makefile_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&glibc-makefile_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-makefile_fix-patch-md5;</literal></para>
+      </listitem>
+@z
 
 @x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
@@ -264,20 +250,6 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Make Upstream Fixes Patch - <token>&make-upstream_fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&make-upstream_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&make-upstream_fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Make Upstream Fixes Patch - <token>&make-upstream_fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&make-upstream_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&make-upstream_fixes-patch-md5;</literal></para>
       </listitem>
 @z
 
@@ -334,20 +306,6 @@
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
       </listitem>
 @z
-
-% @x
-%       <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
-%         <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Perl UTF8 Patch - <token>&perl-utf8-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&perl-utf8-patch;"/></para>
-%         <para>MD5 sum: <literal>&perl-utf8-patch-md5;</literal></para>
-%       </listitem>
-% @z
 
 @x
       <term>Procps Watch Patch - <token>&procps-watch-patch-size;</token>:</term>

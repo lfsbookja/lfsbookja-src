@@ -26,25 +26,6 @@
 @z
 
 @x
-    <para>First fix some problems that have been identified since
-    the last package release:</para>
-@y
-<para>
-最新のパッケージリリース以降に判明した不備を修正します。
-</para>
-@z
-
-@x
-    <para>Now, fix a known issue with the test suite that causes one of the
-    tests to fail:</para>
-@y
-<para>
-テストスイートにて、テストの一部が失敗してしまうことが知られています。
-これを修正します。
-</para>
-@z
-
-@x
     <para>Prepare Make for compilation:</para>
 @y
     <para>Make をコンパイルするための準備をします。</para>

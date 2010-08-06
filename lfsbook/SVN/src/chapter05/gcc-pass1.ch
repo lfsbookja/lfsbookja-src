@@ -130,6 +130,17 @@ x86_64 に対して LFS は まだ multilib のサポートをしていません
 </para>
 @z
 
+@x --without-ppl, --without-cloog
+          <para>These switches prevent GCC from building against the PPL and
+          CLooG libraries which may be present on the host system, but will not
+          be available in the chroot environment.</para>
+@y
+<para>
+このオプションは、PPL および CLooG ライブラリがホストシステムに存在していたとしても、chroot
+環境ではそれらを利用することが出来ないため、リンクしないようにします。
+</para>
+@z
+
 @x
     <para>Compile GCC by running:</para>
 @y

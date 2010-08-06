@@ -26,14 +26,6 @@
 @z
 
 @x
-    <para>First, fix a bug that causes a kernel panic on some systems:</para>
-@y
-<para>
-特定のシステムにてカーネルパニックが発生するバグを修正します。
-</para>
-@z
-
-@x
     <para>Building the kernel involves a few steps&mdash;configuration,
     compilation, and installation. Read the <filename>README</filename> file
     in the kernel source tree for alternative methods to the way this book

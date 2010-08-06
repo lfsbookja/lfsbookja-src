@@ -54,6 +54,21 @@
 -->
 
     <listitem>
+      <para>2010-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/chapter05/{gcc-pass1.ch,glibc.ch},
+          src/chapter06/{glibc.ch,make.ch,procps.ch},
+          src/chapter08/kernel.ch:
+          SVN-20100803, r9350 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-07-27</para>
       <itemizedlist>
         <listitem>

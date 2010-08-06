@@ -57,6 +57,59 @@
 @z
 
 @x
+      <para>2010-08-03</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Autoconf-2.67. Fixes
+           <ulink url="&lfs-ticket-root;2729">#2729</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Add parameters to prevent chapter 5 GCC builds
+           from linking to the host system's CLooG and PPL libraries that will
+           not be present in chapter 6.  Fixes
+           <ulink url="&lfs-ticket-root;2723">#2723</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-2.6.35. Fixes
+           <ulink url="&lfs-ticket-root;2728">#2728</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to GCC-4.5.1. Fixes
+           <ulink url="&lfs-ticket-root;2727">#2727</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Make-3.82. Fixes
+           <ulink url="&lfs-ticket-root;2726">#2726</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-08-03</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Autoconf-2.67 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2729">#2729</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - 第5章での GCC ビルドにおいて、ホストシステムの CLooG, PPL ライブラリにリンクされないようにパラメータを追加。
+           それらは第6章でも存在しない。
+           <ulink url="&lfs-ticket-root;2723">#2723</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-2.6.35 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2728">#2728</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - GCC-4.5.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2727">#2727</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Make-3.82 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2726">#2726</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-07-26</para>
       <itemizedlist>
          <listitem>
