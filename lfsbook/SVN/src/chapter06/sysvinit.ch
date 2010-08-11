@@ -122,15 +122,17 @@ Sysvinit パッケージは、システムの起動、実行、シャットダ�
 @z
 
 @x
-        <seg>bootlogd, halt, init, killall5, last, lastb (link to last), mesg,
-        mountpoint, pidof (link to killall5), poweroff (link to halt),
+        <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
+        lastb (link to last), mesg, mountpoint, pidof (link to killall5), 
+        poweroff (link to halt),
         reboot (link to halt), runlevel, shutdown, sulogin,
         telinit (link to init), and utmpdump</seg>
 @y
-        <seg>bootlogd, halt, init, killall5, last, lastb (last へのリンク), mesg,
-        mountpoint, pidof (killall5 へのリンク), poweroff (halt へのリンク),
+        <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
+        lastb (last へのリンク), mesg, mountpoint, pidof (killall5 へのリンク), 
+        poweroff (halt へのリンク),
         reboot (halt へのリンク), runlevel, shutdown, sulogin,
-        telinit (init へのリンク), utmpdump</seg>
+        telinit (init へのリンク), and utmpdump</seg>
 @z
 
 @x

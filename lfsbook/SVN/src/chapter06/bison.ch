@@ -26,17 +26,6 @@
 @z
 
 @x
-    <para>Fix an issue with the testsuite, which doesn't correctly handle
-    certain output from GCC-&gcc-version;:</para>
-@y
-<para>
-テストスイート実行時の不具合を修正します。
-これは GCC-&gcc-version;
-の特定の出力結果が正しく取り扱えない不具合です。
-</para>
-@z
-
-@x
     <para>Prepare Bison for compilation:</para>
 @y
     <para>Bison をコンパイルするための準備をします。</para>

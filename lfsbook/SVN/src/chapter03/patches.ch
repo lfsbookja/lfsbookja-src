@@ -58,20 +58,6 @@
 @z
 
 @x
-      <term>Bison GCC-4.5.0 Patch - <token>&bison-gcc-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&bison-gcc-patch;"/></para>
-        <para>MD5 sum: <literal>&bison-gcc-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Bison GCC-4.5.0 Patch - <token>&bison-gcc-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&bison-gcc-patch;"/></para>
-        <para>MD5 sum: <literal>&bison-gcc-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>

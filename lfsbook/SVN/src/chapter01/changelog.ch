@@ -57,6 +57,58 @@
 @z
 
 @x
+      <para>2010-08-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Added fstab-decode to list of progrms installed
+           by sysvinit.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-08-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Sysvinit によってインストールされるプログラム一覧に fstab-decode を追加。
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-08-08</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Bison-2.4.3. Fixes
+           <ulink url="&lfs-ticket-root;2732">#2732</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to IPRoute2-2.6.35. Fixes
+           <ulink url="&lfs-ticket-root;2731">#2731</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Glibc-2.12.1. Fixes
+           <ulink url="&lfs-ticket-root;2730">#2730</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-08-08</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Bison-2.4.3 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2732">#2732</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - IPRoute2-2.6.35 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2731">#2731</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Glibc-2.12.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2730">#2730</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-08-03</para>
       <itemizedlist>
          <listitem>

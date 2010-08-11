@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2010-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/chapter06/{bison.ch, sysvinit.ch}:
+          SVN-20100810, r9354 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-08-06</para>
       <itemizedlist>
         <listitem>
