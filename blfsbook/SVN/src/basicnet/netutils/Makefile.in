@@ -137,8 +137,12 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/basicnet/netutils
-EXTRA_DIST = bind-utils.ch netutils.ch nmap.ch traceroute.ch whois.ch wireshark.ch
-srcs = bind-utils.xml netutils.xml nmap.xml traceroute.xml whois.xml wireshark.xml
+EXTRA_DIST = bind-utils.ch netutils.ch nmap.ch traceroute.ch whois.ch wireshark.ch \
+	avahi.ch
+
+srcs = bind-utils.xml netutils.xml nmap.xml traceroute.xml whois.xml wireshark.xml \
+	avahi.xml
+
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -332,6 +336,7 @@ nmap.xml: $(BOOKdir)/$@ $(srcdir)/nmap.ch
 traceroute.xml: $(BOOKdir)/$@ $(srcdir)/traceroute.ch
 whois.xml: $(BOOKdir)/$@ $(srcdir)/whois.ch
 wireshark.xml: $(BOOKdir)/$@ $(srcdir)/wireshark.ch
+avahi.xml: $(BOOKdir)/$@ $(srcdir)/avahi.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

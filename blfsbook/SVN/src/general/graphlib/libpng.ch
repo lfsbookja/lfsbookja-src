@@ -78,16 +78,16 @@
 @z
 
 @x
-        <para>Patch to include apng functionality in
+        <para>Optional patch to include apng functionality in
         <application>libpng</application> : <ulink
         url="&patch-root;/libpng-&libpng-version;-apng-1.patch"/></para>
         <para>Although rejected by upstream, the patch is required if you want
-        to use the system <application>libpng</application> in 
+        to use the system <application>libpng</application> in
         <application>Firefox</application> 3.</para>
 @y
 <para>
 <application>libpng</application>
-にて apng 機能を含めるための追加のパッチ:
+にて apng 機能を含めるための任意のパッチ:
 <ulink url="&patch-root;/libpng-&libpng-version;-apng-1.patch"/></para>
 <para>
 これはアップストリームでは取り除かれているものです。

@@ -1,7 +1,9 @@
 BOOKdir = $(top_builddir)/@bookdir@/basicnet/netlibs
-EXTRA_DIST = curl.ch gnet.ch libpcap.ch libsoup.ch netlibs.ch libproxy.ch
+EXTRA_DIST = curl.ch gnet.ch libpcap.ch libsoup.ch netlibs.ch libproxy.ch \
+	libnice.ch
 srcdir = @srcdir@
-srcs = curl.xml gnet.xml libpcap.xml libsoup.xml netlibs.xml libproxy.xml
+srcs = curl.xml gnet.xml libpcap.xml libsoup.xml netlibs.xml libproxy.xml \
+	libnice.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -18,3 +20,4 @@ libpcap.xml: $(BOOKdir)/$@ $(srcdir)/libpcap.ch
 libsoup.xml: $(BOOKdir)/$@ $(srcdir)/libsoup.ch
 netlibs.xml: $(BOOKdir)/$@ $(srcdir)/netlibs.ch
 libproxy.xml: $(BOOKdir)/$@ $(srcdir)/libproxy.ch
+libnice.xml: $(BOOKdir)/$@ $(srcdir)/libnice.ch

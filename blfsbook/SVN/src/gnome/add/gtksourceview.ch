@@ -176,14 +176,14 @@ functionality of the
 
 @x
         <seg>None</seg>
-        <seg>libgtksourceview-2.0.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gtksourceview-2.0/gtksourceview,
+        <seg>libgtksourceview-2.0.so</seg>
+        <seg><envar>$GNOME_PREFIX</envar>/{include/gtksourceview-2.0/gtksourceview/completion-providers/words,
         share/{gtk-doc/html/gtksourceview-2.0,gtksourceview-2.0/{language-specs,
         styles}}}</seg>
 @y
         <seg>なし</seg>
-        <seg>libgtksourceview-2.0.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gtksourceview-2.0/gtksourceview,
+        <seg>libgtksourceview-2.0.so</seg>
+        <seg><envar>$GNOME_PREFIX</envar>/{include/gtksourceview-2.0/gtksourceview/completion-providers/words,
         share/{gtk-doc/html/gtksourceview-2.0,gtksourceview-2.0/{language-specs,
         styles}}}</seg>
 @z

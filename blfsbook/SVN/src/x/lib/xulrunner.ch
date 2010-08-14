@@ -23,9 +23,11 @@
     <para><application>Xulrunner</application> is a runtime environment for XUL
     applications, and forms the major part of the <application>Mozilla</application>
     codebase.  In particular, it provides the gecko engine together with pkgconfig
-    files so that applications such as <application>Epiphany</application> and
-    <application>Yelp</application> can find and use it.</para>
+    files so that applications such as <application>Yelp</application> can find
+    and use it.  However, be aware that Gnome applications are transitioning to
+    <application>Webkit</application> instead of gecko.</para>
 @y
+<!--
 <para>
 <application>Xulrunner</application>
 は、XUL アプリケーションのランタイム環境を提供します。
@@ -34,6 +36,13 @@
 <application>Epiphany</application> や <application>Yelp</application>
 が利用可能となります。
 </para>
+-->
+    <para><application>Xulrunner</application> is a runtime environment for XUL
+    applications, and forms the major part of the <application>Mozilla</application>
+    codebase.  In particular, it provides the gecko engine together with pkgconfig
+    files so that applications such as <application>Yelp</application> can find
+    and use it.  However, be aware that Gnome applications are transitioning to
+    <application>Webkit</application> instead of gecko.</para>
 @z
 
 @x
@@ -181,7 +190,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <xref linkend="curl"/> (only for crash-reporter),
     <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
     (for gnome integration),
-    <xref linkend="lcms"/>,
+    <xref linkend="libnotify"/>,
     <xref linkend="libpng"/> (patched for apng support),
     <!-- Redundant as NSS requires this
     <xref linkend="nspr"/> (recommended if you build any other Mozilla.org
@@ -194,20 +203,22 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     jemalloc code), and
     <xref linkend="wget"/></para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <xref linkend="doxygen"/>,
     <xref linkend="curl"/> (crash-reporter 構築時のみ必要),
-    <xref linkend="gnome-vfs"/> と <xref linkend="libgnomeui"/>
+    <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
     (for gnome integration),
-    <xref linkend="lcms"/>,
-    <xref linkend="libpng"/> (patched for apng support),
+    <xref linkend="libnotify"/>,
+    <xref linkend="libpng"/> (apng をサポートするパッチ適用のもの),
     <!-- Redundant as NSS requires this
-    <xref linkend="nspr"/> (Mozilla.org の数多くのパッケージをビルドする場合には推奨), -->
-    <xref linkend="nss"/> (Mozilla.org の数多くのパッケージをビルドする場合には推奨),
+    <xref linkend="nspr"/> (recommended if you build any other Mozilla.org
+    packages), -->
+    <xref linkend="nss"/> (Mozilla.org パッケージをビルドしている場合には推奨),
     <xref linkend="startup-notification"/>,
     <xref linkend="unzip"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink> (jemalloc コードのテスト時のみ必要),
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+    (jemalloc コードのテスト時のみ必要),
     <xref linkend="wget"/></para>
 @z
 
@@ -411,7 +422,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @z
 
 @x
-        <seg>xulrunner</seg>
+        <seg>xulrunner, and optionally nspr-config</seg>
         <seg>Numerous libraries, browser components, plugins, extensions, and
         helper modules installed in <filename
         class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename></seg>
@@ -419,7 +430,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
         /usr/lib/xulrunner-&xulrunner-version;, and
         /usr/lib/xulrunner-devel-&xulrunner-version;</seg>
 @y
-        <seg>xulrunner</seg>
+        <seg>xulrunner と、任意ビルドの nspr-config</seg>
         <seg>
         数々のライブラリ、
         ブラウザコンポーネント、

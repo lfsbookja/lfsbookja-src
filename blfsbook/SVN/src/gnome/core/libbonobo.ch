@@ -87,17 +87,15 @@ This is a component and compound document system for
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
-    <xref linkend="ORBit2"/>,
-    <xref linkend="popt"/>,
-    <xref linkend="perl-xml-parser"/></para>
+    <xref linkend="ORBit2"/>, and
+    <xref linkend="popt"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="ORBit2"/>,
-    <xref linkend="popt"/>,
-    <xref linkend="perl-xml-parser"/></para>
+    <xref linkend="popt"/></para>
 @z
 
 @x
@@ -160,19 +158,16 @@ commands:
 
 @x
     <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/bonobo</parameter>: This parameter causes the libexec
-    files to be installed in the preferred location of
-    <filename class="directory">$GNOME_PREFIX/lib/bonobo</filename> instead of
+    ORBit-2.0)/lib/bonobo-2.0</parameter>: This parameter causes the libexec
+    files to be installed in the preferred location of <filename
+    class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename> instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/bonobo</parameter>:
-
-This parameter causes the libexec
-files to be installed in the preferred location of
-<filename class="directory">$GNOME_PREFIX/lib/bonobo</filename> instead of
-<filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
+    ORBit-2.0)/lib/bonobo-2.0</parameter>: This parameter causes the libexec
+    files to be installed in the preferred location of <filename
+    class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename> instead of
+    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @z
 
 @x
@@ -192,31 +187,27 @@ files to be installed in the preferred location of
 @z
 
 @x
-        <seg>activation-client, bonobo-slay, echo-client-2,
-        bonobo-activation-run-query, bonobo-activation-server, and
+        <seg>activation-client, bonobo-activation-run-query, bonobo-slay,
+        echo-client-2, bonobo-activation-server, bonobo-echo-2, and
         bonobo-activation-sysconf</seg>
-        <seg>libbonobo-2.{so,a}, libbonobo-activation.{so,a},
-        <application>ORBit-2</application> bonobo module, bonobo
-        servers, and libmoniker_std_2.{so,a} bonobo library</seg>
-        <seg>&gnome-etc-dir;/bonobo-activation and the following subdirectories
-        of <envar>$GNOME_PREFIX</envar>/:
-        include/{bonobo-activation-2.0,libbonobo-2.0},
-        lib/{bonobo{,-2.0},libbonobo}, and
-        share/{gtk-doc/html/{bonobo-activation,libbonobo},
-        idl/bonobo-{,activation-}2.0}</seg>
+        <seg>libmoniker_std_2.{so,a}, libbonobo-2.{so,a},
+        libbonobo-activation.{so,a}, and Bonobo_module.{so,a}</seg>
+        <seg>&gnome-etc-dir;/bonobo-activation,
+        <envar>$GNOME_PREFIX</envar>/{include/{bonobo-activation-2.0/bonobo-activation,
+        libbonobo-2.0/bonobo},lib/{bonobo-2.0/samples,bonobo/{monikers,
+        servers}},share/{gtk-doc/html/{bonobo-activation,libbonobo},
+        idl/{bonobo-2.0,bonobo-activation-2.0}}}</seg>
 @y
-        <seg>activation-client, bonobo-slay, echo-client-2,
-        bonobo-activation-run-query, bonobo-activation-server,
+        <seg>activation-client, bonobo-activation-run-query, bonobo-slay,
+        echo-client-2, bonobo-activation-server, bonobo-echo-2, and
         bonobo-activation-sysconf</seg>
-        <seg>libbonobo-2.{so,a}, libbonobo-activation.{so,a},
-        <application>ORBit-2</application> bonobo モジュール, bonobo
-        サーバー, libmoniker_std_2.{so,a} bonobo ライブラリ</seg>
-        <seg>&gnome-etc-dir;/bonobo-activation と <envar>$GNOME_PREFIX</envar>/
-        配下の以下のサブディレクトリ:
-        include/{bonobo-activation-2.0,libbonobo-2.0},
-        lib/{bonobo{,-2.0},libbonobo},
-        share/{gtk-doc/html/{bonobo-activation,libbonobo},
-        idl/bonobo-{,activation-}2.0}</seg>
+        <seg>libmoniker_std_2.{so,a}, libbonobo-2.{so,a},
+        libbonobo-activation.{so,a}, and Bonobo_module.{so,a}</seg>
+        <seg>&gnome-etc-dir;/bonobo-activation,
+        <envar>$GNOME_PREFIX</envar>/{include/{bonobo-activation-2.0/bonobo-activation,
+        libbonobo-2.0/bonobo},lib/{bonobo-2.0/samples,bonobo/{monikers,
+        servers}},share/{gtk-doc/html/{bonobo-activation,libbonobo},
+        idl/{bonobo-2.0,bonobo-activation-2.0}}}</seg>
 @z
 
 @x

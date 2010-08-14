@@ -108,12 +108,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="curl"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>, and
+    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
+    <xref linkend="gobject-introspection"/>,
+    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="curl"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>, and
+    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
+    <xref linkend="gobject-introspection"/>,
+    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>,
     <xref linkend="gtk-doc"/></para>
 @z
 
@@ -158,50 +162,50 @@
 @z
 
 @x
-    <para><option>--enable-3D-transforms</option>: This option enable support
+    <para><option>--enable-3D-transforms</option>: This option enables support
     for 3D transforms.</para>
 @y
-    <para><option>--enable-3D-transforms</option>: This option enable support
+    <para><option>--enable-3D-transforms</option>: This option enables support
     for 3D transforms.</para>
 @z
 
 @x
-    <para><option>--enable-geolocation</option>: This option enable support for
+    <para><option>--enable-geolocation</option>: This option enables support for
     geolocation.</para>
 @y
-    <para><option>--enable-geolocation</option>: This option enable support for
+    <para><option>--enable-geolocation</option>: This option enables support for
     geolocation.</para>
 @z
 
 @x
-    <para><option>--enable-wml</option>: This option enable support for
+    <para><option>--enable-introspection</option>: This option enables support
+    for gobject-introspection.</para>
+@y
+    <para><option>--enable-introspection</option>: This option enables support
+    for gobject-introspection.</para>
+@z
+
+@x
+    <para><option>--enable-mathml</option>: This option enables support for
+    MathML.</para>
+@y
+    <para><option>--enable-mathml</option>: This option enables support for
+    MathML.</para>
+@z
+
+@x
+    <para><option>--enable-wml</option>: This option enables support for
     WML.</para>
 @y
-    <para><option>--enable-wml</option>: This option enable support for
+    <para><option>--enable-wml</option>: This option enables support for
     WML.</para>
 @z
 
 @x
-    <para><option>--enable-shared-workers</option>: This option enable support
-    for SharedWorkers.</para>
-@y
-    <para><option>--enable-shared-workers</option>: This option enable support
-    for SharedWorkers.</para>
-@z
-
-@x
-    <para><option>--enable-filters</option>: This option enable support for
-    filters.</para>
-@y
-    <para><option>--enable-filters</option>: This option enable support for
-    filters.</para>
-@z
-
-@x
-    <para><option>--enable-web-sockets</option>: This option enable support for
+    <para><option>--enable-web-sockets</option>: This option enables support for
     Web Sockets.</para>
 @y
-    <para><option>--enable-web-sockets</option>: This option enable support for
+    <para><option>--enable-web-sockets</option>: This option enables support for
     Web Sockets.</para>
 @z
 

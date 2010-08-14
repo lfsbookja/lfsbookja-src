@@ -104,28 +104,24 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="gtk2"/> (Required if building a
-    <application>GNOME</application> desktop because it will build the program
-    <command>gconf-sanity-check-2</command>, which is required for
-    building <application>GNOME Session</application>.)</para>
+    <application>GNOME</application> desktop.
+    <command>gconf-sanity-check-2</command> will not build otherwise.)</para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
     <para role="recommended"><xref linkend="gtk2"/>
     (<application>GNOME</application> デスクトップ環境を構築する場合に必要。
-    これにより <command>gconf-sanity-check-2</command>
-    <application>GNOME Session</application>
-    を構築するために必要。)
+    これがなければ <command>gconf-sanity-check-2</command>
+    はビルドされない。)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>,
-    <xref linkend="intltool"/>, and
+    <para role="optional"><xref linkend="openldap"/> and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>,
-    <xref linkend="intltool"/>,
+    <para role="optional"><xref linkend="openldap"/>、
     <xref linkend="gtk-doc"/></para>
 @z
 
@@ -251,17 +247,17 @@ to be installed in the preferred location of
         gconf-sanity-check-2, and gconfd-2</seg>
         <seg>libgconf-2.{so,a}, libgconfbackend-xml.{so,a}, and
         libgconfbackend-oldxml.{so,a}</seg>
-        <seg>&gnome-etc-dir;/gconf{gconf.xml.defaults,2,gconf.xml.mandatory} and
-        <envar>$GNOME_PREFIX</envar>/{lib/GConf/2,share/sgml/gconf,
-        share/gtk-doc/html/gconf,include/gconf/2/gconf}</seg>
+        <seg>&gnome-etc-dir;/gconf/{2,gconf.xml.defaults,gconf.xml.mandatory,
+        gconf.xml.system}, <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,
+        lib/GConf/2,share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
 @y
         <seg>gconf-merge-tree, gconftool-2, gconf-defaults-mechanism,
-        gconf-sanity-check-2, gconfd-2</seg>
+        gconf-sanity-check-2, and gconfd-2</seg>
         <seg>libgconf-2.{so,a}, libgconfbackend-xml.{so,a},
         libgconfbackend-oldxml.{so,a}</seg>
-        <seg>&gnome-etc-dir;/gconf{gconf.xml.defaults,2,gconf.xml.mandatory},
-        <envar>$GNOME_PREFIX</envar>/{lib/GConf/2,share/sgml/gconf,
-        share/gtk-doc/html/gconf,include/gconf/2/gconf}</seg>
+        <seg>&gnome-etc-dir;/gconf/{2,gconf.xml.defaults,gconf.xml.mandatory,
+        gconf.xml.system}, <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,
+        lib/GConf/2,share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
 @z
 
 @x

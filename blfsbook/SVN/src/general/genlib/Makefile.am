@@ -10,7 +10,8 @@ EXTRA_DIST = glib2.ch libesmtp.ch libpthread-stubs.ch pcre.ch \
 	libtasn1.ch libunique.ch nspr.ch libxcb.ch xcb-proto.ch \
 	libffi.ch gir-repository.ch gobject-introspection.ch \
 	enchant.ch icu.ch libical.ch libelf.ch libggz.ch \
-	libsigc++.ch ptlib.ch glibmm.ch libatasmart.ch
+	libsigc++.ch ptlib.ch glibmm.ch libatasmart.ch libdaemon.ch \
+	telepathy-glib.ch
 srcdir = @srcdir@
 srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	aspell.xml gmime.xml libgcrypt.xml libusb-compat.xml popt.xml \
@@ -23,7 +24,8 @@ srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	libtasn1.xml libunique.xml nspr.xml libxcb.xml xcb-proto.xml \
 	libffi.xml gir-repository.xml gobject-introspection.xml \
 	enchant.xml icu.xml libical.xml libelf.xml libggz.xml \
-        libsigc++.xml ptlib.xml glibmm.xml libatasmart.xml
+        libsigc++.xml ptlib.xml glibmm.xml libatasmart.xml libdaemon.xml \
+	telepathy-glib.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -95,4 +97,6 @@ libsigc++.xml: $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
 ptlib.xml: $(BOOKdir)/$@ $(srcdir)/ptlib.ch
 glibmm.xml: $(BOOKdir)/$@ $(srcdir)/glibmm.ch
 libatasmart.xml: $(BOOKdir)/$@ $(srcdir)/libatasmart.ch
+libdaemon.xml: $(BOOKdir)/$@ $(srcdir)/libdaemon.ch
+telepathy-glib.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-glib.ch
 

@@ -111,12 +111,12 @@ amongst other things provides LAN browsing support).
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
     <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
     (required to build the <command>cifs.upcall</command> program),
-    <ulink url="http://www.avahi.org">Avahi</ulink>,
+    <xref linkend="avahi"/>,
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="popt"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="cups"/>,
@@ -132,7 +132,7 @@ amongst other things provides LAN browsing support).
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
     <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
     (required to build the <command>cifs.upcall</command> program),
-    <ulink url="http://www.avahi.org">Avahi</ulink>,
+    <xref linkend="avahi"/>,
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>

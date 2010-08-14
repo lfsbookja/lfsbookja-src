@@ -146,18 +146,18 @@
         <seg>None</seg>
         <seg>libgiomm-2.4.so, libglibmm-2.4.so, and
         libglibmm_generate_extra_defs-2.4.so</seg>
-        <seg>/usr/{include/{giomm-2.4/giomm/private,glibmm-2.4/{glibmm,
-        glibmm_generate_extra_defs,glibmm/private}},lib/{giomm-2.4/include,
-        glibmm-2.4/{include,proc/{m4,pm}}},share/{devhelp/books/glibmm-2.4,
-        doc/glibmm-2.4/{images,reference/html},glibmm-2.4/doctool}}</seg>
+        <seg>/usr/{include/{giomm-2.4/giomm/private,glibmm-2.4/{glibmm/private,
+        glibmm_generate_extra_defs}},lib/{giomm-2.4/include,glibmm-2.4/{include,
+        proc/{m4,pm}}},share/{devhelp/books/glibmm-2.4,doc/glibmm-2.4/{images,
+        reference/html},glibmm-2.4/doctool}}</seg>
 @y
         <seg>なし</seg>
         <seg>libgiomm-2.4.so, libglibmm-2.4.so,
         libglibmm_generate_extra_defs-2.4.so</seg>
-        <seg>/usr/{include/{giomm-2.4/giomm/private,glibmm-2.4/{glibmm,
-        glibmm_generate_extra_defs,glibmm/private}},lib/{giomm-2.4/include,
-        glibmm-2.4/{include,proc/{m4,pm}}},share/{devhelp/books/glibmm-2.4,
-        doc/glibmm-2.4/{images,reference/html},glibmm-2.4/doctool}}</seg>
+        <seg>/usr/{include/{giomm-2.4/giomm/private,glibmm-2.4/{glibmm/private,
+        glibmm_generate_extra_defs}},lib/{giomm-2.4/include,glibmm-2.4/{include,
+        proc/{m4,pm}}},share/{devhelp/books/glibmm-2.4,doc/glibmm-2.4/{images,
+        reference/html},glibmm-2.4/doctool}}</seg>
 @z
 
 @x

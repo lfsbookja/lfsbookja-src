@@ -166,13 +166,13 @@
 
 @x
         <seg>None</seg>
-        <seg>libpt{.so,_s.a}</seg>
+        <seg>libpt.so, libpt_s.a, alsa_pwplugin.so, and v4l2_pwplugin.so</seg>
         <seg>/usr/{include/{ptclib,ptlib/unix/ptlib},
         lib/ptlib-&ptlib-version;/devices/{sound,videoinput},
         share/ptlib/make}</seg>
 @y
         <seg>なし</seg>
-        <seg>libpt{.so,_s.a}</seg>
+        <seg>libpt.so, libpt_s.a, alsa_pwplugin.so, v4l2_pwplugin.so</seg>
         <seg>/usr/{include/{ptclib,ptlib/unix/ptlib},
         lib/ptlib-&ptlib-version;/devices/{sound,videoinput},
         share/ptlib/make}</seg>
