@@ -406,8 +406,8 @@
         </listitem>
         <listitem>
           <para>[ken] - tiff-3.9.4 へのアップグレード。
-          Fixes ticket
-	  <ulink url="&blfs-ticket-root;3139">#3139</ulink>.</para>
+          チケット
+	  <ulink url="&blfs-ticket-root;3139">#3139</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[ken] - Updated to webkitgtk+-1.2.3 and reinstate gail (updated
