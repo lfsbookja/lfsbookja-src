@@ -29,6 +29,16 @@ Psmisc パッケージは稼動中プロセスの情報表示を行うプログ�
 @z
 
 @x
+    <para>Fix a bug that prevents <command>peekfd</command> from being built on
+    the x86_64 architecture:</para>
+@y
+<para>
+<command>peekfd</command>
+が x86_64 アーキテクチャではビルドできないバグを修正します。
+</para>
+@z
+
+@x
     <para>Prepare Psmisc for compilation:</para>
 @y
     <para>Psmisc をコンパイルするための準備をします。</para>
@@ -57,16 +67,27 @@ Psmisc パッケージは稼動中プロセスの情報表示を行うプログ�
     installed. This usually is not a problem because it is installed later
     in the Sysvinit package, which provides a better
     <command>pidof</command> program. If Sysvinit will not be used for a
-    particular system, complete the installation of Psmisc by creating the
-    following symlink:</para>
+    particular system, complete the installation of Psmisc by first moving
+    the <command>killall</command> to the correct location, as specified by the
+    FHS, then create a symlink to it:</para>
 @y
 <para>
 Psmisc の <command>pidof</command>
 プログラムはデフォルトではインストールされませんが、通常これは問題にはなりません。
 それはこの後に Sysvinit パッケージによってインストールされるからです。
 Sysvinit の <command>pidof</command> プログラムはより適切なプログラムです。
-しかし特定のシステムにおいて Sysvinit を利用しないなら、以下のシンボリックリックを生成して
-Psmisc のインストールを完了させます。
+しかし特定のシステムにおいて Sysvinit を利用しないなら、
+FHS にて規定されているようなディレクトリにプログラムを移動させ、以下のようにシンボリックリックを生成します。
+</para>
+@z
+
+@x
+    <para>Finally, move the <command>fuser</command> program to the location
+    specified by the FHS:</para>
+@y
+<para>
+<command>fuser</command>
+プログラムを、FHS が規定しているディレクトリに移動します。
 </para>
 @z
 

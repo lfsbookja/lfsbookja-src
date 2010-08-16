@@ -54,6 +54,20 @@
 -->
 
     <listitem>
+      <para>2010-08-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/chapter06/{iproute2.ch, psmisc.ch, zlib.ch},
+          src/chapter08/kernel.ch:
+          SVN-20100815, r9361 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-08-11</para>
       <itemizedlist>
         <listitem>

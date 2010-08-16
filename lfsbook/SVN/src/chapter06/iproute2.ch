@@ -51,6 +51,16 @@ IPRoute2 パッケージは IPV4 ベースの基本的または応用的ネッ�
 @z
 
 @x
+    <para>Fix a bug that causes the <command>ip route get</command> command to
+    not produce any output:</para>
+@y
+<para>
+<command>ip route get</command>
+コマンドが、何も出力を生成しないバグを修正します。
+</para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>パッケージをコンパイルします。</para>

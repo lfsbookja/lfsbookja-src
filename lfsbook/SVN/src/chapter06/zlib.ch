@@ -50,11 +50,13 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
 
 @x
           <para>Setting CFLAGS overrides the default optimization in the
-          package to prevent some run time errors.</para>
+          package to prevent some run time errors.  Note that the -mstackrealign
+          may cause build failures in non-Intel architeture systems.</para>
 @y
 <para>
 CFLAGS を設定することで、デフォルトの最適化オプション指定を上書きします。
 実行時エラーが発生する場合があるため、それを修正するものです。
+-mstackrealign オプションは Intel アーキテクチャではないシステムではビルドに失敗するかもしれません。
 </para>
 @z
 

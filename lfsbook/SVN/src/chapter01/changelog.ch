@@ -57,6 +57,71 @@
 @z
 
 @x
+      <para>2010-08-15</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Added a note to the zlib build options
+           explanation that -mstackrealign may cause build failures
+           on non-Intel architectures.  Fixes
+           <ulink url="&lfs-ticket-root;2733">#2733</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Fix a bug in iproute2 that prevents
+           <command>ip route get</command> from producing any output. Thanks to
+           Thomas Trepl for the report, and to Andrew Benton for the fix.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Udev-161.  Fixes
+           <ulink url="&lfs-ticket-root;2739">#2739</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-2.6.35.2. Fixes
+           <ulink url="&lfs-ticket-root;2737">#2737</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Move the fuser program to the root filesystem as it
+           is used in the netfs bootscript. Fixes
+           <ulink url="&lfs-ticket-root;2736">#2736</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Build peekfd on x86_64 as well as x86. Fixes
+           <ulink url="&lfs-ticket-root;2734">#2734</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-08-15</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Zlib のビルドオプション -mstackrealign
+           にて、Intel アーキテクチャ以外ではビルドエラーが発生する旨を追記。
+           <ulink url="&lfs-ticket-root;2733">#2733</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - <command>ip route get</command>
+           にて出力生成に失敗するバグを修正。
+           Thomas Trepl による報告、および Andrew Benton による修正に感謝。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Udev-161 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2739">#2739</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-2.6.35.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2737">#2737</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Netfs ブートスクリプトが利用する
+           fuser プログラムを root ファイルシステムに移動。
+           <ulink url="&lfs-ticket-root;2736">#2736</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - peekfd を x86 と同様に x86_64 でもビルドすることに。
+           <ulink url="&lfs-ticket-root;2734">#2734</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-08-10</para>
       <itemizedlist>
          <listitem>
