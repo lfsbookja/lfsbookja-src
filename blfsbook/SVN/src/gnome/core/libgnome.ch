@@ -97,12 +97,10 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <xref linkend="intltool"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <xref linkend="intltool"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
 @x
@@ -191,16 +189,16 @@
         <seg>gnome-open</seg>
         <seg>libgnome-2.{so,a} and the libmoniker_extra_2.{so,a} (bonobo
         library)</seg>
-        <seg>&gnome-etc-dir;/sound,
-        and the following subdirectories of <envar>$GNOME_PREFIX</envar>/:
-        include/libgnome-2.0, share/gtk-doc/html/libgnome</seg>
+        <seg>&gnome-etc-dir;/sound/events,
+        <envar>$GNOME_PREFIX</envar>/{include/libgnome-2.0/libgnome,
+        share/gtk-doc/html/libgnome}</seg>
 @y
         <seg>gnome-open</seg>
         <seg>libgnome-2.{so,a} and the libmoniker_extra_2.{so,a} (bonobo
         library)</seg>
-        <seg>&gnome-etc-dir;/sound,
-        and the following subdirectories of <envar>$GNOME_PREFIX</envar>/:
-        include/libgnome-2.0, share/gtk-doc/html/libgnome</seg>
+        <seg>&gnome-etc-dir;/sound/events,
+        <envar>$GNOME_PREFIX</envar>/{include/libgnome-2.0/libgnome,
+        share/gtk-doc/html/libgnome}</seg>
 @z
 
 @x

@@ -175,11 +175,11 @@ X + Window Managers
 @x
   <para><application>GNOME</application> is the main alternative to
   <application>KDE</application> in the Desktop Environment arena and
-  we cover <application>GNOME</application>-&gnome-version; here.</para>
+  we cover <application>GNOME</application>-&gnome-old-version; here.</para>
 @y
   <para><application>GNOME</application> is the main alternative to
   <application>KDE</application> in the Desktop Environment arena and
-  we cover <application>GNOME</application>-&gnome-version; here.</para>
+  we cover <application>GNOME</application>-&gnome-old-version; here.</para>
 @z
 
 @x

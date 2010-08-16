@@ -62,6 +62,91 @@
 @z
 
 @x
+      <para>August 16th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to Ekiga-3.2.7.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Control Center-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to bug-buddy-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to brasero-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to libgnomeui-2.24.3. Fixes ticket
+          <ulink url="&blfs-ticket-root;3093">#3093</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, libgnome-keyring-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to gnome-keyring-2.30.3.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to libgnomecanvas-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to libgnome-2.30.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Ekiga-3.2.7 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Control Center-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - bug-buddy-2.30.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - brasero-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - libgnomeui-2.24.3 へのアップグレード。
+          チケット
+          <ulink url="&blfs-ticket-root;3093">#3093</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ libgnome-keyring-2.30.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-keyring-2.30.3 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - libgnomecanvas-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - libgnome-2.30.0 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>August 15th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GNOME update prep. (Changed gnome-version to
+          gnome-old-version)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GNOME update prep. (Changed gnome-version to
+          gnome-old-version)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>August 14th, 2010</para>
       <itemizedlist>
         <listitem>
