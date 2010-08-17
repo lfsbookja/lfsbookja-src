@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2010-08-16</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Updated to vim-7.3. Fixes
+           <ulink url="&lfs-ticket-root;2721">#2721</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2010-08-16</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - vim-7.3 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2721">#2721</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-08-15</para>
       <itemizedlist>
          <listitem>

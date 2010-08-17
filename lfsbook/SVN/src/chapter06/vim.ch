@@ -46,20 +46,20 @@ Vim パッケージは強力なテキストエディタを提供します。
     <title>Vim のインストール</title>
 @z
 
-@x
-    <para>First, unpack both
-    <filename>vim-&vim-version;.tar.bz2</filename> and (optionally)
-    <filename>vim-&vim-version;-lang.tar.gz</filename> archives into the
-    same directory.</para>
-@y
-<para>
-まず２つのアーカイブ
-<filename>vim-&vim-version;.tar.bz2</filename>、
-<filename>vim-&vim-version;-lang.tar.gz</filename>
-を同一ディレクトリに解凍します。
-(２つめのアーカイブを用いるのは任意です。)
-</para>
-@z
+% @x
+%     <para>First, unpack both
+%     <filename>vim-&vim-version;.tar.bz2</filename> and (optionally)
+%     <filename>vim-&vim-version;-lang.tar.gz</filename> archives into the
+%     same directory.</para>
+% @y
+% <para>
+% まず２つのアーカイブ
+% <filename>vim-&vim-version;.tar.bz2</filename>、
+% <filename>vim-&vim-version;-lang.tar.gz</filename>
+% を同一ディレクトリに解凍します。
+% (２つめのアーカイブを用いるのは任意です。)
+% </para>
+% @z
 
 % @x
 %     <para>Apply a patch which fixes various issues already found and fixed by
@@ -73,7 +73,7 @@ Vim パッケージは強力なテキストエディタを提供します。
 % @z
 
 @x
-    <para>Change the default location of the
+    <para>First, change the default location of the
     <filename>vimrc</filename> configuration file to <filename
     class="directory">/etc</filename>:</para>
 @y
@@ -328,14 +328,14 @@ Vim がインストールするスペルファイル (spell files)
 @z
 
 @x
-        <seg>ex (link to vim), rview (link to vim), rvim (link to vim),
-        vi (link to vim), view (link to vim), vim,
-        vimdiff (link to vim), vimtutor, and xxd</seg>
+       <seg> ex (link to vim), rview (link to vim), rvim (link to vim), vi
+       (link to vim), view (link to vim), vim, vimdiff (link to vim), vimtutor,
+       and xxd</seg>
         <seg>/usr/share/vim</seg>
 @y
-        <seg>ex (vim へのリンク), rview (vim へのリンク), rvim (vim へのリンク),
-        vi (vim へのリンク), view (vim へのリンク), vim,
-        vimdiff (vim へのリンク), vimtutor, xxd</seg>
+       <seg> ex (vim へのリンク), rview (vim へのリンク), rvim (vim へのリンク), vi
+       (vim へのリンク), view (vim へのリンク), vim, vimdiff (vim へのリンク), vimtutor,
+       xxd</seg>
         <seg>/usr/share/vim</seg>
 @z
 

@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2010-08-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/packages.ch,
+          src/chapter06/vim.ch:
+          SVN-20100815, r9363 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-08-16</para>
       <itemizedlist>
         <listitem>
