@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2010-08-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Correct the fix for the iproute2 bug.  Thanks to
+          Gilles Espinasse for the pointer.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-08-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - iproute2 のバグを修正。
+          指摘してくれた Gilles Espinasse に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-08-16</para>
       <itemizedlist>
          <listitem>
