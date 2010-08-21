@@ -37,7 +37,7 @@
   <bridgehead renderas="sect2">Part I - Introduction</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第I部 - はじめに
+第 I 部 - はじめに
 </bridgehead>
 @z
 
@@ -46,7 +46,7 @@
   the rest of the book.</para>
 @y
 <para>
-
+この部では
 This part contains information which is essential to
 the rest of the book.
 </para>
@@ -57,7 +57,7 @@ the rest of the book.
   Software</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第II部 -
+第 II 部 -
 LFS 設定以降と追加ソフトウェア
 </bridgehead>
 @z
@@ -76,7 +76,7 @@ LFS 設定以降と追加ソフトウェア
   <bridgehead renderas="sect2">Part III - General Libraries and Utilities</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第III部 -
+第 III 部 -
 汎用的なライブラリとユーティリティ
 </bridgehead>
 @z
@@ -97,7 +97,7 @@ LFS 設定以降と追加ソフトウェア
   <bridgehead renderas="sect2">Part IV - Basic Networking</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第IV部 -
+第 IV 部 -
 基本的なネットワークソフトウェア
 </bridgehead>
 @z
@@ -116,7 +116,7 @@ LFS 設定以降と追加ソフトウェア
   <bridgehead renderas="sect2">Part V - Servers</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第V部 -
+第 V 部 -
 サーバー
 </bridgehead>
 @z
@@ -133,7 +133,7 @@ LFS 設定以降と追加ソフトウェア
   <bridgehead renderas="sect2">Part VI - X + Window Managers</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第VI部 -
+第 VI 部 -
 X + Window Managers
 </bridgehead>
 @z
@@ -152,7 +152,7 @@ X + Window Managers
   <bridgehead renderas="sect2">Part VII - KDE</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第VII部 - KDE
+第 VII 部 - KDE
 </bridgehead>
 @z
 
@@ -168,7 +168,7 @@ X + Window Managers
   <bridgehead renderas="sect2">Part VIII - GNOME</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第VIII部 - GNOME
+第 VIII 部 - GNOME
 </bridgehead>
 @z
 
@@ -177,16 +177,19 @@ X + Window Managers
   <application>KDE</application> in the Desktop Environment arena and
   we cover <application>GNOME</application>-&gnome-old-version; here.</para>
 @y
-  <para><application>GNOME</application> is the main alternative to
-  <application>KDE</application> in the Desktop Environment arena and
-  we cover <application>GNOME</application>-&gnome-old-version; here.</para>
+<para>
+
+<application>GNOME</application> is the main alternative to
+<application>KDE</application> in the Desktop Environment arena and
+we cover <application>GNOME</application>-&gnome-old-version; here.
+</para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part IX - X Software</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第IX部 -
+第 IX 部 -
 X ソフトウェア
 </bridgehead>
 @z
@@ -196,16 +199,17 @@ X ソフトウェア
   They, along with some generic <application>X</application> software can be
   found in this part of the book.</para>
 @y
-  <para>Office programs and graphical web browsers are important to most people.
-  They, along with some generic <application>X</application> software can be
-  found in this part of the book.</para>
+<para>
+システムを扱うユーザーにとって、オフィスプログラムやグラフィカルなウェブブラウザがたいていは必要になります。
+<application>X</application> ウィンドウシステムの汎用的なソフトウェアも含めて、この章にて説明します。
+</para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part X - Multimedia</bridgehead>
 @y
 <bridgehead renderas="sect2">
-第X部 - マルチメディア
+第 X 部 - マルチメディア
 </bridgehead>
 @z
 
@@ -213,16 +217,18 @@ X ソフトウェア
   <para>Here we cover setting multimedia libraries and drivers along with some
   audio, video and CD-writing programs.</para>
 @y
-  <para>Here we cover setting multimedia libraries and drivers along with some
-  audio, video and CD-writing programs.</para>
+<para>
+この部では、オーディオ、ビデオ、CD書き込みツールなどにて必要となるマルチメディアライブラリやドライバの扱いについて説明します。
+</para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part XI - Printing, Scanning and
   Typesetting (PST)</bridgehead>
 @y
-  <bridgehead renderas="sect2">Part XI - Printing, Scanning and
-  Typesetting (PST)</bridgehead>
+<bridgehead renderas="sect2">
+第 XI 部 - 印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
+</bridgehead>
 @z
 
 @x
@@ -231,10 +237,15 @@ X ソフトウェア
   <application>DocBook</application> to installing
   <application>teTeX</application>.</para>
 @y
-  <para>The PST part of the book covers document handling with applications like
-  <application>Ghostscript</application>, <application>CUPS</application> and
-  <application>DocBook</application> to installing
-  <application>teTeX</application>.</para>
+<para>
+印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
+の部では、文書を取り扱うアプリケーションとして
+<application>Ghostscript</application>、
+<application>CUPS</application>、
+<application>DocBook</application>、
+<application>teTeX</application>
+について説明します。
+</para>
 @z
 
 @x
@@ -248,9 +259,8 @@ X ソフトウェア
   book; they are mainly there as a reference.</para>
 @y
 <para>
-
-The Appendices cover information which doesn't belong in the main
-book; they are mainly there as a reference.
+付録の部では、本書の各部には属していない内容を示します。
+主に参考情報を示すものです。
 </para>
 @z
 

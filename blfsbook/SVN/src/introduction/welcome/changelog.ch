@@ -62,8 +62,203 @@
 @z
 
 @x
+      <para>August 21st, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Themes-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Terminal-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Settings Daemon-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Session-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to gnome-screensaver-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Gnome-Python-Desktop-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to gnome-power-manager-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Panel-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to gnome-menus-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Media-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Icon Theme-2.30.3.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Games-2.30.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GNOME Themes-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Terminal-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Settings Daemon-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Session-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-screensaver-2.30.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Gnome-Python-Desktop-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-power-manager-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Panel-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-menus-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Media-2.30.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Icon Theme-2.30.3 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Games-2.30.2 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>August 19th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated from DeviceKit-disks-009 to udisks-1.0.1.
+          Updated to gnome-disk-utility-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Desktop-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to gnome-backgrounds-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Applets-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Made changes to gnome-keyring-2.30.3. Fixes ticket
+          <ulink url="&blfs-ticket-root;3090">#3090</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to gedit-2.30.3.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GDM-2.30.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>August 19th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - DeviceKit-disks-009 から udisks-1.0.1 への更新。
+          gnome-disk-utility-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Desktop-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-backgrounds-2.30.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Applets-2.30.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-keyring-2.30.3 における変更。
+          チケット
+          <ulink url="&blfs-ticket-root;3090">#3090</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gedit-2.30.3 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GDM-2.30.2 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>August 18th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to GConf Editor-2.30.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GConf Editor-2.30.0 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>August 17th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to Evolution-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Evolution Data Server-2.30.2.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Evince-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to udev-151.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Evolution-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Evolution Data Server-2.30.2.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Evince-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - udev-151 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>August 16th, 2010</para>
       <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to Epiphany-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to EOG-2.30.2.</para>
+        </listitem>
         <listitem>
           <para>[wblaszcz] - Updated to Ekiga-3.2.7.</para>
         </listitem>
@@ -96,6 +291,12 @@
 @y
       <para>2010/08/16</para>
       <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Epiphany-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - EOG-2.30.2 へのアップグレード。</para>
+        </listitem>
         <listitem>
           <para>[wblaszcz] - Ekiga-3.2.7 へのアップグレード。</para>
         </listitem>

@@ -25,9 +25,9 @@
     useful for providing a CSS API.</para>
 @y
 <para>
-The <application>libcroco</application> package contains
-<filename class="libraryfile">libcroco</filename> libraries. This is
-useful for providing a CSS API.
+<application>libcroco</application>
+パッケージは <filename class="libraryfile">libcroco</filename>
+ライブラリを提供します。これは CSS API を提供する際に有用なものです。
 </para>
 @z
 

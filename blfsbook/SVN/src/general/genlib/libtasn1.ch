@@ -84,8 +84,8 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
     <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
+    <para role="optional"><xref linkend="gtk-doc"/>、
+    <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイート実行時に利用)</para>
 @z
 
 @x
@@ -131,6 +131,22 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
 @z
 
 @x
+    <para>If you did not pass the <option>--enable-gtk-doc</option> parameter
+    to the <command>configure</command> script, install the API documentation
+    using the following command as the
+    <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+<command>configure</command>
+スクリプトの実行時に <option>--enable-gtk-doc</option>
+パラメータを指定しなかった場合は、
+API ドキュメントをインストールするために
+<systemitem class="username">root</systemitem>
+ユーザーになって以下のコマンドを実行します。
+</para>
+@z
+
+@x
     <title>Command Explanations</title>
 @y
     <title>&j-CommandExplanations;</title>
@@ -160,7 +176,7 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
 @y
         <seg>asn1Coding, asn1Decoding, and asn1Parser</seg>
         <seg>libtasn1.{so,a}</seg>
-        <seg>/usr/share/doc/libtasn1-&libtasn1-version; and
+        <seg>/usr/share/doc/libtasn1-&libtasn1-version;、
         /usr/share/gtk-doc/html/libtasn1</seg>
 @z
 
@@ -174,8 +190,7 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
           <para>is an ASN.1 DER encoder.</para>
 @y
 <para>
-
-is an ASN.1 DER encoder.
+ASN.1 DER エンコーダー。
 </para>
 @z
 
@@ -183,8 +198,7 @@ is an ASN.1 DER encoder.
           <para>is an ASN.1 DER decoder.</para>
 @y
 <para>
-
-is an ASN.1 DER decoder.
+ASN.1 DER デコーダー。
 </para>
 @z
 
@@ -192,10 +206,13 @@ is an ASN.1 DER decoder.
           <para>is an ASN.1 syntax tree generator for 
           <application>libtasn1</application>.</para>
 @y
+<!--
+日本語訳註：
+意味不明・・・
+-->
 <para>
-
-is an ASN.1 syntax tree generator for 
-<application>libtasn1</application>.
+<application>libtasn1</application>
+ライブラリに対する ASN.1 文法ツリーを生成します。
 </para>
 @z
 
@@ -204,9 +221,8 @@ is an ASN.1 syntax tree generator for
            Distinguish Encoding Rules (DER) manipulation.</para>
 @y
 <para>
-
-is a library for Abstract Syntax Notation One (ASN.1) and
-Distinguish Encoding Rules (DER) manipulation.
+Abstract Syntax Notation One (ASN.1) と
+Distinguish Encoding Rules (DER) を操作するライブラリです。
 </para>
 @z
 

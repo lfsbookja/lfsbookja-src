@@ -153,10 +153,13 @@
           <para>is a non-validating utility to check whether or not
           XML documents are well formed.</para>
 @y
+<!--
+日本語訳註：
+"non-validating" の訳出をスキップ。
+本ツールの内容が分からないと、意味も分からない・・・
+-->
 <para>
-XML ドキュメントが正規化されているかどうかをチェックする・・・
-is a non-validating utility to check whether or not
-XML documents are well formed.
+XML ドキュメントが整形されているかどうかをチェックするユーティリティです。
 </para>
 @z
 

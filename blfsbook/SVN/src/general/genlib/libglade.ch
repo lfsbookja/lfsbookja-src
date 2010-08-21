@@ -195,9 +195,8 @@
           Glade-2.0 standards.</para>
 @y
 <para>
-
-is used to convert old Glade interface files to
-Glade-2.0 standards.
+これは旧版の Glade インターフェースファイルを Glade-2.0
+の標準に合ったものに変換します。
 </para>
 @z
 
@@ -206,9 +205,7 @@ Glade-2.0 standards.
           files.</para>
 @y
 <para>
-
-contain the functions necessary to load Glade interface
-files.
+Glade インターフェースファイルを読み込むために必要な関数を提供します。
 </para>
 @z
 
