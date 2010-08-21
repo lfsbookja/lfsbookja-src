@@ -82,8 +82,7 @@
     <para role="required"><xref linkend="enchant"/>,
     <xref linkend="GConf"/>,
     <xref linkend="gnome-icon-theme"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="intltool"/>, and
+    <xref linkend="gtk2"/>, and
     <xref linkend="iso-codes"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
@@ -91,7 +90,6 @@
     <xref linkend="GConf"/>,
     <xref linkend="gnome-icon-theme"/>,
     <xref linkend="gtk2"/>,
-    <xref linkend="intltool"/>,
     <xref linkend="iso-codes"/></para>
 @z
 
@@ -183,12 +181,12 @@ ORBit-2.0)/lib/gtkhtml</parameter>:
 
 @x
         <seg>gtkhtml-editor-test</seg>
-        <seg>libgtkhtml-3.14.{so,a} and libgnome-gtkhtml-editor-3.14.{so,a}</seg>
+        <seg>libgtkhtml-3.14.so and libgtkhtml-editor.so</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-3.14/{editor,
         gtkhtml},share/gtkhtml-3.14/icons}</seg>
 @y
         <seg>gtkhtml-editor-test</seg>
-        <seg>libgtkhtml-3.14.{so,a}, libgnome-gtkhtml-editor-3.14.{so,a}</seg>
+        <seg>libgtkhtml-3.14.so, libgtkhtml-editor.so</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-3.14/{editor,
         gtkhtml},share/gtkhtml-3.14/icons}</seg>
 @z

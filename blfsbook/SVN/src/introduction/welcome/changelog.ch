@@ -65,6 +65,24 @@
       <para>August 21st, 2010</para>
       <itemizedlist>
         <listitem>
+          <para>[wblaszcz] - Updated to gvfs-1.6.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to gucharmap-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GtkHTML-3.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GOK-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME Utilities-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to GNOME User Docs-2.30.1.</para>
+        </listitem>
+        <listitem>
           <para>[wblaszcz] - Updated to GNOME Themes-2.30.2.</para>
         </listitem>
         <listitem>
@@ -104,6 +122,24 @@
 @y
       <para>2010/08/21</para>
       <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - gvfs-1.6.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gucharmap-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GtkHTML-3.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GOK-2.30.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME Utilities-2.30.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - GNOME User Docs-2.30.1 へのアップグレード。</para>
+        </listitem>
         <listitem>
           <para>[wblaszcz] - GNOME Themes-2.30.2 へのアップグレード。</para>
         </listitem>
