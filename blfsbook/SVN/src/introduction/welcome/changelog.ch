@@ -65,6 +65,15 @@
       <para>August 22nd, 2010</para>
       <itemizedlist>
         <listitem>
+          <para>[wblaszcz] - Added new package, gnome-system-tools-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, liboobs-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, gnome-nettool-2.30.0.</para>
+        </listitem>
+        <listitem>
           <para>[wblaszcz] - Added new package, Empathy-2.30.2.</para>
         </listitem>
         <listitem>
@@ -118,6 +127,15 @@
 @y
       <para>August 22nd, 2010</para>
       <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ gnome-system-tools-2.30.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ liboobs-2.30.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ gnome-nettool-2.30.0 の追加。</para>
+        </listitem>
         <listitem>
           <para>[wblaszcz] - 新パッケージ Empathy-2.30.2 の追加。</para>
         </listitem>

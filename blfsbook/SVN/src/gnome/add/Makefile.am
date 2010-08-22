@@ -12,7 +12,8 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	sound-juicer.ch system-tools-backends.ch totem.ch \
 	gnome-power-manager.ch totem-pl-parser.ch \
 	brasero.ch gnome-disk-utility.ch nautilus-sendto.ch \
-	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch empathy.ch
+	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch empathy.ch \
+	liboobs.ch gnome-nettool.ch gnome-system-tools.ch
 srcdir = @srcdir@
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
@@ -27,7 +28,8 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	sound-juicer.xml system-tools-backends.xml totem.xml \
 	gnome-power-manager.xml totem-pl-parser.xml \
 	brasero.xml gnome-disk-utility.xml nautilus-sendto.xml \
-	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml empathy.xml
+	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml empathy.xml \
+	liboobs.xml gnome-nettool.xml gnome-system-tools.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -85,4 +87,7 @@ cheese.xml: $(BOOKdir)/$@ $(srcdir)/cheese.ch
 deskbar-applet.xml: $(BOOKdir)/$@ $(srcdir)/deskbar-applet.ch
 dasher.xml: $(BOOKdir)/$@ $(srcdir)/dasher.ch
 empathy.xml: $(BOOKdir)/$@ $(srcdir)/empathy.ch
+liboobs.xml: $(BOOKdir)/$@ $(srcdir)/liboobs.ch
+gnome-nettool.xml: $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
+gnome-system-tools.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-tools.ch
 
