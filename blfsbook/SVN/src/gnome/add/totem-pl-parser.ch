@@ -82,12 +82,14 @@ those.
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gmime"/> and
-    <xref linkend="gtk2"/></para>
+    <para role="required"><xref linkend="gmime"/>,
+    <xref linkend="intltool"/>, and
+    <xref linkend="libxml2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gmime"/>,
-    <xref linkend="gtk2"/></para>
+    <xref linkend="intltool"/>,
+    <xref linkend="libxml2"/></para>
 @z
 
 @x
@@ -161,14 +163,14 @@ those.
 
 @x
         <seg>None</seg>
-        <seg>libtotem-plparser.{so,a} and libtotem-plparser-mini.{so,a}</seg>
-        <seg>/usr/include/totem-pl-parser/1/plparseri and
-        /usr/share/gtk-doc/html/totem-pl-parser</seg>
+        <seg>libtotem-plparser-mini.{so,a} and libtotem-plparser.{so,a}</seg>
+        <seg><envar>$GNOME_PREFIX</envar>/{include/totem-pl-parser/1/plparser,
+        share/gtk-doc/html/totem-pl-parser}</seg>
 @y
         <seg>なし</seg>
-        <seg>libtotem-plparser.{so,a}, libtotem-plparser-mini.{so,a}</seg>
-        <seg>/usr/include/totem-pl-parser/1/plparseri,
-        /usr/share/gtk-doc/html/totem-pl-parser</seg>
+        <seg>libtotem-plparser-mini.{so,a}, libtotem-plparser.{so,a}</seg>
+        <seg><envar>$GNOME_PREFIX</envar>/{include/totem-pl-parser/1/plparser,
+        share/gtk-doc/html/totem-pl-parser}</seg>
 @z
 
 @x

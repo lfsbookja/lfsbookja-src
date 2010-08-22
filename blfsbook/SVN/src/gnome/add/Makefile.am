@@ -9,9 +9,10 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	gok.ch gtkhtml.ch gtksourceview.ch \
 	gucharmap.ch java-access-bridge.ch libgail-gnome.ch libgnomecups.ch \
 	libgnomeprint.ch libgnomeprintui.ch orca.ch \
-	sound-juicer.ch system-tools-backends.ch totem.ch zenity.ch \
+	sound-juicer.ch system-tools-backends.ch totem.ch \
 	gnome-power-manager.ch totem-pl-parser.ch \
-	brasero.ch gnome-disk-utility.ch nautilus-sendto.ch
+	brasero.ch gnome-disk-utility.ch nautilus-sendto.ch \
+	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch empathy.ch
 srcdir = @srcdir@
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
@@ -23,9 +24,10 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	gok.xml gtkhtml.xml gtksourceview.xml \
 	gucharmap.xml java-access-bridge.xml libgail-gnome.xml libgnomecups.xml \
 	libgnomeprint.xml libgnomeprintui.xml orca.xml \
-	sound-juicer.xml system-tools-backends.xml totem.xml zenity.xml \
+	sound-juicer.xml system-tools-backends.xml totem.xml \
 	gnome-power-manager.xml totem-pl-parser.xml \
-	brasero.xml gnome-disk-utility.xml nautilus-sendto.xml
+	brasero.xml gnome-disk-utility.xml nautilus-sendto.xml \
+	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml empathy.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -74,9 +76,13 @@ orca.xml: $(BOOKdir)/$@ $(srcdir)/orca.ch
 sound-juicer.xml: $(BOOKdir)/$@ $(srcdir)/sound-juicer.ch
 system-tools-backends.xml: $(BOOKdir)/$@ $(srcdir)/system-tools-backends.ch
 totem.xml: $(BOOKdir)/$@ $(srcdir)/totem.ch
-zenity.xml: $(BOOKdir)/$@ $(srcdir)/zenity.ch
 totem-pl-parser.xml: $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
 brasero.xml: $(BOOKdir)/$@ $(srcdir)/brasero.ch
 gnome-disk-utility.xml: $(BOOKdir)/$@ $(srcdir)/gnome-disk-utility.ch
 nautilus-sendto.xml: $(BOOKdir)/$@ $(srcdir)/nautilus-sendto.ch
+alacarte.xml: $(BOOKdir)/$@ $(srcdir)/alacarte.ch
+cheese.xml: $(BOOKdir)/$@ $(srcdir)/cheese.ch
+deskbar-applet.xml: $(BOOKdir)/$@ $(srcdir)/deskbar-applet.ch
+dasher.xml: $(BOOKdir)/$@ $(srcdir)/dasher.ch
+empathy.xml: $(BOOKdir)/$@ $(srcdir)/empathy.ch
 

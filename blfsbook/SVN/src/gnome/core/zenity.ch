@@ -86,12 +86,14 @@ shell scripts.
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/> and
-    <xref linkend="libglade"/></para>
+    <para role="required"><xref linkend="gnome-doc-utils"/>,
+    <xref linkend="gtk2"/>, and
+    <xref linkend="which"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-doc-utils"/>,
-    <xref linkend="libglade"/></para>
+    <xref linkend="gtk2"/>, and
+    <xref linkend="which"/></para>
 @z
 
 @x
@@ -166,12 +168,12 @@ shell scripts.
 @x
         <seg>gdialog and zenity</seg>
         <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/zenity,omf/zenity,
+        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/zenity/*,omf/zenity,
         zenity/clothes}</seg>
 @y
         <seg>gdialog, zenity</seg>
         <seg>なし</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/zenity,omf/zenity,
+        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/zenity/*,omf/zenity,
         zenity/clothes}</seg>
 @z
 

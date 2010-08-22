@@ -62,6 +62,117 @@
 @z
 
 @x
+      <para>August 22nd, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Added new package, Empathy-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, deskbar-applet-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, dasher-4.11.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, cheese-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, alacarte-0.13.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Zenity-2.30.0 and move it into the core
+          section.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Yelp-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Totem-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to totem-pl-parser-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Orca-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Nautilus-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Metacity-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to libwnck-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to libsoup-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to libgweather-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to libgnomekbd-2.30.1 and removed unused
+          patch file from gnome-panel.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>August 22nd, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ Empathy-2.30.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ deskbar-applet-2.30.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ dasher-4.11 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ cheese-2.30.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ alacarte-0.13.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Zenity-2.30.0 へのアップグレード。コアパッケージの節に移動。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Yelp-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Totem-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - totem-pl-parser-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Orca-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Nautilus-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Metacity-2.30.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - libwnck-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - libsoup-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - libgweather-2.30.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - libgnomekbd-2.30.1 へのアップグレード。
+          また gnome-panel に対する不要なパッチファイルを削除。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>August 21st, 2010</para>
       <itemizedlist>
         <listitem>

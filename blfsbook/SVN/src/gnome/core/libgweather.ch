@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -73,20 +82,24 @@ locations.
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/> and
+    <para role="required"><xref linkend="gtk2"/>,
+    <xref linkend="intltool"/>, and
     <xref linkend="libsoup"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>、
+    <para role="required"><xref linkend="gtk2"/>,
+    <xref linkend="intltool"/>,
     <xref linkend="libsoup"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/> and
+    <xref linkend="pygtk"/></para>
 @y
-    <bridgehead renderas="sect4">任意</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <para role="optional"><xref linkend="gtk-doc"/>,
+    <xref linkend="pygtk"/></para>
 @z
 
 @x
@@ -202,11 +215,13 @@ pdf フォーマットのドキュメントをビルドしたい場合に指定�
         <seg>None</seg>
         <seg>libgweather.{so,a}</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
+        lib/python2.6/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
         share/{gtk-doc/html/libgweather,libgweather}}</seg>
 @y
         <seg>なし</seg>
         <seg>libgweather.{so,a}</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
+        lib/python2.6/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
         share/{gtk-doc/html/libgweather,libgweather}}</seg>
 @z
 
