@@ -65,6 +65,16 @@
       <para>August 22nd, 2010</para>
       <itemizedlist>
         <listitem>
+          <para>[wblaszcz] - Added new package, hamster-applet-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, mousetweaks-2.30.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated from DeviceKit-power-012 to
+          UPower-0.9.1.</para>
+        </listitem>
+        <listitem>
           <para>[wblaszcz] - Added new package, gnome-system-tools-2.30.2.</para>
         </listitem>
         <listitem>
@@ -125,8 +135,17 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>August 22nd, 2010</para>
+      <para>2010/08/22</para>
       <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ hamster-applet-2.30.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ mousetweaks-2.30.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - DeviceKit-power-012 から UPower-0.9.1 への変更。</para>
+        </listitem>
         <listitem>
           <para>[wblaszcz] - 新パッケージ gnome-system-tools-2.30.2 の追加。</para>
         </listitem>

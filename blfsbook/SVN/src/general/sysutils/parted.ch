@@ -80,12 +80,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="Device-mapper"/> (Required if building
-    <application>DeviceKit-disks</application>)</para>
+    <application>udisks</application>)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="Device-mapper"/>
-    (<application>DeviceKit-disks</application>
-    をビルドする際には必要)</para>
+    (<application>udisks</application> をビルドする際には必要)</para>
 @z
 
 @x
