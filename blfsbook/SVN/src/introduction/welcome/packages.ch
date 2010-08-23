@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -27,7 +36,7 @@
   specified is not always available.</para>
 @y
 <para>
-BLFS の作業説明では、各パッケージのソースファイルを二通りの入手方法を示しています。
+BLFS の作業説明では、各パッケージのソースファイルに対し、二通りの入手方法を示しています。
 一つは HTTP によるリンク、もう一つは FTP によるリンクです。
 (パッケージによっては、いずれか一方のリンクしかない場合もあります。)
 これらのリンクは常に正しいものとなるよう努めています。
@@ -66,15 +75,13 @@ BLFS のパッケージが入手できなかった時には、このサイトを
   there first.</para>
 @y
 <para>
-
-We would like to ask a favor, however.  Although this is a public
-resource for you to use, we do not want to abuse it.  We have already had one
-unthinking individual download over 3 GB of data, including multiple copies of
-the same files that are placed at different locations (via symlinks) to make
-finding the right package easier.  This person clearly did not know what files
-he needed and downloaded everything.  The best place to download files
-is the site or sites set up by the source code developer.  Please try
-there first.
+ここで皆さんにお願い致します。
+ソースファイル類は自由に利用できるパブリックなリソースであるわけですが、これらをいたずらに乱したくありません。
+既に個々のパッケージソースを特に熟慮することもなくダウンロードしていますが、中にはパッケージソースを即座に認識できるようにと、同一ファイルに対して複数のコピーが含まれる場合もあります。
+それらは（シンボリックリンクを通じて）別のサイトに置かれている場合もあります。
+ダウンロードしたいファイルがどれであるのか、なかなか分かりにくくなっています。
+ですから本当にダウンロードすべき場所は、そのパッケージの開発者が提供するサイトということになります。
+初めは是非、そのような開発者サイトを参照して頂くようお願いします。
 </para>
 @z
 
