@@ -14,7 +14,7 @@
 @z
 
 @x
-<!ENTITY releasedate  "August &day;nd, &year;">
+<!ENTITY releasedate  "August &day;th, &year;">
 @y
 <!ENTITY releasedate "&year;/&month;/&day;">
 @z
