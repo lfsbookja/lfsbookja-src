@@ -4,14 +4,14 @@ EXTRA_DIST = atk.ch cairo.ch freeglut.ch goffice.ch gtk+.ch gtk+2.ch \
 	mesalib.ch pango.ch qt.ch qt4.ch shared-mime-info.ch \
 	startup-notification.ch xulrunner.ch webkitgtk.ch cairomm.ch \
 	pangomm.ch gtkmm.ch libnotify.ch notification-daemon.ch \
-	libsexy.ch
+	libsexy.ch gtk-vnc.ch
 srcdir = @srcdir@
 srcs = atk.xml cairo.xml freeglut.xml goffice.xml gtk+.xml gtk+2.xml \
 	hicolor-icon-theme.xml lesstif.xml lib.xml libwnck.xml libxklavier.xml \
 	mesalib.xml pango.xml qt.xml qt4.xml shared-mime-info.xml \
 	startup-notification.xml xulrunner.xml webkitgtk.xml cairomm.xml \
 	pangomm.xml gtkmm.xml libnotify.xml notification-daemon.xml \
-	libsexy.xml
+	libsexy.xml gtk-vnc.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -46,4 +46,5 @@ gtkmm.xml: $(BOOKdir)/$@ $(srcdir)/gtkmm.ch
 libnotify.xml: $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 notification-daemon.xml: $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
 libsexy.xml: $(BOOKdir)/$@ $(srcdir)/libsexy.ch
+gtk-vnc.xml: $(BOOKdir)/$@ $(srcdir)/gtk-vnc.ch
 

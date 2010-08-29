@@ -4,7 +4,7 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	epiphany.ch evince.ch evolution-data-server.ch file-roller.ch \
 	gcalctool.ch gconf-editor.ch gdm.ch gedit.ch \
 	gnome-games.ch gnome-mag.ch gnome-media.ch \
-	gnome-mount.ch gnome-netstatus.ch gnome-screensaver.ch \
+	gnome-netstatus.ch gnome-screensaver.ch \
 	gnome-speech.ch gnome-system-monitor.ch gnome-utils.ch \
 	gok.ch gtkhtml.ch gtksourceview.ch \
 	gucharmap.ch java-access-bridge.ch libgail-gnome.ch libgnomecups.ch \
@@ -14,14 +14,15 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	brasero.ch gnome-disk-utility.ch nautilus-sendto.ch \
 	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch empathy.ch \
 	liboobs.ch gnome-nettool.ch gnome-system-tools.ch \
-	mousetweaks.ch hamster-applet.ch
+	mousetweaks.ch hamster-applet.ch gnome-user-share.ch \
+	seahorse-plugins.ch gnome-bluetooth.ch seahorse.ch
 srcdir = @srcdir@
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
 	epiphany.xml evince.xml evolution-data-server.xml file-roller.xml \
 	gcalctool.xml gconf-editor.xml gdm.xml gedit.xml \
 	gnome-games.xml gnome-mag.xml gnome-media.xml \
-	gnome-mount.xml gnome-netstatus.xml gnome-screensaver.xml \
+	gnome-netstatus.xml gnome-screensaver.xml \
 	gnome-speech.xml gnome-system-monitor.xml gnome-utils.xml \
 	gok.xml gtkhtml.xml gtksourceview.xml \
 	gucharmap.xml java-access-bridge.xml libgail-gnome.xml libgnomecups.xml \
@@ -31,7 +32,8 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	brasero.xml gnome-disk-utility.xml nautilus-sendto.xml \
 	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml empathy.xml \
 	liboobs.xml gnome-nettool.xml gnome-system-tools.xml \
-	mousetweaks.xml hamster-applet.xml
+	mousetweaks.xml hamster-applet.xml gnome-user-share.xml \
+	seahorse-plugins.xml gnome-bluetooth.xml seahorse.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -60,7 +62,6 @@ gedit.xml: $(BOOKdir)/$@ $(srcdir)/gedit.ch
 gnome-games.xml: $(BOOKdir)/$@ $(srcdir)/gnome-games.ch
 gnome-mag.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mag.ch
 gnome-media.xml: $(BOOKdir)/$@ $(srcdir)/gnome-media.ch
-gnome-mount.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mount.ch
 gnome-netstatus.xml: $(BOOKdir)/$@ $(srcdir)/gnome-netstatus.ch
 gnome-power-manager.xml: $(BOOKdir)/$@ $(srcdir)/gnome-power-manager.ch
 gnome-screensaver.xml: $(BOOKdir)/$@ $(srcdir)/gnome-screensaver.ch
@@ -94,4 +95,8 @@ gnome-nettool.xml: $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
 gnome-system-tools.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-tools.ch
 mousetweaks.xml: $(BOOKdir)/$@ $(srcdir)/mousetweaks.ch
 hamster-applet.xml: $(BOOKdir)/$@ $(srcdir)/hamster-applet.ch
+gnome-user-share.xml: $(BOOKdir)/$@ $(srcdir)/gnome-user-share.ch
+seahorse-plugins.xml: $(BOOKdir)/$@ $(srcdir)/seahorse-plugins.ch
+gnome-bluetooth.xml: $(BOOKdir)/$@ $(srcdir)/gnome-bluetooth.ch
+seahorse.xml: $(BOOKdir)/$@ $(srcdir)/seahorse.ch
 

@@ -62,6 +62,111 @@
 @z
 
 @x
+      <para>August 29th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Removed patch from GNOME Applets. Fixes ticket
+          <ulink url="&blfs-ticket-root;3143">#3143</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Minor changes to cheese and
+          java-access-bridge.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Minor fixes to udev.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Minor fixes to gir-repository.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Removed gnome-mount-0.8.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Removed gnome-old-version.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, gtk-vnc-0.3.10.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, seahorse-plugins-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, Seahorse-2.30.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, GPGME-1.3.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to Libassuan-2.0.0 and fixed hamster-applet
+          link.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, gnome-user-share-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, mod_dnssd-0.6.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, gnome-bluetooth-2.30.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to File Roller-2.30.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GNOME Applets のパッチを削除。
+          チケット
+          <ulink url="&blfs-ticket-root;3143">#3143</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - cheese と java-access-bridge の若干の変更。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - udev の若干の変更。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gir-repository の若干の変更。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-mount-0.8 の削除。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - gnome-old-version の削除。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ gtk-vnc-0.3.10 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ seahorse-plugins-2.30.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ Seahorse-2.30.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ GPGME-1.3.0 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Libassuan-2.0.0 へのアップグレードと hamster-applet へのリンクの更新。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ gnome-user-share-2.30.0 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ mod_dnssd-0.6 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ gnome-bluetooth-2.30.0 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - File Roller-2.30.2 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>August 22nd, 2010</para>
       <itemizedlist>
         <listitem>

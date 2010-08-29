@@ -1,9 +1,9 @@
 BOOKdir = $(top_builddir)/@bookdir@/basicnet/netutils
 EXTRA_DIST = bind-utils.ch netutils.ch nmap.ch traceroute.ch whois.ch wireshark.ch \
-	avahi.ch
+	avahi.ch mod_dnssd.ch
 srcdir = @srcdir@
 srcs = bind-utils.xml netutils.xml nmap.xml traceroute.xml whois.xml wireshark.xml \
-	avahi.xml
+	avahi.xml mod_dnssd.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -21,3 +21,4 @@ traceroute.xml: $(BOOKdir)/$@ $(srcdir)/traceroute.ch
 whois.xml: $(BOOKdir)/$@ $(srcdir)/whois.ch
 wireshark.xml: $(BOOKdir)/$@ $(srcdir)/wireshark.ch
 avahi.xml: $(BOOKdir)/$@ $(srcdir)/avahi.ch
+mod_dnssd.xml: $(BOOKdir)/$@ $(srcdir)/mod_dnssd.ch

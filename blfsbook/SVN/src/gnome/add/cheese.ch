@@ -80,14 +80,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="gnome-desktop"/>,
-    <xref linkend="gst-plugins-base"/>,
+    <xref linkend="gst-plugins-base"/> (with <xref linkend="libtheora"/>),
     <xref linkend="libcanberra"/>,
     <xref linkend="librsvg"/>, and
     <xref linkend="udev"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-desktop"/>,
-    <xref linkend="gst-plugins-base"/>,
+    <xref linkend="gst-plugins-base"/> (with <xref linkend="libtheora"/>),
     <xref linkend="libcanberra"/>,
     <xref linkend="librsvg"/>,
     <xref linkend="udev"/></para>
