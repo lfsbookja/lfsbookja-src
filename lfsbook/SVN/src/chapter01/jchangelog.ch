@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2010-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter08/kernel.ch:
+          SVN-20100831, r9368 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-08-18</para>
       <itemizedlist>
         <listitem>

@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2010-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-2.6.35.4. Fixes
+          <ulink url="&lfs-ticket-root;2743">#2743</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-2.6.35.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2743">#2743</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-08-17</para>
       <itemizedlist>
         <listitem>

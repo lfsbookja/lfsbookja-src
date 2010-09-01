@@ -40,14 +40,6 @@
 @z
 
 @x
-    <para>Fix a bug in the memory model code that can cause boot failures:</para>
-@y
-<para>
-メモリモデルを定めるコードにて、ブート不能を引き起こすバグを修正します。
-</para>
-@z
-
-@x
     <para>Prepare for compilation by running the following command:</para>
 @y
 <para>
