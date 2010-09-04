@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          src/{chapter05,chapter06}/m4.ch: 訳出漏れを修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           src/chapter06/pkg-config.ch:
           SVN-20100903, r9371 対応。
           </para>
