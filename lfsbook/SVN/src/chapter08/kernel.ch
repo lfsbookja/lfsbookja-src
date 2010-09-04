@@ -377,11 +377,13 @@ ehci_hcd は ohci_hcd や uhci_hcd よりも先にロードしなければなり
 @z
 
 @x
-        <seg>config-&linux-version;, lfskernel-&linux-version;, and
+        <seg>config-&linux-version;, 
+        vmlinux-&linux-version;-lfs-&version;-&linux-version;, and
         System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @y
-        <seg>config-&linux-version;, lfskernel-&linux-version;,
+        <seg>config-&linux-version;, 
+        vmlinux-&linux-version;-lfs-&version;-&linux-version;,
         System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @z
