@@ -74,7 +74,7 @@ Perl をコンパイルするための準備をします。
       <title>configure オプションの意味：</title>
 @z
 
-@x
+@x -Dvendorprefix=/usr
           <para>This ensures <command>perl</command> knows how to
           tell packages where they should install their perl modules.</para>
 @y
@@ -83,7 +83,7 @@ Perl をコンパイルするための準備をします。
 </para>
 @z
 
-@x
+@x -Dpager="/usr/bin/less -isR"
           <para>This corrects an error in the way that <command>perldoc</command>
           invokes the <command>less</command> program.</para>
 @y
@@ -94,7 +94,7 @@ Perl をコンパイルするための準備をします。
 </para>
 @z
 
-@x
+@x -Dman1dir=/usr/share/man/man1 -Dman3dir=/usr/share/man/man3
           <para>Since Groff is not installed yet, <command>Configure</command>
           thinks that we do not want man pages for Perl.  Issuing these
           parameters overrides this decision.</para>
@@ -103,6 +103,14 @@ Perl をコンパイルするための準備をします。
 まだ Groff をインストールしていないので <command>Configure</command>
 スクリプトが Perl の man ページを必要としないと判断してしまいます。
 このオプションを指定することによりその判断を正します。
+</para>
+@z
+
+@x -Duseshrplib
+          <para>Build a shared libperl needed by some perl modules.</para>
+@y
+<para>
+Perl モジュールの中で必要とされる共有ライブラリ libperl をビルドします。
 </para>
 @z
 
