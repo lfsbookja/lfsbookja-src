@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2010-09-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/pkg-config.ch:
+          SVN-20100903, r9371 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-09-01</para>
       <itemizedlist>
         <listitem>

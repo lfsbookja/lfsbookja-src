@@ -57,6 +57,38 @@
 @z
 
 @x
+      <para>2010-09-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add -Duseshrplib to perl configuration 
+          to build a shared library needed by some perl modules.
+          Fixes
+          <ulink url="&lfs-ticket-root;2745">#2745</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add sed to stop underquoting an M4 script
+          in pkg-config. Fixes
+          <ulink url="&lfs-ticket-root;2746">#2746</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-09-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 
+          Perl のビルド時に -Duseshrplib を追加して共有ライブラリをビルドすることに。
+          Perl モジュールの中にはこれを必要とするものがあるため。
+          <ulink url="&lfs-ticket-root;2745">#2745</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Pkg-config における M4 スクリプトを sed
+          コマンドを使って修正。
+          <ulink url="&lfs-ticket-root;2746">#2746</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-08-31</para>
       <itemizedlist>
         <listitem>

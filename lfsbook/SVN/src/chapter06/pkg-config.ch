@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -18,6 +27,18 @@ pkg-config パッケージは、他のパッケージ類の configure やメイ�
     <title>Installation of Pkg-config</title>
 @y
     <title>Pkg-config のインストール</title>
+@z
+
+@x
+    <para>First fix a problem with underquoting that shows up in later versions of 
+    <command>autoconf</command>:</para>
+@y
+<!--
+日本語訳註： "underquiting" の意味が不明...
+-->
+<para>
+最新の <command>autoconf</command> にて発生する問題を修正します。
+</para>
 @z
 
 @x
