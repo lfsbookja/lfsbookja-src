@@ -609,11 +609,11 @@ Typo ですが日本語訳には影響ありません。
 
 %----------------------------------------------------------------------
 @x GRUB
-         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Glibc, Grep,
-         Make, Ncurses, Sed, and Texinfo</seg>
+         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Gettext, Glibc, 
+         Grep, Make, Ncurses, Sed, and Texinfo</seg>
 @y
-         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Glibc, Grep,
-         Make, Ncurses, Sed, Texinfo</seg>
+         <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Gettext, Glibc, 
+         Grep, Make, Ncurses, Sed, Texinfo</seg>
 @z
 @x
           <seg>None</seg>

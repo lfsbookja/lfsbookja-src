@@ -58,6 +58,12 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          src/appendices/dependencies.ch:
+          訳出漏れおよび処理不能を訂正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           src/chapter08/kernel.ch:
           SVN-20100903, r9372 対応。
           </para>
