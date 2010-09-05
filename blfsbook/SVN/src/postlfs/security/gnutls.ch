@@ -43,8 +43,9 @@ TLS protocol specification:
     forgery.</quote></para>
 @y
 <para>
-<quote>The TLS protocol provides communications privacy over the
-Internet. The protocol allows client/server applications to communicate in
+<quote>TLS プロトコルは、インターネット上にて通信プライバシーを提供します。
+
+The protocol allows client/server applications to communicate in
 a way that is designed to prevent eavesdropping, tampering, or message
 forgery.</quote>
 </para>
@@ -132,12 +133,24 @@ extension and X.509 and OpenPGP certificate handling.
     <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
     <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
     <xref linkend="guile"/>,
     <xref linkend="libtasn1"/>,
-    <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
-    <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
+    <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>,
+    <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて利用)</para>
+@z
+
+@x
+    <para>Note that if you do not install <xref linkend="libtasn1"/>, an older
+    version shipped in the <application>GnuTLS</application> tarball will be
+    used instead.</para>
+@y
+<para>
+<xref linkend="libtasn1"/>
+をインストールしない場合、<application>GnuTLS</application>
+の tarball 内に含まれる旧バージョンが利用されます。
+</para>
 @z
 
 @x
@@ -181,6 +194,25 @@ extension and X.509 and OpenPGP certificate handling.
 @z
 
 @x
+    <para>If you did not pass the <option>--enable-gtk-doc</option> parameter
+    to the <command>configure</command> script, install the API documentation
+    using the following command as the
+    <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+<command>configure</command> スクリプトにて <option>--enable-gtk-doc</option>
+オプションを指定しなかった場合は、<systemitem class="username">root</systemitem>
+ユーザーになって以下のコマンドを実行して API ドキュメントをインストールします。
+</para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&j-CommandExplanations;</title>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&j-Contents;</title>
@@ -206,11 +238,11 @@ extension and X.509 and OpenPGP certificate handling.
         /usr/share/gtk-doc/html/gnutls</seg>
 @y
         <seg>certtool, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-        psktool, and srptool</seg>
+        psktool, srptool</seg>
         <seg>libgnutls.{so,a}, libgnutls-extra.{so,a},
         libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
         <seg>/usr/include/gnutls,
-        /usr/share/doc/gnutls-&gnutls-version;, and
+        /usr/share/doc/gnutls-&gnutls-version;,
         /usr/share/gtk-doc/html/gnutls</seg>
 @z
 
@@ -224,8 +256,11 @@ extension and X.509 and OpenPGP certificate handling.
           <para>is used to generate X.509 certificates, certificate requests,
           and private keys.</para>
 @y
-          <para>is used to generate X.509 certificates, certificate requests,
-          and private keys.</para>
+<para>
+
+is used to generate X.509 certificates, certificate requests,
+and private keys.
+</para>
 @z
 
 @x gnutls-cli
@@ -275,4 +310,3 @@ extension and X.509 and OpenPGP certificate handling.
           <para>contains the core API functions and X.509 certificate
           API functions.</para>
 @z
-

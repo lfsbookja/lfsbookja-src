@@ -99,11 +99,14 @@
 @z
 
 @x
+  <abstract>
     <para>This book follows on from the Linux From Scratch book. It introduces
     and guides the reader through additions to the system including networking,
     graphical interfaces, sound support, and printer and scanner
     support.</para>
+  </abstract>
 @y
+<abstract>
 <para>
 本書は Linux From Scratch ブックに続くものです。
 システムに追加していく機能として、
@@ -112,11 +115,14 @@
 サウンド機能、
 プリンタ・スキャナ機能などを紹介し説明していきます。
 </para>
+</abstract>
 
+<abstract>
+<title>日本語訳情報</title>
 <para>
-<emphasis role="bold">日本語訳情報</emphasis>: 
 現時点この日本語訳は散発的に訳出を進めている状態であり、完成とは程遠いものです。
 ご了承ください。
 </para>
+</abstract>
 @z
 

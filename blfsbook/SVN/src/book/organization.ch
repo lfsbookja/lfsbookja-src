@@ -46,9 +46,7 @@
   the rest of the book.</para>
 @y
 <para>
-この部では
-This part contains information which is essential to
-the rest of the book.
+この部では本書全般における重要な情報について示します。
 </para>
 @z
 
@@ -67,9 +65,10 @@ LFS 設定以降と追加ソフトウェア
   discuss a range of editors, file systems, and shells which aren't covered in
   the main LFS book.</para>
 @y
-  <para>Here we introduce basic configuration and security issues.  We also
-  discuss a range of editors, file systems, and shells which aren't covered in
-  the main LFS book.</para>
+<para>
+基本的な設定に関することやセキュリティに関する情報を示します。
+また LFS ブックには示していない内容として、エディタ、ファイルシステム、シェルに関する情報についても説明します。
+</para>
 @z
 
 @x
@@ -87,10 +86,11 @@ LFS 設定以降と追加ソフトウェア
   (including recompiling <application>GCC</application> to support its full range
   of languages) concludes this part.</para>
 @y
-  <para>In this section we cover libraries which are often needed by the rest
-  of the book as well as system utilities.  Information on Programming
-  (including recompiling <application>GCC</application> to support its full range
-  of languages) concludes this part.</para>
+<para>
+この部では本書全般に、随所にて必要となるライブラリやシステムユーティリティについて説明します。
+プログラミング言語についてもここで説明します。
+特に <application>GCC</application> に関しては、これを再ビルドすることによって、対応可能な全プログラミング言語がサポートされることについても説明します。
+</para>
 @z
 
 @x
@@ -107,9 +107,10 @@ LFS 設定以降と追加ソフトウェア
   simple static IP setup given in the main LFS book. Networking libraries
   and command-line networking tools are also covered here.</para>
 @y
-  <para>Here we cover how to connect to a network when you aren't using the
-  simple static IP setup given in the main LFS book. Networking libraries
-  and command-line networking tools are also covered here.</para>
+<para>
+LFS ブックでは、単純に固定IPアドレスを用いていましたが、そうしない場合にネットワークに接続する方法をここで説明します。
+ネットワークライブラリやコマンドライン実行によるネットワークツールについても説明します。
+</para>
 @z
 
 @x
@@ -125,8 +126,10 @@ LFS 設定以降と追加ソフトウェア
   <para>Here we deal with setting up mail and other servers (such as
   <application>SSH</application>, <application>Apache</application>, etc.).</para>
 @y
-  <para>Here we deal with setting up mail and other servers (such as
-  <application>SSH</application>, <application>Apache</application>, etc.).</para>
+<para>
+メールサーバーやそれ以外のサーバーについて説明します。
+(例えば <application>SSH</application>、<application>Apache</application> などです。)
+</para>
 @z
 
 @x
@@ -134,7 +137,7 @@ LFS 設定以降と追加ソフトウェア
 @y
 <bridgehead renderas="sect2">
 第 VI 部 -
-X + Window Managers
+X + ウィンドウマネジャー
 </bridgehead>
 @z
 
@@ -143,9 +146,11 @@ X + Window Managers
   System</application> installation along with some generic
   <application>X</application> libraries and Window managers.</para>
 @y
-  <para>This part explains how to set up a basic <application>X Window
-  System</application> installation along with some generic
-  <application>X</application> libraries and Window managers.</para>
+<para>
+<application>X ウィンドウシステム</application>
+の基本的なビルド手順について説明します。
+また <application>X</application> に関する汎用的なライブラリやウィンドウマネジャーについて説明します。
+</para>
 @z
 
 @x
@@ -160,8 +165,11 @@ X + Window Managers
   <para>For those who want to use the <application>K Desktop
   Environment</application> or some parts of it, this part covers it.</para>
 @y
-  <para>For those who want to use the <application>K Desktop
-  Environment</application> or some parts of it, this part covers it.</para>
+<para>
+
+For those who want to use the <application>K Desktop
+Environment</application> or some parts of it, this part covers it.
+</para>
 @z
 
 @x
@@ -177,9 +185,12 @@ X + Window Managers
   <application>KDE</application> in the Desktop Environment arena and
   we cover <application>GNOME</application>-&gnome-version; here.</para>
 @y
-  <para><application>GNOME</application> is the main alternative to
-  <application>KDE</application> in the Desktop Environment arena and
-  we cover <application>GNOME</application>-&gnome-version; here.</para>
+<para>
+<application>GNOME</application> は <application>KDE</application>
+の is the main alternative to
+<application>KDE</application> in the Desktop Environment arena and
+we cover <application>GNOME</application>-&gnome-version; here.
+</para>
 @z
 
 @x

@@ -15,7 +15,8 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch empathy.ch \
 	liboobs.ch gnome-nettool.ch gnome-system-tools.ch \
 	mousetweaks.ch hamster-applet.ch gnome-user-share.ch \
-	seahorse-plugins.ch gnome-bluetooth.ch seahorse.ch
+	seahorse-plugins.ch gnome-bluetooth.ch seahorse.ch \
+	vinagre.ch vino.ch
 srcdir = @srcdir@
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
@@ -33,7 +34,8 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml empathy.xml \
 	liboobs.xml gnome-nettool.xml gnome-system-tools.xml \
 	mousetweaks.xml hamster-applet.xml gnome-user-share.xml \
-	seahorse-plugins.xml gnome-bluetooth.xml seahorse.xml
+	seahorse-plugins.xml gnome-bluetooth.xml seahorse.xml \
+	vinagre.xml vino.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -99,4 +101,6 @@ gnome-user-share.xml: $(BOOKdir)/$@ $(srcdir)/gnome-user-share.ch
 seahorse-plugins.xml: $(BOOKdir)/$@ $(srcdir)/seahorse-plugins.ch
 gnome-bluetooth.xml: $(BOOKdir)/$@ $(srcdir)/gnome-bluetooth.ch
 seahorse.xml: $(BOOKdir)/$@ $(srcdir)/seahorse.ch
+vinagre.xml: $(BOOKdir)/$@ $(srcdir)/vinagre.ch
+vino.xml: $(BOOKdir)/$@ $(srcdir)/vino.ch
 
