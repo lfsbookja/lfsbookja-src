@@ -611,6 +611,26 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@txt: nochunks
 @MAINT@	w3m -dump ../LFS-BOOK.html -cols 72 -s > ../LFS-BOOK.txt
 
+@MAINT@pdf: validxml
+@MAINT@	@echo "Generating profiled XML for PDF..."
+@MAINT@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
+@MAINT@	--output $(RENDERTMP)/lfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
+@MAINT@	$(RENDERTMP)/lfs-full.xml
+@MAINT@
+@MAINT@	@echo "Generating FO file..."
+@MAINT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
+@MAINT@	--output $(RENDERTMP)/lfs-pdf.fo stylesheets/lfs-pdf.xsl \
+@MAINT@	$(RENDERTMP)/lfs-pdf.xml
+@MAINT@	sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/lfs-pdf.fo
+@MAINT@	bash pdf-fixups.sh $(RENDERTMP)/lfs-pdf.fo
+@MAINT@
+@MAINT@	@echo "Generating PDF file..."
+@MAINT@	if [ ! -e $(BASEDIR) ]; then \
+@MAINT@	  mkdir -p $(BASEDIR); \
+@MAINT@	fi;
+@MAINT@	cp -R $(BASEDIR)/images .;
+@MAINT@	fop -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo $(BASEDIR)/$(PDF_OUTPUT)
+
 tmpdir: $(ALLXML)
 	@echo "Creating and cleaning $(RENDERTMP)"
 	[ -d $(RENDERTMP) ] || $(MKDIR_P) $(RENDERTMP)

@@ -95,10 +95,12 @@ AC_CONFIG_FILES([Makefile
 		 src/stylesheets/lfs-xsl/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile
+		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile
+		 src/stylesheets/lfs-xsl/pdf/Makefile
 		 src/stylesheets/lfs-xsl/xhtml/Makefile
 		 src/udev-config/Makefile
 		 src/udev-config/contrib/Makefile

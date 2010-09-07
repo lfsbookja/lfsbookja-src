@@ -6,3 +6,7 @@ EXTRA_DIST = INSTALL.utf8
 
 @MAINT@txt:
 @MAINT@	cd src && make txt
+
+@MAINT@pdf:
+@MAINT@	cd src && make pdf
+

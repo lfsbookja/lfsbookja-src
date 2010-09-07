@@ -1,4 +1,4 @@
-SUBDIRS=docbook-xsl-snapshot xhtml
+SUBDIRS=docbook-xsl-snapshot pdf xhtml
 BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl
 EXTRA_DIST = chunk-master.ch chunk-slave.ch chunkfast.ch common.ch \
 	nochunks.ch pdf.ch profile.ch lfs-l10n.ch \
