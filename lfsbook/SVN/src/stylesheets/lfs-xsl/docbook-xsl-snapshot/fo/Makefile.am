@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/common
+BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
 srcdir = @srcdir@
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
 	autoidx-ng.xsl autoidx.xsl autotoc.xsl axf.xsl 

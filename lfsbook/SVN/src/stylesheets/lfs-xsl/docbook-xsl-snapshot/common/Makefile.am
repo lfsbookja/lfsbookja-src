@@ -8,7 +8,8 @@ srcs = common.xsl gentext.xsl insertfile.xsl l10n.xsl labels.xsl \
 	olink.xsl pi.xsl refentry.xsl stripns.xsl subtitles.xsl \
 	table.xsl targets.xsl titles.xsl utility.xsl \
 	l10n.xml ja.xml l10n.dtd \
-	de.xml en.xml es.xml fr.xml it.xml zh_cn.xml zh_tw.xml
+	de.xml en.xml es.xml fr.xml it.xml zh_cn.xml zh_tw.xml \
+	entities.ent
 
 SUFFIXES = .ch .xsl .xml
 .ch.xsl:
@@ -57,3 +58,6 @@ zh_cn.xml: $(BOOKdir)/$@
 	cp $(BOOKdir)/$@ $@
 zh_tw.xml: $(BOOKdir)/$@
 	cp $(BOOKdir)/$@ $@
+entities.ent:
+	cp -p $(BOOKdir)/$@ $@
+

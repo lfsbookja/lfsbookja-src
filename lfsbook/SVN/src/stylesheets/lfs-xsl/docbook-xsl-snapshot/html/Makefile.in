@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
+subdir = src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
@@ -137,11 +137,14 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
-srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
+BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/html
+EXTRA_DIST = chunker.ch
+srcs = chunker.xsl
+SUFFIXES = .ch .xsl
 all: all-am
 
 .SUFFIXES:
+.SUFFIXES: .ch .xsl
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -151,9 +154,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile
+	  $(AUTOMAKE) --gnu src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -316,25 +319,15 @@ uninstall-am:
 	maintainer-clean maintainer-clean-generic mostlyclean \
 	mostlyclean-generic pdf pdf-am ps ps-am uninstall uninstall-am
 
-	autoidx-ng.xsl autoidx.xsl autotoc.xsl axf.xsl 
-	biblio-iso690.xsl biblio.xsl block.xsl callout.xsl
-	component.xsl division.xsl docbook.xsl ebnf.xsl fo-rtf.xsl
-	fo.xsl footnote.xsl fop.xsl fop1.xsl formal.xsl glossary.xsl
-	graphics.xsl highlight.xsl htmltbl.xsl index.xsl info.xsl
-	inline.xsl keywords.xsl lists.xsl math.xsl pagesetup.xsl
-	param.xsl passivetex.xsl pdf2index pi.xsl profile-docbook.xsl
-	ptc.xsl qandaset.xsl refentry.xsl sections.xsl spaces.xsl
-	synop.xsl table.xsl task.xsl titlepage.templates.xml
-	titlepage.templates.xsl titlepage.xsl toc.xsl verbatim.xsl
-	xep.xsl xref.xsl
+.ch.xsl:
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 
-all: $(srcs)
+all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-$(srcs):
-	cp -p $(BOOKdir)/* .
+chunker.xsl: $(BOOKdir)/$@ $(srcdir)/chunker.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

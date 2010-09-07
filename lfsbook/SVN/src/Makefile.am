@@ -5,7 +5,7 @@ EXTRA_DIST = general.ch index.ch packages.ch patches.ch tidy.ch
 BOOKdir = $(top_builddir)/@bookdir@
 srcdir = @srcdir@
 srcs = general.ent index.xml packages.ent patches.ent process-scripts.sh \
-	aux-file-data.sh make-aux-files.sh tidy.conf
+	aux-file-data.sh make-aux-files.sh tidy.conf pdf-fixups.sh
 EXTRACLEANFILES = $(srcs)
 
 SVNVER=@SVNVER@
@@ -14,6 +14,7 @@ ROOT_ID =
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
 NOCHUNKS_OUTPUT = ../LFS-BOOK.html
+PDF_OUTPUT = LFSBOOK.pdf
 
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
@@ -39,6 +40,8 @@ process-scripts.sh: $(BOOKdir)/process-scripts.sh
 aux-file-data.sh: $(BOOKdir)/aux-file-data.sh
 	cp -p $^ $@
 make-aux-files.sh: $(BOOKdir)/make-aux-files.sh
+	cp -p $^ $@
+pdf-fixups.sh: $(BOOKdir)/pdf-fixups.sh
 	cp -p $^ $@
 
 stylesheets:
@@ -112,7 +115,7 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@	  mkdir -p $(BASEDIR); \
 @MAINT@	fi;
 @MAINT@	cp -R $(BASEDIR)/images .;
-@MAINT@	fop -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo $(BASEDIR)/$(PDF_OUTPUT)
+@MAINT@	fop -c $(srcdir)/userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
 
 tmpdir: $(ALLXML)
 	@echo "Creating and cleaning $(RENDERTMP)"

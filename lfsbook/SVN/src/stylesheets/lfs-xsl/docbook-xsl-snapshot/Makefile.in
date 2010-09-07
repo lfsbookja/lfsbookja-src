@@ -177,7 +177,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = common fo highlighting lib profiling xhtml
+SUBDIRS = common fo highlighting html lib profiling xhtml
 BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot
 srcs = VERSION
 all: all-recursive
