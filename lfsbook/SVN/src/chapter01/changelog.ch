@@ -57,6 +57,26 @@
 @z
 
 @x
+      <para>2010-09-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Use --disable-libgomp instead of using
+          LD_LIBRARY_PATH to avoid a failure in GCC pass 2's configure
+          script.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-09-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - GCC ２回目の処理にて LD_LIBRARY_PATH の利用をやめ --disable-libgomp を利用することに。
+          configure スクリプトの失敗を回避するため。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-09-03</para>
       <itemizedlist>
         <listitem>

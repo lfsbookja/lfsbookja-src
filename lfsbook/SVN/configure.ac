@@ -38,7 +38,7 @@ fi
 AC_PROG_XMLLINT
 AC_PROG_TIDY
 
-TARGETVER=svn-20100903
+TARGETVER=svn-20100906
 
 SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 AC_MSG_CHECKING([for the original XML version])
