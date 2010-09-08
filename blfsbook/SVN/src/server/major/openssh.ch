@@ -121,13 +121,13 @@ over a network.
 
 @x
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
-    <para role="optional"><xref linkend="jdk"/>,
+    <para role="optional"><xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
     <xref linkend="net-tools"/>, and
     <xref linkend="sysstat"/>.</para>
 @y
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
-    <para role="optional"><xref linkend="jdk"/>,
-    <xref linkend="net-tools"/>, and
+    <para role="optional"><xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
+    <xref linkend="net-tools"/>,
     <xref linkend="sysstat"/>.</para>
 @z
 

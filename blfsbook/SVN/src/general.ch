@@ -14,7 +14,7 @@
 @z
 
 @x
-<!ENTITY releasedate  "August &day;st, &year;">
+<!ENTITY releasedate  "September &day;th, &year;">
 @y
 <!ENTITY releasedate "&year;/&month;/&day;">
 @z
@@ -54,6 +54,8 @@
                                for more information.</para>">
 <!ENTITY lfs66_checked        "<para>This package is known to build and work properly
                                using an LFS-6.6 platform.</para>">
+<!ENTITY lfs66_built          "<para>This package is known to build using an LFS 6.6
+                               platform but has not been tested.</para>">
 @y
 <!ENTITY lfs65_checked        "<para>本パッケージは LFS-6.5 において正しくビルドでき動作することが確認されています。</para>">
 <!ENTITY lfs65_built          "<para>本パッケージは LFS-6.5 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
@@ -62,5 +64,6 @@
                                sources. See <xref linkend='package_updates'/>
                                for more information.</para>">
 <!ENTITY lfs66_checked        "<para>本パッケージは LFS-6.6 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs66_built          "<para>本パッケージは LFS-6.6 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
