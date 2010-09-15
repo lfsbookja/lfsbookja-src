@@ -41,10 +41,10 @@ LFS の構成は出来る限り Linux の各種標準に従うようにしてい
 
 @x
         <para><ulink url="http://www.pathname.com/fhs/pub/fhs-2.3.html">Filesystem 
-        Hierarcy Standard (FHS)</ulink></para>
+        Hierarchy Standard (FHS)</ulink></para>
 @y
         <para><ulink url="http://www.pathname.com/fhs/pub/fhs-2.3.html">Filesystem 
-        Hierarcy Standard (FHS)</ulink></para>
+        Hierarchy Standard (FHS)</ulink></para>
 @z
 
 @x

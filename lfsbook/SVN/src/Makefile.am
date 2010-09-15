@@ -95,7 +95,7 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@	  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 
 @MAINT@txt: nochunks
-@MAINT@	w3m -dump ../lfsbookja-svn.html -cols 72 -s > ../lfsbookja-svn.txt
+@MAINT@	lynx -width=44 -dump ../lfsbookja-svn.html > ../lfsbookja-svn.txt
 
 @MAINT@pdf: validxml
 @MAINT@	@echo "Generating profiled XML for PDF..."
