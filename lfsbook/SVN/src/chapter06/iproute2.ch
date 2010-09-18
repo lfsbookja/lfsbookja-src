@@ -86,7 +86,7 @@ IPRoute2 パッケージは IPV4 ベースの基本的または応用的ネッ�
 @z
 
 @x
-    <para>This package comes with a testsuite, but due to assumptions it makes,
+    <para>This package comes with a test suite, but due to assumptions it makes,
     it is not possible to reliably run these tests from within the chroot
     environment. If you wish to run these tests after booting into your new LFS
     system, ensure you select <filename>/proc/config.gz</filename>

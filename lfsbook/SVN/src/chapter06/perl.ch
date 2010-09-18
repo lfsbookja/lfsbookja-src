@@ -31,7 +31,7 @@ Perl パッケージは Perl 言語 (Practical Extraction and Report Language) �
 @x
     <para>First create a basic <filename>/etc/hosts</filename> file to be
     referenced in one of Perl's configuration files as well as the optional
-    testsuite:</para>
+    test suite:</para>
 @y
 <para>
 Perl の設定ファイルが <filename>/etc/hosts</filename>

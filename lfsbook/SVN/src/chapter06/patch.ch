@@ -31,7 +31,7 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
 @z
 
 @x
-    <para>Apply a patch to prevent the testsuite from running a test that
+    <para>Apply a patch to prevent the test suite from running a test that
     requires <command>ed</command>:</para>
 @y
 <para>

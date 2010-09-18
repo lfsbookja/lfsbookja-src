@@ -38,7 +38,7 @@ Man ページの生成が不要であるにも関わらず再生成してしま�
 @z
 
 @x
-    <para>The testsuite of this package is geared towards the needs of its
+    <para>The test suite of this package is geared towards the needs of its
     Maintainer. The command <command>make check</command> builds a specially
     wrapped version of modprobe which is useless for normal operation. To run
     this (about 0.2 SBU), issue the following commands (note that the

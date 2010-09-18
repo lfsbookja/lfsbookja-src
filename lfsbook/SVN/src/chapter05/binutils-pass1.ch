@@ -88,7 +88,7 @@ Binutils のドキュメントでは Binutils をビルドする際に、ソー�
 
 @x
     <note><para>The approximate build SBU values and required disk space
-    in Chapter 5 does not include testsuite data.</para></note>
+    in Chapter 5 does not include test suite data.</para></note>
 @y
 <note><para>
 概算ビルド時間と必要ディスク容量は、この第5章ではテストスイートに関わる時間や容量は含めないことにします。

@@ -69,8 +69,8 @@ Gettext の共有ライブラリはこの時点では必要でないため、そ
 
 @x
     <para>As only one binary has been compiled, it is not possible to run the
-    testsuite without compiling additional support libraries from the Gettext
-    package. It is therefore not recommended to attempt to run the testsuite at
+    test suite without compiling additional support libraries from the Gettext
+    package. It is therefore not recommended to attempt to run the test suite at
     this stage.</para>
 @y
 <para>

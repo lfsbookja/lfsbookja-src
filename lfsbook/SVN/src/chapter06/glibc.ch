@@ -327,7 +327,7 @@ make check コマンドにて TIMEOUTFACTOR をセットするものに修正す
 @x
     <para>The locales that can make the system respond in a different language
     were not installed by the above command. None of the locales are required,
-    but if some of them are missing, testsuites of the future packages would
+    but if some of them are missing, test suites of the future packages would
     skip important testcases.</para>
 @y
 <para>

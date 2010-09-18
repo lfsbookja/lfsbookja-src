@@ -43,7 +43,7 @@ Tk はホストシステム上に存在するかもしれませんが、<command
 @x
     <para>Next, force Expect's configure script to use <filename>/bin/stty</filename>
     instead of a <filename>/usr/local/bin/stty</filename> it may find on the host system.
-    This will ensure that our testsuite tools remain sane for the final builds of our
+    This will ensure that our test suite tools remain sane for the final builds of our
     toolchain:</para>
 @y
 <para>

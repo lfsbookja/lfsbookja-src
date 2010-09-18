@@ -57,6 +57,49 @@
 @z
 
 @x
+      <para>2010-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Be consistent about 'test suites'.
+          Fixes
+          <ulink url="&lfs-ticket-root;2756">#2756</ulink>
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove optional symlink in psmisc
+          becasue if it is not overwritten by the sysvinit
+          intallation, it will break the init scripts.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Touch up example grub.conf.
+          Fixes
+          <ulink url="&lfs-ticket-root;2748">#2748</ulink>
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-09-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 'テスト スイート' の表現を統一。
+          <ulink url="&lfs-ticket-root;2756">#2756</ulink> を Fix に。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Psmisc でのシンボリックリンク作成を削除。
+          Sysvinit のインストール時に上書きされなかったら、init スクリプトが正常動作しなくなるため。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grub.conf の修正。
+          <ulink url="&lfs-ticket-root;2748">#2748</ulink> を Fix に。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-09-06</para>
       <itemizedlist>
         <listitem>

@@ -82,11 +82,11 @@ FHS にて規定されているようなディレクトリにプログラムを�
 @z
 
 @x
-    <para>Finally, move the <command>fuser</command> program to the location
-    specified by the FHS:</para>
+    <para>Finally, move the <command>killall</command> and <command>fuser</command> 
+    programs to the location specified by the FHS:</para>
 @y
 <para>
-<command>fuser</command>
+<command>killall</command> プログラムと <command>fuser</command>
 プログラムを、FHS が規定しているディレクトリに移動します。
 </para>
 @z

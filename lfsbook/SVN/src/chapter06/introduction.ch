@@ -114,7 +114,7 @@ Linux システムがどのようにして動作しているかを学ぶには�
 
 @x
   <note><para>The SBU values and required disk space includes
-  testsuite data for all applicable packages in Chapter 6.</para></note>
+  test suite data for all applicable packages in Chapter 6.</para></note>
 @y
 <note><para>
 本章にて導入するパッケージにおいて SBU 値と必要ディスク容量には、テストスイート実施による時間や容量をすべて含んでいます。

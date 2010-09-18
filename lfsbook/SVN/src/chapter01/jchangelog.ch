@@ -54,6 +54,20 @@
 -->
 
     <listitem>
+      <para>2010-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter05/{binutils-pass1,expect,gettext}.ch,
+          src/chapter06/{glibc,introduction,iproute2,module-init-tools,patch,perl,psmisc}.ch,
+          src/prologue/why.ch:
+          SVN-20100917, r9377 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-09-05</para>
       <itemizedlist>
         <listitem>

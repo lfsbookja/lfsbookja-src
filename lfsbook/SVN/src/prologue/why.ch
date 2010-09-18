@@ -488,7 +488,7 @@ LFS パッケージの中には、構築時にこれを必要とするものが�
 
 @x Perl
         <para>This package is an interpreter for the runtime language
-        PERL. It is needed for the installation and testsuites of several LFS
+        PERL. It is needed for the installation and test suites of several LFS
         packages.</para>
 @y
 <para>
@@ -595,7 +595,7 @@ LFS が扱うすべてのパッケージにて利用されています。
 
 @x Tcl
         <para>This package contains the Tool Command Language used
-        in many testsuites in LFS packages.  It is only installed in 
+        in many test suites in LFS packages.  It is only installed in 
         the temporary toolchain.</para>
 @y
 <para>
