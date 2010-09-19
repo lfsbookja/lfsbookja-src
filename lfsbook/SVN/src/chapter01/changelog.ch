@@ -57,6 +57,25 @@
 @z
 
 @x
+      <para>2010-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Add instruction to increase 
+          stack size during gcc tests.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - GCC テストにてスタックサイズを増やす手順を追加。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-09-17</para>
       <itemizedlist>
         <listitem>

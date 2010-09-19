@@ -139,6 +139,16 @@ GCC がサポートする他のプログラム言語の構築方法について�
 @z
 
 @x
+   <para>One set of tests in the GCC test suite is known to exhaust the stack,
+   so increase the stack size prior to running the tests:</para>
+@y
+<para>
+GCC テストスイートの中で、スタックを使い果たすものがあります。
+そこでテスト実施にあたり、スタックサイズを増やします。
+</para>
+@z
+
+@x
     <para>Test the results, but do not stop at errors:</para>
 @y
 <para>
