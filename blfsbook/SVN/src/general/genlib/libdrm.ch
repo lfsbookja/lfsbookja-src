@@ -81,6 +81,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">libdrm Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">libdrm の依存パッケージ</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"><xref linkend="libpthread-stubs"/></para>
+@y
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <para role="required"><xref linkend="libpthread-stubs"/></para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libdrm"/></para>
 @y

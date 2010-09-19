@@ -39,8 +39,9 @@ LFS システムを構築した皆さんであれば、ソフトウェアのダ�
   instructions.</para>
 @y
 <para>
-Each set of installation instructions contains a URL from which you
-can download the package.  We do however keep a selection of patches
+インストール説明を行っている個々のページでは、パッケージのダウンロード先 URL を示しています。
+
+We do however keep a selection of patches
 available via HTTP.  These are referenced as needed in the installation
 instructions.
 </para>
@@ -73,14 +74,13 @@ above the 'build' directory.
   <filename>Makefile</filename>s and C code, but if in doubt, start from a
   clean tree.</para>
 @y
-  <para>We can not emphasize strongly enough that you should start from a
-  <emphasis>clean source tree</emphasis> each time. This means that if
-  you have had an error during configuration or compilation, it's usually
-  best to delete the source tree and
-  re-unpack it <emphasis>before</emphasis> trying again. This obviously
-  doesn't apply if you're an advanced user used to hacking
-  <filename>Makefile</filename>s and C code, but if in doubt, start from a
-  clean tree.</para>
+<para>
+特に明確には述べていませんが、パッケージビルド時は
+<emphasis>きれいなソースツリー</emphasis>
+にて作業を進めてください。
+configure 処理中やコンパイル中にエラーが発生した場合は、もう一度ビルド作業を進めるなら、いったんソースツリーを削除した上で、パッケージソースの伸張（解凍）からやり直すのが適切なやり方です。
+もちろんあなたが、独自の <filename>Makefile</filename> なり C コードなりを用いているような熟練ユーザーであれば話は別ですが、自信がない場合は全くの新しいソースツリーから作業を始めることにしてください。
+</para>
 @z
 
 @x
@@ -104,11 +104,11 @@ Unix システム管理における鉄則は、スーパーユーザーによる
 そこで BLFS でも、ソフトウェアをビルドする際には一般ユーザーにて行い、インストール時のみ
 <systemitem class='username'>root</systemitem>
 ユーザーとなって作業することとしています。
-
-This philosophy is followed in all the packages in this book.
-Unless otherwise specified, all instructions should be executed as an
-unprivileged user. The book will advise you on instructions that need
-<systemitem class='username'>root</systemitem> privileges.</para>
+本書中では、どのパッケージであってもこのやり方で進めます。
+特別に指定されていない限りは、すべての手順を一般ユーザーにて実施していきます。
+必要な時には <systemitem class='username'>root</systemitem>
+権限にて作業を進めるべきであることも説明しあｍす。
+</para>
 @z
 
 @x

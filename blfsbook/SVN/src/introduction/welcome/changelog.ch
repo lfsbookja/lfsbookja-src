@@ -62,6 +62,156 @@
 @z
 
 @x
+      <para>September 19th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to OpenOffice-3.2.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - OpenOffice-3.2.1 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>September 13th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to cups-1.4.4.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added cups-1.4.4-fix_broken_locking-1.patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - cups-1.4.4 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - cups-1.4.4-fix_broken_locking-1.patch の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>September 9th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to icedtea6-1.9-2-i586-bin.tar.bz2.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to Webkitgtk-1.2.4. Fixes ticket
+          <ulink url="&blfs-ticket-root;3147">#3147</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - icedtea6-1.9-2-i586-bin.tar.bz2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Webkitgtk-1.2.4 へのアップデート。
+          チケット
+          <ulink url="&blfs-ticket-root;3147">#3147</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>September 8th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Added IcedTea6-1.9.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated all jdk links to optionally use IcedTea6.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - IcedTea6-1.9 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - JDK からの任意のパッケージリンクとして IcedTea6 を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>September 6th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Minor fix to HAL.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - HAL の若干の変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>August 31st, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to UnRar-3.9.10. Fixes ticket
+          <ulink url="&blfs-ticket-root;2742">#2742</ulink>.
+          Updated dependencies for File Roller.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - UnRar-3.9.10 へのアップデート。
+          チケット
+          <ulink url="&blfs-ticket-root;2742">#2742</ulink> を Fix に。
+          File Roller の依存パッケージを更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>August 30th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Updated to GnuPG-2.0.15.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, Vino-2.28.2.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added new package, Vinagre-2.30.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/08/30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - GnuPG-2.0.15 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ Vino-2.28.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - 新パッケージ Vinagre-2.30.2 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>August 29th, 2010</para>
       <itemizedlist>
         <listitem>
@@ -149,7 +299,7 @@
           <para>[wblaszcz] - 新パッケージ GPGME-1.3.0 の追加。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Libassuan-2.0.0 へのアップグレードと hamster-applet へのリンクの更新。</para>
+          <para>[wblaszcz] - Libassuan-2.0.0 へのアップデートと hamster-applet へのリンクの更新。</para>
         </listitem>
         <listitem>
           <para>[wblaszcz] - 新パッケージ gnome-user-share-2.30.0 の追加。</para>
@@ -161,7 +311,7 @@
           <para>[wblaszcz] - 新パッケージ gnome-bluetooth-2.30.0 の追加。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - File Roller-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - File Roller-2.30.2 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -276,38 +426,38 @@
           <para>[wblaszcz] - 新パッケージ alacarte-0.13.1 の追加。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Zenity-2.30.0 へのアップグレード。コアパッケージの節に移動。
+          <para>[wblaszcz] - Zenity-2.30.0 へのアップデート。コアパッケージの節に移動。
           </para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Yelp-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - Yelp-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Totem-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - Totem-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - totem-pl-parser-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - totem-pl-parser-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Orca-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - Orca-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Nautilus-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - Nautilus-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Metacity-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - Metacity-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libwnck-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - libwnck-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libsoup-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - libsoup-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgweather-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - libgweather-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgnomekbd-2.30.1 へのアップグレード。
+          <para>[wblaszcz] - libgnomekbd-2.30.1 へのアップデート。
           また gnome-panel に対する不要なパッチファイルを削除。
           </para>
         </listitem>
@@ -376,58 +526,58 @@
       <para>2010/08/21</para>
       <itemizedlist>
         <listitem>
-          <para>[wblaszcz] - gvfs-1.6.2 へのアップグレード。</para>
+          <para>[wblaszcz] - gvfs-1.6.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gucharmap-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - gucharmap-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GtkHTML-3.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GtkHTML-3.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GOK-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - GOK-2.30.0 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Utilities-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Utilities-2.30.0 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME User Docs-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME User Docs-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Themes-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Themes-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Terminal-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Terminal-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Settings Daemon-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Settings Daemon-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Session-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Session-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gnome-screensaver-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - gnome-screensaver-2.30.0 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Gnome-Python-Desktop-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - Gnome-Python-Desktop-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gnome-power-manager-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - gnome-power-manager-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Panel-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Panel-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gnome-menus-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - gnome-menus-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Media-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Media-2.30.0 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Icon Theme-2.30.3 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Icon Theme-2.30.3 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Games-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Games-2.30.2 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -464,16 +614,16 @@
       <itemizedlist>
         <listitem>
           <para>[wblaszcz] - DeviceKit-disks-009 から udisks-1.0.1 への更新。
-          gnome-disk-utility-2.30.1 へのアップグレード。</para>
+          gnome-disk-utility-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Desktop-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Desktop-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gnome-backgrounds-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - gnome-backgrounds-2.30.0 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Applets-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Applets-2.30.0 へのアップデート。</para>
         </listitem>
         <listitem>
           <para>[wblaszcz] - gnome-keyring-2.30.3 における変更。
@@ -481,10 +631,10 @@
           <ulink url="&blfs-ticket-root;3090">#3090</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gedit-2.30.3 へのアップグレード。</para>
+          <para>[wblaszcz] - gedit-2.30.3 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GDM-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - GDM-2.30.2 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -500,7 +650,7 @@
       <para>2010/08/18</para>
       <itemizedlist>
         <listitem>
-          <para>[wblaszcz] - GConf Editor-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - GConf Editor-2.30.0 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -525,16 +675,16 @@
       <para>2010/08/17</para>
       <itemizedlist>
         <listitem>
-          <para>[wblaszcz] - Evolution-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - Evolution-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Evolution Data Server-2.30.2.1 へのアップグレード。</para>
+          <para>[wblaszcz] - Evolution Data Server-2.30.2.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Evince-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - Evince-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - udev-151 へのアップグレード。</para>
+          <para>[wblaszcz] - udev-151 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -581,25 +731,25 @@
       <para>2010/08/16</para>
       <itemizedlist>
         <listitem>
-          <para>[wblaszcz] - Epiphany-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - Epiphany-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - EOG-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - EOG-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Ekiga-3.2.7 へのアップグレード。</para>
+          <para>[wblaszcz] - Ekiga-3.2.7 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Control Center-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Control Center-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - bug-buddy-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - bug-buddy-2.30.0 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - brasero-2.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - brasero-2.30.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgnomeui-2.24.3 へのアップグレード。
+          <para>[wblaszcz] - libgnomeui-2.24.3 へのアップデート。
           チケット
           <ulink url="&blfs-ticket-root;3093">#3093</ulink> を Fix に。</para>
         </listitem>
@@ -607,13 +757,13 @@
           <para>[wblaszcz] - 新パッケージ libgnome-keyring-2.30.1 の追加。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gnome-keyring-2.30.3 へのアップグレード。</para>
+          <para>[wblaszcz] - gnome-keyring-2.30.3 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgnomecanvas-2.30.1 へのアップグレード。</para>
+          <para>[wblaszcz] - libgnomecanvas-2.30.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgnome-2.30.0 へのアップグレード。</para>
+          <para>[wblaszcz] - libgnome-2.30.0 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -743,24 +893,24 @@
       <itemizedlist>
         <listitem>
           <para>[wblaszcz] - PyGtkSourceView-2.10.1,
-          PyGObject-2.21.3, PyGTK-2.17.0, Gnome-Python-2.28.1 へのアップグレード。
+          PyGObject-2.21.3, PyGTK-2.17.0, Gnome-Python-2.28.1 へのアップデート。
           SQLite における若干の変更。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - ptlib-2.6.7 へのアップグレード。</para>
+          <para>[wblaszcz] - ptlib-2.6.7 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - opal-3.6.8 へのアップグレードと
+          <para>[wblaszcz] - opal-3.6.8 へのアップデートと
           D-BUS の若干の変更。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - clutter-gtk-0.10.4 へのアップグレード。</para>
+          <para>[wblaszcz] - clutter-gtk-0.10.4 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - clutter-1.2.10 へのアップグレード。</para>
+          <para>[wblaszcz] - clutter-1.2.10 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gobject-introspection-0.6.14 へのアップグレード。</para>
+          <para>[wblaszcz] - gobject-introspection-0.6.14 へのアップデート。</para>
         </listitem>
         <listitem>
           <para>[wblaszcz] - 新パッケージ telepathy-farsight-0.0.4 の追加。</para>
@@ -772,38 +922,38 @@
           <para>[wblaszcz] - 新パッケージ libnice-0.0.8 の追加。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Intltool-0.41.1 へのアップグレード。</para>
+          <para>[wblaszcz] - Intltool-0.41.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - system-tools-backends-2.9.4 へのアップグレードと
+          <para>[wblaszcz] - system-tools-backends-2.9.4 へのアップデートと
           Poppler における若干の変更。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libxklavier-5.0 へのアップグレード。</para>
+          <para>[wblaszcz] - libxklavier-5.0 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gtkmm-2.20.3 へのアップグレード。</para>
+          <para>[wblaszcz] - gtkmm-2.20.3 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - pangomm-2.26.2 へのアップグレード。</para>
+          <para>[wblaszcz] - pangomm-2.26.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - glibmm-2.24.2 へのアップグレード。</para>
+          <para>[wblaszcz] - glibmm-2.24.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libsigc++-2.2.8 へのアップグレード。</para>
+          <para>[wblaszcz] - libsigc++-2.2.8 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgnomeprintui-2.18.5 へのアップグレード。</para>
+          <para>[wblaszcz] - libgnomeprintui-2.18.5 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgnomeprint-2.18.7 へのアップグレード。</para>
+          <para>[wblaszcz] - libgnomeprint-2.18.7 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - VTE-0.24.2 へのアップグレード。</para>
+          <para>[wblaszcz] - VTE-0.24.2 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - Sound Juicer-2.28.2 へのアップグレード。</para>
+          <para>[wblaszcz] - Sound Juicer-2.28.2 へのアップデート。</para>
         </listitem>
         <listitem>
           <para>[wblaszcz] - 新パッケージ nautilus-sendto-2.28.4 の追加。</para>
@@ -812,32 +962,32 @@
           <para>[wblaszcz] - 新パッケージ telepathy-glib-0.9.2 の追加。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - librsvg-2.26.3 へのアップグレード。</para>
+          <para>[wblaszcz] - librsvg-2.26.3 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - LibGTop-2.28.1 へのアップグレード。</para>
+          <para>[wblaszcz] - LibGTop-2.28.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - libgail-gnome-1.20.3 へのアップグレード。</para>
+          <para>[wblaszcz] - libgail-gnome-1.20.3 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gtksourceview-2.10.4 へのアップグレード。</para>
+          <para>[wblaszcz] - gtksourceview-2.10.4 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GTK Engines-2.20.1 へのアップグレード。</para>
+          <para>[wblaszcz] - GTK Engines-2.20.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME System Monitor-2.28.1 へのアップグレードと
+          <para>[wblaszcz] - GNOME System Monitor-2.28.1 へのアップデートと
           GNOME Speech における若干の変更。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Magnifier-0.16.1 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Magnifier-0.16.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - GNOME Netstatus-2.28.1 へのアップグレード。</para>
+          <para>[wblaszcz] - GNOME Netstatus-2.28.1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[wblaszcz] - gcalctool-5.30.2 へのアップグレード。</para>
+          <para>[wblaszcz] - gcalctool-5.30.2 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z

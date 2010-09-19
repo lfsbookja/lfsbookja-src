@@ -109,14 +109,12 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="curl"/>,
     <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
-    <xref linkend="gobject-introspection"/>,
     <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="curl"/>,
     <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
-    <xref linkend="gobject-introspection"/>,
     <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>,
     <xref linkend="gtk-doc"/></para>
 @z
@@ -175,14 +173,6 @@
 @y
     <para><option>--enable-geolocation</option>: This option enables support for
     geolocation.</para>
-@z
-
-@x
-    <para><option>--enable-introspection</option>: This option enables support
-    for gobject-introspection.</para>
-@y
-    <para><option>--enable-introspection</option>: This option enables support
-    for gobject-introspection.</para>
 @z
 
 @x
