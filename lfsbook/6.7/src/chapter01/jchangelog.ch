@@ -57,6 +57,12 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          src/chapter06/sysvinit.ch:
+          訳出漏れを訂正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           src/chapter05/generalinstructions.ch:
           r9381 対応。日本語訳は変わらず。
           </para>
