@@ -17,7 +17,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ENTITY version "6.7">
 <!ENTITY releasedate "2010年09月19日">
-<!ENTITY jversion "20100919">
+<!ENTITY jversion "20100923">
 <!ENTITY copyrightdate "1999-2010"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "6.7">
 <!ENTITY generic-version "6.7"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
