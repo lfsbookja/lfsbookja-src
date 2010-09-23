@@ -30,18 +30,6 @@ pkg-config パッケージは、他のパッケージ類の configure やメイ�
 @z
 
 @x
-    <para>First fix a problem with underquoting that shows up in later versions of 
-    <command>autoconf</command>:</para>
-@y
-<!--
-日本語訳註： "underquiting" の意味が不明...
--->
-<para>
-最新の <command>autoconf</command> にて発生する問題を修正します。
-</para>
-@z
-
-@x
     <para>Prepare Pkg-config for compilation:</para>
 @y
     <para>Pkg-config をコンパイルするための準備をします。</para>

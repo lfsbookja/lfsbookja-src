@@ -28,6 +28,15 @@ Procps パッケージはプロセス監視を行うプログラムを提供し�
 @z
 
 @x
+    <para>Apply a patch to prevent an error message from being displayed when
+    determining the kernel clock tick rate:</para>
+@y
+<para>
+以下のパッチを適用して、カーネルが時間きざみの率 (clock tick rate) を決定する際に表示されるエラーメッセージを抑えます。
+</para>
+@z
+
+@x
     <para>Apply a patch to fix a unicode related issue in the
     <command>watch</command> program:</para>
 @y

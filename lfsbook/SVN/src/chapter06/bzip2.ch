@@ -34,12 +34,10 @@ Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログ�
 @z
 
 @x
-    <para>Apply 2 patches that will install the documentation for this package
-    and correct some hard-coded version numbers:</para>
+    <para>Apply a patch that will install the documentation for this package:</para>
 @y
 <para>
-以下の２つのパッチを適用します。
-本パッケージのドキュメントをインストールするとともに、ハードコーディングされているバージョン番号を修正します。
+本パッケージのドキュメントをインストールするためにパッチを適用します。
 </para>
 @z
 

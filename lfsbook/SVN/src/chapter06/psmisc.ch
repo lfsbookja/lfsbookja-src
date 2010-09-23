@@ -29,16 +29,6 @@ Psmisc パッケージは稼動中プロセスの情報表示を行うプログ�
 @z
 
 @x
-    <para>Fix a bug that prevents <command>peekfd</command> from being built on
-    the x86_64 architecture:</para>
-@y
-<para>
-<command>peekfd</command>
-が x86_64 アーキテクチャではビルドできないバグを修正します。
-</para>
-@z
-
-@x
     <para>Prepare Psmisc for compilation:</para>
 @y
     <para>Psmisc をコンパイルするための準備をします。</para>

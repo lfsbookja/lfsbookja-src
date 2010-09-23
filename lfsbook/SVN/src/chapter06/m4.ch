@@ -26,16 +26,6 @@
 @z
 
 @x
-    <para>Add a missing include directive that prevents M4 successfully building
-    against Glibc-&glibc-version;:</para>
-@y
-<para>
-不足しているインクルードディレクティブを追加します。
-これがないと、M4 が Glibc-&glibc-version; においてビルドできません。
-</para>
-@z
-
-@x
     <para>Prepare M4 for compilation:</para>
 @y
     <para>M4 をコンパイルするための準備をします。</para>
