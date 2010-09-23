@@ -58,6 +58,12 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          src/chapter06/sysvinit.ch:
+          訳出漏れを訂正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           src/chapter03/patches.ch,
           src/chapter05/m4.ch,
           src/chapter06/{autoconf,bzip2,m4,pkg-config,procps,psmisc}.ch:

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -132,7 +141,7 @@ Sysvinit パッケージは、システムの起動、実行、シャットダ�
         lastb (last へのリンク), mesg, mountpoint, pidof (killall5 へのリンク), 
         poweroff (halt へのリンク),
         reboot (halt へのリンク), runlevel, shutdown, sulogin,
-        telinit (init へのリンク), and utmpdump</seg>
+        telinit (init へのリンク), utmpdump</seg>
 @z
 
 @x
@@ -146,6 +155,14 @@ Sysvinit パッケージは、システムの起動、実行、シャットダ�
 @y
 <para>
 ブート時のメッセージをログファイルに出力します。
+</para>
+@z
+
+@x fstab-decode
+          <para>Run a command with fstab-encoded arguments</para>
+@y
+<para>
+fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行します。
 </para>
 @z
 
