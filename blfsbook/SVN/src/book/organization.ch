@@ -166,9 +166,8 @@ X + ウィンドウマネジャー
   Environment</application> or some parts of it, this part covers it.</para>
 @y
 <para>
-
-For those who want to use the <application>K Desktop
-Environment</application> or some parts of it, this part covers it.
+<application>K デスクトップ環境</application>
+またはその一部を利用したい方に向けて、その説明を行います。
 </para>
 @z
 
@@ -187,9 +186,8 @@ Environment</application> or some parts of it, this part covers it.
 @y
 <para>
 <application>GNOME</application> は <application>KDE</application>
-の is the main alternative to
-<application>KDE</application> in the Desktop Environment arena and
-we cover <application>GNOME</application>-&gnome-version; here.
+とは別の選択肢となるデスクトップ環境であり
+<application>GNOME</application>-&gnome-version; を説明します。
 </para>
 @z
 

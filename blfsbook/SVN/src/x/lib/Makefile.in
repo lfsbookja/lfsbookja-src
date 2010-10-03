@@ -346,6 +346,10 @@ gtk+.xml: $(BOOKdir)/$@ $(srcdir)/gtk+.ch
 gtk+2.xml: $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
 hicolor-icon-theme.xml: $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
 lesstif.xml: $(BOOKdir)/$@ $(srcdir)/lesstif.ch
+	cp -p $(BOOKdir)/$@{,.orig}
+	sed -e 's/®/\&reg;/g' $(BOOKdir)/$@.orig > $(BOOKdir)/$@
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	cp -p $(BOOKdir)/$@{.orig,}
 lib.xml: $(BOOKdir)/$@ $(srcdir)/lib.ch
 libwnck.xml: $(BOOKdir)/$@ $(srcdir)/libwnck.ch
 libxklavier.xml: $(BOOKdir)/$@ $(srcdir)/libxklavier.ch

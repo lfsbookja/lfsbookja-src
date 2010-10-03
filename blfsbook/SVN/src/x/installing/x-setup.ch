@@ -68,14 +68,13 @@ X11R6 との互換性を取るシンボリックリンクの生成
 <application>X ウィンドウアプリケーション</application>は、たいていは
 <filename class='directory'>/usr/X11R6</filename>
 ディレクトリ以下にインストールされていました。
-
-That was the
-standard for years. Developers picked up on this and wrote their package
-installation scripts looking for <application>X</application> in the
-standard location. Things have changed and the trend is to now install
-<application>X</application> in
-<filename class='directory'>/usr</filename>. Some people want to install
-it in a custom location.
+しばらくはこれが標準となっていました。
+したがって開発者は、そこに配置される <application>X</application>
+アプリケーションを探し出して取り出すようなインストールスクリプトを構築してきました。
+そのような流れも今は変わり、最近では <application>X</application>
+アプリケーションを <filename class='directory'>/usr</filename>
+ディレクトリ配下にインストールするものになっています。
+ただ中には、従来のディレクトリにインストールすることを望む人もいます。
 </para>
 @z
 
@@ -88,13 +87,17 @@ it in a custom location.
     the long term solution to the problem. Upstream developers need to modernize
     their installation scripts and eliminate the problem altogether.</para>
 @y
-    <para>Many package developers have not caught up to the change and their
-    packages are still trying to find <application>X</application> in
-    <filename class='directory'>/usr/X11R6</filename> and subsequently fail
-    when you try to build the package. Though for most packages it is not
-    difficult to 'hack' the installation script to fix the problem, that is not
-    the long term solution to the problem. Upstream developers need to modernize
-    their installation scripts and eliminate the problem altogether.</para>
+<para>
+パッケージ開発においては、上のような流れに追随していないものも多くあります。
+したがってそのパッケージが <application>X</application>
+アプリケーションを探し出す場所が <filename class='directory'>/usr/X11R6</filename>
+のままであるものもあります。だとするとそのパッケージをビルドする際にエラーとなってしまいます。
+
+Though for most packages it is not
+difficult to 'hack' the installation script to fix the problem, that is not
+the long term solution to the problem. Upstream developers need to modernize
+their installation scripts and eliminate the problem altogether.
+</para>
 @z
 
 @x
@@ -134,7 +137,7 @@ it in a custom location.
     <title>Configuring The X Window System</title>
 @y
   <sect2 role="configuration" id='xconfig'>
-    <title>Configuring The X Window System</title>
+    <title>X ウィンドウシステムの設定</title>
 @z
 
 @x
@@ -142,9 +145,11 @@ it in a custom location.
     create a basic X Window System configuration file with the following
     command:</para>
 @y
-    <para>As the <systemitem class="username">root</systemitem> user
-    create a basic X Window System configuration file with the following
-    command:</para>
+<para>
+X ウィンドウシステムの設定ファイルを生成します。
+<systemitem class="username">root</systemitem>
+ユーザーになって以下のコマンドを実行します。
+</para>
 @z
 
 @x
@@ -152,9 +157,11 @@ it in a custom location.
     monitor.  This command will create a file,
     <filename>xorg.conf.new</filename>, in your home directory.</para>
 @y
-    <para>The screen will go blank and you may hear some clicking of the
-    monitor.  This command will create a file,
-    <filename>xorg.conf.new</filename>, in your home directory.</para>
+<para>
+端末画面がブランクになり、クリック音が何回か発生します。
+このコマンド実行によって、ホームディレクトリに
+<filename>xorg.conf.new</filename> という設定ファイルが生成されます。
+</para>
 @z
 
 @x
@@ -511,22 +518,16 @@ it in a custom location.
       <para>The core X font protocol finds fonts from the server configuration
       file (<filename>xorg.conf</filename>).
       If no font paths exist in the configuration file, the server will fall
-      back to an internal hard-coded path.  Assuming the prefix for your
-      <application>X</application> installation is
-      <filename class="directory">/usr/X11R6</filename>, the core fonts will
-      reside in subdirectories of <filename
-      class="directory">/usr/X11R6/lib/X11/fonts</filename>.  For each
-      directory in the path, the server reads three files:</para>
+      back to an internal hard-coded path of
+      <filename class="directory">$XORG_PREFIX>/share/fonts/X11</filename>.
+      For each directory in the path, the server reads three files:</para>
 @y
       <para>The core X font protocol finds fonts from the server configuration
       file (<filename>xorg.conf</filename>).
       If no font paths exist in the configuration file, the server will fall
-      back to an internal hard-coded path.  Assuming the prefix for your
-      <application>X</application> installation is
-      <filename class="directory">/usr/X11R6</filename>, the core fonts will
-      reside in subdirectories of <filename
-      class="directory">/usr/X11R6/lib/X11/fonts</filename>.  For each
-      directory in the path, the server reads three files:</para>
+      back to an internal hard-coded path of
+      <filename class="directory">$XORG_PREFIX>/share/fonts/X11</filename>.
+      For each directory in the path, the server reads three files:</para>
 @z
 
 @x

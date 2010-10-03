@@ -104,7 +104,6 @@
 <para>
 以下のコマンドを実行して <application>Traceroute</application>
 をビルドします。
-commands:
 </para>
 @z
 

@@ -118,7 +118,7 @@
 </abstract>
 
 <abstract>
-<title>日本語訳情報</title>
+<title>日本語訳情報 (訳出率: &jratio;)</title>
 <para>
 現時点この日本語訳は散発的に訳出を進めている状態であり、完成とは程遠いものです。
 ご了承ください。

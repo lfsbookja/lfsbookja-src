@@ -62,10 +62,94 @@
 @z
 
 @x
+      <para>September 27th</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Marked a few packages that are known to be OK with LFS-6.7.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - LFS-6.7 において正常ビルドできるパッケージをいくつか説明。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>September 26th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Corrected Xorg font paths.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added note to cups page about the new CUPS USB backend
+          and usblp driver being incompatible.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to libidn-1.19.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Xorg のフォントパスの修正。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added note to cups page about the new CUPS USB backend
+          and usblp driver being incompatible.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libidn-1.19 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>September 25th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Added /etc/pam.d/system-* configuration files.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Upgraded to cracklib-2.8.16.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Upgraded to Linux-PAM-1.1.2.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Upgraded to sudo-1.7.4p4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/09/25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - 設定ファイル /etc/pam.d/system-* の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - cracklib-2.8.16 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Linux-PAM-1.1.2 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - sudo-1.7.4p4 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>September 19th, 2010</para>
       <itemizedlist>
         <listitem>
           <para>[dj] - Updated to OpenOffice-3.2.1.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Corrected post installation instructions in OpenOffice
+          for additional language tools, extensions, and icons.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -73,6 +157,10 @@
       <itemizedlist>
         <listitem>
           <para>[dj] - OpenOffice-3.2.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Corrected post installation instructions in OpenOffice
+          for additional language tools, extensions, and icons.</para>
         </listitem>
       </itemizedlist>
 @z

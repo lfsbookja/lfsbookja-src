@@ -177,6 +177,35 @@ any other build commands) to use the system-installed copy of
 
 
 % ----------
+% XML::Parser
+% ----------
+@x
+    <para>The XML::Parser module is a <application>Perl</application> extension
+    interface to James Clark's XML parser,
+    <application>expat</application>. The module is installed using the
+    standard <application>Perl</application> module
+    <xref linkend="perl-standard-install"/>.</para>
+@y
+<para>
+XML::Parser モジュールは James Clark
+氏による XML パーサー <application>expat</application>
+への <application>Perl</application> 拡張インターフェースです。
+このモジュールは標準的な <application>Perl</application>
+モジュールの <xref linkend="perl-standard-install"/> によりインストールします。
+</para>
+@z
+
+@x
+            <para><xref linkend="perl-lwp"/>
+            (optionally used during the tests)</para>
+@y
+            <para><xref linkend="perl-lwp"/>
+            (任意; テスト時に利用される)</para>
+@z
+
+
+
+% ----------
 % Perl モジュールの標準的なインストール方法
 % ----------
 @x

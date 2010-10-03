@@ -22,7 +22,8 @@
 @x
     <para>The <application>Zip</application> package contains
     <application>Zip</application> utilities. These
-    are useful for compressing files into <filename>ZIP</filename> archives.</para>
+    are useful for compressing files into <filename>ZIP</filename>
+    archives.</para>
 @y
 <para>
 <application>Zip</application>

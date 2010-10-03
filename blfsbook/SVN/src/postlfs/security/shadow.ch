@@ -434,21 +434,21 @@ links:</para>
 @z
 
 @x
-        <title>'login' (with CrackLib)</title>
+        <title>'system-account'</title>
 @y
-        <title>'login' (CrackLib とともに用いる場合)</title>
+        <title>'system-account'</title>
 @z
 
 @x
-        <title>'login' (without CrackLib)</title>
+        <title>'system-auth'</title>
 @y
-        <title>'login' (CrackLib を用いない場合)</title>
+        <title>'system-auth'</title>
 @z
 
 @x
-        <title>'passwd' (with CrackLib)</title>
+        <title>'system-passwd' (with cracklib)</title>
 @y
-        <title>'passwd' (CrackLib とともに用いる場合)</title>
+        <title>'system-passwd' (with cracklib)</title>
 @z
 
 @x
@@ -468,9 +468,39 @@ links:</para>
 @z
 
 @x
-        <title>'passwd' (without CrackLib)</title>
+        <title>'system-passwd' (without cracklib)</title>
 @y
-        <title>'passwd' (CrackLib を用いない場合)</title>
+        <title>'system-passwd' (without cracklib)</title>
+@z
+
+@x
+        <title>'system-session'</title>
+@y
+        <title>'system-session'</title>
+@z
+
+@x
+        <title>'login'</title>
+@y
+        <title>'login'</title>
+@z
+
+@x
+        <title>'passwd'</title>
+@y
+        <title>'passwd'</title>
+@z
+
+@x
+        <title>'su'</title>
+@y
+        <title>'su'</title>
+@z
+
+@x
+        <title>'chage'</title>
+@y
+        <title>'chage'</title>
 @z
 
 @x
@@ -640,4 +670,3 @@ links:</para>
     can be found at
     <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/>.</para>
 @z
-

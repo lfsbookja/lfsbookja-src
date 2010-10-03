@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -33,10 +42,13 @@ LFS 開発版の構築に続けて本書による手順を進めていただけ�
   there could be incompatibilities. Instead, use the matching BLFS version
   which should be available on all the mirrors.</para>
 @y
-  <para>If you have built LFS using a released version (the most recent being
-  LFS-6.3), then you probably don't want to use this version of BLFS, as
-  there could be incompatibilities. Instead, use the matching BLFS version
-  which should be available on all the mirrors.</para>
+<para>
+LFS のリリースバージョン (本書の対応バージョンは LFS-6.3) をビルドしている場合、同一バージョンの BLFS は採用したくないと思われることでしょう。
+なぜならその BLFS バージョンでは互換性がないためです。
+
+Instead, use the matching BLFS version
+which should be available on all the mirrors.
+</para>
 @z
 
 @x

@@ -25,9 +25,9 @@
     to manage email submission to a mail transport layer.</para>
 @y
 <para>
-The <application>libESMTP</application> package contains the
-<application>libESMTP</application> libraries which are used by some programs
-to manage email submission to a mail transport layer.
+<application>libESMTP</application>
+パッケージは <application>libESMTP</application> ライブラリ群を提供します。
+これらのライブラリは、メールトランスポート層 (mail transport layer) に対してのメール送信を行うプログラムにおいて利用することができます。
 </para>
 @z
 
@@ -106,9 +106,7 @@ to manage email submission to a mail transport layer.
     commands:</para>
 @y
 <para>
-
-Install <application>libESMTP</application> by running the following
-commands:
+以下のコマンドを実行して <application>libESMTP</application> をビルドします。
 </para>
 @z
 
@@ -124,7 +122,7 @@ commands:
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-Now, as the <systemitem class="username">root</systemitem> user:
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 </para>
 @z
 
@@ -166,16 +164,20 @@ Now, as the <systemitem class="username">root</systemitem> user:
           <para>displays version information and the options used to
           compile <application>libESMTP</application>.</para>
 @y
-          <para>displays version information and the options used to
-          compile <application>libESMTP</application>.</para>
+<para>
+<application>libESMTP</application>
+のバージョンと、ビルドした際に指定されたオプションを表示します。
+</para>
 @z
 
 @x libesmtp.{so,a}
           <para>is used to manage submission of electronic mail to a Mail
           Transport Agent.</para>
 @y
-          <para>is used to manage submission of electronic mail to a Mail
-          Transport Agent.</para>
+<para>
+メールトランスポートエージェント (Mail Transport Agent)
+に対して電子メールを送信するために利用されます。
+</para>
 @z
 
 @x
@@ -187,7 +189,7 @@ Now, as the <systemitem class="username">root</systemitem> user:
           <para>are used to integrate <application>libesmtp</application> with
           SASL authentication.</para>
 @y
-          <para>are used to integrate <application>libesmtp</application> with
-          SASL authentication.</para>
+<para>
+SASL 認証を通じて <application>libesmtp</application> を制御するために利用されます。
+</para>
 @z
-

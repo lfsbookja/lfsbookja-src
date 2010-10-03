@@ -31,9 +31,10 @@
     the default editor in the <application>Pine</application> package.</para>
 @y
 <para>
-The <application>nano</application> package contains a small,
-simple text editor which aims to replace <application>Pico</application>,
-the default editor in the <application>Pine</application> package.
+<application>nano</application>
+パッケージは、軽量でシンプルなテキストエディタを提供します。
+<application>Pine</application> パッケージにおけるデフォルトのエディタ
+<application>Pico</application> に代わるものとして提供されています。
 </para>
 @z
 
@@ -112,9 +113,7 @@ the default editor in the <application>Pine</application> package.
     commands:</para>
 @y
 <para>
-
-Install <application>nano</application> by running the following
-commands:
+以下のコマンドを実行して <application>nano</application> をビルドします。
 </para>
 @z
 
@@ -130,8 +129,7 @@ commands:
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-
-Now, as the <systemitem class="username">root</systemitem> user:
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 </para>
 @z
 
@@ -148,10 +146,8 @@ Now, as the <systemitem class="username">root</systemitem> user:
 @y
 <para>
 <option>--with-slang=/usr/lib</option>:
-
-This forces
-<application>Nano</application> to detect <application>S-Lang</application>.
-Use this if installed.
+<application>Nano</application> において <application>S-Lang</application> を利用するようにします。
+<application>S-Lang</application> をインストールしている場合にこれを指定します。
 </para>
 @z
 
@@ -186,9 +182,11 @@ Use this if installed.
       <filename>/etc/nano/nanorc</filename> or a personal
       <filename>~/.nanorc</filename> file)</para>
 @y
-      <para>Example configuration (create as a system-wide
-      <filename>/etc/nano/nanorc</filename> or a personal
-      <filename>~/.nanorc</filename> file)</para>
+<para>
+設定の例です。
+(システム共通の <filename>/etc/nano/nanorc</filename> ファイルとして、または各ユーザー向けの
+<filename>~/.nanorc</filename> ファイルとして生成します。)
+</para>
 @z
 
 @x
@@ -197,10 +195,11 @@ Use this if installed.
       It includes color configurations and has some documentation included
       in the comments.</para>
 @y
-      <para>Another example is the <filename>nanorc.sample</filename> file
-      in the <filename class="directory">/etc/nano</filename> directory.
-      It includes color configurations and has some documentation included
-      in the comments.</para>
+<para>
+設定のサンプルとして <filename class="directory">/etc/nano</filename>
+ディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
+このファイルには色の設定例や、多くの説明がコメント内にて示されています。
+</para>
 @z
 
 @x
@@ -243,16 +242,16 @@ Use this if installed.
           <application>Pine</application> package.</para>
 @y
 <para>
-
-is a small, simple text editor which aims to replace
-<application>Pico</application>, the default editor in the
-<application>Pine</application> package.
+軽量でシンプルなテキストエディタです。
+<application>Pine</application> パッケージにおけるデフォルトのエディタ
+<application>Pico</application> に代わるものとして提供されています。
 </para>
 @z
 
 @x rnano
           <para>is a restricted mode for <command>nano</command>.</para>
 @y
-          <para>is a restricted mode for <command>nano</command>.</para>
+<para>
+<command>nano</command> を制限モード (restricted mode) で起動します。
+</para>
 @z
-

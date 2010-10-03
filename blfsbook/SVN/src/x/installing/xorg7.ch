@@ -31,11 +31,10 @@
 <application>Xorg</application>
 は、再配布が可能な <application>X</application>
 ウィンドウシステムのオープンソース実装です。
-
-This system provides a client/server interface between display
-hardware (the mouse, keyboard, and video displays) and the desktop
-environment, while also providing both the windowing infrastructure and a
-standardized application interface (API).
+このシステムは、ディスプレイハードウェア (マウス、キーボード、ビデオディスプレイ)
+とデスクトップ環境に対し、クライアント/サーバーのインターフェースを提供します。
+またウィンドウインフラストラクチャと標準アプリケーションインターフェース
+(API; application interface) を提供します。
 </para>
 @z
 
@@ -65,14 +64,15 @@ standardized application interface (API).
   that includes multiple packages.</para>
 @y
 <para>
-Xorg-7.0 introduced a completely auto-tooled, modular build system.
-With the new modular build system, it is no longer possible to download
-the entire package in a single file.  In fact, there may be as many as
-293 files that need to be fetched from the download location.  To assist
-with such a large task, installing <xref linkend="wget"/> is strongly
-recommended for downloading the needed files.  A complete
-<application>wget</application> file list is provided for each section
-that includes multiple packages.</para>
+Xorg-7.0 では、完全に自動ツール化されたモジュールのビルドシステムが構築されていました。
+モジュールのビルドシステムは新しいものとなったため、パッケージ全体を１つのファイルとしてダウンロードすることは出来なくなりました。
+実際にダウンロードサイトから入手すべきファイルは 293 個にも及びます。
+必要となる大量のファイルのダウンロードを容易に行うために、
+<xref linkend="wget"/> のインストールを是非行ってください。
+<application>wget</application>
+にて用いる正確なファイルリストについては、各節において明示します。
+そのファイルリストには数多くのパッケージが含まれます。
+</para>
 @z
 
 @x
@@ -120,20 +120,17 @@ that includes multiple packages.</para>
 このファイルではパッケージの依存関係を考慮してパッケージが並べられています。
 また互いにうまく動作するようなパッケージバージョンが列記されています。
 さらに言うと wget ファイル内では、特定のパッケージが不適当であるとかインストールすべきではない、といったコメントも書かれています。
-
-Newer packages are likely intended for the
-next release of <application>Xorg</application> and have already proved
-to be incompatible with current versions of software installed in BLFS.
-The installed size of <application>Xorg</application> can be reduced
-considerably by installing only the packages that you will need and use,
-however, the BLFS book cannot account for all dependencies and build
-options for the individual <application>Xorg</application> packages.
-The instructions assume that all packages have been built.  A
+より最新のパッケージバージョンは <application>Xorg</application>
+の次期リリースバージョンにおいて用いるべきかもしれませんし、BLFS にてインストールする他のソフトウェアの現行バージョンでは動作しないことが明らかな場合もあります。
+<application>Xorg</application> のインストールによって消費されるディスク容量は、本当に必要とするパッケージのみをインストールすることで、大幅に削減できるかもしれません。
+しかし BLFS ブックでは、個々の <application>Xorg</application>
+パッケージにおける、すべての依存パッケージやビルドオプションについては、説明が網羅されていません。
+説明手順はあくまで、すべてのパッケージをビルドすることを前提としています。
 <ulink url="&blfs-wiki;/Xorg7">wiki</ulink>
-page containing dependency information is under development.  You are
-encouraged to add to these pages if you discover additional information
-that may be helpful to other users who selectively install individual
-packages.</para>
+ページにて依存関係を説明していますが、これも構築中のものです。
+個別のパッケージをインストール場合の情報を見出した方は、他ユーザーにとっての有用な情報提供となるよう、是非
+<ulink url="&blfs-wiki;/Xorg7">wiki</ulink> ページに説明を加えてください。
+</para>
 @z
 
 @x
@@ -144,12 +141,12 @@ packages.</para>
   section's page contain specific commands to compile the entire group of
   packages, based on the content of the wget files.</para>
 @y
-  <para>Additionally, because of the large number of repetitive commands,
-  you are encouraged to partially automate the build.  The commands below
-  (or similar) can be entered at the command line to compile each
-  section (proto, util, lib, app, driver).  The wiki links on each
-  section's page contain specific commands to compile the entire group of
-  packages, based on the content of the wget files.</para>
+<para>
+さらに、これから行うコマンド実行は、何度も繰り返し行うものになるため、部分的にでも自動的なビルドを行うものとしています。
+以下に示すようなコマンドは、コマンドラインより入力しパッケージのビルドを行うものであり、各節 (プロト、ユーティリティ、ライブラリ、アプリケーション、ドライバ)
+において実施します。
+各節において示される wiki ページへのリンクには、パッケージ群のすべてをコンパイルする特定のコマンドを説明しており、wget ファイルに示される内容に基づいています。
+</para>
 @z
 
 @x
@@ -190,19 +187,22 @@ packages.</para>
     the <filename class="directory">/usr</filename> prefix adhere to the
     current FHS guidelines.</para>
 @y
-    <para>As with previous releases of the X Window System, it may be
-    desirable to install <application>Xorg</application> into an alternate
-    prefix.  This is no longer common practice among Linux distributions.
-    The common installation prefix for <application>Xorg</application> on
-    Linux is <filename class="directory">/usr</filename>.  There is no
-    standard alternate prefix, nor is there any exception in the current
-    revision of the Filesystem Hierarchy Standard for Release 7 of the X
-    Window System.  Alan Coopersmith of Sun Microsystems, has recently
-    stated "At Sun, we were using
-    <filename class="directory">/usr/X11</filename> and plan to stick with
-    it."  Only the <filename class="directory">/opt/*</filename> prefix or
-    the <filename class="directory">/usr</filename> prefix adhere to the
-    current FHS guidelines.</para>
+<para>
+
+As with previous releases of the X Window System, it may be
+desirable to install <application>Xorg</application> into an alternate
+prefix.  This is no longer common practice among Linux distributions.
+The common installation prefix for <application>Xorg</application> on
+Linux is <filename class="directory">/usr</filename>.  There is no
+standard alternate prefix, nor is there any exception in the current
+revision of the Filesystem Hierarchy Standard for Release 7 of the X
+Window System.  Alan Coopersmith of Sun Microsystems, has recently
+stated "At Sun, we were using
+<filename class="directory">/usr/X11</filename> and plan to stick with
+it."  Only the <filename class="directory">/opt/*</filename> prefix or
+the <filename class="directory">/usr</filename> prefix adhere to the
+current FHS guidelines.
+</para>
 @z
 
 @x
@@ -245,10 +245,11 @@ packages.</para>
     <para>If you've decided to use an alternate prefix, be sure to add
     <filename class="directory">
     $XORG_PREFIX/bin</filename> to your
-    <envar>PATH</envar> environment variable and  <filename class="directory">
-    $XORG_PREFIX/lib/pkgconfig</filename>
-    to your <envar>PKG_CONFIG_PATH</envar> variable.  For detailed instructions,
-    see <xref linkend="postlfs-config-profile"/>.  You should also add
+    <envar>PATH</envar> environment variable, and <filename class="directory">
+    $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
+    $XORG_PREFIX/share/pkgconfig</filename>
+    to your <envar>PKG_CONFIG_PATH</envar> variable. For detailed instructions,
+    see <xref linkend="postlfs-config-profile"/>. You should also add
     <filename class="directory">
     $XORG_PREFIX/lib</filename> to the
     <filename>/etc/ld.so.conf</filename> file. Finally, you should modify
@@ -259,10 +260,11 @@ packages.</para>
     <para>If you've decided to use an alternate prefix, be sure to add
     <filename class="directory">
     $XORG_PREFIX/bin</filename> to your
-    <envar>PATH</envar> environment variable and  <filename class="directory">
-    $XORG_PREFIX/lib/pkgconfig</filename>
-    to your <envar>PKG_CONFIG_PATH</envar> variable.  For detailed instructions,
-    see <xref linkend="postlfs-config-profile"/>.  You should also add
+    <envar>PATH</envar> environment variable, and <filename class="directory">
+    $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
+    $XORG_PREFIX/share/pkgconfig</filename>
+    to your <envar>PKG_CONFIG_PATH</envar> variable. For detailed instructions,
+    see <xref linkend="postlfs-config-profile"/>. You should also add
     <filename class="directory">
     $XORG_PREFIX/lib</filename> to the
     <filename>/etc/ld.so.conf</filename> file. Finally, you should modify
