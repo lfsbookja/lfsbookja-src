@@ -177,6 +177,21 @@
 @z
 
 @x
+    <para>If you did not remove the <parameter>--disable-docs</parameter>
+    parameter from the <command>configure</command> command, you can install
+    the pre-generated documentation by using the following commands as the
+    <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+<command>configure</command>
+スクリプトにおけるパラメータ <parameter>--disable-docs</parameter>
+をそのまま指定した場合は、あらかじめ生成されているドキュメントをインストールすることもできます。
+これを実行するには <systemitem class="username">root</systemitem>
+ユーザーになって以下のコマンドを実行します。
+</para>
+@z
+
+@x
     <title>Command Explanations</title>
 @y
     <title>&j-CommandExplanations;</title>
@@ -200,9 +215,11 @@
     the automatic search for X Window System fonts which, if found, may
     confuse some applications.</para>
 @y
-    <para><parameter>--without-add-fonts</parameter>: This switch disables
-    the automatic search for X Window System fonts which, if found, may
-    confuse some applications.</para>
+<para>
+<parameter>--without-add-fonts</parameter>:
+このパラメータは X ウィンドウシステムのフォントを自動的に検索しないようにします。
+自動的に見つかった際に、アプリケーションによってはうまく動作しないものがあるためです。
+</para>
 @z
 
 @x
@@ -210,9 +227,11 @@
     the documentation (the release tarball includes pre-generated
     documentation).</para>
 @y
-    <para><parameter>--disable-docs</parameter>: This switch avoids building
-    the documentation (the release tarball includes pre-generated
-    documentation).</para>
+<para>
+<parameter>--disable-docs</parameter>:
+このパラメータは、ドキュメントを生成しないようにします。
+(ソース tarball の中には、あらかじめ生成されているドキュメントが含まれています。)
+</para>
 @z
 
 @x
@@ -224,13 +243,16 @@
     of the default
     <filename class='directory'>/usr/share/doc/fontconfig</filename>.</para>
 @y
-    <para><parameter>--with-docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
-    Though this parameter seems counter-intuitive following the preceding
-    parameter to the <command>configure</command> command, it is used so that
-    if the builder removes the <parameter>--disable-docs</parameter> parameter,
-    the documentation will be installed in a versioned directory name instead
-    of the default
-    <filename class='directory'>/usr/share/doc/fontconfig</filename>.</para>
+<para>
+<parameter>--with-docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
+
+Though this parameter seems counter-intuitive following the preceding
+parameter to the <command>configure</command> command, it is used so that
+if the builder removes the <parameter>--disable-docs</parameter> parameter,
+the documentation will be installed in a versioned directory name instead
+of the default
+<filename class='directory'>/usr/share/doc/fontconfig</filename>.
+</para>
 @z
 
 @x

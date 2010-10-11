@@ -34,6 +34,12 @@
 @z
 
 @x
+    <para>&lfssvn_checked;20100803&lfssvn_checked2;</para>
+@y
+    <para>&lfssvn_checked;20100803&lfssvn_checked2;</para>
+@z
+
+@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>

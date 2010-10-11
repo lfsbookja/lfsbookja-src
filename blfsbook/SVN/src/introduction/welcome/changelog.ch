@@ -62,6 +62,34 @@
 @z
 
 @x
+      <para>October 10th</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Added new package, Babl-0.1.2. Fixes ticket
+          <ulink url="&blfs-ticket-root;2627">#2627</ulink></para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Added new package, Gegl-0.1.2. Fixes ticket
+          <ulink url="&blfs-ticket-root;2628">#2628</ulink></para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - 新パッケージ Babl-0.1.2 の追加。
+          チケット
+          <ulink url="&blfs-ticket-root;2627">#2627</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - 新パッケージ Gegl-0.1.2 の追加。
+          チケット
+          <ulink url="&blfs-ticket-root;2628">#2628</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>September 27th</para>
       <itemizedlist>
         <listitem>

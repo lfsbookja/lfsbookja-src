@@ -113,6 +113,14 @@
 @z
 
 @x
+    <para>If you want to patch libpng to support apng files, apply the patch:</para>
+@y
+<para>
+apng ファイルのサポートを組み入れたい場合は、以下のパッチを適用します。
+</para>
+@z
+
+@x
     <para>Install <application>libpng</application> by running the following
     commands:</para>
 @y
@@ -208,9 +216,8 @@
 <para>
 グラフィックフォーマットの一つである PNG
 を生成したり取り扱ったりするための処理ルーチンを提供します。
-The PNG format was designed as a replacement for
-GIF and, to a lesser extent, TIFF, with many improvements and extensions
-and lack of patent problems.
+PNG フォーマットは GIF と、TIFF のある程度の代替として設計されたものです。
+さまざまな改良と拡張が行われていますが、特許の問題は解消していません。
 </para>
 @z
 

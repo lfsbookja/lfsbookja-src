@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "svn-&year;&month;&day;">
-<!ENTITY releasedate  "September &day;th, &year;">
+<!ENTITY releasedate  "October &day;th, &year;">
 @y
 <!ENTITY version      "svn-&year;&month;&day;">
-<!ENTITY jversion     "20101003">
-<!ENTITY jratio       "25.8 &percnt;">
-<!ENTITY releasedate "&year;/&month;/&day;">
+<!ENTITY jversion     "20101011">
+<!ENTITY jratio       "26.4 &percnt;">
+<!ENTITY releasedate  "&year;/&month;/&day;">
 @z
 
 @x
@@ -77,4 +77,13 @@
 <!ENTITY lfs66_built          "<para>本パッケージは LFS-6.6 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 <!ENTITY lfs67_checked        "<para>本パッケージは LFS-6.7 において正しくビルドでき動作することが確認されています。</para>">
 <!ENTITY lfs67_built          "<para>本パッケージは LFS-6.7 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+@z
+
+@x
+<!ENTITY lfssvn_checked       "This package is known to build and work properly
+                               using an LFS-svn-">
+<!ENTITY lfssvn_checked2      " platform.">
+@y
+<!ENTITY lfssvn_checked       "このパッケージは LFS-svn-">
+<!ENTITY lfssvn_checked2      " においてビルドでき動作することが確認されています。">
 @z
