@@ -62,7 +62,52 @@
 @z
 
 @x
-      <para>October 10th</para>
+      <para>October 14th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Removed FHS section of X Setup page and corrected
+          in the installation instructions for individual packages. Thanks to
+          <quote>linux fan</quote> for the suggestions.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Removed FHS section of X Setup page and corrected
+          in the installation instructions for individual packages. Thanks to
+          <quote>linux fan</quote> for the suggestions.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 12th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to Gimp-2.6.8. Fixes ticket
+          <ulink url="&blfs-ticket-root;2619">#2619</ulink></para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added system-auth to /etc/pam.d/su.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Gimp-2.6.8 へのアップデート。
+          チケット
+          <ulink url="&blfs-ticket-root;2619">#2619</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - system-auth の /etc/pam.d/su への追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 10th, 2010</para>
       <itemizedlist>
         <listitem>
           <para>[ken] - Added new package, Babl-0.1.2. Fixes ticket
@@ -90,7 +135,7 @@
 @z
 
 @x
-      <para>September 27th</para>
+      <para>September 27th, 2010</para>
       <itemizedlist>
         <listitem>
           <para>[ken] - Marked a few packages that are known to be OK with LFS-6.7.</para>

@@ -90,35 +90,35 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>
-    <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>
-    <xref linkend="ffmpeg"/>
-    <xref linkend="graphviz"/>
-    <xref linkend="libjpeg"/>
-    <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>
-    <xref linkend="libpng"/>
-    <xref linkend="librsvg"/>
-    <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>
-    <ulink url="http://www.lua.org/">Lua</ulink>
-    <ulink url="http://www.openexr.org">OpenEXR</ulink>
-    <xref linkend="ruby"/>
+    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
+    <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
+    <xref linkend="ffmpeg"/>,
+    <xref linkend="graphviz"/>,
+    <xref linkend="libjpeg"/>,
+    <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
+    <xref linkend="libpng"/>,
+    <xref linkend="librsvg"/>,
+    <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
+    <ulink url="http://www.lua.org/">Lua</ulink>,
+    <ulink url="http://www.openexr.org">OpenEXR</ulink>,
+    <xref linkend="ruby"/>,
     <xref linkend="sdl"/>
     and <xref linkend="w3m"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>
-    <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>
-    <xref linkend="ffmpeg"/>
-    <xref linkend="graphviz"/>
-    <xref linkend="libjpeg"/>
-    <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>
-    <xref linkend="libpng"/>
-    <xref linkend="librsvg"/>
-    <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>
-    <ulink url="http://www.lua.org/">Lua</ulink>
-    <ulink url="http://www.openexr.org">OpenEXR</ulink>
-    <xref linkend="ruby"/>
+    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
+    <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
+    <xref linkend="ffmpeg"/>,
+    <xref linkend="graphviz"/>,
+    <xref linkend="libjpeg"/>,
+    <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
+    <xref linkend="libpng"/>,
+    <xref linkend="librsvg"/>,
+    <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
+    <ulink url="http://www.lua.org/">Lua</ulink>,
+    <ulink url="http://www.openexr.org">OpenEXR</ulink>,
+    <xref linkend="ruby"/>,
     <xref linkend="sdl"/>
     <xref linkend="w3m"/></para>
 @z
@@ -176,12 +176,14 @@
     <filename>index.html</filename>.  This extra command ensures all the links
     in the html work.</para>
 @y
-    <para><parameter>install -v -m644 docs/*.{css,html} /usr/share/gtk-doc/html/gegl
-    </parameter>:
-    The command '<command>make install</command>' only installs
-    <filename>operations.html</filename>, omitting the stylesheet and
-    <filename>index.html</filename>.  This extra command ensures all the links
-    in the html work.</para>
+<para>
+<parameter>install -v -m644 docs/*.{css,html} /usr/share/gtk-doc/html/gegl
+</parameter>:
+'<command>make install</command>'
+を実行しただけでは <filename>operations.html</filename>
+しかインストールされず、スタイルシートや <filename>index.html</filename>
+がインストールされません。このコマンドを追加することで HTML 内のリンクを正しく作動するようにします。
+</para>
 @z
 
 @x
@@ -220,7 +222,7 @@
           <para>is a commandline tool for working with the XML data model.</para>
 @y
 <para>
-is a commandline tool for working with the XML data model.
+XML データモデルに基づくコマンドラインツールです。
 </para>
 @z
 
@@ -229,6 +231,7 @@ is a commandline tool for working with the XML data model.
           destructive image editing on larger than RAM buffers.</para>
 @y
 <para>
+
 provides infrastructure to do demand based cached non
 destructive image editing on larger than RAM buffers.
 </para>

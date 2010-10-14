@@ -117,22 +117,6 @@ their installation scripts and eliminate the problem altogether.
 @z
 
 @x
-    <para>Packages in Xorg store their configuration files in
-    <filename class="directory">$XORG_PREFIX/lib/X11</filename> by default.
-    This is strictly against FHS guidelines.  Correct the installation
-    <filename class="directory">/etc/X11</filename> and create symlinks
-    in the original location with the commands as the
-    <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>Packages in Xorg store their configuration files in
-    <filename class="directory">$XORG_PREFIX/lib/X11</filename> by default.
-    This is strictly against FHS guidelines.  Correct the installation
-    <filename class="directory">/etc/X11</filename> and create symlinks
-    in the original location with the commands as the
-    <systemitem class="username">root</systemitem> user:</para>
-@z
-
-@x
   <sect2 role="configuration" id='xconfig'>
     <title>Configuring The X Window System</title>
 @y

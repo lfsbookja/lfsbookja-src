@@ -25,10 +25,11 @@
     It provides facilities required by interactive applications such as
     display/screen management, keyboard input and keymaps.</para>
 @y
-    <para><application>S-Lang</application> is an interpreted language that
-    maybe be embedded into an application to make the application extensible.
-    It provides facilities required by interactive applications such as
-    display/screen management, keyboard input and keymaps.</para>
+<para>
+<application>S-Lang</application>
+はインタープリタ言語であり、アプリケーション内に埋め込んで、そのアプリケーションを拡張することが可能です。
+これは、ディスプレイ画面、キーボード入力、キーマップなどのように、対話的インターフェースにおいて必要となる機能を提供します。
+</para>
 @z
 
 @x
@@ -138,6 +139,16 @@
     <title>Command Explanations</title>
 @y
     <title>&j-CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
+    This sed fixes a buffer-overflow bug.</para>
+@y
+<para>
+<command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
+この sed コマンドは、バッファオーバーフローのバグを修正します。
+</para>
 @z
 
 @x
