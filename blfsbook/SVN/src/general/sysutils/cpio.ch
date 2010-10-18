@@ -98,9 +98,10 @@
     PDF or Postscript documentation, issue one or both of the following
     commands:</para>
 @y
-    <para>If you have <xref linkend="tetex"/> installed and wish to create
-    PDF or Postscript documentation, issue one or both of the following
-    commands:</para>
+<para>
+<xref linkend="tetex"/> をインストールしていて、PDF や Postscript
+のドキュメントを生成したい場合は、以下のいずれか、あるいは両方のコマンドを実行します。
+</para>
 @z
 
 @x
@@ -124,9 +125,11 @@
     by issuing the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you built PDF or Postscript documentation, install it
-    by issuing the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+<para>
+PDF や Postscript のドキュメントをビルドした場合は、
+<systemitem class="username">root</systemitem>
+ユーザーになって以下のコマンドを実行します。
+</para>
 @z
 
 @x
@@ -134,17 +137,6 @@
 @y
     <title>&j-CommandExplanations;</title>
 @z
-
-% @x
-%     <para><parameter>CPIO_MT_PROG=mt</parameter>: This parameter forces the
-%     building and installation of the <command>mt</command> program.</para>
-% @y
-% <para>
-% <parameter>CPIO_MT_PROG=mt</parameter>:
-% このパラメータは <command>mt</command>
-% プログラムをビルドしインストールすることを指示します。
-% </para>
-% @z
 
 @x
     <para><parameter>--bindir=/bin</parameter>: This parameter installs
@@ -154,7 +146,7 @@
 @y
 <para>
 <parameter>--bindir=/bin</parameter>:
-このパラメータは、<command>cpio</command>
+このパラメーターは、<command>cpio</command>
 プログラムのインストール先を
 <filename class="directory">/usr/bin</filename> ではなく
 <filename class="directory">/bin</filename>
@@ -168,9 +160,20 @@
     created.</para>
 @y
 <para>
-<parameter>--libexecdir=/tmp</parameter>: This parameter is used so
-that <filename class='directory'>/usr/libexec</filename> is not
-created.
+<parameter>--libexecdir=/tmp</parameter>:
+このパラメーターは <filename class='directory'>/usr/libexec</filename>
+ディレクトリを生成しないようにします。
+</para>
+@z
+
+@x
+    <para><parameter>--enable-mt</parameter>: This parameter forces the
+    building and installation of the <command>mt</command> program.</para>
+@y
+<para>
+<parameter>--enable-mt</parameter>:
+このパラメーターは <command>mt</command>
+プログラムをビルドしインストールすることを指示します。
 </para>
 @z
 
@@ -180,9 +183,10 @@ created.
     installed by the <application>Tar</application> package in LFS.</para>
 @y
 <para>
-<parameter>--with-rmt=/usr/sbin/rmt</parameter>: This parameter
-inhibits building the <command>rmt</command> program as it is already
-installed by the <application>Tar</application> package in LFS.
+<parameter>--with-rmt=/usr/sbin/rmt</parameter>:
+このパラメーターは <command>rmt</command> プログラムをビルドしないようにします。
+そのプログラムは LFS における <application>Tar</application>
+パッケージにて既にインストールされています。
 </para>
 @z
 
@@ -207,7 +211,7 @@ installed by the <application>Tar</application> package in LFS.
         <seg>None</seg>
         <seg>/usr/share/doc/cpio-&cpio-version;</seg>
 @y
-        <seg>cpio and mt</seg>
+        <seg>cpio, mt</seg>
         <seg>なし</seg>
         <seg>/usr/share/doc/cpio-&cpio-version;</seg>
 @z
@@ -222,7 +226,7 @@ installed by the <application>Tar</application> package in LFS.
           <para>copies files to and from archives.</para>
 @y
 <para>
-copies files to and from archives.
+アーカイブからのファイルコピー、あるいはアーカイブへのファイルコピーを行います。
 </para>
 @z
 
@@ -230,7 +234,6 @@ copies files to and from archives.
           <para>controls magnetic tape drive operations.</para>
 @y
 <para>
-controls magnetic tape drive operations.
+磁気テープドライブの処理を制御します。
 </para>
 @z
-

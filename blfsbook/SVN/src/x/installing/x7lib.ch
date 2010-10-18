@@ -105,30 +105,33 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="ed"/>,
     <xref linkend="fontconfig"/>,
-    <xref linkend="xorg7-proto"/>, and
-    <xref linkend="libXdmcp"/></para>
+    <xref linkend="xorg7-proto"/>,
+    <xref linkend="libXdmcp"/>, and
+    <xref linkend="libxcb"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="ed"/>,
     <xref linkend="fontconfig"/>,
     <xref linkend="xorg7-proto"/>,
-    <xref linkend="libXdmcp"/></para>
+    <xref linkend="libXdmcp"/>,
+    <xref linkend="libxcb"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libxcb"/> (a modern Xlib replacement)
-    and <xref linkend="xmlto"/> with one or more of the following:
-    <xref linkend="fop"/>, <xref linkend="Links"/>, <xref linkend="lynx"/>,
+    <para role="optional"><xref linkend="xmlto"/> with one or more of the
+    following: <xref linkend="fop"/>,
+    <xref linkend="Links"/>,
+    <xref linkend="lynx"/>,
     and <xref linkend="w3m"/> (to generate additional PDF or text
     documentation for the libXfont package).</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libxcb"/> (最近の Xlib に変わるもの),
-    <xref linkend="xmlto"/>、さらに以下のいずれか１つ：
-    <xref linkend="fop"/>, <xref linkend="Links"/>, <xref linkend="lynx"/>,
-    <xref linkend="w3m"/> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)
-    </para>
+    <para role="optional"><xref linkend="xmlto"/>、さらに以下のいずれか１つ：
+    <xref linkend="fop"/>,
+    <xref linkend="Links"/>,
+    <xref linkend="lynx"/>,
+    and <xref linkend="w3m"/> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため).</para>
 @z
 
 @x
@@ -249,32 +252,32 @@
 @z
 
 @x
-        <seg>cxpm, makestrs, sxpm, xft-config</seg>
+        <seg>cxpm, sxpm, xft-config</seg>
         <seg>libdmx.{so,a}, libfontenc.{so,a},
         libFS.{so,a}, libICE.{so,a}, libpciaccess.{so,a}, libSM.{so,a},
         libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
         libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
         libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
-        libXfontcache.{so,a}, libXfont.{so,a}, libXft.{so,a},
-        libXinerama.{so,a}, libXi.{so,a}, libxkbfile.{so,a}, libXmu.{so,a},
-        libXmuu.{so,a}, libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a},
-        libXRes.{so,a}, libXss.{so,a}, libXt.{so,a}, libXtst.{so,a},
-        libXvMC.{so,a}, libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a},
-        libXxf86misc.{so,a}, and libXxf86vm.{so,a}</seg>
+        libXfont.{so,a}, libXft.{so,a}, libXinerama.{so,a}, libXi.{so,a},
+        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a}, libXp.{so,a},
+        libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a}, libXRes.{so,a},
+        libXss.{so,a}, libXt.{so,a}, libXtst.{so,a}, libXvMC.{so,a},
+        libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a}, and
+        libXxf86vm.{so,a}</seg>
         <seg>None</seg>
 @y
-        <seg>cxpm, makestrs, sxpm, xft-config</seg>
+        <seg>cxpm, sxpm, xft-config</seg>
         <seg>libdmx.{so,a}, libfontenc.{so,a},
         libFS.{so,a}, libICE.{so,a}, libpciaccess.{so,a}, libSM.{so,a},
         libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
         libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
         libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
-        libXfontcache.{so,a}, libXfont.{so,a}, libXft.{so,a},
-        libXinerama.{so,a}, libXi.{so,a}, libxkbfile.{so,a}, libXmu.{so,a},
-        libXmuu.{so,a}, libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a},
-        libXRes.{so,a}, libXss.{so,a}, libXt.{so,a}, libXtst.{so,a},
-        libXvMC.{so,a}, libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a},
-        libXxf86misc.{so,a}, libXxf86vm.{so,a}</seg>
+        libXfont.{so,a}, libXft.{so,a}, libXinerama.{so,a}, libXi.{so,a},
+        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a}, libXp.{so,a},
+        libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a}, libXRes.{so,a},
+        libXss.{so,a}, libXt.{so,a}, libXtst.{so,a}, libXvMC.{so,a},
+        libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a},
+        libXxf86vm.{so,a}</seg>
         <seg>なし</seg>
 @z
 

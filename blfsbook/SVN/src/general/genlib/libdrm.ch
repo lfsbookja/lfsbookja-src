@@ -88,10 +88,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libpthread-stubs"/></para>
+    <para role="required"><xref linkend="libpthread-stubs"/> and
+    <xref linkend="libatomic_ops"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="libpthread-stubs"/></para>
+    <para role="required"><xref linkend="libpthread-stubs"/>,
+    <xref linkend="libatomic_ops"/></para>
 @z
 
 @x
@@ -154,11 +156,11 @@
 
 @x
         <seg>None</seg>
-        <seg>libdrm.{so,a} and libdrm_intel.{so,a}</seg>
+        <seg>libdrm.so, libdrm_intel.so, and libdrm_radeon.so</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @y
         <seg>なし</seg>
-        <seg>libdrm.{so,a}, libdrm_intel.{so,a}</seg>
+        <seg>libdrm.so, libdrm_intel.so, libdrm_radeon.so</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @z
 
@@ -169,11 +171,13 @@
 @z
 
 @x libdrm.{so,a}
-          <para>contains the Direct Rendering Module library functions.</para>
+          <para>contains the Direct Rendering Module library functions, and
+          additional vendor specific functions for intel and radeon
+          devices.</para>
 @y
 <para>
-ダイレクトレンダリングモジュール
-(Direct Rendering Module) のライブラリ関数を提供します。
+ダイレクトレンダリングモジュール (Direct Rendering Module)
+のライブラリ関数と、intel や radeon の各ベンダーに固有の追加関数を提供します。
 </para>
 @z
 

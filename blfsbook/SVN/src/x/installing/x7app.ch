@@ -206,27 +206,23 @@ expected をうまく訳せない； どうしたものか・・・
 @z
 
 @x
-        <seg>appres, atobm, bdftopcf, bitmap, bmtoa, dga, iceauth, mkfontdir,
-        mkfontscale,sessreg, setxkbmap, smproxy, startx, twm, x11perf,
-        x11perfcomp, xauth, xclock, xcmsdb, xcursorgen, xdpr, xdpyinfo,
-        xdriinfo, xev, xgamma, xhost, xinit, xkbbell, xkbcomp, xkbevd,
-        xkbvleds, xkbwatch, xkill, xlsatoms, xlsclients,  xmodmap, xpr, xprop,
-        xrandr, xrdb, xrefresh, xset, xsetmode, xsetroot, xvinfo, xwd,
-        xwininfo, and xwud</seg>
+        <seg>bdftopcf, iceauth, mkfontdir,mkfontscale, sessreg, setxkbmap,
+        smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock, xcmsdb,
+        xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost, xinit,
+        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
+        xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
+        xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>None</seg>
-        <seg><envar>$XORG_PREFIX</envar>/lib/X11/xinit and
-        <envar>$XORG_PREFIX</envar>/share/X11/{app-defaults,twm,xkb}</seg>
+        <seg>/etc/X11/app-defaults</seg>
 @y
-        <seg>appres, atobm, bdftopcf, bitmap, bmtoa, dga, iceauth, mkfontdir,
-        mkfontscale,sessreg, setxkbmap, smproxy, startx, twm, x11perf,
-        x11perfcomp, xauth, xclock, xcmsdb, xcursorgen, xdpr, xdpyinfo,
-        xdriinfo, xev, xgamma, xhost, xinit, xkbbell, xkbcomp, xkbevd,
-        xkbvleds, xkbwatch, xkill, xlsatoms, xlsclients,  xmodmap, xpr, xprop,
-        xrandr, xrdb, xrefresh, xset, xsetmode, xsetroot, xvinfo, xwd,
-        xwininfo, xwud</seg>
+        <seg>bdftopcf, iceauth, mkfontdir,mkfontscale, sessreg, setxkbmap,
+        smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock, xcmsdb,
+        xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost, xinit,
+        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
+        xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
+        xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
         <seg>なし</seg>
-        <seg><envar>$XORG_PREFIX</envar>/lib/X11/xinit,
-        <envar>$XORG_PREFIX</envar>/share/X11/{app-defaults,twm,xkb}</seg>
+        <seg>/etc/X11/app-defaults</seg>
 @z
 
 @x

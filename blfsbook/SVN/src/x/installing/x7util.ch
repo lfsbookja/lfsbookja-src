@@ -187,14 +187,12 @@ Xorg ユーティリティをビルドするために、個々のパッケージ
 @z
 
 @x
-        <seg>ccmakedep, cleanlinks, gccmakedep, imake, lndir, makedepend,
-        makeg, mergelib, mkdirhier, mkhtmlindex, revpath, xmkmf</seg>
+        <seg>makedepend</seg>
         <seg>None</seg>
         <seg>The following subdirectories of <envar>$XORG_PREFIX</envar>/:
         bin, lib/X11/config, share/aclocal, and share/man</seg>
 @y
-        <seg>ccmakedep, cleanlinks, gccmakedep, imake, lndir, makedepend,
-        makeg, mergelib, mkdirhier, mkhtmlindex, revpath, xmkmf</seg>
+        <seg>makedepend</seg>
         <seg>なし</seg>
         <seg><envar>$XORG_PREFIX</envar>/ 配下の以下のディレクトリ:
         bin, lib/X11/config, share/aclocal, share/man</seg>

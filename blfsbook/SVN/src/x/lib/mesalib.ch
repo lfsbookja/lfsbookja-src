@@ -92,9 +92,9 @@ OpenGL 動作検証用として推奨されるデモプログラムおよび診�
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mesademos-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&mesademos-download-ftp;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&mesademos-download-ftp;"/></para>
+        <para>ダウンロード (FTP): <ulink url="&mesademos-download-ftp;"/></para>
 @z
 
 @x
@@ -131,12 +131,11 @@ OpenGL 動作検証用として推奨されるデモプログラムおよび診�
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libxcb"/> and
-    <xref linkend="lesstif"/></para>
+    <para role="optional"><xref linkend="lesstif"/> (required to build motif
+    widgets)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libxcb"/>,
-    <xref linkend="lesstif"/></para>
+    <para role="optional"><xref linkend="lesstif"/> (Motif のウィジェット構築に必要)</para>
 @z
 
 @x
@@ -270,12 +269,12 @@ OpenGL 動作検証用として推奨されるデモプログラムおよび診�
 @x
         <seg>glxgears and glxinfo</seg>
         <seg>libEGL.so, libGL.so, libGLU.so, libGLw.so, and *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/lib/modules/dri and
+        <seg><envar>$XORG_PREFIX</envar>/lib/dri and
         <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
 @y
-        <seg>glxgears and glxinfo</seg>
-        <seg>libEGL.so, libGL.so, libGLU.so, libGLw.so, and *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/lib/modules/dri and
+        <seg>glxgears, glxinfo</seg>
+        <seg>libEGL.so, libGL.so, libGLU.so, libGLw.so, *_dri.so</seg>
+        <seg><envar>$XORG_PREFIX</envar>/lib/dri,
         <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
 @z
 

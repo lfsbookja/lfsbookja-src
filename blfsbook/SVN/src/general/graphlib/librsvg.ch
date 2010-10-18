@@ -25,9 +25,11 @@
     manipulate, convert and view Scalable Vector Graphic (SVG) images.</para>
 @y
 <para>
-The <application>librsvg</application> package contains
-<filename class="libraryfile">librsvg</filename> libraries and tools used to
-manipulate, convert and view Scalable Vector Graphic (SVG) images.
+<application>librsvg</application>
+パッケージは <filename class="libraryfile">librsvg</filename>
+ライブラリと関連ツールを提供します。
+これらは、グラフィックイメージフォーマット Scalable Vector Graphic (SVG)
+を取り扱い、フォーマット変換や表示を行います。
 </para>
 @z
 

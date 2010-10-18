@@ -97,15 +97,31 @@
     <xref linkend="xkeyboard-config"/></para>
 @z
 
+% @x
+%     <bridgehead renderas="sect4">Recommended</bridgehead>
+%     <para role="recommended"><xref linkend="hal"/> (required for hotplugging of
+%     input devices), and <xref linkend="mesalib"/> (required for DRI)</para>
+% @y
+%     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+%     <para role="recommended"><xref linkend="hal"/>
+%     (入力デバイスのホットプラグ対応において必要), 
+%     <xref linkend="mesalib"/> (DRI において必要)</para>
+% @z
+
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="hal"/> (required for hotplugging of
-    input devices), and <xref linkend="mesalib"/> (required for DRI)</para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para><xref linkend="dbus"/>,
+    <xref linkend="doxygen"/> (to build API documentation),
+    <xref linkend="gs"/> (to build documentation),
+    <xref linkend="hal"/> (not recommended, disabled by default),
+    <xref linkend="mesalib"/> (required for DRI)</para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="hal"/>
-    (入力デバイスのホットプラグ対応において必要), 
-    <xref linkend="mesalib"/> (DRI において必要)</para>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <para><xref linkend="dbus"/>,
+    <xref linkend="doxygen"/> (to build API documentation),
+    <xref linkend="gs"/> (to build documentation),
+    <xref linkend="hal"/> (not recommended, disabled by default),
+    <xref linkend="mesalib"/> (required for DRI)</para>
 @z
 
 @x
@@ -194,13 +210,13 @@
     <application>Mesa</application>.</para>
 @z
 
-@x
-    <para><option>--disable-config-hal</option>: Disable the use of
-    <application>HAL</application>.</para>
-@y
-    <para><option>--disable-config-hal</option>: Disable the use of
-    <application>HAL</application>.</para>
-@z
+% @x
+%     <para><option>--disable-config-hal</option>: Disable the use of
+%     <application>HAL</application>.</para>
+% @y
+%     <para><option>--disable-config-hal</option>: Disable the use of
+%     <application>HAL</application>.</para>
+% @z
 
 @x
     <para><option>--disable-config-dbus</option>: Disable the use of
