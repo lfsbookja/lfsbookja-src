@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2010-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/autoconf.ch:
+          SVN-20101018, r9401 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-09-23</para>
       <itemizedlist>
         <listitem>

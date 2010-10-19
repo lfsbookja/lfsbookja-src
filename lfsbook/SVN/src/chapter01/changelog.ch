@@ -57,6 +57,64 @@
 @z
 
 @x
+      <para>2010-10-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Bash 4.1 patch level 9. Fixes
+          <ulink url="&lfs-ticket-root;2770">#2770</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Udev-163. Fixes
+          <ulink url="&lfs-ticket-root;2769">#2769</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Man-Pages-3.28. Fixes
+          <ulink url="&lfs-ticket-root;2765">#2765</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.35.7. Fixes
+          <ulink url="&lfs-ticket-root;2764">#2764</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Autoconf-2.68. Fixes
+          <ulink url="&lfs-ticket-root;2763">#2763</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Libtool-2.4. Fixes
+          <ulink url="&lfs-ticket-root;2762">#2762</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-10-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Bash 4.1 パッチレベル 9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2770">#2770</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Udev-163 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2769">#2769</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Man-Pages-3.28 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2765">#2765</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.35.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2764">#2764</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Autoconf-2.68 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2763">#2763</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Libtool-2.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2762">#2762</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-09-22</para>
       <itemizedlist>
         <listitem>

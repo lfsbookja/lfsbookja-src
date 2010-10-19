@@ -28,15 +28,15 @@ Autoconf パッケージは、ソースコードを自動的に設定するシ�
     <title>Autoconf のインストール</title>
 @z
 
-@x
-    <para>Fix an underquoting bug in Autoconf that causes the regeneration of
-    configuration scripts of some packages outside of LFS to fail:</para>
-@y
-<para>
-Autoconf におけるバグを修正します。
-LFS に含まれない特定パッケージにおいて configure スクリプトの再生成が失敗することがあるためです。
-</para>
-@z
+% @x
+%     <para>Fix an underquoting bug in Autoconf that causes the regeneration of
+%     configuration scripts of some packages outside of LFS to fail:</para>
+% @y
+% <para>
+% Autoconf におけるバグを修正します。
+% LFS に含まれない特定パッケージにおいて configure スクリプトの再生成が失敗することがあるためです。
+% </para>
+% @z
 
 @x
     <para>Prepare Autoconf for compilation:</para>
