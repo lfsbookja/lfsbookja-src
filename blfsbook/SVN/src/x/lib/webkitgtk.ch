@@ -142,9 +142,11 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make check</command> (you must be
+    in an xterm or similar to do this, because it launches some windows).</para>
 @y
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make check</command> (you must be
+    in an xterm or similar to do this, because it launches some windows).</para>
 @z
 
 @x
