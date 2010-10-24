@@ -24,8 +24,8 @@
     the X Window System.</para>
 @y
 <para>
-<application>xterm</application> is a terminal emulator for
-the X Window System.
+<application>xterm</application>
+は、X ウィンドウシステムに対する端末エミュレーターです。
 </para>
 @z
 
@@ -93,10 +93,11 @@ the X Window System.
     is installed.</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="luit"/> (required in non-UTF-8 locales
-    if the user wants TrueType fonts, and always required in Chinese, Japanese,
-    and Korean locales). Configuration instructions below assume that Luit
-    is installed.</para>
+    <para role="optional"><xref linkend="luit"/>
+    (UTF-8 でないロケールにて TrueType フォントを使う場合に必要になります。
+    また中国語、日本語、韓国語のロケールでは常時必要となります。)
+    以下に示す設定方法の説明では Luit がインストールされていることを前提としています。
+    </para>
 @z
 
 @x
@@ -154,9 +155,11 @@ the X Window System.
 @y
 <para>
 <command>sed -i ... termcap</command>,
-<command>echo ... >>terminfo</command>: these commands modify the terminal
-description, so that the Backspace key is expected to send the character
-with ASCII code 127, for consistency with the Linux console.</para>
+<command>echo ... >>terminfo</command>:
+このコマンドは端末記述 (terminal description) を修正します。
+これはバックスペースキーが ASCII コードの 127 を送信するようにするもので、
+Linux コンソールとして一貫したものとします。
+</para>
 @z
 
 @x
@@ -206,8 +209,8 @@ in the PATH, the default of
     characters.</para>
 @y
 <para>
-<parameter>--enable-wide-chars</parameter>: Adds support for wide
-characters.
+<parameter>--enable-wide-chars</parameter>:
+ワイド文字 (wide characters) の機能を追加します。
 </para>
 @z
 
@@ -304,6 +307,7 @@ window.
 @x xterm
           <para>is a terminal emulator for the X Window System.</para>
 @y
-          <para>is a terminal emulator for the X Window System.</para>
+<para>
+X ウィンドウシステムに対する端末エミュレーターです。
+</para>
 @z
-

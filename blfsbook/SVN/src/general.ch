@@ -19,7 +19,7 @@
 @y
 <!ENTITY version      "svn-&year;&month;&day;">
 <!ENTITY jversion     "20101024">
-<!ENTITY jratio       "28.1 &percnt;">
+<!ENTITY jratio       "28.5 &percnt;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
 @z
 

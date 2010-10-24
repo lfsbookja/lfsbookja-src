@@ -62,6 +62,121 @@
 @z
 
 @x
+      <para>October 23rd, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Security updates - Poppler-0.14.4 (fixes ticket
+          <ulink url="&blfs-ticket-root;3166">#3166</ulink>),
+          Firefox-3.6.11 / Xulrunner-1.9.2.11 (fixes ticket
+          <ulink url="&blfs-ticket-root;3169">#3169</ulink>)
+	  and Webkitgtk-1.2.5 (fixes ticket
+	  <ulink url="&blfs-ticket-root;3174">#3174</ulink>)
+          with consequential updates to Poppler-data-0.4.3 (fixes ticket
+          <ulink url="&blfs-ticket-root;3106">#3106</ulink>) and
+	  Sqlite-3.7.3 (fixes ticket
+          <ulink url="&blfs-ticket-root;3173">#3173</ulink>).</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to
+          Abiword-2.8.6 (fixes ticket
+          <ulink url="&blfs-ticket-root;2918">#2918</ulink>)
+          Enchant-1.6.0 (fixes ticket
+          <ulink url="&blfs-ticket-root;3155">#3155</ulink>)
+          and added wv-1.2.9.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Security updates - Poppler-0.14.4 (fixes ticket
+          <ulink url="&blfs-ticket-root;3166">#3166</ulink>),
+          Firefox-3.6.11 / Xulrunner-1.9.2.11 (fixes ticket
+          <ulink url="&blfs-ticket-root;3169">#3169</ulink>)
+	  and Webkitgtk-1.2.5 (fixes ticket
+	  <ulink url="&blfs-ticket-root;3174">#3174</ulink>)
+          with consequential updates to Poppler-data-0.4.3 (fixes ticket
+          <ulink url="&blfs-ticket-root;3106">#3106</ulink>) and
+	  Sqlite-3.7.3 (fixes ticket
+          <ulink url="&blfs-ticket-root;3173">#3173</ulink>).</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Abiword-2.8.6 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;2918">#2918</ulink> を Fix に。)
+          Enchant-1.6.0 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;3155">#3155</ulink> を Fix に。)
+          また wv-1.2.9 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 17th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Added libatomic_ops-1.2.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to libdrm-2.4.21.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to libXau-1.0.6.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xkeyboard-config-1.8.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to luit-1.0.5.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to MesaLib-7.8.2.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xorg-server-1.8.2.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to Xorg 7.5-3 release packages.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xterm-262.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - libatomic_ops-1.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libdrm-2.4.21 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libXau-1.0.6 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xkeyboard-config-1.8 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - luit-1.0.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - MesaLib-7.8.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xorg-server-1.8.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Xorg 7.5-3 リリースパッケージへのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xterm-262 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>October 14th, 2010</para>
       <itemizedlist>
         <listitem>
