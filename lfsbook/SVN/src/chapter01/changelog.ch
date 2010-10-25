@@ -57,6 +57,48 @@
 @z
 
 @x
+      <para>2010-10-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Udev-164. Fixes
+          <ulink url="&lfs-ticket-root;2775">#2775</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Man-Pages-3.29. Fixes
+          <ulink url="&lfs-ticket-root;2774">#2774</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.36. Fixes
+          <ulink url="&lfs-ticket-root;2773">#2773</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Coreutils-8.6. Fixes
+          <ulink url="&lfs-ticket-root;2771">#2771</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-10-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Udev-164 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2775">#2775</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Man-Pages-3.29 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2774">#2774</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.36 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2773">#2773</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Coreutils-8.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2771">#2771</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-10-18</para>
       <itemizedlist>
         <listitem>
