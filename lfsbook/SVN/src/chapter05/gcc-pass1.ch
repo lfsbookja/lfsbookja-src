@@ -40,11 +40,15 @@
 @x
     <para>GCC now requires the GMP, MPFR and MPC packages. As these packages may
     not be included in your host distribution, they will be built with
-    GCC:</para>
+    GCC.  Unpack each package into the GCC source directory and rename the
+    resulting directories so the GCC build procedures will automatically
+    use them:</para>
 @y
 <para>
 最近の GCC は GMP、MPFR、MPC の各パッケージを必要とします。
 これらのパッケージはホストシステムに含まれていないかもしれないため、以下を実行してビルドの準備をします。
+個々のパッケージを GCC ソースディレクトリの中に伸張 (解凍) し、ディレクトリ名を変更します。
+これは GCC のビルド処理においてそれらを自動的に利用できるようにするためです。
 </para>
 @z
 

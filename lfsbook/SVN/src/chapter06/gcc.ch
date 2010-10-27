@@ -115,7 +115,7 @@ GCC がサポートする他のプログラム言語の構築方法について�
 
 @x --with-system-zlib
           <para>This switch tells GCC to link to the system installed copy of
-          the Zlib library, rather than its own internl copy.</para>
+          the Zlib library, rather than its own internal copy.</para>
 @y
 <para>
 このオプションはシステムに既にインストールされている Zlib ライブラリをリンクすることを指示するものであり、内部にて作成されるライブラリを用いないようにします。

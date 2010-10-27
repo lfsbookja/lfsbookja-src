@@ -57,6 +57,23 @@
 @z
 
 @x
+      <para>2010-10-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Clarify text in Chapter 5 GCC Pass 1
+          concerning supporting packages.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-10-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] 第5章における GCC 1回めにおいて、追加パッケージに対する説明を明確に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-10-24</para>
       <itemizedlist>
         <listitem>
