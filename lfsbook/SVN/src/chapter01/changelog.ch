@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2010-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Add an example on how to use wget-list.  Fixes
+          <ulink url="&lfs-ticket-root;2778">#2778</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-10-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] wget-list を利用する方法の例を追加。
+          <ulink url="&lfs-ticket-root;2778">#2778</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-10-26</para>
       <itemizedlist>
         <listitem>

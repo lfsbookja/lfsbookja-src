@@ -109,14 +109,21 @@ LFS ビルドを行う全工程において常に利用することが出来ま�
 @x
   <para>An easy way to download all of the packages and patches is by using
   <ulink url="../wget-list">wget-list</ulink> as an input to
-  <command>wget</command>.</para>
+  <command>wget</command>. For example:</para>
 @y
 <para>
 パッケージとパッチのダウンロードを簡単に行う方法として
 <ulink url="../wget-list.txt">wget-list</ulink>
 を利用する方法があります。
-これは <command>wget</command> の入力引数に指定し利用します。
+これは以下のように <command>wget</command> の入力引数に指定し利用します。
 </para>
+@z
+
+@x
+  <screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
+@y
+  <screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
+
 
 <caution>
 <title>日本語訳情報</title>
@@ -139,20 +146,9 @@ MIME 設定 (その制約) によりアクセスが出来ないファイルと�
 <note>
 <title>日本語訳情報</title>
 <para>
-上の <ulink url="../wget-list.txt">wget-list</ulink>
-は、次節に示されているパッケージやパッチのダウンロード URL を一覧列記しています。
-これを <command>wget</command> とともに用いれば、必要なパッケージソースやパッチの一括取得ができるため大変便利です。
-ちなみに LFS ブック原版では <command>wget</command> の具体的な使い方が示されていませんが、単純には以下のようなコマンド実行になるでしょう。
-(<ulink url="../wget-list.txt">wget-list</ulink>
-ファイルを <filename class="directory">$LFS/sources</filename>
-ディレクトリにコピーして実行します。)
-</para>
-
-<screen><userinput remap="wget-wgetlist">cd $LFS/sources
-wget -N -i wget-list</userinput></screen>
-
-<para>
-LFS ブック原版では、それらの URL が主に米国サイトの URL となっています。
+LFS ブック原版では、
+<ulink url="../wget-list.txt">wget-list</ulink>
+内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
 一方、日本に在住する日本の方であれば、例えば GNU のパッケージ類は国内に数多くのミラーサイトが存在するため、そちらから取得するのが適切でしょう。
 これはネットワークリソースを利用する際のマナーとも言えるものです。
 堅苦しい話をするつもりはありません。
@@ -194,4 +190,3 @@ sed -e 's|http://ftp\.gnu\.org/gnu/|http://ftp.riken.jp/GNU/ftp/gnu/|g' \
 </note>
 
 @z
-
