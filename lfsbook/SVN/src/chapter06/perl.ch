@@ -57,7 +57,7 @@ Perl の設定ファイルが <filename>/etc/hosts</filename>
 @x
     <para>To have full control over the way Perl is set up, you can remove the
     <quote>-des</quote> options from the following command and hand-pick the way
-    this package is built. Alteratively, use the command exactly as below to
+    this package is built. Alternatively, use the command exactly as below to
     use the defaults that Perl auto-detects:</para>
 @y
 <para>

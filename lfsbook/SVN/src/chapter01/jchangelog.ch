@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2010-10-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/perl.ch:
+          SVN-20101029, r9410 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-10-29</para>
       <itemizedlist>
         <listitem>
