@@ -28,7 +28,7 @@
 <application>librsvg</application>
 パッケージは <filename class="libraryfile">librsvg</filename>
 ライブラリと関連ツールを提供します。
-これらは、グラフィックイメージフォーマット Scalable Vector Graphic (SVG)
+これらは、グラフィックイメージフォーマット SVG (Scalable Vector Graphic)
 を取り扱い、フォーマット変換や表示を行います。
 </para>
 @z

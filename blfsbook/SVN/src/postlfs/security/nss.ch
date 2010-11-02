@@ -143,26 +143,19 @@ other Internet security standards into an application.
 @z
 
 @x
-    <para>To test the results, you'll need to set the domain name of your
-    system in the <envar>DOMSUF</envar> environment variable. Most of the tests
-    will fail if you don't provide the correct domain name. A self-generated
-    log file will be parsed at the end of the test to display how many tests
-    passed. It should return 800. To run the tests, ensure you change the
-    <command>export DOMSUF</command> command below to an appropriate value,
-    e.g., <parameter>mydomain.com</parameter> and issue the following
-    commands:</para>
+    <para>If you wish to test the results, you'll need to set the domain name of
+    your system in the <envar>DOMSUF</envar> environment variable. Most of the
+    tests will fail if you don't provide the correct domain name. The voluminous
+    output will report how many of the several thousand tests passed, and if any
+    failed.  To review the details of any failures, you may wish to capture
+    stdout and stderr in a file.</para>
 @y
-<para>
-
-To test the results, you'll need to set the domain name of your
-system in the <envar>DOMSUF</envar> environment variable. Most of the tests
-will fail if you don't provide the correct domain name. A self-generated
-log file will be parsed at the end of the test to display how many tests
-passed. It should return 800. To run the tests, ensure you change the
-<command>export DOMSUF</command> command below to an appropriate value,
-e.g., <parameter>mydomain.com</parameter> and issue the following
-commands:
-</para>
+    <para>If you wish to test the results, you'll need to set the domain name of
+    your system in the <envar>DOMSUF</envar> environment variable. Most of the
+    tests will fail if you don't provide the correct domain name. The voluminous
+    output will report how many of the several thousand tests passed, and if any
+    failed.  To review the details of any failures, you may wish to capture
+    stdout and stderr in a file.</para>
 @z
 
 @x

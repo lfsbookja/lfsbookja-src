@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY nspr-time          "less than 0.1 SBU">
-@y
-  <!ENTITY nspr-time          "0.1 SBU 以下">
-@z
-
-@x
     <title>Introduction to NSPR</title>
 @y
     <title>NSPR の概要</title>
@@ -140,12 +134,12 @@
 
 @x
     <para><parameter>--with-mozilla</parameter>: This parameter adds Mozilla
-    supprt to the libraries (required if you want to build any Mozilla
+    support to the libraries (required if you want to build any Mozilla
     products).</para>
 @y
 <para>
 <parameter>--with-mozilla</parameter>:
-このオプションは Mozilla サポート機能を追加します。
+このパラメーターは Mozilla サポート機能を追加します。
 (Mozilla 関連ソフトウェアをビルドする場合に必要です。)
 </para>
 @z
@@ -157,6 +151,19 @@
 <para>
 <parameter>--with-pthreads</parameter>:
 システムにインストールされている pthreads ライブラリを利用することを指定します。
+</para>
+@z
+
+@x
+    <para><parameter>--enable-64bit</parameter>: This parameter is required
+    <emphasis>on an x86_64 system</emphasis> to prevent
+    <command>configure</command> failing with a claim that this is a system
+    without pthread support.</para>
+@y
+<para><parameter>--enable-64bit</parameter>:
+このパラメーターは <emphasis>x86_64 システム上</emphasis> にて必要となります。
+これを指定していない場合、pthread サポートがないものとなって、
+<command>configure</command> が失敗します。
 </para>
 @z
 

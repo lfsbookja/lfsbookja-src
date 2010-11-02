@@ -230,9 +230,11 @@
 @x
         <seg>gsf, gsf-office-thumbnailer (optional), and gsf-vba-dump</seg>
         <seg>libgsf-1.{so,a} and optionally, libgsf-gnome-1.{so,a}</seg>
-        <seg>/usr/include/libgsf-1 and /usr/share/gtk-doc/html/gsf</seg>
+        <seg>/usr/include/libgsf-1 and /usr/share/gtk-doc/html/gsf and
+        optionally, /usr/lib/python&python-majorver;/site-packages/gsf</seg>
 @y
         <seg>gsf, gsf-office-thumbnailer (任意), gsf-vba-dump</seg>
         <seg>libgsf-1.{so,a} また任意インストールにより libgsf-gnome-1.{so,a}</seg>
-        <seg>/usr/include/libgsf-1, /usr/share/gtk-doc/html/gsf</seg>
+        <seg>/usr/include/libgsf-1, /usr/share/gtk-doc/html/gsf,
+        また任意インストールにより /usr/lib/python&python-majorver;/site-packages/gsf</seg>
 @z

@@ -62,6 +62,122 @@
 @z
 
 @x
+      <para>October 31st, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to nasm-2.09 (fixes ticket
+          <ulink url="&blfs-ticket-root;3181">#3181</ulink>)</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Added libvpx-v0.9.5 (fixes ticket
+          <ulink url="&blfs-ticket-root;3154">#3154</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - nasm-2.09 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;3181">#3181</ulink> を Fix に。)</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - libvpx-v0.9.5 の追加。
+          (チケット
+          <ulink url="&blfs-ticket-root;3154">#3154</ulink> を Fix に。)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 28th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to Firefox-3.6.12 / Xulrunner-1.9.2.12.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to libogg-1.2.0 (fixes ticket
+          <ulink url="&blfs-ticket-root;3151">#3151</ulink>)
+          and libvorbis-1.3.1 (fixes ticket
+          <ulink url="&blfs-ticket-root;3152">#3152</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to Firefox-3.6.12 / Xulrunner-1.9.2.12.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to libogg-1.2.0 (fixes ticket
+          <ulink url="&blfs-ticket-root;3151">#3151</ulink>)
+          and libvorbis-1.3.1 (fixes ticket
+          <ulink url="&blfs-ticket-root;3152">#3152</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 26th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to
+          nspr-4.8.6 and nss-3.12.8 (fixes tickets
+          <ulink url="&blfs-ticket-root;3176">#3176 et seq.</ulink>)
+          </para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to Mpg123-1.12.4 (fixes ticket
+          <ulink url="&blfs-ticket-root;2781">#2781</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to
+          nspr-4.8.6 and nss-3.12.8 (fixes tickets
+          <ulink url="&blfs-ticket-root;3176">#3176 et seq.</ulink>)
+          </para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to Mpg123-1.12.4 (fixes ticket
+          <ulink url="&blfs-ticket-root;2781">#2781</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 24th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to
+          Libgsf-1.14.9 (fixes ticket
+          <ulink url="&blfs-ticket-root;3170">#3170</ulink>),
+          Goffice-0.8.10 (fixes ticket
+          <ulink url="&blfs-ticket-root;2479">#2479</ulink>)
+          and Gnumeric-1.10.11 (fixes ticket
+          <ulink url="&blfs-ticket-root;2603">#2603</ulink>)
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/10/24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to
+          Libgsf-1.14.9 (fixes ticket
+          <ulink url="&blfs-ticket-root;3170">#3170</ulink>),
+          Goffice-0.8.10 (fixes ticket
+          <ulink url="&blfs-ticket-root;2479">#2479</ulink>)
+          and Gnumeric-1.10.11 (fixes ticket
+          <ulink url="&blfs-ticket-root;2603">#2603</ulink>)
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>October 23rd, 2010</para>
       <itemizedlist>
         <listitem>

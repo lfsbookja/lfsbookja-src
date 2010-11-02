@@ -24,8 +24,8 @@
     ASCII Art.</para>
 @y
 <para>
-<application>AAlib</application> is a library to render any graphic into
-ASCII Art.
+<application>AAlib</application>
+は、さまざまなグラフィックをアスキーアート (ASCII Art) に変換するライブラリです。
 </para>
 @z
 

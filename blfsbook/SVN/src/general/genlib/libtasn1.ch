@@ -221,8 +221,8 @@ ASN.1 DER デコーダー。
            Distinguish Encoding Rules (DER) manipulation.</para>
 @y
 <para>
-Abstract Syntax Notation One (ASN.1) と
-Distinguish Encoding Rules (DER) を操作するライブラリです。
+ASN.1 (Abstract Syntax Notation One) と
+DER (Distinguish Encoding Rules) を操作するライブラリです。
 </para>
 @z
 

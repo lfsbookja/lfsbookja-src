@@ -182,9 +182,9 @@
         <seg>liblcms.{so,a} and the optional _lcms.{so,a} Python module</seg>
         <seg>/usr/share/doc/lcms-&lcms-version;</seg>
 @y
-        <seg>icc2ps, icclink, icctrans, wtpt and
-        optionally, jpegicc, tiffdiff and tifficc</seg>
-        <seg>liblcms.{so,a} and the optional _lcms.{so,a} Python module</seg>
+        <seg>icc2ps, icclink, icctrans, wtpt,
+        また任意インストールとして jpegicc, tiffdiff, tifficc</seg>
+        <seg>liblcms.{so,a}, また任意インストールとして、Python モジュール _lcms.{so,a}</seg>
         <seg>/usr/share/doc/lcms-&lcms-version;</seg>
 @z
 
@@ -197,9 +197,11 @@
 @x icc2ps
           <para>generates PostScript CRD or CSA from ICC profiles.</para>
 @y
+<!--
+日本語訳註： PostScript CRD CSA について全くの不理解。
+-->
 <para>
-
-generates PostScript CRD or CSA from ICC profiles.
+ICC プロファイルから PostScript CRD または CSA を生成します。
 </para>
 @z
 
@@ -207,8 +209,7 @@ generates PostScript CRD or CSA from ICC profiles.
           <para>links two or more profiles into a single device link profile.</para>
 @y
 <para>
-
-links two or more profiles into a single device link profile.
+複数のプロファイルを、１つのデバイスリンクプロファイルとします。
 </para>
 @z
 
@@ -224,18 +225,22 @@ is a color space conversion calculator.
 @x jpegicc
           <para>is an ICC profile applier for JPEG files.</para>
 @y
+<!--
+日本語訳註： ツール内容不理解。
+-->
 <para>
-
-is an ICC profile applier for JPEG files.
+JPEG ファイルに対しての ICC プロファイル生成。
 </para>
 @z
 
 @x tifficc
           <para>is an ICC profile applier for TIFF files.</para>
 @y
+<!--
+日本語訳註： ツール内容不理解。
+-->
 <para>
-
-is an ICC profile applier for TIFF files.
+TIFF ファイルに対しての ICC プロファイル生成。
 </para>
 @z
 
@@ -266,4 +271,3 @@ is used by the <application>lcms</application> programs as
 well as other programs to provide color management facilities.
 </para>
 @z
-

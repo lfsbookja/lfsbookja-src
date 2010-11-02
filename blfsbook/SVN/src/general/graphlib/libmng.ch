@@ -25,9 +25,10 @@
     (MNG) files which are the animation equivalents to PNG files.</para>
 @y
 <para>
-The <application>libmng</application> libraries are used by
-programs wanting to read and write Multiple-image Network Graphics
-(MNG) files which are the animation equivalents to PNG files.
+<application>libmng</application>
+ライブラリは、MNG (Multiple-image Network Graphics)
+ファイルの入出力を行うプログラムが利用するものです。
+このファイルは PNG ファイルをアニメーション化したものです。
 </para>
 @z
 
@@ -139,17 +140,23 @@ programs wanting to read and write Multiple-image Network Graphics
     autotools shipped with this package. The Linux <filename>Makefile</filename>
     is copied to the root of the source tree, facilitating the installation.</para>
 @y
-    <para><command>cp makefiles/makefile.linux Makefile</command>: There are no
-    autotools shipped with this package. The Linux <filename>Makefile</filename>
-    is copied to the root of the source tree, facilitating the installation.</para>
+<para>
+<command>cp makefiles/makefile.linux Makefile</command>:
+このパッケージには autotools が含まれていません。
+Linux に対する <filename>Makefile</filename>
+をソースツリーのルートからコピーして、インストールに利用します。
+</para>
 @z
 
 @x
     <para><command>install ...</command>: The documentation files are not
     installed by the installation procedure, so they are copied manually.</para>
 @y
-    <para><command>install ...</command>: The documentation files are not
-    installed by the installation procedure, so they are copied manually.</para>
+<para>
+<command>install ...</command>:
+インストール処理において文書ファイルはインストールされません。
+したがって手動によりコピーを行います。
+</para>
 @z
 
 @x
@@ -189,8 +196,8 @@ programs wanting to read and write Multiple-image Network Graphics
           MNG files which are animation files without the patent problems associated
           with certain other formats.</para>
 @y
-          <para>provides functions for programs wishing to read and write
-          MNG files which are animation files without the patent problems associated
-          with certain other formats.</para>
+<para>
+MNG ファイルの入出力を行うプログラムに対して機能を提供します。
+このファイルはアニメーションファイルであり、他のフォーマットに比べると商標権などの問題が一切ありません。
+</para>
 @z
-

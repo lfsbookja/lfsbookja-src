@@ -7,7 +7,8 @@ EXTRA_DIST = alsa-firmware.ch alsa-lib.ch alsa-oss.ch alsa-plugins.ch \
 	libmad.ch libmikmod.ch libmpeg2.ch libmpeg3.ch libmusicbrainz.ch \
 	libogg.ch libquicktime.ch libtheora.ch libvorbis.ch nas.ch \
 	openquicktime.ch sdl.ch speex.ch xine-lib.ch xvid.ch \
-	libcanberra.ch opal.ch telepathy-farsight.ch farsight2.ch
+	libcanberra.ch opal.ch telepathy-farsight.ch farsight2.ch \
+	libvpx.ch
 srcdir = @srcdir@
 srcs = alsa-firmware.xml alsa-lib.xml alsa-oss.xml alsa-plugins.xml \
 	alsa-tools.xml alsa-utils.xml alsa.xml arts.xml audiofile.xml esound.xml \
@@ -17,7 +18,8 @@ srcs = alsa-firmware.xml alsa-lib.xml alsa-oss.xml alsa-plugins.xml \
 	libmad.xml libmikmod.xml libmpeg2.xml libmpeg3.xml libmusicbrainz.xml \
 	libogg.xml libquicktime.xml libtheora.xml libvorbis.xml nas.xml \
 	openquicktime.xml sdl.xml speex.xml xine-lib.xml xvid.xml \
-	libcanberra.xml opal.xml telepathy-farsight.xml farsight2.xml
+	libcanberra.xml opal.xml telepathy-farsight.xml farsight2.xml \
+	libvpx.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -72,4 +74,5 @@ libcanberra.xml: $(BOOKdir)/$@ $(srcdir)/libcanberra.ch
 opal.xml: $(BOOKdir)/$@ $(srcdir)/opal.ch
 telepathy-farsight.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-farsight.ch
 farsight2.xml: $(BOOKdir)/$@ $(srcdir)/farsight2.ch
+libvpx.xml: $(BOOKdir)/$@ $(srcdir)/libvpx.ch
 
