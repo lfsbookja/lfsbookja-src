@@ -119,20 +119,19 @@ discretionary access rights for files and directories.
     system that supports extended attributes. It is also required that
     <application>Coreutils</application> is re-installed after
     <application>acl</application> is installed so that the extra acl bit
-    displays correctly on a ls command. Some failures will occur due to a
-    missing script called sort-getfattr-output which is not part fo the
+    displays correctly on a <command>ls</command> command. Some failures will
+    occur due to a missing script called
+    <filename>sort-getfattr-output</filename> which is not part of the
     tarball.</para>
 @y
-<para>
-
-For meaningful results, the tests need to be carried out on a file
-system that supports extended attributes. It is also required that
-<application>Coreutils</application> is re-installed after
-<application>acl</application> is installed so that the extra acl bit
-displays correctly on a ls command. Some failures will occur due to a
-missing script called sort-getfattr-output which is not part fo the
-tarball.
-</para>
+    <para>For meaningful results, the tests need to be carried out on a file
+    system that supports extended attributes. It is also required that
+    <application>Coreutils</application> is re-installed after
+    <application>acl</application> is installed so that the extra acl bit
+    displays correctly on a <command>ls</command> command. Some failures will
+    occur due to a missing script called
+    <filename>sort-getfattr-output</filename> which is not part of the
+    tarball.</para>
 @z
 
 @x
@@ -179,20 +178,30 @@ following to execute all three:
 
 @x
     <para><command>sed -i ... include/builddefs.in</command>: This command
-    changes the documentation directory to a versioned directory.</para>
+    changes the documentation directory to a versioned directory and provides
+    for a DESTDIR installation.</para>
 @y
 <para>
 <command>sed -i ... include/builddefs.in</command>: This command
-changes the documentation directory to a versioned directory.
+changes the documentation directory to a versioned directory and provides
+for a DESTDIR installation.
 </para>
 @z
 
 @x
-    <title>Configuring attr</title>
+    <para><command>chmod ...</command>: This command modifies the permissions
+    of installed library files to standards.</para>
+@y
+    <para><command>chmod ...</command>: This command modifies the permissions
+    of installed library files to standards.</para>
+@z
+
+@x
+    <title>Configuring acl</title>
     <sect3><title>Configuration Information</title>
 @y
-    <title>attr の設定</title>
-    <sect3><title>設定ファイル</title>
+    <title>acl の設定</title>
+    <sect3><title>&j-ConfigInfo;</title>
 @z
 
 @x
@@ -210,13 +219,12 @@ needs to support access control lists.
 
 @x
       <para>One way to achieve this is to add the acl option to an ext3
-      filesystem in the /etc/fstab file as shown below.</para>
+      filesystem in the <filename>/etc/fstab</filename> file as shown
+      below:</para>
 @y
-<para>
-
-One way to achieve this is to add the acl option to an ext3
-filesystem in the /etc/fstab file as shown below.
-</para>
+      <para>One way to achieve this is to add the acl option to an ext3
+      filesystem in the <filename>/etc/fstab</filename> file as shown
+      below:</para>
 @z
 
 @x

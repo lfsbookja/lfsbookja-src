@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-time          "0.4 SBU (additional 0.8 SBU to run the test suite)">
+  <!ENTITY libgcrypt-time          "0.5 SBU (additional 0.5 SBU to run the test suite)">
 @y
-  <!ENTITY libgcrypt-time          "0.4 SBU (テストスイートを実行する場合、さらに 0.8 SBU を追加)">
+  <!ENTITY libgcrypt-time          "0.5 SBU (テストスイートを実行する場合、さらに 0.5 SBU を追加)">
 @z
 
 @x

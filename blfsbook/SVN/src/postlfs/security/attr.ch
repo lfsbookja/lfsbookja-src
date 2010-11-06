@@ -100,16 +100,18 @@
     <command>make tests root-tests ext-tests</command>.  For meaningful results,
     the tests need to be carried out on a file system that supports extended
     attributes. Some failures will occur due to a missing script called
-    sort-getfattr-output which is not part of the tarball.</para>
+    <filename>sort-getfattr-output</filename> which is not part of the
+    tarball.</para>
 @y
 <para>
 このパッケージには３つのテストがあります。
 <command>make tests root-tests ext-tests</command>
 と入力すれば、それらをすべて実行できます。
-.  For meaningful results,
+For meaningful results,
 the tests need to be carried out on a file system that supports extended
 attributes. Some failures will occur due to a missing script called
-sort-getfattr-output which is not part of the tarball.
+<filename>sort-getfattr-output</filename> which is not part of the
+tarball.
 </para>
 @z
 
@@ -142,10 +144,12 @@ sort-getfattr-output which is not part of the tarball.
 
 @x
       <para>One way to achieve this is to add the user_xattr option to an ext3
-      filesystem in the /etc/fstab file as shown below.</para>
+      filesystem in the <filename>/etc/fstab</filename> file as shown
+      below:</para>
 @y
       <para>One way to achieve this is to add the user_xattr option to an ext3
-      filesystem in the /etc/fstab file as shown below.</para>
+      filesystem in the <filename>/etc/fstab</filename> file as shown
+      below:</para>
 @z
 
 @x

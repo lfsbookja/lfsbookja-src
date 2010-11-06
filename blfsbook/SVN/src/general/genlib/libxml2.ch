@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxml2-buildsize     "113 MB (additional 19 MB to run the full test suite)">
-  <!ENTITY libxml2-time          "1.2 SBU (additional 0.3 SBU to run the full test suite)">
+  <!ENTITY libxml2-buildsize     "104 MB (additional 25 MB to run the full test suite)">
+  <!ENTITY libxml2-time          "1.1 SBU (additional 0.2 SBU to run the full test suite)">
 @y
-  <!ENTITY libxml2-buildsize     "113 MB (テストスイートをすべて実施するなら、さらに 19 MB)">
-  <!ENTITY libxml2-time          "1.2 SBU (テストスイートをすべて実施するなら、さらに 0.3 SBU)">
+  <!ENTITY libxml2-buildsize     "104 MB (テストスイートをすべて実施するなら、さらに 25 MB)">
+  <!ENTITY libxml2-time          "1.1 SBU (テストスイートをすべて実施するなら、さらに 0.2 SBU)">
 @z
 
 @x
@@ -174,9 +174,18 @@ XML ファイルの処理に用いられます。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make check</command>. If you have
+    installed <application>Python</application> this will conclude by reporting
+    a failure in the regression tests.  The extended testsuite runs near the end
+    of the tests, it will report a count of errors, and then report how many are
+    expected.</para>
 @y
-    <para>コンパイル結果をテストする場合は <command>make check</command> を実行します。</para>
+<para>
+コンパイル結果をテストする場合は <command>make check</command> を実行します。
+<application>Python</application>
+をインストールしている場合、縮退テスト (regression tests) に失敗します。
+テスト処理の終盤にて追加のテストスイートが実行されて、エラー数と残テスト数が表示されます。
+</para>
 @z
 
 @x
