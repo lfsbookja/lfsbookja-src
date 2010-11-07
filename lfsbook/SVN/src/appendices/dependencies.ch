@@ -52,7 +52,7 @@ LFS においてパッケージを構築する順番は非常に重要なもの�
   types of dependencies.  The first lists what other packages need to be
   available in order to compile and install the package in question. The second
   lists what packages, in addition to those on the first list, need to be
-  available in order to run the testsuites. The third list of dependencies are
+  available in order to run the test suites. The third list of dependencies are
   packages that require this package to be built and installed in its final
   location before they are built and installed. In most cases, this is because
   these packages will hardcode paths to binaries within their scripts. If not
@@ -192,7 +192,7 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
           <seg>Flex, Kbd, Tar</seg>
 @z
 @x
-          <seg>Doxygen (testsuite)</seg>
+          <seg>Doxygen (test suite)</seg>
 @y
           <seg>Doxygen (テストスイート用)</seg>
 @z
@@ -240,7 +240,7 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
           <seg>Bash, Diffutils, Findutils, Man-DB, Udev</seg>
 @z
 @x
-          <seg>Perl Expect and IO:Tty modules (for testsuite)</seg>
+          <seg>Perl Expect and IO:Tty modules (for test suite)</seg>
 @y
           <seg>Perl Expect と IO:Tty モジュール (テストスイート用)</seg>
 @z
@@ -252,7 +252,7 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
          <seg>Bash, Coreutils, Diffutils, GCC, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -348,7 +348,7 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
           Make, Sed, Zlib</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -597,7 +597,7 @@ Typo ですが日本語訳には影響ありません。
          Patch, Sed, Texinfo</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -662,7 +662,7 @@ Typo ですが日本語訳には影響ありません。
          <seg>Coreutils, Gawk, Make</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -686,7 +686,7 @@ Typo ですが日本語訳には影響ありません。
          Patch, Sed, Texinfo, Zlib</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -710,7 +710,7 @@ Typo ですが日本語訳には影響ありません。
          Linux API ヘッダ</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -734,7 +734,7 @@ Typo ですが日本語訳には影響ありません。
          Gzip, Make, Patch, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -758,7 +758,7 @@ Typo ですが日本語訳には影響ありません。
          Ncurses, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -801,7 +801,7 @@ Typo ですが日本語訳には影響ありません。
          Gzip, Make, Module-Init-Tools, Ncurses, Perl, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -873,7 +873,7 @@ Typo ですが日本語訳には影響ありません。
          Glibc, Grep, Groff, Gzip, Less, Make, Sed</seg>
 @z
 @x
-          <seg>Not run. Requires Man-DB testsuite package</seg>
+          <seg>Not run. Requires Man-DB test suite package</seg>
 @y
           <seg>動かすためには Man-DB テストスイートパッケージが必要</seg>
 @z
@@ -895,7 +895,7 @@ Typo ですが日本語訳には影響ありません。
          <seg>Bash, Coreutils, Make</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -991,7 +991,7 @@ Typo ですが日本語訳には影響ありません。
          Make, Patch, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1015,7 +1015,7 @@ Typo ですが日本語訳には影響ありません。
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1085,7 +1085,7 @@ Typo ですが日本語訳には影響ありません。
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1109,7 +1109,7 @@ Typo ですが日本語訳には影響ありません。
          Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1133,7 +1133,7 @@ Typo ですが日本語訳には影響ありません。
          Patch, Sed, Texinfo</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1176,7 +1176,7 @@ Typo ですが日本語訳には影響ありません。
          Gettext, Glibc, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1198,7 +1198,7 @@ Typo ですが日本語訳には影響ありません。
          <seg>Binutils, Coreutils, GCC, Glibc, Make, Patch</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1220,7 +1220,7 @@ Typo ですが日本語訳には影響ありません。
          <seg>Binutils, Coreutils, GCC, Glibc, Make, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1316,7 +1316,7 @@ Typo ですが日本語訳には影響ありません。
          Make, Sed</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z
@@ -1340,7 +1340,7 @@ Typo ですが日本語訳には影響ありません。
          Gettext, Glibc, Grep, Make, Ncurses, Sed, Zlib</seg>
 @z
 @x
-          <seg>No testsuite available</seg>
+          <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
 @z

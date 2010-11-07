@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2010-11-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/appendices/dependencies.ch:
+          更新誤りを訂正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-10-30</para>
       <itemizedlist>
         <listitem>
