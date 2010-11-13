@@ -118,9 +118,9 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>コンパイル結果をテストするには以下を実行します。</para>
 @z
 
 @x

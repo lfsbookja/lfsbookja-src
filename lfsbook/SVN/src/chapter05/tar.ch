@@ -32,14 +32,6 @@
 @z
 
 @x
-    <para>First fix a bug that was inserted into the latest code release:</para>
-@y
-<para>
-最新ソースにて発生するバグを修正します。
-</para>
-@z
-
-@x
     <para>Prepare Tar for compilation:</para>
 @y
     <para>Tar をコンパイルするための準備をします。</para>

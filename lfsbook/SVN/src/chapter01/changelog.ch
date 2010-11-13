@@ -57,6 +57,56 @@
 @z
 
 @x
+      <para>2010-11-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Add security fixes for Glibc. Fixes
+          <ulink url="&lfs-ticket-root;2790">#2790</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Man-Pages-3.30. Fixes
+          <ulink url="&lfs-ticket-root;2788">#2788</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Mention Inetutils' testsuite, and also install its
+          HTML documentation.  Fixes
+          <ulink url="&lfs-ticket-root;2784">#2784</ulink> and
+          <ulink url="&lfs-ticket-root;2785">#2785</ulink></para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Tar-1.25, and also install its HTML
+          documentation. Fixes
+          <ulink url="&lfs-ticket-root;2777">#2777</ulink> and
+          <ulink url="&lfs-ticket-root;2786">#2786</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-11-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Glibc にセキュリティフィックスを追加。
+          <ulink url="&lfs-ticket-root;2790">#2790</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Man-Pages-3.30 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2788">#2788</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Inetutils にてテストスイートを追加。
+          また HTML ドキュメントをインストールすることに。
+          <ulink url="&lfs-ticket-root;2784">#2784</ulink> と
+          <ulink url="&lfs-ticket-root;2785">#2785</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Tar-1.25 へのアップグレード。
+          また HTML ドキュメントをインストールすることに。
+          <ulink url="&lfs-ticket-root;2777">#2777</ulink> と
+          <ulink url="&lfs-ticket-root;2786">#2786</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-10-27</para>
       <itemizedlist>
         <listitem>

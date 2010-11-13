@@ -54,6 +54,20 @@
 -->
 
     <listitem>
+      <para>2010-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/chapter05/tar.ch,
+          src/chapter06/{glibc.ch,inetutils.ch,tar.ch}:
+          SVN-20101110, r9415 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-11-06</para>
       <itemizedlist>
         <listitem>

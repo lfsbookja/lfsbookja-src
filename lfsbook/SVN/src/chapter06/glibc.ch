@@ -72,24 +72,6 @@ Glibc は自らによってビルドされるものであり、そうして完�
 </para>
 @z
 
-% @x
-%     <para>The glibc-libidn tarball adds support for internationalized domain
-%     names (IDN) to Glibc. Many programs that support IDN require the full
-%     <filename class="libraryfile">libidn</filename> library, not this add-on (see
-%     <ulink url="&blfs-root;view/svn/general/libidn.html"/>).
-%     Unpack the tarball from within the Glibc source directory:</para>
-% @y
-% <para>
-% glibc-libidn という tarball は国際化ドメイン名 (Internationalized Domain Names; IDN)
-% へのサポートを加えるものです。
-% ただし IDN に対応するプログラムはたいていは 純粋な
-% <filename class="libraryfile">libidn</filename>
-% ライブラリを利用しており、ここで加える tarball を用いているわけではありません。
-% (詳しくは <ulink url="&blfs-root;view/svn/general/libidn.html"/> を参照してください。)
-% tarball を Glibc のソースディレクトリにて解凍します。
-% </para>
-% @z
-
 @x
     <para>When running <command>make install</command>, a script called
     <filename>test-installation.pl</filename> performs a small sanity test on
@@ -142,6 +124,14 @@ Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修�
 @y
 <para>
 Make の バージョンが 3.81 より最新では Glibc がビルドできないバグを修正します。
+</para>
+@z
+
+@x
+    <para>Apply 2 patches that fix security vulnerabilities in this version of Glibc:</para>
+@y
+<para>
+２つのパッチを適用します。Glibc の現行バージョンにおけるセキュリティ脆弱性を解消します。
 </para>
 @z
 

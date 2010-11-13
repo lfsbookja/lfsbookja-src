@@ -170,6 +170,20 @@
 @z
 
 @x
+      <term>Glibc LD Audit Patch - <token>&glibc-ldaudit-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-ldaudit-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-ldaudit-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc LD Audit Patch - <token>&glibc-ldaudit-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&glibc-ldaudit-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-ldaudit-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Glibc Makefile Fix Patch - <token>&glibc-makefile_fix-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&glibc-makefile_fix-patch;"/></para>
@@ -180,6 +194,20 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&glibc-makefile_fix-patch;"/></para>
         <para>MD5 sum: <literal>&glibc-makefile_fix-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Glibc Origin Patch - <token>&glibc-origin-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-origin-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-origin-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc Origin Patch - <token>&glibc-origin-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&glibc-origin-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-origin-patch-md5;</literal></para>
       </listitem>
 @z
 
@@ -318,20 +346,6 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&procps-watch-patch;"/></para>
         <para>MD5 sum: <literal>&procps-watch-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Tar Overflow Patch - <token>&tar-overflow-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&tar-overflow-patch;"/></para>
-        <para>MD5 sum: <literal>&tar-overflow-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Tar Overflow Patch - <token>&tar-overflow-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&tar-overflow-patch;"/></para>
-        <para>MD5 sum: <literal>&tar-overflow-patch-md5;</literal></para>
       </listitem>
 @z
 

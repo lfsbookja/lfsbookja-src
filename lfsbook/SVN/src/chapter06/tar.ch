@@ -26,27 +26,30 @@
 @z
 
 @x
-    <para>Again, fix a bug that was inserted into the latest code release:</para>
-@y
-<para>
-最新ソースにて発生するバグを修正します。
-</para>
-@z
-
-@x
-    <para>Also, fix a bug that causes a buffer overflow when creating a new
-    tar file.  This fix is needed when building with gcc-4.5 and later.</para>
-@y
-<para>
-新たな tar ファイルを生成する際に、バッファオーバーフローが発生するバグを修正します。
-この修正は gcc-4.5 以上においてパッケージをビルドする際に必要となります。
-</para>
-@z
-
-@x
     <para>Prepare Tar for compilation:</para>
 @y
     <para>Tar をコンパイルするための準備をします。</para>
+@z
+
+@x
+      <title>The meaning of the configure options:</title>
+@y
+      <title>configure オプションの意味</title>
+@z
+
+@x FORCE_UNSAFE_CONFIGURE=1
+          <para>This forces the test for <function>mknod</function> to be run
+          as root.  It is generally considered dangerous to run this test as
+          the root user, but as it is being run on an only partially built
+          system, overriding it is OK.</para>
+@y
+<!--
+日本語訳註： override の真の意味がよく分からない..
+-->
+<para>
+このオプションは、<function>mknod</function> に対するテストを root ユーザーにて実行するようにします。
+一般にこのテストを root ユーザーで実行することは危険なこととされますが、ここでは部分的にビルドしたシステムでテストするものであるため、オーバーライドすることで支障はありません。
+</para>
 @z
 
 @x
