@@ -62,6 +62,93 @@
 @z
 
 @x
+      <para>November 4th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Modified the attr instructions to support a DESTDIR
+          installation, changed the method of creating a versioned
+          documentation directory, and modified permissions of installed
+          library files to standards.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to libxml2-2.7.7 (fixes ticket
+          <ulink url="&blfs-ticket-root;3081">#3081</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Modified the attr instructions to support a DESTDIR
+          installation, changed the method of creating a versioned
+          documentation directory, and modified permissions of installed
+          library files to standards.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - libxml2-2.7.7 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;3081">#3081</ulink> を Fix に。)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 3rd, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Marked a few more old packages that build with LFS-6.7.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - これまでのパッケージにて、LFS-6.7 によりビルドできる旨を追記。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 2nd, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to CrackLib-2.8.18.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to Linux-PAM-1.1.3.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to ffmpeg-0.6.1 (fixes ticket
+          <ulink url="&blfs-ticket-root;2681">#2681</ulink>)</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to xine-lib-1.1.19 (fixes ticket
+          <ulink url="&blfs-ticket-root;2825">#2825</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - CrackLib-2.8.18 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Linux-PAM-1.1.3 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - ffmpeg-0.6.1 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;2681">#2681</ulink> を Fix に。)</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - xine-lib-1.1.19 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;2825">#2825</ulink> を Fix に。)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>October 31st, 2010</para>
       <itemizedlist>
         <listitem>

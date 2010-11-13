@@ -82,8 +82,8 @@ W3C compliant and compatible with most browsers.
     by the maintainers. To build from source, the
     <application>HTML Tidy</application> developers recommend using current
     CVS. The source tarball shown above was created by the BLFS team by pulling
-    a CVS version and generating the autotool components. BLFS made no changes
-    to the existing source files.</para>
+    a CVS version, then generating the autotool components and documentation.
+    BLFS made no changes to the existing source files.</para>
 @y
 <para>
 <application>HTML Tidy</application> 
@@ -91,7 +91,7 @@ W3C compliant and compatible with most browsers.
 ソースからのビルドを行う場合 <application>HTML Tidy</application>
 の開発者は、CVS からソース入手することを推奨しています。
 上に示しているソースの tarball は BLFS チームが
-CVS からソース入手し、かつ autotools のスクリプト類を生成した上で作り出したものです。
+CVS からソース入手し、かつ autotools のスクリプト類とドキュメントを生成した上で作り出したものです。
 既存のソースファイルに対しては何ら変更は加えていません。
 </para>
 @z

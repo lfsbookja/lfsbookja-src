@@ -257,11 +257,11 @@ OpenGL 動作検証用として推奨されるデモプログラムおよび診�
 @z
 
 @x
-      <segtitle>Installed Programs (optional)</segtitle>
+      <segtitle>Optionally Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms; (任意ビルド時)</segtitle>
+      <segtitle>任意ビルド時の&j-InstalledPrograms;</segtitle>
       <segtitle>&j-InstalledLibraries;</segtitle>
       <segtitle>&j-InstalledDirectories;</segtitle>
 @z
@@ -269,12 +269,14 @@ OpenGL 動作検証用として推奨されるデモプログラムおよび診�
 @x
         <seg>glxgears and glxinfo</seg>
         <seg>libEGL.so, libGL.so, libGLU.so, libGLw.so, and *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/lib/dri and
+        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,KHR},
+        <envar>$XORG_PREFIX</envar>/lib/{dri,egl}, and
         <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
 @y
         <seg>glxgears, glxinfo</seg>
         <seg>libEGL.so, libGL.so, libGLU.so, libGLw.so, *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/lib/dri,
+        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,KHR},
+        <envar>$XORG_PREFIX</envar>/lib/{dri,egl},
         <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
 @z
 

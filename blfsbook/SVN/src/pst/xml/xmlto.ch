@@ -140,7 +140,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Director(y,ies)</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
       <segtitle>&j-InstalledLibraries;</segtitle>
@@ -150,11 +150,11 @@
 @x
         <seg>xmlif and xmlto</seg>
         <seg>None</seg>
-        <seg>/usr/share/xmlto/format/{docbook,fo,xhtml1}</seg>
+        <seg>/usr/share/xmlto</seg>
 @y
         <seg>xmlif, xmlto</seg>
         <seg>なし</seg>
-        <seg>/usr/share/xmlto/format/{docbook,fo,xhtml1}</seg>
+        <seg>/usr/share/xmlto</seg>
 @z
 
 @x
