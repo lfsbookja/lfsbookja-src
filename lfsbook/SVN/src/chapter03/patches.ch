@@ -114,20 +114,6 @@
 @z
 
 @x
-      <term>Expect Tk Configure Patch - <token>&expect-tk-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&expect-tk-patch;"/></para>
-        <para>MD5 sum: <literal>&expect-tk-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Expect Tk Configure Patch - <token>&expect-tk-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&expect-tk-patch;"/></para>
-        <para>MD5 sum: <literal>&expect-tk-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Flex GCC-4.4.x Patch - <token>&flex-gcc-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&flex-gcc-patch;"/></para>

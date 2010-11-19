@@ -57,6 +57,40 @@
 @z
 
 @x
+      <para>2010-11-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Man-Pages-3.31. Fixes
+          <ulink url="&lfs-ticket-root;2794">#2794</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Coreutils-8.7. Fixes
+          <ulink url="&lfs-ticket-root;2792">#2792</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Expect-5.45. Fixes
+          <ulink url="&lfs-ticket-root;2791">#2791</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-11-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Man-Pages-3.31 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2794">#2794</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Coreutils-8.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2792">#2792</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Expect-5.45 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2791">#2791</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-11-10</para>
       <itemizedlist>
         <listitem>

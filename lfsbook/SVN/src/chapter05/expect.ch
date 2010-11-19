@@ -29,19 +29,7 @@ Expect パッケージは、他のプログラムと対話的に処理を行う�
 @z
 
 @x
-    <para>First, apply a patch to remove the dependency on Tk, that may be
-    present on the host but will not be available once we enter the
-    <command>chroot</command> environment:</para>
-@y
-<para>
-Tk への依存性をなくすためのパッチを適用します。
-Tk はホストシステム上に存在するかもしれませんが、<command>chroot</command>
-環境に入った後には利用できなくなります。
-</para>
-@z
-
-@x
-    <para>Next, force Expect's configure script to use <filename>/bin/stty</filename>
+    <para>First, force Expect's configure script to use <filename>/bin/stty</filename>
     instead of a <filename>/usr/local/bin/stty</filename> it may find on the host system.
     This will ensure that our test suite tools remain sane for the final builds of our
     toolchain:</para>
@@ -86,18 +74,6 @@ Tcl のインストールモジュールを、ホストシステムに存在し�
 <para>
 Tcl の内部ヘッダファイルを探し出す場所を指定します。
 <command>configure</command> は自動的には Tcl ヘッダファイルの場所を探し出さないため、これを明示します。
-</para>
-@z
-
-@x
-          <para>This tells the configure script not to search for Tk (the
-          Tcl GUI component) or the X Window System libraries, both of which
-          may reside on the host system but will not exist in the temporary
-          environment.</para>
-@y
-<para>
-Tk (Tcl の GUI コンポーネント) や X ウィンドウシステムライブラリを検索しないことを指示します。
-いずれもホストシステムに存在するかもしれませんが、 今作り出す一時システムには存在しません。
 </para>
 @z
 

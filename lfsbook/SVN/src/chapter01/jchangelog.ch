@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2010-11-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/chapter05/expect.ch:
+          SVN-20101118, r9420 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-11-13</para>
       <itemizedlist>
         <listitem>
