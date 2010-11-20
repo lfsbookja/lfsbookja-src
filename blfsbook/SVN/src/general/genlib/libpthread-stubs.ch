@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libpthread-stubs-time          "less than 0.1 SBU">
+@y
+  <!ENTITY libpthread-stubs-time          "0.1 SBU 以下">
+@z
+
+@x
     <title>Introduction to libpthread-stubs</title>
 @y
     <title>libpthread-stubs の概要</title>

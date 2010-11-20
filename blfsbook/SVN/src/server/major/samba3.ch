@@ -252,21 +252,17 @@ amongst other things provides LAN browsing support).
     and <filename class='libraryfile'>pam_smbpass.so</filename>
     <application>PAM</application> modules. You can find
     instructions on how to configure and use the
-    <filename class='libraryfile'>pam_winbind.so</filename>module by running
+    <filename class='libraryfile'>pam_winbind.so</filename> module by running
     <command>man winbindd</command>.</para>
 @y
-<para>
-<option>--with-pam</option>:
-
-Use this parameter to link
-<application>Linux-PAM</application> into the build. This
-also builds the <filename class='libraryfile'>pam_winbind.so</filename>
-and <filename class='libraryfile'>pam_smbpass.so</filename>
-<application>PAM</application> modules. You can find
-instructions on how to configure and use the
-<filename class='libraryfile'>pam_winbind.so</filename>module by running
-<command>man winbindd</command>.
-</para>
+    <para><option>--with-pam</option>: Use this parameter to link
+    <application>Linux-PAM</application> into the build. This
+    also builds the <filename class='libraryfile'>pam_winbind.so</filename>
+    and <filename class='libraryfile'>pam_smbpass.so</filename>
+    <application>PAM</application> modules. You can find
+    instructions on how to configure and use the
+    <filename class='libraryfile'>pam_winbind.so</filename> module by running
+    <command>man winbindd</command>.</para>
 @z
 
 @x

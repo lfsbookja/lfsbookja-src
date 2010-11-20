@@ -96,6 +96,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="openldap"/>,
+    <xref linkend="openssl"/> (also used in the bundled APR-util),
     <xref linkend="pcre"/>,
     <xref linkend="rsync"/>,
     <xref linkend="lynx"/>,
@@ -105,6 +106,7 @@
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="openldap"/>,
+    <xref linkend="openssl"/> (バンドルされている APR-util でも利用),
     <xref linkend="pcre"/>,
     <xref linkend="rsync"/>,
     <xref linkend="lynx"/>,
@@ -117,24 +119,28 @@
     <bridgehead renderas="sect4">Optional (Only if Using the Bundled
     APR-util)</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="openssl"/>,
     <xref linkend="expat"/>,
     <!-- <xref linkend="gdbm"/>, -->
     <xref linkend="db"/>,
     <xref linkend="unixodbc"/>,
-    <xref linkend="postgresql"/>, and
-    <xref linkend="sqlite"/></para>
+    <xref linkend="mysql"/>,
+    <xref linkend="postgresql"/>,
+    <xref linkend="sqlite"/>,
+    <ulink url="http://www.oracle.com/us/products/database/index.html">Oracle 11g</ulink>, and
+    <ulink url="http://www.freetds.org/">FreeTDS</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;
     (バンドルされている APR-util を利用する場合にのみ)</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="openssl"/>,
     <xref linkend="expat"/>,
     <!-- <xref linkend="gdbm"/>, -->
     <xref linkend="db"/>,
     <xref linkend="unixodbc"/>,
-    <xref linkend="postgresql"/>, and
-    <xref linkend="sqlite"/></para>
+    <xref linkend="mysql"/>,
+    <xref linkend="postgresql"/>,
+    <xref linkend="sqlite"/>,
+    <ulink url="http://www.oracle.com/us/products/database/index.html">Oracle 11g</ulink>,
+    <ulink url="http://www.freetds.org/">FreeTDS</ulink></para>
 @z
 
 @x
@@ -218,25 +224,22 @@ to be configured without errors. Apply the patch:
       <para>You may wish to review the output from
       <command>./configure --help</command> and include whatever parameters
       are necessary to the <command>configure</command> command below to build
-      the modules required for your installation. There are as many as 62
+      the modules required for your installation. There are as many as 65
       additional parameters you can add to the <command>configure</command>
       command to build additional modules. Some of the extra parameters which
       aren't described or mentioned in the <parameter>--help</parameter>
       information are listed in the <quote>Command Explanations</quote> section
       below.</para>
 @y
-<para>
-
-You may wish to review the output from
-<command>./configure --help</command> and include whatever parameters
-are necessary to the <command>configure</command> command below to build
-the modules required for your installation. There are as many as 62
-additional parameters you can add to the <command>configure</command>
-command to build additional modules. Some of the extra parameters which
-aren't described or mentioned in the <parameter>--help</parameter>
-information are listed in the <quote>Command Explanations</quote> section
-below.
-</para>
+      <para>You may wish to review the output from
+      <command>./configure --help</command> and include whatever parameters
+      are necessary to the <command>configure</command> command below to build
+      the modules required for your installation. There are as many as 65
+      additional parameters you can add to the <command>configure</command>
+      command to build additional modules. Some of the extra parameters which
+      aren't described or mentioned in the <parameter>--help</parameter>
+      information are listed in the <quote>Command Explanations</quote> section
+      below.</para>
 @z
 
 @x
@@ -260,19 +263,18 @@ below.
 
 @x
       <para>While it is not built by default when using the following commands,
-      the ISAPI DSO module can be created by adding the <option>--enable-isapi</option>
-      option. Even the module will compile, install and load fine, the module is 
+      the ISAPI DSO module can be created by adding the
+      <option>--enable-isapi</option> option. Even though the module will
+      compile, install and load fine, the module is
       <emphasis>only</emphasis> supported and functional in Win32
       environments.</para>
 @y
-<para>
-
-While it is not built by default when using the following commands,
-the ISAPI DSO module can be created by adding the <option>--enable-isapi</option>
-option. Even the module will compile, install and load fine, the module is 
-<emphasis>only</emphasis> supported and functional in Win32
-environments.
-</para>
+      <para>While it is not built by default when using the following commands,
+      the ISAPI DSO module can be created by adding the
+      <option>--enable-isapi</option> option. Even though the module will
+      compile, install and load fine, the module is
+      <emphasis>only</emphasis> supported and functional in Win32
+      environments.</para>
 @z
 
 @x
@@ -326,15 +328,15 @@ server using the run-time configuration directives.</para>
     to create the <filename class="libraryfile">mod_ssl</filename>
     module and enable SSL support. This parameter is mentioned as one of many
     parameters which can be passed to the <command>configure</command> command
-    to create additional DSO modules. Note that it really only affects the
-    APR-Util sub-package, which the HTTPD installation then uses.</para>
+    to create additional DSO modules.<!-- Note that it really only affects the
+    APR-Util sub-package, which the HTTPD installation then uses.--></para>
 @y
     <para><option>--enable-ssl</option>: Use this parameter
     to create the <filename class="libraryfile">mod_ssl</filename>
     module and enable SSL support. This parameter is mentioned as one of many
     parameters which can be passed to the <command>configure</command> command
-    to create additional DSO modules. Note that it really only affects the
-    APR-Util sub-package, which the HTTPD installation then uses.</para>
+    to create additional DSO modules.<!-- Note that it really only affects the
+    APR-Util sub-package, which the HTTPD installation then uses.--></para>
 @z
 
 @x
@@ -370,13 +372,17 @@ server using the run-time configuration directives.</para>
     parameters if you require <application>Berkeley DB</application> support in
     the bundled version of <application>APR-util</application> (required for
     <application>Berkeley DB</application> back-end support in
-    <application>Subversion</application>).</para>
+    <application>Subversion</application>). If you are using
+    <application>Berkeley DB</application>-5.1, change the first parameter to
+    <option>--with-dbm=db51</option>.</para>
 @y
     <para><option>--with-dbm=db4 --with-berkeley-db</option>: Use these
     parameters if you require <application>Berkeley DB</application> support in
     the bundled version of <application>APR-util</application> (required for
     <application>Berkeley DB</application> back-end support in
-    <application>Subversion</application>).</para>
+    <application>Subversion</application>). If you are using
+    <application>Berkeley DB</application>-5.1, change the first parameter to
+    <option>--with-dbm=db51</option>.</para>
 @z
 
 @x
@@ -482,19 +488,21 @@ server runs as the dedicated user and group:</para>
 @z
 
 @x
-        <seg>ab, apachectl, apr-config, apu-config, apxs, checkgid, dbmmanage,
-        htdbm, htdigest, htpasswd, httpd, instdso.sh, logresolve, and
-        rotatelogs</seg>
-        <seg>libapr-1.{so,a}, libaprutil-1.{so,a}, and /usr/lib/apache/*.so</seg>
-        <seg>/etc/apache, /srv/www, /usr/include/apache, /usr/lib/apache, and
-        /var/log/apache</seg>
-@y
-        <seg>ab, apachectl, apr-config, apu-config, apxs, checkgid, dbmmanage,
-        htdbm, htdigest, htpasswd, httpd, instdso.sh, logresolve,
-        rotatelogs</seg>
-        <seg>libapr-1.{so,a}, libaprutil-1.{so,a}, /usr/lib/apache/*.so</seg>
+        <seg>ab, apachectl, apr-1-config, apu-1-config, apxs, checkgid,
+        dbmmanage, htcacheclean, htdbm, htdigest, htpasswd, httpd, httxt2dbm,
+        logresolve, rotatelogs, and suexec</seg>
+        <seg>libapr-1.{so,a}, libaprutil-1.{so,a}, apr_{dbd,ldap} database
+        modules, and numerous DSO modules</seg>
         <seg>/etc/apache, /srv/www, /usr/include/apache, /usr/lib/apache,
-        /var/log/apache</seg>
+        /usr/lib/apr-util-1, and /var/log/apache</seg>
+@y
+        <seg>ab, apachectl, apr-1-config, apu-1-config, apxs, checkgid,
+        dbmmanage, htcacheclean, htdbm, htdigest, htpasswd, httpd, httxt2dbm,
+        logresolve, rotatelogs, suexec</seg>
+        <seg>libapr-1.{so,a}, libaprutil-1.{so,a}, データベースモジュール apr_{dbd,ldap},
+        その他、数多くの DSO モジュール</seg>
+        <seg>/etc/apache, /srv/www, /usr/include/apache, /usr/lib/apache,
+        /usr/lib/apr-util-1, /var/log/apache</seg>
 @z
 
 @x
@@ -568,12 +576,20 @@ is a tool for benchmarking your
           HTTP server program.</para>
 @z
 
-@x instdso.sh
-          <para>is a script which installs <application>Apache</application>
-          DSO modules.</para>
+% @x instdso.sh
+%           <para>is a script which installs <application>Apache</application>
+%           DSO modules.</para>
+% @y
+%           <para>is a script which installs <application>Apache</application>
+%           DSO modules.</para>
+% @z
+
+@x httxt2dbm
+          <para>is used to generate DBM files from text input, for use in
+          RewriteMap.</para>
 @y
-          <para>is a script which installs <application>Apache</application>
-          DSO modules.</para>
+          <para>is used to generate DBM files from text input, for use in
+          RewriteMap.</para>
 @z
 
 @x logresolve

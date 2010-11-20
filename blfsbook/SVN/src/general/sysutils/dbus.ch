@@ -467,14 +467,14 @@
 @x
           <para>A hint has been written that provides ways to start scripts
           using the KDM session manager of KDE. The concepts in this hint could
-          possibly used with other session managers as well. The hint is
+          possibly be used with other session managers as well. The hint is
           located at <ulink
           url="&hints-root;/downloads/files/execute-session-scripts-using-kdm.txt"/>.
           </para>
 @y
           <para>A hint has been written that provides ways to start scripts
           using the KDM session manager of KDE. The concepts in this hint could
-          possibly used with other session managers as well. The hint is
+          possibly be used with other session managers as well. The hint is
           located at <ulink
           url="&hints-root;/downloads/files/execute-session-scripts-using-kdm.txt"/>.
           </para>

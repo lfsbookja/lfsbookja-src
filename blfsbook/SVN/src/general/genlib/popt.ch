@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY popt-buildsize     "7.9 MB (includes installing documentation)">
+  <!ENTITY popt-buildsize     "8 MB (includes installing documentation)">
 @y
-  <!ENTITY popt-buildsize     "7.9 MB (ドキュメントのインストールを含む)">
+  <!ENTITY popt-buildsize     "8 MB (ドキュメントのインストールを含む)">
 @z
 
 @x

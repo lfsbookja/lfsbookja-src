@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openssl-time          "1.2 SBU (additional 0.3 SBU to run the test suite)">
+  <!ENTITY openssl-time          "1.2 SBU (additional 0.4 SBU to run the test suite)">
 @y
-  <!ENTITY openssl-time          "1.2 SBU (テストスイート実行の場合、さらに 0.3 SBU)">
+  <!ENTITY openssl-time          "1.2 SBU (テストスイート実行の場合、さらに 0.4 SBU)">
 @z
 
 @x
@@ -109,11 +109,13 @@
 @z
 
 @x
-        <para>Required patch: <ulink
-        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/></para>
+        <para>Required patches: <ulink
+        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/> and
+        <ulink url="&patch-root;/openssl-&openssl-version;-fix_testsuite-1.patch"/></para>
 @y
         <para>必要なパッチ: <ulink
-        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/></para>
+        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/>,
+        <ulink url="&patch-root;/openssl-&openssl-version;-fix_testsuite-1.patch"/></para>
 @z
 
 @x
@@ -135,13 +137,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="mitkrb"/> or
-    <xref linkend="heimdal"/>, and <xref linkend="bc"/> (required to run the
-    test suite during the build)</para>
+    <xref linkend="heimdal"/>, and <xref linkend="bc"/> (required for full
+    coverage by the test suite during the build)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="mitkrb"/> または
     <xref linkend="heimdal"/>, かつ <xref linkend="bc"/>
-    (ビルド時にテストスイートを実行する場合に必要。)</para>
+    (ビルド時にテストスイートすべてを実行する場合に必要。)</para>
 @z
 
 @x
@@ -360,18 +362,20 @@ able to find out how to do it.
         <seg>c_rehash and openssl</seg>
         <seg>libcrypto.{so,a}, libssl.{so,a}, and additional encryption
         libraries in /usr/lib/engines/ (lib4758cca.so, libaep.so,
-        libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so, libnuron.so,
-        libsureware.so, and libubsec.so)</seg>
-        <seg>/etc/ssl, /usr/include/ssl, /usr/lib/engines
+        libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so,
+        libgost.so, libnuron.so, libpadlock.so, libsureware.so, and
+        libubsec.so)</seg>
+        <seg>/etc/ssl, /usr/include/openssl, /usr/lib/engines
         and /usr/share/doc/openssl-&openssl-version;</seg>
 @y
-        <seg>c_rehash and openssl</seg>
-        <seg>libcrypto.{so,a}, libssl.{so,a},
+        <seg>c_rehash, openssl</seg>
+        <seg>libcrypto.{so,a}, libssl.{so,a}, 
         /usr/lib/engines/ にインストールされるその他の暗号化ライブラリ
         (lib4758cca.so, libaep.so,
-        libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so, libnuron.so,
-        libsureware.so, libubsec.so)</seg>
-        <seg>/etc/ssl, /usr/include/ssl, /usr/lib/engines,
+        libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so,
+        libgost.so, libnuron.so, libpadlock.so, libsureware.so,
+        libubsec.so)</seg>
+        <seg>/etc/ssl, /usr/include/openssl, /usr/lib/engines,
         /usr/share/doc/openssl-&openssl-version;</seg>
 @z
 

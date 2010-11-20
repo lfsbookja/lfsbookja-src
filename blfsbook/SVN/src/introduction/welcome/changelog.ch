@@ -62,6 +62,301 @@
 @z
 
 @x
+      <para>November 20th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to postgresql-9.0.1 (fixes ticket
+          <ulink url="&blfs-ticket-root;3160">#3160</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - postgresql-9.0.1 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;3160">#3160</ulink> を Fix に。)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 19th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Updated to mutt-1.5.21 (fixes ticket
+          <ulink url="&blfs-ticket-root;3187">#3187</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - mutt-1.5.21 へのアップデート。
+          (チケット
+          <ulink url="&blfs-ticket-root;3187">#3187</ulink> を Fix に。)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 18th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to GLib-2.24.2.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to Expect-5.44.1.15 (5.45 has since been
+          released).</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to desktop-file-utils-0.17.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Added a patch to the Guile instructions to fix
+          breakage using newer compilers, also fixed the documentation
+          installation instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to openssl-1.0.0b to fix CVE-2010-3864 (fixes ticket
+          <ulink url="&blfs-ticket-root;3146">#3146</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - GLib-2.24.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Expect-5.44.1.15 へのアップデート。
+          (5.45 が既にリリースされている。)</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - desktop-file-utils-0.17 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Added a patch to the Guile instructions to fix
+          breakage using newer compilers, also fixed the documentation
+          installation instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - openssl-1.0.0b へのアップデート。CVE-2010-3864 を Fix
+          (チケット
+          <ulink url="&blfs-ticket-root;3146">#3146</ulink> を Fix に。)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 17th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to Apache HTTPD-2.2.17.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Apache HTTPD-2.2.17 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 16th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to Popt-1.16.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to PCRE-8.10.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Popt-1.16 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - PCRE-8.10 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 15th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to OpenLDAP-2.4.23.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - clarified dependencies for ffmpeg and aspell,
+          thanks to Allard Welter for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - OpenLDAP-2.4.23 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - ffmpeg と aspell における依存パッケージを明確化。
+          報告をくれた Allard Welter に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 12th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to MySQL-5.1.52.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to Apache-Ant-1.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to FOP-1.0.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to unixODBC-2.3.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - MySQL-5.1.52 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Apache-Ant-1.8.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - FOP-1.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - unixODBC-2.3.0 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 11th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to HTML Tidy-cvs_20101110.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - HTML Tidy-cvs_20101110 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 9th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Added documentation installation commands to the
+          MesaLib instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Modified the libatomic_ops instructions so that the
+          documentation is installed in a versioned directory.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - MesaLib にてドキュメントをインストールするコマンドを追加。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Modified the libatomic_ops instructions so that the
+          documentation is installed in a versioned directory.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 8th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Added optional dependencies for xmlto.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to Ed-1.5.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>November 8th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Added optional dependencies for xmlto.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to Ed-1.5.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 6th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to DocBook XSL Stylesheets-1.76.1.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated to Libgcrypt-1.4.6.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - DocBook XSL Stylesheets-1.76.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Libgcrypt-1.4.6 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 5th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to Libgpg-error-1.10.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Modified the acl instructions to support a DESTDIR
+          installation and modified permissions of installed library files to
+          standards.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Libgpg-error-1.10 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Modified the acl instructions to support a DESTDIR
+          installation and modified permissions of installed library files to
+          standards.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 4th, 2010</para>
       <itemizedlist>
         <listitem>

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openldap-time          "1.9 SBU and approximately 30 minutes to run the tests (processor independent)">
+  <!ENTITY openldap-time          "2.0 SBU and approximately 35 minutes to run the tests (processor independent)">
 @y
-  <!ENTITY openldap-time          "1.9 SBU and approximately 30 minutes to run the tests (processor independent)">
+  <!ENTITY openldap-time          "2.0 SBU and approximately 35 minutes to run the tests (processor independent)">
 @z
 
 @x
@@ -123,9 +123,8 @@
     <para role="optional"><xref linkend="tcpwrappers"/>,
     <xref linkend="unixodbc"/>,
     <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-    <xref linkend="pth"/>, and one of
-    <xref linkend="mysql"/>,
-    <ulink url="http://www.oracle.com/technologies/linux/index.html">Oracle</ulink>, or
+    <xref linkend="pth"/>, and either
+    <xref linkend="mysql"/> or
     <xref linkend="postgresql"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
@@ -134,7 +133,6 @@
     <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
     <xref linkend="pth"/>, さらに
     <xref linkend="mysql"/> か
-    <ulink url="http://www.oracle.com/technologies/linux/index.html">Oracle</ulink> か
     <xref linkend="postgresql"/> のいずれか</para>
 @z
 
@@ -294,13 +292,11 @@ all available overlays.
 @x
     <para><parameter>--disable-sql</parameter>: This parameter explicitly
     disables the sql backend.  Omit this switch if a SQL server is
-    installed.</para>
+    installed and you are going to use a SQL backend (experimental).</para>
 @y
-<para>
-<parameter>--disable-sql</parameter>: This parameter explicitly
-disables the sql backend.  Omit this switch if a SQL server is
-installed.
-</para>
+    <para><parameter>--disable-sql</parameter>: This parameter explicitly
+    disables the sql backend.  Omit this switch if a SQL server is
+    installed and you are going to use a SQL backend (experimental).</para>
 @z
 
 @x
