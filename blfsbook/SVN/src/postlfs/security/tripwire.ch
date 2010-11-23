@@ -23,8 +23,10 @@
     <para>The <application>Tripwire</application> package contains programs
     used to verify the integrity of the files on a given system.</para>
 @y
-    <para>The <application>Tripwire</application> package contains programs
-    used to verify the integrity of the files on a given system.</para>
+<para>
+<application>Tripwire</application>
+パッケージは、利用システム上でのファイルの整合性チェックを行うプログラムを提供します。
+</para>
 @z
 
 @x
@@ -223,11 +225,10 @@ install/install.cfg</command>:
       system.</para>
 @y
 <para>
-<application>Tripwire</application> uses a policy file to
-determine which files are integrity checked. The default policy
-file (<filename>/etc/tripwire/twpol.txt</filename>) is for a
-default installation and will need to be updated for your
-system.
+<application>Tripwire</application>
+にはポリシーファイル (policy file) があり、これを使ってどのファイルの整合性チェックを行うかを決定します。
+デフォルトのポリシーファイル (<filename>/etc/tripwire/twpol.txt</filename>)
+は、インストール時にデフォルトで生成されますが、利用システムに応じて適切に書き換える必要があります。
 </para>
 @z
 
@@ -239,12 +240,12 @@ system.
       to <filename class="directory">/usr/share/doc/</filename>).</para>
 @y
 <para>
-
-Policy files should be tailored to each individual distribution
-and/or installation. Some example policy files can be found in <filename
-class="directory">/usr/doc/tripwire/</filename> (Note that <filename
-class="directory">/usr/doc/</filename> is a symbolic link on LFS systems
-to <filename class="directory">/usr/share/doc/</filename>).
+ポリシーファイルは、個々のディストリビューションやインストール状況に応じて設定する必要があります。
+<filename class="directory">/usr/doc/tripwire/</filename>
+にはポリシーファイルの例がいくつかあります。
+(ちなみに <filename class="directory">/usr/doc/</filename>
+ディレクトリは、LFS システムにおいては
+<filename class="directory">/usr/share/doc/</filename> へのシンボリックリンクです。)
 </para>
 @z
 
@@ -260,14 +261,15 @@ to <filename class="directory">/usr/share/doc/</filename>).
       way of keeping track of changes for uninstallation of software.</para>
 @y
 <para>
+必要に応じて、デフォルトのポリシーファイル <filename>twpol.txt</filename>
+は用いずに、ポリシーファイルを <filename class="directory">/etc/tripwire/</filename>
+にコピーします。さらにそのポリシーファイルは適当に書き換えることが求められます。
+その方法の詳細については、上に示したサンプルファイルや
+<filename>/usr/doc/tripwire/policyguide.txt</filename>
+を参照してください。<filename>twpol.txt</filename>
+も、<application>Tripwire</application> を学ぶ上でのちょうど良いサンプルとなっており、
 
-If desired, copy the policy file you'd like to try into <filename
-class="directory">/etc/tripwire/</filename> instead of using the default
-policy file, <filename>twpol.txt</filename>.  It is, however, recommended
-that you edit your policy file. Get ideas from the examples above and
-read <filename>/usr/doc/tripwire/policyguide.txt</filename> for
-additional information. <filename>twpol.txt</filename> is a good policy
-file for learning about  <application>Tripwire</application> as it will
+as it will
 note any changes to the file system and can even be used as an annoying
 way of keeping track of changes for uninstallation of software.
 </para>

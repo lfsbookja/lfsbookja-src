@@ -115,19 +115,23 @@ GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL �
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>This package does not come with a test suite.</para>
+<para>
+&j-notTestSuite;
+</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+<para>
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -137,17 +141,21 @@ GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL �
      environment variables to avoid compilation failures due to old
      coding standards.</para>
 @y
-    <para><command>sed 's@-Werror@@g' -i configure</command>: This command
-    removes the <parameter>-Werror</parameter> flag from the
-    <parameter>CFLAGS</parameter> and <parameter>CXXFLAGS</parameter>
-     environment variables to avoid compilation failures due to old
-     coding standards.</para>
+<para>
+<command>sed 's@-Werror@@g' -i configure</command>:
+
+This command
+removes the <parameter>-Werror</parameter> flag from the
+<parameter>CFLAGS</parameter> and <parameter>CXXFLAGS</parameter>
+environment variables to avoid compilation failures due to old
+coding standards.
+</para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -155,9 +163,9 @@ GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL �
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -173,14 +181,15 @@ GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL �
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x libglut.{so,a}
           <para>contains functions that implement the OpenGL Utility
           Toolkit.</para>
 @y
-          <para>contains functions that implement the OpenGL Utility
-          Toolkit.</para>
+<para>
+OpenGL ユーティリティー ツールキット (OpenGL Utility Toolkit)
+を実装した関数を提供します。
+</para>
 @z
-

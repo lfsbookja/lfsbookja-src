@@ -17,8 +17,8 @@
   <!ENTITY python-buildsize     "171 MB (23MB for the test suite, additional 26MB for the documentation)">
   <!ENTITY python-time          "1 SBU (additional 2.9 SBU to run the test suite)">
 @y
-  <!ENTITY python-buildsize     "171 MB (23MB for the test suite, additional 26MB for the documentation)">
-  <!ENTITY python-time          "1 SBU (additional 2.9 SBU to run the test suite)">
+  <!ENTITY python-buildsize     "171 MB (テストスイート実行時には 23MB、ドキュメント生成時は追加で 26MB)">
+  <!ENTITY python-time          "1 SBU (テストスイート実行時はさらに 2.9 SBU)">
 @z
 
 @x
@@ -33,10 +33,11 @@
     This is useful for object-oriented programming, writing scripts,
     prototyping large programs or developing entire applications.</para>
 @y
-    <para>The <application>Python</application> package contains the
-    <application>Python</application> development environment.
-    This is useful for object-oriented programming, writing scripts,
-    prototyping large programs or developing entire applications.</para>
+<para>
+<application>Python</application>
+パッケージは <application>Python</application> 開発環境を提供します。
+この環境は、オブジェクト指向プログラミング、スクリプト構築、大規模なプロトタイプ開発、一連のアプリケーション開発を可能とします。
+</para>
 @z
 
 @x
@@ -85,6 +86,14 @@
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required patch: <ulink
+        url="&patch-root;/Python-&Python-version;-bdb_4.8-1.patch"/></para>
+@y
+        <para>必須のパッチ: <ulink
+        url="&patch-root;/Python-&Python-version;-bdb_4.8-1.patch"/></para>
 @z
 
 @x
@@ -143,12 +152,24 @@
     <xref linkend="sqlite"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;
-    (to create package-specific support modules)</bridgehead>
+    (各パッケージ固有のサポートモジュール生成に必要)</bridgehead>
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="tk"/>,
     <xref linkend="db"/>,
     <!-- <xref linkend="gdbm"/>, and -->
     <xref linkend="sqlite"/></para>
+@z
+
+@x
+    <para>Note that there is a circular dependency with the
+    <application>Tk</application> package as it requires Xorg to be installed
+    but parts of Xorg depend on <application>Python</application>.</para>
+@y
+<para>
+<application>Tk</application> パッケージには循環的な依存関係があります。
+つまりこのパッケージは Xorg を必要としますが、Xorg における所定パッケージが
+<application>Python</application> パッケージを必要としているものがあります。
+</para>
 @z
 
 @x
@@ -181,10 +202,9 @@
     produce a segmentation fault.</para>
 @y
 <para>
-To test the results, issue: <command>make test</command>. Note that
-if you have an existing <application>Python</application> installation
-which includes the <application>PyXML</application> module, the tests could
-produce a segmentation fault.
+ビルド結果をテストする場合は <command>make test</command> を実行します。
+既に <application>Python</application> をインストールしていて、それが
+<application>PyXML</application> モジュールも含んでいる場合、テストにてセグメンテーションフォールトが発生する場合があります。
 </para>
 @z
 
@@ -192,7 +212,7 @@ produce a segmentation fault.
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
-<systemitem class="username">root</systemitem> になって以下を実行します。
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 </para>
 @z
 
@@ -204,11 +224,12 @@ produce a segmentation fault.
     url="http://docs.python.org/download.html"/>.</para>
 @y
 <para>
-There is no documentation installed using the instructions above.
-See the <filename>Doc/README.txt</filename> file in the source
-distribution for instructions on how to create the html. Alternatively,
-you can download preformatted documentation from <ulink
-url="http://docs.python.org/download.html"/>.
+上のコマンド実行ではドキュメントがインストールされません。
+HTML ドキュメントを生成する場合は、ソースディレクトリ内にある
+<filename>Doc/README.txt</filename> ファイルを参照してください。
+あるいは既に構築済のドキュメントを
+<ulink url="http://docs.python.org/download.html"/>
+からダウンロードすることもできます。
 </para>
 @z
 

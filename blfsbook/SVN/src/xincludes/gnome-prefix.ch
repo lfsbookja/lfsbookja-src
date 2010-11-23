@@ -23,7 +23,7 @@
 <para>
 <parameter>--prefix=$(pkg-config --variable=prefix
 ORBit-2.0)</parameter>:
-<envar>$GNOME_PREFIX</envar> を用いずに、本パラメータによりプレフィックスを定めます。
+<envar>$GNOME_PREFIX</envar> を用いずに、本パラメーターによりプレフィックスを定めます。
 これは環境構築にあたって、一貫したプレフィックスとするためであり、こうしてパッケージを正しいディレクトリにインストールするためです。
 </para>
 @z

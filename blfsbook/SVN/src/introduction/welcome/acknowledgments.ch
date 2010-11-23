@@ -35,11 +35,8 @@
       to the project.</para>
 @y
 <para>
-
-All those people listed on the Credits page for submitting patches,
-instructions and corrections to the book.  The former editor would
-especially like to thank Bruce, Larry and Billy for their enormous inputs
-to the project.
+本書製作に関わる方々のページに示すみなさんには、パッチを提供して頂いたり、インストール手順や本書の訂正を示して頂いています。
+前編集者からは Bruce, Larry, Billy に対して、本プロジェクトに多大な提供をして頂いたことに感謝します。
 </para>
 @z
 
@@ -70,8 +67,8 @@ vast majority of the LFS project.
       linuxfromscratch.com domain names.</para>
 @y
 <para>
-Robert Briggs for donating the &lfs-domainname; and
-linuxfromscratch.com domain names.
+Robert Briggs には、&lfs-domainname; と linuxfromscratch.com
+のドメイン名を提供して頂きました。
 </para>
 @z
 
@@ -138,11 +135,15 @@ design of the LFS and BLFS websites.
       not killing the former editor for the joke in the original BLFS
       announcement!</para>
 @y
-      <para><ulink url="mailto:highos@&lfs-domainname;">Jesse
-      Tie-Ten-Quee</ulink> &lt;higho &lt;at&gt; &lfs-domainname;&gt; for
-      answering many questions on IRC, having a great deal of patience and for
-      not killing the former editor for the joke in the original BLFS
-      announcement!</para>
+<para>
+<ulink url="mailto:highos@&lfs-domainname;">Jesse
+Tie-Ten-Quee</ulink> &lt;higho &lt;at&gt; &lfs-domainname;&gt;
+には  IRC にて数多くの回答を示して頂いています。
+
+having a great deal of patience and for
+not killing the former editor for the joke in the original BLFS
+announcement!
+</para>
 @z
 
 @x
@@ -150,8 +151,7 @@ design of the LFS and BLFS websites.
       who are making this book possible by giving their suggestions, testing
       the book and submitting bug reports.</para>
 @y
-      <para>Countless other people on the various LFS and BLFS mailing lists
-      who are making this book possible by giving their suggestions, testing
-      the book and submitting bug reports.</para>
+<para>
+LFS や BLFS の各種のメーリングリストでは、数え切れないほどの方々が、提案や本書の確認、バグ報告をして頂き、本書への貢献をして頂きました。
+</para>
 @z
-

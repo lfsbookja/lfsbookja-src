@@ -181,9 +181,7 @@
           tool.</para>
 @y
 <para>
-
-is the <application>UPower</application> command line
-tool.
+<application>UPower</application> のコマンドラインツール。
 </para>
 @z
 
@@ -192,9 +190,8 @@ tool.
           org.freedesktop.UPower service on the system message bus.</para>
 @y
 <para>
-
-is the <application>UPower</application> Daemon. It provides the
-org.freedesktop.UPower service on the system message bus.
+<application>UPower</application> デーモン。
+これはシステムメッセージバス上の org.freedesktop.UPower サービスを提供します。
 </para>
 @z
 
@@ -202,8 +199,7 @@ org.freedesktop.UPower service on the system message bus.
           <para>contains the old DeviceKit-power API functions.</para>
 @y
 <para>
-
-contains the old DeviceKit-power API functions.
+かつての DeviceKit-power API 関数を提供します。
 </para>
 @z
 
@@ -212,8 +208,6 @@ contains the old DeviceKit-power API functions.
           functions.</para>
 @y
 <para>
-
-contains the <application>UPower</application> API
-functions.
+<application>UPower</application> API 関数を提供します。
 </para>
 @z

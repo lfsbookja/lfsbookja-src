@@ -24,9 +24,11 @@
     provides low-level pixel manipulation features such as image compositing
     and trapezoid rasterization.</para>
 @y
-    <para>The <application>pixman</application> package contains a library that
-    provides low-level pixel manipulation features such as image compositing
-    and trapezoid rasterization.</para>
+<para>
+<application>pixman</application>
+パッケージは、イメージ合成 (image compositing) や "矩形分割" によるラスター処理
+(trapezoid rasterization) など、低レベルなピクセル操作を実現するライブラリを提供します。
+</para>
 @z
 
 @x

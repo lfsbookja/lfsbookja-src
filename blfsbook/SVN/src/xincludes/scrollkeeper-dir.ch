@@ -24,7 +24,7 @@
 @y
 <para>
 <parameter>--localstatedir=/var/lib</parameter>:
-このオプションは
+このパラメーターは
 <application>ScrollKeeper</application>
 ファイル、および <application>ScrollKeeper</application>
 データベースの配置ディレクトリを指示するものであり、

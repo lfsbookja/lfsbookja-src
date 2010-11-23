@@ -181,8 +181,7 @@
           or interact with it.</para>
 @y
 <para>
-Print or modify the properties of a screen/workspace/window,
-or interact with it.
+スクリーン/ワークスペース/ウィンドウのプロパティを表示したり更新したりします。
 </para>
 @z
 
@@ -190,6 +189,6 @@ or interact with it.
           <para>contains functions for writing pagers and task lists.</para>
 @y
 <para>
-contains functions for writing pagers and task lists.
+ページャー (pagers) やタスクリストへの更新を行う関数を提供します。
 </para>
 @z
