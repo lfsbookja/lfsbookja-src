@@ -54,6 +54,17 @@
 -->
 
     <listitem>
+      <para>2010-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20101118, r9421 対応。(Coreutils が 8.7 から 8.6 にダウングレード。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-11-19</para>
       <itemizedlist>
         <listitem>
