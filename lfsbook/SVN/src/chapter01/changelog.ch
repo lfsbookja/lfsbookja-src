@@ -57,6 +57,66 @@
 @z
 
 @x
+      <para>2010-12-14</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Upgrade to Glibc-2.12.2. Fixes
+          <ulink url="&lfs-ticket-root;2804">#2804</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-12-14</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Glibc-2.12.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2804">#2804</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-12-13</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Upgrade to Binutils-2.21. Fixes
+          <ulink url="&lfs-ticket-root;2803">#2803</ulink>.</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Upgrade to Man-Pages-3.32. Fixes
+          <ulink url="&lfs-ticket-root;2802">#2802</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Linux-2.6.36.2. Fixes
+          <ulink url="&lfs-ticket-root;2799">#2799</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Man-DB-2.5.9. Fixes
+          <ulink url="&lfs-ticket-root;2797">#2797</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-12-13</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Binutils-2.21 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2803">#2803</ulink> を Fix に。</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Man-Pages-3.32 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2802">#2802</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Linux-2.6.36.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2799">#2799</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Man-DB-2.5.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2797">#2797</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-11-18</para>
       <itemizedlist>
         <listitem>

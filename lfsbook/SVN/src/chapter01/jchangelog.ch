@@ -54,6 +54,20 @@
 -->
 
     <listitem>
+      <para>2010-12-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch, src/chapter05/glibc.ch, 
+          src/chapter06/{glibc.ch, man-db.ch}, 
+          src/appendices/dependencies.ch:
+          SVN-20101214, r9427 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-11-26</para>
       <itemizedlist>
         <listitem>

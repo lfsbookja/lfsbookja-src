@@ -156,48 +156,6 @@
 @z
 
 @x
-      <term>Glibc LD Audit Patch - <token>&glibc-ldaudit-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-ldaudit-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-ldaudit-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc LD Audit Patch - <token>&glibc-ldaudit-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&glibc-ldaudit-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-ldaudit-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Glibc Makefile Fix Patch - <token>&glibc-makefile_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-makefile_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-makefile_fix-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc Makefile Fix Patch - <token>&glibc-makefile_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&glibc-makefile_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-makefile_fix-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Glibc Origin Patch - <token>&glibc-origin-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-origin-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-origin-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc Origin Patch - <token>&glibc-origin-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&glibc-origin-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-origin-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
@@ -239,58 +197,12 @@
       </listitem>
 @z
 
-@x
-      <term>Linux Memory Model Locking Patch - <token>&linux-mm_locking-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&linux-mm_locking-patch;"/></para>
-        <para>MD5 sum: <literal>&linux-mm_locking-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Linux Memory Model Locking Patch - <token>&linux-mm_locking-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&linux-mm_locking-patch;"/></para>
-        <para>MD5 sum: <literal>&linux-mm_locking-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Man-DB Upstream Fix Assertion Patch - <token>&man-db-upstream_fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&man-db-upstream_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&man-db-upstream_fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Man-DB Upstream Fix Assertion Patch - <token>&man-db-upstream_fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&man-db-upstream_fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&man-db-upstream_fixes-patch-md5;</literal></para>
-      </listitem>
-@z
-
 @x Patch Testsuite Fix Patch
         <para>Download: <ulink url="&patches-root;&patch-test-patch;"/></para>
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
 @y
         <para>ダウンロード: <ulink url="&patches-root;&patch-test-patch;"/></para>
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
-@z
-
-@x コメント部分につき本来は不要なチェンジ
-    <!-- <varlistentry>
-      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
-      </listitem>
-    </varlistentry> -->
-@y
-    <!-- <varlistentry>
-      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
-      </listitem>
-    </varlistentry> -->
 @z
 
 @x

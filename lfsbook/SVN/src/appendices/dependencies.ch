@@ -348,9 +348,9 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
           Make, Sed, Zlib</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>None</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>なし</seg>
 @z
 @x
           <seg>None</seg>

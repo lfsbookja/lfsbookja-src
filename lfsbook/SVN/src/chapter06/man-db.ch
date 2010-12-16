@@ -29,15 +29,6 @@ Man-DB パッケージは man ページを検索したり表示したりする�
 @z
 
 @x
-    <para>First apply the following patch to fix problems when viewing
-    some man pages:</para>
-@y
-<para>
-特定の man ページを表示する際に発生する問題を修正するために、以下のパッチを適用します。
-</para>
-@z
-
-@x
     <para>Prepare Man-DB for compilation:</para>
 @y
     <para>Man-DB をコンパイルするための準備をします。</para>

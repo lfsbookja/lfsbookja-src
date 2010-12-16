@@ -119,23 +119,6 @@ Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修�
 @z
 
 @x
-    <para>Fix a bug that prevents Glibc from building with versions of Make
-    newer than 3.81.</para>
-@y
-<para>
-Make の バージョンが 3.81 より最新では Glibc がビルドできないバグを修正します。
-</para>
-@z
-
-@x
-    <para>Apply 2 patches that fix security vulnerabilities in this version of Glibc:</para>
-@y
-<para>
-２つのパッチを適用します。Glibc の現行バージョンにおけるセキュリティ脆弱性を解消します。
-</para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
