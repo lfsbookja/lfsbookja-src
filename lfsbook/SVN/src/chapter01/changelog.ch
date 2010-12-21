@@ -57,6 +57,40 @@
 @z
 
 @x
+      <para>2010-12-19</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Upgrade to Udev-165. Fixes
+          <ulink url="&lfs-ticket-root;2810">#2810</ulink>.</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Upgrade to GCC-4.5.2. Fixes
+          <ulink url="&lfs-ticket-root;2809">#2809</ulink>.</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Upgrade to E2fsprogs-1.41.13. Fixes
+          <ulink url="&lfs-ticket-root;2807">#2807</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-12-19</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Udev-165 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2810">#2810</ulink> を Fix に。</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] GCC-4.5.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2809">#2809</ulink> を Fix に。</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] E2fsprogs-1.41.13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2807">#2807</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-12-14</para>
       <itemizedlist>
          <listitem>
