@@ -308,11 +308,11 @@ C 言語のヘッダーファイル <filename class="extension">.h</filename>
 
 @x libnetcfg
           <para>Can be used to configure the
-          <filename class="libraryfile">libnet</filename></para>
+          <filename class="libraryfile">libnet</filename> Perl module</para>
 @y
 <para>
-<filename class="libraryfile">libnet</filename>
-ライブラリの設定に利用します。
+Perl モジュール <filename class="libraryfile">libnet</filename>
+の設定に利用します。
 </para>
 @z
 
