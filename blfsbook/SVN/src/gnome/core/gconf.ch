@@ -169,19 +169,23 @@
 @x
     <para>Still as the <systemitem class="username">root</systemitem> user,
     configure <application>D-Bus</application> so that it can search for
-    <application>GNOME</application> installed .conf files (This is assuming
-    that system-local.conf does not exist yet. If it does, then you will need
-    to merge in the changes):</para>
+    <application>GNOME</application> installed
+    <filename class='extension'>.conf</filename> files (This is assuming
+    that <filename>/etc/dbus-1/system-local.conf</filename> does not exist yet.
+    If it does, then you will need to merge in the changes). If
+    <envar>$GNOME_PREFIX</envar> is not
+    <filename class='directory'>/usr</filename>, you should uncomment the
+    <quote>servicedir</quote> line:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーのまま <application>D-Bus</application>
-の設定を行います。
- so that it can search for
-<application>GNOME</application> installed .conf files (This is assuming
-that system-local.conf does not exist yet. If it does, then you will need
-to merge in the changes):
-</para>
+    <para>Still as the <systemitem class="username">root</systemitem> user,
+    configure <application>D-Bus</application> so that it can search for
+    <application>GNOME</application> installed
+    <filename class='extension'>.conf</filename> files (This is assuming
+    that <filename>/etc/dbus-1/system-local.conf</filename> does not exist yet.
+    If it does, then you will need to merge in the changes). If
+    <envar>$GNOME_PREFIX</envar> is not
+    <filename class='directory'>/usr</filename>, you should uncomment the
+    <quote>servicedir</quote> line:</para>
 @z
 
 @x

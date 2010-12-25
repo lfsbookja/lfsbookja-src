@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY samba3-time          "5 SBU (additional 1.5 SBU to run the test suite)">
+  <!ENTITY samba3-time          "5 SBU (additional 1.4 SBU to run the test suite)">
 @y
-  <!ENTITY samba3-time          "5 SBU (テストスイートを実行する場合は、さらに 1.5 SBU)">
+  <!ENTITY samba3-time          "5 SBU (テストスイートを実行する場合は、さらに 1.4 SBU)">
 @z
 
 @x
@@ -104,9 +104,8 @@ amongst other things provides LAN browsing support).
     <xref linkend="acl"/>,
     <xref linkend="xfs"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <!-- <xref linkend="python"/> (to build Samba API bindings for the
-    <application>Python</application> installation), -->
-    <ulink url="http://tdb.samba.org/">tdb</ulink>,
+    <xref linkend="python"/> (used only in parts of the test suite),
+    <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
     <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
@@ -116,7 +115,7 @@ amongst other things provides LAN browsing support).
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="popt"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="cups"/>,
@@ -125,9 +124,8 @@ amongst other things provides LAN browsing support).
     <xref linkend="acl"/>,
     <xref linkend="xfs"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <!-- <xref linkend="python"/> (to build Samba API bindings for the
-    <application>Python</application> installation), -->
-    <ulink url="http://tdb.samba.org/">tdb</ulink>,
+    <xref linkend="python"/> (used only in parts of the test suite),
+    <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
     <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
@@ -246,53 +244,27 @@ amongst other things provides LAN browsing support).
 @z
 
 @x
-    <para><option>--with-pam</option>: Use this parameter to link
-    <application>Linux-PAM</application> into the build. This
-    also builds the <filename class='libraryfile'>pam_winbind.so</filename>
-    and <filename class='libraryfile'>pam_smbpass.so</filename>
-    <application>PAM</application> modules. You can find
-    instructions on how to configure and use the
-    <filename class='libraryfile'>pam_winbind.so</filename> module by running
-    <command>man winbindd</command>.</para>
-@y
-    <para><option>--with-pam</option>: Use this parameter to link
-    <application>Linux-PAM</application> into the build. This
-    also builds the <filename class='libraryfile'>pam_winbind.so</filename>
-    and <filename class='libraryfile'>pam_smbpass.so</filename>
-    <application>PAM</application> modules. You can find
-    instructions on how to configure and use the
-    <filename class='libraryfile'>pam_winbind.so</filename> module by running
-    <command>man winbindd</command>.</para>
-@z
-
-@x
     <para><command>install -v -m755 nsswitch/libnss_win{s,bind}.so /lib</command>:
-    The nss libraries are not installed by default.  If you intend to use
-    winbindd for domain auth, and/or WINS name resolution,
+    The nss libraries are not installed by default. If you intend to use
+    winbindd for Windows NT domain authentication, and/or WINS name resolution,
     you need these libraries.</para>
 @y
-<para>
-<command>install -v -m755 nsswitch/libnss_win{s,bind}.so /lib</command>:
-
-The nss libraries are not installed by default.  If you intend to use
-winbindd for domain auth, and/or WINS name resolution,
-you need these libraries.
-</para>
+    <para><command>install -v -m755 nsswitch/libnss_win{s,bind}.so /lib</command>:
+    The nss libraries are not installed by default. If you intend to use
+    winbindd for Windows NT domain authentication, and/or WINS name resolution,
+    you need these libraries.</para>
 @z
 
 @x
     <para><command>ln -v -sf libnss_winbind.so /lib/libnss_winbind.so.2</command>
     and <command>ln -v -sf libnss_wins.so /lib/libnss_wins.so.2</command>:
-    These symlinks are required by glibc to use the NSS
-    libraries.</para>
+    These symlinks are required by <application>Glibc</application> to use the
+    NSS libraries.</para>
 @y
-<para>
-<command>ln -v -sf libnss_winbind.so /lib/libnss_winbind.so.2</command>
-と <command>ln -v -sf libnss_wins.so /lib/libnss_wins.so.2</command>:
-
-These symlinks are required by glibc to use the NSS
-libraries.
-</para>
+    <para><command>ln -v -sf libnss_winbind.so /lib/libnss_winbind.so.2</command>
+    and <command>ln -v -sf libnss_wins.so /lib/libnss_wins.so.2</command>:
+    These symlinks are required by <application>Glibc</application> to use the
+    NSS libraries.</para>
 @z
 
 @x
@@ -973,31 +945,33 @@ the corresponding bootscript are needed.</para>
 @z
 
 @x
-        <seg>cifs.upcall, eventlogadm, findsmb, mount.cifs, mount.smbfs, net, nmbd,
-        nmblookup, ntlm_auth, pdbedit, profiles, rpcclient, smbcacls,
-        smbclient, smbcontrol, smbcquotas, smbd, smbget,
-        smbpasswd, smbspool, smbstatus, smbtar, smbtree, swat,
-        tdbbackup, tdbdump, tdbtool, testparm, umount.cifs, wbinfo
-        and winbindd</seg>
-        <seg>libnss_winbind.so, libnss_wins.so, libsmbclient.so, libmsrpc.so,
-        the pam_winbind.so and pam_smbpass.so PAM libraries, and assorted
-        character set, filesystem and support modules.</seg>
-        <seg>/etc/samba, /usr/lib/python&python-majorver;/site-packages/samba,
-        /usr/lib/samba, /usr/share/doc/samba-&samba3-version;,
-        /usr/share/samba, /var/lib/samba and /var/log/samba</seg>
+        <seg>cifs.upcall, eventlogadm, findsmb, ldbadd, ldbdel, ldbedit,
+        ldbmodify, ldbrename, ldbsearch, mount.cifs, net, nmbd,
+        nmblookup, ntlm_auth, pdbedit, profiles, rpcclient, sharesec, smbcacls,
+        smbclient, smbcontrol, smbcquotas, smbd, smbget, smbpasswd, smbspool,
+        smbstatus, smbtar, smbtree, swat, testparm, umount.cifs, wbinfo,
+        winbindd, and (if not using system TDB) tdbbackup, tdbdump, and
+        tdbtool</seg>
+        <seg>libnss_winbind.so, libnss_wins.so, libnetapi.so, libsmbclient.so,
+        libsmbsharemodes.so, libtalloc.so, libwbclient.so, the pam_winbind.so
+        and pam_smbpass.so PAM libraries, and assorted character set,
+        filesystem and support modules.</seg>
+        <seg>/etc/samba, /usr/lib/samba, /usr/share/doc/samba-&samba3-version;,
+        /usr/share/samba, /var/lib/samba and (if configured) /var/log/samba</seg>
 @y
-        <seg>cifs.upcall, eventlogadm, findsmb, mount.cifs, mount.smbfs, net, nmbd,
-        nmblookup, ntlm_auth, pdbedit, profiles, rpcclient, smbcacls,
-        smbclient, smbcontrol, smbcquotas, smbd, smbget,
-        smbpasswd, smbspool, smbstatus, smbtar, smbtree, swat,
-        tdbbackup, tdbdump, tdbtool, testparm, umount.cifs, wbinfo
-        and winbindd</seg>
-        <seg>libnss_winbind.so, libnss_wins.so, libsmbclient.so, libmsrpc.so,
-        the pam_winbind.so and pam_smbpass.so PAM libraries, and assorted
-        character set, filesystem and support modules.</seg>
-        <seg>/etc/samba, /usr/lib/python&python-majorver;/site-packages/samba,
-        /usr/lib/samba, /usr/share/doc/samba-&samba3-version;,
-        /usr/share/samba, /var/lib/samba and /var/log/samba</seg>
+        <seg>cifs.upcall, eventlogadm, findsmb, ldbadd, ldbdel, ldbedit,
+        ldbmodify, ldbrename, ldbsearch, mount.cifs, net, nmbd,
+        nmblookup, ntlm_auth, pdbedit, profiles, rpcclient, sharesec, smbcacls,
+        smbclient, smbcontrol, smbcquotas, smbd, smbget, smbpasswd, smbspool,
+        smbstatus, smbtar, smbtree, swat, testparm, umount.cifs, wbinfo,
+        winbindd, and (if not using system TDB) tdbbackup, tdbdump, and
+        tdbtool</seg>
+        <seg>libnss_winbind.so, libnss_wins.so, libnetapi.so, libsmbclient.so,
+        libsmbsharemodes.so, libtalloc.so, libwbclient.so, the pam_winbind.so
+        and pam_smbpass.so PAM libraries, and assorted character set,
+        filesystem and support modules.</seg>
+        <seg>/etc/samba, /usr/lib/samba, /usr/share/doc/samba-&samba3-version;,
+        /usr/share/samba, /var/lib/samba and (if configured) /var/log/samba</seg>
 @z
 
 @x
@@ -1032,16 +1006,6 @@ the corresponding bootscript are needed.</para>
           <para>mounts a Linux CIFS filesystem. It is usually invoked
           indirectly by the <command>mount</command> command when using the
           <option>-t cifs</option> option.</para>
-@z
-
-@x mount.smbfs
-          <para>is a symlink to <command>smbmount</command> which provides
-          <command>/bin/mount</command> with a way to mount remote Windows
-          (or <application>Samba</application>) fileshares.</para>
-@y
-          <para>is a symlink to <command>smbmount</command> which provides
-          <command>/bin/mount</command> with a way to mount remote Windows
-          (or <application>Samba</application>) fileshares.</para>
 @z
 
 @x net
@@ -1146,32 +1110,6 @@ the corresponding bootscript are needed.</para>
           the files you would like to download on the command-line.</para>
 @z
 
-@x smbmnt
-          <para>is a helper application used by the
-          <command>smbmount</command> program to do the actual mounting of
-          SMB shares. It can be installed setuid
-          <systemitem class='username'>root</systemitem> if you want
-          unprivileged users to be able to mount their SMB shares.</para>
-@y
-          <para>is a helper application used by the
-          <command>smbmount</command> program to do the actual mounting of
-          SMB shares. It can be installed setuid
-          <systemitem class='username'>root</systemitem> if you want
-          unprivileged users to be able to mount their SMB shares.</para>
-@z
-
-@x smbmount
-          <para>is usually invoked as <command>mount.smbfs</command> by the
-          <command>mount</command> command when using the
-          <parameter>-t smbfs</parameter> option, mounts a Linux SMB
-          filesystem.</para>
-@y
-          <para>is usually invoked as <command>mount.smbfs</command> by the
-          <command>mount</command> command when using the
-          <parameter>-t smbfs</parameter> option, mounts a Linux SMB
-          filesystem.</para>
-@z
-
 @x smbpasswd
           <para>changes a user's <application>Samba</application>
           password.</para>
@@ -1206,14 +1144,6 @@ the corresponding bootscript are needed.</para>
           <para>is a text-based SMB network browser.</para>
 @y
           <para>is a text-based SMB network browser.</para>
-@z
-
-@x smbumount
-          <para>is used by unprivileged users to unmount SMB filesystems,
-          provided that it is setuid root.</para>
-@y
-          <para>is used by unprivileged users to unmount SMB filesystems,
-          provided that it is setuid root.</para>
 @z
 
 @x swat

@@ -62,6 +62,128 @@
 @z
 
 @x
+      <para>November 27th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Added patch for expat-2.0.1 vulnerabilities (fixes
+	  ticket <ulink url="&blfs-ticket-root;3117">#3117</ulink>) - thanks to
+          wagner17 for raising that.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Corrected instructions to untar the fonts for
+          ghostscript-8.71 (fixes ticket
+          <ulink url="&blfs-ticket-root;3128">#3128</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Added patch for expat-2.0.1 vulnerabilities (fixes
+	  ticket <ulink url="&blfs-ticket-root;3117">#3117</ulink>) - thanks to
+          wagner17 for raising that.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Corrected instructions to untar the fonts for
+          ghostscript-8.71 (fixes ticket
+          <ulink url="&blfs-ticket-root;3128">#3128</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 26th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated Xpdf to patch level 5 by creating a
+          consolidated patch from the five upstream patches.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Added a warning note to the GTK+-2 package that if
+          the installation was done using a 'DESTDIR' method, then important
+          files were not installed, and give instructions how to create those
+          files.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated Xpdf to patch level 5 by creating a
+          consolidated patch from the five upstream patches.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - GTK+-2 パッケージのインストールにあたって
+          'DESTDIR' 方式を用いた場合の注意点を説明。
+          その場合には重要なファイルがインストールされないため、どのようにそのファイルを生成するのかを追記。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 25th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Added a note including a sed command to the
+	  gobject-introspection package that applies to anyone building
+          with Python-2.7 installed.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - gobject-introspection パッケージにて、Python-2.7 を用いてビルドを行なう場合を考慮し、
+          sed コマンドによる手順を追加。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 24th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - removed a now-obsolete command from the mutt
+          instrucions, thanks to Mike Hollis for pointing it out.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Mutt でのインストール手順にて古くなったコマンドを削除。
+          指摘を挙げてくれた Mike Hollis に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 22nd, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated the patch to the Recode package to fix a
+          GCC compatibility issue.</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Updated the download URLs for the Recode and Expect
+          packages.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010/11/22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Recode パッケージにて GCC 互換問題を解消するパッチを更新。</para>
+        </listitem>
+        <listitem>
+          <para>[randy] - Recode と Expect におけるダウンロード URL を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 20th, 2010</para>
       <itemizedlist>
         <listitem>

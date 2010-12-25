@@ -81,14 +81,14 @@ interpreter as an extension language.
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><!-- <xref linkend="gmp"/> and -->
-    <xref linkend="gcc"/> (build Java so that
-    <filename class='libraryfile'>libffi</filename> is built)</para>
+    <para role="optional"><xref linkend="libffi"/> or
+    <xref linkend="gcc"/> (build Java so that the
+    <filename class='libraryfile'>libffi</filename> library is built)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><!-- <xref linkend="gmp"/> and -->
-    <xref linkend="gcc"/> (build Java so that
-    <filename class='libraryfile'>libffi</filename> is built)</para>
+    <para role="optional"><xref linkend="libffi"/> または
+    <xref linkend="gcc"/> (build Java so that the
+    <filename class='libraryfile'>libffi</filename> library is built)</para>
 @z
 
 @x

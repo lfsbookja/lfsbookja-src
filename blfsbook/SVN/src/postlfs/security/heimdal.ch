@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY heimdal-time          "4.0 SBU (additional 2.5 SBU to run the test suite)">
+  <!ENTITY heimdal-time          "3.9 SBU (additional 2.3 SBU to run the test suite)">
 @y
-  <!ENTITY heimdal-time          "4.0 SBU (テストスイート実行時は、さらに 2.5 SBU)">
+  <!ENTITY heimdal-time          "3.9 SBU (テストスイート実行時は、さらに 2.3 SBU)">
 @z
 
 @x
@@ -25,52 +25,52 @@
     <title>Heimdal の概要</title>
 @z
 
-@x
-      <para>If you are using an LFS-&lfs-version; based system, building
-      <application>Heimdal</application> will overwrite <filename
-      class='libraryfile'>/usr/lib/libcom_err.so</filename> and install an
-      additional <filename class='libraryfile'>libcom_err</filename> library in
-      <filename class='directory'>/usr/lib</filename>. This will directly
-      conflict with the <filename class='libraryfile'>/lib/libcom_err</filename>
-      library installed by the <application>E2fsprogs</application> package in LFS.
-      Both upstream maintainers have taken steps to eliminate this condition.
-      However, the combination that currently exists causes this problem.</para>
-@y
-<para>
-LFS のバージョン &lfs-version; をベースシステムとしている場合、
-<application>Heimdal</application> をビルドすると、
-<filename class='libraryfile'>/usr/lib/libcom_err.so</filename> を上書きし、さらに
-<filename class='directory'>/usr/lib</filename> ディレクトリに
-<filename class='libraryfile'>libcom_err</filename> ライブラリをインストールします。
-これは LFS の <application>E2fsprogs</application> パッケージにてインストールされた
-<filename class='libraryfile'>/lib/libcom_err</filename>
-ライブラリと重複するものとなります。
-双方の開発者は、これを改善するよう開発を進めていますが、両パッケージを導入するとこのような問題を引き起こします。
-</para>
-@z
-
-@x
-      <para>There is a fix for the problem, but it will require you to recompile
-      the LFS-&lfs-version; <application>E2fsprogs</application> package to a
-      newer version than the &lfs-e2fsprogs-version; version used in that book.
-      Any version equal to or greater than the one used in the
-      <ulink url="&lfs-dev;">LFS-Development</ulink> book will do. After
-      recompiling <application>E2fsprogs</application>, you are now ready to
-      install <application>Heimdal</application>.</para>
-@y
-<para>
-これを解消する方法が存在しますが、それには
-LFS-&lfs-version; における <application>E2fsprogs</application>
-パッケージを
-There is a fix for the problem, but it will require you to recompile
-the LFS-&lfs-version; <application>E2fsprogs</application> package to a
-newer version than the &lfs-e2fsprogs-version; version used in that book.
-Any version equal to or greater than the one used in the
-<ulink url="&lfs-dev;">LFS-Development</ulink> book will do. After
-recompiling <application>E2fsprogs</application>, you are now ready to
-install <application>Heimdal</application>.
-</para>
-@z
+% @x
+%       <para>If you are using an LFS-&lfs-version; based system, building
+%       <application>Heimdal</application> will overwrite <filename
+%       class='libraryfile'>/usr/lib/libcom_err.so</filename> and install an
+%       additional <filename class='libraryfile'>libcom_err</filename> library in
+%       <filename class='directory'>/usr/lib</filename>. This will directly
+%       conflict with the <filename class='libraryfile'>/lib/libcom_err</filename>
+%       library installed by the <application>E2fsprogs</application> package in LFS.
+%       Both upstream maintainers have taken steps to eliminate this condition.
+%       However, the combination that currently exists causes this problem.</para>
+% @y
+% <para>
+% LFS のバージョン &lfs-version; をベースシステムとしている場合、
+% <application>Heimdal</application> をビルドすると、
+% <filename class='libraryfile'>/usr/lib/libcom_err.so</filename> を上書きし、さらに
+% <filename class='directory'>/usr/lib</filename> ディレクトリに
+% <filename class='libraryfile'>libcom_err</filename> ライブラリをインストールします。
+% これは LFS の <application>E2fsprogs</application> パッケージにてインストールされた
+% <filename class='libraryfile'>/lib/libcom_err</filename>
+% ライブラリと重複するものとなります。
+% 双方の開発者は、これを改善するよう開発を進めていますが、両パッケージを導入するとこのような問題を引き起こします。
+% </para>
+% @z
+% 
+% @x
+%       <para>There is a fix for the problem, but it will require you to recompile
+%       the LFS-&lfs-version; <application>E2fsprogs</application> package to a
+%       newer version than the &lfs-e2fsprogs-version; version used in that book.
+%       Any version equal to or greater than the one used in the
+%       <ulink url="&lfs-dev;">LFS-Development</ulink> book will do. After
+%       recompiling <application>E2fsprogs</application>, you are now ready to
+%       install <application>Heimdal</application>.</para>
+% @y
+% <para>
+% これを解消する方法が存在しますが、それには
+% LFS-&lfs-version; における <application>E2fsprogs</application>
+% パッケージを
+% There is a fix for the problem, but it will require you to recompile
+% the LFS-&lfs-version; <application>E2fsprogs</application> package to a
+% newer version than the &lfs-e2fsprogs-version; version used in that book.
+% Any version equal to or greater than the one used in the
+% <ulink url="&lfs-dev;">LFS-Development</ulink> book will do. After
+% recompiling <application>E2fsprogs</application>, you are now ready to
+% install <application>Heimdal</application>.
+% </para>
+% @z
 
 @x
     <para><application>Heimdal</application> is a free implementation
@@ -152,10 +152,10 @@ install <application>Heimdal</application>.
 
 @x
         <para>Required Patch: <ulink
-        url="&patch-root;/heimdal-&heimdal-version;-blfs_docs-1.patch"/></para>
+        url="&patch-root;/heimdal-&heimdal-version;-otp_fixes-1.patch"/></para>
 @y
         <para>Required Patch: <ulink
-        url="&patch-root;/heimdal-&heimdal-version;-blfs_docs-1.patch"/></para>
+        url="&patch-root;/heimdal-&heimdal-version;-otp_fixes-1.patch"/></para>
 @z
 
 @x
@@ -166,16 +166,10 @@ install <application>Heimdal</application>.
 
 @x
     <bridgehead renderas="sect4">Required to Build the Server-Side Tools</bridgehead>
-    <para role="required">
-    <xref linkend="db"/> (recommended) or GDBM (GDBM is installed in LFS)</para>
-    <!-- <xref linkend="db"/> is recommended (installed in LFS)
-    or <xref linkend="gdbm"/></para> -->
+    <para role="required"><xref linkend="db"/></para>
 @y
     <bridgehead renderas="sect4">Required to Build the Server-Side Tools</bridgehead>
-    <para role="required">
-    <xref linkend="db"/> (recommended) or GDBM (GDBM is installed in LFS)</para>
-    <!-- <xref linkend="db"/> is recommended (installed in LFS)
-    or <xref linkend="gdbm"/></para> -->
+    <para role="required"><xref linkend="db"/></para>
 @z
 
 @x
@@ -188,16 +182,22 @@ install <application>Heimdal</application>.
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="x-window-system"/>, and
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink></para>
+    <para role="optional"><xref linkend="openldap"/>,
+    <xref linkend="sqlite"/>,
+    <xref linkend="x-window-system"/>,
+    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>, and
+    <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> (with this
+    <ulink url="&patch-root;/libcap-ng-0.6.4-2.6.36_kernel_fix-1.patch">patch</ulink>
+    if the Linux kernel version is &gt;=2.6.36)</para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="x-window-system"/>, and
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink></para>
+    <para role="optional"><xref linkend="openldap"/>,
+    <xref linkend="sqlite"/>,
+    <xref linkend="x-window-system"/>,
+    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>, and
+    <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> (with this
+    <ulink url="&patch-root;/libcap-ng-0.6.4-2.6.36_kernel_fix-1.patch">patch</ulink>
+    if the Linux kernel version is &gt;=2.6.36)</para>
 @z
 
 @x
@@ -246,25 +246,23 @@ install <application>Heimdal</application>.
 
 @x
     <para>If you have <xref linkend="tetex"/> installed and wish to create
-    alternate forms of the documentation, change into the
+    PDF and Postscript forms of the documentation, change into the
     <filename class='directory'>doc</filename> directory and issue any or all
-    of the following commands (the <command>makeinfo</command> commands do not
-    require a <application>teTex</application> installation:</para>
+    of the following commands:</para>
 @y
     <para>If you have <xref linkend="tetex"/> installed and wish to create
-    alternate forms of the documentation, change into the
+    PDF and Postscript forms of the documentation, change into the
     <filename class='directory'>doc</filename> directory and issue any or all
-    of the following commands (the <command>makeinfo</command> commands do not
-    require a <application>teTex</application> installation:</para>
+    of the following commands:</para>
 @z
 
 @x
     <para>To test the results, issue: <command>make -k check</command>. The
-    <command>check-ipropd</command> test is known to fail but all others should
+    <command>check-iprop</command> test is known to fail but all others should
     pass.</para>
 @y
     <para>To test the results, issue: <command>make -k check</command>. The
-    <command>check-ipropd</command> test is known to fail but all others should
+    <command>check-iprop</command> test is known to fail but all others should
     pass.</para>
 @z
 
@@ -275,11 +273,11 @@ install <application>Heimdal</application>.
 @z
 
 @x
-    <para>If you built any of the alternate forms of documentation, install it
+    <para>If you built any of the additional forms of documentation, install it
     using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you built any of the alternate forms of documentation, install it
+    <para>If you built any of the additional forms of documentation, install it
     using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @z
@@ -301,11 +299,19 @@ install <application>Heimdal</application>.
 @z
 
 @x
-    <para><command>sed -i.bak ... lib/krb5/{krb5.h,cache.c}</command>: This
-    command is an upstream fix for a multiple declaration.</para>
+    <para><command>sed -i ... `grep -lr "/var/heimdal"
+    doc kadmin kdc lib`</command>: This command is used to change the
+    hard-coded references in the documentation files from
+    <filename class='directory'>/var/heimdal</filename> to the FHS compliant
+    <filename class='directory'>/var/lib/heimdal</filename> directory
+    name.</para>
 @y
-    <para><command>sed -i.bak ... lib/krb5/{krb5.h,cache.c}</command>: This
-    command is an upstream fix for a multiple declaration.</para>
+    <para><command>sed -i ... `grep -lr "/var/heimdal"
+    doc kadmin kdc lib`</command>: This command is used to change the
+    hard-coded references in the documentation files from
+    <filename class='directory'>/var/heimdal</filename> to the FHS compliant
+    <filename class='directory'>/var/lib/heimdal</filename> directory
+    name.</para>
 @z
 
 @x
@@ -380,13 +386,13 @@ install <application>Heimdal</application>.
     the Kerberos Credentials Manager.</para>
 @z
 
-@x
-    <para><command>ln -sfv .../mech.5 /usr/share/man/...</command>: These
-    commands are used to fix some broken symbolic links.</para>
-@y
-    <para><command>ln -sfv .../mech.5 /usr/share/man/...</command>: These
-    commands are used to fix some broken symbolic links.</para>
-@z
+% @x
+%     <para><command>ln -sfv .../mech.5 /usr/share/man/...</command>: These
+%     commands are used to fix some broken symbolic links.</para>
+% @y
+%     <para><command>ln -sfv .../mech.5 /usr/share/man/...</command>: These
+%     commands are used to fix some broken symbolic links.</para>
+% @z
 
 @x
     <para><command>mv ... ...SHADOW</command>, <command>mv ... /bin</command>
@@ -611,18 +617,16 @@ install <application>Heimdal</application>.
 @z
 
 @x
-        <para>This should have created two files in
-        <filename class="directory">/etc/heimdal</filename>:
-        <filename>krb5.keytab</filename> (Kerberos 5) and
-        <filename>srvtab</filename> (Kerberos 4). Both files should have 600
-        (root rw only) permissions. Keeping the keytab files from public access
+        <para>This should have created a file in
+        <filename class="directory">/etc/heimdal</filename> named
+        <filename>krb5.keytab</filename>. This file should have 600
+        (root rw only) permissions. Keeping the keytab file from public access
         is crucial to the overall security of the Kerberos installation.</para>
 @y
-        <para>This should have created two files in
-        <filename class="directory">/etc/heimdal</filename>:
-        <filename>krb5.keytab</filename> (Kerberos 5) and
-        <filename>srvtab</filename> (Kerberos 4). Both files should have 600
-        (root rw only) permissions. Keeping the keytab files from public access
+        <para>This should have created a file in
+        <filename class="directory">/etc/heimdal</filename> named
+        <filename>krb5.keytab</filename>. This file should have 600
+        (root rw only) permissions. Keeping the keytab file from public access
         is crucial to the overall security of the Kerberos installation.</para>
 @z
 
@@ -723,7 +727,7 @@ install <application>Heimdal</application>.
         <application>Crypt::Cracklib</application>
         <application>Perl</application> module. Download it from the CPAN
         site. The URL at the time of this writing is <ulink
-        url="http://cpan.org/authors/id/D/DA/DANIEL/Crypt-Cracklib-1.2.tar.gz"/>.
+        url="http://www.cpan.org/authors/id/D/DA/DANIEL/Crypt-Cracklib-1.5.tar.gz"/>.
         After unpacking the tarball and changing into the newly created
         directory, issue the following command to add the BLFS
         <application>Cracklib</application> dictionary location to one of the
@@ -733,7 +737,7 @@ install <application>Heimdal</application>.
         <application>Crypt::Cracklib</application>
         <application>Perl</application> module. Download it from the CPAN
         site. The URL at the time of this writing is <ulink
-        url="http://cpan.org/authors/id/D/DA/DANIEL/Crypt-Cracklib-1.2.tar.gz"/>.
+        url="http://www.cpan.org/authors/id/D/DA/DANIEL/Crypt-Cracklib-1.5.tar.gz"/>.
         After unpacking the tarball and changing into the newly created
         directory, issue the following command to add the BLFS
         <application>Cracklib</application> dictionary location to one of the
@@ -743,13 +747,11 @@ install <application>Heimdal</application>.
 @x
         <para>Then use the standard <command>perl Makefile.PL</command>;
         <command>make</command>; <command>make test</command>;
-        <command>make install</command> commands. Note that one test fails
-        due to an unknown reason.</para>
+        <command>make install</command> commands.</para> 
 @y
         <para>Then use the standard <command>perl Makefile.PL</command>;
         <command>make</command>; <command>make test</command>;
-        <command>make install</command> commands. Note that one test fails
-        due to an unknown reason.</para>
+        <command>make install</command> commands.</para> 
 @z
 
 @x
@@ -865,26 +867,26 @@ install <application>Heimdal</application>.
 @z
 
 @x
-        <seg>hdb_ldap.{so,a}, libasn1.{so,a}, libeditline.{so,a},
+        <seg>hdb_ldap.{so,a}, libasn1.{so,a},
         libgssapi.{so,a}, libhdb.{so,a}, libheimntlm.{so,a}, libhx509.{so,a},
         libkadm5clnt.{so,a}, libkadm5srv.{so,a}, libkafs.{so,a},
         libkdc.{so,a}, libkrb5.{so,a}, libotp.{so,a}, libroken.{so,a},
-        libsl.{so,a}, libss-krb5.{so,a} and windc.{so,a}</seg>
+        libsl.{so,a}, libss-krb5.{so,a} and wind.{so,a}</seg>
 @y
-        <seg>hdb_ldap.{so,a}, libasn1.{so,a}, libeditline.{so,a},
+        <seg>hdb_ldap.{so,a}, libasn1.{so,a},
         libgssapi.{so,a}, libhdb.{so,a}, libheimntlm.{so,a}, libhx509.{so,a},
         libkadm5clnt.{so,a}, libkadm5srv.{so,a}, libkafs.{so,a},
         libkdc.{so,a}, libkrb5.{so,a}, libotp.{so,a}, libroken.{so,a},
-        libsl.{so,a}, libss-krb5.{so,a} and windc.{so,a}</seg>
+        libsl.{so,a}, libss-krb5.{so,a} and wind.{so,a}</seg>
 @z
 
 @x
         <seg>/etc/heimdal, /usr/include/gssapi, /usr/include/kadm5,
-        /usr/include/krb5, /usr/include/roken, /usr/include/ss,
+        /usr/include/krb5, /usr/include/roken,
         /usr/share/doc/heimdal-&heimdal-version; and /var/lib/heimdal</seg>
 @y
         <seg>/etc/heimdal, /usr/include/gssapi, /usr/include/kadm5,
-        /usr/include/krb5, /usr/include/roken, /usr/include/ss,
+        /usr/include/krb5, /usr/include/roken,
         /usr/share/doc/heimdal-&heimdal-version; and /var/lib/heimdal</seg>
 @z
 

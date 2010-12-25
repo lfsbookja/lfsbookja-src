@@ -97,12 +97,10 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="expat"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="expat"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
 @x

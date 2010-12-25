@@ -83,13 +83,11 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="gtk2"/>, and
+    <para role="required"><xref linkend="gtk2"/> and
     <xref linkend="libxml2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="gtk2"/>,
     <xref linkend="libxml2"/></para>
 @z
 
@@ -162,18 +160,6 @@
     <title>Command Explanations</title>
 @y
     <title>&j-CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--disable-mozilla-plugin</parameter>: This parameter prevents
-    building the browser plugin as <application>Firefox</application> and
-    <application>SeaMonkey</application> have built-in SVG render capability.</para>
-@y
-<para>
-<parameter>--disable-mozilla-plugin</parameter>: This parameter prevents
-building the browser plugin as <application>Firefox</application> and
-<application>SeaMonkey</application> have built-in SVG render capability.
-</para>
 @z
 
 @x

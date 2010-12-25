@@ -93,13 +93,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><ulink
     url="http://www.gnu.org/software/guile-gtk/">guile-gtk</ulink> and
-    <xref linkend="gcc"/> (build Java so that
+    <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
     <filename class='libraryfile'>libffi</filename> is built)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><ulink
-    url="http://www.gnu.org/software/guile-gtk/">guile-gtk</ulink>,
-    <xref linkend="gcc"/> (build Java so that
+    url="http://www.gnu.org/software/guile-gtk/">guile-gtk</ulink> and
+    <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
     <filename class='libraryfile'>libffi</filename> is built)</para>
 @z
 

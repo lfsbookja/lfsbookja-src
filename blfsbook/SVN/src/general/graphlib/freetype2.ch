@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY freetype2-buildsize     "32 MB (includes installing additional documentation)">
+  <!ENTITY freetype2-buildsize     "39 MB (includes installing additional documentation)">
 @y
-  <!ENTITY freetype2-buildsize     "32 MB (追加ドキュメントのインストールを含む)">
+  <!ENTITY freetype2-buildsize     "39 MB (追加ドキュメントのインストールを含む)">
 @z
 
 @x
@@ -170,23 +170,22 @@
 @z
 
 @x
-    <para><command>sed -i ... 's:.*(#.*BYTE.*) .*:\1:' ...
-    's:.*(#.*SUBPIX.*) .*:\1:' include/freetype/config/ftoption.h</command>:
-    This command enables the TrueType native bytecode interpreter and LCD
-    optimized rendering features. These options result in improved rendering
-    of fonts, but may have patent restrictions. Be sure to read
-    <ulink url="http://www.freetype.org/patents.html"/> before enabling these
-    options.</para>
+    <para><command>sed -i -r 's:.*(#.*SUBPIXEL.*) .*:\1:'
+    include/freetype/config/ftoption.h</command>:
+    This command enables LCD optimized rendering. This option results in improved
+    rendering of fonts, but may have patent restrictions. Be sure to read the
+    <literal>'Other patent issues'</literal> part of
+    <ulink url="http://www.freetype.org/patents.html"/> before enabling this
+    option.</para>
 @y
 <para>
-<command>sed -i ... 's:.*(#.*BYTE.*) .*:\1:' ...
-'s:.*(#.*SUBPIX.*) .*:\1:' include/freetype/config/ftoption.h</command>:
-このコマンドは、TrueType のネイティブなバイトコードインタープリタや LCD
-最適化レンダリング機能 (LCD optimized rendering feature)
-を有効にします。
+<command>sed -i -r 's:.*(#.*SUBPIXEL.*) .*:\1:'
+include/freetype/config/ftoption.h</command>:
+このコマンドは LCD 最適化レンダリング (LCD optimized rendering) 機能を有効にします。
 これによりフォントの表示が改善されるものとなりますが、一方で版権の制約が発生するかもしれません。
 以下のリンク <ulink url="http://www.freetype.org/patents.html"/>
-に示される内容を十分に確認してから、これらの機能の有効化を行ってください。
+における <literal>'Other patent issues'</literal>
+の項の内容を十分に確認してから、これらの機能の有効化を行ってください。
 </para>
 @z
 

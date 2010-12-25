@@ -87,7 +87,7 @@
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-desktop"/>,
-    <xref linkend="gst-plugins-base"/> (with <xref linkend="libtheora"/>),
+    <xref linkend="gst-plugins-base"/> (<xref linkend="libtheora"/> を含む),
     <xref linkend="libcanberra"/>,
     <xref linkend="librsvg"/>,
     <xref linkend="udev"/></para>
@@ -220,8 +220,7 @@
           <para>is the webcam with graphical effects tool.</para>
 @y
 <para>
-
-is the webcam with graphical effects tool.
+グラフィック効果ツールを伴うウェブカメラです。
 </para>
 @z
 

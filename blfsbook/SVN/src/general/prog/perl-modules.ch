@@ -81,12 +81,15 @@ names.
       (typically near the bottom-most dependency) to avoid redundancy and
       additional clutter in the instructions.</para>
 @y
-      <para>Some dependencies, such as the <xref linkend="perl-test-pod"/>
-      module, are used by several of the listed dependencies of the main
-      module and perhaps also the module being installed. Dependencies such as
-      this are only listed once in the dependency chain for each main module
-      (typically near the bottom-most dependency) to avoid redundancy and
-      additional clutter in the instructions.</para>
+<para>
+
+Some dependencies, such as the <xref linkend="perl-test-pod"/>
+module, are used by several of the listed dependencies of the main
+module and perhaps also the module being installed. Dependencies such as
+this are only listed once in the dependency chain for each main module
+(typically near the bottom-most dependency) to avoid redundancy and
+additional clutter in the instructions.
+</para>
 @z
 
 % ----------
@@ -94,18 +97,11 @@ names.
 % ----------
 @x
     <para>The Archive::Zip module allows a <application>Perl</application>
-    program to create, manipulate, read, and write Zip archive files. The
-    modules listed below are installed using the standard
-    <application>Perl</application> module
-    <xref linkend="perl-standard-install"/>.</para>
+    program to create, manipulate, read, and write Zip archive files.</para>
 @y
 <para>
 Archive::Zip モジュールは、<application>Perl</application>
 プログラムにおいて Zip アーカイブファイルの生成、制御、読み書きの機能を提供します。
-以下に示すモジュールは、標準的な
-<application>Perl</application> モジュールの
-<xref linkend="perl-standard-install"/>
-に従ってインストールすることが出来ます。
 </para>
 @z
 
@@ -120,51 +116,51 @@ Archive::Zip モジュールは、<application>Perl</application>
 % ----------
 % Compress::Zlib
 % ----------
-@x
-    <para>The Compress::Zlib module provides a <application>Perl</application>
-    interface to the <application>Zlib</application> compression library. Most
-    of the functionality provided by <application>Zlib</application> is
-    available in Compress::Zlib. The module can be split into two general areas
-    of functionality, namely in-memory compression/decompression and read/write
-    access to gzip files. This module and all the dependencies are installed
-    using the standard <xref linkend="perl-standard-install"/>.</para>
-@y
-<para>
-Compress::Zlib モジュールは <application>Perl</application>
-に対して <application>Zlib</application> 圧縮ライブラリへのインターフェースを提供します。
-これによって <application>Zlib</application>
-ライブラリのほとんどの機能を Compress::Zlib を通じて利用できます。
+% @x
+%     <para>The Compress::Zlib module provides a <application>Perl</application>
+%     interface to the <application>Zlib</application> compression library. Most
+%     of the functionality provided by <application>Zlib</application> is
+%     available in Compress::Zlib. The module can be split into two general areas
+%     of functionality, namely in-memory compression/decompression and read/write
+%     access to gzip files. This module and all the dependencies are installed
+%     using the standard <xref linkend="perl-standard-install"/>.</para>
+% @y
+% <para>
+% Compress::Zlib モジュールは <application>Perl</application>
+% に対して <application>Zlib</application> 圧縮ライブラリへのインターフェースを提供します。
+% これによって <application>Zlib</application>
+% ライブラリのほとんどの機能を Compress::Zlib を通じて利用できます。
+% 
+% The module can be split into two general areas
+% of functionality, namely in-memory compression/decompression and read/write
+% access to gzip files. This module and all the dependencies are installed
+% using the standard <xref linkend="perl-standard-install"/>.
+% </para>
+% @z
 
-The module can be split into two general areas
-of functionality, namely in-memory compression/decompression and read/write
-access to gzip files. This module and all the dependencies are installed
-using the standard <xref linkend="perl-standard-install"/>.
-</para>
-@z
+% @x
+%       <para>The Compress::Raw::Zlib module requires the following
+%       <command>sed</command> after untarring the distribution tarball (before
+%       any other build commands) to use the system-installed copy of
+%       <application>Zlib</application>.</para>
+% @y
+% <para>
+% Compress::Raw::Zlib モジュールは、module requires the following
+% <command>sed</command> after untarring the distribution tarball (before
+% any other build commands) to use the system-installed copy of
+% <application>Zlib</application>.
+% </para>
+% @z
 
-@x
-      <para>The Compress::Raw::Zlib module requires the following
-      <command>sed</command> after untarring the distribution tarball (before
-      any other build commands) to use the system-installed copy of
-      <application>Zlib</application>.</para>
-@y
-<para>
-Compress::Raw::Zlib モジュールは、module requires the following
-<command>sed</command> after untarring the distribution tarball (before
-any other build commands) to use the system-installed copy of
-<application>Zlib</application>.
-</para>
-@z
-
-@x
-        url="http://cpan.org/authors/id/P/PM/PMQS/Compress-Zlib-&Compress-Zlib-version;.tar.gz">
-        Compress-Zlib-&Compress-Zlib-version;</ulink>
-        (uses the standard <xref linkend="perl-standard-install"/>)</para>
-@y
-        url="http://cpan.org/authors/id/P/PM/PMQS/Compress-Zlib-&Compress-Zlib-version;.tar.gz">
-        Compress-Zlib-&Compress-Zlib-version;</ulink>
-        (標準的な <xref linkend="perl-standard-install"/> を利用)</para>
-@z
+% @x
+%         url="http://cpan.org/authors/id/P/PM/PMQS/Compress-Zlib-&Compress-Zlib-version;.tar.gz">
+%         Compress-Zlib-&Compress-Zlib-version;</ulink>
+%         (uses the standard <xref linkend="perl-standard-install"/>)</para>
+% @y
+%         url="http://cpan.org/authors/id/P/PM/PMQS/Compress-Zlib-&Compress-Zlib-version;.tar.gz">
+%         Compress-Zlib-&Compress-Zlib-version;</ulink>
+%         (標準的な <xref linkend="perl-standard-install"/> を利用)</para>
+% @z
 
 @x
                 url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
@@ -172,6 +168,38 @@ any other build commands) to use the system-installed copy of
 @y
                 url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
                 IO-Compress-Bzip2-&IO-Compress-Bzip2-version;</ulink> (テスト時に利用される)</para>
+@z
+
+% ----------
+% Date::Manip
+% ----------
+@x
+    <para>Date::Manip is a set of routines designed to make any common
+    date/time manipulation easy to do. Operations such as comparing two times,
+    calculating a time a given amount of time from another, or parsing
+    international times are all easily done. From the very beginning, the
+    main focus of Date::Manip has been to be able to do ANY desired date/time
+    operation easily.</para>
+@y
+<para>
+Date::Manip
+は、日付、時刻に関する操作を容易に実現する汎用的なルーチン群を提供します。
+２つの時刻を比較したり、ある時刻からの一定時間後の時刻を計算したり、あるいは各国の時刻を算出したりするなどの操作を簡単に行うことができます。
+Date::Manip
+では、その開発当初より、日付、時刻に関する、ありとあらゆる操作を簡単に実現することを目指して構築されています。
+</para>
+@z
+
+@x
+        <para><ulink
+        url="http://cpan.org/authors/id/S/SB/SBECK/Date-Manip-&Date-Manip-version;.tar.gz">
+        Date-Manip-&Date-Manip-version;</ulink>
+        (uses the standard <xref linkend="perl-standard-install"/>)</para>
+@y
+        <para><ulink
+        url="http://cpan.org/authors/id/S/SB/SBECK/Date-Manip-&Date-Manip-version;.tar.gz">
+        Date-Manip-&Date-Manip-version;</ulink>
+        (標準的な <xref linkend="perl-standard-install"/> を利用)</para>
 @z
 
 

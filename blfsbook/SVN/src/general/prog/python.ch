@@ -129,16 +129,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="pth"/>,
-    <xref linkend="gcc"/> (install JAVA for the
-    <filename class="libraryfile">libffi</filename> library) or
-    <ulink url="http://sourceware.org/libffi/">libffi</ulink>, and
+    <xref linkend="libffi"/> or <xref linkend="gcc"/> (install JAVA so that the 
+    <filename class="libraryfile">libffi</filename> library is built), and
     <ulink url="http://www.bluez.org/">BlueZ</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="pth"/>,
-    <xref linkend="gcc"/> (install JAVA for the
-    <filename class="libraryfile">libffi</filename> library) または
-    <ulink url="http://sourceware.org/libffi/">libffi</ulink>,
+    <xref linkend="libffi"/> または <xref linkend="gcc"/> (install JAVA so that the 
+    <filename class="libraryfile">libffi</filename> library is built),
     <ulink url="http://www.bluez.org/">BlueZ</ulink></para>
 @z
 

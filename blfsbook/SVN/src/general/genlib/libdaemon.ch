@@ -79,10 +79,12 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="lynx"/></para>
+    <para role="optional"><xref linkend="lynx"/> and
+    <xref linkend="doxygen"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="lynx"/></para>
+    <para role="optional"><xref linkend="lynx"/>,
+    <xref linkend="doxygen"/></para>
 @z
 
 @x
@@ -144,11 +146,13 @@
 @x
         <seg>None</seg>
         <seg>libdaemon.{so,a}</seg>
-        <seg>/usr/{include/libdaemon,share/doc/libdaemon}</seg>
+        <seg>/usr/include/libdaemon and
+        /usr/share/doc/libdaemon-&libdaemon-version;</seg>
 @y
         <seg>なし</seg>
         <seg>libdaemon.{so,a}</seg>
-        <seg>/usr/{include/libdaemon,share/doc/libdaemon}</seg>
+        <seg>/usr/include/libdaemon,
+        /usr/share/doc/libdaemon-&libdaemon-version;</seg>
 @z
 
 @x
