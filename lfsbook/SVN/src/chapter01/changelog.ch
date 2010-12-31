@@ -57,6 +57,51 @@
 @z
 
 @x
+      <para>2010-12-29</para>
+      <itemizedlist>
+         <listitem>
+          <para>[ken] Allow shadow to install its korean and chinese
+          man-pages, since man-db can now format them. Thanks to
+          William Immendorf for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-12-29</para>
+      <itemizedlist>
+         <listitem>
+          <para>[ken] man-db において韓国語、中国語を取り扱うことができるようになったため、インストールすることに。
+          報告を上げてくれた William Immendorf に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2010-12-28</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Upgrade to E2fsprogs-1.41.14. Fixes
+          <ulink url="&lfs-ticket-root;2812">#2812</ulink>.</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Upgrade to Coreutils-8.8. Fixes
+          <ulink url="&lfs-ticket-root;2811">#2811</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2010-12-28</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] E2fsprogs-1.41.14 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2812">#2812</ulink> を Fix に。</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Coreutils-8.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2811">#2811</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-12-19</para>
       <itemizedlist>
          <listitem>

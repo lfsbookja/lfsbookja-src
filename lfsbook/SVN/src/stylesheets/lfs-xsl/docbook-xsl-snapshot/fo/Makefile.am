@@ -1,5 +1,6 @@
 BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
 srcdir = @srcdir@
+EXTRA_DIST = titlepage.ch
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
 	autoidx-ng.xsl autoidx.xsl autotoc.xsl axf.xsl 
 	biblio-iso690.xsl biblio.xsl block.xsl callout.xsl
@@ -10,10 +11,15 @@ srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
 	param.xsl passivetex.xsl pdf2index pi.xsl profile-docbook.xsl
 	ptc.xsl qandaset.xsl refentry.xsl sections.xsl spaces.xsl
 	synop.xsl table.xsl task.xsl titlepage.templates.xml
-	titlepage.templates.xsl titlepage.xsl toc.xsl verbatim.xsl
+	titlepage.templates.xsl toc.xsl verbatim.xsl
 	xep.xsl xref.xsl
+srcs_change = titlepage.xsl
 
-all: $(srcs)
+SUFFIXES = .ch .xsl
+.ch.xsl:
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+
+all: ctie $(srcs) $(srcs_change)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
@@ -21,3 +27,6 @@ ctie:
 $(srcs):
 	cp -p $(BOOKdir)/* .
 
+$(srcs_change): titlepage.xsl
+
+titlepage.xsl: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/titlepage.ch

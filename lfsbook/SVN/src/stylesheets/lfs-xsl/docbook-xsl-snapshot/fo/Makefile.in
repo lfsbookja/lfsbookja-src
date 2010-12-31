@@ -138,10 +138,14 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
+EXTRA_DIST = titlepage.ch
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
+srcs_change = titlepage.xsl
+SUFFIXES = .ch .xsl
 all: all-am
 
 .SUFFIXES:
+.SUFFIXES: .ch .xsl
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -325,16 +329,22 @@ uninstall-am:
 	param.xsl passivetex.xsl pdf2index pi.xsl profile-docbook.xsl
 	ptc.xsl qandaset.xsl refentry.xsl sections.xsl spaces.xsl
 	synop.xsl table.xsl task.xsl titlepage.templates.xml
-	titlepage.templates.xsl titlepage.xsl toc.xsl verbatim.xsl
+	titlepage.templates.xsl toc.xsl verbatim.xsl
 	xep.xsl xref.xsl
+.ch.xsl:
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 
-all: $(srcs)
+all: ctie $(srcs) $(srcs_change)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 $(srcs):
 	cp -p $(BOOKdir)/* .
+
+$(srcs_change): titlepage.xsl
+
+titlepage.xsl: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/titlepage.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
