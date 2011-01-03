@@ -57,6 +57,27 @@
 @z
 
 @x
+      <para>2011-01-02</para>
+      <itemizedlist>
+         <listitem>
+          <para>[bdubbs] Added XZ-Utils as a new compression 
+          utility package for independent use or with tar. Fixes
+          <ulink url="&lfs-ticket-root;2619">#2619</ulink>.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-01-02</para>
+      <itemizedlist>
+         <listitem>
+          <para>[bdubbs] ファイル圧縮を行う新たなユーティリティ XZ-Utils を追加。
+          <ulink url="&lfs-ticket-root;2619">#2619</ulink> を Fix に。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2010-12-29</para>
       <itemizedlist>
          <listitem>

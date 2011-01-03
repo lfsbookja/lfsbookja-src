@@ -651,6 +651,17 @@ LFS が扱うパッケージのインストール時には、たいてい利用�
 </para>
 @z
 
+@x Xz utils
+        <para>This package contains programs for compressing and decompressing 
+        files.  It provides the highest compression generally available
+        and the useful for decompressing packages XZ or LZMA format.</para>
+@y
+<para>
+このパッケージはファイルの圧縮、伸張 (解凍) を行うプログラムを提供します。
+一般的に用いられるものの中では高い圧縮率を実現するものであり、特に XZ フォーマットや LZMA フォーマットの伸張 (解凍) に利用されます。
+</para>
+@z
+
 @x Zlib
         <para>This package contains compression and decompression routines 
         used by some programs.</para>

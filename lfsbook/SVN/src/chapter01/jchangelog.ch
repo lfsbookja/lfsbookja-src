@@ -54,12 +54,27 @@
 -->
 
     <listitem>
+      <para>2011-01-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/packages.ch,
+          src/{chapter05,chapter06}/xz-utils.ch,
+          src/appendices/dependencies.ch,
+          src/prologue/why.ch:
+          SVN-20101229, r9436 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2010-12-31</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
           src/chapter06/src/chapter06/shadow.ch:
-          SVN-20101231, r9434 対応。
+          SVN-20101229, r9434 対応。
           </para>
         </listitem>
       </itemizedlist>

@@ -1380,6 +1380,28 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
+@x Xz
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, and Make.</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, GCC, Glibc, Make</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Zlib
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
 @y

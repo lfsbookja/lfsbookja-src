@@ -657,15 +657,15 @@ Linux カーネルはわりと頻繁に更新されます。
         <para>MD5 sum: <literal>&vim-md5;</literal></para>
 @z
 
-% @x
-%         <para>Home page: <ulink url="&vim-lang-home;"/></para>
-%         <para>Download: <ulink url="&vim-lang-url;"/></para>
-%         <para>MD5 sum: <literal>&vim-lang-md5;</literal></para>
-% @y
-%         <para>ホームページ: <ulink url="&vim-lang-home;"/></para>
-%         <para>ダウンロード: <ulink url="&vim-lang-url;"/></para>
-%         <para>MD5 sum: <literal>&vim-lang-md5;</literal></para>
-% @z
+@x Xz
+        <para>Home page: <ulink url="&xz-home;"/></para>
+        <para>Download: <ulink url="&xz-url;"/></para>
+        <para>MD5 sum: <literal>&xz-md5;</literal></para>
+@y
+        <para>ホームページ: <ulink url="&xz-home;"/></para>
+        <para>ダウンロード: <ulink url="&xz-url;"/></para>
+        <para>MD5 sum: <literal>&xz-md5;</literal></para>
+@z
 
 @x
         <para>Home page: <ulink url="&zlib-home;"/></para>
