@@ -867,10 +867,10 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Man-DB
          <seg>Bash, Binutils, Bzip2, Coreutils, Flex, GCC, GDBM, Gettext,
-         Glibc, Grep, Groff, Gzip, Less, Make, and Sed</seg>
+         Glibc, Grep, Groff, Gzip, Less, Make, Sed, and Xz</seg>
 @y
          <seg>Bash, Binutils, Bzip2, Coreutils, Flex, GCC, GDBM, Gettext,
-         Glibc, Grep, Groff, Gzip, Less, Make, Sed</seg>
+         Glibc, Grep, Groff, Gzip, Less, Make, Sed, Xz</seg>
 @z
 @x
           <seg>Not run. Requires Man-DB test suite package</seg>
@@ -1391,9 +1391,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Man-DB</seg>
 @y
-          <seg>なし</seg>
+          <seg>Man-DB</seg>
 @z
 @x
           <seg>None</seg>

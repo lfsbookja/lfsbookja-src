@@ -83,7 +83,7 @@ Xz パッケージは、ファイルの圧縮、伸張 (解凍) を行うプロ�
         xzdec, xzdiff, xzegrep (link to xzgrep), xzfgrep (link to xzgrep),
         xzgrep, xzless, xzmore</seg>
         <seg>liblzma.{a,so}</seg>
-        <seg>/usr/include/lzma and /usr/share/doc/xz</seg>
+        <seg>/usr/include/lzma and /usr/share/doc/xz-&xz-version;</seg>
 @y
         <seg>lzcat (xz へのリンク), lzcmp (xzdiff へのリンク), lzdiff (xzdiff へのリンク),
         bzdiff, lzegrep (xzgrep へのリンク), lzfgrep (xzgrep へのリンク),
@@ -92,7 +92,7 @@ Xz パッケージは、ファイルの圧縮、伸張 (解凍) を行うプロ�
         xzdec, xzdiff, xzegrep (xzgrep へのリンク), xzfgrep (xzgrep へのリンク),
         xzgrep, xzless, xzmore</seg>
         <seg>liblzma.{a,so}</seg>
-        <seg>/usr/include/lzma, /usr/share/doc/xz</seg>
+        <seg>/usr/include/lzma and /usr/share/doc/xz-&xz-version;</seg>
 @z
 
 @x

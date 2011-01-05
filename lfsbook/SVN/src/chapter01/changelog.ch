@@ -57,6 +57,26 @@
 @z
 
 @x
+      <para>2011-01-04</para>
+      <itemizedlist>
+         <listitem>
+          <para>[bdubbs] Move XZ-Utils to before Man-DB.
+          Tweak install instructions.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-01-04</para>
+      <itemizedlist>
+         <listitem>
+          <para>[bdubbs] XZ-Utils を Man-DB の説明の前に移動。
+          またインストール手順の微修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-01-02</para>
       <itemizedlist>
          <listitem>
