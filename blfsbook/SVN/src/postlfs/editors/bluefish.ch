@@ -26,10 +26,11 @@
     languages, and as such is ideal for editing XML and HTML files.</para>
 @y
 <para>
-<application>Bluefish</application> package contains a powerful X
-Window System editor designed for web designers, but also suitable
-as a programmer's editor.  Bluefish supports many programming and markup
-languages, and as such is ideal for editing XML and HTML files.
+<application>Bluefish</application>
+は X ウィンドウシステムにて、ウェブデザイナー向けに構築されているエディタです。
+ただそれだけではなくプログラマー向けのものとしても利用できます。
+Bluefish では、プログラミング言語やマークアップ言語の多くをサポートしています。
+特に XML ファイルや HTML ファイルを編集するエディタとして優れています。
 </para>
 @z
 
@@ -102,7 +103,7 @@ languages, and as such is ideal for editing XML and HTML files.
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="gnome-vfs"/> (リモートファイル利用の場合),
-    <xref linkend="aspell"/> (for spellchecking),
+    <xref linkend="aspell"/> (スペルチェックに必要),
     <xref linkend="libgnomeui"/>,
     <xref linkend="gnome-mime-data"/>,
     <xref linkend="desktop-file-utils"/>,
@@ -173,10 +174,9 @@ languages, and as such is ideal for editing XML and HTML files.
       to run.</para>
 @y
 <para>
-The directory <filename class='directory'>~/.bluefish</filename> is
-created by the program when it is first run, and the configuration files
-are maintained by the program automatically to preserve settings from run
-to run.
+ディレクトリ <filename class='directory'>~/.bluefish</filename>
+は、プログラムを初めて起動した時に生成されます。
+そしてプログラムが自動的に設定ファイルを更新し、利用のたびに設定内容が保存されます。
 </para>
 @z
 

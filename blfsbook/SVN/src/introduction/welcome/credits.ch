@@ -469,7 +469,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         JadeTeX, Java Access Bridge, JUnit, K3b, Libassuan, LessTif (rewrite),
         libexif, libgail-gnome, libgcrypt, libgnomecups, libgnomekbd,
         libgpg-error,
-        Libidn, Libksba, libmpeg2, libmusicbrainz, libquicktime, LZMA-Utils,
+        Libidn, Libksba, libmpeg2, libmusicbrainz, libquicktime,
         mcs, MIT Kerberos V5 (many updates and enhancements), MPlayer
         (extensive overhaul), NSS, Orca, Other Programming Tools, PDL,
         Perl Modules, pilot-link,
@@ -494,7 +494,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         JadeTeX, Java Access Bridge, JUnit, K3b, Libassuan, LessTif (rewrite),
         libexif, libgail-gnome, libgcrypt, libgnomecups, libgnomekbd,
         libgpg-error,
-        Libidn, Libksba, libmpeg2, libmusicbrainz, libquicktime, LZMA-Utils,
+        Libidn, Libksba, libmpeg2, libmusicbrainz, libquicktime,
         mcs, MIT Kerberos V5 (many updates and enhancements), MPlayer
         (extensive overhaul), NSS, Orca, Other Programming Tools, PDL,
         Perl Modules, pilot-link,
@@ -509,7 +509,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
 @x
         <para>aspell, balsa, bind, <!-- bonobo, bonobo-conf,--> cvs server,
         emacs, evolution, exim, expat, <!--gnome-print,-->
-        GnuCash, gtkhtml, <!--guppi,--> guile, g-wrap, leafnode, lesstif,
+        GnuCash, gtkhtml, <!--guppi,--> guile, leafnode, lesstif,
         <!--libcapplet,--> libesmtp, <!--libghttp, libglade,--> pine, portmap,
         PostgreSQL, qpopper, reiserfs, <!--Samba,--> sendmail,
         slrn, <!--soup,--> teTeX, tcp-wrappers, and xinetd:
@@ -517,7 +517,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
 @y
         <para>aspell, balsa, bind, <!-- bonobo, bonobo-conf,--> cvs server,
         emacs, evolution, exim, expat, <!--gnome-print,-->
-        GnuCash, gtkhtml, <!--guppi,--> guile, g-wrap, leafnode, lesstif,
+        GnuCash, gtkhtml, <!--guppi,--> guile, leafnode, lesstif,
         <!--libcapplet,--> libesmtp, <!--libghttp, libglade,--> pine, portmap,
         PostgreSQL, qpopper, reiserfs, <!--Samba,--> sendmail,
         slrn, <!--soup,--> teTeX, tcp-wrappers, and xinetd:

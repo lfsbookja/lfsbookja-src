@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY dbus-buildsize     "26 MB (65MB if all API docs and man pages are installed)">
+  <!ENTITY dbus-buildsize     "26 MB (65 MB if all API docs and man pages are installed)">
 @y
-  <!ENTITY dbus-buildsize     "26 MB (65MB if all API docs and man pages are installed)">
+  <!ENTITY dbus-buildsize     "26 MB (API ドキュメントと man ページをすべてインストールする場合は 65 MB">
 @z
 
 @x

@@ -191,16 +191,14 @@ install directory as described in the introduction of this Chapter.
         orbit2-config and typelib-dump</seg>
         <seg>libname-server-2.a, libORBit-2.{so,a}, libORBit-imodule-2.{so,a},
         libORBitCosNaming-2.{so,a}, and Everything_module.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/orbit-2.0/{ORBitservices,
-        orbit-idl,orbit/{dynamic,orb-core,poa,util}},lib/orbit-2.0,
+        <seg><envar>$GNOME_PREFIX</envar>/{include/orbit-2.0/*,lib/orbit-2.0,
         share/{gtk-doc/html/ORBit2,idl/orbit-2.0}}</seg>
 @y
         <seg>ior-decode-2, linc-cleanup-sockets, orbit-idl-2,
-        orbit2-config and typelib-dump</seg>
+        orbit2-config, typelib-dump</seg>
         <seg>libname-server-2.a, libORBit-2.{so,a}, libORBit-imodule-2.{so,a},
-        libORBitCosNaming-2.{so,a}, and Everything_module.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/orbit-2.0/{ORBitservices,
-        orbit-idl,orbit/{dynamic,orb-core,poa,util}},lib/orbit-2.0,
+        libORBitCosNaming-2.{so,a}, Everything_module.{so,a}</seg>
+        <seg><envar>$GNOME_PREFIX</envar>/{include/orbit-2.0/*,lib/orbit-2.0,
         share/{gtk-doc/html/ORBit2,idl/orbit-2.0}}</seg>
 @z
 

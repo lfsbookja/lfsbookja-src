@@ -106,11 +106,15 @@ Archive::Zip モジュールは、<application>Perl</application>
 @z
 
 @x
-            <para><xref linkend="perl-test-pod"/>
-            (optionally used during the tests)</para>
+        <para><ulink
+        url="http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-&Archive-Zip-version;.tar.gz">
+        Archive-Zip-&Archive-Zip-version;</ulink>
+        (uses the standard <xref linkend="perl-standard-install"/>)</para>
 @y
-            <para><xref linkend="perl-test-pod"/>
-            (テスト実行時にオプション的に利用)</para>
+        <para><ulink
+        url="http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-&Archive-Zip-version;.tar.gz">
+        Archive-Zip-&Archive-Zip-version;</ulink>
+        (uses the standard <xref linkend="perl-standard-install"/>)</para>
 @z
 
 % ----------
@@ -162,13 +166,13 @@ Archive::Zip モジュールは、<application>Perl</application>
 %         (標準的な <xref linkend="perl-standard-install"/> を利用)</para>
 % @z
 
-@x
-                url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
-                IO-Compress-Bzip2-&IO-Compress-Bzip2-version;</ulink> (used during the tests)</para>
-@y
-                url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
-                IO-Compress-Bzip2-&IO-Compress-Bzip2-version;</ulink> (テスト時に利用される)</para>
-@z
+% @x
+%                 url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
+%                 IO-Compress-Bzip2-&IO-Compress-Bzip2-version;</ulink> (used during the tests)</para>
+% @y
+%                 url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
+%                 IO-Compress-Bzip2-&IO-Compress-Bzip2-version;</ulink> (テスト時に利用される)</para>
+% @z
 
 % ----------
 % Date::Manip

@@ -328,15 +328,19 @@
 @z
 
 @x
-    <para><parameter>linux</parameter>:
-    This target in the <filename>Makefile</filename> makes assumptions
-    that are useful for a Linux system when compiling the executables.
-    To obtain alternatives to this target, use <command>make list</command></para>
+    <para><parameter>linux, linux_noasm</parameter>:
+    The linux target in the <filename>Makefile</filename> makes assumptions
+    that are useful for a Linux system when compiling the executables, but
+    also uses some 32-bit x86 assembler code. The linux_noasm target will
+    build on all linux hosts. To obtain alternatives to these targets, use
+    <command>make -f unix/Makefile list</command></para>
 @y
-    <para><parameter>linux</parameter>:
-    This target in the <filename>Makefile</filename> makes assumptions
-    that are useful for a Linux system when compiling the executables.
-    To obtain alternatives to this target, use <command>make list</command></para>
+    <para><parameter>linux, linux_noasm</parameter>:
+    The linux target in the <filename>Makefile</filename> makes assumptions
+    that are useful for a Linux system when compiling the executables, but
+    also uses some 32-bit x86 assembler code. The linux_noasm target will
+    build on all linux hosts. To obtain alternatives to these targets, use
+    <command>make -f unix/Makefile list</command></para>
 @z
 
 @x

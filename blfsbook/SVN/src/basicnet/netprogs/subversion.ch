@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY subversion-buildsize     "170 MB (additional 43 MB to install all bindings and 740 MB to run all test suites)">
-  <!ENTITY subversion-time          "2.8 SBU (add 2.3 SBU for bindings and 6.0 SBU to run test suites)">
+  <!ENTITY subversion-buildsize     "170 MB (additional 119 MB to install all bindings and 750 MB to run all test suites)">
+  <!ENTITY subversion-time          "2.1 SBU (add 2.7 SBU for bindings and 7.1 SBU to run test suites)">
 @y
-  <!ENTITY subversion-buildsize     "170 MB (additional 43 MB to install all bindings and 740 MB to run all test suites)">
-  <!ENTITY subversion-time          "2.8 SBU (add 2.3 SBU for bindings and 6.0 SBU to run test suites)">
+  <!ENTITY subversion-buildsize     "170 MB (additional 119 MB to install all bindings and 750 MB to run all test suites)">
+  <!ENTITY subversion-time          "2.1 SBU (add 2.7 SBU for bindings and 7.1 SBU to run test suites)">
 @z
 
 @x
@@ -141,10 +141,10 @@ is covered at <xref linkend="svnserver"/>.</para>
     <xref linkend="openssl"/>,
     <xref linkend="dbus-glib"/>,
     <xref linkend="gnome-keyring"/>,
-    <xref linkend="kdelibs"/>,
+    KWallet from KDE4,
     <xref linkend="apache"/> (if you have <application>Apache Portable
     Runtime</application> installed), and
-    <ulink url="http://www.webdav.org/neon/">neon</ulink> or 
+    <ulink url="http://www.webdav.org/neon/">neon</ulink> or
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -155,10 +155,10 @@ is covered at <xref linkend="svnserver"/>.</para>
     <xref linkend="openssl"/>,
     <xref linkend="dbus-glib"/>,
     <xref linkend="gnome-keyring"/>,
-    <xref linkend="kdelibs"/>,
+    KWallet from KDE4,
     <xref linkend="apache"/> (if you have <application>Apache Portable
     Runtime</application> installed), and
-    <ulink url="http://www.webdav.org/neon/">neon</ulink> or 
+    <ulink url="http://www.webdav.org/neon/">neon</ulink> or
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @z
 
@@ -195,13 +195,13 @@ is covered at <xref linkend="svnserver"/>.</para>
     the installed version of <application>SWIG</application> is greater than
     &svn-swig-version;, but will attempt to use it anyway if you build the
     <application>SWIG</application> bindings. Versions of
-    <application>SWIG</application> up to 1.3.40 are known to work.</para>
+    <application>SWIG</application> up to 2.0.1 are known to work.</para>
 @y
     <para>** The <command>configure</command> script will issue warnings if
     the installed version of <application>SWIG</application> is greater than
     &svn-swig-version;, but will attempt to use it anyway if you build the
     <application>SWIG</application> bindings. Versions of
-    <application>SWIG</application> up to 1.3.40 are known to work.</para>
+    <application>SWIG</application> up to 2.0.1 are known to work.</para>
 @z
 
 @x
@@ -319,23 +319,35 @@ is covered at <xref linkend="svnserver"/>.</para>
 @z
 
 @x
-    <para><command>sed -i '...' .../Makefile.PL.in</command>: This command
-    is used to fix a problem with compiling the <application>Perl</application>
-    bindings. It can be omitted if you're not building the bindings.</para>
+    <para><command>sed -i '...' build/ac-macros/berkeley-db.m4</command>:
+    This command fixes the <application>Berkeley-DB</application> discovery
+    if the <application>Berkeley-DB</application> version is greater than
+    4.x.</para>
 @y
-    <para><command>sed -i '...' .../Makefile.PL.in</command>: This command
-    is used to fix a problem with compiling the <application>Perl</application>
-    bindings. It can be omitted if you're not building the bindings.</para>
+    <para><command>sed -i '...' build/ac-macros/berkeley-db.m4</command>:
+    This command fixes the <application>Berkeley-DB</application> discovery
+    if the <application>Berkeley-DB</application> version is greater than
+    4.x.</para>
 @z
 
+% @x
+%     <para><option>--with-neon=<replaceable>&lt;prefix&gt;</replaceable></option>:
+%     This option should be used if you wish to use a system-installed version
+%     of <application>neon</application>.</para>
+% @y
+%     <para><option>--with-neon=<replaceable>&lt;prefix&gt;</replaceable></option>:
+%     This option should be used if you wish to use a system-installed version
+%     of <application>neon</application>.</para>
+% @z
+
 @x
-    <para><option>--with-neon=<replaceable>&lt;prefix&gt;</replaceable></option>:
-    This option should be used if you wish to use a system-installed version
-    of <application>neon</application>.</para>
+    <para><command>autoconf</command>: This command is used to generate a new
+    <command>configure</command> script to incorporate the changes from the
+    previous command.</para>
 @y
-    <para><option>--with-neon=<replaceable>&lt;prefix&gt;</replaceable></option>:
-    This option should be used if you wish to use a system-installed version
-    of <application>neon</application>.</para>
+    <para><command>autoconf</command>: This command is used to generate a new
+    <command>configure</command> script to incorporate the changes from the
+    previous command.</para>
 @z
 
 @x
@@ -443,7 +455,7 @@ is covered at <xref linkend="svnserver"/>.</para>
         <seg>/usr/include/subversion-1,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/SVN (optional),
         /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/SVN (optional),
-        /usr/lib/ruby/site_ruby/x.x/i686-linux/svn,
+        /usr/lib/ruby/site_ruby/x.x/i686-linux/svn (optional),
         /usr/lib/svn-javahl (optional),
         /usr/lib/svn-python (optional) and
         /usr/share/doc/subversion-&subversion-version;</seg>
@@ -458,7 +470,7 @@ is covered at <xref linkend="svnserver"/>.</para>
         <seg>/usr/include/subversion-1,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/SVN (optional),
         /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/SVN (optional),
-        /usr/lib/ruby/site_ruby/x.x/i686-linux/svn,
+        /usr/lib/ruby/site_ruby/x.x/i686-linux/svn (optional),
         /usr/lib/svn-javahl (optional),
         /usr/lib/svn-python (optional) and
         /usr/share/doc/subversion-&subversion-version;</seg>

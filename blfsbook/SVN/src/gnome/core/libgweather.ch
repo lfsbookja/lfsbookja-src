@@ -35,7 +35,7 @@ locations.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package 情報</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,13 +65,13 @@ locations.
 @x
         <para>Estimated disk space required: &libgweather-buildsize;</para>
 @y
-        <para>概算ディスク容量: &libgweather-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &libgweather-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libgweather-time;</para>
 @y
-        <para>概算ビルド時間: &libgweather-time;</para>
+        <para>&j-Estimatedbuildtime;: &libgweather-time;</para>
 @z
 
 @x
@@ -106,7 +106,7 @@ locations.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libgweather"/></para>
 @y
-    <para condition="html" role="usernotes">ユーザー情報:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/libgweather"/></para>
 @z
 
@@ -131,7 +131,7 @@ locations.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-本パッケージにテストスイートはありません。
+&j-notTestSuite;
 </para>
 @z
 
@@ -147,9 +147,7 @@ locations.
 @x
     <title>Command Explanations</title>
 @y
-<title>
-コマンド情報
-</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -198,7 +196,7 @@ pdf フォーマットのドキュメントをビルドしたい場合に指定�
 @x
     <title>Contents</title>
 @y
-    <title>パッケージ構成</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -206,29 +204,29 @@ pdf フォーマットのドキュメントをビルドしたい場合に指定�
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>None</seg>
         <seg>libgweather.{so,a}</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
-        lib/python2.6/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
+        lib/python&python-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
         share/{gtk-doc/html/libgweather,libgweather}}</seg>
 @y
         <seg>なし</seg>
         <seg>libgweather.{so,a}</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
-        lib/python2.6/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
+        lib/python&python-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
         share/{gtk-doc/html/libgweather,libgweather}}</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x libgweather.{so,a}

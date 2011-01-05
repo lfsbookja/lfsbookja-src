@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openssh-time          "0.5 SBU (additional 1.3 SBU to run the test suite)">
+  <!ENTITY openssh-time          "0.5 SBU (additional 1.5 SBU to run the test suite)">
 @y
-  <!ENTITY openssh-time          "0.5 SBU (additional 1.3 SBU to run the test suite)">
+  <!ENTITY openssh-time          "0.5 SBU (additional 1.5 SBU to run the test suite)">
 @z
 
 @x

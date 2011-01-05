@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY curl-time          "0.6 SBU (additional 0.9 SBU to run the test suite)">
+  <!ENTITY curl-time          "0.6 SBU (up to 7 SBUs to run the test suite)">
 @y
-  <!ENTITY curl-time          "0.6 SBU (additional 0.9 SBU to run the test suite)">
+  <!ENTITY curl-time          "0.6 SBU (テストスイート実行時は合わせて 7 SBU)">
 @z
 
 @x
@@ -205,14 +205,16 @@
 
 @x
     <para><command>find docs -name "Makefile*" -o -name "*.1"
-    -o -name "*.3" | xargs rm</command>: This command removes man files
-    and makefiles from the doc source tree that will be installed by its
-    following commands.</para>
+    -o -name "*.3" | xargs rm</command>: This command removes
+    <filename>Makefiles</filename> and man files from the documentation
+    directory that would otherwise be installed by the commands that
+    follow.</para>
 @y
     <para><command>find docs -name "Makefile*" -o -name "*.1"
-    -o -name "*.3" | xargs rm</command>: This command removes man files
-    and makefiles from the doc source tree that will be installed by its
-    following commands.</para>
+    -o -name "*.3" | xargs rm</command>: This command removes
+    <filename>Makefiles</filename> and man files from the documentation
+    directory that would otherwise be installed by the commands that
+    follow.</para>
 @z
 
 @x

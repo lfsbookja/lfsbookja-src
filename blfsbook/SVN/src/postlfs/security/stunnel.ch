@@ -82,20 +82,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-        url="&patch-root;/stunnel-&stunnel-version;-setuid-1.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink
-        url="&patch-root;/stunnel-&stunnel-version;-setuid-1.patch"/></para>
-@z
-
-@x
     <bridgehead renderas="sect3">Stunnel Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">Stunnel の依存パッケージ</bridgehead>
@@ -198,33 +184,33 @@ new user and group using the following commands as the
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><command>sed -i 's|nogroup|stunnel|g' configure</command>: This
-    command is used to change the default group for the installed files in
-    <filename class='directory'>/var/lib/stunnel</filename> from
-    <systemitem class="groupname">nogroup</systemitem> to
-    <systemitem class="groupname">stunnel</systemitem>.</para>
-@y
-<para>
-<command>sed -i 's|nogroup|stunnel|g' configure</command>: This
-command is used to change the default group for the installed files in
-<filename class='directory'>/var/lib/stunnel</filename> from
-<systemitem class="groupname">nogroup</systemitem> to
-<systemitem class="groupname">stunnel</systemitem>.
-</para>
-@z
-
-@x
-    <para><command>sed -i '...' tools/Makefile.in</command>: This command
-    ensures that the chroot jail will be located in
-    <filename class='directory'>/var/lib/stunnel</filename> instead of
-    <filename class='directory'>/usr/var/lib/stunnel</filename>.</para>
-@y
-<para><command>sed -i '...' tools/Makefile.in</command>: This command
-ensures that the chroot jail will be located in
-<filename class='directory'>/var/lib/stunnel</filename> instead of
-<filename class='directory'>/usr/var/lib/stunnel</filename>.</para>
-@z
+% @x
+%     <para><command>sed -i 's|nogroup|stunnel|g' configure</command>: This
+%     command is used to change the default group for the installed files in
+%     <filename class='directory'>/var/lib/stunnel</filename> from
+%     <systemitem class="groupname">nogroup</systemitem> to
+%     <systemitem class="groupname">stunnel</systemitem>.</para>
+% @y
+% <para>
+% <command>sed -i 's|nogroup|stunnel|g' configure</command>: This
+% command is used to change the default group for the installed files in
+% <filename class='directory'>/var/lib/stunnel</filename> from
+% <systemitem class="groupname">nogroup</systemitem> to
+% <systemitem class="groupname">stunnel</systemitem>.
+% </para>
+% @z
+% 
+% @x
+%     <para><command>sed -i '...' tools/Makefile.in</command>: This command
+%     ensures that the chroot jail will be located in
+%     <filename class='directory'>/var/lib/stunnel</filename> instead of
+%     <filename class='directory'>/usr/var/lib/stunnel</filename>.</para>
+% @y
+% <para><command>sed -i '...' tools/Makefile.in</command>: This command
+% ensures that the chroot jail will be located in
+% <filename class='directory'>/var/lib/stunnel</filename> instead of
+% <filename class='directory'>/usr/var/lib/stunnel</filename>.</para>
+% @z
 
 @x
     <para><parameter>--sysconfdir=/etc</parameter>: This parameter forces
@@ -237,17 +223,17 @@ instead of <filename class='directory'>/usr/etc</filename>.</para>
 @z
 
 @x
-    <para><parameter>--localstatedir=/var/lib</parameter>: This parameter
+    <para><parameter>--localstatedir=/var</parameter>: This parameter
     sets the installation to use
     <filename class='directory'>/var/lib/stunnel</filename> instead of
     creating and using
     <filename class='directory'>/usr/var/stunnel</filename>.</para>
 @y
-<para><parameter>--localstatedir=/var/lib</parameter>: This parameter
-sets the installation to use
-<filename class='directory'>/var/lib/stunnel</filename> instead of
-creating and using
-<filename class='directory'>/usr/var/stunnel</filename>.</para>
+    <para><parameter>--localstatedir=/var</parameter>: This parameter
+    sets the installation to use
+    <filename class='directory'>/var/lib/stunnel</filename> instead of
+    creating and using
+    <filename class='directory'>/usr/var/stunnel</filename>.</para>
 @z
 
 @x
