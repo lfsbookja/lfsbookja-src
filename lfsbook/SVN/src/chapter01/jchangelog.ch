@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/{chapter05,chapter06}/xz.ch:
+          SVN-20101229, r9438 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-01-05</para>
       <itemizedlist>
         <listitem>
