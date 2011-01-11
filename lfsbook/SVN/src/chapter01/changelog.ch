@@ -57,6 +57,36 @@
 @z
 
 @x
+      <para>2011-01-10</para>
+      <itemizedlist>
+         <listitem>
+          <para>[ken] Updated to Linux-2.6.37. Fixes
+          <ulink url="&lfs-ticket-root;2816">#2816</ulink>.
+          </para>
+        </listitem>
+         <listitem>
+          <para>[ken] Updated to Groff-1.21. Fixes
+          <ulink url="&lfs-ticket-root;2813">#2813</ulink>.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-01-10</para>
+      <itemizedlist>
+         <listitem>
+          <para>[ken] Linux-2.6.37 へのアップデート。
+          <ulink url="&lfs-ticket-root;2816">#2816</ulink> を Fix に。
+          </para>
+        </listitem>
+         <listitem>
+          <para>[ken] Groff-1.21 へのアップデート。
+          <ulink url="&lfs-ticket-root;2813">#2813</ulink> を Fix に。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-01-04</para>
       <itemizedlist>
          <listitem>
