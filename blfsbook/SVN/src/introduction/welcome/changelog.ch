@@ -62,6 +62,27 @@
 @z
 
 @x
+      <para>January 15th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Added additional parameters to the libdv configure
+          command that are required if optional dependencies are not
+          installed.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/01/15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - 
+          libdv にて configure コマンドにパラメーターを追加。
+          これは依存パッケージをインストールしない場合に必要。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 27th, 2010</para>
       <itemizedlist>
         <listitem>

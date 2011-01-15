@@ -3,13 +3,15 @@ EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	lzma-utils.ch mc.ch pciutils.ch pkgconfig.ch sysstat.ch sysutils.ch \
 	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
 	DeviceKit.ch udev.ch Device-mapper.ch \
-	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch
+	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch xz-utils.ch \
+	gvfs.ch
 srcdir = @srcdir@
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	lzma-utils.xml mc.xml pciutils.xml pkgconfig.xml sysstat.xml sysutils.xml \
 	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
 	DeviceKit.xml udev.xml Device-mapper.xml \
-	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml
+	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml xz-utils.xml \
+	gvfs.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -45,4 +47,6 @@ parted.xml: $(BOOKdir)/$@ $(srcdir)/parted.ch
 eject.xml: $(BOOKdir)/$@ $(srcdir)/eject.ch
 udisks.xml: $(BOOKdir)/$@ $(srcdir)/udisks.ch
 upower.xml: $(BOOKdir)/$@ $(srcdir)/upower.ch
+xz-utils.xml: $(BOOKdir)/$@ $(srcdir)/xz-utils.ch
+gvfs.xml: $(BOOKdir)/$@ $(srcdir)/gvfs.ch
 

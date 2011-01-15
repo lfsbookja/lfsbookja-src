@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY doxygen-time          "1.5 SBU (includes building the GUI frontend)">
+  <!ENTITY doxygen-time          "2.0 SBU (includes building the GUI frontend and all docs)">
 @y
-  <!ENTITY doxygen-time          "1.5 SBU (GUI フロントエンドのビルドを含む)">
+  <!ENTITY doxygen-time          "2.0 SBU (GUI フロントエンドのビルドとドキュメントインストールを含む)">
 @z
 
 @x

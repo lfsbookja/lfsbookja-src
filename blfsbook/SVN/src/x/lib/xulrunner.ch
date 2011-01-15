@@ -101,17 +101,17 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 
 @x
         <para>Estimated disk space required: &xulrunner-buildsize; (using
-        recommended dependencies)</para>
+        all dependencies)</para>
 @y
         <para>&j-Estimateddiskspacerequired;: &xulrunner-buildsize; (using
-        recommended dependencies)</para>
+        all dependencies)</para>
 @z
 
 @x
-        <para>Estimated build time: &xulrunner-time; (using recommended
+        <para>Estimated build time: &xulrunner-time; (using all
         dependencies)</para>
 @y
-        <para>&j-Estimatedbuildtime;: &xulrunner-time; (using recommended
+        <para>&j-Estimatedbuildtime;: &xulrunner-time; (using all
         dependencies)</para>
 @z
 
@@ -124,12 +124,13 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @x
         <para>Optional patch: <ulink
         url="&patch-root;/firefox-&firefox-version;-provide_system_nspr_nss-1.patch"/>
-        (Required if using the included NSPR and NSS libs as system versions for
+        (Required if using the included NSPR and NSS libraries as system versions for
         other packages)</para>
 @y
         <para>任意のパッチ: <ulink
         url="&patch-root;/firefox-&firefox-version;-provide_system_nspr_nss-1.patch"/>
-        (他パッケージ用に既にインストール済の NSPR, NSS を利用する場合に必要。)</para>
+        (Required if using the included NSPR and NSS libraries as system versions for
+        other packages)</para>
 @z
 
 @x
@@ -140,7 +141,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="alsa-lib"/>
+    <para role="required"><xref linkend="alsa-lib"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="libidl"/>,
     <xref linkend="pango"/>,
@@ -148,7 +149,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <xref linkend="zip"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="alsa-lib"/>
+    <para role="required"><xref linkend="alsa-lib"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="libidl"/>,
     <xref linkend="pango"/>,
@@ -161,13 +162,13 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     before <application>GTK+</application> and should exist on your system. If
     for some reason you haven't installed <application>libjpeg</application>,
     you should remove the <option>--with-system-jpeg</option> option from the
-    <filename>.mozconfig</filename> file created below.</para>
+    <filename>mozconfig</filename> file created below.</para>
 @y
 <para>
 メモ: <application>GTK+</application> の導入にあたっては
 <application>libjpeg</application> のインストールが推奨されいるため、これが存在していることを前提としています。
 <application>libjpeg</application> をインストールしていない場合は、以下に生成する
-<filename>.mozconfig</filename> ファイルにおいて
+<filename>mozconfig</filename> ファイルにおいて
 <option>--with-system-jpeg</option> オプションを無効にしてください。
 </para>
 @z
@@ -188,37 +189,28 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     <para role="optional"><xref linkend="dbus-glib"/>,
     <xref linkend="doxygen"/>,
     <xref linkend="curl"/> (only for crash-reporter),
-    <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
-    (for gnome integration),
+    <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for gnome integration),
     <xref linkend="libnotify"/>,
     <xref linkend="libpng"/> (patched for apng support),
-    <!-- Redundant as NSS requires this
-    <xref linkend="nspr"/> (recommended if you build any other Mozilla.org
-    packages), -->
-    <xref linkend="nss"/> (recommended if you build any other Mozilla.org
-    packages),
+    <xref linkend="nss"/> (recommended if you build any other Mozilla.org packages),
     <xref linkend="startup-notification"/>,
     <xref linkend="unzip"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing the
-    jemalloc code), and
+    <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing the jemalloc code), and
     <xref linkend="wget"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <xref linkend="doxygen"/>,
     <xref linkend="curl"/> (crash-reporter 構築時のみ必要),
-    <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
-    (for gnome integration),
+    <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for gnome integration),
     <xref linkend="libnotify"/>,
     <xref linkend="libpng"/> (apng をサポートするパッチ適用のもの),
-    <!-- Redundant as NSS requires this
-    <xref linkend="nspr"/> (recommended if you build any other Mozilla.org
-    packages), -->
-    <xref linkend="nss"/> (Mozilla.org パッケージをビルドしている場合には推奨),
+    <xref linkend="nss"/> (recommended if you build any other Mozilla.org packages),
     <xref linkend="startup-notification"/>,
     <xref linkend="unzip"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink>
-    (jemalloc コードのテスト時のみ必要),
+    <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink> (jemalloc コードのテスト時のみ必要),
     <xref linkend="wget"/></para>
 @z
 
@@ -238,8 +230,8 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 
 @x
     <para>The configuration of <application>Xulrunner</application> is
-    accomplished by creating a <filename>.mozconfig</filename> file containing
-    the desired configuration options. A default <filename>.mozconfig</filename>
+    accomplished by creating a <filename>mozconfig</filename> file containing
+    the desired configuration options. A default <filename>mozconfig</filename>
     is created below. To see the entire list of available configuration options
     (and an abbreviated description of each one), issue
     <command>./configure --help</command>. You should review the entire file
@@ -247,13 +239,11 @@ tarball が大きなサイズであるため、同じものを二度もダウン
     download the file instead of creating it by typing or cut-and-pasting, you
     can find it at
     <ulink url="&files-anduin;/xulrunner-&xulrunner-version;-mozconfig"/>
-    (the file must be installed in the root of the source tree,
-    <!-- directory name changes depending on version of Xulrunner
-    <filename class='directory'>mozilla</filename> directory,--> and named
-    <filename>.mozconfig</filename> or <filename>mozconfig</filename>).</para>
+    (the file must be installed in the root of the source tree, and named
+    <filename>mozconfig</filename> or <filename>.mozconfig</filename>).</para>
 @y
 <para>
-<application>Xulrunner</application> の設定は <filename>.mozconfig</filename>
+<application>Xulrunner</application> の設定は <filename>mozconfig</filename>
 ファイルにより行います。このファイルには必要な設定オプションを指定します。
 デフォルトの <filename>.mozconfig</filename> ファイルを以下に示します。
 利用可能な設定オプション (また各オプションに対する簡単な説明)
@@ -263,8 +253,8 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 この設定ファイルをタイプ入力したり貼り付けたりするのではなく
 <ulink url="&files-anduin;/xulrunner-&xulrunner-version;-mozconfig"/>
 からダウンロードすることもできます。
-(設定ファイルは、ソースディレクトリ配下のルートディレクトリに配置し、ファイル名は <filename>.mozconfig</filename>
-または <filename>mozconfig</filename> としてください。)
+(設定ファイルは、ソースディレクトリ配下のルートディレクトリに配置し、ファイル名は <filename>mozconfig</filename>
+または <filename>.mozconfig</filename> としてください。)
 </para>
 @z
 
@@ -307,7 +297,7 @@ tarball が大きなサイズであるため、同じものを二度もダウン
 @z
 
 @x
-    <para>If you've elected to use the included NSPR and NSS, while still the 
+    <para>If you elected to use the included NSPR and NSS, while still the
     <systemitem class="username">root</systemitem> user, complete the
     installation with the following commands:</para>
 @y
@@ -427,8 +417,9 @@ tarball が大きなサイズであるため、同じものを二度もダウン
         helper modules installed in <filename
         class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename></seg>
         <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
-        /usr/lib/xulrunner-&xulrunner-version;, and
-        /usr/lib/xulrunner-devel-&xulrunner-version;</seg>
+        /usr/lib/xulrunner-&xulrunner-version;,
+        /usr/lib/xulrunner-devel-&xulrunner-version;, and
+        /usr/share/idl/xulrunner-&xulrunner-version;</seg>
 @y
         <seg>xulrunner と、任意ビルドの nspr-config</seg>
         <seg>
@@ -442,7 +433,8 @@ tarball が大きなサイズであるため、同じものを二度もダウン
         </seg>
         <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-&xulrunner-version;,
-        /usr/lib/xulrunner-devel-&xulrunner-version;</seg>
+        /usr/lib/xulrunner-devel-&xulrunner-version;,
+        /usr/share/idl/xulrunner-&xulrunner-version;</seg>
 @z
 
 @x

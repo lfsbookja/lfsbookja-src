@@ -16,7 +16,7 @@
 @x
   <!ENTITY gamin-time          "0.1 SBU (up to 3 minutes, processor independent, to run the test suite)">
 @y
-  <!ENTITY gamin-time          "0.1 SBU (up to 3 minutes, processor independent, to run the test suite)">
+  <!ENTITY gamin-time          "0.1 SBU (プロセッサには関係なく、テストスイート実施の場合は3分程度)">
 @z
 
 @x
@@ -31,10 +31,20 @@
     changes to the file system. Gamin is compatible with <ulink
     url="http://oss.sgi.com/projects/fam/">FAM</ulink>.</para>
 @y
-    <para>The <application>Gamin</application> package contains a
-    File Alteration Monitor which is useful for notifying applications of
-    changes to the file system. Gamin is compatible with <ulink
-    url="http://oss.sgi.com/projects/fam/">FAM</ulink>.</para>
+<para>
+<application>Gamin</application>
+パッケージは、ファイル変更監視 (File Alteration Monitor)
+機能を提供します。
+この機能はファイルシステム上への変更を、アプリケーションに通知するために利用することができます。
+Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>
+と互換性があります。
+</para>
+@z
+
+@x
+    <para>&lfssvn_built;20100803&lfssvn_built2;</para>
+@y
+    <para>&lfssvn_built;20100803&lfssvn_built2;</para>
 @z
 
 @x
@@ -155,7 +165,7 @@
 @y
 <para>
 <option>--disable-static</option>:
-このパラメータは、ほぼすべてのスタティックライブラリをビルドしないようにします。
+このパラメーターは、ほぼすべてのスタティックライブラリをビルドしないようにします。
 </para>
 @z
 
@@ -178,10 +188,8 @@
       details.</para>
 @y
 <para>
-No configuration is generally required and the default options
-should work for most users. See
-<ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> for
-details.
+一般に設定を行う必要はなく、たいていのユーザーにとってはデフォルトのオプション設定により十分動作します。
+詳しくは <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> を参照してください。
 </para>
 @z
 
@@ -210,8 +218,8 @@ details.
 @y
         <seg>gam_server</seg>
         <seg>libfam.{so,a}, libgamin-1.{so,a}, libgamin_shared.a,
-        optionally, <application>Python</application> _gamin.{so,a}
-        module</seg>
+        任意ビルドとして <application>Python</application> _gamin.{so,a}
+        モジュール</seg>
         <seg>/usr/share/doc/gamin-&gamin-version;</seg>
 @z
 
@@ -226,9 +234,7 @@ details.
         for each user.</para>
 @y
 <para>
-
-is the file alteration monitor daemon that is started on demand
-for each user.
+ファイル変更監視デーモンであり、各ユーザーからの求めに応じて起動します。
 </para>
 @z
 
@@ -236,8 +242,7 @@ for each user.
         <para>contains functions that support the file allocation monitor.</para>
 @y
 <para>
-
-contains functions that support the file allocation monitor.
+ファイル変更監視機能をサポートする関数を提供します。
 </para>
 @z
 
@@ -245,8 +250,6 @@ contains functions that support the file allocation monitor.
         <para>contains functions that provide compatibility with FAM.</para>
 @y
 <para>
-
-contains functions that provide compatibility with FAM.
+FAM との互換関数を提供します。
 </para>
 @z
-

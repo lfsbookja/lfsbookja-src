@@ -118,6 +118,22 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&j-CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This switch prevents the
+    static library in this package being built and installed.</para>
+@y
+<para>
+<option>--disable-static</option>:
+このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
+</para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&j-Contents;</title>

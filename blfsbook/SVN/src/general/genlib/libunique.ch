@@ -86,16 +86,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gir-repository"/> (Required if gobject-introspection is already installed)</para>
-@y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gir-repository"/>
-    (gobject-introspection を既にインストールしている場合は必須)
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/></para>
 @y

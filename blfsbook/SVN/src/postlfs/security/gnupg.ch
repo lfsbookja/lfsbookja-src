@@ -79,24 +79,24 @@ package.</para>
         <para>&j-Estimatedbuildtime;: &gnupg-time;</para>
 @z
 
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required Patch (if you have <application>Curl</application>
-          already installed and is linked against a SSL/TLS library): <ulink
-          url="&patch-root;/gnupg-&gnupg-version;-curl_fix-1.patch"/>
-      </para>
-@y
-        <para>必須のパッチ
-          (<application>Curl</application>
-          をインストール済で SSL/TLS ライブラリをリンクしている場合に必要): <ulink
-          url="&patch-root;/gnupg-&gnupg-version;-curl_fix-1.patch"/>
-      </para>
-@z
+% @x
+%     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+% @y
+%     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+% @z
+% 
+% @x
+%         <para>Required Patch (if you have <application>Curl</application>
+%           already installed and is linked against a SSL/TLS library): <ulink
+%           url="&patch-root;/gnupg-&gnupg-version;-curl_fix-1.patch"/>
+%       </para>
+% @y
+%         <para>必須のパッチ
+%           (<application>Curl</application>
+%           をインストール済で SSL/TLS ライブラリをリンクしている場合に必要): <ulink
+%           url="&patch-root;/gnupg-&gnupg-version;-curl_fix-1.patch"/>
+%       </para>
+% @z
 
 @x
     <bridgehead renderas="sect3">GnuPG Dependencies</bridgehead>
@@ -106,22 +106,18 @@ package.</para>
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="openldap"/>,
+    <para role="optional"><xref linkend="openldap"/>,
+    <xref linkend="libusb-compat"/>,
+    <xref linkend="curl"/>,
+    an <xref linkend="server-mail"/>, and
+    <ulink url="http://www.oasis-open.org/docbook/tools/dtm/">docbook-to-man</ulink></para>
+@y
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="libusb-compat"/>,
     <xref linkend="curl"/>,
     an <xref linkend="server-mail"/>,
-    <xref linkend="docbook-utils"/>, and <ulink
-    url="http://www.oasis-open.org/docbook/tools/dtm/">docbook-to-man</ulink></para>
-@y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="libusb-compat"/>,
-    <xref linkend="curl"/>,
-    <xref linkend="server-mail"/>,
-    <xref linkend="docbook-utils"/>, <ulink
-    url="http://www.oasis-open.org/docbook/tools/dtm/">docbook-to-man</ulink></para>
+    <ulink url="http://www.oasis-open.org/docbook/tools/dtm/">docbook-to-man</ulink></para>
 @z
 
 @x
@@ -136,16 +132,6 @@ package.</para>
     <title>Installation of GnuPG</title>
 @y
     <title>GnuPG のインストール</title>
-@z
-
-@x
-    <para>If <application>Curl</application> is already installed,
-    apply the patch:</para>
-@y
-<para>
-<application>Curl</application>
-をインストールしている場合は、以下のパッチを当てます。
-</para>
 @z
 
 @x

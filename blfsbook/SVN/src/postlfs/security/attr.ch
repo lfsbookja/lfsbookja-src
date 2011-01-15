@@ -107,11 +107,10 @@
 このパッケージには３つのテストがあります。
 <command>make tests root-tests ext-tests</command>
 と入力すれば、それらをすべて実行できます。
-For meaningful results,
-the tests need to be carried out on a file system that supports extended
-attributes. Some failures will occur due to a missing script called
-<filename>sort-getfattr-output</filename> which is not part of the
-tarball.
+十分なテスト結果を得るには、拡張属性をサポートしているファイルシステム上にてテストを実施する必要があります。
+テストにおいては <filename>sort-getfattr-output</filename>
+というスクリプトが存在しないために、テストに失敗するものが出てきます。
+このスクリプトは tarball には含まれていません。
 </para>
 @z
 
@@ -121,6 +120,34 @@ tarball.
 <para>
 <systemitem class="username">root</systemitem>
 ユーザーになって以下を実行します。
+</para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&j-CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed ... include/builddefs.in</command>: This command
+    modifies the documentation directory so that it is a versioned
+    directory and also adds support for a DESTDIR installation.</para>
+@y
+<para>
+<command>sed ... include/builddefs.in</command>:
+このコマンドは、ドキュメントのインストールディレクトリを変更するものです。
+１つにはバージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
+</para>
+@z
+
+@x
+    <para><command>chmod ...</command>: This command modifies the permissions
+    of installed library files to standards.</para>
+@y
+<para>
+<command>chmod ...</command>:
+このコマンドは、インストールされたライブラリファイルのパーミッションを標準的なものに変更します。
 </para>
 @z
 
@@ -137,9 +164,12 @@ tarball.
       but to get any use out of <application>attr</application>, a filesystem
       needs to support extended attributes.</para>
 @y
-      <para>There is no configuration to <application>attr</application> itself,
-      but to get any use out of <application>attr</application>, a filesystem
-      needs to support extended attributes.</para>
+<para>
+<application>attr</application> 自身には設定すべきものはありません。
+<application>attr</application>
+をさまざまに利用していくためには、ファイルシステムが拡張属性
+(extended attributes) をサポートしている必要があります。
+</para>
 @z
 
 @x
@@ -147,9 +177,11 @@ tarball.
       filesystem in the <filename>/etc/fstab</filename> file as shown
       below:</para>
 @y
-      <para>One way to achieve this is to add the user_xattr option to an ext3
-      filesystem in the <filename>/etc/fstab</filename> file as shown
-      below:</para>
+<para>
+一つの方法としては <filename>/etc/fstab</filename>
+ファイル内の ext3 ファイルシステムに user_xattr オプションを設定することで実現します。
+例えば以下のようになります。
+</para>
 @z
 
 @x

@@ -183,7 +183,7 @@ functions.
 @z
 
 @x
-    <para>If you have generated the API tutorials, still as the
+    <para>If you generated the API tutorials, still as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
 <para>
