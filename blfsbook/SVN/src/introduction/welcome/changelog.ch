@@ -69,6 +69,9 @@
           command that are required if optional dependencies are not
           installed.</para>
         </listitem>
+        <listitem>
+          <para>[thomas] - Updated to sudo-1.7.4p5, fcron-3.0.6.</para>
+        </listitem>
       </itemizedlist>
 @y
       <para>2011/01/15</para>
@@ -78,6 +81,9 @@
           libdv にて configure コマンドにパラメーターを追加。
           これは依存パッケージをインストールしない場合に必要。
           </para>
+        </listitem>
+        <listitem>
+          <para>[thomas] - sudo-1.7.4p5, fcron-3.0.6 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z
