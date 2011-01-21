@@ -140,12 +140,12 @@
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> installed and wish to
-    build PDF or Postscript documentation, issue any or all of
-    the following commands:</para>
+    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    installed and wish to build PDF or Postscript documentation, issue any or
+    all of the following commands:</para>
 @y
 <para>
-<xref linkend="tetex"/>
+<xref linkend="tetex"/> や <xref linkend="texlive"/>
 をインストールしていて
 PDF や Postscript ドキュメントをビルドしたい場合は、以下のいずれかのコマンド、あるいはすべてのコマンドを実行します。
 </para>

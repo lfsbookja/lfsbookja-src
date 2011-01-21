@@ -116,14 +116,14 @@
     <para role="optional"><xref linkend="qt4"/> (for doxywizard),
     <xref linkend="graphviz"/>,
     <xref linkend="python"/>,
-    <xref linkend="tetex"/>,
+    <xref linkend="tetex"/> or <xref linkend="texlive"/>,
     <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="qt4"/> (for doxywizard),
     <xref linkend="graphviz"/>,
     <xref linkend="python"/>,
-    <xref linkend="tetex"/>,
+    <xref linkend="tetex"/> or <xref linkend="texlive"/>,
     <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
 @z
 
@@ -176,15 +176,17 @@
 @x
     <para>If you wish to generate and install the package documentation
     (note that man pages have already been installed), you must have
-    <application>Python</application>, <application>teTeX</application> (for
-    HTML docs) and <application>Ghostscript</application> (for PDF docs)
+    <application>Python</application>, <application>teTeX</application> or
+    <application>TeX Live</application> (for HTML docs) and
+    <application>Ghostscript</application> (for PDF docs)
     installed, then issue the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>If you wish to generate and install the package documentation
     (note that man pages have already been installed), you must have
-    <application>Python</application>, <application>teTeX</application> (for
-    HTML docs) and <application>Ghostscript</application> (for PDF docs)
+    <application>Python</application>, <application>teTeX</application> or
+    <application>TeX Live</application> (for HTML docs) and
+    <application>Ghostscript</application> (for PDF docs)
     installed, then issue the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @z
@@ -217,20 +219,20 @@
     packages are required if you wish to use extended capabilities. If you
     need to use the language translation features, you must have
     <xref linkend="python"/> installed. If you require formulas to
-    create PDF documentation, then you must have <xref linkend="tetex"/>
-    installed. If you require formulas to convert PostScript files to bitmaps,
-    then you must have <xref linkend="gs"/><!-- or <xref linkend="espgs"/> -->
-    installed.</para>
+    create PDF documentation, then you must have <xref linkend="tetex"/> or
+    <xref linkend="texlive"/> installed. If you require formulas to convert
+    PostScript files to bitmaps, then you must have <xref linkend="gs"/>
+    <!-- or <xref linkend="espgs"/> --> installed.</para>
 @y
     <para>There is no real configuration necessary for the
     <application>Doxygen</application> package although three additional
     packages are required if you wish to use extended capabilities. If you
     need to use the language translation features, you must have
     <xref linkend="python"/> installed. If you require formulas to
-    create PDF documentation, then you must have <xref linkend="tetex"/>
-    installed. If you require formulas to convert PostScript files to bitmaps,
-    then you must have <xref linkend="gs"/><!-- or <xref linkend="espgs"/> -->
-    installed.</para>
+    create PDF documentation, then you must have <xref linkend="tetex"/> or
+    <xref linkend="texlive"/> installed. If you require formulas to convert
+    PostScript files to bitmaps, then you must have <xref linkend="gs"/>
+    <!-- or <xref linkend="espgs"/> --> installed.</para>
 @z
 
 @x

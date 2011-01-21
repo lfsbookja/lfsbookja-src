@@ -91,10 +91,12 @@
 
 @x
     <bridgehead renderas="sect4">Optional to Build Documentation</bridgehead>
-    <para role="optional"><xref linkend="tetex"/></para>
+    <para role="optional"><xref linkend="tetex"/> or
+    <xref linkend="texlive"/></para>
 @y
     <bridgehead renderas="sect4">任意; ドキュメント生成時</bridgehead>
-    <para role="optional"><xref linkend="tetex"/></para>
+    <para role="optional"><xref linkend="tetex"/> または
+    <xref linkend="texlive"/></para>
 @z
 
 @x
@@ -122,11 +124,13 @@
 @z
 
 @x
-    <para>If you have <application>teTeX</application> installed and wish to
-    build the documentation, issue the following commands:</para>
+    <para>If you have <application>teTeX</application> or
+    <application>Live TeX</application> installed and wish to
+    build alternate forms of the documentation, issue the following
+    command:</para>
 @y
 <para>
-<application>teTeX</application>
+<application>teTeX</application> または <application>Live TeX</application>
 をインストール済で、ドキュメントを生成したい場合は、以下のコマンドを実行します。
 </para>
 @z
@@ -149,11 +153,12 @@
 @z
 
 @x
-    <para>If you built the documentation, issue the following commands as the
-    <systemitem class="username">root</systemitem> user to install it:</para>
+    <para>If you built the additional documentation, issue the following
+    command as the <systemitem class="username">root</systemitem> user to
+    install it:</para>
 @y
 <para>
-ドキュメントを生成した場合は
+追加のドキュメントを生成した場合は
 <systemitem class="username">root</systemitem>
 ユーザーになって以下のコマンドを実行してドキュメントをインストールします。
 </para>

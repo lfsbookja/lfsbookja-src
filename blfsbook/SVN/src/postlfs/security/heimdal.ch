@@ -245,15 +245,15 @@
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> installed and wish to create
-    PDF and Postscript forms of the documentation, change into the
-    <filename class='directory'>doc</filename> directory and issue any or all
-    of the following commands:</para>
+    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    installed and wish to create PDF and Postscript forms of the documentation,
+    change into the <filename class='directory'>doc</filename> directory and
+    issue any or all of the following commands:</para>
 @y
-    <para>If you have <xref linkend="tetex"/> installed and wish to create
-    PDF and Postscript forms of the documentation, change into the
-    <filename class='directory'>doc</filename> directory and issue any or all
-    of the following commands:</para>
+    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    installed and wish to create PDF and Postscript forms of the documentation,
+    change into the <filename class='directory'>doc</filename> directory and
+    issue any or all of the following commands:</para>
 @z
 
 @x

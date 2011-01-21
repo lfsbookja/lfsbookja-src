@@ -155,13 +155,13 @@ OpenPGP-only version.
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> installed and you wish to create
-    documentation in alternate formats, issue the following commands:</para>
+    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    installed and you wish to create documentation in alternate formats,
+    issue the following commands:</para>
 @y
-<para>
-If you have <xref linkend="tetex"/> installed and you wish to create
-documentation in alternate formats, issue the following commands:
-</para>
+    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    installed and you wish to create documentation in alternate formats,
+    issue the following commands:</para>
 @z
 
 @x
