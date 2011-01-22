@@ -6,7 +6,7 @@ srcdir = @srcdir@
 srcs = general.ent index.xml tidy.conf
 EXTRACLEANFILES = $(srcs)
 
-BASEDIR = ../BOOK.ja
+BASEDIR = ../svn.ja
 ROOT_ID =
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
