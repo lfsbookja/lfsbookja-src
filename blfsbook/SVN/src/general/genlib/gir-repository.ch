@@ -199,6 +199,24 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&j-CommandExplanations;</title>
+@z
+
+@x
+    <para><parameter>sed -i 's#abl-0\.0#abl-0.1#' gir/Makefile.in</parameter>:
+    The version of babl is hardcoded several times as Babl-0.0 and babl-0.0.
+    When the 0.1 series of babl is present, that causes the build to fail.</para>
+@y
+<para>
+<parameter>sed -i 's#abl-0\.0#abl-0.1#' gir/Makefile.in</parameter>:
+babl パッケージでは、Babl-0.0 や babl-0.0 などのように、そのバージョンがハードコーディングされてきました。
+バージョン 0.1 系がインストールされている場合にはビルドに失敗します。
+</para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&j-Contents;</title>

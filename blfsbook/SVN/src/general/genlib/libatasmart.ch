@@ -148,18 +148,23 @@
 @x skdump
           <para>is a utility that reports on the status of the disk.</para>
 @y
-          <para>is a utility that reports on the status of the disk.</para>
+<para>
+ディスクの状態を検出するユーティリティです。
+</para>
 @z
 
 @x sktest
           <para>is a utility to issue disks tests.</para>
 @y
-          <para>is a utility to issue disks tests.</para>
+<para>
+ディスクに対するテストを実施するユーティリティです。
+</para>
 @z
 
 @x libatasmart.{so,a}
           <para>contains the ATA S.M.A.R.T API functions.</para>
 @y
-          <para>contains the ATA S.M.A.R.T API functions.</para>
+<para>
+ATA の S.M.A.R.T API 関数を提供します。
+</para>
 @z
-

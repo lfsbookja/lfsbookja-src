@@ -174,7 +174,7 @@ API ドキュメントをインストールするために
         <seg>/usr/share/doc/libtasn1-&libtasn1-version; and
         /usr/share/gtk-doc/html/libtasn1</seg>
 @y
-        <seg>asn1Coding, asn1Decoding, and asn1Parser</seg>
+        <seg>asn1Coding, asn1Decoding, asn1Parser</seg>
         <seg>libtasn1.{so,a}</seg>
         <seg>/usr/share/doc/libtasn1-&libtasn1-version;、
         /usr/share/gtk-doc/html/libtasn1</seg>
