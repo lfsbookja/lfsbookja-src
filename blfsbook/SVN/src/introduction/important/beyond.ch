@@ -33,7 +33,8 @@
 @y
 <para>
 本書を通じてインストールするパッケージは「氷山の一角」にすぎません。
-私たちが望むのは、皆さんが LFS ブックや BLFS ブックを通じてたくさんのことを経験することで、本書には含まれていないパッケージであっても、コンパイル、インストール、設定を行うことができる技術を身につけて頂くことです。
+私たちが望むのは、LFS ブックや BLFS ブックを通じて、皆さんがたくさんのことを経験して頂くことです。
+そして、本書には含まれていないパッケージであっても、コンパイル、インストール、設定を行うことができる技術を身につけて頂くことです。
 </para>
 @z
 
@@ -64,8 +65,11 @@ updating, but they are not all needed in every situation.
       <para>Expand the <envar>PATH</envar> to include
       <filename class='directory'>$PREFIX/bin</filename>.</para>
 @y
-      <para>Expand the <envar>PATH</envar> to include
-      <filename class='directory'>$PREFIX/bin</filename>.</para>
+<para>
+
+Expand the <envar>PATH</envar> to include
+<filename class='directory'>$PREFIX/bin</filename>.
+</para>
 @z
 
 @x

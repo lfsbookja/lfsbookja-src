@@ -45,9 +45,7 @@ LFS 開発版の構築に続けて本書による手順を進めていただけ�
 <para>
 LFS のリリースバージョン (本書の対応バージョンは LFS-6.3) をビルドしている場合、同一バージョンの BLFS は採用したくないと思われることでしょう。
 なぜならその BLFS バージョンでは互換性がないためです。
-
-Instead, use the matching BLFS version
-which should be available on all the mirrors.
+同一バージョンの BLFS は、さまざまなミラーサイトから入手してください。
 </para>
 @z
 
@@ -64,4 +62,3 @@ August 24th, 2008</literallayout>
 <literallayout>Randy McMurchy
 2008年8月24日</literallayout>
 @z
-

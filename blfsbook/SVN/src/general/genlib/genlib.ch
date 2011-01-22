@@ -47,12 +47,17 @@
   making the program file larger.  Quite often, you will find both static and
   shared copies of the same library on your system.</para>
 @y
-  <para>There are two types of libraries: static and shared.  Shared libraries
-  (usually <filename>libXXX.so</filename>) are loaded into memory from the shared
-  copy at runtime (hence the name).  Static libraries (<filename>libXXX.a
-  </filename>) are actually linked into the program executable file itself, thus
-  making the program file larger.  Quite often, you will find both static and
-  shared copies of the same library on your system.</para>
+<para>
+ライブラリには２つの種類があります。
+スタティック (static) ライブラリと共有 (shared) ライブラリです。
+共有ライブラリは (通常 <filename>libXXX.so</filename> というファイル名であり)
+実行時に共有される形でメモリ上にコピーされ利用されます。
+(ファイル名がそのことを表しています。)
+スタティックライブラリは (<filename>libXXX.a</filename> といったファイル名であり)
+実行プログラムに直接リンクされます。
+したがってその実行プログラムのファイルサイズは大きなものになります。
+各種ライブラリは、たいていスタティックライブラリと共有ライブラリを同時に提供しています。
+</para>
 @z
 
 @x

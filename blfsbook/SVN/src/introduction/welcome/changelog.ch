@@ -62,6 +62,65 @@
 @z
 
 @x
+      <para>January 21st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated Perl Modules: Tie-IxHash-1.22,
+          XML-LibXML-1.70, XML-NamespaceSupport-1.11,  XML-SAX-0.96, and
+          XML-SAX-Expat-0.40.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/01/21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Perl Modules をアップデート:
+          Tie-IxHash-1.22,
+          XML-LibXML-1.70, XML-NamespaceSupport-1.11,  XML-SAX-0.96,
+          XML-SAX-Expat-0.40</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>January 19th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Updated to SDL-1.2.14.</para>
+        </listitem>
+        <listitem>
+          <para>[thomas] - Added new package libarchive and cmake.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/01/19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - SDL-1.2.14 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[thomas] - 新パッケージ libarchive, cmake の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>January 18th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - Added new package TeX Live-20100722.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/01/18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[randy] - 新パッケージ TeX Live-20100722 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>January 15th, 2011</para>
       <itemizedlist>
         <listitem>

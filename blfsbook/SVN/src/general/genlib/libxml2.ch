@@ -79,27 +79,28 @@ XML ファイルの処理に用いられます。
         <para>&j-Estimatedbuildtime;: &libxml2-time;</para>
 @z
 
-% @x
-%     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-% @y
-%     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-% @z
-% 
-% @x
-%         <para>Optional Testsuite: <ulink
-%           url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> - This
-%           enables <command>make check</command> to do complete testing. Note
-%           that this is <emphasis>not</emphasis> the latest version of the
-%           testsuite, but it is the one specified by the developers.</para>
-% @y
-% <para>任意のテストスイート: 
-% <ulink url="http://www.w3.org/XML/Test/xmlts20080205.tar.gz"/> -
-% これを利用すると <command>make check</command>
-% により完全なテストを行うことができます。
-% これはテストスイートの最新版<emphasis>ではありません</emphasis>。
-% もっとも開発者が指定しているものです。
-% </para>
-% @z
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Optional Testsuite: <ulink
+          url="http://www.w3.org/XML/Test/xmlts20080827.tar.gz"/> - This
+          enables <command>make check</command> to do complete testing.
+          <!-- /* I can't find any documented reason not to use latest instead
+          of 20080205 */     Note
+          that this is <emphasis>not</emphasis> the latest version of the
+          testsuite, but it is the one specified by the developers.--></para>
+@y
+<para>
+任意のテストスイート: <ulink
+url="http://www.w3.org/XML/Test/xmlts20080827.tar.gz"/> - 
+これを利用すると <command>make check</command>
+により完全なテストを行うことができます。
+</para>
+@z
 
 @x
     <bridgehead renderas="sect3">libxml2 Dependencies</bridgehead>
@@ -156,13 +157,13 @@ XML ファイルの処理に用いられます。
     <title>libxml2 のインストール</title>
 @z
 
-% @x
-%     <para>If you downloaded the testsuite, issue the following command:</para>
-% @y
-% <para>
-% テストスイート用のファイルをダウンロードしている場合は以下を実行します。
-% </para>
-% @z
+@x
+    <para>If you downloaded the testsuite, issue the following command:</para>
+@y
+<para>
+テストスイート用のファイルをダウンロードしている場合は以下を実行します。
+</para>
+@z
 
 @x
     <para>Install <application>libxml2</application> by running the following
@@ -290,10 +291,8 @@ XML ファイルの処理に用いられます。
           <filename class='libraryfile'>libxml2</filename>.</para>
 @y
 <para>
-
-determines the compile and linker flags that should be used to
-compile and link programs that use
-<filename class='libraryfile'>libxml2</filename>.
+他のプログラムが <filename class='libraryfile'>libxml2</filename>
+を利用してコンパイルおよびリンクを行う場合に、コンパイラフラグやリンカーフラグを決定します。
 </para>
 @z
 

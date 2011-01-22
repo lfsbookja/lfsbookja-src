@@ -244,3 +244,133 @@ Man ページ PolicyKit.conf(5) を参照してください。
 </para>
 @z
 
+@x polkit-policy-file-validate
+          <para>is used to verify that one or more
+          <application>PolicyKit</application> .policy files are valid.</para>
+@y
+<para>
+<application>PolicyKit</application>
+の複数の .policy ファイルが適切であるかどうかを検証します。
+</para>
+@z
+
+@x polkit-config-file-validate
+          <para>is used to verify that a given <application>PolicyKit</application>
+          configuration file is valid.</para>
+@y
+<para>
+指定された <application>PolicyKit</application>
+の設定ファイルが適切であるかどうかを検証します。
+</para>
+@z
+
+@x polkit-action
+          <para>is used to list and modify the <application>PolicyKit</application>
+          actions that are registered on the system.</para>
+@y
+<para>
+システムに登録されている <application>PolicyKit</application>
+のアクションを一覧表示したり設定変更したりします。
+</para>
+@z
+
+@x polkit-read-auth-helper
+          <para>is the setgid polkituser helper for
+          <application>PolicyKit</application> to read authorizations.</para>
+@y
+<para>
+
+is the setgid polkituser helper for
+<application>PolicyKit</application> to read authorizations.
+</para>
+@z
+
+@x polkit-grant-helper-pam
+          <para>is the setuid root pam grant helper for <application>PolicyKit</application>.</para>
+@y
+<para>
+
+is the setuid root pam grant helper for <application>PolicyKit</application>.
+</para>
+@z
+
+@x polkit-grant-helper
+          <para>is the setgid polkituser grant helper for <application>PolicyKit</application>.</para>
+@y
+<para>
+
+is the setgid polkituser grant helper for <application>PolicyKit</application>.
+</para>
+@z
+
+@x polkit-revoke-helper
+          <para>is used to revoke authorizations.</para>
+@y
+<para>
+
+is used to revoke authorizations.
+</para>
+@z
+
+@x polkitd
+          <para>is the <application>PolicyKit</application> daemon.</para>
+@y
+<para>
+<application>PolicyKit</application> のデーモンプログラム。
+</para>
+@z
+
+@x polkit-explicit-grant-helper
+          <para>is used to grant authorizations.</para>
+@y
+<para>
+
+is used to grant authorizations.
+</para>
+@z
+
+@x polkit-set-default-helper
+          <para>is the setgid polkituser helper for <application>PolicyKit</application>.</para>
+@y
+<para>
+
+is the setgid polkituser helper for <application>PolicyKit</application>.
+</para>
+@z
+
+@x polkit-resolve-exe-helper
+          <para>is used to find the executable name for a process.</para>
+@y
+<para>
+プロセスの実行モジュール名を調べます。
+</para>
+@z
+
+@x libpolkit.{so,a}
+          <para>contains the <application>PolicyKit</application> API functions.</para>
+@y
+<para>
+<application>PolicyKit</application> の API 関数を提供します。
+</para>
+@z
+
+@x libpolkit-dbus.{so,a}
+          <para>contains functions for obtaining seat, session and caller
+          information via <application>D-Bus</application> and
+          <application>ConsoleKit</application>.</para>
+@y
+<para>
+
+contains functions for obtaining seat, session and caller
+information via <application>D-Bus</application> and
+<application>ConsoleKit</application>.
+</para>
+@z
+
+@x libpolkit-grant.{so,a}
+          <para>contains functions for obtaining authorizations through authentication.</para>
+@y
+<para>
+contains functions for obtaining authorizations through authentication.
+</para>
+@z

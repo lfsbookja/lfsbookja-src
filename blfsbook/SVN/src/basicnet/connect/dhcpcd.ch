@@ -1,0 +1,283 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
+@x
+<?xml version="1.0" encoding="ISO-8859-1"?>
+@y
+<?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+  <!ENTITY dhcpcd-time          "less than 0.1 SBU">
+@y
+  <!ENTITY dhcpcd-time          "0.1 SBU 以下">
+@z
+
+@x
+    <title>Introduction to dhcpcd</title>
+@y
+    <title>dhcpcd の概要</title>
+@z
+
+@x
+    <para><application>dhcpcd</application> is an implementation of the
+    DHCP client specified in RFC2131. This is useful for connecting
+    your computer to a network which uses DHCP to assign network
+    addresses.</para>
+@y
+<para>
+<application>dhcpcd</application>
+は、RFC2131 にて定義されている DHCP クライアントの実装です。
+ネットワークアドレスを自動割振りする DHCP を利用している環境にて、各コンピューターをネットワーク接続するために利用することができます。
+</para>
+@z
+
+@x
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@y
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+@z
+
+@x
+        <para>Download (HTTP): <ulink url="&dhcpcd-download-http;"/></para>
+@y
+        <para>ダウンロード (HTTP): <ulink url="&dhcpcd-download-http;"/></para>
+@z
+
+@x
+        <para>Download (FTP): <ulink url="&dhcpcd-download-ftp;"/></para>
+@y
+        <para>ダウンロード (FTP): <ulink url="&dhcpcd-download-ftp;"/></para>
+@z
+
+@x
+        <para>Download MD5 sum: &dhcpcd-md5sum;</para>
+@y
+        <para>ダウンロード MD5 sum: &dhcpcd-md5sum;</para>
+@z
+
+@x
+        <para>Download size: &dhcpcd-size;</para>
+@y
+        <para>ダウンロードサイズ: &dhcpcd-size;</para>
+@z
+
+@x
+        <para>Estimated disk space required: &dhcpcd-buildsize;</para>
+@y
+        <para>&j-Estimateddiskspacerequired;: &dhcpcd-buildsize;</para>
+@z
+
+@x
+        <para>Estimated build time: &dhcpcd-time;</para>
+@y
+        <para>&j-Estimatedbuildtime;: &dhcpcd-time;</para>
+@z
+
+@x
+    <para condition="html" role="usernotes">User Notes:
+    <ulink url="&blfs-wiki;/dhcpcd"/></para>
+@y
+    <para condition="html" role="usernotes">&j-UserNotes;:
+    <ulink url="&blfs-wiki;/dhcpcd"/></para>
+@z
+
+@x
+    <title>Installation of dhcpcd</title>
+@y
+    <title>dhcpcd のインストール</title>
+@z
+
+@x
+    <para>Install <application>dhcpcd</application> by running the following
+    commands:</para>
+@y
+<para>
+以下のコマンドを実行して <application>dhcpcd</application> をビルドします。
+</para>
+@z
+
+@x
+    <para>This package does not come with a test suite.</para>
+@y
+<para>
+&j-notTestSuite;
+</para>
+@z
+
+@x
+    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
+@z
+
+@x
+    <para>By default, a plain text lease info file isn't created but the
+      <application>dhcpcd</application> provides a hook which can be used for creating
+      such a file. Install the hook by running the following
+      commands as the <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+By default, a plain text lease info file isn't created but the
+<application>dhcpcd</application> provides a hook which can be used for creating
+such a file. Install the hook by running the following
+commands as the <systemitem class="username">root</systemitem> user:
+</para>
+@z
+
+@x
+    <title>Configuring dhcpcd</title>
+@y
+    <title>dhcpcd の設定</title>
+@z
+
+@x
+      <title>Config Files</title>
+@y
+      <title>&j-ConfigFiles;</title>
+@z
+
+@x
+      <title>Configuration Information</title>
+@y
+      <title>&j-ConfigInfo;</title>
+@z
+
+@x
+      <para>To configure <command>dhcpcd</command>, you need to first install
+      the network service script,
+      <filename>/etc/sysconfig/network-devices/services/dhcpcd</filename>
+      included in the <xref linkend="bootscripts"/> package
+      (as user <systemitem class="username">root</systemitem>):</para>
+@y
+<para>
+To configure <command>dhcpcd</command>, you need to first install
+the network service script,
+<filename>/etc/sysconfig/network-devices/services/dhcpcd</filename>
+included in the <xref linkend="bootscripts"/> package
+(as user <systemitem class="username">root</systemitem>):
+</para>
+@z
+
+@x
+      <indexterm zone="dhcpcd dhcpcd-init">
+        <primary sortas="f-dhcpcd">dhcpcd (service script)</primary>
+      </indexterm>
+@y
+      <indexterm zone="dhcpcd dhcpcd-init">
+        <primary sortas="f-dhcpcd">dhcpcd (サーバースクリプト)</primary>
+      </indexterm>
+@z
+
+@x
+      <para>Whenever <command>dhcpcd</command> configures or shuts down
+      a network interface, it executes hook scripts. For more details
+      about those scripts, see the <command>dhcpcd-run-hooks</command> as
+      well as the <command>dhcpcd</command> man page.</para>
+@y
+<para>
+Whenever <command>dhcpcd</command> configures or shuts down
+a network interface, it executes hook scripts. For more details
+about those scripts, see the <command>dhcpcd-run-hooks</command> as
+well as the <command>dhcpcd</command> man page.
+</para>
+@z
+
+@x
+      <para id="dhcpcd-config2">Finally, as the <systemitem
+      class="username">root</systemitem> user create the
+      <filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhcpcd</filename>
+      configuration file using the following commands.  Adjust appropriately
+      for additional interfaces:</para>
+@y
+<para id="dhcpcd-config2">
+Finally, as the <systemitem
+class="username">root</systemitem> user create the
+<filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhcpcd</filename>
+configuration file using the following commands.  Adjust appropriately
+for additional interfaces:
+</para>
+@z
+
+@x
+      <para>For more information on the appropriate <envar>DHCP_START</envar> and
+      <envar>DHCP_STOP</envar> values, examine the man page for
+      <command>dhcpcd</command>.</para>
+@y
+<para>
+For more information on the appropriate <envar>DHCP_START</envar> and
+<envar>DHCP_STOP</envar> values, examine the man page for
+<command>dhcpcd</command>.
+</para>
+@z
+
+@x
+        <para id="dhcpcd-config3">The default behavior of <command>dhcpcd</command>
+        is to overwrite <filename>/etc/resolv.conf</filename>. All modifications on
+        system configuration files like <filename>/etc/resolv.conf</filename>,
+        <filename>/etc/yp.conf</filename> and <filename>/etc/ntp.conf</filename> are
+        done by hooks which are stored in <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+        Setup <command>dhcpcd</command> by removing or adding hooks from/to that directory.
+        The execution of hooks can be disabled by using the -C command line option.</para>
+        <para>Review the <command>dhcpcd</command> man page for switches to add to the
+        <envar>DHCP_START</envar> value.</para>
+@y
+<para id="dhcpcd-config3">The default behavior of <command>dhcpcd</command>
+is to overwrite <filename>/etc/resolv.conf</filename>. All modifications on
+system configuration files like <filename>/etc/resolv.conf</filename>,
+<filename>/etc/yp.conf</filename> and <filename>/etc/ntp.conf</filename> are
+done by hooks which are stored in <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+Setup <command>dhcpcd</command> by removing or adding hooks from/to that directory.
+The execution of hooks can be disabled by using the -C command line option.</para>
+<para>Review the <command>dhcpcd</command> man page for switches to add to the
+<envar>DHCP_START</envar> value.</para>
+@z
+
+@x
+    <title>Contents</title>
+@y
+    <title>&j-Contents;</title>
+@z
+
+@x
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directory</segtitle>
+@y
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
+@z
+
+@x
+        <seg>dhcpcd</seg>
+        <seg>None</seg>
+        <seg>/lib/dhcpcd, /etc/dhcpcd</seg>
+@y
+        <seg>dhcpcd</seg>
+        <seg>なし</seg>
+        <seg>/lib/dhcpcd, /etc/dhcpcd</seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+@z
+
+@x dhcpcd
+          <para>is an implementation of the DHCP client specified
+          in RFC2131.</para>
+@y
+<para>
+RFC2131 にて定義されている DHCP クライアントの実装です。
+</para>
+@z

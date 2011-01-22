@@ -313,10 +313,8 @@
           <filename>xinetd.conf</filename> format.</para>
 @y
 <para>
-
-is a utility used for converting
-<filename>inetd.conf</filename> files to
-<filename>xinetd.conf</filename> format.
+<filename>inetd.conf</filename> ファイルを
+<filename>xinetd.conf</filename> ファイル書式に変換するユーティリティツールです。
 </para>
 @z
 
@@ -327,11 +325,10 @@ is a utility used for converting
           <command>itox</command>.</para>
 @y
 <para>
-
-is a <application>Perl</application> script used for
-converting <filename>inetd.conf</filename> files to
-<filename>xinetd.conf</filename> format, similar to
-<command>itox</command>.
+<filename>inetd.conf</filename> ファイルを
+<filename>xinetd.conf</filename> ファイル書式に変換するための
+<application>Perl</application>
+スクリプトであり、 <command>itox</command> と同様のものです。
 </para>
 @z
 
