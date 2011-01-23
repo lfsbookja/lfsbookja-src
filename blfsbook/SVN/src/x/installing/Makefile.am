@@ -3,13 +3,13 @@ EXTRA_DIST = installing.ch libXau.ch libXdmcp.ch luit.ch \
 	x-config.ch x-setup.ch x7app.ch x7driver.ch x7font.ch x7lib.ch \
 	x7proto.ch x7server.ch x7util.ch xbitmaps.ch \
 	xconfig-dummy.ch xcursorthemes.ch xkeyboard-config.ch \
-	xorg7-dummy.ch xorg7.ch
+	xorg7-dummy.ch xorg7.ch xorg-config.ch
 srcdir = @srcdir@
 srcs = installing.xml libXau.xml libXdmcp.xml luit.xml \
 	x-config.xml x-setup.xml x7app.xml x7driver.xml x7font.xml x7lib.xml \
 	x7proto.xml x7server.xml x7util.xml xbitmaps.xml  \
 	xconfig-dummy.xml xcursorthemes.xml xkeyboard-config.xml \
-	xorg7-dummy.xml xorg7.xml
+	xorg7-dummy.xml xorg7.xml xorg-config.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -38,3 +38,4 @@ xcursorthemes.xml: $(BOOKdir)/$@ $(srcdir)/xcursorthemes.ch
 xkeyboard-config.xml: $(BOOKdir)/$@ $(srcdir)/xkeyboard-config.ch
 xorg7-dummy.xml: $(BOOKdir)/$@ $(srcdir)/xorg7-dummy.ch
 xorg7.xml: $(BOOKdir)/$@ $(srcdir)/xorg7.ch
+xorg-config.xml: $(BOOKdir)/$@ $(srcdir)/xorg-config.ch

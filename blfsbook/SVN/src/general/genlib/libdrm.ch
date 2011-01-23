@@ -88,12 +88,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libpthread-stubs"/> and
-    <xref linkend="libatomic_ops"/></para>
+    <para role="required"><xref linkend="cairo"/>,
+    <xref linkend="libpthread-stubs"/>, and
+    <xref linkend="libatomic_ops"/> (required on x86 only)</para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="libpthread-stubs"/>,
-    <xref linkend="libatomic_ops"/></para>
+    <para role="required"><xref linkend="cairo"/>,
+    <xref linkend="libpthread-stubs"/>,
+    <xref linkend="libatomic_ops"/> (x86 のみ必須)</para>
 @z
 
 @x

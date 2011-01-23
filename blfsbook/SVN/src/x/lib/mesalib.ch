@@ -61,53 +61,53 @@
 @z
 
 @x
-        <para>Estimated disk space required (including recommended download):
+        <para>Estimated disk space required:
         &mesalib-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired; (推奨ダウンロードを含む):
+        <para>&j-Estimateddiskspacerequired;:
         &mesalib-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time (including recommended download):
+        <para>Estimated build time:
         &mesalib-time;</para>
 @y
-        <para>&j-Estimatedbuildtime; (推奨ダウンロードを含む):
+        <para>&j-Estimatedbuildtime;:
         &mesalib-time;</para>
 @z
 
-@x
-    <bridgehead renderas="sect3">Additional Download</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-      <title>Recommended demonstration and diagnostic utilities for
-      verifying OpenGL operation</title>
-@y
-<title>
-OpenGL 動作検証用として推奨されるデモプログラムおよび診断ユーティリティ
-</title>
-@z
-
-@x
-        <para>Download (FTP): <ulink url="&mesademos-download-ftp;"/></para>
-@y
-        <para>ダウンロード (FTP): <ulink url="&mesademos-download-ftp;"/></para>
-@z
-
-@x
-        <para>Download MD5 sum: &mesademos-md5sum;</para>
-@y
-        <para>ダウンロード MD5 sum: &mesademos-md5sum;</para>
-@z
-
-@x
-        <para>Download size: &mesademos-size;</para>
-@y
-        <para>ダウンロードサイズ: &mesademos-size;</para>
-@z
+% @x
+%     <bridgehead renderas="sect3">Additional Download</bridgehead>
+% @y
+%     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+% @z
+% 
+% @x
+%       <title>Recommended demonstration and diagnostic utilities for
+%       verifying OpenGL operation</title>
+% @y
+% <title>
+% OpenGL 動作検証用として推奨されるデモプログラムおよび診断ユーティリティ
+% </title>
+% @z
+% 
+% @x
+%         <para>Download (FTP): <ulink url="&mesademos-download-ftp;"/></para>
+% @y
+%         <para>ダウンロード (FTP): <ulink url="&mesademos-download-ftp;"/></para>
+% @z
+% 
+% @x
+%         <para>Download MD5 sum: &mesademos-md5sum;</para>
+% @y
+%         <para>ダウンロード MD5 sum: &mesademos-md5sum;</para>
+% @z
+% 
+% @x
+%         <para>Download size: &mesademos-size;</para>
+% @y
+%         <para>ダウンロードサイズ: &mesademos-size;</para>
+% @z
 
 @x
     <bridgehead renderas="sect3">MesaLib Dependencies</bridgehead>
@@ -153,17 +153,16 @@ OpenGL 動作検証用として推奨されるデモプログラムおよび診�
 @z
 
 @x
-    <para>Extract both tarballs from the same top-level directory as both
-    will extract to the
+    <note><para>Unlike other packages, the
+    <filename>MesaLib-&mesalib-version;.tar.bz2</filename>
+    archive will extract to the
     <filename class="directory">Mesa-&mesalib-version;</filename>
-    directory.</para>
+    directory.</para></note>
 @y
-<para>
-２つの tarball を同一のトップディレクトリにて伸張 (解凍) します。
-これにより
-<filename class="directory">Mesa-&mesalib-version;</filename>
-ディレクトリ内にともに伸張されます。
-</para>
+<note><para>他のパッケージとは違い、<filename>MesaLib-&mesalib-version;.tar.bz2</filename>
+は <filename class="directory">Mesa-&mesalib-version;</filename>
+ディレクトリに伸張 (解凍) されます。
+</para></note>
 @z
 
 @x
@@ -188,17 +187,6 @@ OpenGL 動作検証用として推奨されるデモプログラムおよび診�
 @y
 <para>
 <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
-@z
-
-@x
-    <para>If you built the demo programs, install them using the following
-    command as the <systemitem class="username">root</systemitem> user:</para>
-@y
-<para>
-デモプログラムをビルドしている場合は
-<systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
 </para>
 @z
 

@@ -62,6 +62,109 @@
 @z
 
 @x
+      <para>January 23rd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to libdrm-2.4.23.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to libpthread-stubs-0.3.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xcb-proto-1.6.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to libxcb-1.7.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to MesaLib-7.9.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to libXdmcp-1.1.0.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xbitmaps-1.1.1.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xcursor-themes-1.0.3.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xkeyboard-config-2.0.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Removed luit from the book as it is now installed as
+          part of Xorg Applications.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xterm-267.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xorg-server-1.9.3.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to Xorg release version 7.6-1.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Removed old Xorg configuration and setup pages and added
+          an initial combined configuration page.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added specific instructions for Xorg environment setup if
+          using an alternate installation prefix.</para>
+        </listitem>
+@y
+      <para>2011/01/23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - libdrm-2.4.23 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libpthread-stubs-0.3 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xcb-proto-1.6 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libxcb-1.7 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - MesaLib-7.9 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libXdmcp-1.1.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xbitmaps-1.1.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xcursor-themes-1.0.3 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xkeyboard-config-2.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - luit を本ブックより削除。これは Xorg アプリケーションに含まれてインストールされるようになったため。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xterm-267 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xorg-server-1.9.3 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Xorg release version 7.6-1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Removed old Xorg configuration and setup pages and added
+          an initial combined configuration page.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added specific instructions for Xorg environment setup if
+          using an alternate installation prefix.</para>
+        </listitem>
+@z
+
+@x
       <para>January 21st, 2011</para>
       <itemizedlist>
         <listitem>

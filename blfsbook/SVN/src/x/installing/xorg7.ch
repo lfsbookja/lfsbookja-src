@@ -228,48 +228,34 @@ current FHS guidelines.
 @z
 
 @x
-      <para>Make sure that you use bash when setting these variables as the
-      book commands assume the use of bash, and use bash specific syntax. Also
-      be sure to add these variables to your personal or system-wide profile as
-      they are used throughout this book. See
-      <xref linkend="postlfs-config-profile"/> for more information.</para>
+    <para>Create an <filename>/etc/profile.d/xorg.sh</filename> configuration
+    file containing these variables as the
+    <systemitem class="username">root</systemitem> user:</para>
 @y
-      <para>Make sure that you use bash when setting these variables as the
-      book commands assume the use of bash, and use bash specific syntax. Also
-      be sure to add these variables to your personal or system-wide profile as
-      they are used throughout this book. See
-      <xref linkend="postlfs-config-profile"/> for more information.</para>
+    <para>Create an <filename>/etc/profile.d/xorg.sh</filename> configuration
+    file containing these variables as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
-    <para>If you've decided to use an alternate prefix, be sure to add
-    <filename class="directory">
-    $XORG_PREFIX/bin</filename> to your
+    <para>If you've decided to use the standard
+    <filename class="directory">/usr</filename> prefix, you can omit the
+    remainder of this page. Otherwise, be sure to add
+    <filename class="directory">$XORG_PREFIX/bin</filename> to your
     <envar>PATH</envar> environment variable, and <filename class="directory">
     $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
     $XORG_PREFIX/share/pkgconfig</filename>
-    to your <envar>PKG_CONFIG_PATH</envar> variable. For detailed instructions,
-    see <xref linkend="postlfs-config-profile"/>. You should also add
-    <filename class="directory">
-    $XORG_PREFIX/lib</filename> to the
-    <filename>/etc/ld.so.conf</filename> file. Finally, you should modify
-    <filename>/etc/man_db.conf</filename>, adding appropriate
-    MANDATORY_MANPATH, MANPATH_MAP, and MANDB_MAP entries following the
-    examples for <filename class="directory">/usr/X11R6</filename>.</para>
+    to your <envar>PKG_CONFIG_PATH</envar> variable. Issue the following
+    commands as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you've decided to use an alternate prefix, be sure to add
-    <filename class="directory">
-    $XORG_PREFIX/bin</filename> to your
+    <para>If you've decided to use the standard
+    <filename class="directory">/usr</filename> prefix, you can omit the
+    remainder of this page. Otherwise, be sure to add
+    <filename class="directory">$XORG_PREFIX/bin</filename> to your
     <envar>PATH</envar> environment variable, and <filename class="directory">
     $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
     $XORG_PREFIX/share/pkgconfig</filename>
-    to your <envar>PKG_CONFIG_PATH</envar> variable. For detailed instructions,
-    see <xref linkend="postlfs-config-profile"/>. You should also add
-    <filename class="directory">
-    $XORG_PREFIX/lib</filename> to the
-    <filename>/etc/ld.so.conf</filename> file. Finally, you should modify
-    <filename>/etc/man_db.conf</filename>, adding appropriate
-    MANDATORY_MANPATH, MANPATH_MAP, and MANDB_MAP entries following the
-    examples for <filename class="directory">/usr/X11R6</filename>.</para>
+    to your <envar>PKG_CONFIG_PATH</envar> variable. Issue the following
+    commands as the <systemitem class="username">root</systemitem> user:</para>
 @z
 

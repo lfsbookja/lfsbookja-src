@@ -85,20 +85,20 @@
     <para role="required"><xref linkend="xorg7-lib"/></para>
 @z
 
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="luit"/> (required in non-UTF-8 locales
-    if the user wants TrueType fonts, and always required in Chinese, Japanese,
-    and Korean locales). Configuration instructions below assume that Luit
-    is installed.</para>
-@y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="luit"/>
-    (UTF-8 でないロケールにて TrueType フォントを使う場合に必要になります。
-    また中国語、日本語、韓国語のロケールでは常時必要となります。)
-    以下に示す設定方法の説明では Luit がインストールされていることを前提としています。
-    </para>
-@z
+% @x
+%     <bridgehead renderas="sect4">Optional</bridgehead>
+%     <para role="optional"><xref linkend="luit"/> (required in non-UTF-8 locales
+%     if the user wants TrueType fonts, and always required in Chinese, Japanese,
+%     and Korean locales). Configuration instructions below assume that Luit
+%     is installed.</para>
+% @y
+%     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+%     <para role="optional"><xref linkend="luit"/>
+%     (UTF-8 でないロケールにて TrueType フォントを使う場合に必要になります。
+%     また中国語、日本語、韓国語のロケールでは常時必要となります。)
+%     以下に示す設定方法の説明では Luit がインストールされていることを前提としています。
+%     </para>
+% @z
 
 @x
     <para condition="html" role="usernotes">User Notes:

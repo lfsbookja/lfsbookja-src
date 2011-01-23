@@ -13,6 +13,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 @z
 
+@x
+    <title>Acronyms</title>
+@y
+    <title>略語</title>
+@z
+
 
 @x FAM
         <para>File Alteration Monitor</para>
@@ -30,5 +36,12 @@
         <para>Frequently Asked Questions</para>
 @y
         <para>よく尋ねられる質問 (Frequently Asked Questions)</para>
+@z
+
+
+@x XML
+        <para>eXtensible Markup Language</para>
+@y
+        <para>拡張可能なマーク付け言語 (eXtensible Markup Language)</para>
 @z
 
