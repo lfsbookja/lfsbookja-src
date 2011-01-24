@@ -26,10 +26,11 @@
     gives applications the same results on all platforms.</para>
 @y
 <para>
-<application>ICU</application> package is a mature, widely used
-set of C/C++ libraries providing Unicode and Globalization support for
-software applications. <application>ICU</application> is widely portable and
-gives applications the same results on all platforms.
+<application>ICU</application>
+パッケージは、広く活用されている C/C++ ライブラリであり、アプリケーションに対しての
+Unicode と国際化サポートを提供します。
+<application>ICU</application>
+は可搬性に優れ、あらゆるプラットフォームにて同一の処理結果を実現します。
 </para>
 @z
 
@@ -179,7 +180,7 @@ gives applications the same results on all platforms.
           <para>disassembles a resource bundle.</para>
 @y
 <para>
-disassembles a resource bundle.
+リソースバンドル (resource bundle) をディスアセンブルします。
 </para>
 @z
 
@@ -188,125 +189,161 @@ disassembles a resource bundle.
           files.</para>
 @y
 <para>
-compiles ICU break iteration rules source files into binary data
-files.
+ICU の break iteration rules のソースファイルをバイナリデータファイルにコンパイルします。
 </para>
 @z
 
 @x gencnval
           <para>compiles the converters aliases file.</para>
 @y
-          <para>compiles the converters aliases file.</para>
+<para>
+変換エイリアスファイル (converters aliases file) をコンパイルします。
+</para>
 @z
 
 @x genctd
           <para>compiles word list into ICU compact trie dictionary.</para>
 @y
-          <para>compiles word list into ICU compact trie dictionary.</para>
+<para>
+ワードリスト (word list) を ICU の compact trie 辞書 へコンパイルします。
+</para>
 @z
 
 @x genrb
           <para>compile a resource bundle.</para>
 @y
-          <para>compile a resource bundle.</para>
+<para>
+リソースバンドル (resource bundle) をコンパイルします。
+</para>
 @z
 
 @x icu-config
           <para>outputs ICU build options.</para>
 @y
-          <para>outputs ICU build options.</para>
+<para>
+ICU のビルドオプションを表示します。
+</para>
 @z
 
 @x makeconv
           <para>compiles a converter table.</para>
 @y
-          <para>compiles a converter table.</para>
+<para>
+コンバーターテーブル (converter table) をコンパイルします。
+</para>
 @z
 
 @x pkgdata
           <para>packages data for use by ICU.</para>
 @y
-          <para>packages data for use by ICU.</para>
+<para>
+ICU により用いられるパッケージデータ。
+</para>
 @z
 
 @x uconv
           <para>converts data from one encoding to another.</para>
 @y
-          <para>converts data from one encoding to another.</para>
+<para>
+１つのエンコーディングからなるデータを他のエンコーディングに変換します。
+</para>
 @z
 
 @x genccode
           <para>generates C or platform specific assembly code from an ICU data
           file.</para>
 @y
-          <para>generates C or platform specific assembly code from an ICU data
-          file.</para>
+<para>
+ICU データファイルから C コード、あるいはプラットフォームに固有のアセンブリコードを生成します。
+</para>
 @z
 
 @x gencmn
           <para>generates an ICU memory-mappable data file.</para>
 @y
-          <para>generates an ICU memory-mappable data file.</para>
+<para>
+ICU のメモリマップ可能なデータファイル (memory-mappable data file) を生成します。
+</para>
 @z
 
 @x gensprep
           <para>compiles StringPrep data from files filtered by
           filterRFC3454.pl.</para>
 @y
-          <para>compiles StringPrep data from files filtered by
-          filterRFC3454.pl.</para>
+<para>
+filterRFC3454.pl によってフィルタリングされたファイルから StringPrep データをコンパイルします。
+</para>
 @z
 
 @x genuca
           <para>creates the UCA data table.</para>
 @y
-          <para>creates the UCA data table.</para>
+<para>
+UCA データテーブルを生成します。
+</para>
 @z
 
 @x icupkg
           <para>extracts or modifies an ICU .dat archive.</para>
 @y
-          <para>extracts or modifies an ICU .dat archive.</para>
+<para>
+ICU の .dat アーカイブを抽出または修正します。
+</para>
 @z
 
 @x libicudata.so
           <para>is the data library.</para>
 @y
-          <para>is the data library.</para>
+<para>
+データライブラリ。
+</para>
 @z
 
 @x libicui18n.so
           <para>is the internationalization (i18n) library.</para>
 @y
-          <para>is the internationalization (i18n) library.</para>
+<para>
+国際化 (i18n) ライブラリ。
+</para>
 @z
 
 @x libicuio.so
           <para>is the ICU I/O (unicode stdio) library.</para>
 @y
-          <para>is the ICU I/O (unicode stdio) library.</para>
+<para>
+
+is the ICU I/O (unicode stdio) library.
+</para>
 @z
 
 @x libicule.so
           <para>is the layout engine.</para>
 @y
-          <para>is the layout engine.</para>
+<para>
+レイアウトエンジン。
+</para>
 @z
 
 @x libiculx.so
           <para>is the layout extensions engine.</para>
 @y
-          <para>is the layout extensions engine.</para>
+<para>
+レイアウトエンジンの拡張。
+</para>
 @z
 
 @x libicutu.so
           <para>is the tool utility library.</para>
 @y
-          <para>is the tool utility library.</para>
+<para>
+ツールユーティリティライブラリ。
+</para>
 @z
 
 @x libicuuc.so
           <para>is the common library.</para>
 @y
-          <para>is the common library.</para>
+<para>
+共通ライブラリ。
+</para>
 @z

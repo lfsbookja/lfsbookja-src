@@ -57,8 +57,8 @@ with getting BLFS off the ground.
 @y
 <para>
 <ulink url="mailto:gerard@&lfs-domainname;">Gerard Beekmans</ulink>
-&lt;gerard &lt;at&gt; &lfs-domainname;&gt; for starting and writing the
-vast majority of the LFS project.
+&lt;gerard &lt;at&gt; &lfs-domainname;&gt;
+LFS プロジェクトのほとんどを開始し構築。
 </para>
 @z
 
@@ -89,7 +89,9 @@ LFS and related sub projects.
       substantial contribution to the purchase of the new quantum server.</para>
 @y
 <para>
-Bruce Dubbs for donating the anduin package server and his
+Bruce Dubbs
+
+donating the anduin package server and his
 substantial contribution to the purchase of the new quantum server.
 </para>
 @z

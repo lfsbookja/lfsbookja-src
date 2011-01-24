@@ -33,18 +33,12 @@
 
 @x
     <para>The <application>Xorg</application> utility packages provide
-    needed utilities, not for the <application>Xorg</application>
-    installation itself, but for other applications that make use of
-    legacy X11R6 installation methods.</para>
+    needed utilities, not for the <application>Xorg</application> build
+    environment.</para>
 @y
-<para>
-<application>Xorg</application>
-ユーティリティは、
-
-utility packages provide
-needed utilities, not for the <application>Xorg</application>
-installation itself, but for other applications that make use of
-legacy X11R6 installation methods.</para>
+    <para>The <application>Xorg</application> utility packages provide
+    needed utilities, not for the <application>Xorg</application> build
+    environment.</para>
 @z
 
 @x

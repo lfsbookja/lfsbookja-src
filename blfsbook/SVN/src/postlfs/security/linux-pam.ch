@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY linux-pam-buildsize     "23 MB (includes installing the optional documentation)">
+@y
+  <!ENTITY linux-pam-buildsize     "23 MB (オプションのドキュメントのインストールを含む)">
+@z
+
+@x
     <title>Introduction to Linux-PAM</title>
 @y
     <title>Linux-PAM の概要</title>
@@ -448,9 +454,8 @@ for a list of various third-party modules available.</para>
           file.</para>
 @y
 <para>
-
-is used to view or manipulate the <filename>faillog</filename>
-file.
+<filename>faillog</filename>
+ファイルを参照あるいは操作するために利用します。
 </para>
 @z
 
@@ -464,4 +469,3 @@ provides the interfaces between applications and the
 PAM modules.
 </para>
 @z
-

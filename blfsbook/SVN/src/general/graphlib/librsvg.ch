@@ -169,10 +169,10 @@
     tree from being installed.</para>
 @y
 <para>
-<option>--disable-gtk-doc</option>: This parameter prevents
-the rebuilding of documentation during the <command>make</command>
-command. It will also prevent the existing documentation in the source
-tree from being installed.
+<option>--disable-gtk-doc</option>:
+このパラメーターは、<command>make</command>
+コマンドの実行時に、ドキュメントを再構築しないようにします。
+同時に、ソースツリー内に既に用意されているドキュメントもインストールしないようにします。
 </para>
 @z
 
@@ -240,7 +240,7 @@ window.
           <para>provide the functions to render Scalable Vector Graphics.</para>
 @y
 <para>
-provide the functions to render Scalable Vector Graphics.
+Scalable Vector Graphics を描画するための関数を提供します。
 </para>
 @z
 
@@ -248,7 +248,7 @@ provide the functions to render Scalable Vector Graphics.
           <para>is a <application>GTK</application> engines module.</para>
 @y
 <para>
-is a <application>GTK</application> engines module.
+<application>GTK</application> エンジンモジュール。
 </para>
 @z
 
@@ -256,6 +256,6 @@ is a <application>GTK</application> engines module.
           <para>is a <application>GTK</application> loaders module.</para>
 @y
 <para>
-is a <application>GTK</application> loaders module.
+<application>GTK</application> ローダーモジュール。
 </para>
 @z

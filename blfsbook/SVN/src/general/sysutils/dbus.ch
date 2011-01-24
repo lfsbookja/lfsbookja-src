@@ -120,9 +120,11 @@
     <xref linkend="xmlto"/> but it does nothing as the XML/HTML documentation is
     already shipped in the source tree.</para>
 @y
-    <para>Note that the <command>configure</command> script will look for
-    <xref linkend="xmlto"/> but it does nothing as the XML/HTML documentation is
-    already shipped in the source tree.</para>
+<para>
+<command>configure</command> スクリプトは <xref linkend="xmlto"/>
+を探すものになっていますが、特に何もするわけでなく、
+XML/HTML ドキュメントがソースツリー内にあるものが用いられます。
+</para>
 @z
 
 @x
@@ -143,8 +145,10 @@
     <para>Ensure the following option is enabled in the kernel configuration
     and recompile the kernel if necessary:</para>
 @y
-    <para>Ensure the following option is enabled in the kernel configuration
-    and recompile the kernel if necessary:</para>
+<para>
+カーネル設定として以下に示すオプションが必要です。
+必要に応じてカーネルを再コンパイルしてください。
+</para>
 @z
 
 @x
@@ -194,10 +198,11 @@
     <command>./configure --help</command> first and add any desired parameters
     to the <command>configure</command> command shown below):</para>
 @y
-    <para>Install <application>D-BUS</application> by running the following
-    commands (you may wish to review the output from
-    <command>./configure --help</command> first and add any desired parameters
-    to the <command>configure</command> command shown below):</para>
+<para>
+以下のコマンドを実行して <application>D-BUS</application> をビルドします。
+(<command>configure</command> コマンドに対しては、以下に示すパラメーター以外のものも必要になるかもしれません。
+実行する前に <command>./configure --help</command> を実行して出力内容を確認してください。)
+</para>
 @z
 
 @x
@@ -206,18 +211,21 @@
     wish to build the API documentation, issue
     <command>doxygen</command>.</para>
 @y
-    <para>The <option>--enable-doxygen-docs</option> parameter does not work
-    properly. If you have <application>Doxygen</application> installed and you
-    wish to build the API documentation, issue
-    <command>doxygen</command>.</para>
+<para>
+<option>--enable-doxygen-docs</option> パラメーターは正常に動作しません。
+<application>Doxygen</application>
+をインストールしていて、API ドキュメントをビルドする場合は <command>doxygen</command>
+を実行してください。
+</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+<para>
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
@@ -225,15 +233,17 @@
     following commands as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-    <para>If you built the API documentation, install it by issuing the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
+<para>
+API ドキュメントをビルドした場合は
+<systemitem class="username">root</systemitem>
+ユーザーになって以下のコマンドを実行してドキュメントをインストールしてください。
+</para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -244,12 +254,16 @@
     <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
     into <filename class="directory">/usr/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=/usr/lib/dbus-1.0 </parameter>: This will
-    install binaries meant to be only used internally by
-    <application>D-BUS</application>, and the directory
-    <filename class="directory">dbus-1</filename> into
-    <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
-    into <filename class="directory">/usr/libexec</filename>.</para>
+<para>
+<parameter>--libexecdir=/usr/lib/dbus-1.0 </parameter>:
+
+This will
+install binaries meant to be only used internally by
+<application>D-BUS</application>, and the directory
+<filename class="directory">dbus-1</filename> into
+<filename class="directory">/usr/lib/dbus-1.0</filename> instead of
+into <filename class="directory">/usr/libexec</filename>.
+</para>
 @z
 
 @x
@@ -259,19 +273,26 @@
     instead of the <filename class="directory">/usr/var</filename>
     directory.</para>
 @y
-    <para><parameter>--localstatedir=/var</parameter>: This parameter causes
-    the daemon PID file, system bus socket and machine uuid file to be
-    created in the <filename class="directory">/var</filename> directory
-    instead of the <filename class="directory">/usr/var</filename>
-    directory.</para>
+<para>
+<parameter>--localstatedir=/var</parameter>:
+
+This parameter causes
+the daemon PID file, system bus socket and machine uuid file to be
+created in the <filename class="directory">/var</filename> directory
+instead of the <filename class="directory">/usr/var</filename>
+directory.
+</para>
 @z
 
 @x
     <para><parameter>--enable-tests</parameter>: Build extra parts of the code
     to support testing. Configure will end with a NOTE warning about this.</para>
 @y
-    <para><parameter>--enable-tests</parameter>: Build extra parts of the code
-    to support testing. Configure will end with a NOTE warning about this.</para>
+<para>
+<parameter>--enable-tests</parameter>:
+Build extra parts of the code
+to support testing. Configure will end with a NOTE warning about this.
+</para>
 @z
 
 @x
@@ -282,26 +303,31 @@
     NOTE that this should not be used in a production build.
     </para>
 @y
-    <para><parameter>--enable-asserts</parameter>: Enable debugging code to run
-    assertions for statements normally assumed to be true. This prevents a
-    warning that '<parameter>--enable-tests</parameter>' on its own is only useful
-    for profiling and might not give true results for all tests, but adds its own
-    NOTE that this should not be used in a production build.
-    </para>
+<para>
+<parameter>--enable-asserts</parameter>: Enable debugging code to run
+assertions for statements normally assumed to be true. This prevents a
+warning that '<parameter>--enable-tests</parameter>' on its own is only useful
+for profiling and might not give true results for all tests, but adds its own
+NOTE that this should not be used in a production build.
+</para>
 @z
 
 @x
     <para><parameter>--disable-static</parameter>: Prevent the static libraries
     being built and installed.</para>
 @y
-    <para><parameter>--disable-static</parameter>: Prevent the static libraries
-    being built and installed.</para>
+<para>
+<parameter>--disable-static</parameter>:
+
+Prevent the static libraries
+being built and installed.
+</para>
 @z
 
 @x
     <title>Configuring dbus</title>
 @y
-    <title>Configuring dbus</title>
+    <title>dbus の設定</title>
 @z
 
 @x
@@ -310,16 +336,16 @@
       <filename>/etc/dbus-1/system.conf</filename> and
       <filename>/etc/dbus-1/system.d/*</filename></para>
 @y
-      <title>Config Files</title>
+      <title>&j-ConfigFiles;</title>
       <para><filename>/etc/dbus-1/session.conf</filename>,
-      <filename>/etc/dbus-1/system.conf</filename> and
+      <filename>/etc/dbus-1/system.conf</filename>,
       <filename>/etc/dbus-1/system.d/*</filename></para>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&j-ConfigInfo;</title>
 @z
 
 @x
@@ -329,11 +355,12 @@
       <filename>/etc/dbus-1/system-local.conf</filename> and make any
       desired changes to these files.</para>
 @y
-      <para>The configuration files listed above should probably not be
-      modified. If changes are required, you should create
-      <filename>/etc/dbus-1/session-local.conf</filename> and/or
-      <filename>/etc/dbus-1/system-local.conf</filename> and make any
-      desired changes to these files.</para>
+<para>
+上に示している設定ファイルは編集すべきではありません。
+変更が必要な場合は <filename>/etc/dbus-1/session-local.conf</filename> や
+<filename>/etc/dbus-1/system-local.conf</filename>
+に対して必要な変更を加えます。
+</para>
 @z
 
 @x
@@ -347,21 +374,24 @@
       be added by performing the following commands as the
       <systemitem class="username">root</systemitem> user:</para>
 @y
-      <para>If any packages install a
-      <application>D-Bus</application> <filename>.service</filename>
-      file outside of the standard <filename
-      class="directory">/usr/share/dbus-1/services</filename> directory,
-      that directory should be added to the local session configuration.
-      For instance, <filename
-      class="directory">/usr/local/share/dbus-1/services</filename> can
-      be added by performing the following commands as the
-      <systemitem class="username">root</systemitem> user:</para>
+<para>
+
+If any packages install a
+<application>D-Bus</application> <filename>.service</filename>
+file outside of the standard <filename
+class="directory">/usr/share/dbus-1/services</filename> directory,
+that directory should be added to the local session configuration.
+For instance, <filename
+class="directory">/usr/local/share/dbus-1/services</filename> can
+be added by performing the following commands as the
+<systemitem class="username">root</systemitem> user:
+</para>
 @z
 
 @x
       <title>Boot Script</title>
 @y
-      <title>Boot Script</title>
+      <title>ブートスクリプト</title>
 @z
 
 @x
@@ -370,10 +400,12 @@
       <filename>/etc/rc.d/init.d/dbus</filename> bootscript from the
       <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>To automatically start <command>dbus-daemon</command> when the
-      system is rebooted, install the
-      <filename>/etc/rc.d/init.d/dbus</filename> bootscript from the
-      <xref linkend="bootscripts"/> package.</para>
+<para>
+システムブート時に <command>dbus-daemon</command>
+を自動起動させるために、<xref linkend="bootscripts"/>
+パッケージからブートスクリプト <filename>/etc/rc.d/init.d/dbus</filename>
+をインストールします。
+</para>
 @z
 
 @x
@@ -386,14 +418,18 @@
       available parameters and options. Here are some suggestions and
       examples:</para>
 @y
-      <para>Note that this boot script only starts the system-wide
-      <application>D-BUS</application> daemon. Each user requiring access to
-      <application>D-BUS</application> services will also need to run a
-      session daemon as well. There are many methods you can use to start a
-      session daemon using the <command>dbus-launch</command> command. Review
-      the <command>dbus-launch</command> man page for details about the
-      available parameters and options. Here are some suggestions and
-      examples:</para>
+<para>
+このブートスクリプトは、システム共通の <application>D-BUS</application>
+デーモンを起動するにすぎません。
+
+Each user requiring access to
+<application>D-BUS</application> services will also need to run a
+session daemon as well. There are many methods you can use to start a
+session daemon using the <command>dbus-launch</command> command. Review
+the <command>dbus-launch</command> man page for details about the
+available parameters and options. Here are some suggestions and
+examples:
+</para>
 @z
 
 @x
@@ -483,7 +519,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -491,9 +527,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -509,27 +545,32 @@
         <seg>libdbus-1.{so,a}</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
-        /usr/share/man/man3dbus, /var/lib/dbus and /var/run/dbus</seg>
+        /usr/share/man/man3dbus, /var/lib/dbus, /var/run/dbus</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x dbus-cleanup-sockets
           <para>is used to clean up leftover sockets in a directory.</para>
 @y
-          <para>is used to clean up leftover sockets in a directory.</para>
+<para>
+is used to clean up leftover sockets in a directory.
+</para>
 @z
 
 @x dbus-daemon
           <para>is the <application>D-BUS</application> message bus
           daemon.</para>
 @y
-          <para>is the <application>D-BUS</application> message bus
-          daemon.</para>
+<para>
+
+is the <application>D-BUS</application> message bus
+daemon.
+</para>
 @z
 
 @x dbus-launch
@@ -537,31 +578,42 @@
           script. It  would  normally be called from a user's login
           scripts.</para>
 @y
-          <para>is used to start <command>dbus-daemon</command> from a shell
-          script. It  would  normally be called from a user's login
-          scripts.</para>
+<para>
+is used to start <command>dbus-daemon</command> from a shell
+script. It  would  normally be called from a user's login
+scripts.
+</para>
 @z
 
 @x dbus-monitor
           <para>is used to monitor messages going through a
           <application>D-BUS</application> message bus.</para>
 @y
-          <para>is used to monitor messages going through a
-          <application>D-BUS</application> message bus.</para>
+<para>
+
+is used to monitor messages going through a
+<application>D-BUS</application> message bus.
+</para>
 @z
 
 @x dbus-send
           <para>is used to send a message to a <application>D-BUS</application>
           message bus.</para>
 @y
-          <para>is used to send a message to a <application>D-BUS</application>
-          message bus.</para>
+<para>
+
+is used to send a message to a <application>D-BUS</application>
+message bus.
+</para>
 @z
 
 @x dbus-uuidgen
           <para>is used to generate or read a universally unique ID.</para>
 @y
-          <para>is used to generate or read a universally unique ID.</para>
+<para>
+
+is used to generate or read a universally unique ID.
+</para>
 @z
 
 @x libdbus-1.{so,a}
@@ -572,11 +624,10 @@
           <command>dbus-daemon</command> is an application that uses this
           library to implement a message bus daemon.</para>
 @y
-          <para>contains the API functions used by the
-          <application>D-BUS</application> message daemon.
-          <application>D-BUS</application> is first a library that provides
-          one-to-one communication between any two applications;
-          <command>dbus-daemon</command> is an application that uses this
-          library to implement a message bus daemon.</para>
+<para>contains the API functions used by the
+<application>D-BUS</application> message daemon.
+<application>D-BUS</application> is first a library that provides
+one-to-one communication between any two applications;
+<command>dbus-daemon</command> is an application that uses this
+library to implement a message bus daemon.</para>
 @z
-

@@ -103,6 +103,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Aspell Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">Aspell の依存パッケージ</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"><xref linkend="which"/> (for the dictionaries)</para>
+@y
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <para role="required"><xref linkend="which"/> (辞書のために必要)</para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/aspell"/></para>
 @y
@@ -325,14 +339,19 @@ is a wrapper around <command>aspell</command> to invoke it in
           <para>compresses or decompresses sorted word lists for use with the
           <application>Aspell</application> spell checker.</para>
 @y
-          <para>compresses or decompresses sorted word lists for use with the
-          <application>Aspell</application> spell checker.</para>
+<para>
+
+compresses or decompresses sorted word lists for use with the
+<application>Aspell</application> spell checker.
+</para>
 @z
 
 @x libaspell.so
           <para>contains spell checking API functions.</para>
 @y
-          <para>contains spell checking API functions.</para>
+<para>
+スペルチェックの API 関数を提供します。
+</para>
 @z
 
 @x libpspell.so
@@ -342,9 +361,10 @@ is a wrapper around <command>aspell</command> to invoke it in
           <filename class='libraryfile'>libaspell</filename> but this library
           is included for backward compatibility.</para>
 @y
-          <para>is an interface to the
-          <filename class='libraryfile'>libaspell</filename> library. All the
-          spell checking functionality is now in
-          <filename class='libraryfile'>libaspell</filename> but this library
-          is included for backward compatibility.</para>
+<para>
+<filename class='libraryfile'>libaspell</filename>
+ライブラリへのインターフェースを提供します。
+スペルチェックの機能は <filename class='libraryfile'>libaspell</filename>
+にすべて含まれるようになりましたが、このライブラリにも下位互換性のために含まれています。
+</para>
 @z

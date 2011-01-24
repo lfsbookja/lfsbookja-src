@@ -103,15 +103,13 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="ed"/>,
-    <xref linkend="fontconfig"/>,
+    <para role="required"><xref linkend="fontconfig"/>,
     <xref linkend="xorg7-proto"/>,
     <xref linkend="libXdmcp"/>, and
     <xref linkend="libxcb"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="ed"/>,
-    <xref linkend="fontconfig"/>,
+    <para role="required"><xref linkend="fontconfig"/>,
     <xref linkend="xorg7-proto"/>,
     <xref linkend="libXdmcp"/>,
     <xref linkend="libxcb"/></para>
@@ -198,19 +196,25 @@
 @z
 
 @x
-    <para><parameter>--without-xcb</parameter>: By default,
-    <application>libX11</application> will use <xref linkend="libxcb"/>
-    for its transport layer. Omit this parameter (or the <command>case</command>
-    statement) if you've installed <xref linkend="libxcb"/>.</para>
+    <para><parameter>--with-fop</parameter>: Use <xref linkend="fop"/> to
+    generate PDF documentation (only for the libXfont package).</para>
 @y
-<para>
-<parameter>--without-xcb</parameter>:
-<application>libX11</application>
-はデフォルトで、トランスポート層 (transport layer) の機能に <xref linkend="libxcb"/>
-を利用します。
-<xref linkend="libxcb"/> をインストールしている場合は <command>./configure</command>
-スクリプトにて本パラメータ (あるいは <command>case</command> 文) を除いてください。
-</para>
+    <para><parameter>--with-fop</parameter>: Use <xref linkend="fop"/> to
+    generate PDF documentation (only for the libXfont package).</para>
+@z
+
+@x
+    <para><parameter>--disable-devel-docs</parameter>: Disable generation of
+    text documentation in the libXfont package if
+    <xref linkend="xmlto"/> is installed without a text browser. Omit
+    this parameter (or the entire <command>case</command> statement) if a text
+    browser is installed.</para>
+@y
+    <para><parameter>--disable-devel-docs</parameter>: Disable generation of
+    text documentation in the libXfont package if
+    <xref linkend="xmlto"/> is installed without a text browser. Omit
+    this parameter (or the entire <command>case</command> statement) if a text
+    browser is installed.</para>
 @z
 
 @x

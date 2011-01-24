@@ -112,6 +112,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para><xref linkend="dbus"/>,
     <xref linkend="doxygen"/> (to build API documentation),
+    <xref linkend="xmlto"/>, (to build documentation),
+    <xref linkend="fop"/>, (to build documentation),
     <xref linkend="gs"/> (to build documentation),
     <xref linkend="hal"/> (not recommended, disabled by default),
     <xref linkend="mesalib"/> (required for DRI)</para>
@@ -119,6 +121,8 @@
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para><xref linkend="dbus"/>,
     <xref linkend="doxygen"/> (to build API documentation),
+    <xref linkend="xmlto"/>, (to build documentation),
+    <xref linkend="fop"/>, (to build documentation),
     <xref linkend="gs"/> (to build documentation),
     <xref linkend="hal"/> (not recommended, disabled by default),
     <xref linkend="mesalib"/> (required for DRI)</para>

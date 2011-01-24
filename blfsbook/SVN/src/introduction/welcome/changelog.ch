@@ -112,6 +112,14 @@
           <para>[dj] - Added specific instructions for Xorg environment setup if
           using an alternate installation prefix.</para>
         </listitem>
+        <listitem>
+          <para>[dj] - Completed cleanup of descriptive text in xorg section,
+          corrected dependencies, and reverted to legacy configuration pages
+          until new page matures.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added talloc-2.0.1.</para>
+        </listitem>
 @y
       <para>2011/01/23</para>
       <itemizedlist>
@@ -155,12 +163,19 @@
           <para>[dj] - Xorg release version 7.6-1 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[dj] - Removed old Xorg configuration and setup pages and added
-          an initial combined configuration page.</para>
+          <para>[dj] - Xorg の設定に関する古いページを削除し、新たに統合した設定説明のページを追加。</para>
         </listitem>
         <listitem>
           <para>[dj] - Added specific instructions for Xorg environment setup if
           using an alternate installation prefix.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Completed cleanup of descriptive text in xorg section,
+          corrected dependencies, and reverted to legacy configuration pages
+          until new page matures.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - talloc-2.0.1 の追加。</para>
         </listitem>
 @z
 

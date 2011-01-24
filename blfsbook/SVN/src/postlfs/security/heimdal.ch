@@ -87,88 +87,90 @@
     <ulink url="&files-anduin;/heimdal-overwrites"/> for a complete list of
     all the files and commands to rename each of them.</para>
 @y
-    <para><application>Heimdal</application> is a free implementation
-    of Kerberos 5 that aims to be compatible with MIT Kerberos 5 and is
-    backward compatible with Kerberos 4. Kerberos is a network authentication
-    protocol. Basically it preserves the integrity of passwords in any
-    untrusted network (like the Internet). Kerberized applications work
-    hand-in-hand with sites that support Kerberos to ensure that passwords
-    cannot be stolen or compromised. A Kerberos installation will make changes
-    to the authentication mechanisms on your network and will overwrite several
-    programs and daemons from the <application>Shadow</application>,
-    <application>Inetutils</application> and
-    <application>Qpopper</application> packages. See
-    <ulink url="&files-anduin;/heimdal-overwrites"/> for a complete list of
-    all the files and commands to rename each of them.</para>
+<para>
+<application>Heimdal</application> is a free implementation
+of Kerberos 5 that aims to be compatible with MIT Kerberos 5 and is
+backward compatible with Kerberos 4. Kerberos is a network authentication
+protocol. Basically it preserves the integrity of passwords in any
+untrusted network (like the Internet). Kerberized applications work
+hand-in-hand with sites that support Kerberos to ensure that passwords
+cannot be stolen or compromised. A Kerberos installation will make changes
+to the authentication mechanisms on your network and will overwrite several
+programs and daemons from the <application>Shadow</application>,
+<application>Inetutils</application> and
+<application>Qpopper</application> packages. See
+<ulink url="&files-anduin;/heimdal-overwrites"/> for a complete list of
+all the files and commands to rename each of them.
+</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&heimdal-download-http;"/></para>
 @y
-        <para>Download (HTTP): <ulink url="&heimdal-download-http;"/></para>
+        <para>ダウンロード (HTTP): <ulink url="&heimdal-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&heimdal-download-ftp;"/></para>
 @y
-        <para>Download (FTP): <ulink url="&heimdal-download-ftp;"/></para>
+        <para>ダウンロード (FTP): <ulink url="&heimdal-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &heimdal-md5sum;</para>
 @y
-        <para>Download MD5 sum: &heimdal-md5sum;</para>
+        <para>ダウンロード MD5 sum: &heimdal-md5sum;</para>
 @z
 
 @x
         <para>Download size: &heimdal-size;</para>
 @y
-        <para>Download size: &heimdal-size;</para>
+        <para>ダウンロードサイズ: &heimdal-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &heimdal-buildsize;</para>
 @y
-        <para>Estimated disk space required: &heimdal-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &heimdal-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &heimdal-time;</para>
 @y
-        <para>Estimated build time: &heimdal-time;</para>
+        <para>&j-Estimatedbuildtime;: &heimdal-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
 @x
         <para>Required Patch: <ulink
         url="&patch-root;/heimdal-&heimdal-version;-otp_fixes-1.patch"/></para>
 @y
-        <para>Required Patch: <ulink
+        <para>必須のパッチ: <ulink
         url="&patch-root;/heimdal-&heimdal-version;-otp_fixes-1.patch"/></para>
 @z
 
 @x
     <bridgehead renderas="sect3">Heimdal Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Heimdal Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Heimdal の依存パッケージ</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required to Build the Server-Side Tools</bridgehead>
     <para role="required"><xref linkend="db"/></para>
 @y
-    <bridgehead renderas="sect4">Required to Build the Server-Side Tools</bridgehead>
+    <bridgehead renderas="sect4">サーバー側のツールに必要</bridgehead>
     <para role="required"><xref linkend="db"/></para>
 @z
 
@@ -176,7 +178,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
     <para role="recommended"><xref linkend="openssl"/></para>
 @z
 
@@ -190,11 +192,11 @@
     <ulink url="&patch-root;/libcap-ng-0.6.4-2.6.36_kernel_fix-1.patch">patch</ulink>
     if the Linux kernel version is &gt;=2.6.36)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="sqlite"/>,
     <xref linkend="x-window-system"/>,
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>, and
+    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
     <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> (with this
     <ulink url="&patch-root;/libcap-ng-0.6.4-2.6.36_kernel_fix-1.patch">patch</ulink>
     if the Linux kernel version is &gt;=2.6.36)</para>
@@ -206,24 +208,27 @@
       authenticate if the time differential between a kerberized client
       and the KDC server is more than 5 minutes.</para>
 @y
-      <para>Some sort of time synchronization facility on your system
-      (like <xref linkend="ntp"/>) is required since Kerberos won't
-      authenticate if the time differential between a kerberized client
-      and the KDC server is more than 5 minutes.</para>
+<para>
+
+Some sort of time synchronization facility on your system
+(like <xref linkend="ntp"/>) is required since Kerberos won't
+authenticate if the time differential between a kerberized client
+and the KDC server is more than 5 minutes.
+</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/heimdal"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/heimdal"/></para>
 @z
 
 @x
     <title>Installation of Heimdal</title>
 @y
-    <title>Installation of Heimdal</title>
+    <title>Heimdal のインストール</title>
 @z
 
 @x
@@ -231,17 +236,21 @@
       to install this package. Failure to install and configure the package
       correctly can alter your system so that users cannot log in.</para>
 @y
-      <para>Ensure you really need a Kerberos installation before you decide
-      to install this package. Failure to install and configure the package
-      correctly can alter your system so that users cannot log in.</para>
+<para>
+
+Ensure you really need a Kerberos installation before you decide
+to install this package. Failure to install and configure the package
+correctly can alter your system so that users cannot log in.
+</para>
 @z
 
 @x
     <para>Install <application>Heimdal</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>Heimdal</application> by running the following
-    commands:</para>
+<para>
+以下のコマンドを実行して <application>Heimdal</application> をビルドします。
+</para>
 @z
 
 @x
@@ -250,10 +259,12 @@
     change into the <filename class='directory'>doc</filename> directory and
     issue any or all of the following commands:</para>
 @y
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
-    installed and wish to create PDF and Postscript forms of the documentation,
-    change into the <filename class='directory'>doc</filename> directory and
-    issue any or all of the following commands:</para>
+<para>
+<xref linkend="tetex"/> または <xref linkend="texlive"/>
+をインストールしていて、PDF や Postscript 形式のドキュメントを生成しようとする場合は、
+<filename class='directory'>doc</filename>
+ディレクトリに移動して、以下のコマンドをすべて実行します。
+</para>
 @z
 
 @x
@@ -261,15 +272,19 @@
     <command>check-iprop</command> test is known to fail but all others should
     pass.</para>
 @y
-    <para>To test the results, issue: <command>make -k check</command>. The
-    <command>check-iprop</command> test is known to fail but all others should
-    pass.</para>
+<para>
+ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+<command>check-iprop</command>
+テストは失敗しますが、それ以外はすべて成功するはずです。
+</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+<para>
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
@@ -277,9 +292,11 @@
     using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you built any of the additional forms of documentation, install it
-    using the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+<para>
+追加のドキュメントをいずれかビルドした場合は、
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行し、ドキュメントをインストールします。
+</para>
 @z
 
 @x
@@ -287,15 +304,18 @@
     strong passwords in the KDC database, issue the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you wish to use the <xref linkend="cracklib"/> library to enforce
-    strong passwords in the KDC database, issue the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+<para>
+KDC データベースに対して <xref linkend="cracklib"/>
+ライブラリを用いた強力なパスワードを実現する場合は、
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -306,12 +326,16 @@
     <filename class='directory'>/var/lib/heimdal</filename> directory
     name.</para>
 @y
-    <para><command>sed -i ... `grep -lr "/var/heimdal"
-    doc kadmin kdc lib`</command>: This command is used to change the
-    hard-coded references in the documentation files from
-    <filename class='directory'>/var/heimdal</filename> to the FHS compliant
-    <filename class='directory'>/var/lib/heimdal</filename> directory
-    name.</para>
+<para>
+<command>sed -i ... `grep -lr "/var/heimdal"
+doc kadmin kdc lib`</command>:
+このコマンドは
+This command is used to change the
+hard-coded references in the documentation files from
+<filename class='directory'>/var/heimdal</filename> to the FHS compliant
+<filename class='directory'>/var/lib/heimdal</filename> directory
+name.
+</para>
 @z
 
 @x
@@ -319,9 +343,12 @@
     the daemon programs to be installed into
     <filename class="directory">/usr/sbin</filename>.</para>
 @y
-    <para><parameter>--libexecdir=/usr/sbin</parameter>: This switch causes
-    the daemon programs to be installed into
-    <filename class="directory">/usr/sbin</filename>.</para>
+<para>
+<parameter>--libexecdir=/usr/sbin</parameter>:
+このパラメーターは、デーモンプログラムを
+<filename class="directory">/usr/sbin</filename>
+ディレクトリにインストールします。
+</para>
 @z
 
 @x

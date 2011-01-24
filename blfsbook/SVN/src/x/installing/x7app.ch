@@ -114,12 +114,14 @@ expected をうまく訳せない； どうしたものか・・・
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xbitmaps"/>,
-    <xref linkend="libpng"/>, and <xref linkend="xorg7-lib"/></para>
+    <para role="required"><xref linkend="libpng"/>,
+    <xref linkend="xcb-util"/>, and
+    <xref linkend="xorg7-lib"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="xbitmaps"/>,
-    <xref linkend="libpng"/>, <xref linkend="xorg7-lib"/></para>
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"><xref linkend="libpng"/>,
+    <xref linkend="xcb-util"/>,
+    <xref linkend="xorg7-lib"/></para>
 @z
 
 @x
