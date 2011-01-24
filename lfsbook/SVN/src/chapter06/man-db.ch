@@ -92,6 +92,17 @@ LFS の構築を終えた後に自分でインストールしてください。
 @z
 
 @x
+    <para>Note that 2 tests are known to fail as they rely on warnings output
+    from Groff, which changed slightly in Groff-1.21.</para>
+@y
+<para>
+テストのうち二つは失敗します。
+これは Groff の警告メッセージに依存しているからであり、Groff-1.21
+にて微妙に変更になったものです。
+</para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>パッケージをインストールします。</para>

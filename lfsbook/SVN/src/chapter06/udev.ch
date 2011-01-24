@@ -47,7 +47,7 @@ Udev パッケージをビルドする際の LFS 独自のファイルが含ま�
 
 @x
     <para>The udev-testfiles tarball contains files needed to test udev. The 
-    file expands to an apparant size of about 37MB but the actual disk usage
+    file expands to an apparent size of about 37MB but the actual disk usage
     is less than 7MB.</para>
 @y
 <para>

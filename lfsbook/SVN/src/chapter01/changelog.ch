@@ -57,6 +57,58 @@
 @z
 
 @x
+      <para>2011-01-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Ignore failing tests in Man-DB as they're only due to
+          a change in Groff-1.21's warning output.  Fixes
+          <ulink url="&lfs-ticket-root;2823">#2823</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Change password hashing from MD5 to SHA-512. Fixes
+          <ulink url="&lfs-ticket-root;2814">#2814</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to File-5.05. Fixes
+          <ulink url="&lfs-ticket-root;2821">#2821</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to IPRoute2-2.6.37. Fixes
+          <ulink url="&lfs-ticket-root;2817">#2817</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Coreutils-8.9. Fixes
+          <ulink url="&lfs-ticket-root;2815">#2815</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-01-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Man-DB のテストにて失敗するものを無視することに。
+          これは Groff-1.21 の警告メッセージが変更になったため。
+          <ulink url="&lfs-ticket-root;2823">#2823</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] パスワードのハッシュを MD5 から SHA-512 に変更。
+          <ulink url="&lfs-ticket-root;2814">#2814</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] File-5.05 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2821">#2821</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] IPRoute2-2.6.37 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2817">#2817</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Coreutils-8.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2815">#2815</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-01-10</para>
       <itemizedlist>
          <listitem>

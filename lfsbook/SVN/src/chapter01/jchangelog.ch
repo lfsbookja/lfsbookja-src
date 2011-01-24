@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          chapter06/{man-db.ch, udev.ch},
+          appendices/dependencies.ch:
+          SVN-20110123, r9448 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-01-11</para>
       <itemizedlist>
         <listitem>

@@ -1244,9 +1244,9 @@ Typo ですが日本語訳には影響ありません。
          Grep, Inetutils, Make, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils, Findutils, Gawk, and Gzip</seg>
+          <seg>Autoconf, Diffutils, Findutils, Gawk, and Gzip</seg>
 @y
-          <seg>Diffutils, Findutils, Gawk, Gzip</seg>
+          <seg>Autoconf, Diffutils, Findutils, Gawk, Gzip</seg>
 @z
 @x
           <seg>None</seg>
