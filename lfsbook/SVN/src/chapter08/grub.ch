@@ -306,17 +306,18 @@ linux と initrd の行において <emphasis>/boot</emphasis>
 
 @x
      <para>The core image of GRUB is also a Multiboot kernel, so if you already
-     have GRUB Legacy loaded you can load GRUB-&grub-version; through your old
-     boot loader.  To accomplish this, you will need to exit the
-     <command>chroot</command> environment and re-enter it to finish the
-     few remaining portions of the book.</para>
+     have <emphasis>GRUB Legacy</emphasis> loaded you can load
+     GRUB-&grub-version; through your old boot loader.  To accomplish this, you
+     will need to exit the <command>chroot</command> environment now and
+     re-enter it in the next section to finish the few remaining portions of
+     the book.</para>
 @y
 <para>
 GRUB のコアイメージ (core image) もマルチブートカーネル (Multiboot kernel) です。
-したがって GRUB Legacy を既にインストール済であるなら、それまでの古いブートローダーを用いて新たな
+したがって <emphasis>GRUB Legacy</emphasis> を既にインストール済であるなら、それまでの古いブートローダーを用いて新たな
 GRUB-&grub-version; をロードすることが可能です。
-具体的な方法としては、まず <command>chroot</command>
-環境からいったん抜け出た上で再度入り直し、本節の残りの作業を進めます。
+具体的な方法としては、今すぐ <command>chroot</command>
+環境からいったん抜け出た上で、次節に示す方法で再度入り直し、本節の残りの作業を進めます。
 </para>
 @z
 

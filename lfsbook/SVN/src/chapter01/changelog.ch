@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2011-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Move chroot man page to man8.  Fixes
+          <ulink url="&lfs-ticket-root;2823">#2782</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] chroot の man ページを man8 に移動。
+          <ulink url="&lfs-ticket-root;2823">#2782</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-01-23</para>
       <itemizedlist>
         <listitem>
