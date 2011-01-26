@@ -30,6 +30,23 @@ pkg-config パッケージは、他のパッケージ類の configure やメイ�
 @z
 
 @x
+    <note><para>Pkg-Config will use an included version of Popt to parse
+    command line options.  If an external version of Popt is desired, install
+    that version using the <ulink
+    url="&blfs-root;view/svn/general/popt.html">BLFS Popt build
+    instructions</ulink> before installing Pkg-config.</para></note>
+@y
+<note><para>
+Pkg-Config はコマンドラインオプションを処理するために、内部に含まれている Popt
+を利用します。
+外部よりインストールする Popt を用いる必要がある場合は、Pkg-config
+をインストールする前に
+BLFS の <ulink url="&blfs-root;view/svn/general/popt.html">Popt ビルド手順</ulink>
+を参考にしてインストールを行ってください。
+</para></note>
+@z
+
+@x
     <para>Prepare Pkg-config for compilation:</para>
 @y
     <para>Pkg-config をコンパイルするための準備をします。</para>

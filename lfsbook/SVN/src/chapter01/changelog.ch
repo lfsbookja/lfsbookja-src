@@ -57,6 +57,25 @@
 @z
 
 @x
+      <para>2011-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Add a note about optionally building
+          popt before pkg-config.  Fixes
+          <ulink url="&lfs-ticket-root;2821">#2781</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] pkg-config のビルドの前に、必要に応じて popt をビルドする方法をメモ追記。
+          <ulink url="&lfs-ticket-root;2821">#2781</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-01-24</para>
       <itemizedlist>
         <listitem>
