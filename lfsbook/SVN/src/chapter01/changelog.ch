@@ -57,12 +57,33 @@
 @z
 
 @x
+      <para>2011-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Add a sed that modifies incorrect defines in
+          glibc.  Thanks to Bryan Kadzban for identifying the proper fix.
+          Fixes
+          <ulink url="&lfs-ticket-root;2820">#2820</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] glibc にて不適当な定義を修正する sed コマンド処理を追加。
+          適正な修正方法を示してくれた Bryan Kadzban に感謝。
+          <ulink url="&lfs-ticket-root;2820">#2820</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-01-25</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] Add a note about optionally building
           popt before pkg-config.  Fixes
-          <ulink url="&lfs-ticket-root;2821">#2781</ulink>.</para>
+          <ulink url="&lfs-ticket-root;2781">#2781</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -70,7 +91,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] pkg-config のビルドの前に、必要に応じて popt をビルドする方法をメモ追記。
-          <ulink url="&lfs-ticket-root;2821">#2781</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;2781">#2781</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -80,7 +101,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] Move chroot man page to man8.  Fixes
-          <ulink url="&lfs-ticket-root;2823">#2782</ulink>.</para>
+          <ulink url="&lfs-ticket-root;2782">#2782</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -88,7 +109,7 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] chroot の man ページを man8 に移動。
-          <ulink url="&lfs-ticket-root;2823">#2782</ulink> を Fix に。</para>
+          <ulink url="&lfs-ticket-root;2782">#2782</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z

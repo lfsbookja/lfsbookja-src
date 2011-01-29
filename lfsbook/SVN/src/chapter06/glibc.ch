@@ -119,6 +119,14 @@ Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修�
 @z
 
 @x
+    <para>Fix a stack imbalance that occurs under some conditions:</para>
+@y
+<para>
+特定の条件のもとでスタックが不安定になる現象を、以下により解消します。
+</para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
