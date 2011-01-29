@@ -1,0 +1,13 @@
+dnl 
+dnl  This is part of LFSbookja package.
+dnl 
+dnl  This is a CTIE change file for the original XML source of the LFSbook.
+dnl 
+dnl  $Author$
+dnl  $Rev$
+dnl  $Date$
+dnl 
+dnl
+dnl m4-include this file to define the current LFS version
+m4_define([lfs_version], [svn-20110127]) 
+

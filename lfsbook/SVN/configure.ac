@@ -10,6 +10,8 @@
 # $Date$
 #
 
+m4_include([version.ac])[] dnl define lfs_version
+
 AC_PREREQ([2.63])
 AC_INIT([LFSbookja], [svn], [matsuand AT users DOT sourceforge DOT jp])
 AM_INIT_AUTOMAKE
@@ -38,7 +40,7 @@ fi
 AC_PROG_XMLLINT
 AC_PROG_TIDY
 
-TARGETVER=svn-20110123
+TARGETVER=lfs_version()
 
 SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 AC_MSG_CHECKING([for the original XML version])

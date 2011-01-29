@@ -34,7 +34,8 @@ POST_UNINSTALL = :
 subdir = src/chapter04
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
+am__aclocal_m4_deps = $(top_srcdir)/version.ac \
+	$(top_srcdir)/m4/progs.m4 \
 	$(top_srcdir)/m4/ax_compare_version.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \

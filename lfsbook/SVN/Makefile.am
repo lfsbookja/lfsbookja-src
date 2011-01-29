@@ -1,5 +1,5 @@
 SUBDIRS = ctie src
-EXTRA_DIST = INSTALL.utf8
+EXTRA_DIST = INSTALL.utf8 version.ac
 
 @MAINT@nochunks:
 @MAINT@	cd src && make nochunks
