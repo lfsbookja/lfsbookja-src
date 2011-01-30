@@ -26,11 +26,10 @@
     <application>GNOME-2</application>.</para>
 @y
 <para>
-
-The <application>libbonobo</application> package contains
-<filename class="libraryfile">libbonobo</filename> libraries.
-This is a component and compound document system for
-<application>GNOME-2</application>.
+<application>libbonobo</application> パッケージは
+<filename class="libraryfile">libbonobo</filename> ライブラリを提供します。
+これは <application>GNOME-2</application>
+におけるコンポーネントシステムおよび複合文書システム (compound document system) です。
 </para>
 @z
 
@@ -127,9 +126,7 @@ This is a component and compound document system for
     commands:</para>
 @y
 <para>
-
-Install <application>libbonobo</application> by running the following
-commands:
+以下のコマンドを実行して <application>libbonobo</application> をビルドします。
 </para>
 @z
 
@@ -163,11 +160,15 @@ commands:
     class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename> instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/bonobo-2.0</parameter>: This parameter causes the libexec
-    files to be installed in the preferred location of <filename
-    class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+<para>
+<parameter>--libexecdir=$(pkg-config --variable=prefix
+ORBit-2.0)/lib/bonobo-2.0</parameter>:
+このパラメーターは libexec ファイルのインストール先を
+<filename class="directory">$GNOME_PREFIX/libexec</filename>
+ではなく、より適切な
+<filename class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename>
+とします。
+</para>
 @z
 
 @x
@@ -199,10 +200,10 @@ commands:
         idl/{bonobo-2.0,bonobo-activation-2.0}}}</seg>
 @y
         <seg>activation-client, bonobo-activation-run-query, bonobo-slay,
-        echo-client-2, bonobo-activation-server, bonobo-echo-2, and
+        echo-client-2, bonobo-activation-server, bonobo-echo-2,
         bonobo-activation-sysconf</seg>
         <seg>libmoniker_std_2.{so,a}, libbonobo-2.{so,a},
-        libbonobo-activation.{so,a}, and Bonobo_module.{so,a}</seg>
+        libbonobo-activation.{so,a}, Bonobo_module.{so,a}</seg>
         <seg>&gnome-etc-dir;/bonobo-activation,
         <envar>$GNOME_PREFIX</envar>/{include/{bonobo-activation-2.0/bonobo-activation,
         libbonobo-2.0/bonobo},lib/{bonobo-2.0/samples,bonobo/{monikers,
@@ -226,4 +227,3 @@ are a set of language and system independent CORBA interfaces
 for creating reusable components and compound documents.
 </para>
 @z
-

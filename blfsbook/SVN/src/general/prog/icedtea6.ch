@@ -146,36 +146,6 @@ third party application, must also be made freely availible.</para>
 @z
 
 @x
-    <bridgehead renderas="sect3">Binary Package Information</bridgehead>
-@y
-    <bridgehead renderas="sect3">バイナリパッケージ情報</bridgehead>
-@z
-
-@x
-        <para>Binary download: <ulink url="&icedtea6-download-binary;"/></para>
-@y
-        <para>バイナリダウンロード: <ulink url="&icedtea6-download-binary;"/></para>
-@z
-
-@x
-        <para>Download MD5 sum: &icedtea6-bin-md5sum;</para>
-@y
-        <para>ダウンロード MD5 sum: &icedtea6-bin-md5sum;</para>
-@z
-
-@x
-        <para>Download size (binary): &icedtea6-bin-size;</para>
-@y
-        <para>ダウンロードサイズ (バイナリ): &icedtea6-bin-size;</para>
-@z
-
-@x
-        <para>Estimated disk space required: &icedtea6-bin-buildsize;</para>
-@y
-        <para>&j-Estimateddiskspacerequired;: &icedtea6-bin-buildsize;</para>
-@z
-
-@x
     <bridgehead renderas="sect3">Source Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">ソースパッケージ情報</bridgehead>
@@ -224,6 +194,64 @@ third party application, must also be made freely availible.</para>
 @z
 
 @x
+    <bridgehead renderas="sect3">Binary Package Information</bridgehead>
+@y
+    <bridgehead renderas="sect3">バイナリパッケージ情報</bridgehead>
+@z
+
+@x
+        <para>Binary download (x86):
+        <ulink url="&icedtea6-download-binary-x86;"/></para>
+@y
+        <para>Binary download (x86):
+        <ulink url="&icedtea6-download-binary-x86;"/></para>
+@z
+
+@x
+        <para>Download MD5 sum: &icedtea6-bin-md5sum-x86;</para>
+@y
+        <para>Download MD5 sum: &icedtea6-bin-md5sum-x86;</para>
+@z
+
+@x
+        <para>Download size (binary): &icedtea6-bin-size-x86;</para>
+@y
+        <para>Download size (binary): &icedtea6-bin-size-x86;</para>
+@z
+
+@x
+        <para>Estimated disk space required: &icedtea6-bin-buildsize-x86;</para>
+@y
+        <para>Estimated disk space required: &icedtea6-bin-buildsize-x86;</para>
+@z
+
+@x
+        <para>Binary download (x86_64):
+        <ulink url="&icedtea6-download-binary-x64;"/></para>
+@y
+        <para>Binary download (x86_64):
+        <ulink url="&icedtea6-download-binary-x64;"/></para>
+@z
+
+@x
+        <para>Download MD5 sum: &icedtea6-bin-md5sum-x64;</para>
+@y
+        <para>Download MD5 sum: &icedtea6-bin-md5sum-x64;</para>
+@z
+
+@x
+        <para>Download size (binary): &icedtea6-bin-size-x64;</para>
+@y
+        <para>Download size (binary): &icedtea6-bin-size-x64;</para>
+@z
+
+@x
+        <para>Estimated disk space required: &icedtea6-bin-buildsize-x64;</para>
+@y
+        <para>Estimated disk space required: &icedtea6-bin-buildsize-x64;</para>
+@z
+
+@x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
@@ -260,15 +288,25 @@ third party application, must also be made freely availible.</para>
 @z
 
 @x
+    <bridgehead renderas="sect4">Required Dependencies</bridgehead>
+    <para role="required">
+    <xref linkend="xz-utils"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">Required Dependencies</bridgehead>
+    <para role="required">
+    <xref linkend="xz-utils"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional Runtime Dependencies (required for
     source installation)</bridgehead>
     <para role="optional">
     <xref linkend="alsa-lib"/>,
     <xref linkend="cups"/>,
     <xref linkend="gtk2"/>, and
-    <ulink url="ftp://ftp.x.org/pub/individual/lib/libXp-1.0.0.tar.bz2">
-    libXp</ulink>
-    <!-- <xref linkend="libXp"/> -->
+    <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">Optional Runtime Dependencies (required for
@@ -276,10 +314,8 @@ third party application, must also be made freely availible.</para>
     <para role="optional">
     <xref linkend="alsa-lib"/>,
     <xref linkend="cups"/>,
-    <xref linkend="gtk2"/>,
-    <ulink url="ftp://ftp.x.org/pub/individual/lib/libXp-1.0.0.tar.bz2">
-    libXp</ulink>
-    <!-- <xref linkend="libXp"/> -->
+    <xref linkend="gtk2"/>, and
+    <xref linkend="xorg7-lib"/>
     </para>
 @z
 
@@ -326,13 +362,17 @@ third party application, must also be made freely availible.</para>
 @z
 
 @x
-    <para>Install the binary <application>IcedTea6</application> with the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
+    <bridgehead renderas="sect3">IcedTea6 Binary Installation</bridgehead>
+    <para>Begin by extracting the appropriate binary tarball and changing to
+    the extracted dirctory. Install the binary
+    <application>IcedTea6</application> with the following commands as the
+    <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Install the binary <application>IcedTea6</application> with the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
+    <bridgehead renderas="sect3">IcedTea6 Binary Installation</bridgehead>
+    <para>Begin by extracting the appropriate binary tarball and changing to
+    the extracted dirctory. Install the binary
+    <application>IcedTea6</application> with the following commands as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -347,23 +387,21 @@ installation with the following commands:
 @z
 
 @x
-    <para>The binary version is now installed.</para>
+    <para>The binary version is now installed. If you don't want to compile the
+    sources, skip ahead to the configuration section.</para>
 @y
 <para>
 バイナリ版はこうしてインストールできました。
-</para>
-@z
-
-@x
-    <para>If you don't want to compile the sources, skip ahead to the
-    configuration section.</para>
-@y
-<para>
 ソースのコンパイルを行わない場合は、設定について説明する後節まで読み飛ばしてください。
 </para>
 @z
 
 @x
+    <bridgehead renderas="sect3">IcedTea6 Source Installation</bridgehead>
+@y
+    <bridgehead renderas="sect3">IcedTea6 Source Installation</bridgehead>
+@z
+@x
     <note><para>The source build of IcedTea6 requires
     <xref linkend="apache-ant"/>.  You'll need to build that first to satisfy
     the reciprocal dependency, and return to this section to continue building
@@ -376,12 +414,22 @@ installation with the following commands:
 @z
 
 @x
+    <para>Like other packages in BLFS, begin by extracting the
+    <application>IcedTea6</application> source package and changing into the
+    extracted dirctory.</para>
+@y
+    <para>Like other packages in BLFS, begin by extracting the
+    <application>IcedTea6</application> source package and changing into the
+    extracted dirctory.</para>
+@z
+
+@x
     <para><application>IcedTea6</application> requires several freely
     available jar files for the bootstrap compiler.  You may leave these
     items in place after the build is complete, as they will be needed by other
     programs, or remove them if you choose.  You can optionally choose not to
     install them at all, and provide the necessary configure options to find
-    the files.  Install the necessary tools with the following commands as the
+    the files. Install the necessary tools with the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
     <para><application>IcedTea6</application> requires several freely
@@ -389,7 +437,7 @@ installation with the following commands:
     items in place after the build is complete, as they will be needed by other
     programs, or remove them if you choose.  You can optionally choose not to
     install them at all, and provide the necessary configure options to find
-    the files.  Install the necessary tools with the following commands as the
+    the files. Install the necessary tools with the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @z
 
@@ -414,12 +462,6 @@ installation with the following commands:
 @z
 
 @x
-    <para>Apply a patch to fix several tests, and disable invalid tests:</para>
-@y
-    <para>Apply a patch to fix several tests, and disable invalid tests:</para>
-@z
-
-@x
     <para>Apply a patch to generate a valid cacerts file using the system CA
     certificates:</para>
 @y
@@ -434,11 +476,17 @@ installation with the following commands:
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.  The
-    testsuite should complete without error.</para>
+    <para>To test the results, issue: <command>make check</command>. The
+    included version of <application>jtreg</application> is old, and the test
+    suite is very dependent on the host system as well. You should expect to
+    see 6 failures and 1 error in the langtools tests, and 20 to 23 failures
+    in jdk with up to 3 errors. The other 4700 tests should pass.</para>
 @y
-    <para>To test the results, issue: <command>make check</command>.  The
-    testsuite should complete without error.</para>
+    <para>To test the results, issue: <command>make check</command>. The
+    included version of <application>jtreg</application> is old, and the test
+    suite is very dependent on the host system as well. You should expect to
+    see 6 failures and 1 error in the langtools tests, and 20 to 23 failures
+    in jdk with up to 3 errors. The other 4700 tests should pass.</para>
 @z
 
 @x

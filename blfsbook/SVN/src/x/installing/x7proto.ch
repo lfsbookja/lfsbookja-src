@@ -16,13 +16,13 @@
 @x
 <sect1 id="xorg7-proto" xreflabel="Xorg Protocol Headers">
 @y
-<sect1 id="xorg7-proto" xreflabel="Xorg プロトコルヘッダ">
+<sect1 id="xorg7-proto" xreflabel="Xorg プロトコルヘッダー">
 @z
 
 @x
   <title>Xorg Protocol Headers</title>
 @y
-  <title>Xorg プロトコルヘッダ</title>
+  <title>Xorg プロトコルヘッダー</title>
 @z
 
 @x
@@ -31,14 +31,14 @@
   </indexterm>
 @y
   <indexterm zone="xorg7-proto">
-    <primary sortas="a-xorg7-proto">Xorg プロトコルヘッダ</primary>
+    <primary sortas="a-xorg7-proto">Xorg プロトコルヘッダー</primary>
   </indexterm>
 @z
 
 @x
     <title>Introduction to Xorg Protocol Headers</title>
 @y
-    <title>Xorg プロトコルヘッダの概要</title>
+    <title>Xorg プロトコルヘッダーの概要</title>
 @z
 
 @x
@@ -48,8 +48,8 @@
 @y
 <para>
 <application>Xorg</application>
-プロトコルヘッダは、 システム構築に必要となるヘッダファイルを提供します。
-また他のパッケージが、X ウィンドウシステム上にてビルドしていくものである場合に、そのヘッダファイルを提供します。
+プロトコルヘッダーは、 システム構築に必要となるヘッダーファイルを提供します。
+また他のパッケージが、X ウィンドウシステム上にてビルドしていくものである場合に、そのヘッダーファイルを提供します。
 </para>
 @z
 
@@ -108,6 +108,42 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Xorg Protocol Headers Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">Xorg Protocol Headers Dependencies</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"> <xref linkend="xorg7-util"/></para>
+@y
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <para role="required"> <xref linkend="xorg7-util"/></para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="required"> <xref linkend="fop"/> and <xref linkend="xmlto"/>
+    (to build additional documentation)</para>
+@y
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <para role="required"> <xref linkend="fop"/>, <xref linkend="xmlto"/>
+    (追加ドキュメントの生成時に必要)</para>
+@z
+
+@x
+    <note><para>There is a reciprocal dependency with <xref linkend="fop"/>. If
+    you wish to build the documentation, you'll need to re-install the 
+    Protocol Headers after the installation is complete and
+    <xref linkend="fop"/> has been installed.</para></note>
+@y
+<note><para>There is a reciprocal dependency with <xref linkend="fop"/>. If
+you wish to build the documentation, you'll need to re-install the 
+Protocol Headers after the installation is complete and
+<xref linkend="fop"/> has been installed.</para></note>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/Xorg7ProtocolHeaders'/></para>
 @y
@@ -134,7 +170,7 @@
 @x
     <title>Installation of Xorg Protocol Headers</title>
 @y
-    <title>Xorg プロトコルヘッダのインストール</title>
+    <title>Xorg プロトコルヘッダーのインストール</title>
 @z
 
 @x
@@ -143,7 +179,7 @@
 @y
 <para>
 <application>Xorg</application>
-プロトコルヘッダをインストールするために、以下を実行して個々のパッケージのインストールを行います。
+プロトコルヘッダーをインストールするために、以下を実行して個々のパッケージのインストールを行います。
 </para>
 @z
 

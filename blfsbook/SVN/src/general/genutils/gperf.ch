@@ -30,8 +30,8 @@
     from a key set.</para>
 @y
 <para>
-<application>Gperf</application> generates a perfect hash function
-from a key set.
+<application>Gperf</application>
+はキーセットに基づいて、完全なハッシュ関数の生成を実現します。
 </para>
 @z
 
@@ -143,8 +143,8 @@ from a key set.
 @y
 <para>
 <command>install -m644 -v doc/gperf.{dvi,ps,pdf,txt} ...</command>:
-This command installs documentation. Modify the command (remove ',txt') if
-you did not build the text version.
+このコマンドはドキュメントをインストールします。
+テキスト版ドキュメントのビルドが不要である場合は、コマンドを修正してください。 (',txt' を取り除いてください。)
 </para>
 @z
 
@@ -154,9 +154,9 @@ you did not build the text version.
     to do so.</para>
 @y
 <para>
-<command>pushd ... popd</command>: This set of commands rebuilds the
-<filename>/usr/share/info/dir</filename> file as the installation failed
-to do so.
+<command>pushd ... popd</command>:
+インストール時において <filename>/usr/share/info/dir</filename>
+の再生成に失敗するため、この一連のコマンドにより再生成します。
 </para>
 @z
 
@@ -196,6 +196,6 @@ to do so.
           <para>generates a perfect hash function from a key set.</para>
 @y
 <para>
-generates a perfect hash function from a key set.
+キーセットに基づいて、完全なハッシュ関数を生成します。
 </para>
 @z

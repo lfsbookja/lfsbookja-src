@@ -221,7 +221,7 @@
 @y
 <para>
 <parameter>shared</parameter>:
-このパラメータは、スタティックライブラリとともに共有ライブラリを生成するよう指示します。
+このパラメーターは、スタティックライブラリとともに共有ライブラリを生成するよう指示します。
 </para>
 @z
 
@@ -232,10 +232,8 @@
 @y
 <para>
 <parameter>zlib-dynamic</parameter>:
-
-This parameter adds
-compression/decompression functionality using the
-<filename class="libraryfile">libz</filename> library.
+このパラメーターは <filename class="libraryfile">libz</filename>
+ライブラリ利用による、ファイル圧縮や伸張の機能を追加します。
 </para>
 @z
 
@@ -246,11 +244,10 @@ compression/decompression functionality using the
     utilize either of those methods in your projects.</para>
 @y
 <para>
-<option>no-rc5 no-idea</option>:
+<option>no-rc5 no-idea</option>: <command>./config</command>
+コマンドにてこれを指定すると、暗号化モジュールを含めません。
 
-When added to the
-<command>./config</command> command, this will eliminate the building
-of those encryption methods. Patent licenses may be needed for you to
+Patent licenses may be needed for you to
 utilize either of those methods in your projects.
 </para>
 @z
@@ -263,11 +260,10 @@ utilize either of those methods in your projects.
 @y
 <para>
 <command>make MANDIR=/usr/share/man install</command>:
-
-This command
-installs <application>OpenSSL</application> with the man pages in
-<filename class='directory'>/usr/share/man</filename> instead of
-<filename class='directory'>/etc/ssl/man</filename>.
+このコマンドにより <application>OpenSSL</application>
+の man ページのインストール先を <filename class='directory'>/etc/ssl/man</filename>
+ではなく <filename class='directory'>/usr/share/man</filename>
+とします。
 </para>
 @z
 
@@ -279,11 +275,9 @@ installs <application>OpenSSL</application> with the man pages in
 @y
 <para>
 <command>cp -v -r certs /etc/ssl</command>:
-
-This installs both the
-sample certificates and documentation included with
-<application>OpenSSL</application>, and the certificates that were extracted
-from the BLFS-ca-bundle-&ca-bundle-version; package.
+<application>OpenSSL</application>
+のサンプル証明書とドキュメントをともにインストールします。
+証明書は BLFS-ca-bundle-&ca-bundle-version; から抽出されインストールされます。
 </para>
 @z
 
@@ -295,12 +289,16 @@ from the BLFS-ca-bundle-&ca-bundle-version; package.
     recreated every time a new or updated certificate is added to
     <filename class="directory">/etc/ssl/certs</filename>.</para>
 @y
-    <para><command>for pem in /etc/ssl/certs/*.pem...</command>: This group of
-    commands creates a single-file certificate bundle 
-    (<filename>/etc/ssl/ca-bundle.crt</filename>) that is usable by many
-    other software packages.  <filename>ca-bundle.crt</filename> should be
-    recreated every time a new or updated certificate is added to
-    <filename class="directory">/etc/ssl/certs</filename>.</para>
+<para>
+<command>for pem in /etc/ssl/certs/*.pem...</command>:
+
+This group of
+commands creates a single-file certificate bundle 
+(<filename>/etc/ssl/ca-bundle.crt</filename>) that is usable by many
+other software packages.  <filename>ca-bundle.crt</filename> should be
+recreated every time a new or updated certificate is added to
+<filename class="directory">/etc/ssl/certs</filename>.
+</para>
 @z
 
 @x

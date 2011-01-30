@@ -464,8 +464,6 @@ for a list of various third-party modules available.</para>
           PAM modules.</para>
 @y
 <para>
-
-provides the interfaces between applications and the
-PAM modules.
+アプリケーションと PAM モジュールの間のインターフェースを提供します。
 </para>
 @z

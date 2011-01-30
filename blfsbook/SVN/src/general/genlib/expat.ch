@@ -26,7 +26,7 @@
 <para>
 <application>Expat</application>
 パッケージは XML を解析するための、ストリーム指向 (stream oriented)
-の C ライブラリを提供します。
+な C ライブラリを提供します。
 </para>
 @z
 
@@ -70,6 +70,20 @@
         <para>Estimated build time: &expat-time;</para>
 @y
         <para>&j-Estimatedbuildtime;: &expat-time;</para>
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required patch: <ulink
+        url="&patch-root;/expat-&expat-version;-fixes-3.patch"/></para>
+@y
+        <para>必須のパッチ: <ulink
+        url="&patch-root;/expat-&expat-version;-fixes-3.patch"/></para>
 @z
 
 @x

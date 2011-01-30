@@ -62,6 +62,24 @@
 @z
 
 @x
+      <para>January 24th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Reverted reversal of Xorg Utilities and Xorg Protocol
+          Headers.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/01/24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Reverted reversal of Xorg Utilities and Xorg Protocol
+          Headers.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>January 23rd, 2011</para>
       <itemizedlist>
         <listitem>

@@ -33,7 +33,7 @@
 ウィンドウシステムのオープンソース実装です。
 このシステムは、ディスプレイハードウェア (マウス、キーボード、ビデオディスプレイ)
 とデスクトップ環境に対し、クライアント/サーバーのインターフェースを提供します。
-またウィンドウインフラストラクチャと標準アプリケーションインターフェース
+またウィンドウインフラストラクチャーと標準アプリケーションインターフェース
 (API; application interface) を提供します。
 </para>
 @z
@@ -210,52 +210,110 @@ current FHS guidelines.
     <envar>XORG_PREFIX</envar> variable with the following
     command:</para>
 @y
-    <para>Choose your installation prefix, and set the
-    <envar>XORG_PREFIX</envar> variable with the following
+<para>
+インストールプレフィックスを定めたら、以下のコマンドにより
+環境変数 <envar>XORG_PREFIX</envar> にセットします。
+</para>
+@z
+
+@x
+    <para>Throughout these instructions, you will use the following
+    <command>configure</command> switches for all of the packages.  Create the
+    <envar>XORG_CONFIG</envar> variable to use for this parameter
+    substitution:</para>
+@y
+<para>
+インストール手順を通じては、すべてのパッケージに対して
+<command>configure</command> へのパラメーター指定に以下を用います。
+環境変数 <envar>XORG_CONFIG</envar> 
+にそのパラメーター指定を定義します。
+</para>
+@z
+
+@x
+    <para>Create an <filename>/etc/profile.d/xorg.sh</filename> configuration
+    file containing these variables as the
+    <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+<systemitem class="username">root</systemitem>
+ユーザーになって、各種の変数設定を含めた
+<filename>/etc/profile.d/xorg.sh</filename> を生成します。
+</para>
+@z
+
+@x
+    <para>If you've decided to use the standard
+    <filename class="directory">/usr</filename> prefix, you can omit the
+    remainder of this page. Otherwise, be sure to add
+    <filename class="directory">$XORG_PREFIX/bin</filename> to your
+    <envar>PATH</envar> environment variable, and <filename class="directory">
+    $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
+    $XORG_PREFIX/share/pkgconfig</filename>
+    to your <envar>PKG_CONFIG_PATH</envar> variable. Issue the following
+    commands as the <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+インストールプレフィックスとして、標準的な
+<filename class="directory">/usr</filename>
+を選択した場合は、本節のこれ以降の設定は不要です。
+そうでない場合は、<envar>PATH</envar>
+に対して <filename class="directory">$XORG_PREFIX/bin</filename>
+を加え、<envar>PKG_CONFIG_PATH</envar> に対して
+<filename class="directory">$XORG_PREFIX/lib/pkgconfig</filename> と
+<filename class="directory">$XORG_PREFIX/share/pkgconfig</filename>
+を加える必要があります。
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
+@z
+
+@x
+    <para>You should also add
+    <filename class="directory"> $XORG_PREFIX/lib</filename> to the
+    <filename>/etc/ld.so.conf</filename> file. Again, as the
+    <systemitem class="username">root</systemitem> user, issue the following
     command:</para>
+@y
+<para>
+また <filename>/etc/ld.so.conf</filename>
+に対して <filename class="directory"> $XORG_PREFIX/lib</filename>
+を加える必要があります。
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
-    <para>Throughout these instructions, you will use the following
-    <command>configure</command> switches for all of the packages.  Create the
-    <envar>XORG_CONFIG</envar> variable to use for this parameter
-    substitution:</para>
+    <para>You should also modify
+    <filename>/etc/man_db.conf</filename>, adding appropriate
+    MANDATORY_MANPATH, MANPATH_MAP, and MANDB_MAP entries following the
+    examples for <filename class="directory">/usr/X11R6</filename>. Issue the
+    following command as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
-    <para>Throughout these instructions, you will use the following
-    <command>configure</command> switches for all of the packages.  Create the
-    <envar>XORG_CONFIG</envar> variable to use for this parameter
-    substitution:</para>
+<para>
+<filename>/etc/man_db.conf</filename>
+においては MANDATORY_MANPATH, MANPATH_MAP, MANDB_MAP
+の各エントリを適切に設定することも必要です。
+以下は <filename class="directory">/usr/X11R6</filename>
+を書き換える例です。
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
-    <para>Create an <filename>/etc/profile.d/xorg.sh</filename> configuration
-    file containing these variables as the
-    <systemitem class="username">root</systemitem> user:</para>
+    <para>Finally, if building on x86_64, you will need to create the
+    <filename class="directory">$XORG_PREFIX/lib</filename> directory and the
+    <filename>$XORG_PREFIX/lib64</filename> symlink. Again, as the
+    <systemitem class="username">root</systemitem> user, issue the following
+    commands:</para>
 @y
-    <para>Create an <filename>/etc/profile.d/xorg.sh</filename> configuration
-    file containing these variables as the
-    <systemitem class="username">root</systemitem> user:</para>
+<para>
+最後に x86_64 においてビルドを行っている場合は
+<filename class="directory">$XORG_PREFIX/lib</filename>
+ディレクトリを生成して <filename>$XORG_PREFIX/lib64</filename>
+へのシンボリックリンクを生成します。
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行します。
+</para>
 @z
-
-@x
-    <para>If you've decided to use the standard
-    <filename class="directory">/usr</filename> prefix, you can omit the
-    remainder of this page. Otherwise, be sure to add
-    <filename class="directory">$XORG_PREFIX/bin</filename> to your
-    <envar>PATH</envar> environment variable, and <filename class="directory">
-    $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
-    $XORG_PREFIX/share/pkgconfig</filename>
-    to your <envar>PKG_CONFIG_PATH</envar> variable. Issue the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>If you've decided to use the standard
-    <filename class="directory">/usr</filename> prefix, you can omit the
-    remainder of this page. Otherwise, be sure to add
-    <filename class="directory">$XORG_PREFIX/bin</filename> to your
-    <envar>PATH</envar> environment variable, and <filename class="directory">
-    $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
-    $XORG_PREFIX/share/pkgconfig</filename>
-    to your <envar>PKG_CONFIG_PATH</envar> variable. Issue the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
-@z
-

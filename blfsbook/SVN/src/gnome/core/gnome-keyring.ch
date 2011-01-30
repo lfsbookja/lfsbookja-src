@@ -161,12 +161,11 @@
 <para>
 <parameter>--libexecdir=$(pkg-config --variable=prefix
 ORBit-2.0)/lib/gnome-keyring</parameter>:
-
-This parameter causes the libexec
-files to be installed in the preferred location of
+このパラメーターは libexec ファイルのインストール先を
+<filename class="directory">$GNOME_PREFIX/libexec</filename>
+ではなく、より適切な
 <filename class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename>
-instead of
-<filename class="directory">$GNOME_PREFIX/libexec</filename>.
+とします。
 </para>
 @z
 
@@ -175,8 +174,8 @@ instead of
     specifies where the pam modules will be installed into.</para>
 @y
 <para>
-<parameter>--with-pam-dir=/lib/security</parameter>: This parameter
-specifies where the pam modules will be installed into.
+<parameter>--with-pam-dir=/lib/security</parameter>:
+このパラメーターは pam モジュールのインストール先ディレクトリを指定します。
 </para>
 @z
 
@@ -187,8 +186,8 @@ specifies where the pam modules will be installed into.
 @y
 <para>
 <parameter>--with-dbus-services=/usr/share/dbus-1/services</parameter>:
-This parameter specifies where the <application>D-BUS</application> session
-services directory is located.
+このパラメーターは <application>D-BUS</application>
+のセッションサービスディレクトリが位置しているディレクトリを指定します。
 </para>
 @z
 
@@ -197,8 +196,9 @@ services directory is located.
     parameter specifies where the trusted root certificates are located.</para>
 @y
 <para>
-<parameter>--with-root-certs=/etc/ssl/certs</parameter>: This
-parameter specifies where the trusted root certificates are located.
+<parameter>--with-root-certs=/etc/ssl/certs</parameter>:
+このパラメーターは、信頼できるルート証明書 (root cetificates)
+が収容されているディレクトリを指定します。
 </para>
 @z
 
@@ -208,9 +208,7 @@ parameter specifies where the trusted root certificates are located.
 @y
 <para>
 <option>--disable-scrollkeeper</option>:
-
-Use this parameter if you
-wish to disable the updates to the scrollkeeper database.
+scrollkeeper のデータベースを更新したくない場合に本パラメーターを指定します。
 </para>
 @z
 
