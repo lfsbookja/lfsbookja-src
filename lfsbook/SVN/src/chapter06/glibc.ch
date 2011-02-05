@@ -93,6 +93,22 @@ Glibc は自らによってビルドされるものであり、そうして完�
 @z
 
 @x
+    <para>In addition, there is a bug in the
+    <filename>test-installation.pl</filename> script in that it tries to link
+    a test program to a library that isn't installed by
+    <command>make install</command>.  Issue the following <command>sed</command>
+    command to fix it:</para>
+@y
+<para>
+また <filename>test-installation.pl</filename>
+スクリプトにはバグがあり、<command>make install</command>
+ではインストールされないライブラリに、テストプログラムをリンクしてしまいます。
+そこで以下の <command>sed</command>
+コマンドを実行してこれを修正します。
+</para>
+@z
+
+@x
     <para>The <command>ldd</command> shell script contains Bash-specific
     syntax. Change its default program interpreter to <command>/bin/bash</command>
     in case another <command>/bin/sh</command> is installed as described in the

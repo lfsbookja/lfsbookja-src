@@ -57,6 +57,42 @@
 @z
 
 @x
+      <para>2011-02-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Upgrade to Glibc-2.13. Fixes
+          <ulink url="&lfs-ticket-root;2827">#2827</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to XZ-5.0.1. Fixes
+          <ulink url="&lfs-ticket-root;2826">#2826</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Upgrade to Perl-5.12.3. Fixes
+          <ulink url="&lfs-ticket-root;2824">#2824</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@y
+      <para>2011-02-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] Glibc-2.13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2827">#2827</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] XZ-5.0.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2826">#2826</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] Perl-5.12.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2824">#2824</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+@z
+
+@x
       <para>2011-01-27</para>
       <itemizedlist>
         <listitem>
