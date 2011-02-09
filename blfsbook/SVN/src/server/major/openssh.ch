@@ -368,12 +368,14 @@ over a network.
 @x
       <para>If you added <application>LinuxPAM</application> support, then you
       will need to add a configuration file for
-      <application>sshd</application>.  Issue the following commands as the
+      <application>sshd</application> and enable use of
+      <application>LinuxPAM</application>.  Issue the following commands as the
       <systemitem class='username'>root</systemitem> user:</para>
 @y
       <para>If you added <application>LinuxPAM</application> support, then you
       will need to add a configuration file for
-      <application>sshd</application>.  Issue the following commands as the
+      <application>sshd</application> and enable use of
+      <application>LinuxPAM</application>.  Issue the following commands as the
       <systemitem class='username'>root</systemitem> user:</para>
 @z
 

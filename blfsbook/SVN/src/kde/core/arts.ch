@@ -176,11 +176,13 @@
     <application>aRts</application> is installed here as it's required
     before installing <application>KDE</application>.</para>
 @y
-    <para><parameter>--prefix=&kde-dir;</parameter>: This option
-    tells the process to install the package in
-    <filename class="directory">&kde-dir;</filename>.
-    <application>aRts</application> is installed here as it's required
-    before installing <application>KDE</application>.</para>
+<para>
+<parameter>--prefix=&kde-dir;</parameter>:
+このパラメーターにより本パッケージを <filename class="directory">&kde-dir;</filename>
+にインストールします。
+<application>KDE</application> をインストールする前に、
+<application>aRts</application> パッケージをここにインストールします。
+</para>
 @z
 
 @x
@@ -238,7 +240,7 @@
         artsc-config, mcopidl</seg>
         <seg>aRts ライブラリ</seg>
         <seg>The following subdirectories of &kde-dir;/: bin, include/arts,
-        include/artsc, and lib/mcop</seg>
+        include/artsc, lib/mcop</seg>
 @z
 
 @x

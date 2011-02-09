@@ -585,12 +585,12 @@ installation with the following commands:
 
 @x
     <para>The <application>Java</application> plugin is located at
-    <filename class="directory">$JAVA_HOME/jre/plugin/<replaceable>arch</replaceable>/IcedTeaPlugin.so</filename>.
+    <filename class="directory">$JAVA_HOME/jre/plugin/<replaceable>&lt;arch&gt;</replaceable>/IcedTeaPlugin.so</filename>.
     Make a symbolic link to the file in that directory from your browser(s)
     plugins directory.</para>
 @y
     <para>The <application>Java</application> plugin is located at
-    <filename class="directory">$JAVA_HOME/jre/plugin/<replaceable>arch</replaceable>/IcedTeaPlugin.so</filename>.
+    <filename class="directory">$JAVA_HOME/jre/plugin/<replaceable>&lt;arch&gt;</replaceable>/IcedTeaPlugin.so</filename>.
     Make a symbolic link to the file in that directory from your browser(s)
     plugins directory.</para>
 @z

@@ -11,7 +11,8 @@ EXTRA_DIST = glib2.ch libesmtp.ch libpthread-stubs.ch pcre.ch \
 	libffi.ch gir-repository.ch gobject-introspection.ch \
 	enchant.ch icu.ch libical.ch libelf.ch libggz.ch \
 	libsigc++.ch ptlib.ch glibmm.ch libatasmart.ch libdaemon.ch \
-	telepathy-glib.ch libatomic_ops.ch wv.ch talloc.ch
+	telepathy-glib.ch libatomic_ops.ch wv.ch talloc.ch \
+	libdbusmenuqt.ch clucene.ch qca.ch boost.ch
 srcdir = @srcdir@
 srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	aspell.xml gmime.xml libgcrypt.xml libusb-compat.xml popt.xml \
@@ -25,7 +26,8 @@ srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	libffi.xml gir-repository.xml gobject-introspection.xml \
 	enchant.xml icu.xml libical.xml libelf.xml libggz.xml \
         libsigc++.xml ptlib.xml glibmm.xml libatasmart.xml libdaemon.xml \
-	telepathy-glib.xml libatomic_ops.xml wv.xml talloc.xml
+	telepathy-glib.xml libatomic_ops.xml wv.xml talloc.xml \
+	libdbusmenuqt.xml clucene.xml qca.xml boost.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -102,4 +104,8 @@ telepathy-glib.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-glib.ch
 libatomic_ops.xml: $(BOOKdir)/$@ $(srcdir)/libatomic_ops.ch
 wv.xml: $(BOOKdir)/$@ $(srcdir)/wv.ch
 talloc.xml: $(BOOKdir)/$@ $(srcdir)/talloc.ch
+libdbusmenuqt.xml: $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch
+clucene.xml: $(BOOKdir)/$@ $(srcdir)/clucene.ch
+qca.xml: $(BOOKdir)/$@ $(srcdir)/qca.ch
+boost.xml: $(BOOKdir)/$@ $(srcdir)/boost.ch
 

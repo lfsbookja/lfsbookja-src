@@ -208,19 +208,19 @@ expected をうまく訳せない； どうしたものか・・・
 @z
 
 @x
-        <seg>bdftopcf, iceauth, mkfontdir,mkfontscale, sessreg, setxkbmap,
-        smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock, xcmsdb,
-        xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost, xinit,
-        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
+        <seg>bdftopcf, iceauth, luit, mkfontdir,mkfontscale, sessreg,
+        setxkbmap, smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock,
+        xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
+        xinit, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
         xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
         xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>None</seg>
         <seg>/etc/X11/app-defaults</seg>
 @y
-        <seg>bdftopcf, iceauth, mkfontdir,mkfontscale, sessreg, setxkbmap,
-        smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock, xcmsdb,
-        xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost, xinit,
-        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
+        <seg>bdftopcf, iceauth, luit, mkfontdir,mkfontscale, sessreg,
+        setxkbmap, smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock,
+        xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
+        xinit, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
         xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
         xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
         <seg>なし</seg>

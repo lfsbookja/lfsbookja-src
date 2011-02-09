@@ -62,6 +62,60 @@
 @z
 
 @x
+      <para>February 8th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Added Soprano, Virtuoso, Raptor, Rasqal, Redland,
+          Strigi, DBusMenu-Qt, CLucene, QCA, Boost, Exiv2, iODBC</para>
+          <para>[thomas] - Add a note about Phonon at QT4</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/02/08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - 以下を追加： Soprano, Virtuoso, Raptor, Rasqal, Redland,
+          Strigi, DBusMenu-Qt, CLucene, QCA, Boost, Exiv2, iODBC</para>
+          <para>[thomas] - Add a note about Phonon at QT4</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>January 31st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Added instruction to enable use of LinuxPAM to OpenSSH
+          instructions.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/01/31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Added instruction to enable use of LinuxPAM to OpenSSH
+          instructions.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>January 29th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to IcedTea6-1.9.4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/01/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - IcedTea6-1.9.4 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>January 24th, 2011</para>
       <itemizedlist>
         <listitem>

@@ -142,14 +142,16 @@ EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
 	DeviceKit.ch udev.ch Device-mapper.ch \
 	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch xz-utils.ch \
-	gvfs.ch cmake.ch libarchive.ch
+	gvfs.ch cmake.ch libarchive.ch \
+	raptor.ch redland.ch rasqal.ch strigi.ch
 
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	lzma-utils.xml mc.xml pciutils.xml pkgconfig.xml sysstat.xml sysutils.xml \
 	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
 	DeviceKit.xml udev.xml Device-mapper.xml \
 	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml xz-utils.xml \
-	gvfs.xml cmake.xml libarchive.xml
+	gvfs.xml cmake.xml libarchive.xml \
+	raptor.xml redland.xml rasqal.xml strigi.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -368,6 +370,10 @@ xz-utils.xml: $(BOOKdir)/$@ $(srcdir)/xz-utils.ch
 gvfs.xml: $(BOOKdir)/$@ $(srcdir)/gvfs.ch
 cmake.xml: $(BOOKdir)/$@ $(srcdir)/cmake.ch
 libarchive.xml: $(BOOKdir)/$@ $(srcdir)/libarchive.ch
+raptor.xml: $(BOOKdir)/$@ $(srcdir)/raptor.ch
+redland.xml: $(BOOKdir)/$@ $(srcdir)/redland.ch
+rasqal.xml: $(BOOKdir)/$@ $(srcdir)/rasqal.ch
+strigi.xml: $(BOOKdir)/$@ $(srcdir)/strigi.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

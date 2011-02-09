@@ -1,9 +1,9 @@
 BOOKdir = $(top_builddir)/@bookdir@/server/other
 EXTRA_DIST = cvsserver.ch dhcp.ch leafnode.ch openldap.ch other.ch rsync.ch \
-	svnserver.ch
+	svnserver.ch soprano.ch virtuoso.ch
 srcdir = @srcdir@
 srcs = cvsserver.xml dhcp.xml leafnode.xml openldap.xml other.xml rsync.xml \
-	svnserver.xml
+	svnserver.xml soprano.xml virtuoso.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -20,3 +20,5 @@ openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
 other.xml: $(BOOKdir)/$@ $(srcdir)/other.ch
 rsync.xml: $(BOOKdir)/$@ $(srcdir)/rsync.ch
 svnserver.xml: $(BOOKdir)/$@ $(srcdir)/svnserver.ch
+soprano.xml: $(BOOKdir)/$@ $(srcdir)/soprano.ch
+virtuoso.xml: $(BOOKdir)/$@ $(srcdir)/virtuoso.ch
