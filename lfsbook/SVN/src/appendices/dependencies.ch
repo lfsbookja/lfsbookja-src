@@ -230,9 +230,9 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
          Patch, Perl, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils, E2fsprogs, Findutils, and Util-linux-ng</seg>
+          <seg>Diffutils, E2fsprogs, Findutils, and Util-linux</seg>
 @y
-          <seg>Diffutils, E2fsprogs, Findutils, Util-linux-ng</seg>
+          <seg>Diffutils, E2fsprogs, Findutils, Util-linux</seg>
 @z
 @x
           <seg>Bash, Diffutils, Findutils, Man-DB, and Udev</seg>
@@ -318,10 +318,10 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 %----------------------------------------------------------------------
 @x E2fsprogs
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Gzip, Make, Pkg-config, Sed, Texinfo, and Util-linux-ng</seg>
+         Gzip, Make, Pkg-config, Sed, Texinfo, and Util-linux</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Gzip, Make, Pkg-config, Sed, Texinfo, Util-linux-ng</seg>
+         Gzip, Make, Pkg-config, Sed, Texinfo, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -997,10 +997,10 @@ Typo ですが日本語訳には影響ありません。
 @z
 @x
           <seg>Bash, GRUB, Inetutils, Less, Procps, Psmisc, Readline, Texinfo,
-          Util-linux-ng, and Vim</seg>
+          Util-linux, and Vim</seg>
 @y
           <seg>Bash, GRUB, Inetutils, Less, Procps, Psmisc, Readline, Texinfo,
-          Util-linux-ng, Vim</seg>
+          Util-linux, Vim</seg>
 @z
 @x
           <seg>None</seg>
@@ -1332,7 +1332,7 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x Util-linux-ng
+@x Util-linux
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, Gawk, GCC,
          Gettext, Glibc, Grep, Make, Ncurses, Sed, and Zlib</seg>
 @y
@@ -1413,13 +1413,12 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>File, Module-Init-Tools, Perl, and Util-linux-ng</seg>
+          <seg>File, Module-Init-Tools, Perl, and Util-linux</seg>
 @y
-          <seg>File, Module-Init-Tools, Perl, Util-linux-ng</seg>
+          <seg>File, Module-Init-Tools, Perl, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
 @y
           <seg>なし</seg>
 @z
-

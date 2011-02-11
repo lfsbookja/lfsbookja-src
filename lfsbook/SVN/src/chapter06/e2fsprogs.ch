@@ -90,7 +90,7 @@ E2fsprogs パッケージは、ソースディレクトリ内にサブディレ�
           <systemitem class="library">libuuid</systemitem> and
           <systemitem class="library">libblkid</systemitem> libraries, the
           <systemitem class="daemon">uuidd</systemitem> daemon, and the
-          <command>fsck</command> wrapper, as Util-Linux-NG installed all of
+          <command>fsck</command> wrapper, as Util-Linux installed all of
           them earlier.</para>
 @y
 <para>
@@ -99,7 +99,7 @@ E2fsprogs パッケージは、ソースディレクトリ内にサブディレ�
 <systemitem class="library">libblkid</systemitem> ライブラリ、
 <systemitem class="daemon">uuidd</systemitem> デーモン、
 <command>fsck</command> ラッパーをいずれもビルドせずインストールしないようにします。
-これらは Util-Linux-NG パッケージによって既にインストールされています。
+これらは Util-Linux パッケージによって既にインストールされています。
 </para>
 @z
 
@@ -144,7 +144,7 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
     <para>Install the static libraries and headers:</para>
 @y
 <para>
-スタティックライブラリとヘッダファイルをインストールします。
+スタティックライブラリとヘッダーファイルをインストールします。
 </para>
 @z
 
@@ -259,7 +259,7 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           <filename class="libraryfile">com_err</filename> library</para>
 @y
 <para>
-エラーテーブルコンパイラ。
+エラーテーブルコンパイラー。
 これはエラーコード名とメッセージの一覧を、
 <filename class="libraryfile">com_err</filename>
 ライブラリを利用する C ソースコードとして変換するものです。
@@ -272,7 +272,7 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           file system</para>
 @y
 <para>
-ファイルシステムデバッガ。
+ファイルシステムデバッガー。
 これは <systemitem class="filesystem">ext2</systemitem>
 ファイルシステムの状態を調査し変更することができます。
 </para>
@@ -567,4 +567,3 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
 <command>debugfs</command> コマンドが利用します。
 </para>
 @z
-

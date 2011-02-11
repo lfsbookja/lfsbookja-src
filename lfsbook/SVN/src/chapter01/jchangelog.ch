@@ -54,6 +54,22 @@
 -->
 
     <listitem>
+      <para>2011-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/appendices/dependencies.ch,
+          src/chapter03/packages.ch,
+          src/chapter05/e2fsprogs.ch,
+          src/chapter06/{e2fsprogs.ch, sysvinit.ch, util-linux.ch},
+          src/prologue/{standards.ch, why.ch}:
+          SVN-20110210, r9460 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-02-05</para>
       <itemizedlist>
         <listitem>

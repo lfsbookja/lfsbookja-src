@@ -64,8 +64,8 @@ LFS の構成は出来る限り Linux の各種標準に従うようにしてい
 <para>
 LSB はさらに以下の５つの標準から構成されます。
 コア (Core)、C++、デスクトップ (Desktop)、ランタイム言語 (Runtime Languages)、印刷 (Printing) です。
-また一般的な要求事項に加えて、アーキテクチャに固有の要求事項もあります。
-LFS では前節にて示したように、各アーキテクチャに適合することを目指します。
+また一般的な要求事項に加えて、アーキテクチャーに固有の要求事項もあります。
+LFS では前節にて示したように、各アーキテクチャーに適合することを目指します。
 </para>
 @z
 
@@ -112,14 +112,14 @@ LFS の構築にあたっては LSB に適合していることを確認する�
         <listitem>
           <para>Bash, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
                 Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
-                Shadow, Tar, Util-linux-ng, Zlib</para>
+                Shadow, Tar, Util-linux, Zlib</para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
           <para>Bash, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
                 Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
-                Shadow, Tar, Util-linux-ng, Zlib</para>
+                Shadow, Tar, Util-linux, Zlib</para>
         </listitem>
 @z
 

@@ -62,12 +62,12 @@ Sysvinit パッケージは、システムの起動、実行、シャットダ�
 
 @x
     <para>A maintained version of the <command>wall</command> program was
-    installed earlier by Util-linux-ng. Suppress the installation of Sysvinit's
+    installed earlier by Util-linux. Suppress the installation of Sysvinit's
     version of this program and its man page:</para>
 @y
 <para>
 <command>wall</command>
-コマンドは Util-linux-ng パッケージにおいてメンテナンスされており、既にインストールが出来ています。
+コマンドは Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
 そこで Sysvinit が提供する <command>wall</command>
 コマンドはインストールせず、その man ページもインストールしないようにします。
 </para>

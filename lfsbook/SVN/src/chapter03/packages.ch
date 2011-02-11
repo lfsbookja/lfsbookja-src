@@ -637,14 +637,24 @@ Linux カーネルはわりと頻繁に更新されます。
         <para>MD5 sum: <literal>&udev-config-md5;</literal></para>
 @z
 
+% @x
+%         <para>Home page: <ulink url="&util-linux-ng-home;"/></para>
+%         <para>Download: <ulink url="&util-linux-ng-url;"/></para>
+%         <para>MD5 sum: <literal>&util-linux-ng-md5;</literal></para>
+% @y
+%         <para>ホームページ: <ulink url="&util-linux-ng-home;"/></para>
+%         <para>ダウンロード: <ulink url="&util-linux-ng-url;"/></para>
+%         <para>MD5 sum: <literal>&util-linux-ng-md5;</literal></para>
+% @z
+
 @x
-        <para>Home page: <ulink url="&util-linux-ng-home;"/></para>
-        <para>Download: <ulink url="&util-linux-ng-url;"/></para>
-        <para>MD5 sum: <literal>&util-linux-ng-md5;</literal></para>
+        <para>Home page: <ulink url="&util-linux-home;"/></para>
+        <para>Download: <ulink url="&util-linux-url;"/></para>
+        <para>MD5 sum: <literal>&util-linux-md5;</literal></para>
 @y
-        <para>ホームページ: <ulink url="&util-linux-ng-home;"/></para>
-        <para>ダウンロード: <ulink url="&util-linux-ng-url;"/></para>
-        <para>MD5 sum: <literal>&util-linux-ng-md5;</literal></para>
+        <para>ホームページ: <ulink url="&util-linux-home;"/></para>
+        <para>ダウンロード: <ulink url="&util-linux-url;"/></para>
+        <para>MD5 sum: <literal>&util-linux-md5;</literal></para>
 @z
 
 @x

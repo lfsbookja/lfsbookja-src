@@ -14,12 +14,12 @@
 @z
 
 @x
-    <para>The Util-linux-ng package contains miscellaneous utility programs.
+    <para>The Util-linux package contains miscellaneous utility programs.
     Among them are utilities for handling file systems, consoles, partitions,
     and messages.</para>
 @y
 <para>
-Util-linux パッケージは様々なユーティリティプログラムを提供します。
+Util-linux パッケージは、さまざまなユーティリティプログラムを提供します。
 ファイルシステム、コンソール、パーティション、カーネルメッセージなどを取り扱うユーティリティです。
 </para>
 @z
@@ -48,9 +48,9 @@ FHS では <filename>adjtime</filename>
 @z
 
 @x
-    <title>Installation of Util-linux-ng</title>
+    <title>Installation of Util-linux</title>
 @y
-    <title>Util-linux-ng のインストール</title>
+    <title>Util-linux のインストール</title>
 @z
 
 @x
@@ -105,9 +105,9 @@ FHS では <filename>adjtime</filename>
 @z
 
 @x
-    <title>Contents of Util-linux-ng</title>
+    <title>Contents of Util-linux</title>
 @y
-    <title>Util-linux-ng の構成</title>
+    <title>Util-linux の構成</title>
 @z
 
 @x
@@ -124,9 +124,9 @@ FHS では <filename>adjtime</filename>
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
         dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, getopt, hexdump, hwclock, i386,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
-        logger, look, losetup, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
+        logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, namei, partx, pg, pivot_root,
         readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
         setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
@@ -138,9 +138,9 @@ FHS では <filename>adjtime</filename>
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
         dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
-        fsck.cramfs, fsck.minix, fsfreeze, getopt, hexdump, hwclock, i386,
+        fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
-        logger, look, losetup, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
+        logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, namei, partx, pg, pivot_root,
         readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
         setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
@@ -405,6 +405,14 @@ mountinfo, fstab, mtab の各ファイルに対しての処理を行います。
 </para>
 @z
 
+@x fstrim
+          <para>Discards unused blocks on a mounted filesystem</para>
+@y
+<para>
+マウントされたファイルシステム上にて、利用されていないブロックを破棄します。
+</para>
+@z
+
 @x getopt
           <para>Parses options in the given command line</para>
 @y
@@ -537,6 +545,18 @@ setarch へのシンボリックリンク。
 @y
 <para>
 ループデバイス (loop device) の設定と制御を行います。
+</para>
+@z
+
+@x lsblk
+          <para>Lists information about all or selected block devices in
+           a tree-like format.</para>
+@y
+<!--
+日本語訳註： 意味不理解
+-->
+<para>
+ブロックデバイスのすべて、あるいは指定されたものの情報を、木構造のような形式で一覧表示します。
 </para>
 @z
 

@@ -32,10 +32,10 @@ E2fsprogs のドキュメントでは E2fsprogs をビルドする際に、ソ�
 @z
 
 @x
-    <para>Install the static libraries and headers required by Util-linux-ng:</para>
+    <para>Install the static libraries and headers required by Util-linux:</para>
 @y
 <para>
-Util-linux-ng パッケージにて必要となる、スタティック・ライブラリとヘッダ・ファイルをインストールします。
+Util-linux パッケージにて必要となる、スタティックライブラリとヘッダーファイルをインストールします。
 </para>
 @z
 

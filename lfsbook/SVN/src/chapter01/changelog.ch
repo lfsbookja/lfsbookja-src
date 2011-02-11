@@ -57,6 +57,35 @@
 @z
 
 @x
+      <para>2011-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] Upgrade to coreutils-8.10. 
+          Fixes
+          <ulink url="&lfs-ticket-root;2828">#2828</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Upgrade to Util-linux-2.19. 
+          Changed name from util-linux-ng. Fixes
+          <ulink url="&lfs-ticket-root;2805">#2805</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-02-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] coreutils-8.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2828">#2828</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] Util-linux-2.19 へのアップグレード。
+          util-linux-ng からの名称変更。
+          <ulink url="&lfs-ticket-root;2805">#2805</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-02-04</para>
       <itemizedlist>
         <listitem>
