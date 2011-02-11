@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY dbus-glib-buildsize     "10 MB (17 MB total if docs are installed)">
+@y
+  <!ENTITY dbus-glib-buildsize     "10 MB (ドキュメントインストール時は総計 17 MB)">
+@z
+
+@x
   <!ENTITY dbus-python-buildsize     "12 MB (includes installing all the documentation)">
 @y
   <!ENTITY dbus-python-buildsize     "12 MB (すべてのドキュメントのインストールを含む)">
@@ -432,8 +438,324 @@ D-Bus API に対しての <application>GLib</application>
       <para>To test the results, issue: <command>make check</command>. Note you
       must have <application>PyGObject</application> installed.</para>
 @y
-      <para>To test the results, issue: <command>make check</command>. Note you
-      must have <application>PyGObject</application> installed.</para>
+<para>
+ビルド結果をテストする場合は <command>make check</command> を実行します。
+この際には <application>PyGObject</application> をインストールしておく必要があります。
+</para>
+@z
+
+@x
+      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
+@z
+
+@x
+      <para>If you built the API documentation, install it by issuing the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:</para>
+@y
+<para>
+API ドキュメントをビルドした場合、
+<systemitem class="username">root</systemitem>
+ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
+</para>
+@z
+
+@x
+      <title>Contents</title>
+@y
+      <title>&j-Contents;</title>
+@z
+
+@x
+        <segtitle>Installed Programs</segtitle>
+        <segtitle>Installed Libraries</segtitle>
+        <segtitle>Installed Directories</segtitle>
+@y
+        <segtitle>&j-InstalledPrograms;</segtitle>
+        <segtitle>&j-InstalledLibraries;</segtitle>
+        <segtitle>&j-InstalledDirectories;</segtitle>
+@z
+
+@x
+          <seg>None</seg>
+          <seg><application>Python</application>
+          <application>D-Bus</application> modules</seg>
+          <seg>/usr/lib/python&python-majorver;/site-packages/dbus and
+          /usr/share/doc/dbus-python-&dbus-python-version;</seg>
+@y
+          <seg>なし</seg>
+          <seg><application>Python</application>
+          <application>D-Bus</application> モジュール</seg>
+          <seg>/usr/lib/python&python-majorver;/site-packages/dbus,
+          /usr/share/doc/dbus-python-&dbus-python-version;</seg>
+@z
+
+@x
+  <title>D-Bus Qt3 Bindings</title>
+@y
+  <title>D-Bus Qt3 バインディング</title>
+@z
+
+@x
+    <primary sortas="a-dbus-qt3">D-Bus Qt3 Bindings</primary>
+@y
+    <primary sortas="a-dbus-qt3">D-Bus Qt3 バインディング</primary>
+@z
+
+@x
+      <title>Introduction to D-Bus Qt3 Bindings</title>
+@y
+      <title>D-Bus Qt3 バインディングの概要</title>
+@z
+
+@x
+      <bridgehead renderas="sect4">Package Information</bridgehead>
+@y
+      <bridgehead renderas="sect4">&j-PackageInformation;</bridgehead>
+@z
+
+@x
+          <para>Download (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
+@y
+          <para>ダウンロード (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
+@z
+
+@x
+          <para>Download (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
+@y
+          <para>ダウンロード (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
+@z
+
+@x
+          <para>Download MD5 sum: &dbus-qt3-md5sum;</para>
+@y
+          <para>ダウンロード MD5 sum: &dbus-qt3-md5sum;</para>
+@z
+
+@x
+          <para>Download size: &dbus-qt3-size;</para>
+@y
+          <para>ダウンロードサイズ: &dbus-qt3-size;</para>
+@z
+
+@x
+          <para>Estimated disk space required: &dbus-qt3-buildsize;</para>
+@y
+          <para>&j-Estimateddiskspacerequired;: &dbus-qt3-buildsize;</para>
+@z
+
+@x
+          <para>Estimated build time: &dbus-qt3-time;</para>
+@y
+          <para>&j-Estimatedbuildtime;: &dbus-qt3-time;</para>
+@z
+
+@x
+      <bridgehead renderas="sect4">D-Bus Qt3 Dependencies</bridgehead>
+@y
+      <bridgehead renderas="sect4">D-Bus Qt3 の依存パッケージ</bridgehead>
+@z
+
+@x
+      <bridgehead renderas="sect5">Required</bridgehead>
+      <para role="required"><xref linkend="dbus"/> and
+      <xref linkend="qt"/></para>
+@y
+      <bridgehead renderas="sect5">&j-Required;</bridgehead>
+      <para role="required"><xref linkend="dbus"/>,
+      <xref linkend="qt"/></para>
+@z
+
+@x
+      <para condition="html" role="usernotes">User Notes:
+      <ulink url="&blfs-wiki;/dbus-qt3"/></para>
+@y
+      <para condition="html" role="usernotes">&j-UserNotes;:
+      <ulink url="&blfs-wiki;/dbus-qt3"/></para>
+@z
+
+@x
+      <title>Installation of D-Bus Qt3 Bindings</title>
+@y
+      <title>D-Bus Qt3 バインディングのインストール</title>
+@z
+
+@x
+      <para>Install <application>D-Bus Qt3 Bindings</application> by
+      running the following commands:</para>
+@y
+<para>
+以下のコマンドを実行して <application>D-Bus Qt3 Bindings</application>
+をビルドします。
+</para>
+@z
+
+@x
+      <para>This package does not come with a test suite.</para>
+@y
+<para>
+&j-notTestSuite;
+</para>
+@z
+
+@x
+      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@y
+<para>
+<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+</para>
+@z
+
+@x
+      <title>Contents</title>
+@y
+      <title>&j-Contents;</title>
+@z
+
+@x
+        <segtitle>Installed Programs</segtitle>
+        <segtitle>Installed Library</segtitle>
+        <segtitle>Installed Directories</segtitle>
+@y
+        <segtitle>&j-InstalledPrograms;</segtitle>
+        <segtitle>&j-InstalledLibraries;</segtitle>
+        <segtitle>&j-InstalledDirectories;</segtitle>
+@z
+
+@x
+          <seg>None</seg>
+          <seg>libdbus-qt-1.so</seg>
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+          <seg>libdbus-qt-1.so</seg>
+          <seg>なし</seg>
+@z
+
+@x
+        <bridgehead renderas="sect4">Short Descriptions</bridgehead>
+@y
+        <bridgehead renderas="sect4">&j-ShortDescriptions;</bridgehead>
+@z
+
+@x libdbus-qt-1.{so,a}
+            <para>contains <application>Qt3</application> interface functions
+            to the D-Bus API.</para>
+@y
+<para>
+contains <application>Qt3</application> interface functions
+to the D-Bus API.
+</para>
+@z
+
+@x
+    <title>D-Bus GObject Bindings (EggDBus)</title>
+@y
+    <title>D-Bus GObject バインディング (EggDBus)</title>
+@z
+
+@x
+      <title>Introduction to EggDBus</title>
+@y
+      <title>EggDBus の概要</title>
+@z
+
+@x
+      <bridgehead renderas="sect4">Package Information</bridgehead>
+@y
+      <bridgehead renderas="sect4">&j-PackageInformation;</bridgehead>
+@z
+
+@x
+          <para>Download (HTTP): <ulink url="&eggdbus-download-http;"/></para>
+@y
+          <para>Download (HTTP): <ulink url="&eggdbus-download-http;"/></para>
+@z
+
+@x
+          <para>Download (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
+@y
+          <para>Download (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
+@z
+
+@x
+          <para>Download MD5 sum: &eggdbus-md5sum;</para>
+@y
+          <para>Download MD5 sum: &eggdbus-md5sum;</para>
+@z
+
+@x
+          <para>Download size: &eggdbus-size;</para>
+@y
+          <para>Download size: &eggdbus-size;</para>
+@z
+
+@x
+          <para>Estimated disk space required: &eggdbus-buildsize;</para>
+@y
+          <para>Estimated disk space required: &eggdbus-buildsize;</para>
+@z
+
+@x
+          <para>Estimated build time: &eggdbus-time;</para>
+@y
+          <para>Estimated build time: &eggdbus-time;</para>
+@z
+
+@x
+      <bridgehead renderas="sect4">EggDBus Dependencies</bridgehead>
+@y
+      <bridgehead renderas="sect4">EggDBus Dependencies</bridgehead>
+@z
+
+@x
+      <bridgehead renderas="sect5">Required</bridgehead>
+      <para role="required"><xref linkend="dbus-glib"/> and
+      <xref linkend="docbook-xsl"/></para>
+@y
+      <bridgehead renderas="sect5">Required</bridgehead>
+      <para role="required"><xref linkend="dbus-glib"/> and
+      <xref linkend="docbook-xsl"/></para>
+@z
+
+@x
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional"><xref linkend="gtk-doc"/></para>
+@y
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional"><xref linkend="gtk-doc"/></para>
+@z
+
+@x
+      <para condition="html" role="usernotes">User Notes:
+      <ulink url="&blfs-wiki;/eggdbus"/></para>
+@y
+      <para condition="html" role="usernotes">User Notes:
+      <ulink url="&blfs-wiki;/eggdbus"/></para>
+@z
+
+@x
+      <title>Installation of EggDBus</title>
+@y
+      <title>Installation of EggDBus</title>
+@z
+
+@x
+      <para>Install <application>EggDBus</application> by
+      running the following commands:</para>
+@y
+      <para>Install <application>EggDBus</application> by
+      running the following commands:</para>
+@z
+
+@x
+      <para>To test the results, issue: <command>make check</command>.</para>
+@y
+      <para>To test the results, issue: <command>make check</command>.</para>
 @z
 
 @x
@@ -443,13 +765,9 @@ D-Bus API に対しての <application>GLib</application>
 @z
 
 @x
-      <para>If you built the API documentation, install it by issuing the
-      following commands as the <systemitem class="username">root</systemitem>
-      user:</para>
+      <title>Command Explanations</title>
 @y
-      <para>If you built the API documentation, install it by issuing the
-      following commands as the <systemitem class="username">root</systemitem>
-      user:</para>
+      <title>Command Explanations</title>
 @z
 
 @x
@@ -460,61 +778,20 @@ D-Bus API に対しての <application>GLib</application>
 
 @x
         <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Libraries</segtitle>
-        <segtitle>Installed Directories</segtitle>
+        <segtitle>Installed Library</segtitle>
+        <segtitle>Installed Directory</segtitle>
 @y
         <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Libraries</segtitle>
-        <segtitle>Installed Directories</segtitle>
+        <segtitle>Installed Library</segtitle>
+        <segtitle>Installed Directory</segtitle>
 @z
 
 @x
-          <seg>None</seg>
-          <seg><application>Python</application>
-          <application>D-Bus</application> modules</seg>
-          <seg>/usr/lib/python&python-majorver;/site-packages/dbus and
-          /usr/share/doc/dbus-python-&dbus-python-version;</seg>
+          <seg>eggdbus-binding-tool and eggdbus-glib-genmarshal</seg>
+          <seg>libeggdbus-1.{so,a}</seg>
+          <seg>/usr/include/eggdbus-1/eggdbus</seg>
 @y
-          <seg>None</seg>
-          <seg><application>Python</application>
-          <application>D-Bus</application> modules</seg>
-          <seg>/usr/lib/python&python-majorver;/site-packages/dbus and
-          /usr/share/doc/dbus-python-&dbus-python-version;</seg>
+          <seg>eggdbus-binding-tool and eggdbus-glib-genmarshal</seg>
+          <seg>libeggdbus-1.{so,a}</seg>
+          <seg>/usr/include/eggdbus-1/eggdbus</seg>
 @z
-
-@x
-  <title>D-Bus Qt3 Bindings</title>
-@y
-  <title>D-Bus Qt3 Bindings</title>
-@z
-
-@x
-    <primary sortas="a-dbus-qt3">D-Bus Qt3 Bindings</primary>
-@y
-    <primary sortas="a-dbus-qt3">D-Bus Qt3 Bindings</primary>
-@z
-
-@x
-      <title>Introduction to D-Bus Qt3 Bindings</title>
-@y
-      <title>Introduction to D-Bus Qt3 Bindings</title>
-@z
-
-@x
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-@y
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-@z
-
-@x
-          <para>Download (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
-@y
-          <para>Download (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
-@z
-
-@x
-          <para>Download (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
-@y
-          <para>Download (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
-@z
-

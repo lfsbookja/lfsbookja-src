@@ -50,14 +50,14 @@ XXX はどこにインストールすべきか?
   <filename class='directory'>/usr/local</filename>, except perhaps to create
   the basic directories within it.</para>
 @y
-  <para>In traditional Unix systems,
-  <filename class='directory'>/usr</filename> usually contains files that come
-  with the system distribution, and the
-  <filename class='directory'>/usr/local</filename> tree is free for the local
-  administrator to manage. The only really hard and fast rule is that Unix
-  distributions should not touch
-  <filename class='directory'>/usr/local</filename>, except perhaps to create
-  the basic directories within it.</para>
+<para>
+従来からの Unix システムにおいて、<filename class='directory'>/usr</filename>
+はシステムが提供するファイル類を配置する場所であり、一方
+<filename class='directory'>/usr/local</filename>
+は、個別の管理者が自由に取り扱う場所となっています。
+現実的な決まりとして <filename class='directory'>/usr/local</filename>
+は Unix システムの配布物を配置する場所ではなく、ただその配下の基本的なディレクトリのみを作るというものです。
+</para>
 @z
 
 @x
@@ -68,12 +68,15 @@ XXX はどこにインストールすべきか?
   package manager's database knows about every file within
   <filename class='directory'>/usr</filename>.</para>
 @y
-  <para>With Linux distributions like Red Hat, Debian, etc., a possible rule is
-  that <filename class='directory'>/usr</filename> is managed by the
-  distribution's package system and
-  <filename class='directory'>/usr/local</filename> is not. This way the
-  package manager's database knows about every file within
-  <filename class='directory'>/usr</filename>.</para>
+<para>
+
+With Linux distributions like Red Hat, Debian, etc., a possible rule is
+that <filename class='directory'>/usr</filename> is managed by the
+distribution's package system and
+<filename class='directory'>/usr/local</filename> is not. This way the
+package manager's database knows about every file within
+<filename class='directory'>/usr</filename>.
+</para>
 @z
 
 @x

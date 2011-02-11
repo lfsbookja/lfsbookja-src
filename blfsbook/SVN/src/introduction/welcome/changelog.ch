@@ -76,7 +76,7 @@
         <listitem>
           <para>[thomas] - 以下を追加： Soprano, Virtuoso, Raptor, Rasqal, Redland,
           Strigi, DBusMenu-Qt, CLucene, QCA, Boost, Exiv2, iODBC</para>
-          <para>[thomas] - Add a note about Phonon at QT4</para>
+          <para>[thomas] - QT4 にて Phonon に関する説明を追加。</para>
         </listitem>
       </itemizedlist>
 @z
@@ -93,8 +93,9 @@
       <para>2011/01/31</para>
       <itemizedlist>
         <listitem>
-          <para>[dj] - Added instruction to enable use of LinuxPAM to OpenSSH
-          instructions.</para>
+          <para>[dj] -
+          OpenSSH にて LinuxPAM を利用可能とする手順を追加。
+          </para>
         </listitem>
       </itemizedlist>
 @z
@@ -360,9 +361,9 @@
           wagner17 for raising that.</para>
         </listitem>
         <listitem>
-          <para>[ken] - Corrected instructions to untar the fonts for
-          ghostscript-8.71 (fixes ticket
-          <ulink url="&blfs-ticket-root;3128">#3128</ulink>)</para>
+          <para>[ken] - 
+          ghostscript-8.71 にて、フォント tarball を untar する手順を修正。
+          (チケット <ulink url="&blfs-ticket-root;3128">#3128</ulink> を Fix に。)</para>
         </listitem>
       </itemizedlist>
 @z
@@ -385,8 +386,8 @@
       <para>2010/11/26</para>
       <itemizedlist>
         <listitem>
-          <para>[randy] - Updated Xpdf to patch level 5 by creating a
-          consolidated patch from the five upstream patches.</para>
+          <para>[randy] - Xpdf にて、アップストリームによる５つのパッチに基づいて統合パッチを生成し、パッチレベル５としてアップデート。
+          </para>
         </listitem>
         <listitem>
           <para>[randy] - GTK+-2 パッケージのインストールにあたって

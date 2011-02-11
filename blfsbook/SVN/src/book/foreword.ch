@@ -52,7 +52,7 @@ LFS のリリースバージョン (本書の対応バージョンは LFS-6.3) �
 @x
   <para>Enjoy!</para>
 @y
-  <para>楽しんでくださいね!</para>
+  <para>楽しんでください!</para>
 @z
 
 @x

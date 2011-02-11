@@ -137,10 +137,12 @@
     Protocol Headers after the installation is complete and
     <xref linkend="fop"/> has been installed.</para></note>
 @y
-<note><para>There is a reciprocal dependency with <xref linkend="fop"/>. If
-you wish to build the documentation, you'll need to re-install the 
-Protocol Headers after the installation is complete and
-<xref linkend="fop"/> has been installed.</para></note>
+<note><para>
+<xref linkend="fop"/> には相互依存関係があります。
+ドキュメントをビルドしたい場合は、一度インストールを終えてから
+<xref linkend="fop"/>
+をインストールした上で、再度、本パッケージのインストールを行ってください。
+</para></note>
 @z
 
 @x

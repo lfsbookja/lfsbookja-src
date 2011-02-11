@@ -27,9 +27,9 @@
 @y
 <para>
 <application>libffi</application>
-ライブラリは、
-library provides a portable,
-high level programming interface to various calling conventions.  This
+ライブラリは、さまざまな呼出規約 (calling conventions)
+に対しての、移植性に優れた高レベルのプログラミングインターフェースを提供します。
+This
 allows a programmer to call any function specified by a call interface
 description at run time.</para>
 @z

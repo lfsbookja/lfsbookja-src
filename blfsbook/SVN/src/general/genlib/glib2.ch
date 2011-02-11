@@ -133,9 +133,9 @@ event loop, threads, dynamic loading, and an object system.
     <command>gtester-report</command> program</bridgehead>
     <para role="optional"><xref linkend="python"/></para>
 @y
-    <bridgehead renderas="sect4">Optional Runtime Dependency for the
-    <command>gtester-report</command> program</bridgehead>
-    <para role="optional"><xref linkend="python"/></para>
+<bridgehead renderas="sect4">&j-Optional;
+<command>gtester-report</command> プログラム実行時の依存パッケージ</bridgehead>
+<para role="optional"><xref linkend="python"/></para>
 @z
 
 @x
@@ -147,7 +147,7 @@ event loop, threads, dynamic loading, and an object system.
     <xref linkend="shared-mime-info"/> and
     <xref linkend="desktop-file-utils"/>, respectively.</quote></para>
 @y
-    <bridgehead renderas="sect4">Additional Runtime Dependencies</bridgehead>
+    <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
     <para role="optional">Quoted directly from the <filename>INSTALL</filename>
     file; <quote>Some of the mimetype-related functionality in GIO requires the
     <command>update-mime-database</command> and
@@ -194,7 +194,6 @@ event loop, threads, dynamic loading, and an object system.
 <application>GLib</application> が必要なものとなっています。
 したがってまずは <application>GLib</application>
 をインストールした後にテストスイートを実行することになります。
-suite.
 </para>
 @z
 
@@ -211,9 +210,8 @@ suite.
     run the test suite.</para>
 @y
 <para>
-
-You should now install <xref linkend="desktop-file-utils"/> and proceed to
-run the test suite.
+ここで <xref linkend="desktop-file-utils"/>
+をインストールした上で、テストスイートを実行してください。
 </para>
 @z
 

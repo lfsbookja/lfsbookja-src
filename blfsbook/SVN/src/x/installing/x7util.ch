@@ -36,9 +36,12 @@
     needed utilities, not for the <application>Xorg</application> build
     environment.</para>
 @y
-    <para>The <application>Xorg</application> utility packages provide
-    needed utilities, not for the <application>Xorg</application> build
-    environment.</para>
+<para>
+
+<application>Xorg</application>
+ユーティリティパッケージは、<application>Xorg</application>
+のビルド環境用ではない、各種ユーティリティを提供します。
+</para>
 @z
 
 @x
@@ -198,81 +201,82 @@ Xorg ユーティリティをビルドするために、個々のパッケージ
       <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
-@x ccmakedep
-          <para>creates dependencies in makefiles using a C compiler.</para>
-@y
-          <para>creates dependencies in makefiles using a C compiler.</para>
-@z
-
-@x cleanlinks
-          <para>removes dangling symbolic links and empty directories.</para>
-@y
-          <para>removes dangling symbolic links and empty directories.</para>
-@z
-
-@x gccmakedep
-          <para>creates dependencies in makefiles using
-          <command>gcc -M</command>.</para>
-@y
-          <para>creates dependencies in makefiles using
-          <command>gcc -M</command>.</para>
-@z
-
-@x imake
-          <para>is a C preprocessor interface to the make utility.</para>
-@y
-          <para>is a C preprocessor interface to the make utility.</para>
-@z
-
-@x lndir
-          <para>creates a shadow directory of symbolic links to another
-          directory tree.</para>
-@y
-          <para>creates a shadow directory of symbolic links to another
-          directory tree.</para>
-@z
+% @x ccmakedep
+%           <para>creates dependencies in makefiles using a C compiler.</para>
+% @y
+%           <para>creates dependencies in makefiles using a C compiler.</para>
+% @z
+% 
+% @x cleanlinks
+%           <para>removes dangling symbolic links and empty directories.</para>
+% @y
+%           <para>removes dangling symbolic links and empty directories.</para>
+% @z
+% 
+% @x gccmakedep
+%           <para>creates dependencies in makefiles using
+%           <command>gcc -M</command>.</para>
+% @y
+%           <para>creates dependencies in makefiles using
+%           <command>gcc -M</command>.</para>
+% @z
+% 
+% @x imake
+%           <para>is a C preprocessor interface to the make utility.</para>
+% @y
+%           <para>is a C preprocessor interface to the make utility.</para>
+% @z
+% 
+% @x lndir
+%           <para>creates a shadow directory of symbolic links to another
+%           directory tree.</para>
+% @y
+%           <para>creates a shadow directory of symbolic links to another
+%           directory tree.</para>
+% @z
 
 @x makedepend
           <para>creates dependencies in makefiles.</para>
 @y
-          <para>creates dependencies in makefiles.</para>
+<para>
+Makefile 間の依存関係を生成します。
+</para>
 @z
 
-@x makeg
-          <para>makes a debuggable executable.</para>
-@y
-          <para>makes a debuggable executable.</para>
-@z
-
-@x mergelib
-          <para>merges one library into another.</para>
-@y
-          <para>merges one library into another.</para>
-@z
-
-@x mkdirhier
-          <para>makes a directory hierarchy.</para>
-@y
-          <para>makes a directory hierarchy.</para>
-@z
-
-@x mkhtmlindex
-          <para>generates index files for HTML man pages.</para>
-@y
-          <para>generates index files for HTML man pages.</para>
-@z
-
-@x revpath
-          <para>generates a relative path that can be used to undo a
-          changedirectory.</para>
-@y
-          <para>generates a relative path that can be used to undo a
-          changedirectory.</para>
-@z
-
-@x xmkmf
-          <para>creates a Makefile from an Imakefile.</para>
-@y
-          <para>creates a Makefile from an Imakefile.</para>
-@z
-
+% @x makeg
+%           <para>makes a debuggable executable.</para>
+% @y
+%           <para>makes a debuggable executable.</para>
+% @z
+% 
+% @x mergelib
+%           <para>merges one library into another.</para>
+% @y
+%           <para>merges one library into another.</para>
+% @z
+% 
+% @x mkdirhier
+%           <para>makes a directory hierarchy.</para>
+% @y
+%           <para>makes a directory hierarchy.</para>
+% @z
+% 
+% @x mkhtmlindex
+%           <para>generates index files for HTML man pages.</para>
+% @y
+%           <para>generates index files for HTML man pages.</para>
+% @z
+% 
+% @x revpath
+%           <para>generates a relative path that can be used to undo a
+%           changedirectory.</para>
+% @y
+%           <para>generates a relative path that can be used to undo a
+%           changedirectory.</para>
+% @z
+% 
+% @x xmkmf
+%           <para>creates a Makefile from an Imakefile.</para>
+% @y
+%           <para>creates a Makefile from an Imakefile.</para>
+% @z

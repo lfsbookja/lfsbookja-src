@@ -25,11 +25,17 @@
     allocator used in <application>Samba</application> and
     <application>MesaLib</application>.</para>
 @y
+<!--
+日本語訳註： matsuand
+hierarchical、つまり階層的というのが、メモリ管理のどのような仕組みを
+指すのか不明であったため、訳さなかった。
+-->
 <para>
-<application>talloc</application> provides a hierarchical, reference
-counted memory pool system with destructors. It is the core memory
-allocator used in <application>Samba</application> and
-<application>MesaLib</application>.
+<application>talloc</application>
+は、メモリの参照回数をカウントするメモリプールシステム (memory pool system)
+であり、メモリ開放の機能も含みます。
+これは <application>Samba</application> や <application>MesaLib</application>
+において、メモリ管理を行う主要な機能として組み入れられています。
 </para>
 @z
 

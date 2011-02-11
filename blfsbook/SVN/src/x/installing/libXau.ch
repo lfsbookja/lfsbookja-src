@@ -31,9 +31,10 @@
     restricting client access to the display.</para>
 @y
 <para>
-The <application>libXau</application> package contains a library
-implementing the X11 Authorization Protocol. This is useful for
-restricting client access to the display.
+<application>libXau</application>
+パッケージは X11 認証プロトコル (X11 Authorization Protocol)
+を実装したライブラリを提供します。
+これは、クライアントにおいて表示アクセスを制限する際に利用されます。
 </para>
 @z
 
@@ -155,8 +156,6 @@ restricting client access to the display.
           <para>is the library of X authority database routines.</para>
 @y
 <para>
-
-is the library of X authority database routines.
+X 認証データベース処理ライブラリです。
 </para>
 @z
-
