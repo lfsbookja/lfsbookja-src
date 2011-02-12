@@ -14,6 +14,12 @@
 @z
 
 @x
+<sect1 id="xorg7-lib" xreflabel="Xorg Libraries">
+@y
+<sect1 id="xorg7-lib" xreflabel="Xorg ライブラリ">
+@z
+
+@x
   <title>Xorg Libraries</title>
 @y
   <title>Xorg ライブラリ</title>
@@ -22,7 +28,7 @@
 @x
     <primary sortas="a-xorg7-lib">Xorg Libraries</primary>
 @y
-    <primary sortas="a-xorg7-lib">Xorg ライブラリ</primary>
+    <primary sortas="a-Xorg-ライブラリ">Xorg ライブラリ</primary>
 @z
 
 @x
@@ -92,7 +98,7 @@
 @x
         <para>Required download list: <ulink url="&x7libs-wget;"/></para>
 @y
-        <para>必須のダウンロードリスト: <ulink url="&x7libs-wget;"/></para>
+        <para>必要なダウンロードリスト: <ulink url="&x7libs-wget;"/></para>
 @z
 
 @x

@@ -124,13 +124,14 @@
     test suite.</para>
 @y
 <para>
-You may want to skip ahead to <xref linkend="bdb-installation"/>. The
-test suite can take up to 150 SBUs and has a few bugs causing a report of
-<quote>Regression tests failed</quote>. However, running the test suite is
-a very exhaustive test of your hardware, perhaps pushing your machine
-harder (especially disk I/O) than it will ever see during production use.
-Note that you must have <application>Tcl</application> installed to run the
-test suite.
+<xref linkend="bdb-installation"/> の説明箇所まで読み飛ばしても構いません。
+テストスイートの実行は 150 SBU にも及びますし、
+<quote>縮退テストの不備 (Regression tests failed)</quote>
+として報告されているバグもいくつかあります。
+テストスイートはハードウェアへの高負荷なテストとなり、特にディスクI/Oに関してかなりの負荷をマシンに課します。
+それは通常利用時には発生しないほどです。
+テストスイート実行のためには <application>Tcl</application>
+をインストールしておく必要があります。
 </para>
 @z
 
@@ -198,20 +199,22 @@ test suite.
 <application>Berkeley DB</application>
 のインストールにあたって Java サポートを有効にする場合は、
 <xref linkend="jdk"/> と <xref linkend="gmime"/> の適正なバージョンがシステムにインストールされている必要があります。
-
-Specifically, if
-<application>JDK</application>-6 Update X and the
-<command>uudecode</command> program from the
-<application>GMime</application> program is on the system, the build will
-fail (unless you run the modified <command>./configure</command> command
-shown below). You can run two commands (<command>javac -version</command>
-and <command>uudecode --version</command>) to determine what versions are
-installed. You can also download and run a shell script from
-<ulink url="&files-anduin;/jdk-uudecode-check.sh"/> that will alert
-you to a non-working condition. If the identified programs exist on the
-system, you must modify the
-<command>./configure</command> command as shown below.
+<application>JDK</application>-6 Update X と、
+<application>GMime</application> パッケージによる <command>uudecode</command>
+プログラムがインストールされている場合にはビルドに失敗します。
+(以下に示す修正版の <command>./configure</command> コマンド実行を行えば解消します。)
+二つのコマンド、<command>javac -version</command> と <command>uudecode --version</command>
+を実行して、どのバージョンがインストールされているかを確認してください。
+<ulink url="&files-anduin;/jdk-uudecode-check.sh"/>
+にてシェルスクリプトをダウンロードすることができ、これを用いて不適切であるかどうかを確認することもできます。
+不適切なバージョンがシステムにインストールされていたら、<command>./configure</command>
+コマンドの実行を、以下のように修正してください。
 </para>
+@z
+@x
+<screen><userinput>uudecode="no" ../dist/configure --(use the parameters shown below)</userinput></screen>
+@y
+<screen><userinput>uudecode="no" ../dist/configure --(以下に示すパラメーター)</userinput></screen>
 @z
 
 @x
@@ -247,9 +250,9 @@ system, you must modify the
 <para>
 <command>cd build_unix &amp;&amp;
 ../dist/configure --prefix=/usr...</command>:
-This replaces the normal <command>./configure</command> command, as
-<application>Berkeley DB</application> comes with various
-build directories for different platforms.</para>
+このコマンドにより、通常の <command>./configure</command> ではないものを利用します。
+<application>Berkeley DB</application> では、さまざまなプラットフォーム用にビルドディレクトリが異なります。
+</para>
 @z
 
 @x

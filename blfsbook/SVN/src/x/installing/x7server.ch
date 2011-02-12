@@ -16,7 +16,7 @@
 @x
     <primary sortas="a-xorg7-server">Xorg Server</primary>
 @y
-    <primary sortas="a-xorg7-server">Xorg サーバー</primary>
+    <primary sortas="a-Xorg-サーバー">Xorg サーバー</primary>
 @z
 
 @x
@@ -189,9 +189,12 @@
     run as the root user.  This switch ensures that the binary is installed
     setuid when <command>make</command> is run by an unprivileged user.</para>
 @y
-    <para><parameter>--enable-install-setuid</parameter>: The Xorg binary must
-    run as the root user.  This switch ensures that the binary is installed
-    setuid when <command>make</command> is run by an unprivileged user.</para>
+<para>
+<parameter>--enable-install-setuid</parameter>:
+Xorg の実行モジュールは root ユーザーにて実行される必要があります。
+このパラメーターは一般ユーザーによって <command>make</command>
+によりビルドを行っても、実行モジュールに対して正しく setuid がセットされるようにします。
+</para>
 @z
 
 @x
@@ -199,9 +202,12 @@
     extension.  This parameter is required if building without
     <application>Mesa</application>.</para>
 @y
-    <para><option>--disable-glx</option>: Disable building of the GLX
-    extension.  This parameter is required if building without
-    <application>Mesa</application>.</para>
+<para>
+<option>--disable-glx</option>:
+GLX 拡張 (GLX extension) を利用しないようにします。
+このパラメーターは <application>Mesa</application>
+がインストールされていない場合に必要となります。
+</para>
 @z
 
 @x
@@ -209,25 +215,21 @@
     extension.  This parameter is required if building without
     <application>Mesa</application>.</para>
 @y
-    <para><option>--disable-dri</option>: Disable building of the DRI
-    extension.  This parameter is required if building without
-    <application>Mesa</application>.</para>
+<para><option>--disable-dri</option>:
+DRI 拡張 (DRI extension) を利用しないようにします。
+このパラメーターは <application>Mesa</application>
+がインストールされていない場合に必要となります。
+</para>
 @z
-
-% @x
-%     <para><option>--disable-config-hal</option>: Disable the use of
-%     <application>HAL</application>.</para>
-% @y
-%     <para><option>--disable-config-hal</option>: Disable the use of
-%     <application>HAL</application>.</para>
-% @z
 
 @x
     <para><option>--disable-config-dbus</option>: Disable the use of
     <application>D-Bus</application>.</para>
 @y
-    <para><option>--disable-config-dbus</option>: Disable the use of
-    <application>D-Bus</application>.</para>
+<para>
+<option>--disable-config-dbus</option>:
+<application>D-Bus</application> を利用しないようにします。
+</para>
 @z
 
 @x

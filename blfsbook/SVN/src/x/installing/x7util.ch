@@ -22,7 +22,7 @@
 @x
     <primary sortas="a-xorg7-util">Xorg Utilities</primary>
 @y
-    <primary sortas="a-xorg7-util">Xorg ユーティリティ</primary>
+    <primary sortas="a-Xorg-ユーティリティ">Xorg ユーティリティ</primary>
 @z
 
 @x

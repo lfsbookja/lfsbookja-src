@@ -199,11 +199,14 @@
     Execute the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Finally, if installing to any prefix other than
-    <filename class="directory">/usr</filename>, you should create symlinks
-    to the GL headers in <filename class="directory">/usr/include</filename>.
-    Execute the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+<para>
+<filename class="directory">/usr</filename>
+以外のプレフィックスを用いてインストールを行っている場合は、
+<filename class="directory">/usr/include</filename>
+ディレクトリにある GL ヘッダーファイルへのシンボリックリンクを作成する必要があります。
+<systemitem class="username">root</systemitem>
+ユーザーになって以下を実行します。
+</para>
 @z
 
 @x
@@ -218,26 +221,33 @@
     both <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar> with this
     command.</para>
 @y
-    <para><command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>: by
-    default, Mesa builds with debugging symbols.  Remove the -g switch from
-    both <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar> with this
-    command.</para>
+<para>
+<command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>:
+デフォルトでは Mesa はデバッグシンボルを含めたビルドを行います。
+そこでこのコマンドにより <envar>CFLAGS</envar> と <envar>CXXFLAGS</envar>
+の双方から -g スイッチを取り除きます。
+</para>
 @z
 
 @x
     <para><option>--enable-xcb</option>: use the XCB backend instead of the
     default XLib backend for GLX.</para>
 @y
-    <para><option>--enable-xcb</option>: use the XCB backend instead of the
-    default XLib backend for GLX.</para>
+<para>
+<option>--enable-xcb</option>:
+GLX に対するバックエンドとして、デフォルトの XLib ではなく XCB バックエンドを用いるよう指定します。
+</para>
 @z
 
 @x
     <para><option>--enable-motif</option>: build motif widgets into the
     GL widgets library (requires <application>lesstif</application>).</para>
 @y
-    <para><option>--enable-motif</option>: build motif widgets into the
-    GL widgets library (requires <application>lesstif</application>).</para>
+<para>
+<option>--enable-motif</option>:
+GL ウィジェットライブラリにて motif ウィジェットをビルドします。
+(<application>lesstif</application> が必要です。)
+</para>
 @z
 
 @x
@@ -280,41 +290,51 @@
           <para>is a GL demo useful for troubleshooting graphics
           problems.</para>
 @y
-          <para>is a GL demo useful for troubleshooting graphics
-          problems.</para>
+<para>
+GL のデモプログラム。グラフィックにて何か問題があった場合のトラブルシューティングとなります。
+</para>
 @z
 
 @x glxinfo
           <para>is a diagnostic program that displays information about the
           graphics hardware and installed GL libraries.</para>
 @y
-          <para>is a diagnostic program that displays information about the
-          graphics hardware and installed GL libraries.</para>
+<para>
+グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
+</para>
 @z
 
 @x libEGL.so
           <para>provides a native platform graphics interface as defined by
           the EGL-1.4 specification.</para>
 @y
-          <para>provides a native platform graphics interface as defined by
-          the EGL-1.4 specification.</para>
+<para>
+
+provides a native platform graphics interface as defined by
+the EGL-1.4 specification.
+</para>
 @z
 
 @x libGL.so
           <para>is the main OpenGL library.</para>
 @y
-          <para>is the main OpenGL library.</para>
+<para>
+主要な OpenGL ライブラリ。
+</para>
 @z
 
 @x libGLU.so
           <para>is the OpenGL Utility library.</para>
 @y
-          <para>is the OpenGL Utility library.</para>
+<para>
+OpenGL ユーティリティライブラリ。
+</para>
 @z
 
 @x libGLw.so
           <para>is the Xt/Motif OpenGL drawing area widget library.</para>
 @y
-          <para>is the Xt/Motif OpenGL drawing area widget library.</para>
+<para>
+Xt/Motif OpenGL drawing area ウィジェットライブラリ。
+</para>
 @z
-

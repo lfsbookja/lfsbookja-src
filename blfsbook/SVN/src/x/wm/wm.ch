@@ -16,7 +16,7 @@
 @x
   <title>Window Managers</title>
 @y
-  <title>ウィンドウマネージャ</title>
+  <title>ウィンドウマネージャー</title>
 @z
 
 @x
@@ -34,10 +34,10 @@
     range of integrated utilities and applications.</para>
 @y
 <para>
-ウィンドウマネージャ (Window Manager) とデスクトップ環境 (Desktop Environment)
+ウィンドウマネージーャ (Window Manager) とデスクトップ環境 (Desktop Environment)
 は <application>X</application>
 ウィンドウシステムにおける主要なユーザーインターフェースです。
-ウィンドウマネージャは、ウィンドウの見た目を制御し、ユーザーがウィンドウとのやり取りを行うための手段を提供するものです。
+ウィンドウマネージャーは、ウィンドウの見た目を制御し、ユーザーがウィンドウとのやり取りを行うための手段を提供するものです。
 デスクトップ環境は、さらに完全なものとしてオペレーティングシステムとの間のインターフェースを提供します。
 そして数多くのユーティリティやアプリケーションも提供します。
 </para>
@@ -96,9 +96,9 @@ and <application>Blackbox</application>.
     the book, both <application>KDE</application> and
     <application>GNOME</application> have their own sections.</para>
 @y
-    <para>In this chapter, the installation instructions of several Window
-    Managers and one lightweight Desktop Environment are presented. Later in
-    the book, both <application>KDE</application> and
-    <application>GNOME</application> have their own sections.</para>
+<para>
+本章ではウィンドウマネージャーのいくつかと、一つの軽量デスクトップ環境について、そのインストール手順を示します。
+本章以降の別の章にて <application>KDE</application> と
+<application>GNOME</application> を説明しています。
+</para>
 @z
-

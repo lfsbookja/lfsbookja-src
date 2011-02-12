@@ -263,10 +263,8 @@ PAM モジュールと同じディレクトリにインストールされます�
     use.</para>
 @y
 <para><parameter>--enable-read-both-confs</parameter>:
-
-This parameter
-allows the local administrator to choose which configuration file setup to
-use.</para>
+ローカル管理者が独自の設定ファイルを設けることができるようにします。
+</para>
 @z
 
 @x
@@ -276,9 +274,11 @@ use.</para>
     access the shadow-password file.</para>
 @y
 <para><command>chmod -v 4755 /lib/security/unix_chkpwd</command>:
-The <command>unix_chkpwd</command> password-helper program must be setuid
-so that non-<systemitem class="username">root</systemitem> processes can
-access the shadow-password file.</para>
+パスワードヘルパープログラム <command>unix_chkpwd</command>
+に対して setuid を設定します。
+<systemitem class="username">root</systemitem>
+権限ではないプロセスが shadow パスワードファイルにアクセスできるようにするためです。
+</para>
 @z
 
 @x
@@ -287,10 +287,11 @@ access the shadow-password file.</para>
     administrator, possibly in single-user mode, so it is moved to the
     appropriate directory.</para>
 @y
-<para><command>mv -v /lib/security/pam_tally /sbin</command>: The
-<command>pam_tally</command> program is designed to be run by the system
-administrator, possibly in single-user mode, so it is moved to the
-appropriate directory.</para>
+<para><command>mv -v /lib/security/pam_tally /sbin</command>:
+<command>pam_tally</command>
+プログラムは、システム管理者権限にて、シングルユーザーモードで動作するものとなっています。
+そこでこれを適切なディレクトリに移動します。
+</para>
 @z
 
 @x
@@ -299,10 +300,11 @@ appropriate directory.</para>
     <filename class='directory'>/usr/lib</filename> as they are expected to
     reside there.</para>
 @y
-<para><command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>: This
-command moves the <application>Libtool</application> library files to
-<filename class='directory'>/usr/lib</filename> as they are expected to
-reside there.</para>
+<para><command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>:
+<application>Libtool</application>
+ライブラリファイルは <filename class='directory'>/usr/lib</filename>
+ディレクトリに配置されるべきであるため、このコマンドにより移動します。
+</para>
 @z
 
 @x
@@ -311,8 +313,9 @@ reside there.</para>
     reference due to the file being moved in the previous step.</para>
 @y
 <para><command>sed -i 's| /lib| /usr/lib|'
-/usr/lib/libpam_misc.la</command>: This command corrects an installation
-reference due to the file being moved in the previous step.</para>
+/usr/lib/libpam_misc.la</command>:
+１つ前の手順にてファイル位置を移動しているため、このコマンドによりインストールディレクトリの参照をただします。
+</para>
 @z
 
 @x
@@ -323,12 +326,15 @@ reference due to the file being moved in the previous step.</para>
     <command>readlink</command> ensures the new symlinks point at the correct
     library filenames.</para>
 @y
-<para><command>for ...; do ...; done</command>: These commands are used
+<para><command>for ...; do ...; done</command>:
+
+These commands are used
 to relocate the <filename class='symlink'>.so</filename> symbolic links
 into the <filename class='directory'>/usr/lib</filename> directory by
 cloning and then removing the existing symlinks. Using
 <command>readlink</command> ensures the new symlinks point at the correct
-library filenames.</para>
+library filenames.
+</para>
 @z
 
 @x

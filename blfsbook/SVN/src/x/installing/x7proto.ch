@@ -31,7 +31,7 @@
   </indexterm>
 @y
   <indexterm zone="xorg7-proto">
-    <primary sortas="a-xorg7-proto">Xorg プロトコルヘッダー</primary>
+    <primary sortas="a-Xorg-プロトコルヘッダー">Xorg プロトコルヘッダー</primary>
   </indexterm>
 @z
 
@@ -110,7 +110,7 @@
 @x
     <bridgehead renderas="sect3">Xorg Protocol Headers Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xorg Protocol Headers Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Xorg プロトコルヘッダーの依存パッケージ</bridgehead>
 @z
 
 @x
@@ -156,7 +156,7 @@
 @x
     <title>Downloading Xorg Protocol Headers</title>
 @y
-    <title>Xorg プロトコルヘッダのダウンロード</title>
+    <title>Xorg プロトコルヘッダーのダウンロード</title>
 @z
 
 @x
@@ -164,7 +164,7 @@
     use the following commands:</para>
 @y
 <para>
-必要なファイルをダウンロードするために、
+必要なファイルをダウンロードするために
 <application>wget</application> を使って以下を実行します。
 </para>
 @z
@@ -230,4 +230,3 @@
         <seg><envar>$XORG_PREFIX</envar>/ 配下の以下のサブディレクトリ:
         include/X11, include/GL, lib/pkgconfig</seg>
 @z
-

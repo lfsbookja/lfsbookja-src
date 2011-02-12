@@ -171,9 +171,12 @@ X ウィンドウシステムの設定ファイルを生成します。
     details of the files are located in the <filename>xorg.conf.5x</filename>
     man page.  Some things you may want to do are:</para>
 @y
-    <para>Edit the newly created configuration file to suit your system. The
-    details of the files are located in the <filename>xorg.conf.5x</filename>
-    man page.  Some things you may want to do are:</para>
+<para>
+上で新たに生成された設定ファイルを、自分のシステムに適合するように修正します。
+このファイルの詳細は man ページ <filename>xorg.conf.5x</filename>
+に示されています。
+そのポイントをいくつか以下に示します。
+</para>
 @z
 
 % @x
@@ -192,8 +195,10 @@ X ウィンドウシステムの設定ファイルを生成します。
         <para>Section "Module". If you are going to install NVIDIA
         drivers, remove the "dri" line.</para>
 @y
-        <para>Section "Module". If you are going to install NVIDIA
-        drivers, remove the "dri" line.</para>
+<para>
+"Module" セクション：
+NVIDIA ドライバーをインストールしている場合は "dri" の行を削除します。
+</para>
 @z
 
 @x
@@ -461,7 +466,7 @@ X ウィンドウシステムの設定ファイルを生成します。
     <title>Setting up Fonts</title>
 @y
   <sect2 id='fonts'>
-    <title>Setting up Fonts</title>
+    <title>フォントの設定</title>
 @z
 
 @x
@@ -485,7 +490,7 @@ X ウィンドウシステムの設定ファイルを生成します。
 @x
       <title>Core X Font Protocol</title>
 @y
-      <title>Core X Font Protocol</title>
+      <title>コアとなる X フォントプロトコル</title>
 @z
 
 @x
@@ -494,7 +499,7 @@ X ウィンドウシステムの設定ファイルを生成します。
       </indexterm>
 @y
       <indexterm zone="x-setup fonts">
-        <primary sortas="g-core-x-font">Core X Font Protocol</primary>
+        <primary sortas="g-core-x-font">コアとなる X フォントプロトコル</primary>
       </indexterm>
 @z
 
@@ -630,8 +635,8 @@ X ウィンドウシステムの設定ファイルを生成します。
     <sect3 id="xft-font-protocol"  xreflabel="Xft Font Protocol">
       <title>Xft Font Protocol</title>
 @y
-    <sect3 id="xft-font-protocol"  xreflabel="Xft Font Protocol">
-      <title>Xft Font Protocol</title>
+    <sect3 id="xft-font-protocol"  xreflabel="Xft フォントプロトコル">
+      <title>Xft フォントプロトコル</title>
 @z
 
 @x
@@ -640,7 +645,7 @@ X ウィンドウシステムの設定ファイルを生成します。
       </indexterm>
 @y
       <indexterm zone="x-setup fonts">
-        <primary sortas="g-truetype">TrueType Fonts</primary>
+        <primary sortas="g-truetype">TrueType フォント</primary>
       </indexterm>
 @z
 
@@ -875,6 +880,6 @@ X ウィンドウシステムの設定ファイルを生成します。
 @x
     <title>Setting up Keyboards</title>
 @y
-    <title>Setting up Keyboards</title>
+    <title>キーボードの設定</title>
 @z
 

@@ -22,7 +22,7 @@
 @x
     <primary sortas="a-xorg7-driver">Xorg Drivers</primary>
 @y
-    <primary sortas="a-xorg7-driver">Xorg ドライバー</primary>
+    <primary sortas="a-Xorg-ドライバー">Xorg ドライバー</primary>
 @z
 
 @x
@@ -92,7 +92,7 @@
 @x
         <para>Required download list: <ulink url="&x7drivers-wget;"/></para>
 @y
-        <para>必要なダウンロードの一覧: <ulink url="&x7drivers-wget;"/></para>
+        <para>必要なダウンロードリスト: <ulink url="&x7drivers-wget;"/></para>
 @z
 
 @x

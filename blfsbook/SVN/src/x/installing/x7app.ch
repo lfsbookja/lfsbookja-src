@@ -103,7 +103,7 @@ expected をうまく訳せない； どうしたものか・・・
 @x
         <para>Required download list: <ulink url="&x7apps-wget;"/></para>
 @y
-        <para>Required download list: <ulink url="&x7apps-wget;"/></para>
+        <para>必要なダウンロードリスト: <ulink url="&x7apps-wget;"/></para>
 @z
 
 @x
@@ -118,7 +118,7 @@ expected をうまく訳せない； どうしたものか・・・
     <xref linkend="xcb-util"/>, and
     <xref linkend="xorg7-lib"/></para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="libpng"/>,
     <xref linkend="xcb-util"/>,
     <xref linkend="xorg7-lib"/></para>
