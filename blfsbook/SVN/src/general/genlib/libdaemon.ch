@@ -23,10 +23,10 @@
     <para>The <application>libdaemon</application> package is a lightweight C
     library that eases the writing of UNIX daemons.</para>
 @y
-<para>
-<application>libdaemon</application> 
-パッケージは、UNIX デーモンを構築するための軽量な C ライブラリを提供します。
-</para>
+    <para>
+    <application>libdaemon</application> 
+    パッケージは、UNIX デーモンを構築するための軽量な C ライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -105,26 +105,45 @@
     <para>Install <application>libdaemon</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libdaemon</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libdaemon</application> をビルドします。
+    </para>
+@z
+
+@x
+    <para>If you have <application>Doxygen</application> installed and wish to
+    build the API documentation, issue the following command:</para>
+@y
+    <para>
+    <application>Doxygen</application> をインストールしていて
+    API ドキュメントをする場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <para>If you built the API documentation, install it using the following
+    commands as the <systemitem class="username">root</systemitem> user:</para>
+@y
+    <para>
+    API ドキュメントをビルドした場合は <systemitem class="username">root</systemitem>
+    ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -165,7 +184,7 @@
           <para>contains the <application>libdaemon</application> API
           functions.</para>
 @y
-<para>
-<application>libdaemon</application> の API 関数を提供します。
-</para>
+          <para>
+          <application>libdaemon</application> の API 関数を提供します。
+          </para>
 @z

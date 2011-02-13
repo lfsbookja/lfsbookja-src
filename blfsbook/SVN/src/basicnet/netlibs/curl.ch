@@ -143,8 +143,9 @@
     <para>Install <application>cURL</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>cURL</application> by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して <application>cURL</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -154,23 +155,26 @@
     the HTTPS tests, you'll need to have an unrestrictive
     <filename>/etc/hosts.deny</filename> file.</para>
 @y
-    <para>To test the results, issue: <command>make check</command>. Note that
-    if you have <application>Stunnel</application> and
-    <application>TCP Wrapper</application> installed and you wish to perform
-    the HTTPS tests, you'll need to have an unrestrictive
-    <filename>/etc/hosts.deny</filename> file.</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    <application>Stunnel</application> と <application>TCP Wrapper</application>
+    をインストールしていて、HTTPS テストを実行しようとする場合は
+    <filename>/etc/hosts.deny</filename> ファイルにて、制限を解除しておく必要があります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -178,9 +182,11 @@
     This parameter adds <application>Kerberos 5</application> support to
     <filename class="libraryfile">libcurl</filename>.</para>
 @y
-    <para><option>--with-gssapi</option>:
-    This parameter adds <application>Kerberos 5</application> support to
-    <filename class="libraryfile">libcurl</filename>.</para>
+    <para>
+    <option>--with-gssapi</option>:
+    このパラメーターは <filename class="libraryfile">libcurl</filename>
+    に対して <application>Kerberos 5</application> サポートを追加します。
+    </para>
 @z
 
 @x
@@ -189,8 +195,9 @@
     <filename class="libraryfile">libcurl</filename>.</para>
 @y
     <para><option>--with-libssh2</option>:
-    This parameter adds SSH2 protocol support to
-    <filename class="libraryfile">libcurl</filename>.</para>
+    このパラメーターは <filename class="libraryfile">libcurl</filename>
+    に対して SSH2 プロトコルサポートを追加します。
+    </para>
 @z
 
 @x
@@ -198,9 +205,11 @@
     To build with <application>GnuTLS</application>
     support instead of <application>OpenSSL</application> for SSL/TLS.</para>
 @y
-    <para><option>--without-ssl --with-gnutls</option>:
-    To build with <application>GnuTLS</application>
-    support instead of <application>OpenSSL</application> for SSL/TLS.</para>
+    <para>
+    <option>--without-ssl --with-gnutls</option>:
+    SSL/TLS に対して <application>OpenSSL</application>
+    ではなく <application>GnuTLS</application> を用いてビルドすることを指示します。
+    </para>
 @z
 
 @x
@@ -210,17 +219,18 @@
     directory that would otherwise be installed by the commands that
     follow.</para>
 @y
-    <para><command>find docs -name "Makefile*" -o -name "*.1"
-    -o -name "*.3" | xargs rm</command>: This command removes
-    <filename>Makefiles</filename> and man files from the documentation
-    directory that would otherwise be installed by the commands that
-    follow.</para>
+    <para>
+    <command>find docs -name "Makefile*" -o -name "*.1"
+    -o -name "*.3" | xargs rm</command>:
+    このコマンドはドキュメントディレクトリにある <filename>Makefiles</filename>
+    ファイルと man ファイルを削除します。そして以下に示すコマンドによりドキュメントをインストールします。
+    </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -228,9 +238,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -239,23 +249,25 @@
         <seg>/usr/include/curl, /usr/share/curl
         and /usr/share/doc/curl-&curl-version;</seg>
 @y
-        <seg>curl and curl-config</seg>
+        <seg>curl, curl-config</seg>
         <seg>libcurl.{so,a}</seg>
         <seg>/usr/include/curl, /usr/share/curl
-        and /usr/share/doc/curl-&curl-version;</seg>
+        /usr/share/doc/curl-&curl-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x curl
          <para>is a command line tool for transferring files with URL syntax.
          </para>
 @y
-         <para>is a command line tool for transferring files with URL syntax.
+         <para>
+         
+         is a command line tool for transferring files with URL syntax.
          </para>
 @z
 
@@ -263,15 +275,16 @@
           <para>prints information about the last compile, like libraries
           linked to and prefix setting.</para>
 @y
-          <para>prints information about the last compile, like libraries
-          linked to and prefix setting.</para>
+          <para>
+          リンクされているライブラリやプレフィックスなど、コンパイル時の情報を表示します。
+          </para>
 @z
 
 @x libcurl.{so,a}
           <para>provides the API functions required by
           <command>curl</command> and other programs.</para>
 @y
-          <para>provides the API functions required by
-          <command>curl</command> and other programs.</para>
+          <para>
+          <command>curl</command> や他のプログラムが必要としている API 関数を提供します。
+          </para>
 @z
-

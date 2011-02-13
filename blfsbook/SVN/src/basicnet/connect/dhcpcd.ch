@@ -31,11 +31,12 @@
     your computer to a network which uses DHCP to assign network
     addresses.</para>
 @y
-<para>
-<application>dhcpcd</application>
-は、RFC2131 にて定義されている DHCP クライアントの実装です。
-ネットワークアドレスを自動割振りする DHCP を利用している環境にて、各コンピューターをネットワーク接続するために利用することができます。
-</para>
+    <para>
+    <application>dhcpcd</application> は、RFC2131 にて定義されている
+    DHCP クライアントの実装です。ネットワークアドレスを自動割振りする
+    DHCP を利用している環境にて、各コンピューターをネットワーク接続する
+    ために利用することができます。
+    </para>
 @z
 
 @x
@@ -98,25 +99,25 @@
     <para>Install <application>dhcpcd</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>dhcpcd</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>dhcpcd</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -125,12 +126,13 @@
       such a file. Install the hook by running the following
       commands as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-By default, a plain text lease info file isn't created but the
-<application>dhcpcd</application> provides a hook which can be used for creating
-such a file. Install the hook by running the following
-commands as the <systemitem class="username">root</systemitem> user:
-</para>
+    <para>
+    
+    By default, a plain text lease info file isn't created but the
+    <application>dhcpcd</application> provides a hook which can be used for creating
+    such a file. Install the hook by running the following
+    commands as the <systemitem class="username">root</systemitem> user:
+    </para>
 @z
 
 @x
@@ -158,13 +160,13 @@ commands as the <systemitem class="username">root</systemitem> user:
       included in the <xref linkend="bootscripts"/> package
       (as user <systemitem class="username">root</systemitem>):</para>
 @y
-<para>
-To configure <command>dhcpcd</command>, you need to first install
-the network service script,
-<filename>/etc/sysconfig/network-devices/services/dhcpcd</filename>
-included in the <xref linkend="bootscripts"/> package
-(as user <systemitem class="username">root</systemitem>):
-</para>
+    <para>
+    To configure <command>dhcpcd</command>, you need to first install
+    the network service script,
+    <filename>/etc/sysconfig/network-devices/services/dhcpcd</filename>
+    included in the <xref linkend="bootscripts"/> package
+    (as user <systemitem class="username">root</systemitem>):
+    </para>
 @z
 
 @x
@@ -183,12 +185,12 @@ included in the <xref linkend="bootscripts"/> package
       about those scripts, see the <command>dhcpcd-run-hooks</command> as
       well as the <command>dhcpcd</command> man page.</para>
 @y
-<para>
-Whenever <command>dhcpcd</command> configures or shuts down
-a network interface, it executes hook scripts. For more details
-about those scripts, see the <command>dhcpcd-run-hooks</command> as
-well as the <command>dhcpcd</command> man page.
-</para>
+    <para>
+    Whenever <command>dhcpcd</command> configures or shuts down
+    a network interface, it executes hook scripts. For more details
+    about those scripts, see the <command>dhcpcd-run-hooks</command> as
+    well as the <command>dhcpcd</command> man page.
+    </para>
 @z
 
 @x
@@ -198,13 +200,13 @@ well as the <command>dhcpcd</command> man page.
       configuration file using the following commands.  Adjust appropriately
       for additional interfaces:</para>
 @y
-<para id="dhcpcd-config2">
-Finally, as the <systemitem
-class="username">root</systemitem> user create the
-<filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhcpcd</filename>
-configuration file using the following commands.  Adjust appropriately
-for additional interfaces:
-</para>
+      <para id="dhcpcd-config2">
+      Finally, as the <systemitem
+      class="username">root</systemitem> user create the
+      <filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhcpcd</filename>
+      configuration file using the following commands.  Adjust appropriately
+      for additional interfaces:
+      </para>
 @z
 
 @x
@@ -212,11 +214,11 @@ for additional interfaces:
       <envar>DHCP_STOP</envar> values, examine the man page for
       <command>dhcpcd</command>.</para>
 @y
-<para>
-For more information on the appropriate <envar>DHCP_START</envar> and
-<envar>DHCP_STOP</envar> values, examine the man page for
-<command>dhcpcd</command>.
-</para>
+      <para>
+      For more information on the appropriate <envar>DHCP_START</envar> and
+      <envar>DHCP_STOP</envar> values, examine the man page for
+      <command>dhcpcd</command>.
+      </para>
 @z
 
 @x
@@ -230,15 +232,15 @@ For more information on the appropriate <envar>DHCP_START</envar> and
         <para>Review the <command>dhcpcd</command> man page for switches to add to the
         <envar>DHCP_START</envar> value.</para>
 @y
-<para id="dhcpcd-config3">The default behavior of <command>dhcpcd</command>
-is to overwrite <filename>/etc/resolv.conf</filename>. All modifications on
-system configuration files like <filename>/etc/resolv.conf</filename>,
-<filename>/etc/yp.conf</filename> and <filename>/etc/ntp.conf</filename> are
-done by hooks which are stored in <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
-Setup <command>dhcpcd</command> by removing or adding hooks from/to that directory.
-The execution of hooks can be disabled by using the -C command line option.</para>
-<para>Review the <command>dhcpcd</command> man page for switches to add to the
-<envar>DHCP_START</envar> value.</para>
+        <para id="dhcpcd-config3">The default behavior of <command>dhcpcd</command>
+        is to overwrite <filename>/etc/resolv.conf</filename>. All modifications on
+        system configuration files like <filename>/etc/resolv.conf</filename>,
+        <filename>/etc/yp.conf</filename> and <filename>/etc/ntp.conf</filename> are
+        done by hooks which are stored in <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+        Setup <command>dhcpcd</command> by removing or adding hooks from/to that directory.
+        The execution of hooks can be disabled by using the -C command line option.</para>
+        <para>Review the <command>dhcpcd</command> man page for switches to add to the
+        <envar>DHCP_START</envar> value.</para>
 @z
 
 @x
@@ -277,7 +279,7 @@ The execution of hooks can be disabled by using the -C command line option.</par
           <para>is an implementation of the DHCP client specified
           in RFC2131.</para>
 @y
-<para>
-RFC2131 にて定義されている DHCP クライアントの実装です。
-</para>
+          <para>
+          RFC2131 にて定義されている DHCP クライアントの実装です。
+          </para>
 @z

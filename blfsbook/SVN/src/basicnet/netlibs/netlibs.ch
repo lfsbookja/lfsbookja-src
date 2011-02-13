@@ -25,12 +25,9 @@
   generally find that you will be referred to this chapter to satisfy a
   dependency of other applications.</para>
 @y
-<para>
-ここに示すライブラリは、本書内の他のアプリケーションをサポートするライブラリです。
-
-It is unlikely that you would just install these libraries, you will
-generally find that you will be referred to this chapter to satisfy a
-dependency of other applications.
-</para>
+  <para>
+  ここに示すライブラリは、本書内の他のアプリケーションをサポートするライブラリです。
+  これらのライブラリをインストールしたいと思うことは少ないでしょう。
+  ただし他のアプリケーションの依存関係から、本章を参照することになるかもしれません。
+  </para>
 @z
-

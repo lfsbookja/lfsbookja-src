@@ -26,13 +26,13 @@
     <application>libnice</application> and <application>GStreamer</application>
     elements.</para>
 @y
-<para>
-<application>libnice</application> package is an implementation of
-the IETF's draft Interactice Connectivity Establishment standard (ICE). It
-provides <application>GLib</application>-based library,
-<application>libnice</application> and <application>GStreamer</application>
-elements.
-</para>
+    <para>
+    <application>libnice</application> パッケージは IETF による
+    ICE (Interactice Connectivity Establishment) ドラフトに対する実装ライブラリであり、
+    <application>GLib</application> ベースのライブラリ
+    <application>libnice</application>ライブラリ, <application>GStreamer</application>
+    ライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -117,27 +117,25 @@ elements.
     <para>Install <application>libnice</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libnice</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libnice</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -149,10 +147,10 @@ elements.
 @x
     <para><option>--with-gstreamer</option>: This option enables GStreamer functionality.</para>
 @y
-<para>
-<option>--with-gstreamer</option>:
-このオプションは GStreamer による機能を有効にします。
-</para>
+    <para>
+    <option>--with-gstreamer</option>:
+    このオプションは GStreamer による機能を有効にします。
+    </para>
 @z
 
 @x
@@ -190,15 +188,15 @@ elements.
 @x libnice.{so,a}
           <para>contains the <application>libnice</application> API functions.</para>
 @y
-<para>
-<application>libnice</application> API 関数を提供します。
-</para>
+          <para>
+          <application>libnice</application> API 関数を提供します。
+          </para>
 @z
 
 @x libgstnice.{so,a}
           <para>is the <application>gstreamer</application> module.</para>
 @y
-<para>
-<application>gstreamer</application> モジュール。
-</para>
+          <para>
+          <application>gstreamer</application> モジュール。
+          </para>
 @z

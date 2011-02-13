@@ -24,10 +24,10 @@
     the base set of file types and applications for
     <application>GNOME-2</application>.</para>
 @y
-<para>
-<application>GNOME MIME Data</application> package contains
-the base set of file types and applications for
-<application>GNOME-2</application>.</para>
+    <para>
+    <application>GNOME MIME Data</application> は
+    <application>GNOME-2</application> におけるファイルタイプやアプリケーションについての基本情報を提供します。
+    </para>
 @z
 
 @x
@@ -104,26 +104,26 @@ the base set of file types and applications for
     <para>Install <application>GNOME MIME Data</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GNOME MIME Data</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GNOME MIME Data</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem>
+    ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -169,15 +169,15 @@ the base set of file types and applications for
 @x application-registry
           <para>contains the application mime database.</para>
 @y
-<para>
-アプリケーション MIME データベース (application mime database) を提供します。
-</para>
+          <para>
+          アプリケーション MIME データベース (application mime database) を提供します。
+          </para>
 @z
 
 @x mime-info
           <para>contains the mime description database.</para>
 @y
-<para>
-MIME 記述データベース (mime description database) を提供します。
-</para>
+          <para>
+          MIME 記述データベース (mime description database) を提供します。
+          </para>
 @z
