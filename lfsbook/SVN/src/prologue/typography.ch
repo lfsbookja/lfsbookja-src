@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -61,9 +70,7 @@
 @y
 <para>
 上の表記は固定幅フォントで示されており、たいていはコマンド入力の結果として出力される端末メッセージを示しています。
-あるいは
-<filename>/etc/ld.so.conf</filename>
-といったファイル名を示すのに利用する場合もあります。
+あるいは <filename>/etc/ld.so.conf</filename> といったファイル名を示すのに利用する場合もあります。
 </para>
 @z
 
@@ -102,8 +109,7 @@
 @y
 <para>
 上の表記は設定ファイル類を生成する際に示します。
-１行目のコマンドは <filename>$LFS/etc/group</filename>
-というファイルを生成することを指示しています。
+１行目のコマンドは <filename>$LFS/etc/group</filename> というファイルを生成することを指示しています。
 そのファイルへは2行目以降 EOF が記述されるまでのテキストが出力されます。
 したがってこの表記は通常そのままタイプ入力します。
 </para>
@@ -161,27 +167,25 @@
   page names in different sections. Therefore, <command>man <replaceable>&lt;program
   name&gt;</replaceable></command> is generally sufficient.</para>
 @y
-<para>
-上の表記はマニュアルページ (<command>man</command> ページ) を参照するものです。
-カッコ内の数字は <command>man</command> の内部で定められている特定のセクションを表しています。
-例えば <command>passwd</command> コマンドには2つのマニュアルページがあります。
-LFS のインストールに従った場合、2つのマニュアルページは
-<filename>/usr/share/man/man1/passwd.1</filename> と
-<filename>/usr/share/man/man5/passwd.5</filename>
-に配置されます。
-<filename>passwd(5)</filename>
-という表記は <filename>/usr/share/man/man5/passwd.5</filename>
-を参照することを意味します。
-<command>man passwd</command>
-という入力に対しては <quote>passwd</quote>
-という語に合致する最初のマニュアルページが表示されるものであり
-<filename>/usr/share/man/man1/passwd.1</filename>
-が表示されることになります。
-特定のマニュアルページを見たい場合は <command>man 5 passwd</command>
-といった入力を行う必要があります。
-マニュアルページが複数あるケースはまれですので、普通は
-<command>man <replaceable>&lt;プログラム名&gt;</replaceable></command>
-と入力するだけで十分です。
-</para>
+  <para>
+  上の表記はマニュアルページ (<command>man</command> ページ) を参照するものです。
+  カッコ内の数字は <command>man</command> の内部で定められている特定のセクションを表しています。
+  例えば <command>passwd</command> コマンドには2つのマニュアルページがあります。
+  LFS のインストールに従った場合、2つのマニュアルページは
+  <filename>/usr/share/man/man1/passwd.1</filename> と <filename>/usr/share/man/man5/passwd.5</filename> に配置されます。
+  <filename>passwd(5)</filename>
+  という表記は <filename>/usr/share/man/man5/passwd.5</filename>
+  を参照することを意味します。
+  <command>man passwd</command>
+  という入力に対しては <quote>passwd</quote>
+  という語に合致する最初のマニュアルページが表示されるものであり
+  <filename>/usr/share/man/man1/passwd.1</filename>
+  が表示されることになります。
+  特定のマニュアルページを見たい場合は <command>man 5 passwd</command>
+  といった入力を行う必要があります。
+  マニュアルページが複数あるケースはまれですので、普通は
+  <command>man <replaceable>&lt;プログラム名&gt;</replaceable></command>
+  と入力するだけで十分です。
+  </para>
 @z
 

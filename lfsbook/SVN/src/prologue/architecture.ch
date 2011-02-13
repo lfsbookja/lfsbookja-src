@@ -99,7 +99,7 @@ data that exceeds 4GB, the advantages of a 64-bit system are substantial.</para>
 ご存知かと思いますが 64ビットによってビルドを行っても、
 32ビットのときのビルドに比べて 4% 早くなるだけで 9% は大きなものになります。
 つまり 64ビットシステムによって得られることは比較的小さいということです。
-もちろん 4GB 以上のRAM を利用していたり、4GB を超えるデータを取り扱いたいならば、
+もちろん 4GB 以上の RAM を利用していたり、4GB を超えるデータを取り扱いたいならば、
 64ビットシステムを用いるメリットが大きいのは間違いありません。
 </para>
 @z
@@ -120,9 +120,8 @@ LFS の手順に従って作り出す 64ビットシステムは、"純粋な" 6
 "複数のライブラリ" によるシステムをビルドするのなら、多くのアプリケーションを二度ビルドしなければなりません。
 一度は 32ビット用であり、一度は 64ビット用です。
 現時点にて本書はこの点をサポートしませんが、後々のリリースに向けて検討中です。
-さしあたりそのような応用的なトピックに関しては
-<ulink url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink>
-プロジェクトを参照してください。
+さしあたりそのような応用的なトピックに関しては <ulink
+url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink> プロジェクトを参照してください。
 </para>
 @z
 
@@ -141,11 +140,8 @@ some specialized procedures or patches.</para>
 パッケージの中には現時点にて "純粋な" 64ビットシステム上でビルドできないものがあり、あるいは特別なビルド手順を必要とするものがあります。
 一般的に言えば、そのようなパッケージには 32ビット固有のアセンブリ言語の命令が含まれるからであり、
 だから 64ビットシステムでのビルドに失敗するということです。
-例としては <ulink
-url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch
-(BLFS)</ulink>
-にある Xorg ドライバの一部分などです。
+例としては <ulink url="http://www.linuxfromscratch.org/blfs/view/svn/">
+Beyond Linux From Scratch (BLFS)</ulink> にある Xorg ドライバの一部分などです。
 このような問題はたいていは解消していくことができますが、中には特別なビルド手順やパッチを要するものとなるかもしれません。
 </para>
 @z
-

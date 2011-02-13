@@ -32,8 +32,8 @@
 ホストシステムには以下に示すソフトウェアが必要であり、それぞれに示されているバージョン以降である必要があります。
 最近の Linux ディストリビューションを利用するなら、あまり問題にはならないはずです。
 ディストリビューションによっては、ソフトウェアのヘッダファイル群を別パッケージとして提供しているものが多々あります。
-例えば <quote>&lt;パッケージ名&gt;-devel</quote> であったり
-<quote>&lt;パッケージ名&gt;-dev</quote> といった具合です。
+例えば <quote>&lt;パッケージ名&gt;-devel</quote>であったり
+<quote>&lt;パッケージ名&gt;-dev</quote>といった具合です。
 お使いのディストリビューションがそのような提供の仕方をしている場合は、それらもインストールしてください。
 </para>
 @z
@@ -52,8 +52,7 @@
       should be a symbolic or hard link to bash)</para>
 @y
 <para>
-<emphasis role="strong">Bash-3.2</emphasis>
-(/bin/sh が bash に対するシンボリックリンクまたはハードリンクである必要があります。)
+<emphasis role="strong">Bash-3.2</emphasis> (/bin/sh が bash に対するシンボリックリンクまたはハードリンクである必要があります。)
 </para>
 @z
 
@@ -63,8 +62,7 @@
       not been tested)</para>
 @y
 <para>
-<emphasis role="strong">Binutils-2.17</emphasis>
-(&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
+<emphasis role="strong">Binutils-2.17</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
 </para>
 @z
 
@@ -73,8 +71,7 @@
       should be a link to bison or small script that executes bison)</para>
 @y
 <para>
-<emphasis role="strong">Bison-2.3</emphasis>
-(/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
+<emphasis role="strong">Bison-2.3</emphasis> (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
 </para>
 @z
 
@@ -83,8 +80,7 @@
       should be a link to gawk)</para>
 @y
 <para>
-<emphasis role="strong">Gawk-3.1.5</emphasis>
-(/usr/bin/awk が gawk へのリンクである必要があります。)
+<emphasis role="strong">Gawk-3.1.5</emphasis> (/usr/bin/awk が gawk へのリンクである必要があります。)
 </para>
 @z
 
@@ -94,8 +90,7 @@
       been tested)</para>
 @y
 <para>
-<emphasis role="strong">Gcc-4.1.2</emphasis>
-(&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+<emphasis role="strong">Gcc-4.1.2</emphasis> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
 </para>
 @z
 
@@ -105,8 +100,7 @@
       not been tested)</para>
 @y
 <para>
-<emphasis role="strong">Glibc-2.5.1</emphasis>
-(&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+<emphasis role="strong">Glibc-2.5.1</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
 </para>
 @z
 
@@ -115,8 +109,7 @@
       (having been compiled with GCC-4.1.2 or greater)</para>
 @y
 <para>
-<emphasis role="strong">Linux Kernel-2.6.22.5</emphasis>
-(GCC-4.1.2 以上でコンパイルされたもの)
+<emphasis role="strong">Linux Kernel-2.6.22.5</emphasis> (GCC-4.1.2 以上でコンパイルされたもの)
 </para>
 @z
 
@@ -126,9 +119,7 @@
       at the recommendation of the developers.  </para>
 @y
 <para>
-カーネルのバージョンを指定しているのは、第6章にて
-<application>glibc</application>
-をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
+カーネルのバージョンを指定しているのは、第6章にて <application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
 </para>
 @z
 

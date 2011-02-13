@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -24,9 +33,7 @@
 LFS システムを構築するためのソフトウェアは日々拡張され更新されています。
 LFS ブックがリリースされた後に、セキュリティフィックスやバグフィックスが公開されているかもしれません。
 本版にて説明するパッケージや作業手順に対して、セキュリティフィックスやバグフィックス等が必要かどうか、ビルド作業を行う前に
-<ulink url="&errata;"/>
-を確認してください。
+<ulink url="&errata;"/>を確認してください。
 そして LFS ビルド作業を進めながら、対応する節においての変更を確認し適用してください。
 </para>
 @z
-

@@ -26,10 +26,10 @@
     <para>The Bzip2 package does not contain a <command>configure</command>
     script. Compile and test it with:</para>
 @y
-<para>
-Bzip2 パッケージには <command>configure</command> がありません。
-コンパイルおよびテストを行うには以下を実行します。
-</para>
+    <para>
+    Bzip2 パッケージには <command>configure</command> がありません。
+    コンパイルおよびテストを行うには以下を実行します。
+    </para>
 @z
 
 @x
@@ -42,9 +42,7 @@ Bzip2 パッケージには <command>configure</command> がありません。
     <para>Details on this package are located in
     <xref linkend="contents-bzip2" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-bzip2" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-bzip2" role=""/> を参照してください。
+    </para>
 @z

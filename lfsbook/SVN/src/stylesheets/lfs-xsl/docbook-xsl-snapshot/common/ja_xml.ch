@@ -511,8 +511,8 @@
       <l:template name="sect1" text="&#38917;%n. &#12300;%t&#12301;"/>
       <l:template name="sect2" text="&#38917;%n. &#12300;%t&#12301;"/>
 -->
-      <l:template name="sect1" text="%n. &#12300;%t&#12301;"/>
-      <l:template name="sect2" text="%n. &#12300;%t&#12301;"/>
+      <l:template name="sect1" text="%n.&#12300;%t&#12301;"/>
+      <l:template name="sect2" text="%n.&#12300;%t&#12301;"/>
 <!-- matsu modified: END -->
       <l:template name="sect3" text="&#38917;%n. &#12300;%t&#12301;"/>
       <l:template name="sect4" text="&#38917;%n. &#12300;%t&#12301;"/>
