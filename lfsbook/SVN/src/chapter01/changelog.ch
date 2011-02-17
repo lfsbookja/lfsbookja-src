@@ -57,6 +57,48 @@
 @z
 
 @x
+      <para>2011-02-16</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Upgrade to Shadow-4.1.4.3. Fixes
+          <ulink url="&lfs-ticket-root;2832">#2832</ulink>.</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Upgrade to Readline-6.2. Fixes
+          <ulink url="&lfs-ticket-root;2831">#2831</ulink>.</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Upgrade to Bash-4.2. Fixes
+          <ulink url="&lfs-ticket-root;2830">#2830</ulink>.</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Upgrade to Udev-166. Fixes
+          <ulink url="&lfs-ticket-root;2829">#2829</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-02-16</para>
+      <itemizedlist>
+         <listitem>
+          <para>[matthew] Shadow-4.1.4.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2832">#2832</ulink> を Fix に。</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Readline-6.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2831">#2831</ulink> を Fix に。</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Bash-4.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2830">#2830</ulink> を Fix に。</para>
+        </listitem>
+         <listitem>
+          <para>[matthew] Udev-166 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2829">#2829</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-02-10</para>
       <itemizedlist>
         <listitem>

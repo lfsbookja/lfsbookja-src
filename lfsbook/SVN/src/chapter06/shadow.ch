@@ -57,15 +57,11 @@ Cracklib パッケージは Shadow パッケージよりも前にインストー
 </para>
 @z
 
-% @x
-%     <para>Disable the installation of Chinese and Korean manual pages, since
-%     Man-DB cannot format them properly:</para>
-% @y
-% <para>
-% 中国語と韓国語の man ページはインストールしません。
-% Man-DB がそれらを正しく扱うことができないためです。
-% </para>
-% @z
+@x
+    <para>Fix an issue with the installation of Russian man pages:</para>
+@y
+    <para>ロシア語の man ページのインストール時の問題を解消するために以下を実行します。</para>
+@z
 
 @x
     <para id="shadow-login_defs">Instead of using the default

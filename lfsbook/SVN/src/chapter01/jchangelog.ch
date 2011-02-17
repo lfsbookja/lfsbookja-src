@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-02-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter05/bash.ch,
+          src/chapter06/{bash.ch, readline.ch, shadow.ch}:
+          SVN-20110216, r9468 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-02-11</para>
       <itemizedlist>
         <listitem>

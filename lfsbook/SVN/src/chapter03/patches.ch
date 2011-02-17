@@ -44,20 +44,6 @@
 @z
 
 @x
-      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
