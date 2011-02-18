@@ -205,11 +205,9 @@ GRUB のブートイメージを生成します。
 @z
 
 @x grub-mkrescue
-          <para>Make a bootable image of GRUB suitable for a floppy disk</para>
+          <para>Make a bootable image of GRUB suitable for a floppy disk or CDROM/DVD</para>
 @y
-<para>
-フロッピーディスク用の GRUB のブートイメージを生成します。
-</para>
+          <para>フロッピーディスクや CDROM/DVD 用の GRUB のブートイメージを生成します。</para>
 @z
 
 @x grub-probe

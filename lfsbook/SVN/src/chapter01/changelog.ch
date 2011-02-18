@@ -57,6 +57,24 @@
 @z
 
 @x
+      <para>2011-02-18</para>
+      <itemizedlist>
+         <listitem>
+          <para>[bdubbs] Fix several urls in Chapter 3. Thanks to
+          splotz90 for the patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-02-18</para>
+      <itemizedlist>
+         <listitem>
+          <para>[bdubbs] 第3章における URL をいくつか修正。
+          パッチ提供をしてくれた splotz90 に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-02-16</para>
       <itemizedlist>
          <listitem>
