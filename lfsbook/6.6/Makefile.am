@@ -1,3 +1,0 @@
-SUBDIRS = ctie src
-EXTRA_DIST = INSTALL.utf8
-
