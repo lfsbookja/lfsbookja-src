@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          SVN-20110218, r9473 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           src/chapter06/grub.ch,
           src/chapter07/console.ch:
           SVN-20110218, r9472 対応。

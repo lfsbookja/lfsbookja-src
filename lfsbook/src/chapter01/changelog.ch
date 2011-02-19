@@ -63,6 +63,10 @@
           <para>[bdubbs] Fix several urls in Chapter 3. Thanks to
           splotz90 for the patch.</para>
         </listitem>
+        <listitem>
+          <para>[bryan] Fix the sed in the CD-ROM symlinks section,
+          to sync with upstream changes to the file being modified.</para>
+        </listitem>
       </itemizedlist>
 @y
       <para>2011-02-18</para>
@@ -70,6 +74,11 @@
          <listitem>
           <para>[bdubbs] 第3章における URL をいくつか修正。
           パッチ提供をしてくれた splotz90 に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bryan] CD-ROM に対するシンボリックリンクの説明にて、
+          修正されるファイルへのアップストリームによる変更との同期を図るために sed コマンドを修正。
+          </para>
         </listitem>
       </itemizedlist>
 @z
