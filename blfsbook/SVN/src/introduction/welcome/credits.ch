@@ -443,13 +443,13 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
 @z
 
 @x
-        <para>Archive::Zip, cracklib, IcedTea6, JDK6, ksh, libdrm, libpcap,
-        Mesa, <!-- ncpfs, --> <!-- RP-PPPoE, --> netfs, OpenOffice-2,
+        <para>Archive::Zip, cracklib, IcedTea6, IcedTea-Web, JDK6, ksh, libdrm,
+        libpcap, Mesa, <!-- ncpfs, --> <!-- RP-PPPoE, --> netfs, OpenOffice-2,
         PPP (update), Samba-3, Subversion, Xorg-7 and xterm:
         <emphasis>DJ Lucas</emphasis></para>
 @y
-        <para>Archive::Zip, cracklib, IcedTea6, JDK6, ksh, libdrm, libpcap,
-        Mesa, <!-- ncpfs, --> <!-- RP-PPPoE, --> netfs, OpenOffice-2,
+        <para>Archive::Zip, cracklib, IcedTea6, IcedTea-Web, JDK6, ksh, libdrm,
+        libpcap, Mesa, <!-- ncpfs, --> <!-- RP-PPPoE, --> netfs, OpenOffice-2,
         PPP (update), Samba-3, Subversion, Xorg-7 and xterm:
         <emphasis>DJ Lucas</emphasis></para>
 @z

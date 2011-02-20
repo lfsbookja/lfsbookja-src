@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY icedtea6-time                  "34 SBU (an additional 83 SBU for testsuite)">
+  <!ENTITY icedtea6-time                  "23 SBU (an additional 83 SBU for testsuite)">
 @y
-  <!ENTITY icedtea6-time                  "34 SBU (テストスイート実行時は、さらに 83 SBU)">
+  <!ENTITY icedtea6-time                  "23 SBU (テストスイート実行時は、さらに 83 SBU)">
 @z
 
 @x
@@ -305,18 +305,18 @@ third party application, must also be made freely availible.</para>
     <para role="optional">
     <xref linkend="alsa-lib"/>,
     <xref linkend="cups"/>,
-    <xref linkend="gtk2"/>, and
-    <xref linkend="xorg7-lib"/>
-    </para>
+    <xref linkend="gtk2"/>,
+    <xref linkend="xorg7-lib"/>, and
+    <xref linkend="xulrunner"/></para>
 @y
     <bridgehead renderas="sect4">Optional Runtime Dependencies (required for
     source installation)</bridgehead>
     <para role="optional">
     <xref linkend="alsa-lib"/>,
     <xref linkend="cups"/>,
-    <xref linkend="gtk2"/>, and
-    <xref linkend="xorg7-lib"/>
-    </para>
+    <xref linkend="gtk2"/>,
+    <xref linkend="xorg7-lib"/>, and
+    <xref linkend="xulrunner"/></para>
 @z
 
 @x
@@ -478,15 +478,21 @@ installation with the following commands:
 @x
     <para>To test the results, issue: <command>make check</command>. The
     included version of <application>jtreg</application> is old, and the test
-    suite is very dependent on the host system as well. You should expect to
-    see 6 failures and 1 error in the langtools tests, and 20 to 23 failures
-    in jdk with up to 3 errors. The other 4700 tests should pass.</para>
+    suite is also very dependent on the host system. You should expect to
+    see 6 or 7 failures and 1 error in the langtools tests, and 20 to 23
+    failures in jdk with up to 3 errors. The other 4700+ tests should
+    pass. The reason for the variable results is due to different
+    architechtures, versions of dependent libraries, and even the CA
+    certificates used to generate the <filename>cacerts</filename> file.</para>
 @y
     <para>To test the results, issue: <command>make check</command>. The
     included version of <application>jtreg</application> is old, and the test
-    suite is very dependent on the host system as well. You should expect to
-    see 6 failures and 1 error in the langtools tests, and 20 to 23 failures
-    in jdk with up to 3 errors. The other 4700 tests should pass.</para>
+    suite is also very dependent on the host system. You should expect to
+    see 6 or 7 failures and 1 error in the langtools tests, and 20 to 23
+    failures in jdk with up to 3 errors. The other 4700+ tests should
+    pass. The reason for the variable results is due to different
+    architechtures, versions of dependent libraries, and even the CA
+    certificates used to generate the <filename>cacerts</filename> file.</para>
 @z
 
 @x
@@ -515,10 +521,10 @@ installation with the following commands:
 
 @x
     <para><parameter>--with-jdk-home</parameter>: This switch provides the
-    location of our temporary <application>JDK</application>.</para>
+    location of the temporary <application>JDK</application>.</para>
 @y
     <para><parameter>--with-jdk-home</parameter>: This switch provides the
-    location of our temporary <application>JDK</application>.</para>
+    location of the temporary <application>JDK</application>.</para>
 @z
 
 @x
@@ -584,15 +590,21 @@ installation with the following commands:
 @z
 
 @x
-    <para>The <application>Java</application> plugin is located at
-    <filename class="directory">$JAVA_HOME/jre/plugin/<replaceable>&lt;arch&gt;</replaceable>/IcedTeaPlugin.so</filename>.
+    <para>If you've installed only the binary distribution, the
+    <application>Java</application> plugin is located at
+    <filename class="directory">$JAVA_HOME/jre/lib/<replaceable>&lt;arch&gt;</replaceable>/IcedTeaPlugin.so</filename>.
     Make a symbolic link to the file in that directory from your browser(s)
-    plugins directory.</para>
+    plugins directory. If you've built from source, move on to the
+    <xref linkend="icedtea-web"/> instructions to build the browser
+    plugin.</para>
 @y
-    <para>The <application>Java</application> plugin is located at
-    <filename class="directory">$JAVA_HOME/jre/plugin/<replaceable>&lt;arch&gt;</replaceable>/IcedTeaPlugin.so</filename>.
+    <para>If you've installed only the binary distribution, the
+    <application>Java</application> plugin is located at
+    <filename class="directory">$JAVA_HOME/jre/lib/<replaceable>&lt;arch&gt;</replaceable>/IcedTeaPlugin.so</filename>.
     Make a symbolic link to the file in that directory from your browser(s)
-    plugins directory.</para>
+    plugins directory. If you've built from source, move on to the
+    <xref linkend="icedtea-web"/> instructions to build the browser
+    plugin.</para>
 @z
 
 @x
@@ -622,9 +634,9 @@ installation with the following commands:
 @z
 
 @x
-        <seg>appletviewer, apt, extcheck, idlj, HtmlConverter, jar,
+        <seg>apt, extcheck, idlj, HtmlConverter, jar,
         jarsigner, java, javac, javadoc, javah, javap, java-rmi.cgi,
-        javaws, jconsole, jdb, jhat, jinfo, jmap, jps,
+        jconsole, jdb, jhat, jinfo, jmap, jps,
         jrunscript, jsadebugd, jstack, jstat, jstatd, keytool,
         native2ascii, orbd, pack200, policytool, rmic, rmid, rmiregistry,
         schemagen, serialver, servertool, tnameserv, unpack200,
@@ -633,14 +645,14 @@ installation with the following commands:
         <envar>$JAVA_HOME</envar>/jre/lib/*</seg>
         <seg>/opt/icedtea6-&icedtea6-version;</seg>
 @y
-        <seg>appletviewer, apt, extcheck, idlj, HtmlConverter, jar,
+        <seg>apt, extcheck, idlj, HtmlConverter, jar,
         jarsigner, java, javac, javadoc, javah, javap, java-rmi.cgi,
-        javaws, jconsole, jdb, jhat, jinfo, jmap, jps,
+        jconsole, jdb, jhat, jinfo, jmap, jps,
         jrunscript, jsadebugd, jstack, jstat, jstatd, keytool,
         native2ascii, orbd, pack200, policytool, rmic, rmid, rmiregistry,
         schemagen, serialver, servertool, tnameserv, unpack200,
-        wsgen, wsimport, xjc</seg>
-        <seg><envar>$JAVA_HOME</envar>/lib/*,
+        wsgen, wsimport, and xjc</seg>
+        <seg><envar>$JAVA_HOME</envar>/lib/*, and
         <envar>$JAVA_HOME</envar>/jre/lib/*</seg>
         <seg>/opt/icedtea6-&icedtea6-version;</seg>
 @z

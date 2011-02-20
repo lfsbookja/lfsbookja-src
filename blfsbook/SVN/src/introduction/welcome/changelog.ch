@@ -62,11 +62,41 @@
 @z
 
 @x
+      <para>February 19th, 2010</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to IcedTea6-1.9.7.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Separated IcedTea-Web from IcedTea6.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Added IcedTea6-Web-1.0.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/02/19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - IcedTea6-1.9.7 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - IcedTea6 から IcedTea-Web を分離。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - IcedTea6-Web-1.0.1 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>February 8th, 2010</para>
       <itemizedlist>
         <listitem>
           <para>[thomas] - Added Soprano, Virtuoso, Raptor, Rasqal, Redland,
           Strigi, DBusMenu-Qt, CLucene, QCA, Boost, Exiv2, iODBC</para>
+        </listitem>
+        <listitem>
           <para>[thomas] - Add a note about Phonon at QT4</para>
         </listitem>
       </itemizedlist>
@@ -76,6 +106,8 @@
         <listitem>
           <para>[thomas] - 以下を追加： Soprano, Virtuoso, Raptor, Rasqal, Redland,
           Strigi, DBusMenu-Qt, CLucene, QCA, Boost, Exiv2, iODBC</para>
+        </listitem>
+        <listitem>
           <para>[thomas] - QT4 にて Phonon に関する説明を追加。</para>
         </listitem>
       </itemizedlist>

@@ -1,7 +1,9 @@
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/other
-EXTRA_DIST = balsa.ch other.ch pan.ch pidgin.ch thunderbird.ch xchat.ch
+EXTRA_DIST = balsa.ch other.ch pan.ch pidgin.ch thunderbird.ch xchat.ch \
+	icedtea-web.ch
 srcdir = @srcdir@
-srcs = balsa.xml other.xml pan.xml pidgin.xml thunderbird.xml xchat.xml
+srcs = balsa.xml other.xml pan.xml pidgin.xml thunderbird.xml xchat.xml \
+	icedtea-web.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -17,3 +19,4 @@ pan.xml: $(BOOKdir)/$@ $(srcdir)/pan.ch
 pidgin.xml: $(BOOKdir)/$@ $(srcdir)/pidgin.ch
 thunderbird.xml: $(BOOKdir)/$@ $(srcdir)/thunderbird.ch
 xchat.xml: $(BOOKdir)/$@ $(srcdir)/xchat.ch
+icedtea-web.xml: $(BOOKdir)/$@ $(srcdir)/icedtea-web.ch

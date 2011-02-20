@@ -169,21 +169,18 @@
     <para><option>--with-all-insults</option>: This switch includes all the
     <application>sudo</application> insult sets.</para>
 @y
-<para>
-<option>--with-all-insults</option>:
-This switch includes all the
-<application>sudo</application> insult sets.
-</para>
+    <para><option>--with-all-insults</option>:
+    このパラメーターは <application>sudo</application> が表示する侮辱の文言をすべて含めます。</para>
 @z
 
 @x
     <para><option>--enable-shell-sets-home</option>: This switch sets HOME to
     the target user in shell mode.</para>
 @y
-<para>
-<option>--enable-shell-sets-home</option>:
-このパラメータは、シェルモードにおいて HOME を対象ユーザーに設定します。
-</para>
+    <para>
+    <option>--enable-shell-sets-home</option>:
+    このパラメータは、シェルモードにおいて HOME を対象ユーザーに設定します。
+    </para>
 @z
 
 @x
@@ -191,25 +188,19 @@ This switch includes all the
     <systemitem class="username">root</systemitem> user from running sudo,
     preventing users from chaining commands to get a root shell.</para>
 @y
-<para>
-<option>--disable-root-sudo</option>:
-
-This switch keeps the
-<systemitem class="username">root</systemitem> user from running sudo,
-preventing users from chaining commands to get a root shell.
-</para>
+    <para><option>--disable-root-sudo</option>:
+    このパラメーターは
+    This switch keeps the
+    <systemitem class="username">root</systemitem> user from running sudo,
+    preventing users from chaining commands to get a root shell.</para>
 @z
 
 @x
     <para><option>--with-logfac=auth</option>: This switch forces use of the
     auth facility for logging.</para>
 @y
-<para>
-<option>--with-logfac=auth</option>:
-
-This switch forces use of the
-auth facility for logging.
-</para>
+    <para><option>--with-logfac=auth</option>: This switch forces use of the
+    auth facility for logging.</para>
 @z
 
 @x
@@ -217,24 +208,22 @@ auth facility for logging.
     <application>PAM</application> authentication. Omit if you have
     <application>PAM</application> installed.</para>
 @y
-<para>
-<option>--without-pam</option>:
-このオプションは <application>PAM</application>
-による権限制御を無効にすることを指示します。
-<application>PAM</application>
-をインストールしている場合は、このオプションをはずしてください。
-</para>
+    <para>
+    <option>--without-pam</option>:
+    このオプションは <application>PAM</application> による権限制御を無効にすることを指示します。
+    <application>PAM</application> をインストールしている場合は、このオプションをはずしてください。
+    </para>
 @z
 
 @x
     <para><option>--without-sendmail</option>: This switch disables the use of
     sendmail.  Remove if you have a sendmail compatible MTA.</para>
 @y
-<para>
-<option>--without-sendmail</option>:
-このパラメータは sendmail の利用を不可とします。
-sendmail 互換の MTA をインストールしている場合は、このパラメータ指定をはずしてください。
-</para>
+    <para>
+    <option>--without-sendmail</option>:
+    このパラメータは sendmail の利用を不可とします。
+    sendmail 互換の MTA をインストールしている場合は、このパラメータ指定をはずしてください。
+    </para>
 @z
 
 @x
@@ -242,13 +231,9 @@ sendmail 互換の MTA をインストールしている場合は、このパラ
     <application>sudo</application> to run a shell if invoked with no
     arguments.</para>
 @y
-<para>
-<option>--enable-noargs-shell</option>:
-
-This switch allows
-<application>sudo</application> to run a shell if invoked with no
-arguments.
-</para>
+    <para><option>--enable-noargs-shell</option>: This switch allows
+    <application>sudo</application> to run a shell if invoked with no
+    arguments.</para>
 @z
 
 @x
@@ -256,13 +241,11 @@ arguments.
       <command>configure</command> command. Check the
       <command>configure --help</command> output for a complete list.</para>
 @y
-<para>
-<application>sudo</application> の <command>configure</command>
-スクリプトにはオプションが数多くあります。
-すべてを確認する場合は
-<command>configure --help</command>
-を実行してその出力を参照してください。
-</para>
+    <para>
+    <application>sudo</application> の <command>configure</command>
+    スクリプトにはオプションが数多くあります。
+    すべてを確認する場合は <command>configure --help</command> を実行してその出力を参照してください。
+    </para>
 @z
 
 @x
@@ -315,10 +298,9 @@ needed.  This can be configured as:
 @x
       <para>For details, see <command>man sudoers</command>.</para>
 @y
-<para>
-詳しいことは <command>man sudoers</command>
-を実行して確認してください。
-</para>
+      <para>
+      詳しいことは <command>man sudoers</command> を実行して確認してください。
+      </para>
 @z
 
 @x
@@ -329,9 +311,7 @@ needed.  This can be configured as:
         mistakes that could lead to a vulnerable configuration.</para>
 @y
 <para>
-<application>Sudo</application> 開発者は、<filename>sudoers</filename>
-ファイルを編集する際には <command>visudo</command>
-コマンドを利用することを強く推奨しています。
+<application>Sudo</application> 開発者は <filename>sudoers</filename> ファイルを編集する際には <command>visudo</command> コマンドを利用することを強く推奨しています。
 
 This will provide basic sanity
 checking like syntax parsing and file permission to avoid some possible
@@ -345,13 +325,11 @@ mistakes that could lead to a vulnerable configuration.
       command as the <systemitem class="username">root</systemitem> user
       to create the <application>PAM</application> configuration file:</para>
 @y
-<para>
-<application>Sudo</application>
-のビルドにあたって <application>PAM</application>
-サポートを有効にした場合は、 <systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-これにより <application>PAM</application> 設定ファイルが生成されます。
-</para>
+      <para>
+      <application>Sudo</application> のビルドにあたって <application>PAM</application> サポートを有効にした場合は、
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+      これにより <application>PAM</application> 設定ファイルが生成されます。
+      </para>
 @z
 
 @x
@@ -391,10 +369,9 @@ mistakes that could lead to a vulnerable configuration.
           the <filename>/etc/sudoers</filename> configuration file.
           </para>
 @y
-<para>
-設定ファイル <filename>/etc/sudoers</filename>
-によって許可された他ユーザーとなって、コマンドを実行します。
-</para>
+          <para>
+          設定ファイル <filename>/etc/sudoers</filename> によって許可された他ユーザーとなって、コマンドを実行します。
+          </para>
 @z
 
 @x sudoedit
@@ -403,8 +380,8 @@ mistakes that could lead to a vulnerable configuration.
           user.</para>
 @y
 <para>
-<command>sudo</command> コマンドに対して <option>-e</option>
-オプションをつけたハードリンクであり、他ユーザーとなってエディタを起動します。
+<command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたハードリンクであり、
+他ユーザーとなってエディタを起動します。
 </para>
 @z
 
@@ -413,8 +390,7 @@ mistakes that could lead to a vulnerable configuration.
           file.</para>
 @y
 <para>
-<filename>sudoers</filename>
-ファイルを安全な形で編集します。
+<filename>sudoers</filename> ファイルを安全な形で編集します。
 </para>
 @z
 
@@ -430,4 +406,3 @@ a dynamically-linked program being run by sudo from executing
 another program (think shell escapes).
 </para>
 @z
-

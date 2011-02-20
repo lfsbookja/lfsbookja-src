@@ -137,8 +137,12 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/other
-EXTRA_DIST = balsa.ch other.ch pan.ch pidgin.ch thunderbird.ch xchat.ch
-srcs = balsa.xml other.xml pan.xml pidgin.xml thunderbird.xml xchat.xml
+EXTRA_DIST = balsa.ch other.ch pan.ch pidgin.ch thunderbird.ch xchat.ch \
+	icedtea-web.ch
+
+srcs = balsa.xml other.xml pan.xml pidgin.xml thunderbird.xml xchat.xml \
+	icedtea-web.xml
+
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -332,6 +336,7 @@ pan.xml: $(BOOKdir)/$@ $(srcdir)/pan.ch
 pidgin.xml: $(BOOKdir)/$@ $(srcdir)/pidgin.ch
 thunderbird.xml: $(BOOKdir)/$@ $(srcdir)/thunderbird.ch
 xchat.xml: $(BOOKdir)/$@ $(srcdir)/xchat.ch
+icedtea-web.xml: $(BOOKdir)/$@ $(srcdir)/icedtea-web.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
