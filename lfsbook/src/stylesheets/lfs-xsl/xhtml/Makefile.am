@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/xhtml
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/xhtml
 EXTRA_DIST = lfs-admon.ch lfs-index.ch lfs-legalnotice.ch lfs-mixed.ch \
 	lfs-navigational.ch lfs-sections.ch lfs-titles.ch lfs-toc.ch \
 	lfs-xref.ch

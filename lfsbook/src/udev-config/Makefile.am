@@ -1,5 +1,5 @@
 SUBDIRS=contrib
-BOOKdir = $(top_builddir)/@bookdir@/udev-config
+BOOKdir = @abs_bookdir@/udev-config
 srcdir = @srcdir@
 srcs = 55-lfs.rules
 

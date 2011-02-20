@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/chapter02
+BOOKdir = @abs_bookdir@/chapter02
 EXTRA_DIST = chapter02.ch creatingfilesystem.ch creatingpartition.ch \
 	introduction.ch mounting.ch
 srcdir = @srcdir@

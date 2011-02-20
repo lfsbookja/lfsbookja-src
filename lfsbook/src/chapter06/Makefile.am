@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/chapter06
+BOOKdir = @abs_bookdir@/chapter06
 EXTRA_DIST = aboutdebug.ch autoconf.ch automake.ch bash.ch binutils.ch \
 	bison.ch bzip2.ch chapter06.ch chroot.ch coreutils.ch \
 	createfiles.ch  creatingdirs.ch db.ch diffutils.ch \

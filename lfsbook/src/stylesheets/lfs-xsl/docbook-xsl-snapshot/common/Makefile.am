@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/common
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/common
 EXTRA_DIST = common.ch gentext.ch insertfile.ch l10n.ch labels.ch \
 	olink.ch pi.ch refentry.ch stripns.ch subtitles.ch \
 	table.ch targets.ch titles.ch utility.ch \

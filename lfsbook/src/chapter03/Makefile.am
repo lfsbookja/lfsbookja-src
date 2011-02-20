@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/chapter03
+BOOKdir = @abs_bookdir@/chapter03
 EXTRA_DIST = chapter03.ch introduction.ch packages.ch patches.ch
 srcdir = @srcdir@
 srcs = chapter03.xml introduction.xml packages.xml patches.xml

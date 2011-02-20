@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/chapter07
+BOOKdir = @abs_bookdir@/chapter07
 EXTRA_DIST = bootscripts.ch chapter07.ch console.ch hostname.ch \
 	hosts.ch inputrc.ch introduction.ch network.ch profile.ch \
 	setclock.ch symlinks.ch sysklogd.ch udev.ch usage.ch

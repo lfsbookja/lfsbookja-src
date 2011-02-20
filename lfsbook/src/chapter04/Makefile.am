@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/chapter04
+BOOKdir = @abs_bookdir@/chapter04
 EXTRA_DIST = aboutlfs.ch aboutsbus.ch abouttestsuites.ch addinguser.ch \
 	chapter04.ch creatingtoolsdir.ch settingenviron.ch
 srcdir = @srcdir@

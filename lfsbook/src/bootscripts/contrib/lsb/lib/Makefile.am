@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/bootscripts/contrib/lsb/lib
+BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb/lib
 srcdir = @srcdir@
 srcs = init-functions
 

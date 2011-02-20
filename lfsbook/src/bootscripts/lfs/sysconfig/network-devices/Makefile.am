@@ -1,5 +1,5 @@
 SUBDIRS=services
-BOOKdir = $(top_builddir)/@bookdir@/bootscripts/lfs/sysconfig/network-devices
+BOOKdir = @abs_bookdir@/bootscripts/lfs/sysconfig/network-devices
 srcdir = @srcdir@
 srcs = ifdown ifup
 

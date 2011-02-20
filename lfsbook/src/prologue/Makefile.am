@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/prologue
+BOOKdir = @abs_bookdir@/prologue
 EXTRA_DIST = audience.ch bookinfo.ch dedication.ch errata.ch foreword.ch \
 	hostreqs.ch organization.ch preface.ch prerequisites.ch \
 	typography.ch japanese.ch architecture.ch standards.ch \

@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/bootscripts/contrib/sysconfig/network-devices/services
+BOOKdir = @abs_bookdir@/bootscripts/contrib/sysconfig/network-devices/services
 srcdir = @srcdir@
 srcs = mtu
 

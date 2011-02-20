@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml
 EXTRA_DIST = admon.ch annotations.ch autoidx-kimber.ch autoidx-kosek.ch \
 	autoidx-ng.ch autoidx.ch autotoc.ch biblio-iso690.ch \
 	biblio.ch block.ch callout.ch changebars.ch chunk-code.ch \

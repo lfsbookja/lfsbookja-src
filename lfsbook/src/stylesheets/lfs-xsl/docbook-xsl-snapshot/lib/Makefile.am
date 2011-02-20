@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib
 EXTRA_DIST = lib.ch
 srcdir = @srcdir@
 srcs = lib.xsl

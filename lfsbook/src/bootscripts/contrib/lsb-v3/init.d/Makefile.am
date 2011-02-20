@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/bootscripts/contrib/lsb-v3/init.d
+BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/init.d
 srcdir = @srcdir@
 srcs = checkfs cleanfs console halt lfs-functions localnet modules \
 	mountfs mountkernfs network rc reboot sendsignals setclock \

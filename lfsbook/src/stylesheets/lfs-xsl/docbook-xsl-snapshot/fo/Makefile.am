@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
 srcdir = @srcdir@
 EXTRA_DIST = titlepage.ch
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl

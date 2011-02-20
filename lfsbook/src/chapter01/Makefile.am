@@ -1,4 +1,4 @@
-BOOKdir=$(top_builddir)/@bookdir@/chapter01
+BOOKdir=@abs_bookdir@/chapter01
 EXTRA_DIST = askforhelp.ch changelog.ch chapter01.ch how.ch livecd.ch \
 	resources.ch whatsnew.ch jchangelog.ch
 srcdir = @srcdir@

@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling
 EXTRA_DIST = profile.ch profile-mode.ch strip-attributes.ch \
 	xsl2profile.ch
 srcdir = @srcdir@

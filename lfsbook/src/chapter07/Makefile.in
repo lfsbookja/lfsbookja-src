@@ -95,6 +95,7 @@ TIDY = @TIDY@
 VERSION = @VERSION@
 XMLLINT = @XMLLINT@
 XSLTPROC = @XSLTPROC@
+abs_bookdir = @abs_bookdir@
 abs_builddir = @abs_builddir@
 abs_srcdir = @abs_srcdir@
 abs_top_builddir = @abs_top_builddir@
@@ -138,7 +139,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/chapter07
+BOOKdir = @abs_bookdir@/chapter07
 EXTRA_DIST = bootscripts.ch chapter07.ch console.ch hostname.ch \
 	hosts.ch inputrc.ch introduction.ch network.ch profile.ch \
 	setclock.ch symlinks.ch sysklogd.ch udev.ch usage.ch

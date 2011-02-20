@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/appendices
+BOOKdir = @abs_bookdir@/appendices
 EXTRA_DIST = acknowledgments.ch acronymlist.ch creat-comm.ch \
 	dependencies.ch license.ch mit-lic.ch scripts.ch udev-rules.ch
 srcdir = @srcdir@

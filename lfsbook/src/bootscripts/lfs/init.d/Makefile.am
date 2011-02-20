@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/bootscripts/lfs/init.d
+BOOKdir = @abs_bookdir@/bootscripts/lfs/init.d
 srcdir = @srcdir@
 srcs = checkfs cleanfs console consolelog functions halt localnet \
 	modules mountfs mountkernfs network rc reboot sendsignals \

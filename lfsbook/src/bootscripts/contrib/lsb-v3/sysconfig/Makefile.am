@@ -1,5 +1,5 @@
 SUBDIRS=network-devices
-BOOKdir = $(top_builddir)/@bookdir@/bootscripts/contrib/lsb-v3/sysconfig
+BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/sysconfig
 srcdir = @srcdir@
 srcs = createfiles modules rc rc.site
 

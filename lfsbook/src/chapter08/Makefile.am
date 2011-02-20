@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/chapter08
+BOOKdir = @abs_bookdir@/chapter08
 EXTRA_DIST = chapter08.ch fstab.ch grub.ch introduction.ch kernel.ch
 srcdir = @srcdir@
 srcs = chapter08.xml fstab.xml grub.xml introduction.xml kernel.xml

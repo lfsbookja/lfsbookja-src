@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting
 EXTRA_DIST = common.ch
 srcdir = @srcdir@
 srcs = common.xsl

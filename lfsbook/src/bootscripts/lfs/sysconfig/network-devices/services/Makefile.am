@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/bootscripts/lfs/sysconfig/network-devices/services
+BOOKdir = @abs_bookdir@/bootscripts/lfs/sysconfig/network-devices/services
 srcdir = @srcdir@
 srcs = ipv4-static ipv4-static-route
 

@@ -1,4 +1,4 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/pdf
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/pdf
 EXTRA_DIST = lfs-admon.ch lfs-lists.ch lfs-mixed.ch \
 	lfs-pagesetup.ch lfs-xref.ch
 srcdir = @srcdir@

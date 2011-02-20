@@ -1,5 +1,5 @@
 SUBDIRS=lfs-xsl
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets
+BOOKdir = @abs_bookdir@/stylesheets
 EXTRA_DIST = wget-list.ch lfs-nochunks.ch lfs-pdf.ch lfs-chunked.ch \
 	dump-commands.ch patcheslist.ch 
 srcdir = @srcdir@

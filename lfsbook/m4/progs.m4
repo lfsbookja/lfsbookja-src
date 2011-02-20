@@ -43,3 +43,5 @@ else
 fi
 AC_SUBST(bookdir)
 
+abs_bookdir=`(cd $bookdir && pwd)`
+AC_SUBST(abs_bookdir)

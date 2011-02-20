@@ -95,6 +95,7 @@ TIDY = @TIDY@
 VERSION = @VERSION@
 XMLLINT = @XMLLINT@
 XSLTPROC = @XSLTPROC@
+abs_bookdir = @abs_bookdir@
 abs_builddir = @abs_builddir@
 abs_srcdir = @abs_srcdir@
 abs_top_builddir = @abs_top_builddir@
@@ -138,7 +139,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/appendices
+BOOKdir = @abs_bookdir@/appendices
 EXTRA_DIST = acknowledgments.ch acronymlist.ch creat-comm.ch \
 	dependencies.ch license.ch mit-lic.ch scripts.ch udev-rules.ch
 
