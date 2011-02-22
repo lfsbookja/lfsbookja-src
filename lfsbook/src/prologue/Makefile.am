@@ -18,19 +18,19 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-audience.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/audience.ch
-bookinfo.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
-dedication.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/dedication.ch
-errata.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/errata.ch
-foreword.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/foreword.ch
-hostreqs.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/hostreqs.ch
-organization.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/organization.ch
-preface.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/preface.ch
-prerequisites.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/prerequisites.ch
-typography.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/typography.ch
+audience.xml: $(BOOKdir)/$@ $(srcdir)/audience.ch
+bookinfo.xml: $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
+dedication.xml: $(BOOKdir)/$@ $(srcdir)/dedication.ch
+errata.xml: $(BOOKdir)/$@ $(srcdir)/errata.ch
+foreword.xml: $(BOOKdir)/$@ $(srcdir)/foreword.ch
+hostreqs.xml: $(BOOKdir)/$@ $(srcdir)/hostreqs.ch
+organization.xml: $(BOOKdir)/$@ $(srcdir)/organization.ch
+preface.xml: $(BOOKdir)/$@ $(srcdir)/preface.ch
+prerequisites.xml: $(BOOKdir)/$@ $(srcdir)/prerequisites.ch
+typography.xml: $(BOOKdir)/$@ $(srcdir)/typography.ch
 japanese.xml: $(srcdir)/japanese.ch
 	cp -p $^ $@
-architecture.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/architecture.ch
-standards.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/standards.ch
-why.xml: $(BOOKdir)/$@ $(BOOKdir)/$@ $(srcdir)/why.ch
+architecture.xml: $(BOOKdir)/$@ $(srcdir)/architecture.ch
+standards.xml: $(BOOKdir)/$@ $(srcdir)/standards.ch
+why.xml: $(BOOKdir)/$@ $(srcdir)/why.ch
 

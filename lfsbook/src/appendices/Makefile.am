@@ -14,11 +14,11 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-acknowledgments.xml: $(srcdir)/acknowledgments.ch
-acronymlist.xml: $(srcdir)/acronymlist.ch
-creat-comm.xml: $(srcdir)/creat-comm.ch
-dependencies.xml: $(srcdir)/dependencies.ch
-license.xml: $(srcdir)/license.ch
-mit-lic.xml: $(srcdir)/mit-lic.ch
-scripts.xml: $(srcdir)/scripts.ch
-udev-rules.xml: $(srcdir)/udev-rules.ch
+acknowledgments.xml: $(BOOKdir)/$@ $(srcdir)/acknowledgments.ch
+acronymlist.xml: $(BOOKdir)/$@ $(srcdir)/acronymlist.ch
+creat-comm.xml: $(BOOKdir)/$@ $(srcdir)/creat-comm.ch
+dependencies.xml: $(BOOKdir)/$@ $(srcdir)/dependencies.ch
+license.xml: $(BOOKdir)/$@ $(srcdir)/license.ch
+mit-lic.xml: $(BOOKdir)/$@ $(srcdir)/mit-lic.ch
+scripts.xml: $(BOOKdir)/$@ $(srcdir)/scripts.ch
+udev-rules.xml: $(BOOKdir)/$@ $(srcdir)/udev-rules.ch
