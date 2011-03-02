@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-03-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter04/creatingtoolsdir.ch,
+          src/chapter06/kernfs.ch:
+          SVN-20110218, r9475 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-02-19</para>
       <itemizedlist>
         <listitem>

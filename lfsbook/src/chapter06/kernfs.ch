@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -42,21 +51,19 @@
     <para>When the kernel boots the system, it requires the presence of a few
     device nodes, in particular the <filename
     class="devicefile">console</filename> and <filename
-    class="devicefile">null</filename> devices. The device nodes will be created
+    class="devicefile">null</filename> devices. The device nodes must be created
     on the hard disk so that they are available before <command>udevd</command>
     has been started, and additionally when Linux is started with
     <parameter>init=/bin/bash</parameter>. Create the devices by running the
     following commands:</para>
 @y
-<para>
-カーネルがシステムを起動する際には、いくつかのデバイスノードの存在が必要です。
-特に <filename class="devicefile">console</filename> と
-<filename class="devicefile">null</filename> です。
-デバイスノードはハードディスク上に生成されます。
-そして <command>udevd</command> が起動し、また
-Linux が起動パラメータ <parameter>init=/bin/bash</parameter> によって起動されれば利用可能となります。
-以下のコマンドによりデバイスノードを生成します。
-</para>
+    <para>
+    カーネルがシステムを起動する際には、いくつかのデバイスノードの存在が必要です。
+    特に <filename class="devicefile">console</filename> と <filename class="devicefile">null</filename> です。
+    これらのデバイスノードはハードディスク上に生成されていなければなりません。
+    <command>udevd</command> が起動し、また Linux が起動パラメータ <parameter>init=/bin/bash</parameter> によって起動されれば利用可能となります。
+    そこで以下のコマンドによりデバイスノードを生成します。
+    </para>
 @z
 
 @x
