@@ -193,8 +193,8 @@ BASEDIR = ../6.8.ja
 ROOT_ID = 
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
-NOCHUNKS_OUTPUT = ../lfsbookja-svn.html
-PDF_OUTPUT = ../lfsbookja-svn.pdf
+NOCHUNKS_OUTPUT = ../lfsbookja-6.8.html
+PDF_OUTPUT = ../lfsbookja-6.8.pdf
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
 
@@ -614,7 +614,7 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@	  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 
 @MAINT@txt: nochunks
-@MAINT@	lynx -width=44 -dump ../lfsbookja-svn.html > ../lfsbookja-svn.txt
+@MAINT@	lynx -width=44 -dump ../lfsbookja-6.8.html > ../lfsbookja-6.8.txt
 
 @MAINT@pdf: validxml
 @MAINT@	@echo "Generating profiled XML for PDF..."
