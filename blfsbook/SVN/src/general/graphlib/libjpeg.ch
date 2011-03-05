@@ -183,10 +183,10 @@
           (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
           BMP, and Targa.</para>
 @y
-          <para>compresses image files to produce a JPEG/JFIF file on the
-          standard output. Currently supported input file formats are: PPM
-          (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-          BMP, and Targa.</para>
+          <para>JPEG/JFIF ファイルを生み出す、圧縮したイメージファイルを生成します。
+          現時点にて対応する入力フォーマットは以下のとおりです。
+          PPM (PBMPLUS カラーフォーマット), PGM (PBMPLUS グレースケールフォーマット),
+          BMP, Targa.</para>
 @z
 
 @x djpeg
@@ -208,7 +208,7 @@
 @x rdjpegcom
           <para>displays text comments from within a JPEG file.</para>
 @y
-          <para>displays text comments from within a JPEG file.</para>
+          <para>JPEG ファイル内のコメントテキストを表示します。</para>
 @z
 
 @x wrjpgcom
@@ -221,8 +221,7 @@
           <para>library is used by many programs for reading and writing
           JPEG format files.</para>
 @y
-<para>
-JPEG フォーマットのファイルの読み書きを行うために、数多くのプログラムが利用するライブラリです。
-</para>
+          <para>
+          JPEG フォーマットのファイルの読み書きを行うために、数多くのプログラムが利用するライブラリです。
+          </para>
 @z
-

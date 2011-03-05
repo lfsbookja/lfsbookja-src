@@ -137,19 +137,19 @@ DBus 上にてメニュー表示を行うことを目的としています。
 @x
     <para>Prepare the package for compilation:</para>
 @y
-    <para>Prepare the package for compilation:</para>
+    <para>コンパイルするための準備をします。</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para><systemitem class="username">root</systemitem> ユーザーになって以下を実行します。</para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -157,9 +157,9 @@ DBus 上にてメニュー表示を行うことを目的としています。
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -167,7 +167,7 @@ DBus 上にてメニュー表示を行うことを目的としています。
 	<seg>libdbusmenu-qt.so</seg>
         <seg>None</seg>
 @y
-        <seg>None</seg>
+        <seg>なし</seg>
 	<seg>libdbusmenu-qt.so</seg>
-        <seg>None</seg>
+        <seg>なし</seg>
 @z

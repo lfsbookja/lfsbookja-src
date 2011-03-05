@@ -32,16 +32,10 @@
     interface to cryptographic building blocks using an extendable and flexible
     API.</para>
 @y
-<para>
-<application>Libgcrypt</application>
-パッケージは <application>GnuPG</application> にて用いられるコードを
-
-package contains a general
-purpose crypto library based on the code used in
-. The library provides a high level
-interface to cryptographic building blocks using an extendable and flexible
-API.
-</para>
+    <para>
+    <application>Libgcrypt</application> パッケージは <application>GnuPG</application> にて用いられるコードに基づいた、汎用的な暗号化ライブラリです。
+    このライブラリは、拡張性と柔軟性に優れた API 関数を利用して、暗号化に対しての高度なインターフェースを提供します。
+    </para>
 @z
 
 @x
@@ -128,10 +122,9 @@ API.
     <para>Install <application>Libgcrypt</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Libgcrypt</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Libgcrypt</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -141,29 +134,29 @@ API.
     installed to build the PDF and PostScript), then issue the following
     commands:</para>
 @y
-    <para>Only <command>info</command> documentation is shipped in the package
-    tarball. If you wish to build alternate formats of the documentation,
-    (you must have <xref linkend="tetex"/> or <xref linkend="texlive"/>
-    installed to build the PDF and PostScript), then issue the following
-    commands:</para>
+    <para>
+    パッケージの tarball には <command>info</command> ドキュメントのみが提供されています。
+    他の書式のドキュメントをビルドする場合 (その場合は <xref linkend="tetex"/> か <xref linkend="texlive"/> をインストールしておく必要があり)、
+    以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストするなら <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストするなら <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem>
+    ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -171,12 +164,9 @@ API.
     following commands as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-
-If you built the additional documentation, install it by issuing the
-following commands as the <systemitem class="username">root</systemitem>
-user:
-</para>
+    <para>
+    他の書式のドキュメントをビルドしていた場合は、<systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -226,6 +216,6 @@ user:
 @x libgcrypt.{so,a}
           <para>contains the cryptographic API functions.</para>
 @y
-          <para>contains the cryptographic API functions.</para>
+          <para>暗号化 API 関数を提供します。</para>
 @z
 

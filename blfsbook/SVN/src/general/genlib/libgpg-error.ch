@@ -162,10 +162,9 @@
           <para>is used to determine <application>Libgpg-error</application>
           error codes.</para>
 @y
-<para>
-is used to determine <application>Libgpg-error</application>
-error codes.
-</para>
+          <para>
+          <application>Libgpg-error</application> のエラーコードを決定するために利用します。
+          </para>
 @z
 
 @x gpg-error-config
@@ -175,21 +174,17 @@ error codes.
           compile and link the application against the
           <application>Libgpg-error</application> library.</para>
 @y
-<para>
-is a utility used to configure and build applications based on
-the <application>Libgpg-error</application> library. It can be used
-to query the C compiler and linker flags which are required to correctly
-compile and link the application against the
-<application>Libgpg-error</application> library.
-</para>
+          <para>
+          <application>Libgpg-error</application> ライブラリに基づいて生成されるアプリケーションの設定と構築のために利用するユーティリティです。
+          <application>Libgpg-error</application> ライブラリに対してアプリケーションをコンパイルしリンクする際の C コンパイラーフラグやリンカーフラグを決定するために利用します。
+          </para>
 @z
 
 @x liblibgpg-error.{so,a}
           <para>contains the <application>Libgpg-error</application> API
           functions.</para>
 @y
-<para>
-contains the <application>Libgpg-error</application> API
-functions.
-</para>
+          <para>
+          <application>Libgpg-error</application> の API 関数を提供します。
+          </para>
 @z
