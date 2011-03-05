@@ -142,8 +142,9 @@ C 言語の標準はよく変更されますが、パッケージの中には古
 
 @x
 <screen role="nodump">
-1. Place all the sources and patches in a directory that will be accessible from the 
-   chroot envronment such as /mnt/lfs/sources/.  Do <emphasis>not</emphasis> put sources in /mnt/lfs/tools/.
+1. Place all the sources and patches in a directory that will be accessible 
+   from the chroot envronment such as /mnt/lfs/sources/.  Do <emphasis>not</emphasis> put 
+   sources in /mnt/lfs/tools/.
 2. Change to the sources directory.
 3. For each package:
    a. Using the tar program, extract the package to be built.
@@ -152,6 +153,7 @@ C 言語の標準はよく変更されますが、パッケージの中には古
    d. Change back to the sources directory.
    e. Delete the extracted source directory and any &lt;package&gt;-build 
       directories that were created in the build process.</screen>
+
 @y
 <screen role="nodump">
 1. ソースやパッチファイルを配置するディレクトリは /mnt/lfs/sources/ などのように
