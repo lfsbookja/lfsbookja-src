@@ -106,7 +106,7 @@
     <xref linkend="audiofile"/>,
     <xref linkend="libmad"/>,
     <xref linkend="esound"/>,
-    <xref linkend="nas"/>,
+<!--    <xref linkend="nas"/>, -->
     <ulink url="http://www.mediaapplicationserver.net/">MAS</ulink>, and
     <ulink url="http://jackit.sourceforge.net/">JACK</ulink></para>
 @y
@@ -116,7 +116,7 @@
     <xref linkend="audiofile"/>,
     <xref linkend="libmad"/>,
     <xref linkend="esound"/>,
-    <xref linkend="nas"/>,
+<!--    <xref linkend="nas"/>, -->
     <ulink url="http://www.mediaapplicationserver.net/">MAS</ulink>,
     <ulink url="http://jackit.sourceforge.net/">JACK</ulink></para>
 @z

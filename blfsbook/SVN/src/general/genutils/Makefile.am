@@ -3,15 +3,15 @@ EXTRA_DIST = bc.ch compface.ch desktop-file-utils.ch genutils.ch \
 	gperf.ch graphviz.ch gtk-doc.ch hd2u.ch icon-naming-utils.ch	\
 	imagemagick.ch intltool.ch pilot-link.ch pinentry.ch recode.ch \
 	rep-gtk.ch rman.ch rxvt-unicode.ch screen.ch scrollkeeper.ch	\
-	tidy.ch unixodbc.ch xscreensaver.ch xterm.ch rarian.ch \
-	xcb-util.ch libiodbc.ch
+	tidy.ch unixodbc.ch xscreensaver.ch rarian.ch \
+	libiodbc.ch
 srcdir = @srcdir@
 srcs = bc.xml compface.xml desktop-file-utils.xml genutils.xml \
 	gperf.xml graphviz.xml gtk-doc.xml hd2u.xml icon-naming-utils.xml	\
 	imagemagick.xml intltool.xml pilot-link.xml pinentry.xml recode.xml \
 	rep-gtk.xml rman.xml rxvt-unicode.xml screen.xml scrollkeeper.xml	\
-	tidy.xml unixodbc.xml xscreensaver.xml xterm.xml rarian.xml \
-	xcb-util.xml libiodbc.xml
+	tidy.xml unixodbc.xml xscreensaver.xml rarian.xml \
+	libiodbc.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -43,8 +43,6 @@ scrollkeeper.xml: $(BOOKdir)/$@ $(srcdir)/scrollkeeper.ch
 tidy.xml: $(BOOKdir)/$@ $(srcdir)/tidy.ch
 unixodbc.xml: $(BOOKdir)/$@ $(srcdir)/unixodbc.ch
 xscreensaver.xml: $(BOOKdir)/$@ $(srcdir)/xscreensaver.ch
-xterm.xml: $(BOOKdir)/$@ $(srcdir)/xterm.ch
 rarian.xml: $(BOOKdir)/$@ $(srcdir)/rarian.ch
-xcb-util.xml: $(BOOKdir)/$@ $(srcdir)/xcb-util.ch
 libiodbc.xml: $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 

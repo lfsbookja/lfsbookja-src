@@ -115,10 +115,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"> <xref linkend="xorg7-util"/></para>
+    <para role="required"> <xref linkend="util-macros"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"> <xref linkend="xorg7-util"/></para>
+    <para role="required"> <xref linkend="util-macros"/></para>
 @z
 
 @x

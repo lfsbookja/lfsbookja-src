@@ -1,5 +1,5 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/genlib
-EXTRA_DIST = glib2.ch libesmtp.ch libpthread-stubs.ch pcre.ch \
+EXTRA_DIST = glib2.ch libesmtp.ch pcre.ch \
 	aspell.ch gmime.ch libgcrypt.ch libusb-compat.ch popt.ch \
 	dbus-bindings.ch gmp.ch libglade.ch libusb.ch pth.ch expat.ch \
 	gwrap.ch libgpg-error.ch libxml.ch fam.ch iso-codes.ch \
@@ -7,14 +7,14 @@ EXTRA_DIST = glib2.ch libesmtp.ch libpthread-stubs.ch pcre.ch \
 	libxslt.ch gdbm.ch libassuan.ch libidl.ch lzo.ch genlib.ch \
 	libcroco.ch libidn.ch mcs.ch glib.ch libdrm.ch libksba.ch \
 	mowgli.ch pcre.ch popt.ch pth.ch slib.ch liboil.ch \
-	libtasn1.ch libunique.ch nspr.ch libxcb.ch xcb-proto.ch \
+	libtasn1.ch libunique.ch nspr.ch \
 	libffi.ch gir-repository.ch gobject-introspection.ch \
 	enchant.ch icu.ch libical.ch libelf.ch libggz.ch \
 	libsigc++.ch ptlib.ch glibmm.ch libatasmart.ch libdaemon.ch \
 	telepathy-glib.ch libatomic_ops.ch wv.ch talloc.ch \
 	libdbusmenuqt.ch clucene.ch qca.ch boost.ch
 srcdir = @srcdir@
-srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
+srcs = glib2.xml libesmtp.xml pcre.xml \
 	aspell.xml gmime.xml libgcrypt.xml libusb-compat.xml popt.xml \
 	dbus-bindings.xml gmp.xml libglade.xml libusb.xml pth.xml expat.xml \
 	gwrap.xml libgpg-error.xml libxml.xml fam.xml iso-codes.xml \
@@ -22,7 +22,7 @@ srcs = glib2.xml libesmtp.xml libpthread-stubs.xml pcre.xml \
 	libxslt.xml gdbm.xml libassuan.xml libidl.xml lzo.xml genlib.xml \
 	libcroco.xml libidn.xml mcs.xml glib.xml libdrm.xml libksba.xml \
 	mowgli.xml pcre.xml popt.xml pth.xml slib.xml liboil.xml \
-	libtasn1.xml libunique.xml nspr.xml libxcb.xml xcb-proto.xml \
+	libtasn1.xml libunique.xml nspr.xml \
 	libffi.xml gir-repository.xml gobject-introspection.xml \
 	enchant.xml icu.xml libical.xml libelf.xml libggz.xml \
         libsigc++.xml ptlib.xml glibmm.xml libatasmart.xml libdaemon.xml \
@@ -40,7 +40,6 @@ ctie:
 
 glib2.xml: $(BOOKdir)/$@ $(srcdir)/glib2.ch
 libesmtp.xml: $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
-libpthread-stubs.xml: $(BOOKdir)/$@ $(srcdir)/libpthread-stubs.ch
 pcre.xml: $(BOOKdir)/$@ $(srcdir)/pcre.ch
 aspell.xml: $(BOOKdir)/$@ $(srcdir)/aspell.ch
 gmime.xml: $(BOOKdir)/$@ $(srcdir)/gmime.ch
@@ -85,8 +84,6 @@ liboil.xml: $(BOOKdir)/$@ $(srcdir)/liboil.ch
 libtasn1.xml: $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
 libunique.xml: $(BOOKdir)/$@ $(srcdir)/libunique.ch
 nspr.xml: $(BOOKdir)/$@ $(srcdir)/nspr.ch
-libxcb.xml: $(BOOKdir)/$@ $(srcdir)/libxcb.ch
-xcb-proto.xml: $(BOOKdir)/$@ $(srcdir)/xcb-proto.ch
 libffi.xml: $(BOOKdir)/$@ $(srcdir)/libffi.ch
 gir-repository.xml: $(BOOKdir)/$@ $(srcdir)/gir-repository.ch
 gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch

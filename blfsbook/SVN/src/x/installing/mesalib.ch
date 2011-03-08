@@ -118,16 +118,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="xorg7-lib"/>,
-    <xref linkend="xorg7-util"/>,
+    <xref linkend="makedepend"/>,
     <xref linkend="libdrm"/>,
     <xref linkend="expat"/>, and
     <xref linkend="talloc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="xorg7-lib"/>,
-    <xref linkend="xorg7-util"/>,
+    <xref linkend="makedepend"/>,
     <xref linkend="libdrm"/>,
-    <xref linkend="expat"/>,
+    <xref linkend="expat"/>, and
     <xref linkend="talloc"/></para>
 @z
 

@@ -1,14 +1,14 @@
 BOOKdir = $(top_builddir)/@bookdir@/x/lib
 EXTRA_DIST = atk.ch cairo.ch freeglut.ch goffice.ch gtk+.ch gtk+2.ch \
 	hicolor-icon-theme.ch lesstif.ch lib.ch libwnck.ch libxklavier.ch \
-	mesalib.ch pango.ch qt.ch qt4.ch shared-mime-info.ch \
+	pango.ch qt.ch qt4.ch shared-mime-info.ch \
 	startup-notification.ch xulrunner.ch webkitgtk.ch cairomm.ch \
 	pangomm.ch gtkmm.ch libnotify.ch notification-daemon.ch \
 	libsexy.ch gtk-vnc.ch
 srcdir = @srcdir@
 srcs = atk.xml cairo.xml freeglut.xml goffice.xml gtk+.xml gtk+2.xml \
 	hicolor-icon-theme.xml lesstif.xml lib.xml libwnck.xml libxklavier.xml \
-	mesalib.xml pango.xml qt.xml qt4.xml shared-mime-info.xml \
+	pango.xml qt.xml qt4.xml shared-mime-info.xml \
 	startup-notification.xml xulrunner.xml webkitgtk.xml cairomm.xml \
 	pangomm.xml gtkmm.xml libnotify.xml notification-daemon.xml \
 	libsexy.xml gtk-vnc.xml
@@ -36,7 +36,6 @@ lesstif.xml: $(BOOKdir)/$@ $(srcdir)/lesstif.ch
 lib.xml: $(BOOKdir)/$@ $(srcdir)/lib.ch
 libwnck.xml: $(BOOKdir)/$@ $(srcdir)/libwnck.ch
 libxklavier.xml: $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
-mesalib.xml: $(BOOKdir)/$@ $(srcdir)/mesalib.ch
 pango.xml: $(BOOKdir)/$@ $(srcdir)/pango.ch
 qt.xml: $(BOOKdir)/$@ $(srcdir)/qt.ch
 qt4.xml: $(BOOKdir)/$@ $(srcdir)/qt4.ch

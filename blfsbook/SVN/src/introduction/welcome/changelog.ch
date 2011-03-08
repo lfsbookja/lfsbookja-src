@@ -62,6 +62,37 @@
 @z
 
 @x
+      <para>March 8th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Separated Xorg Utilities packages (util-macros and
+          makedepend).</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Moved libpthread-stubs, libxcb, Mesa, xcb-proto,
+          xcb-utils, and xterm to the Xorg section.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Removed rman and nas from the book.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/03/08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Xorg ユーティリティーパッケージ (util-macros, makedepend) を分離。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libpthread-stubs, libxcb, Mesa, xcb-proto,
+          xcb-utils, xterm の各パッケージを Xorg の章に移動。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - rman と nas を本ブックから削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>February 19th, 2010</para>
       <itemizedlist>
         <listitem>
