@@ -62,6 +62,22 @@
 @z
 
 @x
+      <para>March 9th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Add the KDE4 section.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/03/09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - KDE4 の章を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>March 8th, 2011</para>
       <itemizedlist>
         <listitem>
