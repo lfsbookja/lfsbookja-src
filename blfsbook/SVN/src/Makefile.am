@@ -1,5 +1,6 @@
-SUBDIRS=appendices basicnet book general gnome introduction kde multimedia \
-	postlfs pst server stylesheets template x xincludes xsoft
+SUBDIRS=appendices basicnet book general gnome introduction kde kde4 \
+	multimedia postlfs pst server stylesheets template x xincludes \
+	xsoft
 EXTRA_DIST = general.ch index.ch tidy.ch tidy.sed
 BOOKdir = $(top_builddir)/@bookdir@
 srcdir = @srcdir@
