@@ -25,17 +25,7 @@ DejaGNU パッケージは、他のプログラムをテストするフレーム
 @x
     <title>Installation of DejaGNU</title>
 @y
-    <title>DejaGNUのインストール</title>
-@z
-
-@x
-    <para>The most recent version of this package was released in 2004.  Apply
-    some fixes that have accumulated since then:</para>
-@y
-<para>
-本パッケージの最新バージョンは 2004 年にリリースされています。
-それ以降に発生した修正を適用します。
-</para>
+    <title>DejaGNU のインストール</title>
 @z
 
 @x
@@ -78,9 +68,7 @@ DejaGNU パッケージは、他のプログラムをテストするフレーム
           <para>A wrapper script that locates the proper
           <command>expect</command> shell and then runs DejaGNU</para>
 @y
-<para>
-<command>expect</command>
-シェルの適正な場所を特定し DejaGNU を実行するためのラッパースクリプト。
-</para>
+          <para>
+          <command>expect</command> シェルの適正な場所を特定し DejaGNU を実行するためのラッパースクリプト。
+          </para>
 @z
-

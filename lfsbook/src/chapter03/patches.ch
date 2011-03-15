@@ -86,20 +86,6 @@
 @z
 
 @x
-      <term>Dejagnu Consolidated Patch - <token>&dejagnu-consolidated-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&dejagnu-consolidated-patch;"/></para>
-        <para>MD5 sum: <literal>&dejagnu-consolidated-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Dejagnu Consolidated Patch - <token>&dejagnu-consolidated-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&dejagnu-consolidated-patch;"/></para>
-        <para>MD5 sum: <literal>&dejagnu-consolidated-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Flex GCC-4.4.x Patch - <token>&flex-gcc-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&flex-gcc-patch;"/></para>

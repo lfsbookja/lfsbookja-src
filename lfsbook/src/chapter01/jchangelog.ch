@@ -54,11 +54,23 @@
 -->
 
     <listitem>
+      <para>2011-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch, src/chapter05/{bash.ch, dejagnu.ch},
+          src/chapter06/{bash.ch, coreutils.ch, readline.ch}:
+          SVN-20110314, r9490 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-03-05</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          
           SVN-20110305, r9479 対応。
           </para>
         </listitem>

@@ -17,9 +17,9 @@
     <para>The Readline package is a set of libraries that offers command-line
     editing and history capabilities.</para>
 @y
-<para>
-Readline パッケージは、コマンドラインの編集や履歴管理を行うライブラリを提供します。
-</para>
+    <para>
+    Readline パッケージは、コマンドラインの編集や履歴管理を行うライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -34,14 +34,19 @@ Readline パッケージは、コマンドラインの編集や履歴管理を�
     it can trigger a linking bug in <command>ldconfig</command>. This can be
     avoided by issuing the following two seds:</para>
 @y
-<para>
-Readline を再インストールすると、それまでの古いライブラリは
-&lt;ライブラリ名&gt;.old というファイル名でコピーされます。
-これは普通は問題ないことですが
-<command>ldconfig</command>
-によるリンクに際してエラーを引き起こすことがあります。
-これを避けるため以下の二つの sed コマンドを実行します。
-</para>
+    <para>
+    Readline を再インストールすると、それまでの古いライブラリは &lt;ライブラリ名&gt;.old というファイル名でコピーされます。
+    これは普通は問題ないことですが <command>ldconfig</command> によるリンクに際してエラーを引き起こすことがあります。
+    これを避けるため以下の二つの sed コマンドを実行します。
+    </para>
+@z
+
+@x
+    <para>Apply a patch to fix a known bug that has been fixed upstream:</para>
+@y
+    <para>
+    アップストリームにより提供されているバグフィックスのパッチを適用します。
+    </para>
 @z
 
 @x
@@ -67,11 +72,11 @@ Readline を再インストールすると、それまでの古いライブラ�
           <filename class="libraryfile">libncurses</filename> (really,
           <filename class="libraryfile">libncursesw</filename>) library.</para>
 @y
-<para>
-このオプションにより Readline を <filename class="libraryfile">libncurses</filename>
-ライブラリ (その実体は <filename class="libraryfile">libncursesw</filename> ライブラリ)
-にリンクします。
-</para>
+          <para>
+          このオプションにより Readline を <filename
+          class="libraryfile">libncurses</filename> ライブラリ (その実体は <filename
+          class="libraryfile">libncursesw</filename> ライブラリ) にリンクします。
+          </para>
 @z
 
 @x
@@ -89,9 +94,9 @@ Readline を再インストールすると、それまでの古いライブラ�
 @x
     <para>Now move the static libraries to a more appropriate location:</para>
 @y
-<para>
-スタティックライブラリを適切なディレクトリに移動します。
-</para>
+    <para>
+    スタティックライブラリを適切なディレクトリに移動します。
+    </para>
 @z
 
 @x
@@ -99,12 +104,11 @@ Readline を再インストールすると、それまでの古いライブラ�
     <filename class="directory">/lib</filename> and relink them into <filename
     class="directory">/usr/lib</filename>:</para>
 @y
-<para>
-次に <filename class="directory">/lib</filename>
-ディレクトリにある <filename class="extension">.so</filename>
-ファイルを削除して、それらを <filename class="directory">/usr/lib</filename>
-にリンクし直します。
-</para>
+    <para>
+    次に <filename class="directory">/lib</filename> ディレクトリにある <filename
+    class="extension">.so</filename> ファイルを削除して、それらを <filename
+    class="directory">/usr/lib</filename> にリンクし直します。
+    </para>
 @z
 
 @x
@@ -160,4 +164,3 @@ Readline を再インストールすると、それまでの古いライブラ�
 コマンドラインインターフェースを提供している様々なコマンドにおいて、適切なインターフェースを提供します。
 </para>
 @z
-

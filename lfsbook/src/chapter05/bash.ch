@@ -32,6 +32,15 @@
 @z
 
 @x
+    <para>First, apply the following patch to fix various bugs that have been
+    addressed upstream:</para>
+@y
+    <para>
+    まずはアップストリームにより提供されている以下のパッチを適用し、種々のバグを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Bash for compilation:</para>
 @y
     <para>Bash をコンパイルするための準備をします。</para>
@@ -50,13 +59,11 @@
           the <function>malloc</function> functions from Glibc which are
           more stable.</para>
 @y
-<para>
-このオプションは Bash のメモリ割り当て関数 (<function>malloc</function>)
-を利用しないことを指示します。
-この関数はセグメンテーションフォールトが発生する可能性があるものとして知られています。
-このオプションをオフにすることで、Bash は Glibc が提供する <function>malloc</function>
-関数を用いるものとなり、そちらの方が安定しています。
-</para>
+          <para>
+          このオプションは Bash のメモリ割り当て関数 (<function>malloc</function>) を利用しないことを指示します。
+          この関数はセグメンテーションフォールトが発生する可能性があるものとして知られています。
+          このオプションをオフにすることで、Bash は Glibc が提供する <function>malloc</function> 関数を用いるものとなり、そちらの方が安定しています。
+          </para>
 @z
 
 @x
@@ -70,11 +77,11 @@
     suite is not mandatory for the temporary tools here in this chapter. To run
     the Bash test suite anyway, issue the following command:</para>
 @y
-<para>
-コンパイルが終了しました。
-前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-しかしテストスイートを実行するなら、以下を実行します。
-</para>
+    <para>
+    コンパイルが終了しました。
+    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+    しかしテストスイートを実行するなら、以下を実行します。
+    </para>
 @z
 
 @x
@@ -87,19 +94,16 @@
     <para>Make a link for the programs that use <command>sh</command> for
     a shell:</para>
 @y
-<para>
-他のプログラム類がシェルとして <command>sh</command>
-を用いるものがあるためリンクを作ります。
-</para>
+    <para>
+    他のプログラム類がシェルとして <command>sh</command> を用いるものがあるためリンクを作ります。
+    </para>
 @z
 
 @x
     <para>Details on this package are located in
     <xref linkend="contents-bash" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-bash" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-bash" role=""/> を参照してください。
+    </para>
 @z
