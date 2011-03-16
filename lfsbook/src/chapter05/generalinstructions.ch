@@ -143,7 +143,7 @@ C 言語の標準はよく変更されますが、パッケージの中には古
 @x
 <screen role="nodump">
 1. Place all the sources and patches in a directory that will be accessible 
-   from the chroot envronment such as /mnt/lfs/sources/.  Do <emphasis>not</emphasis> put 
+   from the chroot environment such as /mnt/lfs/sources/.  Do <emphasis>not</emphasis> put 
    sources in /mnt/lfs/tools/.
 2. Change to the sources directory.
 3. For each package:
