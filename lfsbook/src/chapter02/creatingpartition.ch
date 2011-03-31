@@ -63,12 +63,11 @@ LFS システムそのものがそれだけの容量を要するわけではあ�
   case it is not necessary to create another one.</para>
 @y
 <para>
-コンパイル処理において十分なランダムアクセスメモリ (Random Access Memory; RAM)
-を確保できるとは限りませんので、スワップ (<systemitem class="filesystem">swap</systemitem>)
-領域をパーティションとして設けるのが普通です。
+コンパイル処理において十分なランダムアクセスメモリ (Random Access Memory;
+RAM) を確保できるとは限りませんので、スワップ (<systemitem
+class="filesystem">swap</systemitem>) 領域をパーティションとして設けるのが普通です。
 この領域へは利用頻度が低いデータを移すことで、アクティブな処理プロセスがより多くのメモリを確保できるようにカーネルが制御します。
-<systemitem class="filesystem">swap</systemitem>
-パーティションは、LFS システムのものとホストシステムのものを共有することもできます。
+<systemitem class="filesystem">swap</systemitem> パーティションは、LFS システムのものとホストシステムのものを共有することもできます。
 その場合は新しいパーティションを作る必要はありません。
 </para>
 @z
@@ -84,16 +83,13 @@ LFS システムそのものがそれだけの容量を要するわけではあ�
   you do not yet know how to use the programs.</para>
 @y
 <para>
-ディスクのパーティション生成は <command>cfdisk</command> コマンドや <command>fdisk</command>
-コマンドを使って行います。
+ディスクのパーティション生成は <command>cfdisk</command> コマンドや <command>fdisk</command> コマンドを使って行います。
 コマンドラインオプションにはパーティションを生成するハードディスク名を指定します。
-例えば IDE (Integrated Drive Electronics) ディスクであれば
-<filename class="devicefile">/dev/hda</filename> といったものになります。
-そして Linux ネイティブパーティションと、必要なら <systemitem class="filesystem">swap</systemitem>
-パーティションを生成します。
-プログラムの利用方法について不明であれば
-<filename>cfdisk(8)</filename> や <filename>fdisk(8)</filename>
-を参照してください。
+例えば IDE (Integrated Drive Electronics) ディスクであれば <filename
+class="devicefile">/dev/hda</filename> といったものになります。
+そして Linux ネイティブパーティションと、必要なら <systemitem
+class="filesystem">swap</systemitem> パーティションを生成します。
+プログラムの利用方法について不明であれば <filename>cfdisk(8)</filename> や <filename>fdisk(8)</filename> を参照してください。
 </para>
 @z
 
@@ -106,12 +102,9 @@ LFS システムそのものがそれだけの容量を要するわけではあ�
 @y
 <para>
 新しく生成したパーティションの名前を覚えておいてください。
-(例えば <filename class="devicefile">hda5</filename> など。)
-本書ではこのパーティションを LFS パーティションとして説明していきます。
-また <systemitem class="filesystem">swap</systemitem>
-パーティションの名前も忘れないでください。
-これらの名前は、後に生成する <filename>/etc/fstab</filename>
-ファイルに記述するために必要となります。
+(例えば <filename class="devicefile">hda5</filename> など。) 本書ではこのパーティションを LFS パーティションとして説明していきます。
+また <systemitem class="filesystem">swap</systemitem> パーティションの名前も忘れないでください。
+これらの名前は、後に生成する <filename>/etc/fstab</filename> ファイルに記述するために必要となります。
 </para>
 @z
 
@@ -154,9 +147,8 @@ LFS メーリングリストにてパーティションに関する有用情報�
     partitions can be easily created for experimentation.</para> </sect3>
 @y
 <para>
-ルートパーティション (これを <filename class="directory">/root</filename>
-ディレクトリと混同しないでください)
-は 10 GB もあれば、どんなシステムであっても妥当なところでしょう。
+ルートパーティション (これを <filename
+class="directory">/root</filename> ディレクトリと混同しないでください) は 10 GB もあれば、どんなシステムであっても妥当なところでしょう。
 それだけあれば LFS 構築も、また BLFS においてもおそらく十分なはずです。
 実験的に複数パーティションを設けるとしても、これだけのサイズは必要です。
 </para>
@@ -269,8 +261,7 @@ LFS メーリングリストにてパーティションに関する有用情報�
 @y
 <listitem><para>
 /opt &ndash; 
-このディレクトリは BLFS などにおいて、Gnome や KDE
-といった巨大なパッケージをいくつもインストールする際に活用されます。
+このディレクトリは BLFS などにおいて、Gnome や KDE といった巨大なパッケージをいくつもインストールする際に活用されます。
 /usr ディレクトリ以外にインストールする場合です。
 これを別パーティションとするなら、一般的には 5 ～ 10 GB 程度が適当でしょう。
 </para>
@@ -303,8 +294,7 @@ LFS メーリングリストにてパーティションに関する有用情報�
 -->
 <listitem><para>
 /usr/src &ndash; 
-このパーティションは LFS のパッケージソースを収容し
-LFS ビルド工程にて共用するものとして有効に利用することができます。
+このパーティションは LFS のパッケージソースを収容し LFS ビルド工程にて共用するものとして有効に利用することができます。
 さらに BLFS パッケージソースを収容しビルドする場所としても利用可能です。
 30～50GBくらいの容量があれば、十分なものです。
 </para></listitem>
@@ -317,9 +307,7 @@ LFS ビルド工程にて共用するものとして有効に利用すること�
     linkend="ch-bootable-fstab"/>.  </para>
 @y
 <para>
-ブート時に自動的にパーティションをマウントしたい場合は
-<filename>/etc/fstab</filename> ファイルにて設定します。
+ブート時に自動的にパーティションをマウントしたい場合は <filename>/etc/fstab</filename> ファイルにて設定します。
 パーティションの設定方法については <xref linkend="ch-bootable-fstab"/> で説明しています。
 </para>
 @z
-

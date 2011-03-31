@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -27,16 +36,16 @@
     LFS installation.  This section also provides meta-information about
     the book.</para>
 @y
-<para>
-第I部では LFS 構築作業を進めるための重要事項について説明します。
-また本書のさまざまな情報についても説明します。
-</para>
+    <para>
+    第I部では LFS 構築作業を進めるための重要事項について説明します。
+    また本書のさまざまな情報についても説明します。
+    </para>
 @z
 
 @x
     <title>Part II - Preparing for the Build</title>
 @y
-<title>第 II 部 - ビルド作業のための準備</title>
+    <title>第 II 部 - ビルド作業のための準備</title>
 @z
 
 @x
@@ -44,15 +53,15 @@
     a partition, downloading the packages, and compiling temporary
     tools.</para>
 @y
-<para>
-第II部では、パーティションの生成、パッケージのダウンロード、一時的なツールのコンパイルといった、システム構築の準備作業について説明します。
-</para>
+    <para>
+    第II部では、パーティションの生成、パッケージのダウンロード、一時的なツールのコンパイルといった、システム構築の準備作業について説明します。
+    </para>
 @z
 
 @x
     <title>Part III - Building the LFS System</title>
 @y
-<title>第 III 部 - LFSシステムの構築</title>
+    <title>第 III 部 - LFSシステムの構築</title>
 @z
 
 @x
@@ -64,11 +73,10 @@
     easy to use reference listing all of the programs, libraries, and
     important files that have been installed.</para>
 @y
-<para>
-第III部では LFS システムの構築作業を順に説明していきます。
-そこでは全パッケージのコンパイルとインストール、ブートスクリプトの設定、カーネルのインストールを行います。
-出来上がる Linux システムをベースとして、他のソフトウェアを必要に応じて導入し、このシステムを拡張していくことができます。
-本書の終わりには、インストール対象のプログラム、ライブラリ、あるいは重要なファイル類についてのさくいんも示します。
-</para>
+    <para>
+    第III部では LFS システムの構築作業を順に説明していきます。
+    そこでは全パッケージのコンパイルとインストール、ブートスクリプトの設定、カーネルのインストールを行います。
+    出来上がる Linux システムをベースとして、他のソフトウェアを必要に応じて導入し、このシステムを拡張していくことができます。
+    本書の終わりには、インストール対象のプログラム、ライブラリ、あるいは重要なファイル類についてのさくいんも示します。
+    </para>
 @z
-

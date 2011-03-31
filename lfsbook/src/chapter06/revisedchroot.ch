@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -26,10 +35,8 @@
   directory if so desired.</para>
 @y
 <para>
-上を実行するのは <filename class="directory">/tools</filename>
-ディレクトリがもう必要ないからです。
-ですから <filename class="directory">/tools</filename>
-ディレクトリが一切無くてよいなら削除しても構いません。
+上を実行するのは <filename class="directory">/tools</filename> ディレクトリがもう必要ないからです。
+ですから <filename class="directory">/tools</filename> ディレクトリが一切無くてよいなら削除しても構いません。
 </para>
 @z
 
@@ -41,12 +48,9 @@
     instructions for this (see <ulink url="&blfs-root;"/>).</para>
 @y
 <para>
-<filename class="directory">/tools</filename>
-ディレクトリを削除すると、ツールチェーンのテストに用いていた
-Tcl、Expect、DejaGNU も削除することになります。
+<filename class="directory">/tools</filename> ディレクトリを削除すると、ツールチェーンのテストに用いていた Tcl、Expect、DejaGNU も削除することになります。
 後々これらのプログラムを用いるなら、再度コンパイルとインストールを行う必要があります。
-BLFS ブックにてその手順を説明しているので
-<ulink url="&blfs-root;"/> を参照してください。
+BLFS ブックにてその手順を説明しているので <ulink url="&blfs-root;"/> を参照してください。
 </para>
 @z
 
@@ -58,10 +62,7 @@ BLFS ブックにてその手順を説明しているので
   linkend="ch-system-kernfsmount"/>.</para>
 @y
 <para>
-仮想カーネルファイルシステムを、手動により、あるいはリブートによりアンマウントした場合は
-chroot 環境に入る前にそれらがマウントされていることを確認してください。
-その作業手順は <xref linkend="ch-system-bindmount"/> と
-<xref linkend="ch-system-kernfsmount"/> で説明しています。
+仮想カーネルファイルシステムを、手動により、あるいはリブートによりアンマウントした場合は chroot 環境に入る前にそれらがマウントされていることを確認してください。
+その作業手順は <xref linkend="ch-system-bindmount"/>と <xref linkend="ch-system-kernfsmount"/>で説明しています。
 </para>
 @z
-

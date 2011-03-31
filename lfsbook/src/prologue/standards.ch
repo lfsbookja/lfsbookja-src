@@ -23,10 +23,10 @@
      <para>The structure of LFS follows Linux standards as closely as 
      possible.  The primary standards are:</para>
 @y
-<para>
-LFS の構成は出来る限り Linux の各種標準に従うようにしています。
-主な標準は以下のものです。
-</para>
+     <para>
+     LFS の構成は出来る限り Linux の各種標準に従うようにしています。
+     主な標準は以下のものです。
+     </para>
 @z
 
 @x
@@ -61,12 +61,12 @@ LFS の構成は出来る限り Linux の各種標準に従うようにしてい
         there are also architecture specific requirements.  LFS attempts to
         conform to the architectures discussed in the previous section.</para>
 @y
-<para>
-LSB はさらに以下の５つの標準から構成されます。
-コア (Core)、C++、デスクトップ (Desktop)、ランタイム言語 (Runtime Languages)、印刷 (Printing) です。
-また一般的な要求事項に加えて、アーキテクチャーに固有の要求事項もあります。
-LFS では前節にて示したように、各アーキテクチャーに適合することを目指します。
-</para>
+        <para>
+        LSB はさらに以下の５つの標準から構成されます。
+        コア (Core)、C++、デスクトップ (Desktop)、ランタイム言語 (Runtime Languages)、印刷 (Printing) です。
+        また一般的な要求事項に加えて、アーキテクチャーに固有の要求事項もあります。
+        LFS では前節にて示したように、各アーキテクチャーに適合することを目指します。
+        </para>
 @z
 
 @x
@@ -77,13 +77,12 @@ LFS では前節にて示したように、各アーキテクチャーに適合�
         packages are desired and many choose not to install some packages that
         are specified by the LSB.</para></note>
 @y
-<note><para>
-LSB の要求に対しては異論のある方も多いでしょう。
-LSB を定義するのは、私有ソフトウェア (proprietary software)
-をインストールした場合に、要求事項を満たしたシステム上にて問題なく動作することを目指すためです。
-LFS はソースコードから構築するシステムですから、どのパッケージを利用するかをユーザー自身が完全に制御できます。
-また LSB にて要求されているパッケージであっても、インストールしない選択をとることもできます。
-</para></note>
+        <note><para>
+        LSB の要求に対しては異論のある方も多いでしょう。
+        LSB を定義するのは、私有ソフトウェア (proprietary software) をインストールした場合に、要求事項を満たしたシステム上にて問題なく動作することを目指すためです。
+        LFS はソースコードから構築するシステムですから、どのパッケージを利用するかをユーザー自身が完全に制御できます。
+        また LSB にて要求されているパッケージであっても、インストールしない選択をとることもできます。
+        </para></note>
 @z
 
 @x
@@ -92,12 +91,11 @@ LFS はソースコードから構築するシステムですから、どのパ�
     that are beyond the scope of LFS.  Most of these additional packages have
     installation instructions in BLFS. </para> 
 @y
-<para>
-LFS の構築にあたっては LSB に適合していることを確認するテスト
-(certifications tests) をクリアするように構築することも可能です。
-ただし LFS の範囲外にあるパッケージ類を追加しなければ実現できません。
-そのような追加パッケージ類については BLFS にて導入手順を説明しています。
-</para> 
+    <para>
+    LFS の構築にあたっては LSB に適合していることを確認するテスト (certifications tests) をクリアするように構築することも可能です。
+    ただし LFS の範囲外にあるパッケージ類を追加しなければ実現できません。
+    そのような追加パッケージ類については BLFS にて導入手順を説明しています。
+    </para> 
 @z
 
 @x
@@ -272,8 +270,7 @@ LFS の構築にあたっては LSB に適合していることを確認する�
       <bridgehead renderas="sect3">Packages not supplied by LFS or BLFS 
       needed to satisfy the LSB Requirements</bridgehead>
 @y
-      <bridgehead renderas="sect3">LFS, BLFS で提供しないパッケージで
-      LSB 要求に従うもの</bridgehead>
+      <bridgehead renderas="sect3">LFS, BLFS で提供しないパッケージで LSB 要求に従うもの</bridgehead>
 @z
 
 @x
@@ -349,4 +346,3 @@ LFS の構築にあたっては LSB に適合していることを確認する�
           <para>Xdg-utils</para>
         </listitem>
 @z
-

@@ -54,6 +54,37 @@
 -->
 
     <listitem>
+      <para>2011-03-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/chapter05/gcc-pass1.ch,
+          src/chapter06/iproute2.ch,
+          src/chapter06/udev.ch:
+          SVN-20110330, r9494 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          随所にて PDF 版向け整形。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2011-03-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          序文 (prologue) にて、主に PDF 版向け整形。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-03-15</para>
       <itemizedlist>
         <listitem>

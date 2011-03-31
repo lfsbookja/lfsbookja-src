@@ -29,8 +29,7 @@
 @y
 <para>
 プログラムやライブラリの多くは、デフォルトではデバッグシンボルを含めてコンパイルされています。
-(<command>gcc</command> の <parameter>-g</parameter> オプションが用いられています。)
-デバッグ情報を含めてコンパイルされたプログラムやライブラリは、デバッグ時にメモリアドレスが参照できるだけでなく、処理ルーチンや変数の名称も知ることができます。
+(<command>gcc</command> の <parameter>-g</parameter> オプションが用いられています。) デバッグ情報を含めてコンパイルされたプログラムやライブラリは、デバッグ時にメモリアドレスが参照できるだけでなく、処理ルーチンや変数の名称も知ることができます。
 </para>
 @z
 
@@ -50,8 +49,7 @@
       1200 KB</para>
 @y
 <para>
-デバッグシンボルを含んだ
-<command>bash</command>
+デバッグシンボルを含んだ <command>bash</command>
 の実行ファイル： 1200 KB
 </para>
 @z
@@ -61,8 +59,7 @@
       480 KB</para>
 @y
 <para>
-デバッグシンボルを含まない
-<command>bash</command> の実行ファイル： 480 KB
+デバッグシンボルを含まない <command>bash</command> の実行ファイル： 480 KB
 </para>
 @z
 
@@ -72,9 +69,8 @@
       symbols: 87 MB</para>
 @y
 <para>
-デバッグシンボルを含んだ Glibc と GCC の関連ファイル
-(<filename class="directory">/lib</filename> と
-<filename class="directory">/usr/lib</filename>): 87 MB
+デバッグシンボルを含んだ Glibc と GCC の関連ファイル (<filename
+class="directory">/lib</filename> と <filename class="directory">/usr/lib</filename>): 87 MB
 </para>
 @z
 
@@ -92,7 +88,7 @@
   difference will usually be a factor between two and five.</para>
 @y
 <para>
-利用するコンパイラや C ライブラリの違いによって、生成されるファイルのサイズは異なります。
+利用するコンパイラーや C ライブラリの違いによって、生成されるファイルのサイズは異なります。
 デバッグシンボルを含む、あるいは含まないサイズを比較した場合、その差は 2倍から 5倍の違いがあります。
 </para>
 @z

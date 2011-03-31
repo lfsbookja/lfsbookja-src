@@ -28,32 +28,31 @@
     <quote>&lt;package-name&gt;-dev</quote>. Be sure to install those if
     your distribution provides them.</para>
 @y
-<para>
-ホストシステムには以下に示すソフトウェアが必要であり、それぞれに示されているバージョン以降である必要があります。
-最近の Linux ディストリビューションを利用するなら、あまり問題にはならないはずです。
-ディストリビューションによっては、ソフトウェアのヘッダファイル群を別パッケージとして提供しているものが多々あります。
-例えば <quote>&lt;パッケージ名&gt;-devel</quote>であったり
-<quote>&lt;パッケージ名&gt;-dev</quote>といった具合です。
-お使いのディストリビューションがそのような提供の仕方をしている場合は、それらもインストールしてください。
-</para>
+    <para>
+    ホストシステムには以下に示すソフトウェアが必要であり、それぞれに示されているバージョン以降である必要があります。
+    最近の Linux ディストリビューションを利用するなら、あまり問題にはならないはずです。
+    ディストリビューションによっては、ソフトウェアのヘッダーファイル群を別パッケージとして提供しているものが多々あります。
+    例えば <quote>&lt;パッケージ名&gt;-devel</quote>であったり <quote>&lt;パッケージ名&gt;-dev</quote>といった具合です。
+    お使いのディストリビューションがそのような提供の仕方をしている場合は、それらもインストールしてください。
+    </para>
 @z
 
 @x
    <para>Earlier versions of the listed software packages may work, but has not
    been tested.</para>
 @y
-<para>
-各パッケージにて、示しているバージョンより古いものでも動作するかもしれませんが、テストは行っていません。
-</para>
+   <para>
+   各パッケージにて、示しているバージョンより古いものでも動作するかもしれませんが、テストは行っていません。
+   </para>
 @z
 
 @x
       <para><emphasis role="strong">Bash-3.2</emphasis> (/bin/sh
       should be a symbolic or hard link to bash)</para>
 @y
-<para>
-<emphasis role="strong">Bash-3.2</emphasis> (/bin/sh が bash に対するシンボリックリンクまたはハードリンクである必要があります。)
-</para>
+      <para>
+      <emphasis role="strong">Bash-3.2</emphasis> (/bin/sh が bash に対するシンボリックリンクまたはハードリンクである必要があります。)
+      </para>
 @z
 
 @x
@@ -61,27 +60,27 @@
       greater than &binutils-version; are not recommended as they have
       not been tested)</para>
 @y
-<para>
-<emphasis role="strong">Binutils-2.17</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
-</para>
+      <para>
+      <emphasis role="strong">Binutils-2.17</emphasis> (&binutils-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      </para>
 @z
 
 @x
       <para><emphasis role="strong">Bison-2.3</emphasis> (/usr/bin/yacc
       should be a link to bison or small script that executes bison)</para>
 @y
-<para>
-<emphasis role="strong">Bison-2.3</emphasis> (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
-</para>
+      <para>
+      <emphasis role="strong">Bison-2.3</emphasis> (/usr/bin/yacc が bison へのリンクか、bison を実行するためのスクリプトである必要があります。)
+      </para>
 @z
 
 @x
       <para><emphasis role="strong">Gawk-3.1.5</emphasis> (/usr/bin/awk
       should be a link to gawk)</para>
 @y
-<para>
-<emphasis role="strong">Gawk-3.1.5</emphasis> (/usr/bin/awk が gawk へのリンクである必要があります。)
-</para>
+      <para>
+      <emphasis role="strong">Gawk-3.1.5</emphasis> (/usr/bin/awk が gawk へのリンクである必要があります。)
+      </para>
 @z
 
 @x
@@ -89,9 +88,9 @@
       greater than &gcc-version; are not recommended as they have not
       been tested)</para>
 @y
-<para>
-<emphasis role="strong">Gcc-4.1.2</emphasis> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
-</para>
+      <para>
+      <emphasis role="strong">Gcc-4.1.2</emphasis> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      </para>
 @z
 
 @x
@@ -99,18 +98,18 @@
       greater than &glibc-version; are not recommended as they have
       not been tested)</para>
 @y
-<para>
-<emphasis role="strong">Glibc-2.5.1</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
-</para>
+      <para>
+      <emphasis role="strong">Glibc-2.5.1</emphasis> (&glibc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      </para>
 @z
 
 @x
       <para><emphasis role="strong">Linux Kernel-2.6.22.5</emphasis>
       (having been compiled with GCC-4.1.2 or greater)</para>
 @y
-<para>
-<emphasis role="strong">Linux Kernel-2.6.22.5</emphasis> (GCC-4.1.2 以上でコンパイルされたもの)
-</para>
+      <para>
+      <emphasis role="strong">Linux Kernel-2.6.22.5</emphasis> (GCC-4.1.2 以上でコンパイルされたもの)
+      </para>
 @z
 
 @x
@@ -118,9 +117,9 @@
       that version when building <application>glibc</application> in Chapter 6
       at the recommendation of the developers.  </para>
 @y
-<para>
-カーネルのバージョンを指定しているのは、第6章にて <application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
-</para>
+      <para>
+      カーネルのバージョンを指定しているのは、第6章にて <application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
+      </para>
 @z
 
 @x
@@ -134,17 +133,14 @@
       compiling the kernel and configuring the boot loader (assuming the host
       uses GRUB) are located in <xref linkend="chapter-bootable"/>.</para>
 @y
-<para>
-ホストシステムのカーネルバージョンが 2.6.22.5 より古い場合、あるいはカーネルをビルドした際の GCC
-のバージョンが 4.1.2 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
-これを実施するには２つの方法があります。
-お使いの Linux システムのベンダーが 2.6.22.5 以上のバージョンのカーネルを提供しているかを調べることです。
-提供していれば、それをインストールします。
-もしそれがない場合や、あったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
-カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダの設定方法については
-<xref linkend="chapter-bootable"/>
-を参照してください。
-</para>
+      <para>
+      ホストシステムのカーネルバージョンが 2.6.22.5 より古い場合、あるいはカーネルをビルドした際の GCC のバージョンが 4.1.2 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
+      これを実施するには２つの方法があります。
+      お使いの Linux システムのベンダーが 2.6.22.5 以上のバージョンのカーネルを提供しているかを調べることです。
+      提供していれば、それをインストールします。
+      もしそれがない場合や、あったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
+      カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダーの設定方法については <xref linkend="chapter-bootable"/> を参照してください。
+      </para>
 @z
 
 % @x
@@ -175,22 +171,21 @@
   deviation from the instructions or additional patches to some
   packages.</para>
 @y
-<para>
-上で示しているシンボリックリンクは、本書の説明を通じて LFS を構築するために必要となるものです。
-シンボリックリンクが別のソフトウェア (例えば dash や mawk)
-を指し示している場合でもうまく動作するかもしれません。
-しかしそれらに対して LFS 開発チームはテストを行っていませんしサポート対象としていません。
-そのような状況に対しては作業手順の変更が必要となり、特定のパッケージに対しては追加のパッチを要するかもしれません。
-</para>
+  <para>
+  上で示しているシンボリックリンクは、本書の説明を通じて LFS を構築するために必要となるものです。
+  シンボリックリンクが別のソフトウェア (例えば dash や mawk) を指し示している場合でもうまく動作するかもしれません。
+  しかしそれらに対して LFS 開発チームはテストを行っていませんしサポート対象としていません。
+  そのような状況に対しては作業手順の変更が必要となり、特定のパッケージに対しては追加のパッチを要するかもしれません。
+  </para>
 @z
 
 @x
   <para id="version-check">To see whether your host system has all the appropriate versions, and
   the ability to compile programs, run the following:</para>
 @y
-<para id="version-check">
-ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のスクリプトを実行して確認することができます。
-</para>
+  <para id="version-check">
+  ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のスクリプトを実行して確認することができます。
+  </para>
 @z
 
 %@x
@@ -198,4 +193,3 @@
 %@y
 %<anchor xreflabel="バージョンチェックスクリプト" id="version-check"/>
 %@z
-

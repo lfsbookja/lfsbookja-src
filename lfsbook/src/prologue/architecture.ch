@@ -16,7 +16,7 @@
 @x
   <title>LFS Target Architectures</title>
 @y
-  <title>LFS が対象とする CPU アーキテクチャ</title>
+  <title>LFS が対象とする CPU アーキテクチャー</title>
 @z
 
 @x
@@ -26,9 +26,9 @@ target. The 32-bit architecture is the most widely supported Linux system and
 is most compatible with both open source and proprietary software.</para>
 @y
 <para>
-LFS が対象としている CPU アーキテクチャは 32ビットインテル CPU が主となります。
-LFS システムの構築に初めて取りかかる方は、おそらくこのアーキテクチャを用いることでしょう。
-32ビットアーキテクチャは Linux システムが最も広くサポートしているもので、このアーキテクチャなら、オープンソースも製品ソフトウェアも互換性があります。
+LFS が対象としている CPU アーキテクチャーは 32ビットインテル CPU が主となります。
+LFS システムの構築に初めて取りかかる方は、おそらくこのアーキテクチャーを用いることでしょう。
+32ビットアーキテクチャーは Linux システムが最も広くサポートしているもので、このアーキテクチャーなら、オープンソースも製品ソフトウェアも互換性があります。
 </para>
 @z
 
@@ -84,9 +84,9 @@ were measured:</para>
 32-bit       198.5 minutes  648 MB 
 64-bit       190.6 minutes  709 MB</computeroutput></screen>
 @y
-<screen><computeroutput>アーキテクチャ ビルド時間     ビルドサイズ 
-32ビット       198.5 分       648 MB 
-64ビット       190.6 分       709 MB</computeroutput></screen>
+<screen><computeroutput>アーキテクチャー ビルド時間     ビルドサイズ 
+32ビット         198.5 分       648 MB 
+64ビット         190.6 分       709 MB</computeroutput></screen>
 @z
 
 @x
@@ -141,7 +141,7 @@ some specialized procedures or patches.</para>
 一般的に言えば、そのようなパッケージには 32ビット固有のアセンブリ言語の命令が含まれるからであり、
 だから 64ビットシステムでのビルドに失敗するということです。
 例としては <ulink url="http://www.linuxfromscratch.org/blfs/view/svn/">
-Beyond Linux From Scratch (BLFS)</ulink> にある Xorg ドライバの一部分などです。
+Beyond Linux From Scratch (BLFS)</ulink> にある Xorg ドライバーの一部分などです。
 このような問題はたいていは解消していくことができますが、中には特別なビルド手順やパッチを要するものとなるかもしれません。
 </para>
 @z

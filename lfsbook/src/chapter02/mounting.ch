@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,8 +30,8 @@
 <para>
 ファイルシステムが生成できたら、パーティションをアクセスできるようにします。
 これを行うためにはマウントポイントを定める必要があります。
-本書ではファイルシステムを <filename class="directory">/mnt/lfs</filename>
-にマウントすることにします。このディレクトリは各自で取り決めて変えることもできます。
+本書ではファイルシステムを <filename class="directory">/mnt/lfs</filename> にマウントすることにします。
+このディレクトリは各自で取り決めて変えることもできます。
 </para>
 @z
 
@@ -31,8 +40,7 @@
   environment variable by running:</para>
 @y
 <para>
-マウントポイントを定めたら、そのディレクトリを指し示すような環境変数
-<envar>LFS</envar> を以下のようにして設定します。
+マウントポイントを定めたら、そのディレクトリを指し示すような環境変数 <envar>LFS</envar> を以下のようにして設定します。
 </para>
 @z
 
@@ -61,9 +69,8 @@
 @y
 <para>
 LFS に対して複数のパーティションを用いる場合
-(例えば <filename class="directory">/</filename> と
-<filename class="directory">/usr</filename> が別パーティションである場合)
-は、以下を実行してそれぞれをマウントします。
+(例えば <filename class="directory">/</filename> と <filename
+class="directory">/usr</filename> が別パーティションである場合) は、以下を実行してそれぞれをマウントします。
 </para>
 @z
 
@@ -73,8 +80,7 @@ LFS に対して複数のパーティションを用いる場合
   names.</para>
 @y
 <para>
-<replaceable>&lt;xxx&gt;</replaceable> や <replaceable>&lt;yyy&gt;</replaceable>
-の部分は、それぞれ適切なパーティション名に置き換えてください。
+<replaceable>&lt;xxx&gt;</replaceable> や <replaceable>&lt;yyy&gt;</replaceable> の部分は、それぞれ適切なパーティション名に置き換えてください。
 </para>
 @z
 
@@ -89,11 +95,9 @@ LFS に対して複数のパーティションを用いる場合
 @y
 <para>
 この新しいパーティションは特別な制限オプション
-(<option>nosuid</option>、<option>nodev</option>、<option>noatime</option> など)
-は設定せずにマウントします。
+(<option>nosuid</option>、<option>nodev</option>、<option>noatime</option> など) は設定せずにマウントします。
 <command>mount</command> コマンドの実行時に引数を与えずに実行すれば、LFS パーティションがどのようなオプション設定によりマウントされているかが分かります。
-もし <option>nosuid</option>、<option>nodev</option>、<option>noatime</option>
-といったオプションが設定されていたら、マウントし直してください。
+もし <option>nosuid</option>、<option>nodev</option>、<option>noatime</option> といったオプションが設定されていたら、マウントし直してください。
 </para>
 @z
 
@@ -103,9 +107,7 @@ LFS に対して複数のパーティションを用いる場合
   using the <command>swapon</command> command:</para>
 @y
 <para>
-<systemitem class="filesystem">swap</systemitem>
-パーティションを用いる場合は、<command>swapon</command>
-コマンドを使って利用可能にしてください。
+<systemitem class="filesystem">swap</systemitem> パーティションを用いる場合は、<command>swapon</command> コマンドを使って利用可能にしてください。
 </para>
 @z
 
@@ -114,9 +116,8 @@ LFS に対して複数のパーティションを用いる場合
   <systemitem class="filesystem">swap</systemitem> partition.</para>
 @y
 <para>
-<replaceable>&lt;zzz&gt;</replaceable>
-の部分は <systemitem class="filesystem">swap</systemitem>
-パーティション名に置き換えてください。
+<replaceable>&lt;zzz&gt;</replaceable> の部分は <systemitem
+class="filesystem">swap</systemitem> パーティション名に置き換えてください。
 </para>
 @z
 
@@ -128,4 +129,3 @@ LFS に対して複数のパーティションを用いる場合
 こうして動作環境が整いました。次はパッケージのダウンロードです。
 </para>
 @z
-

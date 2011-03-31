@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2011-03-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-2.6.38. Fixes
+          <ulink url="&lfs-ticket-root;2849">#2849</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GCC-4.6.0. Fixes
+          <ulink url="&lfs-ticket-root;2848">#2848</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.38.2. Fixes
+          <ulink url="&lfs-ticket-root;2847">#2847</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-03-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - IPRoute2-2.6.38 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2849">#2849</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC-4.6.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2848">#2848</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-2.6.38.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2847">#2847</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-03-14</para>
       <itemizedlist>
         <listitem>
