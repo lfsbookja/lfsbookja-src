@@ -53,6 +53,16 @@
 @z
 
 @x
+<para>Apply a patch that will allow the building of the libiberty and zlib
+target libraries to be disabled as these do not build correctly in a
+cross-compiled environment:</para>
+@y
+<para>
+クロスコンパイル時に libiberty や zlib は正しくビルド出来ないため、これらをビルドしないようにするパッチを適用します。
+</para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC outside of the
     source directory in a dedicated build directory:</para>
 @y
@@ -94,7 +104,7 @@
           <para>
           これらのオプションは順に、十進浮動小数点制御、スレッド処理、libmudflap、libssp、libgomp,
           libquadmath, libiberty, zlib のサポートをいずれも無効にすることを指示します。
-          これらの機能を含めていると、クロスコンパイラをビルドする際にはコンパイルに失敗します。
+          これらの機能を含めていると、クロスコンパイラーをビルドする際にはコンパイルに失敗します。
           またクロスコンパイルによって一時的な libc ライブラリを構築する際には不要なものです。
           </para>
 @z
@@ -114,7 +124,7 @@
           This is the only language needed now.</para>
 @y
           <para>
-          このオプションは C コンパイラのみビルドすることを指示します。
+          このオプションは C コンパイラーのみビルドすることを指示します。
           この時点で必要なのはこの言語だけだからです。
           </para>
 @z

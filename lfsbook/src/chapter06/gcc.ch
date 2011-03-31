@@ -18,7 +18,7 @@
     the C and C++ compilers.</para>
 @y
 <para>
-GCC パッケージは C コンパイラや C++ コンパイラなどの GNU コンパイラコレクションを提供します。
+GCC パッケージは C コンパイラーや C++ コンパイラーなどの GNU コンパイラーコレクションを提供します。
 </para>
 @z
 
@@ -52,7 +52,7 @@ GCC パッケージは C コンパイラや C++ コンパイラなどの GNU コ
 <para>
 <xref linkend="ch-tools-gcc-pass2"/>
 にて行ったように <command>sed</command>
-を使って以下のようにコンパイラフラグ <option>-fomit-frame-pointer</option>
+を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option>
 を強制的に指定し、一貫したコンパイルを実現します。
 </para>
 @z
@@ -64,30 +64,19 @@ GCC パッケージは C コンパイラや C++ コンパイラなどの GNU コ
     issue the following command to prevent the <command>fixincludes</command>
     script from running:</para>
 @y
-<para>
-<command>fixincludes</command>
-スクリプトは、たまにエラーを引き起こし、それまでにインストールされているシステムヘッダーファイルを修正してしまうことがあります。
-ここまでにインストールしてきたヘッダファイルは修正する必要がないので、以下のコマンドを実行して
-<command>fixincludes</command> スクリプトを実行しないようにします。
-</para>
+    <para>
+    <command>fixincludes</command> スクリプトは、たまにエラーを引き起こし、それまでにインストールされているシステムヘッダーファイルを修正してしまうことがあります。
+    ここまでにインストールしてきたヘッダファイルは修正する必要がないので、以下のコマンドを実行して <command>fixincludes</command> スクリプトを実行しないようにします。
+    </para>
 @z
-
-% @x
-%     <para>Apply a <command>sed</command> substitution to prevent a testsuite
-% error:</para>
-% @y
-% <para>
-% <command>sed</command> による置換を実行して、テストスイートのエラーを回避します。
-% </para>
-% @z
 
 @x
     <para>The GCC documentation recommends building GCC outside of the source
     directory in a dedicated build directory:</para>
 @y
-<para>
-GCC のドキュメントによると GCC のビルドにあたっては、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。 
-</para>
+    <para>
+    GCC のドキュメントによると GCC のビルドにあたっては、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。 
+    </para>
 @z
 
 @x
@@ -101,10 +90,10 @@ GCC のドキュメントによると GCC のビルドにあたっては、ソ�
     are not available. See the BLFS Book for instructions on how to
     build all the GCC supported languages.</para>
 @y
-<para>
-他のプログラミング言語は、また別の依存パッケージなどを要しますが、現時点では準備できていません。
-GCC がサポートする他のプログラム言語の構築方法については BLFS ブックの説明を参照してください。
-</para>
+    <para>
+    他のプログラミング言語は、また別の依存パッケージなどを要しますが、現時点では準備できていません。
+    GCC がサポートする他のプログラム言語の構築方法については BLFS ブックの説明を参照してください。
+    </para>
 @z
 
 @x
@@ -117,9 +106,9 @@ GCC がサポートする他のプログラム言語の構築方法について�
           <para>This switch tells GCC to link to the system installed copy of
           the Zlib library, rather than its own internal copy.</para>
 @y
-<para>
-このオプションはシステムに既にインストールされている Zlib ライブラリをリンクすることを指示するものであり、内部にて作成されるライブラリを用いないようにします。
-</para>
+          <para>
+          このオプションはシステムに既にインストールされている Zlib ライブラリをリンクすることを指示するものであり、内部にて作成されるライブラリを用いないようにします。
+          </para>
 @z
 
 @x
@@ -132,59 +121,57 @@ GCC がサポートする他のプログラム言語の構築方法について�
       <para>In this section, the test suite for GCC is considered
       critical. Do not skip it under any circumstance.</para>
 @y
-<para>
-本節における GCC のテストスイートは極めて重要なものです。
-したがってどのような場合であっても必ず実行してください。
-</para>
+      <para>
+      本節における GCC のテストスイートは極めて重要なものです。
+      したがってどのような場合であっても必ず実行してください。
+      </para>
 @z
 
 @x
    <para>One set of tests in the GCC test suite is known to exhaust the stack,
    so increase the stack size prior to running the tests:</para>
 @y
-<para>
-GCC テストスイートの中で、スタックを使い果たすものがあります。
-そこでテスト実施にあたり、スタックサイズを増やします。
-</para>
+   <para>
+   GCC テストスイートの中で、スタックを使い果たすものがあります。
+   そこでテスト実施にあたり、スタックサイズを増やします。
+   </para>
 @z
 
 @x
     <para>Test the results, but do not stop at errors:</para>
 @y
-<para>
-コンパイル結果をテストします。
-エラーが発生しても停止しないようにします。
-</para>
+   <para>
+   コンパイル結果をテストします。
+   エラーが発生しても停止しないようにします。
+   </para>
 @z
 
 @x
     <para>To receive a summary of the test suite results, run:</para>
 @y
-<para>
-テスト結果を確認するために以下を実行します。
-</para>
+   <para>
+   テスト結果を確認するために以下を実行します。
+   </para>
 @z
 
 @x
     <para>For only the summaries, pipe the output through
     <userinput>grep -A7 Summ</userinput>.</para>
 @y
-<para>
-テスト結果の概略のみ確認したい場合は、 出力結果をパイプ出力して
-<userinput>grep -A7 Summ</userinput>
-を実行してください。
-</para>
+   <para>
+   テスト結果の概略のみ確認したい場合は、出力結果をパイプ出力して <userinput>grep -A7 Summ</userinput> を実行してください。
+   </para>
 @z
 
 @x
     <para>Results can be compared with those located at <ulink
     url="&test-results;"/> and <ulink url="http://gcc.gnu.org/ml/gcc-testresults/"/>.</para>
 @y
-<para>
-テスト結果については
-<ulink url="&test-results;"/> と <ulink url="http://gcc.gnu.org/ml/gcc-testresults/"/>
-にある情報と比較することができます。
-</para>
+    <para>
+    テスト結果については <ulink
+    url="&test-results;"/> と <ulink
+    url="http://gcc.gnu.org/ml/gcc-testresults/"/> にある情報と比較することができます。
+    </para>
 @z
 
 @x
@@ -196,14 +183,12 @@ GCC テストスイートの中で、スタックを使い果たすものがあ�
     Unless the test results are vastly different from those at the above URL,
     it is safe to continue.</para>
 @y
-<para>
-テストに失敗することがありますが、これを回避することはできません。
-GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
-特に <filename class="libraryfile">libmudflap</filename>
-のテストは大いに問題があり GCC のバグとして知られています。
-(<ulink url="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=20003"/>)
-この URL に示されている結果と大きく異なっていなかったら、 問題はありませんので先に進んでください。
-</para>
+    <para>
+    テストに失敗することがありますが、これを回避することはできません。
+    GCC の開発者はこの問題を認識していますが、まだ解決していない状況です。
+    特に <filename class="libraryfile">libmudflap</filename> のテストは大いに問題があり GCC のバグとして知られています。
+    (<ulink url="http://gcc.gnu.org/bugzilla/show_bug.cgi?id=20003"/>) この URL に示されている結果と大きく異なっていなかったら、問題はありませんので先に進んでください。
+    </para>
 @z
 
 @x
@@ -217,24 +202,21 @@ GCC の開発者はこの問題を認識していますが、まだ解決して�
     <filename class="directory">/lib</filename> directory.
     To support those packages, create this symlink:</para>
 @y
-<para>
-パッケージの中には C プリプロセッサが
-<filename class="directory">/lib</filename>
-ディレクトリにあることを前提にしているものがあります。
-そのようなものに対応するため、以下のシンボリックリンクを作成します。
-</para>
+    <para>
+    パッケージの中には C プリプロセッサーが <filename
+    class="directory">/lib</filename> ディレクトリにあることを前提にしているものがあります。
+    そのようなものに対応するため、以下のシンボリックリンクを作成します。
+    </para>
 @z
 
 @x
     <para>Many packages use the name <command>cc</command> to call the C
     compiler. To satisfy those packages, create a symlink:</para>
 @y
-<para>
-パッケージの多くは C コンパイラとして
-<command>cc</command>
-を呼び出しています。
-これに対応するため、以下のシンボリックリンクを作成します。
-</para>
+    <para>
+    パッケージの多くは C コンパイラーとして <command>cc</command> を呼び出しています。
+    これに対応するため、以下のシンボリックリンクを作成します。
+    </para>
 @z
 
 @x
@@ -242,11 +224,11 @@ GCC の開発者はこの問題を認識していますが、まだ解決して�
     that compiling and linking will work as expected. We do this by performing
     the same sanity checks as we did earlier in the chapter:</para>
 @y
-<para>
-最終的なツールチェーンが出来上がりました。
-ここで再びコンパイルとリンクが正しく動作することを確認することが必要です。
-そこで本節の初めの方で実施した健全性テストをここでも実施します。
-</para>
+    <para>
+    最終的なツールチェーンが出来上がりました。
+    ここで再びコンパイルとリンクが正しく動作することを確認することが必要です。
+    そこで本節の初めの方で実施した健全性テストをここでも実施します。
+    </para>
 @z
 
 @x
@@ -259,29 +241,23 @@ GCC の開発者はこの問題を認識していますが、まだ解決して�
   <filename>crt*.o</filename> files under the
   <filename class="directory">/usr/lib</filename> directory.</para>
 @y
-<para>
-作業しているマシンアーキテクチャによっては、上の結果が微妙に異なるかもしれません。
-その違いは、たいていは <filename class="directory">/usr/lib/gcc</filename>
-の次のディレクトリ名にあります。
-作業マシンが 64 ビット機である場合、ディレクトリ名の後ろの方に
-<filename class="directory">lib64</filename>
-という名が出てくることになります。
-ここで確認すべき重要なポイントは <command>gcc</command>
-が <filename class="directory">/usr/lib</filename>
-ディレクトリ配下に三つのファイル <filename>crt*.o</filename>
-を見つけ出しているかどうかです。
-</para>
+  <para>
+  作業しているマシンアーキテクチャによっては、上の結果が微妙に異なるかもしれません。
+  その違いは、たいていは <filename class="directory">/usr/lib/gcc</filename> の次のディレクトリ名にあります。
+  作業マシンが 64 ビット機である場合、ディレクトリ名の後ろの方に <filename
+  class="directory">lib64</filename> という名が出てくることになります。
+  ここで確認すべき重要なポイントは <command>gcc</command> が <filename
+  class="directory">/usr/lib</filename> ディレクトリ配下に三つのファイル <filename>crt*.o</filename> を見つけ出しているかどうかです。
+  </para>
 @z
 
 @x
    <para>Again, note that the directory named after your target triplet may be
    different than the above, depending on your architecture.</para>
 @y
-<para>
-もう一度触れておきますが、プラットフォームの
-<quote>三つの組 (target triplet)</quote>
-の次にくるディレクトリ名は CPU アーキテクチャにより異なる点に注意してください。
-</para>
+   <para>
+   もう一度触れておきますが、プラットフォームの<quote>三つの組 (target triplet)</quote>の次にくるディレクトリ名は CPU アーキテクチャーにより異なる点に注意してください。
+   </para>
 @z
 
 @x
@@ -290,22 +266,21 @@ GCC の開発者はこの問題を認識していますが、まだ解決して�
     <filename class="directory">include-fixed</filename> directory, and that
     directory is required to be in place.</para></note>
 @y
-<note><para>
-GCC のバージョン 4.3.0 では <filename>limits.h</filename>
-ファイルを無条件に <filename class="directory">include-fixed</filename>
-ディレクトリにインストールします。
-したがってそのディレクトリは存在していなければなりません。
-</para></note>
+    <note><para>
+    GCC のバージョン 4.3.0 では <filename>limits.h</filename> ファイルを無条件に <filename
+    class="directory">include-fixed</filename> ディレクトリにインストールします。
+    したがってそのディレクトリは存在していなければなりません。
+    </para></note>
 @z
 
 @x
    <para>A 64-bit system may see a few more directories. For example, here
    is the output from an x86_64 machine:</para>
 @y
-<para>
-64 ビットシステムではさらにいくつかのディレクトリが出力されます。
-例えば x86_64 マシンであれば、その出力は以下のようになります。
-</para>
+   <para>
+   64 ビットシステムではさらにいくつかのディレクトリが出力されます。
+   例えば x86_64 マシンであれば、その出力は以下のようになります。
+   </para>
 @z
 
 @x
@@ -347,100 +322,99 @@ GCC のバージョン 4.3.0 では <filename>limits.h</filename>
 @x c++
           <para>The C++ compiler</para>
 @y
-          <para>C++ コンパイラ</para>
+          <para>C++ コンパイラー</para>
 @z
 
 @x cc
           <para>The C compiler</para>
 @y
-          <para>C コンパイラ</para>
+          <para>C コンパイラー</para>
 @z
 
 @x cpp
           <para>The C preprocessor; it is used by the compiler to expand the
           #include, #define, and similar statements in the source files</para>
 @y
-<para>
-C プリプロセッサ。
-コンパイラがこれを利用して、ソース内に記述された
-#include、#define や同じようなステートメントを展開します。
-</para>
+          <para>
+          C プリプロセッサー。
+          コンパイラーがこれを利用して、ソース内に記述された #include、#define や同じようなステートメントを展開します。
+          </para>
 @z
 
 @x g++
           <para>The C++ compiler</para>
 @y
-          <para>C++ コンパイラ</para>
+          <para>C++ コンパイラー</para>
 @z
 
 @x gcc
           <para>The C compiler</para>
 @y
-          <para>C コンパイラ</para>
+          <para>C コンパイラー</para>
 @z
 
 @x gccbug
           <para>A shell script used to help create useful bug reports</para>
 @y
-<para>
-有用なバグ報告の生成を手助けするスクリプト。
-</para>
+          <para>
+          有用なバグ報告の生成を手助けするスクリプト。
+          </para>
 @z
 
 @x gcov
           <para>A coverage testing tool; it is used to analyze programs to
           determine where optimizations will have the most effect</para>
 @y
-<para>
-カバレッジテストツール。
-プログラムを解析して、最適化が最も効果的となるのはどこかを特定します。
-</para>
+          <para>
+          カバレッジテストツール。
+          プログラムを解析して、最適化が最も効果的となるのはどこかを特定します。
+          </para>
 @z
 
 @x libgcc
           <para>Contains run-time support for <command>gcc</command></para>
 @y
-<para>
-<command>gcc</command> のランタイムサポートを提供します。
-</para>
+          <para>
+          <command>gcc</command> のランタイムサポートを提供します。
+          </para>
 @z
 
 @x libgcov
           <para>This library is linked in to a program when GCC is instructed
           to enable profiling</para>
 @y
-<para>
-GCC のプロファイリングを有効にした場合にこのライブラリがリンクされます。
-</para>
+          <para>
+          GCC のプロファイリングを有効にした場合にこのライブラリがリンクされます。
+          </para>
 @z
 
 @x libgomp
           <para>GNU implementation of the OpenMP API for multi-platform
           shared-memory parallel programming in C/C++ and Fortran</para>
 @y
-<para>
-C/C++ や Fortran において、マルチプラットフォームでの共有メモリ並行プログラミング
-(multi-platform shared-memory parallel programming)
-を行うための、GNU による OpenMP API インプリメンテーションです。
-</para>
+          <para>
+          C/C++ や Fortran において、マルチプラットフォームでの共有メモリ並行プログラミング
+          (multi-platform shared-memory parallel programming)
+          を行うための、GNU による OpenMP API インプリメンテーションです。
+          </para>
 @z
 
 @x libmudflap
           <para>Contains routines that support GCC's bounds checking
           functionality</para>
 @y
-<para>
-GCC の配列境界チェック (bounds checking) 機能をサポートするルーチンを提供します。
-</para>
+          <para>
+          GCC の配列境界チェック (bounds checking) 機能をサポートするルーチンを提供します。
+          </para>
 @z
 
 @x libssp
           <para>Contains routines supporting GCC's stack-smashing protection
           functionality</para>
 @y
-<para>
-GCC のスタック破壊を防止する (stack-smashing protection) 機能をサポートするルーチンを提供します。
-</para>
+          <para>
+          GCC のスタック破壊を防止する (stack-smashing protection) 機能をサポートするルーチンを提供します。
+          </para>
 @z
 
 @x libstdc++
@@ -453,8 +427,7 @@ GCC のスタック破壊を防止する (stack-smashing protection) 機能を�
           <para>Provides supporting routines for the C++ programming
           language</para>
 @y
-<para>
-C++ プログラミング言語のためのサポートルーチンを提供します。
-</para>
+          <para>
+          C++ プログラミング言語のためのサポートルーチンを提供します。
+          </para>
 @z
-
