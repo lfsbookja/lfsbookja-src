@@ -63,6 +63,11 @@
           SVN-20110413, r9497 対応。
           </para>
         </listitem>
+        <listitem>
+          <para>[matsuand] -
+          随所にて PDF 版向け整形。
+          </para>
+        </listitem>
       </itemizedlist>
     </listitem>
 

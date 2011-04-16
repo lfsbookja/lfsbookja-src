@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -31,17 +40,17 @@
 @x
     <para>Create a separate build directory again:</para>
 @y
-<para>
-ビルドのためのディレクトリを再び生成します。
-</para>
+    <para>
+    ビルドのためのディレクトリを再び生成します。
+    </para>
 @z
 
 @x
     <para>Prepare Binutils for compilation:</para>
 @y
-<para>
-Binutils をコンパイルするための準備をします。
-</para>
+    <para>
+    Binutils をコンパイルするための準備をします。
+    </para>
 @z
 
 @x
@@ -55,9 +64,9 @@ Binutils をコンパイルするための準備をします。
           variables ensures that the build system uses the cross-compiler and
           associated tools instead of the ones on the host system.</para>
 @y
-<para>
-Binutils をネイティブにビルドすることが目的なので、ホストシステムに存在しているクロスコンパイラや関連ツールは使わず、ビルドしているシステム内のものを用いるように指定します。
-</para>
+          <para>
+          Binutils をネイティブにビルドすることが目的なので、ホストシステムに存在しているクロスコンパイラーや関連ツールは使わず、ビルドしているシステム内のものを用いるように指定します。
+          </para>
 @z
 
 @x
@@ -67,13 +76,11 @@ Binutils をネイティブにビルドすることが目的なので、ホス�
           to the linker. This prevents the linker from searching through
           library directories on the host.</para>
 @y
-<para>
-configure スクリプトに対して
-Binutils のコンパイル中でのライブラリパスを指定します。
-リンカに対して <filename class="directory">/tools/lib</filename>
-ディレクトリを指定するものです。
-こうすることでリンカがホスト上のライブラリを検索しないようにします。
-</para>
+          <para>
+          configure スクリプトに対して Binutils のコンパイル中でのライブラリパスを指定します。
+          リンカーに対して <filename class="directory">/tools/lib</filename> ディレクトリを指定するものです。
+          こうすることでリンカーがホスト上のライブラリを検索しないようにします。
+          </para>
 @z
 
 @x
@@ -92,15 +99,15 @@ Binutils のコンパイル中でのライブラリパスを指定します。
     <para>Now prepare the linker for the <quote>Re-adjusting</quote> phase in
     the next chapter:</para>
 @y
-<para>
-次章で行う<quote>再調整</quote>の作業に向けてリンカを準備します。
-</para>
+    <para>
+    次章で行う<quote>再調整</quote>の作業に向けてリンカーを準備します。
+    </para>
 @z
 
 @x
       <title>The meaning of the make parameters:</title>
 @y
-      <title>make パラメータの意味：</title>
+      <title>make パラメーターの意味：</title>
 @z
 
 @x
@@ -108,10 +115,9 @@ Binutils のコンパイル中でのライブラリパスを指定します。
           files in the <filename class="directory">ld</filename>
           subdirectory.</para>
 @y
-<para>
-サブディレクトリ <filename class="directory">ld</filename>
-にコンパイル生成されたプログラムをすべて削除します。
-</para>
+          <para>
+          サブディレクトリ <filename class="directory">ld</filename> にコンパイル生成されたプログラムをすべて削除します。
+          </para>
 @z
 
 @x
@@ -123,23 +129,19 @@ Binutils のコンパイル中でのライブラリパスを指定します。
           specifies the linker's default library search path. This
           preparation is used in the next chapter.</para>
 @y
-<para>
-サブディレクトリ <filename class="directory">ld</filename>
-の中に生成されるべきプログラムを再生成します。
-Makefile ファイル内の変数 <envar>LIB_PATH</envar>
-をコマンドラインから与えることで、一時的なツール類の設定を上書き指定し、適切なパスを指示します。
-この変数の設定はリンカに対するデフォルトの検索パスを指定するものであり、次章に向けた準備となります。
-</para>
+          <para>
+          サブディレクトリ <filename
+          class="directory">ld</filename> の中に生成されるべきプログラムを再生成します。
+          Makefile ファイル内の変数 <envar>LIB_PATH</envar> をコマンドラインから与えることで、一時的なツール類の設定を上書き指定し、適切なパスを指示します。
+          この変数の設定はリンカーに対するデフォルトの検索パスを指定するものであり、次章に向けた準備となります。
+          </para>
 @z
 
 @x
     <para>Details on this package are located in
     <xref linkend="contents-binutils" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-binutils" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-binutils" role=""/>を参照してください。
+    </para>
 @z
-

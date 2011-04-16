@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -7,7 +16,7 @@
 @x
   <title>Linux-&linux-version; API Headers</title>
 @y
-  <title>Linux-&linux-version; API ヘッダ</title>
+  <title>Linux-&linux-version; API ヘッダー</title>
 @z
 
 @x
@@ -25,7 +34,7 @@
 @x
     <title>Installation of Linux API Headers</title>
 @y
-    <title>Linux API ヘッダのインストール</title>
+    <title>Linux API ヘッダーのインストール</title>
 @z
 
 @x
@@ -34,22 +43,19 @@
     by way of sanitizing various C header files that are shipped in the Linux
     kernel source tarball.</para>
 @y
-<para>
-Linux カーネルはアプリケーションプログラミングインターフェース
-(Application Programming Interface)
-を、システムの C ライブラリ (LFS の場合 Glibc) に対して提供する必要があります。
-これを行うには Linux カーネルのソースに含まれる、さまざまな
-C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用します。
-</para>
+    <para>
+    Linux カーネルはアプリケーションプログラミングインターフェース (Application Programming Interface) を、システムの C ライブラリ (LFS の場合 Glibc) に対して提供する必要があります。
+    これを行うには Linux カーネルのソースに含まれる、さまざまな C ヘッダーファイルを<quote>健全化 (sanitizing)</quote>して利用します。
+    </para>
 @z
 
 @x
     <para>Make sure there are no stale files and dependencies lying around
     from previous activity:</para>
 @y
-<para>
-これより前に一度処理を行っていたとしても、不適切なファイルや誤った依存関係を残さないように、以下を処理します。
-</para>
+    <para>
+    これより前に一度処理を行っていたとしても、不適切なファイルや誤った依存関係を残さないように、以下を処理します。
+    </para>
 @z
 
 @x
@@ -58,21 +64,18 @@ C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用し�
     location because the extraction process removes any existing files in 
     the target directory.</para>
 @y
-<para>
-そしてユーザーが利用するカーネルヘッダファイルをテストし、ソースから抽出します。
-それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
-ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
-</para>
+    <para>
+    そしてユーザーが利用するカーネルヘッダーファイルをテストし、ソースから抽出します。
+    それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
+    ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
+    </para>
 @z
 
 @x
     <para>Details on this package are located in
     <xref linkend="contents-linux-headers" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-linux-headers" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-linux-headers" role=""/>を参照してください。
+    </para>
 @z
-

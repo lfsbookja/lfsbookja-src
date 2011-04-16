@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -25,15 +34,14 @@
     (they are not mandatory), these packages are required to run the test
     suites in <xref linkend="chapter-building-system"/>.</para>
 @y
-<para>
-本パッケージとこれに続く二つのパッケージ (Expect と DejaGNU)
-は、GCC および Binutils におけるテストスイートを実行するのに必要となるためインストールするものです。
-テスト目的のためにこれら三つのパッケージをインストールするというのは、少々大げさなことかもしれません。
-ただ本質的ではないことであっても、重要なツール類が正常に動作するという確認が得られれば安心できます。
-本章ではテストスイートを実行することは必須ではないため、実行しないものとしていますが、それらの三つのパッケージは
-<xref linkend="chapter-building-system"/>
-で行うテストのために必要となるものです。
-</para>
+    <para>
+    本パッケージとこれに続く二つのパッケージ (Expect と DejaGNU) は、GCC および Binutils におけるテストスイートを実行するのに必要となるためインストールするものです。
+    テスト目的のためにこれら三つのパッケージをインストールするというのは、少々大げさなことかもしれません。
+    ただ本質的ではないことであっても、重要なツール類が正常に動作するという確認が得られれば安心できます。
+    本章ではテストスイートを実行することは必須ではないため、実行しないものとしていますが、それらの三つのパッケージは
+    <xref linkend="chapter-building-system"/>
+    で行うテストのために必要となるものです。
+    </para>
 @z
 
 @x
@@ -53,11 +61,11 @@
     suite is not mandatory for the temporary tools here in this chapter. To run
     the Tcl test suite anyway, issue the following command:</para>
 @y
-<para>
-コンパイルが終了しました。
-前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-しかしテストスイートを実行するなら、以下を実行します。
-</para>
+    <para>
+    コンパイルが終了しました。
+    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+    しかしテストスイートを実行するなら、以下を実行します。
+    </para>
 @z
 
 @x
@@ -70,18 +78,16 @@
     are exercised correctly. Details on the <envar>TZ</envar> environment
     variable are provided in <xref linkend="chapter-bootscripts"/>.</para>
 @y
-<para>
-Tcl のテストスイートは、特定のホスト環境において失敗することがありますが、その原因はよく分かっていません。
-したがってテストスイートの失敗は驚くことではなく、さして重大なことではありません。
-<parameter>TZ=UTC</parameter>
-はタイムゾーンを協定世界時間 (Coordinated Universal Time; UTC)
-あるいはグリニッジ標準時間としても知られる時間に設定します。
-ただしこれはテストスイートを実行する時だけの設定です。
-こうしておけば時刻に関するテストが正しく処理されます。
-環境変数 <envar>TZ</envar> については
-<xref linkend="chapter-bootscripts"/>
-にて詳しく説明しています。
-</para>
+    <para>
+    Tcl のテストスイートは、特定のホスト環境において失敗することがありますが、その原因はよく分かっていません。
+    したがってテストスイートの失敗は驚くことではなく、さして重大なことではありません。
+    <parameter>TZ=UTC</parameter> はタイムゾーンを協定世界時間 (Coordinated Universal Time; UTC) あるいはグリニッジ標準時間としても知られる時間に設定します。
+    ただしこれはテストスイートを実行する時だけの設定です。
+    こうしておけば時刻に関するテストが正しく処理されます。
+    環境変数 <envar>TZ</envar> については
+    <xref linkend="chapter-bootscripts"/>
+    にて詳しく説明しています。
+    </para>
 @z
 
 @x
@@ -94,20 +100,20 @@ Tcl のテストスイートは、特定のホスト環境において失敗す�
     <para>Make the installed library writable so debugging symbols can
     be removed later:</para>
 @y
-<para>
-インストールされたライブラリを書き込み可能にします。
-こうすることで後にデバッグシンボルを削除できるようにします。
-</para>
+    <para>
+    インストールされたライブラリを書き込み可能にします。
+    こうすることで後にデバッグシンボルを削除できるようにします。
+    </para>
 @z
 
 @x
     <para>Install Tcl's headers. The next package, Expect, requires them
     to build.</para>
 @y
-<para>
-Tcl のヘッダファイルをインストールします。
-これらは次にビルドする Expect が必要とするファイルです。
-</para>
+    <para>
+    Tcl のヘッダーファイルをインストールします。
+    これらは次にビルドする Expect が必要とするファイルです。
+    </para>
 @z
 
 @x
@@ -167,4 +173,3 @@ Tcl のヘッダファイルをインストールします。
 @y
           <para>Tcl スタブライブラリ</para>
 @z
-

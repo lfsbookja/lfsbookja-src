@@ -23,9 +23,9 @@
   <para>When building packages there are several assumptions made within 
   the instructions:</para>
 @y
-<para>
-パッケージをビルドしていく際には、以下に示す内容を前提とします:
-</para>
+  <para>
+  パッケージをビルドしていく際には、以下に示す内容を前提とします:
+  </para>
 @z
 
 @x
@@ -38,17 +38,14 @@
     not worry about these warnings, as the patch was still successfully
     applied.</para>
 @y
-<para>
-パッケージの中には、コンパイルする前にパッチを当てるものがあります。
-パッチを当てるのは、そのパッケージが抱える問題を回避するためです。
-本章と次章の双方でパッチを当てるものがあり、
-あるいは本章と次章のいずれか一方でパッチを当てるものもあります。
-したがってパッチをダウンロードする説明が書かれていないなら、
-何も気にせず先に進んでください。
-パッチを当てた際に <emphasis>offset</emphasis> や
-<emphasis>fuzz</emphasis> といった警告メッセージが出る場合がありますが、これらは気にしないでください。
-このような時でもパッチは問題なく適用されています。
-</para>
+    <para>
+    パッケージの中には、コンパイルする前にパッチを当てるものがあります。
+    パッチを当てるのは、そのパッケージが抱える問題を回避するためです。
+    本章と次章の双方でパッチを当てるものがあり、あるいは本章と次章のいずれか一方でパッチを当てるものもあります。
+    したがってパッチをダウンロードする説明が書かれていないなら、何も気にせず先に進んでください。
+    パッチを当てた際に <emphasis>offset</emphasis> や <emphasis>fuzz</emphasis> といった警告メッセージが出る場合がありますが、これらは気にしないでください。
+    このような時でもパッチは問題なく適用されています。
+    </para>
 @z
 
 @x
@@ -94,18 +91,18 @@
     point, which is <filename class="directory">/mnt/lfs</filename>, using our
     example.</para>
 @y
-<para>
-上の出力結果が LFS パーティションのマウントポイントのディレクトリであることを確認してください。
-本書では <filename class="directory">/mnt/lfs</filename> ディレクトリとして説明しています。
-</para>
+    <para>
+    上の出力結果が LFS パーティションのマウントポイントのディレクトリであることを確認してください。
+    本書では <filename class="directory">/mnt/lfs</filename> ディレクトリとして説明しています。
+    </para>
 @z
 
 @x
     <para>Finally, two last important items must be emphasized:</para>
 @y
-<para>
-最後に以下の二つの点にも注意してください。
-</para>
+    <para>
+    最後に以下の二つの点にも注意してください。
+    </para>
 @z
 
 @x
@@ -116,18 +113,6 @@
       ビルド作業においては <command>bash</command> シェルの利用を想定しています。
       </para>
 @z
-
-% @x
-%       <para>Before issuing the build instructions for a package, the package
-%       should be unpacked as user <systemitem class="username">lfs</systemitem>,
-%       and a <command>cd</command> into the created directory should be
-%       performed.</para>
-% @y
-%       <para>
-%       パッケージのビルド操作を進めるために、まずは <systemitem
-%       class="username">lfs</systemitem> ユーザーによってパッケージファイルの伸張 (解凍) を行い、<command>cd</command> コマンドによりそのパッケージディレクトリに移動します。
-%       </para>
-% @z
 
 @x
       <para>To re-emphasize the build process:</para>

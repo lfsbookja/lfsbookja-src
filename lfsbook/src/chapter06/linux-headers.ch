@@ -16,7 +16,7 @@
 @x
   <title>Linux-&linux-version; API Headers</title>
 @y
-  <title>Linux-&linux-version; API ヘッダ</title>
+  <title>Linux-&linux-version; API ヘッダー</title>
 @z
 
 @x
@@ -27,22 +27,22 @@
 @y
   <indexterm zone="ch-system-linux-headers">
     <primary sortas="a-Linux">Linux</primary>
-    <secondary>API ヘッダ</secondary>
+    <secondary>API ヘッダー</secondary>
   </indexterm>
 @z
 
 @x
     <para>The Linux API Headers expose the kernel's API for use by Glibc.</para>
 @y
-<para>
-Linux API ヘッダは Glibc が利用するカーネル API を提供します。
-</para>
+    <para>
+    Linux API ヘッダーは Glibc が利用するカーネル API を提供します。
+    </para>
 @z
 
 @x
     <title>Installation of Linux API Headers</title>
 @y
-    <title>Linux API ヘッダのインストール</title>
+    <title>Linux API ヘッダーのインストール</title>
 @z
 
 @x
@@ -51,22 +51,19 @@ Linux API ヘッダは Glibc が利用するカーネル API を提供します�
     by way of sanitizing various C header files that are shipped in the Linux
     kernel source tarball.</para>
 @y
-<para>
-Linux カーネルはアプリケーションプログラミングインターフェース
-(Application Programming Interface)
-を、システムの C ライブラリ (LFS の場合 Glibc) に対して提供する必要があります。
-これを行うには Linux カーネルのソースに含まれる、さまざまな
-C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用します。
-</para>
+    <para>
+    Linux カーネルはアプリケーションプログラミングインターフェース (Application Programming Interface) を、システムの C ライブラリ (LFS の場合 Glibc) に対して提供する必要があります。
+    これを行うには Linux カーネルのソースに含まれる、さまざまな C ヘッダーファイルを<quote>健全化 (sanitizing)</quote>して利用します。
+    </para>
 @z
 
 @x
     <para>Make sure there are no stale files and dependencies lying around
     from previous activity:</para>
 @y
-<para>
-これより前に一度処理を行っていたとしても、不適切なファイルや誤った依存関係を残さないように、以下を処理します。
-</para>
+    <para>
+    これより前に一度処理を行っていたとしても、不適切なファイルや誤った依存関係を残さないように、以下を処理します。
+    </para>
 @z
 
 @x
@@ -77,26 +74,26 @@ C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用し�
     the kernel developers and not needed by LFS that are removed from
     the intermediate directory.</para>
 @y
-<para>
-そしてユーザーが利用するカーネルヘッダファイルをテストし、ソースから抽出します。
-それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
-ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
-なおファイルの中にはカーネル開発者が隠しファイルとしているものがあります。
-それらは LFS では必要ないため、中間ディレクトリから削除します。
-</para>
+    <para>
+    そしてユーザーが利用するカーネルヘッダーファイルをテストし、ソースから抽出します。
+    それらはいったん中間的なローカルディレクトリに置かれ、必要な場所にコピーされます。
+    ターゲットディレクトリに既にあるファイルは削除されてからソースからの抽出処理が行われます。
+    なおファイルの中にはカーネル開発者が隠しファイルとしているものがあります。
+    それらは LFS では必要ないため、中間ディレクトリから削除します。
+    </para>
 @z
 
 @x
     <title>Contents of Linux API Headers</title>
 @y
-    <title>Linux API ヘッダの構成</title>
+    <title>Linux API ヘッダーの構成</title>
 @z
 
 @x
       <segtitle>Installed headers</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールヘッダ</segtitle>
+      <segtitle>インストールヘッダー</segtitle>
       <segtitle>インストールディレクトリ</segtitle>
 @z
 
@@ -109,60 +106,59 @@ C ヘッダファイルを<quote>健全化 (sanitizing)</quote>して利用し�
 @x
           <para>The Linux API ASM Headers</para>
 @y
-          <para>The Linux API ASM ヘッダファイル</para>
+          <para>The Linux API ASM ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API ASM Generic Headers</para>
 @y
-          <para>The Linux API ASM の汎用的なヘッダファイル</para>
+          <para>The Linux API ASM の汎用的なヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API DRM Headers</para>
 @y
-          <para>The Linux API DRM ヘッダファイル</para>
+          <para>The Linux API DRM ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Linux Headers</para>
 @y
-          <para>The Linux API Linux ヘッダファイル</para>
+          <para>The Linux API Linux ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API MTD Headers</para>
 @y
-          <para>The Linux API MTD ヘッダファイル</para>
+          <para>The Linux API MTD ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API RDMA Headers</para>
 @y
-          <para>The Linux API RDMA ヘッダファイル</para>
+          <para>The Linux API RDMA ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API SCSI Headers</para>
 @y
-          <para>The Linux API SCSI ヘッダファイル</para>
+          <para>The Linux API SCSI ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Sound Headers</para>
 @y
-          <para>The Linux API Sound ヘッダファイル</para>
+          <para>The Linux API Sound ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Video Headers</para>
 @y
-          <para>The Linux API Video ヘッダファイル</para>
+          <para>The Linux API Video ヘッダーファイル</para>
 @z
 
 @x
           <para>The Linux API Xen Headers</para>
 @y
-          <para>The Linux API Xen ヘッダファイル</para>
+          <para>The Linux API Xen ヘッダーファイル</para>
 @z
-

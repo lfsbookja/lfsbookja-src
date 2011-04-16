@@ -42,10 +42,10 @@
     Understanding the notes labeled important will save you a lot
     of problems later.</para></note>
 @y
-<note><para>
-前の節に戻って再度説明をよく読み、重要事項として説明している内容をよく理解しておいてください。
-そうすればこの後の無用なトラブルを減らすことができるはずです。
-</para></note>
+    <note><para>
+    前の節に戻って再度説明をよく読み、重要事項として説明している内容をよく理解しておいてください。
+    そうすればこの後の無用なトラブルを減らすことができるはずです。
+    </para></note>
 @z
 
 @x
@@ -54,19 +54,19 @@
     linker and assembler to determine which of their own features to
     enable.</para>
 @y
-<para>
-Binutils は一番最初にビルドするパッケージです。
-ここでビルドされるリンカやアセンブラを使って、Glibc や GCC の様々な機能が利用できるかどうかを判別することになります。
-</para>
+    <para>
+    Binutils は一番最初にビルドするパッケージです。
+    ここでビルドされるリンカーやアセンブラーを使って、Glibc や GCC の様々な機能が利用できるかどうかを判別することになります。
+    </para>
 @z
 
 @x
     <para>The Binutils documentation recommends building Binutils outside of the
     source directory in a dedicated build directory:</para>
 @y
-<para>
-Binutils のドキュメントでは Binutils をビルドする際に、ソースディレクトリではなく、ビルド専用のディレクトリを使ってビルドすることを推奨しています。
-</para>
+    <para>
+    Binutils のドキュメントでは Binutils をビルドする際に、ソースディレクトリではなく、ビルド専用のディレクトリを使ってビルドすることを推奨しています。
+    </para>
 @z
 
 @x
@@ -77,22 +77,20 @@ Binutils のドキュメントでは Binutils をビルドする際に、ソー�
       command like this: <userinput>time { ./configure ... &amp;&amp; make
       &amp;&amp; make install; }</userinput>.</para>
 @y
-<para>
-本節以降で SBU値を示していきます。
-これを活用していくなら、本パッケージの configure から初めのインストールまでの処理時間を計測しましょう。
-具体的には処理コマンドを <command>time</command> で囲んで
-<userinput>time { ./configure ... &amp;&amp; make &amp;&amp; make install; }</userinput>
-と入力すれば実現できます。
-</para>
+      <para>
+      本節以降で SBU値を示していきます。
+      これを活用していくなら、本パッケージの configure から初めのインストールまでの処理時間を計測しましょう。
+      具体的には処理コマンドを <command>time</command> で囲んで <userinput>time { ./configure ... &amp;&amp; make &amp;&amp; make install; }</userinput> と入力すれば実現できます。
+      </para>
 @z
 
 @x
     <note><para>The approximate build SBU values and required disk space
     in Chapter 5 does not include test suite data.</para></note>
 @y
-<note><para>
-概算ビルド時間と必要ディスク容量は、この第5章ではテストスイートに関わる時間や容量は含めないことにします。
-</para></note>
+    <note><para>
+    概算ビルド時間と必要ディスク容量は、この第5章ではテストスイートに関わる時間や容量は含めないことにします。
+    </para></note>
 @z
 
 @x
@@ -114,13 +112,13 @@ Binutils のドキュメントでは Binutils をビルドする際に、ソー�
           <command>configure</command> script to adjust Binutil's build system
           for building a cross linker.  </para>
 @y
-<para>
-変数 <envar>LFS_TGT</envar>
-に設定しているマシン名は <command>config.guess</command>
-スクリプトが返すものとは微妙に異なります。
-そこでこのオプションは、Binutils のビルドにあたってクロスリンカをビルドするように
-<command>configure</command> スクリプトに指示するものです。
-</para>
+          <para>
+          変数 <envar>LFS_TGT</envar>
+          に設定しているマシン名は <command>config.guess</command>
+          スクリプトが返すものとは微妙に異なります。
+          そこでこのオプションは、Binutils のビルドにあたってクロスリンカーをビルドするように
+          <command>configure</command> スクリプトに指示するものです。
+          </para>
 @z
 
 @x
@@ -128,29 +126,29 @@ Binutils のドキュメントでは Binutils をビルドする際に、ソー�
           Binutils programs in the <filename class="directory">/tools</filename>
           directory.</para>
 @y
-<para>
-configure スクリプトに対して Binutils プログラムを
-<filename class="directory">/tools</filename>
-ディレクトリ以下にインストールすることを指示します。
-</para>
+          <para>
+          configure スクリプトに対して Binutils プログラムを
+          <filename class="directory">/tools</filename>
+          ディレクトリ以下にインストールすることを指示します。
+          </para>
 @z
 
 @x
           <para>This disables internationalization as i18n is not needed for the
           temporary tools.</para>
 @y
-<para>
-一時的なツール構築にあたっては i18n 国際化は行わないことを指示します。
-</para>
+          <para>
+          一時的なツール構築にあたっては i18n 国際化は行わないことを指示します。
+          </para>
 @z
 
 @x
           <para>This prevents the build from stopping in the event that there
           are warnings from the host's compiler.</para>
 @y
-<para>
-ホストのコンパイラが警告を発した場合に、ビルドが中断することがないようにします。
-</para>
+          <para>
+          ホストのコンパイラーが警告を発した場合に、ビルドが中断することがないようにします。
+          </para>
 @z
 
 @x
@@ -166,22 +164,20 @@ configure スクリプトに対して Binutils プログラムを
     tests at this point are minimal since the programs from this
     first pass will soon be replaced by those from the second.</para>
 @y
-<para>
-コンパイルが終了しました。通常ならここでテストスイートを実行します。
-しかしシステム構築初期のこの段階ではテストスイートのフレームワーク
-(Tcl, Expect, DejaGNU) が準備できていません。
-さらにこの時点で生成されるプログラムは、すぐに次の生成作業によって置き換えられますから、
-この時点でテストを実行することはあまり意味がありません。
-</para>
+    <para>
+    コンパイルが終了しました。通常ならここでテストスイートを実行します。
+    しかしシステム構築初期のこの段階ではテストスイートのフレームワーク (Tcl, Expect, DejaGNU) が準備できていません。
+    さらにこの時点で生成されるプログラムは、すぐに次の生成作業によって置き換えられますから、この時点でテストを実行することはあまり意味がありません。
+    </para>
 @z
 
 @x
     <para>If building on x86_64, create a symlink to ensure the sanity of
     the toolchain:</para>
 @y
-<para>
-x86_64 にて作業をしている場合は、ツールチェーンの切り分けを適切に行うためにシンボリックリンクを作成します。
-</para>
+    <para>
+    x86_64 にて作業をしている場合は、ツールチェーンの切り分けを適切に行うためにシンボリックリンクを作成します。
+    </para>
 @z
 
 @x
@@ -194,10 +190,7 @@ x86_64 にて作業をしている場合は、ツールチェーンの切り分�
     <para>Details on this package are located in
     <xref linkend="contents-binutils" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-binutils" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-binutils" role=""/>を参照してください。
+    </para>
 @z
-

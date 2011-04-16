@@ -34,18 +34,18 @@
 @x
     <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
 @y
-<para>
-Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
-</para>
+    <para>
+    Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
+    </para>
 @z
 
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
-<para>
-Glibc のドキュメントでは、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
-</para>
+    <para>
+    Glibc のドキュメントでは、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
+    </para>
 @z
 
 @x
@@ -59,26 +59,22 @@ Glibc のドキュメントでは、ソースディレクトリ以外の専用�
     -mtune=native flag is also necessary to reset a reasonable value for -mtune
     that is changed when setting -march.</para>
 @y
-<para>
-Glibc は i386 をサポートしなくなりました。開発者によると x86 マシンに対してはコンパイラフラグとして
-<parameter>-march=i486 </parameter> を指定する必要があります。
-これを実際に指定する方法はいくつかあります。
-もっとも試してみれば分かりますが、ビルド時の変数
-<quote>CFLAGS</quote> にて設定しておくのが一番です。
-Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設定するのとは別に
-<filename>configparms</filename>
-ファイルという特別なファイルを使って CFLAGS に対して追加設定を行うこともできます。
--mtune=native というフラグも必要で -march を設定した際に変更される -mtune
-の値を適切にリセットします。
-</para>
+    <para>
+    Glibc は i386 をサポートしなくなりました。
+    開発者によると x86 マシンに対してはコンパイラーフラグとして <parameter>-march=i486 </parameter> を指定する必要があります。
+    これを実際に指定する方法はいくつかあります。
+    もっとも試してみれば分かりますが、ビルド時の変数<quote>CFLAGS</quote>にて設定しておくのが一番です。
+    Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設定するのとは別に <filename>configparms</filename> ファイルという特別なファイルを使って CFLAGS に対して追加設定を行うこともできます。
+    -mtune=native というフラグも必要で -march を設定した際に変更される -mtune の値を適切にリセットします。
+    </para>
 @z
 
 @x
     <para>Next, prepare Glibc for compilation:</para>
 @y
-<para>
-次に Glibc をコンパイルするための準備をします。
-</para>
+    <para>
+    次に Glibc をコンパイルするための準備をします。
+    </para>
 @z
 
 @x
@@ -92,30 +88,29 @@ Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設
           configures itself to cross-compile, using the cross-linker and
           cross-compiler in <filename class="directory">/tools</filename>.</para>
 @y
-<para>
-このようなオプションを組み合わせることで
-<filename class="directory">/tools</filename>
-ディレクトリにあるクロスコンパイラ、クロスリンカを使って Glibc がクロスコンパイルされるようになります。
-</para>
+          <para>
+          このようなオプションを組み合わせることで <filename
+          class="directory">/tools</filename> ディレクトリにあるクロスコンパイラー、クロスリンカーを使って Glibc がクロスコンパイルされるようになります。
+          </para>
 @z
 
 @x
           <para>This builds the libraries without profiling information. Omit
           this option if profiling on the temporary tools is necessary.</para>
 @y
-<para>
-プロファイル情報を含めずにライブラリをビルドすることを指示します。
-一時的なツールにてプロファイル情報が必要な場合は、このオプションを取り除いてください。
-</para>
+          <para>
+          プロファイル情報を含めずにライブラリをビルドすることを指示します。
+          一時的なツールにてプロファイル情報が必要な場合は、このオプションを取り除いてください。
+          </para>
 @z
 
 @x
           <para>This tells Glibc to use the NPTL add-on as its threading
           library.</para>
 @y
-<para>
-スレッド処理のライブラリとして NPTL アドオンを利用することを指示します。
-</para>
+          <para>
+          スレッド処理のライブラリとして NPTL アドオンを利用することを指示します。
+          </para>
 @z
 
 @x
@@ -123,10 +118,10 @@ Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設
           for 2.6.22.5 and later Linux kernels.  Workarounds for older
           kernels are not enabled.</para>
 @y
-<para>
-Linux カーネル 2.6.22.5 以上のサポートを行うよう指示します。
-これ以前のカーネルは利用することができません。
-</para>
+          <para>
+          Linux カーネル 2.6.22.5 以上のサポートを行うよう指示します。
+          これ以前のカーネルは利用することができません。
+          </para>
 @z
 
 @x
@@ -134,10 +129,10 @@ Linux カーネル 2.6.22.5 以上のサポートを行うよう指示します�
           installed to the tools directory, so that it knows exactly what
           features the kernel has and can optimize itself accordingly.</para>
 @y
-<para>
-これまでに tools ディレクトリにインストールしたヘッダファイルを用いて Glibc をビルドすることを指示します。
-こうすればカーネルにどのような機能があるか、どのようにして処理効率化を図れるかなどの情報を Glibc が得られることになります。
-</para>
+          <para>
+          これまでに tools ディレクトリにインストールしたヘッダーファイルを用いて Glibc をビルドすることを指示します。
+          こうすればカーネルにどのような機能があるか、どのようにして処理効率化を図れるかなどの情報を Glibc が得られることになります。
+          </para>
 @z
 
 @x
@@ -149,16 +144,13 @@ Linux カーネル 2.6.22.5 以上のサポートを行うよう指示します�
           order to inform <command>configure</command> that force-unwind
           support is available without it having to run the test.</para>
 @y
-<para>
-<xref linkend="ch-tools-binutils-pass1"/>
-においてインストールしたリンカは、クロスコンパイルにより生成したものです。
-これは Glibc をインストールするまでは使えません。
-これはつまり force-unwind サポートに対するテストは失敗することを意味します。
-正しく動作するリンカに依存するためです。
-libc_cv_forced_unwind=yes の変数設定は、
-<command>configure</command> スクリプトに対して
-テストを実行しなくても force-unwind サポート機能を利用可能とすることを指示します。
-</para>
+          <para>
+          <xref linkend="ch-tools-binutils-pass1"/> においてインストールしたリンカーは、クロスコンパイルにより生成したものです。
+          これは Glibc をインストールするまでは使えません。
+          これはつまり force-unwind サポートに対するテストは失敗することを意味します。
+          正しく動作するリンカーに依存するためです。
+          libc_cv_forced_unwind=yes の変数設定は、<command>configure</command> スクリプトに対してテストを実行しなくても force-unwind サポート機能を利用可能とすることを指示します。
+          </para>
 @z
 
 @x
@@ -166,12 +158,10 @@ libc_cv_forced_unwind=yes の変数設定は、
           <command>configure</command> script so that the test is skipped and C
           cleanup handling support is configured.</para>
 @y
-<para>
-上と同様に <command>configure</command>
-スクリプトに対して libc_cv_c_cleanup=yes を指示します。
-これによりテストが省略され、C のクリーンアップハンドリング
-(cleanup handling) のサポートを指定します。
-</para>
+          <para>
+          上と同様に <command>configure</command> スクリプトに対して libc_cv_c_cleanup=yes を指示します。
+          これによりテストが省略され、C のクリーンアップハンドリング (cleanup handling) のサポートを指定します。
+          </para>
 @z
 
 % @x
@@ -201,9 +191,9 @@ libc_cv_forced_unwind=yes の変数設定は、
 @x
     <para>During this stage the following warning might appear:</para>
 @y
-<para>
-ビルド中には以下のようなメッセージが出力されるかもしれません。
-</para>
+    <para>
+    ビルド中には以下のようなメッセージが出力されるかもしれません。
+    </para>
 @z
 
 @x
@@ -211,12 +201,10 @@ libc_cv_forced_unwind=yes の変数設定は、
     generally harmless. This <command>msgfmt</command> program is part of the
     Gettext package which the host distribution should provide.</para>
 @y
-<para>
-<command>msgfmt</command> プログラムがない場合 (missing)
-や互換性がない場合 (incompatible) でも特に問題はありません。
-<command>msgfmt</command> プログラムは
-Gettext パッケージが提供するもので、ホストシステムに含まれているかもしれません。
-</para>
+    <para>
+    <command>msgfmt</command> プログラムがない場合 (missing) や互換性がない場合 (incompatible) でも特に問題はありません。
+    <command>msgfmt</command> プログラムは Gettext パッケージが提供するもので、ホストシステムに含まれているかもしれません。
+    </para>
 @z
 
 @x
@@ -229,10 +217,10 @@ Gettext パッケージが提供するもので、ホストシステムに含ま
     <para>This package does come with a test suite, however, it cannot be
     run at this time because we do not have a C++ compiler yet.</para>
 @y
-<para>
-このパッケージにテストスイートは存在しますが、ここで実行することはできません。
-この時点ではまだ C++ コンパイラを構築していないためです。
-</para>
+    <para>
+    このパッケージにテストスイートは存在しますが、ここで実行することはできません。
+    この時点ではまだ C++ コンパイラーを構築していないためです。
+    </para>
 @z
 
 @x
@@ -245,15 +233,13 @@ Gettext パッケージが提供するもので、ホストシステムに含ま
       the Glibc locales anyway, use instructions from <xref
       linkend="ch-system-glibc" role="."/></para>
 @y
-<para>
-テストスイートを正しく実行するためには、さらにロケールデータも必要になります。
-ロケールデータは、システム内の各種ユーティリティが、日付、時刻、通貨などの情報を利用したり出力したりするために用いられるものです。
-テストスイートの実行は不要と説明していることから、これに従って実行しない場合はロケールデータをここでインストールする必要はありません。
-適切なロケールデータは次章にてインストールします。
-それでもここでインストールするなら
-<xref linkend="ch-system-glibc" role=""/>
-に示される手順に従ってください。
-</para>
+      <para>
+      テストスイートを正しく実行するためには、さらにロケールデータも必要になります。
+      ロケールデータは、システム内の各種ユーティリティが、日付、時刻、通貨などの情報を利用したり出力したりするために用いられるものです。
+      テストスイートの実行は不要と説明していることから、これに従って実行しない場合はロケールデータをここでインストールする必要はありません。
+      適切なロケールデータは次章にてインストールします。
+      それでもここでインストールするなら <xref linkend="ch-system-glibc" role=""/>に示される手順に従ってください。
+      </para>
 @z
 
 @x
@@ -266,10 +252,7 @@ Gettext パッケージが提供するもので、ホストシステムに含ま
     <para>Details on this package are located in
     <xref linkend="contents-glibc" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-glibc" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-glibc" role=""/>を参照してください。
+    </para>
 @z
-

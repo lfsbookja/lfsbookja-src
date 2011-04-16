@@ -26,12 +26,12 @@
   clearer after performing an actual build. This section can be referred
   to at any time during the process.</para>
 @y
-<para>
-本節ではシステムをビルドする原理や技術的な詳細について説明します。
-この節のすべてをすぐに理解する必要はありません。
-この先、実際の作業を行っていけば、いろいろな情報が明らかになってくるはずです。
-各作業を進めながら、いつでもこの節に戻って読み直してみてください。
-</para>
+  <para>
+  本節ではシステムをビルドする原理や技術的な詳細について説明します。
+  この節のすべてをすぐに理解する必要はありません。
+  この先、実際の作業を行っていけば、いろいろな情報が明らかになってくるはずです。
+  各作業を進めながら、いつでもこの節に戻って読み直してみてください。
+  </para>
 @z
 
 @x
@@ -43,14 +43,12 @@
   process has been designed to minimize the risks for new readers and to provide
   the most educational value at the same time.</para>
 @y
-<para>
-<xref linkend="chapter-temporary-tools"/> の最終目標は一時的なシステム環境を構築することです。
-この一時的なシステムには、システム構築のための十分なツール類を有し、ホストシステムとは切り離されたものです。
-この環境へは chroot によって移行します。この環境は
-<xref linkend="chapter-building-system"/>
-において、クリーンでトラブルのない LFS システムの構築を行う土台となるものです。
-構築手順の説明においては、初心者の方であっても失敗を最小限にとどめ、同時に最大限の学習材料となるように心がけています。
-</para>
+  <para>
+  <xref linkend="chapter-temporary-tools"/> の最終目標は一時的なシステム環境を構築することです。
+  この一時的なシステムには、システム構築のための十分なツール類を有し、ホストシステムとは切り離されたものです。
+  この環境へは chroot によって移行します。この環境は <xref linkend="chapter-building-system"/> において、クリーンでトラブルのない LFS システムの構築を行う土台となるものです。
+  構築手順の説明においては、初心者の方であっても失敗を最小限にとどめ、同時に最大限の学習材料となるように心がけています。
+  </para>
 @z
 
 @x
@@ -62,19 +60,13 @@
     the output. For example, for a modern 32-bit Intel processor the
     output will likely be <emphasis>i686-pc-linux-gnu</emphasis>.</para>
 @y
-<para>
-これより先に進む前に、作業するプラットフォームの <quote>三つの組 (target triplet)</quote>
-で表される名称を確認してください。<quote>三つの組</quote>
-は <command>config.guess</command>
-スクリプトを実行することで簡単に確認できます。
-そのスクリプトは多くのパッケージのソースに含まれています。
-Binutils パッケージのソースを伸張 (解凍) し
-<userinput>./config.guess</userinput>
-スクリプトを実行してその出力を確認してみてください。
-例えば最近の 32 ビット Intel プロセッサでは
-<emphasis>i686-pc-linux-gnu</emphasis>
-のような出力が得られます。
-</para>
+  <para>
+  これより先に進む前に、作業するプラットフォームの<quote>三つの組 (target triplet)</quote>で表される名称を確認してください。
+  <quote>三つの組</quote>は <command>config.guess</command> スクリプトを実行することで簡単に確認できます。
+  そのスクリプトは多くのパッケージのソースに含まれています。
+  Binutils パッケージのソースを伸張 (解凍) し <userinput>./config.guess</userinput> スクリプトを実行してその出力を確認してみてください。
+  例えば最近の 32 ビット Intel プロセッサーでは <emphasis>i686-pc-linux-gnu</emphasis> のような出力が得られます。
+  </para>
 @z
 
 @x
@@ -92,31 +84,25 @@ Binutils パッケージのソースを伸張 (解凍) し
     is in the <filename>shlib-versions</filename> file in the root of the Glibc
     source tree.</para>
 @y
-<para>
-利用しているプラットフォームに応じたダイナミックリンカ (dynamic linker) の名前についても確認してください。
-ダイナミックローダ (dynamic loader) とも表現されるものです。
-(Binutils が提供する標準的なリンカ <command>ld</command> とは異なりますので注意してください。)
-Glibc が提供するこのダイナミックリンカは、プログラムが必要としている共有ライブラリを見つけ出してロードし、実行のための準備を行った上で実際に実行します。
-32 ビットマシンのダイナミックリンカの名前は <filename class="libraryfile">ld-linux.so.2</filename>
-といったものになります。
-確実にその名前を調べるなら、ホストシステム内のどれでも良いので実行モジュールを選んで
-<userinput>readelf -l &lt;実行モジュール名&gt; | grep interpreter</userinput>
-と入力します。出力される結果を確認してください。
-あらゆるプラットフォームの情報を知りたいなら Glibc
-のソースディレクトリのルートにある
-<filename>shlib-versions</filename>
-ファイルに記されています。
-</para>
+    <para>
+    利用しているプラットフォームに応じたダイナミックリンカー (dynamic linker) の名前についても確認してください。
+    ダイナミックローダー (dynamic loader) とも表現されるものです。(Binutils
+    が提供する標準的なリンカー <command>ld</command> とは異なりますので注意してください。)
+    Glibc が提供するこのダイナミックリンカーは、プログラムが必要としている共有ライブラリを見つけ出してロードし、実行のための準備を行った上で実際に実行します。
+    32 ビットマシンのダイナミックリンカーの名前は <filename class="libraryfile">ld-linux.so.2</filename> といったものになります。
+    確実にその名前を調べるなら、ホストシステム内のどれでも良いので実行モジュールを選んで <userinput>readelf -l &lt;実行モジュール名&gt; | grep interpreter</userinput> と入力します。
+    出力される結果を確認してください。
+    あらゆるプラットフォームの情報を知りたいなら Glibc のソースディレクトリのルートにある <filename>shlib-versions</filename> ファイルに記されています。
+    </para>
 @z
 
 @x
   <para>Some key technical points of how the <xref
   linkend="chapter-temporary-tools"/> build method works:</para>
 @y
-<para>
-<xref linkend="chapter-temporary-tools"/>
-におけるビルド手順がどのように機能するのか、その技術的な情報を以下に示します。
-</para>
+  <para>
+  <xref linkend="chapter-temporary-tools"/> におけるビルド手順がどのように機能するのか、その技術的な情報を以下に示します。
+  </para>
 @z
 
 @x
@@ -128,14 +114,12 @@ Glibc が提供するこのダイナミックリンカは、プログラムが�
       cross-compiler will produce binaries compatible with the current
       hardware.</para>
 @y
-<para>
-動作させているプラットフォームの名前を微妙に変えます。
-三つの組の &quot;ベンダー &quot; フィールドを変更するもので、
-<envar>LFS_TGT</envar> 変数に定め利用します。
-こうしておいて Binutils と GCC
-の初回の構築を行なえば、互換性のあるクロスコンパイラ、クロスリンカを確実に構築できるようになります。
-もう一つ別のアーキテクチャに対する実行モジュールを作らなくても、そのクロスコンパイラとクロスリンカを使えば、生成される実行モジュールは現在のハードウェアに適合したものとなります。
-</para>
+      <para>
+      動作させているプラットフォームの名前を微妙に変えます。
+      三つの組の &quot;ベンダー &quot; フィールドを変更するもので、<envar>LFS_TGT</envar> 変数に定め利用します。
+      こうしておいて Binutils と GCC の初回の構築を行なえば、互換性のあるクロスコンパイラー、クロスリンカーを確実に構築できるようになります。
+      もう一つ別のアーキテクチャーに対する実行モジュールを作らなくても、そのクロスコンパイラーとクロスリンカーを使えば、生成される実行モジュールは現在のハードウェアに適合したものとなります。
+      </para>
 @z
 
 @x
@@ -147,12 +131,11 @@ Glibc が提供するこのダイナミックリンカは、プログラムが�
       the possibility of building both 32-bit and 64-bit libraries on 64-bit
       capable hardware.</para>
 @y
-<para>
-一時的に構築するライブラリはクロスコンパイルにより生成します。
-クロスコンパイラというものは元来、ホストシステムへ依存するものではないためです。
-こうすることで、ホストシステムのヘッダやライブラリが、一時的なツール類を壊してしまうような危険を減らすことができ、同時に 64
-ビットマシンにて 32 ビットあるいは 64 ビットの双方のライブラリを構築することができるようになります。
-</para>
+      <para>
+      一時的に構築するライブラリはクロスコンパイルにより生成します。
+      クロスコンパイラーというものは元来、ホストシステムへ依存するものではないためです。
+      こうすることで、ホストシステムのヘッダーやライブラリが、一時的なツール類を壊してしまうような危険を減らすことができ、同時に 64 ビットマシンにて 32 ビットあるいは 64 ビットの双方のライブラリを構築することができるようになります。
+      </para>
 @z
 
 @x
@@ -160,10 +143,9 @@ Glibc が提供するこのダイナミックリンカは、プログラムが�
       <filename>specs</filename> file tells the compiler which target dynamic
       linker will be used</para>
 @y
-<para>
-<command>gcc</command>
-のスペック (specs) ファイルを適切に調整することで、どのダイナミックリンカを用いるのかをコンパイラに指示します。
-</para>
+      <para>
+      <command>gcc</command> のスペック (specs) ファイルを適切に調整することで、どのダイナミックリンカーを用いるのかをコンパイラーに指示します。
+      </para>
 @z
 
 @x
@@ -176,17 +158,15 @@ Glibc が提供するこのダイナミックリンカは、プログラムが�
   entire distribution. A test suite failure will usually highlight this error
   before too much additional work is performed.</para>
 @y
-<para>
-Binutils をまず初めにインストールします。
-この後の GCC や Glibc の <command>configure</command>
-スクリプトの実行ではアセンブラやリンカに対する様々な機能テストが行われるためで、そこではどの機能が利用可能または利用不能であるかが確認されます。
-ただ重要なのは Binutils を一番初めにビルドするという点だけではありません。
-Gcc や Glibc の configure
-が正しく処理されなかったとすると、ツールチェーンがわずかながらも不完全な状態で生成されてしまいます。
-この状態は、すべてのビルド作業を終えた最後になって、大きな不具合となって現れてくることになります。
-テストスイートを実行することが欠かせません。
-これを実行しておけば、この先に行う多くの作業に入る前に不備があることが分かるからです。
-</para>
+  <para>
+  Binutils をまず初めにインストールします。
+  この後の GCC や Glibc の <command>configure</command> スクリプトの実行ではアセンブラーやリンカーに対する様々な機能テストが行われるためで、そこではどの機能が利用可能または利用不能であるかが確認されます。
+  ただ重要なのは Binutils を一番初めにビルドするという点だけではありません。
+  Gcc や Glibc の configure が正しく処理されなかったとすると、ツールチェーンがわずかながらも不完全な状態で生成されてしまいます。
+  この状態は、すべてのビルド作業を終えた最後になって、大きな不具合となって現れてくることになります。
+  テストスイートを実行することが欠かせません。
+  これを実行しておけば、この先に行う多くの作業に入る前に不備があることが分かるからです。
+  </para>
 @z
 
 @x
@@ -203,33 +183,27 @@ Gcc や Glibc の configure
   <userinput>gcc dummy.c -Wl,--verbose 2&gt;&amp;1 | grep succeeded</userinput>
   will show all the files successfully opened during the linking.</para>
 @y
-<para>
-Binutils はアセンブラとリンカを二箇所にインストールします。
-<filename class="directory">/tools/bin</filename> と
-<filename class="directory">/tools/$LFS_TGT/bin</filename>
-です。
-これらは一方が他方のハードリンクとなっています。
-リンカの重要なところはライブラリを検索する順番です。
-<command>ld</command>
-コマンドに <parameter>--verbose</parameter>
-オプションをつけて実行すれば詳しい情報が得られます。
-例えば <userinput>ld --verbose | grep SEARCH</userinput>
-を実行すると、検索するライブラリのパスとその検索順を示してくれます。
-ダミープログラムをコンパイルして <command>ld</command> に <parameter>--verbose</parameter>
-オプションをつけてリンクを行うと、どのファイルがリンクされたが分かります。
-例えば <userinput>gcc dummy.c -Wl,--verbose 2&gt;&amp;1 | grep succeeded</userinput>
-と実行すれば、リンカの処理中にオープンに成功したファイルがすべて表示されます。
-</para>
+  <para>
+  Binutils はアセンブラーとリンカーを二箇所にインストールします。
+  <filename class="directory">/tools/bin</filename> と <filename
+  class="directory">/tools/$LFS_TGT/bin</filename> です。
+  これらは一方が他方のハードリンクとなっています。
+  リンカーの重要なところはライブラリを検索する順番です。
+  <command>ld</command> コマンドに <parameter>--verbose</parameter> オプションをつけて実行すれば詳しい情報が得られます。
+  例えば <userinput>ld --verbose | grep SEARCH</userinput> を実行すると、検索するライブラリのパスとその検索順を示してくれます。
+  ダミープログラムをコンパイルして <command>ld</command> に <parameter>--verbose</parameter> オプションをつけてリンクを行うと、どのファイルがリンクされたが分かります。
+  例えば <userinput>gcc dummy.c -Wl,--verbose 2&gt;&amp;1 | grep succeeded</userinput> と実行すれば、リンカーの処理中にオープンに成功したファイルがすべて表示されます。
+  </para>
 @z
 
 @x
   <para>The next package installed is GCC. An example of what can be
   seen during its run of <command>configure</command> is:</para>
 @y
-<para>
-次にインストールするのは GCC です。
-<command>configure</command> の実行時には以下のような出力が行われます。
-</para>
+  <para>
+  次にインストールするのは GCC です。
+  <command>configure</command> の実行時には以下のような出力が行われます。
+  </para>
 @z
 
 @x
@@ -240,15 +214,12 @@ Binutils はアセンブラとリンカを二箇所にインストールしま�
   standard linker <command>gcc</command> will use, run:
   <userinput>gcc -print-prog-name=ld</userinput>.</para>
 @y
-<para>
-これを示すのには重要な意味があります。
-GCC の configure スクリプトは、利用するツール類を探し出す際に PATH ディレクトリを参照していないということです。
-しかし <command>gcc</command>
-の実際の処理にあたっては、その検索パスが必ず使われるわけでもありません。
-<command>gcc</command>
-が利用する標準的なリンカを確認するには
-<userinput>gcc -print-prog-name=ld</userinput> を実行します。
-</para>
+  <para>
+  これを示すのには重要な意味があります。
+  GCC の configure スクリプトは、利用するツール類を探し出す際に PATH ディレクトリを参照していないということです。
+  しかし <command>gcc</command> の実際の処理にあたっては、その検索パスが必ず使われるわけでもありません。
+  <command>gcc</command> が利用する標準的なリンカを確認するには <userinput>gcc -print-prog-name=ld</userinput> を実行します。
+  </para>
 @z
 
 @x
@@ -258,13 +229,10 @@ GCC の configure スクリプトは、利用するツール類を探し出す�
   detailed information about the preprocessor, compilation, and assembly stages,
   including <command>gcc</command>'s included search paths and their order.</para>
 @y
-<para>
-さらに詳細な情報を知りたいときは、ダミープログラムをコンパイルする際に
-<parameter>-v</parameter> オプションをつけて実行します。
-例えば <userinput>gcc -v dummy.c</userinput>
-と入力すると、プリプロセッサ、コンパイル、アセンブルの各処理工程が示されますが、さらに
-<command>gcc</command> がインクルードした検索パスとその読み込み順も示されます。
-</para>
+  <para>
+  さらに詳細な情報を知りたいときは、ダミープログラムをコンパイルする際に <parameter>-v</parameter> オプションをつけて実行します。
+  例えば <userinput>gcc -v dummy.c</userinput> と入力すると、プリプロセッサー、コンパイル、アセンブルの各処理工程が示されますが、さらに <command>gcc</command> がインクルードした検索パスとその読み込み順も示されます。
+  </para>
 @z
 
 @x
@@ -286,26 +254,20 @@ GCC の configure スクリプトは、利用するツール類を探し出す�
   package&mdash;it is very self-sufficient in terms of its build machinery and
   generally does not rely on toolchain defaults.</para>
 @y
-<para>
-次のパッケージは Glibc です。
-Glibc 構築の際に気にかけるべき重要なものは、コンパイラ、バイナリツール、カーネルヘッダです。
-コンパイラについては、一般にはあまり問題にはなりません。
-Glibc は常に configure スクリプトにて指定される <parameter>--host</parameter>
-パラメータに関連づけしたコンパイラを用いるからです。
-我々の作業では <command>i686-lfs-linux-gnu-gcc</command> になります。
-バイナリツールとカーネルヘッダは多少複雑です。
-従って無理なことはせずに有効な configure オプションを選択することが必要です。
-<command>configure</command> 実行の後は
-<filename class="directory">glibc-build</filename>
-ディレクトリにある <filename>config.make</filename>
-ファイルに重要な情報が示されているので確認してみてください。
-なお <parameter>CC="i686-lfs-gnu-gcc"</parameter>
-とすれば、どこにある実行モジュールを利用するかを制御でき
-<parameter>-nostdinc</parameter> と <parameter>-isystem</parameter>
-を指定すれば、コンパイラに対してインクルードファイルの検索パスを制御できます。
-これらの指定は Glibc パッケージの重要な面を示しています。
-Glibc がビルドされるメカニズムは自己完結したビルドが行われるものであり、ツールチェーンのデフォルト設定には基本的に依存しないことを示しています。
-</para>
+  <para>
+  次のパッケージは Glibc です。
+  Glibc 構築の際に気にかけるべき重要なものは、コンパイラー、バイナリツール、カーネルヘッダーです。
+  コンパイラーについては、一般にはあまり問題にはなりません。
+  Glibc は常に configure スクリプトにて指定される <parameter>--host</parameter> パラメーターに関連づけしたコンパイラーを用いるからです。
+  我々の作業では <command>i686-lfs-linux-gnu-gcc</command> になります。
+  バイナリツールとカーネルヘッダーは多少複雑です。
+  従って無理なことはせずに有効な configure オプションを選択することが必要です。
+  <command>configure</command> 実行の後は <filename
+  class="directory">glibc-build</filename> ディレクトリにある <filename>config.make</filename> ファイルに重要な情報が示されているので確認してみてください。
+  なお <parameter>CC="i686-lfs-gnu-gcc"</parameter> とすれば、どこにある実行モジュールを利用するかを制御でき <parameter>-nostdinc</parameter> と <parameter>-isystem</parameter> を指定すれば、コンパイラーに対してインクルードファイルの検索パスを制御できます。
+  これらの指定は Glibc パッケージの重要な面を示しています。
+  Glibc がビルドされるメカニズムは自己完結したビルドが行われるものであり、ツールチェーンのデフォルト設定には基本的に依存しないことを示しています。
+  </para>
 @z
 
 @x
@@ -321,22 +283,15 @@ Glibc がビルドされるメカニズムは自己完結したビルドが行�
   compiled from here through the end of this chapter will use the new dynamic
   linker in <filename class="directory">/tools/lib</filename>.</para>
 @y
-<para>
-Glibc をインストールした後は、
-<command>gcc</command> のスペックファイルにて
-<filename class="directory">/tools/lib</filename>
-ディレクトリにある新しいダイナミックリンカを用いるような修正を行います。
-この修正により
-<filename class="directory">/tools</filename>
-内での検索とリンクが行われるようにします。
-ダイナミックリンカに対する固定的な検索パスの設定は、ここから生成されるすべての ELF
-(Executable and Link Format) 形式の実行モジュールにも埋め込まれていきます。
-その結果は <userinput>readelf -l &lt;実行モジュール名&gt; | grep interpreter</userinput>
-を実行すれば確認できます。
-gcc のスペック・ファイルを修正するのは、これ以降、本章の最後に至るまで、すべてのプログラムのコンパイル時に
-<filename class="directory">/tools/lib</filename>
-にあるダイナミックリンカが利用されるよう仕向けるものです。
-</para>
+  <para>
+  Glibc をインストールした後は、<command>gcc</command> のスペックファイルにて <filename
+  class="directory">/tools/lib</filename> ディレクトリにある新しいダイナミックリンカーを用いるような修正を行います。
+  この修正により <filename class="directory">/tools</filename> 内での検索とリンクが行われるようにします。
+  ダイナミックリンカーに対する固定的な検索パスの設定は、ここから生成されるすべての ELF (Executable and Link Format) 形式の実行モジュールにも埋め込まれていきます。
+  その結果は <userinput>readelf -l &lt;実行モジュール名&gt; | grep interpreter</userinput> を実行すれば確認できます。
+  gcc のスペックファイルを修正するのは、これ以降、本章の最後に至るまで、すべてのプログラムのコンパイル時に <filename
+  class="directory">/tools/lib</filename> にあるダイナミックリンカーが利用されるよう仕向けるものです。
+  </para>
 @z
 
 @x
@@ -347,13 +302,12 @@ gcc のスペック・ファイルを修正するのは、これ以降、本章�
   class="directory">/lib</filename> directory embedded into them, which
   would defeat the goal of getting away from the host.</para>
 @y
-<para>
-GCC の第2回目のビルドにおいても、スペックファイルを修正して新しいダイナミックリンカが用いられるようにします。
-これをもし誤ってしまうと、ホストシステムの
-<filename class="directory">/lib</filename>
-ディレクトリが埋め込まれたダイナミックリンカを用いるものとして GCC が生成されてしまいます。
-こうしてしまうと、ホストシステムに依存しない形を目指すという目的が達成できません。
-</para>
+  <para>
+  GCC の第2回目のビルドにおいても、スペックファイルを修正して新しいダイナミックリンカーが用いられるようにします。
+  これをもし誤ってしまうと、ホストシステムの <filename
+  class="directory">/lib</filename> ディレクトリが埋め込まれたダイナミックリンカーを用いるものとして GCC が生成されてしまいます。
+  こうしてしまうと、ホストシステムに依存しない形を目指すという目的が達成できません。
+  </para>
 @z
 
 @x
@@ -364,17 +318,12 @@ GCC の第2回目のビルドにおいても、スペックファイルを修正
   the <xref linkend="chapter-temporary-tools"/> packages all build against
   the new Glibc in <filename class="directory">/tools</filename>.</para>
 @y
-<para>
-Binutils の2回めのビルドにおいては <command>ld</command>
-コマンドのライブラリ検索パスを設定するために configure
-の <parameter>--with-lib-path</parameter> オプションを指定します。
-それ以降ツールチェーンの核となるツール類は、自分自身から作り出された (self-contained)
-自分だけで処理できる (self-hosted) 形となります。
-<xref linkend="chapter-temporary-tools"/>
-において構築する残りのパッケージは
-<filename class="directory">/tools</filename>
-ディレクトリの新しい Glibc を用いてビルドされます。
-</para>
+  <para>
+  Binutils の2回めのビルドにおいては <command>ld</command> コマンドのライブラリ検索パスを設定するために configure の <parameter>--with-lib-path</parameter> オプションを指定します。
+  それ以降ツールチェーンの核となるツール類は、自分自身から作り出された (self-contained) 自分だけで処理できる (self-hosted) 形となります。
+  <xref linkend="chapter-temporary-tools"/> において構築する残りのパッケージは <filename
+  class="directory">/tools</filename> ディレクトリの新しい Glibc を用いてビルドされます。
+  </para>
 @z
 
 @x
@@ -386,13 +335,9 @@ Binutils の2回めのビルドにおいては <command>ld</command>
   toolchain defaults, and then proceed in building the rest of the target
   LFS system.</para>
 @y
-<para>
-<xref linkend="chapter-building-system"/>
-での chroot による環境下では、実質的なパッケージとして Glibc を初めにビルドします。
-これは上に述べているように自己完結した性質を目指すためです。
-<filename class="directory">/usr</filename>
-に Glibc をインストールしたら、ツールチェーンのデフォルトディレクトリの変更を行い
-LFS システムを構築する残りのパッケージをビルドしていきます。
-</para>
+  <para>
+  <xref linkend="chapter-building-system"/> での chroot による環境下では、実質的なパッケージとして Glibc を初めにビルドします。
+  これは上に述べているように自己完結した性質を目指すためです。
+  <filename class="directory">/usr</filename> に Glibc をインストールしたら、ツールチェーンのデフォルトディレクトリの変更を行い LFS システムを構築する残りのパッケージをビルドしていきます。
+  </para>
 @z
-

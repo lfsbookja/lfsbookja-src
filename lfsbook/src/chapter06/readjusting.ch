@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -23,21 +32,20 @@
   directory to the LFS <filename class="directory">/{,usr/}lib</filename>
   directories.</para>
 @y
-<para>
-最終的な C ライブラリがこれまでに構築できました。
-ここでツールチェーンの調整を再度行います。
-これを行うことで、新たに生成したプログラムが新たに生成したライブラリにリンクされます。
-この作業は <xref linkend="chapter-temporary-tools"/>
-の冒頭にて行った<quote>調整</quote>作業と同様のことです。
-ただし調整される方向が逆になります。
-<xref linkend="chapter-temporary-tools"/>
-では、ホストシステムの <filename class="directory">/{,usr/}lib</filename>
-ディレクトリを新しく作った <filename class="directory">/tools/lib</filename>
-ディレクトリに仕向けていました。
-今度は同じ <filename class="directory">/tools/lib</filename>
-ディレクトリを LFS の <filename class="directory">/{,usr/}lib</filename>
-ディレクトリに向けます。
-</para>
+  <para>
+  最終的な C ライブラリがこれまでに構築できました。
+  ここでツールチェーンの調整を再度行います。
+  これを行うことで、新たに生成したプログラムが新たに生成したライブラリにリンクされます。
+  この作業は<xref linkend="chapter-temporary-tools"/>の冒頭にて行った<quote>調整</quote>作業と同様のことです。
+  ただし調整される方向が逆になります。
+  <xref linkend="chapter-temporary-tools"/>
+  では、ホストシステムの <filename
+  class="directory">/{,usr/}lib</filename> ディレクトリを新しく作った <filename
+  class="directory">/tools/lib</filename> ディレクトリに仕向けていました。
+  今度は同じ <filename
+  class="directory">/tools/lib</filename> ディレクトリを LFS の <filename
+  class="directory">/{,usr/}lib</filename> ディレクトリに向けます。
+  </para>
 @z
 
 @x
@@ -46,12 +54,10 @@
   a link to its counterpart in <filename class="directory">/tools/$(gcc
   -dumpmachine)/bin</filename>:</para>
 @y
-<para>
-まず <filename class="directory">/tools</filename>
-ディレクトリにあるリンカのバックアップをとっておき、第5章にて作成した調整済みリンカに置き換えます。
-<filename class="directory">/tools/$(gcc-dumpmachine)/bin</filename>
-ディレクトリにあるリンカに対してのシンボリックリンクも正しく生成しておきます。
-</para>
+  <para>
+  まず <filename class="directory">/tools</filename> ディレクトリにあるリンカーのバックアップをとっておき、第5章にて作成した調整済みリンカーに置き換えます。
+  <filename class="directory">/tools/$(gcc-dumpmachine)/bin</filename> ディレクトリにあるリンカーに対してのシンボリックリンクも正しく生成しておきます。
+  </para>
 @z
 
 @x
@@ -61,21 +67,21 @@
   so that GCC knows where to find the correct headers and Glibc start files.
   A <command>sed</command> command accomplishes this:</para>
 @y
-<para>
-次に GCC スペックファイルを修正し、新しいダイナミックリンカを指し示すようにします。
-単純に <quote>/tools</quote> という記述を取り除けば、ダイナミックリンカへの正しい参照となります。
-またスペックファイルを修正することで GCC がヘッダファイル、および Glibc の起動ファイルを適切に探し出せるようになります。
-以下の <command>sed</command> によりこれを実現します。
-</para>
+  <para>
+  次に GCC スペックファイルを修正し、新しいダイナミックリンカーを指し示すようにします。
+  単純に <quote>/tools</quote> という記述を取り除けば、ダイナミックリンカーへの正しい参照となります。
+  またスペックファイルを修正することで GCC がヘッダーファイル、および Glibc の起動ファイルを適切に探し出せるようになります。
+  以下の <command>sed</command> によりこれを実現します。
+  </para>
 @z
 
 @x
   <para>It is a good idea to visually inspect the specs file to verify the
   intended change was actually made.</para>
 @y
-<para>
-スペックファイルの内容を実際に確認して、今変更した内容が正しく反映されていることを確認しておいてください。
-</para>
+  <para>
+  スペックファイルの内容を実際に確認して、今変更した内容が正しく反映されていることを確認しておいてください。
+  </para>
 @z
 
 @x
@@ -83,11 +89,10 @@
   functions (compiling and linking) of the adjusted toolchain are working
   as expected. To do this, perform the following sanity checks:</para>
 @y
-<para>
-この時点において、調整したツールチェーンの基本的な
-(コンパイルやリンクなどの) 機能が正しく動作していることを確認する必要があります。
-これを行うために以下の健全性検査を実行します。
-</para>
+  <para>
+  この時点において、調整したツールチェーンの基本的な (コンパイルやリンクなどの) 機能が正しく動作していることを確認する必要があります。
+  これを行うために以下の健全性検査を実行します。
+  </para>
 @z
 
 @x
@@ -95,62 +100,61 @@
   and the output of the last command will be (allowing for
   platform-specific differences in dynamic linker name):</para>
 @y
-<para os="b">
-問題なく動作した場合はエラーがなかったということで、最後のコマンドから出力される結果は以下のようになるはずです。
-(ダイナミックリンカの名前はプラットフォームによって違っているかもしれません。)
-</para>
+  <para os="b">
+  問題なく動作した場合はエラーがなかったということで、最後のコマンドから出力される結果は以下のようになるはずです。
+  (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。)
+  </para>
 @z
 
 @x
   <para>Note that <filename class="directory">/lib</filename> is now
   the prefix of our dynamic linker.</para>
 @y
-<para>
-ダイナミックリンカのディレクトリは、今度は
-<filename class="directory">/lib</filename> となっているはずです。
-</para>
+  <para>
+  ダイナミックリンカーのディレクトリは、今度は <filename class="directory">/lib</filename> となっているはずです。
+  </para>
 @z
 
 @x
   <para os="d">Now make sure that we're setup to use the correct startfiles:</para>
 @y
-<para os="d">
-ここで起動ファイルが正しく用いられていることを確認します。
-</para>
+  <para os="d">
+  ここで起動ファイルが正しく用いられていることを確認します。
+  </para>
 @z
 
 @x
   <para os="f">If everything is working correctly, there should be no errors,
     and the output of the last command will be:</para>
 @y
-<para os="f">
-問題なく動作した場合はエラーがなかったということで、上のコマンドの出力は以下のようになるはずです。
-</para>
+  <para os="f">
+  問題なく動作した場合はエラーがなかったということで、上のコマンドの出力は以下のようになるはずです。
+  </para>
 @z
 
 @x
   <para os="g">Verify that the compiler is searching for the correct header
   files:</para>
 @y
-<para os="g">
-コンパイラが正しいヘッダファイルを読み取っているかどうかを検査します。
-</para>
+  <para os="g">
+  コンパイラーが正しいヘッダーファイルを読み取っているかどうかを検査します。
+  </para>
 @z
 
 @x
   <para os="h">This command should return successfully with the following output:</para>
 @y
-<para os="h">
-上のコマンドは正常に終了すると、以下の出力を返します。
-</para>
+  <para os="h">
+  上のコマンドは正常に終了すると、以下の出力を返します。
+  </para>
 @z
 
 @x
   <para os="i">Next, verify that the new linker is being used with the correct search paths:</para>
 @y
-<para os="i">
-次に、新たなリンカが正しいパスを検索して用いられているかどうかを検査します。
-</para>
+  <para os="i">
+  次に、新たなリンカーが正しいパスを検索して用いられているかどうかを検査します。
+  </para>
 @z
 
 @x
@@ -158,18 +162,18 @@
   and the output of the last command (allowing for platform-specific target triplets)
   will be:</para>
 @y
-<para os="k">
-問題なく動作した場合はエラーがなかったということで、最後のコマンドの出力は以下のようになるはずです。
-(作業するプラットフォームに応じて<quote>三つの組 (target triplet)</quote>の表記は異なります。)
-</para>
+  <para os="k">
+  問題なく動作した場合はエラーがなかったということで、最後のコマンドの出力は以下のようになるはずです。
+  (作業するプラットフォームに応じて<quote>三つの組 (target triplet)</quote>の表記は異なります。)
+  </para>
 @z
 
 @x
   <para os="l">Next make sure that we're using the correct libc:</para>
 @y
-<para os="l">
-次に libc が正しく用いられていることを確認します。
-</para>
+  <para os="l">
+  次に libc が正しく用いられていることを確認します。
+  </para>
 @z
 
 @x
@@ -177,18 +181,18 @@
   and the output of the last command (allowing for a lib64 directory on 64-bit hosts)
   will be:</para>
 @y
-<para os="n">
-問題なく動作した場合はエラーがなかったということで、最後のコマンドの出力は以下のようになるはずです。
-(64 ビットマシンであれば lib64 ディレクトリとなるはずです。)
-</para>
+  <para os="n">
+  問題なく動作した場合はエラーがなかったということで、最後のコマンドの出力は以下のようになるはずです。
+  (64 ビットマシンであれば lib64 ディレクトリとなるはずです。)
+  </para>
 @z
 
 @x
   <para os="p">Lastly, make sure GCC is using the correct dynamic linker:</para>
 @y
-<para os="p">
-最後に GCC が正しくダイナミックリンカを用いているかを確認します。
-</para>
+  <para os="p">
+  最後に GCC が正しくダイナミックリンカーを用いているかを確認します。
+  </para>
 @z
 
 @x
@@ -197,11 +201,11 @@
   platform-specific differences in dynamic linker name and a lib64 directory
   on 64-bit hosts):</para>
 @y
-<para os="r">
-問題なく動作した場合はエラーがなかったということで、上のコマンドの出力は以下のようになるはずです。
-(ダイナミックリンカの名前はプラットフォームによって違っているかもしれません。
-また 64 ビットマシンであれば lib64 ディレクトリとなるはずです。)
-</para>
+  <para os="r">
+  問題なく動作した場合はエラーがなかったということで、上のコマンドの出力は以下のようになるはずです。
+  (ダイナミックリンカーの名前はプラットフォームによって違っているかもしれません。
+  また 64 ビットマシンであれば lib64 ディレクトリとなるはずです。)
+  </para>
 @z
 
 @x
@@ -211,19 +215,18 @@
   reason is that something went wrong with the specs file adjustment. Any
   issues will need to be resolved before continuing on with the process.</para>
 @y
-<para os="t">
-出力結果が上と異なっていたり、出力が全く得られなかったりした場合は、何かが根本的に間違っているということです。
-どこに問題があるのか調査・再試行を行って解消してください。
-最もありがちな理由は、スペックファイルの修正を誤っていることです。
-問題を残したままこの先には進まないでください。
-</para>
+  <para os="t">
+  出力結果が上と異なっていたり、出力が全く得られなかったりした場合は、何かが根本的に間違っているということです。
+  どこに問題があるのか調査・再試行を行って解消してください。
+  最もありがちな理由は、スペックファイルの修正を誤っていることです。
+  問題を残したままこの先には進まないでください。
+  </para>
 @z
 
 @x
   <para os="u">Once everything is working correctly, clean up the test files:</para>
 @y
-<para os="u">
-すべてが正しく動作したら、テストに用いたファイルを削除します。
-</para>
+  <para os="u">
+  すべてが正しく動作したら、テストに用いたファイルを削除します。
+  </para>
 @z
-
