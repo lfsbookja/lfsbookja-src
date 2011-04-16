@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter05/generalinstructions.ch,
+          src/chapter06/{coreutils.ch, glibc.ch}:
+          SVN-20110413, r9497 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-03-31</para>
       <itemizedlist>
         <listitem>

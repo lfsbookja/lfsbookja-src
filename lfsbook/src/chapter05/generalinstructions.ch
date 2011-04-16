@@ -59,35 +59,34 @@
     fairly often, and some packages still use the older standard. This is not a
     problem, but does prompt the warning.</para>
 @y
-<para>
-コンパイルの最中に、警告メッセージが画面上に出力されることがよくあります。
-これは問題はないため無視して構いません。
-警告メッセージは、メッセージ内に説明されているように、C や C++ の文法が誤りではないものの推奨されていないものであることを示しています。
-C 言語の標準はよく変更されますが、パッケージの中には古い基準に従っているものもあります。
-問題はないのですが、警告として画面表示されることになるわけです。
-</para>
+    <para>
+    コンパイルの最中に、警告メッセージが画面上に出力されることがよくあります。
+    これは問題はないため無視して構いません。
+    警告メッセージは、メッセージ内に説明されているように、C や C++ の文法が誤りではないものの推奨されていないものであることを示しています。
+    C 言語の標準はよく変更されますが、パッケージの中には古い基準に従っているものもあります。
+    問題はないのですが、警告として画面表示されることになるわけです。
+    </para>
 @z
 
-@x
-      <para>After installing each package, delete its source and build
-      directories, unless specifically instructed otherwise. Deleting the
-      sources prevents mis-configuration when the same package is reinstalled
-      later.</para>
-@y
-<para>
-各パッケージをインストールした後は、特に具体的な指示がない限りは、そのソースディレクトリやビルドディレクトリは削除してください。
-ソースディレクトリを削除するのは、後にもう一度そのパッケージをインストールする際に、構築のミスを防ぐためです。
-</para>
-@z
+% @x
+%       <para>After installing each package, delete its source and build
+%       directories, unless specifically instructed otherwise. Deleting the
+%       sources prevents mis-configuration when the same package is reinstalled
+%       later.</para>
+% @y
+%       <para>
+%       各パッケージをインストールした後は、特に具体的な指示がない限りは、そのソースディレクトリやビルドディレクトリは削除してください。
+%       ソースディレクトリを削除するのは、後にもう一度そのパッケージをインストールする際に、構築のミスを防ぐためです。
+%       </para>
+% @z
 
 @x
     <para>Check one last time that the <envar>LFS</envar> environment variable
     is set up properly:</para>
 @y
-<para>
-もう一度、環境変数 <envar>LFS</envar>
-が正しく設定されているかを確認します。
-</para>
+    <para>
+    もう一度、環境変数 <envar>LFS</envar> が正しく設定されているかを確認します。
+    </para>
 @z
 
 @x
@@ -113,60 +112,100 @@ C 言語の標準はよく変更されますが、パッケージの中には古
       <para>The build instructions assume that the <command>bash</command> 
       shell is in use.</para>
 @y
-<para>
-ビルド作業においては <command>bash</command> シェルの利用を想定しています。
-</para>
+      <para>
+      ビルド作業においては <command>bash</command> シェルの利用を想定しています。
+      </para>
+@z
+
+% @x
+%       <para>Before issuing the build instructions for a package, the package
+%       should be unpacked as user <systemitem class="username">lfs</systemitem>,
+%       and a <command>cd</command> into the created directory should be
+%       performed.</para>
+% @y
+%       <para>
+%       パッケージのビルド操作を進めるために、まずは <systemitem
+%       class="username">lfs</systemitem> ユーザーによってパッケージファイルの伸張 (解凍) を行い、<command>cd</command> コマンドによりそのパッケージディレクトリに移動します。
+%       </para>
+% @z
+
+@x
+      <para>To re-emphasize the build process:</para>
+@y
+      <para>
+      ビルド作業では以下の点が重要です。
+      </para>
 @z
 
 @x
-      <para>Before issuing the build instructions for a package, the package
-      should be unpacked as user <systemitem class="username">lfs</systemitem>,
-      and a <command>cd</command> into the created directory should be
-      performed.</para>
+          <para>Place all the sources and patches in a directory that will be
+          accessible from the chroot environment such as
+          <filename class="directory">/mnt/lfs/sources/</filename>.  Do
+          <emphasis>not</emphasis> put sources in
+          <filename class="directory">/mnt/lfs/tools/</filename>.</para>
 @y
-<para>
-パッケージのビルド操作を進めるために、まずは
-<systemitem class="username">lfs</systemitem>
-ユーザーによってパッケージファイルの伸張 (解凍) を行い、<command>cd</command>
-コマンドによりそのパッケージディレクトリに移動します。
-</para>
+          <para>
+          ソースやパッチファイルを配置するディレクトリは /mnt/lfs/sources/ などのように chroot 環境でもアクセスが出来るディレクトリとしてください。
+          /mnt/lfs/tools/ ディレクトリにソースを置くことは <emphasis>やめて</emphasis> ください。
+          </para>
 @z
 
 @x
-  <para>To re-emphasize the build process:</para>
+          <para>Change to the sources directory.</para>
 @y
-<para>
-ビルド作業では以下の点が重要です。
-</para>
+          <para>ソースディレクトリに入ります。</para>
 @z
 
 @x
-<screen role="nodump">
-1. Place all the sources and patches in a directory that will be accessible 
-   from the chroot environment such as /mnt/lfs/sources/.  Do <emphasis>not</emphasis> put 
-   sources in /mnt/lfs/tools/.
-2. Change to the sources directory.
-3. For each package:
-   a. Using the tar program, extract the package to be built.
-   b. Change to the directory created when the package was extracted.
-   c. Follow the book's instructions for building the package.
-   d. Change back to the sources directory.
-   e. Delete the extracted source directory and any &lt;package&gt;-build 
-      directories that were created in the build process.</screen>
-
+          <para>For each package:</para>
 @y
-<screen role="nodump">
-1. ソースやパッチファイルを配置するディレクトリは /mnt/lfs/sources/ などのように
-   chroot 環境でもアクセスが出来るディレクトリとしてください。
-   /mnt/lfs/tools/ ディレクトリにソースを置くことは <emphasis>やめて</emphasis> ください。
-2. ソースディレクトリに入ります。
-3. 各パッケージにおいては、
-   a. tar コマンドを使ってパッケージの tarball を伸張 (解凍) します。
-   b. パッケージの伸張 (解凍) 後に生成されたディレクトリに入ります。
-   c. 本書の手順に従ってビルド作業を行っていきます。
-   d. ソースディレクトリに戻ります。
-   e. ビルド作業を通じて生成されたパッケージディレクトリを削除します。さらに
-      &lt;package&gt;-build なるディレクトリを生成していた場合は、それも削除します。
-</screen>
+          <para>各パッケージについて：</para>
 @z
 
+@x
+              <para>Using the <command>tar</command> program, extract the package
+              to be built.  In Chapter 5, ensure you are the <emphasis>lfs</emphasis> 
+              user when extracting the package.</para>
+@y
+              <para>
+              tar コマンドを使ってパッケージの tarball を伸張 (解凍) します。
+              第5章では、パッケージを伸張 (解凍) するのは <emphasis>lfs</emphasis> ユーザーとします。
+              </para>
+@z
+
+@x
+              <para>Change to the directory created when the package was
+              extracted.</para>
+@y
+              <para>
+              パッケージの伸張 (解凍) 後に生成されたディレクトリに入ります。
+              </para>
+@z
+
+@x
+              <para>Follow the book's instructions for building the package.</para>
+@y
+              <para>
+              本書の手順に従ってビルド作業を行っていきます。
+              </para>
+@z
+
+@x
+              <para>Change back to the sources directory.</para>
+@y
+              <para>
+              ソースディレクトリに戻ります。
+              </para>
+@z
+
+@x
+              <para>Delete the extracted source directory and any
+              <filename class="directory"><replaceable>&lt;package&gt;</replaceable>-build</filename>
+              directories that were created in the build process unless instructed otherwise.</para>
+@y
+              <para>
+              ビルド作業を通じて生成されたパッケージディレクトリを削除します。
+              さらに <filename 
+              class="directory"><replaceable>&lt;package&gt;</replaceable>-build</filename> なるディレクトリを生成していた場合は、特に指定がない限りはそれも削除します。
+              </para>
+@z

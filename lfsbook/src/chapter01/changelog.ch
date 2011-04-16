@@ -48,6 +48,53 @@
 @z
 
 @x
+      <para>2011-04-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added a sed to fix an intermittent test 
+          failure in coreutils.  Fixes
+          <ulink url="&lfs-ticket-root;2833">#2833</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-04-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Coreutils にて周期的なテスト (intermittent test) におけるエラーを解消するための sed コマンドを追加。
+          <ulink url="&lfs-ticket-root;2833">#2833</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-04-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added optional instructions to allow a user
+          to use an include directory to supplement ld.so.conf.  Fixes
+          <ulink url="&lfs-ticket-root;2843">#2843</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Rewrote General Compilation Instructions using
+          better docbook structures and clarified a couple of points. Fixes
+          <ulink url="&lfs-ticket-root;2725">#2725</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-04-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ld.so.conf にてディレクトリをインクルードする方法の説明を追加。
+          <ulink url="&lfs-ticket-root;2843">#2843</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 全般的なコンパイル手順 (General Compilation Instructions) の説明にて、docbook 構造にそくしたものとし、何点か説明を明確化。
+          <ulink url="&lfs-ticket-root;2725">#2725</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-03-30</para>
       <itemizedlist>
         <listitem>

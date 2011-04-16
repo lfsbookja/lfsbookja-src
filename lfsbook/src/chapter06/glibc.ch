@@ -19,10 +19,10 @@
     closing files, reading and writing files, string handling, pattern matching,
     arithmetic, and so on.</para>
 @y
-<para>
-Glibc パッケージは主要な C ライブラリを提供します。
-このライブラリは基本的な処理ルーチンを含むもので、メモリ割り当て、ディレクトリ走査、ファイルのオープン・クローズや入出力、文字列操作、パターンマッチング、算術処理、等々があります。
-</para>
+    <para>
+    Glibc パッケージは主要な C ライブラリを提供します。
+    このライブラリは基本的な処理ルーチンを含むもので、メモリ割り当て、ディレクトリ走査、ファイルのオープン、クローズや入出力、文字列操作、パターンマッチング、算術処理、等々があります。
+    </para>
 @z
 
 @x
@@ -41,18 +41,15 @@ Glibc パッケージは主要な C ライブラリを提供します。
       an <function>iconv()</function> implementation and can convert from/to
       Unicode, therefore libiconv is not required on an LFS system.</para>
 @y
-<para>
-LFS が取り扱っていないパッケージの中には GNU libiconv の導入を推奨しているものがあります。
-これは文字データのエンコーディングを変換する機能を持ちます。
-プロジェクトのホームページ
-(<ulink url="http://www.gnu.org/software/libiconv/"/>)
-には以下のような説明があります。
-<quote>このライブラリは <function>iconv()</function> 関数を提供します。
-この関数を持たないシステムや、Unicode を取り扱うことができないシステムにて、この関数を利用することができます。
-</quote>
-Glibc が <function>iconv()</function> 関数を用意しており Unicode の変換を実現しているため
-LFS では libiconv は用いないことにします。
-</para>
+      <para>
+      LFS が取り扱っていないパッケージの中には GNU libiconv の導入を推奨しているものがあります。
+      これは文字データのエンコーディングを変換する機能を持ちます。
+      プロジェクトのホームページ (<ulink url="http://www.gnu.org/software/libiconv/"/>) には以下のような説明があります。
+      <quote>このライブラリは <function>iconv()</function> 関数を提供します。
+      この関数を持たないシステムや、Unicode を取り扱うことができないシステムにて、この関数を利用することができます。
+      </quote>
+      Glibc が <function>iconv()</function> 関数を用意しており Unicode の変換を実現しているため LFS では libiconv は用いないことにします。
+      </para>
 @z
 
 @x
@@ -63,13 +60,13 @@ LFS では libiconv は用いないことにします。
     Glibc autoconf tests would give false results and defeat the goal
     of achieving a clean build.</para>
 @y
-<para>
-Glibc は自らによってビルドされるものであり、そうして完全な形でインストールされます。
-ただしコンパイラのスペックファイルやリンカは、まだ
-<filename class="directory">/tools</filename> ディレクトリを示したままです。
-スペックファイルやリンカを再調整するのは Glibc をインストールした後になります。
-これは Glibc の autoconf テストが失敗するためであり、最終的にきれいなビルド結果を得るという目的が達成できないためです。
-</para>
+    <para>
+    Glibc は自らによってビルドされるものであり、そうして完全な形でインストールされます。
+    ただしコンパイラーのスペックファイルやリンカーは、まだ <filename
+    class="directory">/tools</filename> ディレクトリを示したままです。
+    スペックファイルやリンカーを再調整するのは Glibc をインストールした後になります。
+    これは Glibc の autoconf テストが失敗するためであり、最終的にきれいなビルド結果を得るという目的が達成できないためです。
+    </para>
 @z
 
 @x
@@ -80,16 +77,11 @@ Glibc は自らによってビルドされるものであり、そうして完�
     test would be carried out against the wrong Glibc. We can force the script
     to check the Glibc we have just installed with the following:</para>
 @y
-<para>
-<command>make install</command> を実行すると
-<filename>test-installation.pl</filename>
-というスクリプトが実行され、新たに作り出された Glibc
-に対しての簡単な健全性テストが実施されます。
-しかしこの時点ではツールチェーンが <filename class="directory">/tools</filename>
-ディレクトリを指し示しているため、誤った Glibc
-を対象としてテストが実施されてしまいます。
-このスクリプトのテスト対象が、これから作り出す Glibc となるように以下を実行します。
-</para>
+    <para>
+    <command>make install</command> を実行すると <filename>test-installation.pl</filename> というスクリプトが実行され、新たに作り出された Glibc に対しての簡単な健全性テストが実施されます。
+    しかしこの時点ではツールチェーンが <filename class="directory">/tools</filename> ディレクトリを指し示しているため、誤った Glibc を対象としてテストが実施されてしまいます。
+    このスクリプトのテスト対象が、これから作り出す Glibc となるように以下を実行します。
+    </para>
 @z
 
 @x
@@ -99,13 +91,10 @@ Glibc は自らによってビルドされるものであり、そうして完�
     <command>make install</command>.  Issue the following <command>sed</command>
     command to fix it:</para>
 @y
-<para>
-また <filename>test-installation.pl</filename>
-スクリプトにはバグがあり、<command>make install</command>
-ではインストールされないライブラリに、テストプログラムをリンクしてしまいます。
-そこで以下の <command>sed</command>
-コマンドを実行してこれを修正します。
-</para>
+    <para>
+    また <filename>test-installation.pl</filename> スクリプトにはバグがあり、<command>make install</command> ではインストールされないライブラリに、テストプログラムをリンクしてしまいます。
+    そこで以下の <command>sed</command> コマンドを実行してこれを修正します。
+    </para>
 @z
 
 @x
@@ -115,40 +104,36 @@ Glibc は自らによってビルドされるものであり、そうして完�
     <ulink url="&blfs-root;view/svn/postlfs/shells.html">Shells</ulink>
     chapter of the BLFS book:</para>
 @y
-<para>
-<command>ldd</command> シェルスクリプトは Bash
-が定める文法書式により構成されています。
-デフォルトで記述されているインタープリタを <command>/bin/bash</command>
-に変更します。
-BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink>
-で説明しているように、別の <command>/bin/sh</command>
-がインストールされている場合もあるからです。
-</para>
+    <para>
+    <command>ldd</command> シェルスクリプトは Bash が定める文法書式により構成されています。
+    デフォルトで記述されているインタープリタを <command>/bin/bash</command> に変更します。
+    BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink> で説明しているように、別の <command>/bin/sh</command> がインストールされている場合もあるからです。
+    </para>
 @z
 
 @x
     <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
 @y
-<para>
-Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
-</para>
+    <para>
+    Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
+    </para>
 @z
 
 @x
     <para>Fix a stack imbalance that occurs under some conditions:</para>
 @y
-<para>
-特定の条件のもとでスタックが不安定になる現象を、以下により解消します。
-</para>
+    <para>
+    特定の条件のもとでスタックが不安定になる現象を、以下により解消します。
+    </para>
 @z
 
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
-<para>
-Glibc のドキュメントではソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
-</para>
+    <para>
+    Glibc のドキュメントではソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
+    </para>
 @z
 
 @x
@@ -156,11 +141,10 @@ Glibc のドキュメントではソースディレクトリ以外の専用の�
     Here, the optimization of the library is also set for the gcc compiler to
     enhance compilation speed (-pipe) and package performance (-O3).</para>
 @y
-<para>
-第5章と同じように x86 マシンにおいては CFLAGS に対してコンパイラフラグの追加が必要です。
-ライブラリ構築においても gcc コンパイラに対して最適化フラグをセットすることで、コンパイル時間を向上
-(-pipe) させ、パッケージのパフォーマンスも向上 (-O3) させます。
-</para>
+    <para>
+    第5章と同じように x86 マシンにおいては CFLAGS に対してコンパイラーフラグの追加が必要です。
+    ライブラリ構築においても gcc コンパイラーに対して最適化フラグをセットすることで、コンパイル時間を向上 (-pipe) させ、パッケージのパフォーマンスも向上 (-O3) させます。
+    </para>
 @z
 
 @x
@@ -181,12 +165,11 @@ Glibc のドキュメントではソースディレクトリ以外の専用の�
           class="directory">/usr/libexec</filename> to <filename
           class="directory">/usr/lib/glibc</filename>.</para>
 @y
-<para>
-このオプションは <command>pt_chown</command>
-プログラムのインストール先を、デフォルトの
-<filename class="directory">/usr/libexec</filename> から
-<filename class="directory">/usr/lib/glibc</filename> に変更します。
-</para>
+          <para>
+          このオプションは <command>pt_chown</command> プログラムのインストール先を、デフォルトの <filename
+          class="directory">/usr/libexec</filename> から <filename
+          class="directory">/usr/lib/glibc</filename> に変更します。
+          </para>
 @z
 
 @x
@@ -199,10 +182,10 @@ Glibc のドキュメントではソースディレクトリ以外の専用の�
       <para>In this section, the test suite for Glibc is considered critical.
       Do not skip it under any circumstance.</para>
 @y
-<para>
-本節における Glibc のテストスイートは極めて重要なものです。
-したがってどのような場合であっても必ず実行してください。
-</para>
+      <para>
+      本節における Glibc のテストスイートは極めて重要なものです。
+      したがってどのような場合であっても必ず実行してください。
+      </para>
 @z
 
 @x
@@ -210,11 +193,11 @@ Glibc のドキュメントではソースディレクトリ以外の専用の�
     build tree to prevent a couple of test failures, then test the
     results:</para>
 @y
-<para>
-テストを実施する前に、ソースディレクトリからビルドディレクトリにファイルを一つコピーします。
-いくつかのテストが失敗してしまうことを回避するためです。
-こうしておいてコンパイル結果をテストします。
-</para>
+    <para>
+    テストを実施する前に、ソースディレクトリからビルドディレクトリにファイルを一つコピーします。
+    いくつかのテストが失敗してしまうことを回避するためです。
+    こうしておいてコンパイル結果をテストします。
+    </para>
 @z
 
 @x
@@ -223,21 +206,21 @@ Glibc のドキュメントではソースディレクトリ以外の専用の�
     is somewhat dependent on the host system.  This is a list of the most
     common issues:</para>
 @y
-<para>
-<emphasis>posix/annexc</emphasis> のテストはおそらく失敗します。
-これは想定されていることであり無視することができます。
-そもそも Glibc のテストスイートはホストシステムにある程度依存します。
-発生しがちな問題を以下に示します。
-</para>
+    <para>
+    <emphasis>posix/annexc</emphasis> のテストはおそらく失敗します。
+    これは想定されていることであり無視することができます。
+    そもそも Glibc のテストスイートはホストシステムにある程度依存します。
+    発生しがちな問題を以下に示します。
+    </para>
 @z
 
 @x
         <para>The <emphasis>nptl/tst-cancel1</emphasis> test will fail when
         using the 4.1 series of GCC.</para>
 @y
-<para>
-<emphasis>nptl/tst-cancel1</emphasis> テストは GCC 4.1 シリーズでは失敗します。
-</para>
+        <para>
+        <emphasis>nptl/tst-cancel1</emphasis> テストは GCC 4.1 シリーズでは失敗します。
+        </para>
 @z
 
 @x
@@ -252,13 +235,13 @@ Glibc のドキュメントではソースディレクトリ以外の専用の�
 minor timing issues が何を意味するのか不明であった。
 訳出不十分
 -->
-<para>
-<emphasis>nptl/tst-clock2</emphasis>,
-<emphasis>nptl/tst-clock2</emphasis>,
-<emphasis>tst-attr3</emphasis> の各テストは失敗することがあります。
-失敗の理由は明確ではありません。
-ただ処理速度が原因してそれらが発生すると思われます。
-</para>
+        <para>
+        <emphasis>nptl/tst-clock2</emphasis>,
+        <emphasis>nptl/tst-clock2</emphasis>,
+        <emphasis>tst-attr3</emphasis> の各テストは失敗することがあります。
+        失敗の理由は明確ではありません。
+        ただ処理速度が原因してそれらが発生すると思われます。
+        </para>
 @z
 
 @x
@@ -266,9 +249,9 @@ minor timing issues が何を意味するのか不明であった。
         systems where the CPU is not a relatively new genuine Intel or
         authentic AMD processor.</para>
 @y
-<para>
-math テストは、純正 Intel プロセッサや AMD プロセッサが最新のものではない場合に失敗することがあります。
-</para>
+        <para>
+        math テストは、純正 Intel プロセッサーや AMD プロセッサーが最新のものではない場合に失敗することがあります。
+        </para>
 @z
 
 @x
@@ -277,15 +260,10 @@ math テストは、純正 Intel プロセッサや AMD プロセッサが最新
         test will fail. As mentioned in <xref linkend="space-mounting"/>, do not
         use the <parameter>noatime</parameter> option while building LFS.</para>
 @y
-<para>
-LFS パーティションを <parameter>noatime</parameter>
-オプションを用いてマウントしている場合
-<emphasis>atime</emphasis> テストが失敗します。
-<xref linkend="space-mounting"/>
-で説明しているように、LFS のビルド中は
-<parameter>noatime</parameter>
-オプションを使わないようにしてください。
-</para>
+        <para>
+        LFS パーティションを <parameter>noatime</parameter> オプションを用いてマウントしている場合 <emphasis>atime</emphasis> テストが失敗します。
+        <xref linkend="space-mounting"/> で説明しているように、LFS のビルド中は <parameter>noatime</parameter> オプションを使わないようにしてください。
+        </para>
 @z
 
 @x
@@ -295,11 +273,11 @@ LFS パーティションを <parameter>noatime</parameter>
         help eliminate these errors (e.g. <command>TIMEOUTFACTOR=16
         make -k check</command>).</para>
 @y
-<para>
-旧式のハードウェアや性能の低いハードウェア、あるいは負荷の高いシステムにおいてテストを行うと、処理時間をオーバーしてタイムアウトが発生しテストが失敗します。
-make check コマンドにて TIMEOUTFACTOR をセットするものに修正すれば、それらのエラーは回避できると報告されています。
-(例： <command>TIMEOUTFACTOR=16 make -k check</command>)
-</para>
+        <para>
+        旧式のハードウェアや性能の低いハードウェア、あるいは負荷の高いシステムにおいてテストを行うと、処理時間をオーバーしてタイムアウトが発生しテストが失敗します。
+        make check コマンドにて TIMEOUTFACTOR をセットするものに修正すれば、それらのエラーは回避できると報告されています。
+        (例： <command>TIMEOUTFACTOR=16 make -k check</command>)
+        </para>
 @z
 
 @x
@@ -307,12 +285,10 @@ make check コマンドにて TIMEOUTFACTOR をセットするものに修正す
     complain about the absence of <filename>/etc/ld.so.conf</filename>.
     Prevent this warning with:</para>
 @y
-<para>
-支障が出る話ではありませんが Glibc のインストール時には
-<filename>/etc/ld.so.conf</filename>
-ファイルが存在していないとして警告メッセージが出力されます。
-これをなくすために以下を実行します。
-</para>
+    <para>
+    支障が出る話ではありませんが Glibc のインストール時には <filename>/etc/ld.so.conf</filename> ファイルが存在していないとして警告メッセージが出力されます。
+    これをなくすために以下を実行します。
+    </para>
 @z
 
 @x
@@ -327,10 +303,10 @@ make check コマンドにて TIMEOUTFACTOR をセットするものに修正す
     but if some of them are missing, test suites of the future packages would
     skip important testcases.</para>
 @y
-<para>
-システムを各種の言語に対応させるためのロケールは、今までのコマンドではインストールされませんが、テストスイートにおいてロケールは必要ではありません。
-ただ将来的にはロケールがないことによって、重要なテストを逃してしまうかもしれません。
-</para>
+    <para>
+    システムを各種の言語に対応させるためのロケールは、今までのコマンドではインストールされませんが、テストスイートにおいてロケールは必要ではありません。
+    ただ将来的にはロケールがないことによって、重要なテストを逃してしまうかもしれません。
+    </para>
 @z
 
 @x
@@ -345,27 +321,20 @@ make check コマンドにて TIMEOUTFACTOR をセットするものに修正す
     The following instructions will install the minimum set of
     locales necessary for the optimal coverage of tests:</para>
 @y
-<para>
-各ロケールは <command>localedef</command> プログラムを使ってインストールします。
-例えば以下に示す一つめの <command>localedef</command>
-では、キャラクタセットには依存しないロケール定義
-<filename>/usr/share/i18n/locales/cs_CZ</filename>
-とキャラクタマップ定義
-<filename>/usr/share/i18n/charmaps/UTF-8.gz</filename>
-とを結合させて
-<filename>/usr/lib/locale/locale-archive</filename>
-ファイルにその情報を付け加えます。
-以下のコマンドは、テストを成功させるために必要となる最低限のロケールをインストールするものです。
-</para>
+    <para>
+    各ロケールは <command>localedef</command> プログラムを使ってインストールします。
+    例えば以下に示す一つめの <command>localedef</command> では、キャラクタセットには依存しないロケール定義 <filename>/usr/share/i18n/locales/cs_CZ</filename> とキャラクタマップ定義 <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> とを結合させて <filename>/usr/lib/locale/locale-archive</filename> ファイルにその情報を付け加えます。
+    以下のコマンドは、テストを成功させるために必要となる最低限のロケールをインストールするものです。
+    </para>
 @z
 
 @x
     <para>In addition, install the locale for your own country, language and
     character set.</para>
 @y
-<para>
-上に加えて、あなたの国、言語、キャラクタセットを定めるためのロケールをインストールしてください。
-</para>
+    <para>
+    上に加えて、あなたの国、言語、キャラクタセットを定めるためのロケールをインストールしてください。
+    </para>
 @z
 
 @x
@@ -374,13 +343,10 @@ make check コマンドにて TIMEOUTFACTOR をセットするものに修正す
     (it includes every locale listed above and many more) at once with the
     following time-consuming command:</para>
 @y
-<para>
-必要に応じて <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename>
-に示されるすべてのロケールを同時にインストールしてください。
-(そこには上のロケールも含め、すべてのロケールが列記されています。)
-以下のコマンドによりそれを実現します。
-ただしこれには相当な処理時間を要します。
-</para>
+    <para>
+    必要に応じて <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> に示されるすべてのロケールを同時にインストールしてください。(そこには上のロケールも含め、すべてのロケールが列記されています。) 以下のコマンドによりそれを実現します。
+    ただしこれには相当な処理時間を要します。
+    </para>
 @z
 
 @x
@@ -389,11 +355,9 @@ make check コマンドにて TIMEOUTFACTOR をセットするものに修正す
     <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> file
     in the unlikely case you need them.</para>
 @y
-<para>
-さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename>
-ファイルに示されていない特殊なロケールは <command>localedef</command>
-コマンドを使って生成・インストールを行ってください。
-</para>
+    <para>
+    さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> ファイルに示されていない特殊なロケールは <command>localedef</command> コマンドを使って生成・インストールを行ってください。
+    </para>
 @z
 
 @x
@@ -408,31 +372,29 @@ make check コマンドにて TIMEOUTFACTOR をセットするものに修正す
     the Glibc defaults do not work well in a networked environment. The time zone
     also needs to be configured.</para>
 @y
-<para>
-<filename>/etc/nsswitch.conf</filename> ファイルを作成しておく必要があります。
-Glibc はこのファイルが無い場合や誤っている場合でもデフォルト設定を用いて動作しますが、ネットワーク環境下ではデフォルト設定であっても正しく動作しません。
-またタイムゾーンの設定も必要になります。
-</para>
+    <para>
+    <filename>/etc/nsswitch.conf</filename> ファイルを作成しておく必要があります。
+    Glibc はこのファイルが無い場合や誤っている場合でもデフォルト設定を用いて動作しますが、ネットワーク環境下ではデフォルト設定であっても正しく動作しません。
+    またタイムゾーンの設定も必要になります。
+    </para>
 @z
 
 @x
     <para>Create a new file <filename>/etc/nsswitch.conf</filename> by running the
     following:</para>
 @y
-<para>
-以下のコマンドを実行して
-<filename>/etc/nsswitch.conf</filename>
-ファイルを生成します。
-</para>
+    <para>
+    以下のコマンドを実行して <filename>/etc/nsswitch.conf</filename> ファイルを生成します。
+    </para>
 @z
 
 @x
     <para>One way to determine the local time zone, run the following
     script:</para>
 @y
-<para>
-ローカルなタイムゾーンの設定を行うために、ここでは以下のスクリプトを実行します。
-</para>
+    <para>
+    ローカルなタイムゾーンの設定を行うために、ここでは以下のスクリプトを実行します。
+    </para>
 @z
 
 @x
@@ -444,34 +406,30 @@ Glibc はこのファイルが無い場合や誤っている場合でもデフ�
     <emphasis>Canada/Eastern</emphasis> or <emphasis>EST5EDT</emphasis> that
     are not identified by the script but can be used.</para>
 @y
-<para>
-地域情報を設定するためにいくつか尋ねられるのでそれに答えます。
-このスクリプトはタイムゾーン名を表示します。
-(例えば <emphasis>America/Edmonton</emphasis> などです。)
-<filename class='directory'>/usr/share/zoneinfo</filename>
-ディレクトリにはさらに <emphasis>Canada/Eastern</emphasis>
-や <emphasis>EST5EDT</emphasis> のようなタイムゾーンもあります。
-これらはこのスクリプトでは認識されませんが、利用することは可能です。
-</para>
+    <para>
+    地域情報を設定するためにいくつか尋ねられるのでそれに答えます。
+    このスクリプトはタイムゾーン名を表示します。(例えば <emphasis>America/Edmonton</emphasis> などです。)
+    <filename class='directory'>/usr/share/zoneinfo</filename> ディレクトリにはさらに <emphasis>Canada/Eastern</emphasis> や <emphasis>EST5EDT</emphasis> のようなタイムゾーンもあります。
+    これらはこのスクリプトでは認識されませんが、利用することは可能です。
+    </para>
 @z
 
 @x
     <para>Then create the <filename>/etc/localtime</filename> file by
     running:</para>
 @y
-<para>
-以下のコマンドにより <filename>/etc/localtime</filename> ファイルを生成します。
-</para>
+    <para>
+    以下のコマンドにより <filename>/etc/localtime</filename> ファイルを生成します。
+    </para>
 @z
 
 @x
     <para>Replace <replaceable>&lt;xxx&gt;</replaceable> with the name of the
     time zone selected (e.g., Canada/Eastern).</para>
 @y
-<para>
-<replaceable>&lt;xxx&gt;</replaceable> の部分は設定するタイムゾーンの名前
-(例えば Canada/Eastern など) に置き換えてください。
-</para>
+    <para>
+    <replaceable>&lt;xxx&gt;</replaceable> の部分は設定するタイムゾーンの名前 (例えば Canada/Eastern など) に置き換えてください。
+    </para>
 @z
 
 @x
@@ -487,19 +445,18 @@ Glibc はこのファイルが無い場合や誤っている場合でもデフ�
           is on a separate partition. This could be important when booted into
           single user mode.</para>
 @y
-<para>
-このオプションは既に存在するシンボリックリンクを削除します。
-ここではシンボリックリンクを再生成するのではなく、ファイルのコピーを行います。
-これは別パーティション内に <filename class="directory">/usr</filename>
-ディレクトリが存在するケースに対応するためです。
-シングルユーザーモードでシステムを起動する際にはこのことが必要となります。
-</para>
+    <para>
+    このオプションは既に存在するシンボリックリンクを削除します。
+    ここではシンボリックリンクを再生成するのではなく、ファイルのコピーを行います。
+    これは別パーティション内に <filename class="directory">/usr</filename> ディレクトリが存在するケースに対応するためです。
+    シングルユーザーモードでシステムを起動する際にはこのことが必要となります。
+    </para>
 @z
 
 @x
     <title>Configuring the Dynamic Loader</title>
 @y
-    <title>ダイナミックローダの設定</title>
+    <title>ダイナミックローダーの設定</title>
 @z
 
 @x
@@ -517,32 +474,41 @@ Glibc はこのファイルが無い場合や誤っている場合でもデフ�
     class="directory">/opt/lib</filename>, so add those directories to the
     dynamic loader's search path.</para>
 @y
-<para>
-デフォルトにおいてダイナミックリンカ
-(<filename class="libraryfile">/lib/ld-linux.so.2</filename>)
-は <filename class="directory">/lib</filename> ディレクトリと
-<filename class="directory">/usr/lib</filename> ディレクトリを検索しにいきます。
-これに従って、他のプログラムが実行される際に必要となるダイナミックライブラリがリンクされます。
-もし <filename class="directory">/lib</filename> や
-<filename class="directory">/usr/lib</filename>
-以外のディレクトリにライブラリファイルがあるなら
-<filename>/etc/ld.so.conf</filename>
-ファイルに記述を追加して、ダイナミックローダがそれらを探し出せるようにしておくことが必要です。
-追加のライブラリが配置されるディレクトリとしては
-<filename class="directory">/usr/local/lib</filename> ディレクトリと
-<filename class="directory">/opt/lib</filename> ディレクトリという二つがよく利用されます。
-ダイナミックローダの検索パスとして、それらのディレクトリを追加します。
-</para>
+    <para>
+    デフォルトにおいてダイナミックリンカー (<filename
+    class="libraryfile">/lib/ld-linux.so.2</filename>) は <filename
+    class="directory">/lib</filename> ディレクトリと <filename
+    class="directory">/usr/lib</filename> ディレクトリを検索しにいきます。
+    これに従って、他のプログラムが実行される際に必要となるダイナミックライブラリがリンクされます。
+    もし <filename class="directory">/lib</filename> や <filename
+    class="directory">/usr/lib</filename> 以外のディレクトリにライブラリファイルがあるなら <filename>/etc/ld.so.conf</filename> ファイルに記述を追加して、ダイナミックローダーがそれらを探し出せるようにしておくことが必要です。
+    追加のライブラリが配置されるディレクトリとしては <filename
+    class="directory">/usr/local/lib</filename> ディレクトリと <filename
+    class="directory">/opt/lib</filename> ディレクトリという二つがよく利用されます。
+    ダイナミックローダーの検索パスとして、それらのディレクトリを追加します。
+    </para>
 @z
 
 @x
     <para>Create a new file <filename>/etc/ld.so.conf</filename> by running the
     following:</para>
 @y
-<para>
-以下のコマンドを実行して <filename>/etc/ld.so.conf</filename>
-ファイルを新たに生成します。
-</para>
+    <para>
+    以下のコマンドを実行して <filename>/etc/ld.so.conf</filename> ファイルを新たに生成します。
+    </para>
+@z
+
+@x
+  <para>If desired, the dynamic loader can also search a directory and
+  include the contents of files found there.  Generally the files in 
+  this include directory are one line specifying the desired library path.
+  To add this capability run the following commands:</para>
+@y
+  <para>
+  必要がある場合には、ダイナミックローダーに対する設定として、他ディレクトリにて指定されるファイルをインクルードするようにもできます。
+  通常は、そのファイル内の１行に、必要となるライブラリパスを記述します。
+  このような設定を利用する場合には以下のようなコマンドを実行します。
+  </para>
 @z
 
 @x
@@ -650,7 +616,7 @@ Glibc はこのファイルが無い場合や誤っている場合でもデフ�
           <para>Configures the dynamic linker runtime bindings</para>
 @y
 <para>
-プログラム実行時におけるダイナミックリンカのリンクを設定します。
+プログラム実行時におけるダイナミックリンカーのリンクを設定します。
 </para>
 @z
 
@@ -693,8 +659,7 @@ Glibc はこのファイルが無い場合や誤っている場合でもデフ�
           in human-readable format</para>
 @y
 <para>
-メモリトレースファイル (memory trace file)
-を読み込んで解釈します。
+メモリトレースファイル (memory trace file) を読み込んで解釈します。
 そして可読可能な書式で出力します。
 </para>
 @z
@@ -722,8 +687,7 @@ PC プロファイリングによって生成される情報をダンプしま�
 @y
 <para>
 <command>grantpt</command> コマンドのヘルパープログラム。
-所有者、グループ、スレーブ擬似端末 (slave pseudo terminal)
-へのアクセスパーミッションをそれぞれ設定します。
+所有者、グループ、スレーブ擬似端末 (slave pseudo terminal) へのアクセスパーミッションをそれぞれ設定します。
 </para>
 @z
 
@@ -732,8 +696,7 @@ PC プロファイリングによって生成される情報をダンプしま�
           protocol</para>
 @y
 <para>
-リモートプロシージャコール (Remote Procedure Call; RPC)
-を実装するための C 言語コードを生成します。
+リモートプロシージャコール (Remote Procedure Call; RPC) を実装するための C 言語コードを生成します。
 </para>
 @z
 
@@ -791,7 +754,7 @@ RPC サーバーに対しての RPC コールを行います。
           <para>The time zone compiler</para>
 @y
 <para>
-タイムゾーンコンパイラ。
+タイムゾーンコンパイラー。
 </para>
 @z
 
@@ -814,11 +777,7 @@ RPC サーバーに対しての RPC コールを行います。
 gross hack の真の意味が分からない。
 -->
 <para>
-Glibc が内部で利用するもので、異常が発生しているプログラムを見つけ出します。
-(例えば Motif アプリケーションなど)
-詳しくは
-<filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename>
-に書かれたコメントを参照してください。
+Glibc が内部で利用するもので、異常が発生しているプログラムを見つけ出します。(例えば Motif アプリケーションなど) 詳しくは <filename>glibc-&glibc-version;/locale/broken_cur_max.c</filename> に書かれたコメントを参照してください。
 </para>
 @z
 
@@ -845,8 +804,7 @@ Glibc が内部で利用するもので、異常が発生しているプログ�
           Berkeley Software Distribution (BSD) programs under Linux</para>
 @y
 <para>
-特定の BSD (Berkeley Software Distribution)
-プログラムを Linux 上で動作させるために必要な可搬ライブラリを提供します。
+特定の BSD (Berkeley Software Distribution) プログラムを Linux 上で動作させるために必要な可搬ライブラリを提供します。
 </para>
 @z
 
@@ -863,10 +821,7 @@ Glibc が内部で利用するもので、異常が発生しているプログ�
           names in the <function>getaddrinfo()</function> function</para>
 @y
 <para>
-Glibc が内部的に利用するもので
-<function>getaddrinfo()</function>
-関数によって国際化ドメイン名 (internationalized domain names)
-を取り扱います。
+Glibc が内部的に利用するもので <function>getaddrinfo()</function> 関数によって国際化ドメイン名 (internationalized domain names) を取り扱います。
 </para>
 @z
 
@@ -902,9 +857,7 @@ Glibc が内部的に利用するもので
           Engineers (IEEE). The default is POSIX.1 error handling</para>
 @y
 <para>
-このモジュールをリンクすると、数学関数におけるエラー制御方法を IEEE
-(the Institute of Electrical and Electronic Engineers)
-が定義するものに従うようになります。
+このモジュールをリンクすると、数学関数におけるエラー制御方法を IEEE (the Institute of Electrical and Electronic Engineers) が定義するものに従うようになります。
 デフォルトは POSIX.1 エラー制御方法です。
 </para>
 @z
@@ -930,8 +883,7 @@ Glibc が内部的に利用するもので
           information about the memory usage of a program</para>
 @y
 <para>
-<command>memusage</command>
-コマンドが利用するもので、プログラムのメモリ使用に関する情報を収集します。
+<command>memusage</command> コマンドが利用するもので、プログラムのメモリ使用に関する情報を収集します。
 </para>
 @z
 
@@ -959,8 +911,7 @@ NSS (Name Service Switch) ライブラリ。
           time spent in specific source code lines</para>
 @y
 <para>
-プロファイリングを行う関数を提供するもので、特定のソース行に費やされる
-CPU 時間を追跡するために利用します。
+プロファイリングを行う関数を提供するもので、特定のソース行に費やされる CPU 時間を追跡するために利用します。
 </para>
 @z
 
@@ -977,7 +928,7 @@ POSIX スレッドライブラリ。
           packets to the Internet domain name servers</para>
 @y
 <para>
-インターネットドメインネームサーバーに対しての、パケットの生成・送信・解析を行う関数を提供します。
+インターネットドメインネームサーバーに対しての、パケットの生成、送信、解析を行う関数を提供します。
 </para>
 @z
 
@@ -994,8 +945,7 @@ POSIX スレッドライブラリ。
           by the POSIX.1b Realtime Extension</para>
 @y
 <para>
-POSIX.1b リアルタイム拡張 (Realtime Extension)
-にて既定されている、インターフェースをほぼ網羅した関数を提供します。
+POSIX.1b リアルタイム拡張 (Realtime Extension) にて既定されている、インターフェースをほぼ網羅した関数を提供します。
 </para>
 @z
 
@@ -1012,9 +962,7 @@ POSIX.1b リアルタイム拡張 (Realtime Extension)
           <para>Contains code for <quote>standard</quote> functions used in
           many different Unix utilities</para>
 @y
-<para>
-数多くの Unix ユーティリティにて利用される
-<quote>標準</quote> 関数を提供します。
-</para>
+          <para>
+          数多くの Unix ユーティリティにて利用される<quote>標準</quote>関数を提供します。
+          </para>
 @z
-
