@@ -8,6 +8,20 @@
     <renderer mime="application/pdf">
 
       <fonts>
+        <font metrics-url="ipam.xml" kerning="yes"
+          embed-url="file:///usr/share/fonts/IPAfont/ipam.ttf">
+          <font-triplet name="IPAmincho" style="normal" weight="normal"/>
+          <font-triplet name="IPAmincho" style="normal" weight="bold"/>
+          <font-triplet name="IPAmincho" style="italic" weight="normal"/>
+          <font-triplet name="IPAmincho" style="italic" weight="bold"/>
+        </font>
+        <font metrics-url="ipag.xml" kerning="yes"
+          embed-url="file:///usr/share/fonts/IPAfont/ipag.ttf">
+          <font-triplet name="IPAgothic" style="normal" weight="normal"/>
+          <font-triplet name="IPAgothic" style="normal" weight="bold"/>
+          <font-triplet name="IPAgothic" style="italic" weight="normal"/>
+          <font-triplet name="IPAgothic" style="italic" weight="bold"/>
+        </font>
         <font metrics-url="sazanami-mincho.xml" kerning="yes"
           embed-url="file:///usr/share/fonts/sazanami/sazanami-mincho.ttf">
           <font-triplet name="Mincho" style="normal" weight="normal"/>

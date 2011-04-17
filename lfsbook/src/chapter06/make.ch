@@ -16,7 +16,7 @@
 @x
     <para>The Make package contains a program for compiling packages.</para>
 @y
-    <para>Make パッケージは、 パッケージ類をコンパイルするためのプログラムを提供します。</para>
+    <para>Make パッケージは、パッケージ類をコンパイルするためのプログラムを提供します。</para>
 @z
 
 @x
@@ -75,4 +75,3 @@
 パッケージの構成要素に対して、どれを(再)コンパイルするかを自動判別し、対応するコマンドを実行します。
 </para>
 @z
-

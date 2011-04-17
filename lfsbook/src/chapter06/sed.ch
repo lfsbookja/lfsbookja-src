@@ -16,7 +16,7 @@
 @x
     <para>The Sed package contains a stream editor.</para>
 @y
-    <para>Sed パッケージはストリームエディタを提供します。</para>
+    <para>Sed パッケージはストリームエディターを提供します。</para>
 @z
 
 @x

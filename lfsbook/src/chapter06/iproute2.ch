@@ -199,7 +199,7 @@
 </para>
 
 <para>
-<command>ip link <replaceable>&lt;デバイス名&gt;</replaceable></command> はデバイスのステータスを参照し、またステータスの変更を行います。
+<command>ip link &lt;デバイス名&gt;</command> はデバイスのステータスを参照し、またステータスの変更を行います。
 </para>
 
 <para><command>ip addr</command> はアドレスとその属性を参照し、新しいアドレスの追加、古いアドレスの削除を行います。

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,7 +30,7 @@
 <para>
 各パッケージにはたいていテストスイートがあります。
 新たに構築したパッケージに対しては、テストスイートを実行しておくのがよいでしょう。
-テストスイートは <quote>健全性検査 (sanity check)</quote>
+テストスイートは<quote>健全性検査 (sanity check)</quote>
 を行い、パッケージのコンパイルが正しく行われたことを確認します。
 テストスイートの実行によりいくつかのチェックが行われ、開発者の意図したとおりにパッケージが正しく動作することを確認していきます。
 ただこれは、パッケージにバグがないことを保証するものではありません。
@@ -58,7 +67,7 @@ GCC と Glibc におけるテストスイートはかなりの時間を要しま
     testers and developers, but they are strictly optional.</para>
 @y
 <para>
-作業を進めてみれば分かることですが
+作業を進めてみれば分かることですが、
 <xref linkend="chapter-temporary-tools"/>
 の作業においてテストスイートを実行することはあまり意味がありません。
 というのも、この章において実施するテストに対しては、ホストシステムによるある程度の影響があるためです。
@@ -82,15 +91,11 @@ GCC と Glibc におけるテストスイートはかなりの時間を要しま
   <ulink url="&lfs-root;/lfs/faq.html#no-ptys"/>.</para>
 @y
 <para>
-Binutils と GCC におけるテストスイートの実行では、擬似端末
-(pseudo terminals; PTY) を使い尽くす問題が発生します。
+Binutils と GCC におけるテストスイートの実行では、擬似端末 (pseudo terminals; PTY) を使い尽くす問題が発生します。
 これにより相当数のテストが失敗します。
-これが発生する理由はいくつかありますが、もっともありがちな理由としてはホストシステムの
-<systemitem class="filesystem">devpts</systemitem>
-ファイルシステムが正しく構成されていないことがあげられます。
-この点については
-<ulink url="&lfs-root;/lfs/faq.html#no-ptys"/>
-においてかなり詳しく説明しています。
+これが発生する理由はいくつかありますが、もっともありがちな理由としてはホストシステムの <systemitem
+class="filesystem">devpts</systemitem> ファイルシステムが正しく構成されていないことがあげられます。
+この点については <ulink url="&lfs-root;/lfs/faq.html#no-ptys"/> においてかなり詳しく説明しています。
 </para>
 @z
 
@@ -103,10 +108,7 @@ Binutils と GCC におけるテストスイートの実行では、擬似端末
 <para>
 パッケージの中にはテストスイートに失敗するものがあります。
 しかしこれらは開発元が認識しているもので致命的なものではありません。
-以下の
-<ulink url="&test-results;"/>
-に示すログを参照して、失敗したテストが実は予期されているものであるかどうかを確認してください。
+以下の <ulink url="&test-results;"/> に示すログを参照して、失敗したテストが実は予期されているものであるかどうかを確認してください。
 このサイトは、本書におけるすべてのテストスイートの正常な処理結果を示すものです。
 </para>
 @z
-

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -80,8 +89,7 @@ Perl をコンパイルするための準備をします。
 @y
 <para>
 Perl にはテストスイートがありますが、この時点での実行はお勧めしません。
-Perl を部分的にしかビルドしていない状態で <command>make test</command>
-を実行すると、他の実行ファイルなどもビルドすることになってしまいます。
+Perl を部分的にしかビルドしていない状態で <command>make test</command> を実行すると、他の実行ファイルなどもビルドすることになってしまいます。
 それらは今の時点では必要ありません。
 テストスイートを実行したい場合は次章にて行ってください。
 </para>
@@ -98,9 +106,6 @@ Perl を部分的にしかビルドしていない状態で <command>make test</
     <xref linkend="contents-perl" role="."/></para>
 @y
 <para>
-本パッケージの詳細は
-<xref linkend="contents-perl" role=""/>
-を参照してください。
+本パッケージの詳細は <xref linkend="contents-perl" role=""/>を参照してください。
 </para>
 @z
-

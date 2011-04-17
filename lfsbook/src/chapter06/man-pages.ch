@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -58,7 +67,7 @@ Man-pages パッケージは 1,900 以上のマニュアルページを提供し
           </indexterm>
         </listitem>
 @y
-        <term><filename>man ページ</filename></term>
+        <term><filename>man</filename> ページ</term>
         <listitem>
 <para>
 C 言語の関数、重要なデバイスファイル、重要な設定ファイルなどを説明します。
@@ -68,4 +77,3 @@ C 言語の関数、重要なデバイスファイル、重要な設定ファイ
           </indexterm>
         </listitem>
 @z
-

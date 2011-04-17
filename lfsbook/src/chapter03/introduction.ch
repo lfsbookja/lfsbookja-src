@@ -49,13 +49,10 @@
 @y
 <para>
 ダウンロードサイトは常にアクセス可能であるとは限りません。
-本書が提供された後にダウンロードする場所が変更になっていたら
-Google (<ulink url="http://www.google.com/"/>)
-を使って検索してみてください。
+本書が提供された後にダウンロードする場所が変更になっていたら Google (<ulink
+url="http://www.google.com/"/>) を使って検索してみてください。
 たいていのパッケージを見つけ出すことが出来るはずです。
-それでも見つけられなかったら
-<ulink url="&lfs-root;lfs/packages.html#packages"/>
-に示されている方法に従って入手してください。
+それでも見つけられなかったら <ulink url="&lfs-root;lfs/packages.html#packages"/> に示されている方法に従って入手してください。
 </para>
 @z
 
@@ -72,10 +69,8 @@ Google (<ulink url="http://www.google.com/"/>)
 <para>
 ダウンロードしたパッケージやパッチは、ビルド作業を通じて常に利用可能な場所を選んで保存しておく必要があります。
 またソース類を伸張してビルドを行うための作業ディレクトリも必要です。
-そこで本書では <filename class="directory">$LFS/sources</filename>
-ディレクトリを用意し、ソースやパッチの保存場所とし、そこでビルドを行う作業ディレクトリとします。
-このディレクトリにしておけば LFS パーティションに位置することから
-LFS ビルドを行う全工程において常に利用することが出来ます。
+そこで本書では <filename class="directory">$LFS/sources</filename> ディレクトリを用意し、ソースやパッチの保存場所とし、そこでビルドを行う作業ディレクトリとします。
+このディレクトリにしておけば LFS パーティションに位置することから LFS ビルドを行う全工程において常に利用することが出来ます。
 </para>
 @z
 
@@ -86,8 +81,7 @@ LFS ビルドを行う全工程において常に利用することが出来ま�
 @y
 <para>
 ダウンロードを行う前にまずはそのようなディレクトリを生成します。
-<systemitem class="username">root</systemitem>
-ユーザーとなって以下のコマンドを実行します。
+<systemitem class="username">root</systemitem> ユーザーとなって以下のコマンドを実行します。
 </para>
 @z
 
@@ -100,8 +94,7 @@ LFS ビルドを行う全工程において常に利用することが出来ま�
 @y
 <para>
 このディレクトリには書き込み権限とスティッキーを与えます。
-<quote>スティッキー (Sticky) </quote>
-は複数ユーザーに対して書き込み権限が与えられても、削除については所有者しか実行出来ないようにします。
+<quote>スティッキー (Sticky) </quote>は複数ユーザーに対して書き込み権限が与えられても、削除については所有者しか実行出来ないようにします。
 以下のコマンドによって書き込み権限とスティッキーを定めます。
 </para>
 @z
@@ -112,9 +105,8 @@ LFS ビルドを行う全工程において常に利用することが出来ま�
   <command>wget</command>. For example:</para>
 @y
 <para>
-パッケージとパッチのダウンロードを簡単に行う方法として
-<ulink url="../wget-list.txt">wget-list</ulink>
-を利用する方法があります。
+パッケージとパッチのダウンロードを簡単に行う方法として <ulink
+url="../wget-list.txt">wget-list</ulink> を利用する方法があります。
 これは以下のように <command>wget</command> の入力引数に指定し利用します。
 </para>
 @z
@@ -128,18 +120,11 @@ LFS ビルドを行う全工程において常に利用することが出来ま�
 <caution>
 <title>日本語訳情報</title>
 <para>
-本節にて <ulink url="../wget-list.txt">wget-list</ulink>
-のハイパーリンクが出てきますが、これは本来、拡張子を持たないファイル <filename>wget-list</filename>
-へのリンクです。
-本書を Web サイト上に搭載した場合に
-MIME 設定 (その制約) によりアクセスが出来ないファイルとなってしまう可能性があります。
-そこで本書では <filename>wget-list.txt</filename>
-のように拡張子 <filename class="extension">.txt</filename>
-をつけるようにしました。
-なお別途公開している本書の tarball では
-<filename>wget-list</filename> と
-<filename>wget-list.txt</filename>
-を共に含めています。両者は全く同一内容です。
+本節にて <ulink url="../wget-list.txt">wget-list</ulink> のハイパーリンクが出てきますが、これは本来、拡張子を持たないファイル <filename>wget-list</filename> へのリンクです。
+本書を Web サイト上に搭載した場合に MIME 設定 (その制約) によりアクセスが出来ないファイルとなってしまう可能性があります。
+そこで本書では <filename>wget-list.txt</filename> のように拡張子 <filename
+class="extension">.txt</filename> をつけるようにしました。
+なお別途公開している本書の tarball では <filename>wget-list</filename> と <filename>wget-list.txt</filename> を共に含めています。両者は全く同一内容です。
 </para>
 </caution>
 
@@ -147,8 +132,7 @@ MIME 設定 (その制約) によりアクセスが出来ないファイルと�
 <title>日本語訳情報</title>
 <para>
 LFS ブック原版では、
-<ulink url="../wget-list.txt">wget-list</ulink>
-内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
+<ulink url="../wget-list.txt">wget-list</ulink> 内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
 一方、日本に在住する日本の方であれば、例えば GNU のパッケージ類は国内に数多くのミラーサイトが存在するため、そちらから取得するのが適切でしょう。
 これはネットワークリソースを利用する際のマナーとも言えるものです。
 堅苦しい話をするつもりはありません。
@@ -156,8 +140,8 @@ LFS ブック原版では、
 メリットは大きいと思いますのでお勧めします。
 </para>
 <para>
-国内から入手可能なものは国内から入手することを目指し、訳者は以下の手順により <ulink url="../wget-list.txt">wget-list</ulink>
-を書き換えて利用しています。
+国内から入手可能なものは国内から入手することを目指し、訳者は以下の手順により <ulink
+url="../wget-list.txt">wget-list</ulink> を書き換えて利用しています。
 一例として国内には理化学研究所のサイト (ftp.riken.jp) があります。
 そこでは GNU パッケージ類がミラー提供されています。
 そこで <ulink url="../wget-list.txt">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。

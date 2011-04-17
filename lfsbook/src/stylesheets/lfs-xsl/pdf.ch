@@ -13,7 +13,7 @@
                 version="1.0">
 @y
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format" languages="ja"
                 version="1.0">
 @z
 
@@ -40,8 +40,11 @@
 @y
   <xsl:param name="body.font.size">10pt</xsl:param>
 
-  <xsl:param name="body.font.family" select="'Mincho'"/>
-  <xsl:param name="title.font.family" select="'Gothic'"/>
+  <xsl:param name="body.font.family" select="'IPAmincho'"/>
+  <xsl:param name="title.font.family" select="'IPAgothic'"/>
+  <xsl:param name="italic.font.family" select="'IPAgothic'"/>
+<!--
   <xsl:param name="sans.font.family" select="'Gothic'"/>
-  <xsl:param name="monospace.font.family" select="'Gothic'"/>
+  <xsl:param name="monospace.font.family" select="'IPAgothic'"/>
+-->
 @z

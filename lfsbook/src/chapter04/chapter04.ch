@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -7,7 +16,7 @@
 @x
 <chapter id="chapter-final-preps" xreflabel="Chapter 4">
 @y
-<chapter id="chapter-final-preps" xreflabel="第4章">
+<chapter id="chapter-final-preps" xreflabel="第４章">
 @z
 
 @x
@@ -15,4 +24,3 @@
 @y
   <title>準備作業の仕上げ</title>
 @z
-

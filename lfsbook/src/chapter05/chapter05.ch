@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -7,7 +16,7 @@
 @x
 <chapter id="chapter-temporary-tools" xreflabel="Chapter 5">
 @y
-<chapter id="chapter-temporary-tools" xreflabel="第5章">
+<chapter id="chapter-temporary-tools" xreflabel="第５章">
 @z
 
 @x
@@ -15,4 +24,3 @@
 @y
   <title>一時的環境の構築</title>
 @z
-

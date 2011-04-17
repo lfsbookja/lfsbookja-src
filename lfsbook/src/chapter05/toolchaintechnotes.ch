@@ -65,7 +65,7 @@
   <quote>三つの組</quote>は <command>config.guess</command> スクリプトを実行することで簡単に確認できます。
   そのスクリプトは多くのパッケージのソースに含まれています。
   Binutils パッケージのソースを伸張 (解凍) し <userinput>./config.guess</userinput> スクリプトを実行してその出力を確認してみてください。
-  例えば最近の 32 ビット Intel プロセッサーでは <emphasis>i686-pc-linux-gnu</emphasis> のような出力が得られます。
+  例えば最近の３２ビット Intel プロセッサーでは <emphasis>i686-pc-linux-gnu</emphasis> のような出力が得られます。
   </para>
 @z
 
@@ -90,7 +90,7 @@
     が提供する標準的なリンカー <command>ld</command> とは異なりますので注意してください。)
     Glibc が提供するこのダイナミックリンカーは、プログラムが必要としている共有ライブラリを見つけ出してロードし、実行のための準備を行った上で実際に実行します。
     32 ビットマシンのダイナミックリンカーの名前は <filename class="libraryfile">ld-linux.so.2</filename> といったものになります。
-    確実にその名前を調べるなら、ホストシステム内のどれでも良いので実行モジュールを選んで <userinput>readelf -l &lt;実行モジュール名&gt; | grep interpreter</userinput> と入力します。
+    確実にその名前を調べるなら、ホストシステム内のどれでも良いので実行モジュールを選んで <userinput>readelf -l &lt;</userinput>実行モジュール名<userinput>&gt; | grep interpreter</userinput> と入力します。
     出力される結果を確認してください。
     あらゆるプラットフォームの情報を知りたいなら Glibc のソースディレクトリのルートにある <filename>shlib-versions</filename> ファイルに記されています。
     </para>
@@ -288,7 +288,7 @@
   class="directory">/tools/lib</filename> ディレクトリにある新しいダイナミックリンカーを用いるような修正を行います。
   この修正により <filename class="directory">/tools</filename> 内での検索とリンクが行われるようにします。
   ダイナミックリンカーに対する固定的な検索パスの設定は、ここから生成されるすべての ELF (Executable and Link Format) 形式の実行モジュールにも埋め込まれていきます。
-  その結果は <userinput>readelf -l &lt;実行モジュール名&gt; | grep interpreter</userinput> を実行すれば確認できます。
+  その結果は <userinput>readelf -l &lt;</userinput>実行モジュール名<userinput>&gt; | grep interpreter</userinput> を実行すれば確認できます。
   gcc のスペックファイルを修正するのは、これ以降、本章の最後に至るまで、すべてのプログラムのコンパイル時に <filename
   class="directory">/tools/lib</filename> にあるダイナミックリンカーが利用されるよう仕向けるものです。
   </para>

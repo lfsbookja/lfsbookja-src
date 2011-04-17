@@ -31,18 +31,6 @@
     <title>Patch のインストール</title>
 @z
 
-% @x
-%     <para>Apply a patch that fixes a bug whereby <command>patch</command>
-%     fails to apply patches whose lines contain trailing carriage return
-%     characters:</para>
-% @y
-% <para>
-% バグを修正するためにパッチを当てます。
-% これは行末に改行文字が含まれているパッチファイルを適用すると
-% <command>patch</command> コマンドがパッチ適用に失敗する不具合を修正するものです。
-% </para>
-% @z
-
 @x
     <para>Prepare Patch for compilation:</para>
 @y
@@ -78,9 +66,6 @@
     <xref linkend="contents-patch" role="."/></para>
 @y
 <para>
-本パッケージの詳細は
-<xref linkend="contents-patch" role=""/>
-を参照してください。
+本パッケージの詳細は <xref linkend="contents-patch" role=""/>を参照してください。
 </para>
 @z
-

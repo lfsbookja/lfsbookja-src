@@ -16,7 +16,7 @@
 @x
 <chapter id="chapter-building-system" xreflabel="Chapter 6">
 @y
-<chapter id="chapter-building-system" xreflabel="第6章">
+<chapter id="chapter-building-system" xreflabel="第６章">
 @z
 
 @x
@@ -24,4 +24,3 @@
 @y
   <title>基本的なソフトウェアのインストール</title>
 @z
-

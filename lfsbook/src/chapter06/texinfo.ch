@@ -18,7 +18,7 @@
     converting info pages.</para>
 @y
 <para>
-Texinfo パッケージは info ページへの読み書き・変換を行うプログラムを提供します。
+Texinfo パッケージは info ページへの読み書き、変換を行うプログラムを提供します。
 </para>
 @z
 
@@ -75,7 +75,7 @@ Texinfo パッケージは info ページへの読み書き・変換を行うプ
 <para>
 Makefile 変数である <envar>TEXMF</envar>
 に TeX ツリーのルートディレクトリを設定します。
-これは後に TeX パッケージをインストールするための準備です。 
+これは後に TeX パッケージをインストールするための準備です。
 </para>
 @z
 
@@ -90,10 +90,8 @@ Makefile 変数である <envar>TEXMF</envar>
 <para>
 ドキュメントシステム Info は、 メニュー項目の一覧を単純なテキストファイルに保持しています。
 そのファイルは <filename>/usr/share/info/dir</filename> にあります。
-残念ながら数々のパッケージの Makefile
-は、既にインストールされている info ページとの同期を取る処理を行わない場合があります。
-<filename>/usr/share/info/dir</filename>
-の再生成を必要とするなら、以下のコマンドを実行してこれを実現します。
+残念ながら数々のパッケージの Makefile は、既にインストールされている info ページとの同期を取る処理を行わない場合があります。
+<filename>/usr/share/info/dir</filename> の再生成を必要とするなら、以下のコマンドを実行してこれを実現します。
 </para>
 @z
 
@@ -206,4 +204,3 @@ info ページをインストールします。
 Texinfo 索引ファイルの並び替えを行います。
 </para>
 @z
-

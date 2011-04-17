@@ -66,9 +66,6 @@
     <xref linkend="contents-tar" role="."/></para>
 @y
 <para>
-本パッケージの詳細は
-<xref linkend="contents-tar" role=""/>
-を参照してください。
+本パッケージの詳細は <xref linkend="contents-tar" role=""/>を参照してください。
 </para>
 @z
-

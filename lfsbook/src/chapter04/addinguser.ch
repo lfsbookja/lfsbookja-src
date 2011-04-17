@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,18 +31,13 @@
   issue the following commands to add the new user:</para>
 @y
 <para>
-<systemitem class="username">root</systemitem>
-ユーザーでログインしていると、ちょっとした誤操作がもとで、システムを破壊する重大な事態につながることがあります。
+<systemitem class="username">root</systemitem> ユーザーでログインしていると、ちょっとした誤操作がもとで、システムを破壊する重大な事態につながることがあります。
 そこでパッケージのビルドにあたっては通常のユーザー権限にて作業することにします。
-あなた自身のユーザーを利用するのでも構いませんが、全く新しいユーザー環境として
-<systemitem class="username">lfs</systemitem>
-というユーザーを作成するのが分かりやすいでしょう。
-所属するグループも
-<systemitem class="groupname">lfs</systemitem>
-という名で作成します。
+あなた自身のユーザーを利用するのでも構いませんが、全く新しいユーザー環境として <systemitem
+class="username">lfs</systemitem> というユーザーを作成するのが分かりやすいでしょう。
+所属するグループも <systemitem class="groupname">lfs</systemitem> という名で作成します。
 ビルド作業においてはこのユーザーを利用していきます。
-そこで <systemitem class="username">root</systemitem>
-ユーザーになって、新たなユーザーを追加する以下のコマンドを実行します。
+そこで <systemitem class="username">root</systemitem> ユーザーになって、新たなユーザーを追加する以下のコマンドを実行します。
 </para>
 @z
 
@@ -103,13 +107,11 @@
   give <systemitem class="username">lfs</systemitem> a password:</para>
 @y
 <para>
-<systemitem class="username">lfs</systemitem>
-ユーザーとしてログインするために <systemitem class="username">lfs</systemitem>
-に対するパスワードを設定します。
-(<systemitem class="username">root</systemitem>
-ユーザーでログインしている時に <systemitem class="username">lfs</systemitem>
-へのユーザー切り替えを行なう場合には <systemitem class="username">lfs</systemitem>
-ユーザーのパスワードは設定しておく必要はありません。)
+<systemitem class="username">lfs</systemitem> ユーザーとしてログインするために <systemitem
+class="username">lfs</systemitem> に対するパスワードを設定します。
+(<systemitem class="username">root</systemitem> ユーザーでログインしている時に <systemitem
+class="username">lfs</systemitem> へのユーザー切り替えを行なう場合には <systemitem
+class="username">lfs</systemitem> ユーザーのパスワードは設定しておく必要はありません。)
 </para>
 @z
 
@@ -119,9 +121,8 @@
   <systemitem class="username">lfs</systemitem> the directory owner:</para>
 @y
 <para>
-<filename class="directory">$LFS/tools</filename>
-ディレクトリの所有者を <systemitem class="username">lfs</systemitem>
-ユーザーとすることで、このディレクトリへのフルアクセス権を設定します。
+<filename class="directory">$LFS/tools</filename> ディレクトリの所有者を <systemitem
+class="username">lfs</systemitem> ユーザーとすることで、このディレクトリへのフルアクセス権を設定します。
 </para>
 @z
 
@@ -131,9 +132,8 @@
   directory:</para>
 @y
 <para>
-前述したような作業ディレクトリを作成している場合は、そのディレクトリに対しても
-<systemitem class="username">lfs</systemitem>
-ユーザーを所有者とします。
+前述したような作業ディレクトリを作成している場合は、そのディレクトリに対しても <systemitem
+class="username">lfs</systemitem> ユーザーを所有者とします。
 </para>
 @z
 
@@ -143,8 +143,7 @@
   the following substitute user command:</para>
 @y
 <para>
-<systemitem class="username">lfs</systemitem>
-でログインします。
+<systemitem class="username">lfs</systemitem> でログインします。
 これはディスプレイマネージャを通じて仮想端末を用いることができます。
 また以下のコマンドを実行するのでも構いません。
 </para>
@@ -157,12 +156,7 @@
   <filename>bash(1)</filename> and <command>info bash</command>.</para>
 @y
 <para>
-パラメータ <quote><parameter>-</parameter></quote>
-は <command>su</command> コマンドの実行において、非ログイン (non-login)
-シェルではなく、ログインシェルを起動することを指示します。
-ログインシェルとそうでないシェルの違いについては
-<filename>bash(1)</filename> や <command>info bash</command>
-を参照してください。
+パラメータ<quote><parameter>-</parameter></quote>は <command>su</command> コマンドの実行において、非ログイン (non-login) シェルではなく、ログインシェルを起動することを指示します。
+ログインシェルとそうでないシェルの違いについては <filename>bash(1)</filename> や <command>info bash</command> を参照してください。
 </para>
 @z
-

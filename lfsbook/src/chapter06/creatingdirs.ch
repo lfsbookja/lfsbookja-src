@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -28,11 +37,9 @@ LFS ファイルシステムにおけるディレクトリ構成を作り出し�
   temporary files.</para>
 @y
 <para>
-ディレクトリは標準ではパーミッションモード 755
-で生成されますが、すべてのディレクトリをこのままとするのは適当ではありません。
+ディレクトリは標準ではパーミッションモード 755 で生成されますが、すべてのディレクトリをこのままとするのは適当ではありません。
 上のコマンド実行ではパーミッションを変更している箇所が二つあります。
-一つは <systemitem class="username">root</systemitem>
-ユーザーのホームディレクトリに対してであり、もう一つはテンポラリディレクトリに対してです。
+一つは <systemitem class="username">root</systemitem> ユーザーのホームディレクトリに対してであり、もう一つはテンポラリディレクトリに対してです。
 </para>
 @z
 
@@ -47,16 +54,12 @@ LFS ファイルシステムにおけるディレクトリ構成を作り出し�
   <quote>sticky bit,</quote> the highest bit (1) in the 1777 bit mask.</para>
 @y
 <para>
-パーミッションモードを変更している一つめは
-<filename class="directory">/root</filename>
-ディレクトリに対して、他のユーザーによるアクセスを制限するためです。
+パーミッションモードを変更している一つめは <filename
+class="directory">/root</filename> ディレクトリに対して、他のユーザーによるアクセスを制限するためです。
 通常のユーザーが持つ、自分自身のホームディレクトリへのアクセス権設定と同じことを行ないます。
-二つめのモード変更は <filename class="directory">/tmp</filename>
-ディレクトリや <filename class="directory">/var/tmp</filename>
-ディレクトリに対して、どのユーザーも書き込み可能とし、ただし他のユーザーが作成したファイルは削除できないようにします。
-ビットマスク 1777 の最上位ビット、いわゆる
-<quote>スティッキービット (sticky bit)</quote>
-を用いて実現します。
+二つめのモード変更は <filename class="directory">/tmp</filename> ディレクトリや <filename
+class="directory">/var/tmp</filename> ディレクトリに対して、どのユーザーも書き込み可能とし、ただし他のユーザーが作成したファイルは削除できないようにします。
+ビットマスク 1777 の最上位ビット、いわゆる<quote>スティッキービット (sticky bit)</quote>を用いて実現します。
 </para>
 @z
 
@@ -87,20 +90,17 @@ LFS ファイルシステムにおけるディレクトリ構成を作り出し�
     to the FHS.</para>
 @y
 <para>
-本書のディレクトリ構成は標準ファイルシステム構成
-(Filesystem Hierarchy Standard; FHS)
-に基づいています。
-(その情報は <ulink url="http://www.pathname.com/fhs/"/>
-に示されています。)
-FHS に加えて <filename class="directory">man</filename>、
+本書のディレクトリ構成は標準ファイルシステム構成 (Filesystem Hierarchy Standard; FHS) に基づいています。(その情報は <ulink 
+url="http://www.pathname.com/fhs/"/> に示されています。) FHS に加えて <filename
+class="directory">man</filename>、
 <filename class="directory">doc</filename>、
 <filename class="directory">info</filename>
 の各ディレクトリに対するシンボリックリンクも作成します。
 これは多くのパッケージがドキュメントファイルをインストールする先として
-<filename class="directory">/usr/share/&lt;ディレクトリ&gt;</filename> や
-<filename class="directory">/usr/local/share/&lt;ディレクトリ&gt;</filename>
-ではなく、いまだに <filename class="directory">/usr/&lt;ディレクトリ&gt;</filename> や
-<filename class="directory">/usr/local/&lt;ディレクトリ&gt;</filename>
+<filename class="directory">/usr/share/</filename>&lt;ディレクトリ&gt; や
+<filename class="directory">/usr/local/share/</filename>&lt;ディレクトリ&gt;
+ではなく、いまだに <filename class="directory">/usr/</filename>&lt;ディレクトリ&gt; や
+<filename class="directory">/usr/local/</filename>&lt;ディレクトリ&gt;
 としているためです。
 また FHS では <filename class="directory">/usr/local/games</filename> や
 <filename class="directory">/usr/share/games</filename>

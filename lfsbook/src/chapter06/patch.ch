@@ -19,7 +19,7 @@
     <command>diff</command> program.</para>
 @y
 <para>
-Patch パッケージは<quote>パッチ</quote>ファイルを適用することにより、ファイルの修正・生成を行うプログラムを提供します。
+Patch パッケージは<quote>パッチ</quote>ファイルを適用することにより、ファイルの修正、生成を行うプログラムを提供します。
 <quote>パッチ</quote>ファイルは <command>diff</command> プログラムにより生成されます。
 </para>
 @z

@@ -176,6 +176,6 @@
   <command>man passwd</command> という入力に対しては<quote>passwd</quote>という語に合致する最初のマニュアルページが表示されるものであり <filename>/usr/share/man/man1/passwd.1</filename> が表示されることになります。
   特定のマニュアルページを見たい場合は <command>man 5 passwd</command> といった入力を行う必要があります。
   マニュアルページが複数あるケースはまれですので、普通は <command>man
-  <replaceable>&lt;プログラム名&gt;</replaceable></command> と入力するだけで十分です。
+  &lt;プログラム名&gt;</command> と入力するだけで十分です。
   </para>
 @z
