@@ -35,11 +35,11 @@
 @z
 
 @x
-    <para>Apply a patch to fix an issue caused by the removal of the Video for
-    Linux 1 API from Linux-&linux-version;:</para>
+    <para>Fix a bug in the Makefile that prevents some tools from being built
+    and installed:</para>
 @y
     <para>
-    Linux-&linux-version; から Linux 1 API における Video が取り除かれることになったため、これに伴う問題を解消するためのパッチを適用します。
+    Makefile にて特定のツールがビルドおよびインストールされないバグを修正します。
     </para>
 @z
 

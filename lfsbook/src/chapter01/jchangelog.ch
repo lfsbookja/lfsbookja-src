@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/{coreutils,libpipeline,udev}:
+          SVN-20110418, r9508 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-04-16</para>
       <itemizedlist>
         <listitem>

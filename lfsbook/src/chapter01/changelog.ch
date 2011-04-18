@@ -48,6 +48,98 @@
 @z
 
 @x
+      <para>2011-04-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to File-5.06. Fixes
+          <ulink url="&lfs-ticket-root;2860">#2860</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.38.3. Fixes
+          <ulink url="&lfs-ticket-root;2859">#2859</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Coreutils-8.11. Fixes
+          <ulink url="&lfs-ticket-root;2858">#2858</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-DB-2.6.0.2, including adding its
+          dependency, libpipeline-1.2.0. Fixes
+          <ulink url="&lfs-ticket-root;2857">#2857</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Less-443. Fixes
+          <ulink url="&lfs-ticket-root;2856">#2856</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add latest upstream patch for Bash. Fixes
+          <ulink url="&lfs-ticket-root;2855">#2855</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Ncurses-5.9. Fixes
+          <ulink url="&lfs-ticket-root;2853">#2853</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to MPFR-3.0.1. Fixes
+          <ulink url="&lfs-ticket-root;2852">#2852</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to XZ-Utils-5.0.2. Fixes
+          <ulink url="&lfs-ticket-root;2851">#2851</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-167. Fixes
+          <ulink url="&lfs-ticket-root;2850">#2850</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-04-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - File-5.06 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2860">#2860</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-2.6.38.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2859">#2859</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils-8.11 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2858">#2858</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-DB-2.6.0.2 へのアップグレード。
+          依存パッケージ libpipeline-1.2.0 の追加。
+          <ulink url="&lfs-ticket-root;2857">#2857</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Less-443 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2856">#2856</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bash にて最新のアップストリームによるパッチを追加。
+          <ulink url="&lfs-ticket-root;2855">#2855</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Ncurses-5.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2853">#2853</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPFR-3.0.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2852">#2852</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - XZ-Utils-5.0.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2851">#2851</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Udev-167 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2850">#2850</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-04-13</para>
       <itemizedlist>
         <listitem>

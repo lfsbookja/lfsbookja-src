@@ -769,6 +769,25 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
+@x Libpipeline
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, Sed, and Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
+         Make, Sed, Texinfo</seg>
+@z
+@x
+        <segtitle>&testsuites;</segtitle>
+@y
+        <segtitle>&testsuites;</segtitle>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Libtool
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
          Make, Sed, and Texinfo</seg>
@@ -867,10 +886,10 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Man-DB
          <seg>Bash, Binutils, Bzip2, Coreutils, Flex, GCC, GDBM, Gettext,
-         Glibc, Grep, Groff, Gzip, Less, Make, Sed, and Xz</seg>
+         Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Sed, and Xz</seg>
 @y
          <seg>Bash, Binutils, Bzip2, Coreutils, Flex, GCC, GDBM, Gettext,
-         Glibc, Grep, Groff, Gzip, Less, Make, Sed, Xz</seg>
+         Glibc, Grep, Groff, Gzip, Less, Libpipeline, Make, Sed, Xz</seg>
 @z
 @x
           <seg>Not run. Requires Man-DB test suite package</seg>

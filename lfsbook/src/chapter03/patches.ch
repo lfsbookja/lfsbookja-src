@@ -83,19 +83,19 @@
       </listitem>
 @z
 
-@x
-      <term>Coreutils Sparse-Fiemap Test Fix Patch - <token>&coreutils-sparse_fiemap-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&coreutils-sparse_fiemap-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-sparse_fiemap-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Coreutils Sparse-Fiemap Test Fix Patch - <token>&coreutils-sparse_fiemap-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&coreutils-sparse_fiemap-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-sparse_fiemap-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Coreutils Sparse-Fiemap Test Fix Patch - <token>&coreutils-sparse_fiemap-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&coreutils-sparse_fiemap-patch;"/></para>
+%         <para>MD5 sum: <literal>&coreutils-sparse_fiemap-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Coreutils Sparse-Fiemap Test Fix Patch - <token>&coreutils-sparse_fiemap-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&coreutils-sparse_fiemap-patch;"/></para>
+%         <para>MD5 sum: <literal>&coreutils-sparse_fiemap-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Coreutils Uname Patch - <token>&coreutils-uname-patch-size;</token>:</term>
@@ -273,19 +273,19 @@
       </listitem>
 @z
 
-@x
-      <term>Udev V4L Patch - <token>&udev-v4l-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&udev-v4l-patch;"/></para>
-        <para>MD5 sum: <literal>&udev-v4l-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Udev V4L Patch - <token>&udev-v4l-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&udev-v4l-patch;"/></para>
-        <para>MD5 sum: <literal>&udev-v4l-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Udev V4L Patch - <token>&udev-v4l-patch-size;</token>:</term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&udev-v4l-patch;"/></para>
+%         <para>MD5 sum: <literal>&udev-v4l-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Udev V4L Patch - <token>&udev-v4l-patch-size;</token>:</term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&udev-v4l-patch;"/></para>
+%         <para>MD5 sum: <literal>&udev-v4l-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
   <para>Total size of these patches: about <returnvalue/></para>
