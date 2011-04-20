@@ -1,7 +1,7 @@
 BOOKdir = @abs_bookdir@/bootscripts/lfs/init.d
 srcdir = @srcdir@
 srcs = checkfs cleanfs console consolelog functions halt localnet \
-	modules mountfs mountkernfs network rc reboot sendsignals \
+	modules mountfs mountvirtfs network rc reboot sendsignals \
 	setclock swap sysctl sysklogd template udev udev_retry
 
 all: $(srcs)
@@ -24,7 +24,7 @@ modules: $(BOOKdir)/modules
 	cp -p $(BOOKdir)/$@ $@
 mountfs: $(BOOKdir)/mountfs
 	cp -p $(BOOKdir)/$@ $@
-mountkernfs: $(BOOKdir)/mountkernfs
+mountvirtfs: $(BOOKdir)/mountvirtfs
 	cp -p $(BOOKdir)/$@ $@
 network: $(BOOKdir)/network
 	cp -p $(BOOKdir)/$@ $@

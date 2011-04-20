@@ -48,8 +48,37 @@
 @z
 
 @x
+      <para>2011-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update cleanfs bootscript to 
+          not clean /var/run or /var/lock because
+          they are now linked to a fresh tmpfs.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプト cleanfs を更新。
+          /var/run や /var/lock をクリアしないように。
+          これは tmpfs を新たにリンクするようにしたため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-04-18</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add new /run mount point to top
+          level directories.  Mount a tmpfs on /run in
+          bootscripts.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - In Chapter 6, move File to before
+          binutils to prevent some configure warnings.</para>
+        </listitem>
         <listitem>
           <para>[matthew] - Upgrade to File-5.06. Fixes
           <ulink url="&lfs-ticket-root;2860">#2860</ulink>.</para>
@@ -95,6 +124,14 @@
 @y
       <para>2011-04-18</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - トップディレクトリにマウントポイント /run を追加し、ブートスクリプトにて tmpfs を /run にマウントすることに。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第６章にて File パッケージを binutils よりも前に移動させることで、configure における警告を回避することに。
+          </para>
+        </listitem>
         <listitem>
           <para>[matthew] - File-5.06 へのアップグレード。
           <ulink url="&lfs-ticket-root;2860">#2860</ulink> を Fix に。</para>
