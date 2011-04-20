@@ -28,15 +28,13 @@
     bindings to <application>GTK</application> and uses the same instructions.
     Both can be installed, if needed. </para>
 @y
-<para>
-<application>rep-gtk</application> package contains a
-<application>Lisp</application> and <application>GTK</application> binding.
-This is useful for extending <application>GTK-2</application> and
-<application>GDK</application> libraries with <application>Lisp</application>.
-Starting at <application>rep-gtk</application>-0.15, the package contains the
-bindings to <application>GTK</application> and uses the same instructions.
-Both can be installed, if needed. 
-</para>
+    <para>
+    <application>rep-gtk</application> パッケージは、<application>Lisp</application> および <application>GTK</application> バインディングを提供します。
+    これは <application>GTK-2</application> ライブラリと <application>GDK</application> ライブラリを <application>Lisp</application> により拡張するものとして利用できます。
+    Starting at <application>rep-gtk</application>-0.15, the package contains the
+    bindings to <application>GTK</application> and uses the same instructions.
+    Both can be installed, if needed.
+    </para>
 @z
 
 @x

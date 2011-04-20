@@ -33,14 +33,11 @@
     allows the construction of code that involves minimum overhead across a
     variety of architectures. </para>
 @y
-<para>
-<application>libatomic_ops</application> provides implementations for
-atomic memory update operations on a number of architectures. This allows
-direct use of these in reasonably portable code. Unlike earlier similar
-packages, this one explicitly considers memory barrier semantics, and
-allows the construction of code that involves minimum overhead across a
-variety of architectures. 
-</para>
+    <para>
+    <application>libatomic_ops</application> は、数多くの CPU アーキテクチャーに対して、アトミック (atomic) なメモリ更新処理の実装を提供します。
+    このパッケージを用いることにより、そのような処理に対しての、移植可能なソースコードが利用できるようになります。
+    このようなことを行う、かつての類似パッケージに比べて、メモリバリア (memory barrier) の機械語を明示的に考慮したり、各種アーキテクチャーにおいてのオーバーヘッドを最小限とするコードの構築が可能となります。
+    </para>
 @z
 
 @x

@@ -62,6 +62,94 @@
 @z
 
 @x
+      <para>March 26th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Removed unneeded patch in OpenSSL.</para>
+        </listitem>
+        <listitem>
+          <para>[thomas] - Fix invalid url at phonon. Thanks to Edgar Alwers for reporting.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/03/26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - OpenSSL にて不要なパッチを削除。</para>
+        </listitem>
+        <listitem>
+          <para>[thomas] - Fix invalid url at phonon. Thanks to Edgar Alwers for reporting.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 25th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to BLFS-ca-bundle-3.12.9.0.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to OpenSSL-1.0.0d.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/03/25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - BLFS-ca-bundle-3.12.9.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - OpenSSL-1.0.0d へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 24th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Use correct md5sum for the ghostscript tarball. Thanks
+          to Fernando Oliveira for noticing.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/03/24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Use correct md5sum for the ghostscript tarball. Thanks
+          to Fernando Oliveira for noticing.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 13th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Correct the list of libraries installed by
+          Boost.</para>
+        </listitem>
+        <listitem>
+          <para>[thomas] - Wording corrections in the KDE4 intro page, fix URL
+          at Kdeplasma-addons and add more details about some options in
+          Kdelibs.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/03/13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[thomas] - Boost によってインストールされるライブラリの修正。</para>
+        </listitem>
+        <listitem>
+          <para>[thomas] - KDE4 のはじめにのページにて記述修正。
+          Kdeplasma-アドオンにおける URL の修正。Kdelibs におけるオプションについて説明を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>March 9th, 2011</para>
       <itemizedlist>
         <listitem>

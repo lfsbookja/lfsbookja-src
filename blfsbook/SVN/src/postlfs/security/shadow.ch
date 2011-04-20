@@ -30,19 +30,12 @@
     reinstalling <application>Shadow</application> will allow programs such as
     <command>login</command> and <command>su</command> to utilize PAM.</para>
 @y
-<para>
-<application>Shadow</application> は LFS において既にインストールしています。
-これを再インストールする必要があるのは、LFS の構築後に
-<application>CrackLib</application> または
-<application>Linux-PAM</application>
-をインストールした場合です。
-<application>CrackLib</application> と
-<application>Shadow</application> をインストールすれば、強力なパスワード機能を利用できます。
-<application>Linux-PAM</application> と
-<application>Shadow</application> をインストールすれば、
-<command>login</command> や <command>su</command>
-において PAM モジュールを利用できます。
-</para>
+    <para>
+    <application>Shadow</application> は LFS において既にインストールしています。
+    これを再インストールする必要があるのは、LFS の構築後に <application>CrackLib</application> または <application>Linux-PAM</application> をインストールした場合です。
+    <application>CrackLib</application> と <application>Shadow</application> をインストールすれば、強力なパスワード機能を利用できます。
+    <application>Linux-PAM</application> と <application>Shadow</application> をインストールすれば、<command>login</command> や <command>su</command> において PAM モジュールを利用できます。
+    </para>
 @z
 
 @x
@@ -124,15 +117,10 @@
       <application>Shadow</application> is being reinstalled to support the
       <application>Linux-PAM</application> installation.</para>
 @y
-<para>
-以下に説明するビルド手順は <application>Linux-PAM</application>
-がインストールされていることを前提としています。
-(<application>CrackLib</application>
-はインストールしているかどうかはどちらでも変わりません。)
-<application>Shadow</application>
-を再インストールすることによって
-<application>Linux-PAM</application> の機能を活用するものです。
-</para>
+      <para>
+      以下に説明するビルド手順は <application>Linux-PAM</application> がインストールされていることを前提としています。
+      (<application>CrackLib</application> はインストールしているかどうかはどちらでも変わりません。) <application>Shadow</application> を再インストールすることによって <application>Linux-PAM</application> の機能を活用するものです。
+      </para>
 @z
 
 @x
@@ -144,44 +132,33 @@
       <command>configure</command> script below and also issue the following
       command:</para>
 @y
-<para>
-<application>Shadow</application>
-を再インストールするにあたって、
-<application>CrackLib</application>
-による強力なパスワード機能を導入しようとする場合で、
-かつ <application>Linux-PAM</application>
-の機能は利用しないことにする場合は、
-<command>configure</command> スクリプトのパラメータとして
-<parameter>--with-libcrack</parameter>
-を指定してください。
-そしてさらに以下のコマンドも実行してください。
-</para>
+      <para>
+      <application>Shadow</application> を再インストールするにあたって、<application>CrackLib</application> による強力なパスワード機能を導入しようとする場合で、かつ <application>Linux-PAM</application> の機能は利用しないことにする場合は、<command>configure</command> スクリプトのパラメータとして <parameter>--with-libcrack</parameter> を指定してください。
+      そしてさらに以下のコマンドも実行してください。
+      </para>
 @z
 
 @x
     <para>Reinstall <application>Shadow</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Shadow</application> を再インストールします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Shadow</application> を再インストールします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>&j-notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -197,13 +174,11 @@
     <application>Coreutils</application> package installed during LFS is
     preferred.</para>
 @y
-<para><command>sed -i 's/groups$(EXEEXT) //' src/Makefile.in</command>:
-このコマンドは <command>groups</command>
-プログラムをインストールしないようにします。
-<command>groups</command>
-プログラムは LFS 構築時の <application>Coreutils</application>
-パッケージが提供するものの方が適切であるためです。
-</para>
+    <para>
+    <command>sed -i 's/groups$(EXEEXT) //' src/Makefile.in</command>:
+    このコマンドは <command>groups</command> プログラムをインストールしないようにします。
+    <command>groups</command> プログラムは LFS 構築時の <application>Coreutils</application> パッケージが提供するものの方が適切であるためです。
+    </para>
 @z
 
 @x
@@ -212,11 +187,11 @@
     <command>groups</command> man pages so the existing ones installed from
     the <application>Coreutils</application> package are not replaced.</para>
 @y
-<para><command>find man -name Makefile.in -exec ... {} \;</command>:
-このコマンドは <command>groups</command> の man ページをインストールしないようにします。
-LFS 構築時に <application>Coreutils</application>
-パッケージによってインストールされた man ページを置き換えないようにするものです。
-</para>
+    <para>
+    <command>find man -name Makefile.in -exec ... {} \;</command>:
+    このコマンドは <command>groups</command> の man ページをインストールしないようにします。
+    LFS 構築時に <application>Coreutils</application> パッケージによってインストールされた man ページを置き換えないようにするものです。
+    </para>
 @z
 
 @x
@@ -224,11 +199,10 @@ LFS 構築時に <application>Coreutils</application>
     command disables the installation of Chinese and Korean manual pages, since
     <application>Man-DB</application> cannot format them properly.</para>
 @y
-<para><command>sed -i -e '...' -e '...' man/Makefile.in</command>:
-このコマンドは中国語および韓国語による man ページをインストールしないようにします。
-これらのページは <application>Man-DB</application>
-が適切に取り扱うことができないためです。
-</para>
+    <para><command>sed -i -e '...' -e '...' man/Makefile.in</command>:
+    このコマンドは中国語および韓国語による man ページをインストールしないようにします。
+    これらのページは <application>Man-DB</application> が適切に取り扱うことができないためです。
+    </para>
 @z
 
 @x
@@ -242,15 +216,17 @@ LFS 構築時に <application>Coreutils</application>
     default to the <filename class="directory">/var/mail</filename>
     location.</para>
 @y
-<para><command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD MD5@'
--e 's@/var/spool/mail@/var/mail@' etc/login.defs</command>:
-Instead of using the default 'crypt' method, this command modifies the
-installation to use the more secure 'MD5' method of password encryption,
-which also allows passwords longer than eight characters. It also changes
-the obsolete <filename class="directory">/var/spool/mail</filename>
-location for user mailboxes that <application>Shadow</application> uses by
-default to the <filename class="directory">/var/mail</filename>
-location.</para>
+    <para>
+    <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD MD5@'
+    -e 's@/var/spool/mail@/var/mail@' etc/login.defs</command>:
+    Instead of using the default 'crypt' method, this command modifies the
+    installation to use the more secure 'MD5' method of password encryption,
+    which also allows passwords longer than eight characters. It also changes
+    the obsolete <filename class="directory">/var/spool/mail</filename>
+    location for user mailboxes that <application>Shadow</application> uses by
+    default to the <filename class="directory">/var/mail</filename>
+    location.
+    </para>
 @z
 
 @x
@@ -259,10 +235,12 @@ location.</para>
     <filename class='directory'>/usr</filename> filesystem is not mounted so
     it is moved into the root partition.</para>
 @y
-<para><command>mv -v /usr/bin/passwd /bin</command>: The
-<command>passwd</command> program may be needed during times when the
-<filename class='directory'>/usr</filename> filesystem is not mounted so
-it is moved into the root partition.</para>
+    <para>
+    <command>mv -v /usr/bin/passwd /bin</command>: The
+    <command>passwd</command> program may be needed during times when the
+    <filename class='directory'>/usr</filename> filesystem is not mounted so
+    it is moved into the root partition.
+    </para>
 @z
 
 @x
@@ -282,15 +260,17 @@ it is moved into the root partition.</para>
     by <command>useradd</command>, issue the
     following command as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para><application>Shadow</application>'s stock configuration for the
-<command>useradd</command> utility may not be desirable for your
-installation. One default parameter causes <command>useradd</command> to
-create a mailbox file for any newly created user.
-<command>useradd</command> will make the group ownership of this file to
-the <systemitem class="groupname">mail</systemitem> group with 0660
-permissions. If you would prefer that these mailbox files are not created
-by <command>useradd</command>, issue the
-following command as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <application>Shadow</application>'s stock configuration for the
+    <command>useradd</command> utility may not be desirable for your
+    installation. One default parameter causes <command>useradd</command> to
+    create a mailbox file for any newly created user.
+    <command>useradd</command> will make the group ownership of this file to
+    the <systemitem class="groupname">mail</systemitem> group with 0660
+    permissions. If you would prefer that these mailbox files are not created
+    by <command>useradd</command>, issue the
+    following command as the <systemitem class="username">root</systemitem> user:
+    </para>
 @z
 
 @x
@@ -470,7 +450,7 @@ links:</para>
 @x
         <title>'system-passwd' (without cracklib)</title>
 @y
-        <title>'system-passwd' (without cracklib)</title>
+        <title>'system-passwd' (cracklib がない場合)</title>
 @z
 
 @x
@@ -509,8 +489,8 @@ links:</para>
         and 'usermod'</title>
 @y
         <title>'chfn', 'chgpasswd', 'chgpasswd', 'chsh', 'groupadd',
-        'groupdel', 'groupmems', 'groupmod', 'newusers', 'useradd', 'userdel'
-        and 'usermod'</title>
+        'groupdel', 'groupmems', 'groupmod', 'newusers', 'useradd', 'userdel',
+        'usermod'</title>
 @z
 
 @x
@@ -552,7 +532,7 @@ links:</para>
 @x
         <title>Other</title>
 @y
-        <title>Other</title>
+        <title>その他</title>
 @z
 
 @x
@@ -574,7 +554,7 @@ links:</para>
 @x
         <title>Configuring Login Access</title>
 @y
-        <title>Configuring Login Access</title>
+        <title>ログインアクセスの設定</title>
 @z
 
 @x

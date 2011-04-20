@@ -37,10 +37,9 @@
     <para>This section will describe how to set up, administer and secure
     a <application>Subversion</application> server.</para>
 @y
-<para>
-この節では <application>Subversion</application>
-サーバーの構築、および安全な管理方法などについて説明します。
-</para>
+    <para>
+    この節では <application>Subversion</application> サーバーの構築、および安全な管理方法などについて説明します。
+    </para>
 @z
 
 @x
@@ -55,8 +54,7 @@
     <xref linkend="openssh"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para><xref linkend="subversion"/> と
-    <xref linkend="openssh"/></para>
+    <para><xref linkend="subversion"/> と <xref linkend="openssh"/></para>
 @z
 
 @x
@@ -72,31 +70,26 @@
     method, with <command>svnserve</command> available for anonymous
     access.</para>
 @y
-<para>
-The following instructions will install a
-<application>Subversion</application> server, which will be set up
-to use <application>OpenSSH</application> as the secure remote access
-method, with <command>svnserve</command> available for anonymous
-access.
-</para>
+    <para>
+    これ以降では <application>Subversion</application> サーバーのインストール手順を示します。
+    <application>OpenSSH</application> を利用すれば、セキュアなリモートアクセスを実現することもできます。
+    ここでは <command>svnserve</command> により匿名 (anonymous) アクセスを行うものとします。
+    </para>
 @z
 
 @x
     <para>Configuration of the <application>Subversion</application> server
     consists of the following steps:</para>
 @y
-<para>
-<application>Subversion</application>
-サーバーの設定は、以下に示す手順により実施します。
-</para>
+    <para>
+    <application>Subversion</application> サーバーの設定は、以下に示す手順により実施します。
+    </para>
 @z
 
 @x
       <title>1. Setup Users, Groups, and Permissions</title>
 @y
-<title>
-1. ユーザー、グループ、パーミッションの設定
-</title>
+      <title>1. ユーザー、グループ、パーミッションの設定</title>
 @z
 
 @x
@@ -105,12 +98,10 @@ access.
       configuration. Create the <systemitem class="username">svn</systemitem>
       user and group with the following commands:</para>
 @y
-<para>
-設定を行うには、まずは <systemitem class='username'>root</systemitem> 
-ユーザーになって操作します。
-以下のコマンドを実行して <systemitem class="username">svn</systemitem>
-ユーザーおよびグループを生成します。
-</para>
+      <para>
+      設定を行うには、まずは <systemitem class='username'>root</systemitem> ユーザーになって操作します。
+      以下のコマンドを実行して <systemitem class="username">svn</systemitem> ユーザーおよびグループを生成します。
+      </para>
 @z
 
 @x
@@ -120,13 +111,11 @@ access.
       repository and add the <systemitem class="username">svn</systemitem>
       user to that group with the following commands:</para>
 @y
-<para>
-複数のリポジトリを利用するなら、それらのリポジトリを取り扱うグループを1つ作っておけば、管理が容易になります。
-以下のコマンドにより、テストリポジトリを取り扱う <systemitem class="groupname">svntest</systemitem>
-グループを生成します。
-そして <systemitem class="username">svn</systemitem>
-ユーザーをそのグループに加えます。
-</para>
+      <para>
+      複数のリポジトリを利用するなら、それらのリポジトリを取り扱うグループを1つ作っておけば、管理が容易になります。
+      以下のコマンドにより、テストリポジトリを取り扱う <systemitem class="groupname">svntest</systemitem> グループを生成します。
+      そして <systemitem class="username">svn</systemitem> ユーザーをそのグループに加えます。
+      </para>
 @z
 
 @x
@@ -135,12 +124,11 @@ access.
       owner and group. This is made mandatory by creating a wrapper script for
       <command>svn</command> and <command>svnserve</command>:</para>
 @y
-<para>
-さらに新しいファイルへの書き込み権限を与えるには、所有者とそのグループがリポジトリを取り扱えるものとしなければならず、
-<command>umask 002</command> を実行する必要があります。
-<command>svn</command> と <command>svnserve</command>
-に対して、ラッパースクリプトを生成することで、これを確実に実現します。
-</para>
+      <para>
+      さらに新しいファイルへの書き込み権限を与えるには、所有者とそのグループがリポジトリを取り扱えるものとしなければならず、
+      <command>umask 002</command> を実行する必要があります。
+      <command>svn</command> と <command>svnserve</command> に対して、ラッパースクリプトを生成することで、これを確実に実現します。
+      </para>
 @z
 
 @x
@@ -148,20 +136,16 @@ access.
         the repository over HTTP, even for anonymous access, you should wrap
         <command>/usr/sbin/httpd</command> in a similar script.</para>
 @y
-<para>
-<application>Apache</application>
-を使ってリポジトリに対し HTTP 経由でのアクセスを行う場合、特に匿名アクセスも可能とする場合、
-<command>/usr/sbin/httpd</command>
-コマンドに対して、上と同様のラップスクリプトを生成する必要があります。
-</para>
+        <para>
+        <application>Apache</application> を使ってリポジトリに対し HTTP 経由でのアクセスを行う場合、特に匿名アクセスも可能とする場合、
+        <command>/usr/sbin/httpd</command> コマンドに対して、上と同様のラップスクリプトを生成する必要があります。
+        </para>
 @z
 
 @x
       <title>2. Create a Subversion repository.</title>
 @y
-<title>
-2. Subversion リポジトリの生成
-</title>
+      <title>2. Subversion リポジトリの生成</title>
 @z
 
 @x
@@ -174,9 +158,11 @@ access.
       url="http://svnbook.red-bean.com/svnbook-1.1/ch05.html#svn-ch-5-sect-1.2.A"/>.
       </para>
 @y
-      <para>With subversion-1.1.0 and greater, a new type of repository
-      data-store is available, FSFS. There is a tradeoff for speed with
-      the new backend, however, the repository can now be placed on a
+      <para>
+      subversion-1.1.0 以降では、新たなタイプのリポジトリデータベース FSFS が導入されました。
+      この新たなバックエンドには処理性能の面でのトレードオフがあります。
+      
+however, the repository can now be placed on a
       network mount, and any corruption does not require an admin to
       recover the repository.  For more information and comparison between
       FSFS and BDB, see <ulink
@@ -188,8 +174,9 @@ access.
       <para>Create a new <application>Subversion</application> repository with
       the following commands:</para>
 @y
-      <para>Create a new <application>Subversion</application> repository with
-      the following commands:</para>
+      <para>
+      <application>Subversion</application> の新たなリポジトリは、以下のコマンドにより生成します。
+      </para>
 @z
 
 @x
@@ -200,7 +187,8 @@ access.
       <filename>svntest/</filename>. You'll need to setup a directory
       tree similar to the following:</para>
 @y
-      <para>Now that the repository is created, it should be populated with
+      <para>
+      リポジトリが生成できたので、これを利用可能とする設定を行います。
       with something useful. You'll need to have a predefined directory
       layout set up exactly as you want your repository to look. For
       example, here is a sample BLFS layout setup with a root of
@@ -212,8 +200,9 @@ access.
       <para>Once you've created your directory layout as shown above, you
       are ready to do the initial import:</para>
 @y
-      <para>Once you've created your directory layout as shown above, you
-      are ready to do the initial import:</para>
+      <para>
+      上に示したようなディレクトリレイアウトに基づいてディレクトリを生成したら、初期インポートを行います。
+      </para>
 @z
 
 @x
@@ -222,10 +211,13 @@ access.
       <systemitem class="groupname">svn</systemitem> and
       <systemitem class="groupname">svntest</systemitem> groups:</para>
 @y
-      <para>Now change owner and group information on the
-      repository, and add an unprivileged user to the
-      <systemitem class="groupname">svn</systemitem> and
-      <systemitem class="groupname">svntest</systemitem> groups:</para>
+      <para>
+      リポジトリに対して、ユーザーとグループの所有を設定します。
+      そして一般ユーザーに対して <systemitem
+      class="groupname">svn</systemitem> と <systemitem
+      class="groupname">svntest</systemitem>
+      のグループへの設定を行います。
+      </para>
 @z
 
 @x
@@ -238,8 +230,11 @@ access.
       <systemitem class="groupname">svn</systemitem> and
       <systemitem class="groupname">svntest</systemitem> groups.</para>
 @y
-      <para><systemitem class="groupname">svntest</systemitem> is the group
-      assigned to the svntest repository. As mentioned earlier, this eases
+      <para>
+      <systemitem class="groupname">svntest</systemitem> は svntest リポジトリに割り当てるグループです。
+      
+
+As mentioned earlier, this eases
       administration of multiple repositories when using
       <application>OpenSSH</application> for authentication. Going forward,
       you'll need to add your unprivileged user, and any additional users that
@@ -274,8 +269,9 @@ access.
       <para>Now, return to an unprivileged user account, and take a
       look at the new repository using <command>svnlook</command>:</para>
 @y
-      <para>Now, return to an unprivileged user account, and take a
-      look at the new repository using <command>svnlook</command>:</para>
+      <para>
+      一般ユーザーに戻って、新たなリポジトリを参照するために <command>svnlook</command> コマンドを実行します。
+      </para>
 @z
 
 @x
@@ -291,7 +287,7 @@ access.
 @x
       <title>3. Configure the Server</title>
 @y
-      <title>3. Configure the Server</title>
+      <title>3. サーバーの設定</title>
 @z
 
 @x
@@ -391,4 +387,3 @@ access.
       startup, install the svn bootscript included in the
       <xref linkend="bootscripts"/> package.</para>
 @z
-

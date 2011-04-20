@@ -17,7 +17,7 @@
 <sect1 id="x-setup" xreflabel="X Window System Components">
   <?dbhtml filename="x-setup.html"?>
 @y
-<sect1 id="x-setup" xreflabel="X Window System Components">
+<sect1 id="x-setup" xreflabel="X ウィンドウシステムコンポーネント">
   <?dbhtml filename="x-setup.html"?>
 @z
 
@@ -31,8 +31,8 @@
   <para condition="html" role="usernotes">User Notes:
   <ulink url='&blfs-wiki;/XWindowSystemComponents'/></para>
 @y
-<para condition="html" role="usernotes">ユーザー情報:
-<ulink url='&blfs-wiki;/XWindowSystemComponents'/></para>
+  <para condition="html" role="usernotes">&j-UserNotes;:
+  <ulink url='&blfs-wiki;/XWindowSystemComponents'/></para>
 @z
 
 @x
@@ -46,9 +46,7 @@
 @x
     <title>Creating an X11R6 Compatibility Symlink</title>
 @y
-<title>
-X11R6 との互換性を取るシンボリックリンクの生成
-</title>
+    <title>X11R6 との互換性を取るシンボリックリンクの生成</title>
 @z
 
 @x
@@ -63,19 +61,13 @@ X11R6 との互換性を取るシンボリックリンクの生成
     <filename class='directory'>/usr</filename>. Some people want to install
     it in a custom location.</para>
 @y
-<para>
-比較的最近まで、皆さんがインストールしたり取り扱ったりしている
-<application>X ウィンドウアプリケーション</application>は、たいていは
-<filename class='directory'>/usr/X11R6</filename>
-ディレクトリ以下にインストールされていました。
-しばらくはこれが標準となっていました。
-したがって開発者は、そこに配置される <application>X</application>
-アプリケーションを探し出して取り出すようなインストールスクリプトを構築してきました。
-そのような流れも今は変わり、最近では <application>X</application>
-アプリケーションを <filename class='directory'>/usr</filename>
-ディレクトリ配下にインストールするものになっています。
-ただ中には、従来のディレクトリにインストールすることを望む人もいます。
-</para>
+    <para>
+    比較的最近まで、皆さんがインストールしたり取り扱ったりしている <application>X ウィンドウアプリケーション</application>は、たいていは <filename class='directory'>/usr/X11R6</filename> ディレクトリ以下にインストールされていました。
+    しばらくはこれが標準となっていました。
+    したがって開発者は、そこに配置される <application>X</application> アプリケーションを探し出して取り出すようなインストールスクリプトを構築してきました。
+    そのような流れも今は変わり、最近では <application>X</application> アプリケーションを <filename class='directory'>/usr</filename> ディレクトリ配下にインストールするものになっています。
+    ただ中には、従来のディレクトリにインストールすることを望む人もいます。
+    </para>
 @z
 
 @x
@@ -87,17 +79,15 @@ X11R6 との互換性を取るシンボリックリンクの生成
     the long term solution to the problem. Upstream developers need to modernize
     their installation scripts and eliminate the problem altogether.</para>
 @y
-<para>
-パッケージ開発においては、上のような流れに追随していないものも多くあります。
-したがってそのパッケージが <application>X</application>
-アプリケーションを探し出す場所が <filename class='directory'>/usr/X11R6</filename>
-のままであるものもあります。だとするとそのパッケージをビルドする際にエラーとなってしまいます。
-
-Though for most packages it is not
-difficult to 'hack' the installation script to fix the problem, that is not
-the long term solution to the problem. Upstream developers need to modernize
-their installation scripts and eliminate the problem altogether.
-</para>
+    <para>
+    パッケージ開発においては、上のような流れに追随していないものも多くあります。
+    したがってそのパッケージが <application>X</application> アプリケーションを探し出す場所が <filename class='directory'>/usr/X11R6</filename> のままであるものもあります。だとするとそのパッケージをビルドする際にエラーとなってしまいます。
+    
+    Though for most packages it is not
+    difficult to 'hack' the installation script to fix the problem, that is not
+    the long term solution to the problem. Upstream developers need to modernize
+    their installation scripts and eliminate the problem altogether.
+    </para>
 @z
 
 @x
@@ -129,11 +119,10 @@ their installation scripts and eliminate the problem altogether.
     create a basic X Window System configuration file with the following
     command:</para>
 @y
-<para>
-X ウィンドウシステムの設定ファイルを生成します。
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-</para>
+    <para>
+    X ウィンドウシステムの設定ファイルを生成します。
+    <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -141,11 +130,10 @@ X ウィンドウシステムの設定ファイルを生成します。
     monitor.  This command will create a file,
     <filename>xorg.conf.new</filename>, in your home directory.</para>
 @y
-<para>
-端末画面がブランクになり、クリック音が何回か発生します。
-このコマンド実行によって、ホームディレクトリに
-<filename>xorg.conf.new</filename> という設定ファイルが生成されます。
-</para>
+    <para>
+    端末画面がブランクになり、クリック音が何回か発生します。
+    このコマンド実行によって、ホームディレクトリに <filename>xorg.conf.new</filename> という設定ファイルが生成されます。
+    </para>
 @z
 
 @x
@@ -171,34 +159,21 @@ X ウィンドウシステムの設定ファイルを生成します。
     details of the files are located in the <filename>xorg.conf.5x</filename>
     man page.  Some things you may want to do are:</para>
 @y
-<para>
-上で新たに生成された設定ファイルを、自分のシステムに適合するように修正します。
-このファイルの詳細は man ページ <filename>xorg.conf.5x</filename>
-に示されています。
-そのポイントをいくつか以下に示します。
-</para>
+    <para>
+    上で新たに生成された設定ファイルを、自分のシステムに適合するように修正します。
+    このファイルの詳細は man ページ <filename>xorg.conf.5x</filename> に示されています。
+    そのポイントをいくつか以下に示します。
+    </para>
 @z
-
-% @x
-%         <para>Section "Files". Change the order of the font paths searched.
-%         You may want to put 100dpi fonts ahead of 75dpi fonts if your system
-%         normally comes up closer to 100 dots per inch. You may want to remove
-%         some font directories completely.</para>
-% @y
-%         <para>Section "Files". Change the order of the font paths searched.
-%         You may want to put 100dpi fonts ahead of 75dpi fonts if your system
-%         normally comes up closer to 100 dots per inch. You may want to remove
-%         some font directories completely.</para>
-% @z
 
 @x
         <para>Section "Module". If you are going to install NVIDIA
         drivers, remove the "dri" line.</para>
 @y
-<para>
-"Module" セクション：
-NVIDIA ドライバーをインストールしている場合は "dri" の行を削除します。
-</para>
+        <para>
+        "Module" セクション：
+        NVIDIA ドライバーをインストールしている場合は "dri" の行を削除します。
+        </para>
 @z
 
 @x
@@ -248,7 +223,7 @@ NVIDIA ドライバーをインストールしている場合は "dri" の行を
 @x
     <para>Test the system with the following command:</para>
 @y
-    <para>Test the system with the following command:</para>
+    <para>システムをテストする場合は以下のコマンドを実行します。</para>
 @z
 
 @x
@@ -258,29 +233,31 @@ NVIDIA ドライバーをインストールしている場合は "dri" の行を
     a look at <filename>/var/log/Xorg.0.log</filename> to see what went
     wrong.</para>
 @y
-    <para>You will only get a gray background with an X-shaped mouse cursor,
-    but it confirms the system is working. Exit with
-    <keycap>Control+Alt+Backspace</keycap>. If the system does not work, take
-    a look at <filename>/var/log/Xorg.0.log</filename> to see what went
-    wrong.</para>
+    <para>
+    背景がグレー色のウィンドウが表示されます。
+    マウスカーソルは X の形を示したものになります。
+    こうなればシステムが稼動していることが確認できます。
+    <keycap>Control+Alt+Backspace</keycap> を押下して終了します。
+    システムが正常に動作しなかった場合は <filename>/var/log/Xorg.0.log</filename> を参照して、何が悪かったかを確認してください。
+    </para>
 @z
 
-% @x
-%     <para>As the <systemitem class="username">root</systemitem> user, create
-%     the configuration directory and move the configuration file to the new
-%     directory:</para>
-% @y
-%     <para>As the <systemitem class="username">root</systemitem> user, create
-%     the configuration directory and move the configuration file to the new
-%     directory:</para>
-% @z
+@x
+    <para>As the <systemitem class="username">root</systemitem> user, move the
+    configuration file to the new directory:</para>
+@y
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって、設定ファイルを新たなディレクトリに移動させます。
+    </para>
+@z
 
 @x
     <para>As the <systemitem class="username">root</systemitem> user, create
     <filename>.xinitrc</filename>:</para>
 @y
-    <para>As the <systemitem class="username">root</systemitem> user, create
-    <filename>.xinitrc</filename>:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって <filename>.xinitrc</filename> ファイルを生成します。
+    </para>
 @z
 
 @x

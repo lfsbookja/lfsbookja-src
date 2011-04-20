@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openssl-time          "1.2 SBU (additional 0.4 SBU to run the test suite)">
+  <!ENTITY openssl-time          "1.0 SBU (additional 0.3 SBU to run the test suite)">
 @y
-  <!ENTITY openssl-time          "1.2 SBU (テストスイート実行の場合、さらに 0.4 SBU)">
+  <!ENTITY openssl-time          "1.0 SBU (テストスイート実行の場合、さらに 0.3 SBU)">
 @z
 
 @x
@@ -32,14 +32,10 @@
     <application>OpenSSH</application>, email applications and web browsers
     (for accessing HTTPS sites).</para>
 @y
-<para>
-<application>OpenSSL</application>
-パッケージは暗号化に関する管理ツールやライブラリを提供します。
-それらは暗号化の処理を行う他のパッケージにおいて利用されており、特に
-<application>OpenSSH</application>
-や Email アプリケーション、ウェブブラウザ (HTTPS サイトへのアクセス時)
-において活用されています。
-</para>
+    <para>
+    <application>OpenSSL</application> パッケージは暗号化に関する管理ツールやライブラリを提供します。
+    それらは暗号化の処理を行う他のパッケージにおいて利用されており、特に <application>OpenSSH</application> や Email アプリケーション、ウェブブラウザ (HTTPS サイトへのアクセス時) において活用されています。
+    </para>
 @z
 
 @x
@@ -110,12 +106,10 @@
 
 @x
         <para>Required patches: <ulink
-        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/> and
-        <ulink url="&patch-root;/openssl-&openssl-version;-fix_testsuite-1.patch"/></para>
+        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/></para>
 @y
         <para>必要なパッチ: <ulink
-        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/>,
-        <ulink url="&patch-root;/openssl-&openssl-version;-fix_testsuite-1.patch"/></para>
+        url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/></para>
 @z
 
 @x
@@ -164,36 +158,34 @@
     <para>Install <application>OpenSSL</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>OpenSSL</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>OpenSSL</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make test</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make test</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>While still the <systemitem class="username">root</systemitem> user,
     create a single file that contains all of the installed certificates:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーでログインしたまま、インストール済みの証明書ファイルを一つのファイルにまとめます。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーでログインしたまま、インストール済みの証明書ファイルを一つのファイルにまとめます。
+    </para>
 @z
 
 @x
@@ -208,21 +200,21 @@
     <application>OpenSSL</application> no longer includes any root certificates. 
     This package adds root certificates as provided by mozilla.org.</para>
 @y
-<para>
-<command>tar -vxf ../BLFS-ca-bundle-&ca-bundle-version;.tar.bz2</command>:
-<application>OpenSSL</application> はルート証明書を提供しないものとなりました。
-本パッケージは mozilla.org から提供されているものであり、ルート証明書を追加します。
-</para>
+    <para>
+    <command>tar -vxf ../BLFS-ca-bundle-&ca-bundle-version;.tar.bz2</command>:
+    <application>OpenSSL</application> はルート証明書を提供しないものとなりました。
+    本パッケージは mozilla.org から提供されているものであり、ルート証明書を追加します。
+    </para>
 @z
 
 @x
     <para><parameter>shared</parameter>: This parameter forces the creation of
     shared libraries along with the static libraries.</para>
 @y
-<para>
-<parameter>shared</parameter>:
-このパラメーターは、スタティックライブラリとともに共有ライブラリを生成するよう指示します。
-</para>
+    <para>
+    <parameter>shared</parameter>:
+    このパラメーターは、スタティックライブラリとともに共有ライブラリを生成するよう指示します。
+    </para>
 @z
 
 @x
@@ -230,11 +222,10 @@
     compression/decompression functionality using the
     <filename class="libraryfile">libz</filename> library.</para>
 @y
-<para>
-<parameter>zlib-dynamic</parameter>:
-このパラメーターは <filename class="libraryfile">libz</filename>
-ライブラリ利用による、ファイル圧縮や伸張の機能を追加します。
-</para>
+    <para>
+    <parameter>zlib-dynamic</parameter>:
+    このパラメーターは <filename class="libraryfile">libz</filename> ライブラリ利用による、ファイル圧縮や伸張の機能を追加します。
+    </para>
 @z
 
 @x
@@ -243,13 +234,13 @@
     of those encryption methods. Patent licenses may be needed for you to
     utilize either of those methods in your projects.</para>
 @y
-<para>
-<option>no-rc5 no-idea</option>: <command>./config</command>
-コマンドにてこれを指定すると、暗号化モジュールを含めません。
-
-Patent licenses may be needed for you to
-utilize either of those methods in your projects.
-</para>
+    <para>
+    <option>no-rc5 no-idea</option>: <command>./config</command>
+    コマンドにてこれを指定すると、暗号化モジュールを含めません。
+    
+    Patent licenses may be needed for you to
+    utilize either of those methods in your projects.
+    </para>
 @z
 
 @x
@@ -258,13 +249,11 @@ utilize either of those methods in your projects.
     <filename class='directory'>/usr/share/man</filename> instead of
     <filename class='directory'>/etc/ssl/man</filename>.</para>
 @y
-<para>
-<command>make MANDIR=/usr/share/man install</command>:
-このコマンドにより <application>OpenSSL</application>
-の man ページのインストール先を <filename class='directory'>/etc/ssl/man</filename>
-ではなく <filename class='directory'>/usr/share/man</filename>
-とします。
-</para>
+    <para>
+    <command>make MANDIR=/usr/share/man install</command>:
+    このコマンドにより <application>OpenSSL</application> の man ページのインストール先を <filename
+    class='directory'>/etc/ssl/man</filename> ではなく <filename class='directory'>/usr/share/man</filename> とします。
+    </para>
 @z
 
 @x
@@ -273,12 +262,11 @@ utilize either of those methods in your projects.
     <application>OpenSSL</application>, and the certificates that were extracted
     from the BLFS-ca-bundle-&ca-bundle-version; package.</para>
 @y
-<para>
-<command>cp -v -r certs /etc/ssl</command>:
-<application>OpenSSL</application>
-のサンプル証明書とドキュメントをともにインストールします。
-証明書は BLFS-ca-bundle-&ca-bundle-version; から抽出されインストールされます。
-</para>
+    <para>
+    <command>cp -v -r certs /etc/ssl</command>:
+    <application>OpenSSL</application> のサンプル証明書とドキュメントをともにインストールします。
+    証明書は BLFS-ca-bundle-&ca-bundle-version; から抽出されインストールされます。
+    </para>
 @z
 
 @x
@@ -289,16 +277,12 @@ utilize either of those methods in your projects.
     recreated every time a new or updated certificate is added to
     <filename class="directory">/etc/ssl/certs</filename>.</para>
 @y
-<para>
-<command>for pem in /etc/ssl/certs/*.pem...</command>:
-
-This group of
-commands creates a single-file certificate bundle 
-(<filename>/etc/ssl/ca-bundle.crt</filename>) that is usable by many
-other software packages.  <filename>ca-bundle.crt</filename> should be
-recreated every time a new or updated certificate is added to
-<filename class="directory">/etc/ssl/certs</filename>.
-</para>
+    <para>
+    <command>for pem in /etc/ssl/certs/*.pem...</command>:
+    この一連のコマンドによって、単一の証明書バンドル (certificat bundle; <filename>/etc/ssl/ca-bundle.crt</filename>) を生成します。
+    他の多くのソフトウェアパッケージがこれを参照します。
+    <filename class="directory">/etc/ssl/certs</filename> に対して証明書を新たに加えたり更新したりした都度、<filename>ca-bundle.crt</filename> を再生成する必要があります。
+    </para>
 @z
 
 @x
@@ -328,16 +312,14 @@ recreated every time a new or updated certificate is added to
       who do would normally be expected to either know how to do it or to be
       able to find out how to do it.</para>
 @y
-<para>
-
-Most people who just want to use <application>OpenSSL</application>
-for providing functions to other programs such as
-<application>OpenSSH</application> and web browsers won't need to worry
-about configuring <application>OpenSSL</application>. Configuring
-<application>OpenSSL</application> is an advanced topic and so those
-who do would normally be expected to either know how to do it or to be
-able to find out how to do it.
-</para>
+      <para>
+      <application>OpenSSH</application> やウェブブラウザーなどにおいて <application>OpenSSL</application> の機能を利用する場合に、<application>OpenSSL</application> の設定を気にかける必要はありません。
+      
+Configuring
+      <application>OpenSSL</application> is an advanced topic and so those
+      who do would normally be expected to either know how to do it or to be
+      able to find out how to do it.
+      </para>
 @z
 
 @x
@@ -388,12 +370,10 @@ able to find out how to do it.
           all files in a directory and adds symbolic links to their hash
           values.</para>
 @y
-<para>
-
-is a <application>Perl</application> script that scans
-all files in a directory and adds symbolic links to their hash
-values.
-</para>
+          <para>
+          ディレクトリ内のすべてのファイルをスキャンする <application>Perl</application> スクリプト。
+          それらのファイルに対するハッシュ値へのシンボリックリンクを生成します。
+          </para>
 @z
 
 @x openssl
@@ -402,13 +382,10 @@ values.
           library from the shell. It can be used for various functions which are
           documented in <command>man 1 openssl</command>.</para>
 @y
-<para>
-
-is a command-line tool for using the various cryptography
-functions of <application>OpenSSL</application>'s crypto
-library from the shell. It can be used for various functions which are
-documented in <command>man 1 openssl</command>.
-</para>
+          <para>
+          <application>OpenSSL</application> の暗号化ライブラリが提供するさまざまな関数を、シェルから利用するためのコマンドラインツール。
+          <command>man 1 openssl</command> に示される数多くの関数を利用することができます。
+          </para>
 @z
 
 @x libcrypt
@@ -419,15 +396,15 @@ documented in <command>man 1 openssl</command>.
           <application>OpenSSH</application>, <application>OpenPGP</application>,
           and other cryptographic standards.</para>
 @y
-<para>
-
-implements a wide range of cryptographic algorithms used in
-various Internet standards. The services provided by  this library
-are used by the <application>OpenSSL</application> implementations of
-SSL, TLS and S/MIME, and they have also been used to implement
-<application>OpenSSH</application>, <application>OpenPGP</application>,
-and other cryptographic standards.
-</para>
+          <para>
+          
+          implements a wide range of cryptographic algorithms used in
+          various Internet standards. The services provided by  this library
+          are used by the <application>OpenSSL</application> implementations of
+          SSL, TLS and S/MIME, and they have also been used to implement
+          <application>OpenSSH</application>, <application>OpenPGP</application>,
+          and other cryptographic standards.
+          </para>
 @z
 
 @x libssl
@@ -435,11 +412,10 @@ and other cryptographic standards.
           Layer Security (TLS v1) protocols. It provides a rich API, documentation
           on which can be found by running <command>man 3 ssl</command>.</para>
 @y
-<para>
-
-implements the Secure Sockets Layer (SSL v2/v3) and Transport
-Layer Security (TLS v1) protocols. It provides a rich API, documentation
-on which can be found by running <command>man 3 ssl</command>.
-</para>
+          <para>
+          
+          implements the Secure Sockets Layer (SSL v2/v3) and Transport
+          Layer Security (TLS v1) protocols. It provides a rich API, documentation
+          on which can be found by running <command>man 3 ssl</command>.
+          </para>
 @z
-

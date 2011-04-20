@@ -16,7 +16,7 @@
 @x
   <title>Other Window Managers</title>
 @y
-  <title>他のウィンドウマネージャ</title>
+  <title>他のウィンドウマネージャー</title>
 @z
 
 @x
@@ -24,12 +24,10 @@
   window manager installed by the <xref linkend="x-window-system"/>
   packages.</para>
 @y
-<para>
-<command>twm</command> はタブウィンドウマネージャ
-(Tab Window Manager) です。
-<xref linkend="x-window-system"/>
-パッケージのインストール時のデフォルトのウィンドウマネージャです。
-</para>
+  <para>
+  <command>twm</command> はタブウィンドウマネージャー (Tab Window Manager) です。
+  <xref linkend="x-window-system"/> パッケージのインストール時のデフォルトのウィンドウマネージャーです。
+  </para>
 @z
 
 @x
@@ -37,8 +35,8 @@
   <application>OSF/Motif&reg;</application> clone packaged and installed with
   <xref linkend="lesstif"/>.</para>
 @y
-  <para><command>mwm</command> is the Motif&reg; Window Manager. It is an
-  <application>OSF/Motif&reg;</application> clone packaged and installed with
-  <xref linkend="lesstif"/>.</para>
+  <para>
+  <command>mwm</command> は Motif&reg; ウィンドウマネージャーです。
+  <application>OSF/Motif&reg;</application> のクローンであり、<xref linkend="lesstif"/> パッケージに含まれインストールされます。
+  </para>
 @z
-

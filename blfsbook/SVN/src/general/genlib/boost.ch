@@ -23,10 +23,9 @@
     <para><application>Boost</application> provides free peer-reviewed
     portable C++ source libraries.</para>
 @y
-<para>
-<application>Boost</application>
-は、公開レビューされている、移植性に優れたフリーの C++ ソースライブラリです。
-</para>
+    <para>
+    <application>Boost</application> は、公開レビューされている、移植性に優れたフリーの C++ ソースライブラリです。
+    </para>
 @z
 
 @x
@@ -107,11 +106,9 @@
     <para>Install <application>boost</application> by running the following
     commands as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行して
-<application>boost</application> をインストールします。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <application>boost</application> をインストールします。
+    </para>
 @z
 
 @x
@@ -132,10 +129,16 @@
 
 @x
         <seg>None</seg>
-        <seg>libboost.{so,a}</seg>
-        <seg>None</seg>
+        <seg>libboost_{date_time, filesystem, graph, iostreams, math_*,
+prg_exec_monitor, program_options, python, random, regex, serialization,
+signals, system, test_exec_monitor, thread, unit_test_framework,
+wave, wserialization}.{so,a}</seg>
+        <seg>/usr/include/boost</seg>
 @y
         <seg>なし</seg>
-        <seg>libboost.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>libboost_{date_time, filesystem, graph, iostreams, math_*,
+prg_exec_monitor, program_options, python, random, regex, serialization,
+signals, system, test_exec_monitor, thread, unit_test_framework,
+wave, wserialization}.{so,a}</seg>
+        <seg>/usr/include/boost</seg>
 @z

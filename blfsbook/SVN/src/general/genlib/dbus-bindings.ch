@@ -646,10 +646,9 @@ API ドキュメントをビルドした場合、
             <para>contains <application>Qt3</application> interface functions
             to the D-Bus API.</para>
 @y
-<para>
-contains <application>Qt3</application> interface functions
-to the D-Bus API.
-</para>
+            <para>
+            D-Bus API への <application>Qt3</application> インターフェース関数を提供します。
+            </para>
 @z
 
 @x
@@ -673,43 +672,43 @@ to the D-Bus API.
 @x
           <para>Download (HTTP): <ulink url="&eggdbus-download-http;"/></para>
 @y
-          <para>Download (HTTP): <ulink url="&eggdbus-download-http;"/></para>
+          <para>ダウンロード (HTTP): <ulink url="&eggdbus-download-http;"/></para>
 @z
 
 @x
           <para>Download (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
 @y
-          <para>Download (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
+          <para>ダウンロード (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
 @z
 
 @x
           <para>Download MD5 sum: &eggdbus-md5sum;</para>
 @y
-          <para>Download MD5 sum: &eggdbus-md5sum;</para>
+          <para>ダウンロード MD5 sum: &eggdbus-md5sum;</para>
 @z
 
 @x
           <para>Download size: &eggdbus-size;</para>
 @y
-          <para>Download size: &eggdbus-size;</para>
+          <para>ダウンロードサイズ: &eggdbus-size;</para>
 @z
 
 @x
           <para>Estimated disk space required: &eggdbus-buildsize;</para>
 @y
-          <para>Estimated disk space required: &eggdbus-buildsize;</para>
+          <para>&j-Estimateddiskspacerequired;: &eggdbus-buildsize;</para>
 @z
 
 @x
           <para>Estimated build time: &eggdbus-time;</para>
 @y
-          <para>Estimated build time: &eggdbus-time;</para>
+          <para>&j-Estimatedbuildtime;: &eggdbus-time;</para>
 @z
 
 @x
       <bridgehead renderas="sect4">EggDBus Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">EggDBus Dependencies</bridgehead>
+      <bridgehead renderas="sect4">EggDBus の依存パッケージ</bridgehead>
 @z
 
 @x
@@ -717,8 +716,8 @@ to the D-Bus API.
       <para role="required"><xref linkend="dbus-glib"/> and
       <xref linkend="docbook-xsl"/></para>
 @y
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="dbus-glib"/> and
+      <bridgehead renderas="sect5">&j-Required;</bridgehead>
+      <para role="required"><xref linkend="dbus-glib"/>,
       <xref linkend="docbook-xsl"/></para>
 @z
 
@@ -726,7 +725,7 @@ to the D-Bus API.
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
-      <bridgehead renderas="sect5">Optional</bridgehead>
+      <bridgehead renderas="sect5">&j-Optional;</bridgehead>
       <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
@@ -734,46 +733,51 @@ to the D-Bus API.
       <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/eggdbus"/></para>
 @y
-      <para condition="html" role="usernotes">User Notes:
+      <para condition="html" role="usernotes">&j-UserNotes;:
       <ulink url="&blfs-wiki;/eggdbus"/></para>
 @z
 
 @x
       <title>Installation of EggDBus</title>
 @y
-      <title>Installation of EggDBus</title>
+      <title>EggDBus のインストール</title>
 @z
 
 @x
       <para>Install <application>EggDBus</application> by
       running the following commands:</para>
 @y
-      <para>Install <application>EggDBus</application> by
-      running the following commands:</para>
+      <para>
+      以下のコマンドを実行して <application>EggDBus</application> をビルドします。
+      </para>
 @z
 
 @x
       <para>To test the results, issue: <command>make check</command>.</para>
 @y
-      <para>To test the results, issue: <command>make check</command>.</para>
+      <para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      </para>
 @z
 
 @x
       <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
 @z
 
 @x
       <title>Command Explanations</title>
 @y
-      <title>Command Explanations</title>
+      <title>&j-CommandExplanations;</title>
 @z
 
 @x
       <title>Contents</title>
 @y
-      <title>Contents</title>
+      <title>&j-Contents;</title>
 @z
 
 @x
@@ -781,9 +785,9 @@ to the D-Bus API.
         <segtitle>Installed Library</segtitle>
         <segtitle>Installed Directory</segtitle>
 @y
-        <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Library</segtitle>
-        <segtitle>Installed Directory</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -791,7 +795,7 @@ to the D-Bus API.
           <seg>libeggdbus-1.{so,a}</seg>
           <seg>/usr/include/eggdbus-1/eggdbus</seg>
 @y
-          <seg>eggdbus-binding-tool and eggdbus-glib-genmarshal</seg>
+          <seg>eggdbus-binding-tool, eggdbus-glib-genmarshal</seg>
           <seg>libeggdbus-1.{so,a}</seg>
           <seg>/usr/include/eggdbus-1/eggdbus</seg>
 @z

@@ -16,7 +16,7 @@
 @x
   <!ENTITY bc-time "less than 0.1 SBU (0.2 SBU if running the testsuite)">
 @y
-  <!ENTITY bc-time "less than 0.1 SBU (0.2 SBU if running the testsuite)">
+  <!ENTITY bc-time "less than 0.1 SBU (テストスイート実行時は 0.2 SBU)">
 @z
 
 @x
@@ -29,8 +29,9 @@
     <para>The <application>bc</application> package contains
     an arbitrary precision numeric processing language.</para>
 @y
-    <para>The <application>bc</application> package contains
-    an arbitrary precision numeric processing language.</para>
+    <para>
+    <application>bc</application> パッケージは、任意精度 (arbitrary precision) の演算処理言語を提供します。
+    </para>
 @z
 
 @x
@@ -92,7 +93,9 @@
 @x
     <para>Install <application>bc</application> by running the following commands:</para>
 @y
-    <para>Install <application>bc</application> by running the following commands:</para>
+    <para>
+    以下のコマンドを実行して <application>bc</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -110,7 +113,9 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -123,24 +128,27 @@
     <para><command>sed -i '/PROTO.*readline/d' bc/scan.l</command>: This
     command fixes the <application>Readline</application> library call.</para>
 @y
-    <para><command>sed -i '/PROTO.*readline/d' bc/scan.l</command>: This
-    command fixes the <application>Readline</application> library call.</para>
+    <para>
+    <command>sed -i '/PROTO.*readline/d' bc/scan.l</command>: このコマンドは <application>Readline</application> ライブラリの呼出を調整します。
+    </para>
 @z
 
 @x
     <para><command>sed -i '/flex -I8/s/8//' configure</command>: This
     command fixes the <application>Flex</application> invocation.</para>
 @y
-    <para><command>sed -i '/flex -I8/s/8//' configure</command>: This
-    command fixes the <application>Flex</application> invocation.</para>
+    <para>
+    <command>sed -i '/flex -I8/s/8//' configure</command>: このコマンドは <application>Flex</application> の起動を調整します。
+    </para>
 @z
 
 @x
     <para><command>sed -i '/stdlib/a #include &lt;string.h&gt;' lib/number.c</command>:
     This command inserts a missing header.</para>
 @y
-    <para><command>sed -i '/stdlib/a #include &lt;string.h&gt;' lib/number.c</command>:
-    This command inserts a missing header.</para>
+    <para>
+    <command>sed -i '/stdlib/a #include &lt;string.h&gt;' lib/number.c</command>: このコマンドは不足しているヘッダーファイルを追加します。
+    </para>
 @z
 
 @x
@@ -148,17 +156,19 @@
     This command fixes a segfault when running <application>bc</application>
     with <command>bc -l</command>.</para>
 @y
-    <para><command>sed -i 's/program.*save/static &amp;/' bc/load.c</command>:
-    This command fixes a segfault when running <application>bc</application>
-    with <command>bc -l</command>.</para>
+    <para>
+    <command>sed -i 's/program.*save/static &amp;/' bc/load.c</command>: このコマンドは <application>bc</application> コマンドを <application>bc
+    -l</application> で実行した際に発生するセグメンテーションフォールトを回避します。
+    </para>
 @z
 
 @x
     <para><parameter>--with-readline</parameter>: This option enables
     <application>Readline</application> support in interactive mode.</para>
 @y
-    <para><parameter>--with-readline</parameter>: This option enables
-    <application>Readline</application> support in interactive mode.</para>
+    <para>
+    <parameter>--with-readline</parameter>: このパラメーターは、対話モード (interactive mode) にて <application>Readline</application> サポートを有効にします。
+    </para>
 @z
 
 @x
@@ -196,12 +206,11 @@
 @x bc
           <para>is a calculator.</para>
 @y
-          <para>is a calculator.</para>
+          <para>計算機 (calculator) です。</para>
 @z
 
 @x dc
           <para>is a reverse-polish calculator.</para>
 @y
-          <para>is a reverse-polish calculator.</para>
+          <para>逆ポーランド (reverse-polish) 記法による計算機です。</para>
 @z
-

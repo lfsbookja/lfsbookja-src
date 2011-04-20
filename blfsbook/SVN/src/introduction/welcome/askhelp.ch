@@ -28,13 +28,12 @@
   in diagnosing and solving your problem, include as much relevant information
   as possible in your request for help.</para>
 @y
-  <para>If you encounter a problem while using this book, and your problem
-  is not listed in the FAQ (<ulink url="http://www.&lfs-domainname;/faq"/>),
-  you will find that most of the people on Internet Relay Chat (IRC) and on the
-  mailing lists are willing to help you. An overview of the LFS mailing
-  lists can be found in <xref linkend="maillists"/>. To assist us
-  in diagnosing and solving your problem, include as much relevant information
-  as possible in your request for help.</para>
+  <para>
+  本書を利用した作業の中で何か問題が発生した場合、そしてその問題が FAQ (<ulink
+  url="http://www.&lfs-domainname;/faq"/>) に上がっていない場合は、インターネットリレーチャット (IRC) やメーリングリストに参加している方々が、あなたの手助けをしてくれるかもしれません。
+  LFS のメーリングリストに関しては <xref linkend="maillists"/> に示されています。
+  あなたが抱える問題を的確に把握し解決していくために、質問にあたっては出来る限り十分な情報を含めてください。
+  </para>
 @z
 
 @x
