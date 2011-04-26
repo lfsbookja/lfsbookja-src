@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2011-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-168. Fixes
+          <ulink url="&lfs-ticket-root;2862">#2862</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.38.4. Fixes
+          <ulink url="&lfs-ticket-root;2861">#2861</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-04-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Udev-168 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2862">#2862</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-2.6.38.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2861">#2861</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-04-19</para>
       <itemizedlist>
         <listitem>

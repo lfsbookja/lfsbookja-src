@@ -34,14 +34,14 @@
     <title>Udev のインストール</title>
 @z
 
-@x
-    <para>Fix a bug in the Makefile that prevents some tools from being built
-    and installed:</para>
-@y
-    <para>
-    Makefile にて特定のツールがビルドおよびインストールされないバグを修正します。
-    </para>
-@z
+% @x
+%     <para>Fix a bug in the Makefile that prevents some tools from being built
+%     and installed:</para>
+% @y
+%     <para>
+%     Makefile にて特定のツールがビルドおよびインストールされないバグを修正します。
+%     </para>
+% @z
 
 @x
     <para>The udev-config tarball contains LFS-specific files used to configure

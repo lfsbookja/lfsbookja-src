@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/udev.ch:
+          SVN-20110425, r9517 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-04-20</para>
       <itemizedlist>
         <listitem>
