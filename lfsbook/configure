@@ -3764,7 +3764,7 @@ if test "$TIDY" = no; then
         as_fn_error $? "tidy not found in $PATH" "$LINENO" 5
 fi;
 
-TARGETVER=svn-20110419
+TARGETVER=svn-20110425
 
 SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5
