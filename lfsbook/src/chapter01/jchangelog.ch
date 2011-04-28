@@ -54,6 +54,17 @@
 -->
 
     <listitem>
+      <para>2011-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20110427, r9518 対応。(日本語訳変更なし。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-04-26</para>
       <itemizedlist>
         <listitem>
