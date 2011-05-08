@@ -67,14 +67,11 @@
     </para>
 @z
 
-% @x
-%     <para>Fix an issue that causes one of the tests to fail to compile against
-%     Glibc-&glibc-version;:</para>
-% @y
-% <para>
-% Glibc-&glibc-version; に対してコンパイルテストが失敗するため、これを修正します。
-% </para>
-% @z
+@x
+    <para>Fix a couple of the tests, which fail when using GCC-&gcc-version;</para>
+@y
+    <para>いくつかのテストに対して調整を行います。GCC-&gcc-version; で実行するとこれらが失敗するためです。</para>
+@z
 
 @x
     <para>The Binutils documentation recommends building Binutils outside of the

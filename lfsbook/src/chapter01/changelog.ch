@@ -48,19 +48,56 @@
 @z
 
 @x
-      <para>2011-04-27</para>
+      <para>2011-05-07</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Upgrade to coreutils-8.12. Fixes
-          <ulink url="&lfs-ticket-root;2863">#2863</ulink>.</para>
+          <para>[matthew] - Add latest upstream patches for Bash. Fixes
+          <ulink url="&lfs-ticket-root;2868">#2868</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.38.5. Fixes
+          <ulink url="&lfs-ticket-root;2867">#2867</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Fix a couple of test failures in Binutils, due to
+          incompatibilities with GCC-4.6.x. Fixes
+          <ulink url="&lfs-ticket-root;2866">#2866</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Util-Linux-2.19.1. Fixes
+          <ulink url="&lfs-ticket-root;2865">#2865</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Don't create the
+          <filename class="directory">/dev/shm</filename> directory anymore, as
+          it is created in the udev bootscript now. Fixes
+          <ulink url="&lfs-ticket-root;2864">#2864</ulink>.</para>
         </listitem>
       </itemizedlist>
 @y
-      <para>2011-04-27</para>
+      <para>2011-05-07</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - coreutils-8.12 へのアップグレード。
-          <ulink url="&lfs-ticket-root;2863">#2863</ulink> を Fix に。</para>
+          <para>[matthew] - Bash にてアップストリームによる最新パッチを追加。
+          <ulink url="&lfs-ticket-root;2868">#2868</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-2.6.38.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2867">#2867</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Binutils にてテストがいくつか失敗するものを調整。
+          GCC-4.6.x との非互換性が原因。
+          <ulink url="&lfs-ticket-root;2866">#2866</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Util-Linux-2.19.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2865">#2865</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - <filename class="directory">/dev/shm</filename> ディレクトリを生成しないものに。
+          これは udev の bootscript にて生成することに。
+          <ulink url="&lfs-ticket-root;2864">#2864</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z
