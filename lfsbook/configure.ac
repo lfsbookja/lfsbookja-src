@@ -64,26 +64,14 @@ AC_CONFIG_FILES([Makefile
 		 ctie/Makefile
 		 src/Makefile
 		 src/appendices/Makefile
-		 src/bootscripts/Makefile
-		 src/bootscripts/contrib/Makefile
-		 src/bootscripts/contrib/lsb/Makefile
-		 src/bootscripts/contrib/lsb/lib/Makefile
-		 src/bootscripts/contrib/lsb-v3/Makefile
-		 src/bootscripts/contrib/lsb-v3/etc/Makefile
-		 src/bootscripts/contrib/lsb-v3/etc/default/Makefile
-		 src/bootscripts/contrib/lsb-v3/etc/init.d/Makefile
-		 src/bootscripts/contrib/lsb-v3/lib/Makefile
-		 src/bootscripts/contrib/lsb-v3/lib/lsb/Makefile
-		 src/bootscripts/contrib/lsb-v3/lib/network-services/Makefile
-		 src/bootscripts/contrib/lsb-v3/sbin/Makefile
-		 src/bootscripts/contrib/sysconfig/Makefile
-		 src/bootscripts/contrib/sysconfig/network-devices/Makefile
-		 src/bootscripts/contrib/sysconfig/network-devices/services/Makefile
-		 src/bootscripts/lfs/Makefile
-		 src/bootscripts/lfs/init.d/Makefile
-		 src/bootscripts/lfs/sysconfig/Makefile
-		 src/bootscripts/lfs/sysconfig/network-devices/Makefile
-		 src/bootscripts/lfs/sysconfig/network-devices/services/Makefile
+		 src/lsb-bootscripts/Makefile
+		 src/lsb-bootscripts/etc/Makefile
+		 src/lsb-bootscripts/etc/default/Makefile
+		 src/lsb-bootscripts/etc/init.d/Makefile
+		 src/lsb-bootscripts/lib/Makefile
+		 src/lsb-bootscripts/lib/lsb/Makefile
+		 src/lsb-bootscripts/lib/network-services/Makefile
+		 src/lsb-bootscripts/sbin/Makefile
 		 src/chapter01/Makefile
 		 src/chapter02/Makefile
 		 src/chapter03/Makefile

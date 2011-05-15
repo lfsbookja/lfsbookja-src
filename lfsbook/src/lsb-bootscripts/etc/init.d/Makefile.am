@@ -1,4 +1,4 @@
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/etc/init.d
+BOOKdir = @abs_bookdir@/lsb-bootscripts/etc/init.d
 srcdir = @srcdir@
 srcs = checkfs halt modules network sendsignals sysctl udev
 	cleanfs lfs-functions mountfs rc setclock sysklogd

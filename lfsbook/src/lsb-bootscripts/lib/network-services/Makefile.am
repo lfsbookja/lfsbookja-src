@@ -1,4 +1,4 @@
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/lib/network-services
+BOOKdir = @abs_bookdir@/lsb-bootscripts/lib/network-services
 srcdir = @srcdir@
 srcs = ipv4-static ipv4-static-route
 

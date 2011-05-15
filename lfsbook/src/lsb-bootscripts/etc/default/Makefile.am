@@ -1,4 +1,4 @@
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/etc/default
+BOOKdir = @abs_bookdir@/lsb-bootscripts/etc/default
 srcdir = @srcdir@
 srcs = createfiles modules rc rc.site
 

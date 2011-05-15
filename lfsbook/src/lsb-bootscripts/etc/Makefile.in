@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/bootscripts/contrib/lsb-v3/lib
+subdir = src/lsb-bootscripts/etc
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -179,7 +179,9 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = lsb network-services
+SUBDIRS = default init.d
+BOOKdir = @abs_bookdir@/lsb-bootscripts/etc
+srcs = inittab
 all: all-recursive
 
 .SUFFIXES:
@@ -192,9 +194,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/lib/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/lsb-bootscripts/etc/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/lib/Makefile
+	  $(AUTOMAKE) --gnu src/lsb-bootscripts/etc/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -519,6 +521,11 @@ uninstall-am:
 	mostlyclean mostlyclean-generic pdf pdf-am ps ps-am tags \
 	tags-recursive uninstall uninstall-am
 
+
+all: $(srcs)
+
+inittab: $(BOOKdir)/inittab
+	cp -p $(BOOKdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -1,6 +1,6 @@
 SUBDIRS=appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	chapter06 chapter07 chapter08 chapter09 prologue stylesheets \
-	bootscripts udev-config
+	lsb-bootscripts udev-config
 EXTRA_DIST = general.ch index.ch packages.ch patches.ch tidy.ch
 BOOKdir = @abs_bookdir@
 srcdir = @srcdir@

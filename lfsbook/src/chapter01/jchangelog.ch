@@ -58,7 +58,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-201100507, r9536 対応。(日本語訳変更なし。)
+          SVN-201100507, r9538 対応。(日本語訳変更なし。)
           </para>
         </listitem>
       </itemizedlist>

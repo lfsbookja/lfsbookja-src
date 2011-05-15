@@ -1,4 +1,4 @@
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/lib/lsb
+BOOKdir = @abs_bookdir@/lsb-bootscripts/lib/lsb
 srcdir = @srcdir@
 srcs = init-functions
 

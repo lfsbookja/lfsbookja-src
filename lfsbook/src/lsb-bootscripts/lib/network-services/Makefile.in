@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/bootscripts/contrib/lsb-v3/sbin
+subdir = src/lsb-bootscripts/lib/network-services
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -139,8 +139,8 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/sbin
-srcs = ifdown ifup
+BOOKdir = @abs_bookdir@/lsb-bootscripts/lib/network-services
+srcs = ipv4-static ipv4-static-route
 all: all-am
 
 .SUFFIXES:
@@ -153,9 +153,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/sbin/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/lsb-bootscripts/lib/network-services/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/sbin/Makefile
+	  $(AUTOMAKE) --gnu src/lsb-bootscripts/lib/network-services/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -321,9 +321,9 @@ uninstall-am:
 
 all: $(srcs)
 
-ifdown: $(BOOKdir)/ifdown
+ipv4-static: $(BOOKdir)/ipv4-static
 	cp -p $(BOOKdir)/$@ $@
-ifup: $(BOOKdir)/ifup
+ipv4-static-route: $(BOOKdir)/ipv4-static-route
 	cp -p $(BOOKdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

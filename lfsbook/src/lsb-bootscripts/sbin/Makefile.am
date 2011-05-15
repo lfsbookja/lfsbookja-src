@@ -1,4 +1,4 @@
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/sbin
+BOOKdir = @abs_bookdir@/lsb-bootscripts/sbin
 srcdir = @srcdir@
 srcs = ifdown ifup
 
