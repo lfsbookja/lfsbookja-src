@@ -1,1 +1,0 @@
-SUBDIRS=contrib lfs
