@@ -1,5 +1,4 @@
-SUBDIRS=services
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/sysconfig/network-devices
+BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/sbin
 srcdir = @srcdir@
 srcs = ifdown ifup
 

@@ -54,6 +54,29 @@
 -->
 
     <listitem>
+      <para>2011-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-201100507, r9525 対応。(日本語訳変更なし。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2011-05-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/binutils.ch:
+          SVN-201100507, r9524 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-04-28</para>
       <itemizedlist>
         <listitem>

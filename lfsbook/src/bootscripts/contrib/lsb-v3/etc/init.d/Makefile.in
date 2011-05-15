@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/bootscripts/contrib/lsb-v3/sysconfig/network-devices/services
+subdir = src/bootscripts/contrib/lsb-v3/etc/init.d
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -139,8 +139,8 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/sysconfig/network-devices/services
-srcs = ipv4-static ipv4-static-route
+BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/etc/init.d
+srcs = checkfs halt modules network sendsignals sysctl udev
 all: all-am
 
 .SUFFIXES:
@@ -153,9 +153,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/sysconfig/network-devices/services/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/etc/init.d/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/sysconfig/network-devices/services/Makefile
+	  $(AUTOMAKE) --gnu src/bootscripts/contrib/lsb-v3/etc/init.d/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -318,12 +318,51 @@ uninstall-am:
 	maintainer-clean maintainer-clean-generic mostlyclean \
 	mostlyclean-generic pdf pdf-am ps ps-am uninstall uninstall-am
 
+	cleanfs lfs-functions mountfs rc setclock sysklogd
+	udev_retry console localnet mountvirtfs reboot swap
+	template
 
 all: $(srcs)
 
-ipv4-static: $(BOOKdir)/ipv4-static
+checkfs: $(BOOKdir)/checkfs
 	cp -p $(BOOKdir)/$@ $@
-ipv4-static-route: $(BOOKdir)/ipv4-static-route
+halt: $(BOOKdir)/halt
+	cp -p $(BOOKdir)/$@ $@
+modules: $(BOOKdir)/modules
+	cp -p $(BOOKdir)/$@ $@
+network: $(BOOKdir)/network
+	cp -p $(BOOKdir)/$@ $@
+sendsignals: $(BOOKdir)/sendsignals
+	cp -p $(BOOKdir)/$@ $@
+sysctl: $(BOOKdir)/sysctl
+	cp -p $(BOOKdir)/$@ $@
+udev: $(BOOKdir)/udev
+	cp -p $(BOOKdir)/$@ $@
+cleanfs: $(BOOKdir)/cleanfs
+	cp -p $(BOOKdir)/$@ $@
+lfs-functions: $(BOOKdir)/lfs-functions
+	cp -p $(BOOKdir)/$@ $@
+mountfs: $(BOOKdir)/mountfs
+	cp -p $(BOOKdir)/$@ $@
+rc: $(BOOKdir)/rc
+	cp -p $(BOOKdir)/$@ $@
+setclock: $(BOOKdir)/setclock
+	cp -p $(BOOKdir)/$@ $@
+sysklogd: $(BOOKdir)/sysklogd
+	cp -p $(BOOKdir)/$@ $@
+udev_retry: $(BOOKdir)/udev_retry
+	cp -p $(BOOKdir)/$@ $@
+console: $(BOOKdir)/console
+	cp -p $(BOOKdir)/$@ $@
+localnet: $(BOOKdir)/localnet
+	cp -p $(BOOKdir)/$@ $@
+mountvirtfs: $(BOOKdir)/mountvirtfs
+	cp -p $(BOOKdir)/$@ $@
+reboot: $(BOOKdir)/reboot
+	cp -p $(BOOKdir)/$@ $@
+swap: $(BOOKdir)/swap
+	cp -p $(BOOKdir)/$@ $@
+template: $(BOOKdir)/template
 	cp -p $(BOOKdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

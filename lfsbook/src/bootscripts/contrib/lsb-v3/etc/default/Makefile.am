@@ -1,5 +1,4 @@
-SUBDIRS=network-devices
-BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/sysconfig
+BOOKdir = @abs_bookdir@/bootscripts/contrib/lsb-v3/etc/default
 srcdir = @srcdir@
 srcs = createfiles modules rc rc.site
 
@@ -13,3 +12,4 @@ rc: $(BOOKdir)/rc
 	cp -p $(BOOKdir)/$@ $@
 rc.site: $(BOOKdir)/rc.site
 	cp -p $(BOOKdir)/$@ $@
+

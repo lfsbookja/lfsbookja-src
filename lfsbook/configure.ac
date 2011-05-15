@@ -70,11 +70,12 @@ AC_CONFIG_FILES([Makefile
 		 src/bootscripts/contrib/lsb/lib/Makefile
 		 src/bootscripts/contrib/lsb-v3/Makefile
 		 src/bootscripts/contrib/lsb-v3/etc/Makefile
-		 src/bootscripts/contrib/lsb-v3/init.d/Makefile
-		 src/bootscripts/contrib/lsb-v3/lsb/Makefile
-		 src/bootscripts/contrib/lsb-v3/sysconfig/Makefile
-		 src/bootscripts/contrib/lsb-v3/sysconfig/network-devices/Makefile
-		 src/bootscripts/contrib/lsb-v3/sysconfig/network-devices/services/Makefile
+		 src/bootscripts/contrib/lsb-v3/etc/default/Makefile
+		 src/bootscripts/contrib/lsb-v3/etc/init.d/Makefile
+		 src/bootscripts/contrib/lsb-v3/lib/Makefile
+		 src/bootscripts/contrib/lsb-v3/lib/lsb/Makefile
+		 src/bootscripts/contrib/lsb-v3/lib/network-services/Makefile
+		 src/bootscripts/contrib/lsb-v3/sbin/Makefile
 		 src/bootscripts/contrib/sysconfig/Makefile
 		 src/bootscripts/contrib/sysconfig/network-devices/Makefile
 		 src/bootscripts/contrib/sysconfig/network-devices/services/Makefile

@@ -1,1 +1,1 @@
-SUBDIRS=etc init.d lsb sysconfig
+SUBDIRS=etc lib sbin
