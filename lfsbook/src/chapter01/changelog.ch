@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2011-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Grep-2.8. Fixes
+          <ulink url="&lfs-ticket-root;2872">#2872</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to File-5.07. Fixes
+          <ulink url="&lfs-ticket-root;2871">#2871</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.38.6. Fixes
+          <ulink url="&lfs-ticket-root;2870">#2870</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GMP-5.0.2. Fixes
+          <ulink url="&lfs-ticket-root;2869">#2869</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Grep-2.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2872">#2872</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - File-5.07 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2871">#2871</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-2.6.38.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2870">#2870</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GMP-5.0.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2869">#2869</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-05-07</para>
       <itemizedlist>
         <listitem>

@@ -22,6 +22,7 @@
           <font-triplet name="IPAgothic" style="italic" weight="normal"/>
           <font-triplet name="IPAgothic" style="italic" weight="bold"/>
         </font>
+<!--
         <font metrics-url="sazanami-mincho.xml" kerning="yes"
           embed-url="file:///usr/share/fonts/sazanami/sazanami-mincho.ttf">
           <font-triplet name="Mincho" style="normal" weight="normal"/>
@@ -38,6 +39,7 @@
           <font-triplet name="Gothic" style="italic" weight="normal"/>
           <font-triplet name="Gothic" style="italic" weight="bold"/>
         </font>
+-->
       </fonts>
     </renderer>
   </renderers>
