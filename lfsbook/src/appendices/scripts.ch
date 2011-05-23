@@ -5,6 +5,18 @@
 @z
 
 @x
+  <!ENTITY modules            SYSTEM "modules.script">
+@y
+  <!ENTITY modules            SYSTEM "modules-sysinit.script">
+@z
+
+@x
+  <!ENTITY rc                 SYSTEM "rc.script">
+@y
+  <!ENTITY rc                 SYSTEM "rc-sysinit.script">
+@z
+
+@x
 <appendix id="scripts" xreflabel="Appendix D">
   <?dbhtml dir="scripts"?>
   <?dbhtml filename="scripts.html"?>

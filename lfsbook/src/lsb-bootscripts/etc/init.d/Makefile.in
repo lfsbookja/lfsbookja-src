@@ -140,7 +140,11 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/lsb-bootscripts/etc/init.d
-srcs = checkfs halt modules network sendsignals sysctl udev
+srcs = checkfs halt modules network sendsignals sysctl udev \
+	cleanfs mountfs rc setclock sysklogd \
+	udev_retry console localnet mountvirtfs reboot swap \
+	template
+
 all: all-am
 
 .SUFFIXES:
@@ -318,9 +322,6 @@ uninstall-am:
 	maintainer-clean maintainer-clean-generic mostlyclean \
 	mostlyclean-generic pdf pdf-am ps ps-am uninstall uninstall-am
 
-	cleanfs lfs-functions mountfs rc setclock sysklogd
-	udev_retry console localnet mountvirtfs reboot swap
-	template
 
 all: $(srcs)
 
@@ -339,8 +340,6 @@ sysctl: $(BOOKdir)/sysctl
 udev: $(BOOKdir)/udev
 	cp -p $(BOOKdir)/$@ $@
 cleanfs: $(BOOKdir)/cleanfs
-	cp -p $(BOOKdir)/$@ $@
-lfs-functions: $(BOOKdir)/lfs-functions
 	cp -p $(BOOKdir)/$@ $@
 mountfs: $(BOOKdir)/mountfs
 	cp -p $(BOOKdir)/$@ $@

@@ -1,8 +1,8 @@
 BOOKdir = @abs_bookdir@/lsb-bootscripts/etc/init.d
 srcdir = @srcdir@
-srcs = checkfs halt modules network sendsignals sysctl udev
-	cleanfs lfs-functions mountfs rc setclock sysklogd
-	udev_retry console localnet mountvirtfs reboot swap
+srcs = checkfs halt modules network sendsignals sysctl udev \
+	cleanfs mountfs rc setclock sysklogd \
+	udev_retry console localnet mountvirtfs reboot swap \
 	template
 
 all: $(srcs)
@@ -22,8 +22,6 @@ sysctl: $(BOOKdir)/sysctl
 udev: $(BOOKdir)/udev
 	cp -p $(BOOKdir)/$@ $@
 cleanfs: $(BOOKdir)/cleanfs
-	cp -p $(BOOKdir)/$@ $@
-lfs-functions: $(BOOKdir)/lfs-functions
 	cp -p $(BOOKdir)/$@ $@
 mountfs: $(BOOKdir)/mountfs
 	cp -p $(BOOKdir)/$@ $@

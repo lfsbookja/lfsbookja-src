@@ -113,30 +113,30 @@
           </para>
 @z
 
-@x --disable-extras
-          <para>This option prevents Udev from installing helper programs and
+@x --disable-*
+          <para>These options prevent Udev from installing helper programs and
           other extras which require more external libraries.  These libraries
           are not part of the base LFS system.  See the Udev
           <filename>README</filename> file for more information.</para>
 @y
           <para>
-          このオプションは、ヘルパープログラムやその他の追加プログラムをインストールしないことを指定します。
+          これらのオプションは、ヘルパープログラムやその他の追加プログラムをインストールしないことを指定します。
           追加プログラムには、さらに外部ライブラリが必要となり、それらは LFS ベースシステムでは取り扱っていません。
           詳しくは Udev の <filename>README</filename> ファイルを参照してください。
           </para>
 @z
 
-@x
-          <para>This option prevents Udev's instrospection feature, which
-          requires packages not installed as part of the base LFS system.  See
-          the Udev <filename>README</filename> file for more information.</para>
-@y
-          <para>
-          このオプションは Udev のイントロスペクション (introspection) 機能を無効にします。
-          この機能は、LFS システムにてインストールするパッケージではなく、別のパッケージにて必要となるものです。
-          詳しくは Udev の <filename>README</filename> ファイルを参照してください。
-          </para>
-@z
+% @x
+%           <para>This option prevents Udev's instrospection feature, which
+%           requires packages not installed as part of the base LFS system.  See
+%           the Udev <filename>README</filename> file for more information.</para>
+% @y
+%           <para>
+%           このオプションは Udev のイントロスペクション (introspection) 機能を無効にします。
+%           この機能は、LFS システムにてインストールするパッケージではなく、別のパッケージにて必要となるものです。
+%           詳しくは Udev の <filename>README</filename> ファイルを参照してください。
+%           </para>
+% @z
 
 @x
     <para>Compile the package:</para>

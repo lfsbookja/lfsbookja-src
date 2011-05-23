@@ -1075,11 +1075,11 @@ Typo ですが日本語訳には影響ありません。
 
 %----------------------------------------------------------------------
 @x Pkg-config
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Make, and Sed</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
+         Grep, Make, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Make, Sed</seg>
+         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
+         Grep, Make, Sed</seg>
 @z
 @x
           <seg>None</seg>

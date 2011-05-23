@@ -12,7 +12,7 @@ EXTRA_DIST = aboutdebug.ch autoconf.ch automake.ch bash.ch binutils.ch \
 	readjusting.ch readline.ch \
 	revisedchroot.ch sed.ch shadow.ch strippingagain.ch \
 	sysklogd.ch sysvinit.ch tar.ch texinfo.ch udev.ch \
-	util-linux.ch vim.ch zlib.ch xz.ch
+	util-linux.ch vim.ch zlib.ch xz.ch glib.ch pcre.ch
 srcdir = @srcdir@
 srcs = aboutdebug.xml autoconf.xml automake.xml bash.xml binutils.xml \
 	bison.xml bzip2.xml chapter06.xml chroot.xml coreutils.xml \
@@ -27,7 +27,7 @@ srcs = aboutdebug.xml autoconf.xml automake.xml bash.xml binutils.xml \
 	readjusting.xml readline.xml \
 	revisedchroot.xml sed.xml shadow.xml strippingagain.xml \
 	sysklogd.xml sysvinit.xml tar.xml texinfo.xml udev.xml \
-	util-linux.xml vim.xml zlib.xml xz.xml
+	util-linux.xml vim.xml zlib.xml xz.xml glib.xml pcre.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -105,3 +105,5 @@ util-linux.xml: $(BOOKdir)/$@ $(srcdir)/util-linux.ch
 vim.xml: $(BOOKdir)/$@ $(srcdir)/vim.ch
 zlib.xml: $(BOOKdir)/$@ $(srcdir)/zlib.ch
 xz.xml: $(BOOKdir)/$@ $(srcdir)/xz.ch
+glib.xml: $(BOOKdir)/$@ $(srcdir)/glib.ch
+pcre.xml: $(BOOKdir)/$@ $(srcdir)/pcre.ch

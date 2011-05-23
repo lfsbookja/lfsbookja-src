@@ -1,9 +1,9 @@
 BOOKdir = @abs_bookdir@/appendices
 EXTRA_DIST = acknowledgments.ch acronymlist.ch creat-comm.ch \
-	dependencies.ch license.ch mit-lic.ch scripts.ch udev-rules.ch
+	dependencies.ch license.ch mit-lic.ch scripts.ch udev-rules.ch 
 srcdir = @srcdir@
 srcs = acknowledgments.xml acronymlist.xml creat-comm.xml dependencies.xml \
-	license.xml mit-lic.xml scripts.xml udev-rules.xml
+	license.xml mit-lic.xml scripts.xml udev-rules.xml 
 
 SUFFIXES = .ch .xml
 .ch.xml:
