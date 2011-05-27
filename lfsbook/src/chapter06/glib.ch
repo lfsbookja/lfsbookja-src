@@ -19,10 +19,10 @@
     interfaces for such runtime functionality as an event loop, threads,
     dynamic loading, and an object system.</para>
 @y
-    <para>The GLib package contains a low-level core library. This is useful
-    for providing data structure handling for C, portability wrappers and
-    interfaces for such runtime functionality as an event loop, threads,
-    dynamic loading, and an object system.</para>
+    <para>
+    GLib パッケージは低レベルなコアライブラリを提供します。
+    これはイベント処理ループやスレッド、ダイナミックローディングのような処理機能に対して、C言語による移植性の高いデータ操作、ラッパー関数、インターフェースなどを提供します。
+    </para>
 @z
 
 @x
@@ -47,8 +47,9 @@
           <para>This parameter causes the build to use a system-provided
           version of the PCRE library instead of an internal version.</para>
 @y
-          <para>This parameter causes the build to use a system-provided
-          version of the PCRE library instead of an internal version.</para>
+          <para>
+          このパラメーターは、内部にて提供される PCRE ライブラリを用いずに、システムにインストール済のものを利用して本パッケージをビルドすることを指示します。
+          </para>
 @z
 
 @x
@@ -61,8 +62,9 @@
     <para>Due to dependencies on additional Perl modules and other packages not yet present
     (e.g. desktop-file-utils and DBus), it is not possible to run Glib's test suite.</para>
 @y
-    <para>Due to dependencies on additional Perl modules and other packages not yet present
-    (e.g. desktop-file-utils and DBus), it is not possible to run Glib's test suite.</para>
+    <para>
+    この時点にてまだ存在していない他のパッケージ (例えば desktop-file-utils や DBus) があるため、Glib のテストスイートを実行することはできません。
+    </para>
 @z
 
 @x
@@ -115,28 +117,26 @@
           <para>is a C code marshaller generation utility for GLib
           closures.</para>
 @y
-          <para>is a C code marshaller generation utility for GLib
-          closures.</para>
+          <para>GLib クロージャー (closures) に対しての C コードマーシャラー生成ユーティリティ。</para>
 @z
 
 @x glib-gettextize
           <para>is a variant of the gettext internationalization
           utility.</para>
 @y
-          <para>is a variant of the gettext internationalization
-          utility.</para>
+          <para>国際化ユーティリティ gettext と同等のツール。</para>
 @z
 
 @x glib-mkenums
           <para>is a C language enum description generation utility.</para>
 @y
-          <para>is a C language enum description generation utility.</para>
+          <para>C 言語における enum 記述の生成ユーティリティ。</para>
 @z
 
 @x gobject-query
           <para>Is a small utility that draws a tree of types.</para>
 @y
-          <para>Is a small utility that draws a tree of types.</para>
+          <para>型のツリーを描画するユーティリティ。</para>
 @z
 
 @x gtester

@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-05-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/{glib.ch, pcre.ch}:
+          SVN-201100523, r9555 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-05-16</para>
       <itemizedlist>
         <listitem>

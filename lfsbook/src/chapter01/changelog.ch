@@ -48,6 +48,70 @@
 @z
 
 @x
+      <para>2011-05-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Fix a typo in the PCRE instructions, and make
+          Glib put its configuration in
+          <filename class="directory">/etc</filename>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-05-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - PCRE におけるタイポ修正。
+          また Glib の設定を <filename class="directory">/etc</filename> に。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-05-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-170. Fixes
+          <ulink url="&lfs-ticket-root;2878">#2878</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.39. Fixes
+          <ulink url="&lfs-ticket-root;2877">#2877</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Pkg-config-0.26, including its
+          dependency of Glib and Glib's dependency of PCRE. Fixes
+          <ulink url="&lfs-ticket-root;2876">#2876</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bison-2.5. Fixes
+          <ulink url="&lfs-ticket-root;2875">#2875</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-05-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Udev-170 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2878">#2878</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.39 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2877">#2877</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Pkg-config-0.26 へのアップグレード。
+          またその依存パッケージ Glib と、Glib の依存パッケージ PCRE を追加。
+          <ulink url="&lfs-ticket-root;2876">#2876</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bison-2.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2875">#2875</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-05-15</para>
       <itemizedlist>
         <listitem>
