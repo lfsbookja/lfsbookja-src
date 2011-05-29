@@ -83,9 +83,7 @@ GRUB をコンパイルするための準備をします。
   <xref linkend="ch-bootable-grub"/>.</para>
 @y
 <para>
-GRUB を使ってシステムのブート起動設定を行う方法については
-<xref linkend="ch-bootable-grub"/>
-で説明しています。
+GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/> で説明しています。
 </para>
 @z
 
@@ -127,7 +125,7 @@ GRUB を使ってシステムのブート起動設定を行う方法について
           <para>Converts a binary file to a C header</para>
 @y
 <para>
-バイナリファイルを C ヘッダファイルに変換します。
+バイナリファイルを C ヘッダーファイルに変換します。
 </para>
 @z
 

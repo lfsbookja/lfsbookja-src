@@ -55,13 +55,10 @@
 @y
 <para>
 Linux システムは一般に、スタティックなデバイス生成方法を採用していました。
-この方法では <filename class="directory">/dev</filename>
-のもとに膨大な量の (場合によっては何千にもおよぶ)
-デバイスノードが生成されます。
+この方法では <filename class="directory">/dev</filename> のもとに膨大な量の (場合によっては何千にもおよぶ) デバイスノードが生成されます。
 現実に存在するハードウェアデバイスが存在するかどうかに関わらずです。
 これは <command>MAKEDEV</command> スクリプトを通じて生成されます。
-このスクリプトからは <command>mknod</command>
-プログラムが呼び出されますが、その呼び出しは、この世に存在するありとあらゆるデバイスのメジャー/マイナー番号を用いて行われます。
+このスクリプトからは <command>mknod</command> プログラムが呼び出されますが、その呼び出しは、この世に存在するありとあらゆるデバイスのメジャー/マイナー番号を用いて行われます。
 </para>
 @z
 
@@ -75,11 +72,9 @@ Linux システムは一般に、スタティックなデバイス生成方法�
 @y
 <para>
 Udev による方法では、カーネルが検知したデバイスだけがデバイスノードとなります。
-デバイスノードはシステムが起動するたびに生成されることになるので、
-<systemitem class="filesystem">tmpfs</systemitem>
-ファイルシステム上に保存されます。
-(<systemitem class="filesystem">tmpfs</systemitem>
-は仮想ファイルシステムであり、メモリ上に置かれます。)
+デバイスノードはシステムが起動するたびに生成されることになるので、 <systemitem
+class="filesystem">tmpfs</systemitem> ファイルシステム上に保存されます。
+(<systemitem class="filesystem">tmpfs</systemitem> は仮想ファイルシステムであり、メモリ上に置かれます。)
 デバイスノードの情報はさほど多くないので、消費するメモリ容量は無視できるほど少ないものです。
 </para>
 @z
@@ -99,9 +94,8 @@ Udev による方法では、カーネルが検知したデバイスだけがデ
     developers.</para>
 @y
 <para>
-2000年2月に新しいファイルシステム
-<systemitem class="filesystem">devfs</systemitem>
-がカーネル 2.3.46 に導入され、2.4系の安定版カーネルにて利用できるようになりました。
+2000年2月に新しいファイルシステム <systemitem
+class="filesystem">devfs</systemitem> がカーネル 2.3.46 に導入され、2.4系の安定版カーネルにて利用できるようになりました。
 このファイルシステムはカーネルのソース内に含まれ実現されていましたが、デバイスを動的に生成するこの手法は、主要なカーネル開発者の十分な支援は得られませんでした。
 </para>
 @z
@@ -121,14 +115,11 @@ Udev による方法では、カーネルが検知したデバイスだけがデ
     from the kernel in June, 2006.</para>
 @y
 <para>
-<systemitem class="filesystem">devfs</systemitem>
-が採用した手法で問題になるのは、主にデバイスの検出・生成・命名の方法です。
+<systemitem class="filesystem">devfs</systemitem> が採用した手法で問題になるのは、主にデバイスの検出、生成、命名の方法です。
 特にデバイスの命名方法がおそらく最も重大な問題です。
 一般的に言えることとして、デバイス名が変更可能であるならデバイス命名の規則はシステム管理者が考えることであって、特定の開発者に委ねるべきことではありません。
-また <systemitem class="filesystem">devfs</systemitem>
-にはその設計に起因した競合の問題があるため、根本的にカーネルを修正しなければ解消できる問題ではありません。
-そこで長い間、保守されることがなかったために非推奨 (deprecated)
-として位置づけられ、最終的に 2006年6月にはカーネルから取り除かれました。
+また <systemitem class="filesystem">devfs</systemitem> にはその設計に起因した競合の問題があるため、根本的にカーネルを修正しなければ解消できる問題ではありません。
+そこで長い間、保守されることがなかったために非推奨 (deprecated) として位置づけられ、最終的に 2006年6月にはカーネルから取り除かれました。
 </para>
 @z
 
@@ -143,14 +134,10 @@ Udev による方法では、カーネルが検知したデバイスだけがデ
     much more realistic.</para>
 @y
 <para>
-開発版の 2.5 系カーネルと、後にリリースされた安定版のカーネル 2.6 系を経て、新しい仮想ファイルシステム
-<systemitem class="filesystem">sysfs</systemitem>
-が登場しました。
-<systemitem class="filesystem">sysfs</systemitem>
-が実現したのは、システムのハードウェア設定をユーザー空間のプロセスとして表に出したことです。
-ユーザー空間での設定を可視化したことによって
-<systemitem class="filesystem">devfs</systemitem>
-が為していたことを、ユーザー空間にて現実に見ることが可能になったわけです。
+開発版の 2.5 系カーネルと、後にリリースされた安定版のカーネル 2.6 系を経て、新しい仮想ファイルシステム <systemitem
+class="filesystem">sysfs</systemitem> が登場しました。
+<systemitem class="filesystem">sysfs</systemitem> が実現したのは、システムのハードウェア設定をユーザー空間のプロセスとして表に出したことです。
+ユーザー空間での設定を可視化したことによって <systemitem class="filesystem">devfs</systemitem> が為していたことを、ユーザー空間にて現実に見ることが可能になったわけです。
 </para>
 @z
 
@@ -182,19 +169,14 @@ Udev による方法では、カーネルが検知したデバイスだけがデ
       node creation.</para>
 @y
 <para>
-<systemitem class="filesystem">sysfs</systemitem>
-ファイルシステムについては上で簡単に触れました。
-<systemitem class="filesystem">sysfs</systemitem>
-はどのようにしてシステム上に存在するデバイスを知るのか、そしてどのデバイス番号が利用されるのか。
+<systemitem class="filesystem">sysfs</systemitem> ファイルシステムについては上で簡単に触れました。
+<systemitem class="filesystem">sysfs</systemitem> はどのようにしてシステム上に存在するデバイスを知るのか、そしてどのデバイス番号が利用されるのか。
 そこが知りたいところです。
-カーネルに直接組み込まれて構築されたドライバでは、対象のオブジェクトがカーネルによって検出されたものとしてそのオブジェクトを
+カーネルに直接組み込まれて構築されたドライバーでは、対象のオブジェクトがカーネルによって検出されたものとしてそのオブジェクトを
 <systemitem class="filesystem">sysfs</systemitem> に登録します。
-モジュールとしてコンパイルされたドライバでは、その登録がモジュールのロード時に行われます。
-<systemitem class="filesystem">sysfs</systemitem>
-ファイルシステムが (<filename class="directory">/sys</filename> に)
-マウントされると、組み込みのドライバによって <systemitem class="filesystem">sysfs</systemitem>
-に登録されたデータは、ユーザー空間のプロセスとデバイスノード生成を行う
-<command>udevd</command> にて利用可能となります。
+モジュールとしてコンパイルされたドライバーでは、その登録がモジュールのロード時に行われます。
+<systemitem class="filesystem">sysfs</systemitem> ファイルシステムが (<filename class="directory">/sys</filename> に) マウントされると、組み込みのドライバーによって <systemitem
+class="filesystem">sysfs</systemitem> に登録されたデータは、ユーザー空間のプロセスとデバイスノード生成を行う <command>udevd</command> にて利用可能となります。
 </para>
 @z
 
@@ -228,23 +210,16 @@ Udev ブートスクリプト
       <command>udevd</command> to handle them.</para>
 @y
 <para>
-初期起動スクリプト <command>S10udev</command>
-は、Linux のブート時にデバイスノード生成を受け持ちます。
-このスクリプトは <command>/sbin/hotplug</command>
-のデフォルトから uevent ハンドラを取り除きます。
+初期起動スクリプト <command>S10udev</command> は、Linux のブート時にデバイスノード生成を受け持ちます。
+このスクリプトは <command>/sbin/hotplug</command> のデフォルトから uevent ハンドラを取り除きます。
 この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
-そのかわりに、カーネルが起動する uevent をネットリンクソケット (netlink socket)
-上で待ち受けます。
-そしてブートスクリプトが <filename class="directory">/lib/udev/devices</filename>
-内にある静的なデバイスノードをすべて <filename class="directory">/dev</filename>
-にコピーします。
+そのかわりに、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
+そしてブートスクリプトが <filename class="directory">/lib/udev/devices</filename> 内にある静的なデバイスノードをすべて <filename class="directory">/dev</filename> にコピーします。
 デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
 あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
-<filename class="directory">/lib/udev/devices</filename>
-内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
+<filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
 こうしてブートスクリプトは Udev デーモン、つまり <command>udevd</command> を起動し、それがどのような uevent であっても対応できるものとなります。
-最後にブートスクリプトはカーネルに対して、すべてのデバイスにおいて既に登録されている uevent を再起動させ、
-<command>udevd</command> がそれを待ち受けるものとなります。
+最後にブートスクリプトはカーネルに対して、すべてのデバイスにおいて既に登録されている uevent を再起動させ、<command>udevd</command> がそれを待ち受けるものとなります。
 </para>
 @z
 
@@ -277,27 +252,17 @@ Udev ブートスクリプト
       </para>
 @y
 <para>
-Udev はデバイスのメジャー番号、マイナー番号を認識するために
-<filename class="directory">/sys</filename> ディレクトリ内の
-<systemitem class="filesystem">sysfs</systemitem>
-の情報を参照します。
-例えば <filename>/sys/class/tty/vcs/dev</filename>
-には <quote>7:0</quote> という文字があります。
-この文字は <command>udevd</command> が利用するもので、メジャー番号が
-<emphasis>7</emphasis>、マイナー番号が <emphasis>0</emphasis>
-のデバイスノードを生成します。
-<filename class="directory">/dev</filename>
-ディレクトリ配下に生成されるノードの名称とパーミッションは、
-<filename class="directory">/etc/udev/rules.d/</filename>
-ディレクトリにある各種ファイルが指定する規則に従って決まります。
+Udev はデバイスのメジャー番号、マイナー番号を認識するために <filename
+class="directory">/sys</filename> ディレクトリ内の <systemitem
+class="filesystem">sysfs</systemitem> の情報を参照します。
+例えば <filename>/sys/class/tty/vcs/dev</filename> には <quote>7:0</quote> という文字があります。
+この文字は <command>udevd</command> が利用するもので、メジャー番号が <emphasis>7</emphasis>、マイナー番号が <emphasis>0</emphasis> のデバイスノードを生成します。
+<filename class="directory">/dev</filename> ディレクトリ配下に生成されるノードの名称とパーミッションは、<filename
+class="directory">/etc/udev/rules.d/</filename> ディレクトリにある各種ファイルが指定する規則に従って決まります。
 それらのファイルは番号付けがされています。
 LFS-ブートスクリプトパッケージにおける方法に似ています。
-Udev がデバイスを生成しようとしてその生成規則が見つけられなかった場合は、デフォルトのパーミッションは
-<emphasis>660</emphasis>、デフォルトの所有者は <emphasis>root:root</emphasis>
-となります。
-Udev におけるデバイス生成規則を設定するファイルについて、その文法を示したドキュメントが
-<filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename>
-にあります。
+Udev がデバイスを生成しようとしてその生成規則が見つけられなかった場合は、デフォルトのパーミッションは <emphasis>660</emphasis>、デフォルトの所有者は <emphasis>root:root</emphasis> となります。
+Udev におけるデバイス生成規則を設定するファイルについて、その文法を示したドキュメントが <filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename> にあります。
 </para>
 @z
 
@@ -330,21 +295,14 @@ Udev におけるデバイス生成規則を設定するファイルについて
       expansion.</para>
 @y
 <para>
-モジュールとしてコンパイルされたデバイスドライバの場合、デバイス名の別名が作り出されています。
+モジュールとしてコンパイルされたデバイスドライバーの場合、デバイス名の別名が作り出されています。
 その別名は <command>modinfo</command> プログラムを使えば確認することができます。
 そしてこの別名は、モジュールがサポートするバス固有の識別子に関連づけられます。
-例えば <emphasis>snd-fm801</emphasis>
-ドライバは、ベンダーID 0x1319 とデバイスID 0x0801 の PCI ドライバをサポートします。
-そして <quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote>
-というエイリアスがあります。
-たいていのデバイスでは、<systemitem class="filesystem">sysfs</systemitem>
-を通じてドライバがデバイスを扱うものであり、ドライバのエイリアスをバスドライバが提供します。
-<filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename>
-ファイルならば <quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote>
-という文字列を含んでいるはずです。
-Udev が提供するデフォルトの生成規則によって <command>udevd</command>
-から <command>/sbin/modprobe</command> が呼び出されることになり、その際には uevent に関する環境変数
-<envar>MODALIAS</envar> の設定内容が利用されます。
+例えば <emphasis>snd-fm801</emphasis> ドライバーは、ベンダーID 0x1319 とデバイスID 0x0801 の PCI ドライバーをサポートします。
+そして <quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote> というエイリアスがあります。
+たいていのデバイスでは、<systemitem class="filesystem">sysfs</systemitem> を通じてドライバーがデバイスを扱うものであり、ドライバーのエイリアスをバスドライバーが提供します。
+<filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename> ファイルならば <quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote> という文字列を含んでいるはずです。
+Udev が提供するデフォルトの生成規則によって <command>udevd</command> から <command>/sbin/modprobe</command> が呼び出されることになり、その際には uevent に関する環境変数 <envar>MODALIAS</envar> の設定内容が利用されます。
 (この環境変数の内容は sysfs 内の <filename>modalias</filename> ファイルの内容と同じはずです。)
 そしてワイルドカードが指定されているならそれが展開された上で、エイリアス文字列に合致するモジュールがすべてロードされることになります。
 </para>
@@ -358,10 +316,9 @@ Udev が提供するデフォルトの生成規則によって <command>udevd</c
       be prevented.</para>
 @y
 <para>
-上の例で <emphasis>forte</emphasis>
-ドライバがあったとすると、<emphasis>snd-fm801</emphasis> の他にそれもロードされてしまいます。
+上の例で <emphasis>forte</emphasis> ドライバーがあったとすると、<emphasis>snd-fm801</emphasis> の他にそれもロードされてしまいます。
 これは古いものでありロードされて欲しくないものです。
-不要なドライバのロードを防ぐ方法については後述しているので参照してください。
+不要なドライバーのロードを防ぐ方法については後述しているので参照してください。
 </para>
 @z
 
@@ -428,15 +385,11 @@ USB (Universal Serial Bus) で MP3 プレイヤーを接続しているような
       SERIO and FireWire devices.</para>
 @y
 <para>
-Udev がモジュールをロードできるためには、バス固有のエイリアスがあって、バスドライバが
-<systemitem class="filesystem">sysfs</systemitem>
-に対して適切なエイリアスを提供していることが必要です。
+Udev がモジュールをロードできるためには、バス固有のエイリアスがあって、バスドライバーが <systemitem
+class="filesystem">sysfs</systemitem> に対して適切なエイリアスを提供していることが必要です。
 そうでない場合は、別の手段を通じてモジュールのロードを仕組まなければなりません。
-Linux-&linux-version; においての Udev
-は、
-INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire
-の各デバイスに対するドライバをロードします。
-それらのデバイスドライバが適切に構築されているからです。
+Linux-&linux-version; においての Udev は、INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire の各デバイスに対するドライバーをロードします。
+それらのデバイスドライバーが適切に構築されているからです。
 </para>
 @z
 
@@ -448,12 +401,8 @@ INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire
       a <filename>modalias</filename> file there.</para>
 @y
 <para>
-目的のデバイスドライバが Udev に対応しているかどうかは、
-<command>modinfo</command> コマンドに引数としてモジュール名を与えて実行します。
-<filename class="directory">/sys/bus</filename>
-ディレクトリ配下にあるそのデバイス用のディレクトリを見つけ出して、
-<filename>modalias</filename>
-ファイルが存在しているかどうかを見ることで分かります。
+目的のデバイスドライバーが Udev に対応しているかどうかは、<command>modinfo</command> コマンドに引数としてモジュール名を与えて実行します。
+<filename class="directory">/sys/bus</filename> ディレクトリ配下にあるそのデバイス用のディレクトリを見つけ出して、<filename>modalias</filename> ファイルが存在しているかどうかを見ることで分かります。
 </para>
 @z
 
@@ -465,11 +414,9 @@ INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire
       to be fixed later.</para>
 @y
 <para>
-<systemitem class="filesystem">sysfs</systemitem>
-に <filename>modalias</filename>
-ファイルが存在しているなら、そのドライバはデバイスをサポートし、デバイスとの直接のやり取りが可能であることを表します。
-ただしエイリアスを持っていなければ、それはドライバのバグです。
-その場合は Udev に頼ることなくドライバをロードするしかありません。
+<systemitem class="filesystem">sysfs</systemitem> に <filename>modalias</filename> ファイルが存在しているなら、そのドライバーはデバイスをサポートし、デバイスとの直接のやり取りが可能であることを表します。
+ただしエイリアスを持っていなければ、それはドライバーのバグです。
+その場合は Udev に頼ることなくドライバーをロードするしかありません。
 そしてそのバグが解消されるのを待つしかありません。
 </para>
 @z
@@ -482,13 +429,8 @@ INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire
       busses. Expect this issue to be fixed in later kernel versions.</para>
 @y
 <para>
-<filename class="directory">/sys/bus</filename>
-ディレクトリ配下の対応するディレクトリ内に
-<filename>modalias</filename>
-ファイルがなかったら、これはカーネル開発者がそのバス形式に対する
-modalias のサポートをまだ行っていないことを意味します。
-Linux-&linux-version;
-では ISA バスがこれに該当します。
+<filename class="directory">/sys/bus</filename> ディレクトリ配下の対応するディレクトリ内に <filename>modalias</filename> ファイルがなかったら、これはカーネル開発者がそのバス形式に対する modalias のサポートをまだ行っていないことを意味します。
+Linux-&linux-version; では ISA バスがこれに該当します。
 最新のカーネルにて解消されることを願うしかありません。
 </para>
 @z
@@ -499,10 +441,7 @@ Linux-&linux-version;
       <emphasis>loop</emphasis> at all.</para>
 @y
 <para>
-Udev は <emphasis>snd-pcm-oss</emphasis>
-のような <quote>ラッパー (wrapper)</quote> ドライバや
-<emphasis>loop</emphasis>
-のような、現実のハードウェアに対するものではないドライバは、ロードすることができません。
+Udev は <emphasis>snd-pcm-oss</emphasis> のような <quote>ラッパー (wrapper)</quote> ドライバーや <emphasis>loop</emphasis> のような、現実のハードウェアに対するものではないドライバーは、ロードすることができません。
 </para>
 @z
 
@@ -526,14 +465,8 @@ Udev は <emphasis>snd-pcm-oss</emphasis>
       file. For example:</para>
 @y
 <para>
-<quote>ラッパー (wrapper)</quote>
-モジュールが単に他のモジュールの機能を拡張するだけのものであるなら
-(例えば <emphasis>snd-pcm-oss</emphasis> は
-<emphasis>snd-pcm</emphasis> の機能拡張を行うもので、
-OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため)
-<command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
-これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename>
-ファイル内にて <quote>install</quote> の記述行を加えることで実現します。
+<quote>ラッパー (wrapper)</quote> モジュールが単に他のモジュールの機能を拡張するだけのものであるなら (例えば <emphasis>snd-pcm-oss</emphasis> は <emphasis>snd-pcm</emphasis> の機能拡張を行うもので、OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため) <command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
+これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename> ファイル内にて <quote>install</quote> の記述行を加えることで実現します。
 </para>
 @z
 
@@ -545,11 +478,8 @@ OSS アプリケーションに対してサウンドカードを利用可能な�
       This works for wrapper modules too, but is suboptimal in that case.</para>
 @y
 <para>
-問題のモジュールがラッパーモジュールではなく、単独で利用できるものであれば、
-<command>S05modules</command>
-ブートスクリプトを編集して、システム起動時にこのモジュールがロードされるようにします。
-これは <filename>/etc/sysconfig/modules</filename>
-ファイルにて、そのモジュール名を単独の行に記述することで実現します。
+問題のモジュールがラッパーモジュールではなく、単独で利用できるものであれば、 <command>S05modules</command> ブートスクリプトを編集して、システム起動時にこのモジュールがロードされるようにします。
+これは <filename>/etc/sysconfig/modules</filename> ファイルにて、そのモジュール名を単独の行に記述することで実現します。
 この方法はラッパーモジュールに対しても動作しますが、この場合は次善策となります。
 </para>
 @z
@@ -568,11 +498,8 @@ Udev が不必要なモジュールをロードする問題
       <emphasis>forte</emphasis> module in the example below:</para>
 @y
 <para>
-不必要なモジュールはこれをビルドしないことにするか、あるいは
-<filename>/etc/modprobe.d/blacklist.conf</filename>
-ファイルにブラックリスト (blacklist) として登録してください。
-例えば <emphasis>forte</emphasis>
-モジュールをブラックリストに登録するには以下のようにします。
+不必要なモジュールはこれをビルドしないことにするか、あるいは <filename>/etc/modprobe.d/blacklist.conf</filename> ファイルにブラックリスト (blacklist) として登録してください。
+例えば <emphasis>forte</emphasis> モジュールをブラックリストに登録するには以下のようにします。
 </para>
 @z
 
@@ -581,8 +508,7 @@ Udev が不必要なモジュールをロードする問題
       explicit <command>modprobe</command> command.</para>
 @y
 <para>
-ブラックリストに登録されたモジュールは <command>modprobe</command>
-コマンドを使えば手動でロードすることもできます。
+ブラックリストに登録されたモジュールは <command>modprobe</command> コマンドを使えば手動でロードすることもできます。
 </para>
 @z
 
@@ -603,12 +529,9 @@ Udev が不正なデバイスを生成する、または誤ったシンボリッ
 @y
 <para>
 デバイス生成規則が意図したデバイスに合致していないと、この状況が往々にして起こります。
-例えば生成規則の記述が不十分であった場合、SCSI ディスク (本来望んでいるデバイス)
-と、それに対応づいたものとしてベンダーが提供する SCSI ジェネリックデバイス
-(これは誤ったデバイス) の両方に生成規則が合致してしまいます。
+例えば生成規則の記述が不十分であった場合、SCSI ディスク (本来望んでいるデバイス) と、それに対応づいたものとしてベンダーが提供する SCSI ジェネリックデバイス (これは誤ったデバイス) の両方に生成規則が合致してしまいます。
 記述されている生成規則を探し出して正確に記述してください。
-その際には <command>udevadm info</command>
-コマンドを使って情報を確認してください。
+その際には <command>udevadm info</command> コマンドを使って情報を確認してください。
 </para>
 @z
 
@@ -632,15 +555,10 @@ Udev 規則が不審な動きをする問題
 @y
 <para>
 この問題は、一つ前に示したものが別の症状となって現れたものかもしれません。
-そのような理由でなく、生成規則が正しく
-<systemitem class="filesystem">sysfs</systemitem>
-の属性を利用しているのであれば、それはカーネルの処理タイミングに関わる問題であって、カーネルを修正すべきものです。
-今の時点では、該当する <systemitem class="filesystem">sysfs</systemitem>
-の属性の利用を待ち受けるような生成規則を生成し、
-<filename>/etc/udev/rules.d/10-wait_for_sysfs.rules</filename>
-ファイルにそれを追加することで対処できます。
-(<filename>/etc/udev/rules.d/10-wait_for_sysfs.rules</filename>
-ファイルがなければ新規に生成します。)
+そのような理由でなく、生成規則が正しく <systemitem
+class="filesystem">sysfs</systemitem> の属性を利用しているのであれば、それはカーネルの処理タイミングに関わる問題であって、カーネルを修正すべきものです。
+今の時点では、該当する <systemitem class="filesystem">sysfs</systemitem> の属性の利用を待ち受けるような生成規則を生成し、<filename>/etc/udev/rules.d/10-wait_for_sysfs.rules</filename> ファイルにそれを追加することで対処できます。
+(<filename>/etc/udev/rules.d/10-wait_for_sysfs.rules</filename> ファイルがなければ新規に生成します。)
 もしこれを実施してうまくいった場合は LFS 開発メーリングリストにお知らせください。
 </para>
 @z
@@ -660,7 +578,7 @@ Udev がデバイスを生成しない問題
 @y
 <para>
 ここでは以下のことを前提としています。
-まずドライバがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
+まずドライバーがカーネル内に静的に組み入れられて構築されているか、あるいは既にモジュールとしてロードされていること。
 そして Udev が異なった名前のデバイスを生成していないことです。
 </para>
 @z
@@ -679,17 +597,11 @@ Udev がデバイスを生成しない問題
       <command>S10udev</command> bootscript.</para>
 @y
 <para>
-Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバが
-<systemitem class="filesystem">sysfs</systemitem>
-に対して属性データを提供していなければなりません。
-これはカーネルツリーの外に配置されるサードパーティ製のドライバであれば当たり前のことです。
-したがって <filename>/lib/udev/devices</filename>
-において、適切なメジャー・マイナー番号を用いた静的なデバイスノードを生成してください。
-(カーネルのドキュメント <filename>devices.txt</filename>
-またはサードパーティベンダーが提供するドキュメントを参照してください。)
-この静的デバイスノードは、<command>S10udev</command>
-ブートスクリプトによって <filename class="directory">/dev</filename>
-にコピーされます。
+Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
+これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
+したがって <filename>/lib/udev/devices</filename> において、適切なメジャー・マイナー番号を用いた静的なデバイスノードを生成してください。
+(カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
+この静的デバイスノードは、<command>S10udev</command> ブートスクリプトによって <filename class="directory">/dev</filename> にコピーされます。
 </para>
 @z
 
@@ -743,9 +655,7 @@ Udev がデバイスノード生成のために必要となる情報を知るた
         <ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/></para>
 @y
 <para>
-<systemitem class="filesystem">devfs</systemitem>
-のユーザー空間での実装方法
-<ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/>
+<systemitem class="filesystem">devfs</systemitem> のユーザー空間での実装方法 <ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/>
 </para>
 @z
 
@@ -769,4 +679,3 @@ Udev がデバイスノード生成のために必要となる情報を知るた
 <ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
 </para>
 @z
-

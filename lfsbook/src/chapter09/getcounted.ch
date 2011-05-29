@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -18,7 +27,7 @@
 @y
 <para>
 これにより本書の作業は終了です。
-LFS ユーザー登録を行ってカウンタを取得しますか？
+LFS ユーザー登録を行ってカウンターを取得しますか？
 以下のページ <ulink url="&lfs-root;cgi-bin/lfscounter.cgi"/>
 にて氏名と LFS バージョンを登録して下さい。
 </para>
@@ -31,4 +40,3 @@ LFS ユーザー登録を行ってカウンタを取得しますか？
 それではシステムの再起動を行ないましょう。
 </para>
 @z
-

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -104,7 +113,7 @@ CERT にはメーリングリストがあり、数々のオペレーティング
           url="http://www.securityfocus.com/archive"/>.</para>
 @y
 <para>
-バグトラックは、完全公開のコンピュータセキュリティに関するメーリングリストです。
+バグトラックは、完全公開のコンピューターセキュリティに関するメーリングリストです。
 これは新たに発見されたセキュリティに関する問題を公開しています。
 また時には、その問題を解消するフィックス情報も提供してくれます。
 購読に関する情報は
@@ -194,4 +203,3 @@ TLDP ではハウツー (HOWTO)、ガイド、man ページを数多く提供し
 <ulink url="http://www.tldp.org/"/>
 </para>
 @z
-

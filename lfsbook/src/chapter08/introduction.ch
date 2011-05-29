@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -19,8 +28,6 @@
 <para>
 ここからは LFS システムをブート可能にしていきます。
 この章では <filename>fstab</filename> ファイルを作成し、LFS システムのカーネルを構築します。
-また GRUB のブートローダをインストールして
-LFS システムの起動時にブートローダを選択できるようにします。
+また GRUB のブートローダーをインストールして LFS システムの起動時にブートローダーを選択できるようにします。
 </para>
 @z
-

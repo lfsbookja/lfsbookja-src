@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -198,9 +207,8 @@ ru_RU.UTF-8 をセットするなら以下のように変わります。
   <option>barrier</option> option.</para>
 @y
 <para>
-論理ボリュームマネージャ (Logical Volume Management; LVM)
+論理ボリュームマネージャー (Logical Volume Management; LVM)
 に基づいたパーティションでは <option>barrier</option>
 オプションは利用できません。
 </para>
 @z
-

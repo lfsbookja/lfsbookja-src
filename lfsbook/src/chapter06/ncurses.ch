@@ -17,9 +17,9 @@
     <para>The Ncurses package contains libraries for terminal-independent
     handling of character screens.</para>
 @y
-<para>
-Ncurses パッケージは、端末に依存しない、文字ベースのスクリーン制御を行うライブラリを提供します。
-</para>
+    <para>
+    Ncurses パッケージは、端末に依存しない、文字ベースのスクリーン制御を行うライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -31,9 +31,9 @@ Ncurses パッケージは、端末に依存しない、文字ベースのスク
 @x
     <para>Prepare Ncurses for compilation:</para>
 @y
-<para>
-Ncurses をコンパイルするための準備をします。
-</para>
+    <para>
+    Ncurses をコンパイルするための準備をします。
+    </para>
 @z
 
 @x
@@ -52,14 +52,14 @@ Ncurses をコンパイルするための準備をします。
           only in 8-bit locales. Wide-character and normal libraries are
           source-compatible, but not binary-compatible.</para>
 @y
-<para>
-このオプションは通常のライブラリ (<filename class="libraryfile">libncurses.so.&ncurses-version;</filename>)
-ではなくワイド文字対応のライブラリ (<filename class="libraryfile">libncursesw.so.&ncurses-version;</filename>)
-をビルドすることを指示します。
-ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
-通常のライブラリでは 8ビットロケールに対してしか動作しません。
-ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
-</para>
+          <para>
+          このオプションは通常のライブラリ (<filename
+          class="libraryfile">libncurses.so.&ncurses-version;</filename>) ではなくワイド文字対応のライブラリ (<filename
+          class="libraryfile">libncursesw.so.&ncurses-version;</filename>) をビルドすることを指示します。
+          ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
+          通常のライブラリでは 8ビットロケールに対してしか動作しません。
+          ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
+          </para>
 @z
 
 @x
@@ -75,14 +75,12 @@ Ncurses をコンパイルするための準備をします。
     <filename>README</filename> file in that directory for further details.
     </para>
 @y
-<para>
-このパッケージにテストスイートはありますが、パッケージをインストールした後でないと実行できません。
-テストスイートのためのファイル群はサブディレクトリ
-<filename class="directory">test/</filename>
-以下に残っています。
-詳しいことはそのディレクトリ内にある <filename>README</filename>
-ファイルを参照してください。
-</para>
+    <para>
+    このパッケージにテストスイートはありますが、パッケージをインストールした後でないと実行できません。
+    テストスイートのためのファイル群はサブディレクトリ <filename
+    class="directory">test/</filename> 以下に残っています。
+    詳しいことはそのディレクトリ内にある <filename>README</filename> ファイルを参照してください。
+    </para>
 @z
 
 @x
@@ -96,21 +94,20 @@ Ncurses をコンパイルするための準備をします。
     <filename class="directory">/lib</filename> directory, where they are
     expected to reside:</para>
 @y
-<para>
-共有ライブラリを <filename class="directory">/lib</filename>
-ディレクトリに移動します。
-これらはここにあるべきものです。
-</para>
+    <para>
+    共有ライブラリを <filename class="directory">/lib</filename> ディレクトリに移動します。
+    これらはここにあるべきものです。
+    </para>
 @z
 
 @x
     <para>Because the libraries have been moved, one symlink points to
     a non-existent file. Recreate it:</para>
 @y
-<para>
-ライブラリを移動させたので、シンボリックリンク先が存在しないことになります。
-そこでリンクを再生成します。
-</para>
+    <para>
+    ライブラリを移動させたので、シンボリックリンク先が存在しないことになります。
+    そこでリンクを再生成します。
+    </para>
 @z
 
 @x
@@ -118,10 +115,10 @@ Ncurses をコンパイルするための準備をします。
     non-wide-character Ncurses libraries. Trick such applications into linking with
     wide-character libraries by means of symlinks and linker scripts:</para>
 @y
-<para>
-アプリケーションによっては、ワイド文字対応ではないライブラリをリンカが探し出すよう求めるものが多くあります。
-そのようなアプリケーションに対しては、以下のようなシンボリックリンクやリンカスクリプトを作り出して、ワイド文字対応のライブラリにリンクさせるよう仕向けます。
-</para>
+    <para>
+    アプリケーションによっては、ワイド文字対応ではないライブラリをリンカーが探し出すよう求めるものが多くあります。
+    そのようなアプリケーションに対しては、以下のようなシンボリックリンクやリンカースクリプトを作り出して、ワイド文字対応のライブラリにリンクさせるよう仕向けます。
+    </para>
 @z
 
 @x
@@ -129,19 +126,18 @@ Ncurses をコンパイルするための準備をします。
     <filename class="libraryfile">-lcurses</filename> at build time are still
     buildable:</para>
 @y
-<para>
-最後に古いアプリケーションにおいて、ビルド時に
-<filename class="libraryfile">-lcurses</filename>
-を指定するものがあるため、これもビルド可能なものにします。
-</para>
+    <para>
+    最後に古いアプリケーションにおいて、ビルド時に <filename
+    class="libraryfile">-lcurses</filename> を指定するものがあるため、これもビルド可能なものにします。
+    </para>
 @z
 
 @x
     <para>If desired, install the Ncurses documentation:</para>
 @y
-<para>
-必要なら Ncurses のドキュメントをインストールします。
-</para>
+    <para>
+    必要なら Ncurses のドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -151,12 +147,11 @@ Ncurses をコンパイルするための準備をします。
       of some binary-only application or to be compliant with LSB, build 
       the package again with the following commands:</para>
 @y
-<para>
-ここまでの作業手順では、ワイド文字対応ではない Ncurses ライブラリは生成しませんでした。
-ソースからコンパイルして構築するパッケージなら、実行時にそのようなライブラリにリンクするものはないからです。
-バイナリコードしかないアプリケーションを取り扱う場合、あるいは
-LSB 対応を要する場合で、それがワイド文字対応ではないライブラリを必要とするなら、以下のコマンドによりそのようなライブラリを生成してください。
-</para>
+      <para>
+      ここまでの作業手順では、ワイド文字対応ではない Ncurses ライブラリは生成しませんでした。
+      ソースからコンパイルして構築するパッケージなら、実行時にそのようなライブラリにリンクするものはないからです。
+      バイナリコードしかないアプリケーションを取り扱う場合、あるいは LSB 対応を要する場合で、それがワイド文字対応ではないライブラリを必要とするなら、以下のコマンドによりそのようなライブラリを生成してください。
+      </para>
 @z
 
 @x
@@ -186,7 +181,7 @@ LSB 対応を要する場合で、それがワイド文字対応ではないラ�
 @y
         <seg>captoinfo (tic へのリンク), clear, infocmp, infotocap (tic へのリンク),
         ncursesw5-config, reset (tset へのリンク), <!--tabs,--> tic, toe, tput, tset</seg>
-        <seg>libcursesw.{a,so} (libncursesw.{a,so} へのシンボリックリンクおよびリンカスクリプト),
+        <seg>libcursesw.{a,so} (libncursesw.{a,so} へのシンボリックリンクおよびリンカースクリプト),
         libformw.{a,so}, libmenuw.{a,so}, libncurses++w.a, libncursesw.{a,so},
         libpanelw.{a,so}
         これらに加えてワイド文字対応ではない通常のライブラリで、その名称から "w" を取り除いたもの。
@@ -203,57 +198,57 @@ LSB 対応を要する場合で、それがワイド文字対応ではないラ�
 @x captoinfo
           <para>Converts a termcap description into a terminfo description</para>
 @y
-<para>
-termcap の記述を terminfo の記述に変換します。
-</para>
+          <para>
+          termcap の記述を terminfo の記述に変換します。
+          </para>
 @z
 
 @x clear
           <para>Clears the screen, if possible</para>
 @y
-<para>
-画面消去が可能ならこれを行います。
-</para>
+          <para>
+          画面消去が可能ならこれを行います。
+          </para>
 @z
 
 @x infocmp
           <para>Compares or prints out terminfo descriptions</para>
 @y
-<para>
-terminfo の記述どうしを比較したり出力したりします。
-</para>
+          <para>
+          terminfo の記述どうしを比較したり出力したりします。
+          </para>
 @z
 
 @x infotocap
           <para>Converts a terminfo description into a termcap description</para>
 @y
-<para>
-terminfo の記述を termcap の記述に変換します。
-</para>
+          <para>
+          terminfo の記述を termcap の記述に変換します。
+          </para>
 @z
 
 @x ncursesw5-config
           <para>Provides configuration information for ncurses</para>
 @y
-<para>
-ncurses の設定情報を提供します。
-</para>
+          <para>
+          ncurses の設定情報を提供します。
+          </para>
 @z
 
 @x reset
           <para>Reinitializes a terminal to its default values</para>
 @y
-<para>
-端末をデフォルト設定に初期化します。
-</para>
+          <para>
+          端末をデフォルト設定に初期化します。
+          </para>
 @z
 
 @x tabs
           <para>Clears and sets tab stops on a terminal</para>
 @y
-<para>
-端末上のタブストップの設定をクリアしたり設定したりします。
-</para>
+          <para>
+          端末上のタブストップの設定をクリアしたり設定したりします。
+          </para>
 @z
 
 @x tic
@@ -262,22 +257,21 @@ ncurses の設定情報を提供します。
           ncurses library routines. A terminfo file contains information on the
           capabilities of a certain terminal</para>
 @y
-<para>
-terminfo の定義項目に対するコンパイラです。
-これはソース形式の terminfo ファイルをバイナリ形式に変換し、ncurses
-ライブラリ内の処理ルーチンが利用できるようにします。
-terminfo ファイルは特定端末の特性に関する情報が記述されるものです。
-</para>
+          <para>
+          terminfo の定義項目に対するコンパイラです。
+          これはソース形式の terminfo ファイルをバイナリ形式に変換し、ncurses ライブラリ内の処理ルーチンが利用できるようにします。
+          terminfo ファイルは特定端末の特性に関する情報が記述されるものです。
+          </para>
 @z
 
 @x toe
           <para>Lists all available terminal types, giving the primary name and
           description for each</para>
 @y
-<para>
-利用可能なすべての端末タイプを一覧表示します。
-そこでは端末名と簡単な説明を示します。
-</para>
+          <para>
+          利用可能なすべての端末タイプを一覧表示します。
+          そこでは端末名と簡単な説明を示します。
+          </para>
 @z
 
 @x tput
@@ -285,26 +279,26 @@ terminfo ファイルは特定端末の特性に関する情報が記述され�
           the shell; it can also be used to reset or initialize a terminal or
           report its long name</para>
 @y
-<para>
-端末に依存する機能設定をシェルが利用できるようにします。
-また端末のリセットや初期化、あるいは長い端末名称の表示も行います。
-</para>
+          <para>
+          端末に依存する機能設定をシェルが利用できるようにします。
+          また端末のリセットや初期化、あるいは長い端末名称の表示も行います。
+          </para>
 @z
 
 @x tset
           <para>Can be used to initialize terminals</para>
 @y
-<para>
-端末の初期化に利用します。
-</para>
+          <para>
+          端末の初期化に利用します。
+          </para>
 @z
 
 @x libcurses
           <para>A link to <filename>libncurses</filename></para>
 @y
-<para>
-<filename>libncurses</filename> へのリンク。
-</para>
+          <para>
+          <filename>libncurses</filename> へのリンク。
+          </para>
 @z
 
 @x libncurses
@@ -313,35 +307,32 @@ terminfo ファイルは特定端末の特性に関する情報が記述され�
           menu displayed during the kernel's <command>make
           menuconfig</command></para>
 @y
-<para>
-様々な方法により端末画面上に文字列を表示するための関数を提供します。
-これらの関数を用いた具体例として、カーネルの
-<command>make menuconfig</command>
-の実行によって表示されるメニューがあります。
-</para>
+          <para>
+          様々な方法により端末画面上に文字列を表示するための関数を提供します。
+          これらの関数を用いた具体例として、カーネルの <command>make menuconfig</command> の実行によって表示されるメニューがあります。
+          </para>
 @z
 
 @x libform
           <para>Contains functions to implement forms</para>
 @y
-<para>
-フォームを実装するための関数を提供します。
-</para>
+          <para>
+          フォームを実装するための関数を提供します。
+          </para>
 @z
 
 @x libmenu
           <para>Contains functions to implement menus</para>
 @y
-<para>
-メニューを実装するための関数を提供します。
-</para>
+          <para>
+          メニューを実装するための関数を提供します。
+          </para>
 @z
 
 @x libpanel
           <para>Contains functions to implement panels</para>
 @y
-<para>
-パネルを実装するための関数を提供します。
-</para>
+          <para>
+          パネルを実装するための関数を提供します。
+          </para>
 @z
-

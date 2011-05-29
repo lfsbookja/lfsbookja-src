@@ -80,8 +80,7 @@ Groff はデフォルトの用紙サイズを設定する環境変数
     will not work properly without the following symlinks:</para>
 @y
 <para>
-<command>xman</command>
-のようなドキュメント関連プログラムが正しく動作するように、以下のようなシンボリックリンクを作成します。
+<command>xman</command> のようなドキュメント関連プログラムが正しく動作するように、以下のようなシンボリックリンクを作成します。
 </para>
 @z
 
@@ -132,8 +131,7 @@ Groff はデフォルトの用紙サイズを設定する環境変数
           information that is used by the <command>groff</command> system</para>
 @y
 <para>
-troff のフォントファイルを読み込んで <command>groff</command>
-システムが利用する付加的なフォントメトリック情報を追加します。
+troff のフォントファイルを読み込んで <command>groff</command> システムが利用する付加的なフォントメトリック情報を追加します。
 </para>
 @z
 
@@ -142,8 +140,7 @@ troff のフォントファイルを読み込んで <command>groff</command>
           <command>grops</command></para>
 @y
 <para>
-<command>groff</command> と <command>grops</command>
-が利用するフォントファイルを生成します。
+<command>groff</command> と <command>grops</command> が利用するフォントファイルを生成します。
 </para>
 @z
 
@@ -151,7 +148,7 @@ troff のフォントファイルを読み込んで <command>groff</command>
           <para>Groff preprocessor for producing chemical structure diagrams</para>
 @y
 <para>
-化学構造図 (chemical structure diagrams) を生成するための Groff プロセッサ。
+化学構造図 (chemical structure diagrams) を生成するための Groff プロセッサー。
 </para>
 @z
 
@@ -161,8 +158,7 @@ troff のフォントファイルを読み込んで <command>groff</command>
           <command>troff</command></para>
 @y
 <para>
-troff の入力ファイル内に埋め込まれている記述式をコンパイルして
-<command>troff</command> が解釈できるコマンドとして変換します。
+troff の入力ファイル内に埋め込まれている記述式をコンパイルして <command>troff</command> が解釈できるコマンドとして変換します。
 </para>
 @z
 
@@ -206,8 +202,7 @@ grap ダイアグラムを、刈り込んだ (crop した) ビットマップイ
           <para>A <command>groff</command> preprocessor for gremlin files</para>
 @y
 <para>
-gremlin 図を表すファイルを処理するための
-<command>groff</command> プリプロセッサ。
+gremlin 図を表すファイルを処理するための <command>groff</command> プリプロセッサー。
 </para>
 @z
 
@@ -216,8 +211,7 @@ gremlin 図を表すファイルを処理するための
           format</para>
 @y
 <para>
-TeX の dvi フォーマットを生成するための
-<command>groff</command> ドライバプログラム。
+TeX の dvi フォーマットを生成するための <command>groff</command> ドライバープログラム。
 </para>
 @z
 
@@ -228,8 +222,7 @@ TeX の dvi フォーマットを生成するための
 @y
 <para>
 groff 文書整形システムのためのフロントエンド。
-通常は <command>troff</command>
-プログラムを起動し、指定されたデバイスに適合したポストプロセッサを呼び出します。
+通常は <command>troff</command> プログラムを起動し、指定されたデバイスに適合したポストプロセッサーを呼び出します。
 </para>
 @z
 
@@ -250,8 +243,7 @@ groff ファイルや man ページを X 上や TTY 端末上に表示します�
           options</para>
 @y
 <para>
-入力ファイルを読み込んで、印刷時には 
-<command>groff</command> コマンドオプションのどれが必要かを推定します。
+入力ファイルを読み込んで、印刷時には <command>groff</command> コマンドオプションのどれが必要かを推定します。
 コマンドオプションは
 <option>-e</option>、
 <option>-man</option>、
@@ -271,8 +263,8 @@ groff ファイルや man ページを X 上や TTY 端末上に表示します�
           (LBP-4 and LBP-8 series laser printers)</para>
 @y
 <para>
-Canon CAPSL プリンタ (LBP-4 または LBP-8 シリーズのレーザープリンタ)
-に対する <command>groff</command> ドライバプログラム。
+Canon CAPSL プリンター (LBP-4 または LBP-8 シリーズのレーザープリンター)
+に対する <command>groff</command> ドライバープログラム。
 </para>
 @z
 
@@ -281,8 +273,7 @@ Canon CAPSL プリンタ (LBP-4 または LBP-8 シリーズのレーザープ�
           in PCL5 format suitable for an HP LaserJet 4 printer</para>
 @y
 <para>
-HP LaserJet 4 プリンタにて利用される PCL5 フォーマットの出力を生成する
-<command>groff</command> のドライバプログラム。
+HP LaserJet 4 プリンターにて利用される PCL5 フォーマットの出力を生成する <command>groff</command> のドライバープログラム。
 </para>
 @z
 
@@ -300,7 +291,7 @@ GNU <command>troff</command> の出力を PostScript に変換します。
           a form suitable for typewriter-like devices</para>
 @y
 <para>
-GNU <command>troff</command> の出力を、タイプライタ風のデバイスに適した形式に変換します。
+GNU <command>troff</command> の出力を、タイプライター風のデバイスに適した形式に変換します。
 </para>
 @z
 
@@ -317,8 +308,7 @@ GNU <command>troff</command> の出力を、タイプライタ風のデバイス
           from an HP-tagged font metric file</para>
 @y
 <para>
-HP のタグ付けが行われたフォントメトリックファイルから、
-<command>groff -Tlj4</command> コマンドにて利用されるフォントファイルを生成します。
+HP のタグ付けが行われたフォントメトリックファイルから、<command>groff -Tlj4</command> コマンドにて利用されるフォントファイルを生成します。
 </para>
 @z
 
@@ -362,8 +352,7 @@ bibliographics database は JM Project (http://www.linux.or.jp/JM/index.html)
           input</para>
 @y
 <para>
-(標準入力が端末であれば)
-標準エラー出力にプロンプトを表示して、標準入力から複数のキーワードを含んだ一行を読み込みます。
+(標準入力が端末であれば) 標準エラー出力にプロンプトを表示して、標準入力から複数のキーワードを含んだ一行を読み込みます。
 そして指定されたファイルにて示される参考文献データベース内に、そのキーワードが含まれるかどうかを検索します。
 キーワードが含まれるものを標準出力に出力します。入力がなくなるまでこれを繰り返します。
 </para>
@@ -373,7 +362,7 @@ bibliographics database は JM Project (http://www.linux.or.jp/JM/index.html)
           <para>A simple preprocessor for <command>groff</command></para>
 @y
 <para>
-<command>groff</command> 用の単純なプリプロセッサ。
+<command>groff</command> 用の単純なプリプロセッサー。
 </para>
 @z
 
@@ -382,8 +371,7 @@ bibliographics database は JM Project (http://www.linux.or.jp/JM/index.html)
           Interchange (ASCII) output</para>
 @y
 <para>
-数式を ASCII (American Standard Code for Information Interchange)
-形式で出力します。
+数式を ASCII (American Standard Code for Information Interchange) 形式で出力します。
 </para>
 @z
 
@@ -392,8 +380,7 @@ bibliographics database は JM Project (http://www.linux.or.jp/JM/index.html)
           using <command>groff</command></para>
 @y
 <para>
-<command>groff</command> を利用して <command>nroff</command>
-コマンドをエミュレートするスクリプト。
+<command>groff</command> を利用して <command>nroff</command> コマンドをエミュレートするスクリプト。
 </para>
 @z
 
@@ -414,8 +401,7 @@ groff => <command>groff</command>
           class="extension">.pfb</filename> format to ASCII</para>
 @y
 <para>
-<filename class="extension">.pfb</filename>
-フォーマットの PostScript フォントを ASCII フォーマットに変換します。
+<filename class="extension">.pfb</filename> フォーマットの PostScript フォントを ASCII フォーマットに変換します。
 </para>
 @z
 
@@ -425,8 +411,7 @@ groff => <command>groff</command>
           <command>troff</command></para>
 @y
 <para>
-troff または TeX の入力ファイル内に埋め込まれた図の記述を、
-<command>troff</command> または TeX が処理できるコマンドの形式に変換します。
+troff または TeX の入力ファイル内に埋め込まれた図の記述を、<command>troff</command> または TeX が処理できるコマンドの形式に変換します。
 </para>
 @z
 
@@ -452,8 +437,7 @@ GNU <command>troff</command> の出力を HTML に変換します。
           <command>troff</command> understands</para>
 @y
 <para>
-入力ファイルのエンコーディングを GNU <command>troff</command>
-が取り扱うものに変換します。
+入力ファイルのエンコーディングを GNU <command>troff</command> が取り扱うものに変換します。
 </para>
 @z
 
@@ -475,10 +459,8 @@ GNU <command>troff</command> の出力を HTML に変換します。
 @y
 <para>
 ファイル内容を読み込んで、そのコピーを標準出力へ出力します。
-ただし引用文を表す <emphasis>.[</emphasis> と <emphasis>.]</emphasis>
-で囲まれた行、および引用文をどのように処理するかを示したコマンドを意味する
-<emphasis>.R1</emphasis> と <emphasis>.R2</emphasis>
-で囲まれた行は、コピーの対象としません。
+ただし引用文を表す <emphasis>.[</emphasis> と <emphasis>.]</emphasis> で囲まれた行、および引用文をどのように処理するかを示したコマンドを意味する
+<emphasis>.R1</emphasis> と <emphasis>.R2</emphasis> で囲まれた行は、コピーの対象としません。
 </para>
 @z
 
@@ -536,9 +518,7 @@ roff ファイルを他のフォーマットに変換します。
           <emphasis>file</emphasis></para>
 @y
 <para>
-入力ファイルを読み込んで <emphasis>.so ファイル </emphasis>
-の形式で記述されている行を、記述されている <emphasis>ファイル </emphasis>
-だけに置き換えます。
+入力ファイルを読み込んで <emphasis>.so ファイル </emphasis> の形式で記述されている行を、記述されている <emphasis>ファイル </emphasis> だけに置き換えます。
 </para>
 @z
 
@@ -548,8 +528,7 @@ roff ファイルを他のフォーマットに変換します。
           <command>troff</command></para>
 @y
 <para>
-troff 入力ファイル内に埋め込まれた表の記述を
-<command>troff</command> が処理できるコマンドの形式に変換します。
+troff 入力ファイル内に埋め込まれた表の記述を <command>troff</command> が処理できるコマンドの形式に変換します。
 </para>
 @z
 
@@ -571,8 +550,6 @@ troff 入力ファイル内に埋め込まれた表の記述を
 <para>
 Unix の <command>troff</command> コマンドと高い互換性を持ちます。
 通常は <command>groff</command> コマンドを用いて本コマンドが起動されます。
-<command>groff</command>
-コマンドは、プリプロセッサ、ポストプロセッサを、適切な順で適切なオプションをつけて起動します。
+<command>groff</command> コマンドは、プリプロセッサー、ポストプロセッサーを、適切な順で適切なオプションをつけて起動します。
 </para>
 @z
-

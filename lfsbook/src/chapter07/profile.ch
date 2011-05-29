@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -40,12 +49,8 @@
   commands.</para>
 @y
 <para>
-対話型ログインシェルは <command>/bin/login</command>
-プログラムを利用して <filename>/etc/passwd</filename>
-ファイルを読み込み、ログインが成功することで起動します。
-同じ対話型でも非ログインシェルの場合は
-<prompt>[prompt]$</prompt><command>/bin/bash</command>
-のようなコマンドラインからの入力を経て起動します。
+対話型ログインシェルは <command>/bin/login</command> プログラムを利用して <filename>/etc/passwd</filename> ファイルを読み込み、ログインが成功することで起動します。
+同じ対話型でも非ログインシェルの場合は <prompt>[prompt]$</prompt><command>/bin/bash</command> のようなコマンドラインからの入力を経て起動します。
 非対話型のシェルはシェルスクリプト動作中に実行されます。
 非対話型であるのは、スクリプトの実行の最中にユーザーからの入力を待つことがないためです。
 </para>
@@ -68,9 +73,7 @@
   invoked as an interactive login shell.</para>
 @y
 <para>
-<filename>/etc/profile</filename> ファイルと
-<filename>~/.bash_profile</filename>
-ファイルは、対話型のログインシェルとして起動した時に読み込まれます。
+<filename>/etc/profile</filename> ファイルと <filename>~/.bash_profile</filename> ファイルは、対話型のログインシェルとして起動した時に読み込まれます。
 </para>
 @z
 
@@ -80,8 +83,7 @@
   them properly results in:</para>
 @y
 <para>
-本節の終わりに示す <filename>/etc/profile</filename>
-ファイルは言語を設定するために必要となる環境変数を定義します。
+本節の終わりに示す <filename>/etc/profile</filename> ファイルは言語を設定するために必要となる環境変数を定義します。
 これを設定することによって以下の内容が定められます。
 </para>
 @z
@@ -100,9 +102,8 @@
       non-ASCII characters in command lines in non-English locales</para>
 @y
 <para>
-キャラクタを英字、数字、その他のクラスに分類します。
-この設定は、英語以外のロケールにおいて、コマンドラインに非アスキー文字が入力された場合に
-<command>bash</command> が正しく入力を受け付けるために必要となります。
+キャラクターを英字、数字、その他のクラスに分類します。
+この設定は、英語以外のロケールにおいて、コマンドラインに非アスキー文字が入力された場合に <command>bash</command> が正しく入力を受け付けるために必要となります。
 </para>
 @z
 
@@ -139,12 +140,8 @@
   modifiers such as <quote>@euro</quote> may also be present.</para>
 @y
 <para>
-以下において <replaceable>&lt;ll&gt;</replaceable>
-と示しているものは、言語を表す２文字の英字 (例えば <quote>en</quote>)
-に、また <replaceable>&lt;CC&gt;</replaceable> は、国を表す２文字の英字
-(例えば <quote>GB</quote>) にそれぞれ置き換えてください。
-<replaceable>&lt;charmap&gt;</replaceable>
-は、選択したロケールに対応したキャラクタマップ (charmap) に置き換えてください。
+以下において <replaceable>&lt;ll&gt;</replaceable> と示しているものは、言語を表す２文字の英字 (例えば <quote>en</quote>) に、また <replaceable>&lt;CC&gt;</replaceable> は、国を表す２文字の英字 (例えば <quote>GB</quote>) にそれぞれ置き換えてください。
+<replaceable>&lt;charmap&gt;</replaceable> は、選択したロケールに対応したキャラクターマップ (charmap) に置き換えてください。
 オプションの修飾子として <quote>@euro</quote> といった記述もあります。
 </para>
 @z
@@ -170,17 +167,13 @@
   your preferred locale (<quote>en_GB.iso88591</quote> in our example).</para>
 @y
 <para>
-キャラクタマップにはエイリアスがいくつもあります。
-例えば <quote>ISO-8859-1</quote>
-は <quote>iso8859-1</quote> や <quote>iso88591</quote> として記述することもできます。
+キャラクターマップにはエイリアスがいくつもあります。
+例えば <quote>ISO-8859-1</quote> は <quote>iso8859-1</quote> や <quote>iso88591</quote> として記述することもできます。
 ただしアプリケーションによってはエイリアスを正しく取り扱うことができないものがあります。
-(<quote>UTF-8</quote> の場合、<quote>UTF-8</quote> と書かなければならず、これを
-<quote>utf8</quote> としてはならない場合があります。)
+(<quote>UTF-8</quote> の場合、<quote>UTF-8</quote> と書かなければならず、これを <quote>utf8</quote> としてはならない場合があります。)
 そこでロケールに対する正規の名称を選ぶのが最も無難です。
 正規の名称は以下のコマンドを実行すれば分かります。
-ここで <replaceable>&lt;locale name&gt;</replaceable>
-は <command>locale -a</command>
-コマンドの出力から得られたロケールを指定します。
+ここで <replaceable>&lt;locale name&gt;</replaceable> は <command>locale -a</command> コマンドの出力から得られたロケールを指定します。
 (本書の例では <quote>en_GB.iso88591</quote> としています。)
 </para>
 @z
@@ -190,8 +183,7 @@
   will print:</para>
 @y
 <para>
-<quote>en_GB.iso88591</quote>
-ロケールの場合、上のコマンドの出力は以下となります。
+<quote>en_GB.iso88591</quote> ロケールの場合、上のコマンドの出力は以下となります。
 </para>
 @z
 
@@ -216,7 +208,7 @@ Bash の起動ファイルに記述するのはその後です。
   the default installation of Glibc.</para>
 @y
 <para>
-上のコマンドを実行すると、言語名やロケールに応じたキャラクタエンコーディングが出力されます。
+上のコマンドを実行すると、言語名やロケールに応じたキャラクターエンコーディングが出力されます。
 また通貨や各国ごとの国際電話番号プレフィックスも出力されます。
 コマンドを実行した際に以下のようなメッセージが表示されたら、第6章にてロケールをインストールしていないか、あるいはそのロケールが
 Glibc のデフォルトのインストールではサポートされていないかのいずれかです。
@@ -230,8 +222,7 @@ Glibc のデフォルトのインストールではサポートされていな�
   Glibc.</para>
 @y
 <para>
-このエラーが発生したら <command>localedef</command>
-コマンドを使って、目的とするロケールをインストールするか、別のロケールを選ぶ必要があります。
+このエラーが発生したら <command>localedef</command> コマンドを使って、目的とするロケールをインストールするか、別のロケールを選ぶ必要があります。
 これ以降の説明では Glibc がこのようなエラーを生成していないことを前提に話を進めます。
 </para>
 @z
@@ -244,8 +235,7 @@ Glibc のデフォルトのインストールではサポートされていな�
 @y
 <para>
 LFS には含まれない他のパッケージにて、指定したロケールをサポートしていないものがあります。
-例えば X ライブラリ (X ウィンドウシステムの一部)
-では、内部ファイルに指定されたキャラクタマップ名に合致しないロケールを利用した場合に、以下のようなメッセージを出力します。
+例えば X ライブラリ (X ウィンドウシステムの一部) では、内部ファイルに指定されたキャラクターマップ名に合致しないロケールを利用した場合に、以下のようなメッセージを出力します。
 </para>
 @z
 
@@ -259,13 +249,11 @@ LFS には含まれない他のパッケージにて、指定したロケール�
   "de_DE@euro" in order to get this locale recognized by Xlib.</para>
 @y
 <para>
-Xlib ではキャラクタマップはたいてい、英大文字とダッシュ記号を用いて表現されます。
+Xlib ではキャラクターマップはたいてい、英大文字とダッシュ記号を用いて表現されます。
 例えば "iso88591" ではなく "ISO-8859-1" となります。
-ロケール設定におけるキャラクタマップ部分を取り除いてみれば、適切なロケール設定を見出すことができます。
-これはまた <command>locale charmap</command>
-コマンドを使って、設定を変えてみてロケールを指定してみれば確認できます。
-例えば "de_DE.ISO-8859-15@euro" という設定を "de_DE@euro"
-に変えてみて Xlib がそのロケールを認識するかどうか確認してみてください。
+ロケール設定におけるキャラクターマップ部分を取り除いてみれば、適切なロケール設定を見出すことができます。
+これはまた <command>locale charmap</command> コマンドを使って、設定を変えてみてロケールを指定してみれば確認できます。
+例えば "de_DE.ISO-8859-15@euro" という設定を "de_DE@euro" に変えてみて Xlib がそのロケールを認識するかどうか確認してみてください。
 </para>
 @z
 
@@ -278,8 +266,7 @@ Xlib ではキャラクタマップはたいてい、英大文字とダッシュ
 <para>
 これ以外のパッケージでも、パッケージが求めるものとは異なるロケール設定がなされた場合に、適切に処理されないケースがあります。
 (そして必ずしもエラーメッセージが表示されない場合もあります。) 
-そういったケースでは、利用している Linux
-ディストリビューションがどのようにロケール設定をサポートしているかを調べてみると、有用な情報が得られるかもしれません。
+そういったケースでは、利用している Linux ディストリビューションがどのようにロケール設定をサポートしているかを調べてみると、有用な情報が得られるかもしれません。
 </para>
 @z
 
@@ -288,9 +275,7 @@ Xlib ではキャラクタマップはたいてい、英大文字とダッシュ
   <filename>/etc/profile</filename> file:</para>
 @y
 <para>
-適切なロケール設定が決まったら
-<filename>/etc/profile</filename>
-ファイルを生成します。
+適切なロケール設定が決まったら <filename>/etc/profile</filename> ファイルを生成します。
 </para>
 @z
 
@@ -306,11 +291,9 @@ Xlib ではキャラクタマップはたいてい、英大文字とダッシュ
   you will never need 8-bit characters.</para>
 @y
 <para>
-ロケール設定の <quote>C</quote> (デフォルト) と
-<quote>en_US</quote> (米国の英語利用ユーザーに推奨)
-は異なります。
-<quote>C</quote> は US-ASCII 7 ビットキャラクタセットを用います。
-もし最上位ビットがセットされたキャラクタがあれば不適当なものとして取り扱います。
+ロケール設定の <quote>C</quote> (デフォルト) と <quote>en_US</quote> (米国の英語利用ユーザーに推奨) は異なります。
+<quote>C</quote> は US-ASCII 7 ビットキャラクターセットを用います。
+もし最上位ビットがセットされたキャラクターがあれば不適当なものとして取り扱います。
 例えば <command>ls</command> コマンドにおいてクエスチョン記号が表示されることがあるのはこのためです。
 また Mutt や Pine などにより電子メールが送信される際に、そういった文字は RFC には適合しないメールとして送信されます。
 送信された文字は <quote>不明な 8ビット (unknown 8-bit)</quote> として示されます。
@@ -325,8 +308,6 @@ Xlib ではキャラクタマップはたいてい、英大文字とダッシュ
 @y
 <para>
 UTF-8 ベースのロケールは多くのプログラムにおいてサポートされていません。
-この問題については <ulink url="&blfs-root;view/svn/introduction/locale-issues.html"/>
-にて説明しており、可能なものは解決を図っていこうとしているところです。
+この問題については <ulink url="&blfs-root;view/svn/introduction/locale-issues.html"/> にて説明しており、可能なものは解決を図っていこうとしているところです。
 </para>
 @z
-

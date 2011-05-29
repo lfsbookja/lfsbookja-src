@@ -17,9 +17,9 @@
     <para>The Shadow package contains programs for handling passwords in a secure
     way.</para>
 @y
-<para>
-Shadow パッケージはセキュアなパスワード管理を行うプログラムを提供します。
-</para>
+    <para>
+    Shadow パッケージはセキュアなパスワード管理を行うプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -35,26 +35,21 @@ Shadow パッケージはセキュアなパスワード管理を行うプログ�
       <parameter>--with-libcrack</parameter> to the <command>configure</command>
       command below.</para>
 @y
-<para>
-もっと強力なパスワードを利用したい場合は
-<ulink url="&blfs-root;view/svn/postlfs/cracklib.html"/>
-にて示している Cracklib パッケージを参照してください。
-Cracklib パッケージは Shadow パッケージよりも前にインストールします。
-その場合 Shadow パッケージの <command>configure</command>
-スクリプトでは <parameter>--with-libcrack</parameter>
-パラメータをつけて実行する必要があります。
-</para>
+    <para>
+    もっと強力なパスワードを利用したい場合は <ulink url="&blfs-root;view/svn/postlfs/cracklib.html"/> にて示している Cracklib パッケージを参照してください。
+    Cracklib パッケージは Shadow パッケージよりも前にインストールします。
+    その場合 Shadow パッケージの <command>configure</command> スクリプトでは <parameter>--with-libcrack</parameter> パラメーターをつけて実行する必要があります。
+    </para>
 @z
 
 @x
     <para>Disable the installation of the <command>groups</command> program
     and its man pages, as Coreutils provides a better version:</para>
 @y
-<para>
-<command>groups</command>
-コマンドとその man ページをインストールしないようにします。
-これは Coreutils パッケージにて、より良いバージョンが提供されているからです。
-</para>
+    <para>
+    <command>groups</command> コマンドとその man ページをインストールしないようにします。
+    これは Coreutils パッケージにて、より良いバージョンが提供されているからです。
+    </para>
 @z
 
 @x
@@ -72,17 +67,13 @@ Cracklib パッケージは Shadow パッケージよりも前にインストー
     for user mailboxes that Shadow uses by default to the <filename
     class="directory">/var/mail</filename> location used currently:</para>
 @y
-<para id="shadow-login_defs">
-パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis>
-手法ではなく、より強力な <emphasis>SHA-512</emphasis>
-手法を用いることにします。
-こうしておくと 8文字以上のパスワード入力が可能となります。
-またメールボックスを収めるディレクトリとして Shadow ではデフォルトで
-<filename class="directory">/var/spool/mail</filename>
-ディレクトリを利用していますが、これは古いものであるため
-<filename class="directory">/var/mail</filename>
-ディレクトリに変更します。
-</para>
+    <para id="shadow-login_defs">
+    パスワード暗号化に関して、デフォルトの <emphasis>crypt</emphasis> 手法ではなく、より強力な <emphasis>SHA-512</emphasis> 手法を用いることにします。
+    こうしておくと 8文字以上のパスワード入力が可能となります。
+    またメールボックスを収めるディレクトリとして Shadow ではデフォルトで <filename
+    class="directory">/var/spool/mail</filename> ディレクトリを利用していますが、これは古いものであるため <filename
+    class="directory">/var/mail</filename> ディレクトリに変更します。
+    </para>
 @z
 
 @x
@@ -120,9 +111,9 @@ Cracklib のサポートを含めて Shadow をビルドする場合は以下を
 @x
     <para>Move a misplaced program to its proper location:</para>
 @y
-<para>
-不適切なディレクトリにインストールされるプログラムを移動させます。
-</para>
+    <para>
+    不適切なディレクトリにインストールされるプログラムを移動させます。
+    </para>
 @z
 
 @x
@@ -153,33 +144,28 @@ Cracklib のサポートを含めて Shadow をビルドする場合は以下を
     must be Shadow-compliant. That is, they need to be able to work with
     shadowed passwords.</para>
 @y
-<para>
-このパッケージには、ユーザーやグループの追加・修正・削除、そのパスワードの設定・変更、その他の管理操作を行うユーティリティが含まれます。
-<emphasis>パスワードのシャドウイング (password shadowing)</emphasis>
-というものが何を意味するのか、その詳細についてはこのパッケージのソース内にある
-<filename>doc/HOWTO</filename> を参照してください。
-Shadow によるサポートを利用する場合、パスワード認証を必要とするプログラム
-(ディスプレイマネージャ、FTP プログラム、POP3、デーモン、など)
-は Shadow に準拠したものでなければなりません。
-つまりそれらのプログラムが、シャドウ化された (shadowed)
-パスワードを受け入れて動作しなければならないということです。
-</para>
+    <para>
+    このパッケージには、ユーザーやグループの追加・修正・削除、そのパスワードの設定・変更、その他の管理操作を行うユーティリティが含まれます。
+    <emphasis>パスワードのシャドウイング (password shadowing)</emphasis> というものが何を意味するのか、その詳細についてはこのパッケージのソース内にある <filename>doc/HOWTO</filename> を参照してください。
+    Shadow によるサポートを利用する場合、パスワード認証を必要とするプログラム (ディスプレイマネージャー、FTP プログラム、POP3、デーモン、など) は Shadow に準拠したものでなければなりません。
+    つまりそれらのプログラムが、シャドウ化された (shadowed) パスワードを受け入れて動作しなければならないということです。
+    </para>
 @z
 
 @x
     <para>To enable shadowed passwords, run the following command:</para>
 @y
-<para>
-Shadow によるパスワードの利用を有効にするために、以下のコマンドを実行します。
-</para>
+    <para>
+    Shadow によるパスワードの利用を有効にするために、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>To enable shadowed group passwords, run:</para>
 @y
-<para>
-また Shadow によるグループパスワードを有効にするために、以下を実行します。
-</para>
+    <para>
+    また Shadow によるグループパスワードを有効にするために、以下を実行します。
+    </para>
 @z
 
 @x
@@ -195,24 +181,21 @@ Shadow によるパスワードの利用を有効にするために、以下の�
     <filename>/etc/default/useradd</filename> file. You may need to modify two
     parameters in this file to suit your particular needs.</para>
 @y
-<para>
-Shadow の <command>useradd</command> コマンドに対する通常の設定には、注意すべき点があります。
-まず <command>useradd</command> コマンドによりユーザーを生成する場合のデフォルトの動作では、ユーザー名と同じグループを自動生成します。
-ユーザーID (UID) とグループID (GID) は 1000 以上が割り当てられます。
-<command>useradd</command>
-コマンドの利用時に特にパラメータを与えなければ、追加するユーザーのグループは新たな固有グループが生成されることになります。
-この動作が不適当であれば <command>useradd</command>
-コマンドの実行時に <parameter>-g</parameter> パラメータを利用することが必要です。
-デフォルトで適用されるパラメータは <filename>/etc/default/useradd</filename>
-ファイルに定義されています。
-このファイルのパラメータ定義を必要に応じて書き換えてください。
-</para>
+    <para>
+    Shadow の <command>useradd</command> コマンドに対する通常の設定には、注意すべき点があります。
+    まず <command>useradd</command> コマンドによりユーザーを生成する場合のデフォルトの動作では、ユーザー名と同じグループを自動生成します。
+    ユーザーID (UID) とグループID (GID) は 1000 以上が割り当てられます。
+    <command>useradd</command> コマンドの利用時に特にパラメータを与えなければ、追加するユーザーのグループは新たな固有グループが生成されることになります。
+    この動作が不適当であれば <command>useradd</command> コマンドの実行時に <parameter>-g</parameter> パラメーターを利用することが必要です。
+    デフォルトで適用されるパラメーターは <filename>/etc/default/useradd</filename> ファイルに定義されています。
+    このファイルのパラメーター定義を必要に応じて書き換えてください。
+    </para>
 @z
 
 @x
       <title><filename>/etc/default/useradd</filename> Parameter Explanations</title>
 @y
-      <title><filename>/etc/default/useradd</filename> のパラメータ説明</title>
+      <title><filename>/etc/default/useradd</filename> のパラメーター説明</title>
 @z
 
 @x
@@ -227,21 +210,16 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
           <computeroutput>useradd: unknown GID 1000</computeroutput>. You may
           disregard this message and group number 1000 will be used.</para>
 @y
-<para>
-このパラメータは /etc/group
-ファイルにて設定されるグループIDの先頭番号を指定します。
-必要なら任意の数値に設定することもできます。
-<command>useradd</command>
-コマンドは既存の UID 値、GID 値を再利用することはありません。
-このパラメータによって定義された数値が実際に指定された場合、この値以降で利用可能な値が利用されます。
-また <command>useradd</command>
-コマンドの実行時に、パラメータ <parameter>-g</parameter>
-を利用せず、かつグループID 1000 のグループが存在していなかった場合は、以下のようなメッセージが出力されます。
-<computeroutput>useradd: unknown GID 1000</computeroutput>
-("GID 1000 が不明です")
-このメッセージは無視することができます。
-この場合グループIDには 1000 が利用されます。
-</para>
+          <para>
+          このパラメーターは /etc/group ファイルにて設定されるグループIDの先頭番号を指定します。
+          必要なら任意の数値に設定することもできます。
+          <command>useradd</command> コマンドは既存の UID 値、GID 値を再利用することはありません。
+          このパラメーターによって定義された数値が実際に指定された場合、この値以降で利用可能な値が利用されます。
+          また <command>useradd</command> コマンドの実行時に、パラメーター <parameter>-g</parameter> を利用せず、かつグループID 1000 のグループが存在していなかった場合は、以下のようなメッセージが出力されます。
+          <computeroutput>useradd: unknown GID 1000</computeroutput> ("GID 1000 が不明です")
+          このメッセージは無視することができます。
+          この場合グループIDには 1000 が利用されます。
+          </para>
 @z
 
 @x
@@ -254,12 +232,9 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
           command:</para>
 @y
 <para>
-このパラメータは <command>useradd</command>
-コマンドの実行によって、追加されるユーザー用のメールボックスに関するファイルが生成されます。
-<command>useradd</command>
-コマンドは、このファイルのグループ所有者を
-<systemitem class="groupname">mail</systemitem> (グループID 0660)
-に設定します。
+このパラメーターは <command>useradd</command> コマンドの実行によって、追加されるユーザー用のメールボックスに関するファイルが生成されます。
+<command>useradd</command> コマンドは、このファイルのグループ所有者を <systemitem
+class="groupname">mail</systemitem> (グループID 0660) に設定します。
 メールボックスに関するファイルを生成したくない場合は、以下のコマンドを実行します。
 </para>
 @z
@@ -424,10 +399,7 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
           <filename>/etc/gshadow</filename></para>
 @y
 <para>
-グループファイル
-<filename>/etc/group</filename> と
-<filename>/etc/gshadow</filename>
-の整合性を確認します。
+グループファイル <filename>/etc/group</filename> と <filename>/etc/gshadow</filename> の整合性を確認します。
 </para>
 @z
 
@@ -436,7 +408,7 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
           group file</para>
 @y
 <para>
-通常のグループファイルから Shadow グループファイルを生成・更新します。
+通常のグループファイルから Shadow グループファイルを生成、更新します。
 </para>
 @z
 
@@ -445,8 +417,7 @@ Shadow の <command>useradd</command> コマンドに対する通常の設定に
           <filename>/etc/gshadow</filename> and then deletes the latter</para>
 @y
 <para>
-<filename>/etc/gshadow</filename> ファイルを元に <filename>/etc/group</filename>
-ファイルを更新し <filename>/etc/gshadow</filename> ファイルを削除します。
+<filename>/etc/gshadow</filename> ファイルを元に <filename>/etc/group</filename> ファイルを更新し <filename>/etc/gshadow</filename> ファイルを削除します。
 </para>
 @z
 
@@ -522,10 +493,7 @@ an entire series は何を意図しているのか
           <filename>/etc/shadow</filename></para>
 @y
 <para>
-パスワードファイル
-<filename>/etc/passwd</filename> と
-<filename>/etc/shadow</filename>
-の整合性を確認します。
+パスワードファイル <filename>/etc/passwd</filename> と <filename>/etc/shadow</filename> の整合性を確認します。
 </para>
 @z
 
@@ -534,7 +502,7 @@ an entire series は何を意図しているのか
           password file</para>
 @y
 <para>
-通常のパスワードファイルを元に shadow パスワードファイルを生成・更新します。
+通常のパスワードファイルを元に shadow パスワードファイルを生成、更新します。
 </para>
 @z
 
@@ -543,8 +511,7 @@ an entire series は何を意図しているのか
           <filename>/etc/shadow</filename> and then deletes the latter</para>
 @y
 <para>
-<filename>/etc/shadow</filename> ファイルを元に <filename>/etc/passwd</filename>
-ファイルを更新し <filename>/etc/shadow</filename> を削除します。
+<filename>/etc/shadow</filename> ファイルを元に <filename>/etc/passwd</filename> ファイルを更新し <filename>/etc/shadow</filename> を削除します。
 </para>
 @z
 
@@ -588,8 +555,7 @@ an entire series は何を意図しているのか
           Identification (UID), shell, initial group, home directory, etc.</para>
 @y
 <para>
-指定されたユーザーのログイン名、UID
-(User Identification)、利用シェル、初期グループ、ホームディレクトリなどを変更します。
+指定されたユーザーのログイン名、UID  (User Identification)、利用シェル、初期グループ、ホームディレクトリなどを変更します。
 </para>
 @z
 
@@ -598,8 +564,7 @@ an entire series は何を意図しているのか
           <filename>/etc/gshadow</filename> files</para>
 @y
 <para>
-<filename>/etc/group</filename> ファイル、あるいは
-<filename>/etc/gshadow</filename> ファイルを編集します。
+<filename>/etc/group</filename> ファイル、あるいは <filename>/etc/gshadow</filename> ファイルを編集します。
 </para>
 @z
 
@@ -608,8 +573,6 @@ an entire series は何を意図しているのか
           <filename>/etc/shadow</filename> files</para>
 @y
 <para>
-<filename>/etc/passwd</filename> ファイル、あるいは
-<filename>/etc/shadow</filename> ファイルを編集します。
+<filename>/etc/passwd</filename> ファイル、あるいは <filename>/etc/shadow</filename> ファイルを編集します。
 </para>
 @z
-

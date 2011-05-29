@@ -17,9 +17,9 @@
     <para>The Psmisc package contains programs for displaying information about
     running processes.</para>
 @y
-<para>
-Psmisc パッケージは稼動中プロセスの情報表示を行うプログラムを提供します。
-</para>
+    <para>
+    Psmisc パッケージは稼動中プロセスの情報表示を行うプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -61,14 +61,12 @@ Psmisc パッケージは稼動中プロセスの情報表示を行うプログ�
     the <command>killall</command> to the correct location, as specified by the
     FHS, then create a symlink to it:</para>
 @y
-<para>
-Psmisc の <command>pidof</command>
-プログラムはデフォルトではインストールされませんが、通常これは問題にはなりません。
-それはこの後に Sysvinit パッケージによってインストールされるからです。
-Sysvinit の <command>pidof</command> プログラムはより適切なプログラムです。
-しかし特定のシステムにおいて Sysvinit を利用しないなら、
-FHS にて規定されているようなディレクトリにプログラムを移動させ、以下のようにシンボリックリックを生成します。
-</para>
+    <para>
+    Psmisc の <command>pidof</command> プログラムはデフォルトではインストールされませんが、通常これは問題にはなりません。
+    それはこの後に Sysvinit パッケージによってインストールされるからです。
+    Sysvinit の <command>pidof</command> プログラムはより適切なプログラムです。
+    しかし特定のシステムにおいて Sysvinit を利用しないなら、FHS にて規定されているようなディレクトリにプログラムを移動させ、以下のようにシンボリックリックを生成します。
+    </para>
 @z
 
 @x
@@ -109,54 +107,52 @@ FHS にて規定されているようなディレクトリにプログラムを�
           <para>Reports the Process IDs (PIDs) of processes that use the given
           files or file systems</para>
 @y
-<para>
-指定されたファイルまたはファイルシステムを利用しているプロセスのプロセス ID
-(PID) を表示します。
-</para>
+          <para>
+          指定されたファイルまたはファイルシステムを利用しているプロセスのプロセス ID (PID) を表示します。
+          </para>
 @z
 
 @x killall
           <para>Kills processes by name; it sends a signal to all processes
           running any of the given commands</para>
 @y
-<para>
-プロセス名を用いてそのプロセスを終了 (kill) させます。
-指定されたコマンドを起動しているすべてのプロセスに対してシグナルが送信されます。
-</para>
+          <para>
+          プロセス名を用いてそのプロセスを終了 (kill) させます。
+          指定されたコマンドを起動しているすべてのプロセスに対してシグナルが送信されます。
+          </para>
 @z
 
 @x peekfd
           <para>Peek at file descriptors of a running process, given its
           PID</para>
 @y
-<para>
-PID を指定することによって、稼動中のそのプロセスのファイルディスクリプタを調べます。
-</para>
+          <para>
+          PID を指定することによって、稼動中のそのプロセスのファイルディスクリプターを調べます。
+          </para>
 @z
 
 @x prtstat
           <para>Prints information about a process</para>
 @y
-<para>
-プロセスに関する情報を表示します。
-</para>
+          <para>
+          プロセスに関する情報を表示します。
+          </para>
 @z
 
 @x pstree
           <para>Displays running processes as a tree</para>
 @y
-<para>
-稼働中のプロセスをツリー形式で表示します。
-</para>
+          <para>
+          稼働中のプロセスをツリー形式で表示します。
+          </para>
 @z
 
 @x pstree.x11
           <para>Same as <command>pstree</command>, except that it waits for
           confirmation before exiting</para>
 @y
-<para>
-<command>pstree</command> と同じです。
-ただし終了時には確認画面が表示されます。
-</para>
+          <para>
+          <command>pstree</command> と同じです。
+          ただし終了時には確認画面が表示されます。
+          </para>
 @z
-

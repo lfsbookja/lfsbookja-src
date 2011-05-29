@@ -41,22 +41,11 @@ Sysvinit パッケージは、システムの起動、実行、シャットダ�
     instead:</para>
 @y
 <para>
-ランレベルが変更される時
-(例えばシステムが停止する時)
-<command>init</command>
-コマンドは各種のプロセスに対して停止シグナル (termination signals)
-を送信します。
-ただしその対象は <command>init</command>
-プログラム自身が起動したプロセスであり、新たなランレベルでは起動しないプロセスです。
-一方で <command>init</command> コマンドが出力するメッセージは
-<quote>Sending processes the TERM signal</quote>
-(プロセスに対して TERM シグナルを送信します)
-というものです。
+ランレベルが変更される時 (例えばシステムが停止する時) <command>init</command> コマンドは各種のプロセスに対して停止シグナル (termination signals) を送信します。
+ただしその対象は <command>init</command> プログラム自身が起動したプロセスであり、新たなランレベルでは起動しないプロセスです。
+一方で <command>init</command> コマンドが出力するメッセージは <quote>Sending processes the TERM signal</quote> (プロセスに対して TERM シグナルを送信します) というものです。
 このメッセージは、その時点にて稼動中の全プロセスに対してシグナルを送信しているかのように誤解してしまいます。
-これを正すためにソースを修正して
-<quote>Sending processes configured via /etc/inittab the TERM signal</quote>
-(/etc/inittab で設定されているプロセスに対して TERM シグナルを送信します)
-というメッセージに置き換えます。
+これを正すためにソースを修正して <quote>Sending processes configured via /etc/inittab the TERM signal</quote> (/etc/inittab で設定されているプロセスに対して TERM シグナルを送信します) というメッセージに置き換えます。
 </para>
 @z
 
@@ -66,10 +55,8 @@ Sysvinit パッケージは、システムの起動、実行、シャットダ�
     version of this program and its man page:</para>
 @y
 <para>
-<command>wall</command>
-コマンドは Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
-そこで Sysvinit が提供する <command>wall</command>
-コマンドはインストールせず、その man ページもインストールしないようにします。
+<command>wall</command> コマンドは Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
+そこで Sysvinit が提供する <command>wall</command> コマンドはインストールせず、その man ページもインストールしないようにします。
 </para>
 @z
 
@@ -174,12 +161,9 @@ fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行し�
           brought down</para>
 @y
 <para>
-ランレベルが既に 0 ではない通常の起動状態の場合に
-<command>shutdown</command> をオプション
-<parameter>-h </parameter> をつけて実行します。
+ランレベルが既に 0 ではない通常の起動状態の場合に <command>shutdown</command> をオプション <parameter>-h </parameter> をつけて実行します。
 そしてカーネルに対してシステム停止を指示します。
-システムが停止される状況は <filename>/var/log/wtmp</filename>
-ファイルに記録されます。
+システムが停止される状況は <filename>/var/log/wtmp</filename> ファイルに記録されます。
 </para>
 @z
 
@@ -259,8 +243,7 @@ fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行し�
           (see <command>halt</command>)</para>
 @y
 <para>
-カーネルに対してシステムの停止を指示し、コンピュータの電源を切ります。
-(<command>halt</command> を参照してください。)
+カーネルに対してシステムの停止を指示し、コンピューターの電源を切ります。(<command>halt</command> を参照してください。)
 </para>
 @z
 
@@ -269,8 +252,7 @@ fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行し�
           <command>halt</command>)</para>
 @y
 <para>
-カーネルに対してシステムの再起動を指示します。
-(<command>halt</command> を参照してください。)
+カーネルに対してシステムの再起動を指示します。(<command>halt</command> を参照してください。)
 </para>
 @z
 
@@ -280,8 +262,7 @@ fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行し�
 @y
 <para>
 現在のランレベルと直前のランレベルを表示します。
-最新のランレベルは <filename>/var/run/utmp</filename>
-ファイルに記録されています。
+最新のランレベルは <filename>/var/run/utmp</filename> ファイルに記録されています。
 </para>
 @z
 
@@ -301,8 +282,7 @@ fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行し�
           into single user mode</para>
 @y
 <para>
-<systemitem class="username">root</systemitem>
-ユーザーでのログインを行います。
+<systemitem class="username">root</systemitem> ユーザーでのログインを行います。
 通常は <command>init</command> が起動するもので、システムがシングルユーザーモードで起動する際に利用されます。
 </para>
 @z
@@ -323,4 +303,3 @@ fstab 形式の (fstab-encoded の) 引数とともにコマンドを実行し�
 指定されたログファイル内の情報を分かりやすく表示します。
 </para>
 @z
-
