@@ -247,6 +247,17 @@ rationale は理論的根拠とか原理とか。
         </para>
 @z
 
+@x Glib
+        <para>This package contains low-level core library functions for things
+        such as event loops and threading.  It is used by one other LFS package,
+        Pkg-config.</para>
+@y
+        <para>
+        このパッケージは、イベントループやスレッド処理などのような、コアな低レベル関数を提供します。
+        LFS パッケージの１つ Pkg-config がこれを利用しています。
+        </para>
+@z
+
 @x Glibc
         <para>This package contains the main C library.  Linux programs would
         not run without it.</para>
@@ -474,6 +485,19 @@ rationale は理論的根拠とか原理とか。
         このパッケージは、<emphasis>パッチ</emphasis> ファイルの適用により、特定のファイルを修正したり新規生成したりするためのプログラムを提供します。
         パッチファイルは <application>diff</application> プログラムにより生成されます。
         LFS パッケージの中には、構築時にこれを必要とするものがあります。
+        </para>
+@z
+
+@x PCRE
+        <para>This package is provides a library that can be used to implement
+        regular expression pattern matching using the same syntax and semantics
+        as Perl 5.  It is a mandatory dependency of Glib, and can also be used
+        by Grep.</para>
+@y
+        <para>
+        このパッケージは、正規表現によるパターンマッチングを実装するために利用されます。
+        その正規表現は Perl 5 にて用いられる文法と同様です。
+        Glib が必要とする必須パッケージであり、Grep もこれを利用します。
         </para>
 @z
 

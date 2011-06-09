@@ -48,6 +48,64 @@
 @z
 
 @x
+      <para>2011-06-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.39.1. Fixes
+          <ulink url="&lfs-ticket-root;2884">#2884</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Glib-2.28.7. Fixes
+          <ulink url="&lfs-ticket-root;2881">#2881</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-171. Fixes
+          <ulink url="&lfs-ticket-root;2880">#2880</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to XZ-5.0.3. Fixes
+          <ulink url="&lfs-ticket-root;2879">#2879</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-06-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-2.6.39.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2884">#2884</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Glib-2.28.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2881">#2881</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Udev-171 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2880">#2880</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - XZ-5.0.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2879">#2879</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to lfs-bootscripts-20110531.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-05-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - lfs-bootscripts-20110531 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-05-23</para>
       <itemizedlist>
         <listitem>
@@ -96,16 +154,16 @@
           <ulink url="&lfs-ticket-root;2878">#2878</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[matthew] - Upgrade to Linux-2.6.39 へのアップグレード。
+          <para>[matthew] - Linux-2.6.39 へのアップグレード。
           <ulink url="&lfs-ticket-root;2877">#2877</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[matthew] - Upgrade to Pkg-config-0.26 へのアップグレード。
+          <para>[matthew] - Pkg-config-0.26 へのアップグレード。
           またその依存パッケージ Glib と、Glib の依存パッケージ PCRE を追加。
           <ulink url="&lfs-ticket-root;2876">#2876</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[matthew] - Upgrade to Bison-2.5 へのアップグレード。
+          <para>[matthew] - Bison-2.5 へのアップグレード。
           <ulink url="&lfs-ticket-root;2875">#2875</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>

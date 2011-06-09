@@ -54,6 +54,29 @@
 -->
 
     <listitem>
+      <para>2011-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/prologue/why.ch:
+          SVN-201100605, r9561 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2011-06-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-201100531, r9556 対応。(日本語訳変更なし。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-05-29</para>
       <itemizedlist>
         <listitem>
