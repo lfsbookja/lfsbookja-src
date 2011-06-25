@@ -48,6 +48,76 @@
 @z
 
 @x
+      <para>2011-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-2.6.39.2. Fixes
+          <ulink url="&lfs-ticket-root;2894">#2894</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to psmisc-22.14. Fixes
+          <ulink url="&lfs-ticket-root;2889">#2889</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to grep-2.9. Fixes
+          <ulink url="&lfs-ticket-root;2893">#2893</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-2.6.39.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;2894">#2894</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - psmisc-22.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;2889">#2889</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-2.9 へのアップデート。
+          <ulink url="&lfs-ticket-root;2893">#2893</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-06-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to grub-1.99. Fixes
+          <ulink url="&lfs-ticket-root;2818">#2818</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-06-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grub-1.99 へのアップデート。
+          <ulink url="&lfs-ticket-root;2818">#2818</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-06-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update shadow location. Fixes
+          <ulink url="&lfs-ticket-root;2888">#2888</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-06-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Shadow の入手先の変更。
+          <ulink url="&lfs-ticket-root;2888">#2888</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-06-05</para>
       <itemizedlist>
         <listitem>

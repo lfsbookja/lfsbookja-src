@@ -54,6 +54,24 @@
 -->
 
     <listitem>
+      <para>2011-06-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter08/grub.ch:
+          SVN-201100624, r9566 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          src/appendices/dependencies.ch:
+          訳出漏れの修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-06-10</para>
       <itemizedlist>
         <listitem>

@@ -517,6 +517,30 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
+@x Glib
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, PCRE
+         Sed, and Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, PCRE
+         Sed, Texinfo</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
 @x Glibc
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
          Grep, Gzip, Linux API Headers, Make, Perl, Sed, and Texinfo</seg>
@@ -786,6 +810,11 @@ Typo ですが日本語訳には影響ありません。
 @y
           <seg>テストスイートはありません</seg>
 @z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Libtool
@@ -1049,6 +1078,29 @@ Typo ですが日本語訳には影響ありません。
           <seg>Ed</seg>
 @z
 
+%----------------------------------------------------------------------
+@x PCRE
+         <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed, and
+         Texinfo</seg>
+@y
+         <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed,
+         Texinfo</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 %----------------------------------------------------------------------
 @x Perl
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
