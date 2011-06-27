@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-06-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter05/perl.ch:
+          SVN-201100626, r9567 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-06-26</para>
       <itemizedlist>
         <listitem>

@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2011-06-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5-14.1. Fixes
+          <ulink url="&lfs-ticket-root;2874">#2874</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to less-444. Fixes
+          <ulink url="&lfs-ticket-root;2887">#2887</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glib-2.28.8. Fixes
+          <ulink url="&lfs-ticket-root;2886">#2886</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-06-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Perl-5-14.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;2874">#2874</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Less-444 へのアップデート。
+          <ulink url="&lfs-ticket-root;2887">#2887</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Glib-2.28.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;2886">#2886</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-06-24</para>
       <itemizedlist>
         <listitem>
@@ -67,15 +101,15 @@
       <para>2011-06-24</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - linux-2.6.39.2 へのアップデート。
+          <para>[bdubbs] - Linux-2.6.39.2 へのアップデート。
           <ulink url="&lfs-ticket-root;2894">#2894</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - psmisc-22.14 へのアップデート。
+          <para>[bdubbs] - Psmisc-22.14 へのアップデート。
           <ulink url="&lfs-ticket-root;2889">#2889</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - grep-2.9 へのアップデート。
+          <para>[bdubbs] - Grep-2.9 へのアップデート。
           <ulink url="&lfs-ticket-root;2893">#2893</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
