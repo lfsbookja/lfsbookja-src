@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2011-06-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Glibc-2.14. Fixes
+          <ulink url="&lfs-ticket-root;2883">#2883</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Tcl-8.5.10. Fixes
+          <ulink url="&lfs-ticket-root;2896">#2896</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to GCC 4.6.1. Fixes
+          <ulink url="&lfs-ticket-root;2897">#2897</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Binutils-2.21.1. Fixes
+          <ulink url="&lfs-ticket-root;2898">#2898</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-06-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Glibc-2.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;2883">#2883</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Tcl-8.5.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;2896">#2896</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - GCC 4.6.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;2897">#2897</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Binutils-2.21.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;2898">#2898</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-06-26</para>
       <itemizedlist>
         <listitem>

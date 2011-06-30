@@ -40,6 +40,15 @@
 @z
 
 @x
+    <para>Also address a header check that fails due to an incomplete build 
+    environment at this point:</para>
+@y
+    <para>
+    またこの時点での構築環境が不十分であるために処理に失敗することから、ヘッダーチェックを修正します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
