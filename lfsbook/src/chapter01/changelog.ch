@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2011-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gawk-4.0.0. Fixes
+          <ulink url="&lfs-ticket-root;2900">#2900</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iprout2-2.6.39. Fixes
+          <ulink url="&lfs-ticket-root;2901">#2901</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-07-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gawk-4.0.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;2900">#2900</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iprout2-2.6.39 へのアップデート。
+          <ulink url="&lfs-ticket-root;2901">#2901</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-06-29</para>
       <itemizedlist>
         <listitem>
