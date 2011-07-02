@@ -55,7 +55,7 @@
           <ulink url="&lfs-ticket-root;2900">#2900</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to iprout2-2.6.39. Fixes
+          <para>[bdubbs] - Update to iproute2-2.6.39. Fixes
           <ulink url="&lfs-ticket-root;2901">#2901</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -67,7 +67,7 @@
           <ulink url="&lfs-ticket-root;2900">#2900</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - iprout2-2.6.39 へのアップデート。
+          <para>[bdubbs] - iproute2-2.6.39 へのアップデート。
           <ulink url="&lfs-ticket-root;2901">#2901</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
