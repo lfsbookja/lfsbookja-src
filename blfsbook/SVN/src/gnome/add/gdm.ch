@@ -252,13 +252,9 @@ of <filename class='directory'>$GNOME_PREFIX/libexec</filename>.
 @z
 
 @x
-      <para><filename>&gnome-etc-dir;/gdm/custom.conf</filename>,
-      <filename>$GNOME_PREFIX/share/gdm/defaults.conf</filename></para>
+      <para><filename>&gnome-etc-dir;/gdm/custom.conf</filename></para>
 @y
-<para>
-<filename>&gnome-etc-dir;/gdm/custom.conf</filename>,
-<filename>$GNOME_PREFIX/share/gdm/defaults.conf</filename>
-</para>
+      <para><filename>&gnome-etc-dir;/gdm/custom.conf</filename></para>
 @z
 
 @x
@@ -268,26 +264,21 @@ of <filename class='directory'>$GNOME_PREFIX/libexec</filename>.
 @z
 
 @x
-      <para>Starting with the 2.14.x version of GNOME, the default
-      configuration parameters are stored in a static file
-      (<filename><envar>$GNOME_PREFIX</envar>/share/gdm/defaults.conf</filename>).
-      This file is not intended to be edited. If modification of the
-      configuration is necessary, you should add parameters to the
-      <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file. The settings
-      in this file will override the settings in the static file. The same
-      parameters in the static file are used in the configuration file.</para>
+      <para>The GDM daemon is configured using the
+      <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file.
+      Default values are stored in GConf in the
+      <filename>gdm.schemas</filename> file. It is recommended that end-users
+      modify the <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file
+      because the schemas file may be overwritten when the user updates their
+      system to have a newer version of GDM.</para>
 @y
-<para>
-
-Starting with the 2.14.x version of GNOME, the default
-configuration parameters are stored in a static file
-(<filename><envar>$GNOME_PREFIX</envar>/share/gdm/defaults.conf</filename>).
-This file is not intended to be edited. If modification of the
-configuration is necessary, you should add parameters to the
-<filename>&gnome-etc-dir;/gdm/custom.conf</filename> file. The settings
-in this file will override the settings in the static file. The same
-parameters in the static file are used in the configuration file.
-</para>
+      <para>The GDM daemon is configured using the
+      <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file.
+      Default values are stored in GConf in the
+      <filename>gdm.schemas</filename> file. It is recommended that end-users
+      modify the <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file
+      because the schemas file may be overwritten when the user updates their
+      system to have a newer version of GDM.</para>
 @z
 
 @x

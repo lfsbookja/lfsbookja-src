@@ -25,10 +25,10 @@
     It provides facilities required by interactive applications such as
     display/screen management, keyboard input and keymaps.</para>
 @y
-<para>
-<application>S-Lang</application>
-はインタープリタ言語であり、アプリケーション内に埋め込んで、そのアプリケーションを拡張することが可能です。
-これは、ディスプレイ画面、キーボード入力、キーマップなどのように、対話的インターフェースにおいて必要となる機能を提供します。
+    <para>
+    <application>S-Lang</application>
+    はインタープリター言語であり、アプリケーション内に埋め込んで、そのアプリケーションを拡張することが可能です。
+    これは、ディスプレイ画面、キーボード入力、キーマップなどのように、対話的インターフェースにおいて必要となる機能を提供します。
 </para>
 @z
 
@@ -110,10 +110,10 @@
     <para>Install <application>S-Lang</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>S-Lang</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して
+    <application>S-Lang</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -121,18 +121,18 @@
     this will also create a static version of the library which will then be
     installed in the next step.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-テストを行うとスタティックライブラリが生成されますので、これが次の作業を通じてインストールされることになります。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    テストを行うとスタティックライブラリが生成されますので、これが次の作業を通じてインストールされることになります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> になって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -145,10 +145,10 @@
     <para><command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
     This sed fixes a buffer-overflow bug.</para>
 @y
-<para>
-<command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
-この sed コマンドは、バッファオーバーフローのバグを修正します。
-</para>
+    <para>
+    <command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
+    この sed コマンドは、バッファオーバーフローのバグを修正します。
+    </para>
 @z
 
 @x
@@ -158,12 +158,12 @@
     the dynamic shared version and related modules. It also changes the
     documentation installation directories to a versioned directory.</para>
 @y
-<para>
-<command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
-SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
-このコマンドは、動的な共有ライブラリや関連モジュールをインストールし、さらにスタティックライブラリもインストールします。
-またドキュメントを収めるディレクトリの名前にバージョン番号をつけた上でドキュメントをインストールします。
-</para>
+    <para>
+    <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
+    SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
+    このコマンドは、動的な共有ライブラリや関連モジュールをインストールし、さらにスタティックライブラリもインストールします。
+    またドキュメントを収めるディレクトリの名前にバージョン番号をつけた上でドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -171,13 +171,10 @@ SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
     Gnu <application>Readline</application> parser instead of the
     <application>S-Lang</application> internal version.</para>
 @y
-<para>
-<option>--with-readline=gnu</option>:
-このパラメータは <application>S-Lang</application>
-が内部に持っている <application>Readline</application>
-モジュールではなく Gnu <application>Readline</application>
-モジュールを利用することを指示します。
-</para>
+    <para>
+    <option>--with-readline=gnu</option>:
+    このパラメーターは <application>S-Lang</application> が内部に持っている <application>Readline</application> モジュールではなく Gnu <application>Readline</application> モジュールを利用することを指示します。
+    </para>
 @z
 
 @x
@@ -243,12 +240,8 @@ SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
           <application>Readline</application> interface for interactive
           use.</para>
 @y
-<para>
-<application>S-Lang</application>
-スクリプトを解釈する単純なプログラムです。
-これは <application>S-Lang</application>
-モジュールの動的ローディングをサポートし、対話的な操作時には
-<application>Readline</application> インターフェースも提供します。
-</para>
+    <para>
+    <application>S-Lang</application> スクリプトを解釈する単純なプログラムです。
+    これは <application>S-Lang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。
+    </para>
 @z
-

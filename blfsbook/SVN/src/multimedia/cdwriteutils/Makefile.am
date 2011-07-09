@@ -1,9 +1,9 @@
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/cdwriteutils
 EXTRA_DIST = cdrdao.ch cdrtools.ch cdwriteutils.ch dvd+rw-tools.ch k3b.ch \
-	udftools.ch
+	udftools.ch xorriso.ch
 srcdir = @srcdir@
 srcs = cdrdao.xml cdrtools.xml cdwriteutils.xml dvd+rw-tools.xml k3b.xml \
-	udftools.xml
+	udftools.xml xorriso.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -19,3 +19,4 @@ cdwriteutils.xml: $(BOOKdir)/$@ $(srcdir)/cdwriteutils.ch
 dvd+rw-tools.xml: $(BOOKdir)/$@ $(srcdir)/dvd+rw-tools.ch
 k3b.xml: $(BOOKdir)/$@ $(srcdir)/k3b.ch
 udftools.xml: $(BOOKdir)/$@ $(srcdir)/udftools.ch
+xorriso.xml: $(BOOKdir)/$@ $(srcdir)/xorriso.ch

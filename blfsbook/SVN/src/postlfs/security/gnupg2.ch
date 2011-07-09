@@ -109,8 +109,8 @@ OpenPGP-only version.
     the package's functionality)</para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="pinentry"/> (Run-time requirement for most of
-    the package's functionality)</para>
+    <para role="recommended"><xref linkend="pinentry"/>
+    (本パッケージのほとんどの機能に対して実行時に必要)</para>
 @z
 
 @x
@@ -127,8 +127,7 @@ OpenPGP-only version.
     <xref linkend="libusb-compat"/>, 
     <xref linkend="curl"/>,
     <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
-    adns</ulink>, and an 
-    <xref linkend="server-mail"/></para>
+    adns</ulink>, また <xref linkend="server-mail"/> のいずれか</para>
 @z
 
 @x
@@ -159,21 +158,23 @@ OpenPGP-only version.
     installed and you wish to create documentation in alternate formats,
     issue the following commands:</para>
 @y
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
-    installed and you wish to create documentation in alternate formats,
-    issue the following commands:</para>
+    <para>
+    <xref linkend="tetex"/> または <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>ビルド結果をテストする場合は <command>make check</command> を実行します。</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -181,15 +182,16 @@ OpenPGP-only version.
     using the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you created alternate formats of the documentation, install it
-    using the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    種々のフォーマットのドキュメントを生成した場合は <systemitem
+    class="username">root</systemitem> ユーザーになり以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -225,7 +227,7 @@ OpenPGP-only version.
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -233,9 +235,9 @@ OpenPGP-only version.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x

@@ -16,7 +16,7 @@
 @x
   <title>Other Editors</title>
 @y
-  <title>他のエディタ</title>
+  <title>他のエディター</title>
 @z
 
 @x
@@ -24,8 +24,7 @@
   of <xref linkend="pine"/>.</para>
 @y
 <para>
-<command>pico</command> は <xref linkend="pine"/>
-の一部としてインストールされるテキストエディタです。
+<command>pico</command> は <xref linkend="pine"/> の一部としてインストールされるテキストエディターです。
 </para>
 @z
 
@@ -34,8 +33,7 @@
   of <xref linkend="mc"/>.</para>
 @y
 <para>
-<command>mcedit</command> は <xref linkend="mc"/>
-の一部としてインストールされるテキストエディタです。
+<command>mcedit</command> は <xref linkend="mc"/> の一部としてインストールされるテキストエディターです。
 </para>
 @z
 

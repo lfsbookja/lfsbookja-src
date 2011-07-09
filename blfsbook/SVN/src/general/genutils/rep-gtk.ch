@@ -29,7 +29,7 @@
     Both can be installed, if needed. </para>
 @y
     <para>
-    <application>rep-gtk</application> パッケージは、<application>Lisp</application> および <application>GTK</application> バインディングを提供します。
+    <application>Rep-gtk</application> パッケージは、<application>Lisp</application> および <application>GTK</application> バインディングを提供します。
     これは <application>GTK-2</application> ライブラリと <application>GDK</application> ライブラリを <application>Lisp</application> により拡張するものとして利用できます。
     Starting at <application>rep-gtk</application>-0.15, the package contains the
     bindings to <application>GTK</application> and uses the same instructions.

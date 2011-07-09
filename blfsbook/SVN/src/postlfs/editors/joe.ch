@@ -28,7 +28,7 @@
 <application>JOE</application> (Joe's own editor)
 は、WordStar, <application>Pico</application>,
 <application>Emacs</application>
-といったエディタの機能をエミュレートする軽量なテキストエディタです。
+といったエディターの機能をエミュレートする軽量なテキストエディターです。
 </para>
 @z
 
@@ -188,9 +188,9 @@
           <application>Emacs</application>.</para>
 @y
 <para>
-軽量なテキストエディタであり、
+軽量なテキストエディターであり、
 WordStar, <application>Pico</application>, <application>Emacs</application>
-といったエディタ機能をエミュレートします。
+といったエディター機能をエミュレートします。
 </para>
 @z
 

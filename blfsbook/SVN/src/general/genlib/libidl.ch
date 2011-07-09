@@ -204,8 +204,7 @@
           <filename class="libraryfile">libIDL-2</filename>.</para>
 @y
 <para>
-<filename class="libraryfile">libIDL-2</filename>
-ライブラリが用いるべきコンパイラフラグ、リンカフラグを決定します。
+<filename class="libraryfile">libIDL-2</filename> ライブラリが用いるべきコンパイラーフラグ、リンカーフラグを決定します。
 </para>
 @z
 
@@ -215,9 +214,6 @@
           (IDL) files.</para>
 @y
 <para>
-CORBA に基づくインターフェース定義言語ファイル
-(Interface Definition Language file)
-の生成更新を行うための関数群を提供します。
+CORBA に基づくインターフェース定義言語ファイル (Interface Definition Language file) の生成更新を行うための関数群を提供します。
 </para>
 @z
-

@@ -23,10 +23,9 @@
     <para>The <application>attr</application> package contains utilities to
     administer the extended attributes on filesystem objects.</para>
 @y
-<para>
-<application>attr</application>
-パッケージは、ファイルシステム上のオブジェクトに対しての拡張属性を管理するユーティリティを提供します。
-</para>
+    <para>
+    <application>attr</application> パッケージは、ファイルシステム上のオブジェクトに対しての拡張属性を管理するユーティリティを提供します。
+    </para>
 @z
 
 @x
@@ -89,9 +88,9 @@
     <para>Install <application>attr</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>attr</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>attr</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -99,28 +98,21 @@
     following to execute all three:
     <command>make tests root-tests ext-tests</command>.  For meaningful results,
     the tests need to be carried out on a file system that supports extended
-    attributes. Some failures will occur due to a missing script called
-    <filename>sort-getfattr-output</filename> which is not part of the
-    tarball.</para>
+    attributes.</para>
 @y
-<para>
-このパッケージには３つのテストがあります。
-<command>make tests root-tests ext-tests</command>
-と入力すれば、それらをすべて実行できます。
-十分なテスト結果を得るには、拡張属性をサポートしているファイルシステム上にてテストを実施する必要があります。
-テストにおいては <filename>sort-getfattr-output</filename>
-というスクリプトが存在しないために、テストに失敗するものが出てきます。
-このスクリプトは tarball には含まれていません。
-</para>
+    <para>
+    このパッケージには３つのテストがあります。
+    <command>make tests root-tests ext-tests</command> と入力すれば、それらをすべて実行できます。
+    十分なテスト結果を得るには、拡張属性をサポートしているファイルシステム上にてテストを実施する必要があります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -134,21 +126,21 @@
     modifies the documentation directory so that it is a versioned
     directory and also adds support for a DESTDIR installation.</para>
 @y
-<para>
-<command>sed ... include/builddefs.in</command>:
-このコマンドは、ドキュメントのインストールディレクトリを変更するものです。
-１つにはバージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
-</para>
+    <para>
+    <command>sed ... include/builddefs.in</command>:
+    このコマンドは、ドキュメントのインストールディレクトリを変更するものです。
+    １つにはバージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
+    </para>
 @z
 
 @x
     <para><command>chmod ...</command>: This command modifies the permissions
     of installed library files to standards.</para>
 @y
-<para>
-<command>chmod ...</command>:
-このコマンドは、インストールされたライブラリファイルのパーミッションを標準的なものに変更します。
-</para>
+    <para>
+    <command>chmod ...</command>:
+    このコマンドは、インストールされたライブラリファイルのパーミッションを標準的なものに変更します。
+    </para>
 @z
 
 @x
@@ -164,12 +156,10 @@
       but to get any use out of <application>attr</application>, a filesystem
       needs to support extended attributes.</para>
 @y
-<para>
-<application>attr</application> 自身には設定すべきものはありません。
-<application>attr</application>
-をさまざまに利用していくためには、ファイルシステムが拡張属性
-(extended attributes) をサポートしている必要があります。
-</para>
+      <para>
+      <application>attr</application> 自身には設定すべきものはありません。
+      <application>attr</application> をさまざまに利用していくためには、ファイルシステムが拡張属性 (extended attributes) をサポートしている必要があります。
+      </para>
 @z
 
 @x
@@ -177,11 +167,10 @@
       filesystem in the <filename>/etc/fstab</filename> file as shown
       below:</para>
 @y
-<para>
-一つの方法としては <filename>/etc/fstab</filename>
-ファイル内の ext3 ファイルシステムに user_xattr オプションを設定することで実現します。
-例えば以下のようになります。
-</para>
+      <para>
+      一つの方法としては <filename>/etc/fstab</filename> ファイル内の ext3 ファイルシステムに user_xattr オプションを設定することで実現します。
+      例えば以下のようになります。
+      </para>
 @z
 
 @x
@@ -219,32 +208,31 @@
 @x attr
           <para>extends attributes on filesystem objects.</para>
 @y
-<para>
-ファイルシステム上のオブジェクトに対して、属性を拡張します。
-</para>
+          <para>
+          ファイルシステム上のオブジェクトに対して、属性を拡張します。
+          </para>
 @z
 
 @x getfattr
           <para>gets the extended attributes of filesystem objects.</para>
 @y
-<para>
-ファイルシステム上のオブジェクトに対して、拡張属性の情報を取得します。
-</para>
+          <para>
+          ファイルシステム上のオブジェクトに対して、拡張属性の情報を取得します。
+          </para>
 @z
 
 @x setfattr
           <para>sets the extended attributes of filesystem objects.</para>
 @y
-<para>
-ファイルシステム上のオブジェクトに対して、拡張属性の情報を設定します。
-</para>
+          <para>
+          ファイルシステム上のオブジェクトに対して、拡張属性の情報を設定します。
+          </para>
 @z
 
 @x libattr.{so,a}
           <para>contains the <application>attr</application> API functions.</para>
 @y
-<para>
-<application>attr</application> API 関数を提供します。
-</para>
+          <para>
+          <application>attr</application> API 関数を提供します。
+          </para>
 @z
-

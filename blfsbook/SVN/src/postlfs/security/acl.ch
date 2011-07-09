@@ -108,10 +108,9 @@ discretionary access rights for files and directories.
     <para>Install <application>acl</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>acl</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>acl</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -119,28 +118,21 @@ discretionary access rights for files and directories.
     system that supports extended attributes. It is also required that
     <application>Coreutils</application> is re-installed after
     <application>acl</application> is installed so that the extra acl bit
-    displays correctly on a <command>ls</command> command. Some failures will
-    occur due to a missing script called
-    <filename>sort-getfattr-output</filename> which is not part of the
-    tarball.</para>
+    displays correctly on a <command>ls</command> command.</para>
 @y
     <para>For meaningful results, the tests need to be carried out on a file
     system that supports extended attributes. It is also required that
     <application>Coreutils</application> is re-installed after
     <application>acl</application> is installed so that the extra acl bit
-    displays correctly on a <command>ls</command> command. Some failures will
-    occur due to a missing script called
-    <filename>sort-getfattr-output</filename> which is not part of the
-    tarball.</para>
+    displays correctly on a <command>ls</command> command.</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x

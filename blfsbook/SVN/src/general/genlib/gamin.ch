@@ -16,7 +16,7 @@
 @x
   <!ENTITY gamin-time          "0.1 SBU (up to 3 minutes, processor independent, to run the test suite)">
 @y
-  <!ENTITY gamin-time          "0.1 SBU (プロセッサには関係なく、テストスイート実施の場合は3分程度)">
+  <!ENTITY gamin-time          "0.1 SBU (プロセッサーには関係なく、テストスイート実施の場合は3分程度)">
 @z
 
 @x

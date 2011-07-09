@@ -204,7 +204,6 @@
           use <application>NSPR</application>.</para>
 @y
 <para>
-<application>NSPR</application>
-を利用する他のパッケージに対して、コンパイラとリンカのオプションを提供します。
+<application>NSPR</application> を利用する他のパッケージに対して、コンパイラーとリンカーのオプションを提供します。
 </para>
 @z

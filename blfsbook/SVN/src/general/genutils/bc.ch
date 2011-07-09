@@ -104,10 +104,11 @@
     There are a very small percentage of tests (10 of 12,144) that will
     indicate a roundoff error at the last digit.</para>
 @y
-    <para>To test <application>bc</application>, run the commands below.
-    There is quite a bit of output, so you may want to redirect it to a file.
-    There are a very small percentage of tests (10 of 12,144) that will
-    indicate a roundoff error at the last digit.</para>
+    <para>
+    <application>bc</application> をテストする場合は以下のコマンドを実行します。
+    その際には相当量の出力が行われますから、ファイルにリダイレクトしておくとよいでしょう。
+    テストのうちいくつかのテスト (12,144 個のうちの10個) では、最終デジットに対する丸め (roundoff) に関するエラーが発生します。
+    </para>
 @z
 
 @x

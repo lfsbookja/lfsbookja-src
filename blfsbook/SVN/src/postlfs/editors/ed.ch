@@ -34,7 +34,7 @@
     because diff-based patches are preferred these days.</para>
 @y
 <para>
-<application>Ed</application> は行ベースの (line-oriented) テキストエディタです。
+<application>Ed</application> は行ベースの (line-oriented) テキストエディターです。
 テキストファイルの生成、表示、編集を、対話的に、あるいはシェルスクリプトからの実行でも実現します。
 Ed を利用する人は、そう多くはありません。
 なぜここで取り上げるかというと、patch プログラムが用いるパッチファイルにて Ed ベースのものが時々見受けられるためです。
@@ -175,7 +175,7 @@ Ed を利用する人は、そう多くはありません。
           <para>is a line-oriented text editor.</para>
 @y
 <para>
-行ベースのテキストエディタです。
+行ベースのテキストエディターです。
 </para>
 @z
 

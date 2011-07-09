@@ -32,9 +32,8 @@
 @y
 <para>
 <application>nano</application>
-パッケージは、軽量でシンプルなテキストエディタを提供します。
-<application>Pine</application> パッケージにおけるデフォルトのエディタ
-<application>Pico</application> に代わるものとして提供されています。
+パッケージは、軽量でシンプルなテキストエディターを提供します。
+<application>Pine</application> パッケージにおけるデフォルトのエディター <application>Pico</application> に代わるものとして提供されています。
 </para>
 @z
 
@@ -242,9 +241,8 @@
           <application>Pine</application> package.</para>
 @y
 <para>
-軽量でシンプルなテキストエディタです。
-<application>Pine</application> パッケージにおけるデフォルトのエディタ
-<application>Pico</application> に代わるものとして提供されています。
+軽量でシンプルなテキストエディターです。
+<application>Pine</application> パッケージにおけるデフォルトのエディター <application>Pico</application> に代わるものとして提供されています。
 </para>
 @z
 

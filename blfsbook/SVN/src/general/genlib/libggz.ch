@@ -145,7 +145,7 @@
 @y
 <para>
 <parameter>--with-tls</parameter>:
-このパラメータは、GnuTLS か OpenSSL
+このパラメーターは、GnuTLS か OpenSSL
 が利用可能である場合に、そのいずれかを自動的に利用するよう設定します。
 </para>
 @z
@@ -189,4 +189,3 @@
 libggz API 関数を提供します。
 </para>
 @z
-

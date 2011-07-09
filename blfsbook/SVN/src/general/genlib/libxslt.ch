@@ -187,8 +187,8 @@
           libraries in 3rd-party programs.</para>
 @y
 <para>
-サードパーティ製のプログラムが <application>libxslt</application>
-ライブラリを利用するにあたって、必要となるプリプロセッサ、コンパイルフラグ、リンクフラグを決定するために利用します。
+サードパーティー製のプログラムが <application>libxslt</application>
+ライブラリを利用するにあたって、必要となるプリプロセッサー、コンパイルフラグ、リンクフラグを決定するために利用します。
 </para>
 @z
 
@@ -206,8 +206,7 @@ XML ドキュメントファイルに対して XSLT スタイルシートを適�
           libraries to parse files that use the XSLT format.</para>
 @y
 <para>
-<filename class="libraryfile">libxml2</filename>
-ライブラリを拡張して XSLT 形式のファイルを取り扱う機能を提供します。
+<filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT 形式のファイルを取り扱う機能を提供します。
 </para>
 @z
 
