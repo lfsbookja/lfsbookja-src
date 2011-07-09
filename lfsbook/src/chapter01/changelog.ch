@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2011-07-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update location of POSIX Standard.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-07-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - POSIX 標準のリンクを更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-07-01</para>
       <itemizedlist>
         <listitem>

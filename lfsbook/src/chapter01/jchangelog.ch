@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-07-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/prologue/standards.ch:
+          SVN-201100708, r9571 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-07-02</para>
       <itemizedlist>
         <listitem>

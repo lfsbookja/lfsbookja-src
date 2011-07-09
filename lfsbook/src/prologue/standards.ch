@@ -30,13 +30,11 @@
 @z
 
 @x
-        <para><ulink url="http://www.unix.org/single_unix_specification">The 
-        Single UNIX Specification Version 3 (POSIX)</ulink>.  Note: 
-        Free registration is required.</para>
+        <para><ulink url="http://pubs.opengroup.org/onlinepubs/9699919799/"> 
+        POSIX.1-2008</ulink>.</para>
 @y
-        <para><ulink url="http://www.unix.org/single_unix_specification">The 
-        Single UNIX Specification Version 3 (POSIX)</ulink>.
-        (登録操作が必要です。無料。)</para>
+        <para><ulink url="http://pubs.opengroup.org/onlinepubs/9699919799/"> 
+        POSIX.1-2008</ulink></para>
 @z
 
 @x
