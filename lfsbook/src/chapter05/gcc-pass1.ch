@@ -133,7 +133,7 @@ cross-compiled environment:</para>
 %          <para>This option tells GCC where the GMP headers are located.</para>
 %@y
 %          <para>
-%          このオプションは GCC に対して GMP のヘッダファイルの場所を指定するものです。
+%          このオプションは GCC に対して GMP のヘッダーファイルの場所を指定するものです。
 %          </para>
 %@z
 

@@ -114,10 +114,8 @@
 @y
           <para>
           変数 <envar>LFS_TGT</envar>
-          に設定しているマシン名は <command>config.guess</command>
-          スクリプトが返すものとは微妙に異なります。
-          そこでこのオプションは、Binutils のビルドにあたってクロスリンカーをビルドするように
-          <command>configure</command> スクリプトに指示するものです。
+          に設定しているマシン名は <command>config.guess</command> スクリプトが返すものとは微妙に異なります。
+          そこでこのオプションは、Binutils のビルドにあたってクロスリンカーをビルドするように <command>configure</command> スクリプトに指示するものです。
           </para>
 @z
 

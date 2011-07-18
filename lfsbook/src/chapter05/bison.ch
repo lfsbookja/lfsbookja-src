@@ -50,10 +50,7 @@
     <para>Details on this package are located in
     <xref linkend="contents-bison" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-bison" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-bison" role=""/>を参照してください。
+    </para>
 @z
-

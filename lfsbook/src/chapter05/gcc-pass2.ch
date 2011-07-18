@@ -386,6 +386,6 @@
     <xref linkend="contents-gcc" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-gcc" role=""/> を参照してください。
+    本パッケージの詳細は <xref linkend="contents-gcc" role=""/>を参照してください。
     </para>
 @z

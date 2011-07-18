@@ -173,30 +173,6 @@
           </para>
 @z
 
-% @x
-%           <para>The build requires support for forced unwind, but because it is
-%           being cross compiled, it cannot auto detect it. Setting this variable
-%           on the command line explicitly tells the
-%           <command>configure</command> script that support is available.</para>
-% @y
-% <para>
-% ここでビルドする Glibc には <quote>forced unwind</quote> サポートを必要とします。
-% ただここではクロスコンパイルが行われているため、自動的にはそのサポートが為されません。
-% そこでコマンドラインから明示的に変数値を設定することで
-% <command>configure</command> スクリプトに対してそのサポートを有効とするように指示します。
-% </para>
-% @z
-% 
-% @x
-%           <para>The build also requires support for C cleanup handling, which it
-%           cannot auto detect when being cross compiled. Enable it explicitly.</para>
-% @y
-% <para>
-% 同じく Glibc には <quote>C cleanup handling</quote> サポートを必要とします。
-% クロスコンパイル時には自動的には検出されないため、明示的に指定します。
-% </para>
-% @z
-
 @x
     <para>During this stage the following warning might appear:</para>
 @y

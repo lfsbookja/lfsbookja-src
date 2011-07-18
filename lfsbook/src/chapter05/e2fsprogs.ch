@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +23,9 @@
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
-<para>
-E2fsprogs のドキュメントでは E2fsprogs をビルドする際に、ソース・ディレクトリ内にサブディレクトリを作成してビルドすることを推奨しています。
-</para>
+    <para>
+    E2fsprogs のドキュメントでは E2fsprogs をビルドする際に、ソースディレクトリ内にサブディレクトリを作成してビルドすることを推奨しています。
+    </para>
 @z
 
 @x
@@ -34,28 +43,26 @@ E2fsprogs のドキュメントでは E2fsprogs をビルドする際に、ソ�
 @x
     <para>Install the static libraries and headers required by Util-linux:</para>
 @y
-<para>
-Util-linux パッケージにて必要となる、スタティックライブラリとヘッダーファイルをインストールします。
-</para>
+    <para>
+    Util-linux パッケージにて必要となる、スタティックライブラリとヘッダーファイルをインストールします。
+    </para>
 @z
 
 @x
     <para>Make the installed static libraries writable so debugging symbols can 
     be removed later:</para>
 @y
-<para>
-インストールしたスタティック・ライブラリを書き込み可能にします。
-後にデバッグ・シンボルを取り除くために必要となります。
-</para>
+    <para>
+    インストールしたスタティックライブラリを書き込み可能にします。
+    後にデバッグシンボルを取り除くために必要となります。
+    </para>
 @z
 
 @x
     <para>Details on this package are located in
     <xref linkend="contents-e2fsprogs" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-e2fsprogs" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-e2fsprogs" role=""/>を参照してください。
+    </para>
 @z

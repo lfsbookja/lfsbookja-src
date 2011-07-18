@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -40,25 +49,11 @@
           library that may be present on the host but will not be available
           once we enter the <command>chroot</command> environment.</para>
 @y
-<para>
-このオプションは <command>grep</command> プログラムに対して Perl 互換正規表現
-(Perl Compatible Regular Expression; PCRE) ライブラリをリンクしないように指示します。
-このライブラリはホストシステムに存在するかもしれませんが <command>chroot</command>
-環境に入ってしまうと利用できなくなります。
-</para>
+          <para>
+          このオプションは <command>grep</command> プログラムに対して Perl 互換正規表現 (Perl Compatible Regular Expression; PCRE) ライブラリをリンクしないように指示します。
+          このライブラリはホストシステムに存在するかもしれませんが <command>chroot</command> 環境に入ってしまうと利用できなくなります。
+          </para>
 @z
-
-% @x
-%           <para>The configure check for Glibc's regex library is broken when
-%           building against Glibc-&glibc-version;.  This switch forces the use of
-%           Glibc's regex library.</para>
-% @y
-% <para>
-% Glibc-&glibc-version; を用いている環境で本パッケージをビルドすると Glibc
-% の正規表現ライブラリのチェックが適切に動作しません。
-% このオプションは Glibc の正規表現ライブラリを常時使うように指示します。
-% </para>
-% @z
 
 @x
     <para>Compile the package:</para>
@@ -71,11 +66,11 @@
     suite is not mandatory for the temporary tools here in this chapter. To run
     the Grep test suite anyway, issue the following command:</para>
 @y
-<para>
-コンパイルが終了しました。
-前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-しかしテストスイートを実行するなら、以下を実行します。
-</para>
+    <para>
+    コンパイルが終了しました。
+    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+    しかしテストスイートを実行するなら、以下を実行します。
+    </para>
 @z
 
 @x
@@ -88,10 +83,7 @@
     <para>Details on this package are located in
     <xref linkend="contents-grep" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-grep" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-grep" role=""/>を参照してください。
+    </para>
 @z
-

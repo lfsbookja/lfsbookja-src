@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -32,9 +41,9 @@
     <para>Only a few of the utilities contained in this package need to be
     built:</para>
 @y
-<para>
-このパッケージ内の特定のツールのみをビルドします。
-</para>
+    <para>
+    このパッケージ内の特定のツールのみをビルドします。
+    </para>
 @z
 
 @x
@@ -53,10 +62,7 @@
     <para>Details on this package are located in
     <xref linkend="contents-utillinux" role="."/></para>
 @y
-<para>
-本パッケージの詳細は
-<xref linkend="contents-utillinux" role=""/>
-を参照してください。
-</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-utillinux" role=""/>を参照してください。
+    </para>
 @z
-

@@ -17,9 +17,9 @@
     <para>The DejaGNU package contains a framework for testing other
     programs.</para>
 @y
-<para>
-DejaGNU パッケージは、他のプログラムをテストするフレームワークを提供します。
-</para>
+    <para>
+    DejaGNU パッケージは、他のプログラムをテストするフレームワークを提供します。
+    </para>
 @z
 
 @x

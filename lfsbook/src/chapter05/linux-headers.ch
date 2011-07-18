@@ -27,7 +27,7 @@
 @y
   <indexterm zone="ch-tools-linux-headers">
     <primary sortas="a-Linux">Linux</primary>
-    <secondary>ツール, API ヘッダ</secondary>
+    <secondary>ツール, API ヘッダー</secondary>
   </indexterm>
 @z
 

@@ -17,9 +17,9 @@
     <para>The Expect package contains a program for carrying out scripted
     dialogues with other interactive programs.</para>
 @y
-<para>
-Expect パッケージは、他のプログラムと対話的に処理を行うプログラムを提供します。
-</para>
+    <para>
+    Expect パッケージは、他のプログラムと対話的に処理を行うプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -34,13 +34,10 @@ Expect パッケージは、他のプログラムと対話的に処理を行う�
     This will ensure that our test suite tools remain sane for the final builds of our
     toolchain:</para>
 @y
-<para>
-Expect の configure スクリプトは、ホストシステムの
-<filename>/usr/local/bin/stty</filename>
-を利用しようとしますが、<filename>/bin/stty</filename>
-を利用するように修正します。
-これを行うのは、ここで構築しているテストスイートのツール類を、ツールチェーンの最終構築まで正常動作してもらうために必要となるからです。
-</para>
+    <para>
+    Expect の configure スクリプトは、ホストシステムの <filename>/usr/local/bin/stty</filename> を利用しようとしますが、<filename>/bin/stty</filename> を利用するように修正します。
+    これを行うのは、ここで構築しているテストスイートのツール類を、ツールチェーンの最終構築まで正常動作してもらうために必要となるからです。
+    </para>
 @z
 
 @x
@@ -60,9 +57,9 @@ Expect の configure スクリプトは、ホストシステムの
           installation in the temporary tools location instead of possibly
           locating an existing one on the host system.</para>
 @y
-<para>
-Tcl のインストールモジュールを、ホストシステムに存在しているツール類の場所からではなく、一時的ツールを配置したディレクトリから探し出すことを指示します。
-</para>
+          <para>
+          Tcl のインストールモジュールを、ホストシステムに存在しているツール類の場所からではなく、一時的ツールを配置したディレクトリから探し出すことを指示します。
+          </para>
 @z
 
 @x
@@ -71,10 +68,10 @@ Tcl のインストールモジュールを、ホストシステムに存在し�
           <command>configure</command> fails because it cannot automatically
           discover the location of Tcl's headers.</para>
 @y
-<para>
-Tcl の内部ヘッダファイルを探し出す場所を指定します。
-<command>configure</command> は自動的には Tcl ヘッダファイルの場所を探し出さないため、これを明示します。
-</para>
+          <para>
+          Tcl の内部ヘッダーファイルを探し出す場所を指定します。
+          <command>configure</command> は自動的には Tcl ヘッダーファイルの場所を探し出さないため、これを明示します。
+          </para>
 @z
 
 @x
@@ -88,11 +85,11 @@ Tcl の内部ヘッダファイルを探し出す場所を指定します。
     suite is not mandatory for the temporary tools here in this chapter. To run
     the Expect test suite anyway, issue the following command:</para>
 @y
-<para>
-コンパイルが終了しました。
-前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-しかしテストスイートを実行するなら、以下を実行します。 
-</para>
+    <para>
+    コンパイルが終了しました。
+    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+    しかしテストスイートを実行するなら、以下を実行します。 
+    </para>
 @z
 
 @x
@@ -101,10 +98,10 @@ Tcl の内部ヘッダファイルを探し出す場所を指定します。
     test suite failures here are not surprising and are not considered
     critical.</para>
 @y
-<para>
-Expect のテストスイートは、特定のホスト環境において失敗することがありますが、その原因はよく分かっていません。
-したがってテストスイートの失敗は驚くことではなく、さして重大なことではありません。
-</para>
+    <para>
+    Expect のテストスイートは、特定のホスト環境において失敗することがありますが、その原因はよく分かっていません。
+    したがってテストスイートの失敗は驚くことではなく、さして重大なことではありません。
+    </para>
 @z
 
 @x
@@ -123,10 +120,10 @@ Expect のテストスイートは、特定のホスト環境において失敗�
           <para>This prevents installation of the supplementary Expect
           scripts, which are not needed.</para>
 @y
-<para>
-Expect の補助的なスクリプトはインストールしないことを指示します。
-これらは必要ありません。 
-</para>
+          <para>
+          Expect の補助的なスクリプトはインストールしないことを指示します。
+          これらは必要ありません。 
+          </para>
 @z
 
 @x
@@ -153,18 +150,16 @@ Expect の補助的なスクリプトはインストールしないことを指�
           <para>Communicates with other interactive programs according
           to a script</para>
 @y
-<para>
-スクリプトを通じて他の対話的なプログラムとの処理を行います。
-</para>
+          <para>
+          スクリプトを通じて他の対話的なプログラムとの処理を行います。
+          </para>
 @z
 
 @x libexpect-5.43.a
           <para>Contains functions that allow Expect to be used as a Tcl
           extension or to be used directly from C or C++ (without Tcl)</para>
 @y
-<para>
-Tcl 拡張機能を通じて、あるいは (Tcl がない場合に)
-C や C++ から直接、Expect とのやりとりを行う関数を提供します。
-</para>
+          <para>
+          Tcl 拡張機能を通じて、あるいは (Tcl がない場合に) C や C++ から直接、Expect とのやりとりを行う関数を提供します。
+          </para>
 @z
-

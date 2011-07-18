@@ -44,11 +44,11 @@
     suite is not mandatory for the temporary tools here in this chapter. To run
     the File test suite anyway, issue the following command:</para>
 @y
-<para>
-コンパイルが終了しました。
-前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
-しかしテストスイートを実行するなら、以下を実行します。
-</para>
+    <para>
+    コンパイルが終了しました。
+    前にも述べたように、この章にて一時的ツールのテストスイートを実行することは必須ではありません。
+    しかしテストスイートを実行するなら、以下を実行します。
+    </para>
 @z
 
 @x
@@ -61,7 +61,7 @@
     <para>Details on this package are located in
     <xref linkend="contents-file" role="."/></para>
 @y
-    <para>本パッケージの詳細は
-    <xref linkend="contents-file" role=""/> を参照してください。</para>
+    <para>
+    本パッケージの詳細は <xref linkend="contents-file" role=""/>を参照してください。
+    </para>
 @z
-
