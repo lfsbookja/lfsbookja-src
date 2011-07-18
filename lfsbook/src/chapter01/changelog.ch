@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2011-07-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-172. Fixes
+          <ulink url="&lfs-ticket-root;2904">#2904</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-2.6.39.3. Fixes
+          <ulink url="&lfs-ticket-root;2903">#2903</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-07-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Udev-172 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2904">#2904</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-2.6.39.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2903">#2903</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-07-08</para>
       <itemizedlist>
         <listitem>
