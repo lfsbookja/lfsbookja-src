@@ -38,17 +38,12 @@
     <application>Subversion</application> repository. Creation of a repository
     is covered at <xref linkend="svnserver"/>.</para>
 @y
-<para>
-<application>Subversion</application>
-はバージョン管理システムであり、
-オープンソースコミュニティにおいて <application>CVS</application>
-に代わるものとして構築されたものです。
-<application>CVS</application> の機能を拡張しつつ、それまでの
-<application>CVS</application> と同様のインターフェースを提供しています。
-ここに示すビルド手順では <application>Subversion</application>
-リポジトリを制御する、サーバー/クライアントソフトウェアをともにインストールします。
-リポジトリの生成方法については <xref linkend="svnserver"/> において説明しています。
-</para>
+          <para>
+          <application>Subversion</application> はバージョン管理システムであり、オープンソースコミュニティにおいて <application>CVS</application> に代わるものとして構築されたものです。
+          <application>CVS</application> の機能を拡張しつつ、それまでの <application>CVS</application> と同様のインターフェースを提供しています。
+          ここに示すビルド手順では <application>Subversion</application> リポジトリを制御する、サーバー/クライアントソフトウェアをともにインストールします。
+          リポジトリの生成方法については <xref linkend="svnserver"/> において説明しています。
+          </para>
 @z
 
 @x
@@ -121,14 +116,13 @@
     <filename>INSTALL</filename> file for information on how to utilize this
     package)</para>
 @y
-<para>
-<ulink
-url="http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=260&amp;expandFolder=74">
-Subversion 依存パッケージ (Subversion dependencies package)</ulink>
-を利用することもできます。
-これにより、<application>SQLite</application> と APR の依存要件を満たすことができます。
-(このパッケージの利用方法については <filename>INSTALL</filename> ファイルを参照してください。)
-</para>
+          <para>
+          <ulink
+          url="http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=260&amp;expandFolder=74">
+          Subversion 依存パッケージ (Subversion dependencies package)</ulink> を利用することもできます。
+          これにより、<application>SQLite</application> と APR の依存要件を満たすことができます。
+          (このパッケージの利用方法については <filename>INSTALL</filename> ファイルを参照してください。)
+          </para>
 @z
 
 @x
@@ -161,7 +155,7 @@ Subversion 依存パッケージ (Subversion dependencies package)</ulink>
     KWallet from KDE4,
     <xref linkend="apache"/> (if you have <application>Apache Portable
     Runtime</application> installed), and
-    <ulink url="http://www.webdav.org/neon/">neon</ulink> or
+    <xref linkend="neon"/> or
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
@@ -175,7 +169,7 @@ Subversion 依存パッケージ (Subversion dependencies package)</ulink>
     KWallet from KDE4,
     <xref linkend="apache"/> (if you have <application>Apache Portable
     Runtime</application> installed),
-    <ulink url="http://www.webdav.org/neon/">neon</ulink> または
+    <xref linkend="neon"/> または
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @z
 
@@ -241,9 +235,9 @@ the installed version of <application>SWIG</application> is greater than
     <para>Install <application>Subversion</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Subversion</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Subversion</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -251,12 +245,9 @@ the installed version of <application>SWIG</application> is greater than
     build the API documentation, issue:
     <command>doxygen doc/doxygen.conf</command>.</para>
 @y
-<para>
-<xref linkend="doxygen"/>
-をインストールしていて、API ドキュメントをインストールする場合は
-<command>doxygen doc/doxygen.conf</command>
-を実行します。
-</para>
+    <para>
+    <xref linkend="doxygen"/> をインストールしていて、API ドキュメントをインストールする場合は <command>doxygen doc/doxygen.conf</command> を実行します。
+    </para>
 @z
 
 @x
@@ -264,10 +255,9 @@ the installed version of <application>SWIG</application> is greater than
     <command>configure</command> and wish to build the Java bindings, issue
     the following command:</para>
 @y
-<para>
-<command>configure</command> において <option>--enable-javahl</option>
-を指定していて、Java バインディングをビルドしたい場合は、以下のコマンドを実行します。
-</para>
+    <para>
+    <command>configure</command> において <option>--enable-javahl</option> を指定していて、Java バインディングをビルドしたい場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -277,21 +267,20 @@ the installed version of <application>SWIG</application> is greater than
     <application>Ruby</application> bindings, issue any or all of the following
     commands:</para>
 @y
-<para>
-必要となる依存パッケージをインストールしていて
-<application>Perl</application>,
-<application>Python</application>,
-<application>Ruby</application>
-に対する各バインディングをビルドしたい場合は、必要となる以下のいずれかのコマンドを実行します。
-</para>
+    <para>
+    必要となる依存パッケージをインストールしていて <application>Perl</application>,
+    <application>Python</application>,
+    <application>Ruby</application>
+    に対する各バインディングをビルドしたい場合は、必要となる以下のいずれかのコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
@@ -299,12 +288,10 @@ the installed version of <application>SWIG</application> is greater than
     <command>make check-javahl</command>. Note you must have the
     <application>JUnit</application> testing framework installed.</para>
 @y
-<para>
-Java バインディングのビルド結果をテストする場合は
-<command>make check-javahl</command> を実行します。
-この際には、テストフレームワークである <application>JUnit</application>
-をインストールしておく必要があります。
-</para>
+    <para>
+    Java バインディングのビルド結果をテストする場合は <command>make check-javahl</command> を実行します。
+    この際には、テストフレームワークである <application>JUnit</application> をインストールしておく必要があります。
+    </para>
 @z
 
 @x
@@ -312,19 +299,17 @@ Java バインディングのビルド結果をテストする場合は
     <application>SWIG</application> bindings, you can use the following
     commands:</para>
 @y
-<para>
-To test the results of any or all of the
-<application>SWIG</application> bindings, you can use the following
-commands:
-</para>
+    <para>
+    <application>SWIG</application> バインディングのすべて、あるいは一部のビルド結果をテストする場合は、以下のいずれかのコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -332,11 +317,10 @@ commands:
     as the <systemitem class="username">root</systemitem> user to install
     them:</para>
 @y
-<para>
-Java バインディングをビルドした場合は
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行し、Java バインディングをインストールします。
-</para>
+    <para>
+    Java バインディングをビルドした場合は <systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行し、Java バインディングをインストールします。
+    </para>
 @z
 
 @x
@@ -359,13 +343,10 @@ issue any or all of the following commands as the
     <envar>PYTHONPATH</envar> environment variable to the system or
     personal profiles.</para>
 @y
-<para>
-<application>Python</application>
-がバインディングを自動的に見つけ出せるようにするために、システムプロファイルか自ユーザーのプロファイルに、環境変数
-<envar>PYTHONPATH</envar> の定義を加え、それが
-<filename class='directory'>/usr/lib/svn-python</filename>
-を指し示すようにしてください。
-</para>
+    <para>
+    <application>Python</application> がバインディングを自動的に見つけ出せるようにするために、システムプロファイルか自ユーザーのプロファイルに、環境変数 <envar>PYTHONPATH</envar> の定義を加え、それが <filename
+    class='directory'>/usr/lib/svn-python</filename> を指し示すようにしてください。
+    </para>
 @z
 
 @x
@@ -380,12 +361,12 @@ issue any or all of the following commands as the
     if the <application>Berkeley-DB</application> version is greater than
     4.x.</para>
 @y
-<para>
-<command>sed -i '...' build/ac-macros/berkeley-db.m4</command>:
-This command fixes the <application>Berkeley-DB</application> discovery
-if the <application>Berkeley-DB</application> version is greater than
-4.x.
-</para>
+    <para>
+    <command>sed -i '...' build/ac-macros/berkeley-db.m4</command>:
+    This command fixes the <application>Berkeley-DB</application> discovery
+    if the <application>Berkeley-DB</application> version is greater than
+    4.x.
+    </para>
 @z
 
 @x
@@ -393,11 +374,11 @@ if the <application>Berkeley-DB</application> version is greater than
     <command>configure</command> script to incorporate the changes from the
     previous command.</para>
 @y
-<para>
-<command>autoconf</command>: This command is used to generate a new
-<command>configure</command> script to incorporate the changes from the
-previous command.
-</para>
+    <para>
+    <command>autoconf</command>: This command is used to generate a new
+    <command>configure</command> script to incorporate the changes from the
+    previous command.
+    </para>
 @z
 
 @x
@@ -407,13 +388,13 @@ previous command.
     version of the <application>APR</application>. Ensure you identify the
     correct installation prefix.</para>
 @y
-<para>
-<option>--with-apr=<replaceable>&lt;prefix&gt;</replaceable>
---with-apr-util=<replaceable>&lt;prefix&gt;</replaceable></option>:
-These options should be used if you wish to use the system-installed
-version of the <application>APR</application>. Ensure you identify the
-correct installation prefix.
-</para>
+    <para>
+    <option>--with-apr=<replaceable>&lt;prefix&gt;</replaceable>
+    --with-apr-util=<replaceable>&lt;prefix&gt;</replaceable></option>:
+    These options should be used if you wish to use the system-installed
+    version of the <application>APR</application>. Ensure you identify the
+    correct installation prefix.
+    </para>
 @z
 
 @x
@@ -424,14 +405,14 @@ correct installation prefix.
     <command>apxs</command> might not be in an unprivileged user's
     <envar>PATH</envar> and won't be properly discovered.</para>
 @y
-<para>
-<option>--with-apxs=/usr/sbin/apxs</option>: This option should be
-used to identify the system-installed version of the
-<command>apxs</command> command installed during the
-<application>Apache HTTPD</application> installation as
-<command>apxs</command> might not be in an unprivileged user's
-<envar>PATH</envar> and won't be properly discovered.
-</para>
+    <para>
+    <option>--with-apxs=/usr/sbin/apxs</option>: This option should be
+    used to identify the system-installed version of the
+    <command>apxs</command> command installed during the
+    <application>Apache HTTPD</application> installation as
+    <command>apxs</command> might not be in an unprivileged user's
+    <envar>PATH</envar> and won't be properly discovered.
+    </para>
 @z
 
 @x
@@ -540,52 +521,51 @@ used to identify the system-installed version of the
           <para>is a command-line client program used to access
           <application>Subversion</application> repositories.</para>
 @y
-<para>
-<application>Subversion</application>
-リポジトリにアクセスするための、コマンドラインのクライアントプログラム。
-</para>
+    <para>
+    <application>Subversion</application>
+    リポジトリにアクセスするための、コマンドラインのクライアントプログラム。
+    </para>
 @z
 
 @x svnadmin
           <para>is a tool for creating, tweaking or repairing a
           <application>Subversion</application> repository.</para>
 @y
-<para>
-
-is a tool for creating, tweaking or repairing a
-<application>Subversion</application> repository.
-</para>
+    <para>
+    
+    is a tool for creating, tweaking or repairing a
+    <application>Subversion</application> repository.
+    </para>
 @z
 
 @x svndumpfilter
           <para>is a program for filtering <application>Subversion</application>
           repository dumpfile format streams.</para>
 @y
-<para>
-
-is a program for filtering <application>Subversion</application>
-repository dumpfile format streams.
-</para>
+    <para>
+    
+    is a program for filtering <application>Subversion</application>
+    repository dumpfile format streams.
+    </para>
 @z
 
 @x svnlook
           <para>is a tool for inspecting a
           <application>Subversion</application> repository.</para>
 @y
-<para>
-<application>Subversion</application>
-リポジトリを調べるためのツール。
-</para>
+    <para>
+    <application>Subversion</application> リポジトリを調べるためのツール。
+    </para>
 @z
 
 @x svnserve
           <para>is a custom standalone server program, able to run as a
           daemon process or invoked by SSH.</para>
 @y
-<para>
-is a custom standalone server program, able to run as a
-daemon process or invoked by SSH.
-</para>
+    <para>
+    is a custom standalone server program, able to run as a
+    daemon process or invoked by SSH.
+    </para>
 @z
 
 @x svnversion
@@ -600,24 +580,24 @@ daemon process or invoked by SSH.
           <para>is a script which provides information about an installed
           copy of the <application>neon</application> library.</para>
 @y
-<para>is a script which provides information about an installed
-copy of the <application>neon</application> library.</para>
+          <para>is a script which provides information about an installed
+          copy of the <application>neon</application> library.</para>
 @z
 
 @x libsvn_*.{so,a}
           <para>are the support libraries used by the
           <application>Subversion</application> programs.</para>
 @y
-<para>are the support libraries used by the
-<application>Subversion</application> programs.</para>
+          <para>are the support libraries used by the
+          <application>Subversion</application> programs.</para>
 @z
 
 @x libneon.{so,a}
           <para>is used as a high-level interface to common
           HTTP and WebDAV methods.</para>
 @y
-<para>is used as a high-level interface to common
-HTTP and WebDAV methods.</para>
+          <para>is used as a high-level interface to common
+          HTTP and WebDAV methods.</para>
 @z
 
 @x mod_authz_svn.so
@@ -638,9 +618,8 @@ HTTP and WebDAV methods.</para>
           <application>Subversion</application> repository available to others over the
           Internet or an intranet.</para>
 @y
-<para>is a plug-in module for the <application>Apache</application>
-HTTP server, used to make a
-<application>Subversion</application> repository available to others over the
-Internet or an intranet.</para>
+          <para>is a plug-in module for the <application>Apache</application>
+          HTTP server, used to make a
+          <application>Subversion</application> repository available to others over the
+          Internet or an intranet.</para>
 @z
-

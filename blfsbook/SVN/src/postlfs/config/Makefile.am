@@ -1,11 +1,11 @@
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/config
 EXTRA_DIST = autofs.ch bootdisk.ch compressdoc.ch config.ch devices.ch \
 	etcshells.ch inputrc.ch logon.ch netfs.ch profile.ch random.ch \
-	skel.ch users.ch vimrc.ch
+	skel.ch users.ch vimrc.ch initdtools.ch
 srcdir = @srcdir@
 srcs = autofs.xml bootdisk.xml compressdoc.xml config.xml devices.xml \
 	etcshells.xml inputrc.xml logon.xml netfs.xml profile.xml random.xml \
-	skel.xml users.xml vimrc.xml
+	skel.xml users.xml vimrc.xml initdtools.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -29,3 +29,4 @@ random.xml: $(BOOKdir)/$@ $(srcdir)/random.ch
 skel.xml: $(BOOKdir)/$@ $(srcdir)/skel.ch
 users.xml: $(BOOKdir)/$@ $(srcdir)/users.ch
 vimrc.xml: $(BOOKdir)/$@ $(srcdir)/vimrc.ch
+initdtools.xml: $(BOOKdir)/$@ $(srcdir)/initdtools.ch
