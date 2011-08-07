@@ -183,13 +183,11 @@ class="filesystem">sysfs</systemitem> に登録されたデータは、ユーザ
 @x
       <title>Udev Bootscript</title>
 @y
-<title>
-Udev ブートスクリプト
-</title>
+      <title>Udev ブートスクリプト</title>
 @z
 
 @x
-      <para>The <command>S10udev</command> initscript takes care of creating
+      <para>The <command>/etc/rc.d/init.d/udev</command> initscript takes care of creating
       device nodes when Linux is booted. The script unsets the uevent handler
       from the default of <command>/sbin/hotplug</command>.  This is done
       because the kernel no longer needs to call out to an external binary.
@@ -209,26 +207,24 @@ Udev ブートスクリプト
       any devices that have already been registered and then waits for
       <command>udevd</command> to handle them.</para>
 @y
-<para>
-初期起動スクリプト <command>S10udev</command> は、Linux のブート時にデバイスノード生成を受け持ちます。
-このスクリプトは <command>/sbin/hotplug</command> のデフォルトから uevent ハンドラを取り除きます。
-この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
-そのかわりに、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
-そしてブートスクリプトが <filename class="directory">/lib/udev/devices</filename> 内にある静的なデバイスノードをすべて <filename class="directory">/dev</filename> にコピーします。
-デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
-あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
-<filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
-こうしてブートスクリプトは Udev デーモン、つまり <command>udevd</command> を起動し、それがどのような uevent であっても対応できるものとなります。
-最後にブートスクリプトはカーネルに対して、すべてのデバイスにおいて既に登録されている uevent を再起動させ、<command>udevd</command> がそれを待ち受けるものとなります。
-</para>
+      <para>
+      初期起動スクリプト <command>/etc/rc.d/init.d/udev</command> は、Linux のブート時にデバイスノード生成を受け持ちます。
+      このスクリプトは <command>/sbin/hotplug</command> のデフォルトから uevent ハンドラを取り除きます。
+      この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
+      そのかわりに、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
+      そしてブートスクリプトが <filename class="directory">/lib/udev/devices</filename> 内にある静的なデバイスノードをすべて <filename class="directory">/dev</filename> にコピーします。
+      デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
+      あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
+      <filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
+      こうしてブートスクリプトは Udev デーモン、つまり <command>udevd</command> を起動し、それがどのような uevent であっても対応できるものとなります。
+      最後にブートスクリプトはカーネルに対して、すべてのデバイスにおいて既に登録されている uevent を再起動させ、<command>udevd</command> がそれを待ち受けるものとなります。
+      </para>
 @z
 
 @x
       <title>Device Node Creation</title>
 @y
-<title>
-デバイスノードの生成
-</title>
+      <title>デバイスノードの生成</title>
 @z
 
 @x
@@ -354,26 +350,26 @@ USB (Universal Serial Bus) で MP3 プレイヤーを接続しているような
 @x
     <title>Problems with Loading Modules and Creating Devices</title>
 @y
-<title>
-モジュールロードとデバイス生成の問題
-</title>
+      <title>
+      モジュールロードとデバイス生成の問題
+      </title>
 @z
 
 @x
     <para>There are a few possible problems when it comes to automatically
     creating device nodes.</para>
 @y
-<para>
-自動的にデバイスが生成される際には、いくつか問題が発生します。
-</para>
+      <para>
+      自動的にデバイスが生成される際には、いくつか問題が発生します。
+      </para>
 @z
 
 @x
       <title>A kernel module is not loaded automatically</title>
 @y
-<title>
-カーネルモジュールが自動的にロードされない問題
-</title>
+      <title>
+      カーネルモジュールが自動的にロードされない問題
+      </title>
 @z
 
 @x
@@ -382,15 +378,15 @@ USB (Universal Serial Bus) で MP3 プレイヤーを接続しているような
       class="filesystem">sysfs</systemitem>. In other cases, one should
       arrange module loading by other means. With Linux-&linux-version;, Udev is
       known to load properly-written drivers for INPUT, IDE, PCI, USB, SCSI,
-      SERIO and FireWire devices.</para>
+      SERIO, and FireWire devices.</para>
 @y
-<para>
-Udev がモジュールをロードできるためには、バス固有のエイリアスがあって、バスドライバーが <systemitem
-class="filesystem">sysfs</systemitem> に対して適切なエイリアスを提供していることが必要です。
-そうでない場合は、別の手段を通じてモジュールのロードを仕組まなければなりません。
-Linux-&linux-version; においての Udev は、INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire の各デバイスに対するドライバーをロードします。
-それらのデバイスドライバーが適切に構築されているからです。
-</para>
+      <para>
+      Udev がモジュールをロードできるためには、バス固有のエイリアスがあって、バスドライバーが <systemitem
+      class="filesystem">sysfs</systemitem> に対して適切なエイリアスを提供していることが必要です。
+      そうでない場合は、別の手段を通じてモジュールのロードを仕組まなければなりません。
+      Linux-&linux-version; においての Udev は、INPUT、IDE、PCI、USB、SCSI、SERIO、FireWire の各デバイスに対するドライバーをロードします。
+      それらのデバイスドライバーが適切に構築されているからです。
+      </para>
 @z
 
 @x
@@ -449,9 +445,9 @@ Udev は <emphasis>snd-pcm-oss</emphasis> のような <quote>ラッパー (wrap
       <title>A kernel module is not loaded automatically, and Udev is not
       intended to load it</title>
 @y
-<title>
-カーネルモジュールが自動的にロードされず Udev もロードしようとしない問題
-</title>
+      <title>
+      カーネルモジュールが自動的にロードされず Udev もロードしようとしない問題
+      </title>
 @z
 
 @x
@@ -464,24 +460,24 @@ Udev は <emphasis>snd-pcm-oss</emphasis> のような <quote>ラッパー (wrap
       <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename>
       file. For example:</para>
 @y
-<para>
-<quote>ラッパー (wrapper)</quote> モジュールが単に他のモジュールの機能を拡張するだけのものであるなら (例えば <emphasis>snd-pcm-oss</emphasis> は <emphasis>snd-pcm</emphasis> の機能拡張を行うもので、OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため) <command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
-これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename> ファイル内にて <quote>install</quote> の記述行を加えることで実現します。
-</para>
+      <para>
+      <quote>ラッパー (wrapper)</quote> モジュールが単に他のモジュールの機能を拡張するだけのものであるなら (例えば <emphasis>snd-pcm-oss</emphasis> は <emphasis>snd-pcm</emphasis> の機能拡張を行うもので、OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため) <command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
+      これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename> ファイル内にて <quote>install</quote> の記述行を加えることで実現します。
+      </para>
 @z
 
 @x
       <para>If the module in question is not a wrapper and is useful by itself,
-      configure the <command>S05modules</command> bootscript to load this
+      configure the <command>modules</command> bootscript to load this
       module on system boot. To do this, add the module name to the
       <filename>/etc/sysconfig/modules</filename> file on a separate line.
       This works for wrapper modules too, but is suboptimal in that case.</para>
 @y
-<para>
-問題のモジュールがラッパーモジュールではなく、単独で利用できるものであれば、 <command>S05modules</command> ブートスクリプトを編集して、システム起動時にこのモジュールがロードされるようにします。
-これは <filename>/etc/sysconfig/modules</filename> ファイルにて、そのモジュール名を単独の行に記述することで実現します。
-この方法はラッパーモジュールに対しても動作しますが、この場合は次善策となります。
-</para>
+      <para>
+      問題のモジュールがラッパーモジュールではなく、単独で利用できるものであれば、 <command>modules</command> ブートスクリプトを編集して、システム起動時にこのモジュールがロードされるようにします。
+      これは <filename>/etc/sysconfig/modules</filename> ファイルにて、そのモジュール名を単独の行に記述することで実現します。
+      この方法はラッパーモジュールに対しても動作しますが、この場合は次善策となります。
+      </para>
 @z
 
 @x
@@ -594,15 +590,15 @@ Udev がデバイスを生成しない問題
       documentation or the documentation provided by the third party driver
       vendor). The static device node will be copied to
       <filename class="directory">/dev</filename> by the
-      <command>S10udev</command> bootscript.</para>
+      <command>udev</command> bootscript.</para>
 @y
-<para>
-Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
-これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
-したがって <filename>/lib/udev/devices</filename> において、適切なメジャー・マイナー番号を用いた静的なデバイスノードを生成してください。
-(カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
-この静的デバイスノードは、<command>S10udev</command> ブートスクリプトによって <filename class="directory">/dev</filename> にコピーされます。
-</para>
+      <para>
+      Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
+      これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
+      したがって <filename>/lib/udev/devices</filename> において、適切なメジャー・マイナー番号を用いた静的なデバイスノードを生成してください。
+      (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
+      この静的デバイスノードは、<command>udev</command> ブートスクリプトによって <filename class="directory">/dev</filename> にコピーされます。
+      </para>
 @z
 
 @x
@@ -623,7 +619,7 @@ Udev がデバイスノード生成のために必要となる情報を知るた
       See <xref linkend="ch-scripts-symlinks"/> and
       <xref linkend="ch-scripts-network"/> for examples.</para>
 @y
-<para>
+      <para>
 これは Udev の設計仕様に従って発生するもので、uevent の扱いとモジュールのロードが平行して行われるためです。
 このために命名順が予期できないものになります。
 これを <quote>固定的に</quote> することはできません。
@@ -645,28 +641,29 @@ Udev がデバイスノード生成のために必要となる情報を知るた
     <para>Additional helpful documentation is available at the following
     sites:</para>
 @y
-<para>
-さらに参考になるドキュメントが以下のサイトにあります：
-</para>
+    <para>
+    さらに参考になるドキュメントが以下のサイトにあります：
+    </para>
 @z
 
 @x
         <para>A Userspace Implementation of <systemitem class="filesystem">devfs</systemitem>
         <ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/></para>
 @y
-<para>
-<systemitem class="filesystem">devfs</systemitem> のユーザー空間での実装方法 <ulink url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/>
-</para>
+        <para>
+        <systemitem class="filesystem">devfs</systemitem> のユーザー空間での実装方法 <ulink
+        url="http://www.kroah.com/linux/talks/ols_2003_udev_paper/Reprint-Kroah-Hartman-OLS2003.pdf"/>
+        </para>
 @z
 
 @x
         <para>The <systemitem class="filesystem">sysfs</systemitem> Filesystem
         <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/></para>
 @y
-<para>
-<systemitem class="filesystem">sysfs</systemitem> ファイルシステム
-<ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/>
-</para>
+        <para>
+        <systemitem class="filesystem">sysfs</systemitem> ファイルシステム
+        <ulink url="http://www.kernel.org/pub/linux/kernel/people/mochel/doc/papers/ols-2005/mochel.pdf"/>
+        </para>
 @z
 
 @x
@@ -674,8 +671,8 @@ Udev がデバイスノード生成のために必要となる情報を知るた
         <ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
         </para>
 @y
-<para>
-より詳細なドキュメントへのリンク
-<ulink url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
-</para>
+        <para>
+        より詳細なドキュメントへのリンク <ulink
+        url="http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html"/>
+        </para>
 @z

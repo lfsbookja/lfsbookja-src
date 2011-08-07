@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>Configuring the network Script</title>
+  <title>General Network Configuration</title>
 @y
-  <title>ネットワークスクリプトの設定</title>
+  <title>全般的なネットワークの設定</title>
 @z
 
 @x
@@ -33,9 +33,9 @@
   <para>This section only applies if a network card is to be
   configured.</para>
 @y
-<para>
-本節はネットワークカードを設定する場合にのみ作業を行っていきます。
-</para>
+  <para>
+  本節はネットワークカードを設定する場合にのみ作業を行っていきます。
+  </para>
 @z
 
 @x
@@ -45,20 +45,32 @@
   symlinks from all run-level directories (<filename
   class="directory">/etc/rc.d/rc*.d</filename>).</para>
 @y
-<para>
-ネットワークカードを利用しない場合は、ネットワークカードに関連する設定ファイルを生成する必要はありません。
-その場合は、ランレベルに対するすべてのディレクトリ
-(<filename class="directory">/etc/rc.d/rc*.d</filename>)
-から <filename class="symlink">network</filename> シンボリックリンクを削除してください。
-</para>
+  <para>
+  ネットワークカードを利用しないのであれば、ネットワークカードに関する設定は、おそらくすべて不要なはずです。
+  そのような場合は、ランレベルディレクトリ (<filename
+  class="directory">/etc/rc.d/rc*.d</filename>) から、シンボリックリンク <filename class="symlink">network</filename> を削除してください。
+  </para>
 @z
 
 @x
     <title>Creating stable names for network interfaces</title>
 @y
-<title>
-ネットワークインターフェースに対する固定名称の作成
-</title>
+    <title>
+    ネットワークインターフェースに対する固定名称の作成
+    </title>
+@z
+
+@x
+    <para>If there is only one network interface in the system to be
+    configured, this section is optional, although it will never be wrong to do
+    it.  In many cases (e.g. a laptop with a wireless and a wired interface),
+    accomplishing the configuration in this section is necessary.</para>  
+@y
+    <para>
+    設定を行うべきネットワークインターフェースが、システム内にただ一つであるなら、本節に示す内容は任意となります。
+    設定を行ったとしても間違いにはなりません。
+    ラップトップＰＣでのワイヤレスネットワークやケーブル接続のネットワークにおいては、たいていは本節における設定が必要となるでしょう。
+    </para>  
 @z
 
 @x
@@ -72,38 +84,33 @@
     avoid this, Udev comes with a script and some rules to assign stable names
     to network cards based on their MAC address.</para>
 @y
-<para>
-Udev やモジュラー化されたネットワークドライバーにおいて、ネットワークインターフェースの番号の割振りは再起動により変更されます。
-ドライバーモジュールの読み込みが並列で行われるためランダムになるからです。
-例えば Intel 製と Realtek 製の二つのネットワークカードを持つコンピューターにおいて、
-Intel 製が <filename class="devicefile">eth0</filename>、
-Realtek 製が <filename class="devicefile">eth1</filename>
-となったとします。
-しかし時にはシステムの再起動によって番号割り振りが逆転することもあります。
-これを避けるには Udev ルールを生成して、ネットワークカードの MAC
-アドレスに基づいて固定的に名称を定める方法があります。
-</para>
+    <para>
+    Udev やモジュラー化されたネットワークドライバーにおいて、ネットワークインターフェースの番号の割振りは再起動により変更されます。
+    ドライバーモジュールの読み込みが並列で行われるためランダムになるからです。
+    例えば Intel 製と Realtek 製の二つのネットワークカードを持つコンピューターにおいて、
+    Intel 製が <filename class="devicefile">eth0</filename>、Realtek 製が <filename class="devicefile">eth1</filename> となったとします。
+    しかし時にはシステムの再起動によって番号割り振りが逆転することもあります。
+    これを避けるには Udev ルールを生成して、ネットワークカードの MAC アドレスに基づいて固定的に名称を定める方法があります。
+    </para>
 @z
 
 @x
     <para>Pre-generate the rules to ensure the same names get assigned to the
     same devices at every boot, including the first:</para>
 @y
-<para>
-ブートを繰り返しても特定のデバイスには同一の名前が割り当たるようなルール記述を試しに生成します。
-まずは以下を実行します。
-</para>
+    <para>
+    ブートを繰り返しても特定のデバイスには同一の名前が割り当たるようなルール記述を試しに生成します。
+    まずは以下を実行します。
+    </para>
 @z
 
 @x
     <para>Now, inspect the <filename>/etc/udev/rules.d/70-persistent-net.rules</filename>
     file, to find out which name was assigned to which network device:</para>
 @y
-<para>
-そして
-<filename>/etc/udev/rules.d/70-persistent-net.rules</filename>
-ファイルを見て、どのネットワークデバイスにどんな名前が割り当てられているかを確認します。
-</para>
+    <para>
+    そして <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> ファイルを見て、どのネットワークデバイスにどんな名前が割り当てられているかを確認します。
+    </para>
 @z
 
 @x
@@ -115,14 +122,14 @@ Realtek 製が <filename class="devicefile">eth1</filename>
     interface; this information is only for reference. The second line is the
     Udev rule that matches this NIC and actually assigns it a name.</para>
 @y
-<para>
-このファイルの先頭にはコメントが数行あり、続いてそれぞれの NIC に対する行があります。
-NIC ごとの記述では一行めがコメントで、そのハードウェア ID が記されています。
-(PCI カードである場合、PCI ベンダとデバイス ID が記述されます。)
-またドライバーが検出できている場合には、カッコ書きでドライバー名も示されます。
-ハードウェア ID もドライバー名も、インターフェースに対して与えられる名称とは無関係で、単に分かりやすくするために記されているにすぎません。
-二行めは Udev ルールであり、その NIC を定め、名称を割り当てている記述です。
-</para>
+    <para>
+    このファイルの先頭にはコメントが数行あり、続いてそれぞれの NIC に対する行があります。
+    NIC ごとの記述では一行めがコメントで、そのハードウェア ID が記されています。
+    (PCI カードである場合、PCI ベンダとデバイス ID が記述されます。)
+    またドライバーが検出できている場合には、カッコ書きでドライバー名も示されます。
+    ハードウェア ID もドライバー名も、インターフェースに対して与えられる名称とは無関係で、単に分かりやすくするために記されているにすぎません。
+    二行めは Udev ルールであり、その NIC を定め、名称を割り当てている記述です。
+    </para>
 @z
 
 @x
@@ -130,20 +137,20 @@ NIC ごとの記述では一行めがコメントで、そのハードウェア 
     optional whitespace. This rule's keys and an explanation of each of them
     are as follows:</para>
 @y
-<para>
-Udev ルールはいくつかのキー項目で構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
-このキー項目とその内容は以下のようになります。
-</para>
+    <para>
+    Udev ルールはいくつかのキー項目で構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
+    このキー項目とその内容は以下のようになります。
+    </para>
 @z
 
 @x
         <para><literal>SUBSYSTEM=="net"</literal> - This tells Udev to ignore
         devices that are not network cards.</para>
 @y
-<para>
-<literal>SUBSYSTEM=="net"</literal> - 
-ネットワークカードではないデバイスは無視することを指示します。
-</para>
+        <para>
+        <literal>SUBSYSTEM=="net"</literal> - 
+        ネットワークカードではないデバイスは無視することを指示します。
+        </para>
 @z
 
 @x
@@ -151,11 +158,11 @@ Udev ルールはいくつかのキー項目で構成され、それぞれがカ
         rule for a uevent that isn't an add ("remove" and "change" uevents also
         happen, but don't need to rename network interfaces).</para>
 @y
-<para>
-<literal>ACTION=="add"</literal> - 
-uevent の add イベントではないものは無視することを指示します。
-(uevent の "remove" イベントや "change" イベントも発生しますが、これらはネットワークインターフェースの名前を変更するものではありません。)
-</para>
+        <para>
+        <literal>ACTION=="add"</literal> - 
+        uevent の add イベントではないものは無視することを指示します。
+        (uevent の "remove" イベントや "change" イベントも発生しますが、これらはネットワークインターフェースの名前を変更するものではありません。)
+        </para>
 @z
 
 @x
@@ -164,22 +171,22 @@ uevent の add イベントではないものは無視することを指示し�
         not have drivers). These sub-interfaces are skipped because the name
         that would be assigned would collide with their parent devices.</para>
 @y
-<para>
-<literal>DRIVERS=="?*"</literal> - 
-Udev に対して VLAN やブリッジサブインターフェース (bridge sub-interfaces) を無視することを指示します。
-(サブインターフェースにはドライバーがないためです。)
-サブインターフェースに名前が割り当てられたとすると、親デバイスの名前と衝突してしまうため、サブインターフェースの名前割り当てはスキップされます。
-</para>
+        <para>
+        <literal>DRIVERS=="?*"</literal> - 
+        Udev に対して VLAN やブリッジサブインターフェース (bridge sub-interfaces) を無視することを指示します。
+        (サブインターフェースにはドライバーがないためです。)
+        サブインターフェースに名前が割り当てられたとすると、親デバイスの名前と衝突してしまうため、サブインターフェースの名前割り当てはスキップされます。
+        </para>
 @z
 
 @x
         <para><literal>ATTR{address}</literal> - The value of this key is the
         NIC's MAC address.</para>
 @y
-<para>
-<literal>ATTR{address}</literal> - 
-このキーの値は NIC の MAC アドレスを表します。
-</para>
+        <para>
+        <literal>ATTR{address}</literal> - 
+        このキーの値は NIC の MAC アドレスを表します。
+        </para>
 @z
 
 @x
@@ -189,12 +196,12 @@ Udev に対して VLAN やブリッジサブインターフェース (bridge sub
         skipped for the same reason that VLAN and bridge sub-interfaces are
         skipped: there would be a name collision otherwise.</para>
 @y
-<para>
-<literal>ATTR{type}=="1"</literal> - 
-特定のワイヤレスドライバーでは複数の仮想インターフェースが生成されますが、そのうちの主となるインターフェースにのみルールが合致するようにします。
-二つめ以降のインターフェースに対する処理は、VLAN やブリッジサブインターフェースがスキップされるのと同じくスキップされます。
-名前割り当てが行われてしまうと名前衝突を起こすためです。
-</para>
+        <para>
+        <literal>ATTR{type}=="1"</literal> - 
+        特定のワイヤレスドライバーでは複数の仮想インターフェースが生成されますが、そのうちの主となるインターフェースにのみルールが合致するようにします。
+        二つめ以降のインターフェースに対する処理は、VLAN やブリッジサブインターフェースがスキップされるのと同じくスキップされます。
+        名前割り当てが行われてしまうと名前衝突を起こすためです。
+        </para>
 @z
 
 @x
@@ -205,26 +212,25 @@ Udev に対して VLAN やブリッジサブインターフェース (bridge sub
         this key will allow Udev to tell them apart.  This is generally not
         necessary for most Linux From Scratch users, but does not hurt.</para>
 @y
-<para>
-<literal>KERNEL=="eth*"</literal> - 
-複数のネットワークインターフェースを有するマシンを取り扱うためのルールを加えます。
-このルールでは全インターフェースに同一の MAC アドレスが用いられます。
-(PS3 などがそういったマシンになります。)
-各インターフェースに対して個別の命名が行われたとすると
-Udev はそれぞれを別のものとして取り扱います。
-これはたいていの Linux From Scratch ユーザーにとって必要ありません。
-ただそうなったとしても問題はありません。
-</para>
+        <para>
+        <literal>KERNEL=="eth*"</literal> - 
+        複数のネットワークインターフェースを有するマシンを取り扱うためのルールを加えます。
+        このルールでは全インターフェースに同一の MAC アドレスが用いられます。
+        (PS3 などがそういったマシンになります。)
+        各インターフェースに対して個別の命名が行われたとすると Udev はそれぞれを別のものとして取り扱います。
+        これはたいていの Linux From Scratch ユーザーにとって必要ありません。
+        ただそうなったとしても問題はありません。
+        </para>
 @z
 
 @x
         <para><literal>NAME</literal> - The value of this key is the name that
         Udev will assign to this interface.</para>
 @y
-<para>
-<literal>NAME</literal> - 
-Udev がインターフェースに対して割り当てる名前をキーの値として指定します。
-</para>
+        <para>
+        <literal>NAME</literal> - 
+        Udev がインターフェースに対して割り当てる名前をキーの値として指定します。
+        </para>
 @z
 
 @x
@@ -233,90 +239,104 @@ Udev がインターフェースに対して割り当てる名前をキーの値
     proceeding, and be sure to use that <literal>NAME</literal> value when
     creating your configuration files below.</para>
 @y
-<para>
-<literal>NAME</literal> に定義される値が重要です。
-どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
-そして以下において設定ファイルを生成する際には
-<literal>NAME</literal> に定義されている名称を利用してください。
-</para>
+    <para>
+    <literal>NAME</literal> に定義される値が重要です。
+    どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
+    そして以下において設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
+    </para>
 @z
 
 @x
     <title>Creating Network Interface Configuration Files</title>
 @y
-<title>
-ネットワークインターフェースに対する設定ファイルの生成
-</title>
+    <title>
+    ネットワークインターフェースに対する設定ファイルの生成
+    </title>
 @z
 
 @x
     <para>Which interfaces are brought up and down by the network script
-    depends on the files and directories in the <filename
-    class="directory">/etc/sysconfig/network-devices</filename> hierarchy.
-    This directory should contain a sub-directory for each interface to be
-    configured, such as <filename>ifconfig.xyz</filename>, where
-    <quote>xyz</quote> is a network interface name. Inside this directory
-    would be files defining the attributes to this interface, such as its IP
-    address(es), subnet masks, and so forth.</para>
+    depends on the files in <filename
+    class="directory">/etc/sysconfig/</filename>.  This directory should
+    contain a file for each interface to be configured, such as
+    <filename>ifconfig.xyz</filename>, where <quote>xyz</quote> is
+    meaningful to the administrator such as the device name (e.g. eth0).
+    Inside this file are attributes to this interface, such as its IP
+    address(es), subnet masks, and so forth.  It is necessary that 
+    the stem of the filename be <emphasis>ifconfig</emphasis>.</para>
 @y
-<para>
-どのネットワークインターフェースを起動させるかは
-<filename class="directory">/etc/sysconfig/network-devices</filename>
-ディレクトリ配下のネットワークスクリプトにより設定します。
-そのディレクトリには、設定を行ないたい各ネットワークインターフェースに対するサブディレクトリを準備します。
-例えばネットワークインターフェースの名が <quote>xyz</quote>
-である場合 <filename>ifconfig.xyz</filename> というサブディレクトリとします。
-このサブディレクトリ内にはネットワークインターフェースの属性、つまり IP
-アドレスやサブネットマスクなどを定義したファイルを置きます。
-</para>
+    <para>
+    どのネットワークインターフェースが起動したり停止したりするかは <filename
+    class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルの指定によります。
+    このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイルを準備します。
+    例えばネットワークインターフェースの名が <quote>xyz</quote> である場合 <filename>ifconfig.xyz</filename> というファイルとします。
+    <quote>xyz</quote> は管理者が識別できるデバイス名、例えば eth0 などとなります。
+    このファイルにはネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
+    ファイルベース名は <emphasis>ifconfig</emphasis> とすることが必要です。
+    </para>
 @z
 
 @x
-    <para>The following command creates a sample <filename>ipv4</filename>
-    file for the <emphasis>eth0</emphasis> device:</para>
+    <para>The following command creates a sample file for the
+    <emphasis>eth0</emphasis> device with a static IP address:</para>
 @y
-<para>
-以下のコマンドは、例として <emphasis>eth0</emphasis>
-デバイスに対しての <filename>ipv4</filename> ファイルを生成するものです。
-</para>
+    <para>
+    以下のコマンドは、<emphasis>eth0</emphasis> デバイスに対して固定 IP アドレスを設定するファイルを生成する例です。
+    </para>
 @z
 
 @x
     <para>The values of these variables must be changed in every file to match
-    the proper setup. If the <envar>ONBOOT</envar> variable is set to
-    <quote>yes</quote> the network script will bring up the Network Interface
-    Card (NIC) during booting of the system. If set to anything but
-    <quote>yes</quote> the NIC will be ignored by the network script and not
-    be brought up.</para>
+    the proper setup.</para>
 @y
-<para>
-各変数の値は各ファイルごとに適切なものに設定してください。
-<envar>ONBOOT</envar> 変数を <quote>yes</quote>
-に設定している場合、システム起動時にネットワークスクリプトが実行され、ネットワークインターフェースカード
-(network interface card; NIC) を有効にします。
-<quote>yes</quote> 以外に設定している場合、ネットワークスクリプトは NIC
-に対して何も行わないため NIC は有効にはなりません。
-</para>
+    <para>
+    各変数の値は各ファイルごとに適切なものに設定してください。
+    </para>
+@z
+
+@x
+    <para>If the <envar>ONBOOT</envar> variable is set to <quote>yes</quote> the
+    network script will bring up the Network Interface Card (NIC) during
+    booting of the system. If set to anything but <quote>yes</quote> the NIC
+    will be ignored by the network script and not be automatically brought up.
+    The interface can be manually started or stopped with the
+    <command>ifup</command> and <command>ifdown</command> commands.</para>
+@y
+    <para>
+    <envar>ONBOOT</envar> 変数を <quote>yes</quote> に設定した場合、システム起動時にネットワークスクリプトがネットワークインターフェースカード (network
+    interface card; NIC) を起動します。
+    <quote>yes</quote> 以外に設定すると、ネットワークスクリプトからの NIC の起動がなくなり、NIC は自動では起動しなくなります。
+    ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
+    </para>
+@z
+
+@x
+    <para>The <envar>IFACE</envar> variable defines the interface name,
+    for example, eth0.  It is required for all network device configuration 
+    files. </para>
+@y
+    <para>
+    <envar>IFACE</envar> 変数は、インターフェース名を定義します。
+    例えば eth0 といったものです。
+    これはネットワークデバイスの設定を行うすべてのファイルにて必要な定義です。
+    </para>
 @z
 
 @x
     <para>The <envar>SERVICE</envar> variable defines the method used for
     obtaining the IP address. The LFS-Bootscripts package has a modular IP
     assignment format, and creating additional files in the <filename
-    class="directory">/etc/sysconfig/network-devices/services</filename>
-    directory allows other IP assignment methods. This is commonly used for
-    Dynamic Host Configuration Protocol (DHCP), which is addressed in the
-    BLFS book.</para>
+    class="directory">/lib/boot/</filename> directory allows other IP
+    assignment methods. This is commonly used for Dynamic Host Configuration
+    Protocol (DHCP), which is addressed in the BLFS book.</para>
 @y
-<para>
-<envar>SERVICE</envar> 変数はIP アドレスの取得方法を指定します。
-LFS-ブートスクリプトは IP アドレス割り当て方法をモジュール化しています。
-そして <filename class="directory">/etc/sysconfig/network-devices/services</filename>
-ディレクトリに追加でファイルを生成すれば、他の IP アドレス割り当て方法をとることもできます。
-通常は DHCP (Dynamic Host Configuration Protocol)
-において利用されるものです。
-これについては BLFS ブックにて説明しています。
-</para>
+    <para>
+    <envar>SERVICE</envar> 変数はIP アドレスの取得方法を指定します。
+    LFS-ブートスクリプトは IP アドレス割り当て方法をモジュール化しています。
+    そして <filename class="directory">/lib/boot/</filename> ディレクトリに追加でファイルを生成すれば、他の IP アドレス割り当て方法をとることもできます。
+    通常は DHCP (Dynamic Host Configuration Protocol) において利用されるものです。
+    これについては BLFS ブックにて説明しています。
+    </para>
 @z
 
 @x
@@ -324,10 +344,10 @@ LFS-ブートスクリプトは IP アドレス割り当て方法をモジュー
     gateway IP address, if one is present. If not, then comment out the
     variable entirely.</para>
 @y
-<para>
-<envar>GATEWAY</envar> 変数は、デフォルトゲートウェイが存在するならその IP アドレスを指定します。
-存在しない場合は、の変数設定を行っている一行をコメントにします。
-</para>
+    <para>
+    <envar>GATEWAY</envar> 変数は、デフォルトゲートウェイが存在するならその IP アドレスを指定します。
+    存在しない場合は、の変数設定を行っている一行をコメントにします。
+    </para>
 @z
 
 @x
@@ -340,27 +360,23 @@ LFS-ブートスクリプトは IP アドレス割り当て方法をモジュー
     In this example (PREFIX=24), the netmask is 255.255.255.0. Adjust the
     <envar>PREFIX</envar> variable according to your specific subnet.</para>
 @y
-<para>
-<envar>PREFIX</envar> 変数はサブネットマスクにて用いられるビット数を指定します。
-IP アドレスの各オクテット (octet) は 8 ビットで構成されます。
-例えばサブネットマスクが 255.255.255.0 である場合、ネットワーク番号
-(network number) を特定するには最初の三つのオクテット (24ビット)
-が用いられることを意味します。
-もし 255.255.255.240 であるなら、最初の 28 ビットということになります。
-24 ビットを超えるプレフィックスは、通常は DSL
-やケーブルを用いたインターネットサービスプロバイダー
-(Internet Service Provider; ISP) がよく利用しています。
-上の例 (PREFIX=24) では、サブネットマスクは 255.255.255.0 となります。
-<envar>PREFIX</envar> 変数の値は、ネットワーク環境に応じて変更してください。
-</para>
+    <para>
+    <envar>PREFIX</envar> 変数はサブネットマスクにて用いられるビット数を指定します。
+    IP アドレスの各オクテット (octet) は 8 ビットで構成されます。
+    例えばサブネットマスクが 255.255.255.0 である場合、ネットワーク番号 (network number) を特定するには最初の三つのオクテット (24ビット) が用いられることを意味します。
+    もし 255.255.255.240 であるなら、最初の 28 ビットということになります。
+    24 ビットを超えるプレフィックスは、通常は DSL やケーブルを用いたインターネットサービスプロバイダー (Internet Service Provider; ISP) がよく利用しています。
+    上の例 (PREFIX=24) では、サブネットマスクは 255.255.255.0 となります。
+    <envar>PREFIX</envar> 変数の値は、ネットワーク環境に応じて変更してください。
+    </para>
 @z
 
 @x
     <title>Creating the /etc/resolv.conf File</title>
 @y
-<title>
-/etc/resolv.conf ファイルの生成
-</title>
+    <title>
+    /etc/resolv.conf ファイルの生成
+    </title>
 @z
 
 @x
@@ -372,15 +388,23 @@ IP アドレスの各オクテット (octet) は 8 ビットで構成されま�
     <filename>/etc/resolv.conf</filename>. Create the file by running the
     following:</para>
 @y
-<para>
-インターネットへの接続を行う場合には、ドメイン名サービス
-(domain name service; DNS) による名前解決を必要とします。
-これによりインターネットドメイン名を IP アドレスに、あるいはその逆の変換を行います。
-これを行うには ISP やネットワーク管理者が指定する
-DNS サーバーの割り振り IP アドレスを <filename>/etc/resolv.conf</filename>
-ファイルに設定します。
-以下のコマンドによりこのファイルを生成します。
-</para>
+    <para>
+    インターネットへの接続を行う場合には、ドメイン名サービス (domain name service; DNS) による名前解決を必要とします。
+    これによりインターネットドメイン名を IP アドレスに、あるいはその逆の変換を行います。
+    これを行うには ISP やネットワーク管理者が指定する DNS サーバーの割り振り IP アドレスを <filename>/etc/resolv.conf</filename> ファイルに設定します。
+    以下のコマンドによりこのファイルを生成します。
+    </para>
+@z
+
+@x
+    <para>The <varname>domain</varname> statement can be omitted
+    or replaced with a <varname>search</varname> statement.  See the man page for
+    resolv.conf for more details.</para>
+@y
+    <para>
+    <varname>domain</varname> ステートメントは省略するか、<varname>search</varname> ステートメントで代用することが可能です。
+    詳しくは resolv.conf の man ページを参照してください。
+    </para>
 @z
 
 @x
@@ -391,14 +415,16 @@ DNS サーバーの割り振り IP アドレスを <filename>/etc/resolv.conf</f
     second <emphasis>nameserver</emphasis> line from the file. The IP address
     may also be a router on the local network.</para>
 @y
-<para>
-<replaceable>&lt;IP address of the nameserver&gt;</replaceable>
-(ネームサーバーの IP アドレス) の部分には、
-DNS が割り振る適切な IP アドレスを記述します。
-IP アドレスの設定は複数行う場合もあります。
-(代替構成を必要とするなら二次サーバーを設けることでしょう。)
-一つのサーバーのみで十分な場合は、二つめの <emphasis>nameserver</emphasis>
-の行は削除します。
-ローカルネットワークにおいてはルーターの IP アドレスを設定することになるでしょう。
-</para>
+    <para>
+    <replaceable>&lt;IP address of the nameserver&gt;</replaceable> (ネームサーバーの IP アドレス) の部分には、DNS が割り振る適切な IP アドレスを記述します。
+    IP アドレスの設定は複数行う場合もあります。(代替構成を必要とするなら二次サーバーを設けることでしょう。)
+    一つのサーバーのみで十分な場合は、二つめの <emphasis>nameserver</emphasis> の行は削除します。
+    ローカルネットワークにおいてはルーターの IP アドレスを設定することになるでしょう。
+    </para>
+@z
+
+@x
+    <note><para>The Google Public IPv4 DNS addresses are 8.8.8.8 and 8.8.4.4.</para></note>
+@y
+    <note><para>Google Public IPv4 DNS アドレスは 8.8.8.8 と 8.8.4.4 です。</para></note>
 @z

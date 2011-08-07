@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -72,15 +81,15 @@ IP アドレスの例は 192.168.11.1 となります。
 @x
   <para>Create the  <filename>/etc/hosts</filename> file by running:</para>
 @y
-<para>
-以下のようにして <filename>/etc/hosts</filename> ファイルを生成します。
-</para>
+  <para>
+  以下のようにして <filename>/etc/hosts</filename> ファイルを生成します。
+  </para>
 @z
 
 @x
   <para>The <replaceable>&lt;192.168.1.1&gt;</replaceable> and
   <replaceable>&lt;HOSTNAME.example.org&gt;</replaceable>
-  values need to be changed for specific users or requirements (if
+  values need to be changed for specific uses or requirements (if
   assigned an IP address by a network/system administrator and the
   machine will be connected to an existing network). The optional alias
   name(s) can be omitted.</para>

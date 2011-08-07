@@ -189,14 +189,14 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>Bc, Cpio, Ed, Fcrontab, PAM, Sendmail (or Postfix or Exim)
-          </para>
+          <para>Bc, Cpio, Ed, Fcrontab, Initd-tools, PAM, 
+          Sendmail (or Postfix or Exim) </para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>Bc, Cpio, Ed, Fcrontab, PAM, Sendmail (あるいは Postfix または Exim)
-          </para>
+          <para>Bc, Cpio, Ed, Fcrontab, Initd-tools, PAM, 
+          Sendmail (または Postfix または Exim) </para>
         </listitem>
 @z
 
@@ -274,13 +274,13 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>At, Batch, Install_initd, Lsb_release, Remove_initd, Test
+          <para>At, Batch, Lsb_release
           </para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>At, Batch, Install_initd, Lsb_release, Remove_initd, Test
+          <para>At, Batch, Lsb_release
           </para>
         </listitem>
 @z

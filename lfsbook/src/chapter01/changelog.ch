@@ -48,6 +48,98 @@
 @z
 
 @x
+      <para>2011-08-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Minor corrections to bootscripts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-08-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトを若干変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Udev-173. Fixes
+          <ulink url="&lfs-ticket-root;2908">#2908</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.0. Fixes
+          <ulink url="&lfs-ticket-root;2905">#2905</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add /etc/sysconfig to Creating Directories.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update boot logging to remove terminal escape
+          sequences.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Udev-173 へのアップデート。
+          <ulink url="&lfs-ticket-root;2908">#2908</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;2905">#2905</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ディレクトリの生成の節にて /etc/sysconfig を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ブートログにて端末エスケープシーケンスを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Rewrite bootscripts and Chaper 7.</para>
+          <itemizedlist>
+             <listitem><para>Make scripts compatible with initd format (see BLFS).</para></listitem>
+             <listitem><para>Move functions and services to /lib/boot.</para></listitem>
+             <listitem><para>Log boot messages to /run/var/bootlog.</para></listitem>
+             <listitem><para>Move ifup/ifdown to /sbin.</para></listitem>
+             <listitem><para>Move network device configuration files to
+                             /etc/sysconfig/ifconfig.*.</para></listitem>
+             <listitem><para>Add IFACE variable to network configuration files.
+                             </para></listitem>
+             <listitem><para>Read optional configuration file /etc/sysconfig/init_params
+                             in functions.</para></listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-08-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第7章にてブートスクリプトを変更。</para>
+          <itemizedlist>
+             <listitem><para>各スクリプトを initd フォーマット互換に (BLFS 参照)。</para></listitem>
+             <listitem><para>各種の関数やサービスを /lib/boot に移動。</para></listitem>
+             <listitem><para>ブートログを /run/var/bootlog へ出力。</para></listitem>
+             <listitem><para>ifup/ifdown を /sbin に移動。</para></listitem>
+             <listitem><para>ネットワークデバイスの設定ファイルを /etc/sysconfig/ifconfig.* へ移動。</para></listitem>
+             <listitem><para>ネットワーク設定ファイルにて IFACE 変数を追加。</para></listitem>
+             <listitem><para>各関数にて、オプション設定ファイル /etc/sysconfig/init_params を読み込むものに。</para></listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-07-17</para>
       <itemizedlist>
         <listitem>

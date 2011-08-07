@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-08-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/sysvinit.ch,
+          src/chapter07/{bootscripts.ch, hostname.ch, hosts.ch, introduction.ch, network.ch, setclock.ch, sysklogd.ch, udev.ch, usage.ch},
+          SVN-201100803, r9580 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-07-18</para>
       <itemizedlist>
         <listitem>

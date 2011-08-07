@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -29,16 +38,12 @@
   particular Linux distribution, they should work the same in LFS too. LFS has its
   own way of doing things, but it respects generally accepted standards.</para>
 @y
-<para>
-Linux では SysVinit という特別なブート機能があり
-<emphasis>ランレベル (run-levels)</emphasis>
-という考え方に基づいています。
-ランレベルの扱いはシステムによって異なりますので、ある
-Linux において動作しているからといって
-LFS においても全く同じように動くわけではありません。
-LFS では独自の方法でこれを取り入れることにします。
-ただし標準として受け入れられるような方法を取ります。
-</para>
+  <para>
+  Linux では SysVinit という特別なブート機能があり <emphasis>ランレベル (run-levels)</emphasis> という考え方に基づいています。
+  ランレベルの扱いはシステムによって異なりますので、ある Linux において動作しているからといって LFS においても全く同じように動くわけではありません。
+  LFS では独自の方法でこれを取り入れることにします。
+  ただし標準として受け入れられるような方法を取ります。
+  </para>
 @z
 
 @x
@@ -50,15 +55,14 @@ LFS では独自の方法でこれを取り入れることにします。
   perform when it starts up. The default run-level is 3. Here are the
   descriptions of the different run-levels as they are implemented:</para>
 @y
-<para>
-SysVinit (これ以降は <quote>init</quote> と表現します)
-はランレベルという仕組みにより動作します。
-ランレベルには7つのレベル (0 から 6) があります。
-(実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
-詳しくは <filename>init(8)</filename> を参照してください。)
-各レベルは、コンピュータの起動時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
-ランレベルの詳細を以下に説明します。
-</para>
+  <para>
+  SysVinit (これ以降は <quote>init</quote> と表現します) はランレベルという仕組みにより動作します。
+  ランレベルには7つのレベル (0 から 6) があります。
+  (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
+  詳しくは <filename>init(8)</filename> を参照してください。)
+  各レベルは、コンピューターの起動時における処理動作に対応づいており、デフォルトのランレベルは 3 となっています。
+  ランレベルの詳細を以下に説明します。
+  </para>
 @z
 
 @x
@@ -70,17 +74,106 @@ SysVinit (これ以降は <quote>init</quote> と表現します)
 5: same as 4, it is usually used for GUI login (like X's <command>xdm</command> or KDE's <command>kdm</command>)
 6: reboot the computer</literallayout>
 @y
-<literallayout>0: コンピュータの停止
+<literallayout>0: コンピューターの停止
 1: シングルユーザーモード
 2: マルチユーザーモード、ネットワークなし
 3: マルチユーザーモード、ネットワークあり
 4: 将来の拡張用として予約されています。 3 と同じものとして扱われます。
 5: 4 と同様。通常 (X の <command>xdm</command> や KDE の <command>kdm</command> のような) GUI ログインに用いられます。
-6: コンピュータの再起動</literallayout>
+6: コンピューターの再起動</literallayout>
 @z
 
 @x
-  <para>The command used to change run-levels is <command>init
+  <title>Configuring Sysvinit</title>
+@y
+  <title>Sysvinit の設定</title>
+@z
+
+@x
+  <indexterm zone="conf-sysvinit">
+    <primary sortas="a-Sysvinit">Sysvinit</primary>
+    <secondary>configuring</secondary>
+  </indexterm>
+@y
+  <indexterm zone="conf-sysvinit">
+    <primary sortas="a-Sysvinit">Sysvinit</primary>
+    <secondary>設定</secondary>
+  </indexterm>
+@z
+
+@x
+  <para>During the kernel initialization, the first program that is run
+  is either specified on the command line or, by default 
+  <command>init</command>.  This program reads the initialization file
+  <filename>/etc/inittab</filename>.  Create this file with:</para>
+@y
+  <para>
+  カーネルの初期化にあたって最初に起動するプログラムは、コマンドラインから指定されるものか、あるいはデフォルトでは <command>init</command> です。
+  このプログラムは初期設定ファイル <filename>/etc/inittab</filename> を読み込みます。
+  そのファイルは以下のようにして生成します。
+  </para>
+@z
+
+@x
+  <para>An explanation of this initialization file is in the man page for
+  <emphasis>inittab</emphasis>.  For LFS, the key command that is run is
+  <command>rc</command>. The intialization file above will instruct
+  <command>rc</command> to run all the scripts starting with an S in the
+  <filename class="directory">/etc/rc.d/rcsysinit.d</filename> directory
+  followed by all the scripts starting with an S in the <filename
+  class="directory">/etc/rc.d/rc?.d</filename> directory where the question
+  mark is specified by the initdefault value.</para>
+@y
+  <para>
+  この初期化ファイルに関することは <emphasis>inittab</emphasis> の man ページにて説明されています。
+  LFS において重要となるコマンドは <command>rc</command> です。
+  初期化ファイルは <command>rc</command> コマンドに対してスクリプトの実行を指示します。
+  実行されるスクリプトは <filename
+  class="directory">/etc/rc.d/rcsysinit.d</filename> ディレクトリにて S で始まるスクリプトです。
+  そしてその後に <filename
+  class="directory">/etc/rc.d/rc?.d</filename> ディレクトリにて、同じく S で始まるスクリプトも実行されます。
+  ここで ? は、初期化を行う際の数値を示します。
+  </para>
+@z
+
+@x
+  <para>As a convenience, the <command>rc</command> script reads a library of
+  functions in <filename class="directory">/lib/boot/functions</filename>.
+  This library also reads an optional configuration file,
+  <filename>/etc/sysconfig/init_params</filename>.  Any of the system
+  configuration file parameters described in subsequent sections can be
+  alternatively placed in this file allowing consolidation of all system
+  parameters in thsi one file.</para>
+@y
+  <para>
+  扱いやすさを考慮して、<command>rc</command> スクリプトは <filename
+  class="directory">/lib/boot/functions</filename> ディレクトリにあるライブラリ群を読み込む形にしています。
+  このライブラリは、さらにオプションで設定ファイル <filename>/etc/sysconfig/init_params</filename> を読み込みます。
+  本節以降に説明している、各種の設定ファイルにおけるパラメーターは、上のファイルにて設定することもできます。
+  上のファイルは、システム上のパラメーターを１つのファイルに集約して設定できるようになっています。
+  </para>
+@z
+
+@x
+  <para>As a debugging convenience, the functions script also logs all output
+  to <filename>/run/var/bootlog</filename>.  Since the <filename
+  class="directory">/run</filename> directory is a tmpfs, this file is not
+  persistent across boots.</para>
+@y
+  <para>
+  デバッグがしやすいように、各ライブラリの関数スクリプトは、すべて <filename>/run/var/bootlog</filename> にログを出力するようになっています。
+  <filename class="directory">/run</filename> ディレクトリは tmpfs であることから、<filename>/run/var/bootlog</filename> ファイルはブートの前後で失われてしまう点に注意してください。
+  </para>
+@z
+
+@x
+  <title>Changing Run Levels</title>
+@y
+  <title>ランレベルの変更</title>
+@z
+
+@x
+  <para>Changing run-levels is done with <command>init
   <replaceable>&lt;runlevel&gt;</replaceable></command>, where
   <replaceable>&lt;runlevel&gt;</replaceable> is the target run-level. For example, to
   reboot the computer, a user could issue the <command>init 6</command> command,
@@ -88,17 +181,13 @@ SysVinit (これ以降は <quote>init</quote> と表現します)
   <command>init 0</command> is an alias for the <command>halt</command>
   command.</para>
 @y
-<para>
-ランレベルを変更するには
-<command>init <replaceable>&lt;runlevel&gt;</replaceable></command>
-を実行します。
-<replaceable>&lt;runlevel&gt;</replaceable>
-はランレベルを示す数字です。
-例えばコンピュータを再起動するには
-<command>init 6</command> コマンドを実行します。
-これは <command>reboot</command> コマンドのエイリアスとなっています。
-同様に <command>init 0</command> は <command>halt</command> のエイリアスです。
-</para>
+  <para>
+  ランレベルを変更するには <command>init <replaceable>&lt;runlevel&gt;</replaceable></command> を実行します。
+  <replaceable>&lt;runlevel&gt;</replaceable> はランレベルを示す数字です。
+  例えばコンピューターを再起動するには <command>init 6</command> コマンドを実行します。
+  これは <command>reboot</command> コマンドのエイリアスとなっています。
+  同様に <command>init 0</command> は <command>halt</command> のエイリアスです。
+  </para>
 @z
 
 @x
@@ -114,28 +203,23 @@ SysVinit (これ以降は <quote>init</quote> と表現します)
   <command>init</command> switches to another run-level, the appropriate services
   are either started or stopped, depending on the runlevel chosen.</para>
 @y
-<para>
-<filename class="directory">/etc/rc.d</filename>
-ディレクトリの配下には複数のサブディレクトリがあります。
-そのディレクトリ名は <filename class="directory">rc?.d</filename>
-のようになっています。
-(? はランレベルの数字を表します。)
-また <filename class="directory">rcsysinit.d</filename>
-というサブディレクトリもあります。
-それらサブディレクトリ内には数多くのシンボリックリンクがあります。
-シンボリックリンクの先頭一文字には <emphasis>K</emphasis> や <emphasis>S</emphasis>
-が用いられ、続いて二桁の数値文字がつけられています。
-K はサービスの停止 (kill)、S はサービスの起動 (start) を意味します。
-二桁の数字はスクリプトの起動順を定めるもので、00 から 99 までが割振られ、小さな数字から順に実行されます。
-<command>init</command>
-コマンドによってランレベルが変更される時は、そのランレベルに応じて必要なサービスが起動するか停止することになります。
-</para>
+  <para>
+  <filename class="directory">/etc/rc.d</filename> ディレクトリの配下には複数のサブディレクトリがあります。
+  そのディレクトリ名は <filename class="directory">rc?.d</filename> のようになっています。
+  (? はランレベルの数字を表します。)
+  また <filename class="directory">rcsysinit.d</filename> というサブディレクトリもあります。
+  それらサブディレクトリ内には数多くのシンボリックリンクがあります。
+  シンボリックリンクの先頭一文字には <emphasis>K</emphasis> や <emphasis>S</emphasis> が用いられ、続いて二桁の数値文字がつけられています。
+  K はサービスの停止 (kill)、S はサービスの起動 (start) を意味します。
+  二桁の数字はスクリプトの起動順を定めるもので、00 から 99 までが割振られ、小さな数字から順に実行されます。
+  <command>init</command> コマンドによってランレベルが変更される時は、そのランレベルに応じて必要なサービスが起動するか停止することになります。
+  </para>
 @z
 
 @x
   <para>The real scripts are in <filename
   class="directory">/etc/rc.d/init.d</filename>. They do the actual work, and
-  the symlinks all point to them. Killing links and starting links point to
+  the symlinks all point to them. K links and S links point to
   the same script in <filename class="directory">/etc/rc.d/init.d</filename>.
   This is because the scripts can be called with different parameters like
   <parameter>start</parameter>, <parameter>stop</parameter>,
@@ -145,27 +229,22 @@ K はサービスの停止 (kill)、S はサービスの起動 (start) を意味
   is encountered, the appropriate script is run with the
   <parameter>start</parameter> argument.</para>
 @y
-<para>
-スクリプトファイルは <filename class="directory">/etc/rc.d/init.d</filename>
-ディレクトリにあります。
-実際の処理はここにあるファイルが用いられます。
-これらに対してはシンボリックリンクが用意されています。
-サービスの起動と停止を行うシンボリックリンクは
-<filename class="directory">/etc/rc.d/init.d</filename>
-ディレクトリにあるスクリプトを指し示しています。
-このようにしているのは、各スクリプトが
-<parameter>start</parameter>、
-<parameter>stop</parameter>、
-<parameter>restart</parameter>、
-<parameter>reload</parameter>、
-<parameter>status</parameter>
-といった様々なパラメータにより呼び出されるためです。
-K の名前を持つシンボリックリンクが起動されるということは <parameter>stop</parameter>
-パラメータをつけて該当するスクリプトが実行されるということです。
-同様に S の名前を持つシンボリックリンクが起動されるということは
-<parameter>start</parameter>
-パラメータをつけて呼び出されるということになります。
-</para>
+  <para>
+  スクリプトファイルは <filename class="directory">/etc/rc.d/init.d</filename> ディレクトリにあります。
+  実際の処理はここにあるファイルが用いられます。
+  これらに対してはシンボリックリンクが用意されています。
+  サービスの起動 (S で始まる) と停止 (K で始まる) を行うシンボリックリンクは <filename
+  class="directory">/etc/rc.d/init.d</filename> ディレクトリにあるスクリプトを指し示しています。
+  このようにしているのは、各スクリプトが
+  <parameter>start</parameter>、
+  <parameter>stop</parameter>、
+  <parameter>restart</parameter>、
+  <parameter>reload</parameter>、
+  <parameter>status</parameter>
+  といった様々なパラメーターにより呼び出されるためです。
+  K の名前を持つシンボリックリンクが起動されるということは <parameter>stop</parameter> パラメーターをつけて該当するスクリプトが実行されるということです。
+  同様に S の名前を持つシンボリックリンクが起動されるということは <parameter>start</parameter> パラメーターをつけて呼び出されるということになります。
+  </para>
 @z
 
 @x
@@ -178,25 +257,22 @@ K の名前を持つシンボリックリンクが起動されるということ
   is that when a user is going to reboot or halt the system, nothing
   needs to be started.  The system only needs to be stopped.</para>
 @y
-<para>
-上の説明には例外があります。
-<filename class="directory">rc0.d</filename> ディレクトリと
-<filename class="directory">rc6.d</filename>
-ディレクトリにある、<emphasis>S</emphasis>
-で始まるシンボリックリンクはサービスを何も起動させません。
-<parameter>stop</parameter>
-パラメータが与えられ、何らかのサービスを停止します。
-ユーザーがシステムを再起動したり停止したりする際には、サービスを起動させる必要はないわけで、システムを停止するだけで済むからです。
-</para>
+  <para>
+  上の説明には例外があります。
+  <filename class="directory">rc0.d</filename> ディレクトリと <filename
+  class="directory">rc6.d</filename> ディレクトリにある、<emphasis>S</emphasis> で始まるシンボリックリンクはサービスを何も起動させません。
+  <parameter>stop</parameter> パラメーターが与えられ、何らかのサービスを停止します。
+  ユーザーがシステムを再起動したり停止したりする際には、サービスを起動させる必要はないわけで、システムを停止するだけで済むからです。
+  </para>
 @z
 
 @x
   <para>These are descriptions of what the arguments make the scripts
   do:</para>
 @y
-<para>
-スクリプトに対するパラメータは以下のとおりです。
-</para>
+  <para>
+  スクリプトに対するパラメーターは以下のとおりです。
+  </para>
 @z
 
 @x start
@@ -222,10 +298,10 @@ K の名前を持つシンボリックリンクが起動されるということ
         This is used after the configuration file of a service was modified, when
         the service does not need to be restarted.</para>
 @y
-<para>
-サービスの設定ファイルを更新します。
-設定ファイルが変更されたものの、サービスの再起動は必要ではない場合に利用します。
-</para>
+  <para>
+  サービスの設定ファイルを更新します。
+  設定ファイルが変更されたものの、サービスの再起動は必要ではない場合に利用します。
+  </para>
 @z
 
 @x status
@@ -239,10 +315,9 @@ K の名前を持つシンボリックリンクが起動されるということ
   it is your own LFS system). The files given here are an example of how
   it can be done.</para>
 @y
-<para>
-ブート機能を動作させる方法は自由に取り決めて設定して構いません。
-このシステムはつまるところあなた自身のシステムだからです。
-上に示したファイル類はブート機能を定めた一例に過ぎません。
-</para>
+  <para>
+  ブート機能を動作させる方法は自由に取り決めて設定して構いません。
+  このシステムはつまるところあなた自身のシステムだからです。
+  上に示したファイル類はブート機能を定めた一例に過ぎません。
+  </para>
 @z
-
