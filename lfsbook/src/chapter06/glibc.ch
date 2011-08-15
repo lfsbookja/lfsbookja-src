@@ -112,6 +112,14 @@
 @z
 
 @x
+    <para>Fix a couple of bugs in Glibc that can cause crashes and core dumps:</para>
+@y
+    <para>
+    クラッシュしコアダンプを吐くバグを修正します。
+    </para>
+@z
+
+@x
     <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
 @y
     <para>
@@ -786,7 +794,7 @@ Glibc が内部で利用するもので、異常が発生しているプログ�
           <command>catchsegv</command></para>
 @y
 <para>
-セグメンテーションフォールトのシグナルハンドラ。
+セグメンテーションフォールトのシグナルハンドラー。
 <command>catchsegv</command> が利用します。
 </para>
 @z
@@ -954,7 +962,7 @@ POSIX.1b リアルタイム拡張 (Realtime Extension) にて既定されてい�
           multi-threaded programs</para>
 @y
 <para>
-マルチスレッドプログラム用のデバッガを構築するための有用な関数を提供します。
+マルチスレッドプログラム用のデバッガーを構築するための有用な関数を提供します。
 </para>
 @z
 
