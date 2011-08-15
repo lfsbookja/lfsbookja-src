@@ -58,7 +58,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          src/chapter06/gdbm.ch:
+          src/chapter03/patches.ch, src/chapter06/gdbm.ch:
           SVN-201100814, r9586 対応。
           </para>
         </listitem>

@@ -154,6 +154,20 @@
 @z
 
 @x
+      <term>Glibc Bug Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc Bug Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Glibc GCC Build Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>

@@ -40,6 +40,23 @@
 @z
 
 @x
+      <title>The meaning of the configure option:</title>
+@y
+      <title>configure オプションの意味：</title>
+@z
+
+@x --enable-libgdbm-compat
+          <para>This switch enables the libgdbm compatibility library to be
+          built, as some packages outside of LFS may require the older DBM
+          routines it provides.</para>
+@y
+          <para>
+          このオプションは libgdbm 互換ライブラリをビルドすることを指示します。
+          LFS パッケージではない他のパッケージでは、かつての古い DBM ルーチンを必要とするものがあるかもしれません。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>パッケージをコンパイルします。</para>
@@ -56,26 +73,6 @@
 @y
     <para>パッケージをインストールします。</para>
 @z
-
-%@x
-%    <para>In addition, install the DBM and NDBM compatibility headers, as some
-%    packages outside of LFS may look for these older dbm routines:</para>
-%@y
-%    <para>
-%    さらに DBM、NDBM との互換性のあるヘッダファイルをインストールします。
-%    LFS では取り扱っていないパッケージの中には、そのような dbm の古い処理ルーチンを使っているものがあるためです。
-%    </para>
-%@z
-%
-%@x
-%    <para>Fix a minor installation issue by manually adding GDBM to the
-%    <command>info</command> table of contents:</para>
-%@y
-%    <para>
-%    インストール時に多少の問題があるため直します。
-%    <command>info</command> ファイルの目次に GDBM を追加するものです。
-%    </para>
-%@z
 
 @x
     <title>Contents of GDBM</title>
