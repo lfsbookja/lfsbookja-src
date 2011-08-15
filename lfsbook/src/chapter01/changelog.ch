@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2011-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Added a patch to fix a couple of bugs in Glibc-2.14.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to GDBM-1.9.1. Fixes
+          <ulink url="&lfs-ticket-root;2913">#2913</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to Diffutils-3.1. Fixes
+          <ulink url="&lfs-ticket-root;2912">#2912</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Glibc-2.14 にていくつかのバグフィックスを行うパッチを追加。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GDBM-1.9.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;2913">#2913</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Diffutils-3.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;2912">#2912</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-08-03</para>
       <itemizedlist>
         <listitem>
@@ -59,6 +93,32 @@
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - ブートスクリプトを若干変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-08-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Update to Linux-3.0.1. Fixes
+          <ulink url="&lfs-ticket-root;2911">#2911</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update to File-5.08. Fixes
+          <ulink url="&lfs-ticket-root;2909">#2909</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-08-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;2911">#2911</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - File-5.08 へのアップデート。
+          <ulink url="&lfs-ticket-root;2909">#2909</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
 @z

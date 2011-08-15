@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/gdbm.ch:
+          SVN-201100814, r9586 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-08-07</para>
       <itemizedlist>
         <listitem>

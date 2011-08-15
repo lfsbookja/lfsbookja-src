@@ -46,9 +46,9 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>このパッケージにはテストスイートはありません。</para>
+    <para>ビルド結果をテストする場合は以下を実行します。</para>
 @z
 
 @x
@@ -57,25 +57,25 @@
     <para>パッケージをインストールします。</para>
 @z
 
-@x
-    <para>In addition, install the DBM and NDBM compatibility headers, as some
-    packages outside of LFS may look for these older dbm routines:</para>
-@y
-    <para>
-    さらに DBM、NDBM との互換性のあるヘッダファイルをインストールします。
-    LFS では取り扱っていないパッケージの中には、そのような dbm の古い処理ルーチンを使っているものがあるためです。
-    </para>
-@z
-
-@x
-    <para>Fix a minor installation issue by manually adding GDBM to the
-    <command>info</command> table of contents:</para>
-@y
-    <para>
-    インストール時に多少の問題があるため直します。
-    <command>info</command> ファイルの目次に GDBM を追加するものです。
-    </para>
-@z
+%@x
+%    <para>In addition, install the DBM and NDBM compatibility headers, as some
+%    packages outside of LFS may look for these older dbm routines:</para>
+%@y
+%    <para>
+%    さらに DBM、NDBM との互換性のあるヘッダファイルをインストールします。
+%    LFS では取り扱っていないパッケージの中には、そのような dbm の古い処理ルーチンを使っているものがあるためです。
+%    </para>
+%@z
+%
+%@x
+%    <para>Fix a minor installation issue by manually adding GDBM to the
+%    <command>info</command> table of contents:</para>
+%@y
+%    <para>
+%    インストール時に多少の問題があるため直します。
+%    <command>info</command> ファイルの目次に GDBM を追加するものです。
+%    </para>
+%@z
 
 @x
     <title>Contents of GDBM</title>
