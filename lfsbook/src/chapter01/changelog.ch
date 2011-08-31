@@ -48,6 +48,42 @@
 @z
 
 @x
+      <para>2011-08-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.0.4. Fixes 
+          <ulink url="&lfs-ticket-root;2914">#2914</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.20. Fixes 
+          <ulink url="&lfs-ticket-root;2915">#2915</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix shutdown problem in bootscripts.  
+          Replace tab characters with spaces.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-08-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.0.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;2914">#2914</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.20 へのアップデート。
+          <ulink url="&lfs-ticket-root;2915">#2915</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトにてシャットダウン時の問題を修正。
+          タブ文字を空白文字に変更。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-08-14</para>
       <itemizedlist>
         <listitem>

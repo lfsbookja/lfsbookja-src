@@ -54,6 +54,22 @@
 -->
 
     <listitem>
+      <para>2011-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-201100830, r9587 対応。(バージョンアップグレード以外では日本語訳変更なし。)
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          ブートスクリプトの HTML への導入不備を修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-08-15</para>
       <itemizedlist>
         <listitem>
