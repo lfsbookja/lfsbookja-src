@@ -186,27 +186,27 @@ menuconfig の ncurses による行表示を適切に行うために必要とな
     required to complete the installation. Some files need to be copied to
     the <filename class="directory">/boot</filename> directory.</para>
 @y
-<para>
-カーネルのコンパイルが終わったら、インストールの完了に向けてあと少し作業を行います。
-<filename class="directory">/boot</filename>
-ディレクトリにいくつかのファイルをコピーします。
-</para>
+    <para>
+    カーネルのコンパイルが終わったら、インストールの完了に向けてあと少し作業を行います。
+    <filename class="directory">/boot</filename>
+    ディレクトリにいくつかのファイルをコピーします。
+    </para>
 @z
 
 @x
     <para>The path to the kernel image may vary depending on the platform being
     used. The filename below can be changed to suit your taste, but the stem of
-    the filename should be <emphasis>vmlinux</emphasis> to be compatible with
+    the filename should be <emphasis>vmlinuz</emphasis> to be compatible with
     the automatic setup of the boot process described in the next section.  The
     following command assumes an x86 architecture:</para>
 @y
-<para>
-カーネルイメージへのパスは、利用しているプラットフォームによってさまざまです。
-そのファイル名は、好みにより自由に変更して構いません。
-ただし <emphasis>vmlinux</emphasis> という語は必ず含めてください。
-これにより、次節で説明するブートプロセスを自動的に設定するために必要なことです。
-以下のコマンドは x86 アーキテクチャの場合の例です。
-</para>
+    <para>
+    カーネルイメージへのパスは、利用しているプラットフォームによってさまざまです。
+    そのファイル名は、好みにより自由に変更して構いません。
+    ただし <emphasis>vmlinuz</emphasis> という語は必ず含めてください。
+    これにより、次節で説明するブートプロセスを自動的に設定するために必要なことです。
+    以下のコマンドは x86 アーキテクチャの場合の例です。
+    </para>
 @z
 
 @x

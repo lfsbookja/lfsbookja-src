@@ -27,18 +27,11 @@ Grep パッケージはファイル内の検索を行うプログラムを提供
     <title>Grep のインストール</title>
 @z
 
-% @x
-%     <para>The current Grep package has many bugs, especially in the support of
-%     multibyte locales. The following consolidated patch from Debian fixes some of them,
-%     improves the number of individual tests which are passed, and much improves the
-%     speed in UTF-8 locales:</para>
-% @y
-% <para>
-% 現時点の Grep パッケージには、特にマルチバイトロケールに関する処理において多くのバグがあります。
-% 以下のパッチは Debian プロジェクトによるものであり、いくつかのバグを修正します。
-% またいくつかのテストが成功するようになり、UTF-8 ロケールでの処理性能が改善されます。
-% </para>
-% @z
+@x
+    <para>First, fix a small problem with a test script:</para>
+@y
+    <para>最初にテストスクリプトでのちょっとした不具合を修正します。</para>
+@z
 
 @x
     <para>Prepare Grep for compilation:</para>

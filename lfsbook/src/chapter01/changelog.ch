@@ -48,8 +48,29 @@
 @z
 
 @x
+      <para>2011-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove the creation of a spurious file
+          in grep's test suite.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grep のテストスイートにて、意味のないファイル生成を削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-08-29</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to binutils-2.21.1a. Fixes 
+          <ulink url="&lfs-ticket-root;2917">#2917</ulink>.</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - Update to linux-3.0.4. Fixes 
           <ulink url="&lfs-ticket-root;2914">#2914</ulink>.</para>
@@ -67,6 +88,10 @@
 @y
       <para>2011-08-29</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils-2.21.1a へのアップデート。
+          <ulink url="&lfs-ticket-root;2917">#2917</ulink> を Fix に。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - linux-3.0.4 へのアップデート。
           <ulink url="&lfs-ticket-root;2914">#2914</ulink> を Fix に。</para>

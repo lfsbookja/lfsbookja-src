@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-09-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/grep.ch, src/chapter08/kernel.ch:
+          SVN-201100831, r9591 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-08-31</para>
       <itemizedlist>
         <listitem>
