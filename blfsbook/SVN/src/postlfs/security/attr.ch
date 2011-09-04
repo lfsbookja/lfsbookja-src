@@ -122,6 +122,16 @@
 @z
 
 @x
+    <para><command>cat &gt; test/sort-getfattr-output ... EOF</command>: This 
+    command creates a missing test script.</para>
+@y
+    <para>
+    <command>cat &gt; test/sort-getfattr-output ... EOF</command>:
+    このコマンドは不足しているテストスクリプトを生成します。
+    </para>
+@z
+
+@x
     <para><command>sed ... include/builddefs.in</command>: This command
     modifies the documentation directory so that it is a versioned
     directory and also adds support for a DESTDIR installation.</para>
@@ -129,7 +139,7 @@
     <para>
     <command>sed ... include/builddefs.in</command>:
     このコマンドは、ドキュメントのインストールディレクトリを変更するものです。
-    １つにはバージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
+    バージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
     </para>
 @z
 
@@ -158,7 +168,7 @@
 @y
       <para>
       <application>attr</application> 自身には設定すべきものはありません。
-      <application>attr</application> をさまざまに利用していくためには、ファイルシステムが拡張属性 (extended attributes) をサポートしている必要があります。
+      <application>attr</application> による機能を活用するには、ファイルシステムが拡張属性 (extended attributes) をサポートしている必要があります。
       </para>
 @z
 

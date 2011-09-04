@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY apache-buildsize     "102 MB (building all available DSO modules)">
+  <!ENTITY apache-time          "2.1 SBU (building all available DSO modules)">
+@y
+  <!ENTITY apache-buildsize     "102 MB (利用可能なすべての DSO モジュールをビルドする場合)">
+  <!ENTITY apache-time          "2.1 SBU (利用可能なすべての DSO モジュールをビルドする場合)">
+@z
+
+@x
     <title>Introduction to Apache</title>
 @y
     <title>Apache の概要</title>
@@ -24,11 +32,11 @@
     open-source HTTP server. It is useful for creating local intranet
     web sites or running huge web serving operations.</para>
 @y
-<para>
-<application>Apache</application>
-パッケージはオープンソースの HTTP サーバーです。
-ローカルなイントラネットウェブサイトでも、大規模なウェブサービスの運用にも利用することができます。
-</para>
+    <para>
+    <application>Apache</application>
+    パッケージはオープンソースの HTTP サーバーです。
+    ローカルなイントラネットウェブサイトでも、大規模なウェブサービスの運用にも利用することができます。
+    </para>
 @z
 
 @x
@@ -148,10 +156,10 @@
     it is recommended to use the bundled versions that come with the Apache
     HTTPD tarball.</para>
 @y
-<para>
-APR や APR-util は個別のコンポーネントとしてインストールすることもできます。
-しかし Apache HTTPD の tarball 内にバンドルされているバージョンを利用することが推奨されています。
-</para>
+    <para>
+    APR や APR-util は個別のコンポーネントとしてインストールすることもできます。
+    しかし Apache HTTPD の tarball 内にバンドルされているバージョンを利用することが推奨されています。
+    </para>
 @z
 
 @x
@@ -174,11 +182,11 @@ APR や APR-util は個別のコンポーネントとしてインストールす
     following commands
     (as <systemitem class="username">root</systemitem>):</para>
 @y
-<para>
-セキュリティの観点から、サーバーは一般ユーザーと一般グループにより起動することが強く推奨されています。
-以下のコマンドによりグループとユーザーを生成します。
-(実行は <systemitem class="username">root</systemitem> になって行います。)
-</para>
+    <para>
+    セキュリティの観点から、サーバーは一般ユーザーと一般グループにより起動することが強く推奨されています。
+    以下のコマンドによりグループとユーザーを生成します。
+    (実行は <systemitem class="username">root</systemitem> になって行います。)
+    </para>
 @z
 
 @x
@@ -189,17 +197,13 @@ APR や APR-util は個別のコンポーネントとしてインストールす
     browser interface for CVS and Subversion version control repositories.
     See the User Notes for details for specific applications.</para></note>
 @y
-<note>
-<para>
-上のコマンドでは <application>Apache</application>
-ユーザーのホームディレクトリを <filename>/dev/null</filename>
-としています。
-ただしこれを行うと <ulink url='http://www.viewvc.org/'><application>ViewVC</application></ulink>
-のようなアドオンが動作しないものが出てきます。
-この ViewVC はちなみに、CVS や Subversion
-といったバージョン管理システムのリポジトリを、ブラウザ上から操作可能とするものです。
-特定のアプリケーションに対する詳細は&j-UserNotes;を参照してください。
-</para>
+    <note>
+    <para>
+    上のコマンドでは <application>Apache</application> ユーザーのホームディレクトリを <filename>/dev/null</filename> としています。
+    ただしこれを行うと <ulink url='http://www.viewvc.org/'><application>ViewVC</application></ulink> のようなアドオンが動作しないものが出てきます。
+    この ViewVC はちなみに、CVS や Subversion といったバージョン管理システムのリポジトリを、ブラウザ上から操作可能とするものです。
+    特定のアプリケーションに対する詳細は&j-UserNotes;を参照してください。
+    </para>
 </note>
 @z
 
@@ -210,14 +214,12 @@ APR や APR-util は個別のコンポーネントとしてインストールす
     will allow the modules added to <application>Apache</application>
     to be configured without errors. Apply the patch:</para>
 @y
-<para>
-
-The following patch modifies the layout of destination
-directories and among them, the build directory at
-<filename class="directory">/usr/lib/apache/build</filename>. This
-will allow the modules added to <application>Apache</application>
-to be configured without errors. Apply the patch:
-</para>
+    <para>
+    以下のパッチは、インストールディレクトリ構成を変更します。
+    その中で特にビルドディレクトリを <filename class="directory">/usr/lib/apache/build</filename> とします。
+    こうすることで <application>Apache</application> に追加するモジュールを、エラーなく設定することができます。
+    パッチは以下のコマンドにより適用します。
+    </para>
 @z
 
 @x
@@ -231,15 +233,13 @@ to be configured without errors. Apply the patch:
       information are listed in the <quote>Command Explanations</quote> section
       below.</para>
 @y
-      <para>You may wish to review the output from
-      <command>./configure --help</command> and include whatever parameters
-      are necessary to the <command>configure</command> command below to build
-      the modules required for your installation. There are as many as 65
-      additional parameters you can add to the <command>configure</command>
-      command to build additional modules. Some of the extra parameters which
-      aren't described or mentioned in the <parameter>--help</parameter>
-      information are listed in the <quote>Command Explanations</quote> section
-      below.</para>
+      <para>
+      <command>./configure --help</command> を実行してみることが必要かもしれません。
+      その出力結果からは、インストールに必要となるモジュールをビルドするために、<command>configure</command> コマンドに対してどんなパラメーターを指定すべきかを確認することができます。
+      <command>configure</command> コマンドには実に 65 個にも及ぶ追加のパラメーターがあって、これにより追加モジュールをビルドすることができます。
+      追加のパラメーターは、<parameter>--help</parameter> にて示される情報に必ずしもすべて説明されているわけではありません。
+      以下の<quote>&j-CommandExplanations;</quote>の節を参照してください。
+      </para>
 @z
 
 @x
@@ -250,15 +250,10 @@ to be configured without errors. Apply the patch:
       the parameters shown in the <quote>Command Explanations</quote> section
       below.</para>
 @y
-<para>
-
-If you are using the bundled version of
-<application>APR-util</application> and you are going to install
-<application>Subversion</application> with
-<application>Berkeley DB</application> back-end support, ensure you use
-the parameters shown in the <quote>Command Explanations</quote> section
-below.
-</para>
+      <para>
+      バンドルされている <application>APR-util</application> を用いるものとし、かつ <application>Berkeley
+      DB</application> のバックエンドサポートを利用した <application>Subversion</application> をインストールする場合は、以下の<quote>&j-CommandExplanations;</quote>の節を参照してください。
+      </para>
 @z
 
 @x
@@ -269,40 +264,39 @@ below.
       <emphasis>only</emphasis> supported and functional in Win32
       environments.</para>
 @y
-      <para>While it is not built by default when using the following commands,
+      <para>
+      While it is not built by default when using the following commands,
       the ISAPI DSO module can be created by adding the
       <option>--enable-isapi</option> option. Even though the module will
       compile, install and load fine, the module is
       <emphasis>only</emphasis> supported and functional in Win32
-      environments.</para>
+      environments.
+      </para>
 @z
 
 @x
     <para>Build and install <application>Apache</application> by running the
     following commands:</para>
 @y
-<para>
-
-Build and install <application>Apache</application> by running the
-following commands:
-</para>
+    <para>
+    <application>Apache</application> をビルドするために、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -317,10 +311,10 @@ following commands:
     (DSOs) so they can be included and excluded from the
     server using the run-time configuration directives.</para>
 @y
-<para><parameter>--enable-mods-shared=all</parameter>: The modules
-should be compiled and used as Dynamic Shared Objects
-(DSOs) so they can be included and excluded from the
-server using the run-time configuration directives.</para>
+    <para><parameter>--enable-mods-shared=all</parameter>: The modules
+    should be compiled and used as Dynamic Shared Objects
+    (DSOs) so they can be included and excluded from the
+    server using the run-time configuration directives.</para>
 @z
 
 @x
@@ -405,14 +399,18 @@ server using the run-time configuration directives.</para>
     with (r-x) permissions and files need to be readable (r--) by the
     <systemitem class="username">apache</systemitem> user.</para>
 @y
-    <para><command>chown -R apache:apache /srv/www</command>: By default, the
+    <para>
+    <command>chown -R apache:apache /srv/www</command>:
+    
+    By default, the
     installation process installs files (documentation, error messages, default
     icons, etc.) with the ownership of the user that extracted the files from
     the tar file. If you want to change the ownership to another user, you
     should do so at this point. The only requirement is that the document
     directories need to be accessible by the <command>httpd</command> process
     with (r-x) permissions and files need to be readable (r--) by the
-    <systemitem class="username">apache</systemitem> user.</para>
+    <systemitem class="username">apache</systemitem> user.
+    </para>
 @z
 
 @x
@@ -438,9 +436,10 @@ server using the run-time configuration directives.</para>
       <filename>/etc/apache/httpd.conf</filename>. Modify it so that the HTTP
       server runs as the dedicated user and group:</para>
 @y
-<para>The main configuration file is named
-<filename>/etc/apache/httpd.conf</filename>. Modify it so that the HTTP
-server runs as the dedicated user and group:</para>
+      <para>
+      主要な設定ファイルは <filename>/etc/apache/httpd.conf</filename> です。
+      特定のユーザーやグループにて HTTP サーバーを実行する場合は、設定を変更してください。
+      </para>
 @z
 
 @x
@@ -448,9 +447,10 @@ server runs as the dedicated user and group:</para>
       for detailed instructions on customizing your
       <application>Apache</application> HTTP server configuration file.</para>
 @y
-      <para>See <ulink url="http://httpd.apache.org/docs-2.2/configuring.html"/>
-      for detailed instructions on customizing your
-      <application>Apache</application> HTTP server configuration file.</para>
+      <para>
+      <application>Apache</application> HTTP サーバーの設定ファイルに関する設定方法の詳細は <ulink
+      url="http://httpd.apache.org/docs-2.2/configuring.html"/> を参照してください。
+      </para>
 @z
 
 @x
@@ -465,10 +465,10 @@ server runs as the dedicated user and group:</para>
       <filename>/etc/rc.d/init.d/apache</filename> init script included
       in the <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>If you want the <application>Apache</application> server to
-      start automatically when the system is booted, install the
-      <filename>/etc/rc.d/init.d/apache</filename> init script included
-      in the <xref linkend="bootscripts"/> package.</para>
+      <para>
+      システム起動時に <application>Apache</application> サーバーを自動で起動する場合は、<xref
+      linkend="bootscripts"/> パッケージに含まれる、初期起動スクリプト <filename>/etc/rc.d/init.d/apache</filename> をインストールします。
+      </para>
 @z
 
 @x
@@ -515,11 +515,9 @@ server runs as the dedicated user and group:</para>
           <para>is a tool for benchmarking your
           <application>Apache</application> HTTP server.</para>
 @y
-<para>
-
-is a tool for benchmarking your
-<application>Apache</application> HTTP server.
-</para>
+          <para>
+          <application>Apache</application> HTTP サーバーのベンチマークを計測するツールです。
+          </para>
 @z
 
 @x apachectl
@@ -538,8 +536,9 @@ is a tool for benchmarking your
           <para>is a tool for building and installing extension modules for
           the <application>Apache</application> HTTP server.</para>
 @y
-          <para>is a tool for building and installing extension modules for
-          the <application>Apache</application> HTTP server.</para>
+          <para>
+          <application>Apache</application> HTTP サーバーに対する追加モジュールをビルドしインストールするためのツールです。
+          </para>
 @z
 
 @x dbmmanage
@@ -576,14 +575,6 @@ is a tool for benchmarking your
           HTTP server program.</para>
 @z
 
-% @x instdso.sh
-%           <para>is a script which installs <application>Apache</application>
-%           DSO modules.</para>
-% @y
-%           <para>is a script which installs <application>Apache</application>
-%           DSO modules.</para>
-% @z
-
 @x httxt2dbm
           <para>is used to generate DBM files from text input, for use in
           RewriteMap.</para>
@@ -607,4 +598,3 @@ is a tool for benchmarking your
           <para>is a simple program for use in conjunction with
           <application>Apache</application>'s piped log file feature.</para>
 @z
-

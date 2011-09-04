@@ -24,14 +24,10 @@
     administer Access Control Lists, which are used to define more fine-grained
     discretionary access rights for files and directories.</para>
 @y
-<para>
-<application>acl</application>
-パッケージは、アクセスコントロールリスト (Access Control Lists)
-を管理するユーティリティーを提供します。
-
-which are used to define more fine-grained
-discretionary access rights for files and directories.
-</para>
+    <para>
+    <application>acl</application> パッケージは、アクセスコントロールリスト (Access Control Lists) を管理するユーティリティーを提供します。
+    これは、ファイルやディレクトリに対して、きめ細かく詳細にアクセス権限を設定するものとして利用されます。
+    </para>
 @z
 
 @x
@@ -120,11 +116,11 @@ discretionary access rights for files and directories.
     <application>acl</application> is installed so that the extra acl bit
     displays correctly on a <command>ls</command> command.</para>
 @y
-    <para>For meaningful results, the tests need to be carried out on a file
-    system that supports extended attributes. It is also required that
-    <application>Coreutils</application> is re-installed after
-    <application>acl</application> is installed so that the extra acl bit
-    displays correctly on a <command>ls</command> command.</para>
+    <para>
+    テスト実施を意味のあるものとするためには、拡張属性をサポートしているファイルシステム上にてテストを実施する必要があります。
+    そして <application>acl</application> をインストールした後には <application>Coreutils</application> を再インストールする必要もあります。
+    これは <command>ls</command> コマンドにて、拡張された acl ビットを正しく表示できるようにするためです。
+    </para>
 @z
 
 @x
@@ -140,13 +136,11 @@ discretionary access rights for files and directories.
     url="&lfs-root;/chapter06/coreutils.html">Coreutils</ulink>
     </application> and proceed to run the test suite.</para>
 @y
-<para>
-ここで <application><ulink
-url="&lfs-root;/chapter06/coreutils.html">Coreutils</ulink>
-</application>
-を再インストールする必要があります。
-そしてテストスイートも実行してください。
-</para>
+    <para>
+    ここで <application><ulink
+    url="&lfs-root;/chapter06/coreutils.html">Coreutils</ulink></application> を再インストールする必要があります。
+    そしてテストスイートも実行してください。
+    </para>
 @z
 
 @x
@@ -154,12 +148,11 @@ url="&lfs-root;/chapter06/coreutils.html">Coreutils</ulink>
     following to execute all three:
     <command>make tests root-tests ext-tests</command>.</para>
 @y
-<para>
-
-There are three sets of tests that come with this package. Issue the
-following to execute all three:
-<command>make tests root-tests ext-tests</command>.
-</para>
+    <para>
+    このパッケージには三種類のテストがあります。
+    三つのテストすべてを実行するには、以下のコマンドを実行します。
+    <command>make tests root-tests ext-tests</command>
+    </para>
 @z
 
 @x
@@ -169,23 +162,35 @@ following to execute all three:
 @z
 
 @x
+    <para><command>cat &gt; test/sort-getfacl-output ... EOF</command>: This
+    command creates a missing test script.</para>
+@y
+    <para>
+    <command>cat &gt; test/sort-getfacl-output ... EOF</command>:
+    このコマンドは不足しているテストスクリプトを生成します。
+    </para>
+@z
+
+@x
     <para><command>sed -i ... include/builddefs.in</command>: This command
     changes the documentation directory to a versioned directory and provides
     for a DESTDIR installation.</para>
 @y
-<para>
-<command>sed -i ... include/builddefs.in</command>: This command
-changes the documentation directory to a versioned directory and provides
-for a DESTDIR installation.
-</para>
+    <para>
+    <command>sed -i ... include/builddefs.in</command>:
+    このコマンドは、ドキュメントのインストールディレクトリを変更するものです。
+    バージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
+    </para>
 @z
 
 @x
     <para><command>chmod ...</command>: This command modifies the permissions
     of installed library files to standards.</para>
 @y
-    <para><command>chmod ...</command>: This command modifies the permissions
-    of installed library files to standards.</para>
+    <para>
+    <command>chmod ...</command>:
+    このコマンドは、インストールディレクトリを標準的なパーミッションに設定し直します。
+    </para>
 @z
 
 @x
@@ -201,12 +206,10 @@ for a DESTDIR installation.
       but to get any use out of <application>acl</application>, a filesystem
       needs to support access control lists.</para>
 @y
-<para>
-
-There is no configuration to <application>acl</application> itself,
-but to get any use out of <application>acl</application>, a filesystem
-needs to support access control lists.
-</para>
+    <para>
+    <application>acl</application> 自身には設定すべきものはありません。
+    <application>acl</application> による機能を活用するには、ファイルシステムがアクセスコントロールリストの機能をサポートしている必要があります。
+    </para>
 @z
 
 @x
@@ -214,9 +217,10 @@ needs to support access control lists.
       filesystem in the <filename>/etc/fstab</filename> file as shown
       below:</para>
 @y
-      <para>One way to achieve this is to add the acl option to an ext3
-      filesystem in the <filename>/etc/fstab</filename> file as shown
-      below:</para>
+      <para>
+      上を実現する一つの方法として、例えば ext3 ファイルシステムに acl オプションを設定します。
+      以下のように <filename>/etc/fstab</filename> ファイルを記述します。
+      </para>
 @z
 
 @x
@@ -254,31 +258,31 @@ needs to support access control lists.
 @x chacl
           <para>changes the access control list of a file or directory.</para>
 @y
-<para>
-changes the access control list of a file or directory.
-</para>
+          <para>
+          ファイルまたはディレクトリに対するアクセスコントロールを設定します。
+          </para>
 @z
 
 @x getfacl
           <para>gets file access control lists.</para>
 @y
-<para>
-gets file access control lists.
-</para>
+          <para>
+          ファイルアクセスコントロールリストを取得します。
+          </para>
 @z
 
 @x setfacl
           <para>sets file access control lists.</para>
 @y
-<para>
-sets file access control lists.
-</para>
+          <para>
+          ファイルアクセスコントロールリストを設定します。
+          </para>
 @z
 
 @x libacl.{so,a}
           <para>contains the <application>acl</application> API functions.</para>
 @y
-<para>
-contains the <application>acl</application> API functions.
-</para>
+          <para>
+          <application>acl</application> の API 関数を提供します。
+          </para>
 @z
