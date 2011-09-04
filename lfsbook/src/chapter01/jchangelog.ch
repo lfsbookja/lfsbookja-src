@@ -54,6 +54,24 @@
 -->
 
     <listitem>
+      <para>2011-09-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter05/glibc.ch, src/prologue/hostreqs.ch:
+          SVN-201100903, r9592 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          付録D での /etc/rc.d/init.d/{rc, modules} について、長らく掲載誤り (処理誤り) であったものを修正。
+          なぜこんな処理誤りを行なっていたのか不明。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-09-02</para>
       <itemizedlist>
         <listitem>

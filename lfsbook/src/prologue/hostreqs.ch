@@ -104,29 +104,31 @@
 @z
 
 @x
-      <para><emphasis role="strong">Linux Kernel-2.6.22.5</emphasis>
+      <para><emphasis role="strong">Linux Kernel-2.6.25</emphasis>
       (having been compiled with GCC-4.1.2 or greater)</para>
 @y
       <para>
-      <emphasis role="strong">Linux Kernel-2.6.22.5</emphasis> (GCC-4.1.2 以上でコンパイルされたもの)
+      <emphasis role="strong">Linux Kernel-2.6.25</emphasis> (GCC-4.1.2 以上でコンパイルされたもの)
       </para>
 @z
 
 @x
       <para>The reason for the kernel version requirement is that we specify
       that version when building <application>glibc</application> in Chapter 6
-      at the recommendation of the developers.  </para>
+      at the recommendation of the developers.  It is also required by
+      udev.</para>
 @y
       <para>
       カーネルのバージョンを指定しているのは、第6章にて <application>glibc</application> をビルドする際にバージョンを指定するからであり、開発者の勧めに従うためです。
+      これは udev においても必要になります。
       </para>
 @z
 
 @x
-      <para>If the host kernel is either earlier than 2.6.22.5, or it was not
+      <para>If the host kernel is either earlier than 2.6.25, or it was not
       compiled using a GCC-4.1.2 (or later) compiler, you will need to replace
       the kernel with one adhering to the specifications. There are two ways
-      you can go about this. First, see if your Linux vendor provides a 2.6.22.5
+      you can go about this. First, see if your Linux vendor provides a 2.6.25
       or later kernel package. If so, you may wish to install it. If your
       vendor doesn't offer an acceptable kernel package, or you would prefer not to
       install it, you can compile a kernel yourself. Instructions for
@@ -134,9 +136,9 @@
       uses GRUB) are located in <xref linkend="chapter-bootable"/>.</para>
 @y
       <para>
-      ホストシステムのカーネルバージョンが 2.6.22.5 より古い場合、あるいはカーネルをビルドした際の GCC のバージョンが 4.1.2 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
+      ホストシステムのカーネルバージョンが 2.6.25 より古い場合、あるいはカーネルをビルドした際の GCC のバージョンが 4.1.2 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
       これを実施するには２つの方法があります。
-      お使いの Linux システムのベンダーが 2.6.22.5 以上のバージョンのカーネルを提供しているかを調べることです。
+      お使いの Linux システムのベンダーが 2.6.25 以上のバージョンのカーネルを提供しているかを調べることです。
       提供していれば、それをインストールします。
       もしそれがない場合や、あったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
       カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダーの設定方法については <xref linkend="chapter-bootable"/> を参照してください。

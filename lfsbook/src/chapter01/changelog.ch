@@ -25,11 +25,11 @@
   version is probably already available. To find out, please check one of the
   mirrors via <ulink url="&lfs-root;mirrors.html"/>.</para>
 @y
-<para>
-本書は Linux From Scratch ブック、バージョン &version; です。
-本書が 6ヶ月以上更新されていなければ、より新しい版が公開されているはずです。以下のミラーサイトを確認してください。
-<ulink url="&lfs-root;mirrors.html"/>
-</para>
+  <para>
+  本書は Linux From Scratch ブック、バージョン &version; です。
+  本書が 6ヶ月以上更新されていなければ、より新しい版が公開されているはずです。以下のミラーサイトを確認してください。
+  <ulink url="&lfs-root;mirrors.html"/>
+  </para>
 @z
 
 @x
@@ -45,6 +45,51 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴：</title>
+@z
+
+@x
+      <para>2011-09-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix binutils extracted directory version in binutils 
+          build instructions.  This will be reverted at the next upstream release
+          when the tarball name is again synced with the extracted directory
+          name.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix bootscripts to properly export IN_BOOT variable.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils のビルド手順にて解凍されるディレクトリ名を修正。
+          次のアップストリームからのリリースでは、tarball 名と解凍されるディレクトリ名が一致するものと思われる。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトにて IN_BOOT 変数を適切に設定。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Adjust minimum kernel for the host sysem to 2.6.25
+          due to a udev requirement.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ホストシステムにて必要となるカーネルの最小バージョンを 2.6.25 とする。
+          udev が必要としているため。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x
