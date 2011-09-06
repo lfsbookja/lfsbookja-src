@@ -125,7 +125,7 @@
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
-        mkfs.minix, mkswap, more, mount, namei, partx, pg, pivot_root,
+        mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
         readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
         setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
@@ -139,7 +139,7 @@
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
-        mkfs.minix, mkswap, more, mount, namei, partx, pg, pivot_root,
+        mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
         readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
         setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
@@ -623,6 +623,14 @@
 @y
           <para>
           ファイルシステムツリー内の特定のディレクトリを、指定されたデバイス上のファイルシステムに割り当てます。
+          </para>
+@z
+
+@x mountpoint
+          <para>Checks if the directory is a mountpoint</para>
+@y
+          <para>
+          ディレクトリがマウントポイントであるかどうかをチェックします。
           </para>
 @z
 

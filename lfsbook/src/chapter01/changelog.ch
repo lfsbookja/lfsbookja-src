@@ -48,6 +48,30 @@
 @z
 
 @x
+      <para>2011-09-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix a broken popt function in pkg-config.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Suppress sysvinit overwriting mountpoint from util-linux.
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - pkg-config において、popt 関数が壊れているのを修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux にてインストールされる mountpoint を sysvinit が上書きインストールしないように。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-09-03</para>
       <itemizedlist>
         <listitem>

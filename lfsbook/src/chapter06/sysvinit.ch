@@ -50,13 +50,14 @@
 @z
 
 @x
-    <para>A maintained version of the <command>wall</command> program was
+    <para>Maintained versions of the <command>wall</command> and 
+    <command>mountpoint</command> programs were
     installed earlier by Util-linux. Suppress the installation of Sysvinit's
-    version of this program and its man page:</para>
+    versions of these programs and their man pages:</para>
 @y
     <para>
-    <command>wall</command> コマンドは Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
-    そこで Sysvinit が提供する <command>wall</command> コマンドはインストールせず、その man ページもインストールしないようにします。
+    <command>wall</command> コマンドおよび <command>mountpoint</command> は Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
+    そこで Sysvinit が提供するこれらのコマンドはインストールせず、その man ページもインストールしないようにします。
     </para>
 @z
 
@@ -192,14 +193,6 @@
 @y
           <para>
           現在のユーザーの端末に対して、他のユーザーがメッセージ送信できるかどうかを制御します。
-          </para>
-@z
-
-@x mountpoint
-          <para>Checks if the directory is a mountpoint</para>
-@y
-          <para>
-          指定されたディレクトリがマウントポイントであるかどうかをチェックします。
           </para>
 @z
 

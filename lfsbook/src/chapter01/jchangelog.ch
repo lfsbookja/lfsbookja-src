@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-09-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/{sysvinit.ch, util-linux.ch}:
+          SVN-201100904, r9595 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-09-04</para>
       <itemizedlist>
         <listitem>
