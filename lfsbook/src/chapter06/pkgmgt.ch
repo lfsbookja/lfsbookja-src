@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -136,16 +145,12 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 <para>
 共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリの名前が変更になった場合は、そのライブラリを動的にリンクしているすべてのパッケージは、新しいライブラリにリンクされるように再コンパイルを行う必要があります。
 (パッケージのバージョンとライブラリ名との間には相関関係はありません。)
-例えば foo-1.2.3 というパッケージが共有ライブラリ
-<filename class='libraryfile'>libfoo.so.1</filename>
-をインストールするものであるとします。
-そして今、新しいバージョン foo-1.2.4 にアップグレードし、共有ライブラリ
-<filename class='libraryfile'>libfoo.so.2</filename>
-をインストールするとします。
-この例では <filename class='libraryfile'>libfoo.so.1</filename>
-を動的にリンクいるパッケージがあったとすると、それらはすべて
-<filename class='libraryfile'>libfoo.so.2</filename>
-に対してリンクするよう再コンパイルしなければなりません。
+例えば foo-1.2.3 というパッケージが共有ライブラリ <filename
+class='libraryfile'>libfoo.so.1</filename> をインストールするものであるとします。
+そして今、新しいバージョン foo-1.2.4 にアップグレードし、共有ライブラリ <filename
+class='libraryfile'>libfoo.so.2</filename> をインストールするとします。
+この例では <filename class='libraryfile'>libfoo.so.1</filename> を動的にリンクいるパッケージがあったとすると、それらはすべて <filename
+class='libraryfile'>libfoo.so.2</filename> に対してリンクするよう再コンパイルしなければなりません。
 古いライブラリに依存しているパッケージすべてを再コンパイルするまでは、そのライブラリを削除するべきではありません。
 </para>
 @z
@@ -163,7 +168,7 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 @y
 <para>
 以下に一般的なパッケージ管理手法について示します。
-パッケージ管理マネージャを用いる前に、様々な方法を検討し、特にそれぞれの欠点も確認してください。
+パッケージ管理マネージャーを用いる前に、様々な方法を検討し、特にそれぞれの欠点も確認してください。
 </para>
 @z
 
@@ -211,16 +216,11 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 <para>
 これは最も単純なパッケージ管理のやり方であり、パッケージ管理のためのツールを用いる必要はありません。
 個々のパッケージを個別のディレクトリにインストールする方法です。
-例えば foo-1.1 というパッケージを
-<filename class='directory'>/usr/pkg/foo-1.1</filename>
-ディレクトリにインストールし、この
-<filename class='directory'>/usr/pkg/foo-1.1</filename>
-に対するシンボリックリンク
-<filename>/usr/pkg/foo</filename>
-を作成します。
-このパッケージの新しいバージョン foo-1.2 をインストールする際には
-<filename class='directory'>/usr/pkg/foo-1.2</filename>
-ディレクトリにインストールした上で、先ほどのシンボリックリンクをこのディレクトリを指し示すように置き換えます。
+例えば foo-1.1 というパッケージを <filename
+class='directory'>/usr/pkg/foo-1.1</filename> ディレクトリにインストールし、この <filename
+class='directory'>/usr/pkg/foo-1.1</filename> に対するシンボリックリンク <filename>/usr/pkg/foo</filename> を作成します。
+このパッケージの新しいバージョン foo-1.2 をインストールする際には <filename
+class='directory'>/usr/pkg/foo-1.2</filename> ディレクトリにインストールした上で、先ほどのシンボリックリンクをこのディレクトリを指し示すように置き換えます。
 </para>
 @z
 
@@ -263,11 +263,10 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 <para>
 これは一つ前に示したパッケージ管理テクニックの応用です。
 各パッケージは同様にインストールします。
-ただし先ほどのようなシンボリックリンクを生成するのではなく
-<filename class='directory'>/usr</filename>
-ディレクトリ階層の中に各ファイルのシンボリックリンクを生成します。
+ただし先ほどのようなシンボリックリンクを生成するのではなく <filename
+class='directory'>/usr</filename> ディレクトリ階層の中に各ファイルのシンボリックリンクを生成します。
 この方法であれば環境変数を追加設定する必要がなくなります。
-シンボリック・リンクを自動生成することもできますが、パッケージ管理ツールの中にはこの手法を使って構築されているものもあります。
+シンボリックリンクを自動生成することもできますが、パッケージ管理ツールの中にはこの手法を使って構築されているものもあります。
 よく知られているものとして Stow、Epkg、Graft、Depot があります。
 </para>
 @z
@@ -283,10 +282,8 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 @y
 <para>
 インストール時には意図的な指示が必要です。
-パッケージにとっては <filename class="directory">/usr</filename>
-にインストールすることが指定されたものとなりますが、実際には
-<filename class="directory">/usr/pkg</filename>
-配下にインストールされるわけです。
+パッケージにとっては <filename class="directory">/usr</filename> にインストールすることが指定されたものとなりますが、実際には <filename
+class="directory">/usr/pkg</filename> 配下にインストールされるわけです。
 このインストール方法は単純なものではありません。
 例えば今 libfoo-1.1 というパッケージをインストールするものとします。
 以下のようなコマンドでは、このパッケージを正しくインストールできません。
@@ -305,13 +302,10 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 @y
 <para>
 インストール自体は動作しますが、このパッケージに依存している他のパッケージは、期待どおりには libfoo を正しくリンクしません。
-例えば libfoo をリンクするパッケージをコンパイルする際には
-<filename class='libraryfile'>/usr/lib/libfoo.so.1</filename>
-がリンクされると思うかもしれませんが、実際には
-<filename class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename>
-がリンクされることになります。
-正しくリンクするためには <envar>DESTDIR</envar>
-変数を使って、パッケージのインストールをうまく仕組む必要があります。
+例えば libfoo をリンクするパッケージをコンパイルする際には <filename
+class='libraryfile'>/usr/lib/libfoo.so.1</filename> がリンクされると思うかもしれませんが、実際には <filename
+class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンクされることになります。
+正しくリンクするためには <envar>DESTDIR</envar> 変数を使って、パッケージのインストールをうまく仕組む必要があります。
 この方法は以下のようにして行います。
 </para>
 @z
@@ -325,9 +319,7 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 <para>
 多くのパッケージは、たいていはこの手法をサポートしていますが、そうでないものもあります。
 この手法を取り入れていないパッケージに対しては、手作業にてインストールすることが必要になります。
-またはそういった問題を抱えるパッケージであれば
-<filename class='directory'>/opt</filename>
-ディレクトリにインストールする方が容易なことかもしれません。
+またはそういった問題を抱えるパッケージであれば <filename class='directory'>/opt</filename> ディレクトリにインストールする方が容易なことかもしれません。
 </para>
 @z
 
@@ -346,8 +338,7 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 @y
 <para>
 この方法ではパッケージをインストールするにあたって、あるファイルにタイムスタンプが記されます。
-インストールの直後に <command>find</command>
-コマンドを適当なオプション指定により用いることで、インストールされるすべてのファイルのログが生成されます。
+インストールの直後に <command>find</command> コマンドを適当なオプション指定により用いることで、インストールされるすべてのファイルのログが生成されます。
 これはタイムスタンプファイルの生成の後に行われます。
 この方法を用いたパッケージ管理ツールとして install-log があります。
 </para>
@@ -408,8 +399,7 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
 <command>install</command>、
 <command>mv</command>
 など様々な実行モジュールにそのライブラリをリンクさせ、ファイルシステムを変更するようなシステムコールを監視することで、そのライブラリがパッケージを追跡管理できるようになります。
-この方法を実現するためには、動的リンクする実行モジュールはすべて
-suid ビット、sgid ビットがオフでなければなりません。
+この方法を実現するためには、動的リンクする実行モジュールはすべて suid ビット、sgid ビットがオフでなければなりません。
 事前にライブラリをロードしておくと、インストール中に予期しない副作用が発生するかもしれません。
 したがって、ある程度のテスト確認を行って、パッケージ管理ツールが不具合を引き起こさないこと、しかるべきファイルの記録を取っておくことが必要とされます。
 </para>
@@ -472,9 +462,7 @@ faked の明らかな訳出は諦めた。
 (これは <ulink url="http://www.linux-foundation.org/en/Specifications">Linux Standard Base Specification</ulink>
 が規定しています。)
 また pkg-utils、Debian の apt、Gentoo の Portage システムがあります。
-このパッケージ管理手法を LFS システムに適用するヒント情報が
-<ulink url="&hints-root;fakeroot.txt"/>
-にあります。
+このパッケージ管理手法を LFS システムに適用するヒント情報が <ulink url="&hints-root;fakeroot.txt"/> にあります。
 </para>
 @z
 
@@ -498,9 +486,7 @@ faked の明らかな訳出は諦めた。
 Slackware は、パッケージアーカイブに対して
 <command>tar</command> ベースのシステムを利用しています。
 他のパッケージ管理ツールはパッケージの依存性を取り扱いますが、このシステムは意図的にこれを行っていません。
-Slackware のパッケージ管理に関する詳細は
-<ulink url="http://www.slackbook.org/html/package-management.html"/>
-を参照してください。
+Slackware のパッケージ管理に関する詳細は <ulink url="http://www.slackbook.org/html/package-management.html"/> を参照してください。
 </para>
 @z
 
@@ -523,14 +509,11 @@ Slackware のパッケージ管理に関する詳細は
 @y
 <para>
 この手法は LFS に固有のものであり Matthias Benkmann により考案されました。
-<ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink>
-から入手することが出来ます。
+<ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink> から入手することが出来ます。
 考え方としては、各パッケージを個々のユーザーが共有ディレクトリにインストールします。
 パッケージに属するファイル類は、ユーザーIDを確認することで容易に特定出来るようになります。
 この手法の特徴や短所については、複雑な話となるため本節では説明しません。
-詳しくは
-<ulink url="&hints-root;more_control_and_pkg_man.txt"/>
-に示されているヒントを参照してください。
+詳しくは <ulink url="&hints-root;more_control_and_pkg_man.txt"/> に示されているヒントを参照してください。
 </para>
 @z
 
@@ -565,9 +548,7 @@ Slackware のパッケージ管理に関する詳細は
 <para>
 LFS システムの利点の一つとして、どのファイルもディスク上のどこに位置していても構わないことです。
 他のコンピュータに対してビルドした LFS の複製を作ろうとするなら、それが同等のアーキテクチャであれば容易に実現できます。
-つまり <command>tar</command>
-コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度)
-をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
+つまり <command>tar</command> コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度) をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
 この場合でも、設定ファイルはいくらか変更することが必要です。
 変更が必要となる設定ファイルは以下のとおりです。
 <filename>/etc/hosts</filename>、
@@ -597,9 +578,6 @@ LFS システムの利点の一つとして、どのファイルもディスク�
     linkend="ch-bootable-grub"/>.</para>
 @y
 <para>
-最後に新システムを起動可能とするために
-<xref linkend="ch-bootable-grub"/>
-を設定する必要があります。
+最後に新システムを起動可能とするために <xref linkend="ch-bootable-grub"/> を設定する必要があります。
 </para>
 @z
-

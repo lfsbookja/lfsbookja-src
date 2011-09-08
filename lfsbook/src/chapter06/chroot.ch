@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -18,8 +27,7 @@
 @y
 <para>
 chroot 環境に入って最終的な LFS システムの構築、インストールを行っていきます。
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
+<systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
 chroot 環境内は、この時点では一時的なツール類のみが利用可能な状態です。
 </para>
 @z
@@ -38,16 +46,11 @@ chroot 環境内は、この時点では一時的なツール類のみが利用�
 @y
 <para>
 <command>env</command>
-コマンドの <parameter>-i</parameter>
-パラメータは、chroot 環境での変数定義をすべてクリアするものです。
-そして <envar>HOME</envar>, <envar>TERM</envar>, <envar>PS1</envar>, <envar>PATH</envar>
-という変数だけここで定義し直します。
-<parameter>TERM=$TERM</parameter> は
-chroot 環境に入る前と同じ値を <envar>TERM</envar> 変数に与えます。
-この設定は <command>vim</command> や <command>less</command>
-のようなプログラムの処理が適切に行われるために必要となります。
-これ以外の変数として <envar>CFLAGS</envar> や <envar>CXXFLAGS</envar>
-などが必要であれば、ここで定義しておくと良いでしょう。
+コマンドの <parameter>-i</parameter> パラメーターは、chroot 環境での変数定義をすべてクリアするものです。
+そして <envar>HOME</envar>, <envar>TERM</envar>, <envar>PS1</envar>, <envar>PATH</envar> という変数だけここで定義し直します。
+<parameter>TERM=$TERM</parameter> は chroot 環境に入る前と同じ値を <envar>TERM</envar> 変数に与えます。
+この設定は <command>vim</command> や <command>less</command> のようなプログラムの処理が適切に行われるために必要となります。
+これ以外の変数として <envar>CFLAGS</envar> や <envar>CXXFLAGS</envar> などが必要であれば、ここで定義しておくと良いでしょう。
 </para>
 @z
 
@@ -60,11 +63,8 @@ chroot 環境に入る前と同じ値を <envar>TERM</envar> 変数に与えま�
 @y
 <para>
 ここから先は <envar>LFS</envar> 変数は不要となります。
-すべての作業は LFS ファイル・システム内で行っていくことになるからです。
-起動される Bash シェルは <filename class="directory">$LFS</filename>
-ディレクトリがルート
-(<filename class="directory">/</filename> ディレクトリ)
-となって動作します。
+すべての作業は LFS ファイルシステム内で行っていくことになるからです。
+起動される Bash シェルは <filename class="directory">$LFS</filename> ディレクトリがルート (<filename class="directory">/</filename> ディレクトリ) となって動作します。
 </para>
 @z
 
@@ -80,8 +80,7 @@ chroot 環境に入る前と同じ値を <envar>TERM</envar> 変数に与えま�
 <filename class="directory">/tools/bin</filename> が
 <envar>PATH</envar> 変数内の最後に加わっています。
 一時的なツール類は、それぞれの正式版がインストールされていくに従って使われなくなります。
-これがうまく動作するのは <command>bash</command> の <parameter>+h</parameter>
-オプションを用いることによってハッシュ機能をオフにしているからであり、実行モジュールの場所を覚えておく機能を無効にしているからです。
+これがうまく動作するのは <command>bash</command> の <parameter>+h</parameter> オプションを用いることによってハッシュ機能をオフにしているからであり、実行モジュールの場所を覚えておく機能を無効にしているからです。
 </para>
 @z
 
@@ -91,8 +90,7 @@ chroot 環境に入る前と同じ値を <envar>TERM</envar> 変数に与えま�
   <filename>/etc/passwd</filename> file has not been created yet.</para>
 @y
 <para>
-<command>bash</command> のプロンプトに <computeroutput>I have no name!</computeroutput>
-と表示されますがこれは正常です。
+<command>bash</command> のプロンプトに <computeroutput>I have no name!</computeroutput> と表示されますがこれは正常です。
 この時点ではまだ <filename>/etc/passwd</filename> を生成していないからです。
 </para>
 @z
@@ -108,11 +106,8 @@ chroot 環境に入る前と同じ値を <envar>TERM</envar> 変数に与えま�
 @y
 <para>
 本章のこれ以降と次章では、すべてのコマンドを chroot 環境内にて実行することが必要です。
-例えばシステムを再起動する場合のように chroot 環境からいったん抜け出した場合には、
-<xref linkend="ch-system-bindmount"/> と
-<xref linkend="ch-system-kernfsmount"/>
-にて説明した仮想カーネル・ファイル・システムがマウントされていることを確認してください。
-そして chroot 環境に入り直してからインストール作業を再開してください。 
+例えばシステムを再起動する場合のように chroot 環境からいったん抜け出した場合には、<xref
+linkend="ch-system-bindmount"/> と <xref linkend="ch-system-kernfsmount"/> にて説明した仮想カーネルファイルシステムがマウントされていることを確認してください。
+そして chroot 環境に入り直してからインストール作業を再開してください。
 </para>
 @z
-

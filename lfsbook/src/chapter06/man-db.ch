@@ -45,9 +45,8 @@ Man-DB パッケージは man ページを検索したり表示したりする�
           to user <systemitem class="username">man</systemitem>.</para>
 @y
 <para>
-これは <command>man</command>
-プログラムが <systemitem class="username">man</systemitem>
-ユーザーに対して setuid を実行しないようにします。
+これは <command>man</command> プログラムが <systemitem
+class="username">man</systemitem> ユーザーに対して setuid を実行しないようにします。
 </para>
 @z
 
@@ -64,18 +63,13 @@ Man-DB パッケージは man ページを検索したり表示したりする�
 @y
 <para>
 この三つのオプションはデフォルトで利用するプログラムを指定します。
-<command>lynx</command>
-はテキストベースの Web ブラウザです。
+<command>lynx</command> はテキストベースの Web ブラウザーです。
 (BLFS でのインストール手順を参照してください。)
-<command>vgrind</command>
-はプログラムソースを Groff の入力形式に変換します。
-<command>grap</command>
-は Groff 文書においてグラフを組版するために利用します。
-<command>vgrind</command> と <command>grap</command>
-は man ページを見るだけであれば必要ありません。
+<command>vgrind</command> はプログラムソースを Groff の入力形式に変換します。
+<command>grap</command> は Groff 文書においてグラフを組版するために利用します。
+<command>vgrind</command> と <command>grap</command> は man ページを見るだけであれば必要ありません。
 これらは LFS や BLFS には含まれません。
-もし利用したい場合は
-LFS の構築を終えた後に自分でインストールしてください。
+もし利用したい場合は LFS の構築を終えた後に自分でインストールしてください。
 </para>
 @z
 
@@ -97,8 +91,7 @@ LFS の構築を終えた後に自分でインストールしてください。
 @y
 <para>
 テストのうち二つは失敗します。
-これは Groff の警告メッセージに依存しているからであり、Groff-1.21
-にて微妙に変更になったものです。
+これは Groff の警告メッセージに依存しているからであり、Groff-1.21 にて微妙に変更になったものです。
 </para>
 @z
 
@@ -122,9 +115,8 @@ LFS の構築を終えた後に自分でインストールしてください。
     pages installed in that directory are UTF-8 encoded.</para>
 @y
 <para>
-以下に示す表は
-<filename class="directory">/usr/share/man/&lt;ll&gt;</filename>
-配下にインストールされる man ページとそのエンコーディングを示します。
+以下に示す表は <filename
+class="directory">/usr/share/man/&lt;ll&gt;</filename> 配下にインストールされる man ページとそのエンコーディングを示します。
 Man-DB は man ページが UTF-8 エンコーディングかどうかを正しく認識します。
 </para>
 @z
@@ -133,7 +125,7 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
 <title>Expected character encoding of legacy 8-bit manual pages</title>
 @y
 <title>
-8 ビット man ページのキャラクタエンコーディング
+8 ビット man ページのキャラクターエンコーディング
 </title>
 @z
 
@@ -513,8 +505,7 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
 @y
 <para>
 $MANPATH の内容を表示します。
-あるいは ($MANPATH が設定されていない場合は)
-man.conf 内の設定とユーザー設定に基づいて適切な検索パスを表示します。
+あるいは ($MANPATH が設定されていない場合は) man.conf 内の設定とユーザー設定に基づいて適切な検索パスを表示します。
 </para>
 @z
 
@@ -539,10 +530,6 @@ separate word の意味が分からなかったため訳出しなかった。
           <emphasis>file</emphasis></para>
 @y
 <para>
-ファイルの内容を読み込んで、
-<emphasis>.so file</emphasis>
-の形で書かれている記述行を、その <emphasis>file</emphasis>
-の内容に置き換えます。
+ファイルの内容を読み込んで、<emphasis>.so file</emphasis> の形で書かれている記述行を、その <emphasis>file</emphasis> の内容に置き換えます。
 </para>
 @z
-

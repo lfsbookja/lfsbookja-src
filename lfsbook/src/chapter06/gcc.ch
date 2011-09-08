@@ -35,11 +35,9 @@ GCC パッケージは C コンパイラーや C++ コンパイラーなどの G
     Binutils will be used instead:</para>
 @y
 <para>
-<command>sed</command>
-による置換を行って <filename class="libraryfile">libiberty.a</filename>
-をインストールしないようにします。
-<filename class="libraryfile">libiberty.a</filename>
-は Binutils が提供するものを利用することにします。
+<command>sed</command> による置換を行って <filename
+class="libraryfile">libiberty.a</filename> をインストールしないようにします。
+<filename class="libraryfile">libiberty.a</filename> は Binutils が提供するものを利用することにします。
 </para>
 @z
 
@@ -50,10 +48,7 @@ GCC パッケージは C コンパイラーや C++ コンパイラーなどの G
     consistent compiler builds:</para>
 @y
 <para>
-<xref linkend="ch-tools-gcc-pass2"/>
-にて行ったように <command>sed</command>
-を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option>
-を強制的に指定し、一貫したコンパイルを実現します。
+<xref linkend="ch-tools-gcc-pass2"/> にて行ったように <command>sed</command> を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option> を強制的に指定し、一貫したコンパイルを実現します。
 </para>
 @z
 
@@ -66,7 +61,7 @@ GCC パッケージは C コンパイラーや C++ コンパイラーなどの G
 @y
     <para>
     <command>fixincludes</command> スクリプトは、たまにエラーを引き起こし、それまでにインストールされているシステムヘッダーファイルを修正してしまうことがあります。
-    ここまでにインストールしてきたヘッダファイルは修正する必要がないので、以下のコマンドを実行して <command>fixincludes</command> スクリプトを実行しないようにします。
+    ここまでにインストールしてきたヘッダーファイルは修正する必要がないので、以下のコマンドを実行して <command>fixincludes</command> スクリプトを実行しないようにします。
     </para>
 @z
 
@@ -242,7 +237,7 @@ GCC パッケージは C コンパイラーや C++ コンパイラーなどの G
   <filename class="directory">/usr/lib</filename> directory.</para>
 @y
   <para>
-  作業しているマシンアーキテクチャによっては、上の結果が微妙に異なるかもしれません。
+  作業しているマシンアーキテクチャーによっては、上の結果が微妙に異なるかもしれません。
   その違いは、たいていは <filename class="directory">/usr/lib/gcc</filename> の次のディレクトリ名にあります。
   作業マシンが 64 ビット機である場合、ディレクトリ名の後ろの方に <filename
   class="directory">lib64</filename> という名が出てくることになります。

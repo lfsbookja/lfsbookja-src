@@ -258,7 +258,7 @@
           capabilities of a certain terminal</para>
 @y
           <para>
-          terminfo の定義項目に対するコンパイラです。
+          terminfo の定義項目に対するコンパイラーです。
           これはソース形式の terminfo ファイルをバイナリ形式に変換し、ncurses ライブラリ内の処理ルーチンが利用できるようにします。
           terminfo ファイルは特定端末の特性に関する情報が記述されるものです。
           </para>

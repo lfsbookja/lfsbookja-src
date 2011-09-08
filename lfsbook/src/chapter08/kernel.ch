@@ -284,13 +284,9 @@ ID、グループ ID が適用されています。
     all files are owned by user <emphasis>root</emphasis>.</para>
 @y
 <para>
-カーネルのソース・ファイルを保持しておくつもりなら
-<filename class="directory">linux-&linux-version;</filename>
-ディレクトリにおいて <command>chown -R 0:0</command>
-を実行しておいてください。
-これによりそのディレクトリの所有者は
-<emphasis>root</emphasis>
-ユーザーとなります。
+カーネルのソースファイルを保持しておくつもりなら <filename
+class="directory">linux-&linux-version;</filename> ディレクトリにおいて <command>chown -R 0:0</command> を実行しておいてください。
+これによりそのディレクトリの所有者は <emphasis>root</emphasis> ユーザーとなります。
 </para>
 @z
 
@@ -303,11 +299,9 @@ ID、グループ ID が適用されています。
       complete.</para>
 @y
 <para>
-カーネルを説明する書の中には、カーネルのソースディレクトリに対してシンボリックリンク
-<filename class="symlink">/usr/src/linux</filename>
-の生成を勧めているものがあります。
-これはカーネル 2.6 系以前におけるものであり
-LFS システム上では生成<emphasis>してはなりません </emphasis>。
+カーネルを説明する書の中には、カーネルのソースディレクトリに対してシンボリックリンク <filename
+class="symlink">/usr/src/linux</filename> の生成を勧めているものがあります。
+これはカーネル 2.6 系以前におけるものであり LFS システム上では生成<emphasis>してはなりません </emphasis>。
 ベースとなる LFS システムを構築し、そこに新たなパッケージを追加していこうとした際に、そのことが問題となるからです。
 </para>
 @z
@@ -321,10 +315,8 @@ LFS システム上では生成<emphasis>してはなりません </emphasis>。
       the raw kernel headers or any other kernel sanitized headers.</para>
 @y
 <para>
-さらに <filename class="directory">include</filename>
-ディレクトリにあるヘッダーファイルは、<emphasis>必ず</emphasis>
-Glibc のコンパイルによって得られるものでなければならず、つまりは Linux
-カーネルの tarball によって提供されるものでなければなりません。
+さらに <filename
+class="directory">include</filename> ディレクトリにあるヘッダーファイルは、<emphasis>必ず</emphasis> Glibc のコンパイルによって得られるものでなければならず、つまりは Linux カーネルの tarball によって提供されるものでなければなりません。
 したがってカーネルヘッダーによって上書きされてしまうのは避けなければなりません。
 </para>
 @z
@@ -343,9 +335,7 @@ Glibc のコンパイルによって得られるものでなければならず�
     warning being output at boot time.</para>
 @y
 <para>
-USB ドライバーをモジュールとして構築した場合は
-<filename>/etc/modprobe.d/usb.conf</filename>
-ファイルを生成する必要があります。
+USB ドライバーをモジュールとして構築した場合は <filename>/etc/modprobe.d/usb.conf</filename> ファイルを生成する必要があります。
 USB ドライバーには ehci_hcd、ohci_hcd、uhci_hcd があります。
 これらのロード順は正しく行う必要があります。
 ehci_hcd は ohci_hcd や uhci_hcd よりも先にロードしなければなりません。

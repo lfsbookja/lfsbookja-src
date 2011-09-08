@@ -52,9 +52,7 @@ class="username">lfs</systemitem> というユーザーを作成するのが分�
         <systemitem class="username">lfs</systemitem>.</para>
 @y
 <para>
-<systemitem class="username">lfs</systemitem>
-ユーザーが利用するデフォルトのシェルを
-<command>bash</command> にします。
+<systemitem class="username">lfs</systemitem> ユーザーが利用するデフォルトのシェルを <command>bash</command> にします。
 </para>
 @z
 
@@ -63,8 +61,7 @@ class="username">lfs</systemitem> というユーザーを作成するのが分�
         to group <systemitem class="groupname">lfs</systemitem>.</para>
 @y
 <para>
-<systemitem class="username">lfs</systemitem> ユーザーのグループを
-<systemitem class="groupname">lfs</systemitem> とします。
+<systemitem class="username">lfs</systemitem> ユーザーのグループを <systemitem class="groupname">lfs</systemitem> とします。
 </para>
 @z
 
@@ -73,8 +70,7 @@ class="username">lfs</systemitem> というユーザーを作成するのが分�
         class="username">lfs</systemitem>.</para>
 @y
 <para>
-<systemitem class="username">lfs</systemitem>
-ユーザーのホームディレクトリを生成します。
+<systemitem class="username">lfs</systemitem> ユーザーのホームディレクトリを生成します。
 </para>
 @z
 
@@ -84,10 +80,8 @@ class="username">lfs</systemitem> というユーザーを作成するのが分�
         by changing the input location to the special null device.</para>
 @y
 <para>
-このパラメータは、ディレクトリ名をヌルデバイス (null device) に指定しています。
-こうすることでスケルトンディレクトリ
-(デフォルトは <filename class="directory">/etc/skel</filename>)
-からのファイル群のコピーを無効とします。
+このパラメーターは、ディレクトリ名をヌルデバイス (null device) に指定しています。
+こうすることでスケルトンディレクトリ (デフォルトは <filename class="directory">/etc/skel</filename>) からのファイル群のコピーを無効とします。
 </para>
 @z
 
@@ -144,7 +138,7 @@ class="username">lfs</systemitem> ユーザーを所有者とします。
 @y
 <para>
 <systemitem class="username">lfs</systemitem> でログインします。
-これはディスプレイマネージャを通じて仮想端末を用いることができます。
+これはディスプレイマネージャーを通じて仮想端末を用いることができます。
 また以下のコマンドを実行するのでも構いません。
 </para>
 @z
@@ -156,7 +150,7 @@ class="username">lfs</systemitem> ユーザーを所有者とします。
   <filename>bash(1)</filename> and <command>info bash</command>.</para>
 @y
 <para>
-パラメータ<quote><parameter>-</parameter></quote>は <command>su</command> コマンドの実行において、非ログイン (non-login) シェルではなく、ログインシェルを起動することを指示します。
+パラメーター<quote><parameter>-</parameter></quote>は <command>su</command> コマンドの実行において、非ログイン (non-login) シェルではなく、ログインシェルを起動することを指示します。
 ログインシェルとそうでないシェルの違いについては <filename>bash(1)</filename> や <command>info bash</command> を参照してください。
 </para>
 @z

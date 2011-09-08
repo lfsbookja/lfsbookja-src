@@ -331,7 +331,7 @@ minor timing issues が何を意味するのか不明であった。
 @y
     <para>
     各ロケールは <command>localedef</command> プログラムを使ってインストールします。
-    例えば以下に示す一つめの <command>localedef</command> では、キャラクタセットには依存しないロケール定義 <filename>/usr/share/i18n/locales/cs_CZ</filename> とキャラクタマップ定義 <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> とを結合させて <filename>/usr/lib/locale/locale-archive</filename> ファイルにその情報を付け加えます。
+    例えば以下に示す一つめの <command>localedef</command> では、キャラクターセットには依存しないロケール定義 <filename>/usr/share/i18n/locales/cs_CZ</filename> とキャラクタマップ定義 <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> とを結合させて <filename>/usr/lib/locale/locale-archive</filename> ファイルにその情報を付け加えます。
     以下のコマンドは、テストを成功させるために必要となる最低限のロケールをインストールするものです。
     </para>
 @z
@@ -341,7 +341,7 @@ minor timing issues が何を意味するのか不明であった。
     character set.</para>
 @y
     <para>
-    上に加えて、あなたの国、言語、キャラクタセットを定めるためのロケールをインストールしてください。
+    上に加えて、あなたの国、言語、キャラクターセットを定めるためのロケールをインストールしてください。
     </para>
 @z
 
@@ -364,7 +364,7 @@ minor timing issues が何を意味するのか不明であった。
     in the unlikely case you need them.</para>
 @y
     <para>
-    さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> ファイルに示されていない特殊なロケールは <command>localedef</command> コマンドを使って生成・インストールを行ってください。
+    さらに必要なら <filename>glibc-&glibc-version;/localedata/SUPPORTED</filename> ファイルに示されていない特殊なロケールは <command>localedef</command> コマンドを使って生成、インストールを行ってください。
     </para>
 @z
 

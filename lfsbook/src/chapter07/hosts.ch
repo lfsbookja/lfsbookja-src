@@ -25,10 +25,7 @@
   <filename>/etc/hosts</filename> file. The syntax is:</para>
 @y
 <para>
-ネットワークカードの準備ができたら完全修飾ドメイン名
-(fully-qualified domain name; FQDN)
-とそのエイリアス名を決定して
-<filename>/etc/hosts</filename> ファイルに記述します。
+ネットワークカードの準備ができたら完全修飾ドメイン名 (fully-qualified domain name; FQDN) とそのエイリアス名を決定して <filename>/etc/hosts</filename> ファイルに記述します。
 記述書式は以下のとおりです。
 </para>
 @z
@@ -41,7 +38,7 @@
   are:</para>
 @y
 <para>
-インターネットに公開されていないコンピュータである場合
+インターネットに公開されていないコンピューターである場合
 (つまり登録ドメインであったり、あらかじめ IP アドレスが割り当てられていたりする場合。
 普通のユーザーはこれを持ちません。)
 IP アドレスはプライベートネットワーク IP アドレスの範囲で指定します。
@@ -109,8 +106,6 @@ IP アドレスの例は 192.168.11.1 となります。
   <filename>/etc/hosts</filename> file by running:</para>
 @y
 <para>
-ネットワークカードを設定しない場合は、以下のようにして
-<filename>/etc/hosts</filename> ファイルを生成します。
+ネットワークカードを設定しない場合は、以下のようにして <filename>/etc/hosts</filename> ファイルを生成します。
 </para>
 @z
-

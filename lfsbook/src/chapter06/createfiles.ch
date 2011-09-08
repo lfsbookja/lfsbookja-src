@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -32,12 +41,10 @@
   utilities that expect the presence of <filename>/etc/mtab</filename>:</para>
 @y
 <para>
-Linux システムが適切に動作しているなら、マウントしているファイルシステムの情報を
-<filename>/etc/mtab</filename> ファイルに保持しています。
+Linux システムが適切に動作しているなら、マウントしているファイルシステムの情報を <filename>/etc/mtab</filename> ファイルに保持しています。
 このファイルは普通は、新しいファイルシステムをマウントした際に生成されます。
 しかし今の我々の chroot 環境では、ファイルシステムを一つもマウントしていません。
-そこで、このファイルの存在を前提としているプログラムを正しく動作させるため、空の
-<filename>/etc/mtab</filename> を作成しておきます。
+そこで、このファイルの存在を前提としているプログラムを正しく動作させるため、空の <filename>/etc/mtab</filename> を作成しておきます。
 </para>
 @z
 
@@ -48,11 +55,7 @@ Linux システムが適切に動作しているなら、マウントしてい�
   <filename>/etc/group</filename> files.</para>
 @y
 <para>
-<systemitem class="username">root</systemitem>
-ユーザーがログインできるように、またその <quote>root</quote>
-という名称を認識できるように <filename>/etc/passwd</filename> ファイルと
-<filename>/etc/group</filename>
-ファイルには該当する情報が登録されている必要があります。
+<systemitem class="username">root</systemitem> ユーザーがログインできるように、またその<quote>root</quote>という名称を認識できるように <filename>/etc/passwd</filename> ファイルと <filename>/etc/group</filename> ファイルには該当する情報が登録されている必要があります。
 </para>
 @z
 
@@ -61,8 +64,7 @@ Linux システムが適切に動作しているなら、マウントしてい�
   command:</para>
 @y
 <para>
-以下のコマンドを実行して <filename>/etc/passwd</filename>
-ファイルを生成します。
+以下のコマンドを実行して <filename>/etc/passwd</filename> ファイルを生成します。
 </para>
 @z
 
@@ -71,9 +73,8 @@ Linux システムが適切に動作しているなら、マウントしてい�
   (the <quote>x</quote> used here is just a placeholder) will be set later.</para>
 @y
 <para>
-<systemitem class="username">root</systemitem>
-ユーザーに対する本当のパスワードは後に定めます。
-(<quote>x</quote> は単に場所を設けるために設定しているものです。)
+<systemitem class="username">root</systemitem> ユーザーに対する本当のパスワードは後に定めます。
+(<quote>x</quote>は単に場所を設けるために設定しているものです。)
 </para>
 @z
 
@@ -82,8 +83,7 @@ Linux システムが適切に動作しているなら、マウントしてい�
   command:</para>
 @y
 <para>
-以下のコマンドを実行して <filename>/etc/group</filename>
-ファイルを生成します。
+以下のコマンドを実行して <filename>/etc/group</filename> ファイルを生成します。
 </para>
 @z
 
@@ -101,13 +101,10 @@ Linux システムが適切に動作しているなら、マウントしてい�
 @y
 <para>
 作成するグループは何かの標準に基づいたものではありません。
-一部は本章の Udev の設定に必要となるものですし、一部は既存の Linux
-ディストリビューションが採用している慣用的なものです。
-Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照)
-では <systemitem class="groupname">root</systemitem>
-グループのグループID (GID) は 0、
-<systemitem class="groupname">bin</systemitem>
-グループの GID は 1 を定めているにすぎません。
+一部は本章の Udev の設定に必要となるものですし、一部は既存の Linux ディストリビューションが採用している慣用的なものです。
+Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照) では <systemitem
+class="groupname">root</systemitem> グループのグループID (GID) は 0、<systemitem
+class="groupname">bin</systemitem> グループの GID は 1 を定めているにすぎません。
 他のグループとその GID はシステム管理者が自由に取り決めることができます。
 というのも通常のプログラムであれば GID の値に依存することはなく、あくまでグループ名を用いてプログラミングされているからです。
 </para>
@@ -122,13 +119,8 @@ Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照)
   work:</para>
 @y
 <para>
-プロンプトに表示される <quote>I have no name!</quote>
-を正しくするため、新たなシェルを起動します。
-<xref linkend="chapter-temporary-tools"/>
-にて完全に Glibc をインストールし、
-<filename>/etc/passwd</filename> ファイルと
-<filename>/etc/group</filename>
-ファイルを作ったので、ユーザー名とグループ名の名前解決が適切に動作します。
+プロンプトに表示される<quote>I have no name!</quote>を正しくするため、新たなシェルを起動します。
+<xref linkend="chapter-temporary-tools"/> にて完全に Glibc をインストールし、<filename>/etc/passwd</filename> ファイルと <filename>/etc/group</filename> ファイルを作ったので、ユーザー名とグループ名の名前解決が適切に動作します。
 </para>
 @z
 
@@ -142,10 +134,8 @@ Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照)
 @y
 <para>
 ディレクティブ <parameter>+h</parameter> について触れておきます。
-これは <command>bash</command>
-に対して実行パスの内部ハッシュ機能を利用しないよう指示するものです。
-もしこのディレクティブを指定しなかった場合 <command>bash</command>
-は一度実行したファイルのパスを記憶します。
+これは <command>bash</command> に対して実行パスの内部ハッシュ機能を利用しないよう指示するものです。
+もしこのディレクティブを指定しなかった場合 <command>bash</command> は一度実行したファイルのパスを記憶します。
 コンパイルしてインストールした実行ファイルはすぐに利用していくために、本章での作業では
 <parameter>+h</parameter> ディレクティブを常に使っていくことにします。
 </para>
@@ -163,8 +153,7 @@ Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照)
 <command>login</command>、
 <command>agetty</command>、
 <command>init</command>
-といったプログラム (あるいは他のプログラム)
-は、システムに誰がいつログインしたかといった情報を多くのログファイルに記録します。
+といったプログラム (あるいは他のプログラム) は、システムに誰がいつログインしたかといった情報を多くのログファイルに記録します。
 しかしログファイルがあらかじめ存在していない場合は、ログファイルの出力が行われません。
 そこでそのようなログファイルを作成し、適切なパーミッションを与えます。
 </para>
@@ -179,13 +168,9 @@ Linux Standard Base (<ulink url="http://www.linuxbase.org"/> 参照)
   records the bad login attempts.</para>
 @y
 <para>
-<filename>/var/run/utmp</filename>
-ファイルは現在ログインしているユーザーの情報を保持します。
-<filename>/var/log/wtmp</filename>
-ファイルはすべてのログイン・ログアウトの情報を保持します。
-<filename>/var/log/lastlog</filename>
-ファイルは各ユーザーが最後にログインした情報を保持します。
-<filename>/var/log/btmp</filename>
-ファイルは不正なログイン情報を保持します。
+<filename>/var/run/utmp</filename> ファイルは現在ログインしているユーザーの情報を保持します。
+<filename>/var/log/wtmp</filename> ファイルはすべてのログイン、ログアウトの情報を保持します。
+<filename>/var/log/lastlog</filename> ファイルは各ユーザーが最後にログインした情報を保持します。
+<filename>/var/log/btmp</filename> ファイルは不正なログイン情報を保持します。
 </para>
 @z

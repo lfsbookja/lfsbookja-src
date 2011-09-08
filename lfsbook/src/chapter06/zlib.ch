@@ -56,7 +56,7 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
 <para>
 CFLAGS を設定することで、デフォルトの最適化オプション指定を上書きします。
 実行時エラーが発生する場合があるため、それを修正するものです。
--mstackrealign オプションは Intel アーキテクチャではないシステムではビルドに失敗するかもしれません。
+-mstackrealign オプションは Intel アーキテクチャーではないシステムではビルドに失敗するかもしれません。
 </para>
 @z
 
@@ -85,11 +85,9 @@ CFLAGS を設定することで、デフォルトの最適化オプション指�
     <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
 @y
     <para>共有ライブラリは
-    <filename class="directory">/lib</filename>
-    に移す必要があります。
-    またそれに合わせて <filename class="directory">/usr/lib</filename>
-    にある <filename class="extension">.so</filename>
-    ファイルを再生成する必要があります。</para>
+    <filename class="directory">/lib</filename> に移す必要があります。
+    またそれに合わせて <filename class="directory">/usr/lib</filename> にある <filename
+    class="extension">.so</filename> ファイルを再生成する必要があります。</para>
 @z
 
 @x
@@ -114,8 +112,7 @@ CFLAGS を設定することで、デフォルトの最適化オプション指�
           <para>Contains compression and decompression functions used by
           some programs</para>
 @y
-<para>
-各種プログラムから呼び出される、圧縮、伸張 (解凍) を行う関数を提供します。
-</para>
+          <para>
+          各種プログラムから呼び出される、圧縮、伸張 (解凍) を行う関数を提供します。
+          </para>
 @z
-

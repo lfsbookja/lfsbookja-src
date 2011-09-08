@@ -17,7 +17,7 @@
     <para>The Vim package contains a powerful text editor.</para>
 @y
 <para>
-Vim パッケージは強力なテキストエディタを提供します。
+Vim パッケージは強力なテキストエディターを提供します。
 </para>
 @z
 
@@ -254,9 +254,9 @@ Vim には GUI 版があり X や他のライブラリがインストールさ�
 パラメータを指定すれば vim の文法ハイライト (syntax highlighting) 機能が有効になります。
 最後にある <emphasis>if</emphasis>
 文は、<parameter>set background=dark</parameter>
-を指定した場合に、特定の端末エミュレータ上において <command>vim</command>
+を指定した場合に、特定の端末エミュレーター上において <command>vim</command>
 が背景色を誤って認識しないようにするためのものです。
-エミュレータの背景色が黒色であった場合に、より適切なハイライトが実現できます。
+エミュレーターの背景色が黒色であった場合に、より適切なハイライトが実現できます。
 </para>
 @z
 
@@ -278,18 +278,10 @@ Vim には GUI 版があり X や他のライブラリがインストールさ�
       <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename>.</para>
 @y
 <para>
-Vim がインストールするスペルファイル (spell files)
-はデフォルトでは英語に対するものだけです。
-必要とする言語のスペルファイルをインストールするなら
-<ulink url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/>
-から、特定の言語、エンコーディングによる
-<filename>*.spl</filename>
-ファイル、またオプションとして
-<filename>*.sug</filename>
-ファイルをダウンロードしてください。
-そしてそれらのファイルを
-<filename class='directory'>/usr/share/&vim-docdir;/spell/</filename>
-ディレクトリに保存してください。
+Vim がインストールするスペルファイル (spell files) はデフォルトでは英語に対するものだけです。
+必要とする言語のスペルファイルをインストールするなら <ulink
+url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から、特定の言語、エンコーディングによる <filename>*.spl</filename> ファイル、またオプションとして <filename>*.sug</filename> ファイルをダウンロードしてください。
+そしてそれらのファイルを <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename> ディレクトリに保存してください。
 </para>
 @z
 
@@ -298,9 +290,7 @@ Vim がインストールするスペルファイル (spell files)
       <filename>/etc/vimrc</filename> is needed, e.g.:</para>
 @y
 <para>
-スペルファイルを利用するには
-<filename>/etc/vimrc</filename>
-ファイルにて、例えば以下のような設定が必要になります。
+スペルファイルを利用するには <filename>/etc/vimrc</filename> ファイルにて、例えば以下のような設定が必要になります。
 </para>
 @z
 
@@ -411,8 +401,7 @@ Vim がインストールするスペルファイル (spell files)
           <command>vim</command></para>
 @y
 <para>
-<command>vim</command>
-の基本的なキー操作とコマンドについて教えてくれます。
+<command>vim</command> の基本的なキー操作とコマンドについて教えてくれます。
 </para>
 @z
 
@@ -425,4 +414,3 @@ Vim がインストールするスペルファイル (spell files)
 逆の変換も行うことができるため、バイナリパッチにも利用されます。
 </para>
 @z
-

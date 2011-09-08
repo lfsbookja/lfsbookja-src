@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,14 +29,10 @@
   tools.</para>
 @y
 <para>
-LFS システムは、既にインストールされている Linux ディストリビューション
-(Debian、Mandriva、Red Hat、SUSE など)
-を利用して構築していきます。
+LFS システムは、既にインストールされている Linux ディストリビューション (Debian、Mandriva、Red Hat、SUSE など) を利用して構築していきます。
 この既存の Linux システム（ホスト）は、LFS 構築のために様々なプログラム類を利用する基盤となります。
-プログラム類とはコンパイラ、リンカ、シェルなどです。
-したがってそのディストリビューションのインストール時には
-<quote>開発 (development)</quote>
-オプションを選択し、それらのプログラム類が利用できるようにしておく必要があります。
+プログラム類とはコンパイラー、リンカー、シェルなどです。
+したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類が利用できるようにしておく必要があります。
 </para>
 @z
 
@@ -43,14 +48,11 @@ LFS システムは、既にインストールされている Linux ディスト
   to download a copy, visit <ulink url="&livecd-root;"/>.</para>
 @y
 <para>
-コンピュータ内にインストールされているディストリビューションを利用するのではなく、
-Linux From Scratch LiveCD、あるいは他に提供されている LiveCD を利用することもできます。
+コンピュータ内にインストールされているディストリビューションを利用するのではなく、Linux From Scratch LiveCD、あるいは他に提供されている LiveCD を利用することもできます。
 LFS LiveCD はホストシステムとして利用することができ、本書の手順を実施するための必要なツール類がすべて含まれます。
 LiveCD の開発は思うように進んでいませんが、ホストシステムとして利用することが可能です。
-現時点にて本書によるビルド作業を進めるなら
-<quote>-nosrc</quote> や <quote>-min</quote> という名称が含まれている版を用いてください。
-LFS LiveCD の詳細や LiveCD ダウンロード方法については
-<ulink url="&livecd-root;"/> を参照してください。
+現時点にて本書によるビルド作業を進めるなら<quote>-nosrc</quote>や<quote>-min</quote>という名称が含まれている版を用いてください。
+LFS LiveCD の詳細や LiveCD ダウンロード方法については <ulink url="&livecd-root;"/> を参照してください。
 </para>
 @z
 
@@ -78,16 +80,12 @@ LFS LiveCD は最近のハードウェア環境において、うまく動作し
   work your way through <xref linkend="chapter-temporary-tools"/> and beyond.</para>
 @y
 <para>
-<xref linkend="chapter-partitioning"/>
-では、新しく構築する Linux のためのパーティションとファイルシステムの生成方法について説明します。
+<xref linkend="chapter-partitioning"/> では、新しく構築する Linux のためのパーティションとファイルシステムの生成方法について説明します。
 そのパーティション上にて LFS システムをコンパイルしインストールします。
-<xref linkend="chapter-getting-materials"/>
-では LFS 構築に必要となるパッケージとパッチについて説明します。
+<xref linkend="chapter-getting-materials"/> では LFS 構築に必要となるパッケージとパッチについて説明します。
 これらをダウンロードして新たなファイルシステム内に保存します。
-<xref linkend="chapter-final-preps"/>
-では作業環境の準備について述べています。
-この章では重要な説明を行っていますので <xref linkend="chapter-temporary-tools"/>
-以降に進む前に是非注意して読んでください。
+<xref linkend="chapter-final-preps"/> では作業環境の準備について述べています。
+この章では重要な説明を行っていますので <xref linkend="chapter-temporary-tools"/> 以降に進む前に是非注意して読んでください。
 </para>
 @z
 
@@ -100,13 +98,11 @@ LFS LiveCD は最近のハードウェア環境において、うまく動作し
   to compile a compiler, you need a compiler.</para>
 @y
 <para>
-<xref linkend="chapter-temporary-tools"/>
-では数多くのパッケージをインストールします。
-これらは基本的な開発ツール (ツールチェーン)
-を構成するものであり <xref linkend="chapter-building-system"/>
-において最終的なシステムを構築するために利用します。
+<xref linkend="chapter-temporary-tools"/> では数多くのパッケージをインストールします。
+これらは基本的な開発ツール (ツールチェーン) を構成するものであり <xref
+linkend="chapter-building-system"/> において最終的なシステムを構築するために利用します。
 パッケージの中には自分自身を循環的に必要とするような依存関係を持つものがあります。
-例えばコンパイラをコンパイルするためにはコンパイラが必要となります。
+例えばコンパイラーをコンパイルするためにはコンパイラーが必要となります。
 </para>
 @z
 
@@ -124,16 +120,14 @@ LFS LiveCD は最近のハードウェア環境において、うまく動作し
   kernel. </para>
 @y
 <para>
-<xref linkend="chapter-temporary-tools"/>
-ではツールチェーンの第1回めの構築方法を示します。
+<xref linkend="chapter-temporary-tools"/> ではツールチェーンの第1回めの構築方法を示します。
 そこではまず Binutils と GCC を構築します。
 (第1回めと表現しているということは、つまりこれら2つのパッケージは後に再構築します。)
 次に C ライブラリである Glibc を構築します。
 Glibc は第1回めのツールチェーンを用いてコンパイルされます。
 そして第2回めのツールチェーン構築を行います。
 この時のツールチェーンは新たに構築した Glibc をリンクします。
-それ以降の <xref linkend="chapter-temporary-tools"/>
-に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
+それ以降の <xref linkend="chapter-temporary-tools"/> に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
 上の作業をすべて終えたら LFS のインストール作業はもはやホストディストリビューションに依存しません。
 ただし作動させるカーネルだけは使い続けます。
 </para>
@@ -146,8 +140,7 @@ Glibc は第1回めのツールチェーンを用いてコンパイルされま�
 @y
 <para>
 ホストシステムのツール類から新しいシステムを切り離していくこの手順は、やり過ぎのように見えるかもしれません。
-<xref linkend="ch-tools-toolchaintechnotes"/>
-にて詳細に説明しているので参照してください。
+<xref linkend="ch-tools-toolchaintechnotes"/> にて詳細に説明しているので参照してください。
 </para>
 @z
 
@@ -165,15 +158,11 @@ Glibc は第1回めのツールチェーンを用いてコンパイルされま�
   normal.</para>
 @y
 <para>
-<xref linkend="chapter-building-system"/>
-にて LFS システムが出来上がります。
-<command>chroot</command> (ルートをチェンジする)
-プログラムを使って仮想的な環境に入り
-LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
+<xref linkend="chapter-building-system"/> にて LFS システムが出来上がります。
+<command>chroot</command> (ルートをチェンジする) プログラムを使って仮想的な環境に入り LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
 これは LFS パーティションをルートパーティションとするシステム再起動と同じことです。
 ただ実際にはシステムを再起動はしません。
-再起動できるシステムとするためにはもう少し作業を必要としますし、この時点ではまだそれが必要ではないので
-<command>chroot</command> を行う方法を取ります。
+再起動できるシステムとするためにはもう少し作業を必要としますし、この時点ではまだそれが必要ではないので <command>chroot</command> を行う方法を取ります。
 <command>chroot</command> を使うメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
 パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。
 </para>
@@ -188,13 +177,8 @@ LFS パーティション内のディレクトリをルートディレクトリ�
   ready to reboot into the new LFS system.</para>
 @y
 <para>
-インストールの仕上げとして
-<xref linkend="chapter-bootscripts"/>
-にて LFS ブートスクリプトを設定し、
-<xref linkend="chapter-bootable"/>
-にてカーネルとブートローダを設定します。
-<xref linkend="chapter-finalizing"/>
-では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
+インストールの仕上げとして <xref linkend="chapter-bootscripts"/> にて LFS ブートスクリプトを設定し、<xref linkend="chapter-bootable"/> にてカーネルとブートローダーを設定します。
+<xref linkend="chapter-finalizing"/> では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
 本書に示す作業をすべて実施すれば、新たな LFS システムを起動することが出来ます。
 </para>
 @z
@@ -212,4 +196,3 @@ LFS パーティション内のディレクトリをルートディレクトリ�
 読者の皆さんには、是非 LFS アドベンチャーに挑んで頂きたいと思います。
 </para>
 @z
-

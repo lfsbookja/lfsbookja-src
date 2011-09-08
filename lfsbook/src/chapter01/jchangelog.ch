@@ -54,6 +54,17 @@
 -->
 
     <listitem>
+      <para>2011-09-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          随所にて用語修正と整形。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-09-05</para>
       <itemizedlist>
         <listitem>

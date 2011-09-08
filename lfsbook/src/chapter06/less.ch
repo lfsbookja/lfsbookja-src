@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -7,7 +16,7 @@
 @x
     <para>The Less package contains a text file viewer.</para>
 @y
-    <para>Less パッケージはテキストファイルビューアを提供します。</para>
+    <para>Less パッケージはテキストファイルビューアーを提供します。</para>
 @z
 
 @x
@@ -34,9 +43,7 @@
           files.</para>
 @y
 <para>
-本パッケージによって作成されるプログラムが
-<filename class="directory">/etc</filename>
-ディレクトリにある設定ファイルを参照するように指示します。
+本パッケージによって作成されるプログラムが <filename class="directory">/etc</filename> ディレクトリにある設定ファイルを参照するように指示します。
 </para>
 @z
 
@@ -87,7 +94,7 @@
           file, letting the user scroll, find strings, and jump to marks</para>
 @y
 <para>
-ファイルビューアまたはページャ。
+ファイルビューアーまたはページャー。
 指示されたファイルの内容を表示します。
 表示中にはスクロール、文字検索、移動が可能です。
 </para>
@@ -98,9 +105,7 @@
           and <emphasis>?</emphasis>, in filenames on Unix systems</para>
 @y
 <para>
-Unix システム上のファイル名において
-<emphasis>*</emphasis> や <emphasis>?</emphasis>
-といったメタ文字 (meta-characters) を展開するために必要となります。
+Unix システム上のファイル名において <emphasis>*</emphasis> や <emphasis>?</emphasis> といったメタ文字 (meta-characters) を展開するために必要となります。
 </para>
 @z
 
@@ -108,8 +113,6 @@ Unix システム上のファイル名において
           <para>Used to specify the key bindings for <command>less</command></para>
 @y
 <para>
-<command>less</command>
-におけるキー割り当てを設定するために利用します。
+<command>less</command> におけるキー割り当てを設定するために利用します。
 </para>
 @z
-

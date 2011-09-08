@@ -19,12 +19,10 @@
     better compression percentage than with the traditional
     <command>gzip</command>.</para>
 @y
-<para>
-Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログラムを提供します。
-テキストファイルであれば、これまでよく用いられてきた
-<command>gzip</command> に比べて <command>bzip2</command>
-の方が圧縮率の高いファイルを生成できます。
-</para>
+    <para>
+    Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログラムを提供します。
+    テキストファイルであれば、これまでよく用いられてきた <command>gzip</command> に比べて <command>bzip2</command> の方が圧縮率の高いファイルを生成できます。
+    </para>
 @z
 
 @x
@@ -58,7 +56,7 @@ Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログ�
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>make パラメータの意味：</title>
+      <title>make パラメーターの意味：</title>
 @z
 
 @x
@@ -68,16 +66,10 @@ Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログ�
           <filename class="libraryfile">libbz2.so</filename> library and links
           the Bzip2 utilities against it.</para>
 @y
-<para>
-このパラメータは Bzip2 のビルドにあたって通常の
-<filename>Makefile</filename>
-ファイルではなく <filename>Makefile-libbz2_so</filename>
-ファイルを利用することを指示します。
-これはダイナミックライブラリ
-<filename class="libraryfile">libbz2.so</filename>
-ライブラリをビルドし、Bzip2
-の各種プログラムをこれにリンクします。
-</para>
+          <para>
+          このパラメーターは Bzip2 のビルドにあたって通常の <filename>Makefile</filename> ファイルではなく <filename>Makefile-libbz2_so</filename> ファイルを利用することを指示します。
+          これはダイナミックライブラリ <filename class="libraryfile">libbz2.so</filename> ライブラリをビルドし、Bzip2 の各種プログラムをこれにリンクします。
+          </para>
 @z
 
 @x
@@ -97,11 +89,11 @@ Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログ�
     <filename class="directory">/bin</filename> directory, make
     some necessary symbolic links, and clean up:</para>
 @y
-<para>
-共有化された <command>bzip2</command> 実行モジュールを
-<filename class="directory">/bin</filename> ディレクトリにインストールします。
-また必要となるシンボリックリンクを生成し不要なものを削除します。
-</para>
+    <para>
+    共有化された <command>bzip2</command> 実行モジュールを <filename
+    class="directory">/bin</filename> ディレクトリにインストールします。
+    また必要となるシンボリックリンクを生成し不要なものを削除します。
+    </para>
 @z
 
 @x
@@ -188,19 +180,18 @@ Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログ�
           better than that achieved by more conventional compressors using
           <quote>Lempel-Ziv</quote> algorithms, like <command>gzip</command></para>
 @y
-<para>
-ブロックソート法 (バロウズ-ホイラー変換) とハフマン符号化法を用いてファイル圧縮を行います。
-圧縮率は、従来用いられてきた <quote>Lempel-Ziv</quote> アルゴリズムによるもの、例えば
-<command>gzip</command> コマンドによるものに比べて高いものです。
-</para>
+          <para>
+          ブロックソート法 (バロウズ-ホイラー変換) とハフマン符号化法を用いてファイル圧縮を行います。
+          圧縮率は、従来用いられてきた <quote>Lempel-Ziv</quote> アルゴリズムによるもの、例えば <command>gzip</command> コマンドによるものに比べて高いものです。
+          </para>
 @z
 
 @x bzip2recover
           <para>Tries to recover data from damaged bzipped files</para>
 @y
-<para>
-壊れた bzip2 ファイルの復旧を試みます。
-</para>
+          <para>
+          壊れた bzip2 ファイルの復旧を試みます。
+          </para>
 @z
 
 @x bzless
@@ -219,9 +210,7 @@ Bzip2 パッケージはファイル圧縮、伸長 (解凍) を行うプログ�
           <para>The library implementing lossless, block-sorting data
           compression, using the Burrows-Wheeler algorithm</para>
 @y
-<para>
-ブロックソート法 (バロウズ-ホイラー変換)
-による可逆的なデータ圧縮を提供するライブラリ。
-</para>
+          <para>
+          ブロックソート法 (バロウズ-ホイラー変換) による可逆的なデータ圧縮を提供するライブラリ。
+          </para>
 @z
-
