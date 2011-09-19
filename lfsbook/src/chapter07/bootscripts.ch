@@ -59,13 +59,15 @@
         ifup, localnet, modules, mountfs, mountkernfs, network, rc, reboot,
         sendsignals, setclock, static, swap, sysctl, sysklogd, template,
         udev, and udev_retry</seg>
-        <seg>/etc/rc.d, /etc/sysconfig, /lib/boot</seg>
+        <seg>/etc/rc.d, /etc/init.d (symbolic link), /etc/sysconfig, 
+        /lib/services, /lib/lsb (symbolic link)</seg>
 @y
         <seg>checkfs, cleanfs, console, consolelog, functions, halt, ifdown,
         ifup, localnet, modules, mountfs, mountkernfs, network, rc, reboot,
         sendsignals, setclock, static, swap, sysctl, sysklogd, template,
         udev, udev_retry</seg>
-        <seg>/etc/rc.d, /etc/sysconfig, /lib/boot</seg>
+        <seg>/etc/rc.d, /etc/init.d (シンボリックリンク), /etc/sysconfig, 
+        /lib/services, /lib/lsb (シンボリックリンク)</seg>
 @z
 
 @x

@@ -36,15 +36,15 @@
   <command>syslogd</command> program with the <parameter>-m 0</parameter>
   option.  This option turns off the periodic timestamp mark that
   <command>syslogd</command> writes to the log files every 20 minutes by
-  default.  If you want to turn on this periodic timestamp mark, create or edit
-  <filename>/etc/sysconfig/init_params</filename> and define the variable
+  default.  If you want to turn on this periodic timestamp mark, edit
+  <filename>/etc/sysconfig/rc.site</filename> and define the variable
   SYSKLOGD_PARMS to the desired value.  For instance, to remove all parameters,
   set the variable to a null value:</para>
 @y
   <para>
   <filename>sysklogd</filename> スクリプトは <command>syslogd</command> プログラムをパラメーター <parameter>-m 0</parameter> で実行します。
   このオプションは <command>syslogd</command> がデフォルトで 20分おきにログファイルに対して周期的にタイムスタンプを書き込む機能を無効にします。
-  この機能を有効にしたい場合は <filename>/etc/sysconfig/init_params</filename> ファイルを新たに作るか既存のものを編集して、SYSKLOGD_PARMS 変数を必要な値に設定してください。
+  この機能を有効にしたい場合は <filename>/etc/sysconfig/rc.site</filename> ファイルを新たに作るか既存のものを編集して、SYSKLOGD_PARMS 変数を必要な値に設定してください。
   例えばすべてのパラメーターを無効にする場合は、変数値をヌル値とします。
   </para>
 @z

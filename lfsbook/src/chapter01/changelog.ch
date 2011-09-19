@@ -48,6 +48,79 @@
 @z
 
 @x
+      <para>2011-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Review and update recent changes to bootscripts.</para>
+          <itemizedlist>
+             <listitem><para>Rename /etc/sysconfig/init_params to /etc/sysconfig/rc.site.</para>
+             </listitem>
+             <listitem><para>Move network services to /lib/services.</para></listitem>
+             <listitem><para>Move init-functions to /lib/lsb.</para></listitem>
+             <listitem><para>Make /lib/lsb a symlink to /lib/services.</para></listitem>
+             <listitem><para>Create convenience symlink /etc/init.d->/etc/rc.d/init.d
+                       </para></listitem>
+             <listitem><para>Add help and man pages to ifup/ifdown.
+                             </para></listitem>
+             <listitem><para>Append /run/var/bootlog to /var/log/boot.log at the end of
+                  the boot sequence.</para></listitem>
+             <listitem><para>Add capability to step through the boot scripts at boot time.
+                  </para></listitem>
+             <listitem><para>Optionally allow environment variables in sysconfig directory's
+                  console, network, and clock files to be placed in rc.site.
+                  </para></listitem>
+             <listitem><para>Add an optional FASTBOOT parameter to set /fastboot when rebooting.
+                  </para></listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Remove a minor warning message from udev that is triggered
+           by the udev_retry boot script.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Add SKIPTMPCLEAN as an optional parameter to skip cleaning
+           /tmp at boot time.</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - Add a page to Chapter 7 documenting rc.site.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトを更新。</para>
+          <itemizedlist>
+             <listitem><para>/etc/sysconfig/init_params から /etc/sysconfig/rc.site への変更。</para>
+             </listitem>
+             <listitem><para>ネットワークサービスを /lib/services に移動。</para></listitem>
+             <listitem><para>init-functions を /lib/lsb に移動。</para></listitem>
+             <listitem><para>/lib/services へのシンボリックリンクとして /lib/lsb を生成。</para></listitem>
+             <listitem><para>有用なシンボリックリンク /etc/init.d->/etc/rc.d/init.d を生成。
+                       </para></listitem>
+             <listitem><para>ifup/ifdown に対するヘルプと man ページを追加。
+                             </para></listitem>
+             <listitem><para>ブートシーケンスの終わりに /run/var/bootlog から /var/log/boot.log を追加。</para></listitem>
+             <listitem><para>起動時にブートスクリプトの順序を定める機能を追加。</para></listitem>
+             <listitem><para>sysconfig ディレクトリの console、network、clock ファイルを rc.site に配置するための環境変数を追加。
+                  </para></listitem>
+             <listitem><para>オプションパラメーター FASTBOOT を追加し、再起動時に /fastboot を設定。
+                  </para></listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - udev にて警告メッセージを除去。ブートスクリプト udev_retry にて出力されていたもの。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - オプションパラメーター SKIPTMPCLEAN を追加し、起動時の /tmp のクリーニングをスキップできるように。</para>
+        </listitem>
+        <listitem>
+           <para>[bdubbs] - 第7章に rc.site の説明ページを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-09-04</para>
       <itemizedlist>
         <listitem>

@@ -67,9 +67,10 @@ AC_CONFIG_FILES([Makefile
 		 src/bootscripts/Makefile
 		 src/bootscripts/lfs/Makefile
 		 src/bootscripts/lfs/init.d/Makefile
+		 src/bootscripts/lfs/lib/Makefile
+		 src/bootscripts/lfs/lib/services/Makefile
+		 src/bootscripts/lfs/sbin/Makefile
 		 src/bootscripts/lfs/sysconfig/Makefile
-		 src/bootscripts/lfs/sysconfig/network-devices/Makefile
-		 src/bootscripts/lfs/sysconfig/network-devices/services/Makefile
 		 src/lsb-bootscripts/Makefile
 		 src/lsb-bootscripts/etc/Makefile
 		 src/lsb-bootscripts/etc/default/Makefile

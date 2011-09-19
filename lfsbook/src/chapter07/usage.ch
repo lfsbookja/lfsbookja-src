@@ -138,7 +138,7 @@
 
 @x
   <para>As a convenience, the <command>rc</command> script reads a library of
-  functions in <filename class="directory">/lib/boot/functions</filename>.
+  functions in <filename class="directory">/lib/lsb/init-functions</filename>.
   This library also reads an optional configuration file,
   <filename>/etc/sysconfig/init_params</filename>.  Any of the system
   configuration file parameters described in subsequent sections can be
@@ -147,7 +147,7 @@
 @y
   <para>
   扱いやすさを考慮して、<command>rc</command> スクリプトは <filename
-  class="directory">/lib/boot/functions</filename> ディレクトリにあるライブラリ群を読み込む形にしています。
+  class="directory">/lib/lsb/init-functions</filename> ディレクトリにあるライブラリ群を読み込む形にしています。
   このライブラリは、さらにオプションで設定ファイル <filename>/etc/sysconfig/init_params</filename> を読み込みます。
   本節以降に説明している、各種の設定ファイルにおけるパラメーターは、上のファイルにて設定することもできます。
   上のファイルは、システム上のパラメーターを１つのファイルに集約して設定できるようになっています。

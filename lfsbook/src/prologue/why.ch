@@ -489,7 +489,7 @@ rationale は理論的根拠とか原理とか。
 @z
 
 @x PCRE
-        <para>This package is provides a library that can be used to implement
+        <para>This package provides a library that can be used to implement
         regular expression pattern matching using the same syntax and semantics
         as Perl 5.  It is a mandatory dependency of Glib, and can also be used
         by Grep.</para>
@@ -668,7 +668,7 @@ rationale は理論的根拠とか原理とか。
 @x Xz utils
         <para>This package contains programs for compressing and decompressing 
         files.  It provides the highest compression generally available
-        and the useful for decompressing packages XZ or LZMA format.</para>
+        and is useful for decompressing packages XZ or LZMA format.</para>
 @y
         <para>
         このパッケージはファイルの圧縮、伸張 (解凍) を行うプログラムを提供します。

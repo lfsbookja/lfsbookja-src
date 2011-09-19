@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-09-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter07/{bootscripts.ch, network.ch, setclock.ch, site.ch, sysklogd.ch, usage.ch},
+          src/prologue/why.ch, 各種ブートスクリプト:
+          SVN-20110918, r9598 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-09-08</para>
       <itemizedlist>
         <listitem>

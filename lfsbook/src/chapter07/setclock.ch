@@ -115,9 +115,9 @@
 
 @x
   <note><para>The CLOCKPARAMS and UTC paramaters may be alternatively set
-  in the <filename>/etc/sysconfig/init_params</filename> file.</para></note>
+  in the <filename>/etc/sysconfig/rc.site</filename> file.</para></note>
 @y
   <note><para>
-  CLOCKPARAMS と UTC パラメーターは <filename>/etc/sysconfig/init_params</filename> ファイルにて設定することもできます。
+  CLOCKPARAMS と UTC パラメーターは <filename>/etc/sysconfig/rc.site</filename> ファイルにて設定することもできます。
   </para></note>
 @z

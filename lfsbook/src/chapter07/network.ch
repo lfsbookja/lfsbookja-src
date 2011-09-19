@@ -326,14 +326,14 @@
     <para>The <envar>SERVICE</envar> variable defines the method used for
     obtaining the IP address. The LFS-Bootscripts package has a modular IP
     assignment format, and creating additional files in the <filename
-    class="directory">/lib/boot/</filename> directory allows other IP
+    class="directory">/lib/services/</filename> directory allows other IP
     assignment methods. This is commonly used for Dynamic Host Configuration
     Protocol (DHCP), which is addressed in the BLFS book.</para>
 @y
     <para>
     <envar>SERVICE</envar> 変数はIP アドレスの取得方法を指定します。
     LFS-ブートスクリプトは IP アドレス割り当て方法をモジュール化しています。
-    そして <filename class="directory">/lib/boot/</filename> ディレクトリに追加でファイルを生成すれば、他の IP アドレス割り当て方法をとることもできます。
+    そして <filename class="directory">/lib/services/</filename> ディレクトリに追加でファイルを生成すれば、他の IP アドレス割り当て方法をとることもできます。
     通常は DHCP (Dynamic Host Configuration Protocol) において利用されるものです。
     これについては BLFS ブックにて説明しています。
     </para>

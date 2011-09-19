@@ -1,1 +1,1 @@
-SUBDIRS = init.d sysconfig
+SUBDIRS = init.d lib sbin sysconfig

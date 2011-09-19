@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/chapter07
+subdir = src/bootscripts/lfs/lib/services
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
@@ -139,20 +139,11 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = @abs_bookdir@/chapter07
-EXTRA_DIST = bootscripts.ch chapter07.ch console.ch hostname.ch \
-	hosts.ch inputrc.ch introduction.ch network.ch profile.ch \
-	setclock.ch symlinks.ch sysklogd.ch udev.ch usage.ch site.ch
-
-srcs = bootscripts.xml chapter07.xml console.xml hostname.xml \
-	hosts.xml inputrc.xml introduction.xml network.xml profile.xml \
-	setclock.xml symlinks.xml sysklogd.xml udev.xml usage.xml site.xml
-
-SUFFIXES = .ch .xml
+BOOKdir = @abs_bookdir@/bootscripts/lfs/lib/services
+srcs = init-functions ipv4-static ipv4-static-route
 all: all-am
 
 .SUFFIXES:
-.SUFFIXES: .ch .xml
 $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -162,9 +153,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/chapter07/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/bootscripts/lfs/lib/services/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/chapter07/Makefile
+	  $(AUTOMAKE) --gnu src/bootscripts/lfs/lib/services/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -327,29 +318,15 @@ uninstall-am:
 	maintainer-clean maintainer-clean-generic mostlyclean \
 	mostlyclean-generic pdf pdf-am ps ps-am uninstall uninstall-am
 
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 
-all: ctie $(srcs)
+all: $(srcs)
 
-ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-bootscripts.xml: $(BOOKdir)/$@ $(srcdir)/bootscripts.ch
-chapter07.xml: $(BOOKdir)/$@ $(srcdir)/chapter07.ch
-console.xml: $(BOOKdir)/$@ $(srcdir)/console.ch
-hostname.xml: $(BOOKdir)/$@ $(srcdir)/hostname.ch
-hosts.xml: $(BOOKdir)/$@ $(srcdir)/hosts.ch
-inputrc.xml: $(BOOKdir)/$@ $(srcdir)/inputrc.ch
-introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-network.xml: $(BOOKdir)/$@ $(srcdir)/network.ch
-profile.xml: $(BOOKdir)/$@ $(srcdir)/profile.ch
-setclock.xml: $(BOOKdir)/$@ $(srcdir)/setclock.ch
-site.xml: $(BOOKdir)/$@ $(srcdir)/site.ch
-symlinks.xml: $(BOOKdir)/$@ $(srcdir)/symlinks.ch
-sysklogd.xml: $(BOOKdir)/$@ $(srcdir)/sysklogd.ch
-udev.xml: $(BOOKdir)/$@ $(srcdir)/udev.ch
-usage.xml: $(BOOKdir)/$@ $(srcdir)/usage.ch
+init-functions: $(BOOKdir)/init-functions
+	cp -p $(BOOKdir)/$@ $@
+ipv4-static: $(BOOKdir)/ipv4-static
+	cp -p $(BOOKdir)/$@ $@
+ipv4-static-route: $(BOOKdir)/ipv4-static-route
+	cp -p $(BOOKdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
