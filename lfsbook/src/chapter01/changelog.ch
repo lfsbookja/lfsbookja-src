@@ -48,6 +48,38 @@
 @z
 
 @x
+      <para>2011-09-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updates to lfs-bootscripts console script.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - lfs-bootscripts のコンソールスクリプトの更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-09-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updates to lfs-bootscripts Makefile.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - lfs-bootscripts の Makefile を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-09-18</para>
       <itemizedlist>
         <listitem>
