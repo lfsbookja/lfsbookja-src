@@ -48,14 +48,30 @@
 @z
 
 @x
-      <para>2011-09-21</para>
+      <para>2011-09-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Allow variables in rc.site to override defaults.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - rc.site における変数によってデフォルト値を上書きできるようにする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-09-22</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Updates to lfs-bootscripts console script.</para>
         </listitem>
       </itemizedlist>
 @y
-      <para>2011-09-21</para>
+      <para>2011-09-22</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - lfs-bootscripts のコンソールスクリプトの更新。</para>
