@@ -58,6 +58,16 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          随所にて用語修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/udev.ch: 訳出漏れの訂正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           SVN-20110923, r9602 対応。(日本語訳変更なし。)
           </para>
         </listitem>

@@ -34,7 +34,7 @@ Vim パッケージは強力なテキストエディターを提供します。
       installation instructions.</para>
 @y
 <para>
-もし Emacs、Joe、Nano など他のエディタを用いたい場合は
+もし Emacs、Joe、Nano など他のエディターを用いたい場合は
 <ulink url="&blfs-root;view/svn/postlfs/editors.html"/>
 に示される手順に従ってインストールしてください。
 </para>
@@ -216,7 +216,7 @@ Vim には GUI 版があり X や他のライブラリがインストールさ�
 <para>
 デフォルトで <command>vim</command>
 は Vi 非互換モード (vi-incompatible mode) で起動します。
-他のエディタを使ってきたユーザーにとっては、よく分からないものかもしれません。
+他のエディターを使ってきたユーザーにとっては、よく分からないものかもしれません。
 以下の設定における <quote>nocompatible</quote> (非互換)
 は、Vi の新しい機能を利用することを意味しています。
 もし <quote>compatible</quote> (互換)
@@ -251,7 +251,7 @@ Vim には GUI 版があり X や他のライブラリがインストールさ�
 を設定しておくと、行を超えてもバックスペースキーによる編集が可能となります。
 またインデントが自動的に行われ、コマンド起動時には自動的に挿入モードとなります。
 <parameter>syntax on</parameter>
-パラメータを指定すれば vim の文法ハイライト (syntax highlighting) 機能が有効になります。
+パラメーターを指定すれば vim の文法ハイライト (syntax highlighting) 機能が有効になります。
 最後にある <emphasis>if</emphasis>
 文は、<parameter>set background=dark</parameter>
 を指定した場合に、特定の端末エミュレーター上において <command>vim</command>
@@ -383,7 +383,7 @@ url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から、特定の言語、エ�
           <para>Is the editor</para>
 @y
 <para>
-エディタ。
+エディター。
 </para>
 @z
 

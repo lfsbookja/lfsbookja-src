@@ -106,7 +106,7 @@
 @y
     <para>
     <command>ldd</command> シェルスクリプトは Bash が定める文法書式により構成されています。
-    デフォルトで記述されているインタープリタを <command>/bin/bash</command> に変更します。
+    デフォルトで記述されているインタープリターを <command>/bin/bash</command> に変更します。
     BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink> で説明しているように、別の <command>/bin/sh</command> がインストールされている場合もあるからです。
     </para>
 @z
@@ -331,7 +331,7 @@ minor timing issues が何を意味するのか不明であった。
 @y
     <para>
     各ロケールは <command>localedef</command> プログラムを使ってインストールします。
-    例えば以下に示す一つめの <command>localedef</command> では、キャラクターセットには依存しないロケール定義 <filename>/usr/share/i18n/locales/cs_CZ</filename> とキャラクタマップ定義 <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> とを結合させて <filename>/usr/lib/locale/locale-archive</filename> ファイルにその情報を付け加えます。
+    例えば以下に示す一つめの <command>localedef</command> では、キャラクターセットには依存しないロケール定義 <filename>/usr/share/i18n/locales/cs_CZ</filename> とキャラクターマップ定義 <filename>/usr/share/i18n/charmaps/UTF-8.gz</filename> とを結合させて <filename>/usr/lib/locale/locale-archive</filename> ファイルにその情報を付け加えます。
     以下のコマンドは、テストを成功させるために必要となる最低限のロケールをインストールするものです。
     </para>
 @z

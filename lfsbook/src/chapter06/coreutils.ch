@@ -610,7 +610,7 @@
 @y
           <para>
           指定された名前のデバイスノードを生成します。
-          デバイスノードはキャラクタ型特殊ファイル (character special file)、ブロック特殊ファイル (block special file)、FIFO です。
+          デバイスノードはキャラクター型特殊ファイル (character special file)、ブロック特殊ファイル (block special file)、FIFO です。
           </para>
 @z
 

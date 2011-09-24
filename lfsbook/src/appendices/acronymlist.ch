@@ -211,7 +211,7 @@
 @x GCC
         <para>GNU Compiler Collection</para>
 @y
-        <para>GNU コンパイラ コレクション (GNU Compiler Collection)</para>
+        <para>GNU コンパイラー コレクション (GNU Compiler Collection)</para>
 @z
 
 @x GID
@@ -235,7 +235,7 @@
 @x HTML
         <para>Hypertext Markup Language</para>
 @y
-        <para>ハイパーテキスト マークアップ ランゲージ (Hypertext Markup Language)</para>
+        <para>ハイパーテキスト マークアップ 言語 (Hypertext Markup Language)</para>
 @z
 
 @x IDE
@@ -271,7 +271,7 @@
 @x IRC
         <para>Internet Relay Chat</para>
 @y
-        <para>インターネット リレイ チャット (Internet Relay Chat)</para>
+        <para>インターネット リレー チャット (Internet Relay Chat)</para>
 @z
 
 @x ISO
@@ -283,7 +283,7 @@
 @x ISP
         <para>Internet Service Provider</para>
 @y
-        <para>インターネット サービス プロバイダ (Internet Service Provider)</para>
+        <para>インターネット サービス プロバイダー (Internet Service Provider)</para>
 @z
 
 @x KB
@@ -319,7 +319,7 @@
 @x MBR
         <para>Master Boot Record</para>
 @y
-        <para>マスタ ブート レコード (Master Boot Record)</para>
+        <para>マスター ブート レコード (Master Boot Record)</para>
 @z
 
 @x MD5
@@ -361,7 +361,7 @@
 @x PCH
         <para>Pre-Compiled Headers</para>
 @y
-        <para>プリコンパイル済みヘッダ (Pre-Compiled Headers)</para>
+        <para>プリコンパイル済みヘッダー (Pre-Compiled Headers)</para>
 @z
 
 @x PCRE
@@ -445,7 +445,7 @@
 @x SMP
         <para>Symmetric Multi-Processor</para>
 @y
-        <para>対称型マルチプロセッサ (Symmetric Multi-Processor)</para>
+        <para>対称型マルチプロセッサー (Symmetric Multi-Processor)</para>
 @z
 
 @x TLDP
@@ -505,7 +505,7 @@
 @x VGA
         <para>Video Graphics Array</para>
 @y
-        <para>ビデオ グラフィックス アレイ (Video Graphics Array)</para>
+        <para>ビデオ グラフィックス アレー (Video Graphics Array)</para>
 @z
 
 @x VT
@@ -513,4 +513,3 @@
 @y
         <para>仮想端末 (Virtual Terminal)</para>
 @z
-

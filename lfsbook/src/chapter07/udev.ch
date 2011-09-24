@@ -595,7 +595,7 @@ Udev がデバイスを生成しない問題
       <para>
       Udev がデバイスノード生成のために必要となる情報を知るためには、カーネルドライバーが <systemitem class="filesystem">sysfs</systemitem> に対して属性データを提供していなければなりません。
       これはカーネルツリーの外に配置されるサードパーティ製のドライバーであれば当たり前のことです。
-      したがって <filename>/lib/udev/devices</filename> において、適切なメジャー・マイナー番号を用いた静的なデバイスノードを生成してください。
+      したがって <filename>/lib/udev/devices</filename> において、適切なメジャー、マイナー番号を用いた静的なデバイスノードを生成してください。
       (カーネルのドキュメント <filename>devices.txt</filename> またはサードパーティベンダーが提供するドキュメントを参照してください。)
       この静的デバイスノードは、<command>udev</command> ブートスクリプトによって <filename class="directory">/dev</filename> にコピーされます。
       </para>

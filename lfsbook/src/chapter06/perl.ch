@@ -476,7 +476,7 @@ Test::Harness モジュールのテストを行うコマンドラインツール
           <para>A Perl version of the stream editor <command>sed</command></para>
 @y
 <para>
-ストリームエディタ <command>sed</command> の Perl バージョン。
+ストリームエディター <command>sed</command> の Perl バージョン。
 </para>
 @z
 

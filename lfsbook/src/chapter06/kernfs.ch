@@ -61,7 +61,7 @@
     カーネルがシステムを起動する際には、いくつかのデバイスノードの存在が必要です。
     特に <filename class="devicefile">console</filename> と <filename class="devicefile">null</filename> です。
     これらのデバイスノードはハードディスク上に生成されていなければなりません。
-    <command>udevd</command> が起動し、また Linux が起動パラメータ <parameter>init=/bin/bash</parameter> によって起動されれば利用可能となります。
+    <command>udevd</command> が起動し、また Linux が起動パラメーター <parameter>init=/bin/bash</parameter> によって起動されれば利用可能となります。
     そこで以下のコマンドによりデバイスノードを生成します。
     </para>
 @z

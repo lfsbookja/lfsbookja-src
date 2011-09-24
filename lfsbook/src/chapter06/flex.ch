@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -23,8 +32,8 @@ Flex パッケージは、字句パターンを認識するプログラムを生
     <para>Apply a patch that fixes a bug in the C++ scanner generator, that causes scanner compilation to fail when using GCC-&gcc-version;:</para>
 @y
 <para>
-C++ のスキャナ生成に含まれるバグを修正するためのパッチを適用します。
-これがないと GCC-&gcc-version; を用いた時にスキャナに関するコンパイルに失敗します。
+C++ のスキャナー生成に含まれるバグを修正するためのパッチを適用します。
+これがないと GCC-&gcc-version; を用いた時にスキャナーに関するコンパイルに失敗します。
 </para>
 @z
 

@@ -225,6 +225,14 @@ File パッケージ (&file-version;)
 @z
 
 @x
+        <para>Home page: <ulink url="&glib-home;"/></para>
+        <para>Download: <ulink url="&glib-url;"/></para>
+@y
+        <para>ホームページ: <ulink url="&glib-home;"/></para>
+        <para>ダウンロード: <ulink url="&glib-url;"/></para>
+@z
+
+@x
         <para>Home page: <ulink url="&glibc-home;"/></para>
         <para>Download: <ulink url="&glibc-url;"/></para>
         <para>MD5 sum: <literal>&glibc-md5;</literal></para>

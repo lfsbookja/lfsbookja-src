@@ -58,7 +58,7 @@
   information is put in the <filename>/etc/hosts</filename> file.</para>
 @y
   <para>
-  <replaceable>&lt;lfs&gt;</replaceable> の部分はコンピュータに与える名称に置き換えてください。
+  <replaceable>&lt;lfs&gt;</replaceable> の部分はコンピューターに与える名称に置き換えてください。
   ここには完全修飾ドメイン名 (Fully Qualified Domain Name; FQDN) を記述しないでください。
   それは <filename>/etc/hosts</filename> ファイルにて設定します。
   </para>

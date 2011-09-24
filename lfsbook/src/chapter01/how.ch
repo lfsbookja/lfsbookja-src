@@ -48,7 +48,7 @@ LFS システムは、既にインストールされている Linux ディスト
   to download a copy, visit <ulink url="&livecd-root;"/>.</para>
 @y
 <para>
-コンピュータ内にインストールされているディストリビューションを利用するのではなく、Linux From Scratch LiveCD、あるいは他に提供されている LiveCD を利用することもできます。
+コンピューター内にインストールされているディストリビューションを利用するのではなく、Linux From Scratch LiveCD、あるいは他に提供されている LiveCD を利用することもできます。
 LFS LiveCD はホストシステムとして利用することができ、本書の手順を実施するための必要なツール類がすべて含まれます。
 LiveCD の開発は思うように進んでいませんが、ホストシステムとして利用することが可能です。
 現時点にて本書によるビルド作業を進めるなら<quote>-nosrc</quote>や<quote>-min</quote>という名称が含まれている版を用いてください。
