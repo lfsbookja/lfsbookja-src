@@ -48,6 +48,99 @@
 @z
 
 @x
+      <para>2011-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Fix the Coreutils i18n patch so that it runs and
+          passes all tests again.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Coreutils が正常に稼動しテストもすべて通るように i18n パッチを修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Perl-5.14.2. Fixes
+          <ulink url="&lfs-ticket-root;2933">#2933</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to File-5.09. Fixes
+          <ulink url="&lfs-ticket-root;2932">#2932</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Coreutils-8.13. Fixes
+          <ulink url="&lfs-ticket-root;2928">#2928</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add a fix for a bug in Glibc that causes programs
+          linked to SDL to segfault. Fixes
+          <ulink url="&lfs-ticket-root;2920">#2920</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Diffutils-3.2. Fixes
+          <ulink url="&lfs-ticket-root;2919">#2919</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add a patch to correct several bugs in MPFR.  Fixes
+          <ulink url="&lfs-ticket-root;2918">#2918</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Perl-5.14.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2933">#2933</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - File-5.09 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2932">#2932</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils-8.13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2928">#2928</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Glibc にて、SDL にリンクされセグメンテーションフォールトを発生してしまうバグを修正。
+          <ulink url="&lfs-ticket-root;2920">#2920</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Diffutils-3.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2919">#2919</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPFR にて、いくつかのバグ修正を行なうパッチを追加。
+          <ulink url="&lfs-ticket-root;2918">#2918</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-09-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Correct syntax in modules boot script.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-09-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトの文法誤りを訂正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-09-23</para>
       <itemizedlist>
         <listitem>

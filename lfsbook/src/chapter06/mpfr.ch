@@ -27,6 +27,12 @@
 @z
 
 @x
+    <para>Apply a patch to fix a few bugs in MPFR:</para>
+@y
+    <para>MPFR のバグを修正するために以下のパッチを適用します。</para>
+@z
+
+@x
     <para>Prepare MPFR for compilation:</para>
 @y
     <para>MPFR をコンパイルするための準備をします。</para>

@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-10-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/mpfr.ch:
+          SVN-20110929, r9611 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-09-24</para>
       <itemizedlist>
         <listitem>
