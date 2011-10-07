@@ -143,7 +143,7 @@
   <filename>/etc/sysconfig/init_params</filename>.  Any of the system
   configuration file parameters described in subsequent sections can be
   alternatively placed in this file allowing consolidation of all system
-  parameters in thsi one file.</para>
+  parameters in this one file.</para>
 @y
   <para>
   扱いやすさを考慮して、<command>rc</command> スクリプトは <filename

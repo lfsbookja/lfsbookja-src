@@ -54,6 +54,25 @@
 -->
 
     <listitem>
+      <para>2011-10-07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/packages.ch:
+          訳出漏れの訂正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/gmp.ch,
+          src/chapter07/udev.ch:
+          SVN-20111006, r9615 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-10-03</para>
       <itemizedlist>
         <listitem>

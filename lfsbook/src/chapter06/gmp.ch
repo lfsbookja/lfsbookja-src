@@ -17,11 +17,10 @@
     <para>The GMP package contains math libraries. These have useful functions
     for arbitrary precision arithmetic.</para>
 @y
-<para>
-GMP パッケージは数値演算ライブラリを提供します。
-このライブラリには任意精度演算 (arbitrary precision arithmetic)
-を行う有用な関数が含まれます。
-</para>
+    <para>
+    GMP パッケージは数値演算ライブラリを提供します。
+    このライブラリには任意精度演算 (arbitrary precision arithmetic) を行う有用な関数が含まれます。
+    </para>
 @z
 
 @x
@@ -38,21 +37,27 @@ GMP パッケージは数値演算ライブラリを提供します。
       Avoid this by invoking the configure command below with
 <screen role="nodump"><userinput><parameter>ABI=32</parameter> ./configure ...</userinput></screen></para>
 @y
-<para>
-32 ビット x86 CPU にて環境構築する際に、
-64 ビットコードを扱う CPU 環境であって <emphasis>かつ</emphasis>
-<envar>CFLAGS</envar> を指定していると、
-本パッケージの configure スクリプトは 64 ビット用の処理を行い失敗します。
-これを回避するには、以下のように処理してください。
+      <para>
+      32 ビット x86 CPU にて環境構築する際に、
+      64 ビットコードを扱う CPU 環境であって <emphasis>かつ</emphasis>
+      <envar>CFLAGS</envar> を指定していると、
+      本パッケージの configure スクリプトは 64 ビット用の処理を行い失敗します。
+      これを回避するには、以下のように処理してください。
 <screen role="nodump"><userinput><parameter>ABI=32</parameter> ./configure ...</userinput></screen></para>
+@z
+
+@x
+    <para>First, fix a minor error noted on the upstream web page:</para>
+@y
+    <para>はじめに、アップストリームのウェブページにて示されているエラー修正を行ないます。</para>
 @z
 
 @x
     <para>Prepare GMP for compilation:</para>
 @y
-<para>
-GMP をコンパイルするための準備をします。
-</para>
+    <para>
+    GMP をコンパイルするための準備をします。
+    </para>
 @z
 
 @x
@@ -70,9 +75,9 @@ GMP をコンパイルするための準備をします。
 @x
           <para>This builds the Berkeley MP compatibility library</para>
 @y
-<para>
-Berkeley MP に対する互換ライブラリをビルドします。
-</para>
+          <para>
+          Berkeley MP に対する互換ライブラリをビルドします。
+          </para>
 @z
 
 @x
@@ -85,10 +90,10 @@ Berkeley MP に対する互換ライブラリをビルドします。
       <para>The test suite for GMP in this section is considered critical.
       Do not skip it under any circumstances.</para>
 @y
-<para>
-本節における GMP のテストスイートは極めて重要なものです。
-したがってどのような場合であっても必ず実行してください。
-</para>
+    <para>
+    本節における GMP のテストスイートは極めて重要なものです。
+    したがってどのような場合であっても必ず実行してください。
+    </para>
 @z
 
 @x
@@ -101,10 +106,10 @@ Berkeley MP に対する互換ライブラリをビルドします。
     <para>Ensure that all 162 tests in the test suite passed.  
     Check the results by issuing the following command:</para>
 @y
-<para>
-162個のテストが完了することを確認してください。
-テスト結果は以下のコマンドにより確認することができます。
-</para>
+    <para>
+    162個のテストが完了することを確認してください。
+    テスト結果は以下のコマンドにより確認することができます。
+    </para>
 @z
 
 @x
@@ -148,24 +153,23 @@ Berkeley MP に対する互換ライブラリをビルドします。
 @x
           <para>Contains precision math functions.</para>
 @y
-<para>
-精度演算関数 (precision math functions) を提供します。
-</para>
+          <para>
+          精度演算関数 (precision math functions) を提供します。
+          </para>
 @z
 
 @x
           <para>Contains C++ precision math functions.</para>
 @y
-<para>
-C++ 用の精度演算関数を提供します。
-</para>
+          <para>
+          C++ 用の精度演算関数を提供します。
+          </para>
 @z
 
 @x
           <para>Contains the Berkeley MP math functions.</para>
 @y
-<para>
-Berkley MP 演算関数を提供します。
-</para>
+          <para>
+          Berkley MP 演算関数を提供します。
+          </para>
 @z
-

@@ -48,6 +48,41 @@
 @z
 
 @x
+      <para>2011-10-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bryan] - Fix the udev_retry script, and add an explanation
+          for how to configure it.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bryan] - スクリプト udev_retry の修正。およびその設定方法についての説明を追記。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-10-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a small change from upstream to gmp.  Fixes
+          <ulink url="&lfs-ticket-root;2935">#2935</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gmp にてアップストリームによる修正を追加。
+          <ulink url="&lfs-ticket-root;2935">#2935</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-02</para>
       <itemizedlist>
         <listitem>

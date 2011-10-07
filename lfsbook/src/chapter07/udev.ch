@@ -181,34 +181,35 @@ class="filesystem">sysfs</systemitem> に登録されたデータは、ユーザ
 @z
 
 @x
-      <title>Udev Bootscript</title>
+      <title>Udev Bootscripts</title>
 @y
       <title>Udev ブートスクリプト</title>
 @z
 
 @x
-      <para>The <command>/etc/rc.d/init.d/udev</command> initscript takes care of creating
-      device nodes when Linux is booted. The script unsets the uevent handler
-      from the default of <command>/sbin/hotplug</command>.  This is done
-      because the kernel no longer needs to call out to an external binary.
-      Instead <command>udevd</command> will listen on a netlink socket for
-      uevents that the kernel raises. Next, the bootscript copies any static
-      device nodes that exist in <filename
+      <para>The <command>/etc/rc.d/init.d/udev</command> initscript takes care
+      of creating device nodes when Linux is booted. The script unsets the
+      uevent handler from the default of <command>/sbin/hotplug</command>.
+      This is done because the kernel no longer needs to call out to an
+      external binary.  Instead <command>udevd</command> will listen on a
+      netlink socket for uevents that the kernel raises. Next, the bootscript
+      copies any static device nodes that exist in <filename
       class="directory">/lib/udev/devices</filename> to <filename
-      class="directory">/dev</filename>. This is necessary because some devices,
-      directories, and symlinks are needed before the dynamic device handling
-      processes are available during the early stages of booting a system, or
-      are required by <command>udevd</command> itself.  Creating static device
-      nodes in <filename class="directory">/lib/udev/devices</filename> also
-      provides an easy workaround for devices that are not supported by the
-      dynamic device handling infrastructure. The bootscript then starts the
-      Udev daemon, <command>udevd</command>, which will act on any uevents it
-      receives. Finally, the bootscript forces the kernel to replay uevents for
-      any devices that have already been registered and then waits for
+      class="directory">/dev</filename>. This is necessary because some
+      devices, directories, and symlinks are needed before the dynamic device
+      handling processes are available during the early stages of booting a
+      system, or are required by <command>udevd</command> itself.  Creating
+      static device nodes in <filename
+      class="directory">/lib/udev/devices</filename> also provides an easy
+      workaround for devices that are not supported by the dynamic device
+      handling infrastructure. The bootscript then starts the Udev daemon,
+      <command>udevd</command>, which will act on any uevents it receives.
+      Finally, the bootscript forces the kernel to replay uevents for any
+      devices that have already been registered and then waits for
       <command>udevd</command> to handle them.</para>
 @y
       <para>
-      初期起動スクリプト <command>/etc/rc.d/init.d/udev</command> は、Linux のブート時にデバイスノード生成を受け持ちます。
+      初期起動スクリプト <command>/etc/rc.d/init.d/udev</command> は、Linux のブート時にデバイスノードの生成を受け持ちます。
       このスクリプトは <command>/sbin/hotplug</command> のデフォルトから uevent ハンドラを取り除きます。
       この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
       そのかわりに、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
@@ -228,13 +229,13 @@ class="filesystem">sysfs</systemitem> に登録されたデータは、ユーザ
 @z
 
 @x
-      <para>To obtain the right major and minor number for a device, Udev relies
-      on the information provided by <systemitem
+      <para>To obtain the right major and minor number for a device, Udev
+      relies on the information provided by <systemitem
       class="filesystem">sysfs</systemitem> in <filename
       class="directory">/sys</filename>.  For example,
       <filename>/sys/class/tty/vcs/dev</filename> contains the string
-      <quote>7:0</quote>. This string is used by <command>udevd</command>
-      to create a device node with major number <emphasis>7</emphasis> and minor
+      <quote>7:0</quote>. This string is used by <command>udevd</command> to
+      create a device node with major number <emphasis>7</emphasis> and minor
       <emphasis>0</emphasis>. The names and permissions of the nodes created
       under the <filename class="directory">/dev</filename> directory are
       determined by rules specified in the files within the <filename

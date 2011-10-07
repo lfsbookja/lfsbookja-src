@@ -182,6 +182,20 @@
 @z
 
 @x
+      <term>Glibc GCC CPUID Patch - <token>&glibc-cpuid-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-cpuid-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-cpuid-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc GCC CPUID Patch - <token>&glibc-cpuid-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&glibc-cpuid-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-cpuid-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
@@ -220,6 +234,20 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>MPFR Fixes Patch - <token>&kbd-backspace-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&mpfr-fixes-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>MPFR Fixes Patch - <token>&kbd-backspace-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&mpfr-fixes-patch-md5;</literal></para>
       </listitem>
 @z
 

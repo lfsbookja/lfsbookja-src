@@ -1,6 +1,6 @@
 BOOKdir = @abs_bookdir@/bootscripts/lfs/sysconfig
 srcdir = @srcdir@
-srcs = createfiles modules rc rc.site
+srcs = createfiles modules rc rc.site udev_retry
 
 all: $(srcs)
 
@@ -11,4 +11,6 @@ modules: $(BOOKdir)/modules
 rc: $(BOOKdir)/rc
 	cp -p $(BOOKdir)/$@ $@
 rc.site: $(BOOKdir)/rc.site
+	cp -p $(BOOKdir)/$@ $@
+udev_retry: $(BOOKdir)/udev_retry
 	cp -p $(BOOKdir)/$@ $@
