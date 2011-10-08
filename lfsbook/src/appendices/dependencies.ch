@@ -318,10 +318,10 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
 %----------------------------------------------------------------------
 @x E2fsprogs
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Gzip, Make, Pkg-config, Sed, Texinfo, and Util-linux</seg>
+         Gzip, Make, Sed, Texinfo, and Util-linux</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Gzip, Make, Pkg-config, Sed, Texinfo, Util-linux</seg>
+         Gzip, Make, Sed, Texinfo, Util-linux</seg>
 @z
 @x
           <seg>None</seg>
@@ -517,36 +517,36 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x Glib
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, PCRE
-         Sed, and Texinfo</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, PCRE
-         Sed, Texinfo</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-
+% @x Glib
+%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
+%          Grep, Gzip, Linux API Headers, Make, Perl, Sed, and Texinfo</seg>
+% @y
+%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
+%          Grep, Gzip, Linux API ヘッダー, Make, Perl, Sed, Texinfo</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
+% 
 %----------------------------------------------------------------------
 @x Glibc
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
          Grep, Gzip, Linux API Headers, Make, Perl, Sed, and Texinfo</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
-         Grep, Gzip, Linux API ヘッダ, Make, Perl, Sed, Texinfo</seg>
+         Grep, Gzip, Linux API ヘッダー, Make, Perl, Sed, Texinfo</seg>
 @z
 @x
           <seg>File</seg>
@@ -1079,28 +1079,28 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x PCRE
-         <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed, and
-         Texinfo</seg>
-@y
-         <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed,
-         Texinfo</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
+% @x PCRE
+%          <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed, and
+%          Texinfo</seg>
+% @y
+%          <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed,
+%          Texinfo</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
 %----------------------------------------------------------------------
 @x Perl
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
@@ -1126,28 +1126,28 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x Pkg-config
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
-         Grep, Make, and Sed</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
-         Grep, Make, Sed</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
+% @x Pkg-config
+%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
+%          Grep, Make, and Sed</seg>
+% @y
+%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
+%          Grep, Make, Sed</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
+% @x
+%           <seg>None</seg>
+% @y
+%           <seg>なし</seg>
+% @z
 
 %----------------------------------------------------------------------
 @x Procps

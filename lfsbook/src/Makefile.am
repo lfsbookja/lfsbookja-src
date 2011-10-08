@@ -19,7 +19,7 @@ PDF_OUTPUT = ../lfsbookja-svn.pdf
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
 
-all: ctie $(srcs) stylesheets _bootscripts udev-config lfs
+all: ctie $(srcs) stylesheets _bootscripts udev-config lfs md5sums
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
@@ -145,3 +145,14 @@ wget-list: $(BOOKdir)/stylesheets/wget-list.xsl ./chapter03/chapter03.xml
 	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/wget-list \
 	  $(BOOKdir)/stylesheets/wget-list.xsl ./chapter03/chapter03.xml
 	cp -p $(BASEDIR)/wget-list{,.txt}
+
+md5sums:
+	@echo "Generating md5sum file..."
+	$(MKDIR_P) $(BASEDIR)
+	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/md5sums \
+	  stylesheets/md5sum.xsl chapter03/chapter03.xml
+	sed -i -e "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.bz2 | cut -d' ' -f1)/" \
+      $(BASEDIR)/md5sums
+	sed -i -e "s/UDEV-MD5SUM/$(shell md5sum udev-config*.tar.bz2 | cut -d' ' -f1)/" \
+      $(BASEDIR)/md5sums
+

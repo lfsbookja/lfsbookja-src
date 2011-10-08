@@ -20,12 +20,12 @@
     <systemitem class="filesystem">ext4</systemitem> journaling
     file systems.</para>
 @y
-<para>
-E2fsprogs パッケージは <systemitem class="filesystem">ext2</systemitem>
-ファイルシステムを扱うユーティリティを提供します。これは同時に
-<systemitem class="filesystem">ext3</systemitem>、<systemitem class="filesystem">ext4</systemitem>
-ジャーナリングファイルシステムもサポートします。
-</para>
+    <para>
+    E2fsprogs パッケージは <systemitem
+    class="filesystem">ext2</systemitem> ファイルシステムを扱うユーティリティを提供します。これは同時に <systemitem
+    class="filesystem">ext3</systemitem>、<systemitem
+    class="filesystem">ext4</systemitem> ジャーナリングファイルシステムもサポートします。
+    </para>
 @z
 
 @x
@@ -38,9 +38,9 @@ E2fsprogs パッケージは <systemitem class="filesystem">ext2</systemitem>
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y
-<para>
-E2fsprogs パッケージは、ソースディレクトリ内にサブディレクトリを作ってビルドすることが推奨されています。
-</para>
+    <para>
+    E2fsprogs パッケージは、ソースディレクトリ内にサブディレクトリを作ってビルドすることが推奨されています。
+    </para>
 @z
 
 @x
@@ -55,7 +55,16 @@ E2fsprogs パッケージは、ソースディレクトリ内にサブディレ�
       <title>configure オプションの意味：</title>
 @z
 
-@x
+@x PKG_CONFIG...
+          <para>This enables E2fsprogs to be built without requiring Pkg-config
+          to be built and installed first.</para>
+@y
+          <para>
+          このオプションは、Pkg-config がビルドおよびインストールされていなくても、E2fsprogs をビルドできるようにするものです。
+          </para>
+@z
+
+@x --with-root-prefix=""
           <para>Certain programs (such as the <command>e2fsck</command>
           program) are considered essential programs.  When, for example,
           <filename class="directory">/usr</filename> is not mounted, these
@@ -65,24 +74,23 @@ E2fsprogs パッケージは、ソースディレクトリ内にサブディレ�
           to E2fsprogs' configure, the programs are installed into the
           <filename class="directory">/usr</filename> directory.</para>
 @y
-<para>
-<command>e2fsck</command> などのプログラムは、極めて重要なものです。
-例えば <filename class="directory">/usr</filename>
-ディレクトリがマウントされていない時であっても、そういったプログラムは動作しなければなりません。
-それらは <filename class="directory">/lib</filename> ディレクトリや
-<filename class="directory">/sbin</filename> ディレクトリに置かれるべきものです。
-もしこのオプションの指定がなかったら、プログラムが <filename class="directory">/usr</filename>
-ディレクトリにインストールされてしまいます。
-</para>
+          <para>
+          <command>e2fsck</command> などのプログラムは、極めて重要なものです。
+          例えば <filename class="directory">/usr</filename> ディレクトリがマウントされていない時であっても、そういったプログラムは動作しなければなりません。
+          それらは <filename class="directory">/lib</filename> ディレクトリや <filename
+          class="directory">/sbin</filename> ディレクトリに置かれるべきものです。
+          もしこのオプションの指定がなかったら、プログラムが <filename
+          class="directory">/usr</filename> ディレクトリにインストールされてしまいます。
+          </para>
 @z
 
 @x
           <para>This creates the shared libraries which some programs
           in this package use.</para>
 @y
-<para>
-このオプションは、本パッケージ内のプログラムが利用する共有ライブラリを生成します。
-</para>
+          <para>
+          このオプションは、本パッケージ内のプログラムが利用する共有ライブラリを生成します。
+          </para>
 @z
 
 @x
@@ -93,14 +101,14 @@ E2fsprogs パッケージは、ソースディレクトリ内にサブディレ�
           <command>fsck</command> wrapper, as Util-Linux installed all of
           them earlier.</para>
 @y
-<para>
-このオプションは
-<systemitem class="library">libuuid</systemitem> ライブラリ、
-<systemitem class="library">libblkid</systemitem> ライブラリ、
-<systemitem class="daemon">uuidd</systemitem> デーモン、
-<command>fsck</command> ラッパーをいずれもビルドせずインストールしないようにします。
-これらは Util-Linux パッケージによって既にインストールされています。
-</para>
+          <para>
+          このオプションは
+          <systemitem class="library">libuuid</systemitem> ライブラリ、
+          <systemitem class="library">libblkid</systemitem> ライブラリ、
+          <systemitem class="daemon">uuidd</systemitem> デーモン、
+          <command>fsck</command> ラッパーをいずれもビルドせずインストールしないようにします。
+          これらは Util-Linux パッケージによって既にインストールされています。
+          </para>
 @z
 
 @x
@@ -123,39 +131,38 @@ E2fsprogs パッケージは、ソースディレクトリ内にサブディレ�
     <xref linkend="space-mounting"/> for details on creating and enabling
     swap space.</para>
 @y
-<para>
-E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
-この容量を確保できるだけの RAM がない場合は、十分なスワップ領域を確保することが推奨されています。
-スワップ領域の生成と有効化については
-<xref linkend="space-creatingfilesystem"/> と <xref linkend="space-mounting"/>
-を参照してください。
-</para>
+    <para>
+    E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
+    この容量を確保できるだけの RAM がない場合は、十分なスワップ領域を確保することが推奨されています。
+    スワップ領域の生成と有効化については <xref
+    linkend="space-creatingfilesystem"/> と <xref linkend="space-mounting"/> を参照してください。
+    </para>
 @z
 
 @x
     <para>Install the binaries, documentation, and shared libraries:</para>
 @y
-<para>
-実行モジュール、ドキュメント、共有ライブラリをインストールします。
-</para>
+    <para>
+    実行モジュール、ドキュメント、共有ライブラリをインストールします。
+    </para>
 @z
 
 @x
     <para>Install the static libraries and headers:</para>
 @y
-<para>
-スタティックライブラリとヘッダーファイルをインストールします。
-</para>
+    <para>
+    スタティックライブラリとヘッダーファイルをインストールします。
+    </para>
 @z
 
 @x
     <para>Make the installed static libraries writable so debugging symbols can 
     be removed later:</para>
 @y
-<para>
-スタティックライブラリへの書き込みを可能とします。
-これは後にデバッグシンボルを取り除くために必要となります。
-</para>
+    <para>
+    スタティックライブラリへの書き込みを可能とします。
+    これは後にデバッグシンボルを取り除くために必要となります。
+    </para>
 @z
 
 @x
@@ -165,22 +172,20 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
     the system <filename>dir</filename> file using the following
     commands.</para>
 @y
-<para>
-本パッケージは gzip 圧縮された<filename class="extension">.info</filename>
-ファイルをインストールしますが、共通的な <filename>dir</filename>
-を更新しません。
-そこで以下のコマンドにより gzip ファイルを解凍した上で
-<filename>dir</filename> ファイルを更新します。
-</para>
+    <para>
+    本パッケージは gzip 圧縮された<filename
+    class="extension">.info</filename> ファイルをインストールしますが、共通的な <filename>dir</filename> を更新しません。
+    そこで以下のコマンドにより gzip ファイルを解凍した上で <filename>dir</filename> ファイルを更新します。
+    </para>
 @z
 
 @x
     <para>If desired, create and install some additional documentation by
     issuing the following commands:</para>
 @y
-<para>
-必要なら、以下のコマンドを実行して追加のドキュメントをインストールします。
-</para>
+    <para>
+    必要なら、以下のコマンドを実行して追加のドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -224,16 +229,16 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-<bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">概略説明</bridgehead>
 @z
 
 @x badblocks
           <para>Searches a device (usually a disk partition) for bad
           blocks</para>
 @y
-<para>
-デバイス (通常はディスクパーティション) の不良ブロックを検索します。
-</para>
+          <para>
+          デバイス (通常はディスクパーティション) の不良ブロックを検索します。
+          </para>
 @z
 
 @x chattr
@@ -243,14 +248,11 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           file systems, the journaling version of <systemitem
           class="filesystem">ext2</systemitem> file systems</para>
 @y
-<para>
-<systemitem class="filesystem">ext2</systemitem> 
-ファイルシステム上のファイル属性を変更します。
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステムのジャーナリング版である
-<systemitem class="filesystem">ext3</systemitem>
-ファイルシステムにおいても変更を行います。
-</para>
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上のファイル属性を変更します。
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムのジャーナリング版である <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムにおいても変更を行います。
+          </para>
 @z
 
 @x compile_et
@@ -258,12 +260,11 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           names and messages into a C source file suitable for use with the
           <filename class="libraryfile">com_err</filename> library</para>
 @y
-<para>
-エラーテーブルコンパイラー。
-これはエラーコード名とメッセージの一覧を、
-<filename class="libraryfile">com_err</filename>
-ライブラリを利用する C ソースコードとして変換するものです。
-</para>
+          <para>
+          エラーテーブルコンパイラー。
+          これはエラーコード名とメッセージの一覧を、<filename
+          class="libraryfile">com_err</filename> ライブラリを利用する C ソースコードとして変換するものです。
+          </para>
 @z
 
 @x debugfs
@@ -271,29 +272,27 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           the state of an <systemitem class="filesystem">ext2</systemitem>
           file system</para>
 @y
-<para>
-ファイルシステムデバッガー。
-これは <systemitem class="filesystem">ext2</systemitem>
-ファイルシステムの状態を調査し変更することができます。
-</para>
+          <para>
+          ファイルシステムデバッガー。
+          これは <systemitem class="filesystem">ext2</systemitem> ファイルシステムの状態を調査し変更することができます。
+          </para>
 @z
 
 @x dumpe2fs
           <para>Prints the super block and blocks group information for the
           file system present on a given device</para>
 @y
-<para>
-指定されたデバイス上にあるファイルシステムについて、
-スーパーブロックの情報とブロックグループの情報を表示します。
-</para>
+          <para>
+          指定されたデバイス上にあるファイルシステムについて、スーパーブロックの情報とブロックグループの情報を表示します。
+          </para>
 @z
 
 @x e2freefrag
           <para> Reports free space fragmentation information</para>
 @y
-<para>
-空きディスク部分のフラグメンテーションに関する情報を表示します。
-</para>
+          <para>
+          空きディスク部分のフラグメンテーションに関する情報を表示します。
+          </para>
 @z
 
 @x e2fsck
@@ -301,31 +300,29 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           class="filesystem">ext2</systemitem> file systems and <systemitem
           class="filesystem">ext3</systemitem> file systems</para>
 @y
-<para>
-<systemitem class="filesystem">ext2</systemitem> ファイルシステムと
-<systemitem class="filesystem">ext3</systemitem>
-ファイルシステムをチェックし、必要なら修復を行うことができます。
-</para>
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムと <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムをチェックし、必要なら修復を行うことができます。
+          </para>
 @z
 
 @x e2image
           <para>Is used to save critical <systemitem
           class="filesystem">ext2</systemitem> file system data to a file</para>
 @y
-<para>
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステムの重要なデータをファイルに保存します。
-</para>
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムの重要なデータをファイルに保存します。
+          </para>
 @z
 
 @x e2initrd_helper
           <para>Prints the FS type of a given filesystem, given either a
           device name or label</para>
 @y
-<para>
-指定されたファイルシステムの FS タイプを表示します。
-デバイス名やラベルを指定することもできます。
-</para>
+          <para>
+          指定されたファイルシステムの FS タイプを表示します。
+          デバイス名やラベルを指定することもできます。
+          </para>
 @z
 
 @x e2label
@@ -333,11 +330,10 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           class="filesystem">ext2</systemitem> file system present on a given
           device</para>
 @y
-<para>
-指定されたデバイス上にある
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステムのラベルを表示または変更します。
-</para>
+          <para>
+          指定されたデバイス上にある <systemitem
+          class="filesystem">ext2</systemitem> ファイルシステムのラベルを表示または変更します。
+          </para>
 @z
 
 @x e2undo
@@ -345,51 +341,51 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           found on a device. This can be used to undo a failed operation by an 
           e2fsprogs program.</para>
 @y
-<para>
-デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
-これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
-</para>
+          <para>
+          デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
+          これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
+          </para>
 @z
 
 @x filefrag
           <para>Reports on how badly fragmented a particular file might be</para>
 @y
-<para>
-特定のファイルのフラグメンテーション化がどれほど進んでいるかを表示します。
-</para>
+          <para>
+          特定のファイルのフラグメンテーション化がどれほど進んでいるかを表示します。
+          </para>
 @z
 
 @x fsck.ext2
           <para>By default checks <systemitem class="filesystem">ext2</systemitem>
           file systems. This is a hard link to <command>e2fsck</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext2</systemitem>
-ファイルシステムをチェックします。
-これは <command>e2fsck</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext2</systemitem> ファイルシステムをチェックします。
+          これは <command>e2fsck</command> へのハードリンクです。
+          </para>
 @z
 
 @x fsck.ext3
           <para>By default checks <systemitem class="filesystem">ext3</systemitem>
           file systems. This is a hard link to <command>e2fsck</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext3</systemitem>
-ファイルシステムをチェックします。
-これは <command>e2fsck</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムをチェックします。
+          これは <command>e2fsck</command> へのハードリンクです。
+          </para>
 @z
 
 @x fsck.ext4
           <para>By default checks <systemitem class="filesystem">ext4</systemitem>
           file systems. This is a hard link to <command>e2fsck</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext4</systemitem>
-ファイルシステムをチェックします。
-これは <command>e2fsck</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext4</systemitem> ファイルシステムをチェックします。
+          これは <command>e2fsck</command> へのハードリンクです。
+          </para>
 @z
 
 @x fsck.ext4dev
@@ -397,29 +393,28 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           development file systems. This is a hard link to 
           <command>e2fsck</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext4</systemitem>
-ファイルシステムの開発版をチェックします。
-これは <command>e2fsck</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext4</systemitem> ファイルシステムの開発版をチェックします。
+          これは <command>e2fsck</command> へのハードリンクです。
+          </para>
 @z
 
 @x logsave
           <para>Saves the output of a command in a log file</para>
 @y
-<para>
-コマンドの出力結果をログファイルに保存します。
-</para>
+          <para>
+          コマンドの出力結果をログファイルに保存します。
+          </para>
 @z
 
 @x lsattr
           <para>Lists the attributes of files on a second extended file
           system</para>
 @y
-<para>
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステム上のファイル属性を一覧表示します。
-</para>
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上のファイル属性を一覧表示します。
+          </para>
 @z
 
 @x mk_cmds
@@ -427,12 +422,10 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           source file suitable for use with the <filename
           class="libraryfile">libss</filename> subsystem library</para>
 @y
-<para>
-コマンド名とヘルプメッセージの一覧を、
-サブシステムライブラリ
-<filename class="libraryfile">libss</filename>
-を利用する C ソースコードとして変換するものです。
-</para>
+          <para>
+          コマンド名とヘルプメッセージの一覧を、サブシステムライブラリ <filename
+          class="libraryfile">libss</filename> を利用する C ソースコードとして変換するものです。
+          </para>
 @z
 
 @x mke2fs
@@ -440,57 +433,55 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           or <systemitem class="filesystem">ext3</systemitem> file system on
           the given device</para>
 @y
-<para>
-指定されたデバイス上に
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステム、または
-<systemitem class="filesystem">ext3</systemitem>
-ファイルシステムを生成します。
-</para>
+          <para>
+          指定されたデバイス上に <systemitem
+          class="filesystem">ext2</systemitem> ファイルシステム、または <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムを生成します。
+          </para>
 @z
 
 @x mkfs.ext2
           <para>By default creates <systemitem class="filesystem">ext2</systemitem>
           file systems.  This is a hard link to <command>mke2fs</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext2</systemitem>
-ファイルシステムを生成します。
-これは <command>mke2fs</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext2</systemitem> ファイルシステムを生成します。
+          これは <command>mke2fs</command> へのハードリンクです。
+          </para>
 @z
 
 @x mkfs.ext3
           <para>By default creates <systemitem class="filesystem">ext3</systemitem>
           file systems.  This is a hard link to <command>mke2fs</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext3</systemitem>
-ファイルシステムを生成します。
-これは <command>mke2fs</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext3</systemitem> ファイルシステムを生成します。
+          これは <command>mke2fs</command> へのハードリンクです。
+          </para>
 @z
 
 @x mkfs.ext4
           <para>By default creates <systemitem class="filesystem">ext4</systemitem>
           file systems.  This is a hard link to <command>mke2fs</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext4</systemitem>
-ファイルシステムを生成します。
-これは <command>mke2fs</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext4</systemitem> ファイルシステムを生成します。
+          これは <command>mke2fs</command> へのハードリンクです。
+          </para>
 @z
 
 @x mkfs.ext4dev
           <para>By default creates <systemitem class="filesystem">ext4</systemitem>
           development file systems.  This is a hard link to <command>mke2fs</command>.</para>
 @y
-<para>
-デフォルトでは <systemitem class="filesystem">ext4</systemitem>
-ファイルシステム開発版を生成します。
-これは <command>mke2fs</command> へのハードリンクです。
-</para>
+          <para>
+          デフォルトでは <systemitem
+          class="filesystem">ext4</systemitem> ファイルシステム開発版を生成します。
+          これは <command>mke2fs</command> へのハードリンクです。
+          </para>
 @z
 
 @x mklost-found
@@ -499,71 +490,62 @@ E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当�
           system; it pre-allocates disk blocks to this directory to lighten the
           task of <command>e2fsck</command></para>
 @y
-<para>
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステム上に <filename class="directory">lost+found</filename>
-ディレクトリを生成するために利用します。
-このコマンドはそのディレクトリに対してあらかじめディスクブロックの情報を割り当てておくことで、
-<command>e2fsck</command> コマンドの負荷を軽減します。
-</para>
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上に <filename
+          class="directory">lost+found</filename> ディレクトリを生成するために利用します。
+          このコマンドはそのディレクトリに対してあらかじめディスクブロックの情報を割り当てておくことで、<command>e2fsck</command> コマンドの負荷を軽減します。
+          </para>
 @z
 
 @x resize2fs
           <para>Can be used to enlarge or shrink an <systemitem
           class="filesystem">ext2</systemitem> file system</para>
 @y
-<para>
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステムを拡張または縮小するために利用します。
-</para>
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステムを拡張または縮小するために利用します。
+          </para>
 @z
 
 @x tune2fs
           <para>Adjusts tunable file system parameters on an <systemitem
           class="filesystem">ext2</systemitem> file system</para>
 @y
-<para>
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステム上にて調整可能なシステムパラメータを調整します。
-</para>
+          <para>
+          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上にて調整可能なシステムパラメータを調整します。
+          </para>
 @z
 
 @x libcom_err
           <para>The common error display routine</para>
 @y
-<para>
-共通的なエラー表示ルーチン。
-</para>
+          <para>
+          共通的なエラー表示ルーチン。
+          </para>
 @z
 
 @x libe2p
           <para>Used by <command>dumpe2fs</command>, <command>chattr</command>,
           and <command>lsattr</command></para>
 @y
-<para>
-以下のコマンド
-<command>dumpe2fs</command>、
-<command>chattr</command>、
-<command>lsattr</command>
-が利用します。
-</para>
+          <para>
+          以下のコマンド <command>dumpe2fs</command>、<command>chattr</command>、<command>lsattr</command> が利用します。
+          </para>
 @z
 
 @x libext2fs
           <para>Contains routines to enable user-level programs to manipulate an
           <systemitem class="filesystem">ext2</systemitem> file system</para>
 @y
-<para>
-ユーザーレベルのプログラムが
-<systemitem class="filesystem">ext2</systemitem>
-ファイルシステムを操作可能とするためのルーチンを提供します。
-</para>
+          <para>
+          ユーザーレベルのプログラムが <systemitem
+          class="filesystem">ext2</systemitem> ファイルシステムを操作可能とするためのルーチンを提供します。
+          </para>
 @z
 
 @x libss
           <para>Used by <command>debugfs</command></para>
 @y
-<para>
-<command>debugfs</command> コマンドが利用します。
-</para>
+          <para>
+          <command>debugfs</command> コマンドが利用します。
+          </para>
 @z

@@ -48,6 +48,36 @@
 @z
 
 @x
+      <para>2011-10-07</para>
+      <itemizedlist>
+      <listitem>
+          <para>[bdubbs] - Miror update to bootscripts Makefile. Fixes
+          <ulink url="&lfs-ticket-root;2939">#2939</ulink>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Remove Pkg-Config, and its dependencies PCRE and
+          Glib.  E2fsprogs, Man-DB and Udev can all be built without Pkg-Config,
+          and later Glib versions are becoming a little much for LFS.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-07</para>
+      <itemizedlist>
+      <listitem>
+          <para>[bdubbs] - ブートスクリプトの Makefile を若干変更。
+          <ulink url="&lfs-ticket-root;2939">#2939</ulink> を Fix に。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Pkg-Config およびその依存パッケージ PCRE、Glib を削除。
+          Pkg-config がなくても E2fsprogs、Man-DB、Udev がビルド出来るように。
+          Glib の最新版は LFS にとって大層なものになっている。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-06</para>
       <itemizedlist>
         <listitem>

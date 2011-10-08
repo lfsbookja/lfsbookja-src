@@ -17,9 +17,9 @@
     <para>The Man-DB package contains programs for finding and viewing man
     pages.</para>
 @y
-<para>
-Man-DB パッケージは man ページを検索したり表示したりするプログラムを提供します。
-</para>
+    <para>
+    Man-DB パッケージは man ページを検索したり表示したりするプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -44,10 +44,10 @@ Man-DB パッケージは man ページを検索したり表示したりする�
           <para>This disables making the <command>man</command> program setuid
           to user <systemitem class="username">man</systemitem>.</para>
 @y
-<para>
-これは <command>man</command> プログラムが <systemitem
-class="username">man</systemitem> ユーザーに対して setuid を実行しないようにします。
-</para>
+          <para>
+          これは <command>man</command> プログラムが <systemitem
+          class="username">man</systemitem> ユーザーに対して setuid を実行しないようにします。
+          </para>
 @z
 
 @x
@@ -61,16 +61,16 @@ class="username">man</systemitem> ユーザーに対して setuid を実行し�
           LFS or BLFS, but you should be able to install them yourself after
           finishing LFS if you wish to do so.</para>
 @y
-<para>
-この三つのオプションはデフォルトで利用するプログラムを指定します。
-<command>lynx</command> はテキストベースの Web ブラウザーです。
-(BLFS でのインストール手順を参照してください。)
-<command>vgrind</command> はプログラムソースを Groff の入力形式に変換します。
-<command>grap</command> は Groff 文書においてグラフを組版するために利用します。
-<command>vgrind</command> と <command>grap</command> は man ページを見るだけであれば必要ありません。
-これらは LFS や BLFS には含まれません。
-もし利用したい場合は LFS の構築を終えた後に自分でインストールしてください。
-</para>
+          <para>
+          この三つのオプションはデフォルトで利用するプログラムを指定します。
+          <command>lynx</command> はテキストベースの Web ブラウザーです。
+          (BLFS でのインストール手順を参照してください。)
+          <command>vgrind</command> はプログラムソースを Groff の入力形式に変換します。
+          <command>grap</command> は Groff 文書においてグラフを組版するために利用します。
+          <command>vgrind</command> と <command>grap</command> は man ページを見るだけであれば必要ありません。
+          これらは LFS や BLFS には含まれません。
+          もし利用したい場合は LFS の構築を終えた後に自分でインストールしてください。
+          </para>
 @z
 
 @x
@@ -85,15 +85,15 @@ class="username">man</systemitem> ユーザーに対して setuid を実行し�
    <para>コンパイル結果をテストするには、以下を実行します。</para>
 @z
 
-@x
-    <para>Note that 2 tests are known to fail as they rely on warnings output
-    from Groff, which changed slightly in Groff-1.21.</para>
-@y
-<para>
-テストのうち二つは失敗します。
-これは Groff の警告メッセージに依存しているからであり、Groff-1.21 にて微妙に変更になったものです。
-</para>
-@z
+% @x
+%     <para>Note that 2 tests are known to fail as they rely on warnings output
+%     from Groff, which changed slightly in Groff-1.21.</para>
+% @y
+%     <para>
+%     テストのうち二つは失敗します。
+%     これは Groff の警告メッセージに依存しているからであり、Groff-1.21 にて微妙に変更になったものです。
+%     </para>
+% @z
 
 @x
     <para>Install the package:</para>
@@ -114,11 +114,11 @@ class="username">man</systemitem> ユーザーに対して setuid を実行し�
     encoded with.  In addition to this, Man-DB correctly determines if manual
     pages installed in that directory are UTF-8 encoded.</para>
 @y
-<para>
-以下に示す表は <filename
-class="directory">/usr/share/man/&lt;ll&gt;</filename> 配下にインストールされる man ページとそのエンコーディングを示します。
-Man-DB は man ページが UTF-8 エンコーディングかどうかを正しく認識します。
-</para>
+    <para>
+    以下に示す表は <filename
+    class="directory">/usr/share/man/&lt;ll&gt;</filename> 配下にインストールされる man ページとそのエンコーディングを示します。
+    Man-DB は man ページが UTF-8 エンコーディングかどうかを正しく認識します。
+    </para>
 @z
 
 @x
@@ -408,9 +408,9 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
 @x
       <para>Manual pages in languages not in the list are not supported.</para>
 @y
-<para>
-上に示されていない言語によるマニュアルページはサポートされません。
-</para>
+      <para>
+      上に示されていない言語によるマニュアルページはサポートされません。
+      </para>
 @z
 
 @x
@@ -447,10 +447,9 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
           <para>Dumps the <command>whatis</command> database contents in
           human-readable form</para>
 @y
-<para>
-<command>whatis</command>
-データベースの内容をダンプして読みやすい形で出力します。
-</para>
+          <para>
+          <command>whatis</command> データベースの内容をダンプして読みやすい形で出力します。
+          </para>
 @z
 
 @x apropos
@@ -458,44 +457,42 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
           the short descriptions of system commands that contain a given
           string</para>
 @y
-<para>
-<command>whatis</command>
-データベースを検索して、指定した文字列を含むシステムコマンドの概略説明を表示します。
-</para>
+          <para>
+          <command>whatis</command> データベースを検索して、指定した文字列を含むシステムコマンドの概略説明を表示します。
+          </para>
 @z
 
 @x catman
           <para>Creates or updates the pre-formatted manual pages</para>
 @y
-<para>
-フォーマット済マニュアルページを生成、更新します。
-</para>
+          <para>
+          フォーマット済マニュアルページを生成、更新します。
+          </para>
 @z
 
 @x lexgrog
           <para>Displays one-line summary information about a given manual
           page</para>
 @y
-<para>
-指定されたマニュアルページについて、一行のサマリー情報を表示します。
-</para>
+          <para>
+          指定されたマニュアルページについて、一行のサマリー情報を表示します。
+          </para>
 @z
 
 @x man
           <para>Formats and displays the requested manual page</para>
 @y
-<para>
-指定されたマニュアルページを整形して表示します。
-</para>
+          <para>
+          指定されたマニュアルページを整形して表示します。
+          </para>
 @z
 
 @x mandb
           <para>Creates or updates the <command>whatis</command> database</para>
 @y
-<para>
-<command>whatis</command>
-データベースを生成、更新します。
-</para>
+          <para>
+          <command>whatis</command> データベースを生成、更新します。
+          </para>
 @z
 
 @x manpath
@@ -503,10 +500,10 @@ Man-DB は man ページが UTF-8 エンコーディングかどうかを正し�
           a suitable search path based on the settings in man.conf and the
           user's environment</para>
 @y
-<para>
-$MANPATH の内容を表示します。
-あるいは ($MANPATH が設定されていない場合は) man.conf 内の設定とユーザー設定に基づいて適切な検索パスを表示します。
-</para>
+          <para>
+          $MANPATH の内容を表示します。
+          あるいは ($MANPATH が設定されていない場合は) man.conf 内の設定とユーザー設定に基づいて適切な検索パスを表示します。
+          </para>
 @z
 
 @x whatis
@@ -514,14 +511,13 @@ $MANPATH の内容を表示します。
           the short descriptions of system commands that contain the given
           keyword as a separate word</para>
 @y
-<!--
-日本語訳註： 2009-09-07 matsuand
-separate word の意味が分からなかったため訳出しなかった。
--->
-<para>
-<command>whatis</command>
-データベースを検索して、指定されたキーワードを含むシステムコマンドの概略説明を表示します。
-</para>
+          <!--
+          日本語訳註： 2009-09-07 matsuand
+          separate word の意味が分からなかったため訳出しなかった。
+          -->
+          <para>
+          <command>whatis</command> データベースを検索して、指定されたキーワードを含むシステムコマンドの概略説明を表示します。
+          </para>
 @z
 
 @x zsoelim
@@ -529,7 +525,7 @@ separate word の意味が分からなかったため訳出しなかった。
           file</emphasis> by the contents of the mentioned
           <emphasis>file</emphasis></para>
 @y
-<para>
-ファイルの内容を読み込んで、<emphasis>.so file</emphasis> の形で書かれている記述行を、その <emphasis>file</emphasis> の内容に置き換えます。
-</para>
+          <para>
+          ファイルの内容を読み込んで、<emphasis>.so file</emphasis> の形で書かれている記述行を、その <emphasis>file</emphasis> の内容に置き換えます。
+          </para>
 @z

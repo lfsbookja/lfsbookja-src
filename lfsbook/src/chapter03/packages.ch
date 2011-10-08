@@ -224,13 +224,13 @@ File パッケージ (&file-version;)
         <para>MD5 sum: <literal>&gettext-md5;</literal></para>
 @z
 
-@x
-        <para>Home page: <ulink url="&glib-home;"/></para>
-        <para>Download: <ulink url="&glib-url;"/></para>
-@y
-        <para>ホームページ: <ulink url="&glib-home;"/></para>
-        <para>ダウンロード: <ulink url="&glib-url;"/></para>
-@z
+% @x
+%         <para>Home page: <ulink url="&glib-home;"/></para>
+%         <para>Download: <ulink url="&glib-url;"/></para>
+% @y
+%         <para>ホームページ: <ulink url="&glib-home;"/></para>
+%         <para>ダウンロード: <ulink url="&glib-url;"/></para>
+% @z
 
 @x
         <para>Home page: <ulink url="&glibc-home;"/></para>
@@ -398,12 +398,12 @@ File パッケージ (&file-version;)
           &linux-major-version;.&linux-minor-version;.x kernel version should be
           used, unless the errata page says otherwise.</para>
 @y
-<para>
-Linux カーネルはわりと頻繁に更新されます。
-多くの場合はセキュリティ脆弱性の発見によるものです。
-特に正誤情報 (errata) のページにて説明がない限りは、入手可能な最新の
-&linux-major-version;.&linux-minor-version;.x カーネルを用いてください。
-</para>
+          <para>
+          Linux カーネルはわりと頻繁に更新されます。
+          多くの場合はセキュリティ脆弱性の発見によるものです。
+          特に正誤情報 (errata) のページにて説明がない限りは、入手可能な最新の
+          &linux-major-version;.&linux-minor-version;.x カーネルを用いてください。
+          </para>
 @z
 
 @x
@@ -413,10 +413,10 @@ Linux カーネルはわりと頻繁に更新されます。
           cost for a subsequent patch level upgrade within a minor release.
           </para>
 @y
-<para>
-低速度のネットワークや高負荷の帯域幅を利用するユーザーが Linux カーネルをアップデートしようとする場合は、同一バージョンのカーネルパッケージとそのパッチを個別にダウンロードする方法もあります。
-その場合、時間の節約を図ることができ、あるいはマイナーバージョンが同一であれば複数パッチを当ててアップグレードする作業時間の短縮が図れます。
-</para>
+          <para>
+          低速度のネットワークや高負荷の帯域幅を利用するユーザーが Linux カーネルをアップデートしようとする場合は、同一バージョンのカーネルパッケージとそのパッチを個別にダウンロードする方法もあります。
+          その場合、時間の節約を図ることができ、あるいはマイナーバージョンが同一であれば複数パッチを当ててアップグレードする作業時間の短縮が図れます。
+          </para>
 @z
 
 @x
@@ -519,15 +519,15 @@ Linux カーネルはわりと頻繁に更新されます。
         <para>MD5 sum: <literal>&perl-md5;</literal></para>
 @z
 
-@x
-        <para>Home page: <ulink url="&pkg-config-home;"/></para>
-        <para>Download: <ulink url="&pkg-config-url;"/></para>
-        <para>MD5 sum: <literal>&pkg-config-md5;</literal></para>
-@y
-        <para>ホームページ: <ulink url="&pkg-config-home;"/></para>
-        <para>ダウンロード: <ulink url="&pkg-config-url;"/></para>
-        <para>MD5 sum: <literal>&pkg-config-md5;</literal></para>
-@z
+% @x
+%         <para>Home page: <ulink url="&pkg-config-home;"/></para>
+%         <para>Download: <ulink url="&pkg-config-url;"/></para>
+%         <para>MD5 sum: <literal>&pkg-config-md5;</literal></para>
+% @y
+%         <para>ホームページ: <ulink url="&pkg-config-home;"/></para>
+%         <para>ダウンロード: <ulink url="&pkg-config-url;"/></para>
+%         <para>MD5 sum: <literal>&pkg-config-md5;</literal></para>
+% @z
 
 @x
         <para>Home page: <ulink url="&procps-home;"/></para>

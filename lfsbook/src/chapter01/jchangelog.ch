@@ -54,6 +54,20 @@
 -->
 
     <listitem>
+      <para>2011-10-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/appendices/dependencies.ch,
+          src/chapter03/packages.ch,
+          src/chapter06/{e2fsprogs.ch, man-db.ch}:
+          SVN-20111007, r9617 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-10-07</para>
       <itemizedlist>
         <listitem>
