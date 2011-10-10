@@ -33,11 +33,10 @@ Vim パッケージは強力なテキストエディターを提供します。
       url="&blfs-root;view/svn/postlfs/editors.html"/> for suggested
       installation instructions.</para>
 @y
-<para>
-もし Emacs、Joe、Nano など他のエディターを用いたい場合は
-<ulink url="&blfs-root;view/svn/postlfs/editors.html"/>
-に示される手順に従ってインストールしてください。
-</para>
+      <para>
+      もし Emacs、Joe、Nano など他のエディターを用いたい場合は <ulink
+      url="&blfs-root;view/svn/postlfs/editors.html"/> に示される手順に従ってインストールしてください。
+      </para>
 @z
 
 @x
@@ -46,51 +45,23 @@ Vim パッケージは強力なテキストエディターを提供します。
     <title>Vim のインストール</title>
 @z
 
-% @x
-%     <para>First, unpack both
-%     <filename>vim-&vim-version;.tar.bz2</filename> and (optionally)
-%     <filename>vim-&vim-version;-lang.tar.gz</filename> archives into the
-%     same directory.</para>
-% @y
-% <para>
-% まず２つのアーカイブ
-% <filename>vim-&vim-version;.tar.bz2</filename>、
-% <filename>vim-&vim-version;-lang.tar.gz</filename>
-% を同一ディレクトリに解凍します。
-% (２つめのアーカイブを用いるのは任意です。)
-% </para>
-% @z
-
-% @x
-%     <para>Apply a patch which fixes various issues already found and fixed by
-%     the upstream maintainers since the inital release of Vim-&vim-version;:
-%     </para>
-% @y
-% <para>
-% Vim-&vim-version;
-% の初期版リリース以降に開発者によって発見された種々の問題を解消するために、以下のパッチを適用します。
-% </para>
-% @z
-
 @x
     <para>First, change the default location of the
     <filename>vimrc</filename> configuration file to <filename
     class="directory">/etc</filename>:</para>
 @y
-<para>
-設定ファイル <filename>vimrc</filename>
-がインストールされるデフォルトディレクトリを
-<filename class="directory">/etc</filename>
-に変更します。
-</para>
+    <para>
+    設定ファイル <filename>vimrc</filename> がインストールされるデフォルトディレクトリを <filename
+    class="directory">/etc</filename> に変更します。
+    </para>
 @z
 
 @x
     <para>Now prepare Vim for compilation:</para>
 @y
-<para>
-Vim をコンパイルするための準備をします。
-</para>
+    <para>
+    Vim をコンパイルするための準備をします。
+    </para>
 @z
 
 @x
@@ -106,13 +77,11 @@ Vim をコンパイルするための準備をします。
           to edit text files initially created in Linux distributions like
           Fedora that use UTF-8 as a default character set.</para>
 @y
-<para>
-このオプションは、マルチバイトエンコーディングによるファイルの編集をサポートする指示を行います。
-マルチバイト文字を用いるロケールにとってはこれが必要です。
-例えば Fedora Core
-のようにデフォルトで UTF-8 を採用している Linux
-ディストリビューションにおいては、新規に生成するテキストファイルを編集できるようにするために、このオプションを指定することが有用です。
-</para>
+          <para>
+          このオプションは、マルチバイトエンコーディングによるファイルの編集をサポートする指示を行います。
+          マルチバイト文字を用いるロケールにとってはこれが必要です。
+          例えば Fedora Core のようにデフォルトで UTF-8 を採用している Linux ディストリビューションにおいては、新規に生成するテキストファイルを編集できるようにするために、このオプションを指定することが有用です。
+          </para>
 @z
 
 @x
@@ -130,13 +99,15 @@ Vim をコンパイルするための準備をします。
 @x
     <para>However, this test suite outputs a lot of binary data to the screen,
     which can cause issues with the settings of the current terminal. This can
-    be resolved by redirecting the output to a log file.</para>
+    be resolved by redirecting the output to a log file.  A successful test
+    will result in the words "ALL DONE" at completion.</para>
 @y
-<para>
-このテストスイートは数多くのバイナリデータを端末画面上に出力します。
-これは端末画面の設定によっては問題を引き起こします。
-これを避けるには出力をリダイレクトしてログファイルに出力するようにしてください。
-</para>
+    <para>
+    このテストスイートは数多くのバイナリデータを端末画面上に出力します。
+    これは端末画面の設定によっては問題を引き起こします。
+    これを避けるには出力をリダイレクトしてログファイルに出力するようにしてください。
+    テストが成功すれば、最後に "ALL DONE" と表示されます。
+    </para>
 @z
 
 @x
@@ -152,13 +123,11 @@ Vim をコンパイルするための準備をします。
     symlink for both the binary and the man page in the provided
     languages:</para>
 @y
-<para>
-たいていのユーザーは <command>vim</command>
-ではなく <command>vi</command> を使うようです。
-<command>vi</command> を入力しても <command>vim</command>
-が実行されるように、実行モジュールに対するシンボリックリンクを作成します。
-さらに指定された言語による man ページへのシンボリックリンクも作成します。
-</para>
+    <para>
+    たいていのユーザーは <command>vim</command> ではなく <command>vi</command> を使うようです。
+    <command>vi</command> を入力しても <command>vim</command> が実行されるように、実行モジュールに対するシンボリックリンクを作成します。
+    さらに指定された言語による man ページへのシンボリックリンクも作成します。
+    </para>
 @z
 
 @x
@@ -168,14 +137,12 @@ Vim をコンパイルするための準備をします。
     class="directory">/usr/share/doc/vim-&vim-version;</filename>, making
     it consistent with the location of documentation for other packages:</para>
 @y
-<para>
-デフォルトでは Vim のドキュメントが
-<filename class="directory">/usr/share/vim</filename>
-にインストールされます。
-以下のようなシンボリックリンクを生成することで
-<filename class="directory">/usr/share/doc/vim-&vim-version;</filename>
-へアクセスしてもドキュメントが参照できるようにし、他のパッケージが配置するドキュメントの場所と整合を取ります。
-</para>
+    <para>
+    デフォルトでは Vim のドキュメントが <filename
+    class="directory">/usr/share/vim</filename> にインストールされます。
+    以下のようなシンボリックリンクを生成することで <filename
+    class="directory">/usr/share/doc/vim-&vim-version;</filename> へアクセスしてもドキュメントが参照できるようにし、他のパッケージが配置するドキュメントの場所と整合を取ります。
+    </para>
 @z
 
 @x
@@ -187,14 +154,12 @@ Vim をコンパイルするための準備をします。
     in the BLFS book at <ulink
     url="&blfs-root;view/svn/postlfs/editors.html#postlfs-editors-vim"/>.</para>
 @y
-<para>
-LFS システムに対して X ウィンドウシステムをインストールする場合
-X のインストールの後で Vim を再コンパイルする必要があります。
-Vim には GUI 版があり X や他のライブラリがインストールされていて 初めて構築できるためです。
-この作業の詳細については Vim のドキュメントと BLFS ブックの
-<ulink url="&blfs-root;view/svn/postlfs/editors.html#postlfs-editors-vim"/>
-に示されている Vim のインストール説明のページを参照してください。
-</para>
+    <para>
+    LFS システムに対して X ウィンドウシステムをインストールする場合 X のインストールの後で Vim を再コンパイルする必要があります。
+    Vim には GUI 版があり X や他のライブラリがインストールされていて 初めて構築できるためです。
+    この作業の詳細については Vim のドキュメントと BLFS ブックの <ulink
+    url="&blfs-root;view/svn/postlfs/editors.html#postlfs-editors-vim"/> に示されている Vim のインストール説明のページを参照してください。
+    </para>
 @z
 
 @x
@@ -213,18 +178,14 @@ Vim には GUI 版があり X や他のライブラリがインストールさ�
     other settings, and overrides must come after this setting. Create a default
     <command>vim</command> configuration file by running the following:</para>
 @y
-<para>
-デフォルトで <command>vim</command>
-は Vi 非互換モード (vi-incompatible mode) で起動します。
-他のエディターを使ってきたユーザーにとっては、よく分からないものかもしれません。
-以下の設定における <quote>nocompatible</quote> (非互換)
-は、Vi の新しい機能を利用することを意味しています。
-もし <quote>compatible</quote> (互換)
-モードに変更したい場合は、この設定ファイルの冒頭にて行っておくことが必要です。
-このモード設定は他の設定を置き換えるものとなることから、まず初めに行っておかなければならないものだからです。
-以下のコマンドを実行して <command>vim</command>
-の設定ファイルを生成します。
-</para>
+    <para>
+    デフォルトで <command>vim</command> は Vi 非互換モード (vi-incompatible mode) で起動します。
+    他のエディターを使ってきたユーザーにとっては、よく分からないものかもしれません。
+    以下の設定における<quote>nocompatible</quote>(非互換) は、Vi の新しい機能を利用することを意味しています。
+    もし<quote>compatible</quote>(互換) モードに変更したい場合は、この設定ファイルの冒頭にて行っておくことが必要です。
+    このモード設定は他の設定を置き換えるものとなることから、まず初めに行っておかなければならないものだからです。
+    以下のコマンドを実行して <command>vim</command> の設定ファイルを生成します。
+    </para>
 @z
 
 @x
@@ -241,32 +202,25 @@ Vim には GUI 版があり X や他のライブラリがインストールさ�
     gives the highlighting a better color scheme for use on the black
     background of these programs.</para>
 @y
-<para>
-<parameter>set nocompatible</parameter>
-と設定しておくと vi 互換モードでの動作に比べて有用な動作となります。
-(これがデフォルトになっています。)
-その設定の記述から <quote>no</quote>
-の文字を取り除けば、旧来の <command>vi</command> コマンドの動作となります。
-<parameter>set backspace=2</parameter>
-を設定しておくと、行を超えてもバックスペースキーによる編集が可能となります。
-またインデントが自動的に行われ、コマンド起動時には自動的に挿入モードとなります。
-<parameter>syntax on</parameter>
-パラメーターを指定すれば vim の文法ハイライト (syntax highlighting) 機能が有効になります。
-最後にある <emphasis>if</emphasis>
-文は、<parameter>set background=dark</parameter>
-を指定した場合に、特定の端末エミュレーター上において <command>vim</command>
-が背景色を誤って認識しないようにするためのものです。
-エミュレーターの背景色が黒色であった場合に、より適切なハイライトが実現できます。
-</para>
+    <para>
+    <parameter>set nocompatible</parameter> と設定しておくと vi 互換モードでの動作に比べて有用な動作となります。
+    (これがデフォルトになっています。)
+    その設定の記述から<quote>no</quote>の文字を取り除けば、旧来の <command>vi</command> コマンドの動作となります。
+    <parameter>set backspace=2</parameter> を設定しておくと、行を超えてもバックスペースキーによる編集が可能となります。
+    またインデントが自動的に行われ、コマンド起動時には自動的に挿入モードとなります。
+    <parameter>syntax on</parameter> パラメーターを指定すれば vim の文法ハイライト (syntax highlighting) 機能が有効になります。
+    最後にある <emphasis>if</emphasis> 文は、<parameter>set background=dark</parameter> を指定した場合に、特定の端末エミュレーター上において <command>vim</command> が背景色を誤って認識しないようにするためのものです。
+    エミュレーターの背景色が黒色であった場合に、より適切なハイライトが実現できます。
+    </para>
 @z
 
 @x
     <para>Documentation for other available options can be obtained by
     running the following command:</para>
 @y
-<para>
-この他に利用できるオプションについては、以下のコマンドを実行することで出力される説明を参照してください。
-</para>
+    <para>
+    この他に利用できるオプションについては、以下のコマンドを実行することで出力される説明を参照してください。
+    </para>
 @z
 
 @x
@@ -277,30 +231,30 @@ Vim には GUI 版があり X や他のライブラリがインストールさ�
       url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> and save them to
       <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename>.</para>
 @y
-<para>
-Vim がインストールするスペルファイル (spell files) はデフォルトでは英語に対するものだけです。
-必要とする言語のスペルファイルをインストールするなら <ulink
-url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から、特定の言語、エンコーディングによる <filename>*.spl</filename> ファイル、またオプションとして <filename>*.sug</filename> ファイルをダウンロードしてください。
-そしてそれらのファイルを <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename> ディレクトリに保存してください。
-</para>
+      <para>
+      Vim がインストールするスペルファイル (spell files) はデフォルトでは英語に対するものだけです。
+      必要とする言語のスペルファイルをインストールするなら <ulink
+      url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から、特定の言語、エンコーディングによる <filename>*.spl</filename> ファイル、またオプションとして <filename>*.sug</filename> ファイルをダウンロードしてください。
+      そしてそれらのファイルを <filename class='directory'>/usr/share/&vim-docdir;/spell/</filename> ディレクトリに保存してください。
+      </para>
 @z
 
 @x
       <para>To use these spell files, some configuration in
       <filename>/etc/vimrc</filename> is needed, e.g.:</para>
 @y
-<para>
-スペルファイルを利用するには <filename>/etc/vimrc</filename> ファイルにて、例えば以下のような設定が必要になります。
-</para>
+      <para>
+      スペルファイルを利用するには <filename>/etc/vimrc</filename> ファイルにて、例えば以下のような設定が必要になります。
+      </para>
 @z
 
 @x
       <para>For more information, see the appropriate README file located
       at the URL above.</para>
 @y
-<para>
-詳しくは、上で説明した URL にて提供されている README ファイルを参照してください。
-</para>
+      <para>
+      詳しくは、上で説明した URL にて提供されている README ファイルを参照してください。
+      </para>
 @z
 
 @x
@@ -346,10 +300,10 @@ url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から、特定の言語、エ�
           commands can be started and <command>view</command> cannot be
           suspended</para>
 @y
-<para>
-<command>view</command> の機能限定版。
-シェルは起動できず、サスペンドも行うことはできません。
-</para>
+          <para>
+          <command>view</command> の機能限定版。
+          シェルは起動できず、サスペンドも行うことはできません。
+          </para>
 @z
 
 @x
@@ -357,60 +311,60 @@ url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から、特定の言語、エ�
           commands can be started and <command>vim</command> cannot be
           suspended</para>
 @y
-<para>
-<command>vim</command> の機能限定版。
-シェルは起動できず、サスペンドも行うことはできません。
-</para>
+          <para>
+          <command>vim</command> の機能限定版。
+          シェルは起動できず、サスペンドも行うことはできません。
+          </para>
 @z
 
 @x
           <para>Link to <command>vim</command></para>
 @y
-<para>
-<command>vim</command> へのリンク。
-</para>
+          <para>
+          <command>vim</command> へのリンク。
+          </para>
 @z
 
 @x
           <para>Starts <command>vim</command> in read-only mode</para>
 @y
-<para>
-<command>vim</command> を読み込み専用モード (read-only mode) で起動します。
-</para>
+          <para>
+          <command>vim</command> を読み込み専用モード (read-only mode) で起動します。
+          </para>
 @z
 
 @x
           <para>Is the editor</para>
 @y
-<para>
-エディター。
-</para>
+          <para>
+          エディター。
+          </para>
 @z
 
 @x
           <para>Edits two or three versions of a file with <command>vim</command>
           and show differences</para>
 @y
-<para>
-<command>vim</command> により、同一ファイルにおける２つまたは３つの版を同時に編集し、差異を表示します。
-</para>
+          <para>
+          <command>vim</command> により、同一ファイルにおける２つまたは３つの版を同時に編集し、差異を表示します。
+          </para>
 @z
 
 @x
           <para>Teaches the basic keys and commands of
           <command>vim</command></para>
 @y
-<para>
-<command>vim</command> の基本的なキー操作とコマンドについて教えてくれます。
-</para>
+          <para>
+          <command>vim</command> の基本的なキー操作とコマンドについて教えてくれます。
+          </para>
 @z
 
 @x
           <para>Creates a hex dump of the given file; it can
           also do the reverse, so it can be used for binary patching</para>
 @y
-<para>
-指定されたファイルの内容を 16進数ダンプとして変換します。
-逆の変換も行うことができるため、バイナリパッチにも利用されます。
-</para>
+          <para>
+          指定されたファイルの内容を 16進数ダンプとして変換します。
+          逆の変換も行うことができるため、バイナリパッチにも利用されます。
+          </para>
 @z

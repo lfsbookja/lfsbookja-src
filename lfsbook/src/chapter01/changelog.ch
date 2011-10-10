@@ -48,12 +48,36 @@
 @z
 
 @x
+      <para>2011-10-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.35. Fixes
+          <ulink url="&lfs-ticket-root;2936">#2936</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add additional environment variable
+          to man-db.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.35 へのアップデート。
+          <ulink url="&lfs-ticket-root;2936">#2936</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db にて新たな環境変数の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-07</para>
       <itemizedlist>
-      <listitem>
-          <para>[bdubbs] - Miror update to bootscripts Makefile. Fixes
-          <ulink url="&lfs-ticket-root;2939">#2939</ulink>.
-          </para>
+        <listitem>
+          <para>[bdubbs] - Minor update to bootscripts Makefile. Fixes
+          <ulink url="&lfs-ticket-root;2939">#2939</ulink>.</para>
         </listitem>
         <listitem>
           <para>[matthew] - Remove Pkg-Config, and its dependencies PCRE and
@@ -64,7 +88,7 @@
 @y
       <para>2011-10-07</para>
       <itemizedlist>
-      <listitem>
+        <listitem>
           <para>[bdubbs] - ブートスクリプトの Makefile を若干変更。
           <ulink url="&lfs-ticket-root;2939">#2939</ulink> を Fix に。
           </para>

@@ -54,6 +54,30 @@
 -->
 
     <listitem>
+      <para>2011-10-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/vim.ch:
+          SVN-20111008, r9622 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2011-10-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/man-db.ch:
+          SVN-20111008, r9621 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-10-08</para>
       <itemizedlist>
         <listitem>
