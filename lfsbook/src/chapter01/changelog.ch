@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2011-10-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a paragraph in Chapter 3.1 about obtaining and
+          using md5sums for the packages in the book.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 本書にて取り扱う各パッケージに対しての md5sums に関して、3.1 節にてその入手と利用方法について説明。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-08</para>
       <itemizedlist>
         <listitem>

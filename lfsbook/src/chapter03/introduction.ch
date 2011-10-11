@@ -29,14 +29,14 @@
   will be developed and stabilized in the development version of the
   book.</para>
 @y
-<para>
-この章では基本的な Linux システム構築のためにダウンロードするべきパッケージの一覧を示します。
-各パッケージのバージョンは動作が確認されているものを示しており、本書ではこれに基づいて説明します。
-ここに示すバージョンよりも新しいものは使わないようお勧めします。
-あるバージョンでビルドしたコマンドが、新しいバージョンでも動作する保証はないからです。
-最新のパッケージの場合、何かの対処を要するかもしれません。
-そのような対処方法は本書の開発版において開発され安定化が図られるかもしれません。
-</para>
+  <para>
+  この章では基本的な Linux システム構築のためにダウンロードするべきパッケージの一覧を示します。
+  各パッケージのバージョンは動作が確認されているものを示しており、本書ではこれに基づいて説明します。
+  ここに示すバージョンよりも新しいものは使わないようお勧めします。
+  あるバージョンでビルドしたコマンドが、新しいバージョンでも動作する保証はないからです。
+  最新のパッケージの場合、何かの対処を要するかもしれません。
+  そのような対処方法は本書の開発版において開発され安定化が図られるかもしれません。
+  </para>
 @z
 
 @x
@@ -45,15 +45,16 @@
   url="http://www.google.com/"/>) provides a useful search engine for
   most packages. If this search is unsuccessful, try one of the
   alternative means of downloading discussed at <ulink
-  url="&lfs-root;lfs/packages.html#packages"/>.</para>
+  url="&lfs-root;lfs/packages.html#packages"/>. </para>
 @y
-<para>
-ダウンロードサイトは常にアクセス可能であるとは限りません。
-本書が提供された後にダウンロードする場所が変更になっていたら Google (<ulink
-url="http://www.google.com/"/>) を使って検索してみてください。
-たいていのパッケージを見つけ出すことが出来るはずです。
-それでも見つけられなかったら <ulink url="&lfs-root;lfs/packages.html#packages"/> に示されている方法に従って入手してください。
-</para>
+  <para>
+  ダウンロードサイトは常にアクセス可能であるとは限りません。
+  本書が提供された後にダウンロードする場所が変更になっていたら Google (<ulink
+  url="http://www.google.com/"/>) を使って検索してみてください。
+  たいていのパッケージを見つけ出すことが出来るはずです。
+  それでも見つけられなかったら <ulink
+  url="&lfs-root;lfs/packages.html#packages"/> に示されている方法に従って入手してください。
+  </para>
 @z
 
 @x
@@ -66,12 +67,12 @@ url="http://www.google.com/"/>) を使って検索してみてください。
   located on the LFS partition and will be available during all stages
   of the building process.</para>
 @y
-<para>
-ダウンロードしたパッケージやパッチは、ビルド作業を通じて常に利用可能な場所を選んで保存しておく必要があります。
-またソース類を伸張してビルドを行うための作業ディレクトリも必要です。
-そこで本書では <filename class="directory">$LFS/sources</filename> ディレクトリを用意し、ソースやパッチの保存場所とし、そこでビルドを行う作業ディレクトリとします。
-このディレクトリにしておけば LFS パーティションに位置することから LFS ビルドを行う全工程において常に利用することが出来ます。
-</para>
+  <para>
+  ダウンロードしたパッケージやパッチは、ビルド作業を通じて常に利用可能な場所を選んで保存しておく必要があります。
+  またソース類を伸張してビルドを行うための作業ディレクトリも必要です。
+  そこで本書では <filename class="directory">$LFS/sources</filename> ディレクトリを用意し、ソースやパッチの保存場所とし、そこでビルドを行う作業ディレクトリとします。
+  このディレクトリにしておけば LFS パーティションに位置することから LFS ビルドを行う全工程において常に利用することが出来ます。
+  </para>
 @z
 
 @x
@@ -79,10 +80,10 @@ url="http://www.google.com/"/>) を使って検索してみてください。
   <systemitem class="username">root</systemitem>, before starting the download
   session:</para>
 @y
-<para>
-ダウンロードを行う前にまずはそのようなディレクトリを生成します。
-<systemitem class="username">root</systemitem> ユーザーとなって以下のコマンドを実行します。
-</para>
+  <para>
+  ダウンロードを行う前にまずはそのようなディレクトリを生成します。
+  <systemitem class="username">root</systemitem> ユーザーとなって以下のコマンドを実行します。
+  </para>
 @z
 
 @x
@@ -92,11 +93,11 @@ url="http://www.google.com/"/>) を使って検索してみてください。
   sticky directory. The following command will enable the write and
   sticky modes:</para>
 @y
-<para>
-このディレクトリには書き込み権限とスティッキーを与えます。
-<quote>スティッキー (Sticky) </quote>は複数ユーザーに対して書き込み権限が与えられても、削除については所有者しか実行出来ないようにします。
-以下のコマンドによって書き込み権限とスティッキーを定めます。
-</para>
+  <para>
+  このディレクトリには書き込み権限とスティッキーを与えます。
+  <quote>スティッキー (Sticky) </quote>は複数ユーザーに対して書き込み権限が与えられても、削除については所有者しか実行出来ないようにします。
+  以下のコマンドによって書き込み権限とスティッキーを定めます。
+  </para>
 @z
 
 @x
@@ -104,18 +105,17 @@ url="http://www.google.com/"/>) を使って検索してみてください。
   <ulink url="../wget-list">wget-list</ulink> as an input to
   <command>wget</command>. For example:</para>
 @y
-<para>
-パッケージとパッチのダウンロードを簡単に行う方法として <ulink
-url="../wget-list.txt">wget-list</ulink> を利用する方法があります。
-これは以下のように <command>wget</command> の入力引数に指定し利用します。
-</para>
+  <para>
+  パッケージとパッチのダウンロードを簡単に行う方法として <ulink
+  url="../wget-list.txt">wget-list</ulink> を利用する方法があります。
+  これは以下のように <command>wget</command> の入力引数に指定し利用します。
+  </para>
 @z
 
 @x
-  <screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
+<screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
 @y
-  <screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
-
+<screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
 
 <caution>
 <title>日本語訳情報</title>
@@ -173,4 +173,17 @@ sed -e 's|http://ftp\.gnu\.org/gnu/|http://ftp.riken.jp/GNU/ftp/gnu/|g' \
 </para>
 </note>
 
+@z
+
+@x
+  <para>Additionally, starting with LFS-7.0, there is a separate file, 
+  <ulink url="../md5sums">md5sums</ulink>, can be used to verify that all
+  the correct packages are available before proceeding.  Place that file in 
+  <filename class="directory">$LFS/sources</filename> and run:</para>
+@y
+  <para>
+  さらに LFS-7.0 からは <ulink url="../md5sums">md5sums</ulink> というファイルを用意しています。
+  このファイルは、入手した各種パッケージのファイルが正しいことを確認するために用いることができます。
+  このファイルを <filename class="directory">$LFS/sources</filename> に配置して以下を実行してください。
+  </para>
 @z
