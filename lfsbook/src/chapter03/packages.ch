@@ -88,6 +88,16 @@
 @z
 
 @x
+        <para>Home page: <ulink url="&check-home;"/></para>
+        <para>Download: <ulink url="&check-url;"/></para>
+        <para>MD5 sum: <literal>&check-md5;</literal></para>
+@y
+        <para>ホームページ: <ulink url="&check-home;"/></para>
+        <para>ダウンロード: <ulink url="&check-url;"/></para>
+        <para>MD5 sum: <literal>&check-md5;</literal></para>
+@z
+
+@x
         <para>Home page: <ulink url="&coreutils-home;"/></para>
         <para>Download: <ulink url="&coreutils-url;"/></para>
         <para>MD5 sum: <literal>&coreutils-md5;</literal></para>

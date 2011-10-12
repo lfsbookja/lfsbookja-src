@@ -26,12 +26,12 @@
   make the packages easier to work with. The following patches will be
   needed to build an LFS system:</para>
 @y
-<para>
-パッケージに加えて、いくつかのパッチも必要となります。
-それらのパッチはパッケージの不備をただすもので、本来なら開発者が修正すべきものです。
-パッチは不備修正だけでなく、ちょっとした修正を施して扱いやすいものにする目的のものもあります。
-以下に示すものが LFS システム構築に必要となるパッチすべてです。
-</para>
+  <para>
+  パッケージに加えて、いくつかのパッチも必要となります。
+  それらのパッチはパッケージの不備をただすもので、本来なら開発者が修正すべきものです。
+  パッチは不備修正だけでなく、ちょっとした修正を施して扱いやすいものにする目的のものもあります。
+  以下に示すものが LFS システム構築に必要となるパッチすべてです。
+  </para>
 
 <note>
 <title>日本語訳情報</title>
@@ -192,6 +192,20 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&glibc-cpuid-patch;"/></para>
         <para>MD5 sum: <literal>&glibc-cpuid-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>GCC Locale Patch - <token>&gcc-locale-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&gcc-locale-patch;"/></para>
+        <para>MD5 sum: <literal>&gcc-locale-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>GCC Locale Patch - <token>&gcc-locale-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&gcc-locale-patch;"/></para>
+        <para>MD5 sum: <literal>&gcc-locale-patch-md5;</literal></para>
       </listitem>
 @z
 

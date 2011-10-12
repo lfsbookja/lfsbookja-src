@@ -35,15 +35,30 @@
 @z
 
 @x
+      <title>The meaning of the configure options:</title>
+@y
+      <title>configure オプションの意味:</title>
+@z
+
+@x
+          <para>These environment variables specify the location of the test
+          library built in <xref linkend="ch-tools-check"/>.</para>
+@y
+          <para>
+          これらの環境変数は <xref linkend="ch-tools-check"/> にて構築したテストライブラリの収容ディレクトリを指定するものです。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>パッケージをコンパイルします。</para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>ビルド結果をテストする場合は以下を実行します。</para>
 @z
 
 @x

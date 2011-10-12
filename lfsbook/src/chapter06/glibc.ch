@@ -289,6 +289,15 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
+        <para>Other tests known to fail on some architectures are posix/bug-regex32, 
+        misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, and stdio-common/bug22.</para>
+@y
+        <para>
+        上記以外に特定のアーキテクチャーにてテストが失敗することが分かっています。
+        失敗するのは posix/bug-regex32, misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, stdio-common/bug22 です。</para>
+@z
+
+@x
     <para>Though it is a harmless message, the install stage of Glibc will
     complain about the absence of <filename>/etc/ld.so.conf</filename>.
     Prevent this warning with:</para>

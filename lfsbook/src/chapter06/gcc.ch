@@ -66,6 +66,16 @@ class="libraryfile">libiberty.a</filename> をインストールしないよう�
 @z
 
 @x
+    <para>Finally, apply a patch that corrects the test code for locale changes
+    that were made in glibc-2.14 and later.</para>
+@y
+    <para>
+    最後に以下のパッチを適用してテストスイートのコードを変更します。
+    これは glibc-2.14 以降にて変更となったロケールに対処するものです。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC outside of the source
     directory in a dedicated build directory:</para>
 @y
