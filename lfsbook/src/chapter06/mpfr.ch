@@ -17,19 +17,13 @@
     <para>The MPFR package contains functions for multiple precision
     math.</para>
 @y
-<para>MPFR パッケージは倍精度演算 (multiple precision) の関数を提供します。</para>
+    <para>MPFR パッケージは倍精度演算 (multiple precision) の関数を提供します。</para>
 @z
 
 @x
     <title>Installation of MPFR</title>
 @y
     <title>MPFR のインストール</title>
-@z
-
-@x
-    <para>Apply a patch to fix a few bugs in MPFR:</para>
-@y
-    <para>MPFR のバグを修正するために以下のパッチを適用します。</para>
 @z
 
 @x
@@ -48,18 +42,18 @@
       <para>The test suite for MPFR in this section is considered critical.
       Do not skip it under any circumstances.</para>
 @y
-<para>
-本節における MPFR のテストスイートは極めて重要なものです。
-したがってどのような場合であっても必ず実行してください。
-</para>
+      <para>
+      本節における MPFR のテストスイートは極めて重要なものです。
+      したがってどのような場合であっても必ず実行してください。
+      </para>
 @z
 
 @x
     <para>Test the results and ensure that all tests passed:</para>
 @y
-<para>
-すべてのテストが正常に完了していることを確認してください。
-</para>
+    <para>
+    すべてのテストが正常に完了していることを確認してください。
+    </para>
 @z
 
 @x
@@ -97,8 +91,7 @@
 @x
           <para>Contains multiple-precision math functions.</para>
 @y
-<para>
-倍精度演算の関数を提供します。
-</para>
+          <para>
+          倍精度演算の関数を提供します。
+          </para>
 @z
-

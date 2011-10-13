@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2011-10-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch,
+          src/chapter06/{module-init-tools.ch, mpfr.ch}:
+          SVN-20111012, r9631 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-10-12</para>
       <itemizedlist>
         <listitem>

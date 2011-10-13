@@ -252,16 +252,16 @@
 @z
 
 @x
-      <term>MPFR Fixes Patch - <token>&mpfr-fixes-patch-size;</token>:</term>
+      <term>Module Init Tools - <token>&module-init-tools-man-patch-size;</token>:</term>
       <listitem>
-        <para>Download: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&mpfr-fixes-patch-md5;</literal></para>
+        <para>Download: <ulink url="&patches-root;&module-init-tools-man-patch;"/></para>
+        <para>MD5 sum: <literal>&module-init-tools-man-patch-md5;</literal></para>
       </listitem>
 @y
-      <term>MPFR Fixes Patch - <token>&mpfr-fixes-patch-size;</token>:</term>
+      <term>Module Init Tools - <token>&module-init-tools-man-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&mpfr-fixes-patch-md5;</literal></para>
+        <para>ダウンロード: <ulink url="&patches-root;&module-init-tools-man-patch;"/></para>
+        <para>MD5 sum: <literal>&module-init-tools-man-patch-md5;</literal></para>
       </listitem>
 @z
 

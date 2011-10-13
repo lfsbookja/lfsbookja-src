@@ -17,9 +17,9 @@
     <para>The Module-Init-Tools package contains programs for handling kernel
     modules in Linux kernels greater than or equal to version 2.5.47.</para>
 @y
-<para>
-Module-Init-Tools パッケージは、Linux カーネル 2.5.47 以上においてカーネルモジュールを扱うプログラムを提供します。
-</para>
+    <para>
+    Module-Init-Tools パッケージは、Linux カーネル 2.5.47 以上においてカーネルモジュールを扱うプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -29,12 +29,12 @@ Module-Init-Tools パッケージは、Linux カーネル 2.5.47 以上におい
 @z
 
 @x
-    <para>To avoid a problem with regenerating the man pages when not needed, 
-    first rewrite a file that just points to another man page:</para>
+    <para>Apply a patch that contains the generated man pages that were missing
+    from the released source tarball:</para>
 @y
-<para>
-Man ページの生成が不要であるにも関わらず再生成してしまう不備を修正するために、適切な他の Man ページを指し示すような修正を行います。
-</para>
+    <para>
+    提供されているソース tarball には含まれていない man ページを導入するためのパッチを適用します。
+    </para>
 @z
 
 @x

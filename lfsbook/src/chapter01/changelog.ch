@@ -48,6 +48,49 @@
 @z
 
 @x
+      <para>2011-10-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Really fix the Coreutils i18n patch so that it runs
+          and passes all tests again.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to MPFR-3.1.0. Fixes
+          <ulink url="&lfs-ticket-root;2934">#2934</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Module-Init-Tools-3.16. Fixes
+          <ulink url="&lfs-ticket-root;2882">#2882</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Glibc-2.14.1. Fixes
+          <ulink url="&lfs-ticket-root;2940">#2940</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Coreutils における i18n パッチを再度修正。
+          今度こそ本当に、すべてのテストが成功するように。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPFR-3.1.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2934">#2934</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Module-Init-Tools-3.16 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2882">#2882</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Glibc-2.14.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2940">#2940</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-10</para>
       <itemizedlist>
         <listitem>
@@ -73,9 +116,8 @@
           <ulink url="&lfs-ticket-root;2938">#2938</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Add check to Chapter 5 and incorate it into
-          libpipeline. Fixes
-          <ulink url="&lfs-ticket-root;2941">#2941</ulink>.</para>
+          <para>[bdubbs] - 第5章にて Check パッケージを追加し、libpipeline パッケージにてこれを利用することに。
+          <ulink url="&lfs-ticket-root;2941">#2941</ulink> を Fix に。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - 本書にて取り扱う各パッケージに対しての md5sums に関して、3.1 節にてその入手と利用方法について説明。</para>
