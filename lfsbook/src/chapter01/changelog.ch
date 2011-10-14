@@ -48,6 +48,38 @@
 @z
 
 @x
+      <para>2011-10-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added Xz to the prerequisites due to Coreutils
+          now only distributed in .xz format.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Change file location for kbd, udev, util-linux,
+          and moduule-init-tools to anduin until kernel.org gets repopulated.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Coreutils-8.14. Fixes
+          <ulink url="&lfs-ticket-root;2945">#2945</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ホストシステム要件に Xz を追加。Coreutils が .xz フォーマットのみの提供となったため。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - kernel.org でのファイル提供の場が再構築されるまでの間、kbd, udev, util-linux, moduule-init-tools の取得元を anduin に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Coreutils-8.14 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2945">#2945</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-12</para>
       <itemizedlist>
         <listitem>
