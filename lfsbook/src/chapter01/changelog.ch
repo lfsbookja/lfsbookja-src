@@ -48,6 +48,67 @@
 @z
 
 @x
+      <para>2011-10-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Spell out the fact that the linux kernel headers
+          are located in the linux kernel tarball.</para>
+        </listitem>
+@y
+      <para>2011-10-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux カーネルヘッダーは Linux カーネル tarball 内にあることを明示。</para>
+        </listitem>
+@z
+
+@x
+      <para>2011-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove reference to /dev/shm in fstab description.
+          It is now automatic at /run/shm.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - fstab にて /dev/shm への参照を削除。最新では自動的に /run/shm へ。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-10-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add statusproc back to bootscripts.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Also remove doc/ files when stripping in Chapter 5.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add --noclear to agetty for tty1 in inittab.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトにて statusproc 関数追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第5章にてストリップの際に doc/ 配下のファイルも削除することに。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inittab にて tty1 に対する agetty に --noclear を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-13</para>
       <itemizedlist>
         <listitem>

@@ -54,6 +54,30 @@
 -->
 
     <listitem>
+      <para>2011-10-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/linux-headers.ch:
+          SVN-20111020, r9640 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2011-10-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter05/stripping.ch:
+          SVN-20111017, r9636 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-10-14</para>
       <itemizedlist>
         <listitem>
