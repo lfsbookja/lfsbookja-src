@@ -20,7 +20,7 @@
 @z
 
 @x
-    <title>Introduction to Bc</title>
+    <title>Introduction to bc</title>
 @y
     <title>Bc の概要</title>
 @z

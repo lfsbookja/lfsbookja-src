@@ -14,29 +14,31 @@
 @z
 
 @x
-  <!ENTITY openssh-time          "0.5 SBU (additional 1.5 SBU to run the test suite)">
+  <!ENTITY openssh-time          "3.5 SBU (including the test suite)">
 @y
-  <!ENTITY openssh-time          "0.5 SBU (additional 1.5 SBU to run the test suite)">
+  <!ENTITY openssh-time          "3.5 SBU (テストスイートを含む)">
+@z
+
+@x
+  <para>The <application>OpenSSH</application> package contains
+  <command>ssh</command> clients and the <command>sshd</command> daemon.
+  This is useful for encrypting authentication and subsequent traffic
+  over a network. The <command>ssh</command> and <command>scp</command>
+  commands are secure implementions of <command>telnet</command> and 
+  <command>rcp</command> respectively.</para>
+@y
+  <para>The <application>OpenSSH</application> package contains
+  <command>ssh</command> clients and the <command>sshd</command> daemon.
+  This is useful for encrypting authentication and subsequent traffic
+  over a network. The <command>ssh</command> and <command>scp</command>
+  commands are secure implementions of <command>telnet</command> and 
+  <command>rcp</command> respectively.</para>
 @z
 
 @x
     <title>Introduction to OpenSSH</title>
 @y
     <title>OpenSSH の概要</title>
-@z
-
-@x
-    <para>The <application>OpenSSH</application> package contains
-    <command>ssh</command> clients and the <command>sshd</command> daemon.
-    This is useful for encrypting authentication and subsequent traffic
-    over a network.</para>
-@y
-<para>
-The <application>OpenSSH</application> package contains
-<command>ssh</command> clients and the <command>sshd</command> daemon.
-This is useful for encrypting authentication and subsequent traffic
-over a network.
-</para>
 @z
 
 @x
@@ -232,13 +234,13 @@ over a network.
 @z
 
 @x
-    <para><command>sed -i.bak 's/ -ldes//' configure</command>:
+    <para><command>sed -i.bak '/K5LIBS=/s/ -ldes//' configure</command>:
     This command fixes a build crash if you used the
     <option>--with-kerberos5</option> parameter and you built the
     <application>Heimdal</application> package in accordance with the BLFS
     instructions. The command is harmless in all other instances.</para>
 @y
-    <para><command>sed -i.bak 's/ -ldes//' configure</command>:
+    <para><command>sed -i.bak '/K5LIBS=/s/ -ldes//' configure</command>:
     This command fixes a build crash if you used the
     <option>--with-kerberos5</option> parameter and you built the
     <application>Heimdal</application> package in accordance with the BLFS

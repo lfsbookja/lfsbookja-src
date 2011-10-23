@@ -156,17 +156,15 @@
 @x
       <para>To configure <command>dhcpcd</command>, you need to first install
       the network service script,
-      <filename>/etc/sysconfig/network-devices/services/dhcpcd</filename>
+      <filename>/lib/services/dhcpcd</filename>
       included in the <xref linkend="bootscripts"/> package
       (as user <systemitem class="username">root</systemitem>):</para>
 @y
-    <para>
-    To configure <command>dhcpcd</command>, you need to first install
-    the network service script,
-    <filename>/etc/sysconfig/network-devices/services/dhcpcd</filename>
-    included in the <xref linkend="bootscripts"/> package
-    (as user <systemitem class="username">root</systemitem>):
-    </para>
+      <para>To configure <command>dhcpcd</command>, you need to first install
+      the network service script,
+      <filename>/lib/services/dhcpcd</filename>
+      included in the <xref linkend="bootscripts"/> package
+      (as user <systemitem class="username">root</systemitem>):</para>
 @z
 
 @x
@@ -182,31 +180,27 @@
 @x
       <para>Whenever <command>dhcpcd</command> configures or shuts down
       a network interface, it executes hook scripts. For more details
-      about those scripts, see the <command>dhcpcd-run-hooks</command> as
-      well as the <command>dhcpcd</command> man page.</para>
+      about those scripts, see the <command>dhcpcd-run-hooks</command> and
+      <command>dhcpcd</command> man pages.</para>
 @y
-    <para>
-    Whenever <command>dhcpcd</command> configures or shuts down
-    a network interface, it executes hook scripts. For more details
-    about those scripts, see the <command>dhcpcd-run-hooks</command> as
-    well as the <command>dhcpcd</command> man page.
-    </para>
+      <para>Whenever <command>dhcpcd</command> configures or shuts down
+      a network interface, it executes hook scripts. For more details
+      about those scripts, see the <command>dhcpcd-run-hooks</command> and
+      <command>dhcpcd</command> man pages.</para>
 @z
 
 @x
       <para id="dhcpcd-config2">Finally, as the <systemitem
       class="username">root</systemitem> user create the
-      <filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhcpcd</filename>
+      <filename>/etc/sysconfig/ifconfig.eth0</filename>
       configuration file using the following commands.  Adjust appropriately
       for additional interfaces:</para>
 @y
-      <para id="dhcpcd-config2">
-      Finally, as the <systemitem
+      <para id="dhcpcd-config2">Finally, as the <systemitem
       class="username">root</systemitem> user create the
-      <filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhcpcd</filename>
+      <filename>/etc/sysconfig/ifconfig.eth0</filename>
       configuration file using the following commands.  Adjust appropriately
-      for additional interfaces:
-      </para>
+      for additional interfaces:</para>
 @z
 
 @x
@@ -222,25 +216,47 @@
 @z
 
 @x
-        <para id="dhcpcd-config3">The default behavior of <command>dhcpcd</command>
-        is to overwrite <filename>/etc/resolv.conf</filename>. All modifications on
-        system configuration files like <filename>/etc/resolv.conf</filename>,
-        <filename>/etc/yp.conf</filename> and <filename>/etc/ntp.conf</filename> are
-        done by hooks which are stored in <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
-        Setup <command>dhcpcd</command> by removing or adding hooks from/to that directory.
-        The execution of hooks can be disabled by using the -C command line option.</para>
-        <para>Review the <command>dhcpcd</command> man page for switches to add to the
-        <envar>DHCP_START</envar> value.</para>
+        <para id="dhcpcd-config3">The default behavior of
+        <command>dhcpcd</command> sets the hostname and mtu settings.  It also
+        overwrites <filename>/etc/resolv.conf</filename> and
+        <filename>/etc/ntp.conf</filename>. 
 @y
-        <para id="dhcpcd-config3">The default behavior of <command>dhcpcd</command>
-        is to overwrite <filename>/etc/resolv.conf</filename>. All modifications on
-        system configuration files like <filename>/etc/resolv.conf</filename>,
-        <filename>/etc/yp.conf</filename> and <filename>/etc/ntp.conf</filename> are
-        done by hooks which are stored in <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
-        Setup <command>dhcpcd</command> by removing or adding hooks from/to that directory.
-        The execution of hooks can be disabled by using the -C command line option.</para>
-        <para>Review the <command>dhcpcd</command> man page for switches to add to the
-        <envar>DHCP_START</envar> value.</para>
+        <para id="dhcpcd-config3">The default behavior of
+        <command>dhcpcd</command> sets the hostname and mtu settings.  It also
+        overwrites <filename>/etc/resolv.conf</filename> and
+        <filename>/etc/ntp.conf</filename>. 
+@z
+
+@x
+        These modifications to system files and settings on system
+        configuration files are done by hooks which are stored in <filename
+        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+@y
+        These modifications to system files and settings on system
+        configuration files are done by hooks which are stored in <filename
+        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+@z
+
+@x
+        Setup <command>dhcpcd</command> by removing or adding hooks from/to
+        that directory.  The execution of hooks can be disabled by using the
+        <option>--nohook</option> (<option>-C</option>) command line option or
+        by the <option>nohook</option> option in the
+        <filename>/etc/dhcpcd.conf</filename> file.</para> 
+@y
+        Setup <command>dhcpcd</command> by removing or adding hooks from/to
+        that directory.  The execution of hooks can be disabled by using the
+        <option>--nohook</option> (<option>-C</option>) command line option or
+        by the <option>nohook</option> option in the
+        <filename>/etc/dhcpcd.conf</filename> file.</para> 
+@z
+
+@x
+        <para>Review the <command>dhcpcd</command> man page for switches to add
+        to the <envar>DHCP_START</envar> value.</para> 
+@y
+        <para>Review the <command>dhcpcd</command> man page for switches to add
+        to the <envar>DHCP_START</envar> value.</para> 
 @z
 
 @x
@@ -262,11 +278,11 @@
 @x
         <seg>dhcpcd</seg>
         <seg>None</seg>
-        <seg>/lib/dhcpcd, /etc/dhcpcd</seg>
+        <seg>/lib/dhcpcd</seg>
 @y
         <seg>dhcpcd</seg>
         <seg>なし</seg>
-        <seg>/lib/dhcpcd, /etc/dhcpcd</seg>
+        <seg>/lib/dhcpcd</seg>
 @z
 
 @x

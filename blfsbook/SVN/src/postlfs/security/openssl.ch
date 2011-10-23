@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openssl-time          "1.0 SBU (additional 0.3 SBU to run the test suite)">
+  <!ENTITY openssl-time          "1.1 SBU (additional 0.3 SBU to run the test suite)">
 @y
-  <!ENTITY openssl-time          "1.0 SBU (テストスイート実行の場合、さらに 0.3 SBU)">
+  <!ENTITY openssl-time          "1.1 SBU (テストスイート実行の場合、さらに 0.3 SBU)">
 @z
 
 @x
@@ -68,23 +68,23 @@
         <para>ダウンロードサイズ: &openssl-size;</para>
 @z
 
-@x
-        <para>CA Bundle Download: <ulink url="&ca-bundle-download;"/></para>
-@y
-        <para>CA Bundle ダウンロード: <ulink url="&ca-bundle-download;"/></para>
-@z
-
-@x
-        <para>CA Bundle size: &ca-bundle-size;</para>
-@y
-        <para>CA Bundle サイズ: &ca-bundle-size;</para>
-@z
-
-@x
-        <para>CA Bundle MD5 sum: &ca-bundle-md5sum;</para>
-@y
-        <para>CA Bundle MD5 sum: &ca-bundle-md5sum;</para>
-@z
+% @x
+%         <para>CA Bundle Download: <ulink url="&ca-bundle-download;"/></para>
+% @y
+%         <para>CA Bundle ダウンロード: <ulink url="&ca-bundle-download;"/></para>
+% @z
+% 
+% @x
+%         <para>CA Bundle size: &ca-bundle-size;</para>
+% @y
+%         <para>CA Bundle サイズ: &ca-bundle-size;</para>
+% @z
+% 
+% @x
+%         <para>CA Bundle MD5 sum: &ca-bundle-md5sum;</para>
+% @y
+%         <para>CA Bundle MD5 sum: &ca-bundle-md5sum;</para>
+% @z
 
 @x
         <para>Estimated disk space required: &openssl-buildsize;</para>
@@ -179,14 +179,14 @@
     </para>
 @z
 
-@x
-    <para>While still the <systemitem class="username">root</systemitem> user,
-    create a single file that contains all of the installed certificates:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーでログインしたまま、インストール済みの証明書ファイルを一つのファイルにまとめます。
-    </para>
-@z
+% @x
+%     <para>While still the <systemitem class="username">root</systemitem> user,
+%     create a single file that contains all of the installed certificates:</para>
+% @y
+%     <para>
+%     <systemitem class="username">root</systemitem> ユーザーでログインしたまま、インストール済みの証明書ファイルを一つのファイルにまとめます。
+%     </para>
+% @z
 
 @x
     <title>Command Explanations</title>
@@ -194,18 +194,18 @@
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para>
-    <command>tar -vxf ../BLFS-ca-bundle-&ca-bundle-version;.tar.bz2</command>:
-    <application>OpenSSL</application> no longer includes any root certificates. 
-    This package adds root certificates as provided by mozilla.org.</para>
-@y
-    <para>
-    <command>tar -vxf ../BLFS-ca-bundle-&ca-bundle-version;.tar.bz2</command>:
-    <application>OpenSSL</application> はルート証明書を提供しないものとなりました。
-    本パッケージは mozilla.org から提供されているものであり、ルート証明書を追加します。
-    </para>
-@z
+% @x
+%     <para>
+%     <command>tar -vxf ../BLFS-ca-bundle-&ca-bundle-version;.tar.bz2</command>:
+%     <application>OpenSSL</application> no longer includes any root certificates. 
+%     This package adds root certificates as provided by mozilla.org.</para>
+% @y
+%     <para>
+%     <command>tar -vxf ../BLFS-ca-bundle-&ca-bundle-version;.tar.bz2</command>:
+%     <application>OpenSSL</application> はルート証明書を提供しないものとなりました。
+%     本パッケージは mozilla.org から提供されているものであり、ルート証明書を追加します。
+%     </para>
+% @z
 
 @x
     <para><parameter>shared</parameter>: This parameter forces the creation of
@@ -256,34 +256,34 @@
     </para>
 @z
 
-@x
-    <para><command>cp -v -r certs /etc/ssl</command>: This installs both the
-    sample certificates and documentation included with
-    <application>OpenSSL</application>, and the certificates that were extracted
-    from the BLFS-ca-bundle-&ca-bundle-version; package.</para>
-@y
-    <para>
-    <command>cp -v -r certs /etc/ssl</command>:
-    <application>OpenSSL</application> のサンプル証明書とドキュメントをともにインストールします。
-    証明書は BLFS-ca-bundle-&ca-bundle-version; から抽出されインストールされます。
-    </para>
-@z
+% @x
+%     <para><command>cp -v -r certs /etc/ssl</command>: This installs both the
+%     sample certificates and documentation included with
+%     <application>OpenSSL</application>, and the certificates that were extracted
+%     from the BLFS-ca-bundle-&ca-bundle-version; package.</para>
+% @y
+%     <para>
+%     <command>cp -v -r certs /etc/ssl</command>:
+%     <application>OpenSSL</application> のサンプル証明書とドキュメントをともにインストールします。
+%     証明書は BLFS-ca-bundle-&ca-bundle-version; から抽出されインストールされます。
+%     </para>
+% @z
 
-@x
-    <para><command>for pem in /etc/ssl/certs/*.pem...</command>: This group of
-    commands creates a single-file certificate bundle 
-    (<filename>/etc/ssl/ca-bundle.crt</filename>) that is usable by many
-    other software packages.  <filename>ca-bundle.crt</filename> should be
-    recreated every time a new or updated certificate is added to
-    <filename class="directory">/etc/ssl/certs</filename>.</para>
-@y
-    <para>
-    <command>for pem in /etc/ssl/certs/*.pem...</command>:
-    この一連のコマンドによって、単一の証明書バンドル (certificat bundle; <filename>/etc/ssl/ca-bundle.crt</filename>) を生成します。
-    他の多くのソフトウェアパッケージがこれを参照します。
-    <filename class="directory">/etc/ssl/certs</filename> に対して証明書を新たに加えたり更新したりした都度、<filename>ca-bundle.crt</filename> を再生成する必要があります。
-    </para>
-@z
+% @x
+%     <para><command>for pem in /etc/ssl/certs/*.pem...</command>: This group of
+%     commands creates a single-file certificate bundle 
+%     (<filename>/etc/ssl/ca-bundle.crt</filename>) that is usable by many
+%     other software packages.  <filename>ca-bundle.crt</filename> should be
+%     recreated every time a new or updated certificate is added to
+%     <filename class="directory">/etc/ssl/certs</filename>.</para>
+% @y
+%     <para>
+%     <command>for pem in /etc/ssl/certs/*.pem...</command>:
+%     この一連のコマンドによって、単一の証明書バンドル (certificat bundle; <filename>/etc/ssl/ca-bundle.crt</filename>) を生成します。
+%     他の多くのソフトウェアパッケージがこれを参照します。
+%     <filename class="directory">/etc/ssl/certs</filename> に対して証明書を新たに加えたり更新したりした都度、<filename>ca-bundle.crt</filename> を再生成する必要があります。
+%     </para>
+% @z
 
 @x
     <title>Configuring OpenSSL</title>
@@ -304,22 +304,35 @@
 @z
 
 @x
-      <para>Most people who just want to use <application>OpenSSL</application>
-      for providing functions to other programs such as
-      <application>OpenSSH</application> and web browsers won't need to worry
-      about configuring <application>OpenSSL</application>. Configuring
-      <application>OpenSSL</application> is an advanced topic and so those
-      who do would normally be expected to either know how to do it or to be
-      able to find out how to do it.</para>
+      <para>Most users will want to install Certificate Authority Certificates
+      for validataion of downloaded certificates.  For example, these
+      certificates are used by <xref linkend='firefox'/> or <xref
+      linkend='wget'/> when accessing secure (https protocol) sites.  To do this, 
+      follow the instructions from the <xref linkend='cacerts'/> page.</para> 
 @y
-      <para>
-      <application>OpenSSH</application> やウェブブラウザーなどにおいて <application>OpenSSL</application> の機能を利用する場合に、<application>OpenSSL</application> の設定を気にかける必要はありません。
-      
-Configuring
-      <application>OpenSSL</application> is an advanced topic and so those
-      who do would normally be expected to either know how to do it or to be
-      able to find out how to do it.
-      </para>
+      <para>Most users will want to install Certificate Authority Certificates
+      for validataion of downloaded certificates.  For example, these
+      certificates are used by <xref linkend='firefox'/> or <xref
+      linkend='wget'/> when accessing secure (https protocol) sites.  To do this, 
+      follow the instructions from the <xref linkend='cacerts'/> page.</para> 
+@z
+
+@x
+      <para>Users who just want to use <application>OpenSSL</application> for
+      providing functions to other programs such as
+      <application>OpenSSH</application> and web browsers do not need to worry
+      about additional configuration. This is an advanced topic and so those
+      who do need it would normally be expected to either know how to properly
+      update <filename>/etc/ssl/openssl.cnf</filename> or be able to find out
+      how to do it.</para>
+@y
+      <para>Users who just want to use <application>OpenSSL</application> for
+      providing functions to other programs such as
+      <application>OpenSSH</application> and web browsers do not need to worry
+      about additional configuration. This is an advanced topic and so those
+      who do need it would normally be expected to either know how to properly
+      update <filename>/etc/ssl/openssl.cnf</filename> or be able to find out
+      how to do it.</para>
 @z
 
 @x

@@ -15,10 +15,10 @@
 
 @x
 <!ENTITY version      "svn-&year;&month;&day;">
-<!ENTITY releasedate  "April &day;th, &year;">
+<!ENTITY releasedate  "September &day;nd, &year;">
 @y
 <!ENTITY version      "svn-&year;&month;&day;">
-<!ENTITY jversion     "20110903">
+<!ENTITY jversion     "20111023">
 <!ENTITY jratio       "43.7 &percnt;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
 @z
@@ -65,6 +65,10 @@
                               properly using an LFS-6.7 platform.</para>">
 <!ENTITY lfs67_built          "<para>This package is known to build using an LFS
                               6.7 platform but has not been tested.</para>">
+<!ENTITY lfs70_checked        "<para>This package is known to build and work
+                              properly using an LFS-7.0 platform.</para>">
+<!ENTITY lfs70_built          "<para>This package is known to build using an LFS
+                              7.0 platform but has not been tested.</para>">
 @y
 <!ENTITY lfs65_checked        "<para>本パッケージは LFS-6.5 において正しくビルドでき動作することが確認されています。</para>">
 <!ENTITY lfs65_built          "<para>本パッケージは LFS-6.5 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
@@ -77,6 +81,8 @@
 <!ENTITY lfs66_built          "<para>本パッケージは LFS-6.6 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 <!ENTITY lfs67_checked        "<para>本パッケージは LFS-6.7 において正しくビルドでき動作することが確認されています。</para>">
 <!ENTITY lfs67_built          "<para>本パッケージは LFS-6.7 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+<!ENTITY lfs70_checked        "<para>本パッケージは LFS-7.0 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs70_built          "<para>本パッケージは LFS-7.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x
