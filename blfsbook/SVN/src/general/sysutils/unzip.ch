@@ -46,9 +46,9 @@
       package had some locale related issues. Currently there are no BLFS
       editors capable of testing these local issues. Therefore, the
       locale related information is left on this page, but has not been
-      tested. Note that the patch recommended for the locale issues will not
+      tested. <!--Note that the patch recommended for the locale issues will not
       apply to this version of <application>UnZip</application>. See the
-      discussion below in <xref linkend="unzip-locale-issues"/>. A more
+      discussion below in <xref linkend="unzip-locale-issues"/>. --> A more
       general discussion of these problems can be found in the
       <xref linkend="locale-assumed-encoding"/> section of the
       <xref linkend="locale-issues"/> page.</para>
@@ -57,9 +57,9 @@
       package had some locale related issues. Currently there are no BLFS
       editors capable of testing these local issues. Therefore, the
       locale related information is left on this page, but has not been
-      tested. Note that the patch recommended for the locale issues will not
+      tested. <!--Note that the patch recommended for the locale issues will not
       apply to this version of <application>UnZip</application>. See the
-      discussion below in <xref linkend="unzip-locale-issues"/>. A more
+      discussion below in <xref linkend="unzip-locale-issues"/>. --> A more
       general discussion of these problems can be found in the
       <xref linkend="locale-assumed-encoding"/> section of the
       <xref linkend="locale-issues"/> page.</para>

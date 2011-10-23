@@ -33,19 +33,18 @@
   <xref linkend="credits"/> page in Chapter 1 for details on
   who wrote what.</para>
 @y
-<para>
-この変更履歴には、各編集者が Subversion に登録した変更内容のみを示しています。
-誰が何を担当しているかについては <xref linkend="credits"/>
-のページを参照してください。
+  <para>
+  この変更履歴には、各編集者が Subversion に登録した変更内容のみを示しています。
+  誰が何を担当しているかについては <xref linkend="credits"/> のページを参照してください。
 </para>
 @z
 
 @x
   <para>Current release: &version; &ndash; &releasedate;</para>
 @y
-<para>
-最新リリース: &version; &ndash; &releasedate;
-</para>
+  <para>
+  最新リリース: &version; &ndash; &releasedate;
+  </para>
 
   <note>
    <title>日本語訳情報</title>
@@ -59,6 +58,50 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴</title>
+@z
+
+@x
+      <para>October 22nd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Mark some packages as LFS 7.0 checked.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Minor updates to unzip instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated dhcpcd-5.2.12.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/10/22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - パッケージのいくつかについて LFS 7.0 チェック済に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Unzip の手順を若干変更。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - dhcpcd-5.2.12 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 21st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated ntp-4.2.6p4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>October 21st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ntp-4.2.6p4 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x
