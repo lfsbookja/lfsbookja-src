@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY apache-buildsize     "102 MB (building all available DSO modules)">
-  <!ENTITY apache-time          "2.1 SBU (building all available DSO modules)">
+  <!ENTITY apache-buildsize     "105 MB (building all available DSO modules)">
+  <!ENTITY apache-time          "1.2 SBU (building all available DSO modules)">
 @y
-  <!ENTITY apache-buildsize     "102 MB (利用可能なすべての DSO モジュールをビルドする場合)">
-  <!ENTITY apache-time          "2.1 SBU (利用可能なすべての DSO モジュールをビルドする場合)">
+  <!ENTITY apache-buildsize     "105 MB (利用可能なすべての DSO モジュールをビルドする場合)">
+  <!ENTITY apache-time          "1.2 SBU (利用可能なすべての DSO モジュールをビルドする場合)">
 @z
 
 @x
@@ -152,9 +152,9 @@
 @z
 
 @x
-    <para>Though you can install APR and APR-util as separate components,
-    it is recommended to use the bundled versions that come with the Apache
-    HTTPD tarball.</para>
+    <para>Though you can install APR and APR-util as separate components, the
+    bundled versions that come with the Apache HTTPD tarball are
+    recommended.</para>
 @y
     <para>
     APR や APR-util は個別のコンポーネントとしてインストールすることもできます。

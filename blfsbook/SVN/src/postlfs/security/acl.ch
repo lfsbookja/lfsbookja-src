@@ -161,15 +161,15 @@
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><command>cat &gt; test/sort-getfacl-output ... EOF</command>: This
-    command creates a missing test script.</para>
-@y
-    <para>
-    <command>cat &gt; test/sort-getfacl-output ... EOF</command>:
-    このコマンドは不足しているテストスクリプトを生成します。
-    </para>
-@z
+% @x
+%     <para><command>cat &gt; test/sort-getfacl-output ... EOF</command>: This
+%     command creates a missing test script.</para>
+% @y
+%     <para>
+%     <command>cat &gt; test/sort-getfacl-output ... EOF</command>:
+%     このコマンドは不足しているテストスクリプトを生成します。
+%     </para>
+% @z
 
 @x
     <para><command>sed -i ... include/builddefs.in</command>: This command

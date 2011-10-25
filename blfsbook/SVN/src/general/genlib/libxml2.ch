@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY libxml2-buildsize     "104 MB (additional 25 MB to run the full test suite)">
-  <!ENTITY libxml2-time          "1.1 SBU (additional 0.2 SBU to run the full test suite)">
+  <!ENTITY libxml2-time          "1.0 SBU (additional 0.2 SBU to run the full test suite)">
 @y
   <!ENTITY libxml2-buildsize     "104 MB (テストスイートをすべて実施するなら、さらに 25 MB)">
-  <!ENTITY libxml2-time          "1.1 SBU (テストスイートをすべて実施するなら、さらに 0.2 SBU)">
+  <!ENTITY libxml2-time          "1.0 SBU (テストスイートをすべて実施するなら、さらに 0.2 SBU)">
 @z
 
 @x
@@ -88,18 +88,12 @@ XML ファイルの処理に用いられます。
 @x
         <para>Optional Testsuite: <ulink
           url="http://www.w3.org/XML/Test/xmlts20080827.tar.gz"/> - This
-          enables <command>make check</command> to do complete testing.
-          <!-- /* I can't find any documented reason not to use latest instead
-          of 20080205 */     Note
-          that this is <emphasis>not</emphasis> the latest version of the
-          testsuite, but it is the one specified by the developers.--></para>
+          enables <command>make check</command> to do complete testing.</para>
 @y
-<para>
-任意のテストスイート: <ulink
-url="http://www.w3.org/XML/Test/xmlts20080827.tar.gz"/> - 
-これを利用すると <command>make check</command>
-により完全なテストを行うことができます。
-</para>
+        <para>任意のテストスイート: <ulink
+          url="http://www.w3.org/XML/Test/xmlts20080827.tar.gz"/> -
+          これを利用すると <command>make check</command> により完全なテストを行うことができます。
+        </para>
 @z
 
 @x
