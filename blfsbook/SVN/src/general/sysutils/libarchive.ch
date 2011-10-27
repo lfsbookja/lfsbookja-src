@@ -80,14 +80,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="libxml2"/> or <xref linkend="expat"/>, and
-    <xref linkend="xz-utils"/>
+    <xref linkend="libxml2"/> or <xref linkend="expat"/>
     </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="libxml2"/> または <xref linkend="expat"/>,
-    <xref linkend="xz-utils"/>
+    <xref linkend="libxml2"/> または <xref linkend="expat"/>
     </para>
 @z
 

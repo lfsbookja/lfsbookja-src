@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY python-buildsize     "171 MB (23MB for the test suite, additional 26MB for the documentation)">
+  <!ENTITY python-buildsize     "141 MB (23MB for the test suite)">
   <!ENTITY python-time          "1 SBU (additional 2.9 SBU to run the test suite)">
 @y
-  <!ENTITY python-buildsize     "171 MB (テストスイート実行時には 23MB、ドキュメント生成時は追加で 26MB)">
+  <!ENTITY python-buildsize     "141 MB (テストスイート実行時は 23MB)">
   <!ENTITY python-time          "1 SBU (テストスイート実行時はさらに 2.9 SBU)">
 @z
 
@@ -33,11 +33,11 @@
     This is useful for object-oriented programming, writing scripts,
     prototyping large programs or developing entire applications.</para>
 @y
-<para>
-<application>Python</application>
-パッケージは <application>Python</application> 開発環境を提供します。
-この環境は、オブジェクト指向プログラミング、スクリプト構築、大規模なプロトタイプ開発、一連のアプリケーション開発を可能とします。
-</para>
+    <para>
+    <application>Python</application>
+    パッケージは <application>Python</application> 開発環境を提供します。
+    この環境は、オブジェクト指向プログラミング、スクリプト構築、大規模なプロトタイプ開発、一連のアプリケーション開発を可能とします。
+    </para>
 @z
 
 @x
@@ -146,15 +146,12 @@
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="tk"/>,
     <xref linkend="db"/>, and
-    <!-- <xref linkend="gdbm"/>, and -->
     <xref linkend="sqlite"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;
-    (各パッケージ固有のサポートモジュール生成に必要)</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional; (各パッケージ固有のサポートモジュール生成に必要)</bridgehead>
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="tk"/>,
     <xref linkend="db"/>,
-    <!-- <xref linkend="gdbm"/>, and -->
     <xref linkend="sqlite"/></para>
 @z
 
@@ -163,11 +160,11 @@
     <application>Tk</application> package as it requires Xorg to be installed
     but parts of Xorg depend on <application>Python</application>.</para>
 @y
-<para>
-<application>Tk</application> パッケージには循環的な依存関係があります。
-つまりこのパッケージは Xorg を必要としますが、Xorg における所定パッケージが
-<application>Python</application> パッケージを必要としているものがあります。
-</para>
+    <para>
+    <application>Tk</application> パッケージには循環的な依存関係があります。
+    つまりこのパッケージは Xorg を必要としますが、Xorg における所定パッケージが
+    <application>Python</application> パッケージを必要としているものがあります。
+    </para>
 @z
 
 @x
@@ -199,19 +196,18 @@
     which includes the <application>PyXML</application> module, the tests could
     produce a segmentation fault.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make test</command> を実行します。
-既に <application>Python</application> をインストールしていて、それが
-<application>PyXML</application> モジュールも含んでいる場合、テストにてセグメンテーションフォールトが発生する場合があります。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    既に <application>Python</application> をインストールしていて、それが <application>PyXML</application> モジュールも含んでいる場合、テストにてセグメンテーションフォールトが発生する場合があります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -221,14 +217,11 @@
     you can download preformatted documentation from <ulink
     url="http://docs.python.org/download.html"/>.</para>
 @y
-<para>
-上のコマンド実行ではドキュメントがインストールされません。
-HTML ドキュメントを生成する場合は、ソースディレクトリ内にある
-<filename>Doc/README.txt</filename> ファイルを参照してください。
-あるいは既に構築済のドキュメントを
-<ulink url="http://docs.python.org/download.html"/>
-からダウンロードすることもできます。
-</para>
+    <para>
+    上のコマンド実行ではドキュメントがインストールされません。
+    HTML ドキュメントを生成する場合は、ソースディレクトリ内にある <filename>Doc/README.txt</filename> ファイルを参照してください。
+    あるいは既に構築済のドキュメントを <ulink url="http://docs.python.org/download.html"/> からダウンロードすることもできます。
+    </para>
 @z
 
 @x
@@ -368,4 +361,3 @@ is a wrapper script that opens a
           <para>is an SMTP proxy implemented in
           <application>Python</application>.</para>
 @z
-

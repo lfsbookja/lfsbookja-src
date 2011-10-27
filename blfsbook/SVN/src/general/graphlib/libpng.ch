@@ -79,23 +79,18 @@
 
 @x
         <para>Optional patch to include apng functionality in
-        <application>libpng</application> : <ulink
-        url="&patch-root;/libpng-&libpng-version;-apng-1.patch"/></para>
-        <para>Although rejected by upstream, the patch is required if you want
-        to use the system <application>libpng</application> in
-        <application>Firefox</application> 3.</para>
+        <application>libpng</application> : <ulink url="&apng-patch;"/></para>
+        <para>The patch is required if you want to use the system
+        <application>libpng</application> in
+        <application>Firefox</application>.</para>
 @y
-<para>
-<application>libpng</application>
-にて apng 機能を含めるための任意のパッチ:
-<ulink url="&patch-root;/libpng-&libpng-version;-apng-1.patch"/></para>
-<para>
-これはアップストリームでは取り除かれているものです。
-ただしこのパッチは、
-<application>Firefox</application> 3
-にて <application>libpng</application>
-を利用する場合に必要となります。
-</para>
+        <para>
+        <application>libpng</application> に apng 機能を含めるための任意のパッチ: <ulink
+        url="&apng-patch;"/>
+        </para>
+        <para>
+        このパッチは <application>Firefox</application> において、既インストールの <application>libpng</application> を利用する場合に必要となります。
+        </para>
 @z
 
 @x

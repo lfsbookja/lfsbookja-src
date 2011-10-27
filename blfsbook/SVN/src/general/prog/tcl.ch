@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY tcl-buildsize     "64 MB (includes documentation installation)">
-  <!ENTITY tcl-time          "0.4 SBU (additional 1.2 SBU to run the test suite)">
+  <!ENTITY tcl-buildsize     "47 MB (includes documentation installation)">
 @y
-  <!ENTITY tcl-buildsize     "64 MB (ドキュメントのインストールを含む)">
-  <!ENTITY tcl-time          "0.4 SBU (テストスイート実行時はさらに 1.2 SBU)">
+  <!ENTITY tcl-buildsize     "47 MB (ドキュメントのインストールを含む)">
 @z
 
 @x
@@ -31,11 +29,10 @@
     <para>The <application>Tcl</application> package contains the Tool Command
     Language, a robust general-purpose scripting language.</para>
 @y
-<para>
-<application>Tcl</application>
-パッケージは Tool Command Language を提供します。
-これは汎用目的のスクリプト言語です。
-</para>
+    <para>
+    <application>Tcl</application> パッケージは Tool Command Language を提供します。
+    これは汎用目的のスクリプト言語です。
+    </para>
 @z
 
 @x

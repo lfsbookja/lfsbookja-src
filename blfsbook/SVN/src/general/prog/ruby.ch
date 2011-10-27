@@ -24,11 +24,11 @@
     <application>Ruby</application> development environment. This
     is useful for object-oriented scripting.</para>
 @y
-<para>
-The <application>Ruby</application> package contains the
-<application>Ruby</application> development environment. This
-is useful for object-oriented scripting.
-</para>
+    <para>
+    The <application>Ruby</application> package contains the
+    <application>Ruby</application> development environment. This
+    is useful for object-oriented scripting.
+    </para>
 @z
 
 @x
@@ -81,14 +81,20 @@ is useful for object-oriented scripting.
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="tk"/>, and
-    <xref linkend="db"/></para>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="tk"/>, and
+      <xref linkend="db"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="tk"/>,
-    <xref linkend="db"/></para>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="tk"/>,
+      <xref linkend="db"/>
+    </para>
 @z
 
 @x
@@ -109,27 +115,23 @@ is useful for object-oriented scripting.
     <para>Install <application>Ruby</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Ruby</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Ruby</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>. As many
-    as seven of the 6000+ tests may show failure.</para>
+    <para>To test the results, issue: <command>make test</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make test</command> を実行します。
-6000+ テストのうち 7つほどは失敗します。
-</para>
+    <para>ビルド結果をテストする場合は <command>make test</command> を実行します。</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -142,20 +144,20 @@ is useful for object-oriented scripting.
     <para><parameter>--enable-shared</parameter>: This parameter builds the
     <filename class='libraryfile'>libruby</filename> shared library.</para>
 @y
-<para>
-<parameter>--enable-shared</parameter>: This parameter builds the
-<filename class='libraryfile'>libruby</filename> shared library.
-</para>
+    <para>
+    <parameter>--enable-shared</parameter>: This parameter builds the
+    <filename class='libraryfile'>libruby</filename> shared library.
+    </para>
 @z
 
 @x
     <para><parameter>--enable-pthread</parameter>: This parameter links the
     threading library into the <application>Ruby</application> build.</para>
 @y
-<para>
-<parameter>--enable-pthread</parameter>: This parameter links the
-threading library into the <application>Ruby</application> build.
-</para>
+    <para>
+    <parameter>--enable-pthread</parameter>: This parameter links the
+    threading library into the <application>Ruby</application> build.
+    </para>
 @z
 
 @x
@@ -231,4 +233,3 @@ threading library into the <application>Ruby</application> build.
           <para>contains the API functions required
           by <application>Ruby</application>.</para>
 @z
-
