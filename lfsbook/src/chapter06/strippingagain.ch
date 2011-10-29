@@ -26,11 +26,11 @@
   libraries. This causes no inconvenience other than not being able to
   debug the software fully anymore.</para>
 @y
-<para>
-対象ユーザーがプログラマーではなく、プログラム類をデバッグするような使い方をしないのであれば、実行ファイルやライブラリに含まれるデバッグシンボルを削除しても構いません。
-そうすれば 90 MB ものサイズ削減を図ることができます。
-たとえデバッグできなくなっても困らないはずです。
-</para>
+  <para>
+  対象ユーザーがプログラマーではなく、プログラム類をデバッグするような使い方をしないのであれば、実行ファイルやライブラリに含まれるデバッグシンボルを削除しても構いません。
+  そうすれば 90 MB ものサイズ削減を図ることができます。
+  たとえデバッグできなくなっても困らないはずです。
+  </para>
 @z
 
 @x
@@ -40,11 +40,11 @@
   <command>strip</command> command, it is a good idea to make a
   backup of the LFS system in its current state.</para>
 @y
-<para>
-以下に示すコマンドは、いとも簡単なものです。
-ただし入力つづりは簡単に間違いやすいので、もし誤った入力をするとシステムを利用不能にしてしまいます。
-したがって <command>strip</command> コマンドを実行する前に、現時点の LFS システムのバックアップを取っておくことをお勧めします。
-</para>
+  <para>
+  以下に示すコマンドは、いとも簡単なものです。
+  ただし入力つづりは簡単に間違いやすいので、もし誤った入力をするとシステムを利用不能にしてしまいます。
+  したがって <command>strip</command> コマンドを実行する前に、現時点の LFS システムのバックアップを取っておくことをお勧めします。
+  </para>
 @z
 
 @x
@@ -54,10 +54,10 @@
   <xref linkend="ch-system-chroot" role=","/> first exit from
   chroot:</para>
 @y
-<para>
-ストリップを実行する前には、ストリップしようとしている実行ファイルが実行中でないことを十分確認してください。
-また <xref linkend="ch-system-chroot" role=""/> に示したコマンドにより chroot 環境に入っているかどうか定かでない場合は、いったんログアウトしてください。
-</para>
+  <para>
+  ストリップを実行する前には、ストリップしようとしている実行ファイルが実行中でないことを十分確認してください。
+  また <xref linkend="ch-system-chroot" role=""/> に示したコマンドにより chroot 環境に入っているかどうか定かでない場合は、いったんログアウトしてください。
+  </para>
 @z
 
 @x
@@ -78,24 +78,8 @@
   warnings indicate that those files are scripts instead of
   binaries.</para>
 @y
-<para>
-ファイルフォーマットが認識できないファイルがいくつも警告表示されますが、無視して構いません。
-この警告は、処理したファイルが実行モジュールではなくスクリプトファイルであることを示しています。
-</para>
-@z
-
-@x
-  <para>If disk space is very tight, the
-  <parameter>--strip-all</parameter> option can be used on the binaries
-  in <filename class="directory">/{,usr/}{bin,sbin}</filename> to gain
-  several more megabytes. Do not use this option on libraries&mdash;they will
-  be destroyed.</para>
-@y
-<para>
-ディスク容量が極端に少ない場合は <filename
-class="directory">/{,usr/}{bin,sbin}</filename> ディレクトリにある実行モジュールに対して <parameter>--strip-all</parameter> オプションを用いることもできます。
-この場合さらに数 MB の容量を節約できます。
-ただしこれをライブラリに対して用いてはなりません。
-これを用いてしまうとライブラリが破壊されてしまいます。
-</para>
+  <para>
+  ファイルフォーマットが認識できないファイルがいくつも警告表示されますが、無視して構いません。
+  この警告は、処理したファイルが実行モジュールではなくスクリプトファイルであることを示しています。
+  </para>
 @z

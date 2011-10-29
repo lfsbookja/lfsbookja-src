@@ -28,32 +28,28 @@
   during the distribution installation to be able to access these
   tools.</para>
 @y
-<para>
-LFS システムは、既にインストールされている Linux ディストリビューション (Debian、Mandriva、Red Hat、SUSE など) を利用して構築していきます。
-この既存の Linux システム（ホスト）は、LFS 構築のために様々なプログラム類を利用する基盤となります。
-プログラム類とはコンパイラー、リンカー、シェルなどです。
-したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類が利用できるようにしておく必要があります。
-</para>
+  <para>
+  LFS システムは、既にインストールされている Linux ディストリビューション (Debian、Mandriva、Red Hat、SUSE など) を利用して構築していきます。
+  この既存の Linux システム（ホスト）は、LFS 構築のために様々なプログラム類を利用する基盤となります。
+  プログラム類とはコンパイラー、リンカー、シェルなどです。
+  したがってそのディストリビューションのインストール時には<quote>開発 (development)</quote>オプションを選択し、それらのプログラム類が利用できるようにしておく必要があります。
+  </para>
 @z
 
 @x
   <para>As an alternative to installing a separate distribution onto your
-  machine, you may wish to use the Linux From Scratch LiveCD or a LiveCD from a
-  commercial distribution. The LFS LiveCD works well as a host system,
+  machine, you may wish to use <!-- the Linux From Scratch LiveCD or --> a LiveCD from a
+  commercial distribution. <!-- The LFS LiveCD works well as a host system,
   providing all the tools you need to successfully follow the instructions in
   this book. The LiveCD version is behind the current book, but is still useful
   as a host for building the current book.  The <quote>-nosrc</quote> or
   <quote>-min</quote> editions of the LiveCD are the most appropriate for
   building a current LFS system.  For more information about the LFS LiveCD or
-  to download a copy, visit <ulink url="&livecd-root;"/>.</para>
+  to download a copy, visit <ulink url="&livecd-root;"/>. --></para>
 @y
-<para>
-コンピューター内にインストールされているディストリビューションを利用するのではなく、Linux From Scratch LiveCD、あるいは他に提供されている LiveCD を利用することもできます。
-LFS LiveCD はホストシステムとして利用することができ、本書の手順を実施するための必要なツール類がすべて含まれます。
-LiveCD の開発は思うように進んでいませんが、ホストシステムとして利用することが可能です。
-現時点にて本書によるビルド作業を進めるなら<quote>-nosrc</quote>や<quote>-min</quote>という名称が含まれている版を用いてください。
-LFS LiveCD の詳細や LiveCD ダウンロード方法については <ulink url="&livecd-root;"/> を参照してください。
-</para>
+  <para>
+  コンピューター内にインストールされているディストリビューションを利用するのではなく、他に提供されている LiveCD を利用することもできます。
+  </para>
 @z
 
 @x
@@ -61,10 +57,10 @@ LFS LiveCD の詳細や LiveCD ダウンロード方法については <ulink ur
     failing to boot or failing to detect some devices such as some SATA hard
     drives.</para>
 @y
-<para>
-LFS LiveCD は最近のハードウェア環境において、うまく動作しないかもしれません。
-ブートに失敗したり SATA ハードドライブのようなデバイス検出に失敗したりすることがあります。
-</para>
+    <para>
+    LFS LiveCD は最近のハードウェア環境において、うまく動作しないかもしれません。
+    ブートに失敗したり SATA ハードドライブのようなデバイス検出に失敗したりすることがあります。
+    </para>
 @z
 
 @x
@@ -79,14 +75,14 @@ LFS LiveCD は最近のハードウェア環境において、うまく動作し
   important issues you need be aware of before beginning to
   work your way through <xref linkend="chapter-temporary-tools"/> and beyond.</para>
 @y
-<para>
-<xref linkend="chapter-partitioning"/> では、新しく構築する Linux のためのパーティションとファイルシステムの生成方法について説明します。
-そのパーティション上にて LFS システムをコンパイルしインストールします。
-<xref linkend="chapter-getting-materials"/> では LFS 構築に必要となるパッケージとパッチについて説明します。
-これらをダウンロードして新たなファイルシステム内に保存します。
-<xref linkend="chapter-final-preps"/> では作業環境の準備について述べています。
-この章では重要な説明を行っていますので <xref linkend="chapter-temporary-tools"/> 以降に進む前に是非注意して読んでください。
-</para>
+  <para>
+  <xref linkend="chapter-partitioning"/> では、新しく構築する Linux のためのパーティションとファイルシステムの生成方法について説明します。
+  そのパーティション上にて LFS システムをコンパイルしインストールします。
+  <xref linkend="chapter-getting-materials"/> では LFS 構築に必要となるパッケージとパッチについて説明します。
+  これらをダウンロードして新たなファイルシステム内に保存します。
+  <xref linkend="chapter-final-preps"/> では作業環境の準備について述べています。
+  この章では重要な説明を行っていますので <xref linkend="chapter-temporary-tools"/> 以降に進む前に是非注意して読んでください。
+  </para>
 @z
 
 @x
@@ -97,13 +93,13 @@ LFS LiveCD は最近のハードウェア環境において、うまく動作し
   packages are needed to resolve circular dependencies&mdash;for example,
   to compile a compiler, you need a compiler.</para>
 @y
-<para>
-<xref linkend="chapter-temporary-tools"/> では数多くのパッケージをインストールします。
-これらは基本的な開発ツール (ツールチェーン) を構成するものであり <xref
-linkend="chapter-building-system"/> において最終的なシステムを構築するために利用します。
-パッケージの中には自分自身を循環的に必要とするような依存関係を持つものがあります。
-例えばコンパイラーをコンパイルするためにはコンパイラーが必要となります。
-</para>
+  <para>
+  <xref linkend="chapter-temporary-tools"/> では数多くのパッケージをインストールします。
+  これらは基本的な開発ツール (ツールチェーン) を構成するものであり <xref
+  linkend="chapter-building-system"/> において最終的なシステムを構築するために利用します。
+  パッケージの中には自分自身を循環的に必要とするような依存関係を持つものがあります。
+  例えばコンパイラーをコンパイルするためにはコンパイラーが必要となります。
+  </para>
 @z
 
 @x
@@ -119,18 +115,18 @@ linkend="chapter-building-system"/> において最終的なシステムを構�
   longer depend on the host distribution, with the exception of the running
   kernel. </para>
 @y
-<para>
-<xref linkend="chapter-temporary-tools"/> ではツールチェーンの第1回めの構築方法を示します。
-そこではまず Binutils と GCC を構築します。
-(第1回めと表現しているということは、つまりこれら2つのパッケージは後に再構築します。)
-次に C ライブラリである Glibc を構築します。
-Glibc は第1回めのツールチェーンを用いてコンパイルされます。
-そして第2回めのツールチェーン構築を行います。
-この時のツールチェーンは新たに構築した Glibc をリンクします。
-それ以降の <xref linkend="chapter-temporary-tools"/> に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
-上の作業をすべて終えたら LFS のインストール作業はもはやホストディストリビューションに依存しません。
-ただし作動させるカーネルだけは使い続けます。
-</para>
+  <para>
+  <xref linkend="chapter-temporary-tools"/> ではツールチェーンの第1回めの構築方法を示します。
+  そこではまず Binutils と GCC を構築します。
+  (第1回めと表現しているということは、つまりこれら2つのパッケージは後に再構築します。)
+  次に C ライブラリである Glibc を構築します。
+  Glibc は第1回めのツールチェーンを用いてコンパイルされます。
+  そして第2回めのツールチェーン構築を行います。
+  この時のツールチェーンは新たに構築した Glibc をリンクします。
+  それ以降の <xref linkend="chapter-temporary-tools"/> に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
+  上の作業をすべて終えたら LFS のインストール作業はもはやホストディストリビューションに依存しません。
+  ただし作動させるカーネルだけは使い続けます。
+  </para>
 @z
 
 @x
@@ -138,10 +134,10 @@ Glibc は第1回めのツールチェーンを用いてコンパイルされま�
   seem excessive. A full technical explanation as to why this is done is provided in
   <xref linkend="ch-tools-toolchaintechnotes"/>.</para>
 @y
-<para>
-ホストシステムのツール類から新しいシステムを切り離していくこの手順は、やり過ぎのように見えるかもしれません。
-<xref linkend="ch-tools-toolchaintechnotes"/> にて詳細に説明しているので参照してください。
-</para>
+  <para>
+  ホストシステムのツール類から新しいシステムを切り離していくこの手順は、やり過ぎのように見えるかもしれません。
+  <xref linkend="ch-tools-toolchaintechnotes"/> にて詳細に説明しているので参照してください。
+  </para>
 @z
 
 @x
@@ -157,15 +153,15 @@ Glibc は第1回めのツールチェーンを用いてコンパイルされま�
   for package compilations to complete, you can continue using your computer as
   normal.</para>
 @y
-<para>
-<xref linkend="chapter-building-system"/> にて LFS システムが出来上がります。
-<command>chroot</command> (ルートをチェンジする) プログラムを使って仮想的な環境に入り LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
-これは LFS パーティションをルートパーティションとするシステム再起動と同じことです。
-ただ実際にはシステムを再起動はしません。
-再起動できるシステムとするためにはもう少し作業を必要としますし、この時点ではまだそれが必要ではないので <command>chroot</command> を行う方法を取ります。
-<command>chroot</command> を使うメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
-パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。
-</para>
+  <para>
+  <xref linkend="chapter-building-system"/> にて LFS システムが出来上がります。
+  <command>chroot</command> (ルートをチェンジする) プログラムを使って仮想的な環境に入り LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
+  これは LFS パーティションをルートパーティションとするシステム再起動と同じことです。
+  ただ実際にはシステムを再起動はしません。
+  再起動できるシステムとするためにはもう少し作業を必要としますし、この時点ではまだそれが必要ではないので <command>chroot</command> を行う方法を取ります。
+  <command>chroot</command> を使うメリットは、LFS 構築作業にあたって引き続きホストシステムを利用できることです。
+  パッケージをコンパイルしている最中には、通常どおり別の作業を行うことができます。
+  </para>
 @z
 
 @x
@@ -176,11 +172,11 @@ Glibc は第1回めのツールチェーンを用いてコンパイルされま�
   After the steps in this book have been implemented, the computer will be
   ready to reboot into the new LFS system.</para>
 @y
-<para>
-インストールの仕上げとして <xref linkend="chapter-bootscripts"/> にて LFS ブートスクリプトを設定し、<xref linkend="chapter-bootable"/> にてカーネルとブートローダーを設定します。
-<xref linkend="chapter-finalizing"/> では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
-本書に示す作業をすべて実施すれば、新たな LFS システムを起動することが出来ます。
-</para>
+  <para>
+  インストールの仕上げとして <xref linkend="chapter-bootscripts"/> にて LFS ブートスクリプトを設定し、<xref linkend="chapter-bootable"/> にてカーネルとブートローダーを設定します。
+  <xref linkend="chapter-finalizing"/> では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
+  本書に示す作業をすべて実施すれば、新たな LFS システムを起動することが出来ます。
+  </para>
 @z
 
 @x
@@ -189,10 +185,10 @@ Glibc は第1回めのツールチェーンを用いてコンパイルされま�
   Items that may seem complicated will be clarified, and everything will
   fall into place as you embark on the LFS adventure.</para>
 @y
-<para>
-上はごく簡単な説明にすぎません。
-各作業の詳細はこれ以降の章やパッケージの説明を参照してください。
-内容が難しいと思っていても、それは徐々に理解していけるはずです。
-読者の皆さんには、是非 LFS アドベンチャーに挑んで頂きたいと思います。
-</para>
+  <para>
+  上はごく簡単な説明にすぎません。
+  各作業の詳細はこれ以降の章やパッケージの説明を参照してください。
+  内容が難しいと思っていても、それは徐々に理解していけるはずです。
+  読者の皆さんには、是非 LFS アドベンチャーに挑んで頂きたいと思います。
+  </para>
 @z

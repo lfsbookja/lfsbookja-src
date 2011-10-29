@@ -247,17 +247,6 @@ rationale は理論的根拠とか原理とか。
         </para>
 @z
 
-@x Glib
-        <para>This package contains low-level core library functions for things
-        such as event loops and threading.  It is used by one other LFS package,
-        Pkg-config.</para>
-@y
-        <para>
-        このパッケージは、イベントループやスレッド処理などのような、コアな低レベル関数を提供します。
-        LFS パッケージの１つ Pkg-config がこれを利用しています。
-        </para>
-@z
-
 @x Glibc
         <para>This package contains the main C library.  Linux programs would
         not run without it.</para>
@@ -509,17 +498,6 @@ rationale は理論的根拠とか原理とか。
         <para>
         このパッケージは、ランタイムに利用されるインタープリター言語 PERL を提供します。
         LFS の他のパッケージでは、インストール時やテストスイートの実行時にこれを必要とするものがあります。
-        </para>
-@z
-
-@x Pkg-config
-        <para>This package contains a tool for passing the include path 
-        and/or library paths to build tools during the configure and make 
-        processes.  It is needed by many LFS packages.</para>
-@y
-        <para>
-        このパッケージは、configure や make を行う際に、ビルドツールに対してインクルードパスやライブラリパスを受け渡すツールプログラムを提供します。
-        LFS パッケージでは、ほとんどがこれを必要としています。
         </para>
 @z
 
