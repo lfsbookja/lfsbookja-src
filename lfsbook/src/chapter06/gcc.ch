@@ -17,9 +17,9 @@
     <para>The GCC package contains the GNU compiler collection, which includes
     the C and C++ compilers.</para>
 @y
-<para>
-GCC パッケージは C コンパイラーや C++ コンパイラーなどの GNU コンパイラーコレクションを提供します。
-</para>
+    <para>
+    GCC パッケージは C コンパイラーや C++ コンパイラーなどの GNU コンパイラーコレクションを提供します。
+    </para>
 @z
 
 @x
@@ -34,11 +34,11 @@ GCC パッケージは C コンパイラーや C++ コンパイラーなどの G
     version of <filename class="libraryfile">libiberty.a</filename> provided by
     Binutils will be used instead:</para>
 @y
-<para>
-<command>sed</command> による置換を行って <filename
-class="libraryfile">libiberty.a</filename> をインストールしないようにします。
-<filename class="libraryfile">libiberty.a</filename> は Binutils が提供するものを利用することにします。
-</para>
+    <para>
+    <command>sed</command> による置換を行って <filename
+    class="libraryfile">libiberty.a</filename> をインストールしないようにします。
+    <filename class="libraryfile">libiberty.a</filename> は Binutils が提供するものを利用することにします。
+    </para>
 @z
 
 @x
@@ -47,9 +47,9 @@ class="libraryfile">libiberty.a</filename> をインストールしないよう�
     <option>-fomit-frame-pointer</option> compiler flag in order to ensure
     consistent compiler builds:</para>
 @y
-<para>
-<xref linkend="ch-tools-gcc-pass2"/> にて行ったように <command>sed</command> を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option> を強制的に指定し、一貫したコンパイルを実現します。
-</para>
+    <para>
+    <xref linkend="ch-tools-gcc-pass2"/> にて行ったように <command>sed</command> を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option> を強制的に指定し、一貫したコンパイルを実現します。
+    </para>
 @z
 
 @x
@@ -62,16 +62,6 @@ class="libraryfile">libiberty.a</filename> をインストールしないよう�
     <para>
     <command>fixincludes</command> スクリプトは、たまにエラーを引き起こし、それまでにインストールされているシステムヘッダーファイルを修正してしまうことがあります。
     ここまでにインストールしてきたヘッダーファイルは修正する必要がないので、以下のコマンドを実行して <command>fixincludes</command> スクリプトを実行しないようにします。
-    </para>
-@z
-
-@x
-    <para>Finally, apply a patch that corrects the test code for locale changes
-    that were made in glibc-2.14 and later.</para>
-@y
-    <para>
-    最後に以下のパッチを適用してテストスイートのコードを変更します。
-    これは glibc-2.14 以降にて変更となったロケールに対処するものです。
     </para>
 @z
 

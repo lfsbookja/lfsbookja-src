@@ -196,20 +196,6 @@
 @z
 
 @x
-      <term>GCC Locale Patch - <token>&gcc-locale-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&gcc-locale-patch;"/></para>
-        <para>MD5 sum: <literal>&gcc-locale-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>GCC Locale Patch - <token>&gcc-locale-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&gcc-locale-patch;"/></para>
-        <para>MD5 sum: <literal>&gcc-locale-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>

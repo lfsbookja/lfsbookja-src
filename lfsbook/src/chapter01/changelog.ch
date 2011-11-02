@@ -51,6 +51,18 @@
       <para>2011-10-29</para>
       <itemizedlist>
         <listitem>
+          <para>[matthew] - Upgrade to GCC-4.6.2. Fixes
+          <ulink url="&lfs-ticket-root;2951">#2951</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Util-Linux-2.20.1. Fixes
+          <ulink url="&lfs-ticket-root;2947">#2947</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Libtool-2.4.2. Fixes
+          <ulink url="&lfs-ticket-root;2946">#2946</ulink>.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - LFS-7.0 released.
           </para>
         </listitem>
@@ -58,6 +70,18 @@
 @y
       <para>2011-10-29</para>
       <itemizedlist>
+        <listitem>
+          <para>[matthew] - GCC-4.6.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2951">#2951</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Util-Linux-2.20.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2947">#2947</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Libtool-2.4.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2946">#2946</ulink> を Fix に。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - LFS-7.0 リリース。
           </para>

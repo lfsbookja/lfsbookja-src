@@ -117,22 +117,11 @@
 @y
 <screen role="nodump"><userinput>wget -i wget-list -P $LFS/sources</userinput></screen> 
 
-<caution>
-<title>日本語訳情報</title>
-<para>
-本節にて <ulink url="../wget-list.txt">wget-list</ulink> のハイパーリンクが出てきますが、これは本来、拡張子を持たないファイル <filename>wget-list</filename> へのリンクです。
-本書を Web サイト上に搭載した場合に MIME 設定 (その制約) によりアクセスが出来ないファイルとなってしまう可能性があります。
-そこで本書では <filename>wget-list.txt</filename> のように拡張子 <filename
-class="extension">.txt</filename> をつけるようにしました。
-なお別途公開している本書の tarball では <filename>wget-list</filename> と <filename>wget-list.txt</filename> を共に含めています。両者は全く同一内容です。
-</para>
-</caution>
-
 <note>
 <title>日本語訳情報</title>
 <para>
-LFS ブック原版では、
-<ulink url="../wget-list.txt">wget-list</ulink> 内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
+LFS ブック原版では、<ulink
+url="../wget-list">wget-list</ulink> 内に含まれる、各種パッケージの入手 URL が主に米国サイトとなっています。
 一方、日本に在住する日本の方であれば、例えば GNU のパッケージ類は国内に数多くのミラーサイトが存在するため、そちらから取得するのが適切でしょう。
 これはネットワークリソースを利用する際のマナーとも言えるものです。
 堅苦しい話をするつもりはありません。
@@ -141,36 +130,33 @@ LFS ブック原版では、
 </para>
 <para>
 国内から入手可能なものは国内から入手することを目指し、訳者は以下の手順により <ulink
-url="../wget-list.txt">wget-list</ulink> を書き換えて利用しています。
+url="../wget-list">wget-list</ulink> を書き換えて利用しています。
 一例として国内には理化学研究所のサイト (ftp.riken.jp) があります。
 そこでは GNU パッケージ類がミラー提供されています。
-そこで <ulink url="../wget-list.txt">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
+そこで <ulink url="../wget-list">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
 また Linux カーネルの入手先 (www.kernel.org) についても理化学研究所より入手可能ですので、これも置き換えます。
 </para>
 
 <screen><userinput remap="sed-wgetlist">cp -pv wget-list{,.orig}
-sed -e 's|http://ftp\.gnu\.org/gnu/|http://ftp.riken.jp/GNU/ftp/gnu/|g' \
-    -e 's|http://www\.kernel\.org/pub/linux/|http://ftp.riken.jp/Linux/kernel.org/linux/|g' \
+sed -e 's|ftp\.gnu\.org/gnu/|ftp.riken.jp/GNU/ftp/gnu/|g' \
+    -e 's|www\.kernel\.org/pub/linux/|ftp.riken.jp/Linux/kernel.org/linux/|g' \
        wget-list.orig > wget-list</userinput></screen>
-
-<para>
-注意する点として各パッケージが更新されたばかりの日付では、国内ミラーサイトへの同期、反映が間に合わず、ソース類が存在しないことが考えられます。
-その場合には上の方法はすんなりとは実現できません。オリジナルの URL を用いるしかありません。
-</para>
 
 <para>
 上記はあくまで一例です。しかもすべてのパッケージについて、国内サイトからの入手となるわけではありません。
 ただし上記を行うだけでも、大半のパッケージは国内サイトを向くことになります。
+上記にて国内のミラーサイトは、ネットワーク的に "より近い" ものを選んでください。
+サイトを変えた場合は、パッケージの URL が異なることが多々あるため、適宜 sed 置換内容を書き換えてください。
 </para>
 
 <para>
-上記にて国内のミラーサイトは、ネットワーク的に "より近い" ものを選んでください。
-またミラーサイトのディレクトリ構成はサイトによって変わります。必要に応じてコマンドを書き換えてください。
-さらに上記の <command>sed</command> による一括置換は、パッケージやソースの今後の更新状況によっては提供 URL が変わり、
-<ulink url="../wget-list.txt">wget-list</ulink> のすべての URL が正しいものにはならない可能性がありますから十分注意してください。
-ダウンロードできなかった場合は、上記の <command>sed</command> コマンドを工夫するか、手作業にて
-<ulink url="../wget-list.txt">wget-list</ulink> を書き換えてください。
+注意する点として各パッケージが更新されたばかりの日付では、国内ミラーサイトへの同期、反映が間に合わず、ソース類が存在しないことが考えられます。
+その場合にはパッケージ取得に失敗してしまいます。
+そこで wget-list と wget-list.orig を順に利用し、かつ <application>wget</application> コマンドにて -N オプションを使って (取得済のものはスキップするようにして) 以下のコマンドを実行すれば、確実にすべてのパッケージを入手することができます。
 </para>
+<screen><userinput remap="sed-wgetlist">wget -N -i wget-list -P $LFS/sources
+wget -N -i wget-list.orig -P $LFS/sources</userinput></screen>
+
 </note>
 
 @z

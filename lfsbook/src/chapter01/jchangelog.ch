@@ -54,12 +54,30 @@
 -->
 
     <listitem>
+      <para>2011-10-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/introduction.ch:
+          wget-list の sed 書き換えについて若干の変更。PDF フォーマットへの配慮。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch, src/chapter06/gcc.ch:
+          SVN-20111029, r9657 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-10-29</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
           src/chapter01/how.ch, src/chapter02/creatingpartition.ch, src/chapter06/strippingagain.ch, src/prologue/why.ch:
-          LFS-7.0 (SVN-20111028, r9651) 対応。
+          LFS-7.0 (SVN-20111029, r9651) 対応。
           </para>
         </listitem>
       </itemizedlist>

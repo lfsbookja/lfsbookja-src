@@ -11,15 +11,15 @@
 <!ENTITY version "SVN-20111029">
 <!ENTITY releasedate "Oct 29, 2011">
 <!ENTITY copyrightdate "1999-2011"><!-- jhalfs needs a literal dash, not &ndash; -->
-<!ENTITY milestone "7.0">
+<!ENTITY milestone "7.1">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @y
 <?xml version="1.0" encoding="UTF-8"?>
 <!ENTITY version "SVN-20111029">
 <!ENTITY releasedate "2011年10月29日">
-<!ENTITY jversion "20111029">
+<!ENTITY jversion "20111030">
 <!ENTITY copyrightdate "1999-2011"><!-- jhalfs needs a literal dash, not &ndash; -->
-<!ENTITY milestone "7.0">
+<!ENTITY milestone "7.1">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @z
 
