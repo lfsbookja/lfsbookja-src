@@ -230,12 +230,12 @@ the package.</para>
 @x
           <seg>xmlproc_parse and xmlproc_val</seg>
           <seg>PyXML Python library modules</seg>
-          <seg>/usr/lib/python&python-majorver;/site-packages/_xmlplus and
+          <seg>/usr/lib/python&python2-majorver;/site-packages/_xmlplus and
           /usr/share/doc/PyXML-&pyxml-version;</seg>
 @y
           <seg>xmlproc_parse, xmlproc_val</seg>
           <seg>PyXML Python ライブラリモジュール</seg>
-          <seg>/usr/lib/python&python-majorver;/site-packages/_xmlplus,
+          <seg>/usr/lib/python&python2-majorver;/site-packages/_xmlplus,
           /usr/share/doc/PyXML-&pyxml-version;</seg>
 @z
 

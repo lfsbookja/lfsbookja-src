@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mysql-buildsize     "500 MB (additional 200 MB to run the test suite)">
-  <!ENTITY mysql-time          "5.3 SBU (Test suite is an additional 55 minutes, only partially CPU dependent)">
+  <!ENTITY mysql-buildsize     "883 MB (additional 170 MB to run the test suite)">
+  <!ENTITY mysql-time          "3.9 SBU (Test suite is an additional 45 minutes, only partially CPU dependent)">
 @y
-  <!ENTITY mysql-buildsize     "500 MB (テストスイート実行時はさらに 200 MB)">
-  <!ENTITY mysql-time          "5.3 SBU (テストスイート実行時はさらに 55 分; ただしある程度 CPU に依存)">
+  <!ENTITY mysql-buildsize     "883 MB (テストスイート実行時はさらに 170 MB)">
+  <!ENTITY mysql-time          "3.9 SBU (テストスイート実行時はさらに 45 分; ただしある程度 CPU に依存)">
 @z
 
 @x
@@ -32,11 +32,11 @@
     database server. It is a client/server implementation that consists of a
     server daemon and many different client programs and libraries.</para>
 @y
-<para>
-<application>MySQL</application>
-は、広く活用されている高速な SQL データベースサーバーです。
-このパッケージはクライアント/サーバーの各種モジュールにより構成されており、サーバーデーモンや数多くのクライアントプログラム、ライブラリが含まれます。
-</para>
+    <para>
+    <application>MySQL</application>
+    は、広く活用されている高速な SQL データベースサーバーです。
+    このパッケージはクライアント/サーバーの各種モジュールにより構成されており、サーバーデーモンや数多くのクライアントプログラム、ライブラリが含まれます。
+    </para>
 @z
 
 @x
@@ -46,13 +46,11 @@
     existing BLFS instructions. Note that versions other than the one shown
     in the download URLs have not been tested in a BLFS environment.</para>
 @y
-<para>
-<application>MySQL</application>
-のホームページでは、より最新のリリースが公開されているかもしれません。
-<ulink url="http://dev.mysql.com/"/>
-を確認した上で BLFS によるインストール手順に従ってください。
-ただし本書のダウンロード URL に示されているバージョンでないものは、BLFS 環境でのテストが行われていない点に注意してください。
-</para>
+    <para>
+    <application>MySQL</application> のホームページでは、より最新のリリースが公開されているかもしれません。
+    <ulink url="http://dev.mysql.com/"/> を確認した上で BLFS によるインストール手順に従ってください。
+    ただし本書のダウンロード URL に示されているバージョンでないものは、BLFS 環境でのテストが行われていない点に注意してください。
+    </para>
 @z
 
 @x
@@ -103,13 +101,13 @@
     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
 @z
 
-@x
-        <para>Required Patch:
-          <ulink url="&patch-root;/mysql-&mysql-version;-makefile-1.patch"/>
-@y
-        <para>必須のパッチ:
-          <ulink url="&patch-root;/mysql-&mysql-version;-makefile-1.patch"/>
-@z
+% @x
+%         <para>Required Patch:
+%           <ulink url="&patch-root;/mysql-&mysql-version;-makefile-1.patch"/>
+% @y
+%         <para>必須のパッチ:
+%           <ulink url="&patch-root;/mysql-&mysql-version;-makefile-1.patch"/>
+% @z
 
 @x
         <para>Optional Documentation (see tip below):
@@ -135,10 +133,12 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/></para>
+    <para role="optional"><xref linkend="tcpwrappers"/>, 
+    <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/></para>
+    <para role="optional"><xref linkend="tcpwrappers"/>, 
+    <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
 @z
 
 @x
@@ -159,31 +159,32 @@
     <para>For security reasons, running the server as an unprivileged user
     and group is strongly encouraged:</para>
 @y
-<para>
-セキュリティ上の理由から、サーバープロセスは一般ユーザーおよびグループに起動することが強く推奨されています。
-</para>
+    <para>
+    セキュリティ上の理由から、サーバープロセスは一般ユーザーおよびグループに起動することが強く推奨されています。
+    </para>
 @z
 
 @x
     <note><para>There are a great many options available to
-    <userinput>./configure</userinput>.  Check the output of the
-    <option>--help</option> option for additional customization
-    options.</para></note>
+    <userinput>cmake</userinput>.  Check the output of the `<userinput>cmake .
+    -LH</userinput>` for additional customization options.  See ithe <ulink
+    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
+    Documentation</ulink> for a full listing of all options.</para></note>
 @y
-<note><para>
-<userinput>./configure</userinput>
-に対してはたくさんのオプション指定があります。
-<option>--help</option> の指定により出力される内容から、多くのカスタマイズオプションを確認してください。
-</para></note>
+    <note><para>There are a great many options available to
+    <userinput>cmake</userinput>.  Check the output of the `<userinput>cmake .
+    -LH</userinput>` for additional customization options.  See ithe <ulink
+    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
+    Documentation</ulink> for a full listing of all options.</para></note>
 @z
 
 @x
     <para>Build and install <application>MySQL</application> by
     running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>MySQL</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>MySQL</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -197,25 +198,22 @@
     <command>mysqld</command> daemon. Otherwise many of the tests will
     fail.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make test-force 2>&amp;1 | tee
-test.log</command> を実行します。
-このコマンドによりテストを実行するとともに、そのテスト結果をログに出力します。
-設定オプションや開発者の意向により、テストの中には実行されないものが出てきます。
-特に TCP Wrappers を利用していて、<filename>/etc/hosts.deny</filename>
-ファイルにて制限を設けている場合は、<command>mysqld</command>
-デーモンに対するエントリを適切に <filename>/etc/hosts.allow</filename>
-ファイルに加えてください。
-そうしておかないと相当数のテストが失敗します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test-force 2>&amp;1 | tee
+    test.log</command> を実行します。
+    このコマンドによりテストを実行するとともに、そのテスト結果をログに出力します。
+    設定オプションや開発者の意向により、テストの中には実行されないものが出てきます。
+    特に TCP Wrappers を利用していて、<filename>/etc/hosts.deny</filename> ファイルにて制限を設けている場合は、<command>mysqld</command> デーモンに対するエントリを適切に <filename>/etc/hosts.allow</filename> ファイルに加えてください。
+    そうしておかないと相当数のテストが失敗します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -224,14 +222,11 @@ test.log</command> を実行します。
       formats of the <application>MySQL</application> Reference Manual
       from <ulink url="http://dev.mysql.com/doc/"/>.</para>
 @y
-<para>
-ソース tarball に含まれるドキュメントは
-<filename>mysql.info</filename> と man ページのみです。
-<application>MySQL</application>
-のその他の形式のリファレンスマニュアルは、
-<ulink url="http://dev.mysql.com/doc/"/>
-からダウンロードすることができます。
-</para>
+    <para>
+    ソース tarball に含まれるドキュメントは <filename>mysql.info</filename> と man ページのみです。
+    <application>MySQL</application> のその他の形式のリファレンスマニュアルは、<ulink
+    url="http://dev.mysql.com/doc/"/> からダウンロードすることができます。
+    </para>
 @z
 
 @x
@@ -241,180 +236,196 @@ test.log</command> を実行します。
 @z
 
 @x
-    <para><parameter>CFLAGS="-O3" CXX=gcc CXXFLAGS="-O3 -felide-constructors 
-    -fno-exceptions -fno-rtti"</parameter>: These optimizations are recommended
-    by the developers.</para>
+    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
+    command installs the appropriate portion of the package.  Different
+    segemnts may be added or deleted as desired.  Valid segments are listed
+    with `<command>make list_install_components</command>`.  Note that the
+    'DataFiles' install segment does not honor the -DMYSQL_DATADIR or
+    -DINSTALL_MYSQLDATADIR statements.</para>
 @y
-<para>
-<parameter>CFLAGS="-O3" CXX=gcc CXXFLAGS="-O3 -felide-constructors 
--fno-exceptions -fno-rtti"</parameter>:
-これらの最適化オプションは開発者が推奨しているものです。
-</para>
+    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
+    command installs the appropriate portion of the package.  Different
+    segemnts may be added or deleted as desired.  Valid segments are listed
+    with `<command>make list_install_components</command>`.  Note that the
+    'DataFiles' install segment does not honor the -DMYSQL_DATADIR or
+    -DINSTALL_MYSQLDATADIR statements.</para>
 @z
 
-@x
-    <para><parameter>--libexecdir=/usr/sbin</parameter>: This switch installs
-    the <command>mysqld</command> daemon and the
-    <command>mysqlmanager</command> program in an appropriate location.</para>
-@y
-<para>
-<parameter>--libexecdir=/usr/sbin</parameter>:
-このパラメーターは <command>mysqld</command> デーモンと
-<command>mysqlmanager</command> プログラムを適切なディレクトリにインストールします。
-</para>
-@z
+% @x
+%     <para><parameter>CFLAGS="-O3" CXX=gcc CXXFLAGS="-O3 -felide-constructors 
+%     -fno-exceptions -fno-rtti"</parameter>: These optimizations are recommended
+%     by the developers.</para>
+% @y
+%     <para>
+%     <parameter>CFLAGS="-O3" CXX=gcc CXXFLAGS="-O3 -felide-constructors 
+%     -fno-exceptions -fno-rtti"</parameter>:
+%     これらの最適化オプションは開発者が推奨しているものです。
+%     </para>
+% @z
 
-@x
-    <para><parameter>--localstatedir=/srv/mysql</parameter>: This switch
-    forces <application>MySQL</application> to use
-    <filename class='directory'>/srv/mysql</filename> for database files and
-    other variable data.</para>
-@y
-<para>
-<parameter>--localstatedir=/srv/mysql</parameter>:
-このパラメーターは、<application>MySQL</application>
-が利用するデータベースファイルとその他の設定データ類を
-<filename class='directory'>/srv/mysql</filename>
-に配置することを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>--libexecdir=/usr/sbin</parameter>: This switch installs
+%     the <command>mysqld</command> daemon and the
+%     <command>mysqlmanager</command> program in an appropriate location.</para>
+% @y
+% <para>
+% <parameter>--libexecdir=/usr/sbin</parameter>:
+% このパラメーターは <command>mysqld</command> デーモンと
+% <command>mysqlmanager</command> プログラムを適切なディレクトリにインストールします。
+% </para>
+% @z
 
-@x
-    <para><parameter>--enable-thread-safe-client</parameter>: This
-    switch compiles a thread-safe <application>MySQL</application> client
-    library.</para>
-@y
-<para>
-<parameter>--enable-thread-safe-client</parameter>:
-このパラメーターは、スレッドセーフな
-<application>MySQL</application> クライアントライブラリをビルドします。
-</para>
-@z
+% @x
+%     <para><parameter>--localstatedir=/srv/mysql</parameter>: This switch
+%     forces <application>MySQL</application> to use
+%     <filename class='directory'>/srv/mysql</filename> for database files and
+%     other variable data.</para>
+% @y
+% <para>
+% <parameter>--localstatedir=/srv/mysql</parameter>:
+% このパラメーターは、<application>MySQL</application>
+% が利用するデータベースファイルとその他の設定データ類を
+% <filename class='directory'>/srv/mysql</filename>
+% に配置することを指示します。
+% </para>
+% @z
 
-@x
-    <para><parameter>--enable-assembler</parameter>: This switch allows using
-    assembler versions of some string functions.</para>
-@y
-<para>
-<parameter>--enable-assembler</parameter>:
-このパラメーターは、文字操作関数においてアセンブラー版の関数を利用することを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>--enable-thread-safe-client</parameter>: This
+%     switch compiles a thread-safe <application>MySQL</application> client
+%     library.</para>
+% @y
+% <para>
+% <parameter>--enable-thread-safe-client</parameter>:
+% このパラメーターは、スレッドセーフな
+% <application>MySQL</application> クライアントライブラリをビルドします。
+% </para>
+% @z
 
-@x
-    <para><parameter>--enable-local-infile</parameter>: This switch enables
-    the <quote>LOAD DATA INFILE</quote> SQL statement.</para>
-@y
-<para>
-<parameter>--enable-local-infile</parameter>:
-このパラメーターは SQL ステートメント <quote>LOAD DATA INFILE</quote> を有効にします。
-</para>
-@z
+% @x
+%     <para><parameter>--enable-assembler</parameter>: This switch allows using
+%     assembler versions of some string functions.</para>
+% @y
+% <para>
+% <parameter>--enable-assembler</parameter>:
+% このパラメーターは、文字操作関数においてアセンブラー版の関数を利用することを指示します。
+% </para>
+% @z
 
-@x
-    <para><parameter>--with-unix-socket-path=/var/run/mysql</parameter>:
-    This switch puts the unix-domain socket into the
-    <filename class="directory">/var/run/mysql</filename> directory instead of
-    the default <filename class="directory">/tmp</filename>.</para>
-@y
-<para>
-<parameter>--with-unix-socket-path=/var/run/mysql</parameter>:
-このパラメーターは、unix-domain ソケットを、デフォルトの
-<filename class="directory">/tmp</filename> ディレクトリではなく
-<filename class="directory">/var/run/mysql</filename>
-ディレクトリに配置することを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>--enable-local-infile</parameter>: This switch enables
+%     the <quote>LOAD DATA INFILE</quote> SQL statement.</para>
+% @y
+% <para>
+% <parameter>--enable-local-infile</parameter>:
+% このパラメーターは SQL ステートメント <quote>LOAD DATA INFILE</quote> を有効にします。
+% </para>
+% @z
 
-@x
-    <para><parameter>--without-readline</parameter>: This switch forces the
-    build to use the system copy of <application>readline</application> instead
-    of the bundled copy.</para>
-@y
-<para>
-<parameter>--without-readline</parameter>:
-このパラメーターは、バンドルされている <application>readline</application>
-ではなく、システムにインストール済の <application>readline</application>
-を利用することを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>--with-unix-socket-path=/var/run/mysql</parameter>:
+%     This switch puts the unix-domain socket into the
+%     <filename class="directory">/var/run/mysql</filename> directory instead of
+%     the default <filename class="directory">/tmp</filename>.</para>
+% @y
+% <para>
+% <parameter>--with-unix-socket-path=/var/run/mysql</parameter>:
+% このパラメーターは、unix-domain ソケットを、デフォルトの
+% <filename class="directory">/tmp</filename> ディレクトリではなく
+% <filename class="directory">/var/run/mysql</filename>
+% ディレクトリに配置することを指示します。
+% </para>
+% @z
 
-@x
-    <para><parameter>--with-extra-charsets=all</parameter>: This switch enables
-    international character sets within the suite.</para>
-@y
-<para>
-<parameter>--with-extra-charsets=all</parameter>:
-このパラメーターは、国際化対応とすることを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>--without-readline</parameter>: This switch forces the
+%     build to use the system copy of <application>readline</application> instead
+%     of the bundled copy.</para>
+% @y
+% <para>
+% <parameter>--without-readline</parameter>:
+% このパラメーターは、バンドルされている <application>readline</application>
+% ではなく、システムにインストール済の <application>readline</application>
+% を利用することを指示します。
+% </para>
+% @z
 
-@x
-    <para><parameter>--with-plugins=innobase,myisam</parameter>: This switch enables
-    two useful table types.  Check <command>./configure --help</command> for
-    other table types.</para>
-@y
-<para>
-<parameter>--with-plugins=innobase,myisam</parameter>:
-このパラメーターは、二つのテーブルタイプを有効にします。
-他のテーブルタイプについては <command>./configure --help</command> により確認してください。
-</para>
-@z
+% @x
+%     <para><parameter>--with-extra-charsets=all</parameter>: This switch enables
+%     international character sets within the suite.</para>
+% @y
+% <para>
+% <parameter>--with-extra-charsets=all</parameter>:
+% このパラメーターは、国際化対応とすることを指示します。
+% </para>
+% @z
 
-@x
-    <para><parameter>--with-ssl=/usr</parameter>: This switch enables encrypted
-    communication between client and server using OpenSSL.</para>
-@y
-<para>
-<parameter>--with-ssl=/usr</parameter>:
-このパラメーターは、サーバー/クライアント間の通信を、OpenSSL により暗号化することを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>--with-plugins=innobase,myisam</parameter>: This switch enables
+%     two useful table types.  Check <command>./configure --help</command> for
+%     other table types.</para>
+% @y
+% <para>
+% <parameter>--with-plugins=innobase,myisam</parameter>:
+% このパラメーターは、二つのテーブルタイプを有効にします。
+% 他のテーブルタイプについては <command>./configure --help</command> により確認してください。
+% </para>
+% @z
 
-@x
-    <para><command>make  benchdir_root=... install</command>: This installs the
-    benchmark and test suites in a non-system location.</para>
-@y
-<para>
-<command>make  benchdir_root=... install</command>:
-このコマンドは、ベンチマークテストとテストスイートを、システムディレクトリ外にて実行します。
-</para>
-@z
+% @x
+%     <para><parameter>--with-ssl=/usr</parameter>: This switch enables encrypted
+%     communication between client and server using OpenSSL.</para>
+% @y
+% <para>
+% <parameter>--with-ssl=/usr</parameter>:
+% このパラメーターは、サーバー/クライアント間の通信を、OpenSSL により暗号化することを指示します。
+% </para>
+% @z
 
-@x
-    <para><command>ln -v -sf mysql/libmysqlclient{,_r}.so* .</command>: This
-    command makes the <application>MySQL</application> shared libraries
-    available to other packages at run-time.</para>
-@y
-<para>
-<command>ln -v -sf mysql/libmysqlclient{,_r}.so* .</command>:
-このコマンドは <application>MySQL</application>
-の共有ライブラリを、他のパッケージの実行時における利用を可能とします。
-</para>
-@z
+% @x
+%     <para><command>make  benchdir_root=... install</command>: This installs the
+%     benchmark and test suites in a non-system location.</para>
+% @y
+% <para>
+% <command>make  benchdir_root=... install</command>:
+% このコマンドは、ベンチマークテストとテストスイートを、システムディレクトリ外にて実行します。
+% </para>
+% @z
 
-@x
-    <para><option>--with-libwrap</option>: This switch adds tcpwrappers
-    support to <application>MySQL</application>.</para>
-@y
-<para>
-<option>--with-libwrap</option>:
-このパラメーターは、<application>MySQL</application> に
-tcpwrappers サポートを追加します。
-</para>
-@z
+% @x
+%     <para><command>ln -v -sf mysql/libmysqlclient{,_r}.so* .</command>: This
+%     command makes the <application>MySQL</application> shared libraries
+%     available to other packages at run-time.</para>
+% @y
+% <para>
+% <command>ln -v -sf mysql/libmysqlclient{,_r}.so* .</command>:
+% このコマンドは <application>MySQL</application>
+% の共有ライブラリを、他のパッケージの実行時における利用を可能とします。
+% </para>
+% @z
 
-@x
-    <para><command>pushd ... popd</command>: This set of commands rebuilds the
-    <filename>/usr/share/info/dir</filename> file as the installation failed
-    to do so.</para>
-@y
-<para>
-<command>pushd ... popd</command>:
-インストール処理では <filename>/usr/share/info/dir</filename>
-の生成に失敗するため、この一連のコマンドにより再生成します。
-</para>
-@z
+% @x
+%     <para><option>--with-libwrap</option>: This switch adds tcpwrappers
+%     support to <application>MySQL</application>.</para>
+% @y
+% <para>
+% <option>--with-libwrap</option>:
+% このパラメーターは、<application>MySQL</application> に
+% tcpwrappers サポートを追加します。
+% </para>
+% @z
+
+% @x
+%     <para><command>pushd ... popd</command>: This set of commands rebuilds the
+%     <filename>/usr/share/info/dir</filename> file as the installation failed
+%     to do so.</para>
+% @y
+% <para>
+% <command>pushd ... popd</command>:
+% インストール処理では <filename>/usr/share/info/dir</filename>
+% の生成に失敗するため、この一連のコマンドにより再生成します。
+% </para>
+% @z
 
 @x
     <title>Configuring MySQL</title>

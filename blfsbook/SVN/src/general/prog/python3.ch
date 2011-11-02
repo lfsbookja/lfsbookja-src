@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY python-buildsize     "141 MB (23MB for the test suite)">
-  <!ENTITY python-time          "1 SBU (additional 2.9 SBU to run the test suite)">
+  <!ENTITY python3-buildsize     "141 MB (23MB for the test suite)">
+  <!ENTITY python3-time          "1 SBU (additional 2.9 SBU to run the test suite)">
 @y
-  <!ENTITY python-buildsize     "141 MB (テストスイート実行時は 23MB)">
-  <!ENTITY python-time          "1 SBU (テストスイート実行時はさらに 2.9 SBU)">
+  <!ENTITY python3-buildsize     "141 MB (テストスイート実行時は 23MB)">
+  <!ENTITY python3-time          "1 SBU (テストスイート実行時はさらに 2.9 SBU)">
 @z
 
 @x
@@ -47,39 +47,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&python-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&python3-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&python-download-http;"/></para>
+        <para>ダウンロード (HTTP): <ulink url="&python3-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&python-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&python3-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&python-download-ftp;"/></para>
+        <para>ダウンロード (FTP): <ulink url="&python3-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &python-md5sum;</para>
+        <para>Download MD5 sum: &python3-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &python-md5sum;</para>
+        <para>ダウンロード MD5 sum: &python3-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &python-size;</para>
+        <para>Download size: &python3-size;</para>
 @y
-        <para>ダウンロードサイズ: &python-size;</para>
+        <para>ダウンロードサイズ: &python3-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &python-buildsize;</para>
+        <para>Estimated disk space required: &python3-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &python-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &python3-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &python-time;</para>
+        <para>Estimated build time: &python3-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &python-time;</para>
+        <para>&j-Estimatedbuildtime;: &python3-time;</para>
 @z
 
 @x
@@ -103,21 +103,21 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&pythonhtmldoc-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&python3htmldoc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&pythonhtmldoc-download-http;"/></para>
+        <para>ダウンロード (HTTP): <ulink url="&python3htmldoc-download-http;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &pythonhtmldoc-md5sum;</para>
+        <para>Download MD5 sum: &python3htmldoc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &pythonhtmldoc-md5sum;</para>
+        <para>ダウンロード MD5 sum: &python3htmldoc-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &pythonhtmldoc-size;</para>
+        <para>Download size: &python3htmldoc-size;</para>
 @y
-        <para>ダウンロードサイズ: &pythonhtmldoc-size;</para>
+        <para>ダウンロードサイズ: &python3htmldoc-size;</para>
 @z
 
 @x
@@ -294,23 +294,49 @@ individual user's or the system's profile:
 @z
 
 @x
-        <seg>2to3, pydoc, python, python-config, python&python-majorver;,
-        python&python-majorver;-config, smtpd.py, and optionally if
-        <application>Tk</application> is installed, idle</seg>
-        <seg>libpython&python-majorver;.so and numerous modules installed in
-        /usr/lib/python&python-majorver;/lib-dynload</seg>
-        <seg>/usr/include/python&python-majorver;,
-        /usr/lib/python&python-majorver;, and
-        /usr/share/doc/python-&Python-version;</seg>
+        <seg>2to3, 
+        
+        pydoc3 (link to pydoc-&python3-majorver;), 
+        pydoc&python3-majorver;,
+
+        python3, 
+        python&python3-majorver; (hard link with python3),
+        python&python3-majorver;m (hard link with python3),
+
+        python3-config (link to python&python3-majorver;-config), 
+        python&python3-majorver; (link to python&python3-majorver;m-config),
+        python&python3-majorver;m,
+
+        smtpd.py, and optionally if <application>Tk</application> is installed, idle</seg>
+        
+        <seg>libpython3.so, libpython&python3-majorver;m.so.1.0 and numerous modules installed in
+        /usr/lib/python&python3-majorver;</seg>
+        
+        <seg>/usr/include/python&python3-majorver;,
+             /usr/lib/python&python3-majorver;, and
+             /usr/share/doc/python-&python3-version;</seg>
 @y
-        <seg>2to3, pydoc, python, python-config, python&python-majorver;,
-        python&python-majorver;-config, smtpd.py, and optionally if
-        <application>Tk</application> is installed, idle</seg>
-        <seg>libpython&python-majorver;.so and numerous modules installed in
-        /usr/lib/python&python-majorver;/lib-dynload</seg>
-        <seg>/usr/include/python&python-majorver;,
-        /usr/lib/python&python-majorver;,
-        /usr/share/doc/python-&Python-version;</seg>
+        <seg>2to3, 
+        
+        pydoc3 (pydoc-&python3-majorver; へのリンク), 
+        pydoc&python3-majorver;,
+
+        python3, 
+        python&python3-majorver; (python3 へのハードリンク),
+        python&python3-majorver;m (python3 へのハードリンク),
+
+        python3-config (python&python3-majorver;-config へのリンク), 
+        python&python3-majorver; (python&python3-majorver;m-config へのリンク),
+        python&python3-majorver;m,
+
+        smtpd.py, and optionally if <application>Tk</application> is installed, idle</seg>
+        
+        <seg>libpython3.so, libpython&python3-majorver;m.so.1.0 and numerous modules installed in
+        /usr/lib/python&python3-majorver;</seg>
+        
+        <seg>/usr/include/python&python3-majorver;,
+             /usr/lib/python&python3-majorver;,
+             /usr/share/doc/python-&python3-version;</seg>
 @z
 
 @x

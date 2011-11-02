@@ -193,7 +193,7 @@ search and navigation bar for <application>GNOME</application>.
 @x
         <seg>deskbar-applet</seg>
         <seg>Python modules</seg>
-        <seg>/usr/lib/python&python-majorver;/site-packages/deskbar/{core/{_userdirs,
+        <seg>/usr/lib/python&python2-majorver;/site-packages/deskbar/{core/{_userdirs,
         keybinder,updater},handlers/{actions,evolution},interfaces,osutils,
         ui/{cuemiac,iconentry,preferences}},
         <envar>$GNOME_PREFIX</envar>/{lib/deskbar-applet/modules-2.20-compatible,
@@ -201,7 +201,7 @@ search and navigation bar for <application>GNOME</application>.
 @y
         <seg>deskbar-applet</seg>
         <seg>Python モジュール</seg>
-        <seg>/usr/lib/python&python-majorver;/site-packages/deskbar/{core/{_userdirs,
+        <seg>/usr/lib/python&python2-majorver;/site-packages/deskbar/{core/{_userdirs,
         keybinder,updater},handlers/{actions,evolution},interfaces,osutils,
         ui/{cuemiac,iconentry,preferences}},
         <envar>$GNOME_PREFIX</envar>/{lib/deskbar-applet/modules-2.20-compatible,

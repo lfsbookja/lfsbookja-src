@@ -329,7 +329,7 @@ building of <application>Qt4Core</application> mainloop integration.
         libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a}, and
         libavahi-ui.{so,a}</seg>
         <seg>/etc/avahi/services,/usr/{include/avahi-{client,common,core,glib,
-        gobject,ui},lib/{avahi,python&python-majorver;/site-packages/{avahi,avahi_discover}},
+        gobject,ui},lib/{avahi,python&python2-majorver;/site-packages/{avahi,avahi_discover}},
         share/avahi/{interfaces,introspection}}</seg>
 @y
         <seg>avahi-autoipd, avahi-bookmarks, avahi-browse, avahi-daemon,
@@ -339,7 +339,7 @@ building of <application>Qt4Core</application> mainloop integration.
         libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a},
         libavahi-ui.{so,a}</seg>
         <seg>/etc/avahi/services,/usr/{include/avahi-{client,common,core,glib,
-        gobject,ui},lib/{avahi,python&python-majorver;/site-packages/{avahi,avahi_discover}},
+        gobject,ui},lib/{avahi,python&python2-majorver;/site-packages/{avahi,avahi_discover}},
         share/avahi/{interfaces,introspection}}</seg>
 @z
 

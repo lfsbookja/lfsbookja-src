@@ -23,10 +23,9 @@
     <para>The <application>gnome-keyring</application> package contains a
     daemon that keeps passwords and other secrets for users.</para>
 @y
-<para>
-<application>gnome-keyring</application>
-パッケージは、各ユーザーのパスワードなどの情報を保持したデーモンプログラムを提供します。
-</para>
+    <para>
+    <application>gnome-keyring</application> パッケージは、各ユーザーのパスワードなどの情報を保持したデーモンプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -123,25 +122,25 @@
     <para>Install <application>gnome-keyring</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>gnome-keyring</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>gnome-keyring</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -158,25 +157,23 @@
     instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/gnome-keyring</parameter>:
-このパラメーターは libexec ファイルのインストール先を
-<filename class="directory">$GNOME_PREFIX/libexec</filename>
-ではなく、より適切な
-<filename class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename>
-とします。
-</para>
+    <para>
+    <parameter>--libexecdir=$(pkg-config --variable=prefix
+    ORBit-2.0)/lib/gnome-keyring</parameter>:
+    このパラメーターは libexec ファイルのインストール先を <filename
+    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
+    class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename> とします。
+    </para>
 @z
 
 @x
     <para><parameter>--with-pam-dir=/lib/security</parameter>: This parameter
     specifies where the pam modules will be installed into.</para>
 @y
-<para>
-<parameter>--with-pam-dir=/lib/security</parameter>:
-このパラメーターは pam モジュールのインストール先ディレクトリを指定します。
-</para>
+    <para>
+    <parameter>--with-pam-dir=/lib/security</parameter>:
+    このパラメーターは pam モジュールのインストール先ディレクトリを指定します。
+    </para>
 @z
 
 @x
@@ -184,32 +181,30 @@ ORBit-2.0)/lib/gnome-keyring</parameter>:
     This parameter specifies where the <application>D-BUS</application> session
     services directory is located.</para>
 @y
-<para>
-<parameter>--with-dbus-services=/usr/share/dbus-1/services</parameter>:
-このパラメーターは <application>D-BUS</application>
-のセッションサービスディレクトリが位置しているディレクトリを指定します。
-</para>
+    <para>
+    <parameter>--with-dbus-services=/usr/share/dbus-1/services</parameter>:
+    このパラメーターは <application>D-BUS</application> のセッションサービスディレクトリが位置しているディレクトリを指定します。
+    </para>
 @z
 
 @x
     <para><parameter>--with-root-certs=/etc/ssl/certs</parameter>: This
     parameter specifies where the trusted root certificates are located.</para>
 @y
-<para>
-<parameter>--with-root-certs=/etc/ssl/certs</parameter>:
-このパラメーターは、信頼できるルート証明書 (root cetificates)
-が収容されているディレクトリを指定します。
-</para>
+    <para>
+    <parameter>--with-root-certs=/etc/ssl/certs</parameter>:
+    このパラメーターは、信頼できるルート証明書 (root cetificates) が収容されているディレクトリを指定します。
+    </para>
 @z
 
 @x
     <para><option>--disable-scrollkeeper</option>: Use this parameter if you
     wish to disable the updates to the scrollkeeper database.</para>
 @y
-<para>
-<option>--disable-scrollkeeper</option>:
-scrollkeeper のデータベースを更新したくない場合に本パラメーターを指定します。
-</para>
+    <para>
+    <option>--disable-scrollkeeper</option>:
+    scrollkeeper のデータベースを更新したくない場合に本パラメーターを指定します。
+    </para>
 @z
 
 @x
@@ -257,7 +252,7 @@ scrollkeeper のデータベースを更新したくない場合に本パラメ�
 @x gnome-keyring-daemon
           <para>is a session daemon that keeps passwords for users.</para>
 @y
-<para>
-is a session daemon that keeps passwords for users.
-</para>
+    <para>
+    ユーザーパスワードを保持するセッションデーモンです。
+    </para>
 @z

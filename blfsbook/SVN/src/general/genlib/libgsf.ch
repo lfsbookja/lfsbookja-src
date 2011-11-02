@@ -25,13 +25,12 @@
     useful for providing an extensible input/output abstraction layer for
     structured file formats.</para>
 @y
-<para>
-<application>libgsf</application> パッケージは
-<filename class="libraryfile">libgsf-1</filename> ライブラリ群を提供します。
-これらは、構造化されたファイルフォーマット (structured file formats)
-に対する抽象層 (abstraction layer) での入出力を拡張する際に利用することができます。
-(訳註： 意味不明です。)
-</para>
+    <para>
+    <application>libgsf</application> パッケージは <filename
+    class="libraryfile">libgsf-1</filename> ライブラリ群を提供します。
+    これらは、構造化されたファイルフォーマット (structured file formats) に対する抽象層 (abstraction layer) での入出力を拡張する際に利用することができます。
+    (訳註： 意味不明です。)
+    </para>
 @z
 
 @x
@@ -122,11 +121,11 @@
     plan on building <xref linkend="gnucash"/> or
     <xref linkend="gnumeric"/> with GNOME support.</para>
 @y
-<para>
-メモ: GNOME サポートを含めて <xref linkend="gnucash"/> や <xref linkend="gnumeric"/>
-をビルドしようとする場合、<filename class='libraryfile'>libgsf-gnome-1.so</filename>
-をビルドすることが必要になります。
-</para>
+    <para>
+    メモ: GNOME サポートを含めて <xref linkend="gnucash"/> や <xref
+    linkend="gnumeric"/> をビルドしようとする場合、<filename
+    class='libraryfile'>libgsf-gnome-1.so</filename> をビルドすることが必要になります。
+    </para>
 @z
 
 @x
@@ -147,10 +146,9 @@
     <para>Install <application>libgsf</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libgsf</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libgsf</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -159,20 +157,19 @@
     <filename class='libraryfile'>libgsf-1</filename> library. All the programs
     should build successfully with no errors displayed.</para>
 @y
-<para>
-<command>make check</command>
-を実行すると、今まさに作り出された <filename class='libraryfile'>libgsf-1</filename>
-ライブラリを用いて、一連のテストプログラムがビルドされます。
-それらのテストプログラムは、特にエラーもなく正常にビルドされるはずです。
-</para>
+    <para>
+    <command>make check</command> を実行すると、今まさに作り出された <filename
+    class='libraryfile'>libgsf-1</filename> ライブラリを用いて、一連のテストプログラムがビルドされます。
+    それらのテストプログラムは、特にエラーもなく正常にビルドされるはずです。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -188,13 +185,10 @@
     <application>GConf</application> schema files are installed in the
     correct location.</para>
 @y
-<para>
-<option>--sysconfdir=&gnome-etc-dir;</option>:
-<application>GNOME</application>-2 をインストールしている場合に、このパラメータを
-<command>configure</command>
-スクリプトにおいて指定することで、<application>GConf</application>
-のスキーマファイル (schema files) を適切なディレクトリにインストールします。
-</para>
+    <para>
+    <option>--sysconfdir=&gnome-etc-dir;</option>:
+    <application>GNOME</application>-2 をインストールしている場合に、このパラメーターを <command>configure</command> スクリプトにおいて指定することで、<application>GConf</application> のスキーマファイル (schema files) を適切なディレクトリにインストールします。
+    </para>
 @z
 
 @x
@@ -202,23 +196,21 @@
     if <application>Python</application> is not installed. Remove it if
     <application>Python</application> is installed.</para>
 @y
-<para>
-<parameter>--without-python</parameter>:
-<application>Python</application>
-をインストールしていない場合は、このパラメータの指定が必要です。
-逆に <application>Python</application>
-をインストールしている場合は、このパラメータ指定を行わないでください。
-</para>
+    <para>
+    <parameter>--without-python</parameter>:
+    <application>Python</application> をインストールしていない場合は、このパラメーターの指定が必要です。
+    逆に <application>Python</application> をインストールしている場合は、このパラメーター指定を行わないでください。
+    </para>
 @z
 
 @x
     <para><option>--disable-static</option>: This switch prevents the
     static libraries in this package being built and installed.</para>
 @y
-<para>
-<option>--disable-static</option>:
-このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
-</para>
+    <para>
+    <option>--disable-static</option>:
+    このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
+    </para>
 @z
 
 @x
@@ -241,10 +233,10 @@
         <seg>gsf, gsf-office-thumbnailer (optional), and gsf-vba-dump</seg>
         <seg>libgsf-1.{so,a} and optionally, libgsf-gnome-1.{so,a}</seg>
         <seg>/usr/include/libgsf-1 and /usr/share/gtk-doc/html/gsf and
-        optionally, /usr/lib/python&python-majorver;/site-packages/gsf</seg>
+        optionally, /usr/lib/python&python2-majorver;/site-packages/gsf</seg>
 @y
         <seg>gsf, gsf-office-thumbnailer (任意), gsf-vba-dump</seg>
         <seg>libgsf-1.{so,a} また任意インストールにより libgsf-gnome-1.{so,a}</seg>
-        <seg>/usr/include/libgsf-1, /usr/share/gtk-doc/html/gsf,
-        また任意インストールにより /usr/lib/python&python-majorver;/site-packages/gsf</seg>
+        <seg>/usr/include/libgsf-1 and /usr/share/gtk-doc/html/gsf
+        また任意インストールにより /usr/lib/python&python2-majorver;/site-packages/gsf</seg>
 @z

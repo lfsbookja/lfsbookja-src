@@ -159,12 +159,12 @@
 @x
         <seg>alacarte</seg>
         <seg><application>Python</application> modules.</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{lib/python&python-majorver;/site-packages/Alacarte,
+        <seg><envar>$GNOME_PREFIX</envar>/{lib/python&python2-majorver;/site-packages/Alacarte,
         share/{alacarte,icons/hicolor/256x256/apps,locale/bem/LC_MESSAGES}}</seg>
 @y
         <seg>alacarte</seg>
         <seg><application>Python</application> モジュール</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{lib/python&python-majorver;/site-packages/Alacarte,
+        <seg><envar>$GNOME_PREFIX</envar>/{lib/python&python2-majorver;/site-packages/Alacarte,
         share/{alacarte,icons/hicolor/256x256/apps,locale/bem/LC_MESSAGES}}</seg>
 @z
 

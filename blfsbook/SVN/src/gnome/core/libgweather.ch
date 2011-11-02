@@ -213,13 +213,13 @@ pdf フォーマットのドキュメントをビルドしたい場合に指定�
         <seg>None</seg>
         <seg>libgweather.{so,a}</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
-        lib/python&python-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
+        lib/python&python2-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
         share/{gtk-doc/html/libgweather,libgweather}}</seg>
 @y
         <seg>なし</seg>
         <seg>libgweather.{so,a}</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
-        lib/python&python-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
+        lib/python&python2-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
         share/{gtk-doc/html/libgweather,libgweather}}</seg>
 @z
 

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY curl-time          "0.6 SBU (up to 7 SBUs to run the test suite)">
+  <!ENTITY curl-time          "3.0 SBU (including the test suite)">
 @y
-  <!ENTITY curl-time          "0.6 SBU (テストスイート実行時は合わせて 7 SBU)">
+  <!ENTITY curl-time          "3.0 SBU (テストスイートを含む)">
 @z
 
 @x

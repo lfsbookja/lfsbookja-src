@@ -82,16 +82,16 @@ for generating <filename>Makefile</filename>s. It is a successor of the auto-gen
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="curl"/>, 
-    <xref linkend="libarchive"/>, and 
-    <xref linkend="expat"/>
+      <xref linkend="curl"/>, 
+      <xref linkend="libarchive"/>, and 
+      <xref linkend="expat"/>
     </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required">
-    <xref linkend="curl"/>, 
-    <xref linkend="libarchive"/>,
-    <xref linkend="expat"/>
+      <xref linkend="curl"/>, 
+      <xref linkend="libarchive"/>,
+      <xref linkend="expat"/>
     </para>
 @z
 

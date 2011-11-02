@@ -484,13 +484,13 @@ API ドキュメントをビルドした場合、
           <seg>None</seg>
           <seg><application>Python</application>
           <application>D-Bus</application> modules</seg>
-          <seg>/usr/lib/python&python-majorver;/site-packages/dbus and
+          <seg>/usr/lib/python&python2-majorver;/site-packages/dbus and
           /usr/share/doc/dbus-python-&dbus-python-version;</seg>
 @y
           <seg>なし</seg>
           <seg><application>Python</application>
           <application>D-Bus</application> モジュール</seg>
-          <seg>/usr/lib/python&python-majorver;/site-packages/dbus,
+          <seg>/usr/lib/python&python2-majorver;/site-packages/dbus,
           /usr/share/doc/dbus-python-&dbus-python-version;</seg>
 @z
 
