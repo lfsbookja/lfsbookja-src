@@ -31,13 +31,10 @@
     <application>Aspell</application> can either be used as a library or as an
     independent spell checker.</para>
 @y
-<para>
-<application>Aspell</application>
-パッケージは、対話的なスペルチェックプログラムおよび
-<application>Aspell</application> ライブラリを提供します。
-<application>Aspell</application>
-は、ライブラリとして利用することができ、独立したスペルチェッカーとして利用することもできます。
-</para>
+    <para>
+    <application>Aspell</application> パッケージは、対話的なスペルチェックプログラムおよび <application>Aspell</application> ライブラリを提供します。
+    <application>Aspell</application> は、ライブラリとして利用することができ、独立したスペルチェッカーとして利用することもできます。
+    </para>
 @z
 
 @x
@@ -87,11 +84,11 @@
     <para>You'll need to download at least one dictionary. The link below will take
     you to a page containing links to dictionaries in many languages.</para>
 @y
-<bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-<para>
-最低でも１つの辞書データはダウンロードしておく必要があります。
-以下に示すリンクは、さまざまな言語に対する辞書データへのリンクを示したページを表示します。
-</para>
+    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <para>
+    最低でも１つの辞書データはダウンロードしておく必要があります。
+    以下に示すリンクは、さまざまな言語に対する辞書データへのリンクを示したページを表示します。
+    </para>
 @z
 
 @x
@@ -134,47 +131,43 @@
     <para>Install <application>Aspell</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Aspell</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Aspell</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
   <para>If you do not plan to install <application>Ispell</application>,
   then copy the wrapper script <command>ispell</command>:</para>
 @y
-<para>
-<application>Ispell</application>
-をインストールしない場合は、ラッパースクリプト
-<command>ispell</command> をコピーします。
-</para>
+    <para>
+    <application>Ispell</application> をインストールしない場合は、ラッパースクリプト <command>ispell</command> をコピーします。
+    </para>
 @z
 
 @x
   <para>If you do not plan to install <application>Spell</application>,
   then copy the wrapper script <command>spell</command>:</para>
 @y
-<para>
-<application>Spell</application>
-をインストールしない場合は、ラッパースクリプト
-<command>spell</command> をコピーします。
-</para>
+  <para>
+  <application>Spell</application> をインストールしない場合は、ラッパースクリプト <command>spell</command> をコピーします。
+  </para>
 @z
 
 @x
@@ -194,19 +187,18 @@
       up at least one dictionary. Install one or more dictionaries by running
       the following commands:</para>
 @y
-<para>
-<application>Aspell</application>
-をインストールしたら、次に最低でも１つの辞書をセットアップする必要があります。
-以下のコマンドを実行して辞書データをインストールします。
-</para>
+      <para>
+      <application>Aspell</application> をインストールしたら、次に最低でも１つの辞書をセットアップする必要があります。
+      以下のコマンドを実行して辞書データをインストールします。
+      </para>
 @z
 
 @x
       <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
 @z
 
 @x
@@ -252,23 +244,23 @@
           <application>Aspell</application> features, and as
           a utility for managing dictionaries.</para>
 @y
-<para>
-is a utility that can function as an
-<command>ispell -a</command> replacement, as an independent spell
-checker, as a test utility to test out
-<application>Aspell</application> features, and as
-a utility for managing dictionaries.
-</para>
+          <para>
+          is a utility that can function as an
+          <command>ispell -a</command> replacement, as an independent spell
+          checker, as a test utility to test out
+          <application>Aspell</application> features, and as
+          a utility for managing dictionaries.
+          </para>
 @z
 
 @x ispell
           <para>is a wrapper around <command>aspell</command> to invoke it in
           <command>ispell</command> compatible mode.</para>
 @y
-<para>
-is a wrapper around <command>aspell</command> to invoke it in
-<command>ispell</command> compatible mode.
-</para>
+          <para>
+          is a wrapper around <command>aspell</command> to invoke it in
+          <command>ispell</command> compatible mode.
+          </para>
 @z
 
 @x spell
@@ -339,19 +331,19 @@ is a wrapper around <command>aspell</command> to invoke it in
           <para>compresses or decompresses sorted word lists for use with the
           <application>Aspell</application> spell checker.</para>
 @y
-<para>
-
-compresses or decompresses sorted word lists for use with the
-<application>Aspell</application> spell checker.
-</para>
+          <para>
+          
+          compresses or decompresses sorted word lists for use with the
+          <application>Aspell</application> spell checker.
+          </para>
 @z
 
 @x libaspell.so
           <para>contains spell checking API functions.</para>
 @y
-<para>
-スペルチェックの API 関数を提供します。
-</para>
+          <para>
+          スペルチェックの API 関数を提供します。
+          </para>
 @z
 
 @x libpspell.so
@@ -361,10 +353,9 @@ compresses or decompresses sorted word lists for use with the
           <filename class='libraryfile'>libaspell</filename> but this library
           is included for backward compatibility.</para>
 @y
-<para>
-<filename class='libraryfile'>libaspell</filename>
-ライブラリへのインターフェースを提供します。
-スペルチェックの機能は <filename class='libraryfile'>libaspell</filename>
-にすべて含まれるようになりましたが、このライブラリにも下位互換性のために含まれています。
-</para>
+          <para>
+          <filename class='libraryfile'>libaspell</filename> ライブラリへのインターフェースを提供します。
+          スペルチェックの機能は <filename
+          class='libraryfile'>libaspell</filename> にすべて含まれるようになりましたが、このライブラリにも下位互換性のために含まれています。
+          </para>
 @z

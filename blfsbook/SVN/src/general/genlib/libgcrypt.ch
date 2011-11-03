@@ -154,8 +154,7 @@
     user:</para>
 @y
     <para>
-    <systemitem class="username">root</systemitem>
-    ユーザーになって以下を実行します。
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
 @z
 
@@ -207,10 +206,10 @@
           linker flags which are required to correctly compile and link the
           application against the libgcrypt(3) library.</para>
 @y
-          <para>is a utility used to configure and build applications based on
-          the libgcrypt(3) library. It can be used to query the C compiler and
-          linker flags which are required to correctly compile and link the
-          application against the libgcrypt(3) library.</para>
+          <para>
+          libgcrypt(3) ライブラリを利用するアプリケーションを設定し構築するためのユーティリティ。
+          そのようなアプリケーションをビルドする際に必要となるコンパイラーフラグ、リンカーフラグを調べることができます。
+          </para>
 @z
 
 @x libgcrypt.{so,a}
@@ -218,4 +217,3 @@
 @y
           <para>暗号化 API 関数を提供します。</para>
 @z
-

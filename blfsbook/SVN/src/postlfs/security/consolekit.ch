@@ -25,11 +25,10 @@
     It provides a mechanism for software to react to changes of any of these
     items or of any of the metadata associated with them.</para>
 @y
-<para>
-<application>ConsoleKit</application>
-パッケージは、システム上のユーザー、セッション、シート (seat) に関する情報を追跡管理するフレームワークを提供します。
-そのような情報やこれに関するメタ情報が変更された際に、ソフトウェアがこれを検出する機構を提供するものです。
-</para>
+    <para>
+    <application>ConsoleKit</application> パッケージは、システム上のユーザー、セッション、シート (seat) に関する情報を追跡管理するフレームワークを提供します。
+    そのような情報やこれに関するメタ情報が変更された際に、ソフトウェアがこれを検出する機構を提供するものです。
+    </para>
 @z
 
 @x
@@ -104,13 +103,10 @@
       ConsoleKit.conf file to lock down the service. Failure to do so may be a
       huge SECURITY HOLE.</para>
 @y
-<para>
-<application>polkit</application>
-パッケージをインストール <emphasis role="strong">しない</emphasis>
-場合、ConsoleKit.conf ファイルを編集してサービスを停止することが必要です。
-これを行っていないと、極めて重大な <emphasis role="strong">セキュリティホール</emphasis>
-となる点に注意してください。
-</para>
+      <para>
+      <application>polkit</application> パッケージをインストール <emphasis role="strong">しない</emphasis> 場合、ConsoleKit.conf ファイルを編集してサービスを停止することが必要です。
+      これを行っていないと、極めて重大な <emphasis role="strong">セキュリティホール</emphasis> となる点に注意してください。
+      </para>
 @z
 
 @x
@@ -141,10 +137,10 @@
     <para>Install <application>ConsoleKit</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>ConsoleKit</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して
+    <application>ConsoleKit</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -156,10 +152,9 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -175,14 +170,12 @@
     <application>Linux-PAM</application> is
     <emphasis role="strong">NOT</emphasis> installed.</para>
 @y
-<para>
-<parameter>--enable-pam-module</parameter>:
-このパラメータは <application>Linux-PAM</application>
-による認証機能を利用することを指示します。
-<application>Linux-PAM</application>
-をインストールして <emphasis role="strong">いない</emphasis>
-場合はこのオプションを取り除いてください。
-</para>
+    <para>
+    <parameter>--enable-pam-module</parameter>:
+    このパラメーターは <application>Linux-PAM</application> による認証機能を利用することを指示します。
+    <application>Linux-PAM</application> をインストールして <emphasis
+    role="strong">いない</emphasis> 場合はこのパラメーターを取り除いてください。
+    </para>
 @z
 
 @x
@@ -190,11 +183,10 @@
     <application>xmlto</application> is installed and you wish to build the API
     documentation.</para>
 @y
-<para>
-<option>--enable-docbook-docs</option>: 
-<application>xmlto</application>
-をインストールしていて、API ドキュメントをインストールする場合にこのパラメータを指定します。
-</para>
+    <para>
+    <option>--enable-docbook-docs</option>: 
+    <application>xmlto</application> をインストールしていて、API ドキュメントをインストールする場合にこのパラメーターを指定します。
+    </para>
 @z
 
 @x
@@ -256,4 +248,3 @@
         /usr/{include/ConsoleKit/ck-connector,lib/ConsoleKit/{run-seat.d,
         run-session.d,scripts},share/doc/ConsoleKit/spec}</seg>
 @z
-

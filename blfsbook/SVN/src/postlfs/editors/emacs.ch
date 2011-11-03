@@ -23,15 +23,14 @@
     <para>The <application>Emacs</application> package contains an extensible,
     customizable, self-documenting real-time display editor.</para>
 @y
-<!--
-日本語訳情報：2009-10-31 matsuand
-self-documenting という語にはいつも悩まされる。
-訳語から除いてしまった・・
--->
-<para>
-<application>Emacs</application>
-パッケージは、拡張性やカスタマイズ性に優れた、リアルタイムなディスプレイエディタを提供します。
-</para>
+    <!--
+    日本語訳情報：2009-10-31 matsuand
+    self-documenting という語にはいつも悩まされる。
+    訳語から除いてしまった・・
+    -->
+    <para>
+    <application>Emacs</application> パッケージは、拡張性やカスタマイズ性に優れた、リアルタイムなディスプレイエディターを提供します。
+    </para>
 @z
 
 @x
@@ -116,26 +115,25 @@ self-documenting という語にはいつも悩まされる。
     <para>Install <application>Emacs</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Emacs</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Emacs</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -148,11 +146,10 @@ self-documenting という語にはいつも悩まされる。
     <para><option>--libexecdir=/usr/lib</option>: Place library
     executables in a Filesystem Hierarchy Standard (FHS) location.</para>
 @y
-<para>
-<option>--libexecdir=/usr/lib</option>:
-ファイルシステム階層標準 (Filesystem Hierarchy Standard; FHS)
-に従ってライブラリを配置するように指示します。
-</para>
+    <para>
+    <option>--libexecdir=/usr/lib</option>:
+    ファイルシステム階層標準 (Filesystem Hierarchy Standard; FHS) に従ってライブラリを配置するように指示します。
+    </para>
 @z
 
 @x
@@ -160,12 +157,12 @@ self-documenting という語にはいつも悩まされる。
     in <filename class='directory'>/var/games/emacs</filename> instead
     of <filename class='directory'>/usr/var/games/emacs</filename>.</para>
 @y
-<para>
-<option>--localstatedir=/var</option>:
-ゲームスコアのファイルを
-<filename class='directory'>/usr/var/games/emacs</filename> ではなく
-<filename class='directory'>/var/games/emacs</filename> に生成します。
-</para>
+    <para>
+    <option>--localstatedir=/var</option>:
+    ゲームスコアのファイルを <filename
+    class='directory'>/usr/var/games/emacs</filename> ではなく<filename
+    class='directory'>/var/games/emacs</filename> に生成します。
+    </para>
 @z
 
 @x
@@ -206,9 +203,9 @@ self-documenting という語にはいつも悩まされる。
           <para>is a program to convert mail files from RMAIL
           format to Unix <quote>mbox</quote> format.</para>
 @y
-<para>
-メールファイルを RMAIL フォーマットから Unix の <quote>mbox</quote> フォーマットに変換します。
-</para>
+          <para>
+          メールファイルを RMAIL フォーマットから Unix の <quote>mbox</quote> フォーマットに変換します。
+          </para>
 @z
 
 @x ctags
@@ -230,7 +227,7 @@ self-documenting という語にはいつも悩まされる。
 @x emacs
           <para>is an editor.</para>
 @y
-          <para>is an editor.</para>
+          <para>エディター</para>
 @z
 
 @x emacsclient
@@ -260,6 +257,5 @@ self-documenting という語にはいつも悩まされる。
 @x rcs-checkin
           <para>is a shell script used to check files into RCS.</para>
 @y
-          <para>is a shell script used to check files into RCS.</para>
+          <para>RCS へのファイルチェックに用いられるシェルスクリプト。</para>
 @z
-

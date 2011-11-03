@@ -28,13 +28,12 @@
     encryption, decryption, signing, signature verification and key
     management.</para>
 @y
-<para>
-<application>GPGME</application>
-パッケージは C 言語により構築されたライブラリであり、暗号化機能をプログラムに付与することができます。
-これは <application>GnuPG</application> や GpgSM などと同じように公開鍵暗号エンジンへのアクセスを可能とするものであり、それらよりも容易に実現できます。
-<application>GPGME</application>
-では、高レベル API として、暗号化、復号化、認証、シグニチャ認証、キー管理などを提供します。
-</para>
+    <para>
+    <application>GPGME</application>
+    パッケージは C 言語により構築されたライブラリであり、暗号化機能をプログラムに付与することができます。
+    これは <application>GnuPG</application> や GpgSM などと同じように公開鍵暗号エンジンへのアクセスを可能とするものであり、それらよりも容易に実現できます。
+    <application>GPGME</application> では、高レベル API として、暗号化、復号化、認証、シグニチャー認証、キー管理などを提供します。
+    </para>
 @z
 
 @x
@@ -123,25 +122,25 @@
     <para>Install <application>GPGME</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GPGME</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GPGME</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は<command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は<command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -154,10 +153,10 @@
     <para><parameter>--libexecdir=/usr/lib</parameter>: This parameter stops the
     creation of an empty /usr/libexec directory.</para>
 @y
-<para>
-<parameter>--libexecdir=/usr/lib</parameter>:
-このパラメーターは、空のディレクトリとして /usr/libexec が生成されることを回避します。
-</para>
+    <para>
+    <parameter>--libexecdir=/usr/lib</parameter>:
+    このパラメーターは、空のディレクトリとして /usr/libexec が生成されることを回避します。
+    </para>
 @z
 
 @x
@@ -196,24 +195,24 @@
           <para>contains the gpgme API functions for applications using
           pthread.</para>
 @y
-<para>
-pthread を利用するアプリケーションに対して gpgme API 関数を提供します。
-</para>
+          <para>
+          pthread を利用するアプリケーションに対して gpgme API 関数を提供します。
+          </para>
 @z
 
 @x libgpgme-pth.{so,a}
           <para>contains the gpgme API functions for applications using GNU
           Pth.</para>
 @y
-<para>
-GNU Pth を利用するアプリケーションに対して gpgme API 関数を提供します。
-</para>
+          <para>
+          GNU Pth を利用するアプリケーションに対して gpgme API 関数を提供します。
+          </para>
 @z
 
 @x libgpgme.{so,a}
           <para>contains the gpgme API functions.</para>
 @y
-<para>
-gpgme API 関数を提供します。
-</para>
+          <para>
+          gpgme API 関数を提供します。
+          </para>
 @z

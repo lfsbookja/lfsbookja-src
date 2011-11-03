@@ -207,7 +207,7 @@
     <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
-    <systemitem class="username">root</systemitem>  ユーザーになり以下のコマンドを実行して、上で作成した設定ファイルを削除します。
+    <systemitem class="username">root</systemitem> ユーザーになり以下のコマンドを実行して、上で作成した設定ファイルを削除します。
     </para>
 @z
 
@@ -232,7 +232,7 @@
     The other executable is later moved to the
     <filename class='directory'>/sbin</filename> directory.</para>
 @y
-    <para><parameter>--sbindir=/lib/security</parameter>: このパラメータは、三つの実行モジュールに対するものです。
+    <para><parameter>--sbindir=/lib/security</parameter>: このパラメーターは、三つの実行モジュールに対するものです。
     そのうちの二つは、コマンドラインから直接実行するようなものではなく PAM モジュールと同じディレクトリにインストールされます。
     三つめの実行モジュールは、後に <filename class='directory'>/sbin</filename> に移動させます。
     </para>

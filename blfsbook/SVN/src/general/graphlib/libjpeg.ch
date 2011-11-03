@@ -24,12 +24,10 @@
     that allow compression of image files based on the Joint Photographic Experts
     Group standard. It is a "lossy" compression algorithm.</para>
 @y
-<para>
-<application>libjpeg</application>
-パッケージは Joint Photographic Experts Group
-として定められている圧縮イメージファイルに関するライブラリを提供します。
-圧縮アルゴリズムは "不可逆な" ものです。
-</para>
+    <para>
+    <application>libjpeg</application> パッケージは Joint Photographic Experts Group として定められている圧縮イメージファイルに関するライブラリを提供します。
+    圧縮アルゴリズムは "不可逆な" ものです。
+    </para>
 @z
 
 @x
@@ -92,28 +90,25 @@
     <para>Install <application>libjpeg</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libjpeg</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libjpeg</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make test</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は
-<command>make test</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 % @x
@@ -183,7 +178,8 @@
           (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
           BMP, and Targa.</para>
 @y
-          <para>JPEG/JFIF ファイルを生み出す、圧縮したイメージファイルを生成します。
+          <para>
+          イメージファイルを圧縮し JPEG/JFIF ファイルとして生成します。
           現時点にて対応する入力フォーマットは以下のとおりです。
           PPM (PBMPLUS カラーフォーマット), PGM (PBMPLUS グレースケールフォーマット),
           BMP, Targa.</para>
@@ -194,15 +190,17 @@
           PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
           BMP, or Targa format.</para>
 @y
-          <para>decompresses image files from JPEG/JFIF format to either
-          PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-          BMP, or Targa format.</para>
+          <para>
+          圧縮された JPEG/JFIF ファイルを解凍して PPM (PBMPLUS カラーフォーマット)、PGM (PBMPLUS グレースケールフォーマット)、BMP、Targa へ出力します。
+          </para>
 @z
 
 @x jpegtran
           <para>is used for lossless transformation of JPEG files.</para>
 @y
-          <para>is used for lossless transformation of JPEG files.</para>
+          <para>
+          JPEG ファイルにてロスレス変換 (lossless transformation) を行います。
+          </para>
 @z
 
 @x rdjpegcom

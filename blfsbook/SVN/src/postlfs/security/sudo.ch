@@ -26,13 +26,10 @@
     <systemitem class="username">root</systemitem> or another user while
     logging the commands and arguments.</para>
 @y
-<para>
-<application>sudo</application>
-パッケージは、システム管理者が利用する機能として、特定のユーザー
-(あるいはユーザーグループ) が特定のコマンド (あるいはすべてのコマンド) を
-<systemitem class="username">root</systemitem>
-ユーザーとして、あるいは他のユーザーとしてコマンド実行ができるようにする機能を提供します。
-</para>
+    <para>
+    <application>sudo</application> パッケージは、システム管理者が利用する機能として、特定のユーザー (あるいはユーザーグループ) が特定のコマンド (あるいはすべてのコマンド) を <systemitem
+    class="username">root</systemitem> ユーザーとして、あるいは他のユーザーとしてコマンド実行ができるようにする機能を提供します。
+    </para>
 @z
 
 @x
@@ -101,8 +98,7 @@
     <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink>,
     <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>,
     <ulink url="http://www.fwtk.org/">FWTK</ulink>,
-    <xref linkend="server-mail"/> (これは
-    <command>sendmail</command> コマンドを提供するものです),
+    <xref linkend="server-mail"/> (これは <command>sendmail</command> コマンドを提供するものです),
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
     <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
     <xref linkend="openldap"/>,
@@ -127,26 +123,25 @@
     <para>Install <application>sudo</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>sudo</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>sudo</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -159,10 +154,10 @@
     <para><option>--with-ignore-dot</option>: This switch causes
     <application>sudo</application> to ignore '.' in the PATH.</para>
 @y
-<para>
-<option>--with-ignore-dot</option>:
-このパラメータは PATH に含まれる '.' を無視することを指示します。
-</para>
+    <para>
+    <option>--with-ignore-dot</option>:
+    このパラメーターは PATH に含まれる '.' を無視することを指示します。
+    </para>
 @z
 
 @x
@@ -170,7 +165,8 @@
     <application>sudo</application> insult sets.</para>
 @y
     <para><option>--with-all-insults</option>:
-    このパラメーターは <application>sudo</application> が表示する侮辱の文言をすべて含めます。</para>
+    このパラメーターは <application>sudo</application> が表示する侮辱の文言をすべて含めます。
+    </para>
 @z
 
 @x
@@ -179,7 +175,7 @@
 @y
     <para>
     <option>--enable-shell-sets-home</option>:
-    このパラメータは、シェルモードにおいて HOME を対象ユーザーに設定します。
+    このパラメーターは、シェルモードにおいて HOME を対象ユーザーに設定します。
     </para>
 @z
 
@@ -221,8 +217,8 @@
 @y
     <para>
     <option>--without-sendmail</option>:
-    このパラメータは sendmail の利用を不可とします。
-    sendmail 互換の MTA をインストールしている場合は、このパラメータ指定をはずしてください。
+    このオプションは sendmail の利用を不可とします。
+    sendmail 互換の MTA をインストールしている場合は、このオプション指定をはずしてください。
     </para>
 @z
 
@@ -241,11 +237,11 @@
       <command>configure</command> command. Check the
       <command>configure --help</command> output for a complete list.</para>
 @y
-    <para>
-    <application>sudo</application> の <command>configure</command>
-    スクリプトにはオプションが数多くあります。
-    すべてを確認する場合は <command>configure --help</command> を実行してその出力を参照してください。
-    </para>
+      <para>
+      <application>sudo</application> の <command>configure</command>
+      スクリプトにはオプションが数多くあります。
+      すべてを確認する場合は <command>configure --help</command> を実行してその出力を参照してください。
+      </para>
 @z
 
 @x
@@ -273,13 +269,12 @@
       installs a default configuration that has no privileges installed for any
       user.</para>
 @y
-<para>
-<filename>sudoers</filename> ファイルは少々込み入っています。
-このファイル内では２つの記述項目があります。
-エイリアス (基本的には変数) とユーザー指定 (誰が何を実行できるか)
-を定めるものです。
-インストール作業によってインストールされるこのファイルは、デフォルトの設定が行われているに過ぎず、どのユーザーにも権限は与えられていません。
-</para>
+      <para>
+      <filename>sudoers</filename> ファイルは少々込み入っています。
+      このファイル内では２つの記述項目があります。
+      エイリアス (基本的には変数) とユーザー指定 (誰が何を実行できるか) を定めるものです。
+      インストール作業によってインストールされるこのファイルは、デフォルトの設定が行われているに過ぎず、どのユーザーにも権限は与えられていません。
+      </para>
 @z
 
 @x
@@ -287,12 +282,12 @@
       any program without typing a password each time root privileges are
       needed.  This can be configured as:</para>
 @y
-<para>
-
-One example usage is to allow the system administrator to execute
-any program without typing a password each time root privileges are
-needed.  This can be configured as:
-</para>
+      <para>
+      
+      One example usage is to allow the system administrator to execute
+      any program without typing a password each time root privileges are
+      needed.  This can be configured as:
+      </para>
 @z
 
 @x
@@ -310,13 +305,13 @@ needed.  This can be configured as:
         checking like syntax parsing and file permission to avoid some possible
         mistakes that could lead to a vulnerable configuration.</para>
 @y
-<para>
-<application>Sudo</application> 開発者は <filename>sudoers</filename> ファイルを編集する際には <command>visudo</command> コマンドを利用することを強く推奨しています。
-
-This will provide basic sanity
-checking like syntax parsing and file permission to avoid some possible
-mistakes that could lead to a vulnerable configuration.
-</para>
+        <para>
+        <application>Sudo</application> 開発者は <filename>sudoers</filename> ファイルを編集する際には <command>visudo</command> コマンドを利用することを強く推奨しています。
+        
+        This will provide basic sanity
+        checking like syntax parsing and file permission to avoid some possible
+        mistakes that could lead to a vulnerable configuration.
+        </para>
 @z
 
 @x
@@ -326,8 +321,8 @@ mistakes that could lead to a vulnerable configuration.
       to create the <application>PAM</application> configuration file:</para>
 @y
       <para>
-      <application>Sudo</application> のビルドにあたって <application>PAM</application> サポートを有効にした場合は、
-      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+      <application>Sudo</application> のビルドにあたって <application>PAM</application> サポートを有効にした場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
       これにより <application>PAM</application> 設定ファイルが生成されます。
       </para>
 @z
@@ -379,19 +374,18 @@ mistakes that could lead to a vulnerable configuration.
           the <option>-e</option> option to invoke an editor as another
           user.</para>
 @y
-<para>
-<command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたハードリンクであり、
-他ユーザーとなってエディタを起動します。
-</para>
+          <para>
+          <command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたハードリンクであり、他ユーザーとなってエディターを起動します。
+          </para>
 @z
 
 @x visudo
           <para>allows for safer editing of the <filename>sudoers</filename>
           file.</para>
 @y
-<para>
-<filename>sudoers</filename> ファイルを安全な形で編集します。
-</para>
+          <para>
+          <filename>sudoers</filename> ファイルを安全な形で編集します。
+          </para>
 @z
 
 @x sudo_noexec.so
@@ -399,10 +393,10 @@ mistakes that could lead to a vulnerable configuration.
            a dynamically-linked program being run by sudo from executing
            another program (think shell escapes).</para>
 @y
-<para>
-
-enables support for the "noexec" functionality which prevents
-a dynamically-linked program being run by sudo from executing
-another program (think shell escapes).
-</para>
+          <para>
+          
+          enables support for the "noexec" functionality which prevents
+          a dynamically-linked program being run by sudo from executing
+          another program (think shell escapes).
+          </para>
 @z

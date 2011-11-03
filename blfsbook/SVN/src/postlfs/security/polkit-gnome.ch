@@ -24,13 +24,10 @@
     Authentication Agent for <application>polkit</application> that integrates
     well with the <application>GNOME</application> desktop environment.</para>
 @y
-<para>
-<application>polkit-gnome</application> パッケージは
-<application>polkit</application> に対する認証エージェント
-(Authentication Agent) 機能を提供するものです。
-これは <application>GNOME</application>
-デスクトップ環境に統合され利用されます。
-</para>
+    <para>
+    <application>polkit-gnome</application> パッケージは <application>polkit</application> に対する認証エージェント (Authentication Agent) 機能を提供するものです。
+    これは <application>GNOME</application> デスクトップ環境に統合され利用されます。
+    </para>
 @z
 
 @x
@@ -117,26 +114,25 @@
     <para>Install <application>polkit-gnome</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>polkit-gnome</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>polkit-gnome</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -182,17 +178,16 @@
 @x polkit-gnome-authentication-agent-1
           <para>is the polkit-gnome authentication agent.</para>
 @y
-<para>
-polkit-gnome 認証エージェント (Authentication Agent)。
-</para>
+          <para>
+          polkit-gnome 認証エージェント (Authentication Agent)。
+          </para>
 @z
 
 @x libpolkit-gtk-1.{so,a}
           <para>contains the <application>polkit-gnome</application>
           authentication agent API functions.</para>
 @y
-<para>
-<application>polkit-gnome</application> 認証エージェントの API 関数を提供します。
-</para>
+          <para>
+          <application>polkit-gnome</application> 認証エージェントの API 関数を提供します。
+          </para>
 @z
-

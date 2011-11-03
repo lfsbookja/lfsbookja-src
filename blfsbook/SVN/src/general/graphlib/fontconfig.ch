@@ -23,10 +23,9 @@
     <para>The <application>Fontconfig</application> package is a library
     for configuring and customizing font access.</para>
 @y
-<para>
-<application>Fontconfig</application>
-パッケージは、フォントアクセスの設定を行うライブラリを提供します。
-</para>
+    <para>
+    <application>Fontconfig</application> パッケージは、フォントアクセスの設定を行うライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -78,15 +77,12 @@
       release and the most current release is of the form
       &fontconfig-version;</para>
 @y
-<para>
-<application>Fontconfig</application>
-のバージョン番号の付け方は少々変わっています。
-パッケージがベータバージョンである場合、バージョンの最後、リリース番号が
-9x の形で番号付けされます。
-つまり 2.6.92 というのはベータバージョンを表します。
-ここ最近の、最新リリースは &fontconfig-version;
-という形で定められています。
-</para>
+      <para>
+      <application>Fontconfig</application> のバージョン番号の付け方は少々変わっています。
+      パッケージがベータバージョンである場合、バージョンの最後、リリース番号が 9x の形で番号付けされます。
+      つまり 2.6.92 というのはベータバージョンを表します。
+      ここ最近の、最新リリースは &fontconfig-version; という形で定められています。
+      </para>
 @z
 
 @x
@@ -123,15 +119,11 @@
       <xref linkend="perl-sgmlspm"/> and <xref linkend="jadetex"/> installed
       also, or the <application>Fontconfig</application> build will fail.</para>
 @y
-<para>
-<application>DocBook-utils</application>
-をインストール済であって、以下の <command>configure</command>
-スクリプトにおいてパラメータ <parameter>--disable-docs</parameter>
-を取り除くのであれば、<xref linkend="perl-sgmlspm"/>
-と <xref linkend="jadetex"/> をインストールしておかなければなりません。
-そうしておかないと <application>Fontconfig</application>
-のビルドは失敗します。
-</para>
+      <para>
+      <application>DocBook-utils</application> をインストール済であって、以下の <command>configure</command> スクリプトにおいてパラメーター <parameter>--disable-docs</parameter> を取り除くのであれば、<xref
+      linkend="perl-sgmlspm"/> と <xref linkend="jadetex"/> をインストールしておかなければなりません。
+      そうしておかないと <application>Fontconfig</application> のビルドは失敗します。
+      </para>
 @z
 
 @x
@@ -152,28 +144,25 @@
     <para>Install <application>Fontconfig</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Fontconfig</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Fontconfig</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は
-<command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-になって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> になって以下を実行します。
+    </para>
 @z
 
 @x
@@ -182,13 +171,11 @@
     the pre-generated documentation by using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<command>configure</command>
-スクリプトにおけるパラメータ <parameter>--disable-docs</parameter>
-をそのまま指定した場合は、あらかじめ生成されているドキュメントをインストールすることもできます。
-これを実行するには <systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-</para>
+    <para>
+    <command>configure</command>
+    スクリプトにおけるパラメーター <parameter>--disable-docs</parameter> をそのまま指定した場合は、あらかじめ生成されているドキュメントをインストールすることもできます。
+    これを実行するには <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -202,12 +189,10 @@
     the system font cache files in <filename
     class='directory'>/var/cache/fontconfig</filename>.</para>
 @y
-<para>
-<parameter>--localstatedir=/var</parameter>:
-システムのフォントキャッシュを
-<filename class='directory'>/var/cache/fontconfig</filename>
-に配置することを指示します。
-</para>
+    <para>
+    <parameter>--localstatedir=/var</parameter>:
+    システムのフォントキャッシュを <filename class='directory'>/var/cache/fontconfig</filename> に配置することを指示します。
+    </para>
 @z
 
 @x
@@ -215,11 +200,11 @@
     the automatic search for X Window System fonts which, if found, may
     confuse some applications.</para>
 @y
-<para>
-<parameter>--without-add-fonts</parameter>:
-このパラメータは X ウィンドウシステムのフォントを自動的に検索しないようにします。
-自動的に見つかった際に、アプリケーションによってはうまく動作しないものがあるためです。
-</para>
+    <para>
+    <parameter>--without-add-fonts</parameter>:
+    このパラメータは X ウィンドウシステムのフォントを自動的に検索しないようにします。
+    自動的に見つかった際に、アプリケーションによってはうまく動作しないものがあるためです。
+    </para>
 @z
 
 @x
@@ -227,11 +212,11 @@
     the documentation (the release tarball includes pre-generated
     documentation).</para>
 @y
-<para>
-<parameter>--disable-docs</parameter>:
-このパラメータは、ドキュメントを生成しないようにします。
-(ソース tarball の中には、あらかじめ生成されているドキュメントが含まれています。)
-</para>
+    <para>
+    <parameter>--disable-docs</parameter>:
+    このパラメータは、ドキュメントを生成しないようにします。
+    (ソース tarball の中には、あらかじめ生成されているドキュメントが含まれています。)
+    </para>
 @z
 
 @x
@@ -243,16 +228,16 @@
     of the default
     <filename class='directory'>/usr/share/doc/fontconfig</filename>.</para>
 @y
-<para>
-<parameter>--with-docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
-
-Though this parameter seems counter-intuitive following the preceding
-parameter to the <command>configure</command> command, it is used so that
-if the builder removes the <parameter>--disable-docs</parameter> parameter,
-the documentation will be installed in a versioned directory name instead
-of the default
-<filename class='directory'>/usr/share/doc/fontconfig</filename>.
-</para>
+    <para>
+    <parameter>--with-docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
+    
+    Though this parameter seems counter-intuitive following the preceding
+    parameter to the <command>configure</command> command, it is used so that
+    if the builder removes the <parameter>--disable-docs</parameter> parameter,
+    the documentation will be installed in a versioned directory name instead
+    of the default
+    <filename class='directory'>/usr/share/doc/fontconfig</filename>.
+    </para>
 @z
 
 @x
@@ -292,21 +277,15 @@ of the default
       <filename class='directory'>/etc/fonts/conf.d</filename>. The default
       location of fonts in <application>Fontconfig</application> is:</para>
 @y
-<para>
-<application>Fontconfig</application>
-の主となる設定ファイルは <filename>/etc/fonts/fonts.conf</filename> です。
-通常、このファイルは編集する必要はありません。
-設定ファイルはさらに <filename>/etc/fonts/local.conf</filename>
-と、<filename class='directory'>/etc/fonts/conf.d</filename>
-ディレクトリ内のすべてのファイルが利用されます。
-新規にフォントディレクトリの設定を追加するには、
-<filename>/etc/fonts/local.conf</filename>
-ファイルを新規に作成するか、あるいは既にあるそのファイルを編集します。
-あるいは <filename class='directory'>/etc/fonts/conf.d</filename>
-ディレクトリに新たなファイルを追加して、フォントディレクトリの情報を設定します。
-<application>Fontconfig</application>
-がフォントの配置場所として定めるデフォルトディレクトリは以下のとおりです。
-</para>
+      <para>
+      <application>Fontconfig</application> の主となる設定ファイルは <filename>/etc/fonts/fonts.conf</filename> です。
+      通常、このファイルは編集する必要はありません。
+      設定ファイルはさらに <filename>/etc/fonts/local.conf</filename> と、<filename
+      class='directory'>/etc/fonts/conf.d</filename> ディレクトリ内のすべてのファイルが利用されます。
+      新規にフォントディレクトリの設定を追加するには、<filename>/etc/fonts/local.conf</filename> ファイルを新規に作成するか、あるいは既にあるそのファイルを編集します。
+      あるいは <filename class='directory'>/etc/fonts/conf.d</filename> ディレクトリに新たなファイルを追加して、フォントディレクトリの情報を設定します。
+      <application>Fontconfig</application> がフォントの配置場所として定めるデフォルトディレクトリは以下のとおりです。
+      </para>
 @z
 
 @x
@@ -318,16 +297,13 @@ of the default
       users. See <filename>/etc/fonts/conf.avail/README</filename> for a
       description of the configuration files.</para>
 @y
-<para>
-<application>Fontconfig</application>
-は <filename class='directory'>/etc/fonts/conf.avail</filename>
-ディレクトリ内に数多くの設定ファイルの例を提供しています。
-<filename class='directory'>/etc/fonts/conf.d</filename>
-ディレクトリから、それらのファイルへのシンボリックリンクを作成すれば、その設定を利用できるようになります。
-たいていのユーザーにとっては、デフォルトの設定だけでも十分です。
-設定ファイルの記述方法については <filename>/etc/fonts/conf.avail/README</filename>
-を参照してください。
-</para>
+      <para>
+      <application>Fontconfig</application> は <filename
+      class='directory'>/etc/fonts/conf.avail</filename> ディレクトリ内に数多くの設定ファイルの例を提供しています。
+      <filename class='directory'>/etc/fonts/conf.d</filename> ディレクトリから、それらのファイルへのシンボリックリンクを作成すれば、その設定を利用できるようになります。
+      たいていのユーザーにとっては、デフォルトの設定だけでも十分です。
+      設定ファイルの記述方法については <filename>/etc/fonts/conf.avail/README</filename> を参照してください。
+      </para>
 @z
 
 @x
@@ -337,12 +313,10 @@ of the default
       url="file:///usr/share/doc/fontconfig-&fontconfig-version;/fontconfig-user.html"/>.
       </para>
 @y
-<para>
-<application>Fontconfig</application>
-の詳細な情報については、<ulink
-url="file:///usr/share/doc/fontconfig-&fontconfig-version;/fontconfig-user.html"/>
-にあるユーザーマニュアルを参照してください。
-</para>
+      <para>
+      <application>Fontconfig</application> の詳細な情報については、<ulink
+      url="file:///usr/share/doc/fontconfig-&fontconfig-version;/fontconfig-user.html"/> にあるユーザーマニュアルを参照してください。
+      </para>
 @z
 
 @x
@@ -384,57 +358,57 @@ url="file:///usr/share/doc/fontconfig-&fontconfig-version;/fontconfig-user.html"
 @x fc-cache
           <para>is used to create font information caches.</para>
 @y
-<para>
-フォント情報のキャッシュを生成します。
-</para>
+          <para>
+          フォント情報のキャッシュを生成します。
+          </para>
 @z
 
 @x fc-cat
           <para>is used to read font information caches.</para>
 @y
-<para>
-フォント情報のキャッシュを読み込みます。
-</para>
+          <para>
+          フォント情報のキャッシュを読み込みます。
+          </para>
 @z
 
 @x fc-list
           <para>is used to create font lists.</para>
 @y
-<para>
-フォントリストを生成します。
-</para>
+          <para>
+          フォントリストを生成します。
+          </para>
 @z
 
 @x fc-match
           <para>is used to match available fonts, or find fonts that match
           a given pattern.</para>
 @y
-<para>
-
-is used to match available fonts, or find fonts that match
-a given pattern.
-</para>
+          <para>
+          
+          is used to match available fonts, or find fonts that match
+          a given pattern.
+          </para>
 @z
 
 @x fc-query
           <para>is used to query fonts files and print resulting patterns.
           </para>
 @y
-<para>
-
-is used to query fonts files and print resulting patterns.
-</para>
+          <para>
+          
+          is used to query fonts files and print resulting patterns.
+          </para>
 @z
 
 @x fc-scan
           <para>is used to scan font files and directories, and print resulting
           patterns.</para>
 @y
-<para>
-
-is used to scan font files and directories, and print resulting
-patterns.
-</para>
+          <para>
+          
+          is used to scan font files and directories, and print resulting
+          patterns.
+          </para>
 @z
 
 @x libfontconfig.{so,a}
@@ -442,11 +416,10 @@ patterns.
           <application>Fontconfig</application> programs and also by other
           programs to configure or customize font access.</para>
 @y
-<para>
-
-contains functions used by the
-<application>Fontconfig</application> programs and also by other
-programs to configure or customize font access.
-</para>
+          <para>
+          
+          contains functions used by the
+          <application>Fontconfig</application> programs and also by other
+          programs to configure or customize font access.
+          </para>
 @z
-

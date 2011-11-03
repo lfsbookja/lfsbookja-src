@@ -133,7 +133,7 @@
       command:</para>
 @y
       <para>
-      <application>Shadow</application> を再インストールするにあたって、<application>CrackLib</application> による強力なパスワード機能を導入しようとする場合で、かつ <application>Linux-PAM</application> の機能は利用しないことにする場合は、<command>configure</command> スクリプトのパラメータとして <parameter>--with-libcrack</parameter> を指定してください。
+      <application>Shadow</application> を再インストールするにあたって、<application>CrackLib</application> による強力なパスワード機能を導入しようとする場合で、かつ <application>Linux-PAM</application> の機能は利用しないことにする場合は、<command>configure</command> スクリプトのパラメーターとして <parameter>--with-libcrack</parameter> を指定してください。
       そしてさらに以下のコマンドも実行してください。
       </para>
 @z

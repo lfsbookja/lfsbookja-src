@@ -34,7 +34,7 @@
 @y
     <para>
     <application>OpenSSL</application> パッケージは暗号化に関する管理ツールやライブラリを提供します。
-    それらは暗号化の処理を行う他のパッケージにおいて利用されており、特に <application>OpenSSH</application> や Email アプリケーション、ウェブブラウザ (HTTPS サイトへのアクセス時) において活用されています。
+    それらは暗号化の処理を行う他のパッケージにおいて利用されており、特に <application>OpenSSH</application> や Email アプリケーション、ウェブブラウザー (HTTPS サイトへのアクセス時) において活用されています。
     </para>
 @z
 
@@ -235,11 +235,8 @@
     utilize either of those methods in your projects.</para>
 @y
     <para>
-    <option>no-rc5 no-idea</option>: <command>./config</command>
-    コマンドにてこれを指定すると、暗号化モジュールを含めません。
-    
-    Patent licenses may be needed for you to
-    utilize either of those methods in your projects.
+    <option>no-rc5 no-idea</option>: <command>./config</command> コマンドにてこれを指定すると、暗号化モジュールを含めません。
+    それらを利用する場合にはライセンスが必要となります。
     </para>
 @z
 
@@ -310,11 +307,10 @@
       linkend='wget'/> when accessing secure (https protocol) sites.  To do this, 
       follow the instructions from the <xref linkend='cacerts'/> page.</para> 
 @y
-      <para>Most users will want to install Certificate Authority Certificates
-      for validataion of downloaded certificates.  For example, these
-      certificates are used by <xref linkend='firefox'/> or <xref
-      linkend='wget'/> when accessing secure (https protocol) sites.  To do this, 
-      follow the instructions from the <xref linkend='cacerts'/> page.</para> 
+      <para>
+      証明書 (certificates) を正しくダウンロードできたかどうかを検証するためには Certificate Authority Certificates のインストールが必要となります。
+      この証明書はたとえば <xref linkend='firefox'/> や <xref linkend='wget'/> においてセキュアな (https プロトコルを利用した) サイトにアクセスする際に利用されます。
+      インストールを行う場合は <xref linkend='cacerts'/> に示す手順に従ってください。</para> 
 @z
 
 @x
@@ -326,13 +322,10 @@
       update <filename>/etc/ssl/openssl.cnf</filename> or be able to find out
       how to do it.</para>
 @y
-      <para>Users who just want to use <application>OpenSSL</application> for
-      providing functions to other programs such as
-      <application>OpenSSH</application> and web browsers do not need to worry
-      about additional configuration. This is an advanced topic and so those
-      who do need it would normally be expected to either know how to properly
-      update <filename>/etc/ssl/openssl.cnf</filename> or be able to find out
-      how to do it.</para>
+      <para>
+      <application>OpenSSL</application> が提供する機能を <application>OpenSSH</application> やウェブブラウザーなどのプログラムにて利用するなら、特に設定は不要です。
+      設定を加えることは応用的なものであるため、これを為すには <filename>/etc/ssl/openssl.cnf</filename> の設定方法を的確に知っておく必要があります。
+      </para>
 @z
 
 @x

@@ -23,11 +23,9 @@
     <para>The <application>Wget</application> package contains a utility useful
     for non-interactive downloading of files from the Web.</para>
 @y
-<para>
-<application>Wget</application>
-パッケージは、Web 経由でのファイルダウンロードを非対話的 (non-interactive)
-に実現することができるユーティリティです。
-</para>
+    <para>
+    <application>Wget</application> パッケージは、Web 経由でのファイルダウンロードを非対話的 (non-interactive) に実現することができるユーティリティです。
+    </para>
 @z
 
 @x
@@ -110,27 +108,25 @@
     <para>Install <application>Wget</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>Wget</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Wget</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -144,13 +140,24 @@
     the configuration file from <filename class="directory">/usr/etc</filename> to
     <filename class="directory">/etc</filename>.</para>
 @y
-<para>
-<parameter>--sysconfdir=/etc</parameter>:
-このパラメーターは、設定ファイルの置き場所を
-<filename class="directory">/usr/etc</filename> から
-<filename class="directory">/etc</filename>
-に変更します。
-</para>
+    <para>
+    <parameter>--sysconfdir=/etc</parameter>:
+    このパラメーターは、設定ファイルの置き場所を <filename
+    class="directory">/usr/etc</filename> から <filename
+    class="directory">/etc</filename> に変更します。
+    </para>
+@z
+
+@x
+    <para><parameter>--with-ssl=openssl</parameter>: This allows the program to
+    work with <xref linkend="openssl"/>.  It can be omitted if <xref linkend="gnutls"/>
+    is found or the https protocol is not needed. </para>
+@y
+    <para>
+    <parameter>--with-ssl=openssl</parameter>:
+    このパラメーターにより <xref linkend="openssl"/> を用いたプログラムとします。
+    <xref linkend="gnutls"/> がある場合や https プロトコルを必要としない場合は、このパラメーターを省略することができます。
+    </para>
 @z
 
 @x
@@ -176,7 +183,7 @@
 @x
       <para>There are no changes required to these files.</para>
 @y
-<para>これらのファイルに対して変更の必要はありません。</para>
+      <para>これらのファイルに対して変更の必要はありません。</para>
 @z
 
 @x
@@ -216,8 +223,8 @@
           FTP protocols.  It is designed to be non-interactive, for
           background or unattended operations.</para>
 @y
-<para>
-HTTP, HTTPS, FTP の各プロトコルにより Web 経由でのファイル取得を行います。
-これはバックグラウンド実行などのように、非対話的に実行する用途が意図されています。
-</para>
+          <para>
+          HTTP, HTTPS, FTP の各プロトコルにより Web 経由でのファイル取得を行います。
+          これはバックグラウンド実行などのように、非対話的に実行する用途が意図されています。
+          </para>
 @z

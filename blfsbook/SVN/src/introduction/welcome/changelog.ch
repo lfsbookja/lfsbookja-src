@@ -61,6 +61,289 @@
 @z
 
 @x
+      <para>November 1st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to mysql-5.5.17.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Minor changes to Python sections.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Fixed wget dependency to Certificate Authority
+          Certificates.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - mysql-5.5.17 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Minor changes to Python sections.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Fixed wget dependency to Certificate Authority
+          Certificates.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 31st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to cmake-2.8.6.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to curl-7.22.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to libarchive-2.8.5.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/10/31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - cmake-2.8.6 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - curl-7.22.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libarchive-2.8.5 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 30th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added Python2 for backward compatibility.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Corrected a md5sum in Apache-2.2.21.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added wget dependency to Certificate Authority
+          Certificates.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/10/30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Added Python2 for backward compatibility.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Apache-2.2.21 における md5sum を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added wget dependency to Certificate Authority
+          Certificates.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 29th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Minor fixes to sqlite-3.7.8.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/10/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - sqlite-3.7.8 での若干の変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 26th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to vsftpd-2.3.4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/10/26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vsftpd-2.3.4 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 26th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to subversion-1.7.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Python-3.2.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to ruby-1.92-p290.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove xz package.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/10/26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - subversion-1.7.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Python-3.2.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ruby-1.92-p290 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz パッケージを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 25th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Berkeley DB-5.2.36.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add sharutils-4.11.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tcl-8.5.10.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpng-1.5.5.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to jpeg-8c.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libffi-3.0.10.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>October 25th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Berkeley DB-5.2.36 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sharutils-4.11 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl-8.5.10 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpng-1.5.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - jpeg-8c へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libffi-3.0.10 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 24th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to apache-2.2.21.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to rsync-3.0.9. Remove rsync-client
+          and move rsync to network programs.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to sqlite-3.7.8.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to acl-2.2.51.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix instructions in attr package.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to doxygen-1.75.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pcre-8.12.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>October 24th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - apache-2.2.21 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - rsync-3.0.9 へのアップデート。
+          rsync-client は削除し、rsync をネットワークプログラムの章に移動。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sqlite-3.7.8 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - acl-2.2.51 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - attr パッケージでの手順を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - doxygen-1.75 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pcre-8.12 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>October 23rd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add routine to remove out of date
+          CA certificates.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libxml2-2.7.8.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add gcc-4.6.1 patch to openjade.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/10/23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 古くなった CA certificates を除くためのルーチンを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libxml2-2.7.8 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - openjade のために gcc-4.6.1 のパッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>October 22nd, 2011</para>
       <itemizedlist>
         <listitem>

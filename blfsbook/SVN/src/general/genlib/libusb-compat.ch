@@ -31,13 +31,10 @@
     compatibility layer needed by packages that have not upgraded to the
     <application>libusb-1</application> API.</para>
 @y
-<para>
-<application>libusb-compat</application>
-パッケージは、<application>libusb-0.1</application>
-パッケージとそっくり同じ見た目や動きを目指したライブラリです。
-<application>libusb-1</application>
-の API へのアップグレードを行っていない各種パッケージ類にとって、必要となる互換レイヤとなるものです。
-</para>
+    <para>
+    <application>libusb-compat</application> パッケージは、<application>libusb-0.1</application> パッケージとそっくり同じ見た目や動きを目指したライブラリです。
+    <application>libusb-1</application> の API へのアップグレードを行っていない各種パッケージ類にとって、必要となる互換レイヤーとなるものです。
+    </para>
 @z
 
 @x
@@ -116,25 +113,25 @@
     <para>Install <application>libusb-compat</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libusb-compat</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libusb-compat</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -174,8 +171,8 @@
           <application>libusb-0.1</application>, but use
           <application>libusb-1.0</application> to provide functionality.</para>
 @y
-<para>
-<application>libusb-0.1</application> の互換ライブラリ。
-ただし <application>libusb-1.0</application> を利用して機能拡張しています。
-</para>
+          <para>
+          <application>libusb-0.1</application> の互換ライブラリ。
+          ただし <application>libusb-1.0</application> を利用して機能拡張しています。
+          </para>
 @z

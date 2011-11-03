@@ -22,14 +22,13 @@
 @x
     <para><application>PHP</application> is the PHP Hypertext Preprocessor.
     Primarily used in dynamic web sites, it allows for programming code to be
-    directly embedded into the HTML markup.</para>
+    directly embedded into the HTML markup.  It is also useful as a 
+    general purpose scripting language.</para>
 @y
-<para>
-
-<application>PHP</application> is the PHP Hypertext Preprocessor.
-Primarily used in dynamic web sites, it allows for programming code to be
-directly embedded into the HTML markup.
-</para>
+    <para><application>PHP</application> is the PHP Hypertext Preprocessor.
+    Primarily used in dynamic web sites, it allows for programming code to be
+    directly embedded into the HTML markup.  It is also useful as a 
+    general purpose scripting language.</para>
 @z
 
 @x
@@ -633,4 +632,3 @@ directly embedded into the HTML markup.
           <para>is the PHP Extension and Application
           Repository (PEAR) package manager.</para>
 @z
-

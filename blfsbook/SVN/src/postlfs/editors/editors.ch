@@ -16,7 +16,7 @@
 @x
   <title>Editors</title>
 @y
-  <title>エディタ</title>
+  <title>エディター</title>
 @z
 
 @x
@@ -25,9 +25,8 @@
   installed programs benefit from being recompiled after GUI libraries
   have been installed.</para>
 @y
-<para>
-本章は LFS システムにおいて様々なエディタを利用したい方のために LFS ブックからも参照しています。
-また LFS にてインストールしたプログラムが、GUI ライブラリのインストール後に再コンパイルすることで、いかに充実するのかについても説明します。
-</para>
+  <para>
+  本章は LFS システムにおいて様々なエディターを利用したい方のために LFS ブックからも参照しています。
+  また LFS にてインストールしたプログラムが、GUI ライブラリのインストール後に再コンパイルすることで、いかに充実するのかについても説明します。
+  </para>
 @z
-

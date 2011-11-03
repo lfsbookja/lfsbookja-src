@@ -25,13 +25,10 @@
     allows a programmer to call any function specified by a call interface
     description at run time.</para>
 @y
-<para>
-<application>libffi</application>
-ライブラリは、さまざまな呼出規約 (calling conventions)
-に対しての、移植性に優れた高レベルのプログラミングインターフェースを提供します。
-This
-allows a programmer to call any function specified by a call interface
-description at run time.</para>
+    <para>
+    <application>libffi</application> ライブラリは、さまざまな呼出規約 (calling conventions) に対しての、移植性に優れた高レベルのプログラミングインターフェースを提供します。
+    このライブラリを用いることにより、プログラム実行時に呼出インターフェース記述 (call interface description) により関数を指定し呼び出すことができるようになります。
+    </para>
 @z
 
 @x
@@ -86,27 +83,25 @@ description at run time.</para>
     <para>Install <application>libffi</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libffi</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libffi</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -145,8 +140,7 @@ description at run time.</para>
           <para>contains the <application>libffi</application> API
           functions.</para>
 @y
-<para>
-<application>libffi</application> API 関数を提供します。
-</para>
+          <para>
+          <application>libffi</application> API 関数を提供します。
+          </para>
 @z
-

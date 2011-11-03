@@ -24,11 +24,11 @@
     application-level toolkit for defining and handling the policy that allows
     unprivileged processes to speak to privileged processes.</para>
 @y
-<para>
-<application>polkit</application>
-パッケージは、アプリケーションレベルにてポリシーを定義し操作するためのツールキットです。
-これにより非特権 (unprivileged) プロセス から特権 (privileged) プロセスへのアクセスが可能となります。
-</para>
+    <para>
+    <application>polkit</application>
+    パッケージは、アプリケーションレベルにてポリシーを定義し操作するためのツールキットです。
+    これにより非特権 (unprivileged) プロセス から特権 (privileged) プロセスへのアクセスが可能となります。
+    </para>
 @z
 
 @x
@@ -123,38 +123,35 @@
     following commands as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<application>polkit</application> を正常に動作させるためには、専用のユーザーとグループが必要です。
-そこで <systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <application>polkit</application> を正常に動作させるためには、専用のユーザーとグループが必要です。
+    そこで <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>Install <application>polkit</application> by running the following
     commands as an unprivileged user:</para>
 @y
-<para>
-一般ユーザーとして以下のコマンドを実行し
-<application>polkit</application> をビルドします。
-</para>
+    <para>
+    一般ユーザーとして以下のコマンドを実行し <application>polkit</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -212,79 +209,75 @@
 @x pkaction
           <para>is used to obtain information about registered PolicyKit actions.</para>
 @y
-<para>
-登録されている PolicyKit アクションについての情報を取得するために用います。
-</para>
+          <para>
+          登録されている PolicyKit アクションについての情報を取得するために用います。
+          </para>
 @z
 
 @x pkcheck
           <para>is used to check whether a process is authorized for action.</para>
 @y
-<para>
-プロセスがアクションを行う権限を有するかどうかをチェックするために用います。
-</para>
+          <para>
+          プロセスがアクションを行う権限を有するかどうかをチェックするために用います。
+          </para>
 @z
 
 @x pkexec
           <para>allows an authorized user to execute a command as another user.</para>
 @y
-<para>
-認証されたユーザーが、他ユーザーとなってコマンド実行することを許可します。
-</para>
+          <para>
+          認証されたユーザーが、他ユーザーとなってコマンド実行することを許可します。
+          </para>
 @z
 
 @x polkitd
           <para>provides the org.freedesktop.PolicyKit1
           <application>D-Bus</application> service on the system message bus.</para>
 @y
-<para>
-システムメッセージバス上にて、org.freedesktop.PolicyKit1 なる
-<application>D-Bus</application> サービスを提供します。
-</para>
+          <para>
+          システムメッセージバス上にて、org.freedesktop.PolicyKit1 なる <application>D-Bus</application> サービスを提供します。
+          </para>
 @z
 
 @x libpolkit-agent-1.{so,a}
           <para>contains the <application>polkit</application> authentication
           agent API functions.</para>
 @y
-<para>
-<application>polkit</application>
-の認証エージェント API 関数を提供します。
-</para>
+          <para>
+          <application>polkit</application> の認証エージェント API 関数を提供します。
+          </para>
 @z
 
 @x libpolkit-backend-1.{so,a}
           <para>contains the <application>polkit</application> backend API
           functions.</para>
 @y
-<para>
-<application>polkit</application>
-バックエンド API 関数を提供します。
-</para>
+          <para>
+          <application>polkit</application> バックエンド API 関数を提供します。
+          </para>
 @z
 
 @x libpolkit-gobject-1.{so,a}
           <para>contains the <application>polkit</application> authorization API
           functions.</para>
 @y
-<para>
-<application>polkit</application>
-認証 API 関数を提供します。
-</para>
+          <para>
+          <application>polkit</application> 認証 API 関数を提供します。
+          </para>
 @z
 
 @x libnullbackend.{so,a}
           <para>is an extension library.</para>
 @y
-<para>
-拡張ライブラリ。
-</para>
+          <para>
+          拡張ライブラリ。
+          </para>
 @z
 
 @x libpkexec-action-lookup.{so,a}
           <para>is an extension library.</para>
 @y
-<para>
-拡張ライブラリ。
-</para>
+          <para>
+          拡張ライブラリ。
+          </para>
 @z

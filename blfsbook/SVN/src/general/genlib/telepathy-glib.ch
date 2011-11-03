@@ -27,16 +27,11 @@
     abstracts differences between protocols to provide a unified interface for
     applications.</para>
 @y
-<para>
-<application>telepathy-glib</application>
-パッケージは、GLib ベースの Telepathy コンポーネントに対するライブラリです。
-
-Telepathy is a
-<application>D-Bus</application> framework for unifying real time
-communication, including instant messaging, voice calls and video calls. It
-abstracts differences between protocols to provide a unified interface for
-applications.
-</para>
+    <para>
+    <application>telepathy-glib</application> パッケージは、GLib ベースの Telepathy コンポーネントに対するライブラリです。
+    Telepathy コンポーネントは <application>D-Bus</application> フレームワークであり、リアルタイムなコミュニケーション、インスタントメッセージ、音声あるいはビデオコールを共通化します。
+    アプリケーションに対し共通化されたインターフェースを提供することで、各種プロトコルの差異を抽象化するものです。
+    </para>
 @z
 
 @x
@@ -125,25 +120,25 @@ applications.
     <para>Install <application>telepathy-glib</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>telepathy-glib</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>telepathy-glib</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -190,7 +185,7 @@ applications.
           <para>contains the <application>telepathy-glib</application> API
           functions.</para>
 @y
-<para>
-<application>telepathy-glib</application> の API 関数を提供します。
-</para>
+          <para>
+          <application>telepathy-glib</application> の API 関数を提供します。
+          </para>
 @z

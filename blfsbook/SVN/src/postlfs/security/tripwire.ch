@@ -23,10 +23,10 @@
     <para>The <application>Tripwire</application> package contains programs
     used to verify the integrity of the files on a given system.</para>
 @y
-<para>
-<application>Tripwire</application>
-パッケージは、利用システム上でのファイルの整合性チェックを行うプログラムを提供します。
-</para>
+    <para>
+    <application>Tripwire</application>
+    パッケージは、利用システム上でのファイルの整合性チェックを行うプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -111,10 +111,9 @@
     <para>Compile <application>Tripwire</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>Tripwire</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Tripwire</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -123,31 +122,29 @@
     one, modify <filename>install/install.cfg</filename> to use an SMTP
     server instead.  Otherwise the install will fail.</para></warning>
 @y
-<warning>
-<para>
-デフォルトの設定はローカルな MTA 用となっています。
-MTA をインストールしていない場合で、これをインストールするつもりがないなら、
-<filename>install/install.cfg</filename>
-を修正して SMTP サーバーを利用するように変更することが必要です。
-これを行っておかないとインストールが失敗します。
-</para>
-</warning>
+    <warning>
+    <para>
+    デフォルトの設定はローカルな MTA 用となっています。
+    MTA をインストールしていない場合で、これをインストールするつもりがないなら、<filename>install/install.cfg</filename> を修正して SMTP サーバーを利用するように変更することが必要です。
+    これを行っておかないとインストールが失敗します。
+    </para>
+    </warning>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -162,13 +159,12 @@ MTA をインストールしていない場合で、これをインストール�
     the program database and reports in
     <filename class="directory">/var/lib/tripwire</filename>.</para>
 @y
-<para>
-<command>sed -i -e 's@TWDB="${prefix}@TWDB="/var@'
-install/install.cfg</command>:
-このコマンドは、本プログラムのデータベースと報告ファイル類を
-<filename class="directory">/var/lib/tripwire</filename>
-ディレクトリにインストールするようにします。
-</para>
+    <para>
+    <command>sed -i -e 's@TWDB="${prefix}@TWDB="/var@'
+    install/install.cfg</command>:
+    このコマンドは、本プログラムのデータベースと報告ファイル類を <filename
+    class="directory">/var/lib/tripwire</filename> ディレクトリにインストールするようにします。
+    </para>
 @z
 
 @x
@@ -177,14 +173,12 @@ install/install.cfg</command>:
     the binaries. There are two keys: a site key and a local key which are
     stored in <filename class="directory">/etc/tripwire/</filename>.</para>
 @y
-<para>
-<command>make install</command>:
-このコマンドを実行すると、実行バイナリ類のインストールとともに、セキュリティ鍵
-(security keys) の生成も行います。
-サイト鍵 (site key) とローカル鍵 (local key) の２つです。
-これらは <filename class="directory">/etc/tripwire/</filename>
-ディレクトリに保存されます。
-</para>
+    <para>
+    <command>make install</command>:
+    このコマンドを実行すると、実行バイナリ類のインストールとともに、セキュリティ鍵 (security keys) の生成も行います。
+    サイト鍵 (site key) とローカル鍵 (local key) の２つです。
+    これらは <filename class="directory">/etc/tripwire/</filename> ディレクトリに保存されます。
+    </para>
 @z
 
 @x
@@ -192,11 +186,10 @@ install/install.cfg</command>:
     installs the <application>tripwire</application> sample policy files with
     the other <application>tripwire</application> documentation.</para>
 @y
-<para>
-<command>cp -v policy/*.txt /usr/doc/tripwire</command>:
-このコマンドは <application>tripwire</application>
-のサンプルポリシーファイルやドキュメントをインストールします。
-</para>
+    <para>
+    <command>cp -v policy/*.txt /usr/doc/tripwire</command>:
+    このコマンドは <application>tripwire</application> のサンプルポリシーファイルやドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -224,12 +217,11 @@ install/install.cfg</command>:
       default installation and will need to be updated for your
       system.</para>
 @y
-<para>
-<application>Tripwire</application>
-にはポリシーファイル (policy file) があり、これを使ってどのファイルの整合性チェックを行うかを決定します。
-デフォルトのポリシーファイル (<filename>/etc/tripwire/twpol.txt</filename>)
-は、インストール時にデフォルトで生成されますが、利用システムに応じて適切に書き換える必要があります。
-</para>
+      <para>
+      <application>Tripwire</application>
+      にはポリシーファイル (policy file) があり、これを使ってどのファイルの整合性チェックを行うかを決定します。
+      デフォルトのポリシーファイル (<filename>/etc/tripwire/twpol.txt</filename>) は、インストール時にデフォルトで生成されますが、利用システムに応じて適切に書き換える必要があります。
+      </para>
 @z
 
 @x
@@ -239,14 +231,12 @@ install/install.cfg</command>:
       class="directory">/usr/doc/</filename> is a symbolic link on LFS systems
       to <filename class="directory">/usr/share/doc/</filename>).</para>
 @y
-<para>
-ポリシーファイルは、個々のディストリビューションやインストール状況に応じて設定する必要があります。
-<filename class="directory">/usr/doc/tripwire/</filename>
-にはポリシーファイルの例がいくつかあります。
-(ちなみに <filename class="directory">/usr/doc/</filename>
-ディレクトリは、LFS システムにおいては
-<filename class="directory">/usr/share/doc/</filename> へのシンボリックリンクです。)
-</para>
+      <para>
+      ポリシーファイルは、個々のディストリビューションやインストール状況に応じて設定する必要があります。
+      <filename class="directory">/usr/doc/tripwire/</filename> にはポリシーファイルの例がいくつかあります。
+      (ちなみに <filename class="directory">/usr/doc/</filename> ディレクトリは、LFS システムにおいては <filename
+      class="directory">/usr/share/doc/</filename> へのシンボリックリンクです。)
+      </para>
 @z
 
 @x
@@ -260,19 +250,16 @@ install/install.cfg</command>:
       note any changes to the file system and can even be used as an annoying
       way of keeping track of changes for uninstallation of software.</para>
 @y
-<para>
-必要に応じて、デフォルトのポリシーファイル <filename>twpol.txt</filename>
-は用いずに、ポリシーファイルを <filename class="directory">/etc/tripwire/</filename>
-にコピーします。さらにそのポリシーファイルは適当に書き換えることが求められます。
-その方法の詳細については、上に示したサンプルファイルや
-<filename>/usr/doc/tripwire/policyguide.txt</filename>
-を参照してください。<filename>twpol.txt</filename>
-も、<application>Tripwire</application> を学ぶ上でのちょうど良いサンプルとなっており、
-
-as it will
-note any changes to the file system and can even be used as an annoying
-way of keeping track of changes for uninstallation of software.
-</para>
+      <para>
+      必要に応じて、デフォルトのポリシーファイル <filename>twpol.txt</filename> は用いずに、ポリシーファイルを <filename
+      class="directory">/etc/tripwire/</filename> にコピーします。さらにそのポリシーファイルは適当に書き換えることが求められます。
+      その方法の詳細については、上に示したサンプルファイルや <filename>/usr/doc/tripwire/policyguide.txt</filename> を参照してください。
+      <filename>twpol.txt</filename> も、<application>Tripwire</application> を学ぶ上でのちょうど良いサンプルとなっており、
+      
+      as it will
+      note any changes to the file system and can even be used as an annoying
+      way of keeping track of changes for uninstallation of software.
+      </para>
 @z
 
 @x
@@ -280,23 +267,23 @@ way of keeping track of changes for uninstallation of software.
       begin the configuration steps (perform as the <systemitem
       class='username'>root</systemitem>) user:</para>
 @y
-<para>
-
-After your policy file has been edited to your satisfaction you may
-begin the configuration steps (perform as the <systemitem
-class='username'>root</systemitem>) user:
-</para>
+      <para>
+      
+      After your policy file has been edited to your satisfaction you may
+      begin the configuration steps (perform as the <systemitem
+      class='username'>root</systemitem>) user:
+      </para>
 @z
 
 @x
     <para>Depending on your system and the contents of the policy file, the
     initialization phase above can take a relatively long time.</para>
 @y
-<para>
-
-Depending on your system and the contents of the policy file, the
-initialization phase above can take a relatively long time.
-</para>
+      <para>
+      
+      Depending on your system and the contents of the policy file, the
+      initialization phase above can take a relatively long time.
+      </para>
 @z
 
 @x
@@ -312,24 +299,24 @@ initialization phase above can take a relatively long time.
       these directories will flag all these changes.  It is most useful after a
       system has reached a configuration that the user considers stable.</para>
 @y
-<para>
-<application>Tripwire</application> will identify file changes in
-the critical system files specified in the policy file.  Using
-<application>Tripwire</application> while making frequent changes to
-these directories will flag all these changes.  It is most useful after a
-system has reached a configuration that the user considers stable.
-</para>
+      <para>
+      <application>Tripwire</application> will identify file changes in
+      the critical system files specified in the policy file.  Using
+      <application>Tripwire</application> while making frequent changes to
+      these directories will flag all these changes.  It is most useful after a
+      system has reached a configuration that the user considers stable.
+      </para>
 @z
 
 @x
       <para>To use <application>Tripwire</application> after creating a policy
       file to run a report, use the following command:</para>
 @y
-<para>
-
-To use <application>Tripwire</application> after creating a policy
-file to run a report, use the following command:
-</para>
+      <para>
+      
+      To use <application>Tripwire</application> after creating a policy
+      file to run a report, use the following command:
+      </para>
 @z
 
 @x
@@ -337,23 +324,23 @@ file to run a report, use the following command:
       integrity report can be produced by using a cron facility to schedule the
       runs.</para>
 @y
-<para>
-
-View the output to check the integrity of your files. An automatic
-integrity report can be produced by using a cron facility to schedule the
-runs.
-</para>
+      <para>
+      
+      View the output to check the integrity of your files. An automatic
+      integrity report can be produced by using a cron facility to schedule the
+      runs.
+      </para>
 @z
 
 @x
       <para>Reports are stored in binary and, if desired, encrypted.  View reports,
       as the <systemitem class="username">root</systemitem> user, with:</para>
 @y
-<para>
-
-Reports are stored in binary and, if desired, encrypted.  View reports,
-as the <systemitem class="username">root</systemitem> user, with:
-</para>
+      <para>
+      
+      Reports are stored in binary and, if desired, encrypted.  View reports,
+      as the <systemitem class="username">root</systemitem> user, with:
+      </para>
 @z
 
 @x
@@ -371,22 +358,22 @@ as the <systemitem class="username">root</systemitem> user, with:
       <systemitem class='username'>root</systemitem> user, type in the
       following command making the appropriate report name:</para>
 @y
-<para>
-
-After you run an integrity check, you should examine the
-report (or email) and then modify the <application>Tripwire</application>
-database to reflect the changed files on your system. This is so that
-<application>Tripwire</application> will not continually notify you that
-files you intentionally changed are a security violation. To do this you
-must first <command>ls -l /var/lib/tripwire/report/</command> and note
-the name of the newest file which starts with your system name as
-presented by the command <userinput>uname -n</userinput>
-and ends in <filename>.twr</filename>. These files were created
-during report creation and the most current one is needed to update the
-<application>Tripwire</application> database of your system. As the
-<systemitem class='username'>root</systemitem> user, type in the
-following command making the appropriate report name:
-</para>
+      <para>
+      
+      After you run an integrity check, you should examine the
+      report (or email) and then modify the <application>Tripwire</application>
+      database to reflect the changed files on your system. This is so that
+      <application>Tripwire</application> will not continually notify you that
+      files you intentionally changed are a security violation. To do this you
+      must first <command>ls -l /var/lib/tripwire/report/</command> and note
+      the name of the newest file which starts with your system name as
+      presented by the command <userinput>uname -n</userinput>
+      and ends in <filename>.twr</filename>. These files were created
+      during report creation and the most current one is needed to update the
+      <application>Tripwire</application> database of your system. As the
+      <systemitem class='username'>root</systemitem> user, type in the
+      following command making the appropriate report name:
+      </para>
 @z
 
 @x
@@ -397,26 +384,26 @@ following command making the appropriate report name:
       about, remove the 'x' before the filename in the report and type
       <command>:wq</command>.</para>
 @y
-<para>
-
-You will be placed into <application>Vim</application> with a copy
-of the report in front of you. If all the changes were good, then just
-type <command>:wq</command> and after entering your local key, the database
-will be updated. If there are files which you still want to be warned
-about, remove the 'x' before the filename in the report and type
-<command>:wq</command>.
-</para>
+      <para>
+      
+      You will be placed into <application>Vim</application> with a copy
+      of the report in front of you. If all the changes were good, then just
+      type <command>:wq</command> and after entering your local key, the database
+      will be updated. If there are files which you still want to be warned
+      about, remove the 'x' before the filename in the report and type
+      <command>:wq</command>.
+      </para>
 @z
 
 @x
       <para>A good summary of tripwire operations can be found at
       <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/ref-guide/ch-tripwire.html"/>.</para>
 @y
-<para>
-
-A good summary of tripwire operations can be found at
-<ulink url="http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/ref-guide/ch-tripwire.html"/>.
-</para>
+      <para>
+      
+      A good summary of tripwire operations can be found at
+      <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/ref-guide/ch-tripwire.html"/>.
+      </para>
 @z
 
 @x
@@ -430,11 +417,10 @@ A good summary of tripwire operations can be found at
       it or use a new one, modify the policy file and then execute the following
       commands as the <systemitem class='username'>root</systemitem> user:</para>
 @y
-<para>
-ポリシーファイルの設定が不適当な場合は、これを修正するか新しいものを用意します。
-そして <systemitem class='username'>root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-</para>
+      <para>
+      ポリシーファイルの設定が不適当な場合は、これを修正するか新しいものを用意します。
+      そして <systemitem class='username'>root</systemitem> ユーザーになって以下のコマンドを実行します。
+      </para>
 @z
 
 @x
@@ -473,20 +459,20 @@ A good summary of tripwire operations can be found at
           <para>is a signature gathering utility that displays
           the hash function values for the specified files.</para>
 @y
-<para>
-
-is a signature gathering utility that displays
-the hash function values for the specified files.
-</para>
+          <para>
+          
+          is a signature gathering utility that displays
+          the hash function values for the specified files.
+          </para>
 @z
 
 @x tripwire
           <para>is the main file integrity checking program.</para>
 @y
-<para>
-
-is the main file integrity checking program.
-</para>
+          <para>
+          
+          is the main file integrity checking program.
+          </para>
 @z
 
 @x twadmin
@@ -495,23 +481,21 @@ is the main file integrity checking program.
           <application>Tripwire</application> files and configuration
           options.</para>
 @y
-<para>
-
-administrative and utility tool used to perform
-certain administrative functions related to
-<application>Tripwire</application> files and configuration
-options.
-</para>
+          <para>
+          
+          administrative and utility tool used to perform
+          certain administrative functions related to
+          <application>Tripwire</application> files and configuration
+          options.
+          </para>
 @z
 
 @x twprint
           <para>prints <application>Tripwire</application>
           database and report files in clear text format.</para>
 @y
-<para>
-<application>Tripwire</application>
-のデータベースを表示します。
-またその内容を分かりやすいテキスト形式で出力します。
-</para>
+          <para>
+          <application>Tripwire</application> のデータベースを表示します。
+          またその内容を分かりやすいテキスト形式で出力します。
+          </para>
 @z
-

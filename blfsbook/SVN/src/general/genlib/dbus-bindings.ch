@@ -57,12 +57,12 @@
     require one or more of the Bindings packages in order to build
     successfully.</para>
 @y
-<para>
-<application>D-Bus バインディング (D-Bus Bindings)</application>
-は複数のパッケージからなるものであり、D-Bus API とのインターフェースとなるプログラミング言語やプラットフォームを含みます。
-これらを利用するプログラマーは、用いようとしているプラットフォームやプログラミング言語と D-Bus とのインターフェースを容易に構築できます。
-D-Bus バインディングではないパッケージであっても、それらをビルドする際に D-Bus バインディングを必要とするようなものもあります。
-</para>
+    <para>
+    <application>D-Bus バインディング (D-Bus Bindings)</application>
+    は複数のパッケージからなるものであり、D-Bus API とのインターフェースとなるプログラミング言語やプラットフォームを含みます。
+    これらを利用するプログラマーは、用いようとしているプラットフォームやプログラミング言語と D-Bus とのインターフェースを容易に構築できます。
+    D-Bus バインディングではないパッケージであっても、それらをビルドする際に D-Bus バインディングを必要とするようなものもあります。
+    </para>
 @z
 
 @x
@@ -73,16 +73,16 @@ D-Bus バインディングではないパッケージであっても、それ�
     url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
     Bindings</ulink> page for information.</para>
 @y
-<para>
-本節では
-<application>GLib</application>,
-<application>Python</application>, <application>Qt3</application>,
-<application>GObject</application> の各バインディングを示します。
-他のプログラミング言語に対するバインディングは、いずれ掲載していきます。
-他の情報については、<ulink
-url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
-バインディング</ulink> のページを参照してください。
-</para>
+    <para>
+    本節では
+    <application>GLib</application>,
+    <application>Python</application>, <application>Qt3</application>,
+    <application>GObject</application> の各バインディングを示します。
+    他のプログラミング言語に対するバインディングは、いずれ掲載していきます。
+    他の情報については、<ulink
+    url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
+    バインディング</ulink> のページを参照してください。
+    </para>
 @z
 
 @x
@@ -189,10 +189,10 @@ url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
       <para>Install <application>D-Bus GLib Bindings</application> by
       running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>D-Bus GLib バインディング</application> をビルドします。
-</para>
+      <para>
+      以下のコマンドを実行して
+      <application>D-Bus GLib バインディング</application> をビルドします。
+      </para>
 @z
 
 @x
@@ -201,11 +201,11 @@ url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
       wish to build the API documentation, issue
       <command>doxygen</command>.</para>
 @y
-<para>
-<option>--enable-doxygen-docs</option> パラメータは正常に動作しません。
-<application>Doxygen</application> をインストール済で、API ドキュメントを構築したい場合は
-<command>doxygen</command> と入力してください。
-</para>
+      <para>
+      <option>--enable-doxygen-docs</option> パラメーターは正常に動作しません。
+      <application>Doxygen</application> をインストール済で、API ドキュメントを構築したい場合は
+      <command>doxygen</command> と入力してください。
+      </para>
 @z
 
 @x
@@ -214,20 +214,20 @@ url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
       <application>D-BUS</application> instructions, which requires building the
       package twice.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を入力します。
-より総括的なテストも実施することができますが、それは
-<application>D-BUS</application> パッケージにおける手順と同様に行います。
-その場合にはこのパッケージを二度ビルドしなければなりません。
-</para>
+      <para>
+      ビルド結果をテストする場合は <command>make check</command> を入力します。
+      より総括的なテストも実施することができますが、それは
+      <application>D-BUS</application> パッケージにおける手順と同様に行います。
+      その場合にはこのパッケージを二度ビルドしなければなりません。
+      </para>
 @z
 
 @x
       <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
 @z
 
 @x
@@ -235,11 +235,10 @@ url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
       following commands as the <systemitem class="username">root</systemitem>
       user:</para>
 @y
-<para>
-API ドキュメントをビルドする場合は
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行しインストールします。
-</para>
+      <para>
+      API ドキュメントをビルドする場合は <systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行しインストールします。
+      </para>
 @z
 
 @x
@@ -253,12 +252,11 @@ API ドキュメントをビルドする場合は
       moves <command>dbus-bash-completion-helper</command> out of <filename
       class="directory">/usr/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=/usr/lib/dbus-1.0/dbus-1</parameter>: 
-このパラメータは
-<command>dbus-bash-completion-helper</command> を
-<filename class="directory">/usr/libexec</filename> ディレクトリから移動します。
-</para>
+      <para>
+      <parameter>--libexecdir=/usr/lib/dbus-1.0/dbus-1</parameter>: 
+      このパラメーターは <command>dbus-bash-completion-helper</command> を <filename
+      class="directory">/usr/libexec</filename> ディレクトリから移動します。
+      </para>
 @z
 
 @x
@@ -298,19 +296,18 @@ API ドキュメントをビルドする場合は
 @x dbus-binding-tool
             <para>is a tool used to interface with the D-Bus API.</para>
 @y
-<para>
-D-Bus API とのインターフェースに対し利用するツール。
-</para>
+            <para>
+            D-Bus API とのインターフェースに対し利用するツール。
+            </para>
 @z
 
 @x libdbus-glib-1.{so,a}
             <para>contains <application>GLib</application> interface functions
             to the D-Bus API.</para>
 @y
-<para>
-D-Bus API に対しての <application>GLib</application>
-インターフェース関数を提供します。
-</para>
+            <para>
+            D-Bus API に対しての <application>GLib</application> インターフェース関数を提供します。
+            </para>
 @z
 
 @x
@@ -428,10 +425,9 @@ D-Bus API に対しての <application>GLib</application>
       <para>Install <application>D-Bus Python Bindings</application> by
       running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>D-Bus Python バインディング</application> をビルドします。
-</para>
+      <para>
+      以下のコマンドを実行して <application>D-Bus Python バインディング</application> をビルドします。
+      </para>
 @z
 
 @x

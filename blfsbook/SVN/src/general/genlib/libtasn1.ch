@@ -23,11 +23,9 @@
     <para><application>libtasn1</application> is a highly portable C library that
      encodes and decodes DER/BER data following an ASN.1 schema.</para>
 @y
-<para>
-<application>libtasn1</application> パッケージは
-ASN.1 スキーマに基づく DER/BER データのエンコードおよびデコードを行う、
-可搬性の高い C ライブラリを提供します。
-</para>
+    <para>
+    <application>libtasn1</application> パッケージは ASN.1 スキーマに基づく DER/BER データのエンコードおよびデコードを行う、可搬性の高い C ライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -106,28 +104,26 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
     <para>Install <application>libtasn1</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libtasn1</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libtasn1</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -136,14 +132,10 @@ ASN.1 スキーマに基づく DER/BER データのエンコードおよびデ�
     using the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<command>configure</command>
-スクリプトの実行時に <option>--enable-gtk-doc</option>
-パラメータを指定しなかった場合は、
-API ドキュメントをインストールするために
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-</para>
+    <para>
+    <command>configure</command> スクリプトの実行時に <option>--enable-gtk-doc</option> パラメーターを指定しなかった場合は、API ドキュメントをインストールするために <systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -189,40 +181,37 @@ API ドキュメントをインストールするために
 @x asn1Coding
           <para>is an ASN.1 DER encoder.</para>
 @y
-<para>
-ASN.1 DER エンコーダー。
-</para>
+          <para>
+          ASN.1 DER エンコーダー。
+          </para>
 @z
 
 @x asn1Decoding
           <para>is an ASN.1 DER decoder.</para>
 @y
-<para>
-ASN.1 DER デコーダー。
-</para>
+          <para>
+          ASN.1 DER デコーダー。
+          </para>
 @z
 
 @x asn1Parser
           <para>is an ASN.1 syntax tree generator for 
           <application>libtasn1</application>.</para>
 @y
-<!--
-日本語訳註：
-意味不明・・・
--->
-<para>
-<application>libtasn1</application>
-ライブラリに対する ASN.1 文法ツリーを生成します。
-</para>
+          <!--
+          日本語訳註：
+          意味不明・・・
+          -->
+          <para>
+          <application>libtasn1</application> ライブラリに対する ASN.1 文法ツリーを生成します。
+          </para>
 @z
 
 @x libtasn1.{so,a}
           <para>is a library for Abstract Syntax Notation One (ASN.1) and
            Distinguish Encoding Rules (DER) manipulation.</para>
 @y
-<para>
-ASN.1 (Abstract Syntax Notation One) と
-DER (Distinguish Encoding Rules) を操作するライブラリです。
-</para>
+          <para>
+          ASN.1 (Abstract Syntax Notation One) と DER (Distinguish Encoding Rules) を操作するライブラリです。
+          </para>
 @z
-

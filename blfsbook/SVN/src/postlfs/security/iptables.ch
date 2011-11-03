@@ -25,13 +25,11 @@
   need to install <application>iptables</application> if you intend on using
   any form of a firewall.</para>
 @y
-<para>
-この節の次ではファイアウォールについて説明します。
-Linux においてファイアウォールを取り扱う重要なツールが
-<application>iptables</application> です。
-どのような形にせよ、ファイアウォールを実現するなら
-<application>iptables</application> をインストールすることが必要です。
-</para>
+  <para>
+  この節の次ではファイアウォールについて説明します。
+  Linux においてファイアウォールを取り扱う重要なツールが <application>iptables</application> です。
+  どのような形にせよ、ファイアウォールを実現するなら <application>iptables</application> をインストールすることが必要です。
+  </para>
 @z
 
 @x
@@ -97,16 +95,13 @@ Linux においてファイアウォールを取り扱う重要なツールが
     kernel configuration parameters are found in Networking Support &rArr;
     Networking Options &rArr; Network Packet Filtering Framework.</para>
 @y
-<para>
-Linux におけるファイアウォールは、カーネルの機能の一部である netfilter
-を通じて実現されます。
-その netfilter へのインターフェースが <application>iptables</application>
-です。
-これを使うには、カーネルのパラメータ
-Networking Support &rArr;
-Networking Options &rArr; Network Packet Filtering Framework
-を設定します。
-</para>
+    <para>
+    Linux におけるファイアウォールは、カーネルの機能の一部である netfilter を通じて実現されます。
+    その netfilter へのインターフェースが <application>iptables</application> です。
+    これを使うには、カーネルのパラメーター Networking Support &rArr;
+    Networking Options &rArr; Network Packet Filtering Framework
+    を設定します。
+    </para>
 @z
 
 @x
@@ -127,20 +122,12 @@ Networking Options &rArr; Network Packet Filtering Framework
       <application>iptables</application> and that the BLFS team has not tested
       using the raw kernel headers.</para>
 @y
-<para>
-以降にて示しているインストール手順では、
-<application>Linux</application>
-ソースコード内の、生のヘッダーファイルを必要とする、特定の拡張ライブラリまではビルドしません。
-そのような拡張ライブラリをビルドする場合
-(不明であればビルドする必要はないでしょう)
-<filename>INSTALL</filename>
-ファイルを参照して、<application>Linux</application>
-ソースコードの場所を指定する <parameter>KERNEL_DIR=</parameter>
-パラメーターの設定例を確認してください。
-カーネルバージョンをアップグレードする際には、<application>iptables</application>
-も再コンパイルする必要があることを覚えておいてください。
-なお BLFS チームでは、生のカーネルヘッダーを用いたテストは行っていません。
-</para>
+      <para>
+      以降にて示しているインストール手順では <application>Linux</application> ソースコード内の、生のヘッダーファイルを必要とする、特定の拡張ライブラリまではビルドしません。
+      そのような拡張ライブラリをビルドする場合 (不明であればビルドする必要はないでしょう) <filename>INSTALL</filename> ファイルを参照して <application>Linux</application> ソースコードの場所を指定する <parameter>KERNEL_DIR=</parameter> パラメーターの設定例を確認してください。
+      カーネルバージョンをアップグレードする際には、<application>iptables</application> も再コンパイルする必要があることを覚えておいてください。
+      なお BLFS チームでは、生のカーネルヘッダーを用いたテストは行っていません。
+      </para>
 @z
 
 @x
@@ -149,38 +136,35 @@ Networking Options &rArr; Network Packet Filtering Framework
       parameter to point at the <application>Linux</application> source
       code.</para>
 @y
-<para>
-x86 ではないアーキテクチャーでは、生のカーネルヘッダーを必要とするものがあります。
-そのような場合は <parameter>KERNEL_DIR=</parameter>
-パラメーターにて <application>Linux</application>
-のソースコードを指し示すようにしてください。
-</para>
+      <para>
+      x86 ではないアーキテクチャーでは、生のカーネルヘッダーを必要とするものがあります。
+      そのような場合は <parameter>KERNEL_DIR=</parameter> パラメーターにて <application>Linux</application> のソースコードを指し示すようにしてください。
+      </para>
 @z
 
 @x
     <para>Install <application>iptables</application> by running the following
     commands:</para>
 @y
-<para>
-<application>iptables</application>
-をインストールするために以下を実行します。
-</para>
+    <para>
+    <application>iptables</application> をインストールするために以下を実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -194,12 +178,11 @@ x86 ではないアーキテクチャーでは、生のカーネルヘッダー�
     <parameter>--sbindir=/sbin</parameter>:  Ensure all the executables go
     in <filename class="directory">/sbin</filename>.</para>
 @y
-<para>
-<parameter>--bindir=/sbin</parameter>, 
-<parameter>--sbindir=/sbin</parameter>:
-実行モジュールを <filename class="directory">/sbin</filename>
-にインストールします。
-</para>
+    <para>
+    <parameter>--bindir=/sbin</parameter>, 
+    <parameter>--sbindir=/sbin</parameter>:
+    実行モジュールを <filename class="directory">/sbin</filename> にインストールします。
+    </para>
 @z
 
 @x
@@ -207,22 +190,21 @@ x86 ではないアーキテクチャーでは、生のカーネルヘッダー�
     <parameter>--libexecdir=/lib</parameter>:  Ensure all the libraries are 
     in the <filename class="directory">/lib</filename> directory tree.</para>
 @y
-<para>
-<parameter>--libdir=/lib</parameter>, 
-<parameter>--libexecdir=/lib</parameter>:
-ライブラリを <filename class="directory">/lib</filename>
-ディレクトリツリーにインストールします。
-</para>
+    <para>
+    <parameter>--libdir=/lib</parameter>, 
+    <parameter>--libexecdir=/lib</parameter>:
+    ライブラリを <filename class="directory">/lib</filename> ディレクトリツリーにインストールします。
+    </para>
 @z
 
 @x
     <para><parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:  
     Ensure all the pkgconfig files are in the standard location.</para>
 @y
-<para>
-<parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:  
-pkgconfig ファイルの配置をすべて標準的なディレクトリとします。
-</para>
+    <para>
+    <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:  
+    pkgconfig ファイルの配置をすべて標準的なディレクトリとします。
+    </para>
 @z
 
 @x
@@ -235,10 +217,9 @@ pkgconfig ファイルの配置をすべて標準的なディレクトリとし�
     <para>Introductory instructions for configuring your firewall are
     presented in the next section: <xref linkend="fw-firewall"/></para>
 @y
-<para>
-ファイアウォールの設定手順は、次の節 <xref linkend="fw-firewall"/>
-にて説明しています。
-</para>
+    <para>
+    ファイアウォールの設定手順は、次の節 <xref linkend="fw-firewall"/> にて説明しています。
+    </para>
 @z
 
 @x
@@ -252,13 +233,10 @@ pkgconfig ファイルの配置をすべて標準的なディレクトリとし�
       <filename>/etc/rc.d/init.d/iptables</filename> init script included
       in the <xref linkend="bootscripts"/> package.</para>
 @y
-<para>
-iptables によるファイアウォールの設定を起動時に有効とするには、
-<xref linkend="bootscripts"/>
-パッケージに含まれる初期起動スクリプト
-<filename>/etc/rc.d/init.d/iptables</filename>
-をインストールします。
-</para>
+      <para>
+      iptables によるファイアウォールの設定を起動時に有効とするには、<xref
+      linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/iptables</filename> をインストールします。
+      </para>
 @z
 
 @x
@@ -304,11 +282,10 @@ iptables によるファイアウォールの設定を起動時に有効とす�
           IP packet filter rules in the Linux kernel.  It is a 
           symbolic link to iptables-multi.</para>
 @y
-<para>
-Linux カーネル内の IP パケットフィルタルール (IP packet filter rules)
-のテーブルを設定、管理、検証します。
-これは iptables-multi へのシンボリックリンクです。
-</para>
+          <para>
+          Linux カーネル内の IP パケットフィルタルール (IP packet filter rules) のテーブルを設定、管理、検証します。
+          これは iptables-multi へのシンボリックリンクです。
+          </para>
 @z
 
 @x iptables-restore
@@ -317,13 +294,13 @@ Linux カーネル内の IP パケットフィルタルール (IP packet filter 
           shell to read from a file. It is a symbolic link to 
           iptables-multi.</para>
 @y
-<para>
-
-is used to restore IP Tables from data
-specified on STDIN. Use I/O redirection provided by your
-shell to read from a file. It is a symbolic link to 
-iptables-multi.
-</para>
+          <para>
+          
+          is used to restore IP Tables from data
+          specified on STDIN. Use I/O redirection provided by your
+          shell to read from a file. It is a symbolic link to 
+          iptables-multi.
+          </para>
 @z
 
 @x iptables-save
@@ -332,13 +309,13 @@ iptables-multi.
           provided by your shell to write to a file. It is a symbolic link to
           iptables-multi.</para>
 @y
-<para>
-
-is used to dump the contents of an IP Table
-in easily parseable format to STDOUT. Use I/O-redirection
-provided by your shell to write to a file. It is a symbolic link to
-iptables-multi.
-</para>
+          <para>
+          
+          is used to dump the contents of an IP Table
+          in easily parseable format to STDOUT. Use I/O-redirection
+          provided by your shell to write to a file. It is a symbolic link to
+          iptables-multi.
+          </para>
 @z
 
 @x iptables-xml
@@ -348,14 +325,14 @@ iptables-multi.
           back to the format of <command>iptables-restore</command>.
           It is a symbolic link to iptables-multi.</para>
 @y
-<para>
-
-is used to convert the output of
-<command>iptables-save</command> to an XML format. Using the
-<filename>iptables.xslt</filename> stylesheet converts the XML
-back to the format of <command>iptables-restore</command>.
-It is a symbolic link to iptables-multi.
-</para>
+          <para>
+          
+          is used to convert the output of
+          <command>iptables-save</command> to an XML format. Using the
+          <filename>iptables.xslt</filename> stylesheet converts the XML
+          back to the format of <command>iptables-restore</command>.
+          It is a symbolic link to iptables-multi.
+          </para>
 @z
 
 @x ip6tables
@@ -363,10 +340,10 @@ It is a symbolic link to iptables-multi.
           commands above.  All of these commands are symbolic 
           links to ip6tables-multi.</para>
 @y
-<para>
-
-are a set of commands for IPV6 that parallel the iptables
-commands above.  All of these commands are symbolic 
-links to ip6tables-multi.
-</para>
+          <para>
+          
+          are a set of commands for IPV6 that parallel the iptables
+          commands above.  All of these commands are symbolic 
+          links to ip6tables-multi.
+          </para>
 @z
