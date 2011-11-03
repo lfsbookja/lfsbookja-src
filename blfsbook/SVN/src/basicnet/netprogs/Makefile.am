@@ -3,7 +3,7 @@ EXTRA_DIST = ncpfs.ch ntp.ch rsync-client.ch wget.ch cvs.ch net-tools.ch \
 	openssh-client.ch samba3-client.ch wireless-tools.ch \
 	inetutils.ch netprogs.ch othernetprogs.ch subversion.ch \
 	ncftp.ch nfs-utils-client.ch portmap.ch tcpwrappers.ch \
-	ggz-client-libs.ch rsync.sh
+	ggz-client-libs.ch rsync.ch
 srcdir = @srcdir@
 srcs = ncpfs.xml ntp.xml rsync-client.xml wget.xml cvs.xml net-tools.xml \
 	openssh-client.xml samba3-client.xml wireless-tools.xml \
