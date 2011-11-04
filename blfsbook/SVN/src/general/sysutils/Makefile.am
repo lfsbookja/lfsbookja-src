@@ -5,7 +5,8 @@ EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	DeviceKit.ch udev.ch Device-mapper.ch \
 	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch xz-utils.ch \
 	gvfs.ch cmake.ch libarchive.ch \
-	raptor.ch redland.ch rasqal.ch strigi.ch
+	raptor.ch redland.ch rasqal.ch strigi.ch \
+	autofs.ch initdtools.ch
 srcdir = @srcdir@
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	lzma-utils.xml mc.xml pciutils.xml pkgconfig.xml sysstat.xml sysutils.xml \
@@ -13,7 +14,8 @@ srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	DeviceKit.xml udev.xml Device-mapper.xml \
 	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml xz-utils.xml \
 	gvfs.xml cmake.xml libarchive.xml \
-	raptor.xml redland.xml rasqal.xml strigi.xml
+	raptor.xml redland.xml rasqal.xml strigi.xml \
+	autofs.xml initdtools.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -57,4 +59,6 @@ raptor.xml: $(BOOKdir)/$@ $(srcdir)/raptor.ch
 redland.xml: $(BOOKdir)/$@ $(srcdir)/redland.ch
 rasqal.xml: $(BOOKdir)/$@ $(srcdir)/rasqal.ch
 strigi.xml: $(BOOKdir)/$@ $(srcdir)/strigi.ch
+autofs.xml: $(BOOKdir)/$@ $(srcdir)/autofs.ch
+initdtools.xml: $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 

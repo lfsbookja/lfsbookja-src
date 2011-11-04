@@ -40,13 +40,6 @@ AC_CONFIG_FILES([Makefile
 		 ctie/Makefile
 		 src/Makefile
 		 src/appendices/Makefile
-		 src/basicnet/Makefile
-		 src/basicnet/connect/Makefile
-		 src/basicnet/mailnews/Makefile
-		 src/basicnet/netlibs/Makefile
-		 src/basicnet/netprogs/Makefile
-		 src/basicnet/netutils/Makefile
-		 src/basicnet/textweb/Makefile
 		 src/book/Makefile
 		 src/general/Makefile
 		 src/general/genlib/Makefile
@@ -75,6 +68,13 @@ AC_CONFIG_FILES([Makefile
 		 src/multimedia/cdwriteutils/Makefile
 		 src/multimedia/libdriv/Makefile
 		 src/multimedia/videoutils/Makefile
+		 src/networking/Makefile
+		 src/networking/connect/Makefile
+		 src/networking/mailnews/Makefile
+		 src/networking/netlibs/Makefile
+		 src/networking/netprogs/Makefile
+		 src/networking/netutils/Makefile
+		 src/networking/textweb/Makefile
 		 src/postlfs/Makefile
 		 src/postlfs/config/Makefile
 		 src/postlfs/editors/Makefile

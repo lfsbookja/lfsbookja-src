@@ -13,11 +13,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 @z
 
-@x
-  <title>Automate Mounting of File Systems</title>
-@y
-  <title>ファイルシステムのマウント自動化</title>
-@z
+% @x
+%   <title>Automate Mounting of File Systems</title>
+% @y
+%   <title>ファイルシステムのマウント自動化</title>
+% @z
 
 @x
     <title>Introduction to Autofs</title>

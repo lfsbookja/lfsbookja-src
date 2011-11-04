@@ -61,6 +61,38 @@
 @z
 
 @x
+      <para>November 3rd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Rearrange package organization.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - パッケージ構成を再配置。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 2nd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to php-5.3.8.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - php-5.3.8 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 1st, 2011</para>
       <itemizedlist>
         <listitem>
@@ -165,14 +197,14 @@
 @z
 
 @x
-      <para>October 26th, 2011</para>
+      <para>October 27th, 2011</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Updated to vsftpd-2.3.4.</para>
         </listitem>
       </itemizedlist>
 @y
-      <para>2011/10/26</para>
+      <para>2011/10/27</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - vsftpd-2.3.4 へのアップデート。</para>
