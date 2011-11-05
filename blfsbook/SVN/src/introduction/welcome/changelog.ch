@@ -61,6 +61,40 @@
 @z
 
 @x
+      <para>November 4th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - More package reorganization.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove gcc3.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pkg-config-0.26.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to glib-2.31.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - さらにパッケージ構成を変更。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc3 を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pkg-config-0.26 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - glib-2.31.0 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 3rd, 2011</para>
       <itemizedlist>
         <listitem>
@@ -113,7 +147,7 @@
           <para>[bdubbs] - mysql-5.5.17 へのアップデート。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Minor changes to Python sections.</para>
+          <para>[bdubbs] - Python について変更。</para>
         </listitem>
         <listitem>
           <para>[wblaszcz] - Fixed wget dependency to Certificate Authority
@@ -168,7 +202,7 @@
       <para>2011/10/30</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Added Python2 for backward compatibility.</para>
+          <para>[bdubbs] - 上位互換性のために Python2 を追加。</para>
         </listitem>
         <listitem>
           <para>[wblaszcz] - Apache-2.2.21 における md5sum を修正。</para>

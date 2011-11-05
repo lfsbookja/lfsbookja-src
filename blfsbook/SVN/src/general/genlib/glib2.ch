@@ -101,42 +101,42 @@ event loop, threads, dynamic loading, and an object system.
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="attr"/>,
-    <xref linkend="gamin"/>, and
+    <para role="optional"><xref linkend="attr"/>
+    <!-- <xref linkend="gamin"/>, -->and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="attr"/>,
-    <xref linkend="gamin"/>,
+    <para role="optional"><xref linkend="attr"/>
+    <!-- <xref linkend="gamin"/>, -->,
     <xref linkend="gtk-doc"/></para>
 @z
 
-@x
-    <para><application>Gamin</application> requires
-    <application>GLib</application> in order to compile; therefore, you must
-    first install <application>GLib</application>, then compile
-    <application>Gamin</application>, and recompile
-    <application>GLib</application> against it.</para>
-@y
-<para>
-<application>Gamin</application> をビルドするには <application>GLib</application>
-が必要です。
-したがってまずは <application>GLib</application>
-をインストールした後に <application>Gamin</application>
-をビルドし、再度 <application>GLib</application>
-をビルドすることが必要です。
-</para>
-@z
+% @x
+%     <para><application>Gamin</application> requires
+%     <application>GLib</application> in order to compile; therefore, you must
+%     first install <application>GLib</application>, then compile
+%     <application>Gamin</application>, and recompile
+%     <application>GLib</application> against it.</para>
+% @y
+% <para>
+% <application>Gamin</application> をビルドするには <application>GLib</application>
+% が必要です。
+% したがってまずは <application>GLib</application>
+% をインストールした後に <application>Gamin</application>
+% をビルドし、再度 <application>GLib</application>
+% をビルドすることが必要です。
+% </para>
+% @z
 
-@x
-    <bridgehead renderas="sect4">Optional Runtime Dependency for the
-    <command>gtester-report</command> program</bridgehead>
-    <para role="optional"><xref linkend="python"/></para>
-@y
-<bridgehead renderas="sect4">&j-Optional;
-<command>gtester-report</command> プログラム実行時の依存パッケージ</bridgehead>
-<para role="optional"><xref linkend="python"/></para>
-@z
+% @x
+%     <bridgehead renderas="sect4">Optional Runtime Dependency for the
+%     <command>gtester-report</command> program</bridgehead>
+%     <para role="optional"><xref linkend="python"/></para>
+% @y
+%     <bridgehead renderas="sect4">&j-Optional;
+%     <command>gtester-report</command> プログラム実行時の依存パッケージ</bridgehead>
+%     <para role="optional"><xref linkend="python"/></para>
+% @z
 
 @x
     <bridgehead renderas="sect4">Additional Runtime Dependencies</bridgehead>

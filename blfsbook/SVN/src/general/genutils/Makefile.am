@@ -4,14 +4,14 @@ EXTRA_DIST = bc.ch compface.ch desktop-file-utils.ch genutils.ch \
 	imagemagick.ch intltool.ch pilot-link.ch pinentry.ch recode.ch \
 	rep-gtk.ch rman.ch rxvt-unicode.ch screen.ch scrollkeeper.ch	\
 	tidy.ch unixodbc.ch xscreensaver.ch rarian.ch \
-	libiodbc.ch sharutils.ch
+	libiodbc.ch sharutils.ch ggz-client-libs.ch
 srcdir = @srcdir@
 srcs = bc.xml compface.xml desktop-file-utils.xml genutils.xml \
 	gperf.xml graphviz.xml gtk-doc.xml hd2u.xml icon-naming-utils.xml	\
 	imagemagick.xml intltool.xml pilot-link.xml pinentry.xml recode.xml \
 	rep-gtk.xml rman.xml rxvt-unicode.xml screen.xml scrollkeeper.xml	\
 	tidy.xml unixodbc.xml xscreensaver.xml rarian.xml \
-	libiodbc.xml sharutils.xml
+	libiodbc.xml sharutils.xml ggz-client-libs.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -46,4 +46,5 @@ xscreensaver.xml: $(BOOKdir)/$@ $(srcdir)/xscreensaver.ch
 rarian.xml: $(BOOKdir)/$@ $(srcdir)/rarian.ch
 libiodbc.xml: $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 sharutils.xml: $(BOOKdir)/$@ $(srcdir)/sharutils.ch
+ggz-client-libs.xml: $(BOOKdir)/$@ $(srcdir)/ggz-client-libs.ch
 

@@ -1,14 +1,14 @@
 BOOKdir = $(top_builddir)/@bookdir@/networking/netprogs
-EXTRA_DIST = ncpfs.ch ntp.ch rsync-client.ch wget.ch cvs.ch net-tools.ch \
+EXTRA_DIST = ncpfs.ch ntp.ch rsync-client.ch wget.ch net-tools.ch \
 	openssh-client.ch samba3-client.ch wireless-tools.ch \
-	inetutils.ch netprogs.ch othernetprogs.ch subversion.ch \
-	ncftp.ch nfs-utils-client.ch portmap.ch tcpwrappers.ch \
-	ggz-client-libs.ch rsync.ch netfs.ch nfs-utils.ch
+	inetutils.ch netprogs.ch othernetprogs.ch \
+	ncftp.ch nfs-utils-client.ch portmap.ch \
+	rsync.ch netfs.ch nfs-utils.ch
 srcdir = @srcdir@
-srcs = ncpfs.xml ntp.xml rsync-client.xml wget.xml cvs.xml net-tools.xml \
+srcs = ncpfs.xml ntp.xml rsync-client.xml wget.xml net-tools.xml \
 	openssh-client.xml samba3-client.xml wireless-tools.xml \
-	inetutils.xml netprogs.xml othernetprogs.xml subversion.xml \
-	ncftp.xml nfs-utils-client.xml portmap.xml tcpwrappers.xml \
+	inetutils.xml netprogs.xml othernetprogs.xml \
+	ncftp.xml nfs-utils-client.xml portmap.xml \
 	ggz-client-libs.xml rsync.xml netfs.xml nfs-utils.xml
 
 SUFFIXES = .ch .xml
@@ -24,7 +24,6 @@ ncpfs.xml: $(BOOKdir)/$@ $(srcdir)/ncpfs.ch
 ntp.xml: $(BOOKdir)/$@ $(srcdir)/ntp.ch
 rsync-client.xml: $(BOOKdir)/$@ $(srcdir)/rsync-client.ch
 wget.xml: $(BOOKdir)/$@ $(srcdir)/wget.ch
-cvs.xml: $(BOOKdir)/$@ $(srcdir)/cvs.ch
 net-tools.xml: $(BOOKdir)/$@ $(srcdir)/net-tools.ch
 openssh-client.xml: $(BOOKdir)/$@ $(srcdir)/openssh-client.ch
 samba3-client.xml: $(BOOKdir)/$@ $(srcdir)/samba3-client.ch
@@ -32,12 +31,9 @@ wireless-tools.xml: $(BOOKdir)/$@ $(srcdir)/wireless-tools.ch
 inetutils.xml: $(BOOKdir)/$@ $(srcdir)/inetutils.ch
 netprogs.xml: $(BOOKdir)/$@ $(srcdir)/netprogs.ch
 othernetprogs.xml: $(BOOKdir)/$@ $(srcdir)/othernetprogs.ch
-subversion.xml: $(BOOKdir)/$@ $(srcdir)/subversion.ch
 ncftp.xml: $(BOOKdir)/$@ $(srcdir)/ncftp.ch
 nfs-utils-client.xml: $(BOOKdir)/$@ $(srcdir)/nfs-utils-client.ch
 portmap.xml: $(BOOKdir)/$@ $(srcdir)/portmap.ch
-tcpwrappers.xml: $(BOOKdir)/$@ $(srcdir)/tcpwrappers.ch
-ggz-client-libs.xml: $(BOOKdir)/$@ $(srcdir)/ggz-client-libs.ch
 rsync.xml: $(BOOKdir)/$@ $(srcdir)/rsync.ch
 netfs.xml: $(BOOKdir)/$@ $(srcdir)/netfs.ch
 nfs-utils.xml: $(BOOKdir)/$@ $(srcdir)/nfs-utils.ch

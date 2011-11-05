@@ -138,20 +138,20 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
 EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
-	lzma-utils.ch mc.ch pciutils.ch pkgconfig.ch sysstat.ch sysutils.ch \
+	lzma-utils.ch mc.ch pciutils.ch sysstat.ch sysutils.ch \
 	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
 	DeviceKit.ch udev.ch Device-mapper.ch \
 	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch xz-utils.ch \
-	gvfs.ch cmake.ch libarchive.ch \
+	gvfs.ch libarchive.ch \
 	raptor.ch redland.ch rasqal.ch strigi.ch \
 	autofs.ch initdtools.ch
 
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
-	lzma-utils.xml mc.xml pciutils.xml pkgconfig.xml sysstat.xml sysutils.xml \
+	lzma-utils.xml mc.xml pciutils.xml sysstat.xml sysutils.xml \
 	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
 	DeviceKit.xml udev.xml Device-mapper.xml \
 	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml xz-utils.xml \
-	gvfs.xml cmake.xml libarchive.xml \
+	gvfs.xml libarchive.xml \
 	raptor.xml redland.xml rasqal.xml strigi.xml \
 	autofs.xml initdtools.xml
 
@@ -352,7 +352,6 @@ hdparm.xml: $(BOOKdir)/$@ $(srcdir)/hdparm.ch
 lzma-utils.xml: $(BOOKdir)/$@ $(srcdir)/lzma-utils.ch
 mc.xml: $(BOOKdir)/$@ $(srcdir)/mc.ch
 pciutils.xml: $(BOOKdir)/$@ $(srcdir)/pciutils.ch
-pkgconfig.xml: $(BOOKdir)/$@ $(srcdir)/pkgconfig.ch
 sysstat.xml: $(BOOKdir)/$@ $(srcdir)/sysstat.ch
 sysutils.xml: $(BOOKdir)/$@ $(srcdir)/sysutils.ch
 unrar.xml: $(BOOKdir)/$@ $(srcdir)/unrar.ch
@@ -370,7 +369,6 @@ udisks.xml: $(BOOKdir)/$@ $(srcdir)/udisks.ch
 upower.xml: $(BOOKdir)/$@ $(srcdir)/upower.ch
 xz-utils.xml: $(BOOKdir)/$@ $(srcdir)/xz-utils.ch
 gvfs.xml: $(BOOKdir)/$@ $(srcdir)/gvfs.ch
-cmake.xml: $(BOOKdir)/$@ $(srcdir)/cmake.ch
 libarchive.xml: $(BOOKdir)/$@ $(srcdir)/libarchive.ch
 raptor.xml: $(BOOKdir)/$@ $(srcdir)/raptor.ch
 redland.xml: $(BOOKdir)/$@ $(srcdir)/redland.ch
