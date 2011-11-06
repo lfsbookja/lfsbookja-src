@@ -36,28 +36,27 @@
 @x
   <bridgehead renderas="sect2">Part I - Introduction</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 I 部 - はじめに
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 I 部 - はじめに
+  </bridgehead>
 @z
 
 @x
   <para>This part contains information which is essential to
   the rest of the book.</para>
 @y
-<para>
-この部では本書全般における重要な情報について示します。
-</para>
+  <para>
+  この部では本書全般における重要な情報について示します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part II - Post LFS Configuration and Extra
   Software</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 II 部 -
-LFS 設定以降と追加ソフトウェア
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 II 部 - LFS 設定以降と追加ソフトウェア
+  </bridgehead>
 @z
 
 @x
@@ -65,19 +64,18 @@ LFS 設定以降と追加ソフトウェア
   discuss a range of editors, file systems, and shells which aren't covered in
   the main LFS book.</para>
 @y
-<para>
-基本的な設定に関することやセキュリティに関する情報を示します。
-また LFS ブックには示していない内容として、エディタ、ファイルシステム、シェルに関する情報についても説明します。
-</para>
+  <para>
+  基本的な設定に関することやセキュリティに関する情報を示します。
+  また LFS ブックには示していない内容として、エディター、ファイルシステム、シェルに関する情報についても説明します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part III - General Libraries and Utilities</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 III 部 -
-汎用的なライブラリとユーティリティ
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 III 部 - 汎用的なライブラリとユーティリティ
+  </bridgehead>
 @z
 
 @x
@@ -86,20 +84,19 @@ LFS 設定以降と追加ソフトウェア
   (including recompiling <application>GCC</application> to support its full range
   of languages) concludes this part.</para>
 @y
-<para>
-この部では本書全般に、随所にて必要となるライブラリやシステムユーティリティについて説明します。
-プログラミング言語についてもここで説明します。
-特に <application>GCC</application> に関しては、これを再ビルドすることによって、対応可能な全プログラミング言語がサポートされることについても説明します。
-</para>
+  <para>
+  この部では本書全般に、随所にて必要となるライブラリやシステムユーティリティについて説明します。
+  プログラミング言語についてもここで説明します。
+  特に <application>GCC</application> に関しては、これを再ビルドすることによって、対応可能な全プログラミング言語がサポートされることについても説明します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part IV - Basic Networking</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 IV 部 -
-基本的なネットワークソフトウェア
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 IV 部 - 基本的なネットワークソフトウェア
+  </bridgehead>
 @z
 
 @x
@@ -107,38 +104,36 @@ LFS 設定以降と追加ソフトウェア
   simple static IP setup given in the main LFS book. Networking libraries
   and command-line networking tools are also covered here.</para>
 @y
-<para>
-LFS ブックでは、単純に固定IPアドレスを用いていましたが、そうしない場合にネットワークに接続する方法をここで説明します。
-ネットワークライブラリやコマンドライン実行によるネットワークツールについても説明します。
-</para>
+  <para>
+  LFS ブックでは、単純に固定IPアドレスを用いていましたが、そうしない場合にネットワークに接続する方法をここで説明します。
+  ネットワークライブラリやコマンドライン実行によるネットワークツールについても説明します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part V - Servers</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 V 部 -
-サーバー
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 V 部 - サーバー
+  </bridgehead>
 @z
 
 @x
   <para>Here we deal with setting up mail and other servers (such as
   <application>SSH</application>, <application>Apache</application>, etc.).</para>
 @y
-<para>
-メールサーバーやそれ以外のサーバーについて説明します。
-(例えば <application>SSH</application>、<application>Apache</application> などです。)
-</para>
+  <para>
+  メールサーバーやそれ以外のサーバーについて説明します。
+  (例えば <application>SSH</application>、<application>Apache</application> などです。)
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part VI - X + Window Managers</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 VI 部 -
-X + ウィンドウマネジャー
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 VI 部 - X + ウィンドウマネージャー
+  </bridgehead>
 @z
 
 @x
@@ -146,37 +141,35 @@ X + ウィンドウマネジャー
   System</application> installation along with some generic
   <application>X</application> libraries and Window managers.</para>
 @y
-<para>
-<application>X ウィンドウシステム</application>
-の基本的なビルド手順について説明します。
-また <application>X</application> に関する汎用的なライブラリやウィンドウマネジャーについて説明します。
-</para>
+  <para>
+  <application>X ウィンドウシステム</application> の基本的なビルド手順について説明します。
+  また <application>X</application> に関する汎用的なライブラリやウィンドウマネジャーについて説明します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part VII - KDE</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 VII 部 - KDE
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 VII 部 - KDE
+  </bridgehead>
 @z
 
 @x
   <para>For those who want to use the <application>K Desktop
   Environment</application> or some parts of it, this part covers it.</para>
 @y
-<para>
-<application>K デスクトップ環境</application>
-またはその一部を利用したい方に向けて、その説明を行います。
-</para>
+  <para>
+  <application>K デスクトップ環境</application> またはその一部を利用したい方に向けて、その説明を行います。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part VIII - GNOME</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 VIII 部 - GNOME
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 VIII 部 - GNOME
+  </bridgehead>
 @z
 
 @x
@@ -184,20 +177,17 @@ X + ウィンドウマネジャー
   <application>KDE</application> in the Desktop Environment arena and
   we cover <application>GNOME</application>-&gnome-version; here.</para>
 @y
-<para>
-<application>GNOME</application> は <application>KDE</application>
-とは別の選択肢となるデスクトップ環境であり
-<application>GNOME</application>-&gnome-version; を説明します。
-</para>
+  <para>
+  <application>GNOME</application> は <application>KDE</application> とは別の選択肢となるデスクトップ環境であり <application>GNOME</application>-&gnome-version; を説明します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part IX - X Software</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 IX 部 -
-X ソフトウェア
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 IX 部 - X ソフトウェア
+  </bridgehead>
 @z
 
 @x
@@ -205,36 +195,36 @@ X ソフトウェア
   They, along with some generic <application>X</application> software can be
   found in this part of the book.</para>
 @y
-<para>
-システムを扱うユーザーにとって、オフィスプログラムやグラフィカルなウェブブラウザがたいていは必要になります。
-<application>X</application> ウィンドウシステムの汎用的なソフトウェアも含めて、この章にて説明します。
-</para>
+  <para>
+  システムを扱うユーザーにとって、オフィスプログラムやグラフィカルなウェブブラウザーがたいていは必要になります。
+  <application>X</application> ウィンドウシステムの汎用的なソフトウェアも含めて、この章にて説明します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part X - Multimedia</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 X 部 - マルチメディア
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 X 部 - マルチメディア
+  </bridgehead>
 @z
 
 @x
   <para>Here we cover setting multimedia libraries and drivers along with some
   audio, video and CD-writing programs.</para>
 @y
-<para>
-この部では、オーディオ、ビデオ、CD書き込みツールなどにて必要となるマルチメディアライブラリやドライバの扱いについて説明します。
-</para>
+  <para>
+  この部では、オーディオ、ビデオ、CD書き込みツールなどにて必要となるマルチメディアライブラリやドライバーの扱いについて説明します。
+  </para>
 @z
 
 @x
   <bridgehead renderas="sect2">Part XI - Printing, Scanning and
   Typesetting (PST)</bridgehead>
 @y
-<bridgehead renderas="sect2">
-第 XI 部 - 印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
-</bridgehead>
+  <bridgehead renderas="sect2">
+  第 XI 部 - 印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
+  </bridgehead>
 @z
 
 @x
@@ -243,15 +233,9 @@ X ソフトウェア
   <application>DocBook</application> to installing
   <application>teTeX</application>.</para>
 @y
-<para>
-印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
-の部では、文書を取り扱うアプリケーションとして
-<application>Ghostscript</application>、
-<application>CUPS</application>、
-<application>DocBook</application>、
-<application>teTeX</application>
-について説明します。
-</para>
+  <para>
+  印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST) の部では、文書を取り扱うアプリケーションとして <application>Ghostscript</application>、<application>CUPS</application>、<application>DocBook</application>、<application>teTeX</application> について説明します。
+  </para>
 @z
 
 @x
@@ -264,9 +248,8 @@ X ソフトウェア
   <para>The Appendices cover information which doesn't belong in the main
   book; they are mainly there as a reference.</para>
 @y
-<para>
-付録の部では、本書の各部には属していない内容を示します。
-主に参考情報を示すものです。
-</para>
+  <para>
+  付録の部では、本書の各部には属していない内容を示します。
+  主に参考情報を示すものです。
+  </para>
 @z
-

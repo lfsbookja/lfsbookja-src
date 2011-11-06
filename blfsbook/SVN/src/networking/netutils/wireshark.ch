@@ -111,11 +111,11 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GLib"/> or <xref linkend="glib2"/>
+    <para role="required"><!--<xref linkend="GLib"/> or --><xref linkend="glib2"/>
     (to build the TTY-mode front-end only)</para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GLib"/> or <xref linkend="glib2"/>
+    <para role="required"><!--<xref linkend="GLib"/> or --><xref linkend="glib2"/>
     (to build the TTY-mode front-end only)</para>
 @z
 
@@ -142,7 +142,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="GTK"/> or <xref linkend="gtk2"/> (to build the GUI front-end),
+    <xref linkend="gtk2"/> (to build the GUI front-end),
     <xref linkend="openssl"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
     <xref linkend="python"/>,
@@ -154,7 +154,7 @@
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="GTK"/> or <xref linkend="gtk2"/> (to build the GUI front-end),
+    <xref linkend="gtk2"/> (to build the GUI front-end),
     <xref linkend="openssl"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
     <xref linkend="python"/>,

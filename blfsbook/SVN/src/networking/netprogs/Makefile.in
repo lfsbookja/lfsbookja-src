@@ -147,7 +147,7 @@ srcs = ncpfs.xml ntp.xml rsync-client.xml wget.xml net-tools.xml \
 	openssh-client.xml samba3-client.xml wireless-tools.xml \
 	inetutils.xml netprogs.xml othernetprogs.xml \
 	ncftp.xml nfs-utils-client.xml portmap.xml \
-	ggz-client-libs.xml rsync.xml netfs.xml nfs-utils.xml
+	rsync.xml netfs.xml nfs-utils.xml
 
 SUFFIXES = .ch .xml
 all: all-am

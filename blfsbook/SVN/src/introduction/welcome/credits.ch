@@ -57,10 +57,10 @@
         <para><emphasis>Editor:</emphasis> Randy McMurchy <ulink
         url="mailto:&maintainer-address;">&lt;&maintainer-address;&gt;</ulink></para>
 @y
-<para>
-<emphasis>編集者:</emphasis> Randy McMurchy <ulink
-url="mailto:&maintainer-address;">&lt;&maintainer-address;&gt;</ulink>
-</para>
+        <para>
+        <emphasis>編集者:</emphasis> Randy McMurchy <ulink
+        url="mailto:&maintainer-address;">&lt;&maintainer-address;&gt;</ulink>
+        </para>
 @z
 
 @x
@@ -69,12 +69,12 @@ url="mailto:&maintainer-address;">&lt;&maintainer-address;&gt;</ulink>
         David Jensen, DJ Lucas, Ken Moffet, Alexander Patrakov, Chris Staub,
         Tushar Teredesai, Thomas Trepl, and Christian Wurst</para>
 @y
-<para>
-<emphasis>共同編集者:</emphasis> Wayne Blaszczyk, Guy Dalziel, Robert Daniels,
-Richard Downing, Bruce Dubbs, Manuel Canales Esparcia, Ag Hatzimanikas,
-David Jensen, DJ Lucas, Ken Moffet, Alexander Patrakov, Chris Staub,
-Tushar Teredesai, Thomas Trepl, Christian Wurst
-</para>
+        <para>
+        <emphasis>共同編集者:</emphasis> Wayne Blaszczyk, Guy Dalziel, Robert Daniels,
+        Richard Downing, Bruce Dubbs, Manuel Canales Esparcia, Ag Hatzimanikas,
+        David Jensen, DJ Lucas, Ken Moffet, Alexander Patrakov, Chris Staub,
+        Tushar Teredesai, Thomas Trepl, Christian Wurst
+        </para>
 @z
 
 @x
@@ -88,46 +88,45 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis> Gerard Beekmans</emphasis>, modified by
         <emphasis>Mark Hymers</emphasis> for BLFS.</para>
 @y
-<para>
-第1章:
-<emphasis> Gerard Beekmans</emphasis> による LFS の「はじめに」を参考に
-<emphasis>Mark Hymers</emphasis> が BLFS 用に修正。
-</para>
+        <para>
+        第1章: <emphasis> Gerard Beekmans</emphasis> による LFS の「はじめに」を参考に <emphasis>Mark Hymers</emphasis> が BLFS 用に修正。
+        </para>
 @z
 
 @x
         <para>Chapter 02: The /usr versus /usr/local debate:
         <emphasis>Andrew McMurry</emphasis>.</para>
 @y
-<para>
-第2章:
-/usr か /usr/local かの議論:
-<emphasis>Andrew McMurry</emphasis>
-</para>
+        <para>
+        第2章: /usr か /usr/local かの議論: <emphasis>Andrew McMurry</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 02: Going beyond BLFS:
         <emphasis>Tushar Teredesai</emphasis>.</para>
 @y
-        <para>Chapter 02: Going beyond BLFS:
-        <emphasis>Tushar Teredesai</emphasis>.</para>
+        <para>
+        第2章: BLFS のその先: <emphasis>Tushar Teredesai</emphasis>.
+        </para>
 @z
 
 @x
         <para>Chapter 02: Package Management:
         <emphasis>Tushar Teredesai</emphasis>.</para>
 @y
-        <para>Chapter 02: Package Management:
-        <emphasis>Tushar Teredesai</emphasis>.</para>
+        <para>
+        第2章: パッケージ管理: <emphasis>Tushar Teredesai</emphasis>.
+        </para>
 @z
 
 @x
         <para>Chapter 02: Automated Building Procedures:
         <emphasis>Randy McMurchy</emphasis>.</para>
 @y
-        <para>Chapter 02: Automated Building Procedures:
-        <emphasis>Randy McMurchy</emphasis>.</para>
+        <para>
+        第2章: ビルド作業の自動化: <emphasis>Randy McMurchy</emphasis>.
+        </para>
 @z
 
 @x
@@ -135,49 +134,54 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis>Alexander Patrakov</emphasis> and
         <emphasis>Randy McMurchy</emphasis>.</para>
 @y
-        <para>Chapter 02: Locale Related Issues:
-        <emphasis>Alexander Patrakov</emphasis> and
-        <emphasis>Randy McMurchy</emphasis>.</para>
+        <para>
+        第2章: ロケールに関すること: <emphasis>Alexander Patrakov</emphasis> と <emphasis>Randy McMurchy</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 03: /etc/inputrc:
         <emphasis>Chris Lynn</emphasis>.</para>
 @y
-        <para>Chapter 03: /etc/inputrc:
-        <emphasis>Chris Lynn</emphasis>.</para>
+        <para>
+        第3章: /etc/inputrc: <emphasis>Chris Lynn</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 03: Customizing your logon &amp; vimrc:
         <emphasis>Mark Hymers</emphasis>.</para>
 @y
-        <para>Chapter 03: Customizing your logon &amp; vimrc:
-        <emphasis>Mark Hymers</emphasis>.</para>
+        <para>
+        第3章: ログオンのカスタマイズ &amp; vimrc: <emphasis>Mark Hymers</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 03: /etc/shells:
         <emphasis>Igor Zivkovic</emphasis>.</para>
 @y
-        <para>Chapter 03: /etc/shells:
-        <emphasis>Igor Zivkovic</emphasis>.</para>
+        <para>
+        第3章: /etc/shells: <emphasis>Igor Zivkovic</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 03: Random number script
         <emphasis>Larry Lawrence</emphasis>.</para>
 @y
-        <para>Chapter 03: Random number script
-        <emphasis>Larry Lawrence</emphasis>.</para>
+        <para>
+        第3章: 乱数発生スクリプト <emphasis>Larry Lawrence</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 03: Creating a Custom Boot Device
         <emphasis>Bruce Dubbs</emphasis>.</para>
 @y
-        <para>Chapter 03: Creating a Custom Boot Device
-        <emphasis>Bruce Dubbs</emphasis>.</para>
+        <para>
+        第3章: 独自のブートデバイスの生成 <emphasis>Bruce Dubbs</emphasis>
+        </para>
 @z
 
 @x
@@ -185,17 +189,18 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis>James Robertson</emphasis> revised by
         <emphasis>Bruce Dubbs</emphasis>.</para>
 @y
-        <para>Chapter 03: The Bash Shell Startup Files
-        <emphasis>James Robertson</emphasis> revised by
-        <emphasis>Bruce Dubbs</emphasis>.</para>
+        <para>
+        第3章: Bash シェルの初期起動ファイル <emphasis>James Robertson</emphasis> と <emphasis>Bruce Dubbs</emphasis> による改訂。
+        </para>
 @z
 
 @x
         <para>Chapter 03: Compressed docs
         <emphasis>Olivier Peres</emphasis>.</para>
 @y
-        <para>Chapter 03: Compressed docs
-        <emphasis>Olivier Peres</emphasis>.</para>
+        <para>
+        第3章: ドキュメントの圧縮 <emphasis>Olivier Peres</emphasis>
+        </para>
 @z
 
 @x
@@ -204,10 +209,10 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis>Jeff Bauman</emphasis>. Revised by
         <emphasis>Bruce Dubbs</emphasis>.</para>
 @y
-        <para>Chapter 04: Firewalling:
-        <emphasis>Henning Rohde</emphasis> with thanks to
-        <emphasis>Jeff Bauman</emphasis>. Revised by
-        <emphasis>Bruce Dubbs</emphasis>.</para>
+        <para>
+        第4章: ファイアウォール: <emphasis>Henning Rohde</emphasis>、および <emphasis>Jeff Bauman</emphasis> の協力。
+        <emphasis>Bruce Dubbs</emphasis> による改訂。
+        </para>
 @z
 
 @x
@@ -216,48 +221,51 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis>Seth Klein</emphasis> and
         <emphasis>Jesse Tie-Ten-Quee</emphasis>.</para>
 @y
-        <para>Chapter 11: Which
-        <emphasis>Mark Hymers</emphasis> with many thanks to
-        <emphasis>Seth Klein</emphasis> and
-        <emphasis>Jesse Tie-Ten-Quee</emphasis>.</para>
+        <para>
+        第11章: Which <emphasis>Mark Hymers</emphasis> と多大な協力を行って頂いた <emphasis>Seth Klein</emphasis> と <emphasis>Jesse Tie-Ten-Quee</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 23: X Window System Environment:
         <emphasis>Bruce Dubbs</emphasis>.</para>
 @y
-        <para>Chapter 23: X Window System Environment:
-        <emphasis>Bruce Dubbs</emphasis>.</para>
+        <para>
+        第23章: X ウィンドウシステム環境: <emphasis>Bruce Dubbs</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapter 25: Intro to Window Managers:
         <emphasis>Bruce Dubbs</emphasis>.</para>
 @y
-        <para>Chapter 25: Intro to Window Managers:
-        <emphasis>Bruce Dubbs</emphasis>.</para>
+        <para>
+        第25章: ウィンドウマネージャーの概要: <emphasis>Bruce Dubbs</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapters 26, 27, and 28: KDE:
         <emphasis>Bruce Dubbs</emphasis>.</para>
 @y
-        <para>Chapters 26, 27, and 28: KDE:
-        <emphasis>Bruce Dubbs</emphasis>.</para>
+        <para>
+        第26章、第27章、第28章: KDE: <emphasis>Bruce Dubbs</emphasis>
+        </para>
 @z
 
 @x
         <para>Chapters 29 and 30: GNOME:
         <emphasis>Larry Lawrence</emphasis>.</para>
 @y
-        <para>Chapters 29 and 30: GNOME:
-        <emphasis>Larry Lawrence</emphasis>.</para>
+        <para>
+        第29章、第30章: GNOME: <emphasis>Larry Lawrence</emphasis>
+        </para>
 @z
 
 @x
     <title>Installation Instruction Authors</title>
 @y
-    <title>Installation Instruction Authors</title>
+    <title>インストール手順の作者</title>
 @z
 
 @x
@@ -272,7 +280,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <para>ProFTPD and rsync:
         <emphasis>Daniel Baumann</emphasis></para>
 @y
-        <para>ProFTPD and rsync:
+        <para>ProFTPD, rsync:
         <emphasis>Daniel Baumann</emphasis></para>
 @z
 
@@ -280,7 +288,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <para>joe, nano, nmap, slang, w3m and whois:
         <emphasis>Timothy Bauscher</emphasis></para>
 @y
-        <para>joe, nano, nmap, slang, w3m and whois:
+        <para>joe, nano, nmap, slang, w3m, whois:
         <emphasis>Timothy Bauscher</emphasis></para>
 @z
 
@@ -304,7 +312,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <para>CDParanoia, mpg123, SDL and XMMS:
         <emphasis>Jeroen Coumans</emphasis></para>
 @y
-        <para>CDParanoia, mpg123, SDL and XMMS:
+        <para>CDParanoia, mpg123, SDL, XMMS:
         <emphasis>Jeroen Coumans</emphasis></para>
 @z
 
@@ -328,7 +336,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <para>UDFtools, Perl modules (initial version) and Bluefish:
         <emphasis>Richard Downing</emphasis></para>
 @y
-        <para>UDFtools, Perl modules (initial version) and Bluefish:
+        <para>UDFtools, Perl モジュール (初期バージョン), Bluefish:
         <emphasis>Richard Downing</emphasis></para>
 @z
 
@@ -352,7 +360,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <para>Dash and rxvt-unicode:
         <emphasis>Ag Hatzimanikas</emphasis></para>
 @y
-        <para>Dash and rxvt-unicode:
+        <para>Dash, rxvt-unicode:
         <emphasis>Ag Hatzimanikas</emphasis></para>
 @z
 
@@ -364,7 +372,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
 @y
         <para>alsa, cvs, dhcpcd, gpm, hdparm, libjpeg, libmng, libpng,
         libtiff, <!-- libungif, -->giflib, links, lynx, openssl, tcsh,
-        which and zsh:
+        which, zsh:
         <emphasis>Mark Hymers</emphasis></para>
 @z
 
@@ -374,7 +382,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis>James Iwanek</emphasis></para>
 @y
         <para>ALSA Firmware, ALSA OSS, inetutils, GLib, GTK+,
-        libxml and vim:
+        libxml, vim:
         <emphasis>James Iwanek</emphasis></para>
 @z
 
@@ -383,16 +391,15 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis>Jeremy Jones</emphasis> and
         <emphasis>Mark Hymers</emphasis></para>
 @y
-        <para>db and lcms:
-        <emphasis>Jeremy Jones</emphasis> and
-        <emphasis>Mark Hymers</emphasis></para>
+        <para>db, lcms:
+        <emphasis>Jeremy Jones</emphasis> と <emphasis>Mark Hymers</emphasis></para>
 @z
 
 @x
         <para>aalib, Alsa, ffmpeg, MPlayer, transcode, xvid and xsane:
         <emphasis>Alex Kloss</emphasis></para>
 @y
-        <para>aalib, Alsa, ffmpeg, MPlayer, transcode, xvid and xsane:
+        <para>aalib, Alsa, ffmpeg, MPlayer, transcode, xvid, xsane:
         <emphasis>Alex Kloss</emphasis></para>
 @z
 
@@ -438,7 +445,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         OpenSP, OpenSSH, <!--ORBit,--> ORBit2, pan, Pango, pcre, <!-- pkgconfig, --> postfix,
         procmail, Python, QT, rep-gtk, ruby, sawfish, scrollkeeper, sgml-common,
         sgml-dtd, shadow, startup-notification, unzip, vorbis-tools, vte, wget, XFce,
-        xine, xml-dtd, yelp and zip:
+        xine, xml-dtd, yelp, zip:
         <emphasis>Larry Lawrence</emphasis></para>
 @z
 
@@ -450,7 +457,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
 @y
         <para>Archive::Zip, cracklib, IcedTea6, IcedTea-Web, JDK6, ksh, libdrm,
         libpcap, Mesa, <!-- ncpfs, --> <!-- RP-PPPoE, --> netfs, OpenOffice-2,
-        PPP (update), Samba-3, Subversion, Xorg-7 and xterm:
+        PPP (update), Samba-3, Subversion, Xorg-7, xterm:
         <emphasis>DJ Lucas</emphasis></para>
 @z
 
@@ -480,7 +487,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         system-tools-backends, Totem, unixODBC, Wireshark and usbutils:
         <emphasis>Randy McMurchy</emphasis></para>
 @y
-        <para>ALSA Tools, Apache Ant, cairo, Cyrus-SASL, D-BUS,
+        <para>ALSA ツール, Apache Ant, cairo, Cyrus-SASL, D-BUS,
         D-Bus Bindings, DejaGnu,
         desktop-file-utils, DocBook DSSSL Stylesheets, DocBook-utils,
         dvd+rw-tools, Evince, Evolution Data Server, Exim (many
@@ -495,14 +502,14 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         libexif, libgail-gnome, libgcrypt, libgnomecups, libgnomekbd,
         libgpg-error,
         Libidn, Libksba, libmpeg2, libmusicbrainz, libquicktime,
-        mcs, MIT Kerberos V5 (many updates and enhancements), MPlayer
+        mcs, MIT Kerberos V5 (多くのアップデートと拡張), MPlayer
         (extensive overhaul), NSS, Orca, Other Programming Tools, PDL,
         Perl Modules, pilot-link,
-        PIN-Entry, pixman, Poppler, Pth, PyXML, Samba 3 (many additions),
-        SANE (original instructions by Alex Kloss),
-        Shadow (rewrite), SLIB, Sound Juicer,
-        Stunnel, Subversion Client (many additions), Sysstat,
-        system-tools-backends, Totem, unixODBC, Wireshark and usbutils:
+        PIN-Entry, pixman, Poppler, Pth, PyXML, Samba 3 (多くの追加),
+        SANE (初期版は Alex Kloss による),
+        Shadow (書き直し), SLIB, Sound Juicer,
+        Stunnel, Subversion Client (多くの追加), Sysstat,
+        system-tools-backends, Totem, unixODBC, Wireshark, usbutils:
         <emphasis>Randy McMurchy</emphasis></para>
 @z
 
@@ -520,7 +527,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         GnuCash, gtkhtml, <!--guppi,--> guile, leafnode, lesstif,
         <!--libcapplet,--> libesmtp, <!--libghttp, libglade,--> pine, portmap,
         PostgreSQL, qpopper, reiserfs, <!--Samba,--> sendmail,
-        slrn, <!--soup,--> teTeX, tcp-wrappers, and xinetd:
+        slrn, <!--soup,--> teTeX, tcp-wrappers, xinetd:
         <emphasis>Billy O'Connor</emphasis></para>
 @z
 
@@ -529,8 +536,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         and TIN:
         <emphasis>Alexander E. Patrakov</emphasis></para>
 @y
-        <para>Gutenprint (originally named Gimp-Print), libusb, FAAC, FAAD2
-        and TIN:
+        <para>Gutenprint (当初は Gimp-Print), libusb, FAAC, FAAD2, TIN:
         <emphasis>Alexander E. Patrakov</emphasis></para>
 @z
 
@@ -572,7 +578,7 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         <emphasis>Tushar Teredesai</emphasis></para>
 @y
         <para>fontconfig, gcc, <!--jdk,--> seamonkey, nas, openoffice, ispell,
-        mailx (formerly named Nail), ImageMagick, hd2u, tcl, tk and bind-utils:
+        mailx (以前は Nail), ImageMagick, hd2u, tcl, tk, bind-utils:
         <emphasis>Tushar Teredesai</emphasis></para>
 @z
 
@@ -608,14 +614,14 @@ Tushar Teredesai, Thomas Trepl, Christian Wurst
         Speex, XScreenSaver, Zenity, compface, freeglut, gcalctool, gucharmap,
         id3lib, kde-i18n, kdeaccessibility, kdebindings, kdesdk, kdevelop,
         kdewebdev, libFAME, liba52, libdv, libdvdcss, libdvdread, libmad,
-        libmikmod and libmpeg3:
+        libmikmod, libmpeg3:
         <emphasis>Igor Zivkovic</emphasis></para>
 @z
 
 @x
     <title>General Acknowledgments</title>
 @y
-    <title>General Acknowledgments</title>
+    <title>全般的な作業</title>
 @z
 
 @x

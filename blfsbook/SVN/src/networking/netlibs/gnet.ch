@@ -24,12 +24,10 @@
     library. This is useful for supporting TCP sockets, UDP and IP multicast,
     asynchronous DNS lookup, and more.</para>
 @y
-<para>
-<application>GNet</application>
-パッケージは、単純なネットワークライブラリです。
-TCP ソケット、UDP や IP のマルチキャスト、非同期 DNS ルックアップ
-(asynchronous DNS lookup) などをサポートします。
-</para>
+    <para>
+    <application>GNet</application> パッケージは、単純なネットワークライブラリです。
+    TCP ソケット、UDP や IP のマルチキャスト、非同期 DNS ルックアップ  (asynchronous DNS lookup) などをサポートします。
+    </para>
 @z
 
 @x
@@ -82,10 +80,10 @@ TCP ソケット、UDP や IP のマルチキャスト、非同期 DNS ルック
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GLib"/> or <xref linkend="glib2"/></para>
+    <para role="required"><!--<xref linkend="GLib"/> or--><xref linkend="glib2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="GLib"/> または <xref linkend="glib2"/></para>
+    <para role="required"><!--<xref linkend="GLib"/> or--><xref linkend="glib2"/></para>
 @z
 
 @x
@@ -106,27 +104,25 @@ TCP ソケット、UDP や IP のマルチキャスト、非同期 DNS ルック
     <para>Install <application>GNet</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>GNet</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GNet</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -168,8 +164,8 @@ TCP ソケット、UDP や IP のマルチキャスト、非同期 DNS ルック
           object-oriented and built upon <application>GLib</application>. It is
           intended to be easy to use and port.</para>
 @y
-<para>
-C 言語によりプログラミングされた、単純なネットワークライブラリです。
-オブジェクト指向により <application>GLib</application> を用いて構築されており、簡単に利用できることを目指して提供されています。
-</para>
+          <para>
+          C 言語によりプログラミングされた、単純なネットワークライブラリです。
+          オブジェクト指向により <application>GLib</application> を用いて構築されており、簡単に利用できることを目指して提供されています。
+          </para>
 @z

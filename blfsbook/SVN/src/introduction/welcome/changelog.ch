@@ -64,6 +64,28 @@
       <para>November 4th, 2011</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Remove gtk+1, glib1, xmms, gsview.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Return glib to latest stable: glib-2.30.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gtk+1, glib1, xmms, gsview を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 最新安定板 glib-2.30.1 へ戻す。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 4th, 2011</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - More package reorganization.</para>
         </listitem>
         <listitem>

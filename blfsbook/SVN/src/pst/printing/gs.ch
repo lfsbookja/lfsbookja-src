@@ -32,11 +32,9 @@
     for PostScript data with the ability to render PostScript to different
     targets.</para>
 @y
-<para>
-<application>Ghostscript</application>
-は、PostScrit データに対する万能なプロセッサーであり、
-PostScript をさまざまに異なる書式に変換する機能を提供します。
-</para>
+    <para>
+    <application>Ghostscript</application> は、PostScrit データに対する万能なプロセッサーであり、PostScript をさまざまに異なる書式に変換する機能を提供します。
+    </para>
 @z
 
 @x
@@ -227,9 +225,9 @@ PostScript をさまざまに異なる書式に変換する機能を提供しま
     <para>Install <application>GPL Ghostscript</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GPL Ghostscript</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GPL Ghostscript</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -237,11 +235,11 @@ PostScript をさまざまに異なる書式に変換する機能を提供しま
       user-friendly. In order to use system copies of various graphics
       libraries, you must do it using unconventional methods.</para>
 @y
-<para>
-<application>Ghostscript</application> build system is not
-user-friendly. In order to use system copies of various graphics
-libraries, you must do it using unconventional methods.
-</para>
+    <para>
+    <application>Ghostscript</application> build system is not
+    user-friendly. In order to use system copies of various graphics
+    libraries, you must do it using unconventional methods.
+    </para>
 @z
 
 @x
@@ -297,9 +295,9 @@ libraries, you must do it using unconventional methods.
 @x
     <para>Run the configure command:</para>
 @y
-<para>
-configure コマンドを実行します。
-</para>
+    <para>
+    configure コマンドを実行します。
+    </para>
 @z
 
 @x
@@ -327,9 +325,9 @@ configure コマンドを実行します。
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -337,32 +335,30 @@ configure コマンドを実行します。
     <filename class='libraryfile'>libgs.so</filename>, run the
     following additional command as an unprivileged user:</para>
 @y
-<para>
-共有ライブラリ <filename class='libraryfile'>libgs.so</filename>
-をインストールする場合は、一般ユーザーにて以下のコマンドを実行します。
-</para>
+    <para>
+    共有ライブラリ <filename
+    class='libraryfile'>libgs.so</filename> をインストールする場合は、一般ユーザーにて以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>And again as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-そして <systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
-</para>
+    <para>
+    そして <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
       <para>The shared library depends on <xref linkend="gtk2"/>. It is
-      only used in external programs like <xref linkend="gsview"/> and
+      only used in external programs like <!-- <xref linkend="gsview"/> and -->
       <xref linkend="imagemagick"/>.</para>
 @y
-<para>
-共有ライブラリは <xref linkend="gtk2"/> に依存しています。
-これは <xref linkend="gsview"/> や <xref linkend="imagemagick"/>
-などの外部プログラムから利用されます。
-</para>
+      <para>
+      共有ライブラリは <xref linkend="gtk2"/> に依存しています。
+      これは <xref linkend="imagemagick"/> などの外部プログラムから利用されます。
+      </para>
 @z
 
 @x
@@ -435,12 +431,12 @@ configure コマンドを実行します。
     <para><command>ln -sv ... /usr/share/doc/ghostscript-&gs-version;</command>: This puts
     the documentation where it is expected to be found.</para>
 @y
-<para>
-<command>ln -sv ... /usr/share/doc/ghostscript-&gs-version;</command>:
-
-This puts
-the documentation where it is expected to be found.
-</para>
+    <para>
+    <command>ln -sv ... /usr/share/doc/ghostscript-&gs-version;</command>:
+    
+    This puts
+    the documentation where it is expected to be found.
+    </para>
 @z
 
 @x
@@ -448,13 +444,13 @@ the documentation where it is expected to be found.
     packages expect to find the interface headers in an alternate
     location.</para>
 @y
-<para>
-<command>ln -v -s ghostscript /usr/include/ps</command>:
-
-Some
-packages expect to find the interface headers in an alternate
-location.
-</para>
+    <para>
+    <command>ln -v -s ghostscript /usr/include/ps</command>:
+    
+    Some
+    packages expect to find the interface headers in an alternate
+    location.
+    </para>
 @z
 
 @x
@@ -507,10 +503,10 @@ location.
           <para>is an interpreter for Adobe Systems' PostScript(tm) and Portable Document Format
           (PDF).</para>
 @y
-<para>
-is an interpreter for Adobe Systems' PostScript(tm) and Portable Document Format
-(PDF).
-</para>
+          <para>
+          is an interpreter for Adobe Systems' PostScript(tm) and Portable Document Format
+          (PDF).
+          </para>
 @z
 
 @x libgs.so
@@ -519,12 +515,12 @@ is an interpreter for Adobe Systems' PostScript(tm) and Portable Document Format
           <application>ImageMagick</application>, and
           <application>libspectre</application>.</para>
 @y
-<para>
-provides <application>Ghostscript</application> functionality
-to other programs, such as <application>GSView</application>,
-<application>ImageMagick</application>, and
-<application>libspectre</application>.
-</para>
+          <para>
+          provides <application>Ghostscript</application> functionality
+          to other programs, such as <application>GSView</application>,
+          <application>ImageMagick</application>, and
+          <application>libspectre</application>.
+          </para>
 @z
 
 @x
@@ -533,10 +529,10 @@ to other programs, such as <application>GSView</application>,
    the HTML documentation or the man pages for information about the
    capabilities provided.</para>
 @y
-<para>
-<application>GPL Ghostscript</application> provides many different
-scripts used to convert PostScript, PDF, and other formats. Please refer to
-the HTML documentation or the man pages for information about the
-capabilities provided.
-</para>
+   <para>
+   <application>GPL Ghostscript</application> provides many different
+   scripts used to convert PostScript, PDF, and other formats. Please refer to
+   the HTML documentation or the man pages for information about the
+   capabilities provided.
+   </para>
 @z

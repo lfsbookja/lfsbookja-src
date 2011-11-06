@@ -103,16 +103,16 @@
     <xref linkend="kdepim"/>,
     <xref linkend="kdegames"/>,
     <xref linkend="db"/>,
-    <xref linkend="xmms"/>, and
+    <!-- <xref linkend="xmms"/>, -->and
     <xref linkend="sdl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="kdenetwork"/>,
     <xref linkend="kdemultimedia"/>,
     <xref linkend="kdepim"/>,
     <xref linkend="kdegames"/>,
     <xref linkend="db"/>,
-    <xref linkend="xmms"/>,
+    <!-- <xref linkend="xmms"/>, -->and
     <xref linkend="sdl"/></para>
 @z
 

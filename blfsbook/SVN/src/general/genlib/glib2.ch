@@ -143,17 +143,17 @@ event loop, threads, dynamic loading, and an object system.
     <para role="optional">Quoted directly from the <filename>INSTALL</filename>
     file; <quote>Some of the mimetype-related functionality in GIO requires the
     <command>update-mime-database</command> and
-    <command>update-desktop-database</command> utilities, which are part of
+    <command>update-desktop-database</command> utilities</quote>, which are part of
     <xref linkend="shared-mime-info"/> and
-    <xref linkend="desktop-file-utils"/>, respectively.</quote></para>
+    <xref linkend="desktop-file-utils"/>, respectively.</para>
 @y
     <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
     <para role="optional">Quoted directly from the <filename>INSTALL</filename>
     file; <quote>Some of the mimetype-related functionality in GIO requires the
     <command>update-mime-database</command> and
-    <command>update-desktop-database</command> utilities, which are part of
+    <command>update-desktop-database</command> utilities</quote>, which are part of
     <xref linkend="shared-mime-info"/> and
-    <xref linkend="desktop-file-utils"/>, respectively.</quote></para>
+    <xref linkend="desktop-file-utils"/>, respectively.</para>
 @z
 
 @x

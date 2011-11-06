@@ -120,8 +120,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="GLib"/>,
-    <xref linkend="GTK"/>,
+    <para role="optional"><!-- <xref linkend="GLib"/>,
+    <xref linkend="GTK"/>, -->
     <xref linkend="python"/>,
     <xref linkend="ruby"/>,
     <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
@@ -132,8 +132,8 @@
     <ulink url="http://www.microsoft.com/downloads/details.aspx?FamilyId=3A1C93FA-7462-47D0-8E56-8DD34C6292F0&amp;displaylang=en">Rotor</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="GLib"/>,
-    <xref linkend="GTK"/>,
+    <para role="optional"><!-- <xref linkend="GLib"/>,
+    <xref linkend="GTK"/>, -->
     <xref linkend="python"/>,
     <xref linkend="ruby"/>,
     <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
