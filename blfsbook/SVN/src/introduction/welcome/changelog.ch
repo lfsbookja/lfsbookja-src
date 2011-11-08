@@ -61,7 +61,59 @@
 @z
 
 @x
-      <para>November 4th, 2011</para>
+      <para>November 7th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to hdparm-9.37.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to pciutils-3.1.8.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to whois-5.0.12.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to traceroute-2.0.18.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to nmap-5.51.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libpcap-1.1.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to postfix-2.8.4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - hdparm-9.37 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pciutils-3.1.8 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - whois-5.0.12 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - traceroute-2.0.18 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - nmap-5.51 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libpcap-1.1.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - postfix-2.8.4 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 5th, 2011</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Remove gtk+1, glib1, xmms, gsview.</para>
@@ -71,7 +123,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>2011/11/04</para>
+      <para>2011/11/05</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - gtk+1, glib1, xmms, gsview を削除。</para>

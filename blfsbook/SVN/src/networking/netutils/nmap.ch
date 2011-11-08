@@ -24,11 +24,11 @@
     and security auditing. It supports ping scanning, port scanning and
     TCP/IP fingerprinting.</para>
 @y
-<para>
-<application>Nmap</application> is a utility for network exploration
-and security auditing. It supports ping scanning, port scanning and
-TCP/IP fingerprinting.
-</para>
+    <para>
+    <application>Nmap</application> is a utility for network exploration
+    and security auditing. It supports ping scanning, port scanning and
+    TCP/IP fingerprinting.
+    </para>
 @z
 
 @x
@@ -84,14 +84,14 @@ TCP/IP fingerprinting.
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="pcre"/>,
     <xref linkend="libpcap"/>,
-    <xref linkend="gtk2"/> (for building the graphical front-end), and
+    <xref linkend="gtk2"/> (run time dependency), and
     <ulink url="http://sourceforge.net/projects/libdnet/">libdnet</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="pcre"/>,
     <xref linkend="libpcap"/>,
-    <xref linkend="gtk2"/> (グラフィカルフロントエンドのビルド時に必要),
+    <xref linkend="gtk2"/> (実行時に必要),
     <ulink url="http://sourceforge.net/projects/libdnet/">libdnet</ulink></para>
 @z
 
@@ -113,25 +113,25 @@ TCP/IP fingerprinting.
     <para>Install <application>Nmap</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Nmap</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Nmap</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -151,12 +151,12 @@ TCP/IP fingerprinting.
 @z
 
 @x
-        <seg>nmap and optionally, nmapfe and xnmap</seg>
-        <seg>None</seg>
+        <seg>ncat, ndiff, nmap, nmapfe, nping, uninstall_zenmap, xnmap, and zenmap</seg>
+        <seg>/usr/lib/python&python2-version;/site-packages/</seg>
         <seg>/usr/share/nmap</seg>
 @y
-        <seg>nmap と任意ビルドとして nmapfe, xnmap</seg>
-        <seg>なし</seg>
+        <seg>ncat, ndiff, nmap, nmapfe, nping, uninstall_zenmap, xnmap, zenmap</seg>
+        <seg>/usr/lib/python&python2-version;/site-packages/</seg>
         <seg>/usr/share/nmap</seg>
 @z
 
@@ -168,28 +168,24 @@ TCP/IP fingerprinting.
 
 @x nmap
           <para>is a utility for network exploration and security auditing. It
-          supports ping scanning, port scanning and
-          TCP/IP fingerprinting.</para>
+          supports ping scanning, port scanning and TCP/IP
+          fingerprinting.</para>
 @y
-<para>
-is a utility for network exploration and security auditing. It
-supports ping scanning, port scanning and
-TCP/IP fingerprinting.
-</para>
+          <para>is a utility for network exploration and security auditing. It
+          supports ping scanning, port scanning and TCP/IP
+          fingerprinting.</para>
 @z
 
 @x nmapfe
-          <para>is the graphical front end to <command>nmap</command>.</para>
+          <para>is a symbolic link to <command>zenmap.</command>.</para>
 @y
-<para>
-is the graphical front end to <command>nmap</command>.
-</para>
+          <para>is a symbolic link to <command>zenmap.</command>.</para>
 @z
 
 @x xnmap
-          <para>is a symbolic link to <command>nmapfe</command>.</para>
+          <para>is a symbolic link to <command>zenmap.</command>.</para>
 @y
-<para>
-<command>nmapfe</command> へのシンボリックリンク。
-</para>
+          <para>
+          <command>zenmap</command> へのシンボリックリンク。
+          </para>
 @z

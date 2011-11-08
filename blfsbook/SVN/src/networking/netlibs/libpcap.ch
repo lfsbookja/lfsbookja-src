@@ -117,27 +117,25 @@
     <para>Install <application>libpcap</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libpcap</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libpcap</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -148,7 +146,7 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
@@ -158,11 +156,11 @@
 
 @x
         <seg>libpcap-config</seg>
-        <seg>libpcap.a</seg>
+        <seg>libpcap.{a,so}</seg>
         <seg>/usr/include/pcap</seg>
 @y
         <seg>libpcap-config</seg>
-        <seg>libpcap.a</seg>
+        <seg>libpcap.{a,so}</seg>
         <seg>/usr/include/pcap</seg>
 @z
 
@@ -175,15 +173,15 @@
 @x libpcap-config
         <para>provides configuration information for libpcap.</para>
 @y
-<para>
-libpcap の設定情報を提供します。
-</para>
+        <para>
+        libpcap の設定情報を提供します。
+        </para>
 @z
 
 @x libpcap.a
-        <para>is a library used for user-level packet capture.</para>
+        <para>are libraries used for user-level packet capture.</para>
 @y
-<para>
-ユーザーレベルのパケットキャプチャ機能を提供するライブラリです。
-</para>
+        <para>
+        ユーザーレベルのパケットキャプチャー機能を提供するライブラリです。
+        </para>
 @z
