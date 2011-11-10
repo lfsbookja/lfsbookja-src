@@ -24,10 +24,9 @@
     interfaces to obtain information and perform operations on storage
     devices.</para>
 @y
-<para>
-<application>udisks</application>
-パッケージは、ストレージデバイスに対する情報取得や処理制御のためのインターフェースを実現するデーモンを提供します。
-</para>
+    <para>
+    <application>udisks</application> パッケージは、ストレージデバイスに対する情報取得や処理制御のためのインターフェースを実現するデーモンを提供します。
+    </para>
 @z
 
 @x
@@ -82,7 +81,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="libatasmart"/>,
-    <xref linkend="parted"/> (with <xref linkend="Device-mapper"/>),
+    <xref linkend="parted"/> (with <xref linkend="device-mapper"/>),
     <xref linkend="polkit"/>,
     <xref linkend="sg3_utils"/>, and
     <xref linkend="udev"/> (gudev)</para>
@@ -90,7 +89,7 @@
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="libatasmart"/>,
-    <xref linkend="parted"/> (<xref linkend="Device-mapper"/> を含む),
+    <xref linkend="parted"/> (<xref linkend="device-mapper"/> を含む),
     <xref linkend="polkit"/>,
     <xref linkend="sg3_utils"/>,
     <xref linkend="udev"/> (gudev)</para>
@@ -124,25 +123,25 @@
     <para>Install <application>udisks</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>udisks</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>udisks</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -206,31 +205,31 @@
 @x udisks
           <para>is a command line tool.</para>
 @y
-<para>
-コマンドラインツール。
-</para>
+          <para>
+          コマンドラインツール。
+          </para>
 @z
 
 @x udisks-tcp-bridge
           <para>is a <application>udisks</application> TCP/IP bridge.</para>
 @y
-<para>
-<application>udisks</application> TCP/IP ブリッジ。
-</para>
+          <para>
+          <application>udisks</application> TCP/IP ブリッジ。
+          </para>
 @z
 
 @x udisks-daemon
           <para>is the <application>udisks</application> Daemon.</para>
 @y
-<para>
-<application>udisks</application> デーモン。
-</para>
+          <para>
+          <application>udisks</application> デーモン。
+          </para>
 @z
 
 @x libudisks-action-lookup.{so,a}
           <para>is a <application>polkit</application> extension.</para>
 @y
-<para>
-<application>polkit</application> 拡張ライブラリ。
-</para>
+          <para>
+          <application>polkit</application> 拡張ライブラリ。
+          </para>
 @z

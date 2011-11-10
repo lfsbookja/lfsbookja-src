@@ -22,14 +22,16 @@
 @x
     <para><application>DejaGnu</application> is a framework for running test
     suites on GNU tools. It is written in <command>expect</command>, which
-    uses <application>Tcl</application> (Tool command language).</para>
+    uses <application>Tcl</application> (Tool command language). It was installed
+    by LFS in the temprary /tools directory.  These instructions install it
+    permanently.</para>
 @y
-<para>
-<application>DejaGnu</application>
-パッケージは GNU ツールにおいて、テストスイートを実行するフレームワークです。
-これは <application>Tcl</application> (ツールコマンド言語; Tool command language)
-によって構築されています。
-</para>
+    <para>
+    <application>DejaGnu</application> パッケージは GNU ツールにおいて、テストスイートを実行するフレームワークです。
+    これは <application>Tcl</application> (ツールコマンド言語; Tool command language) によって書かれています。
+    LFS ではこれを /tools ディレクトリに一時的にインストールしていました。
+    ここでの手順は、それを恒常的にインストールするものです。
+    </para>
 @z
 
 @x
@@ -114,29 +116,26 @@
     <para>Install <application>DejaGnu</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>DejaGnu</application> パッケージをビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>DejaGnu</application> パッケージをビルドします。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>To test the installation, issue <command>make check</command> as
     an unprivileged user.</para>
 @y
-<para>
-ビルド結果をテストする場合は、一般ユーザーにて <command>make check</command>
-を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は、一般ユーザーにて <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
@@ -181,9 +180,8 @@
           <para>is the <application>DejaGnu</application> test driver program. It is
           used to control what tests to run, and variations on how to run them.</para>
 @y
-<para>
-<application>DejaGnu</application> のテストドライバプログラム。
-テストとして何を実行するか、あるいはどのようにして実行するかを制御します。
-</para>
+          <para>
+          <application>DejaGnu</application> のテストドライバプログラム。
+          テストとして何を実行するか、あるいはどのようにして実行するかを制御します。
+          </para>
 @z
-

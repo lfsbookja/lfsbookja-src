@@ -14,23 +14,23 @@
 @z
 
 @x
-    <title>Introduction to Device-mapper</title>
+    <title>Introduction to device-mapper</title>
 @y
-    <title>Device-mapper の概要</title>
+    <title>device-mapper の概要</title>
 @z
 
 @x
-    <para>The <application>Device-mapper</application> package is an
+    <para>The <application>device-mapper</application> package is an
     implementation of a minimalistic kernel-space driver that handles volume
     management, while keeping knowledge of the underlying device layout in
     user-space.</para>
 @y
-<para>
-<application>Device-mapper</application> package is an
-implementation of a minimalistic kernel-space driver that handles volume
-management, while keeping knowledge of the underlying device layout in
-user-space.
-</para>
+    <para>
+    <application>device-mapper</application> package is an
+    implementation of a minimalistic kernel-space driver that handles volume
+    management, while keeping knowledge of the underlying device layout in
+    user-space.
+    </para>
 @z
 
 @x
@@ -77,41 +77,41 @@ user-space.
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/Device-mapper"/></para>
+    <ulink url="&blfs-wiki;/device-mapper"/></para>
 @y
     <para condition="html" role="usernotes">&j-UserNotes;:
-    <ulink url="&blfs-wiki;/Device-mapper"/></para>
+    <ulink url="&blfs-wiki;/device-mapper"/></para>
 @z
 
 @x
-    <title>Installation of Device-mapper</title>
+    <title>Installation of device-mapper</title>
 @y
-    <title>Device-mapper のインストール</title>
+    <title>device-mapper のインストール</title>
 @z
 
 @x
-    <para>Install <application>Device-mapper</application> by running the following
+    <para>Install <application>device-mapper</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Device-mapper</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>device-mapper</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>The device-mapper portion of this package does not come with a test
+    suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>The device-mapper portion of this package does not come with a test
+    suite.</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -124,31 +124,31 @@ user-space.
     <para><parameter>--enable-pkgconfig</parameter>: This parameter installs
     pkgconfig support.</para>
 @y
-<para>
-<parameter>--enable-pkgconfig</parameter>:
-このパラメーターは pkgconfig サポートをインストールします。
-</para>
+    <para>
+    <parameter>--enable-pkgconfig</parameter>:
+    このパラメーターは pkgconfig サポートをインストールします。
+    </para>
 @z
 
 @x
     <para><option>--enable-dmeventd</option>: This option builds the
     device-mapper event daemon.</para>
 @y
-<para>
-<option>--enable-dmeventd</option>:
-このパラメーターは device-mapper イベントデーモンをビルドします。
-</para>
+    <para>
+    <option>--enable-dmeventd</option>:
+    このパラメーターは device-mapper イベントデーモンをビルドします。
+    </para>
 @z
 
 @x
     <para><option>--enable-cmdlib</option>: This option builds the shared
     command library. It is required when building the daemon.</para>
 @y
-<para>
-<option>--enable-cmdlib</option>:
-このパラメーターは共有コマンドライブラリ (shared command library)
-をビルドします。これはデーモンをビルドする際に必要となります。
-</para>
+    <para>
+    <option>--enable-cmdlib</option>:
+    このパラメーターは共有コマンドライブラリ (shared command library) をビルドします。
+    これはデーモンをビルドする際に必要となります。
+    </para>
 @z
 
 @x
@@ -186,17 +186,17 @@ user-space.
 @x dmsetup
           <para>is a low level logical volume management tool.</para>
 @y
-<para>
-is a low level logical volume management tool.
-</para>
+          <para>
+          is a low level logical volume management tool.
+          </para>
 @z
 
 @x libdevmapper.so
-          <para>contains the <application>Device-mapper</application> API
+          <para>contains the <application>device-mapper</application> API
           functions.</para>
 @y
-<para>
-contains the <application>Device-mapper</application> API
-functions.
-</para>
+          <para>
+          contains the <application>device-mapper</application> API
+          functions.
+          </para>
 @z

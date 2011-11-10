@@ -23,10 +23,9 @@
     <para>The <application>Parted</application> package is a disk partitioning
     and partition resizing tool.</para>
 @y
-<para>
-<application>Parted</application>
-パッケージは、ディスクのパーティショニングやパーティションサイズの変更を行うツールを提供します。
-</para>
+    <para>
+    <application>Parted</application> パッケージは、ディスクのパーティショニングやパーティションサイズの変更を行うツールを提供します。
+    </para>
 @z
 
 @x
@@ -79,11 +78,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="Device-mapper"/> (Required if building
+    <para role="optional"><xref linkend="device-mapper"/> (Required if building
     <application>udisks</application>)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="Device-mapper"/>
+    <para role="optional"><xref linkend="device-mapper"/>
     (<application>udisks</application> をビルドする際には必要)</para>
 @z
 
@@ -105,27 +104,25 @@
     <para>Install <application>Parted</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>Parted</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Parted</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -139,12 +136,11 @@
     disables device mapper support. Remove this parameter if you have
     <application>Device-mapper</application> installed.</para>
 @y
-<para>
-<parameter>--enable-device-mapper=no</parameter>:
-このオプションは Device mapper サポートを無効にします。
-<application>Device-mapper</application>
-を既にインストールしている場合は、本オプションを取り除いてください。
-</para>
+    <para>
+    <parameter>--enable-device-mapper=no</parameter>:
+    このオプションは Device mapper サポートを無効にします。
+    <application>Device-mapper</application> を既にインストールしている場合は、本オプションを取り除いてください。
+    </para>
 @z
 
 @x

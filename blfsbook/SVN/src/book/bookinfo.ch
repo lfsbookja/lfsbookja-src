@@ -51,9 +51,9 @@
 @z
 
 @x
-      <revremark>Development Release</revremark>
+      <revremark>Ongoing Release</revremark>
 @y
-      <revremark>開発版リリース</revremark>
+      <revremark>進行中リリース</revremark>
 @z
 
 @x

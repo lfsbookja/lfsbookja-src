@@ -80,10 +80,10 @@
   defined in a base LFS installation.  These can be changed as desired, but
   provide a suggested set of consistent values.</para>
 @y
-<para>
-以下に示す一覧は、LFS のインストールにおいて定義した uid、gid の値を
-BLFS 用の推奨値とし拡充したものです。
-</para>
+  <para>
+  以下に示す一覧は、LFS のインストールにおいて定義した uid、gid の値を
+  BLFS 用の推奨値とし拡充したものです。
+  </para>
 @z
 
 @x
@@ -101,16 +101,13 @@ BLFS 用の推奨値とし拡充したものです。
 @x
   <para>One value that is missing is 65534.  This value is customarily assigned
   to the user <systemitem class="username">nobody</systemitem> and group
-  <systemitem class="groupname">nogroup</systemitem> and is unnecessary.  The
+  <systemitem class="groupname">nogroup</systemitem> and is unnecessary.  <!--The
   issue is explained in more detail in the first note in the <xref
-  linkend="nfs-utils-install"/> section.</para>
+  linkend="nfs-utils-install"/> section.--></para>
 @y
-<para>
-One value that is missing is 65534.  This value is customarily assigned
-to the user <systemitem class="username">nobody</systemitem> and group
-<systemitem class="groupname">nogroup</systemitem> and is unnecessary.  The
-issue is explained in more detail in the first note in the <xref
-linkend="nfs-utils-install"/> section.
-</para>
+  <para>One value that is missing is 65534.  This value is customarily assigned
+  to the user <systemitem class="username">nobody</systemitem> and group
+  <systemitem class="groupname">nogroup</systemitem> and is unnecessary.  <!--The
+  issue is explained in more detail in the first note in the <xref
+  linkend="nfs-utils-install"/> section.--></para>
 @z
-
