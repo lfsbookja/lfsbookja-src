@@ -51,6 +51,30 @@
       <para>2011-10-29</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Text correction in bootscripts description.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove erroneous sourcing line in bootscript 
+          functions used for backward BLFS compatibility.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-10-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプト内の記述を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - BLFS との互換のために、ブートスクリプト内の関数においてエラーを引き起こす行を削除。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-10-29</para>
+      <itemizedlist>
+        <listitem>
           <para>[matthew] - Upgrade to GCC-4.6.2. Fixes
           <ulink url="&lfs-ticket-root;2951">#2951</ulink>.</para>
         </listitem>
