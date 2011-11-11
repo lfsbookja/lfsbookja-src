@@ -79,14 +79,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="openssl"/> or <xref linkend="gnutls"/>,
-    <xref linkend="libidn"/>, Perl Module Net::HTTP (for the test suite) 
+    <xref linkend="libidn"/>, Perl Module HTTP::Server (for the test suite) 
     (see the standard Perl <xref linkend="perl-standard-install"/>), and
     <ulink url="http://www.inet.no/dante/">Dante</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="openssl"/> または <xref linkend="gnutls"/>,
-    <xref linkend="libidn"/>, Perl モジュール Net::HTTP (テストスイート実行のため) 
-    (標準的な Perl モジュールに対する <xref linkend="perl-standard-install"/> を参照),
+    <xref linkend="libidn"/>, Perl Module HTTP::Server (テストスイート実行のため) 
+    (標準的な Perl モジュール <xref linkend="perl-standard-install"/> を参照),
     <ulink url="http://www.inet.no/dante/">Dante</ulink></para>
 @z
 

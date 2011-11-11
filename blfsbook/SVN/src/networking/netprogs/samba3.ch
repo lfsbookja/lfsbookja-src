@@ -34,16 +34,15 @@
     Active Directory domain and a NetBIOS (rfc1001/1002) nameserver (which
     amongst other things provides LAN browsing support).</para>
 @y
-<para>
-<application>Samba</application>
-パッケージは、package provides file and print
-services to SMB/CIFS clients and Windows networking to Linux clients.
-<application>Samba</application> can also be configured as a Windows NT
-4.0 Domain Controller replacement (with caveats working with NT PDC's and
-BDC's), a file/print server acting as a member of a Windows NT 4.0 or
-Active Directory domain and a NetBIOS (rfc1001/1002) nameserver (which
-amongst other things provides LAN browsing support).
-</para>
+    <para>
+    <application>Samba</application> パッケージは、package provides file and print
+    services to SMB/CIFS clients and Windows networking to Linux clients.
+    <application>Samba</application> can also be configured as a Windows NT
+    4.0 Domain Controller replacement (with caveats working with NT PDC's and
+    BDC's), a file/print server acting as a member of a Windows NT 4.0 or
+    Active Directory domain and a NetBIOS (rfc1001/1002) nameserver (which
+    amongst other things provides LAN browsing support).
+    </para>
 @z
 
 @x
@@ -106,7 +105,7 @@ amongst other things provides LAN browsing support).
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
     <xref linkend="python"/> (used only in parts of the test suite),
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
+    <xref linkend="libcap2"/>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
     <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
     (required to build the <command>cifs.upcall</command> program),
@@ -126,7 +125,7 @@ amongst other things provides LAN browsing support).
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
     <xref linkend="python"/> (used only in parts of the test suite),
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
+    <xref linkend="libcap2"/>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
     <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
     (required to build the <command>cifs.upcall</command> program),
@@ -158,25 +157,20 @@ amongst other things provides LAN browsing support).
       first. There may be other parameters needed to take advantage of
       optional dependencies.</para>
 @y
-<para>
-実行モジュール類をビルドしテストスイートを実行するなら、以下の
-<command>configure</command> スクリプトに対して
-<option>--enable-socket-wrapper</option>
-パラメータを指定する必要があります。
-まずは <command>configure</command> スクリプトに
-<option>--help</option> パラメータをつけて実行してみてください。
-さまざまな機能を利用するために必要となる他のパラメータの情報が得られます。
-</para>
+      <para>
+      実行モジュール類をビルドしテストスイートを実行するなら、以下の <command>configure</command> スクリプトに対して <option>--enable-socket-wrapper</option> パラメーターを指定する必要があります。
+      まずは <command>configure</command> スクリプトに <option>--help</option> パラメータをつけて実行してみてください。
+      さまざまな機能を利用するために必要となる他のパラメーターの情報が得られます。
+      </para>
 @z
 
 @x
     <para>Install <application>Samba</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>Samba</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Samba</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -194,9 +188,9 @@ amongst other things provides LAN browsing support).
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -210,12 +204,11 @@ amongst other things provides LAN browsing support).
     file directory to avoid the default of
     <filename class="directory">/usr/etc</filename>.</para>
 @y
-<para>
-<parameter>--sysconfdir=/etc</parameter>:
-このように指定することで、設定ファイルのインストール先ディレクトリを、デフォルトの
-<filename class="directory">/usr/etc</filename>
-としないことを指示します。
-</para>
+    <para>
+    <parameter>--sysconfdir=/etc</parameter>:
+    このように指定することで、設定ファイルのインストール先ディレクトリを、デフォルトの <filename
+    class="directory">/usr/etc</filename> としないことを指示します。
+    </para>
 @z
 
 @x
@@ -223,24 +216,21 @@ amongst other things provides LAN browsing support).
     data directory to avoid the default of
     <filename class="directory">/usr/var</filename>.</para>
 @y
-<para>
-<parameter>--localstatedir=/var</parameter>:
-このように指定することで、データ類のインストール先ディレクトリを、デフォルトの
-<filename class="directory">/usr/var</filename>
-としないことを指示します。
-</para>
+    <para>
+    <parameter>--localstatedir=/var</parameter>:
+    このように指定することで、データ類のインストール先ディレクトリを、デフォルトの <filename
+    class="directory">/usr/var</filename> としないことを指示します。
+    </para>
 @z
 
 @x
     <para><parameter>--with-fhs</parameter>: Assigns all other file paths in
     a manner compliant with the Filesystem Hierarchy Standard (FHS).</para>
 @y
-<para>
-<parameter>--with-fhs</parameter>:
-インストール先とするパスを、ファイルシステム階層標準
-(Filesystem Hierarchy Standard; FHS)
-にならうようにします。
-</para>
+    <para>
+    <parameter>--with-fhs</parameter>:
+    インストール先とするパスを、ファイルシステム階層標準 (Filesystem Hierarchy Standard; FHS) にならうようにします。
+    </para>
 @z
 
 @x
@@ -275,16 +265,16 @@ amongst other things provides LAN browsing support).
     make the appropriate changes for your installation. See the configuration
     section for minimum values which must be set.</para>
 @y
-<para>
-<command>install -v -m644 ../examples/smb.conf.default
-/etc/samba</command>:
-
-This copies a default <filename>smb.conf</filename>
-file into <filename>/etc/samba</filename>. This sample configuration will
-not work until you copy it to <filename>/etc/samba/smb.conf</filename> and
-make the appropriate changes for your installation. See the configuration
-section for minimum values which must be set.
-</para>
+    <para>
+    <command>install -v -m644 ../examples/smb.conf.default
+    /etc/samba</command>:
+    
+    This copies a default <filename>smb.conf</filename>
+    file into <filename>/etc/samba</filename>. This sample configuration will
+    not work until you copy it to <filename>/etc/samba/smb.conf</filename> and
+    make the appropriate changes for your installation. See the configuration
+    section for minimum values which must be set.
+    </para>
 @z
 
 @x
@@ -340,14 +330,14 @@ section for minimum values which must be set.
       following command as the <systemitem class="username">root</systemitem>
       user:</para>
 @y
-<para>
-
-If you use <application>CUPS</application> for print services,
-and you wish to print to a printer attached to an SMB client, you
-need to create an SMB backend device. To create the device, issue the
-following command as the <systemitem class="username">root</systemitem>
-user:
-</para>
+      <para>
+      
+      If you use <application>CUPS</application> for print services,
+      and you wish to print to a printer attached to an SMB client, you
+      need to create an SMB backend device. To create the device, issue the
+      following command as the <systemitem class="username">root</systemitem>
+      user:
+      </para>
 @z
 
 @x
@@ -366,17 +356,17 @@ user:
       depend on the purpose of <application>Samba</application>
       installation.</para>
 @y
-<para>
-
-Due to the complexity and the many various uses for
-<application>Samba</application>, complete configuration for all the
-package's capabilities is well beyond the scope of the BLFS book. This
-section provides instructions to configure the
-<filename>/etc/samba/smb.conf</filename> file for two common scenarios.
-The complete contents of <filename>/etc/samba/smb.conf</filename> will
-depend on the purpose of <application>Samba</application>
-installation.
-</para>
+      <para>
+      
+      Due to the complexity and the many various uses for
+      <application>Samba</application>, complete configuration for all the
+      package's capabilities is well beyond the scope of the BLFS book. This
+      section provides instructions to configure the
+      <filename>/etc/samba/smb.conf</filename> file for two common scenarios.
+      The complete contents of <filename>/etc/samba/smb.conf</filename> will
+      depend on the purpose of <application>Samba</application>
+      installation.
+      </para>
 @z
 
 @x
@@ -388,24 +378,24 @@ installation.
         you. Do ensure the file is only writeable by the
         <systemitem class="username">root</systemitem> user (mode 644).</para>
 @y
-<para>
-
-You may find it easier to copy the configuration parameters shown
-below into an empty <filename>/etc/samba/smb.conf</filename> file
-instead of copying and editing the default file as mentioned in the
-<quote>Command Explanations</quote> section. How you create/edit the
-<filename>/etc/samba/smb.conf</filename> file will be left up to
-you. Do ensure the file is only writeable by the
-<systemitem class="username">root</systemitem> user (mode 644).
-</para>
+        <para>
+        
+        You may find it easier to copy the configuration parameters shown
+        below into an empty <filename>/etc/samba/smb.conf</filename> file
+        instead of copying and editing the default file as mentioned in the
+        <quote>Command Explanations</quote> section. How you create/edit the
+        <filename>/etc/samba/smb.conf</filename> file will be left up to
+        you. Do ensure the file is only writeable by the
+        <systemitem class="username">root</systemitem> user (mode 644).
+        </para>
 @z
 
 @x
         <title>Scenario 1: Minimal Standalone Client-Only Installation</title>
 @y
-<title>
-シナリオ1: Minimal Standalone Client-Only Installation
-</title>
+        <title>
+        シナリオ1: Minimal Standalone Client-Only Installation
+        </title>
 @z
 
 @x
@@ -414,23 +404,23 @@ you. Do ensure the file is only writeable by the
         printers, and don't want to share your files and printers to Windows
         machines.</para>
 @y
-<para>
-
-Choose this variant if you only want to transfer files using
-<command>smbclient</command>, mount Windows shares and print to Windows
-printers, and don't want to share your files and printers to Windows
-machines.
-</para>
+        <para>
+        
+        Choose this variant if you only want to transfer files using
+        <command>smbclient</command>, mount Windows shares and print to Windows
+        printers, and don't want to share your files and printers to Windows
+        machines.
+        </para>
 @z
 
 @x
         <para>A <filename>/etc/samba/smb.conf</filename> file with the following
         three parameters is sufficient:</para>
 @y
-<para>
-A <filename>/etc/samba/smb.conf</filename> file with the following
-three parameters is sufficient:
-</para>
+        <para>
+        A <filename>/etc/samba/smb.conf</filename> file with the following
+        three parameters is sufficient:
+        </para>
 @z
 
 @x
@@ -447,21 +437,21 @@ three parameters is sufficient:
         <command>ls</command> command may not display correct filenames of
         downloaded files.</para>
 @y
-<para>
-
-The values in this example specify that the computer belongs to a
-Windows workgroup named
-<quote><replaceable>MYGROUP</replaceable></quote>, uses the
-<quote><replaceable>cp850</replaceable></quote> character set on the
-wire when talking to MS-DOS and MS Windows 9x, and that the filenames
-are stored in the <quote><replaceable>ISO-8859-1</replaceable></quote>
-encoding on the disk. Adjust these values appropriately for your
-installation. The <quote>unix charset</quote> value must be the same as
-the output of <command>locale charmap</command> when executed with the
-<envar>LANG</envar> variable set to your preferred locale, otherwise the
-<command>ls</command> command may not display correct filenames of
-downloaded files.
-</para>
+        <para>
+        
+        The values in this example specify that the computer belongs to a
+        Windows workgroup named
+        <quote><replaceable>MYGROUP</replaceable></quote>, uses the
+        <quote><replaceable>cp850</replaceable></quote> character set on the
+        wire when talking to MS-DOS and MS Windows 9x, and that the filenames
+        are stored in the <quote><replaceable>ISO-8859-1</replaceable></quote>
+        encoding on the disk. Adjust these values appropriately for your
+        installation. The <quote>unix charset</quote> value must be the same as
+        the output of <command>locale charmap</command> when executed with the
+        <envar>LANG</envar> variable set to your preferred locale, otherwise the
+        <command>ls</command> command may not display correct filenames of
+        downloaded files.
+        </para>
 @z
 
 @x
@@ -477,9 +467,9 @@ downloaded files.
 @x
         <title>Scenario 2: Standalone File/Print Server</title>
 @y
-<title>
-シナリオ2: Standalone File/Print Server
-</title>
+        <title>
+        シナリオ2: Standalone File/Print Server
+        </title>
 @z
 
 @x
@@ -487,9 +477,9 @@ downloaded files.
         to Windows machines in your workgroup in addition to the capabilities
         described in Scenario 1.</para>
 @y
-<para>Choose this variant if you want to share your files and printers
-to Windows machines in your workgroup in addition to the capabilities
-described in Scenario 1.</para>
+        <para>Choose this variant if you want to share your files and printers
+        to Windows machines in your workgroup in addition to the capabilities
+        described in Scenario 1.</para>
 @z
 
 @x
@@ -499,11 +489,11 @@ described in Scenario 1.</para>
         to the <quote>[global]</quote> section as described in Scenario 1 in
         order to prevent filename corruption.</para>
 @y
-<para>In this case, the <filename>/etc/samba/smb.conf.default</filename>
-file may be a good template to start from. Also add
-<quote>dos charset</quote> and <quote>unix charset</quote> parameters
-to the <quote>[global]</quote> section as described in Scenario 1 in
-order to prevent filename corruption.</para>
+        <para>In this case, the <filename>/etc/samba/smb.conf.default</filename>
+        file may be a good template to start from. Also add
+        <quote>dos charset</quote> and <quote>unix charset</quote> parameters
+        to the <quote>[global]</quote> section as described in Scenario 1 in
+        order to prevent filename corruption.</para>
 @z
 
 @x
@@ -511,17 +501,17 @@ order to prevent filename corruption.</para>
         user's home directory and also makes all printers available to Windows
         machines:</para>
 @y
-<para>The following configuration file creates a separate share for each
-user's home directory and also makes all printers available to Windows
-machines:</para>
+        <para>The following configuration file creates a separate share for each
+        user's home directory and also makes all printers available to Windows
+        machines:</para>
 @z
 
 @x
         <para>Other parameters you may wish to customize in the
         <quote>[global]</quote> section include:</para>
 @y
-<para>Other parameters you may wish to customize in the
-<quote>[global]</quote> section include:</para>
+        <para>Other parameters you may wish to customize in the
+        <quote>[global]</quote> section include:</para>
 @z
 
 @x
@@ -529,9 +519,9 @@ machines:</para>
         <filename>/etc/samba/smb.conf.default</filename> file for information
         regarding these parameters.</para>
 @y
-<para>Reference the comments in the
-<filename>/etc/samba/smb.conf.default</filename> file for information
-regarding these parameters.</para>
+        <para>Reference the comments in the
+        <filename>/etc/samba/smb.conf.default</filename> file for information
+        regarding these parameters.</para>
 @z
 
 @x
@@ -546,24 +536,24 @@ regarding these parameters.</para>
         to add will also be required to exist in the
         <filename>/etc/passwd</filename> file.</para>
 @y
-<para>Since the <command>smbd</command> and <command>nmbd</command>
-daemons are needed in this case, install the <filename>samba</filename>
-bootscript. Be sure to run <command>smbpasswd</command> (with the
-<option>-a</option> option to add users) to enable and
-set passwords for all accounts that need
-<application>Samba</application> access, or use the SWAT web interface
-(see below) to do the same. Using the default
-<application>Samba</application> passdb backend, any user you attempt
-to add will also be required to exist in the
-<filename>/etc/passwd</filename> file.</para>
+        <para>Since the <command>smbd</command> and <command>nmbd</command>
+        daemons are needed in this case, install the <filename>samba</filename>
+        bootscript. Be sure to run <command>smbpasswd</command> (with the
+        <option>-a</option> option to add users) to enable and
+        set passwords for all accounts that need
+        <application>Samba</application> access, or use the SWAT web interface
+        (see below) to do the same. Using the default
+        <application>Samba</application> passdb backend, any user you attempt
+        to add will also be required to exist in the
+        <filename>/etc/passwd</filename> file.</para>
 @z
 
 @x
         <title>Advanced Requirements</title>
 @y
-<title>
-Advanced Requirements
-</title>
+        <title>
+        Advanced Requirements
+        </title>
 @z
 
 @x
@@ -578,16 +568,16 @@ Advanced Requirements
         domain membership scenarios, the <command>winbindd</command> daemon and
         the corresponding bootscript are needed.</para>
 @y
-<para>More complex scenarios involving domain control or membership are
-possible if the right flags are passed to the ./configure script when
-the package is built. Such setups are advanced topics and cannot be
-adequately covered in BLFS. Many complete books have been written on
-these topics alone. It should be noted, however, that a
-<application>Samba</application> BDC cannot be used as a fallback
-for a Windows PDC, and conversely, a Windows BDC cannot be used as a
-fallback for a <application>Samba</application> PDC. Also in some
-domain membership scenarios, the <command>winbindd</command> daemon and
-the corresponding bootscript are needed.</para>
+        <para>More complex scenarios involving domain control or membership are
+        possible if the right flags are passed to the ./configure script when
+        the package is built. Such setups are advanced topics and cannot be
+        adequately covered in BLFS. Many complete books have been written on
+        these topics alone. It should be noted, however, that a
+        <application>Samba</application> BDC cannot be used as a fallback
+        for a Windows PDC, and conversely, a Windows BDC cannot be used as a
+        fallback for a <application>Samba</application> PDC. Also in some
+        domain membership scenarios, the <command>winbindd</command> daemon and
+        the corresponding bootscript are needed.</para>
 @z
 
 @x
@@ -1213,4 +1203,3 @@ the corresponding bootscript are needed.</para>
 @y
           <para>resolves names from Windows NT servers.</para>
 @z
-

@@ -20,26 +20,22 @@
 @z
 
 @x
-    <title>Introduction to Libgpg-error</title>
+    <title>Introduction to libgpg-error</title>
 @y
-    <title>Libgpg-error の概要</title>
+    <title>libgpg-error の概要</title>
 @z
 
 @x
-    <para>The <application>Libgpg-error</application> package contains a
+    <para>The <application>libgpg-error</application> package contains a
     library that defines common error values for all
     <application>GnuPG</application> components. Among these are GPG, GPGSM,
     GPGME, GPG-Agent, libgcrypt, Libksba, DirMngr, Pinentry, SmartCard Daemon
     and more.</para>
 @y
-<para>
-<application>Libgpg-error</application>
-パッケージは、<application>GnuPG</application>
-コンポーネントすべてにおいての共通的なエラー値を定義するライブラリを提供します。
-<application>GnuPG</application>
-コンポーネントには GPG, GPGSM, GPGME, GPG-Agent, libgcrypt, Libksba, DirMngr, Pinentry, SmartCard
-デーモンなどがあります。
-</para>
+    <para>
+    <application>libgpg-error</application> パッケージは、<application>GnuPG</application> コンポーネントすべてにおいての共通的なエラー値を定義するライブラリを提供します。
+    <application>GnuPG</application> コンポーネントには GPG, GPGSM, GPGME, GPG-Agent, libgcrypt, Libksba, DirMngr, Pinentry, SmartCard デーモンなどがあります。
+    </para>
 @z
 
 @x
@@ -93,35 +89,35 @@
 @z
 
 @x
-    <title>Installation of Libgpg-error</title>
+    <title>Installation of libgpg-error</title>
 @y
-    <title>Libgpg-error のインストール</title>
+    <title>libgpg-error のインストール</title>
 @z
 
 @x
-    <para>Install <application>Libgpg-error</application> by running the
+    <para>Install <application>libgpg-error</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Libgpg-error</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libgpg-error</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -159,32 +155,32 @@
 @z
 
 @x gpg-error
-          <para>is used to determine <application>Libgpg-error</application>
+          <para>is used to determine <application>libgpg-error</application>
           error codes.</para>
 @y
           <para>
-          <application>Libgpg-error</application> のエラーコードを決定するために利用します。
+          <application>libgpg-error</application> のエラーコードを決定するために利用します。
           </para>
 @z
 
 @x gpg-error-config
           <para>is a utility used to configure and build applications based on
-          the <application>Libgpg-error</application> library. It can be used
+          the <application>libgpg-error</application> library. It can be used
           to query the C compiler and linker flags which are required to correctly
           compile and link the application against the
-          <application>Libgpg-error</application> library.</para>
+          <application>libgpg-error</application> library.</para>
 @y
           <para>
-          <application>Libgpg-error</application> ライブラリに基づいて生成されるアプリケーションの設定と構築のために利用するユーティリティです。
-          <application>Libgpg-error</application> ライブラリに対してアプリケーションをコンパイルしリンクする際の C コンパイラーフラグやリンカーフラグを決定するために利用します。
+          <application>libgpg-error</application> ライブラリに基づいて生成されるアプリケーションの設定と構築のために利用するユーティリティです。
+          <application>libgpg-error</application> ライブラリに対してアプリケーションをコンパイルしリンクする際の C コンパイラーフラグやリンカーフラグを決定するために利用します。
           </para>
 @z
 
 @x liblibgpg-error.{so,a}
-          <para>contains the <application>Libgpg-error</application> API
+          <para>contains the <application>libgpg-error</application> API
           functions.</para>
 @y
           <para>
-          <application>Libgpg-error</application> の API 関数を提供します。
+          <application>libgpg-error</application> の API 関数を提供します。
           </para>
 @z

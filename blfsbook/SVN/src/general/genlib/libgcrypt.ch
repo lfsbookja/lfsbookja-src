@@ -14,26 +14,26 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-time          "0.5 SBU (additional 0.5 SBU to run the test suite)">
+  <!ENTITY libgcrypt-time          "0.6 SBU (including 0.5 SBU to run the test suite)">
 @y
-  <!ENTITY libgcrypt-time          "0.5 SBU (テストスイートを実行する場合、さらに 0.5 SBU を追加)">
+  <!ENTITY libgcrypt-time          "0.6 SBU (テストスイートを実行する場合、さらに 0.5 SBU を追加)">
 @z
 
 @x
-    <title>Introduction to Libgcrypt</title>
+    <title>Introduction to libgcrypt</title>
 @y
-    <title>Libgcrypt の概要</title>
+    <title>libgcrypt の概要</title>
 @z
 
 @x
-    <para>The <application>Libgcrypt</application> package contains a general
+    <para>The <application>libgcrypt</application> package contains a general
     purpose crypto library based on the code used in
     <application>GnuPG</application>. The library provides a high level
     interface to cryptographic building blocks using an extendable and flexible
     API.</para>
 @y
     <para>
-    <application>Libgcrypt</application> パッケージは <application>GnuPG</application> にて用いられるコードに基づいた、汎用的な暗号化ライブラリです。
+    <application>libgcrypt</application> パッケージは <application>GnuPG</application> にて用いられるコードに基づいた、汎用的な暗号化ライブラリです。
     このライブラリは、拡張性と柔軟性に優れた API 関数を利用して、暗号化に対しての高度なインターフェースを提供します。
     </para>
 @z
@@ -81,9 +81,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Libgcrypt Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libgcrypt Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Libgcrypt の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">libgcrypt の依存パッケージ</bridgehead>
 @z
 
 @x
@@ -97,11 +97,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="pth"/> and
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink></para>
+    <xref linkend="libcap2"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="pth"/> and
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink></para>
+    <para role="optional"><xref linkend="pth"/>,
+    <xref linkend="libcap2"/></para>
 @z
 
 @x
@@ -113,17 +113,17 @@
 @z
 
 @x
-    <title>Installation of Libgcrypt</title>
+    <title>Installation of libgcrypt</title>
 @y
-    <title>Libgcrypt のインストール</title>
+    <title>libgcrypt のインストール</title>
 @z
 
 @x
-    <para>Install <application>Libgcrypt</application> by running the
+    <para>Install <application>libgcrypt</application> by running the
     following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>Libgcrypt</application> をビルドします。
+    以下のコマンドを実行して <application>libgcrypt</application> をビルドします。
     </para>
 @z
 

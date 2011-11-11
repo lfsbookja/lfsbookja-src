@@ -61,6 +61,142 @@
 @z
 
 @x
+      <para>November 10th, 2011</para>
+      <itemizedlist>
+        <!-- <listitem>
+          <para>[bdubbs] - Update to samba-3.6.1.</para>
+        </listitem>
+        -->
+        <listitem>
+          <para>[bdubbs] - Update to gnutls-3.0.7.</para>
+        </listitem> 
+        <listitem>
+          <para>[bdubbs] - Add nettle-2.4.</para>
+        </listitem> 
+      </itemizedlist>
+@y
+      <para>2011/11/10</para>
+      <itemizedlist>
+        <!-- <listitem>
+          <para>[bdubbs] - Update to samba-3.6.1.</para>
+        </listitem>
+        -->
+        <listitem>
+          <para>[bdubbs] - gnutls-3.0.7 へのアップデート。</para>
+        </listitem> 
+        <listitem>
+          <para>[bdubbs] - nettle-2.4 の追加。</para>
+        </listitem> 
+      </itemizedlist>
+@z
+
+@x
+      <para>November 9th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to libidn-1.22.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to wget-1.13.4.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libtasn1-2.10.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to libgcrypt-1.5.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add libcap2-2.22.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a sed to libmpeg2 to avoid a segfault 
+          that occurs when using recent compilers.  Thanks to Andy
+          Benton for the report.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update book title and copyright date.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove portmap and nfs-utils at least until
+          upstream gets their act together.  Stable NIS and NFS headers and
+          functions not currently available from any source.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libidn-1.22 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - wget-1.13.4 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtasn1-2.10 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libgcrypt-1.5.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libcap2-2.22 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a sed to libmpeg2 to avoid a segfault 
+          that occurs when using recent compilers.  Thanks to Andy
+          Benton for the report.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update book title and copyright date.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove portmap and nfs-utils at least until
+          upstream gets their act together.  Stable NIS and NFS headers and
+          functions not currently available from any source.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 8th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add check-0.9.8.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to dejagnu-1.5.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to expect-5.45.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to parted-3.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to device-mapper-1.02.67 (LVM2.2.02.88).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - check-0.9.8 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - dejagnu-1.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - expect-5.45 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - parted-3.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - device-mapper-1.02.67 (LVM2.2.02.88) へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 7th, 2011</para>
       <itemizedlist>
         <listitem>

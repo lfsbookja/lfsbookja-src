@@ -87,21 +87,21 @@
     <ulink url="&files-anduin;/heimdal-overwrites"/> for a complete list of
     all the files and commands to rename each of them.</para>
 @y
-<para>
-<application>Heimdal</application> is a free implementation
-of Kerberos 5 that aims to be compatible with MIT Kerberos 5 and is
-backward compatible with Kerberos 4. Kerberos is a network authentication
-protocol. Basically it preserves the integrity of passwords in any
-untrusted network (like the Internet). Kerberized applications work
-hand-in-hand with sites that support Kerberos to ensure that passwords
-cannot be stolen or compromised. A Kerberos installation will make changes
-to the authentication mechanisms on your network and will overwrite several
-programs and daemons from the <application>Shadow</application>,
-<application>Inetutils</application> and
-<application>Qpopper</application> packages. See
-<ulink url="&files-anduin;/heimdal-overwrites"/> for a complete list of
-all the files and commands to rename each of them.
-</para>
+    <para>
+    <application>Heimdal</application> is a free implementation
+    of Kerberos 5 that aims to be compatible with MIT Kerberos 5 and is
+    backward compatible with Kerberos 4. Kerberos is a network authentication
+    protocol. Basically it preserves the integrity of passwords in any
+    untrusted network (like the Internet). Kerberized applications work
+    hand-in-hand with sites that support Kerberos to ensure that passwords
+    cannot be stolen or compromised. A Kerberos installation will make changes
+    to the authentication mechanisms on your network and will overwrite several
+    programs and daemons from the <application>Shadow</application>,
+    <application>Inetutils</application> and
+    <application>Qpopper</application> packages. See
+    <ulink url="&files-anduin;/heimdal-overwrites"/> for a complete list of
+    all the files and commands to rename each of them.
+    </para>
 @z
 
 @x
@@ -187,7 +187,7 @@ all the files and commands to rename each of them.
     <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="sqlite"/>,
     <xref linkend="x-window-system"/>,
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>, and
+    <xref linkend="libcap2"/>, and
     <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> (with this
     <ulink url="&patch-root;/libcap-ng-0.6.4-2.6.36_kernel_fix-1.patch">patch</ulink>
     if the Linux kernel version is &gt;=2.6.36)</para>
@@ -196,7 +196,7 @@ all the files and commands to rename each of them.
     <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="sqlite"/>,
     <xref linkend="x-window-system"/>,
-    <ulink url="http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/">libcap2</ulink>,
+    <xref linkend="libcap2"/>, and
     <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> (with this
     <ulink url="&patch-root;/libcap-ng-0.6.4-2.6.36_kernel_fix-1.patch">patch</ulink>
     if the Linux kernel version is &gt;=2.6.36)</para>
@@ -208,13 +208,13 @@ all the files and commands to rename each of them.
       authenticate if the time differential between a kerberized client
       and the KDC server is more than 5 minutes.</para>
 @y
-<para>
-
-Some sort of time synchronization facility on your system
-(like <xref linkend="ntp"/>) is required since Kerberos won't
-authenticate if the time differential between a kerberized client
-and the KDC server is more than 5 minutes.
-</para>
+      <para>
+      
+      Some sort of time synchronization facility on your system
+      (like <xref linkend="ntp"/>) is required since Kerberos won't
+      authenticate if the time differential between a kerberized client
+      and the KDC server is more than 5 minutes.
+      </para>
 @z
 
 @x
@@ -236,21 +236,21 @@ and the KDC server is more than 5 minutes.
       to install this package. Failure to install and configure the package
       correctly can alter your system so that users cannot log in.</para>
 @y
-<para>
-
-Ensure you really need a Kerberos installation before you decide
-to install this package. Failure to install and configure the package
-correctly can alter your system so that users cannot log in.
-</para>
+      <para>
+      
+      Ensure you really need a Kerberos installation before you decide
+      to install this package. Failure to install and configure the package
+      correctly can alter your system so that users cannot log in.
+      </para>
 @z
 
 @x
     <para>Install <application>Heimdal</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Heimdal</application> をビルドします。
-</para>
+      <para>
+      以下のコマンドを実行して <application>Heimdal</application> をビルドします。
+      </para>
 @z
 
 @x
@@ -259,12 +259,10 @@ correctly can alter your system so that users cannot log in.
     change into the <filename class='directory'>doc</filename> directory and
     issue any or all of the following commands:</para>
 @y
-<para>
-<xref linkend="tetex"/> または <xref linkend="texlive"/>
-をインストールしていて、PDF や Postscript 形式のドキュメントを生成しようとする場合は、
-<filename class='directory'>doc</filename>
-ディレクトリに移動して、以下のコマンドをすべて実行します。
-</para>
+      <para>
+      <xref linkend="tetex"/> または <xref linkend="texlive"/> をインストールしていて、PDF や Postscript 形式のドキュメントを生成しようとする場合は、<filename
+      class='directory'>doc</filename> ディレクトリに移動して、以下のコマンドをすべて実行します。
+      </para>
 @z
 
 @x
@@ -272,19 +270,18 @@ correctly can alter your system so that users cannot log in.
     <command>check-iprop</command> test is known to fail but all others should
     pass.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-<command>check-iprop</command>
-テストは失敗しますが、それ以外はすべて成功するはずです。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+    <command>check-iprop</command> テストは失敗しますが、それ以外はすべて成功するはずです。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -292,11 +289,10 @@ correctly can alter your system so that users cannot log in.
     using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-追加のドキュメントをいずれかビルドした場合は、
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行し、ドキュメントをインストールします。
-</para>
+    <para>
+    追加のドキュメントをいずれかビルドした場合は、<systemitem
+    class="username">root</systemitem> ユーザーになって以下を実行し、ドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -304,12 +300,10 @@ correctly can alter your system so that users cannot log in.
     strong passwords in the KDC database, issue the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-KDC データベースに対して <xref linkend="cracklib"/>
-ライブラリを用いた強力なパスワードを実現する場合は、
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    KDC データベースに対して <xref linkend="cracklib"/> ライブラリを用いた強力なパスワードを実現する場合は、<systemitem
+    class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -326,16 +320,16 @@ KDC データベースに対して <xref linkend="cracklib"/>
     <filename class='directory'>/var/lib/heimdal</filename> directory
     name.</para>
 @y
-<para>
-<command>sed -i ... `grep -lr "/var/heimdal"
-doc kadmin kdc lib`</command>:
-このコマンドは
-This command is used to change the
-hard-coded references in the documentation files from
-<filename class='directory'>/var/heimdal</filename> to the FHS compliant
-<filename class='directory'>/var/lib/heimdal</filename> directory
-name.
-</para>
+    <para>
+    <command>sed -i ... `grep -lr "/var/heimdal"
+    doc kadmin kdc lib`</command>:
+    このコマンドは
+    This command is used to change the
+    hard-coded references in the documentation files from
+    <filename class='directory'>/var/heimdal</filename> to the FHS compliant
+    <filename class='directory'>/var/lib/heimdal</filename> directory
+    name.
+    </para>
 @z
 
 @x
@@ -343,12 +337,10 @@ name.
     the daemon programs to be installed into
     <filename class="directory">/usr/sbin</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=/usr/sbin</parameter>:
-このパラメーターは、デーモンプログラムを
-<filename class="directory">/usr/sbin</filename>
-ディレクトリにインストールします。
-</para>
+    <para>
+    <parameter>--libexecdir=/usr/sbin</parameter>:
+    このパラメーターは、デーモンプログラムを <filename class="directory">/usr/sbin</filename> ディレクトリにインストールします。
+    </para>
 @z
 
 @x
@@ -928,4 +920,3 @@ name.
 @y
           <para>obtains AFS tokens for a number of cells.</para>
 @z
-

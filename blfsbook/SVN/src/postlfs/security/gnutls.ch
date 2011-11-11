@@ -26,14 +26,14 @@
     the proposed standards by the IETF's TLS working group. Quoting from the
     TLS protocol specification:</para>
 @y
-<para>
-
-The <application>GnuTLS</application> package contains a library and
-userspace tools which provide a secure layer over a reliable transport
-layer. Currently the <application>GnuTLS</application> library implements
-the proposed standards by the IETF's TLS working group. Quoting from the
-TLS protocol specification:
-</para>
+    <para>
+    
+    The <application>GnuTLS</application> package contains a library and
+    userspace tools which provide a secure layer over a reliable transport
+    layer. Currently the <application>GnuTLS</application> library implements
+    the proposed standards by the IETF's TLS working group. Quoting from the
+    TLS protocol specification:
+    </para>
 @z
 
 @x
@@ -42,13 +42,13 @@ TLS protocol specification:
     a way that is designed to prevent eavesdropping, tampering, or message
     forgery.</quote></para>
 @y
-<para>
-<quote>TLS プロトコルは、インターネット上にて通信プライバシーを提供します。
-
-The protocol allows client/server applications to communicate in
-a way that is designed to prevent eavesdropping, tampering, or message
-forgery.</quote>
-</para>
+    <para>
+    <quote>TLS プロトコルは、インターネット上にて通信プライバシーを提供します。
+    
+    The protocol allows client/server applications to communicate in
+    a way that is designed to prevent eavesdropping, tampering, or message
+    forgery.</quote>
+    </para>
 @z
 
 @x
@@ -59,14 +59,14 @@ forgery.</quote>
     the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
     extension and X.509 and OpenPGP certificate handling.</para>
 @y
-<para>
-<application>GnuTLS</application> provides support for TLS 1.1, TLS
-1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
-record size. Additionally, the library supports authentication using the
-SRP protocol, X.509 certificates and OpenPGP keys, along with support for
-the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
-extension and X.509 and OpenPGP certificate handling.
-</para>
+    <para>
+    <application>GnuTLS</application> provides support for TLS 1.1, TLS
+    1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
+    record size. Additionally, the library supports authentication using the
+    SRP protocol, X.509 certificates and OpenPGP keys, along with support for
+    the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
+    extension and X.509 and OpenPGP certificate handling.
+    </para>
 @z
 
 @x
@@ -119,26 +119,34 @@ extension and X.509 and OpenPGP certificate handling.
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libgcrypt"/></para>
+    <para role="required"><xref linkend="nettle"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="libgcrypt"/></para>
+    <para role="required"><xref linkend="nettle"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="guile"/>,
-    <xref linkend="libtasn1"/>,
-    <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
-    <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="guile"/>,
+      <xref linkend="libtasn1"/>,
+      <ulink url="http://p11-glue.freedesktop.org/p11-kit.html">p11-kit</ulink>,
+      <ulink url="http://platon.sk/projects/main_page.php?project_id=3">libcfg+</ulink>,
+      <ulink url="http://gaa.sourceforge.net/">GAA Argument Analyzer</ulink>,
+      <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="guile"/>,
-    <xref linkend="libtasn1"/>,
-    <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>,
-    <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて利用)</para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="guile"/>,
+      <xref linkend="libtasn1"/>,
+      <ulink url="http://p11-glue.freedesktop.org/p11-kit.html">p11-kit</ulink>,
+      <ulink url="http://platon.sk/projects/main_page.php?project_id=3">libcfg+</ulink>,
+      <ulink url="http://gaa.sourceforge.net/">GAA Argument Analyzer</ulink>,
+      <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>,
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて利用)</para>
 @z
 
 @x
@@ -146,11 +154,9 @@ extension and X.509 and OpenPGP certificate handling.
     version shipped in the <application>GnuTLS</application> tarball will be
     used instead.</para>
 @y
-<para>
-<xref linkend="libtasn1"/>
-をインストールしない場合、<application>GnuTLS</application>
-の tarball 内に含まれる旧バージョンが利用されます。
-</para>
+    <para>
+    <xref linkend="libtasn1"/> をインストールしない場合、<application>GnuTLS</application> の tarball 内に含まれる旧バージョンが利用されます。
+    </para>
 @z
 
 @x
@@ -171,39 +177,42 @@ extension and X.509 and OpenPGP certificate handling.
     <para>Install <application>GnuTLS</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GnuTLS</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GnuTLS</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>If you did not pass the <option>--enable-gtk-doc</option> parameter
     to the <command>configure</command> script, install the API documentation
-    using the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+    to the <filename
+    class='directory'>/usr/share/gtk-doc/html/gnutls</filename> directory using
+    the following command as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
-<para>
-<command>configure</command> スクリプトにて <option>--enable-gtk-doc</option>
-オプションを指定しなかった場合は、<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行して API ドキュメントをインストールします。
-</para>
+    <para>
+    <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定しなかった場合は、<systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行して API ドキュメントをインストールします。
+    ドキュメントは <filename
+    class='directory'>/usr/share/gtk-doc/html/gnutls</filename> ディレクトリにインストールされます。
+    </para>
 @z
 
 @x
@@ -229,7 +238,7 @@ extension and X.509 and OpenPGP certificate handling.
 @z
 
 @x
-        <seg>certtool, gnutls-cli, gnutls-cli-debug, gnutls-serv,
+        <seg>certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
         psktool, and srptool</seg>
         <seg>libgnutls.{so,a}, libgnutls-extra.{so,a},
         libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
@@ -237,10 +246,10 @@ extension and X.509 and OpenPGP certificate handling.
         /usr/share/doc/gnutls-&gnutls-version;, and
         /usr/share/gtk-doc/html/gnutls</seg>
 @y
-        <seg>certtool, gnutls-cli, gnutls-cli-debug, gnutls-serv,
+        <seg>certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
         psktool, srptool</seg>
         <seg>libgnutls.{so,a}, libgnutls-extra.{so,a},
-        libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
+        libgnutls-openssl.{so,a}, libgnutlsxx.{so,a}</seg>
         <seg>/usr/include/gnutls,
         /usr/share/doc/gnutls-&gnutls-version;,
         /usr/share/gtk-doc/html/gnutls</seg>
@@ -256,11 +265,11 @@ extension and X.509 and OpenPGP certificate handling.
           <para>is used to generate X.509 certificates, certificate requests,
           and private keys.</para>
 @y
-<para>
-
-is used to generate X.509 certificates, certificate requests,
-and private keys.
-</para>
+          <para>
+          
+          is used to generate X.509 certificates, certificate requests,
+          and private keys.
+          </para>
 @z
 
 @x gnutls-cli
