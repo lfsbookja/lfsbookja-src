@@ -54,6 +54,23 @@
 -->
 
     <listitem>
+      <para>2011-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/introduction.ch:
+          wget-list.txt の拡張子を取り除く。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20111108, r9660 対応。(日本語訳変更なし。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-11-10</para>
       <itemizedlist>
         <listitem>

@@ -107,7 +107,7 @@
 @y
   <para>
   パッケージとパッチのダウンロードを簡単に行う方法として <ulink
-  url="../wget-list.txt">wget-list</ulink> を利用する方法があります。
+  url="../wget-list">wget-list</ulink> を利用する方法があります。
   これは以下のように <command>wget</command> の入力引数に指定し利用します。
   </para>
 @z
