@@ -24,12 +24,11 @@
   and instructions at <ulink url='&blfs-wiki;'/>.
   Comments are welcome from all users.</para>
 @y
-<para>
-BLFS プロジェクトでは全ユーザーに向けて Wiki を提供しています。
-コメントや作業手順などの書き込みは <ulink url='&blfs-wiki;'/>
-へお願いします。
-皆さんからのコメントを歓迎します。
-</para>
+  <para>
+  BLFS プロジェクトでは全ユーザーに向けて Wiki を提供しています。
+  コメントや作業手順などの書き込みは <ulink url='&blfs-wiki;'/> へお願いします。
+  皆さんからのコメントを歓迎します。
+  </para>
 @z
 
 @x
@@ -41,19 +40,19 @@ BLFS プロジェクトでは全ユーザーに向けて Wiki を提供してい
 @x
         <para>Users must register and log in to edit a page.</para>
 @y
-<para>
-ページを編集する場合は、事前登録をした上でログインして行ってください。
-</para>
+        <para>
+        ページを編集する場合は、事前登録をした上でログインして行ってください。
+        </para>
 @z
 
 @x
         <para>Suggestions to change the book should be made by creating a new ticket,
         <emphasis>not</emphasis> by making comments in the Wiki.</para>
 @y
-<para>
-本書に対する変更の提案は、チケットを新たに起こして挙げてください。
-Wiki のコメントとして書き込むのは<emphasis>やめてください</emphasis>。
-</para>
+        <para>
+        本書に対する変更の提案は、チケットを新たに起こして挙げてください。
+        Wiki のコメントとして書き込むのは<emphasis>やめてください</emphasis>。
+        </para>
 @z
 
 @x
@@ -61,12 +60,10 @@ Wiki のコメントとして書き込むのは<emphasis>やめてください</
         by subscribing and mailing to the BLFS Support Mailing List at <ulink
         url='mailto:blfs-support@&lfs-domainname;'/>.</para>
 @y
-<para>
-インストール時に問題が発生しこれを質問する場合は、
-BLFS Support メーリングリスト
-<ulink url='mailto:blfs-support@&lfs-domainname;'/>
-に参加し投稿してください。
-</para>
+        <para>
+        インストール時に問題が発生しこれを質問する場合は、BLFS Support メーリングリスト
+        <ulink url='mailto:blfs-support@&lfs-domainname;'/> に参加し投稿してください。
+        </para>
 @z
 
 @x
@@ -74,19 +71,16 @@ BLFS Support メーリングリスト
         and mailing to the BLFS Development List at <ulink
         url='mailto:blfs-dev@&lfs-domainname;'/>.</para>
 @y
-<para>
-ビルド手順に関する議論は、
-BLFS Development メーリングリスト
-<ulink url='mailto:blfs-dev@&lfs-domainname;'/>
-に参加し投稿してください。
-</para>
+        <para>
+        ビルド手順に関する議論は、BLFS Development メーリングリスト <ulink
+        url='mailto:blfs-dev@&lfs-domainname;'/> に参加し投稿してください。
+        </para>
 @z
 
 @x
         <para>Inappropriate material will be removed.</para>
 @y
-<para>
-不適切な書き込みは削除します。
-</para>
+        <para>
+        不適切な書き込みは削除します。
+        </para>
 @z
-

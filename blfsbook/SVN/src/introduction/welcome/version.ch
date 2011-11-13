@@ -36,13 +36,11 @@
   <ulink url="http://www.&lfs-domainname;/mirrors.html"/> for an updated
   version.</para>
 @y
-<para>
-本書は BLFS ブック、バージョン &version; &releasedate; です。
-これは BLFS の開発ブランチであり、LFS の開発版に対応づいています。
-このバージョン (&version;) が 1ヶ月以上古ければ、入手したミラーサイトが最新を提供していないのかもしれません。
-それよりも新しいバージョンが入手可能であるはずです。
-<ulink url="http://www.&lfs-domainname;/mirrors.html"/>
-に示されるミラーサイトのいずれかを確認して、最新版を入手してください。
-</para>
+  <para>
+  本書は BLFS ブック、バージョン &version; &releasedate; です。
+  これは BLFS の開発ブランチであり、LFS の開発版に対応づいています。
+  このバージョン (&version;) が 1ヶ月以上古ければ、入手したミラーサイトが最新を提供していないのかもしれません。
+  それよりも新しいバージョンが入手可能であるはずです。
+  <ulink url="http://www.&lfs-domainname;/mirrors.html"/> に示されるミラーサイトのいずれかを確認して、最新版を入手してください。
+  </para>
 @z
-

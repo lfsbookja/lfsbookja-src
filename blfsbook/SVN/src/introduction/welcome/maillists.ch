@@ -32,11 +32,10 @@
   lists that are used for the development of the BLFS book. These lists include,
   among others, the main development and support lists.</para>
 @y
-<para>
-The &lfs-domainname;
-サーバーでは BLFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
-このメーリングリストは主となる開発用とは別に、サポート用のものもあります。
-</para>
+  <para>
+  The &lfs-domainname; サーバーでは BLFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
+  このメーリングリストは主となる開発用とは別に、サポート用のものもあります。
+  </para>
 @z
 
 @x
@@ -44,10 +43,8 @@ The &lfs-domainname;
   subscribe to them, archive locations, etc., visit
   <ulink url="http://www.&lfs-domainname;/mail.html"/>.</para>
 @y
-<para>
-メーリングリストの種類、参加方法、アーカイブの提供場所など詳しいことは
-<ulink url="http://www.&lfs-domainname;/mail.html"/>
-を参照してください。
-</para>
+  <para>
+  メーリングリストの種類、参加方法、アーカイブの提供場所など詳しいことは <ulink
+  url="http://www.&lfs-domainname;/mail.html"/> を参照してください。
+  </para>
 @z
-

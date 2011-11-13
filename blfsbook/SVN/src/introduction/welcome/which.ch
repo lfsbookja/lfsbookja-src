@@ -35,13 +35,12 @@
   to guide you in the process of going from the base system to your intended
   destination. Choice is very much involved.</para>
 @y
-<para>
-Linux From Scratch ブックとは違って BLFS
-は、記述の順番どおりに作業を進めるものではありません。
-そもそも LFS は Web サーバーやらマルチメディアデスクトップ環境やらを作り出していく元となるベースシステムを作り出すものでした。
-BLFS が説明するのは、ベースシステムからお望みのシステムへと構築作業を進めていくことです。
-選択肢は数多くあります。
-</para>
+  <para>
+  Linux From Scratch ブックとは違って BLFS は、記述の順番どおりに作業を進めるものではありません。
+  そもそも LFS は Web サーバーやらマルチメディアデスクトップ環境やらを作り出していく元となるベースシステムを作り出すものでした。
+  BLFS が説明するのは、ベースシステムからお望みのシステムへと構築作業を進めていくことです。
+  選択肢は数多くあります。
+  </para>
 @z
 
 @x
@@ -52,14 +51,12 @@ BLFS が説明するのは、ベースシステムからお望みのシステム
   unpack software, issues related to using different locales and various other
   aspects which apply throughout the book.</para>
 @y
-<para>
-本書を読むにあたっては、特定の節をお読みいただく必要があります。
-今読んでいる <xref linkend="introduction"/>
-の部には一般的な情報を示しています。
-特に <xref linkend="important"/>
-の章は十分に注意して読んでください。
-その章では、ソースの解凍方法、さまざまなロケールを取り扱う方法、本書全般を通じた諸々について説明しています。
-</para>
+  <para>
+  本書を読むにあたっては、特定の節をお読みいただく必要があります。
+  今読んでいる <xref linkend="introduction"/> の部には一般的な情報を示しています。
+  特に <xref linkend="important"/> の章は十分に注意して読んでください。
+  その章では、ソースの解凍方法、さまざまなロケールを取り扱う方法、本書全般を通じた諸々について説明しています。
+  </para>
 @z
 
 @x
@@ -72,19 +69,15 @@ BLFS が説明するのは、ベースシステムからお望みのシステム
   the sections on Editors and File Systems) while building your LFS
   system.</para>
 @y
-<para>
-<xref linkend="postlfs"/>
-の部では、たいていの方にお読みいただくことになる内容を示しています。
-そこでは、設定をほどこしていくといった内容だけでなく、
-セキュリティ (<xref linkend="postlfs-security"/>)、
-ファイルシステム (<xref linkend="postlfs-filesystems"/>)、
-エディタ (<xref linkend="postlfs-editors"/>)、
-シェル (<xref linkend="postlfs-shells"/>)
-に関することも取り扱っています。
-実際に LFS システムのビルド作業をさらに進めていけば、特定の章
-(特にエディタやファイルシステムなど)
-を参照していくことになるはずです。
-</para>
+  <para>
+  <xref linkend="postlfs"/> の部では、たいていの方にお読みいただくことになる内容を示しています。
+  そこでは、設定をほどこしていくといった内容だけでなく、セキュリティ (<xref
+  linkend="postlfs-security"/>)、ファイルシステム (<xref
+  linkend="postlfs-filesystems"/>)、エディター (<xref
+  linkend="postlfs-editors"/>)、シェル (<xref
+  linkend="postlfs-shells"/>) に関することも取り扱っています。
+  実際に LFS システムのビルド作業をさらに進めていけば、特定の章 (特にエディターやファイルシステムなど) を参照していくことになるはずです。
+  </para>
 @z
 
 @x
@@ -98,19 +91,18 @@ BLFS が説明するのは、ベースシステムからお望みのシステム
   it depends upon so you can choose the program you want to install and see
   what it needs.</para>
 @y
-<para>
-上のような基本的な項を参照した次には、<xref linkend="general"/>
-といった部にも目を通すことが多いかと思います。
-
-This part contains
-information on many items which are prerequisites for other sections of the
-book as well as some items (such as <xref linkend="general-prog"/>)
-which are useful in their own right.  Note that you don't have to install all
-of these libraries and packages found in this part to start with as each
-BLFS installation procedure tells you which packages
-it depends upon so you can choose the program you want to install and see
-what it needs.
-</para>
+  <para>
+  上のような基本的な項を参照した次には、<xref linkend="general"/> といった部にも目を通すことが多いかと思います。
+  
+  This part contains
+  information on many items which are prerequisites for other sections of the
+  book as well as some items (such as <xref linkend="general-prog"/>)
+  which are useful in their own right.  Note that you don't have to install all
+  of these libraries and packages found in this part to start with as each
+  BLFS installation procedure tells you which packages
+  it depends upon so you can choose the program you want to install and see
+  what it needs.
+  </para>
 @z
 
 @x
@@ -176,12 +168,11 @@ what it needs.
   linkend="pst"/>.  This is useful for most people with desktop systems and
   even those who are creating mainly server systems will find it useful.</para>
 @y
-<para>
-最後の部では <xref linkend="pst"/>
-The final part of the main BLFS book deals with <xref
-linkend="pst"/>.  This is useful for most people with desktop systems and
-even those who are creating mainly server systems will find it useful.
-</para>
+  <para>
+  最後の部では <xref linkend="pst"/> The final part of the main BLFS book deals with <xref
+  linkend="pst"/>.  This is useful for most people with desktop systems and
+  even those who are creating mainly server systems will find it useful.
+  </para>
 @z
 
 @x
@@ -189,4 +180,3 @@ even those who are creating mainly server systems will find it useful.
 @y
   <para>We hope you enjoy using BLFS and find it useful.</para>
 @z
-

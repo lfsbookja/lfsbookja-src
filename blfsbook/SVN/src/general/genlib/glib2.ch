@@ -31,14 +31,14 @@
     portability wrappers and interfaces for such runtime functionality as an
     event loop, threads, dynamic loading, and an object system.</para>
 @y
-<para>
-<application>GLib</application>
-パッケージは低レベルなコアライブラリを提供します。
-
-This is useful for providing data structure handling for C,
-portability wrappers and interfaces for such runtime functionality as an
-event loop, threads, dynamic loading, and an object system.
-</para>
+    <para>
+    <application>GLib</application>
+    パッケージは低レベルなコアライブラリを提供します。
+    
+    This is useful for providing data structure handling for C,
+    portability wrappers and interfaces for such runtime functionality as an
+    event loop, threads, dynamic loading, and an object system.
+    </para>
 @z
 
 @x
@@ -111,33 +111,6 @@ event loop, threads, dynamic loading, and an object system.
     <xref linkend="gtk-doc"/></para>
 @z
 
-% @x
-%     <para><application>Gamin</application> requires
-%     <application>GLib</application> in order to compile; therefore, you must
-%     first install <application>GLib</application>, then compile
-%     <application>Gamin</application>, and recompile
-%     <application>GLib</application> against it.</para>
-% @y
-% <para>
-% <application>Gamin</application> をビルドするには <application>GLib</application>
-% が必要です。
-% したがってまずは <application>GLib</application>
-% をインストールした後に <application>Gamin</application>
-% をビルドし、再度 <application>GLib</application>
-% をビルドすることが必要です。
-% </para>
-% @z
-
-% @x
-%     <bridgehead renderas="sect4">Optional Runtime Dependency for the
-%     <command>gtester-report</command> program</bridgehead>
-%     <para role="optional"><xref linkend="python"/></para>
-% @y
-%     <bridgehead renderas="sect4">&j-Optional;
-%     <command>gtester-report</command> プログラム実行時の依存パッケージ</bridgehead>
-%     <para role="optional"><xref linkend="python"/></para>
-% @z
-
 @x
     <bridgehead renderas="sect4">Additional Runtime Dependencies</bridgehead>
     <para role="optional">Quoted directly from the <filename>INSTALL</filename>
@@ -174,9 +147,9 @@ event loop, threads, dynamic loading, and an object system.
     <para>Install <application>GLib</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GLib</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GLib</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -187,40 +160,36 @@ event loop, threads, dynamic loading, and an object system.
     first install <application>GLib</application> and then run the test
     suite.</para>
 @y
-<para>
-<application>GLib</application> のテストスイートを実行するには
-<application>desktop-file-utils</application> が必要です。
-しかし <application>desktop-file-utils</application> をビルドするには
-<application>GLib</application> が必要なものとなっています。
-したがってまずは <application>GLib</application>
-をインストールした後にテストスイートを実行することになります。
-</para>
+    <para>
+    <application>GLib</application> のテストスイートを実行するには <application>desktop-file-utils</application> が必要です。
+    しかし <application>desktop-file-utils</application> をビルドするには <application>GLib</application> が必要なものとなっています。
+    したがってまずは <application>GLib</application> をインストールした後にテストスイートを実行することになります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>You should now install <xref linkend="desktop-file-utils"/> and proceed to
     run the test suite.</para>
 @y
-<para>
-ここで <xref linkend="desktop-file-utils"/>
-をインストールした上で、テストスイートを実行してください。
-</para>
+    <para>
+    ここで <xref linkend="desktop-file-utils"/> をインストールした上で、テストスイートを実行してください。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
@@ -235,14 +204,10 @@ event loop, threads, dynamic loading, and an object system.
     <application>PCRE</application> library instead of an internal
     version.</para>
 @y
-<para>
-<parameter>--with-pcre=system</parameter>:
-
-This parameter causes the
-build to use a system-provided version of the
-<application>PCRE</application> library instead of an internal
-version.
-</para>
+    <para>
+    <parameter>--with-pcre=system</parameter>:
+    このパラメーターの指定により、バンドルされている <application>PCRE</application> ライブラリではなく、インストール済のライブラリを用いてビルドを行います。
+    </para>
 @z
 
 @x
@@ -267,14 +232,13 @@ version.
       encoding, set the variable <envar>G_FILENAME_ENCODING</envar> to the
       value "@locale":</para>
 @y
-      <para>By default, <application>GLib</application> assumes that all
-      filenames are in the UTF-8 charset. See the <xref
-      linkend="locale-wrong-filename-encoding"/> section of the <xref
-      linkend="locale-issues"/> page for more details on this kind of
-      issue. In order to tell <application>GLib</application> and
-      applications that use it that filenames are in the default locale
-      encoding, set the variable <envar>G_FILENAME_ENCODING</envar> to the
-      value "@locale":</para>
+      <para>
+      デフォルトで <application>GLib</application> はファイル名がすべて UTF-8 エンコーディングであるものとして取り扱います。
+      このような問題に関しての詳細は <xref
+      linkend="locale-issues"/> ページの <xref
+      linkend="locale-wrong-filename-encoding"/> の項を参照してください。
+      <application>GLib</application> やこれを利用するアプリケーションに対して、ファイル名がデフォルトエンコーディングであることを指示するには、変数 <envar>G_FILENAME_ENCODING</envar> に対して "@locale" という値をセットします。
+      </para>
 @z
 
 @x

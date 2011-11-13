@@ -25,11 +25,10 @@
   however repeat some of that information here for those new to building
   their own software.</para>
 @y
-<para>
-LFS システムを構築した皆さんであれば、ソフトウェアのダウンロードと伸張 (解凍)
-の方法は既にご存知のはずです。
-しかしここでは、ソフトウェア構築に不慣れな方に向けてそういった情報も再度説明することにします。
-</para>
+  <para>
+  LFS システムを構築した皆さんであれば、ソフトウェアのダウンロードと伸張 (解凍) の方法は既にご存知のはずです。
+  しかしここでは、ソフトウェア構築に不慣れな方に向けてそういった情報も再度説明することにします。
+  </para>
 @z
 
 @x
@@ -38,13 +37,13 @@ LFS システムを構築した皆さんであれば、ソフトウェアのダ�
   available via HTTP.  These are referenced as needed in the installation
   instructions.</para>
 @y
-<para>
-インストール説明を行っている個々のページでは、パッケージのダウンロード先 URL を示しています。
-
-We do however keep a selection of patches
-available via HTTP.  These are referenced as needed in the installation
-instructions.
-</para>
+  <para>
+  インストール説明を行っている個々のページでは、パッケージのダウンロード先 URL を示しています。
+  
+  We do however keep a selection of patches
+  available via HTTP.  These are referenced as needed in the installation
+  instructions.
+  </para>
 @z
 
 @x
@@ -54,14 +53,14 @@ instructions.
   uncompressed any required patches and they are in the directory immediately
   above the 'build' directory.</para>
 @y
-<para>
-
-While you can keep the source files anywhere you like, we assume that
-you have unpacked the package and changed into the directory created by the
-unpacking process (the 'build' directory).  We also assume you have
-uncompressed any required patches and they are in the directory immediately
-above the 'build' directory.
-</para>
+  <para>
+  
+  While you can keep the source files anywhere you like, we assume that
+  you have unpacked the package and changed into the directory created by the
+  unpacking process (the 'build' directory).  We also assume you have
+  uncompressed any required patches and they are in the directory immediately
+  above the 'build' directory.
+  </para>
 @z
 
 @x
@@ -74,13 +73,11 @@ above the 'build' directory.
   <filename>Makefile</filename>s and C code, but if in doubt, start from a
   clean tree.</para>
 @y
-<para>
-特に明確には述べていませんが、パッケージビルド時は
-<emphasis>きれいなソースツリー</emphasis>
-にて作業を進めてください。
-configure 処理中やコンパイル中にエラーが発生した場合は、もう一度ビルド作業を進めるなら、いったんソースツリーを削除した上で、パッケージソースの伸張（解凍）からやり直すのが適切なやり方です。
-もちろんあなたが、独自の <filename>Makefile</filename> なり C コードなりを用いているような熟練ユーザーであれば話は別ですが、自信がない場合は全くの新しいソースツリーから作業を始めることにしてください。
-</para>
+  <para>
+  特に明確には述べていませんが、パッケージビルド時は <emphasis>きれいなソースツリー</emphasis> にて作業を進めてください。
+  configure 処理中やコンパイル中にエラーが発生した場合は、もう一度ビルド作業を進めるなら、いったんソースツリーを削除した上で、パッケージソースの伸張（解凍）からやり直すのが適切なやり方です。
+  もちろんあなたが独自の <filename>Makefile</filename> なり C コードなりを用いているような熟練ユーザーであれば話は別ですが、自信がない場合は全くの新しいソースツリーから作業を始めることにしてください。
+  </para>
 @z
 
 @x
@@ -99,16 +96,14 @@ configure 処理中やコンパイル中にエラーが発生した場合は、�
     unprivileged user. The book will advise you on instructions that need
     <systemitem class='username'>root</systemitem> privileges.</para>
 @y
-<para>
-Unix システム管理における鉄則は、スーパーユーザーによる操作は必要な時にのみ行うということです。
-そこで BLFS でも、ソフトウェアをビルドする際には一般ユーザーにて行い、インストール時のみ
-<systemitem class='username'>root</systemitem>
-ユーザーとなって作業することとしています。
-本書中では、どのパッケージであってもこのやり方で進めます。
-特別に指定されていない限りは、すべての手順を一般ユーザーにて実施していきます。
-必要な時には <systemitem class='username'>root</systemitem>
-権限にて作業を進めるべきであることも説明しあｍす。
-</para>
+    <para>
+    Unix システム管理における鉄則は、スーパーユーザーによる操作は必要な時にのみ行うということです。
+    そこで BLFS でも、ソフトウェアをビルドする際には一般ユーザーにて行い、インストール時のみ <systemitem
+    class='username'>root</systemitem> ユーザーとなって作業することとしています。
+    本書中では、どのパッケージであってもこのやり方で進めます。
+    特別に指定されていない限りは、すべての手順を一般ユーザーにて実施していきます。
+    必要な時には <systemitem class='username'>root</systemitem> 権限にて作業を進めるべきであることも説明します。
+    </para>
 @z
 
 @x
@@ -122,10 +117,9 @@ Unix システム管理における鉄則は、スーパーユーザーによる
     and compressed, it is unpacked by running one of the following
     commands:</para>
 @y
-<para>
-ファイルが <filename class='extension'>.tar</filename>
-形式でかつ圧縮されている場合は、以下のいずれかのコマンドにより伸張 (解凍) することができます。
-</para>
+    <para>
+    ファイルが <filename class='extension'>.tar</filename> 形式でかつ圧縮されている場合は、以下のいずれかのコマンドにより伸張 (解凍) することができます。
+    </para>
 @z
 
 @x
@@ -135,21 +129,19 @@ Unix システム管理における鉄則は、スーパーユーザーによる
       extraction as well as make any errors produced during the extraction
       more obvious to you.</para>
 @y
-<para>
-上に示すコマンドや、これ以降に示すコマンドにおいても
-<option>v</option>
-パラメータはつけなくても構いません。
-これをつけないようにすれば、アーカイブから抽出されるファイル一覧の表示が省略されます。
-抽出処理時間が短縮されて、抽出中にエラーが発生した場合には判別しやすくなります。
-</para>
+      <para>
+      上に示すコマンドや、これ以降に示すコマンドにおいても <option>v</option> パラメーターはつけなくても構いません。
+      これをつけないようにすれば、アーカイブから抽出されるファイル一覧の表示が省略されます。
+      抽出処理時間が短縮されて、抽出中にエラーが発生した場合には判別しやすくなります。
+      </para>
 @z
 
 @x
     <para>You can also use a slightly different method:</para>
 @y
-<para>
-あるいは以下のようなやり方もあります。
-</para>
+    <para>
+    あるいは以下のようなやり方もあります。
+    </para>
 @z
 
 @x
@@ -171,9 +163,9 @@ Unix システム管理における鉄則は、スーパーユーザーによる
 @x
     <title>Verifying File Integrity Using 'md5sum'</title>
 @y
-<title>
-'md5sum' を使ったファイルの整合確認
-</title>
+    <title>
+    'md5sum' を使ったファイルの整合確認
+    </title>
 @z
 
 @x
@@ -213,9 +205,9 @@ Unix システム管理における鉄則は、スーパーユーザーによる
 @x
     <title>Creating Log Files During Installation</title>
 @y
-<title>
-インストール中のログファイル生成
-</title>
+    <title>
+    インストール中のログファイル生成
+    </title>
 @z
 
 @x
@@ -362,25 +354,22 @@ Unix システム管理における鉄則は、スーパーユーザーによる
     <keycap>Y</keycap> key or entering a string of text. Perhaps the easiest
     way to show its use is in an example.</para>
 @y
-<para>
-入力プロンプトに対して決まった内容を入力したり、それが複数回あってもすべて同一の答えを入力するような場合があります。
-そういった時は <command>yes</command> コマンドを利用すると便利です。
-<command>yes</command> コマンドは、何度かある問合せ入力に対して同一の答えを入力するものです。
-入力内容として、単に <keycap>Enter</keycap>
-キーを入力する、<keycap>Y</keycap>
-キーを入力する、所定の文字列を入力する、といったことが可能です。
-単純な利用例を以下に示します。
-</para>
+    <para>
+    入力プロンプトに対して決まった内容を入力したり、それが複数回あってもすべて同一の答えを入力するような場合があります。
+    そういった時は <command>yes</command> コマンドを利用すると便利です。
+    <command>yes</command> コマンドは、何度かある問合せ入力に対して同一の答えを入力するものです。
+    入力内容として、単に <keycap>Enter</keycap> キーを入力する、<keycap>Y</keycap> キーを入力する、所定の文字列を入力する、といったことが可能です。
+    単純な利用例を以下に示します。
+    </para>
 @z
 
 @x
     <para>First, create a short <application>Bash</application> script by
     entering the following commands:</para>
 @y
-<para>
-初めに以下のコマンドを実行して <application>Bash</application>
-スクリプトを生成します。
-</para>
+    <para>
+    初めに以下のコマンドを実行して <application>Bash</application> スクリプトを生成します。
+    </para>
 @z
 
 @x
@@ -391,13 +380,12 @@ Unix システム管理における鉄則は、スーパーユーザーによる
     <command>yes</command> command to automate the entering of a
     response:</para>
 @y
-<para>
-まずはこのスクリプト <command>./blfs-yes-test1</command> をコマンドラインから実行してみます。
-入力が促されて処理が止まるので、何かを入力して
-(あるいは何も入力せずに) <keycap>Enter</keycap> キーを入力します。
-入力した内容は画面上に表示されます。
-さてそこで <command>yes</command> コマンドを用い、入力を自動化することにします。
-</para>
+    <para>
+    まずはこのスクリプト <command>./blfs-yes-test1</command> をコマンドラインから実行してみます。
+    入力が促されて処理が止まるので、何かを入力して (あるいは何も入力せずに) <keycap>Enter</keycap> キーを入力します。
+    入力した内容は画面上に表示されます。
+    さてそこで <command>yes</command> コマンドを用い、入力を自動化することにします。
+    </para>
 @z
 
 @x
@@ -405,11 +393,10 @@ Unix システム管理における鉄則は、スーパーユーザーによる
     results in <keycap>y</keycap> being passed to the script. Now try it with a
     string of text:</para>
 @y
-<para>
-この場合、<command>yes</command> のパイプ処理を通じて、スクリプトに対しては
-<keycap>y</keycap> が入力されたものとして受け渡されます。
-以下は特定の文字列を受け渡すような例です。
-</para>
+    <para>
+    この場合、<command>yes</command> のパイプ処理を通じて、スクリプトに対しては <keycap>y</keycap> が入力されたものとして受け渡されます。
+    以下は特定の文字列を受け渡すような例です。
+    </para>
 @z
 
 @x
@@ -568,10 +555,10 @@ Unix システム管理における鉄則は、スーパーユーザーによる
     <para>For each package described, BLFS lists the known dependencies.
     These are listed under several headings, whose meaning is as follows:</para>
 @y
-<para>
-本書が示す各パッケージの説明においては、依存するパッケージを一覧表示しています。
-その一覧では以下に示すような項目分けを行っています。
-</para>
+    <para>
+    本書が示す各パッケージの説明においては、依存するパッケージを一覧表示しています。
+    その一覧では以下に示すような項目分けを行っています。
+    </para>
 @z
 
 @x
@@ -579,10 +566,9 @@ Unix システム管理における鉄則は、スーパーユーザーによる
         cannot be correctly built without the dependency having first been
         installed.</para>
 @y
-<para>
-<emphasis>必須</emphasis>
-は、パッケージを初めてインストールする際には、依存しているそれらのパッケージがない状態では正しくビルドすることができないことを表します。
-</para>
+        <para>
+        <emphasis>必須</emphasis> は、パッケージを初めてインストールする際には、依存しているそれらのパッケージがない状態では正しくビルドすることができないことを表します。
+        </para>
 @z
 
 @x
@@ -591,14 +577,14 @@ Unix システム管理における鉄則は、スーパーユーザーによる
         build, that won't have issues either during the build process, or at
         run-time.</para>
 @y
-<para>
-<emphasis>推奨</emphasis>
-は、
-means that BLFS strongly
-suggests this package is installed first for a clean and trouble-free
-build, that won't have issues either during the build process, or at
-run-time.
-</para>
+        <para>
+        <emphasis>推奨</emphasis>
+        は、
+        means that BLFS strongly
+        suggests this package is installed first for a clean and trouble-free
+        build, that won't have issues either during the build process, or at
+        run-time.
+        </para>
 @z
 
 @x
@@ -606,13 +592,13 @@ run-time.
         installed for added functionality. Often BLFS will describe the
         dependency to explain the added functionality that will result.</para>
 @y
-<para>
-<emphasis>任意</emphasis>
-は、付加的な機能を実現するためにはそのパッケージが必要であることを表します。
-
-Often BLFS will describe the
-dependency to explain the added functionality that will result.
-</para>
+        <para>
+        <emphasis>任意</emphasis>
+        は、付加的な機能を実現するためにはそのパッケージが必要であることを表します。
+        
+        Often BLFS will describe the
+        dependency to explain the added functionality that will result.
+        </para>
 @z
 
 @x
@@ -628,11 +614,11 @@ dependency to explain the added functionality that will result.
     package has been overlooked or was not tested with this particular version
     of BLFS.</para>
 @y
-<para>
-本書内のパッケージをビルドしようとした際に、ビルド出来なかったり正常に動作しなかったりすることが発生するかもしれません。
-本書の編集者は、各パッケージが正常にビルド出来、正常に動作するように常に確認を行っています。
-しかしパッケージの確認に見落としがあったり、BLFS の特定バージョンでのテスト確認が不十分であったりするものもあります。
-</para>
+    <para>
+    本書内のパッケージをビルドしようとした際に、ビルド出来なかったり正常に動作しなかったりすることが発生するかもしれません。
+    本書の編集者は、各パッケージが正常にビルド出来、正常に動作するように常に確認を行っています。
+    しかしパッケージの確認に見落としがあったり、BLFS の特定バージョンでのテスト確認が不十分であったりするものもあります。
+    </para>
 @z
 
 @x
@@ -646,13 +632,12 @@ dependency to explain the added functionality that will result.
     typing: 'package_name home page' will result in you finding the
     maintainer's web site.</para>
 @y
-<para>
-パッケージのビルド不備や動作不備に気づいた方は、そのパッケージのより新しいバージョンが存在しているかどうかを確認してください。
-これはつまり、パッケージ管理サイトを参照して最新バージョンを入手し、そのバージョンでのビルドを試して頂きたいのです。
-パッケージのダウンロード URL だけでは管理サイトが見つけられなかった場合は、Google を利用してパッケージ名を検索してください。
-例えば Google にて 'パッケージ名 download' (引用符は除きます) といった検索語を入力してみてください。
-あるいは 'パッケージ名 home page' と入力するのが良いかもしれません。
-そうすることでパッケージ管理サイトが見つけ出せるはずです。
-</para>
+    <para>
+    パッケージのビルド不備や動作不備に気づいた方は、そのパッケージのより新しいバージョンが存在しているかどうかを確認してください。
+    これはつまり、パッケージ管理サイトを参照して最新バージョンを入手し、そのバージョンでのビルドを試して頂きたいのです。
+    パッケージのダウンロード URL だけでは管理サイトが見つけられなかった場合は、Google を利用してパッケージ名を検索してください。
+    例えば Google にて 'パッケージ名 download' (引用符は除きます) といった検索語を入力してみてください。
+    あるいは 'パッケージ名 home page' と入力するのが良いかもしれません。
+    そうすることでパッケージ管理サイトが見つけ出せるはずです。
+    </para>
 @z
-

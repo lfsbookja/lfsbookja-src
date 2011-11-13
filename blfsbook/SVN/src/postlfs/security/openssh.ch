@@ -27,12 +27,14 @@
   commands are secure implementions of <command>telnet</command> and 
   <command>rcp</command> respectively.</para>
 @y
-  <para>The <application>OpenSSH</application> package contains
-  <command>ssh</command> clients and the <command>sshd</command> daemon.
+  <para>
+  <application>OpenSSH</application> パッケージは <command>ssh</command> クライアントと <command>sshd</command> デーモンを提供します。
+  
   This is useful for encrypting authentication and subsequent traffic
   over a network. The <command>ssh</command> and <command>scp</command>
   commands are secure implementions of <command>telnet</command> and 
-  <command>rcp</command> respectively.</para>
+  <command>rcp</command> respectively.
+  </para>
 @z
 
 @x
@@ -93,7 +95,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="openssl"/></para>
 @z
 
@@ -109,14 +111,14 @@
     <ulink
     url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink></para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/>,
     <xref linkend="tcpwrappers"/>,
     <xref linkend="x-window-system"/>,
     <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>,
     <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
     (provides a command-line history feature to <command>sftp</command>),
-    <ulink url="http://www.opensc-project.org/">OpenSC</ulink>, and
+    <ulink url="http://www.opensc-project.org/">OpenSC</ulink>,
     <ulink
     url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink></para>
 @z
@@ -137,14 +139,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/OpenSSH'/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url='&blfs-wiki;/OpenSSH'/></para>
 @z
 
 @x
     <title>Installation of OpenSSH</title>
 @y
-    <title>Installation of OpenSSH</title>
+    <title>OpenSSH のインストール</title>
 @z
 
 @x
@@ -173,20 +175,21 @@
     <application>OpenSSL</application> library. To link against the static
     library, execute the following command:</para>
 @y
-    <para><application>OpenSSH</application> is very sensitive to changes in
-    the linked <application>OpenSSL</application> libraries. If you recompile
-    <application>OpenSSL</application>, <application>OpenSSH</application> may
-    fail to start up. An alternative is to link against the static
-    <application>OpenSSL</application> library. To link against the static
-    library, execute the following command:</para>
+    <para>
+    <application>OpenSSH</application> は、リンクされる <application>OpenSSL</application> ライブラリの変更に大きく影響を受けます。
+    <application>OpenSSL</application> を再コンパイルすると、場合によっては <application>OpenSSH</application> が起動しないかもしれません。
+    これを避ける方法として、スタティックな <application>OpenSSL</application> ライブラリをリンクする方法があります。
+    これを行うには、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>Install <application>OpenSSH</application> by running
     the following commands:</para>
 @y
-    <para>Install <application>OpenSSH</application> by running
-    the following commands:</para>
+    <para>
+    以下のコマンドを実行して <application>OpenSSH</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -200,21 +203,21 @@
     <filename class="directory">/usr/bin</filename>, making sure that you 
     back up any existing copy first.</para>
 @y
-    <para>If you linked <application>tcp_wrappers</application> into the
-    build using the <option>--with-tcp-wrappers</option> parameter, ensure
-    you add 127.0.0.1 to the sshd line in <filename>/etc/hosts.allow</filename>
-    if you have a restrictive <filename>/etc/hosts.deny</filename> file, or the
-    test suite will fail. Additionally, the testsuite requires an installed
-    copy of <command>scp</command> to complete the multiplexing tests.  To
-    run the test suite, first copy the scp program to  
-    <filename class="directory">/usr/bin</filename>, making sure that you 
-    back up any existing copy first.</para>
+    <para>
+    ビルド時に <option>--with-tcp-wrappers</option> パラメーターを使って <application>tcp_wrappers</application> をリンクした場合、以下に注意してください。
+    <filename>/etc/hosts.deny</filename> ファイルにて、きつい制限を与えているなら <filename>/etc/hosts.allow</filename> ファイル内の sshd の行に 127.0.0.1 を加えておく必要があります。。
+    これを行っておかないとテストに失敗します。
+    またマルチプレックステスト (multiplexing tests) を行うためには <command>scp</command> が既にインストールされている必要があります。
+    テストスイートの実行前には、<filename class="directory">/usr/bin</filename> ディレクトリに scp プログラムがあるなら、そのバックアップを取った上で scp プログラムをそのディレクトリにコピーしておいてください。
+    </para>
 @z
 
 @x
     <para>To run the test suite, issue the following commands:</para>
 @y
-    <para>To run the test suite, issue the following commands:</para>
+    <para>
+    ビルド結果をテストする場合は以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -222,15 +225,16 @@
     with the installation, as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If the above command produces no 'FATAL' errors, then proceed
-    with the installation, as the
-    <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    上記のコマンド実行により 'FATAL' と表記されるエラーがなければ、次へ進みます。
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&j-CommandExplanations;</title>
 @z
 
 @x
@@ -240,11 +244,13 @@
     <application>Heimdal</application> package in accordance with the BLFS
     instructions. The command is harmless in all other instances.</para>
 @y
-    <para><command>sed -i.bak '/K5LIBS=/s/ -ldes//' configure</command>:
+    <para>
+    <command>sed -i.bak '/K5LIBS=/s/ -ldes//' configure</command>:
     This command fixes a build crash if you used the
     <option>--with-kerberos5</option> parameter and you built the
     <application>Heimdal</application> package in accordance with the BLFS
-    instructions. The command is harmless in all other instances.</para>
+    instructions. The command is harmless in all other instances.
+    </para>
 @z
 
 @x
@@ -252,9 +258,11 @@
     the configuration files from being installed in
     <filename class="directory">/usr/etc</filename>.</para>
 @y
-    <para><parameter>--sysconfdir=/etc/ssh</parameter>: This prevents
-    the configuration files from being installed in
-    <filename class="directory">/usr/etc</filename>.</para>
+    <para>
+    <parameter>--sysconfdir=/etc/ssh</parameter>:
+    このパラメーターを指定することで、設定ファイルを <filename
+    class="directory">/usr/etc</filename> にインストールしないようにします。
+    </para>
 @z
 
 @x
@@ -262,17 +270,21 @@
     puts the Ssh.bin file (used for SmartCard authentication) in
     <filename class="directory">/usr/share/sshd</filename>.</para>
 @y
-    <para><parameter>--datadir=/usr/share/sshd</parameter>: This switch
-    puts the Ssh.bin file (used for SmartCard authentication) in
-    <filename class="directory">/usr/share/sshd</filename>.</para>
+    <para>
+    <parameter>--datadir=/usr/share/sshd</parameter>:
+    このパラメーターの指定により、(スマートカード認証に用いられる) Ssh.bin ファイルを <filename
+    class="directory">/usr/share/sshd</filename> へインストールします。
+    </para>
 @z
 
 @x
     <para><parameter>--with-md5-passwords</parameter>: This is required
     with the default configuration of Shadow password suite in LFS.</para>
 @y
-    <para><parameter>--with-md5-passwords</parameter>: This is required
-    with the default configuration of Shadow password suite in LFS.</para>
+    <para>
+    <parameter>--with-md5-passwords</parameter>: This is required
+    with the default configuration of Shadow password suite in LFS.
+    </para>
 @z
 
 @x
@@ -281,18 +293,21 @@
     <filename class="directory">/usr/lib/openssh</filename> instead of
     <filename class="directory">/usr/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=/usr/lib/openssh</parameter>: This parameter
-    changes the installation path of some programs to
-    <filename class="directory">/usr/lib/openssh</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
+    <para>
+    <parameter>--libexecdir=/usr/lib/openssh</parameter>:
+    このパラメーターの指定により、<filename class="directory">/usr/libexec</filename> にインストールされるプログラムを <filename
+    class="directory">/usr/lib/openssh</filename> へインストールするようにします。
+    </para>
 @z
 
 @x
     <para><parameter>--with-pam</parameter>: This parameter enables
     <application>Linux-PAM</application> support in the build.</para>
 @y
-    <para><parameter>--with-pam</parameter>: This parameter enables
-    <application>Linux-PAM</application> support in the build.</para>
+    <para>
+    <parameter>--with-pam</parameter>:
+    このパラメーターは <application>Linux-PAM</application> サポートを有効にします。
+    </para>
 @z
 
 @x
@@ -305,7 +320,8 @@
     installed.
     </para>
 @y
-    <para><parameter>--with-xauth=/usr/bin/xauth</parameter>: Set the
+    <para>
+    <parameter>--with-xauth=/usr/bin/xauth</parameter>: Set the
     default location for the <command>xauth</command> binary for X
     authentication. Change the location if <command>xauth</command> will
     be installed to a different path. This can also be controlled from
@@ -319,20 +335,22 @@
     <para><parameter>--with-kerberos5=/usr</parameter>: This option is used to 
     include Heimdal support in the build.</para>
 @y
-    <para><parameter>--with-kerberos5=/usr</parameter>: This option is used to 
-    include Heimdal support in the build.</para>
+    <para>
+    <parameter>--with-kerberos5=/usr</parameter>:
+    このパラメーターは Heimdal サポートを有効にします。
+    </para>
 @z
 
 @x
     <title>Configuring OpenSSH</title>
 @y
-    <title>Configuring OpenSSH</title>
+    <title>OpenSSH の設定</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&j-ConfigFiles;</title>
 @z
 
 @x
@@ -341,7 +359,7 @@
       <filename>/etc/ssh/sshd_config</filename></para>
 @y
       <para><filename>~/.ssh/*</filename>,
-      <filename>/etc/ssh/ssh_config</filename>, and
+      <filename>/etc/ssh/ssh_config</filename>,
       <filename>/etc/ssh/sshd_config</filename></para>
 @z
 
@@ -394,7 +412,7 @@
 @x
       <title>Boot Script</title>
 @y
-      <title>Boot Script</title>
+      <title>ブートスクリプト</title>
 @z
 
 @x
@@ -402,15 +420,16 @@
       <filename>/etc/rc.d/init.d/sshd</filename> init script included
       in the <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>To start the SSH server at system boot, install the
-      <filename>/etc/rc.d/init.d/sshd</filename> init script included
-      in the <xref linkend="bootscripts"/> package.</para>
+      <para>
+      システム起動時に SSH サーバーを起動する場合は、<xref
+      linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/sshd</filename> をインストールします。
+      </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -418,9 +437,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -431,32 +450,35 @@
         /usr/share/doc/openssh-&openssh-version;</seg>
 @y
         <seg>scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-        ssh-keygen, ssh-keyscan, and ssh-keysign</seg>
-        <seg>None</seg>
-        <seg>/etc/ssh, /var/lib/sshd, /usr/lib/openssh, and
+        ssh-keygen, ssh-keyscan, ssh-keysign</seg>
+        <seg>なし</seg>
+        <seg>/etc/ssh, /var/lib/sshd, /usr/lib/openssh,
         /usr/share/doc/openssh-&openssh-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x scp
           <para>is a file copy program that acts like <command>rcp</command>
           except it uses an encrypted protocol.</para>
 @y
-          <para>is a file copy program that acts like <command>rcp</command>
-          except it uses an encrypted protocol.</para>
+          <para>
+          <command>rcp</command> に似たファイルコピープログラム。
+          ただし暗号化プロトコルが用いられます。
+          </para>
 @z
 
 @x sftp
           <para>is an FTP-like program that works over
           SSH1 and SSH2 protocols.</para>
 @y
-          <para>is an FTP-like program that works over
-          SSH1 and SSH2 protocols.</para>
+          <para>
+          SSH1 および SSH2 プロトコルを用いて動作する FTP ライクなプログラム。
+          </para>
 @z
 
 @x sftp-server
@@ -470,31 +492,37 @@
 @x slogin
           <para>is a symlink to <command>ssh</command>.</para>
 @y
-          <para>is a symlink to <command>ssh</command>.</para>
+          <para>
+          <command>ssh</command> へのシンボリックリンク。
+          </para>
 @z
 
 @x ssh
           <para>is an <command>rlogin</command>/<command>rsh</command>-like
           client program except it uses an encrypted protocol.</para>
 @y
-          <para>is an <command>rlogin</command>/<command>rsh</command>-like
-          client program except it uses an encrypted protocol.</para>
+          <para>
+          <command>rlogin</command> や <command>rsh</command> に似たクライアントプログラム。
+          ただし暗号化プロトコルが用いられます。
+          </para>
 @z
 
 @x sshd
           <para>is a daemon that listens for <command>ssh</command> login
           requests.</para>
 @y
-          <para>is a daemon that listens for <command>ssh</command> login
-          requests.</para>
+          <para>
+          <command>ssh</command> からのログイン要求を待ち受けるデーモンプログラム。
+          </para>
 @z
 
 @x ssh-add
           <para>is a tool which adds keys to the
           <command>ssh-agent</command>.</para>
 @y
-          <para>is a tool which adds keys to the
-          <command>ssh-agent</command>.</para>
+          <para>
+          <command>ssh-agent</command> に対して鍵を追加するツール。
+          </para>
 @z
 
 @x ssh-agent
@@ -506,7 +534,9 @@
 @x ssh-keygen
           <para>is a key generation tool.</para>
 @y
-          <para>is a key generation tool.</para>
+          <para>
+          鍵生成ツール。
+          </para>
 @z
 
 @x ssh-keyscan
@@ -528,4 +558,3 @@
           authentication with SSH protocol version 2. This program is not normally
           called directly by the user.</para>
 @z
-

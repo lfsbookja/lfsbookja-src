@@ -25,11 +25,11 @@
   secure installation of the packages. The general policy of the book is to
   include patches that fall in one of the following criteria:</para>
 @y
-<para>
-本ブックのいろいろな節においてはパッチが提供されています。
-これは各パッケージを正しくビルドできるようにするためであったり、セキュアなインストールを実現したりするものです。
-本ブックがパッチを提供する基準は、原則として以下のいずれかの基準によります。
-</para>
+  <para>
+  本ブックのいろいろな節においてはパッチが提供されています。
+  これは各パッケージを正しくビルドできるようにするためであったり、セキュアなインストールを実現したりするものです。
+  本ブックがパッチを提供する基準は、原則として以下のいずれかの基準によります。
+  </para>
 @z
 
 @x
@@ -57,12 +57,11 @@
   which hosts various patches (including the patches referenced in the books)
   to enable you to configure your LFS the way you like it.</para>
 @y
-<para>
-分かりやすく言えば、本書に含めているパッチは必要なもの、推奨されるものに限られます。
-これとは別に
-<ulink url="http://www.&lfs-domainname;/patches">パッチ サブプロジェクト (Patches subproject)</ulink>
-にはさまざまなパッチが提供されています。
-(そこには本ブックが参照しているものも含まれます。)
-これらを使えば、LFS 環境をお好みに応じて設定変更を加えていくことができます。
-</para>
+  <para>
+  分かりやすく言えば、本書に含めているパッチは必要なもの、推奨されるものに限られます。
+  これとは別に <ulink
+  url="http://www.&lfs-domainname;/patches">パッチ サブプロジェクト (Patches subproject)</ulink> にはさまざまなパッチが提供されています。
+  (そこには本ブックが参照しているものも含まれます。)
+  これらを使えば、LFS 環境をお好みに応じて設定変更を加えていくことができます。
+  </para>
 @z

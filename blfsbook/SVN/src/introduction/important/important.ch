@@ -24,9 +24,8 @@
   the book, to introduce important concepts and to explain some issues you may
   see with some of the included packages.</para>
 @y
-<para>
-この章では本書でのさまざまな方針などについて説明します。
-またいろいろなパッケージにおける重要な考え方や問題点などについて説明します。
-</para>
+  <para>
+  この章では本書でのさまざまな方針などについて説明します。
+  またいろいろなパッケージにおける重要な考え方や問題点などについて説明します。
+  </para>
 @z
-

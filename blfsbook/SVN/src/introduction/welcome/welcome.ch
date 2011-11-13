@@ -25,20 +25,19 @@
   followed straight through.  Reading the <xref linkend="whichsections"/>
   part of this chapter should help guide you through the book.</para>
 @y
-<para>
-Beyond Linux From Scratch ブックは LFS ブックでは手がけなかったものを引き継いで作業するものです。
-LFS ブックとは違って本書では順番どおりに作業を進めるようなものではありません。
-本章の <xref linkend="whichsections"/> は、本書を通じた作業手順を説明しているので確認してください。
-</para>
+  <para>
+  Beyond Linux From Scratch ブックは LFS ブックでは手がけなかったものを引き継いで作業するものです。
+  LFS ブックとは違って本書では順番どおりに作業を進めるようなものではありません。
+  本章の <xref linkend="whichsections"/> は、本書を通じた作業手順を説明しているので確認してください。
+  </para>
 @z
 
 @x
   <para>Please read most of this part of the book carefully as it explains
   quite a few of the conventions used throughout the book.</para>
 @y
-<para>
-本章の説明はしっかりとお読みください。
-これ以降には本書の取り決める内容を説明しています。
-</para>
+  <para>
+  本章の説明はしっかりとお読みください。
+  これ以降には本書の取り決める内容を説明しています。
+  </para>
 @z
-

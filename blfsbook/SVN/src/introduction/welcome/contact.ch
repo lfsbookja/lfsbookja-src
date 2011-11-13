@@ -24,12 +24,10 @@
   <xref linkend="maillists"/> for more information on
   the available mailing lists.</para>
 @y
-<para>
-BLFS メーリングリストのいずれかに直接メール送信してください。
-利用可能なメーリングリストの詳細は
-<xref linkend="maillists"/>
-を参照してください。
-</para>
+  <para>
+  BLFS メーリングリストのいずれかに直接メール送信してください。
+  利用可能なメーリングリストの詳細は <xref linkend="maillists"/> を参照してください。
+  </para>
 @z
 
 @x
@@ -37,11 +35,9 @@ BLFS メーリングリストのいずれかに直接メール送信してくだ
   If you need to reach &maintainer-firstname;, send an email to
   <ulink url="mailto:&maintainer-address;">&maintainer-address;</ulink>.</para>
 @y
-<para>
-現時点の BLFS 管理者は &maintainer-fullname; です。
-&maintainer-firstname; へ直接連絡を取りたい場合は
-<ulink url="mailto:&maintainer-address;">&maintainer-address;</ulink>
-にメールを送信してください。
-</para>
+  <para>
+  現時点の BLFS 管理者は &maintainer-fullname; です。
+  &maintainer-firstname; へ直接連絡を取りたい場合は <ulink
+  url="mailto:&maintainer-address;">&maintainer-address;</ulink> にメールを送信してください。
+  </para>
 @z
-

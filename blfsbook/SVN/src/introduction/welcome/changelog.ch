@@ -61,12 +61,30 @@
 @z
 
 @x
-      <para>November 10th, 2011</para>
+      <para>November 11th, 2011</para>
       <itemizedlist>
-        <!-- <listitem>
+        <listitem>
           <para>[bdubbs] - Update to samba-3.6.1.</para>
         </listitem>
-        -->
+        <listitem>
+          <para>[bdubbs] - Update to stunnel-4.46.</para>
+        </listitem> 
+      </itemizedlist>
+@y
+      <para>2011/11/11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - samba-3.6.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - stunnel-4.46 へのアップデート。</para>
+        </listitem> 
+      </itemizedlist>
+@z
+
+@x
+      <para>November 10th, 2011</para>
+      <itemizedlist>
         <listitem>
           <para>[bdubbs] - Update to gnutls-3.0.7.</para>
         </listitem> 
@@ -77,10 +95,6 @@
 @y
       <para>2011/11/10</para>
       <itemizedlist>
-        <!-- <listitem>
-          <para>[bdubbs] - Update to samba-3.6.1.</para>
-        </listitem>
-        -->
         <listitem>
           <para>[bdubbs] - gnutls-3.0.7 へのアップデート。</para>
         </listitem> 

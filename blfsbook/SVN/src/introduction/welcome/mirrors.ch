@@ -33,11 +33,10 @@
   <ulink url="http://www.&lfs-domainname;/mirrors.html"/> website for the
   list of current mirrors.</para>
 @y
-<para>
-BLFS プロジェクトは世界中にミラーサイトがあります。
-これらを使えばウェブサイト参照がより便利に利用できます。
-以下のサイトによりミラーサイトの情報を確認してください。
-<ulink url="http://www.&lfs-domainname;/mirrors.html"/>
-</para>
+  <para>
+  BLFS プロジェクトは世界中にミラーサイトがあります。
+  これらを使えばウェブサイト参照がより便利に利用できます。
+  以下のサイトによりミラーサイトの情報を確認してください。
+  <ulink url="http://www.&lfs-domainname;/mirrors.html"/>
+  </para>
 @z
-
