@@ -61,6 +61,56 @@
 @z
 
 @x
+      <para>November 13th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gc-7.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add libunistring-0.9.3.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add cifs-utils-5.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add keyutils-1.5.3.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gc-7.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libunistring-0.9.3 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - cifs-utils-5.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - keyutils-1.5.3 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 12th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update swat instructions in samba.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - samba において swat に関する説明を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 11th, 2011</para>
       <itemizedlist>
         <listitem>

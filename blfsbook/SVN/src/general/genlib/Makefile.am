@@ -12,7 +12,8 @@ EXTRA_DIST = glib2.ch libesmtp.ch pcre.ch \
 	enchant.ch icu.ch libical.ch libelf.ch libggz.ch \
 	libsigc++.ch ptlib.ch glibmm.ch libatasmart.ch libdaemon.ch \
 	telepathy-glib.ch libatomic_ops.ch wv.ch talloc.ch \
-	libdbusmenuqt.ch clucene.ch qca.ch boost.ch
+	libdbusmenuqt.ch clucene.ch qca.ch boost.ch \
+	keyutils.ch libunistring.ch
 srcdir = @srcdir@
 srcs = glib2.xml libesmtp.xml pcre.xml \
 	aspell.xml gmime.xml libgcrypt.xml libusb-compat.xml popt.xml \
@@ -27,7 +28,8 @@ srcs = glib2.xml libesmtp.xml pcre.xml \
 	enchant.xml icu.xml libical.xml libelf.xml libggz.xml \
         libsigc++.xml ptlib.xml glibmm.xml libatasmart.xml libdaemon.xml \
 	telepathy-glib.xml libatomic_ops.xml wv.xml talloc.xml \
-	libdbusmenuqt.xml clucene.xml qca.xml boost.xml
+	libdbusmenuqt.xml clucene.xml qca.xml boost.xml \
+	keyutils.xml libunistring.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -105,4 +107,6 @@ libdbusmenuqt.xml: $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch
 clucene.xml: $(BOOKdir)/$@ $(srcdir)/clucene.ch
 qca.xml: $(BOOKdir)/$@ $(srcdir)/qca.ch
 boost.xml: $(BOOKdir)/$@ $(srcdir)/boost.ch
+keyutils.xml: $(BOOKdir)/$@ $(srcdir)/keyutils.ch
+libunistring.xml: $(BOOKdir)/$@ $(srcdir)/libunistring.ch
 

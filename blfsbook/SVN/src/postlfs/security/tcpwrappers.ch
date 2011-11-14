@@ -20,9 +20,9 @@
 @z
 
 @x
-    <title>Introduction to TCP Wrapper</title>
+    <title>Introduction to TCP Wrappers</title>
 @y
-    <title>TCP Wrapper の概要</title>
+    <title>TCP Wrappers の概要</title>
 @z
 
 @x
@@ -102,9 +102,9 @@
 @z
 
 @x
-    <title>Installation of TCP Wrapper</title>
+    <title>Installation of TCP Wrappers</title>
 @y
-    <title>TCP Wrapper のインストール</title>
+    <title>TCP Wrappers のインストール</title>
 @z
 
 @x
@@ -151,9 +151,9 @@
 @z
 
 @x
-    <title>Configuring TCP Wrapper</title>
+    <title>Configuring TCP Wrappers</title>
 @y
-    <title>TCP Wrapper の設定</title>
+    <title>TCP Wrappers の設定</title>
 @z
 
 @x
