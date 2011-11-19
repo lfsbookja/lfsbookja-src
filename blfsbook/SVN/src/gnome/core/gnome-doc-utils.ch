@@ -100,7 +100,7 @@
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="intltool"/>,
     <xref linkend="libxslt"/>,
-    <xref linkend="python"/> ( Required to be installed prior to <xref linkend="libxml2"/>)</para>
+    <xref linkend="python"/> (<xref linkend="libxml2"/> よりも前にインストールが必要)</para>
 @z
 
 @x
@@ -119,15 +119,15 @@
     without them), functionality will be missing that is expected later in
     other GNOME packages.</para>
 @y
-<para>
-
-The packages are listed as recommended even though
-<application>GNOME Doc Utils</application> will build fine without them.
-If you don't install the recommended packages (and you pass the appropriate
-flags to the <command>configure</command> command so that it will build
-without them), functionality will be missing that is expected later in
-other GNOME packages.
-</para>
+    <para>
+    
+    The packages are listed as recommended even though
+    <application>GNOME Doc Utils</application> will build fine without them.
+    If you don't install the recommended packages (and you pass the appropriate
+    flags to the <command>configure</command> command so that it will build
+    without them), functionality will be missing that is expected later in
+    other GNOME packages.
+    </para>
 @z
 
 @x
@@ -148,25 +148,25 @@ other GNOME packages.
     <para>Install <application>GNOME Doc Utils</application>
     by running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GNOME Doc Utils</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GNOME Doc Utils</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -179,12 +179,12 @@ other GNOME packages.
     <para><option>--disable-scrollkeeper</option>: Do not make updates to
     the <application>scrollkeeper</application> database.</para>
 @y
-<para>
-<option>--disable-scrollkeeper</option>:
-
-Do not make updates to
-the <application>scrollkeeper</application> database.
-</para>
+    <para>
+    <option>--disable-scrollkeeper</option>:
+    
+    Do not make updates to
+    the <application>scrollkeeper</application> database.
+    </para>
 @z
 
 @x
@@ -215,7 +215,7 @@ the <application>scrollkeeper</application> database.
         mallard/{cache,common,html}},mallard/1.0}}</seg>
         <seg>Custom DocBook XSLT stylesheets</seg>
 @y
-        <seg>gnome-doc-prepare, gnome-doc-tool and xml2po</seg>
+        <seg>gnome-doc-prepare, gnome-doc-tool, xml2po</seg>
         <seg>None</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-doc-utils/{icons/hicolor/{48x48/status,
         scalable/status},templates,watermarks},gnome/help/{gnome-doc-make/{C,

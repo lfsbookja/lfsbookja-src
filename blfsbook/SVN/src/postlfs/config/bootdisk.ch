@@ -40,17 +40,17 @@
     the host being "rescued".  To presume that any given partition or hard
     drive <emphasis>will</emphasis> be available is a risky presumption.</para>
 @y
-<para>
-この節で説明するのは <emphasis>レスキュー</emphasis> デバイスについてです。
-なぜ <emphasis>レスキュー</emphasis> と呼ばれるかは以下のとおりです。
-例えばパーティションの情報が失われたりファイルが壊れたりして、システムに何か問題が発生したとします。
-そのような場合、システムのブートやその後の操作が正常に行えなくなります。
-したがって
-For
-this reason, you <emphasis>must not</emphasis> depend on resources from
-the host being "rescued".  To presume that any given partition or hard
-drive <emphasis>will</emphasis> be available is a risky presumption.
-</para>
+    <para>
+    この節で説明するのは <emphasis>レスキュー</emphasis> デバイスについてです。
+    なぜ <emphasis>レスキュー</emphasis> と呼ばれるかは以下のとおりです。
+    例えばパーティションの情報が失われたりファイルが壊れたりして、システムに何か問題が発生したとします。
+    そのような場合、システムのブートやその後の操作が正常に行えなくなります。
+    したがって
+    For
+    this reason, you <emphasis>must not</emphasis> depend on resources from
+    the host being "rescued".  To presume that any given partition or hard
+    drive <emphasis>will</emphasis> be available is a risky presumption.
+    </para>
 @z
 
 @x
@@ -123,18 +123,18 @@ drive <emphasis>will</emphasis> be available is a risky presumption.
 
 @x
     <para>Also, the LFS Community has developed its own LiveCD available at
-    <ulink url='http://www.&lfs-domainname;/livecd/'/>.  This LiveCD, in
-    addition to having boot and rescue capabilities, is capable of building an
-    entire LFS/BLFS system.  A copy of this CD-ROM is available with the
-    printed version of the Linux From Scratch book.  If you download the ISO
-    image, use <xref linkend="cdrecord"/> to copy the image to a CD-ROM.</para>
+    <ulink url='http://www.&lfs-domainname;/livecd/'/>.  This LiveCD, is no
+    longer capable of building an entire LFS/BLFS system, but is stiil a 
+    good rescue CD-ROM.  If you download the
+    ISO image, use <xref linkend="xorriso"/> to copy the image to a
+    CD-ROM.</para>
 @y
     <para>Also, the LFS Community has developed its own LiveCD available at
-    <ulink url='http://www.&lfs-domainname;/livecd/'/>.  This LiveCD, in
-    addition to having boot and rescue capabilities, is capable of building an
-    entire LFS/BLFS system.  A copy of this CD-ROM is available with the
-    printed version of the Linux From Scratch book.  If you download the ISO
-    image, use <xref linkend="cdrecord"/> to copy the image to a CD-ROM.</para>
+    <ulink url='http://www.&lfs-domainname;/livecd/'/>.  This LiveCD, is no
+    longer capable of building an entire LFS/BLFS system, but is stiil a 
+    good rescue CD-ROM.  If you download the
+    ISO image, use <xref linkend="xorriso"/> to copy the image to a
+    CD-ROM.</para>
 @z
 
 @x
@@ -168,4 +168,3 @@ drive <emphasis>will</emphasis> be available is a risky presumption.
     <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url='&blfs-wiki;/CreatingaCustomBootDevice'/></para>
 @z
-

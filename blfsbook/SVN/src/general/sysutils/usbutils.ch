@@ -30,10 +30,10 @@
     used to display information about USB buses in the system and the devices
     connected to them.</para>
 @y
-<para>
-<application>usbutils</application>
-パッケージは USB バスやそこに接続されるデバイスの情報を参照する機能を提供します。
-</para>
+    <para>
+    <application>usbutils</application>
+    パッケージは USB バスやそこに接続されるデバイスの情報を参照する機能を提供します。
+    </para>
 @z
 
 @x
@@ -86,10 +86,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libusb-compat"/></para>
+    <para role="required"><xref linkend="libusb"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="libusb-compat"/></para>
+    <para role="required"><xref linkend="libusb"/></para>
 @z
 
 @x
@@ -110,27 +110,25 @@
     <para>Install <application>usbutils</application> by
     running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>usbutils</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>usbutils</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -144,13 +142,13 @@
     <application>usbutils</application> from installing a compressed usb.ids 
     alongside the uncompressed one.</para>
 @y
-<para>
-<parameter>--disable-zlib</parameter>:
-
-This stops 
-<application>usbutils</application> from installing a compressed usb.ids 
-alongside the uncompressed one.
-</para>
+    <para>
+    <parameter>--disable-zlib</parameter>:
+    
+    This stops 
+    <application>usbutils</application> from installing a compressed usb.ids 
+    alongside the uncompressed one.
+    </para>
 @z
 
 @x
@@ -169,21 +167,15 @@ alongside the uncompressed one.
     and replace the existing file in
     <filename class='directory'>/usr/share</filename>.</para>
 @y
-<para>
-<filename>usb.ids</filename>
-というデータファイルは常に更新されています。
-最新版を入手するには <systemitem class="username">root</systemitem>
-ユーザーになって <command>update-usbids</command>
-コマンドを実行します。
-このプログラムは <xref linkend="which"/> に示すスクリプトまたはプログラムが必要であり、
-<xref linkend="wget"/> あるいは <xref linkend="lynx"/>
-を見つけ出すために利用されます。
-<xref linkend="wget"/> や <xref linkend="lynx"/>
-はデータファイル最新版をダウンロードするために必要となります。
-ファイルをダウンロードすると
-<filename class='directory'>/usr/share</filename>
-ディレクトリ内の既存のファイルを上書き更新します。
-</para>
+    <para>
+    <filename>usb.ids</filename> というデータファイルは常に更新されています。
+    最新版を入手するには <systemitem
+    class="username">root</systemitem> ユーザーになって <command>update-usbids</command> コマンドを実行します。
+    このプログラムは <xref linkend="which"/> に示すスクリプトまたはプログラムが必要であり、
+    <xref linkend="wget"/> あるいは <xref linkend="lynx"/> を見つけ出すために利用されます。
+    <xref linkend="wget"/> や <xref linkend="lynx"/> はデータファイル最新版をダウンロードするために必要となります。
+    ファイルをダウンロードすると <filename class='directory'>/usr/share</filename> ディレクトリ内の既存のファイルを上書き更新します。
+    </para>
 @z
 
 @x
@@ -193,14 +185,11 @@ alongside the uncompressed one.
     crontab to automatically update the <filename>usb.ids</filename> file
     periodically.</para>
 @y
-<para>
-crontab において
-<systemitem class="username">root</systemitem> ユーザー
-(あるいは <filename class='directory'>/usr/share</filename>
-ディレクトリに対する書き込み権限を有するユーザー)
-に対する項目を追加して、<filename>usb.ids</filename>
-ファイルを定期的に自動更新することもできます。
-</para>
+    <para>
+    crontab において <systemitem
+    class="username">root</systemitem> ユーザー (あるいは <filename
+    class='directory'>/usr/share</filename> ディレクトリに対する書き込み権限を有するユーザー) に対する項目を追加して、<filename>usb.ids</filename> ファイルを定期的に自動更新することもできます。
+    </para>
 @z
 
 @x
@@ -239,22 +228,22 @@ crontab において
           <para>is a utility for displaying information about all USB buses in the
           system and all devices connected to them.</para>
 @y
-<para>
-
-is a utility for displaying information about all USB buses in the
-system and all devices connected to them.
-</para>
+          <para>
+          
+          is a utility for displaying information about all USB buses in the
+          system and all devices connected to them.
+          </para>
 @z
 
 @x update-usbids
           <para>downloads the current version of the USB ID list. Requires
           <xref linkend="wget"/> or <xref linkend="lynx"/>.</para>
 @y
-<para>
-
-downloads the current version of the USB ID list. Requires
-<xref linkend="wget"/> or <xref linkend="lynx"/>.
-</para>
+          <para>
+          
+          downloads the current version of the USB ID list. Requires
+          <xref linkend="wget"/> or <xref linkend="lynx"/>.
+          </para>
 @z
 
 @x usb-devices
@@ -262,11 +251,10 @@ downloads the current version of the USB ID list. Requires
           connected to them. It is designed to be used if /proc/bus/usb/devices
           is not available on your system.</para>
 @y
-<para>
-
-is a shell script that displays details of USB buses and devices
-connected to them. It is designed to be used if /proc/bus/usb/devices
-is not available on your system.
-</para>
+          <para>
+          
+          is a shell script that displays details of USB buses and devices
+          connected to them. It is designed to be used if /proc/bus/usb/devices
+          is not available on your system.
+          </para>
 @z
-

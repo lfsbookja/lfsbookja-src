@@ -24,12 +24,9 @@
     access weather information from online services for numerous
     locations.</para>
 @y
-<para>
-
-The <application>libgweather</application> package is a library to
-access weather information from online services for numerous
-locations.
-</para>
+    <para>
+    <application>libgweather</application> パッケージは、各所からの気象情報オンラインサービスへアクセスするライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -120,28 +117,25 @@ locations.
     <para>Install <application>libgweather</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libgweather</application>
-をインストールします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libgweather</application> をインストールします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -155,42 +149,41 @@ locations.
     <emphasis role="strong">NOT</emphasis> want to compile and run a test GLIB
     program.</para>
 @y
-<para>
-
-<option>--disable-glibtest</option>: Use this parameter if you do
-<emphasis role="strong">NOT</emphasis> want to compile and run a test GLIB
-program.
-</para>
+    <para>
+    <option>--disable-glibtest</option>:
+    このパラメーターは、GLIB のテストプログラムのコンパイル、およびそのテスト実行を <emphasis
+    role="strong">行いたくない</emphasis> 場合に指定します。
+    </para>
 @z
 
 @x
     <para><option>--enable-python</option>: Use this parameter if you want to
     build libgweather python bindings.</para>
 @y
-<para>
-<option>--enable-python</option>:
-libgweather の Python バインディングをビルドしたい場合に指定します。
-</para>
+    <para>
+    <option>--enable-python</option>:
+    libgweather の Python バインディングをビルドしたい場合に指定します。
+    </para>
 @z
 
 @x
     <para><option>--enable-gtk-doc-html</option>: Use this parameter if you want
     to build documentation in html format.</para>
 @y
-<para>
-<option>--enable-gtk-doc-html</option>:
-html フォーマットのドキュメントをビルドしたい場合に指定します。
-</para>
+    <para>
+    <option>--enable-gtk-doc-html</option>:
+    html フォーマットのドキュメントをビルドしたい場合に指定します。
+    </para>
 @z
 
 @x
     <para><option>--enable-gtk-doc-pdf</option>: Use this parameter if you want
     to build documentation in pdf format.</para>
 @y
-<para>
-<option>--enable-gtk-doc-pdf</option>:
-pdf フォーマットのドキュメントをビルドしたい場合に指定します。
-</para>
+    <para>
+    <option>--enable-gtk-doc-pdf</option>:
+    pdf フォーマットのドキュメントをビルドしたい場合に指定します。
+    </para>
 @z
 
 @x
@@ -233,8 +226,7 @@ pdf フォーマットのドキュメントをビルドしたい場合に指定�
           <para>contains functions that allow the retrieval of weather
           information.</para>
 @y
-<para>
-気象情報を抽出するための関数を提供します。
-</para>
+          <para>
+          気象情報を抽出するための関数を提供します。
+          </para>
 @z
-
