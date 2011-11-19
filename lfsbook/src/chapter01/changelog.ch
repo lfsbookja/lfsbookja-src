@@ -48,6 +48,50 @@
 @z
 
 @x
+      <para>2011-11-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Make /var/log/btmp have 660 permissions.
+          Suggestion from Michael Blanchard.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-11-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /var/log/btmp のパーミッションを 660 に。
+          Michael Blanchard の提案。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-11-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updates to boot scripts: 
+          general cleanup;
+          move consolelog function to rc;
+          clean up boot logging functions;
+          fix interactive prompt between run level S and target run level.  
+          Thanks to DJ Lucas.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-11-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトの更新: 
+          全般的に整理;
+          consolelog 関数は rc に移動;
+          ブートログ関数を整理;
+          ランレベル S と処理対象ランレベルの間での対話的プロンプトの修正。
+          DJ Lucas に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-10-29</para>
       <itemizedlist>
         <listitem>

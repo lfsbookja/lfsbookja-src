@@ -1,6 +1,6 @@
 BOOKdir = @abs_bookdir@/bootscripts/lfs/init.d
 srcdir = @srcdir@
-srcs = checkfs cleanfs console consolelog functions halt \
+srcs = checkfs cleanfs console functions halt \
 	localnet modules mountfs mountvirtfs network rc \
 	reboot sendsignals setclock swap sysctl sysklogd \
 	template udev udev_retry
@@ -12,8 +12,6 @@ checkfs: $(BOOKdir)/checkfs
 cleanfs: $(BOOKdir)/cleanfs
 	cp -p $(BOOKdir)/$@ $@
 console: $(BOOKdir)/console
-	cp -p $(BOOKdir)/$@ $@
-consolelog: $(BOOKdir)/consolelog
 	cp -p $(BOOKdir)/$@ $@
 functions: $(BOOKdir)/functions
 	cp -p $(BOOKdir)/$@ $@
