@@ -24,11 +24,9 @@
     to describe the APIs and collect them in a uniform, machine readable
     format.</para>
 @y
-<para>
-<application>gobject-introspection</application> package is used
-to describe the APIs and collect them in a uniform, machine readable
-format.
-</para>
+    <para>
+    <application>gobject-introspection</application> パッケージは、API 関数を記述し、それをマシンが読込み可能な統一した書式で構成します。
+    </para>
 @z
 
 @x
@@ -82,8 +80,8 @@ format.
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="libffi"/> または <xref linkend="gcc"/> (build Java so that
-    <filename class='libraryfile'>libffi</filename> is built),
+    <xref linkend="libffi"/> または <xref linkend="gcc"/>
+    (<filename class='libraryfile'>libffi</filename> をビルドするために Java がビルドされたもの),
     <xref linkend="python"/></para>
 @z
 
@@ -115,34 +113,34 @@ format.
       <para>If you have Python-2.7 installed, issue the following command to
       prevent a build failure:</para>
 @y
-<para>
-Python-2.7 をインストールしている場合は、ビルドエラーを回避するために以下のコマンドを実行します。
-</para>
+      <para>
+      Python-2.7 をインストールしている場合は、ビルドエラーを回避するために以下のコマンドを実行します。
+      </para>
 @z
 
 @x
     <para>Install <application>gobject-introspection</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>gobject-introspection</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>gobject-introspection</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -156,11 +154,11 @@ Python-2.7 をインストールしている場合は、ビルドエラーを回
     libraries. Remove the parameter if you have <application>cairo</application>
     installed and would like the tests to be performed.</para>
 @y
-<para>
-<parameter>--disable-tests</parameter>: This parameter disable test
-libraries. Remove the parameter if you have <application>cairo</application>
-installed and would like the tests to be performed.
-</para>
+    <para>
+    <parameter>--disable-tests</parameter>:
+    このパラメーターによりテストライブラリをビルドしません。
+    <application>cairo</application> をインストールしていて、かつテストを実施したい場合は、このパラメーターを取り除いてください。
+    </para>
 @z
 
 @x
@@ -202,37 +200,40 @@ installed and would like the tests to be performed.
 @x g-ir-compiler
           <para>converts one or more GIR  files into one or more typelib.</para>
 @y
-<para>
-converts one or more GIR  files into one or more typelib.
-</para>
+          <para>
+          複数の GIR ファイルを複数の typelib に変換します。
+          </para>
 @z
 
 @x g-ir-scanner
           <para>is a tool which generates GIR XML files by parsing headers and
           introspecting GObject based libraries.</para>
 @y
-<para>
-is a tool which generates GIR XML files by parsing headers and
-introspecting GObject based libraries.
-</para>
+          <para>
+          GObject ベースのライブラリとヘッダーを用いて GIR XML ファイルを生成するためのツールです。
+          </para>
 @z
 
 @x g-ir-generate
           <para>is a GIR generator, using the repository API.</para>
 @y
-<para>
-is a GIR generator, using the repository API.
-</para>
+          <para>
+          GIR 生成ツールです。リポジトリ API が利用されます。
+          </para>
 @z
 
 @x libgirepository-1.0.{so,a}
           <para>provides an API to access to the typelib metadata.</para>
 @y
-          <para>provides an API to access to the typelib metadata.</para>
+          <para>
+          typelib メタデータにアクセスするための API 関数を提供します。
+          </para>
 @z
 
 @x libgirepository-everything-1.0.{so,a}
           <para>provides an API to access to the typelib metadata.</para>
 @y
-          <para>provides an API to access to the typelib metadata.</para>
+          <para>
+          typelib メタデータにアクセスするための API 関数を提供します。
+          </para>
 @z

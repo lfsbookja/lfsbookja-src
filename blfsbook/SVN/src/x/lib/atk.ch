@@ -25,12 +25,10 @@
     allowing accessibility solutions to be available for all
     <application>GTK2</application> applications.</para>
 @y
-<para>
-<application>ATK</application> パッケージは
-<application>ATK</application> ライブラリを提供します。
-これはあらゆる <application>GTK2</application>
-アプリケーションに対して、アクセス性を向上させる有用なライブラリです。
-</para>
+    <para>
+    <application>ATK</application> パッケージは <application>ATK</application> ライブラリを提供します。
+    これはあらゆる <application>GTK2</application> アプリケーションに対して、アクセス性を向上させる有用なライブラリです。
+    </para>
 @z
 
 @x
@@ -115,27 +113,25 @@
     <para>Install <application>ATK</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>ATK</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>ATK</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -148,10 +144,10 @@
     <para><parameter>--disable-static</parameter>: This switch prevents the
     static libraries from being built.</para>
 @y
-<para>
-<parameter>--disable-static</parameter>:
-このパラメータはスタティックライブラリをビルドしないことを指定します。
-</para>
+    <para>
+    <parameter>--disable-static</parameter>:
+    このパラメーターはスタティックライブラリをビルドしないことを指定します。
+    </para>
 @z
 
 @x
@@ -190,8 +186,7 @@
           <para>contains functions that are used by assistive technologies
           in order to interact with the desktop and applications.</para>
 @y
-<para>
-contains functions that are used by assistive technologies
-in order to interact with the desktop and applications.
-</para>
+          <para>
+          デスクトップやアプリケーションにおける支援技術 (assistive technologies) にて用いられる関数を提供します。
+          </para>
 @z

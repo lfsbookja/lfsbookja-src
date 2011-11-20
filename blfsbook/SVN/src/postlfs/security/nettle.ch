@@ -20,7 +20,7 @@
 @z
 
 @x
-    <para>The <application>nettle</application> package is a ilow-level
+    <para>The <application>nettle</application> package is a low-level
     cryptographic library that is designed to fit easily in many contexts.
     </para>
 @y

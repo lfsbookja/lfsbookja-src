@@ -40,83 +40,88 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&keyutils-download-http;"/></para>
 @y
-        <para>Download (HTTP): <ulink url="&keyutils-download-http;"/></para>
+        <para>ダウンロード (HTTP): <ulink url="&keyutils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&keyutils-download-ftp;"/></para>
 @y
-        <para>Download (FTP): <ulink url="&keyutils-download-ftp;"/></para>
+        <para>ダウンロード (FTP): <ulink url="&keyutils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &keyutils-md5sum;</para>
 @y
-        <para>Download MD5 sum: &keyutils-md5sum;</para>
+        <para>ダウンロード MD5 sum: &keyutils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &keyutils-size;</para>
 @y
-        <para>Download size: &keyutils-size;</para>
+        <para>ダウンロードサイズ: &keyutils-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &keyutils-buildsize;</para>
 @y
-        <para>Estimated disk space required: &keyutils-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &keyutils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &keyutils-time;</para>
 @y
-        <para>Estimated build time: &keyutils-time;</para>
+        <para>&j-Estimatedbuildtime;: &keyutils-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/keyutils"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&j-UserNotes;:
     <ulink url="&blfs-wiki;/keyutils"/></para>
 @z
 
 @x
     <title>Installation of keyutils</title>
 @y
-    <title>Installation of keyutils</title>
+    <title>keyutils のインストール</title>
 @z
 
 @x
     <para>Install <application>keyutils</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>keyutils</application> by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して <application>keyutils</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>This package does not come with a test suite.</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&j-Contents;</title>
 @z
 
 @x
@@ -124,9 +129,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -134,7 +139,7 @@
         <seg>libkeyutils.so.1</seg>
         <seg>/usr/share/keyutils</seg>
 @y
-        <seg>keyctl, key.dns_resolver, and request-key</seg>
+        <seg>keyctl, key.dns_resolver, request-key</seg>
         <seg>libkeyutils.so.1</seg>
         <seg>/usr/share/keyutils</seg>
 @z
@@ -142,7 +147,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
 @x keyctl

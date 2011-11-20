@@ -61,6 +61,28 @@
 @z
 
 @x
+      <para>November 20th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Restored portmap-6.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added libtirpc-0.2.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - portmap-6.0 の復元。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtirpc-0.2.2 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 18th, 2011</para>
       <itemizedlist>
         <listitem>
