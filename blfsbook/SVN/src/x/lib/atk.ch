@@ -20,14 +20,15 @@
 @z
 
 @x
-    <para>The <application>ATK</application> package contains the
-    <application>ATK</application> libraries. They are useful for
-    allowing accessibility solutions to be available for all
-    <application>GTK2</application> applications.</para>
+    <para>The accessibility tool kit contains the
+    <application>atk</application> library. This is useful for allowing
+    accessibility solutions to be available for all
+    <application>gtk+-2</application> and <application>gtk+-3</application>
+    applications.</para>
 @y
     <para>
-    <application>ATK</application> パッケージは <application>ATK</application> ライブラリを提供します。
-    これはあらゆる <application>GTK2</application> アプリケーションに対して、アクセス性を向上させる有用なライブラリです。
+    ATK (accessibility tool kit) は <application>ATK</application> ライブラリを提供します。
+    これはあらゆる <application>gtk+-2</application> および <application>gtk+-3</application> アプリケーションに対して、アクセス性を向上させる有用なライブラリです。
     </para>
 @z
 
@@ -81,18 +82,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/> (if you've edited the docs
+    and want to rebuild them)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/>
+    (ドキュメントを編集して再ビルドしたい場合)</para>
 @z
 
 @x
@@ -110,19 +113,19 @@
 @z
 
 @x
-    <para>Install <application>ATK</application> by running
+    <para>Install <application>atk</application> by running
     the following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>ATK</application> をビルドします。
+    以下のコマンドを実行して <application>atk</application> をビルドします。
     </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue: <command>make check</command>.</para>
 @y
     <para>
-    &j-notTestSuite;
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
     </para>
 @z
 
@@ -138,16 +141,6 @@
     <title>Command Explanations</title>
 @y
     <title>&j-CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--disable-static</parameter>: This switch prevents the
-    static libraries from being built.</para>
-@y
-    <para>
-    <parameter>--disable-static</parameter>:
-    このパラメーターはスタティックライブラリをビルドしないことを指定します。
-    </para>
 @z
 
 @x
@@ -169,11 +162,11 @@
 @x
         <seg>None</seg>
         <seg>libatk-1.0.so</seg>
-        <seg>/usr/{include/atk-1.0/atk,share/gtk-doc/html/atk}</seg>
+        <seg>/usr/include/atk-1.0, /usr/share/gtk-doc/html/atk</seg>
 @y
         <seg>なし</seg>
         <seg>libatk-1.0.so</seg>
-        <seg>/usr/{include/atk-1.0/atk,share/gtk-doc/html/atk}</seg>
+        <seg>/usr/include/atk-1.0, /usr/share/gtk-doc/html/atk</seg>
 @z
 
 @x
@@ -184,7 +177,7 @@
 
 @x atklib-1.0.so
           <para>contains functions that are used by assistive technologies
-          in order to interact with the desktop and applications.</para>
+          to interact with the desktop applications.</para>
 @y
           <para>
           デスクトップやアプリケーションにおける支援技術 (assistive technologies) にて用いられる関数を提供します。

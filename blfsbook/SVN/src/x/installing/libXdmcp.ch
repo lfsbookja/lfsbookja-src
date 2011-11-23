@@ -24,11 +24,11 @@
     implementing the X Display Manager Control Protocol. This is useful for
     allowing clients to interact with the X Display Manager.</para>
 @y
-<para>
-<application>libXdmcp</application>
-パッケージは X ディスプレイ マネージャ コントロール プロトコルを実行するライブラリを提供します。
-クライアントプログラムが X ディスプレイマネージャとのやり取りを行うために利用されます。
-</para>
+    <para>
+    <application>libXdmcp</application>
+    パッケージは X ディスプレイマネージャーコントロールプロトコルを実行するライブラリを提供します。
+    クライアントプログラムが X ディスプレイマネージャーとのやり取りを行うために利用されます。
+    </para>
 @z
 
 @x
@@ -103,26 +103,25 @@
     <para>Install <application>libXdmcp</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libXdmcp</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libXdmcp</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -160,8 +159,7 @@
 @x libXdmcp.{so,a}
           <para>is the X Display Manager Control Protocol library.</para>
 @y
-<para>
-X ディスプレイ マネージャ コントロール ライブラリ。
-</para>
+          <para>
+          X ディスプレイマネージャーコントロールライブラリ。
+          </para>
 @z
-

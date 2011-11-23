@@ -14,18 +14,18 @@
 @z
 
 @x
-    <title>Introduction to GTK+</title>
+    <title>Introduction to gtk+-2</title>
 @y
-    <title>GTK+ の概要</title>
+    <title>gtk+-2 の概要</title>
 @z
 
 @x
-    <para>The <application>GTK+</application> package contains
-    <application>GTK+</application> libraries. These are useful
+    <para>The <application>gtk+-2</application> package contains
+    <application>gtk+-2</application> libraries. These are useful
     for creating graphical user interfaces for applications.</para>
 @y
     <para>
-    <application>GTK+</application> パッケージは <application>GTK+</application> ライブラリを提供します。
+    <application>gtk+-2</application> パッケージは <application>gtk+-2</application> ライブラリを提供します。
     これらはアプリケーションにおけるグラフィカルユーザーインターフェースの構築に有用です。
     </para>
 @z
@@ -73,9 +73,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">GTK+ Dependencies</bridgehead>
+    <bridgehead renderas="sect3">gtk+-2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GTK+ の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">gtk+-2 の依存パッケージ</bridgehead>
 @z
 
 @x
@@ -148,17 +148,17 @@
 @z
 
 @x
-    <title>Installation of GTK+-2</title>
+    <title>Installation of gtk+-2</title>
 @y
-    <title>GTK+-2 のインストール</title>
+    <title>gtk+-2 のインストール</title>
 @z
 
 @x
-    <para>Install <application>GTK+-2</application> by running
+    <para>Install <application>gtk+-2</application> by running
     the following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>GTK+-2</application> をビルドします。
+    以下のコマンドを実行して <application>gtk+-2</application> をビルドします。
     </para>
 @z
 
@@ -246,9 +246,9 @@
 @z
 
 @x
-    <title>Configuring GTK+-2</title>
+    <title>Configuring gtk+-2</title>
 @y
-    <title>GTK+-2 の設定</title>
+    <title>gtk+-2 の設定</title>
 @z
 
 @x
@@ -387,19 +387,19 @@
 @z
 
 @x gtk-demo
-          <para>demonstrates <application>GTK+</application> functionality and
+          <para>demonstrates <application>gtk+-2</application> functionality and
           provides code for the examples.</para>
 @y
-          <para>demonstrates <application>GTK+</application> functionality and
+          <para>demonstrates <application>gtk+-2</application> functionality and
           provides code for the examples.</para>
 @z
 
 @x gtk-query-immodules-2.0
           <para>collects information about loadable input method modules for
-          <application>GTK+</application> and writes it to standard output.</para>
+          <application>gtk+-2</application> and writes it to standard output.</para>
 @y
           <para>collects information about loadable input method modules for
-          <application>GTK+</application> and writes it to standard output.</para>
+          <application>gtk+-2</application> and writes it to standard output.</para>
 @z
 
 @x gtk-update-icon-cache
@@ -409,9 +409,9 @@
 @z
 
 @x
-        <term>GTK+ Libraries</term>
+        <term>gtk+-2 Libraries</term>
 @y
-        <term>GTK+ ライブラリ</term>
+        <term>gtk+-2 ライブラリ</term>
 @z
 @x
           <para>provide an API to implement graphical user interfaces.</para>

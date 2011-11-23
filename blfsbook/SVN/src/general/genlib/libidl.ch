@@ -24,13 +24,10 @@
     contains libraries for Interface Definition Language files. This is a
     specification for defining portable interfaces.</para>
 @y
-<para>
-<application>libIDL</application>
-パッケージはインターフェース定義言語ファイル
-(Interface Definition Language file)
-を取り扱うライブラリを提供します。
-そのファイルではポータブルインターフェースを定義します。
-</para>
+    <para>
+    <application>libIDL</application> パッケージはインターフェース定義言語ファイル (Interface Definition Language file) を取り扱うライブラリを提供します。
+    そのファイルではポータブルインターフェースを定義します。
+    </para>
 @z
 
 @x
@@ -83,10 +80,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="glib2"/> and
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="glib2"/>,
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -117,10 +116,9 @@
     <para>Install <application>libIDL</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libIDL</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libIDL</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -129,27 +127,25 @@
     build alternate forms of the documentation, issue the following
     command:</para>
 @y
-<para>
-<application>teTeX</application> または <application>Live TeX</application>
-をインストール済で、ドキュメントを生成したい場合は、以下のコマンドを実行します。
-</para>
+    <para>
+    <application>teTeX</application> または <application>Live TeX</application> をインストール済で、ドキュメントを生成したい場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -157,11 +153,10 @@
     command as the <systemitem class="username">root</systemitem> user to
     install it:</para>
 @y
-<para>
-追加のドキュメントを生成した場合は
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行してドキュメントをインストールします。
-</para>
+    <para>
+    追加のドキュメントを生成した場合は <systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行してドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -203,9 +198,9 @@
           compile and link programs that use
           <filename class="libraryfile">libIDL-2</filename>.</para>
 @y
-<para>
-<filename class="libraryfile">libIDL-2</filename> ライブラリが用いるべきコンパイラーフラグ、リンカーフラグを決定します。
-</para>
+          <para>
+          <filename class="libraryfile">libIDL-2</filename> ライブラリが用いるべきコンパイラーフラグ、リンカーフラグを決定します。
+          </para>
 @z
 
 @x libIDL-2.{so,a}
@@ -213,7 +208,7 @@
           trees of CORBA Interface Definition Language
           (IDL) files.</para>
 @y
-<para>
-CORBA に基づくインターフェース定義言語ファイル (Interface Definition Language file) の生成更新を行うための関数群を提供します。
-</para>
+          <para>
+          CORBA に基づくインターフェース定義言語ファイル (Interface Definition Language file) の生成更新を行うための関数群を提供します。
+          </para>
 @z

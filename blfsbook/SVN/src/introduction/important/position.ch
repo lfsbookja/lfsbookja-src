@@ -23,21 +23,22 @@
   <para><emphasis>Should I install XXX in <filename>/usr</filename> or
   <filename>/usr/local</filename>?</emphasis></para>
 @y
-<para>
-<emphasis>
-XXX はどこにインストールすべきか?
-<filename>/usr</filename>?
-<filename>/usr/local</filename>?
-</emphasis>
-</para>
+  <para>
+  <emphasis>
+  XXX はどこにインストールすべきか?
+  <filename>/usr</filename>?
+  <filename>/usr/local</filename>?
+  </emphasis>
+  </para>
 @z
 
 @x
   <para>This is a question without an obvious answer for an
   LFS based system.</para>
 @y
-  <para>This is a question without an obvious answer for an
-  LFS based system.</para>
+  <para>
+  この問いに対する答えは、LFS ベースのシステムにおいてはあいまいにはできません。
+  </para>
 @z
 
 @x
@@ -50,14 +51,12 @@ XXX はどこにインストールすべきか?
   <filename class='directory'>/usr/local</filename>, except perhaps to create
   the basic directories within it.</para>
 @y
-<para>
-従来からの Unix システムにおいて、<filename class='directory'>/usr</filename>
-はシステムが提供するファイル類を配置する場所であり、一方
-<filename class='directory'>/usr/local</filename>
-は、個別の管理者が自由に取り扱う場所となっています。
-現実的な決まりとして <filename class='directory'>/usr/local</filename>
-は Unix システムの配布物を配置する場所ではなく、ただその配下の基本的なディレクトリのみを作るというものです。
-</para>
+  <para>
+  従来からの Unix システムにおいて、<filename
+  class='directory'>/usr</filename> はシステムが提供するファイル類を配置する場所であり、一方 <filename
+  class='directory'>/usr/local</filename> は、個別の管理者が自由に取り扱う場所となっています。
+  現実的な決まりとして <filename class='directory'>/usr/local</filename> は Unix システムの配布物を配置する場所ではなく、ただその配下の基本的なディレクトリのみを作るというものです。
+  </para>
 @z
 
 @x
@@ -68,15 +67,13 @@ XXX はどこにインストールすべきか?
   package manager's database knows about every file within
   <filename class='directory'>/usr</filename>.</para>
 @y
-<para>
-
-With Linux distributions like Red Hat, Debian, etc., a possible rule is
-that <filename class='directory'>/usr</filename> is managed by the
-distribution's package system and
-<filename class='directory'>/usr/local</filename> is not. This way the
-package manager's database knows about every file within
-<filename class='directory'>/usr</filename>.
-</para>
+  <para>
+  Red Hat や Debian のような Linux ディストリビューションにおいて定められているルールとして、<filename
+  class='directory'>/usr</filename> はディストリビューションが提供するパッケージシステムにおいて管理される場所としていて、<filename
+  class='directory'>/usr/local</filename> は管理外としています。
+  つまりパッケージ管理のデータベースが把握しているのは <filename
+  class='directory'>/usr</filename> 配下のファイルのみとなります。
+  </para>
 @z
 
 @x
@@ -152,9 +149,11 @@ package manager's database knows about every file within
   <filename class='directory'>/usr/site</filename>, rather than
   <filename class='directory'>/usr/local</filename>?</para>
 @y
-  <para>Some people ask why not use your own directory tree, e.g.,
-  <filename class='directory'>/usr/site</filename>, rather than
-  <filename class='directory'>/usr/local</filename>?</para>
+  <para>
+  独自のインストールディレクトリにインストールしてはダメなのか、と聞かれることがあります。
+  つまり <filename class='directory'>/usr/local</filename> ではなく <filename
+  class='directory'>/usr/site</filename> ではダメなのかと。
+  </para>
 @z
 
 @x
@@ -167,20 +166,25 @@ package manager's database knows about every file within
   the installer will probably fail unless you specifically tell it where to
   look.</para>
 @y
-  <para>There is nothing stopping you, many sites do make their own trees,
-  however it makes installing new software more difficult.  Automatic installers
-  often look for dependencies in
-  <filename class='directory'>/usr</filename> and
-  <filename class='directory'>/usr/local</filename>, and if the file it is
-  looking for is in <filename class='directory'>/usr/site</filename> instead,
-  the installer will probably fail unless you specifically tell it where to
-  look.</para>
+  <para>
+  そうしてはダメとする理由はありません。
+  各マシンでは独自のディレクトリツリー構成として構いません。
+  しかし新たなソフトウェアをインストールする際には少々やっかいなことになります。
+  自動インストールを行うソフトウェアでは、関連パッケージを <filename
+  class='directory'>/usr</filename> や <filename
+  class='directory'>/usr/local</filename> から探し出そうとします。
+  もし探し出すべきファイルが <filename
+  class='directory'>/usr/site</filename> にあったとすると、インストーラープログラムは見つけ出せないことになります。
+  この場合にはどのディレクトリを探し出すべきかを別途指示しなければなりません。
+  </para>
 @z
 
 @x
   <para><emphasis>What is the BLFS position on this?</emphasis></para>
 @y
-  <para><emphasis>What is the BLFS position on this?</emphasis></para>
+  <para><emphasis>
+  BLFS ではどこにインストールするのか？
+  </emphasis></para>
 @z
 
 @x
@@ -189,9 +193,11 @@ package manager's database knows about every file within
   install into <filename class='directory'>/opt</filename> for some specific
   packages.</para>
 @y
-  <para>All of the BLFS instructions install programs in
-  <filename class='directory'>/usr</filename> with optional instructions to
-  install into <filename class='directory'>/opt</filename> for some specific
-  packages.</para>
+  <para>
+  BLFS でのインストール手順では、ほとんどについて <filename
+  class='directory'>/usr</filename> にインストールを行います。
+  特定のパッケージについては <filename
+  class='directory'>/opt</filename> へのインストールを行うものもあります。
+  </para>
 @z
 

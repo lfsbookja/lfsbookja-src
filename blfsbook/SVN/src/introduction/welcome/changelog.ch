@@ -61,6 +61,38 @@
 @z
 
 @x
+      <para>November 22nd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated atk to 2.2.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - atk 2.2.0 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 21st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Added gtk+-3.2.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - gtk+-3.2.2 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 20th, 2011</para>
       <itemizedlist>
         <listitem>
@@ -68,6 +100,12 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - Added libtirpc-0.2.2.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated libmowgli to 0.9.95.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated Audacious to 3.1.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -78,6 +116,28 @@
         </listitem>
         <listitem>
           <para>[bdubbs] - libtirpc-0.2.2 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - libmowgli 0.9.95 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Audacious 3.1 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 19th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated GTK2 to 2.24.8.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - GTK2 2.24.8 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z

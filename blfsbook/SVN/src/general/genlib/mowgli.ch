@@ -32,16 +32,14 @@
     tasks such as reference-counting, linked lists and spinlocks, and thus
     helps programmers write better engineered code.</para>
 @y
-<para>
-<application>libmowgli</application>
-パッケージは、C言語の開発フレームワークであり
-<xref linkend="glib2"/> に類似しています。
-
-It
-provides high performance and highly flexible algorithms for routine
-tasks such as reference-counting, linked lists and spinlocks, and thus
-helps programmers write better engineered code.
-</para>
+    <para>
+    <application>libmowgli</application> パッケージは、C言語の開発フレームワークであり <xref linkend="glib2"/> に類似しています。
+    
+    It
+    provides high performance and highly flexible algorithms for routine
+    tasks such as reference-counting, linked lists and spinlocks, and thus
+    helps programmers write better engineered code.
+    </para>
 @z
 
 @x
@@ -104,25 +102,26 @@ helps programmers write better engineered code.
     <para>Install <application>libmowgli</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libmowgli</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libmowgli</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a formal test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -161,10 +160,10 @@ helps programmers write better engineered code.
           <para>libraries contain optimized functions for various common
           C programming tasks.</para>
 @y
-<!--
-日本語訳註： 少々意味分からず
--->
-<para>
-さまざまな共通的 C プログラミング処理に対し、最適化された関数を提供するライブラリです。
-</para>
+          <!--
+          日本語訳註： 少々意味分からず
+          -->
+          <para>
+          さまざまな共通的 C プログラミング処理に対し、最適化された関数を提供するライブラリです。
+          </para>
 @z
