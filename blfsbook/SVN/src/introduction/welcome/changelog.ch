@@ -61,6 +61,22 @@
 @z
 
 @x
+      <para>November 23rd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated cairo to 1.10.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - cairo 1.10.2 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 22nd, 2011</para>
       <itemizedlist>
         <listitem>

@@ -156,10 +156,11 @@
           testing, but should not be used to generate cryptographic keys or anything  
           else that needs real randomness.</para>
 @y
-          <para>outputs a sequence of pseudorandom (non-cryptographic)  bytes,  
-          using Knuth's lagged fibonacci generator. The stream is useful for 
-          testing, but should not be used to generate cryptographic keys or anything  
-          else that needs real randomness.</para>
+          <para>
+          (暗号化されていない) 擬似乱数によるバイト列を出力します。
+          これは Knuth のラグ付きフィボナッチ法 (lagged fibonacchi generator) に基づきます。
+          このバイト列はテスト目的で利用することができますが、暗号化されたキー配列の生成や、真の乱数としては用いることはできません。
+          </para>
 @z
 
 @x pkcs1-conv

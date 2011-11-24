@@ -29,10 +29,9 @@
     <para><application>libpcap</application> provides functions for user-level
     packet capture, used in low-level network monitoring.</para>
 @y
-<para>
-<application>libpcap</application>
-パッケージは、低レベルのネットワーク監視機能を利用して、ユーザーレベルでのパケットキャプチャ機能を提供します。
-</para>
+    <para>
+    <application>libpcap</application> パッケージは、低レベルのネットワーク監視機能を利用して、ユーザーレベルでのパケットキャプチャー機能を提供します。
+    </para>
 @z
 
 @x
@@ -92,11 +91,11 @@
     <ulink url="http://www.bluez.org">BlueZ</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional">Software distribution for the
-    <ulink url="http://www.endace.com/">DAG</ulink> and
-    <ulink url="http://www.intel.com/">Septel</ulink> range of passive
-    network monitoring cards and
-    <ulink url="http://www.bluez.org">BlueZ</ulink></para>
+    <para role="optional">
+    <ulink url="http://www.endace.com/">DAG</ulink> や <ulink
+    url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア,
+    <ulink url="http://www.bluez.org">BlueZ</ulink>
+</para>
 @z
 
 @x

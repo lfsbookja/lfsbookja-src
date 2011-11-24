@@ -27,14 +27,11 @@
     GnuPG which supports S/MIME, see the <xref linkend="gnupg2"/>
     package.</para>
 @y
-<para>
-<application>GnuPG</application>
-パッケージは、パブリックおよびプライベートな暗号鍵の生成機能を提供します。
-This is becoming useful for signing
-files or emails as proof of identity and preventing tampering with
-the contents of the file or email. For a more enhanced version of
-GnuPG which supports S/MIME, see the <xref linkend="gnupg2"/>
-package.</para>
+    <para>
+    <application>GnuPG</application> パッケージは、パブリックおよびプライベートな暗号鍵の生成機能を提供します。
+    これはファイルや電子メールに証明書をつけたり、それらの内容に対する改ざんを防ぐ目的で利用することができます。
+    S/MIME をサポートしている GnuPG の拡張版については <xref linkend="gnupg2"/> を参照してください。
+    </para>
 @z
 
 @x
@@ -116,7 +113,7 @@ package.</para>
     <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="libusb-compat"/>,
     <xref linkend="curl"/>,
-    an <xref linkend="server-mail"/>,
+    <xref linkend="server-mail"/> の１つ,
     <ulink url="http://www.oasis-open.org/docbook/tools/dtm/">docbook-to-man</ulink></para>
 @z
 
@@ -138,10 +135,9 @@ package.</para>
     <para>Install <application>GnuPG</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>GnuPG</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GnuPG</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -149,27 +145,26 @@ package.</para>
     installed and you wish to create documentation in alternate formats, issue
     the following command:</para>
 @y
-<para>
-<xref linkend="tetex"/> または <xref linkend="texlive"/>
-をインストールしていて、複数の形式のドキュメントを生成する場合は、以下のコマンドを実行します。
-</para>
+    <para>
+    <xref linkend="tetex"/> または <xref
+    linkend="texlive"/> をインストールしていて、複数の形式のドキュメントを生成する場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -177,11 +172,10 @@ package.</para>
     using the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-複数の形式のドキュメントを上で生成した場合は、
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドによりそれらをインストールします。
-</para>
+    <para>
+    複数の形式のドキュメントを上で生成した場合は、<systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドによりそれらをインストールします。
+    </para>
 @z
 
 @x
@@ -196,14 +190,13 @@ package.</para>
     <filename class="directory">/usr/lib</filename> instead of
     <filename class="directory">/usr/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=/usr/lib</parameter>:
-このパラメータは
-<filename class="directory">gnupg</filename>
-ディレクトリを、<filename class="directory">/usr/libexec</filename>
-ディレクトリ配下ではなく <filename class="directory">/usr/lib</filename>
-ディレクトリ配下に作成することを指示します。
-</para>
+    <para>
+    <parameter>--libexecdir=/usr/lib</parameter>:
+    このパラメーターは <filename
+    class="directory">gnupg</filename> ディレクトリを、<filename
+    class="directory">/usr/libexec</filename> ディレクトリ配下ではなく <filename
+    class="directory">/usr/lib</filename> ディレクトリ配下に作成することを指示します。
+    </para>
 @z
 
 @x
@@ -244,36 +237,32 @@ package.</para>
           <para>is the backend (command-line interface) for
           this OpenPGP implementation.</para>
 @y
-<para>
-これは OpenPGP 実装に対するバックエンド (コマンドラインインターフェース) です。
-</para>
+          <para>
+          これは OpenPGP 実装に対するバックエンド (コマンドラインインターフェース) です。
+          </para>
 @z
 
 @x gpg-zip
           <para>shell script that implements a gpg-ized version of
           <command>tar</command>.</para>
 @y
-<para>
-<command>tar</command>
-プログラムの GPG 化を実装するシェルスクリプトです。
-</para>
+          <para>
+          <command>tar</command> プログラムの GPG 化を実装するシェルスクリプトです。
+          </para>
 @z
 
 @x gpgsplit
           <para>separates key rings.</para>
 @y
-<para>
-
-separates key rings.
-</para>
+          <para>
+          連結された鍵を分割します。
+          </para>
 @z
 
 @x gpgv
           <para>is a verify only version of <command>gpg</command>.</para>
 @y
-<para>
-
-is a verify only version of <command>gpg</command>.
-</para>
+          <para>
+          <command>gpg</command> のバージョンのみを確認します。
+          </para>
 @z
-
