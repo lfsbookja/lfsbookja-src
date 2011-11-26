@@ -48,6 +48,89 @@
 @z
 
 @x
+      <para>2011-11-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Binutils-2.22. Fixes
+          <ulink url="&lfs-ticket-root;2967">#2967</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Install Glibc's NIS and RPC headers again.  The
+          headers have not been installed by default since Glibc-2.14, but that
+          causes various BLFS packages to break. Fixes
+          <ulink url="&lfs-ticket-root;2965">#2965</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Grep-2.10. Fixes
+          <ulink url="&lfs-ticket-root;2964">#2964</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add a patch to fix a security vulnerability in Perl.
+          Fixes <ulink url="&lfs-ticket-root;2963">#2963</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GDBM-1.10. Fixes
+          <ulink url="&lfs-ticket-root;2962">#2962</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Install Coreutils'
+          <filename class="libraryfile">libstdbuf.so</filename> to
+          <filename class="directory">/usr/lib/coreutils</filename> to
+          maintain consistency with other packages' shared library locations.
+          Fixes <ulink url="&lfs-ticket-root;2961">#2961</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.1.2. Fixes
+          <ulink url="&lfs-ticket-root;2960">#2960</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tcl-8.5.11. Fixes
+          <ulink url="&lfs-ticket-root;2959">#2959</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-11-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Binutils-2.22 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2967">#2967</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Glibc の NIS と RPC の各ヘッダーをインストールすることに。
+          これらのヘッダーは Glibc-2.14 以降、デフォルトではインストールされないことになり、これによって BLFS の多くのパッケージがビルドできなかった。
+          <ulink url="&lfs-ticket-root;2965">#2965</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Grep-2.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2964">#2964</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Perl におけるセキュリティ脆弱性を解消するパッチを追加。
+          <ulink url="&lfs-ticket-root;2963">#2963</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GDBM-1.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2962">#2962</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils にて <filename
+          class="libraryfile">libstdbuf.so</filename> ファイルを <filename
+          class="directory">/usr/lib/coreutils</filename> へインストールすることに。
+          他の共有ライブラリとの整合を維持するために。
+          <ulink url="&lfs-ticket-root;2961">#2961</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.1.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2960">#2960</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tcl-8.5.11 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2959">#2959</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-11-16</para>
       <itemizedlist>
         <listitem>

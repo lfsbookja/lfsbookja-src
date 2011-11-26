@@ -315,6 +315,16 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
+    <para>Install NIS and RPC related headers that are not installed by
+    default; these are required by several BLFS packages:</para>
+@y
+    <para>
+    デフォルトではインストールされない、NIS と RPC に関するヘッダーファイルをインストールします。
+    これは BLFS の各種パッケージにて必要となります。
+    </para>
+@z
+
+@x
     <para>The locales that can make the system respond in a different language
     were not installed by the above command. None of the locales are required,
     but if some of them are missing, test suites of the future packages would

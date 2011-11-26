@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/{glibc.ch, perl.ch}:
+          SVN-20111125, r9671 対応。(日本語訳変更なし。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-11-19</para>
       <itemizedlist>
         <listitem>
