@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2011-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Clean up console script.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - console スクリプトの整理。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-11-25</para>
       <itemizedlist>
         <listitem>

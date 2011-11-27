@@ -54,12 +54,23 @@
 -->
 
     <listitem>
+      <para>2011-11-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20111126, r9672 対応。(日本語訳変更なし。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-11-26</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
           src/chapter06/{glibc.ch, perl.ch}:
-          SVN-20111125, r9671 対応。(日本語訳変更なし。)
+          SVN-20111125, r9671 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -70,7 +81,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20111116, r9663 対応。(日本語訳変更なし。)
+          SVN-20111116, r9663 対応。
           </para>
         </listitem>
       </itemizedlist>
