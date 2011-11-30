@@ -63,21 +63,13 @@
       </para>
 @z
 
-% @x
-%     <para>Apply a patch to fix a known issue with the test suite:</para>
-% @y
-%     <para>
-%     テストスイートにて発生する問題を解消するためにパッチを適用します。
-%     </para>
-% @z
-% 
-% @x
-%     <para>And fix another test:</para>
-% @y
-%     <para>
-%     テストに関するもう一つの問題を修正します。
-%     </para>
-% @z
+@x
+    <para>The following patch fixes a bug in the testsuite:</para>
+@y
+    <para>
+    以下のパッチによりテストスイートのバグを修正します。
+    </para>
+@z
 
 @x
     <para>Now prepare Coreutils for compilation:</para>

@@ -48,6 +48,28 @@
 @z
 
 @x
+      <para>2011-11-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Update to lfs-bootscripts-20111128.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Fix daylight saving time bug in coreutils testsuite.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-11-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - lfs-bootscripts-20111128 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - coreutils のテストスイートにて、日中での保存時刻に関するバグを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-11-26</para>
       <itemizedlist>
         <listitem>

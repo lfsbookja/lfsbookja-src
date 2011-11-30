@@ -70,6 +70,20 @@
 @z
 
 @x
+      <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
+        <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
+        <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
@@ -270,6 +284,20 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&perl-libc-patch;"/></para>
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Perl Security Patch - <token>&perl-security-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&perl-security-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-security-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Perl Security Patch - <token>&perl-security-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&perl-security-patch;"/></para>
+        <para>MD5 sum: <literal>&perl-security-patch-md5;</literal></para>
       </listitem>
 @z
 
