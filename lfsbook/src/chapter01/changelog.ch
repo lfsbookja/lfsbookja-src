@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2011-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to E2fsprogs-1.42. Fixes
+          <ulink url="&lfs-ticket-root;2973">#2973</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.1.4. Fixes
+          <ulink url="&lfs-ticket-root;2970">#2970</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.1.0. Fixes
+          <ulink url="&lfs-ticket-root;2969">#2969</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add latest upstream patches for Bash. Fixes
+          <ulink url="&lfs-ticket-root;2968">#2968</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-12-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - E2fsprogs-1.42 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2973">#2973</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.1.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2970">#2970</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.1.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2969">#2969</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bash にてアップストリームによる最新のパッチを追加。
+          <ulink url="&lfs-ticket-root;2968">#2968</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-11-28</para>
       <itemizedlist>
         <listitem>
