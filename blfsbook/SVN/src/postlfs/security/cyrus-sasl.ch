@@ -28,18 +28,16 @@
     its use is negotiated, a security layer is inserted between the protocol
     and the connection.</para>
 @y
-<para>
-<application>Cyrus SASL</application>
-パッケージはシンプルな認証層 (Authentication Layer)
-およびセキュリティ層 (Security Layer) を提供するものです。
-接続を前提とするプロトコルに対しての認証機能のサポートを実現します。
-SASL を利用すれば、
-To use SASL, a protocol includes a
-command for identifying and authenticating a user to a server and for
-optionally negotiating protection of subsequent protocol interactions. If
-its use is negotiated, a security layer is inserted between the protocol
-and the connection.
-</para>
+    <para>
+    <application>Cyrus SASL</application> パッケージはシンプルな認証層 (Authentication Layer) およびセキュリティ層 (Security Layer) を提供するものです。
+    接続を前提とするプロトコルに対しての認証機能のサポートを実現します。
+    SASL を利用すれば、
+    To use SASL, a protocol includes a
+    command for identifying and authenticating a user to a server and for
+    optionally negotiating protection of subsequent protocol interactions. If
+    its use is negotiated, a security layer is inserted between the protocol
+    and the connection.
+    </para>
 @z
 
 @x
@@ -251,12 +249,14 @@ and the connection.
 @z
 
 @x
-    <para><command>install -v -m700 -d /var/lib/sasl ... -m711 /var/run/saslauthd</command>:
+    <para><command>install -v -m700 -d /var/lib/sasl ...
+    -m711 /var/run/saslauthd</command>:
     These directories must exist when starting <command>saslauthd</command> or
     using the sasldb plugin. If you're not going to be running the daemon or
     using the plugins, you may omit the creation of this directory.</para>
 @y
-    <para><command>install -v -m700 -d /var/lib/sasl ... -m711 /var/run/saslauthd</command>:
+    <para><command>install -v -m700 -d /var/lib/sasl ...
+    -m711 /var/run/saslauthd</command>:
     These directories must exist when starting <command>saslauthd</command> or
     using the sasldb plugin. If you're not going to be running the daemon or
     using the plugins, you may omit the creation of this directory.</para>

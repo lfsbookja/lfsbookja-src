@@ -27,33 +27,11 @@
     Group</ulink>, although <application>teTeX</application> has been
     unmaintained for several years now.</para>
 @y
-<para>
-<application>TeX Live</application>
-パッケージは、Donald Knuth により考案された TeX 文書処理システムを含むパッケージ
-<application>teTeX</application> の後継となるものです。
-どちらのパッケージも
-<ulink url="http://www.tug.org/">TeX ユーザーグループ (TeX Users Group)</ulink>
-によってメンテナンスされていますが、ここ数年
-<application>teTeX</application> はメンテナンスされなくなりました。
-</para>
-@z
-
-@x
-    <para>The <command>texi2html</command> Perl script previously shipped with
-    the <application>teTeX</application> package is no longer shipped. You can
-    use the <command>makeinfo</command> program as a replacement, or install
-    the stand-alone
-    <ulink url="http://www.nongnu.org/texi2html/">Texi2HTML</ulink>
-    package.</para>
-@y
-<para>
-Perl スクリプト <command>texi2html</command>
-は、かつては <application>teTeX</application>
-に含まれて提供されていましたが、今現在は提供されていません。
-同じ処理を行う場合は、代わりに <command>makeinfo</command>
-コマンドを利用するか、単独の <ulink url="http://www.nongnu.org/texi2html/">Texi2HTML</ulink>
-パッケージをインストールすることになります。
-</para>
+    <para>
+    <application>TeX Live</application> パッケージは、Donald Knuth により考案された TeX 文書処理システムを含むパッケージ <application>teTeX</application> の後継となるものです。
+    どちらのパッケージも <ulink
+    url="http://www.tug.org/">TeX ユーザーグループ (TeX Users Group)</ulink> によってメンテナンスされていますが、ここ数年 <application>teTeX</application> はメンテナンスされなくなりました。
+    </para>
 @z
 
 @x
@@ -143,6 +121,7 @@ Perl スクリプト <command>texi2html</command>
     <para role="optional"><xref linkend="gs"/>,
     <xref linkend="poppler"/>,
     <xref linkend="freetype2"/>,
+    <xref linkend="fontconfig"/>,
     <xref linkend="libpng"/>,
     <xref linkend="x-window-system"/>,
     <xref linkend="recode"/>,
@@ -161,6 +140,7 @@ Perl スクリプト <command>texi2html</command>
     <para role="optional"><xref linkend="gs"/>,
     <xref linkend="poppler"/>,
     <xref linkend="freetype2"/>,
+    <xref linkend="fontconfig"/>,
     <xref linkend="libpng"/>,
     <xref linkend="x-window-system"/>,
     <xref linkend="recode"/>,
@@ -196,39 +176,37 @@ Perl スクリプト <command>texi2html</command>
     and symlinks using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<application>TeX Live</application>
-をビルドするには、その前にマクロやフォントを納めたパッケージ
-(<filename>texmf</filename> tarball)
-をインストールして、以下の二つの一時的なシンボリックリンクを生成する必要があります。
-それには <systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <application>TeX Live</application> をビルドするには、その前にマクロやフォントを納めたパッケージ (<filename>texmf</filename> tarball) をインストールして、以下の二つの一時的なシンボリックリンクを生成する必要があります。
+    それには <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>Install <application>TeX Live</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>TeX Live</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>TeX Live</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem> user,
+    put the files in their permanent location:</para> 
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    各ファイルを一定のディレクトリにインストールします。
+    </para>
 @z
 
 @x
@@ -237,24 +215,22 @@ Perl スクリプト <command>texi2html</command>
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><command>ln -v -s share/texmf /usr</command> &amp;
-    <command>ln -v -s share/texmf-dist /usr</command> &amp;
-    <command>rm -v /usr/texmf{,-dist}</command>: These commands are used to
-    create and then remove temporary symbolic links so that files are not
-    installed in
-    <filename class="directory">/usr/texmf{,-dist}</filename></para>
-@y
-<para>
-<command>ln -v -s share/texmf /usr</command> &amp;
-<command>ln -v -s share/texmf-dist /usr</command> &amp;
-<command>rm -v /usr/texmf{,-dist}</command>:
-これらのコマンドは、一時的なシンボリックリンクを生成したり削除したりするものです。
-このシンボリックリンクにより、各種ファイルが
-<filename class="directory">/usr/texmf{,-dist}</filename>
-にインストールされないようにします。
-</para>
-@z
+% @x
+%     <para><command>ln -v -s share/texmf /usr</command> &amp;
+%     <command>ln -v -s share/texmf-dist /usr</command> &amp;
+%     <command>rm -v /usr/texmf{,-dist}</command>: These commands are used to
+%     create and then remove temporary symbolic links so that files are not
+%     installed in
+%     <filename class="directory">/usr/texmf{,-dist}</filename></para>
+% @y
+%     <para>
+%     <command>ln -v -s share/texmf /usr</command> &amp;
+%     <command>ln -v -s share/texmf-dist /usr</command> &amp;
+%     <command>rm -v /usr/texmf{,-dist}</command>:
+%     これらのコマンドは、一時的なシンボリックリンクを生成したり削除したりするものです。
+%     このシンボリックリンクにより、各種ファイルが <filename class="directory">/usr/texmf{,-dist}</filename> にインストールされないようにします。
+%     </para>
+% @z
 
 @x
     <para><command>sed -i -e '...' -e '...' texk/kpathsea/texmf.cnf</command>:
@@ -264,26 +240,24 @@ Perl スクリプト <command>texi2html</command>
     changes the path for user-installed fonts to the run-time variable location
     <filename class="directory">/var/lib/livetex/fonts</filename>.</para>
 @y
-<para>
-<command>sed -i -e '...' -e '...' texk/kpathsea/texmf.cnf</command>:
-このコマンドは、デフォルトのディレクトリを変更するもので、ローカルな設定を収容するディレクトリとして
-<filename class="directory">/usr/texmf-local</filename>
-ではなく <filename class="directory">/usr/share/texmf-local</filename>
-を用いるようにします。
-同じように、ユーザーがインストールするフォントやランタイム時の変数設定を収容するディレクトリを
-<filename class="directory">/var/lib/livetex/fonts</filename>
-にします。
-</para>
+    <para>
+    <command>sed -i -e '...' -e '...' texk/kpathsea/texmf.cnf</command>:
+    このコマンドは、デフォルトのディレクトリを変更するもので、ローカルな設定を収容するディレクトリとして <filename
+    class="directory">/usr/texmf-local</filename> ではなく <filename
+    class="directory">/usr/share/texmf-local</filename> を用いるようにします。
+    同じように、ユーザーがインストールするフォントやランタイム時の変数設定を収容するディレクトリを <filename
+    class="directory">/var/lib/livetex/fonts</filename> にします。
+    </para>
 @z
 
 @x
     <para><parameter>--disable-native-texlive-build</parameter>: This parameter
     is required if the build is not for a binary distribution.</para>
 @y
-<para>
-<parameter>--disable-native-texlive-build</parameter>:
-このパラメーターは、提供されているバイナリをインストールしないようにするために必要です。
-</para>
+    <para>
+    <parameter>--disable-native-texlive-build</parameter>:
+    このパラメーターは、提供されているバイナリをインストールしないようにするために必要です。
+    </para>
 @z
 
 @x
@@ -292,13 +266,11 @@ Perl スクリプト <command>texi2html</command>
     installed. Remove this parameter if <application>Lua</application> is
     installed.</para>
 @y
-<para>
-<parameter>--without-luatex</parameter>:
-このパラメーターは、プログラミング言語 <application>Lua</application>
-がインストールされていない場合に必要です。
-<application>Lua</application>
-がインストールされている場合は、このパラメーターを取り除いてください。
-</para>
+    <para>
+    <parameter>--without-luatex</parameter>:
+    このパラメーターは、プログラミング言語 <application>Lua</application> がインストールされていない場合に必要です。
+    <application>Lua</application> がインストールされている場合は、このパラメーターを取り除いてください。
+    </para>
 @z
 
 @x
@@ -306,11 +278,10 @@ Perl スクリプト <command>texi2html</command>
     is used so that TeX will automatically invoke mktextex if TeX source is
     missing.</para>
 @y
-<para>
-<parameter>--enable-mktextex-default</parameter>:
-このパラメーターは、TeX ソースファイルが存在しなかった際に、TeX
-が自動的に mktextex を実行するようにするものです。
-</para>
+    <para>
+    <parameter>--enable-mktextex-default</parameter>:
+    このパラメーターは、TeX ソースファイルが存在しなかった際に、TeX が自動的に mktextex を実行するようにするものです。
+    </para>
 @z
 
 @x
@@ -318,10 +289,10 @@ Perl スクリプト <command>texi2html</command>
     is used so that the build can be easily recognized as a non-TUG binary
     build.</para>
 @y
-<para>
-<parameter>--with-banner-add=" - BLFS"</parameter>:
-このパラメーターは、TeX ユーザーグループ (TUG) が作ったバイナリとは異なるものを識別するために利用することができます。
-</para>
+    <para>
+    <parameter>--with-banner-add=" - BLFS"</parameter>:
+    このパラメーターは、TeX ユーザーグループ (TUG) が作ったバイナリとは異なるものを識別するために利用することができます。
+    </para>
 @z
 
 @x
@@ -331,12 +302,12 @@ Perl スクリプト <command>texi2html</command>
     <command>./configure --help</command> to see a full list of available
     options.</para>
 @y
-<para>
-<option>--with-system-...</option> &amp;
-<option>--with-libgs-includes=/usr/include/ghostscript</option>:
-これらのオプションは、システムに既にインストールされているライブラリを利用する場合に必要となります。
-<command>./configure --help</command> を実行すれば、利用可能なオプションをすべて確認することができます。
-</para>
+    <para>
+    <option>--with-system-...</option> &amp;
+    <option>--with-libgs-includes=/usr/include/ghostscript</option>:
+    これらのオプションは、システムに既にインストールされているライブラリを利用する場合に必要となります。
+    <command>./configure --help</command> を実行すれば、利用可能なオプションをすべて確認することができます。
+    </para>
 @z
 
 @x
@@ -345,13 +316,12 @@ Perl スクリプト <command>texi2html</command>
     in <filename class="directory">/usr/share/texmf</filename> instead of
     <filename class="directory">/usr/texmf</filename>.</para>
 @y
-<para>
-<command>for FN in `...`; do ...; done</command>
-このコマンドは、インストールされるシンボリックリンクの先を、
-<filename class="directory">/usr/texmf</filename>
-ではなく <filename class="directory">/usr/share/texmf</filename>
-にするものです。
-</para>
+    <para>
+    <command>for FN in `...`; do ...; done</command>
+    このコマンドは、インストールされるシンボリックリンクの先を、<filename
+    class="directory">/usr/texmf</filename> ではなく <filename
+    class="directory">/usr/share/texmf</filename> にするものです。
+    </para>
 @z
 
 @x
@@ -368,14 +338,11 @@ Perl スクリプト <command>texi2html</command>
       TeX programs are used to make the modifications.</para>
 @y
       <title>&j-ConfigFiles;</title>
-<para>
-完全に整備された TeX システムの場合は、各種の
-<filename class="extension">.cnf</filename> ファイルが利用されます。
-これらのファイルは
-(TeX システムがどのように動作するかが十分に分かっていないなら)
-直接編集すべきではありません。
-これらは TeX 関連プログラムが、処理制御を実現するために利用しています。
-</para>
+      <para>
+      完全に整備された TeX システムの場合は、各種の <filename class="extension">.cnf</filename> ファイルが利用されます。
+      これらのファイルは (TeX システムがどのように動作するかが十分に分かっていないなら) 直接編集すべきではありません。
+      これらは TeX 関連プログラムが、処理制御を実現するために利用しています。
+      </para>
 @z
 
 @x
@@ -389,10 +356,9 @@ Perl スクリプト <command>texi2html</command>
       <systemitem class="username">root</systemitem> user to configure and
       finalize the TeX installation:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行し、TeX システムの最終的な設定を行います。
-</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し、TeX システムの最終的な設定を行います。
+      </para>
 @z
 
 @x
@@ -456,22 +422,18 @@ Perl スクリプト <command>texi2html</command>
           details, as well as a tour of the expansive
           <application>TeX Live</application> documentation.</para>
 @y
-<para>
-<application>TeX Live</application>
-パッケージには、あまりにも数多くのプログラムが含まれるため、一覧列記することができません。
-詳しくは、各プログラムの man ページを参照するか、あるいは
-<ulink url="file:///usr/share/texmf/doc/texlive/index.html"/>
-や、日々充足されている <application>TeX Live</application>
-のドキュメントを確認してください。
-</para>
+          <para>
+          <application>TeX Live</application> パッケージには、あまりにも数多くのプログラムが含まれるため、一覧列記することができません。
+          詳しくは、各プログラムの man ページを参照するか、あるいは <ulink
+          url="file:///usr/share/texmf/doc/texlive/index.html"/> や、日々充足されている <application>TeX Live</application> のドキュメントを確認してください。
+          </para>
 @z
 
 @x
           <para>contains the functions used by the TeX programs to resolve
           and catalog pathnames used in the Tex installation.</para>
 @y
-<para>
-TeX がインストールされているパスを識別するために、
-TeX 関連プログラムが利用する機能を提供します。
-</para>
+          <para>
+          TeX がインストールされているパスを識別するために、TeX 関連プログラムが利用する機能を提供します。
+          </para>
 @z

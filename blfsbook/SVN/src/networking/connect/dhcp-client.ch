@@ -64,15 +64,13 @@
 @x
       <para id="dhclient-service">To configure <command>dhclient</command>,
       you need to first install the network service script,
-      <filename>/etc/sysconfig/network-devices/services/dhclient</filename>
+      <filename>/lib/services/dhclient</filename>
       included in the <xref linkend="bootscripts"/> package
       (as <systemitem class="username">root</systemitem>):</para>
 @y
       <para id="dhclient-service">
-      <command>dhclient</command> を設定するにはまず
-      <xref linkend="bootscripts"/> パッケージにあるネットワークサービススクリプト
-      <filename>/etc/sysconfig/network-devices/services/dhclient</filename>
-      をインストールします。
+      <command>dhclient</command> を設定するにはまず <xref
+      linkend="bootscripts"/> パッケージにあるネットワークサービススクリプト <filename>/lib/services/dhclient</filename> をインストールします。
       (<systemitem class="username">root</systemitem> ユーザーになって実行します。)
       </para>
 @z
@@ -89,16 +87,14 @@
 
 @x
     <para id="dhclient-config1">Next, create the
-    <filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhclient</filename>
+    <filename>/etc/sysconfig/ifconfig.eth0/dhclient</filename>
     configuration file with the following commands as the <systemitem
     class="username">root</systemitem> user.  Adjust as
     necessary for additional interfaces:</para>
 @y
     <para id="dhclient-config1">
-    次に設定ファイル
-    <filename>/etc/sysconfig/network-devices/ifconfig.eth0/dhclient</filename>
-    を生成するため、<systemitem class="username">root</systemitem>
-    ユーザーになって以下のコマンドを実行します。
+    次に設定ファイル <filename>/etc/sysconfig/ifconfig.eth0/dhclient</filename> を生成するため、<systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
     追加のインターフェースがある場合は適宜修正してください。
     </para>
 @z
@@ -109,9 +105,7 @@
     values, examine the man page for <command>dhclient</command>.</para>
 @y
     <para>
-    <envar>DHCP_START</envar> と <envar>DHCP_STOP</envar>
-    に対する設定値の詳細は、<command>dhclient</command>
-    の man ページを参照してください。
+    <envar>DHCP_START</envar> と <envar>DHCP_STOP</envar> に対する設定値の詳細は、<command>dhclient</command> の man ページを参照してください。
     </para>
 @z
 

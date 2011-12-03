@@ -61,6 +61,200 @@
 @z
 
 @x
+      <para>December 2nd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated seamonkey to 2.5.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated libvpx to v0.9.7.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - seamonkey 2.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - libvpx v0.9.7 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>December 1st, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated nfs related bootscripts.
+          Removed portmap in favor of rpcbind.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated dhcp to 4.2.3.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Added yasm-1.2.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - nfs に関連するブートスクリプトをアップデート。
+          rpcbind の採用により portmap を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - dhcp 4.2.3 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - yasm-1.2.0 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 30th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated Thunderbird to 8.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Thunderbird 8.0 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 29th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Downgraded D-BUS to 1.4.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated to polkit-0.102.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated to xulrunner to 8.0.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - D-BUS 1.4.0 へのダウングレード。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - polkit-0.102 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - xulrunner 8.0.1 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 29th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Updated to Links-2.4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Links-2.4 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 28th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Added rpcbind-0.2.0.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated D-BUS-1.5.8.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - rpcbind-0.2.0 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - D-BUS-1.5.8 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 27th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated Firefox to 8.0.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Firefox 8.0.1 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 25th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated ffmpeg to 0.8.6.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated NSS to 3.13.1.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Updated NSPR to 4.8.9.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - ffmpeg 0.8.6 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - NSS 3.13.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - NSPR 4.8.9 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>November 24th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated ghostscript to 9.04.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/11/24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - ghostscript 9.04 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>November 23rd, 2011</para>
       <itemizedlist>
         <listitem>
@@ -112,6 +306,9 @@
       <para>November 20th, 2011</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Updated to nfs-utils-1.2.5.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Restored portmap-6.0.</para>
         </listitem>
         <listitem>
@@ -127,6 +324,9 @@
 @y
       <para>2011/11/20</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - nfs-utils-1.2.5 へのアップデート。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - portmap-6.0 の復元。</para>
         </listitem>

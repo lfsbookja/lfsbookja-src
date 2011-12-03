@@ -81,26 +81,32 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="eggdbus"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="gobject-introspection"/>, and
-    <xref linkend="DocBook"/></para>
+    <para role="required"><xref linkend="expat"/>,
+    <xref linkend="intltool"/>, and
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="eggdbus"/>,
+    <para role="required"><xref linkend="expat"/>,
     <xref linkend="intltool"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="DocBook"/></para>
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="DocBook"/>,
+    <xref linkend="docbook-xsl"/>,
+    <xref linkend="gobject-introspection"/>,
+    <xref linkend="gtk-doc"/>,
+    <xref linkend="libxslt"/>, and
+    <xref linkend="linux-pam"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="DocBook"/>,
+    <xref linkend="docbook-xsl"/>,
+    <xref linkend="gobject-introspection"/>,
+    <xref linkend="gtk-doc"/>,
+    <xref linkend="libxslt"/>,
+    <xref linkend="linux-pam"/></para>
 @z
 
 @x
@@ -177,24 +183,24 @@
 @z
 
 @x
-        <seg>pkaction, pkcheck, pk-example-frobnicate, pkexec,
+        <seg>pk-example-frobnicate, pkaction, pkcheck, pkexec,
         polkit-agent-helper-1, and polkitd</seg>
-        <seg>libpolkit-agent-1.{so,a}, libpolkit-backend-1.{so,a},
-        libpolkit-gobject-1.{so,a}, libnullbackend.{so,a}, and
-        libpkexec-action-lookup.{so,a}</seg>
-        <seg>/etc/polkit-1/{localauthority.conf.d,nullbackend.conf.d},
-        /usr/{include/polkit-1/{polkit,polkitagent,polkitbackend},
+        <seg>libnullbackend.{so,a}, libpolkit-agent-1.{so,a},
+        libpolkit-backend-1.{so,a}, and libpolkit-gobject-1.{so,a}</seg>
+        <seg>/etc/polkit-1/{localauthority.conf.d,localauthority/{10-vendor.d,
+        20-org.d,30-site.d,50-local.d,90-mandatory.d},nullbackend.conf.d},
+        /usr/{include/polkit-1/{polkitagent,polkitbackend},
         lib/polkit-1/extensions,share/polkit-1/actions},
         /var/lib/polkit-1/localauthority/{10-vendor.d,20-org.d,30-site.d,
         50-local.d,90-mandatory.d}</seg>
 @y
-        <seg>pkaction, pkcheck, pk-example-frobnicate, pkexec,
+        <seg>pk-example-frobnicate, pkaction, pkcheck, pkexec,
         polkit-agent-helper-1, polkitd</seg>
-        <seg>libpolkit-agent-1.{so,a}, libpolkit-backend-1.{so,a},
-        libpolkit-gobject-1.{so,a}, libnullbackend.{so,a},
-        libpkexec-action-lookup.{so,a}</seg>
-        <seg>/etc/polkit-1/{localauthority.conf.d,nullbackend.conf.d},
-        /usr/{include/polkit-1/{polkit,polkitagent,polkitbackend},
+        <seg>libnullbackend.{so,a}, libpolkit-agent-1.{so,a},
+        libpolkit-backend-1.{so,a}, libpolkit-gobject-1.{so,a}</seg>
+        <seg>/etc/polkit-1/{localauthority.conf.d,localauthority/{10-vendor.d,
+        20-org.d,30-site.d,50-local.d,90-mandatory.d},nullbackend.conf.d},
+        /usr/{include/polkit-1/{polkitagent,polkitbackend},
         lib/polkit-1/extensions,share/polkit-1/actions},
         /var/lib/polkit-1/localauthority/{10-vendor.d,20-org.d,30-site.d,
         50-local.d,90-mandatory.d}</seg>
@@ -263,21 +269,5 @@
 @y
           <para>
           <application>polkit</application> 認証 API 関数を提供します。
-          </para>
-@z
-
-@x libnullbackend.{so,a}
-          <para>is an extension library.</para>
-@y
-          <para>
-          拡張ライブラリ。
-          </para>
-@z
-
-@x libpkexec-action-lookup.{so,a}
-          <para>is an extension library.</para>
-@y
-          <para>
-          拡張ライブラリ。
           </para>
 @z

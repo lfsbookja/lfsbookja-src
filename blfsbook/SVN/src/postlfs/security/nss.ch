@@ -28,16 +28,16 @@
     security standards. This is useful for implementing SSL and S/MIME or
     other Internet security standards into an application.</para>
 @y
-<para>
-
-The Network Security Services (<application>NSS</application>)
-package is a set of libraries designed to support cross-platform
-development of security-enabled client and server applications.
-Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5,
-PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other
-security standards. This is useful for implementing SSL and S/MIME or
-other Internet security standards into an application.
-</para>
+    <para>
+    
+    The Network Security Services (<application>NSS</application>)
+    package is a set of libraries designed to support cross-platform
+    development of security-enabled client and server applications.
+    Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5,
+    PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other
+    security standards. This is useful for implementing SSL and S/MIME or
+    other Internet security standards into an application.
+    </para>
 @z
 
 @x
@@ -136,10 +136,9 @@ other Internet security standards into an application.
     <para>Install <application>NSS</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>NSS</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>NSS</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -161,9 +160,9 @@ other Internet security standards into an application.
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> になって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> になって以下を実行します。
+    </para>
 @z
 
 @x
@@ -171,12 +170,12 @@ other Internet security standards into an application.
     shell started at the beginning of the installation to restore the
     environment to the original state.</para>
 @y
-<para>
-
-Now as the unprivileged user, exit the <command>bash</command>
-shell started at the beginning of the installation to restore the
-environment to the original state.
-</para>
+    <para>
+    
+    Now as the unprivileged user, exit the <command>bash</command>
+    shell started at the beginning of the installation to restore the
+    environment to the original state.
+    </para>
 @z
 
 @x
@@ -191,14 +190,14 @@ environment to the original state.
     serves the purpose of restoring the environment and returning back to the
     original directory when the installation is complete.</para>
 @y
-<para>
-<command>bash</command>:
-
-Shells are started as many environment
-variables are created during the installation process. Exiting the shells
-serves the purpose of restoring the environment and returning back to the
-original directory when the installation is complete.
-</para>
+    <para>
+    <command>bash</command>:
+    
+    Shells are started as many environment
+    variables are created during the installation process. Exiting the shells
+    serves the purpose of restoring the environment and returning back to the
+    original directory when the installation is complete.
+    </para>
 @z
 
 @x
@@ -206,51 +205,36 @@ original directory when the installation is complete.
     the build is performed with no debugging symbols built into the binaries
     and that the default compiler optimizations are used.</para>
 @y
-<para>
-<command>export BUILD_OPT=1</command>:
-
-This variable is set so that
-the build is performed with no debugging symbols built into the binaries
-and that the default compiler optimizations are used.
-</para>
+    <para>
+    <command>export BUILD_OPT=1</command>:
+    
+    This variable is set so that
+    the build is performed with no debugging symbols built into the binaries
+    and that the default compiler optimizations are used.
+    </para>
 @z
 
 @x
     <para><command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>: This 
     command sets the location of the nspr headers.</para>
 @y
-<para>
-<command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>:
-
-This 
-command sets the location of the nspr headers.
-</para>
-@z
-
-@x
-    <para><command>export USE_SYSTEM_*</command>: These commands ensure that
-    the system installed libraries are used instead of the in-tree
-    versions.</para> 
-@y
-<para>
-<command>export USE_SYSTEM_*</command>:
-
-These commands ensure that
-the system installed libraries are used instead of the in-tree
-versions.
-</para> 
+    <para>
+    <command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>:
+    This 
+    command sets the location of the nspr headers.
+    </para>
 @z
 
 @x
     <para><command>export ZLIB_LIBS=-lz</command>: This command provides the
     needed linker flags to link to the system zlib.</para>
 @y
-<para>
-<command>export ZLIB_LIBS=-lz</command>:
-
-This command provides the
-needed linker flags to link to the system zlib.
-</para>
+    <para>
+    <command>export ZLIB_LIBS=-lz</command>:
+    
+    This command provides the
+    needed linker flags to link to the system zlib.
+    </para>
 @z
 
 @x
@@ -333,10 +317,9 @@ needed linker flags to link to the system zlib.
           <para>is used to determine the NSS library settings
           of the installed NSS libraries.</para>
 @y
-<para>
-
-is used to determine the NSS library settings
-of the installed NSS libraries.
-</para>
+          <para>
+          
+          is used to determine the NSS library settings
+          of the installed NSS libraries.
+          </para>
 @z
-

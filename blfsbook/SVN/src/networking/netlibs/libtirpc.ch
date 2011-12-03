@@ -155,22 +155,6 @@
 @z
 
 @x
-    <para><userinput>tar -xvf ../rpcnis-headers.tar.bz2 -C
-    /usr/include</userinput>: This command replaces the rpc and nis header
-    files no longer installed by <application>glibc</application>.  If the
-    headers have already been added by other means, this will only overwrite
-    them and not do any harm.</para>
-@y
-    <para>
-    <userinput>tar -xvf ../rpcnis-headers.tar.bz2 -C
-    /usr/include</userinput>: This command replaces the rpc and nis header
-    files no longer installed by <application>glibc</application>.  If the
-    headers have already been added by other means, this will only overwrite
-    them and not do any harm.
-    </para>
-@z
-
-@x
     <para><userinput>patch -Np1 -i
     ../libtirpc-&libtirpc-version;-remove-nis-2.patch</userinput>: This patch
     removes references to nis functions no longer in
