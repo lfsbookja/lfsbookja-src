@@ -61,6 +61,56 @@
 @z
 
 @x
+      <para>December 4th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - Added libsndfile-1.0.23.</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - Added PulseAudio-0.9.23.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[wblaszcz] - libsndfile-1.0.23 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[wblaszcz] - PulseAudio-0.9.23 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>December 2rd, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated xine-lib to 1.1.20.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated xine-ui to 0.99.6.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated Pango to 1.29.4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - xine-lib 1.1.20 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - xine-ui 0.99.6 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Pango 1.29.4 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>December 2nd, 2011</para>
       <itemizedlist>
         <listitem>

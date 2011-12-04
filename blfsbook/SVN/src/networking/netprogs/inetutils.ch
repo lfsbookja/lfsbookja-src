@@ -27,15 +27,14 @@
     Note that most of the <application>Inetutils</application> servers are
     insecure and should only be used on trusted networks.</para>
 @y
-<para>
-<application>Inetutils</application>
-パッケージは、ネットワーククライアントプログラムおよびサーバープログラムを提供します。
-LFS をベースにビルド作業を行っている場合は、LFS での構築を通じて本パッケージをインストールしていることになります。
-ただしその時にはクライアントプログラム (telnet, ftp など) のみしかインストールしていません。
-ここではサーバープログラムもインストールします。
-<application>Inetutils</application>
-が提供するサーバープログラムはセキュアなものではないため、信頼のあるネットワーク環境でのみ利用すべきであることに留意してください。
-</para>
+    <para>
+    <application>Inetutils</application>
+    パッケージは、ネットワーククライアントプログラムおよびサーバープログラムを提供します。
+    LFS をベースにビルド作業を行っている場合は、LFS での構築を通じて本パッケージをインストールしていることになります。
+    ただしその時にはクライアントプログラム (telnet, ftp など) のみしかインストールしていません。
+    ここではサーバープログラムもインストールします。
+    <application>Inetutils</application> が提供するサーバープログラムはセキュアなものではないため、信頼のあるネットワーク環境でのみ利用すべきであることに留意してください。
+    </para>
 @z
 
 @x
@@ -118,26 +117,25 @@ LFS をベースにビルド作業を行っている場合は、LFS での構築
     <para>Install <application>Inetutils</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Inetutils</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Inetutils</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -151,13 +149,11 @@ LFS をベースにビルド作業を行っている場合は、LFS での構築
     <application>Inetutils</application> installing a <command>logger</command>
     program, which is installed in the LFS book.</para>
 @y
-<para>
-<parameter>--disable-logger</parameter>:
-このパラメーターは <application>Inetutils</application>
-のインストール時に <command>logger</command>
-コマンドをインストールしないことを指示します。
-このプログラムは LFS ブックにおいてインストールしています。
-</para>
+    <para>
+    <parameter>--disable-logger</parameter>:
+    このパラメーターは <application>Inetutils</application> のインストール時に <command>logger</command> コマンドをインストールしないことを指示します。
+    このプログラムは LFS ブックにおいてインストールしています。
+    </para>
 @z
 
 @x
@@ -165,11 +161,11 @@ LFS をベースにビルド作業を行っている場合は、LFS での構築
     <application>Inetutils</application> installing a system log daemon, which is
     installed in the LFS book.</para>
 @y
-<para>
-<parameter>--disable-syslogd</parameter>: This switch prevents
-<application>Inetutils</application> installing a system log daemon, which is
-installed in the LFS book.
-</para>
+    <para>
+    <parameter>--disable-syslogd</parameter>: This switch prevents
+    <application>Inetutils</application> installing a system log daemon, which is
+    installed in the LFS book.
+    </para>
 @z
 
 @x
@@ -186,13 +182,13 @@ installed in the LFS book.
 
 @x
     <para><option>--disable-ifconfig</option>: This switch prevents
-    <application>Inetutils</application> installing an
+    <application>Inetutils</application> from installing an
     <command>ifconfig</command> command. Use this parameter if you have
     <application>Net-Tools</application> installed and wish to keep its version
     of <command>ifconfig</command>.</para>
 @y
     <para><option>--disable-ifconfig</option>: This switch prevents
-    <application>Inetutils</application> installing an
+    <application>Inetutils</application> from installing an
     <command>ifconfig</command> command. Use this parameter if you have
     <application>Net-Tools</application> installed and wish to keep its version
     of <command>ifconfig</command>.</para>
@@ -200,22 +196,18 @@ installed in the LFS book.
 
 @x
     <para><option>--disable-hostname</option>: This switch prevents
-    <application>Inetutils</application> installing a
+    <application>Inetutils</application> from installing a
     <command>hostname</command> command. Use this parameter if you have
-    the original version supplied in LFS during the
-    <application>Coreutils</application> package, or if you have the version
-    supplied by the <application>Net-Tools</application> package. If you wish
-    to keep these versions of <command>ifconfig</command>, use this
-    parameter.</para>
+    the version of this program supplied by the either the
+    <application>Coreutils</application> package or the
+    <application>Net-Tools</application> package and wish to keep it.</para>
 @y
     <para><option>--disable-hostname</option>: This switch prevents
-    <application>Inetutils</application> installing a
+    <application>Inetutils</application> from installing a
     <command>hostname</command> command. Use this parameter if you have
-    the original version supplied in LFS during the
-    <application>Coreutils</application> package, or if you have the version
-    supplied by the <application>Net-Tools</application> package. If you wish
-    to keep these versions of <command>ifconfig</command>, use this
-    parameter.</para>
+    the version of this program supplied by the either the
+    <application>Coreutils</application> package or the
+    <application>Net-Tools</application> package and wish to keep it.</para>
 @z
 
 @x

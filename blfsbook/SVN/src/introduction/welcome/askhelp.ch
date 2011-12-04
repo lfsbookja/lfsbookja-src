@@ -61,15 +61,14 @@
         review any error message. If it loads properly, you may need to add
         the <command>modprobe</command> command to your boot scripts.</para>
 @y
-        <para>Is the hardware support compiled into the kernel or
-        available as a module to the kernel?  If it is a module, is it
-        configured properly in <filename>modprobe.conf</filename> and has it
-        been loaded?  You should use <command>lsmod</command> as the
-        <systemitem class='username'>root</systemitem> user to see if it's
-        loaded. Check the <filename>sys.log</filename> file or run
-        <command>modprobe <replaceable>&lt;driver&gt;</replaceable></command> to
-        review any error message. If it loads properly, you may need to add
-        the <command>modprobe</command> command to your boot scripts.</para>
+        <para>
+        ハードウェアをサポートする機能がカーネルに含まれてビルドされていますか？
+        またはカーネルモジュールとしてビルドされていますか？
+        カーネルモジュールである場合、<filename>modprobe.conf</filename> にて適切に設定され、ロードもできていますか？
+        <systemitem class='username'>root</systemitem> ユーザーになって <command>lsmod</command> コマンドを使えば、ロードできているかどうかは確認することができます。
+        <filename>sys.log</filename> ファイルを確認するか、<command>modprobe <replaceable>&lt;driver&gt;</replaceable></command> を実行し、エラーがないかを確認してください。
+        正しくロードできているなら、ブートスクリプトに <command>modprobe</command> コマンドを追加すべきかもしれません。
+        </para>
 @z
 
 @x
@@ -81,13 +80,17 @@
         that starts out with <quote>It works as root, but not as ...</quote>
         requires a thorough review of permissions prior to asking.</para>
 @y
-        <para>Are your permissions properly set, especially for devices? LFS
+        <para>
+        特にデバイスに対してのパーミッションは、適切に設定していますか？
+        
+LFS
         uses groups to make these settings easier, but it also adds the step of
         adding users to groups to allow access. A simple <command>usermod
         -G audio <replaceable>&lt;user&gt;</replaceable></command> may be all that's
         necessary for that user to have access to the sound system. Any question
         that starts out with <quote>It works as root, but not as ...</quote>
-        requires a thorough review of permissions prior to asking.</para>
+        requires a thorough review of permissions prior to asking.
+        </para>
 @z
 
 @x
@@ -100,14 +103,17 @@
         <quote><xref linkend="beyond"/></quote> is
         available to help you check.</para>
 @y
-        <para>BLFS liberally uses <filename
+        <para>
+        
+BLFS liberally uses <filename
         class='directory'>/opt/<replaceable>&lt;package&gt;</replaceable></filename>.
         The main objection to this centers around the need to expand your
         environment variables for each package placed there (e.g.,
         PATH=$PATH:/opt/kde/bin). In most cases, the package instructions will
         walk you through the changes, but some will not. The section called
         <quote><xref linkend="beyond"/></quote> is
-        available to help you check.</para>
+        available to help you check.
+        </para>
 @z
 
 @x
@@ -186,7 +192,9 @@
     the quality of volunteers is enhanced because they don't feel that their
     time has been abused, so they are far more likely to participate.</para>
 @y
-    <para>Expect guidance instead of specific instructions. If you are
+    <para>
+    
+Expect guidance instead of specific instructions. If you are
     instructed to read something, please do so. It generally implies that
     the answer was way too obvious and that the question would not have
     been asked if a little research was done prior to asking. The volunteers
@@ -194,7 +202,8 @@
     reasonable research on your end.  In addition, the quality of your
     experience with BLFS is also greatly enhanced by this research, and
     the quality of volunteers is enhanced because they don't feel that their
-    time has been abused, so they are far more likely to participate.</para>
+    time has been abused, so they are far more likely to participate.
+    </para>
 @z
 
 @x

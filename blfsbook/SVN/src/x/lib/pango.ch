@@ -22,11 +22,11 @@
 @x
     <para>The <application>Pango</application> package contains the
     <filename class="libraryfile">libpango</filename> libraries. These are
-    useful for the layout and rendering of text.</para>
+    useful for the layout and rendering of multilingual text.</para>
 @y
     <para>
     <application>Pango</application> パッケージは <filename class="libraryfile">libpango</filename> ライブラリを提供します。
-    これはテキストのレイアウトやレンダリングに用いることができます。
+    これは多言語テキストのレイアウトやレンダリングに用いることができます。
     </para>
 @z
 
@@ -80,30 +80,29 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/> and one of
-    <xref linkend="cairo"/> or
-    <xref linkend="x-window-system"/> or
+    <para role="required"><xref linkend="glib2"/> and one of:
+    <xref linkend="cairo"/>, <xref linkend="x-window-system"/> or
     <xref linkend="fontconfig"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/> と以下のいずれか：
-    <xref linkend="cairo"/>、
-    <xref linkend="x-window-system"/>、
+    <para role="required"><xref linkend="glib2"/> と以下のいずれか:
+    <xref linkend="cairo"/>, <xref linkend="x-window-system"/> または
     <xref linkend="fontconfig"/></para>
 @z
 
 @x
-    <para><application>cairo</application> is not required to build
-    <application>Pango</application>, but it is highly recommended that you
-    install <application>cairo</application> before building
-    <application>Pango</application>. If you don't build
-    <application>Pango</application> with a <application>cairo</application>
-    backend, then <application>GTK+</application>-2 will not build.</para>
+      <para><application>cairo</application> is not required to build
+      <application>Pango</application>, but it is highly recommended that you
+      install <application>cairo</application> and the X Window System before
+      building    <application>Pango</application>. If you don&apos;t build
+      <application>Pango</application> with a <application>cairo</application>
+      and <application>libXft</application> backend, then
+      <application>GTK+</application>-2 will not build.</para>
 @y
     <para>
     <application>Pango</application> のビルドにあたって <application>cairo</application> は必要ありません。
-    ただし <application>cairo</application> をインストールしておくことが強く推奨されています。
-    <application>Pango</application> のバックエンドとして <application>cairo</application> をビルドしていなかった場合、<application>GTK+</application>-2 をビルドすることはできません。
+    ただし <application>cairo</application> と X ウィンドウシステムは、インストールしておくことが強く推奨されています。
+    <application>Pango</application> のバックエンドとして <application>cairo</application> と <application>libXft</application> をビルドしていなかった場合、<application>GTK+</application>-2 をビルドすることはできません。
     </para>
 @z
 
@@ -115,15 +114,6 @@
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="gobject-introspection"/>,
     <ulink url="http://linux.thai.net/libthai">LibThai</ulink></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional (If <application>cairo</application>
-    is Not Installed)</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/></para>
-@y
-    <bridgehead renderas="sect4">&j-Optional; (<application>cairo</application> をインストールしていない場合)</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/></para>
 @z
 
 @x
@@ -173,7 +163,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -270,18 +261,18 @@
         pango-hangul-fc.so, pango-hebrew-fc.so, pango-indic-fc.so,
         pango-indic-lang.so, pango-khmer-fc.so, pango-syriac-fc.so,
         pango-thai-fc.so, and pango-tibetan-fc.so</seg>
-        <seg>/etc/pango, /usr/{include/pango-1.0/pango,lib/pango/1.6.0/modules,
-        share/gtk-doc/html/pango}</seg>
+        <seg>/etc/pango, /usr/include/pango-1.0 /usr/lib/pango and
+        /usr/share/gtk-doc/html/pango</seg>
 @y
-        <seg>pango-querymodules and pango-view</seg>
+        <seg>pango-querymodules, pango-view</seg>
         <seg>libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
         libpangox-1.0.so, libpangoxft-1.0.so, pango-arabic-fc.so,
         pango-arabic-lang.so, pango-basic-fc.so, pango-basic-x.so,
         pango-hangul-fc.so, pango-hebrew-fc.so, pango-indic-fc.so,
         pango-indic-lang.so, pango-khmer-fc.so, pango-syriac-fc.so,
         pango-thai-fc.so, and pango-tibetan-fc.so</seg>
-        <seg>/etc/pango, /usr/{include/pango-1.0/pango,lib/pango/1.6.0/modules,
-        share/gtk-doc/html/pango}</seg>
+        <seg>/etc/pango, /usr/include/pango-1.0, /usr/lib/pango,
+        /usr/share/gtk-doc/html/pango</seg>
 @z
 
 @x
