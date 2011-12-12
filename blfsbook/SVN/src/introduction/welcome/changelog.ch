@@ -61,8 +61,27 @@
 @z
 
 @x
+      <para>December 12th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Updated Webkitgtk to 1.6.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Webkitgtk 1.6.1 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>December 11th, 2011</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to rep-gtk-0.90.2.</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - Updated to librep-0.90.5.</para>
         </listitem>
@@ -94,6 +113,9 @@
 @y
       <para>2011/12/11</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - rep-gtk-0.90.2 へのアップデート。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - librep-0.90.5 へのアップデート。</para>
         </listitem>

@@ -80,53 +80,38 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="gperf"/>,
-    <xref linkend="gst-plugins-base"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="icu"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libsoup"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="sqlite"/>, and
-    <xref linkend="which"/></para>
+    <para role="required"><xref linkend="gperf"/>, <xref linkend="libjpeg"/>,
+    <xref linkend="libpng"/>, <xref linkend="icu"/>, <xref linkend="libxslt"/>,
+    <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (if both are installed
+    configure defaults to using gtk+-3), <xref linkend="libsoup"/>,
+    <xref linkend="gst-plugins-base"/>, <xref linkend="which"/>
+    and <xref linkend="sqlite"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="gperf"/>,
-    <xref linkend="gst-plugins-base"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="icu"/>,
-    <xref linkend="libjpeg"/>,
+    <para role="required"><xref linkend="gperf"/>, <xref linkend="libjpeg"/>,
+    <xref linkend="libpng"/>, <xref linkend="icu"/>, <xref linkend="libxslt"/>,
+    <xref linkend="gtk2"/> または <xref linkend="gtk3"/> (二つがインストールされていた場合、デフォルトでは gtk+-3 を利用),
     <xref linkend="libsoup"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="sqlite"/>,
-    <xref linkend="which"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/> (Required
-    if building <application>epiphany</application>)</para>
-@y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/> (<application>epiphany</application> をビルドする場合に必要)</para>
+    <xref linkend="gst-plugins-base"/>, <xref linkend="which"/>
+    <xref linkend="sqlite"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="curl"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
-    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="curl"/>, <xref linkend="enchant"/>,
+    <ulink
+    url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
+    <xref linkend="gobject-introspection"/> (required if building
+    <application>epiphany</application>), <xref linkend="gtk-doc"/> and
+    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="curl"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
-    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="curl"/>, <xref linkend="enchant"/>,
+    <ulink
+    url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
+    <xref linkend="gobject-introspection"/> (<application>epiphany</application> のビルド時に必要),
+    <xref linkend="gtk-doc"/>,
+    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.</para>
 @z
 
 @x
@@ -144,8 +129,8 @@
 @z
 
 @x
-    <para>Install <application>WebKitGTK+</application> by running the following
-    commands:</para>
+    <para>Install <application>WebKitGTK+</application> by running the
+    following commands:</para>
 @y
     <para>
     以下のコマンドを実行して <application>WebKitGTK+</application> をビルドします。
@@ -163,7 +148,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -181,53 +167,54 @@
     for gobject-introspection.</para>
 @y
     <para>
-    <option>--enable-introspection</option>: gobject-introspection サポートを有効にします。</para>
-@z
-
-@x
-    <para><option>--enable-3D-transforms</option>: This option enables support
-    for 3D transforms.</para>
-@y
-    <para>
-    <option>--enable-3D-transforms</option>: このパラメーターは 3D 変換サポートを有効にします。
+    <option>--enable-introspection</option>: gobject-introspection サポートを有効にします。
     </para>
 @z
 
-@x
-    <para><option>--enable-geolocation</option>: This option enables support for
-    geolocation.</para>
-@y
-    <para>
-    <option>--enable-geolocation</option>: geolocation サポートを有効にします。
-    </para>
-@z
-
-@x
-    <para><option>--enable-mathml</option>: This option enables support for
-    MathML.</para>
-@y
-    <para>
-    <option>--enable-mathml</option>: MathML サポートを有効にします。
-    </para>
-@z
-
-@x
-    <para><option>--enable-wml</option>: This option enables support for
-    WML.</para>
-@y
-    <para>
-    <option>--enable-wml</option>: WML サポートを有効にします。
-    </para>
-@z
-
-@x
-    <para><option>--enable-web-sockets</option>: This option enables support for
-    Web Sockets.</para>
-@y
-    <para>
-    <option>--enable-web-sockets</option>: Web ソケット (Web Sockets) サポートを有効にします。
-    </para>
-@z
+% @x
+%     <para><option>--enable-3D-transforms</option>: This option enables support
+%     for 3D transforms.</para>
+% @y
+%     <para>
+%     <option>--enable-3D-transforms</option>: このパラメーターは 3D 変換サポートを有効にします。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--enable-geolocation</option>: This option enables support for
+%     geolocation.</para>
+% @y
+%     <para>
+%     <option>--enable-geolocation</option>: geolocation サポートを有効にします。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--enable-mathml</option>: This option enables support for
+%     MathML.</para>
+% @y
+%     <para>
+%     <option>--enable-mathml</option>: MathML サポートを有効にします。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--enable-wml</option>: This option enables support for
+%     WML.</para>
+% @y
+%     <para>
+%     <option>--enable-wml</option>: WML サポートを有効にします。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--enable-web-sockets</option>: This option enables support for
+%     Web Sockets.</para>
+% @y
+%     <para>
+%     <option>--enable-web-sockets</option>: Web ソケット (Web Sockets) サポートを有効にします。
+%     </para>
+% @z
 
 @x
     <title>Contents</title>
@@ -246,15 +233,23 @@
 @z
 
 @x
-        <seg>jsc</seg>
-        <seg>libwebkit-1.0.so</seg>
-        <seg>/usr/{include/webkit-1.0/{JavaScriptCore,webkit},
-        share/webkit-1.0/{images,resources,webinspector/Images}}</seg>
+        <seg>jsc-1 or jsc-3 (depending on whether you installed the gtk+-2 or
+        gtk+-3 version of webkit)</seg>
+        <seg>libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or
+        libwebkit-3.0.so and libjavascriptcoregtk-3.0.so (depending on whether
+        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
+        <seg>/usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
+        /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on whether
+        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
 @y
-        <seg>jsc</seg>
-        <seg>libwebkit-1.0.so</seg>
-        <seg>/usr/{include/webkit-1.0/{JavaScriptCore,webkit},
-        share/webkit-1.0/{images,resources,webinspector/Images}}</seg>
+        <seg>jsc-1 または jsc-3 (depending on whether you installed the gtk+-2 or
+        gtk+-3 version of webkit)</seg>
+        <seg>libwebkit-1.0.so, libjavascriptcoregtk-1.0.so または
+        libwebkit-3.0.so, libjavascriptcoregtk-3.0.so (depending on whether
+        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
+        <seg>/usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
+        /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on whether
+        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
 @z
 
 @x
@@ -273,11 +268,3 @@
           </para>
 @z
 
-@x libwebkit-1.0.so
-          <para>contains the <application>WebKitGTK+</application> API
-          functions.</para>
-@y
-          <para>
-          <application>WebKitGTK+</application> API 関数を提供します。
-          </para>
-@z
