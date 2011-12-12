@@ -90,11 +90,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional to Build Documentation</bridgehead>
-    <para role="optional"><xref linkend="tetex"/> or
+    <para role="optional"><!-- <xref linkend="tetex"/> or -->
     <xref linkend="texlive"/></para>
 @y
     <bridgehead renderas="sect4">任意; ドキュメント生成時</bridgehead>
-    <para role="optional"><xref linkend="tetex"/> または
+    <para role="optional"><!-- <xref linkend="tetex"/> or -->
     <xref linkend="texlive"/></para>
 @z
 

@@ -397,13 +397,10 @@
 
 @x
       <para>A good summary of tripwire operations can be found at
-      <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/ref-guide/ch-tripwire.html"/>.</para>
+      <ulink url="http://va-holladays.no-ip.info:2200/tools/security-docs/tripwire-v1.0.pdf"/>.</para>
 @y
-      <para>
-      
-      A good summary of tripwire operations can be found at
-      <ulink url="http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/ref-guide/ch-tripwire.html"/>.
-      </para>
+      <para>A good summary of tripwire operations can be found at
+      <ulink url="http://va-holladays.no-ip.info:2200/tools/security-docs/tripwire-v1.0.pdf"/>.</para>
 @z
 
 @x

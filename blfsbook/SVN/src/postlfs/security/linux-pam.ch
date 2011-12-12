@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY linux-pam-buildsize     "23 MB (includes installing the optional documentation)">
+  <!ENTITY linux-pam-buildsize     "28 MB (includes installing the optional documentation)">
 @y
-  <!ENTITY linux-pam-buildsize     "23 MB (オプションのドキュメントのインストールを含む)">
+  <!ENTITY linux-pam-buildsize     "28 MB (オプションのドキュメントのインストールを含む)">
 @z
 
 @x
@@ -360,12 +360,12 @@
 @z
 
 @x
-      <para>The <application>PAM</application> man page
-      (<command>man pam</command>) provides a good starting point for
-      descriptions of fields and allowable entries. The <ulink
-      url="http://www.kernel.org/pub/linux/libs/pam/Linux-PAM-html/Linux-PAM_SAG.html">
-      Linux-PAM System Administrators' Guide</ulink>
-      is recommended for additional information.</para>
+      <para>The <application>PAM</application> man page (<command>man
+      pam</command>) provides a good starting point for descriptions of fields
+      and allowable entries. The <ulink
+      url="&debian-pam-docs;/Linux-PAM-html/Linux-PAM_SAG.html"> Linux-PAM
+      System Administrators' Guide</ulink> is recommended for additional
+      information.</para>
 @y
       <para>
       <application>PAM</application> パッケージの Man ページ (<command>man pam</command>) を見れば、各項目と可能な記述内容がよく分かるようになっています。
@@ -376,9 +376,8 @@
 @z
 
 @x
-      <para>Refer to <ulink
-      url="http://www.kernel.org/pub/linux/libs/pam/modules.html"/>
-      for a list of various third-party modules available.</para>
+      <para>Refer to <ulink url="&debian-pam-docs;/modules.html"/> for a list
+      of various third-party modules available.</para>
 @y
       <para>
       <ulink

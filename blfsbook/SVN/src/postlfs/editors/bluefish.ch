@@ -20,18 +20,17 @@
 @z
 
 @x
-    <para>The <application>Bluefish</application> package contains a powerful X
-    Window System editor designed for web designers, but also suitable
-    as a programmer's editor.  Bluefish supports many programming and markup
-    languages, and as such is ideal for editing XML and HTML files.</para>
+    <para><application>Bluefish</application> is a
+    <application>Gtk+-2</application> text editor targeted towards programmers
+    and webdesigners, with many options to write websites, scripts and
+    programming code. Bluefish supports many programming and markup languages,
+    and it focuses on editing dynamic and interactive websites.</para>
 @y
-<para>
-<application>Bluefish</application>
-は X ウィンドウシステムにて、ウェブデザイナー向けに構築されているエディターです。
-ただそれだけではなくプログラマー向けのものとしても利用できます。
-Bluefish では、プログラミング言語やマークアップ言語の多くをサポートしています。
-特に XML ファイルや HTML ファイルを編集するエディターとして優れています。
-</para>
+    <para>
+    <application>Bluefish</application> は <application>Gtk+-2</application> による、プログラマーやウェブデザイナー向けテキストエディターです。
+    ウェブサイト、スクリプト、プログラミングコードなどの記述を行うためのさまざまなオプションが用意されています。
+    Bluefish では、プログラミング言語やマークアップ言語の多くをサポートしており、特に XML ファイルや HTML ファイルを編集するエディターとして優れています。
+    </para>
 @z
 
 @x
@@ -84,28 +83,22 @@ Bluefish では、プログラミング言語やマークアップ言語の多�
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/> and
-    <xref linkend="pcre"/></para>
+    <para role="required"><xref linkend="gtk2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
-    <xref linkend="pcre"/></para>
+    <para role="required"><xref linkend="gtk2"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gnome-vfs"/> (for remote files),
-    <xref linkend="aspell"/> (for spellchecking),
-    <xref linkend="libgnomeui"/>,
-    <xref linkend="gnome-mime-data"/>,
-    <xref linkend="desktop-file-utils"/>, and
+    <para role="optional"><xref linkend="pcre"/>, <xref linkend="gucharmap"/>,
+    <xref linkend="enchant"/> (for spellchecking),
+    <xref linkend="desktop-file-utils"/> and
     <xref linkend="shared-mime-info"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gnome-vfs"/> (リモートファイル利用の場合),
-    <xref linkend="aspell"/> (スペルチェックに必要),
-    <xref linkend="libgnomeui"/>,
-    <xref linkend="gnome-mime-data"/>,
+    <para role="optional"><xref linkend="pcre"/>, <xref linkend="gucharmap"/>,
+    <xref linkend="enchant"/> (スペルチェックのため),
     <xref linkend="desktop-file-utils"/>,
     <xref linkend="shared-mime-info"/></para>
 @z
@@ -128,57 +121,58 @@ Bluefish では、プログラミング言語やマークアップ言語の多�
     <para>Install <application>Bluefish</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Bluefish</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Bluefish</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
-@x
-    <title>Configuring Bluefish</title>
-@y
-    <title>Bluefish の設定</title>
-@z
-
-@x
-      <title>Config Files</title>
-@y
-      <title>&j-ConfigFiles;</title>
-@z
-
-@x
-      <title>Configuration Information</title>
-@y
-      <title>&j-ConfigInfo;</title>
-@z
-
-@x
-      <para>The directory <filename class='directory'>~/.bluefish</filename> is
-      created by the program when it is first run, and the configuration files
-      are maintained by the program automatically to preserve settings from run
-      to run.</para>
-@y
-<para>
-ディレクトリ <filename class='directory'>~/.bluefish</filename>
-は、プログラムを初めて起動した時に生成されます。
-そしてプログラムが自動的に設定ファイルを更新し、利用のたびに設定内容が保存されます。
-</para>
-@z
+% @x
+%     <title>Configuring Bluefish</title>
+% @y
+%     <title>Bluefish の設定</title>
+% @z
+% 
+% @x
+%       <title>Config Files</title>
+% @y
+%       <title>&j-ConfigFiles;</title>
+% @z
+% 
+% @x
+%       <title>Configuration Information</title>
+% @y
+%       <title>&j-ConfigInfo;</title>
+% @z
+% 
+% @x
+%       <para>The directory <filename class='directory'>~/.bluefish</filename> is
+%       created by the program when it is first run, and the configuration files
+%       are maintained by the program automatically to preserve settings from run
+%       to run.</para>
+% @y
+%       <para>
+%       ディレクトリ <filename
+%       class='directory'>~/.bluefish</filename> は、プログラムを初めて起動した時に生成されます。
+%       そしてプログラムが自動的に設定ファイルを更新し、利用のたびに設定内容が保存されます。
+%       </para>
+% @z
 
 @x
     <title>Contents</title>
@@ -188,22 +182,18 @@ Bluefish では、プログラミング言語やマークアップ言語の多�
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
       <segtitle>&j-InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>bluefish</seg>
-        <seg>None</seg>
-        <seg>/usr/share/bluefish</seg>
+        <seg>/usr/lib/bluefish and /usr/share/bluefish</seg>
 @y
         <seg>bluefish</seg>
-        <seg>なし</seg>
-        <seg>/usr/share/bluefish</seg>
+        <seg>/usr/lib/bluefish, /usr/share/bluefish</seg>
 @z
 
 @x
@@ -215,7 +205,7 @@ Bluefish では、プログラミング言語やマークアップ言語の多�
 @x bluefish
           <para>is an X Window System editor for markup and programming.</para>
 @y
-<para>
-X ウィンドウシステムのエディターです。マークアップやプログラミングに用いられます。
-</para>
+          <para>
+          X ウィンドウシステムのエディターです。マークアップやプログラミングに用いられます。
+          </para>
 @z

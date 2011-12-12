@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "211 MB (additional 75 MB if you run the Image::Magick demo)">
-  <!ENTITY imagemagick-time          "4.2 SBU (Additional 1.8 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "256 MB typical (additional 69 MB if you run the Image::Magick demo)">
+  <!ENTITY imagemagick-time          "4.9 SBU typical (Additional 0.4 SBU to run the test suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "211 MB (additional 75 MB if you run the Image::Magick demo)">
-  <!ENTITY imagemagick-time          "4.2 SBU (Additional 1.8 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "256 MB typical (additional 69 MB if you run the Image::Magick demo)">
+  <!ENTITY imagemagick-time          "4.9 SBU typical (Additional 0.4 SBU to run the test suite)">
 @z
 
 @x
@@ -88,9 +88,11 @@
     the existing BLFS instructions to install it. Chances are that it will
     work just fine, but this has not been tested by the BLFS team. If the
     package version shown above is not available from the locations shown
-    above, you can download it from the BLFS package server at
+    above, or from the <filename class='directory'>legacy/</filename> directory
+    at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you can download it
+    from the BLFS package server at
     <ulink
-    url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.bz2"/>.
+    url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.xz"/>.
     </para>
 @y
     <para>The <application>ImageMagick</application> source releases are
@@ -99,9 +101,11 @@
     the existing BLFS instructions to install it. Chances are that it will
     work just fine, but this has not been tested by the BLFS team. If the
     package version shown above is not available from the locations shown
-    above, you can download it from the BLFS package server at
+    above, or from the <filename class='directory'>legacy/</filename> directory
+    at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you can download it
+    from the BLFS package server at
     <ulink
-    url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.bz2"/>.
+    url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.xz"/>.
     </para>
 @z
 
@@ -147,10 +151,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
-    <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
+    <para role="optional"><xref linkend="pkgconfig"/>,
     <xref linkend="cups"/> or <xref linkend="LPRng"/> (or any other print
     utility that provides an <command>lpr</command> command),
-    <ulink url="http://www.mcmurchy.com/dcraw/dcraw-9.05.tar.gz">dcraw</ulink>,
+    <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (only for raw formats listed in
+   <filename>www/formats.html</filename>),
     <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
     <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
     <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink>
@@ -161,10 +166,11 @@
     </para>
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
-    <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
+    <para role="optional"><xref linkend="pkgconfig"/>,
     <xref linkend="cups"/> or <xref linkend="LPRng"/> (or any other print
     utility that provides an <command>lpr</command> command),
-    <ulink url="http://www.mcmurchy.com/dcraw/dcraw-9.05.tar.gz">dcraw</ulink>,
+    <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (only for raw formats listed in
+   <filename>www/formats.html</filename>),
     <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
     <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
     <ulink url="http://www.gsp.com/support/virtual/email/pgp/">PGP</ulink>
@@ -176,7 +182,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional"><ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
     <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or
     <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/libfpx-1.3.0-1.tar.bz2">
@@ -184,19 +189,20 @@
     <xref linkend="freetype2"/>,
     <xref linkend="jasper"/>,
     <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-    <xref linkend="lcms"/>,
+    <xref linkend="lcms"/> or
+    <ulink url="http://sourceforge.net/projects/lcms/files/">lcms2</ulink>,
     <xref linkend="libexif"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,
     <xref linkend="librsvg"/>,
     <xref linkend="libtiff"/>,
+    <xref linkend="pango"/>,
+    <ulink url="http://www.webmproject.org/code/">libwebp</ulink>, and
     <xref linkend="libxml2"/>,
     <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>, and
     <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
-    (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.50.tar.gz">RALCGM-3.50</ulink>)
     </para>
 @y
-    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional"><ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
     <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or
     <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/libfpx-1.3.0-1.tar.bz2">
@@ -204,16 +210,18 @@
     <xref linkend="freetype2"/>,
     <xref linkend="jasper"/>,
     <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-    <xref linkend="lcms"/>,
+    <xref linkend="lcms"/> or
+    <ulink url="http://sourceforge.net/projects/lcms/files/">lcms2</ulink>,
     <xref linkend="libexif"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,
     <xref linkend="librsvg"/>,
     <xref linkend="libtiff"/>,
+    <xref linkend="pango"/>,
+    <ulink url="http://www.webmproject.org/code/">libwebp</ulink>, and
     <xref linkend="libxml2"/>,
     <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>, and
     <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
-    (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.50.tar.gz">RALCGM-3.50</ulink>)
     </para>
 @z
 
@@ -240,7 +248,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
     <para role="optional"><ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
     <xref linkend="enscript"/>,
     <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
@@ -248,7 +255,7 @@
     <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
     <ulink url="http://www.mpeg.org/MSSG/">MPEG-2 Video Codec</ulink>,
     <ulink url="http://netpbm.sourceforge.net/">Netpbm</ulink>,
-    <xref linkend="tetex"/> or <xref linkend="texlive"/>,
+    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <ulink url="http://www.xfig.org/">Transfig</ulink>,
     <ulink url="http://txt2html.sourceforge.net/">txt2html</ulink>
     (requires Perl Module
@@ -259,7 +266,6 @@
     (or <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)
     </para>
 @y
-    <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
     <para role="optional"><ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
     <xref linkend="enscript"/>,
     <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
@@ -267,7 +273,7 @@
     <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
     <ulink url="http://www.mpeg.org/MSSG/">MPEG-2 Video Codec</ulink>,
     <ulink url="http://netpbm.sourceforge.net/">Netpbm</ulink>,
-    <xref linkend="tetex"/> or <xref linkend="texlive"/>,
+    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <ulink url="http://www.xfig.org/">Transfig</ulink>,
     <ulink url="http://txt2html.sourceforge.net/">txt2html</ulink>
     (requires Perl Module
@@ -303,13 +309,29 @@
 @z
 
 @x
+    <para>If you wish to build the <application>PerlMagick</application>
+    <application>perl</application> module, use the following commands:</para>
+@y
+    <para>If you wish to build the <application>PerlMagick</application>
+    <application>perl</application> module, use the following commands:</para>
+@z
+
+@x
      <para>To test the results, issue: <command>make check</command>. Note that
-     some of the tests may fail due to system and/or build parameter
-     settings.</para>
+     many of the tests require a working <application>ghostscript</application>
+     and that most of the validate-*.sh tests fail when run from
+     <command>make check</command> although they can be successfully run individually
+     by <command>chmod +x tests/common.sh &amp;&amp;
+     srcdir=$PWD VALIDATE=$PWD/tests/validate-compare.sh ;# and so forth</command>
+     </para>
 @y
      <para>To test the results, issue: <command>make check</command>. Note that
-     some of the tests may fail due to system and/or build parameter
-     settings.</para>
+     many of the tests require a working <application>ghostscript</application>
+     and that most of the validate-*.sh tests fail when run from
+     <command>make check</command> although they can be successfully run individually
+     by <command>chmod +x tests/common.sh &amp;&amp;
+     srcdir=$PWD VALIDATE=$PWD/tests/validate-compare.sh ;# and so forth</command>
+     </para>
 @z
 
 @x
@@ -327,15 +349,13 @@
 @z
 
 @x
-    <para><command>sed -i -e "..." -e "..."</command>: One man page is installed with
-    character encoding not displayable using the <application>Man-db</application>
-    package. This command changes the offending bytes to characters
-    <command>man</command> can properly display.</para>
+    <para><parameter>--sysconfdir=/etc</parameter>: Put the directory of xml (and
+    .icc) files at <filename class='directory'>/etc/ImageMagick</filename> instead of
+    <filename class='directory'>/usr/etc/ImageMagick</filename>.</para>
 @y
-    <para><command>sed -i -e "..." -e "..."</command>: One man page is installed with
-    character encoding not displayable using the <application>Man-db</application>
-    package. This command changes the offending bytes to characters
-    <command>man</command> can properly display.</para>
+    <para><parameter>--sysconfdir=/etc</parameter>: Put the directory of xml (and
+    .icc) files at <filename class='directory'>/etc/ImageMagick</filename> instead of
+    <filename class='directory'>/usr/etc/ImageMagick</filename>.</para>
 @z
 
 @x
@@ -402,10 +422,11 @@
 
 @x
         <seg>animate, compare, composite, conjure, convert, display,
-        identify, import, Magick-config, Magick++-config, mogrify,
-        montage, stream, and Wand-config</seg>
-        <seg>libMagick.{so,a}, libMagick++.{so,a}, libWand.{so,a},
-        the Magick.so Perl module, and numerous plugin modules</seg>
+        identify, import, Magick++-config, Magick-config, MagickCore-config,
+        MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
+        <seg>libMagick.{so,a}, libMagickCore.{so,a} libMagick++.{so,a},
+	libMagickWand.{so,a}, optionally the Magick.so Perl module, and
+        numerous plugin modules</seg>
         <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/Image/Magick,
@@ -413,14 +434,15 @@
         /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
 @y
         <seg>animate, compare, composite, conjure, convert, display,
-        identify, import, Magick-config, Magick++-config, mogrify,
-        montage, stream, and Wand-config</seg>
-        <seg>libMagick.{so,a}, libMagick++.{so,a}, libWand.{so,a},
-        the Magick.so Perl module, and numerous plugin modules</seg>
+        identify, import, Magick++-config, Magick-config, MagickCore-config,
+        MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
+        <seg>libMagick.{so,a}, libMagickCore.{so,a} libMagick++.{so,a},
+	libMagickWand.{so,a}, optionally the Magick.so Perl module, and
+        numerous plugin modules</seg>
         <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/Image/Magick,
-        /usr/share/ImageMagick-&imagemagick-version; and
+        /usr/share/ImageMagick-&imagemagick-version;,
         /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
 @z
 
@@ -484,15 +506,16 @@
 
 @x
       <term><command>Magick-config</command> and
-      <command>Magick++-config</command></term>
+      <command>Magick++-config, MagickCore-config, MagickWand-config</command></term>
       <listitem>
-        <para>show information about the installed versions of
-        <application>ImageMagick</application> and Magick++.</para>
+        <para>show information about the installed versions of the
+        <application>ImageMagick</application> Magick++, MagickCore and MagickWand libraries.</para>
 @y
-      <term><command>Magick-config</command> と <command>Magick++-config</command></term>
+      <term><command>Magick-config</command> と
+      <command>Magick++-config, MagickCore-config, MagickWand-config</command></term>
       <listitem>
-        <para>show information about the installed versions of
-        <application>ImageMagick</application> and Magick++.</para>
+        <para>show information about the installed versions of the
+        <application>ImageMagick</application> Magick++, MagickCore and MagickWand libraries.</para>
 @z
 
 @x mogrify

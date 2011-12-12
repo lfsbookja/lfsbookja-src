@@ -29,16 +29,16 @@
     S/MIME. It does not conflict with an installed <xref linkend="gnupg"/>
     OpenPGP-only version.</para>
 @y
-<para>
-The <application>GnuPG 2</application> package is GNU's tool for
-secure communication and data storage. It can be used to encrypt data and
-to create digital signatures. It includes an advanced key management
-facility and is compliant with the proposed OpenPGP Internet standard as
-described in RFC2440 and the S/MIME standard as described by several RFCs.
-GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
-S/MIME. It does not conflict with an installed <xref linkend="gnupg"/>
-OpenPGP-only version.
-</para>
+    <para>
+    The <application>GnuPG 2</application> package is GNU's tool for
+    secure communication and data storage. It can be used to encrypt data and
+    to create digital signatures. It includes an advanced key management
+    facility and is compliant with the proposed OpenPGP Internet standard as
+    described in RFC2440 and the S/MIME standard as described by several RFCs.
+    GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
+    S/MIME. It does not conflict with an installed <xref linkend="gnupg"/>
+    OpenPGP-only version.
+    </para>
 @z
 
 @x
@@ -148,18 +148,18 @@ OpenPGP-only version.
     <para>Install <application>GnuPG 2</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GnuPG 2</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GnuPG 2</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     installed and you wish to create documentation in alternate formats,
     issue the following commands:</para>
 @y
     <para>
-    <xref linkend="tetex"/> または <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
+    <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
     </para>
 @z
 
@@ -385,4 +385,3 @@ OpenPGP-only version.
           <para>is used to listen to a Unix Domain socket created by any of
           the GnuPG tools.</para>
 @z
-

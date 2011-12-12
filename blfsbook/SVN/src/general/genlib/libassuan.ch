@@ -141,37 +141,36 @@
     <para>Install <application>Libassuan</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Libassuan</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Libassuan</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>If you wish to build alternate formats of the documentation, you
-    must have <xref linkend="tetex"/> or <xref linkend="texlive"/> installed,
+    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/> installed,
     then issue the following command:</para>
 @y
     <para>If you wish to build alternate formats of the documentation, you
-    must have <xref linkend="tetex"/> or <xref linkend="texlive"/> installed,
+    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/> installed,
     then issue the following command:</para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -179,12 +178,12 @@
     following commands as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-
-If you built the additional documentation, install it by issuing the
-following commands as the <systemitem class="username">root</systemitem>
-user:
-</para>
+    <para>
+    
+    If you built the additional documentation, install it by issuing the
+    following commands as the <systemitem class="username">root</systemitem>
+    user:
+    </para>
 @z
 
 @x
@@ -225,29 +224,29 @@ user:
           linker flags which are required to correctly compile and link the
           application against the libassuan(3) library.</para>
 @y
-<para>
-
-is a utility used to configure and build applications based on
-the libassuan(3) library. It can be used to query the C compiler and
-linker flags which are required to correctly compile and link the
-application against the libassuan(3) library.
-</para>
+          <para>
+          
+          is a utility used to configure and build applications based on
+          the libassuan(3) library. It can be used to query the C compiler and
+          linker flags which are required to correctly compile and link the
+          application against the libassuan(3) library.
+          </para>
 @z
 
 @x libassuan.a
           <para>is the IPC library.</para>
 @y
-<para>
-IPC ライブラリ。
-</para>
+          <para>
+          IPC ライブラリ。
+          </para>
 @z
 
 @x libassuan-pth.a
           <para>is the IPC library linked with the GNU Portable Threads
           Library.</para>
 @y
-<para>
-is the IPC library linked with the GNU Portable Threads
-Library.
-</para>
+          <para>
+          is the IPC library linked with the GNU Portable Threads
+          Library.
+          </para>
 @z

@@ -116,14 +116,14 @@
     <para role="optional"><xref linkend="qt4"/> (for doxywizard),
     <xref linkend="graphviz"/>,
     <xref linkend="python"/>,
-    <xref linkend="tetex"/> or <xref linkend="texlive"/>,
+    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="qt4"/> (for doxywizard),
     <xref linkend="graphviz"/>,
     <xref linkend="python"/>,
-    <xref linkend="tetex"/> or <xref linkend="texlive"/>,
+    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
 @z
 
@@ -219,7 +219,7 @@
     packages are required if you wish to use extended capabilities. If you
     need to use the language translation features, you must have
     <xref linkend="python"/> installed. If you require formulas to
-    create PDF documentation, then you must have <xref linkend="tetex"/> or
+    create PDF documentation, then you must have <!--<xref linkend="tetex"/> or-->
     <xref linkend="texlive"/> installed. If you require formulas to convert
     PostScript files to bitmaps, then you must have <xref linkend="gs"/>
     <!-- or <xref linkend="espgs"/> --> installed.</para>
@@ -229,7 +229,7 @@
     packages are required if you wish to use extended capabilities. If you
     need to use the language translation features, you must have
     <xref linkend="python"/> installed. If you require formulas to
-    create PDF documentation, then you must have <xref linkend="tetex"/> or
+    create PDF documentation, then you must have <!--<xref linkend="tetex"/> or-->
     <xref linkend="texlive"/> installed. If you require formulas to convert
     PostScript files to bitmaps, then you must have <xref linkend="gs"/>
     <!-- or <xref linkend="espgs"/> --> installed.</para>

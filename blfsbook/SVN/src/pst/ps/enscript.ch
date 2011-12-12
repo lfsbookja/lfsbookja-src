@@ -44,15 +44,12 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
       <application>Enscript</application>, for converting
       UTF-8 encoded text to PostScript.</para>
 @y
-<para>
-<application>Enscript</application>
-は、UTF-8 エンコーディングのテキストを PostScript に変換することはできません。
-このことは <xref linkend="locale-issues"/> の <xref linkend="locale-not-valid-option"/>
-にて説明しています。
-UTF-8 エンコーディングのテキストを PostScript に変換するには
-<application>Enscript</application> ではなく
-<xref linkend="paps"/> を利用します。
-</para>
+      <para>
+      <application>Enscript</application> は、UTF-8 エンコーディングのテキストを PostScript に変換することはできません。
+      このことは <xref linkend="locale-issues"/> の <xref linkend="locale-not-valid-option"/> にて説明しています。
+      UTF-8 エンコーディングのテキストを PostScript に変換するには <application>Enscript</application> ではなく <xref
+      linkend="paps"/> を利用します。
+      </para>
 @z
 
 @x
@@ -129,37 +126,35 @@ UTF-8 エンコーディングのテキストを PostScript に変換するに�
     <para>Install <application>Enscript</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Enscript</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Enscript</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     installed, you can create Postscript and PDF documentation by issuing
     the following command:</para>
 @y
-<para>
-<xref linkend="tetex"/> または <xref linkend="texlive"/>
-をインストールしている場合は、以下のコマンドを実行すれば
-Postscript および PDF によるドキュメントを生成することができます。
-</para>
+    <para>
+    <xref linkend="texlive"/> をインストールしている場合は、以下のコマンドを実行すれば Postscript および PDF によるドキュメントを生成することができます。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -167,11 +162,10 @@ Postscript および PDF によるドキュメントを生成することがで�
     using the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-PostScript および PDF のドキュメントをビルドした場合は、
-<systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
-</para>
+    <para>
+    PostScript および PDF のドキュメントをビルドした場合は、<systemitem
+    class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -185,12 +179,12 @@ PostScript および PDF のドキュメントをビルドした場合は、
     configuration data in <filename class="directory">/etc/enscript</filename>
     instead of <filename class="directory">/usr/etc</filename>.</para>
 @y
-<para>
-<parameter>--sysconfdir=/etc/enscript</parameter>:
-このパラメーターは設定データの配置ディレクトリを
-<filename class="directory">/usr/etc</filename> ではなく
-<filename class="directory">/etc/enscript</filename> とします。
-</para>
+    <para>
+    <parameter>--sysconfdir=/etc/enscript</parameter>:
+    このパラメーターは設定データの配置ディレクトリを <filename
+    class="directory">/usr/etc</filename> ではなく <filename
+    class="directory">/etc/enscript</filename> とします。
+    </para>
 @z
 
 @x
@@ -198,22 +192,22 @@ PostScript および PDF のドキュメントをビルドした場合は、
     directory for runtime data to <filename class="directory">/var</filename>
     instead of <filename class="directory">/usr/var</filename>.</para>
 @y
-<para>
-<parameter>--localstatedir=/var</parameter>:
-このパラメーターは実行時のデータを配置するディレクトリを
-<filename class="directory">/usr/var</filename> ではなく
-<filename class="directory">/var</filename> とします。
-</para>
+    <para>
+    <parameter>--localstatedir=/var</parameter>:
+    このパラメーターは実行時のデータを配置するディレクトリを <filename
+    class="directory">/usr/var</filename> ではなく <filename
+    class="directory">/var</filename> とします。
+    </para>
 @z
 
 @x
     <para><parameter>--with-media=Letter</parameter>: This switch sets the
     medium format to letter.</para>
 @y
-<para>
-<parameter>--with-media=Letter</parameter>:
-このパラメーターはメディアフォーマットを letter とします。
-</para>
+    <para>
+    <parameter>--with-media=Letter</parameter>:
+    このパラメーターはメディアフォーマットを letter とします。
+    </para>
 @z
 
 @x
@@ -256,11 +250,11 @@ PostScript および PDF のドキュメントをビルドした場合は、
           <para>converts <command>diff</command> output files to a format
           suitable to be printed with <command>enscript</command>.</para>
 @y
-<para>
-
-converts <command>diff</command> output files to a format
-suitable to be printed with <command>enscript</command>.
-</para>
+          <para>
+          
+          converts <command>diff</command> output files to a format
+          suitable to be printed with <command>enscript</command>.
+          </para>
 @z
 
 @x enscript

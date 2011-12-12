@@ -133,39 +133,35 @@
     <para>Install <application>SLIB</application> by issuing the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>SLIB</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>SLIB</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     installed and wish to build PDF or Postscript documentation, issue any or
     all of the following commands:</para>
 @y
-<para>
-<xref linkend="tetex"/> や <xref linkend="texlive"/>
-をインストールしていて
-PDF や Postscript ドキュメントをビルドしたい場合は、以下のいずれかのコマンド、あるいはすべてのコマンドを実行します。
-</para>
+    <para>
+    <xref linkend="texlive"/> をインストールしていて PDF や Postscript ドキュメントをビルドしたい場合は、以下のいずれかのコマンド、あるいはすべてのコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a functional test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -174,12 +170,12 @@ PDF や Postscript ドキュメントをビルドしたい場合は、以下の�
     satisfy <application>Guile</application>'s default
     <quote>Implementation Vicinity</quote> directory.</para>
 @y
-<para>
-If you have <xref linkend="guile"/> installed, create the following
-symbolic link as the <systemitem class="username">root</systemitem> user to
-satisfy <application>Guile</application>'s default
-<quote>Implementation Vicinity</quote> directory.
-</para>
+    <para>
+    If you have <xref linkend="guile"/> installed, create the following
+    symbolic link as the <systemitem class="username">root</systemitem> user to
+    satisfy <application>Guile</application>'s default
+    <quote>Implementation Vicinity</quote> directory.
+    </para>
 @z
 
 @x
@@ -187,12 +183,12 @@ satisfy <application>Guile</application>'s default
     following command as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-
-If you built any of the optional documentation, install it using the
-following command as the <systemitem class="username">root</systemitem>
-user:
-</para>
+    <para>
+    
+    If you built any of the optional documentation, install it using the
+    following command as the <systemitem class="username">root</systemitem>
+    user:
+    </para>
 @z
 
 @x
@@ -206,11 +202,11 @@ user:
     This command is used to change the <envar>libdir</envar> variable embedded
     in the script to match the installation variable.</para>
 @y
-<para>
-<command>sed -i 's|usr/lib|usr/share|' RScheme.init</command>:
-This command is used to change the <envar>libdir</envar> variable embedded
-in the script to match the installation variable.
-</para>
+    <para>
+    <command>sed -i 's|usr/lib|usr/share|' RScheme.init</command>:
+    This command is used to change the <envar>libdir</envar> variable embedded
+    in the script to match the installation variable.
+    </para>
 @z
 
 @x
@@ -218,11 +214,11 @@ in the script to match the installation variable.
     installs the package and the <command>info</command> documentation into the
     indicated directories.</para>
 @y
-<para>
-<command>make ... install installinfo</command>: This command
-installs the package and the <command>info</command> documentation into the
-indicated directories.
-</para>
+    <para>
+    <command>make ... install installinfo</command>: This command
+    installs the package and the <command>info</command> documentation into the
+    indicated directories.
+    </para>
 @z
 
 @x
@@ -243,18 +239,18 @@ indicated directories.
     for the <application>Guile</application> installation, issue the following
     command as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-
-For many of the Scheme implementations, an
-<application>SLIB</application> Scheme implementation catalog  must be
-created. If you have <xref linkend="guile"/> installed to support a
-<application>GnuCash</application> installation, you must create a
-catalog. You can use the <command>make catalogs</command> command, but
-there will be many warnings and confusing messages as it tries to create
-a catalog for many of the possible Scheme implementations which are
-probably not installed on the system. To create a single catalog just
-for the <application>Guile</application> installation, issue the following
-command as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    
+    For many of the Scheme implementations, an
+    <application>SLIB</application> Scheme implementation catalog  must be
+    created. If you have <xref linkend="guile"/> installed to support a
+    <application>GnuCash</application> installation, you must create a
+    catalog. You can use the <command>make catalogs</command> command, but
+    there will be many warnings and confusing messages as it tries to create
+    a catalog for many of the possible Scheme implementations which are
+    probably not installed on the system. To create a single catalog just
+    for the <application>Guile</application> installation, issue the following
+    command as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -312,4 +308,3 @@ command as the <systemitem class="username">root</systemitem> user:</para>
           used to initialize an <application>SLIB</application> session using
           a given executable.</para>
 @z
-

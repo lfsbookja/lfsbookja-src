@@ -23,9 +23,9 @@
     <para>The <application>cpio</application> package contains
     tools for archiving.</para>
 @y
-<para>
-<application>cpio</application> パッケージはアーカイブ処理ツールを提供します。
-</para>
+    <para>
+    <application>cpio</application> パッケージはアーカイブ処理ツールを提供します。
+    </para>
 @z
 
 @x
@@ -88,36 +88,35 @@
     <para>Install <application>cpio</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>cpio</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>cpio</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para>If you have <!-- <xref linkend="tetex"/> or --><xref linkend="texlive"/>
     installed and wish to create PDF or Postscript documentation, issue one or
     both of the following commands:</para>
 @y
-<para>
-<xref linkend="tetex"/> や <xref linkend="texlive"/> をインストールしていて、PDF や Postscript
-のドキュメントを生成したい場合は、以下のいずれか、あるいは両方のコマンドを実行します。
-</para>
+    <para>
+    <xref linkend="texlive"/> をインストールしていて、PDF や Postscript のドキュメントを生成したい場合は、以下のいずれか、あるいは両方のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -125,11 +124,10 @@
     by issuing the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-PDF や Postscript のドキュメントをビルドした場合は、
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-</para>
+    <para>
+    PDF や Postscript のドキュメントをビルドした場合は、<systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -144,14 +142,13 @@ PDF や Postscript のドキュメントをビルドした場合は、
     instead of <filename class="directory">/usr/bin</filename> as recommended
     by the FHS guidelines.</para>
 @y
-<para>
-<parameter>--bindir=/bin</parameter>:
-このパラメーターは、<command>cpio</command>
-プログラムのインストール先を
-<filename class="directory">/usr/bin</filename> ではなく
-<filename class="directory">/bin</filename>
-にします。これは FHS のガイドラインに従うものです。
-</para>
+    <para>
+    <parameter>--bindir=/bin</parameter>:
+    このパラメーターは、<command>cpio</command> プログラムのインストール先を <filename
+    class="directory">/usr/bin</filename> ではなく<filename
+    class="directory">/bin</filename> にします。
+    これは FHS のガイドラインに従うものです。
+    </para>
 @z
 
 @x
@@ -159,22 +156,20 @@ PDF や Postscript のドキュメントをビルドした場合は、
     that <filename class='directory'>/usr/libexec</filename> is not
     created.</para>
 @y
-<para>
-<parameter>--libexecdir=/tmp</parameter>:
-このパラメーターは <filename class='directory'>/usr/libexec</filename>
-ディレクトリを生成しないようにします。
-</para>
+    <para>
+    <parameter>--libexecdir=/tmp</parameter>:
+    このパラメーターは <filename class='directory'>/usr/libexec</filename> ディレクトリを生成しないようにします。
+    </para>
 @z
 
 @x
     <para><parameter>--enable-mt</parameter>: This parameter forces the
     building and installation of the <command>mt</command> program.</para>
 @y
-<para>
-<parameter>--enable-mt</parameter>:
-このパラメーターは <command>mt</command>
-プログラムをビルドしインストールすることを指示します。
-</para>
+    <para>
+    <parameter>--enable-mt</parameter>:
+    このパラメーターは <command>mt</command> プログラムをビルドしインストールすることを指示します。
+    </para>
 @z
 
 @x
@@ -182,12 +177,11 @@ PDF や Postscript のドキュメントをビルドした場合は、
     inhibits building the <command>rmt</command> program as it is already
     installed by the <application>Tar</application> package in LFS.</para>
 @y
-<para>
-<parameter>--with-rmt=/usr/sbin/rmt</parameter>:
-このパラメーターは <command>rmt</command> プログラムをビルドしないようにします。
-そのプログラムは LFS における <application>Tar</application>
-パッケージにて既にインストールされています。
-</para>
+    <para>
+    <parameter>--with-rmt=/usr/sbin/rmt</parameter>:
+    このパラメーターは <command>rmt</command> プログラムをビルドしないようにします。
+    そのプログラムは LFS における <application>Tar</application> パッケージにて既にインストールされています。
+    </para>
 @z
 
 @x
@@ -225,15 +219,15 @@ PDF や Postscript のドキュメントをビルドした場合は、
 @x cpio
           <para>copies files to and from archives.</para>
 @y
-<para>
-アーカイブからのファイルコピー、あるいはアーカイブへのファイルコピーを行います。
-</para>
+          <para>
+          アーカイブからのファイルコピー、あるいはアーカイブへのファイルコピーを行います。
+          </para>
 @z
 
 @x mt
           <para>controls magnetic tape drive operations.</para>
 @y
-<para>
-磁気テープドライブの処理を制御します。
-</para>
+          <para>
+          磁気テープドライブの処理を制御します。
+          </para>
 @z

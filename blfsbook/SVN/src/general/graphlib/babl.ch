@@ -23,10 +23,9 @@
     <para>The <application>babl</application>package is a dynamic, any to any,
     pixel format translation library.</para>
 @y
-<para>
-<application>babl</application>
-パッケージは、ピクセルフォーマットを様々な方法により、動的に変換するライブラリを提供します。
-</para>
+    <para>
+    <application>babl</application> パッケージは、ピクセルフォーマットを様々な方法により、動的に変換するライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -79,12 +78,12 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="librsvg"/> and <xref linkend="w3m"/> -
-    In practice these are only useful for the package's maintainer.</para>
+    <para role="optional"><xref linkend="gobject-introspection"/>
+    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="librsvg"/>, <xref linkend="w3m"/> -
-    実際にはパッケージ管理者のみにとって必要</para>
+    <para role="optional"><xref linkend="gobject-introspection"/>
+    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink></para>
 @z
 
 @x
@@ -105,25 +104,25 @@
     <para>Install <application>babl</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを入力して <application>babl</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを入力して <application>babl</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -138,13 +137,11 @@
     under <filename class="directory">/usr/share/gtk-doc/html</filename> where
     other gtk packages put the programmer-oriented documentation.</para>
 @y
-<para>
-<parameter>install -v -m755 -d /usr/share/gtk-doc/html/babl/graphics</parameter>:
-このコマンドとそれに続くコマンドは、ライブラリの HTML ドキュメントをインストールするものであり、多くの gtk
-パッケージにて、プログラマー向けのドキュメントが配置されるディレクトリ
-<filename class="directory">/usr/share/gtk-doc/html</filename>
-にインストールするものです。
-</para>
+    <para>
+    <parameter>install -v -m755 -d /usr/share/gtk-doc/html/babl/graphics</parameter>:
+    このコマンドとそれに続くコマンドは、ライブラリの HTML ドキュメントをインストールするものであり、多くの gtk パッケージにて、プログラマー向けのドキュメントが配置されるディレクトリ <filename
+    class="directory">/usr/share/gtk-doc/html</filename> にインストールするものです。
+    </para>
 @z
 
 @x
@@ -183,7 +180,7 @@
           <para>contains functions to access BablFishes to convert between
           formats.</para>
 @y
-<para>
-各種フォーマットを変換するために BablFish にアクセスする関数を提供します。
-</para>
+          <para>
+          各種フォーマットを変換するために BablFish にアクセスする関数を提供します。
+          </para>
 @z

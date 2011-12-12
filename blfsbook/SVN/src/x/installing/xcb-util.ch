@@ -25,13 +25,10 @@
     previously found in <application>Xlib</application>, but are not part of
     core X protocol.</para>
 @y
-<para>
-<application>xcb-util</application>
-パッケージは <application>XCB</application>
-ライブラリに対する拡張機能を提供します。
-たいていの機能は <application>Xlib</application>
-に存在するものですが、ただし X プロトコルのコアな部分には含まれないものです。
-</para>
+    <para>
+    <application>xcb-util</application> パッケージは <application>XCB</application> ライブラリに対する拡張機能を提供します。
+    たいていの機能は <application>Xlib</application> に存在するものですが、ただし X プロトコルのコアな部分には含まれないものです。
+    </para>
 @z
 
 @x
@@ -110,26 +107,25 @@
     <para>Install <application>xcb-util</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>xcb-util</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>xcb-util</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> になって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> になって以下を実行します。
+    </para>
 @z
 
 @x
@@ -150,17 +146,10 @@
 
 @x
         <seg>None</seg>
-        <seg>libxcb-atom.{a,so}, libxcb-aux.{a,so}, libxcb-event.{a,so},
-        libxcb-icccm.{a,so}, libxcb-image.{a,so}, libxcb-keysyms.{a,so},
-        libxcb-property.{a,so}, libxcb-render-util.{a,so}, and
-        libxcb-reply.{a,so}</seg>
+        <seg>libxcb-util.{a,so}</seg>
         <seg>None</seg>
 @y
         <seg>なし</seg>
-        <seg>libxcb-atom.{a,so}, libxcb-aux.{a,so}, libxcb-event.{a,so},
-        libxcb-icccm.{a,so}, libxcb-image.{a,so}, libxcb-keysyms.{a,so},
-        libxcb-property.{a,so}, libxcb-render-util.{a,so},
-        libxcb-reply.{a,so}</seg>
+        <seg>libxcb-util.{a,so}</seg>
         <seg>なし</seg>
 @z
-

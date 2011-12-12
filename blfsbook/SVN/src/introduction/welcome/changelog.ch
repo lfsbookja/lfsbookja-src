@@ -61,8 +61,280 @@
 @z
 
 @x
+      <para>December 11th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to librep-0.90.5.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to libtiff-3.9.5.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added a section on testing Xorg.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to pixman-0.24.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to intltool-0.50.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added LLVM patch to MesaLib.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to babl-0.1.6.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to gegl-0.1.8.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to gimp-2.6.11.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - librep-0.90.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libtiff-3.9.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Xorg のテストの節を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pixman-0.24.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - intltool-0.50.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - MesaLib に LLVM のパッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - babl-0.1.6 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - gegl-0.1.8 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - gimp-2.6.11 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>December 9th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to talloc-2.0.7.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added llvm-3.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - talloc-2.0.7 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - llvm-3.0 の追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>December 8th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to freetype-2.4.8.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - freetype-2.4.8 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>December 7th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to tripwire-2.4.2.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to Linux-PAM-1.1.5.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Added --enable-dbm to Berkeley DB for
+          compatibility with older packages.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to gpgme-1.3.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to gnupg-2.0.18.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to pinentry-0.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to libksba-1.2.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to libassuan-2.0.2.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Updated to ImageMagick-6.7.3-10.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated Bluefish to 2.2.0.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated Pidgin to 2.10.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tripwire-2.4.2.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-PAM-1.1.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Berkeley DB にて古いパッケージとの互換性のために --enable-dbm を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gpgme-1.3.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gnupg-2.0.18 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - pinentry-0.8.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libksba-1.2.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - libassuan-2.0.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - ImageMagick-6.7.3-10 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Bluefish 2.2.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Pidgin 2.10.0 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>December 6th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updated to iptables-1.4.12.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to Xorg-7.6-2.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xorg-util-macros-1.15.0.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xterm-276.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to libdrm-2.4.27.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xcb-util-0.3.8.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to Mesa-7.11.2.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to xorg-server-1.11.2.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Removed "X Window System Components" and 
+          "Additional X Window System Configuration" pages, replaced by
+          single "Xorg-7.6-2 Configuration" page.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - iptables-1.4.12 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Xorg-7.6-2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xorg-util-macros-1.15.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xterm-276 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - libdrm-2.4.27 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xcb-util-0.3.8 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Mesa-7.11.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - xorg-server-1.11.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - "X ウィンドウシステムコンポーネント (X Window System Components)" と 
+          "追加の X ウィンドウシステム設定 (Additional X Window System Configuration)" のページを削除。
+          代わりに "Xorg-7.6.2 設定 (Xorg-7.6-2 Configuration)" のページ一つにまとめる。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>December 5th, 2011</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Removed teTeX as redundant to TeX Live.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Updated to blfs-bootscripts-20111205.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011/12/05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - TeX Live があるため teTeX は削除。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - blfs-bootscripts-20111205 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>December 4th, 2011</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Rewrote TeX Live procedures.</para>
+        </listitem>
         <listitem>
           <para>[wblaszcz] - Added libsndfile-1.0.23.</para>
         </listitem>
@@ -73,6 +345,9 @@
 @y
       <para>2011/12/04</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - TeX Live の手順を書き換え。</para>
+        </listitem>
         <listitem>
           <para>[wblaszcz] - libsndfile-1.0.23 の追加。</para>
         </listitem>

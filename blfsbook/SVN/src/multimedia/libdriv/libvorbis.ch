@@ -91,13 +91,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">both
     <xref linkend="doxygen"/>, and
-    <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     (specifically, pdflatex and htlatex) to build the PDF documentation</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional">both
-    <xref linkend="doxygen"/>, and
-    <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para role="optional">
+    <xref linkend="doxygen"/>,
+    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     (specifically, pdflatex and htlatex) to build the PDF documentation</para>
 @z
 

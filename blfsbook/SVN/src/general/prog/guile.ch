@@ -142,12 +142,12 @@
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     installed and wish to build alternate formats (PDF and postscript) of the
     documentation, issue the following commands:</para>
 @y
     <para>
-    <xref linkend="tetex"/> または <xref linkend="texlive"/> をインストールしていて、各種形式 (PDF と PostScript) のドキュメントをビルドする場合は、以下のコマンドを実行します。
+    <xref linkend="texlive"/> をインストールしていて、各種形式 (PDF と PostScript) のドキュメントをビルドする場合は、以下のコマンドを実行します。
     </para>
 @z
 

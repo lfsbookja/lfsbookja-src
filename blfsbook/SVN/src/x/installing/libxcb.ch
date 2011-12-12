@@ -25,14 +25,13 @@
     Xlib can also use XCB as a transport layer, allowing software to make
     requests and receive responses with both.</para>
 @y
-<para>
-<application>libxcb</application>
-パッケージは、X ウィンドウシステムプロトコルへのインターフェースを提供します。
-これは Xlib インターフェースに代わるものとなります。
-
-Xlib can also use XCB as a transport layer, allowing software to make
-requests and receive responses with both.
-</para>
+    <para>
+    <application>libxcb</application> パッケージは、X ウィンドウシステムプロトコルへのインターフェースを提供します。
+    これは Xlib インターフェースに代わるものとなります。
+    
+    Xlib can also use XCB as a transport layer, allowing software to make
+    requests and receive responses with both.
+    </para>
 @z
 
 @x
@@ -85,31 +84,36 @@ requests and receive responses with both.
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libXau"/>,
-    <xref linkend="libXdmcp"/>,
-    <xref linkend="libpthread-stubs"/>,
-    <xref linkend="libxslt"/>, and
-    <xref linkend="xcb-proto"/></para>
+    <para role="required">
+      <xref linkend="libXau"/>,
+      <xref linkend="libXdmcp"/>,
+      <xref linkend="libpthread-stubs"/>,
+      <xref linkend="libxslt"/>, and
+      <xref linkend="xcb-proto"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="libXau"/>,
-    <xref linkend="libXdmcp"/>,
-    <xref linkend="libpthread-stubs"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="xcb-proto"/></para>
+    <para role="required">
+      <xref linkend="libXau"/>,
+      <xref linkend="libXdmcp"/>,
+      <xref linkend="libpthread-stubs"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="xcb-proto"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/> (to generate API
-    documentation) and <ulink url="http://check.sourceforge.net/">Check</ulink>
-    (to run tests)</para>
+    <para role="optional">
+      <xref linkend="doxygen"/> (to generate API documentation) and 
+      <xref linkend="check"/> (to run tests)
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/>
-    (API ドキュメント生成のため) と
-    <ulink url="http://check.sourceforge.net/">Check</ulink>
-    (テスト実行のため)</para>
+    <para role="optional">
+      <xref linkend="doxygen"/> (API ドキュメント生成のため),
+      <xref linkend="check"/> (テスト実行のため)
+    </para>
 @z
 
 @x
@@ -130,25 +134,25 @@ requests and receive responses with both.
     <para>Install <application>libxcb</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libxcb</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libxcb</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -162,11 +166,10 @@ requests and receive responses with both.
     This parameter ensures the <application>libxcb</application> documentation
     is installed to a versioned directory.</para>
 @y
-<para>
-<parameter>--docdir='${datadir}'/doc/libxcb-&libxcb-version;</parameter>:
-このパラメータを指定することにより
-<application>libxcb</application> のドキュメントを、バージョン番号つきのディレクトリにインストールするようにします。
-</para>
+    <para>
+    <parameter>--docdir='${datadir}'/doc/libxcb-&libxcb-version;</parameter>:
+    このパラメーターを指定することにより <application>libxcb</application> のドキュメントを、バージョン番号つきのディレクトリにインストールするようにします。
+    </para>
 @z
 
 @x
@@ -174,11 +177,11 @@ requests and receive responses with both.
     to disable the API documentation if <xref linkend="doxygen"/> is
     installed.</para>
 @y
-<para>
-<parameter>--without-doxygen</parameter>: This switch can be used
-to disable the API documentation if <xref linkend="doxygen"/> is
-installed.
-</para>
+    <para>
+    <parameter>--without-doxygen</parameter>: This switch can be used
+    to disable the API documentation if <xref linkend="doxygen"/> is
+    installed.
+    </para>
 @z
 
 @x
@@ -201,14 +204,14 @@ installed.
       they previously did not. When an application has these types of bugs,
       it will crash with the following assertion:</para>
 @y
-<para>
-<application>libxcb</application> developers have decided
-to be strict in asserting locking bugs in X11 applications. This is
-different than the behavior of <application>libX11</application> when
-used on its own, and it will cause some applications to crash when
-they previously did not. When an application has these types of bugs,
-it will crash with the following assertion:
-</para>
+      <para>
+      <application>libxcb</application> developers have decided
+      to be strict in asserting locking bugs in X11 applications. This is
+      different than the behavior of <application>libX11</application> when
+      used on its own, and it will cause some applications to crash when
+      they previously did not. When an application has these types of bugs,
+      it will crash with the following assertion:
+      </para>
 @z
 
 @x
@@ -262,7 +265,7 @@ it will crash with the following assertion:
 @x libxcb.{so,a}
           <para>is an interface to the X Window System protocol.</para>
 @y
-<para>
-X ウィンドウシステムプロトコルへのインターフェースを提供します。
-</para>
+          <para>
+          X ウィンドウシステムプロトコルへのインターフェースを提供します。
+          </para>
 @z

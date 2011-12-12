@@ -30,12 +30,10 @@
     for the X Window System to directly interface with video hardware using
     the Linux kernel's Direct Rendering Modules.</para>
 @y
-<para>
-<application>libdrm</application> は X ウィンドウシステムにおける重要なライブラリルーチンを提供します。
-これは Linux カーネルのダイレクトレンダリングモジュール
-(Direct Rendering Modules)
-を利用してビデオハードウェアとの直接のインターフェースを提供するものです。
-</para>
+    <para>
+    <application>libdrm</application> は X ウィンドウシステムにおける重要なライブラリルーチンを提供します。
+    これは Linux カーネルのダイレクトレンダリングモジュール  (Direct Rendering Modules) を利用してビデオハードウェアとの直接のインターフェースを提供するものです。
+    </para>
 @z
 
 @x
@@ -88,13 +86,11 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="cairo"/>,
-    <xref linkend="libpthread-stubs"/>, and
+    <para role="required"><xref linkend="libpthread-stubs"/> and
     <xref linkend="libatomic_ops"/> (required on x86 only)</para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="cairo"/>,
-    <xref linkend="libpthread-stubs"/>,
+    <para role="required"><xref linkend="libpthread-stubs"/>,
     <xref linkend="libatomic_ops"/> (x86 のみ必須)</para>
 @z
 
@@ -116,9 +112,9 @@
     <para>Install <application>libdrm</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libdrm</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libdrm</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -126,18 +122,18 @@
     some tests may fail depending on the video hardware installed in the
     machine.</para>
 @y
-<para>
-ビルド結果を確認するなら <command>make check</command> を実行します。
-テストの中には、搭載されているビデオ関連のハードウェアにてエラーとなる場合があります。
-</para>
+    <para>
+    ビルド結果を確認するなら <command>make check</command> を実行します。
+    テストの中には、搭載されているビデオ関連のハードウェアにてエラーとなる場合があります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -158,11 +154,13 @@
 
 @x
         <seg>None</seg>
-        <seg>libdrm.so, libdrm_intel.so, and libdrm_radeon.so</seg>
+        <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
+        libdrm_radeon.so, and libkms</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @y
         <seg>なし</seg>
-        <seg>libdrm.so, libdrm_intel.so, libdrm_radeon.so</seg>
+        <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
+        libdrm_radeon.so, libkms</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @z
 
@@ -174,12 +172,10 @@
 
 @x libdrm.{so,a}
           <para>contains the Direct Rendering Module library functions, and
-          additional vendor specific functions for intel and radeon
+          additional vendor specific functions for Intel and NVidia, and Radeon
           devices.</para>
 @y
-<para>
-ダイレクトレンダリングモジュール (Direct Rendering Module)
-のライブラリ関数と、intel や radeon の各ベンダーに固有の追加関数を提供します。
-</para>
+          <para>
+          ダイレクトレンダリングモジュール (Direct Rendering Module) のライブラリ関数と、Intel, NVidia, Radeon の各ベンダーに固有の追加関数を提供します。
+          </para>
 @z
-

@@ -27,12 +27,12 @@
     rely on another cryptographic library but provides hooks for easy
     integration with <application>Libgcrypt</application>.</para>
 @y
-<para>The <application>Libksba</application> package contains a library
-used to make X.509 certificates as well as making the CMS (Cryptographic
-Message Syntax) easily accessible by other applications. Both
-specifications are building blocks of S/MIME and TLS. The library does not
-rely on another cryptographic library but provides hooks for easy
-integration with <application>Libgcrypt</application>.</para>
+    <para>The <application>Libksba</application> package contains a library
+    used to make X.509 certificates as well as making the CMS (Cryptographic
+    Message Syntax) easily accessible by other applications. Both
+    specifications are building blocks of S/MIME and TLS. The library does not
+    rely on another cryptographic library but provides hooks for easy
+    integration with <application>Libgcrypt</application>.</para>
 @z
 
 @x
@@ -109,39 +109,38 @@ integration with <application>Libgcrypt</application>.</para>
     <para>Install <application>Libksba</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Libksba</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Libksba</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>If you wish to build alternate formats of the documentation, you
-    must have <xref linkend="tetex"/> or <xref linkend="texlive"/> installed,
+    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/> installed,
     then issue the following commands:</para>
 @y
-<para>
-種々の形式によるドキュメントをインストールする場合には
-<xref linkend="tetex"/> または <xref linkend="texlive"/>
-をインストールしておく必要があります。
-そして以下を実行します。
-</para>
+    <para>
+    種々の形式によるドキュメントをインストールする場合には <xref
+    linkend="texlive"/> をインストールしておく必要があります。
+    そして以下を実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -149,11 +148,10 @@ integration with <application>Libgcrypt</application>.</para>
     following commands as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-追加でドキュメントをビルドした場合は
-<systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
-</para>
+    <para>
+    追加でドキュメントをビルドした場合は <systemitem
+    class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -194,19 +192,19 @@ integration with <application>Libgcrypt</application>.</para>
           linker flags which are required to correctly compile and link the
           application against the libksba(3) library.</para>
 @y
-<para>
-
-is a utility used to configure and build applications based on
-the libksba(3) library. It can be used to query the C compiler and
-linker flags which are required to correctly compile and link the
-application against the libksba(3) library.
-</para>
+          <para>
+          
+          is a utility used to configure and build applications based on
+          the libksba(3) library. It can be used to query the C compiler and
+          linker flags which are required to correctly compile and link the
+          application against the libksba(3) library.
+          </para>
 @z
 
 @x libksba.{so,a}
           <para>contains the cryptographic API functions.</para>
 @y
-<para>
-contains the cryptographic API functions.
-</para>
+          <para>
+          contains the cryptographic API functions.
+          </para>
 @z

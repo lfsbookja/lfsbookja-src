@@ -24,11 +24,9 @@
     exporting <application>C</application> libraries into
     <application>Scheme</application> interpreters.</para>
 @y
-<para>
-<application>G-Wrap</application> パッケージは
-<application>C</application> ライブラリを
-<application>Scheme</application> インタープリターへとエクスポートするためのツールを提供します。
-</para>
+    <para>
+    <application>G-Wrap</application> パッケージは <application>C</application> ライブラリを <application>Scheme</application> インタープリターへとエクスポートするためのツールを提供します。
+    </para>
 @z
 
 @x
@@ -121,35 +119,35 @@
     <para>Install <application>G-Wrap</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>G-Wrap</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>G-Wrap</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> installed and wish to create
+    <para>If you have <xref linkend="texlive"/> installed and wish to create
     alternate formats of the documentation, issue the following
     commands:</para>
 @y
-<para>
-<xref linkend="tetex"/> をインストールしていて、さまざまなフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
-</para>
+    <para>
+    <xref linkend="texlive"/> をインストールしていて、さまざまなフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -157,11 +155,10 @@
     it using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-さまざまなフォーマットのドキュメントを生成した場合は
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行し、それらをインストールします。
-</para>
+    <para>
+    さまざまなフォーマットのドキュメントを生成した場合は <systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行し、それらをインストールします。
+    </para>
 @z
 
 @x
@@ -209,9 +206,9 @@
           <application>C</application> code to the
           <application>Scheme</application> runtime libraries.</para>
 @y
-<para>
-is a tool to generate <envar>CFLAGS</envar> for linking
-<application>C</application> code to the
-<application>Scheme</application> runtime libraries.
-</para>
+          <para>
+          is a tool to generate <envar>CFLAGS</envar> for linking
+          <application>C</application> code to the
+          <application>Scheme</application> runtime libraries.
+          </para>
 @z

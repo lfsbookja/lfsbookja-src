@@ -96,12 +96,18 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gnupg"/> and
-    <xref linkend="gnupg2"/></para>
+    <para role="optional">
+      <xref linkend="gnupg"/>,
+      <xref linkend="gnupg2"/>, and
+      <xref linkend="pth"/>
+      </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gnupg"/>,
-    <xref linkend="gnupg2"/></para>
+    <para role="optional">
+      <xref linkend="gnupg"/>,
+      <xref linkend="gnupg2"/>,
+      <xref linkend="pth"/>
+      </para>
 @z
 
 @x

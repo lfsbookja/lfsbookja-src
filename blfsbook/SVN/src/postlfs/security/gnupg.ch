@@ -141,13 +141,12 @@
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     installed and you wish to create documentation in alternate formats, issue
     the following command:</para>
 @y
     <para>
-    <xref linkend="tetex"/> または <xref
-    linkend="texlive"/> をインストールしていて、複数の形式のドキュメントを生成する場合は、以下のコマンドを実行します。
+    <xref linkend="texlive"/> をインストールしていて、複数の形式のドキュメントを生成する場合は、以下のコマンドを実行します。
     </para>
 @z
 

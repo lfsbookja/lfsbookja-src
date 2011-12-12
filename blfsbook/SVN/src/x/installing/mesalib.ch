@@ -23,9 +23,9 @@
     <para><application>Mesa</application> is an OpenGL compatible 3-D graphics
     library.</para>
 @y
-<para>
-<application>Mesa</application> は OpenGL 互換の 3-D グラフィックライブラリです。
-</para>
+    <para>
+    <application>Mesa</application> は OpenGL 互換の 3-D グラフィックライブラリです。
+    </para>
 @z
 
 @x
@@ -117,18 +117,24 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/>,
-    <xref linkend="makedepend"/>,
-    <xref linkend="libdrm"/>,
-    <xref linkend="expat"/>, and
-    <xref linkend="talloc"/></para>
+    <para role="required">
+      <xref linkend="expat"/>,
+      <xref linkend="libdrm"/>,
+      <xref linkend="llvm"/>,
+      <xref linkend="makedepend"/>,
+      <xref linkend="talloc"/>, and
+      <xref linkend="xorg7-lib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/>,
-    <xref linkend="makedepend"/>,
-    <xref linkend="libdrm"/>,
-    <xref linkend="expat"/>, and
-    <xref linkend="talloc"/></para>
+    <para role="required">
+      <xref linkend="expat"/>,
+      <xref linkend="libdrm"/>,
+      <xref linkend="llvm"/>,
+      <xref linkend="makedepend"/>,
+      <xref linkend="talloc"/>,
+      <xref linkend="xorg7-lib"/>
+    </para>
 @z
 
 @x
@@ -161,35 +167,34 @@
     <filename class="directory">Mesa-&mesalib-version;</filename>
     directory.</para></note>
 @y
-<note><para>他のパッケージとは違い、<filename>MesaLib-&mesalib-version;.tar.bz2</filename>
-は <filename class="directory">Mesa-&mesalib-version;</filename>
-ディレクトリに伸張 (解凍) されます。
-</para></note>
+    <note><para>他のパッケージとは違い、<filename>MesaLib-&mesalib-version;.tar.bz2</filename> は <filename
+    class="directory">Mesa-&mesalib-version;</filename> ディレクトリに伸張 (解凍) されます。
+    </para></note>
 @z
 
 @x
     <para>Install <application>MesaLib</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>MesaLib</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>MesaLib</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -199,14 +204,11 @@
     Execute the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<filename class="directory">/usr</filename>
-以外のプレフィックスを用いてインストールを行っている場合は、
-<filename class="directory">/usr/include</filename>
-ディレクトリにある GL ヘッダーファイルへのシンボリックリンクを作成する必要があります。
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <filename class="directory">/usr</filename> 以外のプレフィックスを用いてインストールを行っている場合は、<filename
+    class="directory">/usr/include</filename> ディレクトリにある GL ヘッダーファイルへのシンボリックリンクを作成する必要があります。
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -221,33 +223,32 @@
     both <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar> with this
     command.</para>
 @y
-<para>
-<command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>:
-デフォルトでは Mesa はデバッグシンボルを含めたビルドを行います。
-そこでこのコマンドにより <envar>CFLAGS</envar> と <envar>CXXFLAGS</envar>
-の双方から -g スイッチを取り除きます。
-</para>
+    <para>
+    <command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>:
+    デフォルトでは Mesa はデバッグシンボルを含めたビルドを行います。
+    そこでこのコマンドにより <envar>CFLAGS</envar> と <envar>CXXFLAGS</envar> の双方から -g スイッチを取り除きます。
+    </para>
 @z
 
 @x
     <para><option>--enable-xcb</option>: use the XCB backend instead of the
     default XLib backend for GLX.</para>
 @y
-<para>
-<option>--enable-xcb</option>:
-GLX に対するバックエンドとして、デフォルトの XLib ではなく XCB バックエンドを用いるよう指定します。
-</para>
+    <para>
+    <option>--enable-xcb</option>:
+    GLX に対するバックエンドとして、デフォルトの XLib ではなく XCB バックエンドを用いるよう指定します。
+    </para>
 @z
 
 @x
     <para><option>--enable-motif</option>: build motif widgets into the
     GL widgets library (requires <application>lesstif</application>).</para>
 @y
-<para>
-<option>--enable-motif</option>:
-GL ウィジェットライブラリにて motif ウィジェットをビルドします。
-(<application>lesstif</application> が必要です。)
-</para>
+    <para>
+    <option>--enable-motif</option>:
+    GL ウィジェットライブラリにて motif ウィジェットをビルドします。
+    (<application>lesstif</application> が必要です。)
+    </para>
 @z
 
 @x
@@ -290,51 +291,51 @@ GL ウィジェットライブラリにて motif ウィジェットをビルド�
           <para>is a GL demo useful for troubleshooting graphics
           problems.</para>
 @y
-<para>
-GL のデモプログラム。グラフィックにて何か問題があった場合のトラブルシューティングとなります。
-</para>
+          <para>
+          GL のデモプログラム。グラフィックにて何か問題があった場合のトラブルシューティングとなります。
+          </para>
 @z
 
 @x glxinfo
           <para>is a diagnostic program that displays information about the
           graphics hardware and installed GL libraries.</para>
 @y
-<para>
-グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
-</para>
+          <para>
+          グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
+          </para>
 @z
 
 @x libEGL.so
           <para>provides a native platform graphics interface as defined by
           the EGL-1.4 specification.</para>
 @y
-<para>
-
-provides a native platform graphics interface as defined by
-the EGL-1.4 specification.
-</para>
+          <para>
+          
+          provides a native platform graphics interface as defined by
+          the EGL-1.4 specification.
+          </para>
 @z
 
 @x libGL.so
           <para>is the main OpenGL library.</para>
 @y
-<para>
-主要な OpenGL ライブラリ。
-</para>
+          <para>
+          主要な OpenGL ライブラリ。
+          </para>
 @z
 
 @x libGLU.so
           <para>is the OpenGL Utility library.</para>
 @y
-<para>
-OpenGL ユーティリティライブラリ。
-</para>
+          <para>
+          OpenGL ユーティリティライブラリ。
+          </para>
 @z
 
 @x libGLw.so
           <para>is the Xt/Motif OpenGL drawing area widget library.</para>
 @y
-<para>
-Xt/Motif OpenGL drawing area ウィジェットライブラリ。
-</para>
+          <para>
+          Xt/Motif OpenGL drawing area ウィジェットライブラリ。
+          </para>
 @z

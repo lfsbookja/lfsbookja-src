@@ -248,21 +248,21 @@
     <para>Install <application>Heimdal</application> by running the following
     commands:</para>
 @y
-      <para>
-      以下のコマンドを実行して <application>Heimdal</application> をビルドします。
-      </para>
+    <para>
+    以下のコマンドを実行して <application>Heimdal</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>If you have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     installed and wish to create PDF and Postscript forms of the documentation,
     change into the <filename class='directory'>doc</filename> directory and
     issue any or all of the following commands:</para>
 @y
-      <para>
-      <xref linkend="tetex"/> または <xref linkend="texlive"/> をインストールしていて、PDF や Postscript 形式のドキュメントを生成しようとする場合は、<filename
-      class='directory'>doc</filename> ディレクトリに移動して、以下のコマンドをすべて実行します。
-      </para>
+    <para>
+    <xref linkend="texlive"/> をインストールしていて、PDF や Postscript 形式のドキュメントを生成しようとする場合は、<filename
+    class='directory'>doc</filename> ディレクトリに移動して、以下のコマンドをすべて実行します。
+    </para>
 @z
 
 @x

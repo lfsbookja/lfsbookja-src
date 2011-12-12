@@ -130,14 +130,13 @@
 @x
     <para>Only <command>info</command> documentation is shipped in the package
     tarball. If you wish to build alternate formats of the documentation,
-    (you must have <xref linkend="tetex"/> or <xref linkend="texlive"/>
+    (you must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     installed to build the PDF and PostScript), then issue the following
     commands:</para>
 @y
     <para>
     パッケージの tarball には <command>info</command> ドキュメントのみが提供されています。
-    他の書式のドキュメントをビルドする場合 (その場合は <xref linkend="tetex"/> か <xref linkend="texlive"/> をインストールしておく必要があり)、
-    以下のコマンドを実行します。
+    他の書式のドキュメントをビルドする場合 (その場合は<xref linkend="texlive"/> をインストールしておく必要があり)、以下のコマンドを実行します。
     </para>
 @z
 

@@ -23,10 +23,9 @@
     <para>This package provides the GEneric Graphics Library, which is a
     graph based image processing format.</para>
 @y
-<para>
-本パッケージは汎用グラフィックライブラリ (GEneric Graphics Library)
-を提供します。
-</para>
+    <para>
+    本パッケージは汎用グラフィックライブラリ (GEneric Graphics Library) を提供します。
+    </para>
 @z
 
 @x
@@ -79,21 +78,25 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="babl"/>, <xref linkend="glib2"/>
-    and <xref linkend="gtk2"/></para>
+    <para role="required"><xref linkend="babl"/>,
+    and  <xref linkend="glib2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="babl"/>, <xref linkend="glib2"/>,
-    <xref linkend="gtk2"/></para>
+    <para role="required"><xref linkend="babl"/>,
+    <xref linkend="glib2"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><ulink
     url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
+    <xref linkend="cairo"/>,
     <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
+    <xref linkend="exiv2"/>,
     <xref linkend="ffmpeg"/>,
+    <xref linkend="gdk-pixbuf"/>,
     <xref linkend="graphviz"/>,
+    <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
     <xref linkend="libjpeg"/>,
     <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
     <xref linkend="libpng"/>,
@@ -101,16 +104,25 @@
     <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
     <ulink url="http://www.lua.org/">Lua</ulink>,
     <ulink url="http://www.openexr.org">OpenEXR</ulink>,
+    <xref linkend="pango"/>,
+    <xref linkend="python"/>,
     <xref linkend="ruby"/>,
     <xref linkend="sdl"/>
-    and <xref linkend="w3m"/></para>
+    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
+    <xref linkend="w3m"/>
+    and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><ulink
     url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
+    <xref linkend="cairo"/>,
     <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
+    <xref linkend="exiv2"/>,
     <xref linkend="ffmpeg"/>,
+    <xref linkend="gdk-pixbuf"/>,
     <xref linkend="graphviz"/>,
+    <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
     <xref linkend="libjpeg"/>,
     <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
     <xref linkend="libpng"/>,
@@ -118,9 +130,14 @@
     <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
     <ulink url="http://www.lua.org/">Lua</ulink>,
     <ulink url="http://www.openexr.org">OpenEXR</ulink>,
+    <xref linkend="pango"/>,
+    <xref linkend="python"/>,
     <xref linkend="ruby"/>,
     <xref linkend="sdl"/>
-    <xref linkend="w3m"/></para>
+    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
+    <xref linkend="w3m"/>,
+    <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
+    </para>
 @z
 
 @x
@@ -141,25 +158,25 @@
     <para>Install <application>gegl</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>gegl</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>gegl</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -176,14 +193,11 @@
     <filename>index.html</filename>.  This extra command ensures all the links
     in the html work.</para>
 @y
-<para>
-<parameter>install -v -m644 docs/*.{css,html} /usr/share/gtk-doc/html/gegl
-</parameter>:
-'<command>make install</command>'
-を実行しただけでは <filename>operations.html</filename>
-しかインストールされず、スタイルシートや <filename>index.html</filename>
-がインストールされません。このコマンドを追加することで HTML 内のリンクを正しく作動するようにします。
-</para>
+    <para>
+    <parameter>install -v -m644 docs/*.{css,html} /usr/share/gtk-doc/html/gegl
+    </parameter>:
+    '<command>make install</command>' を実行しただけでは <filename>operations.html</filename> しかインストールされず、スタイルシートや <filename>index.html</filename> がインストールされません。このコマンドを追加することで HTML 内のリンクを正しく作動するようにします。
+    </para>
 @z
 
 @x
@@ -221,18 +235,18 @@
 @x gegl
           <para>is a commandline tool for working with the XML data model.</para>
 @y
-<para>
-XML データモデルに基づくコマンドラインツールです。
-</para>
+          <para>
+          XML データモデルに基づくコマンドラインツールです。
+          </para>
 @z
 
 @x libgegl-0.1.so
           <para>provides infrastructure to do demand based cached non
           destructive image editing on larger than RAM buffers.</para>
 @y
-<para>
-
-provides infrastructure to do demand based cached non
-destructive image editing on larger than RAM buffers.
-</para>
+          <para>
+          
+          provides infrastructure to do demand based cached non
+          destructive image editing on larger than RAM buffers.
+          </para>
 @z

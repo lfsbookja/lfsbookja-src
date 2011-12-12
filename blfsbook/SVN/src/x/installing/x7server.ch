@@ -29,10 +29,9 @@
     <para>The <application>Xorg</application> Server is the core
     of the X Window system.</para>
 @y
-<para>
-<application>Xorg</application>
-サーバーは、X ウィンドウシステムの中心となるソフトウェアです。
-</para>
+    <para>
+    <application>Xorg</application> サーバーは、X ウィンドウシステムの中心となるソフトウェアです。
+    </para>
 @z
 
 @x
@@ -115,7 +114,7 @@
     <xref linkend="xmlto"/>, (to build documentation),
     <xref linkend="fop"/>, (to build documentation),
     <xref linkend="gs"/> (to build documentation),
-    <xref linkend="hal"/> (not recommended, disabled by default),
+    <xref linkend="hal"/>,
     <xref linkend="mesalib"/> (required for DRI)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
@@ -124,7 +123,7 @@
     <xref linkend="xmlto"/>, (to build documentation),
     <xref linkend="fop"/>, (to build documentation),
     <xref linkend="gs"/> (to build documentation),
-    <xref linkend="hal"/> (not recommended, disabled by default),
+    <xref linkend="hal"/>,
     <xref linkend="mesalib"/> (required for DRI)</para>
 @z
 
@@ -145,27 +144,26 @@
 @x
     <para>Install the server by running the following commands:</para>
 @y
-<para>
-サーバーをビルドするために以下のコマンドを実行します。
-</para>
+    <para>
+    サーバーをビルドするために以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -178,10 +176,10 @@
     <para><parameter>--with-module-dir=...</parameter>:  This parameter
     sets the destination for the installed modules.</para>
 @y
-<para>
-<parameter>--with-module-dir=...</parameter>:
-このパラメータはモジュールのインストール先を指定します。
-</para>
+    <para>
+    <parameter>--with-module-dir=...</parameter>:
+    このパラメーターはモジュールのインストール先を指定します。
+    </para>
 @z
 
 @x
@@ -189,12 +187,11 @@
     run as the root user.  This switch ensures that the binary is installed
     setuid when <command>make</command> is run by an unprivileged user.</para>
 @y
-<para>
-<parameter>--enable-install-setuid</parameter>:
-Xorg の実行モジュールは root ユーザーにて実行される必要があります。
-このパラメーターは一般ユーザーによって <command>make</command>
-によりビルドを行っても、実行モジュールに対して正しく setuid がセットされるようにします。
-</para>
+    <para>
+    <parameter>--enable-install-setuid</parameter>:
+    Xorg の実行モジュールは root ユーザーにて実行される必要があります。
+    このパラメーターは一般ユーザーによって <command>make</command> によりビルドを行っても、実行モジュールに対して正しく setuid がセットされるようにします。
+    </para>
 @z
 
 @x
@@ -202,12 +199,11 @@ Xorg の実行モジュールは root ユーザーにて実行される必要が
     extension.  This parameter is required if building without
     <application>Mesa</application>.</para>
 @y
-<para>
-<option>--disable-glx</option>:
-GLX 拡張 (GLX extension) を利用しないようにします。
-このパラメーターは <application>Mesa</application>
-がインストールされていない場合に必要となります。
-</para>
+    <para>
+    <option>--disable-glx</option>:
+    GLX 拡張 (GLX extension) を利用しないようにします。
+    このパラメーターは <application>Mesa</application> がインストールされていない場合に必要となります。
+    </para>
 @z
 
 @x
@@ -215,21 +211,10 @@ GLX 拡張 (GLX extension) を利用しないようにします。
     extension.  This parameter is required if building without
     <application>Mesa</application>.</para>
 @y
-<para><option>--disable-dri</option>:
-DRI 拡張 (DRI extension) を利用しないようにします。
-このパラメーターは <application>Mesa</application>
-がインストールされていない場合に必要となります。
-</para>
-@z
-
-@x
-    <para><option>--disable-config-dbus</option>: Disable the use of
-    <application>D-Bus</application>.</para>
-@y
-<para>
-<option>--disable-config-dbus</option>:
-<application>D-Bus</application> を利用しないようにします。
-</para>
+    <para><option>--disable-dri</option>:
+    DRI 拡張 (DRI extension) を利用しないようにします。
+    このパラメーターは <application>Mesa</application> がインストールされていない場合に必要となります。
+    </para>
 @z
 
 @x
@@ -249,16 +234,17 @@ DRI 拡張 (DRI extension) を利用しないようにします。
 @z
 
 @x
-        <seg>cvt, gtf, X, Xnest, Xorg, and Xvfb</seg>
+        <seg>cvt, dmx*, gtf, vdltodmx, X, Xnest, Xorg, Xvfb,
+        and xdmxconfig</seg>
         <seg>None</seg>
         <seg>/var/lib/xkb and the following subdirectories of
         <envar>$XORG_PREFIX</envar>/: include/xorg, include/X11/pixmaps,
         lib/X11/{getconfig,modules} and lib/xorg</seg>
 @y
-        <seg>cvt, gtf, X, Xnest, Xorg, Xvfb</seg>
+        <seg>cvt, dmx*, gtf, vdltodmx, X, Xnest, Xorg, Xvfb,
+        and xdmxconfig</seg>
         <seg>なし</seg>
-        <seg>/var/lib/xkb と <envar>$XORG_PREFIX</envar>/
-        ディレクトリ配下の以下のディレクトリ:
+        <seg>/var/lib/xkb と <envar>$XORG_PREFIX</envar>/ ディレクトリ配下の以下のディレクトリ:
         include/xorg, include/X11/pixmaps,
         lib/X11/{getconfig,modules}, lib/xorg</seg>
 @z
@@ -304,4 +290,3 @@ DRI 拡張 (DRI extension) を利用しないようにします。
 @y
           <para>is the virtual framebuffer X server for X Version 11.</para>
 @z
-
