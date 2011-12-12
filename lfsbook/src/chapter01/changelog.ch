@@ -48,6 +48,71 @@
 @z
 
 @x
+      <para>2011-12-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.1.5. Fixes
+          <ulink url="&lfs-ticket-root;2981">#2981</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-12-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.1.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2981">#2981</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2011-12-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Improve the accuracy of the list of installed files
+          for a number of packages.  Thanks to Chris Staub for the patch. Fixes
+          <ulink url="&lfs-ticket-root;2979">#2979</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Prevent some arpd artefacts from being installed by
+          IPRoute2. Fixes
+          <ulink url="&lfs-ticket-root;2977">#2977</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Correct location of Coreutils' libstdbuf. Fixes
+          <ulink url="&lfs-ticket-root;2976">#2976</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Move Psmisc to before E2fsprogs because the
+          E2fsprogs testsuite uses killall. Fixes
+          <ulink url="&lfs-ticket-root;2975">#2975</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-12-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - 多くのパッケージにて、インストールされるファイルを正確に記載。
+          パッチを提供してくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;2979">#2979</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - IPRoute2 にて arpd 関連をインストールしないように。
+          <ulink url="&lfs-ticket-root;2977">#2977</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils の libstdbuf の位置を修正。
+          <ulink url="&lfs-ticket-root;2976">#2976</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Psmisc を E2fsprogs の前に移動。
+          E2fsprogs のテストスイートが killall を必要としているため。
+          <ulink url="&lfs-ticket-root;2975">#2975</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-12-01</para>
       <itemizedlist>
         <listitem>

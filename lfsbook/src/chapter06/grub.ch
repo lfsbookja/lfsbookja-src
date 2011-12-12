@@ -102,16 +102,18 @@ GRUB を使ってシステムのブート起動設定を行う方法について
 @z
 
 @x
-        <seg>grub-bin2h, grub-editenv, grub-install, grub-mkconfig,
-        grub-mkdevicemap, grub-mkelfimage, grub-mkimage, grub-mkisofs,
-        grub-mkpasswd-pbkdf2, grub-mkrelpath, grub-mkrescue, grub-probe,
-        grub-reboot, grub-script-check, grub-set-default, grub-setup</seg>
+        <seg>grub-bin2h, grub-editenv, grub-fstest, grub-install, grub-kbdcomp,
+        grub-menulst2cfg, grub-mkconfig, grub-mkdevicemap, grub-mkimage,
+        grub-mklayout, grub-mknetdir, grub-mkpasswd-pbkdf2, grub-mkrelpath,
+        grub-mkrescue, grub-probe, grub-reboot, grub-script-check,
+        grub-set-default, grub-setup</seg>
         <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub</seg>
 @y
-        <seg>grub-bin2h, grub-editenv, grub-install, grub-mkconfig,
-        grub-mkdevicemap, grub-mkelfimage, grub-mkimage, grub-mkisofs,
-        grub-mkpasswd-pbkdf2, grub-mkrelpath, grub-mkrescue, grub-probe,
-        grub-reboot, grub-script-check, grub-set-default, grub-setup</seg>
+        <seg>grub-bin2h, grub-editenv, grub-fstest, grub-install, grub-kbdcomp,
+        grub-menulst2cfg, grub-mkconfig, grub-mkdevicemap, grub-mkimage,
+        grub-mklayout, grub-mknetdir, grub-mkpasswd-pbkdf2, grub-mkrelpath,
+        grub-mkrescue, grub-probe, grub-reboot, grub-script-check,
+        grub-set-default, grub-setup</seg>
         <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub</seg>
 @z
 
@@ -169,21 +171,21 @@ GRUB のブートイメージ (bootable image) を生成します。
 </para>
 @z
 
-@x grub-mkimage
-          <para>Make a bootable image of GRUB</para>
-@y
-<para>
-GRUB のブートイメージを生成します。
-</para>
-@z
+% @x grub-mkimage
+%           <para>Make a bootable image of GRUB</para>
+% @y
+% <para>
+% GRUB のブートイメージを生成します。
+% </para>
+% @z
 
-@x grub-mkisofs
-          <para>Creates a bootable ISO image</para>
-@y
-<para>
-ブータブルな ISO イメージを生成します。
-</para>
-@z
+% @x grub-mkisofs
+%           <para>Creates a bootable ISO image</para>
+% @y
+% <para>
+% ブータブルな ISO イメージを生成します。
+% </para>
+% @z
 
 @x grub-mkpasswd-pbkdf2
           <para>Generates an encrypted PBKDF2 password for use in the boot

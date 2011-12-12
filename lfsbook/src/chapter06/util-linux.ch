@@ -120,10 +120,10 @@
 
 @x
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
         dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
-        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
+        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
         readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
@@ -131,21 +131,23 @@
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
         uuidd, uuidgen, wall, whereis, wipefs, and write</seg>
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
-        <seg>/usr/share/getopt, /var/lib/hwclock</seg>
+        <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
+        /usr/share/getopt, /var/lib/hwclock</seg>
 @y
         <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
-        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, ddate, delpart,
+        chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
         dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
-        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, line, linux32, linux64,
+        ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
         readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
-        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
+        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
         uuidd, uuidgen, wall, whereis, wipefs, write</seg>
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
-        <seg>/usr/share/getopt, /var/lib/hwclock</seg>
+        <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
+        /usr/share/getopt, /var/lib/hwclock</seg>
 @z
 
 @x
@@ -281,15 +283,15 @@
           </para>
 @z
 
-@x ddate
-          <para>Gives the Discordian date or converts the given Gregorian date
-          to a Discordian one</para>
-@y
-          <para>
-          ディスコルディア暦 (Discordian) の日付を表示します。
-          または指定されたグレゴリオ暦 (Gregorian) の日付をディスコルディア暦の日付に変換します。
-          </para>
-@z
+% @x ddate
+%           <para>Gives the Discordian date or converts the given Gregorian date
+%           to a Discordian one</para>
+% @y
+%           <para>
+%           ディスコルディア暦 (Discordian) の日付を表示します。
+%           または指定されたグレゴリオ暦 (Gregorian) の日付をディスコルディア暦の日付に変換します。
+%           </para>
+% @z
 
 @x delpart
           <para>Asks the Linux kernel to remove a partition</para>
@@ -489,13 +491,13 @@
           </para>
 @z
 
-@x line
-          <para>Copies a single line</para>
-@y
-          <para>
-          単一行をコピーします。
-          </para>
-@z
+% @x line
+%           <para>Copies a single line</para>
+% @y
+%           <para>
+%           単一行をコピーします。
+%           </para>
+% @z
 
 @x linux32
           <para>A symbolic link to setarch</para>

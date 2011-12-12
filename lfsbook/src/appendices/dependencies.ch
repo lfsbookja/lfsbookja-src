@@ -324,9 +324,9 @@ Flex, GCC, Gettext, Gzip, Libtool, Tar.
          Gzip, Make, Sed, Texinfo, Util-linux</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Psmisc</seg>
 @y
-          <seg>なし</seg>
+          <seg>Psmisc</seg>
 @z
 @x
           <seg>None</seg>

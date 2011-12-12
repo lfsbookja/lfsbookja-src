@@ -297,14 +297,16 @@
 @x
         <seg>c++, cc (link to gcc), cpp, g++, gcc, gccbug, and gcov</seg>
         <seg>libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so},
-        libmudflap.{a,so}, libmudflapth.{a,so}, libssp.{a,so},
+        liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
+        libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so} and libsupc++.a</seg>
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
 @y
-        <seg>c++, cc (gcc へのリンク), cpp, g++, gcc, gccbug, gcov</seg>
+        <seg>c++, cc (gcc へのリンク), cpp, g++, gcc, gccbug, and gcov</seg>
         <seg>libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so},
-        libmudflap.{a,so}, libmudflapth.{a,so}, libssp.{a,so},
-        libssp_nonshared.a, libstdc++.{a,so} libsupc++.a</seg>
+        liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
+        libquadmath.{a,so}, libssp.{a,so},
+        libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a</seg>
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
 @z
 

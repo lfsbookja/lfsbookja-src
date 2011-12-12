@@ -93,16 +93,14 @@
 
 @x
         <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
-        lastb (link to last), mesg, mountpoint, pidof (link to killall5), 
-        poweroff (link to halt),
-        reboot (link to halt), runlevel, shutdown, sulogin,
-        telinit (link to init), and utmpdump</seg>
+        lastb (link to last), mesg, pidof (link to killall5),
+        poweroff (link to halt), reboot (link to halt), runlevel, shutdown,
+        sulogin, telinit (link to init), and utmpdump</seg>
 @y
         <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
-        lastb (last へのリンク), mesg, mountpoint, pidof (killall5 へのリンク), 
-        poweroff (halt へのリンク),
-        reboot (halt へのリンク), runlevel, shutdown, sulogin,
-        telinit (init へのリンク), utmpdump</seg>
+        lastb (last へのリンク), mesg, pidof (killall5 へのリンク),
+        poweroff (halt へのリンク), reboot (halt へのリンク), runlevel, shutdown,
+        sulogin, telinit (init へのリンク), utmpdump</seg>
 @z
 
 @x

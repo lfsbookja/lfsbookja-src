@@ -206,24 +206,24 @@
 
 @x
         <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
-        e2fsck, e2image, e2initrd_helper, e2label, e2undo, filefrag, fsck.ext2,
+        e2fsck, e2image, e2initrd_helper, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
         resize2fs, and tune2fs</seg>
-        <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so} and
-        libss.{a,so}</seg>
+        <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so},
+        libquota.a and libss.{a,so}</seg>
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
-        /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
+        /usr/include/quota, /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @y
         <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
-        e2fsck, e2image, e2initrd_helper, e2label, e2undo, filefrag, fsck.ext2,
+        e2fsck, e2image, e2initrd_helper, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
         mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
         resize2fs, tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so},
-        libss.{a,so}</seg>
+        libquota.a, libss.{a,so}</seg>
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
-        /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
+        /usr/include/quota, /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @z
 
 @x
@@ -345,6 +345,12 @@
           デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
           これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
           </para>
+@z
+
+@x e4defrag
+          <para>Online defragmenter for ext4 filesystems</para>
+@y
+          <para>ext4 ファイルシステムに対するオンラインのデフラグツール。</para>
 @z
 
 @x filefrag
@@ -539,6 +545,15 @@
           <para>
           ユーザーレベルのプログラムが <systemitem
           class="filesystem">ext2</systemitem> ファイルシステムを操作可能とするためのルーチンを提供します。
+          </para>
+@z
+
+@x libquota
+          <para>Provides an interface for creating and updating quota files
+          and ext4 superblock fields</para>
+@y
+          <para>
+          クォータ (quota) ファイルや ext4 スーパーブロックフィールドの生成更新を行うインターフェースを提供します。
           </para>
 @z
 

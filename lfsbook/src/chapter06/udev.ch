@@ -202,13 +202,15 @@
         firmware.sh, fstab_import, path_id, scsi_id, udevadm, udevd,
         usb_id, write_cd_rules, and write_net_rules</seg>
         <seg>libudev.{a,so}</seg>
-        <seg>/etc/udev, /lib/udev, /lib/firmware</seg>
+        <seg>/etc/udev, /lib/udev, /lib/firmware, /usr/share/doc/udev-config,
+        /usr/share/gtk-doc/html/libudev</seg>
 @y
         <seg>ata_id, cdrom_id, collect, create_floppy_devices, edd_id,
         firmware.sh, fstab_import, path_id, scsi_id, udevadm, udevd,
         usb_id, write_cd_rules, write_net_rules</seg>
         <seg>libudev.{a,so}</seg>
-        <seg>/etc/udev, /lib/udev, /lib/firmware</seg>
+        <seg>/etc/udev, /lib/udev, /lib/firmware, /usr/share/doc/udev-config,
+        /usr/share/gtk-doc/html/libudev</seg>
 @z
 
 @x

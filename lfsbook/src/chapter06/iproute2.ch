@@ -31,10 +31,10 @@
 @x
     <para>The <command>arpd</command> binary included in this package is
     dependent on Berkeley DB.  Because <command>arpd</command> is not a very
-    common requirement on a base Linux system, remove the dependency on Berkeley    DB by applying the <command>sed</command> command below.  If the
-    <command>arpd</command> binary is needed, instructions for compiling
-    Berkeley DB can be found in the BLFS Book at
-    <ulink url="&blfs-root;view/svn/server/databases.html#db"/>.
+    common requirement on a base Linux system, remove the dependency on Berkeley
+    DB by applying the commands below.  If the <command>arpd</command> binary is
+    needed, instructions for compiling Berkeley DB can be found in the BLFS Book
+    at <ulink url="&blfs-root;view/svn/server/databases.html#db"/>.
     </para>
 @y
     <para>

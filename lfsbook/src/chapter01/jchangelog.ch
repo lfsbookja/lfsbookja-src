@@ -54,6 +54,30 @@
 -->
 
     <listitem>
+      <para>2011-12-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20111210, r9689 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/e2fsprogs.ch:
+          訳出漏れの訂正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/{glibc.ch, grub.ch, iproute2.ch, ncurses.ch, util-linux.ch},
+          src/appendices/dependencies.ch:
+          SVN-20111205, r9688 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-12-02</para>
       <itemizedlist>
         <listitem>

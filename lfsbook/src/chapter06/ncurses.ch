@@ -172,7 +172,7 @@
 
 @x
         <seg>captoinfo (link to tic), clear, infocmp, infotocap (link to tic),
-        ncursesw5-config, reset (link to tset), <!--tabs,--> tic, toe, tput, and tset</seg>
+        ncursesw5-config, reset (link to tset), tabs, tic, toe, tput, and tset</seg>
         <seg>libcursesw.{a,so} (symlink and linker script to libncursesw.{a,so}),
         libformw.{a,so}, libmenuw.{a,so}, libncurses++w.a, libncursesw.{a,so},
         libpanelw.{a,so} and their non-wide-character counterparts without "w"
@@ -180,12 +180,10 @@
         <seg>/usr/share/tabset, /usr/share/terminfo</seg>
 @y
         <seg>captoinfo (tic へのリンク), clear, infocmp, infotocap (tic へのリンク),
-        ncursesw5-config, reset (tset へのリンク), <!--tabs,--> tic, toe, tput, tset</seg>
+        ncursesw5-config, reset (tset へのリンク), tabs, tic, toe, tput, tset</seg>
         <seg>libcursesw.{a,so} (libncursesw.{a,so} へのシンボリックリンクおよびリンカースクリプト),
         libformw.{a,so}, libmenuw.{a,so}, libncurses++w.a, libncursesw.{a,so},
-        libpanelw.{a,so}
-        これらに加えてワイド文字対応ではない通常のライブラリで、その名称から "w" を取り除いたもの。
-        </seg>
+        libpanelw.{a,so}, これらに加えてワイド文字対応ではない通常のライブラリで、その名称から "w" を取り除いたもの。</seg>
         <seg>/usr/share/tabset, /usr/share/terminfo</seg>
 @z
 

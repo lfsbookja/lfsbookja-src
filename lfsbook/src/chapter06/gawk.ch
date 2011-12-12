@@ -70,12 +70,12 @@
 @z
 
 @x
-        <seg>awk (link to gawk), gawk, gawk-&gawk-version;, grcat, igawk, pgawk,
-        pgawk-&gawk-version;, and pwcat</seg>
+        <seg>awk (link to gawk), dgawk, gawk, gawk-&gawk-version;, grcat, igawk,
+        pgawk, pgawk-&gawk-version;, and pwcat</seg>
         <seg>/usr/lib/awk, /usr/share/awk</seg>
 @y
-        <seg>awk (gawk へのリンク), gawk, gawk-&gawk-version;, grcat, igawk, pgawk,
-        pgawk-&gawk-version;, pwcat</seg>
+        <seg>awk (gawk へのリンク), dgawk, gawk, gawk-&gawk-version;, grcat, igawk,
+        pgawk, pgawk-&gawk-version;, pwcat</seg>
         <seg>/usr/lib/awk, /usr/share/awk</seg>
 @z
 

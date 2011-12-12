@@ -557,7 +557,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, mtrace, nscd, pcprofiledump,
-        pt_chown, rpcgen, rpcinfo, sln, sprof, tzselect, xtrace,
+        pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -567,10 +567,18 @@ minor timing issues が何を意味するのか不明であった。
         libnss_nisplus.so, libpcprofile.so, libpthread.{a,so},
         libpthread_nonshared.a, libresolv.{a,so}, librpcsvc.a, librt.{a,so},
         libthread_db.so, and libutil.{a,so}</seg>
+        <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,
+        /usr/include/net, /usr/include/netash, /usr/include/netatalk,
+        /usr/include/netax25, /usr/include/neteconet, /usr/include/netinet,
+        /usr/include/netipx, /usr/include/netiucv, /usr/include/netpacket,
+        /usr/include/netrom, /usr/include/netrose, /usr/include/nfs,
+        /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
+        /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
+        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo</seg>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, mtrace, nscd, pcprofiledump,
-        pt_chown, rpcgen, rpcinfo, sln, sprof, tzselect, xtrace,
+        pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -580,6 +588,14 @@ minor timing issues が何を意味するのか不明であった。
         libnss_nisplus.so, libpcprofile.so, libpthread.{a,so},
         libpthread_nonshared.a, libresolv.{a,so}, librpcsvc.a, librt.{a,so},
         libthread_db.so, libutil.{a,so}</seg>
+        <seg>/usr/include/arpa, /usr/include/bits, /usr/include/gnu,
+        /usr/include/net, /usr/include/netash, /usr/include/netatalk,
+        /usr/include/netax25, /usr/include/neteconet, /usr/include/netinet,
+        /usr/include/netipx, /usr/include/netiucv, /usr/include/netpacket,
+        /usr/include/netrom, /usr/include/netrose, /usr/include/nfs,
+        /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
+        /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
+        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo</seg>
 @z
 
 @x
@@ -718,22 +734,22 @@ PC プロファイリングによって生成される情報をダンプしま�
 </para>
 @z
 
-@x rpcgen
-          <para>Generates C code to implement the Remote Procedure Call (RPC)
-          protocol</para>
-@y
-<para>
-リモートプロシージャコール (Remote Procedure Call; RPC) を実装するための C 言語コードを生成します。
-</para>
-@z
-
-@x rpcinfo
-          <para>Makes an RPC call to an RPC server</para>
-@y
-<para>
-RPC サーバーに対しての RPC コールを行います。
-</para>
-@z
+% @x rpcgen
+%           <para>Generates C code to implement the Remote Procedure Call (RPC)
+%           protocol</para>
+% @y
+% <para>
+% リモートプロシージャコール (Remote Procedure Call; RPC) を実装するための C 言語コードを生成します。
+% </para>
+% @z
+% 
+% @x rpcinfo
+%           <para>Makes an RPC call to an RPC server</para>
+% @y
+% <para>
+% RPC サーバーに対しての RPC コールを行います。
+% </para>
+% @z
 
 @x sln
           <para>A statically linked <command>ln</command> program</para>

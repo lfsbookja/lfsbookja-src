@@ -174,13 +174,15 @@
 @z
 
 @x
-        <seg>addr2line, ar, as, c++filt, gprof, ld, nm, objcopy, objdump,
-        ranlib, readelf, size, strings, and strip</seg>
+        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, nm,
+        objcopy, objdump, ranlib, readelf, size, strings, and strip</seg>
         <seg>libiberty.a, libbfd.{a,so}, and libopcodes.{a,so}</seg>
+        <seg>/usr/lib/ldscripts</seg>
 @y
-        <seg>addr2line, ar, as, c++filt, gprof, ld, nm, objcopy, objdump,
-        ranlib, readelf, size, strings, strip</seg>
+        <seg>addr2line, ar, as, c++filt, elfedit, gprof, ld, ld.bfd, nm,
+        objcopy, objdump, ranlib, readelf, size, strings, strip</seg>
         <seg>libiberty.a, libbfd.{a,so}, libopcodes.{a,so}</seg>
+        <seg>/usr/lib/ldscripts</seg>
 @z
 
 @x
