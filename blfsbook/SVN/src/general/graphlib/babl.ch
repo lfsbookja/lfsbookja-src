@@ -77,6 +77,14 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended"><xref linkend="pkgconfig"/></para>
+@y
+    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <para role="recommended"><xref linkend="pkgconfig"/></para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gobject-introspection"/>
     <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink></para>
@@ -141,6 +149,19 @@
     <parameter>install -v -m755 -d /usr/share/gtk-doc/html/babl/graphics</parameter>:
     このコマンドとそれに続くコマンドは、ライブラリの HTML ドキュメントをインストールするものであり、多くの gtk パッケージにて、プログラマー向けのドキュメントが配置されるディレクトリ <filename
     class="directory">/usr/share/gtk-doc/html</filename> にインストールするものです。
+    </para>
+@z
+
+@x
+    <para><option>--with-vala</option>: Use <command>vapigen</command>
+    so that <application>vala</application> programs can use this application -
+    not enabled by default, may cause breakage when building
+    <application>gegl</application>.</para>
+@y
+    <para>
+    <option>--with-vala</option>:
+    <application>vala</application> プログラムがこのアプリケーションを利用できるようにします。
+    デフォルトでは利用不可となっているため、この指定がないと <application>gegl</application> のビルドに失敗することがあります。
     </para>
 @z
 

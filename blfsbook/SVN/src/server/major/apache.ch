@@ -462,12 +462,12 @@
 @x
       <para>If you want the <application>Apache</application> server to
       start automatically when the system is booted, install the
-      <filename>/etc/rc.d/init.d/apache</filename> init script included
+      <filename>/etc/rc.d/init.d/httpd</filename> init script included
       in the <xref linkend="bootscripts"/> package.</para>
 @y
       <para>
       システム起動時に <application>Apache</application> サーバーを自動で起動する場合は、<xref
-      linkend="bootscripts"/> パッケージに含まれる、初期起動スクリプト <filename>/etc/rc.d/init.d/apache</filename> をインストールします。
+      linkend="bootscripts"/> パッケージに含まれる、初期起動スクリプト <filename>/etc/rc.d/init.d/httpd</filename> をインストールします。
       </para>
 @z
 

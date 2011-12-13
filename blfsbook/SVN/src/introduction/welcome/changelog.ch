@@ -64,12 +64,42 @@
       <para>December 12th, 2011</para>
       <itemizedlist>
         <listitem>
-          <para>[abenton] - Updated Webkitgtk to 1.6.1.</para>
+          <para>[bdubbs] - Updated to fluxbox-1.3.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to inlib2-1.4.5.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to sawfish-1.6.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to audiofile-0.3.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Updated to alsa-lib-1.0.24.1.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Updated to Webkitgtk to 1.6.1.</para>
         </listitem>
       </itemizedlist>
 @y
       <para>2011/12/12</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - fluxbox-1.3.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - inlib2-1.4.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - sawfish-1.6.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - audiofile-0.3.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - alsa-lib-1.0.24.1 へのアップデート。</para>
+        </listitem>
         <listitem>
           <para>[abenton] - Webkitgtk 1.6.1 へのアップデート。</para>
         </listitem>

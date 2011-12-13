@@ -107,12 +107,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://pulseaudio.org/">PulseAudio</ulink>
+      <xref linkend='pulseaudio'/>
     </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://pulseaudio.org/">PulseAudio</ulink>
+      <xref linkend='pulseaudio'/>
     </para>
 @z
 
