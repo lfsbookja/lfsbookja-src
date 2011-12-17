@@ -20,13 +20,11 @@
     compression percentage than with the traditional <command>gzip</command> or
     <command>bzip2</command> commands.</para>
 @y
-<para>
-Xz パッケージは、ファイルの圧縮、伸張 (解凍) を行うプログラムを提供します。
-これは lzma フォーマットおよび新しい xz 圧縮フォーマットを取り扱います。
-<command>xz</command>
-コマンドによりテキストファイルを圧縮すると、従来の <command>gzip</command> コマンドや
-<command>bzip2</command> コマンドに比べて、高い圧縮率を実現できます。
-</para>
+    <para>
+    Xz パッケージは、ファイルの圧縮、伸張 (解凍) を行うプログラムを提供します。
+    これは lzma フォーマットおよび新しい xz 圧縮フォーマットを取り扱います。
+    <command>xz</command> コマンドによりテキストファイルを圧縮すると、従来の <command>gzip</command> コマンドや <command>bzip2</command> コマンドに比べて、高い圧縮率を実現できます。
+    </para>
 @z
 
 @x
@@ -87,23 +85,14 @@ Xz パッケージは、ファイルの圧縮、伸張 (解凍) を行うプロ�
         <seg>/usr/include/lzma and /usr/share/doc/xz-&xz-version;</seg>
 @y
         <seg>lzcat (xz へのリンク), lzcmp (xzdiff へのリンク), lzdiff (xzdiff へのリンク),
-        bzdiff, lzegrep (xzgrep へのリンク), lzfgrep (xzgrep へのリンク),
-        lz (xz へのリンク), lzmadec, lzmainfo, lzmore (xzmore へのリンク),
-        unlzma (xz へのリンク), xzcat (xz へのリンク), xzcmp (xzdiff へのリンク),
-        xzdec, xzdiff, xzegrep (xzgrep へのリンク), xzfgrep (xzgrep へのリンク),
-        xzgrep, xzless, xzmore</seg>
-        <seg>liblzma.{a,so}</seg>
-        <seg>/usr/include/lzma and /usr/share/doc/xz-&xz-version;</seg>
-
-        <seg>lzcat (xz へのリンク), lzcmp (xzdiff へのリンク), lzdiff
-        (xzdiff へのリンク), lzegrep (xzgrep へのリンク), lzfgrep (xzgrep へのリンク),
+        lzegrep (xzgrep へのリンク), lzfgrep (xzgrep へのリンク),
         lzgrep (xzgrep へのリンク), lzless (xzless へのリンク), lzma (xz へのリンク),
         lzmadec, lzmainfo, lzmore (xzmore へのリンク),
-        unlzma (xz へのリンク), unxz, (link to xz へのリンク), xz, xzcat (xz へのリンク),
+        unlzma (xz へのリンク), unxz, (xz へのリンク), xz, xzcat (xz へのリンク),
         xzcmp (xzdiff へのリンク), xzdec, xzdiff, xzegrep (xzgrep へのリンク),
         xzfgrep (xzgrep へのリンク), xzgrep, xzless, xzmore</seg>
         <seg>liblzma.{a,so}</seg>
-        <seg>/usr/include/lzma and /usr/share/doc/xz-&xz-version;</seg>
+        <seg>/usr/include/lzma, /usr/share/doc/xz-&xz-version;</seg>
 @z
 
 @x
@@ -254,7 +243,7 @@ Xz パッケージは、ファイルの圧縮、伸張 (解凍) を行うプロ�
           <para>The library implementing lossless, block-sorting data
           compression, using the Lempel-Ziv-Markov chain algorithm</para>
 @y
-<para>
-Lempel-Ziv-Markov のチェーンアルゴリズムを利用し、損失なくブロックソートによりデータ圧縮を行う機能を提供するライブラリです。
-</para>
+          <para>
+          Lempel-Ziv-Markov のチェーンアルゴリズムを利用し、損失なくブロックソートによりデータ圧縮を行う機能を提供するライブラリです。
+          </para>
 @z

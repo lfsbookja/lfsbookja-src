@@ -54,6 +54,18 @@
 -->
 
     <listitem>
+      <para>2011-12-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/xz.ch:
+          訳出書式誤りの訂正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-12-11</para>
       <itemizedlist>
         <listitem>
