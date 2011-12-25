@@ -301,6 +301,14 @@
           </para>
 @z
 
+@x json_pp
+          <para>Converts data between certain input and output formats</para>
+@y
+          <para>
+          特定の入出力フォーマット間でデータを変換します。
+          </para>
+@z
+
 @x libnetcfg
           <para>Can be used to configure the
           <filename class="libraryfile">libnet</filename> Perl module</para>
@@ -490,6 +498,15 @@
 @y
           <para>
           アーカイブの抽出前後を比較する Perl プログラム。
+          </para>
+@z
+
+@x ptargrep
+          <para>A Perl program that applies pattern matching to the contents
+          of files in a tar archive</para>
+@y
+          <para>
+          tar アーカイブ内のファイルに対してパターンマッチングを適用するための Perl プログラム。
           </para>
 @z
 

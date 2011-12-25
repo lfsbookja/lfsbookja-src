@@ -91,14 +91,20 @@
           <para><command>gawk</command> へのリンク。</para>
 @z
 
+@x dgawk
+          <para>An awk debugger</para>
+@y
+          <para>Awk デバッガー。</para>
+@z
+
 @x
           <para>A program for manipulating text files; it is the GNU
           implementation of <command>awk</command></para>
 @y
-<para>
-テキストファイルを操作するプログラム。
-これは <command>awk</command> の GNU インプリメンテーションです。
-</para>
+          <para>
+          テキストファイルを操作するプログラム。
+          これは <command>awk</command> の GNU インプリメンテーションです。
+          </para>
 @z
 
 @x
@@ -110,28 +116,25 @@
 @x
           <para>Dumps the group database <filename>/etc/group</filename></para>
 @y
-<para>
-グループデータベースファイル
-<filename>/etc/group</filename>
-をダンプします。
-</para>
+          <para>
+          グループデータベースファイル <filename>/etc/group</filename> をダンプします。
+          </para>
 @z
 
 @x
           <para>Gives <command>gawk</command> the ability to include files</para>
 @y
-<para>
-<command>gawk</command>
-に対してファイルをインクルードする機能を付与します。
-</para>
+          <para>
+          <command>gawk</command> に対してファイルをインクルードする機能を付与します。
+          </para>
 @z
 
 @x
           <para>The profiling version of <command>gawk</command></para>
 @y
-<para>
-<command>gawk</command> のプロファイル版。
-</para>
+          <para>
+          <command>gawk</command> のプロファイル版。
+          </para>
 @z
 
 @x
@@ -143,10 +146,7 @@
 @x
           <para>Dumps the password database <filename>/etc/passwd</filename></para>
 @y
-<para>
-パスワードデータベースファイル
-<filename>/etc/passwd</filename>
-をダンプします。
-</para>
+          <para>
+          パスワードデータベースファイル <filename>/etc/passwd</filename> をダンプします。
+          </para>
 @z
-

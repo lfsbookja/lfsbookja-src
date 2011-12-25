@@ -81,14 +81,18 @@
 @z
 
 @x
+      <segtitle>Installed program</segtitle>
       <segtitle>Installed libraries</segtitle>
 @y
+      <segtitle>インストールプログラム</segtitle>
       <segtitle>インストールライブラリ</segtitle>
 @z
 
 @x
+        <seg>testgdbm</seg>
         <seg>libgdbm.{so,a} and libgdbm_compat.{so,a}</seg>
 @y
+        <seg>testgdbm</seg>
         <seg>libgdbm.{so,a}, libgdbm_compat.{so,a}</seg>
 @z
 
@@ -98,7 +102,15 @@
       <bridgehead renderas="sect3">概略説明</bridgehead>
 @z
 
-@x
+@x testgdbm
+          <para>Tests and modifies a GDBM database</para>
+@y
+          <para>
+          GDBM データベースをテストし修復します。
+          </para>
+@z
+
+@x libgdbm
           <para>Contains functions to manipulate a hashed database</para>
 @y
           <para>

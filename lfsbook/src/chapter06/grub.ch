@@ -51,25 +51,25 @@ GRUB をコンパイルするための準備をします。
     <para>The --disable switches minimize what is built by disabling features
     and testing programs not really needed for LFS.</para>
 @y
-<para>
---disable オプションは、LFS で本当に必要となる機能やテストプログラムだけを生成するもので、ビルド結果を最小限に抑えます。
-</para>
+    <para>
+    --disable オプションは、LFS で本当に必要となる機能やテストプログラムだけを生成するもので、ビルド結果を最小限に抑えます。
+    </para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-<para>
-パッケージをコンパイルします。
-</para>
+    <para>
+    パッケージをコンパイルします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-このパッケージにテストスイートはありません。
-</para>
+    <para>
+    このパッケージにテストスイートはありません。
+    </para>
 @z
 
 @x
@@ -82,9 +82,9 @@ GRUB をコンパイルするための準備をします。
   <para>Using GRUB to make your LFS system bootable will be discussed in 
   <xref linkend="ch-bootable-grub"/>.</para>
 @y
-<para>
-GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/> で説明しています。
-</para>
+    <para>
+    GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/> で説明しています。
+    </para>
 @z
 
 @x
@@ -126,82 +126,108 @@ GRUB を使ってシステムのブート起動設定を行う方法について
 @x grub-bin2h
           <para>Converts a binary file to a C header</para>
 @y
-<para>
-バイナリファイルを C ヘッダーファイルに変換します。
-</para>
+          <para>
+          バイナリファイルを C ヘッダーファイルに変換します。
+          </para>
 @z
 
 @x grub-editenv
           <para>A tool to edit the environment block</para>
 @y
-<para>
-環境ブロック (environment block) を編集するツール。
-</para>
+          <para>
+          環境ブロック (environment block) を編集するツール。
+          </para>
+@z
+
+@x grub-fstest
+          <para>Tool to debug the filesystem driver</para>
+@y
+          <para>
+          ファイルシステムドライバーをデバッグするツール。
+          </para>
 @z
 
 @x grub-install
           <para>Install GRUB on your drive</para>
 @y
-<para>
-指定したドライブに GRUB をインストールします。
-</para>
+          <para>
+          指定したドライブに GRUB をインストールします。
+          </para>
+@z
+
+@x grub-kbdcomp
+          <para>Script that converts an xkb layout into one recognized by
+          GRUB</para>
+@y
+          <para>
+          xkb レイアウトを GRUB が認識できる他の書式に変換するスクリプト。
+          </para>
+@z
+
+@x grub-menulst2cfg
+          <para>Converts a GRUB Legacy <filename>menu.lst</filename>
+          into a <filename>grub.cfg</filename> for use with GRUB 2</para>
+@y
+          <para>
+          GRUB Legacy の <filename>menu.lst</filename>を GRUB 2 にて利用される <filename>grub.cfg</filename> に変換します。
+          </para>
 @z
 
 @x grub-mkconfig
           <para>Generate a grub config file</para>
 @y
-<para>
-GRUB の設定ファイルを生成します。
-</para>
+          <para>
+          GRUB の設定ファイルを生成します。
+          </para>
 @z
 
 @x grub-mkdevicemap
           <para>Generate a device map file automatically</para>
 @y
-<para>
-デバイスマップファイルを自動的に生成します。
-</para>
+          <para>
+          デバイスマップファイルを自動的に生成します。
+          </para>
 @z
 
-@x grub-mkelfimage
+@x grub-mkimage
           <para>Make a bootable image of GRUB</para>
 @y
-<para>
-GRUB のブートイメージ (bootable image) を生成します。
-</para>
+          <para>
+          GRUB のブートイメージ (bootable image) を生成します。
+          </para>
 @z
 
-% @x grub-mkimage
-%           <para>Make a bootable image of GRUB</para>
-% @y
-% <para>
-% GRUB のブートイメージを生成します。
-% </para>
-% @z
+@x grub-mklayout
+          <para>Generates a GRUB keyboard layout file</para>
+@y
+          <para>
+          GRUB のキーボードレイアウトファイルを生成します。
+          </para>
+@z
 
-% @x grub-mkisofs
-%           <para>Creates a bootable ISO image</para>
-% @y
-% <para>
-% ブータブルな ISO イメージを生成します。
-% </para>
-% @z
+@x grub-mknetdir
+          <para>Prepares a GRUB netboot directory</para>
+@y
+          <para>
+          GRUB のネットブートディレクトリを生成します。
+          </para>
+@z
 
 @x grub-mkpasswd-pbkdf2
           <para>Generates an encrypted PBKDF2 password for use in the boot
           menu</para>
 @y
-<para>
-ブートメニューにて利用する、PBKDF2 により暗号化されたパスワードを生成します。
-</para>
+          <para>
+          ブートメニューにて利用する、PBKDF2 により暗号化されたパスワードを生成します。
+          </para>
 @z
 
 @x grub-mkrelpath
           <para>Makes a system pathname relative to its root</para>
 @y
-<para>
-システムのパスをルートからの相対パスとします。
-</para>
+          <para>
+          システムのパスをルートからの相対パスとします。
+          </para>
 @z
 
 @x grub-mkrescue
@@ -213,40 +239,40 @@ GRUB のブートイメージ (bootable image) を生成します。
 @x grub-probe
           <para>Probe device information for a given path or device</para>
 @y
-<para>
-指定されたパスやデバイスに対するデバイス情報を検証 (probe) します。
-</para>
+          <para>
+          指定されたパスやデバイスに対するデバイス情報を検証 (probe) します。
+          </para>
 @z
 
 @x grub-reboot
           <para>Sets the default boot entry for GRUB for the next boot only</para>
 @y
-<para>
-デフォルトのブートメニューを設定します。
-これは次にブートした時だけ有効なものです。
-</para>
+          <para>
+          デフォルトのブートメニューを設定します。
+          これは次にブートした時だけ有効なものです。
+          </para>
 @z
 
 @x grub-script-check
           <para>Checks GRUB configuration script for syntax errors</para>
 @y
-<para>
-GRUB の設定スクリプトにおける文法をチェックします。
-</para>
+          <para>
+          GRUB の設定スクリプトにおける文法をチェックします。
+          </para>
 @z
 
 @x grub-set-default
           <para>Sets the default boot entry for GRUB</para>
 @y
-<para>
-デフォルトのブートメニューを設定します。
-</para>
+          <para>
+          デフォルトのブートメニューを設定します。
+          </para>
 @z
 
 @x grub-setup
           <para>Set up images to boot from a device</para>
 @y
-<para>
-デバイスからのブートを行うためにイメージファイルをセットアップします。
-</para>
+          <para>
+          デバイスからのブートを行うためにイメージファイルをセットアップします。
+          </para>
 @z

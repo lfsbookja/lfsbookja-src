@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2011-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Automake-1.11.2. Fixes
+          <ulink url="&lfs-ticket-root;2986">#2986</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.1.6. Fixes
+          <ulink url="&lfs-ticket-root;2985">#2985</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Correct permissions on /run/shm. Fixes
+          <ulink url="&lfs-ticket-root;2984">#2984</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add upstream patches for MPFR. Fixes
+          <ulink url="&lfs-ticket-root;2983">#2983</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-12-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Automake-1.11.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2986">#2986</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.1.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2985">#2985</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - /run/shm に対するパーミッションを修正。 
+          <ulink url="&lfs-ticket-root;2984">#2984</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPFR に対するアップストリーム提供のパッチを追加。
+          <ulink url="&lfs-ticket-root;2983">#2983</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-12-10</para>
       <itemizedlist>
         <listitem>

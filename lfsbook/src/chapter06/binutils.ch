@@ -217,8 +217,7 @@
           into object files</para>
 @y
           <para>
-          <command>gcc</command>
-          の出力結果をアセンブルして、オブジェクトファイルとして生成するアセンブラー。
+          <command>gcc</command> の出力結果をアセンブルして、オブジェクトファイルとして生成するアセンブラー。
           </para>
 @z
 
@@ -228,6 +227,14 @@
 @y
           <para>
           リンカーから呼び出されるもので C++ と Java のシンボルを複合 (demangle) し、オーバーロード関数が破壊されることを回避します。
+          </para>
+@z
+
+@x elfedit
+          <para>Updates the ELF header of ELF files</para>
+@y
+          <para>
+          ELF ファイルの ELF ヘッダーを更新します。
           </para>
 @z
 
@@ -247,6 +254,14 @@
           <para>
           複数のオブジェクトファイルやアーカイブファイルから、一つのファイルを生成するリンカー。
           データの再配置やシンボル参照情報の結合を行います。
+          </para>
+@z
+
+@x ld.bfd
+          <para>Hard link to <command>ld</command></para>
+@y
+          <para>
+          <command>ld</command> へのハードリンク。
           </para>
 @z
 

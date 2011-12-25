@@ -396,12 +396,30 @@
           </para>
 @z
 
+@x
+          <para>GCC's Link Time Optimization (LTO) plugin allows GCC to perform
+          optimizations across compilation units.</para>
+@y
+          <para>
+          GCC のリンク時における最適化 (Link Time Optimization; LTO) プラグイン。
+          コンパイルユニット間での最適化を実現します。
+          </para>
+@z
+
 @x libmudflap
           <para>Contains routines that support GCC's bounds checking
           functionality</para>
 @y
           <para>
           GCC の配列境界チェック (bounds checking) 機能をサポートするルーチンを提供します。
+          </para>
+@z
+
+@x libquadmath
+          <para>GCC Quad Precision Math Library API</para>
+@y
+          <para>
+          GCC の4倍精度数値演算 (Quad Precision Math) ライブラリ API
           </para>
 @z
 

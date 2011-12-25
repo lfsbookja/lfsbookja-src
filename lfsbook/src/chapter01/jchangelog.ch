@@ -54,6 +54,30 @@
 -->
 
     <listitem>
+      <para>2011-12-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter06/{binutils.ch, gawk.ch, gcc.ch, gdbm.ch, glibc.ch, grub.ch, perl.ch}:
+          訳出漏れ修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2011-12-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/patches.ch, src/chapter06/mpfr.ch:
+          SVN-20111223, r9695 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2011-12-17</para>
       <itemizedlist>
         <listitem>
