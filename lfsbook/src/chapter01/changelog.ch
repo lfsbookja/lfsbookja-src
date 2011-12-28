@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2011-12-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Fix version-check.sh's Glibc version detection on 64-bit Debian hosts.
+          Thanks to Pierre Labastie for the report and fix.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2011-12-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - 64ビットの Debian にて、Glibc のバージョンを適切に検出できるように version-check.sh を修正。
+          報告と修正をあげてくれた Pierre Labastie に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-12-22</para>
       <itemizedlist>
         <listitem>
