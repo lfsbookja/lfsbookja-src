@@ -21,22 +21,21 @@
 
 @x
   <para>Now that you have finished the book, do you want to be counted as an
-  LFS user? Head over to <ulink url="&lfs-root;cgi-bin/lfscounter.cgi"/> and
+  LFS user? Head over to <ulink url="&lfs-root;cgi-bin/lfscounter.php"/> and
   register as an LFS user by entering your name and the first LFS version you
   have used.</para>
 @y
-<para>
-これにより本書の作業は終了です。
-LFS ユーザー登録を行ってカウンターを取得しますか？
-以下のページ <ulink url="&lfs-root;cgi-bin/lfscounter.cgi"/>
-にて氏名と LFS バージョンを登録して下さい。
-</para>
+  <para>
+  これにより本書の作業は終了です。
+  LFS ユーザー登録を行ってカウンターを取得しますか？ 以下のページ <ulink
+  url="&lfs-root;cgi-bin/lfscounter.php"/> にて、初めて構築した LFS のバージョンと氏名を登録して下さい。
+  </para>
 @z
 
 @x
   <para>Let's reboot into LFS now.</para>
 @y
-<para>
-それではシステムの再起動を行ないましょう。
-</para>
+  <para>
+  それではシステムの再起動を行ないましょう。
+  </para>
 @z

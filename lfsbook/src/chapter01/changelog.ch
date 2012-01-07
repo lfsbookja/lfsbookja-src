@@ -48,10 +48,36 @@
 @z
 
 @x
+      <para>2012-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change to simpler command for version-check.sh's 
+          Glibc version detection on all platforms.
+          Thanks to Pierre Labastie for the report and fix.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Change to php script for 'get counted'.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-01-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - version-check.sh において、すべてのプラットフォーム向けに Glibc バージョンの確認を簡素化。
+          報告と修正をあげてくれた Pierre Labastie に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ユーザー登録のスクリプト ('get counted') を php スクリプトに変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2011-12-28</para>
       <itemizedlist>
         <listitem>
-          <para>[matthew] - Fix version-check.sh's Glibc version detection on 64-bit Debian hosts.
+          <para>[matthew] - Fix version-check.sh's Glibc version detection 
+          on 64-bit Debian hosts.
           Thanks to Pierre Labastie for the report and fix.</para>
         </listitem>
       </itemizedlist>
