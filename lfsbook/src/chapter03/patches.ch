@@ -69,19 +69,19 @@
       </listitem>
 @z
 
-@x
-      <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
-      </listitem>
-@z
+% @x
+%       <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
+%       <listitem>
+%         <para>Download: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
+%         <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
+%       </listitem>
+% @y
+%       <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
+%       <listitem>
+%         <para>ダウンロード: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
+%         <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
+%       </listitem>
+% @z
 
 @x
       <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>

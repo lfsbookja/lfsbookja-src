@@ -63,13 +63,13 @@
       </para>
 @z
 
-@x
-    <para>The following patch fixes a bug in the testsuite:</para>
-@y
-    <para>
-    以下のパッチによりテストスイートのバグを修正します。
-    </para>
-@z
+% @x
+%     <para>The following patch fixes a bug in the testsuite:</para>
+% @y
+%     <para>
+%     以下のパッチによりテストスイートのバグを修正します。
+%     </para>
+% @z
 
 @x
     <para>Now prepare Coreutils for compilation:</para>
@@ -208,22 +208,24 @@
         env, expand, expr, factor, false, fmt, fold, groups, head, hostid,
         id, install, join, link, ln, logname, ls, md5sum, mkdir, mkfifo, mknod,
         mktemp, mv, nice, nl, nohup, nproc, od, paste, pathchk, pinky, pr,
-        printenv, printf, ptx, pwd, readlink, rm, rmdir, runcon, seq, sha1sum,
-        sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep, sort,
-        split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test, timeout,
-        touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq, unlink,
-        users, vdir, wc, who, whoami, and yes</seg>
+        printenv, printf, ptx, pwd, readlink, realpath, rm, rmdir, runcon, seq,
+        sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep,        sort, split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test,
+        timeout, touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq,
+        unlink, users, vdir, wc, who, whoami, and yes</seg>
+        <seg>libstdbuf.so</seg>
+        <seg>/usr/libexec/coreutils</seg>
 @y
         <seg>base64, basename, cat, chcon, chgrp, chmod, chown, chroot, cksum,
         comm, cp, csplit, cut, date, dd, df, dir, dircolors, dirname, du, echo,
         env, expand, expr, factor, false, fmt, fold, groups, head, hostid,
         id, install, join, link, ln, logname, ls, md5sum, mkdir, mkfifo, mknod,
         mktemp, mv, nice, nl, nohup, nproc, od, paste, pathchk, pinky, pr,
-        printenv, printf, ptx, pwd, readlink, rm, rmdir, runcon, seq, sha1sum,
-        sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep, sort,
-        split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test, timeout,
-        touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq, unlink,
-        users, vdir, wc, who, whoami, yes</seg>
+        printenv, printf, ptx, pwd, readlink, realpath, rm, rmdir, runcon, seq,
+        sha1sum, sha224sum, sha256sum, sha384sum, sha512sum, shred, shuf, sleep,        sort, split, stat, stdbuf, stty, sum, sync, tac, tail, tee, test,
+        timeout, touch, tr, true, truncate, tsort, tty, uname, unexpand, uniq,
+        unlink, users, vdir, wc, who, whoami, yes</seg>
+        <seg>libstdbuf.so</seg>
+        <seg>/usr/libexec/coreutils</seg>
 @z
 
 @x
@@ -742,6 +744,14 @@
 @y
           <para>
           指定されたシンボリックリンクの対象を表示します。
+          </para>
+@z
+
+@x realpath
+          <para>Prints the resolved path</para>
+@y
+          <para>
+          解析されたパスを表示します。
           </para>
 @z
 

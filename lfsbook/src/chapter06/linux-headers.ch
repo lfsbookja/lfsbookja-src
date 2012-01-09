@@ -32,8 +32,8 @@
 @z
 
 @x
-    <para>The Linux API Headers (in linux-&linux-version;.tar.gz) expose the kernel's 
-    API for use by Glibc.</para>
+    <para>The Linux API Headers (in linux-&linux-version;.tar.xz) expose the
+    kernel's API for use by Glibc.</para>
 @y
     <para>
     Linux API ヘッダー (linux-&linux-version;.tar.gz 内) は Glibc が利用するカーネル API を提供します。

@@ -48,6 +48,74 @@
 @z
 
 @x
+      <para>2012-01-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Prevent Libnl from installing static libraries.
+          Thanks to Ken Moffat for the report.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Coreutils-8.15. Fixes
+          <ulink url="&lfs-ticket-root;2996">#2996</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.2.0, and add its new
+          dependency, libnl-2.0. Fixes
+          <ulink url="&lfs-ticket-root;2995">#2995</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.2. Fixes
+          <ulink url="&lfs-ticket-root;2993">#2993</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Inetutils-1.9.1. Fixes
+          <ulink url="&lfs-ticket-root;2992">#2992</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Fix typo in Linux tarball name. Fixes
+          <ulink url="&lfs-ticket-root;2991">#2991</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to File-5.10. Fixes
+          <ulink url="&lfs-ticket-root;2989">#2989</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-01-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Libnl にてスタティックライブラリを生成しないことに。
+          報告をあげてくれた Ken Moffat に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils-8.15 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2996">#2996</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.2.0 へのアップグレード。
+          またその依存パッケージである libnl-2.0 を新たに追加。
+          <ulink url="&lfs-ticket-root;2995">#2995</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2993">#2993</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Inetutils-1.9.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2992">#2992</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux tarball の名称誤りを訂正。
+          <ulink url="&lfs-ticket-root;2991">#2991</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - File-5.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2989">#2989</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-01-06</para>
       <itemizedlist>
         <listitem>

@@ -373,6 +373,16 @@ File パッケージ (&file-version;)
 @z
 
 @x
+        <para>Home page: <ulink url="&libnl-home;"/></para>
+        <para>Download: <ulink url="&libnl-url;"/></para>
+        <para>MD5 sum: <literal>&libnl-md5;</literal></para>
+@y
+        <para>ホームページ: <ulink url="&libnl-home;"/></para>
+        <para>ダウンロード: <ulink url="&libnl-url;"/></para>
+        <para>MD5 sum: <literal>&libnl-md5;</literal></para>
+@z
+
+@x
         <para>Home page: <ulink url="&libpipeline-home;"/></para>
         <para>Download: <ulink url="&libpipeline-url;"/></para>
         <para>MD5 sum: <literal>&libpipeline-md5;</literal></para>

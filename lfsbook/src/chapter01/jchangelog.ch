@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2012-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/{packages.ch, patches.ch},
+          src/chapter06/{coreutils.ch, libnl.ch, linux-headers.ch}:
+          SVN-20120108, <ulink url="&lfs-rev-root;9706">r9706</ulink> 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-01-07</para>
       <itemizedlist>
         <listitem>
