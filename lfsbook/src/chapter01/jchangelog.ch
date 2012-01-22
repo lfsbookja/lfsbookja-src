@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          訳見直しと整形。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           src/chapter03/packages.ch, src/chapter06/iproute2.ch, src/chapter08/{grub.ch, kernel.ch}:
           SVN-20120116, <ulink url="&lfs-rev-root;9710">r9710</ulink> 対応。
           </para>

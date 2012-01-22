@@ -16,7 +16,7 @@
 @x
 <chapter id="chapter-partitioning" xreflabel="Chapter 2">
 @y
-<chapter id="chapter-partitioning" xreflabel="第３章">
+<chapter id="chapter-partitioning" xreflabel="第２章">
 @z
 
 @x

@@ -85,7 +85,7 @@
   purpose is to emphasize important points or items.</para>
 @y
   <para>
-  上の表記は様々な意図で用いています。
+  上の表記はさまざまな意図で用いています。
   特に重要な説明内容やポイントを表します。
   </para>
 @z

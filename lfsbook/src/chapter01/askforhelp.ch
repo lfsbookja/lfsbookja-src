@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date$
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -18,26 +27,23 @@
   following hint will give you some guidance for troubleshooting:
   <ulink url="&hints-root;errors.txt"/>.</para>
 @y
-<para>
-本書に基づく作業の中で問題が発生したり疑問が生まれた場合は
-<ulink url="&faq-root;#generalfaq"/>
-にある FAQ のページを確認してください。
-質問への回答が示されているかもしれません。
-そこに回答が示されていなかったなら、問題の本質部分を見極めてください。
-トラブルシューティングとして以下のヒントが有用かもしれません。
-<ulink url="&hints-root;errors.txt"/>
-</para>
+  <para>
+  本書に基づく作業の中で問題が発生したり疑問が生まれた場合は <ulink
+  url="&faq-root;#generalfaq"/> にある FAQ のページを確認してください。
+  質問への回答が示されているかもしれません。
+  そこに回答が示されていなかったなら、問題の本質部分を見極めてください。
+  トラブルシューティングとして以下のヒントが有用かもしれません。
+  <ulink url="&hints-root;errors.txt"/>
+  </para>
 @z
 
 @x
   <para>If you cannot find your problem listed in the FAQ, search the mailing
   lists at <ulink url="&lfs-root;search.html"/>.</para>
 @y
-<para>
-FAQ では問題解決ができない場合、メーリングリスト
-<ulink url="&lfs-root;search.html"/>
-を検索してください。
-</para>
+  <para>
+  FAQ では問題解決ができない場合、メーリングリスト <ulink url="&lfs-root;search.html"/> を検索してください。
+  </para>
 @z
 
 @x
@@ -51,14 +57,14 @@ FAQ では問題解決ができない場合、メーリングリスト
   support needs. If your searches do not produce a solution, please include
   all relevant information (mentioned below) in your request for help.</para>
 @y
-<para>
-我々のサイトにはメーリングリストやチャットを通じての情報提供を行う LFS コミュニティがあります。
-(詳細は <xref linkend="ch-intro-resources"/> を参照してください。)
-我々は日々数多くのご質問を頂くのですが、たいていの質問は FAQ やメーリングリストを調べてみれば容易に答えが分かるものばかりです。
-したがって我々が最大限の支援を提供できるよう、ある程度の問題はご自身で解決するようにしてください。
-そうして頂くことで、我々はもっと特殊な状況に対するサポートを手厚く行っていくことができるからです。
-いくら調べても解決に至らず、お問い合わせ頂く場合は、以下に示すように十分な情報を提示してください。
-</para>
+  <para>
+  我々のサイトにはメーリングリストやチャットを通じての情報提供を行う LFS コミュニティがあります。
+  (詳細は <xref linkend="ch-intro-resources"/> を参照してください。)
+  我々は日々数多くのご質問を頂くのですが、たいていの質問は FAQ やメーリングリストを調べてみれば容易に答えが分かるものばかりです。
+  したがって我々が最大限の支援を提供できるよう、ある程度の問題はご自身で解決するようにしてください。
+  そうして頂くことで、我々はもっと特殊な状況に対するサポートを手厚く行っていくことができるからです。
+  いくら調べても解決に至らず、お問い合わせ頂く場合は、以下に示すように十分な情報を提示してください。
+  </para>
 @z
 
 @x
@@ -71,9 +77,9 @@ FAQ では問題解決ができない場合、メーリングリスト
     <para>Apart from a brief explanation of the problem being experienced,
     the essential things to include in any request for help are:</para>
 @y
-<para>
-問題が発生し問い合わせをする場合には、以下に示す基本的な情報を含めてください。
-</para>
+    <para>
+    問題が発生し問い合わせをする場合には、以下に示す基本的な情報を含めてください。
+    </para>
 @z
 
 @x
@@ -118,12 +124,12 @@ FAQ では問題解決ができない場合、メーリングリスト
       Being upfront about any changes to the established procedure helps us
       evaluate and determine possible causes of your problem.</para>
 @y
-<para>
-本書の作業手順を逸脱していたとしても、 我々がお手伝い<emphasis>しないわけではありません </emphasis>。
-つまるところ LFS は個人的な趣味によって構築されるものです。
-本書の手順とは異なるやり方を正確に説明してください。
-そうすれば内容の評価、原因究明が容易になります。
-</para>
+      <para>
+      本書の作業手順を逸脱していたとしても、 我々がお手伝い<emphasis>しないわけではありません </emphasis>。
+      つまるところ LFS は個人的な趣味によって構築されるものです。
+      本書の手順とは異なるやり方を正確に説明してください。
+      そうすれば内容の評価、原因究明が容易になります。
+      </para>
 @z
 
 @x
@@ -139,12 +145,11 @@ FAQ では問題解決ができない場合、メーリングリスト
     not printed to the screen. Include the <emphasis>relevant</emphasis> lines
     if you need to ask for help.</para>
 @y
-<para>
-<command>configure</command> スクリプトの実行時に何か問題が発生した時は
-<filename>config.log</filename> ファイルを確認してみてください。
-<command>configure</command> スクリプトの実行中に、端末画面に表示されないエラーが、このファイルに出力されているかもしれません。
-問合せを行う際には <emphasis>該当する</emphasis> 行を示してください。
-</para>
+    <para>
+    <command>configure</command> スクリプトの実行時に何か問題が発生した時は <filename>config.log</filename> ファイルを確認してみてください。
+    <command>configure</command> スクリプトの実行中に、端末画面に表示されないエラーが、このファイルに出力されているかもしれません。
+    問合せを行う際には <emphasis>該当する</emphasis> 行を示してください。
+    </para>
 @z
 
 @x
@@ -162,22 +167,21 @@ FAQ では問題解決ができない場合、メーリングリスト
     type of information to include from the screen output from
     <command>make</command>:</para>
 @y
-<para>
-コンパイル時に問題が発生した場合は、端末画面への出力とともに、数々のファイルの内容も問題解決の糸口となります。
-<command>configure</command> スクリプトと <command>make</command>
-コマンドの実行によって端末画面に出力される情報は重要です。
-問い合わせの際には、出力されるすべての情報を示す必要はありませんが、関連する情報は十分に含めてください。
-以下に示すのは <command>make</command> コマンドの実行時に出力される情報を切り出してみた例です。
-</para>
+    <para>
+    コンパイル時に問題が発生した場合は、端末画面への出力とともに、数々のファイルの内容も問題解決の糸口となります。
+    <command>configure</command> スクリプトと <command>make</command> コマンドの実行によって端末画面に出力される情報は重要です。
+    問い合わせの際には、出力されるすべての情報を示す必要はありませんが、関連する情報は十分に含めてください。
+    以下に示すのは <command>make</command> コマンドの実行時に出力される情報を切り出してみた例です。
+    </para>
 @z
 
 @x
     <para>In this case, many people would just include the bottom
     section:</para>
 @y
-<para>
-たいていの方は、上のような場合に終わりの数行しか示してくれません。
-</para>
+    <para>
+    たいていの方は、上のような場合に終わりの数行しか示してくれません。
+    </para>
 @z
 
 @x
@@ -187,15 +191,11 @@ FAQ では問題解決ができない場合、メーリングリスト
     example above, is what should be saved because it includes the command
     that was executed and the associated error message(s).</para>
 @y
-<para>
-問題を解決するにはあまりに不十分な情報です。
-そんな情報だけでは
-「何かがオカしい結果となった」
-ことは分かっても
-「なぜオカしい結果となった」
-のかが分からないからです。
-上に示したのは、十分な情報を提供して頂くべきであることを例示したものであり、実行されたコマンドや関連するエラーメッセージが十分に含んだ例となっています。
-</para>
+    <para>
+    問題を解決するにはあまりに不十分な情報です。
+    そんな情報だけでは「何かがオカしい結果となった」ことは分かっても「なぜオカしい結果となった」のかが分からないからです。
+    上に示したのは、十分な情報を提供して頂くべきであることを例示したものであり、実行されたコマンドや関連するエラーメッセージが十分に含んだ例となっています。
+    </para>
 @z
 
 @x
@@ -205,10 +205,10 @@ FAQ では問題解決ができない場合、メーリングリスト
     follow the hints in this document to increase the likelihood of getting
     the help you need.</para>
 @y
-<para>
-インターネット上に、問い合わせを行う方法を示した優れた文章があります。
-<ulink url="http://catb.org/~esr/faqs/smart-questions.html"/>
-この文章に示される内容やヒントを参考にして、より確実に回答が得られるよう心がけてください。
-</para>
+    <para>
+    インターネット上に、問い合わせを行う方法を示した優れた文章があります。
+    <ulink url="http://catb.org/~esr/faqs/smart-questions.html"/>
+    この文章に示される内容やヒントを参考にして、より確実に回答が得られるよう心がけてください。
+    </para>
 @z
-
+    

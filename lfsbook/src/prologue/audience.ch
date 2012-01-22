@@ -26,9 +26,8 @@ building a Linux system from scratch when you can just download and install
 an existing one?</quote></para>
 @y
 <para>
-本書を読む理由は様々にあると思いますが、よく挙がってくる質問として以下があります。
-<quote>既にある Linux をダウンロードしてインストールすれば良いのに、
-どうして苦労してまで手作業で Linux を構築しようとするのか。</quote>
+本書を読む理由はさまざまにあると思いますが、よく挙がってくる質問として以下があります。
+<quote>既にある Linux をダウンロードしてインストールすれば良いのに、どうして苦労してまで手作業で Linux を構築しようとするのか。</quote>
 </para>
 @z
 
@@ -115,9 +114,8 @@ reasons. As you continue in your LFS experience, you will discover the power
 that information and knowledge truly bring.</para>
 @y
 <para>
-LFS を構築する理由は様々ですから、すべてを列記することはできません。
+LFS を構築する理由はさまざまですから、すべてを列記することはできません。
 学習こそ、理由を突き詰める最大最良の手段です。
 LFS 構築作業の経験を積むことによって、情報や知識を通じてもたらされる意義が十二分に理解できるはずです。
 </para>
 @z
-

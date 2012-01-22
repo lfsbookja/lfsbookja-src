@@ -1,4 +1,10 @@
-% $LastChangedBy$
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
 % $Date$
 
 @x
@@ -20,9 +26,9 @@ quickly become intrigued with the whole concept and philosophy behind
 Linux.</para> 
 @y
 <para>
-私が Linux の学習と理解を深め始めたのは 1998年頃からです。
+私が Linux について理解し学び始めたのは1998年頃からです。
 Linux ディストリビューションのインストールを行ったのはその時が初めてです。
-そして即座に Linux 全般の考え方や原理について興味を抱くようになったのです。
+そして即座に Linux 全般の考え方や原理について興味を抱くようになりました。
 </para> 
 @z
 
@@ -43,8 +49,9 @@ didn't like something, you were free, even encouraged, to change it.</para>
 同じことは Linux ディストリビューションについても言えます。
 この数年の間に数多くのディストリビューションが登場しました。
 あるものは今も存在し、あるものは他のものへと形を変え、そしてあるものは記憶の彼方へ追いやられたりもしました。
-それぞれが利用者の求めに応じて、様々に異なる形でシステムを実現してきたわけです。
-最終ゴールが同じものなのに、それを実現する方法がたくさんあるため、私は一つのディストリビューションにとらわれることが不要だと思い始めました。
+それぞれが利用者の求めに応じて、さまざまに異なる形でシステムを実現してきたわけです。
+最終ゴールが同じものなのに、それを実現する方法がたくさんあるものです。
+したがって私は一つのディストリビューションにとらわれることが不要だと思い始めました。
 Linux が登場する以前であれば、オペレーティングシステムに何か問題があったとしても、他に選択肢はなくそのオペレーティングシステムで満足する以外にありませんでした。
 それはそういうものであって、好むと好まざるは関係がなかったのです。
 それが Linux になって "選ぶ" という考え方が出てきたわけです。
@@ -94,8 +101,7 @@ been to create each piece of software myself. This was the next best
 thing.</para>
 @y
 <para>
-パッケージが相互に依存している状況やコンパイル時にエラーが発生するなどを順に整理していく中で、私はカスタムメイドの
-Linux を作り出したのです。
+パッケージが相互に依存している状況やコンパイル時にエラーが発生するなどを順に整理していく中で、私はカスタムメイドの Linux を作り出したのです。
 この Linux は今日ある他の Linux と比べても、十分な機能を有し十分に扱いやすいものとなっています。
 これは私自身が作り出したものです。
 いろいろなものを自分で組み立てていくのは楽しいものです。
@@ -113,13 +119,9 @@ enhance their (existing) Linux skills. Out of this broadened interest, the
 <emphasis>Linux From Scratch Project</emphasis> was born.</para>
 @y
 <para>
-私の求める目標や作業経験を他の Linux コミュニティの方々とも共有する中で、私の
-Linux への挑戦は絶えることなく続いていくことを実感しています。
-このようなカスタムメイドの Linux
-システムを作り出せば、独自の仕様や要求を満たすことができるのはもちろんですが、さらにはプログラマーやシステム管理者の
-Linux 知識を引き伸ばす絶好の機会となります。
-壮大なこの意欲こそが <emphasis>Linux From Scratch プロジェクト </emphasis>
-誕生の理由なのです。 
+私の求める目標や作業経験を他の Linux コミュニティの方々とも共有する中で、私の Linux への挑戦は絶えることなく続いていくことを実感しています。
+このようなカスタムメイドの Linux システムを作り出せば、独自の仕様や要求を満たすことができるのはもちろんですが、さらにはプログラマーやシステム管理者の Linux 知識を引き伸ばす絶好の機会となります。
+壮大なこの意欲こそが <emphasis>Linux From Scratch プロジェクト </emphasis> 誕生の理由なのです。 
 </para>
 @z
 
@@ -151,4 +153,3 @@ truly your own.</para>
 そしてあなた自身のシステムを持つ楽しみとなりますように。
 </para>
 @z
-

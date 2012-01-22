@@ -49,8 +49,7 @@
 本書は <xref linkend="CC"/> に従います。
 </para>
 <para>
-本書のインストール手順のコマンドを抜き出したものは
-<xref linkend="MIT"/> に従ってください。
+本書のインストール手順のコマンドを抜き出したものは <xref linkend="MIT"/> に従ってください。
 </para>
 @z
 
@@ -58,8 +57,7 @@
     <para><trademark class='registered'>Linux</trademark> is a registered trademark of
     Linus Torvalds.</para>
 @y
-<para>
-<trademark class='registered'>Linux</trademark> は Linus Torvalds の登録商標です。
-</para>
+    <para>
+    <trademark class='registered'>Linux</trademark> は Linus Torvalds の登録商標です。
+    </para>
 @z
-
