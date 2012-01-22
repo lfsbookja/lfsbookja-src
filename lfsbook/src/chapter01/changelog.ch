@@ -48,6 +48,56 @@
 @z
 
 @x
+      <para>2012-01-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change bootscripts to use devtmpfs for /dev.
+          Move mounting of /dev to mountvirtfs and ensure /dev gets
+          placed in /etc/mtab.  Change fstab and kernel configuration
+          sections to reflect these changes.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-01-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /dev に対して devtmpfs を用いるようにブートスクリプトを変更。
+          /dev は moutvirtfs にマウントし /dev を /etc/mtab に配置。
+          fstab とカーネル設定の説明を、これらに合わせて修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add clarification to the GRUB configuration about
+          using a separate boot partition. </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Remove Libnl, as it's not actually required by
+          IPRoute2 after all. Thanks to Markku Pesonen for the pointer to the
+          upstream fix.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - GRUB 設定の説明にて、独自のブートパーティションを用いた場合の説明を明確化。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Libnl を削除。IPRoute2 において本当は不要であった。
+          アップストリームによる修正を指摘してくれた Markku Pesonen に感謝。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-01-08</para>
       <itemizedlist>
         <listitem>

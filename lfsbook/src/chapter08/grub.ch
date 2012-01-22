@@ -236,6 +236,21 @@
 @z
 
 @x
+    <note><para>From <application>GRUB</application>'s perspective, the
+    kernel files are relative to the partition used.  If you
+    used a separate /boot partition, remove /boot from the above
+    <emphasis>linux</emphasis> line.  You will also need to change the
+    <emphasis>set root</emphasis> line to point to the boot partition.
+    </para></note> 
+@y
+    <note><para>
+    <application>GRUB</application> にとってカーネルファイル群は、配置されるパーティションからの相対位置となります。
+    したがって /boot パーティションを別に作成している場合は、上記の <emphasis>linux</emphasis> の行から /boot の記述を取り除いてください。
+    また <emphasis>set root</emphasis> 行でのブートパーティションの指定も、正しく設定する必要があります。
+    </para></note> 
+@z
+
+@x
     <para>GRUB is an extremely powerful program and it provides a tremendous
     number of options for booting from a wide variety of devices, operating
     systems, and partition types.  There are also many options for customization 
@@ -251,18 +266,18 @@
 @z
 
 @x
-    <note><para>There is a command, <application>grub-mkconfig</application> that
+    <caution><para>There is a command, <application>grub-mkconfig</application>, that
     can write a configuration file automatically.  It uses a set of scripts in
     /etc/grub.d/ and will destroy any customizations that you make.  These scripts
     are designed primarily for non-source distributions and are not recommended for 
     LFS.  If you install a commercial Linux distribution, there is a good chance 
-    that this program will be run.  Be sure to back up your grub.cfg file.</para></note> 
+    that this program will be run.  Be sure to back up your grub.cfg file.</para></caution> 
 @y
-    <note><para>
+    <caution><para>
     <application>grub-mkconfig</application> というコマンドは、設定ファイルを自動的に生成するものです。
     このコマンドは /etc/grub.d/ にある一連のスクリプトを利用しており、それまでに設定していた内容は失われることになります。
     その一連のスクリプトは、ソースコードを提供しない Linux ディストリビューションにて用いられるのが主であるため、LFS では推奨されません。
     商用 Linux ディストリビューションをインストールする場合には、それらのスクリプトを実行する、ちょうど良い機会となるはずです。
     こういった状況ですから、grub.cfg のバックアップは忘れずに行うようにしてください。
-    </para></note> 
+    </para></caution> 
 @z

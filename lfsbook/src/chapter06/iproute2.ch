@@ -47,6 +47,15 @@
 @z
 
 @x
+    <para>Remove references to some Libnl headers that are not required by
+    IPRoute2:</para>
+@y
+    <para>
+    IPRoute2 にとって必要のない、Libnl ヘッダーの参照箇所を取り除きます。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>パッケージをコンパイルします。</para>
