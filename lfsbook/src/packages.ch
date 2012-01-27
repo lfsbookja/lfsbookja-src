@@ -124,6 +124,12 @@
 @z
 
 @x
+<!ENTITY kmod-ch6-sbu "less than 0.1 SBU">
+@y
+<!ENTITY kmod-ch6-sbu "0.1 SBU 以下">
+@z
+
+@x
 <!ENTITY less-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY less-ch6-sbu "0.1 SBU 以下">

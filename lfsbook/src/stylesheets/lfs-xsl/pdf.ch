@@ -17,10 +17,16 @@
                 version="1.0">
 @z
 
+% @x
+%   <!--<xsl:output  encoding="UTF-8" indent="yes" />-->
+% @y
+%   <xsl:output  encoding="UTF-8" indent="no" />
+% @z
+
 @x
   <!--<xsl:output  encoding="UTF-8" indent="yes" />-->
 @y
-  <xsl:output  encoding="UTF-8" indent="no" />
+  <xsl:output  encoding="UTF-8" indent="yes" />
 @z
 
 @x
@@ -47,4 +53,5 @@
   <xsl:param name="sans.font.family" select="'Gothic'"/>
   <xsl:param name="monospace.font.family" select="'IPAgothic'"/>
 -->
+  <xsl:param name="body.start.indent" select="10pt"/>
 @z

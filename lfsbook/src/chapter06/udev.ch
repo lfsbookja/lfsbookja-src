@@ -22,11 +22,11 @@
     </para>
 @z
 
-@x
-        <seg>&udev-ch6-du; plus &udev-testfiles-du; for testfiles</seg>
-@y
-        <seg>&udev-ch6-du; 、また testfiles については &udev-testfiles-du;</seg>
-@z
+% @x
+%         <seg>&udev-ch6-du; plus &udev-testfiles-du; for testfiles</seg>
+% @y
+%         <seg>&udev-ch6-du; 、また testfiles については &udev-testfiles-du;</seg>
+% @z
 
 @x
     <title>Installation of Udev</title>
@@ -34,14 +34,14 @@
     <title>Udev のインストール</title>
 @z
 
-@x
-    <para>Optionally remove an unneeded warning message that shows up in this
-    version of udev at boot time.</para>
-@y
-    <para>
-    任意の修正として、ブート時に出力される不要な警告メッセージを取り除きます。
-    </para>
-@z
+% @x
+%     <para>Optionally remove an unneeded warning message that shows up in this
+%     version of udev at boot time.</para>
+% @y
+%     <para>
+%     任意の修正として、ブート時に出力される不要な警告メッセージを取り除きます。
+%     </para>
+% @z
 
 @x
     <para>The udev-config tarball contains LFS-specific files used to configure
@@ -53,16 +53,16 @@
     </para>
 @z
 
-@x
-    <para>The udev-testfiles tarball contains files needed to test udev. The 
-    file expands to an apparent size of about 37MB but the actual disk usage
-    is less than 7MB.</para>
-@y
-    <para>
-    udev-testfiles という Tar アーカイブファイルには Udev のテストに必要なファイルが含まれます。
-    このアーカイブファイル内には、見かけ上 37MB のファイルが含まれますが、実際に要するディスク容量は 7MB 以下です。
-    </para>
-@z
+% @x
+%     <para>The udev-testfiles tarball contains files needed to test udev. The 
+%     file expands to an apparent size of about 37MB but the actual disk usage
+%     is less than 7MB.</para>
+% @y
+%     <para>
+%     udev-testfiles という Tar アーカイブファイルには Udev のテストに必要なファイルが含まれます。
+%     このアーカイブファイル内には、見かけ上 37MB のファイルが含まれますが、実際に要するディスク容量は 7MB 以下です。
+%     </para>
+% @z
 
 @x
     <para>Create some devices and directories that Udev cannot handle due to
@@ -88,28 +88,37 @@
       <title>configure オプションの意味：</title>
 @z
 
-@x --with-rootlibdir=/lib
-          <para>This controls where the <filename
-          class="libraryfile">libudev</filename> library is installed.  The
-          library needs to be in <filename class="directory">/lib</filename>
-          because it's used by Udev at boot time, before <filename
-          class="directory">/usr</filename> might be available, and the default
-          --rootlibdir is <filename class="directory">/usr/lib</filename>.</para>
-@y
-          <para>
-          このオプションは <filename class="libraryfile">libudev</filename> ライブラリのインストール先を指定します。
-          このライブラリは <filename class="directory">/lib</filename> ディレクトリにインストールする必要があります。
-          デフォルトでは --rootlibdir は <filename class="directory">/usr/lib</filename> ディレクトリとなっていますが、<filename
-          class="directory">/usr</filename> ディレクトリが認識できるようになる前の、ブート起動時に Udev が認識できなければならないためです。
-          </para>
-@z
+% @x --with-rootlibdir=/lib
+%           <para>This controls where the <filename
+%           class="libraryfile">libudev</filename> library is installed.  The
+%           library needs to be in <filename class="directory">/lib</filename>
+%           because it's used by Udev at boot time, before <filename
+%           class="directory">/usr</filename> might be available, and the default
+%           --rootlibdir is <filename class="directory">/usr/lib</filename>.</para>
+% @y
+%           <para>
+%           このオプションは <filename class="libraryfile">libudev</filename> ライブラリのインストール先を指定します。
+%           このライブラリは <filename class="directory">/lib</filename> ディレクトリにインストールする必要があります。
+%           デフォルトでは --rootlibdir は <filename class="directory">/usr/lib</filename> ディレクトリとなっていますが、<filename
+%           class="directory">/usr</filename> ディレクトリが認識できるようになる前の、ブート起動時に Udev が認識できなければならないためです。
+%           </para>
+% @z
 
-@x --libexecdir=/lib/udev
+@x --libexecdir=/lib
           <para>This controls where Udev-internal rules and helper programs
           are installed.</para>
 @y
           <para>
           このオプションは Udev の内部ルールやヘルパープログラムのインストール先を指定します。
+          </para>
+@z
+
+@x
+          <para>This allows persistent rules to be generated for network and
+          optical media devices</para>
+@y
+          <para>
+          このオプションは、ネットワークや光学メディアデバイスに対しての恒常的なルールを生成するよう指示します。
           </para>
 @z
 

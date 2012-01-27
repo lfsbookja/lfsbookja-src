@@ -48,6 +48,34 @@
 @z
 
 @x
+      <para>2012-01-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.2.1. Fixes
+          <ulink url="&lfs-ticket-root;2999">#2999</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-178, including adding its new
+          depdendency, Kmod-4. Fixes
+          <ulink url="&lfs-ticket-root;2998">#2998</ulink> and
+          <ulink url="&lfs-ticket-root;3001">#3001</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-01-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.2.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;2999">#2999</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Udev-178 へのアップグレード。これにともない、新たな依存パッケージ Kmod-4 を追加。
+          <ulink url="&lfs-ticket-root;2998">#2998</ulink> と <ulink url="&lfs-ticket-root;3001">#3001</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-01-16</para>
       <itemizedlist>
         <listitem>

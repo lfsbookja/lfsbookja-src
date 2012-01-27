@@ -1381,10 +1381,10 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Udev
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Make, and Sed</seg>
+         Kmod, Make, and Sed</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Make, Sed</seg>
+         Kmod, Make, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -1397,9 +1397,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Glib, Pci-Utils, Python, Systemd, USB-Utils</seg>
 @y
-          <seg>なし</seg>
+          <seg>Glib, Pci-Utils, Python, Systemd, USB-Utils</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1462,9 +1462,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>Man-DB</seg>
+          <seg>Kmod, Man-DB, Udev</seg>
 @y
-          <seg>Man-DB</seg>
+          <seg>Kmod, Man-DB, Udev</seg>
 @z
 @x
           <seg>None</seg>

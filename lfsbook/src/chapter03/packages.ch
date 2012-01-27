@@ -22,9 +22,9 @@
 @x
   <para>Download or otherwise obtain the following packages:</para>
 @y
-<para>
-以下に示すパッケージをダウンロードするなどしてすべて入手してください。
-</para>
+  <para>
+  以下に示すパッケージをダウンロードするなどしてすべて入手してください。
+  </para>
 @z
 
 @x autoconf
@@ -165,13 +165,12 @@
           version available can also be found at: <ulink
           url="http://www.linuxfromscratch.org/lfs/download.html#ftp"/>.</para>
 @y
-<para>
-File パッケージ (&file-version;)
-は上記の場所から入手できなくなっているかもしれません。
-これはサイト管理者が、新バージョンのリリースと同時に古いバージョンを削除することがあるためです。
-適切なバージョンをダウンロードするためには、以下に示す別のサイトを参照してください。
-<ulink url="http://www.linuxfromscratch.org/lfs/download.html#ftp"/>
-</para>
+          <para>
+          File パッケージ (&file-version;) は上記の場所から入手できなくなっているかもしれません。
+          これはサイト管理者が、新バージョンのリリースと同時に古いバージョンを削除することがあるためです。
+          適切なバージョンをダウンロードするためには、以下に示す別のサイトを参照してください。
+          <ulink url="http://www.linuxfromscratch.org/lfs/download.html#ftp"/>
+          </para>
 @z
 
 @x
@@ -649,31 +648,13 @@ File パッケージ (&file-version;)
         <para>MD5 sum: <literal>&udev-md5;</literal></para>
 @z
 
-@x Udev Test Tarball  (&udev-version;) - <token>&udev-testfiles-size;</token>:
-        <para>Download: <ulink url="&udev-testfiles-url;"/></para>
-        <para>MD5 sum: <literal>&udev-testfiles-md5;</literal></para>
-@y
-        <para>ダウンロード: <ulink url="&udev-testfiles-url;"/></para>
-        <para>MD5 sum: <literal>&udev-testfiles-md5;</literal></para>
-@z
-
-@x
+@x Udev Configuration Tarball
         <para>Download: <ulink url="&udev-config-url;"/></para>
         <para>MD5 sum: <literal>&udev-config-md5;</literal></para>
 @y
         <para>ダウンロード: <ulink url="&udev-config-url;"/></para>
         <para>MD5 sum: <literal>&udev-config-md5;</literal></para>
 @z
-
-% @x
-%         <para>Home page: <ulink url="&util-linux-ng-home;"/></para>
-%         <para>Download: <ulink url="&util-linux-ng-url;"/></para>
-%         <para>MD5 sum: <literal>&util-linux-ng-md5;</literal></para>
-% @y
-%         <para>ホームページ: <ulink url="&util-linux-ng-home;"/></para>
-%         <para>ダウンロード: <ulink url="&util-linux-ng-url;"/></para>
-%         <para>MD5 sum: <literal>&util-linux-ng-md5;</literal></para>
-% @z
 
 @x
         <para>Home page: <ulink url="&util-linux-home;"/></para>
@@ -720,4 +701,3 @@ File パッケージ (&file-version;)
 @y
   <para>全パッケージのサイズ合計: 約 <returnvalue/></para>
 @z
-
