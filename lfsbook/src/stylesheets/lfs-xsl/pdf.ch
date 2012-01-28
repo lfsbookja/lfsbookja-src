@@ -53,5 +53,5 @@
   <xsl:param name="sans.font.family" select="'Gothic'"/>
   <xsl:param name="monospace.font.family" select="'IPAgothic'"/>
 -->
-  <xsl:param name="body.start.indent" select="10pt"/>
+  <xsl:param name="body.start.indent" select="'10pt'"/>
 @z

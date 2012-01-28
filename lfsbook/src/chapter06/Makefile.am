@@ -8,11 +8,11 @@ EXTRA_DIST = aboutdebug.ch autoconf.ch automake.ch bash.ch binutils.ch \
 	iproute2.ch kbd.ch kernfs.ch less.ch libpipeline.ch libtool.ch \
 	linux-headers.ch m4.ch make.ch man-db.ch man-pages.ch \
 	module-init-tools.ch mpc.ch mpfr.ch ncurses.ch patch.ch perl.ch \
-	pkg-config.ch pkgmgt.ch procps.ch psmisc.ch \
+	pkgmgt.ch procps.ch psmisc.ch \
 	readjusting.ch readline.ch \
 	revisedchroot.ch sed.ch shadow.ch strippingagain.ch \
 	sysklogd.ch sysvinit.ch tar.ch texinfo.ch udev.ch \
-	util-linux.ch vim.ch zlib.ch xz.ch glib.ch pcre.ch \
+	util-linux.ch vim.ch zlib.ch xz.ch pcre.ch \
 	kmod.ch
 srcdir = @srcdir@
 srcs = aboutdebug.xml autoconf.xml automake.xml bash.xml binutils.xml \
@@ -24,11 +24,11 @@ srcs = aboutdebug.xml autoconf.xml automake.xml bash.xml binutils.xml \
 	iproute2.xml kbd.xml kernfs.xml less.xml libpipeline.xml libtool.xml \
 	linux-headers.xml m4.xml make.xml man-db.xml man-pages.xml \
 	module-init-tools.xml mpc.xml mpfr.xml ncurses.xml patch.xml perl.xml \
-	pkg-config.xml pkgmgt.xml procps.xml psmisc.xml \
+	pkgmgt.xml procps.xml psmisc.xml \
 	readjusting.xml readline.xml \
 	revisedchroot.xml sed.xml shadow.xml strippingagain.xml \
 	sysklogd.xml sysvinit.xml tar.xml texinfo.xml udev.xml \
-	util-linux.xml vim.xml zlib.xml xz.xml glib.xml pcre.xml \
+	util-linux.xml vim.xml zlib.xml xz.xml pcre.xml \
 	kmod.xml
 
 SUFFIXES = .ch .xml
@@ -88,7 +88,6 @@ mpfr.xml: $(BOOKdir)/$@ $(srcdir)/mpfr.ch
 ncurses.xml: $(BOOKdir)/$@ $(srcdir)/ncurses.ch
 patch.xml: $(BOOKdir)/$@ $(srcdir)/patch.ch
 perl.xml: $(BOOKdir)/$@ $(srcdir)/perl.ch
-pkg-config.xml: $(BOOKdir)/$@ $(srcdir)/pkg-config.ch
 pkgmgt.xml: $(BOOKdir)/$@ $(srcdir)/pkgmgt.ch
 procps.xml: $(BOOKdir)/$@ $(srcdir)/procps.ch
 psmisc.xml: $(BOOKdir)/$@ $(srcdir)/psmisc.ch
@@ -107,6 +106,5 @@ util-linux.xml: $(BOOKdir)/$@ $(srcdir)/util-linux.ch
 vim.xml: $(BOOKdir)/$@ $(srcdir)/vim.ch
 zlib.xml: $(BOOKdir)/$@ $(srcdir)/zlib.ch
 xz.xml: $(BOOKdir)/$@ $(srcdir)/xz.ch
-glib.xml: $(BOOKdir)/$@ $(srcdir)/glib.ch
 pcre.xml: $(BOOKdir)/$@ $(srcdir)/pcre.ch
 kmod.xml: $(BOOKdir)/$@ $(srcdir)/kmod.ch

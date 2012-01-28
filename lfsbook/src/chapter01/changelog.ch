@@ -48,8 +48,54 @@
 @z
 
 @x
+      <para>2012-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Psmisc-22.15. Fixes
+          <ulink url="&lfs-ticket-root;3007">#3007</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GMP-5.0.3. Fixes
+          <ulink url="&lfs-ticket-root;3006">#3006</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.2.2. Fixes
+          <ulink url="&lfs-ticket-root;3005">#3005</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-179. Fixes
+          <ulink url="&lfs-ticket-root;3004">#3004</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Psmisc-22.15 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3007">#3007</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GMP-5.0.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3006">#3006</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.2.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3005">#3005</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Udev-179 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3004">#3004</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-01-22</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update network bootscripts to support bridge
+          devices in BLFS.</para>
+        </listitem>
         <listitem>
           <para>[matthew] - Upgrade to Linux-3.2.1. Fixes
           <ulink url="&lfs-ticket-root;2999">#2999</ulink>.</para>
@@ -64,6 +110,9 @@
 @y
       <para>2012-01-22</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - BLFS のブリッジデバイスに対応するため、ネットワークブートスクリプトを更新。</para>
+        </listitem>
         <listitem>
           <para>[matthew] - Linux-3.2.1 へのアップグレード。
           <ulink url="&lfs-ticket-root;2999">#2999</ulink> を Fix に。</para>
