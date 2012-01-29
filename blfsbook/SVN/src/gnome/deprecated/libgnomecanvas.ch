@@ -25,13 +25,10 @@
     It is an engine for structured graphics and one of the essential
     <application>GNOME</application> libraries.</para>
 @y
-<para>
-<application>libgnomecanvas</application>
-パッケージは <application>GNOME</application>
-canvas ライブラリを提供します。
-これは構造化グラフィックス (structured graphics) のためのエンジンであり、
-重要な <application>GNOME</application> ライブラリです。
-</para>
+    <para>
+    <application>libgnomecanvas</application> パッケージは <application>GNOME</application> canvas ライブラリを提供します。
+    これは構造化グラフィックス (structured graphics) のためのエンジンであり、重要な <application>GNOME</application> ライブラリです。
+    </para>
 @z
 
 @x
@@ -122,26 +119,25 @@ canvas ライブラリを提供します。
     <para>Install <application>libgnomecanvas</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libgnomecanvas</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libgnomecanvas</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>This package does not have a testsuite.</para>
 @y
-<para>
-ビルド結果をビルドする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x

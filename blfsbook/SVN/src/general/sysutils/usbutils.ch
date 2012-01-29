@@ -86,10 +86,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libusb"/></para>
+    <para role="required">
+      <xref linkend="libusb"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="libusb"/></para>
+    <para role="required">
+      <xref linkend="libusb"/>,
+      <xref linkend="pkg-config"/>
+    </para>
 @z
 
 @x

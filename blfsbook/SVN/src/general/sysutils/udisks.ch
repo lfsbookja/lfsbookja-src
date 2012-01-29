@@ -81,7 +81,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="libatasmart"/>,
-    <xref linkend="parted"/> (with <xref linkend="device-mapper"/>),
+    <xref linkend="parted"/> (with <xref linkend="lvm2"/>, device-mapper),
     <xref linkend="polkit"/>,
     <xref linkend="sg3_utils"/>, and
     <xref linkend="udev"/> (gudev)</para>
@@ -89,7 +89,7 @@
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="libatasmart"/>,
-    <xref linkend="parted"/> (<xref linkend="device-mapper"/> を含む),
+    <xref linkend="parted"/> (<xref linkend="lvm2"/> つまり device-mapper を含む),
     <xref linkend="polkit"/>,
     <xref linkend="sg3_utils"/>,
     <xref linkend="udev"/> (gudev)</para>

@@ -27,14 +27,14 @@
     programs. It also has web and interactive graphical interfaces, auxiliary
     tools, libraries, and language bindings.</para>
 @y
-<para>
-<application>Graphviz</application> package contains graph
-visualization software. Graph visualization is a way of representing
-structural information as diagrams of abstract graphs and networks.
-<application>Graphviz</application> has several main graph layout
-programs. It also has web and interactive graphical interfaces, auxiliary
-tools, libraries, and language bindings.
-</para>
+    <para>
+    <application>Graphviz</application> package contains graph
+    visualization software. Graph visualization is a way of representing
+    structural information as diagrams of abstract graphs and networks.
+    <application>Graphviz</application> has several main graph layout
+    programs. It also has web and interactive graphical interfaces, auxiliary
+    tools, libraries, and language bindings.
+    </para>
 @z
 
 @x
@@ -229,26 +229,26 @@ tools, libraries, and language bindings.
     <para>Install <application>Graphviz</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Graphviz</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Graphviz</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite that provides
     meaningful results.</para>
 @y
-<para>
-このパッケージには十分な結果が得られるテストスイートはありません。
-</para>
+    <para>
+    このパッケージには十分な結果が得られるテストスイートはありません。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -258,13 +258,13 @@ tools, libraries, and language bindings.
     following command as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-If desired, create a symbolic link in the system documents directory
-to the documentation installed in
-<filename class='directory'>/usr/share/graphviz/doc</filename> using the
-following command as the <systemitem class="username">root</systemitem>
-user:
-</para>
+    <para>
+    If desired, create a symbolic link in the system documents directory
+    to the documentation installed in
+    <filename class='directory'>/usr/share/graphviz/doc</filename> using the
+    following command as the <systemitem class="username">root</systemitem>
+    user:
+    </para>
 @z
 
 @x
@@ -359,4 +359,3 @@ user:
           acyclic. The reversed edge inherits all of the attributes of the
           original edge.</para>
 @z
-

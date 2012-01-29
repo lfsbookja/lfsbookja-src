@@ -1,4 +1,4 @@
-SUBDIRS=add core otherlibs
+SUBDIRS=add core deprecated otherlibs
 BOOKdir = $(top_builddir)/@bookdir@/gnome
 EXTRA_DIST = gnome.ch gnome-intro.ch
 srcdir = @srcdir@

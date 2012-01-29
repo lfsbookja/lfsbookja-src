@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY kdebase-buildsize     "185 MB (additional 8.4 MB for API docs)">
-  <!ENTITY kdebase-time          "15.6 SBU (additional 0.1 SBU for API docs)">
-@y
-  <!ENTITY kdebase-buildsize     "185 MB (API ドキュメント生成時はさらに 8.4 MB)">
-  <!ENTITY kdebase-time          "15.6 SBU (API ドキュメント生成時はさらに 0.1 SBU)">
-@z
-
-@x
     <title>Introduction to Kdebase</title>
 @y
     <title>Kdebase の概要</title>
@@ -29,11 +21,11 @@
 
 @x
     <para><application>kdebase</application> is the last mandatory package
-    required for the <application>K Desktop Environment</application>. It
+    required for the <application>Trinity/KDE3 Desktop Environment</application>. It
     provides various applications, infrastructure files and libraries.</para>
 @y
     <para>
-    <application>kdebase</application> は <application>K デスクトップ環境</application> の構築に必要となる必須パッケージです。
+    <application>kdebase</application> は <application>Trinity/KDE3 デスクトップ環境</application> の構築に必要となる必須パッケージです。
     これはさまざまなアプリケーション、インフラストラクチャーファイル (infrastructure files)、ライブラリを提供します。
     </para>
 @z
@@ -88,67 +80,76 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="kdelibs"/></para>
+    <para role="required">
+      <xref linkend="kdelibs"/> and
+      <xref linkend="dbus-qt3"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="kdelibs"/></para>
+    <para role="required">
+      <xref linkend="kdelibs"/>,
+      <xref linkend="dbus-qt3"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libart_lgpl"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="openssl"/>, and
-    either <xref linkend="icedtea6"/> or <xref linkend="jdk"/></para>
+    <para role="recommended">
+      <xref linkend="aRts"/>,
+      <xref linkend="libart_lgpl"/>, and
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libart_lgpl"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="openssl"/>,
-    そして以下のいずれか： <xref linkend="icedtea6"/>, <xref linkend="jdk"/></para>
+    <para role="recommended">
+      <xref linkend="aRts"/>,
+      <xref linkend="libart_lgpl"/>,
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libusb-compat"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="cyrus-sasl"/>,
-    <xref linkend="samba3"/>,
-    <xref linkend="hal"/> and
-    <xref linkend="dbus-qt3"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-    <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
-    <ulink url="http://www.lm-sensors.org/">lm_sensors</ulink>
-    (requires <ulink url="http://sourceforge.net/projects/linux-diag">Sysfs
-    Utilities</ulink>),
-    <ulink url="http://www.opensource.apple.com/darwinsource/tarballs/apsl/">mDNSResponder</ulink>,
-    <xref linkend="sudo"/>,
-    <xref linkend="graphviz"/>, and
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="hal"/>,
+      <xref linkend="libusb-compat"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="samba3"/>,
+      <xref linkend="sudo"/>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
+      <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libusb-compat"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="cyrus-sasl"/>,
-    <xref linkend="samba3"/>,
-    <xref linkend="hal"/>,
-    <xref linkend="dbus-qt3"/>,
-    <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-    <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
-    <ulink url="http://www.lm-sensors.org/">lm_sensors</ulink>
-    (requires <ulink url="http://sourceforge.net/projects/linux-diag">Sysfs ユーティリティ (Sysfs Utilities</ulink>),
-    <ulink url="http://www.opensource.apple.com/darwinsource/tarballs/apsl/">mDNSResponder</ulink>,
-    <xref linkend="sudo"/>,
-    <xref linkend="graphviz"/>,
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="hal"/>,
+      <xref linkend="libusb-compat"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="samba3"/>,
+      <xref linkend="sudo"/>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
+      <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional (for api documentation)</bridgehead>
+    <para role="optional">
+      <xref linkend="libxml2"/>,
+      <xref linkend="graphviz"/>, and
+      <xref linkend="doxygen"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&j-Optional; (API ドキュメント用)</bridgehead>
+    <para role="optional">
+      <xref linkend="libxml2"/>,
+      <xref linkend="graphviz"/>,
+      <xref linkend="doxygen"/>
+    </para>
 @z
 
 @x
@@ -193,7 +194,7 @@
 @x
     <para>One additional package that can be used at run time is <xref
     linkend="pciutils"/>.  This enables the <application>KDE Info
-    Center</application> to  use <application>lspci</application> for its "pci"
+    Center</application> to use <application>lspci</application> for its "pci"
     info section.</para>
 @y
     <para>
@@ -221,31 +222,33 @@
 @z
 
 @x
-      <para>You should ensure a <systemitem
-      class="groupname">nogroup</systemitem> group exists on your system before
-      performing the <command>configure</command> command, as
-      <application>kdebase</application> installs a program
-      (<filename>$KDE_PREFIX/bin/kdesud</filename>) with group ownership of
-      <systemitem class="groupname">nogroup</systemitem>.</para>
+    <para>Some of the optional support programs for <application>kdebase</application>
+    must be specified by the user.  The option is in the form "-DWITH_PKG=ON" and
+    the following options are recognozed for 'PKG': , SAMBA, LIBUSB,
+    SUDO_KDESU_BACKEND, LDAP, OPENEXR, SASL, LIBRAW1394, HAL, PAM, and I8K (Dell 
+    Laptop Extensions).</para>
 @y
-      <para>You should ensure a <systemitem
-      class="groupname">nogroup</systemitem> group exists on your system before
-      performing the <command>configure</command> command, as
-      <application>kdebase</application> installs a program
-      (<filename>$KDE_PREFIX/bin/kdesud</filename>) with group ownership of
-      <systemitem class="groupname">nogroup</systemitem>.</para>
+    <para>Some of the optional support programs for <application>kdebase</application>
+    must be specified by the user.  The option is in the form "-DWITH_PKG=ON" and
+    the following options are recognozed for 'PKG': , SAMBA, LIBUSB,
+    SUDO_KDESU_BACKEND, LDAP, OPENEXR, SASL, LIBRAW1394, HAL, PAM, and I8K (Dell 
+    Laptop Extensions).</para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>The <userinput>cmake</userinput> step does not pick up all the required 
+    libraries and paths.  One special problem is that libtirpc.so is required
+    for nfs and is not detected.  Fix these problems with:</para>
 @y
-    <para>This package does not come with a test suite.</para>
+    <para>The <userinput>cmake</userinput> step does not pick up all the required 
+    libraries and paths.  One special problem is that libtirpc.so is required
+    for nfs and is not detected.  Fix these problems with:</para>
 @z
 
 @x
-    <para>Install <application>kdebase</application> with:</para>
+    <para>Now, continue with the build:</para>
 @y
-    <para>Install <application>kdebase</application> with:</para>
+    <para>Now, continue with the build:</para>
 @z
 
 @x
@@ -365,4 +368,3 @@
 @y
           <para>is a dialog box for managing diagnostic messages at runtime.</para>
 @z
-

@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY kdegames-buildsize     "94 MB (additional 13 MB for API docs)">
-  <!ENTITY kdegames-time          "3.1 SBU (additional 0.1 SBU for API docs)">
-@y
-  <!ENTITY kdegames-buildsize     "94 MB (API ドキュメント生成時はさらに 13 MB)">
-  <!ENTITY kdegames-time          "3.1 SBU (API ドキュメント生成時はさらに 0.1 SBU)">
-@z
-
-@x
     <title>Introduction to Kdegames</title>
 @y
     <title>Kdegames の概要</title>
@@ -86,30 +78,42 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/> and
-    <xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="graphviz"/> and
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="graphviz"/> and
+      <xref linkend="doxygen"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="graphviz"/>,
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="graphviz"/>,
+      <xref linkend="doxygen"/>
+    </para>
 @z
 
 @x
@@ -165,9 +169,9 @@
 @x
         <seg>a compilation of various games</seg>
         <seg>Support libraries for kdegames</seg>
-        <seg>Subdirectories of $KDE_PREFIX/{include,share}</seg>
+        <seg>Subdirectories of $TRINITY_PREFIX/{include,share}</seg>
 @y
         <seg>さまざまなゲーム</seg>
         <seg>kdegames のサポートライブラリ</seg>
-        <seg>$KDE_PREFIX/{include,share} 配下のサブディレクトリ</seg>
+        <seg>$TRINITY_PREFIX/{include,share} 配下のサブディレクトリ</seg>
 @z

@@ -14,7 +14,7 @@
 @z
 
 @x
-  <title>KDE Core Packages</title>
+  <title>Trinity/KDE3 Core Packages</title>
 @y
-  <title>KDE コアパッケージ</title>
+  <title>Trinity/KDE3 コアパッケージ</title>
 @z

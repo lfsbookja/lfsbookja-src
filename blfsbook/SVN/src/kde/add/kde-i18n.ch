@@ -89,22 +89,24 @@
 @z
 
 @x
-    <para><application>KDE</application> has 52 separate
+    <para><application>KDE</application> has 71 separate
     internationalization packages in the form of:</para>
 @y
     <para>
-    <application>KDE</application> には 52 個の個別の国際化パッケージがあり、以下のような形式で提供されます。
+    <application>KDE</application> には 71 個の個別の国際化パッケージがあり、以下のような形式で提供されます。
     </para>
 @z
 
 @x
     <para>where the <replaceable>&lt;xx&gt;</replaceable> is a two to five letter code
     for the country covered.  Download the package(s) you need from
-    the directories above.</para>
+    the directories above.  Note that the packages have not been renamed from the
+    kde-3.5.10 distribution.</para>
 @y
     <para>
     上において <replaceable>&lt;xx&gt;</replaceable> は国を表す２文字から５文字のコードです。
     上で示しているダウンロードサイトから必要なものをダウンロードしてください。
+    なお本パッケージは kde-3.5.10 以降、名称変更されていません。
     </para>
 @z
 
@@ -200,11 +202,11 @@
 
 @x
         <seg>None</seg>
-        <seg>Internationalization support for <application>KDE</application></seg>
+        <seg>Internationalization support for <application>KDE3/Trinity</application></seg>
         <seg>None</seg>
 @y
         <seg>なし</seg>
-        <seg><application>KDE</application> に対する国際化サポート</seg>
+        <seg><application>KDE3/Trinity</application> に対する国際化サポート</seg>
         <seg>なし</seg>
 @z
 

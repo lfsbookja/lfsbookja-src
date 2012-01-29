@@ -3,13 +3,15 @@ EXTRA_DIST = aalib.ch fontconfig.ch freetype2.ch fribidi.ch giflib.ch \
 	graphlib.ch imlib.ch imlib2.ch jasper.ch lcms.ch libart_lgpl.ch \
 	libexif.ch libjpeg.ch libmng.ch libpng.ch librsvg.ch libtiff.ch \
 	libungif.ch pixman.ch poppler.ch clutter.ch clutter-gtk.ch \
-	babl.ch gegl.ch exiv2.ch
+	babl.ch gegl.ch exiv2.ch lcms2.ch clutter-gst.ch mx.ch \
+	colord.ch
 srcdir = @srcdir@
 srcs = aalib.xml fontconfig.xml freetype2.xml fribidi.xml giflib.xml \
 	graphlib.xml imlib.xml imlib2.xml jasper.xml lcms.xml libart_lgpl.xml \
 	libexif.xml libjpeg.xml libmng.xml libpng.xml librsvg.xml libtiff.xml \
 	libungif.xml pixman.xml poppler.xml clutter.xml clutter-gtk.xml \
-	babl.xml gegl.xml exiv2.xml
+	babl.xml gegl.xml exiv2.xml lcms2.xml clutter-gst.xml mx.xml \
+	colord.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -44,4 +46,8 @@ clutter-gtk.xml: $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
 babl.xml: $(BOOKdir)/$@ $(srcdir)/babl.ch
 gegl.xml: $(BOOKdir)/$@ $(srcdir)/gegl.ch
 exiv2.xml: $(BOOKdir)/$@ $(srcdir)/exiv2.ch
+lcms2.xml: $(BOOKdir)/$@ $(srcdir)/lcms2.ch
+clutter-gst.xml: $(BOOKdir)/$@ $(srcdir)/clutter-gst.ch
+mx.xml: $(BOOKdir)/$@ $(srcdir)/mx.ch
+colord.xml: $(BOOKdir)/$@ $(srcdir)/colord.ch
 

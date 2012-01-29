@@ -90,13 +90,23 @@
 @x
     <bridgehead renderas="sect4">Optional to Build the Invest Applet</bridgehead>
     <para role="optional"><xref linkend="pygtk"/> (including the gtk and
+    <!-- FIXME:ken -->
+    gtk.libglade modules) and Gnome-Python-Desktop-2.30.2
+    (including the gnomeapplet module)</para>
+    <!--
     gtk.libglade modules) and <xref linkend="gnome-python-desktop"/>
     (including the gnomeapplet module)</para>
+    -->
 @y
     <bridgehead renderas="sect4">Optional to Build the Invest Applet</bridgehead>
     <para role="optional"><xref linkend="pygtk"/> (including the gtk and
+    <!-- FIXME:ken -->
+    gtk.libglade modules) and Gnome-Python-Desktop-2.30.2
+    (including the gnomeapplet module)</para>
+    <!--
     gtk.libglade modules) and <xref linkend="gnome-python-desktop"/>
     (including the gnomeapplet module)</para>
+    -->
 @z
 
 @x
@@ -143,25 +153,25 @@
     <para>Install <application>GNOME Applets</application> by
     running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GNOME Applets</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GNOME Applets</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -178,13 +188,13 @@
     instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/gnome-applets</parameter>:
-このパラメーターは、libexec ファイルを <filename class="directory">$GNOME_PREFIX/libexec</filename>
-ではなく、より適切な <filename class="directory">$GNOME_PREFIX/lib/gnome-applets</filename>
-とします。
-</para>
+    <para>
+    <parameter>--libexecdir=$(pkg-config --variable=prefix
+    ORBit-2.0)/lib/gnome-applets</parameter>:
+    このパラメーターは、libexec ファイルを <filename
+    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
+    class="directory">$GNOME_PREFIX/lib/gnome-applets</filename> とします。
+    </para>
 @z
 
 @x
@@ -192,11 +202,10 @@ ORBit-2.0)/lib/gnome-applets</parameter>:
     the man-pages that are not installed during
     <command>make install</command>.</para>
 @y
-<para>
-<command>make -C man install-man</command>:
-このコマンドは <command>make install</command>
-の時には行われない man ページのインストールを行います。
-</para>
+    <para>
+    <command>make -C man install-man</command>:
+    このコマンドは <command>make install</command> の時には行われない man ページのインストールを行います。
+    </para>
 @z
 
 @x

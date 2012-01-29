@@ -29,10 +29,9 @@
     <para>The <application>alacarte</application> package is a menu editor for
     GNOME using the freedesktop.org menu specification.</para>
 @y
-<para>
-<application>alacarte</application>
-パッケージは、freedesktop.org が定めるメニュー仕様に基づいて GNOME のメニューの編集機能を提供します。
-</para>
+    <para>
+    <application>alacarte</application> パッケージは、freedesktop.org が定めるメニュー仕様に基づいて GNOME のメニューの編集機能を提供します。
+    </para>
 @z
 
 @x
@@ -86,11 +85,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="gnome-menus"/> and
-    <xref linkend="pygobject"/></para>
+    <xref linkend="pygobject2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-menus"/>,
-    <xref linkend="pygobject"/></para>
+    <xref linkend="pygobject2"/></para>
 @z
 
 @x
@@ -111,27 +110,25 @@
     <para>Install <application>alacarte</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>alacarte</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>alacarte</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -177,7 +174,7 @@
 @x alacarte
           <para>is a menu editor for GNOME.</para>
 @y
-<para>
-GNOME 用のメニューエディタです。
-</para>
+          <para>
+          GNOME 用のメニューエディタです。
+          </para>
 @z

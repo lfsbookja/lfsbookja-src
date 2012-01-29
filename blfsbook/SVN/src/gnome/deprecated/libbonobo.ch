@@ -25,12 +25,11 @@
     This is a component and compound document system for
     <application>GNOME-2</application>.</para>
 @y
-<para>
-<application>libbonobo</application> パッケージは
-<filename class="libraryfile">libbonobo</filename> ライブラリを提供します。
-これは <application>GNOME-2</application>
-におけるコンポーネントシステムおよび複合文書システム (compound document system) です。
-</para>
+    <para>
+    <application>libbonobo</application> パッケージは <filename
+    class="libraryfile">libbonobo</filename> ライブラリを提供します。
+    これは <application>GNOME-2</application> におけるコンポーネントシステムおよび複合文書システム (compound document system) です。
+    </para>
 @z
 
 @x
@@ -83,17 +82,19 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="ORBit2"/>, and
-    <xref linkend="popt"/></para>
-@y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
+    <para role="required"><xref linkend="glib2"/>,
     <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="ORBit2"/>,
+    <xref linkend="pkgconfig"/>, and
+    <xref linkend="popt"/></para>
+@y
+    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <para role="required"><xref linkend="glib2"/>,
+    <xref linkend="intltool"/>,
+    <xref linkend="libxml2"/>,
+    <xref linkend="ORBit2"/>,
+    <xref linkend="pkgconfig"/>,
     <xref linkend="popt"/></para>
 @z
 
@@ -125,26 +126,25 @@
     <para>Install <application>libbonobo</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libbonobo</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libbonobo</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストするなら <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストするなら <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -160,15 +160,13 @@
     class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename> instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/bonobo-2.0</parameter>:
-このパラメーターは libexec ファイルのインストール先を
-<filename class="directory">$GNOME_PREFIX/libexec</filename>
-ではなく、より適切な
-<filename class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename>
-とします。
-</para>
+    <para>
+    <parameter>--libexecdir=$(pkg-config --variable=prefix
+    ORBit-2.0)/lib/bonobo-2.0</parameter>:
+    このパラメーターは libexec ファイルのインストール先を <filename
+    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
+    class="directory">$GNOME_PREFIX/lib/bonobo-2.0</filename> とします。
+    </para>
 @z
 
 @x
@@ -191,8 +189,8 @@ ORBit-2.0)/lib/bonobo-2.0</parameter>:
         <seg>activation-client, bonobo-activation-run-query, bonobo-slay,
         echo-client-2, bonobo-activation-server, bonobo-echo-2, and
         bonobo-activation-sysconf</seg>
-        <seg>libmoniker_std_2.{so,a}, libbonobo-2.{so,a},
-        libbonobo-activation.{so,a}, and Bonobo_module.{so,a}</seg>
+        <seg>libmoniker_std_2.{so,a}, libbonobo-2.{so,a}, and
+        libbonobo-activation.{so,a}</seg>
         <seg>&gnome-etc-dir;/bonobo-activation,
         <envar>$GNOME_PREFIX</envar>/{include/{bonobo-activation-2.0/bonobo-activation,
         libbonobo-2.0/bonobo},lib/{bonobo-2.0/samples,bonobo/{monikers,
@@ -203,7 +201,7 @@ ORBit-2.0)/lib/bonobo-2.0</parameter>:
         echo-client-2, bonobo-activation-server, bonobo-echo-2,
         bonobo-activation-sysconf</seg>
         <seg>libmoniker_std_2.{so,a}, libbonobo-2.{so,a},
-        libbonobo-activation.{so,a}, Bonobo_module.{so,a}</seg>
+        libbonobo-activation.{so,a}</seg>
         <seg>&gnome-etc-dir;/bonobo-activation,
         <envar>$GNOME_PREFIX</envar>/{include/{bonobo-activation-2.0/bonobo-activation,
         libbonobo-2.0/bonobo},lib/{bonobo-2.0/samples,bonobo/{monikers,
@@ -221,9 +219,9 @@ ORBit-2.0)/lib/bonobo-2.0</parameter>:
           <para>are a set of language and system independent CORBA interfaces
           for creating reusable components and compound documents.</para>
 @y
-<para>
-
-are a set of language and system independent CORBA interfaces
-for creating reusable components and compound documents.
-</para>
+          <para>
+          
+          are a set of language and system independent CORBA interfaces
+          for creating reusable components and compound documents.
+          </para>
 @z

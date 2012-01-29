@@ -4,14 +4,14 @@ EXTRA_DIST = ncpfs.ch ntp.ch rsync-client.ch wget.ch net-tools.ch \
 	inetutils.ch netprogs.ch othernetprogs.ch \
 	ncftp.ch nfs-utils-client.ch portmap.ch \
 	rsync.ch netfs.ch nfs-utils.ch samba3.ch \
-	cifsutils.ch rpcbind.ch
+	cifsutils.ch rpcbind.ch bridgeutils.ch
 srcdir = @srcdir@
 srcs = ncpfs.xml ntp.xml rsync-client.xml wget.xml net-tools.xml \
 	openssh-client.xml samba3-client.xml wireless-tools.xml \
 	inetutils.xml netprogs.xml othernetprogs.xml \
 	ncftp.xml nfs-utils-client.xml portmap.xml \
 	rsync.xml netfs.xml nfs-utils.xml samba3.xml \
-	cifsutils.xml rpcbind.xml
+	cifsutils.xml rpcbind.xml bridgeutils.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -42,3 +42,4 @@ nfs-utils.xml: $(BOOKdir)/$@ $(srcdir)/nfs-utils.ch
 samba3.xml: $(BOOKdir)/$@ $(srcdir)/samba3.ch
 cifsutils.xml: $(BOOKdir)/$@ $(srcdir)/cifsutils.ch
 rpcbind.xml: $(BOOKdir)/$@ $(srcdir)/rpcbind.ch
+bridgeutils.xml: $(BOOKdir)/$@ $(srcdir)/bridgeutils.ch

@@ -14,20 +14,16 @@
 @z
 
 @x
-    <para><parameter>--mandir=$(pkg-config --variable=prefix
-    ORBit-2.0)/share/man</parameter>: This parameter causes the
-    <filename>man.(X)</filename> files to be installed in
-    <filename class="directory">$GNOME_PREFIX/share/man/man(X)</filename>
-    instead of
-    <filename class="directory">$GNOME_PREFIX/man/man(X)</filename>.</para>
+    <para><parameter>--mandir=<envar>$GNOME_PREFIX</envar>/share/man</parameter>:
+    This parameter causes the <filename>man.(X)</filename> files to be installed
+    in <filename class="directory">$GNOME_PREFIX/share/man/man(X)</filename>
+    instead of <filename
+    class="directory">$GNOME_PREFIX/man/man(X)</filename>.</para>
 @y
-<para>
-<parameter>--mandir=$(pkg-config --variable=prefix
-ORBit-2.0)/share/man</parameter>:
-このパラメーターは、<filename>man.(X)</filename>
-ファイルのインストール先を
-<filename class="directory">$GNOME_PREFIX/man/man(X)</filename> ではなく
-<filename class="directory">$GNOME_PREFIX/share/man/man(X)</filename>
-とします。
-</para>
+    <para>
+    <parameter>--mandir=<envar>$GNOME_PREFIX</envar>/share/man</parameter>:
+    このパラメーターは <filename>man.(X)</filename> ファイルのインストール先を、<filename
+    class="directory">$GNOME_PREFIX/man/man(X)</filename> ではなく <filename
+    class="directory">$GNOME_PREFIX/share/man/man(X)</filename> にします。
+    </para>
 @z

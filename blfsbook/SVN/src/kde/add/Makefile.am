@@ -1,11 +1,13 @@
 BOOKdir = $(top_builddir)/@bookdir@/kde/add
 EXTRA_DIST = add.ch kde-i18n.ch kdeaccessibility.ch kdeaddons.ch \
 	kdeadmin.ch kdeartwork.ch kdeedu.ch kdegames.ch kdegraphics.ch \
-	kdemultimedia.ch kdenetwork.ch kdepim.ch kdetoys.ch kdeutils.ch
+	kdemultimedia.ch kdenetwork.ch kdepim.ch kdetoys.ch kdeutils.ch \
+	kdeakode.ch
 srcdir = @srcdir@
 srcs = add.xml kde-i18n.xml kdeaccessibility.xml kdeaddons.xml \
 	kdeadmin.xml kdeartwork.xml kdeedu.xml kdegames.xml kdegraphics.xml \
-	kdemultimedia.xml kdenetwork.xml kdepim.xml kdetoys.xml kdeutils.xml
+	kdemultimedia.xml kdenetwork.xml kdepim.xml kdetoys.xml kdeutils.xml \
+	kdeakode.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -29,3 +31,4 @@ kdenetwork.xml: $(BOOKdir)/$@ $(srcdir)/kdenetwork.ch
 kdepim.xml: $(BOOKdir)/$@ $(srcdir)/kdepim.ch
 kdetoys.xml: $(BOOKdir)/$@ $(srcdir)/kdetoys.ch
 kdeutils.xml: $(BOOKdir)/$@ $(srcdir)/kdeutils.ch
+kdeakode.xml: $(BOOKdir)/$@ $(srcdir)/kdeakode.ch

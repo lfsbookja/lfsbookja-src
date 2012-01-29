@@ -80,40 +80,52 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/> and
-    <xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="kdenetwork"/>,
-    <xref linkend="kdemultimedia"/>,
-    <xref linkend="kdepim"/>,
-    <xref linkend="kdegames"/>,
-    <xref linkend="db"/>,
-    <!-- <xref linkend="xmms"/>, -->and
-    <xref linkend="sdl"/></para>
+    <para role="optional">
+      <xref linkend="kdenetwork"/>,
+      <xref linkend="kdemultimedia"/>,
+      <xref linkend="kdepim"/>,
+      <xref linkend="kdegames"/>,
+      <xref linkend="db"/>,
+      <!-- <xref linkend="xmms"/>, -->and
+      <xref linkend="sdl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="kdenetwork"/>,
-    <xref linkend="kdemultimedia"/>,
-    <xref linkend="kdepim"/>,
-    <xref linkend="kdegames"/>,
-    <xref linkend="db"/>,
-    <!-- <xref linkend="xmms"/>, -->and
-    <xref linkend="sdl"/></para>
+    <para role="optional">
+      <xref linkend="kdenetwork"/>,
+      <xref linkend="kdemultimedia"/>,
+      <xref linkend="kdepim"/>,
+      <xref linkend="kdegames"/>,
+      <xref linkend="db"/>,
+      <!-- <xref linkend="xmms"/>, -->,
+      <xref linkend="sdl"/>
+    </para>
 @z
 
 @x

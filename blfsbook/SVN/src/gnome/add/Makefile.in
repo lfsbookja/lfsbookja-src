@@ -141,7 +141,7 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	dummy-libraries.ch dummy-utilities.ch ekiga.ch eog.ch \
 	epiphany.ch evince.ch evolution-data-server.ch file-roller.ch \
 	gcalctool.ch gconf-editor.ch gdm.ch gedit.ch \
-	gnome-games.ch gnome-mag.ch gnome-media.ch \
+	gnome-games.ch gnome-mag.ch \
 	gnome-netstatus.ch gnome-screensaver.ch \
 	gnome-speech.ch gnome-system-monitor.ch gnome-utils.ch \
 	gok.ch gtkhtml.ch gtksourceview.ch \
@@ -160,7 +160,7 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
 	epiphany.xml evince.xml evolution-data-server.xml file-roller.xml \
 	gcalctool.xml gconf-editor.xml gdm.xml gedit.xml \
-	gnome-games.xml gnome-mag.xml gnome-media.xml \
+	gnome-games.xml gnome-mag.xml \
 	gnome-netstatus.xml gnome-screensaver.xml \
 	gnome-speech.xml gnome-system-monitor.xml gnome-utils.xml \
 	gok.xml gtkhtml.xml gtksourceview.xml \
@@ -380,7 +380,6 @@ gdm.xml: $(BOOKdir)/$@ $(srcdir)/gdm.ch
 gedit.xml: $(BOOKdir)/$@ $(srcdir)/gedit.ch
 gnome-games.xml: $(BOOKdir)/$@ $(srcdir)/gnome-games.ch
 gnome-mag.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mag.ch
-gnome-media.xml: $(BOOKdir)/$@ $(srcdir)/gnome-media.ch
 gnome-netstatus.xml: $(BOOKdir)/$@ $(srcdir)/gnome-netstatus.ch
 gnome-power-manager.xml: $(BOOKdir)/$@ $(srcdir)/gnome-power-manager.ch
 gnome-screensaver.xml: $(BOOKdir)/$@ $(srcdir)/gnome-screensaver.ch

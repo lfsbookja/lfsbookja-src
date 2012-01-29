@@ -26,14 +26,10 @@
     <application>GTK+</application> widget, GtkClutterEmbed, for embedding the
     default ClutterStage into any GtkContainer.</para>
 @y
-<para>
-<application>clutter-gtk</application>
-パッケージは、<application>Clutter</application> を
-<application>GTK+</application> アプリケーションにて利用するための機能を提供するライブラリです。
-この中には <application>GTK+</application> ウィジェットである GtkClutterEmbed
-が含まれ、あらゆる GtkContainer に対して、デフォルトの ClutterStage
-を埋め込むことが可能となります。
-</para>
+    <para>
+    <application>clutter-gtk</application> パッケージは、<application>Clutter</application> を <application>GTK+</application> アプリケーションにて利用するための機能を提供するライブラリです。
+    この中には <application>GTK+</application> ウィジェットである GtkClutterEmbed が含まれ、あらゆる GtkContainer に対して、デフォルトの ClutterStage を埋め込むことが可能となります。
+    </para>
 @z
 
 @x
@@ -86,10 +82,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="clutter"/></para>
+    <para role="required"><xref linkend="clutter"/> and
+    <xref linkend="gtk3"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="clutter"/></para>
+    <para role="required"><xref linkend="clutter"/>,
+    <xref linkend="gtk3"/></para>
 @z
 
 @x
@@ -118,27 +116,25 @@
     <para>Install <application>clutter-gtk</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>clutter-gtk</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>clutter-gtk</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -165,14 +161,14 @@
 
 @x
         <seg>None</seg>
-        <seg>libclutter-gtk-0.10.so</seg>
-        <seg>/usr/{include/clutter-1.0/clutter-gtk,
-        share/gtk-doc/html/clutter-gtk}</seg>
+        <seg>libclutter-gtk-1.0.so</seg>
+        <seg>/usr/{include/clutter-gtk-1.0/clutter-gtk,
+        share/gtk-doc/html/clutter-gtk-1.0}</seg>
 @y
         <seg>なし</seg>
-        <seg>libclutter-gtk-0.10.so</seg>
-        <seg>/usr/{include/clutter-1.0/clutter-gtk,
-        share/gtk-doc/html/clutter-gtk}</seg>
+        <seg>libclutter-gtk-1.0.so</seg>
+        <seg>/usr/{include/clutter-gtk-1.0/clutter-gtk,
+        share/gtk-doc/html/clutter-gtk-1.0}</seg>
 @z
 
 @x
@@ -184,7 +180,7 @@
 @x libclutter-gtk-0.10.so
           <para>contains the clutter-gtk API functions.</para>
 @y
-<para>
-clutter-gtk の API 関数を提供します。
-</para>
+          <para>
+          clutter-gtk の API 関数を提供します。
+          </para>
 @z

@@ -137,8 +137,12 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/filesystems
-EXTRA_DIST = ext3.ch filesystems.ch reiser.ch xfs.ch
-srcs = ext3.xml filesystems.xml reiser.xml xfs.xml
+EXTRA_DIST = ext3.ch filesystems.ch reiser.ch xfs.ch \
+	lvm2.ch jfs.ch
+
+srcs = ext3.xml filesystems.xml reiser.xml xfs.xml \
+	lvm2.xml jfs.xml
+
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -330,6 +334,8 @@ ext3.xml: $(BOOKdir)/$@ $(srcdir)/ext3.ch
 filesystems.xml: $(BOOKdir)/$@ $(srcdir)/filesystems.ch
 reiser.xml: $(BOOKdir)/$@ $(srcdir)/reiser.ch
 xfs.xml: $(BOOKdir)/$@ $(srcdir)/xfs.ch
+lvm2.xml: $(BOOKdir)/$@ $(srcdir)/lvm2.ch
+jfs.xml: $(BOOKdir)/$@ $(srcdir)/jfs.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

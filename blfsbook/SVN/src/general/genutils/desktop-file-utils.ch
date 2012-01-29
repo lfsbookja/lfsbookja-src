@@ -29,21 +29,19 @@
     <para>The <application>desktop-file-utils</application> package contains
     command line utilities for working with <ulink
     url="http://www.freedesktop.org/Standards/desktop-entry-spec">desktop
-    entries</ulink>. These utilities are used by
-    <application>GNOME</application>-2 and other applications
+    entries</ulink>. These utilities are used by Desktop Environments
+    and other applications
     to manipulate the MIME-types application databases and help
     adhere to the Desktop Entry Specification.</para>
 @y
-<para>
-<application>desktop-file-utils</application> パッケージは
-<ulink url="http://www.freedesktop.org/Standards/desktop-entry-spec">デスクトップエントリ</ulink>
-(desktop entries) に対して利用するコマンドラインユーティリティを提供します。
-
-These utilities are used by
-<application>GNOME</application>-2 and other applications
-to manipulate the MIME-types application databases and help
-adhere to the Desktop Entry Specification.
-</para>
+    <para>
+    <application>desktop-file-utils</application> パッケージは <ulink
+    url="http://www.freedesktop.org/Standards/desktop-entry-spec">デスクトップエントリー</ulink> (desktop entries) に対して利用するコマンドラインユーティリティを提供します。
+    These utilities are used by Desktop Environments
+    and other applications
+    to manipulate the MIME-types application databases and help
+    adhere to the Desktop Entry Specification.
+    </para>
 @z
 
 @x
@@ -128,25 +126,25 @@ adhere to the Desktop Entry Specification.
     <para>Install <application>desktop-file-utils</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>desktop-file-utils</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>desktop-file-utils</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-Now, as the <systemitem class="username">root</systemitem> user:
-</para>
+    <para>
+    Now, as the <systemitem class="username">root</systemitem> user:
+    </para>
 @z
 
 @x
@@ -306,4 +304,3 @@ Now, as the <systemitem class="username">root</systemitem> user:
           <para>is used to update the MIME-types
           application database.</para>
 @z
-

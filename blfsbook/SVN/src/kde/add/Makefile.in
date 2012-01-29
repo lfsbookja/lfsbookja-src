@@ -139,11 +139,13 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/kde/add
 EXTRA_DIST = add.ch kde-i18n.ch kdeaccessibility.ch kdeaddons.ch \
 	kdeadmin.ch kdeartwork.ch kdeedu.ch kdegames.ch kdegraphics.ch \
-	kdemultimedia.ch kdenetwork.ch kdepim.ch kdetoys.ch kdeutils.ch
+	kdemultimedia.ch kdenetwork.ch kdepim.ch kdetoys.ch kdeutils.ch \
+	kdeakode.ch
 
 srcs = add.xml kde-i18n.xml kdeaccessibility.xml kdeaddons.xml \
 	kdeadmin.xml kdeartwork.xml kdeedu.xml kdegames.xml kdegraphics.xml \
-	kdemultimedia.xml kdenetwork.xml kdepim.xml kdetoys.xml kdeutils.xml
+	kdemultimedia.xml kdenetwork.xml kdepim.xml kdetoys.xml kdeutils.xml \
+	kdeakode.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -346,6 +348,7 @@ kdenetwork.xml: $(BOOKdir)/$@ $(srcdir)/kdenetwork.ch
 kdepim.xml: $(BOOKdir)/$@ $(srcdir)/kdepim.ch
 kdetoys.xml: $(BOOKdir)/$@ $(srcdir)/kdetoys.ch
 kdeutils.xml: $(BOOKdir)/$@ $(srcdir)/kdeutils.ch
+kdeakode.xml: $(BOOKdir)/$@ $(srcdir)/kdeakode.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -119,10 +119,10 @@
     <para>Note: you should build the
     <filename class='libraryfile'>libgsf-gnome-1.so</filename> library if you
     plan on building <xref linkend="gnucash"/> or
-    <xref linkend="gnumeric"/> with GNOME support.</para>
+    <xref linkend="gnumeric"/> with GNOME-2 support.</para>
 @y
     <para>
-    メモ: GNOME サポートを含めて <xref linkend="gnucash"/> や <xref
+    メモ: GNOME-2 サポートを含めて <xref linkend="gnucash"/> や <xref
     linkend="gnumeric"/> をビルドしようとする場合、<filename
     class='libraryfile'>libgsf-gnome-1.so</filename> をビルドすることが必要になります。
     </para>
@@ -179,27 +179,25 @@
 @z
 
 @x
-    <para><option>--sysconfdir=&gnome-etc-dir;</option>: Pass this parameter to
-    the <command>configure</command> script if you have
-    <application>GNOME</application>-2 installed so that the
-    <application>GConf</application> schema files are installed in the
-    correct location.</para>
+    <para><command>--sysconfdir=&gnome-old-etc-dir;</command>: Use this parameter to
+    ensure that if <application>GConf</application> has been installed, this
+    package&apos;s schema files will be installed in the correct location instead
+    of <filename class="directory">/usr/etc/</filename>.</para>
 @y
     <para>
-    <option>--sysconfdir=&gnome-etc-dir;</option>:
-    <application>GNOME</application>-2 をインストールしている場合に、このパラメーターを <command>configure</command> スクリプトにおいて指定することで、<application>GConf</application> のスキーマファイル (schema files) を適切なディレクトリにインストールします。
+    <command>--sysconfdir=&gnome-old-etc-dir;</command>:
+    <application>GConf</application> をインストールしている場合に、このパラメーターを <command>configure</command> スクリプトにおいて指定することで、<application>GConf</application> のスキーマファイル (schema files) を <filename
+    class="directory">/usr/etc/</filename> ではない適切なディレクトリにインストールします。
     </para>
 @z
 
 @x
-    <para><parameter>--without-python</parameter>: This parameter is required
-    if <application>Python</application> is not installed. Remove it if
-    <application>Python</application> is installed.</para>
+    <para><option>--without-python</option>: This parameter is required
+    if <application>Python</application> is not installed.</para>
 @y
     <para>
     <parameter>--without-python</parameter>:
     <application>Python</application> をインストールしていない場合は、このパラメーターの指定が必要です。
-    逆に <application>Python</application> をインストールしている場合は、このパラメーター指定を行わないでください。
     </para>
 @z
 

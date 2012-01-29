@@ -23,10 +23,9 @@
     <para>The <application>libgnome</application> package contains the
     <filename class="libraryfile">libgnome</filename> library.</para>
 @y
-<para>
-<application>libgnome</application>
-パッケージは <filename class="libraryfile">libgnome</filename> ライブラリを提供します。
-</para>
+    <para>
+    <application>libgnome</application> パッケージは <filename class="libraryfile">libgnome</filename> ライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -89,12 +88,12 @@
 
 @x
     <bridgehead renderas="sect4">Recommended (if you plan on installing the
-    GNOME desktop)</bridgehead>
-    <para role="recommended"><xref linkend="esound"/></para>
+    GNOME-2 deprecated packages)</bridgehead>
+    <para role="recommended"><xref linkend="libcanberra"/></para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;
     (GNOME desktop をインストールする場合)</bridgehead>
-    <para role="recommended"><xref linkend="esound"/></para>
+    <para role="recommended"><xref linkend="libcanberra"/></para>
 @z
 
 @x
@@ -123,25 +122,25 @@
     <para>Install <application>libgnome</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libgnome</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libgnome</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -159,28 +158,22 @@
     installation and properly record high scores in
     <filename class='directory'>/var/lib/games</filename>.</para>
 @y
-<para>
-<parameter>--localstatedir=/var/lib</parameter>:
-このパラメーターは、環境変数 <envar>LIBGNOME_LOCALSTATEDIR</envar>
-を <filename class='directory'>$GNOME_PREFIX/var</filename>
-ではなく <filename class='directory'>/var/lib</filename>
-に設定します。
-これは <application>GNOME Games</application>
-との同期をとるためであり、ハイスコアの記録ファイルを
-<filename class='directory'>/var/lib/games</filename>
-ディレクトリに保存するためです。
-</para>
+    <para>
+    <parameter>--localstatedir=/var/lib</parameter>:
+    このパラメーターは、環境変数 <envar>LIBGNOME_LOCALSTATEDIR</envar> を <filename
+    class='directory'>$GNOME_PREFIX/var</filename> ではなく <filename
+    class='directory'>/var/lib</filename> に設定します。
+    これは <application>GNOME Games</application> との同期をとるためであり、ハイスコアの記録ファイルを <filename
+    class='directory'>/var/lib/games</filename> ディレクトリに保存するためです。
+    </para>
 @z
 
 @x
-    <para><option>--disable-esd</option>: This parameter is required if
-    <xref linkend="esound"/> is not installed.</para>
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
 @y
-<para>
-<option>--disable-esd</option>:
-このパラメーターは <xref linkend="esound"/>
-をインストールしていない場合は必須です。
-</para>
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
 @z
 
 @x
@@ -224,8 +217,7 @@
           <para>are the non-GUI portion of the <application>GNOME</application>
           libraries.</para>
 @y
-<para>
-<application>GNOME</application>
-ライブラリの非 GUI 部分を提供します。
-</para>
+          <para>
+          <application>GNOME</application> ライブラリの非 GUI 部分を提供します。
+          </para>
 @z

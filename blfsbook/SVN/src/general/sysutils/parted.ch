@@ -78,12 +78,16 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="device-mapper"/> (Required if building
-    <application>udisks</application>)</para>
+    <para role="optional">i
+      <xref linkend="lvm2"/> (device-mapper, required if building 
+        <application>udisks</application>)
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="device-mapper"/>
-    (<application>udisks</application> をビルドする際には必要)</para>
+    <para role="optional">i
+      <xref linkend="lvm2"/>
+      (device-mapper; <application>udisks</application> をビルドする際には必要)
+    </para>
 @z
 
 @x
@@ -178,23 +182,23 @@
 @x parted
           <para>is a partition manipulation program.</para>
 @y
-<para>
-パーティションを操作するプログラムです。
-</para>
+          <para>
+          パーティションを操作するプログラムです。
+          </para>
 @z
 
 @x partprobe
           <para>informs the OS of partition table changes.</para>
 @y
-<para>
-OS に対してパーティションテーブルが変更されたことを通知します。
-</para>
+          <para>
+          OS に対してパーティションテーブルが変更されたことを通知します。
+          </para>
 @z
 
 @x libparted.{so,a}
           <para>contains the <application>Parted</application> API functions.</para>
 @y
-<para>
-<application>Parted</application> API 関数を提供します。
-</para>
+          <para>
+          <application>Parted</application> API 関数を提供します。
+          </para>
 @z

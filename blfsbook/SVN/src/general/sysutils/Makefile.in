@@ -140,20 +140,22 @@ BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
 EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	lzma-utils.ch mc.ch pciutils.ch sysstat.ch sysutils.ch \
 	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
-	DeviceKit.ch udev.ch Device-mapper.ch \
+	DeviceKit.ch udev.ch \
 	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch xz-utils.ch \
 	gvfs.ch libarchive.ch \
 	raptor.ch redland.ch rasqal.ch strigi.ch \
-	autofs.ch initdtools.ch
+	autofs.ch initdtools.ch dbus-bindings.ch \
+	packagekit.ch
 
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	lzma-utils.xml mc.xml pciutils.xml sysstat.xml sysutils.xml \
 	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
-	DeviceKit.xml udev.xml Device-mapper.xml \
+	DeviceKit.xml udev.xml \
 	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml xz-utils.xml \
 	gvfs.xml libarchive.xml \
 	raptor.xml redland.xml rasqal.xml strigi.xml \
-	autofs.xml initdtools.xml
+	autofs.xml initdtools.xml dbus-bindings.xml \
+	packagekit.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -361,7 +363,6 @@ which.xml: $(BOOKdir)/$@ $(srcdir)/which.ch
 zip.xml: $(BOOKdir)/$@ $(srcdir)/zip.ch
 DeviceKit.xml: $(BOOKdir)/$@ $(srcdir)/DeviceKit.ch
 udev.xml: $(BOOKdir)/$@ $(srcdir)/udev.ch
-Device-mapper.xml: $(BOOKdir)/$@ $(srcdir)/Device-mapper.ch
 sg3_utils.xml: $(BOOKdir)/$@ $(srcdir)/sg3_utils.ch
 parted.xml: $(BOOKdir)/$@ $(srcdir)/parted.ch
 eject.xml: $(BOOKdir)/$@ $(srcdir)/eject.ch
@@ -376,6 +377,8 @@ rasqal.xml: $(BOOKdir)/$@ $(srcdir)/rasqal.ch
 strigi.xml: $(BOOKdir)/$@ $(srcdir)/strigi.ch
 autofs.xml: $(BOOKdir)/$@ $(srcdir)/autofs.ch
 initdtools.xml: $(BOOKdir)/$@ $(srcdir)/initdtools.ch
+dbus-bindings.xml: $(BOOKdir)/$@ $(srcdir)/dbus-bindings.ch
+packagekit.xml: $(BOOKdir)/$@ $(srcdir)/packagekit.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

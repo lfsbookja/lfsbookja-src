@@ -23,10 +23,10 @@
     <para>This library provides a Qt implementation of the DBusMenu specs which goal 
     is to expose menus on DBus.</para>
 @y
-<para>
-このライブラリは DBusMenu 仕様の Qt による実装です。
-DBus 上にてメニュー表示を行うことを目的としています。
-</para>
+    <para>
+    このライブラリは DBusMenu 仕様の Qt による実装です。
+    DBus 上にてメニュー表示を行うことを目的としています。
+    </para>
 @z
 
 @x
@@ -119,19 +119,9 @@ DBus 上にてメニュー表示を行うことを目的としています。
     <para>Install <application>libdbusmenu-qt</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libdbusmenu-qt</application>
-をビルドします。
-</para>
-@z
-
-@x
-    <para>Install <application>libdbusmenu-qt</application> by running the following
-    commands:</para>
-@y
-<para>
-以下のコマンドにより <application>libdbusmenu-qt</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libdbusmenu-qt</application> をビルドします。
+    </para>
 @z
 
 @x

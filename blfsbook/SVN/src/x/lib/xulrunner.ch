@@ -28,16 +28,16 @@
     Gnome applications are transitioning to <application>Webkit</application>
     instead of gecko.</para>
 @y
-<!--
-<para>
-<application>Xulrunner</application>
-は、XUL アプリケーションのランタイム環境を提供します。
-また <application>Mozilla</application> のコードベースの主要部分を構成します。
-特に本パッケージは pkgconfig ファイルの形で gecko エンジンを提供するので、これにより
-<application>Epiphany</application> や <application>Yelp</application>
-が利用可能となります。
-</para>
--->
+    <!--
+    <para>
+    <application>Xulrunner</application>
+    は、XUL アプリケーションのランタイム環境を提供します。
+    また <application>Mozilla</application> のコードベースの主要部分を構成します。
+    特に本パッケージは pkgconfig ファイルの形で gecko エンジンを提供するので、これにより
+    <application>Epiphany</application> や <application>Yelp</application>
+    が利用可能となります。
+    </para>
+    -->
     <para><application>Xulrunner</application> is a runtime environment for XUL
     applications, and forms the major part of the
     <application>Mozilla</application> codebase. In particular, it provides the
@@ -118,18 +118,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="alsa-lib"/>, <xref linkend="gtk2"/>,
-    <xref linkend="libidl"/> and <xref linkend="zip"/></para>
+    <xref linkend="zip"/> and <xref linkend="unzip"/>.</para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="alsa-lib"/>, <xref linkend="gtk2"/>,
-    <xref linkend="libidl"/>, <xref linkend="zip"/></para>
+    <xref linkend="zip"/>, <xref linkend="unzip"/>.</para>
 @z
 
 @x
     <para>Note: <application>libjpeg</application> and
     <application>libpng</application> (patched for apng support) should have
     been installed before <application>gdk-pixbuf</application> and should
-    exist on your system. If for some strange reason you haven't installed
+    exist on your system. If for some strange reason you haven&apos;t installed
     them, you should remove the <option>--with-system-jpeg</option> and
     <option>--with-system-png</option> options from the
     <filename>mozconfig</filename> file created below.</para>
@@ -137,7 +137,7 @@
     <para>Note: <application>libjpeg</application> and
     <application>libpng</application> (patched for apng support) should have
     been installed before <application>gdk-pixbuf</application> and should
-    exist on your system. If for some strange reason you haven't installed
+    exist on your system. If for some strange reason you haven&apos;t installed
     them, you should remove the <option>--with-system-jpeg</option> and
     <option>--with-system-png</option> options from the
     <filename>mozconfig</filename> file created below.</para>
@@ -159,6 +159,7 @@
     <xref linkend="startup-notification"/>, <xref linkend="sqlite"/>,
     <ulink url="http://www.webmproject.org/code/">libvpx</ulink>,
     <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
+    <ulink url="http://libevent.org/">Libevent</ulink>,
     <xref linkend="doxygen"/>,
     <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for gnome
     integration), <xref linkend="libnotify"/>, <xref linkend="nspr"/>,
@@ -172,13 +173,14 @@
     <xref linkend="startup-notification"/>, <xref linkend="sqlite"/>,
     <ulink url="http://www.webmproject.org/code/">libvpx</ulink>,
     <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
+    <ulink url="http://libevent.org/">Libevent</ulink>,
     <xref linkend="doxygen"/>,
     <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for gnome
     integration), <xref linkend="libnotify"/>, <xref linkend="nspr"/>,
     <xref linkend="nss"/>, <xref linkend="unzip"/>,
     <xref linkend="wireless_tools"/>,
     <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
-    the jemalloc code), <xref linkend="wget"/></para>
+    the jemalloc code) and <xref linkend="wget"/></para>
 @z
 
 @x
@@ -290,31 +292,33 @@
 @x
     <para><command>for DL in ...</command>: The NSPR and NSS libraries shipped
     with this package are installed into
-    <filename class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename>
-    which means they will not be found at runtime.  By using symbolic links from
-    <filename class="directory">/usr/lib</filename> the libraries will be found
-    and the links can be easily changed to point to a newer version during an
-    upgrade.</para>
+    <filename
+    class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
+    which means they will not be found at runtime.  By using symbolic links
+    from <filename class="directory">/usr/lib</filename> the libraries will be
+    found and the links can be easily changed to point to a newer version
+    during an upgrade.</para>
 @y
     <para><command>for DL in ...</command>: The NSPR and NSS libraries shipped
     with this package are installed into
-    <filename class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename>
-    which means they will not be found at runtime.  By using symbolic links from
-    <filename class="directory">/usr/lib</filename> the libraries will be found
-    and the links can be easily changed to point to a newer version during an
-    upgrade.</para>
+    <filename
+    class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
+    which means they will not be found at runtime.  By using symbolic links
+    from <filename class="directory">/usr/lib</filename> the libraries will be
+    found and the links can be easily changed to point to a newer version
+    during an upgrade.</para>
 @z
 
 @x
     <para><command>ln -sv ../mozilla/plugins ...</command>: Some packages will
     install browser plugins into
-    <filename class='directory'>/usr/lib/mozilla/plugins</filename>.
+    <filename class="directory">/usr/lib/mozilla/plugins</filename>.
     Creating this symlink <application>Xulrunner</application> keeps additional
     plugins in a common directory.</para>
 @y
     <para><command>ln -sv ../mozilla/plugins ...</command>: Some packages will
     install browser plugins into
-    <filename class='directory'>/usr/lib/mozilla/plugins</filename>.
+    <filename class="directory">/usr/lib/mozilla/plugins</filename>.
     Creating this symlink <application>Xulrunner</application> keeps additional
     plugins in a common directory.</para>
 @z
@@ -345,13 +349,13 @@
         <seg>xulrunner, and optionally nspr-config</seg>
         <seg>Numerous libraries, browser components, plugins, extensions, and
         helper modules installed in <filename
-        class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename></seg>
+        class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename></seg>
         <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-devel-&xulrunner-version;, and
         /usr/share/idl/xulrunner-&xulrunner-version;</seg>
 @y
-        <seg>xulrunner と、任意ビルドの nspr-config</seg>
+        <seg>xulrunner と任意ビルドの nspr-config</seg>
         <seg>
         数々のライブラリ、
         ブラウザコンポーネント、

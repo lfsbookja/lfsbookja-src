@@ -29,15 +29,13 @@
     available, the install process will copy any pre-built documentation to your
     system.</para>
 @y
-<para>
-<application>GTK-Doc</application>
-パッケージは、コードから文書を作るためのツールを提供します。
-コード内に記述された所定書式のコメントから、API ドキュメントを生成します。
-このパッケージはオプションであって、もしインストールされていない場合、各種パッケージはドキュメントを生成しません。
-このことは、ドキュメントが一切得られないことを意味するわけではありません。
-<application>GTK-Doc</application>
-が利用できない場合は、各パッケージのインストール処理において、事前にビルドされているドキュメントがコピーされます。
-</para>
+    <para>
+    <application>GTK-Doc</application> パッケージは、コードから文書を作るためのツールを提供します。
+    コード内に記述された所定書式のコメントから、API ドキュメントを生成します。
+    このパッケージはオプションであって、もしインストールされていない場合、各種パッケージはドキュメントを生成しません。
+    このことは、ドキュメントが一切得られないことを意味するわけではありません。
+    <application>GTK-Doc</application> が利用できない場合は、各パッケージのインストール処理において、事前にビルドされているドキュメントがコピーされます。
+    </para>
 @z
 
 @x
@@ -106,7 +104,7 @@
     <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
     <xref linkend="fop"/> (XML PDF support),
     <xref linkend="gnome-doc-utils"/> and
-    <xref linkend="which"/> (builds gtk-doc documentation),
+    <xref linkend="which"/> (required for the test suite and gtk-doc documentation),
     <xref linkend="openjade"/> with
     <xref linkend="sgml-dtd"/> and
     <xref linkend="docbook-dsssl"/>
@@ -117,13 +115,12 @@
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="glib2"/> (テストスイート実行のため),
     <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> または
-    <xref linkend="fop"/> (XML PDF サポートのため),
+    <xref linkend="fop"/> (XML PDF サポート),
     <xref linkend="gnome-doc-utils"/> と
-    <xref linkend="which"/> (gtk-doc 文書生成時),
-    <xref linkend="openjade"/> with
-    <xref linkend="sgml-dtd"/> and
+    <xref linkend="which"/> (テストスイート実行と gtk-doc 文書生成時に必要),
+    <xref linkend="sgml-dtd"/> に対応した <xref linkend="openjade"/> と
     <xref linkend="docbook-dsssl"/>
-    (SGML support, not actively maintained any more),
+    (SGML サポート、ただしメンテナンスはされていない),
     <xref linkend="python"/> (gtkdoc-depscan ビルド時),
     <xref linkend="rarian"/></para>
 @z
@@ -146,25 +143,25 @@
     <para>Install <application>GTK-Doc</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GTK-Doc</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GTK-Doc</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -180,11 +177,11 @@
     the <application>scrollkeeper</application> database. Remove it if you have
     <application>rarian</application> installed.</para>
 @y
-<para>
-<parameter>--disable-scrollkeeper</parameter>: Do not make updates to
-the <application>scrollkeeper</application> database. Remove it if you have
-<application>rarian</application> installed.
-</para>
+    <para>
+    <parameter>--disable-scrollkeeper</parameter>: Do not make updates to
+    the <application>scrollkeeper</application> database. Remove it if you have
+    <application>rarian</application> installed.
+    </para>
 @z
 
 @x

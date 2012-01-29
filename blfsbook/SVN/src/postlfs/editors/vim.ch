@@ -105,10 +105,10 @@
 
 @x
         <para>Translated Vim messages: <ulink
-         url="http://www2.nl.vim.org/extra/vim-&vim-version;-lang.tar.gz"/>
+         url="http://www2.nl.vim.org/extra/vim-7.2-lang.tar.gz"/>
 @y
         <para>翻訳された Vim メッセージ: <ulink
-         url="http://www2.nl.vim.org/extra/vim-&vim-version;-lang.tar.gz"/>
+         url="http://www2.nl.vim.org/extra/vim-7.2-lang.tar.gz"/>
 @z
 
 @x
@@ -129,12 +129,15 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> or
-      <xref linkend="lesstif"/>
+      <xref linkend="lesstif"/>,
       <xref linkend="python"/>,
       <xref linkend="tcl"/>,
       <xref linkend="ruby"/>, and
       <xref linkend="gpm"/>
     </para>
+    <!-- mentioned below as a runtime dependency
+    <xref linkend="rsync"/> (to update the runtime files)
+    -->
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional">
@@ -145,6 +148,9 @@
       <xref linkend="ruby"/>,
       <xref linkend="gpm"/>
     </para>
+    <!-- mentioned below as a runtime dependency
+    <xref linkend="rsync"/> (to update the runtime files)
+    -->
 @z
 
 @x
@@ -269,17 +275,17 @@
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><command>patch &hellip;</command>: These patches are the same as the
-    ones in the LFS build used to update the package with upstream patches
-    and ensure the man pages are placed in the proper locations.</para>
-@y
-    <para>
-    <command>patch &hellip;</command>:
-    これらのパッチは LFS にて用いたものと同じです。
-    アップストリームによるパッチであり、man ページを適切なディレクトリにインストールするようにします。
-    </para>
-@z
+% @x
+%     <para><command>patch &hellip;</command>: These patches are the same as the
+%     ones in the LFS build used to update the package with upstream patches
+%     and ensure the man pages are placed in the proper locations.</para>
+% @y
+%     <para>
+%     <command>patch &hellip;</command>:
+%     これらのパッチは LFS にて用いたものと同じです。
+%     アップストリームによるパッチであり、man ページを適切なディレクトリにインストールするようにします。
+%     </para>
+% @z
 
 @x
     <para><parameter>--with-features=huge</parameter>: This switch enables all

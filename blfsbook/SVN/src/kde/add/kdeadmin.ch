@@ -81,30 +81,42 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/> and
-    <xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libxml2"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/> and
-    <ulink url="http://lilo.go.dyndns.org/">LILO</ulink></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/> and
+      <ulink url="http://lilo.go.dyndns.org/">LILO</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <ulink url="http://lilo.go.dyndns.org/">LILO</ulink></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/>,
+      <ulink url="http://lilo.go.dyndns.org/">LILO</ulink>
+    </para>
 @z
 
 @x
@@ -174,13 +186,13 @@
 @z
 
 @x
-        <seg>kcron, kdat, kpackage, ksysv, and kuser</seg>
-        <seg>None</seg>
-        <seg>None</seg>
+        <seg>kcron, kdat, kpackage, ksysv, kuser, and secpolicy</seg>
+        <seg>kcm_knetworkconfmodule.so, kfile_deb.so, and kfile_rpm.so</seg>
+        <seg>$TRINITY_PREFIX/lib/trinity</seg>
 @y
-        <seg>kcron, kdat, kpackage, ksysv, and kuser</seg>
-        <seg>None</seg>
-        <seg>None</seg>
+        <seg>kcron, kdat, kpackage, ksysv, kuser, secpolicy</seg>
+        <seg>kcm_knetworkconfmodule.so, kfile_deb.so, kfile_rpm.so</seg>
+        <seg>$TRINITY_PREFIX/lib/trinity</seg>
 @z
 
 @x

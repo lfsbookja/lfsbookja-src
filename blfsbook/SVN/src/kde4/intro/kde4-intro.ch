@@ -20,12 +20,11 @@
 @z
 
 @x
-  <para><application>KDE</application> in version 4 is a comprehensive
-  desktop environment with a huge amount of applications written for it
-  and also a huge amount of users. Subsequently, it is refered to 
-  KDE version 4 as <application>KDE4</application>,
-  and to KDE version 3 as <application>KDE3</application> to avoid 
-  confusion in the versions.</para>
+  <para><application>KDE</application> Version 4 is a comprehensive desktop
+  environment with a huge number of applications written for it and a huge
+  amount of users. Subsequently, it is refered to as
+  <application>KDE4</application>.  The earlier version is referredt to as
+  <application>KDE3</application> to avoid confusion.</para>
 @y
   <para>
   <application>KDE</application> のバージョン 4 は、分かりやすいデスクトップ環境であり、これに対応した数多くのアプリケーションが提供されています。
@@ -35,18 +34,17 @@
 @z
 
 @x
-  <para><application>KDE3</application>, which is also in the book,
-  isn't maintained anylonger by the KDE development team because there
-  is the successor in form of <application>KDE4</application> out for
-  years now. The current version is based on <application>Qt4</application> 
-  and has some other conceptual innovations like the Plasmoids and
-  Activities. For more information about this concepts go to the
-  KDE project site at <ulink url="http://www.kde.org/"/>.</para>
+  <para><application>KDE3</application>, now renamed Trinity, is also in the
+  book.  The current version is based on <application>Qt4</application> and has
+  some other conceptual innovations like Plasmoids and Activities. For more
+  information about these concepts go to the KDE project site at <ulink
+  url="http://www.kde.org/"/>.</para>
 @y
   <para>
-  現在 <application>KDE3</application> も本ブック内に含まれています。
-  しかし KDE の開発チームは既にその開発を行っていません。
-  なぜなら、後継となる <application>KDE4</application> が存在し、しかもそれが公開されてから十分な時間を経過しているためです。
-  最新バージョンは <application>Qt4</application> をベースとしており、また Plasmoids や Activities のような最新の考え方に基づく仕様が含まれています。
-  詳しいことは KDE プロジェクトサイト <ulink url="http://www.kde.org/"/> を参照してください。</para>
+  <application>KDE3</application>, now renamed Trinity, is also in the
+  book.  The current version is based on <application>Qt4</application> and has
+  some other conceptual innovations like Plasmoids and Activities. For more
+  information about these concepts go to the KDE project site at <ulink
+  url="http://www.kde.org/"/>.
+  </para>
 @z

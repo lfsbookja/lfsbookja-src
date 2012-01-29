@@ -97,7 +97,6 @@
     <xref linkend="dbus-glib"/>,
     <xref linkend="expat"/>,
     <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>,
-    <xref linkend="GConf"/>,
     <xref linkend="gnome-disk-utility"/>,
     <xref linkend="hal"/>,
     <xref linkend="libarchive"/>,
@@ -114,7 +113,6 @@
     <xref linkend="dbus-glib"/>,
     <xref linkend="expat"/>,
     <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>,
-    <xref linkend="GConf"/>,
     <xref linkend="gnome-disk-utility"/>,
     <xref linkend="hal"/>,
     <xref linkend="libarchive"/>,
@@ -216,25 +214,27 @@
 @z
 
 @x
-        <seg>gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mkdir,
-        gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount, gvfs-move, gvfs-open,
-        gvfs-rename, gvfs-rm, gvfs-save, gvfs-set-attribute, gvfs-trash,
-        gvfs-tree, gvfs-gdu-volume-monitor, gvfsd, gvfsd-burn, gvfsd-computer,
-        gvfsd-dnssd, gvfsd-ftp, gvfsd-localtest, gvfsd-metadata, gvfsd-network,
-        gvfsd-sftp, and gvfsd-trash</seg>
-        <seg>libgiogconf.so, libgioremote-volume-monitor.so, libgvfsdbus.so,
-        libgvfscommon-dnssd.so, and libgvfscommon.so</seg>
+        <seg>gvfs-cat, gvfs-copy, gvfs-gdu-volume-monitor, gvfs-info, gvfs-less,
+        gvfs-ls, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
+        gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
+        gvfs-set-attribute, gvfs-trash, gvfs-tree, gvfsd, gvfsd-burn,
+        gvfsd-computer, gvfsd-dav, gvfsd-dnssd, gvfsd-ftp, gvfsd-http,
+        gvfsd-localtest, gvfsd-metadata, gvfsd-network, gvfsd-sftp, and
+        gvfsd-trash</seg>
+        <seg>libgioremote-volume-monitor.so, libgvfscommon-dnssd.so,
+        libgvfscommon.so, and libgvfsdbus.so</seg>
         <seg>/usr/{include/gvfs-client/gvfs,lib/gvfs,share/gvfs/{mounts,
         remote-volume-monitors}}</seg>
 @y
-        <seg>gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mkdir,
-        gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount, gvfs-move, gvfs-open,
-        gvfs-rename, gvfs-rm, gvfs-save, gvfs-set-attribute, gvfs-trash,
-        gvfs-tree, gvfs-gdu-volume-monitor, gvfsd, gvfsd-burn, gvfsd-computer,
-        gvfsd-dnssd, gvfsd-ftp, gvfsd-localtest, gvfsd-metadata, gvfsd-network,
-        gvfsd-sftp, gvfsd-trash</seg>
-        <seg>libgiogconf.so, libgioremote-volume-monitor.so, libgvfsdbus.so,
-        libgvfscommon-dnssd.so, libgvfscommon.so</seg>
+        <seg>gvfs-cat, gvfs-copy, gvfs-gdu-volume-monitor, gvfs-info, gvfs-less,
+        gvfs-ls, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
+        gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
+        gvfs-set-attribute, gvfs-trash, gvfs-tree, gvfsd, gvfsd-burn,
+        gvfsd-computer, gvfsd-dav, gvfsd-dnssd, gvfsd-ftp, gvfsd-http,
+        gvfsd-localtest, gvfsd-metadata, gvfsd-network, gvfsd-sftp,
+        gvfsd-trash</seg>
+        <seg>libgioremote-volume-monitor.so, libgvfscommon-dnssd.so,
+        libgvfscommon.so, libgvfsdbus.so</seg>
         <seg>/usr/{include/gvfs-client/gvfs,lib/gvfs,share/gvfs/{mounts,
         remote-volume-monitors}}</seg>
 @z

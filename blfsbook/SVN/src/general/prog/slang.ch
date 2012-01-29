@@ -82,14 +82,18 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libpng"/>,
-    <xref linkend="pcre"/>, and
-    <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink></para>
+    <para role="optional">
+      <xref linkend="libpng"/>,
+      <xref linkend="pcre"/>, and
+      <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libpng"/>,
-    <xref linkend="pcre"/>,
-    <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink></para>
+    <para role="optional">
+      <xref linkend="libpng"/>,
+      <xref linkend="pcre"/>,
+      <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink>
+    </para>
 @z
 
 @x
@@ -141,15 +145,15 @@
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
-    This sed fixes a buffer-overflow bug.</para>
-@y
-    <para>
-    <command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
-    この sed コマンドは、バッファオーバーフローのバグを修正します。
-    </para>
-@z
+% @x
+%     <para><command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
+%     This sed fixes a buffer-overflow bug.</para>
+% @y
+%     <para>
+%     <command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
+%     この sed コマンドは、バッファオーバーフローのバグを修正します。
+%     </para>
+% @z
 
 @x
     <para><command>make install_doc_dir=/usr/share/doc/slang-&slang-version;

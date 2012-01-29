@@ -128,11 +128,12 @@
 
 @x
         <seg>nettle-hash, nettle-lfib-stream, pkcs1-conv, and sexp-conv</seg>
-        <seg>libhogweed.a  and libnettle.a</seg>
+        <seg>libhogweed.a and libnettle.a : optionally, libhogweed.so and
+        libnettle.so</seg>
         <seg>/usr/include/nettle</seg>
 @y
         <seg>nettle-hash, nettle-lfib-stream, pkcs1-conv, sexp-conv</seg>
-        <seg>libhogweed.a, libnettle.a</seg>
+        <seg>libhogweed.a, libnettle.a : また任意として libhogweed.so, libnettle.so</seg>
         <seg>/usr/include/nettle</seg>
 @z
 

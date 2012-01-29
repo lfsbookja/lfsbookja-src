@@ -1,7 +1,7 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/genlib
 EXTRA_DIST = glib2.ch libesmtp.ch pcre.ch \
 	aspell.ch gmime.ch libgcrypt.ch libusb-compat.ch popt.ch \
-	dbus-bindings.ch gmp.ch libglade.ch libusb.ch pth.ch expat.ch \
+	gmp.ch libglade.ch libusb.ch pth.ch expat.ch \
 	gwrap.ch libgpg-error.ch libxml.ch fam.ch iso-codes.ch \
 	libgsf.ch libxml2.ch slib.ch gamin.ch ispell.ch libgtkhtml.ch \
 	libxslt.ch gdbm.ch libassuan.ch libidl.ch lzo.ch genlib.ch \
@@ -13,11 +13,13 @@ EXTRA_DIST = glib2.ch libesmtp.ch pcre.ch \
 	libsigc++.ch ptlib.ch glibmm.ch libatasmart.ch libdaemon.ch \
 	telepathy-glib.ch libatomic_ops.ch wv.ch talloc.ch \
 	libdbusmenuqt.ch clucene.ch qca.ch boost.ch \
-	keyutils.ch libunistring.ch
+	keyutils.ch libunistring.ch libgee.ch telepathy-logger.ch \
+	telepathy-mission-control.ch folks.ch json-glib.ch \
+	exempi.ch
 srcdir = @srcdir@
 srcs = glib2.xml libesmtp.xml pcre.xml \
 	aspell.xml gmime.xml libgcrypt.xml libusb-compat.xml popt.xml \
-	dbus-bindings.xml gmp.xml libglade.xml libusb.xml pth.xml expat.xml \
+	gmp.xml libglade.xml libusb.xml pth.xml expat.xml \
 	gwrap.xml libgpg-error.xml libxml.xml fam.xml iso-codes.xml \
 	libgsf.xml libxml2.xml slib.xml gamin.xml ispell.xml libgtkhtml.xml \
 	libxslt.xml gdbm.xml libassuan.xml libidl.xml lzo.xml genlib.xml \
@@ -29,7 +31,9 @@ srcs = glib2.xml libesmtp.xml pcre.xml \
         libsigc++.xml ptlib.xml glibmm.xml libatasmart.xml libdaemon.xml \
 	telepathy-glib.xml libatomic_ops.xml wv.xml talloc.xml \
 	libdbusmenuqt.xml clucene.xml qca.xml boost.xml \
-	keyutils.xml libunistring.xml
+	keyutils.xml libunistring.xml libgee.xml telepathy-logger.xml \
+	telepathy-mission-control.xml folks.xml json-glib.xml \
+	exempi.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -48,7 +52,6 @@ gmime.xml: $(BOOKdir)/$@ $(srcdir)/gmime.ch
 libgcrypt.xml: $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
 libusb-compat.xml: $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
 popt.xml: $(BOOKdir)/$@ $(srcdir)/popt.ch
-dbus-bindings.xml: $(BOOKdir)/$@ $(srcdir)/dbus-bindings.ch
 gmp.xml: $(BOOKdir)/$@ $(srcdir)/gmp.ch
 libglade.xml: $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libusb.xml: $(BOOKdir)/$@ $(srcdir)/libusb.ch
@@ -109,4 +112,10 @@ qca.xml: $(BOOKdir)/$@ $(srcdir)/qca.ch
 boost.xml: $(BOOKdir)/$@ $(srcdir)/boost.ch
 keyutils.xml: $(BOOKdir)/$@ $(srcdir)/keyutils.ch
 libunistring.xml: $(BOOKdir)/$@ $(srcdir)/libunistring.ch
+libgee.xml: $(BOOKdir)/$@ $(srcdir)/libgee.ch
+telepathy-logger.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-logger.ch
+telepathy-mission-control.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-mission-control.ch
+folks.xml: $(BOOKdir)/$@ $(srcdir)/folks.ch
+json-glib.xml: $(BOOKdir)/$@ $(srcdir)/json-glib.ch
+exempi.xml: $(BOOKdir)/$@ $(srcdir)/exempi.ch
 

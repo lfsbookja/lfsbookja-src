@@ -91,22 +91,31 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="expat"/> (preferred) or <!-- both
-    <xref linkend="pkgconfig"/> and --> <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="expat"/> (preferred) or
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="expat"/> (推奨) または <!-- both
-    <xref linkend="pkgconfig"/> and --> <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="expat"/> (推奨) または <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="xorg7-lib"/> and
-    <xref linkend="doxygen"/> (to generate the API documentation)</para>
+    <para role="optional">
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="dbus-glib"/> (to run tests), and
+      <xref linkend="doxygen"/> (to generate the API documentation)
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="xorg7-lib"/>,
-    <xref linkend="doxygen"/> (API ドキュメント生成時には必要)</para>
+    <para role="optional">
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="dbus-glib"/> (テスト実行のため),
+      <xref linkend="doxygen"/> (API ドキュメント生成時に必要)
+    </para>
 @z
 
 @x
@@ -161,30 +170,6 @@
 @z
 
 @x
-    <para>This package's test suite cannot be run without passing additional
-    parameters to <command>configure</command> and exposing additional
-    functionality in the binaries. These interfaces are not intended to be
-    used in a production build of <application>D-BUS</application>, so it
-    will have to be built twice in this situation. If you would like to run
-    the unit tests, issue the following commands:</para>
-@y
-    <para>This package's test suite cannot be run without passing additional
-    parameters to <command>configure</command> and exposing additional
-    functionality in the binaries. These interfaces are not intended to be
-    used in a production build of <application>D-BUS</application>, so it
-    will have to be built twice in this situation. If you would like to run
-    the unit tests, issue the following commands:</para>
-@z
-
-@x
-    <para>Note there has been a report that the tests may fail if running
-    inside a Midnight Commander shell.</para>
-@y
-    <para>Note there has been a report that the tests may fail if running
-    inside a Midnight Commander shell.</para>
-@z
-
-@x
     <para>Install <application>D-BUS</application> by running the following
     commands (you may wish to review the output from
     <command>./configure --help</command> first and add any desired parameters
@@ -197,17 +182,17 @@
     </para>
 @z
 
-@x
-    <para>The <option>--enable-doxygen-docs</option> parameter does not work
-    properly. If you have <application>Doxygen</application> installed and you
-    wish to build the API documentation, issue
-    <command>doxygen</command>.</para>
-@y
-    <para>
-    <option>--enable-doxygen-docs</option> パラメーターは正常に動作しません。
-    <application>Doxygen</application> をインストールしていて、API ドキュメントをビルドする場合は <command>doxygen</command> を実行してください。
-    </para>
-@z
+% @x
+%     <para>The <option>--enable-doxygen-docs</option> parameter does not work
+%     properly. If you have <application>Doxygen</application> installed and you
+%     wish to build the API documentation, issue
+%     <command>doxygen</command>.</para>
+% @y
+%     <para>
+%     <option>--enable-doxygen-docs</option> パラメーターは正常に動作しません。
+%     <application>Doxygen</application> をインストールしていて、API ドキュメントをビルドする場合は <command>doxygen</command> を実行してください。
+%     </para>
+% @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
@@ -218,16 +203,16 @@
     </para>
 @z
 
-@x
-    <para>If you built the API documentation, install it by issuing the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
-@y
-    <para>
-    API ドキュメントをビルドした場合は
-    <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してドキュメントをインストールしてください。
-    </para>
-@z
+% @x
+%     <para>If you built the API documentation, install it by issuing the
+%     following commands as the <systemitem class="username">root</systemitem>
+%     user:</para>
+% @y
+%     <para>
+%     API ドキュメントをビルドした場合は
+%     <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してドキュメントをインストールしてください。
+%     </para>
+% @z
 
 @x
     <title>Command Explanations</title>

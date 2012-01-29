@@ -79,30 +79,42 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libxml2"/>, and
-    <xref linkend="libart_lgpl"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxml2"/>, and
+      <xref linkend="libart_lgpl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="libart_lgpl"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libart_lgpl"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="xscreensaver"/></para>
+    <para role="optional">
+      <xref linkend="xscreensaver"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="xscreensaver"/></para>
+    <para role="optional">
+      <xref linkend="xscreensaver"/>
+    </para>
 @z
 
 @x

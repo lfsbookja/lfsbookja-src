@@ -14,19 +14,18 @@
 @z
 
 @x
-    <title>Introduction to XFS</title>
+    <title>Introduction to xfsprogs</title>
 @y
-    <title>XFS の概要</title>
+    <title>xfsprogs の概要</title>
 @z
 
 @x
-    <para>The <application>XFS</application> package contains administration
+    <para>The <application>xfsprogs</application> package contains administration
     and debugging tools for the XFS file system.</para>
 @y
-<para>
-<application>XFS</application>
-パッケージは、XFS ファイルシステムの管理ツール、デバッグツールを提供します。
-</para>
+    <para>
+    <application>xfsprogs</application> パッケージは XFS ファイルシステムの管理ツール、デバッグツールを提供します。
+    </para>
 @z
 
 @x
@@ -82,17 +81,17 @@
     <ulink url="http://oss.sgi.com/projects/xfs/">XFS</ulink> project
     page.</para></caution>
 @y
-<caution><para>
-The XFS developers regularly remove the current
-package when a new package is available.  Unfortunately, this has led to
-severe incompatibilities, including
-<ulink url="http://bugs.debian.org/465737">unmountable filesystems</ulink>,
-due to kernel version requirements in new versions of the package.  Using a
-version not in the book is strongly discouraged. Additional information,
-is available at the
-<ulink url="http://oss.sgi.com/projects/xfs/">XFS</ulink> project
-page.
-</para></caution>
+    <caution><para>
+    The XFS developers regularly remove the current
+    package when a new package is available.  Unfortunately, this has led to
+    severe incompatibilities, including
+    <ulink url="http://bugs.debian.org/465737">unmountable filesystems</ulink>,
+    due to kernel version requirements in new versions of the package.  Using a
+    version not in the book is strongly discouraged. Additional information,
+    is available at the
+    <ulink url="http://oss.sgi.com/projects/xfs/">XFS</ulink> project
+    page.
+    </para></caution>
 @z
 
 @x
@@ -104,34 +103,34 @@ page.
 @z
 
 @x
-    <title>Installation of XFS</title>
+    <title>Installation of xfsprogs</title>
 @y
-    <title>XFS のインストール</title>
+    <title>xfsprogs のインストール</title>
 @z
 
 @x
-    <para>Install <application>XFS</application> by running the following
+    <para>Install <application>xfsprogs</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>XFS</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>xfsprogs</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -144,20 +143,19 @@ page.
     <para><command>make DEBUG=-DNDEBUG</command>: Turns off debugging
     symbols.</para>
 @y
-<para>
-<command>make DEBUG=-DNDEBUG</command>:
-デバッグシンボルを無効にします。
-</para>
+    <para>
+    <command>make DEBUG=-DNDEBUG</command>: デバッグシンボルを無効にします。
+    </para>
 @z
 
 @x
     <para><parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
     sets the owner and group of the installed files.</para>
 @y
-<para>
-<parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
-sets the owner and group of the installed files.
-</para>
+    <para>
+    <parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
+    sets the owner and group of the installed files.
+    </para>
 @z
 
 @x
@@ -168,14 +166,14 @@ sets the owner and group of the installed files.
     <filename class="libraryfile">libreadline.so</filename> library, in order
     to allow editing interactive commands.</para>
 @y
-<para>
-<parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
-extra configuration options to the <filename>configure</filename> script.
-The example <parameter>--enable-readline=yes</parameter> parameter
-enables linking the XFS programs with the
-<filename class="libraryfile">libreadline.so</filename> library, in order
-to allow editing interactive commands.
-</para>
+    <para>
+    <parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
+    extra configuration options to the <filename>configure</filename> script.
+    The example <parameter>--enable-readline=yes</parameter> parameter
+    enables linking the XFS programs with the
+    <filename class="libraryfile">libreadline.so</filename> library, in order
+    to allow editing interactive commands.
+    </para>
 @z
 
 @x
@@ -183,11 +181,11 @@ to allow editing interactive commands.
     the end of the <command>make</command> command overrides the
     default optimization settings.</para>
 @y
-<para>
-<parameter>OPTIMIZER="..."</parameter>: Adding this parameter to
-the end of the <command>make</command> command overrides the
-default optimization settings.
-</para>
+    <para>
+    <parameter>OPTIMIZER="..."</parameter>: Adding this parameter to
+    the end of the <command>make</command> command overrides the
+    default optimization settings.
+    </para>
 @z
 
 @x
@@ -195,11 +193,11 @@ default optimization settings.
     static XFS libraries, their headers and the corresponding
     documentation.</para>
 @y
-<para>
-<command>make install-dev</command>: This command installs
-static XFS libraries, their headers and the corresponding
-documentation.
-</para>
+    <para>
+    <command>make install-dev</command>: This command installs
+    static XFS libraries, their headers and the corresponding
+    documentation.
+    </para>
 @z
 
 @x

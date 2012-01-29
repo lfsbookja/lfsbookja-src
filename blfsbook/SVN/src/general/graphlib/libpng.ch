@@ -23,10 +23,9 @@
     <para>The <application>libpng</application> package contains libraries used
     by other programs for reading and writing PNG files.</para>
 @y
-<para>
-<application>libpng</application>
-パッケージは、他のプログラムが PNG ファイルの読み書きを行うためのライブラリを提供します。
-</para>
+    <para>
+    <application>libpng</application> パッケージは、他のプログラムが PNG ファイルの読み書きを行うためのライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -108,39 +107,38 @@
 @z
 
 @x
-    <para>If you want to patch libpng to support apng files, apply the patch:</para>
+    <para>If you want to patch libpng to support apng files, apply the
+    patch:</para>
 @y
-<para>
-apng ファイルのサポートを組み入れたい場合は、以下のパッチを適用します。
-</para>
+    <para>
+    apng ファイルのサポートを組み入れたい場合は、以下のパッチを適用します。
+    </para>
 @z
 
 @x
     <para>Install <application>libpng</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libpng</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libpng</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command>
-を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-になって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> になって以下を実行します。
+    </para>
 @z
 
 @x
@@ -160,14 +158,14 @@ apng ファイルのサポートを組み入れたい場合は、以下のパッ
 @z
 
 @x
-        <seg>libpng-config and libpng12-config</seg>
-        <seg>libpng.{so,a} and libpng12.{so,a}</seg>
-        <seg>/usr/include/libpng12 and
+        <seg>libpng-config and libpng15-config</seg>
+        <seg>libpng.so and libpng15.so</seg>
+        <seg>/usr/include/libpng15 and
         /usr/share/doc/libpng-&libpng-version;</seg>
 @y
-        <seg>libpng-config, libpng12-config</seg>
-        <seg>libpng.{so,a}, libpng12.{so,a}</seg>
-        <seg>/usr/include/libpng12,
+        <seg>libpng-config, libpng15-config</seg>
+        <seg>libpng.so, libpng15.so</seg>
+        <seg>/usr/include/libpng15,
         /usr/share/doc/libpng-&libpng-version;</seg>
 @z
 
@@ -178,41 +176,39 @@ apng ファイルのサポートを組み入れたい場合は、以下のパッ
 @z
 
 @x libpng-config
-          <para>is a symlink to <command>libpng12-config</command>.</para>
+          <para>is a symlink to <command>libpng15-config</command>.</para>
 @y
-<para>
-<command>libpng12-config</command> へのシンボリックリンク。
-</para>
+          <para>
+          <command>libpng15-config</command> へのシンボリックリンク。
+          </para>
 @z
 
-@x libpng12-config
+@x libpng15-config
           <para>provides configuration information for
           <application>libpng</application>.</para>
 @y
-<para>
-<application>libpng</application> に対する設定情報を提供します。
-</para>
+          <para>
+          <application>libpng</application> に対する設定情報を提供します。
+          </para>
 @z
 
 @x
-        <term><filename class='libraryfile'>libpng.{so,a} and
-        libpng12.{so,a}</filename></term>
+        <term><filename class='libraryfile'>libpng.so and
+        libpng15.so</filename></term>
 @y
-        <term><filename class='libraryfile'>libpng.{so,a},
-        libpng12.{so,a}</filename></term>
+        <term><filename class='libraryfile'>libpng.so,
+        libpng15.so</filename></term>
 @z
 
-@x libpng.{so,a} and libpng12.{so,a}
+@x libpng.so and libpng15.so
           <para>are a collection of routines used to create and manipulate PNG
-          format graphics files. The PNG format was designed as a replacement for
-          GIF and, to a lesser extent, TIFF, with many improvements and extensions
-          and lack of patent problems.</para>
+          format graphics files. The PNG format was designed as a replacement
+          for GIF and, to a lesser extent, TIFF, with many improvements and
+          extensions and lack of patent problems.</para>
 @y
-<para>
-グラフィックフォーマットの一つである PNG
-を生成したり取り扱ったりするための処理ルーチンを提供します。
-PNG フォーマットは GIF と、TIFF のある程度の代替として設計されたものです。
-さまざまな改良と拡張が行われていますが、特許の問題は解消していません。
-</para>
+          <para>
+          グラフィックフォーマットの一つである PNG を生成したり取り扱ったりするための処理ルーチンを提供します。
+          PNG フォーマットは GIF と、TIFF のある程度の代替として設計されたものです。
+          さまざまな改良と拡張が行われていますが、特許の問題は解消していません。
+          </para>
 @z
-

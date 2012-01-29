@@ -23,10 +23,9 @@
     <para>The <application>glibmm</application> package is a set of C++ bindings
     for <application>Glib</application>.</para>
 @y
-<para>
-<application>glibmm</application> パッケージは <application>Glib</application>
-に対する C++ バインディングを提供します。
-</para>
+    <para>
+    <application>glibmm</application> パッケージは <application>Glib</application> に対する C++ バインディングを提供します。
+    </para>
 @z
 
 @x
@@ -105,25 +104,25 @@
     <para>Install <application>glibmm</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>glibmm</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>glibmm</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -169,16 +168,15 @@
 @x libgiomm-2.4.so
           <para>contains the Gio API classes.</para>
 @y
-<para>
-Gio API クラスを提供します。
-</para>
+          <para>
+          Gio API クラスを提供します。
+          </para>
 @z
 
 @x libglibmm-2.4.so
           <para>contains the Glib API classes.</para>
 @y
-<para>
-Glib API クラスを提供します。
-</para>
+          <para>
+          Glib API クラスを提供します。
+          </para>
 @z
-

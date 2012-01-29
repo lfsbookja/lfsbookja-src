@@ -14,19 +14,14 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=&gnome-etc-dir;</parameter>: This parameter
-    causes the configuration files to be installed in
-    <filename class="directory">&gnome-etc-dir;</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/etc</filename>. Additionally
-    (if applicable), the parameter ensures that the
-    <application>GConf</application>-2 database is correctly updated.</para>
+    <para><parameter>--sysconfdir=<envar>$GNOME_SYSCONFDIR</envar></parameter>:
+    Setting the sysconfdir using this parameter will ensure that the sysconfdir
+    is consistent with the installation environment and the package will be
+    installed in the correct location.</para>
 @y
-<para>
-<parameter>--sysconfdir=&gnome-etc-dir;</parameter>:
-このパラメーターは、設定ファイルのインストール先を
-<filename class="directory">$GNOME_PREFIX/etc</filename> ではなく
-<filename class="directory">&gnome-etc-dir;</filename> とします。
-さらに (可能ならば) <application>GConf</application>-2
-のデータベースが正しく更新されるようにします。
-</para>
+    <para>
+    <parameter>--sysconfdir=<envar>$GNOME_SYSCONFDIR</envar></parameter>:
+    このパラメーターにより sysconfdir を定めます。
+    これにより一貫してインストール中の sysconfdir を定め、パッケージを正しいディレクトリにインストールします。
+    </para>
 @z

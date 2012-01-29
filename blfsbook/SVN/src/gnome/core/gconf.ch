@@ -23,10 +23,9 @@
     <para>The <application>GConf</application> package contains a
     configuration database system.</para>
 @y
-<para>
-<application>GConf</application>
-パッケージは、さまざまな設定を行うためのデータベースシステムを提供します。
-</para>
+    <para>
+    <application>GConf</application> パッケージは、さまざまな設定を行うためのデータベースシステムを提供します。
+    </para>
 @z
 
 @x
@@ -72,20 +71,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-        url="&patch-root;/GConf-&GConf-version;-sysconfdir-1.patch"/></para>
-@y
-        <para>必要なパッチ: <ulink
-        url="&patch-root;/GConf-&GConf-version;-sysconfdir-1.patch"/></para>
-@z
-
-@x
     <bridgehead renderas="sect3">GConf Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">GConf の依存パッケージ</bridgehead>
@@ -93,26 +78,29 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="ORBit2"/> and
-    <xref linkend="polkit"/></para>
+    <para role="required"><xref linkend="dbus-glib"/>,
+    <xref linkend="intltool"/>, and
+    <xref linkend="libxml2"/><!--, and
+    <xref linkend="ORBit2"/>--></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="ORBit2"/>,
-    <xref linkend="polkit"/></para>
+    <para role="required"><xref linkend="dbus-glib"/>,
+    <xref linkend="intltool"/>,
+    <xref linkend="libxml2"/><!--, and
+    <xref linkend="ORBit2"/>--></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gtk2"/> (Required if building a
+    <para role="recommended"><xref linkend="gtk3"/> (Required if building a
     <application>GNOME</application> desktop.
-    <command>gconf-sanity-check-2</command> will not build otherwise.)</para>
+    <command>gconf-sanity-check-2</command> will not build otherwise.) and
+    <xref linkend="polkit"/></para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gtk2"/>
-    (<application>GNOME</application> デスクトップ環境を構築する場合に必要。
-    これがなければ <command>gconf-sanity-check-2</command>
-    はビルドされない。)
-    </para>
+    <para role="recommended"><xref linkend="gtk3"/> (<application>GNOME</application> デスクトップ環境を構築する場合に必要。
+    これがなければ <command>gconf-sanity-check-2</command> はビルドされない。),
+    <xref linkend="polkit"/></para>
 @z
 
 @x
@@ -143,27 +131,26 @@
     <para>Install <application>GConf</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GConf</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GConf</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -195,39 +182,47 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=&gnome-etc-dir;</parameter>: This parameter
-    causes the <application>GConf-2</application> configuration database to be
-    built in <filename class="directory">&gnome-etc-dir;</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/etc</filename>. This installation
-    controls all future installations of <application>GConf-2</application>
-    schemas. If you change the location (which includes eliminating this
-    parameter), it <emphasis role='strong'>must</emphasis> be consistent for
-    every subsequent package installation that updates the
-    <application>GConf-2</application> configuration database.</para>
+    <para><parameter>--libexecdir=<envar>$GNOME_PREFIX</envar>/lib/GConf</parameter>:
+    This parameter causes the libexec files to be installed in the preferred
+    location of <filename class="directory">$GNOME_PREFIX/lib/GConf</filename>
+    instead of <filename
+    class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para><parameter>--sysconfdir=&gnome-etc-dir;</parameter>: This parameter
-causes the <application>GConf-2</application> configuration database to be
-built in <filename class="directory">&gnome-etc-dir;</filename> instead of
-<filename class="directory">$GNOME_PREFIX/etc</filename>. This installation
-controls all future installations of <application>GConf-2</application>
-schemas. If you change the location (which includes eliminating this
-parameter), it <emphasis role='strong'>must</emphasis> be consistent for
-every subsequent package installation that updates the
-<application>GConf-2</application> configuration database.</para>
+    <para><parameter>--libexecdir=<envar>$GNOME_PREFIX</envar>/lib/GConf</parameter>:
+    This parameter causes the libexec files to be installed in the preferred
+    location of <filename class="directory">$GNOME_PREFIX/lib/GConf</filename>
+    instead of <filename
+    class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @z
 
 @x
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/GConf</parameter>: This parameter causes the libexec files
-    to be installed in the preferred location of
-    <filename class="directory">$GNOME_PREFIX/lib/GConf</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+    <para><parameter>--disable-orbit</parameter>: This parameter is required if
+    <application>ORBit2</application> is not installed.
+    <application>ORBit2</application> is a deprecated package.</para>
 @y
-<para><parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/GConf</parameter>: This parameter causes the libexec files
-to be installed in the preferred location of
-<filename class="directory">$GNOME_PREFIX/lib/GConf</filename> instead of
-<filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+    <para><parameter>--disable-orbit</parameter>: This parameter is required if
+    <application>ORBit2</application> is not installed.
+    <application>ORBit2</application> is a deprecated package.</para>
+@z
+
+@x
+    <para><option>--enable-static=no</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--enable-static=no</option>: This switch prevents the static
+    libraries being installed.</para>
+@z
+
+@x
+    <para><command>install -v -m755 -d
+    $GNOME_SYSCONFDIR/gconf/gconf.xml.system</command>: Creates a missing
+    directory. Without this directory, <command>gconf-sanity-check-2</command>
+    will fail during <application>GDM</application> startup and login.</para>
+@y
+    <para><command>install -v -m755 -d
+    $GNOME_SYSCONFDIR/gconf/gconf.xml.system</command>: Creates a missing
+    directory. Without this directory, <command>gconf-sanity-check-2</command>
+    will fail during <application>GDM</application> startup and login.</para>
 @z
 
 @x
@@ -247,21 +242,23 @@ to be installed in the preferred location of
 @z
 
 @x
-        <seg>gconf-merge-tree, gconftool-2, gconf-defaults-mechanism,
-        gconf-sanity-check-2, and gconfd-2</seg>
-        <seg>libgconf-2.{so,a}, libgconfbackend-xml.{so,a}, and
-        libgconfbackend-oldxml.{so,a}</seg>
-        <seg>&gnome-etc-dir;/gconf/{2,gconf.xml.defaults,gconf.xml.mandatory,
-        gconf.xml.system}, <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,
-        lib/GConf/2,share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
+        <seg>gconf-defaults-mechanism, gconf-merge-tree, gconf-sanity-check-2,
+        gconfd-2, gconftool-2, and gsettings-data-convert</seg>
+        <seg>libgconf-2.{so,a}, libgconfbackend-oldxml.{so,a},
+        libgconfbackend-xml.{so,a}, and libgsettingsgconfbackend.{so,a}</seg>
+        <seg><envar>$GNOME_SYSCONFDIR</envar>/{gconf/{2,gconf.xml.defaults,
+        gconf.xml.mandatory,gconf.xml.system},xdg/autostart}
+        <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,lib/GConf/2,
+        share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
 @y
-        <seg>gconf-merge-tree, gconftool-2, gconf-defaults-mechanism,
-        gconf-sanity-check-2, and gconfd-2</seg>
-        <seg>libgconf-2.{so,a}, libgconfbackend-xml.{so,a},
-        libgconfbackend-oldxml.{so,a}</seg>
-        <seg>&gnome-etc-dir;/gconf/{2,gconf.xml.defaults,gconf.xml.mandatory,
-        gconf.xml.system}, <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,
-        lib/GConf/2,share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
+        <seg>gconf-defaults-mechanism, gconf-merge-tree, gconf-sanity-check-2,
+        gconfd-2, gconftool-2, gsettings-data-convert</seg>
+        <seg>libgconf-2.{so,a}, libgconfbackend-oldxml.{so,a},
+        libgconfbackend-xml.{so,a}, libgsettingsgconfbackend.{so,a}</seg>
+        <seg><envar>$GNOME_SYSCONFDIR</envar>/{gconf/{2,gconf.xml.defaults,
+        gconf.xml.mandatory,gconf.xml.system},xdg/autostart}
+        <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,lib/GConf/2,
+        share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
 @z
 
 @x
@@ -273,31 +270,30 @@ to be installed in the preferred location of
 @x gconf-merge-tree
           <para>merges an xml filesystem hierarchy.</para>
 @y
-<para>
-
-merges an xml filesystem hierarchy.
-</para>
+          <para>
+          
+          merges an xml filesystem hierarchy.
+          </para>
 @z
 
 @x gconftool-2
           <para>is a command line tool for manipulating the
           <application>GConf</application> database.</para>
 @y
-<para>
-
-is a command line tool for manipulating the
-<application>GConf</application> database.
-</para>
+          <para>
+          
+          is a command line tool for manipulating the
+          <application>GConf</application> database.
+          </para>
 @z
 
 @x libgconf-2.{so,a}
           <para>provide the functions necessary to maintain the
           configuration database.</para>
 @y
-<para>
-
-provide the functions necessary to maintain the
-configuration database.
-</para>
+          <para>
+          
+          provide the functions necessary to maintain the
+          configuration database.
+          </para>
 @z
-

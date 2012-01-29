@@ -23,10 +23,9 @@
     <para>The <application>hd2u</application> package contains
     an any to any text format converter.</para>
 @y
-<para>
-<application>hd2u</application>
-パッケージは、さまざまなテキストフォーマット間の変換を行うコンバータを提供します。
-</para>
+    <para>
+    <application>hd2u</application> パッケージは、さまざまなテキストフォーマット間の変換を行うコンバーターを提供します。
+    </para>
 @z
 
 @x
@@ -103,25 +102,25 @@
     <para>Install <application>hd2u</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>hd2u</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>hd2u</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -160,8 +159,7 @@
           <para>converts text between various OS formats (such as
           converting from DOS format to Unix).</para>
 @y
-<para>
-テキストファイルにて (DOS フォーマットから Unix フォーマットへの変換のように)
-さまざまな OS フォーマット間での変換を行います。
-</para>
+          <para>
+          テキストファイルにて (DOS フォーマットから Unix フォーマットへの変換のように) さまざまな OS フォーマット間での変換を行います。
+          </para>
 @z

@@ -14,18 +14,6 @@
 @z
 
 @x
-  <!ENTITY dbus-glib-buildsize     "10 MB (17 MB total if docs are installed)">
-@y
-  <!ENTITY dbus-glib-buildsize     "10 MB (ドキュメントインストール時は総計 17 MB)">
-@z
-
-@x
-  <!ENTITY dbus-python-buildsize     "12 MB (includes installing all the documentation)">
-@y
-  <!ENTITY dbus-python-buildsize     "12 MB (すべてのドキュメントのインストールを含む)">
-@z
-
-@x
 <sect1 id="dbus-bindings" xreflabel="D-Bus Bindings">
 @y
 <sect1 id="dbus-bindings" xreflabel="D-Bus バインディング">
@@ -69,19 +57,16 @@
     <para>The <application>GLib</application>,
     <application>Python</application>, <application>Qt3</application>, and
     <application>GObject</application> Bindings are included on this page. Other
-    language bindings will be added soon. Until then, see the <ulink
+    language bindings are available at the <ulink
     url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
     Bindings</ulink> page for information.</para>
 @y
     <para>
-    本節では
-    <application>GLib</application>,
+    本節では <application>GLib</application>,
     <application>Python</application>, <application>Qt3</application>,
     <application>GObject</application> の各バインディングを示します。
-    他のプログラミング言語に対するバインディングは、いずれ掲載していきます。
-    他の情報については、<ulink
-    url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
-    バインディング</ulink> のページを参照してください。
+    他のプログラミング言語に対するバインディングの情報は、<ulink
+    url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus バインディング</ulink> のページを参照してください。
     </para>
 @z
 
@@ -153,22 +138,30 @@
 
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="dbus"/>,
-      <xref linkend="glib2"/>, and
-      <xref linkend="expat"/></para>
+      <para role="required">
+        <xref linkend="dbus"/>,
+        <xref linkend="glib2"/>, and
+        <xref linkend="expat"/>
+      </para>
 @y
       <bridgehead renderas="sect5">&j-Required;</bridgehead>
-      <para role="required"><xref linkend="dbus"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="expat"/></para>
+      <para role="required">
+        <xref linkend="dbus"/>,
+        <xref linkend="glib2"/>,
+        <xref linkend="expat"/>
+      </para>
 @z
 
 @x
       <bridgehead renderas="sect5">Optional to Build the API Documentation</bridgehead>
-      <para role="optional"><xref linkend="doxygen"/></para>
+      <para role="optional">
+        <xref linkend="doxygen"/>
+      </para>
 @y
       <bridgehead renderas="sect5">任意； API ドキュメント構築時</bridgehead>
-      <para role="optional"><xref linkend="doxygen"/></para>
+      <para role="optional">
+        <xref linkend="doxygen"/>
+      </para>
 @z
 
 @x
@@ -190,23 +183,22 @@
       running the following commands:</para>
 @y
       <para>
-      以下のコマンドを実行して
-      <application>D-Bus GLib バインディング</application> をビルドします。
+      以下のコマンドを実行して <application>D-Bus GLib バインディング</application> をビルドします。
       </para>
 @z
 
-@x
-      <para>The <option>--enable-doxygen-docs</option> parameter does not work
-      properly. If you have <application>Doxygen</application> installed and you
-      wish to build the API documentation, issue
-      <command>doxygen</command>.</para>
-@y
-      <para>
-      <option>--enable-doxygen-docs</option> パラメーターは正常に動作しません。
-      <application>Doxygen</application> をインストール済で、API ドキュメントを構築したい場合は
-      <command>doxygen</command> と入力してください。
-      </para>
-@z
+% @x
+%       <para>The <option>--enable-doxygen-docs</option> parameter does not work
+%       properly. If you have <application>Doxygen</application> installed and you
+%       wish to build the API documentation, issue
+%       <command>doxygen</command>.</para>
+% @y
+%       <para>
+%       <option>--enable-doxygen-docs</option> パラメーターは正常に動作しません。
+%       <application>Doxygen</application> をインストール済で、API ドキュメントを構築したい場合は
+%       <command>doxygen</command> と入力してください。
+%       </para>
+% @z
 
 @x
       <para>To test the results, issue: <command>make check</command>. Note that
@@ -216,8 +208,7 @@
 @y
       <para>
       ビルド結果をテストする場合は <command>make check</command> を入力します。
-      より総括的なテストも実施することができますが、それは
-      <application>D-BUS</application> パッケージにおける手順と同様に行います。
+      より総括的なテストも実施することができますが、それは <application>D-BUS</application> パッケージにおける手順と同様に行います。
       その場合にはこのパッケージを二度ビルドしなければなりません。
       </para>
 @z
@@ -230,16 +221,16 @@
       </para>
 @z
 
-@x
-      <para>If you built the API documentation, install it by issuing the
-      following commands as the <systemitem class="username">root</systemitem>
-      user:</para>
-@y
-      <para>
-      API ドキュメントをビルドする場合は <systemitem
-      class="username">root</systemitem> ユーザーになって以下を実行しインストールします。
-      </para>
-@z
+% @x
+%       <para>If you built the API documentation, install it by issuing the
+%       following commands as the <systemitem class="username">root</systemitem>
+%       user:</para>
+% @y
+%       <para>
+%       API ドキュメントをビルドする場合は <systemitem
+%       class="username">root</systemitem> ユーザーになって以下を実行しインストールします。
+%       </para>
+% @z
 
 @x
       <title>Command Explanations</title>
@@ -378,33 +369,44 @@
 
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="python"/> and
-      <xref linkend="dbus-glib"/></para>
+      <para role="required">
+        <xref linkend="python"/> and
+        <xref linkend="dbus-glib"/>
+      </para>
 @y
       <bridgehead renderas="sect5">&j-Required;</bridgehead>
-      <para role="required"><xref linkend="python"/>,
-      <xref linkend="dbus-glib"/></para>
+      <para role="required">
+        <xref linkend="python"/>,
+        <xref linkend="dbus-glib"/>
+      </para>
 @z
 
 @x
       <bridgehead renderas="sect5">Optional</bridgehead>
-      <para role="optional"><xref linkend="pygobject"/> (required to run the
-      test suite)</para>
+      <para role="optional">
+        <xref linkend="pygobject2"/> (required to run the test suite)
+      </para>
 @y
       <bridgehead renderas="sect5">&j-Optional;</bridgehead>
-      <para role="optional"><xref linkend="pygobject"/> (テストスイート実行時に必要)</para>
+      <para role="optional">
+        <xref linkend="pygobject2"/> (テストスイート実行時に必要)
+      </para>
 @z
 
 @x
       <bridgehead renderas="sect5">Optional
       (Required to build the API and HTML Documentation)</bridgehead>
-      <para role="optional"><ulink url="http://epydoc.sourceforge.net/">Epydoc</ulink>
-      and <ulink url="http://docutils.sourceforge.net/">Docutils</ulink></para>
+      <para role="optional">
+        <ulink url="http://epydoc.sourceforge.net/">Epydoc</ulink> and
+        <ulink url="http://docutils.sourceforge.net/">Docutils</ulink>
+      </para>
 @y
       <bridgehead renderas="sect5">&j-Optional;
       (API および HTML ドキュメント構築時に必要)</bridgehead>
-      <para role="optional"><ulink url="http://epydoc.sourceforge.net/">Epydoc</ulink>,
-      <ulink url="http://docutils.sourceforge.net/">Docutils</ulink></para>
+      <para role="optional">
+        <ulink url="http://epydoc.sourceforge.net/">Epydoc</ulink>,
+        <ulink url="http://docutils.sourceforge.net/">Docutils</ulink>
+      </para>
 @z
 
 @x
@@ -491,9 +493,11 @@ API ドキュメントをビルドした場合、
 @z
 
 @x
-  <title>D-Bus Qt3 Bindings</title>
+  <sect2 id="dbus-qt3" xreflabel="D-Bus Trinity Qt3 Bindings-&dbus-qt3-version;">
+  <title>Trinity D-Bus Qt3 Bindings</title>
 @y
-  <title>D-Bus Qt3 バインディング</title>
+  <sect2 id="dbus-qt3" xreflabel="D-Bus Trinity Qt3 バインディング-&dbus-qt3-version;">
+  <title>Trinity D-Bus Qt3 バインディング</title>
 @z
 
 @x
@@ -558,12 +562,16 @@ API ドキュメントをビルドした場合、
 
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="dbus"/> and
-      <xref linkend="qt"/></para>
+      <para role="required">
+        <xref linkend="dbus"/> and
+        <xref linkend="qt"/>
+      </para>
 @y
       <bridgehead renderas="sect5">&j-Required;</bridgehead>
-      <para role="required"><xref linkend="dbus"/>,
-      <xref linkend="qt"/></para>
+      <para role="required">
+        <xref linkend="dbus"/>,
+        <xref linkend="qt"/>
+      </para>
 @z
 
 @x
@@ -575,35 +583,42 @@ API ドキュメントをビルドした場合、
 @z
 
 @x
-      <title>Installation of D-Bus Qt3 Bindings</title>
+      <title>Installation of D-Bus Trinity/Qt3 Bindings</title>
 @y
-      <title>D-Bus Qt3 バインディングのインストール</title>
+      <title>D-Bus Trinity/Qt3 バインディングのインストール</title>
 @z
 
 @x
-      <para>Install <application>D-Bus Qt3 Bindings</application> by
+      <note><para>Be sure your environment is set up as described in 
+      <xref linkend='kde-pre-install-config'/></para></note>
+@y
+      <note><para>Be sure your environment is set up as described in 
+      <xref linkend='kde-pre-install-config'/></para></note>
+@z
+
+@x
+      <para>Install <application>D-Bus Trinity/Qt3 Bindings</application> by
       running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>D-Bus Qt3 Bindings</application>
-をビルドします。
-</para>
+      <para>
+      以下のコマンドを実行して <application>D-Bus Trinity/Qt3 Bindings</application> をビルドします。
+      </para>
 @z
 
 @x
       <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+      <para>
+      &j-notTestSuite;
+      </para>
 @z
 
 @x
       <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
 @z
 
 @x
@@ -615,7 +630,7 @@ API ドキュメントをビルドした場合、
 @x
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Library</segtitle>
-        <segtitle>Installed Directories</segtitle>
+        <segtitle>Installed Directory</segtitle>
 @y
         <segtitle>&j-InstalledPrograms;</segtitle>
         <segtitle>&j-InstalledLibraries;</segtitle>
@@ -624,12 +639,12 @@ API ドキュメントをビルドした場合、
 
 @x
           <seg>None</seg>
-          <seg>libdbus-qt-1.so</seg>
-          <seg>None</seg>
+          <seg>libdbus-tqt-1.so</seg>
+          <seg>$TRINITY_PREFIX/include/dbus-1.0</seg>
 @y
           <seg>なし</seg>
-          <seg>libdbus-qt-1.so</seg>
-          <seg>なし</seg>
+          <seg>libdbus-tqt-1.so</seg>
+          <seg>$TRINITY_PREFIX/include/dbus-1.0</seg>
 @z
 
 @x
@@ -638,12 +653,12 @@ API ドキュメントをビルドした場合、
         <bridgehead renderas="sect4">&j-ShortDescriptions;</bridgehead>
 @z
 
-@x libdbus-qt-1.{so,a}
-            <para>contains <application>Qt3</application> interface functions
+@x libdbus-tqt-1.so
+            <para>contains <application>Trinity/Qt3</application> interface functions
             to the D-Bus API.</para>
 @y
             <para>
-            D-Bus API への <application>Qt3</application> インターフェース関数を提供します。
+            D-Bus API への <application>Trinity/Qt3</application> インターフェース関数を提供します。
             </para>
 @z
 

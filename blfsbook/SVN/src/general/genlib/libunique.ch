@@ -23,10 +23,9 @@
     <para>The <application>libunique</application> package contains a
     library for writing single instance applications.</para>
 @y
-<para>
-<application>libunique</application>
-パッケージは、シングルインスタンスのアプリケーションを構築するためのライブラリを提供します。
-</para>
+    <para>
+    <application>libunique</application> パッケージは、シングルインスタンスのアプリケーションを構築するためのライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -79,18 +78,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/></para>
+    <para role="required"><xref linkend="gtk3"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/></para>
+    <para role="required"><xref linkend="gtk3"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/></para>
+    <para role="optional"><xref linkend="dbus-glib"/>,
+    <xref linkend="gobject-introspection"/>, and
+    <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/></para>
+    <para role="optional"><xref linkend="dbus-glib"/>,
+    <xref linkend="gobject-introspection"/>,
+    <xref linkend="gtk-doc"/></para>
 @z
 
 @x
@@ -111,27 +114,26 @@
     <para>Install <application>libunique</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libunique</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libunique</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -158,12 +160,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libunique-1.0.{so,a}</seg>
-        <seg>/usr/{include/unique-1.0/unique,share/gtk-doc/html/unique}</seg>
+        <seg>libunique-3.0.so</seg>
+        <seg>/usr/{include/unique-3.0/unique,share/gtk-doc/html/unique-3.0}</seg>
 @y
         <seg>なし</seg>
-        <seg>libunique-1.0.{so,a}</seg>
-        <seg>/usr/{include/unique-1.0/unique,share/gtk-doc/html/unique}</seg>
+        <seg>libunique-3.0.so</seg>
+        <seg>/usr/{include/unique-3.0/unique,share/gtk-doc/html/unique-3.0}</seg>
 @z
 
 @x
@@ -172,11 +174,11 @@
       <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
-@x libunique-1.0.{so,a}
-          <para>contains the libunique API functions for single instance support.</para>
+@x libunique-1.0.so
+          <para>contains the libunique API functions for single instance
+          support.</para>
 @y
-<para>
-シングルインスタンスの構築をサポートする libunique API 関数を提供します。
-</para>
+          <para>
+          シングルインスタンスの構築をサポートする libunique API 関数を提供します。
+          </para>
 @z
-

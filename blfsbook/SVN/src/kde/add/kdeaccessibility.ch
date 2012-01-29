@@ -83,30 +83,42 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="kdebase"/></para>
+    <para role="required">
+      <xref linkend="kdebase"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libxml2"/>, and
-    <xref linkend="alsa"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxml2"/>, and
+      <xref linkend="alsa"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="alsa"/></para>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="alsa"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="akode"/></para>
+    <para role="optional">
+      <xref linkend="akode"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="akode"/></para>
+    <para role="optional">
+      <xref linkend="akode"/>
+    </para>
 @z
 
 @x
@@ -130,23 +142,23 @@
 @x
     <para>Several <application>KDE</application> accessibility  programs access
     other programs at run time for rendering speech from text. These include
-    <xref linkend="freetts"/>, <ulink
-    url="http://www.cstr.ed.ac.uk/projects/festival/">Festival</ulink>, <ulink
-    url="http://www.speech.cs.cmu.edu/flite/index.html">Festival Lite</ulink>,
-    <ulink url='http://epos.ure.cas.cz/'>Epos</ulink>, or <ulink
-    url='http://tcts.fpms.ac.be/synthesis/mbrola.html'>MBROLA</ulink> with
-    optionally  <ulink
-    url='http://www.ikp.uni-bonn.de/dt/forsch/phonetik/hadifix/HADIFIXforMBROLA.html'>Txt2pho</ulink>.</para>
+    <xref linkend="freetts"/>, 
+    <ulink url="http://www.cstr.ed.ac.uk/projects/festival/">Festival</ulink>, 
+    <ulink url="http://www.speech.cs.cmu.edu/flite/index.html">Festival Lite</ulink>,
+    <ulink url='http://epos.ure.cas.cz/'>Epos</ulink>, or 
+    <ulink url='http://tcts.fpms.ac.be/synthesis/mbrola.html'>MBROLA</ulink> 
+    with optionally  
+    <ulink url='http://www.ikp.uni-bonn.de/dt/forsch/phonetik/hadifix/HADIFIXforMBROLA.html'>Txt2pho</ulink>.</para>
 @y
     <para>Several <application>KDE</application> accessibility  programs access
     other programs at run time for rendering speech from text. These include
-    <xref linkend="freetts"/>, <ulink
-    url="http://www.cstr.ed.ac.uk/projects/festival/">Festival</ulink>, <ulink
-    url="http://www.speech.cs.cmu.edu/flite/index.html">Festival Lite</ulink>,
-    <ulink url='http://epos.ure.cas.cz/'>Epos</ulink>, or <ulink
-    url='http://tcts.fpms.ac.be/synthesis/mbrola.html'>MBROLA</ulink> with
-    optionally  <ulink
-    url='http://www.ikp.uni-bonn.de/dt/forsch/phonetik/hadifix/HADIFIXforMBROLA.html'>Txt2pho</ulink>.</para>
+    <xref linkend="freetts"/>, 
+    <ulink url="http://www.cstr.ed.ac.uk/projects/festival/">Festival</ulink>, 
+    <ulink url="http://www.speech.cs.cmu.edu/flite/index.html">Festival Lite</ulink>,
+    <ulink url='http://epos.ure.cas.cz/'>Epos</ulink>, or 
+    <ulink url='http://tcts.fpms.ac.be/synthesis/mbrola.html'>MBROLA</ulink> 
+    with optionally  
+    <ulink url='http://www.ikp.uni-bonn.de/dt/forsch/phonetik/hadifix/HADIFIXforMBROLA.html'>Txt2pho</ulink>.</para>
 @z
 
 @x

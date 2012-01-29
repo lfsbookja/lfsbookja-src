@@ -14,19 +14,18 @@
 @z
 
 @x
-    <title>Introduction to ReiserFS</title>
+    <title>Introduction to reiserfsprogs</title>
 @y
-    <title>ReiserFS の概要</title>
+    <title>reiserfsprogs の概要</title>
 @z
 
 @x
-    <para>The <application>ReiserFS</application> package contains various
+    <para>The <application>reiserfsprogs</application> package contains various
     utilities for use with the Reiser file system.</para>
 @y
-<para>
-<application>ReiserFS</application>
-パッケージは、Reiser ファイルシステムを利用するためのさまざまなユーティリティを提供します。
-</para>
+    <para>
+    <application>reiserfsprogs</application> パッケージは、Reiser ファイルシステムを利用するためのさまざまなユーティリティを提供します。
+    </para>
 @z
 
 @x
@@ -80,35 +79,34 @@
 @z
 
 @x
-    <title>Installation of ReiserFS</title>
+    <title>Installation of reiserfsprogs</title>
 @y
-    <title>ReiserFS のインストール</title>
+    <title>reiserfsprogs のインストール</title>
 @z
 
 @x
-    <para>Install <application>ReiserFS</application> by running the following
+    <para>Install <application>reiserfsprogs</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>ReiserFS</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>reiserfsprogs</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -117,32 +115,29 @@
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><parameter>--prefix=/usr</parameter>: This ensures that
-    the manual pages are installed in the correct location while still
-    installing the programs in <filename class="directory">/sbin</filename> as
-    they should be.</para>
-@y
-<para>
-<parameter>--prefix=/usr</parameter>:
-これを指定するのは man ページを適切なディレクトリにインストールするためです。
-これを指定しても、プログラム類は <filename class="directory">/sbin</filename>
-ディレクトリにインストールされます。
-</para>
-@z
+% @x
+%     <para><parameter>--prefix=/usr</parameter>: This ensures that
+%     the manual pages are installed in the correct location while still
+%     installing the programs in <filename class="directory">/sbin</filename> as
+%     they should be.</para>
+% @y
+%     <para>
+%     <parameter>--prefix=/usr</parameter>:
+%     これを指定するのは man ページを適切なディレクトリにインストールするためです。
+%     これを指定しても、プログラム類は <filename class="directory">/sbin</filename> ディレクトリにインストールされます。
+%     </para>
+% @z
 
 @x
     <para><parameter>--sbindir=/sbin</parameter>: This ensures that the
-    <application>ReiserFS</application> utilities are installed in
-    <filename class="directory">/sbin</filename> as they should be.</para>
+    <application>reiserfsprogs</application> utilities are installed in
+    <filename class="directory">/sbin</filename>.</para>
 @y
-<para>
-<parameter>--sbindir=/sbin</parameter>:
-このオプションは <application>ReiserFS</application>
-のユーティリティプログラムを
-<filename class="directory">/sbin</filename>
-ディレクトリにインストールします。
-</para>
+    <para>
+    <parameter>--sbindir=/sbin</parameter>:
+    このオプションは <application>reiserfsprogs</application> のユーティリティプログラムを <filename
+    class="directory">/sbin</filename> ディレクトリにインストールします。
+    </para>
 @z
 
 @x
@@ -186,32 +181,28 @@
           <application>ReiserFS</application> file
           system found on the device.</para>
 @y
-<para>
-<application>ReiserFS</application>
-ファイルシステムに発生したトラブルを解消するために利用することができます。
-本コマンドをオプションなしに実行すると、デバイス上に存在する
-<application>ReiserFS</application>
-ファイルシステムのスーパーブロックをすべて表示します。
-</para>
+          <para>
+          <application>ReiserFS</application>
+          ファイルシステムに発生したトラブルを解消するために利用することができます。
+          本コマンドをオプションなしに実行すると、デバイス上に存在する <application>ReiserFS</application> ファイルシステムのスーパーブロックをすべて表示します。
+          </para>
 @z
 
 @x mkreiserfs
           <para>creates a <application>ReiserFS</application> file system.</para>
 @y
-<para>
-<application>ReiserFS</application>
-ファイルシステムを生成します。
-</para>
+          <para>
+          <application>ReiserFS</application> ファイルシステムを生成します。
+          </para>
 @z
 
 @x reiserfsck
           <para>is used to check or repair a
           <application>ReiserFS</application> file system.</para>
 @y
-<para>
-<application>ReiserFS</application>
-ファイルシステムをチェックまたは修復します。
-</para>
+          <para>
+          <application>ReiserFS</application> ファイルシステムをチェックまたは修復します。
+          </para>
 @z
 
 @x reiserfstune
@@ -219,21 +210,17 @@
           journal. <emphasis>WARNING</emphasis>: Don't use this utility without
           first reading the man page thoroughly.</para>
 @y
-<para>
-<application>ReiserFS</application>
-のジャーナルを調整するために利用します。
-<emphasis>注意</emphasis>:
-本プログラムは、必ず man ページを一通り読んでから利用してください。
-</para>
+          <para>
+          <application>ReiserFS</application> のジャーナルを調整するために利用します。
+          <emphasis>注意</emphasis>: 本プログラムは、必ず man ページを一通り読んでから利用してください。
+          </para>
 @z
 
 @x resize_reiserfs
           <para>is used to resize an unmounted
           <application>ReiserFS</application> file system.</para>
 @y
-<para>
-<application>ReiserFS</application>
-ファイルシステムをリサイズまたはアンマウントします。
-</para>
+          <para>
+          <application>ReiserFS</application> ファイルシステムをリサイズまたはアンマウントします。
+          </para>
 @z
-

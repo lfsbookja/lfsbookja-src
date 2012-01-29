@@ -73,26 +73,34 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
-    <filename class='libraryfile'>libffi</filename> is built), and
-    <xref linkend="python"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
+        <filename class='libraryfile'>libffi</filename> is built), and
+      <xref linkend="python"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="libffi"/> または <xref linkend="gcc"/>
-    (<filename class='libraryfile'>libffi</filename> をビルドするために Java がビルドされたもの),
-    <xref linkend="python"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="libffi"/> または <xref linkend="gcc"/>
+        (<filename class='libraryfile'>libffi</filename> をビルドするために Java がビルドされたもの),
+      <xref linkend="python"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="cairo"/> (Required for the tests) and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="cairo"/> (Required for the tests) and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="cairo"/> (テスト実施時に必要),
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="cairo"/> (テスト実施時に必要),
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -107,15 +115,6 @@
     <title>Installation of gobject-introspection</title>
 @y
     <title>gobject-introspection のインストール</title>
-@z
-
-@x
-      <para>If you have Python-2.7 installed, issue the following command to
-      prevent a build failure:</para>
-@y
-      <para>
-      Python-2.7 をインストールしている場合は、ビルドエラーを回避するために以下のコマンドを実行します。
-      </para>
 @z
 
 @x
@@ -178,17 +177,25 @@
 @z
 
 @x
-        <seg>g-ir-compiler and g-ir-generate</seg>
+        <seg>g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool, g-ir-generate,
+        and g-ir-scanner</seg>
+
         <seg>_giscanner.{so,a} and libgirepository-1.0.{so,a}</seg>
-        <seg>/usr/{include/gobject-introspection-1.0,lib/{girepository-1.0,
-        gobject-introspection/giscanner},share/{gir-1.0,
-        gobject-introspection-1.0}}</seg>
+        
+        <seg>/usr/include/gobject-introspection-1.0,
+             /usr/lib/{girepository-1.0,gobject-introspection},
+             /usr/lib/share/{gir-1.0,gobject-introspection-1.0}
+        </seg>
 @y
-        <seg>g-ir-compiler, g-ir-generate</seg>
+        <seg>g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool, g-ir-generate,
+        g-ir-scanner</seg>
+
         <seg>_giscanner.{so,a}, libgirepository-1.0.{so,a}</seg>
-        <seg>/usr/{include/gobject-introspection-1.0,lib/{girepository-1.0,
-        gobject-introspection/giscanner},share/{gir-1.0,
-        gobject-introspection-1.0}}</seg>
+        
+        <seg>/usr/include/gobject-introspection-1.0,
+             /usr/lib/{girepository-1.0,gobject-introspection},
+             /usr/lib/share/{gir-1.0,gobject-introspection-1.0}
+        </seg>
 @z
 
 @x

@@ -21,15 +21,13 @@
 
 @x
   <para>Each of the packages in this chapter depend on the base
-  <application>KDE</application> installation procedures, but each is an
+  <application>Trinity/KDE3</application> installation procedures, but each is an
   independent group of programs that can be optionally installed.  Few users
   will want to install every package, but instead review and install only the
   ones desired.</para>
 @y
-  <para>
-  本章に示す各パッケージは、基本的な <application>KDE</application> インストール手順に依存します。
-
-  but each is an
+  <para>Each of the packages in this chapter depend on the base
+  <application>Trinity/KDE3</application> installation procedures, but each is an
   independent group of programs that can be optionally installed.  Few users
   will want to install every package, but instead review and install only the
   ones desired.</para>

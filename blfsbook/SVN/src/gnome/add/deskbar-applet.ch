@@ -23,10 +23,10 @@
     <para>The <application>deskbar-applet</application> package is a universal
     search and navigation bar for <application>GNOME</application>.</para>
 @y
-<para>
-<application>deskbar-applet</application> package is a universal
-search and navigation bar for <application>GNOME</application>.
-</para>
+    <para>
+    <application>deskbar-applet</application> package is a universal
+    search and navigation bar for <application>GNOME</application>.
+    </para>
 @z
 
 @x
@@ -81,12 +81,20 @@ search and navigation bar for <application>GNOME</application>.
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="dbus-python"/>,
     <xref linkend="gnome-desktop"/>, and
+    <!-- FIXME:ken -->
+    Gnome-Python-Desktop-2.30.2</para>
+    <!--
     <xref linkend="gnome-python-desktop"/></para>
+    -->
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="dbus-python"/>,
     <xref linkend="gnome-desktop"/>,
+    <!-- FIXME:ken -->
+    Gnome-Python-Desktop-2.30.2</para>
+    <!--
     <xref linkend="gnome-python-desktop"/></para>
+    -->
 @z
 
 @x
@@ -117,10 +125,9 @@ search and navigation bar for <application>GNOME</application>.
     <para>Install <application>deskbar-applet</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>deskbar-applet</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>deskbar-applet</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -134,10 +141,9 @@ search and navigation bar for <application>GNOME</application>.
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -217,8 +223,8 @@ search and navigation bar for <application>GNOME</application>.
 @x deskbar-applet
           <para>is the universal search and navigation bar applet.</para>
 @y
-<para>
-
-is the universal search and navigation bar applet.
-</para>
+          <para>
+          
+          is the universal search and navigation bar applet.
+          </para>
 @z

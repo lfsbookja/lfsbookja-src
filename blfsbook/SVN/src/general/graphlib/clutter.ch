@@ -24,10 +24,9 @@
     software library for creating fast, visually rich and animated graphical
     user interfaces.</para>
 @y
-<para>
-<application>clutter</application>
-パッケージは、高速で視覚性に富んだ、あるいはアニメーション機能を有したグラフィカルユーザーインターフェースを生成するオープンソースソフトウェアライブラリです。
-</para>
+    <para>
+    <application>clutter</application> パッケージは、高速で視覚性に富んだ、あるいはアニメーション機能を有したグラフィカルユーザーインターフェースを生成するオープンソースソフトウェアライブラリです。
+    </para>
 @z
 
 @x
@@ -80,22 +79,38 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/> and
-    <xref linkend="mesalib"/></para>
+    <para role="required"><xref linkend="atk"/>,
+    <xref linkend="cairo"/>,
+    <!-- FIXME:ken -->
+    cogl-1.8.2,
+    <!--
+    <xref linkend="cogl"/>,
+    -->
+    <xref linkend="gdk-pixbuf"/>,
+    <xref linkend="json-glib"/>,
+    <xref linkend="mesalib"/>, and
+    <xref linkend="pango"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
-    <xref linkend="mesalib"/></para>
+    <para role="required"><xref linkend="atk"/>,
+    <xref linkend="cairo"/>,
+    <!-- FIXME:ken -->
+    cogl-1.8.2,
+    <!--
+    <xref linkend="cogl"/>,
+    -->
+    <xref linkend="gdk-pixbuf"/>,
+    <xref linkend="json-glib"/>,
+    <xref linkend="mesalib"/>,
+    <xref linkend="pango"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gir-repository"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gir-repository"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
 @x
@@ -136,27 +151,27 @@
     <para>Install <application>clutter</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>clutter</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>clutter</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue: <command>make check</command> (you must be
+    in an xterm or similar to do this, because it launches some windows).</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    (この際にはウィンドウ起動が行われるため、xterm などから実行することが必要です。)
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -173,17 +188,17 @@
     <application>W3m</application> are installed and you wish to build the
     application developers manual.</para>
 @y
-<para>
-<option>--enable-manual</option>:
-このオプションは、アプリケーション開発マニュアルをビルドしたい場合に指定します。
-その場合には以下がインストールされていることが必要です:
-<application>DocBook-utils</application>, 
-<application>xmlto</application>,
-<application>JadeTeX</application>, 
-さらに以下のいずれか：
-<application>Links</application>,
-<application>Lynx</application>,
-<application>W3m</application></para>
+    <para>
+    <option>--enable-manual</option>:
+    このオプションは、アプリケーション開発マニュアルをビルドしたい場合に指定します。
+    その場合には以下がインストールされていることが必要です:
+    <application>DocBook-utils</application>, 
+    <application>xmlto</application>,
+    <application>JadeTeX</application>, 
+    さらに以下のいずれか：
+    <application>Links</application>,
+    <application>Lynx</application>,
+    <application>W3m</application></para>
 @z
 
 @x
@@ -205,13 +220,13 @@
 @x
         <seg>None</seg>
         <seg>libclutter-glx-1.0.so</seg>
-        <seg>/usr/{include/clutter-1.0/{clutter/{glx,json,x11},cogl},
-        share/gtk-doc/html/{clutter,cogl}}</seg>
+        <seg>/usr/{include/clutter-1.0/{cally,clutter/{glx,x11}},
+        share/gtk-doc/html/{cally,clutter}}</seg>
 @y
         <seg>なし</seg>
         <seg>libclutter-glx-1.0.so</seg>
-        <seg>/usr/{include/clutter-1.0/{clutter/{glx,json,x11},cogl},
-        share/gtk-doc/html/{clutter,cogl}}</seg>
+        <seg>/usr/{include/clutter-1.0/{cally,clutter/{glx,x11}},
+        share/gtk-doc/html/{cally,clutter}}</seg>
 @z
 
 @x
@@ -223,7 +238,7 @@
 @x libclutter-glx-1.0.so
           <para>contains the clutter API functions.</para>
 @y
-<para>
-clutter の API 関数を提供します。
-</para>
+          <para>
+          clutter の API 関数を提供します。
+          </para>
 @z

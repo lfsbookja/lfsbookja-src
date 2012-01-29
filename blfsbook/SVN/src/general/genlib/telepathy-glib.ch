@@ -96,10 +96,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gobject-introspection"/>,
+    <xref linkend="gtk-doc"/>, and
+    <xref linkend="vala"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gobject-introspection"/>,
+    <xref linkend="gtk-doc"/>,
+    <xref linkend="vala"/></para>
 @z
 
 @x
@@ -165,14 +169,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libtelepathy-glib.{so.a}</seg>
-        <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,
-        share/gtk-doc/html/telepathy-glib}</seg>
+        <seg>libtelepathy-glib.{so,a}</seg>
+        <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,lib/telepathy-glib,share/gtk-doc/html/telepathy-glib}</seg>
 @y
         <seg>なし</seg>
-        <seg>libtelepathy-glib.{so.a}</seg>
-        <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,
-        share/gtk-doc/html/telepathy-glib}</seg>
+        <seg>libtelepathy-glib.{so,a}</seg>
+        <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,lib/telepathy-glib,share/gtk-doc/html/telepathy-glib}</seg>
 @z
 
 @x

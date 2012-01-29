@@ -50,6 +50,7 @@ AC_CONFIG_FILES([Makefile
 		 src/gnome/Makefile
 		 src/gnome/add/Makefile
 		 src/gnome/core/Makefile
+		 src/gnome/deprecated/Makefile
 		 src/gnome/otherlibs/Makefile
 		 src/introduction/Makefile
 		 src/introduction/important/Makefile

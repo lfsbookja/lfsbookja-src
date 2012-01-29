@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY kdelibs-buildsize     "254 MB (additional 426 MB for API docs)">
-  <!ENTITY kdelibs-time          "13.1 SBU (additional 3.0 SBU for API docs)">
-@y
-  <!ENTITY kdelibs-buildsize     "254 MB (API ドキュメントインストール時はさらに 426 MB)">
-  <!ENTITY kdelibs-time          "13.1 SBU (API ドキュメントインストール時はさらに 3.0 SBU)">
-@z
-
-@x
     <title>Introduction to Kdelibs</title>
 @y
     <title>Kdelibs の概要</title>
@@ -29,14 +21,14 @@
 
 @x
     <para>This package includes programs and libraries that are central to the
-    development and execution of a <application>KDE</application> program,
+    development and execution of a <application>Trinity/KDE3</application> program,
     as well as internationalization files for these libraries, miscellaneous
-    HTML documentation, theme modules and regression tests.</para>
+    HTML documentation, and theme modules.</para>
 @y
     <para>
     本パッケージは数多くのプログラムやライブラリを提供します。
-    これらは <application>KDE</application> プログラムの実行や開発を行うための基本的なプログラム群です。
-    またライブラリに対しての国際化ファイルや HTML ドキュメント、テーマモジュール、縮退テストも含まれます。
+    これらは <application>Trinity/KDE3</application> プログラムの実行や開発を行うための基本的なプログラム群です。
+    またライブラリに対しての国際化ファイルや HTML ドキュメント、テーマモジュールも含まれます。
     </para>
 @z
 
@@ -83,18 +75,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-@y
-        <para>必須のパッチ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">Kdelibs Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">Kdelibs の依存パッケージ</bridgehead>
@@ -102,72 +82,54 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="qt"/></para>
+    <para role="required"><xref linkend="tqtinterface"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="qt"/></para>
+    <para role="required"><xref linkend="tqtinterface"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="aRts"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libart_lgpl"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="gamin"/>,
-    <xref linkend="openssl"/>, and
-    <xref linkend="libidn"/></para>
+    <para role="recommended">
+      <xref linkend="aRts"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libart_lgpl"/>,
+      <xref linkend="libidn"/>, and
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="aRts"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libart_lgpl"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="gamin"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="libidn"/></para>
+    <para role="recommended">
+      <xref linkend="aRts"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libart_lgpl"/>,
+      <xref linkend="libidn"/>,
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libtiff"/>,
-    <xref linkend="aspell"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="alsa"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-    <xref linkend="jasper"/>,
-    <ulink url="http://www.lua.org/">Lua</ulink> (version &lt; 5.1),
-    <ulink url="http://www.opensource.apple.com/darwinsource/tarballs/apsl/">mDNSResponder</ulink>,
-    <ulink url="http://sourceforge.net/projects/libthai">LibThai</ulink>,
-    <ulink url="http://www.ivrix.org.il/projects/spell-checker/">Hspell</ulink>,
-    <ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libacl</ulink>
-    (requires <ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libattr</ulink>),
-    <xref linkend="sudo"/>,
-    <xref linkend="graphviz"/>, and
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="aspell"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="libtiff"/>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
+      <ulink url="http://www.ivrix.org.il/projects/spell-checker/">Hspell</ulink>, 
+      <xref linkend="sudo"/>, and 
+      <ulink url="http://packages.debian.org/sid/libutempter">utempter</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libtiff"/>,
-    <xref linkend="aspell"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="alsa"/>,
-    <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-    <xref linkend="jasper"/>,
-    <ulink url="http://www.lua.org/">Lua</ulink> (version &lt; 5.1),
-    <ulink url="http://www.opensource.apple.com/darwinsource/tarballs/apsl/">mDNSResponder</ulink>,
-    <ulink url="http://sourceforge.net/projects/libthai">LibThai</ulink>,
-    <ulink url="http://www.ivrix.org.il/projects/spell-checker/">Hspell</ulink>,
-    <ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libacl</ulink>
-    (<ulink url="ftp://oss.sgi.com/projects/xfs/cmd_tars/">libattr</ulink> が必要),
-    <xref linkend="sudo"/>,
-    <xref linkend="graphviz"/>,
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="aspell"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="libtiff"/>,
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
+      <ulink url="http://www.ivrix.org.il/projects/spell-checker/">Hspell</ulink>, 
+      <xref linkend="sudo"/>,
+      <ulink url="http://packages.debian.org/sid/libutempter">utempter</ulink>
+    </para>
 @z
 
 @x
@@ -189,7 +151,7 @@
 @z
 
 @x
-    <para>The <application>KDE</application> libraries access other programs at
+    <para>The <application>Trinity/KDE3</application> libraries access other programs at
     run time. One additional package that has not been mentioned already is
     <ulink url="http://packages.debian.org/unstable/source/pmount/">
     pmount</ulink>.  This enables auto-mounting of hotplugged devices at
@@ -197,11 +159,10 @@
     needed to enable the full integration of <application>KDE</application>
     with <xref linkend="hal"/>.</para>
 @y
-    <para>
-    <application>KDE</application> ライブラリは、実行時に他のプログラムにアクセスします。
-    そういったプログラムの中でも、まだ説明していないものに <ulink url="http://packages.debian.org/unstable/source/pmount/">pmount</ulink> があります。
-    
-    This enables auto-mounting of hotplugged devices at
+    <para>The <application>Trinity/KDE3</application> libraries access other programs at
+    run time. One additional package that has not been mentioned already is
+    <ulink url="http://packages.debian.org/unstable/source/pmount/">
+    pmount</ulink>.  This enables auto-mounting of hotplugged devices at
     /media/[device_name] for any user without any fstab modification. It is
     needed to enable the full integration of <application>KDE</application>
     with <xref linkend="hal"/>.</para>
@@ -239,24 +200,6 @@
 @z
 
 @x
-      <para><emphasis>The usual building of the API documentation in this package
-      will run forever because of a bug in <application>doxygen</application>
-      versions 1.5.8 and earlier.</emphasis>  There is a symbolic link in the
-      <filename class='directory'>kdeprint</filename> directory that is not
-      handled properly.  To fix this, either update to the current version of
-      <application>doxygen</application> or delete the link, generate the
-      documentation, and recreate the symbolic link:</para>
-@y
-      <para><emphasis>The usual building of the API documentation in this package
-      will run forever because of a bug in <application>doxygen</application>
-      versions 1.5.8 and earlier.</emphasis>  There is a symbolic link in the
-      <filename class='directory'>kdeprint</filename> directory that is not
-      handled properly.  To fix this, either update to the current version of
-      <application>doxygen</application> or delete the link, generate the
-      documentation, and recreate the symbolic link:</para>
-@z
-
-@x
       <para>The <command>make apidox</command> command generates a lot of
       errors and warnings.  In some cases it complains that Helvetica fonts are
       missing and substitutes a font that does not fit boxes properly.  You can
@@ -280,20 +223,19 @@
 
 @x
       <para>The documents generated are HTML and are found in <filename
-      class='directory'>&kde-dir;/share/doc/HTML/en/kdelibs-apidocs</filename>.
+      class='directory'>$TRINITY_PREFIX/share/doc/HTML/en/kdelibs-apidocs</filename>.
       </para>
 @y
       <para>The documents generated are HTML and are found in <filename
-      class='directory'>&kde-dir;/share/doc/HTML/en/kdelibs-apidocs</filename>.
+      class='directory'>$TRINITY_PREFIX/share/doc/HTML/en/kdelibs-apidocs</filename>.
       </para>
 @z
 
 @x
-    <para>This package does not come with a test suite that works with
-    <application>GCC</application>-&gcc-version;.</para>
+    <para>This package does not come with a test suite.</para>
 @y
     <para>
-    本パッケージには <application>GCC</application>-&gcc-version; で動作するテストスイートは提供されていません。
+    &j-notTestSuite;
     </para>
 @z
 
@@ -303,64 +245,6 @@
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&j-CommandExplanations;</title>
-@z
-
-@x
-    <para><command>sed -i ... kio/kio/kdirwatch.cpp</command>: This command is
-    necessary to prevent a conflict in linux headers.  The equivalent
-    instructions that are deleted are now within glibc.</para>
-@y
-    <para><command>sed -i ... kio/kio/kdirwatch.cpp</command>: This command is
-    necessary to prevent a conflict in linux headers.  The equivalent
-    instructions that are deleted are now within glibc.</para>
-@z
-
-@x
-    <para><parameter>--prefix=&kde-dir;</parameter>: This option tells the process
-    to install the package in <filename class="directory">&kde-dir;</filename>.</para>
-@y
-    <para><parameter>--prefix=&kde-dir;</parameter>: This option tells the process
-    to install the package in <filename class="directory">&kde-dir;</filename>.</para>
-@z
-
-@x
-    <para><parameter>--disable-debug</parameter>: This option causes the
-    package to be compiled without debugging code.</para>
-@y
-    <para><parameter>--disable-debug</parameter>: This option causes the
-    package to be compiled without debugging code.</para>
-@z
-
-@x
-    <para><parameter>--disable-dependency-tracking</parameter>: This option
-    speeds up one time builds.</para>
-@y
-    <para><parameter>--disable-dependency-tracking</parameter>: This option
-    speeds up one time builds.</para>
-@z
-
-@x
-    <para><parameter>--sysconfdir=/etc/kde</parameter>: This option places
-    configuration files in compliance with the <ulink
-    url='http://www.pathname.com/fhs/pub/fhs-2.3.html#ETCHOSTSPECIFICSYSTEMCONFIGURATION'
-    >Filesystem Hierarchy Standard</ulink>.  If you omit this parameter, the
-    configuration files will be placed in <filename
-    class='directory'>$KDE_PREFIX/etc</filename> which may be desirable if
-    you have multiple versions of <application>KDE</application> installed.</para>
-@y
-    <para><parameter>--sysconfdir=/etc/kde</parameter>: This option places
-    configuration files in compliance with the <ulink
-    url='http://www.pathname.com/fhs/pub/fhs-2.3.html#ETCHOSTSPECIFICSYSTEMCONFIGURATION'
-    >Filesystem Hierarchy Standard</ulink>.  If you omit this parameter, the
-    configuration files will be placed in <filename
-    class='directory'>$KDE_PREFIX/etc</filename> which may be desirable if
-    you have multiple versions of <application>KDE</application> installed.</para>
 @z
 
 @x
@@ -465,11 +349,9 @@
 @x
     <para>The number of programs and libraries installed by
     <application>kdelibs</application> prohibits an explanation of each one
-    in this section. Instead, see the <ulink url="http://docs.kde.org/">KDE
-    Documentation</ulink>.</para>
+    in this section.</para>
 @y
     <para>The number of programs and libraries installed by
     <application>kdelibs</application> prohibits an explanation of each one
-    in this section. Instead, see the <ulink url="http://docs.kde.org/">KDE
-    Documentation</ulink>.</para>
+    in this section.</para>
 @z

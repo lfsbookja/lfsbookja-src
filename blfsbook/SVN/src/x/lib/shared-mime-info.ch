@@ -24,11 +24,10 @@
     MIME database. This allows central updates of MIME information for all
     supporting applications.</para>
 @y
-<para>
-<application>shared-mime-info</application>
-パッケージは MIME データベースを提供します。
-これに対応するアプリケーションに対して、MIME 情報を一元管理します。
-</para>
+    <para>
+    <application>shared-mime-info</application> パッケージは MIME データベースを提供します。
+    これに対応するアプリケーションに対して、MIME 情報を一元管理します。
+    </para>
 @z
 
 @x
@@ -81,14 +80,18 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>, and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
@@ -109,25 +112,25 @@
     <para>Install <application>shared-mime-info</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>shared-mime-info</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>shared-mime-info</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -148,11 +151,10 @@
       Satisfy this requirement by setting the following variable in your
       local shell profile, or the system-wide profile:</para>
 @y
-<para>
-アプリケーションの中には <application>GNOME</application>-2
-のように、MIME データベースのありかを環境変数に保持しておく必要があるものがあります。
-これに対処するために、ローカルなシェルプロファイルか、あるいはシステム共通のプロファイルに、以下のような環境変数定義を行います。
-</para>
+      <para>
+      アプリケーションの中には <application>GNOME</application>-2 のように、MIME データベースのありかを環境変数に保持しておく必要があるものがあります。
+      これに対処するために、ローカルなシェルプロファイルか、あるいはシステム共通のプロファイルに、以下のような環境変数定義を行います。
+      </para>
 @z
 
 @x
@@ -192,7 +194,7 @@
 @x update-mime-database
           <para>assists in adding MIME data to the database.</para>
 @y
-<para>
-MIME データをデータベースに追加します。
-</para>
+          <para>
+          MIME データをデータベースに追加します。
+          </para>
 @z

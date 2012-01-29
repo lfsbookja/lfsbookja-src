@@ -21,16 +21,12 @@
 
 @x
     <para>The Analog Real-time Synthesizer (<application>aRts</application>)
-    provides sound support for <application>KDE</application> and necessary
-    libraries for <application>kdelibs</application>.</para>
+    provides sound support for <application>Trinity</application> programs 
+    and libraries.</para>
 @y
-<para>
-アナログ リアルタイム シンセサイザー
-(The Analog Real-time Synthesizer;  <application>aRts</application>)
-は、<application>KDE</application>
-においてサウンド機能を提供し <application>kdelibs</application>
-が必要とするライブラリも提供します。
-</para>
+    <para>
+    アナログ リアルタイム シンセサイザー (The Analog Real-time Synthesizer;  <application>aRts</application>) は、<application>Trinity</application> プログラムやライブラリに対してサウンド機能を提供します。
+    </para>
 @z
 
 @x
@@ -83,42 +79,26 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="qt"/> and
-    <xref linkend="glib2"/></para>
+    <para role="required">
+      <xref linkend="alsa"/>,
+      <xref linkend="audiofile"/>,
+      <xref linkend="cmake"/>,
+      <xref linkend="glib2"/>
+      <xref linkend="libmad"/>,
+      <xref linkend="libvorbis"/>, and
+      <xref linkend="qt"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="qt"/>, 
-    <xref linkend="glib2"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/></para>
-@y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libvorbis"/>,
-    <xref linkend="alsa"/>,
-    <xref linkend="audiofile"/>,
-    <xref linkend="libmad"/>,
-    <xref linkend="esound"/>,
-<!--    <xref linkend="nas"/>, -->
-    <ulink url="http://www.mediaapplicationserver.net/">MAS</ulink>, and
-    <ulink url="http://jackit.sourceforge.net/">JACK</ulink></para>
-@y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libvorbis"/>,
-    <xref linkend="alsa"/>,
-    <xref linkend="audiofile"/>,
-    <xref linkend="libmad"/>,
-    <xref linkend="esound"/>,
-<!--    <xref linkend="nas"/>, -->
-    <ulink url="http://www.mediaapplicationserver.net/">MAS</ulink>,
-    <ulink url="http://jackit.sourceforge.net/">JACK</ulink></para>
+    <para role="required">
+      <xref linkend="alsa"/>,
+      <xref linkend="audiofile"/>,
+      <xref linkend="cmake"/>,
+      <xref linkend="glib2"/>
+      <xref linkend="libmad"/>,
+      <xref linkend="libvorbis"/>,
+      <xref linkend="qt"/>
+    </para>
 @z
 
 @x
@@ -136,31 +116,38 @@
 @z
 
 @x
-    <para>Install <application>aRts</application> by running
-    the following commands:</para>
+    <note><para>When extracted, the <application>aRts</application> tar 
+    file expands into the directory 
+    <filename class='directory'>dependencies/arts</filename>.</para></note>
 @y
-<para>
-以下のコマンドを実行して <application>aRts</application> をビルドします。
-</para>
+    <note><para>When extracted, the <application>aRts</application> tar 
+    file expands into the directory 
+    <filename class='directory'>dependencies/arts</filename>.</para></note>
 @z
 
 @x
-    <para>This package does not come with a test suite that works with
-    <application>GCC</application>-&gcc-version;.</para>
+    <para>Install <application>aRts</application> by running
+    the following commands:</para>
 @y
-<para>
-このパッケージには <application>GCC</application>-&gcc-version;
-において稼動するテストスイートはありません。
-</para>
+    <para>
+    以下のコマンドを実行して <application>aRts</application> をビルドします。
+    </para>
+@z
+
+@x
+    <para>This package does not come with a test suite.</para>
+@y
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -169,49 +156,47 @@
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><parameter>--prefix=&kde-dir;</parameter>: This option
-    tells the process to install the package in
-    <filename class="directory">&kde-dir;</filename>.
-    <application>aRts</application> is installed here as it's required
-    before installing <application>KDE</application>.</para>
-@y
-<para>
-<parameter>--prefix=&kde-dir;</parameter>:
-このパラメーターにより本パッケージを <filename class="directory">&kde-dir;</filename>
-にインストールします。
-<application>KDE</application> をインストールする前に、
-<application>aRts</application> パッケージをここにインストールします。
-</para>
-@z
+% @x
+%     <para><parameter>--prefix=&kde-dir;</parameter>: This option
+%     tells the process to install the package in
+%     <filename class="directory">&kde-dir;</filename>.
+%     <application>aRts</application> is installed here as it's required
+%     before installing <application>KDE</application>.</para>
+% @y
+%     <para>
+%     <parameter>--prefix=&kde-dir;</parameter>:
+%     このパラメーターにより本パッケージを <filename class="directory">&kde-dir;</filename> にインストールします。
+%     <application>KDE</application> をインストールする前に、<application>aRts</application> パッケージをここにインストールします。
+%     </para>
+% @z
 
-@x
-    <para><parameter>--disable-debug</parameter>: This option causes the
-    package to be compiled without debugging code.</para>
-@y
-<para>
-<parameter>--disable-debug</parameter>:
-このオプションは、デバッグコードを含めずにコンパイルすることを指示します。
-</para>
-@z
+% @x
+%     <para><parameter>--disable-debug</parameter>: This option causes the
+%     package to be compiled without debugging code.</para>
+% @y
+%     <para>
+%     <parameter>--disable-debug</parameter>:
+%     このオプションは、デバッグコードを含めずにコンパイルすることを指示します。
+%     </para>
+% @z
 
-@x
-    <para><parameter>--disable-dependency-tracking</parameter>: This option
-    speeds up one time builds.</para>
-@y
-    <para><parameter>--disable-dependency-tracking</parameter>: This option
-    speeds up one time builds.</para>
-@z
+% @x
+%     <para><parameter>--disable-dependency-tracking</parameter>: This option
+%     speeds up one time builds.</para>
+% @y
+%     <para><parameter>--disable-dependency-tracking</parameter>: This option
+%     speeds up one time builds.</para>
+% @z
 
-@x
-    <para><parameter>--enable-final</parameter>: This option combines
-    source code during compilation speeding up the build.  It also
-    avoids a problem with missing headers in some files.</para>
-@y
-    <para><parameter>--enable-final</parameter>: This option combines
-    source code during compilation speeding up the build.  It also
-    avoids a problem with missing headers in some files.</para>
-@z
+% @x
+%     <para><parameter>--enable-final</parameter>: This option combines
+%     source code during compilation speeding up the build.  It also
+%     avoids a problem with missing headers in some files.</para>
+% @y
+%     <para><parameter>--enable-final</parameter>: This option combines
+%     source code during compilation speeding up the build.  It also
+%     avoids a problem with missing headers in some files.</para>
+% @z
 
 @x
     <title>Contents</title>
@@ -230,17 +215,11 @@
 @z
 
 @x
-        <seg>artsd, artswrapper, artsshell, artsplay, artsdsp, artscat, artscontrol,
-        artsc-config, and mcopidl</seg>
-        <seg>aRts libraries</seg>
-        <seg>The following subdirectories of &kde-dir;/: bin, include/arts,
-        include/artsc, and lib/mcop</seg>
+        <seg>artsc-config, artscat, artsd, artsdsp, artsplay, artsrec, 
+        artsshell, artswrapper, and mcopidl </seg>
 @y
-        <seg>artsd, artswrapper, artsshell, artsplay, artsdsp, artscat, artscontrol,
-        artsc-config, mcopidl</seg>
-        <seg>aRts ライブラリ</seg>
-        <seg>The following subdirectories of &kde-dir;/: bin, include/arts,
-        include/artsc, lib/mcop</seg>
+        <seg>artsc-config, artscat, artsd, artsdsp, artsplay, artsrec, 
+        artsshell, artswrapper, mcopidl </seg>
 @z
 
 @x
@@ -252,9 +231,17 @@
 @x artsd
           <para>is a daemon that provides access to the sound hardware resources.</para>
 @y
-<para>
-is a daemon that provides access to the sound hardware resources.
-</para>
+          <para>
+          is a daemon that provides access to the sound hardware resources.
+          </para>
+@z
+
+@x artsshell
+          <para>is intended as a utility to perform miscellaneous functions
+          related to the sound server.</para>
+@y
+          <para>is intended as a utility to perform miscellaneous functions
+          related to the sound server.</para>
 @z
 
 @x artswrapper
@@ -266,12 +253,3 @@ is a daemon that provides access to the sound hardware resources.
           (running as <systemitem class="username">root</systemitem>)
           and then executes <command>artsd</command> as a non-root user.</para>
 @z
-
-@x artsshell
-          <para>is intended as a utility to perform miscellaneous functions
-          related to the sound server.</para>
-@y
-          <para>is intended as a utility to perform miscellaneous functions
-          related to the sound server.</para>
-@z
-

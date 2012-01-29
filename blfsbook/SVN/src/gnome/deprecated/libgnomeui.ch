@@ -23,10 +23,9 @@
     <para>The <application>libgnomeui</application> package contains
     <filename class="libraryfile">libgnomeui</filename> libraries.</para>
 @y
-<para>
-<application>libgnomeui</application>
-パッケージは <filename class="libraryfile">libgnomeui</filename> ライブラリを提供します。
-</para>
+    <para>
+    <application>libgnomeui</application> パッケージは <filename class="libraryfile">libgnomeui</filename> ライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -91,13 +90,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libjpeg"/>,
-    <xref linkend="esound"/>, and
+    <para role="optional"><!-- <xref linkend="libjpeg"/>,
+    <xref linkend="esound"/>, and -->
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libjpeg"/>,
-    <xref linkend="esound"/>,
+    <para role="optional"><!-- <xref linkend="libjpeg"/>,
+    <xref linkend="esound"/>, and -->
     <xref linkend="gtk-doc"/></para>
 @z
 
@@ -119,25 +118,26 @@
     <para>Install <application>libgnomeui</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libgnomeui</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libgnomeui</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>This package's testsuite is only intended to be used by the
+    maintainer to check i18n files.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    このパッケージのテストスイートは、開発者が i18n ファイルをチェックするためだけに利用することが想定されています。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -153,25 +153,21 @@
     <filename class="directory">$GNOME_PREFIX/lib/libgnomeui</filename> instead
     of <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/libgnomeui</parameter>:
-このパラメーターは libexec ファイルのインストール先を
-<filename class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な
-<filename class="directory">$GNOME_PREFIX/lib/libgnomeui</filename> とします。
-</para>
+    <para>
+    <parameter>--libexecdir=$(pkg-config --variable=prefix
+    ORBit-2.0)/lib/libgnomeui</parameter>:
+    このパラメーターは libexec ファイルのインストール先を <filename
+    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
+    class="directory">$GNOME_PREFIX/lib/libgnomeui</filename> とします。
+    </para>
 @z
 
 @x
-    <para><option>--with-kde-datadir=$KDE_PREFIX/share</option>: Use this
-    parameter if you have <application>KDE</application> installed in any prefix
-    other than <filename class='directory'>/usr</filename>.</para>
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
 @y
-<para>
-<option>--with-kde-datadir=$KDE_PREFIX/share</option>:
-<application>KDE</application> をインストールしていて、そのインストール先が
-<filename class='directory'>/usr</filename> 以外である場合は、このパラメーターを指定します。
-</para>
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
 @z
 
 @x
@@ -196,15 +192,12 @@ ORBit-2.0)/lib/libgnomeui</parameter>:
       <filename>~/.profile</filename> or <filename>~/.bashrc</filename>
       files:</para>
 @y
-<para>
-<application>libgnomeui</application> のインストールによって
-<application>libglade</application>
-インターフェースライブラリがインストールされますが、アプリケーションの中にはこのライブラリを見つけ出せないものがあります。
-この問題を解消するために、環境変数を設定してこのライブラリの場所を指定します。
-システム共通の <filename>/etc/profile</filename> プロファイルか、あるいは各ユーザーのプロファイル
-<filename>~/.profile</filename> または <filename>~/.bashrc</filename>
-に、以下の定義を追加します。
-</para>
+      <para>
+      <application>libgnomeui</application> のインストールによって
+      <application>libglade</application> インターフェースライブラリがインストールされますが、アプリケーションの中にはこのライブラリを見つけ出せないものがあります。
+      この問題を解消するために、環境変数を設定してこのライブラリの場所を指定します。
+      システム共通の <filename>/etc/profile</filename> プロファイルか、あるいは各ユーザーのプロファイル <filename>~/.profile</filename> または <filename>~/.bashrc</filename> に、以下の定義を追加します。
+      </para>
 @z
 
 @x
@@ -245,7 +238,7 @@ ORBit-2.0)/lib/libgnomeui</parameter>:
           <para>are the GUI portion of the <application>GNOME</application>
           libraries.</para>
 @y
-<para>
-<application>GNOME</application> ライブラリの GUI 部分を提供します。
-</para>
+          <para>
+          <application>GNOME</application> ライブラリの GUI 部分を提供します。
+          </para>
 @z
