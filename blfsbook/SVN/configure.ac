@@ -82,6 +82,7 @@ AC_CONFIG_FILES([Makefile
 		 src/postlfs/filesystems/Makefile
 		 src/postlfs/security/Makefile
 		 src/postlfs/shells/Makefile
+		 src/postlfs/virtualization/Makefile
 		 src/pst/Makefile
 		 src/pst/printing/Makefile
 		 src/pst/ps/Makefile
