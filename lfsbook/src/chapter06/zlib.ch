@@ -17,9 +17,9 @@
     <para>The Zlib package contains compression and decompression routines used by
     some programs.</para>
 @y
-<para>
-Zlib パッケージは、各種プログラムから呼び出される、圧縮、伸張 (解凍) を行う関数を提供します。
-</para>
+    <para>
+    Zlib パッケージは、各種プログラムから呼び出される、圧縮、伸張 (解凍) を行う関数を提供します。
+    </para>
 @z
 
 @x
@@ -29,35 +29,9 @@ Zlib パッケージは、各種プログラムから呼び出される、圧縮
 @z
 
 @x
-    <para>First, fix a typo in the package header file:</para>
-@y
-<para>
-まずパッケージ内のヘッダーファイルのタイポを修正します。
-</para>
-@z
-
-@x
     <para>Prepare Zlib for compilation:</para>
 @y
     <para>Zlib を生成する準備をします。</para>
-@z
-
-@x
-      <title>The meaning of the new configure environment variable:</title>
-@y
-      <title>configure における環境変数の意味：</title>
-@z
-
-@x
-          <para>Setting CFLAGS overrides the default optimization in the
-          package to prevent some run time errors.  Note that the -mstackrealign
-          may cause build failures in non-Intel architecture systems.</para>
-@y
-<para>
-CFLAGS を設定することで、デフォルトの最適化オプション指定を上書きします。
-実行時エラーが発生する場合があるため、それを修正するものです。
--mstackrealign オプションは Intel アーキテクチャーではないシステムではビルドに失敗するかもしれません。
-</para>
 @z
 
 @x

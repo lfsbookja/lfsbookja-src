@@ -634,10 +634,10 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x GRUB
          <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Gettext, Glibc, 
-         Grep, Make, Ncurses, Sed, and Texinfo</seg>
+         Grep, Make, Ncurses, Sed, Texinfo, and Xz</seg>
 @y
          <seg>Bash, Binutils, Bison, Coreutils, Diffutils, GCC, Gettext, Glibc, 
-         Grep, Make, Ncurses, Sed, Texinfo</seg>
+         Grep, Make, Ncurses, Sed, Texinfo, Xz</seg>
 @z
 @x
           <seg>None</seg>
@@ -1462,9 +1462,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>Kmod, Man-DB, Udev</seg>
+          <seg>GRUB, Kmod, Man-DB, Udev</seg>
 @y
-          <seg>Kmod, Man-DB, Udev</seg>
+          <seg>GRUB, Kmod, Man-DB, Udev</seg>
 @z
 @x
           <seg>None</seg>

@@ -48,6 +48,39 @@
 @z
 
 @x
+      <para>2012-01-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Zlib-1.2.6. Fixes
+          <ulink url="&lfs-ticket-root;3009">#3009</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Move Xz to before GRUB so that the latter can
+          support compressed kernel images.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-180. Fixes
+          <ulink url="&lfs-ticket-root;3008">#3008</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-01-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Zlib-1.2.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3009">#3009</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Xz を GRUB の前に移動。圧縮されたカーネルイメージを GRUB が取り扱えるようにするため。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Udev-180 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3008">#3008</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-01-28</para>
       <itemizedlist>
         <listitem>
