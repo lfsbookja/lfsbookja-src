@@ -142,6 +142,12 @@
 @z
 
 @x
+        <listitem id='buildinstr' xreflabel='Package build instructions'>
+@y
+        <listitem id='buildinstr' xreflabel='パッケージビルド手順'>
+@z
+
+@x
           <para>For each package:</para>
 @y
           <para>各パッケージについて：</para>

@@ -53,6 +53,21 @@
 @z
 
 @x
+    <note><para>There are frequent misunderstandings about this chapter.  The
+    procedures are the same as every other chapter as explained earlier (<xref
+    linkend='buildinstr'/>).  First extract the gcc tarball from the sources
+    directory and then change to the directory created.  Only then should you
+    proceed with the instructions below.</para></note>
+@y
+    <note><para>
+    本節においては誤解が多く発生しています。
+    ここでの手順は他のものと同様であり、手順の概要 (<xref linkend='buildinstr'/>) は説明済です。
+    まず初めに gcc の tarball を伸張 (解凍) し、生成されたソースディレクトリに移動します。
+    それに加えて本節では、以下の手順を行うものとなります。
+    </para></note>
+@z
+
+@x
 <para>Apply a patch that will allow the building of the libiberty and zlib
 target libraries to be disabled as these do not build correctly in a
 cross-compiled environment:</para>

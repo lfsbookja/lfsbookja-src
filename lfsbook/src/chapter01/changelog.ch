@@ -48,6 +48,29 @@
 @z
 
 @x
+      <para>2012-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Clarify (again) the extraction order
+          in GCC Pass 1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Reformat Kmod configure command.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - GCC の1回目のビルドにて、再度、ソース伸張 (解凍) の順を明確に説明。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Kmod の configure コマンドを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-01-30</para>
       <itemizedlist>
         <listitem>
