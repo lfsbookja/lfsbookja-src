@@ -48,6 +48,28 @@
 @z
 
 @x
+      <para>2012-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove oblolete references to consolelog.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Reformat udev configure command.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 古くなった consolelog の記述を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Udev の configure コマンドを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-02-01</para>
       <itemizedlist>
         <listitem>

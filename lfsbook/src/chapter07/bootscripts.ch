@@ -55,14 +55,14 @@
 @z
 
 @x
-        <seg>checkfs, cleanfs, console, consolelog, functions, halt, ifdown,
+        <seg>checkfs, cleanfs, console, functions, halt, ifdown,
         ifup, localnet, modules, mountfs, mountkernfs, network, rc, reboot,
         sendsignals, setclock, static, swap, sysctl, sysklogd, template,
         udev, and udev_retry</seg>
         <seg>/etc/rc.d, /etc/init.d (symbolic link), /etc/sysconfig, 
         /lib/services, /lib/lsb (symbolic link)</seg>
 @y
-        <seg>checkfs, cleanfs, console, consolelog, functions, halt, ifdown,
+        <seg>checkfs, cleanfs, console, functions, halt, ifdown,
         ifup, localnet, modules, mountfs, mountkernfs, network, rc, reboot,
         sendsignals, setclock, static, swap, sysctl, sysklogd, template,
         udev, udev_retry</seg>
@@ -113,14 +113,14 @@
           </para>
 @z
 
-@x consolelog
-          <para>Sets the kernel log level to control messages reaching the
-          console.</para>
-@y
-          <para>
-          カーネルのログレベルを設定して、コンソールに出力されるメッセージを制御します。
-          </para>
-@z
+% @x consolelog
+%           <para>Sets the kernel log level to control messages reaching the
+%           console.</para>
+% @y
+%           <para>
+%           カーネルのログレベルを設定して、コンソールに出力されるメッセージを制御します。
+%           </para>
+% @z
 
 @x functions
           <para>Contains common functions, such as error and status checking,
