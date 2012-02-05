@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -81,20 +81,24 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="polkit"/> and
+    <para role="required"><xref linkend="polkit"/>,
+    <xref linkend="dbus-glib"/>, and
     <xref linkend="udev"/> (with gudev)</para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="polkit"/>,
+    <xref linkend="dbus-glib"/>,
     <xref linkend="udev"/> (gudev とともに)</para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gobject-introspection"/> and
+    <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional"><xref linkend="gobject-introspection"/>,
+    <xref linkend="gtk-doc"/></para>
 @z
 
 @x
@@ -150,7 +154,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
@@ -160,14 +164,14 @@
 
 @x
         <seg>upower and upowerd</seg>
-        <seg>libdevkit-power-gobject.{so,a} and libupower-glib.{so,a}</seg>
-        <seg>/usr/{include/{DeviceKit-power/devkit-power-gobject,
-        libupower-glib},lib/upower}, /var/lib/upower</seg>
+        <seg>libupower-glib.{so,a}</seg>
+        <seg>/etc/UPower, /usr/{include/libupower-glib,lib/upower,
+        share/dbus-1/interfaces}, /var/lib/upower</seg>
 @y
         <seg>upower, upowerd</seg>
-        <seg>libdevkit-power-gobject.{so,a}, libupower-glib.{so,a}</seg>
-        <seg>/usr/{include/{DeviceKit-power/devkit-power-gobject,
-        libupower-glib},lib/upower}, /var/lib/upower</seg>
+        <seg>libupower-glib.{so,a}</seg>
+        <seg>/etc/UPower, /usr/{include/libupower-glib,lib/upower,
+        share/dbus-1/interfaces}, /var/lib/upower</seg>
 @z
 
 @x
@@ -180,34 +184,26 @@
           <para>is the <application>UPower</application> command line
           tool.</para>
 @y
-<para>
-<application>UPower</application> のコマンドラインツール。
-</para>
+          <para>
+          <application>UPower</application> のコマンドラインツール。
+          </para>
 @z
 
 @x upowerd
           <para>is the <application>UPower</application> Daemon. It provides the
           org.freedesktop.UPower service on the system message bus.</para>
 @y
-<para>
-<application>UPower</application> デーモン。
-これはシステムメッセージバス上の org.freedesktop.UPower サービスを提供します。
-</para>
-@z
-
-@x libdevkit-power-gobject.{so,a}
-          <para>contains the old DeviceKit-power API functions.</para>
-@y
-<para>
-かつての DeviceKit-power API 関数を提供します。
-</para>
+          <para>
+          <application>UPower</application> デーモン。
+          これはシステムメッセージバス上の org.freedesktop.UPower サービスを提供します。
+          </para>
 @z
 
 @x libupower-glib.{so,a}
           <para>contains the <application>UPower</application> API
           functions.</para>
 @y
-<para>
-<application>UPower</application> API 関数を提供します。
-</para>
+          <para>
+          <application>UPower</application> API 関数を提供します。
+          </para>
 @z
