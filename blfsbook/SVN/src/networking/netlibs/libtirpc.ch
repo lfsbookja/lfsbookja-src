@@ -124,6 +124,16 @@
 @z
 
 @x
+    <para>Glibc-2.14 and later do not install NIS and RPC related headers by
+    default.  If needed, install them here:</para>
+@y
+    <para>
+    Glibc-2.14 以降において NIS および RPC 関連のヘッダーファイルは、デフォルトではインストールされなくなりました。
+    必要に応じてそれらをインストールします。
+    </para>
+@z
+
+@x
     <para>Install <application>libtirpc</application> by running the following
     commands:</para>
 @y
@@ -163,6 +173,36 @@
     <para><userinput>patch -Np1 -i
     ../libtirpc-&libtirpc-version;-remove-nis-2.patch</userinput>:
     このパッチは、<application>glibc</application> にて無くなった nis 関数の参照を取り除きます。
+    </para>
+@z
+
+@x
+    <para><option>--libdir=/lib</option>: Since this library may be used before 
+    /usr is mounted, place the library in /lib.</para>
+@y
+    <para>
+    <option>--libdir=/lib</option>:
+    このライブラリは /usr がマウントされる前に利用されるため、/lib に配置するようにします。
+    </para>
+@z
+
+@x
+    <para><option>pkgconfigdir=/usr/lib/pkgconfig</option>: Ensure the .pc file
+    is placed in the proper location.</para>
+@y
+    <para>
+    <option>pkgconfigdir=/usr/lib/pkgconfig</option>:
+    .pc ファイルを適切なディレクトリに配置します。
+    </para>
+@z
+
+@x
+    <para><option>mv -v /lib/libtirpc.*a</option>: Static libraries and .la files
+    belong in /usr/lib.</para>
+@y
+    <para>
+    <option>mv -v /lib/libtirpc.*a</option>:
+    スタティックライブラリと .la ファイルを /usr/lib に移動します。
     </para>
 @z
 

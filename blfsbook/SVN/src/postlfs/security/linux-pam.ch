@@ -248,6 +248,20 @@
 @z
 
 @x
+    <para><parameter>--disable-nis</parameter>: This option disables building
+    Network Information Service/Yellow Pages support in pam_unix and pam_access
+    as nis is deprecated in glibc.</para>
+@y
+    <para>
+    <parameter>--disable-nis</parameter>:
+    glibc において nis が古いものとなったため、
+    このパラメーターは、ネットワークインフォメーションサービス/イエローページ (Network Information Service/Yellow Pages) のサポートをThis option disables building
+    Network Information Service/Yellow Pages support in pam_unix and pam_access
+    as nis is deprecated in glibc.
+    </para>
+@z
+
+@x
     <para><parameter>--enable-read-both-confs</parameter>: This parameter
     allows the local administrator to choose which configuration file setup to
     use.</para>

@@ -81,7 +81,7 @@
         requires a thorough review of permissions prior to asking.</para>
 @y
         <para>
-        特にデバイスに対してのパーミッションは、適切に設定していますか？
+        特にデバイスに対してのパーミッションは適切に設定していますか？
         
 LFS
         uses groups to make these settings easier, but it also adds the step of
@@ -104,9 +104,9 @@ LFS
         available to help you check.</para>
 @y
         <para>
-        
-BLFS liberally uses <filename
-        class='directory'>/opt/<replaceable>&lt;package&gt;</replaceable></filename>.
+        BLFS では <filename
+        class='directory'>/opt/<replaceable>&lt;パッケージ&gt;</replaceable></filename> というディレクトリを自由に用いることができます。
+
         The main objection to this centers around the need to expand your
         environment variables for each package placed there (e.g.,
         PATH=$PATH:/opt/kde/bin). In most cases, the package instructions will
