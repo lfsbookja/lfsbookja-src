@@ -5,5 +5,5 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %

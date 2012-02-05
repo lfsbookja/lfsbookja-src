@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -26,7 +26,7 @@
 @x
   <!--<xsl:output  encoding="UTF-8" indent="yes" />-->
 @y
-  <xsl:output  encoding="UTF-8" indent="yes" />
+  <xsl:output  encoding="UTF-8" indent="no" />
 @z
 
 @x
@@ -52,6 +52,6 @@
 <!--
   <xsl:param name="sans.font.family" select="'Gothic'"/>
   <xsl:param name="monospace.font.family" select="'IPAgothic'"/>
--->
   <xsl:param name="body.start.indent" select="'10pt'"/>
+-->
 @z

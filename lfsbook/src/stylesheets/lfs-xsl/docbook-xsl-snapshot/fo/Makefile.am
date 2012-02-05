@@ -1,6 +1,6 @@
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
 srcdir = @srcdir@
-EXTRA_DIST = titlepage.ch
+EXTRA_DIST = titlepage.ch xref.ch
 srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
 	autoidx-ng.xsl autoidx.xsl autotoc.xsl axf.xsl 
 	biblio-iso690.xsl biblio.xsl block.xsl callout.xsl

@@ -48,6 +48,57 @@
 @z
 
 @x
+      <para>2012-02-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fixes to bootscripts:
+          <itemizedlist>
+            <listitem><para>Remove unneeded function literals.</para></listitem>
+            <listitem><para>Fix pidlist logic in statusproc.</para></listitem>
+            <listitem><para>Fix statusproc usage statement.</para></listitem>
+            <listitem><para>Add nodevtmpfs in mountfs stop.</para></listitem>
+          </itemizedlist>
+          </para>
+        </listitem>
+         <listitem>
+           <para>[bdubbs] Add nodump to xml so command to print out 
+           70-persistent-net.rules will not be used in jhalfs.
+           Fixes a problem in kvm.</para>
+         </listitem>
+        <listitem>
+          <para>[bryan] - Fix up text in section 7.4 ("device and module
+          handling"), and change the recommendation for wrapper modules to
+          use kmod's support for soft post-dependencies instead.  Fixes
+          <ulink url="&lfs-ticket-root;3010">#3010</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトを修正:
+          <itemizedlist>
+            <listitem><para>不要な関数リテラルを削除。</para></listitem>
+            <listitem><para>statusproc における pidlist ロジックを修正。</para></listitem>
+            <listitem><para>statusproc 呼び出しを修正。</para></listitem>
+            <listitem><para>mountfs の stop にて nodevtmpfs を追加。</para></listitem>
+          </itemizedlist>
+          </para>
+        </listitem>
+         <listitem>
+           <para>[bdubbs] xml ソースにて nodump を追加。
+           これにより 70-persistent-net.rules は jhalfs でも利用しないように。
+           kvm における問題を修正。</para>
+         </listitem>
+        <listitem>
+          <para>[bryan] - 7.4 節 ("デバイスとモジュールの扱い") を修正。
+          またラッパーモジュールとして kmod をサポートする post 依存の softdep 機能を推奨するよう修正。
+          <ulink url="&lfs-ticket-root;3010">#3010</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-02-02</para>
       <itemizedlist>
         <listitem>
