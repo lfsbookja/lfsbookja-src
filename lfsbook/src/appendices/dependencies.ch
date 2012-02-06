@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,14 +37,13 @@
   which packages are built in LFS is very important. The purpose of this page
   is to document the dependencies of each package built in LFS.</para>
 @y
-<para>
-LFS にて構築するパッケージはすべて、他のいくつかのパッケージに依存していて、それらがあって初めて適切にインストールができます。
-パッケージの中には互いに依存し合っているものもあります。
-つまり一つめのパッケージが二つめのパッケージに依存しており、二つめが実は一つめのパッケージにも依存しているような例です。
-こういった依存関係があることから
-LFS においてパッケージを構築する順番は非常に重要なものとなります。
-本節は LFS にて構築する各パッケージの依存関係を示すものです。
-</para>
+  <para>
+  LFS にて構築するパッケージはすべて、他のいくつかのパッケージに依存していて、それらがあって初めて適切にインストールができます。
+  パッケージの中には互いに依存し合っているものもあります。
+  つまり一つめのパッケージが二つめのパッケージに依存しており、二つめが実は一つめのパッケージにも依存しているような例です。
+  こういった依存関係があることから LFS においてパッケージを構築する順番は非常に重要なものとなります。
+  本節は LFS にて構築する各パッケージの依存関係を示すものです。
+  </para>
 @z
 
 @x
@@ -60,16 +59,15 @@ LFS においてパッケージを構築する順番は非常に重要なもの�
   being placed inside scripts installed to the final system. This is obviously
   not desirable.</para>
 @y
-<para>
-ビルドするパッケージの個々には、3種類あるいは4種類の依存関係を示しています。
-1つめは対象パッケージをコンパイルしてビルドするために必要となるパッケージです。
-2つめは一つめのものに加えて、テストスイートを実行するために必要となるパッケージです。
-3つめは対象パッケージをビルドし、最終的にインストールするために必要となるパッケージです。
-たいていの場合、それらのパッケージに含まれているスクリプトが、実行モジュールへのパスを固定的に取り扱っています。
-所定の順番どおりにパッケージのビルドを行わないと、最終的にインストールされるシステムにおいて、スクリプトの中に
-/tools/bin/[実行モジュール] といったパスが含まれてしまうことになりかねません。
-これは明らかに不適切なことです。
-</para>
+  <para>
+  ビルドするパッケージの個々には、3種類あるいは4種類の依存関係を示しています。
+  1つめは対象パッケージをコンパイルしてビルドするために必要となるパッケージです。
+  2つめは一つめのものに加えて、テストスイートを実行するために必要となるパッケージです。
+  3つめは対象パッケージをビルドし、最終的にインストールするために必要となるパッケージです。
+  たいていの場合、それらのパッケージに含まれているスクリプトが、実行モジュールへのパスを固定的に取り扱っています。
+  所定の順番どおりにパッケージのビルドを行わないと、最終的にインストールされるシステムにおいて、スクリプトの中に /tools/bin/[実行モジュール] といったパスが含まれてしまうことになりかねません。
+  これは明らかに不適切なことです。
+  </para>
 @z
 
 @x
@@ -80,14 +78,13 @@ LFS においてパッケージを構築する順番は非常に重要なもの�
   the LFS book and then go back an rebuild the LFS package.  In several cases,
   reinstallation is addressed in BLFS.</para>
 @y
-<para>
-依存関係として4つめに示すのは任意のパッケージであり LFS では説明していないものです。
-しかし皆さんにとっては有用なパッケージであるはずです。
-それらのパッケージは、さらに別のパッケージを必要としていたり、互いに依存し合っていることがあります。
-そういった依存関係があるため、それらをインストールする場合には、LFS をすべて仕上げた後に再度 LFS
-内のパッケージを再構築する方法をお勧めします。
-再インストールに関しては、たいていは BLFS にて説明しています。
-</para>
+  <para>
+  依存関係として4つめに示すのは任意のパッケージであり LFS では説明していないものです。
+  しかし皆さんにとっては有用なパッケージであるはずです。
+  それらのパッケージは、さらに別のパッケージを必要としていたり、互いに依存し合っていることがあります。
+  そういった依存関係があるため、それらをインストールする場合には、LFS をすべて仕上げた後に再度 LFS 内のパッケージを再構築する方法をお勧めします。
+  再インストールに関しては、たいていは BLFS にて説明しています。
+  </para>
 @z
 
 %----------------------------------------------------------------------
@@ -843,10 +840,10 @@ Typo ですが日本語訳には影響ありません。
 %----------------------------------------------------------------------
 @x Linux Kernel
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
-         Gzip, Make, Module-Init-Tools, Ncurses, Perl, and Sed</seg>
+         Gzip, Kmod, Make, Ncurses, Perl, and Sed</seg>
 @y
          <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
-         Gzip, Make, Module-Init-Tools, Ncurses, Perl, Sed</seg>
+         Gzip, Kmod, Make, Ncurses, Perl, Sed</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -946,30 +943,6 @@ Typo ですが日本語訳には影響ありません。
           <seg>No test suite available</seg>
 @y
           <seg>テストスイートはありません</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
-@x Module-Init-Tools
-         <seg>Bash, Binutils, Coreutils, Findutils, GCC, Glibc, Grep, Make,
-         Patch, Sed, and Zlib</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Findutils, GCC, Glibc, Grep, Make,
-         Patch, Sed, Zlib</seg>
-@z
-@x
-          <seg>Diffutils, File, Gawk, and Gzip</seg>
-@y
-          <seg>Diffutils, File, Gawk, Gzip</seg>
 @z
 @x
           <seg>None</seg>
@@ -1484,9 +1457,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>File, Module-Init-Tools, Perl, and Util-linux</seg>
+          <seg>File, Kmod, Perl, and Util-linux</seg>
 @y
-          <seg>File, Module-Init-Tools, Perl, Util-linux</seg>
+          <seg>File, Kmod, Perl, Util-linux</seg>
 @z
 @x
           <seg>None</seg>

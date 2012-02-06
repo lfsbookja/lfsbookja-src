@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -418,15 +418,6 @@ rationale は理論的根拠とか原理とか。
 @y
         <para>
         このパッケージは Linux の基本的な man ページを提供します。
-        </para>
-@z
-
-@x Module-Init-Tools
-        <para>This package contains programs needed to administer Linux
-        kernel modules.</para>
-@y
-        <para>
-        このパッケージは Linux カーネルモジュールを管理するのに必要なプログラムを提供します。
         </para>
 @z
 

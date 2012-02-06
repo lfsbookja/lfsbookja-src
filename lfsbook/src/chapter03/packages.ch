@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -466,16 +466,6 @@
         <para>ホームページ: <ulink url="&man-pages-home;"/></para>
         <para>ダウンロード: <ulink url="&man-pages-url;"/></para>
         <para>MD5 sum: <literal>&man-pages-md5;</literal></para>
-@z
-
-@x
-        <para>Home page: <ulink url="&module-init-tools-home;"/></para>
-        <para>Download: <ulink url="&module-init-tools-url;"/></para>
-        <para>MD5 sum: <literal>&module-init-tools-md5;</literal></para>
-@y
-        <para>ホームページ: <ulink url="&module-init-tools-home;"/></para>
-        <para>ダウンロード: <ulink url="&module-init-tools-url;"/></para>
-        <para>MD5 sum: <literal>&module-init-tools-md5;</literal></para>
 @z
 
 @x

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -45,6 +45,50 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴：</title>
+@z
+
+@x
+      <para>2012-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.2.4. Fixes
+          <ulink url="&lfs-ticket-root;3012">#3012</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Automake-1.11.3. Fixes
+          <ulink url="&lfs-ticket-root;3011">#3011</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Remove last remaining mentions of Module-Init-Tools.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Install Kmod's and Xz's pkgconfig files in
+          the standard location.  Thanks to John Burrell and Bryan for the
+          original reports and Ken for the suggested fix.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.2.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3012">#3012</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Automake-1.11.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3011">#3011</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Module-Init-Tools に関する記述を残していたので、これを削除。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Kmod と Xz の pkgconfig ファイルを正しいディレクトリへインストールすることに。
+          報告をあげてくれた John Burrell と Bryan、および提案パッチを示してくれた Ken に感謝。
+          </para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x

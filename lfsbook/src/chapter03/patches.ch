@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -248,20 +248,6 @@
       <listitem>
         <para>ダウンロード: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Module Init Tools - <token>&module-init-tools-man-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&module-init-tools-man-patch;"/></para>
-        <para>MD5 sum: <literal>&module-init-tools-man-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Module Init Tools - <token>&module-init-tools-man-patch-size;</token>:</term>
-      <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&module-init-tools-man-patch;"/></para>
-        <para>MD5 sum: <literal>&module-init-tools-man-patch-md5;</literal></para>
       </listitem>
 @z
 

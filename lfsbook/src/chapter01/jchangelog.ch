@@ -10,7 +10,7 @@
 
  $Author$
  $Rev$
- $Date$
+ $Date::                           $
 -->
 
 <sect1 id="ch-scatter-jchangelog">
@@ -52,6 +52,22 @@
     </listitem>
 
 -->
+
+    <listitem>
+      <para>2012-02-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20120205, <ulink url="&lfs-rev-root;9732">r9732</ulink> 対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          変更履歴(日本語版)におけるリビジョンのリンク先を変更。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
 
     <listitem>
       <para>2012-02-05</para>
