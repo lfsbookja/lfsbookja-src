@@ -151,7 +151,7 @@
    <l:gentext key="warning" text="&#35686;&#21578;"/>
    <l:gentext key="WARNING" text="&#35686;&#21578;"/>
    <l:gentext key="and" text="&#12289;"/>
-   <l:gentext key="by" text="&#65306;"/>
+   <l:gentext key="by" text=""/>
    <l:gentext key="Edited" text="&#32232;&#32773;"/>
    <l:gentext key="edited" text="&#32232;&#32773;"/>
    <l:gentext key="Editedby" text="&#32232;&#32773;&#65306;"/>
