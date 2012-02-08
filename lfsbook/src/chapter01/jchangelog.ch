@@ -54,11 +54,27 @@
 -->
 
     <listitem>
+      <para>2012-02-08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20120207,
+          Changeset
+          <ulink url="&lfs-rev-root;9735">9735</ulink>,
+          <ulink url="&lfs-rev-root;9736">9736</ulink>,
+          <ulink url="&lfs-rev-root;9737">9737</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-02-07</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120206, <ulink url="&lfs-rev-root;9733">Changeset 9733</ulink> 対応。
+          SVN-20120206, Changeset <ulink url="&lfs-rev-root;9733">9733</ulink> 対応。
           </para>
         </listitem>
         <listitem>
@@ -74,7 +90,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120205, <ulink url="&lfs-rev-root;9732">Changeset 9732</ulink> 対応。
+          SVN-20120205, Changeset <ulink url="&lfs-rev-root;9732">9732</ulink> 対応。
           </para>
         </listitem>
         <listitem>
@@ -90,7 +106,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120204, <ulink url="&lfs-rev-root;9728">Changeset 9728</ulink> 対応。
+          SVN-20120204, Changeset <ulink url="&lfs-rev-root;9728">9728</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -101,7 +117,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120202, <ulink url="&lfs-rev-root;9726">Changeset 9726</ulink> 対応。
+          SVN-20120202, Changeset <ulink url="&lfs-rev-root;9726">9726</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -112,7 +128,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120201, <ulink url="&lfs-rev-root;9724">Changeset 9724</ulink> 対応。
+          SVN-20120201, Changeset <ulink url="&lfs-rev-root;9724">9724</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -123,7 +139,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120130, <ulink url="&lfs-rev-root;9723">Changeset 9723</ulink> 対応。
+          SVN-20120130, Changeset <ulink url="&lfs-rev-root;9723">9723</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -134,7 +150,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120128, <ulink url="&lfs-rev-root;9720">Changeset 9720</ulink> 対応。
+          SVN-20120128, Changeset <ulink url="&lfs-rev-root;9720">9720</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -145,7 +161,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20120126, <ulink url="&lfs-rev-root;9715">Changeset 9715</ulink> 対応。
+          SVN-20120126, Changeset <ulink url="&lfs-rev-root;9715">9715</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -162,7 +178,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter03/packages.ch, src/chapter06/iproute2.ch, src/chapter08/{grub.ch, kernel.ch}:
-          SVN-20120116, <ulink url="&lfs-rev-root;9710">Changeset 9710</ulink> 対応。
+          SVN-20120116, Changeset <ulink url="&lfs-rev-root;9710">9710</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -175,7 +191,7 @@
           <para>[matsuand] -
           src/chapter03/{packages.ch, patches.ch},
           src/chapter06/{coreutils.ch, libnl.ch, linux-headers.ch}:
-          SVN-20120108, <ulink url="&lfs-rev-root;9706">Changeset 9706</ulink> 対応。
+          SVN-20120108, Changeset <ulink url="&lfs-rev-root;9706">9706</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -192,7 +208,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter09/getcounted.ch:
-          SVN-20120106, <ulink url="&lfs-rev-root;9698">Changeset 9698</ulink> 対応。
+          SVN-20120106, Changeset <ulink url="&lfs-rev-root;9698">9698</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -203,7 +219,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20111228, <ulink url="&lfs-rev-root;9696">Changeset 9696</ulink> 対応。
+          SVN-20111228, Changeset <ulink url="&lfs-rev-root;9696">9696</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -227,7 +243,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter03/patches.ch, src/chapter06/mpfr.ch:
-          SVN-20111223, <ulink url="&lfs-rev-root;9695">Changeset 9695</ulink> 対応。
+          SVN-20111223, Changeset <ulink url="&lfs-rev-root;9695">9695</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -250,7 +266,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20111210, <ulink url="&lfs-rev-root;9689">Changeset 9689</ulink> 対応。
+          SVN-20111210, Changeset <ulink url="&lfs-rev-root;9689">9689</ulink> 対応。
           </para>
         </listitem>
         <listitem>
@@ -263,7 +279,7 @@
           <para>[matsuand] -
           src/chapter06/{glibc.ch, grub.ch, iproute2.ch, ncurses.ch, util-linux.ch},
           src/appendices/dependencies.ch:
-          SVN-20111205, <ulink url="&lfs-rev-root;9688">Changeset 9688</ulink> 対応。
+          SVN-20111205, Changeset <ulink url="&lfs-rev-root;9688">9688</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -275,7 +291,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter06/gcc.ch:
-          SVN-20111201, <ulink url="&lfs-rev-root;9684">Changeset 9684</ulink> 対応。
+          SVN-20111201, Changeset <ulink url="&lfs-rev-root;9684">9684</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -287,7 +303,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter03/patches.ch, src/chapter06/coreutils.ch:
-          SVN-20111128, <ulink url="&lfs-rev-root;9678">Changeset 9678</ulink> 対応。
+          SVN-20111128, Changeset <ulink url="&lfs-rev-root;9678">9678</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -298,7 +314,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20111126, <ulink url="&lfs-rev-root;9672">Changeset 9672</ulink> 対応。(日本語訳変更なし。)
+          SVN-20111126, Changeset <ulink url="&lfs-rev-root;9672">9672</ulink> 対応。(日本語訳変更なし。)
           </para>
         </listitem>
       </itemizedlist>
@@ -310,7 +326,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter06/{glibc.ch, perl.ch}:
-          SVN-20111125, <ulink url="&lfs-rev-root;9671">Changeset 9671</ulink> 対応。
+          SVN-20111125, Changeset <ulink url="&lfs-rev-root;9671">9671</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -321,7 +337,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20111116, <ulink url="&lfs-rev-root;9663">Changeset 9663</ulink> 対応。
+          SVN-20111116, Changeset <ulink url="&lfs-rev-root;9663">9663</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -332,7 +348,7 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
-          SVN-20111114, <ulink url="&lfs-rev-root;9662">Changeset 9662</ulink> 対応。(日本語訳変更なし。)
+          SVN-20111114, Changeset <ulink url="&lfs-rev-root;9662">9662</ulink> 対応。(日本語訳変更なし。)
           </para>
         </listitem>
       </itemizedlist>
@@ -349,7 +365,7 @@
         </listitem>
         <listitem>
           <para>[matsuand] -
-          SVN-20111108, <ulink url="&lfs-rev-root;9660">Changeset 9660</ulink> 対応。(日本語訳変更なし。)
+          SVN-20111108, Changeset <ulink url="&lfs-rev-root;9660">9660</ulink> 対応。(日本語訳変更なし。)
           </para>
         </listitem>
       </itemizedlist>
@@ -361,7 +377,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter07/usage.ch:
-          SVN-20111108, <ulink url="&lfs-rev-root;9659">Changeset 9659</ulink> 対応。
+          SVN-20111108, Changeset <ulink url="&lfs-rev-root;9659">9659</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -379,7 +395,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter03/patches.ch, src/chapter06/gcc.ch:
-          SVN-20111029, <ulink url="&lfs-rev-root;9657">Changeset 9657</ulink> 対応。
+          SVN-20111029, Changeset <ulink url="&lfs-rev-root;9657">9657</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
@@ -391,7 +407,7 @@
         <listitem>
           <para>[matsuand] -
           src/chapter01/how.ch, src/chapter02/creatingpartition.ch, src/chapter06/strippingagain.ch, src/prologue/why.ch:
-          LFS-7.0 (SVN-20111029, <ulink url="&lfs-rev-root;9651">Changeset 9651</ulink>) 対応。
+          LFS-7.0 (SVN-20111029, Changeset <ulink url="&lfs-rev-root;9651">9651</ulink>) 対応。
           </para>
         </listitem>
       </itemizedlist>
