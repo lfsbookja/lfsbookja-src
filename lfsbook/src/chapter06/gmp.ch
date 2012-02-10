@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -35,7 +35,6 @@
       <envar>CFLAGS</envar> in the environment, the configure script will
       attempt to configure for 64-bits and fail.
       Avoid this by invoking the configure command below with
-<screen role="nodump"><userinput><parameter>ABI=32</parameter> ./configure ...</userinput></screen></para>
 @y
       <para>
       32 ビット x86 CPU にて環境構築する際に、
@@ -43,13 +42,6 @@
       <envar>CFLAGS</envar> を指定していると、
       本パッケージの configure スクリプトは 64 ビット用の処理を行い失敗します。
       これを回避するには、以下のように処理してください。
-<screen role="nodump"><userinput><parameter>ABI=32</parameter> ./configure ...</userinput></screen></para>
-@z
-
-@x
-    <para>First, fix a minor error noted on the upstream web page:</para>
-@y
-    <para>はじめに、アップストリームのウェブページにて示されているエラー修正を行ないます。</para>
 @z
 
 @x

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                           $
+% $Date:: 2012-02-08 10:34:46 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -45,6 +45,25 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴：</title>
+@z
+
+@x
+      <para>2012-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Remove a fixup for GMP's testsuite which was added upstream in
+          GMP-5.0.3. Fixes <ulink url="&lfs-ticket-root;3016">#3016</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - GMP のテストスイートへのパッチを削除。
+          アップストリームにより GMP-5.0.3 に対して追加されていたもの。
+          <ulink url="&lfs-ticket-root;3016">#3016</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x
