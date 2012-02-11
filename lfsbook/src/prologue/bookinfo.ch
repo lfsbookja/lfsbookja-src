@@ -45,12 +45,12 @@
     <para>Computer instructions may be extracted from the book under the 
           <xref linkend="MIT"/>.</para>
 @y
-<para>
-本書は <xref linkend="CC"/> に従います。
-</para>
-<para>
-本書のインストール手順のコマンドを抜き出したものは <xref linkend="MIT"/> に従ってください。
-</para>
+    <para>
+    本書は <xref linkend="CC"/> に従います。
+    </para>
+    <para>
+    本書のインストール手順のコマンドを抜き出したものは <xref linkend="MIT"/> に従ってください。
+    </para>
 @z
 
 @x

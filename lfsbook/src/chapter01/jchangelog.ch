@@ -54,6 +54,17 @@
 -->
 
     <listitem>
+      <para>2012-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          訳出誤りの訂正と整形。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-02-10</para>
       <itemizedlist>
         <listitem>

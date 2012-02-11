@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-12-12 12:35:31 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -142,7 +142,7 @@
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
         readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
-        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
+        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
         uuidd, uuidgen, wall, whereis, wipefs, write</seg>
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
@@ -615,7 +615,7 @@
           <para>A filter for paging through text one screen at a time</para>
 @y
           <para>
-          テキストを一度に一画面分だけ表示するフィルタプログラム。
+          テキストを一度に一画面分だけ表示するフィルタープログラム。
           </para>
 @z
 

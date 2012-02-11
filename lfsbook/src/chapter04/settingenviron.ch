@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-04-17 17:49:06 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,10 +25,10 @@
   <systemitem class="username">lfs</systemitem>, issue the following command
   to create a new <filename>.bash_profile</filename>:</para>
 @y
-<para>
-作業しやすい動作環境とするために <command>bash</command> シェルに対するスタートアップファイルを二つ作成します。
-<systemitem class="username">lfs</systemitem> ユーザーでログインして、以下のコマンドによって <filename>.bash_profile</filename> ファイルを生成します。
-</para>
+  <para>
+  作業しやすい動作環境とするために <command>bash</command> シェルに対するスタートアップファイルを二つ作成します。
+  <systemitem class="username">lfs</systemitem> ユーザーでログインして、以下のコマンドによって <filename>.bash_profile</filename> ファイルを生成します。
+  </para>
 @z
 
 @x
@@ -44,15 +44,14 @@
   leak into the build environment. The technique used here achieves the goal of
   ensuring a clean environment.</para>
 @y
-<para>
-<systemitem class="username">lfs</systemitem> ユーザーとしてログインした時、起動されるシェルは普通は<emphasis>ログイン</emphasis>シェルとなります。
-この時、ホストシステムの <filename>/etc/profile</filename> ファイル (おそらく環境変数がいくつか定義されている) と <filename>.bash_profile</filename> が読み込まれます。
-<filename>.bash_profile</filename> ファイル内の <command>exec env -i.../bin/bash</command> というコマンドが、起動しているシェルを全くの空の環境として起動し直し <envar>HOME</envar>、
-<envar>TERM</envar>、
-<envar>PS1</envar> という環境変数だけを設定します。
-これはホストシステム内の不要な設定や危険をはらんだ設定を、ビルド環境に持ち込まないようにするためです。
-このようにすることできれいな環境作りを実現できます。
-</para>
+  <para>
+  <systemitem class="username">lfs</systemitem> ユーザーとしてログインした時、起動されるシェルは普通は<emphasis>ログイン</emphasis>シェルとなります。
+  この時、ホストシステムの <filename>/etc/profile</filename> ファイル (おそらく環境変数がいくつか定義されている) と <filename>.bash_profile</filename> が読み込まれます。
+  <filename>.bash_profile</filename> ファイル内の <command>exec env -i.../bin/bash</command> というコマンドが、起動しているシェルを全くの空の環境として起動し直し <envar>HOME</envar>、
+  <envar>TERM</envar>、<envar>PS1</envar> という環境変数だけを設定します。
+  これはホストシステム内の不要な設定や危険をはらんだ設定を、ビルド環境に持ち込まないようにするためです。
+  このようにすることできれいな環境作りを実現できます。
+  </para>
 @z
 
 @x
@@ -62,11 +61,11 @@
   <filename>.bashrc</filename> file instead. Create the
   <filename>.bashrc</filename> file now:</para>
 @y
-<para>
-新しく起動するシェルはログインシェルではなくなります。
-したがってこのシェルは <filename>/etc/profile</filename> ファイルや <filename>.bash_profile</filename> ファイルは読み込まず、代わりに <filename>.bashrc</filename> ファイルを読み込みます。
-そこで以下のようにして <filename>.bashrc</filename> ファイルを生成します。
-</para>
+  <para>
+  新しく起動するシェルはログインシェルではなくなります。
+  したがってこのシェルは <filename>/etc/profile</filename> ファイルや <filename>.bash_profile</filename> ファイルは読み込まず、代わりに <filename>.bashrc</filename> ファイルを読み込みます。
+  そこで以下のようにして <filename>.bashrc</filename> ファイルを生成します。
+  </para>
 @z
 
 @x
@@ -82,15 +81,15 @@
   available without remembering a previous version of the same program in a
   different location.</para>
 @y
-<para>
-<command>set +h</command> コマンドは <command>bash</command> のハッシュ機能を無効にします。
-通常このハッシュ機能は有用なものです。
-実行ファイルのフルパスをハッシュテーブルに記憶しておき、再度そのパスを探し出す際に <envar>PATH</envar> 変数の探査を省略します。
-しかしこれより作り出すツール類はインストール直後にすぐ利用していきます。
-ハッシュ機能を無効にすることで、プログラム実行が行われる際に、シェルは必ず <envar>PATH</envar> を探しにいきます。
-つまり <filename class="directory">$LFS/tools</filename> ディレクトリ以下に新たに構築したツール類は必ず実行されるようになるわけです。
-そのツールの古いバージョンがどこか別のディレクトリにあったとしても、その場所を覚えていて実行されるということがなくなります。
-</para>
+  <para>
+  <command>set +h</command> コマンドは <command>bash</command> のハッシュ機能を無効にします。
+  通常このハッシュ機能は有用なものです。
+  実行ファイルのフルパスをハッシュテーブルに記憶しておき、再度そのパスを探し出す際に <envar>PATH</envar> 変数の探査を省略します。
+  しかしこれより作り出すツール類はインストール直後にすぐ利用していきます。
+  ハッシュ機能を無効にすることで、プログラム実行が行われる際に、シェルは必ず <envar>PATH</envar> を探しにいきます。
+  つまり <filename class="directory">$LFS/tools</filename> ディレクトリ以下に新たに構築したツール類は必ず実行されるようになるわけです。
+  そのツールの古いバージョンがどこか別のディレクトリにあったとしても、その場所を覚えていて実行されるということがなくなります。
+  </para>
 @z
 
 @x
@@ -100,19 +99,19 @@
   <function>open(2)</function> system call, new files will end up with permission
   mode 644 and directories with mode 755).</para>
 @y
-<para>
-ユーザーのファイル生成マスク (file-creation mask; umask) を 022 にセットするのは、新たなファイルやディレクトリの生成はその所有者にのみ許可し、他者は読み取りと実行を可能とするためです。
-(システムコール <function>open(2)</function> にてデフォルトモードが適用される場合、新規生成ファイルのパーミッションモードは 644、同じくディレクトリは 755 となります。)
-</para>
+  <para>
+  ユーザーのファイル生成マスク (file-creation mask; umask) を 022 にセットするのは、新たなファイルやディレクトリの生成はその所有者にのみ許可し、他者は読み取りと実行を可能とするためです。
+  (システムコール <function>open(2)</function> にてデフォルトモードが適用される場合、新規生成ファイルのパーミッションモードは 644、同じくディレクトリは 755 となります。)
+  </para>
 @z
 
 @x
   <para>The <envar>LFS</envar> variable should be set to the chosen mount
   point.</para>
 @y
-<para>
-環境変数 <envar>LFS</envar> は常に指定したマウントポイントを指し示すように設定します。
-</para>
+  <para>
+  環境変数 <envar>LFS</envar> は常に指定したマウントポイントを指し示すように設定します。
+  </para>
 @z
 
 @x
@@ -125,13 +124,13 @@
   <quote>POSIX</quote> or <quote>C</quote> (the two are equivalent) ensures that
   everything will work as expected in the chroot environment.</para>
 @y
-<para>
-<envar>LC_ALL</envar> 変数は特定のプログラムが扱う国情報を制御します。
-そのプログラムが出力するメッセージを、指定された国情報に基づいて構成します。
-ホストシステムの Glibc が 2.2.4 よりも古いものであって、この <envar>LC_ALL</envar> を (本章の作業中に)<quote>POSIX</quote>でもなく<quote>C</quote>でもない値にセットしていた場合、chroot 環境からの exit と再度の環境移行を行う際に問題が発生します。
-<envar>LC_ALL</envar> 変数は <quote>POSIX</quote> か <quote>C</quote> にセットしてください。
-(両者は同じです。) そのようにセットしておけば、chroot 環境下での作業が問題なく進められます。
-</para>
+  <para>
+  <envar>LC_ALL</envar> 変数は特定のプログラムが扱う国情報を制御します。
+  そのプログラムが出力するメッセージを、指定された国情報に基づいて構成します。
+  ホストシステムの Glibc が 2.2.4 よりも古いものであって、この <envar>LC_ALL</envar> を (本章の作業中に)<quote>POSIX</quote>でもなく<quote>C</quote>でもない値にセットしていた場合、chroot 環境からの exit と再度の環境移行を行う際に問題が発生します。
+  <envar>LC_ALL</envar> 変数は <quote>POSIX</quote> か <quote>C</quote> にセットしてください。
+  (両者は同じです。) そのようにセットしておけば、chroot 環境下での作業が問題なく進められます。
+  </para>
 @z
 
 @x
@@ -140,11 +139,11 @@
   compiling our temporary toolchain. More information is contained in
   <xref linkend="ch-tools-toolchaintechnotes" role=""/>.</para>
 @y
-<para>
-<envar>LFS_TGT</envar> 変数は標準にないマシン名称を設定します。
-しかしこれはこの先、クロスコンパイラーやクロスリンカーの構築、これを用いたツールチェーンの構築の際に、うまく動作させるための設定です。
-詳しくは <xref linkend="ch-tools-toolchaintechnotes" role=""/>にて説明しているので参照してください。
-</para>
+  <para>
+  <envar>LFS_TGT</envar> 変数は標準にないマシン名称を設定します。
+  しかしこれはこの先、クロスコンパイラーやクロスリンカーの構築、これを用いたツールチェーンの構築の際に、うまく動作させるための設定です。
+  詳しくは <xref linkend="ch-tools-toolchaintechnotes" role=""/>にて説明しているので参照してください。
+  </para>
 @z
 
 @x
@@ -155,20 +154,20 @@
   that old programs are used from the host when the same programs are available in
   the chapter 5 environment.</para>
 @y
-<para>
-<filename class="directory">/tools/bin</filename> ディレクトリを PATH 変数の先頭に設定します。
-<xref linkend="chapter-temporary-tools"/>
-にてインストールするプログラムは、インストールした直後からシェルによって実行指示が下されます。
-この設定は、ハッシュ機能をオフとしたことと連携して、古いプログラムが実行されないようにします。
-たとえホストシステムとの間で同一の実行プログラムがあったとしても、第5章の作業環境下では適切なプログラム実行が実現されます。
-</para>
+  <para>
+  <filename class="directory">/tools/bin</filename> ディレクトリを PATH 変数の先頭に設定します。
+  <xref linkend="chapter-temporary-tools"/>
+  にてインストールするプログラムは、インストールした直後からシェルによって実行指示が下されます。
+  この設定は、ハッシュ機能をオフとしたことと連携して、古いプログラムが実行されないようにします。
+  たとえホストシステムとの間で同一の実行プログラムがあったとしても、第5章の作業環境下では適切なプログラム実行が実現されます。
+  </para>
 @z
 
 @x
   <para>Finally, to have the environment fully prepared for building the
   temporary tools, source the just-created user profile:</para>
 @y
-<para>
-一時的なツールを構築する準備の最後として、今作り出したユーザープロファイルを source によって取り込みます。
-</para>
+  <para>
+  一時的なツールを構築する準備の最後として、今作り出したユーザープロファイルを source によって取り込みます。
+  </para>
 @z
