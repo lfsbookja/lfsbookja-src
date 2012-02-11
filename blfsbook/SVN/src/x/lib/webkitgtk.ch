@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,8 +25,7 @@
     <application>GTK+</application> platform.</para>
 @y
     <para>
-    <application>WebKitGTK+</application> パッケージは、
-    可搬性に優れたウェブレンダリングエンジン <application>WebKit</application> の <application>GTK+</application> プラットフォームでのポートです。
+    <application>WebKitGTK+</application> パッケージは、可搬性に優れたウェブレンダリングエンジン <application>WebKit</application> の <application>GTK+</application> プラットフォームでのポートです。
     </para>
 @z
 
@@ -164,10 +163,12 @@
 
 @x
     <para><option>--enable-introspection</option>: This option enables support
-    for gobject-introspection.</para>
+    for gobject-introspection and is required for a
+    <application>GNOME</application>.</para>
 @y
-    <para>
-    <option>--enable-introspection</option>: gobject-introspection サポートを有効にします。
+    <para><option>--enable-introspection</option>:
+    gobject-introspection サポートを有効にします。
+    これは <application>GNOME</application> において必要です。
     </para>
 @z
 
@@ -267,4 +268,3 @@
           ウェブブラウザーのコンテキスト外にて JavaScript を実行します。
           </para>
 @z
-

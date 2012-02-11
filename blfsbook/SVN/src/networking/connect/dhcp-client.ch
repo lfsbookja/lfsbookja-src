@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -87,13 +87,13 @@
 
 @x
     <para id="dhclient-config1">Next, create the
-    <filename>/etc/sysconfig/ifconfig.eth0/dhclient</filename>
+    <filename>/etc/sysconfig/ifconfig.eth0</filename>
     configuration file with the following commands as the <systemitem
     class="username">root</systemitem> user.  Adjust as
     necessary for additional interfaces:</para>
 @y
     <para id="dhclient-config1">
-    次に設定ファイル <filename>/etc/sysconfig/ifconfig.eth0/dhclient</filename> を生成するため、<systemitem
+    次に設定ファイル <filename>/etc/sysconfig/ifconfig.eth0</filename> を生成するため、<systemitem
     class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
     追加のインターフェースがある場合は適宜修正してください。
     </para>

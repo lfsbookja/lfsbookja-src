@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -80,11 +80,11 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/> and
+    <para role="required"><xref linkend="gtk3"/> and
     <xref linkend="polkit"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="gtk3"/>,
     <xref linkend="polkit"/></para>
 @z
 

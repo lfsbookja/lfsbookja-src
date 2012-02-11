@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -93,10 +93,12 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gstreamer"/></para>
+    <para role="optional"><xref linkend="gstreamer"/> and
+    <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gstreamer"/></para>
+    <para role="optional"><xref linkend="gstreamer"/>,
+    <xref linkend="gtk-doc"/></para>
 @z
 
 @x
@@ -131,7 +133,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -145,7 +148,16 @@
 @z
 
 @x
-    <para><option>--with-gstreamer</option>: This option enables GStreamer functionality.</para>
+    <para><option> --disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option> --disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
+@z
+
+@x
+    <para><option>--with-gstreamer</option>: This option enables GStreamer
+    functionality.</para>
 @y
     <para>
     <option>--with-gstreamer</option>:
@@ -171,12 +183,14 @@
 
 @x
         <seg>stunbdc and stund</seg>
-        <seg>libnice.{so,a} and libgstnice.{so,a}</seg>
-        <seg>/usr/{include/{nice,stun/usages},share/gtk-doc/html/libnice}</seg>
+        <seg>libgstnice.so and libnice.so</seg>
+        <seg>/usr/include/nice, /usr/include/stun and
+        /usr/share/gtk-doc/html/libnice</seg>
 @y
         <seg>stunbdc, stund</seg>
-        <seg>libnice.{so,a}, libgstnice.{so,a}</seg>
-        <seg>/usr/{include/{nice,stun/usages},share/gtk-doc/html/libnice}</seg>
+        <seg>libgstnice.so, libnice.so</seg>
+        <seg>/usr/include/nice, /usr/include/stun,
+        /usr/share/gtk-doc/html/libnice</seg>
 @z
 
 @x
@@ -185,18 +199,19 @@
       <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
-@x libnice.{so,a}
-          <para>contains the <application>libnice</application> API functions.</para>
-@y
-          <para>
-          <application>libnice</application> API 関数を提供します。
-          </para>
-@z
-
-@x libgstnice.{so,a}
+@x libgstnice.so
           <para>is the <application>gstreamer</application> module.</para>
 @y
           <para>
           <application>gstreamer</application> モジュール。
+          </para>
+@z
+
+@x libnice.so
+          <para>contains the <application>libnice</application> API
+          functions.</para>
+@y
+          <para>
+          <application>libnice</application> API 関数を提供します。
           </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,13 +24,10 @@
     <application>GNOME</application>'s Display Manager daemon. This is
     useful for allowing configurable graphical logins.</para>
 @y
-<para>
-<application>GDM</application>
-パッケージは、<application>GNOME</application>
-のディスプレイマネジャーデーモン (Display Manager daemon)
-を提供します。
-これは設定変更が容易なグラフィカルログインを実現します。
-</para>
+    <para>
+    <application>GDM</application> パッケージは、<application>GNOME</application> のディスプレイマネジャーデーモン (Display Manager daemon) を提供します。
+    これは設定変更が容易なグラフィカルログインを実現します。
+    </para>
 @z
 
 @x
@@ -76,20 +73,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-        url="&patch-root;/gdm-&gdm-version;-fixes-1.patch"/></para>
-@y
-        <para>必要なパッチ: <ulink
-        url="&patch-root;/gdm-&gdm-version;-fixes-1.patch"/></para>
-@z
-
-@x
     <bridgehead renderas="sect3">GDM Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">GDM の依存パッケージ</bridgehead>
@@ -97,11 +80,15 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-panel"/> and
+    <para role="required"><xref linkend="accountsservice"/>,
+    <xref linkend="gnome-panel"/>,
+    <xref linkend="linux-pam"/>, and
     <xref linkend="xorg7-lib"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-panel"/>,
+    <para role="required"><xref linkend="accountsservice"/>,
+    <xref linkend="gnome-panel"/>,
+    <xref linkend="linux-pam"/>,
     <xref linkend="xorg7-lib"/></para>
 @z
 
@@ -153,40 +140,34 @@
     started. Issue the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-
-It is recommended to have a dedicated user and group to take
-control of the <command>gdm-binary</command> daemon after it is
-started. Issue the following commands as the
-<systemitem class="username">root</systemitem> user:
-</para>
+    <para>It is recommended to have a dedicated user and group to take
+    control of the <command>gdm-binary</command> daemon after it is
+    started. Issue the following commands as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
     <para>Install <application>GDM</application> by running
     the following commands as an unprivileged user:</para>
 @y
-<para>
-Install <application>GDM</application> by running
-the following commands as an unprivileged user:
-</para>
+    <para>Install <application>GDM</application> by running
+    the following commands as an unprivileged user:</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
@@ -196,47 +177,39 @@ the following commands as an unprivileged user:
 @z
 
 @x
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gdm</parameter>: This
+    parameter is used so that the <application>GDM</application> internal
+    support programs are installed in the preferred location of <filename
+    class='directory'>$GNOME_PREFIX/lib/gdm</filename> instead of <filename
+    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
+@y
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gdm</parameter>: This
+    parameter is used so that the <application>GDM</application> internal
+    support programs are installed in the preferred location of <filename
+    class='directory'>$GNOME_PREFIX/lib/gdm</filename> instead of <filename
+    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
+@z
+
+@x
     <para><parameter>--localstatedir=/var</parameter>: This command
     puts files in <filename class="directory">/var</filename> instead of
     <filename class="directory">$GNOME_PREFIX/var</filename>.</para>
 @y
-<para>
-<parameter>--localstatedir=/var</parameter>: This command
-puts files in <filename class="directory">/var</filename> instead of
-<filename class="directory">$GNOME_PREFIX/var</filename>.
-</para>
-@z
-
-@x
-    <para><parameter>--libexecdir=$(pkg-config
-    --variable=prefix ORBit-2.0)/lib/gdm</parameter>: This parameter is
-    used so that the <application>GDM</application> internal support programs
-    are installed in the preferred location of
-    <filename class='directory'>$GNOME_PREFIX/lib/gdm</filename> instead
-    of <filename class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
-@y
-<para>
-<parameter>--libexecdir=$(pkg-config
---variable=prefix ORBit-2.0)/lib/gdm</parameter>: This parameter is
-used so that the <application>GDM</application> internal support programs
-are installed in the preferred location of
-<filename class='directory'>$GNOME_PREFIX/lib/gdm</filename> instead
-of <filename class='directory'>$GNOME_PREFIX/libexec</filename>.
-</para>
+    <para><parameter>--localstatedir=/var</parameter>: This command
+    puts files in <filename class="directory">/var</filename> instead of
+    <filename class="directory">$GNOME_PREFIX/var</filename>.</para>
 @z
 
 @x
     <para><parameter>--with-pam-prefix=/etc</parameter>: This command puts
     <application>PAM</application> configuration files in
     <filename class="directory">/etc/pam.d</filename> instead of
-    <filename class="directory">&gnome-etc-dir;</filename>.</para>
+    <filename class="directory">$GNOME_SYSCONFDIR</filename>.</para>
 @y
-<para>
-<parameter>--with-pam-prefix=/etc</parameter>: This command puts
-<application>PAM</application> configuration files in
-<filename class="directory">/etc/pam.d</filename> instead of
-<filename class="directory">&gnome-etc-dir;</filename>.
-</para>
+    <para><parameter>--with-pam-prefix=/etc</parameter>: This command puts
+    <application>PAM</application> configuration files in
+    <filename class="directory">/etc/pam.d</filename> instead of
+    <filename class="directory">$GNOME_SYSCONFDIR</filename>.</para>
 @z
 
 @x
@@ -252,12 +225,6 @@ of <filename class='directory'>$GNOME_PREFIX/libexec</filename>.
 @z
 
 @x
-      <para><filename>&gnome-etc-dir;/gdm/custom.conf</filename></para>
-@y
-      <para><filename>&gnome-etc-dir;/gdm/custom.conf</filename></para>
-@z
-
-@x
       <title>Configuration Information</title>
 @y
       <title>&j-ConfigInfo;</title>
@@ -265,18 +232,18 @@ of <filename class='directory'>$GNOME_PREFIX/libexec</filename>.
 
 @x
       <para>The GDM daemon is configured using the
-      <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file.
+      <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file.
       Default values are stored in GConf in the
       <filename>gdm.schemas</filename> file. It is recommended that end-users
-      modify the <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file
+      modify the <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file
       because the schemas file may be overwritten when the user updates their
       system to have a newer version of GDM.</para>
 @y
       <para>The GDM daemon is configured using the
-      <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file.
+      <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file.
       Default values are stored in GConf in the
       <filename>gdm.schemas</filename> file. It is recommended that end-users
-      modify the <filename>&gnome-etc-dir;/gdm/custom.conf</filename> file
+      modify the <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file
       because the schemas file may be overwritten when the user updates their
       system to have a newer version of GDM.</para>
 @z
@@ -289,14 +256,12 @@ of <filename class='directory'>$GNOME_PREFIX/libexec</filename>.
       replace those files with files containing correctly specified
       modules:</para>
 @y
-<para>
-The <application>GDM</application> <application>PAM</application>
-configuration files contain modules not present in a BLFS installation.
-If you have <application>PAM</application> installed, issue the following
-commands as the <systemitem class="username">root</systemitem> user to
-replace those files with files containing correctly specified
-modules:
-</para>
+      <para>The <application>GDM</application> <application>PAM</application>
+      configuration files contain modules not present in a BLFS installation.
+      If you have <application>PAM</application> installed, issue the following
+      commands as the <systemitem class="username">root</systemitem> user to
+      replace those files with files containing correctly specified
+      modules:</para>
 @z
 
 @x
@@ -307,14 +272,12 @@ modules:
       Xsession file. Create the file using the following command as the root
       user.</para>
 @y
-<para id="gdm-config-dbus">
-If you have <application>D-BUS</application>
-installed and you want to start the session
-<application>D-BUS</application> daemon when you start the GNOME desktop
-environment using <command>gdm</command>, you'll need to create a new
-Xsession file. Create the file using the following command as the root
-user.
-</para>
+      <para id="gdm-config-dbus">If you have <application>D-BUS</application>
+      installed and you want to start the session
+      <application>D-BUS</application> daemon when you start the GNOME desktop
+      environment using <command>gdm</command>, you'll need to create a new
+      Xsession file. Create the file using the following command as the root
+      user.</para>
 @z
 
 @x
@@ -322,11 +285,9 @@ user.
       display manager login screen. You also have the opportunity to make this
       your default session.</para>
 @y
-<para>
-Choose this session using the session selection dialog on the
-display manager login screen. You also have the opportunity to make this
-your default session.
-</para>
+      <para>Choose this session using the session selection dialog on the
+      display manager login screen. You also have the opportunity to make this
+      your default session.</para>
 @z
 
 @x
@@ -336,13 +297,11 @@ your default session.
         desired items to the <application>GDM</application> display manager session
         selection menu.</para>
 @y
-<para>
-You may use the <filename class='extension'>.desktop</filename>
-file created above as an example to create additional
-<filename class='extension'>.desktop</filename> files and add any other
-desired items to the <application>GDM</application> display manager session
-selection menu.
-</para>
+        <para>You may use the <filename class='extension'>.desktop</filename>
+        file created above as an example to create additional
+        <filename class='extension'>.desktop</filename> files and add any other
+        desired items to the <application>GDM</application> display manager session
+        selection menu.</para>
 @z
 
 @x
@@ -351,12 +310,11 @@ selection menu.
       <command>gdm-stop</command> command if you wish to stop the display
       manager.</para>
 @y
-<para>
-<command>gdm</command> can be tested by executing it as the
-<systemitem class="username">root</systemitem> user. Use the
-<command>gdm-stop</command> command if you wish to stop the display
-manager.
-</para>
+        <para>You may use the <filename class='extension'>.desktop</filename>
+        file created above as an example to create additional
+        <filename class='extension'>.desktop</filename> files and add any other
+        desired items to the <application>GDM</application> display manager session
+        selection menu.</para>
 @z
 
 @x
@@ -376,28 +334,23 @@ manager.
       to include the path where you have <application>GNOME</application>
       installed.</para>
 @y
-<para>
-
-To start a graphical login when the system is booted, install the
-<filename>/etc/rc.d/init.d/gdm</filename> init script included in the
-<xref linkend="bootscripts"/> package. If your
-<envar>GNOME_PREFIX</envar> environment variable is anything other than
-<filename class='directory'>/usr</filename> or <filename
-class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>,
-you will need to modify the <envar>PATH</envar> statement in the script
-to include the path where you have <application>GNOME</application>
-installed.
-</para>
+      <para>To start a graphical login when the system is booted, install the
+      <filename>/etc/rc.d/init.d/gdm</filename> init script included in the
+      <xref linkend="bootscripts"/> package. If your
+      <envar>GNOME_PREFIX</envar> environment variable is anything other than
+      <filename class='directory'>/usr</filename> or <filename
+      class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>,
+      you will need to modify the <envar>PATH</envar> statement in the script
+      to include the path where you have <application>GNOME</application>
+      installed.</para>
 @z
 
 @x
       <para>Now edit <filename>/etc/inittab</filename> with the following
       commands.</para>
 @y
-<para>
-Now edit <filename>/etc/inittab</filename> with the following
-commands.
-</para>
+      <para>Now edit <filename>/etc/inittab</filename> with the following
+      commands.</para>
 @z
 
 @x
@@ -424,7 +377,7 @@ commands.
         gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, gdm-binary,
         gdm-restart, gdm-safe-restart, and gdm-stop</seg>
         <seg>None</seg>
-        <seg>&gnome-etc-dir;/gdm/{Init,PostLogin,PostSession,PreSession},
+        <seg>$GNOME_SYSCONFDIR/gdm/{Init,PostLogin,PostSession,PreSession},
         <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
         pixmaps/faces}},
         /var/{cache/gdm,gdm,lib/gdm/.gconf.mandatory,log/gdm,
@@ -435,9 +388,9 @@ commands.
         gdm-host-chooser, gdm-product-slave, gdm-session-worker,
         gdm-simple-chooser, gdm-simple-greeter, gdm-simple-slave,
         gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, gdm-binary,
-        gdm-restart, gdm-safe-restart, gdm-stop</seg>
+        gdm-restart, gdm-safe-restart, and gdm-stop</seg>
         <seg>None</seg>
-        <seg>&gnome-etc-dir;/gdm/{Init,PostLogin,PostSession,PreSession},
+        <seg>$GNOME_SYSCONFDIR/gdm/{Init,PostLogin,PostSession,PreSession},
         <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
         pixmaps/faces}},
         /var/{cache/gdm,gdm,lib/gdm/.gconf.mandatory,log/gdm,
@@ -454,11 +407,8 @@ commands.
           <para>is the flexi server mechanism which allows to run GDM sessions
           on demand, in a new virtual console.</para>
 @y
-<para>
-
-is the flexi server mechanism which allows to run GDM sessions
-on demand, in a new virtual console.
-</para>
+          <para>is the flexi server mechanism which allows to run GDM sessions
+          on demand, in a new virtual console.</para>
 @z
 
 @x gdm-screenshot

@@ -1,8 +1,8 @@
 BOOKdir = $(top_builddir)/@bookdir@/gnome/add
 EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
-	dummy-libraries.ch dummy-utilities.ch ekiga.ch eog.ch \
-	epiphany.ch evince.ch evolution-data-server.ch file-roller.ch \
-	gcalctool.ch gconf-editor.ch gdm.ch gedit.ch \
+	dummy-libraries.ch dummy-utilities.ch ekiga.ch \
+	file-roller.ch \
+	gconf-editor.ch gedit.ch \
 	gnome-games.ch gnome-mag.ch \
 	gnome-netstatus.ch gnome-screensaver.ch \
 	gnome-speech.ch gnome-system-monitor.ch gnome-utils.ch \
@@ -11,17 +11,17 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	libgnomeprint.ch libgnomeprintui.ch orca.ch \
 	sound-juicer.ch system-tools-backends.ch totem.ch \
 	gnome-power-manager.ch totem-pl-parser.ch \
-	brasero.ch gnome-disk-utility.ch nautilus-sendto.ch \
-	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch empathy.ch \
+	gnome-disk-utility.ch nautilus-sendto.ch \
+	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch \
 	liboobs.ch gnome-nettool.ch gnome-system-tools.ch \
 	mousetweaks.ch hamster-applet.ch gnome-user-share.ch \
 	seahorse-plugins.ch gnome-bluetooth.ch seahorse.ch \
 	vinagre.ch vino.ch
 srcdir = @srcdir@
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
-	dummy-libraries.xml dummy-utilities.xml ekiga.xml eog.xml \
-	epiphany.xml evince.xml evolution-data-server.xml file-roller.xml \
-	gcalctool.xml gconf-editor.xml gdm.xml gedit.xml \
+	dummy-libraries.xml dummy-utilities.xml ekiga.xml \
+	file-roller.xml \
+	gconf-editor.xml gedit.xml \
 	gnome-games.xml gnome-mag.xml \
 	gnome-netstatus.xml gnome-screensaver.xml \
 	gnome-speech.xml gnome-system-monitor.xml gnome-utils.xml \
@@ -30,8 +30,8 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	libgnomeprint.xml libgnomeprintui.xml orca.xml \
 	sound-juicer.xml system-tools-backends.xml totem.xml \
 	gnome-power-manager.xml totem-pl-parser.xml \
-	brasero.xml gnome-disk-utility.xml nautilus-sendto.xml \
-	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml empathy.xml \
+	gnome-disk-utility.xml nautilus-sendto.xml \
+	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml \
 	liboobs.xml gnome-nettool.xml gnome-system-tools.xml \
 	mousetweaks.xml hamster-applet.xml gnome-user-share.xml \
 	seahorse-plugins.xml gnome-bluetooth.xml seahorse.xml \
@@ -52,14 +52,8 @@ dummy-accessibility.xml: $(BOOKdir)/$@ $(srcdir)/dummy-accessibility.ch
 dummy-libraries.xml: $(BOOKdir)/$@ $(srcdir)/dummy-libraries.ch
 dummy-utilities.xml: $(BOOKdir)/$@ $(srcdir)/dummy-utilities.ch
 ekiga.xml: $(BOOKdir)/$@ $(srcdir)/ekiga.ch
-eog.xml: $(BOOKdir)/$@ $(srcdir)/eog.ch
-epiphany.xml: $(BOOKdir)/$@ $(srcdir)/epiphany.ch
-evince.xml: $(BOOKdir)/$@ $(srcdir)/evince.ch
-evolution-data-server.xml: $(BOOKdir)/$@ $(srcdir)/evolution-data-server.ch
 file-roller.xml: $(BOOKdir)/$@ $(srcdir)/file-roller.ch
-gcalctool.xml: $(BOOKdir)/$@ $(srcdir)/gcalctool.ch
 gconf-editor.xml: $(BOOKdir)/$@ $(srcdir)/gconf-editor.ch
-gdm.xml: $(BOOKdir)/$@ $(srcdir)/gdm.ch
 gedit.xml: $(BOOKdir)/$@ $(srcdir)/gedit.ch
 gnome-games.xml: $(BOOKdir)/$@ $(srcdir)/gnome-games.ch
 gnome-mag.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mag.ch
@@ -83,14 +77,12 @@ sound-juicer.xml: $(BOOKdir)/$@ $(srcdir)/sound-juicer.ch
 system-tools-backends.xml: $(BOOKdir)/$@ $(srcdir)/system-tools-backends.ch
 totem.xml: $(BOOKdir)/$@ $(srcdir)/totem.ch
 totem-pl-parser.xml: $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
-brasero.xml: $(BOOKdir)/$@ $(srcdir)/brasero.ch
 gnome-disk-utility.xml: $(BOOKdir)/$@ $(srcdir)/gnome-disk-utility.ch
 nautilus-sendto.xml: $(BOOKdir)/$@ $(srcdir)/nautilus-sendto.ch
 alacarte.xml: $(BOOKdir)/$@ $(srcdir)/alacarte.ch
 cheese.xml: $(BOOKdir)/$@ $(srcdir)/cheese.ch
 deskbar-applet.xml: $(BOOKdir)/$@ $(srcdir)/deskbar-applet.ch
 dasher.xml: $(BOOKdir)/$@ $(srcdir)/dasher.ch
-empathy.xml: $(BOOKdir)/$@ $(srcdir)/empathy.ch
 liboobs.xml: $(BOOKdir)/$@ $(srcdir)/liboobs.ch
 gnome-nettool.xml: $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
 gnome-system-tools.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-tools.ch

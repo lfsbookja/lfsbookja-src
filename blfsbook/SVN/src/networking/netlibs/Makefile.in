@@ -138,10 +138,12 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/networking/netlibs
 EXTRA_DIST = curl.ch gnet.ch libpcap.ch libsoup.ch netlibs.ch libproxy.ch \
-	libnice.ch neon.ch libtirpc.ch
+	libnice.ch neon.ch libtirpc.ch libgdata.ch \
+	libnl.ch librest.ch
 
 srcs = curl.xml gnet.xml libpcap.xml libsoup.xml netlibs.xml libproxy.xml \
-	libnice.xml neon.xml libtirpc.xml
+	libnice.xml neon.xml libtirpc.xml libgdata.xml \
+	libnl.xml librest.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -339,6 +341,9 @@ libproxy.xml: $(BOOKdir)/$@ $(srcdir)/libproxy.ch
 libnice.xml: $(BOOKdir)/$@ $(srcdir)/libnice.ch
 neon.xml: $(BOOKdir)/$@ $(srcdir)/neon.ch
 libtirpc.xml: $(BOOKdir)/$@ $(srcdir)/libtirpc.ch
+libgdata.xml: $(BOOKdir)/$@ $(srcdir)/libgdata.ch
+libnl.xml: $(BOOKdir)/$@ $(srcdir)/libnl.ch
+librest.xml: $(BOOKdir)/$@ $(srcdir)/librest.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

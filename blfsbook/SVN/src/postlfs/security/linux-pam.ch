@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -212,7 +212,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -243,22 +244,21 @@
     the documentation being installed in a versioned directory name.</para>
 @y
     <para>
-    <parameter>--docdir=...</parameter>: このパラメーターは、ドキュメントをバージョン番号を用いたディレクトリにインストールすることを指示します。
+    <parameter>--docdir=...</parameter>:
+    このパラメーターは、ドキュメントをバージョン番号を用いたディレクトリにインストールすることを指示します。
     </para>
 @z
 
 @x
     <para><parameter>--disable-nis</parameter>: This option disables building
     Network Information Service/Yellow Pages support in pam_unix and pam_access
-    as nis is deprecated in glibc.</para>
+    as the RPC implementation in glibc (on which NIS/YP depends) is
+    deprecated.</para>
 @y
-    <para>
-    <parameter>--disable-nis</parameter>:
-    glibc において nis が古いものとなったため、
-    このパラメーターは、ネットワークインフォメーションサービス/イエローページ (Network Information Service/Yellow Pages) のサポートをThis option disables building
+    <para><parameter>--disable-nis</parameter>: This option disables building
     Network Information Service/Yellow Pages support in pam_unix and pam_access
-    as nis is deprecated in glibc.
-    </para>
+    as the RPC implementation in glibc (on which NIS/YP depends) is
+    deprecated.</para>
 @z
 
 @x
@@ -294,44 +294,44 @@
     </para>
 @z
 
-@x
-    <para><command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>: This
-    command moves the <application>Libtool</application> library files to
-    <filename class='directory'>/usr/lib</filename> as they are expected to
-    reside there.</para>
-@y
-    <para>
-    <command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>: <application>Libtool</application> ライブラリファイルは <filename
-    class='directory'>/usr/lib</filename> ディレクトリに配置されるべきであるため、このコマンドにより移動します。
-    </para>
-@z
+% @x
+%     <para><command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>: This
+%     command moves the <application>Libtool</application> library files to
+%     <filename class='directory'>/usr/lib</filename> as they are expected to
+%     reside there.</para>
+% @y
+%     <para>
+%     <command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>: <application>Libtool</application> ライブラリファイルは <filename
+%     class='directory'>/usr/lib</filename> ディレクトリに配置されるべきであるため、このコマンドにより移動します。
+%     </para>
+% @z
 
-@x
-    <para><command>sed -i 's| /lib| /usr/lib|'
-    /usr/lib/libpam_misc.la</command>: This command corrects an installation
-    reference due to the file being moved in the previous step.</para>
-@y
-    <para>
-    <command>sed -i 's| /lib| /usr/lib|'
-    /usr/lib/libpam_misc.la</command>: １つ前の手順にてファイル位置を移動しているため、このコマンドによりインストールディレクトリの参照をただします。
-    </para>
-@z
+% @x
+%     <para><command>sed -i 's| /lib| /usr/lib|'
+%     /usr/lib/libpam_misc.la</command>: This command corrects an installation
+%     reference due to the file being moved in the previous step.</para>
+% @y
+%     <para>
+%     <command>sed -i 's| /lib| /usr/lib|'
+%     /usr/lib/libpam_misc.la</command>: １つ前の手順にてファイル位置を移動しているため、このコマンドによりインストールディレクトリの参照をただします。
+%     </para>
+% @z
 
-@x
-    <para><command>for ...; do ...; done</command>: These commands are used
-    to relocate the <filename class='symlink'>.so</filename> symbolic links
-    into the <filename class='directory'>/usr/lib</filename> directory by
-    cloning and then removing the existing symlinks. Using
-    <command>readlink</command> ensures the new symlinks point at the correct
-    library filenames.</para>
-@y
-    <para><command>for ...; do ...; done</command>:
-    これらのコマンドは <filename class='symlink'>.so</filename> シンボリックリンクを <filename
-    class='directory'>/usr/lib</filename> ディレクトリに配置し直すものです。
-    シンボリックリンクを張り直し、古いリンクは削除します。
-    <command>readlink</command> を使っているのは、新しいシンボリックリンクが指し示すライブラリの名前を確実に正しいものとするためです。
-    </para>
-@z
+% @x
+%     <para><command>for ...; do ...; done</command>: These commands are used
+%     to relocate the <filename class='symlink'>.so</filename> symbolic links
+%     into the <filename class='directory'>/usr/lib</filename> directory by
+%     cloning and then removing the existing symlinks. Using
+%     <command>readlink</command> ensures the new symlinks point at the correct
+%     library filenames.</para>
+% @y
+%     <para><command>for ...; do ...; done</command>:
+%     これらのコマンドは <filename class='symlink'>.so</filename> シンボリックリンクを <filename
+%     class='directory'>/usr/lib</filename> ディレクトリに配置し直すものです。
+%     シンボリックリンクを張り直し、古いリンクは削除します。
+%     <command>readlink</command> を使っているのは、新しいシンボリックリンクが指し示すライブラリの名前を確実に正しいものとするためです。
+%     </para>
+% @z
 
 @x
     <title>Configuring Linux-PAM</title>

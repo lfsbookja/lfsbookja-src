@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -26,14 +26,10 @@
     matching using the same syntax and semantics as
     <application>Perl</application> 5.</para>
 @y
-<para>
-<application>PCRE</application> パッケージは
-<application>Perl</application>
-互換正規表現 (Perl Compatible Regular Expression)
-ライブラリを提供します。
-このライブラリを用いれば <application>Perl</application> 5
-と同様の文法により、正規表現によるパターンマッチングを実現することができます。
-</para>
+    <para>
+    <application>PCRE</application> パッケージは <application>Perl</application> 互換正規表現 (Perl Compatible Regular Expression) ライブラリを提供します。
+    このライブラリを用いれば <application>Perl</application> 5 と同様の文法により、正規表現によるパターンマッチングを実現することができます。
+    </para>
 @z
 
 @x
@@ -96,59 +92,25 @@
     <para>Install <application>PCRE</application> by running
     the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>PCRE</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>PCRE</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. Note:
-    The third set of the tests cannot be run if the "fr_FR" locale is missing
-    from the system.</para>
+    <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command>
-を実行します。
-ただしロケール "fr_FR" がシステムに存在しない場合、テストのうち、３つめのセットは起動することができません。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
-@z
-
-@x
-    <para>If you reinstall <application>Grep</application> after installing
-    <application>PCRE</application>, <application>Grep</application> will get
-    linked against <application>PCRE</application> and may cause problems if
-    <filename class="directory">/usr</filename> is a separate mount point. To avoid
-    this, either pass the option <option>--disable-perl-regexp</option> when executing
-    <command>./configure</command> for <application>Grep</application> or move
-    <filename class="libraryfile">libpcre</filename> to <filename
-    class="directory">/lib</filename> as follows.</para>
-@y
-<para>
-<application>PCRE</application>
-をインストールした後に <application>Grep</application>
-を再インストールすると、<application>Grep</application>
-が <application>PCRE</application>
-をリンクすることとなって問題が発生することがあります。
-これは <filename class="directory">/usr</filename>
-ディレクトリが個別のマウントポイントに存在する場合です。
-この問題を解消するには <application>Grep</application>
-の <command>./configure</command>
-処理において <option>--disable-perl-regexp</option>
-オプションを指定するか、あるいは
-<filename class="libraryfile">libpcre</filename>
-を <filename class="directory">/lib</filename>
-ディレクトリに移動する必要があります。
-この後者を行うには以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -158,13 +120,23 @@
 @z
 
 @x
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para>
+    <parameter>--enable-shared --disable-static</parameter>:
+    このオプションはスタティックライブラリをインストールしないことを指示します。
+    </para>
+@z
+
+@x
     <para><parameter>--enable-utf8</parameter>: This switch includes the code for
     handling UTF-8 character strings in the library.</para>
 @y
-<para>
-<parameter>--enable-utf8</parameter>:
-このオプションは UTF-8 文字を取り扱えるようにします。
-</para>
+    <para>
+    <parameter>--enable-utf8</parameter>:
+    このオプションは UTF-8 文字を取り扱えるようにします。
+    </para>
 @z
 
 @x
@@ -173,50 +145,33 @@
     going to build <xref linkend="glib2"/> with the
     <parameter>--with-pcre=system</parameter> switch.</para>
 @y
-<para>
-<parameter>--enable-unicode-properties</parameter>:
-このオプションは Unicode プロパティのサポートを有効にします。
-<xref linkend="glib2"/>
-のビルドにあたって <parameter>--with-pcre=system</parameter>
-オプションを指定する場合は、本オプションの指定が必要です。
-</para>
+    <para>
+    <parameter>--enable-unicode-properties</parameter>:
+    このオプションは Unicode プロパティのサポートを有効にします。
+    <xref linkend="glib2"/> のビルドにあたって <parameter>--with-pcre=system</parameter> オプションを指定する場合は、本オプションの指定が必要です。
+    </para>
 @z
 
 @x
     <para><parameter>--enable-pcregrep-libz</parameter>: This switch adds
     support to <command>pcregrep</command> to read
-    <filename class='extension'>.gz</filename> compressed files.</para>
+    <filename class="extension">.gz</filename> compressed files.</para>
 @y
-<para>
-<parameter>--enable-pcregrep-libz</parameter>:
-このオプションは <command>pcregrep</command>
-に対して、<filename class='extension'>.gz</filename>
-により圧縮されたファイルの読込機能を付与します。
-</para>
+    <para>
+    <parameter>--enable-pcregrep-libz</parameter>:
+    このオプションは <command>pcregrep</command> に対して、<filename class="extension">.gz</filename> により圧縮されたファイルの読込機能を付与します。
+    </para>
 @z
 
 @x
     <para><parameter>--enable-pcregrep-libbz2</parameter>: This switch adds
     support to <command>pcregrep</command> to read
-    <filename class='extension'>.bz2</filename> compressed files.</para>
+    <filename class="extension">.bz2</filename> compressed files.</para>
 @y
-<para>
-<parameter>--enable-pcregrep-libbz2</parameter>:
-このオプションは <command>pcregrep</command>
-に対して、<filename class='extension'>.bz2</filename>
-により圧縮されたファイルの読込機能を付与します。
-</para>
-@z
-
-@x
-    <para><parameter>--enable-shared --disable-static</parameter>: This pair
-    of switches prevents the static libraries in this package from being
-    built and installed.</para>
-@y
-<para>
-<parameter>--enable-shared --disable-static</parameter>:
-この2つのオプションは、本パッケージにおいてスタティックライブラリをビルドせずインストールしないことを指示します。
-</para>
+    <para>
+    <parameter>--enable-pcregrep-libbz2</parameter>:
+    このオプションは <command>pcregrep</command> に対して、<filename class="extension">.bz2</filename> により圧縮されたファイルの読込機能を付与します。
+    </para>
 @z
 
 @x
@@ -237,11 +192,11 @@
 
 @x
         <seg>pcregrep, pcretest, and pcre-config</seg>
-        <seg>libpcre.{so,a}, libpcrecpp.{so,a} and libpcreposix.{so,a}</seg>
+        <seg>libpcre.so, libpcrecpp.so and libpcreposix.so</seg>
         <seg>/usr/share/doc/pcre-&pcre-version;</seg>
 @y
         <seg>pcregrep, pcretest, pcre-config</seg>
-        <seg>libpcre.{so,a}, libpcrecpp.{so,a}, libpcreposix.{so,a}</seg>
+        <seg>libpcre.so, libpcrecpp.so, libpcreposix.so</seg>
         <seg>/usr/share/doc/pcre-&pcre-version;</seg>
 @z
 
@@ -255,28 +210,25 @@
           <para>is a <command>grep</command> that understands
           <application>Perl</application> compatible regular expressions.</para>
 @y
-<para>
-<command>grep</command> コマンドと同等であり
-<application>Perl</application> 互換の正規表現を扱います。
-</para>
+          <para>
+          <command>grep</command> コマンドと同等であり <application>Perl</application> 互換の正規表現を扱います。
+          </para>
 @z
 
 @x pcretest
           <para>can test a <application>Perl</application> compatible
           regular expression.</para>
 @y
-<para>
-<application>Perl</application> 互換の正規表現をテストします。
-</para>
+          <para>
+          <application>Perl</application> 互換の正規表現をテストします。
+          </para>
 @z
 
 @x pcre-config
           <para>is used during the compile process of programs linking to
           the <application>PCRE</application> libraries.</para>
 @y
-<para>
-プログラムのコンパイル中に <application>PCRE</application>
-ライブラリをリンクするために利用されます。
-</para>
+          <para>
+          プログラムのコンパイル中に <application>PCRE</application> ライブラリをリンクするために利用されます。
+          </para>
 @z
-

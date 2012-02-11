@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,12 +23,9 @@
     <para>The <application>libwnck</application> package contains a
     Window Navigator Construction Kit.</para>
 @y
-<para>
-<application>libwnck</application>
-パッケージは、ウィンドウナビゲーター構築キット
-(Window Navigator Construction Kit)
-を提供します。
-</para>
+    <para>
+    <application>libwnck</application> パッケージは、ウィンドウナビゲーター構築キット (Window Navigator Construction Kit) を提供します。
+    </para>
 @z
 
 @x
@@ -81,11 +78,11 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/> and
+    <para role="required"><xref linkend="gtk3"/> and
     <xref linkend="intltool"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="gtk3"/>,
     <xref linkend="intltool"/></para>
 @z
 
@@ -117,25 +114,25 @@
     <para>Install <application>libwnck</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libwnck</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libwnck</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>This package's testsuite is only intended to be used by the
+    maintainer to check i18n files.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>This package's testsuite is only intended to be used by the
+    maintainer to check i18n files.</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -180,15 +177,15 @@
           <para>Print or modify the properties of a screen/workspace/window,
           or interact with it.</para>
 @y
-<para>
-スクリーン/ワークスペース/ウィンドウのプロパティを表示したり更新したりします。
-</para>
+          <para>
+          スクリーン/ワークスペース/ウィンドウのプロパティを表示したり更新したりします。
+          </para>
 @z
 
 @x libwnck-1.{so,a}
           <para>contains functions for writing pagers and task lists.</para>
 @y
-<para>
-ページャー (pagers) やタスクリストへの更新を行う関数を提供します。
-</para>
+          <para>
+          ページャー (pagers) やタスクリストへの更新を行う関数を提供します。
+          </para>
 @z

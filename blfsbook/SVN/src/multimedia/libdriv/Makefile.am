@@ -9,7 +9,8 @@ EXTRA_DIST = alsa-firmware.ch alsa-lib.ch alsa-oss.ch alsa-plugins.ch \
 	openquicktime.ch sdl.ch speex.ch xine-lib.ch xvid.ch \
 	libcanberra.ch opal.ch telepathy-farsight.ch farsight2.ch \
 	libvpx.ch libmusicbrainz3.ch libdiscid.ch \
-	pulseaudio.ch libsndfile.ch gst-ffmpeg.ch
+	pulseaudio.ch libsndfile.ch gst-ffmpeg.ch \
+	gst-plugins-bad.ch sound-theme-freedesktop.ch
 srcdir = @srcdir@
 srcs = alsa-firmware.xml alsa-lib.xml alsa-oss.xml alsa-plugins.xml \
 	alsa-tools.xml alsa-utils.xml alsa.xml arts.xml audiofile.xml \
@@ -22,7 +23,8 @@ srcs = alsa-firmware.xml alsa-lib.xml alsa-oss.xml alsa-plugins.xml \
 	openquicktime.xml sdl.xml speex.xml xine-lib.xml xvid.xml \
 	libcanberra.xml opal.xml telepathy-farsight.xml farsight2.xml \
 	libvpx.xml libmusicbrainz3.xml libdiscid.xml \
-	pulseaudio.xml libsndfile.xml gst-ffmpeg.xml
+	pulseaudio.xml libsndfile.xml gst-ffmpeg.xml \
+	gst-plugins-bad.xml sound-theme-freedesktop.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -83,4 +85,8 @@ libdiscid.xml: $(BOOKdir)/$@ $(srcdir)/libdiscid.ch
 pulseaudio.xml: $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
 libsndfile.xml: $(BOOKdir)/$@ $(srcdir)/libsndfile.ch
 gst-ffmpeg.xml: $(BOOKdir)/$@ $(srcdir)/gst-ffmpeg.ch
+gst-plugins-bad.xml: $(BOOKdir)/$@ $(srcdir)/gst-plugins-bad.ch $(srcdir)/gst-plugins-bad.sed
+	sed -f $(srcdir)/gst-plugins-bad.sed $(BOOKdir)/gst-plugins-bad.xml > $(BOOKdir)/gst-plugins-bad_lfsbookja.xml
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/gst-plugins-bad_lfsbookja.xml $(srcdir)/$*.ch
+sound-theme-freedesktop.xml: $(BOOKdir)/$@ $(srcdir)/sound-theme-freedesktop.ch
 

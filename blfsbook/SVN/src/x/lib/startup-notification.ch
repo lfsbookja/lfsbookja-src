@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,11 +31,11 @@
     libraries. These are useful for building a consistent manner to notify
     the user through the cursor that the application is loading.</para>
 @y
-<para>
-<application>startup-notification</application> パッケージは
-<filename class="libraryfile">startup-notification</filename> ライブラリを提供します。
-アプリケーションがロードしている最中のカーソルを通じて、ユーザーへの通知手法を構築するものとして利用されます。
-</para>
+    <para>
+    <application>startup-notification</application> パッケージは <filename
+    class="libraryfile">startup-notification</filename> ライブラリを提供します。
+    アプリケーションがロードしている最中のカーソルを通じて、ユーザーへの通知手法を構築するものとして利用されます。
+    </para>
 @z
 
 @x
@@ -88,10 +88,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="x-window-system"/></para>
+    <para role="required"><xref linkend="xorg7-lib"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="x-window-system"/></para>
+    <para role="required"><xref linkend="xorg7-lib"/></para>
 @z
 
 @x
@@ -112,27 +112,25 @@
     <para>Install <application>startup-notification</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>startup-notification</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>startup-notification</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -154,13 +152,13 @@
 @x
         <seg>None</seg>
         <seg>libstartup-notification-1.{so,a}</seg>
-        <seg>/usr/include/startup-notification-1.0 and
-        /usr/share/doc/startup-notification-&startup-notification-version;</seg>
+        <seg>/usr/{include/startup-notification-1.0/libsn,
+        share/doc/startup-notification-&startup-notification-version;}</seg>
 @y
         <seg>なし</seg>
         <seg>libstartup-notification-1.{so,a}</seg>
-        <seg>/usr/include/startup-notification-1.0,
-        /usr/share/doc/startup-notification-&startup-notification-version;</seg>
+        <seg>/usr/{include/startup-notification-1.0/libsn,
+        share/doc/startup-notification-&startup-notification-version;}</seg>
 @z
 
 @x
@@ -174,8 +172,8 @@
           with the cursor system to provide feedback to the user that the
           application is loading.</para>
 @y
-<para>
-アプリケーションがカーソルシステムとのやり取りをするための機能を提供します。
-これによりカーソルのロード中に、ユーザーへのフィードバックが実現できます。
-</para>
+          <para>
+          アプリケーションがカーソルシステムとのやり取りをするための機能を提供します。
+          これによりカーソルのロード中に、ユーザーへのフィードバックが実現できます。
+          </para>
 @z

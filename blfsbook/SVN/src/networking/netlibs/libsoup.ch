@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -80,31 +80,35 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/> and
+    <!-- FIXME:ken -->
+    <para role="required">glib-networking-2.30.1 and
+    <!--
+    <para role="required"><xref linkend="glib-networking"/> and
+    -->
     <xref linkend="libxml2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
+    <!-- FIXME:ken -->
+    <para role="required">glib-networking-2.30.1 and
+    <!--
+    <para role="required"><xref linkend="glib-networking"/> and
+    -->
     <xref linkend="libxml2"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gnutls"/>,
-    <xref linkend="libgnome-keyring"/>,
-    <xref linkend="libproxy"/>, and
-    <xref linkend="sqlite"/> (The latter three are required if building <application>GNOME</application>)</para>
+    <para role="recommended"><xref linkend="libgnome-keyring"/> and
+    <xref linkend="sqlite"/> (Required if building <application>GNOME</application>)</para>
 @y
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gnutls"/>,
-    <xref linkend="libgnome-keyring"/>,
-    <xref linkend="libproxy"/>,
-    <xref linkend="sqlite"/> (後ろの3つは <application>GNOME</application> をビルドする際には必須となります。)</para>
+    <para role="recommended"><xref linkend="libgnome-keyring"/>,
+    <xref linkend="sqlite"/> (<application>GNOME</application> をビルドする際には必須。)</para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="GConf"/>,
+    <para role="optional"><xref linkend="gobject-introspection"/>,
     <xref linkend="gtk-doc"/>,
     <xref linkend="apache"/> (required to run the test suite), and
     <xref linkend="php"/> compiled with
@@ -112,12 +116,10 @@
       support (only used for the XMLRPC regression tests)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="GConf"/>,
+    <para role="optional"><xref linkend="gobject-introspection"/>,
     <xref linkend="gtk-doc"/>,
     <xref linkend="apache"/> (テストスイート実行時に必要),
-    <xref linkend="php"/> これは
-    <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
-      サポートがビルドされているもの (XMLRPC の縮退テストにおいてのみ必要)</para>
+    <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink> サポートがビルドされている <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される)</para>
 @z
 
 @x

@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,10 +23,9 @@
     <para>The <application>notification-daemon</application> package is a daemon
     that displays passive pop-up notifications.</para>
 @y
-<para>
-<application>notification-daemon</application>
-パッケージは、受動的なポップアップ通知を表示します。
-</para>
+    <para>
+    <application>notification-daemon</application> パッケージは、受動的なポップアップ通知を表示します。
+    </para>
 @z
 
 @x
@@ -119,25 +118,25 @@
     <para>Install <application>notification-daemon</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>notification-daemon</application> を実行します。
-</para>
+    <para>
+    以下のコマンドを実行して <application>notification-daemon</application> を実行します。
+    </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>This package's testsuite is only intended to be used by the
+    maintainer to check i18n files.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>This package's testsuite is only intended to be used by the
+    maintainer to check i18n files.</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -149,29 +148,28 @@
 @x
     <para><parameter>--libexecdir=/usr/lib/notification-daemon-1.0</parameter>: This
     parameter is used so that the <application>notification-daemon</application>
-    internal support programs are installed in the preferred location of
+    internal support program is installed in the preferred location of
     <filename class='directory'>/usr/lib/notification-daemon-1.0</filename> instead
     of <filename class='directory'>/usr/libexec</filename>.</para> 
 @y
-<para>
-<parameter>--libexecdir=/usr/lib/notification-daemon-1.0</parameter>:
-このパラメーターは <application>notification-daemon</application>
-の内部サポートプログラムのインストール先を指定するもので、<filename class='directory'>/usr/libexec</filename>
-ではなく、より適切な <filename class='directory'>/usr/lib/notification-daemon-1.0</filename>
-にインストールするものです。
-</para> 
+    <para>
+    <parameter>--libexecdir=/usr/lib/notification-daemon-1.0</parameter>:
+    このパラメーターは <application>notification-daemon</application> の内部サポートプログラムのインストール先を指定するもので、<filename
+    class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
+    class='directory'>/usr/lib/notification-daemon-1.0</filename> にインストールするものです。
+    </para> 
 @z
 
 @x
-    <para><parameter>--with-gconf-schema-file-dir=&gnome-etc-dir;/gconf/schemas</parameter>:
+    <para><parameter>--with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas</parameter>:
     This parameter is used so that the <application>GConf</application> schema
     files are installed into the existing database.</para>
 @y
-<para>
-<parameter>--with-gconf-schema-file-dir=&gnome-etc-dir;/gconf/schemas</parameter>:
-このパラメーターは <application>GConf</application>
-スキーマファイルを、既に存在しているデータベース内にインストールします。
-</para>
+    <para>
+    <parameter>--with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas</parameter>:
+    このパラメーターは <application>GConf</application>
+    スキーマファイルを、既に存在しているデータベース内にインストールします。
+    </para>
 @z
 
 @x
@@ -191,15 +189,19 @@
 @z
 
 @x
-        <seg>notification-properties and notification-daemon</seg>
-        <seg>libstandard.{so,a}</seg>
+        <seg><!--notification-properties and -->notification-daemon</seg>
+        <!--<seg>libstandard.{so,a}</seg>
         <seg>/usr/{lib/notification-daemon-1.0/engines,
-        share/notification-daemon}</seg>
+        share/notification-daemon}</seg>-->
+        <seg>None</seg>
+        <seg>/usr/lib/notification-daemon-1.0, /usr/share/notification-daemon</seg>
 @y
-        <seg>notification-properties, notification-daemon</seg>
-        <seg>libstandard.{so,a}</seg>
+        <seg><!--notification-properties and -->notification-daemon</seg>
+        <!--<seg>libstandard.{so,a}</seg>
         <seg>/usr/{lib/notification-daemon-1.0/engines,
-        share/notification-daemon}</seg>
+        share/notification-daemon}</seg>-->
+        <seg>なし</seg>
+        <seg>/usr/lib/notification-daemon-1.0, /usr/share/notification-daemon</seg>
 @z
 
 @x
@@ -212,15 +214,15 @@
           <para>is a <application>notification-daemon</application> properties
           tool.</para>
 @y
-<para>
-<application>notification-daemon</application> のプロパティツール。
-</para>
+          <para>
+          <application>notification-daemon</application> のプロパティツール。
+          </para>
 @z
 
 @x notification-daemon
           <para>is the daemon itself.</para>
 @y
-<para>
-デーモンプログラム。
-</para>
+          <para>
+          デーモンプログラム。
+          </para>
 @z

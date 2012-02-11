@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the LFS hint text files.
+%
+% $Author$
+% $Rev$
+% $Date::                          $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -5,8 +14,7 @@
 @z
 
 @x
-  <title>Platform</title>
+  <title>(old Platform)</title>
 @y
-  <title>プラットフォーム</title>
+  <title>(かつてのプラットフォーム)</title>
 @z
-

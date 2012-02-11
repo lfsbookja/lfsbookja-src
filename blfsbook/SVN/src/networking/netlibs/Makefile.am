@@ -1,9 +1,11 @@
 BOOKdir = $(top_builddir)/@bookdir@/networking/netlibs
 EXTRA_DIST = curl.ch gnet.ch libpcap.ch libsoup.ch netlibs.ch libproxy.ch \
-	libnice.ch neon.ch libtirpc.ch
+	libnice.ch neon.ch libtirpc.ch libgdata.ch \
+	libnl.ch librest.ch
 srcdir = @srcdir@
 srcs = curl.xml gnet.xml libpcap.xml libsoup.xml netlibs.xml libproxy.xml \
-	libnice.xml neon.xml libtirpc.xml
+	libnice.xml neon.xml libtirpc.xml libgdata.xml \
+	libnl.xml librest.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -23,3 +25,6 @@ libproxy.xml: $(BOOKdir)/$@ $(srcdir)/libproxy.ch
 libnice.xml: $(BOOKdir)/$@ $(srcdir)/libnice.ch
 neon.xml: $(BOOKdir)/$@ $(srcdir)/neon.ch
 libtirpc.xml: $(BOOKdir)/$@ $(srcdir)/libtirpc.ch
+libgdata.xml: $(BOOKdir)/$@ $(srcdir)/libgdata.ch
+libnl.xml: $(BOOKdir)/$@ $(srcdir)/libnl.ch
+librest.xml: $(BOOKdir)/$@ $(srcdir)/librest.ch

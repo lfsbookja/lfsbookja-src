@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -83,12 +83,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="gtk3"/>,
     <xref linkend="gnutls"/>, and
     <xref linkend="intltool"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="gtk3"/>,
     <xref linkend="gnutls"/>,
     <xref linkend="intltool"/></para>
 @z
@@ -96,14 +96,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="cyrus-sasl"/>,
-    <xref linkend="nspr"/>,
-    <xref linkend="pygtk"/>, and
+    <xref linkend="nspr"/>, and
+    <!-- pygtk is not used with gtk+-3
+    <xref linkend="pygtk"/>, and -->
     <xref linkend="xulrunner"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="cyrus-sasl"/>,
     <xref linkend="nspr"/>,
-    <xref linkend="pygtk"/>, and
+    <!-- pygtk is not used with gtk+-3
+    <xref linkend="pygtk"/>, and -->
     <xref linkend="xulrunner"/></para>
 @z
 
@@ -131,11 +133,11 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>This package's testsuite is only intended to be used by the
+    maintainer to check the i18n files.</para>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+    <para>This package's testsuite is only intended to be used by the
+    maintainer to check the i18n files.</para>
 @z
 
 @x
@@ -150,16 +152,6 @@
     <title>Command Explanations</title>
 @y
     <title>&j-CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--with-python=no</parameter>: This parameter disables the <application>Python</application> bindings from being built. Remove it if you have <application>PyGTK</application> installed and wish to enable them.</para>
-@y
-    <para>
-    <parameter>--with-python=no</parameter>:
-    このパラメーターは <application>Python</application> バインディングをビルドしないようにします。
-    <application>PyGTK</application> をインストールしていて、これを有効にする場合は、本パラメーターを取り除いてください。
-    </para>
 @z
 
 @x
@@ -199,11 +191,11 @@
 
 @x
         <seg>None</seg>
-        <seg>libgtk-vnc-1.0.{so,a} and gtkvnc.{so,a}</seg>
+        <seg>libgtk-vnc-1.0.{so,a}</seg>
         <seg>/usr/include/gtk-vnc-1.0</seg>
 @y
         <seg>なし</seg>
-        <seg>libgtk-vnc-1.0.{so,a}, gtkvnc.{so,a}</seg>
+        <seg>libgtk-vnc-1.0.{so,a}</seg>
         <seg>/usr/include/gtk-vnc-1.0</seg>
 @z
 

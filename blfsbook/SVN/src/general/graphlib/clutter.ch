@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to clutter</title>
 @y
-    <title>clutter の概要</title>
+    <title>&IntroductionTo1;clutter&IntroductionTo2;</title>
 @z
 
 @x
@@ -81,11 +81,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="atk"/>,
     <xref linkend="cairo"/>,
-    <!-- FIXME:ken -->
-    cogl-1.8.2,
-    <!--
     <xref linkend="cogl"/>,
-    -->
     <xref linkend="gdk-pixbuf"/>,
     <xref linkend="json-glib"/>,
     <xref linkend="mesalib"/>, and
@@ -94,11 +90,7 @@
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="atk"/>,
     <xref linkend="cairo"/>,
-    <!-- FIXME:ken -->
-    cogl-1.8.2,
-    <!--
     <xref linkend="cogl"/>,
-    -->
     <xref linkend="gdk-pixbuf"/>,
     <xref linkend="json-glib"/>,
     <xref linkend="mesalib"/>,

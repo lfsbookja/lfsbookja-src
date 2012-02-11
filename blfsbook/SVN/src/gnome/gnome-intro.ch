@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,12 +25,10 @@
   the installed packages follows the build order defined by the GNOME
   development team and has been thoroughly tested by the BLFS team.</para>
 @y
-<para>
-本節では GNOME-&gnome-version;&gnome-minor-version; 
-デスクトップ環境の完全なインストール手順を示します。
-インストールしていくパッケージのビルド順は
-GNOME 開発チームにより定義されているものであり、同チームにより全般的にテスト確認されているものです。
-</para>
+  <para>
+  本節では GNOME-&gnome-version;&gnome-minor-version; デスクトップ環境の完全なインストール手順を示します。
+  インストールしていくパッケージのビルド順は GNOME 開発チームにより定義されているものであり、同チームにより全般的にテスト確認されているものです。
+  </para>
 @z
 
 @x
@@ -43,16 +41,13 @@ GNOME 開発チームにより定義されているものであり、同チー�
   so you will use that and an environment variable (<envar>GNOME_PREFIX</envar>)
   to add flexibility to the installation.</para>
 @y
-<para>
-GNOME-&gnome-version;&gnome-minor-version;
-のインストール作業は大変なものですが、みなさんには、出来る限りストレスとなることなく、インストールが完了するよう望んでいます。
-インストールを進めるに何よりもまず為すべきことは、ここまでにインストールしてきたソフトウェアを壊さないようにすることです。
-特にこれから GNOME の処理動作をテストしていこうとするなら、なおさら必要となります。
-GNOME-&gnome-version; の各種パッケージでは <command>configure</command>
-の実行にあたって <option>--prefix=option</option>
-を指定しています。
-so you will use that and an environment variable (<envar>GNOME_PREFIX</envar>)
-to add flexibility to the installation.
-</para>
+  <para>
+  GNOME-&gnome-version;&gnome-minor-version;
+  のインストール作業は大変なものですが、みなさんには、出来る限りストレスとなることなく、インストールが完了するよう望んでいます。
+  インストールを進めるに何よりもまず為すべきことは、ここまでにインストールしてきたソフトウェアを壊さないようにすることです。
+  特にこれから GNOME の処理動作をテストしていこうとするなら、なおさら必要となります。
+  GNOME-&gnome-version; の各種パッケージでは <command>configure</command> の実行にあたって <option>--prefix=option</option> を指定しています。
+  so you will use that and an environment variable (<envar>GNOME_PREFIX</envar>)
+  to add flexibility to the installation.
+  </para>
 @z
-

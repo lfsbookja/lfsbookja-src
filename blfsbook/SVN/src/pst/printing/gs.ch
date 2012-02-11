@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -14,11 +14,15 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "297 MB (includes installing libgs.so and both font tarballs)">
-  <!ENTITY gs-time          "2.5 SBU (includes building and installing libgs.so)">
+  <!ENTITY gs-buildsize
+  "252 MB (includes installing libgs.so and both font tarballs)">
+  <!ENTITY gs-time
+  "2.5 SBU (includes building and installing libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "297 MB (includes installing libgs.so and both font tarballs)">
-  <!ENTITY gs-time          "2.5 SBU (includes building and installing libgs.so)">
+  <!ENTITY gs-buildsize
+  "252 MB (includes installing libgs.so and both font tarballs)">
+  <!ENTITY gs-time
+  "2.5 SBU (includes building and installing libgs.so)">
 @z
 
 @x
@@ -165,46 +169,42 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="optional"><xref linkend="expat"/>,
     <xref linkend="freetype2"/>,
-    <xref linkend="jasper"/>
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,
     <xref linkend="libtiff"/>, and
-    <xref linkend="lcms"/></para>
+    <xref linkend="lcms2"/>.</para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="optional"><xref linkend="expat"/>,
     <xref linkend="freetype2"/>,
-    <xref linkend="jasper"/>
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,
     <xref linkend="libtiff"/>,
-    <xref linkend="lcms"/></para>
+    <xref linkend="lcms2"/>.</para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-    <xref linkend="cairo"/>,
+    <para role="optional"><xref linkend="cairo"/>,
     <xref linkend="fontconfig"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="cups"/>,
+    <xref linkend="jasper"/>,
+    <xref linkend="lcms"/>,
     <xref linkend="libidn"/>,
-    <xref linkend="x-window-system"/>, and
-    <!-- the link for ijs source ultimately takes users back to the ghostscript site
-    <ulink url="http://www.linuxprinting.org/ijs/">IJS</ulink>, and -->
-    <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>.</para>
+    <xref linkend="x-window-system"/>, and <ulink
+    url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>.</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional">
-    <xref linkend="cairo"/>,
+    <para role="optional"><xref linkend="cairo"/>,
     <xref linkend="fontconfig"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="cups"/>,
+    <xref linkend="jasper"/>,
+    <xref linkend="lcms"/>,
     <xref linkend="libidn"/>,
-    <xref linkend="x-window-system"/>, and
-    <!-- the link for ijs source ultimately takes users back to the ghostscript site
-    <ulink url="http://www.linuxprinting.org/ijs/">IJS</ulink>, and -->
-    <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>.</para>
+    <xref linkend="x-window-system"/>, and <ulink
+    url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>.</para>
 @z
 
 @x
@@ -269,39 +269,17 @@
 @x
       <para>If you have installed these dependencies on your system, remove the
       copies of <application>expat</application>,
-      <application>freetype</application>, <application>JasPer</application>,
-      <application>lcms</application>, <application>libjpeg</application>,
-      <application>libpng</application>, <application>libtiff</application>
-      and <application>zlib</application>:
+      <application>freetype</application>, <application>lcms2</application>,
+      <application>libjpeg</application>, <application>libpng</application>,
+      and <application>libtiff</application>:
       </para>
 @y
       <para>If you have installed these dependencies on your system, remove the
       copies of <application>expat</application>,
-      <application>freetype</application>, <application>JasPer</application>,
-      <application>lcms</application>, <application>libjpeg</application>,
-      <application>libpng</application>, <application>libtiff</application>
-      and <application>zlib</application>:
+      <application>freetype</application>, <application>lcms2</application>,
+      <application>libjpeg</application>, <application>libpng</application>,
+      and <application>libtiff</application>:
       </para>
-@z
-
-@x
-    <para>Run the configure command:</para>
-@y
-    <para>
-    configure コマンドを実行します。
-    </para>
-@z
-
-@x
-    <para>To ensure the build is able to use the system versions of
-    <application>expat</application>, <application>freetype</application>, and
-    <application>zlib</application> it is necessary to make some changes and an
-    addition to the <literal>Makefile</literal> before building the package:</para>
-@y
-    <para>To ensure the build is able to use the system versions of
-    <application>expat</application>, <application>freetype</application>, and
-    <application>zlib</application> it is necessary to make some changes and an
-    addition to the <literal>Makefile</literal> before building the package:</para>
 @z
 
 @x
@@ -360,18 +338,6 @@
 @z
 
 @x
-    <para><option>--without-jasper</option>: If you know you do not wish to
-    print any <literal>JPEG2000</literal> files, this switch (and removing the
-    <filename class="directory">jasper</filename> folder in the source) will
-    disable JPEG2000 support in <application>Ghostscript</application>.</para>
-@y
-    <para><option>--without-jasper</option>: If you know you do not wish to
-    print any <literal>JPEG2000</literal> files, this switch (and removing the
-    <filename class="directory">jasper</filename> folder in the source) will
-    disable JPEG2000 support in <application>Ghostscript</application>.</para>
-@z
-
-@x
     <para><command>ln -v -s ghostscript /usr/include/ps</command>: Some packages
     expect to find the interface headers in an alternate location.</para>
 @y
@@ -402,10 +368,10 @@
         pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
         ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh, and
         wftopfa</seg>
-        <seg>libgs.so </seg>
+        <seg>libgs.so</seg>
         <seg>/usr/include/ghostscript, /usr/lib/ghostscript,
-        /usr/share/ghostscript,
-        and /usr/share/doc/ghostscript-&gs-version;</seg>
+        /usr/share/ghostscript, and
+        /usr/share/doc/ghostscript-&gs-version;</seg>
 @y
         <seg>bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
         gsc (from soinstall), gsdj, gsdj500, gslj, gslp, gsnd, gsx
@@ -413,10 +379,10 @@
         pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
         ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh, and
         wftopfa</seg>
-        <seg>libgs.so </seg>
+        <seg>libgs.so</seg>
         <seg>/usr/include/ghostscript, /usr/lib/ghostscript,
-        /usr/share/ghostscript,
-        and /usr/share/doc/ghostscript-&gs-version;</seg>
+        /usr/share/ghostscript, and
+        /usr/share/doc/ghostscript-&gs-version;</seg>
 @z
 
 @x

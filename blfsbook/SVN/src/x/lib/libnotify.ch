@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -26,14 +26,11 @@
     an event or display some form of information without getting in the user's
     way.</para>
 @y
-<para>
-<application>libnotify</application>
-ライブラリは、デスクトップ通知 (desktop notifications)
-を通知デーモン (notification daemon) に送信します。
-これはデスクトップ通知仕様 (Desktop Notifications spec)
-にて定義されます。
-デスクトップ通知は、ユーザーに対しての情報を行ったり、ユーザーの操作によらず情報表示したりするために利用されます。
-</para>
+    <para>
+    <application>libnotify</application> ライブラリは、デスクトップ通知 (desktop notifications) を通知デーモン (notification daemon) に送信します。
+    これはデスクトップ通知仕様 (Desktop Notifications spec) にて定義されます。
+    デスクトップ通知は、ユーザーに対しての情報を行ったり、ユーザーの操作によらず情報表示したりするために利用されます。
+    </para>
 @z
 
 @x
@@ -86,12 +83,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/> and
-    <xref linkend="dbus-glib"/></para>
+    <para role="required"><xref linkend="gtk3"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
-    <xref linkend="dbus-glib"/></para>
+    <para role="required"><xref linkend="gtk3"/></para>
 @z
 
 @x
@@ -112,27 +107,25 @@
     <para>Install <application>libnotify</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libnotify</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libnotify</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -144,7 +137,7 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
       <segtitle>&j-InstalledLibraries;</segtitle>
@@ -154,11 +147,11 @@
 @x
         <seg>notify-send</seg>
         <seg>libnotify.{so,a}</seg>
-        <seg>/usr/share/gtk-doc/html/libnotify</seg>
+        <seg>/usr/{include/libnotify,share/gtk-doc/html/libnotify}</seg>
 @y
         <seg>notify-send</seg>
         <seg>libnotify.{so,a}</seg>
-        <seg>/usr/share/gtk-doc/html/libnotify</seg>
+        <seg>/usr/{include/libnotify,share/gtk-doc/html/libnotify}</seg>
 @z
 
 @x
@@ -170,16 +163,15 @@
 @x notify-send
           <para>is a command to send notifications.</para>
 @y
-<para>
-通知を送信するコマンド。
-</para>
+          <para>
+          通知を送信するコマンド。
+          </para>
 @z
 
 @x libnotify.{so,a}
           <para>contains the notify API functions.</para>
 @y
-<para>
-通知 API 関数 (notify API functions) を提供します。
-</para>
+          <para>
+          通知 API 関数 (notify API functions) を提供します。
+          </para>
 @z
-

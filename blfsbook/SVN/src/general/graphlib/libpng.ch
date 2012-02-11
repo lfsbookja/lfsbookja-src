@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,10 +21,15 @@
 
 @x
     <para>The <application>libpng</application> package contains libraries used
-    by other programs for reading and writing PNG files.</para>
+    by other programs for reading and writing PNG files. The PNG format was
+    designed as a replacement for GIF and, to a lesser extent, TIFF, with many
+    improvements and extensions and lack of patent problems.</para>
 @y
     <para>
     <application>libpng</application> パッケージは、他のプログラムが PNG ファイルの読み書きを行うためのライブラリを提供します。
+    The PNG format was
+    designed as a replacement for GIF and, to a lesser extent, TIFF, with many
+    improvements and extensions and lack of patent problems.
     </para>
 @z
 
@@ -77,14 +82,14 @@
 @z
 
 @x
-        <para>Optional patch to include apng functionality in
+        <para>Optional patch to include animated png functionality in
         <application>libpng</application> : <ulink url="&apng-patch;"/></para>
         <para>The patch is required if you want to use the system
         <application>libpng</application> in
         <application>Firefox</application>.</para>
 @y
         <para>
-        <application>libpng</application> に apng 機能を含めるための任意のパッチ: <ulink
+        <application>libpng</application> にアニメーション機能を含めるための任意のパッチ: <ulink
         url="&apng-patch;"/>
         </para>
         <para>
@@ -125,10 +130,10 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make test</command>.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
     </para>
 @z
 
@@ -193,22 +198,18 @@
 @z
 
 @x
-        <term><filename class='libraryfile'>libpng.so and
+        <term><filename class="libraryfile">libpng.so and
         libpng15.so</filename></term>
 @y
-        <term><filename class='libraryfile'>libpng.so,
+        <term><filename class="libraryfile">libpng.so,
         libpng15.so</filename></term>
 @z
 
 @x libpng.so and libpng15.so
-          <para>are a collection of routines used to create and manipulate PNG
-          format graphics files. The PNG format was designed as a replacement
-          for GIF and, to a lesser extent, TIFF, with many improvements and
-          extensions and lack of patent problems.</para>
+          <para>contain routines used to create and manipulate PNG format
+          graphics files.</para>
 @y
           <para>
           グラフィックフォーマットの一つである PNG を生成したり取り扱ったりするための処理ルーチンを提供します。
-          PNG フォーマットは GIF と、TIFF のある程度の代替として設計されたものです。
-          さまざまな改良と拡張が行われていますが、特許の問題は解消していません。
           </para>
 @z

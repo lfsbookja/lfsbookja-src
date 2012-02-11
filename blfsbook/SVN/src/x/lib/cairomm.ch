@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,10 +23,9 @@
     <para>The <application>cairomm</application> package provides a C++
     interface to <application>cairo</application>.</para>
 @y
-<para>
-<application>cairomm</application>
-パッケージは <application>cairo</application> に対する C++ インターフェースを提供します。
-</para>
+    <para>
+    <application>cairomm</application> パッケージは <application>cairo</application> に対する C++ インターフェースを提供します。
+    </para>
 @z
 
 @x
@@ -79,10 +78,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="cairo"/></para>
+    <para role="required"><xref linkend="cairo"/> and
+    <xref linkend="libsigc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="cairo"/></para>
+    <para role="required"><xref linkend="cairo"/>,
+    <xref linkend="libsigc"/></para>
 @z
 
 @x
@@ -111,26 +112,25 @@
     <para>Install <application>cairomm</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>cairomm</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>cairomm</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -151,12 +151,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libcairomm-1.0.{so,a}</seg>
+        <seg>libcairomm-1.0.so</seg>
         <seg>/usr/{include/cairomm-1.0/cairomm,
         share/doc/libcairomm-1.0/reference/html}</seg>
 @y
         <seg>なし</seg>
-        <seg>libcairomm-1.0.{so,a}</seg>
+        <seg>libcairomm-1.0.so</seg>
         <seg>/usr/{include/cairomm-1.0/cairomm,
         share/doc/libcairomm-1.0/reference/html}</seg>
 @z
@@ -170,7 +170,7 @@
 @x libcairomm-1.0.{so,a}
           <para>contains the <application>Cairo</application> API classes.</para>
 @y
-<para>
-<application>Cairo</application> API クラスを提供します。
-</para>
+          <para>
+          <application>Cairo</application> API クラスを提供します。
+          </para>
 @z

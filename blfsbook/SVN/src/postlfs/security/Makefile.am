@@ -4,14 +4,16 @@ EXTRA_DIST = cracklib.ch cyrus-sasl.ch firewalling.ch gnupg.ch gnupg2.ch \
 	nss.ch openssl.ch security.ch shadow.ch stunnel.ch sudo.ch syslog.ch \
 	tripwire.ch policykit.ch consolekit.ch firewalling.sed polkit.ch \
 	polkit-gnome.ch acl.ch attr.ch gpgme.ch cacerts.ch openssh.ch \
-	tcpwrappers.ch libcap2.ch nettle.ch
+	tcpwrappers.ch libcap2.ch nettle.ch accountsservice.ch \
+	liboauth.ch p11-kit.ch
 srcdir = @srcdir@
 srcs = cracklib.xml cyrus-sasl.xml firewalling.xml gnupg.xml gnupg2.xml \
 	gnutls.xml heimdal.xml iptables.xml linux-pam.xml mitkrb.xml nessus.xml \
 	nss.xml openssl.xml security.xml shadow.xml stunnel.xml sudo.xml syslog.xml \
 	tripwire.xml policykit.xml consolekit.xml polkit.xml polkit-gnome.xml \
 	acl.xml attr.xml gpgme.xml cacerts.xml openssh.xml \
-	tcpwrappers.xml libcap2.xml nettle.xml
+	tcpwrappers.xml libcap2.xml nettle.xml accountsservice.xml \
+	liboauth.xml p11-kit.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -55,3 +57,6 @@ openssh.xml: $(BOOKdir)/$@ $(srcdir)/openssh.ch
 tcpwrappers.xml: $(BOOKdir)/$@ $(srcdir)/tcpwrappers.ch
 libcap2.xml: $(BOOKdir)/$@ $(srcdir)/libcap2.ch
 nettle.xml: $(BOOKdir)/$@ $(srcdir)/nettle.ch
+accountsservice.xml: $(BOOKdir)/$@ $(srcdir)/accountsservice.ch
+liboauth.xml: $(BOOKdir)/$@ $(srcdir)/liboauth.ch
+p11-kit.xml: $(BOOKdir)/$@ $(srcdir)/p11-kit.ch

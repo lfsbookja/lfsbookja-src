@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                           $
+% $Date:: 2012-02-05 17:23:07 +0900$
 %
 @x
 <!ENTITY copyholder   "The BLFS Development Team">
@@ -15,10 +15,10 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 4th, &year;">
+<!ENTITY releasedate  "February 11th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY jversion     "20120204">
+<!ENTITY jversion     "20120211">
 <!ENTITY jratio       "47.5 &percnt; (再カウント要)">
 <!ENTITY releasedate  "&year;/&month;/&day;">
 @z
@@ -45,6 +45,9 @@
 <!ENTITY j-InstalledLibraries   "インストールライブラリ">
 <!ENTITY j-InstalledDirectories "インストールディレクトリ">
 <!ENTITY j-ShortDescriptions    "概略説明">
+
+<!ENTITY IntroductionTo1 "">
+<!ENTITY IntroductionTo2 " の概要">
 @z
 
 @x

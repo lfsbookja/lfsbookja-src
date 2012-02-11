@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,10 +24,9 @@
     which supports text, voice, and video chat and file transfers over many
     different protocols.</para>
 @y
-<para>
-<application>Empathy</application>
-パッケージは、数多くのプロトコルを通じて、テキスト、音声、ビデオチャット、ファイル転送をサポートした、メッセージ送受信プログラムを提供します。
-</para>
+    <para>
+    <application>Empathy</application> パッケージは、数多くのプロトコルを通じて、テキスト、音声、ビデオチャット、ファイル転送をサポートした、メッセージ送受信プログラムを提供します。
+    </para>
 @z
 
 @x
@@ -111,7 +110,7 @@
     <xref linkend="gtk-doc"/>,
     <xref linkend="iso-codes"/>,
     <ulink url="http://projects.gnome.org/libchamplain/">libchamplain</ulink>,
-    <ulink url="http://www.gnome.org/projects/NetworkManager/">NetworkManager</ulink>,
+    <xref linkend="NetworkManager"/>,
     <xref linkend="pygtk"/>,
     <xref linkend="rarian"/>,
     <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
@@ -127,10 +126,10 @@
     <xref linkend="gtk-doc"/>,
     <xref linkend="iso-codes"/>,
     <ulink url="http://projects.gnome.org/libchamplain/">libchamplain</ulink>,
-    <ulink url="http://www.gnome.org/projects/NetworkManager/">NetworkManager</ulink>,
+    <xref linkend="NetworkManager"/>,
     <xref linkend="pygtk"/>,
     <xref linkend="rarian"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink>,
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
     <xref linkend="webkitgtk"/></para>
 @z
 
@@ -184,27 +183,25 @@
     <para>Install <application>Empathy</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>Empathy</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Empathy</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -214,21 +211,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/empathy</parameter>: This parameter is used so that the
-    <application>Empathy</application> internal support programs are installed
-    in the preferred location of <filename
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/empathy</parameter>: This
+    parameter is used so that the <application>Empathy</application> internal
+    support programs are installed in the preferred location of <filename
     class='directory'>$GNOME_PREFIX/lib/empathy</filename> instead of <filename
     class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/empathy</parameter>: This parameter is used so that the
-<application>Empathy</application> internal support programs are installed
-in the preferred location of <filename
-class='directory'>$GNOME_PREFIX/lib/empathy</filename> instead of <filename
-class='directory'>$GNOME_PREFIX/libexec</filename>.
-</para>
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/empathy</parameter>: This
+    parameter is used so that the <application>Empathy</application> internal
+    support programs are installed in the preferred location of <filename
+    class='directory'>$GNOME_PREFIX/lib/empathy</filename> instead of <filename
+    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
 @z
 
 @x
@@ -273,18 +266,12 @@ class='directory'>$GNOME_PREFIX/libexec</filename>.
           <para>is a <application>GNOME</application> instant messaging client
           using Telepathy.</para>
 @y
-<para>
-
-is a <application>GNOME</application> instant messaging client
-using Telepathy.
-</para>
+          <para>is a <application>GNOME</application> instant messaging client
+          using Telepathy.</para>
 @z
 
 @x libnstempathy.{so,a}
           <para>is the <application>Empathy</application> nautilus-sendto plugin.</para>
 @y
-<para>
-
-is the <application>Empathy</application> nautilus-sendto plugin.
-</para>
+          <para>is the <application>Empathy</application> nautilus-sendto plugin.</para>
 @z

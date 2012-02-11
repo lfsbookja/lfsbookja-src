@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Parted</title>
 @y
-    <title>Parted の概要</title>
+    <title>&IntroductionTo1;Parted&IntroductionTo2;</title>
 @z
 
 @x
@@ -78,15 +78,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">i
+    <para role="optional">
       <xref linkend="lvm2"/> (device-mapper, required if building 
         <application>udisks</application>)
     </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional">i
-      <xref linkend="lvm2"/>
-      (device-mapper; <application>udisks</application> をビルドする際には必要)
+    <para role="optional">
+      <xref linkend="lvm2"/> (device-mapper; <application>udisks</application> をビルドする際には必要)
     </para>
 @z
 

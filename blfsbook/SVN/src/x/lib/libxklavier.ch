@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,10 +23,9 @@
     <para>The <application>libxklavier</application> package contains a
     utility library for <application>X</application> keyboard.</para>
 @y
-<para>
-<application>libxklavier</application>
-パッケージは、<application>X</application> のキーボードに対する有用なユーティリティを提供します。
-</para>
+    <para>
+    <application>libxklavier</application> パッケージは、<application>X</application> のキーボードに対する有用なユーティリティを提供します。
+    </para>
 @z
 
 @x
@@ -80,13 +79,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="x-window-system"/>,
+    <xref linkend="xorg7-lib"/>,
     <xref linkend="libxml2"/>, and
     <xref linkend="iso-codes"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="x-window-system"/>,
+    <xref linkend="xorg7-lib"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="iso-codes"/></para>
 @z
@@ -117,25 +116,25 @@
     <para>Install <application>libxklavier</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libxklavier</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libxklavier</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -149,11 +148,10 @@
     Use this parameter if the $XORG_PREFIX is anything other than
     <filename class='directory'>/usr</filename>.</para>
 @y
-<para>
-<option>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</option>:
-$XORG_PREFIX が <filename class='directory'>/usr</filename>
-以外である場合に、このパラメーターを指定します。
-</para>
+    <para>
+    <option>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</option>:
+    $XORG_PREFIX が <filename class='directory'>/usr</filename> 以外である場合に、このパラメーターを指定します。
+    </para>
 @z
 
 @x
@@ -191,7 +189,7 @@ $XORG_PREFIX が <filename class='directory'>/usr</filename>
 @x libxklavier.{so,a}
           <para>contains XKB utility functions.</para>
 @y
-<para>
-XKB ユーティリティー関数を提供します。
-</para>
+          <para>
+          XKB ユーティリティー関数を提供します。
+          </para>
 @z

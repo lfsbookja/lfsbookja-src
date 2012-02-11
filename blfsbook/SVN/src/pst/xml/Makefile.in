@@ -137,8 +137,12 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/pst/xml
-EXTRA_DIST = docbook-xsl.ch docbook.ch xml.ch xmlto.ch
-srcs = docbook-xsl.xml docbook.xml xml.xml xmlto.xml
+EXTRA_DIST = docbook-xsl.ch docbook.ch xml.ch xmlto.ch \
+	itstool.ch
+
+srcs = docbook-xsl.xml docbook.xml xml.xml xmlto.xml \
+	itstool.xml
+
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -330,6 +334,7 @@ docbook-xsl.xml: $(BOOKdir)/$@ $(srcdir)/docbook-xsl.ch
 docbook.xml: $(BOOKdir)/$@ $(srcdir)/docbook.ch
 xml.xml: $(BOOKdir)/$@ $(srcdir)/xml.ch
 xmlto.xml: $(BOOKdir)/$@ $(srcdir)/xmlto.ch
+itstool.xml: $(BOOKdir)/$@ $(srcdir)/itstool.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,10 +23,9 @@
     <para>The <application>avahi</application> package is a system which
     facilitates service discovery on a local network.</para>
 @y
-<para>
-<application>avahi</application>
-パッケージは、ローカルネットワーク内でのサービス検出を行う機能を提供します。
-</para>
+    <para>
+    <application>avahi</application> パッケージは、ローカルネットワーク内でのサービス検出を行う機能を提供します。
+    </para>
 @z
 
 @x
@@ -71,19 +70,19 @@
         <para>&j-Estimatedbuildtime;: &avahi-time;</para>
 @z
 
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-        url="&patch-root;/avahi-&avahi-version;-lfs_initscript_fixes-1.patch"/></para>
-@y
-        <para>必要なパッチ: <ulink
-        url="&patch-root;/avahi-&avahi-version;-lfs_initscript_fixes-1.patch"/></para>
-@z
+% @x
+%     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+% @y
+%     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+% @z
+% 
+% @x
+%         <para>Required patch: <ulink
+%         url="&patch-root;/avahi-&avahi-version;-lfs_initscript_fixes-1.patch"/></para>
+% @y
+%         <para>必要なパッチ: <ulink
+%         url="&patch-root;/avahi-&avahi-version;-lfs_initscript_fixes-1.patch"/></para>
+% @z
 
 @x
     <bridgehead renderas="sect3">avahi Dependencies</bridgehead>
@@ -104,7 +103,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="dbus-python"/>,
+    <xref linkend="gobject-introspection"/>,
     <xref linkend="gtk2"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="libdaemon"/>,
     <xref linkend="libglade"/>,
     <xref linkend="python"/>,
@@ -114,7 +115,9 @@
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-python"/>,
+    <xref linkend="gobject-introspection"/>,
     <xref linkend="gtk2"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="libdaemon"/>,
     <xref linkend="libglade"/>,
     <xref linkend="python"/>,
@@ -143,12 +146,10 @@
     started. Issue the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-デーモン <command>avahi-daemon</command>
-が起動した後は、これを制御するために、専用のユーザーおよびグループを利用することが推奨されています。
-このため <systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
-</para>
+    <para>
+    デーモン <command>avahi-daemon</command> が起動した後は、これを制御するために、専用のユーザーおよびグループを利用することが推奨されています。
+    このため <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
@@ -156,37 +157,35 @@
     <application>Avahi</application> clients. Issue the following command as
     the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-さらに <application>Avahi</application>
-クライアントに対しての、専用のアクセスグループを生成することも推奨されています。
-このため <systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
-</para>
+    <para>
+    さらに <application>Avahi</application> クライアントに対しての、専用のアクセスグループを生成することも推奨されています。
+    このため <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
     <para>Install <application>avahi</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>avahi</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>avahi</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -196,65 +195,31 @@
 @z
 
 @x
-    <para><parameter>--with-distro=lfs</parameter>: This parameter specifies the
-    LFS distribution to target.</para>
+    <para><parameter>--disable-gtk</parameter>: This parameter disables the use
+    of <application>GTK+2</application>.</para>
 @y
-<para>
-<parameter>--with-distro=lfs</parameter>: This parameter specifies the
-LFS distribution to target.
-</para>
+    <para><parameter>--disable-gtk</parameter>: This parameter disables the use
+    of <application>GTK+2</application>.</para>
 @z
 
 @x
     <para><parameter>--disable-qt3</parameter>: This parameter disables the
     building of <application>Qt3</application> mainloop integration.</para>
 @y
-<para>
-<parameter>--disable-qt3</parameter>: This parameter disables the
-building of <application>Qt3</application> mainloop integration.
-</para>
+    <para>
+    <parameter>--disable-qt3</parameter>: This parameter disables the
+    building of <application>Qt3</application> mainloop integration.
+    </para>
 @z
 
 @x
     <para><parameter>--disable-qt4</parameter>: This parameter disables the
     building of <application>Qt4Core</application> mainloop integration.</para>
 @y
-<para>
-<parameter>--disable-qt4</parameter>: This parameter disables the
-building of <application>Qt4Core</application> mainloop integration.
-</para>
-@z
-
-@x
-    <para><parameter>--disable-gtk</parameter>: This parameter disables the use
-    of <application>GTK+</application>.</para>
-@y
-    <para><parameter>--disable-gtk</parameter>: This parameter disables the use
-    of <application>GTK+</application>.</para>
-@z
-
-@x
-    <para><parameter>--disable-dbus</parameter>: This parameter disables the use
-    of <application>D-Bus</application>.</para>
-@y
-    <para><parameter>--disable-dbus</parameter>: This parameter disables the use
-    of <application>D-Bus</application>.</para>
-@z
-
-@x
-    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
-    the use of libdaemon.</para>
-@y
-    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
-    the use of libdaemon.</para>
-@z
-
-@x
-    <para><parameter>--disable-python</parameter>: This parameter disables the
-    scripts that depends on <application>Python</application>.</para>
-@y
-    <para><parameter>--disable-python</parameter>: This parameter disables the
-    scripts that depends on <application>Python</application>.</para>
+    <para>
+    <parameter>--disable-qt4</parameter>: This parameter disables the
+    building of <application>Qt4Core</application> mainloop integration.
+    </para>
 @z
 
 @x
@@ -274,11 +239,43 @@ building of <application>Qt4Core</application> mainloop integration.
 @z
 
 @x
+    <para><parameter>--disable-python</parameter>: This parameter disables the
+    scripts that depends on <application>Python</application>.</para>
+@y
+    <para><parameter>--disable-python</parameter>: This parameter disables the
+    scripts that depends on <application>Python</application>.</para>
+@z
+
+@x
+    <para><parameter>--disable-dbus</parameter>: This parameter disables the use
+    of <application>D-Bus</application>.</para>
+@y
+    <para><parameter>--disable-dbus</parameter>: This parameter disables the use
+    of <application>D-Bus</application>.</para>
+@z
+
+@x
+    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
+    the use of libdaemon.</para>
+@y
+    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
+    the use of libdaemon.</para>
+@z
+
+@x
     <para><parameter>--enable-core-docs</parameter>: This parameter enables the
     building of documentation.</para>
 @y
     <para><parameter>--enable-core-docs</parameter>: This parameter enables the
     building of documentation.</para>
+@z
+
+@x
+    <para><parameter>--with-distro=lfs</parameter>: This parameter specifies the
+    distribution to target.</para>
+@y
+    <para><parameter>--with-distro=lfs</parameter>: This parameter specifies the
+    distribution to target.</para>
 @z
 
 @x
@@ -290,19 +287,19 @@ building of <application>Qt4Core</application> mainloop integration.
 @z
 
 @x
-    <para><option>--enable-compat-libdns_sd</option>: This option enables the
-    compatibility layer for <application>libdns_sd</application>.</para>
+    <para><option>--enable-compat-howl</option>: This option enables the
+    compatibility layer for <application>HOWL</application>.</para>
 @y
-    <para><option>--enable-compat-libdns_sd</option>: This option enables the
-    compatibility layer for <application>libdns_sd</application>.</para>
+    <para><option>--enable-compat-howl</option>: This option enables the
+    compatibility layer for <application>HOWL</application>.</para>
 @z
 
 @x
-    <para><option>--enable-compat-howl</option>: This option enables the
-    compatibility layer for <application>HOWL</application>.</para>
+    <para><option>--enable-compat-libdns_sd</option>: This option enables the
+    compatibility layer for <application>libdns_sd</application>.</para>
 @y
-    <para><option>--enable-compat-howl</option>: This option enables the
-    compatibility layer for <application>HOWL</application>.</para>
+    <para><option>--enable-compat-libdns_sd</option>: This option enables the
+    compatibility layer for <application>libdns_sd</application>.</para>
 @z
 
 @x
@@ -322,25 +319,35 @@ building of <application>Qt4Core</application> mainloop integration.
 @z
 
 @x
-        <seg>avahi-autoipd, avahi-bookmarks, avahi-browse, avahi-daemon,
-        avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
-        avahi-publish, avahi-resolve, avahi-set-host-name, and bssh</seg>
-        <seg>libavahi-client.{so,a}, libavahi-common.{so,a},
-        libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a}, and
-        libavahi-ui.{so,a}</seg>
-        <seg>/etc/avahi/services,/usr/{include/avahi-{client,common,core,glib,
-        gobject,ui},lib/{avahi,python&python2-majorver;/site-packages/{avahi,avahi_discover}},
-        share/avahi/{interfaces,introspection}}</seg>
-@y
-        <seg>avahi-autoipd, avahi-bookmarks, avahi-browse, avahi-daemon,
-        avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
-        avahi-publish, avahi-resolve, avahi-set-host-name, bssh</seg>
+        <seg>avahi-autoipd, avahi-bookmarks, avahi-browse, avahi-browse-domains,
+        avahi-daemon, avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
+        avahi-publish, avahi-publish-address, avahi-publish-service,
+        avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
+        avahi-set-host-name, bshell, bssh, and bvnc</seg>
         <seg>libavahi-client.{so,a}, libavahi-common.{so,a},
         libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a},
-        libavahi-ui.{so,a}</seg>
-        <seg>/etc/avahi/services,/usr/{include/avahi-{client,common,core,glib,
-        gobject,ui},lib/{avahi,python&python2-majorver;/site-packages/{avahi,avahi_discover}},
-        share/avahi/{interfaces,introspection}}</seg>
+        libavahi-ui-gtk3.{so,a}, libavahi-ui.{so,a}, libdns_sd.{so,a}, and
+        libhowl.{so,a}</seg>
+        <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
+        avahi-compat-howl/{corby,discovery,rendezvous,salt},
+        avahi-compat-libdns_sd,avahi-core,avahi-glib,avahi-gobject,avahi-ui},
+        lib/{avahi,python&python2-majorver;/site-packages/{avahi,
+        avahi_discover}},share/{avahi/interfaces,locale/en_NZ/LC_MESSAGES}}</seg>
+@y
+        <seg>avahi-autoipd, avahi-bookmarks, avahi-browse, avahi-browse-domains,
+        avahi-daemon, avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
+        avahi-publish, avahi-publish-address, avahi-publish-service,
+        avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
+        avahi-set-host-name, bshell, bssh, and bvnc</seg>
+        <seg>libavahi-client.{so,a}, libavahi-common.{so,a},
+        libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a},
+        libavahi-ui-gtk3.{so,a}, libavahi-ui.{so,a}, libdns_sd.{so,a}, and
+        libhowl.{so,a}</seg>
+        <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
+        avahi-compat-howl/{corby,discovery,rendezvous,salt},
+        avahi-compat-libdns_sd,avahi-core,avahi-glib,avahi-gobject,avahi-ui},
+        lib/{avahi,python&python2-majorver;/site-packages/{avahi,
+        avahi_discover}},share/{avahi/interfaces,locale/en_NZ/LC_MESSAGES}}</seg>
 @z
 
 @x
@@ -354,4 +361,3 @@ building of <application>Qt4Core</application> mainloop integration.
 @y
           <para>is a IPv4LL network address configuration daemon.</para>
 @z
-

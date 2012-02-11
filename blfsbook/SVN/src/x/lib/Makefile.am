@@ -4,14 +4,16 @@ EXTRA_DIST = atk.ch cairo.ch freeglut.ch goffice.ch gtk+.ch gtk+2.ch \
 	pango.ch qt.ch qt4.ch shared-mime-info.ch \
 	startup-notification.ch xulrunner.ch webkitgtk.ch cairomm.ch \
 	pangomm.ch gtkmm.ch libnotify.ch notification-daemon.ch \
-	libsexy.ch gtk-vnc.ch gdk-pixbuf.ch gtk+3.ch
+	libsexy.ch gtk-vnc.ch gdk-pixbuf.ch gtk+3.ch \
+	gtk-engines.ch atkmm.ch cogl.ch
 srcdir = @srcdir@
 srcs = atk.xml cairo.xml freeglut.xml goffice.xml gtk+.xml gtk+2.xml \
 	hicolor-icon-theme.xml lesstif.xml lib.xml libwnck.xml libxklavier.xml \
 	pango.xml qt.xml qt4.xml shared-mime-info.xml \
 	startup-notification.xml xulrunner.xml webkitgtk.xml cairomm.xml \
 	pangomm.xml gtkmm.xml libnotify.xml notification-daemon.xml \
-	libsexy.xml gtk-vnc.xml gdk-pixbuf.xml gtk+3.xml
+	libsexy.xml gtk-vnc.xml gdk-pixbuf.xml gtk+3.xml \
+	gtk-engines.xml atkmm.xml cogl.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -52,4 +54,7 @@ libsexy.xml: $(BOOKdir)/$@ $(srcdir)/libsexy.ch
 gtk-vnc.xml: $(BOOKdir)/$@ $(srcdir)/gtk-vnc.ch
 gdk-pixbuf.xml: $(BOOKdir)/$@ $(srcdir)/gdk-pixbuf.ch
 gtk+3.xml: $(BOOKdir)/$@ $(srcdir)/gtk+3.ch
+gtk-engines.xml: $(BOOKdir)/$@ $(srcdir)/gtk-engines.ch
+atkmm.xml: $(BOOKdir)/$@ $(srcdir)/atkmm.ch
+cogl.xml: $(BOOKdir)/$@ $(srcdir)/cogl.ch
 

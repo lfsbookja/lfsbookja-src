@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,11 +23,9 @@
     <para>The <application>gtkmm</application> package provides a C++ interface
     to <application>GTK+</application>.</para>
 @y
-<para>
-<application>gtkmm</application>
-パッケージは <application>GTK+</application>
-への C++ インターフェースを提供します。
-</para>
+    <para>
+    <application>gtkmm</application> パッケージは <application>GTK+</application> への C++ インターフェースを提供します。
+    </para>
 @z
 
 @x
@@ -80,11 +78,13 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>, and
+    <para role="required"><xref linkend="atkmm"/>,
+    <xref linkend="gtk3"/>, and
     <xref linkend="pangomm"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="atkmm"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="pangomm"/></para>
 @z
 
@@ -106,26 +106,25 @@
     <para>Install <application>gtkmm</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>gtkmm</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>gtkmm</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -169,23 +168,23 @@
 @x libatkmm-1.6.so
           <para>contains the <application>ATK</application> API classes.</para>
 @y
-<para>
-<application>ATK</application> の API クラスを提供します。
-</para>
+          <para>
+          <application>ATK</application> の API クラスを提供します。
+          </para>
 @z
 
 @x libgdkmm-2.4.so
           <para>contains the GDK API classes.</para>
 @y
-<para>
-GDK の API クラスを提供します。
-</para>
+          <para>
+          GDK の API クラスを提供します。
+          </para>
 @z
 
 @x libgtkmm-2.4.so
           <para>contains the <application>GTK+</application> API classes.</para>
 @y
-<para>
-<application>GTK+</application> の API クラスを提供します。
-</para>
+          <para>
+          <application>GTK+</application> の API クラスを提供します。
+          </para>
 @z

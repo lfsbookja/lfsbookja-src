@@ -137,8 +137,8 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/x/wm
-EXTRA_DIST = fluxbox.ch metacity.ch other-wms.ch sawfish.ch wm.ch xfce.ch
-srcs = fluxbox.xml metacity.xml other-wms.xml sawfish.xml wm.xml xfce.xml
+EXTRA_DIST = fluxbox.ch other-wms.ch sawfish.ch wm.ch xfce.ch
+srcs = fluxbox.xml other-wms.xml sawfish.xml wm.xml xfce.xml
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -327,7 +327,6 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 fluxbox.xml: $(BOOKdir)/$@ $(srcdir)/fluxbox.ch
-metacity.xml: $(BOOKdir)/$@ $(srcdir)/metacity.ch
 other-wms.xml.tmp: $(BOOKdir)/other-wms.xml
 	sed -e "s/Motif\xAE/Motif\&reg;/" $^ > $@
 other-wms.xml: ./other-wms.xml.tmp $(srcdir)/other-wms.ch

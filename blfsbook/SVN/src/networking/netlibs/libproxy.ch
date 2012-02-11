@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,11 +25,10 @@
     standardizing a way of dealing with proxy settings across all
     scenarios.</para>
 @y
-<para>
-<application>libproxy</application>
-パッケージは、自動的なプロキシー設定のための管理を行なうライブラリを提供します。
-これは、あらゆるプロキシー設定を標準的に取り扱うためのものです。
-</para>
+    <para>
+    <application>libproxy</application> パッケージは、自動的なプロキシー設定のための管理を行なうライブラリを提供します。
+    これは、あらゆるプロキシー設定を標準的に取り扱うためのものです。
+    </para>
 @z
 
 @x
@@ -94,13 +93,14 @@
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="python"/>,
     <xref linkend="xulrunner"/>,
+    <xref linkend="webkitgtk"/> or
     <ulink url="http://webkit.org/">WebKit</ulink>, and
     <ulink url="http://projects.gnome.org/NetworkManager/">NetworkManager</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="python"/>,
     <xref linkend="xulrunner"/>,
+    <xref linkend="webkitgtk"/> or
     <ulink url="http://webkit.org/">WebKit</ulink>,
     <ulink url="http://projects.gnome.org/NetworkManager/">NetworkManager</ulink></para>
 @z
@@ -123,25 +123,25 @@
     <para>Install <application>libproxy</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libproxy</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libproxy</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -150,65 +150,65 @@
     <title>&j-CommandExplanations;</title>
 @z
 
-@x
-    <para><option>--with-gnome</option>: This option builds the GNOME
-    configuration plugin.</para>
-@y
-<para>
-<option>--with-gnome</option>:
-このパラメーターは GNOME の設定プラグインをビルドすることを指示します。
-</para>
-@z
-
-@x
-    <para><option>--with-kde</option>: This option builds the KDE configuration
-    plugin.</para>
-@y
-<para>
-<option>--with-kde</option>:
-このパラメーターは KDE の設定プラグインをビルドすることを指示します。
-</para>
-@z
-
-@x
-    <para><option>--with-webkit</option>: This option builds the WebKit
-    JavaScriptCore PAC runner plugin.</para>
-@y
-<para>
-<option>--with-webkit</option>:
-このパラメーターは WebKit JavaScriptCore PAC runner プラグインをビルドすることを指示します。
-</para>
-@z
-
-@x
-    <para><option>--with-mozjs</option>: This option builds the Mozilla
-    JavaScript PAC runner plugin.</para>
-@y
-<para>
-<option>--with-mozjs</option>:
-このパラメーターは Mozilla JavaScript PAC runner プラグインをビルドすることを指示します。
-</para>
-@z
-
-@x
-    <para><option>--with-networkmanager</option>: This option builds the
-    NetworkManager plugin.</para>
-@y
-<para>
-<option>--with-networkmanager</option>:
-このパラメーターは NetworkManager プラグインをビルドすることを指示します。
-</para>
-@z
-
-@x
-    <para><option>--with-python</option>: This option builds the Python
-    bindings.</para>
-@y
-<para>
-<option>--with-python</option>:
-このパラメーターは Python バインディングをビルドすることを指示します。
-</para>
-@z
+% @x
+%     <para><option>--with-gnome</option>: This option builds the GNOME
+%     configuration plugin.</para>
+% @y
+%     <para>
+%     <option>--with-gnome</option>:
+%     このパラメーターは GNOME の設定プラグインをビルドすることを指示します。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--with-kde</option>: This option builds the KDE configuration
+%     plugin.</para>
+% @y
+%     <para>
+%     <option>--with-kde</option>:
+%     このパラメーターは KDE の設定プラグインをビルドすることを指示します。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--with-webkit</option>: This option builds the WebKit
+%     JavaScriptCore PAC runner plugin.</para>
+% @y
+%     <para>
+%     <option>--with-webkit</option>:
+%     このパラメーターは WebKit JavaScriptCore PAC runner プラグインをビルドすることを指示します。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--with-mozjs</option>: This option builds the Mozilla
+%     JavaScript PAC runner plugin.</para>
+% @y
+%     <para>
+%     <option>--with-mozjs</option>:
+%     このパラメーターは Mozilla JavaScript PAC runner プラグインをビルドすることを指示します。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--with-networkmanager</option>: This option builds the
+%     NetworkManager plugin.</para>
+% @y
+%     <para>
+%     <option>--with-networkmanager</option>:
+%     このパラメーターは NetworkManager プラグインをビルドすることを指示します。
+%     </para>
+% @z
+% 
+% @x
+%     <para><option>--with-python</option>: This option builds the Python
+%     bindings.</para>
+% @y
+%     <para>
+%     <option>--with-python</option>:
+%     このパラメーターは Python バインディングをビルドすることを指示します。
+%     </para>
+% @z
 
 @x
     <title>Contents</title>
@@ -248,16 +248,16 @@
           <para>is a sample interactive program which lists an array of
           proxies to use based on a url typed.</para>
 @y
-<para>
-対話的に作動するサンプルプログラムであり、入力した
-URL に対して適用されるプロキシーの一覧を表示します。
-</para>
+          <para>
+          対話的に作動するサンプルプログラムであり、入力した
+          URL に対して適用されるプロキシーの一覧を表示します。
+          </para>
 @z
 
 @x libproxy.{so,a}
           <para>contains the <application>libproxy</application> API functions.</para>
 @y
-<para>
-<application>libproxy</application> API 関数を提供します。
-</para>
+          <para>
+          <application>libproxy</application> API 関数を提供します。
+          </para>
 @z
