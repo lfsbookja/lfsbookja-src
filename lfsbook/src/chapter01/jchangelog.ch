@@ -60,7 +60,8 @@
           <para>[matsuand] -
           SVN-20120209,
           Changeset
-          <ulink url="&lfs-rev-root;9738">9738</ulink>
+          <ulink url="&lfs-rev-root;9738">9738</ulink>,
+          <ulink url="&lfs-rev-root;9739">9739</ulink>
           対応。
           </para>
         </listitem>
