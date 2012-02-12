@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-12-04 21:49:04 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -28,8 +28,7 @@
     insecure and should only be used on trusted networks.</para>
 @y
     <para>
-    <application>Inetutils</application>
-    パッケージは、ネットワーククライアントプログラムおよびサーバープログラムを提供します。
+    <application>Inetutils</application> パッケージは、ネットワーククライアントプログラムおよびサーバープログラムを提供します。
     LFS をベースにビルド作業を行っている場合は、LFS での構築を通じて本パッケージをインストールしていることになります。
     ただしその時にはクライアントプログラム (telnet, ftp など) のみしかインストールしていません。
     ここではサーバープログラムもインストールします。
@@ -87,16 +86,22 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <xref linkend="tcpwrappers"/>,
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>, and
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/>,
+      <xref linkend="tcpwrappers"/>,
+      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>, and
+      <xref linkend="heimdal"/> or 
+      <xref linkend="mitkrb"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <xref linkend="tcpwrappers"/>,
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <xref linkend="heimdal"/> または <xref linkend="mitkrb"/></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/>,
+      <xref linkend="tcpwrappers"/>,
+      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
+      <xref linkend="heimdal"/> または
+      <xref linkend="mitkrb"/>
+    </para>
 @z
 
 @x
@@ -309,11 +314,11 @@
 @z
 
 @x inetd
-          <para>is an Internet super-server. Note that the <xref linkend="xinetd"/>
-          package provides a much better server that does the same thing.</para>
+          <para>is an Internet super-server. <!-- Note that the <xref linkend="xinetd"/>
+          package provides a much better server that does the same thing.--></para>
 @y
-          <para>is an Internet super-server. Note that the <xref linkend="xinetd"/>
-          package provides a much better server that does the same thing.</para>
+          <para>is an Internet super-server. <!-- Note that the <xref linkend="xinetd"/>
+          package provides a much better server that does the same thing.--></para>
 @z
 
 @x rexecd

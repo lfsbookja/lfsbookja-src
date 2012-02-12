@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-11-19 19:43:32 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -176,18 +176,6 @@
 @z
 
 @x
-    <para><option>--disable-scrollkeeper</option>: Do not make updates to
-    the <application>scrollkeeper</application> database.</para>
-@y
-    <para>
-    <option>--disable-scrollkeeper</option>:
-    
-    Do not make updates to
-    the <application>scrollkeeper</application> database.
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>Contents</title>
@@ -212,16 +200,18 @@
         scalable/status},templates,watermarks},gnome/help/{gnome-doc-make/{C,
         de},gnome-doc-xslt/{C,de}},omf/{gnome-doc-make,gnome-doc-xslt},
         xml/{gnome/xslt/{common,docbook/{common,html,omf,utils},gettext,
-        mallard/{cache,common,html}},mallard/1.0}}</seg>
+        mallard/{cache,common,html}},mallard/1.0}}
+        and /usr/lib/python2.7/site-packages/xml2po/</seg>
         <seg>Custom DocBook XSLT stylesheets</seg>
 @y
         <seg>gnome-doc-prepare, gnome-doc-tool, xml2po</seg>
-        <seg>None</seg>
+        <seg>なし</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-doc-utils/{icons/hicolor/{48x48/status,
         scalable/status},templates,watermarks},gnome/help/{gnome-doc-make/{C,
         de},gnome-doc-xslt/{C,de}},omf/{gnome-doc-make,gnome-doc-xslt},
         xml/{gnome/xslt/{common,docbook/{common,html,omf,utils},gettext,
-        mallard/{cache,common,html}},mallard/1.0}}</seg>
+        mallard/{cache,common,html}},mallard/1.0}},
+        /usr/lib/python2.7/site-packages/xml2po/</seg>
         <seg>Custom DocBook XSLT stylesheets</seg>
 @z
 

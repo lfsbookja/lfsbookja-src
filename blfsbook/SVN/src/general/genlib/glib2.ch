@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-11-13 22:12:25 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -101,13 +101,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="attr"/>
-    <!-- <xref linkend="gamin"/>, -->and
+    <para role="optional"><xref linkend="attr"/>, <!-- <xref linkend="gamin"/>,
+    --> <xref linkend="dbus"/> (required to run the tests) and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="attr"/>
-    <!-- <xref linkend="gamin"/>, -->,
+    <para role="optional"><xref linkend="attr"/>, <!-- <xref linkend="gamin"/>,
+    --> <xref linkend="dbus"/> (テストスイート実行時に必要),
     <xref linkend="gtk-doc"/></para>
 @z
 

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2012-01-29 13:36:46 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -90,23 +90,13 @@
 @x
     <bridgehead renderas="sect4">Optional to Build the Invest Applet</bridgehead>
     <para role="optional"><xref linkend="pygtk"/> (including the gtk and
-    <!-- FIXME:ken -->
-    gtk.libglade modules) and Gnome-Python-Desktop-2.30.2
-    (including the gnomeapplet module)</para>
-    <!--
-    gtk.libglade modules) and <xref linkend="gnome-python-desktop"/>
-    (including the gnomeapplet module)</para>
-    -->
+    gtk.libglade modules)<!-- and <xref linkend="gnome-python-desktop"/>
+    (including the gnomeapplet module)--></para>
 @y
     <bridgehead renderas="sect4">Optional to Build the Invest Applet</bridgehead>
     <para role="optional"><xref linkend="pygtk"/> (including the gtk and
-    <!-- FIXME:ken -->
-    gtk.libglade modules) and Gnome-Python-Desktop-2.30.2
-    (including the gnomeapplet module)</para>
-    <!--
-    gtk.libglade modules) and <xref linkend="gnome-python-desktop"/>
-    (including the gnomeapplet module)</para>
-    -->
+    gtk.libglade modules)<!-- and <xref linkend="gnome-python-desktop"/>
+    (including the gnomeapplet module)--></para>
 @z
 
 @x
@@ -117,7 +107,7 @@
     <xref linkend="hal"/>,
     <xref linkend="libgnomekbd"/>,
     <xref linkend="gucharmap"/>,
-    <xref linkend="system-tools-backends"/>,
+    <!--<xref linkend="system-tools-backends"/>,-->
     <xref linkend="docbook-utils"/>,
     <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>, and
     <xref linkend="libnotify"/></para>
@@ -129,9 +119,9 @@
     <xref linkend="hal"/>,
     <xref linkend="libgnomekbd"/>,
     <xref linkend="gucharmap"/>,
-    <xref linkend="system-tools-backends"/>,
+    <!--<xref linkend="system-tools-backends"/>,-->
     <xref linkend="docbook-utils"/>,
-    <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>,
+    <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>, and
     <xref linkend="libnotify"/></para>
 @z
 
@@ -181,20 +171,16 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gnome-applets</parameter>: This parameter causes the libexec
-    files to be installed in the preferred location of
-    in <filename class="directory">$GNOME_PREFIX/lib/gnome-applets</filename>
-    instead of
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-applets</parameter>:
+    This parameter causes the libexec files to be installed in the preferred
+    location of in <filename
+    class="directory">$GNOME_PREFIX/lib/gnome-applets</filename> instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-    <para>
-    <parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gnome-applets</parameter>:
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-applets</parameter>:
     このパラメーターは、libexec ファイルを <filename
     class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
-    class="directory">$GNOME_PREFIX/lib/gnome-applets</filename> とします。
-    </para>
+    class="directory">$GNOME_PREFIX/lib/gnome-applets</filename> にインストールします。
 @z
 
 @x

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2010-08-28 18:03:53 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,11 +23,9 @@
     <para>The <application>GNOME Control Center</application> package contains the
     <application>GNOME</application> settings managers.</para>
 @y
-<para>
-<application>GNOME Control Center</application>
-パッケージは <application>GNOME</application>
-セッティングマネジャー (<application>GNOME</application> settings managers) を提供します。
-</para>
+    <para>
+    <application>GNOME Control Center</application> パッケージは <application>GNOME</application> セッティングマネージャー (<application>GNOME</application> settings managers) を提供します。
+    </para>
 @z
 
 @x
@@ -83,16 +81,20 @@
     <para role="required"><xref linkend="gnome-doc-utils"/>,
     <xref linkend="gnome-menus"/>,
     <xref linkend="gnome-settings-daemon"/>,
+    <xref linkend="libgtop"/>,
     <xref linkend="libunique"/>,
-    <xref linkend="metacity"/>, and
+    <xref linkend="metacity"/>,
+    <xref linkend="pulseaudio"/>, and
     <xref linkend="shared-mime-info"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-doc-utils"/>,
     <xref linkend="gnome-menus"/>,
     <xref linkend="gnome-settings-daemon"/>,
+    <xref linkend="libgtop"/>,
     <xref linkend="libunique"/>,
     <xref linkend="metacity"/>,
+    <xref linkend="pulseaudio"/>,
     <xref linkend="shared-mime-info"/></para>
 @z
 
@@ -123,16 +125,16 @@
     first, with a fallback to <xref linkend="xscreensaver"/> if
     necessary.</para>
 @y
-<para>
-上のパッケージは起動時に必要となるパッケージであり、
-Though they are only run-time dependencies and
-<application>GNOME Control Center</application> will compile just fine without
-them installed, there are two screen saver packages that can be installed
-which will provide a robust collection of screen savers and screen
-locking capability. <xref linkend="gnome-screensaver"/> is looked for
-first, with a fallback to <xref linkend="xscreensaver"/> if
-necessary.
-</para>
+    <para>
+    上のパッケージは起動時に必要となるパッケージであり、
+    Though they are only run-time dependencies and
+    <application>GNOME Control Center</application> will compile just fine without
+    them installed, there are two screen saver packages that can be installed
+    which will provide a robust collection of screen savers and screen
+    locking capability. <xref linkend="gnome-screensaver"/> is looked for
+    first, with a fallback to <xref linkend="xscreensaver"/> if
+    necessary.
+    </para>
 @z
 
 @x
@@ -153,27 +155,25 @@ necessary.
     <para>Install <application>GNOME Control Center</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GNOME Control Center</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GNOME Control Center</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -183,86 +183,15 @@ necessary.
 @z
 
 @x
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gnome-control-center</parameter>: This parameter causes the libexec
-    files to be installed in the preferred location of
-    <filename class="directory">$GNOME_PREFIX/lib/gnome-control-center</filename>
-    instead of
-    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
-@y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/gnome-control-center</parameter>:
-このオプションは libexec ファイルのインストール先として
-This parameter causes the libexec
-files to be installed in the preferred location of
-<filename class="directory">$GNOME_PREFIX/lib/gnome-control-center</filename>
-instead of
-<filename class="directory">$GNOME_PREFIX/libexec</filename>.
-</para>
-@z
-
-@x
-    <para><option>--disable-hal</option>: Build without hal support.</para>
-@y
-<para>
-<option>--disable-hal</option>: HAL サポートをなしにしてビルドします。
-</para>
-@z
-
-@x
     <para><option>--enable-aboutme</option>: Enables building the
     <command>gnome-about-me</command> capplet. <application>Evolution Data
     Server</application> must be installed to use this parameter.</para>
 @y
-<para>
-<option>--enable-aboutme</option>: Enables building the
-<command>gnome-about-me</command> capplet. <application>Evolution Data
-Server</application> must be installed to use this parameter.
-</para>
-@z
-
-@x
-    <title>Configuring GNOME Control Center</title>
-@y
-    <title>GNOME Control Center の設定</title>
-@z
-
-@x
-      <title>Configuration Information</title>
-@y
-      <title>&j-ConfigInfo;</title>
-@z
-
-@x
-      <para>If <application>HAL</application> was linked into the build and
-      GNOME is being installed in any location other than
-      <filename class='directory'>/usr</filename>, you should create a local
-      <application>D-Bus</application> session configuration file so that the
-      installed <filename>org.gnome.SettingsDaemon.service</filename>
-      file can be discovered by <application>D-Bus</application>. You should
-      reference the information on the <application>D-Bus</application> page
-      for instructions on how to create a
-      <xref linkend="dbus-session-config"/>. You may disregard this if you
-      already created the local <application>D-Bus</application> session
-      configuration file during the <application>GNOME VFS</application>
-      installation.</para>
-@y
-<para>
-
-If <application>HAL</application> was linked into the build and
-GNOME is being installed in any location other than
-<filename class='directory'>/usr</filename>, you should create a local
-<application>D-Bus</application> session configuration file so that the
-installed <filename>org.gnome.SettingsDaemon.service</filename>
-file can be discovered by <application>D-Bus</application>. You should
-reference the information on the <application>D-Bus</application> page
-for instructions on how to create a
-<xref linkend="dbus-session-config"/>. You may disregard this if you
-already created the local <application>D-Bus</application> session
-configuration file during the <application>GNOME VFS</application>
-installation.
-</para>
+    <para>
+    <option>--enable-aboutme</option>: Enables building the
+    <command>gnome-about-me</command> capplet. <application>Evolution Data
+    Server</application> must be installed to use this parameter.
+    </para>
 @z
 
 @x

@@ -1,6 +1,6 @@
 BOOKdir = $(top_builddir)/@bookdir@/gnome/core
 EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
-	dummy-platform.ch gconf.ch gnome-applets.ch \
+	dummy-platform.ch gconf.ch \
 	gnome-backgrounds.ch gnome-desktop.ch \
 	gnome-doc-utils.ch gnome-icon-theme.ch \
 	gnome-keyring.ch gnome-menus.ch gnome-mime-data.ch gnome-panel.ch \
@@ -14,11 +14,13 @@ EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
 	dummy-libraries.ch caribou.ch dummy-shell.ch dconf.ch \
 	dummy-extras.ch dummy-utilities.ch dummy-shell-fallback.ch \
 	gdm.ch gcalctool.ch evolution-data-server.ch \
-	dummy-os-services.ch
+	dummy-os-services.ch gnome-disk-utility.ch \
+	gnome-bluetooth.ch gjs.ch glib-networking.ch \
+	gnome-contacts.ch gnome-dbus-python.ch
 
 srcdir = @srcdir@
 srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
-	dummy-platform.xml gconf.xml gnome-applets.xml \
+	dummy-platform.xml gconf.xml \
 	gnome-backgrounds.xml gnome-desktop.xml \
 	gnome-doc-utils.xml gnome-icon-theme.xml \
 	gnome-keyring.xml gnome-menus.xml gnome-mime-data.xml gnome-panel.xml \
@@ -32,7 +34,9 @@ srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
 	dummy-libraries.xml caribou.xml dummy-shell.xml dconf.xml \
 	dummy-extras.xml dummy-utilities.xml dummy-shell-fallback.xml \
 	gdm.xml gcalctool.xml evolution-data-server.xml \
-	dummy-os-services.xml
+	dummy-os-services.xml gnome-disk-utility.xml \
+	gnome-bluetooth.xml gjs.xml glib-networking.xml \
+	gnome-contacts.xml gnome-dbus-python.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -49,7 +53,6 @@ core.xml: $(BOOKdir)/$@ $(srcdir)/core.ch
 dummy-desktop.xml: $(BOOKdir)/$@ $(srcdir)/dummy-desktop.ch
 dummy-platform.xml: $(BOOKdir)/$@ $(srcdir)/dummy-platform.ch
 gconf.xml: $(BOOKdir)/$@ $(srcdir)/gconf.ch
-gnome-applets.xml: $(BOOKdir)/$@ $(srcdir)/gnome-applets.ch
 gnome-backgrounds.xml: $(BOOKdir)/$@ $(srcdir)/gnome-backgrounds.ch
 gnome-desktop.xml: $(BOOKdir)/$@ $(srcdir)/gnome-desktop.ch
 gnome-doc-utils.xml: $(BOOKdir)/$@ $(srcdir)/gnome-doc-utils.ch
@@ -90,4 +93,10 @@ gdm.xml: $(BOOKdir)/$@ $(srcdir)/gdm.ch
 gcalctool.xml: $(BOOKdir)/$@ $(srcdir)/gcalctool.ch
 evolution-data-server.xml: $(BOOKdir)/$@ $(srcdir)/evolution-data-server.ch
 dummy-os-services.xml: $(BOOKdir)/$@ $(srcdir)/dummy-os-services.ch
+gnome-disk-utility.xml: $(BOOKdir)/$@ $(srcdir)/gnome-disk-utility.ch
+gnome-bluetooth.xml: $(BOOKdir)/$@ $(srcdir)/gnome-bluetooth.ch
+gjs.xml: $(BOOKdir)/$@ $(srcdir)/gjs.ch
+glib-networking.xml: $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
+gnome-contacts.xml: $(BOOKdir)/$@ $(srcdir)/gnome-contacts.ch
+gnome-dbus-python.xml: $(BOOKdir)/$@ $(srcdir)/gnome-dbus-python.ch
 

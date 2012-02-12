@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-11-02 21:59:09 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -20,14 +20,13 @@
 @z
 
 @x
-    <para>The <application>GNOME Desktop</application> package contains
-    the <command>gnome-about</command> program, the
-    <filename class='libraryfile'>libgnome-desktop-2</filename> library and
+    <para>The <application>GNOME Desktop</application> package contains the
+    <filename class='libraryfile'>libgnome-desktop-3</filename> library and
     <application>GNOME</application>'s core graphics files and icons.</para>
 @y
     <para>
-    <application>GNOME Desktop</application> パッケージは、<command>gnome-about</command> プログラム、<filename
-    class='libraryfile'>libgnome-desktop-2</filename> ライブラリ、<application>GNOME</application> のコアとなるグラフィックファイルやアイコンを提供します。
+    <application>GNOME Desktop</application> パッケージは、<filename
+    class='libraryfile'>libgnome-desktop-3</filename> ライブラリ、<application>GNOME</application> のコアとなるグラフィックファイルやアイコンを提供します。
     </para>
 @z
 
@@ -81,16 +80,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
+    <para role="required"><xref linkend="DocBook"/>,
     <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gtk2"/>,
+    <!-- FIXME:ken
+    <xref linkend="gsettings-desktop-schemas"/>,-->
+    gsettings-desktop-schemas-3.2.0,
+    <xref linkend="gtk3"/>,
     <xref linkend="which"/>, and
     <xref linkend="xorg7-lib"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
+    <para role="required"><xref linkend="DocBook"/>,
     <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gtk2"/>,
+    <!-- FIXME:ken
+    <xref linkend="gsettings-desktop-schemas"/>,-->
+    gsettings-desktop-schemas-3.2.0,
+    <xref linkend="gtk3"/>,
     <xref linkend="which"/>,
     <xref linkend="xorg7-lib"/></para>
 @z
@@ -175,9 +180,9 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&j-InstalledPrograms;</segtitle>
       <segtitle>&j-InstalledLibraries;</segtitle>
@@ -185,17 +190,25 @@
 @z
 
 @x
-        <seg>gnome-about</seg>
-        <seg>libgnome-desktop-2.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-desktop-2.0/libgnomeui,
-        share/{applications,gnome-about/headers,gtk-doc/html/gnome-desktop,
-        libgnome-desktop,omf/{fdl,gpl,lgpl}}}</seg>
+        <seg>None</seg>
+        <seg>libgnome-desktop-3.{so,a}</seg>
+        <seg>/usr/{include/gnome-desktop-3.0/libgnome-desktop,
+        share/{gnome/help/{fdl/{C,ar,ca,de,el,es,eu,fr,hu,ko,oc,pl,sl,sv,uk,vi,
+        zh_CN},gpl/{C,ar,ca,cs,de,el,es,eu,fi,fr,hu,ko,nds,oc,pa,sl,sv,uk,vi,
+        zh_CN},lgpl/{C,ar,de,el,es,eu,fi,fr,hu,ko,oc,pa,pt_BR,sl,sv,uk,vi,
+        zh_CN}},gtk-doc/html/gnome-desktop3,libgnome-desktop-3.0,
+        locale/{an/LC_MESSAGES,fur/LC_MESSAGES,ig/LC_MESSAGES,lo/LC_MESSAGES,
+        yo/LC_MESSAGES},omf/{fdl,gpl,lgpl}}}</seg>
 @y
-        <seg>gnome-about</seg>
-        <seg>libgnome-desktop-2.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-desktop-2.0/libgnomeui,
-        share/{applications,gnome-about/headers,gtk-doc/html/gnome-desktop,
-        libgnome-desktop,omf/{fdl,gpl,lgpl}}}</seg>
+        <seg>なし</seg>
+        <seg>libgnome-desktop-3.{so,a}</seg>
+        <seg>/usr/{include/gnome-desktop-3.0/libgnome-desktop,
+        share/{gnome/help/{fdl/{C,ar,ca,de,el,es,eu,fr,hu,ko,oc,pl,sl,sv,uk,vi,
+        zh_CN},gpl/{C,ar,ca,cs,de,el,es,eu,fi,fr,hu,ko,nds,oc,pa,sl,sv,uk,vi,
+        zh_CN},lgpl/{C,ar,de,el,es,eu,fi,fr,hu,ko,oc,pa,pt_BR,sl,sv,uk,vi,
+        zh_CN}},gtk-doc/html/gnome-desktop3,libgnome-desktop-3.0,
+        locale/{an/LC_MESSAGES,fur/LC_MESSAGES,ig/LC_MESSAGES,lo/LC_MESSAGES,
+        yo/LC_MESSAGES},omf/{fdl,gpl,lgpl}}}</seg>
 @z
 
 @x
@@ -204,13 +217,7 @@
       <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
 @z
 
-@x gnome-about
-          <para>produces the about screen.</para>
-@y
-          <para>produces the about screen.</para>
-@z
-
-@x libgnome-desktop-2.{so,a}
+@x libgnome-desktop-3.{so,a}
           <para>contains APIs being tested for inclusion in
           <application>libgnome</application> or
           <application>libgnomeui</application>.</para>

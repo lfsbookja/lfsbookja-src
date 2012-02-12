@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-11-02 21:59:09 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -103,9 +103,11 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&python3htmldoc-download-http;"/></para>
+        <para>Download (HTTP):
+        <ulink url="&python3htmldoc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&python3htmldoc-download-http;"/></para>
+        <para>ダウンロード (HTTP):
+        <ulink url="&python3htmldoc-download-http;"/></para>
 @z
 
 @x
@@ -185,9 +187,9 @@
     <para>Install <application>Python</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Python</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Python</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -232,14 +234,14 @@
     commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-In order to use the <command>help ('name_string')</command> feature
-of the <command>python</command> interpreter with some statements and
-keywords, you must download (or create) the optional HTML documentation
-and install it. If you downloaded the HTML docs, issue the following
-commands as the
-<systemitem class="username">root</systemitem> user:
-</para>
+    <para>
+    In order to use the <command>help ('name_string')</command> feature
+    of the <command>python</command> interpreter with some statements and
+    keywords, you must download (or create) the optional HTML documentation
+    and install it. If you downloaded the HTML docs, issue the following
+    commands as the
+    <systemitem class="username">root</systemitem> user:
+    </para>
 @z
 
 @x
@@ -253,9 +255,9 @@ commands as the
     is used to fix a build problem with the <application>GDBM</application>
     library.</para>
 @y
-<para><command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command
-is used to fix a build problem with the <application>GDBM</application>
-library.</para>
+    <para><command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command
+    is used to fix a build problem with the <application>GDBM</application>
+    library.</para>
 @z
 
 @x
@@ -269,12 +271,12 @@ library.</para>
     documentation, you must add the following environment variable to
     individual user's or the system's profile:</para>
 @y
-<para>
-
-In order for <command>python</command> to find the installed
-documentation, you must add the following environment variable to
-individual user's or the system's profile:
-</para>
+    <para>
+    
+    In order for <command>python</command> to find the installed
+    documentation, you must add the following environment variable to
+    individual user's or the system's profile:
+    </para>
 @z
 
 @x
@@ -307,10 +309,11 @@ individual user's or the system's profile:
         python&python3-majorver; (link to python&python3-majorver;m-config),
         python&python3-majorver;m,
 
-        smtpd.py, and optionally if <application>Tk</application> is installed, idle</seg>
+        smtpd.py, and optionally if <application>Tk</application> is installed,
+        idle</seg>
         
-        <seg>libpython3.so, libpython&python3-majorver;m.so.1.0 and numerous modules installed in
-        /usr/lib/python&python3-majorver;</seg>
+        <seg>libpython3.so, libpython&python3-majorver;m.so.1.0 and numerous
+        modules installed in /usr/lib/python&python3-majorver;</seg>
         
         <seg>/usr/include/python&python3-majorver;,
              /usr/lib/python&python3-majorver;, and
@@ -318,24 +321,25 @@ individual user's or the system's profile:
 @y
         <seg>2to3, 
         
-        pydoc3 (pydoc-&python3-majorver; へのリンク), 
+        pydoc3 (link to pydoc-&python3-majorver;), 
         pydoc&python3-majorver;,
 
         python3, 
-        python&python3-majorver; (python3 へのハードリンク),
-        python&python3-majorver;m (python3 へのハードリンク),
+        python&python3-majorver; (hard link with python3),
+        python&python3-majorver;m (hard link with python3),
 
-        python3-config (python&python3-majorver;-config へのリンク), 
-        python&python3-majorver; (python&python3-majorver;m-config へのリンク),
+        python3-config (link to python&python3-majorver;-config), 
+        python&python3-majorver; (link to python&python3-majorver;m-config),
         python&python3-majorver;m,
 
-        smtpd.py, and optionally if <application>Tk</application> is installed, idle</seg>
+        smtpd.py, and optionally if <application>Tk</application> is installed,
+        idle</seg>
         
-        <seg>libpython3.so, libpython&python3-majorver;m.so.1.0 and numerous modules installed in
-        /usr/lib/python&python3-majorver;</seg>
+        <seg>libpython3.so, libpython&python3-majorver;m.so.1.0 and numerous
+        modules installed in /usr/lib/python&python3-majorver;</seg>
         
         <seg>/usr/include/python&python3-majorver;,
-             /usr/lib/python&python3-majorver;,
+             /usr/lib/python&python3-majorver;, and
              /usr/share/doc/python-&python3-version;</seg>
 @z
 
@@ -349,11 +353,11 @@ individual user's or the system's profile:
           <para>is a wrapper script that opens a
           <application>Python</application> aware GUI editor.</para>
 @y
-<para>
-
-is a wrapper script that opens a
-<application>Python</application> aware GUI editor.
-</para>
+          <para>
+          
+          is a wrapper script that opens a
+          <application>Python</application> aware GUI editor.
+          </para>
 @z
 
 @x pydoc

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-01-23 17:05:49 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -19,10 +19,9 @@
   and change to that directory before unzipping the file to
   ease the removal of the source files after the package has been installed.</para>
 @y
-<para>
-本パッケージのソースは <filename>zip</filename>
-形式で提供されているため <command>unzip</command> が必要になります。
-ビルドにあたっては、まずディレクトリを生成してそのディレクトリに入り、それから zip 解凍を行います。
-こうしておけばパッケージインストール後に、ソースファイルを簡単に削除できるようになります。
-</para>
+  <para>
+  本パッケージのソースは <filename>zip</filename> 形式で提供されているため <command>unzip</command> が必要になります。
+  ビルドにあたっては、まずディレクトリを生成してそのディレクトリに入り、それから zip 解凍を行います。
+  こうしておけばパッケージインストール後に、ソースファイルを簡単に削除できるようになります。
+  </para>
 @z

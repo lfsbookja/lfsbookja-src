@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2009-10-22 09:27:31 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,16 +25,10 @@ the shared libraries.  After checking that this is the case,
 <para>
 ライブラリのほとんどは、どこにインストールされているかを定める方法がないものです。
 したがってインストールされるディレクトリがどこかを捉えておく必要があります。
-つまり <filename>/etc/ld.so.conf</filename>
-ファイル内に <filename class="directory">/opt/lib</filename> とか
-<filename class="directory">/usr/local/lib</filename>
-といったディレクトリを記述する必要が出てきます。
-これを行っておかないと <command>ldd</command>
-は共有ライブラリを見つけ出すことができません。
-上の設定が必要であったなら、それを実施した上で
-<systemitem class="username">root</systemitem>
-ユーザーでログインし <command>/sbin/ldconfig</command>
-を実行してください。
+つまり <filename>/etc/ld.so.conf</filename> ファイル内に <filename class="directory">/opt/lib</filename> とか <filename
+class="directory">/usr/local/lib</filename> といったディレクトリを記述する必要が出てきます。
+これを行っておかないと <command>ldd</command> は共有ライブラリを見つけ出すことができません。
+上の設定が必要であったなら、それを実施した上で <systemitem
+class="username">root</systemitem> ユーザーでログインし <command>/sbin/ldconfig</command> を実行してください。
 </para>
 @z
-

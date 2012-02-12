@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2010-11-20 21:50:56 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -27,15 +27,14 @@
     allowing single logins and encrypted communication over internal
     networks or the Internet.</para>
 @y
-<para>
-<application>MIT Kerberos V5</application>
-は Kerberos 5 のフリーな実装ソフトウェアです。
-Kerberos とはネットワーク認証プロトコルです。
-
-centralizes the authentication database and uses kerberized
-applications to work with servers or services that support Kerberos
-allowing single logins and encrypted communication over internal
-networks or the Internet.</para>
+    <para>
+    <application>MIT Kerberos V5</application> は Kerberos 5 のフリーな実装ソフトウェアです。
+    Kerberos とはネットワーク認証プロトコルです。
+    
+    centralizes the authentication database and uses kerberized
+    applications to work with servers or services that support Kerberos
+    allowing single logins and encrypted communication over internal
+    networks or the Internet.</para>
 @z
 
 @x
@@ -133,13 +132,11 @@ networks or the Internet.</para>
     the distribution tar file, then unpack the compressed tar file before
     starting the build.</para>
 @y
-<para>
-<application>MIT Kerberos V5</application> is distributed in a
-TAR file containing a compressed TAR package and a detached PGP
-<filename class="extension">ASC</filename> file. You'll need to unpack
-the distribution tar file, then unpack the compressed tar file before
-starting the build.
-</para>
+    <para><application>MIT Kerberos V5</application> is distributed in a
+    TAR file containing a compressed TAR package and a detached PGP
+    <filename class="extension">ASC</filename> file. You'll need to unpack
+    the distribution tar file, then unpack the compressed tar file before
+    starting the build.</para>
 @z
 
 @x
@@ -147,41 +144,35 @@ starting the build.
     <xref linkend="gnupg"/> installed, you can
     authenticate the package with the following command:</para>
 @y
-<para>
-
-After unpacking the distribution tarball and if you have
-<xref linkend="gnupg"/> installed, you can
-authenticate the package with the following command:
-</para>
+    <para>After unpacking the distribution tarball and if you have
+    <xref linkend="gnupg"/> installed, you can
+    authenticate the package with the following command:</para>
 @z
 
 @x
     <para>Build <application>MIT Kerberos V5</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>MIT Kerberos V5</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>MIT Kerberos V5</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>The regression test suite is designed to be run after the
     installation has been completed.</para>
 @y
-<para>
-縮退テスト (regression test suite)
-は、インストール後に実行するものとなります。
-</para>
+    <para>
+    縮退テスト (regression test suite) は、インストール後に実行するものとなります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -194,15 +185,15 @@ authenticate the package with the following command:
       commands without moving the passwords back to
       <filename>/etc/passwd</filename> could prevent any logins.</para>
 @y
-<para>
-<command>login.krb5</command> does not support
-<application>Shadow</application> passwords. As a result, when the
-Kerberos server is unavailable, the default fall through to
-<filename>/etc/passwd</filename> will not work because
-the passwords have been moved to <filename>/etc/shadow</filename> during
-the LFS build process.  Entering the following
-commands without moving the passwords back to
-<filename>/etc/passwd</filename> could prevent any logins.</para>
+    <para>
+    <command>login.krb5</command> does not support
+    <application>Shadow</application> passwords. As a result, when the
+    Kerberos server is unavailable, the default fall through to
+    <filename>/etc/passwd</filename> will not work because
+    the passwords have been moved to <filename>/etc/shadow</filename> during
+    the LFS build process.  Entering the following
+    commands without moving the passwords back to
+    <filename>/etc/passwd</filename> could prevent any logins.</para>
 @z
 
 @x
@@ -215,16 +206,16 @@ commands without moving the passwords back to
     <filename class='directory'>/usr</filename> filesystem is
     not mounted:</para>
 @y
-<para>
-After considering (and understanding) the above warning, the
-following commands can be entered as the
-<systemitem class="username">root</systemitem> user to replace the
-existing <command>login</command> program with the Kerberized
-version (after preserving the original) and move the support libraries
-to a location available when the
-<filename class='directory'>/usr</filename> filesystem is
-not mounted:
-</para>
+    <para>
+    After considering (and understanding) the above warning, the
+    following commands can be entered as the
+    <systemitem class="username">root</systemitem> user to replace the
+    existing <command>login</command> program with the Kerberized
+    version (after preserving the original) and move the support libraries
+    to a location available when the
+    <filename class='directory'>/usr</filename> filesystem is
+    not mounted:
+    </para>
 @z
 
 @x
@@ -257,12 +248,12 @@ not mounted:
     <para><parameter>--enable-dns-for-realm</parameter>: This parameter allows
     realms to be resolved using the DNS server.</para>
 @y
-<para>
-<parameter>--enable-dns-for-realm</parameter>:
-このパラメーターは
-This parameter allows
-realms to be resolved using the DNS server.
-</para>
+    <para>
+    <parameter>--enable-dns-for-realm</parameter>:
+    このパラメーターは
+    This parameter allows
+    realms to be resolved using the DNS server.
+    </para>
 @z
 
 @x
@@ -609,7 +600,7 @@ realms to be resolved using the DNS server.
         <command>kshd</command>) requires two additional configuration steps.
         First the <filename>/etc/services</filename> file must be updated to
         include eklogin and krb5_prop. Second, the
-        <filename>inetd.conf</filename> or <filename>xinetd.conf</filename>
+        <filename>inetd.conf</filename> <!--or <filename>xinetd.conf</filename>--> file
         must be modified for each server that will be activated, usually
         replacing the server from <xref linkend="inetutils"/>.</para>
 @y
@@ -618,7 +609,7 @@ realms to be resolved using the DNS server.
         <command>kshd</command>) requires two additional configuration steps.
         First the <filename>/etc/services</filename> file must be updated to
         include eklogin and krb5_prop. Second, the
-        <filename>inetd.conf</filename> or <filename>xinetd.conf</filename>
+        <filename>inetd.conf</filename> <!--or <filename>xinetd.conf</filename>--> file
         must be modified for each server that will be activated, usually
         replacing the server from <xref linkend="inetutils"/>.</para>
 @z
@@ -794,4 +785,3 @@ realms to be resolved using the DNS server.
           <para>gives information on how to link programs against
           libraries.</para>
 @z
-

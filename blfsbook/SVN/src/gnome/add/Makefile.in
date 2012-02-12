@@ -149,12 +149,12 @@ EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
 	libgnomeprint.ch libgnomeprintui.ch orca.ch \
 	sound-juicer.ch system-tools-backends.ch totem.ch \
 	gnome-power-manager.ch totem-pl-parser.ch \
-	gnome-disk-utility.ch nautilus-sendto.ch \
+	nautilus-sendto.ch \
 	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch \
 	liboobs.ch gnome-nettool.ch gnome-system-tools.ch \
 	mousetweaks.ch hamster-applet.ch gnome-user-share.ch \
-	seahorse-plugins.ch gnome-bluetooth.ch seahorse.ch \
-	vinagre.ch vino.ch
+	seahorse-plugins.ch seahorse.ch \
+	vinagre.ch vino.ch gnome-applets.ch
 
 srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	dummy-libraries.xml dummy-utilities.xml ekiga.xml \
@@ -168,12 +168,12 @@ srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
 	libgnomeprint.xml libgnomeprintui.xml orca.xml \
 	sound-juicer.xml system-tools-backends.xml totem.xml \
 	gnome-power-manager.xml totem-pl-parser.xml \
-	gnome-disk-utility.xml nautilus-sendto.xml \
+	nautilus-sendto.xml \
 	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml \
 	liboobs.xml gnome-nettool.xml gnome-system-tools.xml \
 	mousetweaks.xml hamster-applet.xml gnome-user-share.xml \
-	seahorse-plugins.xml gnome-bluetooth.xml seahorse.xml \
-	vinagre.xml vino.xml
+	seahorse-plugins.xml seahorse.xml \
+	vinagre.xml vino.xml gnome-applets.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -394,7 +394,6 @@ sound-juicer.xml: $(BOOKdir)/$@ $(srcdir)/sound-juicer.ch
 system-tools-backends.xml: $(BOOKdir)/$@ $(srcdir)/system-tools-backends.ch
 totem.xml: $(BOOKdir)/$@ $(srcdir)/totem.ch
 totem-pl-parser.xml: $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
-gnome-disk-utility.xml: $(BOOKdir)/$@ $(srcdir)/gnome-disk-utility.ch
 nautilus-sendto.xml: $(BOOKdir)/$@ $(srcdir)/nautilus-sendto.ch
 alacarte.xml: $(BOOKdir)/$@ $(srcdir)/alacarte.ch
 cheese.xml: $(BOOKdir)/$@ $(srcdir)/cheese.ch
@@ -407,10 +406,10 @@ mousetweaks.xml: $(BOOKdir)/$@ $(srcdir)/mousetweaks.ch
 hamster-applet.xml: $(BOOKdir)/$@ $(srcdir)/hamster-applet.ch
 gnome-user-share.xml: $(BOOKdir)/$@ $(srcdir)/gnome-user-share.ch
 seahorse-plugins.xml: $(BOOKdir)/$@ $(srcdir)/seahorse-plugins.ch
-gnome-bluetooth.xml: $(BOOKdir)/$@ $(srcdir)/gnome-bluetooth.ch
 seahorse.xml: $(BOOKdir)/$@ $(srcdir)/seahorse.ch
 vinagre.xml: $(BOOKdir)/$@ $(srcdir)/vinagre.ch
 vino.xml: $(BOOKdir)/$@ $(srcdir)/vino.ch
+gnome-applets.xml: $(BOOKdir)/$@ $(srcdir)/gnome-applets.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
