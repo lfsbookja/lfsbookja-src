@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -95,11 +95,11 @@
 @z
 
 @x
-    <para>Ensure that all 162 tests in the test suite passed.  
+    <para>Ensure that all 164 tests in the test suite passed.  
     Check the results by issuing the following command:</para>
 @y
     <para>
-    162個のテストが完了することを確認してください。
+    164個のテストが完了することを確認してください。
     テスト結果は以下のコマンドにより確認することができます。
     </para>
 @z

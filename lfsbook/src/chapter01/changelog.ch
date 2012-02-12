@@ -48,6 +48,42 @@
 @z
 
 @x
+      <para>2012-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Correct some markup for a couple of installation
+          commands. This helps with jhalfs' package management feature.  Thanks
+          to Pierre Labastie for the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Create /usr/lib/libstdc++.la early in chapter 6 to
+          fix an ICA issue.  Thanks to Pierre Labastie for the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GMP-5.0.4. Fixes
+          <ulink url="&lfs-ticket-root;3017">#3017</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - インストール手順を示すコマンドの表記をいくつか修正。
+          これにより jhalf のパッケージ管理機能を正常に。
+          パッチを提供してくれた Pierre Labastie に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - 第6章の早い段階で /usr/lib/libstdc++.la を生成し、ICA 問題を解決することに。
+          パッチを提供してくれた Pierre Labastie に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GMP-5.0.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3017">#3017</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-02-09</para>
       <itemizedlist>
         <listitem>
