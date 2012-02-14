@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-04-17 17:49:06 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -71,7 +71,7 @@
           <para>Automatically determines which pieces of a package need to
           be (re)compiled and then issues the relevant commands</para>
 @y
-<para>
-パッケージの構成要素に対して、どれを(再)コンパイルするかを自動判別し、対応するコマンドを実行します。
-</para>
+          <para>
+          パッケージの構成要素に対して、どれを(再)コンパイルするかを自動判別し、対応するコマンドを実行します。
+          </para>
 @z

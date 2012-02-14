@@ -283,16 +283,6 @@
           </para>
 @z
 
-% @x ddate
-%           <para>Gives the Discordian date or converts the given Gregorian date
-%           to a Discordian one</para>
-% @y
-%           <para>
-%           ディスコルディア暦 (Discordian) の日付を表示します。
-%           または指定されたグレゴリオ暦 (Gregorian) の日付をディスコルディア暦の日付に変換します。
-%           </para>
-% @z
-
 @x delpart
           <para>Asks the Linux kernel to remove a partition</para>
 @y
@@ -455,7 +445,7 @@
           <para>Creates various IPC resources</para>
 @y
           <para>
-          様々な IPC リソースを生成します。
+          さまざまな IPC リソースを生成します。
           </para>
 @z
 
@@ -490,14 +480,6 @@
           シリアル回線 (serial line) に対して回線規則 (line discipline) を割り当てます。
           </para>
 @z
-
-% @x line
-%           <para>Copies a single line</para>
-% @y
-%           <para>
-%           単一行をコピーします。
-%           </para>
-% @z
 
 @x linux32
           <para>A symbolic link to setarch</para>

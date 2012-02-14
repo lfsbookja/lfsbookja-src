@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
+% $Author:$
+% $Rev:$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -18,10 +18,10 @@
     numbers with arbitrarily high precision and correct rounding of the
     result.</para>
 @y
-<para>
-MPC パッケージは複素数演算を可能とするライブラリを提供するものです。
-高い精度と適切な丸め (rounding) を実現します。
-</para>
+    <para>
+    MPC パッケージは複素数演算を可能とするライブラリを提供するものです。
+    高い精度と適切な丸め (rounding) を実現します。
+    </para>
 @z
 
 @x
@@ -33,33 +33,33 @@ MPC パッケージは複素数演算を可能とするライブラリを提供�
 @x
     <para>Prepare MPC for compilation:</para>
 @y
-<para>
-MPC をコンパイルするための準備をします。
-</para>
+    <para>
+    MPC をコンパイルするための準備をします。
+    </para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-<para>
-パッケージをコンパイルします。
-</para>
+    <para>
+    パッケージをコンパイルします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue:</para>
 @y
-<para>
-コンパイル結果をテストするには以下を実行します。
-</para>
+    <para>
+    コンパイル結果をテストするには以下を実行します。
+    </para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-<para>
-パッケージをインストールします。
-</para>
+    <para>
+    パッケージをインストールします。
+    </para>
 @z
 
 @x
@@ -83,8 +83,7 @@ MPC をコンパイルするための準備をします。
 @x libmpc
           <para>Contains complex math functions</para>
 @y
-<para>
-複素数による演算関数を提供します。
-</para>
+          <para>
+          複素数による演算関数を提供します。
+          </para>
 @z
-

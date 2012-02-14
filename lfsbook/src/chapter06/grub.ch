@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-12-25 13:50:03 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -28,24 +28,10 @@
 @x
     <para>Prepare GRUB for compilation:</para>
 @y
-<para>
-GRUB をコンパイルするための準備をします。
-</para>
+    <para>
+    GRUB をコンパイルするための準備をします。
+    </para>
 @z
-
-% @x
-%     <para>Using a separate build directory keeps the 2400 generated 
-%     files out of the main directory and is recommended by the developers.
-%     The --disable switches just minimize what is built by disabling
-%     features and testing programs not really needed for LFS.</para>
-% @y
-% <para>
-% ビルドの際には専用のディレクトリを設けます。
-% 生成ファイルが 2,400 個もあるため、それらをソースディレクトリの外で生成します。
-% これは開発者が推奨していることです。
-% --disable オプションは、LFS で本当に必要となる機能やテストプログラムだけを生成するもので、ビルド結果を最小限に抑えます。
-% </para>
-% @z
 
 @x
     <para>The --disable switches minimize what is built by disabling features
@@ -82,9 +68,9 @@ GRUB をコンパイルするための準備をします。
   <para>Using GRUB to make your LFS system bootable will be discussed in 
   <xref linkend="ch-bootable-grub"/>.</para>
 @y
-    <para>
-    GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/> で説明しています。
-    </para>
+  <para>
+  GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/> で説明しています。
+  </para>
 @z
 
 @x

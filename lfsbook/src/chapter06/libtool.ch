@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-02-19 10:37:42 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -18,10 +18,10 @@
     It wraps the complexity of using shared libraries in a consistent, portable
     interface.</para>
 @y
-<para>
-Libtool パッケージは GNU 汎用ライブラリをサポートするスクリプトを提供します。
-これは複雑な共有ライブラリをラップして一貫した可搬性を実現します。
-</para>
+    <para>
+    Libtool パッケージは GNU 汎用ライブラリをサポートするスクリプトを提供します。
+    これは複雑な共有ライブラリをラップして一貫した可搬性を実現します。
+    </para>
 @z
 
 @x
@@ -89,26 +89,24 @@ Libtool パッケージは GNU 汎用ライブラリをサポートするスク�
 @x libtool
           <para>Provides generalized library-building support services</para>
 @y
-<para>
-汎用的なライブラリ構築支援サービスを提供します。
-</para>
+          <para>
+          汎用的なライブラリ構築支援サービスを提供します。
+          </para>
 @z
 
 @x libtoolize
           <para>Provides a standard way to add <command>libtool</command>
           support to a package</para>
 @y
-<para>
-パッケージに対して <command>libtool</command>
-によるサポートを加える標準的手法を提供します。
-</para>
+          <para>
+          パッケージに対して <command>libtool</command> によるサポートを加える標準的手法を提供します。
+          </para>
 @z
 
 @x libltdl
           <para>Hides the various difficulties of dlopening libraries</para>
 @y
-<para>
-dlopen を行うライブラリの複雑さを隠蔽します。
-</para>
+          <para>
+          dlopen を行うライブラリの複雑さを隠蔽します。
+          </para>
 @z
-

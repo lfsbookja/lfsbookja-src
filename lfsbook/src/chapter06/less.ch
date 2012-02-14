@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-09-08 17:23:15 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -42,9 +42,9 @@
           in <filename class="directory">/etc</filename> for the configuration
           files.</para>
 @y
-<para>
-本パッケージによって作成されるプログラムが <filename class="directory">/etc</filename> ディレクトリにある設定ファイルを参照するように指示します。
-</para>
+          <para>
+          本パッケージによって作成されるプログラムが <filename class="directory">/etc</filename> ディレクトリにある設定ファイルを参照するように指示します。
+          </para>
 @z
 
 @x
@@ -93,26 +93,26 @@
           <para>A file viewer or pager; it displays the contents of the given
           file, letting the user scroll, find strings, and jump to marks</para>
 @y
-<para>
-ファイルビューアーまたはページャー。
-指示されたファイルの内容を表示します。
-表示中にはスクロール、文字検索、移動が可能です。
-</para>
+          <para>
+          ファイルビューアーまたはページャー。
+          指示されたファイルの内容を表示します。
+          表示中にはスクロール、文字検索、移動が可能です。
+          </para>
 @z
 
 @x lessecho
           <para>Needed to expand meta-characters, such as <emphasis>*</emphasis>
           and <emphasis>?</emphasis>, in filenames on Unix systems</para>
 @y
-<para>
-Unix システム上のファイル名において <emphasis>*</emphasis> や <emphasis>?</emphasis> といったメタ文字 (meta-characters) を展開するために必要となります。
-</para>
+          <para>
+          Unix システム上のファイル名において <emphasis>*</emphasis> や <emphasis>?</emphasis> といったメタ文字 (meta-characters) を展開するために必要となります。
+          </para>
 @z
 
 @x lesskey
           <para>Used to specify the key bindings for <command>less</command></para>
 @y
-<para>
-<command>less</command> におけるキー割り当てを設定するために利用します。
-</para>
+          <para>
+          <command>less</command> におけるキー割り当てを設定するために利用します。
+          </para>
 @z

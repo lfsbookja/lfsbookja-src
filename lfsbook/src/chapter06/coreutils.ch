@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2012-01-09 10:04:53 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -62,14 +62,6 @@
       新たなバグを発見したら、Coreutils の開発者に報告する前に、このパッチを適用せずにバグが再現するかどうかを確認してください。
       </para>
 @z
-
-% @x
-%     <para>The following patch fixes a bug in the testsuite:</para>
-% @y
-%     <para>
-%     以下のパッチによりテストスイートのバグを修正します。
-%     </para>
-% @z
 
 @x
     <para>Now prepare Coreutils for compilation:</para>

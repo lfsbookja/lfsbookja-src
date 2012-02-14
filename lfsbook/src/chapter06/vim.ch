@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-10-10 09:49:49 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,9 +16,9 @@
 @x
     <para>The Vim package contains a powerful text editor.</para>
 @y
-<para>
-Vim パッケージは強力なテキストエディターを提供します。
-</para>
+    <para>
+    Vim パッケージは強力なテキストエディターを提供します。
+    </para>
 @z
 
 @x

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-10-13 11:45:02 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -45,16 +45,13 @@
     <command>make clean</command> command is required to clean up the source
     tree before recompiling for normal use):</para>
 @y
-<para>
-本パッケージのテストスイートは開発者の必要を満たす目的で構築されています。
-<command>make check</command>
-を実行すると、特別な形で modprobe プログラムがビルドされます。
-しかしこれは普通に用いるには無意味なものです。
-テストスイートを実行するなら (約 0.2 SBU)
-以下のコマンドを実行します。
-(<command>make clean</command>
-コマンドはソースツリーをきれいなものとするために必要で、次に再コンパイルして通常利用するプログラムをビルドします。)
-</para>
+    <para>
+    本パッケージのテストスイートは開発者の必要を満たす目的で構築されています。
+    <command>make check</command> を実行すると、特別な形で modprobe プログラムがビルドされます。
+    しかしこれは普通に用いるには無意味なものです。
+    テストスイートを実行するなら (約 0.2 SBU) 以下のコマンドを実行します。
+    (<command>make clean</command> コマンドはソースツリーをきれいなものとするために必要で、次に再コンパイルして通常利用するプログラムをビルドします。)
+    </para>
 @z
 
 @x
@@ -87,13 +84,11 @@
           calling <command>install</command> instead of using the default
           wrapper script.</para>
 @y
-<para>
-インストールする実行ファイル類が既に存在している場合、普通 <command>make install</command>
-を実行しただけではそれらをインストールしません。
-このオプションを指定することでその動作を変更します。
-つまりデフォルトのインストールラッパースクリプトを用いるのではなく
-<command>install</command> コマンドを用いるようにします。
-</para>
+          <para>
+          インストールする実行ファイル類が既に存在している場合、普通 <command>make install</command> を実行しただけではそれらをインストールしません。
+          このオプションを指定することでその動作を変更します。
+          つまりデフォルトのインストールラッパースクリプトを用いるのではなく <command>install</command> コマンドを用いるようにします。
+          </para>
 @z
 
 @x
@@ -126,12 +121,10 @@
           <command>modprobe</command> to automatically load the required
           modules</para>
 @y
-<para>
-存在しているモジュール内に含まれるシンボル名に基づいて、モジュールの依存関係を記述したファイル
-(dependency file) を生成します。
-これは <command>modprobe</command>
-が、必要なモジュールを自動的にロードするために利用します。
-</para>
+          <para>
+          存在しているモジュール内に含まれるシンボル名に基づいて、モジュールの依存関係を記述したファイル (dependency file) を生成します。
+          これは <command>modprobe</command> が、必要なモジュールを自動的にロードするために利用します。
+          </para>
 @z
 
 @x insmod
@@ -156,27 +149,25 @@
           <para>Examines an object file associated with a kernel module and
           displays any information that it can glean</para>
 @y
-<para>
-カーネルモジュールに関連付いたオブジェクトファイルを調べて、出来る限りの情報を表示します。
-</para>
+          <para>
+          カーネルモジュールに関連付いたオブジェクトファイルを調べて、出来る限りの情報を表示します。
+          </para>
 @z
 
 @x modprobe
           <para>Uses a dependency file, created by
           <command>depmod</command>, to automatically load relevant modules</para>
 @y
-<para>
-<command>depmod</command> によってモジュールの依存関係を記述したファイル (dependency file)
-が生成されます。
-これを使って関連するモジュールを自動的にロードします。
-</para>
+          <para>
+          <command>depmod</command> によってモジュールの依存関係を記述したファイル (dependency file) が生成されます。
+          これを使って関連するモジュールを自動的にロードします。
+          </para>
 @z
 
 @x rmmod
           <para>Unloads modules from the running kernel</para>
 @y
-<para>
-稼動中のカーネルからモジュールをアンロードします。
-</para>
+          <para>
+          稼動中のカーネルからモジュールをアンロードします。
+          </para>
 @z
-

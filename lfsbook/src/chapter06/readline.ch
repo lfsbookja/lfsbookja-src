@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-03-15 11:59:56 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -151,16 +151,16 @@
           <para>Provides a consistent user interface for recalling lines
           of history</para>
 @y
-<para>
-入力履歴を適切に再現するためのユーザーインターフェースを提供します。
-</para>
+          <para>
+          入力履歴を適切に再現するためのユーザーインターフェースを提供します。
+          </para>
 @z
 
 @x
           <para>Aids in the consistency of user interface across discrete
           programs that need to provide a command line interface</para>
 @y
-<para>
-コマンドラインインターフェースを提供している様々なコマンドにおいて、適切なインターフェースを提供します。
-</para>
+          <para>
+          コマンドラインインターフェースを提供している様々なコマンドにおいて、適切なインターフェースを提供します。
+          </para>
 @z

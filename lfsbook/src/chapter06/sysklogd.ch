@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                          $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -8,9 +17,9 @@
     <para>The Sysklogd package contains programs for logging system messages,
     such as those given by the kernel when unusual things happen.</para>
 @y
-<para>
-Sysklogd パッケージは、例えばカーネルが異常発生時に出力するログのような、システムログメッセージを取り扱うプログラムを提供します。
-</para>
+    <para>
+    Sysklogd パッケージは、例えばカーネルが異常発生時に出力するログのような、システムログメッセージを取り扱うプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -59,11 +68,9 @@ Sysklogd パッケージは、例えばカーネルが異常発生時に出力�
     <para>Create a new <filename>/etc/syslog.conf</filename> file by running the
     following:</para>
 @y
-<para>
-以下を実行して
-<filename>/etc/syslog.conf</filename>
-ファイルを生成します。
-</para>
+    <para>
+    以下を実行して <filename>/etc/syslog.conf</filename> ファイルを生成します。
+    </para>
 @z
 
 @x
@@ -93,9 +100,9 @@ Sysklogd パッケージは、例えばカーネルが異常発生時に出力�
 @x klogd
           <para>A system daemon for intercepting and logging kernel messages</para>
 @y
-<para>
-カーネルメッセージを受け取り出力するシステムデーモン。
-</para>
+          <para>
+          カーネルメッセージを受け取り出力するシステムデーモン。
+          </para>
 @z
 
 @x syslogd
@@ -104,11 +111,10 @@ Sysklogd パッケージは、例えばカーネルが異常発生時に出力�
           normally the program's name too, but that depends on how trusting the
           logging daemon is told to be</para>
 @y
-<para>
-システムプログラムが出力するログ情報を出力します。
-出力されるログ情報には少なくとも処理日付、ホスト名が出力されます。
-また通常はプログラム名も出力されます。
-ただこれはログ出力デーモンがどれだけ信頼のおけるものであるかに依存する情報です。
-</para>
+          <para>
+          システムプログラムが出力するログ情報を出力します。
+          出力されるログ情報には少なくとも処理日付、ホスト名が出力されます。
+          また通常はプログラム名も出力されます。
+          ただこれはログ出力デーモンがどれだけ信頼のおけるものであるかに依存する情報です。
+          </para>
 @z
-

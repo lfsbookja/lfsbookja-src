@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-09-08 17:23:15 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,17 +34,17 @@
 @x
     <para>Apply a patch that will install the documentation for this package:</para>
 @y
-<para>
-本パッケージのドキュメントをインストールするためにパッチを適用します。
-</para>
+    <para>
+    本パッケージのドキュメントをインストールするためにパッチを適用します。
+    </para>
 @z
 
 @x
    <para>The following command ensures installation of symbolic links are relative:</para>
 @y
-<para>
-以下のコマンドによりシンボリックリンクを相対的なものとしてインストールします。
-</para>
+    <para>
+    以下のコマンドによりシンボリックリンクを相対的なものとしてインストールします。
+    </para>
 @z
 
 @x

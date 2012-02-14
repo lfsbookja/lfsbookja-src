@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-04-17 17:49:06 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -41,9 +41,9 @@
           <para>This sets the directory where the HTML documentation will be
           installed to.</para>
 @y
-<para>
-HTML ドキュメントをインストールするディレクトリを指定します。
-</para>
+          <para>
+          HTML ドキュメントをインストールするディレクトリを指定します。
+          </para>
 @z
 
 @x
@@ -99,7 +99,7 @@ HTML ドキュメントをインストールするディレクトリを指定し
 @x
           <para>Filters and transforms text files in a single pass</para>
 @y
-<para>
-テキストファイルを一度の処理でフィルタリングし変換します。
-</para>
+          <para>
+          テキストファイルを一度の処理でフィルタリングし変換します。
+          </para>
 @z

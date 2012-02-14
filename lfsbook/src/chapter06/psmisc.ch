@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-05-29 17:19:09 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -73,10 +73,9 @@
     <para>Finally, move the <command>killall</command> and <command>fuser</command> 
     programs to the location specified by the FHS:</para>
 @y
-<para>
-<command>killall</command> プログラムと <command>fuser</command>
-プログラムを、FHS が規定しているディレクトリに移動します。
-</para>
+    <para>
+    <command>killall</command> プログラムと <command>fuser</command> プログラムを、FHS が規定しているディレクトリに移動します。
+    </para>
 @z
 
 @x

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-12-25 13:50:03 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -684,7 +684,7 @@ minor timing issues が何を意味するのか不明であった。
           <para>Prints various information about the current locale</para>
 @y
           <para>
-          現在のロケールに対する様々な情報を表示します。
+          現在のロケールに対するさまざまな情報を表示します。
           </para>
 @z
 
@@ -741,14 +741,6 @@ minor timing issues が何を意味するのか不明であった。
           リモートプロシジャーコール (Remote Procedure Call; RPC) を実装するための C 言語コードを生成します。
           </para>
 @z
-
-% @x rpcinfo
-%           <para>Makes an RPC call to an RPC server</para>
-% @y
-% <para>
-% RPC サーバーに対しての RPC コールを行います。
-% </para>
-% @z
 
 @x sln
           <para>A statically linked <command>ln</command> program</para>
@@ -986,7 +978,7 @@ minor timing issues が何を意味するのか不明であった。
           <para>Contains functions providing miscellaneous RPC services</para>
 @y
           <para>
-          様々な RPC サービスを実現する関数を提供します。
+          さまざまな RPC サービスを実現する関数を提供します。
           </para>
 @z
 

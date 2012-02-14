@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-03-15 11:59:56 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>

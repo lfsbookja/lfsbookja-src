@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-09-08 17:23:15 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,36 +31,36 @@
   techniques. This section briefly mentions issues that may arise when upgrading
   packages.</para>
 @y
-<para>
-パッケージ管理についての説明を LFS ブックに加えて欲しいとの要望をよく頂きます。
-パッケージ管理ツールがあれば、インストールされるファイル類を管理し、パッケージの削除やアップグレードを容易に実現できます。
-パッケージ管理ツールでは、バイナリファイルやライブラリファイルだけでなく、設定ファイル類のインストールも取り扱います。
-パッケージ管理ツールをどうしたら・・・
-いえいえ本節は特定のパッケージ管理ツールを説明するわけでなく、その利用を勧めるものでもありません。
-もっと広い意味で、管理手法にはどういったものがあり、どのように動作するかを説明します。
-あなたにとって最適なパッケージ管理がこの中にあるかもしれません。
-あるいはそれらをいくつか組み合わせて実施することになるかもしれません。
-本節ではパッケージのアップグレードを行う際に発生する問題についても触れます。
-</para>
+  <para>
+  パッケージ管理についての説明を LFS ブックに加えて欲しいとの要望をよく頂きます。
+  パッケージ管理ツールがあれば、インストールされるファイル類を管理し、パッケージの削除やアップグレードを容易に実現できます。
+  パッケージ管理ツールでは、バイナリファイルやライブラリファイルだけでなく、設定ファイル類のインストールも取り扱います。
+  パッケージ管理ツールをどうしたら・・・
+  いえいえ本節は特定のパッケージ管理ツールを説明するわけでなく、その利用を勧めるものでもありません。
+  もっと広い意味で、管理手法にはどういったものがあり、どのように動作するかを説明します。
+  あなたにとって最適なパッケージ管理がこの中にあるかもしれません。
+  あるいはそれらをいくつか組み合わせて実施することになるかもしれません。
+  本節ではパッケージのアップグレードを行う際に発生する問題についても触れます。
+  </para>
 @z
 
 @x
   <para>Some reasons why no package manager is mentioned in LFS or BLFS
   include:</para>
 @y
-<para>
-LFS や BLFS において、パッケージ管理ツールについて触れていない理由には以下のものがあります。
-</para>
+  <para>
+  LFS や BLFS において、パッケージ管理ツールについて触れていない理由には以下のものがあります。
+  </para>
 @z
 
 @x
       <para>Dealing with package management takes the focus away from the goals
       of these books&mdash;teaching how a Linux system is built.</para>
 @y
-<para>
-本書の目的は Linux システムがいかに構築されているかを学ぶことです。
-パッケージ管理はその目的からはずれてしまいます。
-</para>
+      <para>
+      本書の目的は Linux システムがいかに構築されているかを学ぶことです。
+      パッケージ管理はその目的からはずれてしまいます。
+      </para>
 @z
 
 @x
@@ -68,10 +68,10 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
       its strengths and drawbacks.  Including one that satisfies all audiences
       is difficult.</para>
 @y
-<para>
-パッケージ管理についてはいくつもの方法があり、それらには一長一短があります。
-ユーザーに対して満足のいくものを選び出すのは困難です。
-</para>
+      <para>
+      パッケージ管理についてはいくつもの方法があり、それらには一長一短があります。
+      ユーザーに対して満足のいくものを選び出すのは困難です。
+      </para>
 @z
 
 @x
@@ -79,11 +79,10 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
   the <ulink url="&hints-index;">Hints Project</ulink> and see if one of them
   fits your need.</para>
 @y
-<para>
-<ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink>
-ページに、パッケージ管理についての情報が示されています。
-それらが望むものかどうか確認してみてください。
-</para>
+  <para>
+  <ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink> ページに、パッケージ管理についての情報が示されています。
+  それらが望むものかどうか確認してみてください。
+  </para>
 @z
 
 @x
@@ -98,11 +97,11 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
     used to upgrade to the newer versions. Here are some points that you should
     be aware of when upgrading packages, especially on a running system.</para>
 @y
-<para>
-パッケージ管理ツールがあれば、各種ソフトウェアの最新版がリリースされた際に容易にアップグレードができます。
-全般に LFS ブックや BLFS ブックに示されている作業手順に従えば、新しいバージョンへのアップグレードを行っていくことはできます。
-以下ではパッケージをアップグレードする際に注意すべき点、特に稼動中のシステムに対して実施するポイントについて説明します。
-</para>
+    <para>
+    パッケージ管理ツールがあれば、各種ソフトウェアの最新版がリリースされた際に容易にアップグレードができます。
+    全般に LFS ブックや BLFS ブックに示されている作業手順に従えば、新しいバージョンへのアップグレードを行っていくことはできます。
+    以下ではパッケージをアップグレードする際に注意すべき点、特に稼動中のシステムに対して実施するポイントについて説明します。
+    </para>
 @z
 
 @x
@@ -115,14 +114,13 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
         works, but is not guaranteed. For example, upgrading from glibc-2.3.4
         to glibc-2.3.5 will not usually cause any problems.</para>
 @y
-<para>
-ツールチェーン (Glibc、GCC、Binutils)
-のいずれかについて、マイナーバージョンをアップグレードする必要がある場合は、LFS を再構築するのが無難です。
-この場合、すべてのパッケージの依存関係を考慮して順番に作り直せば実現できる<emphasis>はず </emphasis> ですが、これはあまりお勧めしません。
-例えば glibc-2.2.x を glibc-2.3.x にアップグレードする必要がある場合は、再構築するのが無難です。
-マイクロバージョンをアップグレードする場合は、もっと単純にそのパッケージをインストールし直すだけで動作すると思いますが、保証はありません。
-例えば glibc-2.3.4 を glibc-2.3.5 にアップグレードする場合、普通は何も問題ないでしょう。
-</para>
+        <para>
+        ツールチェーン (Glibc、GCC、Binutils) のいずれかについて、マイナーバージョンをアップグレードする必要がある場合は、LFS を再構築するのが無難です。
+        この場合、すべてのパッケージの依存関係を考慮して順番に作り直せば実現できる<emphasis>はず </emphasis> ですが、これはあまりお勧めしません。
+        例えば glibc-2.2.x を glibc-2.3.x にアップグレードする必要がある場合は、再構築するのが無難です。
+        マイクロバージョンをアップグレードする場合は、もっと単純にそのパッケージをインストールし直すだけで動作すると思いますが、保証はありません。
+        例えば glibc-2.3.4 を glibc-2.3.5 にアップグレードする場合、普通は何も問題ないでしょう。
+        </para>
 @z
 
 @x
@@ -142,17 +140,17 @@ LFS や BLFS において、パッケージ管理ツールについて触れて�
         should not remove the previous libraries until the dependent packages
         are recompiled.</para>
 @y
-<para>
-共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリの名前が変更になった場合は、そのライブラリを動的にリンクしているすべてのパッケージは、新しいライブラリにリンクされるように再コンパイルを行う必要があります。
-(パッケージのバージョンとライブラリ名との間には相関関係はありません。)
-例えば foo-1.2.3 というパッケージが共有ライブラリ <filename
-class='libraryfile'>libfoo.so.1</filename> をインストールするものであるとします。
-そして今、新しいバージョン foo-1.2.4 にアップグレードし、共有ライブラリ <filename
-class='libraryfile'>libfoo.so.2</filename> をインストールするとします。
-この例では <filename class='libraryfile'>libfoo.so.1</filename> を動的にリンクいるパッケージがあったとすると、それらはすべて <filename
-class='libraryfile'>libfoo.so.2</filename> に対してリンクするよう再コンパイルしなければなりません。
-古いライブラリに依存しているパッケージすべてを再コンパイルするまでは、そのライブラリを削除するべきではありません。
-</para>
+        <para>
+        共有ライブラリを提供しているパッケージをアップデートする場合で、そのライブラリの名前が変更になった場合は、そのライブラリを動的にリンクしているすべてのパッケージは、新しいライブラリにリンクされるように再コンパイルを行う必要があります。
+        (パッケージのバージョンとライブラリ名との間には相関関係はありません。)
+        例えば foo-1.2.3 というパッケージが共有ライブラリ <filename
+        class='libraryfile'>libfoo.so.1</filename> をインストールするものであるとします。
+        そして今、新しいバージョン foo-1.2.4 にアップグレードし、共有ライブラリ <filename
+        class='libraryfile'>libfoo.so.2</filename> をインストールするとします。
+        この例では <filename class='libraryfile'>libfoo.so.1</filename> を動的にリンクいるパッケージがあったとすると、それらはすべて <filename
+        class='libraryfile'>libfoo.so.2</filename> に対してリンクするよう再コンパイルしなければなりません。
+        古いライブラリに依存しているパッケージすべてを再コンパイルするまでは、そのライブラリを削除するべきではありません。
+        </para>
 @z
 
 @x
@@ -166,18 +164,18 @@ class='libraryfile'>libfoo.so.2</filename> に対してリンクするよう再�
     making a decision on a package manager, do some research on the various
     techniques, particularly the drawbacks of the particular scheme.</para>
 @y
-<para>
-以下に一般的なパッケージ管理手法について示します。
-パッケージ管理マネージャーを用いる前に、様々な方法を検討し、特にそれぞれの欠点も確認してください。
-</para>
+    <para>
+    以下に一般的なパッケージ管理手法について示します。
+    パッケージ管理マネージャーを用いる前に、様々な方法を検討し、特にそれぞれの欠点も確認してください。
+    </para>
 @z
 
 @x
       <title>It is All in My Head!</title>
 @y
-<title>
-すべては頭の中で
-</title>
+      <title>
+      すべては頭の中で
+      </title>
 @z
 
 @x
@@ -187,13 +185,13 @@ class='libraryfile'>libfoo.so.2</filename> に対してリンクするよう再�
       need any package management because they plan on rebuilding the entire
       system when a package is changed.</para>
 @y
-<para>
-そうです。
-これもパッケージ管理のやり方の一つです。
-いろいろなパッケージに精通していて、どんなファイルがインストールされるか分かっている人もいます。
-そんな人はパッケージ管理ツールを必要としません。
-あるいはパッケージが更新された際に、システム全体を再構築しようと考えている人なら、やはりパッケージ管理ツールを必要としません。
-</para>
+      <para>
+      そうです。
+      これもパッケージ管理のやり方の一つです。
+      いろいろなパッケージに精通していて、どんなファイルがインストールされるか分かっている人もいます。
+      そんな人はパッケージ管理ツールを必要としません。
+      あるいはパッケージが更新された際に、システム全体を再構築しようと考えている人なら、やはりパッケージ管理ツールを必要としません。
+      </para>
 @z
 
 @x
@@ -213,15 +211,15 @@ class='libraryfile'>libfoo.so.2</filename> に対してリンクするよう再�
       <filename class='directory'>/usr/pkg/foo-1.2</filename> and the previous
       symlink is replaced by a symlink to the new version.</para>
 @y
-<para>
-これは最も単純なパッケージ管理のやり方であり、パッケージ管理のためのツールを用いる必要はありません。
-個々のパッケージを個別のディレクトリにインストールする方法です。
-例えば foo-1.1 というパッケージを <filename
-class='directory'>/usr/pkg/foo-1.1</filename> ディレクトリにインストールし、この <filename
-class='directory'>/usr/pkg/foo-1.1</filename> に対するシンボリックリンク <filename>/usr/pkg/foo</filename> を作成します。
-このパッケージの新しいバージョン foo-1.2 をインストールする際には <filename
-class='directory'>/usr/pkg/foo-1.2</filename> ディレクトリにインストールした上で、先ほどのシンボリックリンクをこのディレクトリを指し示すように置き換えます。
-</para>
+      <para>
+      これは最も単純なパッケージ管理のやり方であり、パッケージ管理のためのツールを用いる必要はありません。
+      個々のパッケージを個別のディレクトリにインストールする方法です。
+      例えば foo-1.1 というパッケージを <filename
+      class='directory'>/usr/pkg/foo-1.1</filename> ディレクトリにインストールし、この <filename
+      class='directory'>/usr/pkg/foo-1.1</filename> に対するシンボリックリンク <filename>/usr/pkg/foo</filename> を作成します。
+      このパッケージの新しいバージョン foo-1.2 をインストールする際には <filename
+      class='directory'>/usr/pkg/foo-1.2</filename> ディレクトリにインストールした上で、先ほどのシンボリックリンクをこのディレクトリを指し示すように置き換えます。
+      </para>
 @z
 
 @x
@@ -231,17 +229,10 @@ class='directory'>/usr/pkg/foo-1.2</filename> ディレクトリにインスト�
       include <filename>/usr/pkg/foo</filename>. For more than a few packages,
       this scheme becomes unmanageable.</para>
 @y
-<para>
-<envar>PATH</envar>、
-<envar>LD_LIBRARY_PATH</envar>、
-<envar>MANPATH</envar>、
-<envar>INFOPATH</envar>、
-<envar>CPPFLAGS</envar>
-といった環境変数に対しては
-<filename>/usr/pkg/foo</filename>
-ディレクトリを加える必要があるかもしれません。
-もっともパッケージによっては、このやり方では管理できないものもあります。
-</para>
+      <para>
+      <envar>PATH</envar>、<envar>LD_LIBRARY_PATH</envar>、<envar>MANPATH</envar>、<envar>INFOPATH</envar>、<envar>CPPFLAGS</envar> といった環境変数に対しては <filename>/usr/pkg/foo</filename> ディレクトリを加える必要があるかもしれません。
+      もっともパッケージによっては、このやり方では管理できないものもあります。
+      </para>
 @z
 
 @x
@@ -260,15 +251,15 @@ class='directory'>/usr/pkg/foo-1.2</filename> ディレクトリにインスト�
       been written using this approach. A few of the popular ones include Stow,
       Epkg, Graft, and Depot.</para>
 @y
-<para>
-これは一つ前に示したパッケージ管理テクニックの応用です。
-各パッケージは同様にインストールします。
-ただし先ほどのようなシンボリックリンクを生成するのではなく <filename
-class='directory'>/usr</filename> ディレクトリ階層の中に各ファイルのシンボリックリンクを生成します。
-この方法であれば環境変数を追加設定する必要がなくなります。
-シンボリックリンクを自動生成することもできますが、パッケージ管理ツールの中にはこの手法を使って構築されているものもあります。
-よく知られているものとして Stow、Epkg、Graft、Depot があります。
-</para>
+      <para>
+      これは一つ前に示したパッケージ管理テクニックの応用です。
+      各パッケージは同様にインストールします。
+      ただし先ほどのようなシンボリックリンクを生成するのではなく <filename
+      class='directory'>/usr</filename> ディレクトリ階層の中に各ファイルのシンボリックリンクを生成します。
+      この方法であれば環境変数を追加設定する必要がなくなります。
+      シンボリックリンクを自動生成することもできますが、パッケージ管理ツールの中にはこの手法を使って構築されているものもあります。
+      よく知られているものとして Stow、Epkg、Graft、Depot があります。
+      </para>
 @z
 
 @x
@@ -280,14 +271,14 @@ class='directory'>/usr</filename> ディレクトリ階層の中に各ファイ�
       are installing a package libfoo-1.1. The following instructions may
       not install the package properly:</para>
 @y
-<para>
-インストール時には意図的な指示が必要です。
-パッケージにとっては <filename class="directory">/usr</filename> にインストールすることが指定されたものとなりますが、実際には <filename
-class="directory">/usr/pkg</filename> 配下にインストールされるわけです。
-このインストール方法は単純なものではありません。
-例えば今 libfoo-1.1 というパッケージをインストールするものとします。
-以下のようなコマンドでは、このパッケージを正しくインストールできません。
-</para>
+      <para>
+      インストール時には意図的な指示が必要です。
+      パッケージにとっては <filename class="directory">/usr</filename> にインストールすることが指定されたものとなりますが、実際には <filename
+      class="directory">/usr/pkg</filename> 配下にインストールされるわけです。
+      このインストール方法は単純なものではありません。
+      例えば今 libfoo-1.1 というパッケージをインストールするものとします。
+      以下のようなコマンドでは、このパッケージを正しくインストールできません。
+      </para>
 @z
 
 @x
@@ -300,14 +291,14 @@ class="directory">/usr/pkg</filename> 配下にインストールされるわけ
       <envar>DESTDIR</envar> strategy to fake installation of the package. This
       approach works as follows:</para>
 @y
-<para>
-インストール自体は動作しますが、このパッケージに依存している他のパッケージは、期待どおりには libfoo を正しくリンクしません。
-例えば libfoo をリンクするパッケージをコンパイルする際には <filename
-class='libraryfile'>/usr/lib/libfoo.so.1</filename> がリンクされると思うかもしれませんが、実際には <filename
-class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンクされることになります。
-正しくリンクするためには <envar>DESTDIR</envar> 変数を使って、パッケージのインストールをうまく仕組む必要があります。
-この方法は以下のようにして行います。
-</para>
+      <para>
+      インストール自体は動作しますが、このパッケージに依存している他のパッケージは、期待どおりには libfoo を正しくリンクしません。
+      例えば libfoo をリンクするパッケージをコンパイルする際には <filename
+      class='libraryfile'>/usr/lib/libfoo.so.1</filename> がリンクされると思うかもしれませんが、実際には <filename
+      class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンクされることになります。
+      正しくリンクするためには <envar>DESTDIR</envar> 変数を使って、パッケージのインストールをうまく仕組む必要があります。
+      この方法は以下のようにして行います。
+      </para>
 @z
 
 @x
@@ -316,11 +307,11 @@ class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンク�
       package, or you may find that it is easier to install some problematic
       packages into <filename class='directory'>/opt</filename>.</para>
 @y
-<para>
-多くのパッケージは、たいていはこの手法をサポートしていますが、そうでないものもあります。
-この手法を取り入れていないパッケージに対しては、手作業にてインストールすることが必要になります。
-またはそういった問題を抱えるパッケージであれば <filename class='directory'>/opt</filename> ディレクトリにインストールする方が容易なことかもしれません。
-</para>
+      <para>
+      多くのパッケージは、たいていはこの手法をサポートしていますが、そうでないものもあります。
+      この手法を取り入れていないパッケージに対しては、手作業にてインストールすることが必要になります。
+      またはそういった問題を抱えるパッケージであれば <filename class='directory'>/opt</filename> ディレクトリにインストールする方が容易なことかもしれません。
+      </para>
 @z
 
 @x
@@ -336,12 +327,12 @@ class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンク�
       a log of all the files installed after the timestamp file was created. A
       package manager written with this approach is install-log.</para>
 @y
-<para>
-この方法ではパッケージをインストールするにあたって、あるファイルにタイムスタンプが記されます。
-インストールの直後に <command>find</command> コマンドを適当なオプション指定により用いることで、インストールされるすべてのファイルのログが生成されます。
-これはタイムスタンプファイルの生成の後に行われます。
-この方法を用いたパッケージ管理ツールとして install-log があります。
-</para>
+      <para>
+      この方法ではパッケージをインストールするにあたって、あるファイルにタイムスタンプが記されます。
+      インストールの直後に <command>find</command> コマンドを適当なオプション指定により用いることで、インストールされるすべてのファイルのログが生成されます。
+      これはタイムスタンプファイルの生成の後に行われます。
+      この方法を用いたパッケージ管理ツールとして install-log があります。
+      </para>
 @z
 
 @x
@@ -352,30 +343,30 @@ class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンク�
       is installed at a time. The logs are not reliable if two packages are
       being installed on two different consoles.</para>
 @y
-<para>
-この方法はシンプルである利点がありますが、以下の二つの欠点があります。
-インストールの際に、いずれかのファイルのタイムスタンプが現在時刻でなかった場合、そういったファイルはパッケージ管理ツールが正しく制御できません。
-またこの方法は一つのパッケージだけが、その時にインストールされることを前提とします。
-例えば二つのパッケージが二つの異なる端末から同時にインストールされるような場合は、ログファイルが適切に生成されません。
-</para>
+      <para>
+      この方法はシンプルである利点がありますが、以下の二つの欠点があります。
+      インストールの際に、いずれかのファイルのタイムスタンプが現在時刻でなかった場合、そういったファイルはパッケージ管理ツールが正しく制御できません。
+      またこの方法は一つのパッケージだけが、その時にインストールされることを前提とします。
+      例えば二つのパッケージが二つの異なる端末から同時にインストールされるような場合は、ログファイルが適切に生成されません。
+      </para>
 @z
 
 @x
       <title>Tracing Installation Scripts</title>
 @y
-<title>
-インストールスクリプトの追跡管理
-</title>
+      <title>
+      インストールスクリプトの追跡管理
+      </title>
 @z
 
 @x
       <para>In this approach, the commands that the installation scripts perform
       are recorded.  There are two techniques that one can use:</para>
 @y
-<para>
-この方法はインストールスクリプトが実行するコマンドを記録するものです。
-これには以下の二種類の手法があります。
-</para>
+      <para>
+      この方法はインストールスクリプトが実行するコマンドを記録するものです。
+      これには以下の二種類の手法があります。
+      </para>
 @z
 
 @x
@@ -391,18 +382,13 @@ class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンク�
       ensure that the package manager does not break anything and logs all the
       appropriate files.</para>
 @y
-<para>
-環境変数 <envar>LD_PRELOAD</envar>
-を使えば、インストール前にあらかじめロードされるライブラリを定めることができます。
-パッケージのインストール中には
-<command>cp</command>、
-<command>install</command>、
-<command>mv</command>
-など様々な実行モジュールにそのライブラリをリンクさせ、ファイルシステムを変更するようなシステムコールを監視することで、そのライブラリがパッケージを追跡管理できるようになります。
-この方法を実現するためには、動的リンクする実行モジュールはすべて suid ビット、sgid ビットがオフでなければなりません。
-事前にライブラリをロードしておくと、インストール中に予期しない副作用が発生するかもしれません。
-したがって、ある程度のテスト確認を行って、パッケージ管理ツールが不具合を引き起こさないこと、しかるべきファイルの記録を取っておくことが必要とされます。
-</para>
+      <para>
+      環境変数 <envar>LD_PRELOAD</envar> を使えば、インストール前にあらかじめロードされるライブラリを定めることができます。
+      パッケージのインストール中には <command>cp</command>、<command>install</command>、<command>mv</command> など、さまざまな実行モジュールにそのライブラリをリンクさせ、ファイルシステムを変更するようなシステムコールを監視することで、そのライブラリがパッケージを追跡管理できるようになります。
+      この方法を実現するためには、動的リンクする実行モジュールはすべて suid ビット、sgid ビットがオフでなければなりません。
+      事前にライブラリをロードしておくと、インストール中に予期しない副作用が発生するかもしれません。
+      したがって、ある程度のテスト確認を行って、パッケージ管理ツールが不具合を引き起こさないこと、しかるべきファイルの記録を取っておくことが必要とされます。
+      </para>
 @z
 
 @x
@@ -410,18 +396,18 @@ class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンク�
       logs all system calls made during the execution of the installation
       scripts.</para>
 @y
-<para>
-二つめの方法は <command>strace</command> を用いるものです。
-これはインストールスクリプトの実行中に発生するシステムコールを記録するものです。
-</para>
+      <para>
+      二つめの方法は <command>strace</command> を用いるものです。
+      これはインストールスクリプトの実行中に発生するシステムコールを記録するものです。
+      </para>
 @z
 
 @x
       <title>Creating Package Archives</title>
 @y
-<title>
-パッケージのアーカイブを生成する方法
-</title>
+      <title>
+      パッケージのアーカイブを生成する方法
+      </title>
 @z
 
 @x
@@ -431,19 +417,19 @@ class='libraryfile'>/usr/pkg/libfoo/1.1/lib/libfoo.so.1</filename> がリンク�
       This archive is then used to install the package either on the local
       machine or can even be used to install the package on other machines.</para>
 @y
-<!--
-日本語訳註： 2009-09-01 matsuand
-faked が難しい。
-同一ディレクトリに「あたかも」インストールされるようでいて、
-実は別々のディレクトリにインストールされる。
-faked と into a separete だけから、どう日本語表現するか・・・
-faked の明らかな訳出は諦めた。
--->
-<para>
-この方法では、シンボリックリンク方式によるパッケージ管理にて説明したのと同じように、パッケージが個別のディレクトリにインストールされます。
-インストールされた後には、インストールファイルを使ってアーカイブが生成されます。
-このアーカイブはこの後に、ローカルPCへのインストールに用いられ、他のPCのインストールに利用することもできます。
-</para>
+      <!--
+      日本語訳註： 2009-09-01 matsuand
+      faked が難しい。
+      同一ディレクトリに「あたかも」インストールされるようでいて、
+      実は別々のディレクトリにインストールされる。
+      faked と into a separete だけから、どう日本語表現するか・・・
+      faked の明らかな訳出は諦めた。
+      -->
+      <para>
+      この方法では、シンボリックリンク方式によるパッケージ管理にて説明したのと同じように、パッケージが個別のディレクトリにインストールされます。
+      インストールされた後には、インストールファイルを使ってアーカイブが生成されます。
+      このアーカイブはこの後に、ローカルPCへのインストールに用いられ、他のPCのインストールに利用することもできます。
+      </para>
 @z
 
 @x
@@ -456,23 +442,22 @@ faked の明らかな訳出は諦めた。
       package management for LFS systems is located at <ulink
       url="&hints-root;fakeroot.txt"/>.</para>
 @y
-<para>
-商用ディストリビューションが採用しているパッケージ管理ツールは、ほとんどがこの方法によるものです。
-この方法に従ったパッケージ管理ツールの例に RPM があります。
-(これは <ulink url="http://www.linux-foundation.org/en/Specifications">Linux Standard Base Specification</ulink>
-が規定しています。)
-また pkg-utils、Debian の apt、Gentoo の Portage システムがあります。
-このパッケージ管理手法を LFS システムに適用するヒント情報が <ulink url="&hints-root;fakeroot.txt"/> にあります。
-</para>
+      <para>
+      商用ディストリビューションが採用しているパッケージ管理ツールは、ほとんどがこの方法によるものです。
+      この方法に従ったパッケージ管理ツールの例に RPM があります。
+      (これは <ulink url="http://www.linux-foundation.org/en/Specifications">Linux Standard Base Specification</ulink> が規定しています。)
+      また pkg-utils、Debian の apt、Gentoo の Portage システムがあります。
+      このパッケージ管理手法を LFS システムに適用するヒント情報が <ulink url="&hints-root;fakeroot.txt"/> にあります。
+      </para>
 @z
 
 @x
       <para>Creation of package files that include dependency information is
       complex and is beyond the scope of LFS.</para>
 @y
-<para>
-パッケージファイルにその依存パッケージ情報まで含めてアーカイブ生成することは、非常に複雑となり LFS の範疇を超えるものです。
-</para>
+      <para>
+      パッケージファイルにその依存パッケージ情報まで含めてアーカイブ生成することは、非常に複雑となり LFS の範疇を超えるものです。
+      </para>
 @z
 
 @x
@@ -482,20 +467,19 @@ faked の明らかな訳出は諦めた。
       management, see <ulink
       url="http://www.slackbook.org/html/package-management.html"/>.</para>
 @y
-<para>
-Slackware は、パッケージアーカイブに対して
-<command>tar</command> ベースのシステムを利用しています。
-他のパッケージ管理ツールはパッケージの依存性を取り扱いますが、このシステムは意図的にこれを行っていません。
-Slackware のパッケージ管理に関する詳細は <ulink url="http://www.slackbook.org/html/package-management.html"/> を参照してください。
-</para>
+      <para>
+      Slackware は、パッケージアーカイブに対して <command>tar</command> ベースのシステムを利用しています。
+      他のパッケージ管理ツールはパッケージの依存性を取り扱いますが、このシステムは意図的にこれを行っていません。
+      Slackware のパッケージ管理に関する詳細は <ulink url="http://www.slackbook.org/html/package-management.html"/> を参照してください。
+      </para>
 @z
 
 @x
       <title>User Based Management</title>
 @y
-<title>
-ユーザー情報をベースとする管理方法
-</title>
+      <title>
+      ユーザー情報をベースとする管理方法
+      </title>
 @z
 
 @x
@@ -507,22 +491,22 @@ Slackware のパッケージ管理に関する詳細は <ulink url="http://www.s
       too complex to describe in this section. For the details please see the
       hint at <ulink url="&hints-root;more_control_and_pkg_man.txt"/>.</para>
 @y
-<para>
-この手法は LFS に固有のものであり Matthias Benkmann により考案されました。
-<ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink> から入手することが出来ます。
-考え方としては、各パッケージを個々のユーザーが共有ディレクトリにインストールします。
-パッケージに属するファイル類は、ユーザーIDを確認することで容易に特定出来るようになります。
-この手法の特徴や短所については、複雑な話となるため本節では説明しません。
-詳しくは <ulink url="&hints-root;more_control_and_pkg_man.txt"/> に示されているヒントを参照してください。
-</para>
+      <para>
+      この手法は LFS に固有のものであり Matthias Benkmann により考案されました。
+      <ulink url="&hints-index;">ヒントプロジェクト (Hints Project)</ulink> から入手することが出来ます。
+      考え方としては、各パッケージを個々のユーザーが共有ディレクトリにインストールします。
+      パッケージに属するファイル類は、ユーザーIDを確認することで容易に特定出来るようになります。
+      この手法の特徴や短所については、複雑な話となるため本節では説明しません。
+      詳しくは <ulink url="&hints-root;more_control_and_pkg_man.txt"/> に示されているヒントを参照してください。
+      </para>
 @z
 
 @x
     <title>Deploying LFS on Multiple Systems</title>
 @y
-<title>
-他システムへの LFS の配置
-</title>
+      <title>
+      他システムへの LFS の配置
+      </title>
 @z
 
 @x
@@ -545,22 +529,22 @@ Slackware のパッケージ管理に関する詳細は <ulink url="http://www.s
     <filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>.
     </para>
 @y
-<para>
-LFS システムの利点の一つとして、どのファイルもディスク上のどこに位置していても構わないことです。
-他のコンピュータに対してビルドした LFS の複製を作ろうとするなら、それが同等のアーキテクチャであれば容易に実現できます。
-つまり <command>tar</command> コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度) をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
-この場合でも、設定ファイルはいくらか変更することが必要です。
-変更が必要となる設定ファイルは以下のとおりです。
-<filename>/etc/hosts</filename>、
-<filename>/etc/fstab</filename>、
-<filename>/etc/passwd</filename>、
-<filename>/etc/group</filename>、
-<filename>/etc/shadow</filename>、
-<filename>/etc/ld.so.conf</filename>、
-<filename>/etc/scsi_id.config</filename>、
-<filename>/etc/sysconfig/network</filename>、
-<filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>
-</para>
+      <para>
+      LFS システムの利点の一つとして、どのファイルもディスク上のどこに位置していても構わないことです。
+      他のコンピューターに対してビルドした LFS の複製を作ろうとするなら、それが同等のアーキテクチャーであれば容易に実現できます。
+      つまり <command>tar</command> コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度) をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
+      この場合でも、設定ファイルはいくらか変更することが必要です。
+      変更が必要となる設定ファイルは以下のとおりです。
+      <filename>/etc/hosts</filename>、
+      <filename>/etc/fstab</filename>、
+      <filename>/etc/passwd</filename>、
+      <filename>/etc/group</filename>、
+      <filename>/etc/shadow</filename>、
+      <filename>/etc/ld.so.conf</filename>、
+      <filename>/etc/scsi_id.config</filename>、
+      <filename>/etc/sysconfig/network</filename>、
+      <filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>
+      </para>
 @z
 
 @x
@@ -568,16 +552,16 @@ LFS システムの利点の一つとして、どのファイルもディスク�
     differences in system hardware and the original kernel
     configuration.</para>
 @y
-<para>
-新しいシステムのハードウェアと元のカーネルに差異があるかもしれないため、カーネルを再ビルドする必要があるでしょう。
-</para>
+      <para>
+      新しいシステムのハードウェアと元のカーネルに差異があるかもしれないため、カーネルを再ビルドする必要があるでしょう。
+      </para>
 @z
 
 @x
     <para>Finally the new system has to be made bootable via <xref
     linkend="ch-bootable-grub"/>.</para>
 @y
-<para>
-最後に新システムを起動可能とするために <xref linkend="ch-bootable-grub"/> を設定する必要があります。
-</para>
+      <para>
+      最後に新システムを起動可能とするために <xref linkend="ch-bootable-grub"/> を設定する必要があります。
+      </para>
 @z

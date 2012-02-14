@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                                                $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,9 +23,9 @@
   <para>From now on, when reentering the chroot environment after
   exiting, use the following modified chroot command:</para>
 @y
-<para>
-それまで入っていた chroot 環境からいったん抜け出て、以下の chroot コマンドにより入り直します。
-</para>
+  <para>
+  それまで入っていた chroot 環境からいったん抜け出て、以下の chroot コマンドにより入り直します。
+  </para>
 @z
 
 @x
@@ -34,10 +34,10 @@
   longer needed you can delete the <filename class="directory">/tools</filename>
   directory if so desired.</para>
 @y
-<para>
-上を実行するのは <filename class="directory">/tools</filename> ディレクトリがもう必要ないからです。
-ですから <filename class="directory">/tools</filename> ディレクトリが一切無くてよいなら削除しても構いません。
-</para>
+  <para>
+  上を実行するのは <filename class="directory">/tools</filename> ディレクトリがもう必要ないからです。
+  ですから <filename class="directory">/tools</filename> ディレクトリが一切無くてよいなら削除しても構いません。
+  </para>
 @z
 
 @x
@@ -47,11 +47,11 @@
     they will need to be recompiled and re-installed. The BLFS book has
     instructions for this (see <ulink url="&blfs-root;"/>).</para>
 @y
-<para>
-<filename class="directory">/tools</filename> ディレクトリを削除すると、ツールチェーンのテストに用いていた Tcl、Expect、DejaGNU も削除することになります。
-後々これらのプログラムを用いるなら、再度コンパイルとインストールを行う必要があります。
-BLFS ブックにてその手順を説明しているので <ulink url="&blfs-root;"/> を参照してください。
-</para>
+    <para>
+    <filename class="directory">/tools</filename> ディレクトリを削除すると、ツールチェーンのテストに用いていた Tcl、Expect、DejaGNU も削除することになります。
+    後々これらのプログラムを用いるなら、再度コンパイルとインストールを行う必要があります。
+    BLFS ブックにてその手順を説明しているので <ulink url="&blfs-root;"/> を参照してください。
+    </para>
 @z
 
 @x
@@ -61,8 +61,8 @@ BLFS ブックにてその手順を説明しているので <ulink url="&blfs-ro
   linkend="ch-system-bindmount"/> and <xref
   linkend="ch-system-kernfsmount"/>.</para>
 @y
-<para>
-仮想カーネルファイルシステムを、手動により、あるいはリブートによりアンマウントした場合は chroot 環境に入る前にそれらがマウントされていることを確認してください。
-その作業手順は <xref linkend="ch-system-bindmount"/>と <xref linkend="ch-system-kernfsmount"/>で説明しています。
-</para>
+  <para>
+  仮想カーネルファイルシステムを、手動により、あるいはリブートによりアンマウントした場合は chroot 環境に入る前にそれらがマウントされていることを確認してください。
+  その作業手順は<xref linkend="ch-system-bindmount"/>と<xref linkend="ch-system-kernfsmount"/>で説明しています。
+  </para>
 @z

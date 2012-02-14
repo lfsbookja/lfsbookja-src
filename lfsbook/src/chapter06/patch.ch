@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-04-17 17:49:06 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -18,10 +18,10 @@
     by applying a <quote>patch</quote> file typically created by the
     <command>diff</command> program.</para>
 @y
-<para>
-Patch パッケージは<quote>パッチ</quote>ファイルを適用することにより、ファイルの修正、生成を行うプログラムを提供します。
-<quote>パッチ</quote>ファイルは <command>diff</command> プログラムにより生成されます。
-</para>
+    <para>
+    Patch パッケージは<quote>パッチ</quote>ファイルを適用することにより、ファイルの修正、生成を行うプログラムを提供します。
+    <quote>パッチ</quote>ファイルは <command>diff</command> プログラムにより生成されます。
+    </para>
 @z
 
 @x
@@ -34,9 +34,9 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
     <para>Apply a patch to prevent the test suite from running a test that
     requires <command>ed</command>:</para>
 @y
-<para>
-<command>ed</command> プログラムを必要とするテストスイートの実行を行わないよう、パッチを適用します。
-</para>
+    <para>
+    <command>ed</command> プログラムを必要とするテストスイートの実行を行わないよう、パッチを適用します。
+    </para>
 @z
 
 @x
@@ -54,9 +54,9 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
 @x
     <para>To test the results, issue:</para>
 @y
-<para>
-コンパイル結果をテストするには以下を実行します。
-</para>
+    <para>
+    コンパイル結果をテストするには以下を実行します。
+    </para>
 @z
 
 @x
@@ -89,11 +89,9 @@ Patch パッケージは<quote>パッチ</quote>ファイルを適用するこ�
           program. By applying these differences to the original files,
           <command>patch</command> creates the patched versions.</para>
 @y
-<para>
-パッチファイルに従って対象ファイルを修正します。
-パッチファイルは通常 <command>diff</command>
-コマンドによって修正前後の違いが列記されているものです。
-そのような違いを対象ファイルに適用することで
-<command>patch</command> はパッチを適用したファイルを生成します。
-</para>
+          <para>
+          パッチファイルに従って対象ファイルを修正します。
+          パッチファイルは通常 <command>diff</command> コマンドによって修正前後の違いが列記されているものです。
+          そのような違いを対象ファイルに適用することで <command>patch</command> はパッチを適用したファイルを生成します。
+          </para>
 @z

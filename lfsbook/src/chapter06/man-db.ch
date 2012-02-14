@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-10-10 09:49:49 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -94,16 +94,6 @@
 @y
    <para>コンパイル結果をテストするには、以下を実行します。</para>
 @z
-
-% @x
-%     <para>Note that 2 tests are known to fail as they rely on warnings output
-%     from Groff, which changed slightly in Groff-1.21.</para>
-% @y
-%     <para>
-%     テストのうち二つは失敗します。
-%     これは Groff の警告メッセージに依存しているからであり、Groff-1.21 にて微妙に変更になったものです。
-%     </para>
-% @z
 
 @x
     <para>Install the package:</para>

@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                          $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -8,9 +17,9 @@
     <para>The File package contains a utility for determining the type of a given
     file or files.</para>
 @y
-<para>
-File パッケージは、指定されたファイルの種類を決定するユーティリティを提供します。
-</para>
+    <para>
+    File パッケージは、指定されたファイルの種類を決定するユーティリティを提供します。
+    </para>
 @z
 
 @x
@@ -68,19 +77,18 @@ File パッケージは、指定されたファイルの種類を決定するユ
           several tests&mdash;file system tests, magic number tests, and language
           tests</para>
 @y
-<para>
-指定されたファイルの種類判別を行います。
-処理にあたってはいくつかのテスト、すなわちファイルシステムテスト、マジックナンバーテスト、言語テストを行います。
-</para>
+          <para>
+          指定されたファイルの種類判別を行います。
+          処理にあたってはいくつかのテスト、すなわちファイルシステムテスト、マジックナンバーテスト、言語テストを行います。
+          </para>
 @z
 
 @x
           <para>Contains routines for magic number recognition, used by the
           <command>file</command> program</para>
 @y
-<para>
-マジックナンバーによりファイル判別を行うルーチンを含みます。
-<command>file</command> プログラムがこれを利用しています。
-</para>
+          <para>
+          マジックナンバーによりファイル判別を行うルーチンを含みます。
+          <command>file</command> プログラムがこれを利用しています。
+          </para>
 @z
-

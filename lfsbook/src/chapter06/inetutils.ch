@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-02-19 10:37:42 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,9 +16,9 @@
 @x
     <para>The Inetutils package contains programs for basic networking.</para>
 @y
-<para>
-Inetutils パッケージはネットワーク制御を行う基本的なプログラムを提供します。
-</para>
+    <para>
+    Inetutils パッケージはネットワーク制御を行う基本的なプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -26,12 +26,6 @@ Inetutils パッケージはネットワーク制御を行う基本的なプロ�
 @y
     <title>Inetutils のインストール</title>
 @z
-
-% @x
-% <para>Prepare Inetutils for compilation:</para>
-% @y
-% <para>Inetutils をコンパイルするための準備をします。</para>
-% @z
 
 @x
       <title>The meaning of the configure options:</title>
@@ -45,13 +39,11 @@ Inetutils パッケージはネットワーク制御を行う基本的なプロ�
           interfaces. LFS uses <command>ip</command> from IPRoute2 to perform
           this task.</para>
 @y
-<para>
-このオプションは <command>ifconfig</command>
-プログラムをインストールしないようにします。
-このプログラムはネットワークインターフェースを設定するために利用するものです。
-LFS では IPRoute2 パッケージが提供する <command>ip</command>
-コマンドを使うことにしています。
-</para>
+          <para>
+          このオプションは <command>ifconfig</command> プログラムをインストールしないようにします。
+          このプログラムはネットワークインターフェースを設定するために利用するものです。
+          LFS では IPRoute2 パッケージが提供する <command>ip</command> コマンドを使うことにしています。
+          </para>
 @z
 
 @x
@@ -60,22 +52,21 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
           pass messages to the System Log Daemon. Do not install it because
           Util-linux installed a version earlier.</para>
 @y
-<para>
-このオプションは <command>logger</command>
-プログラムをインストールしないようにします。
-このプログラムはシステムログデーモンに対してメッセージ出力を行うスクリプトにて利用されます。
-ここでこれをインストールしないのは、後に Util-linux パッケージにおいて、以前のバージョンをインストールするためです。
-</para>
+          <para>
+          このオプションは <command>logger</command> プログラムをインストールしないようにします。
+          このプログラムはシステムログデーモンに対してメッセージ出力を行うスクリプトにて利用されます。
+          ここでこれをインストールしないのは、後に Util-linux パッケージにおいて、以前のバージョンをインストールするためです。
+          </para>
 @z
 
 @x
           <para>This option prevents Inetutils from installing the System Log
           Daemon, which is installed with the Sysklogd package.</para>
 @y
-<para>
-このオプションは Inetutils がシステムログデーモンをインストールしないようにします。
-これらは Sysklogd パッケージにおいてインストールします。
-</para>
+          <para>
+          このオプションは Inetutils がシステムログデーモンをインストールしないようにします。
+          これらは Sysklogd パッケージにおいてインストールします。
+          </para>
 @z
 
 @x
@@ -83,12 +74,11 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
           <command>whois</command> client, which is out of date. Instructions for
           a better <command>whois</command> client are in the BLFS book.</para>
 @y
-<para>
-このオプションは <command>whois</command> のクライアントプログラムをインストールしないようにします。
-このプログラムはもはや古いものです。
-より良い <command>whois</command>
-プログラムのインストール手順については BLFS ブックにて説明しています。
-</para>
+          <para>
+          このオプションは <command>whois</command> のクライアントプログラムをインストールしないようにします。
+          このプログラムはもはや古いものです。
+          より良い <command>whois</command> プログラムのインストール手順については BLFS ブックにて説明しています。
+          </para>
 @z
 
 @x
@@ -99,16 +89,13 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
           at <ulink url="&blfs-root;view/svn/basicnet/inetutils.html"/>. Note that
           better replacements are available for many of these servers.</para>
 @y
-<para>
-このオプションは Inetutils
-パッケージに含まれる様々なネットワークサーバーをインストールしないようにします。
-これらのサーバーは基本的な LFS システムには不要なものと考えられます。
-サーバーの中には本質的にセキュアでないものがあり、信頼のあるネットワーク内でのみしか安全に扱うことができないものもあります。
-より詳細な情報は
-<ulink url="&blfs-root;view/svn/basicnet/inetutils.html"/>
-を参照してください。
-サーバーの多くは、これに代わる他の適切なものが存在します。
-</para>
+          <para>
+          このオプションは Inetutils パッケージに含まれる様々なネットワークサーバーをインストールしないようにします。
+          これらのサーバーは基本的な LFS システムには不要なものと考えられます。
+          サーバーの中には本質的にセキュアでないものがあり、信頼のあるネットワーク内でのみしか安全に扱うことができないものもあります。
+          より詳細な情報は <ulink url="&blfs-root;view/svn/basicnet/inetutils.html"/> を参照してください。
+          サーバーの多くは、これに代わる他の適切なものが存在します。
+          </para>
 @z
 
 @x
@@ -132,9 +119,9 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
 @x
     <para>Move some programs to their FHS-compliant place:</para>
 @y
-<para>
-プログラムのいくつかを FHS コンプライアントが定めるディレクトリに移動させます。
-</para>
+    <para>
+    プログラムのいくつかを FHS コンプライアントが定めるディレクトリに移動させます。
+    </para>
 @z
 
 @x
@@ -166,93 +153,90 @@ LFS では IPRoute2 パッケージが提供する <command>ip</command>
 @x ftp
         <para>Is the file transfer protocol program</para>
 @y
-<para>
-ファイル転送プロトコル
-(file transfer protocol)
-に基づくプログラム。
-</para>
+        <para>
+        ファイル転送プロトコル (file transfer protocol) に基づくプログラム。
+        </para>
 @z
 
 @x hostname
           <para>Reports or sets the name of the host</para>
 @y
-<para>
-ホスト名の表示または設定を行います。
-</para>
+        <para>
+        ホスト名の表示または設定を行います。
+        </para>
 @z
 
 @x ping
           <para>Sends echo-request packets and reports how long the replies
           take</para>
 @y
-<para>
-エコーリクエスト (echo-request) パケットを送信し、返信にどれだけ要したかを表示します。
-</para>
+          <para>
+          エコーリクエスト (echo-request) パケットを送信し、返信にどれだけ要したかを表示します。
+          </para>
 @z
 
 @x ping6
           <para>A version of <command>ping</command> for IPv6 networks</para>
 @y
-<para>
-IPv6 ネットワーク向けの <command>ping</command>
-</para>
+          <para>
+          IPv6 ネットワーク向けの <command>ping</command>
+          </para>
 @z
 
 @x rcp
           <para>Performs remote file copy</para>
 @y
-<para>
-リモートファイルコピーを行います。
-</para>
+          <para>
+          リモートファイルコピーを行います。
+          </para>
 @z
 
 @x rexec
           <para>executes commands on a remote host</para>
 @y
-<para>
-リモートホスト上にてコマンドを実行します。
-</para>
+          <para>
+          リモートホスト上にてコマンドを実行します。
+          </para>
 @z
 
 @x rlogin
           <para>Performs remote login</para>
 @y
-<para>
-リモートログインを行います。
-</para>
+          <para>
+          リモートログインを行います。
+          </para>
 @z
 
 @x rsh
           <para>Runs a remote shell</para>
 @y
-<para>
-リモートシェルを起動します。
-</para>
+          <para>
+          リモートシェルを起動します。
+          </para>
 @z
 
 @x talk
           <para>Is used to chat with another user</para>
 @y
-<para>
-他ユーザーとのチャットに利用します。
-</para>
+          <para>
+          他ユーザーとのチャットに利用します。
+          </para>
 @z
 
 @x telnet
           <para>An interface to the TELNET protocol</para>
 @y
-<para>
-TELNET プロトコルインターフェース。
-</para>
+          <para>
+          TELNET プロトコルインターフェース。
+          </para>
 @z
 
 @x tftp
           <para>A trivial file transfer program</para>
 @y
-<para>
-軽量なファイル転送プログラム。
-(trivial file transfer program)
-</para>
+          <para>
+          軽量なファイル転送プログラム。(trivial file transfer program)
+          </para>
 @z
 
 @x traceroute
@@ -260,9 +244,8 @@ TELNET プロトコルインターフェース。
           working on to another host on a network, showing all the intermediate
           hops (gateways) along the way</para>
 @y
-<para>
-処理起動したホストからネットワーク上の他のホストまで、送出したパケットの経由ルートを追跡します。
-その合間に検出されたすべての hops (= ゲートウェイ) も表示します。
-</para>
+          <para>
+          処理起動したホストからネットワーク上の他のホストまで、送出したパケットの経由ルートを追跡します。
+          その合間に検出されたすべての hops (= ゲートウェイ) も表示します。
+          </para>
 @z
-

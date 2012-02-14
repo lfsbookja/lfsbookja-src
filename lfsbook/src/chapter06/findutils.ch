@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-09-08 17:23:15 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -19,11 +19,11 @@
     create, maintain, and search a database (often faster than the recursive
     find, but unreliable if the database has not been recently updated).</para>
 @y
-<para>
-Findutils パッケージはファイル検索を行うプログラムを提供します。
-このプログラムはディレクトリツリーを再帰的に検索したり、データベースの生成、保守、検索を行います。
-(データベースによる検索は再帰的検索に比べて処理速度は速いものですが、データベースが最新のものに更新されていない場合は信頼できない結果となります。)
-</para>
+    <para>
+    Findutils パッケージはファイル検索を行うプログラムを提供します。
+    このプログラムはディレクトリツリーを再帰的に検索したり、データベースの生成、保守、検索を行います。
+    (データベースによる検索は再帰的検索に比べて処理速度は速いものですが、データベースが最新のものに更新されていない場合は信頼できない結果となります。)
+    </para>
 @z
 
 @x
@@ -49,12 +49,10 @@ Findutils パッケージはファイル検索を行うプログラムを提供�
           database to be in <filename class="directory">/var/lib/locate</filename>,
           which is FHS-compliant.</para>
 @y
-<para>
-<command>locate</command> データベースの場所を
-FHS コンプライアンスが定めているディレクトリ
-<filename class="directory">/var/lib/locate</filename>
-に変更します。
-</para>
+          <para>
+          <command>locate</command> データベースの場所を FHS コンプライアンスが定めているディレクトリ <filename
+          class="directory">/var/lib/locate</filename> に変更します。
+          </para>
 @z
 
 @x
@@ -82,12 +80,11 @@ FHS コンプライアンスが定めているディレクトリ
     needs to be on the root partition.  The <command>updatedb</command>
     script also needs to be modified to correct an explicit path:</para>
 @y
-<para>
-LFS ブートスクリプトパッケージでは、いくつかのスクリプトが <command>find</command> を利用しています。
-<filename class="directory">/usr</filename>
-ディレクトリはブート処理の初めでは認識できないため、このプログラムはルートパーティションに置く必要があります。
-同じく <command>updatedb</command> スクリプトは明示的なパスを修正する必要があります。
-</para>
+    <para>
+    LFS ブートスクリプトパッケージでは、いくつかのスクリプトが <command>find</command> を利用しています。
+    <filename class="directory">/usr</filename> ディレクトリはブート処理の初めでは認識できないため、このプログラムはルートパーティションに置く必要があります。
+    同じく <command>updatedb</command> スクリプトは明示的なパスを修正する必要があります。
+    </para>
 @z
 
 @x
@@ -122,32 +119,28 @@ LFS ブートスクリプトパッケージでは、いくつかのスクリプ�
           <para>Was formerly used to produce <command>locate</command>
           databases</para>
 @y
-<para>
-かつて利用されていたコマンドで
-<command>locate</command>
-データベースを生成します。
-</para>
+          <para>
+          かつて利用されていたコマンドで <command>locate</command> データベースを生成します。
+          </para>
 @z
 
 @x code
           <para>Was formerly used to produce <command>locate</command>
           databases; it is the ancestor of <command>frcode</command>.</para>
 @y
-<para>
-かつて利用されていたコマンドで
-<command>locate</command>
-データベースを生成します。
-これは <command>frcode</command> の前身です。
-</para>
+          <para>
+          かつて利用されていたコマンドで <command>locate</command> データベースを生成します。
+          これは <command>frcode</command> の前身です。
+          </para>
 @z
 
 @x find
           <para>Searches given directory trees for files matching the specified
           criteria</para>
 @y
-<para>
-指定された条件に合致するファイルを、指定されたディレクトリツリー内から検索します。
-</para>
+          <para>
+          指定された条件に合致するファイルを、指定されたディレクトリツリー内から検索します。
+          </para>
 @z
 
 @x frcode
@@ -155,28 +148,27 @@ LFS ブートスクリプトパッケージでは、いくつかのスクリプ�
           of file names; it uses front-compression, reducing the database size
           by a factor of four to five.</para>
 @y
-<para>
-<command>updatedb</command>
-コマンドから呼び出され、ファイル名の一覧を圧縮します。
-これは前置圧縮 (front-compression) を行うもので、データベースサイズを 1/4 から 1/5 に減らします。
-</para>
+          <para>
+          <command>updatedb</command> コマンドから呼び出され、ファイル名の一覧を圧縮します。
+          これは前置圧縮 (front-compression) を行うもので、データベースサイズを 1/4 から 1/5 に減らします。
+          </para>
 @z
 
 @x locate
           <para>Searches through a database of file names and reports the names
           that contain a given string or match a given pattern</para>
 @y
-<para>
-ファイル名データベースを検索して、指定された文字列を含むもの、または検索パターンに合致するものを表示します。
-</para>
+          <para>
+          ファイル名データベースを検索して、指定された文字列を含むもの、または検索パターンに合致するものを表示します。
+          </para>
 @z
 
 @x oldfind
           <para>Older version of find, using a different algorithm</para>
 @y
-<para>
-find の古い版であり、find とは異なるアルゴリズムを用いています。
-</para>
+          <para>
+          find の古い版であり、find とは異なるアルゴリズムを用いています。
+          </para>
 @z
 
 @x updatedb
@@ -185,19 +177,18 @@ find の古い版であり、find とは異なるアルゴリズムを用いて�
           mounted, unless told not to) and puts every file name it finds into
           the database</para>
 @y
-<para>
-<command>locate</command> データベースを更新します。
-これはすべてのファイルシステムを検索します。
-(検索非対象とする設定がない限りは、マウントされているすべてのファイルシステムを対象とします。)
-そして検索されたファイル名をデータベースに追加します。
-</para>
+          <para>
+          <command>locate</command> データベースを更新します。
+          これはすべてのファイルシステムを検索します。
+          (検索非対象とする設定がない限りは、マウントされているすべてのファイルシステムを対象とします。)
+          そして検索されたファイル名をデータベースに追加します。
+          </para>
 @z
 
 @x xargs
           <para>Can be used to apply a given command to a list of files</para>
 @y
-<para>
-指定されたコマンドに対してファイル名の一覧を受け渡して実行します。
-</para>
+          <para>
+          指定されたコマンドに対してファイル名の一覧を受け渡して実行します。
+          </para>
 @z
-

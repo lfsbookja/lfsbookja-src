@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-04-17 17:49:06 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -43,13 +43,13 @@
           the root user, but as it is being run on an only partially built
           system, overriding it is OK.</para>
 @y
-<!--
-日本語訳註： override の真の意味がよく分からない..
--->
-<para>
-このオプションは、<function>mknod</function> に対するテストを root ユーザーにて実行するようにします。
-一般にこのテストを root ユーザーで実行することは危険なこととされますが、ここでは部分的にビルドしたシステムでテストするものであるため、オーバーライドすることで支障はありません。
-</para>
+          <!--
+          日本語訳註： override の真の意味がよく分からない..
+          -->
+          <para>
+          このオプションは、<function>mknod</function> に対するテストを root ユーザーにて実行するようにします。
+          一般にこのテストを root ユーザーで実行することは危険なこととされますが、ここでは部分的にビルドしたシステムでテストするものであるため、オーバーライドすることで支障はありません。
+          </para>
 @z
 
 @x
@@ -98,17 +98,17 @@
           <para>Remotely manipulates a magnetic
           tape drive through an interprocess communication connection</para>
 @y
-<para>
-プロセス間通信のコネクションを通じて磁気テープドライブを遠隔操作します。
-</para>
+          <para>
+          プロセス間通信のコネクションを通じて磁気テープドライブを遠隔操作します。
+          </para>
 @z
 
 @x tar
           <para>Creates, extracts files from, and lists the contents of archives,
           also known as tarballs</para>
 @y
-<para>
-アーカイブの生成、アーカイブからのファイル抽出、アーカイブの内容一覧表示を行います。
-アーカイブは tarball とも呼ばれます。
-</para>
+          <para>
+          アーカイブの生成、アーカイブからのファイル抽出、アーカイブの内容一覧表示を行います。
+          アーカイブは tarball とも呼ばれます。
+          </para>
 @z

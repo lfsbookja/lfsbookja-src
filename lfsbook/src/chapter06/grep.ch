@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-09-02 21:33:20 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,9 +16,9 @@
 @x
     <para>The Grep package contains programs for searching through files.</para>
 @y
-<para>
-Grep パッケージはファイル内の検索を行うプログラムを提供します。
-</para>
+    <para>
+    Grep パッケージはファイル内の検索を行うプログラムを提供します。
+    </para>
 @z
 
 @x
@@ -39,24 +39,6 @@ Grep パッケージはファイル内の検索を行うプログラムを提供
     <para>Grep をコンパイルするための準備をします。</para>
 @z
 
-% @x
-%       <title>The meaning of the configure switch:</title>
-% @y
-%       <title>configure オプションの意味：</title>
-% @z
-
-% @x
-%           <para>The configure check for Glibc's regex library is broken when
-%           building against Glibc-&glibc-version;.  This switch forces the use
-%           of Glibc's regex library.</para>
-% @y
-% <para>
-% Glibc-&glibc-version; において本パッケージをビルドした場合、configure による
-% Glibc の正規表現ライブラリのチェックが正しく機能しません。
-% 本オプションは Glibc の正規表現ライブラリを強制的に利用するよう指定します。
-% </para>
-% @z
-
 @x
     <para>Compile the package:</para>
 @y
@@ -68,20 +50,6 @@ Grep パッケージはファイル内の検索を行うプログラムを提供
 @y
     <para>コンパイル結果をテストするには以下を実行します。</para>
 @z
-
-% @x
-%     <para>There are known test failures in the <command>fmbtest.sh</command>
-%     tests.  The &quot;|| true&quot; construct is
-%     used to avoid automated build scripts failing due to the test failures.
-%     A good run will show 1 failure from 14 tests, although the test failure
-%     will detail 2 failed sub-tests.</para>
-% @y
-% <para>
-% <command>fmbtest.sh</command> に対するテストは失敗します。
-% &quot;|| true&quot; という入力は、自動的にビルドを行うようなスクリプトを用いた場合に、テストが失敗しても処理続行するようにするものです。
-% 正常に処理されれば 14つのテストのうち 1つのテスト失敗だけとなりますが、サブテストが 2つ失敗します。
-% </para>
-% @z
 
 @x
     <para>Install the package:</para>
@@ -116,24 +84,23 @@ Grep パッケージはファイル内の検索を行うプログラムを提供
 @x egrep
           <para>Prints lines matching an extended regular expression</para>
 @y
-<para>
-拡張正規表現 (extended regular expression) にマッチした行を表示します。
-</para>
+          <para>
+          拡張正規表現 (extended regular expression) にマッチした行を表示します。
+          </para>
 @z
 
 @x fgrep
           <para>Prints lines matching a list of fixed strings</para>
 @y
-<para>
-固定文字列の一覧にマッチした行を表示します。
-</para>
+          <para>
+          固定文字列の一覧にマッチした行を表示します。
+          </para>
 @z
 
 @x grep
           <para>Prints lines matching a basic regular expression</para>
 @y
-<para>
-基本的な正規表現に合致した行を出力します。
-</para>
+          <para>
+          基本的な正規表現に合致した行を出力します。
+          </para>
 @z
-

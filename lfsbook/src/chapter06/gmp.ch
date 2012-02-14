@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                           $
+% $Date:: 2012-02-12 16:22:31 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,10 +37,7 @@
       Avoid this by invoking the configure command below with
 @y
       <para>
-      32 ビット x86 CPU にて環境構築する際に、
-      64 ビットコードを扱う CPU 環境であって <emphasis>かつ</emphasis>
-      <envar>CFLAGS</envar> を指定していると、
-      本パッケージの configure スクリプトは 64 ビット用の処理を行い失敗します。
+      32 ビット x86 CPU にて環境構築する際に、64 ビットコードを扱う CPU 環境であって <emphasis>かつ</emphasis> <envar>CFLAGS</envar> を指定していると、本パッケージの configure スクリプトは 64 ビット用の処理を行い失敗します。
       これを回避するには、以下のように処理してください。
 @z
 

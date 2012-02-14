@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-05-29 17:19:09 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -133,17 +133,10 @@
           when changes are made to <command>autoconf</command> and
           <command>automake</command> template files</para>
 @y
-<para>
-<command>autoconf</command> と <command>automake</command>
-のテンプレートファイルが変更された時に、自動的に
-<command>autoconf</command>、
-<command>autoheader</command>、
-<command>aclocal</command>、
-<command>automake</command>、
-<command>gettextize</command>、
-<command>libtoolize</command>
-を無駄なく適正な順で実行します。
-</para>
+          <para>
+          <command>autoconf</command> と <command>automake</command> のテンプレートファイルが変更された時に、自動的に <command>autoconf</command>、
+          <command>autoheader</command>、<command>aclocal</command>、<command>automake</command>、<command>gettextize</command>、<command>libtoolize</command> を無駄なく適正な順で実行します。
+          </para>
 @z
 
 @x autoscan

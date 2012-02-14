@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2012-01-22 13:22:18 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -203,44 +203,44 @@
           <para><command>ip monitor</command> allows users to continously monitor
           the state of devices, addresses and routes</para>
 @y
-<para>
-主となる実行モジュールで、複数の機能性を持ちます。
-</para>
+          <para>
+          主となる実行モジュールで、複数の機能性を持ちます。
+          </para>
 
-<para>
-<command>ip link &lt;デバイス名&gt;</command> はデバイスのステータスを参照し、またステータスの変更を行います。
-</para>
+          <para>
+          <command>ip link &lt;デバイス名&gt;</command> はデバイスのステータスを参照し、またステータスの変更を行います。
+          </para>
 
-<para><command>ip addr</command> はアドレスとその属性を参照し、新しいアドレスの追加、古いアドレスの削除を行います。
-</para>
+          <para><command>ip addr</command> はアドレスとその属性を参照し、新しいアドレスの追加、古いアドレスの削除を行います。
+          </para>
 
-<para>
-<command>ip neighbor</command> は、隣接ルーター (neighbor) の割り当てや属性を参照し、隣接ルーターの項目追加や古いものの削除を行います。
-</para>
+          <para>
+          <command>ip neighbor</command> は、隣接ルーター (neighbor) の割り当てや属性を参照し、隣接ルーターの項目追加や古いものの削除を行います。
+          </para>
 
-<para>
-<command>ip rule</command> は、ルーティングポリシー (routing policy) を参照し、変更を行います。
-</para>
+          <para>
+          <command>ip rule</command> は、ルーティングポリシー (routing policy) を参照し、変更を行います。
+          </para>
 
-<para>
-<command>ip route</command> は、ルーティングテーブル (routing table) を参照し、ルーティングルール (routing table rule) を変更します。
-</para>
+          <para>
+          <command>ip route</command> は、ルーティングテーブル (routing table) を参照し、ルーティングルール (routing table rule) を変更します。
+          </para>
 
-<para>
-<command>ip tunnel</command> は、IP トンネル (IP tunnel) やその属性を参照し、変更を行います。
-</para>
+          <para>
+          <command>ip tunnel</command> は、IP トンネル (IP tunnel) やその属性を参照し、変更を行います。
+          </para>
 
-<para>
-<command>ip maddr</command> は、マルチキャストアドレス (multicast address) やその属性を参照し、変更を行います。
-</para>
+          <para>
+          <command>ip maddr</command> は、マルチキャストアドレス (multicast address) やその属性を参照し、変更を行います。
+          </para>
 
-<para>
-<command>ip mroute</command> は、マルチキャストルーティング (multicast routing) の設定、変更、削除を行います。
-</para>
+          <para>
+          <command>ip mroute</command> は、マルチキャストルーティング (multicast routing) の設定、変更、削除を行います。
+          </para>
 
-<para>
-<command>ip monitor</command> は、デバイスの状態、アドレス、ルートを継続的に監視します。
-</para>
+          <para>
+          <command>ip monitor</command> は、デバイスの状態、アドレス、ルートを継続的に監視します。
+          </para>
 @z
 
 @x lnstat
@@ -345,32 +345,32 @@
           <para><command>tc policy</command> allows users to setup the QOS/COS
           policies</para>
 @y
-<!--
-日本語訳註： 2009-09-07 matsuand
-Traffic Controlling Executable がすべて大文字である。
--->
-<para>
-トラフィック制御プログラム (Traffic Controlling Executable)。
-これは QOS (Quality Of Service) と COS (Class Of Service) を実装するプログラムです。
-</para>
+          <!--
+          日本語訳註： 2009-09-07 matsuand
+          Traffic Controlling Executable がすべて大文字である。
+          -->
+          <para>
+          トラフィック制御プログラム (Traffic Controlling Executable)。
+          これは QOS (Quality Of Service) と COS (Class Of Service) を実装するプログラムです。
+          </para>
 
-<para>
-<command>tc qdisc</command> は、キューイング規則 (queueing discipline) の設定を行います。
-</para>
+          <para>
+          <command>tc qdisc</command> は、キューイング規則 (queueing discipline) の設定を行います。
+          </para>
 
-<para>
-<command>tc class</command> は、キューイング規則スケジューリング (queueing discipline scheduling) に基づくクラスの設定を行います。
-</para>
+          <para>
+          <command>tc class</command> は、キューイング規則スケジューリング (queueing discipline scheduling) に基づくクラスの設定を行います。
+          </para>
 
-<para>
-<command>tc estimator</command> は、ネットワークフローを見積もります。
-</para>
+          <para>
+          <command>tc estimator</command> は、ネットワークフローを見積もります。
+          </para>
 
-<para>
-<command>tc filter</command> は、QOS/COS パケットのフィルタリング設定を行います。
-</para>
+          <para>
+          <command>tc filter</command> は、QOS/COS パケットのフィルタリング設定を行います。
+          </para>
 
-<para>
-<command>tc policy</command> は、QOS/COS ポリシーの設定を行います。
-</para>
+          <para>
+          <command>tc policy</command> は、QOS/COS ポリシーの設定を行います。
+          </para>
 @z

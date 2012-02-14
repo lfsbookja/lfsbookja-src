@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-02-19 10:37:42 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,12 +37,10 @@
     program is not already in $PATH. The following addition will correct
     this:</para>
 @y
-<para>
-<command>bison</command>
-プログラムが $PATH 上にない場合に、この
-Bison の configure を行ってビルドすると、国際化されたエラーメッセージのサポートがないままビルドされてしまいます。
-これを正すために以下の設定を追加します。
-</para>
+    <para>
+    <command>bison</command> プログラムが $PATH 上にない場合に、この Bison の configure を行ってビルドすると、国際化されたエラーメッセージのサポートがないままビルドされてしまいます。
+    これを正すために以下の設定を追加します。
+    </para>
 @z
 
 @x
@@ -96,10 +94,10 @@ Bison の configure を行ってビルドすると、国際化されたエラー
           structure of text files; Bison is a replacement for Yacc (Yet Another
           Compiler Compiler)</para>
 @y
-<para>
-構文規則の記述に基づいて、テキストファイルの構造を解析するプログラムを生成します。
-Bison は Yacc (Yet Another Compiler Compiler) の互換プログラムです。
-</para>
+          <para>
+          構文規則の記述に基づいて、テキストファイルの構造を解析するプログラムを生成します。
+          Bison は Yacc (Yet Another Compiler Compiler) の互換プログラムです。
+          </para>
 @z
 
 @x yacc
@@ -108,14 +106,11 @@ Bison は Yacc (Yet Another Compiler Compiler) の互換プログラムです。
           it calls <command>bison</command> with the <parameter>-y</parameter>
           option</para>
 @y
-<para>
-<command>bison</command> のラッパースクリプト。
-<command>yacc</command> プログラムがあるなら
-<command>bison</command> を呼び出さずに
-<command>yacc</command> を実行します。
-<parameter>-y</parameter> オプションが指定された時は
-<command>bison</command> を実行します。
-</para>
+          <para>
+          <command>bison</command> のラッパースクリプト。
+          <command>yacc</command> プログラムがあるなら <command>bison</command> を呼び出さずに <command>yacc</command> を実行します。
+          <parameter>-y</parameter> オプションが指定された時は <command>bison</command> を実行します。
+          </para>
 @z
 
 @x liby.a
@@ -123,13 +118,9 @@ Bison は Yacc (Yet Another Compiler Compiler) の互換プログラムです。
           <function>yyerror</function> and <function>main</function> functions;
           this library is normally not very useful, but POSIX requires it</para>
 @y
-<para>
-Yacc 互換の関数として
-<function>yyerror</function> 関数と
-<function>main</function>
-関数を含むライブラリです。
-このライブラリはあまり使い勝手の良いものではありません。
-ただし POSIX ではこれが必要になります。
-</para>
+          <para>
+          Yacc 互換の関数として <function>yyerror</function> 関数と <function>main</function> 関数を含むライブラリです。
+          このライブラリはあまり使い勝手の良いものではありません。
+          ただし POSIX ではこれが必要になります。
+          </para>
 @z
-

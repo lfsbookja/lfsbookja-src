@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-04-17 17:49:06 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,9 +16,9 @@
 @x
     <para>The Man-pages package contains over 1,900 man pages.</para>
 @y
-<para>
-Man-pages パッケージは 1,900 以上のマニュアルページを提供します。
-</para>
+    <para>
+    Man-pages パッケージは 1,900 以上のマニュアルページを提供します。
+    </para>
 @z
 
 @x
@@ -69,9 +69,9 @@ Man-pages パッケージは 1,900 以上のマニュアルページを提供し
 @y
         <term><filename>man</filename> ページ</term>
         <listitem>
-<para>
-C 言語の関数、重要なデバイスファイル、重要な設定ファイルなどを説明します。
-</para>
+          <para>
+          C 言語の関数、重要なデバイスファイル、重要な設定ファイルなどを説明します。
+          </para>
           <indexterm zone="ch-system-man-pages man-pages">
             <primary sortas="e-man-pages">man pages</primary>
           </indexterm>

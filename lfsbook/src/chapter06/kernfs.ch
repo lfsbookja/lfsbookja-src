@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-09-24 17:07:00 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,20 +25,20 @@
     space is used for them. The content of the file systems resides in
     memory.</para>
 @y
-<para>
-カーネルが取り扱う様々なファイルシステムは、カーネルとの間でやり取りが行われます。
-これらのファイルシステムは仮想的なものであり、ディスクを消費するものではありません。
-ファイルシステムの内容はメモリ上に保持されます。
-</para>
+    <para>
+    カーネルが取り扱う様々なファイルシステムは、カーネルとの間でやり取りが行われます。
+    これらのファイルシステムは仮想的なものであり、ディスクを消費するものではありません。
+    ファイルシステムの内容はメモリ上に保持されます。
+    </para>
 @z
 
 @x
     <para>Begin by creating directories onto which the file systems will be
     mounted:</para>
 @y
-<para>
-ファイルシステムをマウントするディレクトリを以下のようにして生成します。
-</para>
+    <para>
+    ファイルシステムをマウントするディレクトリを以下のようにして生成します。
+    </para>
 @z
 
 @x
@@ -88,21 +88,18 @@
       create a mirror of a directory or mount point to some other location. Use
       the following command to achieve this:</para>
 @y
-<para>
-各デバイスを <filename class="directory">/dev</filename>
-に設定する方法としては、<filename class="directory">/dev</filename>
-ディレクトリに対して <systemitem class="filesystem">tmpfs</systemitem>
-のような仮想ファイルシステムをマウントすることが推奨されます。
-こうすることで各デバイスが検出されアクセスされる際に、その仮想ファイルシステム上にて動的にデバイスを生成する形を取ることができます。
-このデバイス生成処理は一般的にはシステム起動時に Udev によって行われます。
-今構築中のシステムにはまだ Udev を導入していませんし、再起動も行っていませんので
-<filename class="directory">/dev</filename>
-のマウントと有効化は手動で行ないます。
-これはホストシステムの <filename class="directory">/dev</filename>
-ディレクトリに対して、バインドマウントを行うことで実現します。
-バインドマウント (bind mount) は特殊なマウント方法の一つで、ディレクトリのミラーを生成したり、他のディレクトリへのマウントポイントを生成したりします。
-以下のコマンドにより実現します。
-</para>
+      <para>
+      各デバイスを <filename class="directory">/dev</filename> に設定する方法としては、<filename
+      class="directory">/dev</filename> ディレクトリに対して <systemitem
+      class="filesystem">tmpfs</systemitem> のような仮想ファイルシステムをマウントすることが推奨されます。
+      こうすることで各デバイスが検出されアクセスされる際に、その仮想ファイルシステム上にて動的にデバイスを生成する形を取ることができます。
+      このデバイス生成処理は一般的にはシステム起動時に Udev によって行われます。
+      今構築中のシステムにはまだ Udev を導入していませんし、再起動も行っていませんので <filename
+      class="directory">/dev</filename> のマウントと有効化は手動で行ないます。
+      これはホストシステムの <filename class="directory">/dev</filename> ディレクトリに対して、バインドマウントを行うことで実現します。
+      バインドマウント (bind mount) は特殊なマウント方法の一つで、ディレクトリのミラーを生成したり、他のディレクトリへのマウントポイントを生成したりします。
+      以下のコマンドにより実現します。
+      </para>
 @z
 
 @x
@@ -116,4 +113,3 @@
 @y
       <para>残りの仮想カーネルファイルシステムを以下のようにしてマウントします。</para>
 @z
-

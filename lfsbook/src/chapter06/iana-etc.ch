@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                          $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -8,9 +17,9 @@
     <para>The Iana-Etc package provides data for network services and
     protocols.</para>
 @y
-<para>
-Iana-Etc パッケージはネットワークサービスやプロトコルのためのデータを提供します。
-</para>
+    <para>
+    Iana-Etc パッケージはネットワークサービスやプロトコルのためのデータを提供します。
+    </para>
 @z
 
 @x
@@ -24,12 +33,10 @@ Iana-Etc パッケージはネットワークサービスやプロトコルの�
     correct formats for the <filename>/etc/protocols</filename> and
     <filename>/etc/services</filename> data files:</para>
 @y
-<para>
-以下のコマンドを実行します。
-これは IANA が提供している生のデータを正しい書式のデータとして変換し
-<filename>/etc/protocols</filename> ファイルと <filename>/etc/services</filename>
-ファイルとして生成します。
-</para>
+    <para>
+    以下のコマンドを実行します。
+    これは IANA が提供している生のデータを正しい書式のデータとして変換し <filename>/etc/protocols</filename> ファイルと <filename>/etc/services</filename> ファイルとして生成します。
+    </para>
 @z
 
 @x
@@ -72,11 +79,9 @@ Iana-Etc パッケージはネットワークサービスやプロトコルの�
           <para>Describes the various DARPA Internet protocols that are
           available from the TCP/IP subsystem</para>
 @y
-<para>
-TCP/IP により利用可能な様々な DARPA インターネットプロトコル
-(DARPA Internet protocols)
-を記述しています。
-</para>
+          <para>
+          TCP/IP により利用可能な様々な DARPA インターネットプロトコル (DARPA Internet protocols) を記述しています。
+          </para>
 @z
 
 @x /etc/services
@@ -84,8 +89,7 @@ TCP/IP により利用可能な様々な DARPA インターネットプロトコ
           services, and their underlying assigned port numbers and protocol
           types</para>
 @y
-<para>
-インターネットサービスを分かりやすく表現した名称と、その割り当てポートおよびプロトコルの種類の対応情報を提供します。
-</para>
+          <para>
+          インターネットサービスを分かりやすく表現した名称と、その割り当てポートおよびプロトコルの種類の対応情報を提供します。
+          </para>
 @z
-

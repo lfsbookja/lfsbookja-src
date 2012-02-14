@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-05-29 17:19:09 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -49,10 +49,10 @@
     <para>Fix a bug in the Makefile, which prevents procps from building with
     make-&make-version;:</para>
 @y
-<para>
-Makefile におけるバグを修正します。
-これは make-&make-version; を利用した場合に Procps がビルドできない点を修正するものです。
-</para>
+    <para>
+    Makefile におけるバグを修正します。
+    これは make-&make-version; を利用した場合に Procps がビルドできない点を修正するものです。
+    </para>
 @z
 
 @x

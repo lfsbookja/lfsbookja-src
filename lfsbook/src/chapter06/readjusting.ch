@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-04-16 21:46:54 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,8 +38,7 @@
   これを行うことで、新たに生成したプログラムが新たに生成したライブラリにリンクされます。
   この作業は<xref linkend="chapter-temporary-tools"/>の冒頭にて行った<quote>調整</quote>作業と同様のことです。
   ただし調整される方向が逆になります。
-  <xref linkend="chapter-temporary-tools"/>
-  では、ホストシステムの <filename
+  <xref linkend="chapter-temporary-tools"/> では、ホストシステムの <filename
   class="directory">/{,usr/}lib</filename> ディレクトリを新しく作った <filename
   class="directory">/tools/lib</filename> ディレクトリに仕向けていました。
   今度は同じ <filename

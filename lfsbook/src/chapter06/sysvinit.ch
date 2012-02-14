@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date:: 2011-12-12 12:35:31 +0900$
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -169,8 +169,7 @@
 @y
           <para>
           ユーザーの最新のログイン (ログアウト) の情報を表示します。
-          これは <filename>/var/log/wtmp</filename>
-          ファイルの終わりから調べているものです。
+          これは <filename>/var/log/wtmp</filename> ファイルの終わりから調べているものです。
           またシステムブート、シャットダウン、ランレベルの変更時の情報も示します。
           </para>
 @z
