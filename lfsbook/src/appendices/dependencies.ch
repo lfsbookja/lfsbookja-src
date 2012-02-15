@@ -1230,9 +1230,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>なし</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Acl, Attr, Cracklib, PAM</seg>
 @y
-          <seg>なし</seg>
+          <seg>Acl, Attr, Cracklib, PAM</seg>
 @z
 
 %----------------------------------------------------------------------

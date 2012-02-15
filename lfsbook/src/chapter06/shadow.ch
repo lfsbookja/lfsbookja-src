@@ -53,12 +53,6 @@
 @z
 
 @x
-    <para>Fix an issue with the installation of Russian man pages:</para>
-@y
-    <para>ロシア語の man ページのインストール時の問題を解消するために以下を実行します。</para>
-@z
-
-@x
     <para id="shadow-login_defs">Instead of using the default
     <emphasis>crypt</emphasis> method, use the more secure
     <emphasis>SHA-512</emphasis> method of password encryption, which also

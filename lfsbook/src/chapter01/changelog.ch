@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2012-02-08 10:34:46 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -45,6 +45,32 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴：</title>
+@z
+
+@x
+      <para>2012-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Shadow-4.1.5. Fixes
+          <ulink url="&lfs-ticket-root;3019">#3019</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.2.6. Fixes
+          <ulink url="&lfs-ticket-root;3018">#3018</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Shadow-4.1.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3019">#3019</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.2.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3018">#3018</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x

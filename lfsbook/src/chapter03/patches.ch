@@ -337,19 +337,19 @@
       </listitem>
 @z
 
-% @x
-%       <term>Udev V4L Patch - <token>&udev-v4l-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&udev-v4l-patch;"/></para>
-%         <para>MD5 sum: <literal>&udev-v4l-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Udev V4L Patch - <token>&udev-v4l-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&udev-v4l-patch;"/></para>
-%         <para>MD5 sum: <literal>&udev-v4l-patch-md5;</literal></para>
-%       </listitem>
-% @z
+@x
+      <term>Shadow nscd Patch - <token>&shadow-nscd-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&shadow-nscd-patch;"/></para>
+        <para>MD5 sum: <literal>&shadow-nscd-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Shadow nscd Patch - <token>&shadow-nscd-patch-size;</token>:</term>
+      <listitem>
+        <para>ダウンロード: <ulink url="&patches-root;&shadow-nscd-patch;"/></para>
+        <para>MD5 sum: <literal>&shadow-nscd-patch-md5;</literal></para>
+      </listitem>
+@z
 
 @x
   <para>Total size of these patches: about <returnvalue/></para>
@@ -365,10 +365,10 @@
   <ulink url="&lfs-root;patches/downloads/"/> and acquire any additional
   patches to suit your system needs.</para>
 @y
-<para>
-上に挙げた必須のパッチに加えて LFS コミュニティが提供する任意のパッチが数多くあります。
-それらは微小な不備改修や、デフォルトでは利用できない機能を有効にするなどを行います。
-<ulink url="&lfs-root;patches/downloads/"/> にて提供しているパッチ類を確認してください。
-そして自分のシステムにとって必要なものは自由に適用してください。
-</para>
+  <para>
+  上に挙げた必須のパッチに加えて LFS コミュニティが提供する任意のパッチが数多くあります。
+  それらは微小な不備改修や、デフォルトでは利用できない機能を有効にするなどを行います。
+  <ulink url="&lfs-root;patches/downloads/"/> にて提供しているパッチ類を確認してください。
+  そして自分のシステムにとって必要なものは自由に適用してください。
+  </para>
 @z
