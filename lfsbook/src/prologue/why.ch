@@ -16,12 +16,12 @@
 @x
   <title>Rationale for Packages in the Book</title>
 @y
-<!--
-日本語訳註： 2009-11-25 matsuand
-rationale は理論的根拠とか原理とか。
-この訳語をこのまま用いてしまうと何を示しているのか分からなくなる。
-「～を用いる理由」とした。
--->
+  <!--
+  日本語訳註： 2009-11-25 matsuand
+  rationale は理論的根拠とか原理とか。
+  この訳語をこのまま用いてしまうと何を示しているのか分からなくなる。
+  「～を用いる理由」とした。
+  -->
   <title>各パッケージを用いる理由</title>
 @z
 
@@ -344,6 +344,15 @@ rationale は理論的根拠とか原理とか。
         <para>
         このパッケージは、米国以外のキーボードに対してのキーテーブルファイルやキーボードユーティリティを提供します。
         また端末上のフォントも提供します。
+        </para>
+@z
+
+@x Kmod
+        <para>This package contains programs needed to administer Linux
+        kernel modules.</para>
+@y
+        <para>
+        このパッケージは Linux カーネルモジュールを管理するために必要なプログラムを提供します。
         </para>
 @z
 
