@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,14 +21,14 @@
 @y
   <indexterm zone="ch-tools-bash">
     <primary sortas="a-Bash">Bash</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Bash</title>
 @y
-    <title>Bash のインストール</title>
+    <title>&InstallationOf1;Bash&InstallationOf2;</title>
 @z
 
 @x
@@ -43,13 +43,13 @@
 @x
     <para>Prepare Bash for compilation:</para>
 @y
-    <para>Bash をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Bash&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
 @z
 
 @x
@@ -69,7 +69,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -104,6 +104,6 @@
     <xref linkend="contents-bash" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-bash" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-bash" role=""/>&Details2;
     </para>
 @z

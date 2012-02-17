@@ -48,6 +48,34 @@
 @z
 
 @x
+      <para>2012-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-DB-2.6.1. Fixes
+          <ulink url="&lfs-ticket-root;3020">#3020</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Activate any possible LVM partitions
+          in checkfs script.  Thanks ot Qrux for pointing out
+          the issue.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Man-DB-2.6.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3020">#3020</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - checkfs スクリプトにて、利用可能な LVM パーティションをアクティブ化するものに。
+          この問題について指摘してくれた ot Qrux に感謝。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-02-14</para>
       <itemizedlist>
         <listitem>
