@@ -25,7 +25,7 @@
 @x
     <title>Installation of Shadow</title>
 @y
-    <title>Shadow のインストール</title>
+    <title>&InstallationOf1;Shadow&InstallationOf2;</title>
 @z
 
 @x
@@ -40,6 +40,17 @@
       Cracklib パッケージは Shadow パッケージよりも前にインストールします。
       その場合 Shadow パッケージの <command>configure</command> スクリプトでは <parameter>--with-libcrack</parameter> パラメーターをつけて実行する必要があります。
       </para>
+@z
+
+@x
+    <para>Apply a patch to fix an issue when running various programs from this
+    package when they are used when the <command>nscd</command> daemon is not
+    running:</para>
+@y
+    <para>
+    以下のパッチを適用します。
+    本パッケージ内にて<command>nscd</command> デーモンを利用しているさまざまなプログラムを、そのデーモンが動いていないときに発生する問題を解消するものです。
+    </para>
 @z
 
 @x
@@ -73,33 +84,33 @@
 @x
       <para>If you chose to build Shadow with Cracklib support, run the following:</para>
 @y
-<para>
-Cracklib のサポートを含めて Shadow をビルドする場合は以下を実行します。
-</para>
+      <para>
+      Cracklib のサポートを含めて Shadow をビルドする場合は以下を実行します。
+      </para>
 @z
 
 @x
     <para>Prepare Shadow for compilation:</para>
 @y
-    <para>Shadow をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Shadow&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -113,7 +124,7 @@ Cracklib のサポートを含めて Shadow をビルドする場合は以下を
 @x
     <title>Configuring Shadow</title>
 @y
-    <title>Shadow の構成</title>
+    <title>Shadow の設定</title>
 @z
 
 @x
@@ -251,15 +262,15 @@ Cracklib のサポートを含めて Shadow をビルドする場合は以下を
 @x
     <title>Contents of Shadow</title>
 @y
-    <title>Shadow の構成</title>
+    <title>&ContentsOf1;Shadow&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -281,7 +292,7 @@ Cracklib のサポートを含めて Shadow をビルドする場合は以下を
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x chage

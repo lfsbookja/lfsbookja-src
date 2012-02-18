@@ -54,6 +54,17 @@
 -->
 
     <listitem>
+      <para>2012-02-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          訳出漏れの修正。(6.55. shadow におけるパッチ追加。)
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-02-17</para>
       <itemizedlist>
         <listitem>
