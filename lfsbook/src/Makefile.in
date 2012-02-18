@@ -627,6 +627,7 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@	--output $(RENDERTMP)/lfs-pdf.fo stylesheets/lfs-pdf.xsl \
 @MAINT@	$(RENDERTMP)/lfs-pdf.xml
 @MAINT@	sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/lfs-pdf.fo
+@MAINT@	sed -i -e 's|\.\./wget-list|wget-list|g' -e 's|\.\./md5sums|md5sums|g' $(RENDERTMP)/lfs-pdf.fo
 @MAINT@	bash pdf-fixups.sh $(RENDERTMP)/lfs-pdf.fo
 @MAINT@
 @MAINT@	@echo "Generating PDF file..."

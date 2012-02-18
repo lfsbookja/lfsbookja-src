@@ -5,12 +5,18 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                          $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
 <?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+<sect1 id="materials-introduction">
+@y
+<sect1 id="materials-introduction" role="wrap">
 @z
 
 @x
@@ -134,13 +140,17 @@ url="../wget-list">wget-list</ulink> を書き換えて利用しています。
 一例として国内には理化学研究所のサイト (ftp.riken.jp) があります。
 そこでは GNU パッケージ類がミラー提供されています。
 そこで <ulink url="../wget-list">wget-list</ulink> にて ftp.gnu.org を指し示している URL を ftp.riken.jp に置き換えます。
-また Linux カーネルの入手先 (www.kernel.org) についても理化学研究所より入手可能ですので、これも置き換えます。
+また Linux カーネルや <application>Perl</application> についても理化学研究所より入手可能ですので、これも置き換えます。
 </para>
 
-<screen><userinput remap="sed-wgetlist">cp -pv wget-list{,.orig}
-sed -e 's|ftp\.gnu\.org/gnu/|ftp.riken.jp/GNU/ftp/gnu/|g' \
-    -e 's|www\.kernel\.org/pub/linux/|ftp.riken.jp/Linux/kernel.org/linux/|g' \
-       wget-list.orig > wget-list</userinput></screen>
+<screen><userinput remap="sed-wgetlist">mv wget-list{,.orig}
+cat &gt; wget-list-ja.sed &lt;&lt; "EOF"
+<literal>s|ftp\.gnu\.org/gnu/|ftp.riken.jp/GNU/ftp/gnu/|g
+s|www\.kernel\.org/pub/linux/|ftp.riken.jp/Linux/kernel.org/linux/|g
+s|www\.cpan\.org|ftp.riken.jp/lang/CPAN|g</literal>
+EOF
+sed -f wget-list-ja.sed wget-list.orig > wget-list
+rm wget-list-ja.sed</userinput></screen>
 
 <para>
 上記はあくまで一例です。しかもすべてのパッケージについて、国内サイトからの入手となるわけではありません。

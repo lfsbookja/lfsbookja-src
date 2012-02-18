@@ -58,6 +58,12 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          wget-list を国内サイト向けにする方法を変更。
+          また PDF 版にて、wget-list を正しくダウンロードできるように変更。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           訳出漏れの修正。(6.55. shadow におけるパッチ追加。)
           </para>
         </listitem>
