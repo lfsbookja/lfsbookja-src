@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -100,7 +100,7 @@
     <xref linkend="libusb-compat"/>,
     <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
     <xref linkend="tcl"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <ulink url="http://www.bluez.org/">BlueZ</ulink>, and
     <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink></para>
 @y
@@ -110,8 +110,8 @@
     <xref linkend="libusb-compat"/>,
     <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
     <xref linkend="tcl"/>,
-    <xref linkend="python"/>,
-    <ulink url="http://www.bluez.org/">BlueZ</ulink>,
+    <xref linkend="python2"/>,
+    <ulink url="http://www.bluez.org/">BlueZ</ulink>, and
     <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink></para>
 @z
 
@@ -169,25 +169,25 @@
     <para>Install <application>pilot-link</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>pilot-link</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>pilot-link</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -200,10 +200,10 @@
     <para><parameter>--enable-threads</parameter>: This parameter is required
     to link the threading library into the build.</para>
 @y
-<para>
-<parameter>--enable-threads</parameter>:
-このパラメーターは、スレッドに関するライブラリをリンクする際に必要となります。
-</para>
+    <para>
+    <parameter>--enable-threads</parameter>:
+    このパラメーターは、スレッドに関するライブラリをリンクする際に必要となります。
+    </para>
 @z
 
 @x
@@ -211,23 +211,21 @@
     to build the userspace programs. Omit it if you only need the
     <application>pilot-link</application> libraries.</para>
 @y
-<para>
-<parameter>--enable-conduits</parameter>:
-このパラメーターは、ユーザー空間 (userspace) に冠するプログラムをビルドする際に必要となります。
-<application>pilot-link</application>
-ライブラリのみをビルドする場合は指定しなくて構いません。
-</para>
+    <para>
+    <parameter>--enable-conduits</parameter>:
+    このパラメーターは、ユーザー空間 (userspace) に冠するプログラムをビルドする際に必要となります。
+    <application>pilot-link</application> ライブラリのみをビルドする場合は指定しなくて構いません。
+    </para>
 @z
 
 @x
     <para><parameter>--with-perl</parameter>: This parameter is required to
     build the <application>Perl</application> bindings.</para>
 @y
-<para>
-<parameter>--with-perl</parameter>:
-このパラメーターは <application>Perl</application>
-バインディングをビルドする際に必要となります。
-</para>
+    <para>
+    <parameter>--with-perl</parameter>:
+    このパラメーターは <application>Perl</application> バインディングをビルドする際に必要となります。
+    </para>
 @z
 
 @x
@@ -235,11 +233,11 @@
     --with-python</option>: Use any or all of these options to enable the
     respective language bindings desired.</para>
 @y
-<para>
-<option>--with-java --with-tcl=/usr/lib
---with-python</option>:
-各プログラミング言語に対するバインディングを必要とする場合に、必要なオプションを指定します。
-</para>
+    <para>
+    <option>--with-java --with-tcl=/usr/lib
+    --with-python</option>:
+    各プログラミング言語に対するバインディングを必要とする場合に、必要なオプションを指定します。
+    </para>
 @z
 
 @x

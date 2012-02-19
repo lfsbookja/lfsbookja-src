@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to PPP</title>
 @y
-    <title>PPP の概要</title>
+    <title>&IntroductionTo1;PPP&IntroductionTo2;</title>
 @z
 
 @x
@@ -35,43 +35,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&ppp-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&ppp-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&ppp-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&ppp-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&ppp-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&ppp-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &ppp-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &ppp-md5sum;</para>
+        <para>&Download; MD5 sum: &ppp-md5sum;</para>
 @z
 
 @x
         <para>Download size: &ppp-size;</para>
 @y
-        <para>ダウンロードサイズ: &ppp-size;</para>
+        <para>&DownloadSize;: &ppp-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &ppp-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &ppp-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &ppp-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &ppp-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &ppp-time;</para>
+        <para>&Estimatedbuildtime;: &ppp-time;</para>
 @z
 
 @x
@@ -87,9 +87,9 @@
     only needed by ISPs).
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="libpcap"/> (needed to do PPP filtering)
-    and <xref linkend="linux-pam"/> (to authenticate incoming calls using PAM -
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional"><xref linkend="libpcap"/> (PPP フィルタリングの利用時に必要),
+    <xref linkend="linux-pam"/> (to authenticate incoming calls using PAM -
     only needed by ISPs).
     </para>
 @z
@@ -98,14 +98,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/PPP"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/PPP"/></para>
 @z
 
 @x
     <title>Installation of PPP</title>
 @y
-    <title>PPP のインストール</title>
+    <title>&InstallationOf1;PPP&InstallationOf2;</title>
 @z
 
 @x
@@ -141,8 +141,7 @@
     the group for users who may run <application>PPP</application>:</para>
 @y
     <para>
-    Create (as <systemitem class="username">root</systemitem>)
-    the group for users who may run <application>PPP</application>:
+    (<systemitem class="username">root</systemitem> ユーザーになって) <application>PPP</application> を実行するユーザーのグループを生成します。
     </para>
 @z
 
@@ -158,9 +157,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -174,7 +171,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -236,13 +233,13 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -252,4 +249,3 @@
       <para>Add the users who may run <application>PPP</application> to the
       <systemitem class="groupname">pppusers</systemitem> group:</para>
 @z
-

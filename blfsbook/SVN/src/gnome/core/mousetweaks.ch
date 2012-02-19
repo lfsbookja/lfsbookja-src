@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,8 +25,7 @@
     desktop.</para>
 @y
     <para>
-    <application>mousetweaks</application> パッケージは、
-    <application>GNOME</application> デスクトップ環境においてマウスアクセスの機能拡張を提供します。
+    <application>mousetweaks</application> パッケージは、<application>GNOME</application> デスクトップ環境においてマウスアクセスの機能拡張を提供します。
     </para>
 @z
 
@@ -80,12 +79,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="at-spi"/> and
-    <xref linkend="gnome-panel"/></para>
+    <para role="required"><xref linkend="gnome-panel"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="at-spi"/>,
-    <xref linkend="gnome-panel"/></para>
+    <para role="required"><xref linkend="gnome-panel"/></para>
 @z
 
 @x
@@ -138,17 +135,6 @@
 @z
 
 @x
-    <para><parameter>--disable-scrollkeeper</parameter>: Do not make updates to
-    the <application>scrollkeeper</application> database. Remove it if you have
-    <application>rarian</application> installed.</para>
-@y
-    <para><parameter>--disable-scrollkeeper</parameter>:
-    <application>scrollkeeper</application> のデータベースを更新しないようにします。
-    <application>rarian</application> をインストールしている場合はこのパラメーターを取り除いてください。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&j-Contents;</title>
@@ -165,12 +151,12 @@
 @z
 
 @x
-        <seg>dwell-click-applet, mousetweaks, and pointer-capture-applet</seg>
+        <seg>mousetweaks</seg>
         <seg>None</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/mousetweaks/*,
         mousetweaks,omf/mousetweaks}</seg>
 @y
-        <seg>dwell-click-applet, mousetweaks, pointer-capture-applet</seg>
+        <seg>mousetweaks</seg>
         <seg>なし</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/mousetweaks/*,
         mousetweaks,omf/mousetweaks}</seg>

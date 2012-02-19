@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -72,57 +72,57 @@
 @x
         <para>Download (HTTP): <ulink url="&doxygen-download-http;"/></para>
 @y
-        <para>Download (HTTP): <ulink url="&doxygen-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&doxygen-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&doxygen-download-ftp;"/></para>
 @y
-        <para>Download (FTP): <ulink url="&doxygen-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&doxygen-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &doxygen-md5sum;</para>
 @y
-        <para>Download MD5 sum: &doxygen-md5sum;</para>
+        <para>&Download; MD5 sum: &doxygen-md5sum;</para>
 @z
 
 @x
         <para>Download size: &doxygen-size;</para>
 @y
-        <para>Download size: &doxygen-size;</para>
+        <para>&DownloadSize;: &doxygen-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &doxygen-buildsize;</para>
 @y
-        <para>Estimated disk space required: &doxygen-buildsize;</para>
+        <para>&j-Estimateddiskspacerequired;: &doxygen-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &doxygen-time;</para>
 @y
-        <para>Estimated build time: &doxygen-time;</para>
+        <para>&j-Estimatedbuildtime;: &doxygen-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Doxygen Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Doxygen Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Doxygen の依存パッケージ</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="qt4"/> (for doxywizard),
     <xref linkend="graphviz"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="qt4"/> (for doxywizard),
     <xref linkend="graphviz"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
 @z
@@ -218,7 +218,7 @@
     <application>Doxygen</application> package although three additional
     packages are required if you wish to use extended capabilities. If you
     need to use the language translation features, you must have
-    <xref linkend="python"/> installed. If you require formulas to
+    <xref linkend="python2"/> installed. If you require formulas to
     create PDF documentation, then you must have <!--<xref linkend="tetex"/> or-->
     <xref linkend="texlive"/> installed. If you require formulas to convert
     PostScript files to bitmaps, then you must have <xref linkend="gs"/>
@@ -228,7 +228,7 @@
     <application>Doxygen</application> package although three additional
     packages are required if you wish to use extended capabilities. If you
     need to use the language translation features, you must have
-    <xref linkend="python"/> installed. If you require formulas to
+    <xref linkend="python2"/> installed. If you require formulas to
     create PDF documentation, then you must have <!--<xref linkend="tetex"/> or-->
     <xref linkend="texlive"/> installed. If you require formulas to convert
     PostScript files to bitmaps, then you must have <xref linkend="gs"/>
@@ -294,4 +294,3 @@
           <para>is a GUI front-end for configuring and
           running <command>doxygen</command>.</para>
 @z
-

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -86,25 +86,25 @@
 @x
         <para>Download (HTTP): <ulink url="&graphviz-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&graphviz-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&graphviz-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&graphviz-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&graphviz-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&graphviz-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &graphviz-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &graphviz-md5sum;</para>
+        <para>&Download; MD5 sum: &graphviz-md5sum;</para>
 @z
 
 @x
         <para>Download size: &graphviz-size;</para>
 @y
-        <para>ダウンロードサイズ: &graphviz-size;</para>
+        <para>&DownloadSize;: &graphviz-size;</para>
 @z
 
 @x
@@ -182,7 +182,7 @@
     <xref linkend="guile"/>,
     <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
     <xref linkend="php"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
     <xref linkend="tcl"/>,
     C# (<ulink url="http://www.southern-storm.com.au/portable_net.html">DotGNU Portable.NET</ulink>
@@ -200,7 +200,7 @@
     <xref linkend="guile"/>,
     <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
     <xref linkend="php"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
     <xref linkend="tcl"/>,
     C# (<ulink url="http://www.southern-storm.com.au/portable_net.html">DotGNU Portable.NET</ulink>

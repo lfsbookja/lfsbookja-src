@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -27,14 +27,12 @@
     of the server application, but each thread has its own individual
     program-counter, run-time stack, signal mask and errno variable. </para>
 @y
-<para>
-<application>Pth</application> package contains a very portable
-POSIX/ANSI-C based library for Unix platforms which provides non-preemptive
-priority-based scheduling for multiple threads of execution (multithreading)
-inside event-driven applications. All threads run in the same address space
-of the server application, but each thread has its own individual
-program-counter, run-time stack, signal mask and errno variable. 
-</para>
+    <para>The <application>Pth</application> package contains a very portable
+    POSIX/ANSI-C based library for Unix platforms which provides non-preemptive
+    priority-based scheduling for multiple threads of execution (multithreading)
+    inside event-driven applications. All threads run in the same address space
+    of the server application, but each thread has its own individual
+    program-counter, run-time stack, signal mask and errno variable. </para>
 @z
 
 @x
@@ -99,39 +97,36 @@ program-counter, run-time stack, signal mask and errno variable.
       pthread library and interface header installed by the
       <application>Glibc</application> package in LFS.</para>
 @y
-<para>
-Don't add the <option>--enable-pthread</option> parameter to the
-<command>configure</command> command below else you will overwrite the
-pthread library and interface header installed by the
-<application>Glibc</application> package in LFS.
-</para>
+      <para>Don't add the <option>--enable-pthread</option> parameter to the
+      <command>configure</command> command below else you will overwrite the
+      pthread library and interface header installed by the
+      <application>Glibc</application> package in LFS.</para>
 @z
 
 @x
     <para>Install <application>Pth</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Pth</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Pth</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make test</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -152,11 +147,11 @@ pthread library and interface header installed by the
 
 @x
         <seg>pth-config</seg>
-        <seg>libpth.{so,a}</seg>
+        <seg>libpth.so</seg>
         <seg>/usr/share/doc/pth-&pth-version;</seg>
 @y
         <seg>pth-config</seg>
-        <seg>libpth.{so,a}</seg>
+        <seg>libpth.so</seg>
         <seg>/usr/share/doc/pth-&pth-version;</seg>
 @z
 
@@ -172,20 +167,17 @@ pthread library and interface header installed by the
           linker flags which are required to correctly compile and link the
           application against the pth(3) library.</para>
 @y
-<para>
-is a utility used to configure and build applications based on
-the pth(3) library. It can be used to query the C compiler and
-linker flags which are required to correctly compile and link the
-application against the pth(3) library.
-</para>
+          <para>is a utility used to configure and build applications based on
+          the pth(3) library. It can be used to query the C compiler and
+          linker flags which are required to correctly compile and link the
+          application against the pth(3) library.</para>
 @z
 
-@x libpth.{so,a}
+@x libpth.so
           <para>contains the API functions used by the GNU Portable Threads
           Library.</para>
 @y
-<para>
-GNU ポータブルスレッドライブラリ (GNU Portable Threads Library)
-にて用いられる API 関数を提供します。
-</para>
+          <para>
+          GNU ポータブルスレッドライブラリ (GNU Portable Threads Library) にて用いられる API 関数を提供します。
+          </para>
 @z

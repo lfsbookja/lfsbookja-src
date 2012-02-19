@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -26,14 +26,13 @@
     <application>GTK+</application> dialog boxes from the command line and
     shell scripts.</para>
 @y
-<para>
-<application>Zenity</application> は <application>gdialog</application>
-のクローンです。
-<application>GNOME</application>
-port of <application>dialog</application> which allows you to display
-<application>GTK+</application> dialog boxes from the command line and
-shell scripts.
-</para>
+    <para>
+    <application>Zenity</application> は <application>gdialog</application> のクローンです。
+    <application>GNOME</application>
+    port of <application>dialog</application> which allows you to display
+    <application>GTK+</application> dialog boxes from the command line and
+    shell scripts.
+    </para>
 @z
 
 @x
@@ -45,25 +44,25 @@ shell scripts.
 @x
         <para>Download (HTTP): <ulink url="&zenity-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&zenity-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&zenity-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&zenity-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&zenity-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&zenity-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &zenity-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &zenity-md5sum;</para>
+        <para>&Download; MD5 sum: &zenity-md5sum;</para>
 @z
 
 @x
         <para>Download size: &zenity-size;</para>
 @y
-        <para>ダウンロードサイズ: &zenity-size;</para>
+        <para>&DownloadSize;: &zenity-size;</para>
 @z
 
 @x
@@ -87,12 +86,12 @@ shell scripts.
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gtk2"/>, and
+    <xref linkend="gtk3"/>, and
     <xref linkend="which"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gtk2"/>, and
+    <xref linkend="gtk3"/>,
     <xref linkend="which"/></para>
 @z
 

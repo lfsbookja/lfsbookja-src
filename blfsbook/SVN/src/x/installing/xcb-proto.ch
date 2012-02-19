@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -30,11 +30,9 @@
     XML-XCB protocol descriptions that <application>libxcb</application>
     uses to generate the majority of its code and API.</para>
 @y
-<para>
-<application>xcb-proto</application>
-パッケージは、XML-XCB プロトコルによる記述を取り扱うものであり、
-<application>libxcb</application> パッケージが、そのコードや API の大半を生成するために利用しています。
-</para>
+    <para>
+    <application>xcb-proto</application> パッケージは、XML-XCB プロトコルによる記述を取り扱うものであり、<application>libxcb</application> パッケージが、そのコードや API の大半を生成するために利用しています。
+    </para>
 @z
 
 @x
@@ -46,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&xcb-proto-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&xcb-proto-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&xcb-proto-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&xcb-proto-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&xcb-proto-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&xcb-proto-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &xcb-proto-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &xcb-proto-md5sum;</para>
+        <para>&Download; MD5 sum: &xcb-proto-md5sum;</para>
 @z
 
 @x
         <para>Download size: &xcb-proto-size;</para>
 @y
-        <para>ダウンロードサイズ: &xcb-proto-size;</para>
+        <para>&DownloadSize;: &xcb-proto-size;</para>
 @z
 
 @x
@@ -87,10 +85,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="python"/></para>
+    <para role="required"><xref linkend="python2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="python"/></para>
+    <para role="required"><xref linkend="python2"/></para>
 @z
 
 @x
@@ -121,26 +119,25 @@
     <para>Install <application>xcb-proto</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>xcb-proto</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>xcb-proto</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x

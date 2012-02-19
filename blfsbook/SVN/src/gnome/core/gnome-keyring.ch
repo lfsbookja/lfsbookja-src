@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnome-keyring-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnome-keyring-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnome-keyring-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnome-keyring-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnome-keyring-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnome-keyring-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnome-keyring-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnome-keyring-md5sum;</para>
+        <para>&Download; MD5 sum: &gnome-keyring-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnome-keyring-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnome-keyring-size;</para>
+        <para>&DownloadSize;: &gnome-keyring-size;</para>
 @z
 
 @x
@@ -79,17 +79,19 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="gtk2"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="intltool"/>,
-    <xref linkend="libgcrypt"/>, and
-    <xref linkend="libtasn1"/></para>
+    <xref linkend="libgcrypt"/>,
+    <xref linkend="libtasn1"/>, and
+    <xref linkend="p11-kit"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="gtk2"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="intltool"/>,
     <xref linkend="libgcrypt"/>,
-    <xref linkend="libtasn1"/></para>
+    <xref linkend="libtasn1"/>,
+    <xref linkend="p11-kit"/></para>
 @z
 
 @x
@@ -150,16 +152,28 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gnome-keyring</parameter>: This parameter causes the libexec
-    files to be installed in the preferred location of
-    <filename class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename>
-    instead of
+    <para><command>patch -Np1 -i ...</command>: The patch allows testsuites from
+    other packages which invoke <application>gnome-keyring</application>, such as
+    <application>NetworkManager,</application> to run even if this package&apos;s
+    daemon is not running, for example when you are building a
+    <application>GNOME</application> desktop.</para>
+@y
+    <para><command>patch -Np1 -i ...</command>: The patch allows testsuites from
+    other packages which invoke <application>gnome-keyring</application>, such as
+    <application>NetworkManager,</application> to run even if this package&apos;s
+    daemon is not running, for example when you are building a
+    <application>GNOME</application> desktop.</para>
+@z
+
+@x
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-keyring</parameter>:
+    This parameter causes the libexec files to be installed in the preferred
+    location of <filename
+    class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename> instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
     <para>
-    <parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gnome-keyring</parameter>:
+    <parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-keyring</parameter>:
     このパラメーターは libexec ファイルのインストール先を <filename
     class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
     class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename> とします。
@@ -168,22 +182,26 @@
 
 @x
     <para><parameter>--with-pam-dir=/lib/security</parameter>: This parameter
-    specifies where the pam modules will be installed into.</para>
+    specifies where the pam modules will be installed: you can omit this if you
+    have not installed <application>Linux-PAM</application>.</para>
 @y
     <para>
     <parameter>--with-pam-dir=/lib/security</parameter>:
     このパラメーターは pam モジュールのインストール先ディレクトリを指定します。
+    <application>Linux-PAM</application> をインストールしていない場合は、このパラメーターを取り除きます。
     </para>
 @z
 
 @x
     <para><parameter>--with-dbus-services=/usr/share/dbus-1/services</parameter>:
     This parameter specifies where the <application>D-BUS</application> session
-    services directory is located.</para>
+    services directory is located: you can omit this if your GNOME_PREFIX is
+    <filename class="directory">/usr</filename>.</para>
 @y
     <para>
     <parameter>--with-dbus-services=/usr/share/dbus-1/services</parameter>:
     このパラメーターは <application>D-BUS</application> のセッションサービスディレクトリが位置しているディレクトリを指定します。
+    GNOME_PREFIX が <filename class="directory">/usr</filename> であれば、このパラメーターを省略できます。
     </para>
 @z
 
@@ -194,16 +212,6 @@
     <para>
     <parameter>--with-root-certs=/etc/ssl/certs</parameter>:
     このパラメーターは、信頼できるルート証明書 (root cetificates) が収容されているディレクトリを指定します。
-    </para>
-@z
-
-@x
-    <para><option>--disable-scrollkeeper</option>: Use this parameter if you
-    wish to disable the updates to the scrollkeeper database.</para>
-@y
-    <para>
-    <option>--disable-scrollkeeper</option>:
-    scrollkeeper のデータベースを更新したくない場合に本パラメーターを指定します。
     </para>
 @z
 
@@ -228,7 +236,7 @@
         <seg>gck-ssh-store-standalone.so, gck-user-store-standalone.so,
         gnome-keyring-pkcs11.so, gck-roots-store-standalone.so,
         gck-secret-store-standalone.so, libgcr.so, libgp11.so, and
-        pam_gnome_keyring.so</seg>
+        pam_gnome_keyring.so (if Linux-PAM was installed)</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/{gcr,gp11},
         lib/gnome-keyring/{devel,standalone},share/{gcr/ui,
         gnome-keyring/{introspect,ui},gtk-doc/html/{gcr,gp11}}}</seg>
@@ -237,7 +245,7 @@
         <seg>gck-ssh-store-standalone.so, gck-user-store-standalone.so,
         gnome-keyring-pkcs11.so, gck-roots-store-standalone.so,
         gck-secret-store-standalone.so, libgcr.so, libgp11.so,
-        pam_gnome_keyring.so</seg>
+        pam_gnome_keyring.so (Linux-PAM をインストールしていた場合)</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/{gcr,gp11},
         lib/gnome-keyring/{devel,standalone},share/{gcr/ui,
         gnome-keyring/{introspect,ui},gtk-doc/html/{gcr,gp11}}}</seg>

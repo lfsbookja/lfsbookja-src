@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2012-01-29 13:36:46 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnome-applets-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnome-applets-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnome-applets-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnome-applets-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnome-applets-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnome-applets-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnome-applets-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnome-applets-md5sum;</para>
+        <para>&Download; MD5 sum: &gnome-applets-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnome-applets-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnome-applets-size;</para>
+        <para>&DownloadSize;: &gnome-applets-size;</para>
 @z
 
 @x
@@ -181,6 +181,7 @@
     このパラメーターは、libexec ファイルを <filename
     class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
     class="directory">$GNOME_PREFIX/lib/gnome-applets</filename> にインストールします。
+    </para>
 @z
 
 @x

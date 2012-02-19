@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,9 +31,8 @@
   <para><application>NCPFS</application> contains client and administration
   tools for use with Novell networks.  See the User Notes for details.</para>
 @y
-<para>
-<application>NCPFS</application>
-は、 Novell ネットワークにて利用する管理ツールおよびクライアントプログラムを提供します。
-詳しくは &j-UserNotes; を参照してください。
-</para>
+  <para>
+  <application>NCPFS</application> は、 Novell ネットワークにて利用する管理ツールおよびクライアントプログラムを提供します。
+  詳しくは &j-UserNotes; を参照してください。
+  </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gegl-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gegl-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gegl-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gegl-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gegl-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gegl-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gegl-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gegl-md5sum;</para>
+        <para>&Download; MD5 sum: &gegl-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gegl-size;</para>
 @y
-        <para>ダウンロードサイズ: &gegl-size;</para>
+        <para>&DownloadSize;: &gegl-size;</para>
 @z
 
 @x
@@ -105,7 +105,7 @@
     <ulink url="http://www.lua.org/">Lua</ulink>,
     <ulink url="http://www.openexr.org">OpenEXR</ulink>,
     <xref linkend="pango"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
     <xref linkend="sdl"/>
     <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
@@ -131,12 +131,12 @@
     <ulink url="http://www.lua.org/">Lua</ulink>,
     <ulink url="http://www.openexr.org">OpenEXR</ulink>,
     <xref linkend="pango"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
     <xref linkend="sdl"/>
     <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
-    <xref linkend="w3m"/>,
-    <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
+    <xref linkend="w3m"/>
+    and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
     </para>
 @z
 

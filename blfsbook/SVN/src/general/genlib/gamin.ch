@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,14 +31,11 @@
     changes to the file system. Gamin is compatible with <ulink
     url="http://oss.sgi.com/projects/fam/">FAM</ulink>.</para>
 @y
-<para>
-<application>Gamin</application>
-パッケージは、ファイル変更監視 (File Alteration Monitor)
-機能を提供します。
-この機能はファイルシステム上への変更を、アプリケーションに通知するために利用することができます。
-Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>
-と互換性があります。
-</para>
+    <para>
+    <application>Gamin</application> パッケージは、ファイル変更監視 (File Alteration Monitor) 機能を提供します。
+    この機能はファイルシステム上への変更を、アプリケーションに通知するために利用することができます。
+    Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink> と互換性があります。
+    </para>
 @z
 
 @x
@@ -105,10 +102,10 @@ Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python"/></para>
+    <para role="optional"><xref linkend="python2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="python"/></para>
+    <para role="optional"><xref linkend="python2"/></para>
 @z
 
 @x
@@ -129,28 +126,27 @@ Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>
     <para>Install <application>Gamin</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Gamin</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Gamin</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>. Note
     that some tests may display errors.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-テストの中にはエラーが表示されるものもあります。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    テストの中にはエラーが表示されるものもあります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
@@ -163,10 +159,10 @@ Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>
     <para><option>--disable-static</option>: This switch prevents most of the
     static libraries being built.</para>
 @y
-<para>
-<option>--disable-static</option>:
-このパラメーターは、ほぼすべてのスタティックライブラリをビルドしないようにします。
-</para>
+    <para>
+    <option>--disable-static</option>:
+    このパラメーターは、ほぼすべてのスタティックライブラリをビルドしないようにします。
+    </para>
 @z
 
 @x
@@ -187,10 +183,10 @@ Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>
       <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> for
       details.</para>
 @y
-<para>
-一般に設定を行う必要はなく、たいていのユーザーにとってはデフォルトのオプション設定により十分動作します。
-詳しくは <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> を参照してください。
-</para>
+      <para>
+      一般に設定を行う必要はなく、たいていのユーザーにとってはデフォルトのオプション設定により十分動作します。
+      詳しくは <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> を参照してください。
+      </para>
 @z
 
 @x
@@ -233,23 +229,23 @@ Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>
         <para>is the file alteration monitor daemon that is started on demand
         for each user.</para>
 @y
-<para>
-ファイル変更監視デーモンであり、各ユーザーからの求めに応じて起動します。
-</para>
+        <para>
+        ファイル変更監視デーモンであり、各ユーザーからの求めに応じて起動します。
+        </para>
 @z
 
 @x libgamin.{so,a}
         <para>contains functions that support the file allocation monitor.</para>
 @y
-<para>
-ファイル変更監視機能をサポートする関数を提供します。
-</para>
+        <para>
+        ファイル変更監視機能をサポートする関数を提供します。
+        </para>
 @z
 
 @x libfam.{so,a}
         <para>contains functions that provide compatibility with FAM.</para>
 @y
-<para>
-FAM との互換関数を提供します。
-</para>
+        <para>
+        FAM との互換関数を提供します。
+        </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -43,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&telepathy-glib-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&telepathy-glib-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&telepathy-glib-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&telepathy-glib-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&telepathy-glib-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&telepathy-glib-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &telepathy-glib-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &telepathy-glib-md5sum;</para>
+        <para>&Download; MD5 sum: &telepathy-glib-md5sum;</para>
 @z
 
 @x
         <para>Download size: &telepathy-glib-size;</para>
 @y
-        <para>ダウンロードサイズ: &telepathy-glib-size;</para>
+        <para>&DownloadSize;: &telepathy-glib-size;</para>
 @z
 
 @x
@@ -86,12 +86,12 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="libxslt"/>, and
-    <xref linkend="python"/></para>
+    <xref linkend="python2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="libxslt"/>,
-    <xref linkend="python"/></para>
+    <xref linkend="python2"/></para>
 @z
 
 @x

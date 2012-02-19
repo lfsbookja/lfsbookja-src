@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                          $
 %
 @x
@@ -31,58 +31,44 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&avahi-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&avahi-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&avahi-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&avahi-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&avahi-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&avahi-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &avahi-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &avahi-md5sum;</para>
+        <para>&Download; MD5 sum: &avahi-md5sum;</para>
 @z
 
 @x
         <para>Download size: &avahi-size;</para>
 @y
-        <para>ダウンロードサイズ: &avahi-size;</para>
+        <para>&DownloadSize;: &avahi-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &avahi-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &avahi-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &avahi-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &avahi-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &avahi-time;</para>
+        <para>&Estimatedbuildtime;: &avahi-time;</para>
 @z
-
-% @x
-%     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-% @y
-%     <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
-% @z
-% 
-% @x
-%         <para>Required patch: <ulink
-%         url="&patch-root;/avahi-&avahi-version;-lfs_initscript_fixes-1.patch"/></para>
-% @y
-%         <para>必要なパッチ: <ulink
-%         url="&patch-root;/avahi-&avahi-version;-lfs_initscript_fixes-1.patch"/></para>
-% @z
 
 @x
     <bridgehead renderas="sect3">avahi Dependencies</bridgehead>
@@ -95,7 +81,7 @@
     <para role="required"><xref linkend="intltool"/> and
     <xref linkend="glib2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="intltool"/>,
     <xref linkend="glib2"/></para>
 @z
@@ -108,19 +94,19 @@
     <xref linkend="gtk3"/>,
     <xref linkend="libdaemon"/>,
     <xref linkend="libglade"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="pygtk"/>,
     <xref linkend="qt"/>, and
     <xref linkend="qt4"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-python"/>,
     <xref linkend="gobject-introspection"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="gtk3"/>,
     <xref linkend="libdaemon"/>,
     <xref linkend="libglade"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="pygtk"/>,
     <xref linkend="qt"/>,
     <xref linkend="qt4"/></para>
@@ -130,7 +116,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/avahi"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/avahi"/></para>
 @z
 
@@ -175,9 +161,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -191,7 +175,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -305,7 +289,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -313,9 +297,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -353,7 +337,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x avahi-autoipd

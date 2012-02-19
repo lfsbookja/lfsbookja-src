@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,43 +37,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&libpcap-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libpcap-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libpcap-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libpcap-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libpcap-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libpcap-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libpcap-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libpcap-md5sum;</para>
+        <para>&Download; MD5 sum: &libpcap-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libpcap-size;</para>
 @y
-        <para>ダウンロードサイズ: &libpcap-size;</para>
+        <para>&DownloadSize;: &libpcap-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &libpcap-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libpcap-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libpcap-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libpcap-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libpcap-time;</para>
+        <para>&Estimatedbuildtime;: &libpcap-time;</para>
 @z
 
 @x
@@ -90,7 +90,7 @@
     network monitoring cards and
     <ulink url="http://www.bluez.org">BlueZ</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <ulink url="http://www.endace.com/">DAG</ulink> や <ulink
     url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア,
@@ -102,7 +102,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libpcap"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libpcap"/></para>
 @z
 
@@ -124,9 +124,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -140,7 +138,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -148,9 +146,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -166,7 +164,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libpcap-config

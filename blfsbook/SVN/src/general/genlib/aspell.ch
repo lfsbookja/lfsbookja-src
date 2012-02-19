@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&aspell-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&aspell-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&aspell-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&aspell-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&aspell-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&aspell-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &aspell-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &aspell-md5sum;</para>
+        <para>&Download; MD5 sum: &aspell-md5sum;</para>
 @z
 
 @x
         <para>Download size: &aspell-size;</para>
 @y
-        <para>ダウンロードサイズ: &aspell-size;</para>
+        <para>&DownloadSize;: &aspell-size;</para>
 @z
 
 @x
@@ -109,7 +109,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="which"/> (for the dictionaries)</para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="which"/> (辞書のために必要)</para>
 @z
 
@@ -117,7 +117,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/aspell"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/aspell"/></para>
 @z
 
@@ -139,9 +139,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -156,9 +154,9 @@
   <para>If you do not plan to install <application>Ispell</application>,
   then copy the wrapper script <command>ispell</command>:</para>
 @y
-    <para>
-    <application>Ispell</application> をインストールしない場合は、ラッパースクリプト <command>ispell</command> をコピーします。
-    </para>
+  <para>
+  <application>Ispell</application> をインストールしない場合は、ラッパースクリプト <command>ispell</command> をコピーします。
+  </para>
 @z
 
 @x
@@ -179,7 +177,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -204,7 +202,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -212,9 +210,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -234,7 +232,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x aspell

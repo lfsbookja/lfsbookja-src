@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,13 +24,11 @@
     <filename class="libraryfile">librsvg</filename> libraries and tools used to
     manipulate, convert and view Scalable Vector Graphic (SVG) images.</para>
 @y
-<para>
-<application>librsvg</application>
-パッケージは <filename class="libraryfile">librsvg</filename>
-ライブラリと関連ツールを提供します。
-これらは、グラフィックイメージフォーマット SVG (Scalable Vector Graphic)
-を取り扱い、フォーマット変換や表示を行います。
-</para>
+    <para>
+    <application>librsvg</application> パッケージは <filename
+    class="libraryfile">librsvg</filename> ライブラリと関連ツールを提供します。
+    これらは、グラフィックイメージフォーマット SVG (Scalable Vector Graphic) を取り扱い、フォーマット変換や表示を行います。
+    </para>
 @z
 
 @x
@@ -42,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&librsvg-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&librsvg-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&librsvg-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&librsvg-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&librsvg-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&librsvg-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &librsvg-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &librsvg-md5sum;</para>
+        <para>&Download; MD5 sum: &librsvg-md5sum;</para>
 @z
 
 @x
         <para>Download size: &librsvg-size;</para>
 @y
-        <para>ダウンロードサイズ: &librsvg-size;</para>
+        <para>&DownloadSize;: &librsvg-size;</para>
 @z
 
 @x
@@ -105,14 +103,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
     <xref linkend="docbook-utils"/>, and
-    <xref linkend="python"/>, providing a legacy wrapper interface
+    <xref linkend="python2"/>, providing a legacy wrapper interface
     <command>rsvg</command> for the newer
     <command>rsvg-convert</command>.</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="docbook-utils"/>,
-    <xref linkend="python"/>, providing a legacy wrapper interface
+    <xref linkend="docbook-utils"/>, and
+    <xref linkend="python2"/>, providing a legacy wrapper interface
     <command>rsvg</command> for the newer
     <command>rsvg-convert</command>.</para>
 @z
@@ -135,25 +133,25 @@
     <para>Install <application>librsvg</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>librsvg</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>librsvg</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -168,12 +166,11 @@
     command. It will also prevent the existing documentation in the source
     tree from being installed.</para>
 @y
-<para>
-<option>--disable-gtk-doc</option>:
-このパラメーターは、<command>make</command>
-コマンドの実行時に、ドキュメントを再構築しないようにします。
-同時に、ソースツリー内に既に用意されているドキュメントもインストールしないようにします。
-</para>
+    <para>
+    <option>--disable-gtk-doc</option>:
+    このパラメーターは、<command>make</command> コマンドの実行時に、ドキュメントを再構築しないようにします。
+    同時に、ソースツリー内に既に用意されているドキュメントもインストールしないようにします。
+    </para>
 @z
 
 @x
@@ -211,51 +208,51 @@
 @x rsvg
           <para>is a legacy wrapper interface to rsvg-convert.</para>
 @y
-<para>
-is a legacy wrapper interface to rsvg-convert.
-</para>
+          <para>
+          is a legacy wrapper interface to rsvg-convert.
+          </para>
 @z
 
 @x rsvg-convert
           <para>is used to covert SVG images into PNG, JPEG and
           ICO raster images.</para>
 @y
-<para>
-is used to covert SVG images into PNG, JPEG and
-ICO raster images.
-</para>
+          <para>
+          is used to covert SVG images into PNG, JPEG and
+          ICO raster images.
+          </para>
 @z
 
 @x rsvg-view
           <para>is used to view an SVG file in an <application>X</application>
           window.</para>
 @y
-<para>
-is used to view an SVG file in an <application>X</application>
-window.
-</para>
+          <para>
+          is used to view an SVG file in an <application>X</application>
+          window.
+          </para>
 @z
 
 @x librsvg-2.{so,a}
           <para>provide the functions to render Scalable Vector Graphics.</para>
 @y
-<para>
-Scalable Vector Graphics を描画するための関数を提供します。
-</para>
+          <para>
+          Scalable Vector Graphics を描画するための関数を提供します。
+          </para>
 @z
 
 @x libsvg.{so,a}
           <para>is a <application>GTK</application> engines module.</para>
 @y
-<para>
-<application>GTK</application> エンジンモジュール。
-</para>
+          <para>
+          <application>GTK</application> エンジンモジュール。
+          </para>
 @z
 
 @x svg_loader.{so,a}
           <para>is a <application>GTK</application> loaders module.</para>
 @y
-<para>
-<application>GTK</application> ローダーモジュール。
-</para>
+          <para>
+          <application>GTK</application> ローダーモジュール。
+          </para>
 @z

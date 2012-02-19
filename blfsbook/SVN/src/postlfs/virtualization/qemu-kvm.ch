@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -82,7 +82,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="python"/>,
+      <xref linkend="python2"/>,
       <xref linkend="sdl"/>, and
       <xref linkend="x-window-system"/>
     </para>
@@ -90,7 +90,7 @@
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="python"/>,
+      <xref linkend="python2"/>,
       <xref linkend="sdl"/>,
       <xref linkend="x-window-system"/>
     </para>

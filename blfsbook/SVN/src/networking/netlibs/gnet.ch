@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -33,43 +33,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&gnet-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnet-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnet-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnet-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnet-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnet-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnet-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnet-md5sum;</para>
+        <para>&Download; MD5 sum: &gnet-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnet-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnet-size;</para>
+        <para>&DownloadSize;: &gnet-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &gnet-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gnet-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gnet-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gnet-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gnet-time;</para>
+        <para>&Estimatedbuildtime;: &gnet-time;</para>
 @z
 
 @x
@@ -82,7 +82,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><!--<xref linkend="GLib"/> or--><xref linkend="glib2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><!--<xref linkend="GLib"/> or--><xref linkend="glib2"/></para>
 @z
 
@@ -90,7 +90,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gnet"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gnet"/></para>
 @z
 
@@ -112,9 +112,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -128,7 +126,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -136,9 +134,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -156,7 +154,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libgnet-2.0.{so,a}

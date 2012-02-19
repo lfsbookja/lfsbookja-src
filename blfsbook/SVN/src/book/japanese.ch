@@ -10,7 +10,7 @@
 
   <sect1info>
     <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
+    <date>$Date::                           $</date>
   </sect1info>
 
   <title>日本語訳情報</title>

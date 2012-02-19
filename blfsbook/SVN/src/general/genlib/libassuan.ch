@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -26,23 +26,25 @@
 @z
 
 @x
-    <para>The <application>Libassuan</application> package contains an IPC
-    library used by some of the other <application>GnuPG</application> related
-    packages. <application>Libassuan</application>'s primary use is to allow a
-    client to interact with a non-persistent server.
-    <application>Libassuan</application> is not, however, limited to use with
-    <application>GnuPG</application> servers and clients. It was designed to be
-    flexible enough to meet the demands of many transaction based environments
-    with non-persistent servers.</para>
+    <para>The <application>Libassuan</application> package contains an inter
+    process communication library used by some of the other
+    <application>GnuPG</application> related packages.
+    <application>Libassuan</application>'s primary use is to allow a client to
+    interact with a non-persistent server. <application>Libassuan</application>
+    is not, however, limited to use with <application>GnuPG</application>
+    servers and clients. It was designed to be flexible enough to meet the
+    demands of many transaction based environments with non-persistent
+    servers.</para>
 @y
-    <para>The <application>Libassuan</application> package contains an IPC
-    library used by some of the other <application>GnuPG</application> related
-    packages. <application>Libassuan</application>'s primary use is to allow a
-    client to interact with a non-persistent server.
-    <application>Libassuan</application> is not, however, limited to use with
-    <application>GnuPG</application> servers and clients. It was designed to be
-    flexible enough to meet the demands of many transaction based environments
-    with non-persistent servers.</para>
+    <para>The <application>Libassuan</application> package contains an inter
+    process communication library used by some of the other
+    <application>GnuPG</application> related packages.
+    <application>Libassuan</application>'s primary use is to allow a client to
+    interact with a non-persistent server. <application>Libassuan</application>
+    is not, however, limited to use with <application>GnuPG</application>
+    servers and clients. It was designed to be flexible enough to meet the
+    demands of many transaction based environments with non-persistent
+    servers.</para>
 @z
 
 @x
@@ -54,25 +56,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libassuan-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libassuan-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libassuan-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libassuan-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libassuan-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libassuan-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libassuan-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libassuan-md5sum;</para>
+        <para>&Download; MD5 sum: &libassuan-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libassuan-size;</para>
 @y
-        <para>ダウンロードサイズ: &libassuan-size;</para>
+        <para>&DownloadSize;: &libassuan-size;</para>
 @z
 
 @x
@@ -102,28 +104,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="pth"/></para>
-@y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="pth"/></para>
-@z
-
-@x
-    <para>Other packages (such as <application>GnuPG-2</application>) will
-    require that the <application>Libassuan</application> library is linked to
-    the <application>Pth</application> library. Ensure
-    <application>Pth</application> is installed before beginning the build if
-    you have any doubts.</para>
-@y
-    <para>Other packages (such as <application>GnuPG-2</application>) will
-    require that the <application>Libassuan</application> library is linked to
-    the <application>Pth</application> library. Ensure
-    <application>Pth</application> is installed before beginning the build if
-    you have any doubts.</para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libassuan"/></para>
 @y
@@ -148,19 +128,19 @@
 
 @x
     <para>If you wish to build alternate formats of the documentation, you
-    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/> installed,
-    then issue the following command:</para>
+    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
+    installed, then issue the following command:</para>
 @y
     <para>If you wish to build alternate formats of the documentation, you
-    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/> installed,
-    then issue the following command:</para>
+    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
+    installed, then issue the following command:</para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make test</command>.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
     </para>
 @z
 
@@ -204,11 +184,11 @@
 
 @x
         <seg>libassuan-config</seg>
-        <seg>libassuan.a and libassuan-pth.a</seg>
+        <seg>libassuan.so</seg>
         <seg>/usr/share/doc/libassuan-&libassuan-version;</seg>
 @y
         <seg>libassuan-config</seg>
-        <seg>libassuan.a, libassuan-pth.a</seg>
+        <seg>libassuan.so</seg>
         <seg>/usr/share/doc/libassuan-&libassuan-version;</seg>
 @z
 
@@ -220,33 +200,20 @@
 
 @x libassuan-config
           <para>is a utility used to configure and build applications based on
-          the libassuan(3) library. It can be used to query the C compiler and
+          the libassuan library. It can be used to query the C compiler and
           linker flags which are required to correctly compile and link the
-          application against the libassuan(3) library.</para>
+          application against the libassuan library.</para>
 @y
-          <para>
-          
-          is a utility used to configure and build applications based on
-          the libassuan(3) library. It can be used to query the C compiler and
+          <para>is a utility used to configure and build applications based on
+          the libassuan library. It can be used to query the C compiler and
           linker flags which are required to correctly compile and link the
-          application against the libassuan(3) library.
-          </para>
+          application against the libassuan library.</para>
 @z
 
-@x libassuan.a
-          <para>is the IPC library.</para>
+@x libassuan.so
+          <para>is an inter process communication library which implements the
+          Assuan protocol.</para>
 @y
-          <para>
-          IPC ライブラリ。
-          </para>
-@z
-
-@x libassuan-pth.a
-          <para>is the IPC library linked with the GNU Portable Threads
-          Library.</para>
-@y
-          <para>
-          is the IPC library linked with the GNU Portable Threads
-          Library.
-          </para>
+          <para>is an inter process communication library which implements the
+          Assuan protocol.</para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,12 +25,11 @@
   address and connect to a LAN and other networks (such as the Internet).
   The most popular methods (DHCP and PPP) are covered in this chapter.</para>
 @y
-<para>
-LFS ブックでは LAN 環境に対してスタティックな IP アドレス設定を通じてアクセスすることをおこないました。
-IP アドレスを取得する方法や、LAN やその他のネットワーク (例えばインターネット)
-にアクセスする方法は、他にもあります。
-本章では、代表的な方法 (DHCP や PPP など) について説明します。
-</para>
+  <para>
+  LFS ブックでは LAN 環境に対してスタティックな IP アドレス設定を通じてアクセスすることをおこないました。
+  IP アドレスを取得する方法や、LAN やその他のネットワーク (例えばインターネット) にアクセスする方法は、他にもあります。
+  本章では、代表的な方法 (DHCP や PPP など) について説明します。
+  </para>
 @z
 
 @x
@@ -58,4 +57,3 @@ IP アドレスを取得する方法や、LAN やその他のネットワーク 
   is also a variant (PPPoE) that works over Ethernet and is used by cable
   providers to authenticate the Internet connections.</para>
 @z
-

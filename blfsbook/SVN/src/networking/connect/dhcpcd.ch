@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,7 +22,7 @@
 @x
     <title>Introduction to dhcpcd</title>
 @y
-    <title>dhcpcd の概要</title>
+    <title>&IntroductionTo1;dhcpcd&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,60 +32,57 @@
     addresses.</para>
 @y
     <para>
-    <application>dhcpcd</application> は、RFC2131 にて定義されている
-    DHCP クライアントの実装です。ネットワークアドレスを自動割振りする
-    DHCP を利用している環境にて、各コンピューターをネットワーク接続する
-    ために利用することができます。
+    <application>dhcpcd</application> は、RFC2131 にて定義されている DHCP クライアントの実装です。ネットワークアドレスを自動割振りする DHCP を利用している環境にて、各コンピューターをネットワーク接続するために利用することができます。
     </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&dhcpcd-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&dhcpcd-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&dhcpcd-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&dhcpcd-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&dhcpcd-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&dhcpcd-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &dhcpcd-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &dhcpcd-md5sum;</para>
+        <para>&Download; MD5 sum: &dhcpcd-md5sum;</para>
 @z
 
 @x
         <para>Download size: &dhcpcd-size;</para>
 @y
-        <para>ダウンロードサイズ: &dhcpcd-size;</para>
+        <para>&DownloadSize;: &dhcpcd-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &dhcpcd-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &dhcpcd-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &dhcpcd-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &dhcpcd-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &dhcpcd-time;</para>
+        <para>&Estimatedbuildtime;: &dhcpcd-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/dhcpcd"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/dhcpcd"/></para>
 @z
 
@@ -107,9 +104,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -144,13 +139,13 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -262,7 +257,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -270,9 +265,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -288,7 +283,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x dhcpcd

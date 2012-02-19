@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,11 +24,10 @@
     country, language and currency names. This is useful when used as a central
     database for accessing this data.</para>
 @y
-<para>
-<application>ISO Codes</application>
-パッケージは、国、言語、通貨の名称一覧を提供します。
-これは、名称一覧データを管理する中心的なデータベースとして活用することができます。
-</para>
+    <para>
+    <application>ISO Codes</application> パッケージは、国、言語、通貨の名称一覧を提供します。
+    これは、名称一覧データを管理する中心的なデータベースとして活用することができます。
+    </para>
 @z
 
 @x
@@ -81,10 +80,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="python"/></para>
+    <para role="required"><xref linkend="python2"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="python"/></para>
+    <para role="required"><xref linkend="python2"/></para>
 @z
 
 @x
@@ -105,26 +104,25 @@
     <para>Install <application>ISO Codes</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>ISO Codes</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>ISO Codes</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x

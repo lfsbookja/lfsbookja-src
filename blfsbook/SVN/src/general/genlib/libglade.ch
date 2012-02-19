@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,11 +24,10 @@
     <filename class="libraryfile">libglade</filename> libraries. These are useful
     for loading Glade interface files in a program at runtime.</para>
 @y
-<para>
-<application>libglade</application>
-パッケージは <filename class="libraryfile">libglade</filename> ライブラリを提供します。
-これはプログラム実行時に Glade インターフェースファイルをロードする際に利用します。
-</para>
+    <para>
+    <application>libglade</application> パッケージは <filename class="libraryfile">libglade</filename> ライブラリを提供します。
+    これはプログラム実行時に Glade インターフェースファイルをロードする際に利用します。
+    </para>
 @z
 
 @x
@@ -40,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libglade-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libglade-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libglade-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libglade-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libglade-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libglade-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libglade-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libglade-md5sum;</para>
+        <para>&Download; MD5 sum: &libglade-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libglade-size;</para>
 @y
-        <para>ダウンロードサイズ: &libglade-size;</para>
+        <para>&DownloadSize;: &libglade-size;</para>
 @z
 
 @x
@@ -91,11 +90,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python"/>
+    <para role="optional"><xref linkend="python2"/>
     and <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="python"/>,
+    <para role="optional"><xref linkend="python2"/>,
     <xref linkend="gtk-doc"/></para>
 @z
 

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -56,45 +56,19 @@
 @x
         <para>Download (HTTP): <ulink url="&xulrunner-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&xulrunner-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&xulrunner-download-http;"/></para>
 @z
-
-% @x
-%         <para>Download (FTP): <ulink url="&xulrunner-download-ftp;"/></para>
-% 	<tip><para>When a new version of <application>Firefox</application> is
-% 	released, sometimes a corresponding new version of
-% 	<application>Xulrunner</application> appears at the same time. At other
-% 	times it appears several days later or not at all. So far in the
-% 	<application>Firefox-3.x</application> series, every new release has
-% 	created xulrunner libraries with a corresponding new version. Whenever
-% 	a separate Xulrunner tarball has been released, it has been bitwise
-% 	identical to the corresponding Firefox tarball. Use the
-% 	<application>Firefox</application> tarball to save downloading this
-% 	large package twice.</para></tip>
-% @y
-%         <para>ダウンロード (FTP): <ulink url="&xulrunner-download-ftp;"/></para>
-% 	<tip>
-% 	<para>
-% 	<application>Firefox</application> の新バージョンがリリースされると、対応する <application>Xulrunner</application> も同時にリリースされることがあります。
-% 	あるいは数日後にリリースされることもあり、リリースされないこともあります。
-% 	<application>Firefox-3.x</application> 系までであれば、新バージョンのリリースに合わせて Xulrunner ライブラリも生成できるものとなっています。
-% 	Xulrunner の tarball は個別にリリースされますが、これに対応する	Firefox の tarball と全く変わりがありません。
-% 	したがってここでは <application>Firefox</application> の tarball を利用してください。
-% 	tarball が大きなサイズであるため、同じものを二度もダウンロードするようなことは避けるためです。
-% 	</para>
-% 	</tip>
-% @z
 
 @x
         <para>Download MD5 sum: &xulrunner-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &xulrunner-md5sum;</para>
+        <para>&Download; MD5 sum: &xulrunner-md5sum;</para>
 @z
 
 @x
         <para>Download size: &xulrunner-size;</para>
 @y
-        <para>ダウンロードサイズ: &xulrunner-size;</para>
+        <para>&DownloadSize;: &xulrunner-size;</para>
 @z
 
 @x
@@ -129,7 +103,7 @@
     <para>Note: <application>libjpeg</application> and
     <application>libpng</application> (patched for apng support) should have
     been installed before <application>gdk-pixbuf</application> and should
-    exist on your system. If for some strange reason you haven&apos;t installed
+    exist on your system. If for some strange reason you haven't installed
     them, you should remove the <option>--with-system-jpeg</option> and
     <option>--with-system-png</option> options from the
     <filename>mozconfig</filename> file created below.</para>
@@ -137,7 +111,7 @@
     <para>Note: <application>libjpeg</application> and
     <application>libpng</application> (patched for apng support) should have
     been installed before <application>gdk-pixbuf</application> and should
-    exist on your system. If for some strange reason you haven&apos;t installed
+    exist on your system. If for some strange reason you haven't installed
     them, you should remove the <option>--with-system-jpeg</option> and
     <option>--with-system-png</option> options from the
     <filename>mozconfig</filename> file created below.</para>

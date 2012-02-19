@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -54,16 +54,14 @@
     Installation of the modules shown on this page is meant to follow from top
     to bottom to handle optional dependencies in each module.</para>
 @y
-<para>
-<application>Python</application>
-モジュールパッケージは、プログラミング言語 <application>Python</application>
-に対して有用なオブジェクトを提供します。
-BLFS にて取り上げるモジュールは以下のとおりです。
-本ページにて示す各モジュールのインストール手順は、
-along with their dependencies.
-Installation of the modules shown on this page is meant to follow from top
-to bottom to handle optional dependencies in each module.
-</para>
+    <para>
+    <application>Python</application> モジュールパッケージは、プログラミング言語 <application>Python</application> に対して有用なオブジェクトを提供します。
+    BLFS にて取り上げるモジュールは以下のとおりです。
+    本ページにて示す各モジュールのインストール手順は、
+    along with their dependencies.
+    Installation of the modules shown on this page is meant to follow from top
+    to bottom to handle optional dependencies in each module.
+    </para>
 @z
 
 @x
@@ -80,14 +78,12 @@ to bottom to handle optional dependencies in each module.
       validating, parsing and manipulating XML files using Python
       programs.</para>
 @y
-<para>
-<application>PyXML</application> package contains a validating
-XML parser, an implementation of the SAX and DOM programming interfaces,
-an interface to the Expat parser, and a C helper module that can speed up
-<filename>xmllib.py</filename> by a factor of five. This is useful for
-validating, parsing and manipulating XML files using Python
-programs.
-</para>
+      <para>The <application>PyXML</application> package contains a validating
+      XML parser, an implementation of the SAX and DOM programming interfaces,
+      an interface to the Expat parser, and a C helper module that can speed up
+      <filename>xmllib.py</filename> by a factor of five. This is useful for
+      validating, parsing and manipulating XML files using Python
+      programs.</para>
 @z
 
 @x
@@ -140,10 +136,10 @@ programs.
 
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="python"/></para>
+      <para role="required"><xref linkend="python2"/></para>
 @y
       <bridgehead renderas="sect5">&j-Required;</bridgehead>
-      <para role="required"><xref linkend="python"/></para>
+      <para role="required"><xref linkend="python2"/></para>
 @z
 
 @x
@@ -172,19 +168,17 @@ programs.
 @x
       <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
 @z
 
 @x
       <para>To run the regression tests, the package must first be installed.
       Then, as an unprivileged user, issue the following commands:</para>
 @y
-<para>
-To run the regression tests, the package must first be installed.
-Then, as an unprivileged user, issue the following commands:
-</para>
+      <para>To run the regression tests, the package must first be installed.
+      Then, as an unprivileged user, issue the following commands:</para>
 @z
 
 @x
@@ -198,17 +192,17 @@ Then, as an unprivileged user, issue the following commands:
       <filename>*.py</filename> files to a staging area and compiles the C
       extensions.</para>
 @y
-<para><command>python setup.py build</command>: This command copies the
-<filename>*.py</filename> files to a staging area and compiles the C
-extensions.</para>
+      <para><command>python setup.py build</command>: This command copies the
+      <filename>*.py</filename> files to a staging area and compiles the C
+      extensions.</para>
 @z
 
 @x
       <para><command>python setup.py install</command>: This command installs
       the package.</para>
 @y
-<para><command>python setup.py install</command>: This command installs
-the package.</para>
+      <para><command>python setup.py install</command>: This command installs
+      the package.</para>
 @z
 
 @x
@@ -248,9 +242,9 @@ the package.</para>
 @x xmlproc_parse
             <para>is a simple XML file parser using the xmlproc parser.</para>
 @y
-<para>
-is a simple XML file parser using the xmlproc parser.
-</para>
+            <para>
+            is a simple XML file parser using the xmlproc parser.
+            </para>
 @z
 
 @x xmlproc_val
@@ -264,4 +258,3 @@ is a simple XML file parser using the xmlproc parser.
 @y
       <title>Pycairo モジュールの概要</title>
 @z
-

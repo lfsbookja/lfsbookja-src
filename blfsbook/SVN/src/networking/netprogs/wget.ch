@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,43 +31,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&wget-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&wget-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&wget-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&wget-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&wget-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&wget-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &wget-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &wget-md5sum;</para>
+        <para>&Download; MD5 sum: &wget-md5sum;</para>
 @z
 
 @x
         <para>Download size: &wget-size;</para>
 @y
-        <para>ダウンロードサイズ: &wget-size;</para>
+        <para>&DownloadSize;: &wget-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &wget-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &wget-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &wget-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &wget-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &wget-time;</para>
+        <para>&Estimatedbuildtime;: &wget-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     (see the standard Perl <xref linkend="perl-standard-install"/>), and
     <ulink url="http://www.inet.no/dante/">Dante</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="openssl"/> または <xref linkend="gnutls"/>,
     <xref linkend="libidn"/>, Perl Module HTTP::Server (テストスイート実行のため) 
     (標準的な Perl モジュール <xref linkend="perl-standard-install"/> を参照),
@@ -94,7 +94,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/wget"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/wget"/></para>
 @z
 
@@ -132,7 +132,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -169,7 +169,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>設定ファイル</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -189,7 +189,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -197,9 +197,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -215,7 +215,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x wget

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -28,12 +28,12 @@
   building the development version of LFS provides a stable and very modern
   Linux system.</para>
 @y
-<para>
-本書は BLFS ブック開発版です。
-LFS ブック開発版を使ってビルドされたシステムに対して利用することを意図しています。
-開発版という位置づけではありますが、手順の説明には正確さを目指し、信頼のおける内容となるよう最善を尽くしています。
-LFS 開発版の構築に続けて本書による手順を進めていただければ、安定した最新の Linux システムが構築できることを実感していただけるはずです。
-</para>
+  <para>
+  本書は BLFS ブック開発版です。
+  LFS ブック開発版を使ってビルドされたシステムに対して利用することを意図しています。
+  開発版という位置づけではありますが、手順の説明には正確さを目指し、信頼のおける内容となるよう最善を尽くしています。
+  LFS 開発版の構築に続けて本書による手順を進めていただければ、安定した最新の Linux システムが構築できることを実感していただけるはずです。
+  </para>
 @z
 
 @x
@@ -42,11 +42,11 @@ LFS 開発版の構築に続けて本書による手順を進めていただけ�
   there could be incompatibilities. Instead, use the matching BLFS version
   which should be available on all the mirrors.</para>
 @y
-<para>
-LFS のリリースバージョン (本書の対応バージョンは LFS-6.3) をビルドしている場合、同一バージョンの BLFS は採用したくないと思われることでしょう。
-なぜならその BLFS バージョンでは互換性がないためです。
-同一バージョンの BLFS は、さまざまなミラーサイトから入手してください。
-</para>
+  <para>
+  LFS のリリースバージョン (本書の対応バージョンは LFS-6.3) をビルドしている場合、同一バージョンの BLFS は採用したくないと思われることでしょう。
+  なぜならその BLFS バージョンでは互換性がないためです。
+  同一バージョンの BLFS は、さまざまなミラーサイトから入手してください。
+  </para>
 @z
 
 @x

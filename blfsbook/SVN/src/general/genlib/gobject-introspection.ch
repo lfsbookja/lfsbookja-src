@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gobject-introspection-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gobject-introspection-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gobject-introspection-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gobject-introspection-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gobject-introspection-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gobject-introspection-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gobject-introspection-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gobject-introspection-md5sum;</para>
+        <para>&Download; MD5 sum: &gobject-introspection-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gobject-introspection-size;</para>
 @y
-        <para>ダウンロードサイズ: &gobject-introspection-size;</para>
+        <para>&DownloadSize;: &gobject-introspection-size;</para>
 @z
 
 @x
@@ -77,15 +77,15 @@
       <xref linkend="glib2"/>,
       <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
         <filename class='libraryfile'>libffi</filename> is built), and
-      <xref linkend="python"/>
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
       <xref linkend="libffi"/> または <xref linkend="gcc"/>
-        (<filename class='libraryfile'>libffi</filename> をビルドするために Java がビルドされたもの),
-      <xref linkend="python"/>
+        (<filename class='libraryfile'>libffi</filename> をビルドするための Java のビルドが必要),
+      <xref linkend="python2"/>
     </para>
 @z
 

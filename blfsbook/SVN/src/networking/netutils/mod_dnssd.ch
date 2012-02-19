@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,58 +32,55 @@
     <application>Apache</application> to advertise itself and the websites
     available to clients compatible with the protocol.</para>
 @y
-<para>
-<application>mod_dnssd</application>
-パッケージは、<application>Avahi</application>
-を用いた DNS-SD を経由して Zeroconf 機能を付与する、
-<application>Apache</application> の HTTPD モジュールです。
-
-This allows
-<application>Apache</application> to advertise itself and the websites
-available to clients compatible with the protocol.
-</para>
+    <para>
+    <application>mod_dnssd</application> パッケージは、<application>Avahi</application> を用いた DNS-SD を経由して Zeroconf 機能を付与する、<application>Apache</application> の HTTPD モジュールです。
+    
+    This allows
+    <application>Apache</application> to advertise itself and the websites
+    available to clients compatible with the protocol.
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&mod_dnssd-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&mod_dnssd-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&mod_dnssd-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&mod_dnssd-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&mod_dnssd-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&mod_dnssd-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &mod_dnssd-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &mod_dnssd-md5sum;</para>
+        <para>&Download; MD5 sum: &mod_dnssd-md5sum;</para>
 @z
 
 @x
         <para>Download size: &mod_dnssd-size;</para>
 @y
-        <para>ダウンロードサイズ: &mod_dnssd-size;</para>
+        <para>&DownloadSize;: &mod_dnssd-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &mod_dnssd-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &mod_dnssd-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &mod_dnssd-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &mod_dnssd-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &mod_dnssd-time;</para>
+        <para>&Estimatedbuildtime;: &mod_dnssd-time;</para>
 @z
 
 @x
@@ -97,7 +94,7 @@ available to clients compatible with the protocol.
     <para role="required"><xref linkend="apache"/> and
     <xref linkend="avahi"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="apache"/>,
     <xref linkend="avahi"/></para>
 @z
@@ -106,7 +103,7 @@ available to clients compatible with the protocol.
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="lynx"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="lynx"/></para>
 @z
 
@@ -114,7 +111,7 @@ available to clients compatible with the protocol.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/mod_dnssd"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/mod_dnssd"/></para>
 @z
 
@@ -128,31 +125,29 @@ available to clients compatible with the protocol.
     <para>Install <application>mod_dnssd</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>mod_dnssd</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>mod_dnssd</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -160,19 +155,17 @@ available to clients compatible with the protocol.
     <application>Lynx</application> usage for documentation generation. Remove
     it if you have <application>Lynx</application> installed.</para>
 @y
-<para>
-<parameter>--disable-lynx</parameter>:
-このパラメーターは、ドキュメント生成にあたり
-<application>Lynx</application> を用いないようにします。
-<application>Lynx</application>
-をインストールしている場合は、このパラメーターを取り除いてください。
-</para>
+    <para>
+    <parameter>--disable-lynx</parameter>:
+    このパラメーターは、ドキュメント生成にあたり <application>Lynx</application> を用いないようにします。
+    <application>Lynx</application> をインストールしている場合は、このパラメーターを取り除いてください。
+    </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -180,9 +173,9 @@ available to clients compatible with the protocol.
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -198,13 +191,13 @@ available to clients compatible with the protocol.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x mod_dnssd.so
           <para>is the <application>Apache</application> HTTPD module.</para>
 @y
-<para>
-<application>Apache</application> HTTPD モジュール。
-</para>
+          <para>
+          <application>Apache</application> HTTPD モジュール。
+          </para>
 @z

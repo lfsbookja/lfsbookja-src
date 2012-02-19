@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnome-terminal-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnome-terminal-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnome-terminal-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnome-terminal-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnome-terminal-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnome-terminal-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnome-terminal-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnome-terminal-md5sum;</para>
+        <para>&Download; MD5 sum: &gnome-terminal-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnome-terminal-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnome-terminal-size;</para>
+        <para>&DownloadSize;: &gnome-terminal-size;</para>
 @z
 
 @x
@@ -140,16 +140,6 @@
     <title>Command Explanations</title>
 @y
     <title>&j-CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--disable-scrollkeeper</option>: Use this parameter if you
-    wish to disable the updates to the scrollkeeper database.</para>
-@y
-    <para>
-    <option>--disable-scrollkeeper</option>:
-    scrollkeeper データベースを更新したくない場合は、このパラメーターを指定します。
-    </para>
 @z
 
 @x

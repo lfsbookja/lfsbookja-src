@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -79,24 +79,24 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="GConf"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="intltool"/>, and
     <xref linkend="libsoup"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
+    <para role="required"><xref linkend="GConf"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="intltool"/>,
     <xref linkend="libsoup"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <xref linkend="pygtk"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="pygtk"/></para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
 @x
@@ -157,16 +157,6 @@
 @z
 
 @x
-    <para><option>--enable-python</option>: Use this parameter if you want to
-    build libgweather python bindings.</para>
-@y
-    <para>
-    <option>--enable-python</option>:
-    libgweather の Python バインディングをビルドしたい場合に指定します。
-    </para>
-@z
-
-@x
     <para><option>--enable-gtk-doc-html</option>: Use this parameter if you want
     to build documentation in html format.</para>
 @y
@@ -204,16 +194,28 @@
 
 @x
         <seg>None</seg>
-        <seg>libgweather.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
-        lib/python&python2-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
-        share/{gtk-doc/html/libgweather,libgweather}}</seg>
+        <seg>libgweather-3.so</seg>
+        <seg><envar>$GNOME_SYSCONFDIR</envar>/gconf/schemas,
+        <envar>$GNOME_PREFIX</envar>/{include/libgweather-3.0/libgweather,
+        share/{gtk-doc/html/libgweather-3.0,icons/gnome/{16x16/status,
+        22x22/status,24x24/status,32x32/status,scalable/status},libgweather,
+        locale/{es_AR/LC_MESSAGES,es_CL/LC_MESSAGES,es_CO/LC_MESSAGES,
+        es_CR/LC_MESSAGES,es_DO/LC_MESSAGES,es_EC/LC_MESSAGES,es_ES/LC_MESSAGES,
+        es_GT/LC_MESSAGES,es_HN/LC_MESSAGES,es_MX/LC_MESSAGES,es_NI/LC_MESSAGES,
+        es_PA/LC_MESSAGES,es_PE/LC_MESSAGES,es_PR/LC_MESSAGES,es_SV/LC_MESSAGES,
+        es_UY/LC_MESSAGES,es_VE/LC_MESSAGES}}}</seg>
 @y
         <seg>なし</seg>
-        <seg>libgweather.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgweather,
-        lib/python&python2-majorver;/site-packages/gweather/I_KNOW_THIS_IS_UNSTABLE,
-        share/{gtk-doc/html/libgweather,libgweather}}</seg>
+        <seg>libgweather-3.so</seg>
+        <seg><envar>$GNOME_SYSCONFDIR</envar>/gconf/schemas,
+        <envar>$GNOME_PREFIX</envar>/{include/libgweather-3.0/libgweather,
+        share/{gtk-doc/html/libgweather-3.0,icons/gnome/{16x16/status,
+        22x22/status,24x24/status,32x32/status,scalable/status},libgweather,
+        locale/{es_AR/LC_MESSAGES,es_CL/LC_MESSAGES,es_CO/LC_MESSAGES,
+        es_CR/LC_MESSAGES,es_DO/LC_MESSAGES,es_EC/LC_MESSAGES,es_ES/LC_MESSAGES,
+        es_GT/LC_MESSAGES,es_HN/LC_MESSAGES,es_MX/LC_MESSAGES,es_NI/LC_MESSAGES,
+        es_PA/LC_MESSAGES,es_PE/LC_MESSAGES,es_PR/LC_MESSAGES,es_SV/LC_MESSAGES,
+        es_UY/LC_MESSAGES,es_VE/LC_MESSAGES}}}</seg>
 @z
 
 @x

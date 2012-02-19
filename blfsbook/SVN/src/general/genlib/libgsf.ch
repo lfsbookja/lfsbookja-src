@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -95,7 +95,7 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python"/>,
+    <para role="optional"><xref linkend="python2"/>,
     <xref linkend="pygtk"/>,
     <xref linkend="GConf"/> (required to build the
     <command>gsf-office-thumbnailer</command> program),
@@ -104,14 +104,12 @@
     library which provides GNOME-2 support), and
     <xref linkend="gtk-doc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="python"/>,
+    <para role="optional"><xref linkend="python2"/>,
     <xref linkend="pygtk"/>,
-    <xref linkend="GConf"/>
-    (<command>gsf-office-thumbnailer</command> プログラムのビルド時に必要),
-    <xref linkend="gnome-vfs"/>, <xref linkend="libbonobo"/>
-    (GNOME-2 サポート機能を提供する <filename class='libraryfile'>libgsf-gnome-1.so</filename>
-    ライブラリのビルド時に必要),
+    <xref linkend="GConf"/> (<command>gsf-office-thumbnailer</command> プログラムのビルド時に必要),
+    <xref linkend="gnome-vfs"/> and <xref linkend="libbonobo"/>
+    (GNOME-2 サポート機能を提供する <filename
+    class='libraryfile'>libgsf-gnome-1.so</filename> ライブラリのビルド時に必要),
     <xref linkend="gtk-doc"/></para>
 @z
 

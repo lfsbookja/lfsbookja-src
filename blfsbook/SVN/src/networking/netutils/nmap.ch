@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,43 +34,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&nmap-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&nmap-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&nmap-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&nmap-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&nmap-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&nmap-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &nmap-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &nmap-md5sum;</para>
+        <para>&Download; MD5 sum: &nmap-md5sum;</para>
 @z
 
 @x
         <para>Download size: &nmap-size;</para>
 @y
-        <para>ダウンロードサイズ: &nmap-size;</para>
+        <para>&DownloadSize;: &nmap-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &nmap-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &nmap-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &nmap-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &nmap-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &nmap-time;</para>
+        <para>&Estimatedbuildtime;: &nmap-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
     <xref linkend="gtk2"/> (run time dependency), and
     <ulink url="http://sourceforge.net/projects/libdnet/">libdnet</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="pcre"/>,
     <xref linkend="libpcap"/>,
@@ -99,7 +99,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/nmap"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/nmap"/></para>
 @z
 
@@ -121,9 +121,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -137,7 +135,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -145,9 +143,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -163,7 +161,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x nmap

@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -28,18 +37,14 @@
   <option>_netdev</option> option, and unmounting of all network filesystems
   before the network is brought down.</para>
 @y
-<para>
-LFS には NFS のようなネットワークファイルシステムをマウントする機能が含まれますが、初期化スクリプト
-<filename>mountfs</filename> ではマウントされません。
-ネットワークファイルシステムはネットワークがアクティブになった後にマウントしなければなりません。
-同じくネットワークが停止する前にアンマウントしなければなりません。
-<filename>netfs</filename>
-ブートスクリプトは、ネットワークの起動・停止の双方に対応づくものとして構築されています。
-<filename>/etc/fstab</filename>
-ファイルの項目として <option>_netdev</option>
-オプションが指定されていれば、ブート時にネットワークファイルシステムとしてマウントします。
-またネットワークが停止する前にはすべてのネットワークファイルシステムをアンマウントします。
-</para>
+  <para>
+  LFS には NFS のようなネットワークファイルシステムをマウントする機能が含まれますが、初期化スクリプト <filename>mountfs</filename> ではマウントされません。
+  ネットワークファイルシステムはネットワークがアクティブになった後にマウントしなければなりません。
+  同じくネットワークが停止する前にアンマウントしなければなりません。
+  <filename>netfs</filename> ブートスクリプトは、ネットワークの起動・停止の双方に対応づくものとして構築されています。
+  <filename>/etc/fstab</filename> ファイルの項目として <option>_netdev</option> オプションが指定されていれば、ブート時にネットワークファイルシステムとしてマウントします。
+  またネットワークが停止する前にはすべてのネットワークファイルシステムをアンマウントします。
+  </para>
 @z
 
 @x
@@ -47,11 +52,8 @@ LFS には NFS のようなネットワークファイルシステムをマウ�
   the <filename>/etc/rc.d/init.d/netfs</filename> bootscript included with the
   <xref linkend="bootscripts"/> package.</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーとしてログインし <xref linkend="bootscripts"/>
-パッケージから <filename>/etc/rc.d/init.d/netfs</filename>
-ブートスクリプトをインストールします。
-</para>
+  <para>
+  <systemitem class="username">root</systemitem> ユーザーとしてログインし <xref
+  linkend="bootscripts"/> パッケージから <filename>/etc/rc.d/init.d/netfs</filename> ブートスクリプトをインストールします。
+  </para>
 @z
-

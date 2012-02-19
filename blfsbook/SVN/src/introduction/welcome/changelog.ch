@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -36,7 +36,7 @@
   <para>
   この変更履歴には、各編集者が Subversion に登録した変更内容のみを示しています。
   誰が何を担当しているかについては <xref linkend="credits"/> のページを参照してください。
-</para>
+  </para>
 @z
 
 @x

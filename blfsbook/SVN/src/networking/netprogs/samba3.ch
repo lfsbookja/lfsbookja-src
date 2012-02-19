@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -48,43 +48,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&samba3-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&samba3-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&samba3-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&samba3-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&samba3-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&samba3-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &samba3-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &samba3-md5sum;</para>
+        <para>&Download; MD5 sum: &samba3-md5sum;</para>
 @z
 
 @x
         <para>Download size: &samba3-size;</para>
 @y
-        <para>ダウンロードサイズ: &samba3-size;</para>
+        <para>&DownloadSize;: &samba3-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &samba3-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &samba3-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &samba3-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &samba3-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &samba3-time;</para>
+        <para>&Estimatedbuildtime;: &samba3-time;</para>
 @z
 
 @x
@@ -103,7 +103,7 @@
     <xref linkend="acl"/>,
     <xref linkend="xfs"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <xref linkend="python"/> (used only in parts of the test suite),
+    <xref linkend="python2"/> (used only in parts of the test suite),
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <xref linkend="libcap2"/>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
@@ -114,7 +114,7 @@
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="popt"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="cups"/>,
@@ -123,7 +123,7 @@
     <xref linkend="acl"/>,
     <xref linkend="xfs"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <xref linkend="python"/> (used only in parts of the test suite),
+    <xref linkend="python2"/> (used only in parts of the test suite),
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <xref linkend="libcap2"/>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
@@ -139,7 +139,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/samba3"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/samba3"/></para>
 @z
 
@@ -196,7 +196,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -286,7 +286,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -343,7 +343,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x

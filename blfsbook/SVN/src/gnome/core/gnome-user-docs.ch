@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,10 +23,9 @@
     <para>The <application>GNOME User Docs</application> package contains
     documentation for <application>GNOME</application>.</para>
 @y
-<para>
-<application>GNOME User Docs</application>
-パッケージは <application>GNOME</application> におけるドキュメントを提供します。
-</para>
+    <para>
+    <application>GNOME User Docs</application> パッケージは <application>GNOME</application> におけるドキュメントを提供します。
+    </para>
 @z
 
 @x
@@ -38,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnome-user-docs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnome-user-docs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnome-user-docs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnome-user-docs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnome-user-docs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnome-user-docs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnome-user-docs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnome-user-docs-md5sum;</para>
+        <para>&Download; MD5 sum: &gnome-user-docs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnome-user-docs-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnome-user-docs-size;</para>
+        <para>&DownloadSize;: &gnome-user-docs-size;</para>
 @z
 
 @x
@@ -79,11 +78,13 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/> and
+    <para role="required"><xref linkend="gnome-doc-utils"/>,
+    <xref linkend="itstool"/>, and
     <xref linkend="which"/></para>
 @y
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-doc-utils"/>,
+    <xref linkend="itstool"/>,
     <xref linkend="which"/></para>
 @z
 
@@ -113,26 +114,25 @@
     <para>Install <application>GNOME User Docs</application>
     by running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GNOME User Docs</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GNOME User Docs</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>
+    &j-notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -186,8 +186,8 @@
           <para>contain user documentation. These include introductions
           and help on the core packages.</para>
 @y
-<para>
-ユーザードキュメントを提供します。
-GNOME コアパッケージの概略説明やヘルプが含まれます。
-</para>
+          <para>
+          ユーザードキュメントを提供します。
+          GNOME コアパッケージの概略説明やヘルプが含まれます。
+          </para>
 @z

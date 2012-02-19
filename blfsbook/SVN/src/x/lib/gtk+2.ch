@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gtk2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gtk2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gtk2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gtk2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gtk2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gtk2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gtk2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gtk2-md5sum;</para>
+        <para>&Download; MD5 sum: &gtk2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gtk2-size;</para>
 @y
-        <para>ダウンロードサイズ: &gtk2-size;</para>
+        <para>&DownloadSize;: &gtk2-size;</para>
 @z
 
 @x
@@ -99,19 +99,6 @@
     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
     <para role="recommended"><xref linkend="hicolor-icon-theme"/></para>
 @z
-
-% @x
-%     <para>Though not required, the <application>GTK+</application> developers
-%     expect <application>libtiff</application>, and
-%     <application>libjpeg</application> to be installed. Other packages also
-%     expect <application>GTK+</application>-2 to be built with support for these
-%     graphics packages as well.</para>
-% @y
-%     <para>
-%     必須ではありませんが <application>GTK+</application> 開発者は、<application>libtiff</application> と <application>libjpeg</application> がインストールされていることを意図しています。
-%     また <application>GTK+</application>-2 によるサポートを有効に作動させるために、他のグラフィカルパッケージもインストールしておくことが推奨されます。
-%     </para>
-% @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -270,15 +257,13 @@
 @x
       <para>Gtk themes change the way a gtk application looks. A Gtk icon theme
        can be used to change the icons that appear on the application's
-       toolbar. If you have installed a Gtk theme (eg
-       <xref linkend="gnome-themes"/>) or a Gtk icon theme (such as
+       toolbar. If you have installed a Gtk theme or a Gtk icon theme (such as
        <xref linkend="gnome-icon-theme"/>) you can set your prefences in
        <filename>~/.gtkrc-2.0</filename>:</para>
 @y
       <para>Gtk themes change the way a gtk application looks. A Gtk icon theme
        can be used to change the icons that appear on the application's
-       toolbar. If you have installed a Gtk theme (eg
-       <xref linkend="gnome-themes"/>) or a Gtk icon theme (such as
+       toolbar. If you have installed a Gtk theme or a Gtk icon theme (such as
        <xref linkend="gnome-icon-theme"/>) you can set your prefences in
        <filename>~/.gtkrc-2.0</filename>:</para>
 @z

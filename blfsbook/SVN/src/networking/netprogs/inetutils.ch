@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2011-12-04 21:49:04 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -39,43 +39,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&inetutils-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&inetutils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&inetutils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&inetutils-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&inetutils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&inetutils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &inetutils-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &inetutils-md5sum;</para>
+        <para>&Download; MD5 sum: &inetutils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &inetutils-size;</para>
 @y
-        <para>ダウンロードサイズ: &inetutils-size;</para>
+        <para>&DownloadSize;: &inetutils-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &inetutils-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &inetutils-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &inetutils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &inetutils-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &inetutils-time;</para>
+        <para>&Estimatedbuildtime;: &inetutils-time;</para>
 @z
 
 @x
@@ -94,7 +94,7 @@
       <xref linkend="mitkrb"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <xref linkend="tcpwrappers"/>,
@@ -108,7 +108,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/inetutils"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/inetutils"/></para>
 @z
 
@@ -146,7 +146,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -266,7 +266,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -284,9 +284,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -304,7 +304,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x ftpd

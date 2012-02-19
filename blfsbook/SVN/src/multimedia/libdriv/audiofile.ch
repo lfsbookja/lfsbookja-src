@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,50 +32,50 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&audiofile-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&audiofile-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&audiofile-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&audiofile-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&audiofile-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&audiofile-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &audiofile-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &audiofile-md5sum;</para>
+        <para>&Download; MD5 sum: &audiofile-md5sum;</para>
 @z
 
 @x
         <para>Download size: &audiofile-size;</para>
 @y
-        <para>ダウンロードサイズ: &audiofile-size;</para>
+        <para>&DownloadSize;: &audiofile-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &audiofile-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &audiofile-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &audiofile-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &audiofile-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &audiofile-time;</para>
+        <para>&Estimatedbuildtime;: &audiofile-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/audiofile"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/audiofile"/></para>
 @z
 
@@ -109,7 +109,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -117,9 +117,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -135,7 +135,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x audiofile-config

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,12 +25,10 @@
     class="libraryfile">libxml2</filename> libraries to support
     XSLT files.</para>
 @y
-<para>
-<application>libxslt</application>
-パッケージは XSLT ライブラリを提供します。
-これは <filename class="libraryfile">libxml2</filename>
-ライブラリを拡張して XSLT ファイルをサポートするために利用します。
-</para>
+    <para>
+    <application>libxslt</application> パッケージは XSLT ライブラリを提供します。
+    これは <filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT ファイルをサポートするために利用します。
+    </para>
 @z
 
 @x
@@ -91,11 +89,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python"/> and
+    <para role="optional"><xref linkend="python2"/> and
     <xref linkend="libgcrypt"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="python"/>,
+    <para role="optional"><xref linkend="python2"/>,
     <xref linkend="libgcrypt"/></para>
 @z
 
@@ -117,28 +115,25 @@
     <para>Install <application>libxslt</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libxslt</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libxslt</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-コンパイル結果をテストする場合は <command>make check</command>
-を実行します。
-</para>
+    <para>
+    コンパイル結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
@@ -186,18 +181,17 @@
           compiling flags necessary to use the <application>libxslt</application>
           libraries in 3rd-party programs.</para>
 @y
-<para>
-サードパーティー製のプログラムが <application>libxslt</application>
-ライブラリを利用するにあたって、必要となるプリプロセッサー、コンパイルフラグ、リンクフラグを決定するために利用します。
-</para>
+          <para>
+          サードパーティー製のプログラムが <application>libxslt</application> ライブラリを利用するにあたって、必要となるプリプロセッサー、コンパイルフラグ、リンクフラグを決定するために利用します。
+          </para>
 @z
 
 @x xsltproc
           <para>is used to apply XSLT stylesheets to XML documents.</para>
 @y
-<para>
-XML ドキュメントファイルに対して XSLT スタイルシートを適用します。
-</para>
+          <para>
+          XML ドキュメントファイルに対して XSLT スタイルシートを適用します。
+          </para>
 @z
 
 @x libxslt.{so,a}
@@ -205,16 +199,15 @@ XML ドキュメントファイルに対して XSLT スタイルシートを適�
           <filename class="libraryfile">libxml2</filename>
           libraries to parse files that use the XSLT format.</para>
 @y
-<para>
-<filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT 形式のファイルを取り扱う機能を提供します。
-</para>
+          <para>
+          <filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT 形式のファイルを取り扱う機能を提供します。
+          </para>
 @z
 
 @x libexslt.{so,a}
           <para>is used to provide extensions to XSLT functions.</para>
 @y
-<para>
-XSLT 関数を取り扱う拡張機能を提供します。
-</para>
+          <para>
+          XSLT 関数を取り扱う拡張機能を提供します。
+          </para>
 @z
-

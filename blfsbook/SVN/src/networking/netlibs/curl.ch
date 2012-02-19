@@ -5,18 +5,12 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY curl-time          "3.0 SBU (including the test suite)">
-@y
-  <!ENTITY curl-time          "3.0 SBU (テストスイートを含む)">
 @z
 
 @x
@@ -31,46 +25,46 @@
     <filename class="libraryfile">libcurl</filename>. This is useful for
     transferring files with URL syntax to any of the following protocols:
     FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS and FILE.
-    This ability to both download and upload files can be incorporated into other
-    programs to support functions like streaming media.</para>
+    This ability to both download and upload files can be incorporated into
+    other programs to support functions like streaming media.</para>
 @y
     <para>The <application>cURL</application> package contains
     <command>curl</command> and its support library
     <filename class="libraryfile">libcurl</filename>. This is useful for
     transferring files with URL syntax to any of the following protocols:
     FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS and FILE.
-    This ability to both download and upload files can be incorporated into other
-    programs to support functions like streaming media.</para>
+    This ability to both download and upload files can be incorporated into
+    other programs to support functions like streaming media.</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&curl-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&curl-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&curl-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&curl-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&curl-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&curl-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &curl-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &curl-md5sum;</para>
+        <para>&Download; MD5 sum: &curl-md5sum;</para>
 @z
 
 @x
         <para>Download size: &curl-size;</para>
 @y
-        <para>ダウンロードサイズ: &curl-size;</para>
+        <para>&DownloadSize;: &curl-size;</para>
 @z
 
 @x
@@ -98,31 +92,37 @@
     <xref linkend="openldap"/>,
     <xref linkend="libidn"/>,
     <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>,
-    <ulink url="http://www.libssh2.org">libssh2</ulink> 
+    <ulink url="http://www.libssh2.org">libssh2</ulink>
     (for secure transfers),
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <ulink url="http://www.vintela.com/resources/topics/spnego/">SPNEGO</ulink>, and
+    <ulink
+    url="http://www.vintela.com/resources/topics/spnego/">SPNEGO</ulink>, and
     <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
+    <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
     <xref linkend="openldap"/>,
     <xref linkend="libidn"/>,
     <xref linkend="mitkrb"/> または <xref linkend="heimdal"/>,
-    <ulink url="http://www.libssh2.org">libssh2</ulink> 
+    <ulink url="http://www.libssh2.org">libssh2</ulink>
     (セキュアな転送のため),
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <ulink url="http://www.vintela.com/resources/topics/spnego/">SPNEGO</ulink>,
+    <ulink
+    url="http://www.vintela.com/resources/topics/spnego/">SPNEGO</ulink>,
     <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink></para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional for Running the Test Suite</bridgehead>
-    <para role="optional"><xref linkend="stunnel"/> (for the HTTPS and FTPS tests)</para>
+    <bridgehead renderas="sect4">Optional for Running the Test
+    Suite</bridgehead>
+    <para role="optional"><xref linkend="stunnel"/> (for the HTTPS and FTPS
+    tests)</para>
 @y
-    <bridgehead renderas="sect4">Optional for Running the Test Suite</bridgehead>
-    <para role="optional"><xref linkend="stunnel"/> (for the HTTPS and FTPS tests)</para>
+    <bridgehead renderas="sect4">Optional for Running the Test
+    Suite</bridgehead>
+    <para role="optional"><xref linkend="stunnel"/> (for the HTTPS and FTPS
+    tests)</para>
 @z
 
 @x
@@ -164,7 +164,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -174,7 +175,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -184,8 +185,7 @@
 @y
     <para>
     <option>--with-gssapi</option>:
-    このパラメーターは <filename class="libraryfile">libcurl</filename>
-    に対して <application>Kerberos 5</application> サポートを追加します。
+    このパラメーターは <filename class="libraryfile">libcurl</filename> に対して <application>Kerberos 5</application> サポートを追加します。
     </para>
 @z
 
@@ -195,8 +195,7 @@
     <filename class="libraryfile">libcurl</filename>.</para>
 @y
     <para><option>--with-libssh2</option>:
-    このパラメーターは <filename class="libraryfile">libcurl</filename>
-    に対して SSH2 プロトコルサポートを追加します。
+    このパラメーターは <filename class="libraryfile">libcurl</filename> に対して SSH2 プロトコルサポートを追加します。
     </para>
 @z
 
@@ -207,30 +206,28 @@
 @y
     <para>
     <option>--without-ssl --with-gnutls</option>:
-    SSL/TLS に対して <application>OpenSSL</application>
-    ではなく <application>GnuTLS</application> を用いてビルドすることを指示します。
+    SSL/TLS に対して <application>OpenSSL</application> ではなく <application>GnuTLS</application> を用いてビルドすることを指示します。
     </para>
 @z
 
 @x
-    <para><command>find docs -name "Makefile*" -o -name "*.1"
-    -o -name "*.3" | xargs rm</command>: This command removes
+    <para><command>find docs \( -name "Makefile*" -o -name "*.1" -o -name "*.3"
+    \) -exec rm {} \;</command>: This command removes
     <filename>Makefiles</filename> and man files from the documentation
     directory that would otherwise be installed by the commands that
     follow.</para>
 @y
-    <para>
-    <command>find docs -name "Makefile*" -o -name "*.1"
-    -o -name "*.3" | xargs rm</command>:
-    このコマンドはドキュメントディレクトリにある <filename>Makefiles</filename>
-    ファイルと man ファイルを削除します。そして以下に示すコマンドによりドキュメントをインストールします。
+    <para><command>find docs \( -name "Makefile*" -o -name "*.1" -o -name "*.3"
+    \) -exec rm {} \;</command>:
+    このコマンドはドキュメントディレクトリにある <filename>Makefiles</filename> ファイルと man ファイルを削除します。
+    そして以下に示すコマンドによりドキュメントをインストールします。
     </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -238,27 +235,25 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>curl and curl-config</seg>
-        <seg>libcurl.{so,a}</seg>
-        <seg>/usr/include/curl, /usr/share/curl
-        and /usr/share/doc/curl-&curl-version;</seg>
+        <seg>libcurl.so</seg>
+        <seg>/usr/include/curl and /usr/share/doc/curl-&curl-version;</seg>
 @y
         <seg>curl, curl-config</seg>
-        <seg>libcurl.{so,a}</seg>
-        <seg>/usr/include/curl, /usr/share/curl
-        /usr/share/doc/curl-&curl-version;</seg>
+        <seg>libcurl.so</seg>
+        <seg>/usr/include/curl, /usr/share/doc/curl-&curl-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x curl

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -130,27 +130,21 @@
     <para role="optional">
       <xref linkend="gtk2"/> or
       <xref linkend="lesstif"/>,
-      <xref linkend="python"/>,
+      <xref linkend="python2"/>,
       <xref linkend="tcl"/>,
       <xref linkend="ruby"/>, and
       <xref linkend="gpm"/>
     </para>
-    <!-- mentioned below as a runtime dependency
-    <xref linkend="rsync"/> (to update the runtime files)
-    -->
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> または
       <xref linkend="lesstif"/>,
-      <xref linkend="python"/>,
+      <xref linkend="python2"/>,
       <xref linkend="tcl"/>,
       <xref linkend="ruby"/>,
       <xref linkend="gpm"/>
     </para>
-    <!-- mentioned below as a runtime dependency
-    <xref linkend="rsync"/> (to update the runtime files)
-    -->
 @z
 
 @x

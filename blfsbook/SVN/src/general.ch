@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2012-02-05 17:23:07 +0900$
+% $Date::                           $
 %
 @x
 <!ENTITY copyholder   "The BLFS Development Team">
@@ -15,10 +15,10 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 12th, &year;">
+<!ENTITY releasedate  "February 19th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY jversion     "20120212">
+<!ENTITY jversion     "20120219">
 <!ENTITY jratio       "47.5 &percnt; (再カウント要)">
 <!ENTITY releasedate  "&year;/&month;/&day;">
 @z
@@ -46,8 +46,32 @@
 <!ENTITY j-InstalledDirectories "インストールディレクトリ">
 <!ENTITY j-ShortDescriptions    "概略説明">
 
-<!ENTITY IntroductionTo1 "">
-<!ENTITY IntroductionTo2 " の概要">
+<!ENTITY Estimateddiskspacerequired "必要ディスク容量">
+<!ENTITY Estimatedbuildtime         "概算ビルド時間">
+<!ENTITY Required             "必須">
+<!ENTITY Recommended          "推奨">
+<!ENTITY Optional             "任意">
+<!ENTITY UserNotes            "ユーザー情報">
+<!ENTITY PackageInformation   "パッケージ情報">
+<!ENTITY AdditionalDownloads  "追加のダウンロード">
+<!ENTITY notTestSuite         "このパッケージにテストスイートはありません。">
+<!ENTITY CommandExplanations  "コマンド説明">
+<!ENTITY ConfigFiles          "設定ファイル">
+<!ENTITY ConfigInfo           "設定情報">
+<!ENTITY Contents             "パッケージ構成">
+<!ENTITY InstalledPrograms    "インストールプログラム">
+<!ENTITY InstalledLibraries   "インストールライブラリ">
+<!ENTITY InstalledDirectories "インストールディレクトリ">
+<!ENTITY InstalledStylesheets "インストールスタイルシート">
+<!ENTITY ShortDescriptions    "概略説明">
+
+<!ENTITY IntroductionTo1      "">
+<!ENTITY IntroductionTo2      " の概要">
+<!ENTITY InstallationOf1      "">
+<!ENTITY InstallationOf2      " のインストール">
+
+<!ENTITY Download     "ダウンロード">
+<!ENTITY DownloadSize "ダウンロードサイズ">
 @z
 
 @x

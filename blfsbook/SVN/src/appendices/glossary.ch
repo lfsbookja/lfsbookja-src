@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -44,4 +44,3 @@
 @y
         <para>拡張可能なマーク付け言語 (eXtensible Markup Language)</para>
 @z
-

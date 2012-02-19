@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdebindings-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdebindings-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdebindings-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdebindings-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdebindings-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdebindings-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdebindings-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdebindings-md5sum;</para>
+        <para>&Download; MD5 sum: &kdebindings-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdebindings-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdebindings-size;</para>
+        <para>&DownloadSize;: &kdebindings-size;</para>
 @z
 
 @x
@@ -122,7 +122,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><!-- <xref linkend="GLib"/>,
     <xref linkend="GTK"/>, -->
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
     <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
     <xref linkend="seamonkey"/>,
@@ -134,13 +134,13 @@
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="GLib"/>,
     <xref linkend="GTK"/>, -->
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
     <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
     <xref linkend="seamonkey"/>,
     <ulink url="http://http://www.riverbankcomputing.co.uk/qscintilla/index.php">QScintilla</ulink>,
     <ulink url="http://go-mono.org">Mono</ulink>,
-    <ulink url="http://www.southern-storm.com.au/portable_net.html">DotGNU Portable.NET</ulink>,
+    <ulink url="http://www.southern-storm.com.au/portable_net.html">DotGNU Portable.NET</ulink>, and
     <ulink url="http://www.microsoft.com/downloads/details.aspx?FamilyId=3A1C93FA-7462-47D0-8E56-8DD34C6292F0&amp;displaylang=en">Rotor</ulink></para>
 @z
 

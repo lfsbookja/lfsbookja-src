@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -33,43 +33,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&gdm-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gdm-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gdm-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gdm-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gdm-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gdm-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gdm-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gdm-md5sum;</para>
+        <para>&Download; MD5 sum: &gdm-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gdm-size;</para>
 @y
-        <para>ダウンロードサイズ: &gdm-size;</para>
+        <para>&DownloadSize;: &gdm-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &gdm-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gdm-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gdm-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gdm-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gdm-time;</para>
+        <para>&Estimatedbuildtime;: &gdm-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
     <xref linkend="linux-pam"/>, and
     <xref linkend="xorg7-lib"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="accountsservice"/>,
     <xref linkend="gnome-panel"/>,
     <xref linkend="linux-pam"/>,
@@ -98,7 +98,7 @@
     (Required for Shutdown/Restart functionality) and
     <xref linkend="polkit-gnome"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="consolekit"/>
     (Required for Shutdown/Restart functionality),
     <xref linkend="polkit-gnome"/></para>
@@ -112,7 +112,7 @@
     <xref linkend="libxklavier"/>, and
     <xref linkend="tcpwrappers"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <ulink url="http://check.sourceforge.net/">Check</ulink>,
     <xref linkend="upower"/>,
@@ -124,7 +124,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gdm"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gdm"/></para>
 @z
 
@@ -157,9 +157,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -173,7 +171,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -221,13 +219,13 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -356,7 +354,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -364,9 +362,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -374,8 +372,7 @@
         gdm-screenshot, gdmflexiserver, gdm-crash-logger, gdm-factory-slave,
         gdm-host-chooser, gdm-product-slave, gdm-session-worker,
         gdm-simple-chooser, gdm-simple-greeter, gdm-simple-slave,
-        gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, gdm-binary,
-        gdm-restart, gdm-safe-restart, and gdm-stop</seg>
+        gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, and gdm-binary</seg>
         <seg>None</seg>
         <seg>$GNOME_SYSCONFDIR/gdm/{Init,PostLogin,PostSession,PreSession},
         <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
@@ -387,8 +384,7 @@
         gdm-screenshot, gdmflexiserver, gdm-crash-logger, gdm-factory-slave,
         gdm-host-chooser, gdm-product-slave, gdm-session-worker,
         gdm-simple-chooser, gdm-simple-greeter, gdm-simple-slave,
-        gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, gdm-binary,
-        gdm-restart, gdm-safe-restart, and gdm-stop</seg>
+        gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, and gdm-binary</seg>
         <seg>None</seg>
         <seg>$GNOME_SYSCONFDIR/gdm/{Init,PostLogin,PostSession,PreSession},
         <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
@@ -400,7 +396,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gdmflexiserver

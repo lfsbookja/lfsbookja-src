@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -35,43 +35,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&links-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&links-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&links-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&links-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&links-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&links-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &links-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &links-md5sum;</para>
+        <para>&Download; MD5 sum: &links-md5sum;</para>
 @z
 
 @x
         <para>Download size: &links-size;</para>
 @y
-        <para>ダウンロードサイズ: &links-size;</para>
+        <para>&DownloadSize;: &links-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &links-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &links-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &links-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &links-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &links-time;</para>
+        <para>&Estimatedbuildtime;: &links-time;</para>
 @z
 
 @x
@@ -86,7 +86,7 @@
     desired) and
     <xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="gpm"/>
     (マウスサポートが必要な場合),
     <xref linkend="openssl"/></para>
@@ -103,7 +103,7 @@
     <ulink url="http://www.directfb.org/">DirectFB</ulink>, and
     <xref linkend="x-window-system"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     グラフィックモードのサポートを有効にするには、最低でも以下のいずれか一つが必要です。
     <xref linkend="gpm"/> (フレームバッファベースのコンソールにて利用されます),
@@ -132,7 +132,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/LinksBrowser"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/LinksBrowser"/></para>
 @z
 
@@ -154,9 +154,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-   <para>
-   &j-notTestSuite;
-   </para>
+   <para>&notTestSuite;</para>
 @z
 
 @x
@@ -170,7 +168,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -192,13 +190,13 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -207,17 +205,17 @@
       files are created automatically when <command>links</command> is run for the
       first time.</para>
 @y
-   <para>
-   <application>Links</application> では、各ユーザーごとの設定ファイルが <filename
-   class="directory">~/.links</filename> ディレクトリに保存されます。
-   このファイルは <command>links</command> が初めて起動した際に自動的に生成されます。
-   </para>
+      <para>
+      <application>Links</application> では、各ユーザーごとの設定ファイルが <filename
+      class="directory">~/.links</filename> ディレクトリに保存されます。
+      このファイルは <command>links</command> が初めて起動した際に自動的に生成されます。
+      </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -225,9 +223,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -243,7 +241,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x links

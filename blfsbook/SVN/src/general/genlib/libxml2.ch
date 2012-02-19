@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,10 +31,10 @@
     <para>The <application>libxml2</application> package contains
     XML libraries. These are useful for parsing XML files.</para>
 @y
-<para>
-<application>libxml2</application> パッケージは XML ライブラリを提供します。
-XML ファイルの処理に用いられます。
-</para>
+    <para>
+    <application>libxml2</application> パッケージは XML ライブラリを提供します。
+    XML ファイルの処理に用いられます。
+    </para>
 @z
 
 @x
@@ -104,16 +104,15 @@ XML ファイルの処理に用いられます。
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python"/> (to build and install a
+    <para role="optional"><xref linkend="python2"/> (to build and install a
     <application>Python</application> library module, additionally it is
     required to run the full suite of tests)</para>
 @y
-<bridgehead renderas="sect4">&j-Optional;</bridgehead>
-<para role="optional"><xref linkend="python"/>
-(<application>Python</application>
-ライブラリモジュールをビルドしインストールする場合には必要です。
-またテストスイートをすべて実施する際にも必要です。)
-</para>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <para role="optional"><xref linkend="python2"/>
+    (<application>Python</application> ライブラリモジュールビルドしインストールする場合には必要です。
+    またテストスイートをすべて実施する際にも必要です。)
+    </para>
 @z
 
 @x
@@ -125,16 +124,12 @@ XML ファイルの処理に用いられます。
       properly if the <application>Python</application> module is not
       available.</para>
 @y
-<para>
-<application>libxml2</application>
-を利用するパッケージの中には
-<application>Python</application>
-モジュールがないと正しく動作しないものがあります。
-(例えば <application>GNOME Doc Utils</application> など。)
-また <application>Python</application>
-モジュールがないとビルドができないパッケージもあります。
-(例えば GNOME Panel など。)
-</para>
+    <para>
+    <application>libxml2</application> を利用するパッケージの中には <application>Python</application> モジュールがないと正しく動作しないものがあります。
+    (例えば <application>GNOME Doc Utils</application> など。)
+    また <application>Python</application> モジュールがないとビルドができないパッケージもあります。
+    (例えば GNOME Panel など。)
+    </para>
 @z
 
 @x
@@ -154,18 +149,18 @@ XML ファイルの処理に用いられます。
 @x
     <para>If you downloaded the testsuite, issue the following command:</para>
 @y
-<para>
-テストスイート用のファイルをダウンロードしている場合は以下を実行します。
-</para>
+    <para>
+    テストスイート用のファイルをダウンロードしている場合は以下を実行します。
+    </para>
 @z
 
 @x
     <para>Install <application>libxml2</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libxml2</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libxml2</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -175,21 +170,19 @@ XML ファイルの処理に用いられます。
     of the tests, it will report a count of errors, and then report how many are
     expected.</para>
 @y
-<para>
-コンパイル結果をテストする場合は <command>make check</command> を実行します。
-<application>Python</application>
-をインストールしている場合、縮退テスト (regression tests) に失敗します。
-テスト処理の終盤にて追加のテストスイートが実行されて、エラー数と残テスト数が表示されます。
-</para>
+    <para>
+    コンパイル結果をテストする場合は <command>make check</command> を実行します。
+    <application>Python</application> をインストールしている場合、縮退テスト (regression tests) に失敗します。
+    テスト処理の終盤にて追加のテストスイートが実行されて、エラー数と残テスト数が表示されます。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -204,13 +197,10 @@ XML ファイルの処理に用いられます。
     <command>xmlcatalog</command> or <command>xmllint</command> in shell
     mode.</para>
 @y
-<para>
-<parameter>--with-history</parameter>:
-このオプションを指定すれば
-<command>xmlcatalog</command> や <command>xmllint</command>
-をシェルモードで実行する際に <application>Readline</application>
-サポートを利用することができます。
-</para>
+    <para>
+    <parameter>--with-history</parameter>:
+    このオプションを指定すれば <command>xmlcatalog</command> や <command>xmllint</command> をシェルモードで実行する際に <application>Readline</application> サポートを利用することができます。
+    </para>
 @z
 
 @x
@@ -220,13 +210,9 @@ XML ファイルの処理に用いられます。
       <option>show-all-if-ambiguous</option> or
       <option>show-all-if-available</option> turned on.</para>
 @y
-<para>
-<filename>/etc/inputrc</filename> や <filename>~/.inputrc</filename>
-において <option>show-all-if-ambiguous</option> や
-<option>show-all-if-available</option>
-が有効に設定されている状態で history サポートを利用すると
-<command>make check</command> がハングしたまま終了しません。
-</para>
+    <para>
+    <filename>/etc/inputrc</filename> や <filename>~/.inputrc</filename> において <option>show-all-if-ambiguous</option> や <option>show-all-if-available</option> が有効に設定されている状態で history サポートを利用すると <command>make check</command> がハングしたまま終了しません。
+    </para>
 @z
 
 @x
@@ -234,10 +220,10 @@ XML ファイルの処理に用いられます。
     of switches prevents the static libraries in this package from being
     built and installed.</para>
 @y
-<para>
-<parameter>--enable-shared --disable-static</parameter>:
-この２つのオプションを指定すれば、スタティックライブラリのビルドとインストールが行われなくなります。
-</para>
+    <para>
+    <parameter>--enable-shared --disable-static</parameter>:
+    この２つのオプションを指定すれば、スタティックライブラリのビルドとインストールが行われなくなります。
+    </para>
 @z
 
 @x
@@ -284,36 +270,35 @@ XML ファイルの処理に用いられます。
           compile and link programs that use
           <filename class='libraryfile'>libxml2</filename>.</para>
 @y
-<para>
-他のプログラムが <filename class='libraryfile'>libxml2</filename>
-を利用してコンパイルおよびリンクを行う場合に、コンパイラーフラグやリンカーフラグを決定します。
-</para>
+          <para>
+          他のプログラムが <filename class='libraryfile'>libxml2</filename> を利用してコンパイルおよびリンクを行う場合に、コンパイラーフラグやリンカーフラグを決定します。
+          </para>
 @z
 
 @x xmlcalalog
           <para>is used to monitor and manipulate XML
           and SGML catalogs.</para>
 @y
-<para>
-XML カタログや SGML カタログを監視したり操作するために利用します。
-</para>
+          <para>
+          XML カタログや SGML カタログを監視したり操作するために利用します。
+          </para>
 @z
 
 @x xmllint
           <para>parses XML files and outputs reports (based
           upon options) to detect errors in XML coding.</para>
 @y
-<para>
-XML ファイルを精査して (オプションの指示状況に従った) 結果報告を行います。
-XML 記述に誤りがあれば検出し報告します。
-</para>
+          <para>
+          XML ファイルを精査して (オプションの指示状況に従った) 結果報告を行います。
+          XML 記述に誤りがあれば検出し報告します。
+          </para>
 @z
 
 @x libxml2.{so,a}
           <para> libraries provide the functions for programs to parse files
           that use the XML format.</para>
 @y
-<para>
-XML 形式で書かれたファイルを精査するためのプログラム関数を提供するライブラリです。
-</para>
+          <para>
+          XML 形式で書かれたファイルを精査するためのプログラム関数を提供するライブラリです。
+          </para>
 @z

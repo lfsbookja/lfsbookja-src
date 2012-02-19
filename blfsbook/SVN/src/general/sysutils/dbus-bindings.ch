@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -46,8 +46,7 @@
     successfully.</para>
 @y
     <para>
-    <application>D-Bus バインディング (D-Bus Bindings)</application>
-    は複数のパッケージからなるものであり、D-Bus API とのインターフェースとなるプログラミング言語やプラットフォームを含みます。
+    <application>D-Bus バインディング (D-Bus Bindings)</application> は複数のパッケージからなるものであり、D-Bus API とのインターフェースとなるプログラミング言語やプラットフォームを含みます。
     これらを利用するプログラマーは、用いようとしているプラットフォームやプログラミング言語と D-Bus とのインターフェースを容易に構築できます。
     D-Bus バインディングではないパッケージであっても、それらをビルドする際に D-Bus バインディングを必要とするようなものもあります。
     </para>
@@ -187,19 +186,6 @@
       </para>
 @z
 
-% @x
-%       <para>The <option>--enable-doxygen-docs</option> parameter does not work
-%       properly. If you have <application>Doxygen</application> installed and you
-%       wish to build the API documentation, issue
-%       <command>doxygen</command>.</para>
-% @y
-%       <para>
-%       <option>--enable-doxygen-docs</option> パラメーターは正常に動作しません。
-%       <application>Doxygen</application> をインストール済で、API ドキュメントを構築したい場合は
-%       <command>doxygen</command> と入力してください。
-%       </para>
-% @z
-
 @x
       <para>To test the results, issue: <command>make check</command>. Note that
       more comprehensive tests can be run by following the same method used in
@@ -220,17 +206,6 @@
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
       </para>
 @z
-
-% @x
-%       <para>If you built the API documentation, install it by issuing the
-%       following commands as the <systemitem class="username">root</systemitem>
-%       user:</para>
-% @y
-%       <para>
-%       API ドキュメントをビルドする場合は <systemitem
-%       class="username">root</systemitem> ユーザーになって以下を実行しインストールします。
-%       </para>
-% @z
 
 @x
       <title>Command Explanations</title>
@@ -370,13 +345,13 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="python"/> and
+        <xref linkend="python2"/> and
         <xref linkend="dbus-glib"/>
       </para>
 @y
       <bridgehead renderas="sect5">&j-Required;</bridgehead>
       <para role="required">
-        <xref linkend="python"/>,
+        <xref linkend="python2"/>,
         <xref linkend="dbus-glib"/>
       </para>
 @z
@@ -436,18 +411,18 @@
       <para>To test the results, issue: <command>make check</command>. Note you
       must have <application>PyGObject</application> installed.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-この際には <application>PyGObject</application> をインストールしておく必要があります。
-</para>
+      <para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      この際には <application>PyGObject</application> をインストールしておく必要があります。
+      </para>
 @z
 
 @x
       <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
 @z
 
 @x
@@ -455,11 +430,9 @@
       following commands as the <systemitem class="username">root</systemitem>
       user:</para>
 @y
-<para>
-API ドキュメントをビルドした場合、
-<systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
-</para>
+      <para>
+      API ドキュメントをビルドした場合、<systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
+      </para>
 @z
 
 @x

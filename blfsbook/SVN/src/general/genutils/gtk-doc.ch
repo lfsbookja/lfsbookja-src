@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -47,25 +47,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gtk-doc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gtk-doc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gtk-doc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gtk-doc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gtk-doc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gtk-doc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gtk-doc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gtk-doc-md5sum;</para>
+        <para>&Download; MD5 sum: &gtk-doc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gtk-doc-size;</para>
 @y
-        <para>ダウンロードサイズ: &gtk-doc-size;</para>
+        <para>&DownloadSize;: &gtk-doc-size;</para>
 @z
 
 @x
@@ -109,7 +109,7 @@
     <xref linkend="sgml-dtd"/> and
     <xref linkend="docbook-dsssl"/>
     (SGML support, not actively maintained any more),
-    <xref linkend="python"/> (builds gtkdoc-depscan), and
+    <xref linkend="python2"/> (builds gtkdoc-depscan), and
     <xref linkend="rarian"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
@@ -118,10 +118,11 @@
     <xref linkend="fop"/> (XML PDF サポート),
     <xref linkend="gnome-doc-utils"/> と
     <xref linkend="which"/> (テストスイート実行と gtk-doc 文書生成時に必要),
-    <xref linkend="sgml-dtd"/> に対応した <xref linkend="openjade"/> と
+    <xref linkend="openjade"/> with
+    <xref linkend="sgml-dtd"/> and
     <xref linkend="docbook-dsssl"/>
-    (SGML サポート、ただしメンテナンスはされていない),
-    <xref linkend="python"/> (gtkdoc-depscan ビルド時),
+    (SGML support, not actively maintained any more),
+    <xref linkend="python2"/> (gtkdoc-depscan ビルド時),
     <xref linkend="rarian"/></para>
 @z
 

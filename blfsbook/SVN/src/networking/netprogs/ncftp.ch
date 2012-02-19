@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,50 +34,50 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&ncftp-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&ncftp-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&ncftp-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&ncftp-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&ncftp-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&ncftp-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &ncftp-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &ncftp-md5sum;</para>
+        <para>&Download; MD5 sum: &ncftp-md5sum;</para>
 @z
 
 @x
         <para>Download size: &ncftp-size;</para>
 @y
-        <para>ダウンロードサイズ: &ncftp-size;</para>
+        <para>&DownloadSize;: &ncftp-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &ncftp-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &ncftp-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &ncftp-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &ncftp-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &ncftp-time;</para>
+        <para>&Estimatedbuildtime;: &ncftp-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/ncftp"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/ncftp"/></para>
 @z
 
@@ -126,9 +126,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x

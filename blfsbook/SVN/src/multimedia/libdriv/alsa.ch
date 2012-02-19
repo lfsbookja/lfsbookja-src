@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -26,13 +26,12 @@
   ALSA: the libraries, the utilities, the tools, the firmware
   and the OSS compatibility libraries.</para>
 @y
-<para>
-現在の Linux カーネルはデフォルトで ALSA をサポートします。
-
-However, applications need to interface to that capability.  The
-following five sections of the book deal with the five separate components of
-ALSA: the libraries, the utilities, the tools, the firmware
-and the OSS compatibility libraries.
-</para>
+  <para>
+  現在の Linux カーネルはデフォルトで ALSA をサポートします。
+  
+  However, applications need to interface to that capability.  The
+  following five sections of the book deal with the five separate components of
+  ALSA: the libraries, the utilities, the tools, the firmware
+  and the OSS compatibility libraries.
+  </para>
 @z
-

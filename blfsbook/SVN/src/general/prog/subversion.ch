@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,12 +38,12 @@
     <application>Subversion</application> repository. Creation of a repository
     is covered at <xref linkend="svnserver"/>.</para>
 @y
-          <para>
-          <application>Subversion</application> はバージョン管理システムであり、オープンソースコミュニティにおいて <application>CVS</application> に代わるものとして構築されたものです。
-          <application>CVS</application> の機能を拡張しつつ、それまでの <application>CVS</application> と同様のインターフェースを提供しています。
-          ここに示すビルド手順では <application>Subversion</application> リポジトリを制御する、サーバー/クライアントソフトウェアをともにインストールします。
-          リポジトリの生成方法については <xref linkend="svnserver"/> において説明しています。
-          </para>
+    <para>
+    <application>Subversion</application> はバージョン管理システムであり、オープンソースコミュニティにおいて <application>CVS</application> に代わるものとして構築されたものです。
+    <application>CVS</application> の機能を拡張しつつ、それまでの <application>CVS</application> と同様のインターフェースを提供しています。
+    ここに示すビルド手順では <application>Subversion</application> リポジトリを制御する、サーバー/クライアントソフトウェアをともにインストールします。
+    リポジトリの生成方法については <xref linkend="svnserver"/> において説明しています。
+    </para>
 @z
 
 @x
@@ -55,25 +55,25 @@
 @x
         <para>Download (HTTP): <ulink url="&subversion-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&subversion-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&subversion-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&subversion-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&subversion-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&subversion-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &subversion-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &subversion-md5sum;</para>
+        <para>&Download; MD5 sum: &subversion-md5sum;</para>
 @z
 
 @x
         <para>Download size: &subversion-size;</para>
 @y
-        <para>ダウンロードサイズ: &subversion-size;</para>
+        <para>&DownloadSize;: &subversion-size;</para>
 @z
 
 @x
@@ -108,23 +108,6 @@
     <ulink url="http://apr.apache.org/">Apache Portable Runtime</ulink></para>
 @z
 
-% @x
-%     <para>Note that you can use the <ulink
-%     url="http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=260&amp;expandFolder=74">
-%     Subversion dependencies package</ulink> as a substitute for
-%     <application>SQLite</application> and the APR requirements (see the
-%     <filename>INSTALL</filename> file for information on how to utilize this
-%     package)</para>
-% @y
-%           <para>
-%           <ulink
-%           url="http://subversion.tigris.org/servlets/ProjectDocumentList?folderID=260&amp;expandFolder=74">
-%           Subversion 依存パッケージ (Subversion dependencies package)</ulink> を利用することもできます。
-%           これにより、<application>SQLite</application> と APR の依存要件を満たすことができます。
-%           (このパッケージの利用方法については <filename>INSTALL</filename> ファイルを参照してください。)
-%           </para>
-% @z
-
 @x
     <para>If you require the <application>Berkeley DB</application> back-end
     hooks in <application>Subversion</application> to build or support BDB
@@ -145,7 +128,7 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python"/> (required to run the test suite),
+    <para role="optional"><xref linkend="python2"/> (required to run the test suite),
     <xref linkend="db"/>,
     <xref linkend="sqlite"/>,
     <xref linkend="cyrus-sasl"/>,
@@ -159,7 +142,7 @@
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="python"/> (テストスイート実行に必要),
+    <para role="optional"><xref linkend="python2"/> (テストスイート実行に必要),
     <xref linkend="db"/>,
     <xref linkend="sqlite"/>,
     <xref linkend="cyrus-sasl"/>,
@@ -188,34 +171,6 @@
     <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
     and <xref linkend="junit"/> (Java バインディングのテスト時に必要)</para>
 @z
-
-% @x
-%     <bridgehead renderas="sect4">Optional to Build the SWIG Bindings</bridgehead>
-%     <para role="optional"><ulink url="http://www.swig.org">SWIG</ulink>**,
-%     <xref linkend="python"/>, and
-%     <xref linkend="ruby"/></para>
-% @y
-%     <bridgehead renderas="sect4">&j-Optional;; SWIG バインディングビルド時</bridgehead>
-%     <para role="optional"><ulink url="http://www.swig.org">SWIG</ulink>**,
-%     <xref linkend="python"/>,
-%     <xref linkend="ruby"/></para>
-% @z
-% 
-% @x
-%     <para>** The <command>configure</command> script will issue warnings if
-%     the installed version of <application>SWIG</application> is greater than
-%     &svn-swig-version;, but will attempt to use it anyway if you build the
-%     <application>SWIG</application> bindings. Versions of
-%     <application>SWIG</application> up to 2.0.1 are known to work.</para>
-% @y
-% <para>
-% ** The <command>configure</command> script will issue warnings if
-% the installed version of <application>SWIG</application> is greater than
-% &svn-swig-version;, but will attempt to use it anyway if you build the
-% <application>SWIG</application> bindings. Versions of
-% <application>SWIG</application> up to 2.0.1 are known to work.
-% </para>
-% @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
@@ -268,10 +223,7 @@
     commands:</para>
 @y
     <para>
-    必要となる依存パッケージをインストールしていて <application>Perl</application>,
-    <application>Python</application>,
-    <application>Ruby</application>
-    に対する各バインディングをビルドしたい場合は、必要となる以下のいずれかのコマンドを実行します。
+    必要となる依存パッケージをインストールしていて <application>Perl</application>, <application>Python</application>, <application>Ruby</application> に対する各バインディングをビルドしたい場合は、必要となる以下のいずれかのコマンドを実行します。
     </para>
 @z
 
@@ -328,12 +280,9 @@
     issue any or all of the following commands as the
     <systemitem class="username">root</systemitem> user to install them:</para>
 @y
-<para>
-
-If you built any of the <application>SWIG</application> bindings,
-issue any or all of the following commands as the
-<systemitem class="username">root</systemitem> user to install them:
-</para>
+    <para>If you built any of the <application>SWIG</application> bindings,
+    issue any or all of the following commands as the
+    <systemitem class="username">root</systemitem> user to install them:</para>
 @z
 
 @x
@@ -354,32 +303,6 @@ issue any or all of the following commands as the
 @y
     <title>&j-CommandExplanations;</title>
 @z
-
-% @x
-%     <para><command>sed -i '...' build/ac-macros/berkeley-db.m4</command>:
-%     This command fixes the <application>Berkeley-DB</application> discovery
-%     if the <application>Berkeley-DB</application> version is greater than
-%     4.x.</para>
-% @y
-%     <para>
-%     <command>sed -i '...' build/ac-macros/berkeley-db.m4</command>:
-%     This command fixes the <application>Berkeley-DB</application> discovery
-%     if the <application>Berkeley-DB</application> version is greater than
-%     4.x.
-%     </para>
-% @z
-% 
-% @x
-%     <para><command>autoconf</command>: This command is used to generate a new
-%     <command>configure</command> script to incorporate the changes from the
-%     previous command.</para>
-% @y
-%     <para>
-%     <command>autoconf</command>: This command is used to generate a new
-%     <command>configure</command> script to incorporate the changes from the
-%     previous command.
-%     </para>
-% @z
 
 @x
     <para><option>--with-apr=<replaceable>&lt;prefix&gt;</replaceable>

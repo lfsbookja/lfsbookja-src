@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,12 +24,9 @@
     GObject-based library to parse a host of playlist formats, as well as save
     those.</para>
 @y
-<para>
-
-The <application>totem-pl-parser</application> package is a simple
-GObject-based library to parse a host of playlist formats, as well as save
-those.
-</para>
+    <para>The <application>totem-pl-parser</application> package is a simple
+    GObject-based library to parse a host of playlist formats, as well as save
+    those.</para>
 @z
 
 @x
@@ -41,25 +38,25 @@ those.
 @x
         <para>Download (HTTP): <ulink url="&totem-pl-parser-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&totem-pl-parser-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&totem-pl-parser-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&totem-pl-parser-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&totem-pl-parser-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&totem-pl-parser-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &totem-pl-parser-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &totem-pl-parser-md5sum;</para>
+        <para>&Download; MD5 sum: &totem-pl-parser-md5sum;</para>
 @z
 
 @x
         <para>Download size: &totem-pl-parser-size;</para>
 @y
-        <para>ダウンロードサイズ: &totem-pl-parser-size;</para>
+        <para>&DownloadSize;: &totem-pl-parser-size;</para>
 @z
 
 @x
@@ -118,25 +115,26 @@ those.
     <para>Install <application>totem-pl-parser</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>totem-pl-parser</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>totem-pl-parser</application> をビルドします。
+    </para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>A testsuite exists, but the tests require internet access and several
+    will fail.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    テストスイートが用意されていますが、テスト実施時にはインターネットアクセスを必要とし、中にはテストに失敗するものがあります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -194,4 +192,3 @@ those.
           <para>is a <application>Totem</application> Playlist Parser library,
           mini version.</para>
 @z
-

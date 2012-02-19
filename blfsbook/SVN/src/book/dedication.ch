@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,4 +24,3 @@
 @y
   <para>本書を LFS コミュニティに提供します。</para>
 @z
-

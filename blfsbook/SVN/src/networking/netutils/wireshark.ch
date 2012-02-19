@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -145,19 +145,19 @@
     <xref linkend="gtk2"/> (to build the GUI front-end),
     <xref linkend="openssl"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="pcre"/>,
     <xref linkend="gnutls"/>,
     <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
     <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
     <ulink url="http://www.lua.org/">Lua</ulink></para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="gtk2"/> (to build the GUI front-end),
     <xref linkend="openssl"/>,
     <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <xref linkend="python"/>,
+    <xref linkend="python2"/>,
     <xref linkend="pcre"/>,
     <xref linkend="gnutls"/>,
     <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
@@ -484,3 +484,4 @@
           see the <filename>README</filename> file in the source
           <filename class='directory'>wiretap</filename> directory.</para>
 @z
+s

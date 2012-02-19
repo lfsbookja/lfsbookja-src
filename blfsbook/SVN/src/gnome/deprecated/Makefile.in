@@ -140,12 +140,12 @@ BOOKdir = $(top_builddir)/@bookdir@/gnome/deprecated
 EXTRA_DIST = deprecated.ch dummy-deprecated.ch \
 	gnome-vfs.ch libbonobo.ch libbonoboui.ch \
 	libgnome.ch libgnomecanvas.ch libgnomeui.ch \
-	orbit2.ch	
+	orbit2.ch gnome-mime-data.ch
 
 srcs = deprecated.xml dummy-deprecated.xml \
         gnome-vfs.xml libbonobo.xml libbonoboui.xml \
         libgnome.xml libgnomecanvas.xml libgnomeui.xml \
-        orbit2.xml
+        orbit2.xml gnome-mime-data.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -343,6 +343,7 @@ libgnome.xml: $(BOOKdir)/$@ $(srcdir)/libgnome.ch
 libgnomecanvas.xml: $(BOOKdir)/$@ $(srcdir)/libgnomecanvas.ch
 libgnomeui.xml: $(BOOKdir)/$@ $(srcdir)/libgnomeui.ch
 orbit2.xml: $(BOOKdir)/$@ $(srcdir)/orbit2.ch
+gnome-mime-data.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mime-data.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -40,37 +40,37 @@
 @x
         <para>Download (HTTP): <ulink url="&libvorbis-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libvorbis-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libvorbis-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libvorbis-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libvorbis-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libvorbis-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libvorbis-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libvorbis-md5sum;</para>
+        <para>&Download; MD5 sum: &libvorbis-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libvorbis-size;</para>
 @y
-        <para>ダウンロードサイズ: &libvorbis-size;</para>
+        <para>&DownloadSize;: &libvorbis-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &libvorbis-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libvorbis-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libvorbis-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libvorbis-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libvorbis-time;</para>
+        <para>&Estimatedbuildtime;: &libvorbis-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="libogg"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="libogg"/></para>
 @z
 
@@ -94,7 +94,7 @@
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
     (specifically, pdflatex and htlatex) to build the PDF documentation</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="doxygen"/>,
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
@@ -105,7 +105,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/Libvorbis'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/Libvorbis'/></para>
 @z
 
@@ -143,7 +143,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -169,7 +169,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -177,9 +177,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -197,7 +197,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libvorbis*.{so,a}

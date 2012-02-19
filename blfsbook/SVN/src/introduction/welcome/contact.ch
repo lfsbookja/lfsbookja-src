@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -29,15 +29,3 @@
   利用可能なメーリングリストの詳細は <xref linkend="maillists"/> を参照してください。
   </para>
 @z
-
-% @x
-%   <para>The current BLFS maintainer is &maintainer-fullname;.
-%   If you need to reach &maintainer-firstname;, send an email to
-%   <ulink url="mailto:&maintainer-address;">&maintainer-address;</ulink>.</para>
-% @y
-%   <para>
-%   現時点の BLFS 管理者は &maintainer-fullname; です。
-%   &maintainer-firstname; へ直接連絡を取りたい場合は <ulink
-%   url="mailto:&maintainer-address;">&maintainer-address;</ulink> にメールを送信してください。
-%   </para>
-% @z

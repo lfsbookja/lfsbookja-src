@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&linux-pam-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&linux-pam-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&linux-pam-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&linux-pam-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&linux-pam-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&linux-pam-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &linux-pam-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &linux-pam-md5sum;</para>
+        <para>&Download; MD5 sum: &linux-pam-md5sum;</para>
 @z
 
 @x
         <para>Download size: &linux-pam-size;</para>
 @y
-        <para>ダウンロードサイズ: &linux-pam-size;</para>
+        <para>&DownloadSize;: &linux-pam-size;</para>
 @z
 
 @x
@@ -118,13 +118,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="cracklib"/>,
-    <xref linkend="x-window-system"/>,
+    <xref linkend="libtirpc"/>, <xref linkend="x-window-system"/>,
     <xref linkend="db"/> (for the pam_userdb module), and
     <ulink url="http://www.prelude-ids.org/">Prelude</ulink></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="cracklib"/>,
-    <xref linkend="x-window-system"/>,
+    <xref linkend="libtirpc"/>, <xref linkend="x-window-system"/>,
     <xref linkend="db"/> (pam_userdb モジュール利用時),
     <ulink url="http://www.prelude-ids.org/">Prelude</ulink></para>
 @z
@@ -231,11 +231,12 @@
     results in three executables, two of which are not intended to be run from
     the command line, being installed in the same directory as the PAM modules.
     The other executable is later moved to the
-    <filename class='directory'>/sbin</filename> directory.</para>
+    <filename class="directory">/sbin</filename> directory.</para>
 @y
-    <para><parameter>--sbindir=/lib/security</parameter>: このパラメーターは、三つの実行モジュールに対するものです。
+    <para><parameter>--sbindir=/lib/security</parameter>:
+    このパラメーターは、三つの実行モジュールに対するものです。
     そのうちの二つは、コマンドラインから直接実行するようなものではなく PAM モジュールと同じディレクトリにインストールされます。
-    三つめの実行モジュールは、後に <filename class='directory'>/sbin</filename> に移動させます。
+    三つめの実行モジュールは、後に <filename class="directory">/sbin</filename> に移動させます。
     </para>
 @z
 
@@ -251,14 +252,18 @@
 
 @x
     <para><parameter>--disable-nis</parameter>: This option disables building
-    Network Information Service/Yellow Pages support in pam_unix and pam_access
-    as the RPC implementation in glibc (on which NIS/YP depends) is
-    deprecated.</para>
+    Network Information Service/Yellow Pages support in pam_unix and pam_access.
+    The RPC implementation in glibc (on which NIS/YP depends) is deprecated. However, the same functionality is provided by
+    <application>Libtirpc</application> so if you've installed
+    <xref linkend="libtirpc"/> you can remove the
+    <parameter>--disable-nis</parameter> option.</para>
 @y
     <para><parameter>--disable-nis</parameter>: This option disables building
-    Network Information Service/Yellow Pages support in pam_unix and pam_access
-    as the RPC implementation in glibc (on which NIS/YP depends) is
-    deprecated.</para>
+    Network Information Service/Yellow Pages support in pam_unix and pam_access.
+    The RPC implementation in glibc (on which NIS/YP depends) is deprecated. However, the same functionality is provided by
+    <application>Libtirpc</application> so if you've installed
+    <xref linkend="libtirpc"/> you can remove the
+    <parameter>--disable-nis</parameter> option.</para>
 @z
 
 @x
@@ -294,45 +299,6 @@
     </para>
 @z
 
-% @x
-%     <para><command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>: This
-%     command moves the <application>Libtool</application> library files to
-%     <filename class='directory'>/usr/lib</filename> as they are expected to
-%     reside there.</para>
-% @y
-%     <para>
-%     <command>mv -v /lib/libpam{,c,_misc}.la /usr/lib</command>: <application>Libtool</application> ライブラリファイルは <filename
-%     class='directory'>/usr/lib</filename> ディレクトリに配置されるべきであるため、このコマンドにより移動します。
-%     </para>
-% @z
-
-% @x
-%     <para><command>sed -i 's| /lib| /usr/lib|'
-%     /usr/lib/libpam_misc.la</command>: This command corrects an installation
-%     reference due to the file being moved in the previous step.</para>
-% @y
-%     <para>
-%     <command>sed -i 's| /lib| /usr/lib|'
-%     /usr/lib/libpam_misc.la</command>: １つ前の手順にてファイル位置を移動しているため、このコマンドによりインストールディレクトリの参照をただします。
-%     </para>
-% @z
-
-% @x
-%     <para><command>for ...; do ...; done</command>: These commands are used
-%     to relocate the <filename class='symlink'>.so</filename> symbolic links
-%     into the <filename class='directory'>/usr/lib</filename> directory by
-%     cloning and then removing the existing symlinks. Using
-%     <command>readlink</command> ensures the new symlinks point at the correct
-%     library filenames.</para>
-% @y
-%     <para><command>for ...; do ...; done</command>:
-%     これらのコマンドは <filename class='symlink'>.so</filename> シンボリックリンクを <filename
-%     class='directory'>/usr/lib</filename> ディレクトリに配置し直すものです。
-%     シンボリックリンクを張り直し、古いリンクは削除します。
-%     <command>readlink</command> を使っているのは、新しいシンボリックリンクが指し示すライブラリの名前を確実に正しいものとするためです。
-%     </para>
-% @z
-
 @x
     <title>Configuring Linux-PAM</title>
 @y
@@ -363,12 +329,12 @@
 
 @x
       <para>Configuration information is placed in
-      <filename class='directory'>/etc/pam.d/</filename> or
+      <filename class="directory">/etc/pam.d/</filename> or
       <filename>/etc/pam.conf</filename> depending on system administrator
        preference. Below are example files of each type:</para>
 @y
       <para>
-      設定情報は <filename class='directory'>/etc/pam.d/</filename> か <filename>/etc/pam.conf</filename> に保持します。
+      設定情報は <filename class="directory">/etc/pam.d/</filename> か <filename>/etc/pam.conf</filename> に保持します。
       いずれにするかはシステム管理者が適宜定めます。
       </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,49 +32,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&net-tools-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&net-tools-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&net-tools-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&net-tools-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&net-tools-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&net-tools-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &net-tools-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &net-tools-md5sum;</para>
+        <para>&Download; MD5 sum: &net-tools-md5sum;</para>
 @z
 
 @x
         <para>Download size: &net-tools-size;</para>
 @y
-        <para>ダウンロードサイズ: &net-tools-size;</para>
+        <para>&DownloadSize;: &net-tools-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &net-tools-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &net-tools-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &net-tools-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &net-tools-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &net-tools-time;</para>
+        <para>&Estimatedbuildtime;: &net-tools-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -105,7 +105,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/net-tools"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/net-tools"/></para>
 @z
 
@@ -178,9 +178,7 @@ If
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-     </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -194,7 +192,7 @@ If
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -226,7 +224,7 @@ If
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -234,9 +232,9 @@ If
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -258,7 +256,7 @@ If
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x arp

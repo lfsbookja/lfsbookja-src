@@ -5,7 +5,7 @@ EXTRA_DIST = dejagnu.ch doxygen.ch expect.ch gc.ch gcc.ch gcc2.ch \
 	python3.ch ruby.ch tcl.ch tk.ch slang.ch icedtea6.ch \
 	cmake.ch cvs.ch pkgconfig.ch subversion.ch check.ch \
 	cvsserver.ch svnserver.ch yasm.ch llvm.ch gdb.ch \
-	spidermonkey.ch vala.ch
+	spidermonkey.ch vala.ch git.ch
 srcdir = @srcdir@
 srcs = dejagnu.xml doxygen.xml expect.xml gc.xml gcc.xml gcc2.xml \
 	gcc3.xml guile.xml jdk.xml junit.xml librep.xml nasm.xml \
@@ -15,7 +15,7 @@ srcs = dejagnu.xml doxygen.xml expect.xml gc.xml gcc.xml gcc2.xml \
 	python3.xml ruby.xml tcl.xml tk.xml slang.xml icedtea6.xml \
 	cmake.xml cvs.xml pkgconfig.xml subversion.xml check.xml \
 	cvsserver.xml svnserver.xml yasm.xml llvm.xml gdb.xml \
-	spidermonkey.xml vala.xml
+	spidermonkey.xml vala.xml git.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -62,3 +62,4 @@ llvm.xml: $(BOOKdir)/$@ $(srcdir)/llvm.ch
 gdb.xml: $(BOOKdir)/$@ $(srcdir)/gdb.ch
 spidermonkey.xml: $(BOOKdir)/$@ $(srcdir)/spidermonkey.ch
 vala.xml: $(BOOKdir)/$@ $(srcdir)/vala.ch
+git.xml: $(BOOKdir)/$@ $(srcdir)/git.ch

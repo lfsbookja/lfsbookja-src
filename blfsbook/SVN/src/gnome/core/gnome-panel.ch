@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnome-panel-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnome-panel-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnome-panel-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnome-panel-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnome-panel-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnome-panel-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnome-panel-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnome-panel-md5sum;</para>
+        <para>&Download; MD5 sum: &gnome-panel-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnome-panel-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnome-panel-size;</para>
+        <para>&DownloadSize;: &gnome-panel-size;</para>
 @z
 
 @x
@@ -80,7 +80,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="gnome-desktop"/>,
     <xref linkend="gnome-menus"/>,
-    <xref linkend="libbonoboui"/>,
     <xref linkend="libcanberra"/>,
     <xref linkend="libgweather"/>,
     <xref linkend="librsvg"/>, and
@@ -89,7 +88,6 @@
     <bridgehead renderas="sect4">&j-Required;</bridgehead>
     <para role="required"><xref linkend="gnome-desktop"/>,
     <xref linkend="gnome-menus"/>,
-    <xref linkend="libbonoboui"/>,
     <xref linkend="libcanberra"/>,
     <xref linkend="libgweather"/>,
     <xref linkend="librsvg"/>,
@@ -99,17 +97,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="evolution-data-server"/> (required if
-    you plan to install <application>Evolution</application> or
-    <application>Ekiga</application>),
-    <xref linkend="gtk-doc"/>, and <ulink
-    url="http://www.gnome.org/projects/NetworkManager/">NetworkManager</ulink>
+    you plan to install <application>Evolution</application>,
+    <xref linkend="gtk-doc"/>,
+    <xref linkend="NetworkManager"/>, and
     <xref linkend="rarian"/></para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="evolution-data-server"/>
-    (<application>Evolution</application> または <application>Ekiga</application> をインストールする場合),
-    <xref linkend="gtk-doc"/>, <ulink
-    url="http://www.gnome.org/projects/NetworkManager/">NetworkManager</ulink>
+    (<application>Evolution</application> をインストールする場合に必要),
+    <xref linkend="gtk-doc"/>,
+    <xref linkend="NetworkManager"/>,
     <xref linkend="rarian"/></para>
 @z
 
@@ -171,29 +168,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gnome-panel</parameter>: This parameter causes the libexec
-    files to be installed in the preferred location of
-    <filename class="directory">$GNOME_PREFIX/lib/gnome-panel</filename>
-    instead of
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-panel</parameter>:
+    This parameter causes the libexec files to be installed in the preferred
+    location of <filename
+    class="directory">$GNOME_PREFIX/lib/gnome-panel</filename> instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
     <para>
-    <parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gnome-panel</parameter>:
+    <parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-panel</parameter>:
     このパラメーターを指定することで、libexec ファイルのインストール先を <filename
     class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
     class="directory">$GNOME_PREFIX/lib/gnome-panel</filename> とします。
-    </para>
-@z
-
-@x
-    <para><option>--disable-scrollkeeper</option>: Use this parameter if you
-    wish to disable the updates to the scrollkeeper database.</para>
-@y
-    <para>
-    <option>--disable-scrollkeeper</option>:
-    scrollkeeper データベースを更新したくない場合は、このパラメーターを指定します。
     </para>
 @z
 
@@ -215,17 +200,15 @@
 
 @x
         <seg>gnome-desktop-item-edit, gnome-panel, panel-test-applets,
-        clock-applet, fish-applet-2, gnome-clock-applet-mechanism,
         gnome-panel-add, notification-area-applet, and wnck-applet</seg>
-        <seg>libpanel-applet-2.{so,a}</seg>
+        <seg>libpanel-applet-2.so</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/panel-2.0,lib/gnome-panel,
         share/{gnome-panel/{pixmaps,ui},gnome/help/{clock/*,fish/*},
         gtk-doc/html/panel-applet,idl/gnome-panel-2.0,omf/{clock,fish}}}</seg>
 @y
         <seg>gnome-desktop-item-edit, gnome-panel, panel-test-applets,
-        clock-applet, fish-applet-2, gnome-clock-applet-mechanism,
         gnome-panel-add, notification-area-applet, wnck-applet</seg>
-        <seg>libpanel-applet-2.{so,a}</seg>
+        <seg>libpanel-applet-2.so</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/panel-2.0,lib/gnome-panel,
         share/{gnome-panel/{pixmaps,ui},gnome/help/{clock/*,fish/*},
         gtk-doc/html/panel-applet,idl/gnome-panel-2.0,omf/{clock,fish}}}</seg>

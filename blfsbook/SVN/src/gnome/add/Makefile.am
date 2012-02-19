@@ -1,41 +1,41 @@
 BOOKdir = $(top_builddir)/@bookdir@/gnome/add
-EXTRA_DIST = add.ch at-spi.ch bug-buddy.ch dummy-accessibility.ch \
-	dummy-libraries.ch dummy-utilities.ch ekiga.ch \
+EXTRA_DIST = add.ch \
+	aisleriot.ch \
+	dummy-libraries.ch dummy-utilities.ch \
 	file-roller.ch \
-	gconf-editor.ch gedit.ch \
-	gnome-games.ch gnome-mag.ch \
-	gnome-netstatus.ch gnome-screensaver.ch \
-	gnome-speech.ch gnome-system-monitor.ch gnome-utils.ch \
-	gok.ch gtkhtml.ch gtksourceview.ch \
-	gucharmap.ch java-access-bridge.ch libgail-gnome.ch libgnomecups.ch \
+	gedit.ch \
+	gnome-games.ch \
+	gtkhtml.ch gtksourceview.ch \
+	libgnomecups.ch \
 	libgnomeprint.ch libgnomeprintui.ch orca.ch \
-	sound-juicer.ch system-tools-backends.ch totem.ch \
-	gnome-power-manager.ch totem-pl-parser.ch \
+	totem.ch \
+	gnome-power-manager.ch \
 	nautilus-sendto.ch \
-	alacarte.ch cheese.ch deskbar-applet.ch dasher.ch \
-	liboobs.ch gnome-nettool.ch gnome-system-tools.ch \
-	mousetweaks.ch hamster-applet.ch gnome-user-share.ch \
-	seahorse-plugins.ch seahorse.ch \
-	vinagre.ch vino.ch gnome-applets.ch
+	cheese.ch \
+	gnome-nettool.ch \
+	hamster-applet.ch \
+	seahorse.ch \
+	vinagre.ch gnome-applets.ch \
+	at-spi2-core.ch mobile-broadband-provider-info.ch
 srcdir = @srcdir@
-srcs = add.xml at-spi.xml bug-buddy.xml dummy-accessibility.xml \
-	dummy-libraries.xml dummy-utilities.xml ekiga.xml \
+srcs = add.xml \
+	aisleriot.xml \
+	dummy-libraries.xml dummy-utilities.xml \
 	file-roller.xml \
-	gconf-editor.xml gedit.xml \
-	gnome-games.xml gnome-mag.xml \
-	gnome-netstatus.xml gnome-screensaver.xml \
-	gnome-speech.xml gnome-system-monitor.xml gnome-utils.xml \
-	gok.xml gtkhtml.xml gtksourceview.xml \
-	gucharmap.xml java-access-bridge.xml libgail-gnome.xml libgnomecups.xml \
+	gedit.xml \
+	gnome-games.xml \
+	gtkhtml.xml gtksourceview.xml \
+	libgnomecups.xml \
 	libgnomeprint.xml libgnomeprintui.xml orca.xml \
-	sound-juicer.xml system-tools-backends.xml totem.xml \
-	gnome-power-manager.xml totem-pl-parser.xml \
+	totem.xml \
+	gnome-power-manager.xml \
 	nautilus-sendto.xml \
-	alacarte.xml cheese.xml deskbar-applet.xml dasher.xml \
-	liboobs.xml gnome-nettool.xml gnome-system-tools.xml \
-	mousetweaks.xml hamster-applet.xml gnome-user-share.xml \
-	seahorse-plugins.xml seahorse.xml \
-	vinagre.xml vino.xml gnome-applets.xml
+	cheese.xml \
+	gnome-nettool.xml \
+	hamster-applet.xml \
+	seahorse.xml \
+	vinagre.xml gnome-applets.xml \
+	at-spi2-core.xml mobile-broadband-provider-info.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -46,51 +46,27 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 add.xml: $(BOOKdir)/$@ $(srcdir)/add.ch
-at-spi.xml: $(BOOKdir)/$@ $(srcdir)/at-spi.ch
-bug-buddy.xml: $(BOOKdir)/$@ $(srcdir)/bug-buddy.ch
-dummy-accessibility.xml: $(BOOKdir)/$@ $(srcdir)/dummy-accessibility.ch
+aisleriot.xml: $(BOOKdir)/$@ $(srcdir)/aisleriot.ch
 dummy-libraries.xml: $(BOOKdir)/$@ $(srcdir)/dummy-libraries.ch
 dummy-utilities.xml: $(BOOKdir)/$@ $(srcdir)/dummy-utilities.ch
-ekiga.xml: $(BOOKdir)/$@ $(srcdir)/ekiga.ch
 file-roller.xml: $(BOOKdir)/$@ $(srcdir)/file-roller.ch
-gconf-editor.xml: $(BOOKdir)/$@ $(srcdir)/gconf-editor.ch
 gedit.xml: $(BOOKdir)/$@ $(srcdir)/gedit.ch
 gnome-games.xml: $(BOOKdir)/$@ $(srcdir)/gnome-games.ch
-gnome-mag.xml: $(BOOKdir)/$@ $(srcdir)/gnome-mag.ch
-gnome-netstatus.xml: $(BOOKdir)/$@ $(srcdir)/gnome-netstatus.ch
 gnome-power-manager.xml: $(BOOKdir)/$@ $(srcdir)/gnome-power-manager.ch
-gnome-screensaver.xml: $(BOOKdir)/$@ $(srcdir)/gnome-screensaver.ch
-gnome-speech.xml: $(BOOKdir)/$@ $(srcdir)/gnome-speech.ch
-gnome-system-monitor.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-monitor.ch
-gnome-utils.xml: $(BOOKdir)/$@ $(srcdir)/gnome-utils.ch
-gok.xml: $(BOOKdir)/$@ $(srcdir)/gok.ch
 gtkhtml.xml: $(BOOKdir)/$@ $(srcdir)/gtkhtml.ch
 gtksourceview.xml: $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
-gucharmap.xml: $(BOOKdir)/$@ $(srcdir)/gucharmap.ch
-java-access-bridge.xml: $(BOOKdir)/$@ $(srcdir)/java-access-bridge.ch
-libgail-gnome.xml: $(BOOKdir)/$@ $(srcdir)/libgail-gnome.ch
 libgnomecups.xml: $(BOOKdir)/$@ $(srcdir)/libgnomecups.ch
 libgnomeprint.xml: $(BOOKdir)/$@ $(srcdir)/libgnomeprint.ch
 libgnomeprintui.xml: $(BOOKdir)/$@ $(srcdir)/libgnomeprintui.ch
 orca.xml: $(BOOKdir)/$@ $(srcdir)/orca.ch
-sound-juicer.xml: $(BOOKdir)/$@ $(srcdir)/sound-juicer.ch
-system-tools-backends.xml: $(BOOKdir)/$@ $(srcdir)/system-tools-backends.ch
 totem.xml: $(BOOKdir)/$@ $(srcdir)/totem.ch
-totem-pl-parser.xml: $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
 nautilus-sendto.xml: $(BOOKdir)/$@ $(srcdir)/nautilus-sendto.ch
-alacarte.xml: $(BOOKdir)/$@ $(srcdir)/alacarte.ch
 cheese.xml: $(BOOKdir)/$@ $(srcdir)/cheese.ch
-deskbar-applet.xml: $(BOOKdir)/$@ $(srcdir)/deskbar-applet.ch
-dasher.xml: $(BOOKdir)/$@ $(srcdir)/dasher.ch
-liboobs.xml: $(BOOKdir)/$@ $(srcdir)/liboobs.ch
 gnome-nettool.xml: $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
-gnome-system-tools.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-tools.ch
-mousetweaks.xml: $(BOOKdir)/$@ $(srcdir)/mousetweaks.ch
 hamster-applet.xml: $(BOOKdir)/$@ $(srcdir)/hamster-applet.ch
-gnome-user-share.xml: $(BOOKdir)/$@ $(srcdir)/gnome-user-share.ch
-seahorse-plugins.xml: $(BOOKdir)/$@ $(srcdir)/seahorse-plugins.ch
 seahorse.xml: $(BOOKdir)/$@ $(srcdir)/seahorse.ch
 vinagre.xml: $(BOOKdir)/$@ $(srcdir)/vinagre.ch
-vino.xml: $(BOOKdir)/$@ $(srcdir)/vino.ch
 gnome-applets.xml: $(BOOKdir)/$@ $(srcdir)/gnome-applets.ch
+at-spi2-core.xml: $(BOOKdir)/$@ $(srcdir)/at-spi2-core.ch
+mobile-broadband-provider-info.xml: $(BOOKdir)/$@ $(srcdir)/mobile-broadband-provider-info.ch
 

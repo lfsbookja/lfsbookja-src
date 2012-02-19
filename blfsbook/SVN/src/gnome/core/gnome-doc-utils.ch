@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2011-11-19 19:43:32 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME Doc Utils</title>
 @y
-    <title>GNOME Doc Utils の概要</title>
+    <title>&IntroductionTo1;GNOME Doc Utils&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,43 +46,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&gnome-doc-utils-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnome-doc-utils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnome-doc-utils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnome-doc-utils-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnome-doc-utils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnome-doc-utils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnome-doc-utils-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnome-doc-utils-md5sum;</para>
+        <para>&Download; MD5 sum: &gnome-doc-utils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnome-doc-utils-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnome-doc-utils-size;</para>
+        <para>&DownloadSize;: &gnome-doc-utils-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &gnome-doc-utils-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gnome-doc-utils-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gnome-doc-utils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gnome-doc-utils-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gnome-doc-utils-time;</para>
+        <para>&Estimatedbuildtime;: &gnome-doc-utils-time;</para>
 @z
 
 @x
@@ -95,19 +95,19 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="intltool"/>,
     <xref linkend="libxslt"/>, and
-    <xref linkend="python"/> ( Required to be installed prior to <xref linkend="libxml2"/>)</para>
+    <xref linkend="python2"/> ( Required to be installed prior to <xref linkend="libxml2"/>)</para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="intltool"/>,
     <xref linkend="libxslt"/>,
-    <xref linkend="python"/> (<xref linkend="libxml2"/> よりも前にインストールが必要)</para>
+    <xref linkend="python2"/> (<xref linkend="libxml2"/> よりも前にインストールが必要)</para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="rarian"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="rarian"/></para>
 @z
 
@@ -134,7 +134,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gnome-doc-utils"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gnome-doc-utils"/></para>
 @z
 
@@ -172,13 +172,13 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -187,10 +187,10 @@
       <segtitle>Installed Directories</segtitle>
       <segtitle>Installed Stylesheets</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
-      <segtitle>Installed Stylesheets</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
+      <segtitle>&InstalledStylesheets;</segtitle>
 @z
 
 @x

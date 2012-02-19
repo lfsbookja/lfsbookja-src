@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,10 +23,9 @@
     <para>The <application>little cms</application> library is used by other
     programs to provide color management facilities.</para>
 @y
-<para>
-<application>little cms</application>
-ライブラリは色に関する制御を管理して他のプログラムに機能を提供します。
-</para>
+    <para>
+    <application>little cms</application> ライブラリは色に関する制御を管理して他のプログラムに機能を提供します。
+    </para>
 @z
 
 @x
@@ -81,14 +80,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="libtiff"/>,
     <xref linkend="libjpeg"/>, and
-    <xref linkend="python"/> (with
+    <xref linkend="python2"/> (with
     <ulink url="http://www.swig.org/">SWIG</ulink> also)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
     <para role="optional"><xref linkend="libtiff"/>,
     <xref linkend="libjpeg"/>,
-    <xref linkend="python"/>
-    (これに対しては <ulink url="http://www.swig.org/">SWIG</ulink> も必要)</para>
+    <xref linkend="python2"/>
+    (<ulink url="http://www.swig.org/">SWIG</ulink> も必要)</para>
 @z
 
 @x
@@ -109,27 +108,25 @@
     <para>Install <application>little cms</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>little cms</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>little cms</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -143,21 +140,20 @@
     <application>Python</application> and
     <application>SWIG</application> are installed.</para>
 @y
-<para>
-<option>--with-python</option>:
-<application>Python</application> と
-<application>SWIG</application> をインストールしている場合に指定します。
-</para>
+    <para>
+    <option>--with-python</option>:
+    <application>Python</application> と <application>SWIG</application> をインストールしている場合に指定します。
+    </para>
 @z
 
 @x
     <para><option>--disable-static</option>: Prevent static libraries
     being built and installed.</para>
 @y
-<para>
-<option>--disable-static</option>:
-スタティックライブラリのビルドとインストールを行わないようにします。
-</para>
+    <para>
+    <option>--disable-static</option>:
+    スタティックライブラリのビルドとインストールを行わないようにします。
+    </para>
 @z
 
 @x
@@ -197,77 +193,77 @@
 @x icc2ps
           <para>generates PostScript CRD or CSA from ICC profiles.</para>
 @y
-<!--
-日本語訳註： PostScript CRD CSA について全くの不理解。
--->
-<para>
-ICC プロファイルから PostScript CRD または CSA を生成します。
-</para>
+          <!--
+          日本語訳註： PostScript CRD CSA について全くの不理解。
+          -->
+          <para>
+          ICC プロファイルから PostScript CRD または CSA を生成します。
+          </para>
 @z
 
 @x icclink
           <para>links two or more profiles into a single device link profile.</para>
 @y
-<para>
-複数のプロファイルを、１つのデバイスリンクプロファイルとします。
-</para>
+          <para>
+          複数のプロファイルを、１つのデバイスリンクプロファイルとします。
+          </para>
 @z
 
 @x icctrans
           <para>is a color space conversion calculator.</para>
 @y
-<para>
-
-is a color space conversion calculator.
-</para>
+          <para>
+          
+          is a color space conversion calculator.
+          </para>
 @z
 
 @x jpegicc
           <para>is an ICC profile applier for JPEG files.</para>
 @y
-<!--
-日本語訳註： ツール内容不理解。
--->
-<para>
-JPEG ファイルに対しての ICC プロファイル生成。
-</para>
+          <!--
+          日本語訳註： ツール内容不理解。
+          -->
+          <para>
+          JPEG ファイルに対しての ICC プロファイル生成。
+          </para>
 @z
 
 @x tifficc
           <para>is an ICC profile applier for TIFF files.</para>
 @y
-<!--
-日本語訳註： ツール内容不理解。
--->
-<para>
-TIFF ファイルに対しての ICC プロファイル生成。
-</para>
+          <!--
+          日本語訳註： ツール内容不理解。
+          -->
+          <para>
+          TIFF ファイルに対しての ICC プロファイル生成。
+          </para>
 @z
 
 @x tiffdiff
           <para>A TIFF compare utility</para>
 @y
-<para>
-TIFF ファイルの比較ユーティリティ。
-</para>
+          <para>
+          TIFF ファイルの比較ユーティリティ。
+          </para>
 @z
 
 @x wtpt
           <para>shows media white of profiles, identifying black body locus.</para>
 @y
-<para>
-
-shows media white of profiles, identifying black body locus.
-</para>
+          <para>
+          
+          shows media white of profiles, identifying black body locus.
+          </para>
 @z
 
 @x liblcms.{so,a}
           <para>is used by the <application>lcms</application> programs as
           well as other programs to provide color management facilities.</para>
 @y
-<para>
-
-is used by the <application>lcms</application> programs as
-well as other programs to provide color management facilities.
-</para>
+          <para>
+          
+          is used by the <application>lcms</application> programs as
+          well as other programs to provide color management facilities.
+          </para>
 @z

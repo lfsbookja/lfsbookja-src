@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,37 +37,37 @@
 @x
         <para>Download (HTTP): <ulink url="&libsndfile-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libsndfile-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libsndfile-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libsndfile-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libsndfile-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libsndfile-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libsndfile-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libsndfile-md5sum;</para>
+        <para>&Download; MD5 sum: &libsndfile-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libsndfile-size;</para>
 @y
-        <para>ダウンロードサイズ: &libsndfile-size;</para>
+        <para>&DownloadSize;: &libsndfile-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &libsndfile-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libsndfile-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libsndfile-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libsndfile-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libsndfile-time;</para>
+        <para>&Estimatedbuildtime;: &libsndfile-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <xref linkend="libvorbis"/>, and
     <xref linkend="sqlite"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="alsa-lib"/>,
     <xref linkend="flac"/>,
     <xref linkend="libogg"/>,
@@ -96,7 +96,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libsndfile"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libsndfile"/></para>
 @z
 
@@ -134,7 +134,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -142,9 +142,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -167,7 +167,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x sndfile-cmp

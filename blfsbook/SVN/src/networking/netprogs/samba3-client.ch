@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,15 +22,12 @@
   configure the utilities using the configuration section titled
   <quote>Scenario 1: Minimal Standalone Client-Only Installation</quote>.</para>
 @y
-<para>
-<application>Samba</application>
-クライアントユーティリティは、Windows や SMB サーバー上でのファイル転送や、SMB 共有ディレクトリのマウント、プリンタ共有を行ないます。
-このユーティリティをインストールする場合は、第19章 <xref linkend="samba3"/>
-に示す手順に従ってください。
-そして基本的な手順を行った後は
-<quote>Scenario 1: Minimal Standalone Client-Only Installation</quote>
-と書かれた項を参照して、ユーティリティの設定を行ってください。
-</para>
+  <para>
+  <application>Samba</application>
+  クライアントユーティリティは、Windows や SMB サーバー上でのファイル転送や、SMB 共有ディレクトリのマウント、プリンタ共有を行ないます。
+  このユーティリティをインストールする場合は、第19章 <xref linkend="samba3"/> に示す手順に従ってください。
+  そして基本的な手順を行った後は<quote>Scenario 1: Minimal Standalone Client-Only Installation</quote>と書かれた項を参照して、ユーティリティの設定を行ってください。
+  </para>
 @z
 
 @x
@@ -48,4 +45,3 @@
   services provided by the server daemons in the <xref linkend="samba3"/>
   instructions.</para>
 @z
-

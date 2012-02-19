@@ -38,43 +38,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&libnice-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libnice-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libnice-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libnice-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libnice-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libnice-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libnice-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libnice-md5sum;</para>
+        <para>&Download; MD5 sum: &libnice-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libnice-size;</para>
 @y
-        <para>ダウンロードサイズ: &libnice-size;</para>
+        <para>&DownloadSize;: &libnice-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &libnice-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libnice-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libnice-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libnice-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libnice-time;</para>
+        <para>&Estimatedbuildtime;: &libnice-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="glib2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="glib2"/></para>
 @z
 
@@ -96,7 +96,7 @@
     <para role="optional"><xref linkend="gstreamer"/> and
     <xref linkend="gtk-doc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gstreamer"/>,
     <xref linkend="gtk-doc"/></para>
 @z
@@ -105,7 +105,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libnice"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libnice"/></para>
 @z
 
@@ -144,7 +144,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -168,7 +168,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -176,9 +176,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -196,7 +196,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libgstnice.so

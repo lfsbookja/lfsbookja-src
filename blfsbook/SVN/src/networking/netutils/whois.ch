@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -33,64 +33,61 @@
     <command>mkpasswd</command> command is also installed by the
     <xref linkend="expect"/> package.</para>
 @y
-<para>
-<application>Whois</application>
-はクライアント側のアプリケーションで、指定されたドメイン名に対する情報を提供する
-whois ディレクトリサービスを検索します。
-このパッケージはデフォルトでは二つのプログラムをインストールします。
-<command>whois</command> と <command>mkpasswd</command> です。
-<command>mkpasswd</command>
-コマンドは <xref linkend="expect"/> でもインストールされます。
-</para>
+    <para>
+    <application>Whois</application> はクライアント側のアプリケーションで、指定されたドメイン名に対する情報を提供する whois ディレクトリサービスを検索します。
+    このパッケージはデフォルトでは二つのプログラムをインストールします。
+    <command>whois</command> と <command>mkpasswd</command> です。
+    <command>mkpasswd</command> コマンドは <xref linkend="expect"/> でもインストールされます。
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&whois-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&whois-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&whois-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&whois-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&whois-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&whois-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &whois-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &whois-md5sum;</para>
+        <para>&Download; MD5 sum: &whois-md5sum;</para>
 @z
 
 @x
         <para>Download size: &whois-size;</para>
 @y
-        <para>ダウンロードサイズ: &whois-size;</para>
+        <para>&DownloadSize;: &whois-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &whois-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &whois-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &whois-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &whois-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &whois-time;</para>
+        <para>&Estimatedbuildtime;: &whois-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/whois"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/whois"/></para>
 @z
 
@@ -112,13 +109,10 @@ whois ディレクトリサービスを検索します。
     Control your choice of what is installed with the following commands issued
     as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<command>whois</command> プログラム、
-<command>mkpasswd</command> プログラム、
-ロケールファイルは、それぞれ個別にインストールすることができます。
-<systemitem class="username">root</systemitem>
-ユーザーになり、インストールするものに応じて、以下のいずれかのコマンドを実行します。
-</para>
+    <para>
+    <command>whois</command> プログラム、<command>mkpasswd</command> プログラム、ロケールファイルは、それぞれ個別にインストールすることができます。
+    <systemitem class="username">root</systemitem> ユーザーになり、インストールするものに応じて、以下のいずれかのコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -126,16 +120,15 @@ whois ディレクトリサービスを検索します。
     overwrite the same command installed by <xref
     linkend='expect'/>.</para></note>
 @y
-<note><para>
-<command>mkpasswd</command> のこのバージョンをインストールすると、
-<xref linkend='expect'/> によってインストールされた同じコマンドを上書きします。
-</para></note>
+    <note><para>
+    <command>mkpasswd</command> のこのバージョンをインストールすると、<xref linkend='expect'/> によってインストールされた同じコマンドを上書きします。
+    </para></note>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -143,9 +136,9 @@ whois ディレクトリサービスを検索します。
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -161,15 +154,15 @@ whois ディレクトリサービスを検索します。
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x whois
           <para>is a client-side application which queries the whois directory
           service for information pertaining to a particular domain name.</para>
 @y
-<para>
-クライアント側のアプリケーションであり、指定されたドメイン名に対する情報を提供する
-whois ディレクトリサービスを検索します。
-</para>
+          <para>
+          クライアント側のアプリケーションであり、指定されたドメイン名に対する情報を提供する
+          whois ディレクトリサービスを検索します。
+          </para>
 @z
