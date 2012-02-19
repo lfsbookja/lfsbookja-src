@@ -44,7 +44,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -74,13 +74,13 @@
 @x
         <para>Estimated disk space required: &dbus-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &dbus-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &dbus-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &dbus-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &dbus-time;</para>
+        <para>&Estimatedbuildtime;: &dbus-time;</para>
 @z
 
 @x
@@ -96,7 +96,7 @@
       <xref linkend="libxml2"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="expat"/> (推奨) または <xref linkend="libxml2"/>
     </para>
@@ -110,7 +110,7 @@
       <xref linkend="doxygen"/> (to generate the API documentation)
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="xorg7-lib"/>,
       <xref linkend="dbus-glib"/> (テスト実行のため),
@@ -133,7 +133,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/dbus"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/dbus"/></para>
 @z
 
@@ -217,7 +217,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -310,7 +310,7 @@
       <filename>/etc/dbus-1/system.conf</filename> and
       <filename>/etc/dbus-1/system.d/*</filename></para>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
       <para><filename>/etc/dbus-1/session.conf</filename>,
       <filename>/etc/dbus-1/system.conf</filename>,
       <filename>/etc/dbus-1/system.d/*</filename></para>
@@ -319,7 +319,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -487,7 +487,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -495,9 +495,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -521,7 +521,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x dbus-cleanup-sockets

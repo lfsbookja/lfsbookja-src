@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to glibmm</title>
 @y
-    <title>glibmm の概要</title>
+    <title>&IntroductionTo1;glibmm&IntroductionTo2;</title>
 @z
 
 @x
@@ -31,49 +31,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&glibmm-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&glibmm-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&glibmm-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&glibmm-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&glibmm-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&glibmm-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &glibmm-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &glibmm-md5sum;</para>
+        <para>&Download; MD5 sum: &glibmm-md5sum;</para>
 @z
 
 @x
         <para>Download size: &glibmm-size;</para>
 @y
-        <para>ダウンロードサイズ: &glibmm-size;</para>
+        <para>&DownloadSize;: &glibmm-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &glibmm-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &glibmm-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &glibmm-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &glibmm-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &glibmm-time;</para>
+        <para>&Estimatedbuildtime;: &glibmm-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">glibmm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">glibmm の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;glibmm&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -81,7 +81,7 @@
     <para role="required"><xref linkend="glib2"/> and
     <xref linkend="libsigc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="glib2"/>,
     <xref linkend="libsigc"/></para>
 @z
@@ -90,14 +90,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/glibmm"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/glibmm"/></para>
 @z
 
 @x
     <title>Installation of glibmm</title>
 @y
-    <title>glibmm のインストール</title>
+    <title>&InstallationOf1;glibmm&InstallationOf2;</title>
 @z
 
 @x
@@ -128,7 +128,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -136,9 +136,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -150,7 +150,7 @@
         proc/{m4,pm}}},share/{devhelp/books/glibmm-2.4,doc/glibmm-2.4/{images,
         reference/html},glibmm-2.4/doctool}}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libgiomm-2.4.so, libglibmm-2.4.so,
         libglibmm_generate_extra_defs-2.4.so</seg>
         <seg>/usr/{include/{giomm-2.4/giomm/private,glibmm-2.4/{glibmm/private,
@@ -162,7 +162,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libgiomm-2.4.so

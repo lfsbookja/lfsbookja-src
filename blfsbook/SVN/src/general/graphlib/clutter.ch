@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &clutter-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &clutter-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &clutter-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &clutter-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &clutter-time;</para>
+        <para>&Estimatedbuildtime;: &clutter-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
     <xref linkend="mesalib"/>, and
     <xref linkend="pango"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="atk"/>,
     <xref linkend="cairo"/>,
     <xref linkend="cogl"/>,
@@ -101,7 +101,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
@@ -115,7 +115,7 @@
     <xref linkend="lynx"/>, or
     <xref linkend="w3m"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;
+    <bridgehead renderas="sect4">&Optional;
     (アプリケーション開発マニュアルの構築時に必要)</bridgehead>
     <para role="optional"><xref linkend="docbook-utils"/>,
     <xref linkend="jadetex"/>,
@@ -129,7 +129,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/clutter"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/clutter"/></para>
 @z
 
@@ -169,7 +169,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -196,7 +196,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -204,9 +204,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -224,7 +224,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libclutter-glx-1.0.so

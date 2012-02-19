@@ -16,7 +16,7 @@
 @x
     <title>Introduction to gobject-introspection</title>
 @y
-    <title>gobject-introspection の概要</title>
+    <title>&IntroductionTo1;gobject-introspection&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &gobject-introspection-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gobject-introspection-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gobject-introspection-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gobject-introspection-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gobject-introspection-time;</para>
+        <para>&Estimatedbuildtime;: &gobject-introspection-time;</para>
 @z
 
 @x
@@ -80,7 +80,7 @@
       <xref linkend="python2"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
       <xref linkend="libffi"/> または <xref linkend="gcc"/>
@@ -96,7 +96,7 @@
       <xref linkend="gtk-doc"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (テスト実施時に必要),
       <xref linkend="gtk-doc"/>
@@ -107,14 +107,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gobject-introspection"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gobject-introspection"/></para>
 @z
 
 @x
     <title>Installation of gobject-introspection</title>
 @y
-    <title>gobject-introspection のインストール</title>
+    <title>&InstallationOf1;gobject-introspection&InstallationOf2;</title>
 @z
 
 @x
@@ -145,7 +145,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -163,7 +163,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -171,9 +171,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -201,7 +201,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x g-ir-compiler

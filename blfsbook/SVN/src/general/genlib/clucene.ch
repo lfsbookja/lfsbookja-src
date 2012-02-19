@@ -16,7 +16,7 @@
 @x
     <title>Introduction to CLucene</title>
 @y
-    <title>CLucene の概要</title>
+    <title>&IntroductionTo1;CLucene&IntroductionTo2;</title>
 @z
 
 @x
@@ -81,7 +81,7 @@
 @x
     <title>Installation of CLucene</title>
 @y
-    <title>CLucene のインストール</title>
+    <title>&InstallationOf1;CLucene&InstallationOf2;</title>
 @z
 
 @x

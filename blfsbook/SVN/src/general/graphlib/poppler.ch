@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -36,7 +36,7 @@ library.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -66,19 +66,19 @@ library.
 @x
         <para>Estimated disk space required: &poppler-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &poppler-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &poppler-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &poppler-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &poppler-time;</para>
+        <para>&Estimatedbuildtime;: &poppler-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -130,7 +130,7 @@ render CJK and Cyrillic properly.</para>
     <para role="required"><!-- <xref linkend="pkgconfig"/> and -->
     <xref linkend="fontconfig"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><!-- <xref linkend="pkgconfig"/> and -->
     <xref linkend="fontconfig"/></para>
 @z
@@ -141,7 +141,7 @@ render CJK and Cyrillic properly.</para>
     <xref linkend="glib2"/>, and <ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>,
     <xref linkend="glib2"/>, a<ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
     </para>
@@ -155,7 +155,7 @@ render CJK and Cyrillic properly.</para>
     <xref linkend="libxml2"/>, and
     <xref linkend="lcms"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk2"/>, <xref linkend="qt"/>
     <xref linkend="qt4"/>
     <xref linkend="curl"/>
@@ -181,7 +181,7 @@ library is built.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/poppler"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/poppler"/></para>
 @z
 
@@ -211,7 +211,7 @@ library is built.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -245,7 +245,7 @@ it by issuing the following commands:
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -291,7 +291,7 @@ disables building the <application>cairo</application> graphics backend.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -299,9 +299,9 @@ disables building the <application>cairo</application> graphics backend.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -321,7 +321,7 @@ disables building the <application>cairo</application> graphics backend.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libpoppler.{so,a}

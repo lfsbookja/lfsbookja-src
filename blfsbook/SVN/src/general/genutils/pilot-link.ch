@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,19 +64,19 @@
 @x
         <para>Estimated disk space required: &pilot-link-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &pilot-link-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &pilot-link-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &pilot-link-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &pilot-link-time;</para>
+        <para>&Estimatedbuildtime;: &pilot-link-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -104,7 +104,7 @@
     <ulink url="http://www.bluez.org/">BlueZ</ulink>, and
     <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="libpng"/>,
     <xref linkend="popt"/>,
     <xref linkend="libusb-compat"/>,
@@ -119,7 +119,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/pilot-link"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/pilot-link"/></para>
 @z
 
@@ -193,7 +193,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -243,7 +243,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -252,10 +252,10 @@
       <segtitle>Installed Bindings</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>インストールバインディング</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -299,7 +299,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -35,7 +35,7 @@ to send requests and receive replies from other programs.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,13 +65,13 @@ to send requests and receive replies from other programs.
 @x
         <para>Estimated disk space required: &ORBit2-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &ORBit2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &ORBit2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &ORBit2-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &ORBit2-time;</para>
+        <para>&Estimatedbuildtime;: &ORBit2-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@ to send requests and receive replies from other programs.
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="libidl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="libidl"/></para>
 @z
 
@@ -93,7 +93,7 @@ to send requests and receive replies from other programs.
     <para role="optional"><xref linkend="gtk-doc"/> and
     <xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
     <xref linkend="openssl"/></para>
 @z
@@ -102,7 +102,7 @@ to send requests and receive replies from other programs.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/orbit2"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/orbit2"/></para>
 @z
 
@@ -149,7 +149,7 @@ to send requests and receive replies from other programs.
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -173,7 +173,7 @@ install directory as described in the introduction of this Chapter.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -181,9 +181,9 @@ install directory as described in the introduction of this Chapter.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -205,7 +205,7 @@ install directory as described in the introduction of this Chapter.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libORBit-2.{so,a}

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,13 +16,13 @@
 @x
   <!ENTITY DocBook-time          "less than 0.1 SBU">
 @y
-  <!ENTITY DocBook-time          "0.1 SBU 以下">
+  <!ENTITY DocBook-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to DocBook XML DTD</title>
 @y
-    <title>DocBook XML DTD の概要</title>
+    <title>&IntroductionTo1;DocBook XML DTD&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,7 +42,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -72,13 +72,13 @@
 @x
         <para>Estimated disk space required: &DocBook-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &DocBook-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &DocBook-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &DocBook-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &DocBook-time;</para>
+        <para>&Estimatedbuildtime;: &DocBook-time;</para>
 @z
 
 @x
@@ -92,7 +92,7 @@
     <para role="required"><xref linkend="libxml2"/> and
     <xref linkend="unzip"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="libxml2"/>,
     <xref linkend="unzip"/></para>
 @z
@@ -101,14 +101,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/docbook"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/docbook"/></para>
 @z
 
 @x
     <title>Installation of DocBook XML DTD</title>
 @y
-    <title>DocBook XML DTD のインストール</title>
+    <title>&InstallationOf1;DocBook XML DTD&InstallationOf2;</title>
 @z
 
 @x
@@ -116,10 +116,9 @@
     following commands as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行し <application>DocBook XML DTD</application> をビルドします。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行し <application>DocBook XML DTD</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -127,12 +126,9 @@
     <filename>/etc/xml/docbook</filename> catalog file by running the following
     commands as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-
-Create (or update) and populate the
-<filename>/etc/xml/docbook</filename> catalog file by running the following
-commands as the <systemitem class="username">root</systemitem> user:
-</para>
+    <para>Create (or update) and populate the
+    <filename>/etc/xml/docbook</filename> catalog file by running the following
+    commands as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -148,19 +144,19 @@ commands as the <systemitem class="username">root</systemitem> user:
 @x
     <title>Configuring DocBook XML DTD</title>
 @y
-    <title>Configuring DocBook XML DTD</title>
+    <title>&Configuring1;DocBook XML DTD&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -188,7 +184,7 @@ commands as the <systemitem class="username">root</systemitem> user:
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -209,22 +205,22 @@ commands as the <systemitem class="username">root</systemitem> user:
         <seg>DTD, MOD and ENT files</seg>
         <seg>/etc/xml and /usr/share/xml/docbook/xml-dtd-&DocBook-version;</seg>
 @y
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg>DTD, MOD and ENT files</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
+        <seg>DTD, MOD, ENT の各ファイル</seg>
         <seg>/etc/xml and /usr/share/xml/docbook/xml-dtd-&DocBook-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x
         <term><filename>DTD files</filename></term>
 @y
-        <term><filename>DTD files</filename></term>
+        <term><filename>DTD ファイル</filename></term>
 @z
 @x
           <para>contain a document type definition which defines the element
@@ -239,7 +235,7 @@ commands as the <systemitem class="username">root</systemitem> user:
 @x
         <term><filename>MOD files</filename></term>
 @y
-        <term><filename>MOD files</filename></term>
+        <term><filename>MOD ファイル</filename></term>
 @z
 @x
           <para>files contain components of the document type definition that
@@ -252,7 +248,7 @@ commands as the <systemitem class="username">root</systemitem> user:
 @x
         <term><filename>ENT files</filename></term>
 @y
-        <term><filename>ENT files</filename></term>
+        <term><filename>ENT ファイル</filename></term>
 @z
 @x
           <para>files contain lists of named character entities allowed in

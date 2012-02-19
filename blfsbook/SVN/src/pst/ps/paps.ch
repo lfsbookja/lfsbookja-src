@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,13 +16,13 @@
 @x
   <!ENTITY paps-time          "less than 0.1 SBU">
 @y
-  <!ENTITY paps-time          "0.1 SBU 以下">
+  <!ENTITY paps-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to paps</title>
 @y
-    <title>paps の概要</title>
+    <title>&IntroductionTo1;paps&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,56 +32,54 @@
     printing any complex script supported by <application>Pango</application>.
     </para>
 @y
-<para>
-<application>paps</application>
-は、テキストファイルから PostScript へのコンバーターです。
-これは <application>Pango</application> による処理を通じて実現されます。
-その入力は UTF-8 エンコーディングによるファイルであり、出力はベクトル化された PostScript となります。
-<application>Pango</application>
-によってサポートされているスクリプトであれば、複雑なものであっても印刷することができます。
-</para>
+    <para>
+    <application>paps</application> は、テキストファイルから PostScript へのコンバーターです。
+    これは <application>Pango</application> による処理を通じて実現されます。
+    その入力は UTF-8 エンコーディングによるファイルであり、出力はベクトル化された PostScript となります。
+    <application>Pango</application> によってサポートされているスクリプトであれば、複雑なものであっても印刷することができます。
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&paps-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&paps-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&paps-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&paps-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&paps-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&paps-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &paps-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &paps-md5sum;</para>
+        <para>&Download; MD5 sum: &paps-md5sum;</para>
 @z
 
 @x
         <para>Download size: &paps-size;</para>
 @y
-        <para>ダウンロードサイズ: &paps-size;</para>
+        <para>&DownloadSize;: &paps-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &paps-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &paps-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &paps-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &paps-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &paps-time;</para>
+        <para>&Estimatedbuildtime;: &paps-time;</para>
 @z
 
 @x
@@ -90,7 +88,7 @@
     <para role="required"><xref linkend="pango"/></para>
 @y
     <bridgehead renderas="sect3">paps の依存パッケージ</bridgehead>
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="pango"/></para>
 @z
 
@@ -98,7 +96,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="doxygen"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="doxygen"/></para>
 @z
 
@@ -106,23 +104,23 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/Paps"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/Paps"/></para>
 @z
 
 @x
     <title>Installation of paps</title>
 @y
-    <title>paps のインストール</title>
+    <title>&InstallationOf1;paps&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>paps</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>paps</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>paps</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -135,31 +133,29 @@
     linkend="xft-font-protocol"/> Section of the X Window System
     configuration.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>src/test_libpaps &gt;
-test.ps</command> を実行します。
-出力された PostScript ファイルを PostScript ビューアーで開きます。
-そしてソースツリー内にある <filename>doxygen-doc/html/example-output.png</filename>
-と比較してください。
-
-The results of the output will be more robust with DejaVu, Arphic, and
-Kochi fonts installed as explained in the <xref
-linkend="xft-font-protocol"/> Section of the X Window System
-configuration.</para>
+    <para>
+    ビルド結果をテストする場合は <command>src/test_libpaps &gt; test.ps</command> を実行します。
+    出力された PostScript ファイルを PostScript ビューアーで開きます。
+    そしてソースツリー内にある <filename>doxygen-doc/html/example-output.png</filename> と比較してください。
+    
+    The results of the output will be more robust with DejaVu, Arphic, and
+    Kochi fonts installed as explained in the <xref
+    linkend="xft-font-protocol"/> Section of the X Window System
+    configuration.</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -167,9 +163,9 @@ configuration.</para>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -185,14 +181,14 @@ configuration.</para>
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x paps
           <para>is a text to PostScript converter that supports UTF-8
           character encoding.</para>
 @y
-<para>
-UTF-8 エンコーディングをサポートした、テキストファイルから PostScript へのコンバーターです。
-</para>
+          <para>
+          UTF-8 エンコーディングをサポートした、テキストファイルから PostScript へのコンバーターです。
+          </para>
 @z

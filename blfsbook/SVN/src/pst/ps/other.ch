@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,8 +23,7 @@
   <para><command>kghostview</command> is a <application>Qt</application>
   based PostScript/PDF viewer from <xref linkend="kdegraphics"/>.</para>
 @y
-<para>
-<command>kghostview</command> は <xref linkend="kdegraphics"/> にて提供される、
-<application>Qt</application> ベースの PostScript/PDF ビューアーです。
-</para>
+  <para>
+  <command>kghostview</command> は <xref linkend="kdegraphics"/> にて提供される、<application>Qt</application> ベースの PostScript/PDF ビューアーです。
+  </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &gnome-vfs-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gnome-vfs-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gnome-vfs-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gnome-vfs-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gnome-vfs-time;</para>
+        <para>&Estimatedbuildtime;: &gnome-vfs-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
     <xref linkend="GConf"/>, and
     <xref linkend="gnome-mime-data"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="GConf"/>,
     <xref linkend="gnome-mime-data"/></para>
@@ -104,7 +104,7 @@
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>, and
     <xref linkend="cdparanoia"/> (not recommended)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="samba3"/>,
     <xref linkend="gamin"/>,
     <xref linkend="hal"/>,
@@ -145,7 +145,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gnome-vfs"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gnome-vfs"/></para>
 @z
 
@@ -184,7 +184,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -252,7 +252,7 @@ class='directory'><envar>GNOME_PREFIX</envar>/share/dbus-1/services</filename>
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -283,7 +283,7 @@ class='directory'><envar>GNOME_PREFIX</envar>/share/dbus-1/services</filename>
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -291,9 +291,9 @@ class='directory'><envar>GNOME_PREFIX</envar>/share/dbus-1/services</filename>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

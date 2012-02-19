@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -43,7 +43,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -73,20 +73,20 @@
 @x
         <para>Estimated disk space required: &LZO-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &LZO-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &LZO-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &LZO-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &LZO-time;</para>
+        <para>&Estimatedbuildtime;: &LZO-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/lzo"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/lzo"/></para>
 @z
 
@@ -128,7 +128,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -136,9 +136,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -154,7 +154,7 @@
 @x
     <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+    <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x liblzo2.{so,a}

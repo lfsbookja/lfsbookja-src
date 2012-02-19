@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,7 +38,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -68,13 +68,13 @@
 @x
         <para>Estimated disk space required: &libksba-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libksba-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libksba-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libksba-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libksba-time;</para>
+        <para>&Estimatedbuildtime;: &libksba-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="libgpg-error"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="libgpg-error"/></para>
 @z
 
@@ -95,7 +95,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libksba"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libksba"/></para>
 @z
 
@@ -157,7 +157,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -165,9 +165,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -183,7 +183,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x ksba-config

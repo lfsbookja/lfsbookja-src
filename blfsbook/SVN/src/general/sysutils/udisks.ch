@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &udisks-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &udisks-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &udisks-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &udisks-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &udisks-time;</para>
+        <para>&Estimatedbuildtime;: &udisks-time;</para>
 @z
 
 @x
@@ -86,7 +86,7 @@
     <xref linkend="sg3_utils"/>, and
     <xref linkend="udev"/> (gudev)</para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="dbus-glib"/>,
     <xref linkend="libatasmart"/>,
     <xref linkend="parted"/> (<xref linkend="lvm2"/> つまり device-mapper を含む),
@@ -100,7 +100,7 @@
     <para role="optional"><xref linkend="gtk-doc"/> and
     <xref linkend="sudo"/> (to run the test)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
     <xref linkend="sudo"/> (テスト実行時)</para>
 @z
@@ -109,7 +109,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/udisks"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/udisks"/></para>
 @z
 
@@ -147,13 +147,13 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -161,9 +161,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -199,7 +199,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x udisks

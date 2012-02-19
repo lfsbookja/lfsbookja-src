@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,13 +16,13 @@
 @x
   <!ENTITY libcap2-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libcap2-time          "0.1 SBU 以下">
+  <!ENTITY libcap2-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libcap2</title>
 @y
-    <title>libcap2 の概要</title>
+    <title>&IntroductionTo1;libcap2&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,56 +40,56 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&libcap2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libcap2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libcap2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libcap2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libcap2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libcap2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libcap2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libcap2-md5sum;</para>
+        <para>&Download; MD5 sum: &libcap2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libcap2-size;</para>
 @y
-        <para>ダウンロードサイズ: &libcap2-size;</para>
+        <para>&DownloadSize;: &libcap2-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &libcap2-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libcap2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libcap2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libcap2-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libcap2-time;</para>
+        <para>&Estimatedbuildtime;: &libcap2-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">libcap2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libcap2 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libcap2&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="attr"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="attr"/></para>
 @z
 
@@ -97,14 +97,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libcap2"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libcap2"/></para>
 @z
 
 @x
     <title>Installation of libcap2</title>
 @y
-    <title>libcap2 のインストール</title>
+    <title>&InstallationOf1;libcap2&InstallationOf2;</title>
 @z
 
 @x
@@ -120,18 +120,24 @@
     <para>This package does not come with a test suite.</para>
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+%%%
+
+@x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -139,9 +145,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -151,13 +157,13 @@
 @y
         <seg>capsh, getcap, getpcaps, setcap</seg>
         <seg>libcap.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x capsh
@@ -189,5 +195,7 @@
 @x libcap2.{so,a}
           <para>contains the <application>libcap2</application> API functions.</para>
 @y
-          <para>contains the <application>libcap2</application> API functions.</para>
+          <para>
+          <application>libcap2</application> API 関数を提供します。
+          </para>
 @z

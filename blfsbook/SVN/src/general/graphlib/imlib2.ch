@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &imlib2-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &imlib2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &imlib2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &imlib2-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &imlib2-time;</para>
+        <para>&Estimatedbuildtime;: &imlib2-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <xref linkend="libpng"/>, and
     <xref linkend="libjpeg"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="freetype2"/>,
     <xref linkend="libpng"/>,
     <xref linkend="libjpeg"/></para>
@@ -93,7 +93,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="x-window-system"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="x-window-system"/></para>
 @z
 
@@ -103,7 +103,7 @@
     <xref linkend="giflib"/>, and
     <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="libtiff"/>,
     <xref linkend="giflib"/>,
     <ulink url="http://sourceforge.net/projects/mad">libid3tag</ulink></para>
@@ -113,7 +113,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/imlib2"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/imlib2"/></para>
 @z
 
@@ -136,7 +136,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -151,7 +151,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -167,7 +167,7 @@ X ウィンドウシステムをインストールしていない場合は、こ
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -175,9 +175,9 @@ X ウィンドウシステムをインストールしていない場合は、こ
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -197,7 +197,7 @@ X ウィンドウシステムをインストールしていない場合は、こ
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libImlib2.{so,a}

@@ -41,7 +41,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -71,13 +71,13 @@
 @x
         <para>Estimated disk space required: &gtk-doc-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gtk-doc-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gtk-doc-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gtk-doc-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gtk-doc-time;</para>
+        <para>&Estimatedbuildtime;: &gtk-doc-time;</para>
 @z
 
 @x
@@ -92,7 +92,7 @@
     <xref linkend="docbook-xsl"/>, and
     <xref linkend="libxslt"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="DocBook"/>,
     <xref linkend="docbook-xsl"/>,
     <xref linkend="libxslt"/></para>
@@ -112,7 +112,7 @@
     <xref linkend="python2"/> (builds gtkdoc-depscan), and
     <xref linkend="rarian"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="glib2"/> (テストスイート実行のため),
     <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> または
     <xref linkend="fop"/> (XML PDF サポート),
@@ -130,7 +130,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gtk-doc"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gtk-doc"/></para>
 @z
 
@@ -170,7 +170,7 @@
     <title>Command Explanations</title>
 @y
   <sect2 role="commands">
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -200,7 +200,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -208,9 +208,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -230,7 +230,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

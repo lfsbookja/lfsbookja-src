@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -54,7 +54,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -84,13 +84,13 @@
 @x
         <para>Estimated disk space required: &slib-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &slib-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &slib-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &slib-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &slib-time;</para>
+        <para>&Estimatedbuildtime;: &slib-time;</para>
 @z
 
 @x
@@ -119,7 +119,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/slib"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/slib"/></para>
 @z
 
@@ -152,7 +152,7 @@
     <para>This package does not come with a functional test suite.</para>
 @y
     <para>
-    &j-notTestSuite;
+    &notTestSuite;
     </para>
 @z
 
@@ -194,7 +194,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x

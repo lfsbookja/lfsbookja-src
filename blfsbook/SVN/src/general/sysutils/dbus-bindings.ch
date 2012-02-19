@@ -90,7 +90,7 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">&j-PackageInformation;</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -120,13 +120,13 @@
 @x
           <para>Estimated disk space required: &dbus-glib-buildsize;</para>
 @y
-          <para>&j-Estimateddiskspacerequired;: &dbus-glib-buildsize;</para>
+          <para>&Estimateddiskspacerequired;: &dbus-glib-buildsize;</para>
 @z
 
 @x
           <para>Estimated build time: &dbus-glib-time;</para>
 @y
-          <para>&j-Estimatedbuildtime;: &dbus-glib-time;</para>
+          <para>&Estimatedbuildtime;: &dbus-glib-time;</para>
 @z
 
 @x
@@ -143,7 +143,7 @@
         <xref linkend="expat"/>
       </para>
 @y
-      <bridgehead renderas="sect5">&j-Required;</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="dbus"/>,
         <xref linkend="glib2"/>,
@@ -167,7 +167,7 @@
       <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/dbus-glib"/></para>
 @y
-      <para condition="html" role="usernotes">&j-UserNotes;:
+      <para condition="html" role="usernotes">&UserNotes;:
       <ulink url="&blfs-wiki;/dbus-glib"/></para>
 @z
 
@@ -210,7 +210,7 @@
 @x
       <title>Command Explanations</title>
 @y
-      <title>&j-CommandExplanations;</title>
+      <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -228,7 +228,7 @@
 @x
       <title>Contents</title>
 @y
-      <title>&j-Contents;</title>
+      <title>&Contents;</title>
 @z
 
 @x
@@ -236,9 +236,9 @@
         <segtitle>Installed Library</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -256,7 +256,7 @@
 @x
         <bridgehead renderas="sect4">Short Descriptions</bridgehead>
 @y
-        <bridgehead renderas="sect4">&j-ShortDescriptions;</bridgehead>
+        <bridgehead renderas="sect4">&ShortDescriptions;</bridgehead>
 @z
 
 @x dbus-binding-tool
@@ -297,7 +297,7 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">&j-PackageInformation;</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -327,13 +327,13 @@
 @x
           <para>Estimated disk space required: &dbus-python-buildsize;</para>
 @y
-          <para>&j-Estimateddiskspacerequired;: &dbus-python-buildsize;</para>
+          <para>&Estimateddiskspacerequired;: &dbus-python-buildsize;</para>
 @z
 
 @x
           <para>Estimated build time: &dbus-python-time;</para>
 @y
-          <para>&j-Estimatedbuildtime;: &dbus-python-time;</para>
+          <para>&Estimatedbuildtime;: &dbus-python-time;</para>
 @z
 
 @x
@@ -349,7 +349,7 @@
         <xref linkend="dbus-glib"/>
       </para>
 @y
-      <bridgehead renderas="sect5">&j-Required;</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="python2"/>,
         <xref linkend="dbus-glib"/>
@@ -362,7 +362,7 @@
         <xref linkend="pygobject2"/> (required to run the test suite)
       </para>
 @y
-      <bridgehead renderas="sect5">&j-Optional;</bridgehead>
+      <bridgehead renderas="sect5">&Optional;</bridgehead>
       <para role="optional">
         <xref linkend="pygobject2"/> (テストスイート実行時に必要)
       </para>
@@ -376,7 +376,7 @@
         <ulink url="http://docutils.sourceforge.net/">Docutils</ulink>
       </para>
 @y
-      <bridgehead renderas="sect5">&j-Optional;
+      <bridgehead renderas="sect5">&Optional;
       (API および HTML ドキュメント構築時に必要)</bridgehead>
       <para role="optional">
         <ulink url="http://epydoc.sourceforge.net/">Epydoc</ulink>,
@@ -388,7 +388,7 @@
       <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/dbus-python"/></para>
 @y
-      <para condition="html" role="usernotes">&j-UserNotes;:
+      <para condition="html" role="usernotes">&UserNotes;:
       <ulink url="&blfs-wiki;/dbus-python"/></para>
 @z
 
@@ -438,7 +438,7 @@
 @x
       <title>Contents</title>
 @y
-      <title>&j-Contents;</title>
+      <title>&Contents;</title>
 @z
 
 @x
@@ -446,9 +446,9 @@
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-        <segtitle>&j-InstalledPrograms;</segtitle>
-        <segtitle>&j-InstalledLibraries;</segtitle>
-        <segtitle>&j-InstalledDirectories;</segtitle>
+        <segtitle>&InstalledPrograms;</segtitle>
+        <segtitle>&InstalledLibraries;</segtitle>
+        <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -488,7 +488,7 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">&j-PackageInformation;</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -518,13 +518,13 @@
 @x
           <para>Estimated disk space required: &dbus-qt3-buildsize;</para>
 @y
-          <para>&j-Estimateddiskspacerequired;: &dbus-qt3-buildsize;</para>
+          <para>&Estimateddiskspacerequired;: &dbus-qt3-buildsize;</para>
 @z
 
 @x
           <para>Estimated build time: &dbus-qt3-time;</para>
 @y
-          <para>&j-Estimatedbuildtime;: &dbus-qt3-time;</para>
+          <para>&Estimatedbuildtime;: &dbus-qt3-time;</para>
 @z
 
 @x
@@ -540,7 +540,7 @@
         <xref linkend="qt"/>
       </para>
 @y
-      <bridgehead renderas="sect5">&j-Required;</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="dbus"/>,
         <xref linkend="qt"/>
@@ -551,7 +551,7 @@
       <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/dbus-qt3"/></para>
 @y
-      <para condition="html" role="usernotes">&j-UserNotes;:
+      <para condition="html" role="usernotes">&UserNotes;:
       <ulink url="&blfs-wiki;/dbus-qt3"/></para>
 @z
 
@@ -582,7 +582,7 @@
       <para>This package does not come with a test suite.</para>
 @y
       <para>
-      &j-notTestSuite;
+      &notTestSuite;
       </para>
 @z
 
@@ -597,7 +597,7 @@
 @x
       <title>Contents</title>
 @y
-      <title>&j-Contents;</title>
+      <title>&Contents;</title>
 @z
 
 @x
@@ -605,9 +605,9 @@
         <segtitle>Installed Library</segtitle>
         <segtitle>Installed Directory</segtitle>
 @y
-        <segtitle>&j-InstalledPrograms;</segtitle>
-        <segtitle>&j-InstalledLibraries;</segtitle>
-        <segtitle>&j-InstalledDirectories;</segtitle>
+        <segtitle>&InstalledPrograms;</segtitle>
+        <segtitle>&InstalledLibraries;</segtitle>
+        <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -623,7 +623,7 @@
 @x
         <bridgehead renderas="sect4">Short Descriptions</bridgehead>
 @y
-        <bridgehead renderas="sect4">&j-ShortDescriptions;</bridgehead>
+        <bridgehead renderas="sect4">&ShortDescriptions;</bridgehead>
 @z
 
 @x libdbus-tqt-1.so
@@ -650,7 +650,7 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">&j-PackageInformation;</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -680,13 +680,13 @@
 @x
           <para>Estimated disk space required: &eggdbus-buildsize;</para>
 @y
-          <para>&j-Estimateddiskspacerequired;: &eggdbus-buildsize;</para>
+          <para>&Estimateddiskspacerequired;: &eggdbus-buildsize;</para>
 @z
 
 @x
           <para>Estimated build time: &eggdbus-time;</para>
 @y
-          <para>&j-Estimatedbuildtime;: &eggdbus-time;</para>
+          <para>&Estimatedbuildtime;: &eggdbus-time;</para>
 @z
 
 @x
@@ -700,7 +700,7 @@
       <para role="required"><xref linkend="dbus-glib"/> and
       <xref linkend="docbook-xsl"/></para>
 @y
-      <bridgehead renderas="sect5">&j-Required;</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required"><xref linkend="dbus-glib"/>,
       <xref linkend="docbook-xsl"/></para>
 @z
@@ -709,7 +709,7 @@
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
-      <bridgehead renderas="sect5">&j-Optional;</bridgehead>
+      <bridgehead renderas="sect5">&Optional;</bridgehead>
       <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
@@ -717,7 +717,7 @@
       <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/eggdbus"/></para>
 @y
-      <para condition="html" role="usernotes">&j-UserNotes;:
+      <para condition="html" role="usernotes">&UserNotes;:
       <ulink url="&blfs-wiki;/eggdbus"/></para>
 @z
 
@@ -755,13 +755,13 @@
 @x
       <title>Command Explanations</title>
 @y
-      <title>&j-CommandExplanations;</title>
+      <title>&CommandExplanations;</title>
 @z
 
 @x
       <title>Contents</title>
 @y
-      <title>&j-Contents;</title>
+      <title>&Contents;</title>
 @z
 
 @x
@@ -769,9 +769,9 @@
         <segtitle>Installed Library</segtitle>
         <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

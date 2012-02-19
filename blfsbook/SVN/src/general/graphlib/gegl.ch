@@ -31,7 +31,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -61,13 +61,13 @@
 @x
         <para>Estimated disk space required: &gegl-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gegl-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gegl-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gegl-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gegl-time;</para>
+        <para>&Estimatedbuildtime;: &gegl-time;</para>
 @z
 
 @x
@@ -81,7 +81,7 @@
     <para role="required"><xref linkend="babl"/>,
     and  <xref linkend="glib2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="babl"/>,
     <xref linkend="glib2"/></para>
 @z
@@ -113,7 +113,7 @@
     and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><ulink
     url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
     <xref linkend="cairo"/>,
@@ -144,7 +144,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/gegl'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/gegl'/></para>
 @z
 
@@ -182,7 +182,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -203,7 +203,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -211,9 +211,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -229,7 +229,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gegl

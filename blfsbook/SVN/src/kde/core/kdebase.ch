@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -33,7 +33,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -63,13 +63,13 @@
 @x
         <para>Estimated disk space required: &kdebase-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &kdebase-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kdebase-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &kdebase-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &kdebase-time;</para>
+        <para>&Estimatedbuildtime;: &kdebase-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
       <xref linkend="dbus-qt3"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="kdelibs"/>,
       <xref linkend="dbus-qt3"/>
@@ -100,7 +100,7 @@
       <xref linkend="openssl"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="aRts"/>,
       <xref linkend="libart_lgpl"/>,
@@ -122,7 +122,7 @@
       <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="hal"/>,
@@ -144,7 +144,7 @@
       <xref linkend="doxygen"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional; (API ドキュメント用)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (API ドキュメント用)</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
       <xref linkend="graphviz"/>,
@@ -156,7 +156,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/kdebase"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/kdebase"/></para>
 @z
 

@@ -138,7 +138,7 @@
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required"><xref linkend="python2"/></para>
 @y
-      <bridgehead renderas="sect5">&j-Required;</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required"><xref linkend="python2"/></para>
 @z
 
@@ -146,7 +146,7 @@
       <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/pyxml"/></para>
 @y
-      <para condition="html" role="usernotes">&j-UserNotes;:
+      <para condition="html" role="usernotes">&UserNotes;:
       <ulink url="&blfs-wiki;/pyxml"/></para>
 @z
 
@@ -184,7 +184,7 @@
 @x
       <title>Command Explanations</title>
 @y
-      <title>&j-CommandExplanations;</title>
+      <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -208,7 +208,7 @@
 @x
       <title>Contents</title>
 @y
-      <title>&j-Contents;</title>
+      <title>&Contents;</title>
 @z
 
 @x
@@ -216,9 +216,9 @@
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-        <segtitle>&j-InstalledPrograms;</segtitle>
-        <segtitle>&j-InstalledLibraries;</segtitle>
-        <segtitle>&j-InstalledDirectories;</segtitle>
+        <segtitle>&InstalledPrograms;</segtitle>
+        <segtitle>&InstalledLibraries;</segtitle>
+        <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -236,7 +236,7 @@
 @x
         <bridgehead renderas="sect4">Short Descriptions</bridgehead>
 @y
-        <bridgehead renderas="sect4">&j-ShortDescriptions;</bridgehead>
+        <bridgehead renderas="sect4">&ShortDescriptions;</bridgehead>
 @z
 
 @x xmlproc_parse

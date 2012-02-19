@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -47,7 +47,7 @@ Icon Naming Specification</ulink>.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -77,13 +77,13 @@ Icon Naming Specification</ulink>.
 @x
         <para>Estimated disk space required: &icon-naming-utils-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &icon-naming-utils-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &icon-naming-utils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &icon-naming-utils-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &icon-naming-utils-time;</para>
+        <para>&Estimatedbuildtime;: &icon-naming-utils-time;</para>
 @z
 
 @x
@@ -96,7 +96,7 @@ Icon Naming Specification</ulink>.
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="perl-xml-simple"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="perl-xml-simple"/></para>
 @z
 
@@ -104,7 +104,7 @@ Icon Naming Specification</ulink>.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/icon-naming-utils"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/icon-naming-utils"/></para>
 @z
 
@@ -127,7 +127,7 @@ Icon Naming Specification</ulink>.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -142,7 +142,7 @@ Icon Naming Specification</ulink>.
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -163,7 +163,7 @@ Icon Naming Specification</ulink>.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -171,9 +171,9 @@ Icon Naming Specification</ulink>.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -189,7 +189,7 @@ Icon Naming Specification</ulink>.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x icon-name-mapping

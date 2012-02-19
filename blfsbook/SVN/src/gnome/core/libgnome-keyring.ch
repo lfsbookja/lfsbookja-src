@@ -33,7 +33,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -63,13 +63,13 @@
 @x
         <para>Estimated disk space required: &libgnome-keyring-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libgnome-keyring-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libgnome-keyring-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libgnome-keyring-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libgnome-keyring-time;</para>
+        <para>&Estimatedbuildtime;: &libgnome-keyring-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
     <xref linkend="intltool"/>, and
     <xref linkend="libgcrypt"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="dbus"/>,
     <xref linkend="glib2"/>,
     <xref linkend="intltool"/>,
@@ -97,7 +97,7 @@
     <para role="optional"><xref linkend="gtk-doc"/> and
     <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
     <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
 @z
@@ -106,7 +106,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libgnome-keyring"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libgnome-keyring"/></para>
 @z
 
@@ -144,13 +144,13 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -158,9 +158,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -178,7 +178,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libgnome-keyring.so

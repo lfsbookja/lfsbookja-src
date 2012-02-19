@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &libsigc-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libsigc-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libsigc-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libsigc-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libsigc-time;</para>
+        <para>&Estimatedbuildtime;: &libsigc-time;</para>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -115,9 +115,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -137,7 +137,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libsigc-2.0.so

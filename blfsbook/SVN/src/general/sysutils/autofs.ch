@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -56,7 +56,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -86,19 +86,19 @@
 @x
         <para>Estimated disk space required: &autofs-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &autofs-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &autofs-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &autofs-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &autofs-time;</para>
+        <para>&Estimatedbuildtime;: &autofs-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -138,7 +138,7 @@
     <para role="optional"><xref linkend="openldap"/> and
     <xref linkend="cyrus-sasl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="cyrus-sasl"/></para>
 @z
@@ -147,7 +147,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/autofs"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/autofs"/></para>
 @z
 
@@ -189,7 +189,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>&j-notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -203,7 +203,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -235,7 +235,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -253,7 +253,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -377,7 +377,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -385,9 +385,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -411,7 +411,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x automount

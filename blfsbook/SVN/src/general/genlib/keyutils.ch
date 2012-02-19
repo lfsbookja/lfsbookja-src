@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,13 +16,13 @@
 @x
   <!ENTITY keyutils-time          "less than 0.1 SBU">
 @y
-  <!ENTITY keyutils-time          "0.1 SBU 以下">
+  <!ENTITY keyutils-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to keyutils</title>
 @y
-    <title>keyutils の概要</title>
+    <title>&IntroductionTo1;keyutils&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,57 +40,57 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&keyutils-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&keyutils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&keyutils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&keyutils-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&keyutils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&keyutils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &keyutils-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &keyutils-md5sum;</para>
+        <para>&Download; MD5 sum: &keyutils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &keyutils-size;</para>
 @y
-        <para>ダウンロードサイズ: &keyutils-size;</para>
+        <para>&DownloadSize;: &keyutils-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &keyutils-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &keyutils-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &keyutils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &keyutils-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &keyutils-time;</para>
+        <para>&Estimatedbuildtime;: &keyutils-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/keyutils"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/keyutils"/></para>
 @z
 
 @x
     <title>Installation of keyutils</title>
 @y
-    <title>keyutils のインストール</title>
+    <title>&InstallationOf1;keyutils&InstallationOf2;</title>
 @z
 
 @x
@@ -105,9 +105,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -121,7 +119,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -129,9 +127,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -147,7 +145,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x keyctl

@@ -38,7 +38,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -68,19 +68,19 @@
 @x
         <para>Estimated disk space required: &zenity-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &zenity-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &zenity-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &zenity-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &zenity-time;</para>
+        <para>&Estimatedbuildtime;: &zenity-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Zenity Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Zenity の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Zenity&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -89,7 +89,7 @@
     <xref linkend="gtk3"/>, and
     <xref linkend="which"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="gnome-doc-utils"/>,
     <xref linkend="gtk3"/>,
     <xref linkend="which"/></para>
@@ -99,7 +99,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="libnotify"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="libnotify"/></para>
 @z
 
@@ -107,51 +107,49 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/zenity"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/zenity"/></para>
 @z
 
 @x
     <title>Installation of Zenity</title>
 @y
-    <title>Zenity のインストール</title>
+    <title>&InstallationOf1;Zenity&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>Zenity</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Zenity</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Zenity</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&j-notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -159,9 +157,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -179,26 +177,25 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gdialog
           <para>is a <application>Perl</application> wrapper script which
           can be used with legacy scripts.</para>
 @y
-<para>
-is a <application>Perl</application> wrapper script which
-can be used with legacy scripts.
-</para>
+          <para>
+          is a <application>Perl</application> wrapper script which
+          can be used with legacy scripts.
+          </para>
 @z
 
 @x zenity
           <para>is a program that will display <application>GTK+</application>
           dialogs, and return the user's input.</para>
 @y
-<para>
-is a program that will display <application>GTK+</application>
-dialogs, and return the user's input.
-</para>
+          <para>
+          is a program that will display <application>GTK+</application>
+          dialogs, and return the user's input.
+          </para>
 @z
-

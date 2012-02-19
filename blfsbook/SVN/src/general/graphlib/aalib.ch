@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &aalib-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &aalib-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &aalib-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &aalib-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &aalib-time;</para>
+        <para>&Estimatedbuildtime;: &aalib-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <xref linkend="slang"/>, and
     <xref linkend="gpm"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="slang"/>,
     <xref linkend="gpm"/></para>
@@ -93,7 +93,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/aalib"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/aalib"/></para>
 @z
 
@@ -117,7 +117,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -133,7 +133,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -141,9 +141,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -159,7 +159,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x aafire

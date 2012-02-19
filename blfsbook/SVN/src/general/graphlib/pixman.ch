@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &pixman-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &pixman-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &pixman-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &pixman-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &pixman-time;</para>
+        <para>&Estimatedbuildtime;: &pixman-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <bridgehead renderas="sect4">Optional (required to run the test suite)</bridgehead>
     <para role="optional"><xref linkend="gtk2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional; (テストスイート実行に必要)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (テストスイート実行に必要)</bridgehead>
     <para role="optional"><xref linkend="gtk2"/></para>
 @z
 
@@ -91,7 +91,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/pixman"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/pixman"/></para>
 @z
 
@@ -131,7 +131,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -139,9 +139,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -157,7 +157,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libpixman1.{so,a}

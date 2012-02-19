@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &gtksourceview-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gtksourceview-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gtksourceview-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gtksourceview-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gtksourceview-time;</para>
+        <para>&Estimatedbuildtime;: &gtksourceview-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
     <xref linkend="intltool"/>, and
     <xref linkend="perl-xml-parser"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="gtk2"/>,
     <xref linkend="intltool"/>,
     <xref linkend="perl-xml-parser"/></para>
@@ -95,7 +95,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
@@ -103,7 +103,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gtksourceview"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gtksourceview"/></para>
 @z
 
@@ -132,7 +132,7 @@
     <filename class='libraryfile'>libgtksourceview-2.0</filename> library.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 
 If you have the
 optional dependencies to build the test programs installed,
@@ -155,13 +155,13 @@ functionality of the
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -169,9 +169,9 @@ functionality of the
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -191,7 +191,7 @@ functionality of the
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libgtksourceview-2.0.{so,a}

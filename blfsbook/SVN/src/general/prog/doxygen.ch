@@ -96,13 +96,13 @@
 @x
         <para>Estimated disk space required: &doxygen-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &doxygen-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &doxygen-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &doxygen-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &doxygen-time;</para>
+        <para>&Estimatedbuildtime;: &doxygen-time;</para>
 @z
 
 @x

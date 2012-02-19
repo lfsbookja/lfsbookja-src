@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -184,13 +184,13 @@ third party application, must also be made freely availible.</para>
 @x
         <para>Estimated disk space required: &icedtea6-src-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &icedtea6-src-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &icedtea6-src-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &icedtea6-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &icedtea6-time;</para>
+        <para>&Estimatedbuildtime;: &icedtea6-time;</para>
 @z
 
 @x
@@ -254,7 +254,7 @@ third party application, must also be made freely availible.</para>
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -341,7 +341,7 @@ third party application, must also be made freely availible.</para>
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/icedtea6"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/icedtea6"/></para>
 @z
 
@@ -506,7 +506,7 @@ installation with the following commands:
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -548,7 +548,7 @@ installation with the following commands:
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -620,7 +620,7 @@ installation with the following commands:
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -628,9 +628,9 @@ installation with the following commands:
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -660,6 +660,6 @@ installation with the following commands:
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 

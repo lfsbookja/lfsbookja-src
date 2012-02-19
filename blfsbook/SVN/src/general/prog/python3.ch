@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2011-11-02 21:59:09 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -43,7 +43,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -73,19 +73,19 @@
 @x
         <para>Estimated disk space required: &python3-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &python3-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &python3-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &python3-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &python3-time;</para>
+        <para>&Estimatedbuildtime;: &python3-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -135,7 +135,7 @@
     <filename class="libraryfile">libffi</filename> library is built), and
     <ulink url="http://www.bluez.org/">BlueZ</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="pth"/>,
     <xref linkend="libffi"/> または <xref linkend="gcc"/> (install JAVA so that the 
     <filename class="libraryfile">libffi</filename> library is built),
@@ -150,7 +150,7 @@
     <xref linkend="db"/>, and
     <xref linkend="sqlite"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional; (各パッケージ固有のサポートモジュール生成に必要)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (各パッケージ固有のサポートモジュール生成に必要)</bridgehead>
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="tk"/>,
     <xref linkend="db"/>,
@@ -173,7 +173,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/Python"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/Python"/></para>
 @z
 
@@ -247,7 +247,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -282,7 +282,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -290,9 +290,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -346,7 +346,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x idle

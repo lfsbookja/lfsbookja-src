@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -28,15 +28,14 @@
   installed during the LFS book.  This contains all of the
   <application>C</application> library functions which programs use.</para>
 @y
-<para>
-ライブラリというものは、他のプログラムが必要とするプログラムモジュールを提供します。
-このような形には利点があって、他のプログラムが同じモジュールを持つ必要がなくなるため、バグの発生を軽減できます。
-各プログラムはシステムにインストールされているライブラリの関数を呼び出します。
-その好例となるのが <application>Glibc</application> です。
-これは既に LFS ブックの時点でインストール済のものです。
-<application>Glibc</application>
-には <application>C</application> ライブラリ関数がすべて提供され、各プログラムが利用しています。
-</para>
+  <para>
+  ライブラリというものは、他のプログラムが必要とするプログラムモジュールを提供します。
+  このような形には利点があって、他のプログラムが同じモジュールを持つ必要がなくなるため、バグの発生を軽減できます。
+  各プログラムはシステムにインストールされているライブラリの関数を呼び出します。
+  その好例となるのが <application>Glibc</application> です。
+  これは既に LFS ブックの時点でインストール済のものです。
+  <application>Glibc</application> には <application>C</application> ライブラリ関数がすべて提供され、各プログラムが利用しています。
+  </para>
 @z
 
 @x
@@ -47,17 +46,14 @@
   making the program file larger.  Quite often, you will find both static and
   shared copies of the same library on your system.</para>
 @y
-<para>
-ライブラリには２つの種類があります。
-スタティック (static) ライブラリと共有 (shared) ライブラリです。
-共有ライブラリは (通常 <filename>libXXX.so</filename> というファイル名であり)
-実行時に共有される形でメモリ上にコピーされ利用されます。
-(ファイル名がそのことを表しています。)
-スタティックライブラリは (<filename>libXXX.a</filename> といったファイル名であり)
-実行プログラムに直接リンクされます。
-したがってその実行プログラムのファイルサイズは大きなものになります。
-各種ライブラリは、たいていスタティックライブラリと共有ライブラリを同時に提供しています。
-</para>
+  <para>
+  ライブラリには２つの種類があります。
+  スタティック (static) ライブラリと共有 (shared) ライブラリです。
+  共有ライブラリは (通常 <filename>libXXX.so</filename> というファイル名であり) 実行時に共有される形でメモリ上にコピーされ利用されます。
+  (ファイル名がそのことを表しています。) スタティックライブラリは (<filename>libXXX.a</filename> といったファイル名であり) 実行プログラムに直接リンクされます。
+  したがってその実行プログラムのファイルサイズは大きなものになります。
+  各種ライブラリは、たいていスタティックライブラリと共有ライブラリを同時に提供しています。
+  </para>
 @z
 
 @x
@@ -70,14 +66,12 @@
   <filename>INSTALL</filename> file will contain
   details of the program's requirements.</para>
 @y
-<para>
-一般に、ライブラリのインストールを必要とするのは、自分がインストールしようとしているプログラムが、そのライブラリ機能を必要としている場合です。
-BLFS ブックでは、個々のパッケージにおいて (判明している) 依存パッケージを一覧に示しています。
-したがってパッケージをインストールする際に、どのライブラリを必要とするかはすぐに分かります。
-BLFS には示されていないプログラムをインストールしようとしている場合は、
-<filename>README</filename> ファイルや <filename>INSTALL</filename>
-ファイルに、必要な情報が示されているはずですので参照してください。
-</para>
+  <para>
+  一般に、ライブラリのインストールを必要とするのは、自分がインストールしようとしているプログラムが、そのライブラリ機能を必要としている場合です。
+  BLFS ブックでは、個々のパッケージにおいて (判明している) 依存パッケージを一覧に示しています。
+  したがってパッケージをインストールする際に、どのライブラリを必要とするかはすぐに分かります。
+  BLFS には示されていないプログラムをインストールしようとしている場合は、<filename>README</filename> ファイルや <filename>INSTALL</filename> ファイルに、必要な情報が示されているはずですので参照してください。
+  </para>
 @z
 
 @x
@@ -85,9 +79,8 @@ BLFS には示されていないプログラムをインストールしようと
   will need at some point.  In this chapter we list these and some others and
   explain why you may want to install them.</para>
 @y
-<para>
-ライブラリの中には <emphasis>誰もが</emphasis> 必要とするものがあります。
-本章ではそういったものを列記し、なぜインストールを必要とするのかを説明していきます。
-</para>
+  <para>
+  ライブラリの中には <emphasis>誰もが</emphasis> 必要とするものがあります。
+  本章ではそういったものを列記し、なぜインストールを必要とするのかを説明していきます。
+  </para>
 @z
-

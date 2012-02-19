@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &librsvg-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &librsvg-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &librsvg-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &librsvg-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &librsvg-time;</para>
+        <para>&Estimatedbuildtime;: &librsvg-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <para role="required"><xref linkend="gtk2"/> and
     <xref linkend="libxml2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="gtk2"/>,
     <xref linkend="libxml2"/></para>
 @z
@@ -94,7 +94,7 @@
     <para role="recommended"><xref linkend="libcroco"/> and
     <xref linkend="libgsf"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="libcroco"/>,
     <xref linkend="libgsf"/></para>
 @z
@@ -107,7 +107,7 @@
     <command>rsvg</command> for the newer
     <command>rsvg-convert</command>.</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>,
     <xref linkend="docbook-utils"/>, and
     <xref linkend="python2"/>, providing a legacy wrapper interface
@@ -119,7 +119,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/librsvg"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/librsvg"/></para>
 @z
 
@@ -157,7 +157,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -176,7 +176,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -184,9 +184,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -202,7 +202,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x rsvg

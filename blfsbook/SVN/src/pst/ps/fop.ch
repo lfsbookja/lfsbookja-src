@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to FOP</title>
 @y
-    <title>FOP の概要</title>
+    <title>&IntroductionTo1;FOP&IntroductionTo2;</title>
 @z
 
 @x
@@ -45,55 +45,55 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&fop-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&fop-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&fop-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&fop-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&fop-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&fop-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &fop-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &fop-md5sum;</para>
+        <para>&Download; MD5 sum: &fop-md5sum;</para>
 @z
 
 @x
         <para>Download size: &fop-size;</para>
 @y
-        <para>ダウンロードサイズ: &fop-size;</para>
+        <para>&DownloadSize;: &fop-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &fop-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &fop-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &fop-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &fop-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &fop-time;</para>
+        <para>&Estimatedbuildtime;: &fop-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
       <title>Required packages</title>
 @y
-      <title>&j-Required;</title>
+      <title>&Required;</title>
 @z
 @x
         <para>Objects for Formatting Objects (OFFO) hyphenation patterns:
@@ -109,7 +109,7 @@
 @x
     <bridgehead renderas="sect3">FOP Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">FOP の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;FOP&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -119,7 +119,7 @@
     <ulink url="http://java.sun.com/javase/technologies/desktop/media/jai/">Java
     Advanced Imaging (JAI) API components</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="xorg7"/>,
     <xref linkend="apache-ant"/>,
     <ulink url="http://java.sun.com/javase/technologies/desktop/media/jai/">JAI
@@ -137,7 +137,7 @@
     <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest used only
     to rebuild the documentation)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
     <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
     <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
@@ -152,14 +152,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/fop"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/fop"/></para>
 @z
 
 @x
     <title>Installation of FOP</title>
 @y
-    <title>FOP のインストール</title>
+    <title>&InstallationOf1;FOP&InstallationOf2;</title>
 @z
 
 @x
@@ -215,7 +215,7 @@
 @x
       <title>Installing JAI</title>
 @y
-      <title>JAI のインストール</title>
+      <title>&InstallationOf1;JAI&InstallationOf2;</title>
 @z
 
 @x
@@ -295,7 +295,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -356,19 +356,19 @@
 @x
     <title>Configuring FOP</title>
 @y
-    <title>FOP の設定</title>
+    <title>&Configuring1;FOP&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -450,7 +450,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -458,9 +458,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -482,7 +482,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x fop

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -36,7 +36,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -60,13 +60,13 @@
 @x
         <para>Estimated disk space required: &giflib-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &giflib-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &giflib-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &giflib-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &giflib-time;</para>
+        <para>&Estimatedbuildtime;: &giflib-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     (or <ulink
     url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <ulink
     url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
@@ -95,7 +95,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/giflib"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/giflib"/></para>
 @z
 
@@ -117,7 +117,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>&j-notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -131,7 +131,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -146,7 +146,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -154,9 +154,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -178,7 +178,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gif2epsn

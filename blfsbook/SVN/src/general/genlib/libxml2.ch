@@ -40,7 +40,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,19 +70,19 @@
 @x
         <para>Estimated disk space required: &libxml2-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libxml2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libxml2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libxml2-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libxml2-time;</para>
+        <para>&Estimatedbuildtime;: &libxml2-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -108,7 +108,7 @@
     <application>Python</application> library module, additionally it is
     required to run the full suite of tests)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="python2"/>
     (<application>Python</application> ライブラリモジュールビルドしインストールする場合には必要です。
     またテストスイートをすべて実施する際にも必要です。)
@@ -136,7 +136,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libxml2"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libxml2"/></para>
 @z
 
@@ -188,7 +188,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -229,7 +229,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -237,9 +237,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -262,7 +262,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x xml2-config

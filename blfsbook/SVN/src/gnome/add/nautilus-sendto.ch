@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -47,7 +47,7 @@ Claws</application>).
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -77,13 +77,13 @@ Claws</application>).
 @x
         <para>Estimated disk space required: &nautilus-sendto-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &nautilus-sendto-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &nautilus-sendto-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &nautilus-sendto-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &nautilus-sendto-time;</para>
+        <para>&Estimatedbuildtime;: &nautilus-sendto-time;</para>
 @z
 
 @x
@@ -96,7 +96,7 @@ Claws</application>).
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="nautilus"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="nautilus"/></para>
 @z
 
@@ -107,7 +107,7 @@ Claws</application>).
     <ulink url="http://www.gupnp.org/">gUPnP</ulink>, and
     <xref linkend="telepathy-glib"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="evolution"/>,
     <xref linkend="evolution-data-server"/>,
     <ulink url="http://www.gupnp.org/">gUPnP</ulink>,
@@ -118,7 +118,7 @@ Claws</application>).
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/nautilus-sendto"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/nautilus-sendto"/></para>
 @z
 
@@ -141,7 +141,7 @@ Claws</application>).
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -156,13 +156,13 @@ Claws</application>).
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -170,9 +170,9 @@ Claws</application>).
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -194,7 +194,7 @@ Claws</application>).
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x nautilus-sendto

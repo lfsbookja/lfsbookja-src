@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -23,8 +23,7 @@
   <para>This chapter includes applications that create output equivalent to
   typesetting.</para>
 @y
-<para>
-この章では組版処理を行うアプリケーションを説明します。
-</para>
+  <para>
+  この章では組版処理を行うアプリケーションを説明します。
+  </para>
 @z
-

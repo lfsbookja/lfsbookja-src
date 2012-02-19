@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -36,7 +36,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -66,13 +66,13 @@
 @x
         <para>Estimated disk space required: &qca-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &qca-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &qca-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &qca-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &qca-time;</para>
+        <para>&Estimatedbuildtime;: &qca-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
     <xref linkend="qt4"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="qt4"/>
     </para>
@@ -97,7 +97,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/qca"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/qca"/></para>
 @z
 
@@ -127,7 +127,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -135,9 +135,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

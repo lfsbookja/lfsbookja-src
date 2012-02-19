@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,23 +16,21 @@
 @x
   <!ENTITY enscript-time          "less than 0.1 SBU">
 @y
-  <!ENTITY enscript-time          "0.1 SBU 以下">
+  <!ENTITY enscript-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Enscript</title>
 @y
-    <title>Enscript の概要</title>
+    <title>&IntroductionTo1;Enscript&IntroductionTo2;</title>
 @z
 
 @x
     <para><application>Enscript</application> converts ASCII text files
     to PostScript, HTML, RTF, ANSI and overstrikes.</para>
 @y
-<para>
-<application>Enscript</application> converts ASCII text files
-to PostScript, HTML, RTF, ANSI and overstrikes.
-</para>
+    <para><application>Enscript</application> converts ASCII text files
+    to PostScript, HTML, RTF, ANSI and overstrikes.</para>
 @z
 
 @x
@@ -55,49 +53,49 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&enscript-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&enscript-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&enscript-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&enscript-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&enscript-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&enscript-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &enscript-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &enscript-md5sum;</para>
+        <para>&Download; MD5 sum: &enscript-md5sum;</para>
 @z
 
 @x
         <para>Download size: &enscript-size;</para>
 @y
-        <para>ダウンロードサイズ: &enscript-size;</para>
+        <para>&DownloadSize;: &enscript-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &enscript-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &enscript-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &enscript-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &enscript-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &enscript-time;</para>
+        <para>&Estimatedbuildtime;: &enscript-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -112,14 +110,14 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/Enscript"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/Enscript"/></para>
 @z
 
 @x
     <title>Installation of Enscript</title>
 @y
-    <title>Enscript のインストール</title>
+    <title>&InstallationOf1;Enscript&InstallationOf2;</title>
 @z
 
 @x
@@ -171,7 +169,7 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -213,7 +211,7 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -221,9 +219,9 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -235,7 +233,7 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
 @y
         <seg>diffpp, enscript, mkafmmap, over, sliceprint,
         states</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/etc/enscript, /usr/share/doc/enscript-&enscript-version;,
         /usr/share/enscript</seg>
 @z
@@ -243,7 +241,7 @@ to PostScript, HTML, RTF, ANSI and overstrikes.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x diffpp

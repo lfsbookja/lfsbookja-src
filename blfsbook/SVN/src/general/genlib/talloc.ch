@@ -42,7 +42,7 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -72,13 +72,13 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @x
         <para>Estimated disk space required: &talloc-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &talloc-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &talloc-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &talloc-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &talloc-time;</para>
+        <para>&Estimatedbuildtime;: &talloc-time;</para>
 @z
 
 @x
@@ -115,7 +115,7 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -123,9 +123,9 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -141,7 +141,7 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libtalloc.{a,so}

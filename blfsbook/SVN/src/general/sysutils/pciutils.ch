@@ -62,7 +62,7 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -92,20 +92,20 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
 @x
         <para>Estimated disk space required: &pciutils-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &pciutils-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &pciutils-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &pciutils-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &pciutils-time;</para>
+        <para>&Estimatedbuildtime;: &pciutils-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/pciutils"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/pciutils"/></para>
 @z
 
@@ -129,7 +129,7 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -158,7 +158,7 @@ PCI デバイスの一覧の取得、動作ステータスの精査、設定レ�
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -223,7 +223,7 @@ crontab に対して <systemitem class="username">root</systemitem>
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -231,9 +231,9 @@ crontab に対して <systemitem class="username">root</systemitem>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -249,7 +249,7 @@ crontab に対して <systemitem class="username">root</systemitem>
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x lspci

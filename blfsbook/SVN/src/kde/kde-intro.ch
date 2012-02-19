@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
   <title>Introduction to Trinity/KDE3</title>
 @y
-  <title>Trinity/KDE3 の概要</title>
+  <title>&IntroductionTo1;Trinity/KDE3&IntroductionTo2;</title>
 @z
 
 @x

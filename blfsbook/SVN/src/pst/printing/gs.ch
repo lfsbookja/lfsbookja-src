@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -28,7 +28,7 @@
 @x
     <title>Introduction to Ghostscript</title>
 @y
-    <title>Ghostscript の概要</title>
+    <title>&IntroductionTo1;Ghostscript&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,49 +44,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&gs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gs-md5sum;</para>
+        <para>&Download; MD5 sum: &gs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gs-size;</para>
 @y
-        <para>ダウンロードサイズ: &gs-size;</para>
+        <para>&DownloadSize;: &gs-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &gs-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gs-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gs-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gs-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gs-time;</para>
+        <para>&Estimatedbuildtime;: &gs-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -98,19 +98,19 @@
 @x
         <para>Download (FTP): <ulink url="&gs-standard-fonts-download;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gs-standard-fonts-download;"/></para>
+        <para>&Download; (FTP): <ulink url="&gs-standard-fonts-download;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gs-standard-fonts-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gs-standard-fonts-md5sum;</para>
+        <para>&Download; MD5 sum: &gs-standard-fonts-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gs-standard-fonts-size;</para>
 @y
-        <para>ダウンロードサイズ: &gs-standard-fonts-size;</para>
+        <para>&DownloadSize;: &gs-standard-fonts-size;</para>
 @z
 
 @x
@@ -122,47 +122,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gs-other-fonts-download;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gs-other-fonts-download;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gs-other-fonts-download;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gs-other-fonts-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gs-other-fonts-md5sum;</para>
+        <para>&Download; MD5 sum: &gs-other-fonts-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gs-other-fonts-size;</para>
 @y
-        <para>ダウンロードサイズ: &gs-other-fonts-size;</para>
+        <para>&DownloadSize;: &gs-other-fonts-size;</para>
 @z
-
-% @x
-%       <title>Patches</title>
-% @y
-%       <title>パッチ</title>
-% @z
-% 
-% @x
-%         <para>Required patch: <ulink
-%         url="&patch-root;/ghostscript-&gs-version;-security_fixes-1.patch"/>
-% @y
-%         <para>必要なパッチ: <ulink
-%         url="&patch-root;/ghostscript-&gs-version;-security_fixes-1.patch"/>
-% @z
-% 
-% @x
-%         <para>Recommended patch (unless you build without JPEG2000 support) : <ulink
-%         url="&patch-root;/ghostscript-&gs-version;-system_jasper-1.patch"/>
-% @y
-%         <para>推奨されるパッチ (unless you build without JPEG2000 support) : <ulink
-%         url="&patch-root;/ghostscript-&gs-version;-system_jasper-1.patch"/>
-% @z
 
 @x
     <bridgehead renderas="sect3">Ghostscript Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Ghostscript の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Ghostscript&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -174,7 +152,7 @@
     <xref linkend="libtiff"/>, and
     <xref linkend="lcms2"/>.</para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="optional"><xref linkend="expat"/>,
     <xref linkend="freetype2"/>,
     <xref linkend="libjpeg"/>,
@@ -195,7 +173,7 @@
     <xref linkend="x-window-system"/>, and <ulink
     url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>.</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="cairo"/>,
     <xref linkend="fontconfig"/>,
     <xref linkend="gtk2"/>,
@@ -211,14 +189,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gs"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gs"/></para>
 @z
 
 @x
     <title>Installation of Ghostscript</title>
 @y
-    <title>Ghostscript のインストール</title>
+    <title>&InstallationOf1;Ghostscript&InstallationOf2;</title>
 @z
 
 @x
@@ -241,12 +219,6 @@
       libraries, you must do it using unconventional methods.
       </para>
 @z
-
-% @x
-%       <para>Begin by patching some vulnerabilities:</para>
-% @y
-%       <para>Begin by patching some vulnerabilities:</para>
-% @z
 
 @x
       <para><application>GPL Ghostscript</application> includes (old) copies of
@@ -334,7 +306,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -348,7 +320,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -356,9 +328,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -388,7 +360,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gs

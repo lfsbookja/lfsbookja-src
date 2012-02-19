@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &libarchive-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libarchive-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libarchive-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libarchive-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libarchive-time;</para>
+        <para>&Estimatedbuildtime;: &libarchive-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <xref linkend="libxml2"/> or <xref linkend="expat"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="libxml2"/> または <xref linkend="expat"/>
     </para>
@@ -93,7 +93,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libarchive"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libarchive"/></para>
 @z
 
@@ -123,7 +123,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -131,9 +131,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -149,7 +149,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x bsdtar

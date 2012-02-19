@@ -16,7 +16,7 @@
 @x
     <title>Introduction to ISO Codes</title>
 @y
-    <title>ISO Codes の概要</title>
+    <title>&IntroductionTo1;ISO Codes&IntroductionTo2;</title>
 @z
 
 @x
@@ -33,56 +33,56 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&iso-codes-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&iso-codes-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&iso-codes-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&iso-codes-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&iso-codes-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&iso-codes-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &iso-codes-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &iso-codes-md5sum;</para>
+        <para>&Download; MD5 sum: &iso-codes-md5sum;</para>
 @z
 
 @x
         <para>Download size: &iso-codes-size;</para>
 @y
-        <para>ダウンロードサイズ: &iso-codes-size;</para>
+        <para>&DownloadSize;: &iso-codes-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &iso-codes-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &iso-codes-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &iso-codes-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &iso-codes-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &iso-codes-time;</para>
+        <para>&Estimatedbuildtime;: &iso-codes-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">ISO Codes Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">ISO Codes の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;ISO Codes&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="python2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="python2"/></para>
 @z
 
@@ -90,14 +90,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/iso-codes"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/iso-codes"/></para>
 @z
 
 @x
     <title>Installation of ISO Codes</title>
 @y
-    <title>ISO Codes のインストール</title>
+    <title>&InstallationOf1;ISO Codes&InstallationOf2;</title>
 @z
 
 @x
@@ -112,9 +112,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -128,7 +126,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -136,9 +134,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -147,8 +145,8 @@
         <seg>/usr/share/xml/iso-codes and
         many directories in the /usr/share/locale hierarchy</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/xml/iso-codes と
         /usr/share/locale hierarchy 配下の各種ディレクトリ</seg>
 @z

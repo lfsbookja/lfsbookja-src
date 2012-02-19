@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -35,7 +35,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,13 +65,13 @@
 @x
         <para>Estimated disk space required: &kdelibs-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &kdelibs-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kdelibs-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &kdelibs-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &kdelibs-time;</para>
+        <para>&Estimatedbuildtime;: &kdelibs-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="tqtinterface"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="tqtinterface"/></para>
 @z
 
@@ -98,7 +98,7 @@
       <xref linkend="openssl"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="aRts"/>,
       <xref linkend="libjpeg"/>,
@@ -120,7 +120,7 @@
       <ulink url="http://packages.debian.org/sid/libutempter">utempter</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="aspell"/>,
       <xref linkend="cups"/>,
@@ -136,7 +136,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/kdelibs"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/kdelibs"/></para>
 @z
 
@@ -235,7 +235,7 @@
     <para>This package does not come with a test suite.</para>
 @y
     <para>
-    &j-notTestSuite;
+    &notTestSuite;
     </para>
 @z
 
@@ -250,7 +250,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -258,9 +258,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -312,7 +312,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

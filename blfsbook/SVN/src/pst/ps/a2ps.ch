@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to a2ps</title>
 @y
-    <title>a2ps の概要</title>
+    <title>&IntroductionTo1;a2ps&IntroductionTo2;</title>
 @z
 
 @x
@@ -53,49 +53,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&a2ps-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&a2ps-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&a2ps-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&a2ps-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&a2ps-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&a2ps-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &a2ps-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &a2ps-md5sum;</para>
+        <para>&Download; MD5 sum: &a2ps-md5sum;</para>
 @z
 
 @x
         <para>Download size: &a2ps-size;</para>
 @y
-        <para>ダウンロードサイズ: &a2ps-size;</para>
+        <para>&DownloadSize;: &a2ps-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &a2ps-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &a2ps-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &a2ps-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &a2ps-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &a2ps-time;</para>
+        <para>&Estimatedbuildtime;: &a2ps-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -109,14 +109,14 @@
 @x
     <bridgehead renderas="sect3">a2ps Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">a2ps の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;a2ps&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="gperf"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="gperf"/></para>
 @z
 
@@ -128,7 +128,7 @@
     <command>cat &gt;/dev/lp0</command> command instead of <command>lpr</command>
     for sending its output to the printer)</para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="psutils"/>,
     <xref linkend="cups"/> または <xref linkend="LPRng"/>
     (otherwise, <application>a2ps</application> will use the
@@ -149,7 +149,7 @@
     url="http://www.gnu.org/software/ghostview/ghostview.html">Ghostview</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <xref linkend="gs"/><!-- or <xref linkend="espgs"/> -->,
@@ -166,22 +166,23 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/A2PS"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/A2PS"/></para>
 @z
 
 @x
     <title>Installation of a2ps</title>
 @y
-    <title>a2ps のインストール</title>
+    <title>&InstallationOf1;a2ps&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>a2ps</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>a2ps</application> by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して <application>a2ps</application>  をビルドします。
+    </para>
 @z
 
 @x
@@ -205,7 +206,9 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -219,7 +222,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -297,19 +300,19 @@
 @x
     <title>Configuring a2ps</title>
 @y
-    <title>a2ps の設定</title>
+    <title>&Configuring1;a2ps&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -325,7 +328,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -333,9 +336,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -353,7 +356,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x a2ps

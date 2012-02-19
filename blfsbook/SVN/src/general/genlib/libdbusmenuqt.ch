@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &libdbusmenu-qt-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libdbusmenu-qt-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libdbusmenu-qt-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libdbusmenu-qt-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libdbusmenu-qt-time;</para>
+        <para>&Estimatedbuildtime;: &libdbusmenu-qt-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <xref linkend="qt4"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="qt4"/>
     </para>
@@ -95,7 +95,7 @@
     <ulink url="http://qjson.sourceforge.net/">Qjson</ulink> for building test suite
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <ulink url="http://qjson.sourceforge.net/">Qjson</ulink> テストスイート実行のために
     </para>
@@ -105,7 +105,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libdbusmenu-qt"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libdbusmenu-qt"/></para>
 @z
 
@@ -139,7 +139,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -147,9 +147,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

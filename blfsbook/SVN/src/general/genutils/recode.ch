@@ -48,7 +48,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -78,19 +78,19 @@
 @x
         <para>Estimated disk space required: &recode-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &recode-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &recode-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &recode-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &recode-time;</para>
+        <para>&Estimatedbuildtime;: &recode-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -111,7 +111,7 @@
     (for the <quote>bigauto</quote> test) and
     <ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="python2"/>
     (<quote>bigauto</quote> テストにて必要),
     <ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
@@ -121,7 +121,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/recode"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/recode"/></para>
 @z
 
@@ -164,7 +164,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -183,7 +183,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -191,9 +191,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -209,7 +209,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x recode

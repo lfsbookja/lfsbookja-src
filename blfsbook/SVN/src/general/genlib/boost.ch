@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Boost</title>
 @y
-    <title>Boost の概要</title>
+    <title>&IntroductionTo1;Boost&IntroductionTo2;</title>
 @z
 
 @x
@@ -61,19 +61,19 @@
 @x
         <para>Estimated disk space required: &boost-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &boost-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &boost-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &boost-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &boost-time;</para>
+        <para>&Estimatedbuildtime;: &boost-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">boost Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">boost の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;boost&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -99,7 +99,7 @@
 @x
     <title>Installation of Boost</title>
 @y
-    <title>Boost のインストール</title>
+    <title>&InstallationOf1;Boost&InstallationOf2;</title>
 @z
 
 @x

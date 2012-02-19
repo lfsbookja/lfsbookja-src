@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@ interpreter as an extension language.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@ interpreter as an extension language.
 @x
         <para>Estimated disk space required: &librep-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &librep-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &librep-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &librep-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &librep-time;</para>
+        <para>&Estimatedbuildtime;: &librep-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@ interpreter as an extension language.
     <xref linkend="gcc"/> (build Java so that the
     <filename class='libraryfile'>libffi</filename> library is built)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="libffi"/> または
     <xref linkend="gcc"/> (build Java so that the
     <filename class='libraryfile'>libffi</filename> library is built)</para>
@@ -95,7 +95,7 @@ interpreter as an extension language.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/librep"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/librep"/></para>
 @z
 
@@ -127,7 +127,7 @@ interpreter as an extension language.
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -147,7 +147,7 @@ files to <filename class="directory">/usr/lib/rep</filename> instead of
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -155,9 +155,9 @@ files to <filename class="directory">/usr/lib/rep</filename> instead of
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -175,7 +175,7 @@ files to <filename class="directory">/usr/lib/rep</filename> instead of
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x rep

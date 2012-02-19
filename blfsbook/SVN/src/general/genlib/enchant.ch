@@ -16,7 +16,7 @@
 @x
     <title>Introduction to enchant</title>
 @y
-    <title>enchant の概要</title>
+    <title>&IntroductionTo1;enchant&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">enchant Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">enchant の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;enchant&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -117,7 +117,7 @@
 @x
     <title>Installation of enchant</title>
 @y
-    <title>enchant のインストール</title>
+    <title>&InstallationOf1;enchant&InstallationOf2;</title>
 @z
 
 @x
@@ -146,7 +146,7 @@
 @x
     <title>Configuring enchant</title>
 @y
-    <title>enchant の設定</title>
+    <title>&Configuring1;enchant&Configuring2;</title>
 @z
 
 @x

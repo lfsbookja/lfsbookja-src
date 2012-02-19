@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -36,7 +36,7 @@ HTML, ASCII, LaTeX, LaTeX2e, RTF, POD,
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -66,20 +66,20 @@ HTML, ASCII, LaTeX, LaTeX2e, RTF, POD,
 @x
         <para>Estimated disk space required: &rman-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &rman-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &rman-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &rman-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &rman-time;</para>
+        <para>&Estimatedbuildtime;: &rman-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/rman'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/rman'/></para>
 @z
 
@@ -117,7 +117,7 @@ rman は <application>Xorg</application>
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -132,19 +132,19 @@ rman は <application>Xorg</application>
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
       <segtitle>Installed Programs</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Description</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x rman

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,7 +38,7 @@ W3C compliant and compatible with most browsers.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -68,13 +68,13 @@ W3C compliant and compatible with most browsers.
 @x
         <para>Estimated disk space required: &tidy-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &tidy-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &tidy-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &tidy-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &tidy-time;</para>
+        <para>&Estimatedbuildtime;: &tidy-time;</para>
 @z
 
 @x
@@ -106,7 +106,7 @@ CVS からソース入手し、かつ autotools のスクリプト類とドキ�
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
 @z
 
@@ -114,7 +114,7 @@ CVS からソース入手し、かつ autotools のスクリプト類とドキ�
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/tidy"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/tidy"/></para>
 @z
 
@@ -138,7 +138,7 @@ CVS からソース入手し、かつ autotools のスクリプト類とドキ�
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -178,7 +178,7 @@ CVS からソース入手し、かつ autotools のスクリプト類とドキ�
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -194,7 +194,7 @@ The absolute path of the file specified in
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -215,7 +215,7 @@ to <command>tidy</command> via command line parameters or the
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -223,9 +223,9 @@ to <command>tidy</command> via command line parameters or the
     <segtitle>Installed Library</segtitle>
     <segtitle>Installed Directory</segtitle>
 @y
-    <segtitle>&j-InstalledPrograms;</segtitle>
-    <segtitle>&j-InstalledLibraries;</segtitle>
-    <segtitle>&j-InstalledDirectories;</segtitle>
+    <segtitle>&InstalledPrograms;</segtitle>
+    <segtitle>&InstalledLibraries;</segtitle>
+    <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -241,7 +241,7 @@ to <command>tidy</command> via command line parameters or the
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x tab2space

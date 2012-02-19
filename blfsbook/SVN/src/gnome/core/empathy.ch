@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Empathy</title>
 @y
-    <title>Empathy の概要</title>
+    <title>&IntroductionTo1;Empathy&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,19 +62,19 @@
 @x
         <para>Estimated disk space required: &empathy-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &empathy-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &empathy-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &empathy-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &empathy-time;</para>
+        <para>&Estimatedbuildtime;: &empathy-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Empathy Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Empathy の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Empathy&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -88,7 +88,7 @@
     <xref linkend="telepathy-farsight"/>, and
     <xref linkend="which"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="evolution-data-server"/>,
     <xref linkend="gnome-doc-utils"/>,
     <xref linkend="libcanberra"/>,
@@ -116,7 +116,7 @@
     <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
     <xref linkend="webkitgtk"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><ulink url="http://check.sourceforge.net/">Check</ulink>,
     <xref linkend="clutter-gtk"/>,
     <ulink url="http://connman.net/">ConnMan</ulink>,
@@ -149,7 +149,7 @@
     url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
     (SIP)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional; (プロトコル)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (プロトコル)</bridgehead>
     <para role="optional"> <ulink
     url="http://telepathy.freedesktop.org/releases/telepathy-butterfly/">telepathy-butterfly</ulink>
     (MSN), <ulink
@@ -169,14 +169,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/empathy"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/empathy"/></para>
 @z
 
 @x
     <title>Installation of Empathy</title>
 @y
-    <title>Empathy のインストール</title>
+    <title>&InstallationOf1;Empathy&InstallationOf2;</title>
 @z
 
 @x
@@ -191,9 +191,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -207,7 +205,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -227,7 +225,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -235,9 +233,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -259,7 +257,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x empathy

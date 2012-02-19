@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -40,7 +40,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,19 +70,19 @@
 @x
         <para>Estimated disk space required: &jasper-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &jasper-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &jasper-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &jasper-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &jasper-time;</para>
+        <para>&Estimatedbuildtime;: &jasper-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -103,7 +103,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="unzip"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="unzip"/></para>
 @z
 
@@ -113,7 +113,7 @@
     <xref linkend="x-window-system"/>, and
     <xref linkend="freeglut"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="optional"><xref linkend="libjpeg"/>,
     <xref linkend="x-window-system"/>,
     <xref linkend="freeglut"/></para>
@@ -123,7 +123,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/jasper"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/jasper"/></para>
 @z
 
@@ -146,7 +146,7 @@
 @x
     <para>This package does not come with a testsuite.</para>
 @y
-    <para>&j-notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -171,7 +171,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -209,7 +209,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -217,9 +217,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -235,7 +235,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x imgcmp

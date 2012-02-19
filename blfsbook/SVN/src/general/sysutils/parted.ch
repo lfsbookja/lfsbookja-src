@@ -31,7 +31,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -61,13 +61,13 @@
 @x
         <para>Estimated disk space required: &parted-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &parted-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &parted-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &parted-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &parted-time;</para>
+        <para>&Estimatedbuildtime;: &parted-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
         <application>udisks</application>)
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (device-mapper; <application>udisks</application> をビルドする際には必要)
     </para>
@@ -93,7 +93,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/parted"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/parted"/></para>
 @z
 
@@ -131,7 +131,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -149,7 +149,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -157,9 +157,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -175,7 +175,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x parted

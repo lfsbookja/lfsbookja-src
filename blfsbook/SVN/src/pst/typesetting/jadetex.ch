@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,13 +16,13 @@
 @x
   <!ENTITY jadetex-time          "less than 0.1 SBU">
 @y
-  <!ENTITY jadetex-time          "0.1 SBU 以下">
+  <!ENTITY jadetex-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to JadeTeX</title>
 @y
-    <title>JadeTeX の概要</title>
+    <title>&IntroductionTo1;JadeTeX&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,59 +44,57 @@
       components.</para>
 @y
       <para>
-      <xref linkend="texlive"/>
-      をインストールしている場合は、本パッケージをインストールしないでください。
-      <application>TeX Live</application>
-      には <application>JadeTeX</application> が含まれているためです。
+      <xref linkend="texlive"/> をインストールしている場合は、本パッケージをインストールしないでください。
+      <application>TeX Live</application> には <application>JadeTeX</application> が含まれているためです。
       </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&jadetex-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&jadetex-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&jadetex-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&jadetex-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&jadetex-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&jadetex-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &jadetex-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &jadetex-md5sum;</para>
+        <para>&Download; MD5 sum: &jadetex-md5sum;</para>
 @z
 
 @x
         <para>Download size: &jadetex-size;</para>
 @y
-        <para>ダウンロードサイズ: &jadetex-size;</para>
+        <para>&DownloadSize;: &jadetex-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &jadetex-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &jadetex-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &jadetex-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &jadetex-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &jadetex-time;</para>
+        <para>&Estimatedbuildtime;: &jadetex-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -112,7 +110,7 @@
 @x
     <bridgehead renderas="sect3">JadeTeX Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">JadeTeX の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;JadeTeX&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -120,7 +118,7 @@
     <para role="required"><xref linkend="texlive"/> and
     <xref linkend="openjade"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="texlive"/>,
     <xref linkend="openjade"/></para>
 @z
@@ -129,14 +127,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/jadetex"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/jadetex"/></para>
 @z
 
 @x
     <title>Installation of JadeTeX</title>
 @y
-    <title>JadeTeX のインストール</title>
+    <title>&InstallationOf1;JadeTeX&InstallationOf2;</title>
 @z
 
 @x
@@ -206,7 +204,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -262,13 +260,13 @@
 @x
     <title>Configuring JadeTeX</title>
 @y
-    <title>JadeTeX の設定</title>
+    <title>&Configuring1;JadeTeX&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -283,7 +281,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -301,7 +299,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -309,9 +307,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -321,7 +319,7 @@
         /usr/share/doc/jadetex-&jadetex-version;</seg>
 @y
         <seg>jadetex, pdfjadetex</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/texmf-local,
         /usr/share/doc/jadetex-&jadetex-version;</seg>
 @z
@@ -329,7 +327,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x jadetex

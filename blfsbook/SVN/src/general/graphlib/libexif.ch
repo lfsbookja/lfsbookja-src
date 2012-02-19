@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,7 +38,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -68,13 +68,13 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
 @x
         <para>Estimated disk space required: &libexif-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libexif-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libexif-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libexif-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libexif-time;</para>
+        <para>&Estimatedbuildtime;: &libexif-time;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
     <para role="optional"><xref linkend="doxygen"/> and
     <xref linkend="graphviz"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional; (ドキュメントのビルド時)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (ドキュメントのビルド時)</bridgehead>
     <para role="optional"><xref linkend="doxygen"/>,
     <xref linkend="graphviz"/></para>
 @z
@@ -97,7 +97,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libexif"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libexif"/></para>
 @z
 
@@ -152,7 +152,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -160,9 +160,9 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -180,7 +180,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libexif.{so,a}

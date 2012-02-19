@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &libffi-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libffi-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libffi-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libffi-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libffi-time;</para>
+        <para>&Estimatedbuildtime;: &libffi-time;</para>
 @z
 
 @x
@@ -92,7 +92,7 @@
     <para>This package does not come with a test suite.</para>
 @y
     <para>
-    &j-notTestSuite;
+    &notTestSuite;
     </para>
 @z
 
@@ -107,7 +107,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -115,9 +115,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -133,7 +133,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libffi.{so,a}

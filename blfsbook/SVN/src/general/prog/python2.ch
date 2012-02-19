@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -42,7 +42,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -72,19 +72,19 @@
 @x
         <para>Estimated disk space required: &python2-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &python2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &python2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &python2-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &python2-time;</para>
+        <para>&Estimatedbuildtime;: &python2-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -124,7 +124,7 @@
     <filename class="libraryfile">libffi</filename> library is built), and
     <ulink url="http://www.bluez.org/">BlueZ</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="pth"/>,
     <xref linkend="libffi"/> or <xref linkend="gcc"/> (install JAVA so that the 
     <filename class="libraryfile">libffi</filename> library is built),
@@ -139,7 +139,7 @@
     <xref linkend="db"/>, and
     <xref linkend="sqlite"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;
+    <bridgehead renderas="sect4">&Optional;
     (to create package-specific support modules)</bridgehead>
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="tk"/>,
@@ -161,7 +161,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/Python"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/Python"/></para>
 @z
 

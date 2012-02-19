@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &liboil-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &liboil-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &liboil-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &liboil-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &liboil-time;</para>
+        <para>&Estimatedbuildtime;: &liboil-time;</para>
 @z
 
 @x
@@ -82,7 +82,7 @@
     <para role="optional"><xref linkend="glib2"/> and
     <xref linkend="gtk-doc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="glib2"/>、
     <xref linkend="gtk-doc"/></para>
 @z
@@ -91,7 +91,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/liboil"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/liboil"/></para>
 @z
 
@@ -131,13 +131,13 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -145,9 +145,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -165,7 +165,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x oil-bugreport

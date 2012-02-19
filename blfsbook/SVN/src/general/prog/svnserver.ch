@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -53,7 +53,7 @@
     <para><xref linkend="subversion"/> and
     <xref linkend="openssh"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para><xref linkend="subversion"/> と <xref linkend="openssh"/></para>
 @z
 

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,7 +24,7 @@
 @x
     <title>Introduction to Berkeley DB</title>
 @y
-    <title>Berkeley DB の概要</title>
+    <title>&IntroductionTo1;Berkeley DB&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,49 +40,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&db-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&db-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&db-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&db-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&db-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&db-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &db-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &db-md5sum;</para>
+        <para>&Download; MD5 sum: &db-md5sum;</para>
 @z
 
 @x
         <para>Download size: &db-size;</para>
 @y
-        <para>ダウンロードサイズ: &db-size;</para>
+        <para>&DownloadSize;: &db-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &db-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &db-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &db-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &db-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &db-time;</para>
+        <para>&Estimatedbuildtime;: &db-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Berkeley DB Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Berkeley DB の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Berkeley DB&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -93,7 +93,7 @@
       <xref linkend='sharutils'/> (for the <command>uudecode</command> command)
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
       <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
@@ -105,7 +105,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/db"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/db"/></para>
 @z
 
@@ -172,7 +172,7 @@
     <title>Installation of Berkeley DB</title>
 @y
   <sect2 role="installation" id="bdb-installation" xreflabel="Berkeley DB のインストール">
-    <title>Berkeley DB のインストール</title>
+    <title>&InstallationOf1;Berkeley DB&InstallationOf2;</title>
 @z
 
 @x
@@ -227,7 +227,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -316,7 +316,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -324,9 +324,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -346,7 +346,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x db_archive

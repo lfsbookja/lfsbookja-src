@@ -106,22 +106,18 @@
     support.</para>
   </abstract>
 @y
-<abstract>
-<para>
-本書は Linux From Scratch ブックに続くものです。
-システムに追加していく機能として、
-ネットワーク、
-グラフィカルインターフェース、
-サウンド機能、
-プリンター、スキャナー機能などを紹介し説明していきます。
-</para>
-</abstract>
-
-<abstract>
-<title>日本語訳情報 (訳出率: &jratio;)</title>
-<para>
-現時点この日本語訳は散発的に訳出を進めている状態であり、完成とは程遠いものです。
-ご了承ください。
-</para>
-</abstract>
+  <abstract>
+  <para>
+  本書は Linux From Scratch ブックに続くものです。
+  システムに追加していく機能として、ネットワーク、グラフィカルインターフェース、サウンド機能、プリンター、スキャナー機能などを紹介し説明していきます。
+  </para>
+  </abstract>
+  
+  <abstract>
+  <title>日本語訳情報 (訳出率: &jratio;)</title>
+  <para>
+  現時点この日本語訳は散発的に訳出を進めている状態であり、完成とは程遠いものです。
+  ご了承ください。
+  </para>
+  </abstract>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -36,7 +36,7 @@ ScrollKeeper</application>.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -66,13 +66,13 @@ ScrollKeeper</application>.
 @x
         <para>Estimated disk space required: &rarian-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &rarian-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &rarian-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &rarian-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &rarian-time;</para>
+        <para>&Estimatedbuildtime;: &rarian-time;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@ ScrollKeeper</application>.
     <xref linkend="DocBook"/> (without this, <application>Rarian</application>
     scripts source DTDs from the net)</para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="libxslt"/>
     (<command>rarian-sk-extract</command> will not be built without this) and
     <xref linkend="DocBook"/> (without this, <application>Rarian</application>
@@ -99,7 +99,7 @@ ScrollKeeper</application>.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/rarian"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/rarian"/></para>
 @z
 
@@ -122,7 +122,7 @@ ScrollKeeper</application>.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -137,7 +137,7 @@ ScrollKeeper</application>.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -145,9 +145,9 @@ ScrollKeeper</application>.
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -173,7 +173,7 @@ ScrollKeeper</application>.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x rarian-example

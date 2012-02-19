@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,7 +22,7 @@
 @x
     <title>Introduction to teTeX</title>
 @y
-    <title>teTeX の概要</title>
+    <title>&IntroductionTo1;teTeX&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,61 +32,59 @@
     METAFONT) tarball contains source code for programs to create and
     manipulate TeX fonts.</para>
 @y
-<para>
-<application>teTeX</application> is an implementation of Donald
-Knuth's TeX typesetting program. This package is able to create documents
-in a variety of formats. The optional <filename>texmfsrc</filename> (TeX
-METAFONT) tarball contains source code for programs to create and
-manipulate TeX fonts.
-</para>
+    <para><application>teTeX</application> is an implementation of Donald
+    Knuth's TeX typesetting program. This package is able to create documents
+    in a variety of formats. The optional <filename>texmfsrc</filename> (TeX
+    METAFONT) tarball contains source code for programs to create and
+    manipulate TeX fonts.</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&tetex-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&tetex-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&tetex-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&tetex-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&tetex-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&tetex-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &tetex-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &tetex-md5sum;</para>
+        <para>&Download; MD5 sum: &tetex-md5sum;</para>
 @z
 
 @x
         <para>Download size: &tetex-size;</para>
 @y
-        <para>ダウンロードサイズ: &tetex-size;</para>
+        <para>&DownloadSize;: &tetex-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &tetex-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &tetex-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &tetex-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &tetex-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &tetex-time;</para>
+        <para>&Estimatedbuildtime;: &tetex-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -104,25 +102,25 @@ manipulate TeX fonts.
 @x
         <para>Download (HTTP): <ulink url="&texmf-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&texmf-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&texmf-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&texmf-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&texmf-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&texmf-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &texmf-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &texmf-md5sum;</para>
+        <para>&Download; MD5 sum: &texmf-md5sum;</para>
 @z
 
 @x
         <para>Download size: &texmf-size;</para>
 @y
-        <para>ダウンロードサイズ: &texmf-size;</para>
+        <para>&DownloadSize;: &texmf-size;</para>
 @z
 
 @x
@@ -134,25 +132,25 @@ manipulate TeX fonts.
 @x
         <para>Download (HTTP): <ulink url="&texmfsrc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&texmfsrc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&texmfsrc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&texmfsrc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&texmfsrc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&texmfsrc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &texmfsrc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &texmfsrc-md5sum;</para>
+        <para>&Download; MD5 sum: &texmfsrc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &texmfsrc-size;</para>
 @y
-        <para>ダウンロードサイズ: &texmfsrc-size;</para>
+        <para>&DownloadSize;: &texmfsrc-size;</para>
 @z
 
 @x
@@ -164,38 +162,38 @@ manipulate TeX fonts.
 @x
         <para>Download (HTTP): <ulink url="&cmsupersrc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&cmsupersrc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&cmsupersrc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&cmsupersrc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&cmsupersrc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&cmsupersrc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &cmsupersrc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &cmsupersrc-md5sum;</para>
+        <para>&Download; MD5 sum: &cmsupersrc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &cmsupersrc-size;</para>
 @y
-        <para>ダウンロードサイズ: &cmsupersrc-size;</para>
+        <para>&DownloadSize;: &cmsupersrc-size;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">teTeX Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">teTeX の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;teTeX&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="ed"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="ed"/></para>
 @z
 
@@ -207,7 +205,7 @@ manipulate TeX fonts.
     <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
     <ulink url="http://www.boutell.com/gd/">GD</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="libpng"/>,
     <xref linkend="x-window-system"/>,
     <xref linkend="tk-perl"/>,
@@ -219,14 +217,14 @@ manipulate TeX fonts.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/tetex"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/tetex"/></para>
 @z
 
 @x
     <title>Installation of teTeX</title>
 @y
-    <title>teTeX のインストール</title>
+    <title>&InstallationOf1;teTeX&InstallationOf2;</title>
 @z
 
 @x
@@ -235,12 +233,10 @@ manipulate TeX fonts.
     Install the macros and fonts using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-Before building <application>teTeX</application>, the macros and
-fonts package (<filename>texmf</filename> tarball) must be installed.
-Install the macros and fonts using the following commands as the
-<systemitem class="username">root</systemitem> user:
-</para>
+    <para>Before building <application>teTeX</application>, the macros and
+    fonts package (<filename>texmf</filename> tarball) must be installed.
+    Install the macros and fonts using the following commands as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -248,20 +244,18 @@ Install the macros and fonts using the following commands as the
     was downloaded, unpack it now as the <systemitem
     class="username">root</systemitem> user:</para>
 @y
-<para>
-If the optional <filename>texmfsrc</filename> source code TAR ball
-was downloaded, unpack it now as the <systemitem
-class="username">root</systemitem> user:
-</para>
+    <para>If the optional <filename>texmfsrc</filename> source code TAR ball
+    was downloaded, unpack it now as the <systemitem
+    class="username">root</systemitem> user:</para>
 @z
 
 @x
     <para>Install <application>teTeX</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>teTeX</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>teTeX</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -269,29 +263,29 @@ class="username">root</systemitem> user:
     should complete without errors (there may be some errors which are
     ignored).</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-テストはエラーなく終了するはずです。
-(ただし中にはエラーが発生し無視されるものがあります。)
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    テストはエラーなく終了するはずです。
+    (ただし中にはエラーが発生し無視されるものがあります。)
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
       <para>The paper size may be changed to a4, as is used in most
       countries.</para>
 @y
-<para>
-用紙サイズは a4 に変更する必要があるかもしれません。
-a4 は数多くの国において利用されます。
-</para>
+      <para>
+      用紙サイズは a4 に変更する必要があるかもしれません。
+      a4 は数多くの国において利用されます。
+      </para>
 @z
 
 @x
@@ -299,17 +293,15 @@ a4 は数多くの国において利用されます。
     instructions as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-任意の cm-super フォントをインストールする場合は、
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行します。
-</para>
+    <para>
+    任意の cm-super フォントをインストールする場合は、<systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -318,12 +310,10 @@ a4 は数多くの国において利用されます。
     can be compiled with <application>X</application> support, notably for
     <command>xdvi</command>. If this is desired, remove this parameter.</para>
 @y
-<para>
-<parameter>--with-x=no</parameter>: This switch will avoid any
-<application>X</application> dependencies. <application>teTeX</application>
-can be compiled with <application>X</application> support, notably for
-<command>xdvi</command>. If this is desired, remove this parameter.
-</para>
+    <para><parameter>--with-x=no</parameter>: This switch will avoid any
+    <application>X</application> dependencies. <application>teTeX</application>
+    can be compiled with <application>X</application> support, notably for
+    <command>xdvi</command>. If this is desired, remove this parameter.</para>
 @z
 
 @x
@@ -331,11 +321,9 @@ can be compiled with <application>X</application> support, notably for
     switches ensure that <application>teTeX</application> binaries are installed
     in <filename class="directory">/usr/bin</filename>.</para>
 @y
-<para>
-<parameter>--exec-prefix=/usr --bindir=/usr/bin</parameter>: These
-switches ensure that <application>teTeX</application> binaries are installed
-in <filename class="directory">/usr/bin</filename>.
-</para>
+    <para><parameter>--exec-prefix=/usr --bindir=/usr/bin</parameter>: These
+    switches ensure that <application>teTeX</application> binaries are installed
+    in <filename class="directory">/usr/bin</filename>.</para>
 @z
 
 @x
@@ -427,7 +415,7 @@ in <filename class="directory">/usr/bin</filename>.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -435,9 +423,9 @@ in <filename class="directory">/usr/bin</filename>.
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -459,7 +447,7 @@ in <filename class="directory">/usr/bin</filename>.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x teTeX programs
@@ -469,13 +457,11 @@ in <filename class="directory">/usr/bin</filename>.
           for details, as well as a tour of the expansive
           <application>teTeX</application> documentation.</para>
 @y
-<para>
-included in the <application>teTeX</application> package are too
-numerous to individually list. Please refer to the individual program
-man pages and <ulink url="file:///usr/share/texmf/doc/index.html"/>
-for details, as well as a tour of the expansive
-<application>teTeX</application> documentation.
-</para>
+          <para>included in the <application>teTeX</application> package are too
+          numerous to individually list. Please refer to the individual program
+          man pages and <ulink url="file:///usr/share/texmf/doc/index.html"/>
+          for details, as well as a tour of the expansive
+          <application>teTeX</application> documentation.</para>
 @z
 
 @x libkpathsea.a

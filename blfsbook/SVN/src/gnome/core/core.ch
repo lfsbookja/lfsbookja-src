@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -26,13 +26,11 @@
   <quote>Desktop</quote> sections in the same manner as the sources are
   distributed on the GNOME download mirrors.</para>
 @y
-<para>
-本節は、多彩なデスクトップ環境を実現する <application>GNOME</application>
-の構成要素について説明していきます。
-パッケージは <quote>プラットフォーム</quote> と
-<quote>デスクトップ</quote> の項に分けています。
-いずれも GNOME のダウンロードミラーサイトから入手することができます。
-</para>
+  <para>
+  本節は、多彩なデスクトップ環境を実現する <application>GNOME</application> の構成要素について説明していきます。
+  パッケージは<quote>プラットフォーム</quote>と<quote>デスクトップ</quote>の項に分けています。
+  いずれも GNOME のダウンロードミラーサイトから入手することができます。
+  </para>
 @z
 
 @x
@@ -42,11 +40,10 @@
     functionality if you don't install an optional dependency before the
     package that lists the dependency, even if you later install it.</para>
 @y
-<para>
-BLFS チームでは以下のことをお願いします。
-<application>GNOME</application> の個々のコアパッケージにおいて、任意の依存パッケージと書かれたものも十分に確認してください。
-コアパッケージの導入前にそのような任意のパッケージをインストールしていないと、望んでいる機能が実現できないかもしれません。
-後からインストールしても解決しないものかもしれません。
-</para>
+    <para>
+    BLFS チームでは以下のことをお願いします。
+    <application>GNOME</application> の個々のコアパッケージにおいて、任意の依存パッケージと書かれたものも十分に確認してください。
+    コアパッケージの導入前にそのような任意のパッケージをインストールしていないと、望んでいる機能が実現できないかもしれません。
+    後からインストールしても解決しないものかもしれません。
+    </para>
 @z
-

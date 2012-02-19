@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to G-Wrap</title>
 @y
-    <title>G-Wrap の概要</title>
+    <title>&IntroductionTo1;G-Wrap&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,49 +32,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&gwrap-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gwrap-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gwrap-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gwrap-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gwrap-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gwrap-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gwrap-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gwrap-md5sum;</para>
+        <para>&Download; MD5 sum: &gwrap-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gwrap-size;</para>
 @y
-        <para>ダウンロードサイズ: &gwrap-size;</para>
+        <para>&DownloadSize;: &gwrap-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &gwrap-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gwrap-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gwrap-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gwrap-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gwrap-time;</para>
+        <para>&Estimatedbuildtime;: &gwrap-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">G-Wrap Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">G-Wrap の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;G-Wrap&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -82,7 +82,7 @@
     <para role="required"><xref linkend="slib"/> and
     <xref linkend="GLib"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="slib"/>,
     <xref linkend="GLib"/></para>
 @z
@@ -94,7 +94,7 @@
     <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
     <filename class='libraryfile'>libffi</filename> is built)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><ulink
     url="http://www.gnu.org/software/guile-gtk/">guile-gtk</ulink> and
     <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
@@ -105,14 +105,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gwrap"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gwrap"/></para>
 @z
 
 @x
     <title>Installation of G-Wrap</title>
 @y
-    <title>G-Wrap のインストール</title>
+    <title>&InstallationOf1;G-Wrap&InstallationOf2;</title>
 @z
 
 @x
@@ -164,7 +164,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -172,9 +172,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -189,7 +189,7 @@
         <seg>g-wrap-config</seg>
         <seg>libgw-glib.{so,a}, libgw-gtk.{so,a}, libgw-standard.{so,a},
         libgw-wct.{so,a}, libgwrap-glib.{so,a}, libgwrap-wct.{so,a}</seg>
-        <!-- <seg>/usr/lib/libffi.{so,a}, /usr/lib/libgw-guile-*.{so,a} and
+        <!-- <seg>/usr/lib/libffi.{so,a}, /usr/lib/libgw-guile-*.{so,a},
         /usr/lib/libgwrap-*.{so,a}</seg> -->
         <seg>/usr/include/g-wrap, /usr/share/doc/g-wrap-&gwrap-version;,
         /usr/share/guile/site</seg>
@@ -198,7 +198,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x g-wrap-config

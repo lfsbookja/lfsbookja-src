@@ -35,7 +35,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -65,19 +65,19 @@
 @x
         <para>Estimated disk space required: &kdebindings-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &kdebindings-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kdebindings-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &kdebindings-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &kdebindings-time;</para>
+        <para>&Estimatedbuildtime;: &kdebindings-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -102,7 +102,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="kdebase"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="kdebase"/></para>
 @z
 
@@ -112,7 +112,7 @@
     <xref linkend="libxml2"/>, and
     <xref linkend="libxslt"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="libjpeg"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="libxslt"/></para>
@@ -131,7 +131,7 @@
     <ulink url="http://www.southern-storm.com.au/portable_net.html">DotGNU Portable.NET</ulink>, and
     <ulink url="http://www.microsoft.com/downloads/details.aspx?FamilyId=3A1C93FA-7462-47D0-8E56-8DD34C6292F0&amp;displaylang=en">Rotor</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="GLib"/>,
     <xref linkend="GTK"/>, -->
     <xref linkend="python2"/>,
@@ -148,7 +148,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/kdebindings"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/kdebindings"/></para>
 @z
 
@@ -178,7 +178,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>&j-notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -192,7 +192,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -213,7 +213,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -221,9 +221,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

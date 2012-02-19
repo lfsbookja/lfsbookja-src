@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,14 +25,10 @@
   text and graphics, a program to interface with a palm-pilot, a program for entering
   PIN numbers and pass-phrases, and a hash generator.</para>
 @y
-<para>
-本章ではさまざまなユーティリティを説明します。
-これは他に含めるべき適当な章がないものを列記しています。
-ここに説明するプログラムが以下のようなものです。
-コマンドラインから実行する計算機、
-テキストやグラフィックを操作するユーティリティ、
-palm-pilot とのインターフェースを取り持つプログラム、
-PIN ナンバーやパスフレーズ (pass-phrases) を入力するプログラム、
-ハッシュ生成などです。
-</para>
+  <para>
+  本章ではさまざまなユーティリティを説明します。
+  これは他に含めるべき適当な章がないものを列記しています。
+  ここに説明するプログラムが以下のようなものです。
+  コマンドラインから実行する計算機、テキストやグラフィックを操作するユーティリティ、palm-pilot とのインターフェースを取り持つプログラム、PIN ナンバーやパスフレーズ (pass-phrases) を入力するプログラム、ハッシュ生成などです。
+  </para>
 @z

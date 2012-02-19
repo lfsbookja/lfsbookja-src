@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &raptor-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &raptor-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &raptor-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &raptor-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &raptor-time;</para>
+        <para>&Estimatedbuildtime;: &raptor-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <xref linkend="curl"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="expat"/> または <xref linkend="libxml2"/>, 
     <xref linkend="curl"/>
@@ -95,7 +95,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/raptor"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/raptor"/></para>
 @z
 
@@ -125,7 +125,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -133,9 +133,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -151,7 +151,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x rapper

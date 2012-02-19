@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2011-11-13 22:12:25 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,7 +22,7 @@
 @x
     <title>Introduction to GLib</title>
 @y
-    <title>GLib の概要</title>
+    <title>&IntroductionTo1;GLib&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,49 +44,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&glib2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&glib2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&glib2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&glib2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&glib2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&glib2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &glib2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &glib2-md5sum;</para>
+        <para>&Download; MD5 sum: &glib2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &glib2-size;</para>
 @y
-        <para>ダウンロードサイズ: &glib2-size;</para>
+        <para>&DownloadSize;: &glib2-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &glib2-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &glib2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &glib2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &glib2-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &glib2-time;</para>
+        <para>&Estimatedbuildtime;: &glib2-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">GLib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GLib の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GLib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -94,7 +94,7 @@
     <para role="recommended"><xref linkend="pcre"/>
     (built with unicode properties)</para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="pcre"/>
     (Unicode プロパティを有効にしてビルドしたもの)</para>
 @z
@@ -105,7 +105,7 @@
     --> <xref linkend="dbus"/> (required to run the tests) and
     <xref linkend="gtk-doc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="attr"/>, <!-- <xref linkend="gamin"/>,
     --> <xref linkend="dbus"/> (テストスイート実行時に必要),
     <xref linkend="gtk-doc"/></para>
@@ -133,14 +133,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/glib2"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/glib2"/></para>
 @z
 
 @x
     <title>Installation of GLib</title>
 @y
-    <title>GLib のインストール</title>
+    <title>&InstallationOf1;GLib&InstallationOf2;</title>
 @z
 
 @x
@@ -195,7 +195,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -213,13 +213,13 @@
 @x
     <title>Configuring GLib</title>
 @y
-    <title>GLib の設定</title>
+    <title>&Configuring1;GLib&Configuring2;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -244,7 +244,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -252,9 +252,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -278,7 +278,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x glib-genmarshal

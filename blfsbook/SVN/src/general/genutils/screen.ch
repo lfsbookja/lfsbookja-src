@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -42,7 +42,7 @@ later on a different terminal.</para>
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -72,13 +72,13 @@ later on a different terminal.</para>
 @x
         <para>Estimated disk space required: &screen-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &screen-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &screen-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &screen-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &screen-time;</para>
+        <para>&Estimatedbuildtime;: &screen-time;</para>
 @z
 
 @x
@@ -91,7 +91,7 @@ later on a different terminal.</para>
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/></para>
 @z
 
@@ -99,7 +99,7 @@ later on a different terminal.</para>
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/screen"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/screen"/></para>
 @z
 
@@ -123,7 +123,7 @@ later on a different terminal.</para>
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -139,7 +139,7 @@ later on a different terminal.</para>
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -193,7 +193,7 @@ screenrc file.
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -207,7 +207,7 @@ screenrc file.
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -224,7 +224,7 @@ installed and customize it for your needs.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -232,9 +232,9 @@ installed and customize it for your needs.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -250,7 +250,7 @@ installed and customize it for your needs.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x screen

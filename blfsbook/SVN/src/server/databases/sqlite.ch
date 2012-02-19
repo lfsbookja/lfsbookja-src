@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,7 +22,7 @@
 @x
     <title>Introduction to SQLite</title>
 @y
-    <title>SQLite の概要</title>
+    <title>&IntroductionTo1;SQLite&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,49 +39,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&sqlite-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&sqlite-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&sqlite-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&sqlite-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&sqlite-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&sqlite-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &sqlite-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &sqlite-md5sum;</para>
+        <para>&Download; MD5 sum: &sqlite-md5sum;</para>
 @z
 
 @x
         <para>Download size: &sqlite-size;</para>
 @y
-        <para>ダウンロードサイズ: &sqlite-size;</para>
+        <para>&DownloadSize;: &sqlite-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &sqlite-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &sqlite-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &sqlite-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &sqlite-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &sqlite-time;</para>
+        <para>&Estimatedbuildtime;: &sqlite-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -93,25 +93,25 @@
 @x
         <para>Download (HTTP): <ulink url="&sqlite-docs-download;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&sqlite-docs-download;"/></para>
+        <para>&Download; (HTTP): <ulink url="&sqlite-docs-download;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &sqlite-docs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &sqlite-docs-md5sum;</para>
+        <para>&Download; MD5 sum: &sqlite-docs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &sqlite-docs-size;</para>
 @y
-        <para>ダウンロードサイズ: &sqlite-docs-size;</para>
+        <para>&DownloadSize;: &sqlite-docs-size;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">SQLite Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">SQLite の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;SQLite&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -119,7 +119,7 @@
     <para role="optional"><xref linkend="unzip"/> (required to unzip the
     documentation)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="unzip"/> (ドキュメントを伸張するために必要)</para>
 @z
 
@@ -127,14 +127,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/sqlite"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/sqlite"/></para>
 @z
 
 @x
     <title>Installation of SQLite</title>
 @y
-    <title>SQLite のインストール</title>
+    <title>&InstallationOf1;SQLite&InstallationOf2;</title>
 @z
 
 @x
@@ -158,9 +158,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -185,7 +183,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -209,43 +207,6 @@
     information.  For further information on what can be specified see <ulink
     url="http://www.sqlite.org/compile.html"/>.</para>
 @z
-
-% @x
-%     <para><parameter>--enable-threadsafe</parameter>: Though the documentation
-%     and running <command>./configure --help</command> indicate that this is the
-%     default, it is not. You must add this parameter if you want a threadsafe
-%     library.</para>
-% @y
-%     <para>
-%     <parameter>--enable-threadsafe</parameter>:
-%     ドキュメントおよび <command>./configure --help</command> の実行により得られる情報では、本パラメーターがデフォルトであると示されていますが、実際はそうではありません。
-%     スレッドセーフなライブラリを構築する場合には、このパラメーターを明示する必要があります。
-%     </para>
-% @z
-% 
-% @x
-%     <para><parameter>--enable-readline</parameter>: This parameter enables
-%     command line editing capability to the <command>sqlite3</command>
-%     program.</para>
-% @y
-%     <para>
-%     <parameter>--enable-readline</parameter>:
-%     このパラメーターを指定することにより、<command>sqlite3</command> プログラムにてコマンドライン編集機能を有効にします。
-%     </para>
-% @z
-% 
-% @x
-%     <para><parameter>--enable-dynamic-extensions</parameter>: This creates
-%     library modules that are dynamically linked as needed instead of statically
-%     linking them into the main <application>SQLite</application> library.</para>
-% @y
-%     <para>
-%     <parameter>--enable-dynamic-extensions</parameter>:
-%     This creates
-%     library modules that are dynamically linked as needed instead of statically
-%     linking them into the main <application>SQLite</application> library.
-%     </para>
-% @z
 
 @x
     <para><parameter>--disable-static</parameter>: This parameter stops it
@@ -259,7 +220,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -267,9 +228,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -279,13 +240,13 @@
 @y
         <seg>sqlite3</seg>
         <seg>libsqlite3.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x sqlite3

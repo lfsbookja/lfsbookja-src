@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &kdeadmin-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &kdeadmin-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kdeadmin-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &kdeadmin-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &kdeadmin-time;</para>
+        <para>&Estimatedbuildtime;: &kdeadmin-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
       <xref linkend="kdebase"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="kdebase"/>
     </para>
@@ -98,7 +98,7 @@
       <xref linkend="libxml2"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libjpeg"/>,
       <xref linkend="libxml2"/>
@@ -112,7 +112,7 @@
       <ulink url="http://lilo.go.dyndns.org/">LILO</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <ulink url="http://lilo.go.dyndns.org/">LILO</ulink>
@@ -123,7 +123,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/kdeadmin"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/kdeadmin"/></para>
 @z
 
@@ -160,7 +160,7 @@
 @x
    <para>This package does not come with a test suite.</para>
 @y
-   <para>&j-notTestSuite;</para>
+   <para>&notTestSuite;</para>
 @z
 
 @x

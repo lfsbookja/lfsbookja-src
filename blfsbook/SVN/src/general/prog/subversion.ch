@@ -49,7 +49,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -79,13 +79,13 @@
 @x
         <para>Estimated disk space required: &subversion-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &subversion-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &subversion-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &subversion-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &subversion-time;</para>
+        <para>&Estimatedbuildtime;: &subversion-time;</para>
 @z
 
 @x
@@ -101,7 +101,7 @@
     <application>APR</application> only) or
     <ulink url="http://apr.apache.org/">Apache Portable Runtime</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="sqlite"/>,
     <xref linkend="apache"/>
     (<application>APR</application> のみ利用) または
@@ -141,7 +141,7 @@
     <xref linkend="neon"/> or
     <ulink url="http://code.google.com/p/serf/">serf</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="python2"/> (テストスイート実行に必要),
     <xref linkend="db"/>,
     <xref linkend="sqlite"/>,
@@ -164,7 +164,7 @@
     <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
     and <xref linkend="junit"/> (to test the Java bindings)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;; Java バインディングビルド時</bridgehead>
+    <bridgehead renderas="sect4">&Optional;; Java バインディングビルド時</bridgehead>
     <para role="optional"><xref linkend="icedtea6"/>, 
     <xref linkend="jdk"/>,
     <ulink url="http://www.inet.no/dante/">Dante</ulink> のいずれかと、
@@ -176,7 +176,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/subversion"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/subversion"/></para>
 @z
 
@@ -301,7 +301,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -347,7 +347,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -361,7 +361,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -389,7 +389,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -397,9 +397,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -437,7 +437,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x svn

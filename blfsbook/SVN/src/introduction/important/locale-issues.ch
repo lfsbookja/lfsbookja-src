@@ -88,7 +88,7 @@
   <para>
   特定のパッケージに対しての回避策があるとすれば、そのパッケージのホームページなどに示されているはずです。
   個々のパッケージにおけるロケール問題の最新情報は、BLFS Wiki として示している <ulink
-  url="&blfs-wiki;/BlfsNotes">&j-UserNotes;</ulink> を確認してください。
+  url="&blfs-wiki;/BlfsNotes">&UserNotes;</ulink> を確認してください。
   </para>
 @z
 

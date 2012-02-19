@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &kdeartwork-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &kdeartwork-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kdeartwork-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &kdeartwork-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &kdeartwork-time;</para>
+        <para>&Estimatedbuildtime;: &kdeartwork-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
       <xref linkend="kdebase"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="kdebase"/>
     </para>
@@ -97,7 +97,7 @@
       <xref linkend="libart_lgpl"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libjpeg"/>,
       <xref linkend="libxml2"/>,
@@ -111,7 +111,7 @@
       <xref linkend="xscreensaver"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="xscreensaver"/>
     </para>
@@ -121,7 +121,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/kdeartwork"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/kdeartwork"/></para>
 @z
 
@@ -140,7 +140,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>&j-notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -154,7 +154,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -164,9 +164,9 @@
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>インストールオブジェクト</segtitle>
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

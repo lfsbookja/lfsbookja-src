@@ -22,7 +22,7 @@
 @x
     <title>Introduction to Aspell</title>
 @y
-    <title>Aspell の概要</title>
+    <title>&IntroductionTo1;Aspell&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,7 +40,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,13 +70,13 @@
 @x
         <para>Estimated disk space required: &aspell-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &aspell-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &aspell-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &aspell-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &aspell-time;</para>
+        <para>&Estimatedbuildtime;: &aspell-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <para>You'll need to download at least one dictionary. The link below will take
     you to a page containing links to dictionaries in many languages.</para>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
     <para>
     最低でも１つの辞書データはダウンロードしておく必要があります。
     以下に示すリンクは、さまざまな言語に対する辞書データへのリンクを示したページを表示します。
@@ -102,7 +102,7 @@
 @x
     <bridgehead renderas="sect3">Aspell Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Aspell の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Aspell&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -124,7 +124,7 @@
 @x
     <title>Installation of Aspell</title>
 @y
-    <title>Aspell のインストール</title>
+    <title>&InstallationOf1;Aspell&InstallationOf2;</title>
 @z
 
 @x
@@ -171,7 +171,7 @@
 @x
     <title>Configuring Aspell</title>
 @y
-    <title>Aspell の設定</title>
+    <title>&Configuring1;Aspell&Configuring2;</title>
 @z
 
 @x

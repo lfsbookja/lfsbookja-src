@@ -52,12 +52,22 @@
 <!ENTITY Recommended          "推奨">
 <!ENTITY Optional             "任意">
 <!ENTITY UserNotes            "ユーザー情報">
-<!ENTITY PackageInformation   "パッケージ情報">
 <!ENTITY AdditionalDownloads  "追加のダウンロード">
 <!ENTITY notTestSuite         "このパッケージにテストスイートはありません。">
-<!ENTITY CommandExplanations  "コマンド説明">
 <!ENTITY ConfigFiles          "設定ファイル">
 <!ENTITY ConfigInfo           "設定情報">
+
+<!ENTITY IntroductionTo1      "">
+<!ENTITY IntroductionTo2      " の概要">
+<!ENTITY PackageInformation   "パッケージ情報">
+<!ENTITY Dependencies1        "">
+<!ENTITY Dependencies2        " の依存パッケージ">
+<!ENTITY InstallationOf1      "">
+<!ENTITY InstallationOf2      " のインストール">
+<!ENTITY CommandExplanations  "コマンド説明">
+<!ENTITY Configuring1         "">
+<!ENTITY Configuring2         " の設定">
+<!ENTITY KernelConfiguration  "カーネルの設定">
 <!ENTITY Contents             "パッケージ構成">
 <!ENTITY InstalledPrograms    "インストールプログラム">
 <!ENTITY InstalledLibraries   "インストールライブラリ">
@@ -65,13 +75,11 @@
 <!ENTITY InstalledStylesheets "インストールスタイルシート">
 <!ENTITY ShortDescriptions    "概略説明">
 
-<!ENTITY IntroductionTo1      "">
-<!ENTITY IntroductionTo2      " の概要">
-<!ENTITY InstallationOf1      "">
-<!ENTITY InstallationOf2      " のインストール">
-
 <!ENTITY Download     "ダウンロード">
 <!ENTITY DownloadSize "ダウンロードサイズ">
+<!ENTITY LessThan1    "">
+<!ENTITY LessThan2    " 以下">
+<!ENTITY None         "なし">
 @z
 
 @x

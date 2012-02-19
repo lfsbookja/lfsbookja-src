@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Graphviz</title>
 @y
-    <title>Graphviz の概要</title>
+    <title>&IntroductionTo1;Graphviz&IntroductionTo2;</title>
 @z
 
 @x
@@ -80,7 +80,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -110,19 +110,19 @@
 @x
         <para>Estimated disk space required: &graphviz-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &graphviz-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &graphviz-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &graphviz-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &graphviz-time;</para>
+        <para>&Estimatedbuildtime;: &graphviz-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Graphviz Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Graphviz の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Graphviz&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -149,7 +149,7 @@
     of the GD Library), and
     <ulink url="http://www.perens.com/FreeSoftware/ElectricFence/">Electric Fence</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="expat"/>,
     <xref linkend="freetype2"/>,
@@ -192,7 +192,7 @@
     <ulink url="http://www.lua.org/">Lua</ulink>, and
     <ulink url="http://caml.inria.fr/ocaml/index.en.html">Objective Caml</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;
+    <bridgehead renderas="sect4">&Optional;
     (to Build Language Bindings)</bridgehead>
     <para role="optional"><ulink url="http://www.swig.org/">SWIG</ulink>
     (<application>SWIG</application> must be installed or no bindings will be
@@ -215,14 +215,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/graphviz"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/graphviz"/></para>
 @z
 
 @x
     <title>Installation of Graphviz</title>
 @y
-    <title>Graphviz のインストール</title>
+    <title>&InstallationOf1;Graphviz&InstallationOf2;</title>
 @z
 
 @x
@@ -270,19 +270,19 @@
 @x
     <title>Configuring Graphviz</title>
 @y
-    <title>Graphviz の設定</title>
+    <title>&Configuring1;Graphviz&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
     <sect3><title>Configuration Information</title>
 @y
-    <sect3><title>&j-ConfigInfo;</title>
+    <sect3><title>&ConfigInfo;</title>
 @z
 
 @x
@@ -310,7 +310,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -318,9 +318,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -345,7 +345,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x acyclic

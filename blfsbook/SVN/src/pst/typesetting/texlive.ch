@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to TeX Live</title>
 @y
-    <title>TeX Live の概要</title>
+    <title>&IntroductionTo1;TeX Live&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,49 +37,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&texlive-source-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&texlive-source-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&texlive-source-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&texlive-source-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&texlive-source-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&texlive-source-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &texlive-source-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &texlive-source-md5sum;</para>
+        <para>&Download; MD5 sum: &texlive-source-md5sum;</para>
 @z
 
 @x
         <para>Download size: &texlive-source-size;</para>
 @y
-        <para>ダウンロードサイズ: &texlive-source-size;</para>
+        <para>&DownloadSize;: &texlive-source-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &texlive-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &texlive-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &texlive-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &texlive-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &texlive-time;</para>
+        <para>&Estimatedbuildtime;: &texlive-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 % @x
@@ -93,13 +93,13 @@
 @x
         <para>Download MD5 sum: &texlive-texmf-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &texlive-texmf-md5sum;</para>
+        <para>&Download; MD5 sum: &texlive-texmf-md5sum;</para>
 @z
 
 @x
         <para>Download size: &texlive-texmf-size;</para>
 @y
-        <para>ダウンロードサイズ: &texlive-texmf-size;</para>
+        <para>&DownloadSize;: &texlive-texmf-size;</para>
 @z
 
 @x
@@ -112,7 +112,7 @@
 %     <bridgehead renderas="sect4">Required</bridgehead>
 %     <para role="required"><xref linkend="xz-utils"/></para>
 % @y
-%     <bridgehead renderas="sect4">&j-Required;</bridgehead>
+%     <bridgehead renderas="sect4">&Required;</bridgehead>
 %     <para role="required"><xref linkend="xz-utils"/></para>
 % @z
 
@@ -135,7 +135,7 @@
       <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=RenderingGraphite">
     Graphite</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gs"/>,
       <xref linkend="poppler"/>,
       <xref linkend="freetype2"/>,
@@ -158,14 +158,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/texlive"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/texlive"/></para>
 @z
 
 @x
     <title>Installation of TeX Live</title>
 @y
-    <title>TeX Live のインストール</title>
+    <title>&InstallationOf1;TeX Live&InstallationOf2;</title>
 @z
 
 % @x
@@ -211,7 +211,7 @@
 % @x
 %     <title>Command Explanations</title>
 % @y
-%     <title>&j-CommandExplanations;</title>
+%     <title>&CommandExplanations;</title>
 % @z
 
 % @x
@@ -336,7 +336,7 @@
 %       (unless you know your way around a TeX system very well), but instead
 %       TeX programs are used to make the modifications.</para>
 % @y
-%       <title>&j-ConfigFiles;</title>
+%       <title>&ConfigFiles;</title>
 %       <para>
 %       完全に整備された TeX システムの場合は、各種の <filename class="extension">.cnf</filename> ファイルが利用されます。
 %       これらのファイルは (TeX システムがどのように動作するかが十分に分かっていないなら) 直接編集すべきではありません。
@@ -347,7 +347,7 @@
 % @x
 %     <sect3><title>Configuration Information</title>
 % @y
-%     <sect3><title>&j-ConfigInfo;</title>
+%     <sect3><title>&ConfigInfo;</title>
 % @z
 
 % @x
@@ -363,7 +363,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -371,9 +371,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -389,7 +389,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x
