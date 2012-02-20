@@ -22,49 +22,49 @@
 @x
     <title>Installation of M4</title>
 @y
-    <title>M4 のインストール</title>
+    <title>&InstallationOf1;M4&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare M4 for compilation:</para>
 @y
-    <para>M4 をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;M4&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>To test the results, first fix a test program and then run the test programs:</para>
 @y
-    <para>コンパイル結果をテストするために以下を実行します。</para>
+    <para>コンパイル結果をテストするためには、まず修正を行ってからテストプログラムを実行します。</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of M4</title>
 @y
-    <title>M4 の構成</title>
+    <title>&ContentsOf1;M4&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed program</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x m4

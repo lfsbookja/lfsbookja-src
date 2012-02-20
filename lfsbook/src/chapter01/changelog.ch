@@ -48,6 +48,47 @@
 @z
 
 @x
+      <para>2012-02-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.1-rc1 released.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - LFS-7.1-rc1 リリース。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add sed to the m4 package to fix a false test
+          error.  Fixes <ulink url="&lfs-ticket-root;3022">#3022</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update mountfs script to support LVM volumes when
+          stopping.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - m4 の false テストにおけるエラーを修正ために sed コマンドを追加。
+          <ulink url="&lfs-ticket-root;3022">#3022</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 停止時の LVM に対応するために mountfs スクリプトを更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-02-15</para>
       <itemizedlist>
         <listitem>
