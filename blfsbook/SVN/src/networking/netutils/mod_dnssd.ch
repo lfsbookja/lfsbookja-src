@@ -16,13 +16,13 @@
 @x
   <!ENTITY mod_dnssd-time          "less than 0.1 SBU">
 @y
-  <!ENTITY mod_dnssd-time          "0.1 SBU 以下">
+  <!ENTITY mod_dnssd-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to mod_dnssd</title>
 @y
-    <title>mod_dnssd の概要</title>
+    <title>&IntroductionTo1;mod_dnssd&IntroductionTo2;</title>
 @z
 
 @x
@@ -86,7 +86,7 @@
 @x
     <bridgehead renderas="sect3">mod_dnssd Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">mod_dnssd の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;mod_dnssd&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -118,7 +118,7 @@
 @x
     <title>Installation of mod_dnssd</title>
 @y
-    <title>mod_dnssd のインストール</title>
+    <title>&InstallationOf1;mod_dnssd&InstallationOf2;</title>
 @z
 
 @x
@@ -183,9 +183,9 @@
         <seg>mod_dnssd.so</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>mod_dnssd.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

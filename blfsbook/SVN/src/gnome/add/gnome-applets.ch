@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME Applets</title>
 @y
-    <title>GNOME Applets の概要</title>
+    <title>&IntroductionTo1;GNOME Applets&IntroductionTo2;</title>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">GNOME Applets Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Applets の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Applets&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -88,18 +88,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional to Build the Invest Applet</bridgehead>
-    <para role="optional"><xref linkend="pygtk"/> (including the gtk and
-    gtk.libglade modules)<!-- and <xref linkend="gnome-python-desktop"/>
-    (including the gnomeapplet module)--></para>
-@y
-    <bridgehead renderas="sect4">Optional to Build the Invest Applet</bridgehead>
-    <para role="optional"><xref linkend="pygtk"/> (including the gtk and
-    gtk.libglade modules)<!-- and <xref linkend="gnome-python-desktop"/>
-    (including the gnomeapplet module)--></para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="rarian"/>,
     <xref linkend="libgtop"/>,
@@ -107,7 +95,6 @@
     <xref linkend="hal"/>,
     <xref linkend="libgnomekbd"/>,
     <xref linkend="gucharmap"/>,
-    <!--<xref linkend="system-tools-backends"/>,-->
     <xref linkend="docbook-utils"/>,
     <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>, and
     <xref linkend="libnotify"/></para>
@@ -119,9 +106,8 @@
     <xref linkend="hal"/>,
     <xref linkend="libgnomekbd"/>,
     <xref linkend="gucharmap"/>,
-    <!--<xref linkend="system-tools-backends"/>,-->
     <xref linkend="docbook-utils"/>,
-    <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>, and
+    <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>,
     <xref linkend="libnotify"/></para>
 @z
 

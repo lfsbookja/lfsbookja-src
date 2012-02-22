@@ -16,19 +16,19 @@
 @x
   <!ENTITY pyxml-time          "less than 0.1 SBU">
 @y
-  <!ENTITY pyxml-time          "0.1 SBU 以下">
+  <!ENTITY pyxml-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
 <sect1 id="python-modules" xreflabel="Python modules">
 @y
-<sect1 id="python-modules" xreflabel="Python モジュール">
+<sect1 id="python-modules" xreflabel="Python &Module;">
 @z
 
 @x
   <title>Python Modules</title>
 @y
-  <title>Python モジュール</title>
+  <title>Python &Module;</title>
 @z
 
 @x
@@ -37,14 +37,14 @@
   </indexterm>
 @y
   <indexterm zone="python-modules">
-    <primary sortas="a-Python-modules">Python モジュール</primary>
+    <primary sortas="a-Python-modules">Python &Module;</primary>
   </indexterm>
 @z
 
 @x
     <title>Introduction to Python Modules</title>
 @y
-    <title>Python モジュールの概要</title>
+    <title>&IntroductionTo1;Python &Module;&IntroductionTo2;</title>
 @z
 
 @x
@@ -67,7 +67,7 @@
 @x
       <title>Introduction to PyXML Module</title>
 @y
-      <title>PyXML モジュールの概要</title>
+      <title>&IntroductionTo1;PyXML &Module;&IntroductionTo2;</title>
 @z
 
 @x
@@ -89,49 +89,49 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">Package Information</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
           <para>Download (HTTP): <ulink url="&pyxml-download-http;"/></para>
 @y
-          <para>Download (HTTP): <ulink url="&pyxml-download-http;"/></para>
+          <para>&Download; (HTTP): <ulink url="&pyxml-download-http;"/></para>
 @z
 
 @x
           <para>Download (FTP): <ulink url="&pyxml-download-ftp;"/></para>
 @y
-          <para>Download (FTP): <ulink url="&pyxml-download-ftp;"/></para>
+          <para>&Download; (FTP): <ulink url="&pyxml-download-ftp;"/></para>
 @z
 
 @x
           <para>Download MD5 sum: &pyxml-md5sum;</para>
 @y
-          <para>Download MD5 sum: &pyxml-md5sum;</para>
+          <para>&Download; MD5 sum: &pyxml-md5sum;</para>
 @z
 
 @x
           <para>Download size: &pyxml-size;</para>
 @y
-          <para>Download size: &pyxml-size;</para>
+          <para>&DownloadSize;: &pyxml-size;</para>
 @z
 
 @x
           <para>Estimated disk space required: &pyxml-buildsize;</para>
 @y
-          <para>Estimated disk space required: &pyxml-buildsize;</para>
+          <para>&Estimateddiskspacerequired;: &pyxml-buildsize;</para>
 @z
 
 @x
           <para>Estimated build time: &pyxml-time;</para>
 @y
-          <para>Estimated build time: &pyxml-time;</para>
+          <para>&Estimatedbuildtime;: &pyxml-time;</para>
 @z
 
 @x
       <bridgehead renderas="sect4">PyXML Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">PyXML 依存パッケージ</bridgehead>
+      <bridgehead renderas="sect4">&Dependencies1;PyXML&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -153,16 +153,16 @@
 @x
       <title>Installation of PyXML</title>
 @y
-      <title>PyXML のインストール</title>
+      <title>&InstallationOf1;PyXML&InstallationOf2;</title>
 @z
 
 @x
       <para>Install <application>PyXML</application> by running the following
       commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>PyXML</application> をビルドします。
-</para>
+      <para>
+      以下のコマンドを実行して <application>PyXML</application> をビルドします。
+      </para>
 @z
 
 @x
@@ -228,7 +228,7 @@
           /usr/share/doc/PyXML-&pyxml-version;</seg>
 @y
           <seg>xmlproc_parse, xmlproc_val</seg>
-          <seg>PyXML Python ライブラリモジュール</seg>
+          <seg>PyXML Python ライブラリ&Module;</seg>
           <seg>/usr/lib/python&python2-majorver;/site-packages/_xmlplus,
           /usr/share/doc/PyXML-&pyxml-version;</seg>
 @z
@@ -253,8 +253,313 @@
             <para>is a validating XML file parser using the xmlproc parser.</para>
 @z
 
+%
+%  Begin Py2cairo
+%
+@x
+      <title>Introduction to Py2cairo Module</title>
+@y
+      <title>&IntroductionTo1;Py2cairo &Module;&IntroductionTo2;</title>
+@z
+
+@x
+      <para>Py2cairo provides <application>Python2</application> bindings to
+      <application>Cairo</application>.</para>
+@y
+      <para>
+      Py2cairo は、<application>Cairo</application> に対する <application>Python2</application> バインディングを提供します。
+      </para>
+@z
+
+@x
+      <bridgehead renderas="sect4">Package Information</bridgehead>
+@y
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
+@z
+
+@x
+          <para>Download (HTTP): <ulink url="&py2cairo-download-http;"/></para>
+@y
+          <para>&Download; (HTTP): <ulink url="&py2cairo-download-http;"/></para>
+@z
+
+@x
+          <para>Download (FTP): <ulink url="&py2cairo-download-ftp;"/></para>
+@y
+          <para>&Download; (FTP): <ulink url="&py2cairo-download-ftp;"/></para>
+@z
+
+@x
+          <para>Download MD5 sum: &py2cairo-md5sum;</para>
+@y
+          <para>&Download; MD5 sum: &py2cairo-md5sum;</para>
+@z
+
+@x
+          <para>Download size: &py2cairo-size;</para>
+@y
+          <para>&DownloadSize;: &py2cairo-size;</para>
+@z
+
+@x
+          <para>Estimated disk space required: &py2cairo-buildsize;</para>
+@y
+          <para>&Estimateddiskspacerequired;: &py2cairo-buildsize;</para>
+@z
+
+@x
+          <para>Estimated build time: &py2cairo-time;</para>
+@y
+          <para>&Estimatedbuildtime;: &py2cairo-time;</para>
+@z
+
+@x
+      <bridgehead renderas="sect4">Py2cairo Dependencies</bridgehead>
+@y
+      <bridgehead renderas="sect4">&Dependencies1;Py2cairo&Dependencies2;</bridgehead>
+@z
+
+@x
+      <bridgehead renderas="sect5">Required</bridgehead>
+      <para role="required">
+        <xref linkend="python2"/> and
+        <xref linkend="cairo"/>
+      </para>
+@y
+      <bridgehead renderas="sect5">&Required;</bridgehead>
+      <para role="required">
+        <xref linkend="python2"/>,
+        <xref linkend="cairo"/>
+      </para>
+@z
+
+@x
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional">
+        <ulink url="http://pytest.org">pytest</ulink>
+      </para>
+@y
+      <bridgehead renderas="sect5">&Optional;</bridgehead>
+      <para role="optional">
+        <ulink url="http://pytest.org">pytest</ulink>
+      </para>
+@z
+
+@x
+      <para condition="html" role="usernotes">User Notes:
+      <ulink url="&blfs-wiki;/pycairo"/></para>
+@y
+      <para condition="html" role="usernotes">&UserNotes;:
+      <ulink url="&blfs-wiki;/pycairo"/></para>
+@z
+
+@x
+      <title>Installation of Py2cairo</title>
+@y
+      <title>&InstallationOf1;Py2cairo&InstallationOf2;</title>
+@z
+
+@x
+      <para>Install <application>Py2cairo</application> by running the following
+      commands:</para>
+@y
+      <para>
+      以下のコマンドを実行して <application>Py2cairo</application> をビルドします。
+      </para>
+@z
+
+@x
+      <para>The test suite requires the optional <application>pytest</application>
+      package.  If installed, it is run by changing to the 
+      <filename class='directory'>test</filename> directory and running 
+      <userinput>py.test</userinput>.</para>
+@y
+      <para>The test suite requires the optional <application>pytest</application>
+      package.  If installed, it is run by changing to the 
+      <filename class='directory'>test</filename> directory and running 
+      <userinput>py.test</userinput>.</para>
+@z
+
+@x
+      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@y
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
+@z
+
+@x
+      <title>Contents</title>
+@y
+      <title>&Contents;</title>
+@z
+
+@x
+        <segtitle>Installed Programs</segtitle>
+        <segtitle>Installed Libraries</segtitle>
+        <segtitle>Installed Directory</segtitle>
+@y
+        <segtitle>&InstalledPrograms;</segtitle>
+        <segtitle>&InstalledLibraries;</segtitle>
+        <segtitle>&InstalledDirectories;</segtitle>
+@z
+
+@x
+          <seg>None</seg>
+          <seg>_cairo.so</seg>
+          <seg>/usr/include/pycairo and
+          /usr/lib/python2.7/site-packages/cairo</seg>
+@y
+          <seg>&None;</seg>
+          <seg>_cairo.so</seg>
+          <seg>/usr/include/pycairo,
+          /usr/lib/python2.7/site-packages/cairo</seg>
+@z
+
+%
+%  Begin Pycairo
+%
 @x
       <title>Introduction to Pycairo Module</title>
 @y
-      <title>Pycairo モジュールの概要</title>
+      <title>&IntroductionTo1;Pycairo &Module;&IntroductionTo2;</title>
 @z
+
+@x
+      <para>Pycairo provides <application>Python</application> bindings to
+      <application>Cairo</application>.</para>
+@y
+      <para>
+      Pycairo は、<application>Cairo</application> に対する <application>Python</application> バインディングを提供します。
+      </para>
+@z
+
+@x
+      <bridgehead renderas="sect4">Package Information</bridgehead>
+@y
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
+@z
+
+@x
+          <para>Download (HTTP): <ulink url="&pycairo-download-http;"/></para>
+@y
+          <para>&Download; (HTTP): <ulink url="&pycairo-download-http;"/></para>
+@z
+
+@x
+          <para>Download (FTP): <ulink url="&pycairo-download-ftp;"/></para>
+@y
+          <para>&Download; (FTP): <ulink url="&pycairo-download-ftp;"/></para>
+@z
+
+@x
+          <para>Download MD5 sum: &pycairo-md5sum;</para>
+@y
+          <para>&Download; MD5 sum: &pycairo-md5sum;</para>
+@z
+
+@x
+          <para>Download size: &pycairo-size;</para>
+@y
+          <para>&DownloadSize;: &pycairo-size;</para>
+@z
+
+@x
+          <para>Estimated disk space required: &pycairo-buildsize;</para>
+@y
+          <para>&Estimateddiskspacerequired;: &pycairo-buildsize;</para>
+@z
+
+@x
+          <para>Estimated build time: &pycairo-time;</para>
+@y
+          <para>&Estimatedbuildtime;: &pycairo-time;</para>
+@z
+
+@x
+      <bridgehead renderas="sect4">Pycairo Dependencies</bridgehead>
+@y
+      <bridgehead renderas="sect4">&Dependencies1;Pycairo&Dependencies2;</bridgehead>
+@z
+
+@x
+      <bridgehead renderas="sect5">Required</bridgehead>
+      <para role="required"><xref linkend="python2"/> and
+      <xref linkend="cairo"/></para>
+@y
+      <bridgehead renderas="sect5">&Required;</bridgehead>
+      <para role="required"><xref linkend="python2"/>,
+      <xref linkend="cairo"/></para>
+@z
+
+@x
+      <para condition="html" role="usernotes">User Notes:
+      <ulink url="&blfs-wiki;/pycairo"/></para>
+@y
+      <para condition="html" role="usernotes">&UserNotes;:
+      <ulink url="&blfs-wiki;/pycairo"/></para>
+@z
+
+@x
+      <title>Installation of Pycairo</title>
+@y
+      <title>&InstallationOf1;Pycairo&InstallationOf2;</title>
+@z
+
+@x
+      <para>Install <application>Pycairo</application> by running the following
+      commands:</para>
+@y
+      <para>
+      以下のコマンドを実行して <application>Pycairo</application> をビルドします。
+      </para>
+@z
+
+@x
+      <para>This package does not come with a test suite.</para>
+@y
+      <para>&notTestSuite;</para>
+@z
+
+@x
+      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@y
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
+@z
+
+@x
+      <title>Contents</title>
+@y
+      <title>&Contents;</title>
+@z
+
+@x
+        <segtitle>Installed Programs</segtitle>
+        <segtitle>Installed Libraries</segtitle>
+        <segtitle>Installed Directories</segtitle>
+@y
+        <segtitle>&InstalledPrograms;</segtitle>
+        <segtitle>&InstalledLibraries;</segtitle>
+        <segtitle>&InstalledDirectories;</segtitle>
+@z
+
+@x
+          <seg>None</seg>
+          <seg>Pycairo Python library module</seg>
+          <seg>/usr/include/pycairo and
+          /usr/lib/python&python2-majorver;/site-packages/cairo</seg>
+@y
+          <seg>&None;</seg>
+          <seg>Pycairo Python ライブラリ&Module;</seg>
+          <seg>/usr/include/pycairo,
+          /usr/lib/python&python2-majorver;/site-packages/cairo</seg>
+@z
+
+@x
+      <title>Introduction to PyGObject Module</title>
+@y
+      <title>&IntroductionTo1;PyGObject &Module;&IntroductionTo2;</title>
+@z
+

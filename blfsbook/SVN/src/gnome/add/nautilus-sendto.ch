@@ -16,7 +16,7 @@
 @x
     <title>Introduction to nautilus-sendto</title>
 @y
-    <title>nautilus-sendto の概要</title>
+    <title>&IntroductionTo1;nautilus-sendto&IntroductionTo2;</title>
 @z
 
 @x
@@ -29,19 +29,19 @@
     <application>Claws Mail</application> (formerly <application>Sylpheed
     Claws</application>).</para>
 @y
-<para>
-<application>nautilus-sendto</application>
-パッケージは、<application>Nautilus</application>
-ファイルマネージャーを提供します。
-
-with a context menu
-component for quickly sending files to accounts in an
-<application>Evolution</application> email address book, contacts on a
-<application>Pidgin</application>, <application>Gajim</application> instant
-messaging list, through <application>Thunderbird</application>, or through
-<application>Claws Mail</application> (formerly <application>Sylpheed
-Claws</application>).
-</para>
+    <para>
+    <application>nautilus-sendto</application>
+    パッケージは、<application>Nautilus</application>
+    ファイルマネージャーを提供します。
+    
+    with a context menu
+    component for quickly sending files to accounts in an
+    <application>Evolution</application> email address book, contacts on a
+    <application>Pidgin</application>, <application>Gajim</application> instant
+    messaging list, through <application>Thunderbird</application>, or through
+    <application>Claws Mail</application> (formerly <application>Sylpheed
+    Claws</application>).
+    </para>
 @z
 
 @x
@@ -53,25 +53,25 @@ Claws</application>).
 @x
         <para>Download (HTTP): <ulink url="&nautilus-sendto-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&nautilus-sendto-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&nautilus-sendto-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&nautilus-sendto-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&nautilus-sendto-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&nautilus-sendto-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &nautilus-sendto-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &nautilus-sendto-md5sum;</para>
+        <para>&Download; MD5 sum: &nautilus-sendto-md5sum;</para>
 @z
 
 @x
         <para>Download size: &nautilus-sendto-size;</para>
 @y
-        <para>ダウンロードサイズ: &nautilus-sendto-size;</para>
+        <para>&DownloadSize;: &nautilus-sendto-size;</para>
 @z
 
 @x
@@ -89,7 +89,7 @@ Claws</application>).
 @x
     <bridgehead renderas="sect3">nautilus-sendto Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">nautilus-sendto の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;nautilus-sendto&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,15 +103,13 @@ Claws</application>).
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="evolution"/>,
-    <xref linkend="evolution-data-server"/>,
-    <ulink url="http://www.gupnp.org/">gUPnP</ulink>, and
-    <xref linkend="telepathy-glib"/></para>
+    <xref linkend="evolution-data-server"/>, and
+    <ulink url="http://www.gupnp.org/">gUPnP</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="evolution"/>,
     <xref linkend="evolution-data-server"/>,
-    <ulink url="http://www.gupnp.org/">gUPnP</ulink>,
-    <xref linkend="telepathy-glib"/></para>
+    <ulink url="http://www.gupnp.org/">gUPnP</ulink></para>
 @z
 
 @x
@@ -125,32 +123,30 @@ Claws</application>).
 @x
     <title>Installation of nautilus-sendto</title>
 @y
-    <title>nautilus-sendto のインストール</title>
+    <title>&InstallationOf1;nautilus-sendto&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>nautilus-sendto</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>nautilus-sendto</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>nautilus-sendto</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -201,65 +197,62 @@ Claws</application>).
           <para>is a convenience application to send a file via email or instant
           messenger.</para>
 @y
-<para>
-
-is a convenience application to send a file via email or instant
-messenger.
-</para>
+          <para>is a convenience application to send a file via email or instant
+          messenger.</para>
 @z
 
 @x libnstbluetooth.so
           <para>is the bluetooth plugin library.</para>
 @y
-<para>
-bluetooth プラグインライブラリ。
-</para>
+          <para>
+          bluetooth プラグインライブラリ。
+          </para>
 @z
 
 @x libnstburn.so
           <para>is the nautilus-burn plugin library.</para>
 @y
-<para>
-nautilus-burn プラグインライブラリ。
-</para>
+          <para>
+          nautilus-burn プラグインライブラリ。
+          </para>
 @z
 
 @x libnstgajim.so
           <para>is the <application>Gajim</application> plugin library.</para>
 @y
-<para>
-<application>Gajim</application> プラグインライブラリ。
-</para>
+          <para>
+          <application>Gajim</application> プラグインライブラリ。
+          </para>
 @z
 
 @x libnstpidgin.so
           <para>is the <application>Pidgin</application> plugin library.</para>
 @y
-<para>
-<application>Pidgin</application> プラグインライブラリ。
-</para>
+          <para>
+          <application>Pidgin</application> プラグインライブラリ。
+          </para>
 @z
 
 @x libnstremovable_devices.so
           <para>is the removable-devices plugin library.</para>
 @y
-<para>
-is the removable-devices plugin library.
-</para>
+          <para>
+          is the removable-devices plugin library.
+          </para>
 @z
 
 @x libnstupnp.so
           <para>is the upnp plugin library.</para>
 @y
-<para>
-upnp プラグインライブラリ。
-</para>
+          <para>
+          upnp プラグインライブラリ。
+          </para>
 @z
 
 @x libnautilus-sendto.so
           <para>contains the <application>nautilus-sendto</application> API functions.</para>
 @y
-<para>
-<application>nautilus-sendto</application> API 関数を提供します。
-</para>
+          <para>
+          <application>nautilus-sendto</application> API 関数を提供します。
+          </para>
 @z

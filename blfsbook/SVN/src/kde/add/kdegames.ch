@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdegames</title>
 @y
-    <title>Kdegames の概要</title>
+    <title>&IntroductionTo1;Kdegames&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdegames-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdegames-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdegames-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdegames-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdegames-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdegames-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdegames-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdegames-md5sum;</para>
+        <para>&Download; MD5 sum: &kdegames-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdegames-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdegames-size;</para>
+        <para>&DownloadSize;: &kdegames-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">Kdegames Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdegames の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdegames&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -127,7 +127,7 @@
 @x
     <title>Installation of Kdegames</title>
 @y
-    <title>Kdegames のインストール</title>
+    <title>&InstallationOf1;Kdegames&InstallationOf2;</title>
 @z
 
 @x

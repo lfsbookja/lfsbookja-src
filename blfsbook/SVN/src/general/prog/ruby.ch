@@ -14,9 +14,17 @@
 @z
 
 @x
+  <!ENTITY ruby-buildsize     "403 MB (including tests)"> 
+  <!ENTITY ruby-time          "3.6 SBU (including tests)">
+@y
+  <!ENTITY ruby-buildsize     "403 MB (テスト実施を含む)"> 
+  <!ENTITY ruby-time          "3.6 SBU (テスト実施を含む)">
+@z
+
+@x
     <title>Introduction to Ruby</title>
 @y
-    <title>Ruby の概要</title>
+    <title>&IntroductionTo1;Ruby&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,9 +33,8 @@
     is useful for object-oriented scripting.</para>
 @y
     <para>
-    The <application>Ruby</application> package contains the
-    <application>Ruby</application> development environment. This
-    is useful for object-oriented scripting.
+    <application>Ruby</application> パッケージは <application>Ruby</application> 開発環境を提供します。
+    オブジェクト指向スクリプティングを実現するものです。
     </para>
 @z
 
@@ -40,25 +47,25 @@
 @x
         <para>Download (HTTP): <ulink url="&ruby-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&ruby-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&ruby-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&ruby-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&ruby-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&ruby-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &ruby-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &ruby-md5sum;</para>
+        <para>&Download; MD5 sum: &ruby-md5sum;</para>
 @z
 
 @x
         <para>Download size: &ruby-size;</para>
 @y
-        <para>ダウンロードサイズ: &ruby-size;</para>
+        <para>&DownloadSize;: &ruby-size;</para>
 @z
 
 @x
@@ -76,7 +83,7 @@
 @x
     <bridgehead renderas="sect3">Ruby Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Ruby の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Ruby&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -108,7 +115,7 @@
 @x
     <title>Installation of Ruby</title>
 @y
-    <title>Ruby のインストール</title>
+    <title>&InstallationOf1;Ruby&InstallationOf2;</title>
 @z
 
 @x
@@ -145,8 +152,8 @@
     <filename class='libraryfile'>libruby</filename> shared library.</para>
 @y
     <para>
-    <parameter>--enable-shared</parameter>: This parameter builds the
-    <filename class='libraryfile'>libruby</filename> shared library.
+    <parameter>--enable-shared</parameter>:
+    このパラメーターは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
     </para>
 @z
 
@@ -155,8 +162,8 @@
     threading library into the <application>Ruby</application> build.</para>
 @y
     <para>
-    <parameter>--enable-pthread</parameter>: This parameter links the
-    threading library into the <application>Ruby</application> build.
+    <parameter>--enable-pthread</parameter>:
+    このパラメーターはスレッドライブラリをビルドします。
     </para>
 @z
 
@@ -182,10 +189,10 @@
         <filename class='directory'>/usr/lib/ruby</filename> hierarchy.</seg>
         <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby and /usr/share/ri</seg>
 @y
-        <seg>erb, gem, irb, rake, rdoc, ri, ruby, and testrb</seg>
+        <seg>erb, gem, irb, rake, rdoc, ri, ruby, testrb</seg>
         <seg>libruby.so, libruby-static.a and numerous modules located in the
         <filename class='directory'>/usr/lib/ruby</filename> hierarchy.</seg>
-        <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby and /usr/share/ri</seg>
+        <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby, /usr/share/ri</seg>
 @z
 
 @x
@@ -198,16 +205,18 @@
           <para>is an interpreted scripting language for quick
           and easy object-oriented programming.</para>
 @y
-          <para>is an interpreted scripting language for quick
-          and easy object-oriented programming.</para>
+          <para>
+          オブジェクト指向プログラミングを素早く容易に実現する、インタープリタースクリプト言語です。
+          </para>
 @z
 
 @x irb
           <para>is the interactive interface for
           <application>Ruby</application>.</para>
 @y
-          <para>is the interactive interface for
-          <application>Ruby</application>.</para>
+          <para>
+          <application>Ruby</application> に対するインタラクティブなインターフェースを提供します。
+          </para>
 @z
 
 @x erb
@@ -230,6 +239,7 @@
           <para>contains the API functions required
           by <application>Ruby</application>.</para>
 @y
-          <para>contains the API functions required
-          by <application>Ruby</application>.</para>
+          <para>
+          <application>Ruby</application> が必要とする API 関数を提供します。
+          </para>
 @z

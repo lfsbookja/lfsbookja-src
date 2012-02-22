@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdeaddons</title>
 @y
-    <title>Kdeaddons の概要</title>
+    <title>&IntroductionTo1;Kdeaddons&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,8 +25,7 @@
     <application>kicker</application>.</para>
 @y
     <para>
-    <application>Kdeaddons</application> は <application>konqueror</application>,
-    <application>kate</application>, <application>kicker</application> に対しての追加のプラグインを提供します。
+    <application>Kdeaddons</application> は <application>konqueror</application>, <application>kate</application>, <application>kicker</application> に対しての追加のプラグインを提供します。
     </para>
 @z
 
@@ -39,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdeaddons-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdeaddons-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdeaddons-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdeaddons-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdeaddons-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdeaddons-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdeaddons-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdeaddons-md5sum;</para>
+        <para>&Download; MD5 sum: &kdeaddons-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdeaddons-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdeaddons-size;</para>
+        <para>&DownloadSize;: &kdeaddons-size;</para>
 @z
 
 @x
@@ -75,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">Kdeaddons Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdeaddons の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdeaddons&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -139,7 +138,7 @@
 @x
     <title>Installation of Kdeaddons</title>
 @y
-    <title>Kdeaddons のインストール</title>
+    <title>&InstallationOf1;Kdeaddons&InstallationOf2;</title>
 @z
 
 @x

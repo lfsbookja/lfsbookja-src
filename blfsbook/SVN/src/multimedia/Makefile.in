@@ -178,8 +178,9 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = audioutils cdwriteutils libdriv videoutils
 BOOKdir = $(top_builddir)/@bookdir@/multimedia
-EXTRA_DIST = multimedia.ch
-srcs = multimedia.xml
+CHANGE_FILES = multimedia.ch
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-recursive
 

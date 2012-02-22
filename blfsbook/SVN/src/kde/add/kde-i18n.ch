@@ -26,7 +26,7 @@
 @x
     <title>Introduction to Kde-i18n</title>
 @y
-    <title>Kde-i18n の概要</title>
+    <title>&IntroductionTo1;Kde-i18n&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,6 +41,12 @@
 @z
 
 @x
+    <para>This section has not been tested by the BLFS Editors.</para>
+@y
+    <para>本節の内容は BLFS 編集者の誰も、テストは行っていません。</para>
+@z
+
+@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
@@ -49,25 +55,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kde-i18n-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kde-i18n-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kde-i18n-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kde-i18n-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kde-i18n-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kde-i18n-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kde-i18n-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kde-i18n-md5sum;</para>
+        <para>&Download; MD5 sum: &kde-i18n-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kde-i18n-size;</para>
 @y
-        <para>ダウンロードサイズ: &kde-i18n-size;</para>
+        <para>&DownloadSize;: &kde-i18n-size;</para>
 @z
 
 @x
@@ -113,7 +119,7 @@
 @x
     <bridgehead renderas="sect3">Kde-i18n Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kde-i18n の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kde-i18n&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -143,7 +149,7 @@
 @x
   <title>Installation of Kde-i18n</title>
 @y
-  <title>Kde-i18n のインストール</title>
+  <title>&InstallationOf1;Kde-i18n&InstallationOf2;</title>
 @z
 
 @x
@@ -163,7 +169,7 @@
 @x
     <title>Configuring Kde-i18n</title>
 @y
-    <title>Kde-i18n の設定</title>
+    <title>&Configuring1;Kde-i18n&Configuring2;</title>
 @z
 
 @x
@@ -178,8 +184,7 @@
       in your <application>K Desktop Environment</application>.</para>
 @y
       <para>
-      国際化に対応したプログラムを利用するためには、
-      <application>KDE デスクトップ環境</application> において、コントロールセンター (Control Center) &mdash;&gt;
+      国際化に対応したプログラムを利用するためには、<application>KDE デスクトップ環境</application> において、コントロールセンター (Control Center) &mdash;&gt;
       個人設定 (Personalization) &mdash;&gt; 国と言語 (Country &amp; Language) &mdash;&gt; 言語 (Language) にて言語を設定してください。
       </para>
 @z
@@ -205,9 +210,9 @@
         <seg>Internationalization support for <application>KDE3/Trinity</application></seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg><application>KDE3/Trinity</application> に対する国際化サポート</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

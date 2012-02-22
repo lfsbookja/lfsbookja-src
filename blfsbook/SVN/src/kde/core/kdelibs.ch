@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdelibs</title>
 @y
-    <title>Kdelibs の概要</title>
+    <title>&IntroductionTo1;Kdelibs&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdelibs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdelibs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdelibs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdelibs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdelibs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdelibs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdelibs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdelibs-md5sum;</para>
+        <para>&Download; MD5 sum: &kdelibs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdelibs-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdelibs-size;</para>
+        <para>&DownloadSize;: &kdelibs-size;</para>
 @z
 
 @x
@@ -77,7 +77,7 @@
 @x
     <bridgehead renderas="sect3">Kdelibs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdelibs の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdelibs&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -174,8 +174,8 @@
     <title>Installation of Kdelibs</title>
 @y
   <sect2 role="installation" id="kdelibs-install"
-         xreflabel="Kdelibs のインストール">
-    <title>Kdelibs のインストール</title>
+         xreflabel="&InstallationOf1;Kdelibs&InstallationOf2;">
+    <title>&InstallationOf1;Kdelibs&InstallationOf2;</title>
 @z
 
 @x
@@ -234,9 +234,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -286,7 +284,7 @@
         ktexteditor, kunittest, libkmid}, lib/kde3, and share/{applications,
         apps, autostart, config, doc, emoticons, icons, mimelnk, services} </seg>
 @y
-        <seg>Numerous <application>KDE</application> support programs:
+        <seg>数々の <application>KDE</application> サポートプログラム:
         artsmessage, checkXML, cupsdconf, cupsdoprint, dcop, dcopclient,
         dcopfind, dcopidl, dcopidl2cpp, dcopidlng, dcopobject, dcopquit,
         dcopref, dcopserver, dcopserver_shutdown, dcopstart, filesharelist,
@@ -299,9 +297,8 @@
         ksendbugmail, kshell, kstartupconfig, ksvgtopng, ktelnetservice,
         ktradertest, kunittestmodrunner, kwrapper, lnusertemp,
         make_driver_db_cups, make_driver_db_lpr, makekdewidgets, meinproc,
-        preparetips, and start_kdeinit</seg>
-        <seg>Numerous <application>KDE</application> libraries and helper
-        modules</seg>
+        preparetips, start_kdeinit</seg>
+        <seg>数々の <application>KDE</application> ライブラリとヘルパーモジュール。</seg>
         <seg>/etc/kde and the following subdirectories of &kde-dir;/:
         include/{dnssd, dom, kabc, kate, kdeprint, kdesu, khexedit, kio, kjs,
         kmdi, kmediaplayer, knewstuff, kparts, kresources, ksettings, kspell2,

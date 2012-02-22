@@ -15,10 +15,10 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 19th, &year;">
+<!ENTITY releasedate  "February 21st, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY jversion     "20120219">
+<!ENTITY jversion     "20120221">
 <!ENTITY jratio       "47.5 &percnt; (再カウント要)">
 <!ENTITY releasedate  "&year;/&month;/&day;">
 @z
@@ -73,6 +73,7 @@
 <!ENTITY InstalledLibraries   "インストールライブラリ">
 <!ENTITY InstalledDirectories "インストールディレクトリ">
 <!ENTITY InstalledStylesheets "インストールスタイルシート">
+<!ENTITY InstalledObjects     "インストールオブジェクト">
 <!ENTITY ShortDescriptions    "概略説明">
 
 <!ENTITY Download     "ダウンロード">
@@ -80,6 +81,7 @@
 <!ENTITY LessThan1    "">
 <!ENTITY LessThan2    " 以下">
 <!ENTITY None         "なし">
+<!ENTITY Module       "モジュール">
 @z
 
 @x
@@ -120,6 +122,16 @@
 @y
 <!ENTITY lfs67_checked        "<para>本パッケージは LFS-6.7 において正しくビルドでき動作することが確認されています。</para>">
 <!ENTITY lfs67_built          "<para>本パッケージは LFS-6.7 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+@z
+
+@x
+<!ENTITY lfs68_checked        "<para>This package is known to build and work
+                              properly using an LFS-6.8 platform.</para>">
+<!ENTITY lfs68_built          "<para>This package is known to build using an LFS
+                              6.8 platform but has not been tested.</para>">
+@y
+<!ENTITY lfs68_checked        "<para>本パッケージは LFS-6.8 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs68_built          "<para>本パッケージは LFS-6.8 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x

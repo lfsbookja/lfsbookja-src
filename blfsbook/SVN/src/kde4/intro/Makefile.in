@@ -137,8 +137,13 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/kde4/intro
-EXTRA_DIST = introduction.ch kde4-intro.ch pre-install-config.ch
-srcs = introduction.xml kde4-intro.xml pre-install-config.xml
+CHANGE_FILES = \
+	introduction.ch \
+	kde4-intro.ch \
+	pre-install-config.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -326,8 +331,8 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-kde4-intro.xml: $(BOOKdir)/$@ $(srcdir)/kde4-intro.ch
+introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
+kde4-intro.xml:         $(BOOKdir)/$@ $(srcdir)/kde4-intro.ch
 pre-install-config.xml: $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

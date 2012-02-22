@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdebase</title>
 @y
-    <title>Kdebase の概要</title>
+    <title>&IntroductionTo1;Kdebase&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdebase-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdebase-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdebase-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdebase-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdebase-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdebase-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdebase-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdebase-md5sum;</para>
+        <para>&Download; MD5 sum: &kdebase-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdebase-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdebase-size;</para>
+        <para>&DownloadSize;: &kdebase-size;</para>
 @z
 
 @x
@@ -75,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">Kdebase Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdebase の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdebase&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -218,7 +218,7 @@
 @x
     <title>Installation of Kdebase</title>
 @y
-    <title>Installation of Kdebase</title>
+    <title>&InstallationOf1;Kdebase&InstallationOf2;</title>
 @z
 
 @x
@@ -254,19 +254,21 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Configuring Kdebase</title>
 @y
-    <title>Configuring Kdebase</title>
+    <title>&Configuring1;Kdebase&Configuring2;</title>
 @z
 
 @x
     <sect3><title>Configuration Information</title>
 @y
-    <sect3><title>Configuration Information</title>
+    <sect3><title>&ConfigInfo;</title>
 @z
 
 @x
@@ -282,7 +284,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -290,9 +292,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -335,20 +337,20 @@
         krdb, kreadconfig, krootimage, ksmserver, ksplash, ksplashsimple, kstart,
         ksysguard, ksysguardd, ksystraycmd, ktip, ktrash, kwebdesktop, kwin,
         kwin_killer_helper, kwin_rules_dialog, kwrite, kwriteconfig, kxkb,
-        nspluginscan, nspluginviewer, and startkde</seg>
-        <seg>Numerous KDE support libraries, helper modules, and kioslaves</seg>
+        nspluginscan, nspluginviewer, startkde</seg>
+        <seg>Numerous KDE support libraries, helper modules, kioslaves</seg>
         <seg>/etc/xdg/menus/applications-merged and the following subdirectories
         of &kde-dir;/: include/{kate, ksgrd, ksplash, kwin},
         lib/kconf_update_bin, share/{applnk, apps/{too many to list},
         config, config.kcfg, desktop-directories, doc/kdm, fonts,
         /mimelnk/{fonts, media, print}, services/{searchproviders,
-        useragentstrings}, sounds, templates, wallpapers, and /var/lib/kdm</seg>
+        useragentstrings}, sounds, templates, wallpapers, /var/lib/kdm</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x kate

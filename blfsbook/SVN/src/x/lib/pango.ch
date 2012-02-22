@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -33,43 +33,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&pango-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&pango-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&pango-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&pango-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&pango-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&pango-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &pango-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &pango-md5sum;</para>
+        <para>&Download; MD5 sum: &pango-md5sum;</para>
 @z
 
 @x
         <para>Download size: &pango-size;</para>
 @y
-        <para>ダウンロードサイズ: &pango-size;</para>
+        <para>&DownloadSize;: &pango-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &pango-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &pango-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &pango-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &pango-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &pango-time;</para>
+        <para>&Estimatedbuildtime;: &pango-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <xref linkend="cairo"/>, <xref linkend="x-window-system"/> or
     <xref linkend="fontconfig"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="glib2"/> と以下のいずれか:
     <xref linkend="cairo"/>, <xref linkend="x-window-system"/> または
     <xref linkend="fontconfig"/></para>
@@ -108,11 +108,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
+    <para role="optional"><xref linkend="gobject-introspection"/>
+    (required if you want to build <xref linkend="gnome"/>),
     <ulink url="http://linux.thai.net/libthai">LibThai</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional"><xref linkend="gobject-introspection"/>
+    (required if you want to build <xref linkend="gnome"/>),
     <ulink url="http://linux.thai.net/libthai">LibThai</ulink></para>
 @z
 
@@ -121,7 +123,7 @@
     Documentation)</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional; (API ドキュメントを再生成する場合)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (API ドキュメントを再生成する場合)</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
@@ -129,7 +131,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/pango"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/pango"/></para>
 @z
 
@@ -174,7 +176,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -207,7 +209,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -222,7 +224,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -240,7 +242,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -248,9 +250,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -278,7 +280,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x pango-querymodules
@@ -290,4 +292,3 @@
           information about <application>Pango</application> loadable
           modules.</para>
 @z
-

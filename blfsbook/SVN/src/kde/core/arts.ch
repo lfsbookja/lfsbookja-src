@@ -16,7 +16,7 @@
 @x
     <title>Introduction to aRts</title>
 @y
-    <title>aRts の概要</title>
+    <title>&IntroductionTo1;aRts&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&arts-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&arts-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&arts-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&arts-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&arts-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&arts-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &arts-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &arts-md5sum;</para>
+        <para>&Download; MD5 sum: &arts-md5sum;</para>
 @z
 
 @x
         <para>Download size: &arts-size;</para>
 @y
-        <para>ダウンロードサイズ: &arts-size;</para>
+        <para>&DownloadSize;: &arts-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">aRts Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">aRts の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;aRts&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of aRts</title>
 @y
-    <title>aRts のインストール</title>
+    <title>&InstallationOf1;aRts&InstallationOf2;</title>
 @z
 
 @x
@@ -120,9 +120,10 @@
     file expands into the directory 
     <filename class='directory'>dependencies/arts</filename>.</para></note>
 @y
-    <note><para>When extracted, the <application>aRts</application> tar 
-    file expands into the directory 
-    <filename class='directory'>dependencies/arts</filename>.</para></note>
+    <note><para>
+    <application>aRts</application> のソース tarball を伸張 (解凍) すると、ソースファイルは <filename
+    class='directory'>dependencies/arts</filename> ディレクトリに展開されます。
+    </para></note>
 @z
 
 @x
@@ -137,9 +138,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x

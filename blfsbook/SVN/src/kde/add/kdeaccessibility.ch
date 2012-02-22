@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdeaccessibility</title>
 @y
-    <title>Kdeaccessibility の概要</title>
+    <title>&IntroductionTo1;Kdeaccessibility&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdeaccessibility-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdeaccessibility-download-http;"/>
+        <para>&Download; (HTTP): <ulink url="&kdeaccessibility-download-http;"/>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdeaccessibility-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdeaccessibility-download-ftp;"/>
+        <para>&Download; (FTP): <ulink url="&kdeaccessibility-download-ftp;"/>
 @z
 
 @x
         <para>Download MD5 sum: &kdeaccessibility-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdeaccessibility-md5sum;</para>
+        <para>&Download; MD5 sum: &kdeaccessibility-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdeaccessibility-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdeaccessibility-size;</para>
+        <para>&DownloadSize;: &kdeaccessibility-size;</para>
 @z
 
 @x
@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">Kdeaccessibility Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdeaccessibility の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdeaccessibility&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -164,7 +164,7 @@
 @x
     <title>Installation of Kdeaccessibility</title>
 @y
-    <title>Kdeaccessibility のインストール</title>
+    <title>&InstallationOf1;Kdeaccessibility&InstallationOf2;</title>
 @z
 
 @x

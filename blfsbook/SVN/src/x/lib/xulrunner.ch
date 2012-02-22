@@ -284,20 +284,6 @@
 @z
 
 @x
-    <para><command>ln -sv ../mozilla/plugins ...</command>: Some packages will
-    install browser plugins into
-    <filename class="directory">/usr/lib/mozilla/plugins</filename>.
-    Creating this symlink <application>Xulrunner</application> keeps additional
-    plugins in a common directory.</para>
-@y
-    <para><command>ln -sv ../mozilla/plugins ...</command>: Some packages will
-    install browser plugins into
-    <filename class="directory">/usr/lib/mozilla/plugins</filename>.
-    Creating this symlink <application>Xulrunner</application> keeps additional
-    plugins in a common directory.</para>
-@z
-
-@x
      <para>When you upgrade Xulrunner, remember to update the symlinks.</para>
 @y
      <para>When you upgrade Xulrunner, remember to update the symlinks.</para>

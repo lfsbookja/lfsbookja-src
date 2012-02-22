@@ -16,7 +16,7 @@
 @x
     <title>Introduction to LibTIFF</title>
 @y
-    <title>LibTIFF の概要</title>
+    <title>&IntroductionTo1;LibTIFF&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libtiff-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libtiff-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libtiff-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libtiff-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libtiff-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libtiff-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libtiff-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libtiff-md5sum;</para>
+        <para>&Download; MD5 sum: &libtiff-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libtiff-size;</para>
 @y
-        <para>ダウンロードサイズ: &libtiff-size;</para>
+        <para>&DownloadSize;: &libtiff-size;</para>
 @z
 
 @x
@@ -77,7 +77,7 @@
 @x
     <bridgehead renderas="sect3">LibTIFF Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">LibTIFF の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;LibTIFF&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,7 +105,7 @@
 @x
     <title>Installation of LibTIFF</title>
 @y
-    <title>LibTIFF のインストール</title>
+    <title>&InstallationOf1;LibTIFF&InstallationOf2;</title>
 @z
 
 @x
@@ -126,7 +126,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -168,16 +169,16 @@
 @x
         <seg>bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
         raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps, tiff2rgba,
-        tiffcmp, tiffcp, tiffdither, tiffdump, tiffgt, tiffinfo, tiffmedian, tiffset,
-        and tiffsplit</seg>
-        <seg>libtiff.{so,a} and libtiffxx.{so,a}</seg>
+        tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffinfo, tiffmedian,
+        tiffset, and tiffsplit</seg>
+        <seg>libtiff.so and libtiffxx.so</seg>
         <seg>/usr/share/doc/tiff-&libtiff-version;</seg>
 @y
         <seg>bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
         raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps, tiff2rgba,
-        tiffcmp, tiffcp, tiffdither, tiffdump, tiffgt, tiffinfo, tiffmedian, tiffset,
-        tiffsplit</seg>
-        <seg>libtiff.{so,a}, libtiffxx.{so,a}</seg>
+        tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffinfo, tiffmedian,
+        tiffset, tiffsplit</seg>
+        <seg>libtiff.so, libtiffxx.so</seg>
         <seg>/usr/share/doc/tiff-&libtiff-version;</seg>
 @z
 
@@ -221,7 +222,8 @@
 @z
 
 @x pal2rgb
-          <para>converts a palette color TIFF image to a full color image.</para>
+          <para>converts a palette color TIFF image to a full color
+          image.</para>
 @y
           <para>
           パレットカラーの TIFF イメージをフルカラーイメージに変換します。
@@ -330,15 +332,6 @@
 @y
           <para>
           TIFF ファイルのそのままの情報を出力します。
-          </para>
-@z
-
-@x tiffgt
-          <para>displays an image stored in a TIFF file in
-          an <application>X</application> window.</para>
-@y
-          <para>
-          <application>X</application> ウィンドウ上にて TIFF ファイル内に含まれているイメージを表示します。
           </para>
 @z
 

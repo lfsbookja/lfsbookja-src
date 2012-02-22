@@ -16,7 +16,7 @@
 @x
     <title>Introduction to BIND Utilities</title>
 @y
-    <title>BIND Utilities の概要</title>
+    <title>&IntroductionTo1;BIND Utilities&IntroductionTo2;</title>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <bridgehead renderas="sect3">BIND Utilities Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">BIND Utilities の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;BIND Utilities&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -110,7 +110,7 @@
 @x
     <title>Installation of BIND Utilities</title>
 @y
-    <title>BIND Utilities のインストール</title>
+    <title>&InstallationOf1;BIND Utilities&InstallationOf2;</title>
 @z
 
 @x
@@ -186,8 +186,8 @@
         <seg>None</seg>
 @y
         <seg>dig, host, nslookup</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

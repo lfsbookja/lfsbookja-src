@@ -137,14 +137,20 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/audioutils
-EXTRA_DIST = amarok.ch audacious.ch audioutils.ch cdparanoia.ch freetts.ch \
-	lame.ch mpg123.ch vorbistools.ch xmms.ch \
+CHANGE_FILES = \
+	amarok.ch \
+	audacious.ch \
+	audioutils.ch \
+	cdparanoia.ch \
+	freetts.ch \
+	lame.ch \
+	mpg123.ch \
+	vorbistools.ch \
+	xmms.ch \
 	gnome-media.ch
 
-srcs = amarok.xml audacious.xml audioutils.xml cdparanoia.xml freetts.xml \
-	lame.xml mpg123.xml vorbistools.xml xmms.xml \
-	gnome-media.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -332,15 +338,15 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-amarok.xml: $(BOOKdir)/$@ $(srcdir)/amarok.ch
-audacious.xml: $(BOOKdir)/$@ $(srcdir)/audacious.ch
-audioutils.xml: $(BOOKdir)/$@ $(srcdir)/audioutils.ch
-cdparanoia.xml: $(BOOKdir)/$@ $(srcdir)/cdparanoia.ch
-freetts.xml: $(BOOKdir)/$@ $(srcdir)/freetts.ch
-lame.xml: $(BOOKdir)/$@ $(srcdir)/lame.ch
-mpg123.xml: $(BOOKdir)/$@ $(srcdir)/mpg123.ch
+amarok.xml:      $(BOOKdir)/$@ $(srcdir)/amarok.ch
+audacious.xml:   $(BOOKdir)/$@ $(srcdir)/audacious.ch
+audioutils.xml:  $(BOOKdir)/$@ $(srcdir)/audioutils.ch
+cdparanoia.xml:  $(BOOKdir)/$@ $(srcdir)/cdparanoia.ch
+freetts.xml:     $(BOOKdir)/$@ $(srcdir)/freetts.ch
+lame.xml:        $(BOOKdir)/$@ $(srcdir)/lame.ch
+mpg123.xml:      $(BOOKdir)/$@ $(srcdir)/mpg123.ch
 vorbistools.xml: $(BOOKdir)/$@ $(srcdir)/vorbistools.ch
-xmms.xml: $(BOOKdir)/$@ $(srcdir)/xmms.ch
+xmms.xml:        $(BOOKdir)/$@ $(srcdir)/xmms.ch
 gnome-media.xml: $(BOOKdir)/$@ $(srcdir)/gnome-media.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

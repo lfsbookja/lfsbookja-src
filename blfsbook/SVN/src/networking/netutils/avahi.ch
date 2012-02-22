@@ -16,7 +16,7 @@
 @x
     <title>Introduction to avahi</title>
 @y
-    <title>avahi の概要</title>
+    <title>&IntroductionTo1;avahi&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">avahi Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">avahi の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;avahi&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -123,7 +123,7 @@
 @x
     <title>Installation of avahi</title>
 @y
-    <title>avahi のインストール</title>
+    <title>&InstallationOf1;avahi&InstallationOf2;</title>
 @z
 
 @x
@@ -322,10 +322,10 @@
         avahi-daemon, avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
         avahi-publish, avahi-publish-address, avahi-publish-service,
         avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
-        avahi-set-host-name, bshell, bssh, and bvnc</seg>
+        avahi-set-host-name, bshell, bssh, bvnc</seg>
         <seg>libavahi-client.{so,a}, libavahi-common.{so,a},
         libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a},
-        libavahi-ui-gtk3.{so,a}, libavahi-ui.{so,a}, libdns_sd.{so,a}, and
+        libavahi-ui-gtk3.{so,a}, libavahi-ui.{so,a}, libdns_sd.{so,a},
         libhowl.{so,a}</seg>
         <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
         avahi-compat-howl/{corby,discovery,rendezvous,salt},

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -90,12 +90,15 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> (if you've edited the docs
+    <para role="optional"><xref linkend="gobject-introspection"/>
+    (required if you want to build <xref linkend="gnome"/>),
+    <xref linkend="gtk-doc"/> (if you've edited the docs
     and want to rebuild them)</para>
 @y
     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>
-    (ドキュメントを編集して再ビルドしたい場合)</para>
+    <para role="optional"><xref linkend="gobject-introspection"/>
+    (required if you want to build <xref linkend="gnome"/>),
+    <xref linkend="gtk-doc"/> (ドキュメントを編集して再ビルドしたい場合)</para>
 @z
 
 @x

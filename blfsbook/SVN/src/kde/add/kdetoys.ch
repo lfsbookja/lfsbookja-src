@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdetoys</title>
 @y
-    <title>Kdetoys の概要</title>
+    <title>&IntroductionTo1;Kdetoys&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdetoys-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdetoys-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdetoys-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdetoys-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdetoys-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdetoys-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdetoys-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdetoys-md5sum;</para>
+        <para>&Download; MD5 sum: &kdetoys-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdetoys-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdetoys-size;</para>
+        <para>&DownloadSize;: &kdetoys-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">Kdetoys Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdetoys の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdetoys&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -116,7 +116,7 @@
 @x
     <title>Installation of Kdetoys</title>
 @y
-    <title>Kdetoys のインストール</title>
+    <title>&InstallationOf1;Kdetoys&InstallationOf2;</title>
 @z
 
 @x

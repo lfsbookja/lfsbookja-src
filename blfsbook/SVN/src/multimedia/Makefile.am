@@ -1,8 +1,9 @@
 SUBDIRS=audioutils cdwriteutils libdriv videoutils
 BOOKdir = $(top_builddir)/@bookdir@/multimedia
-EXTRA_DIST = multimedia.ch
+CHANGE_FILES = multimedia.ch
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = multimedia.xml
+srcs = $(CHANGEFILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

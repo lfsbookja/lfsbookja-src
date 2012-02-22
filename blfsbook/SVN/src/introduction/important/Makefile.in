@@ -137,12 +137,18 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/introduction/important
-EXTRA_DIST = beyond.ch bootscripts.ch building-notes.ch important.ch \
-	locale-issues.ch patches.ch pkgmgt.ch position.ch
+CHANGE_FILES = \
+	beyond.ch \
+	bootscripts.ch \
+	building-notes.ch \
+	important.ch \
+	locale-issues.ch \
+	patches.ch \
+	pkgmgt.ch \
+	position.ch
 
-srcs = beyond.xml bootscripts.xml building-notes.xml important.xml \
-	locale-issues.xml patches.xml pkgmgt.xml position.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -330,14 +336,14 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-beyond.ch.xml: $(BOOKdir)/$@ $(srcdir)/beyond.ch.ch
-bootscripts.ch.xml: $(BOOKdir)/$@ $(srcdir)/bootscripts.ch.ch
+beyond.ch.xml:         $(BOOKdir)/$@ $(srcdir)/beyond.ch.ch
+bootscripts.ch.xml:    $(BOOKdir)/$@ $(srcdir)/bootscripts.ch.ch
 building-notes.ch.xml: $(BOOKdir)/$@ $(srcdir)/building-notes.ch.ch
-important.ch.xml: $(BOOKdir)/$@ $(srcdir)/important.ch.ch
-locale-issues.ch.xml: $(BOOKdir)/$@ $(srcdir)/locale-issues.ch.ch
-patches.ch.xml: $(BOOKdir)/$@ $(srcdir)/patches.ch.ch
-pkgmgt.ch.xml: $(BOOKdir)/$@ $(srcdir)/pkgmgt.ch.ch
-position.ch.xml: $(BOOKdir)/$@ $(srcdir)/position.ch.ch
+important.ch.xml:      $(BOOKdir)/$@ $(srcdir)/important.ch.ch
+locale-issues.ch.xml:  $(BOOKdir)/$@ $(srcdir)/locale-issues.ch.ch
+patches.ch.xml:        $(BOOKdir)/$@ $(srcdir)/patches.ch.ch
+pkgmgt.ch.xml:         $(BOOKdir)/$@ $(srcdir)/pkgmgt.ch.ch
+position.ch.xml:       $(BOOKdir)/$@ $(srcdir)/position.ch.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

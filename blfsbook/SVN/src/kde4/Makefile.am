@@ -1,8 +1,9 @@
 SUBDIRS=add core devel intro
 BOOKdir = $(top_builddir)/@bookdir@/kde4
-EXTRA_DIST = kde4.ch
+CHANGE_FILES = kde4.ch
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = kde4.xml
+srcs = $(CHANGEFILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -14,4 +15,3 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 kde4.xml: $(BOOKdir)/$@ $(srcdir)/kde4.ch
-

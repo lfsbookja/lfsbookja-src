@@ -137,14 +137,19 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/networking/netutils
-EXTRA_DIST = bind-utils.ch netutils.ch nmap.ch traceroute.ch whois.ch \
+CHANGE_FILES = \
+	bind-utils.ch \
+	netutils.ch \
+	nmap.ch \
+	traceroute.ch \
+	whois.ch \
 	wireshark.ch \
-	avahi.ch mod_dnssd.ch networkmanager.ch
+	avahi.ch \
+	mod_dnssd.ch \
+	networkmanager.ch
 
-srcs = bind-utils.xml netutils.xml nmap.xml traceroute.xml whois.xml \
-	wireshark.xml \
-	avahi.xml mod_dnssd.xml networkmanager.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -332,14 +337,14 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-bind-utils.xml: $(BOOKdir)/$@ $(srcdir)/bind-utils.ch
-netutils.xml: $(BOOKdir)/$@ $(srcdir)/netutils.ch
-nmap.xml: $(BOOKdir)/$@ $(srcdir)/nmap.ch
-traceroute.xml: $(BOOKdir)/$@ $(srcdir)/traceroute.ch
-whois.xml: $(BOOKdir)/$@ $(srcdir)/whois.ch
-wireshark.xml: $(BOOKdir)/$@ $(srcdir)/wireshark.ch
-avahi.xml: $(BOOKdir)/$@ $(srcdir)/avahi.ch
-mod_dnssd.xml: $(BOOKdir)/$@ $(srcdir)/mod_dnssd.ch
+bind-utils.xml:     $(BOOKdir)/$@ $(srcdir)/bind-utils.ch
+netutils.xml:       $(BOOKdir)/$@ $(srcdir)/netutils.ch
+nmap.xml:           $(BOOKdir)/$@ $(srcdir)/nmap.ch
+traceroute.xml:     $(BOOKdir)/$@ $(srcdir)/traceroute.ch
+whois.xml:          $(BOOKdir)/$@ $(srcdir)/whois.ch
+wireshark.xml:      $(BOOKdir)/$@ $(srcdir)/wireshark.ch
+avahi.xml:          $(BOOKdir)/$@ $(srcdir)/avahi.ch
+mod_dnssd.xml:      $(BOOKdir)/$@ $(srcdir)/mod_dnssd.ch
 networkmanager.xml: $(BOOKdir)/$@ $(srcdir)/networkmanager.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

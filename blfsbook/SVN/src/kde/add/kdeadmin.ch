@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdeadmin</title>
 @y
-    <title>Kdeadmin の概要</title>
+    <title>&IntroductionTo1;Kdeadmin&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdeadmin-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdeadmin-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdeadmin-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdeadmin-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdeadmin-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdeadmin-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdeadmin-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdeadmin-md5sum;</para>
+        <para>&Download; MD5 sum: &kdeadmin-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdeadmin-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdeadmin-size;</para>
+        <para>&DownloadSize;: &kdeadmin-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">Kdeadmin Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdeadmin の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdeadmin&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -148,7 +148,7 @@
 @x
     <title>Installation of Kdeadmin</title>
 @y
-    <title>Kdeadmin のインストール</title>
+    <title>&InstallationOf1;Kdeadmin&InstallationOf2;</title>
 @z
 
 @x
@@ -166,13 +166,15 @@
 @x
    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-   <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+   <para>
+   <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+   </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -180,9 +182,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -198,35 +200,35 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x kcron
         <para>is a  task scheduler.</para>
 @y
-        <para>is a  task scheduler.</para>
+        <para>タスクスケジューラー。</para>
 @z
 
 @x kdat
         <para>is a tar-based tape archiver.</para>
 @y
-        <para>is a tar-based tape archiver.</para>
+        <para>tar ベースのテープアーカイバー。</para>
 @z
 
 @x kpackage
         <para>is a package manager.</para>
 @y
-        <para>is a package manager.</para>
+        <para>パッケージマネージャー。</para>
 @z
 
 @x ksysv
         <para>is a Sys V-Init editor.</para>
 @y
-        <para>is a Sys V-Init editor.</para>
+        <para>Sys V-Init エディター。</para>
 @z
 
 @x kuser
         <para>is a  graphical user manager.</para>
 @y
-        <para>is a  graphical user manager.</para>
+        <para>グラフィカルなユーザーマネージャー。</para>
 @z

@@ -77,7 +77,7 @@
 @x
     <bridgehead renderas="sect3">PPP Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">PPP の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;PPP&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -227,7 +227,7 @@
 @x
     <title>Configuring PPP</title>
 @y
-    <title>PPP の設定</title>
+    <title>&Configuring1;PPP&Configuring2;</title>
 @z
 
 @x

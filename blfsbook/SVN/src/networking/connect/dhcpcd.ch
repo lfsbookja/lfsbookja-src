@@ -16,7 +16,7 @@
 @x
   <!ENTITY dhcpcd-time          "less than 0.1 SBU">
 @y
-  <!ENTITY dhcpcd-time          "0.1 SBU 以下">
+  <!ENTITY dhcpcd-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -133,7 +133,7 @@
 @x
     <title>Configuring dhcpcd</title>
 @y
-    <title>dhcpcd の設定</title>
+    <title>&Configuring1;dhcpcd&Configuring2;</title>
 @z
 
 @x
@@ -276,7 +276,7 @@
         <seg>/lib/dhcpcd</seg>
 @y
         <seg>dhcpcd</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/lib/dhcpcd</seg>
 @z
 

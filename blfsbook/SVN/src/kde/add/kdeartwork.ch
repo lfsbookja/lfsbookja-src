@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Kdeartwork</title>
 @y
-    <title>Kdeartwork の概要</title>
+    <title>&IntroductionTo1;Kdeartwork&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&kdeartwork-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&kdeartwork-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdeartwork-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kdeartwork-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&kdeartwork-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdeartwork-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kdeartwork-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &kdeartwork-md5sum;</para>
+        <para>&Download; MD5 sum: &kdeartwork-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kdeartwork-size;</para>
 @y
-        <para>ダウンロードサイズ: &kdeartwork-size;</para>
+        <para>&DownloadSize;: &kdeartwork-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">Kdeartwork Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Kdeartwork の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Kdeartwork&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -128,7 +128,7 @@
 @x
     <title>Installation of Kdeartwork</title>
 @y
-    <title>Kdeartwork のインストール</title>
+    <title>&InstallationOf1;Kdeartwork&InstallationOf2;</title>
 @z
 
 @x
@@ -163,7 +163,7 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>インストールオブジェクト</segtitle>
+      <segtitle>&InstalledObjects;</segtitle>
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
@@ -179,7 +179,7 @@
         <seg>
         <application>KDE</application> に対しての追加のテーマ、スクリーンセーバー、サウンド、背景、ウィジェットスタイル
         </seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
