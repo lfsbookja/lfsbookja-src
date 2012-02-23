@@ -40,6 +40,7 @@ fi
 
 AC_PROG_XMLLINT
 AC_PROG_TIDY
+AC_PROG_LYNX
 
 TARGETVER=lfs_version()
 

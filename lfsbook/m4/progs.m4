@@ -10,7 +10,7 @@ AC_DEFUN([AC_PROG_XMLLINT],[
 AC_REQUIRE([AC_EXEEXT])dnl
 AC_PATH_PROG(XMLLINT, xmllint$EXEEXT, no)
 if test "$XMLLINT" = no; then
-        AC_MSG_ERROR([xmllint not found in $PATH])
+  AC_MSG_ERROR([xmllint not found in $PATH])
 fi;dnl
 ])
 
@@ -18,7 +18,15 @@ AC_DEFUN([AC_PROG_TIDY],[
 AC_REQUIRE([AC_EXEEXT])dnl
 AC_PATH_PROG(TIDY, tidy$EXEEXT, no)
 if test "$TIDY" = no; then
-        AC_MSG_ERROR([tidy not found in $PATH])
+ AC_MSG_ERROR([tidy not found in $PATH])
+fi;dnl
+])
+
+AC_DEFUN([AC_PROG_LYNX],[
+AC_REQUIRE([AC_EXEEXT])dnl
+AC_PATH_PROG(LYNX, lynx$EXEEXT, no)
+if test "$LYNX" = no; then
+  AC_MSG_WARN([lynx not found in $PATH])
 fi;dnl
 ])
 
