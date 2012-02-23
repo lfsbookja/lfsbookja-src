@@ -568,6 +568,7 @@ ac_subst_vars='am__EXEEXT_FALSE
 am__EXEEXT_TRUE
 LTLIBOBJS
 LIBOBJS
+IPAFONTDIR
 SVNVER
 TIDY
 XMLLINT
@@ -661,6 +662,7 @@ enable_option_checking
 enable_maintainer_mode
 with_bookdir
 enable_dependency_tracking
+with_ipafontdir
 '
       ac_precious_vars='build_alias
 host_alias
@@ -1295,6 +1297,7 @@ Optional Packages:
   --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
   --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
   --with-bookdir=DIR      Specify BOOK sources directory [DIR=../BOOK]
+  --with-ipafontdir=DIR   Path to directory for IPAfont files
 
 Some influential environment variables:
   CC          C compiler command
@@ -2547,6 +2550,9 @@ abs_bookdir=`(cd $bookdir && pwd)`
 
 
 
+
+
+
 # Checks for programs.
 ac_ext=c
 ac_cpp='$CPP $CPPFLAGS'
@@ -3764,7 +3770,7 @@ if test "$TIDY" = no; then
         as_fn_error $? "tidy not found in $PATH" "$LINENO" 5
 fi;
 
-TARGETVER=svn-20120215
+TARGETVER=svn-20120219
 
 SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5
@@ -3780,6 +3786,72 @@ $as_echo "$SVNVER" >&6; }
 fi
 
 
+
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for directory for IPA font files" >&5
+$as_echo_n "checking for directory for IPA font files... " >&6; }
+
+# Check whether --with-ipafontdir was given.
+if test "${with_ipafontdir+set}" = set; then :
+  withval=$with_ipafontdir; IPAFONTDIR="$withval"
+fi
+
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    IPAFONTDIR="${datadir}/fonts/opentype"
+    if test ! -d "${IPAFONTDIR}"; then
+      IPAFONTDIR=""
+    fi
+  fi
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    IPAFONTDIR="${datadir}/fonts/truetype/ipafont"
+    if test ! -d "${IPAFONTDIR}"; then
+      IPAFONTDIR=""
+    fi
+  fi
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    IPAFONTDIR="${datadir}/fonts/truetype"
+    if test ! -d "${IPAFONTDIR}"; then
+      IPAFONTDIR=""
+    fi
+  fi
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    IPAFONTDIR="${datadir}/fonts"
+    if test ! -d "${IPAFONTDIR}"; then
+      IPAFONTDIR=""
+    fi
+  fi
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
+$as_echo "not found" >&6; }
+    { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Building PDF version unavailable" >&5
+$as_echo "$as_me: WARNING: Building PDF version unavailable" >&2;}
+  else
+
+    IPAFONTFILE="dummy"
+    if test ! -f "${IPAFONTDIR}/ipag.ttf"; then
+      IPAFONTFILE=""
+    fi
+    if test ! -f "${IPAFONTDIR}/ipam.ttf"; then
+      IPAFONTFILE=""
+    fi
+
+    if test "x${IPAFONTFILE}" = "x"; then
+      { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
+$as_echo "not found" >&6; }
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Building PDF version unavailable" >&5
+$as_echo "$as_me: WARNING: Building PDF version unavailable" >&2;}
+    else
+
+      { $as_echo "$as_me:${as_lineno-$LINENO}: result: found" >&5
+$as_echo "found" >&6; }
+    fi
+  fi
+
+
 # Checks for libraries.
 
 # Checks for header files.
@@ -3788,7 +3860,7 @@ fi
 
 # Checks for library functions.
 
-ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/appendices/Makefile src/bootscripts/Makefile src/bootscripts/lfs/Makefile src/bootscripts/lfs/init.d/Makefile src/bootscripts/lfs/lib/Makefile src/bootscripts/lfs/lib/services/Makefile src/bootscripts/lfs/sbin/Makefile src/bootscripts/lfs/sysconfig/Makefile src/lsb-bootscripts/Makefile src/lsb-bootscripts/etc/Makefile src/lsb-bootscripts/etc/default/Makefile src/lsb-bootscripts/etc/init.d/Makefile src/lsb-bootscripts/lib/Makefile src/lsb-bootscripts/lib/lsb/Makefile src/lsb-bootscripts/lib/network-services/Makefile src/lsb-bootscripts/sbin/Makefile src/chapter01/Makefile src/chapter02/Makefile src/chapter03/Makefile src/chapter04/Makefile src/chapter05/Makefile src/chapter06/Makefile src/chapter07/Makefile src/chapter08/Makefile src/chapter09/Makefile src/prologue/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/udev-config/Makefile src/udev-config/contrib/Makefile src/udev-config/contrib/debian/Makefile"
+ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/userconfig.xml src/appendices/Makefile src/bootscripts/Makefile src/bootscripts/lfs/Makefile src/bootscripts/lfs/init.d/Makefile src/bootscripts/lfs/lib/Makefile src/bootscripts/lfs/lib/services/Makefile src/bootscripts/lfs/sbin/Makefile src/bootscripts/lfs/sysconfig/Makefile src/lsb-bootscripts/Makefile src/lsb-bootscripts/etc/Makefile src/lsb-bootscripts/etc/default/Makefile src/lsb-bootscripts/etc/init.d/Makefile src/lsb-bootscripts/lib/Makefile src/lsb-bootscripts/lib/lsb/Makefile src/lsb-bootscripts/lib/network-services/Makefile src/lsb-bootscripts/sbin/Makefile src/chapter01/Makefile src/chapter02/Makefile src/chapter03/Makefile src/chapter04/Makefile src/chapter05/Makefile src/chapter06/Makefile src/chapter07/Makefile src/chapter08/Makefile src/chapter09/Makefile src/prologue/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/udev-config/Makefile src/udev-config/contrib/Makefile src/udev-config/contrib/debian/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -4543,6 +4615,7 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "ctie/Makefile") CONFIG_FILES="$CONFIG_FILES ctie/Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
+    "src/userconfig.xml") CONFIG_FILES="$CONFIG_FILES src/userconfig.xml" ;;
     "src/appendices/Makefile") CONFIG_FILES="$CONFIG_FILES src/appendices/Makefile" ;;
     "src/bootscripts/Makefile") CONFIG_FILES="$CONFIG_FILES src/bootscripts/Makefile" ;;
     "src/bootscripts/lfs/Makefile") CONFIG_FILES="$CONFIG_FILES src/bootscripts/lfs/Makefile" ;;

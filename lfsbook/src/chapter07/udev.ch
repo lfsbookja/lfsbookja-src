@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -114,13 +114,13 @@
     period &ndash; due to a lack of maintenance &ndash; and was finally removed
     from the kernel in June, 2006.</para>
 @y
-  <para>
-  <systemitem class="filesystem">devfs</systemitem> が採用した手法で問題になるのは、主にデバイスの検出、生成、命名の方法です。
-  特にデバイスの命名方法がおそらく最も重大な問題です。
-  一般的に言えることとして、デバイス名が変更可能であるならデバイス命名の規則はシステム管理者が考えることであって、特定の開発者に委ねるべきことではありません。
-  また <systemitem class="filesystem">devfs</systemitem> にはその設計に起因した競合の問題があるため、根本的にカーネルを修正しなければ解消できる問題ではありません。
-  そこで長い間、保守されることがなかったために非推奨 (deprecated) として位置づけられ、最終的に 2006年6月にはカーネルから取り除かれました。
-  </para>
+    <para>
+    <systemitem class="filesystem">devfs</systemitem> が採用した手法で問題になるのは、主にデバイスの検出、生成、命名の方法です。
+    特にデバイスの命名方法がおそらく最も重大な問題です。
+    一般的に言えることとして、デバイス名が変更可能であるならデバイス命名の規則はシステム管理者が考えることであって、特定の開発者に委ねるべきことではありません。
+    また <systemitem class="filesystem">devfs</systemitem> にはその設計に起因した競合の問題があるため、根本的にカーネルを修正しなければ解消できる問題ではありません。
+    そこで長い間、保守されることがなかったために非推奨 (deprecated) として位置づけられ、最終的に 2006年6月にはカーネルから取り除かれました。
+    </para>
 @z
 
 @x
@@ -133,12 +133,12 @@
     replacement for <systemitem class="filesystem">devfs</systemitem> became
     much more realistic.</para>
 @y
-  <para>
-  開発版の 2.5 系カーネルと、後にリリースされた安定版のカーネル 2.6 系を経て、新しい仮想ファイルシステム <systemitem
-  class="filesystem">sysfs</systemitem> が登場しました。
-  <systemitem class="filesystem">sysfs</systemitem> が実現したのは、システムのハードウェア設定をユーザー空間のプロセスとして表に出したことです。
-  ユーザー空間での設定を可視化したことによって <systemitem class="filesystem">devfs</systemitem> が為していたことを、ユーザー空間にて現実に見ることが可能になったわけです。
-  </para>
+    <para>
+    開発版の 2.5 系カーネルと、後にリリースされた安定版のカーネル 2.6 系を経て、新しい仮想ファイルシステム <systemitem
+    class="filesystem">sysfs</systemitem> が登場しました。
+    <systemitem class="filesystem">sysfs</systemitem> が実現したのは、システムのハードウェア設定をユーザー空間のプロセスとして表に出したことです。
+    ユーザー空間での設定を可視化したことによって <systemitem class="filesystem">devfs</systemitem> が為していたことを、ユーザー空間にて現実に見ることが可能になったわけです。
+    </para>
 @z
 
 @x
@@ -250,41 +250,6 @@
       <title>デバイスノードの生成</title>
 @z
 
-% @x
-%       <para>To obtain the right major and minor number for a device, Udev
-%       relies on the information provided by <systemitem
-%       class="filesystem">sysfs</systemitem> in <filename
-%       class="directory">/sys</filename>.  For example,
-%       <filename>/sys/class/tty/vcs/dev</filename> contains the string
-%       <quote>7:0</quote>. This string is used by <command>udevd</command> to
-%       create a device node with major number <emphasis>7</emphasis> and minor
-%       <emphasis>0</emphasis>. The names and permissions of the nodes created
-%       under the <filename class="directory">/dev</filename> directory are
-%       determined by rules specified in the files within the <filename
-%       class="directory">/etc/udev/rules.d/</filename> directory. These are
-%       numbered in a similar fashion to the LFS-Bootscripts package. If
-%       <command>udevd</command> can't find a rule for the device it is creating,
-%       it will default permissions to <emphasis>660</emphasis> and ownership to
-%       <emphasis>root:root</emphasis>. Documentation on the syntax of the Udev
-%       rules configuration files are available in
-%       <filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename>
-%       </para>
-% @y
-%       <para>
-%       Udev はデバイスのメジャー番号、マイナー番号を認識するために <filename
-%       class="directory">/sys</filename> ディレクトリ内の <systemitem
-%       class="filesystem">sysfs</systemitem> の情報を参照します。
-%       例えば <filename>/sys/class/tty/vcs/dev</filename> には <quote>7:0</quote> という文字があります。
-%       この文字は <command>udevd</command> が利用するもので、メジャー番号が <emphasis>7</emphasis>、マイナー番号が <emphasis>0</emphasis> のデバイスノードを生成します。
-%       <filename class="directory">/dev</filename> ディレクトリ配下に生成されるノードの名称とパーミッションは、<filename
-%       class="directory">/etc/udev/rules.d/</filename> ディレクトリにある各種ファイルが指定する規則に従って決まります。
-%       それらのファイルは番号付けがされています。
-%       LFS-ブートスクリプトパッケージにおける方法に似ています。
-%       Udev がデバイスを生成しようとしてその生成規則が見つけられなかった場合は、デフォルトのパーミッションは <emphasis>660</emphasis>、デフォルトの所有者は <emphasis>root:root</emphasis> となります。
-%       Udev におけるデバイス生成規則を設定するファイルについて、その文法を示したドキュメントが <filename>/usr/share/doc/udev-&udev-version;/writing_udev_rules/index.html</filename> にあります。
-%       </para>
-% @z
-
 @x
       <para>As of Udev-&udev-version;, <command>udevd</command> no longer
       creates device files in <filename class="directory">/dev</filename>.
@@ -299,13 +264,11 @@
       <para>
       Udev-&udev-version; から <command>udevd</command> はデバイスファイルを <filename class="directory">/dev</filename> には作らなくなりました。
       このかわりに <systemitem class="filesystem">devtmpfs</systemitem> ファイルシステムを通じて、カーネルが制御していくものになりました。
-      
-Any driver that
-      wishes to register a device node will go through <systemitem
-      class="filesystem">devtmpfs</systemitem> (via the driver core) to do it.
-      When a <systemitem class="filesystem">devtmpfs</systemitem> instance is
-      mounted on <filename class="directory">/dev</filename>, the device node
-      will initially be created with a fixed name, permissions, and owner.</para>
+      デバイスノードを登録しようとするドライバーは (デバイスコア経由で) <systemitem
+      class="filesystem">devtmpfs</systemitem> を通じて登録を行います。
+      <systemitem class="filesystem">devtmpfs</systemitem> のインスタンスが <filename
+      class="directory">/dev</filename> 上にマウントされると、デバイスノードには固定的な名称、パーミッション、所有者の情報が設定され生成されます。
+      </para>
 @z
 
 @x
@@ -318,14 +281,14 @@ Any driver that
       or change its permissions, owner, or group, or modify the internal
       <command>udevd</command> database entry for that object.</para>
 @y
-      <para>A short time later, the kernel will send a uevent to <command>
-      udevd</command>.  Based on the rules specified in the files within the
-      <filename class="directory">/etc/udev/rules.d</filename>, <filename
-      class="directory">/lib/udev/rules.d</filename>, and <filename
-      class="directory">/run/udev/rules.d</filename> directories, <command>
-      udevd</command> will create additional symlinks to the device node,
-      or change its permissions, owner, or group, or modify the internal
-      <command>udevd</command> database entry for that object.</para>
+      <para>
+      その後にカーネルは <command>udevd</command> に対して uevent を送信します。
+      <command>udevd</command> は、<filename
+      class="directory">/etc/udev/rules.d</filename>, <filename
+      class="directory">/lib/udev/rules.d</filename>, <filename
+      class="directory">/run/udev/rules.d</filename> の各ディレクトリ内にあるファイルの設定ルールに従って、デバイスノードに対するシンボリックリンクを生成したり、
+      パーミッション、所有者、グループの情報を変更したり、内部的な <command>udevd</command> データベースの項目を修正したりします。
+      </para>
 @z
 
 @x
@@ -336,12 +299,11 @@ Any driver that
       whatever <systemitem class="filesystem">devtmpfs</systemitem> used
       initially.</para>
 @y
-      <para>The rules in these three directories are numbered in a similar
-      fashion to the LFS-Bootscripts package, and all three directories are
-      merged together. If <command>udevd</command> can't find a rule for the
-      device it is creating, it will leave the permissions and ownership at
-      whatever <systemitem class="filesystem">devtmpfs</systemitem> used
-      initially.</para>
+      <para>
+      上の三つのディレクトリ内にて指定されるルールは、LFS ブートスクリプトパッケージと同様の方法で番号づけされており、三つのディレクトリの内容は一つにまとめられます。
+      デバイスノードの生成時に <command>udevd</command> がそのルールを見つけ出せなかった時は、<systemitem
+      class="filesystem">devtmpfs</systemitem> が利用される際の初期のパーミッションと所有者の情報のままとなります。
+      </para>
 @z
 
 @x

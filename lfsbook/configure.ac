@@ -21,6 +21,7 @@ m4_include([m4/progs.m4])
 m4_include([m4/ax_compare_version.m4])
 m4_include([m4/ac_check_docbook_xslt.m4])
 m4_include([m4/ac_check_docbook_dtd.m4])
+m4_include([m4/ac_check_ipafontdir.m4])
 
 # Checks for programs.
 AC_PROG_CC
@@ -52,6 +53,8 @@ else
 fi
 AC_SUBST(SVNVER)
 
+AC_CHECK_IPAFONTDIR
+
 # Checks for libraries.
 
 # Checks for header files.
@@ -63,6 +66,7 @@ AC_SUBST(SVNVER)
 AC_CONFIG_FILES([Makefile
 		 ctie/Makefile
 		 src/Makefile
+		 src/userconfig.xml
 		 src/appendices/Makefile
 		 src/bootscripts/Makefile
 		 src/bootscripts/lfs/Makefile

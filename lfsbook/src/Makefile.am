@@ -97,7 +97,7 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@txt: nochunks
 @MAINT@	lynx -width=44 -dump ../lfsbookja-svn.html > ../lfsbookja-svn.txt
 
-@MAINT@pdf: validxml
+@MAINT@pdf: validxml userconfig.xml
 @MAINT@	@echo "Generating profiled XML for PDF..."
 @MAINT@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
 @MAINT@	--output $(RENDERTMP)/lfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
@@ -113,7 +113,9 @@ lfs: maketar validxml profile-html wget-list
 @MAINT@
 @MAINT@	@echo "Generating PDF file..."
 @MAINT@	cp -R $(BASEDIR)/images .;
-@MAINT@	fop -c $(srcdir)/userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
+@MAINT@	fop -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
+
+@MAINT@userconfig.xml: $(srcdir)/userconfig.xml.in
 
 tmpdir: $(ALLXML)
 	@echo "Creating and cleaning $(RENDERTMP)"
