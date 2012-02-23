@@ -8,14 +8,14 @@
     <renderer mime="application/pdf">
 
       <fonts>
-        <font metrics-url="ipam.xml" kerning="yes"
+        <font metrics-url="@srcdir@/ipam.xml" kerning="yes"
           embed-url="file://@IPAFONTDIR@/ipam.ttf">
           <font-triplet name="IPAmincho" style="normal" weight="normal"/>
           <font-triplet name="IPAmincho" style="normal" weight="bold"/>
           <font-triplet name="IPAmincho" style="italic" weight="normal"/>
           <font-triplet name="IPAmincho" style="italic" weight="bold"/>
         </font>
-        <font metrics-url="ipag.xml" kerning="yes"
+        <font metrics-url="@srcdir@/ipag.xml" kerning="yes"
           embed-url="file://@IPAFONTDIR@/ipag.ttf">
           <font-triplet name="IPAgothic" style="normal" weight="normal"/>
           <font-triplet name="IPAgothic" style="normal" weight="bold"/>
