@@ -3822,7 +3822,7 @@ if test "$LYNX" = no; then
 $as_echo "$as_me: WARNING: lynx not found in $PATH" >&2;}
 fi;
 
-TARGETVER=svn-20120219
+TARGETVER=svn-20120223
 
 SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5

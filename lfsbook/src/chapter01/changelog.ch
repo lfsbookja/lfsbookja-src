@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2012-02-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a note in section about partitioning using
+          advanced techniques (e.g. RAID and LVM).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - パーティション説明の節にて、応用的な技術 (RAID や LVM など) についてのメモを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-02-20</para>
       <itemizedlist>
         <listitem>

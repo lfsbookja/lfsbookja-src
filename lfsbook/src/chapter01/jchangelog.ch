@@ -54,6 +54,36 @@
 -->
 
     <listitem>
+      <para>2012-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20120223,
+          Changeset
+          <ulink url="&lfs-rev-root;9752">9752</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2012-02-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          lynx のチェック追加; nochunks版構築時
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          --with-ipafontdir新設.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-02-21</para>
       <itemizedlist>
         <listitem>
