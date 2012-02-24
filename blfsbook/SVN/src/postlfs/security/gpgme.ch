@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GPGME</title>
 @y
-    <title>GPGME の概要</title>
+    <title>&IntroductionTo1;GPGME&IntroductionTo2;</title>
 @z
 
 @x
@@ -45,25 +45,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gpgme-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gpgme-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gpgme-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gpgme-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gpgme-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gpgme-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gpgme-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gpgme-md5sum;</para>
+        <para>&Download; MD5 sum: &gpgme-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gpgme-size;</para>
 @y
-        <para>ダウンロードサイズ: &gpgme-size;</para>
+        <para>&DownloadSize;: &gpgme-size;</para>
 @z
 
 @x
@@ -81,7 +81,7 @@
 @x
     <bridgehead renderas="sect3">GPGME Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GPGME の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GPGME&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -121,7 +121,7 @@
 @x
     <title>Installation of GPGME</title>
 @y
-    <title>GPGME のインストール</title>
+    <title>&InstallationOf1;GPGME&InstallationOf2;</title>
 @z
 
 @x
@@ -137,7 +137,7 @@
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
     <para>
-    ビルド結果をテストする場合は<command>make check</command> を実行します。
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
     </para>
 @z
 
@@ -162,6 +162,16 @@
     <para>
     <parameter>--libexecdir=/usr/lib</parameter>:
     このパラメーターは、空のディレクトリとして /usr/libexec が生成されることを回避します。
+    </para>
+@z
+
+@x
+    <para><option>--without-g13</option>: This option merely prevents a warning
+    about about an un-released development library during
+    <command>configure</command>.</para>
+@y
+    <para><option>--without-g13</option>:
+    このパラメーターは <command>configure</command> の実行において、未リリースの開発版ライブラリに対する警告メッセージが出ないようにします。
     </para>
 @z
 
