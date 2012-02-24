@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -44,7 +44,7 @@ a script is completely compatible with POSIX syntax.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -74,13 +74,13 @@ a script is completely compatible with POSIX syntax.
 @x
         <para>Estimated disk space required: &dash-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &dash-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &dash-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &dash-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &dash-time;</para>
+        <para>&Estimatedbuildtime;: &dash-time;</para>
 @z
 
 @x
@@ -94,7 +94,7 @@ a script is completely compatible with POSIX syntax.
     <para role="optional"><ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
     (command line editor library)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
     (コマンドライン エディタ ライブラリ)</para>
 @z
@@ -103,7 +103,7 @@ a script is completely compatible with POSIX syntax.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/dash"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/dash"/></para>
 @z
 
@@ -126,7 +126,7 @@ a script is completely compatible with POSIX syntax.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -167,7 +167,7 @@ to  <command>sh</command>, you will need to reset the link to
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -201,7 +201,7 @@ with libedit support.
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -217,7 +217,7 @@ with libedit support.
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -236,7 +236,7 @@ as the <systemitem class="username">root</systemitem> user:
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -244,9 +244,9 @@ as the <systemitem class="username">root</systemitem> user:
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -262,7 +262,7 @@ as the <systemitem class="username">root</systemitem> user:
 @x
       <bridgehead renderas="sect3">Short Description</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x dash

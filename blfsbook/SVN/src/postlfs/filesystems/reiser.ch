@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to reiserfsprogs</title>
 @y
-    <title>reiserfsprogs の概要</title>
+    <title>&IntroductionTo1;reiserfsprogs&IntroductionTo2;</title>
 @z
 
 @x
@@ -31,57 +31,63 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&reiser-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&reiser-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&reiser-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&reiser-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&reiser-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&reiser-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &reiser-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &reiser-md5sum;</para>
+        <para>&Download; MD5 sum: &reiser-md5sum;</para>
 @z
 
 @x
         <para>Download size: &reiser-size;</para>
 @y
-        <para>ダウンロードサイズ: &reiser-size;</para>
+        <para>&DownloadSize;: &reiser-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &reiser-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &reiser-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &reiser-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &reiser-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &reiser-time;</para>
+        <para>&Estimatedbuildtime;: &reiser-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/reiser"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/reiser"/></para>
+@z
+
+@x
+    <title>Kernel Configuration</title>
+@y
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
     <title>Installation of reiserfsprogs</title>
 @y
-    <title>reiserfsprogs のインストール</title>
+    <title>&InstallationOf1;reiserfsprogs&InstallationOf2;</title>
 @z
 
 @x
@@ -96,9 +102,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -112,7 +116,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 % @x
@@ -143,7 +147,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -151,9 +155,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -164,14 +168,14 @@
 @y
         <seg>debugreiserfs, mkreiserfs, reiserfsck, reiserfstune,
         resize_reiserfs</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x debugreiserfs
@@ -224,3 +228,4 @@
           <application>ReiserFS</application> ファイルシステムをリサイズまたはアンマウントします。
           </para>
 @z
+s

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -41,7 +41,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -71,13 +71,13 @@
 @x
         <para>Estimated disk space required: &shadow-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &shadow-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &shadow-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &shadow-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &shadow-time;</para>
+        <para>&Estimatedbuildtime;: &shadow-time;</para>
 @z
 
 @x
@@ -91,7 +91,7 @@
     <para role="required"><xref linkend="linux-pam"/> and/or
     <xref linkend="cracklib"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="linux-pam"/> と
     <xref linkend="cracklib"/> の両方またはいずれか。</para>
 @z
@@ -100,7 +100,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/shadow"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/shadow"/></para>
 @z
 
@@ -150,7 +150,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>&j-notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -164,7 +164,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -292,7 +292,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -308,7 +308,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -630,7 +630,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x

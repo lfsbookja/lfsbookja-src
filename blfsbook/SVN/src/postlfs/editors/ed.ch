@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -45,7 +45,7 @@ Ed を利用する人は、そう多くはありません。
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -75,20 +75,20 @@ Ed を利用する人は、そう多くはありません。
 @x
         <para>Estimated disk space required: &ed-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &ed-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &ed-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &ed-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &ed-time;</para>
+        <para>&Estimatedbuildtime;: &ed-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/ed"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/ed"/></para>
 @z
 
@@ -126,7 +126,7 @@ Ed を利用する人は、そう多くはありません。
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -142,7 +142,7 @@ Ed を利用する人は、そう多くはありません。
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -150,9 +150,9 @@ Ed を利用する人は、そう多くはありません。
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -168,7 +168,7 @@ Ed を利用する人は、そう多くはありません。
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

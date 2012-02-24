@@ -152,7 +152,7 @@
     <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
     <ulink url="http://www.lua.org/">Lua</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="gtk2"/> (to build the GUI front-end),
     <xref linkend="openssl"/>,

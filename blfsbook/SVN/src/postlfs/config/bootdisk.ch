@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -165,6 +165,6 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/CreatingaCustomBootDevice'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/CreatingaCustomBootDevice'/></para>
 @z

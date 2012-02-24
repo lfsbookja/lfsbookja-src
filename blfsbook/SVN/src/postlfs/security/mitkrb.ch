@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2010-11-20 21:50:56 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -40,7 +40,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,13 +70,13 @@
 @x
         <para>Estimated disk space required: &mitkrb-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &mitkrb-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &mitkrb-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &mitkrb-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &mitkrb-time;</para>
+        <para>&Estimatedbuildtime;: &mitkrb-time;</para>
 @z
 
 @x
@@ -92,7 +92,7 @@
     <xref linkend="openldap"/>, and
     <xref linkend="dejagnu"/> (required to run the test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/>
     (<command>xdm</command> ベースのログイン時に必要),
     <xref linkend="openldap"/>,
@@ -115,7 +115,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/mitkrb"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/mitkrb"/></para>
 @z
 
@@ -241,7 +241,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x

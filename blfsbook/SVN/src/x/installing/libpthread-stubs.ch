@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -44,7 +44,7 @@ functions are available, so this package is simply a placeholder.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -74,20 +74,20 @@ functions are available, so this package is simply a placeholder.
 @x
         <para>Estimated disk space required: &libpthread-stubs-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &libpthread-stubs-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &libpthread-stubs-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &libpthread-stubs-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &libpthread-stubs-time;</para>
+        <para>&Estimatedbuildtime;: &libpthread-stubs-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libpthread-stubs"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/libpthread-stubs"/></para>
 @z
 
@@ -111,7 +111,7 @@ functions are available, so this package is simply a placeholder.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -128,7 +128,7 @@ functions are available, so this package is simply a placeholder.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -136,9 +136,9 @@ functions are available, so this package is simply a placeholder.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

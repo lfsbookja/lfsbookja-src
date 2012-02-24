@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
-% $Date::                          $
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,7 +31,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -61,13 +61,13 @@
 @x
         <para>Estimated disk space required: &gtkmm-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gtkmm-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gtkmm-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gtkmm-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gtkmm-time;</para>
+        <para>&Estimatedbuildtime;: &gtkmm-time;</para>
 @z
 
 @x
@@ -82,7 +82,7 @@
     <xref linkend="gtk3"/>, and
     <xref linkend="pangomm"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="atkmm"/>,
     <xref linkend="gtk3"/>,
     <xref linkend="pangomm"/></para>
@@ -92,7 +92,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gtkmm"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gtkmm"/></para>
 @z
 
@@ -130,7 +130,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -138,9 +138,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -162,7 +162,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libatkmm-1.6.so

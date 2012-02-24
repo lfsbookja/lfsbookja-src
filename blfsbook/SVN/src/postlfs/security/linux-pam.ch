@@ -40,7 +40,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,19 +70,19 @@
 @x
         <para>Estimated disk space required: &linux-pam-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &linux-pam-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &linux-pam-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &linux-pam-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &linux-pam-time;</para>
+        <para>&Estimatedbuildtime;: &linux-pam-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -122,7 +122,7 @@
     <xref linkend="db"/> (for the pam_userdb module), and
     <ulink url="http://www.prelude-ids.org/">Prelude</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="cracklib"/>,
     <xref linkend="libtirpc"/>, <xref linkend="x-window-system"/>,
     <xref linkend="db"/> (pam_userdb モジュール利用時),
@@ -137,7 +137,7 @@
     <xref linkend="w3m"/>, and
     <xref linkend="fop"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;
+    <bridgehead renderas="sect4">&Optional;
     (ドキュメントの(再)生成時に必要)</bridgehead>
     <para role="optional"><xref linkend="libxslt"/>,
     <xref linkend="DocBook"/>,
@@ -150,7 +150,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/linux-pam"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/linux-pam"/></para>
 @z
 
@@ -223,7 +223,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -308,7 +308,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -324,7 +324,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -377,7 +377,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -385,9 +385,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -409,7 +409,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x pam_tally

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,12 +16,11 @@
 @x
 <part id="x" xreflabel="X and Window Managers">
 @y
-<part id="x" xreflabel="X とウィンドウマネージャ">
+<part id="x" xreflabel="X とウィンドウマネージャー">
 @z
 
 @x
   <title>X + Window Managers</title>
 @y
-  <title>X とウィンドウマネージャ</title>
+  <title>X とウィンドウマネージャー</title>
 @z
-

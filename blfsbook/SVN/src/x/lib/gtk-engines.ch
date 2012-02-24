@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -33,7 +33,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -63,13 +63,13 @@
 @x
         <para>Estimated disk space required: &gtk-engines-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gtk-engines-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gtk-engines-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gtk-engines-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gtk-engines-time;</para>
+        <para>&Estimatedbuildtime;: &gtk-engines-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <para role="required"><xref linkend="gtk2"/> and
     <xref linkend="intltool"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="gtk2"/>,
     <xref linkend="intltool"/></para>
 @z
@@ -92,7 +92,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="which"/> (Required for test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="which"/> (テストスイート実行時に必要)</para>
 @z
 
@@ -100,7 +100,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gtk-engines"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gtk-engines"/></para>
 @z
 
@@ -138,7 +138,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -147,9 +147,9 @@
       <segtitle>Installed Directories</segtitle>
       <segtitle>Installed Themes</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
       <segtitle>インストールテーマ</segtitle>
 @z
 
@@ -176,7 +176,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

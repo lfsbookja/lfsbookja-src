@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &xterm-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &xterm-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &xterm-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &xterm-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &xterm-time;</para>
+        <para>&Estimatedbuildtime;: &xterm-time;</para>
 @z
 
 @x
@@ -81,7 +81,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="xorg7-app"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="xorg7-app"/></para>
 @z
 
@@ -92,7 +92,7 @@
 %     and Korean locales). Configuration instructions below assume that Luit
 %     is installed.</para>
 % @y
-%     <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+%     <bridgehead renderas="sect4">&Optional;</bridgehead>
 %     <para role="optional"><xref linkend="luit"/>
 %     (UTF-8 でないロケールにて TrueType フォントを使う場合に必要になります。
 %     また中国語、日本語、韓国語のロケールでは常時必要となります。)
@@ -104,7 +104,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/Xterm'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/Xterm'/></para>
 @z
 
@@ -127,7 +127,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -144,7 +144,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -263,13 +263,13 @@ the Backspace key, add the following definitions as the
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
       <segtitle>Installed Programs</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
 @z
 
 @x
@@ -281,7 +281,7 @@ the Backspace key, add the following definitions as the
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x resize

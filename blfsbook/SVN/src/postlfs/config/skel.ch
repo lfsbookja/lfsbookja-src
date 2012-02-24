@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -243,4 +243,3 @@ make them unreadable by "group" and "other".
 ユーザーでログインして、例えば以下のように実行します。
 </para>
 @z
-

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -42,7 +42,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -72,13 +72,13 @@
 @x
         <para>Estimated disk space required: &stunnel-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &stunnel-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &stunnel-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &stunnel-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &stunnel-time;</para>
+        <para>&Estimatedbuildtime;: &stunnel-time;</para>
 @z
 
 @x
@@ -91,7 +91,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="openssl"/></para>
 @z
 
@@ -99,7 +99,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="tcpwrappers"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="tcpwrappers"/></para>
 @z
 
@@ -107,7 +107,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/stunnel"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/stunnel"/></para>
 @z
 
@@ -166,7 +166,7 @@ new user and group using the following commands as the
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -181,7 +181,7 @@ new user and group using the following commands as the
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 % @x
@@ -281,7 +281,7 @@ to access the service(s).
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -293,7 +293,7 @@ to access the service(s).
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -377,7 +377,7 @@ service, read the <xref linkend="samba3-swat-config"/> in the
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x

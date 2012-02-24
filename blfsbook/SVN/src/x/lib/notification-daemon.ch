@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                          $
 %
 @x
@@ -31,7 +31,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -61,13 +61,13 @@
 @x
         <para>Estimated disk space required: &notification-daemon-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &notification-daemon-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &notification-daemon-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &notification-daemon-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &notification-daemon-time;</para>
+        <para>&Estimatedbuildtime;: &notification-daemon-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <xref linkend="libsexy"/>, and
     <xref linkend="libwnck"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="GConf"/>,
     <xref linkend="libglade"/>,
     <xref linkend="libnotify"/>,
@@ -96,7 +96,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gstreamer"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gstreamer"/></para>
 @z
 
@@ -104,7 +104,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/notification-daemon"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/notification-daemon"/></para>
 @z
 
@@ -142,7 +142,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -175,7 +175,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -183,9 +183,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -207,7 +207,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x notification-properties

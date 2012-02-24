@@ -137,8 +137,12 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/virtualization
-EXTRA_DIST = virtualization.ch qemu-kvm.ch
-srcs = virtualization.xml qemu-kvm.xml
+CHANGE_FILES = \
+	virtualization.ch \
+	qemu-kvm.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -327,7 +331,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 virtualization.xml: $(BOOKdir)/$@ $(srcdir)/virtualization.ch
-qemu-kvm.xml: $(BOOKdir)/$@ $(srcdir)/qemu-kvm.ch
+qemu-kvm.xml:       $(BOOKdir)/$@ $(srcdir)/qemu-kvm.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

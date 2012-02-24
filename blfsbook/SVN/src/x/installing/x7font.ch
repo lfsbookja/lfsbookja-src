@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -55,7 +55,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -85,19 +85,19 @@
 @x
         <para>Estimated disk space required: &x7fonts-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &x7fonts-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &x7fonts-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &x7fonts-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &x7fonts-time;</para>
+        <para>&Estimatedbuildtime;: &x7fonts-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -111,7 +111,7 @@
     <para role="required"><xref linkend="xorg7-app"/> and
     <xref linkend="xcursor-themes"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="required"><xref linkend="xorg7-app"/>,
     <xref linkend="xcursor-themes"/></para>
 @z
@@ -120,7 +120,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/Xorg7Fonts'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/Xorg7Fonts'/></para>
 @z
 
@@ -196,7 +196,7 @@ running the following commands as the
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -204,9 +204,9 @@ running the following commands as the
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -222,7 +222,7 @@ running the following commands as the
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x bdftruncate

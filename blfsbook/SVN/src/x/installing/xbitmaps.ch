@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -37,7 +37,7 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -67,13 +67,13 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
 @x
         <para>Estimated disk space required: &xbitmaps-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &xbitmaps-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &xbitmaps-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &xbitmaps-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &xbitmaps-time;</para>
+        <para>&Estimatedbuildtime;: &xbitmaps-time;</para>
 @z
 
 @x
@@ -86,7 +86,7 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="xorg7-util"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="xorg7-util"/></para>
 @z
 
@@ -94,7 +94,7 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/xbitmaps'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/xbitmaps'/></para>
 @z
 
@@ -117,7 +117,7 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -133,7 +133,7 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -141,9 +141,9 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

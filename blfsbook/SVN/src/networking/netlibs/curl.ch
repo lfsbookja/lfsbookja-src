@@ -70,13 +70,13 @@
 @x
         <para>Estimated disk space required: &curl-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &curl-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &curl-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &curl-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &curl-time;</para>
+        <para>&Estimatedbuildtime;: &curl-time;</para>
 @z
 
 @x
@@ -129,7 +129,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/curl"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/curl"/></para>
 @z
 

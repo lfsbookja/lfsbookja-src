@@ -33,7 +33,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -63,13 +63,13 @@
 @x
         <para>Estimated disk space required: &gtk2-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gtk2-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gtk2-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gtk2-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gtk2-time;</para>
+        <para>&Estimatedbuildtime;: &gtk2-time;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
     <xref linkend="x-window-system"/> (specifically, libX11, libXext and
     libXrender), <xref linkend="pango"/> and <xref linkend="atk"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="cairo"/> (libX11 サポートを含めてビルドされたもの)
     <xref linkend="gdk-pixbuf"/>, 
     <xref linkend="x-window-system"/> (特に libX11, libXext,
@@ -96,7 +96,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="hicolor-icon-theme"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="hicolor-icon-theme"/></para>
 @z
 
@@ -113,7 +113,7 @@
     <xref linkend="gobject-introspection"/> and
     <xref linkend="gtk-doc"/>.</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="cups"/>,
     <xref linkend="docbook-utils"/>,
     <!-- <ulink url="http://beagle-project.org/Main_Page">libbeagle</ulink>,
@@ -130,7 +130,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gtk+2"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gtk+2"/></para>
 @z
 
@@ -176,7 +176,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -243,7 +243,7 @@
       <para><filename>~/.gtkrc-2.0</filename> and
       <filename>/etc/gtk-2.0/gtkrc</filename></para>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
       <para><filename>~/.gtkrc-2.0</filename>,
       <filename>/etc/gtk-2.0/gtkrc</filename></para>
 @z
@@ -251,7 +251,7 @@
 @x
     <sect3><title>Configuration Information</title>
 @y
-    <sect3><title>&j-ConfigInfo;</title>
+    <sect3><title>&ConfigInfo;</title>
 @z
 
 @x
@@ -291,7 +291,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -299,9 +299,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -341,7 +341,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 % @x gdk-pixbuf-csource

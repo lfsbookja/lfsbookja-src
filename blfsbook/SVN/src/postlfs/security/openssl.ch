@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -41,7 +41,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -89,19 +89,19 @@
 @x
         <para>Estimated disk space required: &openssl-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &openssl-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &openssl-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &openssl-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &openssl-time;</para>
+        <para>&Estimatedbuildtime;: &openssl-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -123,7 +123,7 @@
 %     <para role="recommended"><xref linkend="bc"/> (if you run the test suite
 %     during the build)</para>
 % @y
-%     <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+%     <bridgehead renderas="sect4">&Recommended;</bridgehead>
 %     <para role="recommended"><xref linkend="bc"/>
 %     (テストスイートを実行する場合に必要。)</para>
 % @z
@@ -134,7 +134,7 @@
     <xref linkend="heimdal"/>, and <xref linkend="bc"/> (required for full
     coverage by the test suite during the build)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="mitkrb"/> または
     <xref linkend="heimdal"/>, かつ <xref linkend="bc"/>
     (ビルド時にテストスイートすべてを実行する場合に必要。)</para>
@@ -144,7 +144,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url='&blfs-wiki;/OpenSSL'/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url='&blfs-wiki;/OpenSSL'/></para>
 @z
 
@@ -191,7 +191,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 % @x
@@ -291,13 +291,13 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -331,7 +331,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -339,9 +339,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -368,7 +368,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x c_rehash

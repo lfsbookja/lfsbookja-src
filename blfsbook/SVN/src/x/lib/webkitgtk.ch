@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &webkitgtk-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &webkitgtk-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &webkitgtk-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &webkitgtk-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &webkitgtk-time;</para>
+        <para>&Estimatedbuildtime;: &webkitgtk-time;</para>
 @z
 
 @x
@@ -86,7 +86,7 @@
     <xref linkend="gst-plugins-base"/>, <xref linkend="which"/>
     and <xref linkend="sqlite"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="gperf"/>, <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>, <xref linkend="icu"/>, <xref linkend="libxslt"/>,
     <xref linkend="gtk2"/> または <xref linkend="gtk3"/> (二つがインストールされていた場合、デフォルトでは gtk+-3 を利用),
@@ -104,7 +104,7 @@
     <application>epiphany</application>), <xref linkend="gtk-doc"/> and
     <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="curl"/>, <xref linkend="enchant"/>,
     <ulink
     url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
@@ -117,7 +117,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/webkitgtk"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/webkitgtk"/></para>
 @z
 
@@ -158,7 +158,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -220,7 +220,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -228,9 +228,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -256,7 +256,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x jsc

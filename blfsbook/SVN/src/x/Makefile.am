@@ -1,8 +1,9 @@
 SUBDIRS=installing lib wm
 BOOKdir = $(top_builddir)/@bookdir@/x
-EXTRA_DIST = x.ch
+CXHANGE_FILES = x.ch
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = x.xml
+srcs = $(CHANGEFILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

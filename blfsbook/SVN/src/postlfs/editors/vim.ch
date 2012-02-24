@@ -50,7 +50,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -80,19 +80,19 @@
 @x
         <para>Estimated disk space required: &vim-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &vim-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &vim-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &vim-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &vim-time;</para>
+        <para>&Estimatedbuildtime;: &vim-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -121,7 +121,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="x-window-system"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="recommended"><xref linkend="x-window-system"/></para>
 @z
 
@@ -136,7 +136,7 @@
       <xref linkend="gpm"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> または
       <xref linkend="lesstif"/>,
@@ -151,7 +151,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/vim"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/vim"/></para>
 @z
 
@@ -266,7 +266,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 % @x
@@ -339,7 +339,7 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -353,7 +353,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -432,7 +432,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -455,9 +455,9 @@ A list of the reinstalled files, along with their short
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -473,7 +473,7 @@ A list of the reinstalled files, along with their short
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gview

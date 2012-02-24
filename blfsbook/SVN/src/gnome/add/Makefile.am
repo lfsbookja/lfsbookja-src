@@ -3,14 +3,20 @@ CHANGEFILES = \
 	accerciser.ch \
 	add.ch \
 	aisleriot.ch \
+	anjuta.ch \
 	at-spi2-atk.ch \
+	devhelp.ch \
 	dummy-libraries.ch \
 	dummy-utilities.ch \
 	file-roller.ch \
+	gdl.ch \
 	gedit.ch \
+	glade.ch \
 	gnome-games.ch \
+	gnome-video-effects.ch \
 	gtkhtml.ch \
 	gtksourceview.ch \
+	libgda.ch \
 	orca.ch \
 	totem.ch \
 	gnome-power-manager.ch \
@@ -39,15 +45,21 @@ ctie:
 accerciser.xml: $(BOOKdir)/$@ $(srcdir)/accerciser.ch
 add.xml: $(BOOKdir)/$@ $(srcdir)/add.ch
 aisleriot.xml: $(BOOKdir)/$@ $(srcdir)/aisleriot.ch
+anjuta.xml: $(BOOKdir)/$@ $(srcdir)/anjuta.ch
 at-spi2-atk.xml: $(BOOKdir)/$@ $(srcdir)/at-spi2-atk.ch
+devhelp.xml: $(BOOKdir)/$@ $(srcdir)/devhelp.ch
 dummy-libraries.xml: $(BOOKdir)/$@ $(srcdir)/dummy-libraries.ch
 dummy-utilities.xml: $(BOOKdir)/$@ $(srcdir)/dummy-utilities.ch
 file-roller.xml: $(BOOKdir)/$@ $(srcdir)/file-roller.ch
+gdl.xml: $(BOOKdir)/$@ $(srcdir)/gdl.ch
 gedit.xml: $(BOOKdir)/$@ $(srcdir)/gedit.ch
+glade.xml: $(BOOKdir)/$@ $(srcdir)/glade.ch
+gnome-video-effects.xml: $(BOOKdir)/$@ $(srcdir)/gnome-video-effects.ch
 gnome-games.xml: $(BOOKdir)/$@ $(srcdir)/gnome-games.ch
 gnome-power-manager.xml: $(BOOKdir)/$@ $(srcdir)/gnome-power-manager.ch
 gtkhtml.xml: $(BOOKdir)/$@ $(srcdir)/gtkhtml.ch
 gtksourceview.xml: $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
+libgda.xml: $(BOOKdir)/$@ $(srcdir)/libgda.ch
 orca.xml: $(BOOKdir)/$@ $(srcdir)/orca.ch
 totem.xml: $(BOOKdir)/$@ $(srcdir)/totem.ch
 nautilus-sendto.xml: $(BOOKdir)/$@ $(srcdir)/nautilus-sendto.ch

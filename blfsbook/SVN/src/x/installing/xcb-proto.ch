@@ -38,7 +38,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -68,13 +68,13 @@
 @x
         <para>Estimated disk space required: &xcb-proto-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &xcb-proto-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &xcb-proto-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &xcb-proto-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &xcb-proto-time;</para>
+        <para>&Estimatedbuildtime;: &xcb-proto-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="python2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="python2"/></para>
 @z
 
@@ -96,7 +96,7 @@
     tests)</bridgehead>
     <para role="optional"><xref linkend="libxml2"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;
+    <bridgehead renderas="sect4">&Optional;
     (テスト実行のために必要)</bridgehead>
     <para role="optional"><xref linkend="libxml2"/></para>
 @z
@@ -105,7 +105,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/xcb-proto"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/xcb-proto"/></para>
 @z
 
@@ -143,7 +143,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -151,9 +151,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

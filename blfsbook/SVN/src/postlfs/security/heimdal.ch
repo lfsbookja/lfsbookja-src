@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -107,7 +107,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -137,19 +137,19 @@
 @x
         <para>Estimated disk space required: &heimdal-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &heimdal-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &heimdal-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &heimdal-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &heimdal-time;</para>
+        <para>&Estimatedbuildtime;: &heimdal-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -178,7 +178,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="openssl"/></para>
 @z
 
@@ -192,7 +192,7 @@
     <ulink url="&patch-root;/libcap-ng-0.6.4-2.6.36_kernel_fix-1.patch">patch</ulink>
     if the Linux kernel version is &gt;=2.6.36)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="sqlite"/>,
     <xref linkend="x-window-system"/>,
@@ -221,7 +221,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/heimdal"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/heimdal"/></para>
 @z
 
@@ -309,7 +309,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x

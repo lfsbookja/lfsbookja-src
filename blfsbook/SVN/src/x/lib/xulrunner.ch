@@ -50,7 +50,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -74,13 +74,13 @@
 @x
         <para>Estimated disk space required: &xulrunner-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &xulrunner-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &xulrunner-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &xulrunner-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &xulrunner-time;</para>
+        <para>&Estimatedbuildtime;: &xulrunner-time;</para>
 @z
 
 @x
@@ -94,7 +94,7 @@
     <para role="required"><xref linkend="alsa-lib"/>, <xref linkend="gtk2"/>,
     <xref linkend="zip"/> and <xref linkend="unzip"/>.</para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="alsa-lib"/>, <xref linkend="gtk2"/>,
     <xref linkend="zip"/>, <xref linkend="unzip"/>.</para>
 @z
@@ -122,7 +122,7 @@
     <para role="recommended"><xref linkend="yasm"/> or
     <xref linkend="libvpx"/>.</para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="yasm"/> または
     <xref linkend="libvpx"/>.</para>
 @z
@@ -142,7 +142,7 @@
     <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
     the jemalloc code) and <xref linkend="wget"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <xref linkend="startup-notification"/>, <xref linkend="sqlite"/>,
     <ulink url="http://www.webmproject.org/code/">libvpx</ulink>,
@@ -161,7 +161,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/xulrunner"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/xulrunner"/></para>
 @z
 
@@ -202,7 +202,7 @@
     <para>This package does not come with a test suite.</para>
 @y
     <para>
-    &j-notTestSuite;
+    &notTestSuite;
     </para>
 @z
 
@@ -232,7 +232,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -292,7 +292,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -300,9 +300,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

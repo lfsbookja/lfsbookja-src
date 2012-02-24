@@ -23,7 +23,7 @@
   <para condition="html" role="usernotes">User Notes:
   <ulink url="&blfs-wiki;/othernetprogs"/></para>
 @y
-  <para condition="html" role="usernotes">&j-UserNotes;:
+  <para condition="html" role="usernotes">&UserNotes;:
   <ulink url="&blfs-wiki;/othernetprogs"/></para>
 @z
 
@@ -33,6 +33,6 @@
 @y
   <para>
   <application>NCPFS</application> は、 Novell ネットワークにて利用する管理ツールおよびクライアントプログラムを提供します。
-  詳しくは &j-UserNotes; を参照してください。
+  詳しくは &UserNotes; を参照してください。
   </para>
 @z

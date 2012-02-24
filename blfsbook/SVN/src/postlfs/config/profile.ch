@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -55,4 +64,3 @@ and its private equivalent <filename>~/.bash_profile</filename> upon
 startup.
 </para>
 @z
-

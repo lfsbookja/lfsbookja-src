@@ -33,7 +33,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -63,13 +63,13 @@
 @x
         <para>Estimated disk space required: &qemu-kvm-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &qemu-kvm-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &qemu-kvm-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &qemu-kvm-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &qemu-kvm-time;</para>
+        <para>&Estimatedbuildtime;: &qemu-kvm-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
       <xref linkend="x-window-system"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
       <xref linkend="python2"/>,
@@ -110,7 +110,7 @@
       output of <command>./configure --help</command> for a more complete list.
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="alsa"/>,
       <xref linkend="attr"/>,
@@ -127,7 +127,7 @@
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -442,7 +442,7 @@ If a connection, such as ssh, from the local network to the
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -450,9 +450,9 @@ If a connection, such as ssh, from the local network to the
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -468,7 +468,7 @@ If a connection, such as ssh, from the local network to the
 @x
       <bridgehead renderas="sect3">Short Description</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x qemu-ga

@@ -137,12 +137,18 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/editors
-EXTRA_DIST = bluefish.ch ed.ch editors.ch emacs.ch joe.ch nano.ch \
-	others.ch vim.ch
+CHANGE_FILES = \
+	bluefish.ch \
+	ed.ch \
+	editors.ch \
+	emacs.ch \
+	joe.ch \
+	nano.ch \
+	others.ch \
+	vim.ch
 
-srcs = bluefish.xml ed.xml editors.xml emacs.xml joe.xml nano.xml \
-	others.xml vim.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -331,13 +337,13 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 bluefish.xml: $(BOOKdir)/$@ $(srcdir)/bluefish.ch
-ed.xml: $(BOOKdir)/$@ $(srcdir)/ed.ch
-editors.xml: $(BOOKdir)/$@ $(srcdir)/editors.ch
-emacs.xml: $(BOOKdir)/$@ $(srcdir)/emacs.ch
-joe.xml: $(BOOKdir)/$@ $(srcdir)/joe.ch
-nano.xml: $(BOOKdir)/$@ $(srcdir)/nano.ch
-others.xml: $(BOOKdir)/$@ $(srcdir)/others.ch
-vim.xml: $(BOOKdir)/$@ $(srcdir)/vim.ch
+ed.xml:       $(BOOKdir)/$@ $(srcdir)/ed.ch
+editors.xml:  $(BOOKdir)/$@ $(srcdir)/editors.ch
+emacs.xml:    $(BOOKdir)/$@ $(srcdir)/emacs.ch
+joe.xml:      $(BOOKdir)/$@ $(srcdir)/joe.ch
+nano.xml:     $(BOOKdir)/$@ $(srcdir)/nano.ch
+others.xml:   $(BOOKdir)/$@ $(srcdir)/others.ch
+vim.xml:      $(BOOKdir)/$@ $(srcdir)/vim.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

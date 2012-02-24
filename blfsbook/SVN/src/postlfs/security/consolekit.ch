@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &consolekit-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &consolekit-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &consolekit-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &consolekit-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &consolekit-time;</para>
+        <para>&Estimatedbuildtime;: &consolekit-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <para role="required"><xref linkend="xorg7-lib"/> and
     <xref linkend="dbus-glib"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="xorg7-lib"/>,
     <xref linkend="dbus-glib"/></para>
 @z
@@ -93,7 +93,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="polkit"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="polkit"/></para>
 @z
 
@@ -114,7 +114,7 @@
     <para role="optional"><xref linkend="linux-pam"/> and
     <xref linkend="xmlto"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/> と
     <xref linkend="xmlto"/></para>
 @z
@@ -123,7 +123,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/consolekit"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/consolekit"/></para>
 @z
 
@@ -146,7 +146,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>&j-notTestSuite;</para>
+<para>&notTestSuite;</para>
 @z
 
 @x
@@ -160,7 +160,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -198,13 +198,13 @@
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
     <sect3><title>Configuration Information</title>
 @y
-    <sect3><title>&j-ConfigInfo;</title>
+    <sect3><title>&ConfigInfo;</title>
 @z
 
 @x
@@ -216,7 +216,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -224,9 +224,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

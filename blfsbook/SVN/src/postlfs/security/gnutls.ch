@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -72,7 +72,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -102,13 +102,13 @@
 @x
         <para>Estimated disk space required: &gnutls-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gnutls-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gnutls-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gnutls-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gnutls-time;</para>
+        <para>&Estimatedbuildtime;: &gnutls-time;</para>
 @z
 
 @x
@@ -121,7 +121,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="nettle"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="nettle"/></para>
 @z
 
@@ -137,7 +137,7 @@
       <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
       <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
@@ -163,7 +163,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gnutls"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gnutls"/></para>
 @z
 
@@ -218,13 +218,13 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -232,9 +232,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -258,7 +258,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x certtool

@@ -137,8 +137,14 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/pst/typesetting
-EXTRA_DIST = jadetex.ch tetex.ch typesetting.ch texlive.ch
-srcs = jadetex.xml tetex.xml typesetting.xml texlive.xml
+CHANGE_FILES = \
+	jadetex.ch \
+	tetex.ch \
+	typesetting.ch \
+	texlive.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGEFILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
