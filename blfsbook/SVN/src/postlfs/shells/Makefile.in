@@ -146,7 +146,7 @@ CHANGE_FILES = \
 	zsh.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 

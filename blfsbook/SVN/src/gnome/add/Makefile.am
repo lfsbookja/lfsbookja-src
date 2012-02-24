@@ -1,5 +1,5 @@
 BOOKdir = $(top_builddir)/@bookdir@/gnome/add
-CHANGEFILES = \
+CHANGE_FILES = \
 	accerciser.ch \
 	add.ch \
 	aisleriot.ch \
@@ -29,8 +29,8 @@ CHANGEFILES = \
 	gnome-applets.ch \
 	at-spi2-core.ch \
 	mobile-broadband-provider-info.ch
-srcs = $(CHANGEFILES:.ch=.xml)
-EXTRA_DIST = $(CHANGEFILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 
 SUFFIXES = .ch .xml

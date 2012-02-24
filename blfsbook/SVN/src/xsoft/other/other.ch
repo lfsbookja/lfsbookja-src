@@ -1,3 +1,12 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -5,18 +14,16 @@
 @z
 
 @x
-  <title>Other X-based Internet Programs</title>
+  <title>Other X-based Programs</title>
 @y
-  <title>X ベースのその他のインターネットプログラム</title>
+  <title>X ベースのその他のプログラム</title>
 @z
 
 @x
-  <para>The Internet isn't just about browsing. Here are more graphical
-  applications that utilize other areas of the Internet.</para>
+    <para>These programs use the X window system and don't fit easily into any
+    of the other chapters.</para>
 @y
-<para>
-インターネットと言うとブラウザだけではありません。
-ここでは、インターネットを違った面で利用するグラフィックアプリケーションを説明します。
-</para>
+    <para>
+    ここであげるプログラムは X ウィンドウシステムを用いていますが、他の節にはまとめられないものを集めています。
+    </para>
 @z
-

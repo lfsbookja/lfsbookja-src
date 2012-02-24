@@ -2,6 +2,7 @@ BOOKdir = $(top_builddir)/@bookdir@/postlfs/filesystems
 CHANGE_FILES = \
 	ext3.ch \
 	filesystems.ch \
+	initramfs.ch \
 	reiser.ch \
 	xfs.ch \
 	lvm2.ch \
@@ -11,7 +12,7 @@ CHANGE_FILES = \
 	aboutlvm.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -24,6 +25,7 @@ ctie:
 
 ext3.xml:        $(BOOKdir)/$@ $(srcdir)/ext3.ch
 filesystems.xml: $(BOOKdir)/$@ $(srcdir)/filesystems.ch
+initramfs.xml:   $(BOOKdir)/$@ $(srcdir)/initramfs.ch
 reiser.xml:      $(BOOKdir)/$@ $(srcdir)/reiser.ch
 xfs.xml:         $(BOOKdir)/$@ $(srcdir)/xfs.ch
 lvm2.xml:        $(BOOKdir)/$@ $(srcdir)/lvm2.ch

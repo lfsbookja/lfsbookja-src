@@ -178,9 +178,9 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = installing lib wm
 BOOKdir = $(top_builddir)/@bookdir@/x
-CXHANGE_FILES = x.ch
+CHANGE_FILES = x.ch
 EXTRA_DIST = $(CHANGE_FILES)
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-recursive
 

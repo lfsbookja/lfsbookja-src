@@ -9,7 +9,7 @@ CHANGE_FILES = \
 	xorriso.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

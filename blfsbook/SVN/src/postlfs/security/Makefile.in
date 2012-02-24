@@ -137,7 +137,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/security
-CHANGEFILES = \
+CHANGE_FILES = \
 	accountsservice.ch \
 	acl.ch \
 	attr.ch \
@@ -173,8 +173,8 @@ CHANGEFILES = \
 	tcpwrappers.ch \
 	tripwire.ch
 
-srcs = $(CHANGEFILES:.ch=.xml)
-EXTRA_DIST = $(CHANGEFILES) firewalling.sed
+srcs = $(CHANGE_FILES:.ch=.xml)
+EXTRA_DIST = $(CHANGE_FILES) firewalling.sed
 SUFFIXES = .ch .xml
 all: all-am
 

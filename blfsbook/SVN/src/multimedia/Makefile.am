@@ -3,7 +3,7 @@ BOOKdir = $(top_builddir)/@bookdir@/multimedia
 CHANGE_FILES = multimedia.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

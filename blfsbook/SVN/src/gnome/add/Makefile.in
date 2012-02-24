@@ -137,7 +137,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/gnome/add
-CHANGEFILES = \
+CHANGE_FILES = \
 	accerciser.ch \
 	add.ch \
 	aisleriot.ch \
@@ -168,8 +168,8 @@ CHANGEFILES = \
 	at-spi2-core.ch \
 	mobile-broadband-provider-info.ch
 
-srcs = $(CHANGEFILES:.ch=.xml)
-EXTRA_DIST = $(CHANGEFILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
+EXTRA_DIST = $(CHANGE_FILES)
 SUFFIXES = .ch .xml
 all: all-am
 

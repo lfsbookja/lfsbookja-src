@@ -1,5 +1,5 @@
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/security
-CHANGEFILES = \
+CHANGE_FILES = \
 	accountsservice.ch \
 	acl.ch \
 	attr.ch \
@@ -34,8 +34,8 @@ CHANGEFILES = \
 	syslog.ch \
 	tcpwrappers.ch \
 	tripwire.ch
-srcs = $(CHANGEFILES:.ch=.xml)
-EXTRA_DIST = $(CHANGEFILES) firewalling.sed
+srcs = $(CHANGE_FILES:.ch=.xml)
+EXTRA_DIST = $(CHANGE_FILES) firewalling.sed
 srcdir = @srcdir@
 
 SUFFIXES = .ch .xml

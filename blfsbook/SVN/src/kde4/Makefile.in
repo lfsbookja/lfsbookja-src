@@ -180,7 +180,7 @@ SUBDIRS = add core devel intro
 BOOKdir = $(top_builddir)/@bookdir@/kde4
 CHANGE_FILES = kde4.ch
 EXTRA_DIST = $(CHANGE_FILES)
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-recursive
 

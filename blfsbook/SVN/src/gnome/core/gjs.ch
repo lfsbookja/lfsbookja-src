@@ -78,12 +78,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
+    <para role="required"><xref linkend="cairo"/>,
+    <xref linkend="dbus-glib"/>, and
     <xref linkend="gobject-introspection"/>, and
     <xref linkend="SpiderMonkey"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
+    <para role="required"><xref linkend="cairo"/>,
+    <xref linkend="dbus-glib"/>,
     <xref linkend="gobject-introspection"/>,
     <xref linkend="SpiderMonkey"/></para>
 @z

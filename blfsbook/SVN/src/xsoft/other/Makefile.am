@@ -6,11 +6,12 @@ CHANGE_FILES = \
 	other.ch \
 	pan.ch \
 	pidgin.ch \
+	rox-filer.ch \
 	thunderbird.ch \
 	xchat.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -27,5 +28,6 @@ icedtea-web.xml: $(BOOKdir)/$@ $(srcdir)/icedtea-web.ch
 other.xml:       $(BOOKdir)/$@ $(srcdir)/other.ch
 pan.xml:         $(BOOKdir)/$@ $(srcdir)/pan.ch
 pidgin.xml:      $(BOOKdir)/$@ $(srcdir)/pidgin.ch
+rox-filer.xml:   $(BOOKdir)/$@ $(srcdir)/rox-filer.ch
 thunderbird.xml: $(BOOKdir)/$@ $(srcdir)/thunderbird.ch
 xchat.xml:       $(BOOKdir)/$@ $(srcdir)/xchat.ch

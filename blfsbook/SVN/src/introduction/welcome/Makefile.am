@@ -1,5 +1,5 @@
 BOOKdir = $(top_builddir)/@bookdir@/introduction/welcome
-CHANGE_FILE = \
+CHANGE_FILES = \
 	acknowledgments.ch \
 	askhelp.ch \
 	changelog.ch \
@@ -13,17 +13,20 @@ CHANGE_FILE = \
 	version.ch \
 	welcome.ch \
 	which.ch \
-	wiki.ch \
+	wiki.ch
+dist_changes = \
+	jchangelog-2008.txt \
+	jchangelog-2009.txt \
+	jchangelog-2010.txt \
+	jchangelog-2011.txt \
 	changelog-2008.ch \
 	changelog-2009.ch \
 	changelog-2010.ch \
 	changelog-2011.ch
-dist_changes = \
-	jchangelog-2008.txt jchangelog-2009.txt jchangelog-2010.txt \
-	jchangelog-2011.txt
 EXTRA_DIST = $(CHANGE_FILES) $(dist_changes)
 srcdir = @srcdir@
-srcs = $(CHANGEFILES:.ch=.xml)
+srcs = $(CHANGE_FILES:.ch=.xml)
+
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
