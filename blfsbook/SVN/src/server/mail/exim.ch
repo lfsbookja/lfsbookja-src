@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Exim</title>
 @y
-    <title>Exim の概要</title>
+    <title>&IntroductionTo1;Exim&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,49 +32,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&exim-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&exim-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&exim-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&exim-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&exim-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&exim-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &exim-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &exim-md5sum;</para>
+        <para>&Download; MD5 sum: &exim-md5sum;</para>
 @z
 
 @x
         <para>Download size: &exim-size;</para>
 @y
-        <para>ダウンロードサイズ: &exim-size;</para>
+        <para>&DownloadSize;: &exim-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &exim-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &exim-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &exim-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &exim-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &exim-time;</para>
+        <para>&Estimatedbuildtime;: &exim-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -82,18 +82,15 @@
         shipped with the sources) can be downloaded by following the links
         shown at <ulink url="http://exim.org/docs.html"/>.</para>
 @y
-<para>
-
-Additional formats of the documentation (text-based docs are
-shipped with the sources) can be downloaded by following the links
-shown at <ulink url="http://exim.org/docs.html"/>.
-</para>
+        <para>Additional formats of the documentation (text-based docs are
+        shipped with the sources) can be downloaded by following the links
+        shown at <ulink url="http://exim.org/docs.html"/>.</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Exim Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Exim の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Exim&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,7 +100,7 @@ shown at <ulink url="http://exim.org/docs.html"/>.
     GDBM (GDBM built in LFS) or
     <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="db"/> または
     <!-- <xref linkend="gdbm"/> -->
     GDBM (GDBM built in LFS) または
@@ -122,7 +119,7 @@ shown at <ulink url="http://exim.org/docs.html"/>.
     <xref linkend="tcpwrappers"/>, and
     <xref linkend="linux-pam"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="openldap"/>,
     <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
@@ -138,14 +135,14 @@ shown at <ulink url="http://exim.org/docs.html"/>.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/exim"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/exim"/></para>
 @z
 
 @x
     <title>Installation of Exim</title>
 @y
-    <title>Exim のインストール</title>
+    <title>&InstallationOf1;Exim&InstallationOf2;</title>
 @z
 
 @x
@@ -164,26 +161,29 @@ shown at <ulink url="http://exim.org/docs.html"/>.
     <para>Install <application>Exim</application> with the following
     commands:</para>
 @y
-    <para>Install <application>Exim</application> with the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して <application>Exim</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>This package does not come with a test suite.</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -407,27 +407,27 @@ shown at <ulink url="http://exim.org/docs.html"/>.
 @x
     <title>Configuring Exim</title>
 @y
-    <title>Configuring Exim</title>
+    <title>&Configuring1;Exim&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <para><filename>/etc/exim.conf</filename> and
       <filename>/etc/aliases</filename></para>
 @y
-      <para><filename>/etc/exim.conf</filename> and
+      <para><filename>/etc/exim.conf</filename>,
       <filename>/etc/aliases</filename></para>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -467,7 +467,7 @@ shown at <ulink url="http://exim.org/docs.html"/>.
 @x
       <title>Boot Script</title>
 @y
-      <title>Boot Script</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -499,7 +499,7 @@ shown at <ulink url="http://exim.org/docs.html"/>.
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -507,9 +507,9 @@ shown at <ulink url="http://exim.org/docs.html"/>.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -522,21 +522,22 @@ shown at <ulink url="http://exim.org/docs.html"/>.
 @y
         <seg>exicyclog, exigrep, exim, exim-4.43-2, exim_checkaccess,
         exim_dbmbuild, exim_dumpdb, exim_fixdb, exim_lock, exim_tidydb,
-        eximstats, exinext, exipick, exiqgrep, exiqsumm, exiwhat, and
-        optionally, eximon, and eximon.bin</seg>
-        <seg>None</seg>
-        <seg>/usr/share/doc/exim-&exim-version; and /var/spool/exim</seg>
+        eximstats, exinext, exipick, exiqgrep, exiqsumm, exiwhat,
+        任意のビルドとして eximon, eximon.bin</seg>
+        <seg>&None;</seg>
+        <seg>/usr/share/doc/exim-&exim-version;, /var/spool/exim</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x exicyclog
           <para>cycles <application>Exim</application> log files.</para>
 @y
-          <para>cycles <application>Exim</application> log files.</para>
+          <para>
+          <application>Exim</application> のログファイルを回します。
+          </para>
 @z
-

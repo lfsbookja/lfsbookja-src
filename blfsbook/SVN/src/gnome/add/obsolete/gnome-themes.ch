@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &gnome-themes-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gnome-themes-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gnome-themes-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gnome-themes-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gnome-themes-time;</para>
+        <para>&Estimatedbuildtime;: &gnome-themes-time;</para>
 @z
 
 @x
@@ -82,7 +82,7 @@
     <para role="required"><xref linkend="icon-naming-utils"/> and
     <xref linkend="gtk-engines"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="icon-naming-utils"/>,
     <xref linkend="gtk-engines"/></para>
 @z
@@ -91,7 +91,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gnome-themes"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gnome-themes"/></para>
 @z
 
@@ -114,7 +114,7 @@
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -129,7 +129,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -148,7 +148,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -157,9 +157,9 @@
       <segtitle>Installed Directories</segtitle>
       <segtitle>Installed Themes</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
       <segtitle>インストールテーマ</segtitle>
 @z
 

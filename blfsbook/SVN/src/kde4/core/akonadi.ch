@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &akonadi-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &akonadi-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &akonadi-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &akonadi-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &akonadi-time;</para>
+        <para>&Estimatedbuildtime;: &akonadi-time;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
     <xref linkend="soprano"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="shared-mime-info"/>, 
     <xref linkend="boost"/>, 
@@ -101,7 +101,7 @@
     <xref linkend="sqlite"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="sqlite"/>
     </para>
@@ -111,7 +111,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/akonadi"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/akonadi"/></para>
 @z
 
@@ -149,7 +149,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -164,7 +164,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -172,9 +172,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

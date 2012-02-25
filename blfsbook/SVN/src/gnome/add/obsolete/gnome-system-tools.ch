@@ -34,7 +34,7 @@ Linux workstation.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@ Linux workstation.
 @x
         <para>Estimated disk space required: &gnome-system-tools-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &gnome-system-tools-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &gnome-system-tools-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &gnome-system-tools-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &gnome-system-tools-time;</para>
+        <para>&Estimatedbuildtime;: &gnome-system-tools-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@ Linux workstation.
     <para role="required"><xref linkend="liboobs"/> and
     <xref linkend="nautilus"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="liboobs"/>,
     <xref linkend="nautilus"/></para>
 @z
@@ -95,7 +95,7 @@ Linux workstation.
     <xref linkend="rarian"/>, and
     <xref linkend="wireless_tools"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="polkit-gnome"/>,
     <xref linkend="rarian"/>,
     <xref linkend="wireless_tools"/></para>
@@ -105,7 +105,7 @@ Linux workstation.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/gnome-system-tools"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/gnome-system-tools"/></para>
 @z
 
@@ -129,7 +129,7 @@ Linux workstation.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -145,7 +145,7 @@ Linux workstation.
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -163,7 +163,7 @@ it if <application>polkit-gnome</application> is installed.
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -171,9 +171,9 @@ it if <application>polkit-gnome</application> is installed.
       <segtitle>Installed Librar(y,ies)</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -199,7 +199,7 @@ it if <application>polkit-gnome</application> is installed.
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x network-admin

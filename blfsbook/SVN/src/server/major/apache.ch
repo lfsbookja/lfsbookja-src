@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -24,7 +24,7 @@
 @x
     <title>Introduction to Apache</title>
 @y
-    <title>Apache の概要</title>
+    <title>&IntroductionTo1;Apache&IntroductionTo2;</title>
 @z
 
 @x
@@ -33,8 +33,7 @@
     web sites or running huge web serving operations.</para>
 @y
     <para>
-    <application>Apache</application>
-    パッケージはオープンソースの HTTP サーバーです。
+    <application>Apache</application> パッケージはオープンソースの HTTP サーバーです。
     ローカルなイントラネットウェブサイトでも、大規模なウェブサービスの運用にも利用することができます。
     </para>
 @z
@@ -42,49 +41,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&apache-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&apache-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&apache-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&apache-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&apache-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&apache-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &apache-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &apache-md5sum;</para>
+        <para>&Download; MD5 sum: &apache-md5sum;</para>
 @z
 
 @x
         <para>Download size: &apache-size;</para>
 @y
-        <para>ダウンロードサイズ: &apache-size;</para>
+        <para>&DownloadSize;: &apache-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &apache-buildsize;</para>
 @y
-        <para>&j-PackageInformation;: &apache-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &apache-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &apache-time;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &apache-time;</para>
+        <para>&Estimatedbuildtime;: &apache-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -98,7 +97,7 @@
 @x
     <bridgehead renderas="sect3">Apache Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Apache の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Apache&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +111,7 @@
     <ulink url="http://apr.apache.org/">APR-util</ulink>, and
     <ulink url="http://www.distcache.org/">distcache</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="openldap"/>,
     <xref linkend="openssl"/> (バンドルされている APR-util でも利用),
     <xref linkend="pcre"/>,
@@ -137,7 +136,7 @@
     <ulink url="http://www.oracle.com/us/products/database/index.html">Oracle 11g</ulink>, and
     <ulink url="http://www.freetds.org/">FreeTDS</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;
+    <bridgehead renderas="sect4">&Optional;
     (バンドルされている APR-util を利用する場合にのみ)</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="expat"/>,
@@ -166,14 +165,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/apache"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/apache"/></para>
 @z
 
 @x
     <title>Installation of Apache</title>
 @y
-    <title>Apache のインストール</title>
+    <title>&InstallationOf1;Apache&InstallationOf2;</title>
 @z
 
 @x
@@ -202,9 +201,9 @@
     上のコマンドでは <application>Apache</application> ユーザーのホームディレクトリを <filename>/dev/null</filename> としています。
     ただしこれを行うと <ulink url='http://www.viewvc.org/'><application>ViewVC</application></ulink> のようなアドオンが動作しないものが出てきます。
     この ViewVC はちなみに、CVS や Subversion といったバージョン管理システムのリポジトリを、ブラウザ上から操作可能とするものです。
-    特定のアプリケーションに対する詳細は&j-UserNotes;を参照してください。
+    特定のアプリケーションに対する詳細は&UserNotes;を参照してください。
     </para>
-</note>
+    </note>
 @z
 
 @x
@@ -238,7 +237,7 @@
       その出力結果からは、インストールに必要となるモジュールをビルドするために、<command>configure</command> コマンドに対してどんなパラメーターを指定すべきかを確認することができます。
       <command>configure</command> コマンドには実に 65 個にも及ぶ追加のパラメーターがあって、これにより追加モジュールをビルドすることができます。
       追加のパラメーターは、<parameter>--help</parameter> にて示される情報に必ずしもすべて説明されているわけではありません。
-      以下の<quote>&j-CommandExplanations;</quote>の節を参照してください。
+      以下の<quote>&CommandExplanations;</quote>の節を参照してください。
       </para>
 @z
 
@@ -252,7 +251,7 @@
 @y
       <para>
       バンドルされている <application>APR-util</application> を用いるものとし、かつ <application>Berkeley
-      DB</application> のバックエンドサポートを利用した <application>Subversion</application> をインストールする場合は、以下の<quote>&j-CommandExplanations;</quote>の節を参照してください。
+      DB</application> のバックエンドサポートを利用した <application>Subversion</application> をインストールする場合は、以下の<quote>&CommandExplanations;</quote>の節を参照してください。
       </para>
 @z
 
@@ -286,9 +285,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &j-notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -302,7 +299,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -416,19 +413,19 @@
 @x
     <title>Configuring Apache</title>
 @y
-    <title>Apache の設定</title>
+    <title>&Configuring1;Apache&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -456,7 +453,7 @@
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -474,7 +471,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -482,9 +479,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -508,7 +505,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x ab

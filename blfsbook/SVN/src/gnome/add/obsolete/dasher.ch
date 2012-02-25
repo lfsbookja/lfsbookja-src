@@ -40,7 +40,7 @@ entry.
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,13 +70,13 @@ entry.
 @x
         <para>Estimated disk space required: &dasher-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &dasher-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &dasher-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &dasher-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &dasher-time;</para>
+        <para>&Estimatedbuildtime;: &dasher-time;</para>
 @z
 
 @x
@@ -91,7 +91,7 @@ entry.
     <xref linkend="gtk2"/>, and
     <xref linkend="intltool"/></para>
 @y
-   <bridgehead renderas="sect4">&j-Required;</bridgehead>
+   <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="glib2"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="intltool"/></para>
@@ -104,7 +104,7 @@ entry.
     <xref linkend="libbonobo"/>, and
     <xref linkend="libgnomeui"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="at-spi"/>,
     <xref linkend="gnome-doc-utils"/>,
     <xref linkend="libbonobo"/>,
@@ -115,7 +115,7 @@ entry.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/dasher"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/dasher"/></para>
 @z
 
@@ -139,7 +139,7 @@ entry.
     <para>This package does not come with a test suite.</para>
 @y
 <para>
-&j-notTestSuite;
+&notTestSuite;
 </para>
 @z
 
@@ -155,7 +155,7 @@ entry.
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -191,7 +191,7 @@ GNOME サポートをビルドしないようにします。
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -199,9 +199,9 @@ GNOME サポートをビルドしないようにします。
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -219,7 +219,7 @@ GNOME サポートをビルドしないようにします。
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x dasher

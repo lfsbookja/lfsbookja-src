@@ -34,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -64,13 +64,13 @@
 @x
         <para>Estimated disk space required: &phonon-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &phonon-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &phonon-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &phonon-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &phonon-time;</para>
+        <para>&Estimatedbuildtime;: &phonon-time;</para>
 @z
 
 @x
@@ -86,7 +86,7 @@
     <xref linkend="glib2"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="qt4"/>,
     <xref linkend="glib2"/>
@@ -100,7 +100,7 @@
     <xref linkend="gstreamer"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="xine-lib"/>, 
     <xref linkend="gstreamer"/>
@@ -113,7 +113,7 @@
       <xref linkend='pulseaudio'/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend='pulseaudio'/>
     </para>
@@ -123,7 +123,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/phonon"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/phonon"/></para>
 @z
 
@@ -170,7 +170,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -178,9 +178,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

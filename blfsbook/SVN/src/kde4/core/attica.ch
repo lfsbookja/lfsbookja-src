@@ -32,7 +32,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -62,13 +62,13 @@
 @x
         <para>Estimated disk space required: &attica-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &attica-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &attica-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &attica-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &attica-time;</para>
+        <para>&Estimatedbuildtime;: &attica-time;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
     <xref linkend="cmake"/>, <xref linkend="qt4"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="cmake"/>, <xref linkend="qt4"/>
     </para>
@@ -93,7 +93,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/attica"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/attica"/></para>
 @z
 
@@ -131,7 +131,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -139,9 +139,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

@@ -24,7 +24,7 @@
 @x
     <title>Introduction to MySQL</title>
 @y
-    <title>MySQL の概要</title>
+    <title>&IntroductionTo1;MySQL&IntroductionTo2;</title>
 @z
 
 @x
@@ -33,8 +33,7 @@
     server daemon and many different client programs and libraries.</para>
 @y
     <para>
-    <application>MySQL</application>
-    は、広く活用されている高速な SQL データベースサーバーです。
+    <application>MySQL</application> は、広く活用されている高速な SQL データベースサーバーです。
     このパッケージはクライアント/サーバーの各種モジュールにより構成されており、サーバーデーモンや数多くのクライアントプログラム、ライブラリが含まれます。
     </para>
 @z
@@ -56,49 +55,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&mysql-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&mysql-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&mysql-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&mysql-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&mysql-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&mysql-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &mysql-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &mysql-md5sum;</para>
+        <para>&Download; MD5 sum: &mysql-md5sum;</para>
 @z
 
 @x
         <para>Download size: &mysql-size;</para>
 @y
-        <para>ダウンロードサイズ: &mysql-size;</para>
+        <para>&DownloadSize;: &mysql-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &mysql-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &mysql-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &mysql-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &mysql-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &mysql-time;</para>
+        <para>&Estimatedbuildtime;: &mysql-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 % @x
@@ -120,14 +119,14 @@
 @x
     <bridgehead renderas="sect3">MySQL Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">MySQL の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;MySQL&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="optional"><xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="optional"><xref linkend="openssl"/></para>
 @z
 
@@ -136,7 +135,7 @@
     <para role="optional"><xref linkend="tcpwrappers"/>, 
     <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="tcpwrappers"/>, 
     <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
 @z
@@ -145,14 +144,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/mysql"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/mysql"/></para>
 @z
 
 @x
     <title>Installation of MySQL</title>
 @y
-    <title>MySQL のインストール</title>
+    <title>&InstallationOf1;MySQL&InstallationOf2;</title>
 @z
 
 @x
@@ -232,7 +231,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -250,193 +249,17 @@
     'DataFiles' install segment does not honor the -DMYSQL_DATADIR or
     -DINSTALL_MYSQLDATADIR statements.</para>
 @z
-
-% @x
-%     <para><parameter>CFLAGS="-O3" CXX=gcc CXXFLAGS="-O3 -felide-constructors 
-%     -fno-exceptions -fno-rtti"</parameter>: These optimizations are recommended
-%     by the developers.</para>
-% @y
-%     <para>
-%     <parameter>CFLAGS="-O3" CXX=gcc CXXFLAGS="-O3 -felide-constructors 
-%     -fno-exceptions -fno-rtti"</parameter>:
-%     これらの最適化オプションは開発者が推奨しているものです。
-%     </para>
-% @z
-
-% @x
-%     <para><parameter>--libexecdir=/usr/sbin</parameter>: This switch installs
-%     the <command>mysqld</command> daemon and the
-%     <command>mysqlmanager</command> program in an appropriate location.</para>
-% @y
-% <para>
-% <parameter>--libexecdir=/usr/sbin</parameter>:
-% このパラメーターは <command>mysqld</command> デーモンと
-% <command>mysqlmanager</command> プログラムを適切なディレクトリにインストールします。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--localstatedir=/srv/mysql</parameter>: This switch
-%     forces <application>MySQL</application> to use
-%     <filename class='directory'>/srv/mysql</filename> for database files and
-%     other variable data.</para>
-% @y
-% <para>
-% <parameter>--localstatedir=/srv/mysql</parameter>:
-% このパラメーターは、<application>MySQL</application>
-% が利用するデータベースファイルとその他の設定データ類を
-% <filename class='directory'>/srv/mysql</filename>
-% に配置することを指示します。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--enable-thread-safe-client</parameter>: This
-%     switch compiles a thread-safe <application>MySQL</application> client
-%     library.</para>
-% @y
-% <para>
-% <parameter>--enable-thread-safe-client</parameter>:
-% このパラメーターは、スレッドセーフな
-% <application>MySQL</application> クライアントライブラリをビルドします。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--enable-assembler</parameter>: This switch allows using
-%     assembler versions of some string functions.</para>
-% @y
-% <para>
-% <parameter>--enable-assembler</parameter>:
-% このパラメーターは、文字操作関数においてアセンブラー版の関数を利用することを指示します。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--enable-local-infile</parameter>: This switch enables
-%     the <quote>LOAD DATA INFILE</quote> SQL statement.</para>
-% @y
-% <para>
-% <parameter>--enable-local-infile</parameter>:
-% このパラメーターは SQL ステートメント <quote>LOAD DATA INFILE</quote> を有効にします。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--with-unix-socket-path=/var/run/mysql</parameter>:
-%     This switch puts the unix-domain socket into the
-%     <filename class="directory">/var/run/mysql</filename> directory instead of
-%     the default <filename class="directory">/tmp</filename>.</para>
-% @y
-% <para>
-% <parameter>--with-unix-socket-path=/var/run/mysql</parameter>:
-% このパラメーターは、unix-domain ソケットを、デフォルトの
-% <filename class="directory">/tmp</filename> ディレクトリではなく
-% <filename class="directory">/var/run/mysql</filename>
-% ディレクトリに配置することを指示します。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--without-readline</parameter>: This switch forces the
-%     build to use the system copy of <application>readline</application> instead
-%     of the bundled copy.</para>
-% @y
-% <para>
-% <parameter>--without-readline</parameter>:
-% このパラメーターは、バンドルされている <application>readline</application>
-% ではなく、システムにインストール済の <application>readline</application>
-% を利用することを指示します。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--with-extra-charsets=all</parameter>: This switch enables
-%     international character sets within the suite.</para>
-% @y
-% <para>
-% <parameter>--with-extra-charsets=all</parameter>:
-% このパラメーターは、国際化対応とすることを指示します。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--with-plugins=innobase,myisam</parameter>: This switch enables
-%     two useful table types.  Check <command>./configure --help</command> for
-%     other table types.</para>
-% @y
-% <para>
-% <parameter>--with-plugins=innobase,myisam</parameter>:
-% このパラメーターは、二つのテーブルタイプを有効にします。
-% 他のテーブルタイプについては <command>./configure --help</command> により確認してください。
-% </para>
-% @z
-
-% @x
-%     <para><parameter>--with-ssl=/usr</parameter>: This switch enables encrypted
-%     communication between client and server using OpenSSL.</para>
-% @y
-% <para>
-% <parameter>--with-ssl=/usr</parameter>:
-% このパラメーターは、サーバー/クライアント間の通信を、OpenSSL により暗号化することを指示します。
-% </para>
-% @z
-
-% @x
-%     <para><command>make  benchdir_root=... install</command>: This installs the
-%     benchmark and test suites in a non-system location.</para>
-% @y
-% <para>
-% <command>make  benchdir_root=... install</command>:
-% このコマンドは、ベンチマークテストとテストスイートを、システムディレクトリ外にて実行します。
-% </para>
-% @z
-
-% @x
-%     <para><command>ln -v -sf mysql/libmysqlclient{,_r}.so* .</command>: This
-%     command makes the <application>MySQL</application> shared libraries
-%     available to other packages at run-time.</para>
-% @y
-% <para>
-% <command>ln -v -sf mysql/libmysqlclient{,_r}.so* .</command>:
-% このコマンドは <application>MySQL</application>
-% の共有ライブラリを、他のパッケージの実行時における利用を可能とします。
-% </para>
-% @z
-
-% @x
-%     <para><option>--with-libwrap</option>: This switch adds tcpwrappers
-%     support to <application>MySQL</application>.</para>
-% @y
-% <para>
-% <option>--with-libwrap</option>:
-% このパラメーターは、<application>MySQL</application> に
-% tcpwrappers サポートを追加します。
-% </para>
-% @z
-
-% @x
-%     <para><command>pushd ... popd</command>: This set of commands rebuilds the
-%     <filename>/usr/share/info/dir</filename> file as the installation failed
-%     to do so.</para>
-% @y
-% <para>
-% <command>pushd ... popd</command>:
-% インストール処理では <filename>/usr/share/info/dir</filename>
-% の生成に失敗するため、この一連のコマンドにより再生成します。
-% </para>
-% @z
 
 @x
     <title>Configuring MySQL</title>
 @y
-    <title>MySQL の設定</title>
+    <title>&Configuring1;MySQL&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -450,7 +273,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -459,13 +282,11 @@
       use. Create <filename>/etc/my.cnf</filename> using the following command
       as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-利用可能なデフォルトの設定ファイルが
-<filename class="directory">/usr/share/mysql</filename>
-にあります。<systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行して
-<filename>/etc/my.cnf</filename> を生成します。
-</para>
+      <para>
+      利用可能なデフォルトの設定ファイルが <filename
+      class="directory">/usr/share/mysql</filename> にあります。
+      <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <filename>/etc/my.cnf</filename> を生成します。
+      </para>
 @z
 
 @x
@@ -473,11 +294,11 @@
       unprivileged user and group (perform as the <systemitem
       class="username">root</systemitem> user):</para>
 @y
-<para>
-データベースをインストールします。
-そして一般ユーザーの所有へと変更します。
-(変更は <systemitem class="username">root</systemitem> ユーザーになって行います。)
-</para>
+      <para>
+      データベースをインストールします。
+      そして一般ユーザーの所有へと変更します。
+      (変更は <systemitem class="username">root</systemitem> ユーザーになって行います。)
+      </para>
 @z
 
 @x
@@ -486,11 +307,10 @@
       the server using the following commands as the <systemitem
       class="username">root</systemitem> user:</para>
 @y
-<para>
-さらに設定を進めるには <application>MySQL</application> サーバーが起動していることが必要です。
-そこで <systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行してサーバーを起動します。
-</para>
+      <para>
+      さらに設定を進めるには <application>MySQL</application> サーバーが起動していることが必要です。
+      そこで <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してサーバーを起動します。
+      </para>
 @z
 
 @x
@@ -499,13 +319,11 @@
       class="username">root</systemitem> user to set one. Replace
       <replaceable>&lt;new-password&gt;</replaceable> with your own.</para>
 @y
-<para>
-デフォルトのインストール手順では、管理者のパスワードが設定されません。
-そこで <systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行してパスワードを設定します。
-<replaceable>&lt;new-password&gt;</replaceable>
-の部分は適切なものに置き換えてください。
-</para>
+      <para>
+      デフォルトのインストール手順では、管理者のパスワードが設定されません。
+      そこで <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してパスワードを設定します。
+      <replaceable>&lt;new-password&gt;</replaceable> の部分は適切なものに置き換えてください。
+      </para>
 @z
 
 @x
@@ -513,17 +331,16 @@
       down using the following command as the <systemitem
       class="username">root</systemitem> user:</para>
 @y
-<para>
-サーバーの設定は以上です。
-<systemitem class="username">root</systemitem>
-ユーザーになり、以下のコマンドを実行してサーバーを停止します。
-</para>
+      <para>
+      サーバーの設定は以上です。
+      <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してサーバーを停止します。
+      </para>
 @z
 
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -532,18 +349,16 @@
       the <systemitem class="username">root</systemitem> user to start the
       <application>MySQL</application> server during system boot-up.</para>
 @y
-<para>
-<xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト
-<filename>/etc/rc.d/init.d/mysql</filename> をインストールします。
-これにより、システム起動時に <application>MySQL</application>
-サーバーを自動起動します。
-</para>
+      <para>
+      <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/mysql</filename> をインストールします。
+      これにより、システム起動時に <application>MySQL</application> サーバーを自動起動します。
+      </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -551,9 +366,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -597,7 +412,7 @@
 @x
     <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+    <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x
@@ -606,12 +421,11 @@
     documentation or the on-line reference manual at <ulink
     url="http://dev.mysql.com/doc/refman/5.1/en/index.html"/>.</para>
 @y
-<para>
-プログラムやライブラリについてすべて説明しようとすると、かなりのページ数になります。
-詳細は <filename>mysql.info</filename> を参照するか、あるいは
-<ulink url="http://dev.mysql.com/doc/refman/5.1/en/index.html"/>
-にあるオンラインリファレンスマニュアルを参照してください。
-</para>
+    <para>
+    プログラムやライブラリについてすべて説明しようとすると、かなりのページ数になります。
+    詳細は <filename>mysql.info</filename> を参照するか、あるいは <ulink
+    url="http://dev.mysql.com/doc/refman/5.1/en/index.html"/> にあるオンラインリファレンスマニュアルを参照してください。
+    </para>
 @z
 
 @x
@@ -619,9 +433,7 @@
     for some of the <application>MySQL</application> support programs to
     function properly.</para>
 @y
-<para>
-<application>MySQL</application> サポートプログラムの中には
-<application>Perl</application> DBI モジュールを利用しているものがあるため、適切に機能させるためには
-<application>Perl</application> DBI モジュールをインストールしておく必要があります。
-</para>
+    <para>
+    <application>MySQL</application> サポートプログラムの中には <application>Perl</application> DBI モジュールを利用しているものがあるため、適切に機能させるためには <application>Perl</application> DBI モジュールをインストールしておく必要があります。
+    </para>
 @z

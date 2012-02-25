@@ -31,7 +31,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -61,13 +61,13 @@
 @x
         <para>Estimated disk space required: &phonon-backend-gstreamer-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &phonon-backend-gstreamer-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &phonon-backend-gstreamer-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &phonon-backend-gstreamer-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &phonon-backend-gstreamer-time;</para>
+        <para>&Estimatedbuildtime;: &phonon-backend-gstreamer-time;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
     <xref linkend="gstreamer"/> 
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="qt4"/>,
     <xref linkend="phonon"/>,
@@ -96,7 +96,7 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/phonon-backend-gstreamer"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/phonon-backend-gstreamer"/></para>
 @z
 
@@ -134,7 +134,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -142,9 +142,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
