@@ -569,8 +569,9 @@ am__EXEEXT_TRUE
 LTLIBOBJS
 LIBOBJS
 IPAFONTDIR
-SVNVER
+FOP
 LYNX
+SVNVER
 TIDY
 XMLLINT
 XSLTPROC
@@ -591,9 +592,12 @@ CPPFLAGS
 LDFLAGS
 CFLAGS
 CC
+IPA
 abs_bookdir
 bookdir
 CTIE
+TXT
+PDF
 MAINT
 MAINTAINER_MODE_FALSE
 MAINTAINER_MODE_TRUE
@@ -2316,6 +2320,12 @@ fi
 
 
 
+PDF=
+
+
+
+TXT=
+
 
 
 CTIE=ctie/ctie$EXEEXT
@@ -2553,6 +2563,7 @@ abs_bookdir=`(cd $bookdir && pwd)`
 
 
 
+IPA=
 
 
 
@@ -3776,6 +3787,23 @@ if test "$TIDY" = no; then
  as_fn_error $? "tidy not found in $PATH" "$LINENO" 5
 fi;
 
+TARGETVER=svn-20120224
+
+SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5
+$as_echo_n "checking for the original XML version... " >&6; }
+if test ! "$SVNVER" = "$TARGETVER"; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
+$as_echo "$SVNVER" >&6; }
+  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Version of the original XML not $TARGETVER" >&5
+$as_echo "$as_me: WARNING: Version of the original XML not $TARGETVER" >&2;}
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
+$as_echo "$SVNVER" >&6; }
+fi
+
+
+
 # Extract the first word of "lynx$EXEEXT", so it can be a program name with args.
 set dummy lynx$EXEEXT; ac_word=$2
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
@@ -3818,26 +3846,57 @@ fi
 
 
 if test "$LYNX" = no; then
-  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: lynx not found in $PATH" >&5
-$as_echo "$as_me: WARNING: lynx not found in $PATH" >&2;}
+  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Text version cannot be built." >&5
+$as_echo "$as_me: WARNING: Text version cannot be built." >&2;}
+  TXT="#"
 fi;
 
-TARGETVER=svn-20120223
-
-SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5
-$as_echo_n "checking for the original XML version... " >&6; }
-if test ! "$SVNVER" = "$TARGETVER"; then
-  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
-$as_echo "$SVNVER" >&6; }
-  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Version of the original XML not $TARGETVER" >&5
-$as_echo "$as_me: WARNING: Version of the original XML not $TARGETVER" >&2;}
+# Extract the first word of "fop$EXEEXT", so it can be a program name with args.
+set dummy fop$EXEEXT; ac_word=$2
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+$as_echo_n "checking for $ac_word... " >&6; }
+if ${ac_cv_path_FOP+:} false; then :
+  $as_echo_n "(cached) " >&6
 else
-  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
-$as_echo "$SVNVER" >&6; }
+  case $FOP in
+  [\\/]* | ?:[\\/]*)
+  ac_cv_path_FOP="$FOP" # Let the user override the test with a path.
+  ;;
+  *)
+  as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+for as_dir in $PATH
+do
+  IFS=$as_save_IFS
+  test -z "$as_dir" && as_dir=.
+    for ac_exec_ext in '' $ac_executable_extensions; do
+  if { test -f "$as_dir/$ac_word$ac_exec_ext" && $as_test_x "$as_dir/$ac_word$ac_exec_ext"; }; then
+    ac_cv_path_FOP="$as_dir/$ac_word$ac_exec_ext"
+    $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
+    break 2
+  fi
+done
+  done
+IFS=$as_save_IFS
+
+  test -z "$ac_cv_path_FOP" && ac_cv_path_FOP="no"
+  ;;
+esac
+fi
+FOP=$ac_cv_path_FOP
+if test -n "$FOP"; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $FOP" >&5
+$as_echo "$FOP" >&6; }
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
 fi
 
 
+if test "$FOP" = no; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built." >&5
+$as_echo "$as_me: WARNING: PDF version cannot be built." >&2;}
+  PDF="#"
+fi;
 
   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for directory for IPA font files" >&5
 $as_echo_n "checking for directory for IPA font files... " >&6; }
@@ -3881,6 +3940,7 @@ fi
 $as_echo "not found" >&6; }
     { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Building PDF version unavailable" >&5
 $as_echo "$as_me: WARNING: Building PDF version unavailable" >&2;}
+    IPA="#"
   else
 
     IPAFONTFILE="dummy"
@@ -3894,8 +3954,9 @@ $as_echo "$as_me: WARNING: Building PDF version unavailable" >&2;}
     if test "x${IPAFONTFILE}" = "x"; then
       { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }
-      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Building PDF version unavailable" >&5
-$as_echo "$as_me: WARNING: Building PDF version unavailable" >&2;}
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built." >&5
+$as_echo "$as_me: WARNING: PDF version cannot be built." >&2;}
+      IPA="#"
     else
 
       { $as_echo "$as_me:${as_lineno-$LINENO}: result: found" >&5
@@ -3903,14 +3964,6 @@ $as_echo "found" >&6; }
     fi
   fi
 
-
-# Checks for libraries.
-
-# Checks for header files.
-
-# Checks for typedefs, structures, and compiler characteristics.
-
-# Checks for library functions.
 
 ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/userconfig.xml src/appendices/Makefile src/bootscripts/Makefile src/bootscripts/lfs/Makefile src/bootscripts/lfs/init.d/Makefile src/bootscripts/lfs/lib/Makefile src/bootscripts/lfs/lib/services/Makefile src/bootscripts/lfs/sbin/Makefile src/bootscripts/lfs/sysconfig/Makefile src/lsb-bootscripts/Makefile src/lsb-bootscripts/etc/Makefile src/lsb-bootscripts/etc/default/Makefile src/lsb-bootscripts/etc/init.d/Makefile src/lsb-bootscripts/lib/Makefile src/lsb-bootscripts/lib/lsb/Makefile src/lsb-bootscripts/lib/network-services/Makefile src/lsb-bootscripts/sbin/Makefile src/chapter01/Makefile src/chapter02/Makefile src/chapter03/Makefile src/chapter04/Makefile src/chapter05/Makefile src/chapter06/Makefile src/chapter07/Makefile src/chapter08/Makefile src/chapter09/Makefile src/prologue/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/udev-config/Makefile src/udev-config/contrib/Makefile src/udev-config/contrib/debian/Makefile"
 

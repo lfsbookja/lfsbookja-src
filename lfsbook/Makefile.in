@@ -125,11 +125,13 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EXEEXT = @EXEEXT@
+FOP = @FOP@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+IPA = @IPA@
 IPAFONTDIR = @IPAFONTDIR@
 LDFLAGS = @LDFLAGS@
 LIBOBJS = @LIBOBJS@
@@ -148,11 +150,13 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+PDF = @PDF@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
 SVNVER = @SVNVER@
 TIDY = @TIDY@
+TXT = @TXT@
 VERSION = @VERSION@
 XMLLINT = @XMLLINT@
 XSLTPROC = @XSLTPROC@
@@ -688,11 +692,11 @@ uninstall-am:
 	pdf-am ps ps-am tags tags-recursive uninstall uninstall-am
 
 
-@MAINT@nochunks:
-@MAINT@	cd src && make nochunks
+nochunks:
+	cd src && make nochunks
 
-@MAINT@txt:
-@MAINT@	cd src && make txt
+@TXT@txt:
+@TXT@	cd src && make txt
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

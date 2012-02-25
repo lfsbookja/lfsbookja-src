@@ -7,7 +7,7 @@
 #
 # $Author$
 # $Rev$
-# $Date$
+# $Date::                           $
 #
 
 m4_include([version.ac])[] dnl define lfs_version
@@ -40,7 +40,6 @@ fi
 
 AC_PROG_XMLLINT
 AC_PROG_TIDY
-AC_PROG_LYNX
 
 TARGETVER=lfs_version()
 
@@ -54,15 +53,9 @@ else
 fi
 AC_SUBST(SVNVER)
 
+AC_PROG_LYNX
+AC_PROG_FOP
 AC_CHECK_IPAFONTDIR
-
-# Checks for libraries.
-
-# Checks for header files.
-
-# Checks for typedefs, structures, and compiler characteristics.
-
-# Checks for library functions.
 
 AC_CONFIG_FILES([Makefile
 		 ctie/Makefile

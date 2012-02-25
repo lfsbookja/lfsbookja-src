@@ -108,11 +108,13 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EXEEXT = @EXEEXT@
+FOP = @FOP@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+IPA = @IPA@
 IPAFONTDIR = @IPAFONTDIR@
 LDFLAGS = @LDFLAGS@
 LIBOBJS = @LIBOBJS@
@@ -131,11 +133,13 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+PDF = @PDF@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
 SVNVER = @SVNVER@
 TIDY = @TIDY@
+TXT = @TXT@
 VERSION = @VERSION@
 XMLLINT = @XMLLINT@
 XSLTPROC = @XSLTPROC@
@@ -611,41 +615,41 @@ lfs: maketar validxml profile-html wget-list
 	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
 	done;
 
-@MAINT@nochunks: maketar validxml profile-html wget-list
-@MAINT@	@echo "Generating non chunked XHTML file..."
-@MAINT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
-@MAINT@	  --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
-@MAINT@	  stylesheets/lfs-nochunks.xsl $(RENDERTMP)/lfs-html.xml
+@TXT@nochunks: maketar validxml profile-html wget-list
+@TXT@	@echo "Generating non chunked XHTML file..."
+@TXT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
+@TXT@	  --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
+@TXT@	  stylesheets/lfs-nochunks.xsl $(RENDERTMP)/lfs-html.xml
 
-@MAINT@	@echo "Running Tidy..."
-@MAINT@	$(TIDY) -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || true
-@MAINT@	@echo "Running obfuscate.sh..."
-@MAINT@	${SHELL} $(BOOKdir)/obfuscate.sh $(BASEDIR)/$(NOCHUNKS_OUTPUT)
-@MAINT@	sed -i -e "s@text/html@application/xhtml+xml@g"  \
-@MAINT@	  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
+@TXT@	@echo "Running Tidy..."
+@TXT@	$(TIDY) -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || true
+@TXT@	@echo "Running obfuscate.sh..."
+@TXT@	${SHELL} $(BOOKdir)/obfuscate.sh $(BASEDIR)/$(NOCHUNKS_OUTPUT)
+@TXT@	sed -i -e "s@text/html@application/xhtml+xml@g"  \
+@TXT@	  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
 
-@MAINT@txt: nochunks
-@MAINT@	$(LYNX) -width=44 -dump ../lfsbookja-svn.html > ../lfsbookja-svn.txt
+@TXT@txt: nochunks
+@TXT@	$(LYNX) -width=44 -dump ../lfsbookja-svn.html > ../lfsbookja-svn.txt
 
-@MAINT@pdf: validxml userconfig.xml
-@MAINT@	@echo "Generating profiled XML for PDF..."
-@MAINT@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
-@MAINT@	--output $(RENDERTMP)/lfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
-@MAINT@	$(RENDERTMP)/lfs-full.xml
-@MAINT@
-@MAINT@	@echo "Generating FO file..."
-@MAINT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
-@MAINT@	--output $(RENDERTMP)/lfs-pdf.fo stylesheets/lfs-pdf.xsl \
-@MAINT@	$(RENDERTMP)/lfs-pdf.xml
-@MAINT@	sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/lfs-pdf.fo
-@MAINT@	sed -i -e 's|\.\./wget-list|wget-list|g' -e 's|\.\./md5sums|md5sums|g' $(RENDERTMP)/lfs-pdf.fo
-@MAINT@	bash pdf-fixups.sh $(RENDERTMP)/lfs-pdf.fo
-@MAINT@
-@MAINT@	@echo "Generating PDF file..."
-@MAINT@	cp -R $(BASEDIR)/images .;
-@MAINT@	fop -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
+@PDF@@IPA@pdf: validxml userconfig.xml
+@PDF@@IPA@	@echo "Generating profiled XML for PDF..."
+@PDF@@IPA@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
+@PDF@@IPA@	--output $(RENDERTMP)/lfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
+@PDF@@IPA@	$(RENDERTMP)/lfs-full.xml
+@PDF@@IPA@
+@PDF@@IPA@	@echo "Generating FO file..."
+@PDF@@IPA@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
+@PDF@@IPA@	--output $(RENDERTMP)/lfs-pdf.fo stylesheets/lfs-pdf.xsl \
+@PDF@@IPA@	$(RENDERTMP)/lfs-pdf.xml
+@PDF@@IPA@	sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/lfs-pdf.fo
+@PDF@@IPA@	sed -i -e 's|\.\./wget-list|wget-list|g' -e 's|\.\./md5sums|md5sums|g' $(RENDERTMP)/lfs-pdf.fo
+@PDF@@IPA@	bash pdf-fixups.sh $(RENDERTMP)/lfs-pdf.fo
+@PDF@@IPA@
+@PDF@@IPA@	@echo "Generating PDF file..."
+@PDF@@IPA@	cp -R $(BASEDIR)/images .;
+@PDF@@IPA@	$(FOP) -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
 
-@MAINT@userconfig.xml: $(srcdir)/userconfig.xml.in
+@PDF@@IPA@userconfig.xml: $(srcdir)/userconfig.xml.in
 
 tmpdir: $(ALLXML)
 	@echo "Creating and cleaning $(RENDERTMP)"

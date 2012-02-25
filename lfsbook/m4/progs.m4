@@ -22,13 +22,27 @@ if test "$TIDY" = no; then
 fi;dnl
 ])
 
+PDF=
+AC_DEFUN([AC_PROG_FOP],[
+AC_REQUIRE([AC_EXEEXT])dnl
+AC_PATH_PROG(FOP, fop$EXEEXT, no)
+if test "$FOP" = no; then
+  AC_MSG_WARN([PDF version cannot be built.])
+  PDF="#"
+fi;dnl
+])
+AC_SUBST(PDF)
+
+TXT=
 AC_DEFUN([AC_PROG_LYNX],[
 AC_REQUIRE([AC_EXEEXT])dnl
 AC_PATH_PROG(LYNX, lynx$EXEEXT, no)
 if test "$LYNX" = no; then
-  AC_MSG_WARN([lynx not found in $PATH])
+  AC_MSG_WARN([Text version cannot be built.])
+  TXT="#"
 fi;dnl
 ])
+AC_SUBST(TXT)
 
 CTIE=ctie/ctie$EXEEXT
 AC_SUBST(CTIE)

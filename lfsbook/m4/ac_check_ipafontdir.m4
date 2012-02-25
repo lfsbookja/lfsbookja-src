@@ -1,3 +1,4 @@
+IPA=
 AC_DEFUN([AC_CHECK_IPAFONTDIR],[
   AC_MSG_CHECKING([for directory for IPA font files])
   AC_ARG_WITH(ipafontdir,
@@ -36,6 +37,7 @@ AC_DEFUN([AC_CHECK_IPAFONTDIR],[
   if test "x${IPAFONTDIR}" = "x"; then
     AC_MSG_RESULT([not found])
     AC_MSG_WARN([Building PDF version unavailable])
+    IPA="#"
   else
 
     IPAFONTFILE="dummy"
@@ -48,11 +50,12 @@ AC_DEFUN([AC_CHECK_IPAFONTDIR],[
 
     if test "x${IPAFONTFILE}" = "x"; then
       AC_MSG_RESULT([not found])
-      AC_MSG_WARN([Building PDF version unavailable])
+      AC_MSG_WARN([PDF version cannot be built.])
+      IPA="#"
     else
       AC_SUBST(IPAFONTDIR)
       AC_MSG_RESULT([found])
     fi
   fi
 ])
-
+AC_SUBST(IPA)
