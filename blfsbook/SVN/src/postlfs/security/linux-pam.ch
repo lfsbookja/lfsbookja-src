@@ -22,7 +22,7 @@
 @x
     <title>Introduction to Linux-PAM</title>
 @y
-    <title>Linux-PAM の概要</title>
+    <title>&IntroductionTo1;Linux-PAM&IntroductionTo2;</title>
 @z
 
 @x
@@ -94,25 +94,25 @@
 @x
         <para>Download (HTTP): <ulink url="&linux-pam-docs-download;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&linux-pam-docs-download;"/></para>
+        <para>&Download; (HTTP): <ulink url="&linux-pam-docs-download;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &linux-pam-docs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &linux-pam-docs-md5sum;</para>
+        <para>&Download; MD5 sum: &linux-pam-docs-md5sum;</para>
 @z
 
 @x
         <para>Download size &linux-pam-docs-size;</para>
 @y
-        <para>ダウンロードサイズ &linux-pam-docs-size;</para>
+        <para>&DownloadSize; &linux-pam-docs-size;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Linux-PAM Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Linux-PAM の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Linux-PAM&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -157,7 +157,7 @@
 @x
     <title>Installation of Linux-PAM</title>
 @y
-    <title>Linux-PAM のインストール</title>
+    <title>&InstallationOf1;Linux-PAM&InstallationOf2;</title>
 @z
 
 @x
@@ -258,12 +258,12 @@
     <xref linkend="libtirpc"/> you can remove the
     <parameter>--disable-nis</parameter> option.</para>
 @y
-    <para><parameter>--disable-nis</parameter>: This option disables building
-    Network Information Service/Yellow Pages support in pam_unix and pam_access.
-    The RPC implementation in glibc (on which NIS/YP depends) is deprecated. However, the same functionality is provided by
-    <application>Libtirpc</application> so if you've installed
-    <xref linkend="libtirpc"/> you can remove the
-    <parameter>--disable-nis</parameter> option.</para>
+    <para><parameter>--disable-nis</parameter>:
+    このオプションは pam_unix と pam_access において、NIS/YP (Network Information Service/Yellow Pages) サポートを無効にします。
+    glibc においての (NIS/YP が依存している) RPC 実装は古いものになっているためです。
+    ただし同等の機能は <application>Libtirpc</application> によって提供されています。
+    したがって <xref linkend="libtirpc"/> をインストールしている場合は、この <parameter>--disable-nis</parameter> オプションを除いてください。
+    </para>
 @z
 
 @x
