@@ -82,6 +82,8 @@
 <!ENTITY LessThan2    " 以下">
 <!ENTITY None         "なし">
 <!ENTITY Module       "モジュール">
+<!ENTITY Utilities    "ユーティリティ">
+<!ENTITY BootScript   "ブートスクリプト">
 @z
 
 @x

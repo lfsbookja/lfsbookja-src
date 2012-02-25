@@ -5,8 +5,8 @@
 %
 % $Author$
 % $Rev$
-% $Date$
-%
+% $Date::                           $
+s%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -16,65 +16,64 @@
 @x
     <title>Introduction to Soprano</title>
 @y
-    <title>Soprano の概要</title>
+    <title>&IntroductionTo1;Soprano&IntroductionTo2;</title>
 @z
 
 @x
     <para><application>Soprano</application> Software library that provides 
     an object oriented C++/Qt4 framework for RDF data.</para>
 @y
-<para>
-<application>Soprano</application> Software library that provides 
-an object oriented C++/Qt4 framework for RDF data.
-</para>
+    <para>
+    <application>Soprano</application> ソフトウェアライブラリは、RDF データに対してのオブジェクト指向 C++/Qt4 フレームワークを提供します。
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&soprano-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&soprano-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&soprano-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&soprano-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&soprano-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&soprano-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &soprano-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &soprano-md5sum;</para>
+        <para>&Download; MD5 sum: &soprano-md5sum;</para>
 @z
 
 @x
         <para>Download size: &soprano-size;</para>
 @y
-        <para>ダウンロードサイズ: &soprano-size;</para>
+        <para>&DownloadSize;: &soprano-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &soprano-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &soprano-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &soprano-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &soprano-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &soprano-time;</para>
+        <para>&Estimatedbuildtime;: &soprano-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Soprano Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Soprano の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Soprano&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -87,7 +86,7 @@ an object oriented C++/Qt4 framework for RDF data.
     <xref linkend="redland"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="qt4"/>,
     <xref linkend="cmake"/>,
@@ -104,7 +103,7 @@ an object oriented C++/Qt4 framework for RDF data.
     <xref linkend="jdk"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="clucene"/>,
     <xref linkend="jdk"/>
@@ -115,70 +114,69 @@ an object oriented C++/Qt4 framework for RDF data.
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/soprano"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/soprano"/></para>
 @z
 
 @x
     <title>Installation of Soprano</title>
 @y
-    <title>Soprano のインストール</title>
+    <title>&InstallationOf1;Soprano&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>soprano</application> by running the following
     commands:</para>
 @y
-<para>
-
-Install <application>soprano</application> by running the following
-commands:
-</para>
+    <para>
+    以下のコマンドを実行して <application>soprano</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>Prepare the package for compilation:</para>
 @y
-    <para>Prepare the package for compilation:</para>
+    <para>パッケージをコンパイルするための準備をします。</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Configuration of Soprano</title>
 @y
-    <title>Soprano の設定</title>
+    <title>&Configuring1;Soprano&Configuring2;</title>
 @z
 
 @x
     <para>Create a directory where <application>soprano</application> places some
     runtime data:</para>
 @y
-<para>
-
-Create a directory where <application>soprano</application> places some
-runtime data:
-</para>
+    <para>
+    <application>soprano</application> が実行時に利用するファイルを配置するディレクトリを生成します。
+    </para>
 @z
 
 @x
     <para>The <application>soprano</application>d accepts some parameter. To not
     hardcode them in the startscript, create a configuratuion file:</para>
 @y
-<para>
-The <application>soprano</application>d accepts some parameter. To not
-hardcode them in the startscript, create a configuratuion file:
-</para>
+    <para>
+    <application>soprano</application>d にはパラメーターがいくつかあります。
+    スタートスクリプトにハードコーディングはされていません。
+    その設定を為すための設定ファイルを生成します。
+    </para>
 @z
 
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -187,19 +185,16 @@ hardcode them in the startscript, create a configuratuion file:
       <filename>/etc/rc.d/init.d/soprano</filename> init script included
       in the <xref linkend="bootscripts"/> package.</para>
 @y
-<para>
-
-In order to get <application>Soprano</application> started
-automatically when the system is booted, install the
-<filename>/etc/rc.d/init.d/soprano</filename> init script included
-in the <xref linkend="bootscripts"/> package.
-</para>
+      <para>
+      システム起動時に <application>Soprano</application> を自動起動するには、<xref
+      linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/soprano</filename> をインストールします。
+      </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -207,9 +202,9 @@ in the <xref linkend="bootscripts"/> package.
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
