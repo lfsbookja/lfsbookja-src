@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to nettle</title>
 @y
-    <title>nettle の概要</title>
+    <title>&IntroductionTo1;nettle&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,57 +32,57 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&nettle-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&nettle-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&nettle-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&nettle-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&nettle-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&nettle-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &nettle-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &nettle-md5sum;</para>
+        <para>&Download; MD5 sum: &nettle-md5sum;</para>
 @z
 
 @x
         <para>Download size: &nettle-size;</para>
 @y
-        <para>ダウンロードサイズ: &nettle-size;</para>
+        <para>&DownloadSize;: &nettle-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &nettle-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &nettle-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &nettle-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &nettle-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &nettle-time;</para>
+        <para>&Estimatedbuildtime;: &nettle-time;</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/nettle"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/nettle"/></para>
 @z
 
 @x
     <title>Installation of nettle</title>
 @y
-    <title>nettle のインストール</title>
+    <title>&InstallationOf1;nettle&InstallationOf2;</title>
 @z
 
 @x
@@ -111,9 +111,33 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--enable-shared</option>: This switch will ensure
+    that shared, as well as static, libraries will be built. If you
+    have linked the packages which use these libraries
+    (<application>gnutls</application> and
+    <application>glib-networking</application>, perhaps others) to the
+    shared libraries, and ever have to rebuild
+    <application>libnettle</application> to fix a vulnerability, you
+    will not have to recompile those other applications.</para>
+@y
+    <para>
+    <option>--enable-shared</option>:
+    このスイッチは、スタティックライブラリとともに、共有ライブラリもビルドするようにします。
+    本ライブラリを利用する他のパッケージ (<application>gnutls</application>
+    や <application>glib-networking</application> など) を共有ライブラリにリンクしていて、セキュリティフィックスなどの理由から <application>libnettle</application> を再ビルドしたとしても、それらの他のパッケージは再ビルドするべきではありません。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -121,9 +145,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -140,7 +164,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x nettle-hash
