@@ -50,7 +50,7 @@
 @y
       <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
       </listitem>
 @z
@@ -64,24 +64,10 @@
 @y
       <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
         <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
       </listitem>
 @z
-
-% @x
-%       <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
-%         <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Coreutils Testsuite Fixes Patch - <token>&coreutils-tests-patch-size;</token></term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&coreutils-tests-patch;"/></para>
-%         <para>MD5 sum: <literal>&coreutils-tests-patch-md5;</literal></para>
-%       </listitem>
-% @z
 
 @x
       <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>
@@ -92,24 +78,10 @@
 @y
       <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
         <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
       </listitem>
 @z
-
-% @x
-%       <term>Coreutils Sparse-Fiemap Test Fix Patch - <token>&coreutils-sparse_fiemap-patch-size;</token>:</term>
-%       <listitem>
-%         <para>Download: <ulink url="&patches-root;&coreutils-sparse_fiemap-patch;"/></para>
-%         <para>MD5 sum: <literal>&coreutils-sparse_fiemap-patch-md5;</literal></para>
-%       </listitem>
-% @y
-%       <term>Coreutils Sparse-Fiemap Test Fix Patch - <token>&coreutils-sparse_fiemap-patch-size;</token>:</term>
-%       <listitem>
-%         <para>ダウンロード: <ulink url="&patches-root;&coreutils-sparse_fiemap-patch;"/></para>
-%         <para>MD5 sum: <literal>&coreutils-sparse_fiemap-patch-md5;</literal></para>
-%       </listitem>
-% @z
 
 @x
       <term>Coreutils Uname Patch - <token>&coreutils-uname-patch-size;</token>:</term>
@@ -120,7 +92,7 @@
 @y
       <term>Coreutils Uname Patch - <token>&coreutils-uname-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&coreutils-uname-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&coreutils-uname-patch;"/></para>
         <para>MD5 sum: <literal>&coreutils-uname-patch-md5;</literal></para>
       </listitem>
 @z
@@ -134,7 +106,7 @@
 @y
       <term>Flex GCC-4.4.x Patch - <token>&flex-gcc-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&flex-gcc-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&flex-gcc-patch;"/></para>
         <para>MD5 sum: <literal>&flex-gcc-patch-md5;</literal></para>
       </listitem>
 @z
@@ -148,7 +120,7 @@
 @y
       <term>GCC Cross Compile Patch - <token>&gcc-crosscompile-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&gcc-crosscompile-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&gcc-crosscompile-patch;"/></para>
         <para>MD5 sum: <literal>&gcc-crosscompile-patch-md5;</literal></para>
       </listitem>
 @z
@@ -162,7 +134,7 @@
 @y
       <term>GCC Startfiles Fix Patch - <token>&gcc-startfiles-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&gcc-startfiles-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&gcc-startfiles-patch;"/></para>
         <para>MD5 sum: <literal>&gcc-startfiles-patch-md5;</literal></para>
       </listitem>
 @z
@@ -176,8 +148,22 @@
 @y
       <term>Glibc Bug Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Glibc Bug Sort Relocatable Objects Patch - <token>&glibc-sort-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-sort-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-sort-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc Bug Sort Relocatable Objects Patch - <token>&glibc-sort-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&glibc-sort-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-sort-patch-md5;</literal></para>
       </listitem>
 @z
 
@@ -190,7 +176,7 @@
 @y
       <term>Glibc GCC Build Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
         <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
       </listitem>
 @z
@@ -204,7 +190,7 @@
 @y
       <term>Glibc GCC CPUID Patch - <token>&glibc-cpuid-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&glibc-cpuid-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&glibc-cpuid-patch;"/></para>
         <para>MD5 sum: <literal>&glibc-cpuid-patch-md5;</literal></para>
       </listitem>
 @z
@@ -218,7 +204,7 @@
 @y
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
         <para>MD5 sum: <literal>&grub-geometry-patch-md5;</literal></para>
       </listitem>
 @z
@@ -232,7 +218,7 @@
 @y
       <term>GRUB 256-Byte Inodes Patch - <token>&grub-inode-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&grub-inode-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&grub-inode-patch;"/></para>
         <para>MD5 sum: <literal>&grub-inode-patch-md5;</literal></para>
       </listitem>
 @z
@@ -246,7 +232,7 @@
 @y
       <term>Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
       </listitem>
 @z
@@ -255,7 +241,7 @@
         <para>Download: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&mpfr-fixes-patch-md5;</literal></para>
 @y
-        <para>ダウンロード: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&mpfr-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&mpfr-fixes-patch-md5;</literal></para>
 @z
 
@@ -263,7 +249,7 @@
         <para>Download: <ulink url="&patches-root;&patch-test-patch;"/></para>
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
 @y
-        <para>ダウンロード: <ulink url="&patches-root;&patch-test-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&patch-test-patch;"/></para>
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
 @z
 
@@ -276,7 +262,7 @@
 @y
       <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&perl-libc-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&perl-libc-patch;"/></para>
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
       </listitem>
 @z
@@ -290,7 +276,7 @@
 @y
       <term>Perl Security Patch - <token>&perl-security-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&perl-security-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&perl-security-patch;"/></para>
         <para>MD5 sum: <literal>&perl-security-patch-md5;</literal></para>
       </listitem>
 @z
@@ -304,7 +290,7 @@
 @y
       <term>Procps HZ Errors Patch - <token>&procps-hz_fixes-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&procps-hz_fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&procps-hz_fixes-patch;"/></para>
         <para>MD5 sum: <literal>&procps-hz_fixes-patch-md5;</literal></para>
       </listitem>
 @z
@@ -318,7 +304,7 @@
 @y
       <term>Procps Watch Patch - <token>&procps-watch-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&procps-watch-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&procps-watch-patch;"/></para>
         <para>MD5 sum: <literal>&procps-watch-patch-md5;</literal></para>
       </listitem>
 @z
@@ -332,7 +318,7 @@
 @y
       <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
       </listitem>
 @z
@@ -346,7 +332,7 @@
 @y
       <term>Shadow nscd Patch - <token>&shadow-nscd-patch-size;</token>:</term>
       <listitem>
-        <para>ダウンロード: <ulink url="&patches-root;&shadow-nscd-patch;"/></para>
+        <para>&Download;: <ulink url="&patches-root;&shadow-nscd-patch;"/></para>
         <para>MD5 sum: <literal>&shadow-nscd-patch-md5;</literal></para>
       </listitem>
 @z

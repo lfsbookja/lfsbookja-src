@@ -48,6 +48,25 @@
 @z
 
 @x
+      <para>2012-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add a patch for glibc that fixes a problem
+          (segfault) for dlopen() in some cases.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -
+          glibc にパッチを追加。一定の条件下での dlopen() に関する問題 (セグメンテーションフォールト) を解消。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-02-23</para>
       <itemizedlist>
         <listitem>

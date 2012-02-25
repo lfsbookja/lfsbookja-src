@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -145,26 +145,6 @@
       </para>
 @z
 
-% @x
-%         <para>This version of the book builds a 32-bit Linux system and
-%         requires an existing 32-bit version of of the kernel on the Intel/AMD
-%         x86 architecture.  Adding capabilty for x86_64 systems is a major
-%         objective of a future version of LFS.  Support for 64-bit systems and
-%         additional architectures can be found in the Cross-Compiled Linux From
-%         Scratch (CLFS) project at <ulink url="http://cross-lfs.org/view/svn/"/>.
-%         </para>
-% @y
-% <para>
-% 本書では 32 ビットの Linux システムを構築するものであり、Intel/AMD
-% の x86 アーキテクチャ CPU 上での 32 ビット版カーネルを前提としています。
-% x86_64 システムへの対応は、近々の LFS ブックにて実現すべき課題です。
-% 64 ビットシステムやこれ以外のアーキテクチャに対する情報は
-% Cross-Compiled Linux From Scratch (CLFS) のプロジェクトページ
-% <ulink url="http://cross-lfs.org/view/svn/"/>
-% を参照してください。
-% </para>
-% @z
-
 @x
   <para>Note that the symlinks mentioned above are required to build an LFS
   system using the instructions contained within this book. Symlinks that
@@ -189,9 +169,3 @@
   ホストシステムに、上のソフトウェアの適切なバージョンがインストールされているかどうか、またコンパイルが適切に行えるかどうかは、以下のスクリプトを実行して確認することができます。
   </para>
 @z
-
-%@x
-%<anchor xreflabel="Version Check Script" id="version-check"/>
-%@y
-%<anchor xreflabel="バージョンチェックスクリプト" id="version-check"/>
-%@z

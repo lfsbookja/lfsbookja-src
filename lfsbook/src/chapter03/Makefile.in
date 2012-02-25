@@ -143,8 +143,14 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/chapter03
-EXTRA_DIST = chapter03.ch introduction.ch packages.ch patches.ch
-srcs = chapter03.xml introduction.xml packages.xml patches.xml
+CHANGE_FILES = \
+	chapter03.ch \
+	introduction.ch \
+	packages.ch \
+	patches.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -337,10 +343,10 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chapter03.xml: $(BOOKdir)/$@ $(srcdir)/chapter03.ch
+chapter03.xml:    $(BOOKdir)/$@ $(srcdir)/chapter03.ch
 introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-packages.xml: $(BOOKdir)/$@ $(srcdir)/packages.ch
-patches.xml: $(BOOKdir)/$@ $(srcdir)/patches.ch
+packages.xml:     $(BOOKdir)/$@ $(srcdir)/packages.ch
+patches.xml:      $(BOOKdir)/$@ $(srcdir)/patches.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
