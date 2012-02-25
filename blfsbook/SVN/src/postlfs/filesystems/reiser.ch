@@ -85,6 +85,23 @@
 @z
 
 @x
+    <para>Enable the following option in the kernel configuration
+    and recompile the kernel:</para>
+@y
+    <para>
+    以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
+    </para>
+@z
+
+@x
+<screen><literal>File Systems:
+  Reiserfs support: M or Y</literal></screen>
+@y
+<screen><literal>File Systems:
+  Reiserfs support: M または Y</literal></screen>
+@z
+
+@x
     <title>Installation of reiserfsprogs</title>
 @y
     <title>&InstallationOf1;reiserfsprogs&InstallationOf2;</title>
@@ -118,19 +135,6 @@
 @y
     <title>&CommandExplanations;</title>
 @z
-
-% @x
-%     <para><parameter>--prefix=/usr</parameter>: This ensures that
-%     the manual pages are installed in the correct location while still
-%     installing the programs in <filename class="directory">/sbin</filename> as
-%     they should be.</para>
-% @y
-%     <para>
-%     <parameter>--prefix=/usr</parameter>:
-%     これを指定するのは man ページを適切なディレクトリにインストールするためです。
-%     これを指定しても、プログラム類は <filename class="directory">/sbin</filename> ディレクトリにインストールされます。
-%     </para>
-% @z
 
 @x
     <para><parameter>--sbindir=/sbin</parameter>: This ensures that the
@@ -228,4 +232,3 @@
           <application>ReiserFS</application> ファイルシステムをリサイズまたはアンマウントします。
           </para>
 @z
-s

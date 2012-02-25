@@ -137,12 +137,18 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/book
-EXTRA_DIST = dedication.ch foreword.ch preface.ch bookinfo.ch errata.ch \
-	organization.ch whoread.ch japanese.ch
+CHANGE_FILES = \
+	dedication.ch \
+	foreword.ch \
+	preface.ch \
+	bookinfo.ch \
+	errata.ch \
+	organization.ch \
+	whoread.ch \
+	japanese.ch
 
-srcs = dedication.xml foreword.xml preface.xml bookinfo.xml errata.xml \
-	organization.xml whoread.xml japanese.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -335,14 +341,14 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-dedication.xml: $(BOOKdir)/$@ $(srcdir)/dedication.ch
-foreword.xml: $(BOOKdir)/$@ $(srcdir)/foreword.ch
-preface.xml: $(BOOKdir)/$@ $(srcdir)/preface.ch
-bookinfo.xml: $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
-errata.xml: $(BOOKdir)/$@ $(srcdir)/errata.ch
+dedication.xml:   $(BOOKdir)/$@ $(srcdir)/dedication.ch
+foreword.xml:     $(BOOKdir)/$@ $(srcdir)/foreword.ch
+preface.xml:      $(BOOKdir)/$@ $(srcdir)/preface.ch
+bookinfo.xml:     $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
+errata.xml:       $(BOOKdir)/$@ $(srcdir)/errata.ch
 organization.xml: $(BOOKdir)/$@ $(srcdir)/organization.ch
-whoread.xml: $(BOOKdir)/$@ $(srcdir)/whoread.ch
-japanese.xml: $(srcdir)/japanese.ch
+whoread.xml:      $(BOOKdir)/$@ $(srcdir)/whoread.ch
+japanese.xml:     $(srcdir)/japanese.ch
 	cp -p $(srcdir)/japanese.ch $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

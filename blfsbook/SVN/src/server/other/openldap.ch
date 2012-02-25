@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,60 +22,58 @@
 @x
     <title>Introduction to OpenLDAP</title>
 @y
-    <title>OpenLDAP の概要</title>
+    <title>&IntroductionTo1;OpenLDAP&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>OpenLDAP</application> package provides an open
     source implementation of the Lightweight Directory Access Protocol.</para>
 @y
-<para>
-<application>OpenLDAP</application> パッケージはオープンソース実装による
- "軽量" ディレクトリアクセスプロトコル
-(Lightweight Directory Access Protocol) を提供します。
-</para>
+    <para>
+    <application>OpenLDAP</application> パッケージはオープンソース実装による "軽量" ディレクトリアクセスプロトコル (Lightweight Directory Access Protocol) を提供します。
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&openldap-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&openldap-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&openldap-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&openldap-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&openldap-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&openldap-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &openldap-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &openldap-md5sum;</para>
+        <para>&Download; MD5 sum: &openldap-md5sum;</para>
 @z
 
 @x
         <para>Download size: &openldap-size;</para>
 @y
-        <para>ダウンロードサイズ: &openldap-size;</para>
+        <para>&DownloadSize;: &openldap-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &openldap-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &openldap-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &openldap-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &openldap-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &openldap-time;</para>
+        <para>&Estimatedbuildtime;: &openldap-time;</para>
 @z
 
 @x
@@ -84,18 +82,16 @@
       relationship between the version number and name of the tarball at <ulink
       url="http://www.openldap.org/software/download/"/>.</para>
 @y
-<para>
-<application>OpenLDAP</application> のリリース安定版は、tarball の名称の中にバージョン番号を含んでいません。
-バージョン番号と tarball 名の関係は
-<ulink url="http://www.openldap.org/software/download/"/>
-を参照すれば分かります。
-</para>
+    <para>
+    <application>OpenLDAP</application> のリリース安定版は、tarball の名称の中にバージョン番号を含んでいません。
+    バージョン番号と tarball 名の関係は <ulink url="http://www.openldap.org/software/download/"/> を参照すれば分かります。
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">OpenLDAP Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">OpenLDAP の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;OpenLDAP&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,7 +99,7 @@
     <para role="required"><xref linkend="db"/> (recommended) or
     GDBM (GDBM is built in LFS)</para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="db"/> (推奨) あるいは
     GDBM (GDBM は LFS にて構築)</para>
 @z
@@ -113,8 +109,8 @@
     <para role="recommended"><xref linkend="cyrus-sasl"/> and
     <xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="cyrus-sasl"/> と
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended"><xref linkend="cyrus-sasl"/>,
     <xref linkend="openssl"/></para>
 @z
 
@@ -127,7 +123,7 @@
     <xref linkend="mysql"/> or
     <xref linkend="postgresql"/></para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="tcpwrappers"/>,
     <xref linkend="unixodbc"/>,
     <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
@@ -140,23 +136,23 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/openldap"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/openldap"/></para>
 @z
 
 @x
     <title>Installation of OpenLDAP</title>
 @y
-    <title>OpenLDAP のインストール</title>
+    <title>&InstallationOf1;OpenLDAP&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>OpenLDAP</application> by
     running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>OpenLDAP</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>OpenLDAP</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -176,15 +172,15 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -222,9 +218,9 @@
 @x
     <para><parameter>--disable-debug</parameter>: Disable debugging code.</para>
 @y
-<para>
-<parameter>--disable-debug</parameter>: デバッグコードを無効にします。
-</para>
+    <para>
+    <parameter>--disable-debug</parameter>: デバッグコードを無効にします。
+    </para>
 @z
 
 @x
@@ -232,61 +228,61 @@
     <application>OpenLDAP</application> libraries to be dynamically linked
     to the executable programs.</para>
 @y
-<para>
-<parameter>--enable-dynamic</parameter>: This forces the
-<application>OpenLDAP</application> libraries to be dynamically linked
-to the executable programs.
-</para>
+    <para>
+    <parameter>--enable-dynamic</parameter>: This forces the
+    <application>OpenLDAP</application> libraries to be dynamically linked
+    to the executable programs.
+    </para>
 @z
 
 @x
     <para><parameter>--enable-crypt</parameter>: Enables crypt(3)
     passwords.</para>
 @y
-<para>
-<parameter>--enable-crypt</parameter>: Enables crypt(3)
-passwords.
-</para>
+    <para>
+    <parameter>--enable-crypt</parameter>: Enables crypt(3)
+    passwords.
+    </para>
 @z
 
 @x
     <para><parameter>--enable-modules</parameter>: Enables dynamic module
     support.</para>
 @y
-<para>
-<parameter>--enable-modules</parameter>: Enables dynamic module
-support.
-</para>
+    <para>
+    <parameter>--enable-modules</parameter>: Enables dynamic module
+    support.
+    </para>
 @z
 
 @x
     <para><parameter>--enable-rlookups</parameter>: This parameter enables
     reverse lookups of client hostnames.</para>
 @y
-<para>
-<parameter>--enable-rlookups</parameter>: This parameter enables
-reverse lookups of client hostnames.
-</para>
+    <para>
+    <parameter>--enable-rlookups</parameter>: This parameter enables
+    reverse lookups of client hostnames.
+    </para>
 @z
 
 @x
     <para><parameter>--enable-backends</parameter>: This parameter enables
     all available backends.</para>
 @y
-<para>
-<parameter>--enable-backends</parameter>: This parameter enables
-all available backends.
-</para>
+    <para>
+    <parameter>--enable-backends</parameter>: This parameter enables
+    all available backends.
+    </para>
 @z
 
 @x
     <para><parameter>--enable-overlays</parameter>: This parameter enables
     all available overlays.</para>
 @y
-<para>
-<parameter>--enable-overlays</parameter>: This parameter enables
-all available overlays.
-</para>
+    <para>
+    <parameter>--enable-overlays</parameter>: This parameter enables
+    all available overlays.
+    </para>
 @z
 
 @x
@@ -306,21 +302,21 @@ all available overlays.
     <application>Berkeley DB</application> as the primary backend
     database.</para>
 @y
-<para><option>--disable-bdb --disable-hdb --with-ldbm-api=gdbm</option>:
-Pass these parameters to the <command>configure</command> command if you
-wish to use <application>GDBM</application> instead of
-<application>Berkeley DB</application> as the primary backend
-database.</para>
+    <para><option>--disable-bdb --disable-hdb --with-ldbm-api=gdbm</option>:
+    Pass these parameters to the <command>configure</command> command if you
+    wish to use <application>GDBM</application> instead of
+    <application>Berkeley DB</application> as the primary backend
+    database.</para>
 @z
 
 @x
     <para><command>chmod -v 0755 ...</command>: This
     command adds the executable bit to the shared libraries.</para>
 @y
-<para>
-<command>chmod -v 0755 ...</command>: 
-これは共有ライブラリ (shared library) に対しての実行ビットを付与します。
-</para>
+    <para>
+    <command>chmod -v 0755 ...</command>: 
+    これは共有ライブラリ (shared library) に対しての実行ビットを付与します。
+    </para>
 @z
 
 @x
@@ -328,30 +324,30 @@ database.</para>
       are other parameters you can pass to the <command>configure</command>
       command to enable other options or dependency packages.</para>
 @y
-<para>
-
-You can run <command>./configure --help</command> to see if there
-are other parameters you can pass to the <command>configure</command>
-command to enable other options or dependency packages.
-</para>
+    <para>
+    
+    You can run <command>./configure --help</command> to see if there
+    are other parameters you can pass to the <command>configure</command>
+    command to enable other options or dependency packages.
+    </para>
 @z
 
 @x
     <title>Configuring OpenLDAP</title>
 @y
-    <title>OpenLDAP の設定</title>
+    <title>&Configuring1;OpenLDAP&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&j-ConfigFiles;</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>&j-ConfigInfo;</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -461,7 +457,7 @@ command to enable other options or dependency packages.
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -470,12 +466,11 @@ command to enable other options or dependency packages.
       included in the <xref linkend="bootscripts"/> package
       using the following command:</para>
 @y
-<para>
-LDAP サーバーをシステムブート時に自動起動するには
-<xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト
-<filename>/etc/rc.d/init.d/openldap</filename> を用います。
-これは以下のコマンドによりインストールします。
-</para>
+      <para>
+      LDAP サーバーをシステムブート時に自動起動するには <xref
+      linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/openldap</filename> を用います。
+      これは以下のコマンドによりインストールします。
+      </para>
 @z
 
 @x
@@ -499,32 +494,32 @@ LDAP サーバーをシステムブート時に自動起動するには
 @x
       <para>Start the LDAP server using the init script:</para>
 @y
-<para>
-初期化スクリプトを使って LDAP サーバーを起動します。
-</para>
+      <para>
+      初期化スクリプトを使って LDAP サーバーを起動します。
+      </para>
 @z
 
 @x
       <para>Verify access to the LDAP server with the following
       command:</para>
 @y
-<para>
-以下のコマンド実行により LDAP サーバーへのアクセスを確認します。
-</para>
+      <para>
+      以下のコマンド実行により LDAP サーバーへのアクセスを確認します。
+      </para>
 @z
 
 @x
       <para>The expected result is:</para>
 @y
-<para>
-確認結果は以下のようになります。
-</para>
+      <para>
+      確認結果は以下のようになります。
+      </para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -532,9 +527,9 @@ LDAP サーバーをシステムブート時に自動起動するには
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -546,15 +541,15 @@ LDAP サーバーをシステムブート時に自動起動するには
 @y
         <seg>ldapadd, ldapcompare, ldapdelete, ldapmodify, ldapmodrdn,
         ldappasswd, ldapsearch, ldapwhoami, slapadd, slapcat, slapd, slapdn,
-        slapindex, slappasswd, and slaptest</seg>
-        <seg>liblber.{so,a}, libldap.{so,a}, and libldap_r.{so,a}</seg>
-        <seg>/etc/openldap, /srv/ldap, and /usr/share/openldap</seg>
+        slapindex, slappasswd, slaptest</seg>
+        <seg>liblber.{so,a}, libldap.{so,a}, libldap_r.{so,a}</seg>
+        <seg>/etc/openldap, /srv/ldap, /usr/share/openldap</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x ldapadd
@@ -704,4 +699,3 @@ LDAP サーバーをシステムブート時に自動起動するには
           <para>contains the functions required by the LDAP programs to
           produce the results from LDAP requests.</para>
 @z
-

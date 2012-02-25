@@ -123,11 +123,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="required"> <xref linkend="fop"/> and <xref linkend="xmlto"/>
+    <para role="optional"> <xref linkend="fop"/> and <xref linkend="xmlto"/>
     (to build additional documentation)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="required"> <xref linkend="fop"/>, <xref linkend="xmlto"/>
+    <para role="optional"> <xref linkend="fop"/> and <xref linkend="xmlto"/>
     (追加ドキュメントの生成時に必要)</para>
 @z
 

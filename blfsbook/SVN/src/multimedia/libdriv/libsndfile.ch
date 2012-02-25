@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libsndfile</title>
 @y
-    <title>libsndfile の概要</title>
+    <title>&IntroductionTo1;libsndfile&IntroductionTo2;</title>
 @z
 
 @x
@@ -31,7 +31,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libsndfile Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libsndfile の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libsndfile&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,7 +103,7 @@
 @x
     <title>Installation of libsndfile</title>
 @y
-    <title>libsndfile のインストール</title>
+    <title>&InstallationOf1;libsndfile&InstallationOf2;</title>
 @z
 
 @x

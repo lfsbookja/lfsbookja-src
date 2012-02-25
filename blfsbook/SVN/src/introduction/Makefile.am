@@ -1,8 +1,9 @@
 SUBDIRS=important welcome
 BOOKdir = $(top_builddir)/@bookdir@/introduction
-EXTRA_DIST = introduction.ch
+CHANGE_FILES = introduction.ch
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = introduction.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

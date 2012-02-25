@@ -206,10 +206,10 @@
 @z
 
 @x
-    <para><command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD MD5@'
+    <para><command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512'
     -e 's@/var/spool/mail@/var/mail@' etc/login.defs</command>:
     Instead of using the default 'crypt' method, this command modifies the
-    installation to use the more secure 'MD5' method of password encryption,
+    installation to use the more secure 'SHA512' method of hashing passwords,
     which also allows passwords longer than eight characters. It also changes
     the obsolete <filename class="directory">/var/spool/mail</filename>
     location for user mailboxes that <application>Shadow</application> uses by
@@ -217,9 +217,9 @@
     location.</para>
 @y
     <para>
-    <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD MD5@'
+    <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@'
     -e 's@/var/spool/mail@/var/mail@' etc/login.defs</command>:
-    デフォルトで採用されている '暗号化' メソッドではなく、よりセキュアな 'MD5' メソッドを使ったパスワード暗号をインストールするように変更します。
+    デフォルトで採用されている '暗号化' メソッドではなく、よりセキュアな 'SHA512' メソッドを使ったハッシュパスワードをインストールするように変更します。
     これによりパスワードにて8文字以上の設定が可能となります。
     またユーザーのメールボックスの収容ディレクトリとして、古くなった <filename
     class="directory">/var/spool/mail</filename> ではなく <filename

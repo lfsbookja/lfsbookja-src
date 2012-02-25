@@ -16,7 +16,7 @@
 @x
     <title>Introduction to lvm2</title>
 @y
-    <title>lvm2 の概要</title>
+    <title>&IntroductionTo1;lvm2&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&lvm2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&lvm2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&lvm2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&lvm2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&lvm2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&lvm2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &lvm2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &lvm2-md5sum;</para>
+        <para>&Download; MD5 sum: &lvm2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &lvm2-size;</para>
 @y
-        <para>ダウンロードサイズ: &lvm2-size;</para>
+        <para>&DownloadSize;: &lvm2-size;</para>
 @z
 
 @x
@@ -80,9 +80,40 @@
 @z
 
 @x
+    <title>Kernel Configuration</title>
+@y
+    <title>&KernelConfiguration;</title>
+@z
+
+@x
+    <para>Enable the following option in the kernel configuration
+    and recompile the kernel:</para>
+@y
+    <para>
+    以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
+    </para>
+@z
+
+@x
+<screen><literal>Device Drivers ---&gt;
+  Multiple devices driver support (RAID and LVM): Y
+    Device mapper support: Y or M
+    Crypt target support: (optional)
+    Snapshot target: (optional)
+    Mirror target: (optional) </literal></screen>
+@y
+<screen><literal>Device Drivers ---&gt;
+  Multiple devices driver support (RAID and LVM): Y
+    Device mapper support: Y または M
+    Crypt target support: (任意)
+    Snapshot target: (任意)
+    Mirror target: (任意) </literal></screen>
+@z
+
+@x
     <title>Installation of lvm2</title>
 @y
-    <title>lvm2 のインストール</title>
+    <title>&InstallationOf1;lvm2&InstallationOf2;</title>
 @z
 
 @x
@@ -165,7 +196,7 @@
         <seg>dmsetup, fsadm, lvm, lvmconf, lvndump, vgimportclone.
         この他に lvm に対してのシンボリックリンクが数多くあり、それらは特定の機能を提供します。</seg>
         <seg>libdevmapper.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

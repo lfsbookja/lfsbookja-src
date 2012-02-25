@@ -5,12 +5,18 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
 <?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+  <!ENTITY polkit-gnome-time          "less than 0.1 SBU">
+@y
+  <!ENTITY polkit-gnome-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x

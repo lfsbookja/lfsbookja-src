@@ -116,11 +116,11 @@
 @x
     <para>Note: you should build the
     <filename class='libraryfile'>libgsf-gnome-1.so</filename> library if you
-    plan on building <xref linkend="gnucash"/> or
+    plan on building <!-- <xref linkend="gnucash"/> or -->
     <xref linkend="gnumeric"/> with GNOME-2 support.</para>
 @y
     <para>
-    メモ: GNOME-2 サポートを含めて <xref linkend="gnucash"/> や <xref
+    メモ: GNOME-2 サポートを含めて <xref
     linkend="gnumeric"/> をビルドしようとする場合、<filename
     class='libraryfile'>libgsf-gnome-1.so</filename> をビルドすることが必要になります。
     </para>

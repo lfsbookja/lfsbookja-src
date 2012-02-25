@@ -16,7 +16,7 @@
 @x
     <title>Introduction to xfsprogs</title>
 @y
-    <title>xfsprogs の概要</title>
+    <title>&IntroductionTo1;xfsprogs&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&xfsprogs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&xfsprogs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&xfsprogs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&xfsprogs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&xfsprogs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&xfsprogs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &xfsprogs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &xfsprogs-md5sum;</para>
+        <para>&Download; MD5 sum: &xfsprogs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &xfsprogs-size;</para>
 @y
-        <para>ダウンロードサイズ: &xfsprogs-size;</para>
+        <para>&DownloadSize;: &xfsprogs-size;</para>
 @z
 
 @x
@@ -82,8 +82,9 @@
     page.</para></caution>
 @y
     <caution><para>
-    The XFS developers regularly remove the current
-    package when a new package is available.  Unfortunately, this has led to
+    XFS の開発者は、新たなパッケージを提供する際には、それまでのパッケージを削除することを行っています。
+    
+Unfortunately, this has led to
     severe incompatibilities, including
     <ulink url="http://bugs.debian.org/465737">unmountable filesystems</ulink>,
     due to kernel version requirements in new versions of the package.  Using a
@@ -103,9 +104,32 @@
 @z
 
 @x
+    <title>Kernel Configuration</title>
+@y
+    <title>&KernelConfiguration;</title>
+@z
+
+@x
+    <para>Enable the following options in the kernel configuration
+    and recompile the kernel:</para>
+@y
+    <para>
+    以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
+    </para>
+@z
+
+@x
+<screen><literal>File Systems:
+  XFS filesystem support: M or Y</literal></screen>
+@y
+<screen><literal>File Systems:
+  XFS filesystem support: M または Y</literal></screen>
+@z
+
+@x
     <title>Installation of xfsprogs</title>
 @y
-    <title>xfsprogs のインストール</title>
+    <title>&InstallationOf1;xfsprogs&InstallationOf2;</title>
 @z
 
 @x
@@ -120,9 +144,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Emacs</title>
 @y
-    <title>Emacs の概要</title>
+    <title>&IntroductionTo1;Emacs&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&emacs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&emacs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&emacs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&emacs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&emacs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&emacs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &emacs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &emacs-md5sum;</para>
+        <para>&Download; MD5 sum: &emacs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &emacs-size;</para>
 @y
-        <para>ダウンロードサイズ: &emacs-size;</para>
+        <para>&DownloadSize;: &emacs-size;</para>
 @z
 
 @x
@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">Emacs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Emacs の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Emacs&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -108,7 +108,7 @@
 @x
     <title>Installation of Emacs</title>
 @y
-    <title>Emacs のインストール</title>
+    <title>&InstallationOf1;Emacs&InstallationOf2;</title>
 @z
 
 @x
@@ -123,9 +123,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -189,7 +187,7 @@
 @y
         <seg>b2m, ctags, ebrowse, emacs, emacsclient, etags, grep-changelog,
         rcs-checkin</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/lib/emacs, /usr/share/emacs, /var/games/emacs</seg>
 @z
 
@@ -212,16 +210,18 @@
           <para>creates cross-reference tagfile database files
           for source code.</para>
 @y
-          <para>creates cross-reference tagfile database files
-          for source code.</para>
+          <para>
+          ソースコードに対して、クロスリファレンスのタグファイルデータベースファイルを生成します。
+          </para>
 @z
 
 @x ebrowse
           <para>permits browsing of C++ class hierarchies from
           within <command>emacs</command>.</para>
 @y
-          <para>permits browsing of C++ class hierarchies from
-          within <command>emacs</command>.</para>
+          <para>
+          <command>emacs</command> 内から C++ のクラス階層をブラウズする機能を提供します。
+          </para>
 @z
 
 @x emacs
@@ -234,24 +234,29 @@
           <para>attaches an <command>emacs</command> session to an already
           running <command>emacsserver</command> instance.</para>
 @y
-          <para>attaches an <command>emacs</command> session to an already
-          running <command>emacsserver</command> instance.</para>
+          <para>
+          稼動している <command>emacsserver</command> インスタンスに対して、<command>emacs</command> セッションをアタッチします。
+          </para>
 @z
 
 @x etags
           <para>is another program to generate source code
           cross-reference tagfiles.</para>
 @y
-          <para>is another program to generate source code
-          cross-reference tagfiles.</para>
+          <para>
+          ソースコードのクロスリファレンスタグファイルを生成する、もう一つのプログラムです。
+          </para>
 @z
 
 @x grep-changelog
           <para>prints entries in Change Logs matching
           various criteria.</para>
 @y
-          <para>prints entries in Change Logs matching
-          various criteria.</para>
+          <para>
+          
+prints entries in Change Logs matching
+          various criteria.
+          </para>
 @z
 
 @x rcs-checkin

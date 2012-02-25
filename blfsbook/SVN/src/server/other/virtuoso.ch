@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Virtuoso</title>
 @y
-    <title>Virtuoso の概要</title>
+    <title>&IntroductionTo1;Virtuoso&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,7 +38,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&j-PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -68,13 +68,13 @@
 @x
         <para>Estimated disk space required: &virtuoso-buildsize;</para>
 @y
-        <para>&j-Estimateddiskspacerequired;: &virtuoso-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &virtuoso-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &virtuoso-time;</para>
 @y
-        <para>&j-Estimatedbuildtime;: &virtuoso-time;</para>
+        <para>&Estimatedbuildtime;: &virtuoso-time;</para>
 @z
 
 @x
@@ -89,7 +89,7 @@
     <xref linkend="net-tools"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="net-tools"/>
     </para>
@@ -105,7 +105,7 @@
     <xref linkend="jdk"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="libiodbc"/>,
     <xref linkend="libxml2"/>,
@@ -122,7 +122,7 @@
     <xref linkend="python2"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&j-Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="imagemagick"/>,
     <xref linkend="python2"/>
@@ -133,14 +133,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/virtuoso"/></para>
 @y
-    <para condition="html" role="usernotes">&j-UserNotes;:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/virtuoso"/></para>
 @z
 
 @x
     <title>Installation of Virtuoso</title>
 @y
-    <title>Virtuoso のインストール</title>
+    <title>&InstallationOf1;Virtuoso&InstallationOf2;</title>
 @z
 
 @x
@@ -173,7 +173,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>&j-CommandExplanations;</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -238,7 +238,7 @@
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -299,7 +299,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&j-Contents;</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -307,9 +307,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&j-InstalledPrograms;</segtitle>
-      <segtitle>&j-InstalledLibraries;</segtitle>
-      <segtitle>&j-InstalledDirectories;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -327,22 +327,19 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&j-ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x virtuoso-t
           <para>is the Universial Server daemon.</para>
 @y
-<para>
-
-is the Universial Server daemon.
-</para>
+          <para>is the Universial Server daemon.</para>
 @z
 
 @x isql-v
           <para>is a interactive SQL utility.</para>
 @y
-<para>
-対話的な SQL ユーティリティ。
-</para>
+          <para>
+          対話的な SQL ユーティリティ。
+          </para>
 @z
