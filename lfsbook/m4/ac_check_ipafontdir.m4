@@ -39,15 +39,27 @@ AC_DEFUN([AC_CHECK_IPAFONTDIR],[
     IPA="#"
   else
 
-    IPAFONTFILE="dummy"
+    IPAGFILE="${IPAFONTDIR}/ipag.ttf"
     if test ! -f "${IPAFONTDIR}/ipag.ttf"; then
-      IPAFONTFILE=""
-    fi
-    if test ! -f "${IPAFONTDIR}/ipam.ttf"; then
-      IPAFONTFILE=""
+      IPAFONTDIR=${IPAFONTDIR}/ipa-gothic
+      IPAGFILE="${IPAFONTDIR}/ipag.ttf"
+      if test ! -f "${IPAFONTDIR}/ipag.ttf"; then
+        IPAFONTDIR=""
+        IPAGFILE=""
+      fi
     fi
 
-    if test "x${IPAFONTFILE}" = "x"; then
+    IPAMFILE="${IPAFONTDIR}/ipam.ttf"
+    if test ! -f "${IPAFONTDIR}/ipam.ttf"; then
+      IPAFONTDIR=${IPAFONTDIR}/ipa-minchio
+      IPAMFILE="${IPAFONTDIR}/ipam.ttf"
+      if test ! -f "${IPAFONTDIR}/ipam.ttf"; then
+        IPAFONTDIR=""
+        IPAMFILE=""
+      fi
+    fi
+
+    if test "x${IPAGFILE}" = "x" -o "x${IPAMFILE}" = "x"; then
       AC_MSG_RESULT([not found])
       AC_MSG_WARN([PDF version cannot be built.])
       IPA="#"
@@ -58,3 +70,5 @@ AC_DEFUN([AC_CHECK_IPAFONTDIR],[
   fi
 ])
 AC_SUBST(IPA)
+AC_SUBST(IPAGFILE)
+AC_SUBST(IPAMFILE)
