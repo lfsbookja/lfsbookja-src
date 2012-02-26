@@ -27,7 +27,5 @@ ctie:
 $(srcs):
 	cp -p $(BOOKdir)/* .
 
-$(srcs_change): titlepage.xsl xref.xsl
-
 titlepage.xsl: $(BOOKdir)/$@ $(srcdir)/titlepage.ch
 xref.xsl: $(BOOKdir)/$@ $(srcdir)/xref.ch

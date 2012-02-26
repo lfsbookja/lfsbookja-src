@@ -3937,8 +3937,8 @@ fi
   if test "x${IPAFONTDIR}" = "x"; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }
-    { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Building PDF version unavailable" >&5
-$as_echo "$as_me: WARNING: Building PDF version unavailable" >&2;}
+    { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built." >&5
+$as_echo "$as_me: WARNING: PDF version cannot be built." >&2;}
     IPA="#"
   else
 
