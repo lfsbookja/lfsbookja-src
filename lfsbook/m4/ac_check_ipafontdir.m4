@@ -7,55 +7,53 @@ AC_DEFUN([AC_CHECK_IPAFONTDIR],[
       [IPAFONTDIR="$withval"])
 
   if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR="${datadir}/fonts/opentype/ipafont"
+    IPAFONTDIR=${datadir}/fonts/opentype/ipafont
     if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR="${datadir}/fonts/opentype"
+      IPAFONTDIR=${datadir}/fonts/opentype
       if test ! -d "${IPAFONTDIR}"; then
-        IPAFONTDIR=""
+        IPAFONTDIR=
       fi
     fi
   fi
 
   if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR="${datadir}/fonts/truetype/ipafont"
+    IPAFONTDIR=${datadir}/fonts/truetype/ipafont
     if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR="${datadir}/fonts/truetype"
+      IPAFONTDIR=${datadir}/fonts/truetype
       if test ! -d "${IPAFONTDIR}"; then
-        IPAFONTDIR=""
+        IPAFONTDIR=
       fi
     fi
   fi
 
   if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR="${datadir}/fonts"
-    if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=""
+    IPAFONTDIR=${datadir}/fonts
+    if test ! -d ${IPAFONTDIR}; then
+      IPAFONTDIR=
     fi
   fi
 
   if test "x${IPAFONTDIR}" = "x"; then
     AC_MSG_RESULT([not found])
-    AC_MSG_WARN([PDF version cannot be built.])
+    AC_MSG_WARN([PDF version cannot be built])
     IPA="#"
   else
 
-    IPAGFILE="${IPAFONTDIR}/ipag.ttf"
-    if test ! -f "${IPAFONTDIR}/ipag.ttf"; then
-      IPAFONTDIR=${IPAFONTDIR}/ipa-gothic
-      IPAGFILE="${IPAFONTDIR}/ipag.ttf"
-      if test ! -f "${IPAFONTDIR}/ipag.ttf"; then
-        IPAFONTDIR=""
-        IPAGFILE=""
+    IPAGFILE=${IPAFONTDIR}/ipag.ttf
+    if test ! -f ${IPAGFILE}; then
+      IPAGFILE=${IPAFONTDIR}/ipa-gothic/ipag.ttf
+      if test ! -f ${IPAGFILE}; then
+        IPAFONTDIR=
+        IPAGFILE=
       fi
     fi
 
-    IPAMFILE="${IPAFONTDIR}/ipam.ttf"
-    if test ! -f "${IPAFONTDIR}/ipam.ttf"; then
-      IPAFONTDIR=${IPAFONTDIR}/ipa-minchio
-      IPAMFILE="${IPAFONTDIR}/ipam.ttf"
-      if test ! -f "${IPAFONTDIR}/ipam.ttf"; then
-        IPAFONTDIR=""
-        IPAMFILE=""
+    IPAMFILE=${IPAFONTDIR}/ipam.ttf
+    if test ! -f ${IPAMFILE}; then
+      IPAMFILE=${IPAFONTDIR}/ipa-mincho/ipam.ttf
+      if test ! -f ${IPAMFILE}; then
+        IPAFONTDIR=
+        IPAMFILE=
       fi
     fi
 
