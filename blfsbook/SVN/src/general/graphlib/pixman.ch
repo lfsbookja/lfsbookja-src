@@ -16,7 +16,7 @@
 @x
     <title>Introduction to pixman</title>
 @y
-    <title>pixman の概要</title>
+    <title>&IntroductionTo1;pixman&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,11 +24,9 @@
     provides low-level pixel manipulation features such as image compositing
     and trapezoid rasterization.</para>
 @y
-<para>
-<application>pixman</application>
-パッケージは、イメージ合成 (image compositing) や "矩形分割" によるラスター処理
-(trapezoid rasterization) など、低レベルなピクセル操作を実現するライブラリを提供します。
-</para>
+    <para>
+    <application>pixman</application> パッケージは、イメージ合成 (image compositing) や "矩形分割" によるラスター処理 (trapezoid rasterization) など、低レベルなピクセル操作を実現するライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -40,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&pixman-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&pixman-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&pixman-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&pixman-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&pixman-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&pixman-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &pixman-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &pixman-md5sum;</para>
+        <para>&Download; MD5 sum: &pixman-md5sum;</para>
 @z
 
 @x
         <para>Download size: &pixman-size;</para>
 @y
-        <para>ダウンロードサイズ: &pixman-size;</para>
+        <para>&DownloadSize;: &pixman-size;</para>
 @z
 
 @x
@@ -76,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">pixman Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">pixman の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;pixman&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -98,34 +96,34 @@
 @x
     <title>Installation of pixman</title>
 @y
-    <title>pixman のインストール</title>
+    <title>&InstallationOf1;pixman&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>pixman</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>pixman</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>pixman</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>. Note that
     <application>GTK+2</application> must be installed.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-<application>GTK+2</application> がインストールされている必要があります。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    <application>GTK+2</application> がインストールされている必要があります。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -149,7 +147,7 @@
         <seg>libpixman-1.{so,a}</seg>
         <seg>/usr/include/pixman-1</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libpixman-1.{so,a}</seg>
         <seg>/usr/include/pixman-1</seg>
 @z
@@ -164,7 +162,7 @@
           <para>contains functions that provide low-level pixel manipulation
           features.</para>
 @y
-<para>
-ピクセルを取り扱う低レベル関数を提供します。
-</para>
+          <para>
+          ピクセルを取り扱う低レベル関数を提供します。
+          </para>
 @z

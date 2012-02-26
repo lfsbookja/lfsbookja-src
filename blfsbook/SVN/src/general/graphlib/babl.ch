@@ -16,7 +16,7 @@
 @x
     <title>Introduction to babl</title>
 @y
-    <title>babl の概要</title>
+    <title>&IntroductionTo1;babl&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&babl-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&babl-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&babl-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&babl-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&babl-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&babl-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &babl-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &babl-md5sum;</para>
+        <para>&Download; MD5 sum: &babl-md5sum;</para>
 @z
 
 @x
         <para>Download size: &babl-size;</para>
 @y
-        <para>ダウンロードサイズ: &babl-size;</para>
+        <para>&DownloadSize;: &babl-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">babl Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">babl の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;babl&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,7 +105,7 @@
 @x
     <title>Installation of babl</title>
 @y
-    <title>babl のインストール</title>
+    <title>&InstallationOf1;babl&InstallationOf2;</title>
 @z
 
 @x
@@ -186,7 +186,7 @@
         <seg>libbabl.so, and libraries in /usr/lib/babl-0.1/</seg>
         <seg>/usr/include/babl-0.1/</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libbabl.so と /usr/lib/babl-0.1 内のライブラリ</seg>
         <seg>/usr/include/babl-0.1/</seg>
 @z

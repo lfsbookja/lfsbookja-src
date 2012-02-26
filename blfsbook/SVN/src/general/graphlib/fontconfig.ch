@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Fontconfig</title>
 @y
-    <title>Fontconfig の概要</title>
+    <title>&IntroductionTo1;Fontconfig&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&fontconfig-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&fontconfig-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&fontconfig-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&fontconfig-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&fontconfig-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&fontconfig-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &fontconfig-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &fontconfig-md5sum;</para>
+        <para>&Download; MD5 sum: &fontconfig-md5sum;</para>
 @z
 
 @x
         <para>Download size: &fontconfig-size;</para>
 @y
-        <para>ダウンロードサイズ: &fontconfig-size;</para>
+        <para>&DownloadSize;: &fontconfig-size;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <bridgehead renderas="sect3">Fontconfig Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Fontconfig の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Fontconfig&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -137,7 +137,7 @@
 @x
     <title>Installation of Fontconfig</title>
 @y
-    <title>Fontconfig のインストール</title>
+    <title>&InstallationOf1;Fontconfig&InstallationOf2;</title>
 @z
 
 @x
@@ -202,7 +202,7 @@
 @y
     <para>
     <parameter>--without-add-fonts</parameter>:
-    このパラメータは X ウィンドウシステムのフォントを自動的に検索しないようにします。
+    このスイッチは X ウィンドウシステムのフォントを自動的に検索しないようにします。
     自動的に見つかった際に、アプリケーションによってはうまく動作しないものがあるためです。
     </para>
 @z
@@ -214,7 +214,7 @@
 @y
     <para>
     <parameter>--disable-docs</parameter>:
-    このパラメータは、ドキュメントを生成しないようにします。
+    このスイッチは、ドキュメントを生成しないようにします。
     (ソース tarball の中には、あらかじめ生成されているドキュメントが含まれています。)
     </para>
 @z
@@ -243,7 +243,7 @@
 @x
     <title>Configuring Fontconfig</title>
 @y
-    <title>Fontconfig の設定</title>
+    <title>&Configuring1;Fontconfig&Configuring2;</title>
 @z
 
 @x
@@ -384,9 +384,7 @@
           a given pattern.</para>
 @y
           <para>
-          
-          is used to match available fonts, or find fonts that match
-          a given pattern.
+          利用可能なフォントを、検索指定パターンを用いて検索します。
           </para>
 @z
 
@@ -405,9 +403,7 @@
           patterns.</para>
 @y
           <para>
-          
-          is used to scan font files and directories, and print resulting
-          patterns.
+          フォントファイルとディレクトリをスキャンして、結果を表示します。
           </para>
 @z
 
