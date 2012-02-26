@@ -16,7 +16,7 @@
 @x
     <title>Introduction to PCRE</title>
 @y
-    <title>PCRE の概要</title>
+    <title>&IntroductionTo1;PCRE&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&pcre-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&pcre-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&pcre-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&pcre-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&pcre-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&pcre-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &pcre-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &pcre-md5sum;</para>
+        <para>&Download; MD5 sum: &pcre-md5sum;</para>
 @z
 
 @x
         <para>Download size: &pcre-size;</para>
 @y
-        <para>ダウンロードサイズ: &pcre-size;</para>
+        <para>&DownloadSize;: &pcre-size;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
 @x
     <title>Installation of PCRE</title>
 @y
-    <title>PCRE のインストール</title>
+    <title>&InstallationOf1;PCRE&InstallationOf2;</title>
 @z
 
 @x
@@ -124,8 +124,29 @@
     libraries being installed.</para>
 @y
     <para>
-    <parameter>--enable-shared --disable-static</parameter>:
-    このオプションはスタティックライブラリをインストールしないことを指示します。
+    <parameter>--disable-static</parameter>:
+    このスイッチはスタティックライブラリをインストールしないことを指示します。
+    </para>
+@z
+
+@x
+    <para><option>--libdir=/lib</option>: This option makes it install its
+    libraries into /lib. If you reinstall <application>Grep</application> after
+    installing <application>PCRE</application>, <application>Grep</application>
+    will get linked against <application>PCRE</application> and this may cause
+    problems during the boot process if
+    <filename class="directory">/usr</filename> is a separate mount
+    point. If you have <filename class="directory">/usr/lib</filename> on the
+    same partition as <filename class="directory">/lib</filename> you can omit
+    this option</para>
+@y
+    <para><option>--libdir=/lib</option>:
+    このオプションは各ライブラリを /lib にインストールすることを指示します。
+    <application>PCRE</application> をインストールした後に <application>Grep</application> を再インストールする場合には注意が必要です。
+    <application>PCRE</application> をリンクした <application>Grep</application> は、<filename
+    class="directory">/usr</filename> が独立したマウントポイントにマウントされていると、システム起動時に問題が発生します。
+    <filename class="directory">/usr/lib</filename> が <filename
+    class="directory">/lib</filename> と同一パーティションにあるなら、このオプションを省略して構いません。
     </para>
 @z
 
@@ -135,7 +156,7 @@
 @y
     <para>
     <parameter>--enable-utf8</parameter>:
-    このオプションは UTF-8 文字を取り扱えるようにします。
+    このスイッチは UTF-8 文字を取り扱えるようにします。
     </para>
 @z
 
@@ -147,8 +168,8 @@
 @y
     <para>
     <parameter>--enable-unicode-properties</parameter>:
-    このオプションは Unicode プロパティのサポートを有効にします。
-    <xref linkend="glib2"/> のビルドにあたって <parameter>--with-pcre=system</parameter> オプションを指定する場合は、本オプションの指定が必要です。
+    このスイッチは Unicode プロパティのサポートを有効にします。
+    <xref linkend="glib2"/> のビルドにあたって <parameter>--with-pcre=system</parameter> スイッチを指定する場合は、本スイッチの指定が必要です。
     </para>
 @z
 
@@ -159,7 +180,7 @@
 @y
     <para>
     <parameter>--enable-pcregrep-libz</parameter>:
-    このオプションは <command>pcregrep</command> に対して、<filename class="extension">.gz</filename> により圧縮されたファイルの読込機能を付与します。
+    このスイッチは <command>pcregrep</command> に対して、<filename class="extension">.gz</filename> により圧縮されたファイルの読込機能を付与します。
     </para>
 @z
 
@@ -170,7 +191,7 @@
 @y
     <para>
     <parameter>--enable-pcregrep-libbz2</parameter>:
-    このオプションは <command>pcregrep</command> に対して、<filename class="extension">.bz2</filename> により圧縮されたファイルの読込機能を付与します。
+    このスイッチは <command>pcregrep</command> に対して、<filename class="extension">.bz2</filename> により圧縮されたファイルの読込機能を付与します。
     </para>
 @z
 
