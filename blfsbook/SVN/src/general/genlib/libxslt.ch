@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libxslt</title>
 @y
-    <title>libxslt の概略</title>
+    <title>&IntroductionTo1;libxslt&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libxslt-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libxslt-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libxslt-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libxslt-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libxslt-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libxslt-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libxslt-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libxslt-md5sum;</para>
+        <para>&Download; MD5 sum: &libxslt-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libxslt-size;</para>
 @y
-        <para>ダウンロードサイズ: &libxslt-size;</para>
+        <para>&DownloadSize;: &libxslt-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">libxslt Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libxslt の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libxslt&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -108,7 +108,7 @@
 @x
     <title>Installation of libxslt</title>
 @y
-    <title>libxslt のインストール</title>
+    <title>&InstallationOf1;libxslt&InstallationOf2;</title>
 @z
 
 @x

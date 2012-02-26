@@ -22,7 +22,7 @@
 @x
     <title>Introduction to Gamin</title>
 @y
-    <title>Gamin の概要</title>
+    <title>&IntroductionTo1;Gamin&IntroductionTo2;</title>
 @z
 
 @x
@@ -53,25 +53,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gamin-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gamin-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gamin-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gamin-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gamin-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gamin-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gamin-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gamin-md5sum;</para>
+        <para>&Download; MD5 sum: &gamin-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gamin-size;</para>
 @y
-        <para>ダウンロードサイズ: &gamin-size;</para>
+        <para>&DownloadSize;: &gamin-size;</para>
 @z
 
 @x
@@ -89,7 +89,7 @@
 @x
     <bridgehead renderas="sect3">Gamin Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Gamin の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Gamin&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -119,7 +119,7 @@
 @x
     <title>Installation of Gamin</title>
 @y
-    <title>Gamin のインストール</title>
+    <title>&InstallationOf1;Gamin&InstallationOf2;</title>
 @z
 
 @x
@@ -161,14 +161,14 @@
 @y
     <para>
     <option>--disable-static</option>:
-    このパラメーターは、ほぼすべてのスタティックライブラリをビルドしないようにします。
+    このスイッチは、ほぼすべてのスタティックライブラリをビルドしないようにします。
     </para>
 @z
 
 @x
     <title>Configuring Gamin</title>
 @y
-    <title>Gamin の設定</title>
+    <title>&Configuring1;Gamin&Configuring2;</title>
 @z
 
 @x

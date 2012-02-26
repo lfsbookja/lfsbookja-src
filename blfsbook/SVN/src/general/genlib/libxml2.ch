@@ -24,7 +24,7 @@
 @x
     <title>Introduction to libxml2</title>
 @y
-    <title>libxml2 のインストール</title>
+    <title>&IntroductionTo1;libxml2&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libxml2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libxml2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libxml2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libxml2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libxml2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libxml2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libxml2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libxml2-md5sum;</para>
+        <para>&Download; MD5 sum: &libxml2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libxml2-size;</para>
 @y
-        <para>ダウンロードサイズ: &libxml2-size;</para>
+        <para>&DownloadSize;: &libxml2-size;</para>
 @z
 
 @x
@@ -99,7 +99,7 @@
 @x
     <bridgehead renderas="sect3">libxml2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libxml2 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libxml2&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -143,7 +143,7 @@
 @x
     <title>Installation of libxml2</title>
 @y
-    <title>libxml2 のインストール</title>
+    <title>&InstallationOf1;libxml2&InstallationOf2;</title>
 @z
 
 @x
@@ -222,7 +222,7 @@
 @y
     <para>
     <parameter>--enable-shared --disable-static</parameter>:
-    この２つのオプションを指定すれば、スタティックライブラリのビルドとインストールが行われなくなります。
+    この２つのスイッチを指定すれば、スタティックライブラリのビルドとインストールが行われなくなります。
     </para>
 @z
 

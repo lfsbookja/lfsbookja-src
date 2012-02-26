@@ -22,7 +22,7 @@
 @x
     <title>Introduction to Popt</title>
 @y
-    <title>Popt の概要</title>
+    <title>&IntroductionTo1;Popt&IntroductionTo2;</title>
 @z
 
 @x
@@ -30,10 +30,9 @@
     <application>popt</application> libraries which are used by
     some programs to parse command-line options.</para>
 @y
-<para>
-<application>popt</application> パッケージは <application>popt</application>
-ライブラリを提供するもので、コマンドラインオプションを処理するプログラムが利用します。
-</para>
+    <para>
+    <application>popt</application> パッケージは <application>popt</application> ライブラリを提供するもので、コマンドラインオプションを処理するプログラムが利用します。
+    </para>
 @z
 
 @x
@@ -45,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&popt-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&popt-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&popt-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&popt-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&popt-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&popt-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &popt-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &popt-md5sum;</para>
+        <para>&Download; MD5 sum: &popt-md5sum;</para>
 @z
 
 @x
         <para>Download size: &popt-size;</para>
 @y
-        <para>ダウンロードサイズ: &popt-size;</para>
+        <para>&DownloadSize;: &popt-size;</para>
 @z
 
 @x
@@ -89,45 +88,41 @@
 @x
     <title>Installation of Popt</title>
 @y
-    <title>Popt のインストール</title>
+    <title>&InstallationOf1;Popt&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>popt</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>popt</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>popt</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>If you have <xref linkend="doxygen"/> installed and wish to build
     the API documentation, issue <command>doxygen</command>.</para>
 @y
-<para>
-<xref linkend="doxygen"/>
-をインストール済であって API ドキュメントをビルドする場合は
-<command>doxygen</command> を実行します。
-</para>
+    <para>
+    <xref linkend="doxygen"/> をインストール済であって API ドキュメントをビルドする場合は <command>doxygen</command> を実行します。
+    </para>
 @z
 
 @x
     <para>To test the results, issue:</para>
 @y
-<para>
-コンパイル結果をテストする場合は以下を実行します。
-</para>
+    <para>
+    コンパイル結果をテストする場合は以下を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーとなって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
@@ -135,11 +130,10 @@
     commands issued by the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-API ドキュメントをビルドした場合は
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行しドキュメントをインストールします。
-</para>
+    <para>
+    API ドキュメントをビルドした場合は <systemitem
+    class="username">root</systemitem> ユーザーになって以下を実行しドキュメントをインストールします。
+    </para>
 @z
 
 @x
@@ -163,7 +157,7 @@ API ドキュメントをビルドした場合は
         <seg>libpopt.{so,a}</seg>
         <seg>/usr/share/doc/popt-&popt-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libpopt.{so,a}</seg>
         <seg>/usr/share/doc/popt-&popt-version;</seg>
 @z
@@ -177,8 +171,7 @@ API ドキュメントをビルドした場合は
 @x libpopt
         <para> is used to parse command-line options.</para>
 @y
-<para>
-コマンドラインオプションを処理するために利用します。
-</para>
+        <para>
+        コマンドラインオプションを処理するために利用します。
+        </para>
 @z
-

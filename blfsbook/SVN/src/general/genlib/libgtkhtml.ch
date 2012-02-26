@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libgtkhtml</title>
 @y
-    <title>libgtkhtml の概要</title>
+    <title>&IntroductionTo1;libgtkhtml&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,12 +24,10 @@
     <filename class="libraryfile">libgtkhtml-2</filename> library. This
     library provides an API for rendering HTML.</para>
 @y
-<para>
-<application>libgtkhtml</application> パッケージは
-<filename class="libraryfile">libgtkhtml-2</filename>
-ライブラリを提供します。
-これは HTML をレンダリングする API を提供するものです。
-</para>
+    <para>
+    <application>libgtkhtml</application> パッケージは <filename class="libraryfile">libgtkhtml-2</filename> ライブラリを提供します。
+    これは HTML をレンダリングする API を提供するものです。
+    </para>
 @z
 
 @x
@@ -41,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libgtkhtml-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libgtkhtml-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libgtkhtml-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libgtkhtml-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libgtkhtml-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libgtkhtml-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libgtkhtml-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libgtkhtml-md5sum;</para>
+        <para>&Download; MD5 sum: &libgtkhtml-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libgtkhtml-size;</para>
 @y
-        <para>ダウンロードサイズ: &libgtkhtml-size;</para>
+        <para>&DownloadSize;: &libgtkhtml-size;</para>
 @z
 
 @x
@@ -77,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">libgtkhtml Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgtkhtml の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgtkhtml&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -96,7 +94,7 @@
       Gail no longer required since libgailutil is now part of GTK+.-->
     <xref linkend="gnome-vfs"/> (only used in the test suite)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><!--<xref linkend="gail"/> and
       Gail no longer required since libgailutil is now part of GTK+.-->
     <xref linkend="gnome-vfs"/> (テストスイート実行時のみ必要)</para>
@@ -113,17 +111,16 @@
 @x
     <title>Installation of libgtkhtml</title>
 @y
-    <title>libgtkhtml のインストール</title>
+    <title>&InstallationOf1;libgtkhtml&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libgtkhtml</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libgtkhtml</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libgtkhtml</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -131,45 +128,20 @@
     program which includes many test cases; if desired, issue:
     <command>( cd tests; ./testgtkhtml )</command></para>
 @y
-<para>
-&notTestSuite;
-ただしテストプログラムがあって、数多くのテストケースを実施することができます。
-これを実行したい場合は
-<command>( cd tests; ./testgtkhtml )</command>
-を実行します。
-</para>
+    <para>
+    &notTestSuite;
+    ただしテストプログラムがあって、数多くのテストケースを実施することができます。
+    これを実行したい場合は <command>( cd tests; ./testgtkhtml )</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
-
-% @x
-%     <title>Command Explanations</title>
-% @y
-%     <title>&CommandExplanations;</title>
-% @z
-% 
-% @x
-%     <para><parameter>--disable-accessibility</parameter>: This forces the
-%     package to build without linking to the
-%     <filename class='libraryfile'>libgailutil</filename> accessibility
-%     library. Remove this switch if you have <application>GAIL</application>
-%     installed.</para>
-% @y
-% <para>
-% <parameter>--disable-accessibility</parameter>:
-% このオプションは <filename class='libraryfile'>libgailutil</filename>
-% ライブラリをリンクせずにビルドすることを指示します。
-% <application>GAIL</application>
-% をインストールしている場合は、このオプションを指定しないでください。
-% </para>
-% @z
 
 @x
     <title>Contents</title>
@@ -192,7 +164,7 @@
         <seg>libgtkhtml-2.{so,a}</seg>
         <seg>/usr/include/gtkhtml-2.0</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libgtkhtml-2.{so,a}</seg>
         <seg>/usr/include/gtkhtml-2.0</seg>
 @z
@@ -207,8 +179,7 @@
           <para>provides the functions necessary to render and/or
           edit HTML.</para>
 @y
-<para>
-HTML をレンダリングまたは編集するために必要な関数を提供します。
-</para>
+          <para>
+          HTML をレンダリングまたは編集するために必要な関数を提供します。
+          </para>
 @z
-
