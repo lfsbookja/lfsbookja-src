@@ -16,13 +16,13 @@
 @x
   <!ENTITY bc-time "less than 0.1 SBU (0.2 SBU if running the testsuite)">
 @y
-  <!ENTITY bc-time "less than 0.1 SBU (テストスイート実行時は 0.2 SBU)">
+  <!ENTITY bc-time "&LessThan1;0.1 SBU&LessThan2; (テストスイート実行時は 0.2 SBU)">
 @z
 
 @x
     <title>Introduction to bc</title>
 @y
-    <title>Bc の概要</title>
+    <title>&IntroductionTo1;Bc&IntroductionTo2;</title>
 @z
 
 @x
@@ -43,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&bc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&bc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&bc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&bc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&bc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&bc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &bc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &bc-md5sum;</para>
+        <para>&Download; MD5 sum: &bc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &bc-size;</para>
 @y
-        <para>ダウンロードサイズ: &bc-size;</para>
+        <para>&DownloadSize;: &bc-size;</para>
 @z
 
 @x
@@ -87,7 +87,7 @@
 @x
     <title>Installation of Bc</title>
 @y
-    <title>Bc のインストール</title>
+    <title>&InstallationOf1;Bc&InstallationOf2;</title>
 @z
 
 @x
@@ -168,7 +168,7 @@
     <application>Readline</application> support in interactive mode.</para>
 @y
     <para>
-    <parameter>--with-readline</parameter>: このパラメーターは、対話モード (interactive mode) にて <application>Readline</application> サポートを有効にします。
+    <parameter>--with-readline</parameter>: このオプションは、対話モード (interactive mode) にて <application>Readline</application> サポートを有効にします。
     </para>
 @z
 
@@ -194,8 +194,8 @@
         <seg>None</seg>
 @y
         <seg>bc, dc</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

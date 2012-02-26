@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libiodbc</title>
 @y
-    <title>libiodbc の概要</title>
+    <title>&IntroductionTo1;libiodbc&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libiodbc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libiodbc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libiodbc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libiodbc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libiodbc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libiodbc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libiodbc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libiodbc-md5sum;</para>
+        <para>&Download; MD5 sum: &libiodbc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libiodbc-size;</para>
 @y
-        <para>ダウンロードサイズ: &libiodbc-size;</para>
+        <para>&DownloadSize;: &libiodbc-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libiodbc Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libiodbc の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libiodbc&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -99,7 +99,7 @@
 @x
     <title>Installation of libiodbc</title>
 @y
-    <title>libiodbc のインストール</title>
+    <title>&InstallationOf1;libiodbc&InstallationOf2;</title>
 @z
 
 @x

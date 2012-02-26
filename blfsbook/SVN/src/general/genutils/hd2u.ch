@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Hd2u</title>
 @y
-    <title>Hd2u の概要</title>
+    <title>&IntroductionTo1;Hd2u&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&hd2u-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&hd2u-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&hd2u-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&hd2u-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&hd2u-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&hd2u-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &hd2u-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &hd2u-md5sum;</para>
+        <para>&Download; MD5 sum: &hd2u-md5sum;</para>
 @z
 
 @x
         <para>Download size: &hd2u-size;</para>
 @y
-        <para>ダウンロードサイズ: &hd2u-size;</para>
+        <para>&DownloadSize;: &hd2u-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">Hd2u Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Hd2u の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Hd2u&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -95,7 +95,7 @@
 @x
     <title>Installation of Hd2u</title>
 @y
-    <title>Hd2u のインストール</title>
+    <title>&InstallationOf1;Hd2u&InstallationOf2;</title>
 @z
 
 @x
@@ -110,9 +110,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -145,8 +143,8 @@
         <seg>None</seg>
 @y
         <seg>dos2unix</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

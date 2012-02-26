@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to gtk-vnc</title>
 @y
-    <title>gtk-vnc の概要</title>
+    <title>&IntroductionTo1;gtk-vnc&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gtk-vnc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gtk-vnc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gtk-vnc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gtk-vnc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gtk-vnc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gtk-vnc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gtk-vnc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gtk-vnc-md5sum;</para>
+        <para>&Download; MD5 sum: &gtk-vnc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gtk-vnc-size;</para>
 @y
-        <para>ダウンロードサイズ: &gtk-vnc-size;</para>
+        <para>&DownloadSize;: &gtk-vnc-size;</para>
 @z
 
 @x
@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">gtk-vnc Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gtk-vnc の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gtk-vnc&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -120,7 +120,7 @@
 @x
     <title>Installation of gtk-vnc</title>
 @y
-    <title>gtk-vnc のインストール</title>
+    <title>&InstallationOf1;gtk-vnc&InstallationOf2;</title>
 @z
 
 @x
@@ -136,8 +136,9 @@
     <para>This package's testsuite is only intended to be used by the
     maintainer to check the i18n files.</para>
 @y
-    <para>This package's testsuite is only intended to be used by the
-    maintainer to check the i18n files.</para>
+    <para>
+    本パッケージのテストスイートは、開発者が i18n ファイルをテストする目的でのみ提供されています。
+    </para>
 @z
 
 @x
@@ -169,7 +170,7 @@
 @y
     <para>
     <option>--enable-plugin</option>:
-    このパラメーターはブラウザープラグインを有効にします。
+    このオプションはブラウザープラグインを有効にします。
     </para>
 @z
 
@@ -191,11 +192,11 @@
 
 @x
         <seg>None</seg>
-        <seg>libgtk-vnc-1.0.{so,a}</seg>
+        <seg>libgtk-vnc-1.0.so</seg>
         <seg>/usr/include/gtk-vnc-1.0</seg>
 @y
-        <seg>なし</seg>
-        <seg>libgtk-vnc-1.0.{so,a}</seg>
+        <seg>&None;</seg>
+        <seg>libgtk-vnc-1.0.so</seg>
         <seg>/usr/include/gtk-vnc-1.0</seg>
 @z
 
