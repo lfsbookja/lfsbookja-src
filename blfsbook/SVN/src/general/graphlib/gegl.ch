@@ -16,7 +16,7 @@
 @x
     <title>Introduction to gegl</title>
 @y
-    <title>gegl の概要</title>
+    <title>&IntroductionTo1;gegl&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">gegl Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gegl の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gegl&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,7 +107,8 @@
     <xref linkend="pango"/>,
     <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
-    <xref linkend="sdl"/>
+    <xref linkend="sdl"/>,
+    <xref linkend="gobject-introspection"/>,
     <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
     <xref linkend="w3m"/>
     and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
@@ -133,10 +134,11 @@
     <xref linkend="pango"/>,
     <xref linkend="python2"/>,
     <xref linkend="ruby"/>,
-    <xref linkend="sdl"/>
+    <xref linkend="sdl"/>,
+    <xref linkend="gobject-introspection"/>,
     <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
-    <xref linkend="w3m"/>
-    and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
+    <xref linkend="w3m"/>,
+    <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
     </para>
 @z
 
@@ -151,7 +153,7 @@
 @x
     <title>Installation of gegl</title>
 @y
-    <title>gegl のインストール</title>
+    <title>&InstallationOf1;gegl&InstallationOf2;</title>
 @z
 
 @x

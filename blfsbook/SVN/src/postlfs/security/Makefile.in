@@ -173,8 +173,8 @@ CHANGE_FILES = \
 	tcpwrappers.ch \
 	tripwire.ch
 
-srcs = $(CHANGE_FILES:.ch=.xml)
 EXTRA_DIST = $(CHANGE_FILES) firewalling.sed
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 

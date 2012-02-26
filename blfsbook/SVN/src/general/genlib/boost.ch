@@ -129,16 +129,16 @@
 
 @x
         <seg>None</seg>
-        <seg>libboost_{date_time, filesystem, graph, iostreams, math_*,
-prg_exec_monitor, program_options, python, random, regex, serialization,
-signals, system, test_exec_monitor, thread, unit_test_framework,
-wave, wserialization}.{so,a}</seg>
+        <seg>libboost_{chrono, date_time, filesystem, graph, iostreams, locale, math_*,
+        prg_exec_monitor, program_options, python, random, regex, serialization,
+        signals, system, thread, unit_test_framework,
+        wave, wserialization}.{so,a}, libboost_exception.a, libboost_test_monitor.a</seg>
         <seg>/usr/include/boost</seg>
 @y
-        <seg>なし</seg>
-        <seg>libboost_{date_time, filesystem, graph, iostreams, math_*,
-prg_exec_monitor, program_options, python, random, regex, serialization,
-signals, system, test_exec_monitor, thread, unit_test_framework,
-wave, wserialization}.{so,a}</seg>
+        <seg>&None;</seg>
+        <seg>libboost_{chrono, date_time, filesystem, graph, iostreams, locale, math_*,
+        prg_exec_monitor, program_options, python, random, regex, serialization,
+        signals, system, thread, unit_test_framework,
+        wave, wserialization}.{so,a}, libboost_exception.a, libboost_test_monitor.a</seg>
         <seg>/usr/include/boost</seg>
 @z

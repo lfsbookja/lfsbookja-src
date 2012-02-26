@@ -34,9 +34,9 @@ CHANGE_FILES = \
 	syslog.ch \
 	tcpwrappers.ch \
 	tripwire.ch
-srcs = $(CHANGE_FILES:.ch=.xml)
 EXTRA_DIST = $(CHANGE_FILES) firewalling.sed
 srcdir = @srcdir@
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
