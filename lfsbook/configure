@@ -3908,23 +3908,22 @@ fi
 
 
   if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR="${datadir}/fonts/opentype"
+    IPAFONTDIR="${datadir}/fonts/opentype/ipafont"
     if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=""
+      IPAFONTDIR="${datadir}/fonts/opentype"
+      if test ! -d "${IPAFONTDIR}"; then
+        IPAFONTDIR=""
+      fi
     fi
   fi
 
   if test "x${IPAFONTDIR}" = "x"; then
     IPAFONTDIR="${datadir}/fonts/truetype/ipafont"
     if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=""
-    fi
-  fi
-
-  if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR="${datadir}/fonts/truetype"
-    if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=""
+      IPAFONTDIR="${datadir}/fonts/truetype"
+      if test ! -d "${IPAFONTDIR}"; then
+        IPAFONTDIR=""
+      fi
     fi
   fi
 

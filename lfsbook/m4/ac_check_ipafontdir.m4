@@ -7,23 +7,22 @@ AC_DEFUN([AC_CHECK_IPAFONTDIR],[
       [IPAFONTDIR="$withval"])
 
   if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR="${datadir}/fonts/opentype"
+    IPAFONTDIR="${datadir}/fonts/opentype/ipafont"
     if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=""
+      IPAFONTDIR="${datadir}/fonts/opentype"
+      if test ! -d "${IPAFONTDIR}"; then
+        IPAFONTDIR=""
+      fi
     fi
   fi
 
   if test "x${IPAFONTDIR}" = "x"; then
     IPAFONTDIR="${datadir}/fonts/truetype/ipafont"
     if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=""
-    fi
-  fi
-
-  if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR="${datadir}/fonts/truetype"
-    if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=""
+      IPAFONTDIR="${datadir}/fonts/truetype"
+      if test ! -d "${IPAFONTDIR}"; then
+        IPAFONTDIR=""
+      fi
     fi
   fi
 
@@ -36,7 +35,7 @@ AC_DEFUN([AC_CHECK_IPAFONTDIR],[
 
   if test "x${IPAFONTDIR}" = "x"; then
     AC_MSG_RESULT([not found])
-    AC_MSG_WARN([Building PDF version unavailable])
+    AC_MSG_WARN([PDF version cannot be built.])
     IPA="#"
   else
 
