@@ -51,6 +51,22 @@
       <para>2012-02-24</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Minor changes to ifup boot script.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプト ifup の若干の変更。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-02-24</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Add a patch for glibc that fixes a problem
           (segfault) for dlopen() in some cases.</para>
         </listitem>
