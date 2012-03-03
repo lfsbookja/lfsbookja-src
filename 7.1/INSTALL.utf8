@@ -1,0 +1,58 @@
+ビルド方法
+
+1. 前提環境(パッケージ)
+
+    * 本配布は Linux 上にて構築することを想定しています。
+      Unix 互換環境でもビルドできると思いますが検証はしていません。
+    * 本配布ではビルドのために、標準的な開発ツールとして Cコンパイラおよび
+      make を必要とします。
+    * さらに以下のツールまたはパッケージが必要です。
+          o Docbook XML DTD 4.5 (4.5 は必須です)
+          o Docbook XSL stylesheets
+          o xmllint (libxml2)
+          o xsltproc (libxslt) 
+    * また tarball 解凍のために tar, bzip2 が必要です。
+    * Subversion リポジトリから最新のソースを入手する場合には Subversion
+      が必要です。 
+
+2. ソースの入手
+
+    * 本配布はオリジナル LFS ブックの XML ソースを必要とします。
+      LFS サイトの以下のURLから、ソース tarball を入手します。
+      tarball 名は、安定版の場合 LFS-BOOK-Version-XML.tar.bz2、
+      SVN版の場合 LFS-BOOK-SVN-Date.tar.bz2 といったファイルになっています。
+          o http://www.linuxfromscratch.org/lfs/downloads/stable/ (安定版の場合)
+          o http://www.linuxfromscratch.org/lfs/downloads/development/ (SVN版の場合) 
+
+    * 本配布のソースを入手します。安定版とSVN版があります。
+      いずれの版も鋭意開発を続けており、その最新は本サイト内の Subversion
+      リポジトリより入手することもできます。 
+
+3. ビルド手順
+
+    * 本配布のソースを適当なディレクトリに展開(解凍)します。
+      YYYYMMDD はバージョンを示します。
+
+      % cd /usr/local/src
+      % tar -xf /path/to/download/lfsbookja-YYYYMMDD.tar.gz
+
+    * LFS ブックのオリジナル XML ソースを、同じように展開(解凍)します。
+
+      % cd /usr/local/src
+      % tar -xf /path/to/download/LFS-BOOK-7.1-XML.tar.bz2
+
+    * 本配布のソースディレクトリに入って configure, make を実行します。
+
+      % cd /usr/local/src/lfsbookja-YYYYMMDD
+      % ./configure && make
+
+    * 現時点において make install は整備できていません。
+      上の make コマンド実行により、ソースディレクトリ配下に 7.1.ja
+      のようなサブディレクトリが生成され、そこに HTML ソース一式が
+      生成されます。これが成果物となります。 
+
+    * configure のオプションとして --with-bookdir を設けています。
+      デフォルトでオリジナル XML ソースツリーは、本配布のソースツリーと
+      横並びの場所に配置するものとしており、さらにディレクトリ名を固定的に
+      決めうちしています。--with-bookdir オプションを指定すれば、
+      そのディレクトリパスを変更することができます。 
