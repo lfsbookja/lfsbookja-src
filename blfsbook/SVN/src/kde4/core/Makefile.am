@@ -5,9 +5,9 @@ CHANGE_FILES = \
 	qimageblitz.ch \
 	kde4bindings.ch \
 	polkit-qt.ch \
-	phonon-backend-xine.ch \
 	kde4base.ch \
 	phonon-backend-gstreamer.ch \
+	phonon-backend-vlc.ch \
 	attica.ch \
 	kde4graphics.ch \
 	akonadi.ch \
@@ -36,9 +36,9 @@ automoc4.xml:                 $(BOOKdir)/$@ $(srcdir)/automoc4.ch
 qimageblitz.xml:              $(BOOKdir)/$@ $(srcdir)/qimageblitz.ch
 kde4bindings.xml:             $(BOOKdir)/$@ $(srcdir)/kde4bindings.ch
 polkit-qt.xml:                $(BOOKdir)/$@ $(srcdir)/polkit-qt.ch
-phonon-backend-xine.xml:      $(BOOKdir)/$@ $(srcdir)/phonon-backend-xine.ch
 kde4base.xml:                 $(BOOKdir)/$@ $(srcdir)/kde4base.ch
 phonon-backend-gstreamer.xml: $(BOOKdir)/$@ $(srcdir)/phonon-backend-gstreamer.ch
+phonon-backend-vlc.xml:       $(BOOKdir)/$@ $(srcdir)/phonon-backend-vlc.ch
 attica.xml:                   $(BOOKdir)/$@ $(srcdir)/attica.ch
 kde4graphics.xml:             $(BOOKdir)/$@ $(srcdir)/kde4graphics.ch
 akonadi.xml:                  $(BOOKdir)/$@ $(srcdir)/akonadi.ch

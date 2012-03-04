@@ -4,7 +4,6 @@ CHANGE_FILES = \
 	cairo.ch \
 	freeglut.ch \
 	goffice.ch \
-	gtk+.ch \
 	gtk+2.ch \
 	hicolor-icon-theme.ch \
 	lesstif.ch \
@@ -47,7 +46,6 @@ atk.xml:                  $(BOOKdir)/$@ $(srcdir)/atk.ch
 cairo.xml:                $(BOOKdir)/$@ $(srcdir)/cairo.ch
 freeglut.xml:             $(BOOKdir)/$@ $(srcdir)/freeglut.ch
 goffice.xml:              $(BOOKdir)/$@ $(srcdir)/goffice.ch
-gtk+.xml:                 $(BOOKdir)/$@ $(srcdir)/gtk+.ch
 gtk+2.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
 hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
 lesstif.xml:              $(BOOKdir)/$@ $(srcdir)/lesstif.ch

@@ -16,18 +16,18 @@
 @x
     <title>Introduction to Phonon</title>
 @y
-    <title>Phonon のインストール</title>
+    <title>&IntroductionTo1;Phonon&IntroductionTo2;</title>
 @z
 
 @x
     <para><application>Phonon</application> is the multimedia API for KDE4.
     It replaces the old <application>aRts</application>, that is not more 
-    supported by KDE. It supports backends like xine, GStreamer etc.</para>
+    supported by KDE. It supports backends like GStreamer and VLC.</para>
 @y
     <para>
     <application>Phonon</application> は KDE4 に対するマルチメディア API です。
     <application>aRts</application> はすでに KDE によりサポートされなくなり、本パッケージはそれに置き換わるものです。
-    本パッケージは xine や GStreamer のバックエンドとなります。
+    本パッケージは GStreamer や VLC のバックエンドとなります。
     </para>
 @z
 
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&phonon-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&phonon-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&phonon-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&phonon-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&phonon-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&phonon-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &phonon-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &phonon-md5sum;</para>
+        <para>&Download; MD5 sum: &phonon-md5sum;</para>
 @z
 
 @x
         <para>Download size: &phonon-size;</para>
 @y
-        <para>ダウンロードサイズ: &phonon-size;</para>
+        <para>&DownloadSize;: &phonon-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">Phonon Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Phonon の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Phonon&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -94,29 +94,17 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-    <xref linkend="xine-lib"/>, 
-    <xref linkend="gstreamer"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-    <xref linkend="xine-lib"/>, 
-    <xref linkend="gstreamer"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend='pulseaudio'/>
-    </para>
+      <xref linkend='pulseaudio'/>, 
+      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+    </para>   
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend='pulseaudio'/>
-    </para>
+      <xref linkend='pulseaudio'/>, 
+      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+    </para>   
 @z
 
 @x
@@ -130,7 +118,7 @@
 @x
     <title>Installation of Phonon</title>
 @y
-    <title>Phonon のインストール</title>
+    <title>&InstallationOf1;Phonon&InstallationOf2;</title>
 @z
 
 @x
@@ -188,7 +176,7 @@
         <seg>libphonon.so, libphononexperimental.so</seg>
         <seg>none</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libphonon.so, libphononexperimental.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z

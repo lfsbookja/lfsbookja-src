@@ -1,19 +1,19 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
 EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
-	lzma-utils.ch mc.ch pciutils.ch sysstat.ch sysutils.ch \
+	mc.ch pciutils.ch sysstat.ch sysutils.ch \
 	unrar.ch unzip.ch usbutils.ch which.ch zip.ch \
 	DeviceKit.ch udev.ch \
-	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch xz-utils.ch \
+	sg3_utils.ch parted.ch eject.ch udisks.ch upower.ch \
 	gvfs.ch libarchive.ch \
 	raptor.ch redland.ch rasqal.ch strigi.ch \
 	autofs.ch initdtools.ch dbus-bindings.ch \
 	packagekit.ch tracker.ch
 srcdir = @srcdir@
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
-	lzma-utils.xml mc.xml pciutils.xml sysstat.xml sysutils.xml \
+	mc.xml pciutils.xml sysstat.xml sysutils.xml \
 	unrar.xml unzip.xml usbutils.xml which.xml zip.xml \
 	DeviceKit.xml udev.xml \
-	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml xz-utils.xml \
+	sg3_utils.xml parted.xml eject.xml udisks.xml upower.xml \
 	gvfs.xml libarchive.xml \
 	raptor.xml redland.xml rasqal.xml strigi.xml \
 	autofs.xml initdtools.xml dbus-bindings.xml \
@@ -34,7 +34,6 @@ fcron.xml: $(BOOKdir)/$@ $(srcdir)/fcron.ch
 gpm.xml: $(BOOKdir)/$@ $(srcdir)/gpm.ch
 hal.xml: $(BOOKdir)/$@ $(srcdir)/hal.ch
 hdparm.xml: $(BOOKdir)/$@ $(srcdir)/hdparm.ch
-lzma-utils.xml: $(BOOKdir)/$@ $(srcdir)/lzma-utils.ch
 mc.xml: $(BOOKdir)/$@ $(srcdir)/mc.ch
 pciutils.xml: $(BOOKdir)/$@ $(srcdir)/pciutils.ch
 sysstat.xml: $(BOOKdir)/$@ $(srcdir)/sysstat.ch
@@ -51,7 +50,6 @@ parted.xml: $(BOOKdir)/$@ $(srcdir)/parted.ch
 eject.xml: $(BOOKdir)/$@ $(srcdir)/eject.ch
 udisks.xml: $(BOOKdir)/$@ $(srcdir)/udisks.ch
 upower.xml: $(BOOKdir)/$@ $(srcdir)/upower.ch
-xz-utils.xml: $(BOOKdir)/$@ $(srcdir)/xz-utils.ch
 gvfs.xml: $(BOOKdir)/$@ $(srcdir)/gvfs.ch
 libarchive.xml: $(BOOKdir)/$@ $(srcdir)/libarchive.ch
 raptor.xml: $(BOOKdir)/$@ $(srcdir)/raptor.ch

@@ -1,5 +1,6 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/genutils
 CHANGE_FILES = \
+	apr-util.ch \
 	bc.ch \
 	compface.ch \
 	desktop-file-utils.ch \
@@ -40,6 +41,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+apr-util.xml:           $(BOOKdir)/$@ $(srcdir)/apr-util.ch
 bc.xml:                 $(BOOKdir)/$@ $(srcdir)/bc.ch
 compface.xml:           $(BOOKdir)/$@ $(srcdir)/compface.ch
 desktop-file-utils.xml: $(BOOKdir)/$@ $(srcdir)/desktop-file-utils.ch

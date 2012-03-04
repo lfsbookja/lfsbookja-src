@@ -18,13 +18,13 @@
   <!ENTITY slib-time          "less than 0.1 SBU">
 @y
   <!ENTITY slib-buildsize     "31 MB (includes building and installing docs)">
-  <!ENTITY slib-time          "less than 0.1 SBU">
+  <!ENTITY slib-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to SLIB</title>
 @y
-    <title>SLIB の概要</title>
+    <title>&IntroductionTo1;SLIB&IntroductionTo2;</title>
 @z
 
 @x
@@ -60,25 +60,25 @@
 @x
         <para>Download (HTTP): <ulink url="&slib-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&slib-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&slib-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&slib-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&slib-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&slib-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &slib-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &slib-md5sum;</para>
+        <para>&Download; MD5 sum: &slib-md5sum;</para>
 @z
 
 @x
         <para>Download size: &slib-size;</para>
 @y
-        <para>ダウンロードサイズ: &slib-size;</para>
+        <para>&DownloadSize;: &slib-size;</para>
 @z
 
 @x
@@ -96,7 +96,7 @@
 @x
     <bridgehead renderas="sect3">SLIB Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">SLIB の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;SLIB&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -126,7 +126,7 @@
 @x
     <title>Installation of SLIB</title>
 @y
-    <title>SLIB のインストール</title>
+    <title>&InstallationOf1;SLIB&InstallationOf2;</title>
 @z
 
 @x
@@ -139,9 +139,9 @@
 @z
 
 @x
-    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
-    installed and wish to build PDF or Postscript documentation, issue any or
-    all of the following commands:</para>
+    <para>If you have <xref linkend="texlive"/> installed and wish to build PDF
+    or Postscript documentation, issue any or all of the following
+    commands:</para>
 @y
     <para>
     <xref linkend="texlive"/> をインストールしていて PDF や Postscript ドキュメントをビルドしたい場合は、以下のいずれかのコマンド、あるいはすべてのコマンドを実行します。
@@ -151,30 +151,15 @@
 @x
     <para>This package does not come with a functional test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <para>If you have <xref linkend="guile"/> installed, create the following
-    symbolic link as the <systemitem class="username">root</systemitem> user to
-    satisfy <application>Guile</application>'s default
-    <quote>Implementation Vicinity</quote> directory.</para>
-@y
-    <para>
-    If you have <xref linkend="guile"/> installed, create the following
-    symbolic link as the <systemitem class="username">root</systemitem> user to
-    satisfy <application>Guile</application>'s default
-    <quote>Implementation Vicinity</quote> directory.
     </para>
 @z
 
@@ -183,12 +168,9 @@
     following command as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-    <para>
-    
-    If you built any of the optional documentation, install it using the
+    <para>If you built any of the optional documentation, install it using the
     following command as the <systemitem class="username">root</systemitem>
-    user:
-    </para>
+    user:</para>
 @z
 
 @x
@@ -200,13 +182,11 @@
 @x
     <para><command>sed -i 's|usr/lib|usr/share|' RScheme.init</command>:
     This command is used to change the <envar>libdir</envar> variable embedded
-    in the script to match the installation variable.</para>
+    in the script to match the installation.</para>
 @y
-    <para>
-    <command>sed -i 's|usr/lib|usr/share|' RScheme.init</command>:
+    <para><command>sed -i 's|usr/lib|usr/share|' RScheme.init</command>:
     This command is used to change the <envar>libdir</envar> variable embedded
-    in the script to match the installation variable.
-    </para>
+    in the script to match the installation.</para>
 @z
 
 @x
@@ -222,51 +202,9 @@
 @z
 
 @x
-    <title>Configuring SLIB</title>
-@y
-    <title>SLIB の設定</title>
-@z
-
-@x
-    <para>For many of the Scheme implementations, an
-    <application>SLIB</application> Scheme implementation catalog  must be
-    created. If you have <xref linkend="guile"/> installed to support a
-    <application>GnuCash</application> installation, you must create a
-    catalog. You can use the <command>make catalogs</command> command, but
-    there will be many warnings and confusing messages as it tries to create
-    a catalog for many of the possible Scheme implementations which are
-    probably not installed on the system. To create a single catalog just
-    for the <application>Guile</application> installation, issue the following
-    command as the <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    
-    For many of the Scheme implementations, an
-    <application>SLIB</application> Scheme implementation catalog  must be
-    created. If you have <xref linkend="guile"/> installed to support a
-    <application>GnuCash</application> installation, you must create a
-    catalog. You can use the <command>make catalogs</command> command, but
-    there will be many warnings and confusing messages as it tries to create
-    a catalog for many of the possible Scheme implementations which are
-    probably not installed on the system. To create a single catalog just
-    for the <application>Guile</application> installation, issue the following
-    command as the <systemitem class="username">root</systemitem> user:</para>
-@z
-
-@x
-    <para>If there was no output from the previous command, and the file
-    <filename>/usr/share/guile/1.8/slibcat</filename> now exists, the catalog
-    was properly created.</para>
-@y
-    <para>If there was no output from the previous command, and the file
-    <filename>/usr/share/guile/1.8/slibcat</filename> now exists, the catalog
-    was properly created.</para>
-@z
-
-@x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -274,9 +212,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -292,7 +230,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x slib

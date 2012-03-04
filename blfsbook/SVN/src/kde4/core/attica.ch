@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Attica</title>
 @y
-    <title>Attica の概要</title>
+    <title>&IntroductionTo1;Attica&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&attica-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&attica-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&attica-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&attica-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&attica-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&attica-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &attica-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &attica-md5sum;</para>
+        <para>&Download; MD5 sum: &attica-md5sum;</para>
 @z
 
 @x
         <para>Download size: &attica-size;</para>
 @y
-        <para>ダウンロードサイズ: &attica-size;</para>
+        <para>&DownloadSize;: &attica-size;</para>
 @z
 
 @x
@@ -74,18 +74,18 @@
 @x
     <bridgehead renderas="sect3">Attica Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Attica の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Attica&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>, <xref linkend="qt4"/>
+    <xref linkend="qt4"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>, <xref linkend="qt4"/>
+    <xref linkend="qt4"/>
     </para>
 @z
 
@@ -100,7 +100,7 @@
 @x
     <title>Installation of Attica</title>
 @y
-    <title>Attica のインストール</title>
+    <title>&InstallationOf1;Attica&InstallationOf2;</title>
 @z
 
 @x
@@ -135,9 +135,9 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -147,9 +147,9 @@
 @x
         <seg>None</seg>
         <seg>libattica.so</seg>
-        <seg>None</seg>
+	<seg>$KDE4_PREFIX/include/attica</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libattica.so</seg>
-        <seg>なし</seg>
+	<seg>$KDE4_PREFIX/include/attica</seg>
 @z

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Akonadi</title>
 @y
-    <title>Akonadi の概要</title>
+    <title>&IntroductionTo1;Akonadi&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&akonadi-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&akonadi-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&akonadi-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&akonadi-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&akonadi-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&akonadi-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &akonadi-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &akonadi-md5sum;</para>
+        <para>&Download; MD5 sum: &akonadi-md5sum;</para>
 @z
 
 @x
         <para>Download size: &akonadi-size;</para>
 @y
-        <para>ダウンロードサイズ: &akonadi-size;</para>
+        <para>&DownloadSize;: &akonadi-size;</para>
 @z
 
 @x
@@ -76,12 +76,13 @@
 @x
     <bridgehead renderas="sect3">Akonadi Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Akonadi の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Akonadi&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+    <xref linkend="automoc4"/>, 
     <xref linkend="shared-mime-info"/>, 
     <xref linkend="boost"/>, 
     <xref linkend="soprano"/>
@@ -89,6 +90,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+    <xref linkend="automoc4"/>, 
     <xref linkend="shared-mime-info"/>, 
     <xref linkend="boost"/>, 
     <xref linkend="soprano"/>
@@ -98,12 +100,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="sqlite"/>
+    <xref linkend="sqlite"/>, 
+    <xref linkend="mysql"/> and
+    <xref linkend="postgresql"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="sqlite"/>
+    <xref linkend="sqlite"/>, 
+    <xref linkend="mysql"/>,
+    <xref linkend="postgresql"/>
     </para>
 @z
 
@@ -118,7 +124,7 @@
 @x
     <title>Installation of Akonadi</title>
 @y
-    <title>Akonadi のインストール</title>
+    <title>&InstallationOf1;Akonadi&InstallationOf2;</title>
 @z
 
 @x
@@ -169,8 +175,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -179,12 +185,12 @@
 
 @x
         <seg>akonadi_agent_server, akonadi_agent_launcher, akonadiserver, 
-        akonadictl, akonadi_control, akonadi_rds</seg>
-        <seg>libakonadiprotocolinternals.so, libqsqlite3.so</seg>
-        <seg>none</seg>
+        akonadictl, akonadi_control and akonadi_rds</seg>
+        <seg>libakonadiprotocolinternals.so and libqsqlite3.so</seg>
+	<seg>$KDE4_PREFIX/share/config/akonadi and $KDE4_PREFIX/include/akonadi</seg>
 @y
         <seg>akonadi_agent_server, akonadi_agent_launcher, akonadiserver, 
         akonadictl, akonadi_control, akonadi_rds</seg>
         <seg>libakonadiprotocolinternals.so, libqsqlite3.so</seg>
-        <seg>なし</seg>
+	<seg>$KDE4_PREFIX/share/config/akonadi, $KDE4_PREFIX/include/akonadi</seg>
 @z

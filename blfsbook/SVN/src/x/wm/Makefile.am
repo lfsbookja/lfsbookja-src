@@ -1,7 +1,15 @@
 BOOKdir = $(top_builddir)/@bookdir@/x/wm
-EXTRA_DIST = fluxbox.ch other-wms.ch sawfish.ch wm.ch xfce.ch
+CHANGE_FILES = \
+	fluxbox.ch \
+	other-wms.ch \
+	openbox.ch \
+	sawfish.ch \
+	wm.ch \
+	xfce.ch
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = fluxbox.xml other-wms.xml sawfish.xml wm.xml xfce.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
+
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -16,6 +24,7 @@ other-wms.xml.tmp: $(BOOKdir)/other-wms.xml
 	sed -e "s/Motif\xAE/Motif\&reg;/" $^ > $@
 other-wms.xml: ./other-wms.xml.tmp $(srcdir)/other-wms.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
+openbox.xml: $(BOOKdir)/$@ $(srcdir)/openbox.ch
 sawfish.xml: $(BOOKdir)/$@ $(srcdir)/sawfish.ch
-wm.xml: $(BOOKdir)/$@ $(srcdir)/wm.ch
-xfce.xml: $(BOOKdir)/$@ $(srcdir)/xfce.ch
+wm.xml:      $(BOOKdir)/$@ $(srcdir)/wm.ch
+xfce.xml:    $(BOOKdir)/$@ $(srcdir)/xfce.ch

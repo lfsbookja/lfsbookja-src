@@ -137,16 +137,16 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/general/prog
-EXTRA_DIST = dejagnu.ch doxygen.ch expect.ch gc.ch gcc.ch gcc2.ch \
-	gcc3.ch guile.ch jdk.ch junit.ch librep.ch nasm.ch other-tools.ch \
+EXTRA_DIST = dejagnu.ch doxygen.ch expect.ch gc.ch gcc.ch \
+	guile.ch jdk.ch junit.ch librep.ch nasm.ch other-tools.ch \
 	pdl.ch perl-modules.ch php.ch prog.ch python-modules.ch python2.ch \
 	python3.ch ruby.ch tcl.ch tk.ch slang.ch icedtea6.ch \
 	cmake.ch cvs.ch pkgconfig.ch subversion.ch check.ch \
 	cvsserver.ch svnserver.ch yasm.ch llvm.ch gdb.ch \
 	spidermonkey.ch vala.ch git.ch
 
-srcs = dejagnu.xml doxygen.xml expect.xml gc.xml gcc.xml gcc2.xml \
-	gcc3.xml guile.xml jdk.xml junit.xml librep.xml nasm.xml \
+srcs = dejagnu.xml doxygen.xml expect.xml gc.xml gcc.xml \
+	guile.xml jdk.xml junit.xml librep.xml nasm.xml \
 	other-tools.xml \
 	pdl.xml perl-modules.xml php.xml prog.xml python-modules.xml \
 	python2.xml \
@@ -352,8 +352,6 @@ doxygen.xml: $(BOOKdir)/$@ $(srcdir)/doxygen.ch
 expect.xml: $(BOOKdir)/$@ $(srcdir)/expect.ch
 gc.xml: $(BOOKdir)/$@ $(srcdir)/gc.ch
 gcc.xml: $(BOOKdir)/$@ $(srcdir)/gcc.ch
-gcc2.xml: $(BOOKdir)/$@ $(srcdir)/gcc2.ch
-gcc3.xml: $(BOOKdir)/$@ $(srcdir)/gcc3.ch
 guile.xml: $(BOOKdir)/$@ $(srcdir)/guile.ch
 jdk.xml: $(BOOKdir)/$@ $(srcdir)/jdk.ch
 junit.xml: $(BOOKdir)/$@ $(srcdir)/junit.ch

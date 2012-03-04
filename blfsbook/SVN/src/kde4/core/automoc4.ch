@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Automoc4</title>
 @y
-    <title>Automoc4 の概要</title>
+    <title>&IntroductionTo1;Automoc4&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&automoc4-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&automoc4-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&automoc4-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&automoc4-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&automoc4-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&automoc4-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &automoc4-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &automoc4-md5sum;</para>
+        <para>&Download; MD5 sum: &automoc4-md5sum;</para>
 @z
 
 @x
         <para>Download size: &automoc4-size;</para>
 @y
-        <para>ダウンロードサイズ: &automoc4-size;</para>
+        <para>&DownloadSize;: &automoc4-size;</para>
 @z
 
 @x
@@ -74,18 +74,20 @@
 @x
     <bridgehead renderas="sect3">Automoc4 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Automoc4 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Automoc4&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>
+    <xref linkend="cmake"/> and
+    <xref linkend="qt4"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>
+    <xref linkend="cmake"/>,
+    <xref linkend="qt4"/>
     </para>
 @z
 
@@ -100,7 +102,7 @@
 @x
     <title>Installation of Automoc4</title>
 @y
-    <title>Automoc4 のインストール</title>
+    <title>&InstallationOf1;Automoc4&InstallationOf2;</title>
 @z
 
 @x
@@ -129,9 +131,9 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -144,8 +146,8 @@
         <seg>none</seg>
 @y
         <seg>automoc4</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

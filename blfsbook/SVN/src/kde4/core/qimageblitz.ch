@@ -16,7 +16,7 @@
 @x
     <title>Introduction to QImageblitz</title>
 @y
-    <title>QImageblitz の概要</title>
+    <title>&IntroductionTo1;QImageblitz&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&qimageblitz-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&qimageblitz-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&qimageblitz-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&qimageblitz-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&qimageblitz-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&qimageblitz-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &qimageblitz-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &qimageblitz-md5sum;</para>
+        <para>&Download; MD5 sum: &qimageblitz-md5sum;</para>
 @z
 
 @x
         <para>Download size: &qimageblitz-size;</para>
 @y
-        <para>ダウンロードサイズ: &qimageblitz-size;</para>
+        <para>&DownloadSize;: &qimageblitz-size;</para>
 @z
 
 @x
@@ -73,46 +73,18 @@
 @x
     <bridgehead renderas="sect3">QImageblitz Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">QImageblitz の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;QImageblitz&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
-    <xref linkend="glib2"/>
+    <xref linkend="qt4"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
-    <xref linkend="glib2"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-    <xref linkend="xine-lib"/>, 
-    <xref linkend="gstreamer"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-    <xref linkend="xine-lib"/>, 
-    <xref linkend="gstreamer"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend='pulseaudio'/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend='pulseaudio'/>
+    <xref linkend="qt4"/>
     </para>
 @z
 
@@ -127,7 +99,7 @@
 @x
     <title>Installation of QImageblitz</title>
 @y
-    <title>QImageblitz のインストール</title>
+    <title>&InstallationOf1;QImageblitz&InstallationOf2;</title>
 @z
 
 @x
@@ -162,9 +134,9 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -174,17 +146,17 @@
 @x
         <seg>blitztest</seg>
         <seg>libqimageblitz.so</seg>
-        <seg>none</seg>
+	<seg>$KDE4_PREFIX/include/qimageblitz</seg>
 @y
         <seg>blitztest</seg>
         <seg>libqimageblitz.so</seg>
-        <seg>なし</seg>
+	<seg>$KDE4_PREFIX/include/qimageblitz</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short の依存パッケージ</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x blitztest

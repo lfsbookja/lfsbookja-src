@@ -1,5 +1,6 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/genlib
 CHANGE_FILES = \
+	apr.ch \
 	glib2.ch \
 	libesmtp.ch \
 	pcre.ch \
@@ -8,15 +9,12 @@ CHANGE_FILES = \
 	libgcrypt.ch \
 	libusb-compat.ch \
 	popt.ch \
-	gmp.ch \
 	libglade.ch \
 	libusb.ch \
 	pth.ch \
 	expat.ch \
 	gwrap.ch \
 	libgpg-error.ch \
-	libxml.ch \
-	fam.ch \
 	iso-codes.ch \
 	libgsf.ch \
 	libxml2.ch \
@@ -25,7 +23,6 @@ CHANGE_FILES = \
 	ispell.ch \
 	libgtkhtml.ch \
 	libxslt.ch \
-	gdbm.ch \
 	libassuan.ch \
 	libidl.ch \
 	lzo.ch \
@@ -33,7 +30,6 @@ CHANGE_FILES = \
 	libcroco.ch \
 	libidn.ch \
 	mcs.ch \
-	glib.ch \
 	libdrm.ch \
 	libksba.ch \
 	mowgli.ch \
@@ -46,7 +42,6 @@ CHANGE_FILES = \
 	libunique.ch \
 	nspr.ch \
 	libffi.ch \
-	gir-repository.ch \
 	gobject-introspection.ch \
 	enchant.ch \
 	icu.ch \
@@ -87,6 +82,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+apr.xml:                   $(BOOKdir)/$@ $(srcdir)/apr.ch
 glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
 libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
 pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch
@@ -95,15 +91,12 @@ gmime.xml:                 $(BOOKdir)/$@ $(srcdir)/gmime.ch
 libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
 libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
 popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
-gmp.xml:                   $(BOOKdir)/$@ $(srcdir)/gmp.ch
 libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
 pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
 expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch
 gwrap.xml:                 $(BOOKdir)/$@ $(srcdir)/gwrap.ch
 libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
-libxml.xml:                $(BOOKdir)/$@ $(srcdir)/libxml.ch
-fam.xml:                   $(BOOKdir)/$@ $(srcdir)/fam.ch
 iso-codes.xml:             $(BOOKdir)/$@ $(srcdir)/iso-codes.ch
 libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
 libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
@@ -112,7 +105,6 @@ gamin.xml:                 $(BOOKdir)/$@ $(srcdir)/gamin.ch
 ispell.xml:                $(BOOKdir)/$@ $(srcdir)/ispell.ch
 libgtkhtml.xml:            $(BOOKdir)/$@ $(srcdir)/libgtkhtml.ch
 libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
-gdbm.xml:                  $(BOOKdir)/$@ $(srcdir)/gdbm.ch
 libassuan.xml:             $(BOOKdir)/$@ $(srcdir)/libassuan.ch
 libidl.xml:                $(BOOKdir)/$@ $(srcdir)/libidl.ch
 lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
@@ -120,7 +112,6 @@ genlib.xml:                $(BOOKdir)/$@ $(srcdir)/genlib.ch
 libcroco.xml:              $(BOOKdir)/$@ $(srcdir)/libcroco.ch
 libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
 mcs.xml:                   $(BOOKdir)/$@ $(srcdir)/mcs.ch
-glib.xml:                  $(BOOKdir)/$@ $(srcdir)/glib.ch
 libdrm.xml:                $(BOOKdir)/$@ $(srcdir)/libdrm.ch
 libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
 mowgli.xml:                $(BOOKdir)/$@ $(srcdir)/mowgli.ch
@@ -133,7 +124,6 @@ libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
 libunique.xml:             $(BOOKdir)/$@ $(srcdir)/libunique.ch
 nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
 libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
-gir-repository.xml:        $(BOOKdir)/$@ $(srcdir)/gir-repository.ch
 gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
 enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
 icu.xml:                   $(BOOKdir)/$@ $(srcdir)/icu.ch

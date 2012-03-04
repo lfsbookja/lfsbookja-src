@@ -95,24 +95,26 @@
 
 @x
         <para><ulink
-        url="http://git-core.googlecode.com/files/git-manpages-&git-version;.2.tar.gz">Man
-        Pages</ulink> (only needed if you've not installed asciidoc)</para>
+        url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
+        http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink> 
+        (only needed if you've not installed asciidoc)</para>
 @y
         <para><ulink
-        url="http://git-core.googlecode.com/files/git-manpages-&git-version;.2.tar.gz">Man
-        Pages</ulink> (only needed if you've not installed asciidoc)</para>
+        url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
+        http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink> 
+        (only needed if you've not installed asciidoc)</para>
 @z
 
 @x
         <para><ulink
-        url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.2.tar.gz">Html
-        version of the Man Pages</ulink> and other docs (only needed if you've
-        not installed asciidoc and xmlto).</para>
+        url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
+        http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink> 
+        and other docs (only needed if you've not installed asciidoc and xmlto).</para>
 @y
         <para><ulink
-        url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.2.tar.gz">Html
-        version of the Man Pages</ulink> and other docs (only needed if you've
-        not installed asciidoc and xmlto).</para>
+        url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
+        http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink> 
+        and other docs (only needed if you've not installed asciidoc and xmlto).</para>
 @z
 
 @x
@@ -122,46 +124,51 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="python2"/></para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="python2"/></para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="curl"/> (needed to use
-    <application>Git</application> over http, https, ftp or ftps)</para>
+    <para role="recommended">
+      <xref linkend="python2"/> and
+      <xref linkend="curl"/> (needed to use <application>Git</application> over http, 
+      https, ftp or ftps)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="curl"/>
-    (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要)
+    <para role="recommended">
+      <xref linkend="python2"/>,
+      <xref linkend="curl"/>
+      (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>, <xref linkend="expat"/>
-    and <xref linkend="tk"/> (gitk, a simple <application>Git</application>
-    repository viewer, uses <application>Tk</application> at runtime)</para>
+    <para role="optional">
+      <xref linkend="openssl"/>, 
+      <xref linkend="expat"/>, and 
+      <xref linkend="tk"/> (gitk, a simple <application>Git</application>
+      repository viewer, uses <application>Tk</application> at runtime)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>, <xref linkend="expat"/>
-    and <xref linkend="tk"/> (gitk, a simple <application>Git</application>
-    repository viewer, uses <application>Tk</application> at runtime)</para>
+    <para role="optional">
+      <xref linkend="openssl"/>, 
+      <xref linkend="expat"/>, and 
+      <xref linkend="tk"/> (gitk, a simple <application>Git</application>
+      repository viewer, uses <application>Tk</application> at runtime)
+    </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (to create the man
-    pages and html docs)</bridgehead>
-    <para><ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
-    <xref linkend="xmlto"/>.</para>
+    <bridgehead renderas="sect4">Optional (to create the man pages and html docs)</bridgehead>
+    <para>
+      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
+      <xref linkend="xmlto"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (to create the man
-    pages and html docs)</bridgehead>
-    <para><ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
-    <xref linkend="xmlto"/>.</para>
+    <bridgehead renderas="sect4">Optional (to create the man pages and html docs)</bridgehead>
+    <para>
+      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
+      <xref linkend="xmlto"/>
+    </para>
 @z
 
 @x
@@ -261,19 +268,19 @@
 @z
 
 @x
-    <para><option>-&#45;with-gitconfig=/etc/gitconfig</option>: This sets
+    <para><option>--with-gitconfig=/etc/gitconfig</option>: This sets
     <filename>/etc/gitconfig</filename> as the file that stores the default,
     system wide, <application>Git</application> settings.</para>
 @y
-    <para><option>-&#45;with-gitconfig=/etc/gitconfig</option>: This sets
+    <para><option>--with-gitconfig=/etc/gitconfig</option>: This sets
     <filename>/etc/gitconfig</filename> as the file that stores the default,
     system wide, <application>Git</application> settings.</para>
 @z
 
 @x
-    <para><command>tar xf ../git-manpages-&git-version;.2.tar.gz -C
+    <para><command>tar -xf ../git-manpages-&git-version;.tar.gz -C
     /usr/share/man --no-same-owner</command>: This untars
-    <filename>git-manpages-&git-version;.2.tar.gz</filename>. The
+    <filename>git-manpages-&git-version;.tar.gz</filename>. The
     <option>-C</option> option makes tar change directory to
     <filename class="directory">/usr/share/man</filename> before it starts to
     decompress the docs. The <option>--no-same-owner</option> option stops tar
@@ -281,9 +288,9 @@
     that user or group may not exist on your system; this could
     (potentially) be a security risk.</para>
 @y
-    <para><command>tar xf ../git-manpages-&git-version;.2.tar.gz -C
+    <para><command>tar -xf ../git-manpages-&git-version;.tar.gz -C
     /usr/share/man --no-same-owner</command>: This untars
-    <filename>git-manpages-&git-version;.2.tar.gz</filename>. The
+    <filename>git-manpages-&git-version;.tar.gz</filename>. The
     <option>-C</option> option makes tar change directory to
     <filename class="directory">/usr/share/man</filename> before it starts to
     decompress the docs. The <option>--no-same-owner</option> option stops tar

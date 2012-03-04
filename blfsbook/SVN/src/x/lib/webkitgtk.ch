@@ -164,58 +164,13 @@
 @x
     <para><option>--enable-introspection</option>: This option enables support
     for gobject-introspection and is required for a
-    <application>GNOME</application>.</para>
+    <application>GNOME</application> desktop.</para>
 @y
     <para><option>--enable-introspection</option>:
     gobject-introspection サポートを有効にします。
     これは <application>GNOME</application> において必要です。
     </para>
 @z
-
-% @x
-%     <para><option>--enable-3D-transforms</option>: This option enables support
-%     for 3D transforms.</para>
-% @y
-%     <para>
-%     <option>--enable-3D-transforms</option>: このパラメーターは 3D 変換サポートを有効にします。
-%     </para>
-% @z
-% 
-% @x
-%     <para><option>--enable-geolocation</option>: This option enables support for
-%     geolocation.</para>
-% @y
-%     <para>
-%     <option>--enable-geolocation</option>: geolocation サポートを有効にします。
-%     </para>
-% @z
-% 
-% @x
-%     <para><option>--enable-mathml</option>: This option enables support for
-%     MathML.</para>
-% @y
-%     <para>
-%     <option>--enable-mathml</option>: MathML サポートを有効にします。
-%     </para>
-% @z
-% 
-% @x
-%     <para><option>--enable-wml</option>: This option enables support for
-%     WML.</para>
-% @y
-%     <para>
-%     <option>--enable-wml</option>: WML サポートを有効にします。
-%     </para>
-% @z
-% 
-% @x
-%     <para><option>--enable-web-sockets</option>: This option enables support for
-%     Web Sockets.</para>
-% @y
-%     <para>
-%     <option>--enable-web-sockets</option>: Web ソケット (Web Sockets) サポートを有効にします。
-%     </para>
-% @z
 
 @x
     <title>Contents</title>

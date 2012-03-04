@@ -16,17 +16,16 @@
 @x
     <title>Introduction to GtkHTML</title>
 @y
-    <title>GtkHTML の概要</title>
+    <title>&IntroductionTo1;GtkHTML&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>GtkHTML</application> package contains a
     lightweight HTML rendering/printing/editing engine.</para>
 @y
-<para>
-<application>GtkHTML</application>
-パッケージは、軽量な HTML レンダリング/印刷/編集エンジンを提供します。
-</para>
+    <para>
+    <application>GtkHTML</application> パッケージは、軽量な HTML レンダリング/印刷/編集エンジンを提供します。
+    </para>
 @z
 
 @x
@@ -38,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gtkhtml-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gtkhtml-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gtkhtml-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gtkhtml-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gtkhtml-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gtkhtml-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gtkhtml-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gtkhtml-md5sum;</para>
+        <para>&Download; MD5 sum: &gtkhtml-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gtkhtml-size;</para>
 @y
-        <para>ダウンロードサイズ: &gtkhtml-size;</para>
+        <para>&DownloadSize;: &gtkhtml-size;</para>
 @z
 
 @x
@@ -74,31 +73,33 @@
 @x
     <bridgehead renderas="sect3">GtkHTML Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GtkHTML の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GtkHTML&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="GConf"/>,
     <xref linkend="gnome-icon-theme"/>,
-    <xref linkend="gtk2"/>, and
+    <xref linkend="gsettings-desktop-schemas"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="iso-codes"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="GConf"/>,
     <xref linkend="gnome-icon-theme"/>,
-    <xref linkend="gtk2"/>,
+    <xref linkend="gsettings-desktop-schemas"/>,
+    <xref linkend="gtk3"/>,
     <xref linkend="iso-codes"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libsoup"/></para>
+    <para role="optional"><xref linkend="libsoup"/>,
+    <xref linkend="xorg7"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="libsoup"/></para>
+    <para role="optional"><xref linkend="libsoup"/>,
+    <xref linkend="xorg7"/></para>
 @z
 
 @x
@@ -112,55 +113,36 @@
 @x
     <title>Installation of GtkHTML</title>
 @y
-    <title>GtkHTML のインストール</title>
+    <title>&InstallationOf1;GtkHTML&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>GtkHTML</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GtkHTML</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GtkHTML</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--libexecdir=$(pkg-config --variable=prefix
-    ORBit-2.0)/lib/gtkhtml</parameter>: This parameter causes the libexec
-    files to be installed in the preferred location of
-    <filename class="directory">$GNOME_PREFIX/lib/gtkhtml</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
-@y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/gtkhtml</parameter>:
-本パラメータは libexec ファイルのインストール先を定めるもので
-<filename class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な
-<filename class="directory">$GNOME_PREFIX/lib/gtkhtml</filename>
-へのインストールを行います。
-</para>
 @z
 
 @x
@@ -181,14 +163,14 @@ ORBit-2.0)/lib/gtkhtml</parameter>:
 
 @x
         <seg>gtkhtml-editor-test</seg>
-        <seg>libgtkhtml-3.14.so and libgtkhtml-editor.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-3.14/{editor,
-        gtkhtml},share/gtkhtml-3.14/icons}</seg>
+        <seg>libgtkhtml-4.0.so and libgtkhtml-editor-4.0.so</seg>
+        <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-4.0/{editor,
+        gtkhtml},share/gtkhtml-4.0/icons}</seg>
 @y
         <seg>gtkhtml-editor-test</seg>
-        <seg>libgtkhtml-3.14.so, libgtkhtml-editor.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-3.14/{editor,
-        gtkhtml},share/gtkhtml-3.14/icons}</seg>
+        <seg>libgtkhtml-4.0.so, libgtkhtml-editor-4.0.so</seg>
+        <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-4.0/{editor,
+        gtkhtml},share/gtkhtml-4.0/icons}</seg>
 @z
 
 @x
@@ -203,11 +185,10 @@ ORBit-2.0)/lib/gtkhtml</parameter>:
           <para>シンプルな HTML 編集ウィジェット。</para>
 @z
 
-@x libgtkhtml-3.8.{so,a}
-          <para>provide the functions to render HTML within applications.</para>
+@x libgtkhtml-4.0.so
+          <para>provides the functions to render HTML within applications.</para>
 @y
-<para>
-アプリケーション内にて HTML レンダリングを実現する機能を提供します。
-</para>
+          <para>
+          アプリケーション内にて HTML レンダリングを実現する機能を提供します。
+          </para>
 @z
-

@@ -6,7 +6,6 @@ CHANGE_FILES = \
 	fribidi.ch \
 	giflib.ch \
 	graphlib.ch \
-	imlib.ch \
 	imlib2.ch \
 	jasper.ch \
 	lcms.ch \
@@ -17,7 +16,6 @@ CHANGE_FILES = \
 	libpng.ch \
 	librsvg.ch \
 	libtiff.ch \
-	libungif.ch \
 	pixman.ch \
 	poppler.ch \
 	clutter.ch \
@@ -48,7 +46,6 @@ freetype2.xml:   $(BOOKdir)/$@ $(srcdir)/freetype2.ch
 fribidi.xml:     $(BOOKdir)/$@ $(srcdir)/fribidi.ch
 giflib.xml:      $(BOOKdir)/$@ $(srcdir)/giflib.ch
 graphlib.xml:    $(BOOKdir)/$@ $(srcdir)/graphlib.ch
-imlib.xml:       $(BOOKdir)/$@ $(srcdir)/imlib.ch
 imlib2.xml:      $(BOOKdir)/$@ $(srcdir)/imlib2.ch
 jasper.xml:      $(BOOKdir)/$@ $(srcdir)/jasper.ch
 lcms.xml:        $(BOOKdir)/$@ $(srcdir)/lcms.ch
@@ -59,7 +56,6 @@ libmng.xml:      $(BOOKdir)/$@ $(srcdir)/libmng.ch
 libpng.xml:      $(BOOKdir)/$@ $(srcdir)/libpng.ch
 librsvg.xml:     $(BOOKdir)/$@ $(srcdir)/librsvg.ch
 libtiff.xml:     $(BOOKdir)/$@ $(srcdir)/libtiff.ch
-libungif.xml:    $(BOOKdir)/$@ $(srcdir)/libungif.ch
 pixman.xml:      $(BOOKdir)/$@ $(srcdir)/pixman.ch
 poppler.xml:     $(BOOKdir)/$@ $(srcdir)/poppler.ch
 clutter.xml:     $(BOOKdir)/$@ $(srcdir)/clutter.ch

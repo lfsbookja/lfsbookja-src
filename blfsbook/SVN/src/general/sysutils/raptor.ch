@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -20,12 +20,12 @@
 @z
 
 @x
-    <para><application>raptor</application> is a C library that provides a set 
+    <para><application>Raptor</application> is a C library that provides a set 
     of parsers and serializers that generate Resource Description Framework (RDF) 
     triples.</para>
 @y
     <para>
-    <application>raptor</application> は C ライブラリであり、RDF (Resource Description Framework) の三つの要素 ＝ トリプル (triples) に対してのパーサーおよびシリアライザーを提供します。
+    <application>Raptor</application> は C ライブラリであり、RDF (Resource Description Framework) の三つの要素 ＝ トリプル (triples) に対してのパーサーおよびシリアライザーを提供します。
     </para>
 @z
 
@@ -72,9 +72,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">raptor Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Raptor Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">raptor の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">Raptor の依存パッケージ</bridgehead>
 @z
 
 @x
@@ -140,12 +140,12 @@
 
 @x
         <seg>rapper, raptor-config</seg>
-        <seg>libraptor.{a,so}</seg>
+        <seg>libraptor.so</seg>
         <seg>None</seg>
 @y
         <seg>rapper, raptor-config</seg>
-        <seg>libraptor.{a,so}</seg>
-        <seg>なし</seg>
+        <seg>libraptor.so</seg>
+        <seg>&None;</seg>
 @z
 
 @x

@@ -154,7 +154,6 @@ CHANGE_FILES = \
 	gst-plugins-base.ch \
 	gst-plugins-good.ch \
 	gst-plugins-ugly.ch \
-	gst-plugins.ch \
 	gstreamer.ch \
 	id3lib.ch \
 	liba52.ch \
@@ -403,7 +402,6 @@ flac.xml:                    $(BOOKdir)/$@ $(srcdir)/flac.ch
 gst-plugins-base.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-base.ch
 gst-plugins-good.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-good.ch
 gst-plugins-ugly.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-ugly.ch
-gst-plugins.xml:             $(BOOKdir)/$@ $(srcdir)/gst-plugins.ch
 gstreamer.xml:               $(BOOKdir)/$@ $(srcdir)/gstreamer.ch
 id3lib.xml:                  $(BOOKdir)/$@ $(srcdir)/id3lib.ch
 liba52.xml:                  $(BOOKdir)/$@ $(srcdir)/liba52.ch

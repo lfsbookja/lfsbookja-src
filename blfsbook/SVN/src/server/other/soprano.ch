@@ -20,12 +20,15 @@
 @z
 
 @x
-    <para><application>Soprano</application> Software library that provides 
-    an object oriented C++/Qt4 framework for RDF data.</para>
+    <para><application>Soprano</application> (formally known as QRDF) is a 
+    library which provides a nice Qt interface to RDF storage solutions. It 
+    has a modular structure which allows to  replace the actual RDF storage 
+    implementation used.</para>
 @y
-    <para>
-    <application>Soprano</application> ソフトウェアライブラリは、RDF データに対してのオブジェクト指向 C++/Qt4 フレームワークを提供します。
-    </para>
+    <para><application>Soprano</application> (formally known as QRDF) is a 
+    library which provides a nice Qt interface to RDF storage solutions. It 
+    has a modular structure which allows to  replace the actual RDF storage 
+    implementation used.</para>
 @z
 
 @x
@@ -79,19 +82,17 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
-    <xref linkend="cmake"/>,
-    <xref linkend="rasqal"/>,
-    <xref linkend="raptor"/>,
+    <xref linkend="cmake"/>, 
+    <xref linkend="qt4"/>, 
+    <xref linkend="dbus"/> and
     <xref linkend="redland"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
-    <xref linkend="cmake"/>,
-    <xref linkend="rasqal"/>,
-    <xref linkend="raptor"/>,
+    <xref linkend="cmake"/>, 
+    <xref linkend="qt4"/>, 
+    <xref linkend="dbus"/>,
     <xref linkend="redland"/>
     </para>
 @z
@@ -99,14 +100,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="clucene"/>,
-    <xref linkend="jdk"/>
+    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Besides, <xref linkend="virtuoso"/> 
+    is required as a runtime dependency for this backend.)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="clucene"/>,
-    <xref linkend="jdk"/>
+    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Besides, <xref linkend="virtuoso"/> 
+    is required as a runtime dependency for this backend.)
     </para>
 @z
 
@@ -164,7 +165,7 @@
 
 @x
     <para>The <application>soprano</application>d accepts some parameter. To not
-    hardcode them in the startscript, create a configuratuion file:</para>
+    hardcode them in the startscript, create a configuration file:</para>
 @y
     <para>
     <application>soprano</application>d にはパラメーターがいくつかあります。
@@ -208,13 +209,13 @@
 @z
 
 @x
-        <seg>sopranod, sopranocmd, onto2vocabularyclass</seg>
+        <seg>sopranod, sopranocmd and onto2vocabularyclass</seg>
         <seg>libsoprano.so, libsopranoclient.so, libsopranoserver.so and
         several other libs in /usr/lib/soprano/</seg>
-        <seg>/usr/{lib,share}/soprano</seg>
+	<seg>/usr/include/soprano, /usr/include/Soprano, /usr/share/soprano</seg>
 @y
         <seg>sopranod, sopranocmd, onto2vocabularyclass</seg>
         <seg>libsoprano.so, libsopranoclient.so, libsopranoserver.so,
         /usr/lib/soprano/ 配下のその他のライブラリ</seg>
-        <seg>/usr/{lib,share}/soprano</seg>
+	<seg>/usr/include/soprano, /usr/include/Soprano, /usr/share/soprano</seg>
 @z

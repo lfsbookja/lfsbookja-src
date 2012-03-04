@@ -16,7 +16,7 @@
 @x
     <title>Introduction to the Phonon GStreamer backend</title>
 @y
-    <title>Phonon GStreamer backend の概要</title>
+    <title>&IntroductionTo1;Phonon GStreamer backend&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&phonon-backend-gstreamer-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&phonon-backend-gstreamer-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&phonon-backend-gstreamer-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&phonon-backend-gstreamer-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&phonon-backend-gstreamer-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&phonon-backend-gstreamer-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &phonon-backend-gstreamer-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &phonon-backend-gstreamer-md5sum;</para>
+        <para>&Download; MD5 sum: &phonon-backend-gstreamer-md5sum;</para>
 @z
 
 @x
         <para>Download size: &phonon-backend-gstreamer-size;</para>
 @y
-        <para>ダウンロードサイズ: &phonon-backend-gstreamer-size;</para>
+        <para>&DownloadSize;: &phonon-backend-gstreamer-size;</para>
 @z
 
 @x
@@ -71,22 +71,20 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Phonon Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Phonon GStreamer Backend Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Phonon の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Phonon GStreamer Backend&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
     <xref linkend="phonon"/>,
     <xref linkend="gstreamer"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
     <xref linkend="phonon"/>,
     <xref linkend="gstreamer"/> 
     </para>
@@ -103,7 +101,7 @@
 @x
     <title>Installation of Phonon Backend GStreamer</title>
 @y
-    <title>Phonon Backend GStreamer のインストール</title>
+    <title>&InstallationOf1;Phonon Backend GStreamer&InstallationOf2;</title>
 @z
 
 @x
@@ -152,7 +150,7 @@
         <seg>phonon_gstreamer.so</seg>
         <seg>none</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>phonon_gstreamer.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z

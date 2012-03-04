@@ -8,7 +8,6 @@ CHANGE_FILES = \
 	lame.ch \
 	mpg123.ch \
 	vorbistools.ch \
-	xmms.ch \
 	gnome-media.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -31,5 +30,4 @@ freetts.xml:     $(BOOKdir)/$@ $(srcdir)/freetts.ch
 lame.xml:        $(BOOKdir)/$@ $(srcdir)/lame.ch
 mpg123.xml:      $(BOOKdir)/$@ $(srcdir)/mpg123.ch
 vorbistools.xml: $(BOOKdir)/$@ $(srcdir)/vorbistools.ch
-xmms.xml:        $(BOOKdir)/$@ $(srcdir)/xmms.ch
 gnome-media.xml: $(BOOKdir)/$@ $(srcdir)/gnome-media.ch
