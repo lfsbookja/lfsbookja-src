@@ -49,63 +49,31 @@
 @x
     <title>Installation of Util-linux</title>
 @y
-    <title>Util-linux のインストール</title>
-@z
-
-@x
-      <title>The meaning of the configure options:</title>
-@y
-      <title>configure オプションの意味：</title>
-@z
-
-@x
-          <para>Enables building the <command>arch</command> program</para>
-@y
-          <para>
-          <command>arch</command> プログラムをビルドします。
-          </para>
-@z
-
-@x
-          <para>Enables building the <command>addpart</command>,
-          <command>delpart</command> and <command>partx</command>
-          programs</para>
-@y
-          <para>
-          <command>addpart</command>、<command>delpart</command>、<command>partx</command> プログラムをビルドします。
-          </para>
-@z
-
-@x
-          <para>Enables building the <command>write</command> program</para>
-@y
-          <para>
-          <command>write</command> プログラムをビルドします。
-          </para>
+    <title>&InstallationOf1;Util-linux&InstallationOf2;</title>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Util-linux</title>
 @y
-    <title>Util-linux の構成</title>
+    <title>&ContentsOf1;Util-linux&ContentsOf2;</title>
 @z
 
 @x
@@ -113,38 +81,38 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
-        <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
+        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
         dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
-        readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
+        prlimit, raw, readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
         setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
-        uuidd, uuidgen, wall, whereis, wipefs, and write</seg>
+        uuidd, uuidgen, wall, whereis, wipefs, and x86_64</seg>
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
         /usr/share/getopt, /var/lib/hwclock</seg>
 @y
-        <seg>addpart, agetty, arch, blkid, blockdev, cal, cfdisk, chkdupexe,
+        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu, chkdupexe,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
         dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
-        readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
+        prlimit, raw, readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
         setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
-        uuidd, uuidgen, wall, whereis, wipefs, write</seg>
+        uuidd, uuidgen, wall, whereis, wipefs, x86_64</seg>
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
         /usr/share/getopt, /var/lib/hwclock</seg>
@@ -153,7 +121,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x addpart
@@ -171,14 +139,6 @@
           <para>
           tty ポートを開いてログイン名の入力を受け付けます。
           そして <command>login</command> プログラムを起動します。
-          </para>
-@z
-
-@x arch
-          <para>Reports the machine's architecture</para>
-@y
-          <para>
-          マシンアーキテクチャーを表示します。
           </para>
 @z
 
@@ -214,6 +174,12 @@
           <para>
           指定されたデバイスのパーティションテーブルを操作します。
           </para>
+@z
+
+@x chcpu
+          <para>Modifies the state of CPUs</para>
+@y
+          <para>CPU の状態を変更します。</para>
 @z
 
 @x chkdupexe
@@ -652,6 +618,22 @@
           </para>
 @z
 
+@x prlimit
+          <para>Get and set a process' resource limits</para>
+@y
+          <para>
+          プロセスが利用するリソースの限界値を取得または設定します。
+          </para>
+@z
+
+@x raw
+          <para>Bind a Linux raw character device to a block device</para>
+@y
+          <para>
+          Linux の raw キャラクターデバイスをブロックデバイスにバインドします。
+          </para>
+@z
+
 @x readprofile
           <para>Reads kernel profiling information</para>
 @y
@@ -889,13 +871,11 @@
           </para>
 @z
 
-@x write
-          <para>Sends a message to the given user <emphasis>if</emphasis> that
-          user has not disabled receipt of such messages</para>
+@x
+          <para>A symbolic link to setarch</para>
 @y
           <para>
-          指定されたユーザーに対してメッセージを送信します。
-          <emphasis>ただし </emphasis> そのユーザーがメッセージ受信が可能である場合に限ります。
+          setarch へのシンボリックリンク。
           </para>
 @z
 

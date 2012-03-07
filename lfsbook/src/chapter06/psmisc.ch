@@ -25,7 +25,7 @@
 @x
     <title>Installation of Psmisc</title>
 @y
-    <title>Psmisc のインストール</title>
+    <title>&InstallationOf1;Psmisc&InstallationOf2;</title>
 @z
 
 @x
@@ -37,36 +37,19 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
-@z
-
-@x
-    <para>By default, Psmisc's <command>pidof</command> program is not
-    installed. This usually is not a problem because it is installed later
-    in the Sysvinit package, which provides a better
-    <command>pidof</command> program. If Sysvinit will not be used for a
-    particular system, complete the installation of Psmisc by first moving
-    the <command>killall</command> to the correct location, as specified by the
-    FHS, then create a symlink to it:</para>
-@y
-    <para>
-    Psmisc の <command>pidof</command> プログラムはデフォルトではインストールされませんが、通常これは問題にはなりません。
-    それはこの後に Sysvinit パッケージによってインストールされるからです。
-    Sysvinit の <command>pidof</command> プログラムはより適切なプログラムです。
-    しかし特定のシステムにおいて Sysvinit を利用しないなら、FHS にて規定されているようなディレクトリにプログラムを移動させ、以下のようにシンボリックリックを生成します。
-    </para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -81,13 +64,13 @@
 @x
     <title>Contents of Psmisc</title>
 @y
-    <title>Psmisc の構成</title>
+    <title>&ContentsOf1;Psmisc&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
@@ -99,7 +82,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x fuser
