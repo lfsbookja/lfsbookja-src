@@ -139,18 +139,20 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/kde4/add
 CHANGE_FILES = \
 	add.ch \
-	kde4games.ch \
-	kde4network.ch \
+	ark.ch \
+	kate.ch \
+	kde4accessibility.ch \
+	kde4admin.ch \
 	kde4artwork.ch \
 	kde4edu.ch \
-	kde4toys.ch \
-	kde4admin.ch \
+	kde4games.ch \
 	kde4multimedia.ch \
-	kde4accessibility.ch \
-	kde4utils.ch \
+	kde4network.ch \
+	kde4pim.ch \
 	kde4pimruntime.ch \
 	kde4plasmaaddons.ch \
-	kde4pim.ch 
+	kde4toys.ch \
+	konsole.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -347,18 +349,20 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 add.xml:               $(BOOKdir)/$@ $(srcdir)/add.ch
-kde4games.xml:         $(BOOKdir)/$@ $(srcdir)/kde4games.ch
-kde4network.xml:       $(BOOKdir)/$@ $(srcdir)/kde4network.ch
+ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
+kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
+kde4accessibility.xml: $(BOOKdir)/$@ $(srcdir)/kde4accessibility.ch
+kde4admin.xml:         $(BOOKdir)/$@ $(srcdir)/kde4admin.ch
 kde4artwork.xml:       $(BOOKdir)/$@ $(srcdir)/kde4artwork.ch
 kde4edu.xml:           $(BOOKdir)/$@ $(srcdir)/kde4edu.ch
-kde4toys.xml:          $(BOOKdir)/$@ $(srcdir)/kde4toys.ch
-kde4admin.xml:         $(BOOKdir)/$@ $(srcdir)/kde4admin.ch
+kde4games.xml:         $(BOOKdir)/$@ $(srcdir)/kde4games.ch
 kde4multimedia.xml:    $(BOOKdir)/$@ $(srcdir)/kde4multimedia.ch
-kde4accessibility.xml: $(BOOKdir)/$@ $(srcdir)/kde4accessibility.ch
-kde4utils.xml:         $(BOOKdir)/$@ $(srcdir)/kde4utils.ch
+kde4network.xml:       $(BOOKdir)/$@ $(srcdir)/kde4network.ch
+kde4pim.xml:           $(BOOKdir)/$@ $(srcdir)/kde4pim.ch
 kde4pimruntime.xml:    $(BOOKdir)/$@ $(srcdir)/kde4pimruntime.ch
 kde4plasmaaddons.xml:  $(BOOKdir)/$@ $(srcdir)/kde4plasmaaddons.ch
-kde4pim.xml:           $(BOOKdir)/$@ $(srcdir)/kde4pim.ch
+kde4toys.xml:          $(BOOKdir)/$@ $(srcdir)/kde4toys.ch
+konsole.xml:           $(BOOKdir)/$@ $(srcdir)/konsole.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

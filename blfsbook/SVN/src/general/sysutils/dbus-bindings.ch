@@ -34,7 +34,7 @@
 @x
     <title>Introduction to D-Bus Bindings</title>
 @y
-    <title>D-Bus バインディングの概要</title>
+    <title>&IntroductionTo1;D-Bus バインディング&IntroductionTo2;</title>
 @z
 
 @x
@@ -84,7 +84,7 @@
 @x
       <title>Introduction to D-Bus GLib Bindings</title>
 @y
-      <title>D-Bus GLib バインディングの概要</title>
+      <title>&IntroductionTo1;D-Bus GLib バインディング&IntroductionTo2;</title>
 @z
 
 @x
@@ -96,25 +96,25 @@
 @x
           <para>Download (HTTP): <ulink url="&dbus-glib-download-http;"/></para>
 @y
-          <para>ダウンロード (HTTP): <ulink url="&dbus-glib-download-http;"/></para>
+          <para>&Download; (HTTP): <ulink url="&dbus-glib-download-http;"/></para>
 @z
 
 @x
           <para>Download (FTP): <ulink url="&dbus-glib-download-ftp;"/></para>
 @y
-          <para>ダウンロード (FTP): <ulink url="&dbus-glib-download-ftp;"/></para>
+          <para>&Download; (FTP): <ulink url="&dbus-glib-download-ftp;"/></para>
 @z
 
 @x
          <para>Download MD5 sum: &dbus-glib-md5sum;</para>
 @y
-         <para>ダウンロード MD5 sum: &dbus-glib-md5sum;</para>
+         <para>&Download; MD5 sum: &dbus-glib-md5sum;</para>
 @z
 
 @x
           <para>Download size: &dbus-glib-size;</para>
 @y
-          <para>ダウンロードサイズ: &dbus-glib-size;</para>
+          <para>&DownloadSize;: &dbus-glib-size;</para>
 @z
 
 @x
@@ -132,22 +132,22 @@
 @x
       <bridgehead renderas="sect4">D-Bus GLib Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">D-Bus GLib の依存パッケージ</bridgehead>
+      <bridgehead renderas="sect4">&Dependencies1;D-Bus GLib&Dependencies2;</bridgehead>
 @z
 
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="dbus"/>,
-        <xref linkend="glib2"/>, and
-        <xref linkend="expat"/>
+        <xref linkend="expat"/>, and
+        <xref linkend="pkgconfig"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="dbus"/>,
-        <xref linkend="glib2"/>,
-        <xref linkend="expat"/>
+        <xref linkend="expat"/>,
+        <xref linkend="pkgconfig"/>
       </para>
 @z
 

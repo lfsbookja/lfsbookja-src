@@ -112,14 +112,6 @@
 @z
 
 @x
-    <para>Prepare the package for compilation:</para>
-@y
-    <para>
-    本パッケージをビルドするための準備をします。
-    </para>
-@z
-
-@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>

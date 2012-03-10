@@ -157,7 +157,8 @@
     pmount</ulink>.  This enables auto-mounting of hotplugged devices at
     /media/[device_name] for any user without any fstab modification. It is
     needed to enable the full integration of <application>KDE</application>
-    with <xref linkend="hal"/>.</para>
+    with <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>.
+    </para>
 @y
     <para>The <application>Trinity/KDE3</application> libraries access other programs at
     run time. One additional package that has not been mentioned already is
@@ -165,7 +166,8 @@
     pmount</ulink>.  This enables auto-mounting of hotplugged devices at
     /media/[device_name] for any user without any fstab modification. It is
     needed to enable the full integration of <application>KDE</application>
-    with <xref linkend="hal"/>.</para>
+    with <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>.
+    </para>
 @z
 
 @x

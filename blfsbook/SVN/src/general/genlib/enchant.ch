@@ -78,10 +78,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @z
 
 @x

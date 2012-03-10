@@ -85,7 +85,10 @@
     <xref linkend="automoc4"/>, 
     <xref linkend="shared-mime-info"/>, 
     <xref linkend="boost"/>, 
-    <xref linkend="soprano"/>
+    <xref linkend="soprano"/> and one of:
+    <xref linkend="sqlite"/>, 
+    <xref linkend="mysql"/> and 
+    <xref linkend="postgresql"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -93,20 +96,7 @@
     <xref linkend="automoc4"/>, 
     <xref linkend="shared-mime-info"/>, 
     <xref linkend="boost"/>, 
-    <xref linkend="soprano"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-    <xref linkend="sqlite"/>, 
-    <xref linkend="mysql"/> and
-    <xref linkend="postgresql"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <xref linkend="soprano"/> と以下のいずれか:
     <xref linkend="sqlite"/>, 
     <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>
@@ -137,14 +127,6 @@
 @z
 
 @x
-    <para>Prepare the package for compilation:</para>
-@y
-    <para>
-    パッケージをコンパイルするための準備をします。
-    </para>
-@z
-
-@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
@@ -159,11 +141,11 @@
 @z
 
 @x
-    <para><option>CMAKE_PREFIX_PATH=$QT4DIR</option>: This option is set to find automoc4</para>
+    <para><option>CMAKE_PREFIX_PATH=$QT4DIR</option>: This option is set to find automoc4.</para>
 @y
     <para>
     <option>CMAKE_PREFIX_PATH=$QT4DIR</option>:
-    本パラメーターは automoc4 を見出すためのものです。
+    本オプションは automoc4 を見出すためのものです。
     </para>
 @z
 

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GnuTLS</title>
 @y
-    <title>GnuTLS の概要</title>
+    <title>&IntroductionTo1;GnuTLS&IntroductionTo2;</title>
 @z
 
 @x
@@ -78,25 +78,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnutls-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnutls-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnutls-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnutls-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnutls-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnutls-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnutls-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnutls-md5sum;</para>
+        <para>&Download; MD5 sum: &gnutls-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnutls-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnutls-size;</para>
+        <para>&DownloadSize;: &gnutls-size;</para>
 @z
 
 @x
@@ -114,7 +114,7 @@
 @x
     <bridgehead renderas="sect3">GnuTLS Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GnuTLS の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GnuTLS&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -130,23 +130,19 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
+      <xref linkend="libidn"/>,
       <xref linkend="libtasn1"/>,
-      <ulink url="http://p11-glue.freedesktop.org/p11-kit.html">p11-kit</ulink>,
-      <ulink url="http://platon.sk/projects/main_page.php?project_id=3">libcfg+</ulink>,
-      <ulink url="http://gaa.sourceforge.net/">GAA Argument Analyzer</ulink>,
-      <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>, and
+      <xref linkend="p11-kit"/> and
       <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
+      <xref linkend="libidn"/>,
       <xref linkend="libtasn1"/>,
-      <ulink url="http://p11-glue.freedesktop.org/p11-kit.html">p11-kit</ulink>,
-      <ulink url="http://platon.sk/projects/main_page.php?project_id=3">libcfg+</ulink>,
-      <ulink url="http://gaa.sourceforge.net/">GAA Argument Analyzer</ulink>,
-      <ulink url="http://webscripts.softpedia.com/script/Development-Scripts-js/C-C-Library/libcfg--26570.html">libcfg+</ulink>,
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて利用)</para>
+      <xref linkend="p11-kit"/>,
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて用いられる)</para>
 @z
 
 @x
@@ -170,7 +166,7 @@
 @x
     <title>Installation of GnuTLS</title>
 @y
-    <title>GnuTLS のインストール</title>
+    <title>&InstallationOf1;GnuTLS&InstallationOf2;</title>
 @z
 
 @x
@@ -239,17 +235,15 @@
 
 @x
         <seg>certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-        psktool, and srptool</seg>
-        <seg>libgnutls.{so,a}, libgnutls-extra.{so,a},
-        libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
+        ocsptool, p11tool, psktool, and srptool</seg>
+        <seg>libgnutls.{so,a}, libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
         <seg>/usr/include/gnutls,
         /usr/share/doc/gnutls-&gnutls-version;, and
         /usr/share/gtk-doc/html/gnutls</seg>
 @y
         <seg>certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-        psktool, srptool</seg>
-        <seg>libgnutls.{so,a}, libgnutls-extra.{so,a},
-        libgnutls-openssl.{so,a}, libgnutlsxx.{so,a}</seg>
+        ocsptool, p11tool, psktool, srptool</seg>
+        <seg>libgnutls.{so,a}, libgnutls-openssl.{so,a}, libgnutlsxx.{so,a}</seg>
         <seg>/usr/include/gnutls,
         /usr/share/doc/gnutls-&gnutls-version;,
         /usr/share/gtk-doc/html/gnutls</seg>

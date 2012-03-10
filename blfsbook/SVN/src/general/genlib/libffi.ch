@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libffi</title>
 @y
-    <title>libffi の概要</title>
+    <title>&IntroductionTo1;libffi&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libffi-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libffi-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libffi-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libffi-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libffi-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libffi-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libffi-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libffi-md5sum;</para>
+        <para>&Download; MD5 sum: &libffi-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libffi-size;</para>
 @y
-        <para>ダウンロードサイズ: &libffi-size;</para>
+        <para>&DownloadSize;: &libffi-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <title>Installation of libffi</title>
 @y
-    <title>libffi のインストール</title>
+    <title>&InstallationOf1;libffi&InstallationOf2;</title>
 @z
 
 @x
@@ -91,9 +91,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -125,7 +123,7 @@
         <seg>libffi.{so,a}</seg>
         <seg>/usr/lib/libffi-&libffi-version;/include</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libffi.{so,a}</seg>
         <seg>/usr/lib/libffi-&libffi-version;/include</seg>
 @z

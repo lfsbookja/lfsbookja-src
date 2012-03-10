@@ -16,7 +16,7 @@
 @x
     <title>Introduction to qemu-kvm</title>
 @y
-    <title>qemu-kvm の概要</title>
+    <title>&IntroductionTo1;qemu-kvm&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&qemu-kvm-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&qemu-kvm-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&qemu-kvm-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&qemu-kvm-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&qemu-kvm-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&qemu-kvm-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &qemu-kvm-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &qemu-kvm-md5sum;</para>
+        <para>&Download; MD5 sum: &qemu-kvm-md5sum;</para>
 @z
 
 @x
         <para>Download size: &qemu-kvm-size;</para>
 @y
-        <para>ダウンロードサイズ: &qemu-kvm-size;</para>
+        <para>&DownloadSize;: &qemu-kvm-size;</para>
 @z
 
 @x
@@ -75,13 +75,13 @@
 @x
     <bridgehead renderas="sect3">Qemu-kvm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Qemu-kvm の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Qemu-kvm&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="pkgconfig"/>,
       <xref linkend="python2"/>,
       <xref linkend="sdl"/>, and
       <xref linkend="x-window-system"/>
@@ -89,7 +89,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="pkgconfig"/>,
       <xref linkend="python2"/>,
       <xref linkend="sdl"/>,
       <xref linkend="x-window-system"/>
@@ -161,7 +161,7 @@
 @x
     <title>Kernel Configuration</title>
 @y
-    <title>カーネル設定</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
@@ -210,7 +210,7 @@
 @x
     <title>Installation of qemu-kvm</title>
 @y
-    <title>qemu-kvm のインストール</title>
+    <title>&InstallationOf1;qemu-kvm&InstallationOf2;</title>
 @z
 
 @x
@@ -279,7 +279,7 @@
 @x
     <title>Configuring qemu-kvm</title>
 @y
-    <title>qemu-kvm の設定</title>
+    <title>&Configuring1;qemu-kvm&Configuring2;</title>
 @z
 
 @x
@@ -461,7 +461,7 @@ If a connection, such as ssh, from the local network to the
         <seg>/etc/qemu, /usr/share/qemu, /usr/share/doc/qemu</seg>
 @y
         <seg>qemu-ga, qemu-img, qemu-io, qemu-nbd, qemu-system-x86_64</seg>
-        <seg>なし</seg>
+        <seg>&None;s</seg>
         <seg>/etc/qemu, /usr/share/qemu, /usr/share/doc/qemu</seg>
 @z
 

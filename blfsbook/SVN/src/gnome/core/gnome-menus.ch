@@ -16,7 +16,7 @@
 @x
     <title>Introduction to gnome-menus</title>
 @y
-    <title>gnome-menus の概要</title>
+    <title>&IntroductionTo1;gnome-menus&IntroductionTo2;</title>
 @z
 
 @x
@@ -87,13 +87,13 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="intltool"/>, and
+    <para role="required"><xref linkend="intltool"/>,
+    <xref linkend="pkgconfig"/>,
     <xref linkend="python2"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="intltool"/>,
+    <para role="required"><xref linkend="intltool"/>,
+    <xref linkend="pkgconfig"/>,
     <xref linkend="python2"/></para>
 @z
 
@@ -108,7 +108,7 @@
 @x
     <title>Installation of gnome-menus</title>
 @y
-    <title>gnome-menus のインストール</title>
+    <title>&InstallationOf1;gnome-menus&InstallationOf2;</title>
 @z
 
 @x
@@ -123,9 +123,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -145,7 +143,7 @@
 @x
     <title>Configuring gnome-menus</title>
 @y
-    <title>gnome-menus の設定</title>
+    <title>&Configuring1;gnome-menus&Configuring2;</title>
 @z
 
 @x

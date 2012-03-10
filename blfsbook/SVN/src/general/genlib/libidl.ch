@@ -16,7 +16,7 @@
 @x
     <title>Introduction to LibIDL</title>
 @y
-    <title>LibIDL の概要</title>
+    <title>&IntroductionTo1;LibIDL&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libidl-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libidl-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libidl-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libidl-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libidl-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libidl-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libidl-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libidl-md5sum;</para>
+        <para>&Download; MD5 sum: &libidl-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libidl-size;</para>
 @y
-        <para>ダウンロードサイズ: &libidl-size;</para>
+        <para>&DownloadSize;: &libidl-size;</para>
 @z
 
 @x
@@ -75,17 +75,15 @@
 @x
     <bridgehead renderas="sect3">LibIDL Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">LibIDL の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;LibIDL&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/> and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -109,7 +107,7 @@
 @x
     <title>Installation of LibIDL</title>
 @y
-    <title>LibIDL のインストール</title>
+    <title>&InstallationOf1;LibIDL&InstallationOf2;</title>
 @z
 
 @x
@@ -135,9 +133,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x

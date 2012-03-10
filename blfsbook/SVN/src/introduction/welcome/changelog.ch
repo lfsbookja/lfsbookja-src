@@ -106,11 +106,11 @@
         </listitem>
         <listitem>
           <para>[ken] - Add autogen-5.12, clutter-gst-1.4.4, colord-0.1.14,
-	  lcms2-2.2 and mx-1.2.1 from Wayne, and mention Cantarell fonts in the
+          lcms2-2.2 and mx-1.2.1 from Wayne, and mention Cantarell fonts in the
           Xft Font Protocol part of xorg-config.</para>
         </listitem>
         <listitem>
-	  <para>[ken] - Merge clutter-1.8.2, clutter-gtk-1.0.4 and eviv2-0.22
+          <para>[ken] - Merge clutter-1.8.2, clutter-gtk-1.0.4 and eviv2-0.22
           from Wayne.</para>
         </listitem>
       </itemizedlist>
@@ -118,15 +118,15 @@
       <para>2012/01/27</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - bridge-utils-1.5 追加。</para>
+          <para>[bdubbs] - bridge-utils-1.5 追加</para>
         </listitem>
         <listitem>
           <para>[ken] - Add autogen-5.12, clutter-gst-1.4.4, colord-0.1.14,
-	  lcms2-2.2 and mx-1.2.1 from Wayne, and mention Cantarell fonts in the
+          lcms2-2.2 and mx-1.2.1 from Wayne, and mention Cantarell fonts in the
           Xft Font Protocol part of xorg-config.</para>
         </listitem>
         <listitem>
-	  <para>[ken] - Merge clutter-1.8.2, clutter-gtk-1.0.4 and eviv2-0.22
+          <para>[ken] - Merge clutter-1.8.2, clutter-gtk-1.0.4 and eviv2-0.22
           from Wayne.</para>
         </listitem>
       </itemizedlist>

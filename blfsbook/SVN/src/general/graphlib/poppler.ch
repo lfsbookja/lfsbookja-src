@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Poppler</title>
 @y
-    <title>Poppler の概要</title>
+    <title>&IntroductionTo1;Poppler&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,12 +25,12 @@
     This is useful for providing PDF rendering functionality as a shared
     library.</para>
 @y
-<para>
-<application>Poppler</application> package contains a PDF
-rendering library and command line tools used to manipulate PDF files.
-This is useful for providing PDF rendering functionality as a shared
-library.
-</para>
+    <para>
+    <application>Poppler</application> package contains a PDF
+    rendering library and command line tools used to manipulate PDF files.
+    This is useful for providing PDF rendering functionality as a shared
+    library.
+    </para>
 @z
 
 @x
@@ -42,25 +42,25 @@ library.
 @x
         <para>Download (HTTP): <ulink url="&poppler-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&poppler-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&poppler-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&poppler-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&poppler-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&poppler-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &poppler-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &poppler-md5sum;</para>
+        <para>&Download; MD5 sum: &poppler-md5sum;</para>
 @z
 
 @x
         <para>Download size: &poppler-size;</para>
 @y
-        <para>ダウンロードサイズ: &poppler-size;</para>
+        <para>&DownloadSize;: &poppler-size;</para>
 @z
 
 @x
@@ -90,19 +90,19 @@ library.
 @x
         <para>Download (HTTP): <ulink url="&poppler-data-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&poppler-data-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&poppler-data-download-http;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &poppler-data-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &poppler-data-md5sum;</para>
+        <para>&Download; MD5 sum: &poppler-data-md5sum;</para>
 @z
 
 @x
         <para>Download size: &poppler-data-size;</para>
 @y
-        <para>ダウンロードサイズ: &poppler-data-size;</para>
+        <para>&DownloadSize;: &poppler-data-size;</para>
 @z
 
 @x
@@ -112,38 +112,38 @@ library.
     present. When installed, they enable <application>Poppler</application> to
     render CJK and Cyrillic properly.</para>
 @y
-<para>The additional package consists of encoding files for use with
-<application>Poppler</application>. The encoding files are optional and
-<application>Poppler</application> will automatically read them if they are
-present. When installed, they enable <application>Poppler</application> to
-render CJK and Cyrillic properly.</para>
+    <para>The additional package consists of encoding files for use with
+    <application>Poppler</application>. The encoding files are optional and
+    <application>Poppler</application> will automatically read them if they are
+    present. When installed, they enable <application>Poppler</application> to
+    render CJK and Cyrillic properly.</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Poppler Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Poppler の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Poppler&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><!-- <xref linkend="pkgconfig"/> and -->
-    <xref linkend="fontconfig"/></para>
+    <para role="required"><xref linkend="fontconfig"/> and
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><!-- <xref linkend="pkgconfig"/> and -->
-    <xref linkend="fontconfig"/></para>
+    <para role="required"><xref linkend="fontconfig"/>,
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>,
-    <xref linkend="glib2"/>, and <ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
+     and <ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>,
-    <xref linkend="glib2"/>, a<ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
+     and <ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
     </para>
 @z
 
@@ -169,12 +169,10 @@ render CJK and Cyrillic properly.</para>
     installed so that the <filename class='libraryfile'>libpoppler-qt</filename>
     library is built.</para>
 @y
-<para>
-If you're installing <application>Poppler</application> to support
-<xref linkend="kdegraphics"/>, you will need to have <xref linkend="qt"/>
-installed so that the <filename class='libraryfile'>libpoppler-qt</filename>
-library is built.
-</para>
+    <para>If you're installing <application>Poppler</application> to support
+    <xref linkend="kdegraphics"/>, you will need to have <xref linkend="qt"/>
+    installed so that the <filename class='libraryfile'>libpoppler-qt</filename>
+    library is built.</para>
 @z
 
 @x
@@ -188,7 +186,7 @@ library is built.
 @x
     <title>Installation of Poppler</title>
 @y
-    <title>Poppler のインストール</title>
+    <title>&InstallationOf1;Poppler&InstallationOf2;</title>
 @z
 
 @x
@@ -210,36 +208,34 @@ library is built.
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>If you downloaded the additional encoding data package, install
     it by issuing the following commands:</para>
 @y
-<para>
-
-If you downloaded the additional encoding data package, install
-it by issuing the following commands:
-</para>
+    <para>
+    
+    If you downloaded the additional encoding data package, install
+    it by issuing the following commands:
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -252,10 +248,10 @@ it by issuing the following commands:
     <para><parameter>--disable-cairo-output</parameter>: This parameter
     disables building the <application>cairo</application> graphics backend.</para>
 @y
-<para>
-<parameter>--disable-cairo-output</parameter>: This parameter
-disables building the <application>cairo</application> graphics backend.
-</para>
+    <para>
+    <parameter>--disable-cairo-output</parameter>: This parameter
+    disables building the <application>cairo</application> graphics backend.
+    </para>
 @z
 
 @x

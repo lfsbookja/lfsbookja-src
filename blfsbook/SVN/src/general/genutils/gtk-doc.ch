@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GTK-Doc</title>
 @y
-    <title>GTK-Doc の概要</title>
+    <title>&IntroductionTo1;GTK-Doc&IntroductionTo2;</title>
 @z
 
 @x
@@ -83,7 +83,7 @@
 @x
     <bridgehead renderas="sect3">GTK-Doc Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GTK-Doc の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GTK-Doc&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -137,7 +137,7 @@
 @x
     <title>Installation of GTK-Doc</title>
 @y
-    <title>GTK-Doc のインストール</title>
+    <title>&InstallationOf1;GTK-Doc&InstallationOf2;</title>
 @z
 
 @x
@@ -171,18 +171,6 @@
 @y
   <sect2 role="commands">
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--disable-scrollkeeper</parameter>: Do not make updates to
-    the <application>scrollkeeper</application> database. Remove it if you have
-    <application>rarian</application> installed.</para>
-@y
-    <para>
-    <parameter>--disable-scrollkeeper</parameter>: Do not make updates to
-    the <application>scrollkeeper</application> database. Remove it if you have
-    <application>rarian</application> installed.
-    </para>
 @z
 
 @x

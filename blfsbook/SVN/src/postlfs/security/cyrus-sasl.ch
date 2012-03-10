@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Cyrus SASL</title>
 @y
-    <title>Cyrus SASL の概要</title>
+    <title>&IntroductionTo1;Cyrus SASL&IntroductionTo2;</title>
 @z
 
 @x
@@ -49,50 +49,50 @@
 @x
         <para>Download (HTTP): <ulink url="&cyrus-sasl-download-http;"/></para>
 @y
-        <para>Download (HTTP): <ulink url="&cyrus-sasl-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&cyrus-sasl-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&cyrus-sasl-download-ftp;"/></para>
 @y
-        <para>Download (FTP): <ulink url="&cyrus-sasl-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&cyrus-sasl-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &cyrus-sasl-md5sum;</para>
 @y
-        <para>Download MD5 sum: &cyrus-sasl-md5sum;</para>
+        <para>&Download; MD5 sum: &cyrus-sasl-md5sum;</para>
 @z
 
 @x
         <para>Download size: &cyrus-sasl-size;</para>
 @y
-        <para>Download size: &cyrus-sasl-size;</para>
+        <para>&DownloadSize;: &cyrus-sasl-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &cyrus-sasl-buildsize;</para>
 @y
-        <para>Estimated disk space required: &cyrus-sasl-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &cyrus-sasl-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &cyrus-sasl-time;</para>
 @y
-        <para>Estimated build time: &cyrus-sasl-time;</para>
+        <para>&Estimatedbuildtime;: &cyrus-sasl-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Cyrus SASL Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Cyrus SASL Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Cyrus SASL&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="openssl"/></para>
 @z
 
@@ -100,29 +100,23 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/>,
     <xref linkend="openldap"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
     <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>,
-    <xref linkend="db"/>,
     <xref linkend="sqlite"/>,
-    <!-- <xref linkend="gdbm"/>,
-    <xref linkend="courier"/>,  -->
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>, and
     <ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="linux-pam"/>,
     <xref linkend="openldap"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
+    <xref linkend="mitkrb"/>,
+    <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
     <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>,
-    <xref linkend="db"/>,
     <xref linkend="sqlite"/>,
-    <!-- <xref linkend="gdbm"/>,
-    <xref linkend="courier"/>,  -->
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>, and
+    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
     <ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
 @z
 
@@ -130,14 +124,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/cyrus-sasl"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/cyrus-sasl"/></para>
 @z
 
 @x
     <title>Installation of Cyrus SASL</title>
 @y
-    <title>Installation of Cyrus SASL</title>
+    <title>&InstallationOf1;Cyrus SASL&InstallationOf2;</title>
 @z
 
 @x
@@ -173,15 +167,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
-@z
-
-@x
-    <para><command>sed -i.bak ... plugins/digestmd5.c</command>: This fixes
-    a build problem caused by using newer compilers.</para>
-@y
-    <para><command>sed -i.bak ... plugins/digestmd5.c</command>: This fixes
-    a build problem caused by using newer compilers.</para>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -249,15 +235,13 @@
 @z
 
 @x
-    <para><command>install -v -m700 -d /var/lib/sasl ...
-    -m711 /var/run/saslauthd</command>:
-    These directories must exist when starting <command>saslauthd</command> or
+    <para><command>install -v -m700 -d /var/lib/sasl</command>:
+    This directoriy must exist when starting <command>saslauthd</command> or
     using the sasldb plugin. If you're not going to be running the daemon or
     using the plugins, you may omit the creation of this directory.</para>
 @y
-    <para><command>install -v -m700 -d /var/lib/sasl ...
-    -m711 /var/run/saslauthd</command>:
-    These directories must exist when starting <command>saslauthd</command> or
+    <para><command>install -v -m700 -d /var/lib/sasl</command>:
+    This directoriy must exist when starting <command>saslauthd</command> or
     using the sasldb plugin. If you're not going to be running the daemon or
     using the plugins, you may omit the creation of this directory.</para>
 @z
@@ -265,13 +249,13 @@
 @x
     <title>Configuring Cyrus SASL</title>
 @y
-    <title>Configuring Cyrus SASL</title>
+    <title>&Configuring1;Cyrus SASL&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -289,31 +273,43 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
       <para>See <ulink
       url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
       for information on what to include in the application configuration files.
+      </para><para>
       See <ulink
       url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/LDAP_SASLAUTHD"/>
       for configuring <command>saslauthd</command> with
-      <application>OpenLDAP</application>.</para>
+      <application>OpenLDAP</application>.</para><para>
+      See <ulink 
+      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
+      for configuring <command>saslauthd</command> with
+      <application>Kerberos</application>.
+      </para>
 @y
       <para>See <ulink
       url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
       for information on what to include in the application configuration files.
+      </para><para>
       See <ulink
       url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/LDAP_SASLAUTHD"/>
       for configuring <command>saslauthd</command> with
-      <application>OpenLDAP</application>.</para>
+      <application>OpenLDAP</application>.</para><para>
+      See <ulink 
+      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
+      for configuring <command>saslauthd</command> with
+      <application>Kerberos</application>.
+      </para>
 @z
 
 @x
       <title>Init Script</title>
 @y
-      <title>Init Script</title>
+      <title>&InitScript;</title>
 @z
 
 @x
@@ -329,21 +325,19 @@
 @z
 
 @x
-        <para>You'll need to modify the init script and replace the
-        <option><replaceable>&lt;authmech&gt;</replaceable></option> parameter
-        to the <option>-a</option> switch with your desired authentication
-        mechanism.</para>
+        <para>You'll need to modify /etc/sysconfig/cyrus-sasl and replace the
+        <option><replaceable>AUTHMECH</replaceable></option> parameter
+        with your desired authentication mechanism.</para>
 @y
-        <para>You'll need to modify the init script and replace the
-        <option><replaceable>&lt;authmech&gt;</replaceable></option> parameter
-        to the <option>-a</option> switch with your desired authentication
-        mechanism.</para>
+        <para>You'll need to modify /etc/sysconfig/cyrus-sasl and replace the
+        <option><replaceable>AUTHMECH</replaceable></option> parameter
+        with your desired authentication mechanism.</para>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -351,29 +345,27 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>saslauthd, sasldblistusers2, and saslpasswd2</seg>
-        <seg>libjavasasl.so, libsasl2.so, and numerous SASL plugins and
-        Java classes</seg>
-        <seg>/usr/include/sasl, /usr/lib/java/classes/sasl, /usr/lib/sasl2,
+        <seg>pluginviewer, saslauthd, sasldblistusers2, saslpasswd2 and testsaslauthd</seg>
+        <seg>libsasl2.so, and numerous SASL plugins</seg>
+        <seg>/usr/include/sasl, /usr/lib/sasl2,
         /usr/share/doc/cyrus-sasl-&cyrus-sasl-version;, and /var/lib/sasl</seg>
 @y
-        <seg>saslauthd, sasldblistusers2, and saslpasswd2</seg>
-        <seg>libjavasasl.so, libsasl2.so, and numerous SASL plugins and
-        Java classes</seg>
-        <seg>/usr/include/sasl, /usr/lib/java/classes/sasl, /usr/lib/sasl2,
+        <seg>pluginviewer, saslauthd, sasldblistusers2, saslpasswd2 and testsaslauthd</seg>
+        <seg>libsasl2.so, and numerous SASL plugins</seg>
+        <seg>/usr/include/sasl, /usr/lib/sasl2,
         /usr/share/doc/cyrus-sasl-&cyrus-sasl-version;, and /var/lib/sasl</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x saslauthd

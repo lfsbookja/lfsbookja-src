@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libxklavier</title>
 @y
-    <title>libxklavier の概要</title>
+    <title>&IntroductionTo1;libxklavier&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libxklavier-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libxklavier-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libxklavier-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libxklavier-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libxklavier-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libxklavier-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libxklavier-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libxklavier-md5sum;</para>
+        <para>&Download; MD5 sum: &libxklavier-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libxklavier-size;</para>
 @y
-        <para>ダウンロードサイズ: &libxklavier-size;</para>
+        <para>&DownloadSize;: &libxklavier-size;</para>
 @z
 
 @x
@@ -73,21 +73,21 @@
 @x
     <bridgehead renderas="sect3">libxklavier Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libxklavier の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libxklavier&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="xorg7-lib"/>,
-    <xref linkend="libxml2"/>, and
-    <xref linkend="iso-codes"/></para>
+    <para role="required"><xref linkend="iso-codes"/>,
+    <xref linkend="libxml2"/>,
+    <xref linkend="pkgconfig"/>, and
+    <xref linkend="xorg7-lib"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="xorg7-lib"/>,
+    <para role="required"><xref linkend="iso-codes"/>,
     <xref linkend="libxml2"/>,
-    <xref linkend="iso-codes"/></para>
+    <xref linkend="pkgconfig"/>,
+    <xref linkend="xorg7-lib"/></para>
 @z
 
 @x
@@ -109,7 +109,7 @@
 @x
     <title>Installation of libxklavier</title>
 @y
-    <title>libxklavier のインストール</title>
+    <title>&InstallationOf1;libxklavier&InstallationOf2;</title>
 @z
 
 @x
@@ -124,9 +124,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -175,7 +173,7 @@
         <seg>libxklavier.{so,a}</seg>
         <seg>/usr/{include/libxklavier,share/gtk-doc/html/libxklavier}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libxklavier.{so,a}</seg>
         <seg>/usr/{include/libxklavier,share/gtk-doc/html/libxklavier}</seg>
 @z

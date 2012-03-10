@@ -15,10 +15,10 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "March 3rd, &year;">
+<!ENTITY releasedate  "March 10th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY jversion     "20120303">
+<!ENTITY jversion     "20120310">
 <!ENTITY jratio       "47.5 &percnt; (再カウント要)">
 <!ENTITY releasedate  "&year;/&month;/&day;">
 @z
@@ -66,6 +66,7 @@
 <!ENTITY Module       "モジュール">
 <!ENTITY Utilities    "ユーティリティ">
 <!ENTITY BootScript   "ブートスクリプト">
+<!ENTITY InitScript   "初期化スクリプト">
 @z
 
 @x
@@ -126,6 +127,16 @@
 @y
 <!ENTITY lfs70_checked        "<para>本パッケージは LFS-7.0 において正しくビルドでき動作することが確認されています。</para>">
 <!ENTITY lfs70_built          "<para>本パッケージは LFS-7.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+@z
+
+@x
+<!ENTITY lfs71_checked        "<para>This package is known to build and work
+                              properly using an LFS-7.1 platform.</para>">
+<!ENTITY lfs71_built          "<para>This package is known to build using an LFS
+                              7.1 platform but has not been tested.</para>">
+@y
+<!ENTITY lfs71_checked        "<para>本パッケージは LFS-7.1 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs71_built          "<para>本パッケージは LFS-7.1 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x

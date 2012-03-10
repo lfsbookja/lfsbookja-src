@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libggz</title>
 @y
-    <title>libggz の概要</title>
+    <title>&IntroductionTo1;libggz&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,12 +24,10 @@
     used by the GGZ Gaming Zone server (ggzd), the ggzcore library and other
     components.</para>
 @y
-<para>
-<application>libggz</application>
-パッケージは GGZ のベースライブラリです。
-これは GGZ ゲームゾーンサーバー
-(GGZ Gaming Zone server; ggzd)、ggzcore ライブラリ、その他のコンポーネントを提供します。
-</para>
+    <para>
+    <application>libggz</application> パッケージは GGZ のベースライブラリです。
+    これは GGZ ゲームゾーンサーバー (GGZ Gaming Zone server; ggzd)、ggzcore ライブラリ、その他のコンポーネントを提供します。
+    </para>
 @z
 
 @x
@@ -41,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libggz-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libggz-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libggz-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libggz-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libggz-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libggz-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libggz-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libggz-md5sum;</para>
+        <para>&Download; MD5 sum: &libggz-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libggz-size;</para>
 @y
-        <para>ダウンロードサイズ: &libggz-size;</para>
+        <para>&DownloadSize;: &libggz-size;</para>
 @z
 
 @x
@@ -77,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">libggz Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libggz の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libggz&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,34 +101,32 @@
 @x
     <title>Installation of libggz</title>
 @y
-    <title>libggz のインストール</title>
+    <title>&InstallationOf1;libggz&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libggz</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libggz</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libggz</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストするなら <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストするなら <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-となって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> となって以下を実行します。
+    </para>
 @z
 
 @x
@@ -143,11 +139,10 @@
     <para><parameter>--with-tls</parameter>: This parameter will automatically
     select the use of either GnuTLS or OpenSSL if available.</para>
 @y
-<para>
-<parameter>--with-tls</parameter>:
-このパラメーターは、GnuTLS か OpenSSL
-が利用可能である場合に、そのいずれかを自動的に利用するよう設定します。
-</para>
+    <para>
+    <parameter>--with-tls</parameter>:
+    このパラメーターは、GnuTLS か OpenSSL が利用可能である場合に、そのいずれかを自動的に利用するよう設定します。
+    </para>
 @z
 
 @x
@@ -171,9 +166,9 @@
         <seg>libggz.{so,a}</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libggz.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -185,7 +180,7 @@
 @x libggz.{so,a}
           <para>contains the libggz API functions.</para>
 @y
-<para>
-libggz API 関数を提供します。
-</para>
+          <para>
+          libggz API 関数を提供します。
+          </para>
 @z

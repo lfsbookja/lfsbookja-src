@@ -16,17 +16,16 @@
 @x
     <title>Introduction to liboil</title>
 @y
-    <title>liboil の概要</title>
+    <title>&IntroductionTo1;liboil&IntroductionTo2;</title>
 @z
 
 @x
     <para><application>Liboil</application> is a library of simple
     functions that are optimized for various CPUs.</para>
 @y
-<para>
-<application>Liboil</application>
-パッケージは、数々の CPU の最適化を行う単純な関数を提供するライブラリです。
-</para>
+    <para>
+    <application>Liboil</application> パッケージは、数々の CPU の最適化を行う単純な関数を提供するライブラリです。
+    </para>
 @z
 
 @x
@@ -38,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&liboil-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&liboil-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&liboil-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&liboil-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&liboil-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&liboil-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &liboil-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &liboil-md5sum;</para>
+        <para>&Download; MD5 sum: &liboil-md5sum;</para>
 @z
 
 @x
         <para>Download size: &liboil-size;</para>
 @y
-        <para>ダウンロードサイズ: &liboil-size;</para>
+        <para>&DownloadSize;: &liboil-size;</para>
 @z
 
 @x
@@ -74,16 +73,16 @@
 @x
     <bridgehead renderas="sect3">liboil Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">liboil の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;liboil&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="glib2"/> and
+    <para role="optional"><xref linkend="pkgconfig"/> and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="glib2"/>、
+    <para role="optional"><xref linkend="pkgconfig"/>,
     <xref linkend="gtk-doc"/></para>
 @z
 
@@ -98,34 +97,32 @@
 @x
     <title>Installation of liboil</title>
 @y
-    <title>liboil のインストール</title>
+    <title>&InstallationOf1;liboil&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>liboil</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>liboil</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>liboil</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストするには <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストするには <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -171,16 +168,15 @@
 @x oil-bugreport
           <para>prints out API function stats.</para>
 @y
-<para>
-API 関数の状況を出力します。
-</para>
+          <para>
+          API 関数の状況を出力します。
+          </para>
 @z
 
 @x liboil-0.3.{so,a}
           <para>contains the liboil API functions.</para>
 @y
-<para>
-liboil の API 関数を提供します。
-</para>
+          <para>
+          liboil の API 関数を提供します。
+          </para>
 @z
-

@@ -22,7 +22,7 @@
 @x
     <title>Introduction to desktop-file-utils</title>
 @y
-    <title>desktop-file-utils の概要</title>
+    <title>&IntroductionTo1;desktop-file-utils&IntroductionTo2;</title>
 @z
 
 @x
@@ -53,25 +53,25 @@
 @x
         <para>Download (HTTP): <ulink url="&desktop-file-utils-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&desktop-file-utils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&desktop-file-utils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&desktop-file-utils-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&desktop-file-utils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&desktop-file-utils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &desktop-file-utils-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &desktop-file-utils-md5sum;</para>
+        <para>&Download; MD5 sum: &desktop-file-utils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &desktop-file-utils-size;</para>
 @y
-        <para>ダウンロードサイズ: &desktop-file-utils-size;</para>
+        <para>&DownloadSize;: &desktop-file-utils-size;</para>
 @z
 
 @x
@@ -89,15 +89,15 @@
 @x
     <bridgehead renderas="sect3">desktop-file-utils Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">desktop-file-utils の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;desktop-file-utils&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -119,7 +119,7 @@
 @x
     <title>Installation of desktop-file-utils</title>
 @y
-    <title>desktop-file-utils のインストール</title>
+    <title>&InstallationOf1;desktop-file-utils&InstallationOf2;</title>
 @z
 
 @x
@@ -134,9 +134,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -150,13 +148,13 @@
 @x
     <title>Configuring desktop-file-utils</title>
 @y
-    <title>desktop-file-utils の設定</title>
+    <title>&Configuring1;desktop-file-utils&Configuring2;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>設定情報</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x

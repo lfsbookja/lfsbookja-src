@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Pango</title>
 @y
-    <title>Pango の概要</title>
+    <title>&IntroductionTo1;Pango&IntroductionTo2;</title>
 @z
 
 @x
@@ -80,13 +80,13 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/> and one of:
+    <para role="required"><xref linkend="pkgconfig"/> and one of:
     <xref linkend="cairo"/>, <xref linkend="x-window-system"/> or
     <xref linkend="fontconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/> と以下のいずれか:
-    <xref linkend="cairo"/>, <xref linkend="x-window-system"/> または
+    <para role="required"><xref linkend="pkgconfig"/> と以下のいずれか:
+    <xref linkend="cairo"/>, <xref linkend="x-window-system"/>,
     <xref linkend="fontconfig"/></para>
 @z
 

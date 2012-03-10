@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME Control Center</title>
 @y
-    <title>GNOME Control Center の概要</title>
+    <title>&IntroductionTo1;GNOME Control Center&IntroductionTo2;</title>
 @z
 
 @x
@@ -78,7 +78,7 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/>,
+    <para role="required"><!--<xref linkend="gnome-doc-utils"/>, from zenity via metacity-->
     <xref linkend="gnome-menus"/>,
     <xref linkend="gnome-settings-daemon"/>,
     <xref linkend="libgtop"/>,
@@ -88,7 +88,7 @@
     <xref linkend="shared-mime-info"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/>,
+    <para role="required"><!--<xref linkend="gnome-doc-utils"/>, from zenity via metacity-->
     <xref linkend="gnome-menus"/>,
     <xref linkend="gnome-settings-daemon"/>,
     <xref linkend="libgtop"/>,

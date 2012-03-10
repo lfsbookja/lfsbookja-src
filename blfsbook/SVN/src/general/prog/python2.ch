@@ -22,21 +22,21 @@
 @x
     <title>Introduction to Python 2</title>
 @y
-    <title>Python 2 の概要</title>
+    <title>&IntroductionTo1;Python 2&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Python 2</application> package contains the
-    <application>Python</application> development environment.
-    This is useful for object-oriented programming, writing scripts,
-    prototyping large programs or developing entire applications.  This version
-    is for backward compatibility with other dependent packages.</para>
+      The <application>Python 2</application> package contains the
+      <application>Python</application> development environment. This is useful
+      for object-oriented programming, writing scripts, prototyping large
+      programs or developing entire applications. This version is for backward
+      compatibility with other dependent packages.
 @y
-    <para>The <application>Python 2</application> package contains the
-    <application>Python</application> development environment.
-    This is useful for object-oriented programming, writing scripts,
-    prototyping large programs or developing entire applications.  This version
-    is for backward compatibility with other dependent packages.</para>
+      The <application>Python 2</application> package contains the
+      <application>Python</application> development environment. This is useful
+      for object-oriented programming, writing scripts, prototyping large
+      programs or developing entire applications. This version is for backward
+      compatibility with other dependent packages.
 @z
 
 @x
@@ -46,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&python2-download-http;"/></para>
+          Download (HTTP): <ulink url="&python2-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&python2-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&python2-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&python2-download-ftp;"/></para>
+          Download (FTP): <ulink url="&python2-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&python2-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&python2-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &python2-md5sum;</para>
+          Download MD5 sum: &python2-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &python2-md5sum;</para>
+          &Download; MD5 sum: &python2-md5sum;
 @z
 
 @x
-        <para>Download size: &python2-size;</para>
+          Download size: &python2-size;
 @y
-        <para>ダウンロードサイズ: &python2-size;</para>
+          &DownloadSize;: &python2-size;
 @z
 
 @x
-        <para>Estimated disk space required: &python2-buildsize;</para>
+          Estimated disk space required: &python2-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &python2-buildsize;</para>
+          &Estimateddiskspacerequired;: &python2-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &python2-time;</para>
+          Estimated build time: &python2-time;
 @y
-        <para>&Estimatedbuildtime;: &python2-time;</para>
+          &Estimatedbuildtime;: &python2-time;
 @z
 
 @x
@@ -94,184 +94,204 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&python2htmldoc-download-http;"/></para>
+          Download (HTTP): <ulink url="&python2htmldoc-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&python2htmldoc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&python2htmldoc-download-http;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &python2htmldoc-md5sum;</para>
+          Download MD5 sum: &python2htmldoc-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &python2htmldoc-md5sum;</para>
+          &Download; MD5 sum: &python2htmldoc-md5sum;
 @z
 
 @x
-        <para>Download size: &python2htmldoc-size;</para>
+          Download size: &python2htmldoc-size;
 @y
-        <para>ダウンロードサイズ: &python2htmldoc-size;</para>
+          &DownloadSize;: &python2htmldoc-size;
 @z
 
 @x
     <bridgehead renderas="sect3">Python Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Python の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Python&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="pth"/>,
-    <xref linkend="libffi"/> or <xref linkend="gcc"/> (install JAVA so that the 
-    <filename class="libraryfile">libffi</filename> library is built), and
-    <ulink url="http://www.bluez.org/">BlueZ</ulink></para>
+    <para role="optional">
+      <!-- <xref linkend="pth"/> can only be used if you've overwritten glibc's
+      libpthread. -->
+      <xref linkend="libffi"/> and <xref linkend="pkgconfig"/>
+      (<command>configure</command> uses <command>pkgconfig</command> to find
+      <application>libffi</application>. There is a circular dependency here:
+      <application>Pkgconfig</application> requires
+      <application>Glib</application> which requires
+      <application>Python 2</application>),
+      <!-- gcc's libffi does not install a pkgconfig file -->
+      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink> (to create the docs),
+      <ulink url="http://www.bluez.org/">BlueZ</ulink>,
+      <xref linkend="openssl"/>,
+      <xref linkend="tk"/> (there is a circular dependency with the
+      <application>Tk</application> package as it requires Xorg to be installed
+      but parts of Xorg depend on <application>Python</application>),
+      <xref linkend="db"/> and
+      <xref linkend="sqlite"/>.
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="pth"/>,
-    <xref linkend="libffi"/> or <xref linkend="gcc"/> (install JAVA so that the 
-    <filename class="libraryfile">libffi</filename> library is built),
-    <ulink url="http://www.bluez.org/">BlueZ</ulink></para>
+    <para role="optional">
+      <!-- <xref linkend="pth"/> can only be used if you've overwritten glibc's
+      libpthread. -->
+      <xref linkend="libffi"/> and <xref linkend="pkgconfig"/>
+      (<command>configure</command> uses <command>pkgconfig</command> to find
+      <application>libffi</application>. There is a circular dependency here:
+      <application>Pkgconfig</application> requires
+      <application>Glib</application> which requires
+      <application>Python 2</application>),
+      <!-- gcc's libffi does not install a pkgconfig file -->
+      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink> (to create the docs),
+      <ulink url="http://www.bluez.org/">BlueZ</ulink>,
+      <xref linkend="openssl"/>,
+      <xref linkend="tk"/> (there is a circular dependency with the
+      <application>Tk</application> package as it requires Xorg to be installed
+      but parts of Xorg depend on <application>Python</application>),
+      <xref linkend="db"/> and
+      <xref linkend="sqlite"/>.
+    </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional
-    (to create package-specific support modules)</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="tk"/>,
-    <xref linkend="db"/>, and
-    <xref linkend="sqlite"/></para>
+      User Notes: <ulink url="&blfs-wiki;/Python"/>
 @y
-    <bridgehead renderas="sect4">&Optional;
-    (to create package-specific support modules)</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="tk"/>,
-    <xref linkend="db"/>,
-    <xref linkend="sqlite"/></para>
-@z
-
-@x
-    <para>Note that there is a circular dependency with the
-    <application>Tk</application> package as it requires Xorg to be installed
-    but parts of Xorg depend on <application>Python</application>.</para>
-@y
-    <para>Note that there is a circular dependency with the
-    <application>Tk</application> package as it requires Xorg to be installed
-    but parts of Xorg depend on <application>Python</application>.</para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/Python"/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/Python"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/Python"/>
 @z
 
 @x
     <title>Installation of Python</title>
 @y
-    <title>Python のインストール</title>
+    <title>&InstallationOf1;Python&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Python</application> by running the following
-    commands:</para>
+      Install <application>Python</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Python</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Python</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>. Note that
-    if you have an existing <application>Python 2</application> installation
-    which includes the <application>PyXML</application> module, the tests could
-    produce a segmentation fault.</para>
+      To test the results, issue: <command>make test</command>.
 @y
-    <para>To test the results, issue: <command>make test</command>. Note that
-    if you have an existing <application>Python 2</application> installation
-    which includes the <application>PyXML</application> module, the tests could
-    produce a segmentation fault.</para>
+      To test the results, issue: <command>make test</command>.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      In order to use the <command>help ('name_string')</command> feature of the
+      <command>python</command> interpreter with some statements and keywords,
+      you must create or download the optional HTML documentation.
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      In order to use the <command>help ('name_string')</command> feature of the
+      <command>python</command> interpreter with some statements and keywords,
+      you must create or download the optional HTML documentation.
 @z
 
 @x
-    <para>There is no documentation installed using the instructions above.
-    See the <filename>Doc/README.txt</filename> file in the source
-    distribution for instructions on how to create the html. Alternatively,
-    you can download preformatted documentation from <ulink
-    url="http://docs.python.org/download.html"/>.</para>
+      If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
+      and wish to create the HTML documentation:
 @y
-    <para>There is no documentation installed using the instructions above.
-    See the <filename>Doc/README.txt</filename> file in the source
-    distribution for instructions on how to create the html. Alternatively,
-    you can download preformatted documentation from <ulink
-    url="http://docs.python.org/download.html"/>.</para>
+      If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
+      and wish to create the HTML documentation:
 @z
 
 @x
-    <para>In order to use the <command>help ('name_string')</command> feature
-    of the <command>python</command> interpreter with some statements and
-    keywords, you must download (or create) the optional HTML documentation
-    and install it. If you downloaded the HTML docs, issue the following
-    commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>In order to use the <command>help ('name_string')</command> feature
-    of the <command>python</command> interpreter with some statements and
-    keywords, you must download (or create) the optional HTML documentation
-    and install it. If you downloaded the HTML docs, issue the following
-    commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      If you created the html documentation with
+      <application>Sphinx</application> then install it as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      If you created the html documentation with
+      <application>Sphinx</application> then install it as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      Alternatively, you can download preformatted documentation from
+      <ulink url="http://docs.python.org/download.html"/> and install it as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      Alternatively, you can download preformatted documentation from
+      <ulink url="http://docs.python.org/download.html"/> and install it as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
-    <para><command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command
-    is used to fix a build problem with the <application>GDBM</application>
-    library.</para>
+      <option>--with-system-ffi</option>: If you have installed
+      <application>Libffi</application> and
+      <application>Pkgconfig</application>, add this option to compile
+      <application>Python</application>'s _ctypes module using the system
+      installed <application>Libffi</application>. Otherwise
+      <application>Python</application> will compile its own copy of
+      <application>Libffi</application>.
 @y
-    <para><command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command
-    is used to fix a build problem with the <application>GDBM</application>
-    library.</para>
+      <option>--with-system-ffi</option>: If you have installed
+      <application>Libffi</application> and
+      <application>Pkgconfig</application>, add this option to compile
+      <application>Python</application>'s _ctypes module using the system
+      installed <application>Libffi</application>. Otherwise
+      <application>Python</application> will compile its own copy of
+      <application>Libffi</application>.
 @z
 
 @x
-    <para><command>chmod ...</command>: Fix permissions for libraries to be 
-    consistent with other libraries.</para>
+      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
+      used to fix a build problem with the <application>GDBM</application>
+      library.
 @y
-    <para><command>chmod ...</command>: Fix permissions for libraries to be 
-    consistent with other libraries.</para>
+      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
+      used to fix a build problem with the <application>GDBM</application>
+      library.
+@z
+
+@x
+      <command>chmod ...</command>: Fix permissions for libraries to be 
+      consistent with other libraries.
+@y
+      <command>chmod ...</command>: Fix permissions for libraries to be 
+      consistent with other libraries.
 @z
 
 @x
     <title>Configuring Python 2</title>
 @y
-    <title>Configuring Python 2</title>
+    <title>&Configuring1;Python 2&Configuring2;</title>
 @z
 
 @x
-    <para>In order for <command>python</command> to find the installed
-    documentation, you must add the following environment variable to
-    individual user's or the system's profile:</para>
+      In order for <command>python</command> to find the installed
+      documentation, you must add the following environment variable to
+      individual user's or the system's profile:
 @y
-    <para>In order for <command>python</command> to find the installed
-    documentation, you must add the following environment variable to
-    individual user's or the system's profile:</para>
+      In order for <command>python</command> to find the installed
+      documentation, you must add the following environment variable to
+      individual user's or the system's profile:
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -285,67 +305,73 @@
 @z
 
 @x
-        <seg>pydoc, python, python-config, python&python2-majorver;,
-        python&python2-majorver;-config, smtpd.py, and optionally if
-        <application>Tk</application> is installed, idle</seg>
-        <seg>libpython&python2-majorver;.so and numerous modules installed in
-        /usr/lib/python&python2-majorver;/lib-dynload</seg>
-        <seg>/usr/include/python&python2-majorver;,
-        /usr/lib/python&python2-majorver;, and
-        /usr/share/doc/python-&python2-version;</seg>
+        <seg>
+          pydoc, python, python-config, python&python2-majorver;,
+          python&python2-majorver;-config, smtpd.py, and optionally if
+          <application>Tk</application> is installed, idle
+        </seg>
+        <seg>
+          libpython&python2-majorver;.so and numerous modules installed in
+          /usr/lib/python&python2-majorver;/lib-dynload
+        </seg>
+        <seg>
+          /usr/include/python&python2-majorver;,
+          /usr/lib/python&python2-majorver;, and
+          /usr/share/doc/python-&python2-version;</seg>
 @y
-        <seg>pydoc, python, python-config, python&python2-majorver;,
-        python&python2-majorver;-config, smtpd.py, and optionally if
-        <application>Tk</application> is installed, idle</seg>
-        <seg>libpython&python2-majorver;.so and numerous modules installed in
-        /usr/lib/python&python2-majorver;/lib-dynload</seg>
-        <seg>/usr/include/python&python2-majorver;,
-        /usr/lib/python&python2-majorver;, and
-        /usr/share/doc/python-&python2-version;</seg>
+        <seg>
+          pydoc, python, python-config, python&python2-majorver;,
+          python&python2-majorver;-config, smtpd.py, and optionally if
+          <application>Tk</application> is installed, idle
+        </seg>
+        <seg>
+          libpython&python2-majorver;.so and numerous modules installed in
+          /usr/lib/python&python2-majorver;/lib-dynload
+        </seg>
+        <seg>
+          /usr/include/python&python2-majorver;,
+          /usr/lib/python&python2-majorver;,
+          /usr/share/doc/python-&python2-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x idle
-          <para>is a wrapper script that opens a
-          <application>Python</application> aware GUI editor.</para>
+            is a wrapper script that opens a <application>Python</application>
+            aware GUI editor.
 @y
-          <para>is a wrapper script that opens a
-          <application>Python</application> aware GUI editor.</para>
+            is a wrapper script that opens a <application>Python</application>
+            aware GUI editor.
 @z
 
 @x pydoc
-          <para>is the <application>Python</application> documentation
-          tool.</para>
+            is the <application>Python</application> documentation tool.
 @y
-          <para>is the <application>Python</application> documentation
-          tool.</para>
+            is the <application>Python</application> documentation tool.
 @z
 
 @x python
-          <para>is an interpreted, interactive, object-oriented programming
-          language.</para>
+            is an interpreted, interactive, object-oriented programming
+            language.
 @y
-          <para>is an interpreted, interactive, object-oriented programming
-          language.</para>
+            is an interpreted, interactive, object-oriented programming
+            language.
 @z
 
 @x python&python2-majorver;
-          <para>is a version-specific name for the <command>python</command>
-          program.</para>
+            is a version-specific name for the <command>python</command>
+            program.
 @y
-          <para>is a version-specific name for the <command>python</command>
-          program.</para>
+            is a version-specific name for the <command>python</command>
+            program.
 @z
 
 @x smtpd.py
-          <para>is an SMTP proxy implemented in
-          <application>Python</application>.</para>
+            is an SMTP proxy implemented in <application>Python</application>.
 @y
-          <para>is an SMTP proxy implemented in
-          <application>Python</application>.</para>
+            is an SMTP proxy implemented in <application>Python</application>.
 @z

@@ -177,6 +177,7 @@ CHANGE_FILES = \
 	openquicktime.ch \
 	sdl.ch \
 	speex.ch \
+	taglib.ch \
 	xine-lib.ch \
 	xvid.ch \
 	libcanberra.ch \
@@ -425,6 +426,7 @@ nas.xml:                     $(BOOKdir)/$@ $(srcdir)/nas.ch
 openquicktime.xml:           $(BOOKdir)/$@ $(srcdir)/openquicktime.ch
 sdl.xml:                     $(BOOKdir)/$@ $(srcdir)/sdl.ch
 speex.xml:                   $(BOOKdir)/$@ $(srcdir)/speex.ch
+taglib.xml:                  $(BOOKdir)/$@ $(srcdir)/taglib.ch
 xine-lib.xml:                $(BOOKdir)/$@ $(srcdir)/xine-lib.ch
 xvid.xml:                    $(BOOKdir)/$@ $(srcdir)/xvid.ch
 libcanberra.xml:             $(BOOKdir)/$@ $(srcdir)/libcanberra.ch

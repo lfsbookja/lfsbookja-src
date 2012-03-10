@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libnice</title>
 @y
-    <title>libnice の概要</title>
+    <title>&IntroductionTo1;libnice&IntroductionTo2;</title>
 @z
 
 @x
@@ -27,11 +27,7 @@
     elements.</para>
 @y
     <para>
-    <application>libnice</application> パッケージは IETF による
-    ICE (Interactice Connectivity Establishment) ドラフトに対する実装ライブラリであり、
-    <application>GLib</application> ベースのライブラリ
-    <application>libnice</application>ライブラリ, <application>GStreamer</application>
-    ライブラリを提供します。
+    <application>libnice</application> パッケージは IETF による ICE (Interactice Connectivity Establishment) ドラフトに対する実装ライブラリであり、<application>GLib</application> ベースのライブラリ <application>libnice</application>ライブラリ, <application>GStreamer</application> ライブラリを提供します。
     </para>
 @z
 
@@ -80,15 +76,15 @@
 @x
     <bridgehead renderas="sect3">libnice Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libnice の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libnice&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -112,7 +108,7 @@
 @x
     <title>Installation of libnice</title>
 @y
-    <title>libnice のインストール</title>
+    <title>&InstallationOf1;libnice&InstallationOf2;</title>
 @z
 
 @x

@@ -22,35 +22,41 @@
 @x
     <title>Introduction to Autofs</title>
 @y
-    <title>Autofs の概要</title>
+    <title>&IntroductionTo1;Autofs&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>Autofs</application> package contains userspace
     tools that work with the kernel to mount and un-mount removable file
     systems. The primary use is to mount external network file systems like
-    <!-- NFS (see <xref linkend="nfs-utils"/>) or -->Samba (see <xref linkend="samba3"/>)
+    NFS (see <xref linkend="nfs-utils"/>) or Samba (see <xref linkend="samba3"/>)
     on demand.</para>
 @y
     <para>The <application>Autofs</application> package contains userspace
     tools that work with the kernel to mount and un-mount removable file
     systems. The primary use is to mount external network file systems like
-    <!-- NFS (see <xref linkend="nfs-utils"/>) or -->Samba (see <xref linkend="samba3"/>)
+    NFS (see <xref linkend="nfs-utils"/>) or Samba (see <xref linkend="samba3"/>)
     on demand.</para>
 @z
 
 @x
     <para>It may also be useful for allowing users to mount floppies, cdroms and
     other removable storage devices without requiring the system
-    administrator to mount the devices although this capability is now generally
-    provided by HAL (see <xref linkend="hal"/>).  This may not be ideal for all
-    installations, so be aware of the risks before implementing this feature.</para>
+    administrator to mount the devices.</para>
+    <!--although this capability is now generally
+    provided by HAL (see 
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>).
+    This may not be ideal for all installations, so be aware of the risks before
+    implementing this feature.</para>-->
 @y
     <para>It may also be useful for allowing users to mount floppies, cdroms and
     other removable storage devices without requiring the system
-    administrator to mount the devices although this capability is now generally
-    provided by HAL (see <xref linkend="hal"/>).  This may not be ideal for all
-    installations, so be aware of the risks before implementing this feature.</para>
+    administrator to mount the devices.</para>
+    <!--although this capability is now generally
+    provided by HAL (see 
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>).
+    This may not be ideal for all installations, so be aware of the risks before
+    implementing this feature.</para>-->
 @z
 
 @x
@@ -62,25 +68,25 @@
 @x
         <para>Download (HTTP): <ulink url="&autofs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&autofs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&autofs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&autofs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&autofs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&autofs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &autofs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &autofs-md5sum;</para>
+        <para>&Download; MD5 sum: &autofs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &autofs-size;</para>
 @y
-        <para>ダウンロードサイズ: &autofs-size;</para>
+        <para>&DownloadSize;: &autofs-size;</para>
 @z
 
 @x
@@ -130,7 +136,7 @@
 @x
     <bridgehead renderas="sect3">Autofs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Autofs の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Autofs&Dependencies2;</bridgehead>
 @z
 
 @x

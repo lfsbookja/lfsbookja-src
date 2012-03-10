@@ -16,7 +16,7 @@
 @x
     <title>Introduction to shared-mime-info</title>
 @y
-    <title>shared-mime-info の概要</title>
+    <title>&IntroductionTo1;shared-mime-info&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&shared-mime-info-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&shared-mime-info-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&shared-mime-info-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&shared-mime-info-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&shared-mime-info-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&shared-mime-info-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &shared-mime-info-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &shared-mime-info-md5sum;</para>
+        <para>&Download; MD5 sum: &shared-mime-info-md5sum;</para>
 @z
 
 @x
         <para>Download size: &shared-mime-info-size;</para>
 @y
-        <para>ダウンロードサイズ: &shared-mime-info-size;</para>
+        <para>&DownloadSize;: &shared-mime-info-size;</para>
 @z
 
 @x
@@ -75,22 +75,22 @@
 @x
     <bridgehead renderas="sect3">shared-mime-info Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">shared-mime-info の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;shared-mime-info&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>, and
-      <xref linkend="libxml2"/>
+      <xref linkend="intltool"/>,
+      <xref linkend="libxml2"/>, and
+      <xref linkend="pkgconfig"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
-      <xref linkend="libxml2"/>
+      <xref linkend="libxml2"/>,
+      <xref linkend="pkgconfig"/>
     </para>
 @z
 
@@ -105,7 +105,7 @@
 @x
     <title>Installation of shared-mime-info</title>
 @y
-    <title>shared-mime-info のインストール</title>
+    <title>&InstallationOf1;shared-mime-info&InstallationOf2;</title>
 @z
 
 @x
@@ -136,7 +136,7 @@
 @x
     <title>Configuring shared-mime-info</title>
 @y
-    <title>shared-mime-info の設定</title>
+    <title>&Configuring1;shared-mime-info&Configuring2;</title>
 @z
 
 @x
@@ -180,7 +180,7 @@
         multipart,packages,text,video,x-content,x-epoc}</seg>
 @y
         <seg>update-mime-database</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/mime/{application,audio,image,inode,message,model,
         multipart,packages,text,video,x-content,x-epoc}</seg>
 @z

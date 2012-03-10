@@ -118,7 +118,8 @@
     encodings. This is the case for the <option>-X</option> option in
     <xref linkend="a2ps"/> and <xref linkend="enscript"/>,
     the <option>-input-charset</option> option in unpatched
-    <xref linkend="cdrtools"/>, and the character sets offered for display
+    <ulink url="http://cdrecord.berlios.de/private/cdrecord.html">Cdrtools</ulink>,
+    and the character sets offered for display
     in the menu of <xref linkend="Links"/>. If the required encoding is not
     in the list, the program usually becomes completely unusable. For
     non-interactive programs, it may be possible to work around this by
@@ -127,17 +128,15 @@
 @y
     <para>
     プログラムの中には、データ入出力にあたってキャラクターエンコーディングに特定のものを求めていて、エンコーディングを自由に選択できないものがあります。
-    
-    
-This is the case for the <option>-X</option> option in
+    This is the case for the <option>-X</option> option in
     <xref linkend="a2ps"/> and <xref linkend="enscript"/>,
     the <option>-input-charset</option> option in unpatched
-    <xref linkend="cdrtools"/>, and the character sets offered for display
+    <ulink url="http://cdrecord.berlios.de/private/cdrecord.html">Cdrtools</ulink>,
+    and the character sets offered for display
     in the menu of <xref linkend="Links"/>. If the required encoding is not
     in the list, the program usually becomes completely unusable. For
     non-interactive programs, it may be possible to work around this by
     converting the document to a supported input character set before
-    submitting to the program.
-    </para>
+    submitting to the program.</para>
 @z
 

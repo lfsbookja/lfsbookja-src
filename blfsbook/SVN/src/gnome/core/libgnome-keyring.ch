@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libgnome-keyring</title>
 @y
-    <title>libgnome-keyring の概要</title>
+    <title>&IntroductionTo1;libgnome-keyring&IntroductionTo2;</title>
 @z
 
 @x
@@ -75,21 +75,21 @@
 @x
     <bridgehead renderas="sect3">libgnome-keyring Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgnome-keyring の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgnome-keyring&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="glib2"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="libgcrypt"/></para>
+    <xref linkend="intltool"/>,
+    <xref linkend="libgcrypt"/>, and
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="glib2"/>,
     <xref linkend="intltool"/>,
-    <xref linkend="libgcrypt"/></para>
+    <xref linkend="libgcrypt"/>,
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -113,7 +113,7 @@
 @x
     <title>Installation of libgnome-keyring</title>
 @y
-    <title>libgnome-keyring のインストール</title>
+    <title>InstallationOflibgnome-keyring のインストール</title>
 @z
 
 @x

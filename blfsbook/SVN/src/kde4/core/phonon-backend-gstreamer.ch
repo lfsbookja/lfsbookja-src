@@ -14,9 +14,9 @@
 @z
 
 @x
-    <title>Introduction to the Phonon GStreamer backend</title>
+    <title>Introduction to the Phonon-backend-gstreamer</title>
 @y
-    <title>&IntroductionTo1;Phonon GStreamer backend&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Phonon-backend-gstreamer&IntroductionTo2;</title>
 @z
 
 @x
@@ -71,9 +71,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Phonon GStreamer Backend Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Phonon-backend-gstreamer Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Phonon GStreamer Backend&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Phonon-backend-gstreamer&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -99,25 +99,17 @@
 @z
 
 @x
-    <title>Installation of Phonon Backend GStreamer</title>
+    <title>Installation of Phonon-backend-gstreamer</title>
 @y
-    <title>&InstallationOf1;Phonon Backend GStreamer&InstallationOf2;</title>
+    <title>&InstallationOf1;Phonon-backend-gstreamer&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Phonon Backend GStreamer</application> by running the following
+    <para>Install <application>Phonon-backend-gstreamer</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>Phonon Backend GStreamer</application> をビルドします。
-    </para>
-@z
-
-@x
-    <para>Prepare the package for compilation:</para>
-@y
-    <para>
-    パッケージをコンパイルするための準備をします。
+    以下のコマンドを実行して <application>Phonon-backend-gstreamer</application> をビルドします。
     </para>
 @z
 

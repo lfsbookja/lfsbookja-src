@@ -112,7 +112,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="hal"/>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
       <xref linkend="libusb-compat"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="openldap"/>,
@@ -125,13 +125,13 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="hal"/>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
       <xref linkend="libusb-compat"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba3"/>,
       <xref linkend="sudo"/>,
-      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
+      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
       <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>
     </para>
 @z

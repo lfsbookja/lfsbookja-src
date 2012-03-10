@@ -25,7 +25,7 @@
     and libraries.</para>
 @y
     <para>
-    アナログ リアルタイム シンセサイザー (The Analog Real-time Synthesizer;  <application>aRts</application>) は、<application>Trinity</application> プログラムやライブラリに対してサウンド機能を提供します。
+    アナログリアルタイムシンセサイザー (The Analog Real-time Synthesizer;  <application>aRts</application>) は、<application>Trinity</application> プログラムやライブラリに対してサウンド機能を提供します。
     </para>
 @z
 
@@ -83,9 +83,9 @@
       <xref linkend="alsa"/>,
       <xref linkend="audiofile"/>,
       <xref linkend="cmake"/>,
-      <xref linkend="glib2"/>
       <xref linkend="libmad"/>,
-      <xref linkend="libvorbis"/>, and
+      <xref linkend="libvorbis"/>,
+      <xref linkend="pkgconfig"/>, and
       <xref linkend="qt"/>
     </para>
 @y
@@ -94,9 +94,9 @@
       <xref linkend="alsa"/>,
       <xref linkend="audiofile"/>,
       <xref linkend="cmake"/>,
-      <xref linkend="glib2"/>
       <xref linkend="libmad"/>,
       <xref linkend="libvorbis"/>,
+      <xref linkend="pkgconfig"/>,
       <xref linkend="qt"/>
     </para>
 @z

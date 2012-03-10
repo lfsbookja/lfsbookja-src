@@ -16,7 +16,7 @@
 @x
     <title>Introduction to VTE</title>
 @y
-    <title>VTE の概要</title>
+    <title>&IntroductionTo1;VTE&IntroductionTo2;</title>
 @z
 
 @x
@@ -76,19 +76,19 @@
 @x
     <bridgehead renderas="sect3">VTE Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">VTE の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;VTE&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/> ,
-    <xref linkend="gtk3"/>, and
-    <xref linkend="intltool"/></para>
+    <para role="required"><xref linkend="gtk3"/>,
+    <xref linkend="intltool"/>, and
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/> ,
-    <xref linkend="gtk3"/>,
-    <xref linkend="intltool"/></para>
+    <para role="required"><xref linkend="gtk3"/>,
+    <xref linkend="intltool"/>,
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of VTE</title>
 @y
-    <title>VTE のインストール</title>
+    <title>&InstallationOf1;VTE&InstallationOf2;</title>
 @z
 
 @x
@@ -127,9 +127,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x

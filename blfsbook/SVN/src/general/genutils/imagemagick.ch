@@ -15,16 +15,16 @@
 
 @x
   <!ENTITY imagemagick-buildsize     "256 MB typical (additional 69 MB if you run the Image::Magick demo)">
-  <!ENTITY imagemagick-time          "4.9 SBU typical (Additional 0.4 SBU to run the test suite)">
+  <!ENTITY imagemagick-time          "4.2 SBU typical (Additional 8.1 SBU to run the test suite)">
 @y
   <!ENTITY imagemagick-buildsize     "256 MB typical (additional 69 MB if you run the Image::Magick demo)">
-  <!ENTITY imagemagick-time          "4.9 SBU typical (Additional 0.4 SBU to run the test suite)">
+  <!ENTITY imagemagick-time          "4.2 SBU typical (Additional 8.1 SBU to run the test suite)">
 @z
 
 @x
     <title>Introduction to ImageMagick</title>
 @y
-    <title>ImageMagick の概要</title>
+    <title>&IntroductionTo1;ImageMagick&IntroductionTo2;</title>
 @z
 
 @x
@@ -48,25 +48,25 @@
 @x
         <para>Download (HTTP): <ulink url="&imagemagick-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&imagemagick-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&imagemagick-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &imagemagick-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &imagemagick-md5sum;</para>
+        <para>&Download; MD5 sum: &imagemagick-md5sum;</para>
 @z
 
 @x
         <para>Download size: &imagemagick-size;</para>
 @y
-        <para>ダウンロードサイズ: &imagemagick-size;</para>
+        <para>&DownloadSize;: &imagemagick-size;</para>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <bridgehead renderas="sect3">ImageMagick Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">ImageMagick の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;ImageMagick&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -296,7 +296,7 @@
 @x
     <title>Installation of ImageMagick</title>
 @y
-    <title>ImageMagick のインストール</title>
+    <title>&InstallationOf1;ImageMagick&InstallationOf2;</title>
 @z
 
 @x
@@ -318,20 +318,10 @@
 
 @x
      <para>To test the results, issue: <command>make check</command>. Note that
-     many of the tests require a working <application>ghostscript</application>
-     and that most of the validate-*.sh tests fail when run from
-     <command>make check</command> although they can be successfully run individually
-     by <command>chmod +x tests/common.sh &amp;&amp;
-     srcdir=$PWD VALIDATE=$PWD/tests/validate-compare.sh ;# and so forth</command>
-     </para>
+     many of the tests require a working <application>ghostscript</application>.</para>
 @y
      <para>To test the results, issue: <command>make check</command>. Note that
-     many of the tests require a working <application>ghostscript</application>
-     and that most of the validate-*.sh tests fail when run from
-     <command>make check</command> although they can be successfully run individually
-     by <command>chmod +x tests/common.sh &amp;&amp;
-     srcdir=$PWD VALIDATE=$PWD/tests/validate-compare.sh ;# and so forth</command>
-     </para>
+     many of the tests require a working <application>ghostscript</application>.</para>
 @z
 
 @x

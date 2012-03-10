@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Iptables</title>
 @y
-    <title>Iptables の概要</title>
+    <title>&IntroductionTo1;Iptables&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&iptables-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&iptables-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&iptables-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&iptables-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&iptables-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&iptables-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &iptables-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &iptables-md5sum;</para>
+        <para>&Download; MD5 sum: &iptables-md5sum;</para>
 @z
 
 @x
         <para>Download size: &iptables-size;</para>
 @y
-        <para>ダウンロードサイズ: &iptables-size;</para>
+        <para>&DownloadSize;: &iptables-size;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
 @x
     <title>Kernel Configuration</title>
 @y
-    <title>カーネル設定</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
       <title>Installation of Iptables</title>
 @y
-      <title>Iptables のインストール</title>
+      <title>&InstallationOf1;Iptables&InstallationOf2;</title>
 @z
 
 @x
@@ -154,9 +154,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -174,35 +172,21 @@
 @z
 
 @x
-    <para><parameter>--bindir=/sbin</parameter>, 
-    <parameter>--sbindir=/sbin</parameter>:  Ensure all the executables go
+    <para><parameter>--bindir=/sbin</parameter>: Ensure all the executables go
     in <filename class="directory">/sbin</filename>.</para>
 @y
     <para>
-    <parameter>--bindir=/sbin</parameter>, 
-    <parameter>--sbindir=/sbin</parameter>:
+    <parameter>--bindir=/sbin</parameter>:
     実行モジュールを <filename class="directory">/sbin</filename> にインストールします。
     </para>
 @z
 
 @x
-    <para><parameter>--libdir=/lib</parameter>, 
-    <parameter>--libexecdir=/lib</parameter>:  Ensure all the libraries are 
-    in the <filename class="directory">/lib</filename> directory tree.</para>
-@y
-    <para>
-    <parameter>--libdir=/lib</parameter>, 
-    <parameter>--libexecdir=/lib</parameter>:
-    ライブラリを <filename class="directory">/lib</filename> ディレクトリツリーにインストールします。
-    </para>
-@z
-
-@x
-    <para><parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:  
+    <para><parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
     Ensure all the pkgconfig files are in the standard location.</para>
 @y
     <para>
-    <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:  
+    <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
     pkgconfig ファイルの配置をすべて標準的なディレクトリとします。
     </para>
 @z
@@ -210,7 +194,7 @@
 @x
     <title>Configuring Iptables</title>
 @y
-    <title>Iptables の設定</title>
+    <title>&Configuring1;Iptables&Configuring2;</title>
 @z
 
 @x
@@ -225,7 +209,7 @@
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -257,18 +241,18 @@
 
 @x
         <seg>iptables, iptables-restore, iptables-save, iptables-xml, 
-        iptables-multi, ip6tables, ip6tables-restore, ip6tables-save, 
-        and ip6tables-multii</seg>
+        ip6tables, ip6tables-restore, ip6tables-save,
+        and xtables-multi</seg>
         <seg>libip4tc.so, libip6tc.so, libiptc.so, libxtables.so,
-        and numerous modules in /lib/xtables/</seg>
-        <seg>/lib/xtables/xtables and /usr/include/libiptc</seg>
+        and numerous modules in /lib/xtables</seg>
+        <seg>/lib/xtables, /usr/include/libiptc and /usr/share/xtables</seg>
 @y
         <seg>iptables, iptables-restore, iptables-save, iptables-xml, 
-        iptables-multi, ip6tables, ip6tables-restore, ip6tables-save, 
-        ip6tables-multii</seg>
+        ip6tables, ip6tables-restore, ip6tables-save,
+        xtables-multi</seg>
         <seg>libip4tc.so, libip6tc.so, libiptc.so, libxtables.so,
-        /lib/xtables/ 以下にある数々のモジュール</seg>
-        <seg>/lib/xtables/xtables, /usr/include/libiptc</seg>
+        and numerous modules in /lib/xtables</seg>
+        <seg>/lib/xtables, /usr/include/libiptc, /usr/share/xtables</seg>
 @z
 
 @x
@@ -279,43 +263,37 @@
 
 @x iptables
           <para>is used to set up, maintain, and inspect the tables of
-          IP packet filter rules in the Linux kernel.  It is a 
-          symbolic link to iptables-multi.</para>
+          IP packet filter rules in the Linux kernel.  It is a
+          symbolic link to xtables-multi.</para>
 @y
           <para>
           Linux カーネル内の IP パケットフィルタルール (IP packet filter rules) のテーブルを設定、管理、検証します。
-          これは iptables-multi へのシンボリックリンクです。
+          これは xtables-multi へのシンボリックリンクです。
           </para>
 @z
 
 @x iptables-restore
           <para>is used to restore IP Tables from data
           specified on STDIN. Use I/O redirection provided by your
-          shell to read from a file. It is a symbolic link to 
-          iptables-multi.</para>
+          shell to read from a file. It is a symbolic link to
+          xtables-multi.</para>
 @y
-          <para>
-          
-          is used to restore IP Tables from data
+          <para>is used to restore IP Tables from data
           specified on STDIN. Use I/O redirection provided by your
-          shell to read from a file. It is a symbolic link to 
-          iptables-multi.
-          </para>
+          shell to read from a file. It is a symbolic link to
+          xtables-multi.</para>
 @z
 
 @x iptables-save
           <para>is used to dump the contents of an IP Table
           in easily parseable format to STDOUT. Use I/O-redirection
           provided by your shell to write to a file. It is a symbolic link to
-          iptables-multi.</para>
+          xtables-multi.</para>
 @y
-          <para>
-          
-          is used to dump the contents of an IP Table
+          <para>is used to dump the contents of an IP Table
           in easily parseable format to STDOUT. Use I/O-redirection
           provided by your shell to write to a file. It is a symbolic link to
-          iptables-multi.
-          </para>
+          xtables-multi.</para>
 @z
 
 @x iptables-xml
@@ -323,27 +301,21 @@
           <command>iptables-save</command> to an XML format. Using the
           <filename>iptables.xslt</filename> stylesheet converts the XML
           back to the format of <command>iptables-restore</command>.
-          It is a symbolic link to iptables-multi.</para>
+          It is a symbolic link to xtables-multi.</para>
 @y
-          <para>
-          
-          is used to convert the output of
+          <para>is used to convert the output of
           <command>iptables-save</command> to an XML format. Using the
           <filename>iptables.xslt</filename> stylesheet converts the XML
           back to the format of <command>iptables-restore</command>.
-          It is a symbolic link to iptables-multi.
-          </para>
+          It is a symbolic link to xtables-multi.</para>
 @z
 
 @x ip6tables
           <para>are a set of commands for IPV6 that parallel the iptables
-          commands above.  All of these commands are symbolic 
-          links to ip6tables-multi.</para>
+          commands above.  All of these commands are symbolic
+          links to xtables-multi.</para>
 @y
-          <para>
-          
-          are a set of commands for IPV6 that parallel the iptables
-          commands above.  All of these commands are symbolic 
-          links to ip6tables-multi.
-          </para>
+          <para>are a set of commands for IPV6 that parallel the iptables
+          commands above.  All of these commands are symbolic
+          links to xtables-multi.</para>
 @z

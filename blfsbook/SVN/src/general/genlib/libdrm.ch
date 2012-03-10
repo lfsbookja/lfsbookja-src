@@ -16,13 +16,13 @@
 @x
   <!ENTITY libdrm-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libdrm-time          "0.1 SBU 以下">
+  <!ENTITY libdrm-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libdrm</title>
 @y
-    <title>libdrm の概要</title>
+    <title>&IntroductionTo1;libdrm&IntroductionTo2;</title>
 @z
 
 @x
@@ -45,25 +45,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libdrm-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libdrm-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libdrm-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libdrm-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libdrm-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libdrm-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libdrm-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libdrm-md5sum;</para>
+        <para>&Download; MD5 sum: &libdrm-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libdrm-size;</para>
 @y
-        <para>ダウンロードサイズ: &libdrm-size;</para>
+        <para>&DownloadSize;: &libdrm-size;</para>
 @z
 
 @x
@@ -81,7 +81,7 @@
 @x
     <bridgehead renderas="sect3">libdrm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libdrm の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libdrm&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,7 +105,7 @@
 @x
     <title>Installation of libdrm</title>
 @y
-    <title>libdrm のインストール</title>
+    <title>&InstallationOf1;libdrm&InstallationOf2;</title>
 @z
 
 @x
@@ -155,12 +155,12 @@
 @x
         <seg>None</seg>
         <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
-        libdrm_radeon.so, and libkms</seg>
+        libdrm_radeon.so, and libkms.so</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
-        libdrm_radeon.so, libkms</seg>
+        libdrm_radeon.so, libkms.so</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
 @z
 

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -79,11 +79,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="intltool"/> and
-    <xref linkend="glib2"/></para>
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="glib2"/></para>
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x

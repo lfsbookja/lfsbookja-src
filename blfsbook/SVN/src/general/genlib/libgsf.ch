@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libgsf</title>
 @y
-    <title>libgsf の概要</title>
+    <title>&IntroductionTo1;libgsf&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libgsf-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libgsf-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libgsf-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libgsf-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libgsf-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libgsf-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libgsf-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libgsf-md5sum;</para>
+        <para>&Download; MD5 sum: &libgsf-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libgsf-size;</para>
 @y
-        <para>ダウンロードサイズ: &libgsf-size;</para>
+        <para>&DownloadSize;: &libgsf-size;</para>
 @z
 
 @x
@@ -78,18 +78,18 @@
 @x
     <bridgehead renderas="sect3">libgsf Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgsf の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgsf&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="libxml2"/>, and
+    <para role="required"><xref linkend="libxml2"/>,
+    <xref linkend="pkgconfig"/>, and
     <xref linkend="perl-xml-parser"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="libxml2"/>,
+    <para role="required"><xref linkend="libxml2"/>,
+    <xref linkend="pkgconfig"/>,
     <xref linkend="perl-xml-parser"/></para>
 @z
 
@@ -137,7 +137,7 @@
 @x
     <title>Installation of libgsf</title>
 @y
-    <title>libgsf のインストール</title>
+    <title>&InstallationOf1;libgsf&InstallationOf2;</title>
 @z
 
 @x
@@ -205,7 +205,7 @@
 @y
     <para>
     <option>--disable-static</option>:
-    このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
+    このスイッチの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
     </para>
 @z
 

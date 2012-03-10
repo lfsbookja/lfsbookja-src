@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libbonobo</title>
 @y
-    <title>libbonobo の概要</title>
+    <title>&IntroductionTo1;libbonobo&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libbonobo-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libbonobo-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libbonobo-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libbonobo-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libbonobo-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libbonobo-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libbonobo-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libbonobo-md5sum;</para>
+        <para>&Download; MD5 sum: &libbonobo-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libbonobo-size;</para>
 @y
-        <para>ダウンロードサイズ: &libbonobo-size;</para>
+        <para>&DownloadSize;: &libbonobo-size;</para>
 @z
 
 @x
@@ -77,12 +77,12 @@
 @x
     <bridgehead renderas="sect3">libbonobo Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libbonobo の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libbonobo&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
+    <para role="required">
     <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="ORBit2"/>,
@@ -90,7 +90,7 @@
     <xref linkend="popt"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
+    <para role="required">
     <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="ORBit2"/>,
@@ -119,7 +119,7 @@
 @x
     <title>Installation of libbonobo</title>
 @y
-    <title>libbonobo のインストール</title>
+    <title>&InstallationOf1;libbonobo&InstallationOf2;</title>
 @z
 
 @x

@@ -16,7 +16,7 @@
 @x
       <title>Introduction to MIT Kerberos V5</title>
 @y
-      <title>MIT Kerberos V5 の概要</title>
+      <title>&IntroductionTo1;MIT Kerberos V5&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&mitkrb-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&mitkrb-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&mitkrb-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&mitkrb-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&mitkrb-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&mitkrb-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &mitkrb-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &mitkrb-md5sum;</para>
+        <para>&Download; MD5 sum: &mitkrb-md5sum;</para>
 @z
 
 @x
         <para>Download size: &mitkrb-size;</para>
 @y
-        <para>ダウンロードサイズ: &mitkrb-size;</para>
+        <para>&DownloadSize;: &mitkrb-size;</para>
 @z
 
 @x
@@ -82,19 +82,17 @@
 @x
     <bridgehead renderas="sect3">MIT Kerberos V5 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">MIT Kerberos V5 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;MIT Kerberos V5&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>
-    (for <command>xdm</command> based logins),
+    <para role="optional"><xref linkend="keyutils"/>,
     <xref linkend="openldap"/>, and
     <xref linkend="dejagnu"/> (required to run the test suite)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>
-    (<command>xdm</command> ベースのログイン時に必要),
+    <para role="optional"><xref linkend="keyutils"/>,
     <xref linkend="openldap"/>,
     <xref linkend="dejagnu"/> (テストスイート実行時に必要)</para>
 @z
@@ -122,7 +120,7 @@
 @x
     <title>Installation of MIT Kerberos V5</title>
 @y
-    <title>MIT Kerberos V5 のインストール</title>
+    <title>&InstallationOf1;MIT Kerberos V5&InstallationOf2;</title>
 @z
 
 @x
@@ -172,49 +170,6 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-      <para><command>login.krb5</command> does not support
-      <application>Shadow</application> passwords. As a result, when the
-      Kerberos server is unavailable, the default fall through to
-      <filename>/etc/passwd</filename> will not work because
-      the passwords have been moved to <filename>/etc/shadow</filename> during
-      the LFS build process.  Entering the following
-      commands without moving the passwords back to
-      <filename>/etc/passwd</filename> could prevent any logins.</para>
-@y
-    <para>
-    <command>login.krb5</command> does not support
-    <application>Shadow</application> passwords. As a result, when the
-    Kerberos server is unavailable, the default fall through to
-    <filename>/etc/passwd</filename> will not work because
-    the passwords have been moved to <filename>/etc/shadow</filename> during
-    the LFS build process.  Entering the following
-    commands without moving the passwords back to
-    <filename>/etc/passwd</filename> could prevent any logins.</para>
-@z
-
-@x
-    <para>After considering (and understanding) the above warning, the
-    following commands can be entered as the
-    <systemitem class="username">root</systemitem> user to replace the
-    existing <command>login</command> program with the Kerberized
-    version (after preserving the original) and move the support libraries
-    to a location available when the
-    <filename class='directory'>/usr</filename> filesystem is
-    not mounted:</para>
-@y
-    <para>
-    After considering (and understanding) the above warning, the
-    following commands can be entered as the
-    <systemitem class="username">root</systemitem> user to replace the
-    existing <command>login</command> program with the Kerberized
-    version (after preserving the original) and move the support libraries
-    to a location available when the
-    <filename class='directory'>/usr</filename> filesystem is
-    not mounted:
     </para>
 @z
 
@@ -303,47 +258,35 @@
 @z
 
 @x
-    <para><command>mv -v ... /lib &amp;&amp; ln -v -sf ...</command>:
-    These libraries are moved to <filename class="directory">/lib</filename> so
-    they are available when the <filename class="directory">/usr</filename>
-    filesystem is not mounted.</para>
-@y
-    <para><command>mv -v ... /lib &amp;&amp; ln -v -sf ...</command>:
-    These libraries are moved to <filename class="directory">/lib</filename> so
-    they are available when the <filename class="directory">/usr</filename>
-    filesystem is not mounted.</para>
-@z
-
-@x
     <title>Configuring MIT Kerberos V5</title>
 @y
-    <title>Configuring MIT Kerberos V5</title>
+    <title>&Configuring1;MIT Kerberos V5&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
-      <para><filename>/etc/krb5/krb5.conf</filename> and
+      <para><filename>/etc/krb5.conf</filename> and
       <filename>/var/lib/krb5kdc/kdc.conf</filename></para>
 @y
-      <para><filename>/etc/krb5/krb5.conf</filename> and
+      <para><filename>/etc/krb5.conf</filename>,
       <filename>/var/lib/krb5kdc/kdc.conf</filename></para>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
         <title>Kerberos Configuration</title>
 @y
-        <title>Kerberos Configuration</title>
+        <title>&Configuring1;Kerberos&Configuring2;</title>
 @z
 
 @x
@@ -458,14 +401,14 @@
 
 @x
         <para>This should have created a file in
-        <filename class="directory">/etc/krb5</filename> named
+        <filename class="directory">/etc</filename> named
         <filename>krb5.keytab</filename> (Kerberos 5). This file should
         have 600 (<systemitem class="username">root</systemitem> rw only)
         permissions. Keeping the keytab files from public access is crucial
         to the overall security of the Kerberos installation.</para>
 @y
         <para>This should have created a file in
-        <filename class="directory">/etc/krb5</filename> named
+        <filename class="directory">/etc</filename> named
         <filename>krb5.keytab</filename> (Kerberos 5). This file should
         have 600 (<systemitem class="username">root</systemitem> rw only)
         permissions. Keeping the keytab files from public access is crucial
@@ -473,16 +416,6 @@
 @z
 
 @x
-        <para>Eventually, you'll want to add server daemon principles to the
-        database and extract them to the keytab file. You do this in the same
-        way you created the host principles. Below is an example:</para>
-@y
-        <para>Eventually, you'll want to add server daemon principles to the
-        database and extract them to the keytab file. You do this in the same
-        way you created the host principles. Below is an example:</para>
-@z
-
-@x
         <para>Exit the <command>kadmin</command> program (use
         <command>quit</command> or <command>exit</command>) and return
         back to the shell prompt. Start the KDC daemon manually, just to
@@ -553,68 +486,6 @@
 @z
 
 @x
-        <title>Using Kerberized Client Programs</title>
-@y
-        <title>Using Kerberized Client Programs</title>
-@z
-
-@x
-        <para>To use the kerberized client programs (<command>telnet</command>,
-        <command>ftp</command>, <command>rsh</command>, <command>rcp</command>,
-        <command>rlogin</command>), you first must get an authentication ticket.
-        Use the <command>kinit</command> program to get the ticket. After you've
-        acquired the ticket, you can use the kerberized programs to connect to
-        any kerberized server on the network. You will not be prompted for
-        authentication until your ticket expires (default is one day), unless
-        you specify a different user as a command line argument to the
-        program.</para>
-@y
-        <para>To use the kerberized client programs (<command>telnet</command>,
-        <command>ftp</command>, <command>rsh</command>, <command>rcp</command>,
-        <command>rlogin</command>), you first must get an authentication ticket.
-        Use the <command>kinit</command> program to get the ticket. After you've
-        acquired the ticket, you can use the kerberized programs to connect to
-        any kerberized server on the network. You will not be prompted for
-        authentication until your ticket expires (default is one day), unless
-        you specify a different user as a command line argument to the
-        program.</para>
-@z
-
-@x
-        <para>The kerberized programs will connect to non kerberized daemons,
-        warning you that authentication is not encrypted.</para>
-@y
-        <para>The kerberized programs will connect to non kerberized daemons,
-        warning you that authentication is not encrypted.</para>
-@z
-
-@x
-        <title>Using Kerberized Server Programs</title>
-@y
-        <title>Using Kerberized Server Programs</title>
-@z
-
-@x
-        <para>Using kerberized server programs (<command>telnetd</command>,
-        <command>kpropd</command>, <command>klogind</command> and
-        <command>kshd</command>) requires two additional configuration steps.
-        First the <filename>/etc/services</filename> file must be updated to
-        include eklogin and krb5_prop. Second, the
-        <filename>inetd.conf</filename> <!--or <filename>xinetd.conf</filename>--> file
-        must be modified for each server that will be activated, usually
-        replacing the server from <xref linkend="inetutils"/>.</para>
-@y
-        <para>Using kerberized server programs (<command>telnetd</command>,
-        <command>kpropd</command>, <command>klogind</command> and
-        <command>kshd</command>) requires two additional configuration steps.
-        First the <filename>/etc/services</filename> file must be updated to
-        include eklogin and krb5_prop. Second, the
-        <filename>inetd.conf</filename> <!--or <filename>xinetd.conf</filename>--> file
-        must be modified for each server that will be activated, usually
-        replacing the server from <xref linkend="inetutils"/>.</para>
-@z
-
-@x
         <title>Additional Information</title>
 @y
         <title>Additional Information</title>
@@ -622,12 +493,12 @@
 
 @x
         <para>For additional information consult <ulink
-        url="http://web.mit.edu/kerberos/www/krb5-1.6/#documentation">
+        url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
         Documentation for krb-&mitkrb-version;</ulink> on which the above
         instructions are based.</para>
 @y
         <para>For additional information consult <ulink
-        url="http://web.mit.edu/kerberos/www/krb5-1.6/#documentation">
+        url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
         Documentation for krb-&mitkrb-version;</ulink> on which the above
         instructions are based.</para>
 @z
@@ -649,32 +520,30 @@
 @z
 
 @x
-        <seg>ftp, ftpd, gss-client, gss-server, k5srvutil, kadmin,
-        kadmin.local, kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist,
-        klogind, kpasswd, kprop, kpropd, krb5-config, krb5-send-pr, krb524d,
-        krb524init, krb5kdc, kshd, ksu, ktutil, kvno, login.krb5, rcp, rlogin,
-        rsh, sclient, sim_client, sim_server, sserver, telnet, telnetd,
-        uuclient, uuserver and v4rcp</seg>
-        <seg>libdes425.so, libgssapi_krb5.so,
-        libgssrpc.so, libk5crypto.so, libkadm5clnt.so, libkadm5srv.so,
-        libkdb5.so, libkdb_ldap.so, libkrb4.so, libkrb5.so and
-        libkrb5support.so</seg>
-        <seg>/etc/krb5, /usr/include/{gssapi,gssrpc,kerberosIV,krb5},
-        /usr/lib/krb5, /usr/share/{doc/krb5-&mitkrb-version;,examples,gnats}
+        <seg>gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
+        kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
+        kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
+        ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
+        sserver, uuclient, and uuserver</seg>
+        <seg>libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
+        libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
+        libkrb5.so, libkrb5support.so, libverto-k5ev.so and 
+        libverto.so</seg>
+        <seg>/usr/include/{gssapi,gssrpc,kadm5,krb5}, /usr/lib/krb5, 
+        /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5,gnats}
         and /var/lib/krb5kdc</seg>
 @y
-        <seg>ftp, ftpd, gss-client, gss-server, k5srvutil, kadmin,
-        kadmin.local, kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist,
-        klogind, kpasswd, kprop, kpropd, krb5-config, krb5-send-pr, krb524d,
-        krb524init, krb5kdc, kshd, ksu, ktutil, kvno, login.krb5, rcp, rlogin,
-        rsh, sclient, sim_client, sim_server, sserver, telnet, telnetd,
-        uuclient, uuserver and v4rcp</seg>
-        <seg>libdes425.so, libgssapi_krb5.so,
-        libgssrpc.so, libk5crypto.so, libkadm5clnt.so, libkadm5srv.so,
-        libkdb5.so, libkdb_ldap.so, libkrb4.so, libkrb5.so and
-        libkrb5support.so</seg>
-        <seg>/etc/krb5, /usr/include/{gssapi,gssrpc,kerberosIV,krb5},
-        /usr/lib/krb5, /usr/share/{doc/krb5-&mitkrb-version;,examples,gnats}
+        <seg>gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
+        kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
+        kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
+        ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
+        sserver, uuclient, and uuserver</seg>
+        <seg>libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
+        libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
+        libkrb5.so, libkrb5support.so, libverto-k5ev.so and 
+        libverto.so</seg>
+        <seg>/usr/include/{gssapi,gssrpc,kadm5,krb5}, /usr/lib/krb5, 
+        /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5,gnats}
         and /var/lib/krb5kdc</seg>
 @z
 
@@ -682,18 +551,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@z
-
-@x ftp
-          <para>is a kerberized FTP client.</para>
-@y
-          <para>is a kerberized FTP client.</para>
-@z
-
-@x ftpd
-          <para>is a kerberized FTP daemon.</para>
-@y
-          <para>is a kerberized FTP daemon.</para>
 @z
 
 @x k5srvutil
@@ -746,14 +603,6 @@
 @y
           <para>reads and displays the current tickets in
           the credential cache.</para>
-@z
-
-@x klogind
-          <para>is the server that responds to <command>rlogin</command>
-          requests.</para>
-@y
-          <para>is the server that responds to <command>rlogin</command>
-          requests.</para>
 @z
 
 @x kpasswd

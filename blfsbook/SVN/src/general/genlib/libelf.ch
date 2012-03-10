@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libelf</title>
 @y
-    <title>libelf の概要</title>
+    <title>&IntroductionTo1;libelf&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,11 +24,10 @@
     library. It lets you read, modify or create ELF files in an
     architecture-independent way.</para>
 @y
-<para>
-<application>libelf</application>
-パッケージは、オブジェクトファイルへのアクセスを行うライブラリを提供します。
-これを用いれば、アーキテクチャーに依存することなく ELF ファイルの生成、修正、読み込みを行うことができます。
-</para>
+    <para>
+    <application>libelf</application> パッケージは、オブジェクトファイルへのアクセスを行うライブラリを提供します。
+    これを用いれば、アーキテクチャーに依存することなく ELF ファイルの生成、修正、読み込みを行うことができます。
+    </para>
 @z
 
 @x
@@ -40,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libelf-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libelf-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libelf-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libelf-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libelf-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libelf-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libelf-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libelf-md5sum;</para>
+        <para>&Download; MD5 sum: &libelf-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libelf-size;</para>
 @y
-        <para>ダウンロードサイズ: &libelf-size;</para>
+        <para>&DownloadSize;: &libelf-size;</para>
 @z
 
 @x
@@ -84,34 +83,30 @@
 @x
     <title>Installation of libelf</title>
 @y
-    <title>libelf のインストール</title>
+    <title>&InstallationOf1;libelf&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libelf</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libelf</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libelf</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -135,9 +130,9 @@
         <seg>libelf.{so,a}</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libelf.{so,a}</seg>
-        <seg>None</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -150,8 +145,7 @@
           <para>contains the <application>libelf</application> API
           functions.</para>
 @y
-<para>
-<application>libelf</application> API 関数を提供します。
-</para>
+          <para>
+          <application>libelf</application> API 関数を提供します。
+          </para>
 @z
-

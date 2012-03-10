@@ -138,24 +138,23 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/kde4/core
 CHANGE_FILES = \
-	kde4baseruntime.ch \
+	attica.ch \
+	akonadi.ch \
 	automoc4.ch \
-	qimageblitz.ch \
-	kde4bindings.ch \
-	polkit-qt.ch \
-	kde4base.ch \
+	core.ch \
+	kactivities.ch \
+	kde4baseapps.ch \
+	kde4libs.ch \
+	kde4pimlibs.ch \
+	kde4runtime.ch \
+	kde4workspace.ch \
+	oxygen-icons.ch \
+	phonon.ch \
 	phonon-backend-gstreamer.ch \
 	phonon-backend-vlc.ch \
-	attica.ch \
-	kde4graphics.ch \
-	akonadi.ch \
-	kde4baseworkspace.ch \
-	shrdesktopontologies.ch \
-	core.ch \
-	phonon.ch \
-	kde4libs.ch \
-	oxygen-icons.ch \
-	kde4pimlibs.ch
+	polkit-qt.ch \
+	qimageblitz.ch \
+	shrdesktopontologies.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -351,24 +350,23 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-kde4baseruntime.xml:          $(BOOKdir)/$@ $(srcdir)/kde4baseruntime.ch
+attica.xml:                   $(BOOKdir)/$@ $(srcdir)/attica.ch
+akonadi.xml:                  $(BOOKdir)/$@ $(srcdir)/akonadi.ch
 automoc4.xml:                 $(BOOKdir)/$@ $(srcdir)/automoc4.ch
-qimageblitz.xml:              $(BOOKdir)/$@ $(srcdir)/qimageblitz.ch
-kde4bindings.xml:             $(BOOKdir)/$@ $(srcdir)/kde4bindings.ch
-polkit-qt.xml:                $(BOOKdir)/$@ $(srcdir)/polkit-qt.ch
-kde4base.xml:                 $(BOOKdir)/$@ $(srcdir)/kde4base.ch
+core.xml:                     $(BOOKdir)/$@ $(srcdir)/core.ch
+kactivities.xml:              $(BOOKdir)/$@ $(srcdir)/kactivities.ch
+kde4baseapps.xml:             $(BOOKdir)/$@ $(srcdir)/kde4baseapps.ch
+kde4libs.xml:                 $(BOOKdir)/$@ $(srcdir)/kde4libs.ch
+kde4pimlibs.xml:              $(BOOKdir)/$@ $(srcdir)/kde4pimlibs.ch
+kde4runtime.xml:              $(BOOKdir)/$@ $(srcdir)/kde4runtime.ch
+kde4workspace.xml:            $(BOOKdir)/$@ $(srcdir)/kde4workspace.ch
+oxygen-icons.xml:             $(BOOKdir)/$@ $(srcdir)/oxygen-icons.ch
+phonon.xml:                   $(BOOKdir)/$@ $(srcdir)/phonon.ch
 phonon-backend-gstreamer.xml: $(BOOKdir)/$@ $(srcdir)/phonon-backend-gstreamer.ch
 phonon-backend-vlc.xml:       $(BOOKdir)/$@ $(srcdir)/phonon-backend-vlc.ch
-attica.xml:                   $(BOOKdir)/$@ $(srcdir)/attica.ch
-kde4graphics.xml:             $(BOOKdir)/$@ $(srcdir)/kde4graphics.ch
-akonadi.xml:                  $(BOOKdir)/$@ $(srcdir)/akonadi.ch
-kde4baseworkspace.xml:        $(BOOKdir)/$@ $(srcdir)/kde4baseworkspace.ch
+polkit-qt.xml:                $(BOOKdir)/$@ $(srcdir)/polkit-qt.ch
+qimageblitz.xml:              $(BOOKdir)/$@ $(srcdir)/qimageblitz.ch
 shrdesktopontologies.xml:     $(BOOKdir)/$@ $(srcdir)/shrdesktopontologies.ch
-core.xml:                     $(BOOKdir)/$@ $(srcdir)/core.ch
-phonon.xml:                   $(BOOKdir)/$@ $(srcdir)/phonon.ch
-kde4libs.xml:                 $(BOOKdir)/$@ $(srcdir)/kde4libs.ch
-oxygen-icons.xml:             $(BOOKdir)/$@ $(srcdir)/oxygen-icons.ch
-kde4pimlibs.xml:              $(BOOKdir)/$@ $(srcdir)/kde4pimlibs.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

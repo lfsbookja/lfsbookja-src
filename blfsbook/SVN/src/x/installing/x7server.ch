@@ -22,7 +22,7 @@
 @x
     <title>Introduction to Xorg-Server</title>
 @y
-    <title>Xorg-Server の概要</title>
+    <title>&IntroductionTo1;Xorg-Server&IntroductionTo2;</title>
 @z
 
 @x
@@ -43,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&xorg-server-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&xorg-server-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&xorg-server-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&xorg-server-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&xorg-server-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&xorg-server-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &xorg-server-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &xorg-server-md5sum;</para>
+        <para>&Download; MD5 sum: &xorg-server-md5sum;</para>
 @z
 
 @x
         <para>Download size: &xorg-server-size;</para>
 @y
-        <para>ダウンロードサイズ: &xorg-server-size;</para>
+        <para>&DownloadSize;: &xorg-server-size;</para>
 @z
 
 @x
@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect3">Xorg Server Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xorg サーバーの依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Xorg サーバー&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -114,7 +114,7 @@
     <xref linkend="xmlto"/>, (to build documentation),
     <xref linkend="fop"/>, (to build documentation),
     <xref linkend="gs"/> (to build documentation),
-    <xref linkend="hal"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
     <xref linkend="mesalib"/> (required for DRI)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -123,7 +123,7 @@
     <xref linkend="xmlto"/>, (to build documentation),
     <xref linkend="fop"/>, (to build documentation),
     <xref linkend="gs"/> (to build documentation),
-    <xref linkend="hal"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
     <xref linkend="mesalib"/> (required for DRI)</para>
 @z
 
@@ -138,7 +138,7 @@
 @x
     <title>Installation of Xorg Server</title>
 @y
-    <title>Xorg サーバーのインストール</title>
+    <title>&InstallationOf1;Xorg サーバー&InstallationOf2;</title>
 @z
 
 @x
@@ -152,9 +152,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -243,7 +241,7 @@
 @y
         <seg>cvt, dmx*, gtf, vdltodmx, X, Xnest, Xorg, Xvfb,
         and xdmxconfig</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/var/lib/xkb と <envar>$XORG_PREFIX</envar>/ ディレクトリ配下の以下のディレクトリ:
         include/xorg, include/X11/pixmaps,
         lib/X11/{getconfig,modules}, lib/xorg</seg>

@@ -78,12 +78,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/> and
-    <xref linkend="libsigc"/></para>
+    <para role="required"><xref linkend="libsigc"/> and
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/>,
-    <xref linkend="libsigc"/></para>
+    <para role="required"><xref linkend="libsigc"/>,
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x

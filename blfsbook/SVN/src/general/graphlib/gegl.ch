@@ -78,12 +78,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="babl"/>,
-    and  <xref linkend="glib2"/></para>
+    <!-- babl pulls in pkgconfig and thus glib2 -->
+    <para role="required"><xref linkend="babl"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="babl"/>,
-    <xref linkend="glib2"/></para>
+    <!-- babl pulls in pkgconfig and thus glib2 -->
+    <para role="required"><xref linkend="babl"/></para>
 @z
 
 @x

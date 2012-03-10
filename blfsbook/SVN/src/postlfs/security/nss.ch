@@ -16,28 +16,25 @@
 @x
     <title>Introduction to NSS</title>
 @y
-    <title>NSS のインストール</title>
+    <title>&IntroductionTo1;NSS&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The Network Security Services (<application>NSS</application>)
-    package is a set of libraries designed to support cross-platform
-    development of security-enabled client and server applications.
-    Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5,
-    PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other
-    security standards. This is useful for implementing SSL and S/MIME or
-    other Internet security standards into an application.</para>
+      The Network Security Services (<application>NSS</application>) package is
+      a set of libraries designed to support cross-platform development of
+      security-enabled client and server applications. Applications built with
+      NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12,
+      S/MIME, X.509 v3 certificates, and other security standards. This is
+      useful for implementing SSL and S/MIME or other Internet security
+      standards into an application.
 @y
-    <para>
-    
-    The Network Security Services (<application>NSS</application>)
-    package is a set of libraries designed to support cross-platform
-    development of security-enabled client and server applications.
-    Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5,
-    PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other
-    security standards. This is useful for implementing SSL and S/MIME or
-    other Internet security standards into an application.
-    </para>
+      The Network Security Services (<application>NSS</application>) package is
+      a set of libraries designed to support cross-platform development of
+      security-enabled client and server applications. Applications built with
+      NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12,
+      S/MIME, X.509 v3 certificates, and other security standards. This is
+      useful for implementing SSL and S/MIME or other Internet security
+      standards into an application.
 @z
 
 @x
@@ -47,39 +44,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&nss-download-http;"/></para>
+          Download (HTTP): <ulink url="&nss-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&nss-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&nss-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&nss-download-ftp;"/></para>
+          Download (FTP): <ulink url="&nss-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&nss-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&nss-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &nss-md5sum;</para>
+          Download MD5 sum: &nss-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &nss-md5sum;</para>
+          &Download; MD5 sum: &nss-md5sum;
 @z
 
 @x
-        <para>Download size: &nss-size;</para>
+          Download size: &nss-size;
 @y
-        <para>ダウンロードサイズ: &nss-size;</para>
+          &DownloadSize;: &nss-size;
 @z
 
 @x
-        <para>Estimated disk space required: &nss-buildsize;</para>
+          Estimated disk space required: &nss-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &nss-buildsize;</para>
+          &Estimateddiskspacerequired;: &nss-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &nss-time;</para>
+          Estimated build time: &nss-time;
 @y
-        <para>&Estimatedbuildtime;: &nss-time;</para>
+          &Estimatedbuildtime;: &nss-time;
 @z
 
 @x
@@ -89,93 +86,71 @@
 @z
 
 @x
-        <para>Required patch: <ulink
+          Required patch:
 @y
-        <para>必要なパッチ: <ulink
+          必要なパッチ:
 @z
 
 @x
     <bridgehead renderas="sect3">NSS Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">NSS の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;NSS&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="nspr"/></para>
+    <para role="required">
+      <xref linkend="nspr"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="nspr"/></para>
+    <para role="required">
+      <xref linkend="nspr"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="sqlite"/> (internal sqlite is
-    incompatable with existing or future installations)</para>
+    <para role="recommended">
+      <xref linkend="sqlite"/> (internal <application>sqlite</application> is
+      incompatable with existing or future installations)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="sqlite"/> (internal sqlite is
-    incompatable with existing or future installations)</para>
+    <para role="recommended">
+      <xref linkend="sqlite"/> (internal <application>sqlite</application> is
+      incompatable with existing or future installations)
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/nss"/></para>
+      User Notes: <ulink url="&blfs-wiki;/nss"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/nss"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/nss"/>
 @z
 
 @x
     <title>Installation of NSS</title>
 @y
-    <title>NSS のインストール</title>
+    <title>&InstallationOf1;NSS&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>NSS</application> by running the following
-    commands:</para>
+      Install <application>NSS</application> by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>NSS</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>NSS</application> をビルドします。
 @z
 
 @x
-    <para>If you wish to test the results, you'll need to set the domain name of
-    your system in the <envar>DOMSUF</envar> environment variable. Most of the
-    tests will fail if you don't provide the correct domain name. The voluminous
-    output will report how many of the several thousand tests passed, and if any
-    failed.  To review the details of any failures, you may wish to capture
-    stdout and stderr in a file.</para>
+    <para>This package does not come with a test suite.</para>
 @y
-    <para>If you wish to test the results, you'll need to set the domain name of
-    your system in the <envar>DOMSUF</envar> environment variable. Most of the
-    tests will fail if you don't provide the correct domain name. The voluminous
-    output will report how many of the several thousand tests passed, and if any
-    failed.  To review the details of any failures, you may wish to capture
-    stdout and stderr in a file.</para>
+    <para>This package does not come with a test suite.</para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> になって以下を実行します。
-    </para>
-@z
-
-@x
-    <para>Now as the unprivileged user, exit the <command>bash</command>
-    shell started at the beginning of the installation to restore the
-    environment to the original state.</para>
-@y
-    <para>
-    
-    Now as the unprivileged user, exit the <command>bash</command>
-    shell started at the beginning of the installation to restore the
-    environment to the original state.
-    </para>
+      <systemitem class="username">root</systemitem> になって以下を実行します。
 @z
 
 @x
@@ -185,96 +160,45 @@
 @z
 
 @x
-    <para><command>bash</command>: Shells are started as many environment
-    variables are created during the installation process. Exiting the shells
-    serves the purpose of restoring the environment and returning back to the
-    original directory when the installation is complete.</para>
+      <parameter>BUILD_OPT=1</parameter>: This option is passed to
+      <command>make</command> so that the build is performed with no debugging
+      symbols built into the binaries and the default compiler optimizations are
+      used.
 @y
-    <para>
-    <command>bash</command>:
-    
-    Shells are started as many environment
-    variables are created during the installation process. Exiting the shells
-    serves the purpose of restoring the environment and returning back to the
-    original directory when the installation is complete.
-    </para>
+      <parameter>BUILD_OPT=1</parameter>: This option is passed to
+      <command>make</command> so that the build is performed with no debugging
+      symbols built into the binaries and the default compiler optimizations are
+      used.
 @z
 
 @x
-    <para><command>export BUILD_OPT=1</command>: This variable is set so that
-    the build is performed with no debugging symbols built into the binaries
-    and that the default compiler optimizations are used.</para>
+      <parameter>NSPR_INCLUDE_DIR=/usr/include/nspr</parameter>: This option 
+      sets the location of the nspr headers.
 @y
-    <para>
-    <command>export BUILD_OPT=1</command>:
-    
-    This variable is set so that
-    the build is performed with no debugging symbols built into the binaries
-    and that the default compiler optimizations are used.
-    </para>
+      <parameter>NSPR_INCLUDE_DIR=/usr/include/nspr</parameter>: This option 
+      sets the location of the nspr headers.
 @z
 
 @x
-    <para><command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>: This 
-    command sets the location of the nspr headers.</para>
+      <parameter>USE_SYSTEM_ZLIB=1</parameter>: This option is passed to
+      <command>make</command> to ensure that the
+      <filename class="libraryfile">libssl3.so</filename> library is linked to
+      the system installed <application>zlib</application> instead of the
+      in-tree version.
 @y
-    <para>
-    <command>export NSPR_INCLUDE_DIR=/usr/include/nspr</command>:
-    This 
-    command sets the location of the nspr headers.
-    </para>
+      <parameter>USE_SYSTEM_ZLIB=1</parameter>: This option is passed to
+      <command>make</command> to ensure that the
+      <filename class="libraryfile">libssl3.so</filename> library is linked to
+      the system installed <application>zlib</application> instead of the
+      in-tree version.
 @z
 
 @x
-    <para><command>export ZLIB_LIBS=-lz</command>: This command provides the
-    needed linker flags to link to the system zlib.</para>
+      <parameter>ZLIB_LIBS=-lz</parameter>: This option provides the
+      linker flags needed to link to the system <application>zlib</application>.
 @y
-    <para>
-    <command>export ZLIB_LIBS=-lz</command>:
-    
-    This command provides the
-    needed linker flags to link to the system zlib.
-    </para>
-@z
-
-@x
-    <para><command>export NSS_LINUXDIR=...</command>: This variable is set so
-    that the exact name of the architecture specific directories where the
-    binaries are stored in the source tree can be determined.</para>
-@y
-    <para><command>export NSS_LINUXDIR=...</command>: This variable is set so
-    that the exact name of the architecture specific directories where the
-    binaries are stored in the source tree can be determined.</para>
-@z
-
-@x
-    <para><command>make -C mozilla/security/nss nss_build_all</command>: This
-    command builds the <application>NSS</application> libraries and creates a
-    <filename class='directory'>dist</filename> directory which houses all the
-    programs, libraries and interface headers. None of the programs created by
-    this process are installed onto the system using the default instructions
-    (except for <application>nss-config</application>).  If you need any of
-    these programs installed, you can find them in the
-    <filename class='directory'>mozilla/*.OBJ/dist/bin</filename> directory of
-    the source tree.</para>
-@y
-    <para><command>make -C mozilla/security/nss nss_build_all</command>: This
-    command builds the <application>NSS</application> libraries and creates a
-    <filename class='directory'>dist</filename> directory which houses all the
-    programs, libraries and interface headers. None of the programs created by
-    this process are installed onto the system using the default instructions
-    (except for <application>nss-config</application>).  If you need any of
-    these programs installed, you can find them in the
-    <filename class='directory'>mozilla/*.OBJ/dist/bin</filename> directory of
-    the source tree.</para>
-@z
-
-@x
-    <para><command>sed -i 's/gmake/make/' common/init.sh</command>: This
-    command changes the command used to compile some test programs.</para>
-@y
-    <para><command>sed -i 's/gmake/make/' common/init.sh</command>: This
-    command changes the command used to compile some test programs.</para>
+      <parameter>ZLIB_LIBS=-lz</parameter>: This option provides the
+      linker flags needed to link to the system <application>zlib</application>.
 @z
 
 @x
@@ -294,16 +218,18 @@
 @z
 
 @x
-        <seg>nss-config</seg>
-        <seg>libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so,
-        libnssdbm3.so, libnssutil3.so, libsmime3.so, libsoftokn3.so
-        and libssl3.so</seg>
+        <seg>certutil, nss-config and pk12util</seg>
+        <seg>
+          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so, libnssdbm3.so,
+          libnssutil3.so, libsmime3.so, libsoftokn3.so and libssl3.so
+        </seg>
         <seg>/usr/include/nss</seg>
 @y
-        <seg>nss-config</seg>
-        <seg>libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so,
-        libnssdbm3.so, libnssutil3.so, libsmime3.so, libsoftokn3.so
-        libssl3.so</seg>
+        <seg>certutil, nss-config, pk12util</seg>
+        <seg>
+          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so, libnssdbm3.so,
+          libnssutil3.so, libsmime3.so, libsoftokn3.so, libssl3.so
+        </seg>
         <seg>/usr/include/nss</seg>
 @z
 
@@ -314,12 +240,9 @@
 @z
 
 @x nss-config
-          <para>is used to determine the NSS library settings
-          of the installed NSS libraries.</para>
+            is used to determine the NSS library settings of the installed NSS
+            libraries.
 @y
-          <para>
-          
-          is used to determine the NSS library settings
-          of the installed NSS libraries.
-          </para>
+            is used to determine the NSS library settings of the installed NSS
+            libraries.
 @z

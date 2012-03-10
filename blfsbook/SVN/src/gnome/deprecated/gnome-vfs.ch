@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME Virtual File System</title>
 @y
-    <title>GNOME Virtual File System の概要</title>
+    <title>&IntroductionTo1;GNOME Virtual File System&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,11 +24,10 @@
     contains virtual file system libraries. This is used as one of the
     foundations of the <application>Nautilus</application> file manager.</para>
 @y
-<para>
-<application>GNOME Virtual File System</application>
-パッケージは仮想ファイルシステム (virtual file system) ライブラリを提供します。
-これは <application>Nautilus</application> ファイルマネージャーの基盤部分にて利用されています。
-</para>
+    <para>
+    <application>GNOME Virtual File System</application> パッケージは仮想ファイルシステム (virtual file system) ライブラリを提供します。
+    これは <application>Nautilus</application> ファイルマネージャーの基盤部分にて利用されています。
+    </para>
 @z
 
 @x
@@ -40,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnome-vfs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnome-vfs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnome-vfs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnome-vfs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnome-vfs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnome-vfs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnome-vfs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnome-vfs-md5sum;</para>
+        <para>&Download; MD5 sum: &gnome-vfs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnome-vfs-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnome-vfs-size;</para>
+        <para>&DownloadSize;: &gnome-vfs-size;</para>
 @z
 
 @x
@@ -76,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">GNOME Virtual File System Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Virtual File System の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Virtual File System&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -95,7 +94,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="samba3"/>,
     <xref linkend="gamin"/>,
-    <xref linkend="hal"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
     <xref linkend="gtk-doc"/>,
     <xref linkend="openssh"/>,
     <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
@@ -107,14 +106,14 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="samba3"/>,
     <xref linkend="gamin"/>,
-    <xref linkend="hal"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
     <xref linkend="gtk-doc"/>,
     <xref linkend="openssh"/>,
     <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
     <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
     <xref linkend="avahi"/>,
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-    <xref linkend="cdparanoia"/> (推奨はしない)</para>
+    <xref linkend="cdparanoia"/> (非推奨)</para>
 @z
 
 @x
@@ -128,17 +127,13 @@
     <application>GNOME-VFS</application> will fall back to using other mounting
     mechanisms.</para>
 @y
-<para>
-<command>./configure --help</command>
-を実行すれば、依存パッケージや指定可能なパラメーターの情報を得ることができますが、その際に
-<ulink url="http://hal.freedesktop.org/releases/">gnome-mount</ulink>
-パッケージについての情報が示されるはずです。
-このパッケージはビルド時には必要ありませんが、実行時に利用されます。
-実行時に <application>gnome-mount</application> が利用可能であれば
-<application>GNOME-VFS</application> がそれを利用します。
-一方それが利用できない場合 <application>GNOME-VFS</application>
-は他のマウント機構を利用するものとなります。
-</para>
+    <para>
+    <command>./configure --help</command> を実行すれば、依存パッケージや指定可能なパラメーターの情報を得ることができますが、その際に <ulink
+    url="http://hal.freedesktop.org/releases/">gnome-mount</ulink> パッケージについての情報が示されるはずです。
+    このパッケージはビルド時には必要ありませんが、実行時に利用されます。
+    実行時に <application>gnome-mount</application> が利用可能であれば <application>GNOME-VFS</application> がそれを利用します。
+    一方それが利用できない場合 <application>GNOME-VFS</application> は他のマウント機構を利用するものとなります。
+    </para>
 @z
 
 @x
@@ -159,26 +154,25 @@
     <para>Install <application>GNOME Virtual File System</application>
     by running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>GNOME Virtual File System</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>GNOME Virtual File System</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -195,15 +189,13 @@
     instead of
     <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=$(pkg-config --variable=prefix
-ORBit-2.0)/lib/gnome-vfs-2.0</parameter>:
-このパラメーターは libexec ファイルのインストール先を
-<filename class="directory">$GNOME_PREFIX/libexec</filename>
-ではなく、より適切な
-<filename class="directory">$GNOME_PREFIX/lib/gnome-vfs-2.0</filename>
-とします。
-</para>
+    <para>
+    <parameter>--libexecdir=$(pkg-config --variable=prefix
+    ORBit-2.0)/lib/gnome-vfs-2.0</parameter>:
+    このパラメーターは libexec ファイルのインストール先を <filename
+    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
+    class="directory">$GNOME_PREFIX/lib/gnome-vfs-2.0</filename> とします。
+    </para>
 @z
 
 @x
@@ -216,15 +208,12 @@ ORBit-2.0)/lib/gnome-vfs-2.0</parameter>:
     See the information in the configuration section below if you don't use this
     parameter.</para>
 @y
-<para>
-<option>--with-dbus-service-dir=/usr/share/dbus-1/services</option>:
-このパラメーターを指定する必要があるのは、<application>HAL</application>
-をリンクしてビルドする場合であり、また <filename>gnome-vfs-daemon.service</filename>
-ファイルのインストール先として、<filename
-class='directory'><envar>GNOME_PREFIX</envar>/share/dbus-1/services</filename>
-ではなく、<application>D-Bus</application> が定めるデフォルトのディレクトリとしたい場合です。
-このパラメーターを指定しない場合は、設定に関して説明している後述の内容を確認してください。
-</para>
+    <para>
+    <option>--with-dbus-service-dir=/usr/share/dbus-1/services</option>:
+    このパラメーターを指定する必要があるのは、<application>HAL</application> をリンクしてビルドする場合であり、また <filename>gnome-vfs-daemon.service</filename> ファイルのインストール先として、<filename
+    class='directory'><envar>GNOME_PREFIX</envar>/share/dbus-1/services</filename> ではなく、<application>D-Bus</application> が定めるデフォルトのディレクトリとしたい場合です。
+    このパラメーターを指定しない場合は、設定に関して説明している後述の内容を確認してください。
+    </para>
 @z
 
 @x
@@ -234,13 +223,11 @@ class='directory'><envar>GNOME_PREFIX</envar>/share/dbus-1/services</filename>
     the <command>eject</command> program is used if
     <application>gnome-mount</application> is not installed.</para>
 @y
-<para>
-<option>--with-hal-eject=PROGRAM</option>:
-<xref linkend="eject"/> または <ulink url="http://hal.freedesktop.org/releases/">gnome-mount</ulink>
-をインストールしている場合は、このパラメーターの指定は不要です。
-<application>gnome-mount</application>
-をインストールしていない場合 <command>eject</command> プログラムが利用されます。
-</para>
+    <para>
+    <option>--with-hal-eject=PROGRAM</option>:
+    <xref linkend="eject"/> または <ulink url="http://hal.freedesktop.org/releases/">gnome-mount</ulink> をインストールしている場合は、このパラメーターの指定は不要です。
+    <application>gnome-mount</application> をインストールしていない場合 <command>eject</command> プログラムが利用されます。
+    </para>
 @z
 
 @x
@@ -266,18 +253,12 @@ class='directory'><envar>GNOME_PREFIX</envar>/share/dbus-1/services</filename>
       instructions on how to create a
       <xref linkend="dbus-session-config"/>.</para>
 @y
-<para>
-<application>HAL</application>
-をリンクしてビルドしている場合であり、かつ GNOME のインストール先を
-<filename class='directory'>/usr</filename>
-以外としている場合は、<application>D-Bus</application>
-セッションのローカル設定ファイルを生成する必要があります。
-これは、インストールされた <filename>gnome-vfs-daemon.service</filename>
-ファイルを <application>D-Bus</application> が見出せるようにするためです。
-詳細は <application>D-Bus</application>
-の手順における <xref linkend="dbus-session-config"/>
-にて説明していますので参照してください。
-</para>
+      <para>
+      <application>HAL</application> をリンクしてビルドしている場合であり、かつ GNOME のインストール先を <filename
+      class='directory'>/usr</filename> 以外としている場合は、<application>D-Bus</application> セッションのローカル設定ファイルを生成する必要があります。
+      これは、インストールされた <filename>gnome-vfs-daemon.service</filename> ファイルを <application>D-Bus</application> が見出せるようにするためです。
+      詳細は <application>D-Bus</application> の手順における <xref linkend="dbus-session-config"/> にて説明していますので参照してください。
+      </para>
 @z
 
 @x

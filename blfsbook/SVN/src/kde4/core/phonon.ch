@@ -21,12 +21,12 @@
 
 @x
     <para><application>Phonon</application> is the multimedia API for KDE4.
-    It replaces the old <application>aRts</application>, that is not more 
+    It replaces the old <application>aRts</application>, that is no longer
     supported by KDE. It supports backends like GStreamer and VLC.</para>
 @y
     <para>
     <application>Phonon</application> は KDE4 に対するマルチメディア API です。
-    <application>aRts</application> はすでに KDE によりサポートされなくなり、本パッケージはそれに置き換わるものです。
+    <application>aRts</application> は KDE によりサポートされなくなり、本パッケージはそれに置き換わるものです。
     本パッケージは GStreamer や VLC のバックエンドとなります。
     </para>
 @z
@@ -82,14 +82,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
-    <xref linkend="glib2"/>
+    <xref linkend="automoc4"/>,
+    <xref linkend="pkgconfig"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>,
-    <xref linkend="glib2"/>
+    <xref linkend="automoc4"/>,
+    <xref linkend="pkgconfig"/>
     </para>
 @z
 
@@ -139,12 +139,6 @@
     <para>
     以下のコマンドを実行して <application>Phonon</application> をビルドします。
     </para>
-@z
-
-@x
-    <para>Prepare the package for compilation:</para>
-@y
-    <para>パッケージをコンパイルするための準備をします。</para>
 @z
 
 @x

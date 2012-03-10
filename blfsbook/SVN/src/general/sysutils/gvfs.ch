@@ -16,7 +16,7 @@
 @x
     <title>Introduction to gvfs</title>
 @y
-    <title>gvfs の概要</title>
+    <title>&IntroductionTo1;gvfs&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gvfs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gvfs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gvfs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gvfs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gvfs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gvfs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gvfs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gvfs-md5sum;</para>
+        <para>&Download; MD5 sum: &gvfs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gvfs-size;</para>
 @y
-        <para>ダウンロードサイズ: &gvfs-size;</para>
+        <para>&DownloadSize;: &gvfs-size;</para>
 @z
 
 @x
@@ -75,19 +75,19 @@
 @x
     <bridgehead renderas="sect3">gvfs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gvfs の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gvfs&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="glib2"/>, and
-    <xref linkend="intltool"/></para>
+    <xref linkend="intltool"/>, and
+    <xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="glib2"/>,
-    <xref linkend="intltool"/></para>
+    <xref linkend="intltool"/>,
+    <xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -98,7 +98,7 @@
     <xref linkend="expat"/>,
     <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>,
     <xref linkend="gnome-disk-utility"/>,
-    <xref linkend="hal"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
     <xref linkend="libarchive"/>,
     <ulink url="http://directory.fsf.org/project/libcdio/">libcdio</ulink>,
     <xref linkend="libgnome-keyring"/>,
@@ -114,7 +114,7 @@
     <xref linkend="expat"/>,
     <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>,
     <xref linkend="gnome-disk-utility"/>,
-    <xref linkend="hal"/>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
     <xref linkend="libarchive"/>,
     <ulink url="http://directory.fsf.org/project/libcdio/">libcdio</ulink>,
     <xref linkend="libgnome-keyring"/>,
@@ -135,7 +135,7 @@
 @x
     <title>Installation of gvfs</title>
 @y
-    <title>gvfs のインストール</title>
+    <title>&InstallationOf1;gvfs&InstallationOf2;</title>
 @z
 
 @x
@@ -150,9 +150,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
