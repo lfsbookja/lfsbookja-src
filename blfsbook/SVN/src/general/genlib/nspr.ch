@@ -133,6 +133,42 @@
 @z
 
 @x
+      <parameter>$([ $(uname -m) ... --enable-64bit</parameter>: This parameter is
+      required <emphasis>on an x86_64 system</emphasis> to prevent
+      <command>configure</command> failing with a claim that this is a system
+      without pthread support. It has no effect on a 32 bit system.
+@y
+      <parameter>$([ $(uname -m) ... --enable-64bit</parameter>: 
+      このパラメーターは <emphasis>x86_64 システム</emphasis> において、pthread サポートが無効であることを示す警告とともに <command>configure</command> が失敗することを回避するものです。
+      32 ビットシステムでは、この指定は意味がありません。
+@z
+
+@x
+      <command>sed -i 's#^\(RELEASE_BINS ...</command>: This disables installing
+      two unneeded scripts.
+@y
+      <command>sed -i 's#^\(RELEASE_BINS ...</command>: 
+      これは不要なスクリプト２つをインストールしないようにします。
+@z
+
+@x
+      <command>sed -i 's#$(LIBRARY) ##' config/rules.mk</command>: This disables
+      installing the static libraries.
+@y
+      <command>sed -i 's#$(LIBRARY) ##' config/rules.mk</command>: 
+      これはスタティックライブラリをインストールしないようにします。
+@z
+
+@x
+    <para><command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>Create a 
+     pkg-config file to help other programs finding the nspr libraries.</para>
+@y
+    <para><command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>
+    これは他のプログラムが nspr ライブラリを探し出せるように、pkg-config ファイルを生成するものです。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

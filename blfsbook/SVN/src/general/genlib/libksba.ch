@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Libksba</title>
 @y
-    <title>Libksba の概要</title>
+    <title>&IntroductionTo1;Libksba&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libksba-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libksba-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libksba-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libksba-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libksba-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libksba-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libksba-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libksba-md5sum;</para>
+        <para>&Download; MD5 sum: &libksba-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libksba-size;</para>
 @y
-        <para>ダウンロードサイズ: &libksba-size;</para>
+        <para>&DownloadSize;: &libksba-size;</para>
 @z
 
 @x
@@ -80,7 +80,7 @@
 @x
     <bridgehead renderas="sect3">Libksba Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Libksba の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Libksba&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -102,7 +102,7 @@
 @x
     <title>Installation of Libksba</title>
 @y
-    <title>Libksba のインストール</title>
+    <title>&InstallationOf1;Libksba&InstallationOf2;</title>
 @z
 
 @x

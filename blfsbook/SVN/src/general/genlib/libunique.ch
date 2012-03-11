@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libunique</title>
 @y
-    <title>libunique の概要</title>
+    <title>&IntroductionTo1;libunique&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libunique-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libunique-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libunique-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libunique-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libunique-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libunique-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libunique-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libunique-md5sum;</para>
+        <para>&Download; MD5 sum: &libunique-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libunique-size;</para>
 @y
-        <para>ダウンロードサイズ: &libunique-size;</para>
+        <para>&DownloadSize;: &libunique-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libunique Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libunique の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libunique&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
     <title>Installation of libunique</title>
 @y
-    <title>libunique のインストール</title>
+    <title>&InstallationOf1;libunique&InstallationOf2;</title>
 @z
 
 @x
@@ -163,7 +163,7 @@
         <seg>libunique-3.0.so</seg>
         <seg>/usr/{include/unique-3.0/unique,share/gtk-doc/html/unique-3.0}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libunique-3.0.so</seg>
         <seg>/usr/{include/unique-3.0/unique,share/gtk-doc/html/unique-3.0}</seg>
 @z

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libglade</title>
 @y
-    <title>libglade の概要</title>
+    <title>&IntroductionTo1;libglade&IntroductionTo2;</title>
 @z
 
 @x
@@ -75,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">libglade Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libglade の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libglade&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -109,34 +109,34 @@
 @x
     <title>Installation of libglade</title>
 @y
-    <title>libglade のインストール</title>
+    <title>&InstallationOf1;libglade&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libglade</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libglade</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libglade</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.
     One of the tests, test-convert, is known to fail.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-ただしテストのうち test-convert は失敗します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    ただしテストのうち test-convert は失敗します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -146,13 +146,25 @@
 @z
 
 @x
+    <para><command>sed -i '/DG_DISABLE_DEPRECATED/d'</command>: Some of the
+    <application>glib</application> functions that
+    <application>libglade</application> uses were declared deprecated in
+    glib-2.30. This sed removes the G_DISABLE_DEPRECATED CFLAG.</para>
+@y
+    <para><command>sed -i '/DG_DISABLE_DEPRECATED/d'</command>: 
+    <application>libglade</application> が利用している <application>glib</application> 関数の中には、glib-2.30 にて廃止 (deprecated) となっています。
+    この sed により G_DISABLE_DEPRECATED CFLAG を取り除きます。
+    </para>
+@z
+
+@x
     <para><option>--disable-static</option>: prevent static libraries
     being built and installed.</para>
 @y
-<para>
-<option>--disable-static</option>:
-このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
-</para>
+    <para>
+    <option>--disable-static</option>:
+    このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
+    </para>
 @z
 
 @x

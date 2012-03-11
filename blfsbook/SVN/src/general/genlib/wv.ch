@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,16 +16,16 @@
 @x
     <title>Introduction to wv</title>
 @y
-    <title>wv の概要</title>
+    <title>&IntroductionTo1;wv&IntroductionTo2;</title>
 @z
 
 @x
     <para>This package contains tools for reading information from an MS Word
     document.</para>
 @y
-<para>
-このパッケージは MS Word の文書ファイルから情報を読み取るためのツールを提供します。
-</para>
+    <para>
+    このパッケージは MS Word の文書ファイルから情報を読み取るためのツールを提供します。
+    </para>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&wv-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&wv-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&wv-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&wv-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&wv-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&wv-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &wv-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &wv-md5sum;</para>
+        <para>&Download; MD5 sum: &wv-md5sum;</para>
 @z
 
 @x
         <para>Download size: &wv-size;</para>
 @y
-        <para>ダウンロードサイズ: &wv-size;</para>
+        <para>&DownloadSize;: &wv-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">wv Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">wv の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;wv&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
     <title>Installation of wv</title>
 @y
-    <title>wv のインストール</title>
+    <title>&InstallationOf1;wv&InstallationOf2;</title>
 @z
 
 @x

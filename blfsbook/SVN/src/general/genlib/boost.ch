@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY boost-buildsize     "764 MB for default build - 634MB without static libs">
+  <!ENTITY boost-time          "10 SBU for default build - 5.5 SBU without static libs">
+@y
+  <!ENTITY boost-buildsize     "通常のビルドで 764 MB、スタティックライブラリなしで 634MB">
+  <!ENTITY boost-time          "通常のビルドで 10 SBU、スタティックライブラリなしで 5.5 SBU">
+@z
+
+@x
     <title>Introduction to Boost</title>
 @y
     <title>&IntroductionTo1;Boost&IntroductionTo2;</title>
@@ -108,6 +116,28 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <application>boost</application> をインストールします。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><parameter>link=shared</parameter>: This parameter ensures that only shared
+    libraries are created, except for libboost_exception and libboost_test_exec_monitor
+    which are created as static. Most people will not need the static libraries, indeed
+    most programs using boost only use the headers, but omit this parameter if you
+    do need them.</para>
+@y
+    <para><parameter>link=shared</parameter>:
+    このパラメーターは共有ライブラリのみを生成するようにします。
+    ただし libboost_exception と libboost_test_exec_monitor はスタティックライブラリを生成します。
+    スタティックライブラリは通常は必要がありません。
+    boost を利用するプログラムは、たいていはヘッダーファイルを単に指定するだけです。
+    もしスタティックライブラリを必要とするなら、このパラメーターを取り除いてください。
     </para>
 @z
 

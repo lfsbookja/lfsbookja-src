@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Libidn</title>
 @y
-    <title>Libidn の概要</title>
+    <title>&IntroductionTo1;Libidn&IntroductionTo2;</title>
 @z
 
 @x
@@ -66,25 +66,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libidn-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libidn-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libidn-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libidn-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libidn-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libidn-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libidn-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libidn-md5sum;</para>
+        <para>&Download; MD5 sum: &libidn-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libidn-size;</para>
 @y
-        <para>ダウンロードサイズ: &libidn-size;</para>
+        <para>&DownloadSize;: &libidn-size;</para>
 @z
 
 @x
@@ -102,7 +102,7 @@
 @x
     <bridgehead renderas="sect3">Libidn Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Libidn の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Libidn&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -144,7 +144,7 @@
 @x
     <title>Installation of Libidn</title>
 @y
-    <title>Libidn のインストール</title>
+    <title>&InstallationOf1;Libidn&InstallationOf2;</title>
 @z
 
 @x

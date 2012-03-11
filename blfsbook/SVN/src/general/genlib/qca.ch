@@ -16,7 +16,7 @@
 @x
     <title>Introduction to QCA</title>
 @y
-    <title>QCA の概要</title>
+    <title>&IntroductionTo1;QCA&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&qca-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&qca-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&qca-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&qca-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&qca-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&qca-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &qca-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &qca-md5sum;</para>
+        <para>&Download; MD5 sum: &qca-md5sum;</para>
 @z
 
 @x
         <para>Download size: &qca-size;</para>
 @y
-        <para>ダウンロードサイズ: &qca-size;</para>
+        <para>&DownloadSize;: &qca-size;</para>
 @z
 
 @x
@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">qca Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">qca の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;qca&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <title>Installation of QCA</title>
 @y
-    <title>QCA のインストール</title>
+    <title>&InstallationOf1;QCA&InstallationOf2;</title>
 @z
 
 @x
@@ -145,7 +145,7 @@
         <seg>libqca.so</seg>
         <seg>$QT4DIR/share/qca</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libqca.so</seg>
         <seg>$QT4DIR/share/qca</seg>
 @z

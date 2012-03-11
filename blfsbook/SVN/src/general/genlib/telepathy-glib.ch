@@ -16,7 +16,7 @@
 @x
     <title>Introduction to telepathy-glib</title>
 @y
-    <title>telepathy-glib の概要</title>
+    <title>&IntroductionTo1;telepathy-glib&IntroductionTo2;</title>
 @z
 
 @x
@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect3">telepathy-glib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">telepathy-glib の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;telepathy-glib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -117,7 +117,7 @@
 @x
     <title>Installation of telepathy-glib</title>
 @y
-    <title>telepathy-glib のインストール</title>
+    <title>&InstallationOf1;telepathy-glib&InstallationOf2;</title>
 @z
 
 @x
@@ -172,7 +172,7 @@
         <seg>libtelepathy-glib.{so,a}</seg>
         <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,lib/telepathy-glib,share/gtk-doc/html/telepathy-glib}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libtelepathy-glib.{so,a}</seg>
         <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,lib/telepathy-glib,share/gtk-doc/html/telepathy-glib}</seg>
 @z

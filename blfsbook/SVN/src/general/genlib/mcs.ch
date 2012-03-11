@@ -16,13 +16,13 @@
 @x
   <!ENTITY libmcs-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libmcs-time          "0.1 SBU 以下">
+  <!ENTITY libmcs-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libmcs</title>
 @y
-    <title>libmcs の概要</title>
+    <title>&IntroductionTo1;libmcs&IntroductionTo2;</title>
 @z
 
 @x
@@ -54,25 +54,25 @@ desktop environment or software suite.
 @x
         <para>Download (HTTP): <ulink url="&libmcs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libmcs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libmcs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libmcs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libmcs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libmcs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libmcs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libmcs-md5sum;</para>
+        <para>&Download; MD5 sum: &libmcs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libmcs-size;</para>
 @y
-        <para>ダウンロードサイズ: &libmcs-size;</para>
+        <para>&DownloadSize;: &libmcs-size;</para>
 @z
 
 @x
@@ -90,7 +90,7 @@ desktop environment or software suite.
 @x
     <bridgehead renderas="sect3">libmcs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libmcs の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libmcs&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -122,32 +122,30 @@ desktop environment or software suite.
 @x
     <title>Installation of libmcs</title>
 @y
-    <title>libmcs のインストール</title>
+    <title>&InstallationOf1;libmcs&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libmcs</application> by
     running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libmcs</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libmcs</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -163,15 +161,11 @@ desktop environment or software suite.
     identify the location of Qt and, possibly, KDE libraries and interface
     headers.</para>
 @y
-<para>
-<option>--with-qt-path=/usr/share/qt</option>:
-
-If you have
-<xref linkend="kdelibs"/> installed, you must pass
-additional parameters to the <command>configure</command> script to
-identify the location of Qt and, possibly, KDE libraries and interface
-headers.
-</para>
+    <para><option>--with-qt-path=/usr/share/qt</option>: If you have
+    <xref linkend="kdelibs"/> installed, you must pass
+    additional parameters to the <command>configure</command> script to
+    identify the location of Qt and, possibly, KDE libraries and interface
+    headers.</para>
 @z
 
 @x
@@ -203,7 +197,7 @@ headers.
 @x
     <title>Configuring libmcs</title>
 @y
-    <title>libmcs の設定</title>
+    <title>&Configuring1;libmcs&Configuring2;</title>
 @z
 
 @x

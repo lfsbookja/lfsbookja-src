@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Expat</title>
 @y
-    <title>Expat の概要</title>
+    <title>&IntroductionTo1;Expat&IntroductionTo2;</title>
 @z
 
 @x
@@ -95,7 +95,7 @@
 @x
     <title>Installation of Expat</title>
 @y
-    <title>Expat のインストール</title>
+    <title>&InstallationOf1;Expat&InstallationOf2;</title>
 @z
 
 @x

@@ -122,7 +122,7 @@
         <seg>libclucene.{so,a}</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libclucene.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z

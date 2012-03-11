@@ -16,7 +16,7 @@
 @x
     <title>Introduction to ptlib</title>
 @y
-    <title>ptlib の概要</title>
+    <title>&IntroductionTo1;ptlib&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,12 +25,10 @@
     Windows Library), a method to produce applications to run on various
     platforms.</para>
 @y
-<para>
-<application>ptlib</application> (Portable Tools Library)
-パッケージは、かつて PWLib (ポータブル ウィンドウ ライブラリ; portable Windows Library)
-とされていたクラスライブラリです。
-数々のプラットフォーム上にてアプリケーションを動作させる方法を提供します。
-</para>
+    <para>
+    <application>ptlib</application> (Portable Tools Library) パッケージは、かつて PWLib (ポータブル ウィンドウ ライブラリ; portable Windows Library) とされていたクラスライブラリです。
+    数々のプラットフォーム上にてアプリケーションを動作させる方法を提供します。
+    </para>
 @z
 
 @x
@@ -42,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&ptlib-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&ptlib-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&ptlib-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&ptlib-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&ptlib-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&ptlib-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &ptlib-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &ptlib-md5sum;</para>
+        <para>&Download; MD5 sum: &ptlib-md5sum;</para>
 @z
 
 @x
         <para>Download size: &ptlib-size;</para>
 @y
-        <para>ダウンロードサイズ: &ptlib-size;</para>
+        <para>&DownloadSize;: &ptlib-size;</para>
 @z
 
 @x
@@ -78,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">ptlib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">ptlib の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;ptlib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -118,34 +116,30 @@
 @x
     <title>Installation of ptlib</title>
 @y
-    <title>ptlib のインストール</title>
+    <title>&InstallationOf1;ptlib&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>ptlib</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>ptlib</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>ptlib</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -171,7 +165,7 @@
         lib/ptlib-&ptlib-version;/devices/{sound,videoinput},
         share/ptlib/make}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libpt.so, libpt_s.a, alsa_pwplugin.so, v4l2_pwplugin.so</seg>
         <seg>/usr/{include/{ptclib,ptlib/unix/ptlib},
         lib/ptlib-&ptlib-version;/devices/{sound,videoinput},
@@ -187,8 +181,7 @@
 @x libpt{.so,_s.a}
           <para>contains the <application>ptlib</application> API methods.</para>
 @y
-<para>
-<application>ptlib</application> API メソッドを提供します。
-</para>
+          <para>
+          <application>ptlib</application> API メソッドを提供します。
+          </para>
 @z
-

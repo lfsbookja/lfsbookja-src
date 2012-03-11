@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libtasn1</title>
 @y
-    <title>libtasn1 の概要</title>
+    <title>&IntroductionTo1;libtasn1&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libtasn1-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libtasn1-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libtasn1-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libtasn1-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libtasn1-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libtasn1-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libtasn1-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libtasn1-md5sum;</para>
+        <para>&Download; MD5 sum: &libtasn1-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libtasn1-size;</para>
 @y
-        <para>ダウンロードサイズ: &libtasn1-size;</para>
+        <para>&DownloadSize;: &libtasn1-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libtasn1 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libtasn1 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libtasn1&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -97,7 +97,7 @@
 @x
     <title>Installation of libtasn1</title>
 @y
-    <title>libtasn1 のインストール</title>
+    <title>&InstallationOf1;libtasn1&InstallationOf2;</title>
 @z
 
 @x

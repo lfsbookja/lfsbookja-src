@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Pth</title>
 @y
-    <title>Pth の概要</title>
+    <title>&IntroductionTo1;Pth&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&pth-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&pth-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&pth-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&pth-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&pth-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&pth-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &pth-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &pth-md5sum;</para>
+        <para>&Download; MD5 sum: &pth-md5sum;</para>
 @z
 
 @x
         <para>Download size: &pth-size;</para>
 @y
-        <para>ダウンロードサイズ: &pth-size;</para>
+        <para>&DownloadSize;: &pth-size;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <title>Installation of Pth</title>
 @y
-    <title>Pth のインストール</title>
+    <title>&InstallationOf1;Pth&InstallationOf2;</title>
 @z
 
 @x

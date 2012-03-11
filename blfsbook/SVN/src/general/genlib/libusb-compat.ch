@@ -16,13 +16,13 @@
 @x
   <!ENTITY libusb-compat-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libusb-compat-time          "0.1 SBU 以下">
+  <!ENTITY libusb-compat-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libusb-compat</title>
 @y
-    <title>libusb-compat の概要</title>
+    <title>&IntroductionTo1;libusb-compat&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libusb-compat-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libusb-compat-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libusb-compat-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libusb-compat-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libusb-compat-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libusb-compat-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libusb-compat-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libusb-compat-md5sum;</para>
+        <para>&Download; MD5 sum: &libusb-compat-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libusb-compat-size;</para>
 @y
-        <para>ダウンロードサイズ: &libusb-compat-size;</para>
+        <para>&DownloadSize;: &libusb-compat-size;</para>
 @z
 
 @x
@@ -82,7 +82,7 @@
 @x
     <bridgehead renderas="sect3">libusb-compat Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libusb-compat の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libusb-compat&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -106,7 +106,7 @@
 @x
     <title>Installation of libusb-compat</title>
 @y
-    <title>libusb-compat のインストール</title>
+    <title>&InstallationOf1;libusb-compat&InstallationOf2;</title>
 @z
 
 @x
@@ -157,7 +157,7 @@
 @y
         <seg>libusb-config</seg>
         <seg>libusb.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

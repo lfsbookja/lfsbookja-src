@@ -16,13 +16,13 @@
 @x
 <!ENTITY libmowgli-time "less than 0.1 SBU">
 @y
-<!ENTITY libmowgli-time "0.1 SBU 以下">
+<!ENTITY libmowgli-time "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libmowgli</title>
 @y
-    <title>libmowgli の概要</title>
+    <title>&IntroductionTo1;libmowgli&IntroductionTo2;</title>
 @z
 
 @x
@@ -51,25 +51,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libmowgli-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libmowgli-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libmowgli-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libmowgli-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libmowgli-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libmowgli-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libmowgli-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libmowgli-md5sum;</para>
+        <para>&Download; MD5 sum: &libmowgli-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libmowgli-size;</para>
 @y
-        <para>ダウンロードサイズ: &libmowgli-size;</para>
+        <para>&DownloadSize;: &libmowgli-size;</para>
 @z
 
 @x
@@ -95,7 +95,7 @@
 @x
     <title>Installation of libmowgli</title>
 @y
-    <title>libmowgli のインストール</title>
+    <title>&InstallationOf1;libmowgli&InstallationOf2;</title>
 @z
 
 @x
@@ -145,7 +145,7 @@
         <seg>libmowgli.so</seg>
         <seg>/usr/include/libmowgli</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libmowgli.so</seg>
         <seg>/usr/include/libmowgli</seg>
 @z

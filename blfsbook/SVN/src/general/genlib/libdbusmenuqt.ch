@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libdbusmenu-qt</title>
 @y
-    <title>libdbusmenu-qt の概要</title>
+    <title>&IntroductionTo1;libdbusmenu-qt&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libdbusmenu-qt-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libdbusmenu-qt-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libdbusmenu-qt-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libdbusmenu-qt-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libdbusmenu-qt-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libdbusmenu-qt-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libdbusmenu-qt-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libdbusmenu-qt-md5sum;</para>
+        <para>&Download; MD5 sum: &libdbusmenu-qt-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libdbusmenu-qt-size;</para>
 @y
-        <para>ダウンロードサイズ: &libdbusmenu-qt-size;</para>
+        <para>&DownloadSize;: &libdbusmenu-qt-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">libdbusmenu-qt Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libdbusmenu-qt の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libdbusmenu-qt&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of libdbusmenu-qt</title>
 @y
-    <title>libdbusmenu-qt のインストール</title>
+    <title>&InstallationOf1;libdbusmenu-qt&InstallationOf2;</title>
 @z
 
 @x
@@ -157,7 +157,7 @@
 	<seg>libdbusmenu-qt.so</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
 	<seg>libdbusmenu-qt.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z

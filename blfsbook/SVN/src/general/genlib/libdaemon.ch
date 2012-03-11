@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libdaemon</title>
 @y
-    <title>libdaemon の概要</title>
+    <title>&IntroductionTo1;libdaemon&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libdaemon-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libdaemon-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libdaemon-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libdaemon-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libdaemon-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libdaemon-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libdaemon-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libdaemon-md5sum;</para>
+        <para>&Download; MD5 sum: &libdaemon-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libdaemon-size;</para>
 @y
-        <para>ダウンロードサイズ: &libdaemon-size;</para>
+        <para>&DownloadSize;: &libdaemon-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">libdaemon Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libdaemon の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libdaemon&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -98,7 +98,7 @@
 @x
     <title>Installation of libdaemon</title>
 @y
-    <title>libdaemon のインストール</title>
+    <title>&InstallationOf1;libdaemon&InstallationOf2;</title>
 @z
 
 @x
@@ -168,7 +168,7 @@
         <seg>/usr/include/libdaemon and
         /usr/share/doc/libdaemon-&libdaemon-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libdaemon.{so,a}</seg>
         <seg>/usr/include/libdaemon,
         /usr/share/doc/libdaemon-&libdaemon-version;</seg>

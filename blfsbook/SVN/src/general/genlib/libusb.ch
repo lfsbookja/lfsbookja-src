@@ -16,23 +16,22 @@
 @x
   <!ENTITY libusb-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libusb-time          "0.1 SBU 以下">
+  <!ENTITY libusb-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libusb</title>
 @y
-    <title>libusb の概要</title>
+    <title>&IntroductionTo1;libusb&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>libusb</application> package contains a library
     used by some applications for USB device access.</para>
 @y
-<para>
-<application>libusb</application>
-パッケージは、USB デバイスへのアクセスを行うアプリケーションが利用するライブラリを提供します。
-</para>
+    <para>
+    <application>libusb</application> パッケージは、USB デバイスへのアクセスを行うアプリケーションが利用するライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -44,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libusb-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libusb-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libusb-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libusb-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libusb-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libusb-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libusb-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libusb-md5sum;</para>
+        <para>&Download; MD5 sum: &libusb-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libusb-size;</para>
 @y
-        <para>ダウンロードサイズ: &libusb-size;</para>
+        <para>&DownloadSize;: &libusb-size;</para>
 @z
 
 @x
@@ -80,7 +79,7 @@
 @x
     <bridgehead renderas="sect3">libusb Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libusb の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libusb&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,57 +103,54 @@
 @x
     <title>Installation of libusb</title>
 @y
-    <title>libusb のインストール</title>
+    <title>&InstallationOf1;libusb&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libusb</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libusb</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libusb</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>If <application>Doxygen</application> is installed and you wish to
     build the API documentation, issue the following command:</para>
 @y
-<para>
-<application>Doxygen</application> をインストールしていて API ドキュメントをビルドしたい場合は、以下のコマンドを実行します。
-</para>
+    <para>
+    <application>Doxygen</application> をインストールしていて API ドキュメントをビルドしたい場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>If you built the API documentation, install it using the following
     commands as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-API ドキュメントをビルドした場合、<systemitem class="username">root</systemitem> 
-ユーザーのまま、以下を実行してドキュメントをインストールします。
-</para>
+    <para>
+    API ドキュメントをビルドした場合、<systemitem class="username">root</systemitem> ユーザーのまま、以下を実行してドキュメントをインストールします。
+    </para>
 @z
 
 @x
     <title>Configuring Libusb</title>
 @y
-    <title>Libusb の設定</title>
+    <title>&Configuring1;Libusb&Configuring2;</title>
 @z
 
 @x
@@ -164,23 +160,20 @@ API ドキュメントをビルドした場合、<systemitem class="username">ro
     support &rArr; Support for Host-side USB.  Select any USB hardware device
     drivers you may need on the same page.</para>
 @y
-<para id="libusb-kernel">
-USB のローデバイス (大容量ディスクドライバーでは扱うことができない)
-へアクセスするには、カーネルによる適切な機能サポートが必要となります。
-カーネルの設定にて Device Drivers &rArr; USB
-support &rArr; Support for Host-side USB
-を確認してください。
-設定ページでは、必要としている USB ハードウェアデバイスをすべて選択してください。
-</para>
+    <para id="libusb-kernel">
+    USB のローデバイス (大容量ディスクドライバーでは扱うことができない) へアクセスするには、カーネルによる適切な機能サポートが必要となります。
+    カーネルの設定にて Device Drivers &rArr; USB support &rArr; Support for Host-side USB を確認してください。
+    設定ページでは、必要としている USB ハードウェアデバイスをすべて選択してください。
+    </para>
 @z
 
 @x
     <para>For more details on setting up USB devices, see <xref
     linkend="usb-device-issues"/>.  </para>
 @y
-<para>
-USB デバイスの設定に関する詳細は <xref linkend="usb-device-issues"/> を参照してください。
-</para>
+    <para>
+    USB デバイスの設定に関する詳細は <xref linkend="usb-device-issues"/> を参照してください。
+    </para>
 @z
 
 @x
@@ -205,7 +198,7 @@ USB デバイスの設定に関する詳細は <xref linkend="usb-device-issues"
         <seg>/usr/include/libusb-1.0 and
         /usr/share/doc/libusb-&libusb-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libusb-1.0.{so,a}</seg>
         <seg>/usr/include/libusb-1.0,
         /usr/share/doc/libusb-&libusb-version;</seg>
@@ -221,7 +214,7 @@ USB デバイスの設定に関する詳細は <xref linkend="usb-device-issues"
           <para> libraries contain C functions for accessing
           USB hardware.</para>
 @y
-<para>
-USB ハードウェアにアクセスするための C 関数を提供します。
-</para>
+          <para>
+          USB ハードウェアにアクセスするための C 関数を提供します。
+          </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to talloc</title>
 @y
-    <title>talloc の概要</title>
+    <title>&IntroductionTo1;talloc&IntroductionTo2;s</title>
 @z
 
 @x
@@ -48,25 +48,25 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @x
         <para>Download (HTTP): <ulink url="&talloc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&talloc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&talloc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&talloc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&talloc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&talloc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &talloc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &talloc-md5sum;</para>
+        <para>&Download; MD5 sum: &talloc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &talloc-size;</para>
 @y
-        <para>ダウンロードサイズ: &talloc-size;</para>
+        <para>&DownloadSize;: &talloc-size;</para>
 @z
 
 @x
@@ -84,32 +84,32 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @x
     <title>Installation of talloc</title>
 @y
-    <title>talloc のインストール</title>
+    <title>&InstallationOf1;talloc&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>talloc</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>talloc</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>talloc</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To check the results, issue <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -133,9 +133,9 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
         <seg>libtalloc.{a,so}</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libtalloc.{a,so}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

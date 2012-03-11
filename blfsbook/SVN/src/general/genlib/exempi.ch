@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -23,8 +23,9 @@
     <para><application>Exempi</application> is an implementation of XMP (Adobe's
     Extensible Metadata Platform).</para>
 @y
-    <para><application>Exempi</application> is an implementation of XMP (Adobe's
-    Extensible Metadata Platform).</para>
+    <para>
+    <application>Exempi</application> は XMP (Adobe の Extensible Metadata Platform) を実装するものです。
+    </para>
 @z
 
 @x
@@ -101,20 +102,40 @@
     <para>Install <application>exempi</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>exempi</application> by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して <application>exempi</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--enable-static=no</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--enable-static=no</option>:
+    このスイッチによりスタティックライブラリをインストールしないようにします。
+    </para>
 @z
 
 @x
@@ -147,4 +168,12 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x libexempi.{so,a}
+          <para>is a library to parse XMP metadata.</para>
+@y
+          <para>
+          XMP メタデータを解析するライブラリ。
+          </para>
 @z
