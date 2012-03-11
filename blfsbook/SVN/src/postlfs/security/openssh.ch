@@ -40,7 +40,7 @@
 @x
     <title>Introduction to OpenSSH</title>
 @y
-    <title>OpenSSH の概要</title>
+    <title>&IntroductionTo1;OpenSSH&IntroductionTo2;</title>
 @z
 
 @x
@@ -52,25 +52,25 @@
 @x
         <para>Download (HTTP): <ulink url="&openssh-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&openssh-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&openssh-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&openssh-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&openssh-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&openssh-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &openssh-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &openssh-md5sum;</para>
+        <para>&Download; MD5 sum: &openssh-md5sum;</para>
 @z
 
 @x
         <para>Download size: &openssh-size;</para>
 @y
-        <para>ダウンロードサイズ: &openssh-size;</para>
+        <para>&DownloadSize;: &openssh-size;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <bridgehead renderas="sect3">OpenSSH Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">OpenSSH の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;OpenSSH&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -146,7 +146,7 @@
 @x
     <title>Installation of OpenSSH</title>
 @y
-    <title>OpenSSH のインストール</title>
+    <title>&InstallationOf1;OpenSSH&InstallationOf2;</title>
 @z
 
 @x
@@ -344,7 +344,7 @@
 @x
     <title>Configuring OpenSSH</title>
 @y
-    <title>OpenSSH の設定</title>
+    <title>&Configuring1;OpenSSH&Configuring2;</title>
 @z
 
 @x

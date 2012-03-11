@@ -16,7 +16,7 @@
 @x
     <title>Introduction to PolicyKit</title>
 @y
-    <title>PolicyKit の概要</title>
+    <title>&IntroductionTo1;PolicyKit&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,11 +24,9 @@
     application-level toolkit for defining and handling the policy that allows
     unprivileged processes to speak to privileged processes.</para>
 @y
-<para>
-<application>PolicyKit</application>
-パッケージは、非特権プロセス (unprivileged prosecces)
-から特権プロセス (privileged processes) へのアクセスを可能とするためのポリシー情報を、アプリケーションレベルのツールキットを使って定義し利用するためのパッケージです。
-</para>
+    <para>
+    <application>PolicyKit</application> パッケージは、非特権プロセス (unprivileged prosecces) から特権プロセス (privileged processes) へのアクセスを可能とするためのポリシー情報を、アプリケーションレベルのツールキットを使って定義し利用するためのパッケージです。
+    </para>
 @z
 
 @x
@@ -40,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&policykit-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&policykit-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&policykit-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&policykit-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&policykit-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&policykit-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &policykit-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &policykit-md5sum;</para>
+        <para>&Download; MD5 sum: &policykit-md5sum;</para>
 @z
 
 @x
         <para>Download size: &policykit-size;</para>
 @y
-        <para>ダウンロードサイズ: &policykit-size;</para>
+        <para>&DownloadSize;: &policykit-size;</para>
 @z
 
 @x
@@ -76,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">PolicyKit Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">PolicyKit の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;PolicyKit&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +110,7 @@
 @x
     <title>Installation of PolicyKit</title>
 @y
-    <title>PolicyKit のインストール</title>
+    <title>&InstallationOf1;PolicyKit&InstallationOf2;</title>
 @z
 
 @x
@@ -121,39 +119,33 @@
     following commands as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<application>PolicyKit</application>
-の機能を適正に取り扱うには、専用のユーザーおよびグループを定義することが必要です。
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <application>PolicyKit</application> の機能を適正に取り扱うには、専用のユーザーおよびグループを定義することが必要です。
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>Install <application>PolicyKit</application> by running the following
     commands as an unprivileged user:</para>
 @y
-<para>
-一般ユーザーでログインし以下のコマンドを実行して <application>PolicyKit</application>
-をビルドします。
-</para>
+    <para>
+    一般ユーザーでログインし以下のコマンドを実行して <application>PolicyKit</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -165,7 +157,7 @@
 @x
     <title>Configuring PolicyKit</title>
 @y
-    <title>PolicyKit の設定</title>
+    <title>&Configuring1;PolicyKit&Configuring2;</title>
 @z
 
 @x
@@ -183,9 +175,9 @@
 @x
       <para>See manual page PolicyKit.conf(5).</para>
 @y
-<para>
-Man ページ PolicyKit.conf(5) を参照してください。
-</para>
+      <para>
+      Man ページ PolicyKit.conf(5) を参照してください。
+      </para>
 @z
 
 @x
@@ -238,120 +230,116 @@ Man ページ PolicyKit.conf(5) を参照してください。
           <para>is used to inspect, obtain, grant and revoke
           <application>PolicyKit</application> authorizations.</para>
 @y
-<para>
-<application>PolicyKit</application>
-による権限に関して、情報確認、取得、権限付与、権限実行などを行います。
-</para>
+          <para>
+          <application>PolicyKit</application> による権限に関して、情報確認、取得、権限付与、権限実行などを行います。
+          </para>
 @z
 
 @x polkit-policy-file-validate
           <para>is used to verify that one or more
           <application>PolicyKit</application> .policy files are valid.</para>
 @y
-<para>
-<application>PolicyKit</application>
-の複数の .policy ファイルが適切であるかどうかを検証します。
-</para>
+          <para>
+          <application>PolicyKit</application> の複数の .policy ファイルが適切であるかどうかを検証します。
+          </para>
 @z
 
 @x polkit-config-file-validate
           <para>is used to verify that a given <application>PolicyKit</application>
           configuration file is valid.</para>
 @y
-<para>
-指定された <application>PolicyKit</application>
-の設定ファイルが適切であるかどうかを検証します。
-</para>
+          <para>
+          指定された <application>PolicyKit</application> の設定ファイルが適切であるかどうかを検証します。
+          </para>
 @z
 
 @x polkit-action
           <para>is used to list and modify the <application>PolicyKit</application>
           actions that are registered on the system.</para>
 @y
-<para>
-システムに登録されている <application>PolicyKit</application>
-のアクションを一覧表示したり設定変更したりします。
-</para>
+          <para>
+          システムに登録されている <application>PolicyKit</application> のアクションを一覧表示したり設定変更したりします。
+          </para>
 @z
 
 @x polkit-read-auth-helper
           <para>is the setgid polkituser helper for
           <application>PolicyKit</application> to read authorizations.</para>
 @y
-<para>
-
-is the setgid polkituser helper for
-<application>PolicyKit</application> to read authorizations.
-</para>
+          <para>
+          
+          is the setgid polkituser helper for
+          <application>PolicyKit</application> to read authorizations.
+          </para>
 @z
 
 @x polkit-grant-helper-pam
           <para>is the setuid root pam grant helper for <application>PolicyKit</application>.</para>
 @y
-<para>
-
-is the setuid root pam grant helper for <application>PolicyKit</application>.
-</para>
+          <para>
+          
+          is the setuid root pam grant helper for <application>PolicyKit</application>.
+          </para>
 @z
 
 @x polkit-grant-helper
           <para>is the setgid polkituser grant helper for <application>PolicyKit</application>.</para>
 @y
-<para>
-
-is the setgid polkituser grant helper for <application>PolicyKit</application>.
-</para>
+          <para>
+          
+          is the setgid polkituser grant helper for <application>PolicyKit</application>.
+          </para>
 @z
 
 @x polkit-revoke-helper
           <para>is used to revoke authorizations.</para>
 @y
-<para>
-
-is used to revoke authorizations.
-</para>
+          <para>
+          
+          is used to revoke authorizations.
+          </para>
 @z
 
 @x polkitd
           <para>is the <application>PolicyKit</application> daemon.</para>
 @y
-<para>
-<application>PolicyKit</application> のデーモンプログラム。
-</para>
+          <para>
+          <application>PolicyKit</application> のデーモンプログラム。
+          </para>
 @z
 
 @x polkit-explicit-grant-helper
           <para>is used to grant authorizations.</para>
 @y
-<para>
-
-is used to grant authorizations.
-</para>
+          <para>
+          
+          is used to grant authorizations.
+          </para>
 @z
 
 @x polkit-set-default-helper
           <para>is the setgid polkituser helper for <application>PolicyKit</application>.</para>
 @y
-<para>
-
-is the setgid polkituser helper for <application>PolicyKit</application>.
-</para>
+          <para>
+          
+          is the setgid polkituser helper for <application>PolicyKit</application>.
+          </para>
 @z
 
 @x polkit-resolve-exe-helper
           <para>is used to find the executable name for a process.</para>
 @y
-<para>
-プロセスの実行モジュール名を調べます。
-</para>
+          <para>
+          プロセスの実行モジュール名を調べます。
+          </para>
 @z
 
 @x libpolkit.{so,a}
           <para>contains the <application>PolicyKit</application> API functions.</para>
 @y
-<para>
-<application>PolicyKit</application> の API 関数を提供します。
-</para>
+          <para>
+          <application>PolicyKit</application> の API 関数を提供します。
+          </para>
 @z
 
 @x libpolkit-dbus.{so,a}
@@ -359,18 +347,18 @@ is the setgid polkituser helper for <application>PolicyKit</application>.
           information via <application>D-Bus</application> and
           <application>ConsoleKit</application>.</para>
 @y
-<para>
-
-contains functions for obtaining seat, session and caller
-information via <application>D-Bus</application> and
-<application>ConsoleKit</application>.
-</para>
+          <para>
+          
+          contains functions for obtaining seat, session and caller
+          information via <application>D-Bus</application> and
+          <application>ConsoleKit</application>.
+          </para>
 @z
 
 @x libpolkit-grant.{so,a}
           <para>contains functions for obtaining authorizations through authentication.</para>
 @y
-<para>
-contains functions for obtaining authorizations through authentication.
-</para>
+          <para>
+          contains functions for obtaining authorizations through authentication.
+          </para>
 @z

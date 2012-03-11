@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GnuPG 2</title>
 @y
-    <title>GnuPG 2 の概要</title>
+    <title>&IntroductionTo1;GnuPG 2&IntroductionTo2;</title>
 @z
 
 @x
@@ -50,25 +50,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnupg2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnupg2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnupg2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnupg2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnupg2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnupg2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnupg2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnupg2-md5sum;</para>
+        <para>&Download; MD5 sum: &gnupg2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnupg2-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnupg2-size;</para>
+        <para>&DownloadSize;: &gnupg2-size;</para>
 @z
 
 @x
@@ -141,7 +141,7 @@
 @x
     <title>Installation of GnuPG 2</title>
 @y
-    <title>GnuPG 2 のインストール</title>
+    <title>&InstallationOf1;GnuPG 2&InstallationOf2;</title>
 @z
 
 @x

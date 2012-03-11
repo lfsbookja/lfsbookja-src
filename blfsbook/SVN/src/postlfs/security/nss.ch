@@ -144,7 +144,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>This package does not come with a test suite.</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Sudo</title>
 @y
-    <title>Sudo の概要</title>
+    <title>&IntroductionTo1;Sudo&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&sudo-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&sudo-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&sudo-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&sudo-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&sudo-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&sudo-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &sudo-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &sudo-md5sum;</para>
+        <para>&Download; MD5 sum: &sudo-md5sum;</para>
 @z
 
 @x
         <para>Download size: &sudo-size;</para>
 @y
-        <para>ダウンロードサイズ: &sudo-size;</para>
+        <para>&DownloadSize;: &sudo-size;</para>
 @z
 
 @x
@@ -77,7 +77,7 @@
 @x
     <bridgehead renderas="sect3">Sudo Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Sudo の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Sudo&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -116,7 +116,7 @@
 @x
     <title>Installation of Sudo</title>
 @y
-    <title>Sudo のインストール</title>
+    <title>&InstallationOf1;Sudo&InstallationOf2;</title>
 @z
 
 @x
@@ -131,9 +131,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -206,8 +204,8 @@
 @y
     <para>
     <option>--without-pam</option>:
-    このオプションは <application>PAM</application> による権限制御を無効にすることを指示します。
-    <application>PAM</application> をインストールしている場合は、このオプションをはずしてください。
+    このスイッチは <application>PAM</application> による権限制御を無効にすることを指示します。
+    <application>PAM</application> をインストールしている場合は、このスイッチをはずしてください。
     </para>
 @z
 
@@ -217,8 +215,8 @@
 @y
     <para>
     <option>--without-sendmail</option>:
-    このオプションは sendmail の利用を不可とします。
-    sendmail 互換の MTA をインストールしている場合は、このオプション指定をはずしてください。
+    このスイッチは sendmail の利用を不可とします。
+    sendmail 互換の MTA をインストールしている場合は、このスイッチ指定をはずしてください。
     </para>
 @z
 
@@ -247,7 +245,7 @@
 @x
     <title>Configuring Sudo</title>
 @y
-    <title>Sudo の設定</title>
+    <title>&Configuring1;Sudo&Configuring2;</title>
 @z
 
 @x
@@ -350,7 +348,7 @@
 @y
         <seg>sudo, sudoedit, visudo</seg>
         <seg>sudo_noexec.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

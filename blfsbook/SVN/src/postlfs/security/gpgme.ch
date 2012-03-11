@@ -171,7 +171,7 @@
     <command>configure</command>.</para>
 @y
     <para><option>--without-g13</option>:
-    このパラメーターは <command>configure</command> の実行において、未リリースの開発版ライブラリに対する警告メッセージが出ないようにします。
+    このオプションは <command>configure</command> の実行において、未リリースの開発版ライブラリに対する警告メッセージが出ないようにします。
     </para>
 @z
 

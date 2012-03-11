@@ -3,7 +3,7 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
+% $Author$
 % $Rev:$
 % $Date::                           $
 %
@@ -172,7 +172,7 @@
     libraries being installed.</para>
 @y
     <para><option>--enable-static=no</option>:
-    このパラメーターにより、スタティックライブラリをインストールしないようにします。
+    このスイッチにより、スタティックライブラリをインストールしないようにします。
     </para>
 @z
 

@@ -16,13 +16,13 @@
 @x
   <!ENTITY tcpwrappers-time          "less than 0.1 SBU">
 @y
-  <!ENTITY tcpwrappers-time          "0.1 SBU 以下">
+  <!ENTITY tcpwrappers-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to TCP Wrappers</title>
 @y
-    <title>TCP Wrappers の概要</title>
+    <title>&IntroductionTo1;TCP Wrappers&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&tcpwrappers-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&tcpwrappers-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&tcpwrappers-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&tcpwrappers-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&tcpwrappers-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&tcpwrappers-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &tcpwrappers-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &tcpwrappers-md5sum;</para>
+        <para>&Download; MD5 sum: &tcpwrappers-md5sum;</para>
 @z
 
 @x
         <para>Download size: &tcpwrappers-size;</para>
 @y
-        <para>ダウンロードサイズ: &tcpwrappers-size;</para>
+        <para>&DownloadSize;: &tcpwrappers-size;</para>
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <title>Installation of TCP Wrappers</title>
 @y
-    <title>TCP Wrappers のインストール</title>
+    <title>&InstallationOf1;TCP Wrappers&InstallationOf2;</title>
 @z
 
 @x
@@ -119,9 +119,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -153,7 +151,7 @@
 @x
     <title>Configuring TCP Wrappers</title>
 @y
-    <title>TCP Wrappers の設定</title>
+    <title>&Configuring1;TCP Wrappers&Configuring2;</title>
 @z
 
 @x
@@ -245,7 +243,7 @@
 @y
         <seg>tcpd, tcpdchk, tcpdmatch, try-from, safe_finger</seg>
         <seg>libwrap.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to ConsoleKit</title>
 @y
-    <title>ConsoleKit の概要</title>
+    <title>&IntroductionTo1;ConsoleKit&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&consolekit-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&consolekit-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&consolekit-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&consolekit-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&consolekit-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&consolekit-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &consolekit-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &consolekit-md5sum;</para>
+        <para>&Download; MD5 sum: &consolekit-md5sum;</para>
 @z
 
 @x
         <para>Download size: &consolekit-size;</para>
 @y
-        <para>ダウンロードサイズ: &consolekit-size;</para>
+        <para>&DownloadSize;: &consolekit-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">ConsoleKit Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">ConsoleKit の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;ConsoleKit&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -130,7 +130,7 @@
 @x
     <title>Installation of ConsoleKit</title>
 @y
-    <title>ConsoleKit のインストール</title>
+    <title>&InstallationOf1;ConsoleKit&InstallationOf2;</title>
 @z
 
 @x
@@ -146,7 +146,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>&notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -172,9 +172,9 @@
 @y
     <para>
     <parameter>--enable-pam-module</parameter>:
-    このパラメーターは <application>Linux-PAM</application> による認証機能を利用することを指示します。
+    このスイッチは <application>Linux-PAM</application> による認証機能を利用することを指示します。
     <application>Linux-PAM</application> をインストールして <emphasis
-    role="strong">いない</emphasis> 場合はこのパラメーターを取り除いてください。
+    role="strong">いない</emphasis> 場合はこのスイッチを取り除いてください。
     </para>
 @z
 
@@ -192,7 +192,7 @@
 @x
     <title>Configuring ConsoleKit</title>
 @y
-    <title>ConsoleKit の設定</title>
+    <title>&Configuring1;ConsoleKit&Configuring2;</title>
 @z
 
 @x

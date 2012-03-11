@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Shadow</title>
 @y
-    <title>Shadow の概要</title>
+    <title>&IntroductionTo1;Shadow&IntroductionTo2;</title>
 @z
 
 @x
@@ -47,25 +47,25 @@
 @x
         <para>Download (HTTP): <ulink url="&shadow-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&shadow-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&shadow-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&shadow-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&shadow-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&shadow-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &shadow-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &shadow-md5sum;</para>
+        <para>&Download; MD5 sum: &shadow-md5sum;</para>
 @z
 
 @x
         <para>Download size: &shadow-size;</para>
 @y
-        <para>ダウンロードサイズ: &shadow-size;</para>
+        <para>&DownloadSize;: &shadow-size;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
 @x
     <bridgehead renderas="sect3">Shadow Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Shadow の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Shadow&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
     <title>Installation of Shadow</title>
 @y
-    <title>Shadow のインストール</title>
+    <title>&InstallationOf1;Shadow&InstallationOf2;</title>
 @z
 
 @x
@@ -244,7 +244,7 @@
 @x
     <title>Configuring Shadow</title>
 @y
-    <title>Shadow の設定</title>
+    <title>&Configuring1;Shadow&Configuring2;</title>
 @z
 
 @x
@@ -338,7 +338,7 @@
 @x
         <title>Configuring /etc/login.defs</title>
 @y
-        <title>/etc/login.defs の設定</title>
+        <title>&Configuring1;/etc/login.defs&Configuring2;</title>
 @z
 
 @x
@@ -364,7 +364,7 @@
 @x
         <title>Configuring the /etc/pam.d/ Files</title>
 @y
-        <title>/etc/pam.d/ ファイルの設定</title>
+        <title>&Configuring1;/etc/pam.d/ ファイル&Configuring2;</title>
 @z
 
 @x
@@ -546,7 +546,7 @@
 @x
         <title>Configuring Login Access</title>
 @y
-        <title>ログインアクセスの設定</title>
+        <title>&Configuring1;ログインアクセス&Configuring2;</title>
 @z
 
 @x

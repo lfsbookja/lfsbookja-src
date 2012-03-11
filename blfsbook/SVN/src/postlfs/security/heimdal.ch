@@ -22,7 +22,7 @@
 @x
     <title>Introduction to Heimdal</title>
 @y
-    <title>Heimdal の概要</title>
+    <title>&IntroductionTo1;Heimdal&IntroductionTo2;</title>
 @z
 
 % @x
@@ -113,25 +113,25 @@
 @x
         <para>Download (HTTP): <ulink url="&heimdal-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&heimdal-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&heimdal-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&heimdal-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&heimdal-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&heimdal-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &heimdal-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &heimdal-md5sum;</para>
+        <para>&Download; MD5 sum: &heimdal-md5sum;</para>
 @z
 
 @x
         <para>Download size: &heimdal-size;</para>
 @y
-        <para>ダウンロードサイズ: &heimdal-size;</para>
+        <para>&DownloadSize;: &heimdal-size;</para>
 @z
 
 @x
@@ -163,7 +163,7 @@
 @x
     <bridgehead renderas="sect3">Heimdal Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Heimdal の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Heimdal&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -228,7 +228,7 @@
 @x
     <title>Installation of Heimdal</title>
 @y
-    <title>Heimdal のインストール</title>
+    <title>&InstallationOf1;Heimdal&InstallationOf2;</title>
 @z
 
 @x
@@ -472,19 +472,19 @@
 @x
     <title>Configuring Heimdal</title>
 @y
-    <title>Configuring Heimdal</title>
+    <title>&Configuring1;Heimdal&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -854,7 +854,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -862,9 +862,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -882,7 +882,7 @@
         kpasswd, kpasswdd, krb5-check-cracklib.pl, krb5-config, kstash,
         ktutil, kx, kxd, login, mk_cmds-krb5, otp, otpprint, pagsh, pfrom,
         popper, push, rcp, rsh, rshd, rxtelnet, rxterm, string2key, su,
-        telnet, telnetd, tenletxr, verify_krb5_conf and xnlock</seg>
+        telnet, telnetd, tenletxr, verify_krb5_conf, xnlock</seg>
 @z
 
 @x
@@ -896,7 +896,7 @@
         libgssapi.{so,a}, libhdb.{so,a}, libheimntlm.{so,a}, libhx509.{so,a},
         libkadm5clnt.{so,a}, libkadm5srv.{so,a}, libkafs.{so,a},
         libkdc.{so,a}, libkrb5.{so,a}, libotp.{so,a}, libroken.{so,a},
-        libsl.{so,a}, libss-krb5.{so,a} and wind.{so,a}</seg>
+        libsl.{so,a}, libss-krb5.{so,a}, wind.{so,a}</seg>
 @z
 
 @x
@@ -906,13 +906,13 @@
 @y
         <seg>/etc/heimdal, /usr/include/gssapi, /usr/include/kadm5,
         /usr/include/krb5, /usr/include/roken,
-        /usr/share/doc/heimdal-&heimdal-version; and /var/lib/heimdal</seg>
+        /usr/share/doc/heimdal-&heimdal-version;, /var/lib/heimdal</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x afslog

@@ -303,7 +303,7 @@
 @x
     <title>Configuring Linux-PAM</title>
 @y
-    <title>Linux-PAM の設定</title>
+    <title>&Configuring1;Linux-PAM&Configuring2;</title>
 @z
 
 @x

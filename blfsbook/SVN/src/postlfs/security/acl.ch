@@ -16,7 +16,7 @@
 @x
     <title>Introduction to acl</title>
 @y
-    <title>acl の概要</title>
+    <title>&IntroductionTo1;acl&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&acl-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&acl-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&acl-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&acl-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&acl-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&acl-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &acl-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &acl-md5sum;</para>
+        <para>&Download; MD5 sum: &acl-md5sum;</para>
 @z
 
 @x
         <para>Download size: &acl-size;</para>
 @y
-        <para>ダウンロードサイズ: &acl-size;</para>
+        <para>&DownloadSize;: &acl-size;</para>
 @z
 
 @x
@@ -75,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">acl Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">acl の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;acl&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -97,7 +97,7 @@
 @x
     <title>Installation of acl</title>
 @y
-    <title>acl のインストール</title>
+    <title>&InstallationOf1;acl&InstallationOf2;</title>
 @z
 
 @x
@@ -161,16 +161,6 @@
     <title>&CommandExplanations;</title>
 @z
 
-% @x
-%     <para><command>cat &gt; test/sort-getfacl-output ... EOF</command>: This
-%     command creates a missing test script.</para>
-% @y
-%     <para>
-%     <command>cat &gt; test/sort-getfacl-output ... EOF</command>:
-%     このコマンドは不足しているテストスクリプトを生成します。
-%     </para>
-% @z
-
 @x
     <para><command>sed -i ... include/builddefs.in</command>: This command
     changes the documentation directory to a versioned directory and provides
@@ -197,7 +187,7 @@
     <title>Configuring acl</title>
     <sect3><title>Configuration Information</title>
 @y
-    <title>acl の設定</title>
+    <title>&Configuring1;acl&Configuring2;</title>
     <sect3><title>&ConfigInfo;</title>
 @z
 

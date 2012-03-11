@@ -16,7 +16,7 @@
 @x
     <title>Introduction to CrackLib</title>
 @y
-    <title>CrackLib の概要</title>
+    <title>&IntroductionTo1;CrackLib&IntroductionTo2;</title>
 @z
 
 @x
@@ -153,7 +153,7 @@
 @x
     <bridgehead renderas="sect3">CrackLib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">CrackLib の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;CrackLib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -175,7 +175,7 @@
 @x
     <title>Installation of CrackLib</title>
 @y
-    <title>CrackLib のインストール</title>
+    <title>&InstallationOf1;CrackLib&InstallationOf2;</title>
 @z
 
 @x

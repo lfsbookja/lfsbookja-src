@@ -16,7 +16,7 @@
 @x
     <title>Introduction to attr</title>
 @y
-    <title>attr の概要</title>
+    <title>&IntroductionTo1;attr&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&attr-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&attr-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&attr-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&attr-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&attr-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&attr-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &attr-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &attr-md5sum;</para>
+        <para>&Download; MD5 sum: &attr-md5sum;</para>
 @z
 
 @x
         <para>Download size: &attr-size;</para>
 @y
-        <para>ダウンロードサイズ: &attr-size;</para>
+        <para>&DownloadSize;: &attr-size;</para>
 @z
 
 @x
@@ -81,7 +81,7 @@
 @x
     <title>Installation of attr</title>
 @y
-    <title>attr のインストール</title>
+    <title>&InstallationOf1;attr&InstallationOf2;</title>
 @z
 
 @x
@@ -157,7 +157,7 @@
     <title>Configuring attr</title>
     <sect3><title>Configuration Information</title>
 @y
-    <title>attr の設定</title>
+    <title>&Configuring1;attr&Configuring2;</title>
     <sect3><title>&ConfigInfo;</title>
 @z
 

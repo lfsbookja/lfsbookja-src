@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GnuPG</title>
 @y
-    <title>GnuPG の概要</title>
+    <title>&IntroductionTo1;GnuPG&IntroductionTo2;</title>
 @z
 
 @x
@@ -43,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gnupg-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gnupg-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gnupg-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gnupg-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gnupg-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gnupg-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gnupg-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gnupg-md5sum;</para>
+        <para>&Download; MD5 sum: &gnupg-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gnupg-size;</para>
 @y
-        <para>ダウンロードサイズ: &gnupg-size;</para>
+        <para>&DownloadSize;: &gnupg-size;</para>
 @z
 
 @x
@@ -76,29 +76,10 @@
         <para>&Estimatedbuildtime;: &gnupg-time;</para>
 @z
 
-% @x
-%     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-% @y
-%     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-% @z
-% 
-% @x
-%         <para>Required Patch (if you have <application>Curl</application>
-%           already installed and is linked against a SSL/TLS library): <ulink
-%           url="&patch-root;/gnupg-&gnupg-version;-curl_fix-1.patch"/>
-%       </para>
-% @y
-%         <para>必須のパッチ
-%           (<application>Curl</application>
-%           をインストール済で SSL/TLS ライブラリをリンクしている場合に必要): <ulink
-%           url="&patch-root;/gnupg-&gnupg-version;-curl_fix-1.patch"/>
-%       </para>
-% @z
-
 @x
     <bridgehead renderas="sect3">GnuPG Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GnuPG の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GnuPG&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -128,7 +109,7 @@
 @x
     <title>Installation of GnuPG</title>
 @y
-    <title>GnuPG のインストール</title>
+    <title>&InstallationOf1;GnuPG&InstallationOf2;</title>
 @z
 
 @x

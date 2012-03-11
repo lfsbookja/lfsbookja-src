@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Tripwire</title>
 @y
-    <title>Tripwire の概要</title>
+    <title>&IntroductionTo1;Tripwire&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&tripwire-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&tripwire-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&tripwire-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&tripwire-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&tripwire-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&tripwire-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &tripwire-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &tripwire-md5sum;</para>
+        <para>&Download; MD5 sum: &tripwire-md5sum;</para>
 @z
 
 @x
         <para>Download size: &tripwire-size;</para>
 @y
-        <para>ダウンロードサイズ: &tripwire-size;</para>
+        <para>&DownloadSize;: &tripwire-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">Tripwire Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Tripwire の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Tripwire&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <title>Installation of Tripwire</title>
 @y
-    <title>Tripwire のインストール</title>
+    <title>&InstallationOf1;Tripwire&InstallationOf2;</title>
 @z
 
 @x
@@ -195,7 +195,7 @@
 @x
     <title>Configuring Tripwire</title>
 @y
-    <title>Tripwire の設定</title>
+    <title>&Configuring1;Tripwire&Configuring2;</title>
 @z
 
 @x
@@ -442,7 +442,7 @@
         <seg>/etc/tripwire, /var/lib/tripwire, and /usr/share/doc/tripwire</seg>
 @y
         <seg>siggen, tripwire, twadmin, twprint</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/etc/tripwire, /var/lib/tripwire, /usr/share/doc/tripwire</seg>
 @z
 

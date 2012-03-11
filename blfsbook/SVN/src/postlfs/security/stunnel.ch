@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Stunnel</title>
 @y
-    <title>Stunnel の概要</title>
+    <title>&IntroductionTo1;Stunnel&IntroductionTo2;</title>
 @z
 
 @x
@@ -48,25 +48,25 @@
 @x
         <para>Download (HTTP): <ulink url="&stunnel-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&stunnel-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&stunnel-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&stunnel-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&stunnel-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&stunnel-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &stunnel-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &stunnel-md5sum;</para>
+        <para>&Download; MD5 sum: &stunnel-md5sum;</para>
 @z
 
 @x
         <para>Download size: &stunnel-size;</para>
 @y
-        <para>ダウンロードサイズ: &stunnel-size;</para>
+        <para>&DownloadSize;: &stunnel-size;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@
 @x
     <bridgehead renderas="sect3">Stunnel Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Stunnel の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Stunnel&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -114,7 +114,7 @@
 @x
     <title>Installation of Stunnel</title>
 @y
-    <title>Stunnel のインストール</title>
+    <title>&InstallationOf1;Stunnel&InstallationOf2;</title>
 @z
 
 @x
@@ -123,12 +123,12 @@
     new user and group using the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-The <command>stunnel</command> daemon will be run in a
-<command>chroot</command> jail by an unprivileged user. Create the
-new user and group using the following commands as the
-<systemitem class="username">root</systemitem> user:
-</para>
+    <para>
+    The <command>stunnel</command> daemon will be run in a
+    <command>chroot</command> jail by an unprivileged user. Create the
+    new user and group using the following commands as the
+    <systemitem class="username">root</systemitem> user:
+    </para>
 @z
 
 @x
@@ -157,25 +157,23 @@ new user and group using the following commands as the
     <para>Install <application>Stunnel</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Stunnel</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Stunnel</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -184,42 +182,14 @@ new user and group using the following commands as the
     <title>&CommandExplanations;</title>
 @z
 
-% @x
-%     <para><command>sed -i 's|nogroup|stunnel|g' configure</command>: This
-%     command is used to change the default group for the installed files in
-%     <filename class='directory'>/var/lib/stunnel</filename> from
-%     <systemitem class="groupname">nogroup</systemitem> to
-%     <systemitem class="groupname">stunnel</systemitem>.</para>
-% @y
-% <para>
-% <command>sed -i 's|nogroup|stunnel|g' configure</command>: This
-% command is used to change the default group for the installed files in
-% <filename class='directory'>/var/lib/stunnel</filename> from
-% <systemitem class="groupname">nogroup</systemitem> to
-% <systemitem class="groupname">stunnel</systemitem>.
-% </para>
-% @z
-% 
-% @x
-%     <para><command>sed -i '...' tools/Makefile.in</command>: This command
-%     ensures that the chroot jail will be located in
-%     <filename class='directory'>/var/lib/stunnel</filename> instead of
-%     <filename class='directory'>/usr/var/lib/stunnel</filename>.</para>
-% @y
-% <para><command>sed -i '...' tools/Makefile.in</command>: This command
-% ensures that the chroot jail will be located in
-% <filename class='directory'>/var/lib/stunnel</filename> instead of
-% <filename class='directory'>/usr/var/lib/stunnel</filename>.</para>
-% @z
-
 @x
     <para><parameter>--sysconfdir=/etc</parameter>: This parameter forces
     the configuration directory to <filename class='directory'>/etc</filename>
     instead of <filename class='directory'>/usr/etc</filename>.</para>
 @y
-<para><parameter>--sysconfdir=/etc</parameter>: This parameter forces
-the configuration directory to <filename class='directory'>/etc</filename>
-instead of <filename class='directory'>/usr/etc</filename>.</para>
+    <para><parameter>--sysconfdir=/etc</parameter>: This parameter forces
+    the configuration directory to <filename class='directory'>/etc</filename>
+    instead of <filename class='directory'>/usr/etc</filename>.</para>
 @z
 
 @x
@@ -241,9 +211,9 @@ instead of <filename class='directory'>/usr/etc</filename>.</para>
     if you don't have <application>tcpwrappers</application> installed. Remove
     the parameter if <application>tcpwrappers</application> is installed.</para>
 @y
-<para><parameter>--disable-libwrap</parameter>: This parameter is required
-if you don't have <application>tcpwrappers</application> installed. Remove
-the parameter if <application>tcpwrappers</application> is installed.</para>
+    <para><parameter>--disable-libwrap</parameter>: This parameter is required
+    if you don't have <application>tcpwrappers</application> installed. Remove
+    the parameter if <application>tcpwrappers</application> is installed.</para>
 @z
 
 @x
@@ -254,28 +224,28 @@ the parameter if <application>tcpwrappers</application> is installed.</para>
     <filename class='directory'>/etc/stunnel</filename> directory, prompts you
     for the necessary information to create one. Ensure you reply to the</para>
 @y
-<para><command>make docdir=... install</command>: This command installs the
-package, changes the documentation installation directory to standard
-naming conventions and, if you did not copy an
-<filename>stunnel.pem</filename> file to the
-<filename class='directory'>/etc/stunnel</filename> directory, prompts you
-for the necessary information to create one. Ensure you reply to the</para>
+    <para><command>make docdir=... install</command>: This command installs the
+    package, changes the documentation installation directory to standard
+    naming conventions and, if you did not copy an
+    <filename>stunnel.pem</filename> file to the
+    <filename class='directory'>/etc/stunnel</filename> directory, prompts you
+    for the necessary information to create one. Ensure you reply to the</para>
 @z
 
 @x
     <para>prompt with the name or IP address you will be using
     to access the service(s).</para>
 @y
-<para>
-prompt with the name or IP address you will be using
-to access the service(s).
-</para>
+    <para>
+    prompt with the name or IP address you will be using
+    to access the service(s).
+    </para>
 @z
 
 @x
     <title>Configuring Stunnel</title>
 @y
-    <title>Stunnel の設定</title>
+    <title>&Configuring1;Stunnel&Configuring2;</title>
 @z
 
 @x
@@ -302,10 +272,10 @@ to access the service(s).
       <filename class='extension'>.pid</filename> file that is created
       when the <application>Stunnel</application> daemon starts:</para>
 @y
-<para>As the <systemitem class="username">root</systemitem> user,
-create the directory used for the
-<filename class='extension'>.pid</filename> file that is created
-when the <application>Stunnel</application> daemon starts:</para>
+      <para>As the <systemitem class="username">root</systemitem> user,
+      create the directory used for the
+      <filename class='extension'>.pid</filename> file that is created
+      when the <application>Stunnel</application> daemon starts:</para>
 @z
 
 @x
@@ -313,17 +283,17 @@ when the <application>Stunnel</application> daemon starts:</para>
       configuration file using the following commands as the
       <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>Next, create a basic <filename>/etc/stunnel/stunnel.conf</filename>
-configuration file using the following commands as the
-<systemitem class="username">root</systemitem> user:</para>
+      <para>Next, create a basic <filename>/etc/stunnel/stunnel.conf</filename>
+      configuration file using the following commands as the
+      <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
       <para>Finally, you need to add the service(s) you wish to encrypt to the
       configuration file. The format is as follows:</para>
 @y
-<para>Finally, you need to add the service(s) you wish to encrypt to the
-configuration file. The format is as follows:</para>
+      <para>Finally, you need to add the service(s) you wish to encrypt to the
+      configuration file. The format is as follows:</para>
 @z
 
 @x
@@ -334,12 +304,12 @@ configuration file. The format is as follows:</para>
       may have to add an appropriate entry in <filename>/etc/services</filename>
       as well.</para>
 @y
-<para>If you use <application>Stunnel</application> to encrypt a daemon
-started from <command>[x]inetd</command>, you may need to disable that
-daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
-corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel service. You
-may have to add an appropriate entry in <filename>/etc/services</filename>
-as well.</para>
+      <para>If you use <application>Stunnel</application> to encrypt a daemon
+      started from <command>[x]inetd</command>, you may need to disable that
+      daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
+      corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel service. You
+      may have to add an appropriate entry in <filename>/etc/services</filename>
+      as well.</para>
 @z
 
 @x
@@ -349,17 +319,17 @@ as well.</para>
       service, read the <xref linkend="samba3-swat-config"/> in the
       <application>Samba</application> instructions.</para>
 @y
-<para>For a full explanation of the commands and syntax used in the
-configuration file, run <command>man stunnel</command>. To see a
-BLFS example of an actual setup of an <command>stunnel</command> encrypted
-service, read the <xref linkend="samba3-swat-config"/> in the
-<application>Samba</application> instructions.</para>
+      <para>For a full explanation of the commands and syntax used in the
+      configuration file, run <command>man stunnel</command>. To see a
+      BLFS example of an actual setup of an <command>stunnel</command> encrypted
+      service, read the <xref linkend="samba3-swat-config"/> in the
+      <application>Samba</application> instructions.</para>
 @z
 
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
@@ -437,4 +407,3 @@ service, read the <xref linkend="samba3-swat-config"/> in the
           <para> contains the API functions required by
           <application>Stunnel</application>.</para>
 @z
-
