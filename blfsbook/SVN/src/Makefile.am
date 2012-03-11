@@ -10,6 +10,7 @@ EXTRACLEANFILES = $(srcs)
 
 BASEDIR = ../svn.ja
 ROOT_ID =
+PDF_OUTPUT = ../BLFS-BOOKja.pdf
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
 
@@ -84,6 +85,27 @@ $(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
 	$(Q)[ -d $(RENDERTMP) ] || mkdir -p $(RENDERTMP)
 	$(XMLLINT) --nonet --noent --xinclude --postvalid \
 	  -o $(RENDERTMP)/blfs-full.xml index.xml
+
+pdf: $(BASEDIR)/$(PDF_OUTPUT)
+$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/blfs-full.xml
+	@echo "Generating profiled XML for PDF..."
+	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
+	  --output $(RENDERTMP)/blfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
+	  $(RENDERTMP)/blfs-full.xml
+
+$(RENDERTMP)/blfs-pdf.fo: $(RENDERTMP)/blfs-pdf.xml
+	@echo "Generating FO file..."
+	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
+	  --output $(RENDERTMP)/blfs-pdf.fo stylesheets/blfs-pdf.xsl \
+	  $(RENDERTMP)/blfs-pdf.xml
+	$(Q)sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/blfs-pdf.fo
+
+$(BASEDIR)/$(PDF_OUTPUT): $(RENDERTMP)/blfs-pdf.fo
+	@echo "Generating PDF file..."
+	$(Q)if [ ! -e $(BASEDIR) ]; then \
+	  mkdir -p $(BASEDIR); \
+	fi;
+	$(Q)fop $(RENDERTMP)/blfs-pdf.fo $(BASEDIR)/$(PDF_OUTPUT)
 
 wget-list: $(BASEDIR)/wget-list
 $(BASEDIR)/wget-list: $(RENDERTMP)/blfs-full.xml
