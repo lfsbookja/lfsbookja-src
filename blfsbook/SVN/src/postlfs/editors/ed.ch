@@ -16,13 +16,13 @@
 @x
   <!ENTITY ed-time          "Less than 0.1 SBU">
 @y
-  <!ENTITY ed-time          "0.1 SBU 以下">
+  <!ENTITY ed-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Ed</title>
 @y
-    <title>Ed の概要</title>
+    <title>&IntroductionTo1;Ed&IntroductionTo2;</title>
 @z
 
 @x
@@ -33,13 +33,13 @@
     program if you encounter an ed-based patch file. This happens rarely
     because diff-based patches are preferred these days.</para>
 @y
-<para>
-<application>Ed</application> は行ベースの (line-oriented) テキストエディターです。
-テキストファイルの生成、表示、編集を、対話的に、あるいはシェルスクリプトからの実行でも実現します。
-Ed を利用する人は、そう多くはありません。
-なぜここで取り上げるかというと、patch プログラムが用いるパッチファイルにて Ed ベースのものが時々見受けられるためです。
-もっともこれに出くわすことは非常にまれであり、通常は diff ベースのパッチファイルが用いられます。
-</para>
+    <para>
+    <application>Ed</application> は行ベースの (line-oriented) テキストエディターです。
+    テキストファイルの生成、表示、編集を、対話的に、あるいはシェルスクリプトからの実行でも実現します。
+    Ed を利用する人は、そう多くはありません。
+    なぜここで取り上げるかというと、patch プログラムが用いるパッチファイルにて Ed ベースのものが時々見受けられるためです。
+    もっともこれに出くわすことは非常にまれであり、通常は diff ベースのパッチファイルが用いられます。
+    </para>
 @z
 
 @x
@@ -51,25 +51,25 @@ Ed を利用する人は、そう多くはありません。
 @x
         <para>Download (HTTP): <ulink url="&ed-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&ed-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&ed-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&ed-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&ed-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&ed-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &ed-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &ed-md5sum;</para>
+        <para>&Download; MD5 sum: &ed-md5sum;</para>
 @z
 
 @x
         <para>Download size: &ed-size;</para>
 @y
-        <para>ダウンロードサイズ: &ed-size;</para>
+        <para>&DownloadSize;: &ed-size;</para>
 @z
 
 @x
@@ -102,25 +102,25 @@ Ed を利用する人は、そう多くはありません。
     <para>Install <application>Ed</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Ed</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Ed</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -133,10 +133,10 @@ Ed を利用する人は、そう多くはありません。
     <para><parameter>--bindir=/bin</parameter>: This parameter places the
     <command>ed</command> binary into the root filesystem.</para>
 @y
-<para>
-<parameter>--bindir=/bin</parameter>:
-このパラメーターは <command>ed</command> の実行バイナリをルートファイルシステムにインストールします。
-</para>
+    <para>
+    <parameter>--bindir=/bin</parameter>:
+    このパラメーターは <command>ed</command> の実行バイナリをルートファイルシステムにインストールします。
+    </para>
 @z
 
 @x
@@ -161,8 +161,8 @@ Ed を利用する人は、そう多くはありません。
         <seg>None</seg>
 @y
         <seg>ed, red</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -174,9 +174,9 @@ Ed を利用する人は、そう多くはありません。
 @x
           <para>is a line-oriented text editor.</para>
 @y
-<para>
-行ベースのテキストエディターです。
-</para>
+          <para>
+          行ベースのテキストエディターです。
+          </para>
 @z
 
 @x
@@ -184,8 +184,8 @@ Ed を利用する人は、そう多くはありません。
           files in the current directory and cannot execute shell
           commands.</para>
 @y
-<para>
-機能が制限された <command>ed</command> です。
-これはカレントディレクトリ配下のファイルのみ編集でき、シェルコマンドの実行はできません。
-</para>
+          <para>
+          機能が制限された <command>ed</command> です。
+          これはカレントディレクトリ配下のファイルのみ編集でき、シェルコマンドの実行はできません。
+          </para>
 @z

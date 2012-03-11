@@ -23,17 +23,16 @@
   <para><command>pico</command> is a text editor installed as a part
   of <xref linkend="pine"/>.</para>
 @y
-<para>
-<command>pico</command> は <xref linkend="pine"/> の一部としてインストールされるテキストエディターです。
-</para>
+  <para>
+  <command>pico</command> は <xref linkend="pine"/> の一部としてインストールされるテキストエディターです。
+  </para>
 @z
 
 @x
   <para><command>mcedit</command> is a text editor installed as part
   of <xref linkend="mc"/>.</para>
 @y
-<para>
-<command>mcedit</command> は <xref linkend="mc"/> の一部としてインストールされるテキストエディターです。
-</para>
+  <para>
+  <command>mcedit</command> は <xref linkend="mc"/> の一部としてインストールされるテキストエディターです。
+  </para>
 @z
-

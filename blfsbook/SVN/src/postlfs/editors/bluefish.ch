@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Bluefish</title>
 @y
-    <title>Bluefish の概要</title>
+    <title>&IntroductionTo1;Bluefish&IntroductionTo2;</title>
 @z
 
 @x
@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">Bluefish Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Bluefish の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Bluefish&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -114,7 +114,7 @@
 @x
     <title>Installation of Bluefish</title>
 @y
-    <title>Bluefish のインストール</title>
+    <title>&InstallationOf1;Bluefish&InstallationOf2;</title>
 @z
 
 @x

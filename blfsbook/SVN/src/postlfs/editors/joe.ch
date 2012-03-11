@@ -16,7 +16,7 @@
 @x
     <title>Introduction to JOE</title>
 @y
-    <title>JOE の概要</title>
+    <title>&IntroductionTo1;JOE&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,12 +24,9 @@
     editor capable of emulating WordStar, <application>Pico</application>,
     and <application>Emacs</application>.</para>
 @y
-<para>
-<application>JOE</application> (Joe's own editor)
-は、WordStar, <application>Pico</application>,
-<application>Emacs</application>
-といったエディターの機能をエミュレートする軽量なテキストエディターです。
-</para>
+    <para>
+    <application>JOE</application> (Joe's own editor) は、WordStar, <application>Pico</application>, <application>Emacs</application> といったエディターの機能をエミュレートする軽量なテキストエディターです。
+    </para>
 @z
 
 @x
@@ -41,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&joe-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&joe-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&joe-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&joe-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&joe-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&joe-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &joe-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &joe-md5sum;</para>
+        <para>&Download; MD5 sum: &joe-md5sum;</para>
 @z
 
 @x
         <para>Download size: &joe-size;</para>
 @y
-        <para>ダウンロードサイズ: &joe-size;</para>
+        <para>&DownloadSize;: &joe-size;</para>
 @z
 
 @x
@@ -85,40 +82,36 @@
 @x
     <title>Installation of JOE</title>
 @y
-    <title>JOE のインストール</title>
+    <title>&InstallationOf1;JOE&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>JOE</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>JOE</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>JOE</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-になって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> になって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Configuring JOE</title>
 @y
-    <title>JOE の設定</title>
+    <title>&Configuring1;JOE&Configuring2;</title>
 @z
 
 @x
@@ -161,7 +154,7 @@
         <seg>/etc/joe, /usr/share/joe, and /usr/share/doc/joe</seg>
 @y
         <seg>jmacs, joe, jpico, jstar, rjoe, termidx</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/etc/joe, /usr/share/joe, /usr/share/doc/joe</seg>
 @z
 
@@ -175,11 +168,9 @@
           <para>is a symbolic link to <command>joe</command> used to
           launch <application>Emacs</application> emulation mode.</para>
 @y
-<para>
-<command>joe</command> へのシンボリックリンクであり
-<application>Emacs</application>
-エミュレーションモードで起動します。
-</para>
+          <para>
+          <command>joe</command> へのシンボリックリンクであり <application>Emacs</application> エミュレーションモードで起動します。
+          </para>
 @z
 
 @x joe
@@ -187,34 +178,27 @@
           WordStar, <application>Pico</application>, and
           <application>Emacs</application>.</para>
 @y
-<para>
-軽量なテキストエディターであり、
-WordStar, <application>Pico</application>, <application>Emacs</application>
-といったエディター機能をエミュレートします。
-</para>
+          <para>
+          軽量なテキストエディターであり、WordStar, <application>Pico</application>, <application>Emacs</application> といったエディター機能をエミュレートします。
+          </para>
 @z
 
 @x jpico
           <para>is a symbolic link to <command>joe</command> used to
           launch <application>Pico</application> emulation mode.</para>
 @y
-<para>
-<command>joe</command>
-へのシンボリックリンクであり
-<application>Pico</application>
-エミュレーションモードで起動します。
-</para>
+          <para>
+          <command>joe</command> へのシンボリックリンクであり <application>Pico</application> エミュレーションモードで起動します。
+          </para>
 @z
 
 @x jstar
           <para>is a symbolic link to <command>joe</command> used to
           launch WordStar emulation mode.</para>
 @y
-<para>
-<command>joe</command>
-へのシンボリックリンクであり
-WordStar エミュレーションモードで起動します。
-</para>
+          <para>
+          <command>joe</command> へのシンボリックリンクであり WordStar エミュレーションモードで起動します。
+          </para>
 @z
 
 @x rjoe
@@ -222,20 +206,16 @@ WordStar エミュレーションモードで起動します。
           <application>JOE</application> to editing only files which are
           specified on the command-line.</para>
 @y
-<para>
-<command>joe</command>
-へのシンボリックリンクであり、コマンドラインから指定されたファイルのみを編集するように、限定的に
-<application>JOE</application> を起動します。
-</para>
+          <para>
+          <command>joe</command> へのシンボリックリンクであり、コマンドラインから指定されたファイルのみを編集するように、限定的に <application>JOE</application> を起動します。
+          </para>
 @z
 
 @x termidx
           <para>is a program used by <command>joe</command> to generate the
           termcap index file.</para>
 @y
-<para>
-<command>joe</command>
-を利用して termcap インデックスファイルを生成します。
-</para>
+          <para>
+          <command>joe</command> を利用して termcap インデックスファイルを生成します。
+          </para>
 @z
-

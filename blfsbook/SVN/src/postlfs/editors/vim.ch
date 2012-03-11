@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Vim</title>
 @y
-    <title>Vim の概要</title>
+    <title>&IntroductionTo1;Vim&IntroductionTo2;</title>
 @z
 
 @x
@@ -56,25 +56,25 @@
 @x
         <para>Download (HTTP): <ulink url="&vim-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&vim-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&vim-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&vim-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&vim-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&vim-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &vim-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &vim-md5sum;</para>
+        <para>&Download; MD5 sum: &vim-md5sum;</para>
 @z
 
 @x
         <para>Download size: &vim-size;</para>
 @y
-        <para>ダウンロードサイズ: &vim-size;</para>
+        <para>&DownloadSize;: &vim-size;</para>
 @z
 
 @x
@@ -114,7 +114,7 @@
 @x
     <bridgehead renderas="sect3">Vim Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Vim の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Vim&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -158,7 +158,7 @@
 @x
     <title>Installation of Vim</title>
 @y
-    <title>Vim のインストール</title>
+    <title>&InstallationOf1;Vim&InstallationOf2;</title>
 @z
 
 @x
@@ -333,7 +333,7 @@
 @x
     <title>Configuring Vim</title>
 @y
-    <title>Vim の設定</title>
+    <title>&Configuring1;Vim&Configuring2;</title>
 @z
 
 @x
@@ -466,7 +466,7 @@ A list of the reinstalled files, along with their short
         <seg>/usr/share/vim</seg>
 @y
         <seg>gview, gvim, gvimdiff, rgview, rgvim</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/vim</seg>
 @z
 

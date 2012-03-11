@@ -16,13 +16,13 @@
 @x
   <!ENTITY nano-time          "less than 0.1 SBU">
 @y
-  <!ENTITY nano-time          "0.1 SBU 以下">
+  <!ENTITY nano-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Nano</title>
 @y
-    <title>Nano の概要</title>
+    <title>&IntroductionTo1;Nano&IntroductionTo2;</title>
 @z
 
 @x
@@ -30,11 +30,10 @@
     simple text editor which aims to replace <application>Pico</application>,
     the default editor in the <application>Pine</application> package.</para>
 @y
-<para>
-<application>nano</application>
-パッケージは、軽量でシンプルなテキストエディターを提供します。
-<application>Pine</application> パッケージにおけるデフォルトのエディター <application>Pico</application> に代わるものとして提供されています。
-</para>
+    <para>
+    <application>nano</application> パッケージは、軽量でシンプルなテキストエディターを提供します。
+    <application>Pine</application> パッケージにおけるデフォルトのエディター <application>Pico</application> に代わるものとして提供されています。
+    </para>
 @z
 
 @x
@@ -46,25 +45,25 @@
 @x
         <para>Download (HTTP): <ulink url="&nano-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&nano-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&nano-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&nano-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&nano-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&nano-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &nano-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &nano-md5sum;</para>
+        <para>&Download; MD5 sum: &nano-md5sum;</para>
 @z
 
 @x
         <para>Download size: &nano-size;</para>
 @y
-        <para>ダウンロードサイズ: &nano-size;</para>
+        <para>&DownloadSize;: &nano-size;</para>
 @z
 
 @x
@@ -82,7 +81,7 @@
 @x
     <bridgehead renderas="sect3">Nano Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Nano の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Nano&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,32 +103,30 @@
 @x
     <title>Installation of Nano</title>
 @y
-    <title>Nano のインストール</title>
+    <title>&InstallationOf1;Nano&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>nano</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>nano</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>nano</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -143,17 +140,17 @@
     <application>Nano</application> to detect <application>S-Lang</application>.
     Use this if installed.</para>
 @y
-<para>
-<option>--with-slang=/usr/lib</option>:
-<application>Nano</application> において <application>S-Lang</application> を利用するようにします。
-<application>S-Lang</application> をインストールしている場合にこれを指定します。
-</para>
+    <para>
+    <option>--with-slang=/usr/lib</option>:
+    <application>Nano</application> において <application>S-Lang</application> を利用するようにします。
+    <application>S-Lang</application> をインストールしている場合にこれを指定します。
+    </para>
 @z
 
 @x
     <title>Configuring nano</title>
 @y
-    <title>Nano の設定</title>
+    <title>&Configuring1;Nano&Configuring2;</title>
 @z
 
 @x
@@ -181,11 +178,10 @@
       <filename>/etc/nano/nanorc</filename> or a personal
       <filename>~/.nanorc</filename> file)</para>
 @y
-<para>
-設定の例です。
-(システム共通の <filename>/etc/nano/nanorc</filename> ファイルとして、または各ユーザー向けの
-<filename>~/.nanorc</filename> ファイルとして生成します。)
-</para>
+      <para>
+      設定の例です。
+      (システム共通の <filename>/etc/nano/nanorc</filename> ファイルとして、または各ユーザー向けの <filename>~/.nanorc</filename> ファイルとして生成します。)
+      </para>
 @z
 
 @x
@@ -194,11 +190,11 @@
       It includes color configurations and has some documentation included
       in the comments.</para>
 @y
-<para>
-設定のサンプルとして <filename class="directory">/etc/nano</filename>
-ディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
-このファイルには色の設定例や、多くの説明がコメント内にて示されています。
-</para>
+      <para>
+      設定のサンプルとして <filename
+      class="directory">/etc/nano</filename> ディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
+      このファイルには色の設定例や、多くの説明がコメント内にて示されています。
+      </para>
 @z
 
 @x
@@ -224,7 +220,7 @@
         /usr/share/doc/nano-&nano-version;</seg>
 @y
         <seg>nano, rnano</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/etc/nano, /usr/share/nano,
         /usr/share/doc/nano-&nano-version;</seg>
 @z
@@ -240,16 +236,16 @@
           <application>Pico</application>, the default editor in the
           <application>Pine</application> package.</para>
 @y
-<para>
-軽量でシンプルなテキストエディターです。
-<application>Pine</application> パッケージにおけるデフォルトのエディター <application>Pico</application> に代わるものとして提供されています。
-</para>
+          <para>
+          軽量でシンプルなテキストエディターです。
+          <application>Pine</application> パッケージにおけるデフォルトのエディター <application>Pico</application> に代わるものとして提供されています。
+          </para>
 @z
 
 @x rnano
           <para>is a restricted mode for <command>nano</command>.</para>
 @y
-<para>
-<command>nano</command> を制限モード (restricted mode) で起動します。
-</para>
+          <para>
+          <command>nano</command> を制限モード (restricted mode) で起動します。
+          </para>
 @z
