@@ -16,7 +16,7 @@
 @x
   <!ENTITY desktop-file-utils-time          "less than 0.1 SBU">
 @y
-  <!ENTITY desktop-file-utils-time          "0.1 SBU 以下">
+  <!ENTITY desktop-file-utils-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -269,8 +269,8 @@
 @y
         <seg>desktop-file-install, desktop-file-validate,
         update-desktop-database</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

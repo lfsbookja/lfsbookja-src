@@ -211,7 +211,7 @@
         <seg>gtkdoc-check, gtkdoc-depscan, gtkdoc-fixxref, gtkdocize,
         gtkdoc-mkdb, gtkdoc-mkhtml, gtkdoc-mkman, gtkdoc-mkpdf, gtkdoc-mktmpl,
         gtkdoc-rebase, gtkdoc-scan, gtkdoc-scangobj, gtkdoc-scanobj</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/{gnome/help/gtk-doc-manual/*,gtk-doc/data,omf/gtk-doc-manual,sgml/gtk-doc}</seg>
 @z
 

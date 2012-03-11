@@ -16,7 +16,7 @@
 @x
     <title>Introduction to HTML Tidy</title>
 @y
-    <title>HTML Tidy の概要</title>
+    <title>&IntroductionTo1;HTML Tidy&IntroductionTo2;</title>
 @z
 
 @x
@@ -26,13 +26,13 @@
     errors and strives to produce visually equivalent markup that is both
     W3C compliant and compatible with most browsers.</para>
 @y
-<para>
-The <application>HTML Tidy</application> package contains a
-command line tool and libraries used to read HTML, XHTML and XML files
-and write cleaned up markup. It detects and corrects many common coding
-errors and strives to produce visually equivalent markup that is both
-W3C compliant and compatible with most browsers.
-</para>
+    <para>
+    The <application>HTML Tidy</application> package contains a
+    command line tool and libraries used to read HTML, XHTML and XML files
+    and write cleaned up markup. It detects and corrects many common coding
+    errors and strives to produce visually equivalent markup that is both
+    W3C compliant and compatible with most browsers.
+    </para>
 @z
 
 @x
@@ -44,25 +44,25 @@ W3C compliant and compatible with most browsers.
 @x
         <para>Download (HTTP): <ulink url="&tidy-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&tidy-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&tidy-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&tidy-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&tidy-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&tidy-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &tidy-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &tidy-md5sum;</para>
+        <para>&Download; MD5 sum: &tidy-md5sum;</para>
 @z
 
 @x
         <para>Download size: &tidy-size;</para>
 @y
-        <para>ダウンロードサイズ: &tidy-size;</para>
+        <para>&DownloadSize;: &tidy-size;</para>
 @z
 
 @x
@@ -85,21 +85,18 @@ W3C compliant and compatible with most browsers.
     a CVS version, then generating the autotool components and documentation.
     BLFS made no changes to the existing source files.</para>
 @y
-<para>
-<application>HTML Tidy</application> 
-の tarball は現在、開発者が生成・提供していません。
-ソースからのビルドを行う場合 <application>HTML Tidy</application>
-の開発者は、CVS からソース入手することを推奨しています。
-上に示しているソースの tarball は BLFS チームが
-CVS からソース入手し、かつ autotools のスクリプト類とドキュメントを生成した上で作り出したものです。
-既存のソースファイルに対しては何ら変更は加えていません。
-</para>
+    <para>
+    <application>HTML Tidy</application> の tarball は現在、開発者が生成、提供していません。
+    ソースからのビルドを行う場合 <application>HTML Tidy</application> の開発者は、CVS からソース入手することを推奨しています。
+    上に示しているソースの tarball は BLFS チームが CVS からソース入手し、かつ autotools のスクリプト類とドキュメントを生成した上で作り出したものです。
+    既存のソースファイルに対しては何ら変更は加えていません。
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">HTML Tidy Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">HTML Tidy の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;HTML Tidy&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -121,34 +118,30 @@ CVS からソース入手し、かつ autotools のスクリプト類とドキ�
 @x
     <title>Installation of HTML Tidy</title>
 @y
-    <title>HTML Tidy のインストール</title>
+    <title>&InstallationOf1;HTML Tidy&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>HTML Tidy</application> by
     running the following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>HTML Tidy</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>HTML Tidy</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -172,7 +165,7 @@ CVS からソース入手し、かつ autotools のスクリプト類とドキ�
 @x
     <title>Configuring HTML Tidy</title>
 @y
-    <title>HTML Tidy の設定</title>
+    <title>&Configuring1;HTML Tidy&Configuring2;</title>
 @z
 
 @x
@@ -185,10 +178,10 @@ CVS からソース入手し、かつ autotools のスクリプト類とドキ�
       <para>The absolute path of the file specified in
       <envar>$HTML_TIDY</envar>.</para>
 @y
-<para>
-The absolute path of the file specified in
-<envar>$HTML_TIDY</envar>.
-</para>
+      <para>
+      The absolute path of the file specified in
+      <envar>$HTML_TIDY</envar>.
+      </para>
 @z
 
 @x
@@ -203,13 +196,13 @@ The absolute path of the file specified in
       to <command>tidy</command> via command line parameters or the
       <option>-config &lt;file&gt;</option> parameter.</para>
 @y
-<para>
-
-The default configuration options can be set in the file defined in
-<envar>$HTML_TIDY</envar>. Additional configuration options can be passed
-to <command>tidy</command> via command line parameters or the
-<option>-config &lt;file&gt;</option> parameter.
-</para>
+      <para>
+      
+      The default configuration options can be set in the file defined in
+      <envar>$HTML_TIDY</envar>. Additional configuration options can be passed
+      to <command>tidy</command> via command line parameters or the
+      <option>-config &lt;file&gt;</option> parameter.
+      </para>
 @z
 
 @x
@@ -233,7 +226,7 @@ to <command>tidy</command> via command line parameters or the
     <seg>libtidy.{so,a}</seg>
     <seg>/usr/share/doc/tidy-&tidy-version;</seg>
 @y
-    <seg>tab2space and tidy</seg>
+    <seg>tab2space, tidy</seg>
     <seg>libtidy.{so,a}</seg>
     <seg>/usr/share/doc/tidy-&tidy-version;</seg>
 @z
@@ -248,20 +241,20 @@ to <command>tidy</command> via command line parameters or the
           <para>is a utility to expand tabs and ensure consistent line
           endings.</para>
 @y
-<para>
-
-is a utility to expand tabs and ensure consistent line
-endings.
-</para>
+          <para>
+          
+          is a utility to expand tabs and ensure consistent line
+          endings.
+          </para>
 @z
 
 @x tidy
           <para>validates, corrects, and pretty-prints HTML files.</para>
 @y
-<para>
-
-validates, corrects, and pretty-prints HTML files.
-</para>
+          <para>
+          
+          validates, corrects, and pretty-prints HTML files.
+          </para>
 @z
 
 @x libtidy.{so,a}
@@ -269,11 +262,8 @@ validates, corrects, and pretty-prints HTML files.
           functions to <command>tidy</command> and can also be called by other
           programs.</para>
 @y
-<para>
-<command>tidy</command>
-コマンドに対して <application>HTML Tidy</application>
-の API 関数を提供します。
-他のプログラムから関数を呼び出すこともできます。
-</para>
+          <para>
+          <command>tidy</command> コマンドに対して <application>HTML Tidy</application> の API 関数を提供します。
+          他のプログラムから関数を呼び出すこともできます。
+          </para>
 @z
-

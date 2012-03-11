@@ -16,7 +16,7 @@
 @x
     <title>Introduction to sharutils</title>
 @y
-    <title>sharutils の概要</title>
+    <title>&IntroductionTo1;sharutils&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&sharutils-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&sharutils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&sharutils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&sharutils-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&sharutils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&sharutils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &sharutils-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &sharutils-md5sum;</para>
+        <para>&Download; MD5 sum: &sharutils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &sharutils-size;</para>
 @y
-        <para>ダウンロードサイズ: &sharutils-size;</para>
+        <para>&DownloadSize;: &sharutils-size;</para>
 @z
 
 @x
@@ -79,7 +79,7 @@
 @x
     <title>Installation of sharutils</title>
 @y
-    <title>sharutils のインストール</title>
+    <title>&InstallationOf1;sharutils&InstallationOf2;</title>
 @z
 
 @x
@@ -129,8 +129,8 @@
         <seg>None</seg>
 @y
         <seg>shar, unshar, uudecode, uuencode</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

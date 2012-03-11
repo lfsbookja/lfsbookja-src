@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Screen</title>
 @y
-    <title>Screen の概要</title>
+    <title>&IntroductionTo1;Screen&IntroductionTo2;</title>
 @z
 
 @x
@@ -29,14 +29,14 @@
     including UTF-8. Screen sessions can be detached and resumed
     later on a different terminal.</para>
 @y
-<para><application>Screen</application> is a terminal multiplexor that
-runs several separate processes, typically interactive shells, on a single
-physical character-based terminal. Each virtual terminal emulates a DEC
-VT100 plus several ANSI X3.64 and ISO 2022 functions and also provides
-configurable input and output translation, serial port support,
-configurable logging, multi-user support, and many character encodings,
-including UTF-8. Screen sessions can be detached and resumed
-later on a different terminal.</para>
+    <para><application>Screen</application> is a terminal multiplexor that
+    runs several separate processes, typically interactive shells, on a single
+    physical character-based terminal. Each virtual terminal emulates a DEC
+    VT100 plus several ANSI X3.64 and ISO 2022 functions and also provides
+    configurable input and output translation, serial port support,
+    configurable logging, multi-user support, and many character encodings,
+    including UTF-8. Screen sessions can be detached and resumed
+    later on a different terminal.</para>
 @z
 
 @x
@@ -48,25 +48,25 @@ later on a different terminal.</para>
 @x
         <para>Download (HTTP): <ulink url="&screen-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&screen-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&screen-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&screen-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&screen-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&screen-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &screen-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &screen-md5sum;</para>
+        <para>&Download; MD5 sum: &screen-md5sum;</para>
 @z
 
 @x
         <para>Download size: &screen-size;</para>
 @y
-        <para>ダウンロードサイズ: &screen-size;</para>
+        <para>&DownloadSize;: &screen-size;</para>
 @z
 
 @x
@@ -84,7 +84,7 @@ later on a different terminal.</para>
 @x
     <bridgehead renderas="sect3">Screen Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Screen の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Screen&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -106,34 +106,30 @@ later on a different terminal.</para>
 @x
     <title>Installation of Screen</title>
 @y
-    <title>Screen のインストール</title>
+    <title>&InstallationOf1;Screen&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>Screen</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>Screen</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Screen</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -146,12 +142,12 @@ later on a different terminal.</para>
     <para><parameter>--with-socket-dir=/var/run/screen</parameter>: This option
     places the per-user sockets in a standard location.</para>
 @y
-<para>
-<parameter>--with-socket-dir=/var/run/screen</parameter>:
-
-This option
-places the per-user sockets in a standard location.
-</para>
+    <para>
+    <parameter>--with-socket-dir=/var/run/screen</parameter>:
+    
+    This option
+    places the per-user sockets in a standard location.
+    </para>
 @z
 
 @x
@@ -159,13 +155,13 @@ places the per-user sockets in a standard location.
     places the global screenrc file in <filename
     class='directory'>/etc</filename>.  </para>
 @y
-<para>
-<parameter>--with-sys-screenrc=/etc/screenrc</parameter>:
-
-This option
-places the global screenrc file in <filename
-class='directory'>/etc</filename>.  
-</para>
+    <para>
+    <parameter>--with-sys-screenrc=/etc/screenrc</parameter>:
+    
+    This option
+    places the global screenrc file in <filename
+    class='directory'>/etc</filename>.  
+    </para>
 @z
 
 @x
@@ -174,20 +170,20 @@ class='directory'>/etc</filename>.
     documentation files to the location that is used here for the global
     screenrc file.</para>
 @y
-<para>
-<command>sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%"
-{etc,doc}/*</command>:
-
-This command corrects the configuration and
-documentation files to the location that is used here for the global
-screenrc file.
-</para>
+    <para>
+    <command>sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%"
+    {etc,doc}/*</command>:
+    
+    This command corrects the configuration and
+    documentation files to the location that is used here for the global
+    screenrc file.
+    </para>
 @z
 
 @x
     <title>Configuring Screen</title>
 @y
-    <title>Screen の設定</title>
+    <title>&Configuring1;Screen&Configuring2;</title>
 @z
 
 @x
@@ -214,11 +210,11 @@ screenrc file.
       <para>You may want to look at the example configuration file that was
       installed and customize it for your needs.</para>
 @y
-<para>
-
-You may want to look at the example configuration file that was
-installed and customize it for your needs.
-</para>
+      <para>
+      
+      You may want to look at the example configuration file that was
+      installed and customize it for your needs.
+      </para>
 @z
 
 @x
@@ -243,7 +239,7 @@ installed and customize it for your needs.
         <seg>/var/run/screen</seg>
 @y
         <seg>screen</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/var/run/screen</seg>
 @z
 
@@ -257,9 +253,8 @@ installed and customize it for your needs.
           <para>is a terminal multiplexor with VT100/ANSI
           terminal emulation.</para>
 @y
-<para>
-is a terminal multiplexor with VT100/ANSI
-terminal emulation.
-</para>
+          <para>
+          is a terminal multiplexor with VT100/ANSI
+          terminal emulation.
+          </para>
 @z
-

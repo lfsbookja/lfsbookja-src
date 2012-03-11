@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Rep-gtk</title>
 @y
-    <title>Rep-gtk の概要</title>
+    <title>&IntroductionTo1;Rep-gtk&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&rep-gtk-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&rep-gtk-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&rep-gtk-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&rep-gtk-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&rep-gtk-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&rep-gtk-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &rep-gtk-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &rep-gtk-md5sum;</para>
+        <para>&Download; MD5 sum: &rep-gtk-md5sum;</para>
 @z
 
 @x
         <para>Download size: &rep-gtk-size;</para>
 @y
-        <para>ダウンロードサイズ: &rep-gtk-size;</para>
+        <para>&DownloadSize;: &rep-gtk-size;</para>
 @z
 
 @x
@@ -94,7 +94,7 @@
 @x
     <bridgehead renderas="sect3">Rep-gtk Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Rep-gtk の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Rep-gtk&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -118,16 +118,16 @@
 @x
     <title>Installation of Rep-gtk</title>
 @y
-    <title>Rep-gtk のインストール</title>
+    <title>&InstallationOf1;Rep-gtk&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>rep-gtk</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>rep-gtk</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>rep-gtk</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -139,9 +139,9 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -165,7 +165,7 @@
         <seg>Lisp bindings</seg>
         <seg>/usr/lib/rep/i686-pc-linux-gnu/gui/</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>Lisp バインディング</seg>
         <seg>/usr/lib/rep/i686-pc-linux-gnu/gui/</seg>
 @z

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Rarian</title>
 @y
-    <title>Rarian の概要</title>
+    <title>&IntroductionTo1;Rarian&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,12 +25,12 @@
     Rarian</application> is designed to be a replacement for <application>
     ScrollKeeper</application>.</para>
 @y
-<para>
-<application>Rarian</application> package is a documentation
-metadata library based on the proposed Freedesktop.org spec. <application>
-Rarian</application> is designed to be a replacement for <application>
-ScrollKeeper</application>.
-</para>
+    <para>
+    <application>Rarian</application> package is a documentation
+    metadata library based on the proposed Freedesktop.org spec. <application>
+    Rarian</application> is designed to be a replacement for <application>
+    ScrollKeeper</application>.
+    </para>
 @z
 
 @x
@@ -42,25 +42,25 @@ ScrollKeeper</application>.
 @x
         <para>Download (HTTP): <ulink url="&rarian-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&rarian-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&rarian-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&rarian-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&rarian-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&rarian-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &rarian-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &rarian-md5sum;</para>
+        <para>&Download; MD5 sum: &rarian-md5sum;</para>
 @z
 
 @x
         <para>Download size: &rarian-size;</para>
 @y
-        <para>ダウンロードサイズ: &rarian-size;</para>
+        <para>&DownloadSize;: &rarian-size;</para>
 @z
 
 @x
@@ -78,7 +78,7 @@ ScrollKeeper</application>.
 @x
     <bridgehead renderas="sect3">Rarian Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Rarian の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Rarian&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -106,32 +106,30 @@ ScrollKeeper</application>.
 @x
     <title>Installation of Rarian</title>
 @y
-    <title>Rarian のインストール</title>
+    <title>&InstallationOf1;Rarian&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>Rarian</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Rarian</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Rarian</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x

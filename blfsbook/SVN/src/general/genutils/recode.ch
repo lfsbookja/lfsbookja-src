@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Recode</title>
 @y
-    <title>Recode の概要</title>
+    <title>&IntroductionTo1;Recode&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,10 +39,10 @@
       maintained upstream. Wishlist bugs such as
       <ulink url="http://bugs.debian.org/94966"/> will never be fixed.</para>
 @y
-    <para>
-    <application>Recode</application> パッケージのアップストリームは、このパッケージのメンテナンスを止めています。
-    <ulink url="http://bugs.debian.org/94966"/> のようなバグ改修の要望一覧などは、更新されていません。
-    </para>
+      <para>
+      <application>Recode</application> パッケージのアップストリームは、このパッケージのメンテナンスを止めています。
+      <ulink url="http://bugs.debian.org/94966"/> のようなバグ改修の要望一覧などは、更新されていません。
+      </para>
 @z
 
 @x
@@ -102,7 +102,7 @@
 @x
     <bridgehead renderas="sect3">Recode Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Recode の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Recode&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -128,7 +128,7 @@
 @x
     <title>Installation of Recode</title>
 @y
-    <title>Recode のインストール</title>
+    <title>&InstallationOf1;Recode&InstallationOf2;</title>
 @z
 
 @x
@@ -203,7 +203,7 @@
 @y
         <seg>recode</seg>
         <seg>librecode.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

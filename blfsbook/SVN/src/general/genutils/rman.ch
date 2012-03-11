@@ -16,7 +16,7 @@
 @x
     <title>Introduction to rman</title>
 @y
-    <title>rman の概要</title>
+    <title>&IntroductionTo1;rman&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,13 +24,10 @@
     pages into other formats.  It can currently supports HTML, ASCII, LaTeX,
     LaTeX2e, RTF, POD, and partial DocBook XML output.</para>
 @y
-<para>
-<application>rman</application>
-は、man ページを他のフォーマットに変換するユーティリティです。
-現時点にて対応するフォーマットは、
-HTML, ASCII, LaTeX, LaTeX2e, RTF, POD, 
-また一部の DocBook XML です。
-</para>
+    <para>
+    <application>rman</application> は、man ページを他のフォーマットに変換するユーティリティです。
+    現時点にて対応するフォーマットは、HTML, ASCII, LaTeX, LaTeX2e, RTF, POD, また一部の DocBook XML です。
+    </para>
 @z
 
 @x
@@ -42,25 +39,25 @@ HTML, ASCII, LaTeX, LaTeX2e, RTF, POD,
 @x
         <para>Download (HTTP): <ulink url="&rman-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&rman-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&rman-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&rman-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&rman-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&rman-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &rman-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &rman-md5sum;</para>
+        <para>&Download; MD5 sum: &rman-md5sum;</para>
 @z
 
 @x
         <para>Download size: &rman-size;</para>
 @y
-        <para>ダウンロードサイズ: &rman-size;</para>
+        <para>&DownloadSize;: &rman-size;</para>
 @z
 
 @x
@@ -86,7 +83,7 @@ HTML, ASCII, LaTeX, LaTeX2e, RTF, POD,
 @x
     <title>Installation of rman</title>
 @y
-    <title>rman のインストール</title>
+    <title>&InstallationOf1;rman&InstallationOf2;</title>
 @z
 
 @x
@@ -95,38 +92,34 @@ HTML, ASCII, LaTeX, LaTeX2e, RTF, POD,
     same location as your <application>Xorg</application> programs.  Adjust
     the makefile to account for this:</para>
 @y
-<para>
-rman は <application>Xorg</application>
-ディストリビューションには含まれなくなりました。
-しかし各種のパッケージの中には、<application>Xorg</application>
-プログラム群と同等のディレクトリに本ユーティリティがあるものとして動作するものが残っています。
-このため Makefile を修正します。
-</para>
+    <para>
+    rman は <application>Xorg</application> ディストリビューションには含まれなくなりました。
+    しかし各種のパッケージの中には、<application>Xorg</application> プログラム群と同等のディレクトリに本ユーティリティがあるものとして動作するものが残っています。
+    このため Makefile を修正します。
+    </para>
 @z
 
 @x
     <para>Build <application>rman</application> by running the
     following command:</para>
 @y
-<para>
-以下のコマンドを実行して <application>rman</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>rman</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -150,5 +143,5 @@ rman は <application>Xorg</application>
 @x rman
           <para>is a manpage converter.</para>
 @y
-<para>man ページのコンバータ。</para>
+          <para>man ページのコンバータ。</para>
 @z
