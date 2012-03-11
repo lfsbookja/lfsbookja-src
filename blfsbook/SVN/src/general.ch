@@ -54,6 +54,11 @@
 <!ENTITY InstalledPrograms    "インストールプログラム">
 <!ENTITY InstalledLibraries   "インストールライブラリ">
 <!ENTITY InstalledDirectories "インストールディレクトリ">
+<!--
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
+-->
 <!ENTITY InstalledStylesheets "インストールスタイルシート">
 <!ENTITY InstalledObjects     "インストールオブジェクト">
 <!ENTITY ShortDescriptions    "概略説明">
