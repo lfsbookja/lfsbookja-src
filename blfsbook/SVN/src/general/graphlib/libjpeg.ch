@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libjpeg</title>
 @y
-    <title>libjpeg の概要</title>
+    <title>&IntroductionTo1;libjpeg&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libjpeg-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libjpeg-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libjpeg-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libjpeg-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libjpeg-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libjpeg-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libjpeg-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libjpeg-md5sum;</para>
+        <para>&Download; MD5 sum: &libjpeg-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libjpeg-size;</para>
 @y
-        <para>ダウンロードサイズ: &libjpeg-size;</para>
+        <para>&DownloadSize;: &libjpeg-size;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
 @x
     <title>Installation of libjpeg</title>
 @y
-    <title>libjpeg のインストール</title>
+    <title>&InstallationOf1;libjpeg&InstallationOf2;</title>
 @z
 
 @x
@@ -111,35 +111,6 @@
     </para>
 @z
 
-% @x
-%     <title>Command Explanations</title>
-% @y
-%     <title>&CommandExplanations;</title>
-% @z
-% 
-% @x
-%     <para><parameter>--enable-static --enable-shared</parameter>: These switches
-%     tell <application>libjpeg</application> to build both shared and static
-%     libraries.</para>
-% @y
-% <para>
-% <parameter>--enable-static --enable-shared</parameter>:
-% これらのパラメータは共有ライブラリとスタティックライブラリの両方をビルドすることを指示します。
-% </para>
-% @z
-% 
-% @x
-%     <title>Configuring libjpeg</title>
-% @y
-%     <title>libjpeg の設定</title>
-% @z
-% 
-% @x
-%       <title>Configuration Information</title>
-% @y
-%       <title>&ConfigInfo;</title>
-% @z
-
 @x
     <title>Contents</title>
 @y
@@ -163,7 +134,7 @@
 @y
         <seg>cjpeg, djpeg, jpegtran, rdjpgcom, wrjpgcom</seg>
         <seg>libjpeg.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

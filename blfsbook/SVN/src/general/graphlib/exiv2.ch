@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Exiv2</title>
 @y
-    <title>Exiv2 の概要</title>
+    <title>&IntroductionTo1;Exiv2&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&exiv2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&exiv2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&exiv2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&exiv2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&exiv2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&exiv2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &exiv2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &exiv2-md5sum;</para>
+        <para>&Download; MD5 sum: &exiv2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &exiv2-size;</para>
 @y
-        <para>ダウンロードサイズ: &exiv2-size;</para>
+        <para>&DownloadSize;: &exiv2-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">Exiv2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Exiv2 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Exiv2&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -99,7 +99,7 @@
 @x
     <title>Installation of Exiv2</title>
 @y
-    <title>Exiv2 のインストール</title>
+    <title>&InstallationOf1;Exiv2&InstallationOf2;</title>
 @z
 
 @x

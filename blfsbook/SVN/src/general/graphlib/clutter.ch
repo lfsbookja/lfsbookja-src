@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&clutter-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&clutter-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&clutter-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&clutter-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&clutter-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&clutter-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &clutter-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &clutter-md5sum;</para>
+        <para>&Download; MD5 sum: &clutter-md5sum;</para>
 @z
 
 @x
         <para>Download size: &clutter-size;</para>
 @y
-        <para>ダウンロードサイズ: &clutter-size;</para>
+        <para>&DownloadSize;: &clutter-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">clutter Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">clutter の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;clutter&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -136,7 +136,7 @@
 @x
     <title>Installation of clutter</title>
 @y
-    <title>clutter のインストール</title>
+    <title>&InstallationOf1;clutter&InstallationOf2;</title>
 @z
 
 @x
@@ -215,7 +215,7 @@
         <seg>/usr/{include/clutter-1.0/{cally,clutter/{glx,x11}},
         share/gtk-doc/html/{cally,clutter}}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libclutter-glx-1.0.so</seg>
         <seg>/usr/{include/clutter-1.0/{cally,clutter/{glx,x11}},
         share/gtk-doc/html/{cally,clutter}}</seg>

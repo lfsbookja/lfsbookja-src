@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libpng</title>
 @y
-    <title>libpng の概要</title>
+    <title>&IntroductionTo1;libpng&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libpng-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libpng-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libpng-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libpng-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libpng-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libpng-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libpng-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libpng-md5sum;</para>
+        <para>&Download; MD5 sum: &libpng-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libpng-size;</para>
 @y
-        <para>ダウンロードサイズ: &libpng-size;</para>
+        <para>&DownloadSize;: &libpng-size;</para>
 @z
 
 @x
@@ -108,7 +108,7 @@
 @x
     <title>Installation of libpng</title>
 @y
-    <title>libpng のインストール</title>
+    <title>&InstallationOf1;libpng&InstallationOf2;</title>
 @z
 
 @x

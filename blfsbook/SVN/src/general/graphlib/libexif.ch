@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libexif</title>
 @y
-    <title>libexif の概要</title>
+    <title>&IntroductionTo1;libexif&IntroductionTo2;</title>
 @z
 
 @x
@@ -26,13 +26,12 @@
     about the image. All EXIF tags described in EXIF standard 2.1 are
     supported.</para>
 @y
-<para>
-<application>libexif</application>
-パッケージは、EXIF データの解析、編集、保存を行うライブラリを提供します。
-たいていのデジタルカメラは EXIF ファイルを生成します。
-このファイルは JPEG ファイルにタグが追加されたもので、そのタグ内にイメージに関する情報が含まれます。
-EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされています。
-</para>
+    <para>
+    <application>libexif</application> パッケージは、EXIF データの解析、編集、保存を行うライブラリを提供します。
+    たいていのデジタルカメラは EXIF ファイルを生成します。
+    このファイルは JPEG ファイルにタグが追加されたもので、そのタグ内にイメージに関する情報が含まれます。
+    EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされています。
+    </para>
 @z
 
 @x
@@ -44,25 +43,25 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
 @x
         <para>Download (HTTP): <ulink url="&libexif-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libexif-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libexif-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libexif-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libexif-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libexif-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libexif-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libexif-md5sum;</para>
+        <para>&Download; MD5 sum: &libexif-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libexif-size;</para>
 @y
-        <para>ダウンロードサイズ: &libexif-size;</para>
+        <para>&DownloadSize;: &libexif-size;</para>
 @z
 
 @x
@@ -80,7 +79,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
 @x
     <bridgehead renderas="sect3">libexif Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libexif の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libexif&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,32 +103,32 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
 @x
     <title>Installation of libexif</title>
 @y
-    <title>libexif のインストール</title>
+    <title>&InstallationOf1;libexif&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libexif</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libexif</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libexif</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -139,14 +138,12 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
     <filename class='directory'>doc</filename> directory that can be unpacked
     into /usr/share/doc/libexif-&libexif-version;.</para>
 @y
-<para>
-上に示した依存パッケージをインストールしている場合は、ドキュメントがビルドされインストールされます。
-一方、その依存パッケージをインストールしていない場合、ソースツリー内の
-<filename class='directory'>doc</filename>
-ディレクトリに圧縮された tarball があり、これを利用することができます。
-その場合は圧縮された tarball を /usr/share/doc/libexif-&libexif-version;
-に伸張 (解凍) してください。
-</para>
+    <para>
+    上に示した依存パッケージをインストールしている場合は、ドキュメントがビルドされインストールされます。
+    一方、その依存パッケージをインストールしていない場合、ソースツリー内の <filename
+    class='directory'>doc</filename> ディレクトリに圧縮された tarball があり、これを利用することができます。
+    その場合は圧縮された tarball を /usr/share/doc/libexif-&libexif-version; に伸張 (解凍) してください。
+    </para>
 @z
 
 @x
@@ -171,7 +168,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
         <seg>/usr/include/libexif and
         /usr/share/doc/libexif-&libexif-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libexif.{so,a}</seg>
         <seg>/usr/include/libexif,
         /usr/share/doc/libexif-&libexif-version;</seg>
@@ -187,7 +184,7 @@ EXIF 標準 2.1 にて規定される EXIF タグがすべてサポートされ�
           <para>contains functions used for parsing, editing, and saving
           EXIF data.</para>
 @y
-<para>
-EXIF データの解析、編集、保存を行うための関数を提供します。
-</para>
+          <para>
+          EXIF データの解析、編集、保存を行うための関数を提供します。
+          </para>
 @z

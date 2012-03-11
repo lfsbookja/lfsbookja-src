@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libmng</title>
 @y
-    <title>libmng の概要</title>
+    <title>&IntroductionTo1;libmng&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,12 +24,10 @@
     programs wanting to read and write Multiple-image Network Graphics
     (MNG) files which are the animation equivalents to PNG files.</para>
 @y
-<para>
-<application>libmng</application>
-ライブラリは、MNG (Multiple-image Network Graphics)
-ファイルの入出力を行うプログラムが利用するものです。
-このファイルは PNG ファイルをアニメーション化したものです。
-</para>
+    <para>
+    <application>libmng</application> ライブラリは、MNG (Multiple-image Network Graphics) ファイルの入出力を行うプログラムが利用するものです。
+    このファイルは PNG ファイルをアニメーション化したものです。
+    </para>
 @z
 
 @x
@@ -41,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libmng-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libmng-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libmng-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libmng-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libmng-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libmng-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libmng-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libmng-md5sum;</para>
+        <para>&Download; MD5 sum: &libmng-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libmng-size;</para>
 @y
-        <para>ダウンロードサイズ: &libmng-size;</para>
+        <para>&DownloadSize;: &libmng-size;</para>
 @z
 
 @x
@@ -77,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">libmng Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libmng の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libmng&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -101,17 +99,16 @@
 @x
     <title>Installation of libmng</title>
 @y
-    <title>libmng のインストール</title>
+    <title>&InstallationOf1;libmng&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libmng</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libmng</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libmng</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -123,10 +120,9 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -140,23 +136,22 @@
     autotools shipped with this package. The Linux <filename>Makefile</filename>
     is copied to the root of the source tree, facilitating the installation.</para>
 @y
-<para>
-<command>cp makefiles/makefile.linux Makefile</command>:
-このパッケージには autotools が含まれていません。
-Linux に対する <filename>Makefile</filename>
-をソースツリーのルートからコピーして、インストールに利用します。
-</para>
+    <para>
+    <command>cp makefiles/makefile.linux Makefile</command>:
+    このパッケージには autotools が含まれていません。
+    Linux に対する <filename>Makefile</filename> をソースツリーのルートからコピーして、インストールに利用します。
+    </para>
 @z
 
 @x
     <para><command>install ...</command>: The documentation files are not
     installed by the installation procedure, so they are copied manually.</para>
 @y
-<para>
-<command>install ...</command>:
-インストール処理において文書ファイルはインストールされません。
-したがって手動によりコピーを行います。
-</para>
+    <para>
+    <command>install ...</command>:
+    インストール処理において文書ファイルはインストールされません。
+    したがって手動によりコピーを行います。
+    </para>
 @z
 
 @x
@@ -180,7 +175,7 @@ Linux に対する <filename>Makefile</filename>
         <seg>libmng.{so,a}</seg>
         <seg>/usr/share/doc/libmng-&libmng-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libmng.{so,a}</seg>
         <seg>/usr/share/doc/libmng-&libmng-version;</seg>
 @z
@@ -196,8 +191,8 @@ Linux に対する <filename>Makefile</filename>
           MNG files which are animation files without the patent problems associated
           with certain other formats.</para>
 @y
-<para>
-MNG ファイルの入出力を行うプログラムに対して機能を提供します。
-このファイルはアニメーションファイルであり、他のフォーマットに比べると商標権などの問題が一切ありません。
-</para>
+          <para>
+          MNG ファイルの入出力を行うプログラムに対して機能を提供します。
+          このファイルはアニメーションファイルであり、他のフォーマットに比べると商標権などの問題が一切ありません。
+          </para>
 @z

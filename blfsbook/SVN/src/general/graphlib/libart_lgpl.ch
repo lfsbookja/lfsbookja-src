@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libart_lgpl</title>
 @y
-    <title>libart_lgpl の概要</title>
+    <title>&IntroductionTo1;libart_lgpl&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,11 +24,11 @@
     <filename class="libraryfile">libart</filename> libraries. These are
     useful for high-performance 2D graphics.</para>
 @y
-<para>
-<application>libart_lgpl</application> パッケージは 
-<filename class="libraryfile">libart</filename> ライブラリを提供します。
-これは高性能な二次元グラフィックに用いられます。
-</para>
+    <para>
+    <application>libart_lgpl</application> パッケージは 
+    <filename class="libraryfile">libart</filename> ライブラリを提供します。
+    これは高性能な二次元グラフィックに用いられます。
+    </para>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libart_lgpl-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libart_lgpl-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libart_lgpl-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libart_lgpl-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libart_lgpl-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libart_lgpl-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libart_lgpl-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libart_lgpl-md5sum;</para>
+        <para>&Download; MD5 sum: &libart_lgpl-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libart_lgpl-size;</para>
 @y
-        <para>ダウンロードサイズ: &libart_lgpl-size;</para>
+        <para>&DownloadSize;: &libart_lgpl-size;</para>
 @z
 
 @x
@@ -84,33 +84,30 @@
 @x
     <title>Installation of libart_lgpl</title>
 @y
-    <title>libart_lgpl のインストール</title>
+    <title>&InstallationOf1;libart_lgpl&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libart_lgpl</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libart_lgpl</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libart_lgpl</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -150,9 +147,8 @@
           <application>libgnomecanvas</application> and as a graphics support
           library for many other packages.</para>
 @y
-<para>
-<application>libgnomecanvas</application>
-に対しての、アンチエイリアス機能を提供するエンジンとして用いられます。
-他のパッケージに対しても、グラフィックサポートを行うライブラリとして利用されます。
-</para>
+          <para>
+          <application>libgnomecanvas</application> に対しての、アンチエイリアス機能を提供するエンジンとして用いられます。
+          他のパッケージに対しても、グラフィックサポートを行うライブラリとして利用されます。
+          </para>
 @z

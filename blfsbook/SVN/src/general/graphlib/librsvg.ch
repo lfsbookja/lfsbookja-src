@@ -16,7 +16,7 @@
 @x
     <title>Introduction to librsvg</title>
 @y
-    <title>librsvg の概要</title>
+    <title>&IntroductionTo1;librsvg&IntroductionTo2;</title>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">librsvg Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">librsvg の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;librsvg&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -126,7 +126,7 @@
 @x
     <title>Installation of librsvg</title>
 @y
-    <title>librsvg のインストール</title>
+    <title>&InstallationOf1;librsvg&InstallationOf2;</title>
 @z
 
 @x

@@ -22,7 +22,7 @@
 @x
     <title>Introduction to FreeType2</title>
 @y
-    <title>FreeType2 の概要</title>
+    <title>&IntroductionTo1;FreeType2&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&freetype2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&freetype2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&freetype2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&freetype2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&freetype2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&freetype2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &freetype2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &freetype2-md5sum;</para>
+        <para>&Download; MD5 sum: &freetype2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &freetype2-size;</para>
 @y
-        <para>ダウンロードサイズ: &freetype2-size;</para>
+        <para>&DownloadSize;: &freetype2-size;</para>
 @z
 
 @x
@@ -92,25 +92,25 @@
 @x
         <para>Download (HTTP): <ulink url="&freetype2-doc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&freetype2-doc-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&freetype2-doc-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&freetype2-doc-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&freetype2-doc-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&freetype2-doc-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &freetype2-doc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &freetype2-doc-md5sum;</para>
+        <para>&Download; MD5 sum: &freetype2-doc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &freetype2-doc-size;</para>
 @y
-        <para>ダウンロードサイズ: &freetype2-doc-size;</para>
+        <para>&DownloadSize;: &freetype2-doc-size;</para>
 @z
 
 @x
@@ -124,7 +124,7 @@
 @x
     <title>Installation of FreeType2</title>
 @y
-    <title>FreeType2 のインストール</title>
+    <title>&InstallationOf1;FreeType2&InstallationOf2;</title>
 @z
 
 @x

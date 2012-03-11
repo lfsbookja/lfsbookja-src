@@ -16,17 +16,16 @@
 @x
     <title>Introduction to AAlib</title>
 @y
-    <title>AAlib の概要</title>
+    <title>&IntroductionTo1;AAlib&IntroductionTo2;</title>
 @z
 
 @x
     <para><application>AAlib</application> is a library to render any graphic into
     ASCII Art.</para>
 @y
-<para>
-<application>AAlib</application>
-は、さまざまなグラフィックをアスキーアート (ASCII Art) に変換するライブラリです。
-</para>
+    <para>
+    <application>AAlib</application> は、さまざまなグラフィックをアスキーアート (ASCII Art) に変換するライブラリです。
+    </para>
 @z
 
 @x
@@ -38,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&aalib-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&aalib-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&aalib-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&aalib-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&aalib-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&aalib-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &aalib-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &aalib-md5sum;</para>
+        <para>&Download; MD5 sum: &aalib-md5sum;</para>
 @z
 
 @x
         <para>Download size: &aalib-size;</para>
 @y
-        <para>ダウンロードサイズ: &aalib-size;</para>
+        <para>&DownloadSize;: &aalib-size;</para>
 @z
 
 @x
@@ -74,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">AAlib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">AAlib の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;AAlib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -100,34 +99,30 @@
 @x
     <title>Installation of AAlib</title>
 @y
-    <title>AAlib のインストール</title>
+    <title>&InstallationOf1;AAlib&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>AAlib</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>AAlib</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>AAlib</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -153,7 +148,7 @@
 @y
         <seg>aafire, aainfo, aalib-config, aasavefont, aatest</seg>
         <seg>libaa.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -166,10 +161,10 @@
           <para>is little toy of <application>AAlib</application>, rendering
           an animated fire in ASCII Art.</para>
 @y
-<para>
-is little toy of <application>AAlib</application>, rendering
-an animated fire in ASCII Art.
-</para>
+          <para>
+          is little toy of <application>AAlib</application>, rendering
+          an animated fire in ASCII Art.
+          </para>
 @z
 
 @x aainfo

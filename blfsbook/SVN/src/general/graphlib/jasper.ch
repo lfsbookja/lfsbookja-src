@@ -24,7 +24,7 @@
 @x
     <title>Introduction to JasPer</title>
 @y
-    <title>JasPer の概要</title>
+    <title>&IntroductionTo1;JasPer&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&jasper-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&jasper-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&jasper-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&jasper-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&jasper-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&jasper-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &jasper-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &jasper-md5sum;</para>
+        <para>&Download; MD5 sum: &jasper-md5sum;</para>
 @z
 
 @x
         <para>Download size: &jasper-size;</para>
 @y
-        <para>ダウンロードサイズ: &jasper-size;</para>
+        <para>&DownloadSize;: &jasper-size;</para>
 @z
 
 @x
@@ -96,7 +96,7 @@
 @x
     <bridgehead renderas="sect3">JasPer Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">JasPer の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;JasPer&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -130,7 +130,7 @@
 @x
     <title>Installation of JasPer</title>
 @y
-    <title>JasPer のインストール</title>
+    <title>&InstallationOf1;JasPer&InstallationOf2;</title>
 @z
 
 @x

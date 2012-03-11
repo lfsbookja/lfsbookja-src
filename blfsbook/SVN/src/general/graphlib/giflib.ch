@@ -16,7 +16,7 @@
 @x
     <title>Introduction to giflib</title>
 @y
-    <title>giflib の概要</title>
+    <title>&IntroductionTo1;giflib&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,19 +42,19 @@
 @x
         <para>Download (HTTP): <ulink url="&giflib-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&giflib-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&giflib-download-http;"/></para>
 @z
 
 @x
         <para>Download (HTTP) MD5 sum: &giflib-http-md5sum;</para>
 @y
-        <para>ダウンロード (HTTP) MD5 sum: &giflib-http-md5sum;</para>
+        <para>&Download; (HTTP) MD5 sum: &giflib-http-md5sum;</para>
 @z
 
 @x
         <para>Download (HTTP) size: &giflib-http-size;</para>
 @y
-        <para>ダウンロード (HTTP) size: &giflib-http-size;</para>
+        <para>&DownloadSize;: &giflib-http-size;</para>
 @z
 
 @x
@@ -72,7 +72,7 @@
 @x
     <bridgehead renderas="sect3">giflib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">giflib の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;giflib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -102,7 +102,7 @@
 @x
     <title>Installation of giflib</title>
 @y
-    <title>giflib のインストール</title>
+    <title>&InstallationOf1;giflib&InstallationOf2;</title>
 @z
 
 @x
@@ -188,4 +188,3 @@
           Epson タイププリンター上に保存されている GIF ファイルのイメージをダンプします。
           </para>
 @z
-

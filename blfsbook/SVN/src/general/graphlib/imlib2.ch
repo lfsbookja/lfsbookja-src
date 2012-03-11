@@ -16,17 +16,16 @@
 @x
     <title>Introduction to Imlib2</title>
 @y
-    <title>Imlib2 の概要</title>
+    <title>&IntroductionTo1;Imlib2&IntroductionTo2;</title>
 @z
 
 @x
     <para><application>Imlib2</application> is a graphics library for fast file
     loading, saving, rendering and manipulation.</para>
 @y
-<para>
-<application>Imlib2</application>
-は、グラフィックに関するファイルのロード、保存、レンダリングなどを高速に行うライブラリを提供します。
-</para>
+    <para>
+    <application>Imlib2</application> は、グラフィックに関するファイルのロード、保存、レンダリングなどを高速に行うライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -38,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&imlib2-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&imlib2-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&imlib2-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&imlib2-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&imlib2-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&imlib2-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &imlib2-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &imlib2-md5sum;</para>
+        <para>&Download; MD5 sum: &imlib2-md5sum;</para>
 @z
 
 @x
         <para>Download size: &imlib2-size;</para>
 @y
-        <para>ダウンロードサイズ: &imlib2-size;</para>
+        <para>&DownloadSize;: &imlib2-size;</para>
 @z
 
 @x
@@ -74,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">Imlib2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Imlib2 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Imlib2&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -120,32 +119,30 @@
 @x
     <title>Installation of Imlib2</title>
 @y
-    <title>Imlib2 のインストール</title>
+    <title>&InstallationOf1;Imlib2&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>Imlib2</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Imlib2</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Imlib2</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -158,10 +155,10 @@
     <para><parameter>--without-x</parameter>: Add this parameter if you do not
     have an X Window System installed.</para>
 @y
-<para>
-<parameter>--without-x</parameter>:
-X ウィンドウシステムをインストールしていない場合は、このパラメーターを指定します。
-</para>
+    <para>
+    <parameter>--without-x</parameter>:
+    X ウィンドウシステムをインストールしていない場合は、このパラメーターを指定します。
+    </para>
 @z
 
 @x
@@ -204,7 +201,7 @@ X ウィンドウシステムをインストールしていない場合は、こ
           <para>provides the functions for programs to deal with various
           image data formats.</para>
 @y
-<para>
-さまざまなイメージデータフォーマットを取り扱うプログラムに対しての関数を提供します。
-</para>
+          <para>
+          さまざまなイメージデータフォーマットを取り扱うプログラムに対しての関数を提供します。
+          </para>
 @z
