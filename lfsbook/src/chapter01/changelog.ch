@@ -48,6 +48,28 @@
 @z
 
 @x
+      <para>2012-03-11</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Workaround an issue in Gettext's configure script
+           that can cause it to hang on certain hosts when determining the path 
+           for Emacs Lisp files on certain hosts.  Reported by and fix provided
+           by DJ Lucas.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-03-11</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Gettext の configure スクリプトへの対処を行う。
+           特定のホストにて Emacs Lisp ファイルのありかを探す際にハングすることがあるため。
+           DJ Lucas の報告および修正による。
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-06</para>
       <itemizedlist>
          <listitem>

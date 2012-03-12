@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,14 +21,14 @@
 @y
   <indexterm zone="ch-tools-gettext">
     <primary sortas="a-Gettext">Gettext</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Gettext</title>
 @y
-    <title>Gettext のインストール</title>
+    <title>&InstallationOf1;Gettext&InstallationOf2;</title>
 @z
 
 @x
@@ -43,13 +43,23 @@
 @x
     <para>Prepare Gettext for compilation:</para>
 @y
-    <para>Gettext をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Gettext&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure option:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
+@z
+
+@x EMACS="no"
+          <para>This prevents the configure script from determining where to
+          install Emacs Lisp files as the test is known to hang on some hosts.
+          </para>
+@y
+          <para>
+          特定のホストにて configure スクリプトが Emacs Lisp ファイルを見出せずにハングすることがあるため、これを回避します。
+          </para>
 @z
 
 @x
@@ -64,7 +74,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -90,6 +100,6 @@
     <xref linkend="contents-gettext" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-gettext" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-gettext" role=""/>&Details2;
     </para>
 @z
