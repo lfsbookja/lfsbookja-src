@@ -47,7 +47,7 @@ udev-config:
 
 blfs: html wget-list
 
-html: $(BASEDIR)/index.html
+html: $(BASEDIR)/index.html jchangelog
 $(BASEDIR)/index.html: $(RENDERTMP)/blfs-html.xml
 	@echo "Generating chunked XHTML files..."
 	$(XSLTPROC) --nonet -stringparam chunk.quietly $(CHUNK_QUIET) \
@@ -73,6 +73,11 @@ $(BASEDIR)/index.html: $(RENDERTMP)/blfs-html.xml
 	  bash $(BOOKdir)/obfuscate.sh $$filename; \
 	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
 	done;
+
+jchangelog:
+	cd introduction/welcome && make jchangelog-2008.txt jchangelog-2009.txt\
+		jchangelog-2010.txt jchangelog-2011.txt
+	$(Q)cp -pv introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
 
 $(RENDERTMP)/blfs-html.xml: $(RENDERTMP)/blfs-full.xml
 	@echo "Generating profiled XML for XHTML..."

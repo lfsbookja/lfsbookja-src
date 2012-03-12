@@ -163,23 +163,12 @@
 
 @x
     <para><command>sed -i ... include/builddefs.in</command>: This command
-    changes the documentation directory to a versioned directory and provides
-    for a DESTDIR installation.</para>
+    modifies the documentation directory so that it is a versioned
+    directory.</para>
 @y
     <para>
     <command>sed -i ... include/builddefs.in</command>:
-    このコマンドは、ドキュメントのインストールディレクトリを変更するものです。
-    バージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
-    </para>
-@z
-
-@x
-    <para><command>chmod ...</command>: This command modifies the permissions
-    of installed library files to standards.</para>
-@y
-    <para>
-    <command>chmod ...</command>:
-    このコマンドは、インストールディレクトリを標準的なパーミッションに設定し直します。
+    このコマンドは、ドキュメントのインストールディレクトリを、バージョン番号を有したディレクトリに変更するものです。
     </para>
 @z
 

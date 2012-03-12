@@ -122,34 +122,13 @@
 @z
 
 @x
-    <para><command>cat &gt; test/sort-getfattr-output ... EOF</command>: This 
-    command creates a missing test script.</para>
-@y
-    <para>
-    <command>cat &gt; test/sort-getfattr-output ... EOF</command>:
-    このコマンドは不足しているテストスクリプトを生成します。
-    </para>
-@z
-
-@x
     <para><command>sed ... include/builddefs.in</command>: This command
     modifies the documentation directory so that it is a versioned
-    directory and also adds support for a DESTDIR installation.</para>
+    directory.</para>
 @y
     <para>
     <command>sed ... include/builddefs.in</command>:
-    このコマンドは、ドキュメントのインストールディレクトリを変更するものです。
-    バージョン番号を有したディレクトリ名とするものであり、また DESTDIR に対応したインストールをサポートするためです。
-    </para>
-@z
-
-@x
-    <para><command>chmod ...</command>: This command modifies the permissions
-    of installed library files to standards.</para>
-@y
-    <para>
-    <command>chmod ...</command>:
-    このコマンドは、インストールされたライブラリファイルのパーミッションを標準的なものに変更します。
+    このコマンドは、ドキュメントのインストールディレクトリを、バージョン番号を有したディレクトリに変更するものです。
     </para>
 @z
 

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to D-BUS</title>
 @y
-    <title>D-BUS の概要</title>
+    <title>&IntroductionTo1;D-BUS&IntroductionTo2;</title>
 @z
 
 @x
@@ -50,25 +50,25 @@
 @x
         <para>Download (HTTP): <ulink url="&dbus-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&dbus-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&dbus-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&dbus-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&dbus-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&dbus-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &dbus-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &dbus-md5sum;</para>
+        <para>&Download; MD5 sum: &dbus-md5sum;</para>
 @z
 
 @x
         <para>Download size: &dbus-size;</para>
 @y
-        <para>ダウンロードサイズ: &dbus-size;</para>
+        <para>&DownloadSize;: &dbus-size;</para>
 @z
 
 @x
@@ -86,7 +86,7 @@
 @x
     <bridgehead renderas="sect3">D-BUS Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">D-BUS の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;D-BUS&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,15 +105,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="xorg7-lib"/>,
       <xref linkend="dbus-glib"/> (to run tests), and
       <xref linkend="doxygen"/> (to generate the API documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="xorg7-lib"/>,
-      <xref linkend="dbus-glib"/> (テスト実行のため),
+      <xref linkend="dbus-glib"/> (テスト実行のため), and
       <xref linkend="doxygen"/> (API ドキュメント生成時に必要)
     </para>
 @z
@@ -140,7 +138,7 @@
 @x
     <title>Kernel Configuration</title>
 @y
-    <title>カーネル設定</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
@@ -156,7 +154,7 @@
 @x
     <title>Installation of D-BUS</title>
 @y
-    <title>D-BUS のインストール</title>
+    <title>&InstallationOf1;D-BUS&InstallationOf2;</title>
 @z
 
 @x
@@ -301,7 +299,7 @@
 @x
     <title>Configuring dbus</title>
 @y
-    <title>dbus の設定</title>
+    <title>&Configuring1;dbus&Configuring2;</title>
 @z
 
 @x
@@ -363,7 +361,7 @@
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x

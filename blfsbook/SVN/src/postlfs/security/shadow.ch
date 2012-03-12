@@ -88,12 +88,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="linux-pam"/> and/or
+    <para role="required"><xref linkend="linux-pam"/> or
     <xref linkend="cracklib"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="linux-pam"/> と
-    <xref linkend="cracklib"/> の両方またはいずれか。</para>
+    <para role="required"><xref linkend="linux-pam"/> または
+    <xref linkend="cracklib"/></para>
 @z
 
 @x
@@ -206,9 +206,9 @@
 @z
 
 @x
-    <para><command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512'
+    <para><command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' 
     -e 's@/var/spool/mail@/var/mail@' etc/login.defs</command>:
-    Instead of using the default 'crypt' method, this command modifies the
+    Instead of using the default 'DES' method, this command modifies the
     installation to use the more secure 'SHA512' method of hashing passwords,
     which also allows passwords longer than eight characters. It also changes
     the obsolete <filename class="directory">/var/spool/mail</filename>
@@ -219,7 +219,7 @@
     <para>
     <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@'
     -e 's@/var/spool/mail@/var/mail@' etc/login.defs</command>:
-    デフォルトで採用されている '暗号化' メソッドではなく、よりセキュアな 'SHA512' メソッドを使ったハッシュパスワードをインストールするように変更します。
+    デフォルトで採用されている 'DES' メソッドではなく、よりセキュアな 'SHA512' メソッドを使ったハッシュパスワードをインストールするように変更します。
     これによりパスワードにて8文字以上の設定が可能となります。
     またユーザーのメールボックスの収容ディレクトリとして、古くなった <filename
     class="directory">/var/spool/mail</filename> ではなく <filename
@@ -321,7 +321,7 @@
       information. For information specific to integrating
       <application>Shadow</application>, <application>Linux-PAM</application>
       and <application>CrackLib</application>, you can visit the following
-      links:</para>
+      link:</para>
 @y
       <para>Configuring your system to use <application>Linux-PAM</application>
       can be a complex task. The information below will provide a basic setup
@@ -332,7 +332,7 @@
       information. For information specific to integrating
       <application>Shadow</application>, <application>Linux-PAM</application>
       and <application>CrackLib</application>, you can visit the following
-      links:</para>
+      link:</para>
 @z
 
 @x
@@ -589,42 +589,6 @@
         with the <filename>/etc/security/limits.conf</filename> file. Rename
         the <filename>/etc/limits</filename> file using the following
         command:</para>
-@z
-
-@x
-        <title>Configuring Default Environment</title>
-@y
-        <title>Configuring Default Environment</title>
-@z
-
-@x
-          <para>During previous configuration, several items were removed from
-          <filename>/etc/login.defs</filename>.  Some of these items are now
-          controlled by the <filename class='libraryfile'>pam_env.so</filename>
-          module and the <filename>/etc/security/pam_env.conf</filename>
-          configuration file.  In particular, the default path has been
-          changed.  To recover your default path, execute the following
-          commands:</para>
-@y
-          <para>During previous configuration, several items were removed from
-          <filename>/etc/login.defs</filename>.  Some of these items are now
-          controlled by the <filename class='libraryfile'>pam_env.so</filename>
-          module and the <filename>/etc/security/pam_env.conf</filename>
-          configuration file.  In particular, the default path has been
-          changed.  To recover your default path, execute the following
-          commands:</para>
-@z
-
-@x
-            <para>The ENV_SUPATH option used to modify root's default path
-            does not work with PAM. You have to set the path in root's login
-            scripts instead.
-            </para>
-@y
-            <para>The ENV_SUPATH option used to modify root's default path
-            does not work with PAM. You have to set the path in root's login
-            scripts instead.
-            </para>
 @z
 
 @x

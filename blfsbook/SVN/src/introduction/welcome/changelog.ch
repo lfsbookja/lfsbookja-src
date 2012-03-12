@@ -45,19 +45,40 @@
   <para>
   最新リリース: &version; &ndash; &releasedate;
   </para>
-
-  <note>
-   <title>日本語訳情報</title>
-   <para>
-    これ以下に示す変更履歴 (ChangeLog) の一覧は、特定の日付以降に訳出を開始しており、それ以前の分については今のところ訳出していません。
-   </para>
-  </note>
 @z
 
 @x
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴</title>
+@z
+
+@x
+      <para>March 11th, 2012</para>
+@y
+      <para>2012/03/11</para>
+@z
+
+@x
+      <para>March 10th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - upgrade to kdeadmin 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Gtk+-2.24.10</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - kdeadmin 4.8.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Gtk+-2.24.10</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x
@@ -386,8 +407,8 @@
   <para><ulink url="&changelogs;/changelog-2009.txt">Changelog for 2009</ulink></para>
   <para><ulink url="&changelogs;/changelog-2008.txt">Changelog for 2008</ulink></para>
 @y
-  <para><ulink url="&changelogs;/changelog-2011.txt">Changelog for 2011</ulink></para>
-  <para><ulink url="&changelogs;/changelog-2010.txt">Changelog for 2010</ulink></para>
-  <para><ulink url="&changelogs;/changelog-2009.txt">Changelog for 2009</ulink></para>
-  <para><ulink url="&changelogs;/changelog-2008.txt">Changelog for 2008</ulink></para>
+  <para><ulink url="jchangelog-2011.txt">変更履歴 2011</ulink></para>
+  <para><ulink url="jchangelog-2010.txt">変更履歴 2010</ulink></para>
+  <para><ulink url="jchangelog-2009.txt">変更履歴 2009</ulink></para>
+  <para><ulink url="jchangelog-2008.txt">変更履歴 2008</ulink></para>
 @z
