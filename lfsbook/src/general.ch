@@ -8,16 +8,16 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version "SVN-20120311">
-<!ENTITY releasedate "Mar 11, 2012">
+<!ENTITY version "SVN-20120314">
+<!ENTITY releasedate "Mar 14, 2012">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version "SVN-20120311">
-<!ENTITY releasedate "2012年3月11日">
-<!ENTITY jversion "20120312">
+<!ENTITY version "SVN-20120314">
+<!ENTITY releasedate "2012年3月14日">
+<!ENTITY jversion "20120315">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
@@ -64,6 +64,7 @@
 <!ENTITY Details1             "本パッケージの詳細は ">
 <!ENTITY Details2             " を参照してください。">
 
-<!ENTITY Tools                "ツール">
+<!ENTITY Homepage             "ホームページ">
 <!ENTITY Download             "ダウンロード">
+<!ENTITY Tools                "ツール">
 @z

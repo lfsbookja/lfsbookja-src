@@ -112,20 +112,6 @@
 @z
 
 @x
-      <term>GCC Cross Compile Patch - <token>&gcc-crosscompile-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&gcc-crosscompile-patch;"/></para>
-        <para>MD5 sum: <literal>&gcc-crosscompile-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>GCC Cross Compile Patch - <token>&gcc-crosscompile-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&gcc-crosscompile-patch;"/></para>
-        <para>MD5 sum: <literal>&gcc-crosscompile-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>GCC Startfiles Fix Patch - <token>&gcc-startfiles-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&gcc-startfiles-patch;"/></para>

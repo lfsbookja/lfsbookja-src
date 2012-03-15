@@ -48,6 +48,47 @@
 @z
 
 @x
+      <para>2012-03-14</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Remove GCC's cross-compile patch as it isn't
+           required.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Apply new upstream patches for Bash. Fixes
+           <ulink url="&lfs-ticket-root;3037">#3037</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.2.11. Fixes
+           <ulink url="&lfs-ticket-root;3036">#3036</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Man-Pages-3.37. Fixes
+           <ulink url="&lfs-ticket-root;3034">#3034</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-03-14</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - GCC のパッチが不要となったため削除。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Bash にてアップストリームによる新しいパッチを追加。
+           <ulink url="&lfs-ticket-root;3037">#3037</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-3.2.11 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3036">#3036</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Man-Pages-3.37 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3034">#3034</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-11</para>
       <itemizedlist>
          <listitem>

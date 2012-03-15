@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,7 +34,7 @@
 @x
     <title>Installation of Cross GCC</title>
 @y
-    <title>クロスコンパイル版 GCC のインストール</title>
+    <title>&InstallationOf1;クロスコンパイル版 GCC&InstallationOf2;</title>
 @z
 
 @x
@@ -67,15 +67,15 @@
     </para></note>
 @z
 
-@x
-<para>Apply a patch that will allow the building of the libiberty and zlib
-target libraries to be disabled as these do not build correctly in a
-cross-compiled environment:</para>
-@y
-<para>
-クロスコンパイル時に libiberty や zlib は正しくビルド出来ないため、これらをビルドしないようにするパッチを適用します。
-</para>
-@z
+% @x
+% <para>Apply a patch that will allow the building of the libiberty and zlib
+% target libraries to be disabled as these do not build correctly in a
+% cross-compiled environment:</para>
+% @y
+% <para>
+% クロスコンパイル時に libiberty や zlib は正しくビルド出来ないため、これらをビルドしないようにするパッチを適用します。
+% </para>
+% @z
 
 @x
     <para>The GCC documentation recommends building GCC outside of the
@@ -89,13 +89,13 @@ cross-compiled environment:</para>
 @x
     <para>Prepare GCC for compilation:</para>
 @y
-    <para>GCC をコンパイルするための準備を行います。</para>
+    <para>&PreparePackage1;GCC&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
 @z
 
 @x
@@ -111,14 +111,13 @@ cross-compiled environment:</para>
 
 @x
           <para>These switches disable support for the decimal floating point
-          extension, threading, libmudflap, libssp and libgomp, libquadmath,
-          libiberty and zlib respectively. These features will fail to compile
-          when building a cross-compiler and are not necessary for the task of
-          cross-compiling the temporary libc.</para>
+          extension, threading, libmudflap, libssp and libgomp and libquadmath
+          respectively. These features will fail to compile when building a
+          cross-compiler and are not necessary for the task of cross-compiling
+          the temporary libc.</para>
 @y
           <para>
-          これらのオプションは順に、十進浮動小数点制御、スレッド処理、libmudflap、libssp、libgomp,
-          libquadmath, libiberty, zlib のサポートをいずれも無効にすることを指示します。
+          これらのオプションは順に、十進浮動小数点制御、スレッド処理、libmudflap、libssp、libgomp, libquadmath, libiberty, zlib のサポートをいずれも無効にすることを指示します。
           これらの機能を含めていると、クロスコンパイラーをビルドする際にはコンパイルに失敗します。
           またクロスコンパイルによって一時的な libc ライブラリを構築する際には不要なものです。
           </para>
@@ -194,7 +193,7 @@ cross-compiled environment:</para>
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -219,6 +218,6 @@ cross-compiled environment:</para>
     <xref linkend="contents-gcc" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-gcc" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-gcc" role=""/>&Details2;
     </para>
 @z

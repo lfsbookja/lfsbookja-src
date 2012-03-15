@@ -54,6 +54,33 @@
 -->
 
     <listitem>
+      <para>2012-03-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20120314,
+          Changeset
+          <ulink url="&lfs-rev-root;9775">9775</ulink>,
+          <ulink url="&lfs-rev-root;9776">9776</ulink>,
+          <ulink url="&lfs-rev-root;9777">9777</ulink>,
+          <ulink url="&lfs-rev-root;9778">9778</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          src/chapter03/packages.ch 整形。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          wget-list 変更方法の再調整。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-03-12</para>
       <itemizedlist>
         <listitem>
