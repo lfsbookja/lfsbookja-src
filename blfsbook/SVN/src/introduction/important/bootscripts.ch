@@ -16,7 +16,7 @@
 @x
   <title>BLFS Boot Scripts</title>
 @y
-  <title>BLFS ブートスクリプト</title>
+  <title>BLFS &BootScript;</title>
 @z
 
 @x
@@ -25,7 +25,7 @@
   </indexterm>
 @y
   <indexterm zone="bootscripts">
-    <primary sortas="a-BLFS-Bootscripts">BLFS ブートスクリプト</primary>
+    <primary sortas="a-BLFS-Bootscripts">BLFS &BootScript;</primary>
   </indexterm>
 @z
 
@@ -57,13 +57,13 @@
 @x
     <title>Package Information</title>
 @y
-    <title>パッケージ情報</title>
+    <title>&PackageInformation;</title>
 @z
 
 @x
       <para>Download: <ulink url="&blfs-bootscripts-download;"/></para>
 @y
-      <para>ダウンロード: <ulink url="&blfs-bootscripts-download;"/></para>
+      <para>&Download;: <ulink url="&blfs-bootscripts-download;"/></para>
 @z
 
 @x

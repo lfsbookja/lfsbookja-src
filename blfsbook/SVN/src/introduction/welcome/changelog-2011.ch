@@ -193,3 +193,105 @@ December 12th, 2011
     [abenton] - Webkitgtk 1.6.1 へのアップデート。
 @z
 
+@x
+December 11th, 2011
+    [bdubbs] - Updated to rep-gtk-0.90.2.
+    [bdubbs] - Updated to librep-0.90.5.
+    [bdubbs] - Updated to libtiff-3.9.5.
+    [bdubbs] - Added a section on testing Xorg.
+    [bdubbs] - Updated to pixman-0.24.0.
+    [bdubbs] - Updated to intltool-0.50.0.
+    [bdubbs] - Added LLVM patch to MesaLib.
+    [ken] - Updated to babl-0.1.6.
+    [ken] - Updated to gegl-0.1.8.
+    [ken] - Updated to gimp-2.6.11.
+@y
+2011/12/11
+    [bdubbs] - rep-gtk-0.90.2 へのアップデート。
+    [bdubbs] - librep-0.90.5 へのアップデート。
+    [bdubbs] - libtiff-3.9.5 へのアップデート。
+    [bdubbs] - Xorg のテストを行う節を追加。
+    [bdubbs] - pixman-0.24.0 へのアップデート。
+    [bdubbs] - intltool-0.50.0 へのアップデート。
+    [bdubbs] - MesaLib にて LLVM のパッチを追加。
+    [ken] - babl-0.1.6 へのアップデート。
+    [ken] - gegl-0.1.8 へのアップデート。
+    [ken] - gimp-2.6.11 へのアップデート。
+@z
+
+@x
+December 9th, 2011
+    [bdubbs] - Updated to talloc-2.0.7.
+    [bdubbs] - Added llvm-3.0.
+@y
+2011/12/09
+    [bdubbs] - talloc-2.0.7 へのアップデート。
+    [bdubbs] - llvm-3.0 の追加。
+@z
+
+@x
+December 8th, 2011
+    [bdubbs] - Updated to freetype-2.4.8.
+@y
+2011/12/08
+    [bdubbs] - freetype-2.4.8 へのアップデート。
+@z
+
+@x
+December 7th, 2011
+    [bdubbs] - Updated to tripwire-2.4.2.2.
+    [bdubbs] - Updated to Linux-PAM-1.1.5.
+    [bdubbs] - Added --enable-dbm to Berkeley DB for
+               compatibility with older packages.
+    [bdubbs] - Updated to gpgme-1.3.1.
+    [bdubbs] - Updated to gnupg-2.0.18.
+    [bdubbs] - Updated to pinentry-0.8.1.
+    [bdubbs] - Updated to libksba-1.2.0.
+    [bdubbs] - Updated to libassuan-2.0.2.
+    [ken] - Updated to ImageMagick-6.7.3-10.
+    [abenton] - Updated Bluefish to 2.2.0.
+    [abenton] - Updated Pidgin to 2.10.0.
+@y
+2011/12/07
+    [bdubbs] - tripwire-2.4.2.2 へのアップデート。
+    [bdubbs] - Linux-PAM-1.1.5 へのアップデート。
+    [bdubbs] - Berkeley DB にて、古いパッケージでの
+               互換性のために --enable-dbm を追加。
+    [bdubbs] - gpgme-1.3.1 へのアップデート。
+    [bdubbs] - gnupg-2.0.18 へのアップデート。
+    [bdubbs] - pinentry-0.8.1 へのアップデート。
+    [bdubbs] - libksba-1.2.0 へのアップデート。
+    [bdubbs] - libassuan-2.0.2 へのアップデート。
+    [ken] - ImageMagick-6.7.3-10 へのアップデート。
+    [abenton] - Bluefish 2.2.0 へのアップデート。
+    [abenton] - Pidgin 2.10.0 へのアップデート。
+@z
+
+@x
+December 6th, 2011
+    [bdubbs] - Updated to iptables-1.4.12.
+    [dj] - Updated to Xorg-7.6-2.
+    [dj] - Updated to xorg-util-macros-1.15.0.
+    [dj] - Updated to xterm-276.
+    [dj] - Updated to libdrm-2.4.27.
+    [dj] - Updated to xcb-util-0.3.8.
+    [dj] - Updated to Mesa-7.11.2.
+    [dj] - Updated to xorg-server-1.11.2.
+    [dj] - Removed "X Window System Components" and 
+           "Additional X Window System Configuration" pages, replaced by
+           single "Xorg-7.6-2 Configuration" page.
+@y
+2011/12/06
+    [bdubbs] - iptables-1.4.12 へのアップデート。
+    [dj] - Xorg-7.6-2 へのアップデート。
+    [dj] - xorg-util-macros-1.15.0 へのアップデート。
+    [dj] - xterm-276 へのアップデート。
+    [dj] - libdrm-2.4.27 へのアップデート。
+    [dj] - xcb-util-0.3.8 へのアップデート。
+    [dj] - Mesa-7.11.2 へのアップデート。
+    [dj] - xorg-server-1.11.2 へのアップデート。
+    [dj] - "X ウィンドウシステムコンポーネント" と 
+           "追加の X ウィンドウシステム設定" のページを削除し、
+           かわりに "Xorg-7.6-2 設定" のページ１つとする。
+@z
+

@@ -82,27 +82,25 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink>,
-    <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>,
+    <para role="optional"><ulink url="http://www.openafs.org/">AFS</ulink>,
+    <xref linkend="linux-pam"/>,
     <ulink url="http://www.fwtk.org/">FWTK</ulink>,
+    <xref linkend="mitkrb"/>,
     an <xref linkend="server-mail"/> (that provides a
     <command>sendmail</command> command),
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
-    <xref linkend="openldap"/>, and
-    <ulink url="http://www.openafs.org/">AFS</ulink></para>
+    <xref linkend="openldap"/>,
+    <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink> and
+    <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink>,
-    <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>,
+    <para role="optional"><ulink url="http://www.openafs.org/">AFS</ulink>,
+    <xref linkend="linux-pam"/>,
     <ulink url="http://www.fwtk.org/">FWTK</ulink>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="server-mail"/> (これは <command>sendmail</command> コマンドを提供するものです),
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
     <xref linkend="openldap"/>,
-    <ulink url="http://www.openafs.org/">AFS</ulink></para>
+    <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink>,
+    <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink></para>
 @z
 
 @x
@@ -149,16 +147,6 @@
 @z
 
 @x
-    <para><option>--with-ignore-dot</option>: This switch causes
-    <application>sudo</application> to ignore '.' in the PATH.</para>
-@y
-    <para>
-    <option>--with-ignore-dot</option>:
-    このパラメーターは PATH に含まれる '.' を無視することを指示します。
-    </para>
-@z
-
-@x
     <para><option>--with-all-insults</option>: This switch includes all the
     <application>sudo</application> insult sets.</para>
 @y
@@ -168,66 +156,26 @@
 @z
 
 @x
-    <para><option>--enable-shell-sets-home</option>: This switch sets HOME to
-    the target user in shell mode.</para>
-@y
-    <para>
-    <option>--enable-shell-sets-home</option>:
-    このパラメーターは、シェルモードにおいて HOME を対象ユーザーに設定します。
-    </para>
-@z
-
-@x
-    <para><option>--disable-root-sudo</option>: This switch keeps the
-    <systemitem class="username">root</systemitem> user from running sudo,
-    preventing users from chaining commands to get a root shell.</para>
-@y
-    <para><option>--disable-root-sudo</option>:
-    このパラメーターは
-    This switch keeps the
-    <systemitem class="username">root</systemitem> user from running sudo,
-    preventing users from chaining commands to get a root shell.</para>
-@z
-
-@x
-    <para><option>--with-logfac=auth</option>: This switch forces use of the
-    auth facility for logging.</para>
-@y
-    <para><option>--with-logfac=auth</option>: This switch forces use of the
-    auth facility for logging.</para>
-@z
-
-@x
     <para><option>--without-pam</option>: This switch disables the use of
     <application>PAM</application> authentication. Omit if you have
-    <application>PAM</application> installed.</para>
+    <application>Linux PAM</application> installed.</para>
 @y
     <para>
     <option>--without-pam</option>:
     このスイッチは <application>PAM</application> による権限制御を無効にすることを指示します。
-    <application>PAM</application> をインストールしている場合は、このスイッチをはずしてください。
+    <application>Linux PAM</application> をインストールしている場合は、このスイッチをはずしてください。
     </para>
 @z
 
 @x
     <para><option>--without-sendmail</option>: This switch disables the use of
-    sendmail.  Remove if you have a sendmail compatible MTA.</para>
+    sendmail. Remove if you have a sendmail compatible MTA.</para>
 @y
     <para>
     <option>--without-sendmail</option>:
     このスイッチは sendmail の利用を不可とします。
     sendmail 互換の MTA をインストールしている場合は、このスイッチ指定をはずしてください。
     </para>
-@z
-
-@x
-    <para><option>--enable-noargs-shell</option>: This switch allows
-    <application>sudo</application> to run a shell if invoked with no
-    arguments.</para>
-@y
-    <para><option>--enable-noargs-shell</option>: This switch allows
-    <application>sudo</application> to run a shell if invoked with no
-    arguments.</para>
 @z
 
 @x
@@ -342,12 +290,12 @@
 @z
 
 @x
-        <seg>sudo, sudoedit, and visudo</seg>
-        <seg>sudo_noexec.so</seg>
+        <seg>sudo, sudoedit, sudoreplay and visudo</seg>
+        <seg>sudoers.so and sudo_noexec.so</seg>
         <seg>None</seg>
 @y
-        <seg>sudo, sudoedit, visudo</seg>
-        <seg>sudo_noexec.so</seg>
+        <seg>sudo, sudoedit, sudoreplay, visudo</seg>
+        <seg>sudoers.so, sudo_noexec.so</seg>
         <seg>&None;</seg>
 @z
 

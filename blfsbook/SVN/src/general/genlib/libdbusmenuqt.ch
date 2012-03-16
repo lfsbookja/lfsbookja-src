@@ -92,12 +92,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://qjson.sourceforge.net/">Qjson</ulink> for building test suite
+    <ulink url="http://qjson.sourceforge.net/">Qjson</ulink> (for building the test suite) and
+    <xref linkend="doxygen"/> (for building the API documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://qjson.sourceforge.net/">Qjson</ulink> テストスイート実行のために
+    <ulink url="http://qjson.sourceforge.net/">Qjson</ulink> (テストスイート実行のために),
+    <xref linkend="doxygen"/> (API ドキュメント生成時)
     </para>
 @z
 
@@ -125,12 +127,6 @@
 @z
 
 @x
-    <para>Prepare the package for compilation:</para>
-@y
-    <para>コンパイルするための準備をします。</para>
-@z
-
-@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para><systemitem class="username">root</systemitem> ユーザーになって以下を実行します。</para>
@@ -143,9 +139,9 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -155,9 +151,9 @@
 @x
         <seg>None</seg>
 	<seg>libdbusmenu-qt.so</seg>
-        <seg>None</seg>
+	<seg>$QT4DIR/include/dbusmenu-qt</seg>
 @y
         <seg>&None;</seg>
 	<seg>libdbusmenu-qt.so</seg>
-        <seg>&None;</seg>
+	<seg>$QT4DIR/include/dbusmenu-qt</seg>
 @z

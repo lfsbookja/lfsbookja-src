@@ -1,74 +1,71 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/genlib
 CHANGE_FILES = \
 	apr.ch \
-	glib2.ch \
-	libesmtp.ch \
-	pcre.ch \
 	aspell.ch \
-	gmime.ch \
-	libgcrypt.ch \
-	libusb-compat.ch \
-	popt.ch \
-	libglade.ch \
-	libusb.ch \
-	pth.ch \
+	boost.ch \
+	clucene.ch \
+	enchant.ch \
+	exempi.ch \
 	expat.ch \
-	gwrap.ch \
-	libgpg-error.ch \
-	iso-codes.ch \
-	libgsf.ch \
-	libxml2.ch \
-	slib.ch \
+	folks.ch \
 	gamin.ch \
-	ispell.ch \
-	libgtkhtml.ch \
-	libxslt.ch \
-	libassuan.ch \
-	libidl.ch \
-	lzo.ch \
 	genlib.ch \
+	glib2.ch \
+	glibmm.ch \
+	gobject-introspection.ch \
+	gmime.ch \
+	gwrap.ch \
+	icu.ch \
+	iso-codes.ch \
+	ispell.ch \
+	json-c.ch \
+	json-glib.ch \
+	keyutils.ch \
+	libassuan.ch \
+	libatasmart.ch \
+	libatomic_ops.ch \
+	libdaemon.ch \
+	libdbusmenuqt.ch \
 	libcroco.ch \
-	libidn.ch \
-	mcs.ch \
 	libdrm.ch \
+	libelf.ch \
+	libesmtp.ch \
+	libffi.ch \
+	libgcrypt.ch \
+	libgee.ch \
+	libggz.ch \
+	libglade.ch \
+	libgpg-error.ch \
+	libgsf.ch \
+	libgtkhtml.ch \
+	libical.ch \
+	libidl.ch \
+	libidn.ch \
 	libksba.ch \
-	mowgli.ch \
-	pcre.ch \
-	popt.ch \
-	pth.ch \
-	slib.ch \
 	liboil.ch \
+	libsigc++.ch \
 	libtasn1.ch \
 	libunique.ch \
-	nspr.ch \
-	libffi.ch \
-	gobject-introspection.ch \
-	enchant.ch \
-	icu.ch \
-	libical.ch \
-	libelf.ch \
-	libggz.ch \
-	libsigc++.ch \
-	ptlib.ch \
-	glibmm.ch \
-	libatasmart.ch \
-	libdaemon.ch \
-	telepathy-glib.ch \
-	libatomic_ops.ch \
-	wv.ch \
-	talloc.ch \
-	libdbusmenuqt.ch \
-	clucene.ch \
-	qca.ch \
-	boost.ch \
-	keyutils.ch \
 	libunistring.ch \
-	libgee.ch \
+	libusb.ch \
+	libusb-compat.ch \
+	libxml2.ch \
+	libxslt.ch \
+	lzo.ch \
+	mcs.ch \
+	mowgli.ch \
+	nspr.ch \
+	pcre.ch \
+	popt.ch \
+	pth.ch \
+	ptlib.ch \
+	qca.ch \
+	slib.ch \
+	talloc.ch \
+	telepathy-glib.ch \
 	telepathy-logger.ch \
 	telepathy-mission-control.ch \
-	folks.ch \
-	json-glib.ch \
-	exempi.ch
+	wv.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -149,5 +146,6 @@ libgee.xml:                $(BOOKdir)/$@ $(srcdir)/libgee.ch
 telepathy-logger.xml:      $(BOOKdir)/$@ $(srcdir)/telepathy-logger.ch
 telepathy-mission-control.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-mission-control.ch
 folks.xml:                 $(BOOKdir)/$@ $(srcdir)/folks.ch
+json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
 json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch
 exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch

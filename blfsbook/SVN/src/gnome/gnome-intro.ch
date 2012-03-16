@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
   <title>Introduction to GNOME</title>
 @y
-  <title>GNOME の概要</title>
+  <title>&IntroductionTo1;GNOME&IntroductionTo2;</title>
 @z
 
 @x

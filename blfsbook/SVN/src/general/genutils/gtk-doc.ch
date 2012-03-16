@@ -100,7 +100,7 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="glib2"/> (for the testsuite),
+    <para role="optional">
     <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
     <xref linkend="fop"/> (XML PDF support),
     <xref linkend="gnome-doc-utils"/> and
@@ -113,7 +113,7 @@
     <xref linkend="rarian"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="glib2"/> (テストスイート実行のため),
+    <para role="optional">
     <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> または
     <xref linkend="fop"/> (XML PDF サポート),
     <xref linkend="gnome-doc-utils"/> と
@@ -122,7 +122,7 @@
     <xref linkend="sgml-dtd"/> and
     <xref linkend="docbook-dsssl"/>
     (SGML support, not actively maintained any more),
-    <xref linkend="python2"/> (gtkdoc-depscan ビルド時),
+    <xref linkend="python2"/> (builds gtkdoc-depscan),
     <xref linkend="rarian"/></para>
 @z
 

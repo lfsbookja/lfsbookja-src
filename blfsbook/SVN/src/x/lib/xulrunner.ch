@@ -16,35 +16,21 @@
 @x
     <title>Introduction to Xulrunner</title>
 @y
-    <title>Xulrunner の概要</title>
+    <title>&IntroductionTo1;Xulrunner&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Xulrunner</application> is a runtime environment for XUL
-    applications, and forms the major part of the
-    <application>Mozilla</application> codebase. In particular, it provides the
-    gecko engine together with pkgconfig files so that applications such as
-    <application>Yelp</application> can find and use it.  However, be aware that
-    Gnome applications are transitioning to <application>Webkit</application>
-    instead of gecko.</para>
+      <application>Xulrunner</application> is a runtime environment for XUL
+      applications, and forms the major part of the
+      <application>Mozilla</application> codebase. In particular, it provides
+      the Gecko engine together with pkgconfig files so that other applications
+      can find and use it.
 @y
-    <!--
-    <para>
-    <application>Xulrunner</application>
-    は、XUL アプリケーションのランタイム環境を提供します。
-    また <application>Mozilla</application> のコードベースの主要部分を構成します。
-    特に本パッケージは pkgconfig ファイルの形で gecko エンジンを提供するので、これにより
-    <application>Epiphany</application> や <application>Yelp</application>
-    が利用可能となります。
-    </para>
-    -->
-    <para><application>Xulrunner</application> is a runtime environment for XUL
-    applications, and forms the major part of the
-    <application>Mozilla</application> codebase. In particular, it provides the
-    gecko engine together with pkgconfig files so that applications such as
-    <application>Yelp</application> can find and use it.  However, be aware that
-    Gnome applications are transitioning to <application>Webkit</application>
-    instead of gecko.</para>
+      <application>Xulrunner</application> is a runtime environment for XUL
+      applications, and forms the major part of the
+      <application>Mozilla</application> codebase. In particular, it provides
+      the Gecko engine together with pkgconfig files so that other applications
+      can find and use it.
 @z
 
 @x
@@ -54,179 +40,194 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xulrunner-download-http;"/></para>
+          Download (HTTP): <ulink url="&xulrunner-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xulrunner-download-http;"/></para>
+          Download (HTTP): <ulink url="&xulrunner-download-http;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xulrunner-md5sum;</para>
+          Download (FTP): <ulink url="&xulrunner-download-ftp;"/>
 @y
-        <para>&Download; MD5 sum: &xulrunner-md5sum;</para>
+          Download (FTP): <ulink url="&xulrunner-download-ftp;"/>
 @z
 
 @x
-        <para>Download size: &xulrunner-size;</para>
+          Download MD5 sum: &xulrunner-md5sum;
 @y
-        <para>&DownloadSize;: &xulrunner-size;</para>
+          Download MD5 sum: &xulrunner-md5sum;
 @z
 
 @x
-        <para>Estimated disk space required: &xulrunner-buildsize;</para>
+          Download size: &xulrunner-size;
 @y
-        <para>&Estimateddiskspacerequired;: &xulrunner-buildsize;</para>
+          Download size: &xulrunner-size;
 @z
 
 @x
-        <para>Estimated build time: &xulrunner-time;</para>
+          Estimated disk space required: &xulrunner-buildsize;
 @y
-        <para>&Estimatedbuildtime;: &xulrunner-time;</para>
+          &Estimateddiskspacerequired;: &xulrunner-buildsize;
+@z
+
+@x
+          Estimated build time: &xulrunner-time;
+@y
+          &Estimatedbuildtime;: &xulrunner-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Xulrunner Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xulrunner の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Xulrunner&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="alsa-lib"/>, <xref linkend="gtk2"/>,
-    <xref linkend="zip"/> and <xref linkend="unzip"/>.</para>
+    <para role="required">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="zip"/> and
+      <xref linkend="unzip"/>.
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="alsa-lib"/>, <xref linkend="gtk2"/>,
-    <xref linkend="zip"/>, <xref linkend="unzip"/>.</para>
+    <para role="required">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="zip"/>,
+      <xref linkend="unzip"/>
+    </para>
 @z
 
 @x
-    <para>Note: <application>libjpeg</application> and
-    <application>libpng</application> (patched for apng support) should have
-    been installed before <application>gdk-pixbuf</application> and should
-    exist on your system. If for some strange reason you haven't installed
-    them, you should remove the <option>--with-system-jpeg</option> and
-    <option>--with-system-png</option> options from the
-    <filename>mozconfig</filename> file created below.</para>
+      Note: <application>libjpeg</application> and
+      <application>libpng</application> (patched for apng support) should have
+      been installed before <application>gdk-pixbuf</application> and should
+      exist on your system. If for some strange reason you haven't installed
+      them, you should remove the <option>--with-system-jpeg</option> and
+      <option>--with-system-png</option> options from the
+      <filename>mozconfig</filename> file created below.
 @y
-    <para>Note: <application>libjpeg</application> and
-    <application>libpng</application> (patched for apng support) should have
-    been installed before <application>gdk-pixbuf</application> and should
-    exist on your system. If for some strange reason you haven't installed
-    them, you should remove the <option>--with-system-jpeg</option> and
-    <option>--with-system-png</option> options from the
-    <filename>mozconfig</filename> file created below.</para>
+      Note: <application>libjpeg</application> and
+      <application>libpng</application> (patched for apng support) should have
+      been installed before <application>gdk-pixbuf</application> and should
+      exist on your system. If for some strange reason you haven't installed
+      them, you should remove the <option>--with-system-jpeg</option> and
+      <option>--with-system-png</option> options from the
+      <filename>mozconfig</filename> file created below.
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="yasm"/> or
-    <xref linkend="libvpx"/>.</para>
+    <para role="recommended">
+      <xref linkend="yasm"/> or <xref linkend="libvpx"/>
+      (to allow <application>Xulrunner</application> to play webm videos).
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="yasm"/> または
-    <xref linkend="libvpx"/>.</para>
+    <para role="recommended">
+      <xref linkend="yasm"/> または <xref linkend="libvpx"/>
+      (to allow <application>Xulrunner</application> to play webm videos).
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/>,
-    <xref linkend="startup-notification"/>, <xref linkend="sqlite"/>,
-    <ulink url="http://www.webmproject.org/code/">libvpx</ulink>,
-    <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
-    <ulink url="http://libevent.org/">Libevent</ulink>,
-    <xref linkend="doxygen"/>,
-    <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for gnome
-    integration), <xref linkend="libnotify"/>, <xref linkend="nspr"/>,
-    <xref linkend="nss"/>, <xref linkend="unzip"/>,
-    <xref linkend="wireless_tools"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
-    the jemalloc code) and <xref linkend="wget"/></para>
+    <para role="optional">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="startup-notification"/>,
+      <xref linkend="sqlite"/>,
+      <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
+      <ulink url="http://libevent.org/">Libevent</ulink>,
+      <xref linkend="doxygen"/>,
+      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for
+      integration with the old version of <application>Gnome</application>),
+      <xref linkend="libnotify"/>,
+      <xref linkend="nspr"/>,
+      <xref linkend="nss"/>,
+      <xref linkend="wireless_tools"/>,
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
+      the jemalloc code) and
+      <xref linkend="wget"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/>,
-    <xref linkend="startup-notification"/>, <xref linkend="sqlite"/>,
-    <ulink url="http://www.webmproject.org/code/">libvpx</ulink>,
-    <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
-    <ulink url="http://libevent.org/">Libevent</ulink>,
-    <xref linkend="doxygen"/>,
-    <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for gnome
-    integration), <xref linkend="libnotify"/>, <xref linkend="nspr"/>,
-    <xref linkend="nss"/>, <xref linkend="unzip"/>,
-    <xref linkend="wireless_tools"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
-    the jemalloc code) and <xref linkend="wget"/></para>
+    <para role="optional">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="startup-notification"/>,
+      <xref linkend="sqlite"/>,
+      <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
+      <ulink url="http://libevent.org/">Libevent</ulink>,
+      <xref linkend="doxygen"/>,
+      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for
+      integration with the old version of <application>Gnome</application>),
+      <xref linkend="libnotify"/>,
+      <xref linkend="nspr"/>,
+      <xref linkend="nss"/>,
+      <xref linkend="wireless_tools"/>,
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
+      the jemalloc code) and
+      <xref linkend="wget"/>
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/xulrunner"/></para>
+      User Notes: <ulink url="&blfs-wiki;/xulrunner"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/xulrunner"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/xulrunner"/>
 @z
 
 @x
     <title>Installation of Xulrunner</title>
 @y
-    <title>Xulrunner のインストール</title>
+    <title>&InstallationOf1;Xulrunner&InstallationOf2;</title>
 @z
 
 @x
-    <para>The configuration of <application>Xulrunner</application> is
-    accomplished by creating a <filename>mozconfig</filename> file containing
-    the desired configuration options. A default <filename>mozconfig</filename>
-    is created below. To see the entire list of available configuration options
-    (and an abbreviated description of each one), issue
-    <command>./configure --help</command>. You should review the entire file
-    and comment or uncomment options as necessary.</para>
+      The configuration of <application>Xulrunner</application> is accomplished
+      by creating a <filename>mozconfig</filename> file containing the desired
+      configuration options. A default <filename>mozconfig</filename> is created
+      below. To see the entire list of available configuration options (and an
+      abbreviated description of each one), issue <command>./configure
+      --help</command>. You should review the entire file and comment or
+      uncomment options as necessary.
 @y
-    <para>
-    <application>Xulrunner</application> の設定は <filename>mozconfig</filename> ファイルにより行います。
-    このファイルには必要な設定オプションを指定します。
-    デフォルトの <filename>.mozconfig</filename> ファイルは、以下のコマンドにより生成します。
-    利用可能な設定オプション (また各オプションに対する簡単な説明) については <command>./configure --help</command> を実行して確認することができます。
-    設定ファイル内を十分に確認して、設定オプションの行を、必要に応じてコメント化したりコメントをはずしたりすることが必要です。
-    </para>
+      <application>Xulrunner</application> の設定は <filename>mozconfig</filename> ファイルにより行います。
+      このファイルには必要な設定オプションを指定します。
+      デフォルトの <filename>.mozconfig</filename> ファイルは、以下のコマンドにより生成します。
+      利用可能な設定オプション (また各オプションに対する簡単な説明) については <command>./configure --help</command> を実行して確認することができます。
+      設定ファイル内を十分に確認して、設定オプションの行を、必要に応じてコメント化したりコメントをはずしたりすることが必要です。
 @z
 
 @x
-    <para>Install <application>Xulrunner</application> by issuing the
-    following commands:</para>
+      Install <application>Xulrunner</application> by issuing the following
+      commands:
 @y
-    <para>
-    <application>Xulrunner</application> をビルドするために以下を実行します。
-    </para>
+      <application>Xulrunner</application> をビルドするために以下を実行します。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you elected to use the included NSPR and NSS (ie, if you have
-    <emphasis>not</emphasis> installed <xref linkend="nspr"/> and
-    <xref linkend="nss"/>), while still the
-    <systemitem class="username">root</systemitem> user, complete the
-    installation with the following commands:</para>
+      If you elected to use the included NSPR and NSS (ie, if you have
+      <emphasis>not</emphasis> installed <xref linkend="nspr"/> and
+      <xref linkend="nss"/>), while still the
+      <systemitem class="username">root</systemitem> user, complete the
+      installation with the following commands:
 @y
-    <para>
-    パッケージに付属する NSPR と NSS を利用することにした場合 (つまり <xref
-    linkend="nspr"/> と <xref linkend="nss"/> をインストールしていない場合) は、インストール作業の仕上げとして <systemitem
-    class="username">root</systemitem> ユーザーのまま以下を実行します。
-    </para>
+      パッケージに付属する NSPR と NSS を利用することにした場合 (つまり <xref
+      linkend="nspr"/> と <xref linkend="nss"/> をインストールしていない場合) は、インストール作業の仕上げとして <systemitem
+      class="username">root</systemitem> ユーザーのまま以下を実行します。
 @z
 
 @x
@@ -236,57 +237,77 @@
 @z
 
 @x
-    <para><command>sed ... Requires: nspr</command>: If you try to build
-    <application>Yelp</application> without this, the
-    prtypes header from NSPR will not be found. It is arguable whose error this
-    is (the code presumably works on earlier geckos), but this fix is unlikely
-    to cause any damage in other packages.</para>
+      <command>sed -i 's#VPX_CODEC_USE_INPUT_PARTITION ...</command>: This fixes
+      <application>Xulrunner's</application> <command>configure</command>
+      script to properly detect <xref linkend="libvpx"/>. It is not needed if
+      you have libvpx-v0.9.7 or earlier installed or if you've not installed
+      <application>Libvpx</application>.
 @y
-    <para><command>sed ... Requires: nspr</command>: If you try to build
-    <application>Yelp</application> without this, the
-    prtypes header from NSPR will not be found. It is arguable whose error this
-    is (the code presumably works on earlier geckos), but this fix is unlikely
-    to cause any damage in other packages.</para>
+      <command>sed -i 's#VPX_CODEC_USE_INPUT_PARTITION ...</command>: This fixes
+      <application>Xulrunner's</application> <command>configure</command>
+      script to properly detect <xref linkend="libvpx"/>. It is not needed if
+      you have libvpx-v0.9.7 or earlier installed or if you've not installed
+      <application>Libvpx</application>.
 @z
 
 @x
-    <para><command>make -f client.mk ...</command>: Mozilla products are
-    packaged to allow the use of a configuration file which can be used to
-    pass the configuration settings to the <command>configure</command>
-    command. <command>make</command> uses the <filename>client.mk</filename>
-    file to get initial configuration and setup parameters.</para>
+      <command>sed ... Requires: nspr</command>: If you try to build some other
+      applications without this, the prtypes header from NSPR will not be found.
 @y
-    <para><command>make -f client.mk ...</command>: Mozilla products are
-    packaged to allow the use of a configuration file which can be used to
-    pass the configuration settings to the <command>configure</command>
-    command. <command>make</command> uses the <filename>client.mk</filename>
-    file to get initial configuration and setup parameters.</para>
+      <command>sed ... Requires: nspr</command>: If you try to build some other
+      applications without this, the prtypes header from NSPR will not be found.
 @z
 
 @x
-    <para><command>for DL in ...</command>: The NSPR and NSS libraries shipped
-    with this package are installed into
-    <filename
-    class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
-    which means they will not be found at runtime.  By using symbolic links
-    from <filename class="directory">/usr/lib</filename> the libraries will be
-    found and the links can be easily changed to point to a newer version
-    during an upgrade.</para>
+      <command>make -f client.mk ...</command>: Mozilla products are packaged to
+      allow the use of a configuration file which can be used to pass the
+      configuration settings to the <command>configure</command> command.
+      <command>make</command> uses the <filename>client.mk</filename> file to
+      get initial configuration and setup parameters.
 @y
-    <para><command>for DL in ...</command>: The NSPR and NSS libraries shipped
-    with this package are installed into
-    <filename
-    class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
-    which means they will not be found at runtime.  By using symbolic links
-    from <filename class="directory">/usr/lib</filename> the libraries will be
-    found and the links can be easily changed to point to a newer version
-    during an upgrade.</para>
+      <command>make -f client.mk ...</command>: Mozilla products are packaged to
+      allow the use of a configuration file which can be used to pass the
+      configuration settings to the <command>configure</command> command.
+      <command>make</command> uses the <filename>client.mk</filename> file to
+      get initial configuration and setup parameters.
 @z
 
 @x
-     <para>When you upgrade Xulrunner, remember to update the symlinks.</para>
+      <command>ln -sv ../mozilla/plugins ...</command>: Some packages will
+      install browser plugins into
+      <filename class="directory">/usr/lib/mozilla/plugins</filename>.
+      Creating this symlink <application>Xulrunner</application> keeps
+      additional plugins in a common directory.
 @y
-     <para>When you upgrade Xulrunner, remember to update the symlinks.</para>
+      <command>ln -sv ../mozilla/plugins ...</command>: Some packages will
+      install browser plugins into
+      <filename class="directory">/usr/lib/mozilla/plugins</filename>.
+      Creating this symlink <application>Xulrunner</application> keeps
+      additional plugins in a common directory.
+@z
+
+@x
+      <command>for DL in ...</command>: The NSPR and NSS libraries shipped
+      with this package are installed into
+      <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
+      which means they will not be found at runtime. By using symbolic links
+      from <filename class="directory">/usr/lib</filename> the libraries will be
+      found and the links can be easily changed to point to a newer version
+      during an upgrade.
+@y
+      <command>for DL in ...</command>: The NSPR and NSS libraries shipped
+      with this package are installed into
+      <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
+      which means they will not be found at runtime. By using symbolic links
+      from <filename class="directory">/usr/lib</filename> the libraries will be
+      found and the links can be easily changed to point to a newer version
+      during an upgrade.
+@z
+
+@x
+        When you upgrade Xulrunner, remember to update the symlinks.
+@y
+        When you upgrade Xulrunner, remember to update the symlinks.
 @z
 
 @x
@@ -317,13 +338,8 @@
 @y
         <seg>xulrunner と任意ビルドの nspr-config</seg>
         <seg>
-        数々のライブラリ、
-        ブラウザコンポーネント、
-        プラグイン、
-        機能拡張モジュール、
-        ヘルパーモジュール、
-        <filename class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename>
-        にインストールされる。
+        数々のライブラリ、ブラウザコンポーネント、プラグイン、機能拡張モジュール、ヘルパーモジュール、<filename
+        class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename> にインストールされる。
         </seg>
         <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-&xulrunner-version;,
@@ -334,16 +350,11 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x xulrunner
-          <para>is a shell script, useful for identifying the version
-          installed.</para>
+            is a shell script, useful for identifying the version installed.
 @y
-          <para>
-          
-          is a shell script, useful for identifying the version
-          installed.
-          </para>
+            is a shell script, useful for identifying the version installed.
 @z

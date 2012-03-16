@@ -54,6 +54,80 @@
 @z
 
 @x
+      <para>March 13th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Updates to initramfs scripts.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - upgrade to kdenetwork 4.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - added json-c 0.9.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - pulseaudio 1.1.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - update to gutenprint-5.2.7.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - initramfs スクリプトのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kdenetwork 4.8.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - json-c 0.9 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - pulseaudio 1.1.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - gutenprint-5.2.7 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 12th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - upgrade to libdbusmenu-qt 0.9.0.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - upgrade to kdeplasma-addons 4.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added libkexiv2 4.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - removed packagekit and gnome-packagekit.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - libdbusmenu-qt 0.9.0 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kdeplasma-addons 4.8.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added libkexiv2 4.8.1 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - packagekit と gnome-packagekit の削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>March 11th, 2012</para>
 @y
       <para>2012/03/11</para>
@@ -77,6 +151,460 @@
         </listitem>
         <listitem>
           <para>[abenton] - Gtk+-2.24.10</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 9th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - upgrade to kdemultimedia 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added taglib 1.7</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added ark 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Guile 2.0.5</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - kdemultimedia 4.8.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - taglib 1.7 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - ark 4.8.1 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Guile 2.0.5</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 8th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - removed kdegraphics 4.6.0</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - removed kdebindings 4.6.0</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - removed kdeutils 4.6.0</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added kate 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added konsole 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - upgrade to kde-workspace 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added kactivities 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - upgrade to kdebaseapps 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - upgrade to kdepimlibs 4.8.1</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - krb5 1.10.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gstreamer 0.10.36.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-base 0.10.36.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-good 0.10.31.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-ugly 0.10.19.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-bad 0.10.23.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libdvdcss 1.2.11.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - removed liboil 0.3.17.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/08</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - kdegraphics 4.6.0 の削除。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kdebindings 4.6.0 の削除。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kdeutils 4.6.0 の削除。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kate 4.8.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - konsole 4.8.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kde-workspace 4.8.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kactivities 4.8.1 の追加。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kdebaseapps 4.8.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kdepimlibs 4.8.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - krb5 1.10.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gstreamer 0.10.36.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-base 0.10.36.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-good 0.10.31.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-ugly 0.10.19.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - gst-plugins-bad 0.10.23.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libdvdcss 1.2.11.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - liboil 0.3.17 の削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 7th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Postfix 2.9.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - cdrdao 1.2.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - fribidi 0.19.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - transcode 1.1.7.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - update to a version of ImageMagick which is still available
+          (6.7.5-10).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - xine-lib 1.2.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/07</para>
+      <itemizedlist>
+        <listitem>
+          <para>[abenton] - Postfix 2.9.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - cdrdao 1.2.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - fribidi 0.19.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - transcode 1.1.7.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - 現時点利用可能な ImageMagick バージョン
+          (6.7.5-10) へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - xine-lib 1.2.1.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 6th, 2012</para>
+@y
+      <para>2012/03/06</para>
+@z
+
+@x
+      <para>March 5th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to p11-kit-0.11. Thanks to
+          Armin K. for creating the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iptables-1.4.12.2. Thanks to
+          Armin K. for creating the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gnutls-3.0.15. Thanks to
+          Armin K. for creating the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to cyrus-sasl-2.1.25. Thanks to
+          Armin K. for creating the patches.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Alsa-1.0.25. Thanks to
+          Armin K. for creating the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Wireless Tools-29. Thanks to
+          Armin K. for creating the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Remove PolicyKit.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Remove Scrollkeeper.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Remove Inetutils.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Remove cdrtools.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Remove Hal.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Update to ImageMagick-6.7.5-9, fixes compile failure caused
+          by zlib-1.2.6.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Added epiphany-extensions-3.2.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - p11-kit-0.11 へのアップデート。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iptables-1.4.12.2 へのアップデート。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gnutls-3.0.15 へのアップデート。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - cyrus-sasl-2.1.25 へのアップデート。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Alsa-1.0.25 へのアップデート。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Wireless Tools-29 へのアップデート。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - PolicyKit 削除。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Scrollkeeper 削除。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Inetutils 削除。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - cdrtools 削除。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Hal 削除。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - ImageMagick-6.7.5-9 へのアップデート。
+          zlib-1.2.6 が原因でビルド失敗する症状を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - epiphany-extensions-3.2.0 追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 4th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - Modified configuration of polkit. Thanks to
+          Armin K. for creating the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Updated to akonadi 1.7.1.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - NSPR 4.9.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - NSS 3.13.3.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - polkit の設定を修正。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - akonadi 1.7.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - NSPR 4.9.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - NSS 3.13.3.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 3rd, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - Updated to polkit-0.104.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Updated to XChat 2.8.8. Thanks to Armin K. for
+          creating the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Updated to Strigi 0.7.5.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Added patch for Raptor 1.4.21.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Updated to Soprano 2.7.4.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Updated to Kde4libs 4.8.0.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Updated to Oxygen-icons 4.8.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - polkit-0.104 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - XChat 2.8.8 へのアップデート。
+          パッチを生成してくれた Armin K. に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Strigi 0.7.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Raptor 1.4.21 に対するパッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Soprano 2.7.4 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Kde4libs 4.8.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - Oxygen-icons 4.8.0 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 2nd, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to git-1.7.9.2.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Openssl 1.0.0g.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - git-1.7.9.2 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Openssl 1.0.0g.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 1st, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - updated to polkit-qt 0.103.0.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - updated to shared-desktop-ontologies 0.9.0.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - updated to attica 0.3.0.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - updated to akonadi 1.7.0.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - updated to Subversion 1.7.3.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - polkit-qt 0.103.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - shared-desktop-ontologies 0.9.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - attica 0.3.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - akonadi 1.7.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Subversion 1.7.3 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z

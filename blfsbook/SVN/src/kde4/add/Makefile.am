@@ -3,6 +3,7 @@ CHANGE_FILES = \
 	add.ch \
 	ark.ch \
 	kate.ch \
+	kcalc.ch \
 	kde4accessibility.ch \
 	kde4admin.ch \
 	kde4artwork.ch \
@@ -14,7 +15,9 @@ CHANGE_FILES = \
 	kde4pimruntime.ch \
 	kde4plasmaaddons.ch \
 	kde4toys.ch \
-	konsole.ch
+	konsole.ch \
+	libkexiv2.ch \
+	okular.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -31,6 +34,7 @@ ctie:
 add.xml:               $(BOOKdir)/$@ $(srcdir)/add.ch
 ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
 kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
+kcalc.xml:             $(BOOKdir)/$@ $(srcdir)/kcalc.ch
 kde4accessibility.xml: $(BOOKdir)/$@ $(srcdir)/kde4accessibility.ch
 kde4admin.xml:         $(BOOKdir)/$@ $(srcdir)/kde4admin.ch
 kde4artwork.xml:       $(BOOKdir)/$@ $(srcdir)/kde4artwork.ch
@@ -43,3 +47,5 @@ kde4pimruntime.xml:    $(BOOKdir)/$@ $(srcdir)/kde4pimruntime.ch
 kde4plasmaaddons.xml:  $(BOOKdir)/$@ $(srcdir)/kde4plasmaaddons.ch
 kde4toys.xml:          $(BOOKdir)/$@ $(srcdir)/kde4toys.ch
 konsole.xml:           $(BOOKdir)/$@ $(srcdir)/konsole.ch
+libkexiv2.xml:         $(BOOKdir)/$@ $(srcdir)/libkexiv2.ch
+okular.xml:            $(BOOKdir)/$@ $(srcdir)/okular.ch

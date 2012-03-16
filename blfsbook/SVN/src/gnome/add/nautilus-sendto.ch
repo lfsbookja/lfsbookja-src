@@ -30,10 +30,10 @@
     Claws</application>).</para>
 @y
     <para>
-    <application>nautilus-sendto</application>
-    パッケージは、<application>Nautilus</application>
-    ファイルマネージャーを提供します。
-    
+    <application>nautilus-sendto</application> パッケージは、<application>Nautilus</application> ファイルマネージャーを提供します。
+    <application>Thunderbird</application>、<application>Claws Mail</application> (かつての <application>Sylpheed
+    Claws</application>) を通じて、<application>Evolution</application>
+
     with a context menu
     component for quickly sending files to accounts in an
     <application>Evolution</application> email address book, contacts on a
@@ -197,8 +197,9 @@
           <para>is a convenience application to send a file via email or instant
           messenger.</para>
 @y
-          <para>is a convenience application to send a file via email or instant
-          messenger.</para>
+          <para>
+          電子メールやインスタントメッセンジャーにファイル送信するためのアプリケーション。
+          </para>
 @z
 
 @x libnstbluetooth.so
@@ -237,7 +238,7 @@
           <para>is the removable-devices plugin library.</para>
 @y
           <para>
-          is the removable-devices plugin library.
+          リムーバブルデバイスのプラグインライブラリ。
           </para>
 @z
 
