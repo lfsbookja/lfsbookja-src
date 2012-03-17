@@ -149,30 +149,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk2"/>, <xref linkend="qt"/>
+    <para role="optional"><xref linkend="gtk2"/>,
     <xref linkend="qt4"/>
     <xref linkend="curl"/>
+    <xref linkend="libtiff"/>,
     <xref linkend="libxml2"/>, and
     <xref linkend="lcms"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk2"/>, <xref linkend="qt"/>
+    <para role="optional"><xref linkend="gtk2"/>,
     <xref linkend="qt4"/>
     <xref linkend="curl"/>
+    <xref linkend="libtiff"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="lcms"/></para>
-@z
-
-@x
-    <para>If you're installing <application>Poppler</application> to support
-    <xref linkend="kdegraphics"/>, you will need to have <xref linkend="qt"/>
-    installed so that the <filename class='libraryfile'>libpoppler-qt</filename>
-    library is built.</para>
-@y
-    <para>If you're installing <application>Poppler</application> to support
-    <xref linkend="kdegraphics"/>, you will need to have <xref linkend="qt"/>
-    installed so that the <filename class='libraryfile'>libpoppler-qt</filename>
-    library is built.</para>
 @z
 
 @x
@@ -245,41 +235,41 @@
 @z
 
 @x
-    <para><parameter>--disable-cairo-output</parameter>: This parameter
+    <para><parameter>--disable-static</parameter>: Prevent static libraries
+    being built and installed.</para>
+@y
+    <para><parameter>--disable-static</parameter>: Prevent static libraries
+    being built and installed.</para>
+@z
+
+@x
+    <para><option>--disable-cairo-output</option>: This parameter
     disables building the <application>cairo</application> graphics backend.</para>
 @y
-    <para>
-    <parameter>--disable-cairo-output</parameter>: This parameter
-    disables building the <application>cairo</application> graphics backend.
-    </para>
+    <para><option>--disable-cairo-output</option>: This parameter
+    disables building the <application>cairo</application> graphics backend.</para>
 @z
 
 @x
-    <para><parameter>--disable-poppler-glib</parameter> and
-    <parameter>--disable-gtk-test</parameter>: These parameters disable
-    building the <application>GLib</application> wrapper and
-    <application>GTK+</application> test program.</para>
+    <para><option>--disable-poppler-glib</option>,
+    <option>--disable-poppler-qt4</option> and
+    <option>--disable-gtk-test</option>: These parameters disable
+    building the <application>GLib</application> and <application>qt4</application>
+    wrappers and the <application>GTK+</application> test program.</para>
 @y
-    <para><parameter>--disable-poppler-glib</parameter> and
-    <parameter>--disable-gtk-test</parameter>: These parameters disable
-    building the <application>GLib</application> wrapper and
-    <application>GTK+</application> test program.</para>
+    <para><option>--disable-poppler-glib</option>,
+    <option>--disable-poppler-qt4</option> and
+    <option>--disable-gtk-test</option>: These parameters disable
+    building the <application>GLib</application> and <application>qt4</application>
+    wrappers and the <application>GTK+</application> test program.</para>
 @z
 
 @x
-    <para><parameter>--disable-static</parameter>: Prevent static libraries
-    being built and installed.</para>
-@y
-    <para><parameter>--disable-static</parameter>: Prevent static libraries
-    being built and installed.</para>
-@z
-
-@x
-    <para><parameter>--enable-xpdf-headers</parameter>: Install old
+    <para><option>--enable-xpdf-headers</option>: Install old
     <application>Xpdf</application> headers required by certain programs. These
     are unsupported by <application>Poppler</application>.</para>
 @y
-    <para><parameter>--enable-xpdf-headers</parameter>: Install old
+    <para><option>--enable-xpdf-headers</option>: Install old
     <application>Xpdf</application> headers required by certain programs. These
     are unsupported by <application>Poppler</application>.</para>
 @z
@@ -301,15 +291,17 @@
 @z
 
 @x
-        <seg><xref linkend="xpdf-content"/> for the pdf* programs</seg>
-        <seg>libpoppler.{so,a}, libpoppler-cpp.{so,a}, libpoppler-glib.{so,a}, libpoppler-qt.{so,a}
-        and libpoppler-qt4.{so,a}</seg>
+        <seg>pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
+        pdftoppm, pdftops, pdftotext, pdfunite, poppler-glib-demo</seg>
+        <seg>libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
+        and libpoppler-qt4.so</seg>
         <seg>/usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
         /usr/share/gtk-doc/html/poppler and /usr/share/poppler</seg>
 @y
-        <seg><xref linkend="xpdf-content"/> for the pdf* programs</seg>
-        <seg>libpoppler.{so,a}, libpoppler-cpp.{so,a}, libpoppler-glib.{so,a}, libpoppler-qt.{so,a}
-        libpoppler-qt4.{so,a}</seg>
+        <seg>pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
+        pdftoppm, pdftops, pdftotext, pdfunite, poppler-glib-demo</seg>
+        <seg>libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
+        libpoppler-qt4.so</seg>
         <seg>/usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
         /usr/share/gtk-doc/html/poppler, /usr/share/poppler</seg>
 @z
@@ -332,20 +324,12 @@
           <para>is a C++ backend for rendering PDF files.</para>
 @z
 
-@x libpoppler-glib.{so,a}
+@x libpoppler-glib.so
           <para>is a wrapper library used to interface the PDF rendering
           functions with <application>GTK+</application>.</para>
 @y
           <para>is a wrapper library used to interface the PDF rendering
           functions with <application>GTK+</application>.</para>
-@z
-
-@x libpoppler-qt.{so,a}
-          <para>is a wrapper library used to interface the PDF rendering
-          functions with <application>Qt</application>.</para>
-@y
-          <para>is a wrapper library used to interface the PDF rendering
-          functions with <application>Qt</application>.</para>
 @z
 
 @x libpoppler-qt4.{so,a}

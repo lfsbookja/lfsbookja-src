@@ -18,6 +18,7 @@ CHANGE_FILES = \
 	libtiff.ch \
 	pixman.ch \
 	poppler.ch \
+	poppler-014.ch \
 	clutter.ch \
 	clutter-gtk.ch \
 	babl.ch \
@@ -58,6 +59,7 @@ librsvg.xml:     $(BOOKdir)/$@ $(srcdir)/librsvg.ch
 libtiff.xml:     $(BOOKdir)/$@ $(srcdir)/libtiff.ch
 pixman.xml:      $(BOOKdir)/$@ $(srcdir)/pixman.ch
 poppler.xml:     $(BOOKdir)/$@ $(srcdir)/poppler.ch
+poppler-014.xml: $(BOOKdir)/$@ $(srcdir)/poppler-014.ch
 clutter.xml:     $(BOOKdir)/$@ $(srcdir)/clutter.ch
 clutter-gtk.xml: $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
 babl.xml:        $(BOOKdir)/$@ $(srcdir)/babl.ch

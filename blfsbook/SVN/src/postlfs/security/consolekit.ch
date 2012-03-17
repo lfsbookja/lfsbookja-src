@@ -208,9 +208,10 @@
 @z
 
 @x
-      <para>See /usr/share/doc/ConsoleKit/spec/ConsoleKit.html</para>
+      <para>See /usr/share/doc/ConsoleKit/spec/ConsoleKit.html for more
+      configuration.</para>
 @y
-      <para>/usr/share/doc/ConsoleKit/spec/ConsoleKit.html を参照のこと。</para>
+      <para>より詳細な設定に関しては /usr/share/doc/ConsoleKit/spec/ConsoleKit.html を参照のこと。</para>
 @z
 
 @x
