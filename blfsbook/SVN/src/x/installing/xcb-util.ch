@@ -16,7 +16,7 @@
 @x
     <title>Introduction to xcb-util</title>
 @y
-    <title>xcb-util の概要</title>
+    <title>&IntroductionTo1;xcb-util&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&xcb-util-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&xcb-util-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&xcb-util-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&xcb-util-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&xcb-util-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&xcb-util-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &xcb-util-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &xcb-util-md5sum;</para>
+        <para>&Download; MD5 sum: &xcb-util-md5sum;</para>
 @z
 
 @x
         <para>Download size: &xcb-util-size;</para>
 @y
-        <para>ダウンロードサイズ: &xcb-util-size;</para>
+        <para>&DownloadSize;: &xcb-util-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">xcb-util Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">xcb-util の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;xcb-util&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -100,7 +100,7 @@
 @x
     <title>Installation of xcb-util</title>
 @y
-    <title>xcb-util のインストール</title>
+    <title>&InstallationOf1;xcb-util&InstallationOf2;</title>
 @z
 
 @x
@@ -149,7 +149,19 @@
         <seg>libxcb-util.{a,so}</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libxcb-util.{a,so}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x
+          <para>Provides utility functions for other XCB utilities.</para>
+@y
+          <para>他の XCB ユーティリティーに対して、ユーティリティー関数を提供します。</para>
 @z

@@ -133,6 +133,23 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>-DWITH_DOC=OFF</option>: This option is set to avoid building 
+    the API documentation. Omit it if you have <application>doxygen</application>
+    and want the documentation.</para>
+@y
+    <para><option>-DWITH_DOC=OFF</option>:
+    このオプションは API ドキュメントのビルドを行わないようにします。
+    <application>doxygen</application> をインストールしていて、ドキュメントを必要とする場合は、このオプションを取り除いてください。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

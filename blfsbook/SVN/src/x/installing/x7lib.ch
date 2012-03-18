@@ -34,17 +34,16 @@
 @x
     <title>Introduction to Xorg Libraries</title>
 @y
-    <title>Xorg ライブラリの概要</title>
+    <title>&IntroductionTo1;Xorg ライブラリ&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>Xorg</application> libraries provide library
     routines that are used within all X Window applications.</para>
 @y
-<para>
-<application>Xorg</application>
-ライブラリは、X ウィンドウアプリケーションのすべてが利用するライブラリルーチンを提供します。
-</para>
+    <para>
+    <application>Xorg</application> ライブラリは、X ウィンドウアプリケーションのすべてが利用するライブラリルーチンを提供します。
+    </para>
 @z
 
 @x
@@ -56,25 +55,25 @@
 @x
         <para>Download (HTTP): <ulink url="&x7libs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&x7libs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&x7libs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&x7libs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&x7libs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&x7libs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: <ulink url="&x7libs-md5sum;"/></para>
 @y
-        <para>ダウンロード MD5 sum: <ulink url="&x7libs-md5sum;"/></para>
+        <para>&Download; MD5 sum: <ulink url="&x7libs-md5sum;"/></para>
 @z
 
 @x
         <para>Download size: &x7libs-size;</para>
 @y
-        <para>ダウンロードサイズ: &x7libs-size;</para>
+        <para>&DownloadSize;: &x7libs-size;</para>
 @z
 
 @x
@@ -104,7 +103,7 @@
 @x
     <bridgehead renderas="sect3">Xorg Libraries Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xorg ライブラリの依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Xorg ライブラリ&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -156,43 +155,41 @@
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
-<para>
-必要なファイルをダウンロードするために
-<application>wget</application> を使って以下を実行します。
-</para>
+    <para>
+    必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
+    </para>
 @z
 
 @x
     <title>Installation of Xorg Libraries</title>
 @y
-    <title>Xorg ライブラリのインストール</title>
+    <title>&InstallationOf1;Xorg ライブラリ&InstallationOf2;</title>
 @z
 
 @x
     <para>Install the libraries by running the following commands for each
     package:</para>
 @y
-<para>
-ライブラリをインストールするために、個々のパッケージにて以下を実行します。
-</para>
+    <para>
+    ライブラリをインストールするために、個々のパッケージにて以下を実行します。
+    </para>
 @z
 
 @x
     <para>These packages do not provide test suites.</para>
 @y
-<para>
-個々のパッケージにテストスイートはありません。
-</para>
+    <para>
+    個々のパッケージにテストスイートはありません。
+    </para>
 @z
 
 @x
     <para>Now as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -205,8 +202,9 @@
     <para><parameter>--with-fop</parameter>: Use <xref linkend="fop"/> to
     generate PDF documentation (only for the libXfont package).</para>
 @y
-    <para><parameter>--with-fop</parameter>: Use <xref linkend="fop"/> to
-    generate PDF documentation (only for the libXfont package).</para>
+    <para><parameter>--with-fop</parameter>:
+    PDF ドキュメントを生成するのに <xref linkend="fop"/> を利用します。(libXfont パッケージにおいてのみ必要)
+    </para>
 @z
 
 @x
@@ -216,17 +214,16 @@
     this parameter (or the entire <command>case</command> statement) if a text
     browser is installed.</para>
 @y
-    <para><parameter>--disable-devel-docs</parameter>: Disable generation of
-    text documentation in the libXfont package if
-    <xref linkend="xmlto"/> is installed without a text browser. Omit
-    this parameter (or the entire <command>case</command> statement) if a text
-    browser is installed.</para>
+    <para><parameter>--disable-devel-docs</parameter>:
+    テキストブラウザー機能のない <xref linkend="xmlto"/> をインストールしている場合に、テキストドキュメントを生成しないようにします。
+    テキストブラウザー機能がある場合は、このパラメーター (あるいは <command>case</command> 文全体) を取り除いてください。
+    </para>
 @z
 
 @x
     <title>Configuration of Xorg Libraries</title>
 @y
-    <title>Xorg ライブラリの設定</title>
+    <title>&Configuring1;Xorg ライブラリ&Configuring2;</title>
 @z
 
 @x
@@ -237,12 +234,12 @@
     to satisfy the expected environment of several packages.
     Execute the following commands as the root user:</para>
 @y
-    <para>If you've chosen to install <application>Xorg</application> into
-    <filename class="directory">/usr</filename>, then no further
-    configuration is necessary and you can skip the rest of this section.
-    If you've opted for an alternate prefix, you should create three symlinks
-    to satisfy the expected environment of several packages.
-    Execute the following commands as the root user:</para>
+    <para>
+    <application>Xorg</application> のインストール先を <filename
+    class="directory">/usr</filename> としている場合は、これ以降の設定は不要ですから残りの説明は読み飛ばしてください。
+    異なるインストール先を選んでいる場合は、他のパッケージが要求する環境設定に合わせて、以下の３つのシンボリックリンクを生成します。
+    root ユーザーになって以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -300,6 +297,5 @@
 @x cxpm
           <para>checks the format of an XPM file.</para>
 @y
-          <para>checks the format of an XPM file.</para>
+          <para>XPM ファイルのフォーマットをチェックします。</para>
 @z
-

@@ -26,19 +26,17 @@
 @z
 
 @x
-    <para><application>Liboauth</application> liboauth is a collection of POSIX-c
+    <para><application>Liboauth</application> is a collection of POSIX-C
     functions implementing the OAuth Core RFC 5849 standard. Liboauth provides
     functions to escape and encode parameters according to OAuth specification and
     offers high-level functionality to sign requests or verify OAuth signatures as
     well as perform HTTP requests.</para>
 @y
-    <para>
-    <application>Liboauth</application> liboauth is a collection of POSIX-c
+    <para><application>Liboauth</application> is a collection of POSIX-C
     functions implementing the OAuth Core RFC 5849 standard. Liboauth provides
     functions to escape and encode parameters according to OAuth specification and
     offers high-level functionality to sign requests or verify OAuth signatures as
-    well as perform HTTP requests.
-    </para>
+    well as perform HTTP requests.</para>
 @z
 
 @x
@@ -91,10 +89,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="curl"/></para>
+    <para role="required">
+      <xref linkend="curl"/> and
+      <xref linkend="openssl"/> or <xref linkend="nss"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="curl"/></para>
+    <para role="required">
+      <xref linkend="curl"/>,
+      <xref linkend="openssl"/> または <xref linkend="nss"/>
+    </para>
 @z
 
 @x
@@ -143,13 +147,17 @@
 @z
 
 @x
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    libraries being installed.</para>
+    <para><option>--disable-static</option>: This switch prevents static
+    libraries from being installed.</para>
 @y
-    <para>
-    <option>--enable-static=no</option>:
-    このスイッチはスタティックライブラリをビルドしないようにします。
-    </para>
+    <para><option>--disable-static</option>:
+    このスイッチはスタティックライブラリをビルドしないようにします。</para>
+@z
+
+@x
+    <para><option>--enable-nss</option>: Use NSS instead of OpenSSL.</para>
+@y
+    <para><option>--enable-nss</option>: OpenSSL ではなく NSS を利用するようにします。</para>
 @z
 
 @x

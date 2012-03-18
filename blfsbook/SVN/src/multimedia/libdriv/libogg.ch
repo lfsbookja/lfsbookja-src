@@ -16,13 +16,13 @@
 @x
   <!ENTITY libogg-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libogg-time          "0.1 SBU 以下">
+  <!ENTITY libogg-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libogg</title>
 @y
-    <title>libogg の概要</title>
+    <title>&IntroductionTo1;libogg&IntroductionTo2;</title>
 @z
 
 @x
@@ -89,7 +89,7 @@
 @x
     <title>Installation of libogg</title>
 @y
-    <title>libogg のインストール</title>
+    <title>&InstallationOf1;libogg&InstallationOf2;</title>
 @z
 
 @x
@@ -154,7 +154,7 @@
         <seg>libogg.{so,a}</seg>
         <seg>/usr/include/ogg and /usr/share/doc/libogg-&libogg-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libogg.{so,a}</seg>
         <seg>/usr/include/ogg, /usr/share/doc/libogg-&libogg-version;</seg>
 @z

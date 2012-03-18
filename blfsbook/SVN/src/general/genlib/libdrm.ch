@@ -156,12 +156,12 @@
         <seg>None</seg>
         <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
         libdrm_radeon.so, and libkms.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/{libdrm,libkms,nouveau}</seg>
 @y
         <seg>&None;</seg>
         <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
         libdrm_radeon.so, libkms.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/drm</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/{libdrm,libkms,nouveau}</seg>
 @z
 
 @x

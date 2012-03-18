@@ -151,7 +151,16 @@
     <application>sudo</application> insult sets.</para>
 @y
     <para><option>--with-all-insults</option>:
-    このパラメーターは <application>sudo</application> が表示する侮辱の文言をすべて含めます。
+    このスイッチは <application>sudo</application> が表示する侮辱の文言をすべて含めます。
+    </para>
+@z
+
+@x
+    <para><option>--with-env-editor</option>: This switch enables use of the 
+    environment variable EDITOR for <command>visudo</command>.</para>
+@y
+    <para><option>--with-env-editor</option>:
+    このスイッチは <command>visudo</command> において環境変数 EDITOR の利用を有効にします。
     </para>
 @z
 
@@ -229,10 +238,9 @@
       needed.  This can be configured as:</para>
 @y
       <para>
-      
-      One example usage is to allow the system administrator to execute
-      any program without typing a password each time root privileges are
-      needed.  This can be configured as:
+      以下はシステム管理者に対する設定の例です。
+      root 権限を必要とする場合であっても、パスワードを入力せずにプログラムを実行できるようにします。
+      以下の設定により実現します。
       </para>
 @z
 
@@ -253,10 +261,7 @@
 @y
         <para>
         <application>Sudo</application> 開発者は <filename>sudoers</filename> ファイルを編集する際には <command>visudo</command> コマンドを利用することを強く推奨しています。
-        
-        This will provide basic sanity
-        checking like syntax parsing and file permission to avoid some possible
-        mistakes that could lead to a vulnerable configuration.
+        文法チェックやファイルパーミッションなどの基本的な整合性を確保するものであり、ちょっとしたミスによって脆弱な設定とならないようにするものです。
         </para>
 @z
 
@@ -334,15 +339,26 @@
           </para>
 @z
 
+@x sudoreplay
+          <para>is used to play back or list the output 
+          logs created by <command>sudo</command>.</para>
+@y
+          <para><command>sudo</command> によって生成されたログを一覧表示したり再実行したりします。</para>
+@z
+
+@x sudoers.so
+          <para>is default sudo security policy module.</para>
+@y
+          <para>sudo のデフォルトのセキュリティポリシーモジュール。</para>
+@z
+
 @x sudo_noexec.so
           <para>enables support for the "noexec" functionality which prevents
            a dynamically-linked program being run by sudo from executing
            another program (think shell escapes).</para>
 @y
           <para>
-          
-          enables support for the "noexec" functionality which prevents
-          a dynamically-linked program being run by sudo from executing
-          another program (think shell escapes).
+          "noexec" 機能サポートを有効にします。
+          他のプログラム (シェルエスケープなどが想定される) によって sudo が動的リンクされ実行されるのを防ぎます。
           </para>
 @z

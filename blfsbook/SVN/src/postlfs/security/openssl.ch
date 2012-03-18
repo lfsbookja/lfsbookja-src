@@ -137,7 +137,7 @@
 @x
       If you want to disable installing the static libraries, use this sed:
 @y
-      If you want to disable installing the static libraries, use this sed:
+      スタティックライブラリをインストールしたくない場合は、以下の sed コマンドを実行します。
 @z
 
 @x
@@ -262,7 +262,7 @@
         <seg>/etc/ssl, /usr/include/openssl, /usr/lib/engines
         and /usr/share/doc/openssl-&openssl-version;</seg>
 @y
-        <seg>c_rehash and openssl</seg>
+        <seg>c_rehash, openssl</seg>
         <seg>
           libcrypto.{so,a}, libssl.{so,a}, 
           /usr/lib/engines/ にインストールされるその他の暗号化ライブラリ (lib4758cca.so, libaep.so,

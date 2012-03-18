@@ -319,6 +319,15 @@
           </para>
 @z
 
+@x tiffcrop
+          <para> selects, copies, crops, converts, extracts, and/or processes
+          one or more TIFF files. .</para>
+@y
+          <para>
+          複数の TIFF ファイルに対してのコピー、切り取り、変換、抽出などを行います。
+          </para>
+@z
+
 @x tiffdither
           <para>converts a grayscale image to bilevel using dithering.</para>
 @y

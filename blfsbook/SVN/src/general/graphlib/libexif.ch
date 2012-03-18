@@ -147,6 +147,21 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--disable-static</option>:
+    このスイッチはスタティックライブラリをインストールしないようにします。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

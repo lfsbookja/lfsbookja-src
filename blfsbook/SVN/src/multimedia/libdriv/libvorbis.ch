@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libvorbis</title>
 @y
-    <title>libvorbis の概要</title>
+    <title>&IntroductionTo1;libvorbis&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,10 +25,10 @@
     (encoding) and playing (decoding) sound in an open (patent free)
     format.</para>
 @y
-    <para>The <application>libvorbis</application> package contains a general
-    purpose audio and music encoding format. This is useful for creating
-    (encoding) and playing (decoding) sound in an open (patent free)
-    format.</para>
+    <para>
+    <application>libvorbis</application> パッケージは、汎用的なオーディオおよびミュージックエンコーディングフォーマットを提供します。
+    サウンドデータの生成 (エンコーディング) や再生 (デコーディング) を、オープンな (ライセンスフリーの) フォーマットで実現します。
+    </para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">libvorbis Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libvorbis の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libvorbis&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -98,7 +98,7 @@
     <para role="optional">
     <xref linkend="doxygen"/>,
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
-    (specifically, pdflatex and htlatex) to build the PDF documentation</para>
+    (特に pdflatex と htlatexにより) PDF ドキュメント生成のために必要</para>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of libvorbis</title>
 @y
-    <title>libvorbis のインストール</title>
+    <title>&InstallationOf1;libvorbis&InstallationOf2;</title>
 @z
 
 @x
@@ -151,8 +151,8 @@
     documentation in formats other than the supplied html.</para>
 @y
     <para>
-    <option>--enable-docs</option>: This switch enables building the
-    documentation in formats other than the supplied html.
+    <option>--enable-docs</option>:
+    このスイッチは、既に提供されている HTML フォーマット以外のドキュメントを生成します。
     </para>
 @z
 
@@ -161,8 +161,8 @@
     being built and installed.</para>
 @y
     <para>
-    <option>--disable-static</option>: prevent static libraries
-    being built and installed.
+    <option>--disable-static</option>:
+    スタティックライブラリのビルドおよびインストールを行わないようにします。
     </para>
 @z
 

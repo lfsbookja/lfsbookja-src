@@ -27,9 +27,8 @@
 @y
     <para>
     <application>libpng</application> パッケージは、他のプログラムが PNG ファイルの読み書きを行うためのライブラリを提供します。
-    The PNG format was
-    designed as a replacement for GIF and, to a lesser extent, TIFF, with many
-    improvements and extensions and lack of patent problems.
+    PNG フォーマットは GIF フォーマットの代替として、また TIFF フォーマットもある程度組み入れて構築されています。
+    さまざまな機能改善や拡張が行われ、ライセンスの問題がありません。
     </para>
 @z
 
@@ -143,6 +142,21 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> になって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This option prevents it compiling
+    the static archive versions of the libraries.</para>
+@y
+    <para><option>--disable-static</option>:
+    このオプションはスタティックライブラリをビルドしないようにします。
     </para>
 @z
 

@@ -16,13 +16,13 @@
 @x
   <!ENTITY whois-time          "less than 0.1 SBU">
 @y
-  <!ENTITY whois-time          "0.1 SBU 以下">
+  <!ENTITY whois-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Whois</title>
 @y
-    <title>Whois の概要</title>
+    <title>&IntroductionTo1;Whois&IntroductionTo2;</title>
 @z
 
 @x
@@ -94,7 +94,7 @@
 @x
     <title>Installation of Whois</title>
 @y
-    <title>Whois のインストール</title>
+    <title>&InstallationOf1;Whois&InstallationOf2;</title>
 @z
 
 @x
@@ -147,8 +147,8 @@
         <seg>None</seg>
 @y
         <seg>whois, mkpasswd</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

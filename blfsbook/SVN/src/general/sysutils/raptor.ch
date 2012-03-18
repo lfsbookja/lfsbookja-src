@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Raptor</title>
 @y
-    <title>Raptor の概要</title>
+    <title>&IntroductionTo1;Raptor&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&raptor-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&raptor-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&raptor-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&raptor-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&raptor-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&raptor-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &raptor-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &raptor-md5sum;</para>
+        <para>&Download; MD5 sum: &raptor-md5sum;</para>
 @z
 
 @x
         <para>Download size: &raptor-size;</para>
 @y
-        <para>ダウンロードサイズ: &raptor-size;</para>
+        <para>&DownloadSize;: &raptor-size;</para>
 @z
 
 @x
@@ -72,9 +72,21 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required patch: <ulink
+@y
+        <para>必須のパッチ: <ulink
+@z
+
+@x
     <bridgehead renderas="sect3">Raptor Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Raptor の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Raptor&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -102,7 +114,7 @@
 @x
     <title>Installation of raptor</title>
 @y
-    <title>raptor のインストール</title>
+    <title>&InstallationOf1;raptor&InstallationOf2;</title>
 @z
 
 @x
@@ -119,6 +131,26 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>patch -Np1 -i ../raptor-&raptor-version;-curl.patch</option>: This 
+      patch fixes compiling with <application>cURL</application>.</para>
+    <para><option>--disable-static</option>: This option prevents compiling the 
+    static archive versions of the libraries.</para>
+@y
+    <para><option>patch -Np1 -i ../raptor-&raptor-version;-curl.patch</option>:
+      このパッチは <application>cURL</application> とともにコンパイルするための修正を行います。
+    </para>
+    <para><option>--disable-static</option>:
+    このオプションはスタティックライブラリをビルドしないようにします。
     </para>
 @z
 

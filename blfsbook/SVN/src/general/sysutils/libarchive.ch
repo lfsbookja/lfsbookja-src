@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,17 +16,16 @@
 @x
     <title>Introduction to libarchive</title>
 @y
-    <title>libarchive の概要</title>
+    <title>&IntroductionTo1;libarchive&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>libarchive</application> library provides a single interface for
     reading/writing various compression formats.</para>
 @y
-<para>
-<application>libarchive</application>
-ライブラリは、さまざまな圧縮フォーマットとの入出力を、ただ一つのインターフェースにより提供するものです。
-</para>
+    <para>
+    <application>libarchive</application> ライブラリは、さまざまな圧縮フォーマットとの入出力を、ただ一つのインターフェースにより提供するものです。
+    </para>
 @z
 
 @x
@@ -38,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libarchive-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libarchive-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libarchive-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libarchive-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libarchive-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libarchive-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libarchive-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libarchive-md5sum;</para>
+        <para>&Download; MD5 sum: &libarchive-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libarchive-size;</para>
 @y
-        <para>ダウンロードサイズ: &libarchive-size;</para>
+        <para>&DownloadSize;: &libarchive-size;</para>
 @z
 
 @x
@@ -74,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libarchive Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libarchive の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libarchive&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -100,24 +99,30 @@
 @x
     <title>Installation of libarchive</title>
 @y
-    <title>libarchive のインストール</title>
+    <title>&InstallationOf1;libarchive&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libarchive</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libarchive</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libarchive</application> をビルドします。
+    </para>
+@z
+
+@x
+    <para>To test the results, issue: <userinput>make check</userinput>.</para>
+@y
+    <para>ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
+    </para>
 @z
 
 @x
@@ -143,7 +148,7 @@
 @y
         <seg>bsdtar, bsdcpio</seg>
         <seg>libarchive.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -155,15 +160,15 @@
 @x bsdtar
           <para>is a tool similar to GNU <command>tar</command>.</para>
 @y
-<para>
-GNU <command>tar</command> と同等のツール。
-</para>
+          <para>
+          GNU <command>tar</command> と同等のツール。
+          </para>
 @z
 
 @x bsdcpio
           <para>is a tool similar to <command>cpio</command>.</para>
 @y
-<para>
-<command>cpio</command> と同等のツール。
-</para>
+          <para>
+          <command>cpio</command> と同等のツール。
+          </para>
 @z

@@ -14,15 +14,9 @@
 @z
 
 @x
-  <!ENTITY usbutils-time          "less than 0.1 SBU">
-@y
-  <!ENTITY usbutils-time          "0.1 SBU 以下">
-@z
-
-@x
     <title>Introduction to usbutils</title>
 @y
-    <title>usbutils の概要</title>
+    <title>&IntroductionTo1;usbutils&IntroductionTo2;</title>
 @z
 
 @x
@@ -45,25 +39,25 @@
 @x
         <para>Download (HTTP): <ulink url="&usbutils-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&usbutils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&usbutils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&usbutils-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&usbutils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&usbutils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &usbutils-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &usbutils-md5sum;</para>
+        <para>&Download; MD5 sum: &usbutils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &usbutils-size;</para>
 @y
-        <para>ダウンロードサイズ: &usbutils-size;</para>
+        <para>&DownloadSize;: &usbutils-size;</para>
 @z
 
 @x
@@ -81,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">usbutils Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">usbutils の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;usbutils&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -109,7 +103,7 @@
 @x
     <title>Installation of usbutils</title>
 @y
-    <title>usbutils のインストール</title>
+    <title>&InstallationOf1;usbutils&InstallationOf2;</title>
 @z
 
 @x
@@ -124,9 +118,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -160,7 +152,7 @@
 @x
     <title>Configuring usbutils</title>
 @y
-    <title>usbutils の設定</title>
+    <title>&Configuring1;usbutils&Configuring2;</title>
 @z
 
 @x
@@ -220,8 +212,8 @@
         <seg>None</seg>
 @y
         <seg>lsusb, update-usbids, usb-devices</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

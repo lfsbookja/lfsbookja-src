@@ -16,15 +16,15 @@
 @x
     <title>Introduction to MesaLib</title>
 @y
-    <title>MesaLib の概略</title>
+    <title>&IntroductionTo1;MesaLib&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Mesa</application> is an OpenGL compatible 3-D graphics
+    <para><application>Mesa</application> is an OpenGL compatible 3D graphics
     library.</para>
 @y
     <para>
-    <application>Mesa</application> は OpenGL 互換の 3-D グラフィックライブラリです。
+    <application>Mesa</application> は OpenGL 互換の 3D グラフィックライブラリです。
     </para>
 @z
 
@@ -37,26 +37,26 @@
 @x
         <para>Download (HTTP): <ulink url="&mesalib-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&mesalib-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&mesalib-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&mesalib-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&mesalib-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&mesalib-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &mesalib-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &mesalib-md5sum;</para>
+        <para>&Download; MD5 sum: &mesalib-md5sum;</para>
 @z
 
 @x
         <para>Download size:
         &mesalib-size;</para>
 @y
-        <para>ダウンロードサイズ:
+        <para>&DownloadSize;:
         &mesalib-size;</para>
 @z
 
@@ -76,43 +76,10 @@
         &mesalib-time;</para>
 @z
 
-% @x
-%     <bridgehead renderas="sect3">Additional Download</bridgehead>
-% @y
-%     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-% @z
-% 
-% @x
-%       <title>Recommended demonstration and diagnostic utilities for
-%       verifying OpenGL operation</title>
-% @y
-% <title>
-% OpenGL 動作検証用として推奨されるデモプログラムおよび診断ユーティリティ
-% </title>
-% @z
-% 
-% @x
-%         <para>Download (FTP): <ulink url="&mesademos-download-ftp;"/></para>
-% @y
-%         <para>ダウンロード (FTP): <ulink url="&mesademos-download-ftp;"/></para>
-% @z
-% 
-% @x
-%         <para>Download MD5 sum: &mesademos-md5sum;</para>
-% @y
-%         <para>ダウンロード MD5 sum: &mesademos-md5sum;</para>
-% @z
-% 
-% @x
-%         <para>Download size: &mesademos-size;</para>
-% @y
-%         <para>ダウンロードサイズ: &mesademos-size;</para>
-% @z
-
 @x
     <bridgehead renderas="sect3">MesaLib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">MesaLib の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;MesaLib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -135,15 +102,6 @@
       <xref linkend="talloc"/>,
       <xref linkend="xorg7-lib"/>
     </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="lesstif"/> (required to build motif
-    widgets)</para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="lesstif"/> (Motif のウィジェット構築に必要)</para>
 @z
 
 @x
@@ -231,27 +189,6 @@
 @z
 
 @x
-    <para><option>--enable-xcb</option>: use the XCB backend instead of the
-    default XLib backend for GLX.</para>
-@y
-    <para>
-    <option>--enable-xcb</option>:
-    GLX に対するバックエンドとして、デフォルトの XLib ではなく XCB バックエンドを用いるよう指定します。
-    </para>
-@z
-
-@x
-    <para><option>--enable-motif</option>: build motif widgets into the
-    GL widgets library (requires <application>lesstif</application>).</para>
-@y
-    <para>
-    <option>--enable-motif</option>:
-    GL ウィジェットライブラリにて motif ウィジェットをビルドします。
-    (<application>lesstif</application> が必要です。)
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -269,15 +206,15 @@
 
 @x
         <seg>glxgears and glxinfo</seg>
-        <seg>libEGL.so, libGL.so, libGLU.so, libGLw.so, and *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,KHR},
-        <envar>$XORG_PREFIX</envar>/lib/{dri,egl}, and
+        <seg>libEGL.so, libGL.so, libGLU.so, libxatracker.so, and *_dri.so</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,GL,KHR},
+        <envar>$XORG_PREFIX</envar>/lib/dri, and
         <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
 @y
         <seg>glxgears, glxinfo</seg>
-        <seg>libEGL.so, libGL.so, libGLU.so, libGLw.so, *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,KHR},
-        <envar>$XORG_PREFIX</envar>/lib/{dri,egl},
+        <seg>libEGL.so, libGL.so, libGLU.so, libxatracker.so, *_dri.so</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,GL,KHR},
+        <envar>$XORG_PREFIX</envar>/lib/dri,
         <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
 @z
 
@@ -329,13 +266,5 @@
 @y
           <para>
           OpenGL ユーティリティライブラリ。
-          </para>
-@z
-
-@x libGLw.so
-          <para>is the Xt/Motif OpenGL drawing area widget library.</para>
-@y
-          <para>
-          Xt/Motif OpenGL drawing area ウィジェットライブラリ。
           </para>
 @z

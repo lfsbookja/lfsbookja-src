@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pkg-config"/>,
+      <xref linkend="pkgconfig"/>,
       <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
         <filename class='libraryfile'>libffi</filename> is built), and
       <xref linkend="python2"/>
@@ -82,9 +82,8 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pkg-config"/>,
-      <xref linkend="libffi"/> または <xref linkend="gcc"/>
-        (<filename class='libraryfile'>libffi</filename> をビルドするための Java のビルドが必要),
+      <xref linkend="pkgconfig"/>,
+      <xref linkend="libffi"/> または <xref linkend="gcc"/> (<filename class='libraryfile'>libffi</filename> をビルドするための Java のビルドが必要),
       <xref linkend="python2"/>
     </para>
 @z

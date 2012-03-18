@@ -190,8 +190,8 @@
         <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby and /usr/share/ri</seg>
 @y
         <seg>erb, gem, irb, rake, rdoc, ri, ruby, testrb</seg>
-        <seg>libruby.so, libruby-static.a and numerous modules located in the
-        <filename class='directory'>/usr/lib/ruby</filename> hierarchy.</seg>
+        <seg>libruby.so, libruby-static.a,
+        <filename class='directory'>/usr/lib/ruby</filename> 配下にある数多くのモジュール</seg>
         <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby, /usr/share/ri</seg>
 @z
 
@@ -223,16 +223,19 @@
           <para>is Tiny eRuby. It interprets a
           <application>Ruby</application> code embedded text file.</para>
 @y
-          <para>is Tiny eRuby. It interprets a
-          <application>Ruby</application> code embedded text file.</para>
+          <para>
+          Tiny eRuby です。
+          これはテキストファイルに埋め込まれた <application>Ruby</application> コードを実行します。
+          </para>
 @z
 
 @x ri
           <para>displays documentation from a database on
           <application>Ruby</application> classes, modules and methods.</para>
 @y
-          <para>displays documentation from a database on
-          <application>Ruby</application> classes, modules and methods.</para>
+          <para>
+          <application>Ruby</application> のクラス、モジュール、メソッドに対するドキュメントを、データベースより表示します。
+          </para>
 @z
 
 @x libruby.so

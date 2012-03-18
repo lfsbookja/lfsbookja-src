@@ -295,3 +295,60 @@ December 6th, 2011
            かわりに "Xorg-7.6-2 設定" のページ１つとする。
 @z
 
+@x
+December 5th, 2011
+    [bdubbs] - Removed teTeX as redundant to TeX Live.
+    [dj] - Updated to blfs-bootscripts-20111205.
+@y
+2011/12/05
+    [bdubbs] - Removed teTeX as redundant to TeX Live.
+    [dj] - Updated to blfs-bootscripts-20111205.
+@z
+
+@x
+December 4th, 2011
+    [bdubbs] - Rewrote TeX Live procedures.
+    [wblaszcz] - Added libsndfile-1.0.23.
+    [wblaszcz] - Added PulseAudio-0.9.23.
+@y
+2011/12/04
+    [bdubbs] - TeX Live の手順を改訂。
+    [wblaszcz] - libsndfile-1.0.23 追加。
+    [wblaszcz] - PulseAudio-0.9.23 追加。
+@z
+
+@x
+December 2rd, 2011
+    [abenton] - Updated xine-lib to 1.1.20.
+    [abenton] - Updated xine-ui to 0.99.6.
+    [abenton] - Updated Pango to 1.29.4.
+@y
+2011/12/03
+    [abenton] - xine-lib 1.1.20 へのアップデート。
+    [abenton] - xine-ui 0.99.6 へのアップデート。
+    [abenton] - Pango 1.29.4 へのアップデート。
+@z
+
+@x
+December 2nd, 2011
+    [abenton] - Updated seamonkey to 2.5.
+    [abenton] - Updated libvpx to v0.9.7.
+@y
+2011/12/02
+    [abenton] - seamonkey 2.5 へのアップデート。
+    [abenton] - libvpx v0.9.7 へのアップデート。
+@z
+
+@x
+December 1st, 2011
+    [bdubbs] - Updated nfs related bootscripts.
+               Removed portmap in favor of rpcbind.
+    [ken] - Updated dhcp to 4.2.3.
+    [abenton] - Added yasm-1.2.0.
+@y
+2011/12/01
+    [bdubbs] - nfs 関連のブートスクリプトを更新。
+               Removed portmap in favor of rpcbind.
+    [ken] - dhcp 4.2.3 へのアップデート。
+    [abenton] - yasm-1.2.0 追加。
+@z

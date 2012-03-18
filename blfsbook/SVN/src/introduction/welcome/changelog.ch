@@ -54,6 +54,148 @@
 @z
 
 @x
+      <para>March 17th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - libdrm 2.4.32.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - MesaLib 8.0.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - liboauth 0.9.5.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - libdrm 2.4.32.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - MesaLib 8.0.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - liboauth 0.9.5.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 16th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - Modified configuration for KDE4, QT4 and ConsoleKit.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Gtk+ 3.2.4.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Poppler-0.18.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - KDE4, QT4, ConsoleKit にて設定方法を変更。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Gtk+ 3.2.4.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Poppler-0.18.2.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 15th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - Upgrade to MPlayer svn_20120315.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Openssl 1.0.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - MPlayer svn_20120315 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Openssl 1.0.1.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 14th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - added okular 4.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - upgrade to kdeartwork 4.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - added kcalc 4.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Firefox/Xulrunner 11.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - sudo 1.8.4p4.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Thunderbird 11.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libjpeg 8d.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libexif 0.6.20.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Seamonkey 2.8.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - okular 4.8.1 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kdeartwork 4.8.1 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - kcalc 4.8.1 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Firefox/Xulrunner 11.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - sudo 1.8.4p4.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Thunderbird 11.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libjpeg 8d.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libexif 0.6.20.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Seamonkey 2.8.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>March 13th, 2012</para>
       <itemizedlist>
         <listitem>
@@ -610,6 +752,110 @@
 @z
 
 @x
+      <para>February 29th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - added phonon-backend-vlc 0.5.0.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - update to phonon-backend-gstreamer 4.6.0.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - updated to stunnel-4.52.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - removed phonon-backend-xine (deprecated).</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - update to phonon 4.6.0.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - added rygel-0.12.5 from Wayne.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - added Openbox 3.5.0.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - merged seahorse-3.2.2 from Wayne.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - merged totem-3.2.1 from Wayne.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - added vinagre-3.2.2 from Wayne.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - added Apr 1.4.6.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - added Apr Util 1.4.1.</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Apache 2.4.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/02/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - phonon-backend-vlc 0.5.0 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - phonon-backend-gstreamer 4.6.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - stunnel-4.52 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - phonon-backend-xine 削除。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - phonon 4.6.0 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - rygel-0.12.5 追加。Wayne による。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Openbox 3.5.0 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - seahorse-3.2.2 マージ。Wayne による。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - totem-3.2.1 マージ。Wayne による。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - vinagre-3.2.2 追加。Wayne による。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Apr 1.4.6 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Apr Util 1.4.1 追加。</para>
+        </listitem>
+        <listitem>
+          <para>[abenton] - Apache 2.4.1.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>January 29th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add kvm-qemu-1.0.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/01/29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - kvm-qemu-1.0 追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>January 28th, 2012</para>
       <itemizedlist>
         <listitem>
@@ -707,7 +953,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>January 26th, 2012</para>
+      <para>2012/01/26</para>
       <itemizedlist>
         <listitem>
           <para>[ken] - Merge Wayne's python module changes: pygobject2
@@ -848,7 +1094,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>January 8th, 2012</para>
+      <para>2012/01/08</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - vim-7.3 へのアップデート。</para>
