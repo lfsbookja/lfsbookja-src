@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2012-03-20</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.3. Fixes
+           <ulink url="&lfs-ticket-root;3042">#3042</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Kmod-7. Fixes
+           <ulink url="&lfs-ticket-root;3041">#3041</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Udev-182. Fixes
+           <ulink url="&lfs-ticket-root;3040">#3040</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-03-20</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Linux-3.3 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3042">#3042</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Kmod-7 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3041">#3041</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Udev-182 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3040">#3040</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-14</para>
       <itemizedlist>
          <listitem>
