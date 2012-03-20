@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GConf</title>
 @y
-    <title>GConf の概要</title>
+    <title>&IntroductionTo1;GConf&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">GConf Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GConf の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GConf&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -124,7 +124,7 @@
 @x
     <title>Installation of GConf</title>
 @y
-    <title>GConf のインストール</title>
+    <title>&InstallationOf1;GConf&InstallationOf2;</title>
 @z
 
 @x

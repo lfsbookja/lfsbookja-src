@@ -16,7 +16,7 @@
 @x
   <!ENTITY which-time          "less than 0.1 SBU">
 @y
-  <!ENTITY which-time          "0.1 SBU 以下">
+  <!ENTITY which-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -33,31 +33,29 @@
   your system with <command>which</command>. The question of which
   <quote><command>which</command></quote> is for you to decide.</para>
 @y
-<para>
-<command>which</command>
-プログラムを LFS ブックに含めるべきかどうかは、メーリングリストにてかねてより議論されているところです。
-過去には激しい議論だけに終わってしまった経緯もあります。
-できればこの議論を終わりにしたいと考えています。
-ここでは <command>which</command>
-を導入する２つの方法を示します。
-どちらの方法を取るかは、みなさんが取り決めてください。
-</para>
+  <para>
+  <command>which</command>
+  プログラムを LFS ブックに含めるべきかどうかは、メーリングリストにてかねてより議論されているところです。
+  過去には激しい議論だけに終わってしまった経緯もあります。
+  できればこの議論を終わりにしたいと考えています。
+  ここでは <command>which</command> を導入する２つの方法を示します。
+  どちらの方法を取るかは、みなさんが取り決めてください。
+  </para>
 @z
 
 @x
   <para>The first option is to install the actual GNU
   <application>which</application> package.</para>
 @y
-<para>
-１つの方法は GNU の <application>which</application>
-パッケージを導入することです。
-</para>
+  <para>
+  １つの方法は GNU の <application>which</application> パッケージを導入することです。
+  </para>
 @z
 
 @x
     <title>Introduction to Which</title>
 @y
-    <title>Which の概要</title>
+    <title>&IntroductionTo1;Which&IntroductionTo2;</title>
 @z
 
 @x
@@ -69,25 +67,25 @@
 @x
         <para>Download (HTTP): <ulink url="&which-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&which-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&which-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&which-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&which-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&which-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &which-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &which-md5sum;</para>
+        <para>&Download; MD5 sum: &which-md5sum;</para>
 @z
 
 @x
         <para>Download size: &which-size;</para>
 @y
-        <para>ダウンロードサイズ: &which-size;</para>
+        <para>&DownloadSize;: &which-size;</para>
 @z
 
 @x
@@ -113,34 +111,30 @@
 @x
     <title>Installation of Which</title>
 @y
-    <title>Which のインストール</title>
+    <title>&InstallationOf1;Which&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>which</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>which</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>which</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -165,8 +159,8 @@
         <seg>None</seg>
 @y
         <seg>which</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -179,16 +173,15 @@
           <para>shows the full path of (shell) commands installed in your
           <envar>PATH</envar>.</para>
 @y
-<para>
-<envar>PATH</envar> ディレクトリ内にインストールされている
-(シェル) コマンドのフルパスを表示します。
-</para>
+          <para>
+          <envar>PATH</envar> ディレクトリ内にインストールされている (シェル) コマンドのフルパスを表示します。
+          </para>
 @z
 
 @x
     <title>The 'which' Script</title>
 @y
-    <title>'which' スクリプト</title>
+    <title>'which' &Script;</title>
 @z
 
 @x
@@ -196,21 +189,18 @@
     is to create a simple script (execute as the
     <systemitem class="username">root</systemitem> user):</para>
 @y
-<para>
-もう１つの方法 (パッケージをインストールしたくない方) は、単純なスクリプトを作ります。
-(これは <systemitem class="username">root</systemitem>
-ユーザーになって実行します。)
-
-</para>
+    <para>
+    もう１つの方法 (パッケージをインストールしたくない方) は、単純なスクリプトを作ります。
+    (これは <systemitem class="username">root</systemitem> ユーザーになって実行します。)
+    </para>
 @z
 
 @x
     <para>This should work OK and is probably the easiest solution
     for most cases, but is not the most comprehensive implementation.</para>
 @y
-<para>
-このスクリプトは、しっかりと動作しますので、目的を達するための最も簡単な方法と言うことができます。
-ただし必ずしも分かりやすい実装というわけでもありません。
-</para>
+    <para>
+    このスクリプトは、しっかりと動作しますので、目的を達するための最も簡単な方法と言うことができます。
+    ただし必ずしも分かりやすい実装というわけでもありません。
+    </para>
 @z
-

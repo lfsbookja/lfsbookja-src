@@ -24,8 +24,7 @@
     "Open Collaboration Service" providers.</para>
 @y
     <para>
-    <application>Attica</application> is a library to access 
-    "Open Collaboration Service" providers.
+    <application>Attica</application> は "オープンコラボレーションサービス" ("Open Collaboration Service") プロバイダーにアクセスするためのライブラリを提供します。
     </para>
 @z
 

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to S-Lang</title>
 @y
-    <title>S-Lang の概要</title>
+    <title>&IntroductionTo1;S-Lang&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&slang-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&slang-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&slang-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&slang-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&slang-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&slang-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &slang-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &slang-md5sum;</para>
+        <para>&Download; MD5 sum: &slang-md5sum;</para>
 @z
 
 @x
         <para>Download size: &slang-size;</para>
 @y
-        <para>ダウンロードサイズ: &slang-size;</para>
+        <para>&DownloadSize;: &slang-size;</para>
 @z
 
 @x
@@ -77,7 +77,7 @@
 @x
     <bridgehead renderas="sect3">S-Lang Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">S-Lang の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;S-Lang&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
     <title>Installation of S-Lang</title>
 @y
-    <title>S-Lang のインストール</title>
+    <title>&InstallationOf1;S-Lang&InstallationOf2;</title>
 @z
 
 @x
@@ -115,8 +115,7 @@
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して
-    <application>S-Lang</application> をビルドします。
+    以下のコマンドを実行して <application>S-Lang</application> をビルドします。
     </para>
 @z
 
@@ -144,16 +143,6 @@
 @y
     <title>&CommandExplanations;</title>
 @z
-
-% @x
-%     <para><command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
-%     This sed fixes a buffer-overflow bug.</para>
-% @y
-%     <para>
-%     <command>sed -i 's/&lt;=/&lt;/' src/slagetput.inc</command>:
-%     この sed コマンドは、バッファオーバーフローのバグを修正します。
-%     </para>
-% @z
 
 @x
     <para><command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
@@ -197,12 +186,6 @@
       <filename>/etc/slsh.rc</filename></para>
 @z
 
-% @x
-%       <title>Configuration Information</title>
-% @y
-%       <title>&ConfigInfo;</title>
-% @z
-
 @x
     <title>Contents</title>
 @y
@@ -244,8 +227,8 @@
           <application>Readline</application> interface for interactive
           use.</para>
 @y
-    <para>
-    <application>S-Lang</application> スクリプトを解釈する単純なプログラムです。
-    これは <application>S-Lang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。
-    </para>
+          <para>
+          <application>S-Lang</application> スクリプトを解釈する単純なプログラムです。
+          これは <application>S-Lang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。
+          </para>
 @z

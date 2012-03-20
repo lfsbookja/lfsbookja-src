@@ -150,6 +150,20 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</option>: This option ensures that the plugins and mkspecs files get installed in the correct location.</para>
+@y
+    <para><option>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</option>:
+    このオプションは、プラグインと mkspecs ファイルを適切なディレクトリにインストールします。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

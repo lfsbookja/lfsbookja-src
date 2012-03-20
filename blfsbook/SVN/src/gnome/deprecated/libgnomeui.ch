@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libgnomeui</title>
 @y
-    <title>libgnomeui の概要</title>
+    <title>&IntroductionTo1;libgnomeui&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libgnomeui-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libgnomeui-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libgnomeui-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libgnomeui-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libgnomeui-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libgnomeui-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libgnomeui-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libgnomeui-md5sum;</para>
+        <para>&Download; MD5 sum: &libgnomeui-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libgnomeui-size;</para>
 @y
-        <para>ダウンロードサイズ: &libgnomeui-size;</para>
+        <para>&DownloadSize;: &libgnomeui-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libgnomeui Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgnomeui の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgnomeui&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -111,7 +111,7 @@
 @x
     <title>Installation of libgnomeui</title>
 @y
-    <title>libgnomeui のインストール</title>
+    <title>&InstallationOf1;libgnomeui&InstallationOf2;</title>
 @z
 
 @x
@@ -166,14 +166,15 @@
     <para><option>--disable-static</option>: This switch prevents the static
     libraries being installed.</para>
 @y
-    <para><option>--disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
+    <para><option>--disable-static</option>:
+    このスイッチはスタティックライブラリをインストールしないようにします。
+    </para>
 @z
 
 @x
     <title>Configuring libgnomeui</title>
 @y
-    <title>libgnomeui の設定</title>
+    <title>&Configuring1;libgnomeui&Configuring2;</title>
 @z
 
 @x
@@ -222,7 +223,7 @@
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomeui-2.0/libgnomeui,
         share/gtk-doc/html/libgnomeui}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libgnomeui-2.{so,a}, libgnome.{so,a} Glade ライブラリ</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomeui-2.0/libgnomeui,
         share/gtk-doc/html/libgnomeui}</seg>

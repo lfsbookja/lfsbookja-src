@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Zip</title>
 @y
-    <title>Zip の概要</title>
+    <title>&IntroductionTo1;Zip&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,13 +25,10 @@
     are useful for compressing files into <filename>ZIP</filename>
     archives.</para>
 @y
-<para>
-<application>Zip</application>
-パッケージは <application>Zip</application>
-ユーティリティを提供します。
-ファイルを <filename>ZIP</filename>
-アーカイブ形式に圧縮する際に利用します。
-</para>
+    <para>
+    <application>Zip</application> パッケージは <application>Zip</application> ユーティリティを提供します。
+    ファイルを <filename>ZIP</filename> アーカイブ形式に圧縮する際に利用します。
+    </para>
 @z
 
 @x
@@ -43,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&zip-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&zip-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&zip-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&zip-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&zip-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&zip-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &zip-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &zip-md5sum;</para>
+        <para>&Download; MD5 sum: &zip-md5sum;</para>
 @z
 
 @x
         <para>Download size: &zip-size;</para>
 @y
-        <para>ダウンロードサイズ: &zip-size;</para>
+        <para>&DownloadSize;: &zip-size;</para>
 @z
 
 @x
@@ -87,34 +84,30 @@
 @x
     <title>Installation of Zip</title>
 @y
-    <title>Zip のインストール</title>
+    <title>&InstallationOf1;Zip&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>Zip</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>Zip</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Zip</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -131,17 +124,12 @@
     Alternatives to <option>generic_gcc</option> can be seen with a
     <command>make -f unix/Makefile list</command> command.</para>
 @y
-<para>
-<command>make prefix=/usr -f unix/Makefile install</command>:
-このコマンドは <filename>unix/Makefile</filename>
-ファイルにて <varname>prefix</varname>
-変数が <filename class='directory'>/usr/local</filename>
-に設定されているものを上書き設定するものです。
-<option>generic_gcc</option>
-ではない、別のオプションについては
-<command>make -f unix/Makefile list</command>
-を実行することで確認できます。
-</para>
+    <para>
+    <command>make prefix=/usr -f unix/Makefile install</command>:
+    このコマンドは <filename>unix/Makefile</filename> ファイルにて <varname>prefix</varname> 変数が <filename
+    class='directory'>/usr/local</filename> に設定されているものを上書き設定するものです。
+    <option>generic_gcc</option> ではない、別のオプションについては <command>make -f unix/Makefile list</command> を実行することで確認できます。
+    </para>
 @z
 
 @x
@@ -166,8 +154,8 @@
         <seg>None</seg>
 @y
         <seg>zip, zipcloak, zipnote, zipsplit</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -179,35 +167,33 @@
 @x zip
           <para>compresses files into a <filename>ZIP</filename> archive.</para>
 @y
-<para>
-<filename>ZIP</filename> アーカイブとしてファイルを圧縮します。
-</para>
+          <para>
+          <filename>ZIP</filename> アーカイブとしてファイルを圧縮します。
+          </para>
 @z
 
 @x zipcloak
           <para>is a utility to encrypt and decrypt a <filename>ZIP</filename> archive.</para>
 @y
-<para>
-<filename>ZIP</filename> アーカイブの暗号化と復号化を行います。
-</para>
+          <para>
+          <filename>ZIP</filename> アーカイブの暗号化と復号化を行います。
+          </para>
 @z
 
 @x zipnote
           <para>reads or writes comments stored in a <filename>ZIP</filename>
           file.</para>
 @y
-<para>
-<filename>ZIP</filename>
-ファイル内に含まれるコメントの読み込み、書き込みを行います。
-</para>
+          <para>
+          <filename>ZIP</filename> ファイル内に含まれるコメントの読み込み、書き込みを行います。
+          </para>
 @z
 
 @x zipsplit
           <para>is a utility to split <filename>ZIP</filename> files into
           smaller files.</para>
 @y
-<para>
-<filename>ZIP</filename> ファイルを容量の小さなファイルに分割します。
-</para>
+          <para>
+          <filename>ZIP</filename> ファイルを容量の小さなファイルに分割します。
+          </para>
 @z
-

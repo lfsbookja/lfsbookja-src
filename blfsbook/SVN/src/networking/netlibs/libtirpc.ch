@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libtirpc</title>
 @y
-    <title>libtirpc の概要</title>
+    <title>&IntroductionTo1;libtirpc&IntroductionTo2;</title>
 @z
 
 @x
@@ -94,7 +94,19 @@
 @x
     <bridgehead renderas="sect3">libtirpc Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libtirpc の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libtirpc&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="optional">
+      <xref linkend="pkgconfig"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="optional">
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
@@ -120,7 +132,7 @@
 @x
     <title>Installation of libtirpc</title>
 @y
-    <title>libtirpc のインストール</title>
+    <title>&InstallationOf1;libtirpc&InstallationOf2;</title>
 @z
 
 @x
@@ -225,7 +237,7 @@
         <seg>liblibtirpc.{so,a}</seg>
         <seg>/usr/include/libtirpc</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>liblibtirpc.{so,a}</seg>
         <seg>/usr/include/libtirpc</seg>
 @z

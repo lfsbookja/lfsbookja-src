@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "March 16th, &year;">
+<!ENTITY releasedate  "March 18th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY jversion     "20120317">
-<!ENTITY jratio       "47.5 &percnt; (再カウント要)">
 <!ENTITY releasedate  "&year;/&month;/&day;">
+<!ENTITY jversion     "20120320">
+<!ENTITY jratio       "44.7 &percnt;">
 @z
 
 @x
@@ -69,7 +69,9 @@
 <!ENTITY LessThan2    " 以下">
 <!ENTITY None         "なし">
 <!ENTITY Module       "モジュール">
+<!ENTITY Bindings     "バインディング">
 <!ENTITY Utilities    "ユーティリティ">
+<!ENTITY Script       "スクリプト">
 <!ENTITY BootScript   "ブートスクリプト">
 <!ENTITY InitScript   "初期化スクリプト">
 @z

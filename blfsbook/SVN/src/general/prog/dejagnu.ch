@@ -16,7 +16,7 @@
 @x
     <title>Introduction to DejaGnu</title>
 @y
-    <title>DejaGnu の概要</title>
+    <title>&IntroductionTo1;DejaGnu&IntroductionTo2;</title>
 @z
 
 @x
@@ -43,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&dejagnu-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&dejagnu-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&dejagnu-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&dejagnu-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&dejagnu-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&dejagnu-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &dejagnu-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &dejagnu-md5sum;</para>
+        <para>&Download; MD5 sum: &dejagnu-md5sum;</para>
 @z
 
 @x
         <para>Download size: &dejagnu-size;</para>
 @y
-        <para>ダウンロードサイズ: &dejagnu-size;</para>
+        <para>&DownloadSize;: &dejagnu-size;</para>
 @z
 
 @x
@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect3">DejaGnu Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">DejaGnu の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;DejaGnu&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -109,7 +109,7 @@
 @x
     <title>Installation of DejaGnu</title>
 @y
-    <title>DejaGnu のインストール</title>
+    <title>&InstallationOf1;DejaGnu&InstallationOf2;</title>
 @z
 
 @x
@@ -164,7 +164,7 @@
         <seg>/usr/share/dejagnu</seg>
 @y
         <seg>runtest</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg><filename class='directory'>/usr/share/dejagnu</filename>
         ディレクトリ配下にインストールされる数多くの <application>Expect</application> スクリプト</seg>
         <seg>/usr/share/dejagnu</seg>

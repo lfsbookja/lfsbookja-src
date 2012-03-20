@@ -16,7 +16,7 @@
 @x
     <title>Introduction to freeglut</title>
 @y
-    <title>freeglut の概略</title>
+    <title>&IntroductionTo1;freeglut&IntroductionTo2;</title>
 @z
 
 @x
@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">freeglut Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">freeglut の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;freeglut&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -100,7 +100,7 @@
 @x
     <title>Installation of freeglut</title>
 @y
-    <title>freeglut のインストール</title>
+    <title>&InstallationOf1;freeglut&InstallationOf2;</title>
 @z
 
 @x
@@ -115,9 +115,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -133,6 +131,15 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This option stops it compiling a
+    static version of the library.</para>
+@y
+    <para><option>--disable-static</option>:
+    このオプションはスタティックライブラリをビルドしないようにします。
+    </para>
 @z
 
 @x
@@ -168,6 +175,6 @@
           Toolkit.</para>
 @y
           <para>
-          OpenGL ユーティリティー ツールキット (OpenGL Utility Toolkit) を実装した関数を提供します。
+          OpenGL ユーティリティーツールキット (OpenGL Utility Toolkit) を実装した関数を提供します。
           </para>
 @z

@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libxklavier-time          "less than 0.1 SBU">
+@y
+  <!ENTITY libxklavier-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to libxklavier</title>
 @y
     <title>&IntroductionTo1;libxklavier&IntroductionTo2;</title>

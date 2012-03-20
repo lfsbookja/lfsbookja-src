@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GDM</title>
 @y
-    <title>GDM の概要</title>
+    <title>&IntroductionTo1;GDM&IntroductionTo2;</title>
 @z
 
 @x
@@ -25,7 +25,7 @@
     useful for allowing configurable graphical logins.</para>
 @y
     <para>
-    <application>GDM</application> パッケージは、<application>GNOME</application> のディスプレイマネジャーデーモン (Display Manager daemon) を提供します。
+    <application>GDM</application> パッケージは、<application>GNOME</application> のディスプレイマネージャーデーモン (Display Manager daemon) を提供します。
     これは設定変更が容易なグラフィカルログインを実現します。
     </para>
 @z
@@ -75,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">GDM Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GDM の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GDM&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -131,7 +131,7 @@
 @x
     <title>Installation of GDM</title>
 @y
-    <title>GDM のインストール</title>
+    <title>&InstallationOf1;GDM&InstallationOf2;</title>
 @z
 
 @x
@@ -150,8 +150,9 @@
     <para>Install <application>GDM</application> by running
     the following commands as an unprivileged user:</para>
 @y
-    <para>Install <application>GDM</application> by running
-    the following commands as an unprivileged user:</para>
+    <para>
+    一般ユーザーになって、以下のコマンドを実行し <application>GDM</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -213,7 +214,7 @@
 @x
     <title>Configuring GDM</title>
 @y
-    <title>GDM の設定</title>
+    <title>&Configuring1;GDM&Configuring2;</title>
 @z
 
 @x
@@ -318,7 +319,7 @@
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x

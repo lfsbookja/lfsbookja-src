@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to UPower</title>
 @y
-    <title>UPower の概要</title>
+    <title>&IntroductionTo1;UPower&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&upower-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&upower-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&upower-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&upower-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&upower-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&upower-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &upower-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &upower-md5sum;</para>
+        <para>&Download; MD5 sum: &upower-md5sum;</para>
 @z
 
 @x
         <para>Download size: &upower-size;</para>
 @y
-        <para>ダウンロードサイズ: &upower-size;</para>
+        <para>&DownloadSize;: &upower-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">UPower Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">UPower の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;UPower&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,32 +112,32 @@
 @x
     <title>Installation of UPower</title>
 @y
-    <title>UPower のインストール</title>
+    <title>&InstallationOf1;UPower&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>UPower</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>UPower</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>UPower</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x

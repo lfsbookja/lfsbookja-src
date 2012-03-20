@@ -16,13 +16,13 @@
 @x
   <!ENTITY pkgconfig-time          "less than 0.1 SBU">
 @y
-  <!ENTITY pkgconfig-time          "0.1 SBU 以下">
+  <!ENTITY pkgconfig-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to pkg-config</title>
 @y
-    <title>pkg-config の概要</title>
+    <title>&IntroductionTo1;pkg-config&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,25 +46,25 @@
 @x
         <para>Download (HTTP): <ulink url="&pkgconfig-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&pkgconfig-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&pkgconfig-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&pkgconfig-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&pkgconfig-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&pkgconfig-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &pkgconfig-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &pkgconfig-md5sum;</para>
+        <para>&Download; MD5 sum: &pkgconfig-md5sum;</para>
 @z
 
 @x
         <para>Download size: &pkgconfig-size;</para>
 @y
-        <para>ダウンロードサイズ: &pkgconfig-size;</para>
+        <para>&DownloadSize;: &pkgconfig-size;</para>
 @z
 
 @x
@@ -82,7 +82,7 @@
 @x
     <bridgehead renderas="sect3">Pkg-config Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Pkg-config の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Pkg-config&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <title>Installation of pkg-config</title>
 @y
-    <title>Pkg-config のインストール</title>
+    <title>&InstallationOf1;Pkg-config&InstallationOf2;</title>
 @z
 
 @x
@@ -152,7 +152,7 @@
 @x
     <title>Configuring pkg-config</title>
 @y
-    <title>Pkg-config の設定</title>
+    <title>&Configuring1;Pkg-config&Configuring2;</title>
 @z
 
 @x
@@ -197,8 +197,8 @@
         <seg>None</seg>
 @y
         <seg>pkg-config</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -211,6 +211,7 @@
           <para>returns meta information for the specified library or
           package.</para>
 @y
-          <para>returns meta information for the specified library or
-          package.</para>
+          <para>
+          指定されたライブラリやパッケージに対するメタ情報を返します。
+          </para>
 @z

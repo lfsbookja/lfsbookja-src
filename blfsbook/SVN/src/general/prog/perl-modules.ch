@@ -16,19 +16,19 @@
 @x
   <title>Perl Modules</title>
 @y
-  <title>Perl モジュール</title>
+  <title>Perl &Module;</title>
 @z
 
 @x
     <primary sortas="a-Perl-modules">Perl modules</primary>
 @y
-    <primary sortas="a-Perl-modules">Perl モジュール</primary>
+    <primary sortas="a-Perl-modules">Perl &Module;</primary>
 @z
 
 @x
     <title>Introduction to Perl Modules</title>
 @y
-    <title>Perl モジュールの概要</title>
+    <title>&IntroductionTo1;Perl &Module;&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,33 +44,31 @@
     an external URL are in the latter form, as these are the official package
     names.</para>
 @y
-<para>
-<application>Perl</application>
-モジュールパッケージは <application>Perl</application>
-言語に対して有用なオブジェクトを追加するものです。
-BLFS において利用するモジュールパッケージ、およびその依存パッケージを以下に示します。
-
-Installation of the modules shown on this page should be accomplished by
-installing the listed dependencies (from the bottom and working up to the
-top) and then the desired module. Most references to
-<application>Perl</application> modules are in the form of Module,
-Module::SubName or Module::Sub::Name, though sometimes you'll see Module,
-Module-SubName or Module-Sub-Name. The references on this page that reflect
-an external URL are in the latter form, as these are the official package
-names.
-</para>
+    <para>
+    <application>Perl</application> モジュールパッケージは <application>Perl</application> 言語に対して有用なオブジェクトを追加するものです。
+    BLFS において利用するモジュールパッケージ、およびその依存パッケージを以下に示します。
+    
+    Installation of the modules shown on this page should be accomplished by
+    installing the listed dependencies (from the bottom and working up to the
+    top) and then the desired module. Most references to
+    <application>Perl</application> modules are in the form of Module,
+    Module::SubName or Module::Sub::Name, though sometimes you'll see Module,
+    Module-SubName or Module-Sub-Name. The references on this page that reflect
+    an external URL are in the latter form, as these are the official package
+    names.
+    </para>
 @z
 
 @x
         <para>Download MD5 sums (HTTP):
 @y
-        <para>ダウンロード MD5 sums (HTTP):
+        <para>&Download; MD5 sums (HTTP):
 @z
 
 @x
         <para>Download MD5 sums (FTP):
 @y
-        <para>ダウンロード MD5 sums (FTP):
+        <para>&Download; MD5 sums (FTP):
 @z
 
 @x
@@ -81,15 +79,12 @@ names.
       (typically near the bottom-most dependency) to avoid redundancy and
       additional clutter in the instructions.</para>
 @y
-<para>
-
-Some dependencies, such as the <xref linkend="perl-test-pod"/>
-module, are used by several of the listed dependencies of the main
-module and perhaps also the module being installed. Dependencies such as
-this are only listed once in the dependency chain for each main module
-(typically near the bottom-most dependency) to avoid redundancy and
-additional clutter in the instructions.
-</para>
+      <para>Some dependencies, such as the <xref linkend="perl-test-pod"/>
+      module, are used by several of the listed dependencies of the main
+      module and perhaps also the module being installed. Dependencies such as
+      this are only listed once in the dependency chain for each main module
+      (typically near the bottom-most dependency) to avoid redundancy and
+      additional clutter in the instructions.</para>
 @z
 
 % ----------
@@ -99,10 +94,9 @@ additional clutter in the instructions.
     <para>The Archive::Zip module allows a <application>Perl</application>
     program to create, manipulate, read, and write Zip archive files.</para>
 @y
-<para>
-Archive::Zip モジュールは、<application>Perl</application>
-プログラムにおいて Zip アーカイブファイルの生成、制御、読み書きの機能を提供します。
-</para>
+    <para>
+    Archive::Zip モジュールは、<application>Perl</application> プログラムにおいて Zip アーカイブファイルの生成、制御、読み書きの機能を提供します。
+    </para>
 @z
 
 @x
@@ -185,13 +179,11 @@ Archive::Zip モジュールは、<application>Perl</application>
     main focus of Date::Manip has been to be able to do ANY desired date/time
     operation easily.</para>
 @y
-<para>
-Date::Manip
-は、日付、時刻に関する操作を容易に実現する汎用的なルーチン群を提供します。
-２つの時刻を比較したり、ある時刻からの一定時間後の時刻を計算したり、あるいは各国の時刻を算出したりするなどの操作を簡単に行うことができます。
-Date::Manip
-では、その開発当初より、日付、時刻に関する、ありとあらゆる操作を簡単に実現することを目指して構築されています。
-</para>
+    <para>
+    Date::Manip は、日付、時刻に関する操作を容易に実現する汎用的なルーチン群を提供します。
+    ２つの時刻を比較したり、ある時刻からの一定時間後の時刻を計算したり、あるいは各国の時刻を算出したりするなどの操作を簡単に行うことができます。
+    Date::Manip では、その開発当初より、日付、時刻に関する、ありとあらゆる操作を簡単に実現することを目指して構築されています。
+    </para>
 @z
 
 @x
@@ -218,13 +210,10 @@ Date::Manip
     standard <application>Perl</application> module
     <xref linkend="perl-standard-install"/>.</para>
 @y
-<para>
-XML::Parser モジュールは James Clark
-氏による XML パーサー <application>expat</application>
-への <application>Perl</application> 拡張インターフェースです。
-このモジュールは標準的な <application>Perl</application>
-モジュールの <xref linkend="perl-standard-install"/> によりインストールします。
-</para>
+    <para>
+    XML::Parser モジュールは James Clark 氏による XML パーサー <application>expat</application> への <application>Perl</application> 拡張インターフェースです。
+    このモジュールは標準的な <application>Perl</application> モジュールの <xref linkend="perl-standard-install"/> によりインストールします。
+    </para>
 @z
 
 @x
@@ -254,19 +243,17 @@ XML::Parser モジュールは James Clark
     <para>Install <application>Perl</application> modules by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>Perl</application> モジュールをビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Perl</application> モジュールをビルドします。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -276,13 +263,13 @@ XML::Parser モジュールは James Clark
       other versions of the module being reinstalled (not simply older ones)
       set the <varname>UNINST</varname> variable:</para>
 @y
-<para>
-
-When reinstalling a <application>Perl</application> module,
-sometimes older versions of the module being reinstalled are in other
-directories specified in <parameter>@INC</parameter>.  To delete all
-other versions of the module being reinstalled (not simply older ones)
-set the <varname>UNINST</varname> variable:
-</para>
+    <para>
+    
+    When reinstalling a <application>Perl</application> module,
+    sometimes older versions of the module being reinstalled are in other
+    directories specified in <parameter>@INC</parameter>.  To delete all
+    other versions of the module being reinstalled (not simply older ones)
+    set the <varname>UNINST</varname> variable:
+    </para>
 @z
 

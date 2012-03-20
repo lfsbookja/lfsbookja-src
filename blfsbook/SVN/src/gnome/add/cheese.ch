@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">cheese Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">cheese の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;cheese&Dependencies2;</bridgehead>
 @z
 
 @x

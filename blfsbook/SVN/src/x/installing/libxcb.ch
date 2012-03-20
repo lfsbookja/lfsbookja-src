@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libxcb</title>
 @y
-    <title>libxcb の概要</title>
+    <title>&IntroductionTo1;libxcb&IntroductionTo2;</title>
 @z
 
 @x
@@ -28,9 +28,8 @@
     <para>
     <application>libxcb</application> パッケージは、X ウィンドウシステムプロトコルへのインターフェースを提供します。
     これは Xlib インターフェースに代わるものとなります。
-    
-    Xlib can also use XCB as a transport layer, allowing software to make
-    requests and receive responses with both.
+    Xlib はトランスポート層として XCB も利用します。
+    これによりソフトウェアによるリクエストとレスポンスの双方を可能とします。
     </para>
 @z
 
@@ -43,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libxcb-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libxcb-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libxcb-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libxcb-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libxcb-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libxcb-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libxcb-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libxcb-md5sum;</para>
+        <para>&Download; MD5 sum: &libxcb-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libxcb-size;</para>
 @y
-        <para>ダウンロードサイズ: &libxcb-size;</para>
+        <para>&DownloadSize;: &libxcb-size;</para>
 @z
 
 @x
@@ -79,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">libxcb Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libxcb の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libxcb&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -127,7 +126,7 @@
 @x
     <title>Installation of libxcb</title>
 @y
-    <title>libxcb のインストール</title>
+    <title>&InstallationOf1;libxcb&InstallationOf2;</title>
 @z
 
 @x
@@ -178,16 +177,15 @@
     installed.</para>
 @y
     <para>
-    <parameter>--without-doxygen</parameter>: This switch can be used
-    to disable the API documentation if <xref linkend="doxygen"/> is
-    installed.
+    <parameter>--without-doxygen</parameter>:
+    このスイッチは <xref linkend="doxygen"/> がインストールされていて、かつ API ドキュメントを必要としない時に指定します。
     </para>
 @z
 
 @x
     <title>Configuring libxcb</title>
 @y
-    <title>libxcb の設定</title>
+    <title>&Configuring1;libxcb&Configuring2;</title>
 @z
 
 @x
@@ -250,7 +248,7 @@
         <seg><envar>$XORG_PREFIX</envar>/include/xcb and
         <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libxcb.{so,a} と libxcb-*.{so,a}</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/xcb と
         <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;</seg>

@@ -16,13 +16,13 @@
 @x
   <!ENTITY xcb-proto-time          "less than 0.1 SBU">
 @y
-  <!ENTITY xcb-proto-time          "0.1 SBU 以下">
+  <!ENTITY xcb-proto-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to xcb-proto</title>
 @y
-    <title>xcb-proto の概要</title>
+    <title>&IntroductionTo1;xcb-proto&IntroductionTo2;</title>
 @z
 
 @x
@@ -80,7 +80,7 @@
 @x
     <bridgehead renderas="sect3">xcb-proto Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">xcb-proto の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;xcb-proto&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of xcb-proto</title>
 @y
-    <title>xcb-proto のインストール</title>
+    <title>&InstallationOf1;xcb-proto&InstallationOf2;</title>
 @z
 
 @x
@@ -161,7 +161,7 @@
         <seg>None</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/xcb</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/xcb</seg>
 @z

@@ -41,10 +41,9 @@
   url="http://www.kde.org/"/>.</para>
 @y
   <para>
-  <application>KDE3</application>, now renamed Trinity, is also in the
-  book.  The current version is based on <application>Qt4</application> and has
-  some other conceptual innovations like Plasmoids and Activities. For more
-  information about these concepts go to the KDE project site at <ulink
-  url="http://www.kde.org/"/>.
+  <application>KDE3</application> は Trinity に名称変更されており、本書にも掲載しています。
+  最新バージョンは <application>Qt4</application> に基づいていて、Plasmoids や Activities といった最新技術や方式がいくつか追加されています。
+  こういった新たな方式などについては KDE のプロジェクトサイト <ulink
+  url="http://www.kde.org/"/> を参照してください。
   </para>
 @z

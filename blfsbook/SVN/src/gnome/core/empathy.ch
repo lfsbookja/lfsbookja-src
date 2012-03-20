@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&empathy-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&empathy-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&empathy-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&empathy-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&empathy-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&empathy-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &empathy-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &empathy-md5sum;</para>
+        <para>&Download; MD5 sum: &empathy-md5sum;</para>
 @z
 
 @x
         <para>Download size: &empathy-size;</para>
 @y
-        <para>ダウンロードサイズ: &empathy-size;</para>
+        <para>&DownloadSize;: &empathy-size;</para>
 @z
 
 @x

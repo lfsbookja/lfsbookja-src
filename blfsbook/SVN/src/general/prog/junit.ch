@@ -16,13 +16,13 @@
 @x
   <!ENTITY junit-time          "less than 0.1 SBU">
 @y
-  <!ENTITY junit-time          "0.1 SBU 以下">
+  <!ENTITY junit-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to JUnit</title>
 @y
-    <title>JUnit の概要</title>
+    <title>&IntroductionTo1;JUnit&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,15 +32,14 @@
     assertions for testing expected results, test fixtures for sharing common
     test data, and test runners for running tests.</para>
 @y
-<para>
-<application>JUnit</application>
-パッケージは、
-package contains a simple, open
-source framework to write and run repeatable tests. It is an instance of
-the xUnit architecture for unit testing frameworks. JUnit features include
-assertions for testing expected results, test fixtures for sharing common
-test data, and test runners for running tests.
-</para>
+    <para>
+    <application>JUnit</application> パッケージは、
+    package contains a simple, open
+    source framework to write and run repeatable tests. It is an instance of
+    the xUnit architecture for unit testing frameworks. JUnit features include
+    assertions for testing expected results, test fixtures for sharing common
+    test data, and test runners for running tests.
+    </para>
 @z
 
 @x
@@ -52,25 +51,25 @@ test data, and test runners for running tests.
 @x
         <para>Download (HTTP): <ulink url="&junit-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&junit-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&junit-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&junit-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&junit-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&junit-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &junit-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &junit-md5sum;</para>
+        <para>&Download; MD5 sum: &junit-md5sum;</para>
 @z
 
 @x
         <para>Download size: &junit-size;</para>
 @y
-        <para>ダウンロードサイズ: &junit-size;</para>
+        <para>&DownloadSize;: &junit-size;</para>
 @z
 
 @x
@@ -88,7 +87,7 @@ test data, and test runners for running tests.
 @x
     <bridgehead renderas="sect3">JUnit Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">JUnit の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;JUnit&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -110,18 +109,16 @@ test data, and test runners for running tests.
 @x
     <title>Installation of JUnit</title>
 @y
-    <title>JUnit のインストール</title>
+    <title>&InstallationOf1;JUnit&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>JUnit</application> by running the following
     commands as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下のコマンドを実行し
-<application>JUnit</application> をインストールします。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し <application>JUnit</application> をインストールします。
+    </para>
 @z
 
 @x
@@ -130,11 +127,10 @@ test data, and test runners for running tests.
     class='directory'>/usr/share/junit-&junit-version;</filename> directory to
     your system <envar>CLASSPATH</envar> environment variable:</para>
 @y
-<para>
-<filename class='libraryfile'>junit-&junit-version;.jar</filename>
-と <filename class='directory'>/usr/share/junit-&junit-version;</filename>
-ディレクトリを <envar>CLASSPATH</envar> 変数に追加します。
-</para>
+    <para>
+    <filename class='libraryfile'>junit-&junit-version;.jar</filename> と <filename
+    class='directory'>/usr/share/junit-&junit-version;</filename> ディレクトリを <envar>CLASSPATH</envar> 変数に追加します。
+    </para>
 @z
 
 @x
@@ -144,15 +140,12 @@ test data, and test runners for running tests.
     <envar>CLASSPATH</envar> environment variable updated. Then, as an
     unprivileged user, issue:</para>
 @y
-<para>
-<application>JUnit</application>
-の縮退テストを実施する場合は
-<xref linkend="icedtea6"/> と <xref linkend="jdk"/>、あるいは
-<ulink url="http://jikes.sourceforge.net/">Jikes</ulink>
-をインストールしておく必要があり、
-<envar>CLASSPATH</envar> を適切に設定しておく必要があります。
-準備が出来たら一般ユーザーにて以下を実行します。
-</para>
+    <para>
+    <application>JUnit</application> の縮退テストを実施する場合は <xref
+    linkend="icedtea6"/> と <xref linkend="jdk"/>、あるいは <ulink
+    url="http://jikes.sourceforge.net/">Jikes</ulink> をインストールしておく必要があり、<envar>CLASSPATH</envar> を適切に設定しておく必要があります。
+    準備が出来たら一般ユーザーにて以下を実行します。
+    </para>
 @z
 
 @x
@@ -177,7 +170,7 @@ test data, and test runners for running tests.
         <seg>/usr/share/junit-&junit-version;,
         /usr/share/doc/junit-&junit-version;</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>junit-&junit-version;.jar</seg>
         <seg>/usr/share/junit-&junit-version;,
         /usr/share/doc/junit-&junit-version;</seg>
@@ -193,7 +186,7 @@ test data, and test runners for running tests.
           <para>contains java classes to support the xUnit framework testing
           architecture.</para>
 @y
-<para>
-xUnit フレームワークによるテスト機構をサポートする Java クラスを提供します。
-</para>
+          <para>
+          xUnit フレームワークによるテスト機構をサポートする Java クラスを提供します。
+          </para>
 @z

@@ -22,7 +22,7 @@
 @x
     <title>Introduction to IcedTea6</title>
 @y
-    <title>IcedTea6 の概要</title>
+    <title>&IntroductionTo1;IcedTea6&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,26 +38,18 @@
     a complete runtime environment to run <application>Java</application>
     programs.</para>
 @y
-<!--
-日本語訳註：
-harness、久々に訳出に困る語に出会った気がする。
--->
-<para>
-<application>IcedTea6</application> は
-<application>OpenJDK</application> パッケージに対するビルドツールを提供します。
-<application>OpenJDK</application> とは、最近の Oracle
-が提供するオープンソースの <application>Java</application> 開発環境のことです。
-完全にフリーな実行環境を提供するために <application>IcedTea6</application>
-パッケージではさらに <application>Java</application>
-ブラウザプラグインや <application>Java Web Start</application>
-アプリケーションも提供しています。
-これは Oracle の非オープンな配布にも似ています。
-ただし <application>Java Web Start</application>
-は今のところオープンソース化はされていません。
-<application>IcedTea6</application> は <application>Java</application>
-プログラムの開発に活用でき、<application>Java</application>
-プログラムを実行するための完全な実行環境を提供します。
-</para>
+    <!--
+    日本語訳註：
+    harness、久々に訳出に困る語に出会った気がする。
+    -->
+    <para>
+    <application>IcedTea6</application> は <application>OpenJDK</application> パッケージに対するビルドツールを提供します。
+    <application>OpenJDK</application> とは、最近の Oracle が提供するオープンソースの <application>Java</application> 開発環境のことです。
+    完全にフリーな実行環境を提供するために <application>IcedTea6</application> パッケージではさらに <application>Java</application> ブラウザープラグインや <application>Java Web Start</application> アプリケーションも提供しています。
+    これは Oracle の非オープンな配布にも似ています。
+    ただし <application>Java Web Start</application> は今のところオープンソース化はされていません。
+    <application>IcedTea6</application> は <application>Java</application> プログラムの開発に活用でき、<application>Java</application> プログラムを実行するための完全な実行環境を提供します。
+    </para>
 @z
 
 @x
@@ -72,21 +64,17 @@ harness、久々に訳出に困る語に出会った気がする。
     the LGPL, any modifictaions made to the free software portions of a
     third party application, must also be made freely availible.</para>
 @y
-<para>
-OpenJDK (さらに IcedTea6) は GPL に基づくソフトウェアです。
-しかし明示しておくべきこととして、このソフトウェアは非フリーなソフトウェアにて
-<application>Java</application> クラスが利用できるよう、特殊な例外が作りこまれています。
-LGPL に対しても同じようなことがあります。
-LGPL は、フリーソフトウェアとして提供されるライブラリを非フリーなプログラムにリンクすることを許容するものです。
-そして
-<ulink url="http://openjdk.java.net/legal/gplv2+ce.html">GNU
-General Public License, version 2, with the Classpath Exception</ulink>
-では、フリーソフトウェアとして提供される <application>Java</application>
-クラスをサードパーティ製プログラムが利用することを許容していますが、一方そのサードパーティ製プログラムがフリーであることを要求しません。
-
-As with
-the LGPL, any modifictaions made to the free software portions of a
-third party application, must also be made freely availible.</para>
+    <para>
+    OpenJDK (さらに IcedTea6) は GPL に基づくソフトウェアです。
+    しかし明示しておくべきこととして、このソフトウェアは非フリーなソフトウェアにて <application>Java</application> クラスが利用できるよう、特殊な例外が作りこまれています。
+    LGPL に対しても同じようなことがあります。
+    LGPL は、フリーソフトウェアとして提供されるライブラリを非フリーなプログラムにリンクすることを許容するものです。
+    そして <ulink url="http://openjdk.java.net/legal/gplv2+ce.html">GNU
+    General Public License, version 2, with the Classpath Exception</ulink> では、フリーソフトウェアとして提供される <application>Java</application> クラスをサードパーティ製プログラムが利用することを許容していますが、一方そのサードパーティ製プログラムがフリーであることを要求しません。
+    
+    As with
+    the LGPL, any modifictaions made to the free software portions of a
+    third party application, must also be made freely availible.</para>
 @z
 
 @x
@@ -210,13 +198,13 @@ third party application, must also be made freely availible.</para>
 @x
         <para>Download MD5 sum: &icedtea6-bin-md5sum-x86;</para>
 @y
-        <para>Download MD5 sum: &icedtea6-bin-md5sum-x86;</para>
+        <para>&Download; MD5 sum: &icedtea6-bin-md5sum-x86;</para>
 @z
 
 @x
         <para>Download size (binary): &icedtea6-bin-size-x86;</para>
 @y
-        <para>Download size (binary): &icedtea6-bin-size-x86;</para>
+        <para>&DownloadSize; (バイナリ): &icedtea6-bin-size-x86;</para>
 @z
 
 @x
@@ -236,19 +224,19 @@ third party application, must also be made freely availible.</para>
 @x
         <para>Download MD5 sum: &icedtea6-bin-md5sum-x64;</para>
 @y
-        <para>Download MD5 sum: &icedtea6-bin-md5sum-x64;</para>
+        <para>&Download; MD5 sum: &icedtea6-bin-md5sum-x64;</para>
 @z
 
 @x
         <para>Download size (binary): &icedtea6-bin-size-x64;</para>
 @y
-        <para>Download size (binary): &icedtea6-bin-size-x64;</para>
+        <para>&DownloadSize; (binary): &icedtea6-bin-size-x64;</para>
 @z
 
 @x
         <para>Estimated disk space required: &icedtea6-bin-buildsize-x64;</para>
 @y
-        <para>Estimated disk space required: &icedtea6-bin-buildsize-x64;</para>
+        <para>&Estimateddiskspacerequired;: &icedtea6-bin-buildsize-x64;</para>
 @z
 
 @x
@@ -284,7 +272,7 @@ third party application, must also be made freely availible.</para>
 @x
     <bridgehead renderas="sect3">IcedTea6 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">IcedTea6 の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;IcedTea6&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -348,7 +336,7 @@ third party application, must also be made freely availible.</para>
 @x
     <title>Installation of IcedTea6</title>
 @y
-    <title>IcedTea6 のインストール</title>
+    <title>&InstallationOf1;IcedTea6&InstallationOf2;</title>
 @z
 
 @x
@@ -379,21 +367,21 @@ third party application, must also be made freely availible.</para>
     <para>Configure the temporary <application>IcedTea6</application> 
     installation with the following commands:</para>
 @y
-<para>
-
-Configure the temporary <application>IcedTea6</application> 
-installation with the following commands:
-</para>
+    <para>
+    
+    Configure the temporary <application>IcedTea6</application> 
+    installation with the following commands:
+    </para>
 @z
 
 @x
     <para>The binary version is now installed. If you don't want to compile the
     sources, skip ahead to the configuration section.</para>
 @y
-<para>
-バイナリ版はこうしてインストールできました。
-ソースのコンパイルを行わない場合は、設定について説明する後節まで読み飛ばしてください。
-</para>
+    <para>
+    バイナリ版はこうしてインストールできました。
+    ソースのコンパイルを行わない場合は、設定について説明する後節まで読み飛ばしてください。
+    </para>
 @z
 
 @x
@@ -542,7 +530,7 @@ installation with the following commands:
 @x
     <title>Configuring IcedTea6</title>
 @y
-    <title>IcedTea6 の設定</title>
+    <title>&Configuring1;IcedTea6&Configuring2;</title>
 @z
 
 @x

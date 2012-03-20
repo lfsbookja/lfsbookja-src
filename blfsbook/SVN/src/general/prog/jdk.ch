@@ -16,7 +16,7 @@
 @x
     <title>Introduction to JDK</title>
 @y
-    <title>JDK の概要</title>
+    <title>&IntroductionTo1;JDK&IntroductionTo2;</title>
 @z
 
 @x
@@ -27,15 +27,11 @@
     programs.  It also includes a plug-in for browsers so that they can be
     <application>Java</application> aware.</para>
 @y
-<para>
-<application>JDK</application>
-パッケージは Sun <application>Java</application> 開発環境を提供します。
-これは <application>Java</application> プログラムの開発に利用するとともに、
-<application>Java</application>
-プログラムに必要となるランタイム環境を提供します。
-またウェブブラウザのプラグインにより
-<application>Java</application> プログラムの実行を実現します。
-</para>
+    <para>
+    <application>JDK</application> パッケージは Sun <application>Java</application> 開発環境を提供します。
+    これは <application>Java</application> プログラムの開発に利用するとともに、<application>Java</application> プログラムに必要となるランタイム環境を提供します。
+    またウェブブラウザーのプラグインにより <application>Java</application> プログラムの実行を実現します。
+    </para>
 @z
 
 @x
@@ -48,20 +44,19 @@
     Public License, version 2, with the Classpath Exception</ulink>.
     A stable OpenJDK was not available at the time of writing.</para></note>
 @y
-<note>
-<para>
-Sun が最近に取り決めたこととして、
-JDK の最新バージョンに対する JRL ソースは提供されなくなりました。
-
-Sun is actively working on a GPL'd
-version of the JDK, titled
-<ulink url="http://openjdk.java.net/projects/jdk6/">OpenJDK</ulink>.
-This new JDK will be licensed under the
-<ulink url="http://openjdk.java.net/legal/gplv2+ce.html">GNU General
-Public License, version 2, with the Classpath Exception</ulink>.
-A stable OpenJDK was not available at the time of writing.
-</para>
-</note>
+    <note>
+    <para>
+    Sun が最近に取り決めたこととして、JDK の最新バージョンに対する JRL ソースは提供されなくなりました。
+    
+    Sun is actively working on a GPL'd
+    version of the JDK, titled
+    <ulink url="http://openjdk.java.net/projects/jdk6/">OpenJDK</ulink>.
+    This new JDK will be licensed under the
+    <ulink url="http://openjdk.java.net/legal/gplv2+ce.html">GNU General
+    Public License, version 2, with the Classpath Exception</ulink>.
+    A stable OpenJDK was not available at the time of writing.
+    </para>
+    </note>
 @z
 
 @x
@@ -74,20 +69,20 @@ A stable OpenJDK was not available at the time of writing.
         <para>Download (jdk-&jdk-bin-version;-linux-i586.bin):
         <ulink url="&jdk-download-http;"/></para>
 @y
-        <para>ダウンロード (jdk-&jdk-bin-version;-linux-i586.bin):
+        <para>&Download; (jdk-&jdk-bin-version;-linux-i586.bin):
         <ulink url="&jdk-download-http;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &jdk-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &jdk-md5sum;</para>
+        <para>&Download; MD5 sum: &jdk-md5sum;</para>
 @z
 
 @x
         <para>Download size (binary): &jdk-size;</para>
 @y
-        <para>ダウンロードサイズ (バイナリ): &jdk-size;</para>
+        <para>&DownloadSize; (バイナリ): &jdk-size;</para>
 @z
 
 @x
@@ -105,7 +100,7 @@ A stable OpenJDK was not available at the time of writing.
 @x
     <bridgehead renderas="sect3">JDK Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">JDK の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;JDK&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -133,7 +128,7 @@ A stable OpenJDK was not available at the time of writing.
 @x
     <title>Installation of JDK</title>
 @y
-    <title>JDK のインストール</title>
+    <title>&InstallationOf1;JDK&InstallationOf2;</title>
 @z
 
 @x
@@ -148,19 +143,16 @@ A stable OpenJDK was not available at the time of writing.
       the end of this section, specific information for automating this type of
       installation is discussed.</para>
 @y
-<para>
-
-The <command>./jdk-&jdk-bin-version;-linux-i586.bin</command>
-command below unpacks the distribution into a
-<filename class='directory'>jdk&jdk-version-string;</filename>
-directory.  You will be required to view, and then accept (by entering a
-<keycap>y</keycap> keypress), a license agreement before any files are
-unpacked. If you are scripting (automating) the build, you'll need to
-account for this. There is information about automating build commands
-in the <xref linkend="automating-builds"/> section of Chapter 2. Towards
-the end of this section, specific information for automating this type of
-installation is discussed.
-</para>
+      <para>The <command>./jdk-&jdk-bin-version;-linux-i586.bin</command>
+      command below unpacks the distribution into a
+      <filename class='directory'>jdk&jdk-version-string;</filename>
+      directory.  You will be required to view, and then accept (by entering a
+      <keycap>y</keycap> keypress), a license agreement before any files are
+      unpacked. If you are scripting (automating) the build, you'll need to
+      account for this. There is information about automating build commands
+      in the <xref linkend="automating-builds"/> section of Chapter 2. Towards
+      the end of this section, specific information for automating this type of
+      installation is discussed.</para>
 @z
 
 @x
@@ -169,23 +161,19 @@ installation is discussed.
     location.  For this application only, start in the directory where all
     the downloaded files are located.</para>
 @y
-<para>
-
-Normally in BLFS, the files are unpacked into a subdirectory
-and the starting point for the installation procedures is that
-location.  For this application only, start in the directory where all
-the downloaded files are located.
-</para>
+    <para>Normally in BLFS, the files are unpacked into a subdirectory
+    and the starting point for the installation procedures is that
+    location.  For this application only, start in the directory where all
+    the downloaded files are located.</para>
 @z
 
 @x
     <para>Install the <application>JDK</application> with the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>JDK</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>JDK</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -196,25 +184,20 @@ the downloaded files are located.
     installation, however, the installation will still exit with a zero error
     value if scripting the build.</para></note>
 @y
-<note>
-<para>
-The installation will end with a message
-"./jdk-&jdk-bin-version;-linux-i586.bin: line 43: 20283 Aborted" as
-javaprefix is unset in the environment.  This is by design as
-<application>GTK+</application> may not be installed during the
-installation, however, the installation will still exit with a zero error
-value if scripting the build.
-</para>
-</note>
+    <note><para>The installation will end with a message
+    "./jdk-&jdk-bin-version;-linux-i586.bin: line 43: 20283 Aborted" as
+    javaprefix is unset in the environment.  This is by design as
+    <application>GTK+</application> may not be installed during the
+    installation, however, the installation will still exit with a zero error
+    value if scripting the build.</para></note>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -223,11 +206,10 @@ value if scripting the build.
     <systemitem class="username">root</systemitem> user, apply the
     following sed to work around this problem:</para>
 @y
-<para>
-現時点最新の libX11 は、Xinerama 拡張を利用すると libmawt を壊してしまいます。
-<systemitem class="username">root</systemitem> 
-ユーザーのままで以下の sed コマンドを実行し、その問題を解消します。
-</para>
+    <para>
+    現時点最新の libX11 は、Xinerama 拡張を利用すると libmawt を壊してしまいます。
+    <systemitem class="username">root</systemitem> ユーザーのままで以下の sed コマンドを実行し、その問題を解消します。
+    </para>
 @z
 
 @x
@@ -266,11 +248,8 @@ value if scripting the build.
     <para>As the <systemitem class="username">root</systemitem> user, create
     a symlink to the installation directory:</para>
 @y
-<para>
-
-As the <systemitem class="username">root</systemitem> user, create
-a symlink to the installation directory:
-</para>
+    <para>As the <systemitem class="username">root</systemitem> user, create
+    a symlink to the installation directory:</para>
 @z
 
 @x
@@ -684,4 +663,3 @@ a symlink to the installation directory:
 @y
           <para>is a Java XML binding compiler.</para>
 @z
-

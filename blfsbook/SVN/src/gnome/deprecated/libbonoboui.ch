@@ -16,17 +16,17 @@
 @x
     <title>Introduction to libbonoboui</title>
 @y
-    <title>libbonoboui の概要</title>
+    <title>&IntroductionTo1;libbonoboui&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>libbonoboui</application> package contains
     <filename class="libraryfile">libbonoboui</filename> libraries.</para>
 @y
-<para>
-<application>libbonoboui</application>
-パッケージは <filename class="libraryfile">libbonoboui</filename> ライブラリを提供します。
-</para>
+    <para>
+    <application>libbonoboui</application>
+    パッケージは <filename class="libraryfile">libbonoboui</filename> ライブラリを提供します。
+    </para>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libbonoboui-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libbonoboui-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libbonoboui-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libbonoboui-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libbonoboui-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libbonoboui-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libbonoboui-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libbonoboui-md5sum;</para>
+        <para>&Download; MD5 sum: &libbonoboui-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libbonoboui-size;</para>
 @y
-        <para>ダウンロードサイズ: &libbonoboui-size;</para>
+        <para>&DownloadSize;: &libbonoboui-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">libbonoboui Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libbonoboui の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libbonoboui&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -108,38 +108,47 @@
 @x
     <title>Installation of libbonoboui</title>
 @y
-    <title>libbonoboui のインストール</title>
+    <title>&InstallationOf1;libbonoboui&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libbonoboui</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libbonoboui</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libbonoboui</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--disable-static</option>:
+    このスイッチはスタティックライブラリをインストールしないようにします。
+    </para>
 @z
 
 @x
@@ -182,7 +191,7 @@
           <para>are the GUI portion of the <application>Bonobo</application>
           libraries.</para>
 @y
-<para>
-<application>Bonobo</application> ライブラリの非 GUI 部分を提供します。
-</para>
+    <para>
+    <application>Bonobo</application> ライブラリの非 GUI 部分を提供します。
+    </para>
 @z

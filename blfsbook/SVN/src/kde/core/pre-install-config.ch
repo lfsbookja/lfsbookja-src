@@ -14,6 +14,12 @@
 @z
 
 @x
+<sect1 id="kde-pre-install-config">
+@y
+<sect1 id="kde-pre-install-config" xreflabel="Trinity/KDE3 インストール前の設定">
+@z
+
+@x
   <title>Trinity/KDE3 Pre-installation Configuration</title>
 @y
   <title>Trinity/KDE3 インストール前の設定</title>

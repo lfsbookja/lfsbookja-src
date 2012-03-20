@@ -91,6 +91,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+    <xref linkend="gst-plugins-base"/> (needed for output to ALSA),
+    <xref linkend="gst-plugins-good"/> (needed for output to PulseAudio),
+    <xref linkend="gst-plugins-bad"/> (needed for AAC/M4A support),
+    <xref linkend="gst-plugins-ugly"/> (needed for MP3 support)
+    </para>
+@y
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+    <xref linkend="gst-plugins-base"/> (ALSA への出力に必要),
+    <xref linkend="gst-plugins-good"/> (PulseAudio への出力に必要),
+    <xref linkend="gst-plugins-bad"/> (AAC/M4A サポートに必要),
+    <xref linkend="gst-plugins-ugly"/> (MP3 サポートに必要)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/phonon-backend-gstreamer"/></para>
 @y

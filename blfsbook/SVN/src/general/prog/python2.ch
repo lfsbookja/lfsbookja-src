@@ -183,7 +183,7 @@
 @x
       To test the results, issue: <command>make test</command>.
 @y
-      To test the results, issue: <command>make test</command>.
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
@@ -207,7 +207,7 @@
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -351,7 +351,7 @@
 @x pydoc
             is the <application>Python</application> documentation tool.
 @y
-            is the <application>Python</application> documentation tool.
+            <application>Python</application> ドキュメントツール。
 @z
 
 @x python

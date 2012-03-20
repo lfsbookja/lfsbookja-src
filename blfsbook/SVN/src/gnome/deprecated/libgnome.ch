@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libgnome</title>
 @y
-    <title>libgnome の概要</title>
+    <title>&IntroductionTo1;libgnome&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libgnome-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libgnome-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libgnome-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libgnome-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libgnome-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libgnome-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libgnome-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libgnome-md5sum;</para>
+        <para>&Download; MD5 sum: &libgnome-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libgnome-size;</para>
 @y
-        <para>ダウンロードサイズ: &libgnome-size;</para>
+        <para>&DownloadSize;: &libgnome-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libgnome Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgnome の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgnome&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -115,7 +115,7 @@
 @x
     <title>Installation of libgnome</title>
 @y
-    <title>libgnome のインストール</title>
+    <title>&InstallationOf1;libgnome&InstallationOf2;</title>
 @z
 
 @x
@@ -130,9 +130,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -172,8 +170,9 @@
     <para><option>--disable-static</option>: This switch prevents the static
     libraries being installed.</para>
 @y
-    <para><option>--disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
+    <para><option>--disable-static</option>:
+    このスイッチはスタティックライブラリをインストールしないようにします。
+    </para>
 @z
 
 @x

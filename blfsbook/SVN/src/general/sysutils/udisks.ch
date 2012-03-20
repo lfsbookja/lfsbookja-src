@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to udisks</title>
 @y
-    <title>udisks の概要</title>
+    <title>&IntroductionTo1;udisks&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&udisks-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&udisks-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&udisks-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&udisks-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&udisks-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&udisks-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &udisks-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &udisks-md5sum;</para>
+        <para>&Download; MD5 sum: &udisks-md5sum;</para>
 @z
 
 @x
         <para>Download size: &udisks-size;</para>
 @y
-        <para>ダウンロードサイズ: &udisks-size;</para>
+        <para>&DownloadSize;: &udisks-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">udisks Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">udisks の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;udisks&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -116,7 +116,7 @@
 @x
     <title>Installation of udisks</title>
 @y
-    <title>udisks のインストール</title>
+    <title>&InstallationOf1;udisks&InstallationOf2;</title>
 @z
 
 @x

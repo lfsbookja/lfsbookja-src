@@ -16,13 +16,13 @@
 @x
   <!ENTITY libpcap-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libpcap-time          "0.1 SBU 以下">
+  <!ENTITY libpcap-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libpcap</title>
 @y
-    <title>libpcap の概要</title>
+    <title>&IntroductionTo1;libpcap&IntroductionTo2;</title>
 @z
 
 @x
@@ -109,7 +109,7 @@
 @x
     <title>Installation of libpcap</title>
 @y
-    <title>libpcap のインストール</title>
+    <title>&InstallationOf1;libpcap&InstallationOf2;</title>
 @z
 
 @x

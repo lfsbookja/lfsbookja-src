@@ -24,7 +24,7 @@
 @x
     <title>Introduction to Python</title>
 @y
-    <title>Python の概要</title>
+    <title>&IntroductionTo1;Python&IntroductionTo2;</title>
 @z
 
 @x
@@ -34,8 +34,7 @@
     prototyping large programs or developing entire applications.</para>
 @y
     <para>
-    <application>Python</application>
-    パッケージは <application>Python</application> 開発環境を提供します。
+    <application>Python</application> パッケージは <application>Python</application> 開発環境を提供します。
     この環境は、オブジェクト指向プログラミング、スクリプト構築、大規模なプロトタイプ開発、一連のアプリケーション開発を可能とします。
     </para>
 @z
@@ -49,25 +48,25 @@
 @x
         <para>Download (HTTP): <ulink url="&python3-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&python3-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&python3-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&python3-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&python3-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&python3-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &python3-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &python3-md5sum;</para>
+        <para>&Download; MD5 sum: &python3-md5sum;</para>
 @z
 
 @x
         <para>Download size: &python3-size;</para>
 @y
-        <para>ダウンロードサイズ: &python3-size;</para>
+        <para>&DownloadSize;: &python3-size;</para>
 @z
 
 @x
@@ -106,26 +105,26 @@
         <para>Download (HTTP):
         <ulink url="&python3htmldoc-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP):
+        <para>&Download; (HTTP):
         <ulink url="&python3htmldoc-download-http;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &python3htmldoc-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &python3htmldoc-md5sum;</para>
+        <para>&Download; MD5 sum: &python3htmldoc-md5sum;</para>
 @z
 
 @x
         <para>Download size: &python3htmldoc-size;</para>
 @y
-        <para>ダウンロードサイズ: &python3htmldoc-size;</para>
+        <para>&DownloadSize;: &python3htmldoc-size;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Python Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Python の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Python&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -164,8 +163,7 @@
 @y
     <para>
     <application>Tk</application> パッケージには循環的な依存関係があります。
-    つまりこのパッケージは Xorg を必要としますが、Xorg における所定パッケージが
-    <application>Python</application> パッケージを必要としているものがあります。
+    つまりこのパッケージは Xorg を必要としますが、Xorg における所定パッケージが <application>Python</application> パッケージを必要としているものがあります。
     </para>
 @z
 
@@ -180,7 +178,7 @@
 @x
     <title>Installation of Python</title>
 @y
-    <title>Python のインストール</title>
+    <title>&InstallationOf1;Python&InstallationOf2;</title>
 @z
 
 @x
@@ -263,7 +261,7 @@
 @x
     <title>Configuring Python</title>
 @y
-    <title>Python の設定</title>
+    <title>&Configuring1;Python&Configuring2;</title>
 @z
 
 @x

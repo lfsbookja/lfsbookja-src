@@ -16,7 +16,7 @@
 @x
     <title>Introduction to PHP</title>
 @y
-    <title>PHP の概要</title>
+    <title>&IntroductionTo1;PHP&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&php-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&php-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&php-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&php-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&php-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&php-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &php-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &php-md5sum;</para>
+        <para>&Download; MD5 sum: &php-md5sum;</para>
 @z
 
 @x
         <para>Download size: &php-size;</para>
 @y
-        <para>ダウンロードサイズ: &php-size;</para>
+        <para>&DownloadSize;: &php-size;</para>
 @z
 
 @x
@@ -90,7 +90,7 @@
 @x
     <bridgehead renderas="sect3">PHP Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">PHP の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;PHP&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -270,7 +270,7 @@
 @x
     <title>Installation of PHP</title>
 @y
-    <title>PHP のインストール</title>
+    <title>&InstallationOf1;PHP&InstallationOf2;</title>
 @z
 
 @x
@@ -327,8 +327,9 @@
     <para>Install <application>PHP</application> by
     running the following commands:</para>
 @y
-    <para>Install <application>PHP</application> by
-    running the following commands:</para>
+    <para>
+    以下のコマンドを実行して <application>PHP</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -342,7 +343,9 @@
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -488,7 +491,7 @@
 @x
     <title>Configuring PHP</title>
 @y
-    <title>PHP の設定</title>
+    <title>&Configuring1;PHP&Configuring2;</title>
 @z
 
 @x
@@ -501,7 +504,7 @@
       <para><filename>/etc/php.ini</filename> and
       <filename>/etc/pear.conf</filename></para>
 @y
-      <para><filename>/etc/php.ini</filename> and
+      <para><filename>/etc/php.ini</filename>,
       <filename>/etc/pear.conf</filename></para>
 @z
 
@@ -605,9 +608,9 @@
         <seg>/usr/include/php, /usr/lib/php and
         /usr/share/doc/php-&php-version;</seg>
 @y
-        <seg>pear, peardev, pecl, php, php-config and phpize</seg>
-        <seg>libphp5.so Apache module</seg>
-        <seg>/usr/include/php, /usr/lib/php and
+        <seg>pear, peardev, pecl, php, php-config, phpize</seg>
+        <seg>libphp5.so Apache モジュール</seg>
+        <seg>/usr/include/php, /usr/lib/php,
         /usr/share/doc/php-&php-version;</seg>
 @z
 

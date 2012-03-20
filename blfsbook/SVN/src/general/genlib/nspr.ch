@@ -206,3 +206,29 @@
 @y
             <application>NSPR</application> を利用する他のパッケージに対して、コンパイラーとリンカーのオプションを提供します。
 @z
+
+@x libnspr4.so
+            contains functions that provide platform independence for non-GUI
+            operating system facilities such as threads, thread synchronization,
+            normal file and network I/O, interval timing and calendar time,
+            basic memory management and shared library linking.
+@y
+            
+            contains functions that provide platform independence for non-GUI
+            operating system facilities such as threads, thread synchronization,
+            normal file and network I/O, interval timing and calendar time,
+            basic memory management and shared library linking.
+@z
+
+@x libplc4.so
+            contains functions that implement many of the features offered by
+            libnspr4
+@y
+            libnspr5 により提供される多くの機能を実装した関数を含みます。
+@z
+
+@x libplds4.so
+            contains functions that provide data structures.
+@y
+            データ構造を提供する関数を含みます。
+@z

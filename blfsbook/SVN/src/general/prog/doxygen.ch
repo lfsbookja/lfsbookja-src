@@ -22,7 +22,7 @@
 @x
     <title>Introduction to Doxygen</title>
 @y
-    <title>Doxygen の概要</title>
+    <title>&IntroductionTo1;Doxygen&IntroductionTo2;</title>
 @z
 
 @x
@@ -108,7 +108,7 @@
 @x
     <bridgehead renderas="sect3">Doxygen Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Doxygen の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Doxygen&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -138,7 +138,7 @@
 @x
     <title>Installation of Doxygen</title>
 @y
-    <title>Installation of Doxygen</title>
+    <title>&InstallationOf1;Doxygen&InstallationOf2;</title>
 @z
 
 @x
@@ -194,7 +194,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -238,7 +238,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -257,7 +257,7 @@
         <seg>/usr/share/doc/doxygen</seg>
 @y
         <seg>doxygen, doxytag, and optionally, doxywizard</seg>
-        <seg>None</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/doc/doxygen</seg>
 @z
 

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY icu-buildsize     "245 MB (+ 20MB if running the testsuite)">
+  <!ENTITY icu-time          "2.2 SBU (+ 2.6 SBU if running the testsuite)">
+@y
+  <!ENTITY icu-buildsize     "245 MB (テストスイート実行時はプラス 20MB)">
+  <!ENTITY icu-time          "2.2 SBU (テストスイート実行時はプラス 2.6 SBU)">
+@z
+
+@x
     <title>Introduction to ICU</title>
 @y
     <title>&IntroductionTo1;ICU&IntroductionTo2;</title>
@@ -101,9 +109,10 @@
     therefore reports an error in cintltest and ends in error. If you nevertheless
     wish to test the results, issue: <command>make check</command>.</para>
 @y
-    <para>On at least x86_64, the testsuite ends with a segmentation fault, and
-    therefore reports an error in cintltest and ends in error. If you nevertheless
-    wish to test the results, issue: <command>make check</command>.</para>
+    <para>
+    少なくとも x86_64 においては、テストスイート実行時にセグメンテーションフォールトが発生し、cintltest テスト時のエラー報告とともにテストスイートが異常終了します。
+    この状況であってもビルド結果をビルドする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
@@ -287,8 +296,7 @@
           <para>is the ICU I/O (unicode stdio) library.</para>
 @y
           <para>
-          
-          is the ICU I/O (unicode stdio) library.
+          ICU I/O (ユニコード標準) ライブラリ。
           </para>
 @z
 

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to yasm</title>
 @y
-    <title>yasm の概要</title>
+    <title>&IntroductionTo1;yasm&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,25 +41,25 @@
 @x
         <para>Download (HTTP): <ulink url="&yasm-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&yasm-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&yasm-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&yasm-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&yasm-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&yasm-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &yasm-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &yasm-md5sum;</para>
+        <para>&Download; MD5 sum: &yasm-md5sum;</para>
 @z
 
 @x
         <para>Download size: &yasm-size;</para>
 @y
-        <para>ダウンロードサイズ: &yasm-size;</para>
+        <para>&DownloadSize;: &yasm-size;</para>
 @z
 
 @x
@@ -85,7 +85,7 @@
 @x
     <title>Installation of yasm</title>
 @y
-    <title>yasm のインストール</title>
+    <title>&InstallationOf1;yasm&InstallationOf2;</title>
 @z
 
 @x

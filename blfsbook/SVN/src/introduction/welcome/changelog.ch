@@ -54,6 +54,58 @@
 @z
 
 @x
+      <para>March 19th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - Correct libtool archives for libattr and libacl.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Move PCRE pc files to /usr/lib/pkgconfig.</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Further clarify Cairo reciprocal dependencies and
+          install libxcb backend by default.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[dj] - libattr と libacl に対する libtool アーカイブを修正。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - PCRE の pc ファイルを /usr/lib/pkgconfig に移動。</para>
+        </listitem>
+        <listitem>
+          <para>[dj] - Cairo の相互依存性についてさらに明確化。
+          また libxcb バックエンドをデフォルトでインストールすることに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 18th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - improved MPlayer instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - usbutils 005.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - MPlayer のビルド手順を改善。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - usbutils 005.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>March 17th, 2012</para>
       <itemizedlist>
         <listitem>

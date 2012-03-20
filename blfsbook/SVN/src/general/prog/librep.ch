@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Librep</title>
 @y
-    <title>Librep の概要</title>
+    <title>&IntroductionTo1;Librep&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,11 +24,10 @@
     This is useful for scripting or for applications that may use the Lisp
     interpreter as an extension language.</para>
 @y
-<para>
-The <application>librep</application> package contains a Lisp system.
-This is useful for scripting or for applications that may use the Lisp
-interpreter as an extension language.
-</para>
+    <para>
+    <application>librep</application> パッケージは Lisp システムを提供します。
+    言語拡張機能として Lisp インタープリターを利用するスクリプトまたはアプリケーションにて利用することができます。
+    </para>
 @z
 
 @x
@@ -40,25 +39,25 @@ interpreter as an extension language.
 @x
         <para>Download (HTTP): <ulink url="&librep-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&librep-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&librep-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&librep-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&librep-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&librep-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &librep-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &librep-md5sum;</para>
+        <para>&Download; MD5 sum: &librep-md5sum;</para>
 @z
 
 @x
         <para>Download size: &librep-size;</para>
 @y
-        <para>ダウンロードサイズ: &librep-size;</para>
+        <para>&DownloadSize;: &librep-size;</para>
 @z
 
 @x
@@ -76,7 +75,7 @@ interpreter as an extension language.
 @x
     <bridgehead renderas="sect3">Librep Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Librep の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Librep&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -87,8 +86,7 @@ interpreter as an extension language.
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="libffi"/> または
-    <xref linkend="gcc"/> (build Java so that the
-    <filename class='libraryfile'>libffi</filename> library is built)</para>
+    <xref linkend="gcc"/> (<filename class='libraryfile'>libffi</filename> がビルドできるように Java がビルドされていること)</para>
 @z
 
 @x
@@ -102,26 +100,30 @@ interpreter as an extension language.
 @x
     <title>Installation of Librep</title>
 @y
-    <title>Librep のインストール</title>
+    <title>&InstallationOf1;Librep&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>librep</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>librep</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>librep</application> をビルドします。
+    </para>
+@z
+
+@x
+    <para>This package does not come with a test suite.</para>
+@y
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -135,13 +137,12 @@ interpreter as an extension language.
     files to <filename class="directory">/usr/lib/rep</filename> instead of
     <filename class="directory">/usr/libexec/rep</filename>.</para>
 @y
-<para>
-<parameter>--libexecdir=/usr/lib</parameter>:
-
-This parameter installs
-files to <filename class="directory">/usr/lib/rep</filename> instead of
-<filename class="directory">/usr/libexec/rep</filename>.
-</para>
+    <para>
+    <parameter>--libexecdir=/usr/lib</parameter>:
+    このパラメーターは、各種ファイルのインストール先を <filename
+    class="directory">/usr/libexec/rep</filename> ではなく <filename
+    class="directory">/usr/lib/rep</filename> とします。
+    </para>
 @z
 
 @x
@@ -167,8 +168,7 @@ files to <filename class="directory">/usr/lib/rep</filename> instead of
         <seg>/usr/lib/rep, /usr/share/emacs/site-lisp, and /usr/share/rep</seg>
 @y
         <seg>rep, rep-config, rep-remote, rep-xgettext, repdoc</seg>
-        <seg>librep.so and numerous modules installed in the /usr/lib/rep
-        hierarchy</seg>
+        <seg>librep.so と /usr/lib/rep 配下に多くのモジュール</seg>
         <seg>/usr/lib/rep, /usr/share/emacs/site-lisp, /usr/share/rep</seg>
 @z
 
@@ -181,16 +181,15 @@ files to <filename class="directory">/usr/lib/rep</filename> instead of
 @x rep
           <para>is the Lisp interpreter.</para>
 @y
-<para>
-Lisp インタープリタ。
-</para>
+          <para>
+          Lisp インタープリター。
+          </para>
 @z
 
 @x librep.so
           <para> contains the functions necessary for the Lisp interpreter.</para>
 @y
-<para>
-Lisp インタープリタに対して必要となる関数を提供します。
-</para>
+          <para>
+          Lisp インタープリターに対して必要となる関数を提供します。
+          </para>
 @z
-

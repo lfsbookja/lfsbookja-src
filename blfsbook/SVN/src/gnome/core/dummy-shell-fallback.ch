@@ -16,5 +16,5 @@
 @x
   <title>Shell Fallback</title>
 @y
-  <title>Shell Fallback</title>
+  <title>シェルフォールバック</title>
 @z

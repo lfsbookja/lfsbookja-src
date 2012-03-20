@@ -156,10 +156,19 @@
 @z
 
 @x
+    <para><parameter>--with-gtk=3.0</parameter>: This parameter enables
+    <application>GTK+3</application> instead of <application>GTK+2</application>.</para>
+@y
+    <para><parameter>--with-gtk=3.0</parameter>:
+    このパラメーターは <application>GTK+2</application> ではなく <application>GTK+3</application> を有効にします。
+    </para>
+@z
+
+@x
     <para><parameter>--with-sasl=no</parameter>: This parameter disables the use of <application>cyrus SASL</application> for authentication. Remove it if you have <application>Cyrus SASL</application> installed and wish to enable it for authentication.</para>
 @y
     <para>
-    <parameter>--with-sasl=no</parameter>: 
+    <parameter>--with-sasl=no</parameter>:
     このパラメーターは認証処理にあたって <application>cyrus SASL</application> を利用しないことを指示します。
     <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は、本パラメーターを取り除いてください。
     </para>

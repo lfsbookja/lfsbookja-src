@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,13 +16,13 @@
 @x
   <!ENTITY unrar-time "Less than 0.1 SBU">
 @y
-  <!ENTITY unrar-time "0.1 SBU 以下">
+  <!ENTITY unrar-time "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to UnRar</title>
 @y
-    <title>UnRar の概要</title>
+    <title>&IntroductionTo1;UnRar&IntroductionTo2;</title>
 @z
 
 @x
@@ -33,15 +33,11 @@
     created with <application>WinRAR</application>,
     primarily in a Windows environment.</para>
 @y
-<para>
-<application>UnRar</application>
-パッケージは <filename>RAR</filename> 形式ファイルの抽出ユーティリティを提供します。
-<filename>RAR</filename>
-アーカイブからファイルを抽出する際に利用します。
-<filename>RAR</filename>
-アーカイブは、主に Windows 環境において <application>WinRAR</application>
-というアプリケーションを使って生成することができます。
-</para>
+    <para>
+    <application>UnRar</application> パッケージは <filename>RAR</filename> 形式ファイルの抽出ユーティリティを提供します。
+    <filename>RAR</filename> アーカイブからファイルを抽出する際に利用します。
+    <filename>RAR</filename> アーカイブは、主に Windows 環境において <application>WinRAR</application> というアプリケーションを使って生成することができます。
+    </para>
 @z
 
 @x
@@ -53,25 +49,25 @@
 @x
         <para>Download (HTTP): <ulink url="&unrar-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&unrar-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&unrar-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&unrar-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&unrar-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&unrar-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &unrar-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &unrar-md5sum;</para>
+        <para>&Download; MD5 sum: &unrar-md5sum;</para>
 @z
 
 @x
         <para>Download size: &unrar-size;</para>
 @y
-        <para>ダウンロードサイズ: &unrar-size;</para>
+        <para>&DownloadSize;: &unrar-size;</para>
 @z
 
 @x
@@ -97,34 +93,30 @@
 @x
     <title>Installation of UnRar</title>
 @y
-    <title>UnRar のインストール</title>
+    <title>&InstallationOf1;UnRar&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>UnRar</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>UnRar</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>UnRar</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-になって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> になって以下を実行します。
+    </para>
 @z
 
 @x
@@ -149,8 +141,8 @@
         <seg>None</seg>
 @y
         <seg>unrar</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -162,8 +154,7 @@
 @x unrar
           <para>uncompresses a <filename>RAR</filename> archive.</para>
 @y
-<para>
-<filename>RAR</filename> 形式アーカイブを解凍します。
-</para>
+          <para>
+          <filename>RAR</filename> 形式アーカイブを解凍します。
+          </para>
 @z
-

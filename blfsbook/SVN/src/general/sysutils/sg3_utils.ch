@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to sg3_utils</title>
 @y
-    <title>sg3_utils の概要</title>
+    <title>&IntroductionTo1;sg3_utils&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,31 +38,31 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
         <para>Download (HTTP): <ulink url="&sg3_utils-download-http;"/></para>
 @y
-        <para>Download (HTTP): <ulink url="&sg3_utils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&sg3_utils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&sg3_utils-download-ftp;"/></para>
 @y
-        <para>Download (FTP): <ulink url="&sg3_utils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&sg3_utils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &sg3_utils-md5sum;</para>
 @y
-        <para>Download MD5 sum: &sg3_utils-md5sum;</para>
+        <para>&Download; MD5 sum: &sg3_utils-md5sum;</para>
 @z
 
 @x
         <para>Download size: &sg3_utils-size;</para>
 @y
-        <para>Download size: &sg3_utils-size;</para>
+        <para>&DownloadSize;: &sg3_utils-size;</para>
 @z
 
 @x
@@ -258,4 +258,3 @@
 @y
           <para>reads mode pages with SCSI MODE SENSE command.</para>
 @z
-

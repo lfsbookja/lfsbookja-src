@@ -152,6 +152,35 @@
 @z
 
 @x
+    <para><parameter>--libexecdir=/usr/lib/telepathy-mission-glib</parameter>:
+    This parameter prevents files being installed in
+    <filename class="directory">/usr/libexec</filename>.</para>
+@y
+    <para><parameter>--libexecdir=/usr/lib/telepathy-mission-glib</parameter>:
+    このパラメーターは、各種ファイルを <filename
+    class="directory">/usr/libexec</filename> へインストールしないようにします。
+    </para>
+@z
+
+@x
+    <para><option>--enable-vala-bindings</option>: This option builds the
+    EXPERIMENTAL Vala bindings.</para>
+@y
+    <para><option>--enable-vala-bindings</option>:
+    このオプションは実験的な Vala バインディングをビルドします。
+    </para>
+@z
+
+@x
+    <para><option>--enable-static=no</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--enable-static=no</option>:
+    このスイッチはスタティックライブラリをインストールしないようにいます。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

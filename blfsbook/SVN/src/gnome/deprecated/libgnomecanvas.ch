@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libgnomecanvas</title>
 @y
-    <title>libgnomecanvas の概要</title>
+    <title>&IntroductionTo1;libgnomecanvas&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libgnomecanvas-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libgnomecanvas-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libgnomecanvas-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libgnomecanvas-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libgnomecanvas-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libgnomecanvas-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libgnomecanvas-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libgnomecanvas-md5sum;</para>
+        <para>&Download; MD5 sum: &libgnomecanvas-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libgnomecanvas-size;</para>
 @y
-        <para>ダウンロードサイズ: &libgnomecanvas-size;</para>
+        <para>&DownloadSize;: &libgnomecanvas-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">libgnomecanvas Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgnomecanvas の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgnomecanvas&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of libgnomecanvas</title>
 @y
-    <title>libgnomecanvas のインストール</title>
+    <title>&InstallationOf1;libgnomecanvas&InstallationOf2;</title>
 @z
 
 @x
@@ -127,9 +127,7 @@
 @x
     <para>This package does not have a testsuite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -144,6 +142,15 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--disable-static</option>:
+    このスイッチはスタティックライブラリをインストールしないようにします。
+    </para>
 @z
 
 @x
@@ -168,7 +175,7 @@
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomecanvas-2.0/libgnomecanvas,
         share/gtk-doc/html/libgnomecanvas}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libgnomecanvas-2.{so,a}</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomecanvas-2.0/libgnomecanvas,
         share/gtk-doc/html/libgnomecanvas}</seg>

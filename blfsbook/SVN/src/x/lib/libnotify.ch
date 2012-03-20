@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libnotify</title>
 @y
-    <title>libnotify の概要</title>
+    <title>&IntroductionTo1;libnotify&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libnotify-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libnotify-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libnotify-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libnotify-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libnotify-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libnotify-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libnotify-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libnotify-md5sum;</para>
+        <para>&Download; MD5 sum: &libnotify-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libnotify-size;</para>
 @y
-        <para>ダウンロードサイズ: &libnotify-size;</para>
+        <para>&DownloadSize;: &libnotify-size;</para>
 @z
 
 @x
@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">libnotify Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libnotify の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libnotify&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -100,7 +100,7 @@
 @x
     <title>Installation of libnotify</title>
 @y
-    <title>libnotify のインストール</title>
+    <title>&InstallationOf1;libnotify&InstallationOf2;</title>
 @z
 
 @x
@@ -115,9 +115,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -126,6 +124,12 @@
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
 @z
 
 @x

@@ -264,7 +264,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -312,7 +312,7 @@
 @x
     <title>Configuring Git</title>
 @y
-    <title>Configuring Git</title>
+    <title>&Configuring1;Git&Configuring2;</title>
 @z
 
 @x
@@ -354,7 +354,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -373,16 +373,16 @@
         /usr/share/gitweb</seg>
 @y
         <seg>git, git-cvsserver, gitk, git-receive-pack, git-shell,
-        git-upload-archive and git-upload-pack.</seg>
+        git-upload-archive, git-upload-pack.</seg>
         <seg>/usr/libexec/git-core, /usr/share/git-&git-version;,
-        /usr/share/git-core, /usr/share/git-gui, /usr/share/gitk and
+        /usr/share/git-core, /usr/share/git-gui, /usr/share/gitk,
         /usr/share/gitweb</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x git

@@ -14,9 +14,15 @@
 @z
 
 @x
+  <!ENTITY notification-daemon-time          "less than 0.1 SBU">
+@y
+  <!ENTITY notification-daemon-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to notification-daemon</title>
 @y
-    <title>notification-daemon の概要</title>
+    <title>&IntroductionTo1;notification-daemon&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&notification-daemon-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&notification-daemon-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&notification-daemon-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&notification-daemon-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&notification-daemon-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&notification-daemon-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &notification-daemon-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &notification-daemon-md5sum;</para>
+        <para>&Download; MD5 sum: &notification-daemon-md5sum;</para>
 @z
 
 @x
         <para>Download size: &notification-daemon-size;</para>
 @y
-        <para>ダウンロードサイズ: &notification-daemon-size;</para>
+        <para>&DownloadSize;: &notification-daemon-size;</para>
 @z
 
 @x
@@ -73,7 +79,7 @@
 @x
     <bridgehead renderas="sect3">notification-daemon Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">notification-daemon の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;notification-daemon&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -111,7 +117,7 @@
 @x
     <title>Installation of notification-daemon</title>
 @y
-    <title>notification-daemon のインストール</title>
+    <title>&InstallationOf1;notification-daemon&InstallationOf2;</title>
 @z
 
 @x
@@ -127,8 +133,9 @@
     <para>This package's testsuite is only intended to be used by the
     maintainer to check i18n files.</para>
 @y
-    <para>This package's testsuite is only intended to be used by the
-    maintainer to check i18n files.</para>
+    <para>
+    本パッケージのテストスイートは、管理者が i18n ファイルをチェックする目的でのみ利用されます。
+    </para>
 @z
 
 @x
@@ -200,7 +207,7 @@
         <!--<seg>libstandard.{so,a}</seg>
         <seg>/usr/{lib/notification-daemon-1.0/engines,
         share/notification-daemon}</seg>-->
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/lib/notification-daemon-1.0, /usr/share/notification-daemon</seg>
 @z
 

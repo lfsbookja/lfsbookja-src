@@ -16,7 +16,7 @@
 @x
     <title>Introduction to CMake</title>
 @y
-    <title>CMake の概要</title>
+    <title>&IntroductionTo1;CMake&IntroductionTo2;</title>
 @z
 
 @x
@@ -24,11 +24,11 @@
     for generating <filename>Makefile</filename>s. It is a successor of the auto-generated
     <command>configure</command> script.</para>
 @y
-<para>
-<application>CMake</application> package contains a modern toolset used
-for generating <filename>Makefile</filename>s. It is a successor of the auto-generated
-<command>configure</command> script.
-</para>
+    <para>
+    <application>CMake</application> package contains a modern toolset used
+    for generating <filename>Makefile</filename>s. It is a successor of the auto-generated
+    <command>configure</command> script.
+    </para>
 @z
 
 @x
@@ -40,25 +40,25 @@ for generating <filename>Makefile</filename>s. It is a successor of the auto-gen
 @x
         <para>Download (HTTP): <ulink url="&cmake-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&cmake-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&cmake-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&cmake-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&cmake-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&cmake-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &cmake-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &cmake-md5sum;</para>
+        <para>&Download; MD5 sum: &cmake-md5sum;</para>
 @z
 
 @x
         <para>Download size: &cmake-size;</para>
 @y
-        <para>ダウンロードサイズ: &cmake-size;</para>
+        <para>&DownloadSize;: &cmake-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@ for generating <filename>Makefile</filename>s. It is a successor of the auto-gen
 @x
     <bridgehead renderas="sect3">CMake Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">CMake の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;CMake&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -106,24 +106,24 @@ for generating <filename>Makefile</filename>s. It is a successor of the auto-gen
 @x
     <title>Installation of CMake</title>
 @y
-    <title>CMake のインストール</title>
+    <title>&InstallationOf1;CMake&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>CMake</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>CMake</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>CMake</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -167,7 +167,7 @@ for generating <filename>Makefile</filename>s. It is a successor of the auto-gen
         /usr/share/doc/cmake-&cmake-version;</seg>
 @y
         <seg>ctest, cpack, ccmake, cmake</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/cmake-&cmake-version;,
         /usr/share/doc/cmake-&cmake-version;</seg>
 @z

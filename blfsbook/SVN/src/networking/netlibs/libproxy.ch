@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libproxy</title>
 @y
-    <title>libproxy の概要</title>
+    <title>&IntroductionTo1;libproxy&IntroductionTo2;</title>
 @z
 
 @x
@@ -76,7 +76,15 @@
 @x
     <bridgehead renderas="sect3">libproxy Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libproxy の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libproxy&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"><xref linkend="cmake"/></para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required"><xref linkend="cmake"/></para>
 @z
 
 @x
@@ -101,8 +109,8 @@
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="python2"/>,
     <xref linkend="xulrunner"/>,
-    <xref linkend="webkitgtk"/> (built with <application>gtk+-2</application>) or
-    <ulink url="http://webkit.org/">WebKit</ulink>, and
+    <xref linkend="webkitgtk"/> (<application>gtk+-2</application> とともにビルドされたもの) または
+    <ulink url="http://webkit.org/">WebKit</ulink>,
     <xref linkend="NetworkManager"/></para>
 @z
 
@@ -117,7 +125,20 @@
 @x
     <title>Installation of libproxy</title>
 @y
-    <title>libproxy のインストール</title>
+    <title>&InstallationOf1;libproxy&InstallationOf2;</title>
+@z
+
+@x
+    <para>Note that the many messages produced by <command>tar</command> when
+    extracting this package
+   [ tar: Ignoring unknown extended header keyword `SCHILY.dev' and so forth ]
+   do not appear to indicate a problem.</para>
+@y
+    <para>
+    本パッケージの tarball を <command>tar</command> コマンドにより伸張 (解凍) する際には、以下のようなメッセージが多く出力されます。
+    「tar: 未知の拡張ヘッダキーワード `SCHILY.dev' を無視」(tar: Ignoring unknown extended header keyword `SCHILY.dev' and so forth)
+    これらは特に問題はありません。
+    </para>
 @z
 
 @x
@@ -172,8 +193,7 @@
         <seg>/usr/lib/libproxy/&libproxy-version;/plugins</seg>
 @y
         <seg>proxy</seg>
-        <seg>libproxy.{so,a} と数々の
-        <application>libproxy</application> プラグイン</seg>
+        <seg>libproxy.{so,a} と数々の <application>libproxy</application> プラグイン</seg>
         <seg>/usr/lib/libproxy/&libproxy-version;/plugins</seg>
 @z
 

@@ -27,13 +27,9 @@
   build many popular programming environments to greatly expand your
   system's development capabilities.</para>
 @y
-<para>
-ベースシステムとしている LFS でも開発環境として利用することはできます。
-しかし LFS には <application>C</application>, 
-<application>C++</application>,
-<application>Perl</application>
-しか含まれていません。
-本章では代表的なプログラミング環境を構築する手順を説明し、システム開発力を大いに繰り広げていただくことを目指しています。
-</para>
+  <para>
+  ベースシステムとしている LFS でも開発環境として利用することはできます。
+  しかし LFS には <application>C</application>, <application>C++</application>, <application>Perl</application> しか含まれていません。
+  本章では代表的なプログラミング環境を構築する手順を説明し、システム開発力を大いに繰り広げていただくことを目指しています。
+  </para>
 @z
-

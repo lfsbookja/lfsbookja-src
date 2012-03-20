@@ -253,9 +253,7 @@
           various criteria.</para>
 @y
           <para>
-          
-prints entries in Change Logs matching
-          various criteria.
+          さまざまな条件にマッチした変更履歴 (Change Logs) の項目を出力します。
           </para>
 @z
 

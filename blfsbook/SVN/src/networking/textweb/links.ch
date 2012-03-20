@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Links</title>
 @y
-    <title>Links の概要</title>
+    <title>&IntroductionTo1;Links&IntroductionTo2;</title>
 @z
 
 @x
@@ -26,8 +26,7 @@
     and has many other features.</para>
 @y
     <para>
-    <application>Links</application>
-    は、テキストモードおよびグラフィックモードを持つ WWW ブラウザーです。
+    <application>Links</application> は、テキストモードおよびグラフィックモードを持つ WWW ブラウザーです。
     テーブルやフレームのレンダリング、バックグラウンドダウンロード、カラー表示など、数多くの機能をサポートしています。
     </para>
 @z
@@ -77,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">Links Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Links の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Links&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -139,7 +138,7 @@
 @x
     <title>Installation of Links</title>
 @y
-    <title>Links のインストール</title>
+    <title>&InstallationOf1;Links&InstallationOf2;</title>
 @z
 
 @x
@@ -154,7 +153,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-   <para>&notTestSuite;</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -184,7 +183,7 @@
 @x
     <title>Configuring Links</title>
 @y
-    <title>Links の設定</title>
+    <title>&Configuring1;Links&Configuring2;</title>
 @z
 
 @x
@@ -234,7 +233,7 @@
         <seg>/usr/share/doc/links-&Links-version;</seg>
 @y
         <seg>links</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/doc/links-&Links-version;</seg>
 @z
 

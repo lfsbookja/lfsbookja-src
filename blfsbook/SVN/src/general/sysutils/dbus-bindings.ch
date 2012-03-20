@@ -14,27 +14,39 @@
 @z
 
 @x
+  <!ENTITY dbus-qt3-time          "less than 0.1 SBU">
+@y
+  <!ENTITY dbus-qt3-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
+  <!ENTITY eggdbus-buildsize       "30 MB (includes installing the documentation and man page)">
+@y
+  <!ENTITY eggdbus-buildsize       "30 MB (ドキュメントと man ページのインストールを含む)">
+@z
+
+@x
 <sect1 id="dbus-bindings" xreflabel="D-Bus Bindings">
 @y
-<sect1 id="dbus-bindings" xreflabel="D-Bus バインディング">
+<sect1 id="dbus-bindings" xreflabel="D-Bus &Bindings;">
 @z
 
 @x
   <title>D-Bus Bindings</title>
 @y
-  <title>D-Bus バインディング</title>
+  <title>D-Bus &Bindings;</title>
 @z
 
 @x
     <primary sortas="a-dbus-bindings">D-Bus Bindings</primary>
 @y
-    <primary sortas="a-dbus-bindings">D-Bus バインディング</primary>
+    <primary sortas="a-dbus-bindings">D-Bus &Bindings;</primary>
 @z
 
 @x
     <title>Introduction to D-Bus Bindings</title>
 @y
-    <title>&IntroductionTo1;D-Bus バインディング&IntroductionTo2;</title>
+    <title>&IntroductionTo1;D-Bus &Bindings;&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,9 +58,9 @@
     successfully.</para>
 @y
     <para>
-    <application>D-Bus バインディング (D-Bus Bindings)</application> は複数のパッケージからなるものであり、D-Bus API とのインターフェースとなるプログラミング言語やプラットフォームを含みます。
+    <application>D-Bus &Bindings; (D-Bus Bindings)</application> は複数のパッケージからなるものであり、D-Bus API とのインターフェースとなるプログラミング言語やプラットフォームを含みます。
     これらを利用するプログラマーは、用いようとしているプラットフォームやプログラミング言語と D-Bus とのインターフェースを容易に構築できます。
-    D-Bus バインディングではないパッケージであっても、それらをビルドする際に D-Bus バインディングを必要とするようなものもあります。
+    D-Bus &Bindings;ではないパッケージであっても、それらをビルドする際に D-Bus &Bindings;を必要とするようなものもあります。
     </para>
 @z
 
@@ -61,30 +73,28 @@
     Bindings</ulink> page for information.</para>
 @y
     <para>
-    本節では <application>GLib</application>,
-    <application>Python</application>, <application>Qt3</application>,
-    <application>GObject</application> の各バインディングを示します。
-    他のプログラミング言語に対するバインディングの情報は、<ulink
-    url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus バインディング</ulink> のページを参照してください。
+    本節では <application>GLib</application>, <application>Python</application>, <application>Qt3</application>, <application>GObject</application> の各&Bindings;を示します。
+    他のプログラミング言語に対する&Bindings;の情報は、<ulink
+    url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus &Bindings;</ulink> のページを参照してください。
     </para>
 @z
 
 @x
     <title>D-Bus GLib Bindings</title>
 @y
-    <title>D-Bus GLib バインディング</title>
+    <title>D-Bus GLib &Bindings;</title>
 @z
 
 @x
       <primary sortas="a-dbus-glib">D-Bus GLib Bindings</primary>
 @y
-      <primary sortas="a-dbus-glib">D-Bus GLib バインディング</primary>
+      <primary sortas="a-dbus-glib">D-Bus GLib &Bindings;</primary>
 @z
 
 @x
       <title>Introduction to D-Bus GLib Bindings</title>
 @y
-      <title>&IntroductionTo1;D-Bus GLib バインディング&IntroductionTo2;</title>
+      <title>&IntroductionTo1;D-Bus GLib &Bindings;&IntroductionTo2;</title>
 @z
 
 @x
@@ -174,7 +184,7 @@
 @x
       <title>Installation of D-Bus GLib Bindings</title>
 @y
-      <title>D-Bus GLib バインディングのインストール</title>
+      <title>&InstallationOf1;D-Bus GLib &Bindings;&InstallationOf2;</title>
 @z
 
 @x
@@ -182,7 +192,7 @@
       running the following commands:</para>
 @y
       <para>
-      以下のコマンドを実行して <application>D-Bus GLib バインディング</application> をビルドします。
+      以下のコマンドを実行して <application>D-Bus GLib &Bindings;</application> をビルドします。
       </para>
 @z
 
@@ -279,19 +289,19 @@
 @x
     <title>D-Bus Python Bindings</title>
 @y
-    <title>D-Bus Python バインディング</title>
+    <title>D-Bus Python &Bindings;</title>
 @z
 
 @x
       <primary sortas="a-dbus-python">D-Bus Python Bindings</primary>
 @y
-      <primary sortas="a-dbus-python">D-Bus Python バインディング</primary>
+      <primary sortas="a-dbus-python">D-Bus Python &Bindings;</primary>
 @z
 
 @x
       <title>Introduction to D-Bus Python Bindings</title>
 @y
-      <title>D-Bus Python バインディングの概要</title>
+      <title>&IntroductionTo1;D-Bus Python &Bindings;&IntroductionTo2;</title>
 @z
 
 @x
@@ -303,25 +313,25 @@
 @x
           <para>Download (HTTP): <ulink url="&dbus-python-download-http;"/></para>
 @y
-          <para>ダウンロード (HTTP): <ulink url="&dbus-python-download-http;"/></para>
+          <para>&Download; (HTTP): <ulink url="&dbus-python-download-http;"/></para>
 @z
 
 @x
           <para>Download (FTP): <ulink url="&dbus-python-download-ftp;"/></para>
 @y
-          <para>ダウンロード (FTP): <ulink url="&dbus-python-download-ftp;"/></para>
+          <para>&Download; (FTP): <ulink url="&dbus-python-download-ftp;"/></para>
 @z
 
 @x
           <para>Download MD5 sum: &dbus-python-md5sum;</para>
 @y
-          <para>ダウンロード MD5 sum: &dbus-python-md5sum;</para>
+          <para>&Download; MD5 sum: &dbus-python-md5sum;</para>
 @z
 
 @x
           <para>Download size: &dbus-python-size;</para>
 @y
-          <para>ダウンロードサイズ: &dbus-python-size;</para>
+          <para>&DownloadSize;: &dbus-python-size;</para>
 @z
 
 @x
@@ -339,7 +349,7 @@
 @x
       <bridgehead renderas="sect4">D-Bus Python Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">D-Bus Python の依存パッケージ</bridgehead>
+      <bridgehead renderas="sect4">&Dependencies1;D-Bus Python&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -395,7 +405,7 @@
 @x
       <title>Installation of D-Bus Python Bindings</title>
 @y
-      <title>D-Bus Python バインディングのインストール</title>
+      <title>&InstallationOf1;D-Bus Python &Bindings;&InstallationOf2;</title>
 @z
 
 @x
@@ -403,7 +413,7 @@
       running the following commands:</para>
 @y
       <para>
-      以下のコマンドを実行して <application>D-Bus Python バインディング</application> をビルドします。
+      以下のコマンドを実行して <application>D-Bus Python &Bindings;</application> をビルドします。
       </para>
 @z
 
@@ -458,7 +468,7 @@
           <seg>/usr/lib/python&python2-majorver;/site-packages/dbus and
           /usr/share/doc/dbus-python-&dbus-python-version;</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
           <seg><application>Python</application>
           <application>D-Bus</application> モジュール</seg>
           <seg>/usr/lib/python&python2-majorver;/site-packages/dbus,
@@ -466,23 +476,21 @@
 @z
 
 @x
-  <sect2 id="dbus-qt3" xreflabel="D-Bus Trinity Qt3 Bindings-&dbus-qt3-version;">
   <title>Trinity D-Bus Qt3 Bindings</title>
 @y
-  <sect2 id="dbus-qt3" xreflabel="D-Bus Trinity Qt3 バインディング-&dbus-qt3-version;">
-  <title>Trinity D-Bus Qt3 バインディング</title>
+  <title>Trinity D-Bus Qt3 &Bindings;</title>
 @z
 
 @x
     <primary sortas="a-dbus-qt3">D-Bus Qt3 Bindings</primary>
 @y
-    <primary sortas="a-dbus-qt3">D-Bus Qt3 バインディング</primary>
+    <primary sortas="a-dbus-qt3">D-Bus Qt3 &Bindings;</primary>
 @z
 
 @x
       <title>Introduction to D-Bus Qt3 Bindings</title>
 @y
-      <title>D-Bus Qt3 バインディングの概要</title>
+      <title>&IntroductionTo1;D-Bus Qt3 &Bindings;&IntroductionTo2;</title>
 @z
 
 @x
@@ -494,25 +502,25 @@
 @x
           <para>Download (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
 @y
-          <para>ダウンロード (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
+          <para>&Download; (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
 @z
 
 @x
           <para>Download (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
 @y
-          <para>ダウンロード (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
+          <para>&Download; (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
 @z
 
 @x
           <para>Download MD5 sum: &dbus-qt3-md5sum;</para>
 @y
-          <para>ダウンロード MD5 sum: &dbus-qt3-md5sum;</para>
+          <para>&Download; MD5 sum: &dbus-qt3-md5sum;</para>
 @z
 
 @x
           <para>Download size: &dbus-qt3-size;</para>
 @y
-          <para>ダウンロードサイズ: &dbus-qt3-size;</para>
+          <para>&DownloadSize;: &dbus-qt3-size;</para>
 @z
 
 @x
@@ -530,7 +538,7 @@
 @x
       <bridgehead renderas="sect4">D-Bus Qt3 Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">D-Bus Qt3 の依存パッケージ</bridgehead>
+      <bridgehead renderas="sect4">&Dependencies1;D-Bus Qt3&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -558,15 +566,16 @@
 @x
       <title>Installation of D-Bus Trinity/Qt3 Bindings</title>
 @y
-      <title>D-Bus Trinity/Qt3 バインディングのインストール</title>
+      <title>&InstallationOf1;D-Bus Trinity/Qt3 &Bindings;&InstallationOf2;</title>
 @z
 
 @x
       <note><para>Be sure your environment is set up as described in 
       <xref linkend='kde-pre-install-config'/></para></note>
 @y
-      <note><para>Be sure your environment is set up as described in 
-      <xref linkend='kde-pre-install-config'/></para></note>
+      <note><para>
+      <xref linkend='kde-pre-install-config'/> にて説明している設定を行っているかを確認してください。
+      </para></note>
 @z
 
 @x
@@ -574,16 +583,14 @@
       running the following commands:</para>
 @y
       <para>
-      以下のコマンドを実行して <application>D-Bus Trinity/Qt3 Bindings</application> をビルドします。
+      以下のコマンドを実行して <application>D-Bus Trinity/Qt3 &Bindings;</application> をビルドします。
       </para>
 @z
 
 @x
       <para>This package does not come with a test suite.</para>
 @y
-      <para>
-      &notTestSuite;
-      </para>
+      <para>&notTestSuite;</para>
 @z
 
 @x
@@ -615,7 +622,7 @@
           <seg>libdbus-tqt-1.so</seg>
           <seg>$TRINITY_PREFIX/include/dbus-1.0</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
           <seg>libdbus-tqt-1.so</seg>
           <seg>$TRINITY_PREFIX/include/dbus-1.0</seg>
 @z
@@ -638,13 +645,13 @@
 @x
     <title>D-Bus GObject Bindings (EggDBus)</title>
 @y
-    <title>D-Bus GObject バインディング (EggDBus)</title>
+    <title>D-Bus GObject &Bindings; (EggDBus)</title>
 @z
 
 @x
       <title>Introduction to EggDBus</title>
 @y
-      <title>EggDBus の概要</title>
+      <title>&IntroductionTo1;EggDBus&IntroductionTo2;</title>
 @z
 
 @x
@@ -656,25 +663,25 @@
 @x
           <para>Download (HTTP): <ulink url="&eggdbus-download-http;"/></para>
 @y
-          <para>ダウンロード (HTTP): <ulink url="&eggdbus-download-http;"/></para>
+          <para>&Download; (HTTP): <ulink url="&eggdbus-download-http;"/></para>
 @z
 
 @x
           <para>Download (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
 @y
-          <para>ダウンロード (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
+          <para>&Download; (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
 @z
 
 @x
           <para>Download MD5 sum: &eggdbus-md5sum;</para>
 @y
-          <para>ダウンロード MD5 sum: &eggdbus-md5sum;</para>
+          <para>&Download; MD5 sum: &eggdbus-md5sum;</para>
 @z
 
 @x
           <para>Download size: &eggdbus-size;</para>
 @y
-          <para>ダウンロードサイズ: &eggdbus-size;</para>
+          <para>&DownloadSize;: &eggdbus-size;</para>
 @z
 
 @x
@@ -692,7 +699,7 @@
 @x
       <bridgehead renderas="sect4">EggDBus Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">EggDBus の依存パッケージ</bridgehead>
+      <bridgehead renderas="sect4">&Dependencies1;EggDBus&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -724,7 +731,7 @@
 @x
       <title>Installation of EggDBus</title>
 @y
-      <title>EggDBus のインストール</title>
+      <title>&InstallationOf1;EggDBus&InstallationOf2;</title>
 @z
 
 @x
