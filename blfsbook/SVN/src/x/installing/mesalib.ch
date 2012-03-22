@@ -87,7 +87,7 @@
     <para role="required">
       <xref linkend="expat"/>,
       <xref linkend="libdrm"/>,
-      <xref linkend="llvm"/>,
+      <xref linkend="libxml2"/>,
       <xref linkend="makedepend"/>,
       <xref linkend="talloc"/>, and
       <xref linkend="xorg7-lib"/>
@@ -97,7 +97,7 @@
     <para role="required">
       <xref linkend="expat"/>,
       <xref linkend="libdrm"/>,
-      <xref linkend="llvm"/>,
+      <xref linkend="libxml2"/>,
       <xref linkend="makedepend"/>,
       <xref linkend="talloc"/>,
       <xref linkend="xorg7-lib"/>

@@ -226,11 +226,11 @@
       <para>By default, <application>GLib</application> assumes that all
       filenames are in the UTF-8 charset. See the <xref
       linkend="locale-wrong-filename-encoding"/> section of the <xref
-      linkend="locale-issues"/> page for more details on this kind of
-      issue. In order to tell <application>GLib</application> and
-      applications that use it that filenames are in the default locale
-      encoding, set the variable <envar>G_FILENAME_ENCODING</envar> to the
-      value "@locale":</para>
+      linkend="locale-issues"/> page for more details on this kind of issue. In
+      order to tell <application>GLib</application> and applications that use
+      it that filenames are in the default locale encoding, set the variable
+      <envar>G_FILENAME_ENCODING</envar> to the value "@locale".  As the
+      <systemitem class="username">root</systemitem> user:</para>
 @y
       <para>
       デフォルトで <application>GLib</application> はファイル名がすべて UTF-8 エンコーディングであるものとして取り扱います。
@@ -238,6 +238,7 @@
       linkend="locale-issues"/> ページの <xref
       linkend="locale-wrong-filename-encoding"/> の項を参照してください。
       <application>GLib</application> やこれを利用するアプリケーションに対して、ファイル名がデフォルトエンコーディングであることを指示するには、変数 <envar>G_FILENAME_ENCODING</envar> に対して "@locale" という値をセットします。
+      <systemitem class="username">root</systemitem> になって以下を実行します。
       </para>
 @z
 

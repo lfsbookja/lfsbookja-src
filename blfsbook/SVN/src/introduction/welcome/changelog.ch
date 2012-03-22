@@ -54,6 +54,44 @@
 @z
 
 @x
+      <para>March 21th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - added amarok 2.5.0 and updated mysql configuration accordingly.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - MesaLib 8.0.2.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - amarok 2.5.0 追加。関連する mysql の設定を更新。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - MesaLib 8.0.2.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 20th, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - unrar 4.1.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - unrar 4.1.1.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>March 19th, 2012</para>
       <itemizedlist>
         <listitem>

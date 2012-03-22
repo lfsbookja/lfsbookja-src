@@ -16,7 +16,7 @@
 @x
     <title>Introduction to neon</title>
 @y
-    <title>neon の概要</title>
+    <title>&IntroductionTo1;neon&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">neon Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">neon の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;neon&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -89,11 +89,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="openssl"/> or
-    <xref linkend="gnutls"/></para>
+    <xref linkend="gnutls"/>,
+    <xref linkend="libproxy"/> (requires <xref linkend="pkgconfig"/> to find it),
+    <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>, and
+    <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/> または
-    <xref linkend="gnutls"/></para>
+    <para role="optional"><xref linkend="openssl"/> or
+    <xref linkend="gnutls"/>,
+    <xref linkend="libproxy"/> (requires <xref linkend="pkgconfig"/> to find it),
+    <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>, and
+    <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink></para>
 @z
 
 @x
@@ -107,7 +113,7 @@
 @x
     <title>Installation of neon</title>
 @y
-    <title>neon のインストール</title>
+    <title>&InstallationOf1;neon&InstallationOf2;</title>
 @z
 
 @x
@@ -206,11 +212,11 @@
 
 @x
         <seg>neon-config</seg>
-        <seg>libneon.{so,a}</seg>
+        <seg>libneon.so</seg>
         <seg>/usr/{include/neon,share/doc/neon-0.29.6/html}</seg>
 @y
         <seg>neon-config</seg>
-        <seg>libneon.{so,a}</seg>
+        <seg>libneon.so</seg>
         <seg>/usr/{include/neon,share/doc/neon-0.29.6/html}</seg>
 @z
 

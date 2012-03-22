@@ -34,15 +34,12 @@
     impose any specific data storage requirement, nor is it tied to any
     desktop environment or software suite.</para>
 @y
-<para>
-<application>libmcs</application> package is a library and set of
-tools which abstract the storage of configuration settings away from
-userland applications. There are similar projects like this (such as
-<application>GConf</application>), but unlike those projects,
-<application>libmcs</application> strictly handles abstraction. It does not
-impose any specific data storage requirement, nor is it tied to any
-desktop environment or software suite.
-</para>
+    <para>
+    <application>libmcs</application> パッケージは、各種設定情報をユーザーアプリケーションから分離し抽象化するライブラリおよびツールを提供します。
+    似たようなもの (例えば <application>GConf</application>) が他にもありますが、本パッケージは少々異なります。
+    <application>libmcs</application> では、抽象化を強く推し進めます。
+    特定のデータストレージの方法に限定されず、デスクトップ環境やソフトウェアスイートに依存しません。
+    </para>
 @z
 
 @x
@@ -161,11 +158,9 @@ desktop environment or software suite.
     identify the location of Qt and, possibly, KDE libraries and interface
     headers.</para>
 @y
-    <para><option>--with-qt-path=/usr/share/qt</option>: If you have
-    <xref linkend="kdelibs"/> installed, you must pass
-    additional parameters to the <command>configure</command> script to
-    identify the location of Qt and, possibly, KDE libraries and interface
-    headers.</para>
+    <para><option>--with-qt-path=/usr/share/qt</option>:
+    <xref linkend="kdelibs"/> をインストールしている場合は <command>configure</command> スクリプトに対して、Qt ライブラリがどこにあるか、また KDE ライブラリやインターフェースヘッダーがどこにあるかを指定する必要があります。
+    </para>
 @z
 
 @x
@@ -176,12 +171,12 @@ desktop environment or software suite.
     fail if it is the <application>kde4</application> version). This switch will
     prevent that.</para>
 @y
-    <para><option>--disable-kconfig</option>: If <filename>configure</filename>
-    finds <filename class="libraryfile">libkdecore</filename> from
-    <application>kdelibs</application>, it does not test to check it is indeed
-    the <application>kde3</application> version and will try to use it (and
-    fail if it is the <application>kde4</application> version). This switch will
-    prevent that.</para>
+    <para><option>--disable-kconfig</option>:
+    <filename>configure</filename> が <application>kdelibs</application> に含まれる <filename
+    class="libraryfile">libkdecore</filename> を検出した際には、<application>kde3</application> のものかどうかまではチェックされずに処理されます。
+    (<application>kde4</application> ものであった場合には処理に失敗します。)
+    そこで本スイッチにより、処理に失敗しないようにします。
+    </para>
 @z
 
 @x
@@ -189,9 +184,9 @@ desktop environment or software suite.
     (including the default XDG-compliant backend), see the
     <filename>README</filename> file in the source tree.</para>
 @y
-    <para>For additional information about the various storage backends
-    (including the default XDG-compliant backend), see the
-    <filename>README</filename> file in the source tree.</para>
+    <para>
+    数多くのストレージバックエンド (デフォルトの XDG 互換のバックエンドを含む) に関する情報は、ソースディレクトリ内にある <filename>README</filename> を参照してください。
+    </para>
 @z
 
 @x
@@ -207,11 +202,11 @@ desktop environment or software suite.
     required. See section 2 of the <filename>README</filename> file in the
     source tree for details.</para>
 @y
-    <para>There are various ways to configure <application>libmcs</application>
-    to use a specific backend on a site-wide or individual user basis. If the
-    default file-based storage backend is suitable, no configuration steps are
-    required. See section 2 of the <filename>README</filename> file in the
-    source tree for details.</para>
+    <para>
+    <application>libmcs</application> にて利用するバックエンドを、システム全体あるいはユーザー固有の設定として定める方法をいろいろとあります。
+    デフォルトのファイルベースのバックエンドを利用するので良ければ、特に何も設定する必要はありません。
+    詳細については ソースディレクトリ内にある <filename>README</filename> ファイルのセクション 2 に示されている内容を確認してください。
+    </para>
 @z
 
 @x
@@ -239,7 +234,7 @@ desktop environment or software suite.
 @y
         <seg>mcs-getconfval, mcs-info, mcs-query-backends,
         mcs-setconfval</seg>
-        <seg>libmcs.so and backend storage modules</seg>
+        <seg>libmcs.so とバックエンドストレージモジュール</seg>
         <seg>/usr/include/libmcs, /usr/lib/mcs,
         /usr/share/doc/libmcs-&libmcs-version;</seg>
 @z
@@ -254,40 +249,43 @@ desktop environment or software suite.
           <para>queries <application>libmcs</application> for a configuration
           value.</para>
 @y
-<para>
-queries <application>libmcs</application> for a configuration
-value.
-</para>
+          <para>
+          <application>libmcs</application> が設定する内容を検索します。
+          </para>
 @z
 
 @x mcs-info
           <para>displays information about the current installation and
           configuration of <application>libmcs</application>.</para>
 @y
-          <para>displays information about the current installation and
-          configuration of <application>libmcs</application>.</para>
+          <para>
+          <application>libmcs</application> のインストール状況および設定内容を表示します。
+          </para>
 @z
 
 @x mcs-query-backends
           <para>queries <application>libmcs</application> to determine what
           backends are available.</para>
 @y
-          <para>queries <application>libmcs</application> to determine what
-          backends are available.</para>
+          <para>
+          <application>libmcs</application> がバックエンドとして何が利用可能であるかを決定します。
+          </para>
 @z
 
 @x mcs-setconfval
           <para>instructs <application>libmcs</application> to change a
           configuration value.</para>
 @y
-          <para>instructs <application>libmcs</application> to change a
-          configuration value.</para>
+          <para>
+          <application>libmcs</application> に対して設定値の変更を指示します。
+          </para>
 @z
 
 @x libmcs.so
           <para>contains the API functions required by the
           <application>libmcs</application> userspace tools.</para>
 @y
-          <para>contains the API functions required by the
-          <application>libmcs</application> userspace tools.</para>
+          <para>
+          <application>libmcs</application> のユーザー空間ツールにて必要となる API 関数を提供します。
+          </para>
 @z
