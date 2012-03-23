@@ -34,9 +34,9 @@
       <firstname>編集： Matthew Burgess</firstname>
       <surname>、Bruce Dubbs</surname>
     </author>
-    <collab>
-      <collabname>日本語訳： 松山道夫 (&jversion; 版)</collabname>
-    </collab>
+    <author>
+      <firstname>日本語訳： 松山道夫 (&jversion; 版)</firstname>
+    </author>
   </authorgroup>
 @z
 

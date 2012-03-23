@@ -58,6 +58,12 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          タイトル表記にて翻訳者名を collab タグから author タグに変更。
+          これにより PDF 版にも翻訳者名を表記。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           SVN-20120322,
           Changeset
           <ulink url="&lfs-rev-root;9783">9783</ulink>,
