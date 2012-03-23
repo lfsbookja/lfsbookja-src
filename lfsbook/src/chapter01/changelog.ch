@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2012-03-22</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Fix corner case in ipv4-static script. </para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-03-22</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - ipv4-static スクリプトにて、まれにしか起きないケースを修正。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-20</para>
       <itemizedlist>
          <listitem>
