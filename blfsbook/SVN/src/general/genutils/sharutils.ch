@@ -161,10 +161,9 @@
           ASCII characters.</para>
 @y
           <para>
-          
-          reads a file (or by default the standard input) and writes an encoded 
-          version to the standard output. The encoding uses only printing 
-          ASCII characters.</para>
+          ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、標準出力にエンコード結果を出力します。
+          エンコード結果は印字可能なアスキー文字のみが用いられます。
+          </para>
 @z
 
 @x uuencode
@@ -172,7 +171,6 @@
           the uuencoded version to the standard output.</para>
 @y
           <para>
-          
-          reads a file (or by default the standard input) and decodes
-          the uuencoded version to the standard output.</para>
+          ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、uuencode により処理された内容を復元して標準出力に出力します。
+          </para>
 @z

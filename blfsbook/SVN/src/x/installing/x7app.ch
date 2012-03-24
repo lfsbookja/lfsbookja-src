@@ -34,7 +34,7 @@
 @x
     <title>Introduction to Xorg Applications</title>
 @y
-    <title>Xorg アプリケーションの概要</title>
+    <title>&IntroductionTo1;Xorg アプリケーション&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,14 +42,13 @@
     expected applications available in previous X Window
     implementations.</para>
 @y
-<!--
-日本語訳註：
-expected をうまく訳せない； どうしたものか・・・
--->
-<para>
-<application>Xorg</application>
-アプリケーションは、以前の X ウィンドウシステムにて利用されてきたアプリケーションを提供します。
-</para>
+    <!--
+    日本語訳註：
+    expected をうまく訳せない； どうしたものか・・・
+    -->
+    <para>
+    <application>Xorg</application> アプリケーションは、以前の X ウィンドウシステムにて利用されてきたアプリケーションを提供します。
+    </para>
 @z
 
 @x
@@ -61,25 +60,25 @@ expected をうまく訳せない； どうしたものか・・・
 @x
         <para>Download (HTTP): <ulink url="&x7apps-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&x7apps-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&x7apps-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&x7apps-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&x7apps-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&x7apps-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: <ulink url="&x7apps-md5sum;"/></para>
 @y
-        <para>ダウンロード MD5 sum: <ulink url="&x7apps-md5sum;"/></para>
+        <para>&Download; MD5 sum: <ulink url="&x7apps-md5sum;"/></para>
 @z
 
 @x
         <para>Download size: &x7apps-size;</para>
 @y
-        <para>ダウンロードサイズ: &x7apps-size;</para>
+        <para>&DownloadSize;: &x7apps-size;</para>
 @z
 
 @x
@@ -109,7 +108,7 @@ expected をうまく訳せない； どうしたものか・・・
 @x
     <bridgehead renderas="sect3">Xorg Applications Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xorg アプリケーションの依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Xorg アプリケーション&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -152,43 +151,57 @@ expected をうまく訳せない； どうしたものか・・・
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
-<para>
-必要なファイルをダウンロードするために、
-<application>wget</application> を使って以下を実行します。
-</para>
+    <para>
+    必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
+    </para>
 @z
 
 @x
     <title>Installation of Xorg Applications</title>
 @y
-    <title>Xorg アプリケーションのインストール</title>
+    <title>&InstallationOf1;Xorg アプリケーション&InstallationOf2;</title>
 @z
 
 @x
     <para>Install the applications by running the following commands for each
     package:</para>
 @y
-<para>
-以下を実行して個々のパッケージのインストールを行います。
-</para>
+    <para>
+    以下を実行して個々のパッケージのインストールを行います。
+    </para>
 @z
 
 @x
     <para>These packages do not provide test suites.</para>
 @y
-<para>
-これらのパッケージにはテストスイートはありません。
-</para>
+    <para>
+    これらのパッケージにはテストスイートはありません。
+    </para>
 @z
 
 @x
     <para>Now as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed -i -e '/^rcdir =/s...</command>: This command ensures
+    the <application>twm</application> configuration file gets installed in 
+    the proper location.</para>
+@y
+    <para><command>sed -i -e '/^rcdir =/s...</command>:
+    このコマンドは <application>twm</application> の設定ファイルを、適切なディレクトリへインストールするようにします。
+    </para>
 @z
 
 @x
@@ -230,14 +243,94 @@ expected をうまく訳せない； どうしたものか・・・
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x appres
           <para>lists the X application resource database.</para>
 @y
-<para>
-X アプリケーションのリソースデータベース (resource database) を一覧表示します。
-</para>
+          <para>
+          X アプリケーションのリソースデータベース (resource database) を一覧表示します。
+          </para>
+@z
+
+@x bdftopcf
+          <para>converts an X font from Bitmap Distribution Format to Portable
+          Compiled Format.</para>
+@y
+          <para>BDF (Bitmap Distribution Format) を PCF (Portable Compiled Format) に変換します。</para>
+@z
+
+@x iceauth
+          <para>is the ICE authority file utility.</para>
+@y
+          <para>is the ICE authority file utility.</para>
+@z
+
+@x luit
+          <para>provides locale and ISO 2022 support for Unicode
+          terminals.</para>
+@y
+          <para>ユニコードターミナルに対して、ロケールと ISO 2022 サポートを提供します。</para>
+@z
+
+@x mkfontdir
+          <para>creates an index of X font files in a directory.</para>
+@y
+          <para>ディレクトリ内に X フォントファイルのインデックスを生成します。</para>
+@z
+
+@x mkfontscale
+          <para>creates an index of scalable font files for X.</para>
+@y
+          <para>X におけるスケーラブルフォントファイルのインデックスを生成します。</para>
+@z
+
+@x sessreg
+          <para>manages utmp/wtmp entries for non-init clients.</para>
+@y
+          <para>manages utmp/wtmp entries for non-init clients.</para>
+@z
+
+@x setxkbmap
+          <para>sets the keyboard using the X Keyboard Extension.</para>
+@y
+          <para>XKB (X Keyboard Extension) を用いたキーボード設定を行います。</para>
+@z
+
+@x smproxy
+          <para>is the Session Manager Proxy.</para>
+@y
+          <para>セッションマネージャープロキシー (Session Manager Proxy)</para>
+@z
+
+@x startx
+          <para>initializes an X session.</para>
+@y
+          <para>X セッションを初期化します。</para>
+@z
+
+@x
+          <para>is the Tab Window Manager for the X Window System.</para>
+@y
+          <para>X ウィンドウシステムにおける twm (Tab Window Manager)</para>
+@z
+
+@x x11perf
+          <para>is an X11 server performance test program.</para>
+@y
+          <para>X11 サーバーにおけるパフォーマンステストプログラム。</para>
+@z
+
+@x x11perfcomp
+          <para>is an X11 server performance comparison program.</para>
+@y
+          <para>X11 サーバーにおけるパフォーマンス比較プログラム。</para>
+@z
+
+@x xauth
+          <para>is the X authority file utility.</para>
+@y
+          <para>X 認証 (authority) ファイルユーティリティー。</para>
 @z
 

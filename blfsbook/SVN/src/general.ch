@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "March 21th, &year;">
+<!ENTITY releasedate  "March 23rd, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20120322">
-<!ENTITY jratio       "44.8 &percnt;">
+<!ENTITY jversion     "20120324">
+<!ENTITY jratio       "45.5 &percnt;">
 @z
 
 @x
@@ -40,15 +40,15 @@
 <!ENTITY ConfigInfo           "設定情報">
 
 <!ENTITY IntroductionTo1      "">
-<!ENTITY IntroductionTo2      " の概要">
+<!ENTITY IntroductionTo2      "の概要">
 <!ENTITY PackageInformation   "パッケージ情報">
 <!ENTITY Dependencies1        "">
-<!ENTITY Dependencies2        " の依存パッケージ">
+<!ENTITY Dependencies2        "の依存パッケージ">
 <!ENTITY InstallationOf1      "">
-<!ENTITY InstallationOf2      " のインストール">
+<!ENTITY InstallationOf2      "のインストール">
 <!ENTITY CommandExplanations  "コマンド説明">
 <!ENTITY Configuring1         "">
-<!ENTITY Configuring2         " の設定">
+<!ENTITY Configuring2         "の設定">
 <!ENTITY KernelConfiguration  "カーネルの設定">
 <!ENTITY Contents             "パッケージ構成">
 <!ENTITY InstalledPrograms    "インストールプログラム">

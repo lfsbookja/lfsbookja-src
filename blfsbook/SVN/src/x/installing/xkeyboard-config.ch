@@ -16,13 +16,13 @@
 @x
   <!ENTITY xkeyboard-config-time          "less than 0.1 SBU">
 @y
-  <!ENTITY xkeyboard-config-time          "0.1 SBU 以下">
+  <!ENTITY xkeyboard-config-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to XKeyboardConfig</title>
 @y
-    <title>XKeyboardConfig の概要</title>
+    <title>&IntroductionTo1;XKeyboardConfig&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&xkeyboard-config-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&xkeyboard-config-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&xkeyboard-config-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&xkeyboard-config-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&xkeyboard-config-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&xkeyboard-config-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &xkeyboard-config-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &xkeyboard-config-md5sum;</para>
+        <para>&Download; MD5 sum: &xkeyboard-config-md5sum;</para>
 @z
 
 @x
         <para>Download size: &xkeyboard-config-size;</para>
 @y
-        <para>ダウンロードサイズ: &xkeyboard-config-size;</para>
+        <para>&DownloadSize;: &xkeyboard-config-size;</para>
 @z
 
 @x
@@ -80,7 +80,7 @@
 @x
     <bridgehead renderas="sect3">XKeyboardConfig Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">XKeyboardConfig の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;XKeyboardConfig&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,33 +104,30 @@
 @x
     <title>Installation of XKeyboardConfig</title>
 @y
-    <title>XKeyboardConfig のインストール</title>
+    <title>&InstallationOf1;XKeyboardConfig&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>XKeyboardConfig</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>XKeyboardConfig</application>
-をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>XKeyboardConfig</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -144,12 +141,12 @@
     the XKB rules installed are named "base". This creates symlinks named
     "xorg" to those rules, which is the default name used by Xorg.</para>
 @y
-<para>
-<parameter>--with-xkb-rules-symlink=xorg</parameter>:
-デフォルトにてインストールされる XKB ルールは "base" というファイル名です。
-このパラメーターは、それらのルールに対して "xorg" というシンボリックリンクとして生成します。
-この名前は Xorg にてデフォルトで用いられる名前です。
-</para>
+    <para>
+    <parameter>--with-xkb-rules-symlink=xorg</parameter>:
+    デフォルトにてインストールされる XKB ルールは "base" というファイル名です。
+    このパラメーターは、それらのルールに対して "xorg" というシンボリックリンクとして生成します。
+    この名前は Xorg にてデフォルトで用いられる名前です。
+    </para>
 @z
 
 @x
@@ -174,8 +171,8 @@
         <seg><envar>$XORG_PREFIX</envar>/share/X11/xkb,
         <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/X11/xkb,
         <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;</seg>
 @z

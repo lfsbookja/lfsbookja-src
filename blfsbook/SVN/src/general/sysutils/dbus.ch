@@ -103,15 +103,27 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended"><xref linkend="xorg7-lib"/>
+    (for <command>dbus-launch</command> program)</para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended"><xref linkend="xorg7-lib"/>
+    (<command>dbus-launch</command> プログラムのため)</para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-glib"/> (to run tests), and
+      <xref linkend="dbus-glib"/> (to run tests),
+      <xref linkend="python2"/> (to run tests) and
       <xref linkend="doxygen"/> (to generate the API documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-glib"/> (テスト実行のため), and
+      <xref linkend="dbus-glib"/> (テスト実行のため),
+      <xref linkend="python2"/> (テスト実行のため),
       <xref linkend="doxygen"/> (API ドキュメント生成時に必要)
     </para>
 @z
@@ -500,12 +512,11 @@
 
 @x
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-daemon-launch-helper,
-        dbus-launch, dbus-monitor, dbus-send, and dbus-uuidgen</seg>
+        dbus-launch, dbus-monitor, dbus-send and dbus-uuidgen</seg>
         <seg>libdbus-1.{so,a}</seg>
         <seg>/etc/dbus-1/{session.d,system.d}, /usr/{include/dbus-1.0/dbus,
         lib/{dbus-1.0/include/dbus,dbus/dbus-1},share/dbus-1/{services,
         system-services}}, /var/{lib/dbus,run/dbus}</seg>
-      </seglistitem>
 @y
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-daemon-launch-helper,
         dbus-launch, dbus-monitor, dbus-send, dbus-uuidgen</seg>
@@ -513,7 +524,6 @@
         <seg>/etc/dbus-1/{session.d,system.d}, /usr/{include/dbus-1.0/dbus,
         lib/{dbus-1.0/include/dbus,dbus/dbus-1},share/dbus-1/{services,
         system-services}}, /var/{lib/dbus,run/dbus}</seg>
-      </seglistitem>
 @z
 
 @x

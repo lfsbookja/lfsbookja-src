@@ -16,13 +16,13 @@
 @x
   <!ENTITY libXau-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libXau-time          "0.1 SBU 以下">
+  <!ENTITY libXau-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libXau</title>
 @y
-    <title>libXau の概要</title>
+    <title>&IntroductionTo1;libXau&IntroductionTo2;</title>
 @z
 
 @x
@@ -30,12 +30,10 @@
     implementing the X11 Authorization Protocol. This is useful for
     restricting client access to the display.</para>
 @y
-<para>
-<application>libXau</application>
-パッケージは X11 認証プロトコル (X11 Authorization Protocol)
-を実装したライブラリを提供します。
-これは、クライアントにおいて表示アクセスを制限する際に利用されます。
-</para>
+    <para>
+    <application>libXau</application> パッケージは X11 認証プロトコル (X11 Authorization Protocol) を実装したライブラリを提供します。
+    これは、クライアントにおいて表示アクセスを制限する際に利用されます。
+    </para>
 @z
 
 @x
@@ -47,25 +45,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libXau-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libXau-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libXau-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libXau-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libXau-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libXau-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libXau-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libXau-md5sum;</para>
+        <para>&Download; MD5 sum: &libXau-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libXau-size;</para>
 @y
-        <para>ダウンロードサイズ: &libXau-size;</para>
+        <para>&DownloadSize;: &libXau-size;</para>
 @z
 
 @x
@@ -83,7 +81,7 @@
 @x
     <bridgehead renderas="sect3">libXau Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libXau の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libXau&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,35 +101,32 @@
 @x
     <title>Installation of libXau</title>
 @y
-    <title>libXau のインストール</title>
+    <title>&InstallationOf1;libXau&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libXau</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して
-<application>libXau</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libXau</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
 @y
-<para>
-ビルド結果をテストする場合は
-<command>make check</command> を実行します。
-</para>
+    <para>
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -155,7 +150,7 @@
 @x libXau-x7
           <para>is the library of X authority database routines.</para>
 @y
-<para>
-X 認証データベース処理ライブラリです。
-</para>
+          <para>
+          X 認証データベース処理ライブラリです。
+          </para>
 @z

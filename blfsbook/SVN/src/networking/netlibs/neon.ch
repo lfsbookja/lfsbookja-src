@@ -95,10 +95,10 @@
     <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/> or
+    <para role="optional"><xref linkend="openssl"/> または
     <xref linkend="gnutls"/>,
-    <xref linkend="libproxy"/> (requires <xref linkend="pkgconfig"/> to find it),
-    <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>, and
+    <xref linkend="libproxy"/> (これを探し出すために <xref linkend="pkgconfig"/> も必要),
+    <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>,
     <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink></para>
 @z
 
@@ -159,6 +159,15 @@
 @z
 
 @x
+    <para><parameter>--disable-static</parameter>: This parameter prevents the
+    static libraries being installed.</para>
+@y
+    <para><parameter>--disable-static</parameter>:
+    このパラメーターはスタティックライブラリをインストールしないようにします。
+    </para>
+@z
+
+@x
     <para><option>--with-ssl=openssl</option>: This option enables SSL support
     using <application>openssl</application>.</para>
 @y
@@ -191,6 +200,15 @@
 @y
     <para><option>--with-expat</option>:
     このパラメーターは <application>expat</application> を必ず利用するように指示します。
+    </para>
+@z
+
+@x
+    <para>If you wish to use the other optional dependencies, consult the
+    output of <command>./configure --help</command>.</para>
+@y
+    <para>
+    その他の依存パッケージを利用したい場合は <command>./configure --help</command> による出力結果を参照してください。
     </para>
 @z
 

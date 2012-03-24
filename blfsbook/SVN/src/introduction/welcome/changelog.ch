@@ -54,7 +54,71 @@
 @z
 
 @x
-      <para>March 21th, 2012</para>
+      <para>March 23rd, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update bridge script to set bridge up after
+          creation.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add options needed for udev when rebuilding.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix gpm script option handling.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Delete unneeded openldap2, haldaemon, winbind, xinetd,
+          and nas boot scripts.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - removed amarok 1.4.8.</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - upgrade to xterm 278.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブリッジを生成した後の設定を行うためのブリッジスクリプトを更新。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - udev を再ビルドする際に必要となるオプションを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gpm のスクリプトオプションの操作方法を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 以下の不要なブートスクリプトを削除。openldap2, haldaemon, winbind, xinetd, nas</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - amarok 1.4.8 削除。</para>
+        </listitem>
+        <listitem>
+          <para>[rthomsen] - xterm 278 へのアップグレード。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 22nd, 2012</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - added python as dependency for D-Bus tests.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012/03/22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[rthomsen] - D-Bus のテストのために、python を依存パッケージに追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>March 21st, 2012</para>
       <itemizedlist>
         <listitem>
           <para>[rthomsen] - added amarok 2.5.0 and updated mysql configuration accordingly.</para>

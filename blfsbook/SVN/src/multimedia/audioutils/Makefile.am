@@ -1,7 +1,6 @@
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/audioutils
 CHANGE_FILES = \
 	amarok.ch \
-	amarok2.ch \
 	audacious.ch \
 	audioutils.ch \
 	cdparanoia.ch \
@@ -24,7 +23,6 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 amarok.xml:      $(BOOKdir)/$@ $(srcdir)/amarok.ch
-amarok2.xml:     $(BOOKdir)/$@ $(srcdir)/amarok2.ch
 audacious.xml:   $(BOOKdir)/$@ $(srcdir)/audacious.ch
 audioutils.xml:  $(BOOKdir)/$@ $(srcdir)/audioutils.ch
 cdparanoia.xml:  $(BOOKdir)/$@ $(srcdir)/cdparanoia.ch

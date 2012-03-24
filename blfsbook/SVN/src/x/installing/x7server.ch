@@ -96,17 +96,6 @@
     <xref linkend="xkeyboard-config"/></para>
 @z
 
-% @x
-%     <bridgehead renderas="sect4">Recommended</bridgehead>
-%     <para role="recommended"><xref linkend="hal"/> (required for hotplugging of
-%     input devices), and <xref linkend="mesalib"/> (required for DRI)</para>
-% @y
-%     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-%     <para role="recommended"><xref linkend="hal"/>
-%     (入力デバイスのホットプラグ対応において必要), 
-%     <xref linkend="mesalib"/> (DRI において必要)</para>
-% @z
-
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para><xref linkend="dbus"/>,
@@ -119,12 +108,12 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para><xref linkend="dbus"/>,
-    <xref linkend="doxygen"/> (to build API documentation),
-    <xref linkend="xmlto"/>, (to build documentation),
-    <xref linkend="fop"/>, (to build documentation),
-    <xref linkend="gs"/> (to build documentation),
+    <xref linkend="doxygen"/> (API ドキュメント生成のため),
+    <xref linkend="xmlto"/>, (ドキュメント生成のため),
+    <xref linkend="fop"/>, (ドキュメント生成のため),
+    <xref linkend="gs"/> (ドキュメント生成のため),
     <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
-    <xref linkend="mesalib"/> (required for DRI)</para>
+    <xref linkend="mesalib"/> (DRI のために必要)</para>
 @z
 
 @x
@@ -240,7 +229,7 @@
         lib/X11/{getconfig,modules} and lib/xorg</seg>
 @y
         <seg>cvt, dmx*, gtf, vdltodmx, X, Xnest, Xorg, Xvfb,
-        and xdmxconfig</seg>
+        xdmxconfig</seg>
         <seg>&None;</seg>
         <seg>/var/lib/xkb と <envar>$XORG_PREFIX</envar>/ ディレクトリ配下の以下のディレクトリ:
         include/xorg, include/X11/pixmaps,
@@ -256,35 +245,54 @@
 @x cvt-x7
           <para>calculates VESA CVT mode lines.</para>
 @y
-          <para>calculates VESA CVT mode lines.</para>
+          <para>VESA CVT モードの行数を算出します。</para>
+@z
+
+@x dmx*
+          <para>are various tools for manipulating the dmx server.</para>
+@y
+          <para>dmx サーバーを操作するためのさまざまなツール。</para>
 @z
 
 @x gtf-x7
           <para>calculates VESA GTF mode lines.</para>
 @y
-          <para>calculates VESA GTF mode lines.</para>
+          <para>VESA GTF モードの行数を算出します。</para>
 @z
 
-@x X-x7
+@x vdltodmx
+          <para>is a tool to convert VDL config files to DMX config
+          files.</para>
+@y
+          <para>VDL 設定ファイルを DMX 設定ファイルに変換するツール。</para>
+@z
+
+@x X
           <para>is a symbolic link to Xorg.</para>
 @y
-          <para>is a symbolic link to Xorg.</para>
+          <para>Xorg へのシンボリックリンク</para>
 @z
 
 @x Xnest-x7
           <para>is a nested X server.</para>
 @y
-          <para>is a nested X server.</para>
+          <para>Nested X サーバー</para>
 @z
 
 @x Xorg-x7
           <para>is the X11R7 X Server.</para>
 @y
-          <para>is the X11R7 X Server.</para>
+          <para>X11R7 X サーバー</para>
 @z
 
 @x Xvfb-x7
           <para>is the virtual framebuffer X server for X Version 11.</para>
 @y
-          <para>is the virtual framebuffer X server for X Version 11.</para>
+          <para>X バージョン 11 における X サーバーの仮想フレームバッファー。</para>
+@z
+
+@x xdmxconfig
+          <para>is a graphical configuration utility for the dmx server.</para>
+@y
+          <para>dmx サーバーに対するグラフィカルな設定ユーティリティー。</para>
 @z

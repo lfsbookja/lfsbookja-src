@@ -16,22 +16,22 @@
 @x
   <!ENTITY xbitmaps-time          "less than 0.1 SBU">
 @y
-  <!ENTITY xbitmaps-time          "0.1 SBU 以下">
+  <!ENTITY xbitmaps-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Xbitmaps</title>
 @y
-    <title>Xbitmaps の概要</title>
+    <title>&IntroductionTo1;Xbitmaps&IntroductionTo2;</title>
 @z
 
 @x
     <para>Xbitmaps provides static graphics needed by Xorg applications to
     draw screen elements.</para>
 @y
-<para>
-Xbitmaps は、Xorg アプリケーションが画面項目を描画するために必要となるスタティックなグラフィックを提供します。
-</para>
+    <para>
+    Xbitmaps は、Xorg アプリケーションが画面項目を描画するために必要となるスタティックなグラフィックを提供します。
+    </para>
 @z
 
 @x
@@ -43,25 +43,25 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
 @x
         <para>Download (HTTP): <ulink url="&xbitmaps-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&xbitmaps-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&xbitmaps-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&xbitmaps-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&xbitmaps-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&xbitmaps-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &xbitmaps-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &xbitmaps-md5sum;</para>
+        <para>&Download; MD5 sum: &xbitmaps-md5sum;</para>
 @z
 
 @x
         <para>Download size: &xbitmaps-size;</para>
 @y
-        <para>ダウンロードサイズ: &xbitmaps-size;</para>
+        <para>&DownloadSize;: &xbitmaps-size;</para>
 @z
 
 @x
@@ -79,7 +79,7 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
 @x
     <bridgehead renderas="sect3">Xbitmaps Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xbitmaps の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Xbitmaps&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -101,33 +101,31 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
 @x
     <title>Installation of Xbitmaps</title>
 @y
-    <title>Xbitmaps のインストール</title>
+    <title>&InstallationOf1;Xbitmaps&InstallationOf2;</title>
 @z
 
 @x
     <para>First, configure the Xbitmaps package by running the following
     command:</para>
 @y
-<para>
-以下のコマンドを実行して Xbitmaps パッケージをビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して Xbitmaps パッケージをビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now install as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -151,7 +149,7 @@ Xbitmaps は、Xorg アプリケーションが画面項目を描画するため
         <seg>None</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/X11/bitmaps</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/X11/bitmaps</seg>
 @z

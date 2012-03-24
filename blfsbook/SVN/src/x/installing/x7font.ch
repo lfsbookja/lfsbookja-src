@@ -38,18 +38,16 @@
 @x
     <title>Introduction to Xorg Fonts</title>
 @y
-    <title>Xorg フォントの概要</title>
+    <title>&IntroductionTo1;Xorg フォント&IntroductionTo2;</title>
 @z
 
 @x
     <para>The <application>Xorg</application> font packages provide
     needed fonts to the <application>Xorg</application> applications.</para>
 @y
-<para>
-<application>Xorg</application>
-フォントパッケージは <application>Xorg</application>
-アプリケーションにて必要となるフォントを提供します。
-</para>
+    <para>
+    <application>Xorg</application> フォントパッケージは <application>Xorg</application> アプリケーションにて必要となるフォントを提供します。
+    </para>
 @z
 
 @x
@@ -61,25 +59,25 @@
 @x
         <para>Download (HTTP): <ulink url="&x7fonts-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&x7fonts-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&x7fonts-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&x7fonts-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&x7fonts-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&x7fonts-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: <ulink url="&x7fonts-md5sum;"/></para>
 @y
-        <para>ダウンロード MD5 sum: <ulink url="&x7fonts-md5sum;"/></para>
+        <para>&Download; MD5 sum: <ulink url="&x7fonts-md5sum;"/></para>
 @z
 
 @x
         <para>Download size: &x7fonts-size;</para>
 @y
-        <para>ダウンロードサイズ: &x7fonts-size;</para>
+        <para>&DownloadSize;: &x7fonts-size;</para>
 @z
 
 @x
@@ -134,42 +132,40 @@
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
-<para>
-必要なファイルをダウンロードするために
-<application>wget</application> を使って以下のコマンドを実行します。
-</para>
+    <para>
+    必要なファイルをダウンロードするために <application>wget</application> を使って以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <title>Installation of Xorg Fonts</title>
 @y
-    <title>Xorg フォントのインストール</title>
+    <title>&InstallationOf1;Xorg フォント&InstallationOf2;</title>
 @z
 
 @x
     <para>Run the following commands for each package:</para>
 @y
-<para>
-各パッケージに対して以下のコマンドを実行します。
-</para>
+    <para>
+    各パッケージに対して以下のコマンドを実行します。
+    </para>
 @z
 
 @x
     <para>These packages do not provide test suites.</para>
 @y
-<para>
-個々のパッケージにテストスイートはありません。
-</para>
+    <para>
+    個々のパッケージにテストスイートはありません。
+    </para>
 @z
 
 @x
     <para>Now as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -181,16 +177,13 @@
     running the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-
-When all of the fonts have been installed, the system must be
-configured so that <application>Fontconfig</application> can find the
-TrueType fonts since they are outside of the default search path of
-<filename class="directory">/usr/share/fonts</filename>.  Make symlinks
-to the <application>Xorg</application> TrueType font directories by
-running the following commands as the
-<systemitem class="username">root</systemitem> user:
-</para>
+    <para>
+    フォントのインストールがすべて終わったら、<application>Fontconfig</application> が TrueType フォントを探し出せるようにシステムを設定する必要があります。
+    というのも、ここでインストールしたフォントは、デフォルトのディレクトリ <filename
+    class="directory">/usr/share/fonts</filename> ではないディレクトリにインストールされているからです。
+    <application>Xorg</application> の TrueType フォントディレクトリに対するシンボリックリンクを作成するために、<systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -215,7 +208,7 @@ running the following commands as the
         <seg><envar>$XORG_PREFIX</envar>/share/fonts</seg>
 @y
         <seg>bdftruncate</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/fonts</seg>
 @z
 
@@ -229,8 +222,7 @@ running the following commands as the
           <para>generates a truncated BDF font from an ISO 10646-1-encoded
           BDF font.</para>
 @y
-<para>
-generates a truncated BDF font from an ISO 10646-1-encoded
-BDF font.
-</para>
+          <para>
+          ISO 10646-1 エンコーディングによる BDF フォントから、圧縮した BDF フォントを生成します。
+          </para>
 @z

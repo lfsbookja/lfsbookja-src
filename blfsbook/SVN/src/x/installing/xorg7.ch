@@ -16,7 +16,7 @@
 @x
   <title>Introduction to Xorg-&xorg7-release;</title>
 @y
-  <title>Xorg-&xorg7-release; の概要</title>
+  <title>&IntroductionTo1;Xorg-&xorg7-release;&IntroductionTo2;</title>
 @z
 
 @x

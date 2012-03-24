@@ -16,13 +16,13 @@
 @x
   <!ENTITY libpthread-stubs-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libpthread-stubs-time          "0.1 SBU 以下">
+  <!ENTITY libpthread-stubs-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libpthread-stubs</title>
 @y
-    <title>libpthread-stubs の概要</title>
+    <title>&IntroductionTo1;libpthread-stubs&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,13 +32,13 @@
     stubs to use pthreads optionally. On Linux, all necessary pthread
     functions are available, so this package is simply a placeholder.</para>
 @y
-<para>
-<application>libpthread-stubs</application> package provides
-weak aliases for pthread functions not provided in libc or otherwise
-available by default. This is useful for libraries that rely on pthread
-stubs to use pthreads optionally. On Linux, all necessary pthread
-functions are available, so this package is simply a placeholder.
-</para>
+    <para>
+    <application>libpthread-stubs</application> package provides
+    weak aliases for pthread functions not provided in libc or otherwise
+    available by default. This is useful for libraries that rely on pthread
+    stubs to use pthreads optionally. On Linux, all necessary pthread
+    functions are available, so this package is simply a placeholder.
+    </para>
 @z
 
 @x
@@ -50,25 +50,25 @@ functions are available, so this package is simply a placeholder.
 @x
         <para>Download (HTTP): <ulink url="&libpthread-stubs-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libpthread-stubs-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libpthread-stubs-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libpthread-stubs-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libpthread-stubs-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libpthread-stubs-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libpthread-stubs-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libpthread-stubs-md5sum;</para>
+        <para>&Download; MD5 sum: &libpthread-stubs-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libpthread-stubs-size;</para>
 @y
-        <para>ダウンロードサイズ: &libpthread-stubs-size;</para>
+        <para>&DownloadSize;: &libpthread-stubs-size;</para>
 @z
 
 @x
@@ -94,35 +94,31 @@ functions are available, so this package is simply a placeholder.
 @x
     <title>Installation of libpthread-stubs</title>
 @y
-    <title>libpthread-stubs のインストール</title>
+    <title>&InstallationOf1;libpthread-stubs&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>libpthread-stubs</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libpthread-stubs</application>
-を実行します。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libpthread-stubs</application> を実行します。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -146,7 +142,7 @@ functions are available, so this package is simply a placeholder.
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z

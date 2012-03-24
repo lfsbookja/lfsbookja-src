@@ -115,7 +115,7 @@
 @x
     <title>Installation of MesaLib</title>
 @y
-    <title>MesaLib のインストール</title>
+    <title>&InstallationOf1;MesaLib&InstallationOf2;</title>
 @z
 
 @x

@@ -29,9 +29,9 @@
   <para>This chapter contains instructions to build and configure a graphical
   user environment.</para>
 @y
-<para>
-本章ではグラフィカルなユーザー環境の構築と設定について説明します。
-</para>
+  <para>
+  本章ではグラフィカルなユーザー環境の構築と設定について説明します。
+  </para>
 @z
 
 @x
@@ -42,14 +42,10 @@
   more than 100 different packages. Most large commercial distributions have
   decided to use the <application>Xorg</application> package.</para>
 @y
-<para>
-<application>Xorg</application>-&xorg7-version;
-は、完全に自動化された構築手順を提供します。
-つまりパッケージ類は、一般的な <command>configure</command>、<command>make</command>、<command>make install</command>
-というコマンドによってビルドおよびインストールできることを意味しています。
-もっともこれらにおいては 100 以上にも及ぶパッケージ類をインストールしていく必要があります。
-代表的な商用ディストリビューションは、たいてい <application>Xorg</application>
-パッケージを採用しています。
-</para>
+  <para>
+  <application>Xorg</application>-&xorg7-version; は、完全に自動化された構築手順を提供します。
+  つまりパッケージ類は、一般的な <command>configure</command>、<command>make</command>、<command>make install</command> というコマンドによってビルドおよびインストールできることを意味しています。
+  もっともこれらにおいては 100 以上にも及ぶパッケージ類をインストールしていく必要があります。
+  代表的な商用ディストリビューションは、たいてい <application>Xorg</application> パッケージを採用しています。
+  </para>
 @z
-

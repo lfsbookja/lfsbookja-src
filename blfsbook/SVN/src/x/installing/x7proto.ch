@@ -38,7 +38,7 @@
 @x
     <title>Introduction to Xorg Protocol Headers</title>
 @y
-    <title>Xorg プロトコルヘッダーの概要</title>
+    <title>&IntroductionTo1;Xorg プロトコルヘッダー&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,11 +46,11 @@
     header files required to build the system, and to allow other
     applications to build against the installed X Window system.</para>
 @y
-<para>
-<application>Xorg</application>
-プロトコルヘッダーは、 システム構築に必要となるヘッダーファイルを提供します。
-また他のパッケージが、X ウィンドウシステム上にてビルドしていくものである場合に、そのヘッダーファイルを提供します。
-</para>
+    <para>
+    <application>Xorg</application>
+    プロトコルヘッダーは、 システム構築に必要となるヘッダーファイルを提供します。
+    また他のパッケージが、X ウィンドウシステム上にてビルドしていくものである場合に、そのヘッダーファイルを提供します。
+    </para>
 @z
 
 @x
@@ -62,25 +62,25 @@
 @x
         <para>Download (HTTP): <ulink url="&x7proto-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&x7proto-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&x7proto-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&x7proto-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&x7proto-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&x7proto-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: <ulink url="&x7proto-md5sum;"/></para>
 @y
-        <para>ダウンロード MD5 sum: <ulink url="&x7proto-md5sum;"/></para>
+        <para>&Download; MD5 sum: <ulink url="&x7proto-md5sum;"/></para>
 @z
 
 @x
         <para>Download size: &x7proto-size;</para>
 @y
-        <para>ダウンロードサイズ: &x7proto-size;</para>
+        <para>&DownloadSize;: &x7proto-size;</para>
 @z
 
 @x
@@ -110,7 +110,7 @@
 @x
     <bridgehead renderas="sect3">Xorg Protocol Headers Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xorg プロトコルヘッダーの依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Xorg プロトコルヘッダー&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -137,12 +137,10 @@
     Protocol Headers after the installation is complete and
     <xref linkend="fop"/> has been installed.</para></note>
 @y
-<note><para>
-<xref linkend="fop"/> には相互依存関係があります。
-ドキュメントをビルドしたい場合は、一度インストールを終えてから
-<xref linkend="fop"/>
-をインストールした上で、再度、本パッケージのインストールを行ってください。
-</para></note>
+    <note><para>
+    <xref linkend="fop"/> には相互依存関係があります。
+    ドキュメントをビルドしたい場合は、一度インストールを終えてから <xref linkend="fop"/> をインストールした上で、再度、本パッケージのインストールを行ってください。
+    </para></note>
 @z
 
 @x
@@ -163,44 +161,41 @@
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
-<para>
-必要なファイルをダウンロードするために
-<application>wget</application> を使って以下を実行します。
-</para>
+    <para>
+    必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
+    </para>
 @z
 
 @x
     <title>Installation of Xorg Protocol Headers</title>
 @y
-    <title>Xorg プロトコルヘッダーのインストール</title>
+    <title>&InstallationOf1;Xorg プロトコルヘッダー&InstallationOf2;</title>
 @z
 
 @x
     <para>Install the <application>Xorg</application> protocol headers
     by running the following commands for each package to be installed.</para>
 @y
-<para>
-<application>Xorg</application>
-プロトコルヘッダーをインストールするために、以下を実行して個々のパッケージのインストールを行います。
-</para>
+    <para>
+    <application>Xorg</application> プロトコルヘッダーをインストールするために、以下を実行して個々のパッケージのインストールを行います。
+    </para>
 @z
 
 @x
     <para>These packages do not provide test suites.</para>
 @y
-<para>
-これらのパッケージにはテストスイートはありません。
-</para>
+    <para>
+    これらのパッケージにはテストスイートはありません。
+    </para>
 @z
 
 @x
     <para>Now as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -225,8 +220,8 @@
         <seg>The following subdirectories of <envar>$XORG_PREFIX</envar>/:
         include/X11, include/GL, and lib/pkgconfig</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/ 配下の以下のサブディレクトリ:
         include/X11, include/GL, lib/pkgconfig</seg>
 @z

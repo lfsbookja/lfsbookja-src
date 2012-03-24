@@ -16,13 +16,13 @@
 @x
   <!ENTITY makedepend-time          "less than 0.1 SBU">
 @y
-  <!ENTITY makedepend-time          "0.1 SBU 以下">
+  <!ENTITY makedepend-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to makedepend</title>
 @y
-    <title>makedepend の概要</title>
+    <title>&IntroductionTo1;makedepend&IntroductionTo2;</title>
 @z
 
 @x
@@ -43,25 +43,25 @@
 @x
         <para>Download (HTTP): <ulink url="&makedepend-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&makedepend-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&makedepend-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&makedepend-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&makedepend-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&makedepend-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &makedepend-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &makedepend-md5sum;</para>
+        <para>&Download; MD5 sum: &makedepend-md5sum;</para>
 @z
 
 @x
         <para>Download size: &makedepend-size;</para>
 @y
-        <para>ダウンロードサイズ: &makedepend-size;</para>
+        <para>&DownloadSize;: &makedepend-size;</para>
 @z
 
 @x
@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect3">makedepend Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">makedepend の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;makedepend&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,7 +103,7 @@
 @x
     <title>Installation of makedepend</title>
 @y
-    <title>makedepend のインストール</title>
+    <title>&InstallationOf1;makedepend&InstallationOf2;</title>
 @z
 
 @x

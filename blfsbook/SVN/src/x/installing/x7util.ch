@@ -28,7 +28,7 @@
 @x
     <title>Introduction to Xorg Utilities</title>
 @y
-    <title>Xorg ユーティリティの概要</title>
+    <title>&IntroductionTo1;Xorg ユーティリティ&IntroductionTo2;</title>
 @z
 
 @x
@@ -36,12 +36,9 @@
     needed utilities, not for the <application>Xorg</application> build
     environment.</para>
 @y
-<para>
-
-<application>Xorg</application>
-ユーティリティパッケージは、<application>Xorg</application>
-のビルド環境用ではない、各種ユーティリティを提供します。
-</para>
+    <para>
+    <application>Xorg</application> ユーティリティパッケージは、<application>Xorg</application> のビルド環境用ではない、各種ユーティリティを提供します。
+    </para>
 @z
 
 @x
@@ -53,25 +50,25 @@
 @x
         <para>Download (HTTP): <ulink url="&x7utils-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&x7utils-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&x7utils-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&x7utils-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&x7utils-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&x7utils-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: <ulink url="&x7utils-md5sum;"/></para>
 @y
-        <para>ダウンロード MD5 sum: <ulink url="&x7utils-md5sum;"/></para>
+        <para>&Download; MD5 sum: <ulink url="&x7utils-md5sum;"/></para>
 @z
 
 @x
         <para>Download size: &x7utils-size;</para>
 @y
-        <para>ダウンロードサイズ: &x7utils-size;</para>
+        <para>&DownloadSize;: &x7utils-size;</para>
 @z
 
 @x
@@ -101,7 +98,7 @@
 @x
     <bridgehead renderas="sect3">Xorg Utilities Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Xorg ユーティリティの依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Xorg ユーティリティ&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -128,43 +125,41 @@
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
-<para>
-<application>wget</application>
-を使って必要なファイルをダウンロードするために、以下を実行します。
-</para>
+    <para>
+    <application>wget</application> を使って必要なファイルをダウンロードするために、以下を実行します。
+    </para>
 @z
 
 @x
     <title>Installation of Xorg Utilities</title>
 @y
-    <title>Xorg ユーティリティのインストール</title>
+    <title>&InstallationOf1;Xorg ユーティリティ&InstallationOf2;</title>
 @z
 
 @x
     <para>Install the Xorg utilities by running the following commands for
     each package:</para>
 @y
-<para>
-Xorg ユーティリティをビルドするために、個々のパッケージにて以下を実行します。
-</para>
+    <para>
+    Xorg ユーティリティをビルドするために、個々のパッケージにて以下を実行します。
+    </para>
 @z
 
 @x
     <para>These packages do not provide test suites.</para>
 @y
-<para>
-個々のパッケージにテストスイートはありません。
-</para>
+    <para>
+    個々のパッケージにテストスイートはありません。
+    </para>
 @z
 
 @x
     <para>Now as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -190,7 +185,7 @@ Xorg ユーティリティをビルドするために、個々のパッケージ
         bin, lib/X11/config, share/aclocal, and share/man</seg>
 @y
         <seg>makedepend</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/ 配下の以下のディレクトリ:
         bin, lib/X11/config, share/aclocal, share/man</seg>
 @z
@@ -238,9 +233,9 @@ Xorg ユーティリティをビルドするために、個々のパッケージ
 @x makedepend
           <para>creates dependencies in makefiles.</para>
 @y
-<para>
-Makefile 間の依存関係を生成します。
-</para>
+          <para>
+          Makefile 間の依存関係を生成します。
+          </para>
 @z
 
 % @x makeg

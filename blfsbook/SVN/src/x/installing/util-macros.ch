@@ -16,13 +16,13 @@
 @x
   <!ENTITY util-macros-time          "less than 0.1 SBU">
 @y
-  <!ENTITY util-macros-time          "0.1 SBU 以下">
+  <!ENTITY util-macros-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to util-macros</title>
 @y
-    <title>util-macros の概要</title>
+    <title>&IntroductionTo1;util-macros&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&util-macros-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&util-macros-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&util-macros-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&util-macros-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&util-macros-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&util-macros-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &util-macros-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &util-macros-md5sum;</para>
+        <para>&Download; MD5 sum: &util-macros-md5sum;</para>
 @z
 
 @x
         <para>Download size: &util-macros-size;</para>
 @y
-        <para>ダウンロードサイズ: &util-macros-size;</para>
+        <para>&DownloadSize;: &util-macros-size;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <title>Installation of util-macros</title>
 @y
-    <title>util-macros のインストール</title>
+    <title>&InstallationOf1;util-macros&InstallationOf2;</title>
 @z
 
 @x

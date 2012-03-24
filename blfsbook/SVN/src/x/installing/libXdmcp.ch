@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libXdmcp</title>
 @y
-    <title>libXdmcp の概要</title>
+    <title>&IntroductionTo1;libXdmcp&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libXdmcp-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libXdmcp-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libXdmcp-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libXdmcp-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libXdmcp-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libXdmcp-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libXdmcp-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libXdmcp-md5sum;</para>
+        <para>&Download; MD5 sum: &libXdmcp-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libXdmcp-size;</para>
 @y
-        <para>ダウンロードサイズ: &libXdmcp-size;</para>
+        <para>&DownloadSize;: &libXdmcp-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">libXdmcp Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libXdmcp の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libXdmcp&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -96,7 +96,7 @@
 @x
     <title>Installation of libXdmcp</title>
 @y
-    <title>libXdmcp のインストール</title>
+    <title>&InstallationOf1;libXdmcp&InstallationOf2;</title>
 @z
 
 @x
