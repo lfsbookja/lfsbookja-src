@@ -1,4 +1,7 @@
-bin_PROGRAMS=ctie
+#
+# This is NOT part of the original CTIE distribution.
+#
+noinst_PROGRAMS=ctie
 ctie_SOURCES=ctie.c
 EXTRA_DIST=ChangeLog Makefile.orig README ctie-k.c ctie-k.ch \
 	ctie.1 ctie.cf1 ctie.cf2 ctie.cf3 ctie.chf.gen ctie.inc \
