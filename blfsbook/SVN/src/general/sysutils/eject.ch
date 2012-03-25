@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,13 +16,13 @@
 @x
   <!ENTITY eject-time          "less than 0.1 SBU">
 @y
-  <!ENTITY eject-time          "0.1 SBU 以下">
+  <!ENTITY eject-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Eject</title>
 @y
-    <title>Eject の概要</title>
+    <title>&IntroductionTo1;Eject&IntroductionTo2;</title>
 @z
 
 @x
@@ -44,25 +44,25 @@
 @x
         <para>Download (HTTP): <ulink url="&eject-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&eject-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&eject-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&eject-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&eject-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&eject-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &eject-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &eject-md5sum;</para>
+        <para>&Download; MD5 sum: &eject-md5sum;</para>
 @z
 
 @x
         <para>Download size: &eject-size;</para>
 @y
-        <para>ダウンロードサイズ: &eject-size;</para>
+        <para>&DownloadSize;: &eject-size;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <title>Installation of Eject</title>
 @y
-    <title>Eject のインストール</title>
+    <title>&InstallationOf1;Eject&InstallationOf2;</title>
 @z
 
 @x

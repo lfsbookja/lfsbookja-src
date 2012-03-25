@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">GNOME Control Center Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Control Center の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Control Center&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -148,7 +148,7 @@
 @x
     <title>Installation of GNOME Control Center</title>
 @y
-    <title>GNOME Control Center のインストール</title>
+    <title>&InstallationOf1;GNOME Control Center&InstallationOf2;</title>
 @z
 
 @x

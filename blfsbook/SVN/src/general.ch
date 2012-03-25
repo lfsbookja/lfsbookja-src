@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "March 23rd, &year;">
+<!ENTITY releasedate  "March 24th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20120324">
-<!ENTITY jratio       "45.5 &percnt;">
+<!ENTITY jversion     "20120325">
+<!ENTITY jratio       "47.4 &percnt;">
 @z
 
 @x
@@ -74,6 +74,15 @@
 <!ENTITY Script       "スクリプト">
 <!ENTITY BootScript   "ブートスクリプト">
 <!ENTITY InitScript   "初期化スクリプト">
+@z
+
+@x
+<!ENTITY lfs-root             "../../../../lfs/view/&lfs-version;">
+<!ENTITY lfs-dev              "../../../../lfs/view/development">
+@y
+<!ENTITY lfs-root             "http://www.&lfs-domainname;/lfs/view/&lfs-version;">
+<!ENTITY lfs-dev              "../../../../lfs/view/development">
+<!ENTITY lfsja-dev            "http://lfsbookja.sourceforge.jp/svn.ja/">
 @z
 
 @x

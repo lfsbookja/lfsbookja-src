@@ -79,6 +79,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch: <ulink
+@y
+          必須のパッチ: <ulink
+@z
+
+@x
     <bridgehead renderas="sect3">Shadow Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Shadow&Dependencies2;</bridgehead>
@@ -209,19 +221,47 @@
       class="directory">/var/mail</filename> を用いるものとします。
 @z
 
-% @x
-%     <para><command>mv -v /usr/bin/passwd /bin</command>: The
-%     <command>passwd</command> program may be needed during times when the
-%     <filename class='directory'>/usr</filename> filesystem is not mounted so
-%     it is moved into the root partition.</para>
-% @y
-%     <para>
-%     <command>mv -v /usr/bin/passwd /bin</command>:
-%     <command>passwd</command> プログラムは <filename
-%     class='directory'>/usr</filename> ファイルシステムがマウントされていない時にも必要となります。
-%     このためこのプログラムをルートパーティションに移動します。
-%     </para>
-% @z
+@x
+      <command>sed -i -e 
+      's@PATH=/sbin:/bin:/usr/sbin:/usr/bin@&amp;:/usr/local/sbin:/usr/local/bin@' 
+      -e 's@PATH=/bin:/usr/bin@&amp;:/usr/local/bin@' etc/login.defs</command>:
+      This sed expands PATH to
+      <filename class="directory">/usr/local/bin</filename> for normal and
+      <systemitem class="username">root</systemitem> user and to 
+      <filename class="directory">/usr/local/sbin</filename> for 
+      <systemitem class="username">root</systemitem> user only.
+@y
+      <command>sed -i -e 
+      's@PATH=/sbin:/bin:/usr/sbin:/usr/bin@&amp;:/usr/local/sbin:/usr/local/bin@' 
+      -e 's@PATH=/bin:/usr/bin@&amp;:/usr/local/bin@' etc/login.defs</command>:
+      この sed コマンドは実行パスに対して、通常ユーザーと <systemitem
+      class="username">root</systemitem> ユーザーに <filename
+      class="directory">/usr/local/bin</filename> を追加し、<systemitem
+      class="username">root</systemitem> ユーザーにはさらに <filename
+      class="directory">/usr/local/sbin</filename> を追加します。
+@z
+
+@x
+      <command>sed -i '/&lt;stdio.h&gt;/a#include &lt;stdarg.h&gt;'
+      libmisc/copydir.c</command>: This sed fixes a bug which would make the
+      build fail if <xref linkend="acl"/> is installed.
+@y
+      <command>sed -i '/&lt;stdio.h&gt;/a#include &lt;stdarg.h&gt;'
+      libmisc/copydir.c</command>: 
+      この sed コマンドは、<xref linkend="acl"/> がインストールされている場合にビルドに失敗するバグを修正するものです。
+@z
+
+@x
+      <command>mv -v /usr/bin/passwd /bin</command>: The
+      <command>passwd</command> program may be needed during times when the
+      <filename class='directory'>/usr</filename> filesystem is not mounted so
+      it is moved into the root partition.
+@y
+      <command>mv -v /usr/bin/passwd /bin</command>:
+      <command>passwd</command> プログラムは <filename
+      class='directory'>/usr</filename> ファイルシステムがマウントされていない時にも必要となります。
+      このためこのプログラムをルートパーティションに移動します。
+@z
 
 @x
     <title>Configuring Shadow</title>
@@ -301,16 +341,10 @@
         and <application>CrackLib</application>, you can visit the following
         link:
 @y
-        Configuring your system to use <application>Linux-PAM</application> can
-        be a complex task. The information below will provide a basic setup so
-        that <application>Shadow</application>'s login and password
-        functionality will work effectively with
-        <application>Linux-PAM</application>. Review the information and links
-        on the <xref linkend="linux-pam"/> page for further configuration
-        information. For information specific to integrating
-        <application>Shadow</application>, <application>Linux-PAM</application>
-        and <application>CrackLib</application>, you can visit the following
-        link:
+        <application>Linux-PAM</application> を用いたシステム設定作業は複雑です。
+        以下に示す情報は、<application>Linux-PAM</application> とともに <application>Shadow</application> のログイン機能、パスワード機能が有効に作動するための基本的な設定方法を示すものです。
+        より詳細な設定方法については <xref linkend="linux-pam"/> に示されている情報およびリンクを参照してください。
+        <application>Shadow</application>, <application>Linux-PAM</application>, <application>CrackLib</application> による機能強化に関しては、以下のリンクを参照してください。
 @z
 
 @x
@@ -329,14 +363,10 @@
           to preserve the original file's contents). Issue the following
           commands as the <systemitem class="username">root</systemitem> user:
 @y
-          The <command>login</command> program currently performs many functions
-          which <application>Linux-PAM</application> modules should now handle.
-          The following <command>sed</command> command will comment out the
-          appropriate lines in <filename>/etc/login.defs</filename>, and stop
-          <command>login</command> from performing these functions (a backup
-          file named <filename>/etc/login.defs.orig</filename> is also created
-          to preserve the original file's contents). Issue the following
-          commands as the <systemitem class="username">root</systemitem> user:
+          最近の <command>login</command> プログラムは数多くの機能を有していますが、<application>Linux-PAM</application> モジュールが取り扱うものも多くあります。
+          以下の <command>sed</command> コマンドは、<filename>/etc/login.defs</filename> 内の特定の行をコメント化して <command>login</command> がそういった機能を実行しないようにします。
+          (元の設定内容を保存しておくために、バックアップとして <filename>/etc/login.defs.orig</filename> を生成しています。)
+          <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してください。
 @z
 
 @x
@@ -355,14 +385,11 @@
           text from the files below, and supplying the program name as an
           additional first field for each line.
 @y
-          As mentioned previously in the <application>Linux-PAM</application>
-          instructions, <application>Linux-PAM</application> has two supported
-          methods for configuration. The commands below assume that you've
-          chosen to use a directory based configuration, where each program has
-          its own configuration file.  You can optionally use a single
-          <filename>/etc/pam.conf</filename> configuration file by using the
-          text from the files below, and supplying the program name as an
-          additional first field for each line.
+          <application>Linux-PAM</application> の手順にて説明しているように、<application>Linux-PAM</application> を設定する方法には2通りあります。
+          以下に示すコマンドでは、ディレクトリベースでの設定を行うことを前提とします。
+          この方法では各プログラムに対する設定ファイルは、各プログラムごとに用意します。
+          1つの設定ファイル <filename>/etc/pam.conf</filename> に設定を行うこともできます。
+          その場合は以下に示す設定内容を利用し、各行の先頭項目にプログラム名を追加してください。
 @z
 
 @x
@@ -372,11 +399,9 @@
           (or add the contents to the <filename>/etc/pam.conf</filename> file)
           using the following commands:
 @y
-          As the <systemitem class="username">root</systemitem> user, replace
-          the following <application>Linux-PAM</application> configuration files
-          in the <filename class="directory">/etc/pam.d/</filename> directory
-          (or add the contents to the <filename>/etc/pam.conf</filename> file)
-          using the following commands:
+          <filename class="directory">/etc/pam.d/</filename> ディレクトリにある <application>Linux-PAM</application> 設定ファイルを置き換えます。
+          (あるいは <filename>/etc/pam.conf</filename> ファイルに内容を追記します。)
+          <systemitem class="username">root</systemitem> ユーザーになって、以下のコマンドを実行してください。
 @z
 
 @x
@@ -394,7 +419,7 @@
 @x
         <title>'system-passwd' (with cracklib)</title>
 @y
-        <title>'system-passwd' (with cracklib)</title>
+        <title>'system-passwd' (cracklib がある場合)</title>
 @z
 
 @x
@@ -567,6 +592,7 @@
       A list of the installed files, along with their short descriptions can be
       found at <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/>.
 @y
-      A list of the installed files, along with their short descriptions can be
-      found at <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/>.
+      インストールされるファイルの一覧および概略説明については <ulink
+      url="&lfs-root;/chapter06/shadow.html#contents-shadow">LFSブック内、Shadow の概略説明</ulink> (日本語訳は <ulink
+      url="&lfsja-dev;/chapter06/shadow.html#contents-shadow">ここ</ulink>) を参照してください。
 @z

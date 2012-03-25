@@ -31,10 +31,10 @@
     more to gain and retain the authorization and encryption keys required to
     perform secure operations.</para>
 @y
-    <para>Keyutils is a set of utilities for managing the key retention
-    facility in the kernel, which can be used by filesystems, block devices and
-    more to gain and retain the authorization and encryption keys required to
-    perform secure operations.</para>
+    <para>
+    Keyutils は、カーネルにおける鍵保存機能 (key retention facility) を管理するユーティリティーです。
+    これはファイルシステムやブロックデバイスにおいて利用され、セキュアな処理を実現するために必要な認証鍵や暗号鍵を生成維持するために利用されます。
+    </para>
 @z
 
 @x
@@ -152,12 +152,13 @@
           <para>is to control the key management facility in various ways
           using a variety of subcommands.</para>
 @y
-          <para>is to control the key management facility in various ways
-          using a variety of subcommands.</para>
+          <para>
+          多くのサブコマンドを通じて、さまざまな方法で鍵管理機能を制御します。
+          </para>
 @z
 
 @x libkeyutils.so.1
           <para> contains the keyuils library API instantiation.</para>
 @y
-          <para> contains the keyuils library API instantiation.</para>
+          <para>keyuils API ライブラリ。</para>
 @z

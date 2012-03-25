@@ -25,9 +25,7 @@ CHANGE_FILES = \
 	libdvdcss.ch \
 	libdvdread.ch \
 	libdvdnav.ch \
-	libfame.ch \
 	libmad.ch \
-	libmikmod.ch \
 	libmpeg2.ch \
 	libmpeg3.ch \
 	libmusicbrainz.ch \
@@ -92,9 +90,7 @@ libdv.xml:                   $(BOOKdir)/$@ $(srcdir)/libdv.ch
 libdvdcss.xml:               $(BOOKdir)/$@ $(srcdir)/libdvdcss.ch
 libdvdnav.xml:               $(BOOKdir)/$@ $(srcdir)/libdvdnav.ch
 libdvdread.xml:              $(BOOKdir)/$@ $(srcdir)/libdvdread.ch
-libfame.xml:                 $(BOOKdir)/$@ $(srcdir)/libfame.ch
 libmad.xml:                  $(BOOKdir)/$@ $(srcdir)/libmad.ch
-libmikmod.xml:               $(BOOKdir)/$@ $(srcdir)/libmikmod.ch
 libmpeg2.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg2.ch
 libmpeg3.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg3.ch
 libmusicbrainz.xml:          $(BOOKdir)/$@ $(srcdir)/libmusicbrainz.ch

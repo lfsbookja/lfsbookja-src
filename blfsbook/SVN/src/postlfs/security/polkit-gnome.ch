@@ -146,6 +146,50 @@
 @z
 
 @x
+    <title>Configuring polkit-gnome</title>
+@y
+    <title>&Configuring1;polkit-gnome&Configuring2;</title>
+@z
+
+@x
+      <title>Config Files</title>
+@y
+      <title>&ConfigFiles;</title>
+@z
+
+@x
+      <para><filename>none</filename></para>
+@y
+      <para><filename>&None;</filename></para>
+@z
+
+@x
+      <title>Automatic startup</title>
+@y
+      <title>自動起動</title>
+@z
+
+@x
+      <para>For <application>polkit-gnome</application> to work correctly, 
+      it needs to be started on user logon.</para>
+@y
+      <para>
+      <application>polkit-gnome</application> を正しく動作させるためには、ユーザーログイン時に起動する必要があります。
+      </para>
+@z
+
+@x
+      <para>Issue the following commands as the 
+      <systemitem class="username">root</systemitem>user to create 
+      startup file for <application>polkit-gnome</application>:</para>
+@y
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+      これにより <application>polkit-gnome</application> の起動ファイルを生成します。
+      </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

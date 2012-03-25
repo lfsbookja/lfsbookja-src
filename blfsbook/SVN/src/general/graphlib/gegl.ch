@@ -109,7 +109,7 @@
     <xref linkend="ruby"/>,
     <xref linkend="sdl"/>,
     <xref linkend="gobject-introspection"/>,
-    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
+    <xref linkend="vala"/>,
     <xref linkend="w3m"/>
     and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
     </para>
@@ -136,9 +136,9 @@
     <xref linkend="ruby"/>,
     <xref linkend="sdl"/>,
     <xref linkend="gobject-introspection"/>,
-    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>,
-    <xref linkend="w3m"/>,
-    <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
+    <xref linkend="vala"/>,
+    <xref linkend="w3m"/>
+    and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
     </para>
 @z
 

@@ -180,7 +180,7 @@
 @x
     <title>Installation of Autofs</title>
 @y
-    <title>Autofs のインストール</title>
+    <title>&InstallationOf1;Autofs&InstallationOf2;</title>
 @z
 
 @x
@@ -235,7 +235,7 @@
 @x
     <title>Configuring Autofs</title>
 @y
-    <title>Autofs の設定</title>
+    <title>&Configuring1;Autofs&Configuring2;</title>
 @z
 
 @x

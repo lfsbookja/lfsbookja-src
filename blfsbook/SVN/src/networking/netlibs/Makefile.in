@@ -38,6 +38,7 @@ am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
 	$(top_srcdir)/m4/ax_compare_version.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
+	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
 	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
@@ -65,15 +66,21 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EXEEXT = @EXEEXT@
+FOP = @FOP@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+IPA = @IPA@
+IPAFONTDIR = @IPAFONTDIR@
+IPAGFILE = @IPAGFILE@
+IPAMFILE = @IPAMFILE@
 LDFLAGS = @LDFLAGS@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
 LTLIBOBJS = @LTLIBOBJS@
+LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
 OBJEXT = @OBJEXT@
@@ -85,14 +92,16 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+PDF = @PDF@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
-SVNVER = @SVNVER@
 TIDY = @TIDY@
+TXT = @TXT@
 VERSION = @VERSION@
 XMLLINT = @XMLLINT@
 XSLTPROC = @XSLTPROC@
+abs_bookdir = @abs_bookdir@
 abs_builddir = @abs_builddir@
 abs_srcdir = @abs_srcdir@
 abs_top_builddir = @abs_top_builddir@
@@ -139,6 +148,7 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/networking/netlibs
 CHANGE_FILES = \
 	curl.ch \
+	glib-networking.ch \
 	gnet.ch \
 	libpcap.ch \
 	libsoup.ch \
@@ -346,6 +356,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 curl.xml:     $(BOOKdir)/$@ $(srcdir)/curl.ch
+glib-networking.xml: $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
 gnet.xml:     $(BOOKdir)/$@ $(srcdir)/gnet.ch
 libpcap.xml:  $(BOOKdir)/$@ $(srcdir)/libpcap.ch
 libsoup.xml:  $(BOOKdir)/$@ $(srcdir)/libsoup.ch

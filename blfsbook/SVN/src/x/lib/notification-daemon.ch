@@ -84,34 +84,18 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="libglade"/>,
-    <xref linkend="libnotify"/>,
-    <xref linkend="libsexy"/>, and
-    <xref linkend="libwnck"/></para>
+    <para role="required"><xref linkend="libcanberra"/>
+    (Built with <xref linkend="gtk3"/> support).</para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="libglade"/>,
-    <xref linkend="libnotify"/>,
-    <xref linkend="libsexy"/>,
-    <xref linkend="libwnck"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gstreamer"/></para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gstreamer"/></para>
+    <para role="required"><xref linkend="libcanberra"/>
+    (<xref linkend="gtk3"/> サポートがビルドされたもの).</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/notification-daemon"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/notification-daemon"/></para>
 @z
 
 @x
@@ -153,30 +137,18 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/notification-daemon-1.0</parameter>: This
+    <para><parameter>--libexecdir=/usr/lib/notification-daemon</parameter>: This
     parameter is used so that the <application>notification-daemon</application>
-    internal support program is installed in the preferred location of
-    <filename class='directory'>/usr/lib/notification-daemon-1.0</filename> instead
+    program is installed in the preferred location of
+    <filename class='directory'>/usr/lib/notification-daemon</filename> instead
     of <filename class='directory'>/usr/libexec</filename>.</para> 
 @y
     <para>
-    <parameter>--libexecdir=/usr/lib/notification-daemon-1.0</parameter>:
-    このパラメーターは <application>notification-daemon</application> の内部サポートプログラムのインストール先を指定するもので、<filename
+    <parameter>--libexecdir=/usr/lib/notification-daemon</parameter>:
+    このパラメーターは <application>notification-daemon</application>プログラムのインストール先を <filename
     class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
-    class='directory'>/usr/lib/notification-daemon-1.0</filename> にインストールするものです。
+    class='directory'>/usr/lib/notification-daemon</filename> にします。
     </para> 
-@z
-
-@x
-    <para><parameter>--with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas</parameter>:
-    This parameter is used so that the <application>GConf</application> schema
-    files are installed into the existing database.</para>
-@y
-    <para>
-    <parameter>--with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas</parameter>:
-    このパラメーターは <application>GConf</application>
-    スキーマファイルを、既に存在しているデータベース内にインストールします。
-    </para>
 @z
 
 @x
@@ -196,34 +168,19 @@
 @z
 
 @x
-        <seg><!--notification-properties and -->notification-daemon</seg>
-        <!--<seg>libstandard.{so,a}</seg>
-        <seg>/usr/{lib/notification-daemon-1.0/engines,
-        share/notification-daemon}</seg>-->
+        <seg>notification-daemon</seg>
         <seg>None</seg>
-        <seg>/usr/lib/notification-daemon-1.0, /usr/share/notification-daemon</seg>
+        <seg>/usr/lib/notification-daemon</seg>
 @y
-        <seg><!--notification-properties and -->notification-daemon</seg>
-        <!--<seg>libstandard.{so,a}</seg>
-        <seg>/usr/{lib/notification-daemon-1.0/engines,
-        share/notification-daemon}</seg>-->
+        <seg>notification-daemon</seg>
         <seg>&None;</seg>
-        <seg>/usr/lib/notification-daemon-1.0, /usr/share/notification-daemon</seg>
+        <seg>/usr/lib/notification-daemon</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x notification-properties
-          <para>is a <application>notification-daemon</application> properties
-          tool.</para>
-@y
-          <para>
-          <application>notification-daemon</application> のプロパティツール。
-          </para>
 @z
 
 @x notification-daemon

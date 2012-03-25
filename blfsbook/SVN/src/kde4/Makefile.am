@@ -1,4 +1,4 @@
-SUBDIRS=add core devel intro
+SUBDIRS=add core intro
 BOOKdir = $(top_builddir)/@bookdir@/kde4
 CHANGE_FILES = kde4.ch
 EXTRA_DIST = $(CHANGE_FILES)

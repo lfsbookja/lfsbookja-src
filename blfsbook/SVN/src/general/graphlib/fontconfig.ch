@@ -116,12 +116,12 @@
       <para>If you have <application>DocBook-utils</application> installed
       and you remove the <parameter>--disable-docs</parameter> parameter from
       the <command>configure</command> command below, you must have
-      <xref linkend="perl-sgmlspm"/> and <xref linkend="jadetex"/> installed
-      also, or the <application>Fontconfig</application> build will fail.</para>
+      <xref linkend="perl-sgmlspm"/> installed also, or the 
+      <application>Fontconfig</application> build will fail.</para>
 @y
       <para>
       <application>DocBook-utils</application> をインストール済であって、以下の <command>configure</command> スクリプトにおいてパラメーター <parameter>--disable-docs</parameter> を取り除くのであれば、<xref
-      linkend="perl-sgmlspm"/> と <xref linkend="jadetex"/> をインストールしておかなければなりません。
+      linkend="perl-sgmlspm"/> をインストールしておかなければなりません。
       そうしておかないと <application>Fontconfig</application> のビルドは失敗します。
       </para>
 @z
@@ -195,17 +195,17 @@
     </para>
 @z
 
-@x
-    <para><parameter>--without-add-fonts</parameter>: This switch disables
-    the automatic search for X Window System fonts which, if found, may
-    confuse some applications.</para>
-@y
-    <para>
-    <parameter>--without-add-fonts</parameter>:
-    このスイッチは X ウィンドウシステムのフォントを自動的に検索しないようにします。
-    自動的に見つかった際に、アプリケーションによってはうまく動作しないものがあるためです。
-    </para>
-@z
+% @x
+%     <para><parameter>--without-add-fonts</parameter>: This switch disables
+%     the automatic search for X Window System fonts which, if found, may
+%     confuse some applications.</para>
+% @y
+%     <para>
+%     <parameter>--without-add-fonts</parameter>:
+%     このスイッチは X ウィンドウシステムのフォントを自動的に検索しないようにします。
+%     自動的に見つかった際に、アプリケーションによってはうまく動作しないものがあるためです。
+%     </para>
+% @z
 
 @x
     <para><parameter>--disable-docs</parameter>: This switch avoids building
@@ -228,16 +228,13 @@
     of the default
     <filename class='directory'>/usr/share/doc/fontconfig</filename>.</para>
 @y
-    <para>
-    <parameter>--with-docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
-    
+    <para><parameter>--with-docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
     Though this parameter seems counter-intuitive following the preceding
     parameter to the <command>configure</command> command, it is used so that
     if the builder removes the <parameter>--disable-docs</parameter> parameter,
     the documentation will be installed in a versioned directory name instead
     of the default
-    <filename class='directory'>/usr/share/doc/fontconfig</filename>.
-    </para>
+    <filename class='directory'>/usr/share/doc/fontconfig</filename>.</para>
 @z
 
 @x

@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&parted-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&parted-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&parted-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&parted-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&parted-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&parted-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &parted-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &parted-md5sum;</para>
+        <para>&Download; MD5 sum: &parted-md5sum;</para>
 @z
 
 @x
         <para>Download size: &parted-size;</para>
 @y
-        <para>ダウンロードサイズ: &parted-size;</para>
+        <para>&DownloadSize;: &parted-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">Parted Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Parted の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Parted&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -100,7 +100,7 @@
 @x
     <title>Installation of Parted</title>
 @y
-    <title>Parted のインストール</title>
+    <title>&InstallationOf1;Parted&InstallationOf2;</title>
 @z
 
 @x

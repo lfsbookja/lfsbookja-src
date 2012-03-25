@@ -568,6 +568,9 @@ ac_subst_vars='am__EXEEXT_FALSE
 am__EXEEXT_TRUE
 LTLIBOBJS
 LIBOBJS
+IPAFONTDIR
+FOP
+LYNX
 TIDY
 XMLLINT
 XSLTPROC
@@ -588,9 +591,14 @@ CPPFLAGS
 LDFLAGS
 CFLAGS
 CC
-SVNVER
+IPAMFILE
+IPAGFILE
+IPA
+abs_bookdir
 bookdir
 CTIE
+TXT
+PDF
 am__untar
 am__tar
 AMTAR
@@ -657,6 +665,7 @@ ac_user_opts='
 enable_option_checking
 with_bookdir
 enable_dependency_tracking
+with_ipafontdir
 '
       ac_precious_vars='build_alias
 host_alias
@@ -1289,6 +1298,7 @@ Optional Packages:
   --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
   --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
   --with-bookdir=DIR      Specify BOOK sources directory [DIR=../BOOK]
+  --with-ipafontdir=DIR   Path to directory for IPAfont files
 
 Some influential environment variables:
   CC          C compiler command
@@ -2282,6 +2292,14 @@ am__tar='$${TAR-tar} chof - "$$tardir"' am__untar='$${TAR-tar} xf -'
 
 
 
+PDF=
+
+
+
+TXT=
+
+
+
 CTIE=ctie/ctie$EXEEXT
 
 
@@ -2309,7 +2327,7 @@ $as_echo "ok" >&6; }
 fi
 
 
-SVNVER=svn
+abs_bookdir=`(cd $bookdir && pwd)`
 
 
 # ===========================================================================
@@ -2514,6 +2532,12 @@ SVNVER=svn
 #   Macro released by the Autoconf Archive. When you make and distribute a
 #   modified version of the Autoconf Macro, you may extend this special
 #   exception to the GPL to apply to your modified version as well.
+
+
+
+IPA=
+
+
 
 
 
@@ -3689,7 +3713,7 @@ fi
 
 
 if test "$XMLLINT" = no; then
-        as_fn_error $? "xmllint not found in $PATH" "$LINENO" 5
+  as_fn_error $? "xmllint not found in $PATH" "$LINENO" 5
 fi;
 
 # Extract the first word of "tidy$EXEEXT", so it can be a program name with args.
@@ -3734,18 +3758,181 @@ fi
 
 
 if test "$TIDY" = no; then
-        as_fn_error $? "tidy not found in $PATH" "$LINENO" 5
+ as_fn_error $? "tidy not found in $PATH" "$LINENO" 5
 fi;
 
-# Checks for libraries.
 
-# Checks for header files.
+# Extract the first word of "lynx$EXEEXT", so it can be a program name with args.
+set dummy lynx$EXEEXT; ac_word=$2
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+$as_echo_n "checking for $ac_word... " >&6; }
+if ${ac_cv_path_LYNX+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  case $LYNX in
+  [\\/]* | ?:[\\/]*)
+  ac_cv_path_LYNX="$LYNX" # Let the user override the test with a path.
+  ;;
+  *)
+  as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+for as_dir in $PATH
+do
+  IFS=$as_save_IFS
+  test -z "$as_dir" && as_dir=.
+    for ac_exec_ext in '' $ac_executable_extensions; do
+  if { test -f "$as_dir/$ac_word$ac_exec_ext" && $as_test_x "$as_dir/$ac_word$ac_exec_ext"; }; then
+    ac_cv_path_LYNX="$as_dir/$ac_word$ac_exec_ext"
+    $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
+    break 2
+  fi
+done
+  done
+IFS=$as_save_IFS
 
-# Checks for typedefs, structures, and compiler characteristics.
+  test -z "$ac_cv_path_LYNX" && ac_cv_path_LYNX="no"
+  ;;
+esac
+fi
+LYNX=$ac_cv_path_LYNX
+if test -n "$LYNX"; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $LYNX" >&5
+$as_echo "$LYNX" >&6; }
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+fi
 
-# Checks for library functions.
 
-ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/appendices/Makefile src/book/Makefile src/general/Makefile src/general/genlib/Makefile src/general/genutils/Makefile src/general/graphlib/Makefile src/general/prog/Makefile src/general/sysutils/Makefile src/gnome/Makefile src/gnome/add/Makefile src/gnome/core/Makefile src/gnome/deprecated/Makefile src/introduction/Makefile src/introduction/important/Makefile src/introduction/welcome/Makefile src/kde/Makefile src/kde/add/Makefile src/kde/core/Makefile src/kde/devel/Makefile src/kde4/Makefile src/kde4/add/Makefile src/kde4/core/Makefile src/kde4/devel/Makefile src/kde4/intro/Makefile src/multimedia/Makefile src/multimedia/audioutils/Makefile src/multimedia/cdwriteutils/Makefile src/multimedia/libdriv/Makefile src/multimedia/videoutils/Makefile src/networking/Makefile src/networking/connect/Makefile src/networking/mailnews/Makefile src/networking/netlibs/Makefile src/networking/netprogs/Makefile src/networking/netutils/Makefile src/networking/textweb/Makefile src/postlfs/Makefile src/postlfs/config/Makefile src/postlfs/editors/Makefile src/postlfs/filesystems/Makefile src/postlfs/security/Makefile src/postlfs/shells/Makefile src/postlfs/virtualization/Makefile src/pst/Makefile src/pst/printing/Makefile src/pst/ps/Makefile src/pst/scanning/Makefile src/pst/sgml/Makefile src/pst/typesetting/Makefile src/pst/xml/Makefile src/server/Makefile src/server/databases/Makefile src/server/mail/Makefile src/server/major/Makefile src/server/other/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/template/Makefile src/x/Makefile src/x/installing/Makefile src/x/lib/Makefile src/x/wm/Makefile src/xincludes/Makefile src/xsoft/Makefile src/xsoft/graphweb/Makefile src/xsoft/office/Makefile src/xsoft/other/Makefile src/xsoft/suites/Makefile"
+if test "$LYNX" = no; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Text version cannot be built." >&5
+$as_echo "$as_me: WARNING: Text version cannot be built." >&2;}
+  TXT="#"
+fi;
+
+# Extract the first word of "fop$EXEEXT", so it can be a program name with args.
+set dummy fop$EXEEXT; ac_word=$2
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+$as_echo_n "checking for $ac_word... " >&6; }
+if ${ac_cv_path_FOP+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  case $FOP in
+  [\\/]* | ?:[\\/]*)
+  ac_cv_path_FOP="$FOP" # Let the user override the test with a path.
+  ;;
+  *)
+  as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+for as_dir in $PATH
+do
+  IFS=$as_save_IFS
+  test -z "$as_dir" && as_dir=.
+    for ac_exec_ext in '' $ac_executable_extensions; do
+  if { test -f "$as_dir/$ac_word$ac_exec_ext" && $as_test_x "$as_dir/$ac_word$ac_exec_ext"; }; then
+    ac_cv_path_FOP="$as_dir/$ac_word$ac_exec_ext"
+    $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
+    break 2
+  fi
+done
+  done
+IFS=$as_save_IFS
+
+  test -z "$ac_cv_path_FOP" && ac_cv_path_FOP="no"
+  ;;
+esac
+fi
+FOP=$ac_cv_path_FOP
+if test -n "$FOP"; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $FOP" >&5
+$as_echo "$FOP" >&6; }
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+fi
+
+
+if test "$FOP" = no; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built." >&5
+$as_echo "$as_me: WARNING: PDF version cannot be built." >&2;}
+  PDF="#"
+fi;
+
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for directory for IPA font files" >&5
+$as_echo_n "checking for directory for IPA font files... " >&6; }
+
+# Check whether --with-ipafontdir was given.
+if test "${with_ipafontdir+set}" = set; then :
+  withval=$with_ipafontdir; IPAFONTDIR="$withval"
+fi
+
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    IPAFONTDIR=${datadir}/fonts/opentype/ipafont
+    if test ! -d "${IPAFONTDIR}"; then
+      IPAFONTDIR=${datadir}/fonts/opentype
+      if test ! -d "${IPAFONTDIR}"; then
+        IPAFONTDIR=
+      fi
+    fi
+  fi
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    IPAFONTDIR=${datadir}/fonts/truetype/ipafont
+    if test ! -d "${IPAFONTDIR}"; then
+      IPAFONTDIR=${datadir}/fonts/truetype
+      if test ! -d "${IPAFONTDIR}"; then
+        IPAFONTDIR=
+      fi
+    fi
+  fi
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    IPAFONTDIR=${datadir}/fonts
+    if test ! -d ${IPAFONTDIR}; then
+      IPAFONTDIR=
+    fi
+  fi
+
+  if test "x${IPAFONTDIR}" = "x"; then
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
+$as_echo "not found" >&6; }
+    { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built" >&5
+$as_echo "$as_me: WARNING: PDF version cannot be built" >&2;}
+    IPA="#"
+  else
+
+    IPAGFILE=${IPAFONTDIR}/ipag.ttf
+    if test ! -f ${IPAGFILE}; then
+      IPAGFILE=${IPAFONTDIR}/ipa-gothic/ipag.ttf
+      if test ! -f ${IPAGFILE}; then
+        IPAFONTDIR=
+        IPAGFILE=
+      fi
+    fi
+
+    IPAMFILE=${IPAFONTDIR}/ipam.ttf
+    if test ! -f ${IPAMFILE}; then
+      IPAMFILE=${IPAFONTDIR}/ipa-mincho/ipam.ttf
+      if test ! -f ${IPAMFILE}; then
+        IPAFONTDIR=
+        IPAMFILE=
+      fi
+    fi
+
+    if test "x${IPAGFILE}" = "x" -o "x${IPAMFILE}" = "x"; then
+      { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
+$as_echo "not found" >&6; }
+      { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built." >&5
+$as_echo "$as_me: WARNING: PDF version cannot be built." >&2;}
+      IPA="#"
+    else
+
+      { $as_echo "$as_me:${as_lineno-$LINENO}: result: found" >&5
+$as_echo "found" >&6; }
+    fi
+  fi
+
+
+ac_config_files="$ac_config_files Makefile ctie/Makefile src/Makefile src/userconfig.xml src/appendices/Makefile src/book/Makefile src/general/Makefile src/general/genlib/Makefile src/general/genutils/Makefile src/general/graphlib/Makefile src/general/prog/Makefile src/general/sysutils/Makefile src/gnome/Makefile src/gnome/add/Makefile src/gnome/core/Makefile src/gnome/deprecated/Makefile src/introduction/Makefile src/introduction/important/Makefile src/introduction/welcome/Makefile src/kde/Makefile src/kde/add/Makefile src/kde/core/Makefile src/kde/devel/Makefile src/kde4/Makefile src/kde4/add/Makefile src/kde4/core/Makefile src/kde4/intro/Makefile src/multimedia/Makefile src/multimedia/audioutils/Makefile src/multimedia/cdwriteutils/Makefile src/multimedia/libdriv/Makefile src/multimedia/videoutils/Makefile src/networking/Makefile src/networking/connect/Makefile src/networking/mailnews/Makefile src/networking/netlibs/Makefile src/networking/netprogs/Makefile src/networking/netutils/Makefile src/networking/textweb/Makefile src/postlfs/Makefile src/postlfs/config/Makefile src/postlfs/editors/Makefile src/postlfs/filesystems/Makefile src/postlfs/security/Makefile src/postlfs/shells/Makefile src/postlfs/virtualization/Makefile src/pst/Makefile src/pst/printing/Makefile src/pst/ps/Makefile src/pst/scanning/Makefile src/pst/sgml/Makefile src/pst/typesetting/Makefile src/pst/xml/Makefile src/server/Makefile src/server/databases/Makefile src/server/mail/Makefile src/server/major/Makefile src/server/other/Makefile src/stylesheets/Makefile src/stylesheets/lfs-xsl/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile src/stylesheets/lfs-xsl/pdf/Makefile src/stylesheets/lfs-xsl/xhtml/Makefile src/template/Makefile src/x/Makefile src/x/installing/Makefile src/x/lib/Makefile src/x/wm/Makefile src/xincludes/Makefile src/xsoft/Makefile src/xsoft/graphweb/Makefile src/xsoft/office/Makefile src/xsoft/other/Makefile src/xsoft/suites/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -4496,6 +4683,7 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "ctie/Makefile") CONFIG_FILES="$CONFIG_FILES ctie/Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
+    "src/userconfig.xml") CONFIG_FILES="$CONFIG_FILES src/userconfig.xml" ;;
     "src/appendices/Makefile") CONFIG_FILES="$CONFIG_FILES src/appendices/Makefile" ;;
     "src/book/Makefile") CONFIG_FILES="$CONFIG_FILES src/book/Makefile" ;;
     "src/general/Makefile") CONFIG_FILES="$CONFIG_FILES src/general/Makefile" ;;
@@ -4518,7 +4706,6 @@ do
     "src/kde4/Makefile") CONFIG_FILES="$CONFIG_FILES src/kde4/Makefile" ;;
     "src/kde4/add/Makefile") CONFIG_FILES="$CONFIG_FILES src/kde4/add/Makefile" ;;
     "src/kde4/core/Makefile") CONFIG_FILES="$CONFIG_FILES src/kde4/core/Makefile" ;;
-    "src/kde4/devel/Makefile") CONFIG_FILES="$CONFIG_FILES src/kde4/devel/Makefile" ;;
     "src/kde4/intro/Makefile") CONFIG_FILES="$CONFIG_FILES src/kde4/intro/Makefile" ;;
     "src/multimedia/Makefile") CONFIG_FILES="$CONFIG_FILES src/multimedia/Makefile" ;;
     "src/multimedia/audioutils/Makefile") CONFIG_FILES="$CONFIG_FILES src/multimedia/audioutils/Makefile" ;;
@@ -4561,6 +4748,7 @@ do
     "src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile" ;;
     "src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile" ;;
     "src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile" ;;
+    "src/stylesheets/lfs-xsl/pdf/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/pdf/Makefile" ;;
     "src/stylesheets/lfs-xsl/xhtml/Makefile") CONFIG_FILES="$CONFIG_FILES src/stylesheets/lfs-xsl/xhtml/Makefile" ;;
     "src/template/Makefile") CONFIG_FILES="$CONFIG_FILES src/template/Makefile" ;;
     "src/x/Makefile") CONFIG_FILES="$CONFIG_FILES src/x/Makefile" ;;

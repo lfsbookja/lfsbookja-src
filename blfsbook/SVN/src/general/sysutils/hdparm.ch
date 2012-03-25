@@ -16,13 +16,13 @@
 @x
   <!ENTITY hdparm-time          "less than 0.1 SBU">
 @y
-  <!ENTITY hdparm-time          "0.1 SBU 以下">
+  <!ENTITY hdparm-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Hdparm</title>
 @y
-    <title>Hdparm の概要</title>
+    <title>&IntroductionTo1;Hdparm&IntroductionTo2;</title>
 @z
 
 @x
@@ -63,25 +63,25 @@ parameters alone.
 @x
         <para>Download (HTTP): <ulink url="&hdparm-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&hdparm-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&hdparm-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&hdparm-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&hdparm-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&hdparm-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &hdparm-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &hdparm-md5sum;</para>
+        <para>&Download; MD5 sum: &hdparm-md5sum;</para>
 @z
 
 @x
         <para>Download size: &hdparm-size;</para>
 @y
-        <para>ダウンロードサイズ: &hdparm-size;</para>
+        <para>&DownloadSize;: &hdparm-size;</para>
 @z
 
 @x
@@ -107,7 +107,7 @@ parameters alone.
 @x
     <title>Installation of Hdparm</title>
 @y
-    <title>Hdparm のインストール</title>
+    <title>&InstallationOf1;Hdparm&InstallationOf2;</title>
 @z
 
 @x

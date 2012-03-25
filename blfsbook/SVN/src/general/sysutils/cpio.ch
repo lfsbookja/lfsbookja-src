@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Introduction to cpio</title>
 @y
-    <title>cpio の概要</title>
+    <title>&IntroductionTo1;cpio&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&cpio-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&cpio-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&cpio-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&cpio-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&cpio-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&cpio-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &cpio-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &cpio-md5sum;</para>
+        <para>&Download; MD5 sum: &cpio-md5sum;</para>
 @z
 
 @x
         <para>Download size: &cpio-size;</para>
 @y
-        <para>ダウンロードサイズ: &cpio-size;</para>
+        <para>&DownloadSize;: &cpio-size;</para>
 @z
 
 @x
@@ -81,7 +81,7 @@
 @x
     <title>Installation of cpio</title>
 @y
-    <title>cpio のインストール</title>
+    <title>&InstallationOf1;cpio&InstallationOf2;</title>
 @z
 
 @x

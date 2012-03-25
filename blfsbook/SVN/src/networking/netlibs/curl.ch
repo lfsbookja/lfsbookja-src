@@ -16,7 +16,7 @@
 @x
     <title>Introduction to cURL</title>
 @y
-    <title>cURL の概要</title>
+    <title>&IntroductionTo1;cURL&IntroductionTo2;</title>
 @z
 
 @x
@@ -82,7 +82,7 @@
 @x
     <bridgehead renderas="sect3">cURL Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">cURL の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;cURL&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -136,7 +136,7 @@
 @x
     <title>Installation of cURL</title>
 @y
-    <title>cURL のインストール</title>
+    <title>&InstallationOf1;cURL&InstallationOf2;</title>
 @z
 
 @x

@@ -15,7 +15,7 @@ EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
 	dummy-extras.ch dummy-utilities.ch dummy-shell-fallback.ch \
 	gdm.ch gcalctool.ch evolution-data-server.ch \
 	dummy-os-services.ch gnome-disk-utility.ch \
-	gnome-bluetooth.ch gjs.ch glib-networking.ch \
+	gnome-bluetooth.ch gjs.ch \
 	gnome-contacts.ch gnome-dbus-python.ch \
 	gnome-screensaver.ch gnome-system-monitor.ch \
 	gnome-utils.ch totem-pl-parser.ch \
@@ -50,7 +50,7 @@ srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
 	dummy-extras.xml dummy-utilities.xml dummy-shell-fallback.xml \
 	gdm.xml gcalctool.xml evolution-data-server.xml \
 	dummy-os-services.xml gnome-disk-utility.xml \
-	gnome-bluetooth.xml gjs.xml glib-networking.xml \
+	gnome-bluetooth.xml gjs.xml \
 	gnome-contacts.xml gnome-dbus-python.xml \
 	gnome-screensaver.xml gnome-system-monitor.xml \
 	gnome-utils.xml totem-pl-parser.xml \
@@ -124,7 +124,6 @@ dummy-os-services.xml: $(BOOKdir)/$@ $(srcdir)/dummy-os-services.ch
 gnome-disk-utility.xml: $(BOOKdir)/$@ $(srcdir)/gnome-disk-utility.ch
 gnome-bluetooth.xml: $(BOOKdir)/$@ $(srcdir)/gnome-bluetooth.ch
 gjs.xml: $(BOOKdir)/$@ $(srcdir)/gjs.ch
-glib-networking.xml: $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
 gnome-contacts.xml: $(BOOKdir)/$@ $(srcdir)/gnome-contacts.ch
 gnome-dbus-python.xml: $(BOOKdir)/$@ $(srcdir)/gnome-dbus-python.ch
 gnome-screensaver.xml: $(BOOKdir)/$@ $(srcdir)/gnome-screensaver.ch

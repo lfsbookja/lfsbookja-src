@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNet</title>
 @y
-    <title>GNet の概要</title>
+    <title>&IntroductionTo1;GNet&IntroductionTo2;</title>
 @z
 
 @x
@@ -75,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">GNet Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNet の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNet&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -97,7 +97,7 @@
 @x
     <title>Installation of GNet</title>
 @y
-    <title>GNet のインストール</title>
+    <title>&InstallationOf1;GNet&InstallationOf2;</title>
 @z
 
 @x

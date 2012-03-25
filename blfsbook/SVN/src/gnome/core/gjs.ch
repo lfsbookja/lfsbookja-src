@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">gjs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gjs の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gjs&Dependencies2;</bridgehead>
 @z
 
 @x

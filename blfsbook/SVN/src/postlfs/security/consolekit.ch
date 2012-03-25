@@ -208,6 +208,19 @@
 @z
 
 @x
+      <para>If you use <application>PAM</application> you need to configure 
+      <application>PAM</application> to activate <application>ConsoleKit
+      </application> upon user login. This can be achieved by editing the 
+      <filename>/etc/pam.d/login</filename> file as the 
+      <systemitem class="username">root</systemitem> user:</para>
+@y
+      <para>
+      <application>PAM</application> を導入している場合は、<application>PAM</application> において、ユーザーログイン時に <application>ConsoleKit</application> を有効とする設定を行う必要があります。
+      これを実現するには、<systemitem class="username">root</systemitem> ユーザーになり、以下のように <filename>/etc/pam.d/login</filename> ファイルを編集します。
+      </para>
+@z
+
+@x
       <para>See /usr/share/doc/ConsoleKit/spec/ConsoleKit.html for more
       configuration.</para>
 @y

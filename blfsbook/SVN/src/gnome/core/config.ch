@@ -36,12 +36,10 @@
   daemon here, use the following command instead of the one shown above:</para>
 @y
   <para>
-  <xref linkend="dbus"/> をインストールしている場合は、同時に <application>D-BUS</application> セッションデーモンを起動することができます。
-  
-  Starting the
-  session daemon here has the added bonus that it will exit when you log out
-  of your <application>GNOME</application> session. If you wish to start the
-  daemon here, use the following command instead of the one shown above:
+  <xref linkend="dbus"/> をインストールしている場合は、同様に <application>D-BUS</application> セッションデーモンを起動することができます。
+  セッションデーモンを起動すると便利なことがあります。
+  <application>GNOME</application> セッションからログアウトするとセッションも終了します。
+  セッションを起動するには、上のコマンドではなく、以下のコマンドを実行します。
   </para>
 @z
 
@@ -51,10 +49,7 @@
     mentioned before <application>GNOME</application>.</para>
 @y
     <para>
-    <filename>~/.xinitrc</filename> ファイルにて
-    Check the <filename>~/.xinitrc</filename> file and ensure you have
-    no other window managers or other <application>X</application> applications
-    mentioned before <application>GNOME</application>.
+    <filename>~/.xinitrc</filename> ファイルにて、<application>GNOME</application> の実行よりも前に、他のウィンドウマネージャーや <application>X</application> アプリケーションを起動する設定になっていないことを確認してください。
     </para>
 @z
 
@@ -72,9 +67,7 @@
   (as <systemitem class="username">root</systemitem>):</para>
 @y
   <para>
-  (<systemitem class="username">root</systemitem> ユーザーでログインして) MIME
-  Update the MIME-type application database
-  (as <systemitem class="username">root</systemitem>):
+  (<systemitem class="username">root</systemitem> ユーザーでログインして) MIME タイプのアプリケーションを更新します。
   </para>
 @z
 

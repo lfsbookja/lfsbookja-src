@@ -105,6 +105,18 @@
 @z
 
 @x
+    <para>First, fix a minor script error.  If you want to compress the PCI
+    data, use 1 instead of 0 in the instruction below.  The uncompressed data
+    is currently about 710KB.</para>
+@y
+    <para>
+    まずはスクリプトエラーを修正します。
+    PCI データを圧縮して保持したい場合は、上のコマンドにて 0 を 1 に変更してください。
+    圧縮しない場合のデータ容量は約 710 KB です。
+    </para>
+@z
+
+@x
     <para>Install <application>PCI Utilities</application> by
     running the following commands:</para>
 @y
@@ -127,17 +139,17 @@
     </para>
 @z
 
-@x
-    <para>Some packages require the PCI static library. To install the library
-    and headers, issue the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    他のパッケージの中には PCI のスタティックライブラリを必要とするものがあります。
-    スタティックライブラリおよびそのヘッダファイルをインストールするために <systemitem
-    class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-    </para>
-@z
+% @x
+%     <para>Some packages require the PCI static library. To install the library
+%     and headers, issue the following command as the
+%     <systemitem class="username">root</systemitem> user:</para>
+% @y
+%     <para>
+%     他のパッケージの中には PCI のスタティックライブラリを必要とするものがあります。
+%     スタティックライブラリおよびそのヘッダファイルをインストールするために <systemitem
+%     class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+%     </para>
+% @z
 
 @x
     <title>Command Explanations</title>
@@ -152,6 +164,15 @@
     <para>
     <parameter>ZLIB=no</parameter>:
     このパラメーターは <filename>pci.ids</filename> ファイルが圧縮されないようにします。
+    </para>
+@z
+
+@x
+    <para><parameter>SHARED=yes</parameter>: This parameter enables building of
+    shared library instead of static one.</para>
+@y
+    <para><parameter>SHARED=yes</parameter>:
+    このパラメーターは、スタティックライブラリのかわりに共有ライブラリをビルドすることを指示します。
     </para>
 @z
 
@@ -211,11 +232,11 @@
 
 @x
         <seg>lspci, setpci and update-pciids</seg>
-        <seg>libpci.a</seg>
+        <seg>libpci.so</seg>
         <seg>/usr/include/pci</seg>
 @y
         <seg>lspci, setpci, update-pciids</seg>
-        <seg>libpci.a</seg>
+        <seg>libpci.so</seg>
         <seg>/usr/include/pci</seg>
 @z
 
@@ -249,10 +270,10 @@
           <xref linkend="lynx"/>.</para>
 @z
 
-@x libpci.a
-        <para> is the static library that allows applications to access the PCI
+@x libpci.so
+        <para>is library that allows applications to access the PCI
         subsystem.</para>
 @y
-        <para> is the static library that allows applications to access the PCI
+        <para>is library that allows applications to access the PCI
         subsystem.</para>
 @z

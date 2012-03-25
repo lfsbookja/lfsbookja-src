@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME Desktop</title>
 @y
-    <title>GNOME Desktop の概要</title>
+    <title>&IntroductionTo1;GNOME Desktop&IntroductionTo2;</title>
 @z
 
 @x
@@ -75,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">GNOME Desktop Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Desktop の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Desktop&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -115,7 +115,7 @@
 @x
     <title>Installation of GNOME Desktop</title>
 @y
-    <title>GNOME Desktop のインストール</title>
+    <title>&InstallationOf1;GNOME Desktop&InstallationOf2;</title>
 @z
 
 @x
@@ -196,7 +196,7 @@
         locale/{an/LC_MESSAGES,fur/LC_MESSAGES,ig/LC_MESSAGES,lo/LC_MESSAGES,
         yo/LC_MESSAGES},omf/{fdl,gpl,lgpl}}}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libgnome-desktop-3.{so,a}</seg>
         <seg>/usr/{include/gnome-desktop-3.0/libgnome-desktop,
         share/{gnome/help/{fdl/{C,ar,ca,de,el,es,eu,fr,hu,ko,oc,pl,sl,sv,uk,vi,
@@ -220,5 +220,5 @@
 @y
           <para>contains APIs being tested for inclusion in
           <application>libgnome</application> or
-          <application>libgnomeui</application>.</para>
+          <application>libgnomeui</application></para>
 @z

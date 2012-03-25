@@ -141,7 +141,7 @@
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
-    Now, as the <systemitem class="username">root</systemitem> user:
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
 @z
 
@@ -262,13 +262,15 @@
 @z
 
 @x
-        <seg>desktop-file-install, desktop-file-validate, and
-        update-desktop-database</seg>
+        <seg>desktop-file-edit, desktop-file-install, 
+        desktop-file-validate, and update-desktop-database
+        </seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>desktop-file-install, desktop-file-validate,
-        update-desktop-database</seg>
+        <seg>desktop-file-edit, desktop-file-install, 
+        desktop-file-validate, update-desktop-database
+        </seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z
@@ -279,14 +281,20 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x desktop-file-install
-          <para>is used to install a new, or modify an existing desktop file
-          entry. It is also used to rebuild or modify the MIME-types
-          application database.</para>
+@x desktop-file-edit
+          <para>is used to modify an existing desktop file entry.</para>
 @y
-          <para>is used to install a new, or modify an existing desktop file
-          entry. It is also used to rebuild or modify the MIME-types
-          application database.</para>
+          <para>is used to modify an existing desktop file entry.</para>
+@z
+
+@x desktop-file-install
+          <para>is used to install a new desktop file entry. It is 
+          also used to rebuild or modify the MIME-types application 
+          database.</para>
+@y
+          <para>is used to install a new desktop file entry. It is 
+          also used to rebuild or modify the MIME-types application 
+          database.</para>
 @z
 
 @x desktop-file-validate

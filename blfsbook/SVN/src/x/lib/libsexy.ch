@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libsexy</title>
 @y
-    <title>libsexy の概要</title>
+    <title>&IntroductionTo1;libsexy&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libsexy-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libsexy-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libsexy-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libsexy-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libsexy-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libsexy-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libsexy-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libsexy-md5sum;</para>
+        <para>&Download; MD5 sum: &libsexy-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libsexy-size;</para>
 @y
-        <para>ダウンロードサイズ: &libsexy-size;</para>
+        <para>&DownloadSize;: &libsexy-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">libsexy Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libsexy の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libsexy&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -116,7 +116,7 @@
 @x
     <title>Installation of libsexy</title>
 @y
-    <title>libsexy のインストール</title>
+    <title>&InstallationOf1;libsexy&InstallationOf2;</title>
 @z
 
 @x
@@ -169,7 +169,7 @@
         <seg>libsexy.{so,a}</seg>
         <seg>/usr/{include/libsexy,share/gtk-doc/html/libsexy}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libsexy.{so,a}</seg>
         <seg>/usr/{include/libsexy,share/gtk-doc/html/libsexy}</seg>
 @z

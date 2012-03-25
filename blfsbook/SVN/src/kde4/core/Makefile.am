@@ -3,6 +3,7 @@ CHANGE_FILES = \
 	attica.ch \
 	akonadi.ch \
 	automoc4.ch \
+	config.ch \
 	core.ch \
 	kactivities.ch \
 	kde4baseapps.ch \
@@ -33,6 +34,7 @@ ctie:
 attica.xml:                   $(BOOKdir)/$@ $(srcdir)/attica.ch
 akonadi.xml:                  $(BOOKdir)/$@ $(srcdir)/akonadi.ch
 automoc4.xml:                 $(BOOKdir)/$@ $(srcdir)/automoc4.ch
+config.xml:                   $(BOOKdir)/$@ $(srcdir)/config.ch
 core.xml:                     $(BOOKdir)/$@ $(srcdir)/core.ch
 kactivities.xml:              $(BOOKdir)/$@ $(srcdir)/kactivities.ch
 kde4baseapps.xml:             $(BOOKdir)/$@ $(srcdir)/kde4baseapps.ch

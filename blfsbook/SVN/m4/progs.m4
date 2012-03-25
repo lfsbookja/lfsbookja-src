@@ -10,7 +10,7 @@ AC_DEFUN([AC_PROG_XMLLINT],[
 AC_REQUIRE([AC_EXEEXT])dnl
 AC_PATH_PROG(XMLLINT, xmllint$EXEEXT, no)
 if test "$XMLLINT" = no; then
-        AC_MSG_ERROR([xmllint not found in $PATH])
+  AC_MSG_ERROR([xmllint not found in $PATH])
 fi;dnl
 ])
 
@@ -18,9 +18,31 @@ AC_DEFUN([AC_PROG_TIDY],[
 AC_REQUIRE([AC_EXEEXT])dnl
 AC_PATH_PROG(TIDY, tidy$EXEEXT, no)
 if test "$TIDY" = no; then
-        AC_MSG_ERROR([tidy not found in $PATH])
+ AC_MSG_ERROR([tidy not found in $PATH])
 fi;dnl
 ])
+
+PDF=
+AC_DEFUN([AC_PROG_FOP],[
+AC_REQUIRE([AC_EXEEXT])dnl
+AC_PATH_PROG(FOP, fop$EXEEXT, no)
+if test "$FOP" = no; then
+  AC_MSG_WARN([PDF version cannot be built.])
+  PDF="#"
+fi;dnl
+])
+AC_SUBST(PDF)
+
+TXT=
+AC_DEFUN([AC_PROG_LYNX],[
+AC_REQUIRE([AC_EXEEXT])dnl
+AC_PATH_PROG(LYNX, lynx$EXEEXT, no)
+if test "$LYNX" = no; then
+  AC_MSG_WARN([Text version cannot be built.])
+  TXT="#"
+fi;dnl
+])
+AC_SUBST(TXT)
 
 CTIE=ctie/ctie$EXEEXT
 AC_SUBST(CTIE)
@@ -43,14 +65,5 @@ else
 fi
 AC_SUBST(bookdir)
 
-dnl SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
-dnl AC_MSG_CHECKING([for the original XML version])
-dnl if test ! "$SVNVER" = "svn-20090819"; then
-dnl   AC_MSG_RESULT([no])
-dnl   AC_MSG_ERROR([Version of the original XML not suitable, should be svn-20090819])
-dnl else
-dnl   AC_MSG_RESULT([$SVNVER])
-dnl fi
-dnl AC_SUBST(SVNVER)
-SVNVER=svn
-AC_SUBST(SVNVER)
+abs_bookdir=`(cd $bookdir && pwd)`
+AC_SUBST(abs_bookdir)

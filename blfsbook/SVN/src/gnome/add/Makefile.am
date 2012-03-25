@@ -11,6 +11,7 @@ CHANGE_FILES = \
 	dummy-libraries.ch \
 	dummy-utilities.ch \
 	epiphany-extensions.ch \
+	evolution.ch \
 	file-roller.ch \
 	gdl.ch \
 	gdlmm.ch \
@@ -65,6 +66,7 @@ devhelp.xml: $(BOOKdir)/$@ $(srcdir)/devhelp.ch
 dummy-libraries.xml: $(BOOKdir)/$@ $(srcdir)/dummy-libraries.ch
 dummy-utilities.xml: $(BOOKdir)/$@ $(srcdir)/dummy-utilities.ch
 epiphany-extensions.xml: $(BOOKdir)/$@ $(srcdir)/epiphany-extensions.ch
+evolution.xml: $(BOOKdir)/$@ $(srcdir)/evolution.ch
 file-roller.xml: $(BOOKdir)/$@ $(srcdir)/file-roller.ch
 gdl.xml: $(BOOKdir)/$@ $(srcdir)/gdl.ch
 gdlmm.xml: $(BOOKdir)/$@ $(srcdir)/gdlmm.ch

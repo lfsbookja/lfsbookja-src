@@ -114,6 +114,16 @@
 @z
 
 @x
+      <para>If <xref linkend="libxslt"/> is installed then <xref
+      linkend="DocBook"/> and <xref linkend="docbook-xsl"/> are required.</para>
+@y
+      <para>
+      <xref linkend="libxslt"/> をインストールしている場合は <xref
+      linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
+      </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/polkit"/></para>
 @y
@@ -166,6 +176,74 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><parameter>--with-authfw=shadow</parameter>: This parameter will use
+    the <application>Shadow</application> rather than the
+    <application>Linux-PAM</application> Authentication framework. Remove it if
+    you would like to use <application>Linux-PAM</application>.</para>
+    <para><parameter>--disable-static</parameter>: This will prevent the static 
+    libraries from being built.</para>
+@y
+    <para><parameter>--with-authfw=shadow</parameter>:
+    本パラメーターは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
+    <application>Linux-PAM</application> とする場合は本パラメーターを取り除いてください。
+    </para>
+    <para><parameter>--disable-static</parameter>:
+    これはスタティックライブラリをビルドしないようにします。
+    </para>
+@z
+
+@x
+    <title>Configuring polkit</title>
+@y
+    <title>&Configuring1;polkit&Configuring2;</title>
+@z
+
+@x
+      <title>Config Files</title>
+@y
+      <title>&ConfigFiles;</title>
+@z
+
+@x
+      <title>PAM Configuration</title>
+@y
+      <title>PAM 設定</title>
+@z
+
+@x
+        <para>If you did not build <application>polkit</application> with
+        <application>Linux PAM</application> support, you can skip this section.
+        </para>
+@y
+        <para>
+        <application>Linux PAM</application> サポートを含めずに <application>polkit</application> をビルドした場合は本節を読み飛ばしてください。
+        </para>
+@z
+
+@x
+      <para>If you built <application>polkit</application> with 
+      <application>Linux PAM</application> support, you will need to modify 
+      the pam configuration file which was installed by default to get 
+      <application>polkit</application> to work correctly with BLFS.</para>
+@y
+      <para>
+      <application>Linux PAM</application> サポートを含めて <application>polkit</application> をビルドしている場合、デフォルトでインストールされている pam 設定ファイルを修正する必要があります。
+      これにより BLFS において <application>polkit</application> が正しく動作するものとなります。
+      </para>
+@z
+
+@x
+      <para>Issue the following commands as the <systemitem class="username">root</systemitem>
+      user to create the configuration file for <application>Linux PAM</application>:
+      </para>
+@y
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してください。
+      <application>Linux PAM</application> 用の設定ファイルを生成します。
+      </para>
 @z
 
 @x
@@ -237,6 +315,12 @@
           <para>
           システムメッセージバス上にて、org.freedesktop.PolicyKit1 なる <application>D-Bus</application> サービスを提供します。
           </para>
+@z
+
+@x libnullbackend.{so,a}
+          <para>PolicyKit null backend</para>
+@y
+          <para>PolicyKit ヌルバックエンド。</para>
 @z
 
 @x libpolkit-agent-1.{so,a}

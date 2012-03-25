@@ -1,6 +1,7 @@
 BOOKdir = $(top_builddir)/@bookdir@/networking/netlibs
 CHANGE_FILES = \
 	curl.ch \
+	glib-networking.ch \
 	gnet.ch \
 	libpcap.ch \
 	libsoup.ch \
@@ -26,6 +27,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 curl.xml:     $(BOOKdir)/$@ $(srcdir)/curl.ch
+glib-networking.xml: $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
 gnet.xml:     $(BOOKdir)/$@ $(srcdir)/gnet.ch
 libpcap.xml:  $(BOOKdir)/$@ $(srcdir)/libpcap.ch
 libsoup.xml:  $(BOOKdir)/$@ $(srcdir)/libsoup.ch

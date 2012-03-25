@@ -1,9 +1,10 @@
 BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/common
-EXTRA_DIST = common.ch entities.ch gentext.ch \
+CHANGE_FILES = common.ch entities.ch gentext.ch \
 	insertfile.ch l10n_dtd.ch l10n_xml.ch l10n_xsl.ch labels.ch \
 	olink.ch pi.ch refentry.ch stripns.ch subtitles.ch \
 	table.ch targetdatabase.ch targets.ch titles.ch utility.ch \
 	ja_xml.ch
+EXTRA_DIST = $(CHANGE_FILES) entities.sed
 srcdir = @srcdir@
 srcs = common.xsl de.xml en.xml entities.ent es.xml fr.xml gentext.xsl \
 	insertfile.xsl it.xml l10n.dtd l10n.xml l10n.xsl labels.xsl \
@@ -21,7 +22,9 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 common.xsl: $(BOOKdir)/$@ $(srcdir)/common.ch
-entities.ent: $(BOOKdir)/$@ $(srcdir)/entities.ch
+entities.ent: $(BOOKdir)/$@ 
+#	sed -f $(srcdir)/entities.sed $(BOOKdir)/$@ > $@
+	cp -p $(BOOKdir)/$@ $@
 gentext.xsl: $(BOOKdir)/$@ $(srcdir)/gentext.ch
 insertfile.xsl: $(BOOKdir)/$@ $(srcdir)/insertfile.ch
 l10n.dtd: $(BOOKdir)/$@ $(srcdir)/l10n_dtd.ch

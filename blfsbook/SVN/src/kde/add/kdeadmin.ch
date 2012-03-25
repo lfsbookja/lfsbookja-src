@@ -141,8 +141,10 @@
     <para><command>kcron</command> requires a cron implementation, such as
     Vixie Cron, at run time. It is not compatible with <xref linkend="fcron"/>.</para>
 @y
-    <para><command>kcron</command> requires a cron implementation, such as
-    Vixie Cron, at run time. It is not compatible with <xref linkend="fcron"/>.</para>
+    <para>
+    <command>kcron</command> は実行時において、Vixie Cron などのクーロン (cron) を必要とします。
+    <xref linkend="fcron"/> との互換性はありません。
+    </para>
 @z
 
 @x
@@ -169,6 +171,49 @@
    <para>
    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>cp -v /usr/share/... admin/...</command>: 
+    Ensure the .m4 files are consistent with the current autotools version.</para>
+@y
+    <para><command>cp -v /usr/share/... admin/...</command>: 
+    .m4 ファイルが、インストールされている autotools のバージョンとなるようにします。
+    </para>
+@z
+
+@x
+    <para><command>sed ... admin/acinclude.m4.in</command>: 
+    Update the paths to the Trinity libraries.</para>
+@y
+    <para><command>sed ... admin/acinclude.m4.in</command>: 
+    Trinity ライブラリへのパスを修正します。
+    </para>
+@z
+
+@x
+    <para><command>make -f admin/Makefile.common</command>: Create the configure
+    script.</para>
+@y
+    <para><command>make -f admin/Makefile.common</command>:
+    configure スクリプトを生成します。
+    </para>
+@z
+
+@x
+    <para><parameter>--with-extra-libs=$TRINITY_PREFIX/lib</parameter>: This
+    option ensure the Trinity libraries are found in the
+    <filename>Makefile</filename>s.</para>
+@y
+    <para><parameter>--with-extra-libs=$TRINITY_PREFIX/lib</parameter>:
+    このオプションは、<filename>Makefile</filename> にて Trinity ライブラリが探し出せるようにします。
+    </para>
 @z
 
 @x

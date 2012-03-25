@@ -16,7 +16,7 @@
 @x
     <title>Introduction to DeviceKit</title>
 @y
-    <title>DeviceKit の概要</title>
+    <title>&IntroductionTo1;DeviceKit&IntroductionTo2;</title>
 @z
 
 @x
@@ -46,25 +46,25 @@ system.
 @x
         <para>Download (HTTP): <ulink url="&DeviceKit-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&DeviceKit-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&DeviceKit-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&DeviceKit-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&DeviceKit-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&DeviceKit-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &DeviceKit-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &DeviceKit-md5sum;</para>
+        <para>&Download; MD5 sum: &DeviceKit-md5sum;</para>
 @z
 
 @x
         <para>Download size: &DeviceKit-size;</para>
 @y
-        <para>ダウンロードサイズ: &DeviceKit-size;</para>
+        <para>&DownloadSize;: &DeviceKit-size;</para>
 @z
 
 @x
@@ -82,7 +82,7 @@ system.
 @x
     <bridgehead renderas="sect3">DeviceKit Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">DeviceKit の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;DeviceKit&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -106,7 +106,7 @@ system.
 @x
     <title>Installation of DeviceKit</title>
 @y
-    <title>DeviceKit のインストール</title>
+    <title>&InstallationOf1;DeviceKit&InstallationOf2;</title>
 @z
 
 @x

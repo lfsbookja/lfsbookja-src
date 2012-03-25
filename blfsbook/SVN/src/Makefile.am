@@ -10,7 +10,7 @@ EXTRACLEANFILES = $(srcs)
 
 BASEDIR = ../svn.ja
 ROOT_ID =
-PDF_OUTPUT = ../BLFS-BOOKja.pdf
+PDF_OUTPUT = ../blfsbookja-svn.pdf
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
 
@@ -91,26 +91,29 @@ $(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
 	$(XMLLINT) --nonet --noent --xinclude --postvalid \
 	  -o $(RENDERTMP)/blfs-full.xml index.xml
 
-pdf: $(BASEDIR)/$(PDF_OUTPUT)
-$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/blfs-full.xml
-	@echo "Generating profiled XML for PDF..."
-	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
-	  --output $(RENDERTMP)/blfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
-	  $(RENDERTMP)/blfs-full.xml
+@PDF@@IPA@pdf: $(BASEDIR)/$(PDF_OUTPUT)
+@PDF@@IPA@$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/blfs-full.xml
+@PDF@@IPA@	@echo "Generating profiled XML for PDF..."
+@PDF@@IPA@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
+@PDF@@IPA@	  --output $(RENDERTMP)/blfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
+@PDF@@IPA@	  $(RENDERTMP)/blfs-full.xml
 
-$(RENDERTMP)/blfs-pdf.fo: $(RENDERTMP)/blfs-pdf.xml
-	@echo "Generating FO file..."
-	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
-	  --output $(RENDERTMP)/blfs-pdf.fo stylesheets/blfs-pdf.xsl \
-	  $(RENDERTMP)/blfs-pdf.xml
-	$(Q)sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/blfs-pdf.fo
+@PDF@@IPA@$(RENDERTMP)/blfs-pdf.fo: $(RENDERTMP)/blfs-pdf.xml
+@PDF@@IPA@	@echo "Generating FO file..."
+@PDF@@IPA@	$(Q)xsltproc --nonet -stringparam rootid "$(ROOT_ID)" \
+@PDF@@IPA@	  --output $(RENDERTMP)/blfs-pdf.fo stylesheets/blfs-pdf.xsl \
+@PDF@@IPA@	  $(RENDERTMP)/blfs-pdf.xml
+@PDF@@IPA@	$(Q)sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/blfs-pdf.fo
 
-$(BASEDIR)/$(PDF_OUTPUT): $(RENDERTMP)/blfs-pdf.fo
-	@echo "Generating PDF file..."
-	$(Q)if [ ! -e $(BASEDIR) ]; then \
-	  mkdir -p $(BASEDIR); \
-	fi;
-	$(Q)fop $(RENDERTMP)/blfs-pdf.fo $(BASEDIR)/$(PDF_OUTPUT)
+@PDF@@IPA@$(BASEDIR)/$(PDF_OUTPUT): $(RENDERTMP)/blfs-pdf.fo
+@PDF@@IPA@	@echo "Generating PDF file..."
+@PDF@@IPA@	$(Q)if [ ! -e $(BASEDIR) ]; then \
+@PDF@@IPA@	  mkdir -p $(BASEDIR); \
+@PDF@@IPA@	fi;
+@PDF@@IPA@	cp -R $(BASEDIR)/images .
+@PDF@@IPA@	$(Q)fop -c userconfig.xml $(RENDERTMP)/blfs-pdf.fo $(BASEDIR)/$(PDF_OUTPUT)
+
+@PDF@@IPA@userconfig.xml: $(srcdir)/userconfig.xml.in
 
 wget-list: $(BASEDIR)/wget-list
 $(BASEDIR)/wget-list: $(RENDERTMP)/blfs-full.xml

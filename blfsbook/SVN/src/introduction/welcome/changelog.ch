@@ -43,7 +43,7 @@
   <para>Current release: &version; &ndash; &releasedate;</para>
 @y
   <para>
-  最新リリース: &version; &ndash; &releasedate;
+  最新リリース: &version;
   </para>
 @z
 
@@ -51,6 +51,56 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴</title>
+@z
+
+@x
+      <para>March 25th, 2012</para>
+@y
+      <para>2012/03/25</para>
+@z
+@x
+          <para>[krejzi] - removed libmikmod 3.1.11.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - removed libfame 0.9.1.</para>
+@y
+          <para>[krejzi] - libmikmod 3.1.11 を削除。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libfame 0.9.1 を削除。</para>
+@z
+
+@x
+      <para>March 24th, 2012</para>
+@y
+      <para>2012/03/24</para>
+@z
+@x
+	<listitem>
+          <para>[rthomsen] - Added information about further KDE4 packages.</para>
+	</listitem>
+        <listitem>
+          <para>[rthomsen] - Removed kdesdk, kdewebdev, kdevplatform and kdevelop.</para>
+	</listitem>
+        <listitem>
+          <para>[rthomsen] - Removed kdetoys, kdegames, kdeedu and kdeaccessibility.</para>
+        </listitem>	
+         <listitem>
+          <para>[rthomsen] - Added instructions for starting KDE4.</para>
+        </listitem>
+@y
+	<listitem>
+          <para>[rthomsen] - KDE4 のその他のパッケージの情報を追加。</para>
+	</listitem>
+        <listitem>
+          <para>[rthomsen] - kdesdk, kdewebdev, kdevplatform, kdevelop を削除。</para>
+	</listitem>
+        <listitem>
+          <para>[rthomsen] - kdetoys, kdegames, kdeedu, kdeaccessibility を削除。</para>
+        </listitem>	
+         <listitem>
+          <para>[rthomsen] - KDE4 の起動方法の説明を追加。</para>
+        </listitem>
 @z
 
 @x

@@ -26,9 +26,10 @@
   will want to install every package, but instead review and install only the
   ones desired.</para>
 @y
-  <para>Each of the packages in this chapter depend on the base
-  <application>Trinity/KDE3</application> installation procedures, but each is an
-  independent group of programs that can be optionally installed.  Few users
-  will want to install every package, but instead review and install only the
-  ones desired.</para>
+  <para>
+  本節に示すパッケージは <application>Trinity/KDE3</application> の基本的なインストールに依存します。
+  ただし各パッケージは独立しているので、これをインストールするかどうかは任意です。
+  すべてのパッケージをインストールする必要はありません。
+  各パッケージを確認し、必要だと思うものがあればインストールしてください。
+  </para>
 @z

@@ -16,13 +16,13 @@
 @x
   <!ENTITY unzip-time          "Less than 0.1 SBU">
 @y
-  <!ENTITY unzip-time          "0.1 SBU 以下">
+  <!ENTITY unzip-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to UnZip</title>
 @y
-    <title>UnZip の概要</title>
+    <title>&IntroductionTo1;UnZip&IntroductionTo2;</title>
 @z
 
 @x
@@ -74,25 +74,25 @@
 @x
         <para>Download (HTTP): <ulink url="&unzip-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&unzip-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&unzip-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&unzip-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&unzip-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&unzip-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &unzip-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &unzip-md5sum;</para>
+        <para>&Download; MD5 sum: &unzip-md5sum;</para>
 @z
 
 @x
         <para>Download size: &unzip-size;</para>
 @y
-        <para>ダウンロードサイズ: &unzip-size;</para>
+        <para>&DownloadSize;: &unzip-size;</para>
 @z
 
 @x
@@ -296,7 +296,7 @@
 @x
     <title>Installation of UnZip</title>
 @y
-    <title>UnZip のインストール</title>
+    <title>&InstallationOf1;UnZip&InstallationOf2;</title>
 @z
 
 @x

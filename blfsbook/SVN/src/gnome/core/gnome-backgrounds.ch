@@ -16,13 +16,13 @@
 @x
   <!ENTITY gnome-backgrounds-time          "less than 0.1 SBU">
 @y
-  <!ENTITY gnome-backgrounds-time          "0.1 SBU 以下">
+  <!ENTITY gnome-backgrounds-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to gnome-backgrounds</title>
 @y
-    <title>gnome-backgrounds の概要</title>
+    <title>&IntroductionTo1;gnome-backgrounds&IntroductionTo2;</title>
 @z
 
 @x
@@ -83,7 +83,7 @@
 @x
     <bridgehead renderas="sect3">gnome-backgrounds Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gnome-backgrounds の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gnome-backgrounds&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,7 +105,7 @@
 @x
     <title>Installation of gnome-backgrounds</title>
 @y
-    <title>gnome-backgrounds のインストール</title>
+    <title>&InstallationOf1;gnome-backgrounds&InstallationOf2;</title>
 @z
 
 @x
@@ -159,8 +159,8 @@
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-background-properties,
         pixmaps/backgrounds/gnome/{abstract,nature}}</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-background-properties,
         pixmaps/backgrounds/gnome/{abstract,nature}}</seg>
 @z

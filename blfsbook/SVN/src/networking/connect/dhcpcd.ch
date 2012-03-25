@@ -89,7 +89,7 @@
 @x
     <title>Installation of dhcpcd</title>
 @y
-    <title>dhcpcd のインストール</title>
+    <title>&InstallationOf1;dhcpcd&InstallationOf2;</title>
 @z
 
 @x

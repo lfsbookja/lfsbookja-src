@@ -38,6 +38,7 @@ am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
 	$(top_srcdir)/m4/ax_compare_version.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
+	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
 	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
@@ -65,15 +66,21 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EXEEXT = @EXEEXT@
+FOP = @FOP@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+IPA = @IPA@
+IPAFONTDIR = @IPAFONTDIR@
+IPAGFILE = @IPAGFILE@
+IPAMFILE = @IPAMFILE@
 LDFLAGS = @LDFLAGS@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
 LTLIBOBJS = @LTLIBOBJS@
+LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
 OBJEXT = @OBJEXT@
@@ -85,14 +92,16 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+PDF = @PDF@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
-SVNVER = @SVNVER@
 TIDY = @TIDY@
+TXT = @TXT@
 VERSION = @VERSION@
 XMLLINT = @XMLLINT@
 XSLTPROC = @XSLTPROC@
+abs_bookdir = @abs_bookdir@
 abs_builddir = @abs_builddir@
 abs_srcdir = @abs_srcdir@
 abs_top_builddir = @abs_top_builddir@
@@ -139,20 +148,17 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/kde4/add
 CHANGE_FILES = \
 	add.ch \
+	add-pkgs.ch \
 	ark.ch \
 	kate.ch \
 	kcalc.ch \
-	kde4accessibility.ch \
 	kde4admin.ch \
 	kde4artwork.ch \
-	kde4edu.ch \
-	kde4games.ch \
 	kde4multimedia.ch \
 	kde4network.ch \
 	kde4pim.ch \
 	kde4pimruntime.ch \
 	kde4plasmaaddons.ch \
-	kde4toys.ch \
 	konsole.ch \
 	libkexiv2.ch \
 	okular.ch
@@ -352,20 +358,17 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 add.xml:               $(BOOKdir)/$@ $(srcdir)/add.ch
+add-pkgs.xml:          $(BOOKdir)/$@ $(srcdir)/add-pkgs.ch
 ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
 kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
 kcalc.xml:             $(BOOKdir)/$@ $(srcdir)/kcalc.ch
-kde4accessibility.xml: $(BOOKdir)/$@ $(srcdir)/kde4accessibility.ch
 kde4admin.xml:         $(BOOKdir)/$@ $(srcdir)/kde4admin.ch
 kde4artwork.xml:       $(BOOKdir)/$@ $(srcdir)/kde4artwork.ch
-kde4edu.xml:           $(BOOKdir)/$@ $(srcdir)/kde4edu.ch
-kde4games.xml:         $(BOOKdir)/$@ $(srcdir)/kde4games.ch
 kde4multimedia.xml:    $(BOOKdir)/$@ $(srcdir)/kde4multimedia.ch
 kde4network.xml:       $(BOOKdir)/$@ $(srcdir)/kde4network.ch
 kde4pim.xml:           $(BOOKdir)/$@ $(srcdir)/kde4pim.ch
 kde4pimruntime.xml:    $(BOOKdir)/$@ $(srcdir)/kde4pimruntime.ch
 kde4plasmaaddons.xml:  $(BOOKdir)/$@ $(srcdir)/kde4plasmaaddons.ch
-kde4toys.xml:          $(BOOKdir)/$@ $(srcdir)/kde4toys.ch
 konsole.xml:           $(BOOKdir)/$@ $(srcdir)/konsole.ch
 libkexiv2.xml:         $(BOOKdir)/$@ $(srcdir)/libkexiv2.ch
 okular.xml:            $(BOOKdir)/$@ $(srcdir)/okular.ch

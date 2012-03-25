@@ -1,5 +1,12 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
+#
+# This is part of BLFSbookja package.
+#
+# $Author: matsuand $
+# $Rev: 456 $
+# $Date:: 2012-02-26 00:38:21 +0900#$
+#
 
 AC_PREREQ([2.63])
 AC_INIT([BLFSbookja], [svn], [matsuand AT users DOT sourceforge DOT jp])
@@ -9,6 +16,7 @@ m4_include([m4/progs.m4])
 m4_include([m4/ax_compare_version.m4])
 m4_include([m4/ac_check_docbook_xslt.m4])
 m4_include([m4/ac_check_docbook_dtd.m4])
+m4_include([m4/ac_check_ipafontdir.m4])
 
 # Checks for programs.
 AC_PROG_CC
@@ -28,17 +36,14 @@ fi
 AC_PROG_XMLLINT
 AC_PROG_TIDY
 
-# Checks for libraries.
-
-# Checks for header files.
-
-# Checks for typedefs, structures, and compiler characteristics.
-
-# Checks for library functions.
+AC_PROG_LYNX
+AC_PROG_FOP
+AC_CHECK_IPAFONTDIR
 
 AC_CONFIG_FILES([Makefile
 		 ctie/Makefile
 		 src/Makefile
+		 src/userconfig.xml
 		 src/appendices/Makefile
 		 src/book/Makefile
 		 src/general/Makefile
@@ -61,7 +66,6 @@ AC_CONFIG_FILES([Makefile
 		 src/kde4/Makefile
 		 src/kde4/add/Makefile
 		 src/kde4/core/Makefile
-		 src/kde4/devel/Makefile
 		 src/kde4/intro/Makefile
 		 src/multimedia/Makefile
 		 src/multimedia/audioutils/Makefile
@@ -104,6 +108,7 @@ AC_CONFIG_FILES([Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile
 		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile
+		 src/stylesheets/lfs-xsl/pdf/Makefile
 		 src/stylesheets/lfs-xsl/xhtml/Makefile
 		 src/template/Makefile
 		 src/x/Makefile

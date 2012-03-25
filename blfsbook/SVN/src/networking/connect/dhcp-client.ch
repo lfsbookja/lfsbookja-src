@@ -58,7 +58,7 @@
 @x
     <title>Configuring DHCP Client</title>
 @y
-    <title>DHCP クライアントの設定</title>
+    <title>&Configuring1;DHCP クライアント&Configuring2;</title>
 @z
 
 @x

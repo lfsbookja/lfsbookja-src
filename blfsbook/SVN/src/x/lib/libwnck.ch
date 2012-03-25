@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libwnck</title>
 @y
-    <title>libwnck の概要</title>
+    <title>&IntroductionTo1;libwnck&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,25 +37,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libwnck-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libwnck-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libwnck-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libwnck-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libwnck-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libwnck-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libwnck-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libwnck-md5sum;</para>
+        <para>&Download; MD5 sum: &libwnck-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libwnck-size;</para>
 @y
-        <para>ダウンロードサイズ: &libwnck-size;</para>
+        <para>&DownloadSize;: &libwnck-size;</para>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">libwnck Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libwnck の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libwnck&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
     <title>Installation of libwnck</title>
 @y
-    <title>libwnck のインストール</title>
+    <title>&InstallationOf1;libwnck&InstallationOf2;</title>
 @z
 
 @x

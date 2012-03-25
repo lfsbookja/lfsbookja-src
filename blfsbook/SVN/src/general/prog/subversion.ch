@@ -86,14 +86,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="sqlite"/>, <xref linkend="apr-util"/>, and
+      <xref linkend="sqlite"/>,
+      <xref linkend="apr-util"/> and
       <xref linkend="neon"/> or
       <ulink url="http://code.google.com/p/serf/">serf</ulink>.
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="sqlite"/>, <xref linkend="apr-util"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="apr-util"/>,
       <xref linkend="neon"/> または
       <ulink url="http://code.google.com/p/serf/">serf</ulink>.
     </para>
@@ -116,7 +118,6 @@
     <para role="optional">
       <xref linkend="python2"/> (required to run the test suite),
       <xref linkend="db"/>,
-      <xref linkend="sqlite"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,
@@ -129,7 +130,6 @@
     <para role="optional">
       <xref linkend="python2"/> (テストスイート実行に必要),
       <xref linkend="db"/>,
-      <xref linkend="sqlite"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,

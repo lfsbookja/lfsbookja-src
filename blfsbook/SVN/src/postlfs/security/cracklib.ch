@@ -116,12 +116,7 @@
       各ユーザーがパスワードを決める際には、自国語のごく普通の単語を選びがちです。
       このことはクラッカーも承知しています。
       <application>CrackLib</application> はそのような不適切なパスワードを受け付けません。
-      プログラムでは、語句リストを辞書情報として生成し利用しています。
-      
-      To accomplish this, the word list(s)
-      for use with <application>CrackLib</application> must be an exhaustive
-      list of words and word-based keystroke combinations likely to be chosen
-      by users of the system as (guessable) passwords.
+      <application>CrackLib</application> にて利用する語句リストは、パスワードとして用いそうな単語ベースでの語句の組み合わせを余すことなく収容するものでなければなりません。
       </para>
 @z
 

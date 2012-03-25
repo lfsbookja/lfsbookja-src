@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libsoup</title>
 @y
-    <title>libsoup の概要</title>
+    <title>&IntroductionTo1;libsoup&IntroductionTo2;</title>
 @z
 
 @x
@@ -75,7 +75,7 @@
 @x
     <bridgehead renderas="sect3">libsoup Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libsoup の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libsoup&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -125,7 +125,7 @@
 @x
     <title>Installation of libsoup</title>
 @y
-    <title>libsoup のインストール</title>
+    <title>&InstallationOf1;libsoup&InstallationOf2;</title>
 @z
 
 @x
@@ -202,7 +202,7 @@
         <seg>/usr/{include/{libsoup-2.4/libsoup,libsoup-gnome-2.4/libsoup},
         share/gtk-doc/html/libsoup-2.4}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libsoup-2.4.{so,a}, libsoup-gnome-2.4.{so,a}</seg>
         <seg>/usr/{include/{libsoup-2.4/libsoup,libsoup-gnome-2.4/libsoup},
         share/gtk-doc/html/libsoup-2.4}</seg>

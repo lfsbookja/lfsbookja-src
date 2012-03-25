@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect3">libpcap Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libpcap の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libpcap&Dependencies2;</bridgehead>
 @z
 
 @x
