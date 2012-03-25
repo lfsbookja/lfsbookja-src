@@ -150,18 +150,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gtk2"/>,
-    <xref linkend="qt4"/>
-    <xref linkend="curl"/>
+    <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library is needed 
+    for PDF support in <application>Okular</application>),
+    <xref linkend="curl"/>,
     <xref linkend="libtiff"/>,
-    <xref linkend="libxml2"/>, and
+    <xref linkend="libxml2"/> and
     <xref linkend="lcms"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk2"/>,
-    <xref linkend="qt4"/>
-    <xref linkend="curl"/>
+    <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library is needed 
+    for PDF support in <application>Okular</application>),
+    <xref linkend="curl"/>,
     <xref linkend="libtiff"/>,
-    <xref linkend="libxml2"/>,
+    <xref linkend="libxml2"/> and
     <xref linkend="lcms"/></para>
 @z
 
@@ -235,10 +237,10 @@
 @z
 
 @x
-    <para><parameter>--disable-static</parameter>: Prevent static libraries
+    <para><option>--disable-static</option>: Prevent static libraries
     being built and installed.</para>
 @y
-    <para><parameter>--disable-static</parameter>: Prevent static libraries
+    <para><option>--disable-static</option>: Prevent static libraries
     being built and installed.</para>
 @z
 
@@ -254,24 +256,26 @@
     <para><option>--disable-poppler-glib</option>,
     <option>--disable-poppler-qt4</option> and
     <option>--disable-gtk-test</option>: These parameters disable
-    building the <application>GLib</application> and <application>qt4</application>
+    building the <application>GLib</application> and <application>Qt4</application>
     wrappers and the <application>GTK+</application> test program.</para>
 @y
     <para><option>--disable-poppler-glib</option>,
     <option>--disable-poppler-qt4</option> and
     <option>--disable-gtk-test</option>: These parameters disable
-    building the <application>GLib</application> and <application>qt4</application>
+    building the <application>GLib</application> and <application>Qt4</application>
     wrappers and the <application>GTK+</application> test program.</para>
 @z
 
 @x
     <para><option>--enable-xpdf-headers</option>: Install old
-    <application>Xpdf</application> headers required by certain programs. These
-    are unsupported by <application>Poppler</application>.</para>
+    <application>Xpdf</application> headers required by certain programs (e.g. by 
+    <application>Okular</application> for PDF support). These are unsupported by 
+    <application>Poppler</application>.</para>
 @y
     <para><option>--enable-xpdf-headers</option>: Install old
-    <application>Xpdf</application> headers required by certain programs. These
-    are unsupported by <application>Poppler</application>.</para>
+    <application>Xpdf</application> headers required by certain programs (e.g. by 
+    <application>Okular</application> for PDF support). These are unsupported by 
+    <application>Poppler</application>.</para>
 @z
 
 @x
@@ -292,18 +296,18 @@
 
 @x
         <seg>pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
-        pdftoppm, pdftops, pdftotext, pdfunite, poppler-glib-demo</seg>
+        pdftoppm, pdftops, pdftotext, pdfunite and poppler-glib-demo</seg>
         <seg>libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
         and libpoppler-qt4.so</seg>
         <seg>/usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
         /usr/share/gtk-doc/html/poppler and /usr/share/poppler</seg>
 @y
         <seg>pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
-        pdftoppm, pdftops, pdftotext, pdfunite, poppler-glib-demo</seg>
+        pdftoppm, pdftops, pdftotext, pdfunite and poppler-glib-demo</seg>
         <seg>libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
-        libpoppler-qt4.so</seg>
+        and libpoppler-qt4.so</seg>
         <seg>/usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
-        /usr/share/gtk-doc/html/poppler, /usr/share/poppler</seg>
+        /usr/share/gtk-doc/html/poppler and /usr/share/poppler</seg>
 @z
 
 @x

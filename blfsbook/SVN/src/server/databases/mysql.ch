@@ -132,11 +132,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/>, 
+    <para role="optional"><xref linkend="tcpwrappers"/> and
     <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/>, 
+    <para role="optional"><xref linkend="tcpwrappers"/>,
     <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
 @z
 

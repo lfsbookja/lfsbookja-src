@@ -59,6 +59,11 @@
       <para>2012/03/25</para>
 @z
 @x
+          <para>[rthomsen] - Modified MySQL instructions to install shared libraries.</para>
+@y
+          <para>[rthomsen] - MySQL にて共有ライブラリをインストールするように変更。</para>
+@z
+@x
           <para>[krejzi] - removed libmikmod 3.1.11.</para>
         </listitem>
         <listitem>
