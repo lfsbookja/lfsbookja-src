@@ -2,7 +2,7 @@ SUBDIRS=appendices book general gnome introduction kde kde4 \
 	networking \
 	multimedia postlfs pst server stylesheets template x xincludes \
 	xsoft
-EXTRA_DIST = general.ch index.ch tidy.ch tidy.sed
+EXTRA_DIST = general.ch index.ch tidy.ch tidy.sed ipam.xml ipag.xml
 BOOKdir = $(top_builddir)/@bookdir@
 srcdir = @srcdir@
 srcs = general.ent index.xml tidy.conf
@@ -91,7 +91,7 @@ $(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
 	$(XMLLINT) --nonet --noent --xinclude --postvalid \
 	  -o $(RENDERTMP)/blfs-full.xml index.xml
 
-@PDF@@IPA@pdf: $(BASEDIR)/$(PDF_OUTPUT)
+@PDF@@IPA@pdf: $(BASEDIR)/$(PDF_OUTPUT) blfs
 @PDF@@IPA@$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/blfs-full.xml
 @PDF@@IPA@	@echo "Generating profiled XML for PDF..."
 @PDF@@IPA@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \

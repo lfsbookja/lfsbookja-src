@@ -87,28 +87,36 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">Optional, but recommended for a GNOME desktop</bridgehead>
     <para role="optional"><xref linkend="dbus-python"/>,
     <xref linkend="gobject-introspection"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="gtk3"/>,
-    <xref linkend="libdaemon"/>,
     <xref linkend="libglade"/>,
-    <xref linkend="python2"/>,
-    <xref linkend="pygtk"/>,
-    <xref linkend="qt"/>, and
+    <xref linkend="python2"/>
+    <!--<xref linkend="pygtk"/>,--></para>
+@y
+    <bridgehead renderas="sect4">&Optional;, but recommended for a GNOME desktop</bridgehead>
+    <para role="optional"><xref linkend="dbus-python"/>,
+    <xref linkend="gobject-introspection"/>,
+    <xref linkend="gtk2"/>,
+    <xref linkend="gtk3"/>,
+    <xref linkend="libglade"/>,
+    <xref linkend="python2"/>
+    <!--<xref linkend="pygtk"/>,--></para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+    <xref linkend="libdaemon"/>,
+    <!-- <xref linkend="qt"/>,--> and
     <xref linkend="qt4"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="dbus-python"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="gtk3"/>,
+    <para role="optional">
     <xref linkend="libdaemon"/>,
-    <xref linkend="libglade"/>,
-    <xref linkend="python2"/>,
-    <xref linkend="pygtk"/>,
-    <xref linkend="qt"/>,
+    <!-- <xref linkend="qt"/>,-->
     <xref linkend="qt4"/></para>
 @z
 
@@ -179,11 +187,37 @@
 @z
 
 @x
-    <para><parameter>--disable-gtk</parameter>: This parameter disables the use
-    of <application>GTK+2</application>.</para>
+    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
+    the use of libdaemon.</para>
 @y
-    <para><parameter>--disable-gtk</parameter>: This parameter disables the use
-    of <application>GTK+2</application>.</para>
+    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
+    the use of libdaemon.</para>
+@z
+
+@x
+    <para><parameter>--disable-mono</parameter>: This parameter disables the
+    <application>Mono</application> bindings.</para>
+@y
+    <para><parameter>--disable-mono</parameter>: This parameter disables the
+    <application>Mono</application> bindings.</para>
+@z
+
+@x
+    <para><parameter>--disable-monodoc</parameter>: This parameter disables
+    documentation for the <application>Mono</application> bindings.</para>
+@y
+    <para><parameter>--disable-monodoc</parameter>: This parameter disables
+    documentation for the <application>Mono</application> bindings.</para>
+@z
+
+@x
+    <para><parameter>--disable-python</parameter>: This parameter disables the
+    scripts that depend on <application>Python</application>.  It also allows
+    a regular (non-destdir) install to complete successfully.</para>
+@y
+    <para><parameter>--disable-python</parameter>: This parameter disables the
+    scripts that depend on <application>Python</application>.  It also allows
+    a regular (non-destdir) install to complete successfully.</para>
 @z
 
 @x
@@ -198,52 +232,12 @@
 
 @x
     <para><parameter>--disable-qt4</parameter>: This parameter disables the
-    building of <application>Qt4Core</application> mainloop integration.</para>
+    building of <application>Qt4Core</application> mainloop integration. Omit
+    this if you have installed <application>Qt4</application>.</para>
 @y
-    <para>
-    <parameter>--disable-qt4</parameter>: This parameter disables the
-    building of <application>Qt4Core</application> mainloop integration.
-    </para>
-@z
-
-@x
-    <para><parameter>--disable-mono</parameter>: This parameter disables the
-    <application>Mono</application> bindings.</para>
-@y
-    <para><parameter>--disable-mono</parameter>: This parameter disables the
-    <application>Mono</application> bindings.</para>
-@z
-
-@x
-    <para><parameter>--disable-monodoc</parameter>: This parameter disables
-    documentation for the <application>Mono</application> bindings.</para>
-@y
-    <para><parameter>--disable-monodoc</parameter>: This parameter disables
-    documentation for the <application>Mono</application> bindings.</para>
-@z
-
-@x
-    <para><parameter>--disable-python</parameter>: This parameter disables the
-    scripts that depends on <application>Python</application>.</para>
-@y
-    <para><parameter>--disable-python</parameter>: This parameter disables the
-    scripts that depends on <application>Python</application>.</para>
-@z
-
-@x
-    <para><parameter>--disable-dbus</parameter>: This parameter disables the use
-    of <application>D-Bus</application>.</para>
-@y
-    <para><parameter>--disable-dbus</parameter>: This parameter disables the use
-    of <application>D-Bus</application>.</para>
-@z
-
-@x
-    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
-    the use of libdaemon.</para>
-@y
-    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
-    the use of libdaemon.</para>
+    <para><parameter>--disable-qt4</parameter>: This parameter disables the
+    building of <application>Qt4Core</application> mainloop integration. Omit
+    this if you have installed <application>Qt4</application>.</para>
 @z
 
 @x
@@ -260,6 +254,26 @@
 @y
     <para><parameter>--with-distro=lfs</parameter>: This parameter specifies the
     distribution to target.</para>
+@z
+
+@x
+    <para><option>--disable-dbus</option>: This parameter disables the use
+    of <application>D-Bus</application>. Do not use this option if you intend
+    to build <xref linkend="gnome-disk-utility"/>.</para>
+@y
+    <para><option>--disable-dbus</option>: This parameter disables the use
+    of <application>D-Bus</application>. Do not use this option if you intend
+    to build <xref linkend="gnome-disk-utility"/>.</para>
+@z
+
+@x
+    <para><option>--disable-gtk</option>: This parameter disables the use
+    of <application>GTK+2</application>. Do not use this option if you intend
+    to build <xref linkend="gnome-disk-utility"/>.</para>
+@y
+    <para><option>--disable-gtk</option>: This parameter disables the use
+    of <application>GTK+2</application>. Do not use this option if you intend
+    to build <xref linkend="gnome-disk-utility"/>.</para>
 @z
 
 @x
@@ -308,10 +322,10 @@
         avahi-publish, avahi-publish-address, avahi-publish-service,
         avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
         avahi-set-host-name, bshell, bssh, and bvnc</seg>
-        <seg>libavahi-client.{so,a}, libavahi-common.{so,a},
-        libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a},
-        libavahi-ui-gtk3.{so,a}, libavahi-ui.{so,a}, libdns_sd.{so,a}, and
-        libhowl.{so,a}</seg>
+        <seg>libavahi-client.so, libavahi-common.so,
+        libavahi-core.so, libavahi-glib.so, libavahi-gobject.so,
+        libavahi-ui-gtk3.so,, libavahi-ui.so, libdns_sd.so, and
+        libhowl.so,</seg>
         <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
         avahi-compat-howl/{corby,discovery,rendezvous,salt},
         avahi-compat-libdns_sd,avahi-core,avahi-glib,avahi-gobject,avahi-ui},
@@ -322,11 +336,11 @@
         avahi-daemon, avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
         avahi-publish, avahi-publish-address, avahi-publish-service,
         avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
-        avahi-set-host-name, bshell, bssh, bvnc</seg>
-        <seg>libavahi-client.{so,a}, libavahi-common.{so,a},
-        libavahi-core.{so,a}, libavahi-glib.{so,a}, libavahi-gobject.{so,a},
-        libavahi-ui-gtk3.{so,a}, libavahi-ui.{so,a}, libdns_sd.{so,a},
-        libhowl.{so,a}</seg>
+        avahi-set-host-name, bshell, bssh, and bvnc</seg>
+        <seg>libavahi-client.so, libavahi-common.so,
+        libavahi-core.so, libavahi-glib.so, libavahi-gobject.so,
+        libavahi-ui-gtk3.so,, libavahi-ui.so, libdns_sd.so, and
+        libhowl.so,</seg>
         <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
         avahi-compat-howl/{corby,discovery,rendezvous,salt},
         avahi-compat-libdns_sd,avahi-core,avahi-glib,avahi-gobject,avahi-ui},

@@ -202,14 +202,14 @@
 
 @x
         <seg>gdu-format-tool, gdu-notification-daemon, and palimpsest</seg>
-        <seg>libgdu-gtk.{so,a}, libgdu.{so,a}, and libnautilus-gdu.{so,a}</seg>
+        <seg>libgdu-gtk.so, libgdu.so, and libnautilus-gdu.so</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-disk-utility/gdu-gtk,
         lib/gnome-disk-utility,share/{gnome/help/palimpsest/{C/figures,
         cs/figures,de/figures,el/figures,es/figures,pl/figures,pt_BR/figures,
         ro/figures,sl/figures,sv/figures,zh_CN/figures},omf/palimpsest}}</seg>
 @y
         <seg>gdu-format-tool, gdu-notification-daemon, palimpsest</seg>
-        <seg>libgdu-gtk.{so,a}, libgdu.{so,a}, libnautilus-gdu.{so,a}</seg>
+        <seg>libgdu-gtk.so, libgdu.so, libnautilus-gdu.so</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-disk-utility/gdu-gtk,
         lib/gnome-disk-utility,share/{gnome/help/palimpsest/{C/figures,
         cs/figures,de/figures,el/figures,es/figures,pl/figures,pt_BR/figures,

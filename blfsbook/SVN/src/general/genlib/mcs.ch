@@ -100,12 +100,12 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="GConf"/> and
-    <xref linkend="kdelibs"/></para>
+    <para role="optional"><xref linkend="GConf"/> 
+    <!-- <xref linkend="kdelibs"/> --></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="GConf"/>,
-    <xref linkend="kdelibs"/></para>
+    <para role="optional"><xref linkend="GConf"/> 
+    <!-- <xref linkend="kdelibs"/> --></para>
 @z
 
 @x
@@ -149,34 +149,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--with-qt-path=/usr/share/qt</option>: If you have
-    <xref linkend="kdelibs"/> installed, you must pass
-    additional parameters to the <command>configure</command> script to
-    identify the location of Qt and, possibly, KDE libraries and interface
-    headers.</para>
-@y
-    <para><option>--with-qt-path=/usr/share/qt</option>:
-    <xref linkend="kdelibs"/> をインストールしている場合は <command>configure</command> スクリプトに対して、Qt ライブラリがどこにあるか、また KDE ライブラリやインターフェースヘッダーがどこにあるかを指定する必要があります。
-    </para>
-@z
-
-@x
-    <para><option>--disable-kconfig</option>: If <filename>configure</filename>
-    finds <filename class="libraryfile">libkdecore</filename> from
-    <application>kdelibs</application>, it does not test to check it is indeed
-    the <application>kde3</application> version and will try to use it (and
-    fail if it is the <application>kde4</application> version). This switch will
-    prevent that.</para>
-@y
-    <para><option>--disable-kconfig</option>:
-    <filename>configure</filename> が <application>kdelibs</application> に含まれる <filename
-    class="libraryfile">libkdecore</filename> を検出した際には、<application>kde3</application> のものかどうかまではチェックされずに処理されます。
-    (<application>kde4</application> ものであった場合には処理に失敗します。)
-    そこで本スイッチにより、処理に失敗しないようにします。
-    </para>
 @z
 
 @x

@@ -142,18 +142,6 @@
 @z
 
 @x
-    <note><para>If you have both <xref linkend='qt'/> and <xref linkend='qt4'/>
-    installed, be sure to set the environment variable QTDIR to point to the
-    <application>Qt4</application> top level directory if you add the
-    <option>--with-doxywizard</option> option.</para></note>
-@y
-    <note><para>If you have both <xref linkend='qt'/> and <xref linkend='qt4'/>
-    installed, be sure to set the environment variable QTDIR to point to the
-    <application>Qt4</application> top level directory if you add the
-    <option>--with-doxywizard</option> option.</para></note>
-@z
-
-@x
     <para>Install <application>Doxygen</application> by running the following
     commands:</para>
 @y

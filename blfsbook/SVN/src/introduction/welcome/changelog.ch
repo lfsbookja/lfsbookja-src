@@ -81,20 +81,17 @@
       <para>2012/03/24</para>
 @z
 @x
-	<listitem>
           <para>[rthomsen] - Added information about further KDE4 packages.</para>
-	</listitem>
+   </listitem>
         <listitem>
           <para>[rthomsen] - Removed kdesdk, kdewebdev, kdevplatform and kdevelop.</para>
-	</listitem>
+   </listitem>
         <listitem>
           <para>[rthomsen] - Removed kdetoys, kdegames, kdeedu and kdeaccessibility.</para>
-        </listitem>	
+        </listitem>  
          <listitem>
           <para>[rthomsen] - Added instructions for starting KDE4.</para>
-        </listitem>
 @y
-	<listitem>
           <para>[rthomsen] - KDE4 のその他のパッケージの情報を追加。</para>
 	</listitem>
         <listitem>
@@ -105,7 +102,6 @@
         </listitem>	
          <listitem>
           <para>[rthomsen] - KDE4 の起動方法の説明を追加。</para>
-        </listitem>
 @z
 
 @x

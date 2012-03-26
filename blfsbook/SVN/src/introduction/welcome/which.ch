@@ -139,13 +139,13 @@
   <para>The next parts of the book principally deal with desktop systems.  This
   portion of the book starts with a part talking about <xref linkend="x"/>. This
   part also deals with some generic X-based libraries (<xref linkend="x-lib"/>).
-  After this, <xref linkend="kde"/> and <xref linkend="gnome"/> are given their
+  After this, <xref linkend="kde4"/> and <xref linkend="gnome"/> are given their
   own parts which are followed by one on <xref linkend="xsoft"/>.</para>
 @y
   <para>The next parts of the book principally deal with desktop systems.  This
   portion of the book starts with a part talking about <xref linkend="x"/>. This
   part also deals with some generic X-based libraries (<xref linkend="x-lib"/>).
-  After this, <xref linkend="kde"/> and <xref linkend="gnome"/> are given their
+  After this, <xref linkend="kde4"/> and <xref linkend="gnome"/> are given their
   own parts which are followed by one on <xref linkend="xsoft"/>.</para>
 @z
 
