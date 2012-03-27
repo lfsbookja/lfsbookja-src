@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -28,24 +28,22 @@
 @x
     <title>Installation of Glibc</title>
 @y
-    <title>Glibc のインストール</title>
+    <title>&InstallationOf1;Glibc&InstallationOf2;</title>
 @z
 
 @x
-    <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
+     <para>Address a header check that fails due to an incomplete build
+     environment at this point:</para>
 @y
-    <para>
-    Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
-    </para>
+     <para>
+     この時点での構築環境が不十分であるために処理に失敗することから、ヘッダーチェックを修正します。
+     </para>
 @z
 
 @x
-    <para>Also address a header check that fails due to an incomplete build 
-    environment at this point:</para>
+    <para>Fix a path that is hardcoded:</para>
 @y
-    <para>
-    またこの時点での構築環境が不十分であるために処理に失敗することから、ヘッダーチェックを修正します。
-    </para>
+    <para>ハードコーディングされているパスを修正します。</para>
 @z
 
 @x
@@ -89,7 +87,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
 @z
 
 @x
@@ -173,6 +171,17 @@
           </para>
 @z
 
+@x libc_cv_ctors_header=yes
+          <para>Simlarly, we pass libc_cv_ctors_header=yes through to the
+          <command>configure</command> script so that the test is skipped and
+          gcc constructor support is configured.</para>
+@y
+          <para>
+          さらに <command>configure</command> スクリプトに対して libc_cv_ctors_header=yes も指示します。
+          これによりテストがスキップされ gcc コンストラクターが設定されます。
+          </para>
+@z
+
 @x
     <para>During this stage the following warning might appear:</para>
 @y
@@ -195,7 +204,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -230,7 +239,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -238,6 +247,6 @@
     <xref linkend="contents-glibc" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-glibc" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-glibc" role=""/>&Details2;
     </para>
 @z

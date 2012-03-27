@@ -8,16 +8,16 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version "SVN-20120322">
-<!ENTITY releasedate "Mar 22, 2012">
+<!ENTITY version "SVN-20120326">
+<!ENTITY releasedate "Mar 26, 2012">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version "SVN-20120322">
-<!ENTITY releasedate "2012年3月22日">
-<!ENTITY jversion "20120323">
+<!ENTITY version "SVN-20120326">
+<!ENTITY releasedate "2012年3月26日">
+<!ENTITY jversion "20120327">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
@@ -55,11 +55,18 @@
 <!ENTITY InstallThePackage    "パッケージをインストールします。">
 <!ENTITY MeaningOfConfigure1  "">
 <!ENTITY MeaningOfConfigure2  " オプションの意味">
+<!ENTITY Configuring1         "">
+<!ENTITY Configuring2         " の設定">
 <!ENTITY ContentsOf1          "">
 <!ENTITY ContentsOf2          " の構成">
 <!ENTITY InstalledProgram     "インストールプログラム">
 <!ENTITY InstalledLibrary     "インストールライブラリ">
 <!ENTITY InstalledDirectory   "インストールディレクトリ">
+<!--
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
+-->
 <!ENTITY ShortDescriptions    "概略説明">
 <!ENTITY Details1             "本パッケージの詳細は ">
 <!ENTITY Details2             " を参照してください。">

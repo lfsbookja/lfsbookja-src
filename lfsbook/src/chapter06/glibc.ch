@@ -28,7 +28,7 @@
 @x
     <title>Installation of Glibc</title>
 @y
-    <title>Glibc のインストール</title>
+    <title>&InstallationOf1;Glibc&InstallationOf2;</title>
 @z
 
 @x
@@ -111,29 +111,29 @@
     </para>
 @z
 
-@x
-    <para>Fix a couple of bugs in Glibc that can cause crashes and core dumps:</para>
-@y
-    <para>
-    クラッシュしコアダンプを吐くバグを修正します。
-    </para>
-@z
-
-@x
-    <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
-@y
-    <para>
-    Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
-    </para>
-@z
-
-@x
-    <para>Fix a stack imbalance that occurs under some conditions:</para>
-@y
-    <para>
-    特定の条件のもとでスタックが不安定になる現象を、以下により解消します。
-    </para>
-@z
+% @x
+%     <para>Fix a couple of bugs in Glibc that can cause crashes and core dumps:</para>
+% @y
+%     <para>
+%     クラッシュしコアダンプを吐くバグを修正します。
+%     </para>
+% @z
+% 
+% @x
+%     <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
+% @y
+%     <para>
+%     Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
+%     </para>
+% @z
+% 
+% @x
+%     <para>Fix a stack imbalance that occurs under some conditions:</para>
+% @y
+%     <para>
+%     特定の条件のもとでスタックが不安定になる現象を、以下により解消します。
+%     </para>
+% @z
 
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source
@@ -164,7 +164,7 @@
 @x
       <title>The meaning of the new configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
 @z
 
 @x
@@ -183,7 +183,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -311,7 +311,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -390,7 +390,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
     <title>Configuring Glibc</title>
 @y
-    <title>Glibc の設定</title>
+    <title>&Configuring1;Glibc&Configuring2;</title>
 @z
 
 @x
@@ -483,7 +483,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
     <title>Configuring the Dynamic Loader</title>
 @y
-    <title>ダイナミックローダーの設定</title>
+    <title>&Configuring1;ダイナミックローダー&Configuring2;</title>
 @z
 
 @x
@@ -541,7 +541,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
     <title>Contents of Glibc</title>
 @y
-    <title>Glibc の構成</title>
+    <title>&ContentsOf1;Glibc&ContentsOf2;</title>
 @z
 
 @x
@@ -549,9 +549,9 @@ minor timing issues が何を意味するのか不明であった。
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -601,7 +601,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x catchsegv

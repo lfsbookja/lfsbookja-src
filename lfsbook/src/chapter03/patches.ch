@@ -126,62 +126,6 @@
 @z
 
 @x
-      <term>Glibc Bug Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc Bug Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Glibc Bug Sort Relocatable Objects Patch - <token>&glibc-sort-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-sort-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-sort-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc Bug Sort Relocatable Objects Patch - <token>&glibc-sort-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&glibc-sort-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-sort-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Glibc GCC Build Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc GCC Build Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Glibc GCC CPUID Patch - <token>&glibc-cpuid-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-cpuid-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-cpuid-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc GCC CPUID Patch - <token>&glibc-cpuid-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&glibc-cpuid-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-cpuid-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>

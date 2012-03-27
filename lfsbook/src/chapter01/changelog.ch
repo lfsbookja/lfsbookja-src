@@ -48,6 +48,60 @@
 @z
 
 @x
+      <para>2012-03-26</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Man-Pages-3.38. Fixes
+           <ulink url="&lfs-ticket-root;3047">#3047</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to E2fsprogs-1.42.1. Fixes
+           <ulink url="&lfs-ticket-root;3046">#3046</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Glibc-2.15. Fixes
+           <ulink url="&lfs-ticket-root;3045">#3045</ulink>. Thanks to Andy
+           Benton for the patch.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to GCC-4.7.0. Fixes
+           <ulink url="&lfs-ticket-root;3044">#3044</ulink>. Thanks to Andy
+           Benton for the patch.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to IPRoute2-3.3.0. Fixes
+           <ulink url="&lfs-ticket-root;3043">#3043</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-03-26</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Man-Pages-3.38 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3047">#3047</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - E2fsprogs-1.42.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3046">#3046</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Glibc-2.15 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3045">#3045</ulink> を Fix に。
+           パッチ提供の Andy Benton に感謝。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - GCC-4.7.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3044">#3044</ulink> を Fix に。
+           パッチ提供の Andy Benton に感謝。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - IPRoute2-3.3.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3043">#3043</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-22</para>
       <itemizedlist>
          <listitem>

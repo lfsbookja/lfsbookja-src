@@ -25,7 +25,7 @@
 @x
     <title>Installation of IPRoute2</title>
 @y
-    <title>IPRoute2 のインストール</title>
+    <title>&InstallationOf1;IPRoute2&InstallationOf2;</title>
 @z
 
 @x
@@ -47,18 +47,9 @@
 @z
 
 @x
-    <para>Remove references to some Libnl headers that are not required by
-    IPRoute2:</para>
-@y
-    <para>
-    IPRoute2 にとって必要のない、Libnl ヘッダーの参照箇所を取り除きます。
-    </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -99,21 +90,21 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of IPRoute2</title>
 @y
-    <title>IPRoute2 の構成</title>
+    <title>&ContentsOf1;IPRoute2&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -133,7 +124,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x ctstat
