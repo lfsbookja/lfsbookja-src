@@ -48,6 +48,33 @@
 @z
 
 @x
+      <para>2012-03-27</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Add a patch to fix building of Binutils with the
+           -O3 compiler flag.  Thanks to Pierre Labastie for the report.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Add the GCC fix patch back to Glibc instructions
+           to fix a build issue on 32-bit hosts.  Thanks to Pierre Labastie for
+           the report.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-03-27</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - -O3 コンパイラーフラグの指定時での Binutils のビルドを行えるようパッチを追加。
+           報告をあげてくれた Pierre Labastie に感謝。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Glibc 手順にて 32 ビットホストにおいてのビルド不備を修正するために GCC に関するパッチを追加。
+           報告をあげてくれた Pierre Labastie に感謝。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-26</para>
       <itemizedlist>
          <listitem>

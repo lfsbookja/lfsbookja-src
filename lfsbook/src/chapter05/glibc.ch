@@ -56,6 +56,12 @@
 @z
 
 @x
+  <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
+@y
+  <para>Glibc が GCC-&gcc-version; ではビルドできなくなるバグを修正します。</para>
+@z
+
+@x
     <para>Because Glibc no longer supports i386, its developers say to use the
     compiler flag <parameter>-march=i486</parameter> when building it for x86
     machines. There are several ways to accomplish that, but testing shows that

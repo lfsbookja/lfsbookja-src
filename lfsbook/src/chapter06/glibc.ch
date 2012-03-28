@@ -111,29 +111,11 @@
     </para>
 @z
 
-% @x
-%     <para>Fix a couple of bugs in Glibc that can cause crashes and core dumps:</para>
-% @y
-%     <para>
-%     クラッシュしコアダンプを吐くバグを修正します。
-%     </para>
-% @z
-% 
-% @x
-%     <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
-% @y
-%     <para>
-%     Glibc が GCC-&gcc-version; に対してビルドできなくなるバグを修正します。
-%     </para>
-% @z
-% 
-% @x
-%     <para>Fix a stack imbalance that occurs under some conditions:</para>
-% @y
-%     <para>
-%     特定の条件のもとでスタックが不安定になる現象を、以下により解消します。
-%     </para>
-% @z
+@x
+  <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
+@y
+  <para>Glibc が GCC-&gcc-version; ではビルドできなくなるバグを修正します。</para>
+@z
 
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source
@@ -158,7 +140,7 @@
 @x
     <para>Prepare Glibc for compilation:</para>
 @y
-    <para>Glibc をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Glibc&PreparePackage2;</para>
 @z
 
 @x

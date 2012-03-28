@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -94,15 +94,21 @@
 @z
 
 @x
+    <para>Apply a patch to prevent a build failure when using compiler optimizations:</para>
+@y
+    <para>コンパイラーの最適化を行った場合にビルドに失敗するため、これを修正するパッチを適用します。</para>
+@z
+
+@x
     <para>Now prepare Binutils for compilation:</para>
 @y
-    <para>Binutils をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Binutils&PreparePackage2;:</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;</title>
 @z
 
 @x
@@ -152,7 +158,7 @@
 @x
     <para>Continue with compiling the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -181,7 +187,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -189,6 +195,6 @@
     <xref linkend="contents-binutils" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-binutils" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-binutils" role=""/>&Details2;
     </para>
 @z

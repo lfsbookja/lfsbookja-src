@@ -25,7 +25,7 @@
 @x
     <title>Installation of Binutils</title>
 @y
-    <title>Binutils のインストール</title>
+    <title>&InstallationOf1;Binutils&InstallationOf2;</title>
 @z
 
 @x
@@ -74,6 +74,12 @@
 @z
 
 @x
+    <para>Apply a patch to prevent a build failure when using compiler optimizations:</para>
+@y
+    <para>コンパイラーの最適化を行った場合にビルドに失敗するため、これを修正するパッチを適用します。</para>
+@z
+
+@x
     <para>The Binutils documentation recommends building Binutils outside of the
     source directory in a dedicated build directory:</para>
 @y
@@ -85,13 +91,13 @@
 @x
     <para>Prepare Binutils for compilation:</para>
 @y
-    <para>Binutils をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Binutils&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -144,7 +150,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -160,7 +166,7 @@
 @x
     <title>Contents of Binutils</title>
 @y
-    <title>Binutils の構成</title>
+    <title>&ContentsOf1;Binutils&ContentsOf2;</title>
 @z
 
 @x
@@ -168,9 +174,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -188,7 +194,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x addr2line
