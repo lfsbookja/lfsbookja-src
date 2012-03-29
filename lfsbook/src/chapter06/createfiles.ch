@@ -156,17 +156,25 @@
 @z
 
 @x
-  <para>The <filename>/var/run/utmp</filename> file records the users
-  that are currently logged in. The <filename>/var/log/wtmp</filename>
-  file records all logins and logouts. The
-  <filename>/var/log/lastlog</filename> file records when
-  each user last logged in. The <filename>/var/log/btmp</filename> file
-  records the bad login attempts.</para>
+  <para>The <filename>/var/log/wtmp</filename> file records all logins and
+  logouts. The <filename>/var/log/lastlog</filename> file records when each
+  user last logged in. The <filename>/var/log/btmp</filename> file records the
+  bad login attempts.</para>
 @y
   <para>
-  <filename>/var/run/utmp</filename> ファイルは現在ログインしているユーザーの情報を保持します。
   <filename>/var/log/wtmp</filename> ファイルはすべてのログイン、ログアウトの情報を保持します。
   <filename>/var/log/lastlog</filename> ファイルは各ユーザーが最後にログインした情報を保持します。
   <filename>/var/log/btmp</filename> ファイルは不正なログイン情報を保持します。
   </para>
+@z
+
+@x
+  <note><para>The <filename>/run/utmp</filename> file records the users that
+  are currently logged in.  This file is created dynamically in the boot
+  scripts.</para></note>
+@y
+  <note><para>
+  <filename>/run/utmp</filename> ファイルは現在ログインしているユーザーの情報を保持します。
+  このファイルはブートスクリプトが動的に生成します。
+  </para></note>
 @z

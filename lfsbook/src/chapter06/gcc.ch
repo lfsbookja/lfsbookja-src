@@ -25,7 +25,7 @@
 @x
     <title>Installation of GCC</title>
 @y
-    <title>GCC のインストール</title>
+    <title>&InstallationOf1;GCC&InstallationOf2;</title>
 @z
 
 @x
@@ -77,7 +77,7 @@
 @x
     <para>Prepare GCC for compilation:</para>
 @y
-    <para>GCC をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;GCC&PreparePackage2;</para>
 @z
 
 @x
@@ -94,7 +94,7 @@
 @x
       <title>The meaning of the new configure option:</title>
 @y
-      <title>Configure オプションの意味:</title>
+      <title>&MeaningOfConfigure1;Configure&MeaningOfConfigure2;:</title>
 @z
 
 @x --with-system-zlib
@@ -109,7 +109,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -189,7 +189,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -279,9 +279,15 @@
 @z
 
 @x
+    <para>Finally, move a misplced file:</para>
+@y
+    <para>最後に誤ったディレクトリにあるファイルを移動します。</para>
+@z
+
+@x
     <title>Contents of GCC</title>
 @y
-    <title>GCC の構成</title>
+    <title>&ContentsOf1;GCC&ContentsOf2;</title>
 @z
 
 @x
@@ -289,9 +295,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -313,7 +319,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x c++
