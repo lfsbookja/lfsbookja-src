@@ -62,7 +62,8 @@
           Changeset
           <ulink url="&lfs-rev-root;9793">9793</ulink>,
           <ulink url="&lfs-rev-root;9794">9794</ulink>,
-          <ulink url="&lfs-rev-root;9795">9795</ulink>
+          <ulink url="&lfs-rev-root;9795">9795</ulink>,
+          <ulink url="&lfs-rev-root;9796">9796</ulink>
           対応。
           </para>
         </listitem>

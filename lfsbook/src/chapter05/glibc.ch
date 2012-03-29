@@ -47,18 +47,18 @@
 @z
 
 @x
+  <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
+@y
+  <para>Glibc が GCC-&gcc-version; ではビルドできなくなるバグを修正します。</para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
     <para>
     Glibc のドキュメントでは、ソースディレクトリ以外の専用のビルドディレクトリを作成することが推奨されています。
     </para>
-@z
-
-@x
-  <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
-@y
-  <para>Glibc が GCC-&gcc-version; ではビルドできなくなるバグを修正します。</para>
 @z
 
 @x
