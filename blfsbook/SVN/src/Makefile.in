@@ -623,7 +623,7 @@ $(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
 	$(XMLLINT) --nonet --noent --xinclude --postvalid \
 	  -o $(RENDERTMP)/blfs-full.xml index.xml
 
-@PDF@@IPA@pdf: $(BASEDIR)/$(PDF_OUTPUT) html
+@PDF@@IPA@pdf: $(BASEDIR)/$(PDF_OUTPUT) blfs
 @PDF@@IPA@$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/blfs-full.xml
 @PDF@@IPA@	@echo "Generating profiled XML for PDF..."
 @PDF@@IPA@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \

@@ -16,6 +16,7 @@ CHANGE_FILES = \
 	libpng.ch \
 	librsvg.ch \
 	libtiff.ch \
+	openjpeg.ch \
 	pixman.ch \
 	poppler.ch \
 	poppler-014.ch \
@@ -57,6 +58,7 @@ libmng.xml:      $(BOOKdir)/$@ $(srcdir)/libmng.ch
 libpng.xml:      $(BOOKdir)/$@ $(srcdir)/libpng.ch
 librsvg.xml:     $(BOOKdir)/$@ $(srcdir)/librsvg.ch
 libtiff.xml:     $(BOOKdir)/$@ $(srcdir)/libtiff.ch
+openjpeg.xml:    $(BOOKdir)/$@ $(srcdir)/openjpeg.ch
 pixman.xml:      $(BOOKdir)/$@ $(srcdir)/pixman.ch
 poppler.xml:     $(BOOKdir)/$@ $(srcdir)/poppler.ch
 poppler-014.xml: $(BOOKdir)/$@ $(srcdir)/poppler-014.ch

@@ -112,17 +112,17 @@
 @z
 
 @x
-    <title>Installation of raptor</title>
+    <title>Installation of Raptor</title>
 @y
-    <title>&InstallationOf1;raptor&InstallationOf2;</title>
+    <title>&InstallationOf1;Raptor&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>raptor</application> by running the following
+    <para>Install <application>Raptor</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>raptor</application> をビルドします。
+    以下のコマンドを実行して <application>Raptor</application> をビルドします。
     </para>
 @z
 
@@ -141,14 +141,9 @@
 @z
 
 @x
-    <para><option>patch -Np1 -i ../raptor-&raptor-version;-curl.patch</option>: This 
-      patch fixes compiling with <application>cURL</application>.</para>
     <para><option>--disable-static</option>: This option prevents compiling the 
     static archive versions of the libraries.</para>
 @y
-    <para><option>patch -Np1 -i ../raptor-&raptor-version;-curl.patch</option>:
-      このパッチは <application>cURL</application> とともにコンパイルするための修正を行います。
-    </para>
     <para><option>--disable-static</option>:
     このオプションはスタティックライブラリをビルドしないようにします。
     </para>
@@ -163,7 +158,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -171,13 +166,13 @@
 @z
 
 @x
-        <seg>rapper, raptor-config</seg>
-        <seg>libraptor.so</seg>
-        <seg>None</seg>
+        <seg>rapper</seg>
+        <seg>libraptor2.so</seg>
+	<seg>/usr/include/raptor2 and /usr/share/gtk-doc/html/raptor2</seg>
 @y
-        <seg>rapper, raptor-config</seg>
-        <seg>libraptor.so</seg>
-        <seg>&None;</seg>
+        <seg>rapper</seg>
+        <seg>libraptor2.so</seg>
+	<seg>/usr/include/raptor2, /usr/share/gtk-doc/html/raptor2</seg>
 @z
 
 @x
@@ -191,13 +186,5 @@
 @y
           <para>
           RDF 解析およびシリアライズを行うユーティリティ。
-          </para>
-@z
-
-@x raptor-config
-          <para>is a utility for retrieving the installation options of raptor</para>
-@y
-          <para>
-          raptor のインストールオプションを検出するユーティリティー。
           </para>
 @z

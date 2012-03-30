@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>This package provides the GEneric Graphics Library, which is a
-    graph based image processing format.</para>
+      This package provides the GEneric Graphics Library, which is a graph based
+      image processing format.
 @y
-    <para>
-    本パッケージは汎用グラフィックライブラリ (GEneric Graphics Library) を提供します。
-    </para>
+      本パッケージは汎用グラフィックライブラリ (GEneric Graphics Library) を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gegl-download-http;"/></para>
+          Download (HTTP): <ulink url="&gegl-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gegl-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gegl-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gegl-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gegl-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gegl-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gegl-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gegl-md5sum;</para>
+          Download MD5 sum: &gegl-md5sum;
 @y
-        <para>&Download; MD5 sum: &gegl-md5sum;</para>
+          &Download; MD5 sum: &gegl-md5sum;
 @z
 
 @x
-        <para>Download size: &gegl-size;</para>
+          Download size: &gegl-size;
 @y
-        <para>&DownloadSize;: &gegl-size;</para>
+          &DownloadSize;: &gegl-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gegl-buildsize;</para>
+          Estimated disk space required: &gegl-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gegl-buildsize;</para>
+          &Estimateddiskspacerequired;: &gegl-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gegl-time;</para>
+          Estimated build time: &gegl-time;
 @y
-        <para>&Estimatedbuildtime;: &gegl-time;</para>
+          &Estimatedbuildtime;: &gegl-time;
 @z
 
 @x
@@ -78,76 +76,76 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <!-- babl pulls in pkgconfig and thus glib2 -->
-    <para role="required"><xref linkend="babl"/></para>
+    <para role="required">
+      <xref linkend="babl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <!-- babl pulls in pkgconfig and thus glib2 -->
-    <para role="required"><xref linkend="babl"/></para>
+    <para role="required">
+      <xref linkend="babl"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
-    <xref linkend="cairo"/>,
-    <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
-    <xref linkend="exiv2"/>,
-    <xref linkend="ffmpeg"/>,
-    <xref linkend="gdk-pixbuf"/>,
-    <xref linkend="graphviz"/>,
-    <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
-    <xref linkend="libjpeg"/>,
-    <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
-    <xref linkend="libpng"/>,
-    <xref linkend="librsvg"/>,
-    <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
-    <ulink url="http://www.lua.org/">Lua</ulink>,
-    <ulink url="http://www.openexr.org">OpenEXR</ulink>,
-    <xref linkend="pango"/>,
-    <xref linkend="python2"/>,
-    <xref linkend="ruby"/>,
-    <xref linkend="sdl"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="vala"/>,
-    <xref linkend="w3m"/>
-    and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
+    <para role="optional">
+      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
+      <xref linkend="cairo"/>,
+      <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
+      <xref linkend="exiv2"/>,
+      <xref linkend="ffmpeg"/>,
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="graphviz"/>,
+      <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
+      <xref linkend="libjpeg"/>,
+      <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
+      <xref linkend="libpng"/>,
+      <xref linkend="librsvg"/>,
+      <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
+      <ulink url="http://www.lua.org/">Lua</ulink>,
+      <ulink url="http://www.openexr.org">OpenEXR</ulink>,
+      <xref linkend="pango"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="ruby"/>,
+      <xref linkend="sdl"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>,
+      <xref linkend="w3m"/> and
+      <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
-    <xref linkend="cairo"/>,
-    <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
-    <xref linkend="exiv2"/>,
-    <xref linkend="ffmpeg"/>,
-    <xref linkend="gdk-pixbuf"/>,
-    <xref linkend="graphviz"/>,
-    <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
-    <xref linkend="libjpeg"/>,
-    <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
-    <xref linkend="libpng"/>,
-    <xref linkend="librsvg"/>,
-    <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
-    <ulink url="http://www.lua.org/">Lua</ulink>,
-    <ulink url="http://www.openexr.org">OpenEXR</ulink>,
-    <xref linkend="pango"/>,
-    <xref linkend="python2"/>,
-    <xref linkend="ruby"/>,
-    <xref linkend="sdl"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="vala"/>,
-    <xref linkend="w3m"/>
-    and <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
+    <para role="optional">
+      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
+      <xref linkend="cairo"/>,
+      <ulink url="http://www.gnu.org/software/enscript/">enscript</ulink>,
+      <xref linkend="exiv2"/>,
+      <xref linkend="ffmpeg"/>,
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="graphviz"/>,
+      <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
+      <xref linkend="libjpeg"/>,
+      <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
+      <xref linkend="libpng"/>,
+      <xref linkend="librsvg"/>,
+      <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
+      <ulink url="http://www.lua.org/">Lua</ulink>,
+      <ulink url="http://www.openexr.org">OpenEXR</ulink>,
+      <xref linkend="pango"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="ruby"/>,
+      <xref linkend="sdl"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>,
+      <xref linkend="w3m"/>,
+      <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/gegl'/></para>
+      User Notes: <ulink url='&blfs-wiki;/gegl'/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/gegl'/></para>
+      &UserNotes;: <ulink url='&blfs-wiki;/gegl'/>
 @z
 
 @x
@@ -157,28 +155,21 @@
 @z
 
 @x
-    <para>Install <application>gegl</application> by running the following
-    commands:</para>
+      Install <application>gegl</application> by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gegl</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>gegl</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -188,18 +179,35 @@
 @z
 
 @x
-    <para><parameter>install -v -m644 docs/*.{css,html} /usr/share/gtk-doc/html/gegl
-    </parameter>:
-    The command '<command>make install</command>' only installs
-    <filename>operations.html</filename>, omitting the stylesheet and
-    <filename>index.html</filename>.  This extra command ensures all the links
-    in the html work.</para>
+      <command>echo 'Babl-0.1' > gegl/gegl-0.1.deps</command>: This command
+      fixes compiling <application>Gegl</application> if you have
+      <xref linkend="gobject-introspection"/> installed.
 @y
-    <para>
-    <parameter>install -v -m644 docs/*.{css,html} /usr/share/gtk-doc/html/gegl
-    </parameter>:
-    '<command>make install</command>' を実行しただけでは <filename>operations.html</filename> しかインストールされず、スタイルシートや <filename>index.html</filename> がインストールされません。このコマンドを追加することで HTML 内のリンクを正しく作動するようにします。
-    </para>
+      <command>echo 'Babl-0.1' > gegl/gegl-0.1.deps</command>: This command
+      fixes compiling <application>Gegl</application> if you have
+      <xref linkend="gobject-introspection"/> installed.
+@z
+
+@x
+      <parameter>install -v -m644 docs/*.{css,html}
+      /usr/share/gtk-doc/html/gegl</parameter>: The command '<command>make
+      install</command>' only installs <filename>operations.html</filename>,
+      omitting the stylesheet and <filename>index.html</filename>. This extra
+      command ensures all the links in the html work.
+@y
+      <parameter>install -v -m644 docs/*.{css,html}
+      /usr/share/gtk-doc/html/gegl</parameter>:
+      '<command>make install</command>' を実行しただけでは <filename>operations.html</filename> しかインストールされず、スタイルシートや <filename>index.html</filename> がインストールされません。このコマンドを追加することで HTML 内のリンクを正しく作動するようにします。
+@z
+
+@x
+      <option>--without-vala</option>: Do not create a
+      <application>vala</application> API - use this if
+      <command>vapigen</command> breaks the build.
+@y
+      <option>--without-vala</option>: Do not create a
+      <application>vala</application> API - use this if
+      <command>vapigen</command> breaks the build.
 @z
 
 @x
@@ -235,20 +243,15 @@
 @z
 
 @x gegl
-          <para>is a commandline tool for working with the XML data model.</para>
+            is a commandline tool for working with the XML data model.
 @y
-          <para>
-          XML データモデルに基づくコマンドラインツールです。
-          </para>
+            XML データモデルに基づくコマンドラインツールです。
 @z
 
 @x libgegl-0.1.so
-          <para>provides infrastructure to do demand based cached non
-          destructive image editing on larger than RAM buffers.</para>
+            provides infrastructure to do demand based cached non destructive
+            image editing on larger than RAM buffers.
 @y
-          <para>
-          
-          provides infrastructure to do demand based cached non
-          destructive image editing on larger than RAM buffers.
-          </para>
+            provides infrastructure to do demand based cached non destructive
+            image editing on larger than RAM buffers.
 @z

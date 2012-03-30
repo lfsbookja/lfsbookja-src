@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY glib2-time          "1.5 SBU (additional 4.0 SBU to run the test suite)">
+  <!ENTITY glib2-time          "1.0 SBU (additional 4.0 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-time          "1.5 SBU (テストスイート実行時は追加で 4.0 SBU)">
+  <!ENTITY glib2-time          "1.0 SBU (テストスイート実行時は追加で 4.0 SBU)">
 @z
 
 @x
@@ -101,13 +101,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="attr"/>, <!-- <xref linkend="gamin"/>,
-    --> <xref linkend="dbus"/> (required to run the tests) and
+    <para role="optional"><xref linkend="attr"/>, <xref linkend="dbus"/> 
+    (required to run the tests), <xref linkend="gamin"/> and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="attr"/>, <!-- <xref linkend="gamin"/>,
-    --> <xref linkend="dbus"/> (テストスイート実行時に必要),
+    <para role="optional"><xref linkend="attr"/>, <xref linkend="dbus"/> 
+    (テストスイート実行時に必要), <xref linkend="gamin"/>,
     <xref linkend="gtk-doc"/></para>
 @z
 
@@ -259,21 +259,29 @@
 @z
 
 @x
-        <seg>gio-querymodules, glib-genmarshal, glib-gettextize, glib-mkenums,
-        gobject-query, gtester and gtester-report</seg>
+        <seg>gdbus, gdbus-codegen, gio-querymodules,
+        glib-compile-resources, glib-compile-schemas,
+        glib-genmarshal, glib-gettextize, glib-mkenums,
+        gobject-query, gresource, gsettings, gtester 
+        and gtester-report</seg>
         <seg>libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-        libgobject-2.0.so, and libgthread-2.0.so</seg>
+        libgobject-2.0.so, libgthread-2.0.so and libgiofam.so</seg>
         <seg>/usr/{include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
-        lib/{gio/modules,glib-2.0/include},share/{gdb/auto-load,glib-2.0/{gdb,
-        gettext/po},gtk-doc/html/{gio,glib,gobject}}}</seg>
+        lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},share/
+        {gdb/auto-load,glib-2.0/{gdb,gettext/po},gtk-doc/html/
+        {gio,glib,gobject}}}</seg>
 @y
-        <seg>gio-querymodules, glib-genmarshal, glib-gettextize, glib-mkenums,
-        gobject-query, gtester and gtester-report</seg>
+        <seg>gdbus, gdbus-codegen, gio-querymodules,
+        glib-compile-resources, glib-compile-schemas,
+        glib-genmarshal, glib-gettextize, glib-mkenums,
+        gobject-query, gresource, gsettings, gtester 
+        gtester-report</seg>
         <seg>libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-        libgobject-2.0.so, and libgthread-2.0.so</seg>
+        libgobject-2.0.so, libgthread-2.0.so, libgiofam.so</seg>
         <seg>/usr/{include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
-        lib/{gio/modules,glib-2.0/include},share/{gdb/auto-load,glib-2.0/{gdb,
-        gettext/po},gtk-doc/html/{gio,glib,gobject}}}</seg>
+        lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},share/
+        {gdb/auto-load,glib-2.0/{gdb,gettext/po},gtk-doc/html/
+        {gio,glib,gobject}}}</seg>
 @z
 
 @x

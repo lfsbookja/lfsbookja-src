@@ -72,7 +72,7 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">libusb Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libunistring Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libunistring&Dependencies2;</bridgehead>
 @z

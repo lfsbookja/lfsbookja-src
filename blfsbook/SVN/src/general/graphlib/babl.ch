@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to babl</title>
+    <title>Introduction to Babl</title>
 @y
-    <title>&IntroductionTo1;babl&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Babl&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>babl</application>package is a dynamic, any to any,
-    pixel format translation library.</para>
+      The <application>Babl</application> package is a dynamic, any to any,
+      pixel format translation library.
 @y
-    <para>
-    <application>babl</application> パッケージは、ピクセルフォーマットを様々な方法により、動的に変換するライブラリを提供します。
-    </para>
+      <application>Babl</application> パッケージは、ピクセルフォーマットを様々な方法により、動的に変換するライブラリを提供します。
 @z
 
 @x
@@ -35,102 +33,101 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&babl-download-http;"/></para>
+          Download (HTTP): <ulink url="&babl-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&babl-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&babl-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&babl-download-ftp;"/></para>
+          Download (FTP): <ulink url="&babl-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&babl-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&babl-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &babl-md5sum;</para>
+          Download MD5 sum: &babl-md5sum;
 @y
-        <para>&Download; MD5 sum: &babl-md5sum;</para>
+          &Download; MD5 sum: &babl-md5sum;
 @z
 
 @x
-        <para>Download size: &babl-size;</para>
+          Download size: &babl-size;
 @y
-        <para>&DownloadSize;: &babl-size;</para>
+          &DownloadSize;: &babl-size;
 @z
 
 @x
-        <para>Estimated disk space required: &babl-buildsize;</para>
+          Estimated disk space required: &babl-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &babl-buildsize;</para>
+          &Estimateddiskspacerequired;: &babl-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &babl-time;</para>
+          Estimated build time: &babl-time;
 @y
-        <para>&Estimatedbuildtime;: &babl-time;</para>
+          &Estimatedbuildtime;: &babl-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">babl Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Babl Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;babl&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Babl&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="pkgconfig"/></para>
+    <para role="recommended">
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="pkgconfig"/></para>
+    <para role="recommended">
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>
-    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/> and
+      <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>
-    <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink></para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/babl'/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/babl'/></para>
-@z
-
-@x
-    <title>Installation of babl</title>
-@y
-    <title>&InstallationOf1;babl&InstallationOf2;</title>
-@z
-
-@x
-    <para>Install <application>babl</application> by running the following
-    commands:</para>
-@y
-    <para>
-    以下のコマンドを入力して <application>babl</application> をビルドします。
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>,
+      <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>
     </para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      User Notes: <ulink url='&blfs-wiki;/babl'/>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      &UserNotes;: <ulink url='&blfs-wiki;/babl'/>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <title>Installation of Babl</title>
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <title>&InstallationOf1;Babl&InstallationOf2;</title>
+@z
+
+@x
+      Install <application>Babl</application> by running the following commands:
+@y
+      以下のコマンドを入力して <application>Babl</application> をビルドします。
+@z
+
+@x
+      To test the results, issue: <command>make check</command>.
+@y
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -140,29 +137,39 @@
 @z
 
 @x
-    <para><parameter>install -v -m755 -d /usr/share/gtk-doc/html/babl/graphics</parameter>:
-    This and the subsequent commands install the library html documentation
-    under <filename class="directory">/usr/share/gtk-doc/html</filename> where
-    other gtk packages put the programmer-oriented documentation.</para>
+      <command>sed -i 's#DBABL_IS_BEING_COMPILED#&amp; -lgmodule-2.0#'
+      babl/Makefile.in</command>: This sed fixes compiling when both
+      <application>Glib-2.32</application> and
+      <xref linkend="gobject-introspection"/> are installed.
 @y
-    <para>
-    <parameter>install -v -m755 -d /usr/share/gtk-doc/html/babl/graphics</parameter>:
-    このコマンドとそれに続くコマンドは、ライブラリの HTML ドキュメントをインストールするものであり、多くの gtk パッケージにて、プログラマー向けのドキュメントが配置されるディレクトリ <filename
-    class="directory">/usr/share/gtk-doc/html</filename> にインストールするものです。
-    </para>
+      <command>sed -i 's#DBABL_IS_BEING_COMPILED#&amp; -lgmodule-2.0#'
+      babl/Makefile.in</command>: This sed fixes compiling when both
+      <application>Glib-2.32</application> and
+      <xref linkend="gobject-introspection"/> are installed.
 @z
 
 @x
-    <para><option>--with-vala</option>: Use <command>vapigen</command>
-    so that <application>vala</application> programs can use this application -
-    not enabled by default, may cause breakage when building
-    <application>gegl</application>.</para>
+      <parameter>install -v -m755 -d
+      /usr/share/gtk-doc/html/babl/graphics</parameter>: This and the subsequent
+      commands install the library html documentation under
+      <filename class="directory">/usr/share/gtk-doc/html</filename> where other
+      gtk packages put the programmer-oriented documentation.
 @y
-    <para>
-    <option>--with-vala</option>:
-    <application>vala</application> プログラムがこのアプリケーションを利用できるようにします。
-    デフォルトでは利用不可となっているため、この指定がないと <application>gegl</application> のビルドに失敗することがあります。
-    </para>
+      <parameter>install -v -m755 -d
+      /usr/share/gtk-doc/html/babl/graphics</parameter>:
+      このコマンドとそれに続くコマンドは、ライブラリの HTML ドキュメントをインストールするものであり、多くの gtk パッケージにて、プログラマー向けのドキュメントが配置されるディレクトリ <filename
+      class="directory">/usr/share/gtk-doc/html</filename> にインストールするものです。
+@z
+
+@x
+      <option>--with-vala</option>: Use <command>vapigen</command> so that
+      <application>vala</application> programs can use this application - not
+      enabled by default, may cause breakage when building
+      <application>gegl</application>.
+@y
+      <option>--with-vala</option>:
+      <command>vapigen</command> を用いることで <application>vala</application> プログラムがこのアプリケーションを利用できるようにします。
+      デフォルトでは利用不可となっているため、この指定がないと <application>gegl</application> のビルドに失敗することがあります。
 @z
 
 @x
@@ -172,21 +179,17 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
         <seg>libbabl.so, and libraries in /usr/lib/babl-0.1/</seg>
         <seg>/usr/include/babl-0.1/</seg>
 @y
-        <seg>&None;</seg>
         <seg>libbabl.so と /usr/lib/babl-0.1 内のライブラリ</seg>
         <seg>/usr/include/babl-0.1/</seg>
 @z
@@ -198,10 +201,7 @@
 @z
 
 @x libbabl.so
-          <para>contains functions to access BablFishes to convert between
-          formats.</para>
+            contains functions to access BablFishes to convert between formats.
 @y
-          <para>
-          各種フォーマットを変換するために BablFish にアクセスする関数を提供します。
-          </para>
+            各種フォーマットを変換するために BablFish にアクセスする関数を提供します。
 @z

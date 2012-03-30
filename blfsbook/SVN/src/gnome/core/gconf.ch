@@ -105,11 +105,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openldap"/> and
+    <para role="optional"><xref linkend="openldap"/>,
+    <xref linkend="gobject-introspection"/> and
     <xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>、
+    <para role="optional"><xref linkend="openldap"/>,
+    <xref linkend="gobject-introspection"/>,
     <xref linkend="gtk-doc"/></para>
 @z
 
@@ -204,10 +206,10 @@
 @z
 
 @x
-    <para><option>--enable-static=no</option>: This switch prevents the static
+    <para><option>--disable-static</option>: This switch prevents the static
     libraries being installed.</para>
 @y
-    <para><option>--enable-static=no</option>: This switch prevents the static
+    <para><option>--disable-static</option>: This switch prevents the static
     libraries being installed.</para>
 @z
 

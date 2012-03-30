@@ -82,10 +82,10 @@
 @z
 @x
           <para>[rthomsen] - Added information about further KDE4 packages.</para>
-   </listitem>
+        </listitem>
         <listitem>
           <para>[rthomsen] - Removed kdesdk, kdewebdev, kdevplatform and kdevelop.</para>
-   </listitem>
+        </listitem>
         <listitem>
           <para>[rthomsen] - Removed kdetoys, kdegames, kdeedu and kdeaccessibility.</para>
         </listitem>  

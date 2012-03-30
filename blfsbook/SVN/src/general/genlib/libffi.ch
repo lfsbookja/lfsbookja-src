@@ -74,6 +74,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <title>Installation of libffi</title>
 @y
     <title>&InstallationOf1;libffi&InstallationOf2;</title>
@@ -121,11 +133,11 @@
 @x
         <seg>None</seg>
         <seg>libffi.{so,a}</seg>
-        <seg>/usr/lib/libffi-&libffi-version;/include</seg>
+        <seg>None</seg>
 @y
         <seg>&None;</seg>
         <seg>libffi.{so,a}</seg>
-        <seg>/usr/lib/libffi-&libffi-version;/include</seg>
+        <seg>&None;</seg>
 @z
 
 @x

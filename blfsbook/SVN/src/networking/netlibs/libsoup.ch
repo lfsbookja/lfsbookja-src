@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>libsoup</application> package contains an
-    HTTP library implementation in <application>C</application>. This is
-    useful for accessing HTTP servers in a completely asynchronous mode.</para>
+      The <application>libsoup</application> package contains an HTTP library
+      implementation in <application>C</application>. This is useful for
+      accessing HTTP servers in a completely asynchronous mode.
 @y
-    <para>
-    <application>libsoup</application> は <application>C</application>言語による HTTP ライブラリの実装です。
-    HTTP サーバーに対して、完全な非同期モードでのアクセスを実現することができます。
-    </para>
+      <application>libsoup</application> は <application>C</application>言語による HTTP ライブラリの実装です。
+      HTTP サーバーに対して、完全な非同期モードでのアクセスを実現することができます。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libsoup-download-http;"/></para>
+          Download (HTTP): <ulink url="&libsoup-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libsoup-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libsoup-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libsoup-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libsoup-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libsoup-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libsoup-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libsoup-md5sum;</para>
+          Download MD5 sum: &libsoup-md5sum;
 @y
-        <para>&Download; MD5 sum: &libsoup-md5sum;</para>
+          &Download; MD5 sum: &libsoup-md5sum;
 @z
 
 @x
-        <para>Download size: &libsoup-size;</para>
+          Download size: &libsoup-size;
 @y
-        <para>&DownloadSize;: &libsoup-size;</para>
+          &DownloadSize;: &libsoup-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libsoup-buildsize;</para>
+          Estimated disk space required: &libsoup-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libsoup-buildsize;</para>
+          &Estimateddiskspacerequired;: &libsoup-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libsoup-time;</para>
+          Estimated build time: &libsoup-time;
 @y
-        <para>&Estimatedbuildtime;: &libsoup-time;</para>
+          &Estimatedbuildtime;: &libsoup-time;
 @z
 
 @x
@@ -80,46 +78,58 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib-networking"/> and
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="glib-networking"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib-networking"/>,
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="glib-networking"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libgnome-keyring"/> and
-    <xref linkend="sqlite"/> (Required if building <application>GNOME</application>)</para>
+    <para role="recommended">
+      <xref linkend="libgnome-keyring"/> and
+      <xref linkend="sqlite"/>
+      (Required if building <application>Gnome</application>).
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libgnome-keyring"/>,
-    <xref linkend="sqlite"/> (<application>GNOME</application> をビルドする際には必須。)</para>
+    <para role="recommended">
+      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="sqlite"/>
+      (<application>Gnome</application> をビルドする場合に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/>,
-    <xref linkend="apache"/> (required to run the test suite), and
-    <xref linkend="php"/> compiled with
-    <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
-      support (only used for the XMLRPC regression tests)</para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="apache"/> (required to run the test suite), and
+      <xref linkend="php"/> compiled with
+      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
+      support (only used for the XMLRPC regression tests).
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/>,
-    <xref linkend="apache"/> (テストスイート実行時に必要),
-    <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink> サポートがビルドされている <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される)</para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="apache"/> (テストスイート実行時に必要),
+      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>  サポートがビルドされている <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される)
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libsoup"/></para>
+      User Notes: <ulink url="&blfs-wiki;/libsoup"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libsoup"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/libsoup"/>
 @z
 
 @x
@@ -129,28 +139,22 @@
 @z
 
 @x
-    <para>Install <application>libsoup</application> by running the following
-    commands:</para>
+      Install <application>libsoup</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libsoup</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libsoup</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -160,24 +164,23 @@
 @z
 
 @x
-    <para><option>--without-gnome</option>: Use this parameter if you will
-    <emphasis role="strong">NOT</emphasis> be installing
-    <application>GNOME</application>.</para>
+      <option>--without-gnome</option>: This prevents
+      <command>configure</command> looking for
+      <application>gnome-keyring</application>. Remove this option if you have
+      installed <xref linkend="gnome-keyring"/> and want to install
+      <application>Gnome</application>.
 @y
-    <para>
-    <option>--without-gnome</option>:
-    <application>GNOME</application> をインストール<emphasis>しない</emphasis>のであれば、このパラメーターを指定します。
-    </para>
+      <option>--without-gnome</option>:
+      これは <command>configure</command> が <application>gnome-keyring</application> を探さないようにします。
+      <xref linkend="gnome-keyring"/> をインストール済であって、<application>Gnome</application> をインストールする場合には、このオプションを取り除いてください。
 @z
 
 @x
-    <para><option>--disable-ssl</option>: Use this parameter if you wish to
-    disable SSL/TLS support.</para>
+      <option>--disable-static</option>: This option disables installing a
+      static version of <filename class='libraryfile'>libsoup-2.4.so</filename>.
 @y
-    <para>
-    <option>--disable-ssl</option>:
-    SSL/TLS サポートを無効にする場合はこのパラメーターを指定します。
-    </para>
+      <option>--disable-static</option>:
+      このオプションは <filename class='libraryfile'>libsoup-2.4.so</filename> のスタティック版をインストールしないようにします。
 @z
 
 @x
@@ -187,25 +190,30 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libsoup-2.4.{so,a} and libsoup-gnome-2.4.{so,a}</seg>
-        <seg>/usr/{include/{libsoup-2.4/libsoup,libsoup-gnome-2.4/libsoup},
-        share/gtk-doc/html/libsoup-2.4}</seg>
+        <seg>
+          libsoup-2.4.so and (if you have installed
+          <xref linkend="gnome-keyring"/>) libsoup-gnome-2.4.so
+        </seg>
+        <seg>
+          /usr/include/libsoup-2.4 and
+          /usr/share/gtk-doc/html/libsoup-2.4.
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libsoup-2.4.{so,a}, libsoup-gnome-2.4.{so,a}</seg>
-        <seg>/usr/{include/{libsoup-2.4/libsoup,libsoup-gnome-2.4/libsoup},
-        share/gtk-doc/html/libsoup-2.4}</seg>
+        <seg>
+          libsoup-2.4.so, (<xref linkend="gnome-keyring"/> をインストールしていた場合に) libsoup-gnome-2.4.so
+        </seg>
+        <seg>
+          /usr/include/libsoup-2.4,
+          /usr/share/gtk-doc/html/libsoup-2.4.
+        </seg>
 @z
 
 @x
@@ -215,17 +223,13 @@
 @z
 
 @x libsoup-2.4.{so,a}
-          <para>provides functions for asynchronous HTTP connections.</para>
+            provides functions for asynchronous HTTP connections.
 @y
-          <para>
-          HTTP 非同期接続を行うための関数を提供します。
-          </para>
+            HTTP 非同期接続を行うための関数を提供します。
 @z
 
 @x libsoup-gnome-2.4.{so,a}
-          <para>provides <application>GNOME</application> specific features.</para>
+            provides <application>Gnome</application> specific features.
 @y
-          <para>
-          <application>GNOME</application> に固有の機能を提供します。
-          </para>
+            <application>GNOME</application> に固有の機能を提供します。
 @z

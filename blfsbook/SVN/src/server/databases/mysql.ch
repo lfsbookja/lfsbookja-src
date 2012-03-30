@@ -387,7 +387,7 @@
         <seg>libdbug.a, libheap.a, libmyisam.a, libmyisammrg.a,
         libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmystrings.a,
         libmysys.a, and libvio.a</seg>
-        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/mysql, /usr/share/mysql, and
+        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/plugin, /usr/share/mysql and
         /var/run/mysql</seg>
 @y
         <seg>comp_err, innochecksum, msql2mysql, my_print_defaults,
@@ -405,7 +405,7 @@
         <seg>libdbug.a, libheap.a, libmyisam.a, libmyisammrg.a,
         libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmystrings.a,
         libmysys.a, libvio.a</seg>
-        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/mysql, /usr/share/mysql,
+        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/plugin, /usr/share/mysql,
         /var/run/mysql</seg>
 @z
 

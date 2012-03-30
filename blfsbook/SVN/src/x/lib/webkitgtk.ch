@@ -16,17 +16,15 @@
 @x
     <title>Introduction to WebKitGTK+</title>
 @y
-    <title>WebKitGTK+ の概要</title>
+    <title>&IntroductionTo1;WebKitGTK+&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>WebKitGTK+</application> package is the port of the
-    portable web rendering engine <application>WebKit</application> to the
-    <application>GTK+</application> platform.</para>
+      The <application>WebKitGTK+</application> package is the port of the
+      portable web rendering engine <application>WebKit</application> to the
+      <application>GTK+</application> platform.
 @y
-    <para>
-    <application>WebKitGTK+</application> パッケージは、可搬性に優れたウェブレンダリングエンジン <application>WebKit</application> の <application>GTK+</application> プラットフォームでのポートです。
-    </para>
+      <application>WebKitGTK+</application> パッケージは、可搬性に優れたウェブレンダリングエンジン <application>WebKit</application> の <application>GTK+</application> プラットフォームでのポートです。
 @z
 
 @x
@@ -36,123 +34,148 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&webkitgtk-download-http;"/></para>
+          Download (HTTP): <ulink url="&webkitgtk-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&webkitgtk-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&webkitgtk-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&webkitgtk-download-ftp;"/></para>
+          Download (FTP): <ulink url="&webkitgtk-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&webkitgtk-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&webkitgtk-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &webkitgtk-md5sum;</para>
+          Download MD5 sum: &webkitgtk-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &webkitgtk-md5sum;</para>
+          &Download; MD5 sum: &webkitgtk-md5sum;
 @z
 
 @x
-        <para>Download size: &webkitgtk-size;</para>
+          Download size: &webkitgtk-size;
 @y
-        <para>ダウンロードサイズ: &webkitgtk-size;</para>
+          &DownloadSize;: &webkitgtk-size;
 @z
 
 @x
-        <para>Estimated disk space required: &webkitgtk-buildsize;</para>
+          Estimated disk space required: &webkitgtk-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &webkitgtk-buildsize;</para>
+          &Estimateddiskspacerequired;: &webkitgtk-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &webkitgtk-time;</para>
+          Estimated build time: &webkitgtk-time;
 @y
-        <para>&Estimatedbuildtime;: &webkitgtk-time;</para>
+          &Estimatedbuildtime;: &webkitgtk-time;
 @z
 
 @x
     <bridgehead renderas="sect3">WebKitGTK+ Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">WebKitGTK+ の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;WebKitGTK+&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gperf"/>, <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>, <xref linkend="icu"/>, <xref linkend="libxslt"/>,
-    <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (if both are installed
-    configure defaults to using gtk+-3), <xref linkend="libsoup"/>,
-    <xref linkend="gst-plugins-base"/>, <xref linkend="which"/>
-    and <xref linkend="sqlite"/></para>
+    <para role="required">
+      <xref linkend="gperf"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="icu"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
+      (<command>configure</command> defaults to using gtk+-3),
+      <xref linkend="libsoup"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="geoclue"/>,
+      <xref linkend="which"/> and
+      <xref linkend="sqlite"/>.
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gperf"/>, <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>, <xref linkend="icu"/>, <xref linkend="libxslt"/>,
-    <xref linkend="gtk2"/> または <xref linkend="gtk3"/> (二つがインストールされていた場合、デフォルトでは gtk+-3 を利用),
-    <xref linkend="libsoup"/>,
-    <xref linkend="gst-plugins-base"/>, <xref linkend="which"/>
-    <xref linkend="sqlite"/></para>
+    <para role="required">
+      <xref linkend="gperf"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="icu"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="gtk2"/> または <xref linkend="gtk3"/>
+      (<command>configure</command> のデフォルトは gtk+-3 を利用),
+      <xref linkend="libsoup"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="geoclue"/>,
+      <xref linkend="which"/>,
+      <xref linkend="sqlite"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="curl"/>, <xref linkend="enchant"/>,
-    <ulink
-    url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
-    <xref linkend="gobject-introspection"/> (required if building
-    <application>epiphany</application>), <xref linkend="gtk-doc"/> and
-    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.</para>
+    <para role="optional">
+      <xref linkend="curl"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="gobject-introspection"/> (required if building
+      <application>epiphany</application>),
+      <xref linkend="gtk-doc"/> and
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="curl"/>, <xref linkend="enchant"/>,
-    <ulink
-    url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
-    <xref linkend="gobject-introspection"/> (<application>epiphany</application> のビルド時に必要),
-    <xref linkend="gtk-doc"/>,
-    <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.</para>
+    <para role="optional">
+      <xref linkend="curl"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="gobject-introspection"/> (<application>epiphany</application> のビルド時に必要),
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/webkitgtk"/></para>
+      User Notes: <ulink url="&blfs-wiki;/webkitgtk"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/webkitgtk"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/webkitgtk"/>
 @z
 
 @x
     <title>Installation of WebKitGTK+</title>
 @y
-    <title>WebKitGTK+ のインストール</title>
+    <title>&InstallationOf1;WebKitGTK+&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>WebKitGTK+</application> by running the
-    following commands:</para>
+      <application>WebKit</application> takes a long time to compile, so if you
+      have a multicore CPU it can be useful to speed up the build by running
+      make with multiple jobs.
 @y
-    <para>
-    以下のコマンドを実行して <application>WebKitGTK+</application> をビルドします。
-    </para>
+      <application>WebKit</application> のコンパイルには時間がかかります。
+      マルチコア CPU で処理をする場合には、マルチ処理によりビルド実行を行えば、処理を早く実現することができます。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command> (you must be
-    in an xterm or similar to do this, because it launches some windows).</para>
+      If you want to run make with just one job, install
+      <application>WebKit</application> by running the following commands:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    (テストにあたってはウィンドウ表示が行われるため、xterm や同等の端末より実行する必要があります。)
-    </para>
+      単一処理でビルド実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      If you have a multicore CPU and want to run make with multiple jobs,
+      install <application>WebKit</application> by running the following
+      commands:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      マルチコア CPU にてマルチ処理を実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
+@z
+
+@x
+      This package does not have a working testsuite.
+@y
+      このパッケージには有効なテストスイートがありません。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -162,14 +185,13 @@
 @z
 
 @x
-    <para><option>--enable-introspection</option>: This option enables support
-    for gobject-introspection and is required for a
-    <application>GNOME</application> desktop.</para>
+      <option>--enable-introspection</option>: This option enables support for
+      <application>Gobject-Introspection</application> and is required for a
+      <application>GNOME</application> desktop.
 @y
-    <para><option>--enable-introspection</option>:
-    gobject-introspection サポートを有効にします。
-    これは <application>GNOME</application> において必要です。
-    </para>
+      <option>--enable-introspection</option>:
+      このオプションは <application>Gobject-Introspection</application> サポートを有効にします。
+      これは <application>GNOME</application> デスクトップ環境において必要です。
 @z
 
 @x
@@ -189,23 +211,45 @@
 @z
 
 @x
-        <seg>jsc-1 or jsc-3 (depending on whether you installed the gtk+-2 or
-        gtk+-3 version of webkit)</seg>
-        <seg>libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or
-        libwebkit-3.0.so and libjavascriptcoregtk-3.0.so (depending on whether
-        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
-        <seg>/usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
-        /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on whether
-        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
+        <seg>
+          jsc-1 or jsc-3 (depending on whether you installed the
+          <application>Gtk+-2</application> or <application>Gtk+-3</application>
+          version of <application>WebKit</application>).
+        </seg>
+        <seg>
+          libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or libwebkit-3.0.so
+          and libjavascriptcoregtk-3.0.so (depending on whether you installed
+          the <application>Gtk+-2</application> or
+          <application>Gtk+-3</application> version of
+          <application>WebKit</application>).
+        </seg>
+        <seg>
+          /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
+          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on
+          whether you installed the <application>Gtk+-2</application> or
+          <application>Gtk+-3</application> version of
+          <application>WebKit</application>).
+        </seg>
 @y
-        <seg>jsc-1 または jsc-3 (depending on whether you installed the gtk+-2 or
-        gtk+-3 version of webkit)</seg>
-        <seg>libwebkit-1.0.so, libjavascriptcoregtk-1.0.so または
-        libwebkit-3.0.so, libjavascriptcoregtk-3.0.so (depending on whether
-        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
-        <seg>/usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
-        /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on whether
-        you installed the gtk+-2 or gtk+-3 version of webkit)</seg>
+        <seg>
+          jsc-1 or jsc-3 (depending on whether you installed the
+          <application>Gtk+-2</application> or <application>Gtk+-3</application>
+          version of <application>WebKit</application>).
+        </seg>
+        <seg>
+          libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or libwebkit-3.0.so
+          and libjavascriptcoregtk-3.0.so (depending on whether you installed
+          the <application>Gtk+-2</application> or
+          <application>Gtk+-3</application> version of
+          <application>WebKit</application>).
+        </seg>
+        <seg>
+          /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
+          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on
+          whether you installed the <application>Gtk+-2</application> or
+          <application>Gtk+-3</application> version of
+          <application>WebKit</application>).
+        </seg>
 @z
 
 @x
@@ -214,12 +258,43 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x jsc
-          <para>is a command-line utility that allows you to run JavaScript
-          programs outside of the context of a web browser.</para>
+@x
+        <term><command>jsc-1</command> or <command>jsc-3</command></term>
 @y
-          <para>
-          コマンドラインユーティリティー。
-          ウェブブラウザーのコンテキスト外にて JavaScript を実行します。
-          </para>
+        <term><command>jsc-1</command> または <command>jsc-3</command></term>
+@z
+@x
+            is a command-line utility that allows you to run JavaScript programs
+            outside of the context of a web browser.
+@y
+            コマンドラインユーティリティー。
+            ウェブブラウザーのコンテキスト外にて JavaScript を実行します。
+@z
+
+@x libwebkit-1.0.so
+            contains the <application>WebKit</application> API functions for
+            <application>gtk+-2</application>.
+@y
+            contains the <application>WebKit</application> API functions for
+            <application>gtk+-2</application>.
+@z
+
+@x libwebkit-3.0.so
+            contains the <application>WebKit</application> API functions for
+            <application>gtk+-3</application>.
+@y
+            contains the <application>WebKit</application> API functions for
+            <application>gtk+-3</application>.
+@z
+
+@x libjavascriptcoregtk-1.0.so
+            contains functions that are used by <command>jsc-1</command>.
+@y
+            contains functions that are used by <command>jsc-1</command>.
+@z
+
+@x libjavascriptcoregtk-3.0.so
+            contains functions that are used by <command>jsc-3</command>.
+@y
+            contains functions that are used by <command>jsc-3</command>.
 @z

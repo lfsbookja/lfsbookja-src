@@ -105,7 +105,7 @@
     <xref linkend="clutter-gtk"/>,
     <ulink url="http://connman.net/">ConnMan</ulink>,
     <xref linkend="enchant"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
+    <xref linkend="geoclue"/>,
     <xref linkend="gnome-panel"/>,
     <xref linkend="gtk-doc"/>,
     <xref linkend="iso-codes"/>,
@@ -121,7 +121,7 @@
     <xref linkend="clutter-gtk"/>,
     <ulink url="http://connman.net/">ConnMan</ulink>,
     <xref linkend="enchant"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/GeoClue">GeoClue</ulink>,
+    <xref linkend="geoclue"/>,
     <xref linkend="gnome-panel"/>,
     <xref linkend="gtk-doc"/>,
     <xref linkend="iso-codes"/>,
@@ -129,7 +129,7 @@
     <xref linkend="NetworkManager"/>,
     <xref linkend="pygtk"/>,
     <xref linkend="rarian"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink>,
     <xref linkend="webkitgtk"/></para>
 @z
 

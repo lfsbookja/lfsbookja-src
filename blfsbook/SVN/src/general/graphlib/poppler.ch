@@ -137,13 +137,13 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>,
-     and <ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
+    <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>
+     and <xref linkend="openjpeg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>,
-     and <ulink url="http://www.openjpeg.org">OpenJPEG</ulink>
+    <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>
+    <xref linkend="openjpeg"/>
     </para>
 @z
 

@@ -48,20 +48,18 @@
 @z
 
 @x
-    <para>The <application>Python</application> module packages add useful
-    objects to the <application>Python</application> language. Modules utilized
-    by packages throughout BLFS are listed here, along with their dependencies.
-    Installation of the modules shown on this page is meant to follow from top
-    to bottom to handle optional dependencies in each module.</para>
+      The <application>Python</application> module packages add useful objects
+      to the <application>Python</application> language. Modules utilized by
+      packages throughout BLFS are listed here, along with their dependencies.
+      Installation of the modules shown on this page is meant to follow from top
+      to bottom to handle optional dependencies in each module.
 @y
-    <para>
-    <application>Python</application> モジュールパッケージは、プログラミング言語 <application>Python</application> に対して有用なオブジェクトを提供します。
-    BLFS にて取り上げるモジュールは以下のとおりです。
-    本ページにて示す各モジュールのインストール手順は、
-    along with their dependencies.
-    Installation of the modules shown on this page is meant to follow from top
-    to bottom to handle optional dependencies in each module.
-    </para>
+      <application>Python</application> モジュールパッケージは、プログラミング言語 <application>Python</application> に対して有用なオブジェクトを提供します。
+      BLFS にて取り上げるモジュールは以下のとおりです。
+      本ページにて示す各モジュールのインストール手順は、
+      along with their dependencies.
+      Installation of the modules shown on this page is meant to follow from top
+      to bottom to handle optional dependencies in each module.
 @z
 
 @x
@@ -71,19 +69,17 @@
 @z
 
 @x
-      <para>The <application>PyXML</application> package contains a validating
-      XML parser, an implementation of the SAX and DOM programming interfaces,
-      an interface to the Expat parser, and a C helper module that can speed up
-      <filename>xmllib.py</filename> by a factor of five. This is useful for
-      validating, parsing and manipulating XML files using Python
-      programs.</para>
+        The <application>PyXML</application> package contains a validating XML
+        parser, an implementation of the SAX and DOM programming interfaces, an
+        interface to the Expat parser, and a C helper module that can speed up
+        <filename>xmllib.py</filename> by a factor of five. This is useful for
+        validating, parsing and manipulating XML files using Python programs.
 @y
-      <para>The <application>PyXML</application> package contains a validating
-      XML parser, an implementation of the SAX and DOM programming interfaces,
-      an interface to the Expat parser, and a C helper module that can speed up
-      <filename>xmllib.py</filename> by a factor of five. This is useful for
-      validating, parsing and manipulating XML files using Python
-      programs.</para>
+        The <application>PyXML</application> package contains a validating XML
+        parser, an implementation of the SAX and DOM programming interfaces, an
+        interface to the Expat parser, and a C helper module that can speed up
+        <filename>xmllib.py</filename> by a factor of five. This is useful for
+        validating, parsing and manipulating XML files using Python programs.
 @z
 
 @x
@@ -93,39 +89,39 @@
 @z
 
 @x
-          <para>Download (HTTP): <ulink url="&pyxml-download-http;"/></para>
+            Download (HTTP): <ulink url="&pyxml-download-http;"/>
 @y
-          <para>&Download; (HTTP): <ulink url="&pyxml-download-http;"/></para>
+            &Download; (HTTP): <ulink url="&pyxml-download-http;"/>
 @z
 
 @x
-          <para>Download (FTP): <ulink url="&pyxml-download-ftp;"/></para>
+            Download (FTP): <ulink url="&pyxml-download-ftp;"/>
 @y
-          <para>&Download; (FTP): <ulink url="&pyxml-download-ftp;"/></para>
+            &Download; (FTP): <ulink url="&pyxml-download-ftp;"/>
 @z
 
 @x
-          <para>Download MD5 sum: &pyxml-md5sum;</para>
+            Download MD5 sum: &pyxml-md5sum;
 @y
-          <para>&Download; MD5 sum: &pyxml-md5sum;</para>
+            &Download; MD5 sum: &pyxml-md5sum;
 @z
 
 @x
-          <para>Download size: &pyxml-size;</para>
+            Download size: &pyxml-size;
 @y
-          <para>&DownloadSize;: &pyxml-size;</para>
+            &DownloadSize;: &pyxml-size;
 @z
 
 @x
-          <para>Estimated disk space required: &pyxml-buildsize;</para>
+            Estimated disk space required: &pyxml-buildsize;
 @y
-          <para>&Estimateddiskspacerequired;: &pyxml-buildsize;</para>
+            &Estimateddiskspacerequired;: &pyxml-buildsize;
 @z
 
 @x
-          <para>Estimated build time: &pyxml-time;</para>
+            Estimated build time: &pyxml-time;
 @y
-          <para>&Estimatedbuildtime;: &pyxml-time;</para>
+            &Estimatedbuildtime;: &pyxml-time;
 @z
 
 @x
@@ -136,18 +132,20 @@
 
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="python2"/></para>
+      <para role="required">
+        <xref linkend="python2"/>
+      </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required"><xref linkend="python2"/></para>
+      <para role="required">
+        <xref linkend="python2"/>
+      </para>
 @z
 
 @x
-      <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/pyxml"/></para>
+        User Notes: <ulink url="&blfs-wiki;/pyxml"/>
 @y
-      <para condition="html" role="usernotes">&UserNotes;:
-      <ulink url="&blfs-wiki;/pyxml"/></para>
+        &UserNotes;: <ulink url="&blfs-wiki;/pyxml"/>
 @z
 
 @x
@@ -157,28 +155,24 @@
 @z
 
 @x
-      <para>Install <application>PyXML</application> by running the following
-      commands:</para>
+        Install <application>PyXML</application> by running the following
+        commands:
 @y
-      <para>
-      以下のコマンドを実行して <application>PyXML</application> をビルドします。
-      </para>
+        以下のコマンドを実行して <application>PyXML</application> をビルドします。
 @z
 
 @x
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+        Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-      <para>To run the regression tests, the package must first be installed.
-      Then, as an unprivileged user, issue the following commands:</para>
+        To run the regression tests, the package must first be installed. Then,
+        as an unprivileged user, issue the following commands:
 @y
-      <para>To run the regression tests, the package must first be installed.
-      Then, as an unprivileged user, issue the following commands:</para>
+        縮退テストを実施するには、まず本パッケージをインストールしなければなりません。
+        そして一般ユーザーになって以下のコマンドを実行します。
 @z
 
 @x
@@ -188,21 +182,21 @@
 @z
 
 @x
-      <para><command>python setup.py build</command>: This command copies the
-      <filename>*.py</filename> files to a staging area and compiles the C
-      extensions.</para>
+        <command>python setup.py build</command>: This command copies the
+        <filename>*.py</filename> files to a staging area and compiles the C
+        extensions.
 @y
-      <para><command>python setup.py build</command>: This command copies the
-      <filename>*.py</filename> files to a staging area and compiles the C
-      extensions.</para>
+        <command>python setup.py build</command>: This command copies the
+        <filename>*.py</filename> files to a staging area and compiles the C
+        extensions.
 @z
 
 @x
-      <para><command>python setup.py install</command>: This command installs
-      the package.</para>
+        <command>python setup.py install</command>: This command installs the
+        package.
 @y
-      <para><command>python setup.py install</command>: This command installs
-      the package.</para>
+        <command>python setup.py install</command>: This command installs the
+        package.
 @z
 
 @x
@@ -224,13 +218,17 @@
 @x
           <seg>xmlproc_parse and xmlproc_val</seg>
           <seg>PyXML Python library modules</seg>
-          <seg>/usr/lib/python&python2-majorver;/site-packages/_xmlplus and
-          /usr/share/doc/PyXML-&pyxml-version;</seg>
+          <seg>
+            /usr/lib/python&python2-majorver;/site-packages/_xmlplus and
+            /usr/share/doc/PyXML-&pyxml-version;
+          </seg>
 @y
           <seg>xmlproc_parse, xmlproc_val</seg>
           <seg>PyXML Python ライブラリ&Module;</seg>
-          <seg>/usr/lib/python&python2-majorver;/site-packages/_xmlplus,
-          /usr/share/doc/PyXML-&pyxml-version;</seg>
+          <seg>
+            /usr/lib/python&python2-majorver;/site-packages/_xmlplus,
+            /usr/share/doc/PyXML-&pyxml-version;
+          </seg>
 @z
 
 @x
@@ -240,17 +238,15 @@
 @z
 
 @x xmlproc_parse
-            <para>is a simple XML file parser using the xmlproc parser.</para>
+              is a simple XML file parser using the xmlproc parser.
 @y
-            <para>
-            is a simple XML file parser using the xmlproc parser.
-            </para>
+              is a simple XML file parser using the xmlproc parser.
 @z
 
 @x xmlproc_val
-            <para>is a validating XML file parser using the xmlproc parser.</para>
+              is a validating XML file parser using the xmlproc parser.
 @y
-            <para>is a validating XML file parser using the xmlproc parser.</para>
+              is a validating XML file parser using the xmlproc parser.
 @z
 
 %
@@ -263,12 +259,10 @@
 @z
 
 @x
-      <para>Py2cairo provides <application>Python2</application> bindings to
-      <application>Cairo</application>.</para>
+        Py2cairo provides <application>Python 2</application> bindings to
+        <application>Cairo</application>.
 @y
-      <para>
-      Py2cairo は、<application>Cairo</application> に対する <application>Python2</application> バインディングを提供します。
-      </para>
+        Py2cairo は、<application>Cairo</application> に対する <application>Python2</application> バインディングを提供します。
 @z
 
 @x
@@ -278,39 +272,39 @@
 @z
 
 @x
-          <para>Download (HTTP): <ulink url="&py2cairo-download-http;"/></para>
+            Download (HTTP): <ulink url="&py2cairo-download-http;"/>
 @y
-          <para>&Download; (HTTP): <ulink url="&py2cairo-download-http;"/></para>
+            &Download; (HTTP): <ulink url="&py2cairo-download-http;"/>
 @z
 
 @x
-          <para>Download (FTP): <ulink url="&py2cairo-download-ftp;"/></para>
+            Download (FTP): <ulink url="&py2cairo-download-ftp;"/>
 @y
-          <para>&Download; (FTP): <ulink url="&py2cairo-download-ftp;"/></para>
+            &Download; (FTP): <ulink url="&py2cairo-download-ftp;"/>
 @z
 
 @x
-          <para>Download MD5 sum: &py2cairo-md5sum;</para>
+            Download MD5 sum: &py2cairo-md5sum;
 @y
-          <para>&Download; MD5 sum: &py2cairo-md5sum;</para>
+            &Download; MD5 sum: &py2cairo-md5sum;
 @z
 
 @x
-          <para>Download size: &py2cairo-size;</para>
+            Download size: &py2cairo-size;
 @y
-          <para>&DownloadSize;: &py2cairo-size;</para>
+            &DownloadSize;: &py2cairo-size;
 @z
 
 @x
-          <para>Estimated disk space required: &py2cairo-buildsize;</para>
+            Estimated disk space required: &py2cairo-buildsize;
 @y
-          <para>&Estimateddiskspacerequired;: &py2cairo-buildsize;</para>
+            &Estimateddiskspacerequired;: &py2cairo-buildsize;
 @z
 
 @x
-          <para>Estimated build time: &py2cairo-time;</para>
+            Estimated build time: &py2cairo-time;
 @y
-          <para>&Estimatedbuildtime;: &py2cairo-time;</para>
+            &Estimatedbuildtime;: &py2cairo-time;
 @z
 
 @x
@@ -346,11 +340,9 @@
 @z
 
 @x
-      <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/pycairo"/></para>
+        User Notes: <ulink url="&blfs-wiki;/pycairo"/>
 @y
-      <para condition="html" role="usernotes">&UserNotes;:
-      <ulink url="&blfs-wiki;/pycairo"/></para>
+        &UserNotes;: <ulink url="&blfs-wiki;/pycairo"/>
 @z
 
 @x
@@ -360,32 +352,42 @@
 @z
 
 @x
-      <para>Install <application>Py2cairo</application> by running the following
-      commands:</para>
+        Install <application>Py2cairo</application> by running the following
+        commands:
 @y
-      <para>
-      以下のコマンドを実行して <application>Py2cairo</application> をビルドします。
-      </para>
+        以下のコマンドを実行して <application>Py2cairo</application> をビルドします。
 @z
 
 @x
-      <para>The test suite requires the optional <application>pytest</application>
-      package.  If installed, it is run by changing to the 
-      <filename class='directory'>test</filename> directory and running 
-      <userinput>py.test</userinput>.</para>
+        The test suite requires the optional <application>pytest</application>
+        package.  If installed, it is run by changing to the 
+        <filename class='directory'>test</filename> directory and running 
+        <userinput>py.test</userinput>.
 @y
-      <para>The test suite requires the optional <application>pytest</application>
-      package.  If installed, it is run by changing to the 
-      <filename class='directory'>test</filename> directory and running 
-      <userinput>py.test</userinput>.</para>
+        The test suite requires the optional <application>pytest</application>
+        package.  If installed, it is run by changing to the 
+        <filename class='directory'>test</filename> directory and running 
+        <userinput>py.test</userinput>.
 @z
 
 @x
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+        Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      <title>Command Explanations</title>
+@y
+      <title>&CommandExplanations;</title>
+@z
+
+@x
+        <command>autoreconf -f -i</command>: This command copies some missing
+        files into the source.
+@y
+        <command>autoreconf -f -i</command>:
+        このコマンドは、ソース内に含まれていないファイルをコピーします。
 @z
 
 @x
@@ -395,25 +397,25 @@
 @z
 
 @x
-        <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directory</segtitle>
 @y
-        <segtitle>&InstalledPrograms;</segtitle>
         <segtitle>&InstalledLibraries;</segtitle>
         <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-          <seg>None</seg>
           <seg>_cairo.so</seg>
-          <seg>/usr/include/pycairo and
-          /usr/lib/python2.7/site-packages/cairo</seg>
+          <seg>
+            /usr/include/pycairo and
+            /usr/lib/python2.7/site-packages/cairo
+          </seg>
 @y
-          <seg>&None;</seg>
           <seg>_cairo.so</seg>
-          <seg>/usr/include/pycairo,
-          /usr/lib/python2.7/site-packages/cairo</seg>
+          <seg>
+            /usr/include/pycairo,
+            /usr/lib/python2.7/site-packages/cairo
+          </seg>
 @z
 
 %
@@ -426,12 +428,10 @@
 @z
 
 @x
-      <para>Pycairo provides <application>Python</application> bindings to
-      <application>Cairo</application>.</para>
+        Pycairo provides <application>Python 3</application> bindings to
+        <application>Cairo</application>.
 @y
-      <para>
-      Pycairo は、<application>Cairo</application> に対する <application>Python</application> バインディングを提供します。
-      </para>
+        Pycairo は、<application>Cairo</application> に対する <application>Python</application> バインディングを提供します。
 @z
 
 @x
@@ -441,39 +441,39 @@
 @z
 
 @x
-          <para>Download (HTTP): <ulink url="&pycairo-download-http;"/></para>
+            Download (HTTP): <ulink url="&pycairo-download-http;"/>
 @y
-          <para>&Download; (HTTP): <ulink url="&pycairo-download-http;"/></para>
+            &Download; (HTTP): <ulink url="&pycairo-download-http;"/>
 @z
 
 @x
-          <para>Download (FTP): <ulink url="&pycairo-download-ftp;"/></para>
+            Download (FTP): <ulink url="&pycairo-download-ftp;"/>
 @y
-          <para>&Download; (FTP): <ulink url="&pycairo-download-ftp;"/></para>
+            &Download; (FTP): <ulink url="&pycairo-download-ftp;"/>
 @z
 
 @x
-          <para>Download MD5 sum: &pycairo-md5sum;</para>
+            Download MD5 sum: &pycairo-md5sum;
 @y
-          <para>&Download; MD5 sum: &pycairo-md5sum;</para>
+            &Download; MD5 sum: &pycairo-md5sum;
 @z
 
 @x
-          <para>Download size: &pycairo-size;</para>
+            Download size: &pycairo-size;
 @y
-          <para>&DownloadSize;: &pycairo-size;</para>
+            &DownloadSize;: &pycairo-size;
 @z
 
 @x
-          <para>Estimated disk space required: &pycairo-buildsize;</para>
+            Estimated disk space required: &pycairo-buildsize;
 @y
-          <para>&Estimateddiskspacerequired;: &pycairo-buildsize;</para>
+            &Estimateddiskspacerequired;: &pycairo-buildsize;
 @z
 
 @x
-          <para>Estimated build time: &pycairo-time;</para>
+            Estimated build time: &pycairo-time;
 @y
-          <para>&Estimatedbuildtime;: &pycairo-time;</para>
+            &Estimatedbuildtime;: &pycairo-time;
 @z
 
 @x
@@ -484,20 +484,22 @@
 
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="python2"/> and
-      <xref linkend="cairo"/></para>
+      <para role="required">
+        <xref linkend="python2"/> and
+        <xref linkend="cairo"/>
+      </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required"><xref linkend="python2"/>,
-      <xref linkend="cairo"/></para>
+      <para role="required">
+        <xref linkend="python2"/>,
+        <xref linkend="cairo"/>
+      </para>
 @z
 
 @x
-      <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/pycairo"/></para>
+        User Notes: <ulink url="&blfs-wiki;/pycairo"/>
 @y
-      <para condition="html" role="usernotes">&UserNotes;:
-      <ulink url="&blfs-wiki;/pycairo"/></para>
+        &UserNotes;: <ulink url="&blfs-wiki;/pycairo"/>
 @z
 
 @x
@@ -507,26 +509,22 @@
 @z
 
 @x
-      <para>Install <application>Pycairo</application> by running the following
-      commands:</para>
+        Install <application>Pycairo</application> by running the following
+        commands:
 @y
-      <para>
-      以下のコマンドを実行して <application>Pycairo</application> をビルドします。
-      </para>
+        以下のコマンドを実行して <application>Pycairo</application> をビルドします。
 @z
 
 @x
-      <para>This package does not come with a test suite.</para>
+        This package does not come with a test suite.
 @y
-      <para>&notTestSuite;</para>
+        &notTestSuite;
 @z
 
 @x
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+        Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -536,25 +534,25 @@
 @z
 
 @x
-        <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-        <segtitle>&InstalledPrograms;</segtitle>
         <segtitle>&InstalledLibraries;</segtitle>
         <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-          <seg>None</seg>
           <seg>Pycairo Python library module</seg>
-          <seg>/usr/include/pycairo and
-          /usr/lib/python&python2-majorver;/site-packages/cairo</seg>
+          <seg>
+            /usr/include/pycairo and
+            /usr/lib/python&python2-majorver;/site-packages/cairo
+          </seg>
 @y
-          <seg>&None;</seg>
           <seg>Pycairo Python ライブラリ&Module;</seg>
-          <seg>/usr/include/pycairo,
-          /usr/lib/python&python2-majorver;/site-packages/cairo</seg>
+          <seg>
+            /usr/include/pycairo,
+            /usr/lib/python&python2-majorver;/site-packages/cairo
+          </seg>
 @z
 
 @x

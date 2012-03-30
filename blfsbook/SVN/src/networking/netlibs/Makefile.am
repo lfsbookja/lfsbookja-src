@@ -1,18 +1,19 @@
 BOOKdir = $(top_builddir)/@bookdir@/networking/netlibs
 CHANGE_FILES = \
 	curl.ch \
+	geoclue.ch \
 	glib-networking.ch \
 	gnet.ch \
-	libpcap.ch \
-	libsoup.ch \
-	netlibs.ch \
-	libproxy.ch \
-	libnice.ch \
-	neon.ch \
-	libtirpc.ch \
 	libgdata.ch \
+	libnice.ch \
 	libnl.ch \
-	librest.ch
+	libpcap.ch \
+	libproxy.ch \
+	librest.ch \
+	libsoup.ch \
+	libtirpc.ch \
+	neon.ch \
+	netlibs.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -27,6 +28,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 curl.xml:     $(BOOKdir)/$@ $(srcdir)/curl.ch
+geoclue.xml:  $(BOOKdir)/$@ $(srcdir)/geoclue.ch
 glib-networking.xml: $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
 gnet.xml:     $(BOOKdir)/$@ $(srcdir)/gnet.ch
 libpcap.xml:  $(BOOKdir)/$@ $(srcdir)/libpcap.ch

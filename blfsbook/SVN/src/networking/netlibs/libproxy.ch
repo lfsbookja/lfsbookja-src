@@ -129,16 +129,15 @@
 @z
 
 @x
-    <para>Note that the many messages produced by <command>tar</command> when
-    extracting this package
-   [ tar: Ignoring unknown extended header keyword `SCHILY.dev' and so forth ]
-   do not appear to indicate a problem.</para>
+    <note><para>Many messages are produced by <command>tar</command> when
+    extracting this package similar to:
+    <code>[ tar: Ignoring unknown extended header keyword `SCHILY.dev' ]</code>.
+    They can be ignored.</para></note>
 @y
-    <para>
+    <note><para>
     本パッケージの tarball を <command>tar</command> コマンドにより伸張 (解凍) する際には、以下のようなメッセージが多く出力されます。
-    「tar: 未知の拡張ヘッダキーワード `SCHILY.dev' を無視」(tar: Ignoring unknown extended header keyword `SCHILY.dev' and so forth)
-    これらは特に問題はありません。
-    </para>
+    <code>[tar: 未知の拡張ヘッダキーワード `SCHILY.dev' を無視] (tar: Ignoring unknown extended header keyword `SCHILY.dev' ]</code>
+    これらは特に問題はありません。</para></note>
 @z
 
 @x
