@@ -56,6 +56,20 @@
 @z
 
 @x
+      <term>Binutils Build Fix Patch - <token>&binutils-build-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&binutils-build-patch;"/></para>
+        <para>MD5 sum: <literal>&binutils-build-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Binutils Build Fix Patch - <token>&binutils-build-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&binutils-build-patch;"/></para>
+        <para>MD5 sum: <literal>&binutils-build-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
@@ -122,6 +136,20 @@
       <listitem>
         <para>&Download;: <ulink url="&patches-root;&gcc-startfiles-patch;"/></para>
         <para>MD5 sum: <literal>&gcc-startfiles-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Glibc GCC Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc GCC Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
       </listitem>
 @z
 

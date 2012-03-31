@@ -212,6 +212,26 @@
 @z
 
 @x
+      <para>2012-03-19</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Move optional LVM initialization to the end
+           of the udev boot script so an LVM partition can be used for swap.
+           </para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-03-19</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - udev ブートスクリプトにて LVM 初期化を行う処理を最後に移動。
+           これにより LVM パーティションを swap としても利用可能に。
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-14</para>
       <itemizedlist>
          <listitem>
