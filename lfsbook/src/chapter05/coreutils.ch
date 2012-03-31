@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-coreutils">
     <primary sortas="a-Coreutils">Coreutils</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Coreutils</title>
 @y
-    <title>Coreutils のインストール</title>
+    <title>&InstallationOf1;Coreutils&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Coreutils for compilation:</para>
 @y
-    <para>Coreutils をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Coreutils&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -58,7 +58,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -113,6 +113,6 @@
     <xref linkend="contents-coreutils" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-coreutils" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-coreutils" role=""/>&Details2;
     </para>
 @z

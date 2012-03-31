@@ -27,7 +27,7 @@
 @y
   <indexterm zone="ch-tools-binutils-pass2">
     <primary sortas="a-Binutils">Binutils</primary>
-    <secondary>ツール, 2回め</secondary>
+    <secondary>&Tools;, 2回め</secondary>
   </indexterm>
 @z
 
@@ -60,7 +60,7 @@
 @x
       <title>The meaning of the new configure options:</title>
 @y
-      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -111,7 +111,7 @@
 @x
       <title>The meaning of the make parameters:</title>
 @y
-      <title>make パラメーターの意味：</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
 @z
 
 @x

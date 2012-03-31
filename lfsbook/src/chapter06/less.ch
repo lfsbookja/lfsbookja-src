@@ -22,19 +22,19 @@
 @x
     <title>Installation of Less</title>
 @y
-    <title>Less のインストール</title>
+    <title>&InstallationOf1;Less&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Less for compilation:</para>
 @y
-    <para>Less をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Less&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -43,38 +43,39 @@
           files.</para>
 @y
           <para>
-          本パッケージによって作成されるプログラムが <filename class="directory">/etc</filename> ディレクトリにある設定ファイルを参照するように指示します。
+          本パッケージによって作成されるプログラムが <filename
+          class="directory">/etc</filename> ディレクトリにある設定ファイルを参照するように指示します。
           </para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Less</title>
 @y
-    <title>Less の構成</title>
+    <title>&ContentsOf1;Less&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
@@ -86,7 +87,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x less

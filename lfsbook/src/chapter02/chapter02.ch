@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
 <chapter id="chapter-partitioning" xreflabel="Chapter 2">
 @y
-<chapter id="chapter-partitioning" xreflabel="第２章">
+<chapter id="chapter-partitioning" xreflabel="第2章">
 @z
 
 @x

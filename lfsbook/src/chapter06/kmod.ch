@@ -25,19 +25,19 @@
 @x
     <title>Installation of Kmod</title>
 @y
-    <title>Kmod のインストール</title>
+    <title>&InstallationOf1;Kmod&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Kmod for compilation:</para>
 @y
-    <para>Kmodをコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Kmod&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -60,7 +60,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -84,15 +84,15 @@
 @x
     <title>Contents of Kmod</title>
 @y
-    <title>Kmod の構成</title>
+    <title>&ContentsOf1;Kmod&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
 @z
 
 @x
@@ -110,7 +110,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x depmod

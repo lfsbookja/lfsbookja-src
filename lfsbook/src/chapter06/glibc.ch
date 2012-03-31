@@ -146,7 +146,7 @@
 @x
       <title>The meaning of the new configure options:</title>
 @y
-      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -252,7 +252,7 @@ minor timing issues が何を意味するのか不明であった。
 @y
         <para>
         LFS パーティションを <parameter>noatime</parameter> オプションを用いてマウントしている場合 <emphasis>atime</emphasis> テストが失敗します。
-        <xref linkend="space-mounting"/> で説明しているように、LFS のビルド中は <parameter>noatime</parameter> オプションを使わないようにしてください。
+        <xref linkend="space-mounting"/>で説明しているように、LFS のビルド中は <parameter>noatime</parameter> オプションを使わないようにしてください。
         </para>
 @z
 
@@ -444,7 +444,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
       <title>The meaning of the cp option:</title>
 @y
-      <title>cp オプションの意味：</title>
+      <title>&MeaningOfOption1;cp&MeaningOfOption2;:</title>
 @z
 
 @x

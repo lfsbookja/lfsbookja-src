@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,20 +21,20 @@
 @y
   <indexterm zone="ch-tools-util-linux-ng">
     <primary sortas="a-Util-linux-ng">Util-linux-ng</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Util-linux-ng</title>
 @y
-    <title>Util-linux-ng のインストール</title>
+    <title>&InstallationOf1;Util-linux-ng&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Util-linux-ng for compilation:</para>
 @y
-    <para>Util-linux-ng をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Util-linux-ng&PreparePackage2;</para>
 @z
 
 @x
@@ -49,7 +49,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにはテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
@@ -63,6 +63,6 @@
     <xref linkend="contents-utillinux" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-utillinux" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-utillinux" role=""/>&Details2;
     </para>
 @z

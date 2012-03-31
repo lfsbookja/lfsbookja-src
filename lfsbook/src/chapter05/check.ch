@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,13 +22,13 @@
 @x
     <title>Installation of Check</title>
 @y
-    <title>Check のインストール</title>
+    <title>&InstallationOf1;Check&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Check for compilation:</para>
 @y
-    <para>Check をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Check&PreparePackage2;</para>
 @z
 
 @x
@@ -61,25 +61,25 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Check</title>
 @y
-    <title>Check の構成</title>
+    <title>&ContentsOf1;Check&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed library</segtitle>
 @y
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libcheck.{a,so}

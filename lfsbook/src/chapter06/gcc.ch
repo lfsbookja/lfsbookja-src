@@ -48,7 +48,7 @@
     consistent compiler builds:</para>
 @y
     <para>
-    <xref linkend="ch-tools-gcc-pass2"/> にて行ったように <command>sed</command> を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option> を強制的に指定し、一貫したコンパイルを実現します。
+    <xref linkend="ch-tools-gcc-pass2"/>にて行ったように <command>sed</command> を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option> を強制的に指定し、一貫したコンパイルを実現します。
     </para>
 @z
 
@@ -94,7 +94,7 @@
 @x
       <title>The meaning of the new configure option:</title>
 @y
-      <title>&MeaningOfConfigure1;Configure&MeaningOfConfigure2;:</title>
+      <title>&MeaningOfOption1;Configure&MeaningOfOption2;:</title>
 @z
 
 @x --with-system-zlib

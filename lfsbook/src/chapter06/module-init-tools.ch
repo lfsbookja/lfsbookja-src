@@ -25,7 +25,7 @@
 @x
     <title>Installation of Module-Init-Tools</title>
 @y
-    <title>Module-Init-Tools のインストール</title>
+    <title>&InstallationOf1;Module-Init-Tools&InstallationOf2;</title>
 @z
 
 @x
@@ -57,25 +57,25 @@
 @x
     <para>Prepare Module-Init-Tools for compilation:</para>
 @y
-    <para>Module-Init-Tools をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Module-Init-Tools&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>make パラメータの意味：</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
 @z
 
 @x
@@ -94,13 +94,13 @@
 @x
     <title>Contents of Module-Init-Tools</title>
 @y
-    <title>Module-Init-Tools の構成</title>
+    <title>&ContentsOf1;Module-Init-Tools&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

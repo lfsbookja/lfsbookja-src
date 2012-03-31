@@ -119,7 +119,7 @@
 @y
   <para>
   プロンプトに表示される<quote>I have no name!</quote>を正しくするため、新たなシェルを起動します。
-  <xref linkend="chapter-temporary-tools"/> にて完全に Glibc をインストールし、<filename>/etc/passwd</filename> ファイルと <filename>/etc/group</filename> ファイルを作ったので、ユーザー名とグループ名の名前解決が適切に動作します。
+  <xref linkend="chapter-temporary-tools"/>にて完全に Glibc をインストールし、<filename>/etc/passwd</filename> ファイルと <filename>/etc/group</filename> ファイルを作ったので、ユーザー名とグループ名の名前解決が適切に動作します。
   </para>
 @z
 

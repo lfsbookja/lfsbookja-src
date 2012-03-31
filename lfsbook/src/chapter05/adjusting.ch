@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -65,7 +65,7 @@
   <para>
   作業を正確に行うために、以下のコマンド実行にあたってはコピー、ペーストによりコマンド入力を行うことをお勧めします。
   そしてスペックファイルを開いて、ダイナミックリンカーの配置場所を示す記述がすべて適切に調整されていることを確認してください。
-  必要に応じて <xref linkend="ch-tools-toolchaintechnotes" role=""/> を読み直し、ダイナミックリンカーのデフォルト名を確認してください。
+  必要に応じて <xref linkend="ch-tools-toolchaintechnotes" role=""/>を読み直し、ダイナミックリンカーのデフォルト名を確認してください。
   </para>
 @z
 

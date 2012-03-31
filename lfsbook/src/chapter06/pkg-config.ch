@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -18,9 +18,9 @@
     and/or library paths to build tools during the configure and make file
     execution.</para>
 @y
-<para>
-pkg-config パッケージは、他のパッケージ類の configure やメイクを行う際に、インクルードパスやライブラリパスの情報を伝えるためのツールを提供します。
-</para>
+    <para>
+    pkg-config パッケージは、他のパッケージ類の configure やメイクを行う際に、インクルードパスやライブラリパスの情報を伝えるためのツールを提供します。
+    </para>
 @z
 
 @x

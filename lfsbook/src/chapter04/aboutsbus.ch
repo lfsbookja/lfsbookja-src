@@ -46,7 +46,7 @@
 @y
   <para>
   SBU の測定は以下のようにします。
-  本書で最初にコンパイルするのは <xref linkend="chapter-temporary-tools"/> における Binutils です。
+  本書で最初にコンパイルするのは <xref linkend="chapter-temporary-tools"/>における Binutils です。
   このパッケージのコンパイルに要する時間を標準ビルド時間とし、他のコンパイル時間はその時間からの相対時間として表現します。
   </para>
 @z

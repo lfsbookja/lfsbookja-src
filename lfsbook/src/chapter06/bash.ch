@@ -22,7 +22,7 @@
 @x
     <title>Installation of Bash</title>
 @y
-    <title>Bash のインストール</title>
+    <title>&InstallationOf1;Bash&InstallationOf2;</title>
 @z
 
 @x
@@ -37,13 +37,13 @@
 @x
     <para>Prepare Bash for compilation:</para>
 @y
-    <para>Bash をコンパイルするための準備を行います。</para>
+    <para>&PreparePackage1;Bash&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -71,7 +71,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -130,15 +130,15 @@
 @x
     <title>Contents of Bash</title>
 @y
-    <title>Bash の構成</title>
+    <title>&ContentsOf1;Bash&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -152,7 +152,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x bash

@@ -27,7 +27,7 @@
 @y
   <indexterm zone="ch-tools-binutils-pass1">
     <primary sortas="a-Binutils">Binutils</primary>
-    <secondary>ツール, 1回め</secondary>
+    <secondary>&Tools;, 1回め</secondary>
   </indexterm>
 @z
 
@@ -108,7 +108,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x

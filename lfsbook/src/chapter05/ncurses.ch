@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-ncurses">
     <primary sortas="a-Ncurses">Ncurses</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Ncurses</title>
 @y
-    <title>Ncurses のインストール</title>
+    <title>&InstallationOf1;Ncurses&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Ncurses for compilation:</para>
 @y
-    <para>Ncurses をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x
@@ -72,7 +72,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -92,7 +92,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -100,6 +100,6 @@
     <xref linkend="contents-ncurses" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-ncurses" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-ncurses" role=""/>&Details2;
     </para>
 @z

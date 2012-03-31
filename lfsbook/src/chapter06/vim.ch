@@ -42,7 +42,7 @@
 @x
     <title>Installation of Vim</title>
 @y
-    <title>Vim のインストール</title>
+    <title>&InstallationOf1;Vim&InstallationOf2;</title>
 @z
 
 @x
@@ -59,15 +59,13 @@
 @x
     <para>Now prepare Vim for compilation:</para>
 @y
-    <para>
-    Vim をコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;Vim&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -78,7 +76,7 @@
           Fedora that use UTF-8 as a default character set.</para>
 @y
           <para>
-          このオプションは、マルチバイトエンコーディングによるファイルの編集をサポートする指示を行います。
+          このスイッチは、マルチバイトエンコーディングによるファイルの編集をサポートする指示を行います。
           マルチバイト文字を用いるロケールにとってはこれが必要です。
           例えば Fedora Core のようにデフォルトで UTF-8 を採用している Linux ディストリビューションにおいては、新規に生成するテキストファイルを編集できるようにするために、このオプションを指定することが有用です。
           </para>
@@ -87,7 +85,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -113,7 +111,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -165,7 +163,7 @@
 @x
     <title>Configuring Vim</title>
 @y
-    <title>Vim の設定</title>
+    <title>&Configuring1;Vim&Configuring2;</title>
 @z
 
 @x
@@ -260,15 +258,15 @@
 @x
     <title>Contents of Vim</title>
 @y
-    <title>Vim の構成</title>
+    <title>&ContentsOf1;Vim&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -286,7 +284,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

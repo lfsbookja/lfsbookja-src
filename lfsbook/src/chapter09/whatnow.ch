@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date:: 2011-05-29 17:19:09 +0900$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -170,7 +170,7 @@
       <para>
       皆さんにも参加して頂ける LFS メーリングリストがあります。
       何かの助けが必要になったり、最新の開発を行いたかったり、あるいはプロジェクトに貢献したいといった場合に、参加して頂くことができます。
-      詳しくは <xref linkend="ch-intro-maillists"/> を参照してください。
+      詳しくは <xref linkend="ch-intro-maillists"/>を参照してください。
       </para>
 @z
 

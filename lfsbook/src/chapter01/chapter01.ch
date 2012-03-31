@@ -16,7 +16,7 @@
 @x
 <chapter id="chapter-intro" xreflabel="Chapter 1">
 @y
-<chapter id="chapter-intro" xreflabel="第１章">
+<chapter id="chapter-intro" xreflabel="第1章">
 @z
 
 @x

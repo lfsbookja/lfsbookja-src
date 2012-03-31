@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,9 +25,9 @@
   kernel for the new LFS system, and installing the GRUB boot loader so
   that the LFS system can be selected for booting at startup.</para>
 @y
-<para>
-ここからは LFS システムをブート可能にしていきます。
-この章では <filename>fstab</filename> ファイルを作成し、LFS システムのカーネルを構築します。
-また GRUB のブートローダーをインストールして LFS システムの起動時にブートローダーを選択できるようにします。
-</para>
+  <para>
+  ここからは LFS システムをブート可能にしていきます。
+  この章では <filename>fstab</filename> ファイルを作成し、LFS システムのカーネルを構築します。
+  また GRUB のブートローダーをインストールして LFS システムの起動時にブートローダーを選択できるようにします。
+  </para>
 @z

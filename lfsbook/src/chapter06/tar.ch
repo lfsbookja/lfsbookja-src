@@ -22,19 +22,19 @@
 @x
     <title>Installation of Tar</title>
 @y
-    <title>Tar のインストール</title>
+    <title>&InstallationOf1;Tar&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Tar for compilation:</para>
 @y
-    <para>Tar をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Tar&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x FORCE_UNSAFE_CONFIGURE=1
@@ -55,7 +55,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -67,19 +67,19 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Tar</title>
 @y
-    <title>Tar の構成</title>
+    <title>&ContentsOf1;Tar&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
@@ -91,7 +91,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x rmt

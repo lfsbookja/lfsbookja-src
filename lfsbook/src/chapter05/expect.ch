@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,7 +25,7 @@
 @x
     <title>Installation of Expect</title>
 @y
-    <title>Expect のインストール</title>
+    <title>&InstallationOf1;Expect&InstallationOf2;</title>
 @z
 
 @x
@@ -43,13 +43,13 @@
 @x
     <para>Now prepare Expect for compilation:</para>
 @y
-    <para>Expect をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Expect&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -107,13 +107,13 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>make パラメータの意味：</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
 @z
 
 @x
@@ -129,21 +129,21 @@
 @x
     <title>Contents of Expect</title>
 @y
-    <title>Expect の構成</title>
+    <title>&ContentsOf1;Expect&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed program</segtitle>
       <segtitle>Installed library</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x expect

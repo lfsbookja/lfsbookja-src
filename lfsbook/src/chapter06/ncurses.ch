@@ -25,21 +25,19 @@
 @x
     <title>Installation of Ncurses</title>
 @y
-    <title>Ncurses のインストール</title>
+    <title>&InstallationOf1;Ncurses&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Ncurses for compilation:</para>
 @y
-    <para>
-    Ncurses をコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;Ncurses&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure option:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -65,7 +63,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -86,7 +84,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -157,7 +155,7 @@
 @x
     <title>Contents of Ncurses</title>
 @y
-    <title>Ncurses の構成</title>
+    <title>&ContentsOf1;Ncurses&ContentsOf2;</title>
 @z
 
 @x
@@ -165,9 +163,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -190,7 +188,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x captoinfo

@@ -103,7 +103,7 @@
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>make パラメータの意味：</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
 @z
 
 @x

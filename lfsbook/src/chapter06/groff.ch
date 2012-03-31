@@ -25,7 +25,7 @@
 @x
     <title>Installation of Groff</title>
 @y
-    <title>Groff のインストール</title>
+    <title>&InstallationOf1;Groff&InstallationOf2;</title>
 @z
 
 @x
@@ -49,25 +49,25 @@
 @x
     <para>Prepare Groff for compilation:</para>
 @y
-    <para>Groff をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Groff&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -82,15 +82,15 @@
 @x
   <title>Contents of Groff</title>
 @y
-  <title>Groff の構成</title>
+  <title>&ContentsOf1;Groff&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -118,7 +118,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x addftinfo

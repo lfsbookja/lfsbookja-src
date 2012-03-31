@@ -25,19 +25,19 @@
 @x
     <title>Installation of Libpipeline</title>
 @y
-    <title>Libpipeline のインストール</title>
+    <title>&InstallationOf1;Libpipeline&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Libpipeline for compilation:</para>
 @y
-    <para>Libpipeline をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Libpipeline&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -52,7 +52,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -64,25 +64,25 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Libpipeline</title>
 @y
-    <title>Libpipeline の構成</title>
+    <title>&ContentsOf1;Libpipeline&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed libraries</segtitle>
 @y
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libpipeline

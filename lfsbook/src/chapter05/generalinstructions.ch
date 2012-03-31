@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -64,18 +64,6 @@
     問題はないのですが、警告として画面表示されることになるわけです。
     </para>
 @z
-
-% @x
-%       <para>After installing each package, delete its source and build
-%       directories, unless specifically instructed otherwise. Deleting the
-%       sources prevents mis-configuration when the same package is reinstalled
-%       later.</para>
-% @y
-%       <para>
-%       各パッケージをインストールした後は、特に具体的な指示がない限りは、そのソースディレクトリやビルドディレクトリは削除してください。
-%       ソースディレクトリを削除するのは、後にもう一度そのパッケージをインストールする際に、構築のミスを防ぐためです。
-%       </para>
-% @z
 
 @x
     <para>Check one last time that the <envar>LFS</envar> environment variable

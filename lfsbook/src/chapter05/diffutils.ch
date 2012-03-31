@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-diffutils">
     <primary sortas="a-Diffutils">Diffutils</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Diffutils</title>
 @y
-    <title>Diffutils のインストール</title>
+    <title>&InstallationOf1;Diffutils&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Diffutils for compilation:</para>
 @y
-    <para>Diffutils をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Diffutils&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -58,7 +58,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -66,6 +66,6 @@
     <xref linkend="contents-diffutils" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-diffutils" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-diffutils" role=""/>&Details2;
     </para>
 @z

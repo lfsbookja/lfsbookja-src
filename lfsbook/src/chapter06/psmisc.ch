@@ -31,7 +31,7 @@
 @x
     <para>Prepare Psmisc for compilation:</para>
 @y
-    <para>Psmisc をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Psmisc&PreparePackage2;</para>
 @z
 
 @x

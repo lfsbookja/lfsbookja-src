@@ -27,23 +27,19 @@
 @x
     <title>Installation of MPC</title>
 @y
-    <title>MPC のインストール</title>
+    <title>&InstallationOf1;MPC&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare MPC for compilation:</para>
 @y
-    <para>
-    MPC をコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;MPC&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>
-    パッケージをコンパイルします。
-    </para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -57,27 +53,25 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>
-    パッケージをインストールします。
-    </para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of MPC</title>
 @y
-    <title>MPC の構成</title>
+    <title>&ContentsOf1;MPC&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed Libraries</segtitle>
 @y
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libmpc

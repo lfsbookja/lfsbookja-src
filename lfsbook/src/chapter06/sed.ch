@@ -22,19 +22,19 @@
 @x
     <title>Installation of Sed</title>
 @y
-    <title>Sed のインストール</title>
+    <title>&InstallationOf1;Sed&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Sed for compilation:</para>
 @y
-    <para>Sed をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Sed&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the new configure option:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
 @x
@@ -49,7 +49,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -67,7 +67,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -79,21 +79,21 @@
 @x
     <title>Contents of Sed</title>
 @y
-    <title>Sed の構成</title>
+    <title>&ContentsOf1;Sed&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed program</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

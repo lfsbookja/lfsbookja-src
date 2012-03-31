@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,14 +21,14 @@
 @y
   <indexterm zone="ch-tools-perl">
     <primary sortas="a-Perl">Perl</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Perl</title>
 @y
-    <title>Perl のインストール</title>
+    <title>&InstallationOf1;Perl&InstallationOf2;</title>
 @z
 
 @x
@@ -44,9 +44,7 @@
 @x
     <para>Prepare Perl for compilation:</para>
 @y
-    <para>
-    Perl をコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;Perl&PreparePackage2;</para>
 @z
 
 @x
@@ -78,6 +76,6 @@
     <xref linkend="contents-perl" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-perl" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-perl" role=""/>&Details2;
     </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -27,14 +27,14 @@
 @y
   <indexterm zone="ch-tools-linux-headers">
     <primary sortas="a-Linux">Linux</primary>
-    <secondary>ツール, API ヘッダー</secondary>
+    <secondary>&Tools;, API ヘッダー</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Linux API Headers</title>
 @y
-    <title>Linux API ヘッダーのインストール</title>
+    <title>&InstallationOf1;Linux API ヘッダー&InstallationOf2;</title>
 @z
 
 @x
@@ -76,6 +76,6 @@
     <xref linkend="contents-linux-headers" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-linux-headers" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-linux-headers" role=""/>&Details2;
     </para>
 @z

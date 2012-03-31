@@ -55,7 +55,7 @@
 @x
       <title>The meaning of the make option:</title>
 @y
-      <title>make オプションの意味：</title>
+      <title>&MeaningOfOption1;make&MeaningOfOption2;:</title>
 @z
 
 @x

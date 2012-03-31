@@ -562,6 +562,6 @@
     linkend="ch-bootable-grub"/>.</para>
 @y
       <para>
-      最後に新システムを起動可能とするために <xref linkend="ch-bootable-grub"/> を設定する必要があります。
+      最後に新システムを起動可能とするために <xref linkend="ch-bootable-grub"/>を設定する必要があります。
       </para>
 @z

@@ -25,7 +25,7 @@
 @x
     <title>Installation of Readline</title>
 @y
-    <title>Readline のインストール</title>
+    <title>&InstallationOf1;Readline&InstallationOf2;</title>
 @z
 
 @x
@@ -52,19 +52,19 @@
 @x
     <para>Prepare Readline for compilation:</para>
 @y
-    <para>Readline をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Readline&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
       <title>The meaning of the make option:</title>
 @y
-      <title>make オプションの意味：</title>
+      <title>&MeaningOfOption1;make&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -82,13 +82,13 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -120,15 +120,15 @@
 @x
     <title>Contents of Readline</title>
 @y
-    <title>Readline の構成</title>
+    <title>&ContentsOf1;Readline&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -144,7 +144,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

@@ -25,19 +25,19 @@
 @x
     <title>Installation of Autoconf</title>
 @y
-    <title>Autoconf のインストール</title>
+    <title>&InstallationOf1;Autoconf&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Autoconf for compilation:</para>
 @y
-    <para>Autoconf をコンパイルするための準備を行います。</para>
+    <para>&PreparePackage1;Autoconf&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -61,21 +61,21 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Autoconf</title>
 @y
-    <title>Autoconf の構成</title>
+    <title>&ContentsOf1;Autoconf&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -91,7 +91,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x autoconf

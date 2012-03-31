@@ -97,7 +97,7 @@
 @x
         <para>The output from the <xref linkend='version-check'/></para>
 @y
-        <para><xref linkend='version-check'/> の出力結果。</para>
+        <para><xref linkend='version-check'/>の出力結果。</para>
 @z
 
 @x

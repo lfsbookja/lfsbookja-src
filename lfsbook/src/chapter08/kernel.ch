@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,7 +22,7 @@
 @x
     <title>Installation of the kernel</title>
 @y
-    <title>カーネルのインストール</title>
+    <title>&InstallationOf1;カーネル&InstallationOf2;</title>
 @z
 
 @x
@@ -68,12 +68,9 @@
 @y
     <para>
     メニュー形式のインターフェースによりカーネルを設定します。
-    カーネルの設定方法に関する一般的な情報が
-    <ulink url="&hints-root;kernel-configuration.txt"/>
-    にあるので参照してください。
+    カーネルの設定方法に関する一般的な情報が <ulink url="&hints-root;kernel-configuration.txt"/> にあるので参照してください。
     BLFS では LFS が取り扱わない各種パッケージに対して、必要となるカーネル設定項目を説明しています。
-    <ulink url="&blfs-root;view/svn/longindex.html#kernel-config-index"/>
-    を参照してください。
+    <ulink url="&blfs-root;view/svn/longindex.html#kernel-config-index"/> を参照してください。
     </para>
 @z
 
@@ -89,7 +86,7 @@
 @x
       <title>The meaning of the make parameters:</title>
 @y
-      <title>make パラメータの意味：</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
 @z
 
 @x
@@ -99,8 +96,7 @@
 @y
           <para>
           これはホストのロケール設定を指示するものです。
-          この設定は UTF-8 での表示設定がされたテキストコンソールにて、
-          menuconfig の ncurses による行表示を適切に行うために必要となります。
+          この設定は UTF-8 での表示設定がされたテキストコンソールにて menuconfig の ncurses による行表示を適切に行うために必要となります。
           </para>
 @z
 
@@ -165,7 +161,7 @@
 @y
     <para>
     カーネルモジュールを利用する場合 <filename class="directory">/etc/modprobe.d</filename> ディレクトリ内での設定を必要とします。
-    モジュールやカーネル設定に関する情報は <xref linkend="ch-scripts-udev"/> や <filename
+    モジュールやカーネル設定に関する情報は <xref linkend="ch-scripts-udev"/>や <filename
     class="directory">linux-&linux-version;/Documentation</filename> ディレクトリにあるカーネルドキュメントを参照してください。
     また <filename>modprobe.conf(5)</filename> も有用です。
     </para>
@@ -184,8 +180,7 @@
 @y
     <para>
     カーネルのコンパイルが終わったら、インストールの完了に向けてあと少し作業を行います。
-    <filename class="directory">/boot</filename>
-    ディレクトリにいくつかのファイルをコピーします。
+    <filename class="directory">/boot</filename> ディレクトリにいくつかのファイルをコピーします。
     </para>
 @z
 
@@ -343,15 +338,15 @@
 @x
     <title>Contents of Linux</title>
 @y
-    <title>Linux の構成</title>
+    <title>&ContentsOf1;Linux&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed files</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールファイル</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledFiles;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -369,7 +364,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

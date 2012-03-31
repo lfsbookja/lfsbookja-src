@@ -105,7 +105,7 @@
   <para>
   本章のこれ以降と次章では、すべてのコマンドを chroot 環境内にて実行することが必要です。
   例えばシステムを再起動する場合のように chroot 環境からいったん抜け出した場合には、<xref
-  linkend="ch-system-bindmount"/> と <xref linkend="ch-system-kernfsmount"/> にて説明した仮想カーネルファイルシステムがマウントされていることを確認してください。
+  linkend="ch-system-bindmount"/>と <xref linkend="ch-system-kernfsmount"/>にて説明した仮想カーネルファイルシステムがマウントされていることを確認してください。
   そして chroot 環境に入り直してからインストール作業を再開してください。
   </para>
 @z

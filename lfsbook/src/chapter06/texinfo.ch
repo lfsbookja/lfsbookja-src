@@ -25,19 +25,19 @@
 @x
     <title>Installation of Texinfo</title>
 @y
-    <title>Texinfo のインストール</title>
+    <title>&InstallationOf1;Texinfo&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Texinfo for compilation:</para>
 @y
-    <para>Texinfo をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Texinfo&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -49,7 +49,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -64,7 +64,7 @@
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>make パラメータの意味：</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
 @z
 
 @x
@@ -97,15 +97,15 @@
 @x
     <title>Contents of Texinfo</title>
 @y
-    <title>Texinfo の構成</title>
+    <title>&ContentsOf1;Texinfo&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -121,7 +121,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x info

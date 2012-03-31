@@ -49,7 +49,7 @@
 @x
       <title>The meaning of the configure option:</title>
 @y
-      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x EMACS="no"

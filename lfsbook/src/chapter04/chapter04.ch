@@ -16,7 +16,7 @@
 @x
 <chapter id="chapter-final-preps" xreflabel="Chapter 4">
 @y
-<chapter id="chapter-final-preps" xreflabel="第４章">
+<chapter id="chapter-final-preps" xreflabel="第4章">
 @z
 
 @x

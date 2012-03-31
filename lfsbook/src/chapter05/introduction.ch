@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -27,8 +27,8 @@
 @y
   <para>
   この章では最小限の Linux システムを構築していく方法を示します。
-  このシステムは、最終的に <xref
-  linkend="chapter-building-system"/> にて LFS システムを構築するためのもので、そのために必要なツール類をすべて含んでいます。
+  このシステムは、最終的に<xref
+  linkend="chapter-building-system"/>にて LFS システムを構築するためのもので、そのために必要なツール類をすべて含んでいます。
   最小限とは言いつつも、取り扱いやすい実行環境を提供します。
   </para>
 @z

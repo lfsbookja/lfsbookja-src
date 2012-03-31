@@ -27,7 +27,7 @@
 @x
     <title>Installation of Patch</title>
 @y
-    <title>Patch のインストール</title>
+    <title>&InstallationOf1;Patch&InstallationOf2;</title>
 @z
 
 @x
@@ -42,13 +42,13 @@
 @x
     <para>Prepare Patch for compilation:</para>
 @y
-    <para>Patch をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Patch&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -62,25 +62,25 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Patch</title>
 @y
-    <title>Patch の構成</title>
+    <title>&ContentsOf1;Patch&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed program</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

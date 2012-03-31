@@ -124,7 +124,7 @@
 @x
     <title>Configuring Shadow</title>
 @y
-    <title>Shadow の設定</title>
+    <title>&Configuring1;Shadow&Configuring2;</title>
 @z
 
 @x

@@ -28,7 +28,7 @@
 @x
     <title>Installation of Bzip2</title>
 @y
-    <title>Bzip2 のインストール</title>
+    <title>&InstallationOf1;Bzip2&InstallationOf2;</title>
 @z
 
 @x
@@ -50,13 +50,13 @@
 @x
     <para>Prepare Bzip2 for compilation with:</para>
 @y
-    <para>Bzip2 をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Bzip2&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the make parameter:</title>
 @y
-      <title>make パラメーターの意味：</title>
+      <title>&MeaningOfParameter1;make&MeaningOfParameter2;:</title>
 @z
 
 @x
@@ -81,7 +81,7 @@
 @x
     <para>Install the programs:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -99,7 +99,7 @@
 @x
     <title>Contents of Bzip2</title>
 @y
-    <title>Bzip2 の構成</title>
+    <title>&ContentsOf1;Bzip2&ContentsOf2;</title>
 @z
 
 @x
@@ -107,9 +107,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -129,7 +129,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x bunzip2

@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          ソース全般整形。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           訳出漏れの訂正。
           </para>
         </listitem>

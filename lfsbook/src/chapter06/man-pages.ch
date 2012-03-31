@@ -24,7 +24,7 @@
 @x
     <title>Installation of Man-pages</title>
 @y
-    <title>Man-pages のインストール</title>
+    <title>&InstallationOf1;Man-pages&InstallationOf2;</title>
 @z
 
 @x
@@ -36,13 +36,13 @@
 @x
     <title>Contents of Man-pages</title>
 @y
-    <title>Man-pages の構成</title>
+    <title>&ContentsOf1;Man-pages&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed files</segtitle>
 @y
-      <segtitle>インストールファイル</segtitle>
+      <segtitle>&InstalledFiles;</segtitle>
 @z
 
 @x
@@ -54,7 +54,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x
@@ -73,7 +73,7 @@
           C 言語の関数、重要なデバイスファイル、重要な設定ファイルなどを説明します。
           </para>
           <indexterm zone="ch-system-man-pages man-pages">
-            <primary sortas="e-man-pages">man pages</primary>
+            <primary sortas="e-man-pages">man ページ</primary>
           </indexterm>
         </listitem>
 @z

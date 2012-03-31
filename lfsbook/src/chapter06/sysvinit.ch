@@ -25,7 +25,7 @@
 @x
     <title>Installation of Sysvinit</title>
 @y
-    <title>Sysvinit のインストール</title>
+    <title>&InstallationOf1;Sysvinit&InstallationOf2;</title>
 @z
 
 @x
@@ -64,31 +64,31 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>本パッケージにテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Sysvinit</title>
 @y
-    <title>Sysvinit の構成</title>
+    <title>&ContentsOf1;Sysvinit&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
@@ -106,7 +106,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x bootlogd

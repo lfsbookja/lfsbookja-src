@@ -23,7 +23,7 @@
 @x
     <title>Installation of MPFR</title>
 @y
-    <title>MPFR のインストール</title>
+    <title>&InstallationOf1;MPFR&InstallationOf2;</title>
 @z
 
 @x
@@ -35,13 +35,13 @@
 @x
     <para>Prepare MPFR for compilation:</para>
 @y
-    <para>MPFR をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;MPFR&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -65,7 +65,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -77,21 +77,21 @@
 @x
     <title>Contents of MPFR</title>
 @y
-    <title>MPFR の構成</title>
+    <title>&ContentsOf1;MPFR&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

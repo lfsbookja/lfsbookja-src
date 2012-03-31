@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -18,25 +18,25 @@
     <secondary>tools</secondary>
 @y
     <primary sortas="a-File">File</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
 @z
 
 @x
     <title>Installation of File</title>
 @y
-    <title>File のインストール</title>
+    <title>&InstallationOf1;File&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare File for compilation:</para>
 @y
-    <para>File をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;File&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -54,7 +54,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -62,6 +62,6 @@
     <xref linkend="contents-file" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-file" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-file" role=""/>&Details2;
     </para>
 @z

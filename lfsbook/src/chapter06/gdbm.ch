@@ -30,19 +30,19 @@
 @x
     <title>Installation of GDBM</title>
 @y
-    <title>GDBM のインストール</title>
+    <title>&InstallationOf1;GDBM&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare GDBM for compilation:</para>
 @y
-    <para>GDBM をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;GDBM&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure option:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x --enable-libgdbm-compat
@@ -59,7 +59,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -71,21 +71,21 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of GDBM</title>
 @y
-    <title>GDBM の構成</title>
+    <title>&ContentsOf1;GDBM&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed program</segtitle>
       <segtitle>Installed libraries</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
 @z
 
 @x
@@ -99,7 +99,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x testgdbm

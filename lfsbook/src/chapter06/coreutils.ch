@@ -25,7 +25,7 @@
 @x
     <title>Installation of Coreutils</title>
 @y
-    <title>Coreutils のインストール</title>
+    <title>&InstallationOf1;Coreutils&InstallationOf2;</title>
 @z
 
 @x
@@ -66,13 +66,13 @@
 @x
     <para>Now prepare Coreutils for compilation:</para>
 @y
-    <para>Coreutils をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Coreutils&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -152,7 +152,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -181,7 +181,7 @@
 @x
     <title>Contents of Coreutils</title>
 @y
-    <title>Coreutils の構成</title>
+    <title>&ContentsOf1;Coreutils&ContentsOf2;</title>
 @z
 
 @x
@@ -189,9 +189,9 @@
       <segtitle>Installed library</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -223,7 +223,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x base64

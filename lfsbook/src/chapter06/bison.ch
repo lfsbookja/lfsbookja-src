@@ -22,13 +22,13 @@
 @x
     <title>Installation of Bison</title>
 @y
-    <title>Bison のインストール</title>
+    <title>&InstallationOf1;Bison&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Bison for compilation:</para>
 @y
-    <para>Bison をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Bison&PreparePackage2;</para>
 @z
 
 @x
@@ -46,7 +46,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -58,13 +58,13 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Bison</title>
 @y
-    <title>Bison の構成</title>
+    <title>&ContentsOf1;Bison&ContentsOf2;</title>
 @z
 
 @x
@@ -72,9 +72,9 @@
       <segtitle>Installed library</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -86,7 +86,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x bison

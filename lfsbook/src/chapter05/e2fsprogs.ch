@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -16,7 +16,7 @@
 @x
     <title>Installation of E2fsprogs</title>
 @y
-    <title>E2fsprogs のインストール</title>
+    <title>&InstallationOf1;E2fsprogs&InstallationOf2;</title>
 @z
 
 @x
@@ -31,13 +31,13 @@
 @x
     <para>Prepare E2fsprogs for compilation:</para>
 @y
-    <para>E2fsprogs をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;E2fsprogs&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -63,6 +63,6 @@
     <xref linkend="contents-e2fsprogs" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-e2fsprogs" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-e2fsprogs" role=""/>&Details2;
     </para>
 @z

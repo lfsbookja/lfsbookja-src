@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-gzip">
     <primary sortas="a-Gzip">Gzip</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Gzip</title>
 @y
-    <title>Gzip のインストール</title>
+    <title>&InstallationOf1;Gzip&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Gzip for compilation:</para>
 @y
-    <para>Gzip をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Gzip&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -58,7 +58,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -66,6 +66,6 @@
     <xref linkend="contents-gzip" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-gzip" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-gzip" role=""/>&Details2;
     </para>
 @z

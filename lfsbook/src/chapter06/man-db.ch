@@ -25,19 +25,19 @@
 @x
     <title>Installation of Man-DB</title>
 @y
-    <title>Man-DB のインストール</title>
+    <title>&InstallationOf1;Man-DB&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Man-DB for compilation:</para>
 @y
-    <para>Man-DB をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Man-DB&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x PKG_CONFIG=, libpipeline_ ...
@@ -86,7 +86,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -98,7 +98,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -416,15 +416,15 @@
 @x
     <title>Contents of Man-DB</title>
 @y
-    <title>Man-DB の構成</title>
+    <title>&ContentsOf1;Man-DB&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -440,7 +440,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x accessdb

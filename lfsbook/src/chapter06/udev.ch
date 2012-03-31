@@ -25,7 +25,7 @@
 @x
     <title>Installation of Udev</title>
 @y
-    <title>Udev のインストール</title>
+    <title>&InstallationOf1;Udev&InstallationOf2;</title>
 @z
 
 @x
@@ -51,15 +51,13 @@
 @x
     <para>Prepare the package for compilation:</para>
 @y
-    <para>
-    パッケージをコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;パッケージ&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the new configure options</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x --libexecdir=/lib
@@ -93,22 +91,10 @@
           </para>
 @z
 
-% @x
-%           <para>This option prevents Udev's instrospection feature, which
-%           requires packages not installed as part of the base LFS system.  See
-%           the Udev <filename>README</filename> file for more information.</para>
-% @y
-%           <para>
-%           このオプションは Udev のイントロスペクション (introspection) 機能を無効にします。
-%           この機能は、LFS システムにてインストールするパッケージではなく、別のパッケージにて必要となるものです。
-%           詳しくは Udev の <filename>README</filename> ファイルを参照してください。
-%           </para>
-% @z
-
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -120,7 +106,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -151,7 +137,7 @@
 @x
     <title>Contents of Udev</title>
 @y
-    <title>Udev の構成</title>
+    <title>&ContentsOf1;Udev&ContentsOf2;</title>
 @z
 
 @x
@@ -159,9 +145,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -183,7 +169,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x ata_id
@@ -305,7 +291,7 @@
           optical drives (see also <xref linkend="ch-scripts-symlinks"/>)</para>
 @y
           <para>
-          光学ドライブに対する固定的な名称を定めた Udev ルールを生成するためのスクリプト。(<xref linkend="ch-scripts-symlinks"/> も参照のこと。)
+          光学ドライブに対する固定的な名称を定めた Udev ルールを生成するためのスクリプト。(<xref linkend="ch-scripts-symlinks"/>も参照のこと。)
           </para>
 @z
 
@@ -315,7 +301,7 @@
           </para>
 @y
           <para>
-          ネットワークインターフェースに対する固定的な名称を定めた Udev ルールを生成するためのスクリプト。 (<xref linkend="ch-scripts-network"/> も参照のこと。)
+          ネットワークインターフェースに対する固定的な名称を定めた Udev ルールを生成するためのスクリプト。 (<xref linkend="ch-scripts-network"/>も参照のこと。)
           </para>
 @z
 

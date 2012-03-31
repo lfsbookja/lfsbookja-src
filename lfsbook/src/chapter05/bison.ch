@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -12,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-bison">
     <primary sortas="a-Bison">Bison</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Bison</title>
 @y
-    <title>Bison のインストール</title>
+    <title>&InstallationOf1;Bison&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Bison for compilation:</para>
 @y
-    <para>Bison をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Bison&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -43,7 +52,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -51,6 +60,6 @@
     <xref linkend="contents-bison" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-bison" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-bison" role=""/>&Details2;
     </para>
 @z

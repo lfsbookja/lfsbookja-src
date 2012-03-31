@@ -22,19 +22,19 @@
 @x
     <title>Installation of Make</title>
 @y
-    <title>Make のインストール</title>
+    <title>&InstallationOf1;Make&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Make for compilation:</para>
 @y
-    <para>Make をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Make&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -46,25 +46,25 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Make</title>
 @y
-    <title>Make の構成</title>
+    <title>&ContentsOf1;Make&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed program</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

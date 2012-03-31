@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -25,13 +25,13 @@
 @x
     <title>Installation of DejaGNU</title>
 @y
-    <title>DejaGNU のインストール</title>
+    <title>&InstallationOf1;DejaGNU&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare DejaGNU for compilation:</para>
 @y
-    <para>DejaGNU をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;DejaGNU&PreparePackage2;</para>
 @z
 
 @x
@@ -49,19 +49,19 @@
 @x
     <title>Contents of DejaGNU</title>
 @y
-    <title>DejaGNUの構成</title>
+    <title>&ContentsOf1;DejaGNU&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed program</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

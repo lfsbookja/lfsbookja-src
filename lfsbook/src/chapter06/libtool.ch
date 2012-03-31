@@ -27,19 +27,19 @@
 @x
     <title>Installation of Libtool</title>
 @y
-    <title>Libtool のインストール</title>
+    <title>&InstallationOf1;Libtool&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Libtool for compilation:</para>
 @y
-    <para>Libtool をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Libtool&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -51,13 +51,13 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Libtool</title>
 @y
-    <title>Libtool の構成</title>
+    <title>&ContentsOf1;Libtool&ContentsOf2;</title>
 @z
 
 @x
@@ -65,9 +65,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -83,7 +83,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libtool

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -27,14 +27,14 @@
 @y
   <indexterm zone="ch-tools-gcc-pass2">
     <primary sortas="a-GCC">GCC</primary>
-    <secondary>ツール, 2回め</secondary>
+    <secondary>&Tools;, 2回め</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of GCC</title>
 @y
-    <title>GCC のインストール</title>
+    <title>&InstallationOf1;GCC&InstallationOf2;</title>
 @z
 
 @x
@@ -187,17 +187,13 @@
 @x
     <para>Now prepare GCC for compilation:</para>
 @y
-    <para>
-    GCC をコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;GCC&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the new configure options:</title>
 @y
-    <title>
-    configure オプションの意味：
-    </title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -284,13 +280,13 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -369,7 +365,7 @@
     <command>echo $PATH</command> を実行して、実行パスリストの先頭が <filename class="directory">/tools/bin</filename> であるかどうか確認します。
     <envar>PATH</envar> が間違っていたなら、実はあなたは <systemitem
     class="username">lfs</systemitem> ユーザーでログインしていないのかもしれませんし <xref
-    linkend="ch-tools-settingenviron" role=""/> での作業に間違いがあったのかもしれません。
+    linkend="ch-tools-settingenviron" role=""/>での作業に間違いがあったのかもしれません。
     </para>
 @z
 
@@ -386,6 +382,6 @@
     <xref linkend="contents-gcc" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-gcc" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-gcc" role=""/>&Details2;
     </para>
 @z

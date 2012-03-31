@@ -26,7 +26,7 @@
 @x
     <title>Installation of GMP</title>
 @y
-    <title>GMP のインストール</title>
+    <title>&InstallationOf1;GMP&InstallationOf2;</title>
 @z
 
 @x
@@ -44,15 +44,13 @@
 @x
     <para>Prepare GMP for compilation:</para>
 @y
-    <para>
-    GMP をコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;GMP&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the new configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -72,17 +70,17 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
       <para>The test suite for GMP in this section is considered critical.
       Do not skip it under any circumstances.</para>
 @y
-    <para>
-    本節における GMP のテストスイートは極めて重要なものです。
-    したがってどのような場合であっても必ず実行してください。
-    </para>
+      <para>
+      本節における GMP のテストスイートは極めて重要なものです。
+      したがってどのような場合であっても必ず実行してください。
+      </para>
 @z
 
 @x
@@ -104,7 +102,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -116,15 +114,15 @@
 @x
     <title>Contents of GMP</title>
 @y
-    <title>GMP の構成</title>
+    <title>&ContentsOf1;GMP&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -136,7 +134,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

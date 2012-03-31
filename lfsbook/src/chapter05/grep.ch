@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-grep">
     <primary sortas="a-Grep">Grep</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Grep</title>
 @y
-    <title>Grep のインストール</title>
+    <title>&InstallationOf1;Grep&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Grep for compilation:</para>
 @y
-    <para>Grep をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Grep&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure switches:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -58,7 +58,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -84,6 +84,6 @@
     <xref linkend="contents-grep" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-grep" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-grep" role=""/>&Details2;
     </para>
 @z

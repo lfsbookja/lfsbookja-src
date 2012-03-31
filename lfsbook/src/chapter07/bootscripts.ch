@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -31,27 +31,27 @@
 @x
     <title>Installation of LFS-Bootscripts</title>
 @y
-    <title>LFS ブートスクリプトのインストール</title>
+    <title>&InstallationOf1;LFS ブートスクリプト&InstallationOf2;</title>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of LFS-Bootscripts</title>
 @y
-    <title>LFS ブートスクリプトの構成</title>
+    <title>&ContentsOf1;LFS ブートスクリプト&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed scripts</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールスクリプト</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledScripts;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x checkfs

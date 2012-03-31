@@ -21,7 +21,7 @@
 @y
   <indexterm zone="ch-tools-glibc">
     <primary sortas="a-Glibc">Glibc</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
@@ -93,7 +93,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -158,7 +158,7 @@
           support is available without it having to run the test.</para>
 @y
           <para>
-          <xref linkend="ch-tools-binutils-pass1"/> においてインストールしたリンカーは、クロスコンパイルにより生成したものです。
+          <xref linkend="ch-tools-binutils-pass1"/>においてインストールしたリンカーは、クロスコンパイルにより生成したものです。
           これは Glibc をインストールするまでは使えません。
           これはつまり force-unwind サポートに対するテストは失敗することを意味します。
           正しく動作するリンカーに依存するためです。

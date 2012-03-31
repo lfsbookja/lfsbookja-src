@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -44,9 +44,9 @@
   the most educational value at the same time.</para>
 @y
   <para>
-  <xref linkend="chapter-temporary-tools"/> の最終目標は一時的なシステム環境を構築することです。
+  <xref linkend="chapter-temporary-tools"/>の最終目標は一時的なシステム環境を構築することです。
   この一時的なシステムには、システム構築のための十分なツール類を有し、ホストシステムとは切り離されたものです。
-  この環境へは chroot によって移行します。この環境は <xref linkend="chapter-building-system"/> において、クリーンでトラブルのない LFS システムの構築を行う土台となるものです。
+  この環境へは chroot によって移行します。この環境は<xref linkend="chapter-building-system"/>において、クリーンでトラブルのない LFS システムの構築を行う土台となるものです。
   構築手順の説明においては、初心者の方であっても失敗を最小限にとどめ、同時に最大限の学習材料となるように心がけています。
   </para>
 @z
@@ -65,7 +65,7 @@
   <quote>三つの組</quote>は <command>config.guess</command> スクリプトを実行することで簡単に確認できます。
   そのスクリプトは多くのパッケージのソースに含まれています。
   Binutils パッケージのソースを伸張 (解凍) し <userinput>./config.guess</userinput> スクリプトを実行してその出力を確認してみてください。
-  例えば最近の３２ビット Intel プロセッサーでは <emphasis>i686-pc-linux-gnu</emphasis> のような出力が得られます。
+  例えば最近の 32 ビット Intel プロセッサーでは <emphasis>i686-pc-linux-gnu</emphasis> のような出力が得られます。
   </para>
 @z
 
@@ -101,7 +101,7 @@
   linkend="chapter-temporary-tools"/> build method works:</para>
 @y
   <para>
-  <xref linkend="chapter-temporary-tools"/> におけるビルド手順がどのように機能するのか、その技術的な情報を以下に示します。
+  <xref linkend="chapter-temporary-tools"/>におけるビルド手順がどのように機能するのか、その技術的な情報を以下に示します。
   </para>
 @z
 
@@ -321,7 +321,7 @@
   <para>
   Binutils の2回めのビルドにおいては <command>ld</command> コマンドのライブラリ検索パスを設定するために configure の <parameter>--with-lib-path</parameter> オプションを指定します。
   それ以降ツールチェーンの核となるツール類は、自分自身から作り出された (self-contained) 自分だけで処理できる (self-hosted) 形となります。
-  <xref linkend="chapter-temporary-tools"/> において構築する残りのパッケージは <filename
+  <xref linkend="chapter-temporary-tools"/>において構築する残りのパッケージは <filename
   class="directory">/tools</filename> ディレクトリの新しい Glibc を用いてビルドされます。
   </para>
 @z
@@ -336,7 +336,7 @@
   LFS system.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/> での chroot による環境下では、実質的なパッケージとして Glibc を初めにビルドします。
+  <xref linkend="chapter-building-system"/>での chroot による環境下では、実質的なパッケージとして Glibc を初めにビルドします。
   これは上に述べているように自己完結した性質を目指すためです。
   <filename class="directory">/usr</filename> に Glibc をインストールしたら、ツールチェーンのデフォルトディレクトリの変更を行い LFS システムを構築する残りのパッケージをビルドしていきます。
   </para>

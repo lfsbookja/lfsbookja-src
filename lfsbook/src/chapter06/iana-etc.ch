@@ -25,7 +25,7 @@
 @x
     <title>Installation of Iana-Etc</title>
 @y
-    <title>Iana-Etc のインストール</title>
+    <title>&InstallationOf1;Iana-Etc&InstallationOf2;</title>
 @z
 
 @x
@@ -42,25 +42,25 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>このパッケージにはテストスイートはありません。</para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Iana-Etc</title>
 @y
-    <title>Iana-Etc の構成</title>
+    <title>&ContentsOf1;Iana-Etc&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed files</segtitle>
 @y
-      <segtitle>インストールファイル</segtitle>
+      <segtitle>&InstalledFiles;</segtitle>
 @z
 
 @x
@@ -72,7 +72,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x /etc/protocols

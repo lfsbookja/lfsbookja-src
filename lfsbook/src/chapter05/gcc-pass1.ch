@@ -27,7 +27,7 @@
 @y
   <indexterm zone="ch-tools-gcc-pass1">
     <primary sortas="a-GCC">GCC</primary>
-    <secondary>ツール, 1回め</secondary>
+    <secondary>&Tools;, 1回め</secondary>
   </indexterm>
 @z
 
@@ -67,16 +67,6 @@
     </para></note>
 @z
 
-% @x
-% <para>Apply a patch that will allow the building of the libiberty and zlib
-% target libraries to be disabled as these do not build correctly in a
-% cross-compiled environment:</para>
-% @y
-% <para>
-% クロスコンパイル時に libiberty や zlib は正しくビルド出来ないため、これらをビルドしないようにするパッチを適用します。
-% </para>
-% @z
-
 @x
     <para>The GCC documentation recommends building GCC outside of the
     source directory in a dedicated build directory:</para>
@@ -95,7 +85,7 @@
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>&MeaningOfConfigure1;configure&MeaningOfConfigure2;:</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -142,22 +132,6 @@
           この時点で必要なのはこの言語だけだからです。
           </para>
 @z
-
-%@x
-%          <para>This option tells GCC where the GMP headers are located.</para>
-%@y
-%          <para>
-%          このオプションは GCC に対して GMP のヘッダーファイルの場所を指定するものです。
-%          </para>
-%@z
-
-%@x
-%          <para>This option tells GCC where the GMP library is located.</para>
-%@y
-%          <para>
-%          このオプションは GCC に対して GMP のライブラリファイルの場所を指定するものです。
-%          </para>
-%@z
 
 @x --without-ppl, --without-cloog
           <para>These switches prevent GCC from building against the PPL and

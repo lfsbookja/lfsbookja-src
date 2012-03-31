@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-gawk">
     <primary sortas="a-Gawk">Gawk</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Gawk</title>
 @y
-    <title>Gawk のインストール</title>
+    <title>&InstallationOf1;Gawk&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Gawk for compilation:</para>
 @y
-    <para>Gawk をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Gawk&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -58,7 +58,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -66,6 +66,6 @@
     <xref linkend="contents-gawk" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-gawk" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-gawk" role=""/>&Details2;
     </para>
 @z

@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-gmp">
     <primary sortas="a-GMP">GMP</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of GMP</title>
 @y
-    <title>GMP のインストール</title>
+    <title>&InstallationOf1;GMP&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare GMP for compilation:</para>
 @y
-    <para>GMP をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;GMP&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure option:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x
@@ -54,7 +54,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -79,4 +79,3 @@
 を参照してください。
 </para>
 @z
-

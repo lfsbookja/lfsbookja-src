@@ -29,19 +29,19 @@
 @x
     <title>Installation of Gettext</title>
 @y
-    <title>Gettext のインストール</title>
+    <title>&InstallationOf1;Gettext&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Gettext for compilation:</para>
 @y
-    <para>Gettext をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Gettext&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -56,13 +56,13 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
     <title>Contents of Gettext</title>
 @y
-    <title>Gettext の構成</title>
+    <title>&ContentsOf1;Gettext&ContentsOf2;</title>
 @z
 
 @x
@@ -70,9 +70,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -98,7 +98,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x autopoint

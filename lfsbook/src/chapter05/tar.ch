@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -21,26 +21,26 @@
 @y
   <indexterm zone="ch-tools-tar">
     <primary sortas="a-Tar">Tar</primary>
-    <secondary>ツール</secondary>
+    <secondary>&Tools;</secondary>
   </indexterm>
 @z
 
 @x
     <title>Installation of Tar</title>
 @y
-    <title>Tar のインストール</title>
+    <title>&InstallationOf1;Tar&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Tar for compilation:</para>
 @y
-    <para>Tar をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Tar&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -58,7 +58,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -66,6 +66,6 @@
     <xref linkend="contents-tar" role="."/></para>
 @y
     <para>
-    本パッケージの詳細は <xref linkend="contents-tar" role=""/>を参照してください。
+    &Details1;<xref linkend="contents-tar" role=""/>&Details2;
     </para>
 @z

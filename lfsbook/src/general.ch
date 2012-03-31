@@ -53,8 +53,10 @@
 <!ENTITY CompileThePackage    "パッケージをコンパイルします。">
 <!ENTITY NotExistTestsuite    "このパッケージにテストスイートはありません。">
 <!ENTITY InstallThePackage    "パッケージをインストールします。">
-<!ENTITY MeaningOfConfigure1  "">
-<!ENTITY MeaningOfConfigure2  " オプションの意味">
+<!ENTITY MeaningOfOption1     "">
+<!ENTITY MeaningOfOption2     " オプションの意味">
+<!ENTITY MeaningOfParameter1  "">
+<!ENTITY MeaningOfParameter2  " パラメーターの意味">
 <!ENTITY Configuring1         "">
 <!ENTITY Configuring2         " の設定">
 <!ENTITY ContentsOf1          "">
@@ -62,6 +64,9 @@
 <!ENTITY InstalledProgram     "インストールプログラム">
 <!ENTITY InstalledLibrary     "インストールライブラリ">
 <!ENTITY InstalledDirectory   "インストールディレクトリ">
+<!ENTITY InstalledHeaders     "インストールヘッダー">
+<!ENTITY InstalledFiles       "インストールファイル">
+<!ENTITY InstalledScripts     "インストールスクリプト">
 <!--
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledLibrary;</segtitle>
@@ -69,7 +74,7 @@
 -->
 <!ENTITY ShortDescriptions    "概略説明">
 <!ENTITY Details1             "本パッケージの詳細は ">
-<!ENTITY Details2             " を参照してください。">
+<!ENTITY Details2             "を参照してください。">
 
 <!ENTITY Homepage             "ホームページ">
 <!ENTITY Download             "ダウンロード">

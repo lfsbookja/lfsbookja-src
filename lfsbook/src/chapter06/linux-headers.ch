@@ -43,7 +43,7 @@
 @x
     <title>Installation of Linux API Headers</title>
 @y
-    <title>Linux API ヘッダーのインストール</title>
+    <title>&InstallationOf1;Linux API ヘッダー&InstallationOf2;</title>
 @z
 
 @x
@@ -87,21 +87,21 @@
 @x
     <title>Contents of Linux API Headers</title>
 @y
-    <title>Linux API ヘッダーの構成</title>
+    <title>&ContentsOf1;Linux API ヘッダー&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed headers</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールヘッダー</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledHeaders;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

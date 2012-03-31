@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,10 +30,8 @@
   convenience.  Installation is normally done via instructions in <xref
   linkend='ch-system-udev'/>.  </para>
 @y
-<para>
-本付録にて &udev-config;.tar.bz2 に含まれるルールを列記します。
-インストール手順は <xref linkend='ch-system-udev'/>
-を参照してください。
-</para>
+  <para>
+  本付録にて &udev-config;.tar.bz2 に含まれるルールを列記します。
+  インストール手順は <xref linkend='ch-system-udev'/>を参照してください。
+  </para>
 @z
-

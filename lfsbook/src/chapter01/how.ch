@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -76,12 +76,12 @@
   work your way through <xref linkend="chapter-temporary-tools"/> and beyond.</para>
 @y
   <para>
-  <xref linkend="chapter-partitioning"/> では、新しく構築する Linux のためのパーティションとファイルシステムの生成方法について説明します。
+  <xref linkend="chapter-partitioning"/>では、新しく構築する Linux のためのパーティションとファイルシステムの生成方法について説明します。
   そのパーティション上にて LFS システムをコンパイルしインストールします。
-  <xref linkend="chapter-getting-materials"/> では LFS 構築に必要となるパッケージとパッチについて説明します。
+  <xref linkend="chapter-getting-materials"/>では LFS 構築に必要となるパッケージとパッチについて説明します。
   これらをダウンロードして新たなファイルシステム内に保存します。
-  <xref linkend="chapter-final-preps"/> では作業環境の準備について述べています。
-  この章では重要な説明を行っていますので <xref linkend="chapter-temporary-tools"/> 以降に進む前に是非注意して読んでください。
+  <xref linkend="chapter-final-preps"/>は作業環境の準備について述べています。
+  この章では重要な説明を行っていますので、<xref linkend="chapter-temporary-tools"/>以降に進む前に是非注意して読んでください。
   </para>
 @z
 
@@ -94,9 +94,9 @@
   to compile a compiler, you need a compiler.</para>
 @y
   <para>
-  <xref linkend="chapter-temporary-tools"/> では数多くのパッケージをインストールします。
-  これらは基本的な開発ツール (ツールチェーン) を構成するものであり <xref
-  linkend="chapter-building-system"/> において最終的なシステムを構築するために利用します。
+  <xref linkend="chapter-temporary-tools"/>では数多くのパッケージをインストールします。
+  これらは基本的な開発ツール (ツールチェーン) を構成するものであり、<xref
+  linkend="chapter-building-system"/>において最終的なシステムを構築するために利用します。
   パッケージの中には自分自身を循環的に必要とするような依存関係を持つものがあります。
   例えばコンパイラーをコンパイルするためにはコンパイラーが必要となります。
   </para>
@@ -116,14 +116,14 @@
   kernel. </para>
 @y
   <para>
-  <xref linkend="chapter-temporary-tools"/> ではツールチェーンの第1回めの構築方法を示します。
+  <xref linkend="chapter-temporary-tools"/>ではツールチェーンの第1回めの構築方法を示します。
   そこではまず Binutils と GCC を構築します。
   (第1回めと表現しているということは、つまりこれら2つのパッケージは後に再構築します。)
   次に C ライブラリである Glibc を構築します。
   Glibc は第1回めのツールチェーンを用いてコンパイルされます。
   そして第2回めのツールチェーン構築を行います。
   この時のツールチェーンは新たに構築した Glibc をリンクします。
-  それ以降の <xref linkend="chapter-temporary-tools"/> に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
+  それ以降の<xref linkend="chapter-temporary-tools"/>に示すパッケージは第2回めのツールチェーンプログラムを用いて構築します。
   上の作業をすべて終えたら LFS のインストール作業はもはやホストディストリビューションに依存しません。
   ただし作動させるカーネルだけは使い続けます。
   </para>
@@ -136,7 +136,7 @@
 @y
   <para>
   ホストシステムのツール類から新しいシステムを切り離していくこの手順は、やり過ぎのように見えるかもしれません。
-  <xref linkend="ch-tools-toolchaintechnotes"/> にて詳細に説明しているので参照してください。
+  <xref linkend="ch-tools-toolchaintechnotes"/>にて詳細に説明しているので参照してください。
   </para>
 @z
 
@@ -154,7 +154,7 @@
   normal.</para>
 @y
   <para>
-  <xref linkend="chapter-building-system"/> にて LFS システムが出来上がります。
+  <xref linkend="chapter-building-system"/>にて LFS システムが出来上がります。
   <command>chroot</command> (ルートをチェンジする) プログラムを使って仮想的な環境に入り LFS パーティション内のディレクトリをルートディレクトリとしてシェルを起動します。
   これは LFS パーティションをルートパーティションとするシステム再起動と同じことです。
   ただ実際にはシステムを再起動はしません。
@@ -173,8 +173,8 @@
   ready to reboot into the new LFS system.</para>
 @y
   <para>
-  インストールの仕上げとして <xref linkend="chapter-bootscripts"/> にて LFS ブートスクリプトを設定し、<xref linkend="chapter-bootable"/> にてカーネルとブートローダーを設定します。
-  <xref linkend="chapter-finalizing"/> では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
+  インストールの仕上げとして<xref linkend="chapter-bootscripts"/>にて LFS ブートスクリプトを設定し、<xref linkend="chapter-bootable"/>にてカーネルとブートローダーを設定します。
+  <xref linkend="chapter-finalizing"/>では LFS システム構築経験を踏まえて、その先に進むための情報を示します。
   本書に示す作業をすべて実施すれば、新たな LFS システムを起動することが出来ます。
   </para>
 @z

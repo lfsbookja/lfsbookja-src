@@ -22,15 +22,13 @@
 @x
     <title>Installation of GRUB</title>
 @y
-    <title>GRUB のインストール</title>
+    <title>&InstallationOf1;GRUB&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare GRUB for compilation:</para>
 @y
-    <para>
-    GRUB をコンパイルするための準備をします。
-    </para>
+    <para>&PreparePackage1;GRUB&PreparePackage2;</para>
 @z
 
 @x
@@ -45,23 +43,19 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>
-    パッケージをコンパイルします。
-    </para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    このパッケージにテストスイートはありません。
-    </para>
+    <para>&NotExistTestsuite;</para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -76,15 +70,15 @@
 @x
     <title>Contents of GRUB</title>
 @y
-    <title>GRUB の構成</title>
+    <title>&ContentsOf1;GRUB&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -106,7 +100,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x grub-bin2h

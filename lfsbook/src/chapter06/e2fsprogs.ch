@@ -31,7 +31,7 @@
 @x
     <title>Installation of E2fsprogs</title>
 @y
-    <title>E2fsprogs のインストール</title>
+    <title>&InstallationOf1;E2fsprogs&InstallationOf2;</title>
 @z
 
 @x
@@ -46,13 +46,13 @@
 @x
     <para>Prepare E2fsprogs for compilation:</para>
 @y
-    <para>E2fsprogs をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;E2fsprogs&PreparePackage2;</para>
 @z
 
 @x
       <title>The meaning of the configure options:</title>
 @y
-      <title>configure オプションの意味：</title>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
 @x PKG_CONFIG...
@@ -102,11 +102,9 @@
           them earlier.</para>
 @y
           <para>
-          このオプションは
-          <systemitem class="library">libuuid</systemitem> ライブラリ、
-          <systemitem class="library">libblkid</systemitem> ライブラリ、
-          <systemitem class="daemon">uuidd</systemitem> デーモン、
-          <command>fsck</command> ラッパーをいずれもビルドせずインストールしないようにします。
+          このオプションは <systemitem class="library">libuuid</systemitem> ライブラリ、<systemitem
+          class="library">libblkid</systemitem> ライブラリ、<systemitem
+          class="daemon">uuidd</systemitem> デーモン、<command>fsck</command> ラッパーをいずれもビルドせずインストールしないようにします。
           これらは Util-Linux パッケージによって既にインストールされています。
           </para>
 @z
@@ -114,7 +112,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x
@@ -191,7 +189,7 @@
 @x
     <title>Contents of E2fsprogs</title>
 @y
-    <title>E2fsprogs の構成</title>
+    <title>&ContentsOf1;E2fsprogs&ContentsOf2;</title>
 @z
 
 @x
@@ -199,9 +197,9 @@
       <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directory</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -229,7 +227,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x badblocks

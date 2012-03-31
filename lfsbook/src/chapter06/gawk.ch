@@ -22,19 +22,19 @@
 @x
     <title>Installation of Gawk</title>
 @y
-    <title>Gawk のインストール</title>
+    <title>&InstallationOf1;Gawk&InstallationOf2;</title>
 @z
 
 @x
     <para>Prepare Gawk for compilation:</para>
 @y
-    <para>Gawk をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Gawk&PreparePackage2;</para>
 @z
 
 @x
     <para>Compile the package:</para>
 @y
-    <para>パッケージをコンパイルします。</para>
+    <para>CompileThePackage;</para>
 @z
 
 @x
@@ -46,7 +46,7 @@
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -58,15 +58,15 @@
 @x
     <title>Contents of Gawk</title>
 @y
-    <title>Gawk の構成</title>
+    <title>&ContentsOf1;Gawk&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールディレクトリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -82,7 +82,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x

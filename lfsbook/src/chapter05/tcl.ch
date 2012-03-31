@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -22,7 +22,7 @@
 @x
     <title>Installation of Tcl</title>
 @y
-    <title>Tcl のインストール</title>
+    <title>&InstallationOf1;Tcl&InstallationOf2;</title>
 @z
 
 @x
@@ -39,14 +39,14 @@
     テスト目的のためにこれら四つのパッケージをインストールするというのは、少々大げさなことかもしれません。
     ただ本質的ではないことであっても、重要なツール類が正常に動作するという確認が得られれば安心できます。
     本章ではテストスイートを実行することは必須ではないため、実行しないものとしていますが、それら四つのパッケージは <xref
-    linkend="chapter-building-system"/> で行うテストのために必要となるものです。
+    linkend="chapter-building-system"/>で行うテストのために必要となるものです。
     </para>
 @z
 
 @x
     <para>Prepare Tcl for compilation:</para>
 @y
-    <para>Tcl をコンパイルするための準備をします。</para>
+    <para>&PreparePackage1;Tcl&PreparePackage2;</para>
 @z
 
 @x
@@ -83,16 +83,14 @@
     <parameter>TZ=UTC</parameter> はタイムゾーンを協定世界時間 (Coordinated Universal Time; UTC) あるいはグリニッジ標準時間としても知られる時間に設定します。
     ただしこれはテストスイートを実行する時だけの設定です。
     こうしておけば時刻に関するテストが正しく処理されます。
-    環境変数 <envar>TZ</envar> については
-    <xref linkend="chapter-bootscripts"/>
-    にて詳しく説明しています。
+    環境変数 <envar>TZ</envar> については <xref linkend="chapter-bootscripts"/>にて詳しく説明しています。
     </para>
 @z
 
 @x
     <para>Install the package:</para>
 @y
-    <para>パッケージをインストールします。</para>
+    <para>&InstallThePackage;</para>
 @z
 
 @x
@@ -124,15 +122,15 @@
 @x
     <title>Contents of Tcl</title>
 @y
-    <title>Tcl の構成</title>
+    <title>&ContentsOf1;Tcl&ContentsOf2;</title>
 @z
 
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed library</segtitle>
 @y
-      <segtitle>インストールプログラム</segtitle>
-      <segtitle>インストールライブラリ</segtitle>
+      <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
 @z
 
 @x
@@ -146,7 +144,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">概略説明</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x tclsh8.5
