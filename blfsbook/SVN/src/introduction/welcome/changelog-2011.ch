@@ -352,3 +352,32 @@ December 1st, 2011
     [ken] - dhcp 4.2.3 へのアップデート。
     [abenton] - yasm-1.2.0 追加。
 @z
+
+@x
+November 30th, 2011
+    [abenton] - Updated Thunderbird to 8.0.
+@y
+2011/11/30
+    [abenton] - Thunderbird 8.0 へのアップデート。
+@z
+
+@x
+November 29th, 2011
+    [wblaszcz] - Downgraded D-BUS to 1.4.0.
+    [wblaszcz] - Updated to polkit-0.102.
+    [abenton] - Updated to xulrunner to 8.0.1.
+@y
+2011/11/29
+    [wblaszcz] - D-BUS 1.4.0 へのダウングレード。
+    [wblaszcz] - polkit-0.102 へのアップグレード。
+    [abenton] - xulrunner 8.0.1 へのアップグレード。
+@z
+
+@x
+November 29th, 2011
+    [dj] - Updated to Links-2.4.
+@y
+2011/11/29
+    [dj] - Links-2.4 へのアップグレード。
+@z
+

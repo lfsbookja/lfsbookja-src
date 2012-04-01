@@ -16,19 +16,18 @@
 @x
     <title>Introduction to ATK</title>
 @y
-    <title>ATK の概要</title>
+    <title>&IntroductionTo1;ATK&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The accessibility tool kit contains the
-    <application>atk</application> library. This is useful for allowing
-    accessibility solutions to be available for all
-    <application>gtk+-2</application> and <application>gtk+-3</application>
-    applications.</para>
+    <para><application>ATK</application> provides the set of accessibility
+    interfaces that are implemented by other toolkits and applications. 
+    Using the <application>ATK</application> interfaces, accessibility tools 
+    have full access to view and control running applications.</para>
 @y
     <para>
-    ATK (accessibility tool kit) は <application>ATK</application> ライブラリを提供します。
-    これはあらゆる <application>gtk+-2</application> および <application>gtk+-3</application> アプリケーションに対して、アクセス性を向上させる有用なライブラリです。
+    <application>ATK</application> は、他のツールキットやアプリケーションが実装する、アクセス性向上のためのインターフェースを提供します。
+    <application>ATK</application> インターフェースを使うことで、アプリケーションを参照したり実行を制御したりするアクセスツールの構築を可能とします。
     </para>
 @z
 
@@ -41,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&atk-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&atk-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&atk-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&atk-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&atk-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&atk-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &atk-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &atk-md5sum;</para>
+        <para>&Download; MD5 sum: &atk-md5sum;</para>
 @z
 
 @x
         <para>Download size: &atk-size;</para>
 @y
-        <para>ダウンロードサイズ: &atk-size;</para>
+        <para>&DownloadSize;: &atk-size;</para>
 @z
 
 @x
@@ -89,16 +88,21 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended"><xref linkend="gobject-introspection"/>
+    (Required if building GNOME)</para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended"><xref linkend="gobject-introspection"/>
+    (GNOME をビルドする場合に必要)</para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>
-    (required if you want to build <xref linkend="gnome"/>),
-    <xref linkend="gtk-doc"/> (if you've edited the docs
-    and want to rebuild them)</para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>
-    (required if you want to build <xref linkend="gnome"/>),
-    <xref linkend="gtk-doc"/> (ドキュメントを編集して再ビルドしたい場合)</para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @z
 
 @x
@@ -165,9 +169,9 @@
 @x
         <seg>None</seg>
         <seg>libatk-1.0.so</seg>
-        <seg>/usr/include/atk-1.0, /usr/share/gtk-doc/html/atk</seg>
+        <seg>/usr/include/atk-1.0 and /usr/share/gtk-doc/html/atk</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libatk-1.0.so</seg>
         <seg>/usr/include/atk-1.0, /usr/share/gtk-doc/html/atk</seg>
 @z

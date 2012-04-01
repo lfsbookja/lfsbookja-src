@@ -3,17 +3,18 @@ CHANGE_FILES = \
 	gnome-mandir.ch \
 	gnome-prefix.ch \
 	gnome-sysconfdir.ch \
+	gnome2.ch \
+	gnome-old-sysconfdir.ch \
+	gnome-old-prefix.ch \
 	gtk-doc-rebuild.ch \
 	kde-apidocs.ch \
 	kde-sysconfdir.ch \
 	lib-config.ch \
 	scrollkeeper-dir.ch \
+	static-libraries.ch \
 	use-unzip.ch \
 	without-gnome.ch \
-	X11R6_symlink.ch \
-	gnome2.ch \
-	gnome-old-sysconfdir.ch \
-	gnome-old-prefix.ch
+	X11R6_symlink.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -41,3 +42,4 @@ X11R6_symlink.xml:        $(BOOKdir)/$@ $(srcdir)/X11R6_symlink.ch
 gnome2.xml:               $(BOOKdir)/$@ $(srcdir)/gnome2.ch
 gnome-old-sysconfdir.xml: $(BOOKdir)/$@ $(srcdir)/gnome-old-sysconfdir.ch
 gnome-old-prefix.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-old-prefix.ch
+static-libraries.xml:     $(BOOKdir)/$@ $(srcdir)/static-libraries.ch

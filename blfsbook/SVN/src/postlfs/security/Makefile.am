@@ -24,7 +24,6 @@ CHANGE_FILES = \
 	openssh.ch \
 	openssl.ch \
 	p11-kit.ch \
-	policykit.ch \
 	polkit.ch \
 	polkit-gnome.ch \
 	security.ch \
@@ -74,7 +73,6 @@ nss.xml:              $(BOOKdir)/$@ $(srcdir)/nss.ch
 openssh.xml:          $(BOOKdir)/$@ $(srcdir)/openssh.ch
 openssl.xml:          $(BOOKdir)/$@ $(srcdir)/openssl.ch
 p11-kit.xml:          $(BOOKdir)/$@ $(srcdir)/p11-kit.ch
-policykit.xml:        $(BOOKdir)/$@ $(srcdir)/policykit.ch
 polkit.xml:           $(BOOKdir)/$@ $(srcdir)/polkit.ch
 polkit-gnome.xml:     $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
 security.xml:         $(BOOKdir)/$@ $(srcdir)/security.ch

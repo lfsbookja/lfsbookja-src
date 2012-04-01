@@ -15,6 +15,7 @@ CHANGE_FILES = \
 	gobject-introspection.ch \
 	gmime.ch \
 	gwrap.ch \
+	gsl.ch \
 	icu.ch \
 	iso-codes.ch \
 	ispell.ch \
@@ -149,3 +150,4 @@ folks.xml:                 $(BOOKdir)/$@ $(srcdir)/folks.ch
 json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
 json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch
 exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
+gsl.xml:                   $(BOOKdir)/$@ $(srcdir)/gsl.ch

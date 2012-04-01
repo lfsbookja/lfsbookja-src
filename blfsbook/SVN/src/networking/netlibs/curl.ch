@@ -91,7 +91,7 @@
     <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
     <xref linkend="openldap"/>,
     <xref linkend="libidn"/>,
-    <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>,
+    <xref linkend="mitkrb"/>,
     <ulink url="http://www.libssh2.org">libssh2</ulink>
     (for secure transfers),
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
@@ -101,10 +101,10 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
+    <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
     <xref linkend="openldap"/>,
     <xref linkend="libidn"/>,
-    <xref linkend="mitkrb"/> または <xref linkend="heimdal"/>,
+    <xref linkend="mitkrb"/>,
     <ulink url="http://www.libssh2.org">libssh2</ulink>
     (セキュアな転送のため),
     <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,

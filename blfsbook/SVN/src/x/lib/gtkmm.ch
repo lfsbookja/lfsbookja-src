@@ -16,16 +16,14 @@
 @x
     <title>Introduction to gtkmm</title>
 @y
-    <title>gtkmm の概要</title>
+    <title>&IntroductionTo1;gtkmm&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gtkmm</application> package provides a C++ interface
-    to <application>GTK+</application>.</para>
+      The <application>gtkmm</application> package provides a C++ interface to
+      <application>GTK+-3</application>.
 @y
-    <para>
-    <application>gtkmm</application> パッケージは <application>GTK+</application> への C++ インターフェースを提供します。
-    </para>
+      <application>gtkmm</application> パッケージは <application>GTK+-3</application> への C++ インターフェースを提供します。
 @z
 
 @x
@@ -35,96 +33,92 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gtkmm-download-http;"/></para>
+          Download (HTTP): <ulink url="&gtkmm-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gtkmm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gtkmm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gtkmm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gtkmm-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gtkmm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gtkmm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gtkmm-md5sum;</para>
+          Download MD5 sum: &gtkmm-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &gtkmm-md5sum;</para>
+          &Download; MD5 sum: &gtkmm-md5sum;
 @z
 
 @x
-        <para>Download size: &gtkmm-size;</para>
+          Download size: &gtkmm-size;
 @y
-        <para>ダウンロードサイズ: &gtkmm-size;</para>
+          &DownloadSize;: &gtkmm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gtkmm-buildsize;</para>
+          Estimated disk space required: &gtkmm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gtkmm-buildsize;</para>
+          &Estimateddiskspacerequired;: &gtkmm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gtkmm-time;</para>
+          Estimated build time: &gtkmm-time;
 @y
-        <para>&Estimatedbuildtime;: &gtkmm-time;</para>
+          &Estimatedbuildtime;: &gtkmm-time;
 @z
 
 @x
     <bridgehead renderas="sect3">gtkmm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gtkmm の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gtkmm&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="atkmm"/>,
-    <xref linkend="gtk3"/>, and
-    <xref linkend="pangomm"/></para>
+    <para role="required">
+      <xref linkend="atkmm"/>,
+      <xref linkend="gtk3"/> and
+      <xref linkend="pangomm"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="atkmm"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="pangomm"/></para>
+    <para role="required">
+      <xref linkend="atkmm"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="pangomm"/>
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gtkmm"/></para>
+      User Notes: <ulink url="&blfs-wiki;/gtkmm"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gtkmm"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/gtkmm"/>
 @z
 
 @x
     <title>Installation of gtkmm</title>
 @y
-    <title>gtkmm のインストール</title>
+    <title>&InstallationOf1;gtkmm&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gtkmm</application> by running the following
-    commands:</para>
+      Install <application>gtkmm</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gtkmm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>gtkmm</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -134,29 +128,33 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libatkmm-1.6.so, libgdkmm-2.4.so, and libgtkmm-2.4.so</seg>
-        <seg>/usr/{include/{atkmm-1.6/atkmm/private,gdkmm-2.4/gdkmm/private,
-        gtkmm-2.4/gtkmm/private},lib/{gdkmm-2.4/include,gtkmm-2.4/include},
-        share/{devhelp/books/gtkmm-2.4,doc/gtkmm-2.4/{images,reference/html},
-        gtkmm-2.4/demo}}</seg>
+        <seg>libgdkmm-3.0.so and libgtkmm-3.0.so.</seg>
+        <seg>
+          /usr/include/gdkmm-3.0,
+          /usr/include/gtkmm-3.0,
+          /usr/lib/gdkmm-3.0,
+          /usr/lib/gtkmm-3.0,
+          /usr/share/devhelp/books/gtkmm-3.0 and
+          /usr/share/doc/gtkmm-3.0.
+        </seg>
 @y
-        <seg>なし</seg>
-        <seg>libatkmm-1.6.so, libgdkmm-2.4.so, libgtkmm-2.4.so</seg>
-        <seg>/usr/{include/{atkmm-1.6/atkmm/private,gdkmm-2.4/gdkmm/private,
-        gtkmm-2.4/gtkmm/private},lib/{gdkmm-2.4/include,gtkmm-2.4/include},
-        share/{devhelp/books/gtkmm-2.4,doc/gtkmm-2.4/{images,reference/html},
-        gtkmm-2.4/demo}}</seg>
+        <seg>libgdkmm-3.0.so, libgtkmm-3.0.so.</seg>
+        <seg>
+          /usr/include/gdkmm-3.0,
+          /usr/include/gtkmm-3.0,
+          /usr/lib/gdkmm-3.0,
+          /usr/lib/gtkmm-3.0,
+          /usr/share/devhelp/books/gtkmm-3.0,
+          /usr/share/doc/gtkmm-3.0.
+        </seg>
 @z
 
 @x
@@ -165,26 +163,14 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libatkmm-1.6.so
-          <para>contains the <application>ATK</application> API classes.</para>
-@y
-          <para>
-          <application>ATK</application> の API クラスを提供します。
-          </para>
-@z
-
 @x libgdkmm-2.4.so
-          <para>contains the GDK API classes.</para>
+        contains the GDK API classes.
 @y
-          <para>
-          GDK の API クラスを提供します。
-          </para>
+        GDK の API クラスを提供します。
 @z
 
 @x libgtkmm-2.4.so
-          <para>contains the <application>GTK+</application> API classes.</para>
+        contains the <application>GTK+</application> API classes.
 @y
-          <para>
-          <application>GTK+</application> の API クラスを提供します。
-          </para>
+        <application>GTK+</application> の API クラスを提供します。
 @z

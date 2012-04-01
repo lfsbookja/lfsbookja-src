@@ -168,6 +168,26 @@
 @z
 
 @x
+    <note><para>Test127.f and Repmgr026.c are known to fail.</para></note>
+@y
+    <note><para>Test127.f と Repmgr026.c は失敗することが分かっています。</para></note>
+@z
+
+@x
+    <para>There are additional testing suites in the <filename
+    class='directory'>test/c</filename> and <filename
+    class='directory'>test/cxx</filename> directories.  See the
+    <filename>README</filename> in each directory for instructions on how to
+    run the tests.</para>
+@y
+    <para>
+    <filename class='directory'>test/c</filename> ディレクトリと <filename
+    class='directory'>test/cxx</filename> ディレクトリには、追加のテストスイートがあります。
+    実行方法については、各ディレクトリ内の <filename>README</filename> ファイルを参照してください。
+    </para>
+@z
+
+@x
   <sect2 role="installation" id="bdb-installation">
     <title>Installation of Berkeley DB</title>
 @y
@@ -274,6 +294,15 @@
     <parameter>--enable-tcl --with-tcl=/usr/lib</parameter>:
     DB において <application>Tcl</application> サポートを有効にします。
     また <filename class="libraryfile">libdb_tcl</filename> ライブラリを生成します。
+    </para>
+@z
+
+@x
+    <para><parameter>--enable-dbm</parameter>: Enables legacy interface support
+    support needed by some older packages.</para>
+@y
+    <para><parameter>--enable-dbm</parameter>: 
+    古いパッケージが必要としている、かつてのインターフェースサポートを有効にします。
     </para>
 @z
 

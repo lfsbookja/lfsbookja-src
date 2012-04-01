@@ -123,8 +123,9 @@
     <para>This package's testsuite is only intended to be used by the
     maintainer to check i18n files.</para>
 @y
-    <para>This package's testsuite is only intended to be used by the
-    maintainer to check i18n files.</para>
+    <para>
+    本パッケージのテストスイートは、開発者が i18n ファイルをチェックするためだけに提供されています。
+    </para>
 @z
 
 @x

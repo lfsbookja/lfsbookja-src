@@ -54,9 +54,113 @@
 @z
 
 @x
+      <para>March 31st, 2012</para>
+@y
+      <para>2012/03/31</para>
+@z
+@x
+          <para>[abenton] - Added Inkscape 0.48.2.</para>
+@y
+          <para>[abenton] - Inkscape 0.48.2 追加。</para>
+@z
+@x
+          <para>[krejzi] - removed eggdbus 0.6.</para>
+@y
+          <para>[krejzi] - eggdbus 0.6 削除。</para>
+@z
+
+@x
+      <para>March 30th, 2012</para>
+@y
+      <para>2012/03/30</para>
+@z
+@x
+          <para>[abenton] - Added Gtkmm-2.24.2.</para>
+@y
+          <para>[abenton] - Gtkmm-2.24.2 追加。</para>
+@z
+
+@x
+      <para>March 29th, 2012</para>
+@y
+      <para>2012/03/29</para>
+@z
+@x
+            [abenton] - Added GeoClue 1.12.0, required by WebKitGTK+-1.8.0.
+@y
+            [abenton] - GeoClue 1.12.0 追加。WebKitGTK+-1.8.0 にて必要。
+@z
+
+@x
+      <para>March 28th, 2012</para>
+@y
+      <para>2012/03/28</para>
+@z
+@x
+          <para>[bdubbs] - Clean up Makefile for bootscripts.
+          Add other minor bootscrpt cleanups.</para>
+@y
+          <para>[bdubbs] - ブートスクリプトの Makefile を整理。
+          新たなブートスクリプトを若干追加。</para>
+@z
+
+@x
+      <para>March 27th, 2012</para>
+@y
+      <para>2012/03/27</para>
+@z
+@x
+          <para>[rthomsen] - Added OpenJPEG 1.5.0. Fixes
+          <ulink url="&blfs-ticket-root;3126">#3126</ulink>.</para>
+@y
+          <para>[rthomsen] - OpenJPEG 1.5.0 追加。
+          <ulink url="&blfs-ticket-root;3126">#3126</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Added option to build without TCP-Wrappers to
+          NFS-Utils. Fixes
+          <ulink url="&blfs-ticket-root;3283">#3283</ulink>.</para>
+@y
+          <para>[bdubbs] - NFS-Utils にて TCP-Wrappers なしでビルドするためのオプションを追加。
+          <ulink url="&blfs-ticket-root;3283">#3283</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 26th, 2012</para>
+@y
+      <para>2012/03/26</para>
+@z
+@x
+          <para>[bdubbs] - Removed pilot-link.  
+          Closes <ulink url="&blfs-ticket-root;2738">#2738</ulink>.</para>
+@y
+          <para>[bdubbs] - pilot-link 削除。
+          <ulink url="&blfs-ticket-root;2738">#2738</ulink> を完了に。</para>
+@z
+@x
+          <para>[bdubbs] - Place dbus boot script to run after netfs.
+          Fixes <ulink url="&blfs-ticket-root;3103">#3103</ulink>.</para>
+@y
+          <para>[bdubbs] - dbus のブートスクリプトの実行を netfs の後に。
+          <ulink url="&blfs-ticket-root;3103">#3103</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Fix libexecdir in udev. Fixes ticket
+          <ulink url="&blfs-ticket-root;3309">#3309</ulink>.</para>
+@y
+          <para>[bdubbs] - udev における libexecdir を修正。
+          <ulink url="&blfs-ticket-root;3309">#3309</ulink> を Fix に。</para>
+@z
+
+@x
       <para>March 25th, 2012</para>
 @y
       <para>2012/03/25</para>
+@z
+@x
+          <para>[bdubbs] - Remove Trinity/KDE3, Qt3, and related packages.</para>
+@y
+          <para>[bdubbs] - Trinity/KDE3, Qt3, 関連パッケージを削除。</para>
 @z
 @x
           <para>[rthomsen] - Modified MySQL instructions to install shared libraries.</para>

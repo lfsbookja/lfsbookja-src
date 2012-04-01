@@ -28,7 +28,7 @@
 @x
     <title>Decent Rescue Boot Device Needs</title>
 @y
-    <title>最近のレスキューブートデバイスの必要性</title>
+    <title>最近の復旧用ブートデバイスの必要性</title>
 @z
 
 @x
@@ -41,8 +41,8 @@
     drive <emphasis>will</emphasis> be available is a risky presumption.</para>
 @y
     <para>
-    この節で説明するのは <emphasis>レスキュー</emphasis> デバイスについてです。
-    なぜ <emphasis>レスキュー</emphasis> と呼ばれるかは以下のとおりです。
+    この節で説明するのは <emphasis>復旧用</emphasis> デバイス (<emphasis>rescue</emphasis> device) についてです。
+    なぜ <emphasis>復旧用</emphasis> と呼ばれるかは以下のとおりです。
     例えばパーティションの情報が失われたりファイルが壊れたりして、システムに何か問題が発生したとします。
     そのような場合、システムのブートやその後の操作が正常に行えなくなります。
     したがって
@@ -60,11 +60,13 @@
     we usually thought of rescue device as a floppy disk.  Today, many
     systems do not even have a floppy drive.</para>
 @y
-    <para>In a modern system, there are many devices that can be
-    used as a rescue device: floppy, cdrom, usb drive, or even a network card.
-    Which one you use depends on your hardware and your BIOS.  In the past,
-    we usually thought of rescue device as a floppy disk.  Today, many
-    systems do not even have a floppy drive.</para>
+    <para>
+    最近のシステムでは、復旧用デバイスとして利用できるものがいくつもあります。
+    それはフロッピー、CDROM、USBデバイスなどであり、ネットワークカードですら、その用途で利用することもできます。
+    どのデバイスを利用するかは、手元のハードウェアの存在と BIOS によるところです。
+    かつてであれば、復旧用デバイスとして使えるのはフロッピーディスクくらいでした。
+    それが最近では、フロッピードライブがそもそもないシステムの方が多くなっています。
+    </para>
 @z
 
 @x
@@ -74,17 +76,20 @@
     For these reasons, the procedures for a rescue device image are not
     presented here.</para>
 @y
-    <para>Building a complete rescue device is a challenging task.  In many
-    ways, it is equivalent to building an entire LFS system.
+    <para>
+    復旧用デバイスを完璧に用意することは、実は大変な作業です。
+    多くのやり方がありますが、それは LFS システムを構築するのにも匹敵します。
+    
     In addition, it would be a repetition of information already available.
     For these reasons, the procedures for a rescue device image are not
-    presented here.</para>
+    presented here.
+    </para>
 @z
 
 @x
     <title>Creating a Rescue Floppy</title>
 @y
-    <title>Creating a Rescue Floppy</title>
+    <title>復旧用フロッピーの生成</title>
 @z
 
 @x
@@ -106,7 +111,7 @@
 @x
     <title>Creating a Bootable CD-ROM</title>
 @y
-    <title>Creating a Bootable CD-ROM</title>
+    <title>起動用 CD-ROM の生成</title>
 @z
 
 @x
@@ -140,7 +145,7 @@
 @x
     <title>Creating a Bootable USB Drive</title>
 @y
-    <title>Creating a Bootable USB Drive</title>
+    <title>起動用 USB ドライブの生成</title>
 @z
 
 @x

@@ -20,12 +20,13 @@
 @z
 
 @x
-      The <application>libsoup</application> package contains an HTTP library
-      implementation in <application>C</application>. This is useful for
-      accessing HTTP servers in a completely asynchronous mode.
+      The <application>libsoup</application> is HTTP client/server library for GNOME.
+      It uses GObject and the glib main loop to integrate with GNOME applications and 
+      it also has asynchronous API for use in threaded applications.
 @y
-      <application>libsoup</application> は <application>C</application>言語による HTTP ライブラリの実装です。
-      HTTP サーバーに対して、完全な非同期モードでのアクセスを実現することができます。
+      <application>libsoup</application> は GNOME に対しての HTTP クライアント/サーバーライブラリです。
+      GObject と glib メインループの利用により GNOME アプリケーションをサポートします。
+      またスレッドアプリケーションが利用する非同期 API も提供します。
 @z
 
 @x
@@ -91,38 +92,34 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="libgnome-keyring"/> and
-      <xref linkend="sqlite"/>
-      (Required if building <application>Gnome</application>).
-    </para>
+    <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
+    <para role="recommended"><xref linkend="gobject-introspection"/>,
+    <xref linkend="libgnome-keyring"/> and <xref linkend="sqlite"/></para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="libgnome-keyring"/>,
-      <xref linkend="sqlite"/>
-      (<application>Gnome</application> をビルドする場合に必要)
-    </para>
+    <bridgehead renderas="sect4">&Recommended; (GNOME ビルド時は必須)</bridgehead>
+    <para role="recommended"><xref linkend="gobject-introspection"/>,
+    <xref linkend="libgnome-keyring"/>, <xref linkend="sqlite"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="apache"/> (required to run the test suite),
+      <xref linkend="curl"/> (required to run the test suite),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="apache"/> (required to run the test suite), and
       <xref linkend="php"/> compiled with
       <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
-      support (only used for the XMLRPC regression tests).
+      support (only used for the XMLRPC regression tests) and
+      <xref linkend="samba3"/> (ntlm_auth is required to run the test suite).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/>,
       <xref linkend="apache"/> (テストスイート実行時に必要),
-      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>  サポートがビルドされている <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される)
+      <xref linkend="curl"/> (テストスイート実行時に必要),
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink> サポートがビルドされている  <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される),
+      <xref linkend="samba3"/> (テストスイートを実行する場合は ntlm_auth が必要)
     </para>
 @z
 
@@ -164,26 +161,6 @@
 @z
 
 @x
-      <option>--without-gnome</option>: This prevents
-      <command>configure</command> looking for
-      <application>gnome-keyring</application>. Remove this option if you have
-      installed <xref linkend="gnome-keyring"/> and want to install
-      <application>Gnome</application>.
-@y
-      <option>--without-gnome</option>:
-      これは <command>configure</command> が <application>gnome-keyring</application> を探さないようにします。
-      <xref linkend="gnome-keyring"/> をインストール済であって、<application>Gnome</application> をインストールする場合には、このオプションを取り除いてください。
-@z
-
-@x
-      <option>--disable-static</option>: This option disables installing a
-      static version of <filename class='libraryfile'>libsoup-2.4.so</filename>.
-@y
-      <option>--disable-static</option>:
-      このオプションは <filename class='libraryfile'>libsoup-2.4.so</filename> のスタティック版をインストールしないようにします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -199,19 +176,20 @@
 
 @x
         <seg>
-          libsoup-2.4.so and (if you have installed
-          <xref linkend="gnome-keyring"/>) libsoup-gnome-2.4.so
+          libsoup-2.4.so and libsoup-gnome-2.4.so
         </seg>
         <seg>
-          /usr/include/libsoup-2.4 and
+          /usr/include/libsoup-2.4,
+          /usr/include/libsoup-gnome-2.4 and
           /usr/share/gtk-doc/html/libsoup-2.4.
         </seg>
 @y
         <seg>
-          libsoup-2.4.so, (<xref linkend="gnome-keyring"/> をインストールしていた場合に) libsoup-gnome-2.4.so
+          libsoup-2.4.so, libsoup-gnome-2.4.so
         </seg>
         <seg>
           /usr/include/libsoup-2.4,
+          /usr/include/libsoup-gnome-2.4,
           /usr/share/gtk-doc/html/libsoup-2.4.
         </seg>
 @z

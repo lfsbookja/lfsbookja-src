@@ -34,4 +34,5 @@
   <xsl:param name="body.font.family" select="'IPAmincho'"/>
   <xsl:param name="title.font.family" select="'IPAgothic'"/>
   <xsl:param name="italic.font.family" select="'IPAgothic'"/>
+  <xsl:param name="monospace.font.family" select="'IPAgothic'"/>
 @z

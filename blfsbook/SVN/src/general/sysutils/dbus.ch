@@ -231,23 +231,19 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/dbus-1.0 </parameter>: This will
+    <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This will
     install binaries meant to be only used internally by
     <application>D-BUS</application>, and the directory
     <filename class="directory">dbus-1</filename> into
     <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
     into <filename class="directory">/usr/libexec</filename>.</para>
 @y
-    <para>
-    <parameter>--libexecdir=/usr/lib/dbus-1.0 </parameter>:
-    
-    This will
+    <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This will
     install binaries meant to be only used internally by
     <application>D-BUS</application>, and the directory
     <filename class="directory">dbus-1</filename> into
     <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
-    into <filename class="directory">/usr/libexec</filename>.
-    </para>
+    into <filename class="directory">/usr/libexec</filename>.</para>
 @z
 
 @x
@@ -293,18 +289,6 @@
     warning that '<parameter>--enable-tests</parameter>' on its own is only useful
     for profiling and might not give true results for all tests, but adds its own
     NOTE that this should not be used in a production build.
-    </para>
-@z
-
-@x
-    <para><parameter>--disable-static</parameter>: Prevent the static libraries
-    being built and installed.</para>
-@y
-    <para>
-    <parameter>--disable-static</parameter>:
-    
-    Prevent the static libraries
-    being built and installed.
     </para>
 @z
 

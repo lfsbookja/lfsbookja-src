@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -81,18 +81,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required"><xref linkend="gdk-pixbuf"/>,
+    <xref linkend="mesalib"/> and <xref linkend="pango"/>.</para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required"><xref linkend="gdk-pixbuf"/>,
+    <xref linkend="mesalib"/>, <xref linkend="pango"/>.</para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/></para>
+    <para role="recommended"><xref linkend="gobject-introspection"/>
+    (Required if building GNOME)</para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/></para>
+    <para role="recommended"><xref linkend="gobject-introspection"/>
+    (GNOME ビルド時に必要)</para>
 @z
 
 @x
@@ -152,12 +156,28 @@
 
 @x
         <seg>None</seg>
-        <seg>libcogl-pango.so and libcogl.so</seg>
-        <seg>/usr/include/cogl/cogl-pango</seg>
+
+        <seg>
+          libcogl-pango.so and libcogl.so
+       </seg>
+
+        <seg>
+         /usr/include/cogl/{cogl,cogl-pango},
+         /usr/share/cogl/examples-data and 
+         /usr/share/gtk-doc/html/{cogl,cogl-2.0-experimental}
+       </seg>
 @y
         <seg>&None;</seg>
-        <seg>libcogl-pango.so, libcogl.so</seg>
-        <seg>/usr/include/cogl/cogl-pango</seg>
+
+        <seg>
+          libcogl-pango.so, libcogl.so
+       </seg>
+
+        <seg>
+         /usr/include/cogl/{cogl,cogl-pango},
+         /usr/share/cogl/examples-data,
+         /usr/share/gtk-doc/html/{cogl,cogl-2.0-experimental}
+       </seg>
 @z
 
 @x

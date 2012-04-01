@@ -20,12 +20,6 @@
 @z
 
 @x
-  <!ENTITY eggdbus-buildsize       "30 MB (includes installing the documentation and man page)">
-@y
-  <!ENTITY eggdbus-buildsize       "30 MB (ドキュメントと man ページのインストールを含む)">
-@z
-
-@x
 <sect1 id="dbus-bindings" xreflabel="D-Bus Bindings">
 @y
 <sect1 id="dbus-bindings" xreflabel="D-Bus &Bindings;">
@@ -65,15 +59,14 @@
 @z
 
 @x
-    <para>The <application>GLib</application>,
-    <application>Python</application>, <application>Qt3</application>, and
-    <application>GObject</application> Bindings are included on this page. Other
+    <para>The <application>GLib</application> and
+    <application>Python</application> bindings are included on this page. Other
     language bindings are available at the <ulink
     url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus
     Bindings</ulink> page for information.</para>
 @y
     <para>
-    本節では <application>GLib</application>, <application>Python</application>, <application>Qt3</application>, <application>GObject</application> の各&Bindings;を示します。
+    本節では <application>GLib</application>, <application>Python</application> の各&Bindings;を示します。
     他のプログラミング言語に対する&Bindings;の情報は、<ulink
     url="http://www.freedesktop.org/wiki/Software/DBusBindings">D-Bus &Bindings;</ulink> のページを参照してください。
     </para>
@@ -224,12 +217,11 @@
 @z
 
 @x
-      <para><parameter>--libexecdir=/usr/lib/dbus-1.0/dbus-1</parameter>: This
+      <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This
       moves <command>dbus-bash-completion-helper</command> out of <filename
       class="directory">/usr/libexec</filename>.</para>
 @y
-      <para>
-      <parameter>--libexecdir=/usr/lib/dbus-1.0/dbus-1</parameter>: 
+      <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: 
       このパラメーターは <command>dbus-bash-completion-helper</command> を <filename
       class="directory">/usr/libexec</filename> ディレクトリから移動します。
       </para>
@@ -640,153 +632,4 @@
             <para>
             D-Bus API への <application>Trinity/Qt3</application> インターフェース関数を提供します。
             </para>
-@z
-
-@x
-    <title>D-Bus GObject Bindings (EggDBus)</title>
-@y
-    <title>D-Bus GObject &Bindings; (EggDBus)</title>
-@z
-
-@x
-      <title>Introduction to EggDBus</title>
-@y
-      <title>&IntroductionTo1;EggDBus&IntroductionTo2;</title>
-@z
-
-@x
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-@y
-      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
-@z
-
-@x
-          <para>Download (HTTP): <ulink url="&eggdbus-download-http;"/></para>
-@y
-          <para>&Download; (HTTP): <ulink url="&eggdbus-download-http;"/></para>
-@z
-
-@x
-          <para>Download (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
-@y
-          <para>&Download; (FTP): <ulink url="&eggdbus-download-ftp;"/></para>
-@z
-
-@x
-          <para>Download MD5 sum: &eggdbus-md5sum;</para>
-@y
-          <para>&Download; MD5 sum: &eggdbus-md5sum;</para>
-@z
-
-@x
-          <para>Download size: &eggdbus-size;</para>
-@y
-          <para>&DownloadSize;: &eggdbus-size;</para>
-@z
-
-@x
-          <para>Estimated disk space required: &eggdbus-buildsize;</para>
-@y
-          <para>&Estimateddiskspacerequired;: &eggdbus-buildsize;</para>
-@z
-
-@x
-          <para>Estimated build time: &eggdbus-time;</para>
-@y
-          <para>&Estimatedbuildtime;: &eggdbus-time;</para>
-@z
-
-@x
-      <bridgehead renderas="sect4">EggDBus Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;EggDBus&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required"><xref linkend="dbus-glib"/> and
-      <xref linkend="docbook-xsl"/></para>
-@y
-      <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required"><xref linkend="dbus-glib"/>,
-      <xref linkend="docbook-xsl"/></para>
-@z
-
-@x
-      <bridgehead renderas="sect5">Optional</bridgehead>
-      <para role="optional"><xref linkend="gtk-doc"/></para>
-@y
-      <bridgehead renderas="sect5">&Optional;</bridgehead>
-      <para role="optional"><xref linkend="gtk-doc"/></para>
-@z
-
-@x
-      <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/eggdbus"/></para>
-@y
-      <para condition="html" role="usernotes">&UserNotes;:
-      <ulink url="&blfs-wiki;/eggdbus"/></para>
-@z
-
-@x
-      <title>Installation of EggDBus</title>
-@y
-      <title>&InstallationOf1;EggDBus&InstallationOf2;</title>
-@z
-
-@x
-      <para>Install <application>EggDBus</application> by
-      running the following commands:</para>
-@y
-      <para>
-      以下のコマンドを実行して <application>EggDBus</application> をビルドします。
-      </para>
-@z
-
-@x
-      <para>To test the results, issue: <command>make check</command>.</para>
-@y
-      <para>
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      </para>
-@z
-
-@x
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
-@y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
-@z
-
-@x
-      <title>Command Explanations</title>
-@y
-      <title>&CommandExplanations;</title>
-@z
-
-@x
-      <title>Contents</title>
-@y
-      <title>&Contents;</title>
-@z
-
-@x
-        <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Library</segtitle>
-        <segtitle>Installed Directory</segtitle>
-@y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-          <seg>eggdbus-binding-tool and eggdbus-glib-genmarshal</seg>
-          <seg>libeggdbus-1.{so,a}</seg>
-          <seg>/usr/include/eggdbus-1/eggdbus</seg>
-@y
-          <seg>eggdbus-binding-tool, eggdbus-glib-genmarshal</seg>
-          <seg>libeggdbus-1.{so,a}</seg>
-          <seg>/usr/include/eggdbus-1/eggdbus</seg>
 @z

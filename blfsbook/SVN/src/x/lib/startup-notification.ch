@@ -16,13 +16,13 @@
 @x
   <!ENTITY startup-notification-time          "less than 0.1 SBU">
 @y
-  <!ENTITY startup-notification-time          "0.1 SBU 以下">
+  <!ENTITY startup-notification-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to startup-notification</title>
 @y
-    <title>startup-notification の概要</title>
+    <title>&IntroductionTo1;startup-notification&IntroductionTo2;</title>
 @z
 
 @x
@@ -47,25 +47,25 @@
 @x
         <para>Download (HTTP): <ulink url="&startup-notification-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&startup-notification-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&startup-notification-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&startup-notification-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&startup-notification-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&startup-notification-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &startup-notification-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &startup-notification-md5sum;</para>
+        <para>&Download; MD5 sum: &startup-notification-md5sum;</para>
 @z
 
 @x
         <para>Download size: &startup-notification-size;</para>
 @y
-        <para>ダウンロードサイズ: &startup-notification-size;</para>
+        <para>&DownloadSize;: &startup-notification-size;</para>
 @z
 
 @x
@@ -83,7 +83,7 @@
 @x
     <bridgehead renderas="sect3">startup-notification Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">startup-notification の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;startup-notification&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,7 +105,7 @@
 @x
     <title>Installation of startup-notification</title>
 @y
-    <title>startup-notification のインストール</title>
+    <title>&InstallationOf1;startup-notification&InstallationOf2;</title>
 @z
 
 @x
@@ -120,9 +120,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -130,6 +128,21 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--disable-static</option>:
+    このスイッチはスタティックライブラリをインストールしないようにします。
     </para>
 @z
 
@@ -155,7 +168,7 @@
         <seg>/usr/{include/startup-notification-1.0/libsn,
         share/doc/startup-notification-&startup-notification-version;}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libstartup-notification-1.{so,a}</seg>
         <seg>/usr/{include/startup-notification-1.0/libsn,
         share/doc/startup-notification-&startup-notification-version;}</seg>

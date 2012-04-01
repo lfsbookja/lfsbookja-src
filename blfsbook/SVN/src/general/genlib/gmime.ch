@@ -155,21 +155,21 @@
     </para>
 @z
 
-@x
-    <para>This package will overwrite the <command>uudecode</command> and
-    <command>uuencode</command> programs installed by the
-    <application>sharutils</application> package (or any other package that
-    may install these programs) if they exist in
-    <filename class='directory'>/usr/bin</filename>. If you wish to preserve
-    the existing programs, ensure you rename them before issuing the following
-    commands.</para>
-@y
-    <para>
-    本パッケージは <command>uudecode</command> プログラムと <command>uuencode</command> プログラムを <filename class='directory'>/usr/bin</filename> にインストールしますが、既にそれらのプログラムが存在していた場合は上書きします。
-    これらのプログラムは <application>sharutils</application> パッケージでもインストールされ、さらに他のパッケージの中にもこれらのプログラムをインストールするものがあります。
-    既にインストール済のそれらのプログラムを保持しておきたい場合は、プログラム名を変えてから以下のコマンド実行に進んでください。
-    </para>
-@z
+% @x
+%     <para>This package will overwrite the <command>uudecode</command> and
+%     <command>uuencode</command> programs installed by the
+%     <application>sharutils</application> package (or any other package that
+%     may install these programs) if they exist in
+%     <filename class='directory'>/usr/bin</filename>. If you wish to preserve
+%     the existing programs, ensure you rename them before issuing the following
+%     commands.</para>
+% @y
+%     <para>
+%     本パッケージは <command>uudecode</command> プログラムと <command>uuencode</command> プログラムを <filename class='directory'>/usr/bin</filename> にインストールしますが、既にそれらのプログラムが存在していた場合は上書きします。
+%     これらのプログラムは <application>sharutils</application> パッケージでもインストールされ、さらに他のパッケージの中にもこれらのプログラムをインストールするものがあります。
+%     既にインストール済のそれらのプログラムを保持しておきたい場合は、プログラム名を変えてから以下のコマンド実行に進んでください。
+%     </para>
+% @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
@@ -212,18 +212,17 @@
 @z
 
 @x
-        <seg>uudecode and uuencode</seg>
-        <seg>libgmime-2.4.{so,a} and optionally,
+        <seg>None</seg>
+        <seg>libgmime-2.4.so and optionally,
         <application>Mono</application> bindings</seg>
-        <seg>/usr/include/gmime-2.4, /usr/lib/mono/gac/gmime-sharp,
+        <seg>/usr/include/gmime-2.4/gmime, /usr/lib/mono/gac/gmime-sharp,
         /usr/lib/mono/gmime-sharp,
         /usr/share/doc/gmime-&gmime-version; and
         /usr/share/gtk-doc/html/gmime</seg>
 @y
-        <seg>uudecode, uuencode</seg>
-        <seg>libgmime-2.4.{so,a}、また任意のインストールとして
-        <application>Mono</application> バインディング</seg>
-        <seg>/usr/include/gmime-2.4, /usr/lib/mono/gac/gmime-sharp,
+        <seg>&None;</seg>
+        <seg>libgmime-2.4.so, 任意ビルドにより <application>Mono</application> &Bindings;</seg>
+        <seg>/usr/include/gmime-2.4/gmime, /usr/lib/mono/gac/gmime-sharp,
         /usr/lib/mono/gmime-sharp,
         /usr/share/doc/gmime-&gmime-version;,
         /usr/share/gtk-doc/html/gmime</seg>
@@ -235,26 +234,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x uudecode
-          <para>is used to decode files or data encoded with
-          <command>uuencode</command>.</para>
-@y
-          <para>
-          ファイルのデコード、あるいは <command>uuencode</command> によりエンコードされたデータのデコードを行います。
-          </para>
-@z
-
-@x uuencode
-          <para>is a method of encoding binary data into 7-bit ASCII
-          data.</para>
-@y
-          <para>
-          エンコードされたバイナリデータを 7 ビットのアスキーコードデータに変換します。
-          </para>
-@z
-
-@x libgmime-2.4.{so,a}
-          <para>contains API functions used by programs that need to adhere to
+@x libgmime-2.4.so
+          <para>contains API functions used by programs that need to comply to
           the MIME standards.</para>
 @y
           <para>

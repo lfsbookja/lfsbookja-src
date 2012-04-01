@@ -259,29 +259,45 @@
 @z
 
 @x
-        <seg>gdbus, gdbus-codegen, gio-querymodules,
-        glib-compile-resources, glib-compile-schemas,
-        glib-genmarshal, glib-gettextize, glib-mkenums,
-        gobject-query, gresource, gsettings, gtester 
-        and gtester-report</seg>
-        <seg>libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-        libgobject-2.0.so, libgthread-2.0.so and libgiofam.so</seg>
-        <seg>/usr/{include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
-        lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},share/
-        {gdb/auto-load,glib-2.0/{gdb,gettext/po},gtk-doc/html/
-        {gio,glib,gobject}}}</seg>
+        <seg>
+          gdbus, gdbus-codegen, gio-querymodules,
+          glib-compile-resources, glib-compile-schemas,
+          glib-genmarshal, glib-gettextize, glib-mkenums,
+          gobject-query, gresource, gsettings, gtester 
+          and gtester-report
+        </seg>
+
+        <seg>
+          libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
+          libgobject-2.0.so, libgthread-2.0.so and libgiofam.so
+        </seg>
+
+        <seg>
+          /usr/include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
+          /usr/lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},
+          /usr/share/glib-2.0/{gdb,gettext/po} and
+          /usr/share/gtk-doc/html/{gio,glib,gobject}
+        </seg>
 @y
-        <seg>gdbus, gdbus-codegen, gio-querymodules,
-        glib-compile-resources, glib-compile-schemas,
-        glib-genmarshal, glib-gettextize, glib-mkenums,
-        gobject-query, gresource, gsettings, gtester 
-        gtester-report</seg>
-        <seg>libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-        libgobject-2.0.so, libgthread-2.0.so, libgiofam.so</seg>
-        <seg>/usr/{include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
-        lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},share/
-        {gdb/auto-load,glib-2.0/{gdb,gettext/po},gtk-doc/html/
-        {gio,glib,gobject}}}</seg>
+        <seg>
+          gdbus, gdbus-codegen, gio-querymodules,
+          glib-compile-resources, glib-compile-schemas,
+          glib-genmarshal, glib-gettextize, glib-mkenums,
+          gobject-query, gresource, gsettings, gtester 
+          gtester-report
+        </seg>
+
+        <seg>
+          libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
+          libgobject-2.0.so, libgthread-2.0.so, libgiofam.so
+        </seg>
+
+        <seg>
+          /usr/include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
+          /usr/lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},
+          /usr/share/glib-2.0/{gdb,gettext/po},
+          /usr/share/gtk-doc/html/{gio,glib,gobject}
+        </seg>
 @z
 
 @x

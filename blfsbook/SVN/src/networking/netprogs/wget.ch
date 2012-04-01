@@ -16,16 +16,14 @@
 @x
     <title>Introduction to Wget</title>
 @y
-    <title>Wget の概要</title>
+    <title>&IntroductionTo1;Wget&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Wget</application> package contains a utility useful
-    for non-interactive downloading of files from the Web.</para>
+      The <application>Wget</application> package contains a utility useful for
+      non-interactive downloading of files from the Web.
 @y
-    <para>
-    <application>Wget</application> パッケージは、Web 経由でのファイルダウンロードを非対話的 (non-interactive) に実現することができるユーティリティです。
-    </para>
+      <application>Wget</application> パッケージは、Web 経由でのファイルダウンロードを非対話的 (non-interactive) に実現することができるユーティリティです。
 @z
 
 @x
@@ -35,98 +33,94 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&wget-download-http;"/></para>
+          Download (HTTP): <ulink url="&wget-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&wget-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&wget-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&wget-download-ftp;"/></para>
+          Download (FTP): <ulink url="&wget-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&wget-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&wget-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &wget-md5sum;</para>
+          Download MD5 sum: &wget-md5sum;
 @y
-        <para>&Download; MD5 sum: &wget-md5sum;</para>
+          &Download; MD5 sum: &wget-md5sum;
 @z
 
 @x
-        <para>Download size: &wget-size;</para>
+          Download size: &wget-size;
 @y
-        <para>&DownloadSize;: &wget-size;</para>
+          &DownloadSize;: &wget-size;
 @z
 
 @x
-        <para>Estimated disk space required: &wget-buildsize;</para>
+          Estimated disk space required: &wget-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &wget-buildsize;</para>
+          &Estimateddiskspacerequired;: &wget-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &wget-time;</para>
+          Estimated build time: &wget-time;
 @y
-        <para>&Estimatedbuildtime;: &wget-time;</para>
+          &Estimatedbuildtime;: &wget-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Wget Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Wget の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Wget&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/> or <xref linkend="gnutls"/>,
-    <xref linkend="libidn"/>, Perl Module HTTP::Server (for the test suite) 
-    (see the standard Perl <xref linkend="perl-standard-install"/>), and
-    <ulink url="http://www.inet.no/dante/">Dante</ulink></para>
+    <para role="optional">
+      <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
+      <xref linkend="libidn"/>,
+      Perl Module HTTP::Server (for the test suite: see the standard Perl
+      <xref linkend="perl-standard-install"/>) and
+      <ulink url="http://www.inet.no/dante/">Dante</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/> または <xref linkend="gnutls"/>,
-    <xref linkend="libidn"/>, Perl Module HTTP::Server (テストスイート実行のため) 
-    (標準的な Perl モジュール <xref linkend="perl-standard-install"/> を参照),
-    <ulink url="http://www.inet.no/dante/">Dante</ulink></para>
+    <para role="optional">
+      <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
+      <xref linkend="libidn"/>,
+      Perl Module HTTP::Server (テストスイート実行のため: 標準的な Perl モジュール <xref linkend="perl-standard-install"/>を参照),
+      <ulink url="http://www.inet.no/dante/">Dante</ulink>
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/wget"/></para>
+      User Notes: <ulink url="&blfs-wiki;/wget"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/wget"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/wget"/>
 @z
 
 @x
     <title>Installation of Wget</title>
 @y
-    <title>Wget のインストール</title>
+    <title>&InstallationOf1;Wget&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Wget</application> by running the following
-    commands:</para>
+      Install <application>Wget</application> by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Wget</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Wget</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -136,34 +130,30 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=/etc</parameter>: This relocates
-    the configuration file from <filename class="directory">/usr/etc</filename> to
-    <filename class="directory">/etc</filename>.</para>
+      <parameter>--sysconfdir=/etc</parameter>: This relocates the configuration
+      file from <filename class="directory">/usr/etc</filename> to
+      <filename class="directory">/etc</filename>.
 @y
-    <para>
-    <parameter>--sysconfdir=/etc</parameter>:
-    このパラメーターは、設定ファイルの置き場所を <filename
-    class="directory">/usr/etc</filename> から <filename
-    class="directory">/etc</filename> に変更します。
-    </para>
+      <parameter>--sysconfdir=/etc</parameter>:
+      このパラメーターは、設定ファイルの置き場所を <filename
+      class="directory">/usr/etc</filename> から <filename
+      class="directory">/etc</filename> に変更します。
 @z
 
 @x
-    <para><parameter>--with-ssl=openssl</parameter>: This allows the program to
-    work with <xref linkend="openssl"/>.  It can be omitted if <xref linkend="gnutls"/>
-    is found or the https protocol is not needed. </para>
+      <parameter>--with-ssl=openssl</parameter>: This allows the program to work
+      with <xref linkend="openssl"/>. It can be omitted if
+      <xref linkend="gnutls"/> is found or the https protocol is not needed. 
 @y
-    <para>
-    <parameter>--with-ssl=openssl</parameter>:
-    このパラメーターにより <xref linkend="openssl"/> を用いたプログラムとします。
-    <xref linkend="gnutls"/> がある場合や https プロトコルを必要としない場合は、このパラメーターを省略することができます。
-    </para>
+      <parameter>--with-ssl=openssl</parameter>:
+      このパラメーターにより <xref linkend="openssl"/> を用いたプログラムとします。
+      <xref linkend="gnutls"/> がある場合や https プロトコルを必要としない場合は、このパラメーターを省略することができます。
 @z
 
 @x
     <title>Configuring Wget</title>
 @y
-    <title>Wget の設定</title>
+    <title>&Configuring1;Wget&Configuring2;</title>
 @z
 
 @x
@@ -173,17 +163,20 @@
 @z
 
 @x
-      <para><filename>/etc/wgetrc</filename> and
-      <filename>~/.wgetrc</filename></para>
+        <filename>/etc/wgetrc</filename> and
+        <filename>~/.wgetrc</filename>
 @y
-      <para><filename>/etc/wgetrc</filename>,
-      <filename>~/.wgetrc</filename></para>
+        <filename>/etc/wgetrc</filename>,
+        <filename>~/.wgetrc</filename>
 @z
 
 @x
-      <para>There are no changes required to these files.</para>
+        If you have installed the <xref linkend="cacerts"/> and you want
+        <application>Wget</application> to use them, as the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para>これらのファイルに対して変更の必要はありません。</para>
+        <xref linkend="cacerts"/> をインストールしていて <application>Wget</application> にて利用する場合は <systemitem
+        class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -194,22 +187,14 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>wget</seg>
-        <seg>None</seg>
-        <seg>None</seg>
 @y
         <seg>wget</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
 @z
 
 @x
@@ -219,12 +204,10 @@
 @z
 
 @x wget
-          <para> retrieves files from the Web using the HTTP, HTTPS and
-          FTP protocols.  It is designed to be non-interactive, for
-          background or unattended operations.</para>
+            retrieves files from the Web using the HTTP, HTTPS and FTP
+            protocols.  It is designed to be non-interactive, for background or
+            unattended operations.
 @y
-          <para>
-          HTTP, HTTPS, FTP の各プロトコルにより Web 経由でのファイル取得を行います。
-          これはバックグラウンド実行などのように、非対話的に実行する用途が意図されています。
-          </para>
+            HTTP, HTTPS, FTP の各プロトコルにより Web 経由でのファイル取得を行います。
+            これはバックグラウンド実行などのように、非対話的に実行する用途が意図されています。
 @z

@@ -73,19 +73,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="pkgconfig"/>,
-      <xref linkend="libffi"/> or <xref linkend="gcc"/> (build Java so that
-        <filename class='libraryfile'>libffi</filename> is built), and
-      <xref linkend="python2"/>
-    </para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="pkgconfig"/>,
-      <xref linkend="libffi"/> または <xref linkend="gcc"/> (<filename class='libraryfile'>libffi</filename> をビルドするための Java のビルドが必要),
-      <xref linkend="python2"/>
-    </para>
+    <para role="required"><xref linkend="pkgconfig"/></para>
 @z
 
 @x
@@ -176,24 +167,34 @@
 @z
 
 @x
-        <seg>g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool, g-ir-generate,
-        and g-ir-scanner</seg>
+        <seg>
+          g-ir-annotation-tool, g-ir-compiler, g-ir-generate and g-ir-scanner
+        </seg>
 
-        <seg>_giscanner.{so,a} and libgirepository-1.0.{so,a}</seg>
+        <seg>
+          _giscanner.so and libgirepository-1.0.so
+        </seg>
         
-        <seg>/usr/include/gobject-introspection-1.0,
-             /usr/lib/{girepository-1.0,gobject-introspection},
-             /usr/lib/share/{gir-1.0,gobject-introspection-1.0}
+        <seg>
+          /usr/include/gobject-introspection-1.0,
+          /usr/lib/{girepository-1.0,gobject-introspection/giscanner},
+          /usr/share/{gir-1.0,gobject-introspection-1.0/tests} and
+          /usr/share/gtk-doc/html/gi
         </seg>
 @y
-        <seg>g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool, g-ir-generate,
-        g-ir-scanner</seg>
+        <seg>
+          g-ir-annotation-tool, g-ir-compiler, g-ir-generate, g-ir-scanner
+        </seg>
 
-        <seg>_giscanner.{so,a}, libgirepository-1.0.{so,a}</seg>
+        <seg>
+          _giscanner.so, libgirepository-1.0.so
+        </seg>
         
-        <seg>/usr/include/gobject-introspection-1.0,
-             /usr/lib/{girepository-1.0,gobject-introspection},
-             /usr/lib/share/{gir-1.0,gobject-introspection-1.0}
+        <seg>
+          /usr/include/gobject-introspection-1.0,
+          /usr/lib/{girepository-1.0,gobject-introspection/giscanner},
+          /usr/share/{gir-1.0,gobject-introspection-1.0/tests},
+          /usr/share/gtk-doc/html/gi
         </seg>
 @z
 
@@ -229,14 +230,6 @@
 @z
 
 @x libgirepository-1.0.{so,a}
-          <para>provides an API to access to the typelib metadata.</para>
-@y
-          <para>
-          typelib メタデータにアクセスするための API 関数を提供します。
-          </para>
-@z
-
-@x libgirepository-everything-1.0.{so,a}
           <para>provides an API to access to the typelib metadata.</para>
 @y
           <para>

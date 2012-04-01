@@ -3,6 +3,7 @@ CHANGE_FILES = \
 	balsa.ch \
 	gimp.ch \
 	icedtea-web.ch \
+	inkscape.ch \
 	other.ch \
 	pan.ch \
 	pidgin.ch \
@@ -25,6 +26,7 @@ ctie:
 balsa.xml:       $(BOOKdir)/$@ $(srcdir)/balsa.ch
 gimp.xml:        $(BOOKdir)/$@ $(srcdir)/gimp.ch
 icedtea-web.xml: $(BOOKdir)/$@ $(srcdir)/icedtea-web.ch
+inkscape.xml:    $(BOOKdir)/$@ $(srcdir)/inkscape.ch
 other.xml:       $(BOOKdir)/$@ $(srcdir)/other.ch
 pan.xml:         $(BOOKdir)/$@ $(srcdir)/pan.ch
 pidgin.xml:      $(BOOKdir)/$@ $(srcdir)/pidgin.ch
