@@ -8,21 +8,29 @@
     <renderer mime="application/pdf">
 
       <fonts>
-        <font metrics-url="@srcdir@/ipam.xml" kerning="yes"
-          embed-url="file://@IPAMFILE@">
-          <font-triplet name="IPAmincho" style="normal" weight="normal"/>
-          <font-triplet name="IPAmincho" style="normal" weight="bold"/>
-          <font-triplet name="IPAmincho" style="italic" weight="normal"/>
-          <font-triplet name="IPAmincho" style="italic" weight="bold"/>
+        <font metrics-url="@srcdir@/TakaoMincho.xml" kerning="yes"
+          embed-url="file://@TAKAOMFILE@">
+          <font-triplet name="TakaoMincho" style="normal" weight="normal"/>
+          <font-triplet name="TakaoMincho" style="normal" weight="bold"/>
+          <font-triplet name="TakaoMincho" style="italic" weight="normal"/>
+          <font-triplet name="TakaoMincho" style="italic" weight="bold"/>
         </font>
-        <font metrics-url="@srcdir@/ipag.xml" kerning="yes"
-          embed-url="file://@IPAGFILE@">
-          <font-triplet name="IPAgothic" style="normal" weight="normal"/>
-          <font-triplet name="IPAgothic" style="normal" weight="bold"/>
-          <font-triplet name="IPAgothic" style="italic" weight="normal"/>
-          <font-triplet name="IPAgothic" style="italic" weight="bold"/>
+        <font metrics-url="@srcdir@/TakaoGothic.xml" kerning="yes"
+          embed-url="file://@TAKAOGFILE@">
+          <font-triplet name="TakaoGothic" style="normal" weight="normal"/>
+          <font-triplet name="TakaoGothic" style="normal" weight="bold" fontThickness="200"/>
+          <font-triplet name="TakaoGothic" style="italic" weight="normal"/>
+          <font-triplet name="TakaoGothic" style="italic" weight="bold" fontThickness="200"/>
+        </font>
+        <font metrics-url="@srcdir@/TakaoExGothic.xml" kerning="yes"
+          embed-url="file://@TAKAOGEXFILE@">
+          <font-triplet name="TakaoExGothic" style="normal" weight="normal"/>
+          <font-triplet name="TakaoExGothic" style="normal" weight="bold"/>
+          <font-triplet name="TakaoExGothic" style="italic" weight="normal"/>
+          <font-triplet name="TakaoExGothic" style="italic" weight="bold"/>
         </font>
       </fonts>
+
     </renderer>
   </renderers>
 </fop>

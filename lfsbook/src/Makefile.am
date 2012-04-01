@@ -97,25 +97,25 @@ lfs: maketar validxml profile-html wget-list
 @TXT@txt: nochunks
 @TXT@	$(LYNX) -width=44 -dump ../lfsbookja-svn.html > ../lfsbookja-svn.txt
 
-@PDF@@IPA@pdf: validxml userconfig.xml
-@PDF@@IPA@	@echo "Generating profiled XML for PDF..."
-@PDF@@IPA@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
-@PDF@@IPA@	--output $(RENDERTMP)/lfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
-@PDF@@IPA@	$(RENDERTMP)/lfs-full.xml
-@PDF@@IPA@
-@PDF@@IPA@	@echo "Generating FO file..."
-@PDF@@IPA@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
-@PDF@@IPA@	--output $(RENDERTMP)/lfs-pdf.fo stylesheets/lfs-pdf.xsl \
-@PDF@@IPA@	$(RENDERTMP)/lfs-pdf.xml
-@PDF@@IPA@	sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/lfs-pdf.fo
-@PDF@@IPA@	sed -i -e 's|\.\./wget-list|wget-list|g' -e 's|\.\./md5sums|md5sums|g' $(RENDERTMP)/lfs-pdf.fo
-@PDF@@IPA@	bash pdf-fixups.sh $(RENDERTMP)/lfs-pdf.fo
-@PDF@@IPA@
-@PDF@@IPA@	@echo "Generating PDF file..."
-@PDF@@IPA@	cp -R $(BASEDIR)/images .;
-@PDF@@IPA@	$(FOP) -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
+@PDF@@TAKAO@pdf: validxml userconfig.xml
+@PDF@@TAKAO@	@echo "Generating profiled XML for PDF..."
+@PDF@@TAKAO@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
+@PDF@@TAKAO@	--output $(RENDERTMP)/lfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
+@PDF@@TAKAO@	$(RENDERTMP)/lfs-full.xml
+@PDF@@TAKAO@
+@PDF@@TAKAO@	@echo "Generating FO file..."
+@PDF@@TAKAO@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
+@PDF@@TAKAO@	--output $(RENDERTMP)/lfs-pdf.fo stylesheets/lfs-pdf.xsl \
+@PDF@@TAKAO@	$(RENDERTMP)/lfs-pdf.xml
+@PDF@@TAKAO@	sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/lfs-pdf.fo
+@PDF@@TAKAO@	sed -i -e 's|\.\./wget-list|wget-list|g' -e 's|\.\./md5sums|md5sums|g' $(RENDERTMP)/lfs-pdf.fo
+@PDF@@TAKAO@	bash pdf-fixups.sh $(RENDERTMP)/lfs-pdf.fo
+@PDF@@TAKAO@
+@PDF@@TAKAO@	@echo "Generating PDF file..."
+@PDF@@TAKAO@	cp -R $(BASEDIR)/images .;
+@PDF@@TAKAO@	$(FOP) -c userconfig.xml $(RENDERTMP)/lfs-pdf.fo ./$(PDF_OUTPUT)
 
-@PDF@@IPA@userconfig.xml: $(srcdir)/userconfig.xml.in
+@PDF@@TAKAO@userconfig.xml: $(srcdir)/userconfig.xml.in
 
 tmpdir: $(ALLXML)
 	@echo "Creating and cleaning $(RENDERTMP)"

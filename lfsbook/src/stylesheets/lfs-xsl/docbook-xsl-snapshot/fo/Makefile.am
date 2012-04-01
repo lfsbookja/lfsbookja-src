@@ -8,12 +8,12 @@ srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl
 	fo.xsl footnote.xsl fop.xsl fop1.xsl formal.xsl glossary.xsl
 	graphics.xsl highlight.xsl htmltbl.xsl index.xsl info.xsl
 	inline.xsl keywords.xsl lists.xsl math.xsl pagesetup.xsl
-	param.xsl passivetex.xsl pdf2index pi.xsl profile-docbook.xsl
+	passivetex.xsl pdf2index pi.xsl profile-docbook.xsl
 	ptc.xsl qandaset.xsl refentry.xsl sections.xsl spaces.xsl
 	synop.xsl table.xsl task.xsl titlepage.templates.xml
 	titlepage.templates.xsl toc.xsl verbatim.xsl
 	xep.xsl
-srcs_change = titlepage.xsl xref.xsl
+srcs_change = param.xsl titlepage.xsl xref.xsl
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
@@ -27,5 +27,6 @@ ctie:
 $(srcs):
 	cp -p $(BOOKdir)/* .
 
+param.xsl:     $(BOOKdir)/$@ $(srcdir)/param.ch
 titlepage.xsl: $(BOOKdir)/$@ $(srcdir)/titlepage.ch
-xref.xsl: $(BOOKdir)/$@ $(srcdir)/xref.ch
+xref.xsl:      $(BOOKdir)/$@ $(srcdir)/xref.ch

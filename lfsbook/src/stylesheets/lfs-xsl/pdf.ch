@@ -46,12 +46,13 @@
 @y
   <xsl:param name="body.font.size">10pt</xsl:param>
 
-  <xsl:param name="body.font.family" select="'IPAmincho'"/>
-  <xsl:param name="title.font.family" select="'IPAgothic'"/>
-  <xsl:param name="italic.font.family" select="'IPAgothic'"/>
+  <xsl:param name="body.font.family" select="'TakaoMincho'"/>
+  <xsl:param name="title.font.family" select="'TakaoGothic'"/>
+  <xsl:param name="italic.font.family" select="'TakaoGothic'"/>
+  <xsl:param name="sans.font.family" select="'TakaoGothic'"/>
 <!--
-  <xsl:param name="sans.font.family" select="'Gothic'"/>
-  <xsl:param name="monospace.font.family" select="'IPAgothic'"/>
-  <xsl:param name="body.start.indent" select="'10pt'"/>
+  <xsl:param name="monospace.font.family" select="'TakaoGothic'"/>
 -->
+  <xsl:param name="hyphenate">false</xsl:param>
+  <xsl:param name="l10n.gentext.default.language" select="'ja'"/>
 @z

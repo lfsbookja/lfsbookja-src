@@ -568,7 +568,8 @@ ac_subst_vars='am__EXEEXT_FALSE
 am__EXEEXT_TRUE
 LTLIBOBJS
 LIBOBJS
-IPAFONTDIR
+TAKAOMFONTDIR
+TAKAOGFONTDIR
 FOP
 LYNX
 SVNVER
@@ -592,9 +593,10 @@ CPPFLAGS
 LDFLAGS
 CFLAGS
 CC
-IPAMFILE
-IPAGFILE
-IPA
+TAKAOGEXFILE
+TAKAOMFILE
+TAKAOGFILE
+TAKAO
 abs_bookdir
 bookdir
 CTIE
@@ -670,7 +672,7 @@ enable_option_checking
 enable_maintainer_mode
 with_bookdir
 enable_dependency_tracking
-with_ipafontdir
+with_takaogfontdir
 '
       ac_precious_vars='build_alias
 host_alias
@@ -1305,7 +1307,8 @@ Optional Packages:
   --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
   --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
   --with-bookdir=DIR      Specify BOOK sources directory [DIR=../BOOK]
-  --with-ipafontdir=DIR   Path to directory for IPAfont files
+  --with-takaogfontdir=DIR
+                          Path to directory for TakaoFont files
 
 Some influential environment variables:
   CC          C compiler command
@@ -2565,10 +2568,14 @@ abs_bookdir=`(cd $bookdir && pwd)`
 
 
 
-IPA=
+#m4_include([m4/ac_check_ipafontdir.m4])
+TAKAO=
 
 
 
+
+
+TAKAOGEXFILE=/usr/share/fonts/takao-gothic/TakaoExGothic.ttf
 
 
 
@@ -3902,75 +3909,60 @@ $as_echo "$as_me: WARNING: PDF version cannot be built." >&2;}
   PDF="#"
 fi;
 
-  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for directory for IPA font files" >&5
-$as_echo_n "checking for directory for IPA font files... " >&6; }
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for directory for Takao font files" >&5
+$as_echo_n "checking for directory for Takao font files... " >&6; }
 
-# Check whether --with-ipafontdir was given.
-if test "${with_ipafontdir+set}" = set; then :
-  withval=$with_ipafontdir; IPAFONTDIR="$withval"
+# Check whether --with-takaogfontdir was given.
+if test "${with_takaogfontdir+set}" = set; then :
+  withval=$with_takaogfontdir; TAKAOGFONTDIR="$withval"
 fi
 
 
-  if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR=${datadir}/fonts/opentype/ipafont
-    if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=${datadir}/fonts/opentype
-      if test ! -d "${IPAFONTDIR}"; then
-        IPAFONTDIR=
-      fi
+  if test "x${TAKAOGFONTDIR}" = "x"; then
+    TAKAOGFONTDIR=/usr/share/fonts/takao-gothic
+    if test ! -d ${TAKAOGFONTDIR}; then
+      TAKAOGFONTDIR=
+    fi
+    TAKAOMFONTDIR=/usr/share/fonts/takao-mincho
+    if test ! -d ${TAKAOMFONTDIR}; then
+      TAKAOMFONTDIR=
     fi
   fi
 
-  if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR=${datadir}/fonts/truetype/ipafont
-    if test ! -d "${IPAFONTDIR}"; then
-      IPAFONTDIR=${datadir}/fonts/truetype
-      if test ! -d "${IPAFONTDIR}"; then
-        IPAFONTDIR=
-      fi
-    fi
-  fi
-
-  if test "x${IPAFONTDIR}" = "x"; then
-    IPAFONTDIR=${datadir}/fonts
-    if test ! -d ${IPAFONTDIR}; then
-      IPAFONTDIR=
-    fi
-  fi
-
-  if test "x${IPAFONTDIR}" = "x"; then
-    { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
-$as_echo "not found" >&6; }
+  if test "x${TAKAOGFONTDIR}" = "x"; then
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found in ${TAKAOGFONTDIR}" >&5
+$as_echo "not found in ${TAKAOGFONTDIR}" >&6; }
     { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built" >&5
 $as_echo "$as_me: WARNING: PDF version cannot be built" >&2;}
-    IPA="#"
+    TAKAO="#"
   else
 
-    IPAGFILE=${IPAFONTDIR}/ipag.ttf
-    if test ! -f ${IPAGFILE}; then
-      IPAGFILE=${IPAFONTDIR}/ipa-gothic/ipag.ttf
-      if test ! -f ${IPAGFILE}; then
-        IPAFONTDIR=
-        IPAGFILE=
+    TAKAOGFILE=${TAKAOGFONTDIR}/TakaoGothic.ttf
+    if test ! -f ${TAKAOGFILE}; then
+      TAKAOGFILE=${TAKAOGFONTDIR}/takao-gothic/TakaoGothic.ttf
+      if test ! -f ${TAKAOGFILE}; then
+        TAKAOGFONTDIR=
+        TAKAOGFILE=
       fi
     fi
 
-    IPAMFILE=${IPAFONTDIR}/ipam.ttf
-    if test ! -f ${IPAMFILE}; then
-      IPAMFILE=${IPAFONTDIR}/ipa-mincho/ipam.ttf
-      if test ! -f ${IPAMFILE}; then
-        IPAFONTDIR=
-        IPAMFILE=
+    TAKAOMFILE=${TAKAOMFONTDIR}/TakaoMincho.ttf
+    if test ! -f ${TAKAOMFILE}; then
+      TAKAOMFILE=${TAKAOMFONTDIR}/takao-mincho/TakaoMincho.ttf
+      if test ! -f ${TAKAOMFILE}; then
+        TAKAOMFONTDIR=
+        TAKAOMFILE=
       fi
     fi
 
-    if test "x${IPAGFILE}" = "x" -o "x${IPAMFILE}" = "x"; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
-$as_echo "not found" >&6; }
+    if test "x${TAKAOGFILE}" = "x" -o "x${TAKAOMFILE}" = "x"; then
+      { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found in ${TAKAOGFONTDIR}" >&5
+$as_echo "not found in ${TAKAOGFONTDIR}" >&6; }
       { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: PDF version cannot be built." >&5
 $as_echo "$as_me: WARNING: PDF version cannot be built." >&2;}
-      IPA="#"
+      TAKAO="#"
     else
+
 
       { $as_echo "$as_me:${as_lineno-$LINENO}: result: found" >&5
 $as_echo "found" >&6; }
