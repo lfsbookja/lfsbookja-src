@@ -107,14 +107,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://check.sourceforge.net/">Check</ulink>,
+    <xref linkend='check'/> (required to run the testsuite),
     <xref linkend="upower"/>,
     <xref linkend="libxklavier"/>, and
     <xref linkend="tcpwrappers"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://check.sourceforge.net/">Check</ulink>,
+    <xref linkend='check'/> (required to run the testsuite),
     <xref linkend="upower"/>,
     <xref linkend="libxklavier"/>,
     <xref linkend="tcpwrappers"/></para>
@@ -156,9 +156,11 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>If you have installed <xref linkend="check"/> and you wish to run
+    the testsuite, issue: <command>make check</command>.</para>
 @y
-    <para>&notTestSuite;</para>
+    <para>
+    <xref linkend="check"/> をインストールしていてテストスイートを実行する場合は、<command>make check</command> を実行します。</para>
 @z
 
 @x
@@ -250,33 +252,31 @@
 @x
       <para>The <application>GDM</application> <application>PAM</application>
       configuration files contain modules not present in a BLFS installation.
-      If you have <application>PAM</application> installed, issue the following
+      Issue the following
       commands as the <systemitem class="username">root</systemitem> user to
       replace those files with files containing correctly specified
       modules:</para>
 @y
       <para>The <application>GDM</application> <application>PAM</application>
       configuration files contain modules not present in a BLFS installation.
-      If you have <application>PAM</application> installed, issue the following
+      Issue the following
       commands as the <systemitem class="username">root</systemitem> user to
       replace those files with files containing correctly specified
       modules:</para>
 @z
 
 @x
-      <para id="gdm-config-dbus">If you have <application>D-BUS</application>
-      installed and you want to start the session
-      <application>D-BUS</application> daemon when you start the GNOME desktop
-      environment using <command>gdm</command>, you'll need to create a new
-      Xsession file. Create the file using the following command as the root
-      user.</para>
+      <para id="gdm-config-dbus">The shipped <filename>gnome.desktop</filename>
+      file does not start the session <application>D-BUS</application> daemon, and
+      as a result not all the files required by a <application>GNOME</application>
+      window manager will be found.  You can create a new
+      Xsession file using the following command as the root user.</para>
 @y
-      <para id="gdm-config-dbus">If you have <application>D-BUS</application>
-      installed and you want to start the session
-      <application>D-BUS</application> daemon when you start the GNOME desktop
-      environment using <command>gdm</command>, you'll need to create a new
-      Xsession file. Create the file using the following command as the root
-      user.</para>
+      <para id="gdm-config-dbus">The shipped <filename>gnome.desktop</filename>
+      file does not start the session <application>D-BUS</application> daemon, and
+      as a result not all the files required by a <application>GNOME</application>
+      window manager will be found.  You can create a new
+      Xsession file using the following command as the root user.</para>
 @z
 
 @x
@@ -305,15 +305,12 @@
 
 @x
       <para><command>gdm</command> can be tested by executing it as the
-      <systemitem class="username">root</systemitem> user. Use the
-      <command>gdm-stop</command> command if you wish to stop the display
-      manager.</para>
+      <systemitem class="username">root</systemitem> user. If you wish to stop
+      it you will need to go to a different tty and then kill it.</para>
 @y
-        <para>You may use the <filename class='extension'>.desktop</filename>
-        file created above as an example to create additional
-        <filename class='extension'>.desktop</filename> files and add any other
-        desired items to the <application>GDM</application> display manager session
-        selection menu.</para>
+      <para><command>gdm</command> can be tested by executing it as the
+      <systemitem class="username">root</systemitem> user. If you wish to stop
+      it you will need to go to a different tty and then kill it.</para>
 @z
 
 @x
@@ -374,8 +371,8 @@
         gdm-host-chooser, gdm-product-slave, gdm-session-worker,
         gdm-simple-chooser, gdm-simple-greeter, gdm-simple-slave,
         gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, and gdm-binary</seg>
-        <seg>None</seg>
-        <seg>$GNOME_SYSCONFDIR/gdm/{Init,PostLogin,PostSession,PreSession},
+        <seg>libfingerprint.so, libpassword.so, libsmartcard.so</seg>
+        <seg>$GNOME_SYSCONFDIR/{dbus-1/system.d.gdm/{Init,PostLogin,PostSession,PreSession}},
         <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
         pixmaps/faces}},
         /var/{cache/gdm,gdm,lib/gdm/.gconf.mandatory,log/gdm,
@@ -386,8 +383,8 @@
         gdm-host-chooser, gdm-product-slave, gdm-session-worker,
         gdm-simple-chooser, gdm-simple-greeter, gdm-simple-slave,
         gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, and gdm-binary</seg>
-        <seg>None</seg>
-        <seg>$GNOME_SYSCONFDIR/gdm/{Init,PostLogin,PostSession,PreSession},
+        <seg>libfingerprint.so, libpassword.so, libsmartcard.so</seg>
+        <seg>$GNOME_SYSCONFDIR/{dbus-1/system.d.gdm/{Init,PostLogin,PostSession,PreSession}},
         <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
         pixmaps/faces}},
         /var/{cache/gdm,gdm,lib/gdm/.gconf.mandatory,log/gdm,

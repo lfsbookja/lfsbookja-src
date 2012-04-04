@@ -219,18 +219,6 @@
 @z
 
 @x
-      If you elected to use the included NSPR and NSS (ie, if you have
-      <emphasis>not</emphasis> installed <xref linkend="nspr"/> and
-      <xref linkend="nss"/>), while still the
-      <systemitem class="username">root</systemitem> user, complete the
-      installation with the following commands:
-@y
-      パッケージに付属する NSPR と NSS を利用することにした場合 (つまり <xref
-      linkend="nspr"/> と <xref linkend="nss"/> をインストールしていない場合) は、インストール作業の仕上げとして <systemitem
-      class="username">root</systemitem> ユーザーのまま以下を実行します。
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
@@ -251,11 +239,43 @@
 @z
 
 @x
-      <command>sed ... Requires: nspr</command>: If you try to build some other
-      applications without this, the prtypes header from NSPR will not be found.
+      <command>if pkg-config --atleast-version &nspr-version; nspr;
+      then sed -i '/Version/aRequires: nspr &gt;= &nspr-version;'
+      xulrunner/installer/libxul-embedding.pc.in;
+      else sed -i '/Version/aRequires: mozilla-nspr &gt;= &nspr-version;'
+      xulrunner/installer/libxul-embedding.pc.in;
+      fi</command>: This uses <command>pkg-config</command> to see if
+      <xref linkend="nspr"/> is installed and then adds a line to require
+      <application>nspr</application> or <application>mozilla-nspr</application>
+      to <filename>libxul-embedding.pc</filename>. If you try to build some
+      other applications without this, the prtypes header from NSPR will not be
+      found.
 @y
-      <command>sed ... Requires: nspr</command>: If you try to build some other
-      applications without this, the prtypes header from NSPR will not be found.
+      <command>if pkg-config --atleast-version &nspr-version; nspr;
+      then sed -i '/Version/aRequires: nspr &gt;= &nspr-version;'
+      xulrunner/installer/libxul-embedding.pc.in;
+      else sed -i '/Version/aRequires: mozilla-nspr &gt;= &nspr-version;'
+      xulrunner/installer/libxul-embedding.pc.in;
+      fi</command>: This uses <command>pkg-config</command> to see if
+      <xref linkend="nspr"/> is installed and then adds a line to require
+      <application>nspr</application> or <application>mozilla-nspr</application>
+      to <filename>libxul-embedding.pc</filename>. If you try to build some
+      other applications without this, the prtypes header from NSPR will not be
+      found.
+@z
+
+@x
+      <command>sed -i 's#-L${sdkdir}/lib ##'
+      xulrunner/installer/*.pc.in</command>: Because we put symlinks to the
+      libraries into <filename class="directory">/usr/lib</filename> we do not
+      need to have -L/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib in
+      the linker flags provided by the pkg-config .pc files.
+@y
+      <command>sed -i 's#-L${sdkdir}/lib ##'
+      xulrunner/installer/*.pc.in</command>: Because we put symlinks to the
+      libraries into <filename class="directory">/usr/lib</filename> we do not
+      need to have -L/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib in
+      the linker flags provided by the pkg-config .pc files.
 @z
 
 @x
@@ -287,27 +307,23 @@
 @z
 
 @x
-      <command>for DL in ...</command>: The NSPR and NSS libraries shipped
-      with this package are installed into
-      <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
-      which means they will not be found at runtime. By using symbolic links
-      from <filename class="directory">/usr/lib</filename> the libraries will be
-      found and the links can be easily changed to point to a newer version
-      during an upgrade.
+      <command>for library in
+      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.{a,so}; do ln -sfv
+      ${library#/usr/lib/} /usr${library#*sdk}; done</command>: The libraries
+      shipped with this package are installed into
+      <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;</filename>
+      which means they will not be found at runtime. These commands make
+      relative symbolic links to the libraries from
+      <filename class="directory">/usr/lib</filename>.
 @y
-      <command>for DL in ...</command>: The NSPR and NSS libraries shipped
-      with this package are installed into
-      <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
-      which means they will not be found at runtime. By using symbolic links
-      from <filename class="directory">/usr/lib</filename> the libraries will be
-      found and the links can be easily changed to point to a newer version
-      during an upgrade.
-@z
-
-@x
-        When you upgrade Xulrunner, remember to update the symlinks.
-@y
-        When you upgrade Xulrunner, remember to update the symlinks.
+      <command>for library in
+      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.{a,so}; do ln -sfv
+      ${library#/usr/lib/} /usr${library#*sdk}; done</command>: The libraries
+      shipped with this package are installed into
+      <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;</filename>
+      which means they will not be found at runtime. These commands make
+      relative symbolic links to the libraries from
+      <filename class="directory">/usr/lib</filename>.
 @z
 
 @x

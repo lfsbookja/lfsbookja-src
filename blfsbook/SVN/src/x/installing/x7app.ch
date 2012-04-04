@@ -114,23 +114,23 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="libpng"/>,
+    <xref linkend="mesalib"/> (required for OpenGL support),
     <xref linkend="xcb-util"/>, and
     <xref linkend="xorg7-lib"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="libpng"/>,
+    <xref linkend="mesalib"/> (OpenGL サポートに必要),
     <xref linkend="xcb-util"/>,
     <xref linkend="xorg7-lib"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/> (only used by XDM) and
-    <xref linkend="mesalib"/> (required for OpenGL support).</para>
+    <para role="optional"><xref linkend="linux-pam"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/> (XDM においてのみ利用される),
-    <xref linkend="mesalib"/> (OpenGL サポートにて必要)</para>
+    <para role="optional"><xref linkend="linux-pam"/></para>
 @z
 
 @x

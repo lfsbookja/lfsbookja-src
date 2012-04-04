@@ -20,6 +20,12 @@
 @z
 
 @x
+  <!ENTITY py2cairo-time          "less than 0.1 SBU">
+@y
+  <!ENTITY py2cairo-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
 <sect1 id="python-modules" xreflabel="Python modules">
 @y
 <sect1 id="python-modules" xreflabel="Python &Module;">
@@ -340,9 +346,9 @@
 @z
 
 @x
-        User Notes: <ulink url="&blfs-wiki;/pycairo"/>
+        User Notes: <ulink url="&blfs-wiki;/py2cairo"/>
 @y
-        &UserNotes;: <ulink url="&blfs-wiki;/pycairo"/>
+        &UserNotes;: <ulink url="&blfs-wiki;/py2cairo"/>
 @z
 
 @x
@@ -364,10 +370,9 @@
         <filename class='directory'>test</filename> directory and running 
         <userinput>py.test</userinput>.
 @y
-        The test suite requires the optional <application>pytest</application>
-        package.  If installed, it is run by changing to the 
-        <filename class='directory'>test</filename> directory and running 
-        <userinput>py.test</userinput>.
+        テストスイートを実行するには、任意の依存パッケージ <application>pytest</application> が必要です。
+        既にインストールしていれば <filename
+        class='directory'>test</filename> ディレクトリに移動し、<userinput>py.test</userinput> を実行します。
 @z
 
 @x
@@ -485,13 +490,13 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="python2"/> and
+        <xref linkend="python3"/> and
         <xref linkend="cairo"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="python2"/>,
+        <xref linkend="python3"/>,
         <xref linkend="cairo"/>
       </para>
 @z
@@ -545,13 +550,13 @@
           <seg>Pycairo Python library module</seg>
           <seg>
             /usr/include/pycairo and
-            /usr/lib/python&python2-majorver;/site-packages/cairo
+            /usr/lib/python&python3-majorver;/site-packages/cairo
           </seg>
 @y
           <seg>Pycairo Python ライブラリ&Module;</seg>
           <seg>
             /usr/include/pycairo,
-            /usr/lib/python&python2-majorver;/site-packages/cairo
+            /usr/lib/python&python3-majorver;/site-packages/cairo
           </seg>
 @z
 
@@ -559,5 +564,169 @@
       <title>Introduction to PyGObject Module</title>
 @y
       <title>&IntroductionTo1;PyGObject &Module;&IntroductionTo2;</title>
+@z
+
+@x
+        PyGObject-&pygobject2-version; provides
+        <application>Python 2</application> bindings to the GObject class from
+        <application>GLib</application>.
+@y
+        PyGObject-&pygobject2-version; provides
+        <application>Python 2</application> bindings to the GObject class from
+        <application>GLib</application>.
+@z
+
+@x
+      <bridgehead renderas="sect4">Package Information</bridgehead>
+@y
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
+@z
+
+@x
+            Download (HTTP): <ulink url="&pygobject2-download-http;"/>
+@y
+            &Download; (HTTP): <ulink url="&pygobject2-download-http;"/>
+@z
+
+@x
+            Download (FTP): <ulink url="&pygobject2-download-ftp;"/>
+@y
+            &Download; (FTP): <ulink url="&pygobject2-download-ftp;"/>
+@z
+
+@x
+            Download MD5 sum: &pygobject2-md5sum;
+@y
+            &Download; MD5 sum: &pygobject2-md5sum;
+@z
+
+@x
+            Download size: &pygobject2-size;
+@y
+            &DownloadSize;: &pygobject2-size;
+@z
+
+@x
+            Estimated disk space required: &pygobject2-buildsize;
+@y
+            Estimated disk space required: &pygobject2-buildsize;
+@z
+
+@x
+            Estimated build time: &pygobject2-time;
+@y
+            Estimated build time: &pygobject2-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@z
+
+@x
+          Required patch (if you have installed
+          <xref linkend="gobject-introspection"/>):
+          <ulink url="&patch-root;/pygobject2-&pygobject2-version;-introspection-1.patch"/>
+@y
+          Required patch (if you have installed
+          <xref linkend="gobject-introspection"/>):
+          <ulink url="&patch-root;/pygobject2-&pygobject2-version;-introspection-1.patch"/>
+@z
+
+@x
+      <bridgehead renderas="sect4">PyGObject Dependencies</bridgehead>
+@y
+      <bridgehead renderas="sect4">PyGObject Dependencies</bridgehead>
+@z
+
+@x
+      <bridgehead renderas="sect5">Required</bridgehead>
+      <para role="required">
+        <xref linkend="py2cairo"/> and
+        <xref linkend="pkgconfig"/>.
+      </para>
+@y
+      <bridgehead renderas="sect5">Required</bridgehead>
+      <para role="required">
+        <xref linkend="py2cairo"/> and
+        <xref linkend="pkgconfig"/>.
+      </para>
+@z
+
+@x
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional">
+        <xref linkend="gobject-introspection"/> and
+        <xref linkend="libxslt"/> (to Build Documentation)
+      </para>
+@y
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional">
+        <xref linkend="gobject-introspection"/> and
+        <xref linkend="libxslt"/> (to Build Documentation)
+      </para>
+@z
+
+@x
+        User Notes: <ulink url="&blfs-wiki;/pygobject"/>
+@y
+        &UserNotes;: <ulink url="&blfs-wiki;/pygobject"/>
+@z
+
+@x
+      <title>Installation of PyGObject</title>
+@y
+      <title>Installation of PyGObject</title>
+@z
+
+@x
+        Install <application>PyGObject</application> by running the following
+        commands:
+@y
+        Install <application>PyGObject</application> by running the following
+        commands:
+@z
+
+@x
+        This package does not have a working testsuite.
+@y
+        This package does not have a working testsuite.
+@z
+
+@x
+        Now, as the <systemitem class="username">root</systemitem> user:
+@y
+        Now, as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      <title>Command Explanations</title>
+@y
+      <title>&CommandExplanations;</title>
+@z
+
+@x
+        <parameter>--disable-introspection</parameter>: This switch is required
+        if you have not installed
+        <application>gobject-introspection</application>.
+@y
+        <parameter>--disable-introspection</parameter>: This switch is required
+        if you have not installed
+        <application>gobject-introspection</application>.
+@z
+
+@x
+        <option>--disable-docs</option>: This option disables the rebuilding of
+        the html documentation if <xref linkend="libxslt"/> is installed.
+@y
+        <option>--disable-docs</option>: This option disables the rebuilding of
+        the html documentation if <xref linkend="libxslt"/> is installed.
+@z
+
+@x
+      <title>Contents</title>
+@y
+      <title>&Contents;</title>
 @z
 

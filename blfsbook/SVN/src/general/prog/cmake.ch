@@ -25,9 +25,8 @@
     <command>configure</command> script.</para>
 @y
     <para>
-    <application>CMake</application> package contains a modern toolset used
-    for generating <filename>Makefile</filename>s. It is a successor of the auto-generated
-    <command>configure</command> script.
+    <application>CMake</application> パッケージは <filename>Makefile</filename> を生成するための最新のツールセットを提供します。
+    これは自動生成される <command>configure</command> スクリプトに続けて利用します。
     </para>
 @z
 
@@ -119,6 +118,16 @@
 @z
 
 @x
+    <para>To test the results, issue: <userinput>make test</userinput>.
+    The SVN test may fail.</para>
+@y
+    <para>
+    ビルド結果をテストする場合は <userinput>make test</userinput> を実行します。
+    ただし SVN テストは失敗します。
+    </para>
+@z
+
+@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
@@ -138,10 +147,9 @@
     <application>cURL</application> and <application>Expat</application> installed 
     on the system.</para>
 @y
-    <para><option>--system-libs</option>: This option forces the build system
-    to link against <application>Zlib</application>, <application>Bzip2</application>, 
-    <application>cURL</application> and <application>Expat</application> installed 
-    on the system.</para>
+    <para><option>--system-libs</option>:
+    このオプションは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application> をリンクすることを指示します。
+    </para>
 @z
 
 @x
@@ -181,23 +189,31 @@
 @x ctest
           <para>is a testing utility for cmake-generated build trees.</para>
 @y
-          <para>is a testing utility for cmake-generated build trees.</para>
+          <para>
+          cmake により生成されたディレクトリツリーをテストするユーティリティーです。
+          </para>
 @z
 
 @x cpack
           <para>is the CMake packaging program.</para>
 @y
-          <para>is the CMake packaging program.</para>
+          <para>
+          CMake のパッケージングプログラムです。
+          </para>
 @z
 
 @x ccmake
           <para>is a curses based interactive frontend to cmake.</para>
 @y
-          <para>is a curses based interactive frontend to cmake.</para>
+          <para>
+          cmake に対しての、curses ベースの対話フロントエンドです。
+          </para>
 @z
 
 @x cmake
           <para>is the makefile generator.</para>
 @y
-          <para>is the makefile generator.</para>
+          <para>
+          Makefile 生成ツールです。
+          </para>
 @z

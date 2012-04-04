@@ -14,15 +14,15 @@
 @z
 
 @x
-  <!ENTITY samba3-time          "5.1 SBU (including about 2.8 SBU to run the test suite)">
+  <!ENTITY samba3-time          "4.6 SBU (including about 3.2 SBU to run the test suite)">
 @y
-  <!ENTITY samba3-time          "5.1 SBU (テストスイート実行時の約 2.8 SBU を含む)">
+  <!ENTITY samba3-time          "4.6 SBU (テストスイート実行時の約 2.8 SBU を含む)">
 @z
 
 @x
     <title>Introduction to Samba</title>
 @y
-    <title>Samba の概要</title>
+    <title>&IntroductionTo1;Samba&IntroductionTo2;</title>
 @z
 
 @x
@@ -90,7 +90,7 @@
 @x
     <bridgehead renderas="sect3">Samba Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Samba の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Samba&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -146,7 +146,7 @@
 @x
     <title>Installation of Samba</title>
 @y
-    <title>Samba のインストール</title>
+    <title>&InstallationOf1;Samba&InstallationOf2;</title>
 @z
 
 @x
@@ -280,7 +280,7 @@
 @x
     <title>Configuring Samba</title>
 @y
-    <title>Samba の設定</title>
+    <title>&Configuring1;Samba&Configuring2;</title>
 @z
 
 @x

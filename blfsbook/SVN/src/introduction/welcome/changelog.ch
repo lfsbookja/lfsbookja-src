@@ -35,7 +35,7 @@
 @y
   <para>
   この変更履歴には、各編集者が Subversion に登録した変更内容のみを示しています。
-  誰が何を担当しているかについては <xref linkend="credits"/> のページを参照してください。
+  誰が何を担当しているかについては<xref linkend="credits"/>のページを参照してください。
   </para>
 @z
 
@@ -51,6 +51,72 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴</title>
+@z
+
+@x
+      <para>April 4th, 2012</para>
+@y
+      <para>2012/04/04</para>
+@z
+@x
+          <para>[dj] - Xorg Applicatons require MesaLib. Fixes #3218.</para>
+@y
+          <para>[dj] - Xorg アプリケーションには MesaLib が必要。#3218 を Fix に。</para>
+@z
+
+@x
+      <para>April 3rd, 2012</para>
+@y
+      <para>2012/04/03</para>
+@z
+@x
+          <para>[dj] - Update to Samba-3.6.3.</para>
+@y
+          <para>[dj] - Samba-3.6.3 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Fix Samba compilation with litripc. Thanks to Thomas de
+          Roo for the fix.</para>
+@y
+          <para>[dj] - Samba を libtirpc とコンパイルすることを修正。
+          修正を示してくれた Thomas de Roo に感謝。</para>
+@z
+@x
+          <para>[dj] - Update to cifs-utils-5.3.</para>
+@y
+          <para>[dj] - cifs-utils-5.3 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Upate to keyutils-1.5.5.</para>
+@y
+          <para>[dj] - keyutils-1.5.5 へのアップデート。</para>
+@z
+
+@x
+      <para>April 2nd, 2012</para>
+@y
+      <para>2012/04/02</para>
+@z
+@x
+          <para>[dj] - Fix libproxy build failure with recent xulrunnr.</para>
+@y
+          <para>[dj] - libproxy が最新の xulrunnr にてビルド失敗するのを修正。</para>
+@z
+
+@x
+      <para>April 1st, 2012</para>
+@y
+      <para>2012/04/01</para>
+@z
+@x
+          <para>[bdubbs] - Rename a lesstif man page to prevent
+          overwriting a perl man page with the same name. Fixes
+          <ulink url="&blfs-ticket-root;3059">#3059</ulink>.</para>
+@y
+          <para>[bdubbs] -
+          lesstif の man ページの名称変更。
+          perl による同名の man ページを上書きしないようにするため。
+          <ulink url="&blfs-ticket-root;3059">#3059</ulink> を Fix に。</para>
 @z
 
 @x

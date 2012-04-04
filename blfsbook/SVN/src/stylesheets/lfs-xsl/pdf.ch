@@ -29,10 +29,12 @@
 @x
   <xsl:param name="body.font.size">12pt</xsl:param>
 @y
-  <xsl:param name="body.font.size">12pt</xsl:param>
+  <xsl:param name="body.font.size">10pt</xsl:param>
 
   <xsl:param name="body.font.family" select="'IPAmincho'"/>
   <xsl:param name="title.font.family" select="'IPAgothic'"/>
   <xsl:param name="italic.font.family" select="'IPAgothic'"/>
+<!--
   <xsl:param name="monospace.font.family" select="'IPAgothic'"/>
+-->
 @z

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY sqlite-buildsize     "46 MB (includes optional documentation)">
+  <!ENTITY sqlite-buildsize     "42 MB (includes optional documentation)">
 @y
-  <!ENTITY sqlite-buildsize     "46 MB (任意のドキュメントを含む)">
+  <!ENTITY sqlite-buildsize     "42 MB (任意のドキュメントを含む)">
 @z
 
 @x
@@ -26,14 +26,12 @@
 @z
 
 @x
-    <para>The <application>SQLite</application> package is a software
-    library that implements a self-contained, serverless,
-    zero-configuration, transactional SQL database engine.</para>
+      The <application>SQLite</application> package is a software library that
+      implements a self-contained, serverless, zero-configuration, transactional
+      SQL database engine.
 @y
-    <para>
-    <application>SQLite</application> パッケージは トランザクション SQL データベースエンジンです。
-    特徴として、自己完結 (self-contained) していて、サーバーモジュールが不要、かつ設定が不要なものです。
-    </para>
+      <application>SQLite</application> パッケージは トランザクション SQL データベースエンジンです。
+      特徴として、自己完結 (self-contained) していて、サーバーモジュールが不要、かつ設定が不要なものです。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&sqlite-download-http;"/></para>
+          Download (HTTP): <ulink url="&sqlite-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&sqlite-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&sqlite-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&sqlite-download-ftp;"/></para>
+          Download (FTP): <ulink url="&sqlite-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&sqlite-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&sqlite-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &sqlite-md5sum;</para>
+          Download MD5 sum: &sqlite-md5sum;
 @y
-        <para>&Download; MD5 sum: &sqlite-md5sum;</para>
+          &Download; MD5 sum: &sqlite-md5sum;
 @z
 
 @x
-        <para>Download size: &sqlite-size;</para>
+          Download size: &sqlite-size;
 @y
-        <para>&DownloadSize;: &sqlite-size;</para>
+          &DownloadSize;: &sqlite-size;
 @z
 
 @x
-        <para>Estimated disk space required: &sqlite-buildsize;</para>
+          Estimated disk space required: &sqlite-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &sqlite-buildsize;</para>
+          &Estimateddiskspacerequired;: &sqlite-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &sqlite-time;</para>
+          Estimated build time: &sqlite-time;
 @y
-        <para>&Estimatedbuildtime;: &sqlite-time;</para>
+          &Estimatedbuildtime;: &sqlite-time;
 @z
 
 @x
@@ -91,21 +89,21 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&sqlite-docs-download;"/></para>
+          Download (HTTP): <ulink url="&sqlite-docs-download;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&sqlite-docs-download;"/></para>
+          &Download; (HTTP): <ulink url="&sqlite-docs-download;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &sqlite-docs-md5sum;</para>
+          Download MD5 sum: &sqlite-docs-md5sum;
 @y
-        <para>&Download; MD5 sum: &sqlite-docs-md5sum;</para>
+          &Download; MD5 sum: &sqlite-docs-md5sum;
 @z
 
 @x
-        <para>Download size: &sqlite-docs-size;</para>
+          Download size: &sqlite-docs-size;
 @y
-        <para>&DownloadSize;: &sqlite-docs-size;</para>
+          &DownloadSize;: &sqlite-docs-size;
 @z
 
 @x
@@ -116,19 +114,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="unzip"/> (required to unzip the
-    documentation)</para>
+    <para role="optional">
+      <xref linkend="unzip"/> (required to unzip the documentation).
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="unzip"/> (ドキュメントを伸張するために必要)</para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="unzip"/> (ドキュメントを伸張するために必要)
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/sqlite"/></para>
+      User Notes: <ulink url="&blfs-wiki;/sqlite"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/sqlite"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/sqlite"/>
 @z
 
 @x
@@ -138,46 +137,37 @@
 @z
 
 @x
-    <para>If you downloaded the optional documentation, issue the following
-    command to install the documentation into the source tree:</para>
+      If you downloaded the optional documentation, issue the following command
+      to install the documentation into the source tree:
 @y
-    <para>
-    任意のドキュメントをダウンロードしている場合は、以下のコマンドを実行することで、ドキュメントをソースツリー内にインストールします。
-    </para>
+      任意のドキュメントをダウンロードしている場合は、以下のコマンドを実行することで、ドキュメントをソースツリー内にインストールします。
 @z
 
 @x
-    <para>Install <application>SQLite</application> by running the following
-    commands:</para>
+      Install <application>SQLite</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>SQLite</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>SQLite</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you downloaded the optional documentation, issue the following
-    commands as the <systemitem class="username">root</systemitem> user to
-    install it:</para>
+      If you downloaded the optional documentation, issue the following commands
+      as the <systemitem class="username">root</systemitem> user to install it:
 @y
-    <para>
-    任意のドキュメントをダウンロードしている場合は、<systemitem
-    class="username">root</systemitem> ユーザーとなって以下のコマンドを実行し、ドキュメントをインストールします。
-    </para>
+      任意のドキュメントをダウンロードしている場合は、<systemitem
+      class="username">root</systemitem> ユーザーとなって以下のコマンドを実行し、ドキュメントをインストールします。
 @z
 
 @x
@@ -187,34 +177,33 @@
 @z
 
 @x
-    <para><parameter>CFLAGS="-g -O2 -DSQLITE_SECURE_DELETE
-    -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
-    <application>firefox</application> require secure delete and enable unlock
-    notify to be turned on.  The only way to do this is to include them in the
-    CFLAGS.  By default, these are set to <literal>"-g -O2"</literal> so we
-    specify that to preserve those settings. You may, of course, wish to omit
-    the <literal>'-g'</literal> if you do not wish to create debugging
-    information.  For further information on what can be specified see <ulink
-    url="http://www.sqlite.org/compile.html"/>.</para>
+      <parameter>CFLAGS="-g -O2 -DSQLITE_SECURE_DELETE
+      -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
+      <application>Firefox</application> require secure delete and enable unlock
+      notify to be turned on. The only way to do this is to include them in the
+      CFLAGS. By default, these are set to <literal>"-g -O2"</literal> so we
+      specify that to preserve those settings. You may, of course, wish to omit
+      the <literal>'-g'</literal> if you do not wish to create debugging
+      information. For further information on what can be specified see
+      <ulink url="http://www.sqlite.org/compile.html"/>.
 @y
-    <para><parameter>CFLAGS="-g -O2 -DSQLITE_SECURE_DELETE
-    -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
-    <application>firefox</application> require secure delete and enable unlock
-    notify to be turned on.  The only way to do this is to include them in the
-    CFLAGS.  By default, these are set to <literal>"-g -O2"</literal> so we
-    specify that to preserve those settings. You may, of course, wish to omit
-    the <literal>'-g'</literal> if you do not wish to create debugging
-    information.  For further information on what can be specified see <ulink
-    url="http://www.sqlite.org/compile.html"/>.</para>
+      <parameter>CFLAGS="-g -O2 -DSQLITE_SECURE_DELETE
+      -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
+      <application>Firefox</application> require secure delete and enable unlock
+      notify to be turned on. The only way to do this is to include them in the
+      CFLAGS. By default, these are set to <literal>"-g -O2"</literal> so we
+      specify that to preserve those settings. You may, of course, wish to omit
+      the <literal>'-g'</literal> if you do not wish to create debugging
+      information. For further information on what can be specified see
+      <ulink url="http://www.sqlite.org/compile.html"/>.
 @z
 
 @x
-    <para><parameter>--disable-static</parameter>: This parameter stops it
-    installing a static version of libsqlite3.</para>
+      <option>-DSQLITE_ENABLE_COLUMN_METADATA</option>: Add this to the CFLAGS
+      if you want to use this as a system version for <xref linkend="libgda"/>.
 @y
-    <para><parameter>--disable-static</parameter>:
-    このパラメーターは libsqlite3 のスタティック版をインストールしないようにします。
-    </para>
+      <option>-DSQLITE_ENABLE_COLUMN_METADATA</option>: Add this to the CFLAGS
+      if you want to use this as a system version for <xref linkend="libgda"/>.
 @z
 
 @x
@@ -226,21 +215,17 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>sqlite3</seg>
         <seg>libsqlite3.so</seg>
-        <seg>None</seg>
 @y
         <seg>sqlite3</seg>
         <seg>libsqlite3.so</seg>
-        <seg>&None;</seg>
 @z
 
 @x
@@ -250,21 +235,16 @@
 @z
 
 @x sqlite3
-          <para>A terminal-based front-end to the <application>SQLite
-          </application> library that can evaluate queries interactively
-          and display the results.</para>
+            A terminal-based front-end to the <application>SQLite</application>
+            library that can evaluate queries interactively and display the
+            results.
 @y
-          <para>
-          端末操作により <application>SQLite</application> ライブラリへアクセスするフロントエンド。
-          クエリーを対話的に実行しその結果を得ることができます。
-          </para>
+            端末操作により <application>SQLite</application> ライブラリへアクセスするフロントエンド。
+            クエリーを対話的に実行しその結果を得ることができます。
 @z
 
 @x libsqlite3.so
-          <para>Contains the <application>SQLite</application> API
-          functions.</para>
+            contains the <application>SQLite</application> API functions.
 @y
-          <para>
-          <application>SQLite</application> API 関数を提供します。
-          </para>
+            <application>SQLite</application> API 関数を提供します。
 @z

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME Panel</title>
 @y
-    <title>GNOME Panel の概要</title>
+    <title>&IntroductionTo1;GNOME Panel&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">GNOME Panel Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Panel の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Panel&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -97,16 +97,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="evolution-data-server"/> (required if
-    you plan to install <application>Evolution</application>,
+    you plan to install <application>Evolution</application>),
     <xref linkend="gtk-doc"/>,
     <xref linkend="NetworkManager"/>, and
     <xref linkend="rarian"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="evolution-data-server"/>
-    (<application>Evolution</application> をインストールする場合に必要),
+    <para role="optional"><xref linkend="evolution-data-server"/> (<application>Evolution</application> をインストールする場合に必要),
     <xref linkend="gtk-doc"/>,
-    <xref linkend="NetworkManager"/>,
+    <xref linkend="NetworkManager"/>, and
     <xref linkend="rarian"/></para>
 @z
 
@@ -133,7 +132,7 @@
 @x
     <title>Installation of GNOME Panel</title>
 @y
-    <title>GNOME Panel のインストール</title>
+    <title>&InstallationOf1;GNOME Panel&InstallationOf2;</title>
 @z
 
 @x
