@@ -48,6 +48,65 @@
 @z
 
 @x
+      <para>2012-04-03</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.3.1. Fixes
+           <ulink url="&lfs-ticket-root;3059">#3059</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Automake-1.11.4. Fixes
+           <ulink url="&lfs-ticket-root;3058">#3058</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Gawk-4.0.1. Fixes
+           <ulink url="&lfs-ticket-root;3056">#3056</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Util-Linux-2.21.1. Fixes
+           <ulink url="&lfs-ticket-root;3055">#3055</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to E2fsprogs-1.42.2. Fixes
+           <ulink url="&lfs-ticket-root;3051">#3051</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Coreutils-8.16 and drop the uname patch.
+           Fixes <ulink url="&lfs-ticket-root;3048">#3048</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-03</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Linux-3.3.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3059">#3059</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Automake-1.11.4 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3058">#3058</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Gawk-4.0.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3056">#3056</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Util-Linux-2.21.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3055">#3055</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - E2fsprogs-1.42.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3051">#3051</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Coreutils-8.16 へのアップグレード。
+           および uname に関するパッチを削除。
+           <ulink url="&lfs-ticket-root;3048">#3048</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-03-28</para>
       <itemizedlist>
          <listitem>

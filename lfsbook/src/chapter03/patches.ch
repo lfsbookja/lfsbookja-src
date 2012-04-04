@@ -98,20 +98,6 @@
 @z
 
 @x
-      <term>Coreutils Uname Patch - <token>&coreutils-uname-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&coreutils-uname-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-uname-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Coreutils Uname Patch - <token>&coreutils-uname-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&coreutils-uname-patch;"/></para>
-        <para>MD5 sum: <literal>&coreutils-uname-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Flex GCC-4.4.x Patch - <token>&flex-gcc-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&flex-gcc-patch;"/></para>

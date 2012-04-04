@@ -29,15 +29,10 @@
 @z
 
 @x
-    <para>A known issue with the <command>uname</command> program from
-    this package is that the <parameter>-p</parameter> switch always
-    returns <computeroutput>unknown</computeroutput>. The following patch
-    fixes this behavior for Intel architectures:</para>
+    <para>Fix a bug in a test case:</para>
 @y
     <para>
-    このパッケージが提供するプログラムとして <command>uname</command> があります。
-    このプログラムは <parameter>-p</parameter> オプションを指定したとき、常に <computeroutput>unknown</computeroutput> を返すという問題があります。
-    インテルアーキテクチャーの CPU に対して、以下のパッチによりこれを修正します。
+    テスト処理におけるバグを修正します。
     </para>
 @z
 
