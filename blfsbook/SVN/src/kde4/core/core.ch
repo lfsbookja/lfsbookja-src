@@ -14,7 +14,7 @@
 @z
 
 @x
-  <title>The KDE4 Core</title>
+  <title>The KDE Core</title>
 @y
-  <title>KDE4 コア</title>
+  <title>KDE コア</title>
 @z

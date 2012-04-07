@@ -102,7 +102,7 @@
     <xref linkend="gamin"/>,
     <xref linkend="acl"/>,
     <xref linkend="xfs"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="python2"/> (used only in parts of the test suite),
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <xref linkend="libcap2"/>,
@@ -113,6 +113,7 @@
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>
+
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="popt"/>,
@@ -122,7 +123,7 @@
     <xref linkend="gamin"/>,
     <xref linkend="acl"/>,
     <xref linkend="xfs"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="python2"/> (used only in parts of the test suite),
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <xref linkend="libcap2"/>,

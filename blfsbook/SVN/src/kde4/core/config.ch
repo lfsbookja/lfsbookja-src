@@ -14,34 +14,34 @@
 @z
 
 @x
-  <title>Starting KDE4</title>
+  <title>Starting KDE</title>
 @y
-  <title>KDE4 の起動</title>
+  <title>KDE の起動</title>
 @z
 
 @x
   <para>After <application>Kde-workspace</application> has been installed, the 
   first important milestone has been reached. Now you need to configure your 
-  system to start KDE4.</para>
+  system to start KDE.</para>
 @y
   <para>
   <application>Kde-workspace</application> をインストールすれば、重要なステップが完了です。
-  ここで KDE4 を起動するための設定を行います。
+  ここで KDE を起動するための設定を行います。
   </para>
 @z
 
 @x
-  <title>Starting KDE4 from the command prompt</title>
+  <title>Starting KDE from the command prompt</title>
 @y
-  <title>コマンドプロンプトからの KDE4 の起動</title>
+  <title>コマンドプロンプトからの KDE の起動</title>
 @z
 
 @x
- <para>To start <application>KDE4</application> from the command prompt, you 
+ <para>To start <application>KDE</application> from the command prompt, you 
  first need to modify your <filename>.xinitrc</filename> file:</para>
 @y
  <para>
- <application>KDE4</application> をコマンドプロンプトから起動する場合には、まず <filename>.xinitrc</filename> ファイルを修正しておく必要があります。
+ <application>KDE</application> をコマンドプロンプトから起動する場合には、まず <filename>.xinitrc</filename> ファイルを修正しておく必要があります。
  </para>
 @z
 
@@ -55,21 +55,21 @@
 @z
 
 @x
-    <para>You can now start KDE4 using the <command>startx</command> command.</para>
+    <para>You can now start KDE using the <command>startx</command> command.</para>
 @y
     <para>
-    <command>startx</command> を実行すれば KDE4 が起動します。
+    <command>startx</command> を実行すれば KDE が起動します。
     </para>
 @z
 
 @x
-    <title>Starting KDE4 at boot</title>
+    <title>Starting KDE at boot</title>
 @y
-    <title>ブート時の KDE4 の起動</title>
+    <title>ブート時の KDE の起動</title>
 @z
 
 @x
-    <para>KDE4 comes with a graphical login interface called KDM (the KDE Display 
+    <para>KDE comes with a graphical login interface called KDM (the KDE Display 
     Manager). KDM provides a customizable graphical login at boot. To use KDM, 
     you need to edit your <filename>/etc/inittab</filename> file (as the 
     <systemitem class="username">root</systemitem> user).
@@ -77,7 +77,7 @@
     the path to kdm according to your system):</para>
 @y
     <para>
-    KDE4 には KDM (KDE ディスプレイマネージャー; KDE Display Manager) というグラフィカルログインインターフェースがあります。
+    KDE には KDM (KDE ディスプレイマネージャー; KDE Display Manager) というグラフィカルログインインターフェースがあります。
     ブート時のグラフィカルログインはカスタマイズが可能です。
     KDM を利用するには <filename>/etc/inittab</filename> ファイルを変更します。
     (<systemitem class="username">root</systemitem> ユーザーになって作業します。)
@@ -103,22 +103,22 @@
 @z
 
 @x
-    <para>You can now restart your system and see the beautiful KDE4 login 
+    <para>You can now restart your system and see the beautiful KDE login 
     screen.</para>
 @y
     <para>
-    システムを再起動すれば、KDE4 の美しいログイン画面が表示されます。
+    システムを再起動すれば、KDE の美しいログイン画面が表示されます。
     </para>
 @z
 
 @x
-    <title>Installing further KDE4 packages</title>
-    <para>Every subsequent package can be built while having <application>KDE4</application> up and 
-    running, but remember to keep <envar>&kde4-dir;</envar> and <envar>$QT4DIR</envar> set.</para>
+    <title>Installing further KDE packages</title>
+    <para>Every subsequent package can be built while having <application>KDE</application> up and 
+    running, but remember to keep <envar>&kde-dir;</envar> and <envar>$QT4DIR</envar> set.</para>
 @y
-    <title>KDE4 のその他のパッケージのインストール</title>
+    <title>KDE のその他のパッケージのインストール</title>
     <para>
-    <application>KDE4</application> を稼動させることができたら、その他のパッケージもビルドしていくことができます。
-    その際には <envar>&kde4-dir;</envar> と <envar>$QT4DIR</envar> を正しく設定しておくことを忘れないでください。
+    <application>KDE</application> を稼動させることができたら、その他のパッケージもビルドしていくことができます。
+    その際には <envar>&kde-dir;</envar> と <envar>$QT4DIR</envar> を正しく設定しておくことを忘れないでください。
     </para>
 @z

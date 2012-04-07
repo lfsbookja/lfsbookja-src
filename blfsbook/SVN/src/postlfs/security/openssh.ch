@@ -104,7 +104,7 @@
     <para role="optional"><xref linkend="linux-pam"/>,
     <xref linkend="tcpwrappers"/>,
     <xref linkend="x-window-system"/>,
-    <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>,
+    <xref linkend="mitkrb"/>,
     <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
     (provides a command-line history feature to <command>sftp</command>),
     <ulink url="http://www.opensc-project.org/">OpenSC</ulink>, and
@@ -115,10 +115,10 @@
     <para role="optional"><xref linkend="linux-pam"/>,
     <xref linkend="tcpwrappers"/>,
     <xref linkend="x-window-system"/>,
-    <xref linkend="mitkrb"/> or <xref linkend="heimdal"/>,
+    <xref linkend="mitkrb"/>,
     <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
     (provides a command-line history feature to <command>sftp</command>),
-    <ulink url="http://www.opensc-project.org/">OpenSC</ulink>,
+    <ulink url="http://www.opensc-project.org/">OpenSC</ulink>, and
     <ulink
     url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink></para>
 @z

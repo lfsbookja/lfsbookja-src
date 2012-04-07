@@ -98,9 +98,9 @@
       <para>2012/04/02</para>
 @z
 @x
-          <para>[dj] - Fix libproxy build failure with recent xulrunnr.</para>
+          <para>[dj] - Fix libproxy build failure with recent xulrunner.</para>
 @y
-          <para>[dj] - libproxy が最新の xulrunnr にてビルド失敗するのを修正。</para>
+          <para>[dj] - libproxy が最新の xulrunner にてビルド失敗するのを修正。</para>
 @z
 
 @x

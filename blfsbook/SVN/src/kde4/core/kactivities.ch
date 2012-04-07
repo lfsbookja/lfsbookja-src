@@ -20,10 +20,10 @@
 @z
 
 @x
-    <para>This package provides the activitymanager for KDE4.</para>
+    <para>This package provides the activitymanager for KDE.</para>
 @y
     <para>
-    本パッケージは KDE4 に対しての activitymanager を提供します。
+    本パッケージは KDE に対しての activitymanager を提供します。
     </para>
 @z
 
@@ -78,24 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kde4libs"/> 
+    <xref linkend="kdelibs"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kde4libs"/> 
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-    <xref linkend="phonon"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-    <xref linkend="phonon"/>
+    <xref linkend="kdelibs"/> 
     </para>
 @z
 

@@ -77,15 +77,24 @@
 @z
 
 @x
-      <para>The <application>OpenLDAP</application> stable releases are
-      packaged without version numbers in the tarball names. You can see the
-      relationship between the version number and name of the tarball at <ulink
-      url="http://www.openldap.org/software/download/"/>.</para>
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <para>
-    <application>OpenLDAP</application> のリリース安定版は、tarball の名称の中にバージョン番号を含んでいません。
-    バージョン番号と tarball 名の関係は <ulink url="http://www.openldap.org/software/download/"/> を参照すれば分かります。
-    </para>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+@x
+        <para>Required patch: <ulink
+@y
+        <para>必須のパッチ: <ulink
+@z
+@x
+        <para>Required patch: <ulink
+@y
+        <para>必須のパッチ: <ulink
+@z
+@x
+        <para>Optional patch: <ulink
+@y
+        <para>任意のパッチ: <ulink
 @z
 
 @x
@@ -96,18 +105,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="db"/> (recommended) or
-    GDBM (GDBM is built in LFS)</para>
+    <para role="required"><xref linkend="db"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="db"/> (推奨) あるいは
-    GDBM (GDBM は LFS にて構築)</para>
+    <para role="required"><xref linkend="db"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="cyrus-sasl"/> and
-    <xref linkend="openssl"/></para>
+    <para role="recommended"><xref linkend="cyrus-sasl"/>
+    and <xref linkend="openssl"/></para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="cyrus-sasl"/>,
@@ -115,8 +122,8 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/>,
+    <para role="optional"><xref linkend="icu"/>,
+    <xref linkend="tcpwrappers"/>,
     <xref linkend="unixodbc"/>,
     <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
     <xref linkend="pth"/>, and either
@@ -124,11 +131,12 @@
     <xref linkend="postgresql"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/>,
+    <para role="optional"><xref linkend="icu"/>,
+    <xref linkend="tcpwrappers"/>,
     <xref linkend="unixodbc"/>,
     <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-    <xref linkend="pth"/>, さらに
-    <xref linkend="mysql"/> か
+    <xref linkend="pth"/>, また
+    <xref linkend="mysql"/> あるいは
     <xref linkend="postgresql"/> のいずれか</para>
 @z
 
@@ -181,38 +189,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--libexecdir=/usr/sbin</parameter>: Installs the
-    <command>slapd</command> daemon programs in
-    <filename class="directory">/usr/sbin</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
-@y
-    <para><parameter>--libexecdir=/usr/sbin</parameter>: Installs the
-    <command>slapd</command> daemon programs in
-    <filename class="directory">/usr/sbin</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
-@z
-
-@x
-    <para><parameter>--sysconfdir=/etc</parameter>: Sets the configuration file
-    directory to avoid the default of
-    <filename class="directory">/usr/etc</filename>.</para>
-@y
-    <para><parameter>--sysconfdir=/etc</parameter>: Sets the configuration file
-    directory to avoid the default of
-    <filename class="directory">/usr/etc</filename>.</para>
-@z
-
-@x
-    <para><parameter>--localstatedir=/srv/ldap</parameter>: Sets the directory
-    to use for the LDAP directory database, replication logs and
-    run-time variable data.</para>
-@y
-    <para><parameter>--localstatedir=/srv/ldap</parameter>: Sets the directory
-    to use for the LDAP directory database, replication logs and
-    run-time variable data.</para>
 @z
 
 @x
@@ -307,16 +283,6 @@
     wish to use <application>GDBM</application> instead of
     <application>Berkeley DB</application> as the primary backend
     database.</para>
-@z
-
-@x
-    <para><command>chmod -v 0755 ...</command>: This
-    command adds the executable bit to the shared libraries.</para>
-@y
-    <para>
-    <command>chmod -v 0755 ...</command>: 
-    これは共有ライブラリ (shared library) に対しての実行ビットを付与します。
-    </para>
 @z
 
 @x
@@ -475,14 +441,16 @@
 
 @x
         <para>The init script starts the daemon without any parameters.
-        You'll need to modify the script to include the parameters needed for
-        your specific configuration. See the <command>slapd</command>
-        man page for parameter information.</para>
+        You'll need to modify the 
+        <filename>/etc/sysconfig/openldap</filename> to include the 
+        parameters needed for your specific configuration. See the 
+        <command>slapd</command> man page for parameter information.</para>
 @y
         <para>The init script starts the daemon without any parameters.
-        You'll need to modify the script to include the parameters needed for
-        your specific configuration. See the <command>slapd</command>
-        man page for parameter information.</para>
+        You'll need to modify the 
+        <filename>/etc/sysconfig/openldap</filename> to include the 
+        parameters needed for your specific configuration. See the 
+        <command>slapd</command> man page for parameter information.</para>
 @z
 
 @x
@@ -533,17 +501,19 @@
 @z
 
 @x
-        <seg>ldapadd, ldapcompare, ldapdelete, ldapmodify, ldapmodrdn,
-        ldappasswd, ldapsearch, ldapwhoami, slapadd, slapcat, slapd, slapdn,
-        slapindex, slappasswd, and slaptest</seg>
-        <seg>liblber.{so,a}, libldap.{so,a}, and libldap_r.{so,a}</seg>
-        <seg>/etc/openldap, /srv/ldap, and /usr/share/openldap</seg>
+        <seg>ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
+        ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
+        slapcat, slapd, slapdn, slapindex, slappasswd, slapschema and slaptest</seg>
+        <seg>liblber.so, libldap.so,a and libldap_r.so</seg>
+        <seg>/etc/openldap, /usr/lib/openldap
+        and /var/lib/openldap</seg>
 @y
-        <seg>ldapadd, ldapcompare, ldapdelete, ldapmodify, ldapmodrdn,
-        ldappasswd, ldapsearch, ldapwhoami, slapadd, slapcat, slapd, slapdn,
-        slapindex, slappasswd, slaptest</seg>
-        <seg>liblber.{so,a}, libldap.{so,a}, libldap_r.{so,a}</seg>
-        <seg>/etc/openldap, /srv/ldap, /usr/share/openldap</seg>
+        <seg>ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
+        ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
+        slapcat, slapd, slapdn, slapindex, slappasswd, slapschema, slaptest</seg>
+        <seg>liblber.so, libldap.so,a, libldap_r.so</seg>
+        <seg>/etc/openldap, /usr/lib/openldap,
+        /var/lib/openldap</seg>
 @z
 
 @x

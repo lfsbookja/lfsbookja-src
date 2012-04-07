@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Wireshark</title>
 @y
-    <title>Wireshark の概要</title>
+    <title>&IntroductionTo1;Wireshark&IntroductionTo2;</title>
 @z
 
 @x
@@ -48,43 +48,43 @@
 @x
         <para>Download (HTTP): <ulink url="&wireshark-download-http;"/></para>
 @y
-        <para>Download (HTTP): <ulink url="&wireshark-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&wireshark-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&wireshark-download-ftp;"/></para>
 @y
-        <para>Download (FTP): <ulink url="&wireshark-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&wireshark-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &wireshark-md5sum;</para>
 @y
-        <para>Download MD5 sum: &wireshark-md5sum;</para>
+        <para>&Download; MD5 sum: &wireshark-md5sum;</para>
 @z
 
 @x
         <para>Download size: &wireshark-size;</para>
 @y
-        <para>Download size: &wireshark-size;</para>
+        <para>&DownloadSize;: &wireshark-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &wireshark-buildsize;</para>
 @y
-        <para>Estimated disk space required: &wireshark-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &wireshark-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &wireshark-time;</para>
 @y
-        <para>Estimated build time: &wireshark-time;</para>
+        <para>&Estimatedbuildtime;: &wireshark-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -106,7 +106,7 @@
 @x
     <bridgehead renderas="sect3">Wireshark dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Wireshark dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Wireshark&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -114,7 +114,7 @@
     <para role="required"><!--<xref linkend="GLib"/> or --><xref linkend="glib2"/>
     (to build the TTY-mode front-end only)</para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><!--<xref linkend="GLib"/> or --><xref linkend="glib2"/>
     (to build the TTY-mode front-end only)</para>
 @z
@@ -134,7 +134,7 @@
     <para role="recommended"><xref linkend="libpcap"/>
     (required to capture data)</para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended"><xref linkend="libpcap"/>
     (required to capture data)</para>
 @z
@@ -144,7 +144,7 @@
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="gtk2"/> (to build the GUI front-end),
     <xref linkend="openssl"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="python2"/>,
     <xref linkend="pcre"/>,
     <xref linkend="gnutls"/>,
@@ -156,7 +156,7 @@
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
     <xref linkend="gtk2"/> (to build the GUI front-end),
     <xref linkend="openssl"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="python2"/>,
     <xref linkend="pcre"/>,
     <xref linkend="gnutls"/>,
@@ -169,14 +169,14 @@
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/wireshark"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
     <ulink url="&blfs-wiki;/wireshark"/></para>
 @z
 
 @x
     <title>Kernel Configuration</title>
 @y
-    <title>Kernel Configuration</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
@@ -212,7 +212,7 @@
 @x
     <title>Installation of Wireshark</title>
 @y
-    <title>Installation of Wireshark</title>
+    <title>&InstallationOf1;Wireshark&InstallationOf2;</title>
 @z
 
 @x
@@ -226,7 +226,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>This package does not come with a test suite.</para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -248,7 +248,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -274,13 +274,13 @@
 @x
     <title>Configuring Wireshark</title>
 @y
-    <title>Configuring Wireshark</title>
+    <title>&Configuring1;Wireshark&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -294,7 +294,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -332,7 +332,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -340,9 +340,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -364,7 +364,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x capinfos

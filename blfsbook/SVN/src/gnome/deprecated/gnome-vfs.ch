@@ -98,7 +98,7 @@
     <xref linkend="gtk-doc"/>,
     <xref linkend="openssh"/>,
     <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
-    <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="avahi"/>,
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>, and
     <xref linkend="cdparanoia"/> (not recommended)</para>
@@ -110,7 +110,7 @@
     <xref linkend="gtk-doc"/>,
     <xref linkend="openssh"/>,
     <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
-    <xref linkend="heimdal"/> または <xref linkend="mitkrb"/>,
+    <xref linkend="mitkrb"/>,
     <xref linkend="avahi"/>,
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
     <xref linkend="cdparanoia"/> (非推奨)</para>

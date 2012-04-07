@@ -265,20 +265,6 @@
 @z
 
 @x
-      <command>sed -i 's#-L${sdkdir}/lib ##'
-      xulrunner/installer/*.pc.in</command>: Because we put symlinks to the
-      libraries into <filename class="directory">/usr/lib</filename> we do not
-      need to have -L/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib in
-      the linker flags provided by the pkg-config .pc files.
-@y
-      <command>sed -i 's#-L${sdkdir}/lib ##'
-      xulrunner/installer/*.pc.in</command>: Because we put symlinks to the
-      libraries into <filename class="directory">/usr/lib</filename> we do not
-      need to have -L/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib in
-      the linker flags provided by the pkg-config .pc files.
-@z
-
-@x
       <command>make -f client.mk ...</command>: Mozilla products are packaged to
       allow the use of a configuration file which can be used to pass the
       configuration settings to the <command>configure</command> command.
@@ -308,21 +294,21 @@
 
 @x
       <command>for library in
-      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.{a,so}; do ln -sfv
+      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.so; do ln -sfv
       ${library#/usr/lib/} /usr${library#*sdk}; done</command>: The libraries
       shipped with this package are installed into
       <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make
-      relative symbolic links to the libraries from
+      relative symbolic links to the shared libraries from
       <filename class="directory">/usr/lib</filename>.
 @y
       <command>for library in
-      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.{a,so}; do ln -sfv
+      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.so; do ln -sfv
       ${library#/usr/lib/} /usr${library#*sdk}; done</command>: The libraries
       shipped with this package are installed into
       <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make
-      relative symbolic links to the libraries from
+      relative symbolic links to the shared libraries from
       <filename class="directory">/usr/lib</filename>.
 @z
 

@@ -27,12 +27,15 @@
 
 @x
     <para><application>dhcpcd</application> is an implementation of the
-    DHCP client specified in RFC2131. This is useful for connecting
+    DHCP client specified in RFC2131. A DHCP client is useful for connecting
     your computer to a network which uses DHCP to assign network
-    addresses.</para>
+    addresses. dhcpcd strives to be a fully featured, yet very lightweight 
+    DHCP client.</para>
 @y
     <para>
-    <application>dhcpcd</application> は、RFC2131 にて定義されている DHCP クライアントの実装です。ネットワークアドレスを自動割振りする DHCP を利用している環境にて、各コンピューターをネットワーク接続するために利用することができます。
+    <application>dhcpcd</application> は、RFC2131 にて定義されている DHCP クライアントの実装です。
+    DHCP クライアントは、DHCP を利用してネットワークアドレスが割り当てられたネットワークへのアクセスに用いられます。
+    dhcpcd は十分な機能を有すると同時に、大変軽量な DHCP クライアントです。
     </para>
 @z
 

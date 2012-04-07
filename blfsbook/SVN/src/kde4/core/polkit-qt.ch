@@ -20,8 +20,8 @@
 @z
 
 @x
-    <para><application>Polkit-Qt</application> provides an API to <application>polkit</application>
-    in the Qt environment.</para>
+    <para><application>Polkit-Qt</application> provides an API to 
+    <application>polkit</application> in the Qt environment.</para>
 @y
     <para>
     <application>Polkit-Qt</application> は Qt 環境での <application>polkit</application> に対する API を提供します。

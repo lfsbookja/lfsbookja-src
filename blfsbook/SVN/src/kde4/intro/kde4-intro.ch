@@ -14,36 +14,23 @@
 @z
 
 @x
-  <title>Introduction to KDE4</title>
+  <title>Introduction to KDE</title>
 @y
-  <title>KDE4 の導入にあたって</title>
+  <title>KDE の導入にあたって</title>
 @z
 
 @x
-  <para><application>KDE</application> Version 4 is a comprehensive desktop
+  <para><application>KDE</application> version 4 is a comprehensive desktop
   environment with a huge number of applications written for it and a huge
-  amount of users. Subsequently, it is refered to as
-  <application>KDE4</application>.  The earlier version is referredt to as
-  <application>KDE3</application> to avoid confusion.</para>
-@y
-  <para>
-  <application>KDE</application> のバージョン 4 は、分かりやすいデスクトップ環境であり、これに対応した数多くのアプリケーションが提供されています。
-  これと同時に、数多くのユーザーも抱えているものです。
-  KDE のバージョン 4 は <application>KDE4</application>、バージョン 3 は <application>KDE3</application> と表記することにより、両者を混同しないようにしています。
-  </para>
-@z
-
-@x
-  <para><application>KDE3</application>, now renamed Trinity, is also in the
-  book.  The current version is based on <application>Qt4</application> and has
-  some other conceptual innovations like Plasmoids and Activities. For more
-  information about these concepts go to the KDE project site at <ulink
+  amount of users. It is based on the <application>Qt4</application> framework.</para>
+  <para>For more information visit the official KDE project site at <ulink
   url="http://www.kde.org/"/>.</para>
 @y
   <para>
-  <application>KDE3</application> は Trinity に名称変更されており、本書にも掲載しています。
-  最新バージョンは <application>Qt4</application> に基づいていて、Plasmoids や Activities といった最新技術や方式がいくつか追加されています。
-  こういった新たな方式などについては KDE のプロジェクトサイト <ulink
-  url="http://www.kde.org/"/> を参照してください。
+  <application>KDE</application> のバージョン 4 は、分かりやすいデスクトップ環境であり、これに対応した数多くのアプリケーションが提供され、数多くのユーザーも抱えています。
+  これは <application>Qt4</application> フレームワークに基づいています。
+  </para>
+  <para>
+  詳細な情報は、公式の KDE プロジェクトサイト <ulink url="http://www.kde.org/"/> を参照してください。
   </para>
 @z

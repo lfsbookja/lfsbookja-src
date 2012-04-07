@@ -16,7 +16,7 @@
 @x
    <title>Introduction to Inetutils</title>
 @y
-   <title>Inetutils の概要</title>
+   <title>&IntroductionTo1;Inetutils&IntroductionTo2;</title>
 @z
 
 @x
@@ -81,7 +81,7 @@
 @x
     <bridgehead renderas="sect3">Inetutils Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Inetutils の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Inetutils&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -90,7 +90,6 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="tcpwrappers"/>,
       <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>, and
-      <xref linkend="heimdal"/> or 
       <xref linkend="mitkrb"/>
     </para>
 @y
@@ -99,7 +98,6 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="tcpwrappers"/>,
       <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-      <xref linkend="heimdal"/> または
       <xref linkend="mitkrb"/>
     </para>
 @z
@@ -115,7 +113,7 @@
 @x
     <title>Installation of Inetutils</title>
 @y
-    <title>Inetutils のインストール</title>
+    <title>&InstallationOf1;Inetutils&InstallationOf2;</title>
 @z
 
 @x
@@ -297,8 +295,8 @@
 @y
         <seg>ftpd, hostname, ifconfig, inetd, rexecd, rlogind, rshd,
         talkd, telnetd, tftpd, uucpd, whois</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

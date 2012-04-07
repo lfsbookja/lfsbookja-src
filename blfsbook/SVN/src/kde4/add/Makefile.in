@@ -150,6 +150,7 @@ CHANGE_FILES = \
 	add.ch \
 	add-pkgs.ch \
 	ark.ch \
+	gwenview.ch \
 	kate.ch \
 	kcalc.ch \
 	kde4admin.ch \
@@ -360,6 +361,7 @@ ctie:
 add.xml:               $(BOOKdir)/$@ $(srcdir)/add.ch
 add-pkgs.xml:          $(BOOKdir)/$@ $(srcdir)/add-pkgs.ch
 ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
+gwenview.xml:          $(BOOKdir)/$@ $(srcdir)/gwenview.ch
 kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
 kcalc.xml:             $(BOOKdir)/$@ $(srcdir)/kcalc.ch
 kde4admin.xml:         $(BOOKdir)/$@ $(srcdir)/kde4admin.ch

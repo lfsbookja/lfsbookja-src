@@ -20,10 +20,10 @@
 @z
 
 @x
-    <para>This package provides a terminal emulator for KDE4.</para> 
+    <para>This package provides a terminal emulator for KDE.</para> 
 @y
     <para>
-    本パッケージは KDE4 の端末エミュレーターを提供します。
+    本パッケージは KDE の端末エミュレーターを提供します。
     </para> 
 @z
 
@@ -78,12 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kde4libs"/>
+    <xref linkend="kdelibs"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kde4libs"/>
+    <xref linkend="kdelibs"/>
     </para>
 @z
 
@@ -125,7 +125,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>

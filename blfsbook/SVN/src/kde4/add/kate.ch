@@ -80,12 +80,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kde4libs"/>
+      <xref linkend="kdelibs"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kde4libs"/>
+      <xref linkend="kdelibs"/>
     </para>
 @z
 

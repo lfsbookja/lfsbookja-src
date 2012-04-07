@@ -95,16 +95,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="mitkrb"/> or
-      <xref linkend="heimdal"/> and
+      <xref linkend="mitkrb"/> and
       <xref linkend="bc"/> (required for full coverage by the test suite during
       the build)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="mitkrb"/> または
-      <xref linkend="heimdal"/> かつ
+      <xref linkend="mitkrb"/>,
       <xref linkend="bc"/> (ビルド時にテストスイートすべてを実行する場合に必要。)
     </para>
 @z

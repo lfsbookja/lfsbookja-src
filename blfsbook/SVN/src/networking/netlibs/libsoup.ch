@@ -93,12 +93,18 @@
 
 @x
     <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>,
-    <xref linkend="libgnome-keyring"/> and <xref linkend="sqlite"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgnome-keyring"/> and 
+      <xref linkend="sqlite"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GNOME ビルド時は必須)</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>,
-    <xref linkend="libgnome-keyring"/>, <xref linkend="sqlite"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="sqlite"/>
+    </para>
 @z
 
 @x

@@ -7,7 +7,7 @@ EXTRA_DIST = apache-ant.ch cpio.ch dbus.ch fcron.ch gpm.ch hal.ch hdparm.ch \
 	gvfs.ch libarchive.ch \
 	raptor.ch redland.ch rasqal.ch strigi.ch \
 	autofs.ch initdtools.ch dbus-bindings.ch \
-	packagekit.ch tracker.ch
+	packagekit.ch tracker.ch udisks2.ch
 srcdir = @srcdir@
 srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	mc.xml pciutils.xml sysstat.xml sysutils.xml \
@@ -17,7 +17,7 @@ srcs = apache-ant.xml cpio.xml dbus.xml fcron.xml gpm.xml hal.xml hdparm.xml \
 	gvfs.xml libarchive.xml \
 	raptor.xml redland.xml rasqal.xml strigi.xml \
 	autofs.xml initdtools.xml dbus-bindings.xml \
-	packagekit.xml tracker.xml
+	packagekit.xml tracker.xml udisks2.xml
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -61,4 +61,5 @@ initdtools.xml: $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 dbus-bindings.xml: $(BOOKdir)/$@ $(srcdir)/dbus-bindings.ch
 packagekit.xml: $(BOOKdir)/$@ $(srcdir)/packagekit.ch
 tracker.xml: $(BOOKdir)/$@ $(srcdir)/tracker.ch
+udisks2.xml: $(BOOKdir)/$@ $(srcdir)/udisks2.ch
 

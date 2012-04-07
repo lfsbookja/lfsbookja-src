@@ -21,12 +21,12 @@
 
 @x
     <para>The Kde-workspace package contains components that are central to 
-    providing the <application>KDE4</application> desktop environment. Of 
+    providing the <application>KDE</application> desktop environment. Of 
     particular importance are KWin, the <application>KDE4</application>
     window manager, and Plasma, which provides the workspace interface.</para>
 @y
     <para>
-    Kde-workspace パッケージは、<application>KDE4</application> デスクトップ環境の重要なコンポーネントを提供います。
+    Kde-workspace パッケージは、<application>KDE</application> デスクトップ環境の重要なコンポーネントを提供います。
     特に重要なのが <application>KDE4</application> ウィンドウマネージャーの KWin、ワークスペースのインターフェースである Plasma です。
     </para>
 @z
@@ -38,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&kde4workspace-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&kdeworkspace-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&kde4workspace-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kdeworkspace-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&kde4workspace-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&kdeworkspace-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&kde4workspace-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kdeworkspace-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &kde4workspace-md5sum;</para>
+        <para>Download MD5 sum: &kdeworkspace-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &kde4workspace-md5sum;</para>
+        <para>&Download; MD5 sum: &kdeworkspace-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &kde4workspace-size;</para>
+        <para>Download size: &kdeworkspace-size;</para>
 @y
-        <para>&DownloadSize;: &kde4workspace-size;</para>
+        <para>&DownloadSize;: &kdeworkspace-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &kde4workspace-buildsize;</para>
+        <para>Estimated disk space required: &kdeworkspace-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &kde4workspace-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kdeworkspace-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &kde4workspace-time;</para>
+        <para>Estimated build time: &kdeworkspace-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &kde4workspace-time;</para>
+        <para>&Estimatedbuildtime;: &kdeworkspace-time;</para>
 @z
 
 @x
@@ -82,13 +82,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kde4libs"/> and 
+    <xref linkend="kdelibs"/> and 
     <xref linkend="kactivities"/>  
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kde4libs"/>,
+    <xref linkend="kdelibs"/>,
     <xref linkend="kactivities"/>  
     </para>
 @z
@@ -96,7 +96,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="kde4pimlibs"/>, 
+    <xref linkend="kdepimlibs"/>, 
     <xref linkend="boost"/>, 
     <xref linkend="freetype2"/>, 
     <xref linkend="pciutils"/> and
@@ -105,7 +105,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="kde4pimlibs"/>, 
+    <xref linkend="kdepimlibs"/>, 
     <xref linkend="boost"/>, 
     <xref linkend="freetype2"/>, 
     <xref linkend="pciutils"/>,

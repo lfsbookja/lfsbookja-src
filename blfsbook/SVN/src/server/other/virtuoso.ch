@@ -101,7 +101,7 @@
     <xref linkend="libiodbc"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="openssl"/>,
-    <xref linkend="openldap"/>,
+    <xref linkend="openldap"/> and
     <xref linkend="jdk"/>
     </para>
 @y
@@ -118,7 +118,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="imagemagick"/>,
+    <xref linkend="imagemagick"/> and
     <xref linkend="python2"/>
     </para>
 @y
@@ -200,18 +200,6 @@
 @z
 
 @x
-    <para><option>--enable-python</option>Add this option if 
-    <application>Python</application> is installed. It enables the
-    use of <application>Python</application> by 
-    <application>Virtuoso</application>.</para>
-@y
-    <para><option>--enable-python</option>Add this option if 
-    <application>Python</application> is installed. It enables the
-    use of <application>Python</application> by 
-    <application>Virtuoso</application>.</para>
-@z
-
-@x
     <para><option>--with-jdk4</option>: Add this option to specify the path
     to the <xref linkend="jdk"/> and to enable making use of Java.</para>
 @y
@@ -220,12 +208,12 @@
 @z
 
 @x
-    <para><option>--with-port</option>: Add this is you want that 
-    <application>virtuoso</application> is listening on another port than
+    <para><option>--with-port</option>: Add this if you want the  
+    <application>virtuoso</application> server to listen on another port than
     1111.</para>
 @y
-    <para><option>--with-port</option>: Add this is you want that 
-    <application>virtuoso</application> is listening on another port than
+    <para><option>--with-port</option>: Add this if you want the  
+    <application>virtuoso</application> server to listen on another port than
     1111.</para>
 @z
 
@@ -313,14 +301,14 @@
 @z
 
 @x
-        <seg>virtuoso-t, isql-v{,w}, virt_mail, inifile</seg>
-        <seg>several shared and static libraries</seg>
-        <seg>/var/lib/virtuoso, /usr/lib/{hibernate,virtuoso,jdbc-{2,3,4}.0,sesame,jena},
+        <seg>inifile, isql-v, isql-vw, virt_mail and virtuoso-t</seg>
+        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so and virtodbcu_r.so</seg>
+        <seg>/var/lib/virtuoso, /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso} and
         /usr/share/virtuoso</seg>
 @y
-        <seg>virtuoso-t, isql-v{,w}, virt_mail, inifile</seg>
-        <seg>いくつかの共有ライブラリとスタティックライブラリ</seg>
-        <seg>/var/lib/virtuoso, /usr/lib/{hibernate,virtuoso,jdbc-{2,3,4}.0,sesame,jena},
+        <seg>inifile, isql-v, isql-vw, virt_mail, virtuoso-t</seg>
+        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so, virtodbcu_r.so</seg>
+        <seg>/var/lib/virtuoso, /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso},
         /usr/share/virtuoso</seg>
 @z
 
@@ -330,16 +318,16 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x virtuoso-t
-          <para>is the Universial Server daemon.</para>
-@y
-          <para>is the Universial Server daemon.</para>
-@z
-
 @x isql-v
           <para>is a interactive SQL utility.</para>
 @y
           <para>
           対話的な SQL ユーティリティ。
           </para>
+@z
+
+@x virtuoso-t
+          <para>is the Universial Server daemon.</para>
+@y
+          <para>is the Universial Server daemon.</para>
 @z

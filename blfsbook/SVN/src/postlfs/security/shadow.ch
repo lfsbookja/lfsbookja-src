@@ -242,16 +242,6 @@
 @z
 
 @x
-      <command>sed -i '/&lt;stdio.h&gt;/a#include &lt;stdarg.h&gt;'
-      libmisc/copydir.c</command>: This sed fixes a bug which would make the
-      build fail if <xref linkend="acl"/> is installed.
-@y
-      <command>sed -i '/&lt;stdio.h&gt;/a#include &lt;stdarg.h&gt;'
-      libmisc/copydir.c</command>: 
-      この sed コマンドは、<xref linkend="acl"/> がインストールされている場合にビルドに失敗するバグを修正するものです。
-@z
-
-@x
       <command>mv -v /usr/bin/passwd /bin</command>: The
       <command>passwd</command> program may be needed during times when the
       <filename class='directory'>/usr</filename> filesystem is not mounted so

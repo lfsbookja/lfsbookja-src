@@ -80,48 +80,76 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="dbus"/>,
+      <xref linkend="intltool"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="dbus"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended if building GNOME</bridgehead>
+    <para role="recommended">
+      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="libsoup"/> and
+      <xref linkend="udisks2"/>
+      (Useful if you want to mount disks via Nautilus).
+    </para>
+@y
+    <bridgehead renderas="sect4">GNOME ビルド時の推奨</bridgehead>
+    <para role="recommended">
+      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="libsoup"/>,
+      <xref linkend="udisks2"/>
+      (Nautilus を通じてディスクマウントを行う場合に有用)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="avahi"/>,
-    <ulink url="http://www.bluez.org/">BlueZ</ulink>,
-    <xref linkend="dbus-glib"/>,
-    <xref linkend="expat"/>,
-    <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>,
-    <xref linkend="gnome-disk-utility"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
-    <xref linkend="libarchive"/>,
-    <ulink url="http://directory.fsf.org/project/libcdio/">libcdio</ulink>,
-    <xref linkend="libgnome-keyring"/>,
-    <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-    <xref linkend="libsoup"/>,
-    <xref linkend="libxml2"/>, and
-    <xref linkend="samba3"/></para>
+    <para role="optional">
+      <xref linkend="avahi"/> (For DNS/SD Backend),
+      <ulink url="http://www.bluez.org/">BlueZ</ulink>
+      (For ObexFTP Backend),
+      <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>
+      (For gvfs-fuse-daemon),
+      <xref linkend="libarchive"/>,
+      <ulink url="http://www.videolan.org/developers/libbluray.html">
+      libbluray</ulink> (For accessing BluRay disks),
+      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>
+      (For accessing CD's),
+      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>
+      (For accessing GPhoto devices),
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>
+      (For mounting iPhone, iPad and other Apple devices) and
+      <xref linkend="samba3"/> (For mounting Samba shares).
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="avahi"/>,
-    <ulink url="http://www.bluez.org/">BlueZ</ulink>,
-    <xref linkend="dbus-glib"/>,
-    <xref linkend="expat"/>,
-    <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>,
-    <xref linkend="gnome-disk-utility"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
-    <xref linkend="libarchive"/>,
-    <ulink url="http://directory.fsf.org/project/libcdio/">libcdio</ulink>,
-    <xref linkend="libgnome-keyring"/>,
-    <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-    <xref linkend="libsoup"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="samba3"/></para>
+    <para role="optional">
+      <xref linkend="avahi"/> (For DNS/SD Backend),
+      <ulink url="http://www.bluez.org/">BlueZ</ulink>
+      (For ObexFTP Backend),
+      <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>
+      (For gvfs-fuse-daemon),
+      <xref linkend="libarchive"/>,
+      <ulink url="http://www.videolan.org/developers/libbluray.html">
+      libbluray</ulink> (For accessing BluRay disks),
+      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>
+      (For accessing CD's),
+      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>
+      (For accessing GPhoto devices),
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>
+      (For mounting iPhone, iPad and other Apple devices),
+      <xref linkend="samba3"/> (For mounting Samba shares).
+    </para>
 @z
 
 @x
@@ -162,40 +190,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--sysconfdir=/etc</parameter>: This parameter causes the
-    sysconf files to be installed in the preferred location of
-    <filename class="directory">/etc</filename> instead of
-    <filename class="directory">/usr/etc</filename>.</para>
-@y
-    <para>
-    <parameter>--sysconfdir=/etc</parameter>:
-    このパラメーターは sysconf ファイルをインストールするディレクトリとして、<filename
-    class="directory">/usr/etc</filename> ではなく、より適切な <filename
-    class="directory">/etc</filename> とします。
-    </para>
-@z
-
-@x
-    <para><parameter>--libexecdir=/usr/lib/gvfs</parameter>: This parameter
-    causes the libexec files to be installed in the preferred location of
-    <filename class="directory">/usr/lib/gvfs</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
-@y
-    <para>
-    <parameter>--libexecdir=/usr/lib/gvfs</parameter>:
-    このパラメーターは libexec ファイルをインストールするディレクトリとして <filename
-    class="directory">/usr/libexec</filename> ではなく、より適切な <filename
-    class="directory">/usr/lib/gvfs</filename> とします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -212,27 +206,35 @@
 @z
 
 @x
-        <seg>gvfs-cat, gvfs-copy, gvfs-gdu-volume-monitor, gvfs-info, gvfs-less,
-        gvfs-ls, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
-        gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
-        gvfs-set-attribute, gvfs-trash, gvfs-tree, gvfsd, gvfsd-burn,
-        gvfsd-computer, gvfsd-dav, gvfsd-dnssd, gvfsd-ftp, gvfsd-http,
-        gvfsd-localtest, gvfsd-metadata, gvfsd-network, gvfsd-sftp, and
-        gvfsd-trash</seg>
-        <seg>libgioremote-volume-monitor.so, libgvfscommon-dnssd.so,
-        libgvfscommon.so, and libgvfsdbus.so</seg>
-        <seg>/usr/{include/gvfs-client/gvfs,lib/gvfs,share/gvfs/{mounts,
-        remote-volume-monitors}}</seg>
+        <seg>
+          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, 
+          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, 
+          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, 
+          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree 
+          and several executables in /usr/lib/gvfs
+        </seg>
+
+        <seg>
+          libgvfscommon.so and libgvfscommon-dnssd.so
+        </seg>
+
+        <seg>
+          /usr/include/gvfs-client, /usr/lib/gvfs and /usr/share/gvfs
+        </seg>
 @y
-        <seg>gvfs-cat, gvfs-copy, gvfs-gdu-volume-monitor, gvfs-info, gvfs-less,
-        gvfs-ls, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
-        gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
-        gvfs-set-attribute, gvfs-trash, gvfs-tree, gvfsd, gvfsd-burn,
-        gvfsd-computer, gvfsd-dav, gvfsd-dnssd, gvfsd-ftp, gvfsd-http,
-        gvfsd-localtest, gvfsd-metadata, gvfsd-network, gvfsd-sftp,
-        gvfsd-trash</seg>
-        <seg>libgioremote-volume-monitor.so, libgvfscommon-dnssd.so,
-        libgvfscommon.so, libgvfsdbus.so</seg>
-        <seg>/usr/{include/gvfs-client/gvfs,lib/gvfs,share/gvfs/{mounts,
-        remote-volume-monitors}}</seg>
+        <seg>
+          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, 
+          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, 
+          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, 
+          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree,
+          /usr/lib/gvfs 配下に数種の実行モジュール
+        </seg>
+
+        <seg>
+          libgvfscommon.so, libgvfscommon-dnssd.so
+        </seg>
+
+        <seg>
+          /usr/include/gvfs-client, /usr/lib/gvfs and /usr/share/gvfs
+        </seg>
 @z

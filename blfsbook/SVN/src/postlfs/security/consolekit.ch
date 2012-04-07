@@ -91,10 +91,12 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="polkit"/></para>
+    <para role="recommended"><xref linkend="linux-pam"/>
+    and <xref linkend="polkit"/></para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="polkit"/></para>
+    <para role="recommended"><xref linkend="linux-pam"/>,
+    <xref linkend="polkit"/></para>
 @z
 
 @x
@@ -111,12 +113,10 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/> and
-    <xref linkend="xmlto"/></para>
+    <para role="optional"><xref linkend="xmlto"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/> と
-    <xref linkend="xmlto"/></para>
+    <para role="optional"><xref linkend="xmlto"/></para>
 @z
 
 @x
@@ -211,12 +211,12 @@
       <para>If you use <application>PAM</application> you need to configure 
       <application>PAM</application> to activate <application>ConsoleKit
       </application> upon user login. This can be achieved by editing the 
-      <filename>/etc/pam.d/login</filename> file as the 
+      <filename>/etc/pam.d/system-session</filename> file as the 
       <systemitem class="username">root</systemitem> user:</para>
 @y
       <para>
       <application>PAM</application> を導入している場合は、<application>PAM</application> において、ユーザーログイン時に <application>ConsoleKit</application> を有効とする設定を行う必要があります。
-      これを実現するには、<systemitem class="username">root</systemitem> ユーザーになり、以下のように <filename>/etc/pam.d/login</filename> ファイルを編集します。
+      これを実現するには <systemitem class="username">root</systemitem> ユーザーになり、以下のように <filename>/etc/pam.d/system-session</filename> ファイルを編集します。
       </para>
 @z
 

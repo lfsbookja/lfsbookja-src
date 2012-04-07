@@ -104,7 +104,7 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="openldap"/>,
       <xref linkend="gnutls"/> or <xref linkend="openssl"/> (looked for in that
-      order), <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+      order), <xref linkend="mitkrb"/>,
       <xref linkend="php"/>,
       <xref linkend="gs"/>,
       <xref linkend="python2"/>,
@@ -127,7 +127,7 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="openldap"/>,
       <xref linkend="gnutls"/> or <xref linkend="openssl"/> (looked for in that
-      order), <xref linkend="heimdal"/> or <xref linkend="mitkrb"/>,
+      order), <xref linkend="mitkrb"/>,
       <xref linkend="php"/>,
       <xref linkend="gs"/>,
       <xref linkend="python2"/>,

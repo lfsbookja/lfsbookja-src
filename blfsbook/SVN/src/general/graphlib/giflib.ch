@@ -188,3 +188,52 @@
           Epson タイププリンター上に保存されている GIF ファイルのイメージをダンプします。
           </para>
 @z
+
+@x gif2ps
+          <para>prints GIF files on laser printers supporting PostScript.</para>
+@y
+          <para>
+          PostScript をサポートするレーザープリンターに GIF ファイルを出力します。
+          </para>
+@z
+
+@x gif2rgb
+          <para>converts images saved as GIF to 24-bit RGB images.</para>
+@y
+          <para>
+          GIF イメージを 24 ビット RGB イメージに変換します。
+          </para>
+@z
+
+@x gif2x11
+          <para>displays images saved as GIF files under X Window System.</para>
+@y
+          <para>
+          GIF ファイルイメージを X ウィンドウシステム上において表示します。
+          </para>
+@z
+
+@x gifasm
+          <para>assembles multiple GIFs into one, or burst a multiple-image GIF.</para>
+@y
+          <para>
+          複数の GIF を一つにまとめたり、逆に複数イメージの GIF に分割したりします。
+          </para>
+@z
+
+@x gifbg
+          <para>generates a single-color test pattern GIF.</para>
+@y
+          <para>
+          単一色のテストパターン GIF ファイルを生成します。
+          </para>
+@z
+
+@x gifburst
+          <para>bursts a GIF image into subrectangles.</para>
+@y
+          <para>
+          bursts a GIF image into subrectangles.
+          </para>
+@z
+

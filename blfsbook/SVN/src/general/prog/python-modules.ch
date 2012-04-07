@@ -382,20 +382,6 @@
 @z
 
 @x
-      <title>Command Explanations</title>
-@y
-      <title>&CommandExplanations;</title>
-@z
-
-@x
-        <command>autoreconf -f -i</command>: This command copies some missing
-        files into the source.
-@y
-        <command>autoreconf -f -i</command>:
-        このコマンドは、ソース内に含まれていないファイルをコピーします。
-@z
-
-@x
       <title>Contents</title>
 @y
       <title>&Contents;</title>
