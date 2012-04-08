@@ -54,14 +54,116 @@
 @z
 
 @x
+      <para>April 7th, 2012</para>
+@y
+      <para>2012/04/07</para>
+@z
+@x
+          <para>[dj] - Added instruction to create /tmp/.ICE-unix directory
+          to Xorg server page.</para>
+@y
+          <para>[dj] -
+          Xorg サーバーにて、/tmp/.ICE-unix ディレクトリを生成する手順を追加。
+          </para>
+@z
+@x
+          <para>[wblaszcz] - Update gnome-session and gdm to fix up the
+          accelerated login screen.</para>
+@y
+          <para>[wblaszcz] - gnome-session のアップデート。
+          gdm のアクセルログイン画面 (accelerated login screen) の修正。
+          </para>
+@z
+
+@x
+      <para>April 6th, 2012</para>
+@y
+      <para>2012/04/06</para>
+@z
+@x
+          <para>[rthomsen] - Added wicd 1.7.1. Fixes 
+	  <ulink url="&blfs-ticket-root;3293">#3293</ulink>.</para>
+@y
+          <para>[rthomsen] - wicd 1.7.1 追加。
+	  <ulink url="&blfs-ticket-root;3293">#3293</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - Upgrade to dhcpcd 5.5.6 and improve the dhcpcd 
+	  network service script to provide a cleaner boot message. Fixes 
+	  <ulink url="&blfs-ticket-root;3290">#3290</ulink>.</para>
+@y
+          <para>[rthomsen] - dhcpcd 5.5.6 へのアップグレード。
+          またネットワークサービススクリプトを改善し、ブートメッセージを的確化。
+	  <ulink url="&blfs-ticket-root;3290">#3290</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - Disable building of libvpx static library.</para>
+@y
+          <para>[rthomsen] - libvpx にてスタティックライブラリをビルドしないように。</para>
+@z
+@x
+          <para>[rthomsen] - Upgrade KDE section to 4.8.2.</para>
+@y
+          <para>[rthomsen] - KDE 4.8.2 へのアップグレード。</para>
+@z
+@x
+          <para>[rthomsen] - Added Gwenview 4.8.2.</para>
+@y
+          <para>[rthomsen] - Gwenview 4.8.2 追加。</para>
+@z
+@x
+          <para>[krejzi] - Removed Heimdal 1.4.</para>
+@y
+          <para>[krejzi] - Heimdal 1.4 削除。</para>
+@z
+@x
+          <para>[krejzi] - Added UDisks2 1.93.0.</para>
+@y
+          <para>[krejzi] - UDisks2 1.93.0 追加。</para>
+@z
+
+@x
+      <para>April 5th, 2012</para>
+@y
+      <para>2012/04/05</para>
+@z
+@x
+          <para>[rthomsen] - Upgrade to Virtuoso 6.1.5. Fixes 
+	  <ulink url="&blfs-ticket-root;3317">#3317</ulink>.</para>
+@y
+          <para>[rthomsen] - Virtuoso 6.1.5 へのアップグレード。
+	  <ulink url="&blfs-ticket-root;3317">#3317</ulink> を Fix に。</para>
+@z
+
+@x
       <para>April 4th, 2012</para>
 @y
       <para>2012/04/04</para>
 @z
 @x
+          <para>[rthomsen] - Upgrade to Qt 4.8.1 and add two patches. Fixes 
+	    <ulink url="&blfs-ticket-root;3320">#3320</ulink>.</para>
+@y
+          <para>[rthomsen] - Qt 4.8.1 へのアップグレードとパッチ２つ追加。
+	    <ulink url="&blfs-ticket-root;3320">#3320</ulink> を Fix に。</para>
+@z
+@x
           <para>[dj] - Xorg Applicatons require MesaLib. Fixes #3218.</para>
 @y
           <para>[dj] - Xorg アプリケーションには MesaLib が必要。#3218 を Fix に。</para>
+@z
+@x
+          <para>[ken] - fix the nfs-server bootscript to start correctly, thanks to
+          'Crider', fixes <ulink url="&blfs-ticket-root;3325">#3325</ulink>.</para>
+@y
+          <para>[ken] - nfs-server のブートスクリプトの起動を適切に修正。
+          'Crider' に感謝。
+          <ulink url="&blfs-ticket-root;3325">#3325</ulink> を Fix に。</para>
+@z
+@x
+          <para>[ken] - update the postgresql bootscript to the new style.</para>
+@y
+          <para>[ken] - postgresql のブートスクリプトを新しい方式に変更。</para>
 @z
 
 @x
@@ -243,6 +345,16 @@
         </listitem>
         <listitem>
           <para>[krejzi] - libfame 0.9.1 を削除。</para>
+@z
+@x
+          <para>[dj] - fix audiofile compilation error with new gcc.</para>
+@y
+          <para>[dj] - audiofile にて、新しい gcc によるコンパイルエラーを修正。</para>
+@z
+@x
+          <para>[ken] - update to avahi-0.6.31 and fix the build instructions.</para>
+@y
+          <para>[ken] - avahi-0.6.31 へのアップデート。ビルド手順も修正。</para>
 @z
 
 @x
@@ -1213,6 +1325,75 @@
         </listitem>
       </itemizedlist>
 @z
+
+@x
+      <para>February 28th, 2012</para>
+@y
+      <para>2012/02/28</para>
+@z
+@x
+          <para>[ken] - merged gtkhtml-4.2.2 from Wayne.</para>
+@y
+          <para>[ken] - merged gtkhtml-4.2.2 from Wayne.</para>
+@z
+@x
+          <para>[ken] - merged gnome-power-manager-3.2.1 from Wayne.</para>
+@y
+          <para>[ken] - merged gnome-power-manager-3.2.1 from Wayne.</para>
+@z
+@x
+          <para>[ken] - added gssdp-0.12.0 from Wayne.</para>
+@y
+          <para>[ken] - added gssdp-0.12.0 from Wayne.</para>
+@z
+@x
+          <para>[ken] - added gtksourceviewmm-3.2.0 from Wayne.</para>
+@y
+          <para>[ken] - added gtksourceviewmm-3.2.0 from Wayne.</para>
+@z
+@x
+          <para>[ken] - added gupnp-0.18.0 from Wayne.</para>
+@y
+          <para>[ken] - added gupnp-0.18.0 from Wayne.</para>
+@z
+@x
+          <para>[ken] - added gupnp-av-0.10.1 from Wayne.</para>
+@y
+          <para>[ken] - added gupnp-av-0.10.1 from Wayne.</para>
+@z
+@x
+          <para>[ken] - added gupnp-dlna-0.6.4 from Wayne.</para>
+@y
+          <para>[ken] - added gupnp-dlna-0.6.4 from Wayne.</para>
+@z
+@x
+          <para>[ken] - added gupnp-vala-0.10.2 from Wayne.</para>
+@y
+          <para>[ken] - gupnp-vala-0.10.2 追加。Wayne による。</para>
+@z
+@x
+          <para>[ken] - comment hamster-applet. Although the last development
+          release is nominally part of gnome-3.2, and builds, it requires a variety
+          of old and/or unidentified Python modules, depending which command you
+          wish to run.</para>
+@y
+          <para>[ken] - comment hamster-applet. Although the last development
+          release is nominally part of gnome-3.2, and builds, it requires a variety
+          of old and/or unidentified Python modules, depending which command you
+          wish to run.</para>
+@z
+@x
+          <para>[ken] - added nemiver-0.9.0 from Wayne.</para>
+@y
+          <para>[ken] - nemiver-0.9.0 追加。Wayne による。</para>
+@z
+@x
+          <para>[abenton] - Gnucash-2.4.10 and Slib-3b3.</para>
+@y
+          <para>[abenton] - Gnucash-2.4.10, Slib-3b3.</para>
+@z
+
+
 
 @x
       <para>January 29th, 2012</para>

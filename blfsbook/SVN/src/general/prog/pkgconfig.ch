@@ -31,10 +31,9 @@
     <command>configure</command> and <command>make</command> file
     execution.</para>
 @y
-    <para>The <application>pkg-config</application> package contains a tool for
-    passing the include path and/or library paths to build tools during the
-    <command>configure</command> and <command>make</command> file
-    execution.</para>
+    <para>
+    <application>pkg-config</application> は <command>configure</command> や <command>make</command> による処理を通じて、インクルードパスやライブラリパスを提供するツールです。
+    </para>
 @z
 
 @x
@@ -165,14 +164,12 @@
     that <envar>PKG_CONFIG_PATH</envar> is only needed when compiling packages,
     not during run-time.</para>
 @y
-    <para>The default setting for <envar>PKG_CONFIG_PATH</envar> is <filename
-    class='directory'>/usr/lib/pkgconfig:/usr/share/pkgconfig</filename>
-    because of the prefix used to install
-    <application>pkg-config</application>. You may add to
-    <envar>PKG_CONFIG_PATH</envar> by exporting additional paths on your system
-    where <filename class='extension'>.pc</filename> files are installed. Note
-    that <envar>PKG_CONFIG_PATH</envar> is only needed when compiling packages,
-    not during run-time.</para>
+    <para>
+    <envar>PKG_CONFIG_PATH</envar> 変数のデフォルトは、<application>pkg-config</application> のデフォルトのインストールプレフィックスに従い、<filename
+    class='directory'>/usr/lib/pkgconfig:/usr/share/pkgconfig</filename> となります。
+    <filename class='extension'>.pc</filename> ファイルがインストールされるディレクトリを <envar>PKG_CONFIG_PATH</envar> に追加することもできます。
+    <envar>PKG_CONFIG_PATH</envar> が必要となるのはパッケージのコンパイル時であり、実行時には参照されません。
+    </para>
 @z
 
 @x
