@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date$
+% $Date::                           $
 %
 @x
     <fo:list-block id="{$id}" provisional-distance-between-starts="12em"

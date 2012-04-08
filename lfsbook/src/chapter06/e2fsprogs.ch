@@ -133,7 +133,7 @@
     E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
     この容量を確保できるだけの RAM がない場合は、十分なスワップ領域を確保することが推奨されています。
     スワップ領域の生成と有効化については <xref
-    linkend="space-creatingfilesystem"/> と <xref linkend="space-mounting"/> を参照してください。
+    linkend="space-creatingfilesystem"/>と <xref linkend="space-mounting"/>を参照してください。
     </para>
 @z
 

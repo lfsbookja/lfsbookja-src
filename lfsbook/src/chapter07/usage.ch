@@ -56,7 +56,7 @@
   descriptions of the different run-levels as they are implemented:</para>
 @y
   <para>
-  SysVinit (これ以降は <quote>init</quote> と表現します) はランレベルという仕組みにより動作します。
+  SysVinit (これ以降は<quote>init</quote>と表現します) はランレベルという仕組みにより動作します。
   ランレベルには7つのレベル (0 から 6) があります。
   (実際にはランレベルはそれ以上あるのですが、特殊な場合であって普通は利用されません。
   詳しくは <filename>init(8)</filename> を参照してください。)

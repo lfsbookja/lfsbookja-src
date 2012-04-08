@@ -269,8 +269,8 @@
     どのネットワークインターフェースが起動したり停止したりするかは <filename
     class="directory">/etc/sysconfig/</filename> ディレクトリ配下のファイルの指定によります。
     このディレクトリには、設定を行ないたい各ネットワークインターフェースに対するファイルを準備します。
-    例えばネットワークインターフェースの名が <quote>xyz</quote> である場合 <filename>ifconfig.xyz</filename> というファイルとします。
-    <quote>xyz</quote> は管理者が識別できるデバイス名、例えば eth0 などとなります。
+    例えばネットワークインターフェースの名が<quote>xyz</quote>である場合 <filename>ifconfig.xyz</filename> というファイルとします。
+    <quote>xyz</quote>は管理者が識別できるデバイス名、例えば eth0 などとなります。
     このファイルにはネットワークインターフェースの属性、つまり IP アドレスやサブネットマスクなどを定義します。
     ファイルベース名は <emphasis>ifconfig</emphasis> とすることが必要です。
     </para>
@@ -303,9 +303,9 @@
     <command>ifup</command> and <command>ifdown</command> commands.</para>
 @y
     <para>
-    <envar>ONBOOT</envar> 変数を <quote>yes</quote> に設定した場合、システム起動時にネットワークスクリプトがネットワークインターフェースカード (network
+    <envar>ONBOOT</envar> 変数を<quote>yes</quote>に設定した場合、システム起動時にネットワークスクリプトがネットワークインターフェースカード (network
     interface card; NIC) を起動します。
-    <quote>yes</quote> 以外に設定すると、ネットワークスクリプトからの NIC の起動がなくなり、NIC は自動では起動しなくなります。
+    <quote>yes</quote>以外に設定すると、ネットワークスクリプトからの NIC の起動がなくなり、NIC は自動では起動しなくなります。
     ネットワークインターフェースは <command>ifup</command> や <command>ifdown</command> といったコマンドを使って、起動や停止を行うことができます。
     </para>
 @z

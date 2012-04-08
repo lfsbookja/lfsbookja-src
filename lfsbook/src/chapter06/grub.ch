@@ -63,7 +63,7 @@
   <xref linkend="ch-bootable-grub"/>.</para>
 @y
   <para>
-  GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/> で説明しています。
+  GRUB を使ってシステムのブート起動設定を行う方法については <xref linkend="ch-bootable-grub"/>で説明しています。
   </para>
 @z
 

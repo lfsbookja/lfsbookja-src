@@ -29,12 +29,9 @@
   settings.</para>
 @y
 <para>
-シェルプログラムである <filename>/bin/bash</filename>
-(これ以降は単に <quote>シェル</quote> と表現します)
-は、初期起動ファイルをいくつも利用して環境設定を行います。
+シェルプログラムである <filename>/bin/bash</filename> (これ以降は単に<quote>シェル</quote>と表現します) は、初期起動ファイルをいくつも利用して環境設定を行います。
 個々のファイルにはそれぞれに目的があり、ログインや対話環境を様々に制御します。
-<filename class="directory">/etc</filename>
-ディレクトリにあるファイルは一般にグローバルな設定を行います。
+<filename class="directory">/etc</filename> ディレクトリにあるファイルは一般にグローバルな設定を行います。
 これに対応づいたファイルがユーザーのホームディレクトリにある場合は、グローバルな設定を上書きします。
 </para>
 @z
@@ -142,7 +139,7 @@
 <para>
 以下において <replaceable>&lt;ll&gt;</replaceable> と示しているものは、言語を表す２文字の英字 (例えば <quote>en</quote>) に、また <replaceable>&lt;CC&gt;</replaceable> は、国を表す２文字の英字 (例えば <quote>GB</quote>) にそれぞれ置き換えてください。
 <replaceable>&lt;charmap&gt;</replaceable> は、選択したロケールに対応したキャラクターマップ (charmap) に置き換えてください。
-オプションの修飾子として <quote>@euro</quote> といった記述もあります。
+オプションの修飾子として<quote>@euro</quote>といった記述もあります。
 </para>
 @z
 
@@ -168,13 +165,13 @@
 @y
 <para>
 キャラクターマップにはエイリアスがいくつもあります。
-例えば <quote>ISO-8859-1</quote> は <quote>iso8859-1</quote> や <quote>iso88591</quote> として記述することもできます。
+例えば<quote>ISO-8859-1</quote>は<quote>iso8859-1</quote>や<quote>iso88591</quote>として記述することもできます。
 ただしアプリケーションによってはエイリアスを正しく取り扱うことができないものがあります。
-(<quote>UTF-8</quote> の場合、<quote>UTF-8</quote> と書かなければならず、これを <quote>utf8</quote> としてはならない場合があります。)
+(<quote>UTF-8</quote> の場合、<quote>UTF-8</quote>と書かなければならず、これを<quote>utf8</quote>としてはならない場合があります。)
 そこでロケールに対する正規の名称を選ぶのが最も無難です。
 正規の名称は以下のコマンドを実行すれば分かります。
 ここで <replaceable>&lt;locale name&gt;</replaceable> は <command>locale -a</command> コマンドの出力から得られたロケールを指定します。
-(本書の例では <quote>en_GB.iso88591</quote> としています。)
+(本書の例では<quote>en_GB.iso88591</quote>としています。)
 </para>
 @z
 
@@ -183,7 +180,7 @@
   will print:</para>
 @y
 <para>
-<quote>en_GB.iso88591</quote> ロケールの場合、上のコマンドの出力は以下となります。
+<quote>en_GB.iso88591</quote>ロケールの場合、上のコマンドの出力は以下となります。
 </para>
 @z
 
@@ -193,7 +190,7 @@
   to it being added to the Bash startup files:</para>
 @y
 <para>
-出力された結果が <quote>en_GB.ISO-8859-1</quote> に対するロケール設定として用いるべきものです。
+出力された結果が<quote>en_GB.ISO-8859-1</quote>に対するロケール設定として用いるべきものです。
 こうして探し出したロケールは動作確認しておくことが重要です。
 Bash の起動ファイルに記述するのはその後です。
 </para>
@@ -210,8 +207,7 @@ Bash の起動ファイルに記述するのはその後です。
 <para>
 上のコマンドを実行すると、言語名やロケールに応じたキャラクターエンコーディングが出力されます。
 また通貨や各国ごとの国際電話番号プレフィックスも出力されます。
-コマンドを実行した際に以下のようなメッセージが表示されたら、第6章にてロケールをインストールしていないか、あるいはそのロケールが
-Glibc のデフォルトのインストールではサポートされていないかのいずれかです。
+コマンドを実行した際に以下のようなメッセージが表示されたら、第6章にてロケールをインストールしていないか、あるいはそのロケールが Glibc のデフォルトのインストールではサポートされていないかのいずれかです。
 </para>
 @z
 
@@ -291,13 +287,13 @@ Xlib ではキャラクターマップはたいてい、英大文字とダッシ
   you will never need 8-bit characters.</para>
 @y
 <para>
-ロケール設定の <quote>C</quote> (デフォルト) と <quote>en_US</quote> (米国の英語利用ユーザーに推奨) は異なります。
-<quote>C</quote> は US-ASCII 7 ビットキャラクターセットを用います。
+ロケール設定の<quote>C</quote>(デフォルト) と<quote>en_US</quote>(米国の英語利用ユーザーに推奨) は異なります。
+<quote>C</quote>は US-ASCII 7 ビットキャラクターセットを用います。
 もし最上位ビットがセットされたキャラクターがあれば不適当なものとして取り扱います。
 例えば <command>ls</command> コマンドにおいてクエスチョン記号が表示されることがあるのはこのためです。
 また Mutt や Pine などにより電子メールが送信される際に、そういった文字は RFC には適合しないメールとして送信されます。
-送信された文字は <quote>不明な 8ビット (unknown 8-bit)</quote> として示されます。
-そこで 8ビット文字を必要としない場合には <quote>C</quote> ロケールを指定してください。
+送信された文字は<quote>不明な 8ビット (unknown 8-bit)</quote>として示されます。
+そこで 8ビット文字を必要としない場合には<quote>C</quote>ロケールを指定してください。
 </para>
 @z
 

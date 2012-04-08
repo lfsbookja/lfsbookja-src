@@ -45,7 +45,7 @@
           library built in <xref linkend="ch-tools-check"/>.</para>
 @y
           <para>
-          これらの環境変数は <xref linkend="ch-tools-check"/> にて構築したテストライブラリの収容ディレクトリを指定するものです。
+          これらの環境変数は <xref linkend="ch-tools-check"/>にて構築したテストライブラリの収容ディレクトリを指定するものです。
           </para>
 @z
 

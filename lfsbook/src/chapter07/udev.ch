@@ -339,9 +339,9 @@
       その別名は <command>modinfo</command> プログラムを使えば確認することができます。
       そしてこの別名は、モジュールがサポートするバス固有の識別子に関連づけられます。
       例えば <emphasis>snd-fm801</emphasis> ドライバーは、ベンダーID 0x1319 とデバイスID 0x0801 の PCI ドライバーをサポートします。
-      そして <quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote> というエイリアスがあります。
+      そして<quote>pci:v00001319d00000801sv*sd*bc04sc01i*</quote>というエイリアスがあります。
       たいていのデバイスでは、<systemitem class="filesystem">sysfs</systemitem> を通じてドライバーがデバイスを扱うものであり、ドライバーのエイリアスをバスドライバーが提供します。
-      <filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename> ファイルならば <quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote> という文字列を含んでいるはずです。
+      <filename>/sys/bus/pci/devices/0000:00:0d.0/modalias</filename> ファイルならば<quote>pci:v00001319d00000801sv00001319sd00001319bc04sc01i00</quote>という文字列を含んでいるはずです。
       Udev が提供するデフォルトの生成規則によって <command>udevd</command> から <command>/sbin/modprobe</command> が呼び出されることになり、その際には uevent に関する環境変数 <envar>MODALIAS</envar> の設定内容が利用されます。
       (この環境変数の内容は sysfs 内の <filename>modalias</filename> ファイルの内容と同じはずです。)
       そしてワイルドカードが指定されているならそれが展開された上で、エイリアス文字列に合致するモジュールがすべてロードされることになります。
@@ -481,7 +481,7 @@
       <emphasis>loop</emphasis> at all.</para>
 @y
       <para>
-      Udev は <emphasis>snd-pcm-oss</emphasis> のような <quote>ラッパー (wrapper)</quote> ドライバーや <emphasis>loop</emphasis> のような、現実のハードウェアに対するものではないドライバーは、ロードすることができません。
+      Udev は <emphasis>snd-pcm-oss</emphasis> のような<quote>ラッパー (wrapper)</quote>ドライバーや <emphasis>loop</emphasis> のような、現実のハードウェアに対するものではないドライバーは、ロードすることができません。
       </para>
 @z
 
@@ -505,8 +505,8 @@
       file. For example:</para>
 @y
       <para>
-      <quote>ラッパー (wrapper)</quote> モジュールが単に他のモジュールの機能を拡張するだけのものであるなら (例えば <emphasis>snd-pcm-oss</emphasis> は <emphasis>snd-pcm</emphasis> の機能拡張を行うもので、OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため) <command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
-      これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename> ファイル内にて <quote>softdep</quote> の記述行を加えることで実現します。
+      <quote>ラッパー (wrapper)</quote>モジュールが単に他のモジュールの機能を拡張するだけのものであるなら (例えば <emphasis>snd-pcm-oss</emphasis> は <emphasis>snd-pcm</emphasis> の機能拡張を行うもので、OSS アプリケーションに対してサウンドカードを利用可能なものにするだけのものであるため) <command>modprobe</command> の設定によってラッパーモジュールを先にロードし、その後でラップされるモジュールがロードされるようにします。
+      これは以下のように <filename>/etc/modprobe.d/<replaceable>&lt;filename&gt;</replaceable>.conf</filename> ファイル内にて<quote>softdep</quote>の記述行を加えることで実現します。
       </para>
 @z
 
@@ -518,7 +518,7 @@
       on <quote>softdep</quote> syntax and capabilities.</para>
 @y
       <para>
-      <quote>softdep</quote> コマンドは <literal>pre:</literal> を付与することもでき、あるいは <literal>pre:</literal> と <literal>post:</literal> の双方を付与することもできます。
+      <quote>softdep</quote>コマンドは <literal>pre:</literal> を付与することもでき、あるいは <literal>pre:</literal> と <literal>post:</literal> の双方を付与することもできます。
       その記述方法や機能に関する詳細は man ページ <filename>modprobe.d(5)</filename> を参照してください。
       </para>
 @z
@@ -679,7 +679,7 @@
       <para>
       これは Udev の設計仕様に従って発生するもので、uevent の扱いとモジュールのロードが平行して行われるためです。
       このために命名順が予期できないものになります。
-      これを <quote>固定的に</quote> することはできません。
+      これを<quote>固定的に</quote>することはできません。
       ですからカーネルがデバイス名を固定的に定めるようなことを求めるのではなく、シンボリックリンクを用いた独自の生成規則を作り出して、そのデバイスの固定的な属性を用いた固定的な名前を用いる方法を取ります。
       固定的な属性とは例えば、Udev によってインストールされる様々な *_id という名のユーティリティが出力するシリアル番号などです。
       設定例については <xref linkend="ch-scripts-symlinks"/>や <xref linkend="ch-scripts-network"/>を参照してください。

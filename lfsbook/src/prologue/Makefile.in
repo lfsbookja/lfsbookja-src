@@ -151,16 +151,13 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/prologue
-EXTRA_DIST = audience.ch bookinfo.ch dedication.ch errata.ch foreword.ch \
+CHANGE_FILES = audience.ch bookinfo.ch dedication.ch errata.ch foreword.ch \
 	hostreqs.ch organization.ch preface.ch prerequisites.ch \
 	typography.ch japanese.ch architecture.ch standards.ch \
 	why.ch
 
-srcs = audience.xml bookinfo.xml dedication.xml errata.xml foreword.xml \
-	hostreqs.xml organization.xml preface.xml prerequisites.xml \
-	typography.xml japanese.xml architecture.xml standards.xml \
-	why.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -353,21 +350,21 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-audience.xml: $(BOOKdir)/$@ $(srcdir)/audience.ch
-bookinfo.xml: $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
-dedication.xml: $(BOOKdir)/$@ $(srcdir)/dedication.ch
-errata.xml: $(BOOKdir)/$@ $(srcdir)/errata.ch
-foreword.xml: $(BOOKdir)/$@ $(srcdir)/foreword.ch
-hostreqs.xml: $(BOOKdir)/$@ $(srcdir)/hostreqs.ch
-organization.xml: $(BOOKdir)/$@ $(srcdir)/organization.ch
-preface.xml: $(BOOKdir)/$@ $(srcdir)/preface.ch
+audience.xml:      $(BOOKdir)/$@ $(srcdir)/audience.ch
+bookinfo.xml:      $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
+dedication.xml:    $(BOOKdir)/$@ $(srcdir)/dedication.ch
+errata.xml:        $(BOOKdir)/$@ $(srcdir)/errata.ch
+foreword.xml:      $(BOOKdir)/$@ $(srcdir)/foreword.ch
+hostreqs.xml:      $(BOOKdir)/$@ $(srcdir)/hostreqs.ch
+organization.xml:  $(BOOKdir)/$@ $(srcdir)/organization.ch
+preface.xml:       $(BOOKdir)/$@ $(srcdir)/preface.ch
 prerequisites.xml: $(BOOKdir)/$@ $(srcdir)/prerequisites.ch
-typography.xml: $(BOOKdir)/$@ $(srcdir)/typography.ch
-japanese.xml: $(srcdir)/japanese.ch
+typography.xml:    $(BOOKdir)/$@ $(srcdir)/typography.ch
+japanese.xml:      $(srcdir)/japanese.ch
 	cp -p $^ $@
-architecture.xml: $(BOOKdir)/$@ $(srcdir)/architecture.ch
-standards.xml: $(BOOKdir)/$@ $(srcdir)/standards.ch
-why.xml: $(BOOKdir)/$@ $(srcdir)/why.ch
+architecture.xml:  $(BOOKdir)/$@ $(srcdir)/architecture.ch
+standards.xml:     $(BOOKdir)/$@ $(srcdir)/standards.ch
+why.xml:           $(BOOKdir)/$@ $(srcdir)/why.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

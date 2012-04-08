@@ -328,6 +328,6 @@
 @y
     <para>
     ブート時に自動的にパーティションをマウントしたい場合は <filename>/etc/fstab</filename> ファイルにて設定します。
-    パーティションの設定方法については <xref linkend="ch-bootable-fstab"/> で説明しています。
+    パーティションの設定方法については <xref linkend="ch-bootable-fstab"/>で説明しています。
     </para>
 @z

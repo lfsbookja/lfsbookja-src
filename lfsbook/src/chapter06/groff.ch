@@ -42,7 +42,7 @@
     米国のユーザーであれば <parameter>PAGE=letter</parameter> と設定するのが適当です。
     その他のユーザーなら <parameter>PAGE=A4</parameter> とするのが良いかもしれません。
     このデフォルト用紙サイズはコンパイルにあたって設定されます。
-    <quote>A4</quote> なり <quote>letter</quote> なりの値は <filename>/etc/papersize</filename> ファイルにて設定することも可能です。
+    <quote>A4</quote>なり<quote>letter</quote>なりの値は <filename>/etc/papersize</filename> ファイルにて設定することも可能です。
     </para>
 @z
 

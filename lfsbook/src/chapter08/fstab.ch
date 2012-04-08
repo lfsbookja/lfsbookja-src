@@ -26,10 +26,8 @@
   file systems table like this:</para>
 @y
 <para>
-<filename>/etc/fstab</filename>
-ファイルは、種々のプログラムがファイルシステムのマウント状況を確認するために利用するファイルです。
-ファイルシステムがデフォルトでどこにマウントされ、それがどういう順序であるか、マウント前に
-(整合性エラーなどの) チェックを行うかどうか、という設定が行われます。
+<filename>/etc/fstab</filename> ファイルは、種々のプログラムがファイルシステムのマウント状況を確認するために利用するファイルです。
+ファイルシステムがデフォルトでどこにマウントされ、それがどういう順序であるか、マウント前に (整合性エラーなどの) チェックを行うかどうか、という設定が行われます。
 新しいファイルシステムに対する設定は以下のようにして生成します。
 </para>
 @z
@@ -46,15 +44,10 @@
 <para>
 <replaceable>&lt;xxx&gt;</replaceable>、
 <replaceable>&lt;yyy&gt;</replaceable>、
-<replaceable>&lt;fff&gt;</replaceable>
-の部分はシステムに合わせて正しい記述に書き換えてください。
-例えば <filename class="partition">hda2</filename>、
-<filename class="partition">hda5</filename>、
-<systemitem class="filesystem">ext3</systemitem>
-といったものです。
-上のファイルの6行分の記述内容の詳細は
-<command>man 5 fstab</command>
-により確認してください。
+<replaceable>&lt;fff&gt;</replaceable> の部分はシステムに合わせて正しい記述に書き換えてください。
+例えば <filename class="partition">hda2</filename>、<filename class="partition">hda5</filename>、<systemitem
+class="filesystem">ext3</systemitem> といったものです。
+上のファイルの6行分の記述内容の詳細は <command>man 5 fstab</command> により確認してください。
 </para>
 @z
 
@@ -71,20 +64,13 @@
   source tree.</para>
 @y
 <para>
-マウントポイント
-<filename class="directory">/dev/shm</filename>
-は <systemitem class="filesystem">tmpfs</systemitem>
-ファイルシステムを指し示すもので
-POSIX 共有メモリ (POSIX-shared memory) を利用するためのものです。
+マウントポイント <filename class="directory">/dev/shm</filename> は <systemitem
+class="filesystem">tmpfs</systemitem> ファイルシステムを指し示すもので POSIX 共有メモリ (POSIX-shared memory) を利用するためのものです。
 この共有メモリを正しく動作させるためには、これをサポートする機能をカーネルに組み入れておく必要があります。
 (詳しくは次節にて説明します。)
 POSIX 共有ライブラリを利用するソフトウェアは、今のところは非常に少ないことを覚えておいてください。
-したがってマウントポイント
-<filename class="directory">/dev/shm</filename>
-は設定しなくても構いません。
-詳細については、カーネルのソース内にある
-<filename>Documentation/filesystems/tmpfs.txt</filename>
-を参照してください。
+したがってマウントポイント <filename class="directory">/dev/shm</filename> は設定しなくても構いません。
+詳細については、カーネルのソース内にある <filename>Documentation/filesystems/tmpfs.txt</filename> を参照してください。
 </para>
 @z
 
@@ -103,21 +89,12 @@ POSIX 共有ライブラリを利用するソフトウェアは、今のとこ�
   mount line in <filename>/etc/fstab</filename>:</para>
 @y
 <para>
-MS-DOS や Windows において利用されるファイルシステム
-(例えば vfat、ntfs、smbfs、cifs、iso9660、udf)
-では、ファイル名称内に用いられた非アスキー文字を正しく認識させるために、マウントオプションとして
-<quote>iocharset</quote> を指定することが必要となります。
+MS-DOS や Windows において利用されるファイルシステム (例えば vfat、ntfs、smbfs、cifs、iso9660、udf) では、ファイル名称内に用いられた非アスキー文字を正しく認識させるために、マウントオプションとして<quote>iocharset</quote>を指定することが必要となります。
 オプションに設定する値は利用するロケールとすることが必要で、カーネルが理解できる形でなければなりません。
-またこれを動作させるために、対応するキャラクタセット定義
-(File systems -&gt;Native Language Support にあります)
-をカーネルに組み入れるか、モジュールとしてビルドすることが必要です。
-vfat や smbfs ファイルシステムを用いるなら、さらに
-<quote>codepage</quote> オプションも必要です。
+またこれを動作させるために、対応するキャラクタセット定義 (File systems -&gt;Native Language Support にあります) をカーネルに組み入れるか、モジュールとしてビルドすることが必要です。
+vfat や smbfs ファイルシステムを用いるなら、さらに<quote>codepage</quote>オプションも必要です。
 このオプションには、国情報に基づいて MS-DOS にて用いられるコードページ番号をセットします。
-例えば USB フラッシュドライブをマウントし
-ru_RU.KOI8-R をセットするユーザーであれば
-<filename>/etc/fstab</filename>
-ファイルの設定は以下のようになります。
+例えば USB フラッシュドライブをマウントし ru_RU.KOI8-R をセットするユーザーであれば <filename>/etc/fstab</filename> ファイルの設定は以下のようになります。
 </para>
 @z
 
@@ -144,8 +121,7 @@ ru_RU.UTF-8 をセットするなら以下のように変わります。
 @y
 <para>
 否定的な設定を勧めるメッセージですが、これは無視して構いません。
-<quote>iocharset</quote>
-オプションに他の設定を行ったとしても UTF-8 ロケールでは結局はファイル名の表示を正しく処理できないためです。
+<quote>iocharset</quote>オプションに他の設定を行ったとしても UTF-8 ロケールでは結局はファイル名の表示を正しく処理できないためです。
 </para>
 @z
 
@@ -162,12 +138,7 @@ ru_RU.UTF-8 をセットするなら以下のように変わります。
 @y
 <para>
 ファイルシステムによっては codepage と iocharset のデフォルト値をカーネルにおいて設定することもできます。
-カーネルにおいて対応する設定は
-<quote>Default NLS Option</quote> (<option>CONFIG_NLS_DEFAULT)</option>、
-<quote>Default Remote NLS Option</quote> (<option>CONFIG_SMB_NLS_DEFAULT</option>)、
-<quote>Default codepage for FAT</quote> (<option>CONFIG_FAT_DEFAULT_CODEPAGE</option>)、
-<quote>Default iocharset for FAT</quote> (<option>CONFIG_FAT_DEFAULT_IOCHARSET</option>)
-です。
+カーネルにおいて対応する設定は<quote>Default NLS Option</quote>(<option>CONFIG_NLS_DEFAULT)</option>、<quote>Default Remote NLS Option</quote>(<option>CONFIG_SMB_NLS_DEFAULT</option>)、<quote>Default codepage for FAT</quote>(<option>CONFIG_FAT_DEFAULT_CODEPAGE</option>)、<quote>Default iocharset for FAT</quote>(<option>CONFIG_FAT_DEFAULT_IOCHARSET</option>) です。
 なお ntfs ファイルシステムに対しては、カーネルのコンパイル時に設定する項目はありません。
 </para>
 @z

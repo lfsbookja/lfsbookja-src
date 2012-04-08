@@ -59,7 +59,7 @@
 @y
   <para>
   我々のサイトにはメーリングリストやチャットを通じての情報提供を行う LFS コミュニティがあります。
-  (詳細は <xref linkend="ch-intro-resources"/> を参照してください。)
+  (詳細は <xref linkend="ch-intro-resources"/>を参照してください。)
   我々は日々数多くのご質問を頂くのですが、たいていの質問は FAQ やメーリングリストを調べてみれば容易に答えが分かるものばかりです。
   したがって我々が最大限の支援を提供できるよう、ある程度の問題はご自身で解決するようにしてください。
   そうして頂くことで、我々はもっと特殊な状況に対するサポートを手厚く行っていくことができるからです。
@@ -97,7 +97,7 @@
 @x
         <para>The output from the <xref linkend='version-check'/></para>
 @y
-        <para><xref linkend='version-check'/>の出力結果。</para>
+        <para><xref linkend='version-check'/> の出力結果。</para>
 @z
 
 @x

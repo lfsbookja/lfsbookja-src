@@ -46,8 +46,7 @@
       これは文字データのエンコーディングを変換する機能を持ちます。
       プロジェクトのホームページ (<ulink url="http://www.gnu.org/software/libiconv/"/>) には以下のような説明があります。
       <quote>このライブラリは <function>iconv()</function> 関数を提供します。
-      この関数を持たないシステムや、Unicode を取り扱うことができないシステムにて、この関数を利用することができます。
-      </quote>
+      この関数を持たないシステムや、Unicode を取り扱うことができないシステムにて、この関数を利用することができます。</quote>
       Glibc が <function>iconv()</function> 関数を用意しており Unicode の変換を実現しているため LFS では libiconv は用いないことにします。
       </para>
 @z

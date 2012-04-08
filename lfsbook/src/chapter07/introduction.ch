@@ -94,7 +94,7 @@
   <para>
   System V系のスクリプトが広く用いられていて比較的単純であることから、本書でもこれを利用します。
   これとは別の方法として BSD 系の初期化スクリプトがあり <ulink url="&hints-root;bsd-init.txt"/> にて説明されています。
-  また LFS メーリングリストで <quote>depinit</quote>、 <quote>upstart</quote>、<quote>systemd</quote> という語を検索してみれば、さらに別の方法が示されていますので確認してください。
+  また LFS メーリングリストで<quote>depinit</quote>、<quote>upstart</quote>、<quote>systemd</quote>という語を検索してみれば、さらに別の方法が示されていますので確認してください。
   </para>
 @z
 

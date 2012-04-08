@@ -182,7 +182,7 @@
 @y
           <para>
           ブロックソート法 (バロウズ-ホイラー変換) とハフマン符号化法を用いてファイル圧縮を行います。
-          圧縮率は、従来用いられてきた <quote>Lempel-Ziv</quote> アルゴリズムによるもの、例えば <command>gzip</command> コマンドによるものに比べて高いものです。
+          圧縮率は、従来用いられてきた<quote>Lempel-Ziv</quote>アルゴリズムによるもの、例えば <command>gzip</command> コマンドによるものに比べて高いものです。
           </para>
 @z
 

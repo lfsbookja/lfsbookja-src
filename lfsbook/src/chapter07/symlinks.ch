@@ -59,10 +59,10 @@
     on which type of device you have.</para>
 @y
     <para>
-    一つは <quote>パス (by-path)</quote> モードです。
+    一つは<quote>パス (by-path)</quote>モードです。
     これは USB デバイスやファームウェアデバイスに対してデフォルトで利用されます。
     これによって作り出されるルールは CD や DVD デバイスに対して物理パスが用いられます。
-    二つめは <quote>ID (by-id)</quote> モードです。
+    二つめは<quote>ID (by-id)</quote>モードです。
     デフォルトで IDE や SCSI デバイスに利用されます。
     このモードで作り出されるルールは CD や DVD デバイス自身が持つ識別文字列が用いられます。
     パスは Udev の <command>path_id</command> スクリプトによって決定します。
