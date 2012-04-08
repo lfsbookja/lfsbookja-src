@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME Terminal</title>
 @y
-    <title>GNOME Terminal の概要</title>
+    <title>&IntroductionTo1;GNOME Terminal&IntroductionTo2;</title>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">GNOME Terminal Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Terminal の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Terminal&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -108,7 +108,7 @@
 @x
     <title>Installation of GNOME Terminal</title>
 @y
-    <title>GNOME Terminal のインストール</title>
+    <title>&InstallationOf1;GNOME Terminal&InstallationOf2;</title>
 @z
 
 @x
@@ -123,9 +123,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -165,7 +163,7 @@
         gnome/help/gnome-terminal/*,omf/gnome-terminal}</seg>
 @y
         <seg>gnome-terminal</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-terminal,
         gnome/help/gnome-terminal/*,omf/gnome-terminal}</seg>
 @z

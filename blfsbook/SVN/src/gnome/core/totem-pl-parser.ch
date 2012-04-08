@@ -16,7 +16,7 @@
 @x
     <title>Introduction to totem-pl-parser</title>
 @y
-    <title>totem-pl-parser の概要</title>
+    <title>&IntroductionTo1;totem-pl-parser&IntroductionTo2;</title>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">totem-pl-parser Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">totem-pl-parser の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;totem-pl-parser&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -108,7 +108,7 @@
 @x
     <title>Installation of totem-pl-parser</title>
 @y
-    <title>totem-pl-parser のインストール</title>
+    <title>&InstallationOf1;totem-pl-parser&InstallationOf2;</title>
 @z
 
 @x

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Zenity</title>
 @y
-    <title>Zenity の概要</title>
+    <title>&IntroductionTo1;Zenity&IntroductionTo2;</title>
 @z
 
 @x
@@ -169,7 +169,7 @@
         zenity/clothes}</seg>
 @y
         <seg>gdialog, zenity</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/zenity/*,omf/zenity,
         zenity/clothes}</seg>
 @z

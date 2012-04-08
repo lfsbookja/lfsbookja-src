@@ -16,7 +16,7 @@
 @x
     <title>Introduction to gnome-keyring</title>
 @y
-    <title>gnome-keyring の概要	</title>
+    <title>&IntroductionTo1;gnome-keyring&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">gnome-keyring Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gnome-keyring の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gnome-keyring&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -117,7 +117,7 @@
 @x
     <title>Installation of gnome-keyring</title>
 @y
-    <title>gnome-keyring のインストール</title>
+    <title>&InstallationOf1;gnome-keyring&InstallationOf2;</title>
 @z
 
 @x
@@ -132,9 +132,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x

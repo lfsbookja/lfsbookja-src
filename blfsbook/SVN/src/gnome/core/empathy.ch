@@ -160,7 +160,7 @@
     url="http://telepathy.freedesktop.org/releases/telepathy-haze/">telepathy-haze</ulink>
     (AIM, ICQ, Yahoo!), <ulink
     url="http://telepathy.freedesktop.org/releases/telepathy-salut/">telepathy-salut</ulink>
-    (local network ("Bonjour" - iChat-compatible)), <ulink
+    (ローカルネットワーク ("Bonjour" - iChat-互換)), <ulink
     url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
     (SIP)</para>
 @z
@@ -215,11 +215,20 @@
     class='directory'>$GNOME_PREFIX/lib/empathy</filename> instead of <filename
     class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/empathy</parameter>: This
-    parameter is used so that the <application>Empathy</application> internal
-    support programs are installed in the preferred location of <filename
-    class='directory'>$GNOME_PREFIX/lib/empathy</filename> instead of <filename
-    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
+    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/empathy</parameter>:
+    本パラメーターは <application>Empathy</application> の内部プログラムのインストール先を <filename
+    class='directory'>$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
+    class='directory'>$GNOME_PREFIX/lib/empathy</filename> とします。
+    </para>
+@z
+
+@x
+    <para><option>--enable-static=no</option>: This switch prevents the static
+    libraries being installed.</para>
+@y
+    <para><option>--enable-static=no</option>:
+    本スイッチはスタティックライブラリをインストールしないようにします。
+    </para>
 @z
 
 @x
@@ -264,12 +273,15 @@
           <para>is a <application>GNOME</application> instant messaging client
           using Telepathy.</para>
 @y
-          <para>is a <application>GNOME</application> instant messaging client
-          using Telepathy.</para>
+          <para>
+          Telepathy を利用した <application>GNOME</application> のインスタントメッセージクライアントです。
+          </para>
 @z
 
 @x libnstempathy.{so,a}
           <para>is the <application>Empathy</application> nautilus-sendto plugin.</para>
 @y
-          <para>is the <application>Empathy</application> nautilus-sendto plugin.</para>
+          <para>
+          <application>Empathy</application> の nautilus-sendto プラグイン。
+          </para>
 @z

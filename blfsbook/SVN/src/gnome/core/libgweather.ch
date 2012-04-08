@@ -16,7 +16,7 @@
 @x
     <title>Introduction to libgweather</title>
 @y
-    <title>libgweather の概要</title>
+    <title>&IntroductionTo1;libgweather&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&libgweather-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&libgweather-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&libgweather-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&libgweather-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&libgweather-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&libgweather-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &libgweather-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &libgweather-md5sum;</para>
+        <para>&Download; MD5 sum: &libgweather-md5sum;</para>
 @z
 
 @x
         <para>Download size: &libgweather-size;</para>
 @y
-        <para>ダウンロードサイズ: &libgweather-size;</para>
+        <para>&DownloadSize;: &libgweather-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">libgweather Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgweather の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgweather&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -110,7 +110,7 @@
 @x
     <title>Installation of libgweather</title>
 @y
-    <title>libgweather のインストール</title>
+    <title>&InstallationOf1;libgweather&InstallationOf2;</title>
 @z
 
 @x
@@ -125,9 +125,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -205,7 +203,7 @@
         es_PA/LC_MESSAGES,es_PE/LC_MESSAGES,es_PR/LC_MESSAGES,es_SV/LC_MESSAGES,
         es_UY/LC_MESSAGES,es_VE/LC_MESSAGES}}}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libgweather-3.so</seg>
         <seg><envar>$GNOME_SYSCONFDIR</envar>/gconf/schemas,
         <envar>$GNOME_PREFIX</envar>/{include/libgweather-3.0/libgweather,

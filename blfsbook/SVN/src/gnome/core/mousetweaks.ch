@@ -16,7 +16,7 @@
 @x
     <title>Introduction to mousetweaks</title>
 @y
-    <title>mousetweaks の概要</title>
+    <title>&IntroductionTo1;mousetweaks&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,25 +38,25 @@
 @x
         <para>Download (HTTP): <ulink url="&mousetweaks-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&mousetweaks-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&mousetweaks-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&mousetweaks-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&mousetweaks-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&mousetweaks-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &mousetweaks-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &mousetweaks-md5sum;</para>
+        <para>&Download; MD5 sum: &mousetweaks-md5sum;</para>
 @z
 
 @x
         <para>Download size: &mousetweaks-size;</para>
 @y
-        <para>ダウンロードサイズ: &mousetweaks-size;</para>
+        <para>&DownloadSize;: &mousetweaks-size;</para>
 @z
 
 @x
@@ -74,7 +74,7 @@
 @x
     <bridgehead renderas="sect3">mousetweaks Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">mousetweaks の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;mousetweaks&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <title>Installation of mousetweaks</title>
 @y
-    <title>mousetweaks のインストール</title>
+    <title>&InstallationOf1;mousetweaks&InstallationOf2;</title>
 @z
 
 @x
@@ -157,7 +157,7 @@
         mousetweaks,omf/mousetweaks}</seg>
 @y
         <seg>mousetweaks</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/mousetweaks/*,
         mousetweaks,omf/mousetweaks}</seg>
 @z

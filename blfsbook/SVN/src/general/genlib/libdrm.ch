@@ -137,6 +137,30 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><parameter>--enable-nouveau-experimental-api</parameter>: This parameter
+    enables use of nouveau's experimental kernel API.</para>
+@y
+    <para><parameter>--enable-nouveau-experimental-api</parameter>:
+    このパラメーターは nouveau の実験的なカーネル API の利用を可能にします。
+    </para>
+@z
+
+@x
+    <para><option>--enable-vmwgfx-experimental-api</option>: This parameter 
+    enables use of vmwgfx's experimental kernel API.</para>
+@y
+    <para><option>--enable-vmwgfx-experimental-api</option>:
+    このパラメーターは vmwgfx の実験的なカーネル API の利用を可能にします。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -177,5 +201,13 @@
 @y
           <para>
           ダイレクトレンダリングモジュール (Direct Rendering Module) のライブラリ関数と、Intel, NVidia, Radeon の各ベンダーに固有の追加関数を提供します。
+          </para>
+@z
+
+@x libkms.so
+          <para>contains functions necessary for kernel modesetting.</para>
+@y
+          <para>
+          カーネルモールモードセッティング (kernel modesetting) に必要な関数を提供します。
           </para>
 @z

@@ -16,7 +16,7 @@
 @x
     <title>Introduction to gtksourceview</title>
 @y
-    <title>gtksourceview の概要</title>
+    <title>&IntroductionTo1;gtksourceview&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,25 +40,25 @@
 @x
         <para>Download (HTTP): <ulink url="&gtksourceview-download-http;"/></para>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&gtksourceview-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&gtksourceview-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&gtksourceview-download-ftp;"/></para>
 @y
-        <para>ダウンロード (FTP): <ulink url="&gtksourceview-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&gtksourceview-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &gtksourceview-md5sum;</para>
 @y
-        <para>ダウンロード MD5 sum: &gtksourceview-md5sum;</para>
+        <para>&Download; MD5 sum: &gtksourceview-md5sum;</para>
 @z
 
 @x
         <para>Download size: &gtksourceview-size;</para>
 @y
-        <para>ダウンロードサイズ: &gtksourceview-size;</para>
+        <para>&DownloadSize;: &gtksourceview-size;</para>
 @z
 
 @x
@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect3">gtksourceview Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gtksourceview の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gtksourceview&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -110,16 +110,16 @@
 @x
     <title>Installation of gtksourceview</title>
 @y
-    <title>gtksourceview のインストール</title>
+    <title>&InstallationOf1;gtksourceview&InstallationOf2;</title>
 @z
 
 @x
     <para>Install <application>gtksourceview</application> by running the
     following commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>gtksourceview</application> をビルドします。
-</para>
+  <para>
+  以下のコマンドを実行して <application>gtksourceview</application> をビルドします。
+  </para>
 @z
 
 @x
@@ -131,25 +131,25 @@
     functionality of the
     <filename class='libraryfile'>libgtksourceview-2.0</filename> library.</para>
 @y
-<para>
-&notTestSuite;
-
-If you have the
-optional dependencies to build the test programs installed,
-<emphasis role='strong'>after the package is installed</emphasis> you can
-change to the <filename class='directory'>tests</filename> directory in the
-source tree and issue <command>./test-widget</command>. This will test the
-functionality of the
-<filename class='libraryfile'>libgtksourceview-2.0</filename> library.
-</para>
+    <para>
+    &notTestSuite;
+    
+    If you have the
+    optional dependencies to build the test programs installed,
+    <emphasis role='strong'>after the package is installed</emphasis> you can
+    change to the <filename class='directory'>tests</filename> directory in the
+    source tree and issue <command>./test-widget</command>. This will test the
+    functionality of the
+    <filename class='libraryfile'>libgtksourceview-2.0</filename> library.
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -181,7 +181,7 @@ functionality of the
         share/{gtk-doc/html/gtksourceview-2.0,gtksourceview-2.0/{language-specs,
         styles}}}</seg>
 @y
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>libgtksourceview-2.0.so</seg>
         <seg><envar>$GNOME_PREFIX</envar>/{include/gtksourceview-2.0/gtksourceview/completion-providers/words,
         share/{gtk-doc/html/gtksourceview-2.0,gtksourceview-2.0/{language-specs,
@@ -197,8 +197,7 @@ functionality of the
 @x libgtksourceview-2.0.{so,a}
           <para>contains function extensions for the GtkTextView widget.</para>
 @y
-<para>
-GtkTextView ウィジェットに対する拡張機能を提供します。
-</para>
+          <para>
+          GtkTextView ウィジェットに対する拡張機能を提供します。
+          </para>
 @z
-

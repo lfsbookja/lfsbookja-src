@@ -16,7 +16,7 @@
 @x
     <title>Introduction to GNOME User Docs</title>
 @y
-    <title>GNOME User Docs の概要</title>
+    <title>&IntroductionTo1;GNOME User Docs&IntroductionTo2;</title>
 @z
 
 @x
@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect3">GNOME User Docs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME User Docs の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME User Docs&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,7 +107,7 @@
 @x
     <title>Installation of GNOME User Docs</title>
 @y
-    <title>GNOME User Docs のインストール</title>
+    <title>&InstallationOf1;GNOME User Docs&InstallationOf2;</title>
 @z
 
 @x
@@ -122,9 +122,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -164,8 +162,8 @@
         system-admin-guide/*,user-guide/*},omf/{gnome-access-guide,
         system-admin-guide,user-guide}}</seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg><envar>$GNOME_PREFIX</envar>/usr/share/{gnome/help/{gnome-access-guide/*,
         system-admin-guide/*,user-guide/*},omf/{gnome-access-guide,
         system-admin-guide,user-guide}}</seg>
