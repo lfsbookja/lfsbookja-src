@@ -73,18 +73,18 @@
 @z
 
 @x
-        <seg>acinstall, aclocal, aclocal-&automake-version;, automake,
-        automake-&automake-version;, compile, config.guess, config.sub,
+        <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
+        automake-&am-minor-version;, compile, config.guess, config.sub,
         depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
         py-compile, symlink-tree, and ylwrap</seg>
-        <seg>/usr/share/aclocal-1.11, /usr/share/automake-1.11,
+        <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;,
         /usr/share/doc/automake-&automake-version;</seg>
 @y
-        <seg>acinstall, aclocal, aclocal-&automake-version;, automake,
-        automake-&automake-version;, compile, config.guess, config.sub,
+        <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
+        automake-&am-minor-version;, compile, config.guess, config.sub,
         depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
         py-compile, symlink-tree, ylwrap</seg>
-        <seg>/usr/share/aclocal-1.11, /usr/share/automake-1.11,
+        <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;,
         /usr/share/doc/automake-&automake-version;</seg>
 @z
 

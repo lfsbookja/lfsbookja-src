@@ -351,14 +351,15 @@
 @z
 
 @x
-    <para>The <envar>PREFIX</envar> variable needs to contain the number of
+    <para>The <envar>PREFIX</envar> variable containis the number of
     bits used in the subnet. Each octet in an IP address is 8 bits. If the
     subnet's netmask is 255.255.255.0, then it is using the first three octets
     (24 bits) to specify the network number. If the netmask is 255.255.255.240,
     it would be using the first 28 bits.  Prefixes longer than 24 bits are
     commonly used by DSL and cable-based Internet Service Providers (ISPs).
     In this example (PREFIX=24), the netmask is 255.255.255.0. Adjust the
-    <envar>PREFIX</envar> variable according to your specific subnet.</para>
+    <envar>PREFIX</envar> variable according to your specific subnet.i
+    If omitted, the PREFIX defaults to 24.</para>
 @y
     <para>
     <envar>PREFIX</envar> 変数はサブネットマスクにて用いられるビット数を指定します。
@@ -368,6 +369,15 @@
     24 ビットを超えるプレフィックスは、通常は DSL やケーブルを用いたインターネットサービスプロバイダー (Internet Service Provider; ISP) がよく利用しています。
     上の例 (PREFIX=24) では、サブネットマスクは 255.255.255.0 となります。
     <envar>PREFIX</envar> 変数の値は、ネットワーク環境に応じて変更してください。
+    これが省略された場合は、デフォルトの 24 が用いられます。
+    </para>
+@z
+
+@x
+    <para>For more information see the <command>ifup</command> man page.</para>
+@y
+    <para>
+    より詳しくは <command>ifup</command> の man ページを参照してください。
     </para>
 @z
 

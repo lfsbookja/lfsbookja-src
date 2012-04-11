@@ -48,6 +48,27 @@
 @z
 
 @x
+      <para>2012-05-09</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Update networking bootscripts.  See
+           bootscripts change log for details.
+           Fixes 
+           <ulink url="&lfs-ticket-root;3053">#3053</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-09</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - ネットワークブートスクリプトを更新。
+           詳細はブートスクリプトの変更履歴を参照のこと。
+           <ulink url="&lfs-ticket-root;3053">#3053</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-05</para>
       <itemizedlist>
          <listitem>
