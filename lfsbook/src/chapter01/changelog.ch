@@ -48,6 +48,43 @@
 @z
 
 @x
+      <para>2012-04-15</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.3.2. Fixes
+           <ulink url="&lfs-ticket-root;3063">#3063</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Automake-1.11.5. Fixes
+           <ulink url="&lfs-ticket-root;3062">#3062</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Use su from chapter 6 Coreutils in the Bash
+           instructions, instead of the one from chapter 5.  Install su as su
+           rather than su-tools in chapter 5. Fixes
+           <ulink url="&lfs-ticket-root;3057">#3057</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-15</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Linux-3.3.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3063">#3063</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Automake-1.11.5 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3062">#3062</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Bash の手順において、第5章での Coreutils の su ではなく、第6章のものを利用することに。
+           第5章でインストールする su は、su-tools ではなく su とする。
+           <ulink url="&lfs-ticket-root;3057">#3057</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-09</para>
       <itemizedlist>
          <listitem>

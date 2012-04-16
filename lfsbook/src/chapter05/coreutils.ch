@@ -94,16 +94,13 @@
 @x
     <para>The above command refuses to install <filename>su</filename>
     because the program cannot be installed setuid root as a non-privileged
-    user. By manually installing it with a different name, we can use it for
-    running tests in the final system as a non-privileged user and we keep a
-    possibly useful <command>su</command> from our host first in our PATH.
-    Install it with:</para>
+    user. By manually installing it, we can use it for running tests in the
+    final system as a non-privileged user. Install it with:</para>
 @y
     <para>
     上のコマンド実行では <filename>su</filename> がインストールされません。
     一般ユーザーではこのプログラムを root 権限でインストールできないためです。
-    別名ファイルを作り出して手動でインストールすることで、最終的に構築するシステムでもテストの実行を一般ユーザーにより行います。
-    またホストシステムにある <command>su</command> コマンドは PATH 変数上に保持しておき可能な限り利用します。
+    これを手動でインストールすることで、最終的に構築するシステムでもテストの実行を一般ユーザーにより行います。
     上を行うために以下を実行します。
     </para>
 @z

@@ -18,9 +18,9 @@
         <font metrics-url="@srcdir@/TakaoGothic.xml" kerning="yes"
           embed-url="file://@TAKAOGFILE@">
           <font-triplet name="TakaoGothic" style="normal" weight="normal"/>
-          <font-triplet name="TakaoGothic" style="normal" weight="bold" fontThickness="200"/>
+          <font-triplet name="TakaoGothic" style="normal" weight="normal" fontThickness="200"/>
           <font-triplet name="TakaoGothic" style="italic" weight="normal"/>
-          <font-triplet name="TakaoGothic" style="italic" weight="bold" fontThickness="200"/>
+          <font-triplet name="TakaoGothic" style="italic" weight="normal" fontThickness="200"/>
         </font>
         <font metrics-url="@srcdir@/TakaoExGothic.xml" kerning="yes"
           embed-url="file://@TAKAOGEXFILE@">
