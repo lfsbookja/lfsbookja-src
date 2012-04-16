@@ -48,7 +48,7 @@
 @x
         <seg>various man pages</seg>
 @y
-        <seg>様々な man ページ</seg>
+        <seg>さまざまな man ページ</seg>
 @z
 
 @x

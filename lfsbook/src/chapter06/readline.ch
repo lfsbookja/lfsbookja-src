@@ -161,6 +161,6 @@
           programs that need to provide a command line interface</para>
 @y
           <para>
-          コマンドラインインターフェースを提供している様々なコマンドにおいて、適切なインターフェースを提供します。
+          コマンドラインインターフェースを提供しているさまざまなコマンドにおいて、適切なインターフェースを提供します。
           </para>
 @z

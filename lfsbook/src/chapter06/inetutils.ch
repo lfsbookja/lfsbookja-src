@@ -90,7 +90,7 @@
           better replacements are available for many of these servers.</para>
 @y
           <para>
-          このオプションは Inetutils パッケージに含まれる様々なネットワークサーバーをインストールしないようにします。
+          このオプションは Inetutils パッケージに含まれるさまざまなネットワークサーバーをインストールしないようにします。
           これらのサーバーは基本的な LFS システムには不要なものと考えられます。
           サーバーの中には本質的にセキュアでないものがあり、信頼のあるネットワーク内でのみしか安全に扱うことができないものもあります。
           より詳細な情報は <ulink url="&blfs-root;view/svn/basicnet/inetutils.html"/> を参照してください。

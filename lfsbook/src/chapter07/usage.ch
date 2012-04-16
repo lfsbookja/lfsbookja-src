@@ -241,7 +241,7 @@
   <parameter>restart</parameter>、
   <parameter>reload</parameter>、
   <parameter>status</parameter>
-  といった様々なパラメーターにより呼び出されるためです。
+  といったさまざまなパラメーターにより呼び出されるためです。
   K の名前を持つシンボリックリンクが起動されるということは <parameter>stop</parameter> パラメーターをつけて該当するスクリプトが実行されるということです。
   同様に S の名前を持つシンボリックリンクが起動されるということは <parameter>start</parameter> パラメーターをつけて呼び出されるということになります。
   </para>

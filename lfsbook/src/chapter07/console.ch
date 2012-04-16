@@ -63,7 +63,7 @@
   <para>
   <command>console</command> スクリプトは、設定情報を <filename>/etc/sysconfig/console</filename> ファイルから読み込みます。
   まずは利用するキーボードマップとスクリーンフォントを定めます。
-  様々な言語に応じた設定方法については <ulink url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> を参照してください。
+  さまざまな言語に応じた設定方法については <ulink url="http://www.tldp.org/HOWTO/HOWTO-INDEX/other-lang.html"/> を参照してください。
   よく分からない場合は <filename class="directory">/lib/kbd</filename> ディレクトリを見て、正しいキーマップとスクリーンフォントを探してください。
   マニュアルページ <filename>loadkeys(1)</filename> と <filename>setfont(8)</filename> を見て、これらのプログラムに対する適切な引数を決定してください。
   </para>

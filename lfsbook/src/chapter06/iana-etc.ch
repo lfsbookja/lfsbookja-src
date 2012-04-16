@@ -80,7 +80,7 @@
           available from the TCP/IP subsystem</para>
 @y
           <para>
-          TCP/IP により利用可能な様々な DARPA インターネットプロトコル (DARPA Internet protocols) を記述しています。
+          TCP/IP により利用可能なさまざまな DARPA インターネットプロトコル (DARPA Internet protocols) を記述しています。
           </para>
 @z
 

@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          用語の統一; 様々 →さまざま
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           SVN-20120415,
           Changeset
           <ulink url="&lfs-rev-root;9810">9810</ulink>,
