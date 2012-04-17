@@ -1,3 +1,12 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the LFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +23,9 @@
   <para>We would like to thank the following people and organizations
   for their contributions to the Linux From Scratch Project.</para>
 @y
-<para>
-Linux From Scratch プロジェクトへ貢献して下さった以下の方々および組織団体に感謝致します。
-</para>
+  <para>
+  Linux From Scratch プロジェクトへ貢献して下さった以下の方々および組織団体に感謝致します。
+  </para>
 @z
 
 @x
@@ -115,11 +124,10 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
       the book, and submitting bug reports, instructions, and their
       experiences with installing various packages.</para>
 @y
-<para>
-この他に数多くの方々にも協力頂きました。
-皆さまには LFS や BLFS などのメーリングリストにて、
-提案、ブック内容のテスト、バグ報告、作業指示、パッケージインストールの経験談などを通じて、本ブック製作にご協力頂きました。
-</para>
+      <para>
+      この他に数多くの方々にも協力頂きました。
+      皆さまには LFS や BLFS などのメーリングリストにて、提案、ブック内容のテスト、バグ報告、作業指示、パッケージインストールの経験談などを通じて、本ブック製作にご協力頂きました。
+      </para>
 @z
 
 @x
@@ -416,10 +424,7 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
 @y
       <para>Archaic
       &lt;archaic@linuxfromscratch.org&gt; &ndash;
-      LFS テクニカルライター/編集者、
-      HLFS プロジェクトリーダー、
-      BLFS 編集者、
-      ヒントプロジェクトとパッチプロジェクトの管理者</para>
+      LFS テクニカルライター/編集者、HLFS プロジェクトリーダー、BLFS 編集者、ヒントプロジェクトとパッチプロジェクトの管理者</para>
 @z
 
 @x
@@ -457,8 +462,7 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
 @y
       <para><ulink url="mailto:jeroen@linuxfromscratch.org">Jeroen
       Coumans</ulink> &lt;jeroen@linuxfromscratch.org&gt; &ndash; 
-      ウェブサイト開発者、
-      FAQ 管理者</para>
+      ウェブサイト開発者、FAQ 管理者</para>
 @z
 
 @x
@@ -543,9 +547,7 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
 @y
       <para><ulink url="mailto:alexander@linuxfromscratch.org">Alexander
       E. Patrakov</ulink> &lt;alexander@linuxfromscratch.org&gt; &ndash;
-      LFS テクニカルライター、
-      LFS 国際化に関する編集者、
-      LFS Live CD 管理者</para>
+      LFS テクニカルライター、LFS 国際化に関する編集者、LFS Live CD 管理者</para>
 @z
 
 @x
@@ -571,8 +573,7 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
 @y
       <para><ulink url="mailto:gschafer@zip.com.au">Greg Schafer</ulink>
       &lt;gschafer@zip.com.au&gt; &ndash;
-      LFS テクニカルライター、
-      次世代 64 ビット機での構築手法の開発者</para>
+      LFS テクニカルライター、次世代 64 ビット機での構築手法の開発者</para>
 @z
 
 @x
@@ -598,8 +599,7 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
 @y
       <para><ulink url="mailto:tushar@linuxfromscratch.org">Tushar
       Teredesai</ulink> &lt;tushar@linuxfromscratch.org&gt; &ndash;
-      BLFS ブック編集者、
-      ヒントプロジェクト・パッチプロジェクトのリーダー</para>
+      BLFS ブック編集者、ヒントプロジェクト・パッチプロジェクトのリーダー</para>
 @z
 
 @x
@@ -609,9 +609,7 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
 @y
       <para><ulink url="mailto:jeremy@linuxfromscratch.org">Jeremy
       Utley</ulink> &lt;jeremy@linuxfromscratch.org&gt; &ndash; 
-      LFS テクニカルライター、
-      Bugzilla 管理者、
-      LFS-ブートスクリプト管理者</para>
+      LFS テクニカルライター、Bugzilla 管理者、LFS-ブートスクリプト管理者</para>
 @z
 
 @x
@@ -621,4 +619,3 @@ Linux From Scratch プロジェクトへ貢献して下さった以下の方々�
       <para><ulink url="mailto:zwinkles@gmail.com">Zack Winkles</ulink>
       &lt;zwinkles@gmail.com&gt; &ndash; LFS テクニカルライター</para>
 @z
-
