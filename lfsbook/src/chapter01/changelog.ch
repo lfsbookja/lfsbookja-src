@@ -48,6 +48,25 @@
 @z
 
 @x
+      <para>2012-04-19</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Change two group IDs to support a 
+           legacy program. Fixes
+           <ulink url="&lfs-ticket-root;3061">#3061</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-19</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - 古いプログラムにも対応するために二つのグループ ID を変更。
+           <ulink url="&lfs-ticket-root;3061">#3061</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-04-15</para>
       <itemizedlist>
          <listitem>
