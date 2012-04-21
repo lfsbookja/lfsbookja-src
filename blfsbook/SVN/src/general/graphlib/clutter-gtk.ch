@@ -22,13 +22,10 @@
 @x
     <para>The <application>clutter-gtk</application> package is a library
     providing facilities to integrate <application>Clutter</application> into
-    <application>GTK+</application> applications. It provides a
-    <application>GTK+</application> widget, GtkClutterEmbed, for embedding the
-    default ClutterStage into any GtkContainer.</para>
+    <application>GTK+</application> applications.</para>
 @y
     <para>
     <application>clutter-gtk</application> パッケージは、<application>Clutter</application> を <application>GTK+</application> アプリケーションにて利用するための機能を提供するライブラリです。
-    この中には <application>GTK+</application> ウィジェットである GtkClutterEmbed が含まれ、あらゆる GtkContainer に対して、デフォルトの ClutterStage を埋め込むことが可能となります。
     </para>
 @z
 
@@ -82,20 +79,30 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="clutter"/> and
-    <xref linkend="gtk3"/></para>
+    <para role="required">
+      <xref linkend="clutter"/> and
+      <xref linkend="gtk2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="clutter"/>,
-    <xref linkend="gtk3"/></para>
+    <para role="required">
+      <xref linkend="clutter"/>,
+      <xref linkend="gtk2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -148,25 +155,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libclutter-gtk-1.0.so</seg>
-        <seg>/usr/{include/clutter-gtk-1.0/clutter-gtk,
-        share/gtk-doc/html/clutter-gtk-1.0}</seg>
+        <seg>
+          libclutter-gtk-1.0.so
+        </seg>
+        <seg>
+          /usr/include/clutter-gtk-1.0 and
+          /usr/share/gtk-doc/html/clutter-gtk-1.0
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libclutter-gtk-1.0.so</seg>
-        <seg>/usr/{include/clutter-gtk-1.0/clutter-gtk,
-        share/gtk-doc/html/clutter-gtk-1.0}</seg>
+        <seg>
+          libclutter-gtk-1.0.so
+        </seg>
+        <seg>
+          /usr/include/clutter-gtk-1.0,
+          /usr/share/gtk-doc/html/clutter-gtk-1.0
+        </seg>
 @z
 
 @x

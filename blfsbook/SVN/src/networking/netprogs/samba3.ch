@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY samba3-time          "4.6 SBU (including about 3.2 SBU to run the test suite)">
+  <!ENTITY samba3-time          "2.2 SBU (add about 2.9 SBU to run the test suite)">
 @y
-  <!ENTITY samba3-time          "4.6 SBU (テストスイート実行時の約 2.8 SBU を含む)">
+  <!ENTITY samba3-time          "2.2 SBU (テストスイート実行の場合は 約 2.9 SBU 追加)">
 @z
 
 @x

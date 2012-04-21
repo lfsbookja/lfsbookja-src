@@ -156,7 +156,9 @@
 @z
 
 @x
-    <para><option>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</option>: This option ensures that the plugins and mkspecs files get installed in the correct location.</para>
+    <para><option>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</option>: 
+    This option ensures that the plugins and mkspecs files get installed in 
+    the correct location.</para>
 @y
     <para><option>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</option>:
     このオプションは、プラグインと mkspecs ファイルを適切なディレクトリにインストールします。
@@ -170,9 +172,9 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -181,7 +183,7 @@
 
 @x
         <seg>none</seg>
-        <seg>libphonon.so, libphononexperimental.so</seg>
+        <seg>libphonon.so and libphononexperimental.so</seg>
         <seg>none</seg>
 @y
         <seg>&None;</seg>

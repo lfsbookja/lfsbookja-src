@@ -21,14 +21,12 @@
 
 @x
     <para>The <application>gtksourceview</application> package contains
-    <filename>libgtksourceview</filename> libraries. This is useful for
-    extending the <application>GTK</application> text functions to include
-    syntax highlighting.</para>
+    libraries used for extending the <application>GTK</application> 
+    text functions to include syntax highlighting.</para>
 @y
     <para>The <application>gtksourceview</application> package contains
-    <filename>libgtksourceview</filename> libraries. This is useful for
-    extending the <application>GTK</application> text functions to include
-    syntax highlighting.</para>
+    libraries used for extending the <application>GTK</application> 
+    text functions to include syntax highlighting.</para>
 @z
 
 @x
@@ -81,22 +79,43 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="perl-xml-parser"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/> and
+      <xref linkend="intltool"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="perl-xml-parser"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="intltool"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if you are going to build
+      <xref linkend="gedit"/>)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (<xref linkend="gedit"/> をビルドする場合に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -129,19 +148,15 @@
     change to the <filename class='directory'>tests</filename> directory in the
     source tree and issue <command>./test-widget</command>. This will test the
     functionality of the
-    <filename class='libraryfile'>libgtksourceview-2.0</filename> library.</para>
+    <filename class='libraryfile'>libgtksourceview-3.0</filename> library.</para>
 @y
-    <para>
-    &notTestSuite;
-    
-    If you have the
+    <para>This package does not come with a test suite. If you have the
     optional dependencies to build the test programs installed,
     <emphasis role='strong'>after the package is installed</emphasis> you can
     change to the <filename class='directory'>tests</filename> directory in the
     source tree and issue <command>./test-widget</command>. This will test the
     functionality of the
-    <filename class='libraryfile'>libgtksourceview-2.0</filename> library.
-    </para>
+    <filename class='libraryfile'>libgtksourceview-3.0</filename> library.</para>
 @z
 
 @x
@@ -165,27 +180,31 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgtksourceview-2.0.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gtksourceview-2.0/gtksourceview/completion-providers/words,
-        share/{gtk-doc/html/gtksourceview-2.0,gtksourceview-2.0/{language-specs,
-        styles}}}</seg>
+        <seg>
+          libgtksourceview-3.0.so
+        </seg>
+        <seg>
+          /usr/include/gtksourceview-3.0,
+          /usr/share/gtksourceview-3.0 and
+          /usr/share/gtk-doc/html/gtksourceview-3.0
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libgtksourceview-2.0.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gtksourceview-2.0/gtksourceview/completion-providers/words,
-        share/{gtk-doc/html/gtksourceview-2.0,gtksourceview-2.0/{language-specs,
-        styles}}}</seg>
+        <seg>
+          libgtksourceview-3.0.so
+        </seg>
+        <seg>
+          /usr/include/gtksourceview-3.0,
+          /usr/share/gtksourceview-3.0 and
+          /usr/share/gtk-doc/html/gtksourceview-3.0
+        </seg>
 @z
 
 @x

@@ -141,10 +141,10 @@
 @z
 
 @x
-    <para><option>CMAKE_PREFIX_PATH=$QT4DIR</option>: This option is set to find automoc4.</para>
+    <para><option>CMAKE_PREFIX_PATH=&qt-dir;</option>: This option is set to find automoc4.</para>
 @y
     <para>
-    <option>CMAKE_PREFIX_PATH=$QT4DIR</option>:
+    <option>CMAKE_PREFIX_PATH=&qt-dir;</option>:
     本オプションは automoc4 を見出すためのものです。
     </para>
 @z

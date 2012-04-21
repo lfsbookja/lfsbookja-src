@@ -81,24 +81,44 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="sqlite"/>,  and
-    <xref linkend="telepathy-glib"/></para>
+    <para role="required">
+      <xref linkend="intltool"/>,
+      <xref linkend="sqlite"/> and
+      <xref linkend="telepathy-glib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="sqlite"/>,
-    <xref linkend="telepathy-glib"/></para>
+    <para role="required">
+      <xref linkend="intltool"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="telepathy-glib"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -147,15 +167,6 @@
 @z
 
 @x
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--enable-static=no</option>:
-    このスイッチはスタティックライブラリをインストールしないことを指示します。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -172,17 +183,27 @@
 @z
 
 @x
-        <seg>telepathy-logger</seg>
-        <seg>libtelepathy-logger.{so,a}</seg>
-        <seg>/usr/{include/telepathy-logger-0.2/telepathy-logger,
-        lib/telepathy-logger,share/{gtk-doc/html/telepathy-logger,
-        telepathy/clients}}</seg>
+        <seg>
+          telepathy-logger
+        </seg>
+        <seg>
+          libtelepathy-logger.so
+        </seg>
+        <seg>
+          /usr/include/telepathy-logger-0.2 and
+          /usr/share/gtk-doc/html/telepathy-logger
+        </seg>
 @y
-        <seg>telepathy-logger</seg>
-        <seg>libtelepathy-logger.{so,a}</seg>
-        <seg>/usr/{include/telepathy-logger-0.2/telepathy-logger,
-        lib/telepathy-logger,share/{gtk-doc/html/telepathy-logger,
-        telepathy/clients}}</seg>
+        <seg>
+          telepathy-logger
+        </seg>
+        <seg>
+          libtelepathy-logger.so
+        </seg>
+        <seg>
+          /usr/include/telepathy-logger-0.2,
+          /usr/share/gtk-doc/html/telepathy-logger
+        </seg>
 @z
 
 @x

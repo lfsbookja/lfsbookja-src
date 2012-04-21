@@ -79,12 +79,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="libxml2"/> or <xref linkend="expat"/>
+    <xref linkend="libxml2"/> or 
+    <xref linkend="expat"/>, 
+    <xref linkend="openssl"/>, 
+    <xref linkend="nettle"/> and
+    <xref linkend="acl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="libxml2"/> または <xref linkend="expat"/>
+    <xref linkend="libxml2"/> または 
+    <xref linkend="expat"/>, 
+    <xref linkend="openssl"/>, 
+    <xref linkend="nettle"/>,
+    <xref linkend="acl"/>
     </para>
 @z
 
@@ -133,7 +141,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -142,12 +150,12 @@
 @z
 
 @x
-        <seg>bsdtar and bsdcpio</seg>
-        <seg>libarchive.{so,a}</seg>
-        <seg>None</seg>
+        <seg>bsdcpio and bsdtar</seg>
+        <seg>libarchive.so</seg>
+        <seg>none</seg>
 @y
-        <seg>bsdtar, bsdcpio</seg>
-        <seg>libarchive.{so,a}</seg>
+        <seg>bsdcpio, bsdtar</seg>
+        <seg>libarchive.so</seg>
         <seg>&None;</seg>
 @z
 
@@ -157,18 +165,18 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x bsdtar
-          <para>is a tool similar to GNU <command>tar</command>.</para>
-@y
-          <para>
-          GNU <command>tar</command> と同等のツール。
-          </para>
-@z
-
 @x bsdcpio
           <para>is a tool similar to <command>cpio</command>.</para>
 @y
           <para>
           <command>cpio</command> と同等のツール。
+          </para>
+@z
+
+@x bsdtar
+          <para>is a tool similar to GNU <command>tar</command>.</para>
+@y
+          <para>
+          GNU <command>tar</command> と同等のツール。
           </para>
 @z

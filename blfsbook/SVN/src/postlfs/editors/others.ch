@@ -21,10 +21,10 @@
 
 @x
   <para><command>pico</command> is a text editor installed as a part
-  of <xref linkend="pine"/>.</para>
+  of <xref linkend="re-alpine"/>.</para>
 @y
   <para>
-  <command>pico</command> は <xref linkend="pine"/> の一部としてインストールされるテキストエディターです。
+  <command>pico</command> は <xref linkend="re-alpine"/> の一部としてインストールされるテキストエディターです。
   </para>
 @z
 

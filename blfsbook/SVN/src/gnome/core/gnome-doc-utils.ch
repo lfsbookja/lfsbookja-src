@@ -24,23 +24,13 @@
     of documentation utilities for the <application>GNOME</application> project.
     Notably, it contains utilities for building documentation and all auxiliary
     files in your source tree, and it contains the DocBook XSLT stylesheets that
-    were once distributed with <application>Yelp</application>. Starting with
-    <application>GNOME</application> 2.8, <application>Yelp</application>
-    requires <application>GNOME Doc Utils</application> for the XSLT. Starting
-    with <application>GNOME</application> 2.12, many of the core
-    <application>GNOME</application> packages require
-    <application>GNOME Doc Utils</application>.</para>
+    were once distributed with <application>Yelp</application>.</para>
 @y
     <para>The <application>GNOME Doc Utils</application> package is a collection
     of documentation utilities for the <application>GNOME</application> project.
     Notably, it contains utilities for building documentation and all auxiliary
     files in your source tree, and it contains the DocBook XSLT stylesheets that
-    were once distributed with <application>Yelp</application>. Starting with
-    <application>GNOME</application> 2.8, <application>Yelp</application>
-    requires <application>GNOME Doc Utils</application> for the XSLT. Starting
-    with <application>GNOME</application> 2.12, many of the core
-    <application>GNOME</application> packages require
-    <application>GNOME Doc Utils</application>.</para>
+    were once distributed with <application>Yelp</application>.</para>
 @z
 
 @x
@@ -88,27 +78,35 @@
 @x
     <bridgehead renderas="sect3">GNOME Doc Utils Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Doc Utils の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Doc Utils&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="libxslt"/>, and
-    <xref linkend="python2"/> ( Required to be installed prior to <xref linkend="libxml2"/>)</para>
+    <para role="required">
+      <xref linkend="intltool"/>,
+      <xref linkend="libxslt"/>, and
+      <xref linkend="python2"/> (Required to be installed prior to <xref linkend="libxml2"/>)
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="python2"/> (<xref linkend="libxml2"/> よりも前にインストールが必要)</para>
+    <para role="required">
+      <xref linkend="intltool"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="python2"/> (<xref linkend="libxml2"/> よりも前にインストールが必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="rarian"/></para>
+    <para role="recommended">
+      <xref linkend="rarian"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="rarian"/></para>
+    <para role="recommended">
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x
@@ -183,42 +181,46 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
       <segtitle>Installed Stylesheets</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
       <segtitle>&InstalledStylesheets;</segtitle>
 @z
 
 @x
-        <seg>gnome-doc-prepare, gnome-doc-tool and xml2po</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-doc-utils/{icons/hicolor/{48x48/status,
-        scalable/status},templates,watermarks},gnome/help/{gnome-doc-make/{C,
-        de},gnome-doc-xslt/{C,de}},omf/{gnome-doc-make,gnome-doc-xslt},
-        xml/{gnome/xslt/{common,docbook/{common,html,omf,utils},gettext,
-        mallard/{cache,common,html}},mallard/1.0}}
-        and /usr/lib/python2.7/site-packages/xml2po/</seg>
-        <seg>Custom DocBook XSLT stylesheets</seg>
+        <seg>
+          gnome-doc-prepare, gnome-doc-tool and xml2po
+        </seg>
+        <seg>
+          /usr/lib/python2.7/site-packages/xml2po,
+          /usr/share/gnome-doc-utils, /usr/share/xml/gnome,
+          /usr/share/xml/mallard, /usr/share/gnome/help/gnome-doc-make
+          and /usr/share/gnome/help/gnome-doc-xslt
+        </seg>
+        <seg>
+          Custom DocBook XSLT stylesheets
+        </seg>
 @y
-        <seg>gnome-doc-prepare, gnome-doc-tool, xml2po</seg>
-        <seg>なし</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-doc-utils/{icons/hicolor/{48x48/status,
-        scalable/status},templates,watermarks},gnome/help/{gnome-doc-make/{C,
-        de},gnome-doc-xslt/{C,de}},omf/{gnome-doc-make,gnome-doc-xslt},
-        xml/{gnome/xslt/{common,docbook/{common,html,omf,utils},gettext,
-        mallard/{cache,common,html}},mallard/1.0}},
-        /usr/lib/python2.7/site-packages/xml2po/</seg>
-        <seg>Custom DocBook XSLT stylesheets</seg>
+        <seg>
+          gnome-doc-prepare, gnome-doc-tool, xml2po
+        </seg>
+        <seg>
+          /usr/lib/python2.7/site-packages/xml2po,
+          /usr/share/gnome-doc-utils, /usr/share/xml/gnome,
+          /usr/share/xml/mallard, /usr/share/gnome/help/gnome-doc-make,
+          /usr/share/gnome/help/gnome-doc-xslt
+        </seg>
+        <seg>
+          カスタム DocBook XSLT スタイルシート
+        </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gnome-doc-prepare

@@ -14,23 +14,22 @@
 @z
 
 @x
-    <title>Introduction to QCA</title>
+    <title>Introduction to Qca</title>
 @y
-    <title>&IntroductionTo1;QCA&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Qca&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>QCA</application> aims to provide a straightforward 
-    and cross-platform crypto API, using <application>Qt4</application> datatypes 
-    and conventions. <application>QCA</application> separates the API from 
+    <para><application>Qca</application> aims to provide a straightforward 
+    and cross-platform crypto API, using <application>Qt</application> datatypes 
+    and conventions. <application>Qca</application> separates the API from 
     the implementation, using plugins known as Providers.</para>
 @y
-<para>
-<application>QCA</application>
-は、クロスプラットフォーム対応の分かりやすい暗号化 API を提供します。
-これは <application>Qt4</application> のデータタイプとその手法を採用しています。
-<application>QCA</application> は、Providers と呼ばれるプラグインを用いて、実装と API の分離を図っています。
-</para>
+    <para>
+    <application>QCA</application> は、クロスプラットフォーム対応の分かりやすい暗号化 API を提供します。
+    これは <application>Qt</application> のデータタイプとその手法を採用しています。
+    <application>QCA</application> は、Providers と呼ばれるプラグインを用いて、実装と API の分離を図っています。
+    </para>
 @z
 
 @x
@@ -76,20 +75,22 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">qca Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Qca Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;qca&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Qca&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>
+    <xref linkend="qt4"/> and
+    <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>
+    <xref linkend="qt4"/>,
+    <xref linkend="which"/>
     </para>
 @z
 
@@ -102,26 +103,42 @@
 @z
 
 @x
-    <title>Installation of QCA</title>
+    <title>Installation of Qca</title>
 @y
-    <title>&InstallationOf1;QCA&InstallationOf2;</title>
+    <title>&InstallationOf1;Qca&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>qca</application> by running the following
+    <para>Install <application>Qca</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>qca</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>Qca</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed -i '217s@set@...</command>: This sed fixes compiling with 
+    <application>GCC</application> 4.7. It is safe to omit when compiling with 
+    older <application>GCC</application> versions.</para>
+@y
+    <para><command>sed -i '217s@set@...</command>: This sed fixes compiling with 
+    <application>GCC</application> 4.7. It is safe to omit when compiling with 
+    older <application>GCC</application> versions.</para>
 @z
 
 @x
@@ -131,9 +148,9 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -141,11 +158,11 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libqca.so</seg>
-        <seg>$QT4DIR/share/qca</seg>
+        <seg>qcatool2 and qcatool2.debug</seg>
+        <seg>libqca.so and libqca.so.&qca-version;.debug</seg>
+	<seg>&qt-dir;/include/QtCrypto and &qt-dir;/share/qca</seg>
 @y
-        <seg>&None;</seg>
-        <seg>libqca.so</seg>
-        <seg>$QT4DIR/share/qca</seg>
+        <seg>qcatool2, qcatool2.debug</seg>
+        <seg>libqca.so, libqca.so.&qca-version;.debug</seg>
+	<seg>&qt-dir;/include/QtCrypto, &qt-dir;/share/qca</seg>
 @z

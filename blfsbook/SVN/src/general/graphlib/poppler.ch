@@ -20,17 +20,13 @@
 @z
 
 @x
-    <para>The <application>Poppler</application> package contains a PDF
-    rendering library and command line tools used to manipulate PDF files.
-    This is useful for providing PDF rendering functionality as a shared
-    library.</para>
+      The <application>Poppler</application> package contains a PDF rendering
+      library and command line tools used to manipulate PDF files. This is
+      useful for providing PDF rendering functionality as a shared library.
 @y
-    <para>
-    <application>Poppler</application> package contains a PDF
-    rendering library and command line tools used to manipulate PDF files.
-    This is useful for providing PDF rendering functionality as a shared
-    library.
-    </para>
+      The <application>Poppler</application> package contains a PDF rendering
+      library and command line tools used to manipulate PDF files. This is
+      useful for providing PDF rendering functionality as a shared library.
 @z
 
 @x
@@ -40,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&poppler-download-http;"/></para>
+          Download (HTTP): <ulink url="&poppler-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&poppler-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&poppler-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&poppler-download-ftp;"/></para>
+          Download (FTP): <ulink url="&poppler-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&poppler-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&poppler-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &poppler-md5sum;</para>
+          Download MD5 sum: &poppler-md5sum;
 @y
-        <para>&Download; MD5 sum: &poppler-md5sum;</para>
+          &Download; MD5 sum: &poppler-md5sum;
 @z
 
 @x
-        <para>Download size: &poppler-size;</para>
+          Download size: &poppler-size;
 @y
-        <para>&DownloadSize;: &poppler-size;</para>
+          &DownloadSize;: &poppler-size;
 @z
 
 @x
-        <para>Estimated disk space required: &poppler-buildsize;</para>
+          Estimated disk space required: &poppler-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &poppler-buildsize;</para>
+          &Estimateddiskspacerequired;: &poppler-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &poppler-time;</para>
+          Estimated build time: &poppler-time;
 @y
-        <para>&Estimatedbuildtime;: &poppler-time;</para>
+          &Estimatedbuildtime;: &poppler-time;
 @z
 
 @x
@@ -88,35 +84,35 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&poppler-data-download-http;"/></para>
+          Download (HTTP): <ulink url="&poppler-data-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&poppler-data-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&poppler-data-download-http;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &poppler-data-md5sum;</para>
+          Download MD5 sum: &poppler-data-md5sum;
 @y
-        <para>&Download; MD5 sum: &poppler-data-md5sum;</para>
+          &Download; MD5 sum: &poppler-data-md5sum;
 @z
 
 @x
-        <para>Download size: &poppler-data-size;</para>
+          Download size: &poppler-data-size;
 @y
-        <para>&DownloadSize;: &poppler-data-size;</para>
+          &DownloadSize;: &poppler-data-size;
 @z
 
 @x
-    <para>The additional package consists of encoding files for use with
-    <application>Poppler</application>. The encoding files are optional and
-    <application>Poppler</application> will automatically read them if they are
-    present. When installed, they enable <application>Poppler</application> to
-    render CJK and Cyrillic properly.</para>
+      The additional package consists of encoding files for use with
+      <application>Poppler</application>. The encoding files are optional and
+      <application>Poppler</application> will automatically read them if they
+      are present. When installed, they enable
+      <application>Poppler</application> to render CJK and Cyrillic properly.
 @y
-    <para>The additional package consists of encoding files for use with
-    <application>Poppler</application>. The encoding files are optional and
-    <application>Poppler</application> will automatically read them if they are
-    present. When installed, they enable <application>Poppler</application> to
-    render CJK and Cyrillic properly.</para>
+      The additional package consists of encoding files for use with
+      <application>Poppler</application>. The encoding files are optional and
+      <application>Poppler</application> will automatically read them if they
+      are present. When installed, they enable
+      <application>Poppler</application> to render CJK and Cyrillic properly.
 @z
 
 @x
@@ -127,52 +123,62 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="fontconfig"/> and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="fontconfig"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="fontconfig"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="fontconfig"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>
-     and <xref linkend="openjpeg"/>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="cairo"/> and
+      <xref linkend="openjpeg"/>.
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libjpeg"/>, <xref linkend="cairo"/>
-    <xref linkend="openjpeg"/>
+    <para role="recommended">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="cairo"/>,
+      <xref linkend="openjpeg"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk2"/>,
-    <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library is needed 
-    for PDF support in <application>Okular</application>),
-    <xref linkend="curl"/>,
-    <xref linkend="libtiff"/>,
-    <xref linkend="libxml2"/> and
-    <xref linkend="lcms"/></para>
+    <para role="optional">
+      <xref linkend="curl"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="libxml2"/> and
+      <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
+      is needed for PDF support in <application>Okular</application>).
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk2"/>,
-    <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library is needed 
-    for PDF support in <application>Okular</application>),
-    <xref linkend="curl"/>,
-    <xref linkend="libtiff"/>,
-    <xref linkend="libxml2"/> and
-    <xref linkend="lcms"/></para>
+    <para role="optional">
+      <xref linkend="curl"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
+      is needed for PDF support in <application>Okular</application>).
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/poppler"/></para>
+      User Notes: <ulink url="&blfs-wiki;/poppler"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/poppler"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/poppler"/>
 @z
 
 @x
@@ -182,52 +188,47 @@
 @z
 
 @x
-      <para><application>Poppler</application> will overwrite command-line
-      utilities and man pages previously installed by the
-      <application>Xpdf</application> package. If you prefer to keep the
-      <application>Xpdf</application> versions of these files, pass the
-      <option>--disable-utils</option> parameter to the
-      <command>configure</command> command below.</para>
+      If you have installed <xref linkend="lcms2"/> and would like
+      <application>Poppler</application> to use it, apply the
+      <application>Lcms 2</application> patch:
 @y
-      <para><application>Poppler</application> will overwrite command-line
-      utilities and man pages previously installed by the
-      <application>Xpdf</application> package. If you prefer to keep the
-      <application>Xpdf</application> versions of these files, pass the
-      <option>--disable-utils</option> parameter to the
-      <command>configure</command> command below.</para>
+      If you have installed <xref linkend="lcms2"/> and would like
+      <application>Poppler</application> to use it, apply the
+      <application>Lcms 2</application> patch:
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Install <application>Poppler</application> by running the following
+      commands:
 @y
-    <para>&notTestSuite;</para>
+      Install <application>Poppler</application> by running the following
+      commands:
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>If you downloaded the additional encoding data package, install
-    it by issuing the following commands:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    
-    If you downloaded the additional encoding data package, install
-    it by issuing the following commands:
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      If you downloaded the additional encoding data package, install it by
+      issuing the following commands:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      If you downloaded the additional encoding data package, install it by
+      issuing the following commands:
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -237,45 +238,27 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: Prevent static libraries
-    being built and installed.</para>
+      <option>--enable-xpdf-headers</option>: Install some old
+      <application>Xpdf</application> headers required by certain programs (e.g.
+      <application>Okular</application>, <application>Libre Office</application>
+      and <application>Inkscape</application>).
 @y
-    <para><option>--disable-static</option>: Prevent static libraries
-    being built and installed.</para>
+      <option>--enable-xpdf-headers</option>: Install some old
+      <application>Xpdf</application> headers required by certain programs (e.g.
+      <application>Okular</application>, <application>Libre Office</application>
+      and <application>Inkscape</application>).
 @z
 
 @x
-    <para><option>--disable-cairo-output</option>: This parameter
-    disables building the <application>cairo</application> graphics backend.</para>
+      <parameter>-enable-zlib</parameter>: This parameter makes
+      <application>Poppler</application> link with the system-installed
+      <filename class='libraryfile'>libz</filename> library to enable compressed
+      PDF functionality.
 @y
-    <para><option>--disable-cairo-output</option>: This parameter
-    disables building the <application>cairo</application> graphics backend.</para>
-@z
-
-@x
-    <para><option>--disable-poppler-glib</option>,
-    <option>--disable-poppler-qt4</option> and
-    <option>--disable-gtk-test</option>: These parameters disable
-    building the <application>GLib</application> and <application>Qt4</application>
-    wrappers and the <application>GTK+</application> test program.</para>
-@y
-    <para><option>--disable-poppler-glib</option>,
-    <option>--disable-poppler-qt4</option> and
-    <option>--disable-gtk-test</option>: These parameters disable
-    building the <application>GLib</application> and <application>Qt4</application>
-    wrappers and the <application>GTK+</application> test program.</para>
-@z
-
-@x
-    <para><option>--enable-xpdf-headers</option>: Install old
-    <application>Xpdf</application> headers required by certain programs (e.g. by 
-    <application>Okular</application> for PDF support). These are unsupported by 
-    <application>Poppler</application>.</para>
-@y
-    <para><option>--enable-xpdf-headers</option>: Install old
-    <application>Xpdf</application> headers required by certain programs (e.g. by 
-    <application>Okular</application> for PDF support). These are unsupported by 
-    <application>Poppler</application>.</para>
+      <parameter>-enable-zlib</parameter>: This parameter makes
+      <application>Poppler</application> link with the system-installed
+      <filename class='libraryfile'>libz</filename> library to enable compressed
+      PDF functionality.
 @z
 
 @x
@@ -295,19 +278,31 @@
 @z
 
 @x
-        <seg>pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
-        pdftoppm, pdftops, pdftotext, pdfunite and poppler-glib-demo</seg>
-        <seg>libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
-        and libpoppler-qt4.so</seg>
-        <seg>/usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
-        /usr/share/gtk-doc/html/poppler and /usr/share/poppler</seg>
+        <seg>
+          pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
+          pdftoppm, pdftops, pdftotext, pdfunite and poppler-glib-demo
+        </seg>
+        <seg>
+          libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so and
+          libpoppler-qt4.so
+        </seg>
+        <seg>
+          /usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
+          /usr/share/gtk-doc/html/poppler and /usr/share/poppler
+        </seg>
 @y
-        <seg>pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
-        pdftoppm, pdftops, pdftotext, pdfunite and poppler-glib-demo</seg>
-        <seg>libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
-        and libpoppler-qt4.so</seg>
-        <seg>/usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
-        /usr/share/gtk-doc/html/poppler and /usr/share/poppler</seg>
+        <seg>
+          pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
+          pdftoppm, pdftops, pdftotext, pdfunite, poppler-glib-demo
+        </seg>
+        <seg>
+          libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
+          libpoppler-qt4.so
+        </seg>
+        <seg>
+          /usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
+          /usr/share/gtk-doc/html/poppler and /usr/share/poppler
+        </seg>
 @z
 
 @x
@@ -316,30 +311,106 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libpoppler.{so,a}
-          <para>contains the API functions to render PDF files.</para>
+@x pdffonts
+            lists the fonts used in a PDF file along with various information
+            for each font.
 @y
-          <para>contains the API functions to render PDF files.</para>
+            lists the fonts used in a PDF file along with various information
+            for each font.
 @z
 
-@x libpoppler-cpp.{so,a}
-          <para>is a C++ backend for rendering PDF files.</para>
+@x pdfimages
+            saves images from a PDF file as PPM, PBM, or JPEG files.
 @y
-          <para>is a C++ backend for rendering PDF files.</para>
+            saves images from a PDF file as PPM, PBM, or JPEG files.
+@z
+
+@x pdfinfo
+            prints the contents of the 'Info' dictionary (plus some other useful
+            information) from a PDF file.
+@y
+            prints the contents of the 'Info' dictionary (plus some other useful
+            information) from a PDF file.
+@z
+
+@x pdfseparate
+            extracts single pages from a PDF file.
+@y
+            extracts single pages from a PDF file.
+@z
+
+@x pdftocairo
+            converts a PDF file to one of several formats (PNG, JPEG, PDF, PS,
+            EPS, SVG) using the cairo output device of the poppler library.
+@y
+            converts a PDF file to one of several formats (PNG, JPEG, PDF, PS,
+            EPS, SVG) using the cairo output device of the poppler library.
+@z
+
+@x pdftohtml
+            converts a PDF file to HTML.
+@y
+            converts a PDF file to HTML.
+@z
+
+@x pdftoppm
+            converts PDF files to PBM, PGM and PPM formats.
+@y
+            converts PDF files to PBM, PGM and PPM formats.
+@z
+
+@x pdftops
+            converts PDF files to Postscript format.
+@y
+            converts PDF files to Postscript format.
+@z
+
+@x pdftotext
+            converts PDF files to plain text.
+@y
+            converts PDF files to plain text.
+@z
+
+@x pdfunite
+            merges several PDF files, in the order of their occurrence on the
+            command line, to one PDF output file.
+@y
+            merges several PDF files, in the order of their occurrence on the
+            command line, to one PDF output file.
+@z
+
+@x poppler-glib-demo
+            is a tool to demonstrate the API, and for use when debugging and
+            testing <application>poppler</application>.
+@y
+            is a tool to demonstrate the API, and for use when debugging and
+            testing <application>poppler</application>.
+@z
+
+@x libpoppler.so
+            contains the API functions to render PDF files.
+@y
+            contains the API functions to render PDF files.
+@z
+
+@x libpoppler-cpp.so
+            is a C++ backend for rendering PDF files.
+@y
+            is a C++ backend for rendering PDF files.
 @z
 
 @x libpoppler-glib.so
-          <para>is a wrapper library used to interface the PDF rendering
-          functions with <application>GTK+</application>.</para>
+            is a wrapper library used to interface the PDF rendering functions
+            with <application>GTK+</application>.
 @y
-          <para>is a wrapper library used to interface the PDF rendering
-          functions with <application>GTK+</application>.</para>
+            is a wrapper library used to interface the PDF rendering functions
+            with <application>GTK+</application>.
 @z
 
-@x libpoppler-qt4.{so,a}
-          <para>is a wrapper library used to interface the PDF rendering
-          functions with <application>Qt</application>-4.</para>
+@x libpoppler-qt4.so
+            is a wrapper library used to interface the PDF rendering functions
+            with <application>Qt</application>-4.
 @y
-          <para>is a wrapper library used to interface the PDF rendering
-          functions with <application>Qt</application>-4.</para>
+            is a wrapper library used to interface the PDF rendering functions
+            with <application>Qt</application>-4.
 @z

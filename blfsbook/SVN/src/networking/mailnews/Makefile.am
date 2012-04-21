@@ -1,13 +1,21 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/networking/mailnews
 CHANGE_FILES = \
-	mailnews.ch \
-	mutt.ch \
-	pine.ch \
-	slrn.ch \
 	fetchmail.ch \
-	mailx.ch \
-	other.ch \
-	procmail.ch \
+	mailnews.ch  \
+	mailx.ch     \
+	mutt.ch      \
+	pine.ch      \
+	other.ch     \
+	procmail.ch  \
+	re-alpine.ch \
+	slrn.ch      \
 	tin.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -22,12 +30,13 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-mailnews.xml:  $(BOOKdir)/$@ $(srcdir)/mailnews.ch
-mutt.xml:      $(BOOKdir)/$@ $(srcdir)/mutt.ch
-pine.xml:      $(BOOKdir)/$@ $(srcdir)/pine.ch
-slrn.xml:      $(BOOKdir)/$@ $(srcdir)/slrn.ch
 fetchmail.xml: $(BOOKdir)/$@ $(srcdir)/fetchmail.ch
+mailnews.xml:  $(BOOKdir)/$@ $(srcdir)/mailnews.ch
 mailx.xml:     $(BOOKdir)/$@ $(srcdir)/mailx.ch
+mutt.xml:      $(BOOKdir)/$@ $(srcdir)/mutt.ch
 other.xml:     $(BOOKdir)/$@ $(srcdir)/other.ch
+pine.xml:      $(BOOKdir)/$@ $(srcdir)/pine.ch
 procmail.xml:  $(BOOKdir)/$@ $(srcdir)/procmail.ch
+re-alpine.xml: $(BOOKdir)/$@ $(srcdir)/re-alpine.ch
+slrn.xml:      $(BOOKdir)/$@ $(srcdir)/slrn.ch
 tin.xml:       $(BOOKdir)/$@ $(srcdir)/tin.ch

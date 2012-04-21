@@ -21,11 +21,11 @@
 
 @x
     <para><application>Automoc4</application> is a tool to add rules for generating 
-    <application>Qt4</application> moc files automatically to projects that use 
+    <application>Qt</application> moc files automatically to projects that use 
     <application>CMake</application> as the buildsystem.</para>
 @y
     <para><application>Automoc4</application> is a tool to add rules for generating 
-    <application>Qt4</application> moc files automatically to projects that use 
+    <application>Qt</application> moc files automatically to projects that use 
     <application>CMake</application> as the buildsystem.</para>
 @z
 
@@ -151,8 +151,8 @@
 @z
 
 @x automoc4
-          <para>is a utility generating <application>Qt4</application> moc
+          <para>is a utility generating <application>Qt</application> moc
           files.</para>
 @y
-          <para><application>Qt4</application> の moc ファイルを生成するためのユーティリティ。</para>
+          <para><application>Qt</application> の moc ファイルを生成するためのユーティリティ。</para>
 @z

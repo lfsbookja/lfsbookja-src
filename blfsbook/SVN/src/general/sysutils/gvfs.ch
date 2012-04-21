@@ -213,11 +213,9 @@
           gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree 
           and several executables in /usr/lib/gvfs
         </seg>
-
         <seg>
           libgvfscommon.so and libgvfscommon-dnssd.so
         </seg>
-
         <seg>
           /usr/include/gvfs-client, /usr/lib/gvfs and /usr/share/gvfs
         </seg>
@@ -226,15 +224,13 @@
           gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, 
           gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, 
           gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, 
-          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree,
+          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree 
           /usr/lib/gvfs 配下に数種の実行モジュール
         </seg>
-
         <seg>
           libgvfscommon.so, libgvfscommon-dnssd.so
         </seg>
-
         <seg>
-          /usr/include/gvfs-client, /usr/lib/gvfs and /usr/share/gvfs
+          /usr/include/gvfs-client, /usr/lib/gvfs, /usr/share/gvfs
         </seg>
 @z

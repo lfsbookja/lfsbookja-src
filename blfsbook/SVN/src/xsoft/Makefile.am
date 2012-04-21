@@ -1,3 +1,10 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 SUBDIRS=graphweb office other suites
 BOOKdir = $(top_builddir)/@bookdir@/xsoft
 EXTRA_DIST = xsoft.ch

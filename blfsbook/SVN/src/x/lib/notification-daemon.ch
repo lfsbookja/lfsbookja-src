@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -84,12 +84,18 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libcanberra"/>
-    (Built with <xref linkend="gtk3"/> support).</para>
+    <para role="required">
+      <xref linkend="intltool"/> and
+      <xref linkend="libcanberra"/>
+      (Built with <xref linkend="gtk3"/> support).
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libcanberra"/>
-    (<xref linkend="gtk3"/> サポートがビルドされたもの).</para>
+    <para role="required">
+      <xref linkend="intltool"/>,
+      <xref linkend="libcanberra"/>
+      (<xref linkend="gtk3"/> サポートがビルドされたもの)
+    </para>
 @z
 
 @x
@@ -158,23 +164,27 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>notification-daemon</seg>
-        <seg>None</seg>
-        <seg>/usr/lib/notification-daemon</seg>
+        <seg>
+          notification-daemon
+        </seg>
+        <seg>
+          /usr/lib/notification-daemon
+        </seg>
 @y
-        <seg>notification-daemon</seg>
-        <seg>&None;</seg>
-        <seg>/usr/lib/notification-daemon</seg>
+        <seg>
+          notification-daemon
+        </seg>
+        <seg>
+          /usr/lib/notification-daemon
+        </seg>
 @z
 
 @x
@@ -184,9 +194,9 @@
 @z
 
 @x notification-daemon
-          <para>is the daemon itself.</para>
+          <para>is the notification daemon itself.</para>
 @y
           <para>
-          デーモンプログラム。
+          通知デーモンプログラム。
           </para>
 @z

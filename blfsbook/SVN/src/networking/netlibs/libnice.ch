@@ -81,20 +81,40 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gst-plugins-base"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gst-plugins-base"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gstreamer"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <ulink url="http://gupnp.org/">gupnp-igd</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gstreamer"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://gupnp.org/">gupnp-igd</ulink>
+    </para>
 @z
 
 @x
@@ -144,24 +164,6 @@
 @z
 
 @x
-    <para><option> --disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option> --disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
-@z
-
-@x
-    <para><option>--with-gstreamer</option>: This option enables GStreamer
-    functionality.</para>
-@y
-    <para>
-    <option>--with-gstreamer</option>:
-    このオプションは GStreamer による機能を有効にします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -178,15 +180,27 @@
 @z
 
 @x
-        <seg>stunbdc and stund</seg>
-        <seg>libgstnice.so and libnice.so</seg>
-        <seg>/usr/include/nice, /usr/include/stun and
-        /usr/share/gtk-doc/html/libnice</seg>
+        <seg>
+          stunbdc and stund
+        </seg>
+        <seg>
+          libgstnice.so and libnice.so
+        </seg>
+        <seg>
+          /usr/include/nice, /usr/include/stun and
+          /usr/share/gtk-doc/html/libnice
+        </seg>
 @y
-        <seg>stunbdc, stund</seg>
-        <seg>libgstnice.so, libnice.so</seg>
-        <seg>/usr/include/nice, /usr/include/stun,
-        /usr/share/gtk-doc/html/libnice</seg>
+        <seg>
+          stunbdc, stund
+        </seg>
+        <seg>
+          libgstnice.so, libnice.so
+        </seg>
+        <seg>
+          /usr/include/nice, /usr/include/stun,
+          /usr/share/gtk-doc/html/libnice
+        </seg>
 @z
 
 @x

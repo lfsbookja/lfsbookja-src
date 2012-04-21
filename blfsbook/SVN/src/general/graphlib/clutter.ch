@@ -14,13 +14,13 @@
 @z
 
 @x
-    <title>Introduction to clutter</title>
+    <title>Introduction to Clutter</title>
 @y
-    <title>&IntroductionTo1;clutter&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Clutter&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>clutter</application> package is an open source
+    <para>The <application>Clutter</application> package is an open source
     software library for creating fast, visually rich and animated graphical
     user interfaces.</para>
 @y
@@ -72,57 +72,75 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">clutter Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Clutter Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;clutter&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Clutter&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="atk"/>,
-    <xref linkend="cairo"/>,
-    <xref linkend="cogl"/>,
-    <xref linkend="gdk-pixbuf"/>,
-    <xref linkend="json-glib"/>,
-    <xref linkend="mesalib"/>, and
-    <xref linkend="pango"/></para>
+    <para role="required">
+      <xref linkend="atk"/>,
+      <xref linkend="cogl"/> and
+      <xref linkend="json-glib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="atk"/>,
-    <xref linkend="cairo"/>,
-    <xref linkend="cogl"/>,
-    <xref linkend="gdk-pixbuf"/>,
-    <xref linkend="json-glib"/>,
-    <xref linkend="mesalib"/>,
-    <xref linkend="pango"/></para>
+    <para role="required">
+      <xref linkend="atk"/>,
+      <xref linkend="cogl"/>,
+      <xref linkend="json-glib"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (to build the application developers
     manual)</bridgehead>
-    <para role="optional"><xref linkend="docbook-utils"/>,
-    <xref linkend="jadetex"/>,
-    <xref linkend="xmlto"/>, and either
-    <xref linkend="Links"/>,
-    <xref linkend="lynx"/>, or
-    <xref linkend="w3m"/></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="jadetex"/>,
+      <xref linkend="xmlto"/> and either
+      <xref linkend="Links"/>,
+      <xref linkend="lynx"/> or
+      <xref linkend="w3m"/>
+     </para>
 @y
     <bridgehead renderas="sect4">&Optional;
     (アプリケーション開発マニュアルの構築時に必要)</bridgehead>
-    <para role="optional"><xref linkend="docbook-utils"/>,
-    <xref linkend="jadetex"/>,
-    <xref linkend="xmlto"/>, さらに以下のいずれか：
-    <xref linkend="Links"/>,
-    <xref linkend="lynx"/>,
-    <xref linkend="w3m"/></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="jadetex"/>,
+      <xref linkend="xmlto"/>, 以下のいずれか: 
+      <xref linkend="Links"/>,
+      <xref linkend="lynx"/>,
+      <xref linkend="w3m"/>
+     </para>
 @z
 
 @x
@@ -200,25 +218,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libclutter-glx-1.0.so</seg>
-        <seg>/usr/{include/clutter-1.0/{cally,clutter/{glx,x11}},
-        share/gtk-doc/html/{cally,clutter}}</seg>
+        <seg>
+          libclutter-glx-1.0.so
+        </seg>
+        <seg>
+          /usr/include/clutter-1.0 and
+          /usr/share/gtk-doc/html/{cally,clutter}
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libclutter-glx-1.0.so</seg>
-        <seg>/usr/{include/clutter-1.0/{cally,clutter/{glx,x11}},
-        share/gtk-doc/html/{cally,clutter}}</seg>
+        <seg>
+          libclutter-glx-1.0.so
+        </seg>
+        <seg>
+          /usr/include/clutter-1.0,
+          /usr/share/gtk-doc/html/{cally,clutter}
+        </seg>
 @z
 
 @x

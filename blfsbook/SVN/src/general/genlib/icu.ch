@@ -14,29 +14,20 @@
 @z
 
 @x
-  <!ENTITY icu-buildsize     "245 MB (+ 20MB if running the testsuite)">
-  <!ENTITY icu-time          "2.2 SBU (+ 2.6 SBU if running the testsuite)">
-@y
-  <!ENTITY icu-buildsize     "245 MB (テストスイート実行時はプラス 20MB)">
-  <!ENTITY icu-time          "2.2 SBU (テストスイート実行時はプラス 2.6 SBU)">
-@z
-
-@x
     <title>Introduction to ICU</title>
 @y
     <title>&IntroductionTo1;ICU&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>ICU</application> package is a mature, widely used
-    set of C/C++ libraries providing Unicode and Globalization support for
-    software applications. <application>ICU</application> is widely portable and
-    gives applications the same results on all platforms.</para>
+      The <application>International Components for Unicode</application> (ICU)
+      package is a mature, widely used set of C/C++ libraries providing Unicode
+      and Globalization support for software applications.
+      <application>ICU</application> is widely portable and gives applications
+      the same results on all platforms.
 @y
-    <para>
-    <application>ICU</application> パッケージは、広く活用されている C/C++ ライブラリであり、アプリケーションに対しての Unicode と国際化サポートを提供します。
-    <application>ICU</application> は可搬性に優れ、あらゆるプラットフォームにて同一の処理結果を実現します。
-    </para>
+      <application>International Components for Unicode</application> (ICU) パッケージは、広く活用されている C/C++ ライブラリであり、アプリケーションに対しての Unicode と国際化サポートを提供します。
+      <application>ICU</application> は可搬性に優れ、あらゆるプラットフォームにて同一の処理結果を実現します。
 @z
 
 @x
@@ -46,47 +37,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&icu-download-http;"/></para>
+          Download (HTTP): <ulink url="&icu-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&icu-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&icu-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&icu-download-ftp;"/></para>
+          Download (FTP): <ulink url="&icu-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&icu-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&icu-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &icu-md5sum;</para>
+          Download MD5 sum: &icu-md5sum;
 @y
-        <para>&Download; MD5 sum: &icu-md5sum;</para>
+          &Download; MD5 sum: &icu-md5sum;
 @z
 
 @x
-        <para>Download size: &icu-size;</para>
+          Download size: &icu-size;
 @y
-        <para>&DownloadSize;: &icu-size;</para>
+          &DownloadSize;: &icu-size;
 @z
 
 @x
-        <para>Estimated disk space required: &icu-buildsize;</para>
+          Estimated disk space required: &icu-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &icu-buildsize;</para>
+          &Estimateddiskspacerequired;: &icu-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &icu-time;</para>
+          Estimated build time: &icu-time;
 @y
-        <para>&Estimatedbuildtime;: &icu-time;</para>
+          &Estimatedbuildtime;: &icu-time;
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/icu"/></para>
+      User Notes: <ulink url="&blfs-wiki;/icu"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/icu"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/icu"/>
 @z
 
 @x
@@ -96,31 +85,21 @@
 @z
 
 @x
-    <para>Install <application>ICU</application> by running the following
-    commands:</para>
+      Install <application>ICU</application> by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>ICU</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>ICU</application> をビルドします。
 @z
 
 @x
-    <para>On at least x86_64, the testsuite ends with a segmentation fault, and
-    therefore reports an error in cintltest and ends in error. If you nevertheless
-    wish to test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    少なくとも x86_64 においては、テストスイート実行時にセグメンテーションフォールトが発生し、cintltest テスト時のエラー報告とともにテストスイートが異常終了します。
-    この状況であってもビルド結果をビルドする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -140,19 +119,31 @@
 @z
 
 @x
-        <seg>derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config,
-        makeconv, pkgdata, and uconv</seg>
-        <seg>libicudata.so, libicui18n.so, libicuio.so, libicule.so,
-        libiculx.so, libicutu.so, and libicuuc.so</seg>
-        <seg>/usr/{include/{layout,unicode},lib/icu/&icu-version;,
-        share/icu/&icu-version;/config}</seg>
+        <seg>
+          derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config, icuinfo,
+          makeconv, pkgdata and uconv.
+        </seg>
+        <seg>
+          libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
+          libicutest.so, libicutu.so and libicuuc.so.
+        </seg>
+        <seg>
+          /usr/include/layout, /usr/include/unicode, /usr/lib/icu and
+          /usr/share/icu.
+        </seg>
 @y
-        <seg>derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config,
-        makeconv, pkgdata, uconv</seg>
-        <seg>libicudata.so, libicui18n.so, libicuio.so, libicule.so,
-        libiculx.so, libicutu.so, libicuuc.so</seg>
-        <seg>/usr/{include/{layout,unicode},lib/icu/&icu-version;,
-        share/icu/&icu-version;/config}</seg>
+        <seg>
+          derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config, icuinfo,
+          makeconv, pkgdata, uconv.
+        </seg>
+        <seg>
+          libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
+          libicutest.so, libicutu.so, libicuuc.so.
+        </seg>
+        <seg>
+          /usr/include/layout, /usr/include/unicode, /usr/lib/icu,
+          /usr/share/icu.
+        </seg>
 @z
 
 @x
@@ -162,172 +153,160 @@
 @z
 
 @x derb
-          <para>disassembles a resource bundle.</para>
+            disassembles a resource bundle.
 @y
-          <para>
-          リソースバンドル (resource bundle) をディスアセンブルします。
-          </para>
+            リソースバンドル (resource bundle) をディスアセンブルします。
 @z
 
 @x genbrk
-          <para>compiles ICU break iteration rules source files into binary data
-          files.</para>
+            compiles ICU break iteration rules source files into binary data
+            files.
 @y
-          <para>
-          ICU の break iteration rules のソースファイルをバイナリデータファイルにコンパイルします。
-          </para>
+            ICU の break iteration rules のソースファイルをバイナリデータファイルにコンパイルします。
+@z
+
+@x gencfu
+            reads in Unicode confusable character definitions and writes out the
+            binary data.
+@y
+            reads in Unicode confusable character definitions and writes out the
+            binary data.
 @z
 
 @x gencnval
-          <para>compiles the converters aliases file.</para>
+            compiles the converter's aliases file.
 @y
-          <para>
-          変換エイリアスファイル (converters aliases file) をコンパイルします。
-          </para>
+            変換エイリアスファイル (converters aliases file) をコンパイルします。
 @z
 
 @x genctd
-          <para>compiles word list into ICU compact trie dictionary.</para>
+            compiles a word list into an ICU compact trie dictionary.
 @y
-          <para>
-          ワードリスト (word list) を ICU の compact trie 辞書 へコンパイルします。
-          </para>
+            ワードリスト (word list) を ICU の compact trie 辞書 へコンパイルします。
 @z
 
 @x genrb
-          <para>compile a resource bundle.</para>
+            compiles a resource bundle.
 @y
-          <para>
-          リソースバンドル (resource bundle) をコンパイルします。
-          </para>
+            リソースバンドル (resource bundle) をコンパイルします。
 @z
 
 @x icu-config
-          <para>outputs ICU build options.</para>
+            outputs ICU build options.
 @y
-          <para>
-          ICU のビルドオプションを表示します。
-          </para>
+            ICU のビルドオプションを表示します。
+@z
+
+@x icuinfo
+            outputs configuration information about the current ICU.
+@y
+            ICU に対しての設定情報を表示します。
 @z
 
 @x makeconv
-          <para>compiles a converter table.</para>
+            compiles a converter table.
 @y
-          <para>
-          コンバーターテーブル (converter table) をコンパイルします。
-          </para>
+            コンバーターテーブル (converter table) をコンパイルします。
 @z
 
 @x pkgdata
-          <para>packages data for use by ICU.</para>
+            packages data for use by ICU.
 @y
-          <para>
-          ICU により用いられるパッケージデータ。
-          </para>
+            ICU により用いられるパッケージデータ。
 @z
 
 @x uconv
-          <para>converts data from one encoding to another.</para>
+            converts data from one encoding to another.
 @y
-           <para>
-          １つのエンコーディングからなるデータを他のエンコーディングに変換します。
-           </para>
+            1つのエンコーディングからなるデータを他のエンコーディングに変換します。
 @z
 
-@x genccode
-          <para>generates C or platform specific assembly code from an ICU data
-          file.</para>
-@y
-          <para>
-          ICU データファイルから C コード、あるいはプラットフォームに固有のアセンブリコードを生成します。
-          </para>
-@z
-
-@x gencmn
-          <para>generates an ICU memory-mappable data file.</para>
-@y
-          <para>
-          ICU のメモリマップ可能なデータファイル (memory-mappable data file) を生成します。
-          </para>
-@z
-
-@x gensprep
-          <para>compiles StringPrep data from files filtered by
-          filterRFC3454.pl.</para>
-@y
-          <para>
-          filterRFC3454.pl によってフィルタリングされたファイルから StringPrep データをコンパイルします。
-          </para>
-@z
-
-@x genuca
-          <para>creates the UCA data table.</para>
-@y
-          <para>
-          UCA データテーブルを生成します。
-          </para>
-@z
-
-@x icupkg
-          <para>extracts or modifies an ICU .dat archive.</para>
-@y
-          <para>
-          ICU の .dat アーカイブを抽出または修正します。
-          </para>
-@z
+% @x genccode
+%           <para>generates C or platform specific assembly code from an ICU data
+%           file.</para>
+% @y
+%           <para>
+%           ICU データファイルから C コード、あるいはプラットフォームに固有のアセンブリコードを生成します。
+%           </para>
+% @z
+% 
+% @x gencmn
+%           <para>generates an ICU memory-mappable data file.</para>
+% @y
+%           <para>
+%           ICU のメモリマップ可能なデータファイル (memory-mappable data file) を生成します。
+%           </para>
+% @z
+% 
+% @x gensprep
+%           <para>compiles StringPrep data from files filtered by
+%           filterRFC3454.pl.</para>
+% @y
+%           <para>
+%           filterRFC3454.pl によってフィルタリングされたファイルから StringPrep データをコンパイルします。
+%           </para>
+% @z
+% 
+% @x genuca
+%           <para>creates the UCA data table.</para>
+% @y
+%           <para>
+%           UCA データテーブルを生成します。
+%           </para>
+% @z
+% 
+% @x icupkg
+%           <para>extracts or modifies an ICU .dat archive.</para>
+% @y
+%           <para>
+%           ICU の .dat アーカイブを抽出または修正します。
+%           </para>
+% @z
 
 @x libicudata.so
-          <para>is the data library.</para>
+            is the data library.
 @y
-          <para>
-          データライブラリ。
-          </para>
+            データライブラリ。
 @z
 
 @x libicui18n.so
-          <para>is the internationalization (i18n) library.</para>
+            is the internationalization (i18n) library.
 @y
-          <para>
-          国際化 (i18n) ライブラリ。
-          </para>
+            国際化 (i18n) ライブラリ。
 @z
 
 @x libicuio.so
-          <para>is the ICU I/O (unicode stdio) library.</para>
+            is the ICU I/O (unicode stdio) library.
 @y
-          <para>
-          ICU I/O (ユニコード標準) ライブラリ。
-          </para>
+            ICU I/O (ユニコード標準) ライブラリ。
 @z
 
 @x libicule.so
-          <para>is the layout engine.</para>
+            is the layout engine.
 @y
-          <para>
-          レイアウトエンジン。
-          </para>
+            レイアウトエンジン。
 @z
 
 @x libiculx.so
-          <para>is the layout extensions engine.</para>
+            is the layout extensions engine.
 @y
-          <para>
-          レイアウトエンジンの拡張。
-          </para>
+            レイアウトエンジンの拡張。
+@z
+
+@x libicutest.so
+            is the test library.
+@y
+            テストライブラリ。
 @z
 
 @x libicutu.so
-          <para>is the tool utility library.</para>
+            is the tool utility library.
 @y
-          <para>
-          ツールユーティリティライブラリ。
-          </para>
+            ツールユーティリティライブラリ。
 @z
 
 @x libicuuc.so
-          <para>is the common library.</para>
+            is the common library.
 @y
-          <para>
-          共通ライブラリ。
-          </para>
+            共通ライブラリ。
 @z

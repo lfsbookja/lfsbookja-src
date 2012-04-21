@@ -78,32 +78,40 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libgcrypt"/>,
-    <xref linkend="libtasn1"/>, and
-    <xref linkend="p11-kit"/></para>
+    <para role="required">
+      <xref linkend="dbus"/> and
+      <xref linkend="gcr"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libgcrypt"/>,
-    <xref linkend="libtasn1"/>,
-    <xref linkend="p11-kit"/></para>
+    <para role="required">
+      <xref linkend="dbus"/>,
+      <xref linkend="gcr"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="linux-pam"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="linux-pam"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="linux-pam"/>, and
-    <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
+    <para role="optional">
+      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="linux-pam"/>,
-    <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
+    <para role="optional">
+      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+    </para>
 @z
 
 @x
@@ -150,35 +158,6 @@
 @z
 
 @x
-    <para><command>patch -Np1 -i ...</command>: The patch allows testsuites from
-    other packages which invoke <application>gnome-keyring</application>, such as
-    <application>NetworkManager,</application> to run even if this package&apos;s
-    daemon is not running, for example when you are building a
-    <application>GNOME</application> desktop.</para>
-@y
-    <para><command>patch -Np1 -i ...</command>: The patch allows testsuites from
-    other packages which invoke <application>gnome-keyring</application>, such as
-    <application>NetworkManager,</application> to run even if this package&apos;s
-    daemon is not running, for example when you are building a
-    <application>GNOME</application> desktop.</para>
-@z
-
-@x
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-keyring</parameter>:
-    This parameter causes the libexec files to be installed in the preferred
-    location of <filename
-    class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
-@y
-    <para>
-    <parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-keyring</parameter>:
-    このパラメーターは libexec ファイルのインストール先を <filename
-    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
-    class="directory">$GNOME_PREFIX/lib/gnome-keyring</filename> とします。
-    </para>
-@z
-
-@x
     <para><parameter>--with-pam-dir=/lib/security</parameter>: This parameter
     specifies where the pam modules will be installed: you can omit this if you
     have not installed <application>Linux-PAM</application>.</para>
@@ -222,7 +201,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -230,23 +209,25 @@
 @z
 
 @x
-        <seg>gnome-keyring, gnome-keyring-daemon, and gnome-keyring-prompt</seg>
-        <seg>gck-ssh-store-standalone.so, gck-user-store-standalone.so,
-        gnome-keyring-pkcs11.so, gck-roots-store-standalone.so,
-        gck-secret-store-standalone.so, libgcr.so, libgp11.so, and
-        pam_gnome_keyring.so (if Linux-PAM was installed)</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/{gcr,gp11},
-        lib/gnome-keyring/{devel,standalone},share/{gcr/ui,
-        gnome-keyring/{introspect,ui},gtk-doc/html/{gcr,gp11}}}</seg>
+        <seg>
+          gnome-keyring, gnome-keyring-3 and gnome-keyring-daemon
+        </seg>
+        <seg>
+          gnome-keyring-pkcs11.so and pam_gnome_keyring.so
+        </seg>
+        <seg>
+          /usr/lib/gnome-keyring/devel
+        </seg>
 @y
-        <seg>gnome-keyring, gnome-keyring-daemon, gnome-keyring-prompt</seg>
-        <seg>gck-ssh-store-standalone.so, gck-user-store-standalone.so,
-        gnome-keyring-pkcs11.so, gck-roots-store-standalone.so,
-        gck-secret-store-standalone.so, libgcr.so, libgp11.so,
-        pam_gnome_keyring.so (Linux-PAM をインストールしていた場合)</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/{gcr,gp11},
-        lib/gnome-keyring/{devel,standalone},share/{gcr/ui,
-        gnome-keyring/{introspect,ui},gtk-doc/html/{gcr,gp11}}}</seg>
+        <seg>
+          gnome-keyring, gnome-keyring-3, gnome-keyring-daemon
+        </seg>
+        <seg>
+          gnome-keyring-pkcs11.so, pam_gnome_keyring.so
+        </seg>
+        <seg>
+          /usr/lib/gnome-keyring/devel
+        </seg>
 @z
 
 @x

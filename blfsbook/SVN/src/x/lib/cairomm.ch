@@ -73,25 +73,35 @@
 @x
     <bridgehead renderas="sect3">cairomm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">cairomm の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;cairomm&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="cairo"/> and
-    <xref linkend="libsigc"/></para>
+    <para role="required">
+      <xref linkend="cairo"/> and
+      <xref linkend="libsigc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="cairo"/>,
-    <xref linkend="libsigc"/></para>
+    <para role="required">
+      <xref linkend="cairo"/>,
+      <xref linkend="libsigc"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="boost"/> and
+      <xref linkend="doxygen"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="boost"/>,
+      <xref linkend="doxygen"/>
+    </para>
 @z
 
 @x
@@ -140,25 +150,33 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libcairomm-1.0.so</seg>
-        <seg>/usr/{include/cairomm-1.0/cairomm,
-        share/doc/libcairomm-1.0/reference/html}</seg>
+        <seg>
+          libcairomm-1.0.so
+        </seg>
+        <seg>
+          /usr/include/cairomm-1.0,
+          /usr/lib/cairomm-1.0,
+          /usr/share/devhelp/books/cairomm-1.0 and
+          /usr/share/doc/cairomm-1.0
+        </seg>
 @y
-        <seg>なし</seg>
-        <seg>libcairomm-1.0.so</seg>
-        <seg>/usr/{include/cairomm-1.0/cairomm,
-        share/doc/libcairomm-1.0/reference/html}</seg>
+        <seg>
+          libcairomm-1.0.so
+        </seg>
+        <seg>
+          /usr/include/cairomm-1.0,
+          /usr/lib/cairomm-1.0,
+          /usr/share/devhelp/books/cairomm-1.0,
+          /usr/share/doc/cairomm-1.0
+        </seg>
 @z
 
 @x

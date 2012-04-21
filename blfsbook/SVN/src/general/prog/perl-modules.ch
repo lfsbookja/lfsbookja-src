@@ -72,14 +72,16 @@
 @z
 
 @x
-      <para>Some dependencies, such as the <xref linkend="perl-test-pod"/>
+      <para>Some dependencies, such as the 
+      <ulink url="http://search.cpan.org/~dwheeler/Test-Pod/">Test-Pod</ulink>
       module, are used by several of the listed dependencies of the main
       module and perhaps also the module being installed. Dependencies such as
       this are only listed once in the dependency chain for each main module
       (typically near the bottom-most dependency) to avoid redundancy and
       additional clutter in the instructions.</para>
 @y
-      <para>Some dependencies, such as the <xref linkend="perl-test-pod"/>
+      <para>Some dependencies, such as the 
+      <ulink url="http://search.cpan.org/~dwheeler/Test-Pod/">Test-Pod</ulink>
       module, are used by several of the listed dependencies of the main
       module and perhaps also the module being installed. Dependencies such as
       this are only listed once in the dependency chain for each main module
@@ -102,71 +104,14 @@
 @x
         <para><ulink
         url="http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-&Archive-Zip-version;.tar.gz">
-        Archive-Zip-&Archive-Zip-version;</ulink>
+        Archive::Zip-&Archive-Zip-version;</ulink>
         (uses the standard <xref linkend="perl-standard-install"/>)</para>
 @y
         <para><ulink
         url="http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-&Archive-Zip-version;.tar.gz">
-        Archive-Zip-&Archive-Zip-version;</ulink>
+        Archive::Zip-&Archive-Zip-version;</ulink>
         (uses the standard <xref linkend="perl-standard-install"/>)</para>
 @z
-
-% ----------
-% Compress::Zlib
-% ----------
-% @x
-%     <para>The Compress::Zlib module provides a <application>Perl</application>
-%     interface to the <application>Zlib</application> compression library. Most
-%     of the functionality provided by <application>Zlib</application> is
-%     available in Compress::Zlib. The module can be split into two general areas
-%     of functionality, namely in-memory compression/decompression and read/write
-%     access to gzip files. This module and all the dependencies are installed
-%     using the standard <xref linkend="perl-standard-install"/>.</para>
-% @y
-% <para>
-% Compress::Zlib モジュールは <application>Perl</application>
-% に対して <application>Zlib</application> 圧縮ライブラリへのインターフェースを提供します。
-% これによって <application>Zlib</application>
-% ライブラリのほとんどの機能を Compress::Zlib を通じて利用できます。
-% 
-% The module can be split into two general areas
-% of functionality, namely in-memory compression/decompression and read/write
-% access to gzip files. This module and all the dependencies are installed
-% using the standard <xref linkend="perl-standard-install"/>.
-% </para>
-% @z
-
-% @x
-%       <para>The Compress::Raw::Zlib module requires the following
-%       <command>sed</command> after untarring the distribution tarball (before
-%       any other build commands) to use the system-installed copy of
-%       <application>Zlib</application>.</para>
-% @y
-% <para>
-% Compress::Raw::Zlib モジュールは、module requires the following
-% <command>sed</command> after untarring the distribution tarball (before
-% any other build commands) to use the system-installed copy of
-% <application>Zlib</application>.
-% </para>
-% @z
-
-% @x
-%         url="http://cpan.org/authors/id/P/PM/PMQS/Compress-Zlib-&Compress-Zlib-version;.tar.gz">
-%         Compress-Zlib-&Compress-Zlib-version;</ulink>
-%         (uses the standard <xref linkend="perl-standard-install"/>)</para>
-% @y
-%         url="http://cpan.org/authors/id/P/PM/PMQS/Compress-Zlib-&Compress-Zlib-version;.tar.gz">
-%         Compress-Zlib-&Compress-Zlib-version;</ulink>
-%         (標準的な <xref linkend="perl-standard-install"/> を利用)</para>
-% @z
-
-% @x
-%                 url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
-%                 IO-Compress-Bzip2-&IO-Compress-Bzip2-version;</ulink> (used during the tests)</para>
-% @y
-%                 url="http://cpan.org/authors/id/P/PM/PMQS/IO-Compress-Bzip2-&IO-Compress-Bzip2-version;.tar.gz">
-%                 IO-Compress-Bzip2-&IO-Compress-Bzip2-version;</ulink> (テスト時に利用される)</para>
-% @z
 
 % ----------
 % Date::Manip
@@ -189,12 +134,12 @@
 @x
         <para><ulink
         url="http://cpan.org/authors/id/S/SB/SBECK/Date-Manip-&Date-Manip-version;.tar.gz">
-        Date-Manip-&Date-Manip-version;</ulink>
+        Date::Manip-&Date-Manip-version;</ulink>
         (uses the standard <xref linkend="perl-standard-install"/>)</para>
 @y
         <para><ulink
         url="http://cpan.org/authors/id/S/SB/SBECK/Date-Manip-&Date-Manip-version;.tar.gz">
-        Date-Manip-&Date-Manip-version;</ulink>
+        Date::Manip-&Date-Manip-version;</ulink>
         (標準的な <xref linkend="perl-standard-install"/> を利用)</para>
 @z
 

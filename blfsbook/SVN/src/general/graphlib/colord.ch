@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -81,34 +81,48 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="lcms2"/>
-    <xref linkend="pkgconfig"/>,
-    <xref linkend="sqlite"/>, and
-    <xref linkend="udev"/></para>
+    <para role="required">
+      <xref linkend="dbus"/>,
+      <xref linkend="lcms2"/>,
+      <xref linkend="sqlite"/> and
+      <xref linkend="udev"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="lcms2"/>
-    <xref linkend="pkgconfig"/>,
-    <xref linkend="sqlite"/>,
-    <xref linkend="udev"/></para>
+    <para role="required">
+      <xref linkend="dbus"/>,
+      <xref linkend="lcms2"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="udev"/>
+    </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="polkit"/></para>
+    <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="polkit"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="polkit"/></para>
+    <bridgehead renderas="sect4">&Recommended; (GNOME のビルド時に必要)</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="polkit"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="sane"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="sane"/>
+    </para>
 @z
 
 @x
@@ -155,15 +169,6 @@
 @z
 
 @x
-    <para><option>--disable-examples</option>: This option disables the DBus
-    example code.</para>
-@y
-    <para><option>--disable-examples</option>:
-    このオプションは DBus のサンプルコードを無効にします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -171,7 +176,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Librariy</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -180,19 +185,33 @@
 @z
 
 @x
-        <seg>cd-create-profile, cd-fix-profile, colord, and colormgr</seg>
-        <seg>libcolord.{so,a}, libcolord_sensor_dummy.{so,a},
-        libcolord_sensor_huey.{so,a}, and libcolord_sensor_munki.{so,a}</seg>
-        <seg>/usr/{include/colord-1/colord,lib/colord-sensors,
-        share/{color/icc/colord,dbus-1/interfaces,locale/it_IT/LC_MESSAGES}},
-        /var/lib/colord</seg>
+        <seg>
+          cd-create-profile, cd-fix-profile, colord, 
+          colord-sane and colormgr
+        </seg>
+        <seg>
+          libcolord.so
+        </seg>
+        <seg>
+          /usr/include/colord-1, /usr/lib/colord,
+          /usr/lib/colord-sensors, /usr/share/color,
+          /usr/share/gtk-doc/html/colord and
+          /var/lib/colord
+        </seg>
 @y
-        <seg>cd-create-profile, cd-fix-profile, colord, colormgr</seg>
-        <seg>libcolord.{so,a}, libcolord_sensor_dummy.{so,a},
-        libcolord_sensor_huey.{so,a}, libcolord_sensor_munki.{so,a}</seg>
-        <seg>/usr/{include/colord-1/colord,lib/colord-sensors,
-        share/{color/icc/colord,dbus-1/interfaces,locale/it_IT/LC_MESSAGES}},
-        /var/lib/colord</seg>
+        <seg>
+          cd-create-profile, cd-fix-profile, colord, 
+          colord-sane, colormgr
+        </seg>
+        <seg>
+          libcolord.so
+        </seg>
+        <seg>
+          /usr/include/colord-1, /usr/lib/colord,
+          /usr/lib/colord-sensors, /usr/share/color,
+          /usr/share/gtk-doc/html/colord,
+          /var/lib/colord
+        </seg>
 @z
 
 @x
@@ -214,9 +233,9 @@
 @z
 
 @x colord
-          <para>is the daemon.</para>
+          <para>is the color daemon.</para>
 @y
-          <para>is the daemon.</para>
+          <para>is the color daemon.</para>
 @z
 
 @x colormgr

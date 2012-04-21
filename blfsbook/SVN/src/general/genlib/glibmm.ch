@@ -78,12 +78,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libsigc"/> and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="libsigc"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libsigc"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="libsigc"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
@@ -132,31 +136,35 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgiomm-2.4.so, libglibmm-2.4.so, and
-        libglibmm_generate_extra_defs-2.4.so</seg>
-        <seg>/usr/{include/{giomm-2.4/giomm/private,glibmm-2.4/{glibmm/private,
-        glibmm_generate_extra_defs}},lib/{giomm-2.4/include,glibmm-2.4/{include,
-        proc/{m4,pm}}},share/{devhelp/books/glibmm-2.4,doc/glibmm-2.4/{images,
-        reference/html},glibmm-2.4/doctool}}</seg>
+        <seg>
+          libgiomm-2.4.so, libglibmm-2.4.so and
+          libglibmm_generate_extra_defs-2.4.so
+        </seg>
+        <seg>
+          /usr/include/{giomm-2.4,glibmm-2.4},
+          /usr/lib/{giomm-2.4,glibmm-2.4},
+          /usr/share/devhelp/books/glibmm-2.4 and
+          /usr/share/doc/glibmm-2.4
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libgiomm-2.4.so, libglibmm-2.4.so,
-        libglibmm_generate_extra_defs-2.4.so</seg>
-        <seg>/usr/{include/{giomm-2.4/giomm/private,glibmm-2.4/{glibmm/private,
-        glibmm_generate_extra_defs}},lib/{giomm-2.4/include,glibmm-2.4/{include,
-        proc/{m4,pm}}},share/{devhelp/books/glibmm-2.4,doc/glibmm-2.4/{images,
-        reference/html},glibmm-2.4/doctool}}</seg>
+        <seg>
+          libgiomm-2.4.so, libglibmm-2.4.so,
+          libglibmm_generate_extra_defs-2.4.so
+        </seg>
+        <seg>
+          /usr/include/{giomm-2.4,glibmm-2.4},
+          /usr/lib/{giomm-2.4,glibmm-2.4},
+          /usr/share/devhelp/books/glibmm-2.4,
+          /usr/share/doc/glibmm-2.4
+        </seg>
 @z
 
 @x

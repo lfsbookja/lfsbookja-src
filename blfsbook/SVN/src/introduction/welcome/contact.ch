@@ -26,6 +26,6 @@
 @y
   <para>
   BLFS メーリングリストのいずれかに直接メール送信してください。
-  利用可能なメーリングリストの詳細は <xref linkend="maillists"/> を参照してください。
+  利用可能なメーリングリストの詳細は<xref linkend="maillists"/>を参照してください。
   </para>
 @z

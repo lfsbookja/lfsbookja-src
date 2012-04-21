@@ -88,11 +88,9 @@
 @z
 
 @x
-        <para>Additional Documentation: <ulink
-        url="http://www.wireshark.org/docs/"/></para>
+        <para>Additional Documentation: 
 @y
-        <para>Additional Documentation: <ulink
-        url="http://www.wireshark.org/docs/"/></para>
+        <para>Additional Documentation: 
 @z
 
 @x
@@ -131,38 +129,46 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libpcap"/>
-    (required to capture data)</para>
+    <para role="recommended">
+      <xref linkend="libpcap"/> (required to capture data)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libpcap"/>
-    (required to capture data)</para>
+    <para role="recommended">
+      <xref linkend="libpcap"/> (required to capture data)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="gtk2"/> (to build the GUI front-end),
-    <xref linkend="openssl"/>,
-    <xref linkend="mitkrb"/>,
-    <xref linkend="python2"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="gnutls"/>,
-    <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
-    <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
-    <ulink url="http://www.lua.org/">Lua</ulink></para>
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
+      <xref linkend="openssl"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="pcre"/>,
+      <xref linkend="gnutls"/>,
+      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>,
+      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
+      <!-- <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>, -->
+      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
+      <ulink url="http://www.lua.org/">Lua</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="gtk2"/> (to build the GUI front-end),
-    <xref linkend="openssl"/>,
-    <xref linkend="mitkrb"/>,
-    <xref linkend="python2"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="gnutls"/>,
-    <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
-    <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
-    <ulink url="http://www.lua.org/">Lua</ulink></para>
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (to build the GUI front-end),
+      <xref linkend="openssl"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="pcre"/>,
+      <xref linkend="gnutls"/>,
+      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>,
+      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
+      <!-- <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>, -->
+      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
+      <ulink url="http://www.lua.org/">Lua</ulink>
+    </para>
 @z
 
 @x
@@ -216,11 +222,37 @@
 @z
 
 @x
-    <para>Install <application>Wireshark</application> by running the following
-    commands:</para>
+    <para>Optionally, fix the description of the program in the title. 
+    The first change overwrites the default "SVN Unknown" in the title
+    and the secong overwrites a utility script that resets the version
+    to "unknown".</para>
 @y
-    <para>Install <application>Wireshark</application> by running the following
-    commands:</para>
+    <para>Optionally, fix the description of the program in the title. 
+    The first change overwrites the default "SVN Unknown" in the title
+    and the secong overwrites a utility script that resets the version
+    to "unknown".</para>
+@z
+
+@x
+    <para><application>Wireshark</application> is a very large and complex
+    application.  These instructions provide additional security measures to
+    ensure that only trusted users are allowed to view network traffic.  First,
+    set up a system groub for wireshark.  As the <systemitem
+    class="username">root</systemitem> user:</para>
+@y
+    <para><application>Wireshark</application> is a very large and complex
+    application.  These instructions provide additional security measures to
+    ensure that only trusted users are allowed to view network traffic.  First,
+    set up a system groub for wireshark.  As the <systemitem
+    class="username">root</systemitem> user:</para>
+@z
+
+@x
+    <para>Continue to install <application>Wireshark</application> by running
+    the following commands:</para>
+@y
+    <para>Continue to install <application>Wireshark</application> by running
+    the following commands:</para>
 @z
 
 @x
@@ -347,16 +379,16 @@
 
 @x
         <seg>capinfos, dftest, dumpcap, editcap, idl2wrs, mergecap, randpkt,
-        text2pcap, tshark and wireshark</seg>
-        <seg>libwireshark.so, libwiretap.so and numerous dissector plugin
-        modules</seg>
+        rawshark, text2pcap, tshark and wireshark</seg>
+        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and 
+        numerous plugin modules</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
         /usr/share/pixmaps/wireshark and /usr/share/wireshark</seg>
 @y
         <seg>capinfos, dftest, dumpcap, editcap, idl2wrs, mergecap, randpkt,
-        text2pcap, tshark and wireshark</seg>
-        <seg>libwireshark.so, libwiretap.so and numerous dissector plugin
-        modules</seg>
+        rawshark, text2pcap, tshark and wireshark</seg>
+        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and 
+        numerous plugin modules</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
         /usr/share/pixmaps/wireshark and /usr/share/wireshark</seg>
 @z

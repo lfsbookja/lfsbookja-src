@@ -1,35 +1,42 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/x/lib
 CHANGE_FILES = \
 	atk.ch \
+	atkmm.ch \
 	cairo.ch \
+	cairomm.ch \
+	cogl.ch \
 	freeglut.ch \
+	gdk-pixbuf.ch \
 	goffice.ch \
 	gtk+2.ch \
+	gtk+3.ch \
 	gtkmm2.ch \
+	gtkmm3.ch \
+	gtk-vnc.ch \
+	gtk-engines.ch \
 	hicolor-icon-theme.ch \
 	lesstif.ch \
 	lib.ch \
+	libnotify.ch \
+	libsexy.ch \
 	libwnck.ch \
 	libxklavier.ch \
+	notification-daemon.ch \
 	pango.ch \
+	pangomm.ch \
 	qt.ch \
 	qt4.ch \
 	shared-mime-info.ch \
 	startup-notification.ch \
 	xulrunner.ch \
-	webkitgtk.ch \
-	cairomm.ch \
-	pangomm.ch \
-	gtkmm.ch \
-	libnotify.ch \
-	notification-daemon.ch \
-	libsexy.ch \
-	gtk-vnc.ch \
-	gdk-pixbuf.ch \
-	gtk+3.ch \
-	gtk-engines.ch \
-	atkmm.ch \
-	cogl.ch
+	webkitgtk.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -66,8 +73,8 @@ startup-notification.xml: $(BOOKdir)/$@ $(srcdir)/startup-notification.ch
 xulrunner.xml:            $(BOOKdir)/$@ $(srcdir)/xulrunner.ch
 webkitgtk.xml:            $(BOOKdir)/$@ $(srcdir)/webkitgtk.ch
 cairomm.xml:              $(BOOKdir)/$@ $(srcdir)/cairomm.ch
-pangomm.xml: $(BOOKdir)/$@ $(srcdir)/pangomm.ch
-gtkmm.xml: $(BOOKdir)/$@ $(srcdir)/gtkmm.ch
+pangomm.xml:              $(BOOKdir)/$@ $(srcdir)/pangomm.ch
+gtkmm3.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm3.ch
 libnotify.xml: $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 notification-daemon.xml: $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
 libsexy.xml: $(BOOKdir)/$@ $(srcdir)/libsexy.ch

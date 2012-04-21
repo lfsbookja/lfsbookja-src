@@ -100,14 +100,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Besides, <xref linkend="virtuoso"/> 
-    is required as a runtime dependency for this backend.)
+    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally, 
+    <xref linkend="virtuoso"/> is required as a runtime dependency for this 
+    backend.)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Besides, <xref linkend="virtuoso"/> 
-    is required as a runtime dependency for this backend.)
+    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally, 
+    <xref linkend="virtuoso"/> is required as a runtime dependency for this 
+    backend.)
     </para>
 @z
 
@@ -132,12 +134,6 @@
     <para>
     以下のコマンドを実行して <application>soprano</application> をビルドします。
     </para>
-@z
-
-@x
-    <para>Prepare the package for compilation:</para>
-@y
-    <para>パッケージをコンパイルするための準備をします。</para>
 @z
 
 @x
@@ -201,7 +197,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -211,8 +207,8 @@
 @x
         <seg>sopranod, sopranocmd and onto2vocabularyclass</seg>
         <seg>libsoprano.so, libsopranoclient.so, libsopranoserver.so and
-        several other libs in /usr/lib/soprano/</seg>
-	<seg>/usr/include/soprano, /usr/include/Soprano, /usr/share/soprano</seg>
+        several libraries in /usr/lib/soprano/</seg>
+	<seg>/usr/include/soprano, /usr/include/Soprano and /usr/share/soprano</seg>
 @y
         <seg>sopranod, sopranocmd, onto2vocabularyclass</seg>
         <seg>libsoprano.so, libsopranoclient.so, libsopranoserver.so,

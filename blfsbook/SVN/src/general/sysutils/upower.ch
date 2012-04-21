@@ -81,24 +81,46 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="polkit"/>,
-    <xref linkend="dbus-glib"/>, and
-    <xref linkend="udev"/> (with gudev)</para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="polkit"/> and
+      <xref linkend="udev"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="polkit"/>,
-    <xref linkend="dbus-glib"/>,
-    <xref linkend="udev"/> (gudev とともに)</para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="polkit"/>,
+      <xref linkend="udev"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -163,15 +185,27 @@
 @z
 
 @x
-        <seg>upower and upowerd</seg>
-        <seg>libupower-glib.{so,a}</seg>
-        <seg>/etc/UPower, /usr/{include/libupower-glib,lib/upower,
-        share/dbus-1/interfaces}, /var/lib/upower</seg>
+        <seg>
+          upower and upowerd
+        </seg>
+        <seg>
+          libupower-glib.so
+        </seg>
+        <seg>
+          /etc/UPower, /usr/include/libupower-glib,
+          /usr/lib/upower and /var/lib/upower
+        </seg>
 @y
-        <seg>upower, upowerd</seg>
-        <seg>libupower-glib.{so,a}</seg>
-        <seg>/etc/UPower, /usr/{include/libupower-glib,lib/upower,
-        share/dbus-1/interfaces}, /var/lib/upower</seg>
+        <seg>
+          upower, upowerd
+        </seg>
+        <seg>
+          libupower-glib.so
+        </seg>
+        <seg>
+          /etc/UPower, /usr/include/libupower-glib,
+          /usr/lib/upower, /var/lib/upower
+        </seg>
 @z
 
 @x

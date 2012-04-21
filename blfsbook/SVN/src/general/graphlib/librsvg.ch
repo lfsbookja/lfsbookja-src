@@ -81,38 +81,46 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/> and
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/> and
+      <xref linkend="libcroco"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/>,
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="libcroco"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libcroco"/> and
-    <xref linkend="libgsf"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libcroco"/>,
-    <xref linkend="libgsf"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="docbook-utils"/>, and
-    <xref linkend="python2"/>, providing a legacy wrapper interface
-    <command>rsvg</command> for the newer
-    <command>rsvg-convert</command>.</para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="gtk2"/> and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="docbook-utils"/>, and
-    <xref linkend="python2"/>, providing a legacy wrapper interface
-    <command>rsvg</command> for the newer
-    <command>rsvg-convert</command>.</para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -161,19 +169,6 @@
 @z
 
 @x
-    <para><option>--disable-gtk-doc</option>: This parameter prevents
-    the rebuilding of documentation during the <command>make</command>
-    command. It will also prevent the existing documentation in the source
-    tree from being installed.</para>
-@y
-    <para>
-    <option>--disable-gtk-doc</option>:
-    このパラメーターは、<command>make</command> コマンドの実行時に、ドキュメントを再構築しないようにします。
-    同時に、ソースツリー内に既に用意されているドキュメントもインストールしないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -181,7 +176,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -190,27 +185,31 @@
 @z
 
 @x
-        <seg>rsvg, rsvg-convert, and rsvg-view</seg>
-        <seg>libsvg.{so,a}, svg_loader.{so,a}, and librsvg-2.{so,a}</seg>
-        <seg>/usr/{include/librsvg-2/librsvg,share/gtk-doc/html/rsvg}</seg>
+        <seg>
+          rsvg-convert and rsvg-view-3
+        </seg>
+        <seg>
+          libsvg.so
+        </seg>
+        <seg>
+          /usr/include/librsvg-2 and /usr/share/gtk-doc/html/rsvg
+        </seg>
 @y
-        <seg>rsvg, rsvg-convert, rsvg-view</seg>
-        <seg>libsvg.{so,a}, svg_loader.{so,a}, librsvg-2.{so,a}</seg>
-        <seg>/usr/{include/librsvg-2/librsvg,share/gtk-doc/html/rsvg}</seg>
+        <seg>
+          rsvg-convert, rsvg-view-3
+        </seg>
+        <seg>
+          libsvg.so
+        </seg>
+        <seg>
+          /usr/include/librsvg-2, /usr/share/gtk-doc/html/rsvg
+        </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x rsvg
-          <para>is a legacy wrapper interface to rsvg-convert.</para>
-@y
-          <para>
-          is a legacy wrapper interface to rsvg-convert.
-          </para>
 @z
 
 @x rsvg-convert
@@ -241,18 +240,3 @@
           </para>
 @z
 
-@x libsvg.{so,a}
-          <para>is a <application>GTK</application> engines module.</para>
-@y
-          <para>
-          <application>GTK</application> エンジンモジュール。
-          </para>
-@z
-
-@x svg_loader.{so,a}
-          <para>is a <application>GTK</application> loaders module.</para>
-@y
-          <para>
-          <application>GTK</application> ローダーモジュール。
-          </para>
-@z

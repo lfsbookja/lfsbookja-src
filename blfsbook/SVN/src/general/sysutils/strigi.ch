@@ -118,19 +118,19 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="clucene"/>, 
     <xref linkend="gamin"/> (or FAM), 
     <xref linkend="ffmpeg"/>, 
-    <xref linkend="exiv2"/> and 
+    <xref linkend="exiv2"/>,
+    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink> and
     <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="clucene"/>, 
     <xref linkend="gamin"/> (または FAM), 
     <xref linkend="ffmpeg"/>, 
     <xref linkend="exiv2"/>,
+    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>,
     <ulink url="http://logging.apache.org/log4cxx/">log4cxx</ulink>
     </para>
 @z
@@ -168,11 +168,11 @@
 @z
 
 @x
-  <para><option>patch -Np0 -i ../strigi-&strigi-version;-ffmpeg.patch</option>: This
+    <para><command>patch -Np1 -i ../strigi-&strigi-version;-ffmpeg.patch</command>: This
     patch fixes compiling with <application>ffmpeg</application>. It is safe to omit 
     if you don't have <application>ffmpeg</application>.</para>
 @y
-  <para><option>patch -Np0 -i ../strigi-&strigi-version;-ffmpeg.patch</option>: This
+    <para><command>patch -Np1 -i ../strigi-&strigi-version;-ffmpeg.patch</command>: This
     patch fixes compiling with <application>ffmpeg</application>. It is safe to omit 
     if you don't have <application>ffmpeg</application>.</para>
 @z

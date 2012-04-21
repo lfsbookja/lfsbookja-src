@@ -79,24 +79,44 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="libsoup"/></para>
+    <para role="required">
+      <xref linkend="GConf"/>,
+      <xref linkend="gtk3"/> and
+      <xref linkend="libsoup"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libsoup"/></para>
+    <para role="required">
+      <xref linkend="GConf"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libsoup"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -143,35 +163,11 @@
 @z
 
 @x
-    <para><option>--disable-glibtest</option>: Use this parameter if you do
-    <emphasis role="strong">NOT</emphasis> want to compile and run a test GLIB
-    program.</para>
+    <para><option>--enable-locations-compression</option>: 
+    Compress Locations.xml files.</para>
 @y
-    <para>
-    <option>--disable-glibtest</option>:
-    このパラメーターは、GLIB のテストプログラムのコンパイル、およびそのテスト実行を <emphasis
-    role="strong">行いたくない</emphasis> 場合に指定します。
-    </para>
-@z
-
-@x
-    <para><option>--enable-gtk-doc-html</option>: Use this parameter if you want
-    to build documentation in html format.</para>
-@y
-    <para>
-    <option>--enable-gtk-doc-html</option>:
-    html フォーマットのドキュメントをビルドしたい場合に指定します。
-    </para>
-@z
-
-@x
-    <para><option>--enable-gtk-doc-pdf</option>: Use this parameter if you want
-    to build documentation in pdf format.</para>
-@y
-    <para>
-    <option>--enable-gtk-doc-pdf</option>:
-    pdf フォーマットのドキュメントをビルドしたい場合に指定します。
-    </para>
+    <para><option>--enable-locations-compression</option>: 
+    Compress Locations.xml files.</para>
 @z
 
 @x
@@ -181,39 +177,31 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgweather-3.so</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/gconf/schemas,
-        <envar>$GNOME_PREFIX</envar>/{include/libgweather-3.0/libgweather,
-        share/{gtk-doc/html/libgweather-3.0,icons/gnome/{16x16/status,
-        22x22/status,24x24/status,32x32/status,scalable/status},libgweather,
-        locale/{es_AR/LC_MESSAGES,es_CL/LC_MESSAGES,es_CO/LC_MESSAGES,
-        es_CR/LC_MESSAGES,es_DO/LC_MESSAGES,es_EC/LC_MESSAGES,es_ES/LC_MESSAGES,
-        es_GT/LC_MESSAGES,es_HN/LC_MESSAGES,es_MX/LC_MESSAGES,es_NI/LC_MESSAGES,
-        es_PA/LC_MESSAGES,es_PE/LC_MESSAGES,es_PR/LC_MESSAGES,es_SV/LC_MESSAGES,
-        es_UY/LC_MESSAGES,es_VE/LC_MESSAGES}}}</seg>
+        <seg>
+          libgweather-3.so
+        </seg>
+        <seg>
+          /usr/include/libgweather-3.0,
+          /usr/share/gtk-doc/html/libgweather-3.0 and
+          /usr/share/libgweather
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libgweather-3.so</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/gconf/schemas,
-        <envar>$GNOME_PREFIX</envar>/{include/libgweather-3.0/libgweather,
-        share/{gtk-doc/html/libgweather-3.0,icons/gnome/{16x16/status,
-        22x22/status,24x24/status,32x32/status,scalable/status},libgweather,
-        locale/{es_AR/LC_MESSAGES,es_CL/LC_MESSAGES,es_CO/LC_MESSAGES,
-        es_CR/LC_MESSAGES,es_DO/LC_MESSAGES,es_EC/LC_MESSAGES,es_ES/LC_MESSAGES,
-        es_GT/LC_MESSAGES,es_HN/LC_MESSAGES,es_MX/LC_MESSAGES,es_NI/LC_MESSAGES,
-        es_PA/LC_MESSAGES,es_PE/LC_MESSAGES,es_PR/LC_MESSAGES,es_SV/LC_MESSAGES,
-        es_UY/LC_MESSAGES,es_VE/LC_MESSAGES}}}</seg>
+        <seg>
+          libgweather-3.so
+        </seg>
+        <seg>
+          /usr/include/libgweather-3.0,
+          /usr/share/gtk-doc/html/libgweather-3.0 and
+          /usr/share/libgweather
+        </seg>
 @z
 
 @x

@@ -79,22 +79,50 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gmime"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="gmime"/>,
+      <xref linkend="intltool"/> and
+      <xref linkend="libsoup"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gmime"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="gmime"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libsoup"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libarchive"/>,
+      <xref linkend="libgcrypt"/> and
+      <ulink url="http://sourceforge.net/projects/quvi">quvi</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libarchive"/>,
+      <xref linkend="libgcrypt"/>,
+      <ulink url="http://sourceforge.net/projects/quvi">quvi</ulink>
+    </para>
 @z
 
 @x
@@ -150,25 +178,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libtotem-plparser-mini.{so,a} and libtotem-plparser.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/totem-pl-parser/1/plparser,
-        share/gtk-doc/html/totem-pl-parser}</seg>
+        <seg>
+          libtotem-plparser-mini.so and libtotem-plparser.so
+        </seg>
+        <seg>
+          /usr/include/totem-pl-parser and
+          /usr/share/gtk-doc/html/totem-pl-parser
+        </seg>
 @y
-        <seg>なし</seg>
-        <seg>libtotem-plparser-mini.{so,a}, libtotem-plparser.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/totem-pl-parser/1/plparser,
-        share/gtk-doc/html/totem-pl-parser}</seg>
+        <seg>
+          libtotem-plparser-mini.so, libtotem-plparser.so
+        </seg>
+        <seg>
+          /usr/include/totem-pl-parser,
+          /usr/share/gtk-doc/html/totem-pl-parser
+        </seg>
 @z
 
 @x

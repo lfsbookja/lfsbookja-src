@@ -76,33 +76,33 @@
 @x
     <bridgehead renderas="sect3">ATK Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">ATK の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;ATK&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>
-    (Required if building GNOME)</para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>
-    (GNOME をビルドする場合に必要)</para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/> (required if building Gnome) and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/> (Gnome のビルド時に必要),
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -157,23 +157,27 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libatk-1.0.so</seg>
-        <seg>/usr/include/atk-1.0 and /usr/share/gtk-doc/html/atk</seg>
+        <seg>
+          libatk-1.0.so
+        </seg>
+        <seg>
+          /usr/include/atk-1.0 and /usr/share/gtk-doc/html/atk
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libatk-1.0.so</seg>
-        <seg>/usr/include/atk-1.0, /usr/share/gtk-doc/html/atk</seg>
+        <seg>
+          libatk-1.0.so
+        </seg>
+        <seg>
+          /usr/include/atk-1.0, /usr/share/gtk-doc/html/atk
+        </seg>
 @z
 
 @x

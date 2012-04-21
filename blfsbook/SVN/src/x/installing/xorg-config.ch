@@ -116,14 +116,12 @@
     <filename class='directory'>/usr/X11R6</filename> requirement so that you
     won't be inconvenienced with a package build failure due to this known
     issue. If you wish to create the symlink, issue the following command as
-    the <systemitem class="username">root</systemitem> user (ensure you modify
-    <replaceable>&lt;$XORG_PREFIX&gt;</replaceable> appropriately):</para>
+    the <systemitem class="username">root</systemitem>:</para>
 @y
     <para>
     <filename class='directory'>/usr/X11R6</filename> に対する問題が解決するまでは、シンボリックリンクを生成して回避するものとします。
     こうすればパッケージのビルドが失敗するという状況がなくなります。
     シンボリックリンクを生成するには <systemitem class="username">root</systemitem> ユーザーになって、以下のコマンドを実行します。
-    (<replaceable>&lt;$XORG_PREFIX&gt;</replaceable> を適切に設定していることを確認してください。)
     </para>
 @z
 

@@ -14,11 +14,15 @@
 @z
 
 @x
-  <!ENTITY db-buildsize     "181 MB (additional 100 MB to run parallel standard test suite)">
-  <!ENTITY db-time          "1.4 SBU (builds all bindings, add an additional 145 SBU to run parallel standard test suite)">
+  <!ENTITY db-buildsize     "264 MB (additional 100 MB to run parallel standard
+    test suite)">
+  <!ENTITY db-time          "0.8 SBU (add an additional 145 SBU to run parallel
+    standard test suite)">
 @y
-  <!ENTITY db-buildsize     "181 MB (additional 100 MB to run parallel standard test suite)">
-  <!ENTITY db-time          "1.4 SBU (builds all bindings, add an additional 145 SBU to run parallel standard test suite)">
+  <!ENTITY db-buildsize     "264 MB (additional 100 MB to run parallel standard
+    test suite)">
+  <!ENTITY db-time          "0.8 SBU (add an additional 145 SBU to run parallel
+    standard test suite)">
 @z
 
 @x
@@ -28,13 +32,10 @@
 @z
 
 @x
-    <para>The <application>Berkeley DB</application> package contains programs
-    and utilities used by many other applications for database related
-    functions.</para>
+      The <application>Berkeley DB</application> package contains programs and
+      utilities used by many other applications for database related functions.
 @y
-    <para>
-    <application>Berkeley DB</application> パッケージは、データベース関連機能を実装する数々のアプリケーションに対し、プログラムやユーティリティツールを提供します。
-    </para>
+      <application>Berkeley DB</application> パッケージは、データベース関連機能を実装する数々のアプリケーションに対し、プログラムやユーティリティツールを提供します。
 @z
 
 @x
@@ -44,39 +45,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&db-download-http;"/></para>
+          Download (HTTP): <ulink url="&db-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&db-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&db-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&db-download-ftp;"/></para>
+          Download (FTP): <ulink url="&db-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&db-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&db-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &db-md5sum;</para>
+          Download MD5 sum: &db-md5sum;
 @y
-        <para>&Download; MD5 sum: &db-md5sum;</para>
+          &Download; MD5 sum: &db-md5sum;
 @z
 
 @x
-        <para>Download size: &db-size;</para>
+          Download size: &db-size;
 @y
-        <para>&DownloadSize;: &db-size;</para>
+          &DownloadSize;: &db-size;
 @z
 
 @x
-        <para>Estimated disk space required: &db-buildsize;</para>
+          Estimated disk space required: &db-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &db-buildsize;</para>
+          &Estimateddiskspacerequired;: &db-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &db-time;</para>
+          Estimated build time: &db-time;
 @y
-        <para>&Estimatedbuildtime;: &db-time;</para>
+          &Estimatedbuildtime;: &db-time;
 @z
 
 @x
@@ -90,23 +91,21 @@
     <para role="optional">
       <xref linkend="tcl"/>,
       <xref linkend="icedtea6"/> or <xref linkend="jdk"/>, and
-      <xref linkend='sharutils'/> (for the <command>uudecode</command> command)
+      <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
       <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
-      <xref linkend='sharutils'/> (<command>uudecode</command> コマンドのため)
+      <xref linkend="sharutils"/> (<command>uudecode</command> コマンドのため)
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/db"/></para>
+      User Notes: <ulink url="&blfs-wiki;/db"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/db"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/db"/>
 @z
 
 @x
@@ -116,75 +115,62 @@
 @z
 
 @x
-    <para>You may want to skip ahead to <xref linkend="bdb-installation"/>. The
-    test suite can take up to 150 SBUs and has a few bugs causing a report of
-    <quote>Regression tests failed</quote>. However, running the test suite is
-    a very exhaustive test of your hardware, perhaps pushing your machine
-    harder (especially disk I/O) than it will ever see during production use.
-    Note that you must have <application>Tcl</application> installed to run the
-    test suite.</para>
+      If you can't wait 12 hours or so you may want to skip ahead to
+      <xref linkend="bdb-installation"/>. The test suite can take a long time
+      and has a few bugs causing a report of <quote>Regression tests
+      failed</quote>. However, running the test suite is a very exhaustive test
+      of your hardware, perhaps pushing your machine harder (especially disk
+      I/O) than it will ever see during production use. Note that you must have
+      <application>Tcl</application> installed to run the test suite.
 @y
-    <para>
-    <xref linkend="bdb-installation"/> の説明箇所まで読み飛ばしても構いません。
-    テストスイートの実行は 150 SBU にも及びますし、<quote>縮退テストの不備 (Regression tests failed)</quote> として報告されているバグもいくつかあります。
-    テストスイートはハードウェアへの高負荷なテストとなり、特にディスクI/Oに関してかなりの負荷をマシンに課します。
-    それは通常利用時には発生しないほどです。
-    テストスイート実行のためには <application>Tcl</application> をインストールしておく必要があります。
-    </para>
+      ここから 12 時間近くも待てないという方は <xref linkend="bdb-installation"/> の説明箇所まで読み飛ばしても構いません。
+      テストスイートの実行には相当の時間を要し、<quote>縮退テストの不備 (Regression tests failed)</quote> として報告されているバグもいくつかあります。
+      テストスイートはハードウェアへの高負荷なテストとなり、特にディスクI/Oに関してかなりの負荷をマシンに課します。
+      それは通常利用時には発生しないほどです。
+      テストスイート実行のためには <application>Tcl</application> をインストールしておく必要があります。
 @z
 
 @x
-    <para>Build for the <application>Berkeley DB</application> test by running
-    the following commands:</para>
+      Build for the <application>Berkeley DB</application> test by running the
+      following commands:
 @y
-    <para>
-    <application>Berkeley DB</application> のテスト実施のためのビルドを行うには、以下のコマンドを実行します。
-    </para>
+      <application>Berkeley DB</application> のテスト実施のためのビルドを行うには、以下のコマンドを実行します。
 @z
 
 @x
-    <para>To test the results, start <command>tclsh</command>:</para>
+      To test the results, start <command>tclsh</command>:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>tclsh</command> コマンドを実行します。
-    </para>
+      ビルド結果をテストする場合は <command>tclsh</command> コマンドを実行します。
 @z
 
 @x
-    <para>From the <command>tclsh</command> prompt (<prompt>%&nbsp;</prompt>),
-    run:</para>
+      From the <command>tclsh</command> prompt (<prompt>%&nbsp;</prompt>), run:
 @y
-    <para>
-    <command>tclsh</command> のプロンプト (<prompt>%&nbsp;</prompt>) にて以下を実行します。
-    </para>
+      <command>tclsh</command> のプロンプト (<prompt>%&nbsp;</prompt>) にて以下を実行します。
 @z
 
 @x
-    <para>Clean up the source tree with the following command:</para>
+      Clean up the source tree with the following command:
 @y
-    <para>
-    以下のコマンドを実行して、ソースツリーをきれいにします。
-    </para>
+      以下のコマンドを実行して、ソースツリーをきれいにします。
 @z
 
 @x
-    <note><para>Test127.f and Repmgr026.c are known to fail.</para></note>
+      Test127.f and Repmgr026.c are known to fail.
 @y
-    <note><para>Test127.f と Repmgr026.c は失敗することが分かっています。</para></note>
+      Test127.f と Repmgr026.c は失敗することが分かっています。
 @z
 
 @x
-    <para>There are additional testing suites in the <filename
-    class='directory'>test/c</filename> and <filename
-    class='directory'>test/cxx</filename> directories.  See the
-    <filename>README</filename> in each directory for instructions on how to
-    run the tests.</para>
+      There are additional testing suites in the
+      <filename class="directory">test/c</filename> and
+      <filename class="directory">test/cxx</filename> directories.  See the
+      <filename>README</filename> in each directory for instructions on how to
+      run the tests.
 @y
-    <para>
-    <filename class='directory'>test/c</filename> ディレクトリと <filename
-    class='directory'>test/cxx</filename> ディレクトリには、追加のテストスイートがあります。
-    実行方法については、各ディレクトリ内の <filename>README</filename> ファイルを参照してください。
-    </para>
+      <filename class='directory'>test/c</filename> ディレクトリと <filename
+      class='directory'>test/cxx</filename> ディレクトリには、追加のテストスイートがあります。
+      実行方法については、各ディレクトリ内の <filename>README</filename> ファイルを参照してください。
 @z
 
 @x
@@ -196,30 +182,29 @@
 @z
 
 @x
-      <para>If you plan on installing <application>Berkeley DB</application>
-      with Java support, you should check the system for certain versions
-      of <xref linkend="jdk"/> and <xref linkend="gmime"/>. Specifically, if
-      <application>JDK</application>-6 Update X and the
-      <command>uudecode</command> program from the
-      <application>GMime</application> program is on the system, the build will
-      fail (unless you run the modified <command>./configure</command> command
-      shown below). You can run two commands (<command>javac -version</command>
-      and <command>uudecode --version</command>) to determine what versions are
-      installed. You can also download and run a shell script from
-      <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> that will alert
-      you to a non-working condition. If the identified programs exist on the
-      system, you must modify the
-      <command>./configure</command> command as shown below.</para>
+        If you plan on installing <application>Berkeley DB</application> with
+        Java support, you should check the system for certain versions of
+        <xref linkend="jdk"/> and <xref linkend="gmime"/>. Specifically, if
+        <application>JDK</application>-6 Update X and the
+        <command>uudecode</command> program from the
+        <application>GMime</application> program is on the system, the build
+        will fail (unless you run the modified <command>./configure</command>
+        command shown below). You can run two commands
+        (<command>javac -version</command> and
+        <command>uudecode --version</command>) to determine what versions are
+        installed. You can also download and run a shell script from
+        <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> that will alert you
+        to a non-working condition. If the identified programs exist on the
+        system, you must modify the <command>./configure</command> command as
+        shown below.
 @y
-      <para>
-      <application>Berkeley DB</application> のインストールにあたって Java サポートを有効にする場合は、<xref
-      linkend="jdk"/> と <xref linkend="gmime"/> の適正なバージョンがシステムにインストールされている必要があります。
-      <application>JDK</application>-6 Update X と <application>GMime</application> パッケージによる <command>uudecode</command> プログラムがインストールされている場合にはビルドに失敗します。
-      (以下に示す修正版の <command>./configure</command> コマンド実行を行えば解消します。)
-      二つのコマンド、<command>javac -version</command> と <command>uudecode --version</command> を実行して、どのバージョンがインストールされているかを確認してください。
-      <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> にてシェルスクリプトをダウンロードすることができ、これを用いて不適切であるかどうかを確認することもできます。
-      不適切なバージョンがシステムにインストールされていたら、<command>./configure</command> コマンドの実行を、以下のように修正してください。
-      </para>
+        <application>Berkeley DB</application> のインストールにあたって Java サポートを有効にする場合は、<xref
+        linkend="jdk"/> と <xref linkend="gmime"/> の適正なバージョンがシステムにインストールされている必要があります。
+        <application>JDK</application>-6 Update X と <application>GMime</application> パッケージによる <command>uudecode</command> プログラムがインストールされている場合にはビルドに失敗します。
+        (以下に示す修正版の <command>./configure</command> コマンド実行を行えば解消します。)
+        二つのコマンド、<command>javac -version</command> と <command>uudecode --version</command> を実行して、どのバージョンがインストールされているかを確認してください。
+        <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> にてシェルスクリプトをダウンロードすることができ、これを用いて不適切であるかどうかを確認することもできます。
+        不適切なバージョンがシステムにインストールされていたら、<command>./configure</command> コマンドの実行を、以下のように修正してください。
 @z
 @x
 <screen><userinput>uudecode="no" ../dist/configure --(use the parameters shown below)</userinput></screen>
@@ -228,20 +213,16 @@
 @z
 
 @x
-    <para>Install <application>Berkeley DB</application> by running the
-    following commands:</para>
+      Install <application>Berkeley DB</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Berkeley DB</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Berkeley DB</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
@@ -251,95 +232,79 @@
 @z
 
 @x
-    <para><command>cd build_unix &amp;&amp;
-    ../dist/configure --prefix=/usr...</command>:
-    This replaces the normal <command>./configure</command> command, as
-    <application>Berkeley DB</application> comes with various
-    build directories for different platforms.</para>
+      <command>cd build_unix &amp;&amp; ../dist/configure
+      --prefix=/usr...</command>: This replaces the normal
+      <command>./configure</command> command, as
+      <application>Berkeley DB</application> comes with various build
+      directories for different platforms.
 @y
-    <para>
-    <command>cd build_unix &amp;&amp;
-    ../dist/configure --prefix=/usr...</command>:
-    このコマンドにより、通常の <command>./configure</command> ではないものを利用します。
-    <application>Berkeley DB</application> では、さまざまなプラットフォーム用にビルドディレクトリが異なります。
-    </para>
+      <command>cd build_unix &amp;&amp;
+      ../dist/configure --prefix=/usr...</command>:
+      このコマンドにより、通常の <command>./configure</command> ではないものを利用します。
+      <application>Berkeley DB</application> では、さまざまなプラットフォーム用にビルドディレクトリが異なります。
 @z
 
 @x
-    <para><parameter>--enable-compat185</parameter>: This switch enables
-    building the DB-1.85 compatibility API.</para>
+      <parameter>--enable-compat185</parameter>: This switch enables building
+      the DB-1.85 compatibility API.
 @y
-    <para>
-    <parameter>--enable-compat185</parameter>:
-    このパラメーターは、DB-1.85 互換 API をビルドすることを指定します。
-    </para>
+      <parameter>--enable-compat185</parameter>:
+      このパラメーターは、DB-1.85 互換 API をビルドすることを指定します。
 @z
 
 @x
-    <para><parameter>--enable-cxx</parameter>: This switch enables building
-    C++ API libraries.</para>
+      <parameter>--enable-cxx</parameter>: This switch enables building C++ API
+      libraries.
 @y
-    <para>
-    <parameter>--enable-cxx</parameter>:
-    このパラメーターは C++ API ライブラリをビルドすることを指定します。
-    </para>
+      <parameter>--enable-cxx</parameter>:
+      このパラメーターは C++ API ライブラリをビルドすることを指定します。
 @z
 
 @x
-    <para><parameter>--enable-tcl --with-tcl=/usr/lib</parameter>:
-    Enables <application>Tcl</application> support in DB and creates the
-    <filename class="libraryfile">libdb_tcl</filename> libraries.</para>
+      <parameter>--enable-tcl --with-tcl=/usr/lib</parameter>: Enables
+      <application>Tcl</application> support in DB and creates the
+      <filename class="libraryfile">libdb_tcl</filename> libraries.
 @y
-    <para>
-    <parameter>--enable-tcl --with-tcl=/usr/lib</parameter>:
-    DB において <application>Tcl</application> サポートを有効にします。
-    また <filename class="libraryfile">libdb_tcl</filename> ライブラリを生成します。
-    </para>
+      <parameter>--enable-tcl --with-tcl=/usr/lib</parameter>:
+      DB において <application>Tcl</application> サポートを有効にします。
+      また <filename class="libraryfile">libdb_tcl</filename> ライブラリを生成します。
 @z
 
 @x
-    <para><parameter>--enable-dbm</parameter>: Enables legacy interface support
-    support needed by some older packages.</para>
+      <parameter>--enable-dbm</parameter>: Enables legacy interface support
+      needed by some older packages.
 @y
-    <para><parameter>--enable-dbm</parameter>: 
-    古いパッケージが必要としている、かつてのインターフェースサポートを有効にします。
-    </para>
+      <parameter>--enable-dbm</parameter>: 
+      古いパッケージが必要としている、かつてのインターフェースサポートを有効にします。
 @z
 
 @x
-    <para><parameter>--enable-java</parameter>: Enables
-    <application>Java</application> support in DB and creates the
-    <filename class='libraryfile'>libdb_java</filename> libraries.</para>
+      <parameter>--enable-java</parameter>: Enables
+      <application>Java</application> support in DB and creates the
+      <filename class="libraryfile">libdb_java</filename> libraries.
 @y
-    <para>
-    <parameter>--enable-java</parameter>:
-    <application>Java</application> サポートを有効にします。
-    また <filename class='libraryfile'>libdb_java</filename> ライブラリを生成します。
-    </para>
+      <parameter>--enable-java</parameter>:
+      <application>Java</application> サポートを有効にします。
+      また <filename class='libraryfile'>libdb_java</filename> ライブラリを生成します。
 @z
 
 @x
-    <para><command>make docdir=/usr/share/doc/db-&db-version;
-    install</command>: This installs the documentation in
-    the standard location instead of
-    <filename class='directory'>/usr/docs</filename>.</para>
+      <command>make docdir=/usr/share/doc/db-&db-version; install</command>:
+      This installs the documentation in the standard location instead of
+      <filename class="directory">/usr/docs</filename>.
 @y
-    <para>
-    <command>make docdir=/usr/share/doc/db-&db-version;
-    install</command>:
-    ドキュメントのインストール先として <filename class='directory'>/usr/docs</filename> ではなく、標準的なディレクトリへとインストールします。
-    </para>
+      <command>make docdir=/usr/share/doc/db-&db-version; install</command>:
+      ドキュメントのインストール先として <filename
+      class='directory'>/usr/docs</filename> ではなく、標準的なディレクトリへとインストールします。
 @z
 
 @x
-    <para><command>chown -v -R root:root ...</command>:This command changes
-    the ownership of various installed files from the uid:gid of the
-    builder to root:root.</para>
+      <command>chown -v -R root:root ...</command>:This command changes the
+      ownership of various installed files from the uid:gid of the builder to
+      root:root.
 @y
-    <para>
-    <command>chown -v -R root:root ...</command>:
-    インストールされるさまざまなファイルに対して、ビルド時のオーナー uid:gid を root:root に変更します。
-    </para>
+      <command>chown -v -R root:root ...</command>:
+      インストールされるさまざまなファイルに対して、ビルド時のオーナー uid:gid を root:root に変更します。
 @z
 
 @x
@@ -359,16 +324,24 @@
 @z
 
 @x
-        <seg>db_archive, db_checkpoint, db_deadlock, db_dump,
-        db_load, db_printlog, db_recover, db_stat, db_upgrade, db_verify</seg>
-        <seg>libdb.{so,a}, libdb_cxx.{so,a}, libdb_java.{so,a},
-        libdb_tcl.{so,a} and db.jar</seg>
+        <seg>
+          db_archive, db_checkpoint, db_deadlock, db_dump, db_hotbackup,
+          db_load, db_log_verify, db_printlog, db_recover, db_replicate,
+          db_stat, db_tuner, db_upgrade and db_verify.
+        </seg>
+        <seg>
+          libdb.so, libdb_cxx.so, libdb_java.so, libdb_tcl.so and db.jar.
+        </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>
 @y
-        <seg>db_archive, db_checkpoint, db_deadlock, db_dump,
-        db_load, db_printlog, db_recover, db_stat, db_upgrade, db_verify</seg>
-        <seg>libdb.{so,a}, libdb_cxx.{so,a}, libdb_java.{so,a},
-        libdb_tcl.{so,a}, db.jar</seg>
+        <seg>
+          db_archive, db_checkpoint, db_deadlock, db_dump, db_hotbackup,
+          db_load, db_log_verify, db_printlog, db_recover, db_replicate,
+          db_stat, db_tuner, db_upgrade, db_verify
+        </seg>
+        <seg>
+          libdb.so, libdb_cxx.so, libdb_java.so, libdb_tcl.so, db.jar.
+        </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>
 @z
 
@@ -379,48 +352,49 @@
 @z
 
 @x db_archive
-          <para>prints the pathnames of log files that are no longer in
-          use.</para>
+            prints the pathnames of log files that are no longer in use.
 @y
-          <para>
-          利用されなくなったログファイルのパス名を表示します。
-          </para>
+            利用されなくなったログファイルのパス名を表示します。
 @z
 
 @x db_checkpoint
-          <para>is a daemon process used to monitor and checkpoint database
-          logs.</para>
+            is a daemon process used to monitor and checkpoint database logs.
 @y
-          <para>
-          データベースログのチェックポイントを監視するためのデーモンプロセスです。
-          </para>
+            データベースログのチェックポイントを監視するためのデーモンプロセスです。
 @z
 
 @x db_deadlock
-          <para>is used to abort lock requests when deadlocks are
-          detected.</para>
+            is used to abort lock requests when deadlocks are detected.
 @y
-          <para>
-          デッドロックが検出された際に、ロックを解除するために利用します。
-          </para>
+            デッドロックが検出された際に、ロックを解除するために利用します。
 @z
 
 @x db_dump
-          <para>converts database files to a flat file format readable by
-          <command>db_load</command>.</para>
+            converts database files to a flat file format readable by
+            <command>db_load</command>.
 @y
-          <para>
-          データベースファイルを <command>db_load</command> によって読み取り可能なフラットファイルの形式に変換します。
-          </para>
+            データベースファイルを <command>db_load</command> によって読み取り可能なフラットファイルの形式に変換します。
+@z
+
+@x
+            creates "hot backup" or "hot failover" snapshots of Berkeley DB
+            databases.
+@y
+            creates "hot backup" or "hot failover" snapshots of Berkeley DB
+            databases.
 @z
 
 @x db_load
-          <para>is used to create database files from flat files created with
-          <command>db_dump</command>.</para>
+            is used to create database files from flat files created with
+            <command>db_dump</command>.
 @y
-          <para>
-          <command>db_dump</command> コマンドにより生成されたフラットファイルに基づいて、データベースを生成します。
-          </para>
+            <command>db_dump</command> コマンドにより生成されたフラットファイルに基づいて、データベースを生成します。
+@z
+
+@x
+          <para>verifies the log files of a database.</para>
+@y
+          <para>verifies the log files of a database.</para>
 @z
 
 @x db_printlog
@@ -432,12 +406,17 @@
 @z
 
 @x db_recover
-          <para>is used to restore a database to a consistent state after a
-          failure.</para>
+            is used to restore a database to a consistent state after a failure.
 @y
-          <para>
-          データベース障害の後に、安定した状態に復元するために利用します。
-          </para>
+            データベース障害の後に、安定した状態に復元するために利用します。
+@z
+
+@x db_replicate
+            is a daemon process that provides replication/HA services on a
+            transactional environment.
+@y
+            is a daemon process that provides replication/HA services on a
+            transactional environment.
 @z
 
 @x db_stat
@@ -448,13 +427,19 @@
           </para>
 @z
 
-@x db_upgrade
-          <para>is used to upgrade database files to a newer version of
-          <application>Berkeley DB</application>.</para>
+@x db_tuner
+            analyzes the data in a btree database, and suggests a page size that
+            is likely to deliver optimal operation.
 @y
-          <para>
+            analyzes the data in a btree database, and suggests a page size that
+            is likely to deliver optimal operation.
+@z
+
+@x db_upgrade
+            is used to upgrade database files to a newer version of
+            <application>Berkeley DB</application>.
+@y
           データベースファイルを新たなバージョンのものにアップグレードします。
-          </para>
 @z
 
 @x db_verify

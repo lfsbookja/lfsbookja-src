@@ -1,3 +1,10 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 SUBDIRS=config editors filesystems security shells virtualization
 BOOKdir = $(top_builddir)/@bookdir@/postlfs
 EXTRA_DIST = postlfs.ch

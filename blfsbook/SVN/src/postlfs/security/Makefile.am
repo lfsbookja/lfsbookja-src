@@ -1,38 +1,46 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/security
 CHANGE_FILES = \
 	accountsservice.ch \
-	acl.ch \
-	attr.ch \
-	cacerts.ch \
-	consolekit.ch \
-	cracklib.ch \
-	cyrus-sasl.ch \
-	firewalling.ch \
-	gnupg.ch \
-	gnupg2.ch \
-	gnutls.ch \
-	gpgme.ch \
-	heimdal.ch \
-	iptables.ch \
-	libcap2.ch \
-	liboauth.ch \
-	linux-pam.ch \
-	mitkrb.ch \
-	nessus.ch \
-	nettle.ch \
-	nss.ch \
-	openssh.ch \
-	openssl.ch \
-	p11-kit.ch \
-	polkit.ch \
-	polkit-gnome.ch \
-	security.ch \
-	shadow.ch \
-	stunnel.ch \
-	sudo.ch \
-	syslog.ch \
-	tcpwrappers.ch \
+	acl.ch             \
+	attr.ch            \
+	cacerts.ch         \
+	consolekit.ch      \
+	cracklib.ch        \
+	cyrus-sasl.ch      \
+	firewalling.ch     \
+	gnupg.ch           \
+	gnupg2.ch          \
+	gnutls.ch          \
+	gpgme.ch           \
+	heimdal.ch         \
+	iptables.ch        \
+	libcap2.ch         \
+	liboauth.ch        \
+	linux-pam.ch       \
+	mitkrb.ch          \
+	nessus.ch          \
+	nettle.ch          \
+	nss.ch             \
+	openssh.ch         \
+	openssl.ch         \
+	p11-kit.ch         \
+	polkit.ch          \
+	polkit-gnome.ch    \
+	security.ch        \
+	shadow.ch          \
+	stunnel.ch         \
+	sudo.ch            \
+	syslog.ch          \
+	tcpwrappers.ch     \
 	tripwire.ch
+
 EXTRA_DIST = $(CHANGE_FILES) firewalling.sed
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

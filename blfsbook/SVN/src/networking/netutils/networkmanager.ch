@@ -76,7 +76,7 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Download</bridgehead>
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z

@@ -78,28 +78,34 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="gnome-icon-theme"/>,
-    <xref linkend="gsettings-desktop-schemas"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="iso-codes"/></para>
+    <para role="required">
+      <xref linkend="enchant"/>,
+      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gtk3"/> and
+      <xref linkend="iso-codes"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="enchant"/>,
-    <xref linkend="gnome-icon-theme"/>,
-    <xref linkend="gsettings-desktop-schemas"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="iso-codes"/></para>
+    <para role="required">
+      <xref linkend="enchant"/>,
+      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="iso-codes"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libsoup"/>,
-    <xref linkend="xorg7"/></para>
+    <para role="optional">
+      <xref linkend="libsoup"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="libsoup"/>,
-    <xref linkend="xorg7"/></para>
+    <para role="optional">
+      <xref linkend="libsoup"/>
+    </para>
 @z
 
 @x
@@ -152,7 +158,7 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
@@ -162,15 +168,25 @@
 @z
 
 @x
-        <seg>gtkhtml-editor-test</seg>
-        <seg>libgtkhtml-4.0.so and libgtkhtml-editor-4.0.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-4.0/{editor,
-        gtkhtml},share/gtkhtml-4.0/icons}</seg>
+        <seg>
+          gtkhtml-editor-test
+        </seg>
+        <seg>
+          libgtkhtml-4.0.so and libgtkhtml-editor-4.0.so
+        </seg>
+        <seg>
+          /usr/include/libgtkhtml-4.0 and /usr/share/gtkhtml-4.0
+        </seg>
 @y
-        <seg>gtkhtml-editor-test</seg>
-        <seg>libgtkhtml-4.0.so, libgtkhtml-editor-4.0.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgtkhtml-4.0/{editor,
-        gtkhtml},share/gtkhtml-4.0/icons}</seg>
+        <seg>
+          gtkhtml-editor-test
+        </seg>
+        <seg>
+          libgtkhtml-4.0.so, libgtkhtml-editor-4.0.so
+        </seg>
+        <seg>
+          /usr/include/libgtkhtml-4.0, /usr/share/gtkhtml-4.0
+        </seg>
 @z
 
 @x

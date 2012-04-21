@@ -14,18 +14,18 @@
 @z
 
 @x
-    <title>Introduction to brasero</title>
+    <title>Introduction to Brasero</title>
 @y
-    <title>&IntroductionTo1;brasero&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Brasero&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>brasero</application> package is an application to
+    <para>The <application>Brasero</application> package is an application to
     burn CD/DVD for the Gnome Desktop. It is designed to be as simple as
     possible and has some unique features to enable users to create their discs
     easily and quickly.</para>
 @y
-    <para>The <application>brasero</application> package is an application to
+    <para>The <application>Brasero</application> package is an application to
     burn CD/DVD for the Gnome Desktop. It is designed to be as simple as
     possible and has some unique features to enable users to create their discs
     easily and quickly.</para>
@@ -74,9 +74,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">brasero Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Brasero Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;brasero&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Brasero&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -142,17 +142,17 @@
 @z
 
 @x
-    <title>Installation of brasero</title>
+    <title>Installation of Brasero</title>
 @y
-    <title>&InstallationOf1;brasero&InstallationOf2;</title>
+    <title>&InstallationOf1;Brasero&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>brasero</application> by running the following
+    <para>Install <application>Brasero</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>brasero</application> をビルドします。
+    以下のコマンドを実行して <application>Brasero</application> をビルドします。
     </para>
 @z
 

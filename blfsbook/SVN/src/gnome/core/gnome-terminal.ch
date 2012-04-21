@@ -21,11 +21,10 @@
 
 @x
     <para>The <application>GNOME Terminal</application> package contains the
-    console. This is useful for executing programs from a command prompt.</para>
+    terminal emulator for GNOME Desktop.</para>
 @y
     <para>
-    <application>GNOME Terminal</application> パッケージは端末コンソールを提供します。
-    これは、コマンドプロンプトからのプログラム実行に利用します。
+    <application>GNOME Terminal</application> パッケージは GNOME デスクトップにおける端末エミュレーターを提供します。
     </para>
 @z
 
@@ -79,22 +78,32 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gnome-doc-utils"/>, and
-    <xref linkend="vte"/></para>
+    <para role="required">
+      <xref linkend="GConf"/>,
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gsettings-desktop-schemas"/> and
+      <xref linkend="vte"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="vte"/></para>
+    <para role="required">
+      <xref linkend="GConf"/>,
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="vte"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="rarian"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x
@@ -148,24 +157,30 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>gnome-terminal</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-terminal,
-        gnome/help/gnome-terminal/*,omf/gnome-terminal}</seg>
+        <seg>
+          gnome-terminal
+        </seg>
+        <seg>
+          /usr/share/gnome/help/gnome-terminal,
+          /usr/share/gnome-terminal and
+          /usr/share/omf/gnome-terminal
+        </seg>
 @y
-        <seg>gnome-terminal</seg>
-        <seg>&None;</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-terminal,
-        gnome/help/gnome-terminal/*,omf/gnome-terminal}</seg>
+        <seg>
+          gnome-terminal
+        </seg>
+        <seg>
+          /usr/share/gnome/help/gnome-terminal,
+          /usr/share/gnome-terminal,
+          /usr/share/omf/gnome-terminal
+        </seg>
 @z
 
 @x
@@ -175,10 +190,9 @@
 @z
 
 @x gnome-terminal
-          <para>provides the command prompt in the
-          <application>GNOME</application> environment.</para>
+          <para>is the GNOME Terminal Emulator.</para>
 @y
           <para>
-          <application>GNOME</application> 環境内でのコマンドプロンプトを提供します。
+          <application>GNOME</application> 端末エミュレーター。
           </para>
 @z

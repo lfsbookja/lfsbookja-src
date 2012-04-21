@@ -80,28 +80,50 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="DocBook"/>,
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gsettings-desktop-schemas"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="which"/>, and
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="DocBook"/>,
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gtk3"/> and
+      <xref linkend="which"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="DocBook"/>,
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gsettings-desktop-schemas"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="which"/>,
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="DocBook"/>,
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="which"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="startup-notification"/></para>
+    <para role="recommended">
+      <xref linkend="startup-notification"/> and
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="startup-notification"/></para>
+    <para role="recommended">
+      <xref linkend="startup-notification"/>,
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -160,51 +182,39 @@
 @z
 
 @x
-    <para><option>--with-kde-datadir=$KDE_PREFIX/share</option>: Use this
-    parameter if <application>KDE</application> is installed in any prefix
-    other than <filename class='directory'>/usr</filename>.</para>
-@y
-    <para><option>--with-kde-datadir=$KDE_PREFIX/share</option>: Use this
-    parameter if <application>KDE</application> is installed in any prefix
-    other than <filename class='directory'>/usr</filename>.</para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgnome-desktop-3.{so,a}</seg>
-        <seg>/usr/{include/gnome-desktop-3.0/libgnome-desktop,
-        share/{gnome/help/{fdl/{C,ar,ca,de,el,es,eu,fr,hu,ko,oc,pl,sl,sv,uk,vi,
-        zh_CN},gpl/{C,ar,ca,cs,de,el,es,eu,fi,fr,hu,ko,nds,oc,pa,sl,sv,uk,vi,
-        zh_CN},lgpl/{C,ar,de,el,es,eu,fi,fr,hu,ko,oc,pa,pt_BR,sl,sv,uk,vi,
-        zh_CN}},gtk-doc/html/gnome-desktop3,libgnome-desktop-3.0,
-        locale/{an/LC_MESSAGES,fur/LC_MESSAGES,ig/LC_MESSAGES,lo/LC_MESSAGES,
-        yo/LC_MESSAGES},omf/{fdl,gpl,lgpl}}}</seg>
+        <seg>
+          libgnome-desktop-3.so
+        </seg>
+        <seg>
+          /usr/include/gnome-desktop-3.0,
+          /usr/share/gnome/help/{gpl,lgpl,fdl},
+          /usr/share/omf/{gpl,lgpl,fdl} and
+          /usr/share/gtk-doc/html/gnome-desktop3
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libgnome-desktop-3.{so,a}</seg>
-        <seg>/usr/{include/gnome-desktop-3.0/libgnome-desktop,
-        share/{gnome/help/{fdl/{C,ar,ca,de,el,es,eu,fr,hu,ko,oc,pl,sl,sv,uk,vi,
-        zh_CN},gpl/{C,ar,ca,cs,de,el,es,eu,fi,fr,hu,ko,nds,oc,pa,sl,sv,uk,vi,
-        zh_CN},lgpl/{C,ar,de,el,es,eu,fi,fr,hu,ko,oc,pa,pt_BR,sl,sv,uk,vi,
-        zh_CN}},gtk-doc/html/gnome-desktop3,libgnome-desktop-3.0,
-        locale/{an/LC_MESSAGES,fur/LC_MESSAGES,ig/LC_MESSAGES,lo/LC_MESSAGES,
-        yo/LC_MESSAGES},omf/{fdl,gpl,lgpl}}}</seg>
+        <seg>
+          libgnome-desktop-3.so
+        </seg>
+        <seg>
+          /usr/include/gnome-desktop-3.0,
+          /usr/share/gnome/help/{gpl,lgpl,fdl},
+          /usr/share/omf/{gpl,lgpl,fdl},
+          /usr/share/gtk-doc/html/gnome-desktop3
+        </seg>
 @z
 
 @x
@@ -213,12 +223,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libgnome-desktop-3.{so,a}
-          <para>contains APIs being tested for inclusion in
-          <application>libgnome</application> or
-          <application>libgnomeui</application>.</para>
+@x libgnome-desktop-3.so
+          <para>is an utility library for loading .desktop files.</para>
 @y
-          <para>contains APIs being tested for inclusion in
-          <application>libgnome</application> or
-          <application>libgnomeui</application></para>
+          <para>is an utility library for loading .desktop files.</para>
 @z

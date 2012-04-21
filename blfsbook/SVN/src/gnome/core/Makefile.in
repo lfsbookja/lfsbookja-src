@@ -145,6 +145,14 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
+
+#
+# This is part of BLFSbookja package.
+#
+# $Author:$
+# $Rev:$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/gnome/core
 EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
 	dummy-platform.ch gconf.ch \
@@ -165,7 +173,7 @@ EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
 	gnome-bluetooth.ch gjs.ch \
 	gnome-contacts.ch gnome-dbus-python.ch \
 	gnome-screensaver.ch gnome-system-monitor.ch \
-	gnome-utils.ch totem-pl-parser.ch \
+	totem-pl-parser.ch \
 	mousetweaks.ch gnome-user-share.ch vino.ch \
 	gucharmap.ch gnome-desktop-file-utils.ch \
 	gnome-themes-standard.ch gsettings-desktop-schemas.ch \
@@ -178,7 +186,9 @@ EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
 	gnome-online-accounts.ch \
 	gnome-packagekit.ch gnome-shell.ch sushi.ch \
 	gnome-notification-daemon.ch \
-	gnome-polkit-gnome.ch
+	gnome-polkit-gnome.ch gcr.ch \
+	baobab.ch gnome-dictionary.ch gnome-font-viewer.ch \
+	gnome-screenshot.ch gnome-search-tool.ch gnome-system-log.ch
 
 srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
 	dummy-platform.xml gconf.xml \
@@ -199,7 +209,7 @@ srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
 	gnome-bluetooth.xml gjs.xml \
 	gnome-contacts.xml gnome-dbus-python.xml \
 	gnome-screensaver.xml gnome-system-monitor.xml \
-	gnome-utils.xml totem-pl-parser.xml \
+	totem-pl-parser.xml \
 	mousetweaks.xml gnome-user-share.xml vino.xml \
 	gucharmap.xml gnome-desktop-file-utils.xml \
 	gnome-themes-standard.xml gsettings-desktop-schemas.xml \
@@ -212,7 +222,9 @@ srcs = config.xml gnome-control-center.xml core.xml dummy-desktop.xml \
 	gnome-online-accounts.xml \
 	gnome-packagekit.xml gnome-shell.xml sushi.xml \
 	gnome-notification-daemon.xml \
-	gnome-polkit-gnome.xml
+	gnome-polkit-gnome.xml gcr.xml \
+	baobab.xml gnome-dictionary.xml gnome-font-viewer.xml \
+	gnome-screenshot.xml gnome-search-tool.xml gnome-system-log.xml
 
 SUFFIXES = .ch .xml
 all: all-am
@@ -457,7 +469,6 @@ gnome-contacts.xml: $(BOOKdir)/$@ $(srcdir)/gnome-contacts.ch
 gnome-dbus-python.xml: $(BOOKdir)/$@ $(srcdir)/gnome-dbus-python.ch
 gnome-screensaver.xml: $(BOOKdir)/$@ $(srcdir)/gnome-screensaver.ch
 gnome-system-monitor.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-monitor.ch
-gnome-utils.xml: $(BOOKdir)/$@ $(srcdir)/gnome-utils.ch
 totem-pl-parser.xml: $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
 mousetweaks.xml: $(BOOKdir)/$@ $(srcdir)/mousetweaks.ch
 gnome-user-share.xml: $(BOOKdir)/$@ $(srcdir)/gnome-user-share.ch
@@ -482,6 +493,13 @@ gnome-shell.xml: $(BOOKdir)/$@ $(srcdir)/gnome-shell.ch
 sushi.xml: $(BOOKdir)/$@ $(srcdir)/sushi.ch
 gnome-notification-daemon.xml: $(BOOKdir)/$@ $(srcdir)/gnome-notification-daemon.ch
 gnome-polkit-gnome.xml: $(BOOKdir)/$@ $(srcdir)/gnome-polkit-gnome.ch
+gcr.xml: $(BOOKdir)/$@ $(srcdir)/gcr.ch
+baobab.xml: $(BOOKdir)/$@ $(srcdir)/baobab.ch
+gnome-dictionary.xml: $(BOOKdir)/$@ $(srcdir)/gnome-dictionary.ch
+gnome-font-viewer.xml: $(BOOKdir)/$@ $(srcdir)/gnome-font-viewer.ch
+gnome-screenshot.xml: $(BOOKdir)/$@ $(srcdir)/gnome-screenshot.ch
+gnome-search-tool.xml: $(BOOKdir)/$@ $(srcdir)/gnome-search-tool.ch
+gnome-system-log.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-log.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -169,14 +169,14 @@
 @z
 
 @x
-        <seg>ctest, cpack, ccmake, and cmake</seg>
+        <seg>ccmake, cmake, cmake-gui, cpack and ctest</seg>
         <seg>None</seg>
-        <seg>/usr/share/cmake-&cmake-version; and
+        <seg>/usr/share/cmake-&cmake-major-version; and
         /usr/share/doc/cmake-&cmake-version;</seg>
 @y
-        <seg>ctest, cpack, ccmake, cmake</seg>
+        <seg>ccmake, cmake, cmake-gui, cpack, ctest</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/cmake-&cmake-version;,
+        <seg>/usr/share/cmake-&cmake-major-version;,
         /usr/share/doc/cmake-&cmake-version;</seg>
 @z
 
@@ -184,22 +184,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x ctest
-          <para>is a testing utility for cmake-generated build trees.</para>
-@y
-          <para>
-          cmake により生成されたディレクトリツリーをテストするユーティリティーです。
-          </para>
-@z
-
-@x cpack
-          <para>is the CMake packaging program.</para>
-@y
-          <para>
-          CMake のパッケージングプログラムです。
-          </para>
 @z
 
 @x ccmake
@@ -215,5 +199,26 @@
 @y
           <para>
           Makefile 生成ツールです。
+          </para>
+@z
+@x cmake-gui
+          <para>is the Qt-based frontent to CMake.</para>
+@y
+          <para>is the Qt-based frontent to CMake.</para>
+@z
+
+@x cpack
+          <para>is the CMake packaging program.</para>
+@y
+          <para>
+          CMake のパッケージングプログラムです。
+          </para>
+@z
+
+@x ctest
+          <para>is a testing utility for cmake-generated build trees.</para>
+@y
+          <para>
+          cmake により生成されたディレクトリツリーをテストするユーティリティーです。
           </para>
 @z

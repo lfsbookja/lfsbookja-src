@@ -77,40 +77,34 @@
 @x
     <bridgehead renderas="sect3">Pango Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Pango の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Pango&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="cairo"/>, 
-    <xref linkend="fontconfig"/>, <xref linkend="pkgconfig"/> 
-    and <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="cairo"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="cairo"/>, 
-    <xref linkend="fontconfig"/>, <xref linkend="pkgconfig"/> 
-    <xref linkend="xorg7-lib"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>
-    (Required if building GNOME)</para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>
-    (GNOME のビルド時に必要)</para>
+    <para role="required">
+      <xref linkend="cairo"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/> (required if building Gnome),
+      <xref linkend="gtk-doc"/> and
+      <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/> (Gnome のビルド時に必要),
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
     </para>
 @z
 
@@ -225,12 +219,10 @@
         <seg>
           pango-querymodules and pango-view
         </seg>
-
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
           libpangox-1.0.so, libpangoxft-1.0.so
         </seg>
-
         <seg>
           /etc/pango, /usr/include/pango-1.0, /usr/lib/pango and
           /usr/share/gtk-doc/html/pango
@@ -239,12 +231,10 @@
         <seg>
           pango-querymodules, pango-view
         </seg>
-
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
           libpangox-1.0.so, libpangoxft-1.0.so
         </seg>
-
         <seg>
           /etc/pango, /usr/include/pango-1.0, /usr/lib/pango,
           /usr/share/gtk-doc/html/pango

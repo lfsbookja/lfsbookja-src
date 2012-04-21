@@ -84,26 +84,46 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="libxslt"/>, and
-    <xref linkend="python2"/></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="libxslt"/> and
+      <xref linkend="python2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="python2"/></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="python2"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="vala"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/>, and
-    <xref linkend="vala"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/>,
-    <xref linkend="vala"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -152,11 +172,12 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/telepathy-mission-glib</parameter>:
-    This parameter prevents files being installed in
-    <filename class="directory">/usr/libexec</filename>.</para>
+    <para><parameter>--libexecdir=/usr/lib/telepathy</parameter>:
+    This parameter prevents creating of
+    <filename class="directory">/usr/libexec</filename>
+    directory.</para>
 @y
-    <para><parameter>--libexecdir=/usr/lib/telepathy-mission-glib</parameter>:
+    <para><parameter>--libexecdir=/usr/lib/telepathy</parameter>:
     このパラメーターは、各種ファイルを <filename
     class="directory">/usr/libexec</filename> へインストールしないようにします。
     </para>
@@ -164,19 +185,12 @@
 
 @x
     <para><option>--enable-vala-bindings</option>: This option builds the
-    EXPERIMENTAL Vala bindings.</para>
+    Vala bindings. Remove if you don't have <xref linkend="vala"/>
+    installed.</para>
 @y
     <para><option>--enable-vala-bindings</option>:
-    このオプションは実験的な Vala バインディングをビルドします。
-    </para>
-@z
-
-@x
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--enable-static=no</option>:
-    このスイッチはスタティックライブラリをインストールしないようにいます。
+    このオプションは Vala バインディングをビルドします。
+    <xref linkend="vala"/> をインストールしていない場合はこれを取り除いてください。
     </para>
 @z
 
@@ -187,23 +201,31 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libtelepathy-glib.{so,a}</seg>
-        <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,lib/telepathy-glib,share/gtk-doc/html/telepathy-glib}</seg>
+        <seg>
+          libtelepathy-glib.so
+        </seg>
+        <seg>
+          /usr/include/telepathy-1.0/telepathy-glib,
+          /usr/lib/telepathy and
+          /usr/share/gtk-doc/html/telepathy-glib
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libtelepathy-glib.{so,a}</seg>
-        <seg>/usr/{include/telepathy-1.0/telepathy-glib/_gen,lib/telepathy-glib,share/gtk-doc/html/telepathy-glib}</seg>
+        <seg>
+          libtelepathy-glib.so
+        </seg>
+        <seg>
+          /usr/include/telepathy-1.0/telepathy-glib,
+          /usr/lib/telepathy,
+          /usr/share/gtk-doc/html/telepathy-glib
+        </seg>
 @z
 
 @x

@@ -145,11 +145,20 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
+
+#
+# This is part of BLFSbookja package.
+#
+# $Author:$
+# $Rev:$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/office
 CHANGE_FILES = \
-	abiword.ch \
-	gnucash.ch \
-	gnumeric.ch \
+	abiword.ch     \
+	gnucash.ch     \
+	gnumeric.ch    \
+	libreoffice.ch \
 	office.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -346,10 +355,11 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-abiword.xml:   $(BOOKdir)/$@ $(srcdir)/abiword.ch
-gnucash.xml:   $(BOOKdir)/$@ $(srcdir)/gnucash.ch
-gnumeric.xml:  $(BOOKdir)/$@ $(srcdir)/gnumeric.ch
-office.xml:    $(BOOKdir)/$@ $(srcdir)/office.ch
+abiword.xml:      $(BOOKdir)/$@ $(srcdir)/abiword.ch
+gnucash.xml:      $(BOOKdir)/$@ $(srcdir)/gnucash.ch
+gnumeric.xml:     $(BOOKdir)/$@ $(srcdir)/gnumeric.ch
+libreoffice.xml:  $(BOOKdir)/$@ $(srcdir)/libreoffice.ch
+office.xml:       $(BOOKdir)/$@ $(srcdir)/office.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

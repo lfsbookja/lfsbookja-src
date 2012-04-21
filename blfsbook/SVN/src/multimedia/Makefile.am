@@ -1,3 +1,10 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 SUBDIRS=audioutils cdwriteutils libdriv videoutils
 BOOKdir = $(top_builddir)/@bookdir@/multimedia
 CHANGE_FILES = multimedia.ch

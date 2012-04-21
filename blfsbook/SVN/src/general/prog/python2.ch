@@ -135,7 +135,10 @@
       <xref linkend="tk"/> (there is a circular dependency with the
       <application>Tk</application> package as it requires Xorg to be installed
       but parts of Xorg depend on <application>Python</application>),
-      <xref linkend="db"/> and
+      <!--<xref linkend="db"/> and-->
+      <ulink
+      url="http://www.oracle.com/technetwork/products/berkeleydb/downloads/">BerkeleyDB</ulink>
+      (only versions up to 4.8), and
       <xref linkend="sqlite"/>.
     </para>
 @y
@@ -156,7 +159,10 @@
       <xref linkend="tk"/> (there is a circular dependency with the
       <application>Tk</application> package as it requires Xorg to be installed
       but parts of Xorg depend on <application>Python</application>),
-      <xref linkend="db"/> and
+      <!--<xref linkend="db"/> and-->
+      <ulink
+      url="http://www.oracle.com/technetwork/products/berkeleydb/downloads/">BerkeleyDB</ulink>
+      (only versions up to 4.8), and
       <xref linkend="sqlite"/>.
     </para>
 @z
@@ -306,7 +312,7 @@
 
 @x
         <seg>
-          pydoc, python, python-config, python&python2-majorver;,
+          2to3, pydoc, python, python-config, python&python2-majorver;,
           python&python2-majorver;-config, smtpd.py, and optionally if
           <application>Tk</application> is installed, idle
         </seg>
@@ -320,7 +326,7 @@
           /usr/share/doc/python-&python2-version;</seg>
 @y
         <seg>
-          pydoc, python, python-config, python&python2-majorver;,
+          2to3, pydoc, python, python-config, python&python2-majorver;,
           python&python2-majorver;-config, smtpd.py, and optionally if
           <application>Tk</application> is installed, idle
         </seg>
@@ -330,7 +336,7 @@
         </seg>
         <seg>
           /usr/include/python&python2-majorver;,
-          /usr/lib/python&python2-majorver;,
+          /usr/lib/python&python2-majorver;, and
           /usr/share/doc/python-&python2-version;</seg>
 @z
 

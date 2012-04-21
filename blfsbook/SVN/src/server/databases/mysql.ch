@@ -279,8 +279,10 @@
 @x
       <para>There are several default configuration files available in
       <filename class="directory">/usr/share/mysql</filename> which you can
-      use. Create <filename>/etc/my.cnf</filename> using the following command
-      as the <systemitem class="username">root</systemitem> user:</para>
+      use. When creating the file, ensure binary logs are disabled unless you
+      are doing database replication.  Create <filename>/etc/my.cnf</filename>
+      using the following commands as the <systemitem
+      class="username">root</systemitem> user:</para>
 @y
       <para>
       利用可能なデフォルトの設定ファイルが <filename

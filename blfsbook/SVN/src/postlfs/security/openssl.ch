@@ -120,8 +120,7 @@
 @z
 
 @x
-      Install <application>OpenSSL</application> by running the following
-      commands:
+      Install <application>OpenSSL</application> with the following commands:
 @y
       以下のコマンドを実行して <application>OpenSSL</application> をビルドします。
 @z
@@ -208,11 +207,11 @@
 
 @x
         Most users will want to install Certificate Authority Certificates
-        for validataion of downloaded certificates.  For example, these
-        certificates are used by <xref linkend='git'/>, <xref linkend='curl'/>
-        or <xref linkend='wget'/> when accessing secure (https protocol) sites.
-        To do this, follow the instructions from the <xref linkend='cacerts'/>
-        page.
+        for validataion of downloaded certificates. For example, these
+        certificates can be used by <xref linkend='git'/>,
+        <xref linkend='curl'/> or <xref linkend='wget'/> when accessing secure
+        (https protocol) sites. To do this, follow the instructions from the
+        <xref linkend='cacerts'/> page.
 @y
         証明書 (certificates) を正しくダウンロードできたかどうかを検証するためには Certificate Authority Certificates のインストールが必要となります。
         この証明書はたとえば <xref linkend='git'/>、<xref linkend='curl'/>、<xref linkend='wget'/> においてセキュアな (https プロトコルを利用した) サイトにアクセスする際に利用されます。
@@ -249,27 +248,31 @@
 @z
 
 @x
-        <seg>c_rehash and openssl</seg>
+        <seg>c_rehash and openssl.</seg>
         <seg>
           libcrypto.{so,a}, libssl.{so,a}, and additional encryption
           libraries in /usr/lib/engines/ (lib4758cca.so, libaep.so,
           libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so,
           libgost.so, libnuron.so, libpadlock.so, libsureware.so, and
-          libubsec.so)
+          libubsec.so).
         </seg>
-        <seg>/etc/ssl, /usr/include/openssl, /usr/lib/engines
-        and /usr/share/doc/openssl-&openssl-version;</seg>
+        <seg>
+          /etc/ssl, /usr/include/openssl, /usr/lib/engines and
+          /usr/share/doc/openssl-&openssl-version;.
+        </seg>
 @y
         <seg>c_rehash, openssl</seg>
         <seg>
-          libcrypto.{so,a}, libssl.{so,a}, 
+          libcrypto.{so,a}, libssl.{so,a},
           /usr/lib/engines/ にインストールされるその他の暗号化ライブラリ (lib4758cca.so, libaep.so,
           libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so,
           libgost.so, libnuron.so, libpadlock.so, libsureware.so,
-          libubsec.so)
+          libubsec.so).
         </seg>
-        <seg>/etc/ssl, /usr/include/openssl, /usr/lib/engines,
-        /usr/share/doc/openssl-&openssl-version;</seg>
+        <seg>
+          /etc/ssl, /usr/include/openssl, /usr/lib/engines,
+          /usr/share/doc/openssl-&openssl-version;.
+        </seg>
 @z
 
 @x

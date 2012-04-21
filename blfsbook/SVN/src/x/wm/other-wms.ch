@@ -33,10 +33,11 @@
 @x
   <para><command>mwm</command> is the Motif&reg; Window Manager. It is an
   <application>OSF/Motif&reg;</application> clone packaged and installed with
-  <xref linkend="lesstif"/>.</para>
+  <!-- <xref linkend="lesstif"/>.</para>-->
+  <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>.</para>
 @y
   <para>
   <command>mwm</command> は Motif&reg; ウィンドウマネージャーです。
-  <application>OSF/Motif&reg;</application> のクローンであり、<xref linkend="lesstif"/> パッケージに含まれインストールされます。
+  <application>OSF/Motif&reg;</application> のクローンであり、<ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>パッケージに含まれインストールされます。
   </para>
 @z

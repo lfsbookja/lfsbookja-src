@@ -83,10 +83,40 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk3"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk3"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -149,13 +179,25 @@
 @z
 
 @x
-        <seg>notify-send</seg>
-        <seg>libnotify.{so,a}</seg>
-        <seg>/usr/{include/libnotify,share/gtk-doc/html/libnotify}</seg>
+        <seg>
+          notify-send
+        </seg>
+        <seg>
+          libnotify.so
+        </seg>
+        <seg>
+         /usr/include/libnotify and /usr/share/gtk-doc/html/libnotify
+        </seg>
 @y
-        <seg>notify-send</seg>
-        <seg>libnotify.{so,a}</seg>
-        <seg>/usr/{include/libnotify,share/gtk-doc/html/libnotify}</seg>
+        <seg>
+          notify-send
+        </seg>
+        <seg>
+          libnotify.so
+        </seg>
+        <seg>
+         /usr/include/libnotify, /usr/share/gtk-doc/html/libnotify
+        </seg>
 @z
 
 @x

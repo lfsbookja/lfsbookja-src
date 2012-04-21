@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Net-tools</title>
 @y
-    <title>Net-tools の概要</title>
+    <title>&IntroductionTo1;Net-tools&IntroductionTo2;</title>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of Net-tools</title>
 @y
-    <title>Net-tools のインストール</title>
+    <title>&InstallationOf1;Net-tools&InstallationOf2;</title>
 @z
 
 @x
@@ -208,20 +208,6 @@ If
 @z
 
 @x
-    <para><command>sed -i -e ...</command>: These two <command>sed</command>s
-    change the configuration files to force building the
-    <command>ipmaddr</command>, <command>iptunnel</command> and
-    <command>mii-tool</command> programs.</para>
-@y
-    <para>
-    <command>sed -i -e ...</command>: These two <command>sed</command>s
-    change the configuration files to force building the
-    <command>ipmaddr</command>, <command>iptunnel</command> and
-    <command>mii-tool</command> programs.
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -249,8 +235,8 @@ If
         ifconfig, ipmaddr, iptunnel, mii-tool, nameif, netstat,
         nisdomainname, plipconfig, rarp, route, slattach,
         ypdomainname</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

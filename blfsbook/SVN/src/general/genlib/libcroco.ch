@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>The <application>libcroco</application> package contains
-    <filename class="libraryfile">libcroco</filename> libraries. This is
-    useful for providing a CSS API.</para>
+    <para>The <application>libcroco</application> package contains 
+    a standalone CSS2 parsing and manipulation library.</para>
 @y
     <para>
-    <application>libcroco</application> パッケージは <filename
-    class="libraryfile">libcroco</filename> ライブラリを提供します。これは CSS API を提供する際に有用なものです。
+    <application>libcroco</application> パッケージは、CSS2 を解析し操作するスタンドアローンのライブラリです。
     </para>
 @z
 
@@ -80,12 +78,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libxml2"/> and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libxml2"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
@@ -158,13 +160,25 @@
 @z
 
 @x
-        <seg>croco-0.6-config and csslint-0.6</seg>
-        <seg>libcroco-0.6.{so,a}</seg>
-        <seg>/usr/include/libcroco-&libcroco-version; and
-        /usr/share/doc/libcroco-&libcroco-version;</seg>
+        <seg>
+          croco-0.6-config and csslint-0.6
+        </seg>
+        <seg>
+          libcroco-0.6.so
+        </seg>
+        <seg>
+          /usr/include/libcroco-0.6 and
+          /usr/share/gtk-doc/html/libcroco
+        </seg>
 @y
-        <seg>croco-0.6-config, csslint-0.6</seg>
-        <seg>libcroco-0.6.{so,a}</seg>
-        <seg>/usr/include/libcroco-&libcroco-version;,
-        /usr/share/doc/libcroco-&libcroco-version;</seg>
+        <seg>
+          croco-0.6-config, csslint-0.6
+        </seg>
+        <seg>
+          libcroco-0.6.so
+        </seg>
+        <seg>
+          /usr/include/libcroco-0.6,
+          /usr/share/gtk-doc/html/libcroco
+        </seg>
 @z

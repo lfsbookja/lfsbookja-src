@@ -88,10 +88,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="intltool"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="intltool"/>
+    </para>
 @z
 
 @x
@@ -144,25 +148,19 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-background-properties,
-        pixmaps/backgrounds/gnome/{abstract,nature}}</seg>
+        <seg>
+          /usr/share/backgrounds/gnome
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome-background-properties,
-        pixmaps/backgrounds/gnome/{abstract,nature}}</seg>
+        <seg>
+          /usr/share/backgrounds/gnome
+        </seg>
 @z
 
 @x

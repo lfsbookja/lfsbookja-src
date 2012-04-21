@@ -117,7 +117,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -125,13 +125,25 @@
 @z
 
 @x
-        <seg>skdump and sktest</seg>
-        <seg>libatasmart.{so,a}</seg>
-        <seg>/usr/share/{doc/libatasmart,vala/vapi}</seg>
+        <seg>
+          skdump and sktest
+        </seg>
+        <seg>
+          libatasmart.so
+        </seg>
+        <seg>
+          /usr/share/doc/libatasmart
+        </seg>
 @y
-        <seg>skdump, sktest</seg>
-        <seg>libatasmart.{so,a}</seg>
-        <seg>/usr/share/{doc/libatasmart,vala/vapi}</seg>
+        <seg>
+          skdump, sktest
+        </seg>
+        <seg>
+          libatasmart.so
+        </seg>
+        <seg>
+          /usr/share/doc/libatasmart
+        </seg>
 @z
 
 @x

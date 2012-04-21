@@ -79,20 +79,30 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME) and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要),
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -145,25 +155,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libjson-glib-1.0.so</seg>
-        <seg>/usr/{include/json-glib-1.0/json-glib,
-        share/gtk-doc/html/json-glib}</seg>
+        <seg>
+          libjson-glib-1.0.so
+        </seg>
+        <seg>
+          /usr/include/json-glib-1.0 and
+          /usr/share/gtk-doc/html/json-glib
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libjson-glib-1.0.so</seg>
-        <seg>/usr/{include/json-glib-1.0/json-glib,
-        share/gtk-doc/html/json-glib}</seg>
+        <seg>
+          libjson-glib-1.0.so
+        </seg>
+        <seg>
+          /usr/include/json-glib-1.0,
+          /usr/share/gtk-doc/html/json-glib
+        </seg>
 @z
 
 @x

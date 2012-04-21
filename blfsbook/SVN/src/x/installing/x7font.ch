@@ -203,11 +203,11 @@
 @z
 
 @x
-        <seg>bdftruncate</seg>
+        <seg>bdftruncate and ucs2any</seg>
         <seg>None</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/fonts</seg>
 @y
-        <seg>bdftruncate</seg>
+        <seg>bdftruncate, ucs2any</seg>
         <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/fonts</seg>
 @z
@@ -219,10 +219,19 @@
 @z
 
 @x bdftruncate
-          <para>generates a truncated BDF font from an ISO 10646-1-encoded
+          <para>generates a truncated BDF font from an ISO 10646-1 encoded
           BDF font.</para>
 @y
           <para>
           ISO 10646-1 エンコーディングによる BDF フォントから、圧縮した BDF フォントを生成します。
+          </para>
+@z
+
+@x ucs2any
+          <para>generates BDF fonts in any encoding from an ISO 10646-1 encoded
+          BDF font.</para>
+@y
+          <para>
+          ISO 10646-1 エンコーディングの BDF フォントから、種々のエンコーディングによる BDF フォントを生成します。
           </para>
 @z

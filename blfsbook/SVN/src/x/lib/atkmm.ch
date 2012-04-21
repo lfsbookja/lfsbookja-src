@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -78,12 +78,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glibmm"/> and
-    <xref linkend="atk"/></para>
+    <para role="required">
+      <xref linkend="glibmm"/> and
+      <xref linkend="atk"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glibmm"/>,
-    <xref linkend="atk"/></para>
+    <para role="required">
+      <xref linkend="glibmm"/>,
+      <xref linkend="atk"/>
+    </para>
 @z
 
 @x
@@ -128,23 +132,33 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libatkmm-1.6.so</seg>
-        <seg>/usr/{include/atkmm-1.6/atkmm/private,lib/atkmm-1.6/{include,proc/m4},share/{devhelp/books/atkmm-1.6,doc/atkmm-1.6/reference/html}}</seg>
+        <seg>
+          libatkmm-1.6.so
+        </seg>
+        <seg>
+          /usr/include/atkmm-1.6,
+          /usr/lib/atkmm-1.6,
+          /usr/share/devhelp/books/atkmm-1.6 and
+          /usr/share/doc/atkmm-1.6
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libatkmm-1.6.so</seg>
-        <seg>/usr/{include/atkmm-1.6/atkmm/private,lib/atkmm-1.6/{include,proc/m4},share/{devhelp/books/atkmm-1.6,doc/atkmm-1.6/reference/html}}</seg>
+        <seg>
+          libatkmm-1.6.so
+        </seg>
+        <seg>
+          /usr/include/atkmm-1.6,
+          /usr/lib/atkmm-1.6,
+          /usr/share/devhelp/books/atkmm-1.6,
+          /usr/share/doc/atkmm-1.6
+        </seg>
 @z
 
 @x

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY glib2-time          "1.0 SBU (additional 4.0 SBU to run the test suite)">
+  <!ENTITY glib2-time          "1.2 SBU (additional 4.0 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-time          "1.0 SBU (テストスイート実行時は追加で 4.0 SBU)">
+  <!ENTITY glib2-time          "1.2 SBU (テストスイート実行時は追加で 4.0 SBU)">
 @z
 
 @x
@@ -90,25 +90,47 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="libffi"/> and
+      <xref linkend="python2"/>
+    </para> 
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="libffi"/>,
+      <xref linkend="python2"/>
+    </para> 
+@z
+
+@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="pcre"/>
-    (built with unicode properties)</para>
+    <para role="recommended">
+      <xref linkend="pcre"/> (built with unicode properties)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="pcre"/>
-    (Unicode プロパティを有効にしてビルドしたもの)</para>
+    <para role="recommended">
+      <xref linkend="pcre"/> (Unicode プロパティを有効にしてビルドしたもの)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="attr"/>, <xref linkend="dbus"/> 
-    (required to run the tests), <xref linkend="gamin"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="attr"/>,
+      <xref linkend="dbus"/> (required to run the tests),
+      <xref linkend="gamin"/> and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="attr"/>, <xref linkend="dbus"/> 
-    (テストスイート実行時に必要), <xref linkend="gamin"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="attr"/>,
+      <xref linkend="dbus"/> (テストスイート実行時に必要),
+      <xref linkend="gamin"/>,
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -266,16 +288,14 @@
           gobject-query, gresource, gsettings, gtester 
           and gtester-report
         </seg>
-
         <seg>
           libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
           libgobject-2.0.so, libgthread-2.0.so and libgiofam.so
         </seg>
-
         <seg>
-          /usr/include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
-          /usr/lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},
-          /usr/share/glib-2.0/{gdb,gettext/po} and
+          /usr/include/{gio-unix-2.0,glib-2.0},
+          /usr/lib/{gdbus-2.0,gio,glib-2.0},
+          /usr/share/glib-2.0 and
           /usr/share/gtk-doc/html/{gio,glib,gobject}
         </seg>
 @y
@@ -283,19 +303,17 @@
           gdbus, gdbus-codegen, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal, glib-gettextize, glib-mkenums,
-          gobject-query, gresource, gsettings, gtester 
+          gobject-query, gresource, gsettings, gtester,
           gtester-report
         </seg>
-
         <seg>
           libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
           libgobject-2.0.so, libgthread-2.0.so, libgiofam.so
         </seg>
-
         <seg>
-          /usr/include/{gio-unix-2.0/gio,glib-2.0/{gio,glib,gobject}},
-          /usr/lib/{gdbus-2.0/codegen,gio/modules,glib-2.0/include},
-          /usr/share/glib-2.0/{gdb,gettext/po},
+          /usr/include/{gio-unix-2.0,glib-2.0},
+          /usr/lib/{gdbus-2.0,gio,glib-2.0},
+          /usr/share/glib-2.0,
           /usr/share/gtk-doc/html/{gio,glib,gobject}
         </seg>
 @z

@@ -84,24 +84,46 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="iso-codes"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="pkgconfig"/>, and
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="iso-codes"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="pkgconfig"/> and
+      <xref linkend="xorg7-lib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="iso-codes"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="pkgconfig"/>,
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="iso-codes"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="pkgconfig"/>,
+      <xref linkend="xorg7-lib"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME をビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -165,23 +187,27 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libxklavier.{so,a}</seg>
-        <seg>/usr/{include/libxklavier,share/gtk-doc/html/libxklavier}</seg>
+        <seg>
+          libxklavier.so
+        </seg>
+        <seg>
+          /usr/include/libxklavier and /usr/share/gtk-doc/html/libxklavier
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libxklavier.{so,a}</seg>
-        <seg>/usr/{include/libxklavier,share/gtk-doc/html/libxklavier}</seg>
+        <seg>
+          libxklavier.so
+        </seg>
+        <seg>
+          /usr/include/libxklavier, /usr/share/gtk-doc/html/libxklavier
+        </seg>
 @z
 
 @x

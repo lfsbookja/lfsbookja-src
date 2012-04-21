@@ -1,3 +1,10 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 SUBDIRS=appendices book general gnome introduction kde kde4 \
 	networking \
 	multimedia postlfs pst server stylesheets template x xincludes \

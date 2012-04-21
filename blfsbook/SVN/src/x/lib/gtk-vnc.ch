@@ -23,7 +23,7 @@
     <para>The <application>gtk-vnc</application> package is a VNC viewer widget
     for <application>GTK</application>. It is built using coroutines allowing it
     to be completely asynchronous while remaining single threaded. It provides a
-    core C library, and bindings for <application>Python</application>
+    core C library and bindings for <application>Python</application>
     (<application>PyGTK</application>)</para>
 @y
     <para>
@@ -83,30 +83,52 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk3"/>,
-    <xref linkend="gnutls"/>, and
-    <xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="gnutls"/> and
+      <xref linkend="intltool"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk3"/>,
-    <xref linkend="gnutls"/>,
-    <xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="intltool"/>
+    </para>
+@z
+
+@x
+     <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+     <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="cyrus-sasl"/>,
-    <xref linkend="nspr"/>, and
-    <!-- pygtk is not used with gtk+-3
-    <xref linkend="pygtk"/>, and -->
-    <xref linkend="xulrunner"/></para>
+    <para role="optional">
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="nspr"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="vala"/> and
+      <xref linkend="xulrunner"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="cyrus-sasl"/>,
-    <xref linkend="nspr"/>,
-    <!-- pygtk is not used with gtk+-3
-    <xref linkend="pygtk"/>, and -->
-    <xref linkend="xulrunner"/></para>
+    <para role="optional">
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="nspr"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="vala"/>,
+      <xref linkend="xulrunner"/>
+    </para>
 @z
 
 @x
@@ -165,11 +187,14 @@
 @z
 
 @x
-    <para><parameter>--with-sasl=no</parameter>: This parameter disables the use of <application>cyrus SASL</application> for authentication. Remove it if you have <application>Cyrus SASL</application> installed and wish to enable it for authentication.</para>
+    <para><option>--without-sasl</option>: This parameter disables the use of 
+    <application>Cyrus SASL</application> for authentication. Remove it if you have 
+    <application>Cyrus SASL</application> installed and wish to enable it for 
+    authentication.</para>
 @y
     <para>
-    <parameter>--with-sasl=no</parameter>:
-    このパラメーターは認証処理にあたって <application>cyrus SASL</application> を利用しないことを指示します。
+    <option>--without-sasl</option>:
+    このパラメーターは、認証処理にあたって <application>cyrus SASL</application> を利用しないことを指示します。
     <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は、本パラメーターを取り除いてください。
     </para>
 @z
@@ -190,9 +215,9 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -200,13 +225,25 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgtk-vnc-1.0.so</seg>
-        <seg>/usr/include/gtk-vnc-1.0</seg>
+        <seg>
+          gvnccapture
+        </seg>
+        <seg>
+          libgtk-vnc-2.0.so, libgvnc-1.0.so and libgvncpulse-1.0.so
+        </seg>
+        <seg>
+          /usr/include/{gtk-vnc-2.0,gvnc-1.0,gvncpulse-1.0}
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libgtk-vnc-1.0.so</seg>
-        <seg>/usr/include/gtk-vnc-1.0</seg>
+        <seg>
+          gvnccapture
+        </seg>
+        <seg>
+          libgtk-vnc-2.0.so, libgvnc-1.0.so, libgvncpulse-1.0.so
+        </seg>
+        <seg>
+          /usr/include/{gtk-vnc-2.0,gvnc-1.0,gvncpulse-1.0}
+        </seg>
 @z
 
 @x
@@ -215,19 +252,26 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libgtk-vnc-1.0.{so,a}
-          <para>contains the <application>gtk-vnc</application> API
-          functions.</para>
+@x gvnccapture
+            is used to capture image from VNC server.
 @y
-          <para>
-          <application>gtk-vnc</application> API 関数を提供します。
-          </para>
+            is used to capture image from VNC server.
 @z
 
-@x gtkvnc.{so,a}
-          <para>is a <application>Python</application> binding library.</para>
+@x libgtk-vnc-2.0.so
+            contains GTK+3 bindings for GTK VNC.
 @y
-          <para>
-          <application>Python</application> バインディングライブラリ。
-          </para>
+            contains GTK+3 bindings for GTK VNC.
+@z
+
+@x libgvnc-1.0.so
+            contains GObject bindings for GTK VNC.
+@y
+            contains GObject bindings for GTK VNC.
+@z
+
+@x libgvncpulse-1.0.so
+            is Pulseaudio bridge for GTK VNC.
+@y
+            is Pulseaudio bridge for GTK VNC.
 @z

@@ -14,16 +14,16 @@
 @z
 
 @x
-    <title>Introduction to gtkmm</title>
+    <title>Introduction to Gtkmm</title>
 @y
-    <title>&IntroductionTo1;gtkmm&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Gtkmm&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>gtkmm</application> package provides a C++ interface to
+      The <application>Gtkmm</application> package provides a C++ interface to
       <application>GTK+-3</application>.
 @y
-      <application>gtkmm</application> パッケージは <application>GTK+-3</application> への C++ インターフェースを提供します。
+      <application>Gtkmm</application> パッケージは <application>GTK+-3</application> への C++ インターフェースを提供します。
 @z
 
 @x
@@ -33,45 +33,45 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&gtkmm-download-http;"/>
+          Download (HTTP): <ulink url="&gtkmm3-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&gtkmm-download-http;"/>
+          &Download; (HTTP): <ulink url="&gtkmm3-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&gtkmm-download-ftp;"/>
+          Download (FTP): <ulink url="&gtkmm3-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&gtkmm-download-ftp;"/>
+          &Download; (FTP): <ulink url="&gtkmm3-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &gtkmm-md5sum;
+          Download MD5 sum: &gtkmm3-md5sum;
 @y
-          &Download; MD5 sum: &gtkmm-md5sum;
+          &Download; MD5 sum: &gtkmm3-md5sum;
 @z
 
 @x
-          Download size: &gtkmm-size;
+          Download size: &gtkmm3-size;
 @y
-          &DownloadSize;: &gtkmm-size;
+          &DownloadSize;: &gtkmm3-size;
 @z
 
 @x
-          Estimated disk space required: &gtkmm-buildsize;
+          Estimated disk space required: &gtkmm3-buildsize;
 @y
-          &Estimateddiskspacerequired;: &gtkmm-buildsize;
+          &Estimateddiskspacerequired;: &gtkmm3-buildsize;
 @z
 
 @x
-          Estimated build time: &gtkmm-time;
+          Estimated build time: &gtkmm3-time;
 @y
-          &Estimatedbuildtime;: &gtkmm-time;
+          &Estimatedbuildtime;: &gtkmm3-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gtkmm Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Gtkmm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gtkmm&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Gtkmm&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -91,22 +91,22 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/gtkmm"/>
+      User Notes: <ulink url="&blfs-wiki;/gtkmm3"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/gtkmm"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/gtkmm3"/>
 @z
 
 @x
-    <title>Installation of gtkmm</title>
+    <title>Installation of Gtkmm</title>
 @y
-    <title>&InstallationOf1;gtkmm&InstallationOf2;</title>
+    <title>&InstallationOf1;Gtkmm&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>gtkmm</application> by running the following
+      Install <application>Gtkmm</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>gtkmm</application> をビルドします。
+      以下のコマンドを実行して <application>Gtkmm</application> をビルドします。
 @z
 
 @x
@@ -136,22 +136,22 @@
 @z
 
 @x
-        <seg>libgdkmm-3.0.so and libgtkmm-3.0.so.</seg>
         <seg>
-          /usr/include/gdkmm-3.0,
-          /usr/include/gtkmm-3.0,
-          /usr/lib/gdkmm-3.0,
-          /usr/lib/gtkmm-3.0,
+          libgdkmm-3.0.so and libgtkmm-3.0.so.
+        </seg>
+        <seg>
+          /usr/include/{gdkmm-3.0,gtkmm-3.0},
+          /usr/lib/{gdkmm-3.0,gtkmm-3.0},
           /usr/share/devhelp/books/gtkmm-3.0 and
           /usr/share/doc/gtkmm-3.0.
         </seg>
 @y
-        <seg>libgdkmm-3.0.so, libgtkmm-3.0.so.</seg>
         <seg>
-          /usr/include/gdkmm-3.0,
-          /usr/include/gtkmm-3.0,
-          /usr/lib/gdkmm-3.0,
-          /usr/lib/gtkmm-3.0,
+          libgdkmm-3.0.so, libgtkmm-3.0.so.
+        </seg>
+        <seg>
+          /usr/include/{gdkmm-3.0,gtkmm-3.0},
+          /usr/lib/{gdkmm-3.0,gtkmm-3.0},
           /usr/share/devhelp/books/gtkmm-3.0,
           /usr/share/doc/gtkmm-3.0.
         </seg>
@@ -163,14 +163,14 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libgdkmm-2.4.so
+@x libgdkmm-3.0.so
         contains the GDK API classes.
 @y
         GDK の API クラスを提供します。
 @z
 
-@x libgtkmm-2.4.so
-        contains the <application>GTK+</application> API classes.
+@x libgtkmm-3.0.so
+        contains the <application>GTK+3</application> API classes.
 @y
-        <application>GTK+</application> の API クラスを提供します。
+        <application>GTK+3</application> の API クラスを提供します。
 @z

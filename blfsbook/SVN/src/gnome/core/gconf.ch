@@ -78,41 +78,48 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="libxml2"/><!--, and
-    <xref linkend="ORBit2"/>--></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="intltool"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libxml2"/><!--, and
-    <xref linkend="ORBit2"/>--></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gtk3"/> (Required if building a
-    <application>GNOME</application> desktop.
-    <command>gconf-sanity-check-2</command> will not build otherwise.) and
-    <xref linkend="polkit"/></para>
+    <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/> and
+      <xref linkend="polkit"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gtk3"/> (<application>GNOME</application> デスクトップ環境を構築する場合に必要。
-    これがなければ <command>gconf-sanity-check-2</command> はビルドされない。),
-    <xref linkend="polkit"/></para>
+    <bridgehead renderas="sect4">&Recommended; (GNOME のビルド時に必要)</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="polkit"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>,
-    <xref linkend="gobject-introspection"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="openldap"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="openldap"/>
+    </para>
 @z
 
 @x
@@ -154,45 +161,23 @@
 @z
 
 @x
-    <para>Still as the <systemitem class="username">root</systemitem> user,
-    configure <application>D-Bus</application> so that it can search for
-    <application>GNOME</application> installed
-    <filename class='extension'>.conf</filename> files (This is assuming
-    that <filename>/etc/dbus-1/system-local.conf</filename> does not exist yet.
-    If it does, then you will need to merge in the changes). If
-    <envar>$GNOME_PREFIX</envar> is not
-    <filename class='directory'>/usr</filename>, you should uncomment the
-    <quote>servicedir</quote> line:</para>
-@y
-    <para>Still as the <systemitem class="username">root</systemitem> user,
-    configure <application>D-Bus</application> so that it can search for
-    <application>GNOME</application> installed
-    <filename class='extension'>.conf</filename> files (This is assuming
-    that <filename>/etc/dbus-1/system-local.conf</filename> does not exist yet.
-    If it does, then you will need to merge in the changes). If
-    <envar>$GNOME_PREFIX</envar> is not
-    <filename class='directory'>/usr</filename>, you should uncomment the
-    <quote>servicedir</quote> line:</para>
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z
 
 @x
-    <para><parameter>--libexecdir=<envar>$GNOME_PREFIX</envar>/lib/GConf</parameter>:
+    <para><parameter>--libexecdir=/usr/lib/GConf</parameter>:
     This parameter causes the libexec files to be installed in the preferred
-    location of <filename class="directory">$GNOME_PREFIX/lib/GConf</filename>
+    location of <filename class="directory">/usr/lib/GConf</filename>
     instead of <filename
-    class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+    class="directory">/usr/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=<envar>$GNOME_PREFIX</envar>/lib/GConf</parameter>:
+    <para><parameter>--libexecdir=/usr/lib/GConf</parameter>:
     This parameter causes the libexec files to be installed in the preferred
-    location of <filename class="directory">$GNOME_PREFIX/lib/GConf</filename>
+    location of <filename class="directory">/usr/lib/GConf</filename>
     instead of <filename
-    class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+    class="directory">/usr/libexec</filename>.</para>
 @z
 
 @x
@@ -203,24 +188,16 @@
     <para><parameter>--disable-orbit</parameter>: This parameter is required if
     <application>ORBit2</application> is not installed.
     <application>ORBit2</application> is a deprecated package.</para>
-@z
-
-@x
-    <para><option>--disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
 @z
 
 @x
     <para><command>install -v -m755 -d
-    $GNOME_SYSCONFDIR/gconf/gconf.xml.system</command>: Creates a missing
+    /etc/gconf/gconf.xml.system</command>: Creates a missing
     directory. Without this directory, <command>gconf-sanity-check-2</command>
     will fail during <application>GDM</application> startup and login.</para>
 @y
     <para><command>install -v -m755 -d
-    $GNOME_SYSCONFDIR/gconf/gconf.xml.system</command>: Creates a missing
+    /etc/gconf/gconf.xml.system</command>: Creates a missing
     directory. Without this directory, <command>gconf-sanity-check-2</command>
     will fail during <application>GDM</application> startup and login.</para>
 @z
@@ -242,23 +219,29 @@
 @z
 
 @x
-        <seg>gconf-defaults-mechanism, gconf-merge-tree, gconf-sanity-check-2,
-        gconfd-2, gconftool-2, and gsettings-data-convert</seg>
-        <seg>libgconf-2.{so,a}, libgconfbackend-oldxml.{so,a},
-        libgconfbackend-xml.{so,a}, and libgsettingsgconfbackend.{so,a}</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/{gconf/{2,gconf.xml.defaults,
-        gconf.xml.mandatory,gconf.xml.system},xdg/autostart}
-        <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,lib/GConf/2,
-        share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
+        <seg>
+          gconf-merge-tree, gconftool-2, gsettings-data-convert and
+          gsettings-schema-convert
+        </seg>
+        <seg>
+          libgconf-2.so
+        </seg>
+        <seg>
+          /etc/gconf, /usr/include/gconf, /usr/lib/GConf, /usr/share/GConf,
+          /usr/share/gtk-doc/html/gconf and /usr/share/sgml/gconf
+        </seg>
 @y
-        <seg>gconf-defaults-mechanism, gconf-merge-tree, gconf-sanity-check-2,
-        gconfd-2, gconftool-2, gsettings-data-convert</seg>
-        <seg>libgconf-2.{so,a}, libgconfbackend-oldxml.{so,a},
-        libgconfbackend-xml.{so,a}, libgsettingsgconfbackend.{so,a}</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/{gconf/{2,gconf.xml.defaults,
-        gconf.xml.mandatory,gconf.xml.system},xdg/autostart}
-        <envar>$GNOME_PREFIX</envar>/{include/gconf/2/gconf,lib/GConf/2,
-        share/{gtk-doc/html/gconf,sgml/gconf}}</seg>
+        <seg>
+          gconf-merge-tree, gconftool-2, gsettings-data-convert,
+          gsettings-schema-convert
+        </seg>
+        <seg>
+          libgconf-2.so
+        </seg>
+        <seg>
+          /etc/gconf, /usr/include/gconf, /usr/lib/GConf, /usr/share/GConf,
+          /usr/share/gtk-doc/html/gconf, /usr/share/sgml/gconf
+        </seg>
 @z
 
 @x

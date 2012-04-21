@@ -78,22 +78,44 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk3"/> and
-    <xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/> and
+      <xref linkend="intltool"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk3"/>,
-    <xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="intltool"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="startup-notification"/> and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="startup-notification"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="startup-notification"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="startup-notification"/>
+    </para>
 @z
 
 @x
@@ -159,13 +181,25 @@
 @z
 
 @x
-        <seg>wnck-urgency-monitor and wnckprop</seg>
-        <seg>libwnck-1.{so,a}</seg>
-        <seg>/usr/{include/libwnck-1.0/libwnck,share/gtk-doc/html/libwnck}</seg>
+        <seg>
+          wnckprop and wnck-urgency-monitor
+        </seg>
+        <seg>
+          libwnck-3.so
+        </seg>
+        <seg>
+          /usr/include/libwnck-3.0 and /usr/share/gtk-doc/html/libwnck-3.0
+        </seg>
 @y
-        <seg>wnck-urgency-monitor, wnckprop</seg>
-        <seg>libwnck-1.{so,a}</seg>
-        <seg>/usr/{include/libwnck-1.0/libwnck,share/gtk-doc/html/libwnck}</seg>
+        <seg>
+          wnckprop, wnck-urgency-monitor
+        </seg>
+        <seg>
+          libwnck-3.so
+        </seg>
+        <seg>
+          /usr/include/libwnck-3.0, /usr/share/gtk-doc/html/libwnck-3.0
+        </seg>
 @z
 
 @x

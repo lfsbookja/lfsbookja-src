@@ -78,28 +78,50 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-desktop"/>,
-    <xref linkend="libunique"/>, and
-    <xref linkend="shared-mime-info"/></para>
+    <para role="required">
+      <xref linkend="gnome-desktop"/> and
+      <xref linkend="shared-mime-info"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-desktop"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="shared-mime-info"/></para>
+    <para role="required">
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="shared-mime-info"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="docbook-utils"/>,
-     <xref linkend="exempi"/>,
-    <xref linkend="libexif"/>, and
-    <ulink url="http://valgrind.org/">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="exempi"/>,
+      <xref linkend="libexif"/>,
+      <xref linkend="tracker"/> and
+      <ulink url="http://valgrind.org/">Valgrind</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="docbook-utils"/>,
-     <xref linkend="exempi"/>,
-    <xref linkend="libexif"/>,
-    <ulink url="http://valgrind.org/">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="exempi"/>,
+      <xref linkend="libexif"/>,
+      <xref linkend="tracker"/>,
+      <ulink url="http://valgrind.org/">Valgrind</ulink>
+    </para>
 @z
 
 @x
@@ -158,14 +180,14 @@
 @z
 
 @x
-    <para><command>--libexecdir=$GNOME_PREFIX/lib/nautilus</command> : This ensures
-    that the <filename class="directory">extensions-3.0/</filename> directory is
-    created in a location consistent with the FHS, instead of in
-    <filename class="directory">$GNOME_PREFIX/libexec/</filename>.</para>
+    <para><command>--libexecdir=/usr/lib/nautilus</command> : This ensures
+    that the <filename>nautilus-convert-metadata</filename> is
+    installed in a location consistent with the FHS, instead of in
+    <filename class="directory">/usr/libexec/</filename>.</para>
 @y
-    <para><command>--libexecdir=$GNOME_PREFIX/lib/nautilus</command> :
-    これは <filename class="directory">extensions-3.0/</filename> ディレクトリを <filename
-    class="directory">$GNOME_PREFIX/libexec/</filename> ではなく、FHS に適合するディレクトリとします。
+    <para><command>--libexecdir=/usr/lib/nautilus</command> :
+    これは <filename>nautilus-convert-metadata</filename> のインストール先を <filename
+    class="directory">/usr/libexec/</filename> ではなく、FHS に適合するディレクトリとします。
     </para>
 @z
 
@@ -195,21 +217,29 @@
 @z
 
 @x
-        <seg>nautilus, nautilus-autorun-software, nautilus-connect-server,
-        nautilus-file-management-properties, and nautilus-convert-metadata</seg>
-        <seg>libnautilus-extension.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/nautilus/libnautilus-extension,
-        lib/nautilus,share/{doc/nautilus-&nautilus-version;,
-        gtk-doc/html/libnautilus-extension,nautilus/{icons/hicolor/{16x16/emblems,
-        24x24/emblems,48x48/emblems},patterns,ui},pixmaps/nautilus}}</seg>
+        <seg>
+          nautilus, nautilus-autorun-software and nautilus-connect-server
+        </seg>
+        <seg>
+          libnautilus-extension.so
+        </seg>
+        <seg>
+          /usr/include/nautilus, /usr/lib/nautilus,
+          /usr/share/nautilus and
+          /usr/share/gtk-doc/html/libnautilus-extension
+        </seg>
 @y
-        <seg>nautilus, nautilus-autorun-software, nautilus-connect-server,
-        nautilus-file-management-properties, nautilus-convert-metadata</seg>
-        <seg>libnautilus-extension.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/nautilus/libnautilus-extension,
-        lib/nautilus,share/{doc/nautilus-&nautilus-version;,
-        gtk-doc/html/libnautilus-extension,nautilus/{icons/hicolor/{16x16/emblems,
-        24x24/emblems,48x48/emblems},patterns,ui},pixmaps/nautilus}}</seg>
+        <seg>
+          nautilus, nautilus-autorun-software, nautilus-connect-server
+        </seg>
+        <seg>
+          libnautilus-extension.so
+        </seg>
+        <seg>
+          /usr/include/nautilus, /usr/lib/nautilus,
+          /usr/share/nautilus,
+          /usr/share/gtk-doc/html/libnautilus-extension
+        </seg>
 @z
 
 @x
@@ -227,9 +257,9 @@
 @z
 
 @x libnautilus-extension.so
-          <para>supplies the functions needed by the file manager.</para>
+          <para>supplies the functions needed by the file manager extensions.</para>
 @y
           <para>
-          ファイルマネージャーに必要となる関数を提供します。
+          ファイルマネージャー拡張に必要となる関数を提供します。
           </para>
 @z

@@ -54,6 +54,130 @@
 @z
 
 @x
+      <para>April 12th, 2012</para>
+@y
+      <para>2012/04/12</para>
+@z
+@x
+          <para>[abenton] - Updated to ICU 49.1.1.</para>
+@y
+          <para>[abenton] - ICU 49.1.1 へのアップデート。</para>
+@z
+
+@x
+      <para>April 11th, 2012</para>
+@y
+      <para>2012/04/11</para>
+@z
+@x
+          <para>[bdubbs] - Update to wireshark-1.6.5.  Add instructions
+          to restrict use to authorized users.
+          Fixes 
+          <ulink url="&blfs-ticket-root;2816">#2815</ulink> and
+          <ulink url="&blfs-ticket-root;2911">#2911</ulink>.</para>
+@y
+          <para>[bdubbs] - wireshark-1.6.5 へのアップデート。
+          正規ユーザーにおける利用制限について説明追加。
+          <ulink url="&blfs-ticket-root;2816">#2815</ulink>,
+          <ulink url="&blfs-ticket-root;2911">#2911</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Fix screen to use the LFS value for gid.
+          Fixes 
+          <ulink url="&blfs-ticket-root;3268">#3268</ulink>.</para>
+@y
+          <para>[bdubbs] - Screen にて LFS が定める gid を利用するように修正。
+          <ulink url="&blfs-ticket-root;3268">#3268</ulink> を Fix に。</para>
+@z
+@x
+          <para>[dj] - Corrected bad sed for libacl.</para>
+@y
+          <para>[dj] - libacl にて sed の誤りを修正。</para>
+@z
+
+@x
+      <para>April 10th, 2012</para>
+@y
+      <para>2012/04/10</para>
+@z
+@x
+          <para>[bdubbs] - Update mysql configuration to not
+          create binary logs.  Fixes 
+          <ulink url="&blfs-ticket-root;3230">#3230</ulink>.</para>
+@y
+          <para>[bdubbs] -
+          mysql の設定において、バイナリログを生成しないように修正。
+          <ulink url="&blfs-ticket-root;3230">#3230</ulink> を Fix に。
+          </para>
+@z
+@x
+          <para>[bdubbs] - Update to net-tools-CVS_20101030. Fixes
+          <ulink url="&blfs-ticket-root;2754">#2754</ulink>.</para>
+@y
+          <para>[bdubbs] - net-tools-CVS_20101030 へのアップデート。
+          <ulink url="&blfs-ticket-root;2754">#2754</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Remove lesstif and xpdf.</para>
+@y
+          <para>[bdubbs] - lesstif と xpdf の削除。</para>
+@z
+
+@x
+      <para>April 9th, 2012</para>
+@y
+      <para>2012/04/09</para>
+@z
+@x
+          <para>[bdubbs] - Update network service scripts to be consistent 
+          with LFS changes.</para>
+@y
+          <para>[bdubbs] -
+          LFS の更新に合わせてネットワークサービススクリプトを更新。
+          </para>
+@z
+@x
+          <para>[rthomsen] - Upgrade to CMake 2.8.7. Fixes 
+          <ulink url="&blfs-ticket-root;3322">#3322</ulink>.</para>
+@y
+          <para>[rthomsen] - CMake 2.8.7 へのアップグレード。
+          <ulink url="&blfs-ticket-root;3322">#3322</ulink> を Fix に。</para>
+@z
+@x
+          <para>[abenton] - Added Libre Office 3.5.2.2
+          Thanks to Fernando de Oliveira.</para>
+@y
+          <para>[abenton] - Libre Office 3.5.2.2 追加。
+          Fernando de Oliveira に感謝。</para>
+@z
+
+@x
+      <para>April 8th, 2012</para>
+@y
+      <para>2012/04/08</para>
+@z
+@x
+          <para>[rthomsen] - Corrected Qt configuration. Thanks to Pierre 
+          Labastie for the report.</para>
+@y
+          <para>[rthomsen] - Qt の設定を修正。
+          報告をあげてくれた Pierre Labastie に感謝。</para>
+@z
+@x
+          <para>[ken] - reinstate some of the notes on DRI, particularly re the
+          'video' group, and expand to cover DRI2 hardware video acceleration.  Tweak
+          certain gnome comments to show that it is hardware acceleration which is
+          required.</para>
+@y
+          <para>[ken] -
+          reinstate some of the notes on DRI, particularly re the
+          'video' group, and expand to cover DRI2 hardware video acceleration.  Tweak
+          certain gnome comments to show that it is hardware acceleration which is
+          required.
+          </para>
+@z
+
+@x
       <para>April 7th, 2012</para>
 @y
       <para>2012/04/07</para>
@@ -82,19 +206,19 @@
 @z
 @x
           <para>[rthomsen] - Added wicd 1.7.1. Fixes 
-	  <ulink url="&blfs-ticket-root;3293">#3293</ulink>.</para>
+     <ulink url="&blfs-ticket-root;3293">#3293</ulink>.</para>
 @y
           <para>[rthomsen] - wicd 1.7.1 追加。
-	  <ulink url="&blfs-ticket-root;3293">#3293</ulink> を Fix に。</para>
+     <ulink url="&blfs-ticket-root;3293">#3293</ulink> を Fix に。</para>
 @z
 @x
           <para>[rthomsen] - Upgrade to dhcpcd 5.5.6 and improve the dhcpcd 
-	  network service script to provide a cleaner boot message. Fixes 
-	  <ulink url="&blfs-ticket-root;3290">#3290</ulink>.</para>
+          network service script to provide a cleaner boot message. Fixes 
+          <ulink url="&blfs-ticket-root;3290">#3290</ulink>.</para>
 @y
           <para>[rthomsen] - dhcpcd 5.5.6 へのアップグレード。
           またネットワークサービススクリプトを改善し、ブートメッセージを的確化。
-	  <ulink url="&blfs-ticket-root;3290">#3290</ulink> を Fix に。</para>
+          <ulink url="&blfs-ticket-root;3290">#3290</ulink> を Fix に。</para>
 @z
 @x
           <para>[rthomsen] - Disable building of libvpx static library.</para>
@@ -129,10 +253,10 @@
 @z
 @x
           <para>[rthomsen] - Upgrade to Virtuoso 6.1.5. Fixes 
-	  <ulink url="&blfs-ticket-root;3317">#3317</ulink>.</para>
+          <ulink url="&blfs-ticket-root;3317">#3317</ulink>.</para>
 @y
           <para>[rthomsen] - Virtuoso 6.1.5 へのアップグレード。
-	  <ulink url="&blfs-ticket-root;3317">#3317</ulink> を Fix に。</para>
+          <ulink url="&blfs-ticket-root;3317">#3317</ulink> を Fix に。</para>
 @z
 
 @x
@@ -142,10 +266,10 @@
 @z
 @x
           <para>[rthomsen] - Upgrade to Qt 4.8.1 and add two patches. Fixes 
-	    <ulink url="&blfs-ticket-root;3320">#3320</ulink>.</para>
+          <ulink url="&blfs-ticket-root;3320">#3320</ulink>.</para>
 @y
           <para>[rthomsen] - Qt 4.8.1 へのアップグレードとパッチ２つ追加。
-	    <ulink url="&blfs-ticket-root;3320">#3320</ulink> を Fix に。</para>
+          <ulink url="&blfs-ticket-root;3320">#3320</ulink> を Fix に。</para>
 @z
 @x
           <para>[dj] - Xorg Applicatons require MesaLib. Fixes #3218.</para>

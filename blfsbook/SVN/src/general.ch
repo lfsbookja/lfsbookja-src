@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "April 7th, &year;">
+<!ENTITY releasedate  "April 21st, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20120408">
-<!ENTITY jratio       "48.6 &percnt;">
+<!ENTITY jversion     "20120421">
+<!ENTITY jratio       "48.5 &percnt;">
 @z
 
 @x
@@ -82,7 +82,7 @@
 @y
 <!ENTITY lfs-root             "http://www.&lfs-domainname;/lfs/view/&lfs-version;">
 <!ENTITY lfs-dev              "../../../../lfs/view/development">
-<!ENTITY lfsja-dev            "http://lfsbookja.sourceforge.jp/svn.ja/">
+<!ENTITY lfsja-dev            "http://lfsbookja.sourceforge.jp/svn.ja">
 @z
 
 @x

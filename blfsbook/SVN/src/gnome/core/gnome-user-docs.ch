@@ -78,22 +78,30 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/>,
-    <xref linkend="itstool"/>, and
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="itstool"/> and
+      <xref linkend="which"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/>,
-    <xref linkend="itstool"/>,
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="which"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="rarian"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x
@@ -146,27 +154,19 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/usr/share/{gnome/help/{gnome-access-guide/*,
-        system-admin-guide/*,user-guide/*},omf/{gnome-access-guide,
-        system-admin-guide,user-guide}}</seg>
+        <seg>
+          /usr/share/help/*/gnome-help
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/usr/share/{gnome/help/{gnome-access-guide/*,
-        system-admin-guide/*,user-guide/*},omf/{gnome-access-guide,
-        system-admin-guide,user-guide}}</seg>
+        <seg>
+          /usr/share/help/*/gnome-help
+        </seg>
 @z
 
 @x

@@ -14,21 +14,21 @@
 @z
 
 @x
-    <title>Introduction to cogl</title>
+    <title>Introduction to Cogl</title>
 @y
-    <title>&IntroductionTo1;cogl&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Cogl&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Cogl</application> Cogl is a modern 3D graphics API with
+    <para><application>Cogl</application> is a modern 3D graphics API with
     associated utility APIs designed to expose the features of 3D graphics hardware
     using a direct state access API design, as opposed to the state-machine style
-    of OpenGL. </para>
+    of OpenGL.</para>
 @y
-    <para><application>Cogl</application> Cogl is a modern 3D graphics API with
+    <para><application>Cogl</application> is a modern 3D graphics API with
     associated utility APIs designed to expose the features of 3D graphics hardware
     using a direct state access API design, as opposed to the state-machine style
-    of OpenGL. </para>
+    of OpenGL.</para>
 @z
 
 @x
@@ -74,29 +74,51 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">cogl Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Cogl Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;cogl&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Cogl&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gdk-pixbuf"/>,
-    <xref linkend="mesalib"/> and <xref linkend="pango"/>.</para>
+    <para role="required">
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="mesalib"/> and
+      <xref linkend="pango"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gdk-pixbuf"/>,
-    <xref linkend="mesalib"/>, <xref linkend="pango"/>.</para>
+    <para role="required">
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="mesalib"/>,
+      <xref linkend="pango"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>
-    (Required if building GNOME)</para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/>
-    (GNOME ビルド時に必要)</para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -108,17 +130,17 @@
 @z
 
 @x
-    <title>Installation of cogl</title>
+    <title>Installation of Cogl</title>
 @y
-    <title>&InstallationOf1;cogl&InstallationOf2;</title>
+    <title>&InstallationOf1;Cogl&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>cogl</application> by running the following
+    <para>Install <application>Cogl</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>cogl</application> をビルドします。
+    以下のコマンドを実行して <application>Cogl</application> をビルドします。
     </para>
 @z
 
@@ -145,37 +167,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-
         <seg>
           libcogl-pango.so and libcogl.so
        </seg>
-
         <seg>
-         /usr/include/cogl/{cogl,cogl-pango},
-         /usr/share/cogl/examples-data and 
+         /usr/include/cogl,
+         /usr/share/cogl and 
          /usr/share/gtk-doc/html/{cogl,cogl-2.0-experimental}
        </seg>
 @y
-        <seg>&None;</seg>
-
         <seg>
           libcogl-pango.so, libcogl.so
        </seg>
-
         <seg>
-         /usr/include/cogl/{cogl,cogl-pango},
-         /usr/share/cogl/examples-data,
+         /usr/include/cogl,
+         /usr/share/cogl,
          /usr/share/gtk-doc/html/{cogl,cogl-2.0-experimental}
        </seg>
 @z

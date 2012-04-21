@@ -1,8 +1,16 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/office
 CHANGE_FILES = \
-	abiword.ch \
-	gnucash.ch \
-	gnumeric.ch \
+	abiword.ch     \
+	gnucash.ch     \
+	gnumeric.ch    \
+	libreoffice.ch \
 	office.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -17,7 +25,8 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-abiword.xml:   $(BOOKdir)/$@ $(srcdir)/abiword.ch
-gnucash.xml:   $(BOOKdir)/$@ $(srcdir)/gnucash.ch
-gnumeric.xml:  $(BOOKdir)/$@ $(srcdir)/gnumeric.ch
-office.xml:    $(BOOKdir)/$@ $(srcdir)/office.ch
+abiword.xml:      $(BOOKdir)/$@ $(srcdir)/abiword.ch
+gnucash.xml:      $(BOOKdir)/$@ $(srcdir)/gnucash.ch
+gnumeric.xml:     $(BOOKdir)/$@ $(srcdir)/gnumeric.ch
+libreoffice.xml:  $(BOOKdir)/$@ $(srcdir)/libreoffice.ch
+office.xml:       $(BOOKdir)/$@ $(srcdir)/office.ch

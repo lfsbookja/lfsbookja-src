@@ -1,3 +1,10 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/libdriv
 CHANGE_FILES = \
 	alsa-firmware.ch \
@@ -9,10 +16,15 @@ CHANGE_FILES = \
 	alsa.ch \
 	arts.ch \
 	audiofile.ch \
+	celt051.ch \
 	esound.ch \
 	faac.ch \
 	faad2.ch \
+	farsight2.ch \
+	farstream.ch \
 	flac.ch \
+	gst-ffmpeg.ch \
+	gst-plugins-bad.ch \
 	gst-plugins-base.ch \
 	gst-plugins-good.ch \
 	gst-plugins-ugly.ch \
@@ -20,6 +32,8 @@ CHANGE_FILES = \
 	id3lib.ch \
 	liba52.ch \
 	libao.ch \
+	libcanberra.ch \
+	libdiscid.ch \
 	libdriv.ch \
 	libdv.ch \
 	libdvdcss.ch \
@@ -29,29 +43,24 @@ CHANGE_FILES = \
 	libmpeg2.ch \
 	libmpeg3.ch \
 	libmusicbrainz.ch \
+	libmusicbrainz3.ch \
 	libogg.ch \
 	libquicktime.ch \
+	libsndfile.ch \
 	libtheora.ch \
 	libvorbis.ch \
+	libvpx.ch \
 	nas.ch \
+	opal.ch \
 	openquicktime.ch \
+	pulseaudio.ch \
 	sdl.ch \
+	sound-theme-freedesktop.ch \
 	speex.ch \
 	taglib.ch \
 	xine-lib.ch \
-	xvid.ch \
-	libcanberra.ch \
-	opal.ch \
-	telepathy-farsight.ch \
-	farsight2.ch \
-	libvpx.ch \
-	libmusicbrainz3.ch \
-	libdiscid.ch \
-	pulseaudio.ch \
-	libsndfile.ch \
-	gst-ffmpeg.ch \
-	gst-plugins-bad.ch \
-	sound-theme-freedesktop.ch
+	xvid.ch
+
 EXTRA_DIST = $(CHANGE_FILES) gst-plugins-bad.sed
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -74,10 +83,17 @@ alsa-utils.xml:              $(BOOKdir)/$@ $(srcdir)/alsa-utils.ch
 alsa.xml:                    $(BOOKdir)/$@ $(srcdir)/alsa.ch
 arts.xml:                    $(BOOKdir)/$@ $(srcdir)/arts.ch
 audiofile.xml:               $(BOOKdir)/$@ $(srcdir)/audiofile.ch
+celt051.xml:                 $(BOOKdir)/$@ $(srcdir)/celt051.ch
 esound.xml:                  $(BOOKdir)/$@ $(srcdir)/esound.ch
 faac.xml:                    $(BOOKdir)/$@ $(srcdir)/faac.ch
 faad2.xml:                   $(BOOKdir)/$@ $(srcdir)/faad2.ch
+farsight2.xml:               $(BOOKdir)/$@ $(srcdir)/farsight2.ch
+farstream.xml:               $(BOOKdir)/$@ $(srcdir)/farstream.ch
 flac.xml:                    $(BOOKdir)/$@ $(srcdir)/flac.ch
+gst-ffmpeg.xml:              $(BOOKdir)/$@ $(srcdir)/gst-ffmpeg.ch
+gst-plugins-bad.xml:         $(BOOKdir)/$@ $(srcdir)/gst-plugins-bad.ch $(srcdir)/gst-plugins-bad.sed
+	sed -f $(srcdir)/gst-plugins-bad.sed $(BOOKdir)/gst-plugins-bad.xml > $(BOOKdir)/gst-plugins-bad_lfsbookja.xml
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/gst-plugins-bad_lfsbookja.xml $(srcdir)/$*.ch
 gst-plugins-base.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-base.ch
 gst-plugins-good.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-good.ch
 gst-plugins-ugly.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-ugly.ch
@@ -85,6 +101,8 @@ gstreamer.xml:               $(BOOKdir)/$@ $(srcdir)/gstreamer.ch
 id3lib.xml:                  $(BOOKdir)/$@ $(srcdir)/id3lib.ch
 liba52.xml:                  $(BOOKdir)/$@ $(srcdir)/liba52.ch
 libao.xml:                   $(BOOKdir)/$@ $(srcdir)/libao.ch
+libcanberra.xml:             $(BOOKdir)/$@ $(srcdir)/libcanberra.ch
+libdiscid.xml:               $(BOOKdir)/$@ $(srcdir)/libdiscid.ch
 libdriv.xml:                 $(BOOKdir)/$@ $(srcdir)/libdriv.ch
 libdv.xml:                   $(BOOKdir)/$@ $(srcdir)/libdv.ch
 libdvdcss.xml:               $(BOOKdir)/$@ $(srcdir)/libdvdcss.ch
@@ -94,28 +112,20 @@ libmad.xml:                  $(BOOKdir)/$@ $(srcdir)/libmad.ch
 libmpeg2.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg2.ch
 libmpeg3.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg3.ch
 libmusicbrainz.xml:          $(BOOKdir)/$@ $(srcdir)/libmusicbrainz.ch
+libmusicbrainz3.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz3.ch
 libogg.xml:                  $(BOOKdir)/$@ $(srcdir)/libogg.ch
 libquicktime.xml:            $(BOOKdir)/$@ $(srcdir)/libquicktime.ch
+libsndfile.xml:              $(BOOKdir)/$@ $(srcdir)/libsndfile.ch
 libtheora.xml:               $(BOOKdir)/$@ $(srcdir)/libtheora.ch
 libvorbis.xml:               $(BOOKdir)/$@ $(srcdir)/libvorbis.ch
+libvpx.xml:                  $(BOOKdir)/$@ $(srcdir)/libvpx.ch
 nas.xml:                     $(BOOKdir)/$@ $(srcdir)/nas.ch
+opal.xml:                    $(BOOKdir)/$@ $(srcdir)/opal.ch
 openquicktime.xml:           $(BOOKdir)/$@ $(srcdir)/openquicktime.ch
+pulseaudio.xml:              $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
 sdl.xml:                     $(BOOKdir)/$@ $(srcdir)/sdl.ch
+sound-theme-freedesktop.xml: $(BOOKdir)/$@ $(srcdir)/sound-theme-freedesktop.ch
 speex.xml:                   $(BOOKdir)/$@ $(srcdir)/speex.ch
 taglib.xml:                  $(BOOKdir)/$@ $(srcdir)/taglib.ch
 xine-lib.xml:                $(BOOKdir)/$@ $(srcdir)/xine-lib.ch
 xvid.xml:                    $(BOOKdir)/$@ $(srcdir)/xvid.ch
-libcanberra.xml:             $(BOOKdir)/$@ $(srcdir)/libcanberra.ch
-opal.xml:                    $(BOOKdir)/$@ $(srcdir)/opal.ch
-telepathy-farsight.xml:      $(BOOKdir)/$@ $(srcdir)/telepathy-farsight.ch
-farsight2.xml:               $(BOOKdir)/$@ $(srcdir)/farsight2.ch
-libvpx.xml:                  $(BOOKdir)/$@ $(srcdir)/libvpx.ch
-libmusicbrainz3.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz3.ch
-libdiscid.xml:               $(BOOKdir)/$@ $(srcdir)/libdiscid.ch
-pulseaudio.xml:              $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
-libsndfile.xml:              $(BOOKdir)/$@ $(srcdir)/libsndfile.ch
-gst-ffmpeg.xml:              $(BOOKdir)/$@ $(srcdir)/gst-ffmpeg.ch
-gst-plugins-bad.xml:         $(BOOKdir)/$@ $(srcdir)/gst-plugins-bad.ch $(srcdir)/gst-plugins-bad.sed
-	sed -f $(srcdir)/gst-plugins-bad.sed $(BOOKdir)/gst-plugins-bad.xml > $(BOOKdir)/gst-plugins-bad_lfsbookja.xml
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/gst-plugins-bad_lfsbookja.xml $(srcdir)/$*.ch
-sound-theme-freedesktop.xml: $(BOOKdir)/$@ $(srcdir)/sound-theme-freedesktop.ch

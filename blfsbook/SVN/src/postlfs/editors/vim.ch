@@ -129,7 +129,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> or
-      <xref linkend="lesstif"/>,
+      <!-- <xref linkend="lesstif"/>, -->
+      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>,
       <xref linkend="python2"/>,
       <xref linkend="tcl"/>,
       <xref linkend="ruby"/>, and
@@ -139,7 +140,8 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> または
-      <xref linkend="lesstif"/>,
+      <!-- <xref linkend="lesstif"/>, -->
+      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>,
       <xref linkend="python2"/>,
       <xref linkend="tcl"/>,
       <xref linkend="ruby"/>,

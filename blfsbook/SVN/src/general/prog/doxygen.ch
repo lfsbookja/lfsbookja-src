@@ -187,11 +187,11 @@
 
 @x
     <para><option>--with-doxywizard</option>: Use this parameter if
-    <application>Qt4</application> is installed and you wish to build the
+    <application>Qt</application> is installed and you wish to build the
     GUI front-end.</para>
 @y
     <para><option>--with-doxywizard</option>: Use this parameter if
-    <application>Qt4</application> is installed and you wish to build the
+    <application>Qt</application> is installed and you wish to build the
     GUI front-end.</para>
 @z
 

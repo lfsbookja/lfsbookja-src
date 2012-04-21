@@ -14,34 +14,20 @@
 @z
 
 @x
-  <!ENTITY gamin-time          "0.1 SBU (up to 3 minutes, processor independent, to run the test suite)">
-@y
-  <!ENTITY gamin-time          "0.1 SBU (プロセッサーには関係なく、テストスイート実施の場合は3分程度)">
-@z
-
-@x
     <title>Introduction to Gamin</title>
 @y
     <title>&IntroductionTo1;Gamin&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Gamin</application> package contains a
-    File Alteration Monitor which is useful for notifying applications of
-    changes to the file system. Gamin is compatible with <ulink
-    url="http://oss.sgi.com/projects/fam/">FAM</ulink>.</para>
+      The <application>Gamin</application> package contains a File Alteration
+      Monitor which is useful for notifying applications of changes to the file
+      system. Gamin is compatible with
+      <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>.
 @y
-    <para>
-    <application>Gamin</application> パッケージは、ファイル変更監視 (File Alteration Monitor) 機能を提供します。
-    この機能はファイルシステム上への変更を、アプリケーションに通知するために利用することができます。
-    Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink> と互換性があります。
-    </para>
-@z
-
-@x
-    <para>&lfssvn_built;20100803&lfssvn_built2;</para>
-@y
-    <para>&lfssvn_built;20100803&lfssvn_built2;</para>
+      <application>Gamin</application> パッケージは、ファイル変更監視 (File Alteration Monitor) 機能を提供します。
+      この機能はファイルシステム上への変更を、アプリケーションに通知するために利用することができます。
+      Gamin は <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink> と互換性があります。
 @z
 
 @x
@@ -51,39 +37,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gamin-download-http;"/></para>
+          Download (HTTP): <ulink url="&gamin-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gamin-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gamin-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gamin-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gamin-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gamin-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gamin-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gamin-md5sum;</para>
+          Download MD5 sum: &gamin-md5sum;
 @y
-        <para>&Download; MD5 sum: &gamin-md5sum;</para>
+          &Download; MD5 sum: &gamin-md5sum;
 @z
 
 @x
-        <para>Download size: &gamin-size;</para>
+          Download size: &gamin-size;
 @y
-        <para>&DownloadSize;: &gamin-size;</para>
+          &DownloadSize;: &gamin-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gamin-buildsize;</para>
+          Estimated disk space required: &gamin-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gamin-buildsize;</para>
+          &Estimateddiskspacerequired;: &gamin-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gamin-time;</para>
+          Estimated build time: &gamin-time;
 @y
-        <para>&Estimatedbuildtime;: &gamin-time;</para>
+          &Estimatedbuildtime;: &gamin-time;
 @z
 
 @x
@@ -94,26 +80,32 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python2"/></para>
+    <para role="optional">
+      <xref linkend="python2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="python2"/></para>
+    <para role="optional">
+      <xref linkend="python2"/>
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gamin"/></para>
+      User Notes: <ulink url="&blfs-wiki;/gamin"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gamin"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/gamin"/>
 @z
 
 @x
@@ -123,30 +115,24 @@
 @z
 
 @x
-    <para>Install <application>Gamin</application> by running the
-    following commands:</para>
+      Install <application>Gamin</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Gamin</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Gamin</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. Note
-    that some tests may display errors.</para>
+      To test the results, issue: <command>make check</command>. Note that some
+      tests may display errors.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    テストの中にはエラーが表示されるものもあります。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストの中にはエラーが表示されるものもあります。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
@@ -156,13 +142,13 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: This switch prevents most of the
-    static libraries being built.</para>
+      <command>sed -i 's/G_CONST_RETURN/const/'
+      server/gam_{node,subscription}.{c,h}</command>: This sed fixes compiling
+      with <application>Glib 2.32</application> or greater installed.
 @y
-    <para>
-    <option>--disable-static</option>:
-    このスイッチは、ほぼすべてのスタティックライブラリをビルドしないようにします。
-    </para>
+      <command>sed -i 's/G_CONST_RETURN/const/'
+      server/gam_{node,subscription}.{c,h}</command>:
+      この sed の処理によって、<application>Glib 2.32</application> またはそれ以上を用いてビルドするようにします。
 @z
 
 @x
@@ -178,15 +164,13 @@
 @z
 
 @x
-      <para>No configuration is generally required and the default options
-      should work for most users. See
-      <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> for
-      details.</para>
+        No configuration is generally required and the default options should
+        work for most users. See
+        <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> for
+        details.
 @y
-      <para>
-      一般に設定を行う必要はなく、たいていのユーザーにとってはデフォルトのオプション設定により十分動作します。
-      詳しくは <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> を参照してください。
-      </para>
+        一般に設定を行う必要はなく、たいていのユーザーにとってはデフォルトのオプション設定により十分動作します。
+        詳しくは <ulink url="http://www.gnome.org/~veillard/gamin/config.html"/> を参照してください。
 @z
 
 @x
@@ -207,15 +191,17 @@
 
 @x
         <seg>gam_server</seg>
-        <seg>libfam.{so,a}, libgamin-1.{so,a}, libgamin_shared.a and
-        optionally, <application>Python</application> _gamin.{so,a}
-        module</seg>
+        <seg>
+          libfam.so, libgamin-1.so, libgamin_shared.a and (if you've installed
+          <application>Python 2</application>) _gamin.so.
+        </seg>
         <seg>/usr/share/doc/gamin-&gamin-version;</seg>
 @y
         <seg>gam_server</seg>
-        <seg>libfam.{so,a}, libgamin-1.{so,a}, libgamin_shared.a,
-        任意ビルドとして <application>Python</application> _gamin.{so,a}
-        モジュール</seg>
+        <seg>
+          libfam.so, libgamin-1.so, libgamin_shared.a,
+          (<application>Python 2</application> をインストールしている場合) _gamin.so.
+        </seg>
         <seg>/usr/share/doc/gamin-&gamin-version;</seg>
 @z
 
@@ -226,26 +212,20 @@
 @z
 
 @x gam_server
-        <para>is the file alteration monitor daemon that is started on demand
-        for each user.</para>
+          is the file alteration monitor daemon that is started on demand for
+          each user.
 @y
-        <para>
-        ファイル変更監視デーモンであり、各ユーザーからの求めに応じて起動します。
-        </para>
+          ファイル変更監視デーモンであり、各ユーザーからの求めに応じて起動します。
 @z
 
 @x libgamin.{so,a}
-        <para>contains functions that support the file allocation monitor.</para>
+          contains functions that support the file allocation monitor.
 @y
-        <para>
-        ファイル変更監視機能をサポートする関数を提供します。
-        </para>
+          ファイル変更監視機能をサポートする関数を提供します。
 @z
 
 @x libfam.{so,a}
-        <para>contains functions that provide compatibility with FAM.</para>
+          contains functions that provide compatibility with FAM.
 @y
-        <para>
-        FAM との互換関数を提供します。
-        </para>
+          FAM との互換関数を提供します。
 @z

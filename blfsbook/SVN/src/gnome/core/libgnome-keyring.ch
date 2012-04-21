@@ -80,26 +80,48 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libgcrypt"/>, and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="dbus"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libgcrypt"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="libgcrypt"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="dbus"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://www.valgrind.org">Valgrind</ulink>
+    </para>
 @z
 
 @x
@@ -154,25 +176,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgnome-keyring.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-keyring-1,
-        share/{gtk-doc/html/gnome-keyring,locale/fy/LC_MESSAGES}}</seg>
+        <seg>
+          libgnome-keyring.so
+        </seg>
+        <seg>
+          /usr/include/gnome-keyring-1 and
+          /usr/share/gtk-doc/html/gnome-keyring
+        </seg>
 @y
-        <seg>なし</seg>
-        <seg>libgnome-keyring.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-keyring-1,
-        share/{gtk-doc/html/gnome-keyring,locale/fy/LC_MESSAGES}}</seg>
+        <seg>
+          libgnome-keyring.so
+        </seg>
+        <seg>
+          /usr/include/gnome-keyring-1,
+          /usr/share/gtk-doc/html/gnome-keyring
+        </seg>
 @z
 
 @x

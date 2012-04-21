@@ -1,3 +1,10 @@
+#
+# This is part of BLFSbookja package.
+#
+# $Author$
+# $Rev$
+# $Date::                           $
+#
 BOOKdir = $(top_builddir)/@bookdir@/general/genlib
 CHANGE_FILES = \
 	apr.ch \
@@ -63,6 +70,8 @@ CHANGE_FILES = \
 	qca.ch \
 	slib.ch \
 	talloc.ch \
+	telepathy-farsight.ch \
+	telepathy-farstream.ch \
 	telepathy-glib.ch \
 	telepathy-logger.ch \
 	telepathy-mission-control.ch \
@@ -146,6 +155,8 @@ libunistring.xml:          $(BOOKdir)/$@ $(srcdir)/libunistring.ch
 libgee.xml:                $(BOOKdir)/$@ $(srcdir)/libgee.ch
 telepathy-logger.xml:      $(BOOKdir)/$@ $(srcdir)/telepathy-logger.ch
 telepathy-mission-control.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-mission-control.ch
+telepathy-farsight.xml:    $(BOOKdir)/$@ $(srcdir)/telepathy-farsight.ch
+telepathy-farstream.xml:   $(BOOKdir)/$@ $(srcdir)/telepathy-farstream.ch
 folks.xml:                 $(BOOKdir)/$@ $(srcdir)/folks.ch
 json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
 json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch

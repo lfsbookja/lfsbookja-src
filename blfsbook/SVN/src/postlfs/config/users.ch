@@ -101,13 +101,11 @@
 @x
   <para>One value that is missing is 65534.  This value is customarily assigned
   to the user <systemitem class="username">nobody</systemitem> and group
-  <systemitem class="groupname">nogroup</systemitem> and is unnecessary.  <!--The
-  issue is explained in more detail in the first note in the <xref
-  linkend="nfs-utils-install"/> section.--></para>
+  <systemitem class="groupname">nogroup</systemitem> and is unnecessary.
+  </para>
 @y
   <para>One value that is missing is 65534.  This value is customarily assigned
   to the user <systemitem class="username">nobody</systemitem> and group
-  <systemitem class="groupname">nogroup</systemitem> and is unnecessary.  <!--The
-  issue is explained in more detail in the first note in the <xref
-  linkend="nfs-utils-install"/> section.--></para>
+  <systemitem class="groupname">nogroup</systemitem> and is unnecessary.
+  </para>
 @z

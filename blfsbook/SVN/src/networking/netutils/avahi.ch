@@ -233,11 +233,11 @@
 @x
     <para><parameter>--disable-qt4</parameter>: This parameter disables the
     building of <application>Qt4Core</application> mainloop integration. Omit
-    this if you have installed <application>Qt4</application>.</para>
+    this if you have installed <application>Qt</application>.</para>
 @y
     <para><parameter>--disable-qt4</parameter>: This parameter disables the
     building of <application>Qt4Core</application> mainloop integration. Omit
-    this if you have installed <application>Qt4</application>.</para>
+    this if you have installed <application>Qt</application>.</para>
 @z
 
 @x

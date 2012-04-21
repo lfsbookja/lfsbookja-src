@@ -73,10 +73,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
@@ -170,30 +174,26 @@
         <seg>
           g-ir-annotation-tool, g-ir-compiler, g-ir-generate and g-ir-scanner
         </seg>
-
         <seg>
           _giscanner.so and libgirepository-1.0.so
         </seg>
-        
         <seg>
           /usr/include/gobject-introspection-1.0,
-          /usr/lib/{girepository-1.0,gobject-introspection/giscanner},
-          /usr/share/{gir-1.0,gobject-introspection-1.0/tests} and
+          /usr/lib/{girepository-1.0,gobject-introspection},
+          /usr/share/{gir-1.0,gobject-introspection-1.0} and
           /usr/share/gtk-doc/html/gi
         </seg>
 @y
         <seg>
           g-ir-annotation-tool, g-ir-compiler, g-ir-generate, g-ir-scanner
         </seg>
-
         <seg>
           _giscanner.so, libgirepository-1.0.so
         </seg>
-        
         <seg>
           /usr/include/gobject-introspection-1.0,
-          /usr/lib/{girepository-1.0,gobject-introspection/giscanner},
-          /usr/share/{gir-1.0,gobject-introspection-1.0/tests},
+          /usr/lib/{girepository-1.0,gobject-introspection},
+          /usr/share/{gir-1.0,gobject-introspection-1.0},
           /usr/share/gtk-doc/html/gi
         </seg>
 @z

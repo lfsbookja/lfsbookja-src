@@ -81,24 +81,42 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk3"/>,
-    <xref linkend="intltool"/>, and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/> and
+      <xref linkend="intltool"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk3"/>,
-    <xref linkend="intltool"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="intltool"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (Required if building GNOME)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+      (GNOME のビルド時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <xref linkend="pygtk"/> (including the gtk module)</para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="pygtk"/> (gtk モジュールを含む)</para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -145,29 +163,15 @@
 @z
 
 @x
-    <para><command>sed -i ... termcaps/xterm</command>: The
-    <keysym>Home</keysym> and <keysym>End</keysym> keys are broken in the
-    <command>xterm</command> termcap file. This <command>sed</command> command
-    fixes them.</para>
-@y
-    <para>
-    <command>sed -i ... termcaps/xterm</command>:
-    <command>xterm</command> の termcap ファイルにて <keysym>Home</keysym> キーや <keysym>End</keysym> キーの定義が不適切なものになっています。
-    <command>sed</command> コマンドによりこれを修正します。
-    </para>
-@z
-
-@x
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/vte</parameter>: This parameter
+    <para><parameter>--libexecdir=/usr/lib/vte</parameter>: This parameter
     causes <command>gnome-pty-helper</command> to be installed in the preferred location of
-    <filename class="directory"><envar>$GNOME_PREFIX</envar>/lib/vte</filename>
-    instead of <filename class="directory"><envar>$GNOME_PREFIX</envar>/libexec</filename>.</para>
+    <filename class="directory">/usr/lib/vte</filename>
+    instead of <filename class="directory">/usr/libexec</filename>.</para>
 @y
-    <para>
-    <parameter>--libexecdir=$GNOME_PREFIX/lib/vte</parameter>:
-    このパラメーターは libexec ファイルのインストール先として <filename
-    class="directory"><envar>$GNOME_PREFIX</envar>/libexec</filename> ではなく、より適切な <filename
-    class="directory"><envar>$GNOME_PREFIX</envar>/lib/vte</filename> とします。
+    <para><parameter>--libexecdir=/usr/lib/vte</parameter>:
+    このパラメーターは <command>gnome-pty-helper</command> のインストール先を <filename
+    class="directory">/usr/libexec</filename> ではなく、より適切な <filename
+    class="directory">/usr/lib/vte</filename> とします。
     </para>
 @z
 
@@ -194,8 +198,8 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -204,17 +208,27 @@
 @z
 
 @x
-        <seg>vte, decset, gnome-pty-helper, interpret, osc, slowcat, and
-        window</seg>
-        <seg>libvte.{so,a} and the vtemodule.{so,a}
-        <application>Python</application> module</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/vte,lib/vte,share/{gtk-doc/html/vte,vte/termcap}}</seg>
+        <seg>
+          vte2_90
+        </seg>
+        <seg>
+          libvte2_90.so
+        </seg>
+        <seg>
+          /usr/include/vte-2.90, /usr/lib/vte and
+          /usr/share/gtk-doc/html/vte-2.90
+        </seg>
 @y
-        <seg>vte, decset, gnome-pty-helper, interpret, osc, slowcat,
-        window</seg>
-        <seg>libvte.{so,a}, vtemodule.{so,a}
-        <application>Python</application> モジュール</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/vte,lib/vte,share/{gtk-doc/html/vte,vte/termcap}}</seg>
+        <seg>
+          vte2_90
+        </seg>
+        <seg>
+          libvte2_90.so
+        </seg>
+        <seg>
+          /usr/include/vte-2.90, /usr/lib/vte,
+          /usr/share/gtk-doc/html/vte-2.90
+        </seg>
 @z
 
 @x
@@ -223,7 +237,7 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x vte
+@x vte2_90
           <para>is a test application for the <application>VTE</application>
           libraries.</para>
 @y
@@ -232,12 +246,10 @@
           </para>
 @z
 
-@x libvte.{so,a}
+@x libvte2_90.so
           <para>is a library which implements a terminal emulator
-          widget for <application>GTK+</application>.</para>
+          widget for <application>GTK+-3</application>.</para>
 @y
-          <para>
-          is a library which implements a terminal emulator
-          widget for <application>GTK+</application>.
-          </para>
+          <para>is a library which implements a terminal emulator
+          widget for <application>GTK+-3</application>.</para>
 @z

@@ -79,18 +79,38 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gobject-introspection"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="vala"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="vala"/>
+    </para>
 @z
 
 @x
@@ -139,23 +159,27 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgee.so</seg>
-        <seg>/usr/include/gee-1.0</seg>
+        <seg>
+          libgee.so
+        </seg>
+        <seg>
+          /usr/include/gee-1.0
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libgee.so</seg>
-        <seg>/usr/include/gee-1.0</seg>
+        <seg>
+          libgee.so
+        </seg>
+        <seg>
+          /usr/include/gee-1.0
+        </seg>
 @z
 
 @x
