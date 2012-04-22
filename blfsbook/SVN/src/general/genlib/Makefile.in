@@ -145,14 +145,6 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-
-#
-# This is part of BLFSbookja package.
-#
-# $Author:$
-# $Rev:$
-# $Date::                           $
-#
 BOOKdir = $(top_builddir)/@bookdir@/general/genlib
 CHANGE_FILES = \
 	apr.ch \
@@ -420,78 +412,74 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 apr.xml:                   $(BOOKdir)/$@ $(srcdir)/apr.ch
-glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
-libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
-pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch
 aspell.xml:                $(BOOKdir)/$@ $(srcdir)/aspell.ch
-gmime.xml:                 $(BOOKdir)/$@ $(srcdir)/gmime.ch
-libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
-libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
-popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
-libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
-libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
-pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
-expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch
-gwrap.xml:                 $(BOOKdir)/$@ $(srcdir)/gwrap.ch
-libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
-iso-codes.xml:             $(BOOKdir)/$@ $(srcdir)/iso-codes.ch
-libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
-libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
-slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
-gamin.xml:                 $(BOOKdir)/$@ $(srcdir)/gamin.ch
-ispell.xml:                $(BOOKdir)/$@ $(srcdir)/ispell.ch
-libgtkhtml.xml:            $(BOOKdir)/$@ $(srcdir)/libgtkhtml.ch
-libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
-libassuan.xml:             $(BOOKdir)/$@ $(srcdir)/libassuan.ch
-libidl.xml:                $(BOOKdir)/$@ $(srcdir)/libidl.ch
-lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
-genlib.xml:                $(BOOKdir)/$@ $(srcdir)/genlib.ch
-libcroco.xml:              $(BOOKdir)/$@ $(srcdir)/libcroco.ch
-libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
-mcs.xml:                   $(BOOKdir)/$@ $(srcdir)/mcs.ch
-libdrm.xml:                $(BOOKdir)/$@ $(srcdir)/libdrm.ch
-libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
-mowgli.xml:                $(BOOKdir)/$@ $(srcdir)/mowgli.ch
-pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch
-popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
-pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
-slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
-liboil.xml:                $(BOOKdir)/$@ $(srcdir)/liboil.ch
-libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
-libunique.xml:             $(BOOKdir)/$@ $(srcdir)/libunique.ch
-nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
-libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
-gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
-enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
-icu.xml:                   $(BOOKdir)/$@ $(srcdir)/icu.ch
-libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
-libelf.xml:                $(BOOKdir)/$@ $(srcdir)/libelf.ch
-libggz.xml:                $(BOOKdir)/$@ $(srcdir)/libggz.ch
-libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
-ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
-glibmm.xml:                $(BOOKdir)/$@ $(srcdir)/glibmm.ch
-libatasmart.xml:           $(BOOKdir)/$@ $(srcdir)/libatasmart.ch
-libdaemon.xml:             $(BOOKdir)/$@ $(srcdir)/libdaemon.ch
-telepathy-glib.xml:        $(BOOKdir)/$@ $(srcdir)/telepathy-glib.ch
-libatomic_ops.xml:         $(BOOKdir)/$@ $(srcdir)/libatomic_ops.ch
-wv.xml:                    $(BOOKdir)/$@ $(srcdir)/wv.ch
-talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
-libdbusmenuqt.xml:         $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch
-clucene.xml:               $(BOOKdir)/$@ $(srcdir)/clucene.ch
-qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
 boost.xml:                 $(BOOKdir)/$@ $(srcdir)/boost.ch
-keyutils.xml:              $(BOOKdir)/$@ $(srcdir)/keyutils.ch
-libunistring.xml:          $(BOOKdir)/$@ $(srcdir)/libunistring.ch
-libgee.xml:                $(BOOKdir)/$@ $(srcdir)/libgee.ch
-telepathy-logger.xml:      $(BOOKdir)/$@ $(srcdir)/telepathy-logger.ch
-telepathy-mission-control.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-mission-control.ch
-telepathy-farsight.xml:    $(BOOKdir)/$@ $(srcdir)/telepathy-farsight.ch
-telepathy-farstream.xml:   $(BOOKdir)/$@ $(srcdir)/telepathy-farstream.ch
+clucene.xml:               $(BOOKdir)/$@ $(srcdir)/clucene.ch
+enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
+exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
+expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch
 folks.xml:                 $(BOOKdir)/$@ $(srcdir)/folks.ch
+gamin.xml:                 $(BOOKdir)/$@ $(srcdir)/gamin.ch
+genlib.xml:                $(BOOKdir)/$@ $(srcdir)/genlib.ch
+glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
+glibmm.xml:                $(BOOKdir)/$@ $(srcdir)/glibmm.ch
+gmime.xml:                 $(BOOKdir)/$@ $(srcdir)/gmime.ch
+gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
+gsl.xml:                   $(BOOKdir)/$@ $(srcdir)/gsl.ch
+gwrap.xml:                 $(BOOKdir)/$@ $(srcdir)/gwrap.ch
+icu.xml:                   $(BOOKdir)/$@ $(srcdir)/icu.ch
+iso-codes.xml:             $(BOOKdir)/$@ $(srcdir)/iso-codes.ch
+ispell.xml:                $(BOOKdir)/$@ $(srcdir)/ispell.ch
 json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
 json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch
-exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
-gsl.xml:                   $(BOOKdir)/$@ $(srcdir)/gsl.ch
+keyutils.xml:              $(BOOKdir)/$@ $(srcdir)/keyutils.ch
+libassuan.xml:             $(BOOKdir)/$@ $(srcdir)/libassuan.ch
+libatasmart.xml:           $(BOOKdir)/$@ $(srcdir)/libatasmart.ch
+libatomic_ops.xml:         $(BOOKdir)/$@ $(srcdir)/libatomic_ops.ch
+libcroco.xml:              $(BOOKdir)/$@ $(srcdir)/libcroco.ch
+libdaemon.xml:             $(BOOKdir)/$@ $(srcdir)/libdaemon.ch
+libdbusmenuqt.xml:         $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch
+libdrm.xml:                $(BOOKdir)/$@ $(srcdir)/libdrm.ch
+libelf.xml:                $(BOOKdir)/$@ $(srcdir)/libelf.ch
+libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
+libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
+libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
+libgee.xml:                $(BOOKdir)/$@ $(srcdir)/libgee.ch
+libggz.xml:                $(BOOKdir)/$@ $(srcdir)/libggz.ch
+libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
+libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
+libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
+libgtkhtml.xml:            $(BOOKdir)/$@ $(srcdir)/libgtkhtml.ch
+libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
+libidl.xml:                $(BOOKdir)/$@ $(srcdir)/libidl.ch
+libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
+libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
+liboil.xml:                $(BOOKdir)/$@ $(srcdir)/liboil.ch
+libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
+libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
+libunique.xml:             $(BOOKdir)/$@ $(srcdir)/libunique.ch
+libunistring.xml:          $(BOOKdir)/$@ $(srcdir)/libunistring.ch
+libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
+libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
+libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
+libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
+lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
+mcs.xml:                   $(BOOKdir)/$@ $(srcdir)/mcs.ch
+mowgli.xml:                $(BOOKdir)/$@ $(srcdir)/mowgli.ch
+nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
+pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch
+popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
+pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
+ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
+qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
+slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
+talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
+telepathy-farsight.xml:    $(BOOKdir)/$@ $(srcdir)/telepathy-farsight.ch
+telepathy-farstream.xml:   $(BOOKdir)/$@ $(srcdir)/telepathy-farstream.ch
+telepathy-glib.xml:        $(BOOKdir)/$@ $(srcdir)/telepathy-glib.ch
+telepathy-logger.xml:      $(BOOKdir)/$@ $(srcdir)/telepathy-logger.ch
+telepathy-mission-control.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-mission-control.ch
+wv.xml:                    $(BOOKdir)/$@ $(srcdir)/wv.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

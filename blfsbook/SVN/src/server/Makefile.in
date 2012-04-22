@@ -187,8 +187,11 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = databases mail major other
 BOOKdir = $(top_builddir)/@bookdir@/server
-EXTRA_DIST = server.ch
-srcs = server.xml
+CHANGE_FILES = \
+	server.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-recursive
 

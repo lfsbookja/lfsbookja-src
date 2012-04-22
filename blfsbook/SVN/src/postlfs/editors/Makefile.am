@@ -1,13 +1,21 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/editors
 CHANGE_FILES = \
 	bluefish.ch \
-	ed.ch \
-	editors.ch \
-	emacs.ch \
-	joe.ch \
-	nano.ch \
-	others.ch \
+	ed.ch       \
+	editors.ch  \
+	emacs.ch    \
+	joe.ch      \
+	nano.ch     \
+	others.ch   \
 	vim.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

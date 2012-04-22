@@ -1,6 +1,15 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=printing ps scanning sgml typesetting xml
 BOOKdir = $(top_builddir)/@bookdir@/pst
-CHANGE_FILES = pst.ch
+CHANGE_FILES = \
+	pst.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

@@ -1,6 +1,15 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=important welcome
 BOOKdir = $(top_builddir)/@bookdir@/introduction
-CHANGE_FILES = introduction.ch
+CHANGE_FILES = \
+	introduction.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

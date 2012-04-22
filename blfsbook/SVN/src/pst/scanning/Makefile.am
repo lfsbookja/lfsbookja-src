@@ -1,8 +1,16 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/pst/scanning
 CHANGE_FILES = \
-	sane.ch \
+	sane.ch     \
 	scanning.ch \
 	xsane.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

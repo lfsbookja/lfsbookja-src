@@ -1,11 +1,19 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/shells
 CHANGE_FILES = \
-	ash.ch \
-	dash.ch \
-	ksh.ch \
+	ash.ch    \
+	dash.ch   \
+	ksh.ch    \
 	shells.ch \
-	tcsh.ch \
+	tcsh.ch   \
 	zsh.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

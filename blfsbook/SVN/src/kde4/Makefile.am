@@ -1,6 +1,15 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=add core intro
 BOOKdir = $(top_builddir)/@bookdir@/kde4
-CHANGE_FILES = kde4.ch
+CHANGE_FILES = \
+	kde4.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

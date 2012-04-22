@@ -146,8 +146,15 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/server/databases
-EXTRA_DIST = databases.ch db.ch mysql.ch postgresql.ch sqlite.ch
-srcs = databases.xml db.xml mysql.xml postgresql.xml sqlite.xml
+CHANGE_FILES = \
+	databases.ch  \
+	db.ch         \
+	mysql.ch      \
+	postgresql.ch \
+	sqlite.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -340,11 +347,11 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-databases.xml: $(BOOKdir)/$@ $(srcdir)/databases.ch
-db.xml: $(BOOKdir)/$@ $(srcdir)/db.ch
-mysql.xml: $(BOOKdir)/$@ $(srcdir)/mysql.ch
+databases.xml:  $(BOOKdir)/$@ $(srcdir)/databases.ch
+db.xml:         $(BOOKdir)/$@ $(srcdir)/db.ch
+mysql.xml:      $(BOOKdir)/$@ $(srcdir)/mysql.ch
 postgresql.xml: $(BOOKdir)/$@ $(srcdir)/postgresql.ch
-sqlite.xml: $(BOOKdir)/$@ $(srcdir)/sqlite.ch
+sqlite.xml:     $(BOOKdir)/$@ $(srcdir)/sqlite.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

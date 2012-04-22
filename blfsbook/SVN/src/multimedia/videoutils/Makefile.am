@@ -1,12 +1,20 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/videoutils
 CHANGE_FILES = \
-	avifile.ch \
-	ffmpeg.ch \
-	mplayer.ch \
-	transcode.ch \
+	avifile.ch    \
+	ffmpeg.ch     \
+	mplayer.ch    \
+	transcode.ch  \
 	videoutils.ch \
-	vlc.ch \
+	vlc.ch        \
 	xine-ui.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

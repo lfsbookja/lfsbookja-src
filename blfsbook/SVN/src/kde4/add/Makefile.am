@@ -1,21 +1,29 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/kde4/add
 CHANGE_FILES = \
-	add.ch \
-	add-pkgs.ch \
-	ark.ch \
-	gwenview.ch \
-	kate.ch \
-	kcalc.ch \
-	kde4admin.ch \
-	kde4artwork.ch \
-	kde4multimedia.ch \
-	kde4network.ch \
-	kde4pim.ch \
-	kde4pimruntime.ch \
+	add.ch              \
+	add-pkgs.ch         \
+	ark.ch              \
+	gwenview.ch         \
+	kate.ch             \
+	kcalc.ch            \
+	kde4admin.ch        \
+	kde4artwork.ch      \
+	kde4multimedia.ch   \
+	kde4network.ch      \
+	kde4pim.ch          \
+	kde4pimruntime.ch   \
 	kde4plasmaaddons.ch \
-	konsole.ch \
-	libkexiv2.ch \
+	konsole.ch          \
+	libkexiv2.ch        \
 	okular.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

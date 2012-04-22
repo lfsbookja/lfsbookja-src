@@ -1,13 +1,15 @@
-#
-# This is part of BLFSbookja package.
-#
-# $Author$
-# $Rev$
-# $Date::                           $
-#
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=audioutils cdwriteutils libdriv videoutils
 BOOKdir = $(top_builddir)/@bookdir@/multimedia
-CHANGE_FILES = multimedia.ch
+CHANGE_FILES = \
+	multimedia.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

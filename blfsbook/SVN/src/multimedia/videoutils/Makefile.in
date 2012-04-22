@@ -147,12 +147,12 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/videoutils
 CHANGE_FILES = \
-	avifile.ch \
-	ffmpeg.ch \
-	mplayer.ch \
-	transcode.ch \
+	avifile.ch    \
+	ffmpeg.ch     \
+	mplayer.ch    \
+	transcode.ch  \
 	videoutils.ch \
-	vlc.ch \
+	vlc.ch        \
 	xine-ui.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

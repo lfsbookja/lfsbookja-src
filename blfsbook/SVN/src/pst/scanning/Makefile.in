@@ -147,7 +147,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/pst/scanning
 CHANGE_FILES = \
-	sane.ch \
+	sane.ch     \
 	scanning.ch \
 	xsane.ch
 

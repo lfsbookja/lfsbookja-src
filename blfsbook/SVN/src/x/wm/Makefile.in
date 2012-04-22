@@ -147,11 +147,11 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/x/wm
 CHANGE_FILES = \
-	fluxbox.ch \
+	fluxbox.ch   \
 	other-wms.ch \
-	openbox.ch \
-	sawfish.ch \
-	wm.ch \
+	openbox.ch   \
+	sawfish.ch   \
+	wm.ch        \
 	xfce.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

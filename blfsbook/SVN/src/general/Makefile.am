@@ -1,8 +1,18 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=genlib genutils graphlib prog sysutils
 BOOKdir = $(top_builddir)/@bookdir@/general
-EXTRA_DIST = general.ch
+CHANGE_FILES = \
+	general.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = general.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

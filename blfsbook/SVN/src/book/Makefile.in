@@ -147,14 +147,14 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/book
 CHANGE_FILES = \
-	dedication.ch \
-	foreword.ch \
-	preface.ch \
-	bookinfo.ch \
-	errata.ch \
+	bookinfo.ch     \
+	dedication.ch   \
+	errata.ch       \
+	foreword.ch     \
+	japanese.ch     \
 	organization.ch \
-	whoread.ch \
-	japanese.ch
+	preface.ch      \
+	whoread.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -350,15 +350,15 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-dedication.xml:   $(BOOKdir)/$@ $(srcdir)/dedication.ch
-foreword.xml:     $(BOOKdir)/$@ $(srcdir)/foreword.ch
-preface.xml:      $(BOOKdir)/$@ $(srcdir)/preface.ch
 bookinfo.xml:     $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
+dedication.xml:   $(BOOKdir)/$@ $(srcdir)/dedication.ch
 errata.xml:       $(BOOKdir)/$@ $(srcdir)/errata.ch
-organization.xml: $(BOOKdir)/$@ $(srcdir)/organization.ch
-whoread.xml:      $(BOOKdir)/$@ $(srcdir)/whoread.ch
+foreword.xml:     $(BOOKdir)/$@ $(srcdir)/foreword.ch
 japanese.xml:     $(srcdir)/japanese.ch
 	cp -p $(srcdir)/japanese.ch $@
+organization.xml: $(BOOKdir)/$@ $(srcdir)/organization.ch
+preface.xml:      $(BOOKdir)/$@ $(srcdir)/preface.ch
+whoread.xml:      $(BOOKdir)/$@ $(srcdir)/whoread.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

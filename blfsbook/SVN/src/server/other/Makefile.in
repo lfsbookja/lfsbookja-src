@@ -146,12 +146,15 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/server/other
-EXTRA_DIST = leafnode.ch openldap.ch other.ch \
-	soprano.ch virtuoso.ch
+CHANGE_FILES = \
+	leafnode.ch \
+	openldap.ch \
+	other.ch \
+	soprano.ch \
+	virtuoso.ch
 
-srcs = leafnode.xml openldap.xml other.xml \
-	soprano.xml virtuoso.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -346,8 +349,8 @@ ctie:
 
 leafnode.xml: $(BOOKdir)/$@ $(srcdir)/leafnode.ch
 openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
-other.xml: $(BOOKdir)/$@ $(srcdir)/other.ch
-soprano.xml: $(BOOKdir)/$@ $(srcdir)/soprano.ch
+other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
+soprano.xml:  $(BOOKdir)/$@ $(srcdir)/soprano.ch
 virtuoso.xml: $(BOOKdir)/$@ $(srcdir)/virtuoso.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

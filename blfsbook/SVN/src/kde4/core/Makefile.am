@@ -1,23 +1,31 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/kde4/core
 CHANGE_FILES = \
-	attica.ch \
-	akonadi.ch \
-	automoc4.ch \
-	config.ch \
-	core.ch \
-	kactivities.ch \
-	kde4baseapps.ch \
-	kde4libs.ch \
-	kde4pimlibs.ch \
-	kde4runtime.ch \
-	kde4workspace.ch \
-	oxygen-icons.ch \
-	phonon.ch \
+	attica.ch                   \
+	akonadi.ch                  \
+	automoc4.ch                 \
+	config.ch                   \
+	core.ch                     \
+	kactivities.ch              \
+	kde4baseapps.ch             \
+	kde4libs.ch                 \
+	kde4pimlibs.ch              \
+	kde4runtime.ch              \
+	kde4workspace.ch            \
+	oxygen-icons.ch             \
+	phonon.ch                   \
 	phonon-backend-gstreamer.ch \
-	phonon-backend-vlc.ch \
-	polkit-qt.ch \
-	qimageblitz.ch \
+	phonon-backend-vlc.ch       \
+	polkit-qt.ch                \
+	qimageblitz.ch              \
 	shrdesktopontologies.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

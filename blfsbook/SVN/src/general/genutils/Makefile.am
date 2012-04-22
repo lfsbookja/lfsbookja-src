@@ -1,3 +1,10 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/general/genutils
 CHANGE_FILES = \
 	apr-util.ch \

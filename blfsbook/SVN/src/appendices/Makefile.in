@@ -146,8 +146,13 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/appendices
-EXTRA_DIST = creat-comm.ch glossary.ch mit-lic.ch
-srcs = creat-comm.xml glossary.xml mit-lic.xml
+CHANGE_FILES = \
+	creat-comm.ch \
+	glossary.ch \
+	mit-lic.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -341,8 +346,8 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 creat-comm.xml: $(BOOKdir)/$@ $(srcdir)/creat-comm.ch
-glossary.xml: $(BOOKdir)/$@ $(srcdir)/glossary.ch
-mit-lic.xml: $(BOOKdir)/$@ $(srcdir)/mit-lic.ch
+glossary.xml:   $(BOOKdir)/$@ $(srcdir)/glossary.ch
+mit-lic.xml:    $(BOOKdir)/$@ $(srcdir)/mit-lic.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

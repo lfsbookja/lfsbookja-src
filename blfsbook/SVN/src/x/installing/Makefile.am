@@ -1,10 +1,10 @@
-#
-# This is part of BLFSbookja package.
-#
-# $Author$
-# $Rev$
-# $Date::                           $
-#
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/x/installing
 CHANGE_FILES = \
 	installing.ch          \

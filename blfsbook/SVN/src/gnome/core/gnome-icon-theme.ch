@@ -74,19 +74,23 @@
 @x
     <bridgehead renderas="sect3">GNOME Icon Theme Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GNOME Icon Theme の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Icon Theme&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="hicolor-icon-theme"/>,
-    <xref linkend="icon-naming-utils"/>, and
-    <xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="hicolor-icon-theme"/>,
+      <xref linkend="icon-naming-utils"/> and
+      <xref linkend="intltool"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="hicolor-icon-theme"/>,
-    <xref linkend="icon-naming-utils"/>,
-    <xref linkend="intltool"/></para>
+    <para role="required">
+      <xref linkend="hicolor-icon-theme"/>,
+      <xref linkend="icon-naming-utils"/>,
+      <xref linkend="intltool"/>
+    </para>
 @z
 
 @x
@@ -100,7 +104,7 @@
 @x
     <title>Installation of GNOME Icon Theme</title>
 @y
-    <title>GNOME Icon Theme のインストール</title>
+    <title>&InstallationOf1;GNOME Icon Theme&InstallationOf2;</title>
 @z
 
 @x
@@ -133,21 +137,17 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/icons/gnome</seg>
+        <seg>
+          /usr/share/icons/gnome
+        </seg>
 @y
-        <seg>なし</seg>
-        <seg>なし</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/icons/gnome</seg>
+        <seg>
+          /usr/share/icons/gnome
+        </seg>
 @z

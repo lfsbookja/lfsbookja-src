@@ -1,15 +1,23 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/networking/netutils
 CHANGE_FILES = \
-	avahi.ch \
-	bind-utils.ch \
-	mod_dnssd.ch \
-	netutils.ch \
+	avahi.ch          \
+	bind-utils.ch     \
+	mod_dnssd.ch      \
+	netutils.ch       \
 	networkmanager.ch \
-	nmap.ch \
-	traceroute.ch \
-	whois.ch \
-	wicd.ch \
+	nmap.ch           \
+	traceroute.ch     \
+	whois.ch          \
+	wicd.ch           \
 	wireshark.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -33,4 +41,3 @@ traceroute.xml:     $(BOOKdir)/$@ $(srcdir)/traceroute.ch
 whois.xml:          $(BOOKdir)/$@ $(srcdir)/whois.ch
 wicd.xml:           $(BOOKdir)/$@ $(srcdir)/wicd.ch
 wireshark.xml:      $(BOOKdir)/$@ $(srcdir)/wireshark.ch
-

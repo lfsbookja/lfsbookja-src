@@ -1,8 +1,19 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=add core deprecated
 BOOKdir = $(top_builddir)/@bookdir@/gnome
-EXTRA_DIST = gnome.ch gnome-intro.ch
+CHANGE_FILES = \
+	gnome.ch \
+	gnome-intro.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = gnome.xml gnome-intro.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -13,5 +24,5 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-gnome.xml: $(BOOKdir)/$@ $(srcdir)/gnome.ch
+gnome.xml:       $(BOOKdir)/$@ $(srcdir)/gnome.ch
 gnome-intro.xml: $(BOOKdir)/$@ $(srcdir)/gnome-intro.ch

@@ -1,3 +1,10 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=docbook-xsl-snapshot pdf xhtml
 BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl
 EXTRA_DIST = lfs.ch pdf.ch nochunks.ch chunk-slave.ch common.ch \

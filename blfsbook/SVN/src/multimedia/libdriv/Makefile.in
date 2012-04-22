@@ -145,68 +145,60 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-
-#
-# This is part of BLFSbookja package.
-#
-# $Author:$
-# $Rev:$
-# $Date::                           $
-#
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/libdriv
 CHANGE_FILES = \
-	alsa-firmware.ch \
-	alsa-lib.ch \
-	alsa-oss.ch \
-	alsa-plugins.ch \
-	alsa-tools.ch \
-	alsa-utils.ch \
-	alsa.ch \
-	arts.ch \
-	audiofile.ch \
-	celt051.ch \
-	esound.ch \
-	faac.ch \
-	faad2.ch \
-	farsight2.ch \
-	farstream.ch \
-	flac.ch \
-	gst-ffmpeg.ch \
-	gst-plugins-bad.ch \
+	alsa-firmware.ch    \
+	alsa-lib.ch         \
+	alsa-oss.ch         \
+	alsa-plugins.ch     \
+	alsa-tools.ch       \
+	alsa-utils.ch       \
+	alsa.ch             \
+	arts.ch             \
+	audiofile.ch        \
+	celt051.ch          \
+	esound.ch           \
+	faac.ch             \
+	faad2.ch            \
+	farsight2.ch        \
+	farstream.ch        \
+	flac.ch             \
+	gst-ffmpeg.ch       \
+	gst-plugins-bad.ch  \
 	gst-plugins-base.ch \
 	gst-plugins-good.ch \
 	gst-plugins-ugly.ch \
-	gstreamer.ch \
-	id3lib.ch \
-	liba52.ch \
-	libao.ch \
-	libcanberra.ch \
-	libdiscid.ch \
-	libdriv.ch \
-	libdv.ch \
-	libdvdcss.ch \
-	libdvdread.ch \
-	libdvdnav.ch \
-	libmad.ch \
-	libmpeg2.ch \
-	libmpeg3.ch \
-	libmusicbrainz.ch \
-	libmusicbrainz3.ch \
-	libogg.ch \
-	libquicktime.ch \
-	libsndfile.ch \
-	libtheora.ch \
-	libvorbis.ch \
-	libvpx.ch \
-	nas.ch \
-	opal.ch \
-	openquicktime.ch \
-	pulseaudio.ch \
-	sdl.ch \
+	gstreamer.ch        \
+	id3lib.ch           \
+	liba52.ch           \
+	libao.ch            \
+	libcanberra.ch      \
+	libdiscid.ch        \
+	libdriv.ch          \
+	libdv.ch            \
+	libdvdcss.ch        \
+	libdvdread.ch       \
+	libdvdnav.ch        \
+	libmad.ch           \
+	libmpeg2.ch         \
+	libmpeg3.ch         \
+	libmusicbrainz.ch   \
+	libmusicbrainz3.ch  \
+	libogg.ch           \
+	libquicktime.ch     \
+	libsndfile.ch       \
+	libtheora.ch        \
+	libvorbis.ch        \
+	libvpx.ch           \
+	nas.ch              \
+	opal.ch             \
+	openquicktime.ch    \
+	pulseaudio.ch       \
+	sdl.ch              \
 	sound-theme-freedesktop.ch \
-	speex.ch \
-	taglib.ch \
-	xine-lib.ch \
+	speex.ch            \
+	taglib.ch           \
+	xine-lib.ch         \
 	xvid.ch
 
 EXTRA_DIST = $(CHANGE_FILES) gst-plugins-bad.sed

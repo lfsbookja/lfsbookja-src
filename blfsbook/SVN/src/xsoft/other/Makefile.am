@@ -1,3 +1,10 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/other
 CHANGE_FILES = \
 	balsa.ch \

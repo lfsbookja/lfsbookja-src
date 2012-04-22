@@ -649,15 +649,15 @@
 @y
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <xref linkend="gobject-introspection"/> and
-        <xref linkend="libxslt"/> (to Build Documentation)
+        <xref linkend="gobject-introspection"/>,
+        <xref linkend="libxslt"/> (ドキュメント生成時)
       </para>
 @z
 
 @x
-        User Notes: <ulink url="&blfs-wiki;/pygobject"/>
+        User Notes: <ulink url="&blfs-wiki;/pygobject2"/>
 @y
-        &UserNotes;: <ulink url="&blfs-wiki;/pygobject"/>
+        &UserNotes;: <ulink url="&blfs-wiki;/pygobject2"/>
 @z
 
 @x

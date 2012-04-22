@@ -1,10 +1,10 @@
-#
-# This is part of BLFSbookja package.
-#
-# $Author$
-# $Rev$
-# $Date::                           $
-#
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/virtualization
 CHANGE_FILES = \
 	virtualization.ch \
@@ -13,6 +13,7 @@ CHANGE_FILES = \
 	libvirt-glib.ch   \
 	qemu-kvm.ch       \
 	spice-gtk.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

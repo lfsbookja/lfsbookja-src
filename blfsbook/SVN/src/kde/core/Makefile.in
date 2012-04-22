@@ -146,12 +146,17 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/kde/core
-EXTRA_DIST = arts.ch config.ch core.ch kdebase.ch kdelibs.ch \
-	pre-install-config.ch tqtinterface.ch
+CHANGE_FILES = \
+	arts.ch               \
+	config.ch             \
+	core.ch               \
+	kdebase.ch            \
+	kdelibs.ch            \
+	pre-install-config.ch \
+	tqtinterface.ch
 
-srcs = arts.xml config.xml core.xml kdebase.xml kdelibs.xml \
-	pre-install-config.xml tqtinterface.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -344,13 +349,13 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-arts.xml: $(BOOKdir)/$@ $(srcdir)/arts.ch
-config.xml: $(BOOKdir)/$@ $(srcdir)/config.ch
-core.xml: $(BOOKdir)/$@ $(srcdir)/core.ch
-kdebase.xml: $(BOOKdir)/$@ $(srcdir)/kdebase.ch
-kdelibs.xml: $(BOOKdir)/$@ $(srcdir)/kdelibs.ch
+arts.xml:               $(BOOKdir)/$@ $(srcdir)/arts.ch
+config.xml:             $(BOOKdir)/$@ $(srcdir)/config.ch
+core.xml:               $(BOOKdir)/$@ $(srcdir)/core.ch
+kdebase.xml:            $(BOOKdir)/$@ $(srcdir)/kdebase.ch
+kdelibs.xml:            $(BOOKdir)/$@ $(srcdir)/kdelibs.ch
 pre-install-config.xml: $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
-tqtinterface.xml: $(BOOKdir)/$@ $(srcdir)/tqtinterface.ch
+tqtinterface.xml:       $(BOOKdir)/$@ $(srcdir)/tqtinterface.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -146,12 +146,16 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/server/major
-EXTRA_DIST = apache.ch bind.ch major.ch proftpd.ch \
-	vsftpd.ch xinetd.ch
+CHANGE_FILES = \
+	apache.ch \
+	bind.ch \
+	major.ch \
+	proftpd.ch \
+	vsftpd.ch \
+	xinetd.ch
 
-srcs = apache.xml bind.xml major.xml proftpd.xml \
-	vsftpd.xml xinetd.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -344,12 +348,12 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-apache.xml: $(BOOKdir)/$@ $(srcdir)/apache.ch
-bind.xml: $(BOOKdir)/$@ $(srcdir)/bind.ch
-major.xml: $(BOOKdir)/$@ $(srcdir)/major.ch
+apache.xml:  $(BOOKdir)/$@ $(srcdir)/apache.ch
+bind.xml:    $(BOOKdir)/$@ $(srcdir)/bind.ch
+major.xml:   $(BOOKdir)/$@ $(srcdir)/major.ch
 proftpd.xml: $(BOOKdir)/$@ $(srcdir)/proftpd.ch
-vsftpd.xml: $(BOOKdir)/$@ $(srcdir)/vsftpd.ch
-xinetd.xml: $(BOOKdir)/$@ $(srcdir)/xinetd.ch
+vsftpd.xml:  $(BOOKdir)/$@ $(srcdir)/vsftpd.ch
+xinetd.xml:  $(BOOKdir)/$@ $(srcdir)/xinetd.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

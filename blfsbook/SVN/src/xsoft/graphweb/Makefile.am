@@ -1,3 +1,10 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/graphweb
 EXTRA_DIST = dillo.ch firefox.ch galeon.ch graphweb.ch konq.ch seamonkey.ch
 srcdir = @srcdir@

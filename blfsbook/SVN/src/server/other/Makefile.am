@@ -1,9 +1,22 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/server/other
-EXTRA_DIST = leafnode.ch openldap.ch other.ch \
-	soprano.ch virtuoso.ch
+CHANGE_FILES = \
+	leafnode.ch \
+	openldap.ch \
+	other.ch \
+	soprano.ch \
+	virtuoso.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = leafnode.xml openldap.xml other.xml \
-	soprano.xml virtuoso.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
+
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -15,6 +28,6 @@ ctie:
 
 leafnode.xml: $(BOOKdir)/$@ $(srcdir)/leafnode.ch
 openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
-other.xml: $(BOOKdir)/$@ $(srcdir)/other.ch
-soprano.xml: $(BOOKdir)/$@ $(srcdir)/soprano.ch
+other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
+soprano.xml:  $(BOOKdir)/$@ $(srcdir)/soprano.ch
 virtuoso.xml: $(BOOKdir)/$@ $(srcdir)/virtuoso.ch

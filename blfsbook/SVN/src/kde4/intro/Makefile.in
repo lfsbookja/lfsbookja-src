@@ -148,7 +148,7 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/kde4/intro
 CHANGE_FILES = \
 	introduction.ch \
-	kde4-intro.ch \
+	kde4-intro.ch   \
 	pre-install-config.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

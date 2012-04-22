@@ -1,12 +1,20 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/cdwriteutils
 CHANGE_FILES = \
-	cdrdao.ch \
-	cdrtools.ch \
+	cdrdao.ch       \
+	cdrtools.ch     \
 	cdwriteutils.ch \
 	dvd+rw-tools.ch \
-	k3b.ch \
-	udftools.ch \
+	k3b.ch          \
+	udftools.ch     \
 	xorriso.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

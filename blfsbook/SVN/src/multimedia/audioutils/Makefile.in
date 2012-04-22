@@ -147,13 +147,13 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/audioutils
 CHANGE_FILES = \
-	amarok.ch \
-	audacious.ch \
-	audioutils.ch \
-	cdparanoia.ch \
-	freetts.ch \
-	lame.ch \
-	mpg123.ch \
+	amarok.ch      \
+	audacious.ch   \
+	audioutils.ch  \
+	cdparanoia.ch  \
+	freetts.ch     \
+	lame.ch        \
+	mpg123.ch      \
 	vorbistools.ch \
 	gnome-media.ch
 

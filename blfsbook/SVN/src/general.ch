@@ -19,8 +19,8 @@
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20120421">
-<!ENTITY jratio       "48.5 &percnt;">
+<!ENTITY jversion     "20120422">
+<!ENTITY jratio       "47.9 &percnt;">
 @z
 
 @x

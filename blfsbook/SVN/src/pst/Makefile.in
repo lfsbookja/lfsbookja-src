@@ -187,7 +187,9 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = printing ps scanning sgml typesetting xml
 BOOKdir = $(top_builddir)/@bookdir@/pst
-CHANGE_FILES = pst.ch
+CHANGE_FILES = \
+	pst.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml

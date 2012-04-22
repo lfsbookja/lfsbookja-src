@@ -1,20 +1,28 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/kde/add
 CHANGE_FILES = \
-	add.ch \
-	kde-i18n.ch \
+	add.ch              \
+	kde-i18n.ch         \
 	kdeaccessibility.ch \
-	kdeaddons.ch \
-	kdeadmin.ch \
-	kdeartwork.ch \
-	kdeedu.ch \
-	kdegames.ch \
-	kdegraphics.ch \
-	kdemultimedia.ch \
-	kdenetwork.ch \
-	kdepim.ch \
-	kdetoys.ch \
-	kdeutils.ch \
+	kdeaddons.ch        \
+	kdeadmin.ch         \
+	kdeartwork.ch       \
+	kdeedu.ch           \
+	kdegames.ch         \
+	kdegraphics.ch      \
+	kdemultimedia.ch    \
+	kdenetwork.ch       \
+	kdepim.ch           \
+	kdetoys.ch          \
+	kdeutils.ch         \
 	kdeakode.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -33,6 +41,7 @@ kde-i18n.xml:         $(BOOKdir)/$@ $(srcdir)/kde-i18n.ch
 kdeaccessibility.xml: $(BOOKdir)/$@ $(srcdir)/kdeaccessibility.ch
 kdeaddons.xml:        $(BOOKdir)/$@ $(srcdir)/kdeaddons.ch
 kdeadmin.xml:         $(BOOKdir)/$@ $(srcdir)/kdeadmin.ch
+kdeakode.xml:         $(BOOKdir)/$@ $(srcdir)/kdeakode.ch
 kdeartwork.xml:       $(BOOKdir)/$@ $(srcdir)/kdeartwork.ch
 kdeedu.xml:           $(BOOKdir)/$@ $(srcdir)/kdeedu.ch
 kdegames.xml:         $(BOOKdir)/$@ $(srcdir)/kdegames.ch
@@ -42,4 +51,3 @@ kdenetwork.xml:       $(BOOKdir)/$@ $(srcdir)/kdenetwork.ch
 kdepim.xml:           $(BOOKdir)/$@ $(srcdir)/kdepim.ch
 kdetoys.xml:          $(BOOKdir)/$@ $(srcdir)/kdetoys.ch
 kdeutils.xml:         $(BOOKdir)/$@ $(srcdir)/kdeutils.ch
-kdeakode.xml:         $(BOOKdir)/$@ $(srcdir)/kdeakode.ch

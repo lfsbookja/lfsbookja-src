@@ -1,15 +1,18 @@
-#
-# This is part of BLFSbookja package.
-#
-# $Author$
-# $Rev$
-# $Date::                           $
-#
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=config editors filesystems security shells virtualization
 BOOKdir = $(top_builddir)/@bookdir@/postlfs
-EXTRA_DIST = postlfs.ch
+CHANGE_FILES = \
+	postlfs.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = postlfs.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

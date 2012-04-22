@@ -1,17 +1,25 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/config
 CHANGE_FILES = \
-	bootdisk.ch \
+	bootdisk.ch    \
 	compressdoc.ch \
-	config.ch \
-	devices.ch \
-	etcshells.ch \
-	inputrc.ch \
-	logon.ch \
-	profile.ch \
-	random.ch \
-	skel.ch \
-	users.ch \
+	config.ch      \
+	devices.ch     \
+	etcshells.ch   \
+	inputrc.ch     \
+	logon.ch       \
+	profile.ch     \
+	random.ch      \
+	skel.ch        \
+	users.ch       \
 	vimrc.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

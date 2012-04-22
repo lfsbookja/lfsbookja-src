@@ -146,8 +146,13 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/suites
-EXTRA_DIST = koffice.ch openoffice.ch suites.ch
-srcs = koffice.xml openoffice.xml suites.xml
+CHANGE_FILES = \
+	koffice.ch    \
+	openoffice.ch \
+	suites.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -340,9 +345,9 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-koffice.xml: $(BOOKdir)/$@ $(srcdir)/koffice.ch
+koffice.xml:    $(BOOKdir)/$@ $(srcdir)/koffice.ch
 openoffice.xml: $(BOOKdir)/$@ $(srcdir)/openoffice.ch
-suites.xml: $(BOOKdir)/$@ $(srcdir)/suites.ch
+suites.xml:     $(BOOKdir)/$@ $(srcdir)/suites.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

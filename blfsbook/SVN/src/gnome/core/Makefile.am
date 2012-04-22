@@ -1,10 +1,10 @@
-#
-# This is part of BLFSbookja package.
-#
-# $Author$
-# $Rev$
-# $Date::                           $
-#
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/gnome/core
 EXTRA_DIST = config.ch gnome-control-center.ch core.ch dummy-desktop.ch \
 	dummy-platform.ch gconf.ch \

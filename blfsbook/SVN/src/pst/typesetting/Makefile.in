@@ -147,8 +147,8 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/pst/typesetting
 CHANGE_FILES = \
-	jadetex.ch \
-	tetex.ch \
+	jadetex.ch     \
+	tetex.ch       \
 	typesetting.ch \
 	texlive.ch
 
@@ -346,10 +346,10 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-jadetex.xml: $(BOOKdir)/$@ $(srcdir)/jadetex.ch
-tetex.xml: $(BOOKdir)/$@ $(srcdir)/tetex.ch
+jadetex.xml:     $(BOOKdir)/$@ $(srcdir)/jadetex.ch
+tetex.xml:       $(BOOKdir)/$@ $(srcdir)/tetex.ch
 typesetting.xml: $(BOOKdir)/$@ $(srcdir)/typesetting.ch
-texlive.xml: $(BOOKdir)/$@ $(srcdir)/texlive.ch
+texlive.xml:     $(BOOKdir)/$@ $(srcdir)/texlive.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -1,13 +1,21 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/introduction/important
 CHANGE_FILES = \
-	beyond.ch \
-	bootscripts.ch \
+	beyond.ch         \
+	bootscripts.ch    \
 	building-notes.ch \
-	important.ch \
-	locale-issues.ch \
-	patches.ch \
-	pkgmgt.ch \
+	important.ch      \
+	locale-issues.ch  \
+	patches.ch        \
+	pkgmgt.ch         \
 	position.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

@@ -1,3 +1,10 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=installing lib wm
 BOOKdir = $(top_builddir)/@bookdir@/x
 CHANGE_FILES = x.ch

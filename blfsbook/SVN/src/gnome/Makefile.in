@@ -187,8 +187,12 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = add core deprecated
 BOOKdir = $(top_builddir)/@bookdir@/gnome
-EXTRA_DIST = gnome.ch gnome-intro.ch
-srcs = gnome.xml gnome-intro.xml
+CHANGE_FILES = \
+	gnome.ch \
+	gnome-intro.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-recursive
 
@@ -543,7 +547,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-gnome.xml: $(BOOKdir)/$@ $(srcdir)/gnome.ch
+gnome.xml:       $(BOOKdir)/$@ $(srcdir)/gnome.ch
 gnome-intro.xml: $(BOOKdir)/$@ $(srcdir)/gnome-intro.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

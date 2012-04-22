@@ -1,14 +1,22 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/audioutils
 CHANGE_FILES = \
-	amarok.ch \
-	audacious.ch \
-	audioutils.ch \
-	cdparanoia.ch \
-	freetts.ch \
-	lame.ch \
-	mpg123.ch \
+	amarok.ch      \
+	audacious.ch   \
+	audioutils.ch  \
+	cdparanoia.ch  \
+	freetts.ch     \
+	lame.ch        \
+	mpg123.ch      \
 	vorbistools.ch \
 	gnome-media.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

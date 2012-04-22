@@ -1,9 +1,17 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author:$
+## $Rev:$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/networking/connect
 CHANGE_FILES = \
-	connect.ch \
-	dhcp-client.ch \
-	dhcpcd.ch ppp.ch \
-	dhcp.ch
+	connect.ch       \
+	dhcp.ch          \
+	dhcp-client.ch   \
+	dhcpcd.ch ppp.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -18,7 +26,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 connect.xml:     $(BOOKdir)/$@ $(srcdir)/connect.ch
+dhcp.xml:        $(BOOKdir)/$@ $(srcdir)/dhcp.ch
 dhcp-client.xml: $(BOOKdir)/$@ $(srcdir)/dhcp-client.ch
 dhcpcd.xml:      $(BOOKdir)/$@ $(srcdir)/dhcpcd.ch
 ppp.xml:         $(BOOKdir)/$@ $(srcdir)/ppp.ch
-dhcp.xml:        $(BOOKdir)/$@ $(srcdir)/dhcp.ch

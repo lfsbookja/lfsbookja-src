@@ -1,8 +1,19 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=add core devel
 BOOKdir = $(top_builddir)/@bookdir@/kde
-EXTRA_DIST = kde.ch kde-intro.ch
+CHANGE_FILES = \
+	kde.ch \
+	kde-intro.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = kde.xml kde-intro.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -13,5 +24,5 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-kde.xml: $(BOOKdir)/$@ $(srcdir)/kde.ch
+kde.xml:       $(BOOKdir)/$@ $(srcdir)/kde.ch
 kde-intro.xml: $(BOOKdir)/$@ $(srcdir)/kde-intro.ch

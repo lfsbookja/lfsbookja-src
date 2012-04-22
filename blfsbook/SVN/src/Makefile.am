@@ -1,10 +1,10 @@
-#
-# This is part of BLFSbookja package.
-#
-# $Author$
-# $Rev$
-# $Date::                           $
-#
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=appendices book general gnome introduction kde kde4 \
 	networking \
 	multimedia postlfs pst server stylesheets template x xincludes \
@@ -21,10 +21,10 @@ PDF_OUTPUT = ../blfsbookja-svn.pdf
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
 
-ALLXML := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xml ./*/*.xml ./*/*/*.xml ./*/*/*/*.xml ./*/*/*/*/*.xml))
-ALLXSL := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xsl ./*/*.xsl ./*/*/*.xsl ./*/*/*/*.xsl ./*/*/*/*/*.xsl))
+#ALLXML := $(filter-out $(RENDERTMP)/%, \
+#	$(wildcard ./*.xml ./*/*.xml ./*/*/*.xml ./*/*/*/*.xml ./*/*/*/*/*.xml))
+#ALLXSL := $(filter-out $(RENDERTMP)/%, \
+#	$(wildcard ./*.xsl ./*/*.xsl ./*/*/*.xsl ./*/*/*/*.xsl ./*/*/*/*/*.xsl))
 
 all: ctie $(srcs) blfs # stylesheets bootscripts udev-config blfs
 

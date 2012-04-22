@@ -1,8 +1,18 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=databases mail major other
 BOOKdir = $(top_builddir)/@bookdir@/server
-EXTRA_DIST = server.ch
+CHANGE_FILES = \
+	server.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = server.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:

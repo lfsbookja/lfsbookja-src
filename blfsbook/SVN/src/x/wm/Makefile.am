@@ -1,11 +1,19 @@
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = $(top_builddir)/@bookdir@/x/wm
 CHANGE_FILES = \
-	fluxbox.ch \
+	fluxbox.ch   \
 	other-wms.ch \
-	openbox.ch \
-	sawfish.ch \
-	wm.ch \
+	openbox.ch   \
+	sawfish.ch   \
+	wm.ch        \
 	xfce.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

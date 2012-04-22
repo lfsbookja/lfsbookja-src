@@ -147,10 +147,10 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/networking/connect
 CHANGE_FILES = \
-	connect.ch \
-	dhcp-client.ch \
-	dhcpcd.ch ppp.ch \
-	dhcp.ch
+	connect.ch       \
+	dhcp.ch          \
+	dhcp-client.ch   \
+	dhcpcd.ch ppp.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -347,10 +347,10 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 connect.xml:     $(BOOKdir)/$@ $(srcdir)/connect.ch
+dhcp.xml:        $(BOOKdir)/$@ $(srcdir)/dhcp.ch
 dhcp-client.xml: $(BOOKdir)/$@ $(srcdir)/dhcp-client.ch
 dhcpcd.xml:      $(BOOKdir)/$@ $(srcdir)/dhcpcd.ch
 ppp.xml:         $(BOOKdir)/$@ $(srcdir)/ppp.ch
-dhcp.xml:        $(BOOKdir)/$@ $(srcdir)/dhcp.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -146,8 +146,14 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/networking/textweb
-EXTRA_DIST = links.ch lynx.ch textweb.ch w3m.ch
-srcs = links.xml lynx.xml textweb.xml w3m.xml
+CHANGE_FILES = \
+	links.ch   \
+	lynx.ch    \
+	textweb.ch \
+	w3m.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -340,10 +346,10 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-links.xml: $(BOOKdir)/$@ $(srcdir)/links.ch
-lynx.xml: $(BOOKdir)/$@ $(srcdir)/lynx.ch
+links.xml:   $(BOOKdir)/$@ $(srcdir)/links.ch
+lynx.xml:    $(BOOKdir)/$@ $(srcdir)/lynx.ch
 textweb.xml: $(BOOKdir)/$@ $(srcdir)/textweb.ch
-w3m.xml: $(BOOKdir)/$@ $(srcdir)/w3m.ch
+w3m.xml:     $(BOOKdir)/$@ $(srcdir)/w3m.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
