@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 SUBDIRS=appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	chapter06 chapter07 chapter08 chapter09 prologue stylesheets \
 	lsb-bootscripts udev-config bootscripts

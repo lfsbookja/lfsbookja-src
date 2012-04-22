@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/common
 EXTRA_DIST = common.ch gentext.ch insertfile.ch l10n.ch labels.ch \
 	olink.ch pi.ch refentry.ch stripns.ch subtitles.ch \
@@ -22,20 +29,20 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-common.xsl: $(BOOKdir)/$@ $(srcdir)/common.ch
-gentext.xsl: $(BOOKdir)/$@ $(srcdir)/gentext.ch
+common.xsl:     $(BOOKdir)/$@ $(srcdir)/common.ch
+gentext.xsl:    $(BOOKdir)/$@ $(srcdir)/gentext.ch
 insertfile.xsl: $(BOOKdir)/$@ $(srcdir)/insertfile.ch
-l10n.xsl: $(BOOKdir)/$@ $(srcdir)/l10n.ch
-labels.xsl: $(BOOKdir)/$@ $(srcdir)/labels.ch
-olink.xsl: $(BOOKdir)/$@ $(srcdir)/olink.ch
-pi.xsl: $(BOOKdir)/$@ $(srcdir)/pi.ch
-refentry.xsl: $(BOOKdir)/$@ $(srcdir)/refentry.ch
-stripns.xsl: $(BOOKdir)/$@ $(srcdir)/stripns.ch
-subtitles.xsl: $(BOOKdir)/$@ $(srcdir)/subtitles.ch
-table.xsl: $(BOOKdir)/$@ $(srcdir)/table.ch
-targets.xsl: $(BOOKdir)/$@ $(srcdir)/targets.ch
-titles.xsl: $(BOOKdir)/$@ $(srcdir)/titles.ch
-utility.xsl: $(BOOKdir)/$@ $(srcdir)/utility.ch
+l10n.xsl:       $(BOOKdir)/$@ $(srcdir)/l10n.ch
+labels.xsl:     $(BOOKdir)/$@ $(srcdir)/labels.ch
+olink.xsl:      $(BOOKdir)/$@ $(srcdir)/olink.ch
+pi.xsl:         $(BOOKdir)/$@ $(srcdir)/pi.ch
+refentry.xsl:   $(BOOKdir)/$@ $(srcdir)/refentry.ch
+stripns.xsl:    $(BOOKdir)/$@ $(srcdir)/stripns.ch
+subtitles.xsl:  $(BOOKdir)/$@ $(srcdir)/subtitles.ch
+table.xsl:      $(BOOKdir)/$@ $(srcdir)/table.ch
+targets.xsl:    $(BOOKdir)/$@ $(srcdir)/targets.ch
+titles.xsl:     $(BOOKdir)/$@ $(srcdir)/titles.ch
+utility.xsl:    $(BOOKdir)/$@ $(srcdir)/utility.ch
 
 l10n.xml: $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
@@ -60,4 +67,3 @@ zh_tw.xml: $(BOOKdir)/$@
 	cp $(BOOKdir)/$@ $@
 entities.ent:
 	cp -p $(BOOKdir)/$@ $@
-

@@ -553,12 +553,12 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 dump-commands.xml: $(BOOKdir)/$@ $(srcdir)/dump-commands.ch
-lfs-chunked.xml: $(BOOKdir)/$@ $(srcdir)/lfs-chunked.ch
-lfs-nochunks.xml: $(BOOKdir)/$@ $(srcdir)/lfs-nochunks.ch
-lfs-pdf.xml: $(BOOKdir)/$@ $(srcdir)/lfs-pdf.ch
-patcheslist.xml: $(BOOKdir)/$@ $(srcdir)/patcheslist.ch
-wget-list.xml: $(BOOKdir)/$@ $(srcdir)/wget-list.ch
-md5sum.xml: $(BOOKdir)/$@ $(srcdir)/md5sum.ch
+lfs-chunked.xml:   $(BOOKdir)/$@ $(srcdir)/lfs-chunked.ch
+lfs-nochunks.xml:  $(BOOKdir)/$@ $(srcdir)/lfs-nochunks.ch
+lfs-pdf.xml:       $(BOOKdir)/$@ $(srcdir)/lfs-pdf.ch
+patcheslist.xml:   $(BOOKdir)/$@ $(srcdir)/patcheslist.ch
+wget-list.xml:     $(BOOKdir)/$@ $(srcdir)/wget-list.ch
+md5sum.xml:        $(BOOKdir)/$@ $(srcdir)/md5sum.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

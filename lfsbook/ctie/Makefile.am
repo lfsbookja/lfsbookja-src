@@ -1,6 +1,13 @@
 #
 # This is NOT part of the original CTIE distribution.
 #
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 noinst_PROGRAMS=ctie
 ctie_SOURCES=ctie.c
 EXTRA_DIST=ChangeLog Makefile.orig README ctie-k.c ctie-k.ch \

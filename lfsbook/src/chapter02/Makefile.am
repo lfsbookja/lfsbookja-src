@@ -1,9 +1,21 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/chapter02
-EXTRA_DIST = chapter02.ch creatingfilesystem.ch creatingpartition.ch \
-	introduction.ch mounting.ch
+CHANGE_FILES = \
+	chapter02.ch          \
+	creatingfilesystem.ch \
+	creatingpartition.ch  \
+	introduction.ch       \
+	mounting.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = chapter02.xml creatingfilesystem.xml creatingpartition.xml \
-	introduction.xml mounting.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -14,8 +26,8 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chapter02.xml: $(BOOKdir)/$@ $(srcdir)/chapter02.ch
+chapter02.xml:          $(BOOKdir)/$@ $(srcdir)/chapter02.ch
 creatingfilesystem.xml: $(BOOKdir)/$@ $(srcdir)/creatingfilesystem.ch
-creatingpartition.xml: $(BOOKdir)/$@ $(srcdir)/creatingpartition.ch
-introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-mounting.xml: $(BOOKdir)/$@ $(srcdir)/mounting.ch
+creatingpartition.xml:  $(BOOKdir)/$@ $(srcdir)/creatingpartition.ch
+introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
+mounting.xml:           $(BOOKdir)/$@ $(srcdir)/mounting.ch

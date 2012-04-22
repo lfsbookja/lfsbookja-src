@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/lsb-bootscripts/etc/init.d
 srcdir = @srcdir@
 srcs = checkfs halt modules network sendsignals sysctl udev \
@@ -45,4 +52,3 @@ swap: $(BOOKdir)/swap
 	cp -p $(BOOKdir)/$@ $@
 template: $(BOOKdir)/template
 	cp -p $(BOOKdir)/$@ $@
-

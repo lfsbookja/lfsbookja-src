@@ -1,9 +1,23 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/chapter04
-EXTRA_DIST = aboutlfs.ch aboutsbus.ch abouttestsuites.ch addinguser.ch \
-	chapter04.ch creatingtoolsdir.ch settingenviron.ch
+CHANGE_FILES = \
+	aboutlfs.ch         \
+	aboutsbus.ch        \
+	abouttestsuites.ch  \
+	addinguser.ch       \
+	chapter04.ch        \
+	creatingtoolsdir.ch \
+	settingenviron.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = aboutlfs.xml aboutsbus.xml abouttestsuites.xml addinguser.xml \
-	chapter04.xml creatingtoolsdir.xml settingenviron.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -14,10 +28,10 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-aboutlfs.xml: $(BOOKdir)/$@ $(srcdir)/aboutlfs.ch
-aboutsbus.xml: $(BOOKdir)/$@ $(srcdir)/aboutsbus.ch
-abouttestsuites.xml: $(BOOKdir)/$@ $(srcdir)/abouttestsuites.ch
-addinguser.xml: $(BOOKdir)/$@ $(srcdir)/addinguser.ch
-chapter04.xml: $(BOOKdir)/$@ $(srcdir)/chapter04.ch
+aboutlfs.xml:         $(BOOKdir)/$@ $(srcdir)/aboutlfs.ch
+aboutsbus.xml:        $(BOOKdir)/$@ $(srcdir)/aboutsbus.ch
+abouttestsuites.xml:  $(BOOKdir)/$@ $(srcdir)/abouttestsuites.ch
+addinguser.xml:       $(BOOKdir)/$@ $(srcdir)/addinguser.ch
+chapter04.xml:        $(BOOKdir)/$@ $(srcdir)/chapter04.ch
 creatingtoolsdir.xml: $(BOOKdir)/$@ $(srcdir)/creatingtoolsdir.ch
-settingenviron.xml: $(BOOKdir)/$@ $(srcdir)/settingenviron.ch
+settingenviron.xml:   $(BOOKdir)/$@ $(srcdir)/settingenviron.ch

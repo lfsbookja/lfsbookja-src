@@ -151,8 +151,15 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/chapter08
-EXTRA_DIST = chapter08.ch fstab.ch grub.ch introduction.ch kernel.ch
-srcs = chapter08.xml fstab.xml grub.xml introduction.xml kernel.xml
+CHANGE_FILES = \
+	chapter08.ch    \
+	fstab.ch        \
+	grub.ch         \
+	introduction.ch \
+	kernel.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -345,11 +352,11 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chapter08.xml: $(BOOKdir)/$@ $(srcdir)/chapter08.ch
-fstab.xml: $(BOOKdir)/$@ $(srcdir)/fstab.ch
-grub.xml: $(BOOKdir)/$@ $(srcdir)/grub.ch
+chapter08.xml:    $(BOOKdir)/$@ $(srcdir)/chapter08.ch
+fstab.xml:        $(BOOKdir)/$@ $(srcdir)/fstab.ch
+grub.xml:         $(BOOKdir)/$@ $(srcdir)/grub.ch
 introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-kernel.xml: $(BOOKdir)/$@ $(srcdir)/kernel.ch
+kernel.xml:       $(BOOKdir)/$@ $(srcdir)/kernel.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

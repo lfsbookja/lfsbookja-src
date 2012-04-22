@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling
 EXTRA_DIST = profile.ch profile-mode.ch strip-attributes.ch \
 	xsl2profile.ch
@@ -14,7 +21,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-profile.xsl: $(BOOKdir)/$@ $(srcdir)/profile.ch
-profile-mode.xsl: $(BOOKdir)/$@ $(srcdir)/profile-mode.ch
+profile.xsl:          $(BOOKdir)/$@ $(srcdir)/profile.ch
+profile-mode.xsl:     $(BOOKdir)/$@ $(srcdir)/profile-mode.ch
 strip-attributes.xsl: $(BOOKdir)/$@ $(srcdir)/strip-attributes.ch
-xsl2profile.xsl: $(BOOKdir)/$@ $(srcdir)/xsl2profile.ch
+xsl2profile.xsl:      $(BOOKdir)/$@ $(srcdir)/xsl2profile.ch

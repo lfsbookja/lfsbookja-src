@@ -1,7 +1,21 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/chapter08
-EXTRA_DIST = chapter08.ch fstab.ch grub.ch introduction.ch kernel.ch
+CHANGE_FILES = \
+	chapter08.ch    \
+	fstab.ch        \
+	grub.ch         \
+	introduction.ch \
+	kernel.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = chapter08.xml fstab.xml grub.xml introduction.xml kernel.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -12,8 +26,8 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chapter08.xml: $(BOOKdir)/$@ $(srcdir)/chapter08.ch
-fstab.xml: $(BOOKdir)/$@ $(srcdir)/fstab.ch
-grub.xml: $(BOOKdir)/$@ $(srcdir)/grub.ch
+chapter08.xml:    $(BOOKdir)/$@ $(srcdir)/chapter08.ch
+fstab.xml:        $(BOOKdir)/$@ $(srcdir)/fstab.ch
+grub.xml:         $(BOOKdir)/$@ $(srcdir)/grub.ch
 introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-kernel.xml: $(BOOKdir)/$@ $(srcdir)/kernel.ch
+kernel.xml:       $(BOOKdir)/$@ $(srcdir)/kernel.ch

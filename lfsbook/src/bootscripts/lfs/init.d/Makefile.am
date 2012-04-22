@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/bootscripts/lfs/init.d
 srcdir = @srcdir@
 srcs = checkfs cleanfs console functions halt \

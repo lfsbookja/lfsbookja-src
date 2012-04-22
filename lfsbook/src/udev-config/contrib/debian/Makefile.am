@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/udev-config/contrib/debian
 srcdir = @srcdir@
 srcs = 81-cdrom.rules 83-cdrom-symlinks.rules write_cd_aliases

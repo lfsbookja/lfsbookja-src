@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting
 EXTRA_DIST = common.ch
 srcdir = @srcdir@

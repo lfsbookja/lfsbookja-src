@@ -151,8 +151,15 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/chapter09
-EXTRA_DIST = chapter09.ch getcounted.ch reboot.ch theend.ch whatnow.ch
-srcs = chapter09.xml getcounted.xml reboot.xml theend.xml whatnow.xml
+CHANGE_FILES = \
+	chapter09.ch  \
+	getcounted.ch \
+	reboot.ch     \
+	theend.ch     \
+	whatnow.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -345,11 +352,11 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chapter09.xml: $(BOOKdir)/$@ $(srcdir)/chapter09.ch
+chapter09.xml:  $(BOOKdir)/$@ $(srcdir)/chapter09.ch
 getcounted.xml: $(BOOKdir)/$@ $(srcdir)/getcounted.ch
-reboot.xml: $(BOOKdir)/$@ $(srcdir)/reboot.ch
-theend.xml: $(BOOKdir)/$@ $(srcdir)/theend.ch
-whatnow.xml: $(BOOKdir)/$@ $(srcdir)/whatnow.ch
+reboot.xml:     $(BOOKdir)/$@ $(srcdir)/reboot.ch
+theend.xml:     $(BOOKdir)/$@ $(srcdir)/theend.ch
+whatnow.xml:    $(BOOKdir)/$@ $(srcdir)/whatnow.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

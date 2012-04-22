@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml
 EXTRA_DIST = admon.ch annotations.ch autoidx-kimber.ch autoidx-kosek.ch \
 	autoidx-ng.ch autoidx.ch autotoc.ch biblio-iso690.ch \

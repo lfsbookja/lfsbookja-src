@@ -151,12 +151,18 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/appendices
-EXTRA_DIST = acknowledgments.ch acronymlist.ch creat-comm.ch \
-	dependencies.ch license.ch mit-lic.ch scripts.ch udev-rules.ch 
+CHANGE_FILES = \
+	acknowledgments.ch \
+	acronymlist.ch     \
+	creat-comm.ch      \
+	dependencies.ch    \
+	license.ch         \
+	mit-lic.ch         \
+	scripts.ch         \
+	udev-rules.ch
 
-srcs = acknowledgments.xml acronymlist.xml creat-comm.xml dependencies.xml \
-	license.xml mit-lic.xml scripts.xml udev-rules.xml 
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -350,13 +356,13 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 acknowledgments.xml: $(BOOKdir)/$@ $(srcdir)/acknowledgments.ch
-acronymlist.xml: $(BOOKdir)/$@ $(srcdir)/acronymlist.ch
-creat-comm.xml: $(BOOKdir)/$@ $(srcdir)/creat-comm.ch
-dependencies.xml: $(BOOKdir)/$@ $(srcdir)/dependencies.ch
-license.xml: $(BOOKdir)/$@ $(srcdir)/license.ch
-mit-lic.xml: $(BOOKdir)/$@ $(srcdir)/mit-lic.ch
-scripts.xml: $(BOOKdir)/$@ $(srcdir)/scripts.ch
-udev-rules.xml: $(BOOKdir)/$@ $(srcdir)/udev-rules.ch
+acronymlist.xml:     $(BOOKdir)/$@ $(srcdir)/acronymlist.ch
+creat-comm.xml:      $(BOOKdir)/$@ $(srcdir)/creat-comm.ch
+dependencies.xml:    $(BOOKdir)/$@ $(srcdir)/dependencies.ch
+license.xml:         $(BOOKdir)/$@ $(srcdir)/license.ch
+mit-lic.xml:         $(BOOKdir)/$@ $(srcdir)/mit-lic.ch
+scripts.xml:         $(BOOKdir)/$@ $(srcdir)/scripts.ch
+udev-rules.xml:      $(BOOKdir)/$@ $(srcdir)/udev-rules.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

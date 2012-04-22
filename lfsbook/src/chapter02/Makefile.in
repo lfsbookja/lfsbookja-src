@@ -151,12 +151,15 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/chapter02
-EXTRA_DIST = chapter02.ch creatingfilesystem.ch creatingpartition.ch \
-	introduction.ch mounting.ch
+CHANGE_FILES = \
+	chapter02.ch          \
+	creatingfilesystem.ch \
+	creatingpartition.ch  \
+	introduction.ch       \
+	mounting.ch
 
-srcs = chapter02.xml creatingfilesystem.xml creatingpartition.xml \
-	introduction.xml mounting.xml
-
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -349,11 +352,11 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-chapter02.xml: $(BOOKdir)/$@ $(srcdir)/chapter02.ch
+chapter02.xml:          $(BOOKdir)/$@ $(srcdir)/chapter02.ch
 creatingfilesystem.xml: $(BOOKdir)/$@ $(srcdir)/creatingfilesystem.ch
-creatingpartition.xml: $(BOOKdir)/$@ $(srcdir)/creatingpartition.ch
-introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
-mounting.xml: $(BOOKdir)/$@ $(srcdir)/mounting.ch
+creatingpartition.xml:  $(BOOKdir)/$@ $(srcdir)/creatingpartition.ch
+introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
+mounting.xml:           $(BOOKdir)/$@ $(srcdir)/mounting.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

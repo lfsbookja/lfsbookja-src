@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/lsb-bootscripts/lib/network-services
 srcdir = @srcdir@
 srcs = ipv4-static ipv4-static-route

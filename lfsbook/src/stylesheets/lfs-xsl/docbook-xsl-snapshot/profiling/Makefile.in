@@ -349,10 +349,10 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-profile.xsl: $(BOOKdir)/$@ $(srcdir)/profile.ch
-profile-mode.xsl: $(BOOKdir)/$@ $(srcdir)/profile-mode.ch
+profile.xsl:          $(BOOKdir)/$@ $(srcdir)/profile.ch
+profile-mode.xsl:     $(BOOKdir)/$@ $(srcdir)/profile-mode.ch
 strip-attributes.xsl: $(BOOKdir)/$@ $(srcdir)/strip-attributes.ch
-xsl2profile.xsl: $(BOOKdir)/$@ $(srcdir)/xsl2profile.ch
+xsl2profile.xsl:      $(BOOKdir)/$@ $(srcdir)/xsl2profile.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

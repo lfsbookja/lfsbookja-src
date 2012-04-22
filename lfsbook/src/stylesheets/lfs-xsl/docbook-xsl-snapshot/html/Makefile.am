@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/html
 EXTRA_DIST = chunker.ch
 srcdir = @srcdir@
@@ -13,4 +20,3 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 chunker.xsl: $(BOOKdir)/$@ $(srcdir)/chunker.ch
-

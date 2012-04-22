@@ -1,9 +1,17 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/chapter03
 CHANGE_FILES = \
-	chapter03.ch \
+	chapter03.ch    \
 	introduction.ch \
-	packages.ch \
+	packages.ch     \
 	patches.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

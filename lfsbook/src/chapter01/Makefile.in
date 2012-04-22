@@ -153,12 +153,12 @@ top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/chapter01
 CHANGE_FILES = \
 	askforhelp.ch \
-	changelog.ch \
-	chapter01.ch \
-	how.ch \
-	livecd.ch \
-	resources.ch \
-	whatsnew.ch \
+	changelog.ch  \
+	chapter01.ch  \
+	how.ch        \
+	livecd.ch     \
+	resources.ch  \
+	whatsnew.ch   \
 	jchangelog.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

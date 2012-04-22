@@ -1,3 +1,10 @@
+##
+## This is part of LFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
 BOOKdir = @abs_bookdir@/bootscripts/lfs/sysconfig
 srcdir = @srcdir@
 srcs = createfiles modules rc rc.site udev_retry

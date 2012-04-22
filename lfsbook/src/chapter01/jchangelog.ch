@@ -54,6 +54,17 @@
 -->
 
     <listitem>
+      <para>2012-04-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          ソース整形。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-04-20</para>
       <itemizedlist>
         <listitem>
