@@ -111,7 +111,35 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x
+@x --prefix=/tools
+          <para>This tells the configure script to prepare to install the
+          Binutils programs in the <filename class="directory">/tools</filename>
+          directory.</para>
+@y
+          <para>
+          configure スクリプトに対して Binutils プログラムを <filename class="directory">/tools</filename> ディレクトリ以下にインストールすることを指示します。
+          </para>
+@z
+
+@x --with-sysroot=$LFS
+          <para>For cross compilation, this tells the build system to look in
+          $LFS for the target system libraries as needed.</para>
+@y
+          <para>
+          クロスコンパイル時に、ターゲットとして必要となるシステムライブラリを $LFS より探し出すことを指示します。
+          </para>
+@z
+
+@x --with-lib-path=/tools/lib
+          <para>This specifies which library path the linker should be
+          configured to use.</para>
+@y
+          <para>
+          リンカーが用いるべきライブラリパスを指定します。
+          </para>
+@z
+
+@x --target=$LFS_TGT
           <para>Because the machine description in the <envar>LFS_TGT</envar>
           variable is slightly different than the value returned by the
           <command>config.guess</command> script, this switch will tell the
@@ -119,21 +147,8 @@
           for building a cross linker.  </para>
 @y
           <para>
-          変数 <envar>LFS_TGT</envar>
-          に設定しているマシン名は <command>config.guess</command> スクリプトが返すものとは微妙に異なります。
+          変数 <envar>LFS_TGT</envar> に設定しているマシン名は <command>config.guess</command> スクリプトが返すものとは微妙に異なります。
           そこでこのオプションは、Binutils のビルドにあたってクロスリンカーをビルドするように <command>configure</command> スクリプトに指示するものです。
-          </para>
-@z
-
-@x
-          <para>This tells the configure script to prepare to install the
-          Binutils programs in the <filename class="directory">/tools</filename>
-          directory.</para>
-@y
-          <para>
-          configure スクリプトに対して Binutils プログラムを
-          <filename class="directory">/tools</filename>
-          ディレクトリ以下にインストールすることを指示します。
           </para>
 @z
 

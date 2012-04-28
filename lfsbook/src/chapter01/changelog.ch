@@ -48,6 +48,116 @@
 @z
 
 @x
+      <para>2012-04-26</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - tidy some minor issues from the merge.
+           </para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-26</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - jh ブランチからのマージにより若干変更。
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-04-25</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Incorporate changes developed and tested in the jh branch.
+           </para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - Update chapter 5 toolchain technical notes to match changes
+           in build method.</para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - Use --with-native-system-header-dir
+           switch in chapter 5 gcc.  This replaces seds that were used previously
+           to alter the CROSS_SYSTEM_HEADER_DIR and NATIVE_SYSTEM_HEADER_DIR
+           values to keep the toolchain searching for headers only in
+           /tools/include and not /usr/include. Thanks to Pierre Labastie. Fixes
+           <ulink url="&lfs-ticket-root;3066">#3066</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - Remove --without-cloog and --without-ppl from chapter 5 gcc.
+           These are unnecessary since it doesn't matter if pass 1 gcc is linked against
+           host libs and it should be impossible for the build of pass 2 gcc to find host
+           headers or libs.</para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - Adjust build method to use sysroot.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-25</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - jh ブランチにて開発されテストされた内容を適用。
+           </para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - ビルド方法の変更に合わせて、第5章のツールチェーンの説明を更新。
+           </para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - 第5章の gcc にて --with-native-system-header-dir スイッチを利用。
+           これはかつて利用していた sed 処理に置き換わるもの。
+           CROSS_SYSTEM_HEADER_DIR と NATIVE_SYSTEM_HEADER_DIR の値を変更して、ツールチェーンが探し出すヘッダーを /usr/include ではなく /tools/include とする。
+           Pierre Labastie に感謝。
+           <ulink url="&lfs-ticket-root;3066">#3066</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - 第5章の gcc にて --without-cloog と --without-ppl を削除。
+           これが不要であった理由は、1回めの gcc はホストのライブラリにリンクされるので問題がなく、2回めの gcc のビルドでは、ホストのヘッダーとライブラリを見つけ出すことができないため。
+           </para>
+         </listitem>
+         <listitem>
+           <para>[jhuntwork] - ビルド方法として sysroot を利用することに。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-04-24</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.3.3. Fixes
+           <ulink url="&lfs-ticket-root;3067">#3067</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Man-Pages-3.39. Fixes
+           <ulink url="&lfs-ticket-root;3065">#3065</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Kmod-8. Fixes
+           <ulink url="&lfs-ticket-root;3064">#3064</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-24</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Linux-3.3.3 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3067">#3067</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Man-Pages-3.39 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3065">#3065</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Kmod-8 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3064">#3064</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-04-19</para>
       <itemizedlist>
          <listitem>
@@ -104,7 +214,7 @@
 @z
 
 @x
-      <para>2012-05-09</para>
+      <para>2012-04-09</para>
       <itemizedlist>
          <listitem>
            <para>[bdubbs] - Update networking bootscripts.  See
@@ -125,7 +235,7 @@
 @z
 
 @x
-      <para>2012-05-05</para>
+      <para>2012-04-05</para>
       <itemizedlist>
          <listitem>
            <para>[bdubbs] - Change the location for the python gdb module 

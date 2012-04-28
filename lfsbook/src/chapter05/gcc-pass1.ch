@@ -68,6 +68,52 @@
 @z
 
 @x
+    <para>The following command will change the location of GCC's default
+    dynamic linker to use the one installed in <filename
+    class="directory">/tools</filename>. It also removes <filename
+    class="directory">/usr/include</filename> from GCC's include search path.
+    Issue:</para>
+@y
+    <para>
+    以下のコマンドは GCC のデフォルトのダイナミックリンカーの配置ディレクトリを、既にインストールされている <filename
+    class="directory">/tools</filename> とします。
+    また GCC のインクルードパスから <filename
+    class="directory">/usr/include</filename> を除きます。
+    </para>
+@z
+
+@x
+    <para>In case the above seems hard to follow, let's break it down a bit.
+    First we find all the files under the <filename
+    class="directory">gcc/config</filename> directory that are named either
+    <filename>linux.h</filename>, <filename>linux64.h</filename> or
+    <filename>sysv4.h</filename>.  For each file found, we copy it to a file of
+    the same name but with an added suffix of <quote>.orig</quote>. Then the
+    first sed expression prepends <quote>/tools</quote> to every instance of
+    <quote>/lib/ld</quote>, <quote>/lib64/ld</quote> or
+    <quote>/lib32/ld</quote>, while the second one replaces hard-coded
+    instances of <quote>/usr</quote>. Next, we add our define statements which
+    alter the default startfile prefix to the end of the file. Note that the
+    trailing <quote>/</quote> in <quote>/tools/lib/</quote> is required.
+    Finally, we use <command>touch</command> to update the timestamp on the
+    copied files.  When used in conjunction with <command>cp -u</command>, this
+    prevents unexpected changes to the original files in case the commands are
+    inadvertently run twice.  </para>
+@y
+    <para>
+    上のコマンドがよく分からない場合は一つ一つ読み下していってください。
+    まず <filename class="directory">gcc/config</filename> ディレクトリには <filename>linux.h</filename>, <filename>linux64.h</filename>, <filename>sysv4.h</filename> といったファイルのいずれかがあります。
+    それらが存在したら、ファイル名称の末尾に<quote>.orig</quote>をつけたファイルとしてコピーします。
+    そして一つめの sed コマンドでは、そのファイル内にある<quote>/lib/ld</quote>, <quote>/lib64/ld</quote>, <quote>/lib32/ld</quote>という記述部分の頭に<quote>/tools</quote>を付与します。
+    また二つめの sed コマンドによってハードコーディングされている<quote>/usr</quote>という部分を書き換えます。
+    そしてここで加えるべき定義文をファイルの末尾に追加し、検索パスと startfile プリフィックスを変更します。
+    この際に<quote>/tools/lib/</quote>の終わりには<quote>/</quote>が必要となります。
+    最後に <command>touch</command> によってコピーしたファイルのタイムスタンプを更新します。
+    <command>cp -u</command> を用いるのは、誤ってコマンドを二度起動したとしてもオリジナルファイルを壊さないようにするためです。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC outside of the
     source directory in a dedicated build directory:</para>
 @y
@@ -88,7 +134,62 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x --with-newlib
+          <para>Since a working C library is not yet available, this ensures
+          that the inhibit_libc constant is defined when building libgcc. This prevents
+          the compiling of any code that requires libc support.</para>
+@y
+          <para>
+          この時点では利用可能な C ライブラリがまだ存在しません。
+          したがって libgcc のビルド時に inhibit_libc 定数を定義します。
+          これを行うことで、libc サポートを必要とするコード部分をコンパイルしないようにします。
+          </para>
+@z
+
+@x --without-headers
+          <para>When creating a complete cross-compiler, GCC requires
+          standard headers compatible with the target system. For our
+          purposes these headers will not be needed. This switch prevents
+          GCC from looking for them.</para>
+@y
+          <para>
+          完璧なクロスコンパイラーを構築するなら、GCC はターゲットシステムに互換性を持つ標準ヘッダーを必要とします。
+          本手順においては標準ヘッダーは必要ありません。
+          このスイッチは GCC がそういったヘッダーを探しにいかないようにします。
+          </para>
+@z
+
+@x --with-local-prefix=/tools
+          <para>The local prefix is the location in the system that GCC will search
+          for locally installed include files. The default is <filename>/usr/local</filename>.
+          Setting this to <filename>/tools</filename> helps keep the host location of
+          <filename>/usr/local</filename> out of this GCC's search path.</para>
+@y
+          <para>
+          ローカルプリフックス (local prefix) は、GCC がローカルにインストールされているインクルードファイルを探しにいくディレクトリを意味します。
+          そのデフォルトは <filename>/usr/local</filename> です。
+          この設定を <filename>/tools</filename> とすることで、GCC が探し出すパスから <filename>/usr/local</filename> を除外します。
+          </para>
+@z
+
+@x --with-native-system-header-dir=/tools/include
+          <para>By default GCC searches <filename>/usr/include</filename> for system
+          headers. In conjunction with the sysroot switch, this would translate normally
+          to <filename>$LFS/usr/include</filename>. However the headers that will be installed
+          in the next two sections will go to <filename>$LFS/tools/include</filename>. This
+          switch ensures that gcc will find them correctly. In the second pass of GCC, this
+          same switch will ensure that no headers from the host system are found.</para>
+@y
+          <para>
+          GCC がシステムヘッダーを探し出すデフォルトのパスは <filename>/usr/include</filename> です。
+          後に root を変更する際には、このディレクトリは <filename>$LFS/usr/include</filename> となります。
+          しかしこの直後の2つの作業を通じて、ヘッダーをインストールする先は <filename>$LFS/tools/include</filename> としています。
+          つまり本スイッチは GCC がヘッダーを正しく見つけ出せるようにするものです。
+          GCC の2回めのビルドでは、同じスイッチを用いて、ホストシステムのヘッダーは一切見つけ出さないようにします。
+          </para>
+@z
+
+@x --disable-shared
           <para>This switch forces GCC to link its internal libraries
           statically. We do this to avoid possible issues with the host
           system.</para>
@@ -99,7 +200,7 @@
           </para>
 @z
 
-@x
+@x --disable-decimal-float, --disable-threads, --disable-libmudflap, --disable-libssp, --disable-libgomp, --disable-libquadmath
           <para>These switches disable support for the decimal floating point
           extension, threading, libmudflap, libssp and libgomp and libquadmath
           respectively. These features will fail to compile when building a
@@ -113,7 +214,7 @@
           </para>
 @z
 
-@x
+@x --disable-multilib
           <para>On x86_64, LFS does not yet support a multilib configuration.
           This switch is harmless for x86.</para>
 @y
@@ -123,23 +224,13 @@
           </para>
 @z
 
-@x
+@x --enable-languages=c
           <para>This option ensures that only the C compiler is built.
           This is the only language needed now.</para>
 @y
           <para>
           このオプションは C コンパイラーのみビルドすることを指示します。
           この時点で必要なのはこの言語だけだからです。
-          </para>
-@z
-
-@x --without-ppl, --without-cloog
-          <para>These switches prevent GCC from building against the PPL and
-          CLooG libraries which may be present on the host system, but will not
-          be available in the chroot environment.</para>
-@y
-          <para>
-          このオプションは、PPL および CLooG ライブラリがホストシステムに存在していたとしても、chroot 環境ではそれらを利用することが出来ないため、リンクしないようにします。
           </para>
 @z
 

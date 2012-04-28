@@ -249,6 +249,76 @@
 @z
 
 @x
+    <para>At this point, it is imperative to stop and ensure that the basic
+    functions (compiling and linking) of the new toolchain are working as
+    expected. To perform a sanity check, run the following commands:</para>
+@y
+    <para>
+    この時点で以下を必ず実施します。
+    新しいツールチェーンの基本的な機能 (コンパイルやリンク) が正常に処理されるかどうかを確認することです。
+    健全性のチェック (sanity check) を行うものであり、以下のコマンドを実行します。
+    </para>
+@z
+
+@x
+    <para>If everything is working correctly, there should be no errors,
+    and the output of the last command will be of the form:</para>
+@y
+    <para>
+    すべてが正常に処理され、エラーが発生しなければ、最終のコマンドの実行結果として以下が出力されるはずです。
+    </para>
+@z
+
+@x
+    <para>Note that <filename class="directory">/tools/lib</filename>, or
+    <filename class="directory">/tools/lib64</filename> for 64-bit machines
+    appears as the prefix of the dynamic linker.</para>
+@y
+    <para>
+    ダイナミックリンカーのプリフィックスは <filename
+    class="directory">/tools/lib</filename>、あるいは 64 ビットマシンであれば <filename
+    class="directory">/tools/lib64</filename> となります。
+    </para>
+@z
+
+@x
+    <para>If the output is not shown as above or there was no output at all,
+    then something is wrong. Investigate and retrace the steps to find out
+    where the problem is and correct it. This issue must be resolved before
+    continuing on. Something may have gone wrong with the specs file amendment
+    above. In this case, redo the specs file amendment, being careful to
+    copy-and-paste the commands.</para>
+@y
+    <para>
+    出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
+    どこに問題があるのか調査、再試行を行って解消してください。
+    解決せずにこの先に進まないでください。
+    上で行ったスペックファイルの修正に間違いがあるのかもしれません。
+    その場合は、コマンドのコピーペーストを慎重に行ってスペックファイルの再調整を行ってください。
+    </para>
+@z
+
+@x
+    <para>Once all is well, clean up the test files:</para>
+@y
+    <para>
+    すべてが完了したら、テストファイルを削除します。
+    </para>
+@z
+
+@x
+  <note><para>Building Binutils in the next section will serve as an additional check that
+  the toolchain has been built properly. If Binutils fails to build, it is an
+  indication that something has gone wrong with the previous Binutils, GCC, or Glibc
+  installations.</para></note>
+@y
+  <note><para>
+  次節にてビルドする Binutils では、ツールチェーンが正しく構築できたかどうかを再度チェックすることになります。
+  Binutils のビルドに失敗したとしたら、それ以前にインストールしてきた Binutils, GCC, Glibc のいずれかにてビルドがうまくできていないことを意味します。
+  </para></note>
+@z
+
+@x
     <para>Details on this package are located in
     <xref linkend="contents-glibc" role="."/></para>
 @y

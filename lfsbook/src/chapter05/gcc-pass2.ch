@@ -38,20 +38,26 @@
 @z
 
 @x
-    <para>Versions of GCC later than 4.3 will treat this build as if
-    it were a relocated compiler and disallow searching for startfiles in
-    the location specified by <parameter>--prefix</parameter>. Since this
-    will not be a relocated compiler, and the startfiles in
-    <filename class="directory">/tools</filename> are crucial to building
-    a working compiler linked to the libs in <filename class="directory">/tools</filename>,
-    apply the following patch which partially reverts GCC to its old behavior:</para>
+    <para>Our first build of GCC has installed a couple of internal system
+    headers.  Normally one of them, <filename>limits.h</filename> will in turn
+    include the corresponding system <filename>limits.h</filename> header, in
+    this case, <filename>/tools/include/limits.h</filename>. However, at the
+    time of the first build of gcc <filename>/tools/include/limits.h</filename>
+    did not exist, so the internal header that GCC installed is a partial,
+    self-contained file and does not include the extended features of the
+    system header. This was adequate for building the temporary libc, but this
+    build of GCC now requires the full internal header.  Create a full version
+    of the internal header using a command that is identical to what the GCC
+    build system does in normal circumstances:</para>
 @y
     <para>
-    バージョン 4.3 以降の GCC を用いてここでのビルド作業を行うと、出来上がるのは再配置可能なコンパイラー (relocated compiler) であり、<parameter>--prefix</parameter> パラメータによって指定されたディレクトリからの起動ファイル (startfiles) の探索が行われないものになります。
-    しかしここで作り出すのは再配置可能なコンパイラーではなく、<filename
-    class="directory">/tools</filename> ディレクトリにある起動ファイルは <filename
-    class="directory">/tools</filename> ディレクトリ内のライブラリにリンクされたコンパイラーを作り出すことが必要であるため、以下のパッチを適用します。
-    このパッチは、部分的に GCC の古い機能を復活させるものです。
+    第1回めの GCC のビルドでは、内部的なシステムヘッダーをインストールしています。
+    その1つ <filename>limits.h</filename> は、これに対応づくシステムヘッダー <filename>limits.h</filename> を読み込みます。
+    そのファイルは実際には <filename>/tools/include/limits.h</filename> となります。
+    しかし1回めの GCC のビルド時には <filename>/tools/include/limits.h</filename> は存在しません。
+    したがって GCC がインストールする内部ヘッダーは、部分的で自己完結した (self-contained) もののみとなり、システムヘッダーが持つ拡張機能は含まれません。
+    一時的な libc を構築するならこれは正しかったのですが、この段階での GCC のビルドでは、内部ヘッダーが完全な形のものでなければなりません。
+    完全な内部ヘッダーを生成するために、GCC ビルドシステムが通常行っている方法と同じようにするための、以下のコマンドを実行します。
     </para>
 @z
 
@@ -92,67 +98,13 @@
 @z
 
 @x
-    <para>The following command will change the location of GCC's default
-    dynamic linker to use the one installed in
-    <filename class="directory">/tools</filename>. It also removes <filename
-    class="directory">/usr/include</filename> from GCC's include search path.
-    Doing this now rather than adjusting the specs file after installation
-    ensures that the new dynamic linker is used during the actual build of
-    GCC. That is, all of the binaries created during the build will link
-    against the new Glibc. Issue:</para>
+    <para>Once again, change the location of GCC's default dynamic linker to
+    use the one installed in <filename
+    class="directory">/tools</filename>.</para>
 @y
     <para>
-    以下のコマンドは GCC が利用するダイナミックリンカーの場所を変更して <filename
-    class="directory">/tools</filename> ディレクトリにインストールしたものを用いるようにします。
-    同時に GCC が探索するインクルードファイルのパスから <filename
-    class="directory">/usr/include</filename> を取り除きます。
-    インストールの後にスペックファイルを調整する方法もありますが、今ここでこのようにするのは GCC の実際のビルドにおいて新しいダイナミックリンカーを用いるようにするためです。
-    つまりここでのビルドを通じてすべての実行モジュール類を新しい Glibc に対してリンクするものです。
-    以下のコマンドによりそれを実現します。
-    </para>
-@z
-
-@x
-    <para>In case the above seems hard to follow, let's break it down a bit.
-    First we find all the files under the
-    <filename class="directory">gcc/config</filename> directory that are named
-    either <filename>linux.h</filename>, <filename>linux64.h</filename> or
-    <filename>sysv4.h</filename>.
-    For each file found, we copy it to a file of the same name but with an added
-    suffix of <quote>.orig</quote>. Then the first sed expression prepends
-    <quote>/tools</quote> to every instance of <quote>/lib/ld</quote>,
-    <quote>/lib64/ld</quote> or <quote>/lib32/ld</quote>, while the second one
-    replaces hard-coded instances of <quote>/usr</quote>. Then we add our define
-    statements which alter the include search path and the default startfile prefix
-    to the end of the file.
-    Finally, we use <command>touch</command> to update the timestamp on the copied files.
-    When used in conjunction with <command>cp -u</command>, this prevents unexpected
-    changes to the original files in case the commands are inadvertently run twice.
-    </para>
-@y
-    <para>
-    上のコマンドがよく分からない場合は一つ一つ読み下していってください。
-    まず <filename class="directory">gcc/config</filename> ディレクトリには <filename>linux.h</filename>,
-    <filename>linux64.h</filename>,
-    <filename>sysv4.h</filename> といったファイルのいずれかがあるはずです。
-    それらが存在したら、ファイル名称の末尾に<quote>.orig</quote>をつけたファイルとしてコピーします。
-    そして一つめの sed コマンドでは、そのファイル内にある<quote>/lib/ld</quote>,
-    <quote>/lib64/ld</quote>,
-    <quote>/lib32/ld</quote>という記述部分の頭に<quote>/tools</quote>を付与します。
-    また二つめの sed コマンドによってハードコーディングされている<quote>/usr</quote>という部分を書き換えます。
-    そしてここで加えるべき定義文をファイルの末尾に追加し、検索パスと startfile プリフィックスを変更します。
-    最後に <command>touch</command> によってコピーしたファイルのタイムスタンプを更新します。
-    <command>cp -u</command> を用いるのは、誤ってコマンドを二度起動したとしてもオリジナルファイルを壊さないようにするためです。
-    </para>
-@z
-
-@x
-    <para>On x86_64, unsetting the multilib spec for GCC ensures that it
-    won't attempt to link against libraries on the host:</para>
-@y
-    <para>
-    x86_64 では GCC の multilib スペックを無効化します。
-    これはホスト上のライブラリにリンクされないようにするためです。
+    もう一度、GCC のデフォルトのダイナミックリンカーの配置ディレクトリを、既にインストールされている <filename
+    class="directory">/tools</filename> とします。
     </para>
 @z
 

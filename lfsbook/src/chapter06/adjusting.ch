@@ -14,36 +14,20 @@
 @z
 
 @x
-  <title>Re-adjusting the Toolchain</title>
+  <title>Adjusting the Toolchain</title>
 @y
-  <title>ツールチェーンの再調整</title>
+  <title>ツールチェーンの調整</title>
 @z
 
 @x
   <para>Now that the final C libraries have been installed, it is time to adjust
-  the toolchain again. The toolchain will be adjusted so that it will link any
-  newly compiled program against these new libraries. This is a similar process
-  used in the <quote>Adjusting</quote> phase in the beginning of <xref
-  linkend="chapter-temporary-tools"/>, but with the adjustments reversed. In <xref
-  linkend="chapter-temporary-tools"/>, the chain was guided from the host's
-  <filename class="directory">/{,usr/}lib</filename> directories to the new
-  <filename class="directory">/tools/lib</filename> directory. Now, the chain will
-  be guided from that same <filename class="directory">/tools/lib</filename>
-  directory to the LFS <filename class="directory">/{,usr/}lib</filename>
-  directories.</para>
+  the toolchain so that it will link any
+  newly compiled program against these new libraries.</para>
 @y
   <para>
   最終的な C ライブラリがこれまでに構築できました。
-  ここでツールチェーンの調整を再度行います。
+  ここでツールチェーンの調整を行います。
   これを行うことで、新たに生成したプログラムが新たに生成したライブラリにリンクされます。
-  この作業は<xref linkend="chapter-temporary-tools"/>の冒頭にて行った<quote>調整</quote>作業と同様のことです。
-  ただし調整される方向が逆になります。
-  <xref linkend="chapter-temporary-tools"/>では、ホストシステムの <filename
-  class="directory">/{,usr/}lib</filename> ディレクトリを新しく作った <filename
-  class="directory">/tools/lib</filename> ディレクトリに仕向けていました。
-  今度は同じ <filename
-  class="directory">/tools/lib</filename> ディレクトリを LFS の <filename
-  class="directory">/{,usr/}lib</filename> ディレクトリに向けます。
   </para>
 @z
 
@@ -216,7 +200,7 @@
 @y
   <para os="t">
   出力結果が上と異なっていたり、出力が全く得られなかったりした場合は、何かが根本的に間違っているということです。
-  どこに問題があるのか調査・再試行を行って解消してください。
+  どこに問題があるのか調査、再試行を行って解消してください。
   最もありがちな理由は、スペックファイルの修正を誤っていることです。
   問題を残したままこの先には進まないでください。
   </para>

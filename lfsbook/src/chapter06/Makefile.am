@@ -8,6 +8,7 @@
 BOOKdir = @abs_bookdir@/chapter06
 CHANGE_FILES = \
 	aboutdebug.ch        \
+	adjusting.ch         \
 	autoconf.ch          \
 	automake.ch          \
 	bash.ch              \
@@ -59,7 +60,6 @@ CHANGE_FILES = \
 	pkgmgt.ch            \
 	procps.ch            \
 	psmisc.ch            \
-	readjusting.ch       \
 	readline.ch          \
 	revisedchroot.ch     \
 	sed.ch               \
@@ -89,6 +89,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 aboutdebug.xml:        $(BOOKdir)/$@ $(srcdir)/aboutdebug.ch
+adjusting.xml:         $(BOOKdir)/$@ $(srcdir)/adjusting.ch
 autoconf.xml:          $(BOOKdir)/$@ $(srcdir)/autoconf.ch
 automake.xml:          $(BOOKdir)/$@ $(srcdir)/automake.ch
 bash.xml:              $(BOOKdir)/$@ $(srcdir)/bash.ch
@@ -140,7 +141,6 @@ perl.xml:              $(BOOKdir)/$@ $(srcdir)/perl.ch
 pkgmgt.xml:            $(BOOKdir)/$@ $(srcdir)/pkgmgt.ch
 procps.xml:            $(BOOKdir)/$@ $(srcdir)/procps.ch
 psmisc.xml:            $(BOOKdir)/$@ $(srcdir)/psmisc.ch
-readjusting.xml:       $(BOOKdir)/$@ $(srcdir)/readjusting.ch
 readline.xml:          $(BOOKdir)/$@ $(srcdir)/readline.ch
 revisedchroot.xml:     $(BOOKdir)/$@ $(srcdir)/revisedchroot.ch
 sed.xml:               $(BOOKdir)/$@ $(srcdir)/sed.ch

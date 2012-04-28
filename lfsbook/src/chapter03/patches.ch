@@ -112,20 +112,6 @@
 @z
 
 @x
-      <term>GCC Startfiles Fix Patch - <token>&gcc-startfiles-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&gcc-startfiles-patch;"/></para>
-        <para>MD5 sum: <literal>&gcc-startfiles-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>GCC Startfiles Fix Patch - <token>&gcc-startfiles-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&gcc-startfiles-patch;"/></para>
-        <para>MD5 sum: <literal>&gcc-startfiles-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Glibc GCC Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>

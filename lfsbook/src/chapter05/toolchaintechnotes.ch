@@ -139,13 +139,12 @@
 @z
 
 @x
-      <para>Careful manipulation of <command>gcc</command>'s
-      <filename>specs</filename> file tells the compiler which target dynamic
-      linker will be used</para>
+    <para>Careful manipulation of the GCC source tells the compiler which target
+    dynamic linker will be used.</para>
 @y
-      <para>
-      <command>gcc</command> のスペック (specs) ファイルを適切に調整することで、どのダイナミックリンカーを用いるのかをコンパイラーに指示します。
-      </para>
+    <para>
+    <command>gcc</command> のソースを適切に調整することで、どのダイナミックリンカーを用いるのかをコンパイラーに指示します。
+    </para>
 @z
 
 @x
@@ -236,6 +235,17 @@
 @z
 
 @x
+  <para>Next installed are sanitized Linux API headers. These allow the standard
+  C library (Glibc) to interface with features that the Linux kernel will
+  provide.</para>
+@y
+  <para>
+  次に健全化された (sanitized) Linux API ヘッダーをインストールします。
+  これにより、標準 C ライブラリ (Glibc) が Linux カーネルが提供する機能とのインターフェースを可能とします。
+  </para>
+@z
+
+@x
   <para>The next package installed is Glibc. The most important considerations
   for building Glibc are the compiler, binary tools, and kernel headers. The
   compiler is generally not an issue since Glibc will always use the compiler
@@ -271,58 +281,34 @@
 @z
 
 @x
-  <para>After the Glibc installation, change <command>gcc</command>'s specs file
-  to point to the new dynamic linker in <filename
-  class="directory">/tools/lib</filename>.  This last step is vital in ensuring
-  that searching and linking take place only within the <filename
-  class="directory">/tools</filename> prefix. A hard-wired
-  path to a dynamic linker is embedded into every Executable and Link Format
-  (ELF)-shared executable.  This can be inspected by running:
-  <userinput>readelf -l &lt;name of binary&gt; | grep interpreter</userinput>.
-  Amending <command>gcc</command>'s specs file ensures that every program
-  compiled from here through the end of this chapter will use the new dynamic
-  linker in <filename class="directory">/tools/lib</filename>.</para>
+  <para>During the second pass of Binutils, we are able to utilize the
+  <parameter>--with-lib-path</parameter> configure switch to control
+  <command>ld</command>'s library search path.</para>
 @y
   <para>
-  Glibc をインストールした後は、<command>gcc</command> のスペックファイルにて <filename
-  class="directory">/tools/lib</filename> ディレクトリにある新しいダイナミックリンカーを用いるような修正を行います。
-  この修正により <filename class="directory">/tools</filename> 内での検索とリンクが行われるようにします。
-  ダイナミックリンカーに対する固定的な検索パスの設定は、ここから生成されるすべての ELF (Executable and Link Format) 形式の実行モジュールにも埋め込まれていきます。
-  その結果は <userinput>readelf -l &lt;</userinput>実行モジュール名<userinput>&gt; | grep interpreter</userinput> を実行すれば確認できます。
-  gcc のスペックファイルを修正するのは、これ以降、本章の最後に至るまで、すべてのプログラムのコンパイル時に <filename
-  class="directory">/tools/lib</filename> にあるダイナミックリンカーが利用されるよう仕向けるものです。
+  Binutils の2回めのビルドにおいては <command>ld</command> コマンドのライブラリ検索パスを設定するために configure の <parameter>--with-lib-path</parameter> スイッチを指定します。
   </para>
 @z
 
 @x
-  <para>For the second pass of GCC, its sources also need to be modified
-  to tell GCC to use the new dynamic linker. Failure to do
-  so will result in the GCC programs themselves having the name of the
-  dynamic linker from the host system's <filename
-  class="directory">/lib</filename> directory embedded into them, which
-  would defeat the goal of getting away from the host.</para>
+  <para>For the second pass of GCC, its sources also need to be modified to
+  tell GCC to use the new dynamic linker. Failure to do so will result in the
+  GCC programs themselves having the name of the dynamic linker from the host
+  system's <filename class="directory">/lib</filename> directory embedded into
+  them, which would defeat the goal of getting away from the host. From this
+  point onwards, the core toolchain is self-contained and self-hosted. The
+  remainder of the <xref linkend="chapter-temporary-tools"/> packages all build
+  against the new Glibc in <filename
+  class="directory">/tools</filename>.</para>
 @y
   <para>
-  GCC の第2回目のビルドにおいても、スペックファイルを修正して新しいダイナミックリンカーが用いられるようにします。
+  GCC の第2回目のビルドにおいても、ソースを修正して新しいダイナミックリンカーが用いられるようにします。
   これをもし誤ってしまうと、ホストシステムの <filename
   class="directory">/lib</filename> ディレクトリが埋め込まれたダイナミックリンカーを用いるものとして GCC が生成されてしまいます。
   こうしてしまうと、ホストシステムに依存しない形を目指すという目的が達成できません。
-  </para>
-@z
-
-@x
-  <para>During the second pass of Binutils, we are able to utilize the
-  <parameter>--with-lib-path</parameter> configure switch to control
-  <command>ld</command>'s library search path.  From this point onwards,
-  the core toolchain is self-contained and self-hosted. The remainder of
-  the <xref linkend="chapter-temporary-tools"/> packages all build against
-  the new Glibc in <filename class="directory">/tools</filename>.</para>
-@y
-  <para>
-  Binutils の2回めのビルドにおいては <command>ld</command> コマンドのライブラリ検索パスを設定するために configure の <parameter>--with-lib-path</parameter> オプションを指定します。
-  それ以降ツールチェーンの核となるツール類は、自分自身から作り出された (self-contained) 自分だけで処理できる (self-hosted) 形となります。
-  <xref linkend="chapter-temporary-tools"/>において構築する残りのパッケージは <filename
-  class="directory">/tools</filename> ディレクトリの新しい Glibc を用いてビルドされます。
+  これ以降、コアとなるツールチェーンは、自己完結し (self-contained)、自分だけで処理できる (self-hosted) ものとなります。
+  <xref linkend="chapter-temporary-tools"/>の残りのパッケージは <filename
+  class="directory">/tools</filename> にある新たな Glibc を用いてビルドされます。
   </para>
 @z
 
