@@ -28,12 +28,6 @@
 @z
 
 @x
-    <para>First, fix a small problem with a test script:</para>
-@y
-    <para>最初にテストスクリプトでのちょっとした不具合を修正します。</para>
-@z
-
-@x
     <para>Prepare Grep for compilation:</para>
 @y
     <para>&PreparePackage1;Grep&PreparePackage2;</para>

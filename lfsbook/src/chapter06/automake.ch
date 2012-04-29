@@ -41,6 +41,14 @@
 @z
 
 @x
+    <para>Fix a couple of minor bugs in the test suite:</para>
+@y
+    <para>
+    テストスイートにおけるバグを修正します。
+    </para>
+@z
+
+@x
     <para>To test the results, issue:</para>
 @y
     <para>ビルド結果をテストするには、以下を実行します。</para>

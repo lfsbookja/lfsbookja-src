@@ -48,6 +48,56 @@
 @z
 
 @x
+      <para>2012-04-29</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.3.4. Fixes
+           <ulink url="&lfs-ticket-root;3074">#3074</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Man-Pages-3.40. Fixes
+           <ulink url="&lfs-ticket-root;3072">#3072</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Autoconf-2.69. Fixes
+           <ulink url="&lfs-ticket-root;3071">#3071</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Automake-1.12. Fixes
+           <ulink url="&lfs-ticket-root;3070">#3070</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Grep-2.12. Fixes
+           <ulink url="&lfs-ticket-root;3068">#3068</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-04-29</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Linux-3.3.4 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3074">#3074</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Man-Pages-3.40 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3072">#3072</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Autoconf-2.69 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3071">#3071</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Automake-1.12 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3070">#3070</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Grep-2.12 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3068">#3068</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-04-26</para>
       <itemizedlist>
          <listitem>
