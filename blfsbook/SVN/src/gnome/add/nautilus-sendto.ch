@@ -14,13 +14,13 @@
 @z
 
 @x
-    <title>Introduction to nautilus-sendto</title>
+    <title>Introduction to Nautilus-Sendto</title>
 @y
-    <title>&IntroductionTo1;nautilus-sendto&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Nautilus-Sendto&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>nautilus-sendto</application> package provides the
+    <para>The <application>Nautilus-Sendto</application> package provides the
     <application>Nautilus</application> file manager with a context menu
     component for quickly sending files to accounts in an
     <application>Evolution</application> email address book, contacts on a
@@ -29,19 +29,14 @@
     <application>Claws Mail</application> (formerly <application>Sylpheed
     Claws</application>).</para>
 @y
-    <para>
-    <application>nautilus-sendto</application> パッケージは、<application>Nautilus</application> ファイルマネージャーを提供します。
-    <application>Thunderbird</application>、<application>Claws Mail</application> (かつての <application>Sylpheed
-    Claws</application>) を通じて、<application>Evolution</application>
-
-    with a context menu
+    <para>The <application>Nautilus-Sendto</application> package provides the
+    <application>Nautilus</application> file manager with a context menu
     component for quickly sending files to accounts in an
     <application>Evolution</application> email address book, contacts on a
     <application>Pidgin</application>, <application>Gajim</application> instant
     messaging list, through <application>Thunderbird</application>, or through
     <application>Claws Mail</application> (formerly <application>Sylpheed
-    Claws</application>).
-    </para>
+    Claws</application>).</para>
 @z
 
 @x
@@ -87,29 +82,47 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">nautilus-sendto Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Nautilus-Sendto Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;nautilus-sendto&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Nautilus-Sendto&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="nautilus"/></para>
+    <para role="required">
+      <xref linkend="nautilus"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="nautilus"/></para>
+    <para role="required">
+      <xref linkend="nautilus"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="evolution-data-server"/> and
+      <xref linkend="gupnp"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="evolution-data-server"/>,
+      <xref linkend="gupnp"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="evolution"/>,
-    <xref linkend="evolution-data-server"/>, and
-    <ulink url="http://www.gupnp.org/">gUPnP</ulink></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="evolution"/>,
-    <xref linkend="evolution-data-server"/>,
-    <ulink url="http://www.gupnp.org/">gUPnP</ulink></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -121,17 +134,17 @@
 @z
 
 @x
-    <title>Installation of nautilus-sendto</title>
+    <title>Installation of Nautilus-Sendto</title>
 @y
-    <title>&InstallationOf1;nautilus-sendto&InstallationOf2;</title>
+    <title>&InstallationOf1;Nautilus-Sendto&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>nautilus-sendto</application> by running the following
+    <para>Install <application>Nautilus-Sendto</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>nautilus-sendto</application> をビルドします。
+    以下のコマンドを実行して <application>Nautilus-Sendto</application> をビルドします。
     </para>
 @z
 
@@ -163,28 +176,30 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>nautilus-sendto</seg>
-        <seg>libnstbluetooth.so, libnstburn.so, libnstgajim.so, libnstpidgin.so,
-        libnstremovable_devices.so, libnstupnp.so, and libnautilus-sendto.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/nautilus-sendto,
-        lib/nautilus-sendto/plugins,share/{gtk-doc/html/nautilus-sendto,
-        nautilus-sendto/ui}}</seg>
+        <seg>
+          nautilus-sendto
+        </seg>
+        <seg>
+          /usr/include/nautilus-sendto, /usr/lib/nautilus-sendto,
+          /usr/share/gtk-doc/html/nautilus-sendto and
+          /usr/share/nautilus-sendto
+        </seg>
 @y
-        <seg>nautilus-sendto</seg>
-        <seg>libnstbluetooth.so, libnstburn.so, libnstgajim.so, libnstpidgin.so,
-        libnstremovable_devices.so, libnstupnp.so, libnautilus-sendto.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/nautilus-sendto,
-        lib/nautilus-sendto/plugins,share/{gtk-doc/html/nautilus-sendto,
-        nautilus-sendto/ui}}</seg>
+        <seg>
+          nautilus-sendto
+        </seg>
+        <seg>
+          /usr/include/nautilus-sendto, /usr/lib/nautilus-sendto,
+          /usr/share/gtk-doc/html/nautilus-sendto,
+          /usr/share/nautilus-sendto
+        </seg>
 @z
 
 @x
@@ -199,61 +214,5 @@
 @y
           <para>
           電子メールやインスタントメッセンジャーにファイル送信するためのアプリケーション。
-          </para>
-@z
-
-@x libnstbluetooth.so
-          <para>is the bluetooth plugin library.</para>
-@y
-          <para>
-          bluetooth プラグインライブラリ。
-          </para>
-@z
-
-@x libnstburn.so
-          <para>is the nautilus-burn plugin library.</para>
-@y
-          <para>
-          nautilus-burn プラグインライブラリ。
-          </para>
-@z
-
-@x libnstgajim.so
-          <para>is the <application>Gajim</application> plugin library.</para>
-@y
-          <para>
-          <application>Gajim</application> プラグインライブラリ。
-          </para>
-@z
-
-@x libnstpidgin.so
-          <para>is the <application>Pidgin</application> plugin library.</para>
-@y
-          <para>
-          <application>Pidgin</application> プラグインライブラリ。
-          </para>
-@z
-
-@x libnstremovable_devices.so
-          <para>is the removable-devices plugin library.</para>
-@y
-          <para>
-          リムーバブルデバイスのプラグインライブラリ。
-          </para>
-@z
-
-@x libnstupnp.so
-          <para>is the upnp plugin library.</para>
-@y
-          <para>
-          upnp プラグインライブラリ。
-          </para>
-@z
-
-@x libnautilus-sendto.so
-          <para>contains the <application>nautilus-sendto</application> API functions.</para>
-@y
-          <para>
-          <application>nautilus-sendto</application> API 関数を提供します。
           </para>
 @z

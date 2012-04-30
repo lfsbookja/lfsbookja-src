@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -77,14 +77,18 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gobject-introspection"/>,
-    <xref linkend="webkitgtk"/>, and
-    <xref linkend="gnome-js-common"/></para>
+    <para role="required">
+      <xref linkend="gnome-js-common"/>,
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="webkitgtk"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gobject-introspection"/>,
-    <xref linkend="webkitgtk"/>,
-    <xref linkend="gnome-js-common"/></para>
+    <para role="required">
+      <xref linkend="gnome-js-common"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="webkitgtk"/>
+    </para>
 @z
 
 @x
@@ -129,15 +133,6 @@
 @z
 
 @x
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--enable-static=no</option>:
-    このスイッチはスタティックライブラリをインストールしないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -145,7 +140,7 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -154,13 +149,27 @@
 @z
 
 @x
-        <seg>seed</seg>
-        <seg>libseed-gtk3.{so,a}, libseed_DynamicObject.{so,a}, libseed_cairo.{so,a}, libseed_canvas.{so,a}, libseed_dbusnative.{so,a}, libseed_example.{so,a}, libseed_ffi.{so,a}, libseed_gettext.{so,a}, libseed_gtkbuilder.{so,a}, libseed_libxml.{so,a}, libseed_mpfr.{so,a}, libseed_multiprocessing.{so,a}, libseed_os.{so,a}, libseed_readline.{so,a}, libseed_sandbox.{so,a}, and libseed_sqlite.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/seed-gtk3,lib/seed-gtk3,share/{doc/seed/{mapping,modules/{gtkbuilder/html,readline/html,sandbox/html,sqlite/html},tutorial},gtk-doc/html/seed,seed-gtk3/extensions}}</seg>
+        <seg>
+          seed
+        </seg>
+        <seg>
+          libseed-gtk3.so
+        </seg>
+        <seg>
+          /usr/include/seed-gtk3, /usr/lib/seed-gtk3, /usr/share/doc/seed,
+          /usr/share/gtk-doc/html/seed and /usr/share/seed-gtk3
+        </seg>
 @y
-        <seg>seed</seg>
-        <seg>libseed-gtk3.{so,a}, libseed_DynamicObject.{so,a}, libseed_cairo.{so,a}, libseed_canvas.{so,a}, libseed_dbusnative.{so,a}, libseed_example.{so,a}, libseed_ffi.{so,a}, libseed_gettext.{so,a}, libseed_gtkbuilder.{so,a}, libseed_libxml.{so,a}, libseed_mpfr.{so,a}, libseed_multiprocessing.{so,a}, libseed_os.{so,a}, libseed_readline.{so,a}, libseed_sandbox.{so,a}, libseed_sqlite.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/seed-gtk3,lib/seed-gtk3,share/{doc/seed/{mapping,modules/{gtkbuilder/html,readline/html,sandbox/html,sqlite/html},tutorial},gtk-doc/html/seed,seed-gtk3/extensions}}</seg>
+        <seg>
+          seed
+        </seg>
+        <seg>
+          libseed-gtk3.so
+        </seg>
+        <seg>
+          /usr/include/seed-gtk3, /usr/lib/seed-gtk3, /usr/share/doc/seed,
+          /usr/share/gtk-doc/html/seed, /usr/share/seed-gtk3
+        </seg>
 @z
 
 @x

@@ -209,6 +209,14 @@
 @z
 
 @x
+    <para><option>--enable-vala</option>: This option enables the vala bindings.</para>
+@y
+    <para><option>--enable-vala</option>:
+    このオプションは vala バインディングを有効にします。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -255,23 +263,23 @@
 @x gvnccapture
             is used to capture image from VNC server.
 @y
-            is used to capture image from VNC server.
+            VNC ビューアーからの画面キャプチャーを行います。
 @z
 
 @x libgtk-vnc-2.0.so
             contains GTK+3 bindings for GTK VNC.
 @y
-            contains GTK+3 bindings for GTK VNC.
+            GTK VNC に対する GTK+3 バインディングを提供します。
 @z
 
 @x libgvnc-1.0.so
             contains GObject bindings for GTK VNC.
 @y
-            contains GObject bindings for GTK VNC.
+            GTK VNC に対する GObject バインディングを提供します。
 @z
 
 @x libgvncpulse-1.0.so
             is Pulseaudio bridge for GTK VNC.
 @y
-            is Pulseaudio bridge for GTK VNC.
+            GTK VNC に対する Pulseaudio ブリッジです。
 @z

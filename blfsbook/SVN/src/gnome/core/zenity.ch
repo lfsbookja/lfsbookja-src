@@ -85,22 +85,30 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gtk3"/>, and
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/> and
+      <xref linkend="gtk3"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gtk3"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libnotify"/></para>
+    <para role="optional">
+      <xref linkend="libnotify"/> and
+      <xref linkend="webkitgtk"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="libnotify"/></para>
+    <para role="optional">
+      <xref linkend="libnotify"/>,
+      <xref linkend="webkitgtk"/>
+    </para>
 @z
 
 @x
@@ -154,24 +162,26 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>gdialog and zenity</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/zenity/*,omf/zenity,
-        zenity/clothes}</seg>
+        <seg>
+          gdialog and zenity
+        </seg>
+        <seg>
+          /usr/share/gnome/help/zenity and /usr/share/zenity
+        </seg>
 @y
-        <seg>gdialog, zenity</seg>
-        <seg>&None;</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/zenity/*,omf/zenity,
-        zenity/clothes}</seg>
+        <seg>
+          gdialog, zenity
+        </seg>
+        <seg>
+          /usr/share/gnome/help/zenity, /usr/share/zenity
+        </seg>
 @z
 
 @x

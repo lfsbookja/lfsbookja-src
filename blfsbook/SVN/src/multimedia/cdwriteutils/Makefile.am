@@ -12,8 +12,10 @@ CHANGE_FILES = \
 	cdwriteutils.ch \
 	dvd+rw-tools.ch \
 	k3b.ch          \
-	udftools.ch     \
-	xorriso.ch
+	libburn.ch      \
+	libisoburn.ch   \
+	libisofs.ch     \
+	udftools.ch 
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -33,5 +35,7 @@ cdrtools.xml:     $(BOOKdir)/$@ $(srcdir)/cdrtools.ch
 cdwriteutils.xml: $(BOOKdir)/$@ $(srcdir)/cdwriteutils.ch
 dvd+rw-tools.xml: $(BOOKdir)/$@ $(srcdir)/dvd+rw-tools.ch
 k3b.xml:          $(BOOKdir)/$@ $(srcdir)/k3b.ch
+libburn.xml:      $(BOOKdir)/$@ $(srcdir)/libburn.ch
+libisoburn.xml:   $(BOOKdir)/$@ $(srcdir)/libisoburn.ch
+libisofs.xml:     $(BOOKdir)/$@ $(srcdir)/libisofs.ch
 udftools.xml:     $(BOOKdir)/$@ $(srcdir)/udftools.ch
-xorriso.xml:      $(BOOKdir)/$@ $(srcdir)/xorriso.ch

@@ -11,8 +11,7 @@ CHANGE_FILES = \
 	other-wms.ch \
 	openbox.ch   \
 	sawfish.ch   \
-	wm.ch        \
-	xfce.ch
+	wm.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -35,4 +34,3 @@ other-wms.xml: ./other-wms.xml.tmp $(srcdir)/other-wms.ch
 openbox.xml: $(BOOKdir)/$@ $(srcdir)/openbox.ch
 sawfish.xml: $(BOOKdir)/$@ $(srcdir)/sawfish.ch
 wm.xml:      $(BOOKdir)/$@ $(srcdir)/wm.ch
-xfce.xml:    $(BOOKdir)/$@ $(srcdir)/xfce.ch

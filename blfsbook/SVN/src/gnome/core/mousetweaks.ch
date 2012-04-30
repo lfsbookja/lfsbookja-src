@@ -79,18 +79,30 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-panel"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gsettings-desktop-schemas"/> and
+      <xref linkend="gtk3"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-panel"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gtk3"/>
+    </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="rarian"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x
@@ -141,25 +153,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>mousetweaks</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/mousetweaks/*,
-        mousetweaks,omf/mousetweaks}</seg>
+        <seg>
+          mousetweaks
+        </seg>
+        <seg>
+          /usr/share/gnome/help/mousetweaks, /usr/share/mousetweaks and
+          /usr/share/omf/mousetweaks
+        </seg>
 @y
-        <seg>mousetweaks</seg>
-        <seg>&None;</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{gnome/help/mousetweaks/*,
-        mousetweaks,omf/mousetweaks}</seg>
+        <seg>
+          mousetweaks
+        </seg>
+        <seg>
+          /usr/share/gnome/help/mousetweaks, /usr/share/mousetweaks,
+          /usr/share/omf/mousetweaks
+        </seg>
 @z
 
 @x
@@ -168,22 +184,9 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x dwell-click-applet
-          <para>is used to select click type when using dwell click.</para>
-@y
-          <para>dwell クリックを行う際のクリックタイプの指定を行います。</para>
-@z
-
 @x mousetweaks
-          <para>is a daemon that provides various enhancements for the
-          mouse.</para>
+          <para>is a collection of accessibility enhancements for pointing 
+          devices.</para>
 @y
-          <para>マウス機能に対するさまざまな拡張を行うデーモン。</para>
-@z
-
-@x pointer-capture-applet
-          <para>is used to create an area on the panel to capture the
-          pointer.</para>
-@y
-          <para>マウスポインターをキャプチャーするためのエリアをパネル上に生成します。</para>
+          <para>ポインティングデバイスに対するさまざまな拡張を行う機能。</para>
 @z

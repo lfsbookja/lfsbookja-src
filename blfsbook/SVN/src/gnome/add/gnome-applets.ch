@@ -79,36 +79,58 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-icon-theme"/>,
-    <xref linkend="gnome-panel"/></para>
+    <para role="required">
+      <xref linkend="GConf"/>,
+      <xref linkend="gnome-icon-theme"/> and
+      <xref linkend="gnome-panel"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-icon-theme"/>,
-    <xref linkend="gnome-panel"/></para>
+    <para role="required">
+      <xref linkend="GConf"/>,
+      <xref linkend="gnome-icon-theme"/>,
+      <xref linkend="gnome-panel"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="libgnomekbd"/>,
+      <xref linkend="libgtop"/>,
+      <xref linkend="libnotify"/>,
+      <xref linkend="NetworkManager"/> and
+      <xref linkend="rarian"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="libgnomekbd"/>,
+      <xref linkend="libgtop"/>,
+      <xref linkend="libnotify"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="rarian"/>,
-    <xref linkend="libgtop"/>,
-    <xref linkend="gst-plugins-base"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
-    <xref linkend="libgnomekbd"/>,
-    <xref linkend="gucharmap"/>,
-    <xref linkend="docbook-utils"/>,
-    <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>, and
-    <xref linkend="libnotify"/></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="gucharmap"/>,
+      <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink> and
+      <xref linkend="pygobject2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="rarian"/>,
-    <xref linkend="libgtop"/>,
-    <xref linkend="gst-plugins-base"/>,
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
-    <xref linkend="libgnomekbd"/>,
-    <xref linkend="gucharmap"/>,
-    <xref linkend="docbook-utils"/>,
-    <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>,
-    <xref linkend="libnotify"/></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="gucharmap"/>,
+      <ulink url="http://club.pep.ne.jp/~ishioka/Software/Linux/libapm-e.html">libapm</ulink>,
+      <xref linkend="pygobject2"/>
+    </para>
 @z
 
 @x
@@ -137,9 +159,7 @@
 @x
     <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    &notTestSuite;
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -157,27 +177,16 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-applets</parameter>:
+    <para><parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
     This parameter causes the libexec files to be installed in the preferred
     location of in <filename
-    class="directory">$GNOME_PREFIX/lib/gnome-applets</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+    class="directory">/usr/lib/gnome-applets</filename> instead of
+    <filename class="directory">/usr/libexec</filename>.</para>
 @y
     <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-applets</parameter>:
-    このパラメーターは、libexec ファイルを <filename
-    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
-    class="directory">$GNOME_PREFIX/lib/gnome-applets</filename> にインストールします。
-    </para>
-@z
-
-@x
-    <para><command>make -C man install-man</command>: This command installs
-    the man-pages that are not installed during
-    <command>make install</command>.</para>
-@y
-    <para>
-    <command>make -C man install-man</command>:
-    このコマンドは <command>make install</command> の時には行われない man ページのインストールを行います。
+    このパラメーターは、libexec ファイルのインストール先を <filename
+    class="directory">/usr/libexec</filename> ではなく、より適切な <filename
+    class="directory">/usr/lib/gnome-applets</filename> とします。
     </para>
 @z
 
@@ -189,40 +198,46 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>cpufreq-selector, accessx-status-applet, battstat-applet-2,
-        charpick_applet2, cpufreq-applet, drivemount_applet2, geyes_applet2,
-        gweather-applet-2, multiload-applet-2, null_applet, stickynotes_applet,
-        and trashapplet</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{lib/gnome-applets,
-        share/{gnome-applets/{builder,geyes/{Bizarre,Bloodshot,Default-tiny,
-        Horrid,Tango}},gnome/help/{accessx-status/*,battstat/*,char-palette/*,
-        cpufreq-applet/*,drivemount/*,geyes/*,gweather/*,multiload/*,
-        stickynotes_applet/*,trashapplet/*},omf/{accessx-status,battstat,
-        char-palette,cpufreq-applet,drivemount,geyes,gweather,multiload,
-        stickynotes_applet,trashapplet},pixmaps/{accessx-status-applet,
-        cpufreq-applet,stickynotes},xmodmap}}</seg>
+        <seg>
+          accessx-status-applet, battstat-applet-2, charpick_applet2,
+          cpufreq-applet, cpufreq-selector, drivemount_applet2,
+          geyes_applet2, gweather-applet-2, invest-applet, invest-chart, 
+          mixer_applet2, multiload-applet-2, null_applet, 
+          stickynotes_applet and trashapplet
+        </seg>
+        <seg>
+          /usr/lib/bonobo/servers, /usr/lib/python2.7/site-packages/invest,
+          /usr/share/gnome/help/{accessx-status,battstat,char-palette,cpufreq-applet},
+          /usr/share/gnome/help/{drivemoun,geyes,gweather,invest-applet},
+          /usr/share/gnome/help/{mixer_applet2,multiload,stickynotes_applet,trashapplet},
+          /usr/share/gnome-applets, /usr/share/omf/{accessx-status,battstat,char-palette},
+          /usr/share/omf/{cpufreq-applet,drivemount,geyes,gweather,invest-applet},
+          /usr/share/omf/{mixer_applet2,multiload,stickynotes_applet} and
+          /usr/share/pixmaps/{accessx-status-applet,cpufreq-applet,stickynotes}
+        </seg>
 @y
-        <seg>cpufreq-selector, accessx-status-applet, battstat-applet-2,
-        charpick_applet2, cpufreq-applet, drivemount_applet2, geyes_applet2,
-        gweather-applet-2, multiload-applet-2, null_applet, stickynotes_applet,
-        trashapplet</seg>
-        <seg>なし</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{lib/gnome-applets,
-        share/{gnome-applets/{builder,geyes/{Bizarre,Bloodshot,Default-tiny,
-        Horrid,Tango}},gnome/help/{accessx-status/*,battstat/*,char-palette/*,
-        cpufreq-applet/*,drivemount/*,geyes/*,gweather/*,multiload/*,
-        stickynotes_applet/*,trashapplet/*},omf/{accessx-status,battstat,
-        char-palette,cpufreq-applet,drivemount,geyes,gweather,multiload,
-        stickynotes_applet,trashapplet},pixmaps/{accessx-status-applet,
-        cpufreq-applet,stickynotes},xmodmap}}</seg>
+        <seg>
+          accessx-status-applet, battstat-applet-2, charpick_applet2,
+          cpufreq-applet, cpufreq-selector, drivemount_applet2,
+          geyes_applet2, gweather-applet-2, invest-applet, invest-chart, 
+          mixer_applet2, multiload-applet-2, null_applet, 
+          stickynotes_applet, trashapplet
+        </seg>
+        <seg>
+          /usr/lib/bonobo/servers, /usr/lib/python2.7/site-packages/invest,
+          /usr/share/gnome/help/{accessx-status,battstat,char-palette,cpufreq-applet},
+          /usr/share/gnome/help/{drivemoun,geyes,gweather,invest-applet},
+          /usr/share/gnome/help/{mixer_applet2,multiload,stickynotes_applet,trashapplet},
+          /usr/share/gnome-applets, /usr/share/omf/{accessx-status,battstat,char-palette},
+          /usr/share/omf/{cpufreq-applet,drivemount,geyes,gweather,invest-applet},
+          /usr/share/omf/{mixer_applet2,multiload,stickynotes_applet},
+          /usr/share/pixmaps/{accessx-status-applet,cpufreq-applet,stickynotes}
+        </seg>
 @z

@@ -166,7 +166,6 @@ CHANGE_FILES = \
 	lib.ch \
 	libnotify.ch \
 	libsexy.ch \
-	libwnck.ch \
 	libxklavier.ch \
 	notification-daemon.ch \
 	pango.ch \
@@ -377,6 +376,7 @@ cairo.xml:                $(BOOKdir)/$@ $(srcdir)/cairo.ch
 freeglut.xml:             $(BOOKdir)/$@ $(srcdir)/freeglut.ch
 goffice.xml:              $(BOOKdir)/$@ $(srcdir)/goffice.ch
 gtk+2.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
+gtk-vnc.xml:              $(BOOKdir)/$@ $(srcdir)/gtk-vnc.ch
 gtkmm2.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm2.ch
 hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
 lesstif.xml:              $(BOOKdir)/$@ $(srcdir)/lesstif.ch
@@ -385,7 +385,6 @@ lesstif.xml:              $(BOOKdir)/$@ $(srcdir)/lesstif.ch
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 	cp -p $(BOOKdir)/$@{.orig,}
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
-libwnck.xml:              $(BOOKdir)/$@ $(srcdir)/libwnck.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
 qt.xml:                   $(BOOKdir)/$@ $(srcdir)/qt.ch
@@ -400,7 +399,6 @@ gtkmm3.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm3.ch
 libnotify.xml: $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 notification-daemon.xml: $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
 libsexy.xml: $(BOOKdir)/$@ $(srcdir)/libsexy.ch
-gtk-vnc.xml: $(BOOKdir)/$@ $(srcdir)/gtk-vnc.ch
 gdk-pixbuf.xml: $(BOOKdir)/$@ $(srcdir)/gdk-pixbuf.ch
 gtk+3.xml: $(BOOKdir)/$@ $(srcdir)/gtk+3.ch
 gtk-engines.xml: $(BOOKdir)/$@ $(srcdir)/gtk-engines.ch

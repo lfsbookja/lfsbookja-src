@@ -14,7 +14,7 @@
 @z
 
 @x
-  <title>(old Desktop)</title>
+  <title>Desktop</title>
 @y
-  <title>(かつてのデスクトップ)</title>
+  <title>デスクトップ</title>
 @z

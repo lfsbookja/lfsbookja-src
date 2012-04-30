@@ -95,13 +95,13 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
       <xref linkend="rarian"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="rarian"/>
     </para>
 @z

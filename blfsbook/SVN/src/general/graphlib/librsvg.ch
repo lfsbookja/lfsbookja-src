@@ -94,23 +94,10 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-      (Required if building GNOME)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-      (GNOME のビルド時に必要)
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
+      <xref linkend="gobject-introspection"/> (Required if building GNOME),
       <xref linkend="gtk2"/> and
       <xref linkend="gtk-doc"/>
     </para>
@@ -118,6 +105,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
+      <xref linkend="gobject-introspection"/> (GNOME のビルド時に必要),
       <xref linkend="gtk2"/>,
       <xref linkend="gtk-doc"/>
     </para>

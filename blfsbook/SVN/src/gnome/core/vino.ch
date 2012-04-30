@@ -79,38 +79,52 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="libgnome-keyring"/>, and
-    <xref linkend="libsoup"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libgnome-keyring"/> and
+      <xref linkend="libsoup"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="libgnome-keyring"/>,
-    <xref linkend="libsoup"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="libsoup"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="libnotify"/>,
+      <xref linkend="NetworkManager"/> and
+      <xref linkend="telepathy-glib"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="libnotify"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="telepathy-glib"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="avahi"/>,
-    <xref linkend="glibmm"/>,
-    <xref linkend="gnutls"/>,
-    <xref linkend="libnotify"/>,
-    <xref linkend="libsexy"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="NetworkManager"/>,
-    and <xref linkend="telepathy-glib"/></para>
+    <para role="optional">
+      <xref linkend="avahi"/>,
+      <xref linkend="gnutls"/> and
+      <xref linkend="libgcrypt"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="avahi"/>,
-    <xref linkend="glibmm"/>,
-    <xref linkend="gnutls"/>,
-    <xref linkend="libnotify"/>,
-    <xref linkend="libsexy"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="NetworkManager"/>,
-    <xref linkend="telepathy-glib"/></para>
+    <para role="optional">
+      <xref linkend="avahi"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="libgcrypt"/>
+    </para>
 @z
 
 @x
@@ -155,17 +169,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/vino</parameter>: This
+    <para><parameter>--libexecdir=/usr/lib/vino</parameter>: This
     parameter is used so that the <application>vino</application> internal
     support programs are installed in the preferred location of <filename
-    class='directory'>$GNOME_PREFIX/lib/vino</filename> instead of <filename
-    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
+    class='directory'>/usr/lib/vino</filename> instead of <filename
+    class='directory'>/usr/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/vino</parameter>: This
+    <para><parameter>--libexecdir=/usr/lib/vino</parameter>: This
     parameter is used so that the <application>vino</application> internal
     support programs are installed in the preferred location of <filename
-    class='directory'>$GNOME_PREFIX/lib/vino</filename> instead of <filename
-    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
+    class='directory'>/usr/lib/vino</filename> instead of <filename
+    class='directory'>/usr/libexec</filename>.</para>
 @z
 
 @x
@@ -176,22 +190,26 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>vino-passwd, vino-preferences, and vino-server</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{lib/vino,share/vino}</seg>
+        <seg>
+          vino-passwd, vino-preferences and vino-server
+        </seg>
+        <seg>
+          /usr/lib/vino and /usr/share/vino
+        </seg>
 @y
-        <seg>vino-passwd, vino-preferences, vino-server</seg>
-        <seg>&None;</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{lib/vino,share/vino}</seg>
+        <seg>
+          vino-passwd, vino-preferences, vino-server
+        </seg>
+        <seg>
+          /usr/lib/vino, /usr/share/vino
+        </seg>
 @z
 
 @x
@@ -200,10 +218,24 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x vino-passwd
+          <para>is used to update Vino password.</para>
+@y
+          <para>is used to update Vino password.</para>
+@z
+
+@x vino-preferences
+          <para>is a GUI tool used to configure the machine for
+          VNC Access.</para>
+@y
+          <para>is a GUI tool used to configure the machine for
+          VNC Access.</para>
+@z
+
 @x vino-server
-          <para>is the <application>Vino</application> server.</para>
+          <para>is the <application>Vino</application> VNC server.</para>
 @y
           <para>
-          <application>Vino</application> サーバー
+          <application>Vino</application> VNC サーバー
           </para>
 @z

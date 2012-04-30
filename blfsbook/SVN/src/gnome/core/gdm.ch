@@ -80,44 +80,76 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="accountsservice"/>,
-    <xref linkend="gnome-panel"/>,
-    <xref linkend="linux-pam"/>, and
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="accountsservice"/>,
+      <xref linkend="dconf"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="linux-pam"/> and
+      <xref linkend="nss"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="accountsservice"/>,
-    <xref linkend="gnome-panel"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="accountsservice"/>,
+      <xref linkend="dconf"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="nss"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required (runtime)</bridgehead>
+    <para role="required">
+      <xref linkend="gnome-session"/> and either
+      <xref linkend="gnome-shell"/> or
+      <xref linkend="gnome-panel"/> and
+      <xref linkend="metacity"/> (for the Greeter Window Manager).
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required; (ランタイム)</bridgehead>
+    <para role="required">
+      <xref linkend="gnome-session"/>,
+      <xref linkend="gnome-shell"/> または
+      <xref linkend="gnome-panel"/> のいずれか,
+      <xref linkend="metacity"/> (Greeter ウィンドウマネージャー利用時).
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="consolekit"/>
-    (Required for Shutdown/Restart functionality) and
-    <xref linkend="polkit-gnome"/></para>
+    <para role="recommended">
+      <xref linkend="consolekit"/>
+      (Required for Shutdown/Restart functionality),
+      <xref linkend="libxklavier"/> and
+      <xref linkend="upower"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="consolekit"/>
-    (Required for Shutdown/Restart functionality),
-    <xref linkend="polkit-gnome"/></para>
+    <para role="recommended">
+      <xref linkend="consolekit"/>
+      (Required for Shutdown/Restart functionality),
+      <xref linkend="libxklavier"/> and
+      <xref linkend="upower"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend='check'/> (required to run the testsuite),
-    <xref linkend="upower"/>,
-    <xref linkend="libxklavier"/>, and
-    <xref linkend="tcpwrappers"/></para>
+      <xref linkend="check"/> (required to run the testsuite),
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="tcpwrappers"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend='check'/> (required to run the testsuite),
-    <xref linkend="upower"/>,
-    <xref linkend="libxklavier"/>,
-    <xref linkend="tcpwrappers"/></para>
+      <xref linkend="check"/> (テストスイート実行時),
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="tcpwrappers"/>
+    </para>
 @z
 
 @x
@@ -136,12 +168,12 @@
 
 @x
     <para>It is recommended to have a dedicated user and group to take
-    control of the <command>gdm-binary</command> daemon after it is
+    control of the <command>gdm</command> daemon after it is
     started. Issue the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>It is recommended to have a dedicated user and group to take
-    control of the <command>gdm-binary</command> daemon after it is
+    control of the <command>gdm</command> daemon after it is
     started. Issue the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 @z
@@ -178,39 +210,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gdm</parameter>: This
+    <para><parameter>--libexecdir=/usr/lib/gdm</parameter>: This
     parameter is used so that the <application>GDM</application> internal
     support programs are installed in the preferred location of <filename
-    class='directory'>$GNOME_PREFIX/lib/gdm</filename> instead of <filename
-    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
+    class='directory'>/usr/lib/gdm</filename> instead of <filename
+    class='directory'>/usr/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gdm</parameter>: This
+    <para><parameter>--libexecdir=/usr/lib/gdm</parameter>: This
     parameter is used so that the <application>GDM</application> internal
     support programs are installed in the preferred location of <filename
-    class='directory'>$GNOME_PREFIX/lib/gdm</filename> instead of <filename
-    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
-@z
-
-@x
-    <para><parameter>--localstatedir=/var</parameter>: This command
-    puts files in <filename class="directory">/var</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/var</filename>.</para>
-@y
-    <para><parameter>--localstatedir=/var</parameter>: This command
-    puts files in <filename class="directory">/var</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/var</filename>.</para>
-@z
-
-@x
-    <para><parameter>--with-pam-prefix=/etc</parameter>: This command puts
-    <application>PAM</application> configuration files in
-    <filename class="directory">/etc/pam.d</filename> instead of
-    <filename class="directory">$GNOME_SYSCONFDIR</filename>.</para>
-@y
-    <para><parameter>--with-pam-prefix=/etc</parameter>: This command puts
-    <application>PAM</application> configuration files in
-    <filename class="directory">/etc/pam.d</filename> instead of
-    <filename class="directory">$GNOME_SYSCONFDIR</filename>.</para>
+    class='directory'>/usr/lib/gdm</filename> instead of <filename
+    class='directory'>/usr/libexec</filename>.</para>
 @z
 
 @x
@@ -233,74 +243,32 @@
 
 @x
       <para>The GDM daemon is configured using the
-      <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file.
+      <filename>/etc/gdm/custom.conf</filename> file.
       Default values are stored in GConf in the
       <filename>gdm.schemas</filename> file. It is recommended that end-users
-      modify the <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file
+      modify the <filename>/etc/gdm/custom.conf</filename> file
       because the schemas file may be overwritten when the user updates their
       system to have a newer version of GDM.</para>
 @y
       <para>The GDM daemon is configured using the
-      <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file.
+      <filename>/etc/gdm/custom.conf</filename> file.
       Default values are stored in GConf in the
       <filename>gdm.schemas</filename> file. It is recommended that end-users
-      modify the <filename>$GNOME_SYSCONFDIR/gdm/custom.conf</filename> file
+      modify the <filename>/etc/gdm/custom.conf</filename> file
       because the schemas file may be overwritten when the user updates their
       system to have a newer version of GDM.</para>
 @z
 
 @x
-      <para>The <application>GDM</application> <application>PAM</application>
-      configuration files contain modules not present in a BLFS installation.
-      Issue the following
-      commands as the <systemitem class="username">root</systemitem> user to
-      replace those files with files containing correctly specified
-      modules:</para>
+        <para>If the system-wide <application>D-BUS</application> daemon was
+        running during the installation of <application>gdm</application>,
+        ensure you stop and restart the <application>D-BUS</application>
+        daemon before attempting to start <command>gdm</command>.</para>
 @y
-      <para>The <application>GDM</application> <application>PAM</application>
-      configuration files contain modules not present in a BLFS installation.
-      Issue the following
-      commands as the <systemitem class="username">root</systemitem> user to
-      replace those files with files containing correctly specified
-      modules:</para>
-@z
-
-@x
-      <para id="gdm-config-dbus">The shipped <filename>gnome.desktop</filename>
-      file does not start the session <application>D-BUS</application> daemon, and
-      as a result not all the files required by a <application>GNOME</application>
-      window manager will be found.  You can create a new
-      Xsession file using the following command as the root user.</para>
-@y
-      <para id="gdm-config-dbus">The shipped <filename>gnome.desktop</filename>
-      file does not start the session <application>D-BUS</application> daemon, and
-      as a result not all the files required by a <application>GNOME</application>
-      window manager will be found.  You can create a new
-      Xsession file using the following command as the root user.</para>
-@z
-
-@x
-      <para>Choose this session using the session selection dialog on the
-      display manager login screen. You also have the opportunity to make this
-      your default session.</para>
-@y
-      <para>Choose this session using the session selection dialog on the
-      display manager login screen. You also have the opportunity to make this
-      your default session.</para>
-@z
-
-@x
-        <para>You may use the <filename class='extension'>.desktop</filename>
-        file created above as an example to create additional
-        <filename class='extension'>.desktop</filename> files and add any other
-        desired items to the <application>GDM</application> display manager session
-        selection menu.</para>
-@y
-        <para>You may use the <filename class='extension'>.desktop</filename>
-        file created above as an example to create additional
-        <filename class='extension'>.desktop</filename> files and add any other
-        desired items to the <application>GDM</application> display manager session
-        selection menu.</para>
+        <para>If the system-wide <application>D-BUS</application> daemon was
+        running during the installation of <application>gdm</application>,
+        ensure you stop and restart the <application>D-BUS</application>
+        daemon before attempting to start <command>gdm</command>.</para>
 @z
 
 @x
@@ -322,23 +290,23 @@
 @x
       <para>To start a graphical login when the system is booted, install the
       <filename>/etc/rc.d/init.d/gdm</filename> init script included in the
-      <xref linkend="bootscripts"/> package. If your
+      <xref linkend="bootscripts"/> package.<!-- If your
       <envar>GNOME_PREFIX</envar> environment variable is anything other than
       <filename class='directory'>/usr</filename> or <filename
       class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>,
       you will need to modify the <envar>PATH</envar> statement in the script
       to include the path where you have <application>GNOME</application>
-      installed.</para>
+      installed.--></para>
 @y
       <para>To start a graphical login when the system is booted, install the
       <filename>/etc/rc.d/init.d/gdm</filename> init script included in the
-      <xref linkend="bootscripts"/> package. If your
+      <xref linkend="bootscripts"/> package.<!-- If your
       <envar>GNOME_PREFIX</envar> environment variable is anything other than
       <filename class='directory'>/usr</filename> or <filename
       class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>,
       you will need to modify the <envar>PATH</envar> statement in the script
       to include the path where you have <application>GNOME</application>
-      installed.</para>
+      installed.--></para>
 @z
 
 @x
@@ -366,35 +334,41 @@
 @z
 
 @x
-        <seg>Default, Default.sample, Default, Default, Xsession, gdm,
-        gdm-screenshot, gdmflexiserver, gdm-crash-logger, gdm-factory-slave,
-        gdm-host-chooser, gdm-product-slave, gdm-session-worker,
-        gdm-simple-chooser, gdm-simple-greeter, gdm-simple-slave,
-        gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, and gdm-binary</seg>
-        <seg>libfingerprint.so, libpassword.so, libsmartcard.so</seg>
-        <seg>$GNOME_SYSCONFDIR/{dbus-1/system.d.gdm/{Init,PostLogin,PostSession,PreSession}},
-        <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
-        pixmaps/faces}},
-        /var/{cache/gdm,gdm,lib/gdm/.gconf.mandatory,log/gdm,
-        run/gdm/greeter}</seg>
+        <seg>
+          gdm, gdmflexiserver and gdm-screenshot
+        </seg>
+        <seg>
+          libgdmgreeter.so and libgdmsimplegreeter.so
+        </seg>
+        <seg>
+          /etc/dconf/db/gdm.d, /etc/gdm, /usr/include/gdm,
+          /usr/lib/gdm, /usr/share/gdm, /usr/share/gnome/help/gdm,
+          /usr/share/omf/gdm and /var/{cache,lib,log,run}/gdm
+        </seg>
 @y
-        <seg>Default, Default.sample, Default, Default, Xsession, gdm,
-        gdm-screenshot, gdmflexiserver, gdm-crash-logger, gdm-factory-slave,
-        gdm-host-chooser, gdm-product-slave, gdm-session-worker,
-        gdm-simple-chooser, gdm-simple-greeter, gdm-simple-slave,
-        gdm-user-switch-applet, gdm-xdmcp-chooser-slave, gdm, and gdm-binary</seg>
-        <seg>libfingerprint.so, libpassword.so, libsmartcard.so</seg>
-        <seg>$GNOME_SYSCONFDIR/{dbus-1/system.d.gdm/{Init,PostLogin,PostSession,PreSession}},
-        <envar>$GNOME_PREFIX</envar>/{lib/gdm,share/{gnome/help/gdm/*,omf/gdm,
-        pixmaps/faces}},
-        /var/{cache/gdm,gdm,lib/gdm/.gconf.mandatory,log/gdm,
-        run/gdm/greeter}</seg>
+        <seg>
+          gdm, gdmflexiserver, gdm-screenshot
+        </seg>
+        <seg>
+          libgdmgreeter.so, libgdmsimplegreeter.so
+        </seg>
+        <seg>
+          /etc/dconf/db/gdm.d, /etc/gdm, /usr/include/gdm,
+          /usr/lib/gdm, /usr/share/gdm, /usr/share/gnome/help/gdm,
+          /usr/share/omf/gdm, /var/{cache,lib,log,run}/gdm
+        </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x gdm
+          <para>is the <application>GNOME</application> based login prompt.</para>
+@y
+          <para>is the <application>GNOME</application> based login prompt.</para>
 @z
 
 @x gdmflexiserver
@@ -409,50 +383,4 @@
           <para>is a screenshot tool.</para>
 @y
           <para>is a screenshot tool.</para>
-@z
-
-@x gdm
-          <para>is a wrapper script to execute the
-          <application>GDM</application> binary, the configurable
-          <application>GNOME</application> based login prompt.</para>
-@y
-          <para>is a wrapper script to execute the
-          <application>GDM</application> binary, the configurable
-          <application>GNOME</application> based login prompt.</para>
-@z
-
-@x gdm-binary
-          <para>is the <application>GNOME</application> based login prompt.</para>
-@y
-          <para>is the <application>GNOME</application> based login prompt.</para>
-@z
-
-@x gdm-restart
-          <para>sends the HUP signal to the <application>GDM</application>
-          daemon so that it restarts. It's used after the config file
-          is edited</para>
-@y
-          <para>sends the HUP signal to the <application>GDM</application>
-          daemon so that it restarts. It's used after the config file
-          is edited</para>
-@z
-
-@x gdm-safe-restart
-          <para>sends the USR1 signal to the <application>GDM</application>
-          daemon so that it restarts. It's used after the config file
-          is edited.</para>
-@y
-          <para>sends the USR1 signal to the <application>GDM</application>
-          daemon so that it restarts. It's used after the config file
-          is edited.</para>
-@z
-
-@x gdm-stop
-          <para>sends the TERM signal to the <application>GDM</application>
-          daemon so that it stops. It's used after the config file is
-          edited.</para>
-@y
-          <para>sends the TERM signal to the <application>GDM</application>
-          daemon so that it stops. It's used after the config file is
-          edited.</para>
 @z

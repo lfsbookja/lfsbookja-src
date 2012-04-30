@@ -24,6 +24,7 @@ CHANGE_FILES = \
 	junit.ch          \
 	librep.ch         \
 	llvm.ch           \
+	mercurial.ch      \
 	nasm.ch           \
 	other-tools.ch    \
 	pdl.ch            \
@@ -74,6 +75,7 @@ jdk.xml:            $(BOOKdir)/$@ $(srcdir)/jdk.ch
 junit.xml:          $(BOOKdir)/$@ $(srcdir)/junit.ch
 librep.xml:         $(BOOKdir)/$@ $(srcdir)/librep.ch
 llvm.xml:           $(BOOKdir)/$@ $(srcdir)/llvm.ch
+mercurial.xml:      $(BOOKdir)/$@ $(srcdir)/mercurial.ch
 nasm.xml:           $(BOOKdir)/$@ $(srcdir)/nasm.ch
 other-tools.xml:    $(BOOKdir)/$@ $(srcdir)/other-tools.ch
 pdl.xml:            $(BOOKdir)/$@ $(srcdir)/pdl.ch

@@ -83,9 +83,8 @@
     <para role="required">
       <xref linkend="DocBook"/>,
       <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtk3"/> and
-      <xref linkend="which"/>
+      <xref linkend="gsettings-desktop-schemas"/> and
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -93,8 +92,7 @@
       <xref linkend="DocBook"/>,
       <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="which"/>
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -108,9 +106,9 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="startup-notification"/>,
+      <xref linkend="startup-notification"/> and
       <xref linkend="gobject-introspection"/>
-      (Required if building GNOME)
+      (GNOME のビルド時に必要)
     </para>
 @z
 

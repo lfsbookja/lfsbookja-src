@@ -78,16 +78,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="cairo"/>,
-    <xref linkend="dbus-glib"/>, and
-    <xref linkend="gobject-introspection"/>, and
-    <xref linkend="SpiderMonkey"/></para>
+    <para role="required">
+      <xref linkend="cairo"/>,
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="SpiderMonkey"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="cairo"/>,
-    <xref linkend="dbus-glib"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="SpiderMonkey"/></para>
+    <para role="required">
+      <xref linkend="cairo"/>,
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="SpiderMonkey"/>
+    </para>
 @z
 
 @x
@@ -146,13 +150,27 @@
 @z
 
 @x
-        <seg>gjs and gjs-console</seg>
-        <seg>cairoNative.so, console.so, dbusNative.so, debugger.so, gettextNative.so, langNative.so, libgjs-dbus.so, libgjs-gdbus.so, libgjs.so, and mainloop.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gjs-1.0/{gi,gjs-dbus},lib/gjs-1.0,share/gjs-1.0/{overrides,tweener}}</seg>
+        <seg>
+          gjs and gjs-console
+        </seg>
+        <seg>
+          libgjs-dbus.so, libgjs-gdbus.so and libgjs.so
+        </seg>
+        <seg>
+          /usr/include/gjs-1.0, /usr/lib/gjs-1.0 and
+          /usr/share/gjs-1.0
+        </seg>
 @y
-        <seg>gjs, gjs-console</seg>
-        <seg>cairoNative.so, console.so, dbusNative.so, debugger.so, gettextNative.so, langNative.so, libgjs-dbus.so, libgjs-gdbus.so, libgjs.so, mainloop.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gjs-1.0/{gi,gjs-dbus},lib/gjs-1.0,share/gjs-1.0/{overrides,tweener}}</seg>
+        <seg>
+          gjs, gjs-console
+        </seg>
+        <seg>
+          libgjs-dbus.so, libgjs-gdbus.so, libgjs.so
+        </seg>
+        <seg>
+          /usr/include/gjs-1.0, /usr/lib/gjs-1.0,
+          /usr/share/gjs-1.0
+        </seg>
 @z
 
 @x

@@ -115,6 +115,9 @@ AC_CONFIG_FILES([Makefile
 		 src/x/installing/Makefile
 		 src/x/lib/Makefile
 		 src/x/wm/Makefile
+		 src/xfce/Makefile
+		 src/xfce/apps/Makefile
+		 src/xfce/core/Makefile
 		 src/xincludes/Makefile
 		 src/xsoft/Makefile
 		 src/xsoft/graphweb/Makefile

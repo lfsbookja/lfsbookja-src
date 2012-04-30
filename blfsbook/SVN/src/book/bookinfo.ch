@@ -30,17 +30,16 @@
 @z
 
 @x
-		<para>This book is licensed under a <xref linkend="CC"/>.</para>
+    <para>This book is licensed under a <xref linkend="CC"/>.</para>
 @y
-		<para>本書のライセンスは <xref linkend="CC"/> に基づきます。</para>
+    <para>本書のライセンスは <xref linkend="CC"/> に基づきます。</para>
 @z
 
 @x
-		<para>Computer instructions may be extracted from the book under the
-		<xref linkend="MIT"/>.</para>
+    <para>Computer instructions may be extracted from the book under the
+    <xref linkend="MIT"/>.</para>
 @y
-		<para>本書のインストール手順のコマンドを抜き出したものは
-                <xref linkend="MIT"/> に従ってください。</para>
+    <para>本書のインストール手順のコマンドを抜き出したものは<xref linkend="MIT"/>に従ってください。</para>
 @z
 
 @x

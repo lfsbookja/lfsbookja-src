@@ -85,15 +85,21 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="intltool"/>,
-      <xref linkend="libxslt"/>, and
-      <xref linkend="python2"/> (Required to be installed prior to <xref linkend="libxml2"/>)
+      <xref linkend="libxslt"/>,
+      <xref linkend="python2"/> (Required to be installed prior to <xref linkend="libxml2"/>) and
+      <xref linkend="which"/> 
+      <!-- (Every package that uses gnome-doc-utils requires 
+      which but no configure script references it) -->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="intltool"/>,
       <xref linkend="libxslt"/>,
-      <xref linkend="python2"/> (<xref linkend="libxml2"/> よりも前にインストールが必要)
+      <xref linkend="python2"/> (<xref linkend="libxml2"/> よりも前にインストールが必要),
+      <xref linkend="which"/> 
+      <!-- (Every package that uses gnome-doc-utils requires 
+      which but no configure script references it) -->
     </para>
 @z
 

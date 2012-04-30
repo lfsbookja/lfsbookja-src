@@ -81,58 +81,68 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gst-plugins-base"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libunique"/>, and
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="libcanberra"/> and
+      <xref linkend="libnotify"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="GConf"/>,
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="gst-plugins-base"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="libnotify"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="rarian"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libburn"/> and
+      <xref linkend="libisofs"/> (For CD/DVD burning),
+      <xref linkend="nautilus"/>,
+      <xref linkend="rarian"/> and
+      <xref linkend="totem-pl-parser"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="rarian"/></para>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libburn"/>,
+      <xref linkend="libisofs"/> (CD/DVD 書き込み時),
+      <xref linkend="nautilus"/>,
+      <xref linkend="rarian"/>,
+      <xref linkend="totem-pl-parser"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink url="http://libburnia-project.org/">libburn</ulink>,
-    <ulink url="http://libburnia-project.org/">libisofs</ulink>,
-    <xref linkend="nautilus"/>, and
-    <xref linkend="totem-pl-parser"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="tracker"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink url="http://libburnia-project.org/">libburn</ulink>,
-    <ulink url="http://libburnia-project.org/">libisofs</ulink>,
-    <xref linkend="nautilus"/>,
-    <xref linkend="totem-pl-parser"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="tracker"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
     <para role="recommended">
-    <ulink url="http://cdrecord.berlios.de/private/cdrecord.html">Cdrtools</ulink>
-    <!-- won't it use xorriso? --> or
-    <ulink url="http://www.cdrkit.org/">cdrkit</ulink> (For CD burning), and
-    <xref linkend="dvd-rw-tools"/> (For DVD burning)</para>
+      <xref linkend="gvfs"/> (Built with libcdio support - for gvfsd-burn)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
     <para role="recommended">
-    <ulink url="http://cdrecord.berlios.de/private/cdrecord.html">Cdrtools</ulink>
-    <!-- won't it use xorriso? --> or
-    <ulink url="http://www.cdrkit.org/">cdrkit</ulink> (For CD burning), and
-    <xref linkend="dvd-rw-tools"/> (For DVD burning)</para>
+      <xref linkend="gvfs"/> (Built with libcdio support - for gvfsd-burn)
+    </para>
 @z
 
 @x
@@ -177,15 +187,6 @@
 @z
 
 @x
-    <para><option>--disable-scrollkeeper</option>: This parameter disables
-    updates to the scrollkeeper database.</para>
-@y
-    <para><option>--disable-scrollkeeper</option>:
-    本パラメーターは scrollkeeper データベースを更新しないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -202,37 +203,29 @@
 @z
 
 @x
-        <seg>brasero</seg>
-        <seg>libbrasero-audio2cue.so, libbrasero-burn-uri.so,
-        libbrasero-cdda2wav.so, libbrasero-cdrdao.so, libbrasero-cdrecord.so,
-        libbrasero-checksum-file.so, libbrasero-checksum.so,
-        libbrasero-dvdauthor.so, libbrasero-dvdcss.so,
-        libbrasero-dvdrwformat.so, libbrasero-genisoimage.so,
-        libbrasero-growisofs.so, libbrasero-local-track.so,
-        libbrasero-mkisofs.so, libbrasero-normalize.so, libbrasero-readcd.so,
-        libbrasero-readom.so, libbrasero-transcode.so, libbrasero-vcdimager.so,
-        libbrasero-vob.so, libbrasero-wodim.so, libbrasero-burn.so,
-        libbrasero-media.so, libbrasero-utils.so, and
-        libnautilus-brasero-extension.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/brasero,lib/brasero/plugins,
-        share/{brasero/icons/hicolor/*},gnome/help/brasero/*,
-        gtk-doc/html/{libbrasero-burn,libbrasero-media},omf/brasero}}</seg>
+        <seg>
+          brasero
+        </seg>
+        <seg>
+          libbrasero-burn3.so, libbrasero-media3.so and libbrasero-utils3.so
+        </seg>
+        <seg>
+          /usr/include/brasero3, /usr/lib/brasero3, /usr/share/brasero,
+          /usr/share/gnome/help/brasero and
+          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} 
+        </seg>
 @y
-        <seg>brasero</seg>
-        <seg>libbrasero-audio2cue.so, libbrasero-burn-uri.so,
-        libbrasero-cdda2wav.so, libbrasero-cdrdao.so, libbrasero-cdrecord.so,
-        libbrasero-checksum-file.so, libbrasero-checksum.so,
-        libbrasero-dvdauthor.so, libbrasero-dvdcss.so,
-        libbrasero-dvdrwformat.so, libbrasero-genisoimage.so,
-        libbrasero-growisofs.so, libbrasero-local-track.so,
-        libbrasero-mkisofs.so, libbrasero-normalize.so, libbrasero-readcd.so,
-        libbrasero-readom.so, libbrasero-transcode.so, libbrasero-vcdimager.so,
-        libbrasero-vob.so, libbrasero-wodim.so, libbrasero-burn.so,
-        libbrasero-media.so, libbrasero-utils.so,
-        libnautilus-brasero-extension.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/brasero,lib/brasero/plugins,
-        share/{brasero/icons/hicolor/*},gnome/help/brasero/*,
-        gtk-doc/html/{libbrasero-burn,libbrasero-media},omf/brasero}}</seg>
+        <seg>
+          brasero
+        </seg>
+        <seg>
+          libbrasero-burn3.so, libbrasero-media3.so, libbrasero-utils3.so
+        </seg>
+        <seg>
+          /usr/include/brasero3, /usr/lib/brasero3, /usr/share/brasero,
+          /usr/share/gnome/help/brasero,
+          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} 
+        </seg>
 @z
 
 @x
@@ -251,26 +244,26 @@
           </para>
 @z
 
-@x libbrasero-burn.so
-          <para>contains the burning API functions.</para>
+@x libbrasero-burn3.so
+          <para>contains the Burning API functions.</para>
 @y
           <para>
-          contains the burning API functions.
+          contains the Burning API functions.
           </para>
 @z
 
-@x libbrasero-media.so
-          <para>contains the media API functions.</para>
+@x libbrasero-media3.so
+          <para>contains the Media API functions.</para>
 @y
           <para>
-          contains the media API functions.
+          contains the Media API functions.
           </para>
 @z
 
-@x libbrasero-utils.so
-          <para>contains the <application>brasero</application> API functions.</para>
+@x libbrasero-utils3.so
+          <para>contains the <application>Brasero</application> API functions.</para>
 @y
           <para>
-          <application>brasero</application> API 関数を提供します。
+          <application>Brasero</application> API 関数を提供します。
           </para>
 @z

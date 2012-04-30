@@ -397,11 +397,11 @@
 @x
           <para>Add <command>dbus-launch</command> to the line in the
           <filename>~/.xinitrc</filename> file that starts your graphical
-          desktop environment as shown in <xref linkend="gnome-config"/>.</para>
+          desktop environment<!-- as shown in <xref linkend="gnome-config"/>-->.</para>
 @y
           <para>Add <command>dbus-launch</command> to the line in the
           <filename>~/.xinitrc</filename> file that starts your graphical
-          desktop environment as shown in <xref linkend="gnome-config"/>.</para>
+          desktop environment<!-- as shown in <xref linkend="gnome-config"/>-->.</para>
 @z
 
 @x

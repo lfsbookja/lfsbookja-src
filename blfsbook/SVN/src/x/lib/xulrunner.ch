@@ -225,46 +225,6 @@
 @z
 
 @x
-      <command>sed -i 's#VPX_CODEC_USE_INPUT_PARTITION ...</command>: This fixes
-      <application>Xulrunner's</application> <command>configure</command>
-      script to properly detect <xref linkend="libvpx"/>. It is not needed if
-      you have libvpx-v0.9.7 or earlier installed or if you've not installed
-      <application>Libvpx</application>.
-@y
-      <command>sed -i 's#VPX_CODEC_USE_INPUT_PARTITION ...</command>: This fixes
-      <application>Xulrunner's</application> <command>configure</command>
-      script to properly detect <xref linkend="libvpx"/>. It is not needed if
-      you have libvpx-v0.9.7 or earlier installed or if you've not installed
-      <application>Libvpx</application>.
-@z
-
-@x
-      <command>if pkg-config --atleast-version &nspr-version; nspr;
-      then sed -i '/Version/aRequires: nspr &gt;= &nspr-version;'
-      xulrunner/installer/libxul-embedding.pc.in;
-      else sed -i '/Version/aRequires: mozilla-nspr &gt;= &nspr-version;'
-      xulrunner/installer/libxul-embedding.pc.in;
-      fi</command>: This uses <command>pkg-config</command> to see if
-      <xref linkend="nspr"/> is installed and then adds a line to require
-      <application>nspr</application> or <application>mozilla-nspr</application>
-      to <filename>libxul-embedding.pc</filename>. If you try to build some
-      other applications without this, the prtypes header from NSPR will not be
-      found.
-@y
-      <command>if pkg-config --atleast-version &nspr-version; nspr;
-      then sed -i '/Version/aRequires: nspr &gt;= &nspr-version;'
-      xulrunner/installer/libxul-embedding.pc.in;
-      else sed -i '/Version/aRequires: mozilla-nspr &gt;= &nspr-version;'
-      xulrunner/installer/libxul-embedding.pc.in;
-      fi</command>: This uses <command>pkg-config</command> to see if
-      <xref linkend="nspr"/> is installed and then adds a line to require
-      <application>nspr</application> or <application>mozilla-nspr</application>
-      to <filename>libxul-embedding.pc</filename>. If you try to build some
-      other applications without this, the prtypes header from NSPR will not be
-      found.
-@z
-
-@x
       <command>make -f client.mk ...</command>: Mozilla products are packaged to
       allow the use of a configuration file which can be used to pass the
       configuration settings to the <command>configure</command> command.
@@ -329,7 +289,7 @@
 @z
 
 @x
-        <seg>xulrunner, and optionally nspr-config</seg>
+        <seg>xulrunner</seg>
         <seg>Numerous libraries, browser components, plugins, extensions, and
         helper modules installed in <filename
         class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename></seg>
@@ -338,11 +298,9 @@
         /usr/lib/xulrunner-devel-&xulrunner-version;, and
         /usr/share/idl/xulrunner-&xulrunner-version;</seg>
 @y
-        <seg>xulrunner と任意ビルドの nspr-config</seg>
-        <seg>
-        数々のライブラリ、ブラウザコンポーネント、プラグイン、機能拡張モジュール、ヘルパーモジュール、<filename
-        class='directory'>/usr/lib/xulrunner-&xulrunner-version;</filename> にインストールされる。
-        </seg>
+        <seg>xulrunner</seg>
+        <seg><filename
+        class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename> にインストールされる数々のライブラリ、ブラウザコンポーネント、プラグイン、機能拡張モジュール、ヘルパーモジュール</seg>
         <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-&xulrunner-version;,
         /usr/lib/xulrunner-devel-&xulrunner-version;,

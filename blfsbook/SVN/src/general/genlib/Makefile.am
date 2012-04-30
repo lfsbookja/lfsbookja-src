@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	enchant.ch \
 	exempi.ch \
 	expat.ch \
-	folks.ch \
 	gamin.ch \
 	genlib.ch \
 	glib2.ch \
@@ -40,7 +39,6 @@ CHANGE_FILES = \
 	libesmtp.ch \
 	libffi.ch \
 	libgcrypt.ch \
-	libgee.ch \
 	libggz.ch \
 	libglade.ch \
 	libgpg-error.ch \
@@ -96,7 +94,6 @@ clucene.xml:               $(BOOKdir)/$@ $(srcdir)/clucene.ch
 enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
 exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
 expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch
-folks.xml:                 $(BOOKdir)/$@ $(srcdir)/folks.ch
 gamin.xml:                 $(BOOKdir)/$@ $(srcdir)/gamin.ch
 genlib.xml:                $(BOOKdir)/$@ $(srcdir)/genlib.ch
 glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
@@ -122,7 +119,6 @@ libelf.xml:                $(BOOKdir)/$@ $(srcdir)/libelf.ch
 libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
 libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
 libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
-libgee.xml:                $(BOOKdir)/$@ $(srcdir)/libgee.ch
 libggz.xml:                $(BOOKdir)/$@ $(srcdir)/libggz.ch
 libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch

@@ -43,20 +43,10 @@
     <para>It may also be useful for allowing users to mount floppies, cdroms and
     other removable storage devices without requiring the system
     administrator to mount the devices.</para>
-    <!--although this capability is now generally
-    provided by HAL (see 
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>).
-    This may not be ideal for all installations, so be aware of the risks before
-    implementing this feature.</para>-->
 @y
     <para>It may also be useful for allowing users to mount floppies, cdroms and
     other removable storage devices without requiring the system
     administrator to mount the devices.</para>
-    <!--although this capability is now generally
-    provided by HAL (see 
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>).
-    This may not be ideal for all installations, so be aware of the risks before
-    implementing this feature.</para>-->
 @z
 
 @x
@@ -109,7 +99,7 @@
 
 @x
     <para>Recommended Patches: There are frequent patches issued for
-    <application>Autofs</application>. One method you can use to get the
+    <application>autofs</application>. One method you can use to get the
     current patches requires first installing the <xref linkend="wget"/>
     package. After ensuring the <command>wget</command> command is installed
     in a directory identified in the <envar>PATH</envar> variable, start in
@@ -117,20 +107,12 @@
     commands:</para>
 @y
     <para>Recommended Patches: There are frequent patches issued for
-    <application>Autofs</application>. One method you can use to get the
+    <application>autofs</application>. One method you can use to get the
     current patches requires first installing the <xref linkend="wget"/>
     package. After ensuring the <command>wget</command> command is installed
     in a directory identified in the <envar>PATH</envar> variable, start in
     the same directory as the main tar file and issue the following
     commands:</para>
-@z
-
-@x
-    <note><para>As of this writing, the patch list contains one patch
-    labelled as from the 5.0.4 series of patches.</para></note>
-@y
-    <note><para>As of this writing, the patch list contains one patch
-    labelled as from the 5.0.4 series of patches.</para></note>
 @z
 
 @x
@@ -140,13 +122,17 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openldap"/> and
-    <xref linkend="cyrus-sasl"/></para>
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="openldap"/>,
+      <xref linkend="cyrus-sasl"/>, and 
+      <xref linkend="mitkrb"/></para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>,
-    <xref linkend="cyrus-sasl"/></para>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="openldap"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="mitkrb"/></para>
 @z
 
 @x
@@ -160,7 +146,7 @@
 @x
     <title>Kernel Configuration</title>
 @y
-    <title>カーネル設定</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
@@ -398,20 +384,20 @@
 
 @x
         <seg>automount</seg>
-        <seg>lookup_file.so, lookup_hosts.so, lookup_multi.so,
-        lookup_nisplus.so, lookup_program.so, lookup_userhome.so,
-        lookup_yp.so, mount_afs.so, mount_autofs.so, mount_bind.so,
-        mount_changer.so, mount_ext2.so, mount_generic.so,
-        mount_nfs.so, parse_sun.so</seg>
-        <seg>/lib/autofs and /var/run/autofs</seg>
+        <seg>lookup_dir.so, lookup_file.so, lookup_hosts.so, lookup_ldap.so,
+             lookup_multi.so, lookup_nisplus.so, lookup_program.so, lookup_sss.so,
+             lookup_userhome.so, lookup_yp.so, mount_afs.so, mount_autofs.so, 
+             mount_bind.so, mount_changer.so, mount_ext2.so, mount_generic.so,
+             mount_nfs.so, parse_sun.so</seg>
+        <seg>/lib/autofs</seg>
 @y
         <seg>automount</seg>
-        <seg>lookup_file.so, lookup_hosts.so, lookup_multi.so,
-        lookup_nisplus.so, lookup_program.so, lookup_userhome.so,
-        lookup_yp.so, mount_afs.so, mount_autofs.so, mount_bind.so,
-        mount_changer.so, mount_ext2.so, mount_generic.so,
-        mount_nfs.so, parse_sun.so</seg>
-        <seg>/lib/autofs, /var/run/autofs</seg>
+        <seg>lookup_dir.so, lookup_file.so, lookup_hosts.so, lookup_ldap.so,
+             lookup_multi.so, lookup_nisplus.so, lookup_program.so, lookup_sss.so,
+             lookup_userhome.so, lookup_yp.so, mount_afs.so, mount_autofs.so, 
+             mount_bind.so, mount_changer.so, mount_ext2.so, mount_generic.so,
+             mount_nfs.so, parse_sun.so</seg>
+        <seg>/lib/autofs</seg>
 @z
 
 @x

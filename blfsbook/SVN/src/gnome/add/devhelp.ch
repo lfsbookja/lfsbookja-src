@@ -14,9 +14,9 @@
 @z
 
 @x
-    <title>Introduction to devhelp</title>
+    <title>Introduction to Devhelp</title>
 @y
-    <title>&IntroductionTo1;devhelp&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Devhelp&IntroductionTo2;</title>
 @z
 
 @x
@@ -71,23 +71,23 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">devhelp Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Devhelp Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;devhelp&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Devhelp&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><!-- intltool is implicit for gtk3 -->
-    <xref linkend="gtk3"/>,
-    <xref linkend="GConf"/>, and
-    <xref linkend="webkitgtk"/></para>
+    <para role="required">
+      <xref linkend="GConf"/> and
+      <xref linkend="webkitgtk"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><!-- intltool is implicit for gtk3 -->
-    <xref linkend="gtk3"/>,
-    <xref linkend="GConf"/>,
-    <xref linkend="webkitgtk"/></para>
+    <para role="required">
+      <xref linkend="GConf"/>,
+      <xref linkend="webkitgtk"/>
+    </para>
 @z
 
 @x
@@ -97,17 +97,17 @@
 @z
 
 @x
-    <title>Installation of devhelp</title>
+    <title>Installation of Devhelp</title>
 @y
-    <title>&InstallationOf1;devhelp&InstallationOf2;</title>
+    <title>&InstallationOf1;Devhelp&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>devhelp</application> by running the following
+    <para>Install <application>Devhelp</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>devhelp</application> をビルドします。
+    以下のコマンドを実行して <application>Devhelp</application> をビルドします。
     </para>
 @z
 
@@ -126,29 +126,13 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--sysconfdir=$GNOME_SYSCONFDIR</parameter>: This parameter ensures
-    the <application>gconf</application> schema is located sensibly, particularly when
-    GNOME_PREFIX is <filename class="directory">/usr</filename>.</para>
-@y
-    <para><parameter>--sysconfdir=$GNOME_SYSCONFDIR</parameter>:
-    本パラメーターは <application>gconf</application> スキーマを、特に GNOME_PREFIX が <filename class="directory">/usr</filename> に設定されている場合にも、適切なディレクトリにインストールします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
@@ -158,13 +142,25 @@
 @z
 
 @x
-        <seg>devhelp and devhelp.py</seg>
-        <seg>libdevhelp-3.so</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/{include/devhelp-3.0/devhelp,lib/gedit/plugins,share/devhelp/{assistant,dtd,ui}}</seg>
+        <seg>
+          devhelp
+        </seg>
+        <seg>
+          libdevhelp-3.so
+        </seg>
+        <seg>
+          /usr/include/devhelp-3.0 and /usr/share/devhelp
+        </seg>
 @y
-        <seg>devhelp, devhelp.py</seg>
-        <seg>libdevhelp-3.so</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/{include/devhelp-3.0/devhelp,lib/gedit/plugins,share/devhelp/{assistant,dtd,ui}}</seg>
+        <seg>
+          devhelp
+        </seg>
+        <seg>
+          libdevhelp-3.so
+        </seg>
+        <seg>
+          /usr/include/devhelp-3.0, /usr/share/devhelp
+        </seg>
 @z
 
 @x
@@ -180,9 +176,10 @@
 @z
 
 @x libdevhelp-3.so
-          <para>library providing documentation browser functionality.</para>
+          <para>is a library that provides documentation browser 
+          functionality.</para>
 @y
           <para>
-          ドキュメントブラウザー機能を提供します。
+          ドキュメントブラウザー機能を提供するライブラリ。
           </para>
 @z

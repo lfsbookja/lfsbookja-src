@@ -78,35 +78,56 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gnome-desktop"/>,
-    <xref linkend="gnome-menus"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libgweather"/>,
-    <xref linkend="librsvg"/>, and
-    <xref linkend="libwnck"/></para>
+    <para role="required">
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="gnome-menus"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="libgweather"/>,
+      <xref linkend="librsvg"/> and
+      <xref linkend="libwnck"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gnome-desktop"/>,
-    <xref linkend="gnome-menus"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libgweather"/>,
-    <xref linkend="librsvg"/>,
-    <xref linkend="libwnck"/></para>
+    <para role="required">
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="gnome-menus"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="libgweather"/>,
+      <xref linkend="librsvg"/>,
+      <xref linkend="libwnck"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>    
+    <para role="recommended">
+      <xref linkend="evolution-data-server"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="telepathy-glib"/> and
+      <xref linkend="rarian"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="evolution-data-server"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="telepathy-glib"/>,
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="evolution-data-server"/> (required if
-    you plan to install <application>Evolution</application>),
-    <xref linkend="gtk-doc"/>,
-    <xref linkend="NetworkManager"/>, and
-    <xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="evolution-data-server"/> (<application>Evolution</application> をインストールする場合に必要),
-    <xref linkend="gtk-doc"/>,
-    <xref linkend="NetworkManager"/>, and
-    <xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -167,18 +188,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-panel</parameter>:
+    <para><parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
     This parameter causes the libexec files to be installed in the preferred
     location of <filename
-    class="directory">$GNOME_PREFIX/lib/gnome-panel</filename> instead of
-    <filename class="directory">$GNOME_PREFIX/libexec</filename>.</para>
+    class="directory">/usr/lib/gnome-applets</filename> instead of
+    <filename class="directory">/usr/libexec</filename>.</para>
 @y
-    <para>
-    <parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-panel</parameter>:
-    このパラメーターを指定することで、libexec ファイルのインストール先を <filename
-    class="directory">$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
-    class="directory">$GNOME_PREFIX/lib/gnome-panel</filename> とします。
-    </para>
+    <para><parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
+    This parameter causes the libexec files to be installed in the preferred
+    location of <filename
+    class="directory">/usr/lib/gnome-applets</filename> instead of
+    <filename class="directory">/usr/libexec</filename>.</para>
 @z
 
 @x
@@ -198,19 +218,31 @@
 @z
 
 @x
-        <seg>gnome-desktop-item-edit, gnome-panel, panel-test-applets,
-        gnome-panel-add, notification-area-applet, and wnck-applet</seg>
-        <seg>libpanel-applet-2.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/panel-2.0,lib/gnome-panel,
-        share/{gnome-panel/{pixmaps,ui},gnome/help/{clock/*,fish/*},
-        gtk-doc/html/panel-applet,idl/gnome-panel-2.0,omf/{clock,fish}}}</seg>
+        <seg>
+          gnome-desktop-item-edit, gnome-panel and panel-test-applets
+        </seg>
+        <seg>
+          libpanel-applet-4.so
+        </seg>
+        <seg>
+          /usr/include/gnome-panel-4.0, /usr/lib/gnome-applets,
+          /usr/share/gnome/help/{clock,fish}, /usr/share/gnome-panel,
+          /usr/share/gtk-doc/html/panel-applet-4.0 and
+          /usr/share/omf/{clock,fish}
+        </seg>
 @y
-        <seg>gnome-desktop-item-edit, gnome-panel, panel-test-applets,
-        gnome-panel-add, notification-area-applet, wnck-applet</seg>
-        <seg>libpanel-applet-2.so</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/panel-2.0,lib/gnome-panel,
-        share/{gnome-panel/{pixmaps,ui},gnome/help/{clock/*,fish/*},
-        gtk-doc/html/panel-applet,idl/gnome-panel-2.0,omf/{clock,fish}}}</seg>
+        <seg>
+          gnome-desktop-item-edit, gnome-panel, panel-test-applets
+        </seg>
+        <seg>
+          libpanel-applet-4.so
+        </seg>
+        <seg>
+          /usr/include/gnome-panel-4.0, /usr/lib/gnome-applets,
+          /usr/share/gnome/help/{clock,fish}, /usr/share/gnome-panel,
+          /usr/share/gtk-doc/html/panel-applet-4.0,
+          /usr/share/omf/{clock,fish}
+        </seg>
 @z
 
 @x

@@ -78,62 +78,69 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><!--<xref linkend="gnome-doc-utils"/>, from zenity via metacity-->
-    <xref linkend="gnome-menus"/>,
-    <xref linkend="gnome-settings-daemon"/>,
-    <xref linkend="libgtop"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="metacity"/>,
-    <xref linkend="pulseaudio"/>, and
-    <xref linkend="shared-mime-info"/></para>
+    <para role="required">
+      <xref linkend="gnome-menus"/>,
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="gnome-settings-daemon"/>,
+      <xref linkend="libgtop"/> and
+      <xref linkend="shared-mime-info"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><!--<xref linkend="gnome-doc-utils"/>, from zenity via metacity-->
-    <xref linkend="gnome-menus"/>,
-    <xref linkend="gnome-settings-daemon"/>,
-    <xref linkend="libgtop"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="metacity"/>,
-    <xref linkend="pulseaudio"/>,
-    <xref linkend="shared-mime-info"/></para>
+    <para role="required">
+      <xref linkend="gnome-menus"/>,
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="gnome-settings-daemon"/>,
+      <xref linkend="libgtop"/>,
+      <xref linkend="shared-mime-info"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gnome-bluetooth"/> and
+      <xref linkend="NetworkManager"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gnome-bluetooth"/>,
+      <xref linkend="NetworkManager"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
-    <para role="recommended"><xref linkend="polkit-gnome"/></para>
+    <para role="recommended">
+      <xref linkend="accountsservice"/>,
+      <xref linkend="consolekit"/>,
+      <xref linkend="gnome-screensaver"/> and
+      <xref linkend="polkit-gnome"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (ランタイム)</bridgehead>
-    <para role="recommended"><xref linkend="polkit-gnome"/></para>
+    <para role="recommended">
+      <xref linkend="accountsservice"/>,
+      <xref linkend="consolekit"/>,
+      <xref linkend="gnome-screensaver"/>,
+      <xref linkend="polkit-gnome"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="evolution-data-server"/> and
-    <xref linkend="librsvg"/></para>
+    <para role="optional">
+      <xref linkend="cheese"/> and
+      <ulink url="http://ftp.gnome.org/pub/gnome/sources/libsocialweb/">
+      libsocialweb</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="evolution-data-server"/>,
-    <xref linkend="librsvg"/></para>
-@z
-
-@x
-    <para>Though they are only run-time dependencies and
-    <application>GNOME Control Center</application> will compile just fine without
-    them installed, there are two screen saver packages that can be installed
-    which will provide a robust collection of screen savers and screen
-    locking capability. <xref linkend="gnome-screensaver"/> is looked for
-    first, with a fallback to <xref linkend="xscreensaver"/> if
-    necessary.</para>
-@y
-    <para>
-    上のパッケージは起動時に必要となるパッケージであり、
-    Though they are only run-time dependencies and
-    <application>GNOME Control Center</application> will compile just fine without
-    them installed, there are two screen saver packages that can be installed
-    which will provide a robust collection of screen savers and screen
-    locking capability. <xref linkend="gnome-screensaver"/> is looked for
-    first, with a fallback to <xref linkend="xscreensaver"/> if
-    necessary.
+    <para role="optional">
+      <xref linkend="cheese"/>,
+      <ulink url="http://ftp.gnome.org/pub/gnome/sources/libsocialweb/">
+      libsocialweb</ulink>
     </para>
 @z
 
@@ -181,15 +188,19 @@
 @z
 
 @x
-    <para><option>--enable-aboutme</option>: Enables building the
-    <command>gnome-about-me</command> capplet. <application>Evolution Data
-    Server</application> must be installed to use this parameter.</para>
+    <para><option>--with-cheese</option>: enable cheese 
+    webcam support.</para>
 @y
-    <para>
-    <option>--enable-aboutme</option>: Enables building the
-    <command>gnome-about-me</command> capplet. <application>Evolution Data
-    Server</application> must be installed to use this parameter.
-    </para>
+    <para><option>--with-cheese</option>: enable cheese 
+    webcam support.</para>
+@z
+
+@x
+    <para><option>--with-libsocialweb</option>: enable 
+    libsocialweb support.</para>
+@y
+    <para><option>--with-libsocialweb</option>: enable 
+    libsocialweb support.</para>
 @z
 
 @x
@@ -200,40 +211,26 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>gnome-appearance-properties, gnome-at-mobility,
-        gnome-at-properties, gnome-at-visual, gnome-control-center,
-        gnome-default-applications-properties, gnome-display-properties,
-        gnome-font-viewer, gnome-keybinding-properties,
-        gnome-keyboard-properties, gnome-mouse-properties,
-        gnome-network-properties, gnome-thumbnail-font, gnome-typing-monitor,
-        gnome-window-properties, and gnome-about-me</seg>
-        <seg>libgnome-window-settings.{so,a} and libmetacity.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-window-settings-2.0,
-        lib/window-manager-settings,share/{gnome-control-center/{default-apps,
-        keybindings,pixmaps,ui},gnome/help/control-center/*,mime/{application,
-        audio,image,inode,message,model,multipart,packages,text,video,x-content,
-        x-epoc},omf/control-center}}</seg>
+        <seg>
+          gnome-control-center and gnome-sound-applet
+        </seg>
+        <seg>
+          /usr/lib/control-center-1, /usr/share/gnome-control-center and
+          /usr/share/sounds/gnome
+        </seg>
 @y
-        <seg>gnome-appearance-properties, gnome-at-mobility,
-        gnome-at-properties, gnome-at-visual, gnome-control-center,
-        gnome-default-applications-properties, gnome-display-properties,
-        gnome-font-viewer, gnome-keybinding-properties,
-        gnome-keyboard-properties, gnome-mouse-properties,
-        gnome-network-properties, gnome-thumbnail-font, gnome-typing-monitor,
-        gnome-window-properties, gnome-about-me</seg>
-        <seg>libgnome-window-settings.{so,a}, libmetacity.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/gnome-window-settings-2.0,
-        lib/window-manager-settings,share/{gnome-control-center/{default-apps,
-        keybindings,pixmaps,ui},gnome/help/control-center/*,mime/{application,
-        audio,image,inode,message,model,multipart,packages,text,video,x-content,
-        x-epoc},omf/control-center}}</seg>
+        <seg>
+          gnome-control-center, gnome-sound-applet
+        </seg>
+        <seg>
+          /usr/lib/control-center-1, /usr/share/gnome-control-center,
+          /usr/share/sounds/gnome
+        </seg>
 @z

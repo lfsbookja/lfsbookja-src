@@ -79,90 +79,108 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="evolution-data-server"/>,
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libgnome-keyring"/>,
-    <xref linkend="libnotify"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="telepathy-farsight"/>, and
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gtk"/>,
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="evolution-data-server"/>,
+      <xref linkend="folks"/>,
+      <xref linkend="gcr"/>,
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="telepathy-farstream"/>,
+      <xref linkend="telepathy-logger"/> and
+      <xref linkend="telepathy-mission-control"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="evolution-data-server"/>,
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libgnome-keyring"/>,
-    <xref linkend="libnotify"/>,
-    <xref linkend="libunique"/>,
-    <xref linkend="telepathy-farsight"/>,
-    <xref linkend="which"/></para>
+    <para role="required">
+      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gtk"/>,
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="evolution-data-server"/>,
+      <xref linkend="folks"/>,
+      <xref linkend="gcr"/>,
+      <xref linkend="gnome-doc-utils"/>,
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="telepathy-farstream"/>,
+      <xref linkend="telepathy-logger"/>,
+      <xref linkend="telepathy-mission-control"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="geocode-glib"/>,
+      <xref linkend="libchamplain"/>,
+      <xref linkend="nautilus-sendto"/>,
+      <xref linkend="NetworkManager"/> and
+      <xref linkend="rarian"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="geocode-glib"/>,
+      <xref linkend="libchamplain"/>,
+      <xref linkend="nautilus-sendto"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink url="http://check.sourceforge.net/">Check</ulink>,
-    <xref linkend="clutter-gtk"/>,
-    <ulink url="http://connman.net/">ConnMan</ulink>,
-    <xref linkend="enchant"/>,
-    <xref linkend="geoclue"/>,
-    <xref linkend="gnome-panel"/>,
-    <xref linkend="gtk-doc"/>,
-    <xref linkend="iso-codes"/>,
-    <ulink url="http://projects.gnome.org/libchamplain/">libchamplain</ulink>,
-    <xref linkend="NetworkManager"/>,
-    <xref linkend="pygtk"/>,
-    <xref linkend="rarian"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
-    <xref linkend="webkitgtk"/></para>
+    <para role="optional">
+      <xref linkend="cheese"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="iso-codes"/>,
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink> and
+      <xref linkend="udev"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink url="http://check.sourceforge.net/">Check</ulink>,
-    <xref linkend="clutter-gtk"/>,
-    <ulink url="http://connman.net/">ConnMan</ulink>,
-    <xref linkend="enchant"/>,
-    <xref linkend="geoclue"/>,
-    <xref linkend="gnome-panel"/>,
-    <xref linkend="gtk-doc"/>,
-    <xref linkend="iso-codes"/>,
-    <ulink url="http://projects.gnome.org/libchamplain/">libchamplain</ulink>,
-    <xref linkend="NetworkManager"/>,
-    <xref linkend="pygtk"/>,
-    <xref linkend="rarian"/>,
-    <ulink url="http://www.valgrind.org/">Valgrind</ulink>,
-    <xref linkend="webkitgtk"/></para>
+    <para role="optional">
+      <xref linkend="cheese"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="iso-codes"/>,
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>,
+      <xref linkend="udev"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (Protocols)</bridgehead>
-    <para role="optional"> <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-butterfly/">telepathy-butterfly</ulink>
-    (MSN), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">telepathy-gabble</ulink>
-    (Jabber, Google Talk, XMPP), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-idle/">telepathy-idle</ulink>
-    (IRC), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-haze/">telepathy-haze</ulink>
-    (AIM, ICQ, Yahoo!), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-salut/">telepathy-salut</ulink>
-    (local network ("Bonjour" - iChat-compatible)), and <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
-    (SIP)</para>
+    <para role="optional">
+      <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">telepathy-gabble</ulink>
+      (Jabber, Google Talk, XMPP), <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-haze/">telepathy-haze</ulink>
+      (AIM, ICQ, Yahoo!), <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-salut/">telepathy-salut</ulink>
+      (local network ("Bonjour" - iChat-compatible) and <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
+      (SIP)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional; (プロトコル)</bridgehead>
-    <para role="optional"> <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-butterfly/">telepathy-butterfly</ulink>
-    (MSN), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">telepathy-gabble</ulink>
-    (Jabber, Google Talk, XMPP), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-idle/">telepathy-idle</ulink>
-    (IRC), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-haze/">telepathy-haze</ulink>
-    (AIM, ICQ, Yahoo!), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-salut/">telepathy-salut</ulink>
-    (ローカルネットワーク ("Bonjour" - iChat-互換)), <ulink
-    url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
-    (SIP)</para>
+    <para role="optional">
+      <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">telepathy-gabble</ulink>
+      (Jabber, Google Talk, XMPP), <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-haze/">telepathy-haze</ulink>
+      (AIM, ICQ, Yahoo!), <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-salut/">telepathy-salut</ulink>
+      (ローカルネットワーク ("Bonjour" - iChat-互換), <ulink
+      url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
+      (SIP)
+    </para>
 @z
 
 @x
@@ -209,25 +227,16 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/empathy</parameter>: This
+    <para><parameter>--libexecdir=/usr/lib/empathy</parameter>: This
     parameter is used so that the <application>Empathy</application> internal
     support programs are installed in the preferred location of <filename
-    class='directory'>$GNOME_PREFIX/lib/empathy</filename> instead of <filename
-    class='directory'>$GNOME_PREFIX/libexec</filename>.</para>
+    class='directory'>/usr/lib/empathy</filename> instead of <filename
+    class='directory'>/usr/libexec</filename>.</para>
 @y
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/empathy</parameter>:
+    <para><parameter>--libexecdir=/usr/lib/empathy</parameter>:
     本パラメーターは <application>Empathy</application> の内部プログラムのインストール先を <filename
-    class='directory'>$GNOME_PREFIX/libexec</filename> ではなく、より適切な <filename
-    class='directory'>$GNOME_PREFIX/lib/empathy</filename> とします。
-    </para>
-@z
-
-@x
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--enable-static=no</option>:
-    本スイッチはスタティックライブラリをインストールしないようにします。
+    class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
+    class='directory'>/usr/lib/empathy</filename> とします。
     </para>
 @z
 
@@ -239,28 +248,28 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>empathy, empathy-accounts, and empathy-debugger</seg>
-        <seg>libnstempathy.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{empathy/icons/hicolor/{16x16/{actions,
-        apps,status},22x22/{actions,apps,status},24x24/{actions,apps,status},
-        32x32/{apps,status},48x48/{apps,status},scalable/{apps,status}},
-        gnome/help/empathy/*,telepathy/clients}</seg>
+        <seg>
+          empathy, empathy-accounts and empathy-debugger
+        </seg>
+        <seg>
+          /usr/lib/empathy, /usr/lib/mission-control-plugins.0,
+          /usr/share/empathy and /usr/share/help/*/empathy
+        </seg>
 @y
-        <seg>empathy, empathy-accounts, empathy-debugger</seg>
-        <seg>libnstempathy.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/{empathy/icons/hicolor/{16x16/{actions,
-        apps,status},22x22/{actions,apps,status},24x24/{actions,apps,status},
-        32x32/{apps,status},48x48/{apps,status},scalable/{apps,status}},
-        gnome/help/empathy/*,telepathy/clients}</seg>
+        <seg>
+          empathy, empathy-accounts, empathy-debugger
+        </seg>
+        <seg>
+          /usr/lib/empathy, /usr/lib/mission-control-plugins.0,
+          /usr/share/empathy, /usr/share/help/*/empathy
+        </seg>
 @z
 
 @x
@@ -278,10 +287,8 @@
           </para>
 @z
 
-@x libnstempathy.{so,a}
-          <para>is the <application>Empathy</application> nautilus-sendto plugin.</para>
+@x empathy-accounts
+          <para>is an accounts configuration dialog for Empathy.</para>
 @y
-          <para>
-          <application>Empathy</application> の nautilus-sendto プラグイン。
-          </para>
+          <para>is an accounts configuration dialog for Empathy.</para>
 @z

@@ -24,9 +24,9 @@
     <application>Qt</application> moc files automatically to projects that use 
     <application>CMake</application> as the buildsystem.</para>
 @y
-    <para><application>Automoc4</application> is a tool to add rules for generating 
-    <application>Qt</application> moc files automatically to projects that use 
-    <application>CMake</application> as the buildsystem.</para>
+    <para>
+    <application>Automoc4</application> は、ビルドシステムとして <application>CMake</application> を利用するプロジェクトに対し、<application>Qt</application> moc ファイルの生成ルールを自動的に追加するツールです。
+    </para>
 @z
 
 @x

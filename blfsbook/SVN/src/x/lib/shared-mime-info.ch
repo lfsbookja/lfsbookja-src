@@ -82,7 +82,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="intltool"/>,
-      <xref linkend="libxml2"/>, and
+      <xref linkend="libxml2"/> and
       <xref linkend="pkgconfig"/>
     </para>
 @y
@@ -134,30 +134,6 @@
 @z
 
 @x
-    <title>Configuring shared-mime-info</title>
-@y
-    <title>&Configuring1;shared-mime-info&Configuring2;</title>
-@z
-
-@x
-      <title>Configuration Information</title>
-@y
-      <title>&ConfigInfo;</title>
-@z
-
-@x
-      <para>Some applications (including <application>GNOME</application>-2)
-      require a properly set environment variable to locate the MIME database.
-      Satisfy this requirement by setting the following variable in your
-      local shell profile, or the system-wide profile:</para>
-@y
-      <para>
-      アプリケーションの中には <application>GNOME</application>-2 のように、MIME データベースのありかを環境変数に保持しておく必要があるものがあります。
-      これに対処するために、ローカルなシェルプロファイルか、あるいはシステム共通のプロファイルに、以下のような環境変数定義を行います。
-      </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -165,24 +141,26 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>update-mime-database</seg>
-        <seg>None</seg>
-        <seg>/usr/share/mime/{application,audio,image,inode,message,model,
-        multipart,packages,text,video,x-content,x-epoc}</seg>
+        <seg>
+          update-mime-database
+        </seg>
+        <seg>
+          /usr/share/mime
+        </seg>
 @y
-        <seg>update-mime-database</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/mime/{application,audio,image,inode,message,model,
-        multipart,packages,text,video,x-content,x-epoc}</seg>
+        <seg>
+          update-mime-database
+        </seg>
+        <seg>
+          /usr/share/mime
+        </seg>
 @z
 
 @x

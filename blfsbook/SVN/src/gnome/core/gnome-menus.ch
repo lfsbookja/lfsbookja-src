@@ -87,14 +87,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="pkgconfig"/>,
-    <xref linkend="python2"/></para>
+    <para role="required">
+      <xref linkend="intltool"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="pkgconfig"/>,
-    <xref linkend="python2"/></para>
+    <para role="required">
+      <xref linkend="intltool"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
@@ -226,7 +228,7 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -235,23 +237,29 @@
 @z
 
 @x
-        <seg>gmenu-simple-editor</seg>
-        <seg>gmenu.{so,a} and libgnome-menu.{so,a}</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/xdg/menus,
-        <envar>$GNOME_PREFIX</envar>/{include/gnome-menus,
-        lib/python&python2-majorver;/site-packages/GMenuSimpleEditor,
-        share/{desktop-directories,gnome-menus/{examples,ui},
-        locale/{dv/LC_MESSAGES,gn/LC_MESSAGES,gv/LC_MESSAGES,
-        ha/LC_MESSAGES}}}</seg>
+        <seg>
+          gmenu-simple-editor
+        </seg>
+        <seg>
+          libgnome-menu.so
+        </seg>
+        <seg>
+          /etc/xdg/menus, /usr/include/gnome-menus-3.0,
+          /usr/lib/python2.7/site-packages/GMenuSimpleEditor and
+          /usr/share/gnome-menus
+        </seg>
 @y
-        <seg>gmenu-simple-editor</seg>
-        <seg>gmenu.{so,a}, libgnome-menu.{so,a}</seg>
-        <seg><envar>$GNOME_SYSCONFDIR</envar>/xdg/menus,
-        <envar>$GNOME_PREFIX</envar>/{include/gnome-menus,
-        lib/python&python2-majorver;/site-packages/GMenuSimpleEditor,
-        share/{desktop-directories,gnome-menus/{examples,ui},
-        locale/{dv/LC_MESSAGES,gn/LC_MESSAGES,gv/LC_MESSAGES,
-        ha/LC_MESSAGES}}}</seg>
+        <seg>
+          gmenu-simple-editor
+        </seg>
+        <seg>
+          libgnome-menu.so
+        </seg>
+        <seg>
+          /etc/xdg/menus, /usr/include/gnome-menus-3.0,
+          /usr/lib/python2.7/site-packages/GMenuSimpleEditor,
+          /usr/share/gnome-menus
+        </seg>
 @z
 
 @x
@@ -261,17 +269,9 @@
 @z
 
 @x gmenu-simple-editor
-          <para>is a simple front-end script to the
-          <application>Python</application> Gmenu Simple Editor module</para>
+          <para>is used to modify GNOME Menu layout.</para>
 @y
-          <para>is a simple front-end script to the
-          <application>Python</application> Gmenu Simple Editor module</para>
-@z
-
-@x gmenu.{so,a}
-          <para>is a <application>Python</application> library.</para>
-@y
-          <para>is a <application>Python</application> library.</para>
+          <para>is used to modify GNOME Menu layout.</para>
 @z
 
 @x libgnome-menu.{so,a}

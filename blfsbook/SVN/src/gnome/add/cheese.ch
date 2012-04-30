@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to cheese</title>
+    <title>Introduction to Cheese</title>
 @y
-    <title>&IntroductionTo1;cheese&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Cheese&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>cheese</application> package takes photos and videos
-    with your webcam, with fun graphical effects.</para>
+    <para>The <application>Cheese</application> package is used to 
+    take photos and videos with fun graphical effects.</para>
 @y
     <para>
-    <application>cheese</application> パッケージは、ウェブカメラを使って写真やビデオを撮ったり、さまざまなグラフィック効果を付与する機能を提供します。
+    <application>Cheese</application> パッケージは、ウェブカメラを使って写真やビデオを撮ったり、さまざまなグラフィック効果を付与する機能を提供します。
     </para>
 @z
 
@@ -71,41 +71,57 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">cheese Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Cheese Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;cheese&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Cheese&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="clutter-gst"/> ( with
-    <xref linkend="gst-plugins-base"/> using <xref linkend="libtheora"/>),
-    <xref linkend="clutter-gtk"/>,
-    <xref linkend="gnome-desktop"/>,
-    <xref linkend="gnome-video-effects"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="librsvg"/>,
-    <xref linkend="mx"/>, and
-    <xref linkend="udev"/></para>
+    <para role="required">
+      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gtk"/>,
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="gnome-video-effects"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="libgee"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="librsvg"/>,
+      <xref linkend="mx"/>,
+      <xref linkend="nautilus-sendto"/>,
+      <xref linkend="udev"/> and
+      <xref linkend="vala"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="clutter-gst"/> ( with
-    <xref linkend="gst-plugins-base"/> using <xref linkend="libtheora"/>),
-    <xref linkend="clutter-gtk"/>,
-    <xref linkend="gnome-desktop"/>,
-    <xref linkend="gnome-video-effects"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="librsvg"/>,
-    <xref linkend="mx"/>,
-    <xref linkend="udev"/></para>
+    <para role="required">
+      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gtk"/>,
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="gnome-video-effects"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="libgee"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="librsvg"/>,
+      <xref linkend="mx"/>,
+      <xref linkend="nautilus-sendto"/>,
+      <xref linkend="udev"/>,
+      <xref linkend="vala"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="rarian"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -117,17 +133,17 @@
 @z
 
 @x
-    <title>Installation of cheese</title>
+    <title>Installation of Cheese</title>
 @y
-    <title>&InstallationOf1;cheese&InstallationOf2;</title>
+    <title>&InstallationOf1;Cheese&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>cheese</application> by running the following
+    <para>Install <application>Cheese</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>cheese</application> をビルドします。
+    以下のコマンドを実行して <application>Cheese</application> をビルドします。
     </para>
 @z
 
@@ -152,16 +168,6 @@
 @z
 
 @x
-    <para><option>--disable-scrollkeeper</option>: Use this parameter if you
-    have installed <application>rarian</application> but wish to disable the
-    updates to the scrollkeeper database.</para>
-@y
-    <para><option>--disable-scrollkeeper</option>: Use this parameter if you
-    have installed <application>rarian</application> but wish to disable the
-    updates to the scrollkeeper database.</para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -178,17 +184,29 @@
 @z
 
 @x
-        <seg>cheese</seg>
-        <seg>libcheese.{so,a}, libcheese-gtk.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/cheese,lib/cheese,
-        share/{cheese/{effects,icons/hicolor/*,pixmaps},gnome/help/cheese/*,
-        gtk-doc/html/cheese,omf/cheese}}</seg>
+        <seg>
+          cheese
+        </seg>
+        <seg>
+          libcheese.so and libcheese-gtk.so
+        </seg>
+        <seg>
+          /usr/include/cheese, /usr/share/cheese,
+          /usr/share/gtk-doc/html/cheese and 
+          /usr/share/help/*/cheese
+        </seg>
 @y
-        <seg>cheese</seg>
-        <seg>libcheese.{so,a}, libcheese-gtk.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/cheese,lib/cheese,
-        share/{cheese/{effects,icons/hicolor/*,pixmaps},gnome/help/cheese/*,
-        gtk-doc/html/cheese,omf/cheese}}</seg>
+        <seg>
+          cheese
+        </seg>
+        <seg>
+          libcheese.so, libcheese-gtk.so
+        </seg>
+        <seg>
+          /usr/include/cheese, /usr/share/cheese,
+          /usr/share/gtk-doc/html/cheese,
+          /usr/share/help/*/cheese
+        </seg>
 @z
 
 @x

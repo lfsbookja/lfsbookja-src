@@ -167,3 +167,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x libatkmm-1.6.so
+          <para>contains the <application>ATK</application> API classes.</para>
+@y
+          <para><application>ATK</application> API クラスを提供します。</para>
+@z

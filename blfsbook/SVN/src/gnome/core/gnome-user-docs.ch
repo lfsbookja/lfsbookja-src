@@ -79,27 +79,25 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="itstool"/> and
-      <xref linkend="which"/>
+      <xref linkend="gnome-doc-utils"/> and
+      <xref linkend="itstool"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="which"/>
+      <xref linkend="itstool"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
       <xref linkend="rarian"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="rarian"/>
     </para>
 @z

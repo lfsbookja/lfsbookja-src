@@ -152,18 +152,18 @@
 @z
 
 @x
-      If you want to run make with just one job, install
+      If you want to run make with just one core, install
       <application>WebKit</application> by running the following commands:
 @y
-      単一処理でビルド実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
+      シングルコア CPU にてビルド実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
 @z
 
 @x
-      If you have a multicore CPU and want to run make with multiple jobs,
-      install <application>WebKit</application> by running the following
-      commands:
+      If you have a multicore CPU and want to run make with multiple jobs
+      running in parallel, install <application>WebKit</application> with the
+      following commands:
 @y
-      マルチコア CPU にてマルチ処理を実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
+      マルチコア CPU にてマルチ処理によりビルドを実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
 @z
 
 @x
@@ -187,11 +187,14 @@
 @x
       <option>--enable-introspection</option>: This option enables support for
       <application>Gobject-Introspection</application> and is required for a
-      <application>GNOME</application> desktop.
+      <application>GNOME</application> desktop. If you don't have
+      <application>Gobject-Introspection</application> installed and don't want
+      to install <application>GNOME</application> remove this option.
 @y
       <option>--enable-introspection</option>:
       このオプションは <application>Gobject-Introspection</application> サポートを有効にします。
       これは <application>GNOME</application> デスクトップ環境において必要です。
+      <application>Gobject-Introspection</application> をインストールしていなくて、<application>GNOME</application> をインストールしないのであれば、このオプションを取り除いてください。
 @z
 
 @x
