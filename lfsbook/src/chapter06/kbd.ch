@@ -14,10 +14,11 @@
 @z
 
 @x
-    <para>The Kbd package contains key-table files and keyboard utilities.</para>
+    <para>The Kbd package contains key-table files, console fonts, and keyboard
+    utilities.</para>
 @y
     <para>
-    Kbd パッケージは、キーテーブル (key-table) ファイルとキーボードユーティリティを提供します。
+    Kbd パッケージは、キーテーブル (key-table) ファイル、コンソールフォント、キーボードユーティリティを提供します。
     </para>
 @z
 
@@ -25,6 +26,15 @@
     <title>Installation of Kbd</title>
 @y
     <title>&InstallationOf1;Kbd&InstallationOf2;</title>
+@z
+
+@x
+    <para>The behaviour of <command>loadkeys</command> when run without a
+    filename was broken in this release. The following patch fixes this:</para>
+@y
+    <para>
+    <command>loadkeys</command> に対してファイル名を与えずに実行するとエラーになります。
+    以下のパッチによりこれを修正します。</para>
 @z
 
 @x
@@ -44,6 +54,15 @@
 @y
     <para>
     パッチを当てればバックスペースキーの文字コードは 127 となり、デリートキーはよく知られたエスケープコードを生成することになります。
+    </para>
+@z
+
+@x
+    <para>Fix a bug in the Spanish message translations which prevents kbd from
+    building with gettext-&gettext-version;:</para>
+@y
+    <para>
+    gettext-&gettext-version; を用いた際にスペイン語の翻訳メッセージがビルドができないため、このバグを修正します。
     </para>
 @z
 

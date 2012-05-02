@@ -154,6 +154,20 @@
 @z
 
 @x
+      <term>Kbd Loadkeys Fix Patch - <token>&kbd-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Kbd Loadkeys Fix Patch - <token>&kbd-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>

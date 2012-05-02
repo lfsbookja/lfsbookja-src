@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2012-05-01</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - Upgrade to Kbd-1.15.3. Fixes
+           <ulink url="&lfs-ticket-root;2990">#2990</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-01</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - Kbd-1.15.3 へのアップグレード。
+           <ulink url="&lfs-ticket-root;2990">#2990</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-04-29</para>
       <itemizedlist>
          <listitem>

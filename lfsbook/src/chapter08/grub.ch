@@ -40,20 +40,21 @@
 @z
 
 @x
-    <para> Ensure that an emergency boot disk is ready to
-    <quote>rescue</quote> the computer if the computer becomes
-    unusable (un-bootable).  If you do not already have a boot device,
-    you can create one.  In order for the procedure below to work,
-    you need to jump ahead to BLFS and install <ulink
-    url="http://www.linuxfromscratch.org/blfs/view/svn/multimedia/xorriso.html">
-    xorriso</ulink>.</para>
+    <para> Ensure that an emergency boot disk is ready to <quote>rescue</quote>
+    the computer if the computer becomes unusable (un-bootable).  If you do not
+    already have a boot device, you can create one.  In order for the procedure
+    below to work, you need to jump ahead to BLFS and install
+    <userinput>xorriso</userinput> from the <ulink
+    url="http://www.linuxfromscratch.org/blfs/view/svn/multimedia/libisoburn.html">
+    libisoburn</ulink> package.</para>
 @y
     <para>
-    コンピューターが利用不能に (ブート不能に) なってしまうことに備えて、コンピューターを<quote>復旧 (resucue)</quote>するブートディスクの生成を必ず行ってください。
+    コンピューターが利用不能に (ブート不能に) なってしまうこともあります。
+    そんな事態に備えてコンピューターを<quote>復旧 (resucue)</quote>するブートディスクの生成を必ず行ってください。
     ブートデバイスを用意していない場合は作成してください。
     以降に示す手順を実施するために、必要に応じて BLFS ブックを参照し <ulink
-    url="http://www.linuxfromscratch.org/blfs/view/svn/multimedia/xorriso.html">
-    xorriso</ulink> をインストールしてください。
+    url="http://www.linuxfromscratch.org/blfs/view/svn/multimedia/libisoburn.html">
+    libisoburn</ulink> にある <userinput>xorriso</userinput> をインストールしてください。
     </para>
 @z
 
