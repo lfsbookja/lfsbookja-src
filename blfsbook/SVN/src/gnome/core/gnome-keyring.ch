@@ -170,19 +170,6 @@
 @z
 
 @x
-    <para><parameter>--with-dbus-services=/usr/share/dbus-1/services</parameter>:
-    This parameter specifies where the <application>D-BUS</application> session
-    services directory is located: you can omit this if your GNOME_PREFIX is
-    <filename class="directory">/usr</filename>.</para>
-@y
-    <para>
-    <parameter>--with-dbus-services=/usr/share/dbus-1/services</parameter>:
-    このパラメーターは <application>D-BUS</application> のセッションサービスディレクトリが位置しているディレクトリを指定します。
-    GNOME_PREFIX が <filename class="directory">/usr</filename> であれば、このパラメーターを省略できます。
-    </para>
-@z
-
-@x
     <para><parameter>--with-root-certs=/etc/ssl/certs</parameter>: This
     parameter specifies where the trusted root certificates are located.</para>
 @y

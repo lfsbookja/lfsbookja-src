@@ -31,7 +31,6 @@ CHANGE_FILES = \
 	strigi.ch        \
 	sysstat.ch       \
 	sysutils.ch      \
-	tracker.ch       \
 	udev.ch          \
 	udisks.ch        \
 	udisks2.ch       \
@@ -79,7 +78,6 @@ sg3_utils.xml:     $(BOOKdir)/$@ $(srcdir)/sg3_utils.ch
 strigi.xml:        $(BOOKdir)/$@ $(srcdir)/strigi.ch
 sysstat.xml:       $(BOOKdir)/$@ $(srcdir)/sysstat.ch
 sysutils.xml:      $(BOOKdir)/$@ $(srcdir)/sysutils.ch
-tracker.xml:       $(BOOKdir)/$@ $(srcdir)/tracker.ch
 udev.xml:          $(BOOKdir)/$@ $(srcdir)/udev.ch
 udisks.xml:        $(BOOKdir)/$@ $(srcdir)/udisks.ch
 udisks2.xml:       $(BOOKdir)/$@ $(srcdir)/udisks2.ch

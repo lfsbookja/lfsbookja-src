@@ -98,16 +98,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
+    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
+    <para role="optional">
       <xref linkend="gobject-introspection"/>
-      (Required if building GNOME)
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
+    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
+    <para role="optional">
       <xref linkend="gobject-introspection"/>
-      (GNOME のビルド時に必要)
     </para>
 @z
 

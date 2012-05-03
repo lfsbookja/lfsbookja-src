@@ -7,14 +7,4 @@
 % $Rev$
 % $Date::                           $
 %
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
 
-@x
-  <title>Utilities</title>
-@y
-  <title>ユーティリティ</title>
-@z

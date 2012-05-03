@@ -95,14 +95,11 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>
-      (Required if you are going to build
-      <xref linkend="gedit"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>
-      (<xref linkend="gedit"/> をビルドする場合に必要)
     </para>
 @z
 

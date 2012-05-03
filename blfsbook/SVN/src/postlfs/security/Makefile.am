@@ -32,7 +32,6 @@ CHANGE_FILES = \
 	openssl.ch         \
 	p11-kit.ch         \
 	polkit.ch          \
-	polkit-gnome.ch    \
 	security.ch        \
 	shadow.ch          \
 	stunnel.ch         \
@@ -82,7 +81,6 @@ openssh.xml:          $(BOOKdir)/$@ $(srcdir)/openssh.ch
 openssl.xml:          $(BOOKdir)/$@ $(srcdir)/openssl.ch
 p11-kit.xml:          $(BOOKdir)/$@ $(srcdir)/p11-kit.ch
 polkit.xml:           $(BOOKdir)/$@ $(srcdir)/polkit.ch
-polkit-gnome.xml:     $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
 security.xml:         $(BOOKdir)/$@ $(srcdir)/security.ch
 shadow.xml:           $(BOOKdir)/$@ $(srcdir)/shadow.ch
 stunnel.xml:          $(BOOKdir)/$@ $(srcdir)/stunnel.ch

@@ -93,17 +93,27 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> (required if building Gnome),
       <xref linkend="gtk-doc"/> and
       <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> (Gnome のビルド時に必要),
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gtk-doc"/> and
       <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
     </para>
 @z

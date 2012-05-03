@@ -81,22 +81,40 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/> and
-    <xref linkend="polkit"/></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/> and
+      <xref linkend="polkit"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="polkit"/></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="polkit"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/> and
-    <xref linkend="xmlto"/></para>
+    <para role="optional">
+      <xref linkend="xmlto"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gobject-introspection"/>,
-    <xref linkend="xmlto"/></para>
+    <para role="optional">
+      <xref linkend="xmlto"/>
+    </para>
 @z
 
 @x

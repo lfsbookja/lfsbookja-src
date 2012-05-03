@@ -111,24 +111,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
-    <para role="recommended">
-      <xref linkend="accountsservice"/>,
-      <xref linkend="consolekit"/>,
-      <xref linkend="gnome-screensaver"/> and
-      <xref linkend="polkit-gnome"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended; (ランタイム)</bridgehead>
-    <para role="recommended">
-      <xref linkend="accountsservice"/>,
-      <xref linkend="consolekit"/>,
-      <xref linkend="gnome-screensaver"/>,
-      <xref linkend="polkit-gnome"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cheese"/> and

@@ -90,17 +90,25 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/>
-      (Required if building GNOME) and
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>
-      (GNOME のビルド時に必要),
       <xref linkend="gtk-doc"/>
     </para>
 @z

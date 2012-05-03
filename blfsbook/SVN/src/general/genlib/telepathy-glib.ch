@@ -20,18 +20,16 @@
 @z
 
 @x
-    <para>The <application>telepathy-glib</application> package is a library for
-    GLib-based Telepathy components. Telepathy is a
-    <application>D-Bus</application> framework for unifying real time
-    communication, including instant messaging, voice calls and video calls. It
-    abstracts differences between protocols to provide a unified interface for
-    applications.</para>
+      The <application>telepathy-glib</application> package is a library for
+      GLib-based Telepathy components. Telepathy is a
+      <application>D-Bus</application> framework for unifying real time
+      communication, including instant messaging, voice calls and video calls. It
+      abstracts differences between protocols to provide a unified interface for
+      applications.
 @y
-    <para>
-    <application>telepathy-glib</application> パッケージは、GLib ベースの Telepathy コンポーネントに対するライブラリです。
-    Telepathy コンポーネントは <application>D-Bus</application> フレームワークであり、リアルタイムなコミュニケーション、インスタントメッセージ、音声あるいはビデオコールを共通化します。
-    アプリケーションに対し共通化されたインターフェースを提供することで、各種プロトコルの差異を抽象化するものです。
-    </para>
+      <application>telepathy-glib</application> パッケージは、GLib ベースの Telepathy コンポーネントに対するライブラリです。
+      Telepathy コンポーネントは <application>D-Bus</application> フレームワークであり、リアルタイムなコミュニケーション、インスタントメッセージ、音声あるいはビデオコールを共通化します。
+      アプリケーションに対し共通化されたインターフェースを提供することで、各種プロトコルの差異を抽象化するものです。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&telepathy-glib-download-http;"/></para>
+          Download (HTTP): <ulink url="&telepathy-glib-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&telepathy-glib-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&telepathy-glib-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&telepathy-glib-download-ftp;"/></para>
+          Download (FTP): <ulink url="&telepathy-glib-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&telepathy-glib-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&telepathy-glib-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &telepathy-glib-md5sum;</para>
+          Download MD5 sum: &telepathy-glib-md5sum;
 @y
-        <para>&Download; MD5 sum: &telepathy-glib-md5sum;</para>
+          &Download; MD5 sum: &telepathy-glib-md5sum;
 @z
 
 @x
-        <para>Download size: &telepathy-glib-size;</para>
+          Download size: &telepathy-glib-size;
 @y
-        <para>&DownloadSize;: &telepathy-glib-size;</para>
+          &DownloadSize;: &telepathy-glib-size;
 @z
 
 @x
-        <para>Estimated disk space required: &telepathy-glib-buildsize;</para>
+          Estimated disk space required: &telepathy-glib-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &telepathy-glib-buildsize;</para>
+          &Estimateddiskspacerequired;: &telepathy-glib-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &telepathy-glib-time;</para>
+          Estimated build time: &telepathy-glib-time;
 @y
-        <para>&Estimatedbuildtime;: &telepathy-glib-time;</para>
+          &Estimatedbuildtime;: &telepathy-glib-time;
 @z
 
 @x
@@ -103,14 +101,12 @@
     <para role="recommended">
       <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
-      (Required if building GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
-      (GNOME のビルド時に必要)
     </para>
 @z
 
@@ -141,28 +137,22 @@
 @z
 
 @x
-    <para>Install <application>telepathy-glib</application> by running the following
-    commands:</para>
+      Install <application>telepathy-glib</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>telepathy-glib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>telepathy-glib</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -172,26 +162,23 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/telepathy</parameter>:
-    This parameter prevents creating of
-    <filename class="directory">/usr/libexec</filename>
-    directory.</para>
+      <parameter>--libexecdir=/usr/lib/telepathy</parameter>:
+      This parameter prevents creating of
+      <filename class="directory">/usr/libexec</filename> directory.
 @y
-    <para><parameter>--libexecdir=/usr/lib/telepathy</parameter>:
-    このパラメーターは、各種ファイルを <filename
-    class="directory">/usr/libexec</filename> へインストールしないようにします。
-    </para>
+      <parameter>--libexecdir=/usr/lib/telepathy</parameter>:
+      このパラメーターは、各種ファイルを <filename
+      class="directory">/usr/libexec</filename> へインストールしないようにします。
 @z
 
 @x
-    <para><option>--enable-vala-bindings</option>: This option builds the
-    Vala bindings. Remove if you don't have <xref linkend="vala"/>
-    installed.</para>
+      <option>--enable-vala-bindings</option>: This option enables
+      building of the Vala bindings. Remove if you don't have 
+      <xref linkend="vala"/> installed.
 @y
-    <para><option>--enable-vala-bindings</option>:
-    このオプションは Vala バインディングをビルドします。
-    <xref linkend="vala"/> をインストールしていない場合はこれを取り除いてください。
-    </para>
+      <option>--enable-vala-bindings</option>:
+      このオプションは Vala バインディングをビルドします。
+      <xref linkend="vala"/> をインストールしていない場合はこれを取り除いてください。
 @z
 
 @x
@@ -235,10 +222,7 @@
 @z
 
 @x libtelepathy-glib.{so,a}
-          <para>contains the <application>telepathy-glib</application> API
-          functions.</para>
+            contains the <application>telepathy-glib</application> API functions.
 @y
-          <para>
-          <application>telepathy-glib</application> の API 関数を提供します。
-          </para>
+            <application>telepathy-glib</application> の API 関数を提供します。
 @z

@@ -100,13 +100,11 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>
-      (Required if building GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>
-      (GNOME のビルド時に必要)
     </para>
 @z
 

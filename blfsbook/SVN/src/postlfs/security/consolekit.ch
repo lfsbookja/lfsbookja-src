@@ -81,22 +81,30 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/> and
-    <xref linkend="dbus-glib"/></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/> and
+      <xref linkend="xorg7-lib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/>,
-    <xref linkend="dbus-glib"/></para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="xorg7-lib"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="linux-pam"/>
-    and <xref linkend="polkit"/></para>
+    <para role="recommended">
+      <xref linkend="linux-pam"/> and 
+      <xref linkend="polkit"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="linux-pam"/>,
-    <xref linkend="polkit"/></para>
+    <para role="recommended">
+      <xref linkend="linux-pam"/>,
+      <xref linkend="polkit"/>
+    </para>
 @z
 
 @x
@@ -113,10 +121,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="xmlto"/></para>
+    <para role="optional">
+      <xref linkend="xmlto"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="xmlto"/></para>
+    <para role="optional">
+      <xref linkend="xmlto"/>
+    </para>
 @z
 
 @x

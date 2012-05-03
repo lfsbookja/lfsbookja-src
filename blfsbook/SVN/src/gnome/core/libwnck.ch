@@ -93,28 +93,26 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-      (Required if building GNOME)
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-      (GNOME のビルド時に必要)
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="startup-notification"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="startup-notification"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="startup-notification"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 

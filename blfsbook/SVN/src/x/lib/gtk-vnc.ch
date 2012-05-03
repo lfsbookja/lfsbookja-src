@@ -20,17 +20,12 @@
 @z
 
 @x
-    <para>The <application>gtk-vnc</application> package is a VNC viewer widget
-    for <application>GTK</application>. It is built using coroutines allowing it
-    to be completely asynchronous while remaining single threaded. It provides a
-    core C library and bindings for <application>Python</application>
-    (<application>PyGTK</application>)</para>
+      The <application>gtk-vnc</application> package is a VNC viewer widget
+      for <application>GTK</application>. It is built using coroutines allowing it
+      to be completely asynchronous while remaining single threaded.
 @y
-    <para>
-    <application>gtk-vnc</application> パッケージは <application>GTK</application> における VNC ビューワーウィジェットを提供します。
-    これは完全に非同期で動作する処理ルーチンにより構築され、しかも単一のスレッドで動作します。
-    本パッケージは C のコアライブラリと <application>Python</application> バインディング (<application>PyGTK</application>) を提供します。
-    </para>
+      <application>gtk-vnc</application> パッケージは <application>GTK</application> における VNC ビューワーウィジェットを提供します。
+      これは完全に非同期で動作する処理ルーチンにより構築され、しかも単一のスレッドで動作します。
 @z
 
 @x
@@ -40,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gtk-vnc-download-http;"/></para>
+          Download (HTTP): <ulink url="&gtk-vnc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gtk-vnc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gtk-vnc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gtk-vnc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gtk-vnc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gtk-vnc-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gtk-vnc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gtk-vnc-md5sum;</para>
+          Download MD5 sum: &gtk-vnc-md5sum;
 @y
-        <para>&Download; MD5 sum: &gtk-vnc-md5sum;</para>
+          &Download; MD5 sum: &gtk-vnc-md5sum;
 @z
 
 @x
-        <para>Download size: &gtk-vnc-size;</para>
+          Download size: &gtk-vnc-size;
 @y
-        <para>&DownloadSize;: &gtk-vnc-size;</para>
+          &DownloadSize; &gtk-vnc-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gtk-vnc-buildsize;</para>
+          Estimated disk space required: &gtk-vnc-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gtk-vnc-buildsize;</para>
+          &Estimateddiskspacerequired;: &gtk-vnc-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gtk-vnc-time;</para>
+          Estimated build time: &gtk-vnc-time;
 @y
-        <para>&Estimatedbuildtime;: &gtk-vnc-time;</para>
+          &Estimatedbuildtime;: &gtk-vnc-time;
 @z
 
 @x
@@ -98,16 +93,16 @@
 @z
 
 @x
-     <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-      (Required if building GNOME)
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="vala"/>
     </para>
 @y
-     <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-      (GNOME のビルド時に必要)
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -116,9 +111,8 @@
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="nspr"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="vala"/> and
-      <xref linkend="xulrunner"/>
+      <xref linkend="pulseaudio"/> and
+      <ulink url="https://developer.mozilla.org/en/XULRunner">Xulrunner</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -126,8 +120,7 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="nspr"/>,
       <xref linkend="pulseaudio"/>,
-      <xref linkend="vala"/>,
-      <xref linkend="xulrunner"/>
+      <ulink url="https://developer.mozilla.org/en/XULRunner">Xulrunner</ulink>
     </para>
 @z
 
@@ -146,29 +139,23 @@
 @z
 
 @x
-    <para>Install <application>gtk-vnc</application> by running the following
-    commands:</para>
+      Install <application>gtk-vnc</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gtk-vnc</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>gtk-vnc</application> をビルドします。
 @z
 
 @x
-    <para>This package's testsuite is only intended to be used by the
-    maintainer to check the i18n files.</para>
+      This package's testsuite is only intended to be used by the
+      maintainer to check the i18n files.
 @y
-    <para>
-    本パッケージのテストスイートは、開発者が i18n ファイルをテストする目的でのみ提供されています。
-    </para>
+      本パッケージのテストスイートは、開発者が i18n ファイルをテストする目的でのみ提供されています。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -178,42 +165,40 @@
 @z
 
 @x
-    <para><parameter>--with-gtk=3.0</parameter>: This parameter enables
-    <application>GTK+3</application> instead of <application>GTK+2</application>.</para>
+      <parameter>--with-gtk=3.0</parameter>: This parameter enables building of
+      <application>GTK+3</application> library instead of 
+      <application>GTK+2</application> one.
 @y
-    <para><parameter>--with-gtk=3.0</parameter>:
-    このパラメーターは <application>GTK+2</application> ではなく <application>GTK+3</application> を有効にします。
-    </para>
+      <parameter>--with-gtk=3.0</parameter>:
+      このパラメーターは <application>GTK+2</application> ではなく <application>GTK+3</application> を有効にします。
 @z
 
 @x
-    <para><option>--without-sasl</option>: This parameter disables the use of 
-    <application>Cyrus SASL</application> for authentication. Remove it if you have 
-    <application>Cyrus SASL</application> installed and wish to enable it for 
-    authentication.</para>
+      <option>--enable-vala</option>: This option enables
+      building of the Vala bindings. Remove if you don't have
+      <xref linkend="vala"/> installed.
 @y
-    <para>
-    <option>--without-sasl</option>:
-    このパラメーターは、認証処理にあたって <application>cyrus SASL</application> を利用しないことを指示します。
-    <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は、本パラメーターを取り除いてください。
-    </para>
+      <option>--enable-vala</option>:
+      このオプションは Vala バインディングを有効にします。
+      <xref linkend="vala"/> をインストールしていない場合は、本オプションを取り除いてください。
 @z
 
 @x
-    <para><option>--enable-plugin</option>: This option enables the browser plugin.</para>
+      <option>--without-sasl</option>: This parameter disables the use of 
+      <application>Cyrus SASL</application> for authentication. Remove it if you have 
+      <application>Cyrus SASL</application> installed and wish to enable it for 
+      authentication.
 @y
-    <para>
-    <option>--enable-plugin</option>:
-    このオプションはブラウザープラグインを有効にします。
-    </para>
+      <option>--without-sasl</option>:
+      このパラメーターは、認証処理にあたって <application>cyrus SASL</application> を利用しないことを指示します。
+      <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は、本パラメーターを取り除いてください。
 @z
 
 @x
-    <para><option>--enable-vala</option>: This option enables the vala bindings.</para>
+      <option>--enable-plugin</option>: This option enables the browser plugin.
 @y
-    <para><option>--enable-vala</option>:
-    このオプションは vala バインディングを有効にします。
-    </para>
+      <option>--enable-plugin</option>:
+      このオプションはブラウザープラグインを有効にします。
 @z
 
 @x

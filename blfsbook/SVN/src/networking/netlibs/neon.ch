@@ -88,18 +88,24 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/> or
-    <xref linkend="gnutls"/>,
-    <xref linkend="libproxy"/> (requires <xref linkend="pkgconfig"/> to find it),
-    <xref linkend="mitkrb"/> and
-    <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink></para>
+    <para role="optional">
+      <xref linkend="openssl"/> or
+      <xref linkend="gnutls"/>,
+      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>
+      (requires <xref linkend="pkgconfig"/> to find it),
+      <xref linkend="mitkrb"/> and
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>.
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/> または
-    <xref linkend="gnutls"/>,
-    <xref linkend="libproxy"/> (これを探し出すために <xref linkend="pkgconfig"/> も必要),
-    <xref linkend="mitkrb"/>,
-    <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink></para>
+    <para role="optional">
+      <xref linkend="openssl"/> または
+      <xref linkend="gnutls"/>,
+      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>
+      (これを探し出すために <xref linkend="pkgconfig"/> も必要),
+      <xref linkend="mitkrb"/>,
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>.
+    </para>
 @z
 
 @x

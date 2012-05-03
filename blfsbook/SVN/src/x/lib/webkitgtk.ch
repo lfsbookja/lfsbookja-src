@@ -79,8 +79,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gperf"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
       <xref linkend="icu"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
@@ -95,8 +93,6 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gperf"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
       <xref linkend="icu"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="gtk2"/> または <xref linkend="gtk3"/>
@@ -105,7 +101,19 @@
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="geoclue"/>,
       <xref linkend="which"/>,
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/>.
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
     </para>
 @z
 
@@ -114,8 +122,6 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="enchant"/>,
-      <xref linkend="gobject-introspection"/> (required if building
-      <application>epiphany</application>),
       <xref linkend="gtk-doc"/> and
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.
     </para>
@@ -124,7 +130,6 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="enchant"/>,
-      <xref linkend="gobject-introspection"/> (<application>epiphany</application> のビルド時に必要),
       <xref linkend="gtk-doc"/>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.
     </para>

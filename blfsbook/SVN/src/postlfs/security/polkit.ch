@@ -82,35 +82,47 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="expat"/>, 
-    <xref linkend="intltool"/> and
-    <xref linkend="pkgconfig"/></para>
+      <xref linkend="intltool"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="expat"/>, 
-    <xref linkend="intltool"/>,
-    <xref linkend="pkgconfig"/></para>
+      <xref linkend="intltool"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="DocBook"/>, 
-    <xref linkend="docbook-xsl"/>, 
-    <xref linkend="gobject-introspection"/>, 
-    <xref linkend="gtk-doc"/>, 
-    <xref linkend="libxslt"/> and 
-    <xref linkend="linux-pam"/></para>
+      <xref linkend="DocBook"/>, 
+      <xref linkend="docbook-xsl"/>, 
+      <xref linkend="gtk-doc"/>, 
+      <xref linkend="libxslt"/> and 
+      <xref linkend="linux-pam"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="DocBook"/>, 
-    <xref linkend="docbook-xsl"/>, 
-    <xref linkend="gobject-introspection"/>, 
-    <xref linkend="gtk-doc"/>, 
-    <xref linkend="libxslt"/>, 
-    <xref linkend="linux-pam"/></para>
+      <xref linkend="DocBook"/>, 
+      <xref linkend="docbook-xsl"/>, 
+      <xref linkend="gtk-doc"/>, 
+      <xref linkend="libxslt"/>,
+      <xref linkend="linux-pam"/>
+    </para>
 @z
 
 @x
@@ -135,18 +147,6 @@
     <title>Installation of polkit</title>
 @y
     <title>&InstallationOf1;polkit&InstallationOf2;</title>
-@z
-
-@x
-    <para>It is a requirement to have a dedicated user and group for
-    <application>polkit</application> to function correctly. Issue the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
-@y
-    <para>
-    <application>polkit</application> を正常に動作させるためには、専用のユーザーとグループが必要です。
-    そこで <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
 @z
 
 @x

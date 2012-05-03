@@ -83,6 +83,7 @@
     <para role="required">
       <xref linkend="accountsservice"/>,
       <xref linkend="dconf"/>,
+      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="linux-pam"/> and
@@ -93,6 +94,7 @@
     <para role="required">
       <xref linkend="accountsservice"/>,
       <xref linkend="dconf"/>,
+      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="linux-pam"/>,
@@ -114,7 +116,7 @@
       <xref linkend="gnome-session"/>,
       <xref linkend="gnome-shell"/> または
       <xref linkend="gnome-panel"/> のいずれか,
-      <xref linkend="metacity"/> (Greeter ウィンドウマネージャー利用時).
+      <xref linkend="metacity"/> (Greeter ウィンドウマネージャー利用時)
     </para>
 @z
 
@@ -123,7 +125,9 @@
     <para role="recommended">
       <xref linkend="consolekit"/>
       (Required for Shutdown/Restart functionality),
-      <xref linkend="libxklavier"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libxklavier"/>,
+      <xref linkend="rarian"/> and
       <xref linkend="upower"/>
     </para>
 @y
@@ -131,7 +135,9 @@
     <para role="recommended">
       <xref linkend="consolekit"/>
       (Required for Shutdown/Restart functionality),
-      <xref linkend="libxklavier"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libxklavier"/>,
+      <xref linkend="rarian"/>,
       <xref linkend="upower"/>
     </para>
 @z
@@ -139,15 +145,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="check"/> (required to run the testsuite),
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="check"/> (required to run the testsuite) and
       <xref linkend="tcpwrappers"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="check"/> (テストスイート実行時),
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="tcpwrappers"/>
     </para>
 @z

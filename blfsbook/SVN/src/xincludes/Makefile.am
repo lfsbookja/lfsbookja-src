@@ -14,6 +14,7 @@ CHANGE_FILES = \
 	static-libraries.ch \
 	use-unzip.ch \
 	without-gnome.ch \
+	without-scrollkeeper.ch \
 	X11R6_symlink.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -43,3 +44,4 @@ gnome2.xml:               $(BOOKdir)/$@ $(srcdir)/gnome2.ch
 gnome-old-sysconfdir.xml: $(BOOKdir)/$@ $(srcdir)/gnome-old-sysconfdir.ch
 gnome-old-prefix.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-old-prefix.ch
 static-libraries.xml:     $(BOOKdir)/$@ $(srcdir)/static-libraries.ch
+without-scrollkeeper.xml: $(BOOKdir)/$@ $(srcdir)/without-scrollkeeper.ch

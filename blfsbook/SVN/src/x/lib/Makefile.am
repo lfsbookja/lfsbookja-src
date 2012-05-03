@@ -11,6 +11,9 @@ CHANGE_FILES = \
 	atkmm.ch \
 	cairo.ch \
 	cairomm.ch \
+	clutter.ch \
+	clutter-gst.ch \
+	clutter-gtk.ch \
 	cogl.ch \
 	freeglut.ch \
 	gdk-pixbuf.ch \
@@ -27,6 +30,7 @@ CHANGE_FILES = \
 	libnotify.ch \
 	libsexy.ch \
 	libxklavier.ch \
+	mx.ch \
 	notification-daemon.ch \
 	pango.ch \
 	pangomm.ch \
@@ -52,6 +56,9 @@ ctie:
 
 atk.xml:                  $(BOOKdir)/$@ $(srcdir)/atk.ch
 cairo.xml:                $(BOOKdir)/$@ $(srcdir)/cairo.ch
+clutter.xml:              $(BOOKdir)/$@ $(srcdir)/clutter.ch
+clutter-gst.xml:          $(BOOKdir)/$@ $(srcdir)/clutter-gst.ch
+clutter-gtk.xml:          $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
 freeglut.xml:             $(BOOKdir)/$@ $(srcdir)/freeglut.ch
 goffice.xml:              $(BOOKdir)/$@ $(srcdir)/goffice.ch
 gtk+2.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
@@ -65,6 +72,7 @@ lesstif.xml:              $(BOOKdir)/$@ $(srcdir)/lesstif.ch
 	cp -p $(BOOKdir)/$@{.orig,}
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
+mx.xml:                   $(BOOKdir)/$@ $(srcdir)/mx.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
 qt.xml:                   $(BOOKdir)/$@ $(srcdir)/qt.ch
 qt4.xml:                  $(BOOKdir)/$@ $(srcdir)/qt4.ch

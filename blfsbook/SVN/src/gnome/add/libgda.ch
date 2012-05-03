@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libgda</application> package provides a database access
-    library for the <application>GNOME</application> project.</para>
+      The <application>libgda</application> package provides a database access
+      library for the <application>GNOME</application> project.
 @y
-    <para>
-    <application>libgda</application> パッケージは <application>GNOME</application> プロジェクトにおけるデータベースアクセスライブラリを提供します。
-    </para>
+      <application>libgda</application> パッケージは <application>GNOME</application> プロジェクトにおけるデータベースアクセスライブラリを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libgda-download-http;"/></para>
+          Download (HTTP): <ulink url="&libgda-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libgda-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libgda-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libgda-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libgda-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libgda-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libgda-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libgda-md5sum;</para>
+          Download MD5 sum: &libgda-md5sum;
 @y
-        <para>&Download; MD5 sum: &libgda-md5sum;</para>
+          &Download; MD5 sum: &libgda-md5sum;
 @z
 
 @x
-        <para>Download size: &libgda-size;</para>
+          Download size: &libgda-size;
 @y
-        <para>&DownloadSize;: &libgda-size;</para>
+          &DownloadSize;: &libgda-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libgda-buildsize;</para>
+          Estimated disk space required: &libgda-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libgda-buildsize;</para>
+          &Estimateddiskspacerequired;: &libgda-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libgda-time;</para>
+          Estimated build time: &libgda-time;
 @y
-        <para>&Estimatedbuildtime;: &libgda-time;</para>
+          &Estimatedbuildtime;: &libgda-time;
 @z
 
 @x
@@ -100,8 +98,9 @@
       <xref linkend="iso-codes"/>,
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="libxslt"/> and
-      <xref linkend="sqlite"/>
+      <xref linkend="libxslt"/>,
+      <xref linkend="sqlite"/> and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -112,7 +111,8 @@
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="libxslt"/>,
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -125,9 +125,8 @@
       <xref linkend="gtksourceview"/>,
       <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
       <xref linkend="mysql"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="postgresql"/> and
-      <xref linkend="vala"/>
+      <xref linkend="openldap"/> and
+      <xref linkend="postgresql"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -139,8 +138,7 @@
       <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
       <xref linkend="mysql"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="vala"/>
+      <xref linkend="postgresql"/>
     </para>
 @z
 
@@ -157,31 +155,25 @@
 @z
 
 @x
-    <para>Install <application>libgda</application> by running the following
-    commands:</para>
+      Install <application>libgda</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libgda</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libgda</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. Note that
-    the output is voluminous, and some tests appear to need the package to have been
-    installed.</para>
+      To test the results, issue: <command>make check</command>. Note that the 
+      output is voluminous, and some tests appear to need the package to have been
+      installed.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    テスト結果の出力は膨大なものになっており、また別パッケージを事前にインストールしておく必要のあるテストもあります。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テスト結果の出力は膨大なものになっており、また別パッケージを事前にインストールしておく必要のあるテストもあります。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -191,16 +183,15 @@
 @z
 
 @x
-    <para><option>--enable-system-sqlite</option> : use the system version of
-    <application>sqlite3</application>.  Note that you must have compiled
-    <application>sqlite</application> with -DSQLITE_ENABLE_COLUMN_METADATA
-    otherwise the internal version will be used.</para>
+      <option>--enable-system-sqlite</option>: use the system version of
+      <application>Sqlite3</application>.  Note that you must have compiled
+      <application>Sqlite3</application> with -DSQLITE_ENABLE_COLUMN_METADATA
+      otherwise the internal version will be used.
 @y
-    <para><option>--enable-system-sqlite</option> :
-    システムにインストールされている <application>sqlite3</application> の利用を指示します。
-    <application>sqlite</application> は -DSQLITE_ENABLE_COLUMN_METADATA を使ってコンパイルしておく必要があります。
-    これを行っていない場合は、内部ビルドされる <application>sqlite</application> が利用されます。
-    </para>
+      <option>--enable-system-sqlite</option> :
+      システムにインストールされている <application>Sqlite3</application> の利用を指示します。
+      <application>Sqlite3</application> は -DSQLITE_ENABLE_COLUMN_METADATA を使ってコンパイルしておく必要があります。
+      これを行っていない場合は、内部ビルドされる <application>Sqlite3</application> が利用されます。
 @z
 
 @x
@@ -260,61 +251,57 @@
 @z
 
 @x gda-browser-5.0
-          <para>is a graphical tool to provide a quick access to a database&apos;s
-          structure and contents.</para>
+            is a graphical tool to provide a quick access to a database&apos;s
+            structure and contents.
 @y
-          <para>is a graphical tool to provide a quick access to a database&apos;s
-          structure and contents.</para>
+            is a graphical tool to provide a quick access to a database&apos;s
+            structure and contents.
 @z
 
 @x gda-control-center-5.0
-          <para>is a configuration tool for libgda.</para>
+            is a configuration tool for <application>libgda</application>.
 @y
-          <para>is a configuration tool for libgda.</para>
+            is a configuration tool for <application>libgda</application>.
 @z
 
 @x gda-list-config-5.0
-          <para>lists all the declared data sources and all the installed
-          providers.</para>
+            lists all the declared data sources and all the installed providers.
 @y
-          <para>lists all the declared data sources and all the installed
-          providers.</para>
+            lists all the declared data sources and all the installed providers.
 @z
 
 @x gda-list-server-op-5.0
-          <para>lists available DDL operations for one or all of the installed
-          providers.</para>
+            lists available DDL operations for one or all of the installed providers.
 @y
-          <para>lists available DDL operations for one or all of the installed
-          providers.</para>
+            lists available DDL operations for one or all of the installed providers.
 @z
 
 @x gda-sql-5.0
-          <para>is an interactive commandline tool to run SQL commands.</para>
+            is an interactive commandline tool used to run SQL commands.
 @y
-          <para>is an interactive commandline tool to run SQL commands.</para>
+            is an interactive commandline tool used to run SQL commands.
 @z
 
 @x gda-test-connection-5.0
-          <para>is a &apos;ping&apos; like tool to test connectivity to databases.</para>
+            is a &apos;ping&apos; like tool to test connectivity to databases.
 @y
-          <para>is a &apos;ping&apos; like tool to test connectivity to databases.</para>
+            is a &apos;ping&apos; like tool to test connectivity to databases.
 @z
 
 @x libgda-5.0.so
-          <para>is the Gnome Data Access library.</para>
+            is the GNOME Data Access library.
 @y
-          <para>is the Gnome Data Access library.</para>
+            is the GNOME Data Access library.
 @z
 
 @x libgda-ui-5.0.so
-          <para>is the GDA UI extension.</para>
+            is the GDA UI extension.
 @y
-          <para>is the GDA UI extension.</para>
+            is the GDA UI extension.
 @z
 
 @x libgda-xslt-5.0.so
-          <para>is the GDA XSLT extension.</para>
+            is the GDA XSLT extension.
 @y
-          <para>is the GDA XSLT extension.</para>
+            is the GDA XSLT extension.
 @z

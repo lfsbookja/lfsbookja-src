@@ -128,16 +128,14 @@
       <xref linkend="dhcpcd"/> or
       <xref linkend="dhcp-client"/> and
       <xref linkend="gobject-introspection"/>
-      (Required if building Gnome Shell).
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="consolekit"/>,
-      <xref linkend="dhcpcd"/> or
+      <xref linkend="dhcpcd"/> または
       <xref linkend="dhcp-client"/>,
       <xref linkend="gobject-introspection"/>
-      (Gnome Shell ビルドに必要)
     </para>
 @z
 

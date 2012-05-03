@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to Gtk+-2</title>
+    <title>Introduction to Gtk+ 2</title>
 @y
-    <title>&IntroductionTo1;Gtk+-2&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Gtk+ 2&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>Gtk+-2</application> package contains
-      <application>|Gtk+-2</application> libraries. These are useful for
+      The <application>Gtk+ 2</application> package contains
+      <application>|Gtk+ 2</application> libraries. These are useful for
       creating graphical user interfaces for applications.
 @y
-      <application>Gtk+-2</application> パッケージは <application>Gtk+-2</application> ライブラリを提供します。
+      <application>Gtk+ 2</application> パッケージは <application>Gtk+ 2</application> ライブラリを提供します。
       これらはアプリケーションにおけるグラフィカルユーザーインターフェースの構築に有用です。
 @z
 
@@ -71,9 +71,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Gtk+-2 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Gtk+ 2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Gtk+-2&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Gtk+ 2&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -146,16 +146,16 @@
 @z
 
 @x
-    <title>Installation of Gtk+-2</title>
+    <title>Installation of Gtk+ 2</title>
 @y
-    <title>&InstallationOf1;Gtk+-2&InstallationOf2;</title>
+    <title>&InstallationOf1;Gtk+ 2&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Gtk+-2</application> by running the following
+      Install <application>Gtk+ 2</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Gtk+-2</application> をビルドします。
+      以下のコマンドを実行して <application>Gtk+ 2</application> をビルドします。
 @z
 
 @x
@@ -222,9 +222,9 @@
 @z
 
 @x
-    <title>Configuring Gtk+-2</title>
+    <title>Configuring Gtk+ 2</title>
 @y
-    <title>&Configuring1;Gtk+-2&Configuring2;</title>
+    <title>&Configuring1;Gtk+ 2&Configuring2;</title>
 @z
 
 @x
@@ -248,21 +248,25 @@
 @z
 
 @x
-        Gtk themes change the way a gtk application looks. A Gtk icon theme can
-        be used to change the icons that appear on the application's toolbar.
-        If you have installed a Gtk theme (such as
-        <ulink
+        <application>Gtk+ 2</application> themes change the way a
+        <application>Gtk+ 2</application> application looks. A
+        <application>Gtk+ 2</application> icon theme can be used to change the
+        icons that appear on the application's toolbar. If you have installed a
+        <application>Gtk+ 2</application> theme (such as <ulink
         url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink>
-        (requires <xref linkend="gtk-engines"/>)) or a Gtk icon theme (such as
+        (requires <xref linkend="gtk-engines"/>)) or a
+        <application>Gtk+ 2</application> icon theme (such as
         <xref linkend="gnome-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
 @y
-        Gtk themes change the way a gtk application looks. A Gtk icon theme can
-        be used to change the icons that appear on the application's toolbar.
-        If you have installed a Gtk theme (such as
-        <ulink
+        <application>Gtk+ 2</application> themes change the way a
+        <application>Gtk+ 2</application> application looks. A
+        <application>Gtk+ 2</application> icon theme can be used to change the
+        icons that appear on the application's toolbar. If you have installed a
+        <application>Gtk+ 2</application> theme (such as <ulink
         url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink>
-        (requires <xref linkend="gtk-engines"/>)) or a Gtk icon theme (such as
+        (requires <xref linkend="gtk-engines"/>)) or a
+        <application>Gtk+ 2</application> icon theme (such as
         <xref linkend="gnome-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
 @z
@@ -287,11 +291,11 @@
 
 @x
         <ulink url="http://sourceforge.net/projects/lxde/files/LXAppearance/">
-        LXAppearance</ulink> is a <application>Gtk+-2</application> application
+        LXAppearance</ulink> is a <application>Gtk+ 2</application> application
         that can help you choose the themes you like.
 @y
         <ulink url="http://sourceforge.net/projects/lxde/files/LXAppearance/">
-        LXAppearance</ulink> is a <application>Gtk+-2</application> application
+        LXAppearance</ulink> is a <application>Gtk+ 2</application> application
         that can help you choose the themes you like.
 @z
 
@@ -363,25 +367,6 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-% @x gdk-pixbuf-csource
-%           <para>generates C code containing images, useful for compiling
-%           images directly into programs.</para>
-% @y
-%           <para>
-%           
-%           generates C code containing images, useful for compiling
-%           images directly into programs.
-%           </para>
-% @z
-
-% @x gdk-pixbuf-query-loaders
-%           <para>collects information about loadable modules for gdk-pixbuf
-%           and writes it to standard output.</para>
-% @y
-%           <para>collects information about loadable modules for gdk-pixbuf
-%           and writes it to standard output.</para>
-% @z
-
 @x gtk-builder-convert
            converts glade files into XML files which can be loaded with
            GtkBuilder.
@@ -391,19 +376,19 @@
 @z
 
 @x gtk-demo
-            demonstrates <application>Gtk+-2</application> functionality and
+            demonstrates <application>Gtk+ 2</application> functionality and
             provides code for the examples.
 @y
-            demonstrates <application>Gtk+-2</application> functionality and
+            demonstrates <application>Gtk+ 2</application> functionality and
             provides code for the examples.
 @z
 
 @x gtk-query-immodules-2.0
             collects information about loadable input method modules for
-            <application>Gtk+-2</application> and writes it to standard output.
+            <application>Gtk+ 2</application> and writes it to standard output.
 @y
             collects information about loadable input method modules for
-            <application>Gtk+-2</application> and writes it to standard output.
+            <application>Gtk+ 2</application> and writes it to standard output.
 @z
 
 @x gtk-update-icon-cache
@@ -413,9 +398,9 @@
 @z
 
 @x
-        <term>Gtk+-2 Libraries</term>
+        <term>Gtk+ 2 Libraries</term>
 @y
-        <term>Gtk+-2 ライブラリ</term>
+        <term>Gtk+ 2 ライブラリ</term>
 @z
 @x
             provide an API to implement graphical user interfaces.

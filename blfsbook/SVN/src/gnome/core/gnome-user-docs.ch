@@ -80,25 +80,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gnome-doc-utils"/> and
-      <xref linkend="itstool"/>
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="itstool"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="rarian"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="rarian"/>
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 

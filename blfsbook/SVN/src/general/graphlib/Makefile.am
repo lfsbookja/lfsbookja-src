@@ -27,14 +27,10 @@ CHANGE_FILES = \
 	pixman.ch \
 	poppler.ch \
 	poppler-014.ch \
-	clutter.ch \
-	clutter-gtk.ch \
 	babl.ch \
 	gegl.ch \
 	exiv2.ch \
 	lcms2.ch \
-	clutter-gst.ch \
-	mx.ch \
 	colord.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -69,12 +65,8 @@ openjpeg.xml:    $(BOOKdir)/$@ $(srcdir)/openjpeg.ch
 pixman.xml:      $(BOOKdir)/$@ $(srcdir)/pixman.ch
 poppler.xml:     $(BOOKdir)/$@ $(srcdir)/poppler.ch
 poppler-014.xml: $(BOOKdir)/$@ $(srcdir)/poppler-014.ch
-clutter.xml:     $(BOOKdir)/$@ $(srcdir)/clutter.ch
-clutter-gtk.xml: $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
 babl.xml:        $(BOOKdir)/$@ $(srcdir)/babl.ch
 gegl.xml:        $(BOOKdir)/$@ $(srcdir)/gegl.ch
 exiv2.xml:       $(BOOKdir)/$@ $(srcdir)/exiv2.ch
 lcms2.xml:       $(BOOKdir)/$@ $(srcdir)/lcms2.ch
-clutter-gst.xml: $(BOOKdir)/$@ $(srcdir)/clutter-gst.ch
-mx.xml:          $(BOOKdir)/$@ $(srcdir)/mx.ch
 colord.xml:      $(BOOKdir)/$@ $(srcdir)/colord.ch

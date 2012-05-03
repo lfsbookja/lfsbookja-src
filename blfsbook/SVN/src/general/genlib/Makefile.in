@@ -198,8 +198,6 @@ CHANGE_FILES = \
 	libxml2.ch \
 	libxslt.ch \
 	lzo.ch \
-	mcs.ch \
-	mowgli.ch \
 	nspr.ch \
 	pcre.ch \
 	popt.ch \
@@ -460,8 +458,6 @@ libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
 libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
 libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
 lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
-mcs.xml:                   $(BOOKdir)/$@ $(srcdir)/mcs.ch
-mowgli.xml:                $(BOOKdir)/$@ $(srcdir)/mowgli.ch
 nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
 pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch
 popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch

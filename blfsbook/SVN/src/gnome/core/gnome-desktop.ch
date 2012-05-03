@@ -99,16 +99,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="startup-notification"/> and
-      <xref linkend="gobject-introspection"/>
-      (Required if building GNOME)
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="rarian"/> and
+      <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="startup-notification"/> and
-      <xref linkend="gobject-introspection"/>
-      (GNOME のビルド時に必要)
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="rarian"/>,
+      <xref linkend="startup-notification"/>
     </para>
 @z
 

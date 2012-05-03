@@ -20,17 +20,16 @@
 @z
 
 @x
-    <para><application>Bluefish</application> is a
-    <application>Gtk+-2</application> text editor targeted towards programmers
-    and webdesigners, with many options to write websites, scripts and
-    programming code. Bluefish supports many programming and markup languages,
-    and it focuses on editing dynamic and interactive websites.</para>
+      <application>Bluefish</application> is a
+      <application>Gtk</application> text editor targeted towards
+      programmers and web designers, with many options to write websites,
+      scripts and programming code. <application>Bluefish</application>
+      supports many programming and markup languages, and it focuses on
+      editing dynamic and interactive websites.
 @y
-    <para>
-    <application>Bluefish</application> は <application>Gtk+-2</application> による、プログラマーやウェブデザイナー向けテキストエディターです。
-    ウェブサイト、スクリプト、プログラミングコードなどの記述を行うためのさまざまなオプションが用意されています。
-    Bluefish では、プログラミング言語やマークアップ言語の多くをサポートしており、特に XML ファイルや HTML ファイルを編集するエディターとして優れています。
-    </para>
+      <application>Bluefish</application> は <application>Gtk</application> による、プログラマーやウェブデザイナー向けテキストエディターです。
+      ウェブサイト、スクリプト、プログラミングコードなどの記述を行うためのさまざまなオプションが用意されています。
+      <application>Bluefish</application> では、プログラミング言語やマークアップ言語の多くをサポートしており、特に XML ファイルや HTML ファイルを編集するエディターとして優れています。
 @z
 
 @x
@@ -40,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&bluefish-download-http;"/></para>
+          Download (HTTP): <ulink url="&bluefish-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&bluefish-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&bluefish-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&bluefish-download-ftp;"/></para>
+          Download (FTP): <ulink url="&bluefish-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&bluefish-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&bluefish-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &bluefish-md5sum;</para>
+          Download MD5 sum: &bluefish-md5sum;
 @y
-        <para>&Download; MD5 sum: &bluefish-md5sum;</para>
+          &Download; MD5 sum: &bluefish-md5sum;
 @z
 
 @x
-        <para>Download size: &bluefish-size;</para>
+          Download size: &bluefish-size;
 @y
-        <para>&DownloadSize;: &bluefish-size;</para>
+          &DownloadSize;: &bluefish-size;
 @z
 
 @x
-        <para>Estimated disk space required: &bluefish-buildsize;</para>
+          Estimated disk space required: &bluefish-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &bluefish-buildsize;</para>
+          &Estimateddiskspacerequired;: &bluefish-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &bluefish-time;</para>
+          Estimated build time: &bluefish-time;
 @y
-        <para>&Estimatedbuildtime;: &bluefish-time;</para>
+          &Estimatedbuildtime;: &bluefish-time;
 @z
 
 @x
@@ -83,32 +82,45 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk2"/></para>
+    <para role="required">
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>.
+      If both are installed, <command>configure</command> defaults to using
+      <application>Gtk 3</application>.
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk2"/></para>
+    <para role="required">
+      <xref linkend="gtk2"/> または <xref linkend="gtk3"/>
+      両方がインストールされている場合、<command>configure</command> はデフォルトで <application>Gtk 3</application> を利用します。
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="pcre"/>, <xref linkend="gucharmap"/>,
-    <xref linkend="enchant"/> (for spellchecking),
-    <xref linkend="desktop-file-utils"/> and
-    <xref linkend="shared-mime-info"/></para>
+    <para role="optional">
+      <xref linkend="desktop-file-utils"/>,
+      <xref linkend="enchant"/> (for spellchecking),
+      <xref linkend="gucharmap"/>,
+      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink>,
+      <xref linkend="pcre"/> and
+      <xref linkend="shared-mime-info"/>.
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="pcre"/>, <xref linkend="gucharmap"/>,
-    <xref linkend="enchant"/> (スペルチェックのため),
-    <xref linkend="desktop-file-utils"/>,
-    <xref linkend="shared-mime-info"/></para>
+    <para role="optional">
+      <xref linkend="desktop-file-utils"/>,
+      <xref linkend="enchant"/> (スペルチェックのため),
+      <xref linkend="gucharmap"/>,
+      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink>,
+      <xref linkend="pcre"/>,
+      <xref linkend="shared-mime-info"/>.
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/bluefish"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/bluefish"/></para>
 @z
 
 @x
@@ -118,12 +130,10 @@
 @z
 
 @x
-    <para>Install <application>Bluefish</application> by running the following
-    commands:</para>
+      Install <application>Bluefish</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Bluefish</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Bluefish</application> をビルドします。
 @z
 
 @x
@@ -133,12 +143,10 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -157,10 +165,20 @@
 
 @x
         <seg>bluefish</seg>
-        <seg>/usr/lib/bluefish and /usr/share/bluefish</seg>
+        <seg>
+          /usr/lib/bluefish
+          /usr/share/doc/bluefish,
+          /usr/share/xml/bluefish and
+          /usr/share/bluefish.
+        </seg>
 @y
         <seg>bluefish</seg>
-        <seg>/usr/lib/bluefish, /usr/share/bluefish</seg>
+        <seg>
+          /usr/lib/bluefish
+          /usr/share/doc/bluefish,
+          /usr/share/xml/bluefish,
+          /usr/share/bluefish.
+        </seg>
 @z
 
 @x
@@ -170,9 +188,8 @@
 @z
 
 @x bluefish
-          <para>is an X Window System editor for markup and programming.</para>
+            is a <application>Gtk</application> text editor for markup and
+            programming.
 @y
-          <para>
-          X ウィンドウシステムのエディターです。マークアップやプログラミングに用いられます。
-          </para>
+            <application>Gtk</application> により実装されたエディターです。マークアップやプログラミングに用いられます。
 @z

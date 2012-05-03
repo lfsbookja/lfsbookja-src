@@ -291,20 +291,22 @@
     <bridgehead renderas="sect4">Optional Runtime Dependencies (required for
     source installation)</bridgehead>
     <para role="optional">
-    <xref linkend="alsa-lib"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="xorg7-lib"/>, and
-    <xref linkend="xulrunner"/></para>
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="xorg7-lib"/> and
+      <ulink url="https://developer.mozilla.org/en/XULRunner">xulrunner</ulink>.
+    </para>
 @y
     <bridgehead renderas="sect4">Optional Runtime Dependencies (required for
     source installation)</bridgehead>
     <para role="optional">
-    <xref linkend="alsa-lib"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="xorg7-lib"/>, and
-    <xref linkend="xulrunner"/></para>
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="xorg7-lib"/> and
+      <ulink url="https://developer.mozilla.org/en/XULRunner">xulrunner</ulink>.
+    </para>
 @z
 
 @x

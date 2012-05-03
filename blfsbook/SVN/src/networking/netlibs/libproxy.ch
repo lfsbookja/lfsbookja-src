@@ -100,7 +100,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="python2"/>,
-    <xref linkend="xulrunner"/>,
+      <ulink url="https://developer.mozilla.org/en/XULRunner">xulrunner</ulink>,
     <xref linkend="webkitgtk"/> (built with <application>gtk+-2</application>) or
     <ulink url="http://webkit.org/">WebKit</ulink>, and
     <xref linkend="NetworkManager"/></para>
@@ -108,7 +108,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="x-window-system"/>,
     <xref linkend="python2"/>,
-    <xref linkend="xulrunner"/>,
+      <ulink url="https://developer.mozilla.org/en/XULRunner">xulrunner</ulink>,
     <xref linkend="webkitgtk"/> (<application>gtk+-2</application> とともにビルドされたもの) または
     <ulink url="http://webkit.org/">WebKit</ulink>,
     <xref linkend="NetworkManager"/></para>

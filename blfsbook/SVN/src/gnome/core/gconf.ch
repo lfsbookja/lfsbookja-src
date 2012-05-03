@@ -93,14 +93,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/> and
       <xref linkend="polkit"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended; (GNOME のビルド時に必要)</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,

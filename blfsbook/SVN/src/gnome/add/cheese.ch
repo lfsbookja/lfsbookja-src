@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>Cheese</application> package is used to 
-    take photos and videos with fun graphical effects.</para>
+      The <application>Cheese</application> package is used to 
+      take photos and videos with fun graphical effects.
 @y
-    <para>
-    <application>Cheese</application> パッケージは、ウェブカメラを使って写真やビデオを撮ったり、さまざまなグラフィック効果を付与する機能を提供します。
-    </para>
+      <application>Cheese</application> パッケージは、ウェブカメラを使って写真やビデオを撮ったり、さまざまなグラフィック効果を付与する機能を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cheese-download-http;"/></para>
+          Download (HTTP): <ulink url="&cheese-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cheese-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cheese-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cheese-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cheese-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&cheese-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cheese-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cheese-md5sum;</para>
+          Download MD5 sum: &cheese-md5sum;
 @y
-        <para>&Download; MD5 sum: &cheese-md5sum;</para>
+          &Download; MD5 sum: &cheese-md5sum;
 @z
 
 @x
-        <para>Download size: &cheese-size;</para>
+          Download size: &cheese-size;
 @y
-        <para>&DownloadSize;: &cheese-size;</para>
+          &DownloadSize;: &cheese-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cheese-buildsize;</para>
+          Estimated disk space required: &cheese-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cheese-buildsize;</para>
+          &Estimateddiskspacerequired;: &cheese-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cheese-time;</para>
+          Estimated build time: &cheese-time;
 @y
-        <para>&Estimatedbuildtime;: &cheese-time;</para>
+          &Estimatedbuildtime;: &cheese-time;
 @z
 
 @x
@@ -83,14 +81,14 @@
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-video-effects"/>,
-      <xref linkend="itstool"/>,
       <xref linkend="libgee"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="mx"/>,
       <xref linkend="nautilus-sendto"/>,
-      <xref linkend="udev"/> and
-      <xref linkend="vala"/>
+      <xref linkend="udev"/>,
+      <xref linkend="vala"/> and
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -99,27 +97,37 @@
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-video-effects"/>,
-      <xref linkend="itstool"/>,
       <xref linkend="libgee"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="mx"/>,
       <xref linkend="nautilus-sendto"/>,
       <xref linkend="udev"/>,
-      <xref linkend="vala"/>
+      <xref linkend="vala"/>,
+      <xref linkend="yelp-xsl"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> and
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -139,26 +147,22 @@
 @z
 
 @x
-    <para>Install <application>Cheese</application> by running the following
-    commands:</para>
+      Install <application>Cheese</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Cheese</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Cheese</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -216,18 +220,19 @@
 @z
 
 @x cheese
-          <para>is the webcam with graphical effects tool.</para>
+            is the webcam tool with graphical effects.
 @y
-          <para>
-          グラフィック効果ツールを伴うウェブカメラです。
-          </para>
+            グラフィック効果を伴うウェブカメラツールです。
 @z
 
-@x libcheese-gtk.{so,a}
-          <para>contains the <application>cheese</application> API
-          functions.</para>
+@x libcheese.so
+            contains the <application>cheese</application> API functions.
 @y
-          <para>
-          <application>cheese</application> API 関数を提供します。
-          </para>
+            <application>cheese</application> API 関数を提供します。
+@z
+
+@x libcheese-gtk.so
+            contains the <application>cheese</application> GTK+ Widgets.
+@y
+            <application>cheese</application> の GTK+ ウィジェットを提供します。
 @z

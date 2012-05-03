@@ -78,22 +78,38 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk3"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk3"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/>,
-    <xref linkend="gobject-introspection"/>, and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -149,23 +165,27 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libunique-3.0.so</seg>
-        <seg>/usr/{include/unique-3.0/unique,share/gtk-doc/html/unique-3.0}</seg>
+        <seg>
+          libunique-3.0.so
+        </seg>
+        <seg>
+          /usr/include/unique-3.0 and /usr/share/gtk-doc/html/unique-3.0
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libunique-3.0.so</seg>
-        <seg>/usr/{include/unique-3.0/unique,share/gtk-doc/html/unique-3.0}</seg>
+        <seg>
+          libunique-3.0.so
+        </seg>
+        <seg>
+          /usr/include/unique-3.0, /usr/share/gtk-doc/html/unique-3.0
+        </seg>
 @z
 
 @x

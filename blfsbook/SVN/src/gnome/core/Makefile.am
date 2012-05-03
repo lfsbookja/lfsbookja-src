@@ -82,6 +82,7 @@ CHANGE_FILES = \
 	mutter.ch                   \
 	nautilus.ch                 \
 	network-manager-applet.ch   \
+	polkit-gnome.ch             \
 	pre-install-config.ch       \
 	totem-pl-parser.ch          \
 	seed.ch                     \
@@ -179,6 +180,7 @@ mousetweaks.xml:               $(BOOKdir)/$@ $(srcdir)/mousetweaks.ch
 mutter.xml:                    $(BOOKdir)/$@ $(srcdir)/mutter.ch
 nautilus.xml:                  $(BOOKdir)/$@ $(srcdir)/nautilus.ch
 network-manager-applet.xml:    $(BOOKdir)/$@ $(srcdir)/network-manager-applet.ch
+polkit-gnome.xml:              $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
 pre-install-config.xml:        $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
 seed.xml:                      $(BOOKdir)/$@ $(srcdir)/seed.ch
 sushi.xml:                     $(BOOKdir)/$@ $(srcdir)/sushi.ch
