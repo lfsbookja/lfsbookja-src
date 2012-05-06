@@ -35,7 +35,7 @@
       <surname>、Bruce Dubbs</surname>
     </author>
     <author>
-      <firstname>日本語訳： 松山道夫 (&jversion; 版)</firstname>
+      <firstname>日本語訳： 松山 道夫 (&jversion; 版)</firstname>
     </author>
   </authorgroup>
 @z

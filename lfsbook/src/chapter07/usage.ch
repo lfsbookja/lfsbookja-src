@@ -158,11 +158,13 @@
   <para>As a debugging convenience, the functions script also logs all output
   to <filename>/run/var/bootlog</filename>.  Since the <filename
   class="directory">/run</filename> directory is a tmpfs, this file is not
-  persistent across boots.</para>
+  persistent across boots, however it is appended to the more permanent file
+  <filename>/var/log/boot.log</filename> at the end of the boot process.</para>
 @y
   <para>
   デバッグがしやすいように、各ライブラリの関数スクリプトは、すべて <filename>/run/var/bootlog</filename> にログを出力するようになっています。
-  <filename class="directory">/run</filename> ディレクトリは tmpfs であることから、<filename>/run/var/bootlog</filename> ファイルはブートの前後で失われてしまう点に注意してください。
+  <filename class="directory">/run</filename> ディレクトリは tmpfs であることから、<filename>/run/var/bootlog</filename> ファイルはブート前後にて恒常的なファイルではありません。
+  ただしブート処理の最後には、恒常的なファイルである <filename>/var/log/boot.log</filename> に情報が出力されます。
   </para>
 @z
 

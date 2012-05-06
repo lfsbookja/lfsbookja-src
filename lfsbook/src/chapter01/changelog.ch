@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2012-05-05</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Various minor text changes to 
+           both book and bootscripts.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-05</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - 本ブックおよびブートスクリプトにおいて、種々の記述変更。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-01</para>
       <itemizedlist>
          <listitem>
