@@ -179,28 +179,6 @@
 @z
 
 @x
-      <command>echo 'Babl-0.1' > gegl/gegl-0.1.deps</command>: This command
-      fixes compiling <application>Gegl</application> if you have
-      <xref linkend="gobject-introspection"/> installed.
-@y
-      <command>echo 'Babl-0.1' > gegl/gegl-0.1.deps</command>: This command
-      fixes compiling <application>Gegl</application> if you have
-      <xref linkend="gobject-introspection"/> installed.
-@z
-
-@x
-      <parameter>install -v -m644 docs/*.{css,html}
-      /usr/share/gtk-doc/html/gegl</parameter>: The command '<command>make
-      install</command>' only installs <filename>operations.html</filename>,
-      omitting the stylesheet and <filename>index.html</filename>. This extra
-      command ensures all the links in the html work.
-@y
-      <parameter>install -v -m644 docs/*.{css,html}
-      /usr/share/gtk-doc/html/gegl</parameter>:
-      '<command>make install</command>' を実行しただけでは <filename>operations.html</filename> しかインストールされず、スタイルシートや <filename>index.html</filename> がインストールされません。このコマンドを追加することで HTML 内のリンクを正しく作動するようにします。
-@z
-
-@x
       <option>--without-vala</option>: Do not create a
       <application>vala</application> API - use this if
       <command>vapigen</command> breaks the build.

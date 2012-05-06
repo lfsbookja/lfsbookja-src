@@ -9,13 +9,17 @@ BOOKdir = $(top_builddir)/@bookdir@/postlfs/filesystems
 CHANGE_FILES = \
 	aboutlvm.ch    \
 	aboutraid.ch   \
+	curlftpfs.ch   \
 	ext3.ch        \
 	filesystems.ch \
+	fuse.ch        \
 	initramfs.ch   \
 	jfs.ch         \
 	lvm2.ch        \
 	mdadm.ch       \
+	ntfs-3g.ch     \
 	reiser.ch      \
+	sshfs-fuse.ch  \
 	xfs.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -33,11 +37,15 @@ ctie:
 
 aboutlvm.xml:    $(BOOKdir)/$@ $(srcdir)/aboutlvm.ch
 aboutraid.xml:   $(BOOKdir)/$@ $(srcdir)/aboutraid.ch
+curlftpfs.xml:   $(BOOKdir)/$@ $(srcdir)/curlftpfs.ch
 ext3.xml:        $(BOOKdir)/$@ $(srcdir)/ext3.ch
 filesystems.xml: $(BOOKdir)/$@ $(srcdir)/filesystems.ch
+fuse.xml:        $(BOOKdir)/$@ $(srcdir)/fuse.ch
 initramfs.xml:   $(BOOKdir)/$@ $(srcdir)/initramfs.ch
 jfs.xml:         $(BOOKdir)/$@ $(srcdir)/jfs.ch
 lvm2.xml:        $(BOOKdir)/$@ $(srcdir)/lvm2.ch
 mdadm.xml:       $(BOOKdir)/$@ $(srcdir)/mdadm.ch
+ntfs-3g.xml:     $(BOOKdir)/$@ $(srcdir)/ntfs-3g.ch
 reiser.xml:      $(BOOKdir)/$@ $(srcdir)/reiser.ch
+sshfs-fuse.xml:  $(BOOKdir)/$@ $(srcdir)/sshfs-fuse.ch
 xfs.xml:         $(BOOKdir)/$@ $(srcdir)/xfs.ch

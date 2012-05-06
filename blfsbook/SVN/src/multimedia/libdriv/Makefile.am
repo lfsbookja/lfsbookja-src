@@ -46,6 +46,7 @@ CHANGE_FILES = \
 	libmusicbrainz3.ch  \
 	libogg.ch           \
 	libquicktime.ch     \
+	libsamplerate.ch    \
 	libsndfile.ch       \
 	libtheora.ch        \
 	libvorbis.ch        \
@@ -115,6 +116,7 @@ libmusicbrainz.xml:          $(BOOKdir)/$@ $(srcdir)/libmusicbrainz.ch
 libmusicbrainz3.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz3.ch
 libogg.xml:                  $(BOOKdir)/$@ $(srcdir)/libogg.ch
 libquicktime.xml:            $(BOOKdir)/$@ $(srcdir)/libquicktime.ch
+libsamplerate.xml:           $(BOOKdir)/$@ $(srcdir)/libsamplerate.ch
 libsndfile.xml:              $(BOOKdir)/$@ $(srcdir)/libsndfile.ch
 libtheora.xml:               $(BOOKdir)/$@ $(srcdir)/libtheora.ch
 libvorbis.xml:               $(BOOKdir)/$@ $(srcdir)/libvorbis.ch

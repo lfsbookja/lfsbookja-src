@@ -81,7 +81,7 @@
     <para role="optional"><xref linkend="gtk-doc"/> and
     <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/>、
     <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイート実行時に利用)</para>
 @z

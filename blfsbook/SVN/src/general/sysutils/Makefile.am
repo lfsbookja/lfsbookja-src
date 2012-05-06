@@ -21,6 +21,7 @@ CHANGE_FILES = \
 	hdparm.ch        \
 	initdtools.ch    \
 	libarchive.ch    \
+	lm_sensors.ch    \
 	mc.ch            \
 	parted.ch        \
 	pciutils.ch      \
@@ -68,6 +69,7 @@ hal.xml:           $(BOOKdir)/$@ $(srcdir)/hal.ch
 hdparm.xml:        $(BOOKdir)/$@ $(srcdir)/hdparm.ch
 initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 libarchive.xml:    $(BOOKdir)/$@ $(srcdir)/libarchive.ch
+lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
 mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
 parted.xml:        $(BOOKdir)/$@ $(srcdir)/parted.ch
 pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch

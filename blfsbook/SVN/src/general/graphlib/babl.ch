@@ -137,18 +137,6 @@
 @z
 
 @x
-      <command>sed -i 's#DBABL_IS_BEING_COMPILED#&amp; -lgmodule-2.0#'
-      babl/Makefile.in</command>: This sed fixes compiling when both
-      <application>Glib-2.32</application> and
-      <xref linkend="gobject-introspection"/> are installed.
-@y
-      <command>sed -i 's#DBABL_IS_BEING_COMPILED#&amp; -lgmodule-2.0#'
-      babl/Makefile.in</command>: This sed fixes compiling when both
-      <application>Glib-2.32</application> and
-      <xref linkend="gobject-introspection"/> are installed.
-@z
-
-@x
       <parameter>install -v -m755 -d
       /usr/share/gtk-doc/html/babl/graphics</parameter>: This and the subsequent
       commands install the library html documentation under

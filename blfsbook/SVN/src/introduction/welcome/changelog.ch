@@ -54,6 +54,49 @@
 @z
 
 @x
+      <para>May 2nd, 2012</para>
+@y
+      <para>2012/05/02</para>
+@z
+@x
+          <para>[bdubbs] - update to git-1.7.10.1.</para>
+@y
+          <para>[bdubbs] - git-1.7.10.1 へのアップデート。</para>
+@z
+@x
+          <para>[abenton] - removed Xulrunner.</para>
+@y
+          <para>[abenton] - Xulrunner を削除。</para>
+@z
+@x
+          <para>[abenton] - removed Libproxy.</para>
+@y
+          <para>[abenton] - Libproxy を削除。</para>
+@z
+@x
+          <para>[abenton] - updated Bluefish to 2.2.2.</para>
+@y
+          <para>[abenton] - Bluefish を 2.2.2 へアップデート。</para>
+@z
+@x
+          <para>[abenton] - Added Midori 0.4.5.</para>
+@y
+          <para>[abenton] - Midori 0.4.5 追加。</para>
+@z
+@x
+          <para>[ken] - Updated to MPlayer svn_20120427.</para>
+@y
+          <para>[ken] - MPlayer svn_20120427 へのアップデート。</para>
+@z
+@x
+          <para>[ken] - Updated the postfix bootscript now that master is in
+          /usr/libexec/postfix.</para>
+@y
+          <para>[ken] - Updated the postfix bootscript now that master is in
+          /usr/libexec/postfix.</para>
+@z
+
+@x
       <para>April 12th, 2012</para>
 @y
       <para>2012/04/12</para>

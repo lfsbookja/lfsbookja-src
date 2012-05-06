@@ -147,14 +147,15 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/other
 CHANGE_FILES = \
-	balsa.ch \
-	gimp.ch \
+	balsa.ch       \
+	gimp.ch        \
+	gparted.ch     \
 	icedtea-web.ch \
-	inkscape.ch \
-	other.ch \
-	pan.ch \
-	pidgin.ch \
-	rox-filer.ch \
+	inkscape.ch    \
+	other.ch       \
+	pan.ch         \
+	pidgin.ch      \
+	rox-filer.ch   \
 	thunderbird.ch \
 	xchat.ch
 
@@ -354,6 +355,7 @@ ctie:
 
 balsa.xml:       $(BOOKdir)/$@ $(srcdir)/balsa.ch
 gimp.xml:        $(BOOKdir)/$@ $(srcdir)/gimp.ch
+gparted.xml:     $(BOOKdir)/$@ $(srcdir)/gparted.ch
 icedtea-web.xml: $(BOOKdir)/$@ $(srcdir)/icedtea-web.ch
 inkscape.xml:    $(BOOKdir)/$@ $(srcdir)/inkscape.ch
 other.xml:       $(BOOKdir)/$@ $(srcdir)/other.ch

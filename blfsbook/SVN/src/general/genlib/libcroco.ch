@@ -91,6 +91,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libcroco"/></para>
 @y
@@ -144,6 +156,12 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -181,4 +199,24 @@
           /usr/include/libcroco-0.6,
           /usr/share/gtk-doc/html/libcroco
         </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x csslint-0.6
+            is used to parse one or more CSS files specified on 
+            the command line.
+@y
+            is used to parse one or more CSS files specified on 
+            the command line.
+@z
+
+@x libcroco-0.6.so
+            contains the API functions for CSS2 parsing and manipulation.
+@y
+            contains the API functions for CSS2 parsing and manipulation.
 @z

@@ -118,8 +118,7 @@
       <xref linkend="avahi"/> (For DNS/SD Backend),
       <ulink url="http://www.bluez.org/">BlueZ</ulink>
       (For ObexFTP Backend),
-      <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>
-      (For gvfs-fuse-daemon),
+      <xref linkend="fuse"/> (For gvfs-fuse-daemon),
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
       libbluray</ulink> (For accessing BluRay disks),
@@ -137,8 +136,7 @@
       <xref linkend="avahi"/> (For DNS/SD Backend),
       <ulink url="http://www.bluez.org/">BlueZ</ulink>
       (For ObexFTP Backend),
-      <ulink url="http://fuse.sourceforge.net/">FUSE</ulink>
-      (For gvfs-fuse-daemon),
+      <xref linkend="fuse"/> (For gvfs-fuse-daemon),
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
       libbluray</ulink> (For accessing BluRay disks),
@@ -147,7 +145,7 @@
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>
       (For accessing GPhoto devices),
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>
-      (For mounting iPhone, iPad and other Apple devices),
+      (For mounting iPhone, iPad and other Apple devices) and
       <xref linkend="samba3"/> (For mounting Samba shares).
     </para>
 @z

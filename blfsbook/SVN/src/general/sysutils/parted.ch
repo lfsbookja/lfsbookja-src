@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>Parted</application> package is a disk partitioning
-    and partition resizing tool.</para>
+      The <application>Parted</application> package is a disk partitioning and
+      partition resizing tool.
 @y
-    <para>
-    <application>Parted</application> パッケージは、ディスクのパーティショニングやパーティションサイズの変更を行うツールを提供します。
-    </para>
+      <application>Parted</application> パッケージは、ディスクのパーティショニングやパーティションサイズの変更を行うツールを提供します。
 @z
 
 @x
@@ -77,24 +75,22 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
       <xref linkend="lvm2"/> (device-mapper, required if building 
-        <application>udisks</application>)
+      <application>udisks</application>)
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="lvm2"/> (device-mapper; <application>udisks</application> をビルドする際には必要)
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/parted"/></para>
+      User Notes: <ulink url="&blfs-wiki;/parted"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/parted"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/parted"/>
 @z
 
 @x
@@ -104,12 +100,10 @@
 @z
 
 @x
-    <para>Install <application>Parted</application> by running the following
-    commands:</para>
+      Install <application>Parted</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Parted</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Parted</application> をビルドします。
 @z
 
 @x
@@ -121,11 +115,9 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -135,15 +127,13 @@
 @z
 
 @x
-    <para><parameter>--enable-device-mapper=no</parameter>: This parameter
-    disables device mapper support. Remove this parameter if you have
-    <application>Device-mapper</application> installed.</para>
+      <option>--disable-device-mapper</option>: This option disables device
+      mapper support. Add this parameter if you have not installed
+      <application>LVM2</application>.
 @y
-    <para>
-    <parameter>--enable-device-mapper=no</parameter>:
-    このオプションは Device mapper サポートを無効にします。
-    <application>Device-mapper</application> を既にインストールしている場合は、本オプションを取り除いてください。
-    </para>
+      <option>--disable-device-mapper</option>:
+      このオプションは Device mapper サポートを無効にします。
+      <application>LVM2</application> をインストールしていない場合に、本オプションを指定してください。
 @z
 
 @x
@@ -163,12 +153,18 @@
 @z
 
 @x
-        <seg>parted and partprobe</seg>
-        <seg>libparted.{so,a}</seg>
+        <seg>
+          parted and
+          partprobe
+        </seg>
+        <seg>libparted.so</seg>
         <seg>/usr/include/parted</seg>
 @y
-        <seg>parted, partprobe</seg>
-        <seg>libparted.{so,a}</seg>
+        <seg>
+          parted,
+          partprobe
+        </seg>
+        <seg>libparted.so</seg>
         <seg>/usr/include/parted</seg>
 @z
 
@@ -194,10 +190,8 @@
           </para>
 @z
 
-@x libparted.{so,a}
-          <para>contains the <application>Parted</application> API functions.</para>
+@x libparted.so
+            contains the <application>Parted</application> API functions.
 @y
-          <para>
-          <application>Parted</application> API 関数を提供します。
-          </para>
+            <application>Parted</application> API 関数を提供します。
 @z

@@ -89,9 +89,14 @@
     and recompile the kernel, if necessary.  Only the RAID types desired
     are required.  </para>
 @y
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel, if necessary.  Only the RAID types desired
-    are required.  </para>
+    <!--
+    日本語訳註：
+    訳出省略： Only the RAID types desired are required.
+    -->
+    <para>
+    カーネルに対する設定として以下のオプションを有効にする必要があります。
+    必要ならカーネルを再コンパイルしてください。
+    </para>
 @z
 
 @x
@@ -176,11 +181,15 @@
 @x mdadm
           <para>manages MD devices aka Linux Software RAID.</para>
 @y
-          <para>manages MD devices aka Linux Software RAID.</para>
+          <para>
+          Linux ソフトウェア RAID として知られる MD デバイスを管理します。
+          </para>
 @z
 
 @x mdmon
           <para>monitors MD external metadata arrays.</para>
 @y
-          <para>monitors MD external metadata arrays.</para>
+          <para>
+          MD デバイスの外部メタデータ情報を監視します。
+          </para>
 @z
