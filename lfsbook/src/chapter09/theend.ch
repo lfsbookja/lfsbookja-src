@@ -43,3 +43,24 @@
   以下のコマンドによりこのファイルを生成します。
   </para>
 @z
+
+@x
+  <para>It is also a good idea to create a file to show the status of your
+  new system with resopect to the Linux Standards Base (LSB).  To create
+  this file, run:</para>
+@y
+  <para>
+  またもう一つのファイルを生成することにします。
+  これは Linux Standards Base (LSB) の観点で、あなたのシステムがどのような状況にあるかを示すものです。
+  これを作成するために以下のコマンドを実行します。
+  </para>
+@z
+
+@x
+  <para>Be sure to put some sort of customization for the field
+  'DISTRIB_CODENAME' to make the system uniquely yours.</para>
+@y
+  <para>
+  'DISTRIB_CODENAME' に対する設定は、あなたのシステムを特定できるように適切に書き換えてください。
+  </para>
+@z

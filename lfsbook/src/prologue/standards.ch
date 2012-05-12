@@ -86,13 +86,13 @@
 @x
     <para>Creating a complete LFS system capable of passing the LSB
     certifications tests is possible, but not without many additional packages
-    that are beyond the scope of LFS.  Most of these additional packages have
+    that are beyond the scope of LFS.  These additional packages have
     installation instructions in BLFS. </para> 
 @y
     <para>
     LFS の構築にあたっては LSB に適合していることを確認するテスト (certifications tests) をクリアするように構築することも可能です。
     ただし LFS の範囲外にあるパッケージ類を追加しなければ実現できません。
-    そのような追加パッケージ類については BLFS にて導入手順を説明しています。
+    そのような追加パッケージ類については、おおむね BLFS にて導入手順を説明しています。
     </para> 
 @z
 
@@ -189,14 +189,14 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>Bc, Cpio, Ed, Fcrontab, Initd-tools, PAM, 
-          Sendmail (or Postfix or Exim) </para>
+          <para>At, Batch (a part of At), Bc, Cpio, Ed, Fcrontab, Initd-tools, 
+          Lsb_release, PAM, Sendmail (or Postfix or Exim) </para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>Bc, Cpio, Ed, Fcrontab, Initd-tools, PAM, 
-          Sendmail (または Postfix または Exim) </para>
+          <para>At, Batch (At の一部), Bc, Cpio, Ed, Fcrontab, Initd-tools, 
+          Lsb_release, PAM, Sendmail (または Postfix または Exim) </para>
         </listitem>
 @z
 
@@ -255,12 +255,12 @@
 @x
         <term><emphasis>LSB Multimeda:</emphasis></term>
         <listitem>
-          <para>Alsa Libraries, NSPR, NSS, OpenSSL, Java</para>
+          <para>Alsa Libraries, NSPR, NSS, OpenSSL, Java, Xdg-utils</para>
         </listitem>
 @y
         <term><emphasis>LSB マルチメディア:</emphasis></term>
         <listitem>
-          <para>Alsa 関連ライブラリ, NSPR, NSS, OpenSSL, Java</para>
+          <para>Alsa 関連ライブラリ, NSPR, NSS, OpenSSL, Java, Xdg-utils</para>
         </listitem>
 @z
 
@@ -274,14 +274,12 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>At, Batch, Lsb_release
-          </para>
+          <para>None</para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>At, Batch, Lsb_release
-          </para>
+          <para>なし</para>
         </listitem>
 @z
 
@@ -336,11 +334,11 @@
 @x
         <term><emphasis>LSB Multimeda:</emphasis></term>
         <listitem>
-          <para>Xdg-utils</para>
+          <para>None</para>
         </listitem>
 @y
         <term><emphasis>LSB マルチメディア:</emphasis></term>
         <listitem>
-          <para>Xdg-utils</para>
+          <para>なし</para>
         </listitem>
 @z

@@ -285,16 +285,12 @@
     <para>If the output is not shown as above or there was no output at all,
     then something is wrong. Investigate and retrace the steps to find out
     where the problem is and correct it. This issue must be resolved before
-    continuing on. Something may have gone wrong with the specs file amendment
-    above. In this case, redo the specs file amendment, being careful to
-    copy-and-paste the commands.</para>
+    continuing on.</para>
 @y
     <para>
     出力結果が上とは異なったり、あるいは何も出力されなかったりした場合は、どこかに不備があります。
     どこに問題があるのか調査、再試行を行って解消してください。
     解決せずにこの先に進まないでください。
-    上で行ったスペックファイルの修正に間違いがあるのかもしれません。
-    その場合は、コマンドのコピーペーストを慎重に行ってスペックファイルの再調整を行ってください。
     </para>
 @z
 

@@ -62,26 +62,6 @@
 @z
 
 @x
-    <para>Under normal circumstances the GCC <command>fixincludes</command> script
-    is run in order to fix potentially broken header files. As GCC-&gcc-version;
-    and Glibc-&glibc-version; have already been installed at this point, and
-    their respective header files are known to not require fixing, the
-    <command>fixincludes</command> script is not required. In fact, running
-    this script may actually pollute the build environment by
-    installing fixed headers from the host system into GCC's private include
-    directory. The running of the <command>fixincludes</command> script can
-    be suppressed by issuing the following commands:</para>
-@y
-    <para>
-    通常の利用環境において GCC が提供する <command>fixincludes</command> スクリプトは、根本的に不備のあるヘッダーファイルを修正する目的で利用されます。
-    しかしこの時点で GCC-&gcc-version; と Glibc-&glibc-version; を既にインストールしており、それぞれのヘッダーファイルは修正する必要がないことが分かっています。
-    つまり <command>fixincludes</command> スクリプトを利用する必要がありません。
-    もし実行してしまうと、ホストシステムに既に存在していたヘッダーファイルが修正され、それが GCC のプライベートなディレクトリへとインストールされることになり、ビルド環境を壊してしまうことになります。
-    そこで <command>fixincludes</command> スクリプトの実行を無効とするために以下を実行します。
-    </para>
-@z
-
-@x
     <para>For x86 machines, a bootstrap build of GCC uses the
     <option>-fomit-frame-pointer</option> compiler flag.  Non-bootstrap builds
     omit this flag by default, and the goal should be to produce a compiler

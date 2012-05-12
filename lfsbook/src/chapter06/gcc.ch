@@ -53,19 +53,6 @@
 @z
 
 @x
-    <para>The <command>fixincludes</command> script is known to occasionally
-    erroneously attempt to &quot;fix&quot; the system headers installed so far.
-    As the headers up to this point are known to not require fixing,
-    issue the following command to prevent the <command>fixincludes</command>
-    script from running:</para>
-@y
-    <para>
-    <command>fixincludes</command> スクリプトは、たまにエラーを引き起こし、それまでにインストールされているシステムヘッダーファイルを修正してしまうことがあります。
-    ここまでにインストールしてきたヘッダーファイルは修正する必要がないので、以下のコマンドを実行して <command>fixincludes</command> スクリプトを実行しないようにします。
-    </para>
-@z
-
-@x
     <para>The GCC documentation recommends building GCC outside of the source
     directory in a dedicated build directory:</para>
 @y

@@ -111,6 +111,14 @@
 @z
 
 @x
+  <para>Fix a bug that causes several BLFS packages to segfault:</para>
+@y
+  <para>
+  BLFS におけるパッケージにて、セグメンテーションフォールトを引き起こすことがあるため、これを修正します。
+  </para>
+@z
+
+@x
   <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
 @y
   <para>Glibc が GCC-&gcc-version; ではビルドできなくなるバグを修正します。</para>

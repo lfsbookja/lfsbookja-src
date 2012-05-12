@@ -48,6 +48,117 @@
 @z
 
 @x
+      <para>2012-05-11</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Man-Pages-3.41. Fixes
+           <ulink url="&lfs-ticket-root;3084">#3084</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.3.5. Fixes
+           <ulink url="&lfs-ticket-root;3080">#3080</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to GMP-5.0.5. Fixes
+           <ulink url="&lfs-ticket-root;3079">#3079</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Remove sed from GCC pass 2 and chapter 6, which
+           prevented the fixincludes script from being run; it is no longer run
+           by default. Reported by Jeremy Huntwork.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-11</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Man-Pages-3.41 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3084">#3084</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-3.3.5 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3080">#3080</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - GMP-5.0.5 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3079">#3079</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - 第6章の GCC 2回めにおいて sed コマンドを除く。
+           これは fixincludes スクリプトを実行させないようにするものであったが、デフォルトで実行されないようになったため。
+           Jeremy Huntwork の報告による。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-05-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Add /etc/lsb-release file in Chapter 9.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - 第9章にて /etc/lsb-release ファイルの追加。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-05-09</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Update LSB packages in BLFS.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-09</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - BLFS における LSB パッケージの追加。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-05-06</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Zlib-1.2.7. Fixes
+           <ulink url="&lfs-ticket-root;3078">#3078</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Apply latest upstream patches for Bash.  Fixes
+           <ulink url="&lfs-ticket-root;3077">#3077</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Add back a patch for Glibc that prevents various
+           BLFS programs, such as aplay, from segfaulting.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-06</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Zlib-1.2.7 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3078">#3078</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Bash のアップストリームによる最新パッチを適用。
+           <ulink url="&lfs-ticket-root;3077">#3077</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Glibc にパッチを再度適用。
+           BLFS における種々のパッケージ、例えば aplay などにおいて、セグメンテーションフォールトを発生させないようにする。
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-05</para>
       <itemizedlist>
          <listitem>
