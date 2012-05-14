@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2012-05-13</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Coreutils-8.17.  Fixes
+           <ulink url="&lfs-ticket-root;3083">#3083</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-13</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Coreutils-8.17 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3083">#3083</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-11</para>
       <itemizedlist>
          <listitem>
