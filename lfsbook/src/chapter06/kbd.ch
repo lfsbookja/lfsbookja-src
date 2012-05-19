@@ -67,6 +67,20 @@
 @z
 
 @x
+    <para>Remove the redundant <command>resizecons</command> program (32-bit x86
+    only, needs the defunct svgalib, which predates linux-2.6 and is incompatible
+    with modern KMS, to provide the video mode files - for normal use
+    <command>setfont</command> sizes the console appropriately) and its manpage:</para>
+@y
+    <para>
+    無用なプログラム <command>resizecons</command> とその man ページを削除します。
+    (これは 32 ビット x86 においてのみのプログラムで、ビデオモードファイルを提供するために古い svgalib を利用しています。
+     linux-2.6 以前より作られたことから最近の KMS との互換性がありません。
+     通常は <command>setfont</command> がコンソールサイズを適切に取り扱います。)
+    </para>
+@z
+
+@x
     <para>Prepare Kbd for compilation:</para>
 @y
     <para>&PreparePackage1;Kbd&PreparePackage2;</para>
@@ -157,15 +171,15 @@
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbd_mode,
         kbdrate, loadkeys, loadunimap,
         mapscrn, openvt, psfaddtable (link to psfxtable), psfgettable (link to
-        psfxtable), psfstriptable (link to psfxtable), psfxtable, resizecons,
+        psfxtable), psfstriptable (link to psfxtable), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, and unicode_stop</seg>
         <seg>/lib/kbd</seg>
 @y
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbd_mode,
         kbdrate, loadkeys, loadunimap,
-        mapscrn, openvt, psfaddtable (psfxtable へのリンク), psfgettable
-        (psfxtable へのリンク), psfstriptable (psfxtable へのリンク), psfxtable, resizecons,
+        mapscrn, openvt, psfaddtable (psfxtable へのリンク), psfgettable (psfxtable へのリンク),
+        psfstriptable (psfxtable へのリンク), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, unicode_stop</seg>
         <seg>/lib/kbd</seg>

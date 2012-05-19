@@ -48,6 +48,44 @@
 @z
 
 @x
+      <para>2012-05-18</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - Remove the redundant program resizecons from kbd and
+           remove its man page (program was only installed on i?86, but man page
+           was always installed).</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-18</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - kbd において無用なプログラム resizecons とその man ページを削除。
+           (このプログラムは i?86 においてのみインストールされるが、man ページは常にインストールされる。)
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-05-14</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.3.6.  Fixes
+           <ulink url="&lfs-ticket-root;3089">#3089</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-14</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Linux-3.3.6 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3089">#3089</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-13</para>
       <itemizedlist>
          <listitem>
