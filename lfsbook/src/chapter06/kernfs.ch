@@ -113,3 +113,17 @@
 @y
       <para>残りの仮想カーネルファイルシステムを以下のようにしてマウントします。</para>
 @z
+
+@x
+      <para>In some host systems, <filename>/dev/shm</filename> is a 
+      symbolic link to <filename class="directory">/run/shm</filename>.
+      Inside a chroot envirnment, this symbolic link needs to be
+      changed to a normal directory before mounting as a temporary
+      file system:</para>
+@y
+      <para>
+      ホストシステムによっては <filename>/dev/shm</filename> が <filename
+      class="directory">/run/shm</filename> へのシンボリックリンクになっているものがあります。
+      chroot 環境内では、一時的なファイルシステムとしてマウントする際には、このシンボリックリンクを通常のディレクトリとして変更しておく必要があります。
+      </para>
+@z

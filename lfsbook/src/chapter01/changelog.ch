@@ -48,6 +48,42 @@
 @z
 
 @x
+      <para>2012-05-20</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Remove a bashism from the mountkernfs boot script.
+           </para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Move the $time init capability from setclock
+           to udev. Fixes 
+           <ulink url="&lfs-ticket-root;3085">#3085</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Remove and recreate $LFS/dev/shm in Section 6.2
+           if it is a symbolic link. Fixes 
+           <ulink url="&lfs-ticket-root;3085">#3085</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-20</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - mountkernfs ブートスクリプトにて bash 的な記述を削除。
+           </para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - udev に対する setclock にて $time の初期化を移動。
+           <ulink url="&lfs-ticket-root;3085">#3085</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - 6.2節にて $LFS/dev/shm がシンボリックリンクである場合は、いったん削除し再生成することに。
+           <ulink url="&lfs-ticket-root;3085">#3085</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-18</para>
       <itemizedlist>
          <listitem>
