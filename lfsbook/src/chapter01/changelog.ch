@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2012-05-24</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Minor tweaks to mountkernfs boot script.
+           Also fixes <ulink url="&lfs-ticket-root;3093">#3093</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-24</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - ブートスクリプト mountkernfs を微調整。
+           また <ulink url="&lfs-ticket-root;3093">#3093</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-20</para>
       <itemizedlist>
          <listitem>
