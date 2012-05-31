@@ -48,6 +48,73 @@
 @z
 
 @x
+      <para>2012-05-30</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Copy all entries in /lib/udev/devices to 
+           /dev in mountvirtfs. Fixes 
+           <ulink url="&lfs-ticket-root;3102">#3102</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Correct the location of various package's man
+           pages. Fixes <ulink url="&lfs-ticket-root;3097">#3097</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Util-Linux-2.21.2. Fixes
+           <ulink url="&lfs-ticket-root;3100">#3100</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Perl-5.16.0.  Fixes
+           <ulink url="&lfs-ticket-root;3094">#3094</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to IPRoute2-3.4.0.  Fixes
+           <ulink url="&lfs-ticket-root;3096">#3096</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.4.  Fixes
+           <ulink url="&lfs-ticket-root;3092">#3092</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to E2fsprogs-1.42.3. Fixes
+           <ulink url="&lfs-ticket-root;3091">#3091</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-05-30</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - /lib/udev/devices 内にあるすべてのエントリを mountvirtfs 内の /dev にコピー。 
+           <ulink url="&lfs-ticket-root;3102">#3102</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - いくつかのパッケージにて、man ページのインストール先を適切に修正。
+           <ulink url="&lfs-ticket-root;3097">#3097</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Util-Linux-2.21.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3100">#3100</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Perl-5.16.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3094">#3094</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - IPRoute2-3.4.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3096">#3096</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-3.4 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3092">#3092</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - E2fsprogs-1.42.3 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3091">#3091</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-24</para>
       <itemizedlist>
          <listitem>

@@ -43,17 +43,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix an issue when running various programs from this
-    package when they are used when the <command>nscd</command> daemon is not
-    running:</para>
-@y
-    <para>
-    以下のパッチを適用します。
-    本パッケージ内にて<command>nscd</command> デーモンを利用しているさまざまなプログラムを、そのデーモンが動いていないときに発生する問題を解消するものです。
-    </para>
-@z
-
-@x
     <para>Disable the installation of the <command>groups</command> program
     and its man pages, as Coreutils provides a better version:</para>
 @y

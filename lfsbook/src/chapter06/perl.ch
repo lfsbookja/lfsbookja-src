@@ -40,14 +40,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix a security vulnerability in Perl:</para>
-@y
-    <para>
-    Perl におけるセキュリティ脆弱性を解消するためにパッチを適用します。
-    </para>
-@z
-
-@x
     <para>This version of Perl now builds the Compress::Raw::Zlib module. By
     default Perl will use an internal copy of the Zlib source for the build.
     Issue the following command so that Perl will use the Zlib library

@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>Apply a patch to fix an incomatibility between Automake-&automake-version; and Perl-&perl-version;:</para>
+@y
+    <para>
+    Automake-&automake-version; と Perl-&perl-version; の間での非互換性を修正するために以下のパッチを適用します。
+    </para>
+@z
+
+@x
     <para>Prepare Automake for compilation:</para>
 @y
     <para>&PreparePackage1;Automake&PreparePackage2;</para>

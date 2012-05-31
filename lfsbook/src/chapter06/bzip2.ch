@@ -48,6 +48,12 @@
 @z
 
 @x
+    <para>Ensure the man pages are installed into the correct location:</para>
+@y
+    <para>man ページのインストール先を正しいディレクトリに修正します。</para>
+@z
+
+@x
     <para>Prepare Bzip2 for compilation with:</para>
 @y
     <para>&PreparePackage1;Bzip2&PreparePackage2;</para>

@@ -42,6 +42,20 @@
 @z
 
 @x
+      <term>Automake Perl-&perl-version; Patch - <token>&automake-perl_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&automake-perl_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&automake-perl_fix-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Automake Perl-&perl-version; Patch - <token>&automake-perl_fix-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&automake-perl_fix-patch;"/></para>
+        <para>MD5 sum: <literal>&automake-perl_fix-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
@@ -108,6 +122,20 @@
       <listitem>
         <para>&Download;: <ulink url="&patches-root;&flex-gcc-patch;"/></para>
         <para>MD5 sum: <literal>&flex-gcc-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
+      <term>Glibc Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Glibc Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
       </listitem>
 @z
 
@@ -212,20 +240,6 @@
 @z
 
 @x
-      <term>Perl Security Patch - <token>&perl-security-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&perl-security-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-security-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Perl Security Patch - <token>&perl-security-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&perl-security-patch;"/></para>
-        <para>MD5 sum: <literal>&perl-security-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Procps HZ Errors Patch - <token>&procps-hz_fixes-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&procps-hz_fixes-patch;"/></para>
@@ -264,20 +278,6 @@
       <listitem>
         <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Shadow nscd Patch - <token>&shadow-nscd-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&shadow-nscd-patch;"/></para>
-        <para>MD5 sum: <literal>&shadow-nscd-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Shadow nscd Patch - <token>&shadow-nscd-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&shadow-nscd-patch;"/></para>
-        <para>MD5 sum: <literal>&shadow-nscd-patch-md5;</literal></para>
       </listitem>
 @z
 
