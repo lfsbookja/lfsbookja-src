@@ -117,7 +117,7 @@
 @x
       <para>In some host systems, <filename>/dev/shm</filename> is a 
       symbolic link to <filename class="directory">/run/shm</filename>.
-      Inside a chroot envirnment, this symbolic link needs to be
+      Inside a chroot environment, this symbolic link needs to be
       changed to a normal directory before mounting as a temporary
       file system:</para>
 @y

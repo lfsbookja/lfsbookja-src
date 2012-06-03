@@ -351,7 +351,7 @@
 @z
 
 @x
-    <para>The <envar>PREFIX</envar> variable containis the number of
+    <para>The <envar>PREFIX</envar> variable contains the number of
     bits used in the subnet. Each octet in an IP address is 8 bits. If the
     subnet's netmask is 255.255.255.0, then it is using the first three octets
     (24 bits) to specify the network number. If the netmask is 255.255.255.240,
