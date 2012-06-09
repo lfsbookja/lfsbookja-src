@@ -42,20 +42,6 @@
 @z
 
 @x
-      <term>Automake Perl-&perl-version; Patch - <token>&automake-perl_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&automake-perl_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&automake-perl_fix-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Automake Perl-&perl-version; Patch - <token>&automake-perl_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&automake-perl_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&automake-perl_fix-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>

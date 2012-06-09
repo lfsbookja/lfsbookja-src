@@ -57,7 +57,9 @@ CHANGE_FILES = \
 	ncurses.ch           \
 	patch.ch             \
 	perl.ch              \
+	pkgconfig.ch         \
 	pkgmgt.ch            \
+	popt.ch              \
 	procps.ch            \
 	psmisc.ch            \
 	readline.ch          \
@@ -138,7 +140,9 @@ mpfr.xml:              $(BOOKdir)/$@ $(srcdir)/mpfr.ch
 ncurses.xml:           $(BOOKdir)/$@ $(srcdir)/ncurses.ch
 patch.xml:             $(BOOKdir)/$@ $(srcdir)/patch.ch
 perl.xml:              $(BOOKdir)/$@ $(srcdir)/perl.ch
+pkgconfig.xml:         $(BOOKdir)/$@ $(srcdir)/pkgconfig.ch
 pkgmgt.xml:            $(BOOKdir)/$@ $(srcdir)/pkgmgt.ch
+popt.xml:              $(BOOKdir)/$@ $(srcdir)/popt.ch
 procps.xml:            $(BOOKdir)/$@ $(srcdir)/procps.ch
 psmisc.xml:            $(BOOKdir)/$@ $(srcdir)/psmisc.ch
 readline.xml:          $(BOOKdir)/$@ $(srcdir)/readline.ch

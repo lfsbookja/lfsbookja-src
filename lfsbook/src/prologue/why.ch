@@ -500,6 +500,24 @@
         </para>
 @z
 
+@x Pkg-config
+        <para>This package provides a program to return meta-data about an 
+        installed library or package.</para>
+@y
+        <para>
+        このパッケージは、既にインストールされたライブラリやパッケージのメタデータを取得するプログラムを提供します。
+        </para>
+@z
+
+@x Popt
+        <para>This package is a library used by some programs to parse
+        command line inputs.</para>
+@y
+        <para>
+        このパッケージは、コマンドライン入力を処理するプログラムがライブラリを利用しています。
+        </para>
+@z
+
 @x Procps
         <para>This package contains programs for monitoring processes. These
         programs are useful for system administration, and are also used by

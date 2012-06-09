@@ -48,6 +48,157 @@
 @z
 
 @x
+      <para>2012-06-07</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Remove --disable-perl-regexp switch from chapter
+           5's Grep instruction.  It should be unnecessary now as there should
+           be no way for the host's libraries to leak through to the chapter 5
+           toolchain. Thanks to Jeremy Huntwork for the report.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-07</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - 第5章の Grep の手順にて --disable-perl-regexp スイッチを削除。
+           これは今や不要。なぜなら第5章のツールチェーンに対して、ホストのライブラリを利用する手立てがないため。
+           報告をあげてくれた Jeremy Huntwork に感謝。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-06-06</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Bison-2.5.1.  Fixes
+           <ulink url="&lfs-ticket-root;3112">#3112</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-06</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Bison-2.5.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3112">#3112</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-06-05</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Remove a couple of sed commands from Binutils'
+           instructions, as the tests have been fixed upstream. Thanks to Waleed
+           Hamra for the report.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.4.1.  Fixes
+           <ulink url="&lfs-ticket-root;3110">#3110</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[ken] - Really remove the redundant program resizecons from kbd,
+           by changing configure.ac instead of configure.  Thanks to xinglp.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-05</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Binutils の手順にて sed コマンドをいくつか削除。
+           アップストリームによってテストスイートのバグがフィックスされたため。
+           報告をあげてくれた Waleed Hamra に感謝。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-3.4.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3110">#3110</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[ken] - kbd から不要なプログラム resizecons を削除。
+           configure でなく configure.ac を修正することで対処。
+           xinglp に感謝。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-06-04</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Incorporate perl fixes from 2012-06-03
+           in the perl patch.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Psmisc-22.17. Fixes
+           <ulink url="&lfs-ticket-root;3109">#3109</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Automake-1.12.1. Fixes
+           <ulink url="&lfs-ticket-root;3106">#3106</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Apply latest upstream patches for Bash.  Fixes
+           <ulink url="&lfs-ticket-root;3103">#3103</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-04</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - 2012/06/03 以降の Perl のパッチを集約。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Psmisc-22.17 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3109">#3109</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Automake-1.12.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3106">#3106</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Bash にてアップストリームによる最新のパッチを採用。
+           <ulink url="&lfs-ticket-root;3103">#3103</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-06-03</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Add pkg-config-0.26-internal-glib to the 
+           book. Fixes 
+           <ulink url="&lfs-ticket-root;3105">#3105</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Add popt-1.16 to the book.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Update Chapter 5 perl instructions
+           for the LFS environment.  Fixes
+           <ulink url="&lfs-ticket-root;3104">#3104</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-03</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - pkg-config-0.26-internal-glib を追加。
+           <ulink url="&lfs-ticket-root;3105">#3105</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - popt-1.16 追加。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - 第5章における Perl の手順を LFS 環境向けに更新。
+           <ulink url="&lfs-ticket-root;3104">#3104</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-05-30</para>
       <itemizedlist>
          <listitem>

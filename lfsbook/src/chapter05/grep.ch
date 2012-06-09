@@ -38,24 +38,6 @@
 @z
 
 @x
-      <title>The meaning of the configure switches:</title>
-@y
-      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
-@z
-
-@x
-          <para>This ensures that the <command>grep</command> program does
-          not get linked against a Perl Compatible Regular Expression (PCRE)
-          library that may be present on the host but will not be available
-          once we enter the <command>chroot</command> environment.</para>
-@y
-          <para>
-          このオプションは <command>grep</command> プログラムに対して Perl 互換正規表現 (Perl Compatible Regular Expression; PCRE) ライブラリをリンクしないように指示します。
-          このライブラリはホストシステムに存在するかもしれませんが <command>chroot</command> 環境に入ってしまうと利用できなくなります。
-          </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix an incomatibility between Automake-&automake-version; and Perl-&perl-version;:</para>
-@y
-    <para>
-    Automake-&automake-version; と Perl-&perl-version; の間での非互換性を修正するために以下のパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Automake for compilation:</para>
 @y
     <para>&PreparePackage1;Automake&PreparePackage2;</para>
@@ -46,14 +38,6 @@
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>Fix a couple of minor bugs in the test suite:</para>
-@y
-    <para>
-    テストスイートにおけるバグを修正します。
-    </para>
 @z
 
 @x

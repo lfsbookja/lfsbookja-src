@@ -70,13 +70,31 @@
     <para>Remove the redundant <command>resizecons</command> program (32-bit x86
     only, needs the defunct svgalib, which predates linux-2.6 and is incompatible
     with modern KMS, to provide the video mode files - for normal use
-    <command>setfont</command> sizes the console appropriately) and its manpage:</para>
+    <command>setfont</command> sizes the console appropriately) and its manpage.</para>
 @y
     <para>
     無用なプログラム <command>resizecons</command> とその man ページを削除します。
     (これは 32 ビット x86 においてのみのプログラムで、ビデオモードファイルを提供するために古い svgalib を利用しています。
      linux-2.6 以前より作られたことから最近の KMS との互換性がありません。
      通常は <command>setfont</command> がコンソールサイズを適切に取り扱います。)
+    </para>
+@z
+
+@x
+    <para>Because we change <filename>Makefile.in</filename>, with modern autotools
+    various commands will be rerun by <command>make</command> after
+    <command>configure</command> has run.  In this case, <filename>configure</filename>
+    will be regenerated, so we need to change <filename>configure.ac</filename>.
+    Running <command>autoreconf</command> ensures this all happens before
+    <command>configure</command> is run, instead of during <command>make</command>.
+    </para>
+@y
+    <para>
+    ここでは <filename>Makefile.in</filename> を変更します。
+    最近の autotools は、<command>configure</command> の後に <command>make</command> を実行すると数々のコマンドが再実行されます。
+    ここでは <filename>configure</filename> が再生成されますが、それなら <filename>configure.ac</filename> も修正しておく必要があります。
+    こんな時には <command>autoreconf</command> を実行することが有用です。
+    これを実行すれば <command>configure</command> の実行よりも前にすべてを為すことができ、<command>make</command> の際に再生成されることはなくなります。
     </para>
 @z
 

@@ -68,12 +68,6 @@
 @z
 
 @x
-    <para>Fix a couple of the tests, which fail when using GCC-&gcc-version;</para>
-@y
-    <para>いくつかのテストに対して調整を行います。GCC-&gcc-version; で実行するとこれらが失敗するためです。</para>
-@z
-
-@x
     <para>Apply a patch to prevent a build failure when using compiler optimizations:</para>
 @y
     <para>コンパイラーの最適化を行った場合にビルドに失敗するため、これを修正するパッチを適用します。</para>
