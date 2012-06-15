@@ -48,6 +48,26 @@
 @z
 
 @x
+      <para>2012-06-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - kbd-1.15.3 : go back to changing configure, and touch
+           aclocal.m4 : thanks to Bryan for explaining the problem.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[ken] - kbd-1.15.3 : configure を古いものに変更。
+           aclocal.m4 を touch 処理する。
+           問題点を説明してくれた Bryan に感謝。
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-06-07</para>
       <itemizedlist>
          <listitem>

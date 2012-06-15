@@ -81,20 +81,17 @@
 @z
 
 @x
-    <para>Because we change <filename>Makefile.in</filename>, with modern autotools
-    various commands will be rerun by <command>make</command> after
-    <command>configure</command> has run.  In this case, <filename>configure</filename>
-    will be regenerated, so we need to change <filename>configure.ac</filename>.
-    Running <command>autoreconf</command> ensures this all happens before
-    <command>configure</command> is run, instead of during <command>make</command>.
-    </para>
+    <para>The shipped version of <filename>configure.ac</filename> is newer than
+    <filename>aclocal.m4</filename>, so autotools will be run by <command>make</command>
+    which will overwrite the change to <filename>configure</filename>. Alter the date
+    and time of <filename>configure.ac</filename> - this uses the system timezone, so we
+    pick a time that is sufficiently old in all timezones.</para>
 @y
     <para>
-    ここでは <filename>Makefile.in</filename> を変更します。
-    最近の autotools は、<command>configure</command> の後に <command>make</command> を実行すると数々のコマンドが再実行されます。
-    ここでは <filename>configure</filename> が再生成されますが、それなら <filename>configure.ac</filename> も修正しておく必要があります。
-    こんな時には <command>autoreconf</command> を実行することが有用です。
-    これを実行すれば <command>configure</command> の実行よりも前にすべてを為すことができ、<command>make</command> の際に再生成されることはなくなります。
+    提供されている <filename>configure.ac</filename> は <filename>aclocal.m4</filename> よりもタイムスタンプが新しいものになっています。
+    したがって <command>make</command> によって autotools が実行されると <filename>configure</filename> を更新されてしまうことになります。
+    そこで <filename>configure.ac</filename> の日付と時刻を変更します。
+    ここではシステム日付を用いるものであり、あらゆるタイムゾーンにとって十分に古い日付を採用できます。
     </para>
 @z
 
