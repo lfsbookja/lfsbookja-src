@@ -41,15 +41,19 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <note><para>The tests take a very long time: over 30 SBUs.  Running
+    the tests is not recommended.</para></note>
 @y
-    <para>ビルド結果をテストするには、以下を実行します。</para>
+    <note><para>
+    テスト処理には 30 SBU 以上の時間を要します。
+    テストを実施することは、あまりお勧めしません。
+    </para></note>
 @z
 
 @x
-    <para>This takes a long time, about 10 SBUs.</para>
+    <para>To test the results, issue:</para>
 @y
-    <para>このテストには 10 SBU ほど要します。</para>
+    <para>ビルド結果をテストするには、以下を実行します。</para>
 @z
 
 @x

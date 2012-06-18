@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2012-06-17</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Fix install error in iproute2.  Fixes
+           <ulink url="&lfs-ticket-root;3119">#3119</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Update rare issues in bootscripts when using LVM
+           or initramfs.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Add note about automake run time for tests. 
+           Fixes <ulink url="&lfs-ticket-root;3118">#3118</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-17</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - iproute2 におけるインストールエラーを修正。
+           <ulink url="&lfs-ticket-root;3119">#3119</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - LVM や initramfs の利用時に bootscripts にてまれに発生する問題を修正。
+           </para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - automake にてテストの実行時間に関する説明を追加。
+           <ulink url="&lfs-ticket-root;3118">#3118</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-06-10</para>
       <itemizedlist>
          <listitem>
