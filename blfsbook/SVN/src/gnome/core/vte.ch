@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>VTE</application> package contains a termcap
-    file implementation for terminal emulators.</para>
+      The <application>VTE</application> package contains a termcap
+      file implementation for terminal emulators.
 @y
-    <!--
-    日本語訳註： 意味不明
-    -->
-    <para>
-    <application>VTE</application> パッケージは、端末エミュレーターに対しての termcap ファイル実装を提供します。
-    </para>
+      <!--
+      日本語訳註： 意味不明
+      -->
+      <application>VTE</application> パッケージは、端末エミュレーターに対しての termcap ファイル実装を提供します。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&vte-download-http;"/></para>
+          Download (HTTP): <ulink url="&vte-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&vte-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&vte-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&vte-download-ftp;"/></para>
+          Download (FTP): <ulink url="&vte-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&vte-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&vte-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &vte-md5sum;</para>
+          Download MD5 sum: &vte-md5sum;
 @y
-        <para>&Download; MD5 sum: &vte-md5sum;</para>
+          &Download; MD5 sum: &vte-md5sum;
 @z
 
 @x
-        <para>Download size: &vte-size;</para>
+          Download size: &vte-size;
 @y
-        <para>&DownloadSize;: &vte-size;</para>
+          &DownloadSize;: &vte-size;
 @z
 
 @x
-        <para>Estimated disk space required: &vte-buildsize;</para>
+          Estimated disk space required: &vte-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &vte-buildsize;</para>
+          &Estimateddiskspacerequired;: &vte-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &vte-time;</para>
+          Estimated build time: &vte-time;
 @y
-        <para>&Estimatedbuildtime;: &vte-time;</para>
+          &Estimatedbuildtime;: &vte-time;
 @z
 
 @x
@@ -119,10 +117,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/vte"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/vte"/></para>
 @z
 
 @x
@@ -132,26 +128,22 @@
 @z
 
 @x
-    <para>Install <application>VTE</application> by running the following
-    commands:</para>
+      Install <application>VTE</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>VTE</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>VTE</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -161,32 +153,37 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/vte</parameter>: This parameter
-    causes <command>gnome-pty-helper</command> to be installed in the preferred location of
-    <filename class="directory">/usr/lib/vte</filename>
-    instead of <filename class="directory">/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/vte</parameter>: This parameter
+      causes <command>gnome-pty-helper</command> to be installed in the preferred
+      location of  <filename class="directory">/usr/lib/vte</filename>
+      instead of <filename class="directory">/usr/libexec</filename>.
 @y
-    <para><parameter>--libexecdir=/usr/lib/vte</parameter>:
-    このパラメーターは <command>gnome-pty-helper</command> のインストール先を <filename
-    class="directory">/usr/libexec</filename> ではなく、より適切な <filename
-    class="directory">/usr/lib/vte</filename> とします。
-    </para>
+      <parameter>--libexecdir=/usr/lib/vte</parameter>:
+      このパラメーターは <command>gnome-pty-helper</command> のインストール先を <filename
+      class="directory">/usr/libexec</filename> ではなく、より適切な <filename
+      class="directory">/usr/lib/vte</filename> とします。
 @z
 
 @x
-    <para><option>--with-glX</option>: This
-    parameter can be passed to the <command>configure</command> script
-    to enable additional drawing methods in the
-    <application>VTE</application> library.</para>
+      <option>--with-glX</option>: This parameter can be passed to
+      the <command>configure</command> script to enable additional
+      drawing methods in the <application>VTE</application> library.
 @y
-    <para>
-    <option>--with-glX</option>:
-    
-    This
-    parameter can be passed to the <command>configure</command> script
-    to enable additional drawing methods in the
-    <application>VTE</application> library.
-    </para>
+      <option>--with-glX</option>: This parameter can be passed to
+      the <command>configure</command> script to enable additional
+      drawing methods in the <application>VTE</application> library.
+@z
+
+@x
+      <option>--enable-introspection</option>: This option enables
+      <application>GObject Introspection</application> bindings.
+      Remove if you don't have <xref linkend="gobject-introspection"/>
+      installed.
+@y
+      <option>--enable-introspection</option>: This option enables
+      <application>GObject Introspection</application> bindings.
+      Remove if you don't have <xref linkend="gobject-introspection"/>
+      installed.
 @z
 
 @x
@@ -213,7 +210,8 @@
           libvte2_90.so
         </seg>
         <seg>
-          /usr/include/vte-2.90, /usr/lib/vte and
+          /usr/include/vte-2.90,
+          /usr/lib/vte and
           /usr/share/gtk-doc/html/vte-2.90
         </seg>
 @y
@@ -224,7 +222,8 @@
           libvte2_90.so
         </seg>
         <seg>
-          /usr/include/vte-2.90, /usr/lib/vte,
+          /usr/include/vte-2.90,
+          /usr/lib/vte,
           /usr/share/gtk-doc/html/vte-2.90
         </seg>
 @z
@@ -236,18 +235,16 @@
 @z
 
 @x vte2_90
-          <para>is a test application for the <application>VTE</application>
-          libraries.</para>
+            is a test application for the <application>VTE</application>
+            libraries.
 @y
-          <para>
-          <application>VTE</application> ライブラリに対するテストアプリケーション。
-          </para>
+            <application>VTE</application> ライブラリに対するテストアプリケーション。
 @z
 
 @x libvte2_90.so
-          <para>is a library which implements a terminal emulator
-          widget for <application>GTK+-3</application>.</para>
+            is a library which implements a terminal emulator
+            widget for <application>GTK+-3</application>.
 @y
-          <para>is a library which implements a terminal emulator
-          widget for <application>GTK+-3</application>.</para>
+            is a library which implements a terminal emulator
+            widget for <application>GTK+-3</application>.
 @z

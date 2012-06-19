@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>librsvg</application> package contains
-    <filename class="libraryfile">librsvg</filename> libraries and tools used to
-    manipulate, convert and view Scalable Vector Graphic (SVG) images.</para>
+      The <application>librsvg</application> package contains
+      <filename class="libraryfile">librsvg</filename> libraries and tools used
+      to manipulate, convert and view Scalable Vector Graphic (SVG) images.
 @y
-    <para>
-    <application>librsvg</application> パッケージは <filename
-    class="libraryfile">librsvg</filename> ライブラリと関連ツールを提供します。
-    これらは、グラフィックイメージフォーマット SVG (Scalable Vector Graphic) を取り扱い、フォーマット変換や表示を行います。
-    </para>
+      <application>librsvg</application> パッケージは <filename
+      class="libraryfile">librsvg</filename> ライブラリと関連ツールを提供します。
+      これらは、グラフィックイメージフォーマット SVG (Scalable Vector Graphic) を取り扱い、フォーマット変換や表示を行います。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&librsvg-download-http;"/></para>
+          Download (HTTP): <ulink url="&librsvg-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&librsvg-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&librsvg-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&librsvg-download-ftp;"/></para>
+          Download (FTP): <ulink url="&librsvg-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&librsvg-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&librsvg-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &librsvg-md5sum;</para>
+          Download MD5 sum: &librsvg-md5sum;
 @y
-        <para>&Download; MD5 sum: &librsvg-md5sum;</para>
+          &Download; MD5 sum: &librsvg-md5sum;
 @z
 
 @x
-        <para>Download size: &librsvg-size;</para>
+          Download size: &librsvg-size;
 @y
-        <para>&DownloadSize;: &librsvg-size;</para>
+          &DownloadSize;: &librsvg-size;
 @z
 
 @x
-        <para>Estimated disk space required: &librsvg-buildsize;</para>
+          Estimated disk space required: &librsvg-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &librsvg-buildsize;</para>
+          &Estimateddiskspacerequired;: &librsvg-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &librsvg-time;</para>
+          Estimated build time: &librsvg-time;
 @y
-        <para>&Estimatedbuildtime;: &librsvg-time;</para>
+          &Estimatedbuildtime;: &librsvg-time;
 @z
 
 @x
@@ -82,14 +80,30 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
-      <xref linkend="libcroco"/>
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="libcroco"/> and
+      <xref linkend="pango"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="libcroco"/>
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="libcroco"/>,
+      <xref linkend="pango"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gtk2"/> and
+      <xref linkend="gtk3"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -108,25 +122,21 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>,
-      <xref linkend="gtk2"/> and
+      <xref linkend="docbook-utils"/> and
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
-      <xref linkend="gtk2"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/librsvg"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/librsvg"/></para>
 @z
 
 @x
@@ -136,34 +146,48 @@
 @z
 
 @x
-    <para>Install <application>librsvg</application> by running the following
-    commands:</para>
+      Install <application>librsvg</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>librsvg</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>librsvg</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>sed -i '/_gir_CFLAGS/s#$# -I/usr/include/cairo#'
+      Makefile.in</command>: This sed fixes a problem compiling if you have
+      Gobject-Introspection installed. It has no effect if you've not installed
+      Gobject-Introspection.
+@y
+      <command>sed -i '/_gir_CFLAGS/s#$# -I/usr/include/cairo#'
+      Makefile.in</command>: This sed fixes a problem compiling if you have
+      Gobject-Introspection installed. It has no effect if you've not installed
+      Gobject-Introspection.
+@z
+
+@x
+      <option>--disable-gtk-theme</option>: Add this option if you have not
+      installed GTK+ 2.
+@y
+      <option>--disable-gtk-theme</option>: Add this option if you have not
+      installed GTK+ 2.
 @z
 
 @x
@@ -187,20 +211,22 @@
           rsvg-convert and rsvg-view-3
         </seg>
         <seg>
-          libsvg.so
+          librsvg-2.so and libpixbufloader-svg.so
         </seg>
         <seg>
-          /usr/include/librsvg-2 and /usr/share/gtk-doc/html/rsvg
+          /usr/include/librsvg-2 and
+          /usr/share/gtk-doc/html/rsvg
         </seg>
 @y
         <seg>
           rsvg-convert, rsvg-view-3
         </seg>
         <seg>
-          libsvg.so
+          librsvg-2.so, libpixbufloader-svg.so
         </seg>
         <seg>
-          /usr/include/librsvg-2, /usr/share/gtk-doc/html/rsvg
+          /usr/include/librsvg-2,
+          /usr/share/gtk-doc/html/rsvg
         </seg>
 @z
 
@@ -211,30 +237,29 @@
 @z
 
 @x rsvg-convert
-          <para>is used to covert SVG images into PNG, JPEG and
-          ICO raster images.</para>
+            is used to covert SVG images into PNG, JPEG and ICO raster images.
 @y
-          <para>
-          is used to covert SVG images into PNG, JPEG and
-          ICO raster images.
-          </para>
+            is used to covert SVG images into PNG, JPEG and ICO raster images.
 @z
 
-@x rsvg-view
-          <para>is used to view an SVG file in an <application>X</application>
-          window.</para>
+@x rsvg-view-3
+            is a simple GTK+ 3 application that can be used to view an SVG file.
 @y
-          <para>
-          is used to view an SVG file in an <application>X</application>
-          window.
-          </para>
+            is a simple GTK+ 3 application that can be used to view an SVG file.
 @z
 
-@x librsvg-2.{so,a}
-          <para>provide the functions to render Scalable Vector Graphics.</para>
+@x librsvg-2.so
+            provides the functions to render Scalable Vector Graphics.
 @y
-          <para>
-          Scalable Vector Graphics を描画するための関数を提供します。
-          </para>
+            Scalable Vector Graphics を描画するための関数を提供します。
 @z
 
+@x libpixbufloader-svg.so
+            is the <application>Gdk Pixbuf</application> plugin that allows
+            <application>GTK+</application> applications to render Scalable 
+            Vector Graphics images.
+@y
+            is the <application>Gdk Pixbuf</application> plugin that allows
+            <application>GTK+</application> applications to render Scalable 
+            Vector Graphics images.
+@z

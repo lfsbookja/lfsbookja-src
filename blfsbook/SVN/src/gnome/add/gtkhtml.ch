@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>GtkHTML</application> package contains a
-    lightweight HTML rendering/printing/editing engine.</para>
+      The <application>GtkHTML</application> package contains a
+      lightweight HTML rendering/printing/editing engine.
 @y
-    <para>
-    <application>GtkHTML</application> パッケージは、軽量な HTML レンダリング/印刷/編集エンジンを提供します。
-    </para>
+      <application>GtkHTML</application> パッケージは、軽量な HTML レンダリング/印刷/編集エンジンを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gtkhtml-download-http;"/></para>
+          Download (HTTP): <ulink url="&gtkhtml-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gtkhtml-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gtkhtml-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gtkhtml-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gtkhtml-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gtkhtml-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gtkhtml-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gtkhtml-md5sum;</para>
+          Download MD5 sum: &gtkhtml-md5sum;
 @y
-        <para>&Download; MD5 sum: &gtkhtml-md5sum;</para>
+          &Download; MD5 sum: &gtkhtml-md5sum;
 @z
 
 @x
-        <para>Download size: &gtkhtml-size;</para>
+          Download size: &gtkhtml-size;
 @y
-        <para>&DownloadSize;: &gtkhtml-size;</para>
+          &DownloadSize;: &gtkhtml-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gtkhtml-buildsize;</para>
+          Estimated disk space required: &gtkhtml-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gtkhtml-buildsize;</para>
+          &Estimateddiskspacerequired;: &gtkhtml-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gtkhtml-time;</para>
+          Estimated build time: &gtkhtml-time;
 @y
-        <para>&Estimatedbuildtime;: &gtkhtml-time;</para>
+          &Estimatedbuildtime;: &gtkhtml-time;
 @z
 
 @x
@@ -110,10 +108,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gtkhtml"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gtkhtml"/></para>
 @z
 
 @x
@@ -123,32 +119,22 @@
 @z
 
 @x
-    <para>Install <application>GtkHTML</application> by running the following
-    commands:</para>
+      Install <application>GtkHTML</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GtkHTML</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GtkHTML</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+     &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -175,7 +161,8 @@
           libgtkhtml-4.0.so and libgtkhtml-editor-4.0.so
         </seg>
         <seg>
-          /usr/include/libgtkhtml-4.0 and /usr/share/gtkhtml-4.0
+          /usr/include/libgtkhtml-4.0 and
+          /usr/share/gtkhtml-4.0
         </seg>
 @y
         <seg>
@@ -185,7 +172,8 @@
           libgtkhtml-4.0.so, libgtkhtml-editor-4.0.so
         </seg>
         <seg>
-          /usr/include/libgtkhtml-4.0, /usr/share/gtkhtml-4.0
+          /usr/include/libgtkhtml-4.0,
+          /usr/share/gtkhtml-4.0
         </seg>
 @z
 
@@ -196,15 +184,13 @@
 @z
 
 @x gtkhtml-editor-test
-          <para>is a simple HTML editor widget.</para>
+            is a simple HTML editor widget.
 @y
-          <para>シンプルな HTML 編集ウィジェット。</para>
+            シンプルな HTML 編集ウィジェット。
 @z
 
 @x libgtkhtml-4.0.so
-          <para>provides the functions to render HTML within applications.</para>
+            provides the functions used to render HTML within applications.
 @y
-          <para>
-          アプリケーション内にて HTML レンダリングを実現する機能を提供します。
-          </para>
+            アプリケーション内にて HTML レンダリングを実現する機能を提供します。
 @z

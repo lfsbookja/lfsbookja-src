@@ -7,7 +7,6 @@
 ##
 BOOKdir = $(top_builddir)/@bookdir@/server/other
 CHANGE_FILES = \
-	leafnode.ch \
 	openldap.ch \
 	other.ch \
 	soprano.ch \
@@ -26,7 +25,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-leafnode.xml: $(BOOKdir)/$@ $(srcdir)/leafnode.ch
 openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
 other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
 soprano.xml:  $(BOOKdir)/$@ $(srcdir)/soprano.ch

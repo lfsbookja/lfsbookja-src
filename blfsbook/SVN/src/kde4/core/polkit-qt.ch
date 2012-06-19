@@ -80,15 +80,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
     <xref linkend="qt4"/>, 
-    <xref linkend="polkit"/> and 
-    <xref linkend="pkgconfig"/>
+    <xref linkend="polkit"/> and
+    <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="qt4"/>, 
     <xref linkend="polkit"/>,
-    <xref linkend="pkgconfig"/>
+    <xref linkend="glib2"/>
     </para>
 @z
 

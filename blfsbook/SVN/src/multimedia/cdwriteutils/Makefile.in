@@ -148,14 +148,12 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/cdwriteutils
 CHANGE_FILES = \
 	cdrdao.ch       \
-	cdrtools.ch     \
 	cdwriteutils.ch \
 	dvd+rw-tools.ch \
 	k3b.ch          \
 	libburn.ch      \
 	libisoburn.ch   \
-	libisofs.ch     \
-	udftools.ch 
+	libisofs.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -352,14 +350,12 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 cdrdao.xml:       $(BOOKdir)/$@ $(srcdir)/cdrdao.ch
-cdrtools.xml:     $(BOOKdir)/$@ $(srcdir)/cdrtools.ch
 cdwriteutils.xml: $(BOOKdir)/$@ $(srcdir)/cdwriteutils.ch
 dvd+rw-tools.xml: $(BOOKdir)/$@ $(srcdir)/dvd+rw-tools.ch
 k3b.xml:          $(BOOKdir)/$@ $(srcdir)/k3b.ch
 libburn.xml:      $(BOOKdir)/$@ $(srcdir)/libburn.ch
 libisoburn.xml:   $(BOOKdir)/$@ $(srcdir)/libisoburn.ch
 libisofs.xml:     $(BOOKdir)/$@ $(srcdir)/libisofs.ch
-udftools.xml:     $(BOOKdir)/$@ $(srcdir)/udftools.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

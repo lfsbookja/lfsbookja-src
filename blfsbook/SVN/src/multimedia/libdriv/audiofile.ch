@@ -16,17 +16,17 @@
 @x
     <title>Introduction to Audio File</title>
 @y
-    <title>Audio File のインストール</title>
+    <title>&IntroductionTo1;Audio File&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Audio File</application> package contains the
-    audio file libraries and two sound file support programs. These are useful
-    to support basic sound file formats.</para>
+      The <application>Audio File</application> package contains the
+      audio file libraries and two sound file support programs useful
+      to support basic sound file formats.
 @y
-    <para>The <application>Audio File</application> package contains the
-    audio file libraries and two sound file support programs. These are useful
-    to support basic sound file formats.</para>
+      The <application>Audio File</application> package contains the
+      audio file libraries and two sound file support programs useful
+      to support basic sound file formats.
 @z
 
 @x
@@ -36,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&audiofile-download-http;"/></para>
+          Download (HTTP): <ulink url="&audiofile-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&audiofile-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&audiofile-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&audiofile-download-ftp;"/></para>
+          Download (FTP): <ulink url="&audiofile-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&audiofile-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&audiofile-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &audiofile-md5sum;</para>
+          Download MD5 sum: &audiofile-md5sum;
 @y
-        <para>&Download; MD5 sum: &audiofile-md5sum;</para>
+          &Download; MD5 sum: &audiofile-md5sum;
 @z
 
 @x
-        <para>Download size: &audiofile-size;</para>
+          Download size: &audiofile-size;
 @y
-        <para>&DownloadSize;: &audiofile-size;</para>
+          &DownloadSize;: &audiofile-size;
 @z
 
 @x
-        <para>Estimated disk space required: &audiofile-buildsize;</para>
+          Estimated disk space required: &audiofile-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &audiofile-buildsize;</para>
+          &Estimateddiskspacerequired;: &audiofile-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &audiofile-time;</para>
+          Estimated build time: &audiofile-time;
 @y
-        <para>&Estimatedbuildtime;: &audiofile-time;</para>
+          &Estimatedbuildtime;: &audiofile-time;
 @z
 
 @x
@@ -82,28 +82,26 @@
 @x
     <title>Installation of Audio File</title>
 @y
-    <title>Audio File のインストール</title>
+    <title>&InstallationOf1;Audio File&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Audio File</application> by running the following
-    commands:</para>
+      Install <application>Audio File</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Audio File</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Audio File</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>ビルド結果をテストする場合は <command>make check</command> を実行します。</para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para><systemitem class="username">root</systemitem> ユーザーになって以下を実行します。</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -114,22 +112,26 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Libraries</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>audiofile-config, sfconvert, and sfinfo</seg>
-        <seg>libaudiofile.{so,a}</seg>
-        <seg>None</seg>
+        <seg>
+          sfconvert and sfinfo
+        </seg>
+        <seg>
+          libaudiofile.{so,a}
+        </seg>
 @y
-        <seg>audiofile-config, sfconvert, sfinfo</seg>
-        <seg>libaudiofile.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>
+          sfconvert, sfinfo
+        </seg>
+        <seg>
+          libaudiofile.{so,a}
+        </seg>
 @z
 
 @x
@@ -138,35 +140,26 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x audiofile-config
-          <para>is used during the compile process by programs linking to this
-          library.</para>
-@y
-          <para>
-          本パッケージのライブラリを利用する他プログラムが、そのコンパイル時に利用します。
-          </para>
-@z
-
 @x sfinfo
-          <para>displays the sound file format, audio encoding, sampling
-          rate and duration for audio formats supported by this library.</para>
+            displays the sound file format, audio encoding, sampling
+            rate and duration for audio formats supported by this library.
 @y
-          <para>displays the sound file format, audio encoding, sampling
-          rate and duration for audio formats supported by this library.</para>
+            displays the sound file format, audio encoding, sampling
+            rate and duration for audio formats supported by this library.
 @z
 
 @x sfconvert
-          <para>converts sound file formats where the original format and
-          destination format are supported by this library.</para>
+            converts sound file formats where the original format and
+            destination format are supported by this library.
 @y
-          <para>converts sound file formats where the original format and
-          destination format are supported by this library.</para>
+            converts sound file formats where the original format and
+            destination format are supported by this library.
 @z
 
 @x libaudiofile.{so,a}
-          <para>contains functions used by programs to support AIFF,
-          AIFF-compressed, Sun/NeXT, WAV and BIC audio formats.</para>
+            contains functions used by programs to support AIFF,
+            AIFF-compressed, Sun/NeXT, WAV and BIC audio formats.
 @y
-          <para>contains functions used by programs to support AIFF,
-          AIFF-compressed, Sun/NeXT, WAV and BIC audio formats.</para>
+            contains functions used by programs to support AIFF,
+            AIFF-compressed, Sun/NeXT, WAV and BIC audio formats.
 @z

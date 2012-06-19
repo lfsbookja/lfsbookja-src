@@ -83,18 +83,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+    <xref linkend="glib2"/>,
     <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
-    <xref linkend="ORBit2"/>,
-    <xref linkend="pkgconfig"/>, and
+    <xref linkend="ORBit2"/>, and
     <xref linkend="popt"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+    <xref linkend="glib2"/>,
     <xref linkend="intltool"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="ORBit2"/>,
-    <xref linkend="pkgconfig"/>,
     <xref linkend="popt"/></para>
 @z
 

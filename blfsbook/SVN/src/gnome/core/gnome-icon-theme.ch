@@ -20,13 +20,10 @@
 @z
 
 @x
-    <para>The <application>GNOME Icon Theme</application> package contains
-    an assortment of <!--scalable and--> non-scalable icons of different
-    sizes and themes.</para>
+      The <application>GNOME Icon Theme</application> package contains
+      an assortment of non-scalable icons of different sizes and themes.
 @y
-    <para>
-    <application>GNOME Icon Theme</application> パッケージは、さまざまなサイズやテーマのアイコンを各種取り揃えて提供します。
-    </para>
+      <application>GNOME Icon Theme</application> パッケージは、さまざまなサイズやテーマのアイコンを各種取り揃えて提供します。
 @z
 
 @x
@@ -36,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-icon-theme-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-icon-theme-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-icon-theme-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-icon-theme-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-icon-theme-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-icon-theme-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-icon-theme-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-icon-theme-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-icon-theme-md5sum;</para>
+          Download MD5 sum: &gnome-icon-theme-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-icon-theme-md5sum;</para>
+          &Download; MD5 sum: &gnome-icon-theme-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-icon-theme-size;</para>
+          Download size: &gnome-icon-theme-size;
 @y
-        <para>&DownloadSize;: &gnome-icon-theme-size;</para>
+          &DownloadSize;: &gnome-icon-theme-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-icon-theme-buildsize;</para>
+          Estimated disk space required: &gnome-icon-theme-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-icon-theme-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-icon-theme-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-icon-theme-time;</para>
+          Estimated build time: &gnome-icon-theme-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-icon-theme-time;</para>
+          &Estimatedbuildtime;: &gnome-icon-theme-time;
 @z
 
 @x
@@ -95,10 +92,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-icon-theme"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-icon-theme"/></para>
 @z
 
 @x
@@ -108,26 +103,22 @@
 @z
 
 @x
-    <para>Install <application>GNOME Icon Theme</application>
-    by running the following commands:</para>
+      Install <application>GNOME Icon Theme</application>
+      by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME Icon Theme</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Icon Theme</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

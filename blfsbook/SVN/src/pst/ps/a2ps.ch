@@ -100,10 +100,8 @@
 
 @x
         <para>International fonts: <ulink
-        url="ftp://ftp.enst.fr/pub/unix/a2ps/i18n-fonts-&i18n-fonts-version;.tar.gz"/></para>
 @y
         <para>国際フォント: <ulink
-        url="ftp://ftp.enst.fr/pub/unix/a2ps/i18n-fonts-&i18n-fonts-version;.tar.gz"/></para>
 @z
 
 @x
@@ -122,52 +120,50 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="psutils"/>, and
-    <xref linkend="cups"/> or <xref linkend="LPRng"/>
-    (otherwise, <application>a2ps</application> will use the
-    <command>cat &gt;/dev/lp0</command> command instead of <command>lpr</command>
-    for sending its output to the printer)</para>
+    <para role="recommended">
+      <xref linkend="psutils"/>, and
+      <xref linkend="cups"/> or <xref linkend="LPRng"/>
+      (otherwise, <application>a2ps</application> will use the
+      <command>cat &gt;/dev/lp0</command> command instead of <command>lpr</command>
+      for sending its output to the printer)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="psutils"/>,
-    <xref linkend="cups"/> または <xref linkend="LPRng"/>
-    (otherwise, <application>a2ps</application> will use the
-    <command>cat &gt;/dev/lp0</command> command instead of <command>lpr</command>
-    for sending its output to the printer)</para>
+    <para role="recommended">
+      <xref linkend="psutils"/>, and
+      <xref linkend="cups"/> or <xref linkend="LPRng"/>
+      (otherwise, <application>a2ps</application> will use the
+      <command>cat &gt;/dev/lp0</command> command instead of <command>lpr</command>
+      for sending its output to the printer)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
-    <xref linkend="gs"/><!-- or <xref linkend="espgs"/> -->,
-    <ulink
-    url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
-    <ulink url="http://www.adobe.com/products/acrobat/readstep2.html">Adobe
-    Reader</ulink>, and
-    <ulink
-    url="http://www.gnu.org/software/ghostview/ghostview.html">Ghostview</ulink>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="texlive"/>,
+      <xref linkend="gs"/>,
+      <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
+      <ulink url="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Reader</ulink>, and
+      <ulink url="http://www.gnu.org/software/ghostview/ghostview.html">Ghostview</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
-    <xref linkend="gs"/><!-- or <xref linkend="espgs"/> -->,
-    <ulink
-    url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
-    <ulink url="http://www.adobe.com/products/acrobat/readstep2.html">Adobe
-    Reader</ulink>,
-    <ulink
-    url="http://www.gnu.org/software/ghostview/ghostview.html">Ghostview</ulink>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="texlive"/>,
+      <xref linkend="gs"/>,
+      <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
+      <ulink url="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Reader</ulink>, and
+      <ulink url="http://www.gnu.org/software/ghostview/ghostview.html">Ghostview</ulink>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/A2PS"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/A2PS"/></para>
 @z
 
 @x

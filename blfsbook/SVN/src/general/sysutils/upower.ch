@@ -20,15 +20,15 @@
 @z
 
 @x
-    <para>The <application>UPower</application> package provides an interface to
-    enumerating power devices, listening to device events and querying history
-    and statistics. Any application or service on the system can access the
-    org.freedesktop.UPower service via the system message bus.</para>
+      The <application>UPower</application> package provides an interface to
+      enumerating power devices, listening to device events and querying history
+      and statistics. Any application or service on the system can access the
+      org.freedesktop.UPower service via the system message bus.
 @y
-    <para>The <application>UPower</application> package provides an interface to
-    enumerating power devices, listening to device events and querying history
-    and statistics. Any application or service on the system can access the
-    org.freedesktop.UPower service via the system message bus.</para>
+      The <application>UPower</application> package provides an interface to
+      enumerating power devices, listening to device events and querying history
+      and statistics. Any application or service on the system can access the
+      org.freedesktop.UPower service via the system message bus.
 @z
 
 @x
@@ -38,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&upower-download-http;"/></para>
+          Download (HTTP): <ulink url="&upower-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&upower-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&upower-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&upower-download-ftp;"/></para>
+          Download (FTP): <ulink url="&upower-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&upower-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&upower-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &upower-md5sum;</para>
+          Download MD5 sum: &upower-md5sum;
 @y
-        <para>&Download; MD5 sum: &upower-md5sum;</para>
+          &Download; MD5 sum: &upower-md5sum;
 @z
 
 @x
-        <para>Download size: &upower-size;</para>
+          Download size: &upower-size;
 @y
-        <para>&DownloadSize;: &upower-size;</para>
+          &DownloadSize;: &upower-size;
 @z
 
 @x
-        <para>Estimated disk space required: &upower-buildsize;</para>
+          Estimated disk space required: &upower-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &upower-buildsize;</para>
+          &Estimateddiskspacerequired;: &upower-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &upower-time;</para>
+          Estimated build time: &upower-time;
 @y
-        <para>&Estimatedbuildtime;: &upower-time;</para>
+          &Estimatedbuildtime;: &upower-time;
 @z
 
 @x
@@ -123,10 +123,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/upower"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/upower"/></para>
 @z
 
 @x
@@ -136,34 +134,48 @@
 @z
 
 @x
-    <para>Install <application>UPower</application> by running the following
-    commands:</para>
+      Install <application>UPower</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>UPower</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>UPower</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <title>Configuring your kernel for UPower</title>
+@y
+    <title>Configuring your kernel for UPower</title>
+@z
+
+@x
+      To use the command <command>upower -w</command> for information about
+      processor wakeups (this command is used by <xref linkend="gnome-power-manager"/>)
+      you need to enable CONFIG_TIMER_STATS.  This is achieved in
+      <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
+      menu and selecting &apos;Collect kernel timers statistics&apos;.
+@y
+      To use the command <command>upower -w</command> for information about
+      processor wakeups (this command is used by <xref linkend="gnome-power-manager"/>)
+      you need to enable CONFIG_TIMER_STATS.  This is achieved in
+      <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
+      menu and selecting &apos;Collect kernel timers statistics&apos;.
 @z
 
 @x
@@ -190,19 +202,23 @@
           libupower-glib.so
         </seg>
         <seg>
-          /etc/UPower, /usr/include/libupower-glib,
-          /usr/lib/upower and /var/lib/upower
+          /etc/UPower,
+          /usr/include/libupower-glib,
+          /usr/lib/upower and
+          /var/lib/upower
         </seg>
 @y
         <seg>
-          upower, upowerd
+          upower and upowerd
         </seg>
         <seg>
           libupower-glib.so
         </seg>
         <seg>
-          /etc/UPower, /usr/include/libupower-glib,
-          /usr/lib/upower, /var/lib/upower
+          /etc/UPower,
+          /usr/include/libupower-glib,
+          /usr/lib/upower and
+          /var/lib/upower
         </seg>
 @z
 
@@ -213,29 +229,21 @@
 @z
 
 @x upower
-          <para>is the <application>UPower</application> command line
-          tool.</para>
+            is the <application>UPower</application> command line tool.
 @y
-          <para>
-          <application>UPower</application> のコマンドラインツール。
-          </para>
+            <application>UPower</application> のコマンドラインツール。
 @z
 
 @x upowerd
-          <para>is the <application>UPower</application> Daemon. It provides the
-          org.freedesktop.UPower service on the system message bus.</para>
+            is the <application>UPower</application> Daemon. It provides the
+            org.freedesktop.UPower service on the system message bus.
 @y
-          <para>
-          <application>UPower</application> デーモン。
-          これはシステムメッセージバス上の org.freedesktop.UPower サービスを提供します。
-          </para>
+            <application>UPower</application> デーモン。
+            これはシステムメッセージバス上の org.freedesktop.UPower サービスを提供します。
 @z
 
-@x libupower-glib.{so,a}
-          <para>contains the <application>UPower</application> API
-          functions.</para>
+@x libupower-glib.so
+            contains the <application>UPower</application> API functions.
 @y
-          <para>
-          <application>UPower</application> API 関数を提供します。
-          </para>
+            <application>UPower</application> API 関数を提供します。
 @z

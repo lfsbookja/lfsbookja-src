@@ -20,12 +20,11 @@
 @z
 
 @x
-    <para>The <application>GConf</application> package contains a
-    configuration database system.</para>
+      The <application>GConf</application> package contains a
+      configuration database system used by many 
+      <application>GNOME</application> applications.
 @y
-    <para>
-    <application>GConf</application> パッケージは、さまざまな設定を行うためのデータベースシステムを提供します。
-    </para>
+      <application>GConf</application> パッケージは、<application>GNOME</application> アプリケーションにてさまざまな設定を行うためのデータベースシステムを提供します。
 @z
 
 @x
@@ -35,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&GConf-download-http;"/></para>
+          Download (HTTP): <ulink url="&GConf-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&GConf-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&GConf-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&GConf-download-ftp;"/></para>
+          Download (FTP): <ulink url="&GConf-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&GConf-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&GConf-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &GConf-md5sum;</para>
+          Download MD5 sum: &GConf-md5sum;
 @y
-        <para>&Download; MD5 sum: &GConf-md5sum;</para>
+          &Download; MD5 sum: &GConf-md5sum;
 @z
 
 @x
-        <para>Download size: &GConf-size;</para>
+          Download size: &GConf-size;
 @y
-        <para>&DownloadSize;: &GConf-size;</para>
+          &DownloadSize;: &GConf-size;
 @z
 
 @x
-        <para>Estimated disk space required: &GConf-buildsize;</para>
+          Estimated disk space required: &GConf-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &GConf-buildsize;</para>
+          &Estimateddiskspacerequired;: &GConf-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &GConf-time;</para>
+          Estimated build time: &GConf-time;
 @y
-        <para>&Estimatedbuildtime;: &GConf-time;</para>
+          &Estimatedbuildtime;: &GConf-time;
 @z
 
 @x
@@ -124,10 +123,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gconf"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gconf"/></para>
 @z
 
 @x
@@ -137,27 +134,23 @@
 @z
 
 @x
-    <para>Install <application>GConf</application> by running the following
-    commands:</para>
+      Install <application>GConf</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GConf</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GConf</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -167,39 +160,37 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/GConf</parameter>:
-    This parameter causes the libexec files to be installed in the preferred
-    location of <filename class="directory">/usr/lib/GConf</filename>
-    instead of <filename
-    class="directory">/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/GConf</parameter>:
+      This parameter causes the libexec files to be installed in the preferred
+      location of <filename class="directory">/usr/lib/GConf</filename>
+      instead of <filename class="directory">/usr/libexec</filename>.
 @y
-    <para><parameter>--libexecdir=/usr/lib/GConf</parameter>:
-    This parameter causes the libexec files to be installed in the preferred
-    location of <filename class="directory">/usr/lib/GConf</filename>
-    instead of <filename
-    class="directory">/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/GConf</parameter>:
+      This parameter causes the libexec files to be installed in the preferred
+      location of <filename class="directory">/usr/lib/GConf</filename>
+      instead of <filename class="directory">/usr/libexec</filename>.
 @z
 
 @x
-    <para><parameter>--disable-orbit</parameter>: This parameter is required if
-    <application>ORBit2</application> is not installed.
-    <application>ORBit2</application> is a deprecated package.</para>
+      <option>--disable-orbit</option>: This parameter is required if
+      <application>ORBit2</application> is not installed.
+      <application>ORBit2</application> is a deprecated package.
 @y
-    <para><parameter>--disable-orbit</parameter>: This parameter is required if
-    <application>ORBit2</application> is not installed.
-    <application>ORBit2</application> is a deprecated package.</para>
+      <option>--disable-orbit</option>: This parameter is required if
+      <application>ORBit2</application> is not installed.
+      <application>ORBit2</application> is a deprecated package.
 @z
 
 @x
-    <para><command>install -v -m755 -d
-    /etc/gconf/gconf.xml.system</command>: Creates a missing
-    directory. Without this directory, <command>gconf-sanity-check-2</command>
-    will fail during <application>GDM</application> startup and login.</para>
+      <command>install -v -m755 -d /etc/gconf/gconf.xml.system</command>:
+      Creates a missing directory. Without this directory, 
+      <command>gconf-sanity-check-2</command> will fail during 
+      <application>GDM</application> startup and login.
 @y
-    <para><command>install -v -m755 -d
-    /etc/gconf/gconf.xml.system</command>: Creates a missing
-    directory. Without this directory, <command>gconf-sanity-check-2</command>
-    will fail during <application>GDM</application> startup and login.</para>
+      <command>install -v -m755 -d /etc/gconf/gconf.xml.system</command>:
+      Creates a missing directory. Without this directory, 
+      <command>gconf-sanity-check-2</command> will fail during 
+      <application>GDM</application> startup and login.
 @z
 
 @x
@@ -227,8 +218,12 @@
           libgconf-2.so
         </seg>
         <seg>
-          /etc/gconf, /usr/include/gconf, /usr/lib/GConf, /usr/share/GConf,
-          /usr/share/gtk-doc/html/gconf and /usr/share/sgml/gconf
+          /etc/gconf,
+          /usr/include/gconf,
+          /usr/lib/GConf,
+          /usr/share/GConf,
+          /usr/share/gtk-doc/html/gconf and
+          /usr/share/sgml/gconf
         </seg>
 @y
         <seg>
@@ -239,8 +234,12 @@
           libgconf-2.so
         </seg>
         <seg>
-          /etc/gconf, /usr/include/gconf, /usr/lib/GConf, /usr/share/GConf,
-          /usr/share/gtk-doc/html/gconf, /usr/share/sgml/gconf
+          /etc/gconf,
+          /usr/include/gconf,
+          /usr/lib/GConf,
+          /usr/share/GConf,
+          /usr/share/gtk-doc/html/gconf,
+          /usr/share/sgml/gconf
         </seg>
 @z
 
@@ -251,32 +250,39 @@
 @z
 
 @x gconf-merge-tree
-          <para>merges an xml filesystem hierarchy.</para>
+            merges an XML filesystem hierarchy.
 @y
-          <para>
-          
-          merges an xml filesystem hierarchy.
-          </para>
+            merges an XML filesystem hierarchy.
 @z
 
 @x gconftool-2
-          <para>is a command line tool for manipulating the
-          <application>GConf</application> database.</para>
+            is a command line tool used for manipulating the
+            <application>GConf</application> database.
 @y
-          <para>
-          
-          is a command line tool for manipulating the
-          <application>GConf</application> database.
-          </para>
+            is a command line tool used for manipulating the
+            <application>GConf</application> database.
+@z
+
+@x gsettings-data-convert
+            reads values out of the users <application>GConf</application>
+            database and stores them in GSettings.
+@y
+            reads values out of the users <application>GConf</application>
+            database and stores them in GSettings.
+@z
+
+@x gsettings-schemas-convert
+            converts between <application>GConf</application> and GSettings
+            schema file formats.
+@y
+            converts between <application>GConf</application> and GSettings
+            schema file formats.
 @z
 
 @x libgconf-2.{so,a}
-          <para>provide the functions necessary to maintain the
-          configuration database.</para>
+            provides the functions necessary to maintain the
+            configuration database.
 @y
-          <para>
-          
-          provide the functions necessary to maintain the
-          configuration database.
-          </para>
+            provides the functions necessary to maintain the
+            configuration database.
 @z

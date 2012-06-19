@@ -378,12 +378,3 @@ As mentioned earlier, this eases
       <filename>/etc/xinetd.d/svn</filename>:</para>
 @z
 
-@x
-      <para>Finally, if you wish to simply start the server at
-      startup, install the svn bootscript included in the
-      <xref linkend="bootscripts"/> package.</para>
-@y
-      <para>Finally, if you wish to simply start the server at
-      startup, install the svn bootscript included in the
-      <xref linkend="bootscripts"/> package.</para>
-@z

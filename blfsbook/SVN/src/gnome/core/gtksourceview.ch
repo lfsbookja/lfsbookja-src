@@ -14,19 +14,19 @@
 @z
 
 @x
-    <title>Introduction to gtksourceview</title>
+    <title>Introduction to GtkSourceView</title>
 @y
-    <title>&IntroductionTo1;gtksourceview&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GtkSourceView&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gtksourceview</application> package contains
-    libraries used for extending the <application>GTK</application> 
-    text functions to include syntax highlighting.</para>
+      The <application>GtkSourceView</application> package contains
+      libraries used for extending the <application>GTK+</application> 
+      text functions to include syntax highlighting.
 @y
-    <para>The <application>gtksourceview</application> package contains
-    libraries used for extending the <application>GTK</application> 
-    text functions to include syntax highlighting.</para>
+      The <application>GtkSourceView</application> package contains
+      libraries used for extending the <application>GTK+</application> 
+      text functions to include syntax highlighting.
 @z
 
 @x
@@ -36,45 +36,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gtksourceview-download-http;"/></para>
+          Download (HTTP): <ulink url="&gtksourceview-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gtksourceview-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gtksourceview-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gtksourceview-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gtksourceview-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gtksourceview-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gtksourceview-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gtksourceview-md5sum;</para>
+          Download MD5 sum: &gtksourceview-md5sum;
 @y
-        <para>&Download; MD5 sum: &gtksourceview-md5sum;</para>
+          &Download; MD5 sum: &gtksourceview-md5sum;
 @z
 
 @x
-        <para>Download size: &gtksourceview-size;</para>
+          Download size: &gtksourceview-size;
 @y
-        <para>&DownloadSize;: &gtksourceview-size;</para>
+          &DownloadSize;: &gtksourceview-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gtksourceview-buildsize;</para>
+          Estimated disk space required: &gtksourceview-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gtksourceview-buildsize;</para>
+          &Estimateddiskspacerequired;: &gtksourceview-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gtksourceview-time;</para>
+          Estimated build time: &gtksourceview-time;
 @y
-        <para>&Estimatedbuildtime;: &gtksourceview-time;</para>
+          &Estimatedbuildtime;: &gtksourceview-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gtksourceview Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GtkSourceView Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gtksourceview&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GtkSourceView&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -117,51 +117,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gtksourceview"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gtksourceview"/></para>
 @z
 
 @x
-    <title>Installation of gtksourceview</title>
+    <title>Installation of GtkSourceView</title>
 @y
-    <title>&InstallationOf1;gtksourceview&InstallationOf2;</title>
+    <title>&InstallationOf1;GtkSourceView&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gtksourceview</application> by running the
-    following commands:</para>
+      Install <application>GtkSourceView</application> by running the
+      following commands:
 @y
-  <para>
-  以下のコマンドを実行して <application>gtksourceview</application> をビルドします。
-  </para>
+      以下のコマンドを実行して <application>gtksourceview</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite. If you have the
-    optional dependencies to build the test programs installed,
-    <emphasis role='strong'>after the package is installed</emphasis> you can
-    change to the <filename class='directory'>tests</filename> directory in the
-    source tree and issue <command>./test-widget</command>. This will test the
-    functionality of the
-    <filename class='libraryfile'>libgtksourceview-3.0</filename> library.</para>
+      This package does not come with a test suite.
 @y
-    <para>This package does not come with a test suite. If you have the
-    optional dependencies to build the test programs installed,
-    <emphasis role='strong'>after the package is installed</emphasis> you can
-    change to the <filename class='directory'>tests</filename> directory in the
-    source tree and issue <command>./test-widget</command>. This will test the
-    functionality of the
-    <filename class='libraryfile'>libgtksourceview-3.0</filename> library.</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -210,10 +192,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libgtksourceview-2.0.{so,a}
-          <para>contains function extensions for the GtkTextView widget.</para>
+@x libgtksourceview-3.0.so
+            contains function extensions for the GtkTextView widget.
 @y
-          <para>
-          GtkTextView ウィジェットに対する拡張機能を提供します。
-          </para>
+            GtkTextView ウィジェットに対する拡張機能を提供します。
 @z

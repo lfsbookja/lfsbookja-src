@@ -7,6 +7,7 @@
 ##
 BOOKdir = $(top_builddir)/@bookdir@/general/prog
 CHANGE_FILES = \
+	bazaar.ch         \
 	check.ch          \
 	cmake.ch          \
 	cvs.ch            \
@@ -19,15 +20,13 @@ CHANGE_FILES = \
 	gdb.ch            \
 	git.ch            \
 	guile.ch          \
-	icedtea6.ch       \
-	jdk.ch            \
 	junit.ch          \
 	librep.ch         \
 	llvm.ch           \
 	mercurial.ch      \
 	nasm.ch           \
+	openjdk.ch        \
 	other-tools.ch    \
-	pdl.ch            \
 	perl-modules.ch   \
 	php.ch            \
 	pkgconfig.ch      \
@@ -37,7 +36,6 @@ CHANGE_FILES = \
 	python3.ch        \
 	ruby.ch           \
 	slang.ch          \
-	spidermonkey.ch   \
 	subversion.ch     \
 	svnserver.ch      \
 	tcl.ch            \
@@ -58,6 +56,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+bazaar.xml:         $(BOOKdir)/$@ $(srcdir)/bazaar.ch
 check.xml:          $(BOOKdir)/$@ $(srcdir)/check.ch
 cmake.xml:          $(BOOKdir)/$@ $(srcdir)/cmake.ch
 cvs.xml:            $(BOOKdir)/$@ $(srcdir)/cvs.ch
@@ -70,15 +69,13 @@ gcc.xml:            $(BOOKdir)/$@ $(srcdir)/gcc.ch
 gdb.xml:            $(BOOKdir)/$@ $(srcdir)/gdb.ch
 git.xml:            $(BOOKdir)/$@ $(srcdir)/git.ch
 guile.xml:          $(BOOKdir)/$@ $(srcdir)/guile.ch
-icedtea6.xml:       $(BOOKdir)/$@ $(srcdir)/icedtea6.ch
-jdk.xml:            $(BOOKdir)/$@ $(srcdir)/jdk.ch
 junit.xml:          $(BOOKdir)/$@ $(srcdir)/junit.ch
 librep.xml:         $(BOOKdir)/$@ $(srcdir)/librep.ch
 llvm.xml:           $(BOOKdir)/$@ $(srcdir)/llvm.ch
 mercurial.xml:      $(BOOKdir)/$@ $(srcdir)/mercurial.ch
 nasm.xml:           $(BOOKdir)/$@ $(srcdir)/nasm.ch
+openjdk.xml:        $(BOOKdir)/$@ $(srcdir)/openjdk.ch
 other-tools.xml:    $(BOOKdir)/$@ $(srcdir)/other-tools.ch
-pdl.xml:            $(BOOKdir)/$@ $(srcdir)/pdl.ch
 perl-modules.xml:   $(BOOKdir)/$@ $(srcdir)/perl-modules.ch
 php.xml:            $(BOOKdir)/$@ $(srcdir)/php.ch
 pkgconfig.xml:      $(BOOKdir)/$@ $(srcdir)/pkgconfig.ch
@@ -88,7 +85,6 @@ python2.xml:        $(BOOKdir)/$@ $(srcdir)/python2.ch
 python3.xml:        $(BOOKdir)/$@ $(srcdir)/python3.ch
 ruby.xml:           $(BOOKdir)/$@ $(srcdir)/ruby.ch
 slang.xml:          $(BOOKdir)/$@ $(srcdir)/slang.ch
-spidermonkey.xml:   $(BOOKdir)/$@ $(srcdir)/spidermonkey.ch
 subversion.xml:     $(BOOKdir)/$@ $(srcdir)/subversion.ch
 svnserver.xml:      $(BOOKdir)/$@ $(srcdir)/svnserver.ch
 tcl.xml:            $(BOOKdir)/$@ $(srcdir)/tcl.ch

@@ -11,13 +11,10 @@ CHANGE_FILES = \
 	enscript.ch \
 	epdfview.ch \
 	fop.ch      \
-	gsview.ch   \
 	libgxps.ch  \
-	other.ch    \
 	paps.ch     \
 	ps.ch       \
-	psutils.ch  \
-	xpdf.ch
+	psutils.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -36,10 +33,7 @@ a2ps.xml:     $(BOOKdir)/$@ $(srcdir)/a2ps.ch
 enscript.xml: $(BOOKdir)/$@ $(srcdir)/enscript.ch
 epdfview.xml: $(BOOKdir)/$@ $(srcdir)/epdfview.ch
 fop.xml:      $(BOOKdir)/$@ $(srcdir)/fop.ch
-gsview.xml:   $(BOOKdir)/$@ $(srcdir)/gsview.ch
 libgxps.xml:  $(BOOKdir)/$@ $(srcdir)/libgxps.ch
-other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
 paps.xml:     $(BOOKdir)/$@ $(srcdir)/paps.ch
 ps.xml:       $(BOOKdir)/$@ $(srcdir)/ps.ch
 psutils.xml:  $(BOOKdir)/$@ $(srcdir)/psutils.ch
-xpdf.xml:     $(BOOKdir)/$@ $(srcdir)/xpdf.ch

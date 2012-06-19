@@ -96,19 +96,15 @@
 @z
 
 @x
-        <para>Required Patch: <ulink
-          url="&patch-root;/vim-&vim-version;-fixes-5.patch"/></para>
+        <para>Optional Patch: <ulink
 @y
-        <para>必須のパッチ: <ulink
-          url="&patch-root;/vim-&vim-version;-fixes-5.patch"/></para>
+        <para>任意のパッチ: <ulink
 @z
 
 @x
         <para>Translated Vim messages: <ulink
-         url="http://www2.nl.vim.org/extra/vim-7.2-lang.tar.gz"/>
 @y
         <para>翻訳された Vim メッセージ: <ulink
-         url="http://www2.nl.vim.org/extra/vim-7.2-lang.tar.gz"/>
 @z
 
 @x
@@ -129,7 +125,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> or
-      <!-- <xref linkend="lesstif"/>, -->
       <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>,
       <xref linkend="python2"/>,
       <xref linkend="tcl"/>,
@@ -140,7 +135,6 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk2"/> または
-      <!-- <xref linkend="lesstif"/>, -->
       <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>,
       <xref linkend="python2"/>,
       <xref linkend="tcl"/>,

@@ -8,16 +8,16 @@
 BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
 CHANGE_FILES = \
 	apache-ant.ch    \
+	at.ch            \
 	autofs.ch        \
+	colord.ch        \
 	cpio.ch          \
 	dbus.ch          \
 	dbus-bindings.ch \
-	DeviceKit.ch     \
 	eject.ch         \
 	fcron.ch         \
 	gpm.ch           \
 	gvfs.ch          \
-	hal.ch           \
 	hdparm.ch        \
 	initdtools.ch    \
 	libarchive.ch    \
@@ -56,16 +56,16 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 apache-ant.xml:    $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
+at.xml:            $(BOOKdir)/$@ $(srcdir)/at.ch
 autofs.xml:        $(BOOKdir)/$@ $(srcdir)/autofs.ch
+colord.xml:        $(BOOKdir)/$@ $(srcdir)/colord.ch
 cpio.xml:          $(BOOKdir)/$@ $(srcdir)/cpio.ch
 dbus.xml:          $(BOOKdir)/$@ $(srcdir)/dbus.ch
 dbus-bindings.xml: $(BOOKdir)/$@ $(srcdir)/dbus-bindings.ch
-DeviceKit.xml:     $(BOOKdir)/$@ $(srcdir)/DeviceKit.ch
 eject.xml:         $(BOOKdir)/$@ $(srcdir)/eject.ch
 fcron.xml:         $(BOOKdir)/$@ $(srcdir)/fcron.ch
 gpm.xml:           $(BOOKdir)/$@ $(srcdir)/gpm.ch
 gvfs.xml:          $(BOOKdir)/$@ $(srcdir)/gvfs.ch
-hal.xml:           $(BOOKdir)/$@ $(srcdir)/hal.ch
 hdparm.xml:        $(BOOKdir)/$@ $(srcdir)/hdparm.ch
 initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 libarchive.xml:    $(BOOKdir)/$@ $(srcdir)/libarchive.ch

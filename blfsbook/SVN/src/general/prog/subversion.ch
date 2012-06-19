@@ -142,8 +142,8 @@
 @x
     <bridgehead renderas="sect4">Optional (for the Java Bindings)</bridgehead>
     <para role="optional">
-      One of <xref linkend="icedtea6"/>, 
-      <xref linkend="jdk"/>,
+      One of <xref linkend="openjdk"/>, 
+     <!-- <xref linkend="jdk"/>, -->
       <ulink url="http://www.inet.no/dante/">Dante</ulink>, or
       <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
       and <xref linkend="junit"/> (to test the Java bindings)
@@ -151,11 +151,11 @@
 @y
     <bridgehead renderas="sect4">&Optional;; (Java バインディングビルド時)</bridgehead>
     <para role="optional">
-      One of <xref linkend="icedtea6"/>, 
-      <xref linkend="jdk"/>,
-      <ulink url="http://www.inet.no/dante/">Dante</ulink>, または
-      <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink> と
-      <xref linkend="junit"/> (Java バインディングのテスト時に必要)
+      One of <xref linkend="openjdk"/>, 
+     <!-- <xref linkend="jdk"/>, -->
+      <ulink url="http://www.inet.no/dante/">Dante</ulink> または
+      <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
+      and <xref linkend="junit"/> (Java バインディングのテスト時に必要)
     </para>
 @z
 

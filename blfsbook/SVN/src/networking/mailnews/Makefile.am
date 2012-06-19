@@ -11,12 +11,9 @@ CHANGE_FILES = \
 	mailnews.ch  \
 	mailx.ch     \
 	mutt.ch      \
-	pine.ch      \
 	other.ch     \
 	procmail.ch  \
-	re-alpine.ch \
-	slrn.ch      \
-	tin.ch
+	re-alpine.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -35,8 +32,5 @@ mailnews.xml:  $(BOOKdir)/$@ $(srcdir)/mailnews.ch
 mailx.xml:     $(BOOKdir)/$@ $(srcdir)/mailx.ch
 mutt.xml:      $(BOOKdir)/$@ $(srcdir)/mutt.ch
 other.xml:     $(BOOKdir)/$@ $(srcdir)/other.ch
-pine.xml:      $(BOOKdir)/$@ $(srcdir)/pine.ch
 procmail.xml:  $(BOOKdir)/$@ $(srcdir)/procmail.ch
 re-alpine.xml: $(BOOKdir)/$@ $(srcdir)/re-alpine.ch
-slrn.xml:      $(BOOKdir)/$@ $(srcdir)/slrn.ch
-tin.xml:       $(BOOKdir)/$@ $(srcdir)/tin.ch

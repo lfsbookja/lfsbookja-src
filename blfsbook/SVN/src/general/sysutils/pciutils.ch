@@ -105,51 +105,23 @@
 @z
 
 @x
-    <para>First, fix a minor script error.  If you want to compress the PCI
-    data, use 1 instead of 0 in the instruction below.  The uncompressed data
-    is currently about 710KB.</para>
+      Install <application>PCI Utilities</application> by
+      running the following commands:
 @y
-    <para>
-    まずはスクリプトエラーを修正します。
-    PCI データを圧縮して保持したい場合は、上のコマンドにて 0 を 1 に変更してください。
-    圧縮しない場合のデータ容量は約 710 KB です。
-    </para>
+      以下のコマンドを実行して <application>PCI Utilities</application> をビルドします。
 @z
 
 @x
-    <para>Install <application>PCI Utilities</application> by
-    running the following commands:</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    以下のコマンドを実行して <application>PCI Utilities</application> をビルドします。
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>&notTestSuite;</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
-
-@x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-% @x
-%     <para>Some packages require the PCI static library. To install the library
-%     and headers, issue the following command as the
-%     <systemitem class="username">root</systemitem> user:</para>
-% @y
-%     <para>
-%     他のパッケージの中には PCI のスタティックライブラリを必要とするものがあります。
-%     スタティックライブラリおよびそのヘッダファイルをインストールするために <systemitem
-%     class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-%     </para>
-% @z
 
 @x
     <title>Command Explanations</title>
@@ -158,22 +130,27 @@
 @z
 
 @x
-    <para><parameter>ZLIB=no</parameter>: This parameter prevents compression of
-    the <filename>pci.ids</filename> file.</para>
+      <parameter>ZLIB=no</parameter>: This parameter prevents compression of
+      the <filename>pci.ids</filename> file.
 @y
-    <para>
-    <parameter>ZLIB=no</parameter>:
-    このパラメーターは <filename>pci.ids</filename> ファイルが圧縮されないようにします。
-    </para>
+      <parameter>ZLIB=no</parameter>:
+      このパラメーターは <filename>pci.ids</filename> ファイルが圧縮されないようにします。
 @z
 
 @x
-    <para><parameter>SHARED=yes</parameter>: This parameter enables building of
-    shared library instead of static one.</para>
+      <parameter>SHARED=yes</parameter>: This parameter enables building of
+      shared library instead of static one.
 @y
-    <para><parameter>SHARED=yes</parameter>:
-    このパラメーターは、スタティックライブラリのかわりに共有ライブラリをビルドすることを指示します。
-    </para>
+      <parameter>SHARED=yes</parameter>:
+      このパラメーターは、スタティックライブラリのかわりに共有ライブラリをビルドすることを指示します。
+@z
+
+@x
+      <parameter>PCI_COMPRESSED_IDS=0</parameter>: This parameter ensures
+      that compression won't be used when updating <filename>pci.ids</filename>.
+@y
+      <parameter>PCI_COMPRESSED_IDS=0</parameter>: This parameter ensures
+      that compression won't be used when updating <filename>pci.ids</filename>.
 @z
 
 @x

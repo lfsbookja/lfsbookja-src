@@ -183,10 +183,28 @@
 @z
 
 @x
-  <bridgehead renderas="sect2">Part IX - X Software</bridgehead>
+  <bridgehead renderas="sect2">Part IX - Xfce</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 IX 部 - X ソフトウェア
+  第 IX 部 - Xfce
+  </bridgehead>
+@z
+
+@x
+  <para><application>Xfce</application> is an lightweight alternative to
+  <application>GNOME</application> and <application>KDE</application>.
+  </para>
+@y
+  <para><application>Xfce</application> is an lightweight alternative to
+  <application>GNOME</application> and <application>KDE</application>.
+  </para>
+@z
+
+@x
+  <bridgehead renderas="sect2">Part X - X Software</bridgehead>
+@y
+  <bridgehead renderas="sect2">
+  第 X 部 - X ソフトウェア
   </bridgehead>
 @z
 
@@ -202,10 +220,10 @@
 @z
 
 @x
-  <bridgehead renderas="sect2">Part X - Multimedia</bridgehead>
+  <bridgehead renderas="sect2">Part XI - Multimedia</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 X 部 - マルチメディア
+  第 XI 部 - マルチメディア
   </bridgehead>
 @z
 
@@ -219,11 +237,11 @@
 @z
 
 @x
-  <bridgehead renderas="sect2">Part XI - Printing, Scanning and
+  <bridgehead renderas="sect2">Part XII - Printing, Scanning and
   Typesetting (PST)</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 XI 部 - 印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
+  第 XII 部 - 印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
   </bridgehead>
 @z
 

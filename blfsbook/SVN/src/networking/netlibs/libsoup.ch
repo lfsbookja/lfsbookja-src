@@ -20,12 +20,13 @@
 @z
 
 @x
-      The <application>libsoup</application> is HTTP client/server library for GNOME.
-      It uses GObject and the glib main loop to integrate with GNOME applications and 
+      The <application>libsoup</application> is HTTP client/server library for
+      <application>GNOME</application>. It uses GObject and the GLib main loop
+      to integrate with <application>GNOME</application> applications and 
       it also has asynchronous API for use in threaded applications.
 @y
-      <application>libsoup</application> は GNOME に対しての HTTP クライアント/サーバーライブラリです。
-      GObject と glib メインループの利用により GNOME アプリケーションをサポートします。
+      <application>libsoup</application> は <application>GNOME</application> に対しての HTTP クライアント/サーバーライブラリです。
+      GObject と GLib メインループの利用により GNOME アプリケーションをサポートします。
       またスレッドアプリケーションが利用する非同期 API も提供します。
 @z
 
@@ -92,14 +93,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgnome-keyring"/> and 
       <xref linkend="sqlite"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended; (GNOME ビルド時は必須)</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgnome-keyring"/>,
@@ -124,7 +125,7 @@
       <xref linkend="apache"/> (テストスイート実行時に必要),
       <xref linkend="curl"/> (テストスイート実行時に必要),
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink> サポートがビルドされている  <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される),
+      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink> サポートがビルドされている <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される),
       <xref linkend="samba3"/> (テストスイートを実行する場合は ntlm_auth が必要)
     </para>
 @z

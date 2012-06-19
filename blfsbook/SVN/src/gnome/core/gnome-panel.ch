@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>GNOME Panel</application> package
-    contains hooks to the menu sub-system and the applet sub-system.</para>
+      The <application>GNOME Panel</application> package
+      contains hooks to the menu sub-system and the applet sub-system.
 @y
-    <para>
-    <application>GNOME Panel</application> パッケージは、メニューやアプレットシステムに対してのフック関数を提供します。
-    </para>
+      <application>GNOME Panel</application> パッケージは、メニューやアプレットシステムに対してのフック関数を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-panel-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-panel-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-panel-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-panel-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-panel-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-panel-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-panel-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-panel-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-panel-md5sum;</para>
+          Download MD5 sum: &gnome-panel-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-panel-md5sum;</para>
+          &Download; MD5 sum: &gnome-panel-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-panel-size;</para>
+          Download size: &gnome-panel-size;
 @y
-        <para>&DownloadSize;: &gnome-panel-size;</para>
+          &DownloadSize;: &gnome-panel-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-panel-buildsize;</para>
+          Estimated disk space required: &gnome-panel-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-panel-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-panel-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-panel-time;</para>
+          Estimated build time: &gnome-panel-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-panel-time;</para>
+          &Estimatedbuildtime;: &gnome-panel-time;
 @z
 
 @x
@@ -131,23 +129,19 @@
 @z
 
 @x
-      <para>The <application>libxml2</application>
-      <application>Python</application> module must have been built during the
-      installation of <application>libxml2</application> else the
-      <application>GNOME Panel</application> build will fail.</para>
+        The <application>libxml2</application>
+        <application>Python</application> module must have been built during the
+        installation of <application>libxml2</application> else the
+        <application>GNOME Panel</application> build will fail.
 @y
-      <para>
-      <application>libxml2</application> をビルドする際に <application>Python</application> モジュールをインストールしておかなければなりません。
-      これがないと <application>GNOME Panel</application> のビルドは失敗します。
-      </para>
+        <application>libxml2</application> をビルドする際に <application>Python</application> モジュールをインストールしておかなければなりません。
+        これがないと <application>GNOME Panel</application> のビルドは失敗します。
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-panel"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-panel"/></para>
 @z
 
 @x
@@ -157,28 +151,22 @@
 @z
 
 @x
-    <para>Install <application>GNOME Panel</application> by
-    running the following commands:</para>
+      Install <application>GNOME Panel</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME Panel</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Panel</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -188,17 +176,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
-    This parameter causes the libexec files to be installed in the preferred
-    location of <filename
-    class="directory">/usr/lib/gnome-applets</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
+      This parameter causes the libexec files to be installed in the preferred
+      location of <filename
+      class="directory">/usr/lib/gnome-applets</filename> instead of
+      <filename class="directory">/usr/libexec</filename>.
 @y
-    <para><parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
-    This parameter causes the libexec files to be installed in the preferred
-    location of <filename
-    class="directory">/usr/lib/gnome-applets</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
+      This parameter causes the libexec files to be installed in the preferred
+      location of <filename
+      class="directory">/usr/lib/gnome-applets</filename> instead of
+      <filename class="directory">/usr/libexec</filename>.
 @z
 
 @x
@@ -225,22 +213,26 @@
           libpanel-applet-4.so
         </seg>
         <seg>
-          /usr/include/gnome-panel-4.0, /usr/lib/gnome-applets,
-          /usr/share/gnome/help/{clock,fish}, /usr/share/gnome-panel,
+          /usr/include/gnome-panel-4.0,
+          /usr/lib/gnome-applets,
+          /usr/share/gnome/help/{clock,fish},
+          /usr/share/gnome-panel,
           /usr/share/gtk-doc/html/panel-applet-4.0 and
           /usr/share/omf/{clock,fish}
         </seg>
 @y
         <seg>
-          gnome-desktop-item-edit, gnome-panel, panel-test-applets
+          gnome-desktop-item-edit, gnome-panel and panel-test-applets
         </seg>
         <seg>
           libpanel-applet-4.so
         </seg>
         <seg>
-          /usr/include/gnome-panel-4.0, /usr/lib/gnome-applets,
-          /usr/share/gnome/help/{clock,fish}, /usr/share/gnome-panel,
-          /usr/share/gtk-doc/html/panel-applet-4.0,
+          /usr/include/gnome-panel-4.0,
+          /usr/lib/gnome-applets,
+          /usr/share/gnome/help/{clock,fish},
+          /usr/share/gnome-panel,
+          /usr/share/gtk-doc/html/panel-applet-4.0 and
           /usr/share/omf/{clock,fish}
         </seg>
 @z
@@ -251,11 +243,18 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libpanel-applet-2.{so,a}
-          <para>allow development of small applications (applets) which
-          may be embedded in the panel.</para>
+@x gnome-panel
+            provides the panels for the the <application>GNOME</application>
+            Desktop.
 @y
-          <para>
-          パネルに埋め込まれる小さなアプリケーション (アプレット) の開発を実現します。
-          </para>
+            provides the panels for the the <application>GNOME</application>
+            Desktop.
+@z
+
+@x libpanel-applet-4.so
+            contains functions used for development of small applications 
+            (applets) which may be embedded in the panel.
+@y
+            contains functions used for development of small applications 
+            (applets) which may be embedded in the panel.
 @z

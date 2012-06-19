@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=graphweb office other suites
+SUBDIRS=graphweb office other
 BOOKdir = $(top_builddir)/@bookdir@/xsoft
 EXTRA_DIST = xsoft.ch
 srcdir = @srcdir@

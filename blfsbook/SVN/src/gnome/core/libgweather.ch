@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>The <application>libgweather</application> package is a library to
-    access weather information from online services for numerous
-    locations.</para>
+      The <application>libgweather</application> package is a library used
+      to access weather information from online services for numerous
+      locations.
 @y
-    <para>
-    <application>libgweather</application> パッケージは、各所からの気象情報オンラインサービスへアクセスするライブラリを提供します。
-    </para>
+      <application>libgweather</application> パッケージは、各所からの気象情報オンラインサービスへアクセスするライブラリを提供します。
 @z
 
 @x
@@ -36,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libgweather-download-http;"/></para>
+          Download (HTTP): <ulink url="&libgweather-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libgweather-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libgweather-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libgweather-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libgweather-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libgweather-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libgweather-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libgweather-md5sum;</para>
+          Download MD5 sum: &libgweather-md5sum;
 @y
-        <para>&Download; MD5 sum: &libgweather-md5sum;</para>
+          &Download; MD5 sum: &libgweather-md5sum;
 @z
 
 @x
-        <para>Download size: &libgweather-size;</para>
+          Download size: &libgweather-size;
 @y
-        <para>&DownloadSize;: &libgweather-size;</para>
+          &DownloadSize;: &libgweather-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libgweather-buildsize;</para>
+          Estimated disk space required: &libgweather-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libgweather-buildsize;</para>
+          &Estimateddiskspacerequired;: &libgweather-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libgweather-time;</para>
+          Estimated build time: &libgweather-time;
 @y
-        <para>&Estimatedbuildtime;: &libgweather-time;</para>
+          &Estimatedbuildtime;: &libgweather-time;
 @z
 
 @x
@@ -119,10 +117,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libgweather"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libgweather"/></para>
 @z
 
 @x
@@ -132,26 +128,22 @@
 @z
 
 @x
-    <para>Install <application>libgweather</application> by running the following
-    commands:</para>
+      Install <application>libgweather</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libgweather</application> をインストールします。
-    </para>
+      以下のコマンドを実行して <application>libgweather</application> をインストールします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -161,11 +153,11 @@
 @z
 
 @x
-    <para><option>--enable-locations-compression</option>: 
-    Compress Locations.xml files.</para>
+      <option>--enable-locations-compression</option>: This
+      parameter enables compression of Locations.xml files.
 @y
-    <para><option>--enable-locations-compression</option>: 
-    Compress Locations.xml files.</para>
+      <option>--enable-locations-compression</option>: This
+      parameter enables compression of Locations.xml files.
 @z
 
 @x
@@ -209,10 +201,8 @@
 @z
 
 @x libgweather.{so,a}
-          <para>contains functions that allow the retrieval of weather
-          information.</para>
+            contains functions that allow the retrieval of weather
+            information.
 @y
-          <para>
-          気象情報を抽出するための関数を提供します。
-          </para>
+            気象情報を抽出するための関数を提供します。
 @z

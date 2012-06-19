@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>The <application>JSON-GLib</application> package is a library
-    providing serialization and deserialization support for the JavaScript
-    Object Notation (JSON) format described by RFC 4627.</para>
+      The <application>JSON-GLib</application> package is a library
+      providing serialization and deserialization support for the JavaScript
+      Object Notation (JSON) format described by RFC 4627.
 @y
-    <para>
-    <application>JSON-GLib</application> パッケージは、RFC 4627 によって規定される JSON (JavaScript Object Notation) フォーマットに対してのシリアライズ、デシリアライズ機能を提供します。
-    </para>
+      <application>JSON-GLib</application> パッケージは、RFC 4627 によって規定される JSON (JavaScript Object Notation) フォーマットに対してのシリアライズ、デシリアライズ機能を提供します。
 @z
 
 @x
@@ -36,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&json-glib-download-http;"/></para>
+          Download (HTTP): <ulink url="&json-glib-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&json-glib-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&json-glib-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&json-glib-download-ftp;"/></para>
+          Download (FTP): <ulink url="&json-glib-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&json-glib-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&json-glib-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &json-glib-md5sum;</para>
+          Download MD5 sum: &json-glib-md5sum;
 @y
-        <para>&Download; MD5 sum: &json-glib-md5sum;</para>
+          &Download; MD5 sum: &json-glib-md5sum;
 @z
 
 @x
-        <para>Download size: &json-glib-size;</para>
+          Download size: &json-glib-size;
 @y
-        <para>&DownloadSize;: &json-glib-size;</para>
+          &DownloadSize;: &json-glib-size;
 @z
 
 @x
-        <para>Estimated disk space required: &json-glib-buildsize;</para>
+          Estimated disk space required: &json-glib-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &json-glib-buildsize;</para>
+          &Estimateddiskspacerequired;: &json-glib-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &json-glib-time;</para>
+          Estimated build time: &json-glib-time;
 @y
-        <para>&Estimatedbuildtime;: &json-glib-time;</para>
+          &Estimatedbuildtime;: &json-glib-time;
 @z
 
 @x
@@ -80,12 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @z
 
@@ -126,28 +124,22 @@
 @z
 
 @x
-    <para>Install <application>JSON-GLib</application> by running the following
-    commands:</para>
+      Install <application>JSON-GLib</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>JSON-GLib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>JSON-GLib</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -195,10 +187,7 @@
 @z
 
 @x libjson-glib-1.0.so
-          <para>contains the <application>JSON-GLib</application> API
-          functions.</para>
+            contains the <application>JSON-GLib</application> API functions.
 @y
-          <para>
-          <application>JSON-GLib</application> API 関数を提供します。
-          </para>
+            <application>JSON-GLib</application> API 関数を提供します。
 @z

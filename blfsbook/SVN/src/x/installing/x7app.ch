@@ -115,12 +115,14 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="libpng"/>,
     <xref linkend="mesalib"/> (required for OpenGL support),
+    <xref linkend="xbitmaps"/>,
     <xref linkend="xcb-util"/>, and
     <xref linkend="xorg7-lib"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="libpng"/>,
     <xref linkend="mesalib"/> (OpenGL サポートに必要),
+    <xref linkend="xbitmaps"/>,
     <xref linkend="xcb-util"/>,
     <xref linkend="xorg7-lib"/></para>
 @z
@@ -189,22 +191,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><command>sed -i -e '/^rcdir =/s...</command>: This command ensures
-    the <application>twm</application> configuration file gets installed in 
-    the proper location.</para>
-@y
-    <para><command>sed -i -e '/^rcdir =/s...</command>:
-    このコマンドは <application>twm</application> の設定ファイルを、適切なディレクトリへインストールするようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -222,22 +208,22 @@
 
 @x
         <seg>bdftopcf, iceauth, luit, mkfontdir,mkfontscale, sessreg,
-        setxkbmap, smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock,
+        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, 
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
-        xinit, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
+        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
         xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
         xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>None</seg>
-        <seg>/etc/X11/app-defaults</seg>
+        <seg>None</seg>
 @y
         <seg>bdftopcf, iceauth, luit, mkfontdir,mkfontscale, sessreg,
-        setxkbmap, smproxy, startx, twm, x11perf, x11perfcomp, xauth, xclock,
+        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, 
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
-        xinit, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
+        xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
         xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
         xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
-        <seg>なし</seg>
-        <seg>/etc/X11/app-defaults</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -302,18 +288,6 @@
           <para>is the Session Manager Proxy.</para>
 @y
           <para>セッションマネージャープロキシー (Session Manager Proxy)</para>
-@z
-
-@x startx
-          <para>initializes an X session.</para>
-@y
-          <para>X セッションを初期化します。</para>
-@z
-
-@x
-          <para>is the Tab Window Manager for the X Window System.</para>
-@y
-          <para>X ウィンドウシステムにおける twm (Tab Window Manager)</para>
 @z
 
 @x x11perf

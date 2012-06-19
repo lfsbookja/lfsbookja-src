@@ -100,9 +100,9 @@
     <para role="recommended">
     <xref linkend="libiodbc"/>,
     <xref linkend="libxml2"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="openldap"/> and
-    <xref linkend="jdk"/>
+    <xref linkend="openssl"/> and
+    <xref linkend="openldap"/>.
+   <!--<xref linkend="jdk"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -110,8 +110,8 @@
     <xref linkend="libiodbc"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="openssl"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="jdk"/>
+    <xref linkend="openldap"/>.
+   <!--<xref linkend="jdk"/>-->
     </para>
 @z
 
@@ -197,14 +197,6 @@
     <application>Virtuoso</application> as well as <application>unixODBC</application>
     installs a program named <command>isql</command>. Use this option to rename
     <application>virtuoso</application>s program to <command>isql-v</command></para>
-@z
-
-@x
-    <para><option>--with-jdk4</option>: Add this option to specify the path
-    to the <xref linkend="jdk"/> and to enable making use of Java.</para>
-@y
-    <para><option>--with-jdk4</option>: Add this option to specify the path
-    to the <xref linkend="jdk"/> and to enable making use of Java.</para>
 @z
 
 @x

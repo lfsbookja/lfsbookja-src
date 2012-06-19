@@ -19,21 +19,17 @@ CHANGE_FILES = \
 	icon-naming-utils.ch \
 	imagemagick.ch \
 	intltool.ch \
-	pilot-link.ch \
 	pinentry.ch \
-	recode.ch \
 	rep-gtk.ch \
-	rman.ch \
 	rxvt-unicode.ch \
 	screen.ch \
-	scrollkeeper.ch	\
 	tidy.ch \
 	unixodbc.ch \
 	xscreensaver.ch \
 	rarian.ch \
 	libiodbc.ch \
 	sharutils.ch \
-	ggz-client-libs.ch \
+	spidermonkey.ch \
 	autogen.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -60,19 +56,15 @@ hd2u.xml:               $(BOOKdir)/$@ $(srcdir)/hd2u.ch
 icon-naming-utils.xml:  $(BOOKdir)/$@ $(srcdir)/icon-naming-utils.ch
 imagemagick.xml:        $(BOOKdir)/$@ $(srcdir)/imagemagick.ch
 intltool.xml:           $(BOOKdir)/$@ $(srcdir)/intltool.ch
-pilot-link.xml:         $(BOOKdir)/$@ $(srcdir)/pilot-link.ch
 pinentry.xml:           $(BOOKdir)/$@ $(srcdir)/pinentry.ch
-recode.xml:             $(BOOKdir)/$@ $(srcdir)/recode.ch
 rep-gtk.xml:            $(BOOKdir)/$@ $(srcdir)/rep-gtk.ch
-rman.xml:               $(BOOKdir)/$@ $(srcdir)/rman.ch
 rxvt-unicode.xml:       $(BOOKdir)/$@ $(srcdir)/rxvt-unicode.ch
 screen.xml:             $(BOOKdir)/$@ $(srcdir)/screen.ch
-scrollkeeper.xml:       $(BOOKdir)/$@ $(srcdir)/scrollkeeper.ch
 tidy.xml:               $(BOOKdir)/$@ $(srcdir)/tidy.ch
 unixodbc.xml:           $(BOOKdir)/$@ $(srcdir)/unixodbc.ch
 xscreensaver.xml:       $(BOOKdir)/$@ $(srcdir)/xscreensaver.ch
 rarian.xml:             $(BOOKdir)/$@ $(srcdir)/rarian.ch
 libiodbc.xml:           $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 sharutils.xml:          $(BOOKdir)/$@ $(srcdir)/sharutils.ch
-ggz-client-libs.xml:    $(BOOKdir)/$@ $(srcdir)/ggz-client-libs.ch
+spidermonkey.xml:       $(BOOKdir)/$@ $(srcdir)/spidermonkey.ch
 autogen.xml:            $(BOOKdir)/$@ $(srcdir)/autogen.ch

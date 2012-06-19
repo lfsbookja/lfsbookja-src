@@ -14,29 +14,29 @@
 @z
 
 @x
-    <title>Introduction to Nautilus-Sendto</title>
+    <title>Introduction to Nautilus Sendto</title>
 @y
-    <title>&IntroductionTo1;Nautilus-Sendto&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Nautilus Sendto&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Nautilus-Sendto</application> package provides the
-    <application>Nautilus</application> file manager with a context menu
-    component for quickly sending files to accounts in an
-    <application>Evolution</application> email address book, contacts on a
-    <application>Pidgin</application>, <application>Gajim</application> instant
-    messaging list, through <application>Thunderbird</application>, or through
-    <application>Claws Mail</application> (formerly <application>Sylpheed
-    Claws</application>).</para>
+      The <application>Nautilus Sendto</application> package provides the
+      <application>Nautilus</application> file manager with a context menu
+      component for quickly sending files to accounts in an
+      <application>Evolution</application> email address book, contacts on a
+      <application>Pidgin</application>, <application>Gajim</application> instant
+      messaging list, through <application>Thunderbird</application>, or through
+      <application>Claws Mail</application> (formerly <application>Sylpheed
+      Claws</application>).
 @y
-    <para>The <application>Nautilus-Sendto</application> package provides the
-    <application>Nautilus</application> file manager with a context menu
-    component for quickly sending files to accounts in an
-    <application>Evolution</application> email address book, contacts on a
-    <application>Pidgin</application>, <application>Gajim</application> instant
-    messaging list, through <application>Thunderbird</application>, or through
-    <application>Claws Mail</application> (formerly <application>Sylpheed
-    Claws</application>).</para>
+      The <application>Nautilus Sendto</application> package provides the
+      <application>Nautilus</application> file manager with a context menu
+      component for quickly sending files to accounts in an
+      <application>Evolution</application> email address book, contacts on a
+      <application>Pidgin</application>, <application>Gajim</application> instant
+      messaging list, through <application>Thunderbird</application>, or through
+      <application>Claws Mail</application> (formerly <application>Sylpheed
+      Claws</application>).
 @z
 
 @x
@@ -46,45 +46,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&nautilus-sendto-download-http;"/></para>
+          Download (HTTP): <ulink url="&nautilus-sendto-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&nautilus-sendto-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&nautilus-sendto-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&nautilus-sendto-download-ftp;"/></para>
+          Download (FTP): <ulink url="&nautilus-sendto-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&nautilus-sendto-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&nautilus-sendto-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &nautilus-sendto-md5sum;</para>
+          Download MD5 sum: &nautilus-sendto-md5sum;
 @y
-        <para>&Download; MD5 sum: &nautilus-sendto-md5sum;</para>
+          &Download; MD5 sum: &nautilus-sendto-md5sum;
 @z
 
 @x
-        <para>Download size: &nautilus-sendto-size;</para>
+          Download size: &nautilus-sendto-size;
 @y
-        <para>&DownloadSize;: &nautilus-sendto-size;</para>
+          &DownloadSize;: &nautilus-sendto-size;
 @z
 
 @x
-        <para>Estimated disk space required: &nautilus-sendto-buildsize;</para>
+          Estimated disk space required: &nautilus-sendto-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &nautilus-sendto-buildsize;</para>
+          &Estimateddiskspacerequired;: &nautilus-sendto-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &nautilus-sendto-time;</para>
+          Estimated build time: &nautilus-sendto-time;
 @y
-        <para>&Estimatedbuildtime;: &nautilus-sendto-time;</para>
+          &Estimatedbuildtime;: &nautilus-sendto-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">Nautilus-Sendto Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Nautilus Sendto Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Nautilus-Sendto&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Nautilus Sendto&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -127,39 +127,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/nautilus-sendto"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/nautilus-sendto"/></para>
 @z
 
 @x
-    <title>Installation of Nautilus-Sendto</title>
+    <title>Installation of Nautilus Sendto</title>
 @y
-    <title>&InstallationOf1;Nautilus-Sendto&InstallationOf2;</title>
+    <title>&InstallationOf1;Nautilus Sendto&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Nautilus-Sendto</application> by running the following
-    commands:</para>
+      Install <application>Nautilus Sendto</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Nautilus-Sendto</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Nautilus Sendto</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -187,7 +181,8 @@
           nautilus-sendto
         </seg>
         <seg>
-          /usr/include/nautilus-sendto, /usr/lib/nautilus-sendto,
+          /usr/include/nautilus-sendto,
+          /usr/lib/nautilus-sendto,
           /usr/share/gtk-doc/html/nautilus-sendto and
           /usr/share/nautilus-sendto
         </seg>
@@ -196,7 +191,8 @@
           nautilus-sendto
         </seg>
         <seg>
-          /usr/include/nautilus-sendto, /usr/lib/nautilus-sendto,
+          /usr/include/nautilus-sendto,
+          /usr/lib/nautilus-sendto,
           /usr/share/gtk-doc/html/nautilus-sendto,
           /usr/share/nautilus-sendto
         </seg>
@@ -209,10 +205,8 @@
 @z
 
 @x nautilus-sendto
-          <para>is a convenience application to send a file via email or instant
-          messenger.</para>
+            is a convenience application used to send a file via email
+            or instant messenger.
 @y
-          <para>
-          電子メールやインスタントメッセンジャーにファイル送信するためのアプリケーション。
-          </para>
+            電子メールやインスタントメッセンジャーにファイル送信するためのアプリケーション。
 @z

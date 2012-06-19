@@ -133,21 +133,26 @@
 @z
 
 @x
-      <parameter>$([ $(uname -m) ... --enable-64bit</parameter>: This parameter is
-      required <emphasis>on an x86_64 system</emphasis> to prevent
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: The --enable-64bit option is
+      <emphasis>required</emphasis> on an x86_64 system to prevent
       <command>configure</command> failing with a claim that this is a system
-      without pthread support. It has no effect on a 32 bit system.
+      without pthread support. The [ $(uname -m) = x86_64 ] test ensures it has
+      no effect on a 32 bit system.
 @y
-      <parameter>$([ $(uname -m) ... --enable-64bit</parameter>: 
-      このパラメーターは <emphasis>x86_64 システム</emphasis> において、pthread サポートが無効であることを示す警告とともに <command>configure</command> が失敗することを回避するものです。
-      32 ビットシステムでは、この指定は意味がありません。
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: 
+      この --enable-64bit オプションは、x86_64 システム上にて <command>configure</command> コマンドを実行した際に pthread サポートが無効であることを示す警告が発生するのを防ぐものです。
+      32 ビットシステムではこの指定は意味がないため [ $(uname -m) = x86_64 ] という確認を行っています。
 @z
 
 @x
-      <command>sed -i 's#^\(RELEASE_BINS ...</command>: This disables installing
-      two unneeded scripts.
+      <command>sed -ri 's#^(RELEASE_BINS =).*#\1#'
+      pr/src/misc/Makefile.in</command>: This disables installing two unneeded
+      scripts.
 @y
-      <command>sed -i 's#^\(RELEASE_BINS ...</command>: 
+      <command>sed -ri 's#^(RELEASE_BINS =).*#\1#'
+      pr/src/misc/Makefile.in</command>:
       これは不要なスクリプト２つをインストールしないようにします。
 @z
 
@@ -160,12 +165,11 @@
 @z
 
 @x
-    <para><command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>Create a 
-     pkg-config file to help other programs finding the nspr libraries.</para>
+      <command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>: This creates a 
+      pkg-config file to help other programs find the nspr libraries.
 @y
-    <para><command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>
-    これは他のプログラムが nspr ライブラリを探し出せるように、pkg-config ファイルを生成するものです。
-    </para>
+      <command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>:
+      これは他のプログラムが nspr ライブラリを探し出せるように pkg-config ファイルを生成するものです。
 @z
 
 @x

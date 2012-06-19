@@ -80,10 +80,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required"><xref linkend="glib2"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pkgconfig"/></para>
+    <para role="required"><xref linkend="glib2"/></para>
 @z
 
 @x
@@ -98,10 +98,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libidl"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libidl"/></para>
 @z
 
 @x

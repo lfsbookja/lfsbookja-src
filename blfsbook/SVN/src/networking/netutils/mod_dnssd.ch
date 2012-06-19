@@ -26,19 +26,17 @@
 @z
 
 @x
-    <para>The <application>mod_dnssd</application> package is an
-    <application>Apache</application> HTTPD module which adds Zeroconf support
-    via DNS-SD using <application>Avahi</application>. This allows
-    <application>Apache</application> to advertise itself and the websites
-    available to clients compatible with the protocol.</para>
+      The <application>mod_dnssd</application> package is an
+      <application>Apache</application> HTTPD module which adds Zeroconf support
+      via DNS-SD using <application>Avahi</application>. This allows
+      <application>Apache</application> to advertise itself and the websites
+      available to clients compatible with the protocol.
 @y
-    <para>
-    <application>mod_dnssd</application> パッケージは、<application>Avahi</application> を用いた DNS-SD を経由して Zeroconf 機能を付与する、<application>Apache</application> の HTTPD モジュールです。
-    
-    This allows
-    <application>Apache</application> to advertise itself and the websites
-    available to clients compatible with the protocol.
-    </para>
+      The <application>mod_dnssd</application> package is an
+      <application>Apache</application> HTTPD module which adds Zeroconf support
+      via DNS-SD using <application>Avahi</application>. This allows
+      <application>Apache</application> to advertise itself and the websites
+      available to clients compatible with the protocol.
 @z
 
 @x
@@ -48,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mod_dnssd-download-http;"/></para>
+          Download (HTTP): <ulink url="&mod_dnssd-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&mod_dnssd-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&mod_dnssd-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mod_dnssd-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mod_dnssd-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&mod_dnssd-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&mod_dnssd-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &mod_dnssd-md5sum;</para>
+          Download MD5 sum: &mod_dnssd-md5sum;
 @y
-        <para>&Download; MD5 sum: &mod_dnssd-md5sum;</para>
+          &Download; MD5 sum: &mod_dnssd-md5sum;
 @z
 
 @x
-        <para>Download size: &mod_dnssd-size;</para>
+          Download size: &mod_dnssd-size;
 @y
-        <para>&DownloadSize;: &mod_dnssd-size;</para>
+          &DownloadSize;: &mod_dnssd-size;
 @z
 
 @x
-        <para>Estimated disk space required: &mod_dnssd-buildsize;</para>
+          Estimated disk space required: &mod_dnssd-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &mod_dnssd-buildsize;</para>
+          &Estimateddiskspacerequired;: &mod_dnssd-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &mod_dnssd-time;</para>
+          Estimated build time: &mod_dnssd-time;
 @y
-        <para>&Estimatedbuildtime;: &mod_dnssd-time;</para>
+          &Estimatedbuildtime;: &mod_dnssd-time;
 @z
 
 @x
@@ -91,28 +89,34 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="apache"/> and
-    <xref linkend="avahi"/></para>
+    <para role="required">
+      <xref linkend="apache"/> and
+      <xref linkend="avahi"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="apache"/>,
-    <xref linkend="avahi"/></para>
+    <para role="required">
+      <xref linkend="apache"/>,
+      <xref linkend="avahi"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="lynx"/></para>
+    <para role="optional">
+      <xref linkend="lynx"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="lynx"/></para>
+    <para role="optional">
+      <xref linkend="lynx"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/mod_dnssd"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/mod_dnssd"/></para>
 @z
 
 @x
@@ -122,26 +126,22 @@
 @z
 
 @x
-    <para>Install <application>mod_dnssd</application> by running the following
-    commands:</para>
+      Install <application>mod_dnssd</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>mod_dnssd</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>mod_dnssd</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -151,15 +151,13 @@
 @z
 
 @x
-    <para><parameter>--disable-lynx</parameter>: This parameter turns off
-    <application>Lynx</application> usage for documentation generation. Remove
-    it if you have <application>Lynx</application> installed.</para>
+      <option>--disable-lynx</option>: This parameter turns off
+      <application>Lynx</application> usage for documentation generation.
+      Remove it if you have <application>Lynx</application> installed.
 @y
-    <para>
-    <parameter>--disable-lynx</parameter>:
-    このパラメーターは、ドキュメント生成にあたり <application>Lynx</application> を用いないようにします。
-    <application>Lynx</application> をインストールしている場合は、このパラメーターを取り除いてください。
-    </para>
+      <option>--disable-lynx</option>:
+      このパラメーターは、ドキュメント生成にあたり <application>Lynx</application> を用いないようにします。
+      <application>Lynx</application> をインストールしている場合は、このパラメーターを取り除いてください。
 @z
 
 @x
@@ -169,23 +167,15 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
         <seg>mod_dnssd.so</seg>
-        <seg>None</seg>
 @y
-        <seg>&None;</seg>
         <seg>mod_dnssd.so</seg>
-        <seg>&None;</seg>
 @z
 
 @x

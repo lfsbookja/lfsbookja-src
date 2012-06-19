@@ -21,12 +21,12 @@
 
 @x
     <para><application>Speex</application> is an audio compression format
-    designed especially for speech. It is well-adapted to Internet applications
+    designed especially for speech. It is well-adapted to internet applications
     and provides useful features that are not present in most other
     CODECs.</para>
 @y
     <para><application>Speex</application> is an audio compression format
-    designed especially for speech. It is well-adapted to Internet applications
+    designed especially for speech. It is well-adapted to internet applications
     and provides useful features that are not present in most other
     CODECs.</para>
 @z

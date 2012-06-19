@@ -147,6 +147,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/x/lib
 CHANGE_FILES = \
+	agg.ch \
 	atk.ch \
 	atkmm.ch \
 	cairo.ch \
@@ -165,7 +166,6 @@ CHANGE_FILES = \
 	gtk-vnc.ch \
 	gtk-engines.ch \
 	hicolor-icon-theme.ch \
-	lesstif.ch \
 	lib.ch \
 	libnotify.ch \
 	libsexy.ch \
@@ -174,7 +174,6 @@ CHANGE_FILES = \
 	notification-daemon.ch \
 	pango.ch \
 	pangomm.ch \
-	qt.ch \
 	qt4.ch \
 	shared-mime-info.ch \
 	startup-notification.ch \
@@ -375,6 +374,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+agg.xml:                  $(BOOKdir)/$@ $(srcdir)/agg.ch
 atk.xml:                  $(BOOKdir)/$@ $(srcdir)/atk.ch
 cairo.xml:                $(BOOKdir)/$@ $(srcdir)/cairo.ch
 clutter.xml:              $(BOOKdir)/$@ $(srcdir)/clutter.ch
@@ -386,16 +386,15 @@ gtk+2.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
 gtk-vnc.xml:              $(BOOKdir)/$@ $(srcdir)/gtk-vnc.ch
 gtkmm2.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm2.ch
 hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
-lesstif.xml:              $(BOOKdir)/$@ $(srcdir)/lesstif.ch
-	cp -p $(BOOKdir)/$@{,.orig}
-	sed -e 's/®/\&reg;/g' $(BOOKdir)/$@.orig > $(BOOKdir)/$@
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
-	cp -p $(BOOKdir)/$@{.orig,}
+#lesstif.xml:              $(BOOKdir)/$@ $(srcdir)/lesstif.ch
+#	cp -p $(BOOKdir)/$@{,.orig}
+#	sed -e 's/®/\&reg;/g' $(BOOKdir)/$@.orig > $(BOOKdir)/$@
+#	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+#	cp -p $(BOOKdir)/$@{.orig,}
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
 mx.xml:                   $(BOOKdir)/$@ $(srcdir)/mx.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
-qt.xml:                   $(BOOKdir)/$@ $(srcdir)/qt.ch
 qt4.xml:                  $(BOOKdir)/$@ $(srcdir)/qt4.ch
 shared-mime-info.xml:     $(BOOKdir)/$@ $(srcdir)/shared-mime-info.ch
 startup-notification.xml: $(BOOKdir)/$@ $(srcdir)/startup-notification.ch

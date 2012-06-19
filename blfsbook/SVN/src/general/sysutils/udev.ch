@@ -76,23 +76,21 @@
 @z
 
 @x
-    <para>This package is known to build and work properly using an LFS-6.5
-    platform. (Using Udev-151)</para>
-@y
-    <para>本パッケージは LFS-6.5 においてビルドでき動作することが確認されています。(Udev-151 利用)</para>
-@z
-
-@x
-    <para>&lfssvn_checked;20101029&lfssvn_checked2; (Using Udev-164)</para>
-@y
-    <para>&lfssvn_checked;20101029&lfssvn_checked2; (Udev-164 利用)</para>
-@z
-
-@x
     <para>This package is known to build and work properly using an LFS-7.0
     platform. (Using Udev-173)</para>
 @y
-    <para>本パッケージは LFS-7.0 においてビルドでき動作することが確認されています。(Udev-173 利用)</para>
+    <para>
+    本パッケージは LFS-7.0 においてビルドでき動作することが確認されています。(Udev-173 利用)
+    </para>
+@z
+
+@x
+    <para>This package is known to build and work properly using an LFS-7.1
+    platform. (Using Udev-182)</para>
+@y
+    <para>
+    本パッケージは LFS-7.1 においてビルドでき動作することが確認されています。(Udev-182 利用)
+    </para>
 @z
 
 @x
@@ -140,16 +138,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required"><xref linkend="acl"/>,
+    <xref linkend="glib2"/>,
     <xref linkend="gperf"/>,
-    <xref linkend="pciutils"/>,
-    <xref linkend="pkgconfig"/>, and
+    <xref linkend="pciutils"/>, and
     <xref linkend="usbutils"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required"><xref linkend="acl"/>,
+    <xref linkend="glib2"/>,
     <xref linkend="gperf"/>,
     <xref linkend="pciutils"/>,
-    <xref linkend="pkgconfig"/>,
     <xref linkend="usbutils"/></para>
 @z
 

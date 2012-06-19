@@ -20,17 +20,17 @@
 @z
 
 @x
-    <para><application>NetworkManager</application> is a set of co-operative
-    tools that make networking simple and straightforward. Whether WiFi, wired,
-    3G, or Bluetooth, NetworkManager allows you to quickly move from one network
-    to another: once a network has been configured and joined once, it can be
-    detected and re-joined automatically the next time its available.</para>
+      <application>NetworkManager</application> is a set of co-operative
+      tools that make networking simple and straightforward. Whether WiFi, wired,
+      3G, or Bluetooth, NetworkManager allows you to quickly move from one network
+      to another: once a network has been configured and joined once, it can be
+      detected and re-joined automatically the next time its available.
 @y
-    <para><application>NetworkManager</application> is a set of co-operative
-    tools that make networking simple and straightforward. Whether WiFi, wired,
-    3G, or Bluetooth, NetworkManager allows you to quickly move from one network
-    to another: once a network has been configured and joined once, it can be
-    detected and re-joined automatically the next time its available.</para>
+      <application>NetworkManager</application> is a set of co-operative
+      tools that make networking simple and straightforward. Whether WiFi, wired,
+      3G, or Bluetooth, NetworkManager allows you to quickly move from one network
+      to another: once a network has been configured and joined once, it can be
+      detected and re-joined automatically the next time its available.
 @z
 
 @x
@@ -40,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&NetworkManager-download-http;"/></para>
+          Download (HTTP): <ulink url="&NetworkManager-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&NetworkManager-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&NetworkManager-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&NetworkManager-download-ftp;"/></para>
+          Download (FTP): <ulink url="&NetworkManager-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&NetworkManager-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&NetworkManager-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &NetworkManager-md5sum;</para>
+          Download MD5 sum: &NetworkManager-md5sum;
 @y
-        <para>&Download; MD5 sum: &NetworkManager-md5sum;</para>
+          &Download; MD5 sum: &NetworkManager-md5sum;
 @z
 
 @x
-        <para>Download size: &NetworkManager-size;</para>
+          Download size: &NetworkManager-size;
 @y
-        <para>&DownloadSize;: &NetworkManager-size;</para>
+          &DownloadSize;: &NetworkManager-size;
 @z
 
 @x
-        <para>Estimated disk space required: &NetworkManager-buildsize;</para>
+          Estimated disk space required: &NetworkManager-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &NetworkManager-buildsize;</para>
+          &Estimateddiskspacerequired;: &NetworkManager-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &NetworkManager-time;</para>
+          Estimated build time: &NetworkManager-time;
 @y
-        <para>&Estimatedbuildtime;: &NetworkManager-time;</para>
+          &Estimatedbuildtime;: &NetworkManager-time;
 @z
 
 @x
@@ -82,9 +82,15 @@
 @z
 
 @x
-        <para>Required Patch: <ulink
+          Required Patch:
 @y
-        <para>必須のパッチ: <ulink
+          必須のパッチ:
+@z
+
+@x
+          Required Patch:
+@y
+          必須のパッチ:
 @z
 
 @x
@@ -97,12 +103,9 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="gnutls"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="libgcrypt"/>,
       <xref linkend="libnl"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="polkit"/>,
+      <xref linkend="nss"/>,
       <xref linkend="udev"/> and
       <xref linkend="wireless_tools"/>
     </para>
@@ -110,12 +113,9 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="gnutls"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="libgcrypt"/>,
       <xref linkend="libnl"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="polkit"/>,
+      <xref linkend="nss"/>,
       <xref linkend="udev"/>,
       <xref linkend="wireless_tools"/>
     </para>
@@ -126,8 +126,10 @@
     <para role="recommended">
       <xref linkend="consolekit"/>,
       <xref linkend="dhcpcd"/> or
-      <xref linkend="dhcp-client"/> and
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="dhcp-client"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libsoup"/> and
+      <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -135,7 +137,9 @@
       <xref linkend="consolekit"/>,
       <xref linkend="dhcpcd"/> または
       <xref linkend="dhcp-client"/>,
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libsoup"/>,
+      <xref linkend="polkit"/>
     </para>
 @z
 
@@ -172,28 +176,22 @@
 @z
 
 @x
-    <para>Install <application>NetworkManager</application> by running the following
-    commands:</para>
+      Install <application>NetworkManager</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>NetworkManager</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>NetworkManager</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -203,32 +201,29 @@
 @z
 
 @x
-    <para><parameter>--with-systemdsystemunitdir=no</parameter>: This parameter is
-    needed to avoid <application>systemd</application> files being installed.</para>
+      <parameter>--with-systemdsystemunitdir=no</parameter>: This parameter is
+      needed to avoid <application>systemd</application> files being installed.
 @y
-    <para><parameter>--with-systemdsystemunitdir=no</parameter>:
-    このパラメーターは <application>systemd</application> ファイルをインストールしない場合に必要です。
-    </para>
+      <parameter>--with-systemdsystemunitdir=no</parameter>:
+      このパラメーターは <application>systemd</application> ファイルをインストールしない場合に必要です。
 @z
 
 @x
-    <para><parameter>--with-crypto=gnutls</parameter>: This parameter ensures
-    the package uses <application>gnutls</application> for cryptography, instead
-    of <application>nss</application>.</para>
+      <option>--disable-ppp</option>: This parameter disables optional
+      <application>PPP</application> support in <application>NetworkManager</application>.
+      Omit if you have <xref linkend="ppp"/> installed.
 @y
-    <para><parameter>--with-crypto=gnutls</parameter>:
-    このパラメーターは、暗号化処理にあたって <application>nss</application> ではなく <application>gnutls</application> を利用することを指示します。
-    </para>
+      <option>--disable-ppp</option>: This parameter disables optional
+      <application>PPP</application> support in <application>NetworkManager</application>.
+      Omit if you have <xref linkend="ppp"/> installed.
 @z
 
 @x
-    <para><option>--with-distro=lfs</option>: This parameter is only needed if you
-    failed to create <filename>/etc/lfs-release</filename> when you installed LFS.
-    </para>
+      <parameter>--with-distro=lfs</parameter>: This parameter is only needed if you
+      failed to create <filename>/etc/lfs-release</filename> when you installed LFS.
 @y
-    <para><option>--with-distro=lfs</option>:
-    このパラメーターは、LFS のインストール時に <filename>/etc/lfs-release</filename> を生成していない場合にのみ指定します。
-    </para>
+      <parameter>--with-distro=lfs</parameter>:
+      このパラメーターは、LFS のインストール時に <filename>/etc/lfs-release</filename> を生成していない場合にのみ指定します。
 @z
 
 @x
@@ -313,9 +308,12 @@
           libnm-glib.so, libnm-glib-vpn.so and libnm-util.so
         </seg>
         <seg>
-          /etc/NetworkManager, /usr/include/libnm-glib,
-          /usr/include/NetworkManager, /usr/lib/NetworkManager,
-          /usr/share/NetworkManager, /var/lib/NetworkManager and
+          /etc/NetworkManager,
+          /usr/include/libnm-glib,
+          /usr/include/NetworkManager,
+          /usr/lib/NetworkManager,
+          /usr/share/NetworkManager,
+          /var/lib/NetworkManager and
           /var/run/NetworkManager
         </seg>
 @y
@@ -326,9 +324,12 @@
           libnm-glib.so, libnm-glib-vpn.so, libnm-util.so
         </seg>
         <seg>
-          /etc/NetworkManager, /usr/include/libnm-glib,
-          /usr/include/NetworkManager, /usr/lib/NetworkManager,
-          /usr/share/NetworkManager, /var/lib/NetworkManager,
+          /etc/NetworkManager,
+          /usr/include/libnm-glib,
+          /usr/include/NetworkManager,
+          /usr/lib/NetworkManager,
+          /usr/share/NetworkManager,
+          /var/lib/NetworkManager,
           /var/run/NetworkManager
         </seg>
 @z
@@ -340,47 +341,55 @@
 @z
 
 @x nmcli
-          <para>is a command-line tool for controlling NetworkManager 
-          and getting its status.</para>
+            is a command-line tool for controlling
+            <application>NetworkManager</application> 
+            and getting its status.
 @y
-          <para>is a command-line tool for controlling NetworkManager 
-          and getting its status.</para>
+            is a command-line tool for controlling
+            <application>NetworkManager</application> 
+            and getting its status.
 @z
 
 @x nm-online
-          <para>is a utility to find out whether we are online.</para>
+            is a utility to find out whether you are online.
 @y
-          <para>is a utility to find out whether we are online.</para>
+            is a utility to find out whether you are online.
 @z
 
 @x nm-tool
-          <para>is used to provide information about NetworkManager, 
-          device, and wireless networks.</para>
+            is used to provide information about
+            <application>NetworkManager</application>, 
+            device, and wireless networks.
 @y
-          <para>is used to provide information about NetworkManager, 
-          device, and wireless networks.</para>
+            is used to provide information about
+            <application>NetworkManager</application>, 
+            device, and wireless networks.
 @z
 
 @x NetworkManager
-          <para>is the network management daemon.</para>
+            is the network management daemon.
 @y
-          <para>is the network management daemon.</para>
+            is the network management daemon.
 @z
 
 @x libnm-glib.so
-          <para>contains functions used by NetworkManager.</para>
+            contains functions used by <application>NetworkManager</application>.
 @y
-          <para>contains functions used by NetworkManager.</para>
+            contains functions used by <application>NetworkManager</application>.
 @z
 
 @x libnm-glib-vpn.so
-          <para>contains functions used by NetworkManager VPN plugins.</para>
+            contains functions used by <application>NetworkManager</application>
+            VPN plugins.
 @y
-          <para>contains functions used by NetworkManager VPN plugins.</para>
+            contains functions used by <application>NetworkManager</application>
+            VPN plugins.
 @z
 
 @x libnm-util.so
-          <para>contains functions used by NetworkManager utils.</para>
+            contains functions used by <application>NetworkManager</application>
+            utils.
 @y
-          <para>contains functions used by NetworkManager utils.</para>
+            contains functions used by <application>NetworkManager</application>
+            utils.
 @z

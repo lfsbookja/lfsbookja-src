@@ -20,14 +20,11 @@
 @z
 
 @x
-    <para>The <application>libgnome-keyring</application> package is a program
-    that keeps password and other secrets for users. The library libgnome-keyring
-    is used by applications to integrate with the gnome keyring system.</para>
+      The <application>libgnome-keyring</application> is used by
+      applications to integrate with the
+      <application>GNOME Keyring</application> system.
 @y
-    <para>
-    <application>libgnome-keyring</application> パッケージは、各ユーザーのパスワードなどの情報を保持するプログラムを提供します。
-    libgnome-keyring ライブラリは、GNOME Keyring システムと連動したアプリケーションにおいて利用されます。
-    </para>
+      <application>libgnome-keyring</application> ライブラリは <application>GNOME Keyring</application> システムと連動したアプリケーションにおいて利用されます。
 @z
 
 @x
@@ -37,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libgnome-keyring-download-http;"/></para>
+          Download (HTTP): <ulink url="&libgnome-keyring-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libgnome-keyring-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libgnome-keyring-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libgnome-keyring-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libgnome-keyring-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libgnome-keyring-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libgnome-keyring-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libgnome-keyring-md5sum;</para>
+          Download MD5 sum: &libgnome-keyring-md5sum;
 @y
-        <para>&Download; MD5 sum: &libgnome-keyring-md5sum;</para>
+          &Download; MD5 sum: &libgnome-keyring-md5sum;
 @z
 
 @x
-        <para>Download size: &libgnome-keyring-size;</para>
+          Download size: &libgnome-keyring-size;
 @y
-        <para>&DownloadSize;: &libgnome-keyring-size;</para>
+          &DownloadSize;: &libgnome-keyring-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libgnome-keyring-buildsize;</para>
+          Estimated disk space required: &libgnome-keyring-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libgnome-keyring-buildsize;</para>
+          &Estimateddiskspacerequired;: &libgnome-keyring-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libgnome-keyring-time;</para>
+          Estimated build time: &libgnome-keyring-time;
 @y
-        <para>&Estimatedbuildtime;: &libgnome-keyring-time;</para>
+          &Estimatedbuildtime;: &libgnome-keyring-time;
 @z
 
 @x
@@ -82,17 +79,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="intltool"/>,
-      <xref linkend="libgcrypt"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/> and
+      <xref linkend="libgcrypt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="libgcrypt"/>
     </para>
 @z
 
@@ -124,41 +121,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libgnome-keyring"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libgnome-keyring"/></para>
 @z
 
 @x
     <title>Installation of libgnome-keyring</title>
 @y
-    <title>InstallationOflibgnome-keyring のインストール</title>
+    <title>&InstallationOf1;libgnome-keyring&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>libgnome-keyring</application> by running the following
-    commands:</para>
+      Install <application>libgnome-keyring</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libgnome-keyring</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libgnome-keyring</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -206,10 +195,8 @@
 @z
 
 @x libgnome-keyring.so
-          <para>is used by applications to integrate with the
-          <application>GNOME</application> keyring system.</para>
+            is used by applications to integrate with the
+            <application>GNOME Keyring</application> system.
 @y
-          <para>
-          <application>GNOME</application> Keyring システムと連動したアプリケーションにおいて利用されます。
-          </para>
+            <application>GNOME Keyring</application> システムと連動したアプリケーションにおいて利用されます。
 @z

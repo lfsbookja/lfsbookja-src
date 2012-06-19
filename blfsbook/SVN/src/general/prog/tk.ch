@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>Tk</application> package contains a
-    TCL GUI Toolkit.</para>
+      The <application>Tk</application> package contains a
+      TCL GUI Toolkit.
 @y
-    <para>
-    <application>Tk</application> パッケージは TCL GUI ツールキットです。
-    </para>
+      <application>Tk</application> パッケージは TCL GUI ツールキットです。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&tk-download-http;"/></para>
+          Download (HTTP): <ulink url="&tk-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&tk-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&tk-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&tk-download-ftp;"/></para>
+          Download (FTP): <ulink url="&tk-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&tk-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&tk-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &tk-md5sum;</para>
+          Download MD5 sum: &tk-md5sum;
 @y
-        <para>&Download; MD5 sum: &tk-md5sum;</para>
+          &Download; MD5 sum: &tk-md5sum;
 @z
 
 @x
-        <para>Download size: &tk-size;</para>
+          Download size: &tk-size;
 @y
-        <para>&DownloadSize;: &tk-size;</para>
+          &DownloadSize;: &tk-size;
 @z
 
 @x
-        <para>Estimated disk space required: &tk-buildsize;</para>
+          Estimated disk space required: &tk-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &tk-buildsize;</para>
+          &Estimateddiskspacerequired;: &tk-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &tk-time;</para>
+          Estimated build time: &tk-time;
 @y
-        <para>&Estimatedbuildtime;: &tk-time;</para>
+          &Estimatedbuildtime;: &tk-time;
 @z
 
 @x
@@ -78,20 +76,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="x-window-system"/> and
-    <xref linkend="tcl"/></para>
+    <para role="required">
+      <xref linkend="tcl"/> and
+      <xref linkend="xorg7-lib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="x-window-system"/>,
-    <xref linkend="tcl"/></para>
+    <para role="required">
+      <xref linkend="tcl"/>,
+      <xref linkend="xorg7-lib"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/tk"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/tk"/></para>
 @z
 
 @x
@@ -101,35 +101,29 @@
 @z
 
 @x
-<para>Install <application>Tk</application> by running the following
-commands:</para>
+      Install <application>Tk</application> by running the following
+      commands:
 @y
-<para>
-以下のコマンドを実行して <application>Tk</application> をビルドします。
-</para>
+      以下のコマンドを実行して <application>Tk</application> をビルドします。
 @z
 
 @x
-    <para>Running the tests is not recommended. Some tests may crash your X
-    Server. To test the results anyway, issue: <command>make test</command>.
-    Ensure you run it from an X Window display device with the GLX extensions
-    loaded, otherwise the tests will hang.</para>
+      Running the tests is not recommended. Some tests may crash your X
+      Server. To test the results anyway, issue: <command>make test</command>.
+      Ensure you run it from an X Window display device with the GLX extensions
+      loaded, otherwise the tests will hang.
 @y
-    <para>
-    テストを実施することはお勧めしません。
-    テストの中には X サーバーをクラッシュさせるものもあります。
-    それでもテストする場合には <command>make test</command> を実行します。
-    ただしテストの実行は X ウィンドウディスプレイにて GLX 拡張モジュールがロードされている状態で行ってください。
-    これを行っておかないとテストがハングします。
-    </para>
+      テストを実施することはお勧めしません。
+      テストの中には X サーバーをクラッシュさせるものもあります。
+      それでもテストする場合には <command>make test</command> を実行します。
+      ただしテストの実行は X ウィンドウディスプレイにて GLX 拡張モジュールがロードされている状態で行ってください。
+      これを行っておかないとテストがハングします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -139,57 +133,47 @@ commands:</para>
 @z
 
 @x
-    <para><parameter>--enable-threads</parameter>: This switch forces the
-    package to build with thread support.</para>
+      <option>--enable-threads</option>: This switch forces the
+      package to build with thread support.
 @y
-    <para>
-    <parameter>--enable-threads</parameter>:
-    このスイッチは、スレッドサポートを含めてパッケージをビルドすることを指示します。
-    </para>
+      <option>--enable-threads</option>:
+      このスイッチは、スレッドサポートを含めてパッケージをビルドすることを指示します。
 @z
 
 @x
-    <para><command>make install-private-headers</command>: This command is
-    used to install the <application>Tk</application> library interface
-    headers used by other packages if they link to the
-    <application>Tk</application> library.</para>
+      <command>make install-private-headers</command>: This command is
+      used to install the <application>Tk</application> library interface
+      headers used by other packages if they link to the
+      <application>Tk</application> library.
 @y
-    <para>
-    <command>make install-private-headers</command>:
-    このコマンドは <application>Tk</application> ライブラリのインターフェースヘッダーをインストールします。
-    これにより、<application>Tk</application> ライブラリにリンクされる他のパッケージがそのヘッダーファイルを利用できるようになります。
-    </para>
+      <command>make install-private-headers</command>:
+      このコマンドは <application>Tk</application> ライブラリのインターフェースヘッダーをインストールします。
+      これにより、<application>Tk</application> ライブラリにリンクされる他のパッケージがそのヘッダーファイルを利用できるようになります。
 @z
 
 @x
-    <para><command>ln -v -sf wish&tk-ver; /usr/bin/wish</command>: This
-    command is used to create a compatibility symbolic link to the
-    <command>wish&tk-ver;</command> file as many packages expect a file
-    named <command>wish</command>.</para>
+      <command>ln -v -sf wish&tk-ver; /usr/bin/wish</command>: This
+      command is used to create a compatibility symbolic link to the
+      <command>wish&tk-ver;</command> file as many packages expect a file
+      named <command>wish</command>.
 @y
-    <para>
-    <command>ln -v -sf wish&tk-ver; /usr/bin/wish</command>:
-    このコマンドは <command>wish&tk-ver;</command> ファイルへのシンボリックリンクを生成します。
-    他の多くのパッケージが、ファイル名として <command>wish</command> を求めているためです。
-    </para>
+      <command>ln -v -sf wish&tk-ver; /usr/bin/wish</command>:
+      このコマンドは <command>wish&tk-ver;</command> ファイルへのシンボリックリンクを生成します。
+      他の多くのパッケージが、ファイル名として <command>wish</command> を求めているためです。
 @z
 
 @x
-    <para><command>sed -i -e ... tkConfig.sh</command>: The
-    <application>Tk</application> package expects that its source tree is
-    preserved so that packages depending on it for their compilation
-    can utilize it. This <command>sed</command> removes the references to the
-    build directory and replaces them with saner system-wide locations.</para>
+      <command>sed -e ... tkConfig.sh</command>: The
+      <application>Tk</application> package expects that its source tree is
+      preserved so that packages depending on it for their compilation
+      can utilize it. This <command>sed</command> removes the references to the
+      build directory and replaces them with saner system-wide locations.
 @y
-    <para>
-    <command>sed -i -e ... tkConfig.sh</command>:
-    
-The
-    <application>Tk</application> package expects that its source tree is
-    preserved so that packages depending on it for their compilation
-    can utilize it. This <command>sed</command> removes the references to the
-    build directory and replaces them with saner system-wide locations.
-    </para>
+      <command>sed -e ... tkConfig.sh</command>: The
+      <application>Tk</application> package expects that its source tree is
+      preserved so that packages depending on it for their compilation
+      can utilize it. This <command>sed</command> removes the references to the
+      build directory and replaces them with saner system-wide locations.
 @z
 
 @x
@@ -201,7 +185,7 @@ The
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -209,13 +193,25 @@ The
 @z
 
 @x
-        <seg>wish and wish&tk-ver;</seg>
-        <seg>libtk.so and libtkstub&tk-ver;.a</seg>
-        <seg>/usr/lib/tk&tk-ver;</seg>
+        <seg>
+          wish and wish&tk-ver;
+        </seg>
+        <seg>
+          libtk&tk-ver;.so and libtkstub&tk-ver;.a
+        </seg>
+        <seg>
+          /usr/lib/tk&tk-ver;
+        </seg>
 @y
-        <seg>wish, wish&tk-ver;</seg>
-        <seg>libtk.so, libtkstub&tk-ver;.a</seg>
-        <seg>/usr/lib/tk&tk-ver;</seg>
+        <seg>
+          wish, wish&tk-ver;
+        </seg>
+        <seg>
+          libtk&tk-ver;.so, libtkstub&tk-ver;.a
+        </seg>
+        <seg>
+          /usr/lib/tk&tk-ver;
+        </seg>
 @z
 
 @x
@@ -225,30 +221,23 @@ The
 @z
 
 @x wish
-          <para> is a symlink to the <command>wish&tk-ver;</command>
-          program.</para>
+            is a symlink to the <command>wish&tk-ver;</command> program.
 @y
-          <para>
-          <command>wish&tk-ver;</command> プログラムへのシンボリックリンク。
-          </para>
+            <command>wish&tk-ver;</command> プログラムへのシンボリックリンク。
 @z
 
 @x wish&tk-ver;
-          <para> is a simple shell containing the
-          <application>Tk</application> toolkit that creates a main window and
-          then processes <application>Tcl</application> commands.</para>
+            is a simple shell containing the
+            <application>Tk</application> toolkit that creates a main window and
+            then processes <application>Tcl</application> commands.
 @y
-          <para>
-          <application>Tk</application> ツールキットを含む単純なシェルスクリプト。
-          メインウィンドウを生成し、<application>Tcl</application> コマンドを実行することができます。
-          </para>
+            <application>Tk</application> ツールキットを含む単純なシェルスクリプト。
+            メインウィンドウを生成し、<application>Tcl</application> コマンドを実行することができます。
 @z
 
-@x libtk.so
-          <para>contains the API functions required
-          by <application>Tk</application>.</para>
+@x libtk&tk-ver;.so
+            contains the API functions required
+            by <application>Tk</application>.
 @y
-          <para>
-          <application>Tk</application> が必要とする API 関数を提供します。
-          </para>
+            <application>Tk</application> が必要とする API 関数を提供します。
 @z

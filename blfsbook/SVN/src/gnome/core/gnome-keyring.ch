@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to gnome-keyring</title>
+    <title>Introduction to GNOME Keyring</title>
 @y
-    <title>&IntroductionTo1;gnome-keyring&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNOME Keyring&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gnome-keyring</application> package contains a
-    daemon that keeps passwords and other secrets for users.</para>
+      The <application>GNOME Keyring</application> package contains a
+      daemon that keeps passwords and other secrets for users.
 @y
-    <para>
-    <application>gnome-keyring</application> パッケージは、各ユーザーのパスワードなどの情報を保持したデーモンプログラムを提供します。
-    </para>
+      <application>GNOME Keyring</application> パッケージは、各ユーザーのパスワードなどの情報を保持したデーモンプログラムを提供します。
 @z
 
 @x
@@ -35,45 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-keyring-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-keyring-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-keyring-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-keyring-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-keyring-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-keyring-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-keyring-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-keyring-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-keyring-md5sum;</para>
+          Download MD5 sum: &gnome-keyring-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-keyring-md5sum;</para>
+          &Download; MD5 sum: &gnome-keyring-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-keyring-size;</para>
+          Download size: &gnome-keyring-size;
 @y
-        <para>&DownloadSize;: &gnome-keyring-size;</para>
+          &DownloadSize;: &gnome-keyring-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-keyring-buildsize;</para>
+          Estimated disk space required: &gnome-keyring-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-keyring-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-keyring-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-keyring-time;</para>
+          Estimated build time: &gnome-keyring-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-keyring-time;</para>
+          &Estimatedbuildtime;: &gnome-keyring-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gnome-keyring Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GNOME Keyring Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gnome-keyring&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Keyring&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -116,39 +114,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-keyring"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-keyring"/></para>
 @z
 
 @x
-    <title>Installation of gnome-keyring</title>
+    <title>Installation of GNOME Keyring</title>
 @y
-    <title>&InstallationOf1;gnome-keyring&InstallationOf2;</title>
+    <title>&InstallationOf1;GNOME Keyring&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gnome-keyring</application> by running the
-    following commands:</para>
+      Install <application>GNOME Keyring</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gnome-keyring</application> をビルドします。
-    </para>
+    以下のコマンドを実行して <application>GNOME Keyring</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -158,25 +150,21 @@
 @z
 
 @x
-    <para><parameter>--with-pam-dir=/lib/security</parameter>: This parameter
-    specifies where the pam modules will be installed: you can omit this if you
-    have not installed <application>Linux-PAM</application>.</para>
+      <parameter>--with-pam-dir=/lib/security</parameter>: This parameter
+      specifies where the pam modules will be installed: you can omit this if you
+      have not installed <application>Linux-PAM</application>.
 @y
-    <para>
-    <parameter>--with-pam-dir=/lib/security</parameter>:
-    このパラメーターは pam モジュールのインストール先ディレクトリを指定します。
-    <application>Linux-PAM</application> をインストールしていない場合は、このパラメーターを取り除きます。
-    </para>
+      <parameter>--with-pam-dir=/lib/security</parameter>:
+      このパラメーターは pam モジュールのインストール先ディレクトリを指定します。
+      <application>Linux-PAM</application> をインストールしていない場合は、このパラメーターを取り除きます。
 @z
 
 @x
-    <para><parameter>--with-root-certs=/etc/ssl/certs</parameter>: This
-    parameter specifies where the trusted root certificates are located.</para>
+      <parameter>--with-root-certs=/etc/ssl/certs</parameter>: This
+      parameter specifies where the trusted root certificates are located.
 @y
-    <para>
-    <parameter>--with-root-certs=/etc/ssl/certs</parameter>:
-    このパラメーターは、信頼できるルート証明書 (root cetificates) が収容されているディレクトリを指定します。
-    </para>
+      <parameter>--with-root-certs=/etc/ssl/certs</parameter>:
+      このパラメーターは、信頼できるルート証明書 (root cetificates) が収容されているディレクトリを指定します。
 @z
 
 @x
@@ -224,9 +212,7 @@
 @z
 
 @x gnome-keyring-daemon
-          <para>is a session daemon that keeps passwords for users.</para>
+            is a session daemon that keeps passwords for users.
 @y
-    <para>
-    ユーザーパスワードを保持するセッションデーモンです。
-    </para>
+            ユーザーパスワードを保持するセッションデーモンです。
 @z

@@ -59,10 +59,6 @@ AC_CONFIG_FILES([Makefile
 		 src/introduction/Makefile
 		 src/introduction/important/Makefile
 		 src/introduction/welcome/Makefile
-		 src/kde/Makefile
-		 src/kde/add/Makefile
-		 src/kde/core/Makefile
-		 src/kde/devel/Makefile
 		 src/kde4/Makefile
 		 src/kde4/add/Makefile
 		 src/kde4/core/Makefile
@@ -122,6 +118,5 @@ AC_CONFIG_FILES([Makefile
 		 src/xsoft/Makefile
 		 src/xsoft/graphweb/Makefile
 		 src/xsoft/office/Makefile
-		 src/xsoft/other/Makefile
-		 src/xsoft/suites/Makefile])
+		 src/xsoft/other/Makefile])
 AC_OUTPUT

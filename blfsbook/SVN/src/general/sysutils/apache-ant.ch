@@ -90,28 +90,32 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="icedtea6"/> or
-    <xref linkend="jdk"/></para>
+    <para role="required">
+      <xref linkend="openjdk"/> <!-- or <xref linkend="jdk"/> -->
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="icedtea6"/> または
-    <xref linkend="jdk"/></para>
+    <para role="required">
+      <xref linkend="openjdk"/> <!-- or <xref linkend="jdk"/> -->
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="junit"/></para>
+    <para role="recommended">
+      <xref linkend="junit"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="junit"/></para>
+    <para role="recommended">
+      <xref linkend="junit"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/apache-ant"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/apache-ant"/></para>
 @z
 
 @x

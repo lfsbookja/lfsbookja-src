@@ -14,21 +14,18 @@
 @z
 
 @x
-    <title>Introduction to polkit</title>
+    <title>Introduction to Polkit</title>
 @y
-    <title>&IntroductionTo1;polkit&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Polkit&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>polkit</application> package is an
-    application-level toolkit for defining and handling the policy that allows
-    unprivileged processes to speak to privileged processes.</para>
+      <application>Polkit</application> is a toolkit for defining and handling
+      authorizations. It is used for allowing unprivileged processes to speak
+      to privileged processes.
 @y
-    <para>
-    <application>polkit</application>
-    パッケージは、アプリケーションレベルにてポリシーを定義し操作するためのツールキットです。
-    これにより非特権 (unprivileged) プロセス から特権 (privileged) プロセスへのアクセスが可能となります。
-    </para>
+      <application>Polkit</application> パッケージは、権限情報を定義し操作するためのツールキットです。
+      非特権 (unprivileged) プロセス から特権 (privileged) プロセスへのアクセスを行う際に利用されます。
 @z
 
 @x
@@ -38,58 +35,60 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&polkit-download-http;"/></para>
+          Download (HTTP): <ulink url="&polkit-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&polkit-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&polkit-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&polkit-download-ftp;"/></para>
+          Download (FTP): <ulink url="&polkit-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&polkit-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&polkit-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &polkit-md5sum;</para>
+          Download MD5 sum: &polkit-md5sum;
 @y
-        <para>&Download; MD5 sum: &polkit-md5sum;</para>
+          &Download; MD5 sum: &polkit-md5sum;
 @z
 
 @x
-        <para>Download size: &polkit-size;</para>
+          Download size: &polkit-size;
 @y
-        <para>&DownloadSize;: &polkit-size;</para>
+          &DownloadSize;: &polkit-size;
 @z
 
 @x
-        <para>Estimated disk space required: &polkit-buildsize;</para>
+          Estimated disk space required: &polkit-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &polkit-buildsize;</para>
+          &Estimateddiskspacerequired;: &polkit-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &polkit-time;</para>
+          Estimated build time: &polkit-time;
 @y
-        <para>&Estimatedbuildtime;: &polkit-time;</para>
+          &Estimatedbuildtime;: &polkit-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">polkit Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Polkit Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;polkit&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Polkit&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="SpiderMonkey"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="SpiderMonkey"/>
     </para>
 @z
 
@@ -126,50 +125,54 @@
 @z
 
 @x
-      <para>If <xref linkend="libxslt"/> is installed then <xref
-      linkend="DocBook"/> and <xref linkend="docbook-xsl"/> are required.</para>
+        If <xref linkend="libxslt"/> is installed then <xref linkend="DocBook"/> 
+        and <xref linkend="docbook-xsl"/> are required.
 @y
-      <para>
-      <xref linkend="libxslt"/> をインストールしている場合は <xref
-      linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
-      </para>
+        <xref linkend="libxslt"/> をインストールしている場合は <xref
+        linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/polkit"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/polkit"/></para>
 @z
 
 @x
-    <title>Installation of polkit</title>
+    <title>Installation of Polkit</title>
 @y
-    <title>&InstallationOf1;polkit&InstallationOf2;</title>
+    <title>&InstallationOf1;Polkit&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>polkit</application> by running the following
-    commands as an unprivileged user:</para>
+      There should be a dedicated user and group to take control
+      of the <command>polkitd</command> daemon after it is
+      started. Issue the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    一般ユーザーとして以下のコマンドを実行し <application>polkit</application> をビルドします。
-    </para>
+      There should be a dedicated user and group to take control
+      of the <command>polkitd</command> daemon after it is
+      started. Issue the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Install <application>Polkit</application> by running the following
+      commands:
 @y
-    <para>&notTestSuite;</para>
+      一般ユーザーとして以下のコマンドを実行し <application>Polkit</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -179,32 +182,20 @@
 @z
 
 @x
-    <para><parameter>--with-authfw=shadow</parameter>: This parameter will use
-    the <application>Shadow</application> rather than the
-    <application>Linux-PAM</application> Authentication framework. Remove it if
-    you would like to use <application>Linux-PAM</application>.</para>
-    <para><parameter>--disable-static</parameter>: This will prevent the static 
-    libraries from being built.</para>
+      <parameter>--with-authfw=shadow</parameter>: This parameter configures the
+      package to use the <application>Shadow</application> rather than the
+      <application>Linux PAM</application> Authentication framework. Remove it if
+      you would like to use <application>Linux PAM</application>.
 @y
-    <para><parameter>--with-authfw=shadow</parameter>:
-    本パラメーターは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
-    <application>Linux-PAM</application> とする場合は本パラメーターを取り除いてください。
-    </para>
-    <para><parameter>--disable-static</parameter>:
-    これはスタティックライブラリをビルドしないようにします。
-    </para>
+      <parameter>--with-authfw=shadow</parameter>:
+      本パラメーターは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
+      <application>Linux-PAM</application> とする場合は本パラメーターを取り除いてください。
 @z
 
 @x
-    <title>Configuring polkit</title>
+    <title>Configuring Polkit</title>
 @y
-    <title>&Configuring1;polkit&Configuring2;</title>
-@z
-
-@x
-      <title>Config Files</title>
-@y
-      <title>&ConfigFiles;</title>
+    <title>&Configuring1;Polkit&Configuring2;</title>
 @z
 
 @x
@@ -214,36 +205,28 @@
 @z
 
 @x
-        <para>If you did not build <application>polkit</application> with
-        <application>Linux PAM</application> support, you can skip this section.
-        </para>
+          If you did not build <application>Polkit</application> with
+          <application>Linux PAM</application> support, you can skip this section.
 @y
-        <para>
-        <application>Linux PAM</application> サポートを含めずに <application>polkit</application> をビルドした場合は本節を読み飛ばしてください。
-        </para>
+          <application>Linux PAM</application> サポートを含めずに <application>Polkit</application> をビルドした場合は本節を読み飛ばしてください。
 @z
 
 @x
-      <para>If you built <application>polkit</application> with 
-      <application>Linux PAM</application> support, you will need to modify 
-      the pam configuration file which was installed by default to get 
-      <application>polkit</application> to work correctly with BLFS.</para>
+        If you have built <application>Polkit</application> with 
+        <application>Linux PAM</application> support, you need to modify 
+        default PAM configuration file which was installed by default to get 
+        <application>Polkit</application> to work correctly with BLFS.
 @y
-      <para>
-      <application>Linux PAM</application> サポートを含めて <application>polkit</application> をビルドしている場合、デフォルトでインストールされている pam 設定ファイルを修正する必要があります。
-      これにより BLFS において <application>polkit</application> が正しく動作するものとなります。
-      </para>
+        <application>Linux PAM</application> サポートを含めて <application>Polkit</application> をビルドしている場合、デフォルトでインストールされている PAM 設定ファイルを修正する必要があります。
+        これにより BLFS において <application>polkit</application> が正しく動作するものとなります。
 @z
 
 @x
-      <para>Issue the following commands as the <systemitem class="username">root</systemitem>
-      user to create the configuration file for <application>Linux PAM</application>:
-      </para>
+        Issue the following commands as the <systemitem class="username">root</systemitem>
+        user to create the configuration file for <application>Linux PAM</application>:
 @y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してください。
-      <application>Linux PAM</application> 用の設定ファイルを生成します。
-      </para>
+        <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してください。
+        <application>Linux PAM</application> 用の設定ファイルを生成します。
 @z
 
 @x
@@ -263,19 +246,37 @@
 @z
 
 @x
-        <seg>pk-example-frobnicate, pkaction, pkcheck, pkexec,
-        polkit-agent-helper-1, and polkitd</seg>
-        <seg>libnullbackend.{so,a}, libpolkit-agent-1.{so,a},
-        libpolkit-backend-1.{so,a} and libpolkit-gobject-1.{so,a}</seg>
-	<seg>/etc/polkit-1, /usr/include/polkit-1, /usr/lib/polkit-1, 
-	/usr/share/polkit-1 and /var/lib/polkit-1</seg>
+        <seg>
+          pkaction, pkcheck, pk-example-frobnicate, pkexec,
+          pkttyagent and polkitd
+        </seg>
+        <seg>
+          libpolkit-agent-1.so and 
+          libpolkit-gobject-1.so
+        </seg>
+	<seg>
+          /etc/polkit-1,
+          /usr/include/polkit-1,
+          /usr/lib/polkit-1,
+          /usr/share/gtk-doc/html/polkit-1 and
+	  /usr/share/polkit-1
+        </seg>
 @y
-        <seg>pk-example-frobnicate, pkaction, pkcheck, pkexec,
-        polkit-agent-helper-1, polkitd</seg>
-        <seg>libnullbackend.{so,a}, libpolkit-agent-1.{so,a},
-        libpolkit-backend-1.{so,a}, libpolkit-gobject-1.{so,a}</seg>
-	<seg>/etc/polkit-1, /usr/include/polkit-1, /usr/lib/polkit-1, 
-	/usr/share/polkit-1, /var/lib/polkit-1</seg>
+        <seg>
+          pkaction, pkcheck, pk-example-frobnicate, pkexec,
+          pkttyagent, polkitd
+        </seg>
+        <seg>
+          libpolkit-agent-1.so,
+          libpolkit-gobject-1.so
+        </seg>
+	<seg>
+          /etc/polkit-1,
+          /usr/include/polkit-1,
+          /usr/lib/polkit-1,
+          /usr/share/gtk-doc/html/polkit-1,
+	  /usr/share/polkit-1
+        </seg>
 @z
 
 @x
@@ -285,67 +286,39 @@
 @z
 
 @x pkaction
-          <para>is used to obtain information about registered PolicyKit actions.</para>
+            is used to obtain information about registered PolicyKit actions.
 @y
-          <para>
-          登録されている PolicyKit アクションについての情報を取得するために用います。
-          </para>
+            登録されている PolicyKit アクションについての情報を取得するために用います。
 @z
 
 @x pkcheck
-          <para>is used to check whether a process is authorized for action.</para>
+            is used to check whether a process is authorized for action.
 @y
-          <para>
-          プロセスがアクションを行う権限を有するかどうかをチェックするために用います。
-          </para>
+            プロセスがアクションを行う権限を有するかどうかをチェックするために用います。
 @z
 
 @x pkexec
-          <para>allows an authorized user to execute a command as another user.</para>
+            allows an authorized user to execute a command as another user.
 @y
-          <para>
-          認証されたユーザーが、他ユーザーとなってコマンド実行することを許可します。
-          </para>
+            認証されたユーザーが、他ユーザーとなってコマンド実行することを許可します。
 @z
 
 @x polkitd
-          <para>provides the org.freedesktop.PolicyKit1
-          <application>D-Bus</application> service on the system message bus.</para>
+            provides the org.freedesktop.PolicyKit1 <application>D-Bus</application> 
+            service on the system message bus.
 @y
-          <para>
-          システムメッセージバス上にて、org.freedesktop.PolicyKit1 なる <application>D-Bus</application> サービスを提供します。
-          </para>
-@z
-
-@x libnullbackend.{so,a}
-          <para>PolicyKit null backend</para>
-@y
-          <para>PolicyKit ヌルバックエンド。</para>
+            システムメッセージバス上にて、org.freedesktop.PolicyKit1 なる <application>D-Bus</application> サービスを提供します。
 @z
 
 @x libpolkit-agent-1.{so,a}
-          <para>contains the <application>polkit</application> authentication
-          agent API functions.</para>
+            contains the <application>Polkit</application> authentication
+            agent API functions.
 @y
-          <para>
-          <application>polkit</application> の認証エージェント API 関数を提供します。
-          </para>
-@z
-
-@x libpolkit-backend-1.{so,a}
-          <para>contains the <application>polkit</application> backend API
-          functions.</para>
-@y
-          <para>
-          <application>polkit</application> バックエンド API 関数を提供します。
-          </para>
+            <application>Polkit</application> の認証エージェント API 関数を提供します。
 @z
 
 @x libpolkit-gobject-1.{so,a}
-          <para>contains the <application>polkit</application> authorization API
-          functions.</para>
+            contains the <application>Polkit</application> authorization API functions.
 @y
-          <para>
-          <application>polkit</application> 認証 API 関数を提供します。
-          </para>
+            <application>polkit</application> 認証 API 関数を提供します。
 @z

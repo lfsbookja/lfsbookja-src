@@ -20,17 +20,17 @@
 @z
 
 @x
-    <title>Introduction to Xbitmaps</title>
+    <title>Introduction to xbitmaps</title>
 @y
-    <title>&IntroductionTo1;Xbitmaps&IntroductionTo2;</title>
+    <title>&IntroductionTo1;xbitmaps&IntroductionTo2;</title>
 @z
 
 @x
-    <para>Xbitmaps provides static graphics needed by Xorg applications to
-    draw screen elements.</para>
+    <para>The <application>xbitmaps</application> package contains bitmap
+    images used by multiple applications.</para>
 @y
     <para>
-    Xbitmaps は、Xorg アプリケーションが画面項目を描画するために必要となるスタティックなグラフィックを提供します。
+    <application>xbitmaps</application> は、Xorg アプリケーションが画面項目を描画するために必要となるスタティックなグラフィックを提供します。
     </para>
 @z
 
@@ -77,39 +77,23 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Xbitmaps Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;Xbitmaps&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-util"/></para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-util"/></para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/xbitmaps'/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/xbitmaps'/></para>
 @z
 
 @x
-    <title>Installation of Xbitmaps</title>
+    <title>Installation of xbitmaps</title>
 @y
-    <title>&InstallationOf1;Xbitmaps&InstallationOf2;</title>
+    <title>&InstallationOf1;xbitmaps&InstallationOf2;</title>
 @z
 
 @x
-    <para>First, configure the Xbitmaps package by running the following
-    command:</para>
+    <para>Install <application>xbitmaps</application> by running the
+    following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して Xbitmaps パッケージをビルドします。
+    以下のコマンドを実行して <application>xbitmaps</application> パッケージをビルドします。
     </para>
 @z
 
@@ -120,8 +104,7 @@
 @z
 
 @x
-    <para>Now install as the <systemitem class="username">root</systemitem>
-    user:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -136,8 +119,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -147,9 +130,9 @@
 @x
         <seg>None</seg>
         <seg>None</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/X11/bitmaps</seg>
+        <seg>$XORG_PREFIX/include/X11/bitmaps</seg>
 @y
         <seg>&None;</seg>
         <seg>&None;</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/X11/bitmaps</seg>
+        <seg>$XORG_PREFIX/include/X11/bitmaps</seg>
 @z

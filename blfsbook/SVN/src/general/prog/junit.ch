@@ -135,14 +135,14 @@
 
 @x
     <para>To run the <application>JUnit</application> regression self-tests,
-    you'll need to have <xref linkend="icedtea6"/>, <xref linkend="jdk"/>, or
+    you'll need to have <xref linkend="openjdk"/>,<!-- <xref linkend="jdk"/>,--> or
     <ulink url="http://jikes.sourceforge.net/">Jikes</ulink> installed and the
     <envar>CLASSPATH</envar> environment variable updated. Then, as an
     unprivileged user, issue:</para>
 @y
     <para>
     <application>JUnit</application> の縮退テストを実施する場合は <xref
-    linkend="icedtea6"/> と <xref linkend="jdk"/>、あるいは <ulink
+    linkend="openjdk"/> あるいは <ulink
     url="http://jikes.sourceforge.net/">Jikes</ulink> をインストールしておく必要があり、<envar>CLASSPATH</envar> を適切に設定しておく必要があります。
     準備が出来たら一般ユーザーにて以下を実行します。
     </para>

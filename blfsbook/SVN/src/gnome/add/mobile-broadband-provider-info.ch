@@ -20,19 +20,27 @@
 @z
 
 @x
-    <title>Introduction to mobile-broadband-provider-info</title>
+    <title>Introduction to Mobile Broadband Provider Info</title>
 @y
-    <title>&IntroductionTo1;mobile-broadband-provider-info&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Mobile Broadband Provider Info&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>mobile-broadband-provider-info</application> package
-    contains listings of mobile broadband (3G) providers and associated network
-    and plan information.</para>
+      The <application>Mobile Broadband Provider Info</application> package
+      contains listings of mobile broadband (3G) providers and associated network
+      and plan information.
 @y
-    <para>
-    <application>mobile-broadband-provider-info</application> パッケージは、モバイルブロードバンド (3G) プロバイダーや関連するネットワーク情報の一覧を提供します。
-    </para>
+      <application>Mobile Broadband Provider Info</application> パッケージは、モバイルブロードバンド (3G) プロバイダーや関連するネットワーク情報の一覧を提供します。
+@z
+
+@x
+        The full url for this package is too long to fit on a page. The source 
+        originates at 
+        <ulink url="ftp://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20110511/"/>
+@y
+        本パッケージに対する正確な url は長すぎるため、本節では表記しません。
+        正しい情報は <ulink
+        url="ftp://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20110511/"/> を参照してください。
 @z
 
 @x
@@ -42,58 +50,47 @@
 @z
 
 @x
-    <note><para>The full url for this package is too long to fit on a page.  The source 
-    originates at 
-    <ulink url="ftp://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20110511/"/>
-    </para></note>
+          Download (HTTP): <ulink url="&mobile-broadband-provider-info-download-http;">
+          HTTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+          </ulink>
 @y
-    <note><para>
-    本パッケージに対する正確な url は長すぎるため、本節では表記しません。
-    正しい情報は <ulink
-    url="ftp://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20110511/"/> を参照してください。
-    </para></note>
+          &Download; (HTTP): <ulink url="&mobile-broadband-provider-info-download-http;">
+          HTTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+          </ulink>
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mobile-broadband-provider-info-download-http;">
-        http link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+           Download (FTP): <ulink url="&mobile-broadband-provider-info-download-ftp;">
+           FTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+           </ulink>
 @y
-        <para>&Download; (HTTP): <ulink url="&mobile-broadband-provider-info-download-http;">
-        mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2 への http リンク
+           &Download; (FTP): <ulink url="&mobile-broadband-provider-info-download-ftp;">
+           FTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+           </ulink>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mobile-broadband-provider-info-download-ftp;">
-        ftp link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
-        </ulink></para>
+          Download MD5 sum: &mobile-broadband-provider-info-md5sum;
 @y
-        <para>&Download; (FTP): <ulink url="&mobile-broadband-provider-info-download-ftp;">
-        mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2 への ftp リンク
-        </ulink></para>
+          &Download; MD5 sum: &mobile-broadband-provider-info-md5sum;
 @z
 
 @x
-        <para>Download MD5 sum: &mobile-broadband-provider-info-md5sum;</para>
+          Download size: &mobile-broadband-provider-info-size;
 @y
-        <para>&Download; MD5 sum: &mobile-broadband-provider-info-md5sum;</para>
+          &DownloadSize;: &mobile-broadband-provider-info-size;
 @z
 
 @x
-        <para>Download size: &mobile-broadband-provider-info-size;</para>
+          Estimated disk space required: &mobile-broadband-provider-info-buildsize;
 @y
-        <para>&DownloadSize;: &mobile-broadband-provider-info-size;</para>
+          &Estimateddiskspacerequired;: &mobile-broadband-provider-info-buildsize;
 @z
 
 @x
-        <para>Estimated disk space required: &mobile-broadband-provider-info-buildsize;</para>
+          Estimated build time: &mobile-broadband-provider-info-time;
 @y
-        <para>&Estimateddiskspacerequired;: &mobile-broadband-provider-info-buildsize;</para>
-@z
-
-@x
-        <para>Estimated build time: &mobile-broadband-provider-info-time;</para>
-@y
-        <para>&Estimatedbuildtime;: &mobile-broadband-provider-info-time;</para>
+          &Estimatedbuildtime;: &mobile-broadband-provider-info-time;
 @z
 
 @x
@@ -103,36 +100,28 @@
 @z
 
 @x
-    <title>Installation of mobile-broadband-provider-info</title>
+    <title>Installation of Mobile Broadband Provider Info</title>
 @y
-    <title>&IntroductionTo1;mobile-broadband-provider-info&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Mobile Broadband Provider Info&IntroductionTo2;</title>
 @z
 
 @x
-    <para>Install <application>mobile-broadband-provider-info</application> by running the following
-    commands:</para>
+      Install <application>Mobile Broadband Provider Info</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>mobile-broadband-provider-info</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Mobile Broadband Provider Info</application> をビルドします。
 @z
 
 @x
-    <para>This package&apos;s testsuite is intended to be used by the maintainer,
-    it merely checks the validity of the shipped XML.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    本パッケージのテストスイートは開発者が利用する意図で提供されています。
-    またそのチェック内容は、提供される XML が正しいかどうかを検証するのみです。
-    </para>
+      This package does not come with a test suite.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -142,21 +131,17 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/mobile-broadband-provider-info</seg>
+        <seg>
+          /usr/share/mobile-broadband-provider-info
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/share/mobile-broadband-provider-info</seg>
+        <seg>
+          /usr/share/mobile-broadband-provider-info
+        </seg>
 @z

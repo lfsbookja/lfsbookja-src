@@ -20,14 +20,13 @@
 @z
 
 @x
-    <para>The <application>GNOME Desktop</application> package contains the
-    <filename class='libraryfile'>libgnome-desktop-3</filename> library and
-    <application>GNOME</application>'s core graphics files and icons.</para>
+      The <application>GNOME Desktop</application> package contains library
+      which provides API shared by several applications on the 
+      <application>GNOME</application> Desktop.
 @y
-    <para>
-    <application>GNOME Desktop</application> パッケージは、<filename
-    class='libraryfile'>libgnome-desktop-3</filename> ライブラリ、<application>GNOME</application> のコアとなるグラフィックファイルやアイコンを提供します。
-    </para>
+      The <application>GNOME Desktop</application> package contains library
+      which provides API shared by several applications on the 
+      <application>GNOME</application> Desktop.
 @z
 
 @x
@@ -37,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-desktop-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-desktop-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-desktop-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-desktop-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-desktop-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-desktop-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-desktop-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-desktop-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-desktop-md5sum;</para>
+          Download MD5 sum: &gnome-desktop-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-desktop-md5sum;</para>
+          &Download; MD5 sum: &gnome-desktop-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-desktop-size;</para>
+          Download size: &gnome-desktop-size;
 @y
-        <para>&DownloadSize;: &gnome-desktop-size;</para>
+          &DownloadSize;: &gnome-desktop-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-desktop-buildsize;</para>
+          Estimated disk space required: &gnome-desktop-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-desktop-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-desktop-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-desktop-time;</para>
+          Estimated build time: &gnome-desktop-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-desktop-time;</para>
+          &Estimatedbuildtime;: &gnome-desktop-time;
 @z
 
 @x
@@ -126,10 +125,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-desktop"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-desktop"/></para>
 @z
 
 @x
@@ -139,26 +136,22 @@
 @z
 
 @x
-    <para>Install <application>GNOME Desktop</application> by
-    running the following commands:</para>
+      Install <application>GNOME Desktop</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME Desktop</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Desktop</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -168,15 +161,13 @@
 @z
 
 @x
-    <para><option>--with-gnome-distributor="Some Name"</option>: Use this
-    parameter to supply a custom name in the <quote>Distributor:</quote>
-    field of the <quote>GNOME About</quote> display window.</para>
+      <option>--with-gnome-distributor="Some Name"</option>: Use this
+      parameter to supply a custom name in the <quote>Distributor:</quote>
+      field of the <quote>GNOME About</quote> display window.
 @y
-    <para><option>--with-gnome-distributor="Some Name"</option>: 
-    
-    Use this
-    parameter to supply a custom name in the <quote>Distributor:</quote>
-    field of the <quote>GNOME About</quote> display window.</para>
+      <option>--with-gnome-distributor="Some Name"</option>: Use this
+      parameter to supply a custom name in the <quote>Distributor:</quote>
+      field of the <quote>GNOME About</quote> display window.
 @z
 
 @x
@@ -222,7 +213,9 @@
 @z
 
 @x libgnome-desktop-3.so
-          <para>is an utility library for loading .desktop files.</para>
+            contains functions shared by several <application>GNOME</application>
+            applications.
 @y
-          <para>is an utility library for loading .desktop files.</para>
+            contains functions shared by several <application>GNOME</application>
+            applications.
 @z

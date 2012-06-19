@@ -143,14 +143,14 @@
       <para role="required">
         <xref linkend="dbus"/>,
         <xref linkend="expat"/>, and
-        <xref linkend="pkgconfig"/>
+        <xref linkend="glib2"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="dbus"/>,
         <xref linkend="expat"/>,
-        <xref linkend="pkgconfig"/>
+        <xref linkend="glib2"/>
       </para>
 @z
 

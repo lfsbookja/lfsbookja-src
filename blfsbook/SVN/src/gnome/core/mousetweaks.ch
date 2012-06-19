@@ -14,19 +14,17 @@
 @z
 
 @x
-    <title>Introduction to mousetweaks</title>
+    <title>Introduction to Mouse Tweaks</title>
 @y
-    <title>&IntroductionTo1;mousetweaks&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Mouse Tweaks&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>mousetweaks</application> package provides mouse
-    accessibility enhancements for the <application>GNOME</application>
-    desktop.</para>
+      The <application>Mouse Tweaks</application> package provides mouse
+      accessibility enhancements for the <application>GNOME</application>
+      desktop.
 @y
-    <para>
-    <application>mousetweaks</application> パッケージは、<application>GNOME</application> デスクトップ環境においてマウスアクセスの機能拡張を提供します。
-    </para>
+      <application>Mouse Tweaks</application> パッケージは、<application>GNOME</application> デスクトップ環境においてマウスアクセスの機能拡張を提供します。
 @z
 
 @x
@@ -36,45 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mousetweaks-download-http;"/></para>
+          Download (HTTP): <ulink url="&mousetweaks-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&mousetweaks-download-http;"/></para>
+          Download (HTTP): <ulink url="&mousetweaks-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mousetweaks-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mousetweaks-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&mousetweaks-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mousetweaks-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &mousetweaks-md5sum;</para>
+          Download MD5 sum: &mousetweaks-md5sum;
 @y
-        <para>&Download; MD5 sum: &mousetweaks-md5sum;</para>
+          Download MD5 sum: &mousetweaks-md5sum;
 @z
 
 @x
-        <para>Download size: &mousetweaks-size;</para>
+          Download size: &mousetweaks-size;
 @y
-        <para>&DownloadSize;: &mousetweaks-size;</para>
+          Download size: &mousetweaks-size;
 @z
 
 @x
-        <para>Estimated disk space required: &mousetweaks-buildsize;</para>
+          Estimated disk space required: &mousetweaks-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &mousetweaks-buildsize;</para>
+          &Estimateddiskspacerequired;: &mousetweaks-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &mousetweaks-time;</para>
+          Estimated build time: &mousetweaks-time;
 @y
-        <para>&Estimatedbuildtime;: &mousetweaks-time;</para>
+          &Estimatedbuildtime;: &mousetweaks-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">mousetweaks Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Mouse Tweaks Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;mousetweaks&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Mouse Tweaks&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,37 +105,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/mousetweaks"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/mousetweaks"/></para>
 @z
 
 @x
-    <title>Installation of mousetweaks</title>
+    <title>Installation of Mouse Tweaks</title>
 @y
-    <title>&InstallationOf1;mousetweaks&InstallationOf2;</title>
+    <title>&InstallationOf1;Mouse Tweaks&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>mousetweaks</application> by running the following
-    commands:</para>
+      Install <application>Mouse Tweaks</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>mousetweaks</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>mousetweaks</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para><systemitem class="username">root</systemitem> ユーザーになって以下を実行します。</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -165,7 +159,8 @@
           mousetweaks
         </seg>
         <seg>
-          /usr/share/gnome/help/mousetweaks, /usr/share/mousetweaks and
+          /usr/share/gnome/help/mousetweaks,
+          /usr/share/mousetweaks and
           /usr/share/omf/mousetweaks
         </seg>
 @y
@@ -173,7 +168,8 @@
           mousetweaks
         </seg>
         <seg>
-          /usr/share/gnome/help/mousetweaks, /usr/share/mousetweaks,
+          /usr/share/gnome/help/mousetweaks,
+          /usr/share/mousetweaks,
           /usr/share/omf/mousetweaks
         </seg>
 @z
@@ -185,8 +181,8 @@
 @z
 
 @x mousetweaks
-          <para>is a collection of accessibility enhancements for pointing 
-          devices.</para>
+            is a collection of accessibility enhancements for pointing 
+            devices.
 @y
-          <para>ポインティングデバイスに対するさまざまな拡張を行う機能。</para>
+            ポインティングデバイスに対するさまざまな拡張を行う機能。
 @z

@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libcroco</application> package contains 
-    a standalone CSS2 parsing and manipulation library.</para>
+      The <application>libcroco</application> package contains 
+      a standalone CSS2 parsing and manipulation library.
 @y
-    <para>
-    <application>libcroco</application> パッケージは、CSS2 を解析し操作するスタンドアローンのライブラリです。
-    </para>
+      <application>libcroco</application> パッケージは、CSS2 を解析し操作するスタンドアローンのライブラリです。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libcroco-download-http;"/></para>
+          Download (HTTP): <ulink url="&libcroco-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libcroco-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libcroco-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libcroco-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libcroco-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libcroco-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libcroco-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libcroco-md5sum;</para>
+          Download MD5 sum: &libcroco-md5sum;
 @y
-        <para>&Download; MD5 sum: &libcroco-md5sum;</para>
+          &Download; MD5 sum: &libcroco-md5sum;
 @z
 
 @x
-        <para>Download size: &libcroco-size;</para>
+          Download size: &libcroco-size;
 @y
-        <para>&DownloadSize;: &libcroco-size;</para>
+          &DownloadSize;: &libcroco-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libcroco-buildsize;</para>
+          Estimated disk space required: &libcroco-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libcroco-buildsize;</para>
+          &Estimateddiskspacerequired;: &libcroco-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libcroco-time;</para>
+          Estimated build time: &libcroco-time;
 @y
-        <para>&Estimatedbuildtime;: &libcroco-time;</para>
+          &Estimatedbuildtime;: &libcroco-time;
 @z
 
 @x
@@ -79,14 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libxml2"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libxml2"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="libxml2"/>
     </para>
 @z
 
@@ -104,10 +102,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libcroco"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libcroco"/></para>
 @z
 
 @x
@@ -117,42 +113,33 @@
 @z
 
 @x
-    <para>Install <application>libcroco</application> by running the following
-    commands:</para>
+      Install <application>libcroco</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libcroco</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libcroco</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: 
-    <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command>.</para>
+      To test the results, issue:
+      <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command> を実行します。
 @z
 
 @x
-    <para>If there are test failures, issue: 
-    <command>patch -Np1 -i tests/tests-error.log</command>. 
-    This will update the failed tests from CVS. You should now rerun the test.
-    </para>
+      If there are test failures, issue:
+      <command>patch -Np1 -i tests/tests-error.log</command>.
+      This will update the failed tests from CVS. You should now rerun the test.
 @y
-    <para>
-    テストに失敗した場合は <command>patch -Np1 -i tests/tests-error.log</command> を実行してください。
-    これにより CVS から失敗したテストを更新します。
-    これを行ってから再度テストを行ってください。
-    </para>
+      テストに失敗した場合は <command>patch -Np1 -i tests/tests-error.log</command> を実行してください。
+      これにより CVS から失敗したテストを更新します。
+      これを行ってから再度テストを行ってください。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

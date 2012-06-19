@@ -253,11 +253,11 @@ BLFS 編集者 (2004年6月 &ndash; 2006年12月)</literallayout>
 @x
 <literallayout>Randy McMurchy
 randy &lt;at&gt; &lfs-domainname;
-BLFS Editor (December 2006&ndash;Present)</literallayout>
+BLFS Editor (December 2006&ndash;January 2011)</literallayout>
 @y
 <literallayout>Randy McMurchy
 randy &lt;at&gt; &lfs-domainname;
-BLFS 編集者 (2006年12月 &ndash; 現在)</literallayout>
+BLFS 編集者 (2006年12月 &ndash; 2011年1月)</literallayout>
 @z
 
 @x

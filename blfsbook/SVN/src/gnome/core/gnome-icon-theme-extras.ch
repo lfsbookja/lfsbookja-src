@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to gnome-icon-theme-extras</title>
+    <title>Introduction to GNOME Icon Theme Extras</title>
 @y
-    <title>&IntroductionTo1;gnome-icon-theme-extras&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNOME Icon Theme Extras&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gnome-icon-theme-extras</application> package contains
-    extra icons for the <application>GNOME</application>desktop.</para>
+      The <application>GNOME Icon Theme Extras</application> package contains
+      extra icons for the <application>GNOME</application> Desktop.
 @y
-    <para>
-    <application>gnome-icon-theme-extras</application> パッケージは <application>GNOME</application> デスクトップの追加アイコンを提供します。
-    </para>
+      <application>GNOME Icon Theme Extras</application> パッケージは <application>GNOME</application> デスクトップの追加アイコンを提供します。
 @z
 
 @x
@@ -35,45 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-icon-theme-extras-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-icon-theme-extras-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-icon-theme-extras-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-icon-theme-extras-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-icon-theme-extras-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-icon-theme-extras-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-icon-theme-extras-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-icon-theme-extras-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-icon-theme-extras-md5sum;</para>
+          Download MD5 sum: &gnome-icon-theme-extras-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-icon-theme-extras-md5sum;</para>
+          &Download; MD5 sum: &gnome-icon-theme-extras-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-icon-theme-extras-size;</para>
+          Download size: &gnome-icon-theme-extras-size;
 @y
-        <para>&DownloadSize;: &gnome-icon-theme-extras-size;</para>
+          &DownloadSize;: &gnome-icon-theme-extras-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-icon-theme-extras-buildsize;</para>
+          Estimated disk space required: &gnome-icon-theme-extras-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-icon-theme-extras-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-icon-theme-extras-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-icon-theme-extras-time;</para>
+          Estimated build time: &gnome-icon-theme-extras-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-icon-theme-extras-time;</para>
+          &Estimatedbuildtime;: &gnome-icon-theme-extras-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gnome-icon-theme-extras Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GNOME Icon Theme Extras Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gnome-icon-theme-extras&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Icon Theme Extras&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -90,37 +88,31 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-icon-theme-extras"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-icon-theme-extras"/></para>
 @z
 
 @x
-    <title>Installation of gnome-icon-theme-extras</title>
+    <title>Installation of GNOME Icon Theme Extras</title>
 @y
-    <title>&InstallationOf1;gnome-icon-theme-extras&InstallationOf2;</title>
+    <title>&InstallationOf1;GNOME Icon Theme Extras&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gnome-icon-theme-extras</application> by running the following
-    commands:</para>
+      Install <application>GNOME Icon Theme Extras</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gnome-icon-theme-extras</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Icon Theme Extras</application> をビルドします。
 @z
 
 @x
-    <para>This package does not have a testsuite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z

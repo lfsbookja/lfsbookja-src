@@ -112,14 +112,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="sqlite"/> (internal <application>sqlite</application> is
-      incompatable with existing or future installations)
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="sqlite"/> (internal <application>sqlite</application> is
-      incompatable with existing or future installations)
+      <xref linkend="sqlite"/>
     </para>
 @z
 
@@ -220,15 +218,31 @@
 @x
         <seg>certutil, nss-config and pk12util</seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so, libnssdbm3.so,
-          libnssutil3.so, libsmime3.so, libsoftokn3.so and libssl3.so
+          libcrmf.a,
+          libfreebl3.so,
+          libnss3.so,
+          libnssckbi.so,
+          libnssdbm3.so,
+          libnsssysinit.so,
+          libnssutil3.so,
+          libsmime3.so,
+          libsoftokn3.so and
+          libssl3.so
         </seg>
         <seg>/usr/include/nss</seg>
 @y
         <seg>certutil, nss-config, pk12util</seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so, libnssdbm3.so,
-          libnssutil3.so, libsmime3.so, libsoftokn3.so, libssl3.so
+          libcrmf.a,
+          libfreebl3.so,
+          libnss3.so,
+          libnssckbi.so,
+          libnssdbm3.so,
+          libnsssysinit.so,
+          libnssutil3.so,
+          libsmime3.so,
+          libsoftokn3.so,
+          libssl3.so
         </seg>
         <seg>/usr/include/nss</seg>
 @z

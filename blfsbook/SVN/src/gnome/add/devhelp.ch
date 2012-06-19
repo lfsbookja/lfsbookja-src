@@ -20,12 +20,12 @@
 @z
 
 @x
-    <para><application>Devhelp</application> is an API documentation browser for GTK+
-    and GNOME. It works natively with gtk-doc.</para>
+      <application>Devhelp</application> is an API documentation browser for GTK+
+      and <application>GNOME</application>. It works natively with
+      <application>GTK Doc</application>.
 @y
-    <para>
-    <application>Devhelp</application> は GTK+ や GNOME における API ドキュメントブラウザーです。
-    </para>
+      <application>Devhelp</application> は GTK+ や <application>GNOME</application> における API ドキュメントブラウザーです。
+      <application>GTK Doc</application> とともに動作します。
 @z
 
 @x
@@ -35,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&devhelp-download-http;"/></para>
+          Download (HTTP): <ulink url="&devhelp-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&devhelp-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&devhelp-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&devhelp-download-ftp;"/></para>
+          Download (FTP): <ulink url="&devhelp-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&devhelp-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&devhelp-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &devhelp-md5sum;</para>
+          Download MD5 sum: &devhelp-md5sum;
 @y
-        <para>&Download; MD5 sum: &devhelp-md5sum;</para>
+          &Download; MD5 sum: &devhelp-md5sum;
 @z
 
 @x
-        <para>Download size: &devhelp-size;</para>
+          Download size: &devhelp-size;
 @y
-        <para>&DownloadSize;: &devhelp-size;</para>
+          &DownloadSize;: &devhelp-size;
 @z
 
 @x
-        <para>Estimated disk space required: &devhelp-buildsize;</para>
+          Estimated disk space required: &devhelp-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &devhelp-buildsize;</para>
+          &Estimateddiskspacerequired;: &devhelp-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &devhelp-time;</para>
+          Estimated build time: &devhelp-time;
 @y
-        <para>&Estimatedbuildtime;: &devhelp-time;</para>
+          &Estimatedbuildtime;: &devhelp-time;
 @z
 
 @x
@@ -103,26 +103,22 @@
 @z
 
 @x
-    <para>Install <application>Devhelp</application> by running the following
-    commands:</para>
+      Install <application>Devhelp</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Devhelp</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Devhelp</application> をビルドします。
 @z
 
 @x
-    <para>This package does not have a testsuite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -149,7 +145,8 @@
           libdevhelp-3.so
         </seg>
         <seg>
-          /usr/include/devhelp-3.0 and /usr/share/devhelp
+          /usr/include/devhelp-3.0 and
+          /usr/share/devhelp
         </seg>
 @y
         <seg>
@@ -159,7 +156,8 @@
           libdevhelp-3.so
         </seg>
         <seg>
-          /usr/include/devhelp-3.0, /usr/share/devhelp
+          /usr/include/devhelp-3.0,
+          /usr/share/devhelp
         </seg>
 @z
 
@@ -170,16 +168,13 @@
 @z
 
 @x devhelp
-          <para>GNOME Developers&apos; help program.</para>
+            is the <application>GNOME</application> Developers' Help program.
 @y
-          <para>GNOME Developers&apos; help program.</para>
+            is the <application>GNOME</application> Developers' Help program.
 @z
 
 @x libdevhelp-3.so
-          <para>is a library that provides documentation browser 
-          functionality.</para>
+            is a library that provides documentation browser functionality.
 @y
-          <para>
-          ドキュメントブラウザー機能を提供するライブラリ。
-          </para>
+            ドキュメントブラウザー機能を提供するライブラリ。
 @z

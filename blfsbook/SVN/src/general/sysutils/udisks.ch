@@ -14,19 +14,19 @@
 @z
 
 @x
-    <title>Introduction to udisks</title>
+    <title>Introduction to UDisks</title>
 @y
-    <title>&IntroductionTo1;udisks&IntroductionTo2;</title>
+    <title>&IntroductionTo1;UDisks&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>udisks</application> package is a daemon that provide
-    interfaces to obtain information and perform operations on storage
-    devices.</para>
+      The <application>UDisks</application> package provides a
+      storage daemon that implements well-defined D-Bus interfaces
+      that can be used to query and manipulate storage devices.
 @y
-    <para>
-    <application>udisks</application> パッケージは、ストレージデバイスに対する情報取得や処理制御のためのインターフェースを実現するデーモンを提供します。
-    </para>
+      The <application>UDisks</application> package provides a
+      storage daemon that implements well-defined D-Bus interfaces
+      that can be used to query and manipulate storage devices.
 @z
 
 @x
@@ -36,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&udisks-download-http;"/></para>
+          Download (HTTP): <ulink url="&udisks-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&udisks-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&udisks-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&udisks-download-ftp;"/></para>
+          Download (FTP): <ulink url="&udisks-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&udisks-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&udisks-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &udisks-md5sum;</para>
+          Download MD5 sum: &udisks-md5sum;
 @y
-        <para>&Download; MD5 sum: &udisks-md5sum;</para>
+          &Download; MD5 sum: &udisks-md5sum;
 @z
 
 @x
-        <para>Download size: &udisks-size;</para>
+          Download size: &udisks-size;
 @y
-        <para>&DownloadSize;: &udisks-size;</para>
+          &DownloadSize;: &udisks-size;
 @z
 
 @x
-        <para>Estimated disk space required: &udisks-buildsize;</para>
+          Estimated disk space required: &udisks-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &udisks-buildsize;</para>
+          &Estimateddiskspacerequired;: &udisks-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &udisks-time;</para>
+          Estimated build time: &udisks-time;
 @y
-        <para>&Estimatedbuildtime;: &udisks-time;</para>
+          &Estimatedbuildtime;: &udisks-time;
 @z
 
 @x
@@ -79,69 +79,71 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="libatasmart"/>,
-    <xref linkend="parted"/> (with <xref linkend="lvm2"/>, device-mapper),
-    <xref linkend="polkit"/>,
-    <xref linkend="sg3_utils"/>, and
-    <xref linkend="udev"/> (gudev)</para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="libatasmart"/>,
+      <xref linkend="lvm2"/>,
+      <xref linkend="parted"/>,
+      <xref linkend="polkit"/>,
+      <xref linkend="sg3_utils"/> and
+      <xref linkend="udev"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="dbus-glib"/>,
-    <xref linkend="libatasmart"/>,
-    <xref linkend="parted"/> (<xref linkend="lvm2"/> つまり device-mapper を含む),
-    <xref linkend="polkit"/>,
-    <xref linkend="sg3_utils"/>,
-    <xref linkend="udev"/> (gudev)</para>
+    <para role="required">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="libatasmart"/>,
+      <xref linkend="lvm2"/>,
+      <xref linkend="parted"/>,
+      <xref linkend="polkit"/>,
+      <xref linkend="sg3_utils"/>,
+      <xref linkend="udev"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/> and
-    <xref linkend="sudo"/> (to run the test)</para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="sudo"/> (to run the test)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>,
-    <xref linkend="sudo"/> (テスト実行時)</para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="sudo"/> (テスト実行時)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/udisks"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/udisks"/></para>
 @z
 
 @x
-    <title>Installation of udisks</title>
+    <title>Installation of UDisks</title>
 @y
-    <title>&InstallationOf1;udisks&InstallationOf2;</title>
+    <title>&InstallationOf1;UDisks&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>udisks</application> by running the following
-    commands:</para>
+      Install <application>UDisks</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>udisks</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>UDisks</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -158,42 +160,32 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>udisks-dm-export, udisks-part-id, udisks-probe-ata-smart,
-        udisks-probe-sas-expander, umount.udisks, udisks, udisks-tcp-bridge,
-        udisks-daemon, udisks-helper-ata-smart-collect,
-        udisks-helper-ata-smart-selftest, udisks-helper-change-filesystem-label,
-        udisks-helper-change-luks-password, udisks-helper-create-partition,
-        udisks-helper-create-partition-table, udisks-helper-delete-partition,
-        udisks-helper-drive-benchmark, udisks-helper-drive-detach,
-        udisks-helper-drive-poll, udisks-helper-fstab-mounter,
-        udisks-helper-linux-md-check, udisks-helper-linux-md-remove-component,
-        udisks-helper-mdadm-expand, udisks-helper-mkfs, and
-        udisks-helper-modify-partition</seg>
-        <seg>libudisks-action-lookup.{so,a}</seg>
-        <seg>/usr/lib/udisks, /var/{lib/udisks,run/udisks}</seg>
+        <seg>
+          udisks, udisks-daemon, udisks-tcp-bridge and
+          umount.udisks
+        </seg>
+        <seg> 
+          /usr/lib/udisks,
+          /usr/share/gtk-doc/html/udisks and
+          /var/lib/udisks
+        </seg>
 @y
-        <seg>udisks-dm-export, udisks-part-id, udisks-probe-ata-smart,
-        udisks-probe-sas-expander, umount.udisks, udisks, udisks-tcp-bridge,
-        udisks-daemon, udisks-helper-ata-smart-collect,
-        udisks-helper-ata-smart-selftest, udisks-helper-change-filesystem-label,
-        udisks-helper-change-luks-password, udisks-helper-create-partition,
-        udisks-helper-create-partition-table, udisks-helper-delete-partition,
-        udisks-helper-drive-benchmark, udisks-helper-drive-detach,
-        udisks-helper-drive-poll, udisks-helper-fstab-mounter,
-        udisks-helper-linux-md-check, udisks-helper-linux-md-remove-component,
-        udisks-helper-mdadm-expand, udisks-helper-mkfs,
-        udisks-helper-modify-partition</seg>
-        <seg>libudisks-action-lookup.{so,a}</seg>
-        <seg>/usr/lib/udisks, /var/{lib/udisks,run/udisks}</seg>
+        <seg>
+          udisks, udisks-daemon, udisks-tcp-bridge,
+          umount.udisks
+        </seg>
+        <seg> 
+          /usr/lib/udisks,
+          /usr/share/gtk-doc/html/udisks,
+          /var/lib/udisks
+        </seg>
 @z
 
 @x
@@ -203,33 +195,21 @@
 @z
 
 @x udisks
-          <para>is a command line tool.</para>
+            is a simple command line interface for the 
+            <application>UDisks</application> Daemon.
 @y
-          <para>
-          コマンドラインツール。
-          </para>
+            is a simple command line interface for the 
+            <application>UDisks</application> Daemon.
 @z
 
 @x udisks-tcp-bridge
-          <para>is a <application>udisks</application> TCP/IP bridge.</para>
+            is the <application>UDisks</application> TCP/IP bridge.
 @y
-          <para>
-          <application>udisks</application> TCP/IP ブリッジ。
-          </para>
+            <application>UDisks</application> TCP/IP ブリッジ。
 @z
 
 @x udisks-daemon
-          <para>is the <application>udisks</application> Daemon.</para>
+            is the <application>UDisks</application> Daemon.
 @y
-          <para>
-          <application>udisks</application> デーモン。
-          </para>
-@z
-
-@x libudisks-action-lookup.{so,a}
-          <para>is a <application>polkit</application> extension.</para>
-@y
-          <para>
-          <application>polkit</application> 拡張ライブラリ。
-          </para>
+            <application>UDisks</application> デーモン。
 @z

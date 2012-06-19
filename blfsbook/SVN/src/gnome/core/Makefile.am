@@ -12,7 +12,6 @@ CHANGE_FILES = \
 	baobab.ch                   \
 	brasero.ch                  \
 	caribou.ch                  \
-	config.ch                   \
 	core.ch                     \
 	dconf.ch                    \
 	dummy-applications.ch       \
@@ -83,7 +82,6 @@ CHANGE_FILES = \
 	nautilus.ch                 \
 	network-manager-applet.ch   \
 	polkit-gnome.ch             \
-	pre-install-config.ch       \
 	totem-pl-parser.ch          \
 	seed.ch                     \
 	sushi.ch                    \
@@ -112,7 +110,6 @@ at-spi2-core.xml:          $(BOOKdir)/$@ $(srcdir)/at-spi2-core.ch
 brasero.xml:               $(BOOKdir)/$@ $(srcdir)/brasero.ch
 cantarell-fonts.xml:       $(BOOKdir)/$@ $(srcdir)/cantarell-fonts.ch
 caribou.xml:               $(BOOKdir)/$@ $(srcdir)/caribou.ch
-config.xml:                $(BOOKdir)/$@ $(srcdir)/config.ch
 core.xml:                  $(BOOKdir)/$@ $(srcdir)/core.ch
 dconf.xml:                 $(BOOKdir)/$@ $(srcdir)/dconf.ch
 dummy-applications.xml:    $(BOOKdir)/$@ $(srcdir)/dummy-applications.ch
@@ -181,7 +178,6 @@ mutter.xml:                    $(BOOKdir)/$@ $(srcdir)/mutter.ch
 nautilus.xml:                  $(BOOKdir)/$@ $(srcdir)/nautilus.ch
 network-manager-applet.xml:    $(BOOKdir)/$@ $(srcdir)/network-manager-applet.ch
 polkit-gnome.xml:              $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
-pre-install-config.xml:        $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
 seed.xml:                      $(BOOKdir)/$@ $(srcdir)/seed.ch
 sushi.xml:                     $(BOOKdir)/$@ $(srcdir)/sushi.ch
 totem-pl-parser.xml:           $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch

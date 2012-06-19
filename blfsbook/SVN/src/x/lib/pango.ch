@@ -19,17 +19,29 @@
     <title>&IntroductionTo1;Pango&IntroductionTo2;</title>
 @z
 
+% @x
+%     <para><application>Pango</application> is a library for laying out 
+%     and rendering of text, with an emphasis on internationalization. 
+%     It can be used anywhere that text layout is needed, though most 
+%     of the work on Pango so far has been done in the context of the GTK+ 
+%     widget toolkit.</para>
+% @y
+%     <para>
+%     <application>Pango</application> は、テキストのレイアウトやレンダリングを行うライブラリであり、強調表示や国際化をサポートします。
+%     テキストレイアウトが必要な場面なら、どこでも用いることができますが、実際には GTK+ ウィジェットツールキットの中で利用されています。
+%     </para>
+% @z
+
 @x
-    <para><application>Pango</application> is a library for laying out 
-    and rendering of text, with an emphasis on internationalization. 
-    It can be used anywhere that text layout is needed, though most 
-    of the work on Pango so far has been done in the context of the GTK+ 
-    widget toolkit.</para>
+      <application>Pango</application> is a library for laying out and rendering
+      of text, with an emphasis on internationalization. It can be used anywhere
+      that text layout is needed, though most of the work on Pango so far has
+      been done in the context of the GTK+ widget toolkit.
 @y
-    <para>
-    <application>Pango</application> は、テキストのレイアウトやレンダリングを行うライブラリであり、強調表示や国際化をサポートします。
-    テキストレイアウトが必要な場面なら、どこでも用いることができますが、実際には GTK+ ウィジェットツールキットの中で利用されています。
-    </para>
+      <application>Pango</application> is a library for laying out and rendering
+      of text, with an emphasis on internationalization. It can be used anywhere
+      that text layout is needed, though most of the work on Pango so far has
+      been done in the context of the GTK+ widget toolkit.
 @z
 
 @x
@@ -81,14 +93,20 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">Required, one of:</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>
+      <xref linkend="freetype2"/> or
+      <xref linkend="xorg7-lib"/>
+      (all 3 are required if you intend to install Gtk+)
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <bridgehead renderas="sect4">&Required; 以下のいずれか</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>
+      <xref linkend="freetype2"/>,
+      <xref linkend="xorg7-lib"/>
+      (この３つは Gtk+ をインストールする場合は必須)
     </para>
 @z
 
@@ -119,11 +137,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/pango"/></para>
+      User Notes: <ulink url="&blfs-wiki;/pango"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/pango"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/pango"/>
 @z
 
 @x
@@ -133,35 +149,27 @@
 @z
 
 @x
-    <para>Install <application>Pango</application> by running the following
-    commands:</para>
+      Install <application>Pango</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Pango</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Pango</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. You can
-    install <xref linkend="gtk-doc"/> if you wish to test the documentation
-    section of the test suite. Also, the <quote>testboundries</quote> test
-    could fail if you have <application>LibThai</application> installed.
-    </para>
+      To test the results, issue: <command>make check</command>. You can install
+      <xref linkend="gtk-doc"/> if you wish to test the documentation section of
+      the test suite. Also, the <quote>testboundries</quote> test could fail if
+      you have <application>LibThai</application> installed.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    テストスイートのうち、ドキュメントに関するテストを実施する場合は <xref linkend="gtk-doc"/> をインストールしておく必要があります。
-    また <quote>testboundries</quote> テストは、<application>LibThai</application> をインストールしていない場合には失敗します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストスイートのうち、ドキュメントに関するテストを実施する場合は <xref linkend="gtk-doc"/> をインストールしておく必要があります。
+      また <quote>testboundries</quote> テストは、<application>LibThai</application> をインストールしていない場合には失敗します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -183,12 +191,12 @@
 @z
 
 @x
-      <para><filename>/etc/pango/pangorc</filename>,
-      <filename>~/.pangorc</filename>, and the file specified in the
-      environment variable <envar>PANGO_RC_FILE</envar></para>
+        <filename>/etc/pango/pangorc</filename>, <filename>~/.pangorc</filename>
+        and the file specified in the environment variable
+        <envar>PANGO_RC_FILE</envar>
 @y
-      <para><filename>/etc/pango/pangorc</filename>,
-      <filename>~/.pangorc</filename>, および環境変数 <envar>PANGO_RC_FILE</envar> にて指定されたファイル</para>
+        <filename>/etc/pango/pangorc</filename>,
+        <filename>~/.pangorc</filename>, および環境変数 <envar>PANGO_RC_FILE</envar> にて指定されたファイル。
 @z
 
 @x
@@ -198,15 +206,13 @@
 @z
 
 @x
-      <para>The <application>Pango</application> module path is specified by
-      the key <userinput><parameter>Pango/ModulesPath</parameter></userinput>
-      in the <application>Pango</application> config database, which is read
-      from the config files listed above.</para>
+        The <application>Pango</application> module path is specified by the key
+        <userinput><parameter>Pango/ModulesPath</parameter></userinput> in the
+        <application>Pango</application> config database, which is read from the
+        config files listed above.
 @y
-      <para>
-      <application>Pango</application> モジュールパスは、<application>Pango</application> 設定データベース内のキー <userinput><parameter>Pango/ModulesPath</parameter></userinput> により指定されます。
-      これは上に示している設定ファイルから読み出されます。
-      </para>
+        <application>Pango</application> モジュールパスは、<application>Pango</application> 設定データベース内のキー <userinput><parameter>Pango/ModulesPath</parameter></userinput> により指定されます。
+        これは上に示している設定ファイルから読み出されます。
 @z
 
 @x
@@ -226,27 +232,33 @@
 @z
 
 @x
+        <seg>pango-querymodules and pango-view</seg>
         <seg>
-          pango-querymodules and pango-view
+          libpango-1.0.so,
+          libpangocairo-1.0.so,
+          libpangoft2-1.0.so,
+          libpangox-1.0.so and
+          libpangoxft-1.0.so
         </seg>
         <seg>
-          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so, libpangoxft-1.0.so
-        </seg>
-        <seg>
-          /etc/pango, /usr/include/pango-1.0, /usr/lib/pango and
+          /etc/pango,
+          /usr/include/pango-1.0,
+          /usr/lib/pango and
           /usr/share/gtk-doc/html/pango
         </seg>
 @y
+        <seg>pango-querymodules, pango-view</seg>
         <seg>
-          pango-querymodules, pango-view
+          libpango-1.0.so,
+          libpangocairo-1.0.so,
+          libpangoft2-1.0.so,
+          libpangox-1.0.so,
+          libpangoxft-1.0.so
         </seg>
         <seg>
-          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so, libpangoxft-1.0.so
-        </seg>
-        <seg>
-          /etc/pango, /usr/include/pango-1.0, /usr/lib/pango,
+          /etc/pango,
+          /usr/include/pango-1.0,
+          /usr/lib/pango,
           /usr/share/gtk-doc/html/pango
         </seg>
 @z
@@ -258,11 +270,9 @@
 @z
 
 @x pango-querymodules
-          <para>is a module registration utility that collects
-          information about <application>Pango</application> loadable
-          modules.</para>
+            is a module registration utility that collects information about
+            <application>Pango</application> loadable modules.
 @y
-          <para>is a module registration utility that collects
-          information about <application>Pango</application> loadable
-          modules.</para>
+            is a module registration utility that collects information about
+            <application>Pango</application> loadable modules.
 @z

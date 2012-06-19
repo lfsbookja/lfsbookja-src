@@ -14,20 +14,20 @@
 @z
 
 @x
-    <title>Introduction to telepathy-glib</title>
+    <title>Introduction to Telepathy GLib</title>
 @y
-    <title>&IntroductionTo1;telepathy-glib&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Telepathy GLib&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>telepathy-glib</application> package is a library for
-      GLib-based Telepathy components. Telepathy is a
+      The <application>Telepathy GLib</application> package is a library for
+      GLib based <application>Telepathy</application> components. Telepathy is a
       <application>D-Bus</application> framework for unifying real time
       communication, including instant messaging, voice calls and video calls. It
       abstracts differences between protocols to provide a unified interface for
       applications.
 @y
-      <application>telepathy-glib</application> パッケージは、GLib ベースの Telepathy コンポーネントに対するライブラリです。
+      <application>Telepathy GLib</application> パッケージは、GLib ベースの Telepathy コンポーネントに対するライブラリです。
       Telepathy コンポーネントは <application>D-Bus</application> フレームワークであり、リアルタイムなコミュニケーション、インスタントメッセージ、音声あるいはビデオコールを共通化します。
       アプリケーションに対し共通化されたインターフェースを提供することで、各種プロトコルの差異を抽象化するものです。
 @z
@@ -75,9 +75,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">telepathy-glib Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Telepathy GLib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;telepathy-glib&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Telepathy GLib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -124,23 +124,21 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/telepathy-glib"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/telepathy-glib"/></para>
 @z
 
 @x
-    <title>Installation of telepathy-glib</title>
+    <title>Installation of Telepathy GLlib</title>
 @y
-    <title>&InstallationOf1;telepathy-glib&InstallationOf2;</title>
+    <title>&InstallationOf1;Telepathy GLlib&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>telepathy-glib</application> by running the following
-      commands:
+      Install <application>Telepathy GLib</application> by running the
+      following commands:
 @y
-      以下のコマンドを実行して <application>telepathy-glib</application> をビルドします。
+      以下のコマンドを実行して <application>Telepathy GLib</application> をビルドします。
 @z
 
 @x
@@ -222,7 +220,7 @@
 @z
 
 @x libtelepathy-glib.{so,a}
-            contains the <application>telepathy-glib</application> API functions.
+            contains the <application>Telepathy GLib</application> API functions.
 @y
-            <application>telepathy-glib</application> の API 関数を提供します。
+            <application>Telepathy GLib</application> の API 関数を提供します。
 @z

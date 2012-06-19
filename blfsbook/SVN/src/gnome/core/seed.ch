@@ -14,17 +14,15 @@
 @z
 
 @x
-    <title>Introduction to seed</title>
+    <title>Introduction to Seed</title>
 @y
-    <title>&IntroductionTo1;seed&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Seed&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Seed</application> is a JavaScript interpreter.</para>
+      <application>Seed</application> is a JavaScript interpreter.
 @y
-    <para>
-    <application>Seed</application> は JavaScript インタープリターです。
-    </para>
+      <application>Seed</application> は JavaScript インタープリターです。
 @z
 
 @x
@@ -34,45 +32,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&seed-download-http;"/></para>
+          Download (HTTP): <ulink url="&seed-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&seed-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&seed-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&seed-download-ftp;"/></para>
+          Download (FTP): <ulink url="&seed-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&seed-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&seed-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &seed-md5sum;</para>
+          Download MD5 sum: &seed-md5sum;
 @y
-        <para>&Download; MD5 sum: &seed-md5sum;</para>
+          &Download; MD5 sum: &seed-md5sum;
 @z
 
 @x
-        <para>Download size: &seed-size;</para>
+          Download size: &seed-size;
 @y
-        <para>&DownloadSize;: &seed-size;</para>
+          &DownloadSize;: &seed-size;
 @z
 
 @x
-        <para>Estimated disk space required: &seed-buildsize;</para>
+          Estimated disk space required: &seed-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &seed-buildsize;</para>
+          &Estimateddiskspacerequired;: &seed-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &seed-time;</para>
+          Estimated build time: &seed-time;
 @y
-        <para>&Estimatedbuildtime;: &seed-time;</para>
+          &Estimatedbuildtime;: &seed-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">seed Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Seed Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;seed&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Seed&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -98,32 +96,28 @@
 @z
 
 @x
-    <title>Installation of seed</title>
+    <title>Installation of Seed</title>
 @y
-    <title>&InstallationOf1;seed&InstallationOf2;</title>
+    <title>&InstallationOf1;Seed&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>seed</application> by running the following
-    commands:</para>
+      Install <application>Seed</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>seed</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>seed</application> をビルドします。
 @z
 
 @x
-    <para>This package does not have a working testsuite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -156,8 +150,11 @@
           libseed-gtk3.so
         </seg>
         <seg>
-          /usr/include/seed-gtk3, /usr/lib/seed-gtk3, /usr/share/doc/seed,
-          /usr/share/gtk-doc/html/seed and /usr/share/seed-gtk3
+          /usr/include/seed-gtk3,
+          /usr/lib/seed-gtk3,
+          /usr/share/doc/seed,
+          /usr/share/gtk-doc/html/seed and
+          /usr/share/seed-gtk3
         </seg>
 @y
         <seg>
@@ -167,8 +164,11 @@
           libseed-gtk3.so
         </seg>
         <seg>
-          /usr/include/seed-gtk3, /usr/lib/seed-gtk3, /usr/share/doc/seed,
-          /usr/share/gtk-doc/html/seed, /usr/share/seed-gtk3
+          /usr/include/seed-gtk3,
+          /usr/lib/seed-gtk3,
+          /usr/share/doc/seed,
+          /usr/share/gtk-doc/html/seed,
+          /usr/share/seed-gtk3
         </seg>
 @z
 
@@ -178,3 +178,14 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x seed
+            is the command line JavaScript interpreter.
+@y
+            is the command line JavaScript interpreter.
+@z
+
+@x libseed-gtk3.so
+            contains the <application>Seed</application> API functions.
+@y
+            contains the <application>Seed</application> API functions.
+@z

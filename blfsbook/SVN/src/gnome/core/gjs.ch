@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to gjs</title>
+    <title>Introduction to Gjs</title>
 @y
-    <title>&IntroductionTo1;gjs&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Gjs&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Gjs</application> is a Javascript binding for
-    <application>GNOME</application>.</para>
+      <application>Gjs</application> is a Javascript binding for
+      <application>GNOME</application>.
 @y
-    <para>
-    <application>Gjs</application> は <application>GNOME</application> における Javascript バインディングです。
-    </para>
+      <application>Gjs</application> は <application>GNOME</application> における Javascript バインディングです。
 @z
 
 @x
@@ -35,45 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gjs-download-http;"/></para>
+          Download (HTTP): <ulink url="&gjs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gjs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gjs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gjs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gjs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gjs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gjs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gjs-md5sum;</para>
+          Download MD5 sum: &gjs-md5sum;
 @y
-        <para>&Download; MD5 sum: &gjs-md5sum;</para>
+          &Download; MD5 sum: &gjs-md5sum;
 @z
 
 @x
-        <para>Download size: &gjs-size;</para>
+          Download size: &gjs-size;
 @y
-        <para>&DownloadSize;: &gjs-size;</para>
+          &DownloadSize;: &gjs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gjs-buildsize;</para>
+          Estimated disk space required: &gjs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gjs-buildsize;</para>
+          &Estimateddiskspacerequired;: &gjs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gjs-time;</para>
+          Estimated build time: &gjs-time;
 @y
-        <para>&Estimatedbuildtime;: &gjs-time;</para>
+          &Estimatedbuildtime;: &gjs-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gjs Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Gjs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gjs&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Gjs&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -96,41 +94,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gjs"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gjs"/></para>
 @z
 
 @x
-    <title>Installation of gjs</title>
+    <title>Installation of Gjs</title>
 @y
-    <title>&IntroductionTo1;gjs&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Gjs&IntroductionTo2;</title>
 @z
 
 @x
-    <para>Install <application>gjs</application> by running the following
-    commands:</para>
+      Install <application>Gjs</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gjs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Gjs</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -157,7 +147,8 @@
           libgjs-dbus.so, libgjs-gdbus.so and libgjs.so
         </seg>
         <seg>
-          /usr/include/gjs-1.0, /usr/lib/gjs-1.0 and
+          /usr/include/gjs-1.0,
+          /usr/lib/gjs-1.0 and
           /usr/share/gjs-1.0
         </seg>
 @y
@@ -168,7 +159,8 @@
           libgjs-dbus.so, libgjs-gdbus.so, libgjs.so
         </seg>
         <seg>
-          /usr/include/gjs-1.0, /usr/lib/gjs-1.0,
+          /usr/include/gjs-1.0,
+          /usr/lib/gjs-1.0,
           /usr/share/gjs-1.0
         </seg>
 @z

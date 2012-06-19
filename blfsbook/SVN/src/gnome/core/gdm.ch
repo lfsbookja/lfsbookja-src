@@ -20,14 +20,13 @@
 @z
 
 @x
-    <para>The <application>GDM</application> package contains
-    <application>GNOME</application>'s Display Manager daemon. This is
-    useful for allowing configurable graphical logins.</para>
+      <application>GDM</application> is a system service that is
+      responsible for providing graphical logins and managing local
+      and remote displays.
 @y
-    <para>
-    <application>GDM</application> パッケージは、<application>GNOME</application> のディスプレイマネージャーデーモン (Display Manager daemon) を提供します。
-    これは設定変更が容易なグラフィカルログインを実現します。
-    </para>
+      <application>GDM</application> is a system service that is
+      responsible for providing graphical logins and managing local
+      and remote displays.
 @z
 
 @x
@@ -37,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gdm-download-http;"/></para>
+          Download (HTTP): <ulink url="&gdm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gdm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gdm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gdm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gdm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gdm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gdm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gdm-md5sum;</para>
+          Download MD5 sum: &gdm-md5sum;
 @y
-        <para>&Download; MD5 sum: &gdm-md5sum;</para>
+          &Download; MD5 sum: &gdm-md5sum;
 @z
 
 @x
-        <para>Download size: &gdm-size;</para>
+          Download size: &gdm-size;
 @y
-        <para>&DownloadSize;: &gdm-size;</para>
+          &DownloadSize;: &gdm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gdm-buildsize;</para>
+          Estimated disk space required: &gdm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gdm-buildsize;</para>
+          &Estimateddiskspacerequired;: &gdm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gdm-time;</para>
+          Estimated build time: &gdm-time;
 @y
-        <para>&Estimatedbuildtime;: &gdm-time;</para>
+          &Estimatedbuildtime;: &gdm-time;
 @z
 
 @x
@@ -158,10 +157,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gdm"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gdm"/></para>
 @z
 
 @x
@@ -171,40 +168,35 @@
 @z
 
 @x
-    <para>It is recommended to have a dedicated user and group to take
-    control of the <command>gdm</command> daemon after it is
-    started. Issue the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+      It is recommended to have a dedicated user and group to take
+      control of the <command>gdm</command> daemon after it is
+      started. Issue the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>It is recommended to have a dedicated user and group to take
-    control of the <command>gdm</command> daemon after it is
-    started. Issue the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+      It is recommended to have a dedicated user and group to take
+      control of the <command>gdm</command> daemon after it is
+      started. Issue the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Install <application>GDM</application> by running
-    the following commands as an unprivileged user:</para>
+      Install <application>GDM</application> by running the following
+      commands:
 @y
-    <para>
-    一般ユーザーになって、以下のコマンドを実行し <application>GDM</application> をビルドします。
-    </para>
+      一般ユーザーになって、以下のコマンドを実行し <application>GDM</application> をビルドします。
 @z
 
 @x
-    <para>If you have installed <xref linkend="check"/> and you wish to run
-    the testsuite, issue: <command>make check</command>.</para>
+      If you have installed <xref linkend="check"/> and you wish to run
+      the testsuite, issue: <command>make check</command>.
 @y
-    <para>
-    <xref linkend="check"/> をインストールしていてテストスイートを実行する場合は、<command>make check</command> を実行します。</para>
+      <xref linkend="check"/> をインストールしていてテストスイートを実行する場合は、<command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
@@ -214,17 +206,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/gdm</parameter>: This
-    parameter is used so that the <application>GDM</application> internal
-    support programs are installed in the preferred location of <filename
-    class='directory'>/usr/lib/gdm</filename> instead of <filename
-    class='directory'>/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/gdm</parameter>: This
+      parameter is used so that the <application>GDM</application> internal
+      support programs are installed in the preferred location of <filename
+      class="directory">/usr/lib/gdm</filename> instead of <filename
+      class="directory">/usr/libexec</filename>.
 @y
-    <para><parameter>--libexecdir=/usr/lib/gdm</parameter>: This
-    parameter is used so that the <application>GDM</application> internal
-    support programs are installed in the preferred location of <filename
-    class='directory'>/usr/lib/gdm</filename> instead of <filename
-    class='directory'>/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/gdm</parameter>: This
+      parameter is used so that the <application>GDM</application> internal
+      support programs are installed in the preferred location of <filename
+      class="directory">/usr/lib/gdm</filename> instead of <filename
+      class="directory">/usr/libexec</filename>.
 @z
 
 @x
@@ -246,43 +238,43 @@
 @z
 
 @x
-      <para>The GDM daemon is configured using the
-      <filename>/etc/gdm/custom.conf</filename> file.
-      Default values are stored in GConf in the
-      <filename>gdm.schemas</filename> file. It is recommended that end-users
-      modify the <filename>/etc/gdm/custom.conf</filename> file
-      because the schemas file may be overwritten when the user updates their
-      system to have a newer version of GDM.</para>
+        The GDM daemon is configured using the
+        <filename>/etc/gdm/custom.conf</filename> file.
+        Default values are stored in GConf in the
+        <filename>gdm.schemas</filename> file. It is recommended that end-users
+        modify the <filename>/etc/gdm/custom.conf</filename> file
+        because the schemas file may be overwritten when the user updates their
+        system to have a newer version of GDM.
 @y
-      <para>The GDM daemon is configured using the
-      <filename>/etc/gdm/custom.conf</filename> file.
-      Default values are stored in GConf in the
-      <filename>gdm.schemas</filename> file. It is recommended that end-users
-      modify the <filename>/etc/gdm/custom.conf</filename> file
-      because the schemas file may be overwritten when the user updates their
-      system to have a newer version of GDM.</para>
+        The GDM daemon is configured using the
+        <filename>/etc/gdm/custom.conf</filename> file.
+        Default values are stored in GConf in the
+        <filename>gdm.schemas</filename> file. It is recommended that end-users
+        modify the <filename>/etc/gdm/custom.conf</filename> file
+        because the schemas file may be overwritten when the user updates their
+        system to have a newer version of GDM.
 @z
 
 @x
-        <para>If the system-wide <application>D-BUS</application> daemon was
-        running during the installation of <application>gdm</application>,
-        ensure you stop and restart the <application>D-BUS</application>
-        daemon before attempting to start <command>gdm</command>.</para>
+          If the system-wide <application>D-BUS</application> daemon was
+          running during the installation of <application>gdm</application>,
+          ensure you stop and restart the <application>D-BUS</application>
+          daemon before attempting to start <command>gdm</command>.
 @y
-        <para>If the system-wide <application>D-BUS</application> daemon was
-        running during the installation of <application>gdm</application>,
-        ensure you stop and restart the <application>D-BUS</application>
-        daemon before attempting to start <command>gdm</command>.</para>
+          If the system-wide <application>D-BUS</application> daemon was
+          running during the installation of <application>gdm</application>,
+          ensure you stop and restart the <application>D-BUS</application>
+          daemon before attempting to start <command>gdm</command>.
 @z
 
 @x
-      <para><command>gdm</command> can be tested by executing it as the
-      <systemitem class="username">root</systemitem> user. If you wish to stop
-      it you will need to go to a different tty and then kill it.</para>
+        <command>gdm</command> can be tested by executing it as the
+        <systemitem class="username">root</systemitem> user. If you wish to stop
+        it you will need to go to a different tty and then kill it.
 @y
-      <para><command>gdm</command> can be tested by executing it as the
-      <systemitem class="username">root</systemitem> user. If you wish to stop
-      it you will need to go to a different tty and then kill it.</para>
+        <command>gdm</command> can be tested by executing it as the
+        <systemitem class="username">root</systemitem> user. If you wish to stop
+        it you will need to go to a different tty and then kill it.
 @z
 
 @x
@@ -292,33 +284,21 @@
 @z
 
 @x
-      <para>To start a graphical login when the system is booted, install the
-      <filename>/etc/rc.d/init.d/gdm</filename> init script included in the
-      <xref linkend="bootscripts"/> package.<!-- If your
-      <envar>GNOME_PREFIX</envar> environment variable is anything other than
-      <filename class='directory'>/usr</filename> or <filename
-      class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>,
-      you will need to modify the <envar>PATH</envar> statement in the script
-      to include the path where you have <application>GNOME</application>
-      installed.--></para>
+        To start a graphical login when the system is booted, install the
+        <filename>/etc/rc.d/init.d/gdm</filename> init script included in the
+        <xref linkend="bootscripts"/> package.
 @y
-      <para>To start a graphical login when the system is booted, install the
-      <filename>/etc/rc.d/init.d/gdm</filename> init script included in the
-      <xref linkend="bootscripts"/> package.<!-- If your
-      <envar>GNOME_PREFIX</envar> environment variable is anything other than
-      <filename class='directory'>/usr</filename> or <filename
-      class='directory'>/opt/gnome-&gnome-version;&gnome-minor-version;</filename>,
-      you will need to modify the <envar>PATH</envar> statement in the script
-      to include the path where you have <application>GNOME</application>
-      installed.--></para>
+        To start a graphical login when the system is booted, install the
+        <filename>/etc/rc.d/init.d/gdm</filename> init script included in the
+        <xref linkend="bootscripts"/> package.
 @z
 
 @x
-      <para>Now edit <filename>/etc/inittab</filename> with the following
-      commands.</para>
+        Now edit <filename>/etc/inittab</filename> with the following
+        commands.
 @y
-      <para>Now edit <filename>/etc/inittab</filename> with the following
-      commands.</para>
+        Now edit <filename>/etc/inittab</filename> with the following
+        commands.
 @z
 
 @x
@@ -345,9 +325,14 @@
           libgdmgreeter.so and libgdmsimplegreeter.so
         </seg>
         <seg>
-          /etc/dconf/db/gdm.d, /etc/gdm, /usr/include/gdm,
-          /usr/lib/gdm, /usr/share/gdm, /usr/share/gnome/help/gdm,
-          /usr/share/omf/gdm and /var/{cache,lib,log,run}/gdm
+          /etc/dconf/db/gdm.d,
+          /etc/gdm,
+          /usr/include/gdm,
+          /usr/lib/gdm,
+          /usr/share/gdm,
+          /usr/share/gnome/help/gdm,
+          /usr/share/omf/gdm and
+          /var/{cache,lib,log,run}/gdm
         </seg>
 @y
         <seg>
@@ -357,9 +342,14 @@
           libgdmgreeter.so, libgdmsimplegreeter.so
         </seg>
         <seg>
-          /etc/dconf/db/gdm.d, /etc/gdm, /usr/include/gdm,
-          /usr/lib/gdm, /usr/share/gdm, /usr/share/gnome/help/gdm,
-          /usr/share/omf/gdm, /var/{cache,lib,log,run}/gdm
+          /etc/dconf/db/gdm.d,
+          /etc/gdm,
+          /usr/include/gdm,
+          /usr/lib/gdm,
+          /usr/share/gdm,
+          /usr/share/gnome/help/gdm,
+          /usr/share/omf/gdm,
+          /var/{cache,lib,log,run}/gdm
         </seg>
 @z
 
@@ -370,21 +360,23 @@
 @z
 
 @x gdm
-          <para>is the <application>GNOME</application> based login prompt.</para>
+            is the <application>GNOME</application> based login prompt.
 @y
-          <para>is the <application>GNOME</application> based login prompt.</para>
+            is the <application>GNOME</application> based login prompt.
 @z
 
 @x gdmflexiserver
-          <para>is the flexi server mechanism which allows to run GDM sessions
-          on demand, in a new virtual console.</para>
+            is the flexi server mechanism which allows to run 
+            <application>GDM sessions</application>
+            on demand in a new virtual console.
 @y
-          <para>is the flexi server mechanism which allows to run GDM sessions
-          on demand, in a new virtual console.</para>
+            is the flexi server mechanism which allows to run 
+            <application>GDM sessions</application>
+            on demand in a new virtual console.
 @z
 
 @x gdm-screenshot
-          <para>is a screenshot tool.</para>
+            is a screenshot tool.
 @y
-          <para>is a screenshot tool.</para>
+            is a screenshot tool.
 @z

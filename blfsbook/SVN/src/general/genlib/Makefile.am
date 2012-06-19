@@ -10,7 +10,6 @@ CHANGE_FILES = \
 	apr.ch \
 	aspell.ch \
 	boost.ch \
-	clucene.ch \
 	enchant.ch \
 	exempi.ch \
 	expat.ch \
@@ -20,11 +19,9 @@ CHANGE_FILES = \
 	glibmm.ch \
 	gobject-introspection.ch \
 	gmime.ch \
-	gwrap.ch \
 	gsl.ch \
 	icu.ch \
 	iso-codes.ch \
-	ispell.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
@@ -35,20 +32,16 @@ CHANGE_FILES = \
 	libdbusmenuqt.ch \
 	libcroco.ch \
 	libdrm.ch \
-	libelf.ch \
 	libesmtp.ch \
 	libffi.ch \
 	libgcrypt.ch \
-	libggz.ch \
 	libglade.ch \
 	libgpg-error.ch \
 	libgsf.ch \
-	libgtkhtml.ch \
 	libical.ch \
 	libidl.ch \
 	libidn.ch \
 	libksba.ch \
-	liboil.ch \
 	libsigc++.ch \
 	libtasn1.ch \
 	libunique.ch \
@@ -66,7 +59,6 @@ CHANGE_FILES = \
 	qca.ch \
 	slib.ch \
 	talloc.ch \
-	telepathy-farsight.ch \
 	telepathy-farstream.ch \
 	telepathy-glib.ch \
 	telepathy-logger.ch \
@@ -88,7 +80,6 @@ ctie:
 apr.xml:                   $(BOOKdir)/$@ $(srcdir)/apr.ch
 aspell.xml:                $(BOOKdir)/$@ $(srcdir)/aspell.ch
 boost.xml:                 $(BOOKdir)/$@ $(srcdir)/boost.ch
-clucene.xml:               $(BOOKdir)/$@ $(srcdir)/clucene.ch
 enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
 exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
 expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch
@@ -99,10 +90,8 @@ glibmm.xml:                $(BOOKdir)/$@ $(srcdir)/glibmm.ch
 gmime.xml:                 $(BOOKdir)/$@ $(srcdir)/gmime.ch
 gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
 gsl.xml:                   $(BOOKdir)/$@ $(srcdir)/gsl.ch
-gwrap.xml:                 $(BOOKdir)/$@ $(srcdir)/gwrap.ch
 icu.xml:                   $(BOOKdir)/$@ $(srcdir)/icu.ch
 iso-codes.xml:             $(BOOKdir)/$@ $(srcdir)/iso-codes.ch
-ispell.xml:                $(BOOKdir)/$@ $(srcdir)/ispell.ch
 json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
 json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch
 keyutils.xml:              $(BOOKdir)/$@ $(srcdir)/keyutils.ch
@@ -113,20 +102,16 @@ libcroco.xml:              $(BOOKdir)/$@ $(srcdir)/libcroco.ch
 libdaemon.xml:             $(BOOKdir)/$@ $(srcdir)/libdaemon.ch
 libdbusmenuqt.xml:         $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch
 libdrm.xml:                $(BOOKdir)/$@ $(srcdir)/libdrm.ch
-libelf.xml:                $(BOOKdir)/$@ $(srcdir)/libelf.ch
 libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
 libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
 libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
-libggz.xml:                $(BOOKdir)/$@ $(srcdir)/libggz.ch
 libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
 libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
-libgtkhtml.xml:            $(BOOKdir)/$@ $(srcdir)/libgtkhtml.ch
 libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
 libidl.xml:                $(BOOKdir)/$@ $(srcdir)/libidl.ch
 libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
 libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
-liboil.xml:                $(BOOKdir)/$@ $(srcdir)/liboil.ch
 libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
 libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
 libunique.xml:             $(BOOKdir)/$@ $(srcdir)/libunique.ch
@@ -144,7 +129,6 @@ ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
 qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
 slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
 talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
-telepathy-farsight.xml:    $(BOOKdir)/$@ $(srcdir)/telepathy-farsight.ch
 telepathy-farstream.xml:   $(BOOKdir)/$@ $(srcdir)/telepathy-farstream.ch
 telepathy-glib.xml:        $(BOOKdir)/$@ $(srcdir)/telepathy-glib.ch
 telepathy-logger.xml:      $(BOOKdir)/$@ $(srcdir)/telepathy-logger.ch

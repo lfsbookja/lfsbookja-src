@@ -14,26 +14,18 @@
 @z
 
 @x
-  <!ENTITY polkit-gnome-time          "less than 0.1 SBU">
+    <title>Introduction to Polkit GNOME</title>
 @y
-  <!ENTITY polkit-gnome-time          "&LessThan1;0.1 SBU&LessThan2;">
+    <title>&IntroductionTo1;Polkit GNOME&IntroductionTo2;</title>
 @z
 
 @x
-    <title>Introduction to polkit-gnome</title>
+      The <application>Polkit GNOME</application> package provides an
+      Authentication Agent for <application>Polkit</application> that integrates
+      well with the <application>GNOME</application> Desktop environment.
 @y
-    <title>&IntroductionTo1;polkit-gnome&IntroductionTo2;</title>
-@z
-
-@x
-    <para>The <application>polkit-gnome</application> package provides an
-    Authentication Agent for <application>polkit</application> that integrates
-    well with the <application>GNOME</application> desktop environment.</para>
-@y
-    <para>
-    <application>polkit-gnome</application> パッケージは <application>polkit</application> に対する認証エージェント (Authentication Agent) 機能を提供するものです。
+    <application>Polkit GNOME</application> パッケージは <application>Polkit</application> に対する認証エージェント (Authentication Agent) 機能を提供するものです。
     これは <application>GNOME</application> デスクトップ環境に統合され利用されます。
-    </para>
 @z
 
 @x
@@ -43,150 +35,124 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&polkit-gnome-download-http;"/></para>
+          Download (HTTP): <ulink url="&polkit-gnome-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&polkit-gnome-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&polkit-gnome-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&polkit-gnome-download-ftp;"/></para>
+          Download (FTP): <ulink url="&polkit-gnome-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&polkit-gnome-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&polkit-gnome-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &polkit-gnome-md5sum;</para>
+          Download MD5 sum: &polkit-gnome-md5sum;
 @y
-        <para>&Download; MD5 sum: &polkit-gnome-md5sum;</para>
+          &Download; MD5 sum: &polkit-gnome-md5sum;
 @z
 
 @x
-        <para>Download size: &polkit-gnome-size;</para>
+          Download size: &polkit-gnome-size;
 @y
-        <para>&DownloadSize;: &polkit-gnome-size;</para>
+          &DownloadSize;: &polkit-gnome-size;
 @z
 
 @x
-        <para>Estimated disk space required: &polkit-gnome-buildsize;</para>
+          Estimated disk space required: &polkit-gnome-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &polkit-gnome-buildsize;</para>
+          &Estimateddiskspacerequired;: &polkit-gnome-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &polkit-gnome-time;</para>
+          Estimated build time: &polkit-gnome-time;
 @y
-        <para>&Estimatedbuildtime;: &polkit-gnome-time;</para>
+          &Estimatedbuildtime;: &polkit-gnome-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">polkit-gnome Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Polkit GNOME Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;polkit-gnome&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Polkit GNOME&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gtk3"/> and
-    <xref linkend="polkit"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/> and
+      <xref linkend="polkit"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gtk3"/>,
-    <xref linkend="polkit"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="required">
+      <xref linkend="gtk3"/>,
+      <xref linkend="polkit"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/polkit-gnome"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/polkit-gnome"/></para>
 @z
 
 @x
-    <title>Installation of polkit-gnome</title>
+    <title>Installation of Polkit GNOME</title>
 @y
-    <title>&InstallationOf1;polkit-gnome&InstallationOf2;</title>
+    <title>&InstallationOf1;Polkit GNOME&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>polkit-gnome</application> by running the following
-    commands:</para>
+      Install <application>Polkit GNOME</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>polkit-gnome</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>polkit-gnome</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <title>Command Explanations</title>
+    <title>Configuring Polkit GNOME</title>
 @y
-    <title>&CommandExplanations;</title>
+    <title>&Configuring1;Polkit GNOME&Configuring2;</title>
 @z
 
 @x
-    <title>Configuring polkit-gnome</title>
-@y
-    <title>&Configuring1;polkit-gnome&Configuring2;</title>
-@z
-
-@x
-      <title>Config Files</title>
-@y
-      <title>&ConfigFiles;</title>
-@z
-
-@x
-      <para><filename>none</filename></para>
-@y
-      <para><filename>&None;</filename></para>
-@z
-
-@x
-      <title>Automatic startup</title>
+      <title>Automatic Startup</title>
 @y
       <title>自動起動</title>
 @z
 
 @x
-      <para>For <application>polkit-gnome</application> to work correctly, 
-      it needs to be started on user logon.</para>
+        For the authentification framework to work,
+        <command>polkit-gnome-authentification-agent-1</command> needs to be
+        started. However, <command>make install</command> did not 
+        install startup file for the <application>Polkit GNOME</application> 
+        so you have to create it by yourself.
 @y
-      <para>
-      <application>polkit-gnome</application> を正しく動作させるためには、ユーザーログイン時に起動する必要があります。
-      </para>
+        認証フレームワークを正しく動作させるために、<command>polkit-gnome-authentification-agent-1</command> を起動しておく必要があります。
+        However, <command>make install</command> did not 
+        install startup file for the <application>Polkit GNOME</application> 
+        so you have to create it by yourself.
 @z
 
 @x
-      <para>Issue the following commands as the 
-      <systemitem class="username">root</systemitem>user to create 
-      startup file for <application>polkit-gnome</application>:</para>
+        Issue the following commands as the 
+        <systemitem class="username">root</systemitem> user to create 
+        startup file for <application>Polkit GNOME</application>:
 @y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-      これにより <application>polkit-gnome</application> の起動ファイルを生成します。
-      </para>
+        <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+        これにより <application>Polkit GNOME</application> の起動ファイルを生成します。
 @z
 
 @x
@@ -197,22 +163,26 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>polkit-gnome-authentication-agent-1</seg>
-        <seg>none</seg>
-        <seg>/usr/lib/polkit-gnome</seg>
+        <seg>
+          polkit-gnome-authentication-agent-1
+        </seg>
+        <seg>
+          /usr/lib/polkit-gnome
+        </seg>
 @y
-        <seg>polkit-gnome-authentication-agent-1</seg>
-        <seg>&None;</seg>
-        <seg>/usr/lib/polkit-gnome</seg>
+        <seg>
+          polkit-gnome-authentication-agent-1
+        </seg>
+        <seg>
+          /usr/lib/polkit-gnome
+        </seg>
 @z
 
 @x
@@ -222,9 +192,7 @@
 @z
 
 @x polkit-gnome-authentication-agent-1
-          <para>is the polkit-gnome authentication agent.</para>
+            is the <application>Polkit GNOME</application> authentication agent.
 @y
-          <para>
-          polkit-gnome 認証エージェント (Authentication Agent)。
-          </para>
+            <application>Polkit GNOME</application> 認証エージェント (Authentication Agent)。
 @z

@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	alsa-tools.ch       \
 	alsa-utils.ch       \
 	alsa.ch             \
-	arts.ch             \
 	audiofile.ch        \
 	celt051.ch          \
 	esound.ch           \
@@ -29,7 +28,6 @@ CHANGE_FILES = \
 	gst-plugins-good.ch \
 	gst-plugins-ugly.ch \
 	gstreamer.ch        \
-	id3lib.ch           \
 	liba52.ch           \
 	libao.ch            \
 	libcanberra.ch      \
@@ -51,9 +49,7 @@ CHANGE_FILES = \
 	libtheora.ch        \
 	libvorbis.ch        \
 	libvpx.ch           \
-	nas.ch              \
 	opal.ch             \
-	openquicktime.ch    \
 	pulseaudio.ch       \
 	sdl.ch              \
 	sound-theme-freedesktop.ch \
@@ -82,7 +78,6 @@ alsa-plugins.xml:            $(BOOKdir)/$@ $(srcdir)/alsa-plugins.ch
 alsa-tools.xml:              $(BOOKdir)/$@ $(srcdir)/alsa-tools.ch
 alsa-utils.xml:              $(BOOKdir)/$@ $(srcdir)/alsa-utils.ch
 alsa.xml:                    $(BOOKdir)/$@ $(srcdir)/alsa.ch
-arts.xml:                    $(BOOKdir)/$@ $(srcdir)/arts.ch
 audiofile.xml:               $(BOOKdir)/$@ $(srcdir)/audiofile.ch
 celt051.xml:                 $(BOOKdir)/$@ $(srcdir)/celt051.ch
 esound.xml:                  $(BOOKdir)/$@ $(srcdir)/esound.ch
@@ -99,7 +94,6 @@ gst-plugins-base.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-base.ch
 gst-plugins-good.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-good.ch
 gst-plugins-ugly.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-ugly.ch
 gstreamer.xml:               $(BOOKdir)/$@ $(srcdir)/gstreamer.ch
-id3lib.xml:                  $(BOOKdir)/$@ $(srcdir)/id3lib.ch
 liba52.xml:                  $(BOOKdir)/$@ $(srcdir)/liba52.ch
 libao.xml:                   $(BOOKdir)/$@ $(srcdir)/libao.ch
 libcanberra.xml:             $(BOOKdir)/$@ $(srcdir)/libcanberra.ch
@@ -121,9 +115,7 @@ libsndfile.xml:              $(BOOKdir)/$@ $(srcdir)/libsndfile.ch
 libtheora.xml:               $(BOOKdir)/$@ $(srcdir)/libtheora.ch
 libvorbis.xml:               $(BOOKdir)/$@ $(srcdir)/libvorbis.ch
 libvpx.xml:                  $(BOOKdir)/$@ $(srcdir)/libvpx.ch
-nas.xml:                     $(BOOKdir)/$@ $(srcdir)/nas.ch
 opal.xml:                    $(BOOKdir)/$@ $(srcdir)/opal.ch
-openquicktime.xml:           $(BOOKdir)/$@ $(srcdir)/openquicktime.ch
 pulseaudio.xml:              $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
 sdl.xml:                     $(BOOKdir)/$@ $(srcdir)/sdl.ch
 sound-theme-freedesktop.xml: $(BOOKdir)/$@ $(srcdir)/sound-theme-freedesktop.ch

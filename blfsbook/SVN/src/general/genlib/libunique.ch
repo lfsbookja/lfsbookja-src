@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libunique</application> package contains a
-    library for writing single instance applications.</para>
+      The <application>libunique</application> package contains a
+      library for writing single instance applications.
 @y
-    <para>
-    <application>libunique</application> パッケージは、シングルインスタンスのアプリケーションを構築するためのライブラリを提供します。
-    </para>
+      <application>libunique</application> パッケージは、シングルインスタンスのアプリケーションを構築するためのライブラリを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libunique-download-http;"/></para>
+          Download (HTTP): <ulink url="&libunique-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libunique-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libunique-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libunique-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libunique-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libunique-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libunique-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libunique-md5sum;</para>
+          Download MD5 sum: &libunique-md5sum;
 @y
-        <para>&Download; MD5 sum: &libunique-md5sum;</para>
+          &Download; MD5 sum: &libunique-md5sum;
 @z
 
 @x
-        <para>Download size: &libunique-size;</para>
+          Download size: &libunique-size;
 @y
-        <para>&DownloadSize;: &libunique-size;</para>
+          &DownloadSize;: &libunique-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libunique-buildsize;</para>
+          Estimated disk space required: &libunique-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libunique-buildsize;</para>
+          &Estimateddiskspacerequired;: &libunique-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libunique-time;</para>
+          Estimated build time: &libunique-time;
 @y
-        <para>&Estimatedbuildtime;: &libunique-time;</para>
+          &Estimatedbuildtime;: &libunique-time;
 @z
 
 @x
@@ -114,10 +112,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libunique"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libunique"/></para>
 @z
 
 @x
@@ -127,29 +123,23 @@
 @z
 
 @x
-    <para>Install <application>libunique</application> by running the following
-    commands:</para>
+      Install <application>libunique</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libunique</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libunique</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -177,14 +167,16 @@
           libunique-3.0.so
         </seg>
         <seg>
-          /usr/include/unique-3.0 and /usr/share/gtk-doc/html/unique-3.0
+          /usr/include/unique-3.0 and
+          /usr/share/gtk-doc/html/unique-3.0
         </seg>
 @y
         <seg>
           libunique-3.0.so
         </seg>
         <seg>
-          /usr/include/unique-3.0, /usr/share/gtk-doc/html/unique-3.0
+          /usr/include/unique-3.0,
+          /usr/share/gtk-doc/html/unique-3.0
         </seg>
 @z
 
@@ -195,10 +187,8 @@
 @z
 
 @x libunique-1.0.so
-          <para>contains the libunique API functions for single instance
-          support.</para>
+            contains the <application>libunique</application> API functions
+            for single instance support.
 @y
-          <para>
-          シングルインスタンスの構築をサポートする libunique API 関数を提供します。
-          </para>
+            シングルインスタンスの構築をサポートする libunique API 関数を提供します。
 @z

@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to avahi</title>
+    <title>Introduction to Avahi</title>
 @y
-    <title>&IntroductionTo1;avahi&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Avahi&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>avahi</application> package is a system which
-    facilitates service discovery on a local network.</para>
+      The <application>Avahi</application> package is a system which
+      facilitates service discovery on a local network.
 @y
-    <para>
-    <application>avahi</application> パッケージは、ローカルネットワーク内でのサービス検出を行う機能を提供します。
-    </para>
+      <application>avahi</application> パッケージは、ローカルネットワーク内でのサービス検出を行う機能を提供します。
 @z
 
 @x
@@ -35,141 +33,139 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&avahi-download-http;"/></para>
+          Download (HTTP): <ulink url="&avahi-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&avahi-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&avahi-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&avahi-download-ftp;"/></para>
+          Download (FTP): <ulink url="&avahi-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&avahi-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&avahi-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &avahi-md5sum;</para>
+          Download MD5 sum: &avahi-md5sum;
 @y
-        <para>&Download; MD5 sum: &avahi-md5sum;</para>
+          &Download; MD5 sum: &avahi-md5sum;
 @z
 
 @x
-        <para>Download size: &avahi-size;</para>
+          Download size: &avahi-size;
 @y
-        <para>&DownloadSize;: &avahi-size;</para>
+          &DownloadSize;: &avahi-size;
 @z
 
 @x
-        <para>Estimated disk space required: &avahi-buildsize;</para>
+          Estimated disk space required: &avahi-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &avahi-buildsize;</para>
+          &Estimateddiskspacerequired;: &avahi-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &avahi-time;</para>
+          Estimated build time: &avahi-time;
 @y
-        <para>&Estimatedbuildtime;: &avahi-time;</para>
+          &Estimatedbuildtime;: &avahi-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">avahi Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Avahi Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;avahi&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Avahi&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="intltool"/> and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="glib2"/> and
+      <xref linkend="intltool"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>
+    </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional, but recommended for a GNOME desktop</bridgehead>
-    <para role="optional"><xref linkend="dbus-python"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="libglade"/>,
-    <xref linkend="python2"/>
-    <!--<xref linkend="pygtk"/>,--></para>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="optional">
+      <xref linkend="dbus-python"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libdaemon"/> and
+      <xref linkend="libglade"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional;, but recommended for a GNOME desktop</bridgehead>
-    <para role="optional"><xref linkend="dbus-python"/>,
-    <xref linkend="gobject-introspection"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="gtk3"/>,
-    <xref linkend="libglade"/>,
-    <xref linkend="python2"/>
-    <!--<xref linkend="pygtk"/>,--></para>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="optional">
+      <xref linkend="dbus-python"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libdaemon"/>,
+      <xref linkend="libglade"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="libdaemon"/>,
-    <!-- <xref linkend="qt"/>,--> and
-    <xref linkend="qt4"/></para>
+      <xref linkend="qt4"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="libdaemon"/>,
-    <!-- <xref linkend="qt"/>,-->
-    <xref linkend="qt4"/></para>
+      <xref linkend="qt4"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/avahi"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/avahi"/></para>
 @z
 
 @x
-    <title>Installation of avahi</title>
+    <title>Installation of Avahi</title>
 @y
-    <title>&InstallationOf1;avahi&InstallationOf2;</title>
+    <title>&InstallationOf1;Avahi&InstallationOf2;</title>
 @z
 
 @x
-    <para>It is recommended to have a dedicated user and group to take
-    control of the <command>avahi-daemon</command> daemon after it is
-    started. Issue the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+      There should be a dedicated user and group to take control
+      of the <command>avahi-daemon</command> daemon after it is
+      started. Issue the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    デーモン <command>avahi-daemon</command> が起動した後は、これを制御するために、専用のユーザーおよびグループを利用することが推奨されています。
-    このため <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      デーモン <command>avahi-daemon</command> が起動した後は、これを制御するための専用のユーザーおよびグループを利用する必要があります。
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
-    <para>It is recommended to have a dedicated priviliged access group for
-    <application>Avahi</application> clients. Issue the following command as
-    the <systemitem class="username">root</systemitem> user:</para>
+      There should also be a dedicated priviliged access group for
+      <application>Avahi</application> clients. Issue the following command as
+      the <systemitem class="username">root</systemitem> user: 
 @y
-    <para>
-    さらに <application>Avahi</application> クライアントに対しての、専用のアクセスグループを生成することも推奨されています。
-    このため <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      さらに <application>Avahi</application> クライアントに対しても、専用のアクセスグループを生成することが必要です。
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
-    <para>Install <application>avahi</application> by running the following
+    <para>Install <application>Avahi</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>avahi</application> をビルドします。
+    以下のコマンドを実行して <application>Avahi</application> をビルドします。
     </para>
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
@@ -187,117 +183,121 @@
 @z
 
 @x
-    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
-    the use of libdaemon.</para>
+      <option>--disable-mono</option>: This parameter disables the
+      <application>Mono</application> bindings.
 @y
-    <para><parameter>--disable-libdaemon</parameter>: This parameter disables
-    the use of libdaemon.</para>
+      <option>--disable-mono</option>: This parameter disables the
+      <application>Mono</application> bindings.
 @z
 
 @x
-    <para><parameter>--disable-mono</parameter>: This parameter disables the
-    <application>Mono</application> bindings.</para>
+      <option>--disable-monodoc</option>: This parameter disables
+      documentation for the <application>Mono</application> bindings.
 @y
-    <para><parameter>--disable-mono</parameter>: This parameter disables the
-    <application>Mono</application> bindings.</para>
+      <option>--disable-monodoc</option>: This parameter disables
+      documentation for the <application>Mono</application> bindings.
 @z
 
 @x
-    <para><parameter>--disable-monodoc</parameter>: This parameter disables
-    documentation for the <application>Mono</application> bindings.</para>
+      <option>--disable-python</option>: This parameter disables the
+      scripts that depend on <application>Python</application>. It also
+      allows a regular install to complete successfully.
 @y
-    <para><parameter>--disable-monodoc</parameter>: This parameter disables
-    documentation for the <application>Mono</application> bindings.</para>
+      <option>--disable-python</option>: This parameter disables the
+      scripts that depend on <application>Python</application>. It also
+      allows a regular install to complete successfully.
 @z
 
 @x
-    <para><parameter>--disable-python</parameter>: This parameter disables the
-    scripts that depend on <application>Python</application>.  It also allows
-    a regular (non-destdir) install to complete successfully.</para>
+      <option>--disable-qt3</option>: This parameter disables the
+      building of <application>Qt3</application> mainloop integration.
 @y
-    <para><parameter>--disable-python</parameter>: This parameter disables the
-    scripts that depend on <application>Python</application>.  It also allows
-    a regular (non-destdir) install to complete successfully.</para>
+      <option>--disable-qt3</option>: This parameter disables the
+      building of <application>Qt3</application> mainloop integration.
 @z
 
 @x
-    <para><parameter>--disable-qt3</parameter>: This parameter disables the
-    building of <application>Qt3</application> mainloop integration.</para>
+      <option>--disable-qt4</option>: This parameter disables the building
+      of <application>Qt4Core</application> mainloop integration. Omit
+      this if you have installed <application>Qt4</application>.
 @y
-    <para>
-    <parameter>--disable-qt3</parameter>: This parameter disables the
-    building of <application>Qt3</application> mainloop integration.
-    </para>
+      <option>--disable-qt4</option>: This parameter disables the building
+      of <application>Qt4Core</application> mainloop integration. Omit
+      this if you have installed <application>Qt4</application>.
 @z
 
 @x
-    <para><parameter>--disable-qt4</parameter>: This parameter disables the
-    building of <application>Qt4Core</application> mainloop integration. Omit
-    this if you have installed <application>Qt</application>.</para>
+      <option>--enable-core-docs</option>: This parameter enables the
+      building of documentation.
 @y
-    <para><parameter>--disable-qt4</parameter>: This parameter disables the
-    building of <application>Qt4Core</application> mainloop integration. Omit
-    this if you have installed <application>Qt</application>.</para>
+      <option>--enable-core-docs</option>: This parameter enables the
+      building of documentation.
 @z
 
 @x
-    <para><parameter>--enable-core-docs</parameter>: This parameter enables the
-    building of documentation.</para>
+      <parameter>--with-distro=none</parameter>: There is an obsolete
+      boot script in the distribution for LFS. This option disables it.
 @y
-    <para><parameter>--enable-core-docs</parameter>: This parameter enables the
-    building of documentation.</para>
+      <parameter>--with-distro=none</parameter>: There is an obsolete
+      boot script in the distribution for LFS. This option disables it.
 @z
 
 @x
-    <para><parameter>--with-distro=lfs</parameter>: This parameter specifies the
-    distribution to target.</para>
+      <option>--disable-dbus</option>: This parameter disables the use
+      of <application>D-Bus</application>.
 @y
-    <para><parameter>--with-distro=lfs</parameter>: This parameter specifies the
-    distribution to target.</para>
+      <option>--disable-dbus</option>: This parameter disables the use
+      of <application>D-Bus</application>.
 @z
 
 @x
-    <para><option>--disable-dbus</option>: This parameter disables the use
-    of <application>D-Bus</application>. Do not use this option if you intend
-    to build <xref linkend="gnome-disk-utility"/>.</para>
+      <option>--disable-gtk</option>: This parameter disables the use
+      of <application>GTK+2</application>.
 @y
-    <para><option>--disable-dbus</option>: This parameter disables the use
-    of <application>D-Bus</application>. Do not use this option if you intend
-    to build <xref linkend="gnome-disk-utility"/>.</para>
+      <option>--disable-gtk</option>: This parameter disables the use
+      of <application>GTK+2</application>.
 @z
 
 @x
-    <para><option>--disable-gtk</option>: This parameter disables the use
-    of <application>GTK+2</application>. Do not use this option if you intend
-    to build <xref linkend="gnome-disk-utility"/>.</para>
+      <option>--disable-gtk3</option>: This parameter disables the use
+      of <application>GTK+3</application>.
 @y
-    <para><option>--disable-gtk</option>: This parameter disables the use
-    of <application>GTK+2</application>. Do not use this option if you intend
-    to build <xref linkend="gnome-disk-utility"/>.</para>
+      <option>--disable-gtk3</option>: This parameter disables the use
+      of <application>GTK+3</application>.
 @z
 
 @x
-    <para><option>--enable-tests</option>: This option enables the building of
-    tests and examples.</para>
+      <option>--disable-libdaemon</option>: This parameter disables the use
+      of <application>libdaemon</application>. If you remove this option,
+      <command>avahi-daemon</command> won't be built.
 @y
-    <para><option>--enable-tests</option>: This option enables the building of
-    tests and examples.</para>
+      <option>--disable-libdaemon</option>: This parameter disables the use
+      of <application>libdaemon</application>. If you remove this option,
+      <command>avahi-daemon</command> won't be built.
 @z
 
 @x
-    <para><option>--enable-compat-howl</option>: This option enables the
-    compatibility layer for <application>HOWL</application>.</para>
+      <option>--enable-tests</option>: This option enables the building of
+      tests and examples.
 @y
-    <para><option>--enable-compat-howl</option>: This option enables the
-    compatibility layer for <application>HOWL</application>.</para>
+      <option>--enable-tests</option>: This option enables the building of
+      tests and examples.
 @z
 
 @x
-    <para><option>--enable-compat-libdns_sd</option>: This option enables the
-    compatibility layer for <application>libdns_sd</application>.</para>
+      <option>--enable-compat-howl</option>: This option enables the
+      compatibility layer for <application>HOWL</application>.
 @y
-    <para><option>--enable-compat-libdns_sd</option>: This option enables the
-    compatibility layer for <application>libdns_sd</application>.</para>
+      <option>--enable-compat-howl</option>: This option enables the
+      compatibility layer for <application>HOWL</application>.
+@z
+
+@x
+      <option>--enable-compat-libdns_sd</option>: This option enables the
+      compatibility layer for <application>libdns_sd</application>.
+@y
+      <option>--enable-compat-libdns_sd</option>: This option enables the
+      compatibility layer for <application>libdns_sd</application>.
 @z
 
 @x

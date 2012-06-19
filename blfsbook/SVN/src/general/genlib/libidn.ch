@@ -14,47 +14,39 @@
 @z
 
 @x
-    <title>Introduction to Libidn</title>
+    <title>Introduction to libidn</title>
 @y
-    <title>&IntroductionTo1;Libidn&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libidn&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Libidn</application> is a package designed for
-    internationalized string handling based on the <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://www.ietf.org/rfc/rfc3454.txt">
-    Stringprep</ulink>, <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://www.ietf.org/rfc/rfc3492.txt">
-    Punycode</ulink>, <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://www.ietf.org/rfc/rfc3490.txt">
-    IDNA</ulink> and <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://josefsson.org/cgi-bin/viewcvs.cgi/*checkout*/libidn/doc/specifications/draft-hoffman-idn-reg-02.txt">
-    TLD</ulink> specifications defined by the Internet Engineering Task Force
-    (IETF) Internationalized Domain Names (IDN) working group, used for
-    internationalized domain names. This is useful for converting data from the
-    system's native representation into UTF-8, transforming Unicode strings
-    into ASCII strings, allowing applications to use certain ASCII name labels
-    (beginning with a special prefix) to represent non-ASCII name labels, and
-    converting entire domain names to and from the ASCII Compatible Encoding
-    (ACE) form.</para>
+      <application>libidn</application> is a package designed for
+      internationalized string handling based on the 
+      <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
+      <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
+      <ulink url="http://www.ietf.org/rfc/rfc3490.txt">IDNA</ulink>
+      specifications defined by the Internet Engineering Task Force
+      (IETF) Internationalized Domain Names (IDN) working group, used for
+      internationalized domain names. This is useful for converting data from the
+      system's native representation into UTF-8, transforming Unicode strings
+      into ASCII strings, allowing applications to use certain ASCII name labels
+      (beginning with a special prefix) to represent non-ASCII name labels, and
+      converting entire domain names to and from the ASCII Compatible Encoding
+      (ACE) form.
 @y
-    <para><application>Libidn</application> is a package designed for
-    internationalized string handling based on the <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://www.ietf.org/rfc/rfc3454.txt">
-    Stringprep</ulink>, <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://www.ietf.org/rfc/rfc3492.txt">
-    Punycode</ulink>, <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://www.ietf.org/rfc/rfc3490.txt">
-    IDNA</ulink> and <ulink
-    url="http://josefsson.org/cgi-bin/rfcmarkup?url=http://josefsson.org/cgi-bin/viewcvs.cgi/*checkout*/libidn/doc/specifications/draft-hoffman-idn-reg-02.txt">
-    TLD</ulink> specifications defined by the Internet Engineering Task Force
-    (IETF) Internationalized Domain Names (IDN) working group, used for
-    internationalized domain names. This is useful for converting data from the
-    system's native representation into UTF-8, transforming Unicode strings
-    into ASCII strings, allowing applications to use certain ASCII name labels
-    (beginning with a special prefix) to represent non-ASCII name labels, and
-    converting entire domain names to and from the ASCII Compatible Encoding
-    (ACE) form.</para>
+      <application>libidn</application> is a package designed for
+      internationalized string handling based on the 
+      <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
+      <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
+      <ulink url="http://www.ietf.org/rfc/rfc3490.txt">IDNA</ulink>
+      specifications defined by the Internet Engineering Task Force
+      (IETF) Internationalized Domain Names (IDN) working group, used for
+      internationalized domain names. This is useful for converting data from the
+      system's native representation into UTF-8, transforming Unicode strings
+      into ASCII strings, allowing applications to use certain ASCII name labels
+      (beginning with a special prefix) to represent non-ASCII name labels, and
+      converting entire domain names to and from the ASCII Compatible Encoding
+      (ACE) form.
 @z
 
 @x
@@ -107,30 +99,22 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="emacs"/>,
-    <!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="gtk-doc"/>,
-    a Java compiler&mdash;one of (looked for in this order)
-    <xref linkend="gcc"/> (for the <command>gcj</command> program),
-    <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
-    <xref linkend="icedtea6"/>, or <xref linkend="jdk"/>,
-    and a C# compiler&mdash;<ulink
-    url="http://www.mono-project.com/Main_Page">Mono</ulink> or
-    <ulink url="http://www.southern-storm.com.au/portable_net.html">
-    DotGNU Portable.NET</ulink></para>
+    <para role="optional">
+      <xref linkend="emacs"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="openjdk"/>,
+      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> and
+      <ulink url="http://valgrind.org/">Valgrind</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="emacs"/>,
-    <!-- <xref linkend="pkgconfig"/>, -->
-    <xref linkend="gtk-doc"/>,
-    a Java compiler&mdash;one of (looked for in this order)
-    <xref linkend="gcc"/> (for the <command>gcj</command> program),
-    <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
-    <xref linkend="icedtea6"/>, or <xref linkend="jdk"/>,
-    and a C# compiler&mdash;<ulink
-    url="http://www.mono-project.com/Main_Page">Mono</ulink> or
-    <ulink url="http://www.southern-storm.com.au/portable_net.html">
-    DotGNU Portable.NET</ulink></para>
+    <para role="optional">
+      <xref linkend="emacs"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="openjdk"/>,
+      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
+      <ulink url="http://valgrind.org/">Valgrind</ulink>
+    </para>
 @z
 
 @x
@@ -142,35 +126,28 @@
 @z
 
 @x
-    <title>Installation of Libidn</title>
+    <title>Installation of libidn</title>
 @y
-    <title>&InstallationOf1;Libidn&InstallationOf2;</title>
+    <title>&InstallationOf1;libidn&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Libidn</application> by running the following
-    commands:</para>
+      Install <application>libidn</application> by running the following
+      commands:
 @y
-<para>
-以下のコマンドを実行して <application>Libidn</application> をビルドします。
-</para>
+      以下のコマンドを実行して <application>libidn</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-<para>
-ビルド結果をテストする場合は <command>make check</command> を実行します。
-</para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -187,8 +164,8 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -196,13 +173,27 @@
 @z
 
 @x
-        <seg>idn</seg>
-        <seg>libidn.{so,a} and optionally, Java and C# modules</seg>
-        <seg>/usr/share/doc/libidn-&libidn-version;</seg>
+        <seg>
+          idn
+        </seg>
+        <seg>
+          libidn.so
+        </seg>
+        <seg>
+          /usr/share/doc/libidn-&libidn-version; and
+          /usr/share/gtk-doc/html/libidn
+        </seg>
 @y
-        <seg>idn</seg>
-        <seg>libidn.{so,a} と任意ビルドとして Java および C# モジュール</seg>
-        <seg>/usr/share/doc/libidn-&libidn-version;</seg>
+        <seg>
+          idn
+        </seg>
+        <seg>
+          libidn.so
+        </seg>
+        <seg>
+          /usr/share/doc/libidn-&libidn-version;,
+          /usr/share/gtk-doc/html/libidn
+        </seg>
 @z
 
 @x
@@ -212,34 +203,29 @@
 @z
 
 @x idn
-          <para>is a command line interface to the internationalized domain
-          name library.</para>
+            is a command line interface to the internationalized domain
+            name library.
 @y
-<para>
-
-is a command line interface to the internationalized domain
-name library.
-</para>
+            is a command line interface to the internationalized domain
+            name library.
 @z
 
-@x
-          <para> contains a generic Stringprep implementation that does Unicode
-          3.2 NFKC normalization, mapping and prohibition of characters, and
-          bidirectional character handling. Profiles for Nameprep, iSCSI, SASL
-          and XMPP are included as well as support for Punycode and ASCII
-          Compatible Encoding (ACE) via IDNA. A mechanism to define Top-Level
-          Domain (TLD) specific validation tables, and to compare strings
-          against those tables, as well as default tables for some TLDs are
-          included.</para>
+@x libidn.so
+            contains a generic Stringprep implementation that does Unicode
+            3.2 NFKC normalization, mapping and prohibition of characters, and
+            bidirectional character handling. Profiles for Nameprep, iSCSI, SASL
+            and XMPP are included as well as support for Punycode and ASCII
+            Compatible Encoding (ACE) via IDNA. A mechanism to define Top-Level
+            Domain (TLD) specific validation tables, and to compare strings
+            against those tables, as well as default tables for some TLDs are
+            included.
 @y
-<para>
-
-contains a generic Stringprep implementation that does Unicode
-3.2 NFKC normalization, mapping and prohibition of characters, and
-bidirectional character handling. Profiles for Nameprep, iSCSI, SASL
-and XMPP are included as well as support for Punycode and ASCII
-Compatible Encoding (ACE) via IDNA. A mechanism to define Top-Level
-Domain (TLD) specific validation tables, and to compare strings
-against those tables, as well as default tables for some TLDs are
-included.</para>
+            contains a generic Stringprep implementation that does Unicode
+            3.2 NFKC normalization, mapping and prohibition of characters, and
+            bidirectional character handling. Profiles for Nameprep, iSCSI, SASL
+            and XMPP are included as well as support for Punycode and ASCII
+            Compatible Encoding (ACE) via IDNA. A mechanism to define Top-Level
+            Domain (TLD) specific validation tables, and to compare strings
+            against those tables, as well as default tables for some TLDs are
+            included.
 @z

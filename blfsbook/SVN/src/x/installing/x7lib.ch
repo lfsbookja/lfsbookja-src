@@ -266,7 +266,7 @@
         libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
         libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
         libXfont.{so,a}, libXft.{so,a}, libXinerama.{so,a}, libXi.{so,a},
-        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a}, libXp.{so,a},
+        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a},
         libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a}, libXRes.{so,a},
         libXss.{so,a}, libXt.{so,a}, libXtst.{so,a}, libXvMC.{so,a},
         libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a}, and
@@ -280,12 +280,12 @@
         libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
         libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
         libXfont.{so,a}, libXft.{so,a}, libXinerama.{so,a}, libXi.{so,a},
-        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a}, libXp.{so,a},
+        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a},
         libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a}, libXRes.{so,a},
         libXss.{so,a}, libXt.{so,a}, libXtst.{so,a}, libXvMC.{so,a},
         libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a},
         libXxf86vm.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x

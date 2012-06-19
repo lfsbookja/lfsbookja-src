@@ -399,13 +399,13 @@
           <seg>_cairo.so</seg>
           <seg>
             /usr/include/pycairo and
-            /usr/lib/python2.7/site-packages/cairo
+            /usr/lib/python&python2-majorver;/site-packages/cairo
           </seg>
 @y
           <seg>_cairo.so</seg>
           <seg>
             /usr/include/pycairo,
-            /usr/lib/python2.7/site-packages/cairo
+            /usr/lib/python&python2-majorver;/site-packages/cairo
           </seg>
 @z
 
@@ -613,11 +613,11 @@
 @x
           Required patch (if you have installed
           <xref linkend="gobject-introspection"/>):
-          <ulink url="&patch-root;/pygobject2-&pygobject2-version;-introspection-1.patch"/>
+          <ulink url="&patch-root;/pygobject-&pygobject2-version;-introspection-1.patch"/>
 @y
           Required patch (if you have installed
           <xref linkend="gobject-introspection"/>):
-          <ulink url="&patch-root;/pygobject2-&pygobject2-version;-introspection-1.patch"/>
+          <ulink url="&patch-root;/pygobject-&pygobject2-version;-introspection-1.patch"/>
 @z
 
 @x
@@ -629,14 +629,14 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="py2cairo"/> and
-        <xref linkend="pkgconfig"/>.
+        <xref linkend="glib2"/> and
+        <xref linkend="py2cairo"/>
       </para>
 @y
-      <bridgehead renderas="sect5">Required</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="py2cairo"/> and
-        <xref linkend="pkgconfig"/>.
+        <xref linkend="glib2"/>,
+        <xref linkend="py2cairo"/>
       </para>
 @z
 
@@ -647,7 +647,7 @@
         <xref linkend="libxslt"/> (to Build Documentation)
       </para>
 @y
-      <bridgehead renderas="sect5">Optional</bridgehead>
+      <bridgehead renderas="sect5">&Optional;</bridgehead>
       <para role="optional">
         <xref linkend="gobject-introspection"/>,
         <xref linkend="libxslt"/> (ドキュメント生成時)

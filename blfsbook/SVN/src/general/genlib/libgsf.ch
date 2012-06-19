@@ -20,17 +20,11 @@
 @z
 
 @x
-    <para>The <application>libgsf</application> package contains
-    <filename class="libraryfile">libgsf-1</filename> libraries. These are
-    useful for providing an extensible input/output abstraction layer for
-    structured file formats.</para>
+      The <application>libgsf</application> package contains the library 
+      used for providing an extensible input/output abstraction layer for
+      structured file formats.
 @y
-    <para>
-    <application>libgsf</application> パッケージは <filename
-    class="libraryfile">libgsf-1</filename> ライブラリ群を提供します。
-    これらは、構造化されたファイルフォーマット (structured file formats) に対する抽象層 (abstraction layer) での入出力を拡張する際に利用することができます。
-    (訳註： 意味不明です。)
-    </para>
+      <application>libgsf</application> パッケージは、構造化されたファイルフォーマット (structured file formats) に対する抽象層 (abstraction layer) での入出力を拡張するライブラリを提供します。
 @z
 
 @x
@@ -40,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libgsf-download-http;"/></para>
+          Download (HTTP): <ulink url="&libgsf-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libgsf-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libgsf-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libgsf-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libgsf-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libgsf-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libgsf-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libgsf-md5sum;</para>
+          Download MD5 sum: &libgsf-md5sum;
 @y
-        <para>&Download; MD5 sum: &libgsf-md5sum;</para>
+          &Download; MD5 sum: &libgsf-md5sum;
 @z
 
 @x
-        <para>Download size: &libgsf-size;</para>
+          Download size: &libgsf-size;
 @y
-        <para>&DownloadSize;: &libgsf-size;</para>
+          &DownloadSize;: &libgsf-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libgsf-buildsize;</para>
+          Estimated disk space required: &libgsf-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libgsf-buildsize;</para>
+          &Estimateddiskspacerequired;: &libgsf-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libgsf-time;</para>
+          Estimated build time: &libgsf-time;
 @y
-        <para>&Estimatedbuildtime;: &libgsf-time;</para>
+          &Estimatedbuildtime;: &libgsf-time;
 @z
 
 @x
@@ -83,55 +77,54 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libxml2"/>,
-    <xref linkend="pkgconfig"/>, and
-    <xref linkend="perl-xml-parser"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libxml2"/>,
-    <xref linkend="pkgconfig"/>,
-    <xref linkend="perl-xml-parser"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>,
+      <xref linkend="libxml2"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gdk-pixbuf"/> 
+      (To build gsf-office-thumbnailer)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gdk-pixbuf"/> 
+      (gsf-office-thumbnailer のビルドに必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python2"/>,
-    <xref linkend="pygtk"/>,
-    <xref linkend="GConf"/> (required to build the
-    <command>gsf-office-thumbnailer</command> program),
-    <xref linkend="gnome-vfs"/> and <xref linkend="libbonobo"/> (required to
-    build the <filename class='libraryfile'>libgsf-gnome-1.so</filename>
-    library which provides GNOME-2 support), and
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="pygtk"/>
+    </para>
 @y
-    <para role="optional"><xref linkend="python2"/>,
-    <xref linkend="pygtk"/>,
-    <xref linkend="GConf"/> (<command>gsf-office-thumbnailer</command> プログラムのビルド時に必要),
-    <xref linkend="gnome-vfs"/> and <xref linkend="libbonobo"/>
-    (GNOME-2 サポート機能を提供する <filename
-    class='libraryfile'>libgsf-gnome-1.so</filename> ライブラリのビルド時に必要),
-    <xref linkend="gtk-doc"/></para>
-@z
-
-@x
-    <para>Note: you should build the
-    <filename class='libraryfile'>libgsf-gnome-1.so</filename> library if you
-    plan on building <!-- <xref linkend="gnucash"/> or -->
-    <xref linkend="gnumeric"/> with GNOME-2 support.</para>
-@y
-    <para>
-    メモ: GNOME-2 サポートを含めて <xref
-    linkend="gnumeric"/> をビルドしようとする場合、<filename
-    class='libraryfile'>libgsf-gnome-1.so</filename> をビルドすることが必要になります。
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gobject-introspection"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="pygtk"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libgsf"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libgsf"/></para>
 @z
 
 @x
@@ -141,33 +134,27 @@
 @z
 
 @x
-    <para>Install <application>libgsf</application> by running the following
-    commands:</para>
+      Install <application>libgsf</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libgsf</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libgsf</application> をビルドします。
 @z
 
 @x
-    <para>Running <command>make check</command> will build a battery of test
-    programs which are built using the just-created
-    <filename class='libraryfile'>libgsf-1</filename> library. All the programs
-    should build successfully with no errors displayed.</para>
+      Running <command>make check</command> will build a battery of test
+      programs which are built using the just-created
+      <filename class='libraryfile'>libgsf-1</filename> library. All the programs
+      should build successfully with no errors displayed.
 @y
-    <para>
-    <command>make check</command> を実行すると、今まさに作り出された <filename
-    class='libraryfile'>libgsf-1</filename> ライブラリを用いて、一連のテストプログラムがビルドされます。
-    それらのテストプログラムは、特にエラーもなく正常にビルドされるはずです。
-    </para>
+      <command>make check</command> を実行すると、今まさに作り出された <filename
+      class='libraryfile'>libgsf-1</filename> ライブラリを用いて、一連のテストプログラムがビルドされます。
+      それらのテストプログラムは、特にエラーもなく正常にビルドされるはずです。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -177,47 +164,14 @@
 @z
 
 @x
-    <para><command>--sysconfdir=&gnome-old-etc-dir;</command>: Use this parameter to
-    ensure that if <application>GConf</application> has been installed, this
-    package&apos;s schema files will be installed in the correct location instead
-    of <filename class="directory">/usr/etc/</filename>.</para>
-@y
-    <para>
-    <command>--sysconfdir=&gnome-old-etc-dir;</command>:
-    <application>GConf</application> をインストールしている場合に、このパラメーターを <command>configure</command> スクリプトにおいて指定することで、<application>GConf</application> のスキーマファイル (schema files) を <filename
-    class="directory">/usr/etc/</filename> ではない適切なディレクトリにインストールします。
-    </para>
-@z
-
-@x
-    <para><option>--without-python</option>: This parameter is required
-    if <application>Python</application> is not installed.</para>
-@y
-    <para>
-    <parameter>--without-python</parameter>:
-    <application>Python</application> をインストールしていない場合は、このパラメーターの指定が必要です。
-    </para>
-@z
-
-@x
-    <para><option>--disable-static</option>: This switch prevents the
-    static libraries in this package being built and installed.</para>
-@y
-    <para>
-    <option>--disable-static</option>:
-    このスイッチの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -226,13 +180,32 @@
 @z
 
 @x
-        <seg>gsf, gsf-office-thumbnailer (optional), and gsf-vba-dump</seg>
-        <seg>libgsf-1.{so,a} and optionally, libgsf-gnome-1.{so,a}</seg>
-        <seg>/usr/include/libgsf-1 and /usr/share/gtk-doc/html/gsf and
-        optionally, /usr/lib/python&python2-majorver;/site-packages/gsf</seg>
+        <seg>
+          gsf, gsf-office-thumbnailer and gsf-vba-dump
+        </seg>
+        <seg>
+          libgsf-1.so
+        </seg>
+        <seg>
+          /usr/include/libgsf-1 and
+          /usr/share/gtk-doc/html/gsf
+        </seg>
 @y
-        <seg>gsf, gsf-office-thumbnailer (任意), gsf-vba-dump</seg>
-        <seg>libgsf-1.{so,a} また任意インストールにより libgsf-gnome-1.{so,a}</seg>
-        <seg>/usr/include/libgsf-1 and /usr/share/gtk-doc/html/gsf
-        また任意インストールにより /usr/lib/python&python2-majorver;/site-packages/gsf</seg>
+        <seg>
+          gsf, gsf-office-thumbnailer, gsf-vba-dump
+        </seg>
+        <seg>
+          libgsf-1.so
+        </seg>
+        <seg>
+          /usr/include/libgsf-1,
+          /usr/share/gtk-doc/html/gsf
+        </seg>
 @z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+

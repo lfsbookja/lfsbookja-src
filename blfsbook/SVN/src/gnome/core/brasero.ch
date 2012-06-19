@@ -20,15 +20,15 @@
 @z
 
 @x
-    <para>The <application>Brasero</application> package is an application to
-    burn CD/DVD for the Gnome Desktop. It is designed to be as simple as
-    possible and has some unique features to enable users to create their discs
-    easily and quickly.</para>
+      <application>Brasero</application> is an application used to
+      burn CD/DVD on the <application>GNOME</application> Desktop.
+      It is designed to be as simple as possible and has some unique
+      features that enable users to create  their discs easily and quickly.
 @y
-    <para>The <application>Brasero</application> package is an application to
-    burn CD/DVD for the Gnome Desktop. It is designed to be as simple as
-    possible and has some unique features to enable users to create their discs
-    easily and quickly.</para>
+      <application>Brasero</application> is an application used to
+      burn CD/DVD on the <application>GNOME</application> Desktop.
+      It is designed to be as simple as possible and has some unique
+      features that enable users to create  their discs easily and quickly.
 @z
 
 @x
@@ -38,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&brasero-download-http;"/></para>
+          Download (HTTP): <ulink url="&brasero-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&brasero-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&brasero-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&brasero-download-ftp;"/></para>
+          Download (FTP): <ulink url="&brasero-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&brasero-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&brasero-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &brasero-md5sum;</para>
+          Download MD5 sum: &brasero-md5sum;
 @y
-        <para>&Download; MD5 sum: &brasero-md5sum;</para>
+          &Download; MD5 sum: &brasero-md5sum;
 @z
 
 @x
-        <para>Download size: &brasero-size;</para>
+          Download size: &brasero-size;
 @y
-        <para>&DownloadSize;: &brasero-size;</para>
+          &DownloadSize;: &brasero-size;
 @z
 
 @x
-        <para>Estimated disk space required: &brasero-buildsize;</para>
+          Estimated disk space required: &brasero-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &brasero-buildsize;</para>
+          &Estimateddiskspacerequired;: &brasero-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &brasero-time;</para>
+          Estimated build time: &brasero-time;
 @y
-        <para>&Estimatedbuildtime;: &brasero-time;</para>
+          &Estimatedbuildtime;: &brasero-time;
 @z
 
 @x
@@ -158,26 +158,22 @@
 @z
 
 @x
-    <para>Install <application>Brasero</application> by running the following
-    commands:</para>
+      Install <application>Brasero</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Brasero</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Brasero</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -210,7 +206,9 @@
           libbrasero-burn3.so, libbrasero-media3.so and libbrasero-utils3.so
         </seg>
         <seg>
-          /usr/include/brasero3, /usr/lib/brasero3, /usr/share/brasero,
+          /usr/include/brasero3,
+          /usr/lib/brasero3,
+          /usr/share/brasero,
           /usr/share/gnome/help/brasero and
           /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} 
         </seg>
@@ -222,7 +220,9 @@
           libbrasero-burn3.so, libbrasero-media3.so, libbrasero-utils3.so
         </seg>
         <seg>
-          /usr/include/brasero3, /usr/lib/brasero3, /usr/share/brasero,
+          /usr/include/brasero3,
+          /usr/lib/brasero3,
+          /usr/share/brasero,
           /usr/share/gnome/help/brasero,
           /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} 
         </seg>
@@ -235,35 +235,27 @@
 @z
 
 @x brasero
-          <para>is a simple and easy to use CD/DVD burning application for the
-          <application>Gnome</application> Desktop</para>
+            is a simple and easy to use CD/DVD burning application for the
+            <application>GNOME</application> Desktop
 @y
-          <para>
-          is a simple and easy to use CD/DVD burning application for the
-          <application>Gnome</application> Desktop
-          </para>
+            is a simple and easy to use CD/DVD burning application for the
+            <application>GNOME</application> Desktop
 @z
 
 @x libbrasero-burn3.so
-          <para>contains the Burning API functions.</para>
+            contains the Burning API functions.
 @y
-          <para>
-          contains the Burning API functions.
-          </para>
+            contains the Burning API functions.
 @z
 
 @x libbrasero-media3.so
-          <para>contains the Media API functions.</para>
+            contains the Media API functions.
 @y
-          <para>
-          contains the Media API functions.
-          </para>
+            contains the Media API functions.
 @z
 
 @x libbrasero-utils3.so
-          <para>contains the <application>Brasero</application> API functions.</para>
+            contains the <application>Brasero</application> API functions.
 @y
-          <para>
-          <application>Brasero</application> API 関数を提供します。
-          </para>
+            <application>Brasero</application> API 関数を提供します。
 @z

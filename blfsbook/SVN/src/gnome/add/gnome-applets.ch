@@ -20,13 +20,13 @@
 @z
 
 @x
-    <para>The <application>GNOME Applets</application> package contains
-    small applications which generally run in the background and display
-    their output to the <application>GNOME</application> panel.</para>
+      The <application>GNOME Applets</application> package contains
+      small applications which generally run in the background and display
+      their output to the <application>GNOME Panel</application>.
 @y
-    <para>The <application>GNOME Applets</application> package contains
-    small applications which generally run in the background and display
-    their output to the <application>GNOME</application> panel.</para>
+      The <application>GNOME Applets</application> package contains
+      small applications which generally run in the background and display
+      their output to the <application>GNOME Panel</application>.
 @z
 
 @x
@@ -36,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-applets-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-applets-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-applets-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-applets-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-applets-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-applets-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-applets-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-applets-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-applets-md5sum;</para>
+          Download MD5 sum: &gnome-applets-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-applets-md5sum;</para>
+          &Download; MD5 sum: &gnome-applets-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-applets-size;</para>
+          Download size: &gnome-applets-size;
 @y
-        <para>&DownloadSize;: &gnome-applets-size;</para>
+          &DownloadSize;: &gnome-applets-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-applets-buildsize;</para>
+          Estimated disk space required: &gnome-applets-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-applets-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-applets-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-applets-time;</para>
+          Estimated build time: &gnome-applets-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-applets-time;</para>
+          &Estimatedbuildtime;: &gnome-applets-time;
 @z
 
 @x
@@ -135,10 +135,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-applets"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-applets"/></para>
 @z
 
 @x
@@ -148,26 +146,22 @@
 @z
 
 @x
-    <para>Install <application>GNOME Applets</application> by
-    running the following commands:</para>
+      Install <application>GNOME Applets</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME Applets</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Applets</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -177,17 +171,16 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
-    This parameter causes the libexec files to be installed in the preferred
-    location of in <filename
-    class="directory">/usr/lib/gnome-applets</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/gnome-applets</parameter>: This
+      parameter causes the libexec files to be installed in the preferred
+      location of in <filename
+      class="directory">/usr/lib/gnome-applets</filename> instead of
+      <filename class="directory">/usr/libexec</filename>.
 @y
-    <para><parameter>--libexecdir=$GNOME_PREFIX/lib/gnome-applets</parameter>:
-    このパラメーターは、libexec ファイルのインストール先を <filename
-    class="directory">/usr/libexec</filename> ではなく、より適切な <filename
-    class="directory">/usr/lib/gnome-applets</filename> とします。
-    </para>
+      <parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
+      このパラメーターは、libexec ファイルのインストール先を <filename
+      class="directory">/usr/libexec</filename> ではなく、より適切な <filename
+      class="directory">/usr/lib/gnome-applets</filename> とします。
 @z
 
 @x
@@ -213,11 +206,13 @@
           stickynotes_applet and trashapplet
         </seg>
         <seg>
-          /usr/lib/bonobo/servers, /usr/lib/python2.7/site-packages/invest,
+          /usr/lib/bonobo/servers,
+          /usr/lib/python&python2-majorver;/site-packages/invest,
           /usr/share/gnome/help/{accessx-status,battstat,char-palette,cpufreq-applet},
           /usr/share/gnome/help/{drivemoun,geyes,gweather,invest-applet},
           /usr/share/gnome/help/{mixer_applet2,multiload,stickynotes_applet,trashapplet},
-          /usr/share/gnome-applets, /usr/share/omf/{accessx-status,battstat,char-palette},
+          /usr/share/gnome-applets,
+          /usr/share/omf/{accessx-status,battstat,char-palette},
           /usr/share/omf/{cpufreq-applet,drivemount,geyes,gweather,invest-applet},
           /usr/share/omf/{mixer_applet2,multiload,stickynotes_applet} and
           /usr/share/pixmaps/{accessx-status-applet,cpufreq-applet,stickynotes}
@@ -231,11 +226,13 @@
           stickynotes_applet, trashapplet
         </seg>
         <seg>
-          /usr/lib/bonobo/servers, /usr/lib/python2.7/site-packages/invest,
+          /usr/lib/bonobo/servers,
+          /usr/lib/python&python2-majorver;/site-packages/invest,
           /usr/share/gnome/help/{accessx-status,battstat,char-palette,cpufreq-applet},
           /usr/share/gnome/help/{drivemoun,geyes,gweather,invest-applet},
           /usr/share/gnome/help/{mixer_applet2,multiload,stickynotes_applet,trashapplet},
-          /usr/share/gnome-applets, /usr/share/omf/{accessx-status,battstat,char-palette},
+          /usr/share/gnome-applets,
+          /usr/share/omf/{accessx-status,battstat,char-palette},
           /usr/share/omf/{cpufreq-applet,drivemount,geyes,gweather,invest-applet},
           /usr/share/omf/{mixer_applet2,multiload,stickynotes_applet},
           /usr/share/pixmaps/{accessx-status-applet,cpufreq-applet,stickynotes}

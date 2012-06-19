@@ -14,19 +14,17 @@
 @z
 
 @x
-    <title>Introduction to gobject-introspection</title>
+    <title>Introduction to GObject Introspection</title>
 @y
-    <title>&IntroductionTo1;gobject-introspection&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GObject Introspection&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gobject-introspection</application> package is used
-    to describe the APIs and collect them in a uniform, machine readable
-    format.</para>
+      The <application>GObject Introspection</application> is used
+      to describe the program APIs and collect them in a uniform,
+      machine readable format.
 @y
-    <para>
-    <application>gobject-introspection</application> パッケージは、API 関数を記述し、それをマシンが読込み可能な統一した書式で構成します。
-    </para>
+      <application>GObject Introspection</application> パッケージは API 関数を記述し、それをマシンが読込み可能な統一した書式で構成します。
 @z
 
 @x
@@ -36,57 +34,57 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gobject-introspection-download-http;"/></para>
+          Download (HTTP): <ulink url="&gobject-introspection-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gobject-introspection-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gobject-introspection-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gobject-introspection-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gobject-introspection-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gobject-introspection-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gobject-introspection-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gobject-introspection-md5sum;</para>
+          Download MD5 sum: &gobject-introspection-md5sum;
 @y
-        <para>&Download; MD5 sum: &gobject-introspection-md5sum;</para>
+          &Download; MD5 sum: &gobject-introspection-md5sum;
 @z
 
 @x
-        <para>Download size: &gobject-introspection-size;</para>
+          Download size: &gobject-introspection-size;
 @y
-        <para>&DownloadSize;: &gobject-introspection-size;</para>
+          &DownloadSize;: &gobject-introspection-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gobject-introspection-buildsize;</para>
+          Estimated disk space required: &gobject-introspection-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gobject-introspection-buildsize;</para>
+          &Estimateddiskspacerequired;: &gobject-introspection-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gobject-introspection-time;</para>
+          Estimated build time: &gobject-introspection-time;
 @y
-        <para>&Estimatedbuildtime;: &gobject-introspection-time;</para>
+          &Estimatedbuildtime;: &gobject-introspection-time;
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cairo"/> (Required for the tests) and
+      <xref linkend="cairo"/> (required for the tests) and
       <xref linkend="gtk-doc"/>
     </para>
 @y
@@ -99,41 +97,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gobject-introspection"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gobject-introspection"/></para>
 @z
 
 @x
-    <title>Installation of gobject-introspection</title>
+    <title>Installation of GObject Introspection</title>
 @y
-    <title>&InstallationOf1;gobject-introspection&InstallationOf2;</title>
+    <title>&InstallationOf1;GObject Introspection&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gobject-introspection</application> by running
-    the following commands:</para>
+      Install <application>GObject Introspection</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gobject-introspection</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GObject Introspection</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -143,15 +133,13 @@
 @z
 
 @x
-    <para><parameter>--disable-tests</parameter>: This parameter disable test
-    libraries. Remove the parameter if you have <application>cairo</application>
-    installed and would like the tests to be performed.</para>
+      <parameter>--disable-tests</parameter>: This parameter disable test
+      libraries. Remove the parameter if you have <application>Cairo</application>
+      installed and would like the tests to be performed.
 @y
-    <para>
-    <parameter>--disable-tests</parameter>:
-    このパラメーターによりテストライブラリをビルドしません。
-    <application>cairo</application> をインストールしていて、かつテストを実施したい場合は、このパラメーターを取り除いてください。
-    </para>
+      <parameter>--disable-tests</parameter>:
+      このパラメーターによりテストライブラリをビルドしません。
+      <application>Cairo</application> をインストールしていて、かつテストを実施したい場合は、このパラメーターを取り除いてください。
 @z
 
 @x
@@ -161,7 +149,7 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
@@ -172,10 +160,11 @@
 
 @x
         <seg>
-          g-ir-annotation-tool, g-ir-compiler, g-ir-generate and g-ir-scanner
+          g-ir-annotation-tool, g-ir-compiler, g-ir-generate and
+          g-ir-scanner
         </seg>
         <seg>
-          _giscanner.so and libgirepository-1.0.so
+          libgirepository-1.0.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,
@@ -185,10 +174,11 @@
         </seg>
 @y
         <seg>
-          g-ir-annotation-tool, g-ir-compiler, g-ir-generate, g-ir-scanner
+          g-ir-annotation-tool, g-ir-compiler, g-ir-generate,
+          g-ir-scanner
         </seg>
         <seg>
-          _giscanner.so, libgirepository-1.0.so
+          libgirepository-1.0.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,
@@ -205,34 +195,26 @@
 @z
 
 @x g-ir-compiler
-          <para>converts one or more GIR  files into one or more typelib.</para>
+            converts one or more GIR files into one or more typelib.
 @y
-          <para>
-          複数の GIR ファイルを複数の typelib に変換します。
-          </para>
+            複数の GIR ファイルを複数の typelib に変換します。
 @z
 
 @x g-ir-scanner
-          <para>is a tool which generates GIR XML files by parsing headers and
-          introspecting GObject based libraries.</para>
+            is a tool which generates GIR XML files by parsing headers and
+            introspecting GObject based libraries.
 @y
-          <para>
-          GObject ベースのライブラリとヘッダーを用いて GIR XML ファイルを生成するためのツールです。
-          </para>
+            GObject ベースのライブラリとヘッダーを用いて GIR XML ファイルを生成するためのツールです。
 @z
 
 @x g-ir-generate
-          <para>is a GIR generator, using the repository API.</para>
+            is a GIR generator using the repository API.
 @y
-          <para>
-          GIR 生成ツールです。リポジトリ API が利用されます。
-          </para>
+            GIR 生成ツールです。リポジトリ API が利用されます。
 @z
 
-@x libgirepository-1.0.{so,a}
-          <para>provides an API to access to the typelib metadata.</para>
+@x libgirepository-1.0.so
+            provides an API to access to the typelib metadata.
 @y
-          <para>
-          typelib メタデータにアクセスするための API 関数を提供します。
-          </para>
+            typelib メタデータにアクセスするための API 関数を提供します。
 @z

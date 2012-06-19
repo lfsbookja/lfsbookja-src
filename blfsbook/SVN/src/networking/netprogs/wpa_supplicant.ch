@@ -14,27 +14,27 @@
 @z
 
 @x
-    <title>Introduction to wpa_supplicant</title>
+    <title>Introduction to WPA Supplicant</title>
 @y
-    <title>&IntroductionTo1;wpa_supplicant&IntroductionTo2;</title>
+    <title>&IntroductionTo1;WPA Supplicant&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>wpa_supplicant</application> is a Wi-Fi Protected Access
-    (WPA) client and IEEE 802.1X supplicant. It implements WPA key negotiation
-    with a WPA Authenticator and Extensible Authentication Protocol (EAP)
-    authentication with an Authentication Server. In addition, it controls the
-    roaming and IEEE 802.11 authentication/association of the wireless LAN
-    driver. This is useful for connecting to a password protected wireless
-    access point.</para>
+      <application>WPA Supplicant</application> is a Wi-Fi Protected Access
+      (WPA) client and IEEE 802.1X supplicant. It implements WPA key negotiation
+      with a WPA Authenticator and Extensible Authentication Protocol (EAP)
+      authentication with an Authentication Server. In addition, it controls the
+      roaming and IEEE 802.11 authentication/association of the wireless LAN
+      driver. This is useful for connecting to a password protected wireless
+      access point.
 @y
-    <para><application>wpa_supplicant</application> is a Wi-Fi Protected Access
-    (WPA) client and IEEE 802.1X supplicant. It implements WPA key negotiation
-    with a WPA Authenticator and Extensible Authentication Protocol (EAP)
-    authentication with an Authentication Server. In addition, it controls the
-    roaming and IEEE 802.11 authentication/association of the wireless LAN
-    driver. This is useful for connecting to a password protected wireless
-    access point.</para>
+      <application>WPA Supplicant</application> is a Wi-Fi Protected Access
+      (WPA) client and IEEE 802.1X supplicant. It implements WPA key negotiation
+      with a WPA Authenticator and Extensible Authentication Protocol (EAP)
+      authentication with an Authentication Server. In addition, it controls the
+      roaming and IEEE 802.11 authentication/association of the wireless LAN
+      driver. This is useful for connecting to a password protected wireless
+      access point.
 @z
 
 @x
@@ -44,97 +44,101 @@
 @z
 
 @x
-        <para>Download (HTTP):
-        <ulink url="&wpa_supplicant-download-http;"/></para>
+          Download (HTTP): <ulink url="&wpa_supplicant-download-http;"/>
 @y
-        <para>&Download; (HTTP):
-        <ulink url="&wpa_supplicant-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&wpa_supplicant-download-http;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &wpa_supplicant-md5sum;</para>
+          Download (FTP): <ulink url="&wpa_supplicant-download-ftp;"/>
 @y
-        <para>&Download; MD5 sum: &wpa_supplicant-md5sum;</para>
+          &Download; (FTP): <ulink url="&wpa_supplicant-download-ftp;"/>
 @z
 
 @x
-        <para>Download size: &wpa_supplicant-size;</para>
+          Download MD5 sum: &wpa_supplicant-md5sum;
 @y
-        <para>&DownloadSize;: &wpa_supplicant-size;</para>
+          &Download; MD5 sum: &wpa_supplicant-md5sum;
 @z
 
 @x
-        <para>Estimated disk space required: &wpa_supplicant-buildsize;</para>
+          Download size: &wpa_supplicant-size;
 @y
-        <para>&Estimateddiskspacerequired;: &wpa_supplicant-buildsize;</para>
+          &DownloadSize;: &wpa_supplicant-size;
 @z
 
 @x
-        <para>Estimated build time: &wpa_supplicant-time;</para>
+          Estimated disk space required: &wpa_supplicant-buildsize;
 @y
-        <para>&Estimatedbuildtime;: &wpa_supplicant-time;</para>
+          &Estimateddiskspacerequired;: &wpa_supplicant-buildsize;
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+          Estimated build time: &wpa_supplicant-time;
 @y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+          &Estimatedbuildtime;: &wpa_supplicant-time;
 @z
 
 @x
-        <para>Required patch: <ulink
+    <bridgehead renderas="sect3">WPA Supplicant Dependencies</bridgehead>
 @y
-        <para>Required patch: <ulink
-@z
-
-@x
-    <bridgehead renderas="sect3">wpa_supplicant Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">wpa_supplicant Dependencies</bridgehead>
+    <bridgehead renderas="sect3">WPA Supplicant Dependencies</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libnl"/> (required to use the
-    nl80211 kernel interface. Using <application>wpa_supplicant</application>
-    without <application>libnl</application> has not been tested).</para>
+    <para role="recommended">
+      <xref linkend="libnl"/> and
+      <!-- From defconfig: WEXT is deprecated in the current Linux kernel
+      version and no new functionality is added to it. nl80211-based
+      interface is the new replacement for WEXT -->
+      <xref linkend="openssl"/>
+      <!-- For EAP-* Methods -->
+    </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libnl"/> (required to use the
-    nl80211 kernel interface. Using <application>wpa_supplicant</application>
-    without <application>libnl</application> has not been tested).</para>
+    <para role="recommended">
+      <xref linkend="libnl"/> and
+      <!-- From defconfig: WEXT is deprecated in the current Linux kernel
+      version and no new functionality is added to it. nl80211-based
+      interface is the new replacement for WEXT -->
+      <xref linkend="openssl"/>
+      <!-- For EAP-* Methods -->
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <!-- using CONFIG_TLS=gnutls fails as
-    src/crypto/tls_gnutls.c uses functions like gnutls_session_get_client_random
-    and gnutls_session_get_server_random which have been removed from current
-    <xref linkend="gnutls"/> -->
-    <ulink url="http://libtom.org/">libtommath</ulink>,
-    <xref linkend="libpcap"/>,
-    <ulink url="http://libdnet.sourceforge.net/">libdnet</ulink>
-    and <xref linkend="dbus"/>.</para>
+    <para role="optional">
+      <xref linkend="dbus"/> and
+      <xref linkend="libxml2"/>
+      <!-- D-Bus and libxml2 are required for D-Bus Interface which
+      NetworkManager uses.
+
+      WPA Supplicant uses internal Linux specific implemenation
+      for L2_PACKET, libpcap or libdnet are only there for portability
+      with other OS'es. See README if you don't believe me. -->
+    </para>
+
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <!-- using CONFIG_TLS=gnutls fails as
-    src/crypto/tls_gnutls.c uses functions like gnutls_session_get_client_random
-    and gnutls_session_get_server_random which have been removed from current
-    <xref linkend="gnutls"/> -->
-    <ulink url="http://libtom.org/">libtommath</ulink>,
-    <xref linkend="libpcap"/>,
-    <ulink url="http://libdnet.sourceforge.net/">libdnet</ulink>
-    and <xref linkend="dbus"/>.</para>
+    <para role="optional">
+      <xref linkend="dbus"/> and
+      <xref linkend="libxml2"/>
+      <!-- D-Bus and libxml2 are required for D-Bus Interface which
+      NetworkManager uses.
+
+      WPA Supplicant uses internal Linux specific implemenation
+      for L2_PACKET, libpcap or libdnet are only there for portability
+      with other OS'es. See README if you don't believe me. -->
+    </para>
+
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/wpa_supplicant"/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/wpa_supplicant"/></para>
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -144,69 +148,103 @@
 @z
 
 @x
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel if necessary:</para>
+      Enable the following options in the kernel configuration
+      and recompile the kernel if necessary:
 @y
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel if necessary:</para>
+      Enable the following options in the kernel configuration
+      and recompile the kernel if necessary:
 @z
 
 @x
-    <para>Select the options that support your hardware:
-    <command>lspci</command> from <xref linkend="pciutils"/> is your friend
-    ;)</para>
+      Select the options that support your hardware:
+      <command>lspci</command> from <xref linkend="pciutils"/> can be used to 
+      view your hardware configuration.
 @y
-    <para>Select the options that support your hardware:
-    <command>lspci</command> from <xref linkend="pciutils"/> is your friend
-    ;)</para>
+      Select the options that support your hardware:
+      <command>lspci</command> from <xref linkend="pciutils"/> can be used to 
+      view your hardware configuration.
 @z
 
 @x
-    <title>Installation of wpa_supplicant</title>
+    <title>Installation of WPA Supplicant</title>
 @y
-    <title>Installation of wpa_supplicant</title>
+    <title>Installation of WPA Supplicant</title>
 @z
 
 @x
-    <para>Install <application>wpa_supplicant</application> by running the
-    following commands:</para>
+      First you will need to create an initial configuration file for the
+      build process. You can read <filename>wpa_supplicant/README</filename>
+      and <filename>wpa_supplicant/defconfig</filename> for the explanation
+      of the following options as well as other options that can be used.
+      Create a build configuration file that should work for standard WiFi
+      setups by running the following command:
 @y
-    <para>Install <application>wpa_supplicant</application> by running the
-    following commands:</para>
+      First you will need to create an initial configuration file for the
+      build process. You can read <filename>wpa_supplicant/README</filename>
+      and <filename>wpa_supplicant/defconfig</filename> for the explanation
+      of the following options as well as other options that can be used.
+      Create a build configuration file that should work for standard WiFi
+      setups by running the following command:
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      If you wish to use <application>WPA Supplicant</application> with
+      <xref linkend="NetworkManager"/>, make sure that you have installed
+      <xref linkend="dbus"/> and <xref linkend="libxml2"/>, then add
+      following options to the <application>WPA Supplicant</application>
+      build configuration file by running the following command:
 @y
-    <para>This package does not come with a test suite.</para>
+      If you wish to use <application>WPA Supplicant</application> with
+      <xref linkend="NetworkManager"/>, make sure that you have installed
+      <xref linkend="dbus"/> and <xref linkend="libxml2"/>, then add
+      following options to the <application>WPA Supplicant</application>
+      build configuration file by running the following command:
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Install <application>WPA Supplicant</application> by running the
+      following commands:
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Install <application>WPA Supplicant</application> by running the
+      following commands:
 @z
 
 @x
-    <title>Command Explanations</title>
+      This package does not come with a test suite.
 @y
-    <title>Command Explanations</title>
+      This package does not come with a test suite.
 @z
 
 @x
-    <para><command>cat > .config ...</command>: This creates a default
-    configuration that should work in most situations. It uses the WEXT kernel
-    driver which most wireless cards seem to use. For an explanation of these
-    options (and to see what other options you could choose) read the
-    <filename>wpa_supplicant/defconfig</filename> file in the source.</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para><command>cat > .config ...</command>: This creates a default
-    configuration that should work in most situations. It uses the WEXT kernel
-    driver which most wireless cards seem to use. For an explanation of these
-    options (and to see what other options you could choose) read the
-    <filename>wpa_supplicant/defconfig</filename> file in the source.</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
+@z
+
+@x
+      If you have built <application>WPA Supplicant</application> with
+      <application>D-Bus</application> support, you will need to install
+      <application>D-Bus</application> configuration files. Install them
+      by running the following commands as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      If you have built <application>WPA Supplicant</application> with
+      <application>D-Bus</application> support, you will need to install
+      <application>D-Bus</application> configuration files. Install them
+      by running the following commands as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        You will need to restart system <application>D-Bus</application> daemon
+        before you can use <application>WPA Supplicant</application>
+        <application>D-Bus</application> interface.
+@y
+        You will need to restart system <application>D-Bus</application> daemon
+        before you can use <application>WPA Supplicant</application>
+        <application>D-Bus</application> interface.
 @z
 
 @x
@@ -228,63 +266,65 @@
 @z
 
 @x
-      <para>To connect to an access point that uses a password you need to put
-      the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
-      <command>wpa_passphrase</command> to generate this. SSID is the string
-      that the access point/router transmits to identify itself. As the
-      <systemitem class="username">root</systemitem> user:</para>
+        To connect to an access point that uses a password you need to put
+        the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
+        <command>wpa_passphrase</command> to generate this. SSID is the string
+        that the access point/router transmits to identify itself. As the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para>To connect to an access point that uses a password you need to put
-      the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
-      <command>wpa_passphrase</command> to generate this. SSID is the string
-      that the access point/router transmits to identify itself. As the
-      <systemitem class="username">root</systemitem> user:</para>
+        To connect to an access point that uses a password you need to put
+        the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
+        <command>wpa_passphrase</command> to generate this. SSID is the string
+        that the access point/router transmits to identify itself. As the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      <para>/etc/wpa_supplicant.conf can hold the details of several access
-      points. When you run wpa_supplicant it will scan for the SSIDs it can see
-      and choose the appropriate password to connect.</para>
+        <filename>/etc/wpa_supplicant.conf</filename> can hold the details of
+        several access points. When you run <command>wpa_supplicant</command>
+        it will scan for the SSIDs it can see and choose the appropriate
+        password to connect.
 @y
-      <para>/etc/wpa_supplicant.conf can hold the details of several access
-      points. When you run wpa_supplicant it will scan for the SSIDs it can see
-      and choose the appropriate password to connect.</para>
+        <filename>/etc/wpa_supplicant.conf</filename> can hold the details of
+        several access points. When you run <command>wpa_supplicant</command>
+        it will scan for the SSIDs it can see and choose the appropriate
+        password to connect.
 @z
 
 @x
-      <para>If you want to connect to an access point that isn't password
-      protected, put an entry like this in
-      <filename>/etc/wpa_supplicant.conf</filename>. Replace
-      "Some-SSID" with the SSID of the access point/router.</para>
+        If you want to connect to an access point that isn't password
+        protected, put an entry like this in
+        <filename>/etc/wpa_supplicant.conf</filename>. Replace
+        "Some-SSID" with the SSID of the access point/router.
 @y
-      <para>If you want to connect to an access point that isn't password
-      protected, put an entry like this in
-      <filename>/etc/wpa_supplicant.conf</filename>. Replace
-      "Some-SSID" with the SSID of the access point/router.</para>
+        If you want to connect to an access point that isn't password
+        protected, put an entry like this in
+        <filename>/etc/wpa_supplicant.conf</filename>. Replace
+        "Some-SSID" with the SSID of the access point/router.
 @z
 
 @x
-      <para>There are many options that you could use to tweak how you connect
-      to each access point. They are described in some detail in the
-      <filename>wpa_supplicant/wpa_supplicant.conf</filename> file in the
-      source.</para>
+        There are many options that you could use to tweak how you connect
+        to each access point. They are described in some detail in the
+        <filename>wpa_supplicant/wpa_supplicant.conf</filename> file in the
+        source tree.
 @y
-      <para>There are many options that you could use to tweak how you connect
-      to each access point. They are described in some detail in the
-      <filename>wpa_supplicant/wpa_supplicant.conf</filename> file in the
-      source.</para>
+        There are many options that you could use to tweak how you connect
+        to each access point. They are described in some detail in the
+        <filename>wpa_supplicant/wpa_supplicant.conf</filename> file in the
+        source tree.
 @z
 
 @x
-      <para>To use <command>wpa_cli</command> to control the running
-      wpa_supplicant daemon, add a control interface to
-      <filename>/etc/wpa_supplicant.conf</filename>. As the
-      <systemitem class="username">root</systemitem> user:</para>
+        To use <command>wpa_cli</command> to control the running
+        <command>>wpa_supplicant</command> daemon, add a control interface to
+        <filename>/etc/wpa_supplicant.conf</filename> as the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para>To use <command>wpa_cli</command> to control the running
-      wpa_supplicant daemon, add a control interface to
-      <filename>/etc/wpa_supplicant.conf</filename>. As the
-      <systemitem class="username">root</systemitem> user:</para>
+        To use <command>wpa_cli</command> to control the running
+        <command>>wpa_supplicant</command> daemon, add a control interface to
+        <filename>/etc/wpa_supplicant.conf</filename> as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -294,37 +334,29 @@
 @z
 
 @x
-      <para>If your router/access point uses DHCP to allocate IP addresses you
-      can install <xref linkend="dhcpcd"/> and use it to connect. As the
-      <systemitem class="username">root</systemitem> user:</para>
+        If your router/access point uses DHCP to allocate IP addresses you
+        can install <xref linkend="dhcpcd"/> and use it to connect. As the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para>If your router/access point uses DHCP to allocate IP addresses you
-      can install <xref linkend="dhcpcd"/> and use it to connect. As the
-      <systemitem class="username">root</systemitem> user:</para>
+        If your router/access point uses DHCP to allocate IP addresses you
+        can install <xref linkend="dhcpcd"/> and use it to connect. As the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      <para>Alternatively, you can use static addresses on your local network.
-      This has the advantage that you can put the hostnames in
-      <filename>/etc/hosts</filename>. Replace 192.168.1.6 with the static
-      address you've chosen. Replace 192.168.1.1 with the local IP address of
-      the access point/router. As the
-      <systemitem class="username">root</systemitem> user:</para>
+        Alternatively, you can use static addresses on your local network.
+        This has the advantage that you can put the hostnames in
+        <filename>/etc/hosts</filename>. Replace 192.168.1.6 with the static
+        address you've chosen. Replace 192.168.1.1 with the local IP address of
+        the access point/router. Run the following commands as the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para>Alternatively, you can use static addresses on your local network.
-      This has the advantage that you can put the hostnames in
-      <filename>/etc/hosts</filename>. Replace 192.168.1.6 with the static
-      address you've chosen. Replace 192.168.1.1 with the local IP address of
-      the access point/router. As the
-      <systemitem class="username">root</systemitem> user:</para>
-@z
-
-@x
-      <para>Writing a boot script that automates bringing up the network
-      connection is left as an exercise for the reader ;).</para>
-@y
-      <para>Writing a boot script that automates bringing up the network
-      connection is left as an exercise for the reader ;).</para>
+        Alternatively, you can use static addresses on your local network.
+        This has the advantage that you can put the hostnames in
+        <filename>/etc/hosts</filename>. Replace 192.168.1.6 with the static
+        address you've chosen. Replace 192.168.1.1 with the local IP address of
+        the access point/router. Run the following commands as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -352,27 +384,27 @@
 @z
 
 @x wpa_supplicant
-          <para>is a daemon that can connect to a password protected wireless
-          access point.</para>
+            is a daemon that can connect to a password protected wireless
+            access point.
 @y
-          <para>is a daemon that can connect to a password protected wireless
-          access point.</para>
+            is a daemon that can connect to a password protected wireless
+            access point.
 @z
 
 @x wpa_passphrase
-          <para>takes an SSID and a password and generates a simple
-          configuration that <command>wpa_supplicant</command> can
-          understand</para>
+            takes an SSID and a password and generates a simple
+            configuration that <command>wpa_supplicant</command> can
+            understand.
 @y
-          <para>takes an SSID and a password and generates a simple
-          configuration that <command>wpa_supplicant</command> can
-          understand</para>
+            takes an SSID and a password and generates a simple
+            configuration that <command>wpa_supplicant</command> can
+            understand.
 @z
 
 @x wpa_cli
-          <para>is a command line interface to control a running wpa_supplicant
-          daemon</para>
+            is a command line interface used to control a running
+            <command>wpa_supplicant</command> daemon.
 @y
-          <para>is a command line interface to control a running wpa_supplicant
-          daemon</para>
+            is a command line interface used to control a running
+            <command>wpa_supplicant</command> daemon.
 @z

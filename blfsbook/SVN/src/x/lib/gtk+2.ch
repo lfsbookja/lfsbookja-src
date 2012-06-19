@@ -180,11 +180,11 @@
 
 @x
         If you installed the package on to your system using a
-        <quote>DESTDIR</quote> method two important files were not installed and
-        must be copied and/or generated. Generate them using the following
-        commands as the <systemitem class="username">root</systemitem> user:
+        <quote>DESTDIR</quote> method then important file was not installed and
+        must be copied and/or generated. Generate it using the following
+        command as the <systemitem class="username">root</systemitem> user:
 @y
-        <quote>DESTDIR</quote> を指定する方法により本パッケージをインストールすると、重要なファイルが２つ、インストールされません。
+        <quote>DESTDIR</quote> を指定する方法により本パッケージをインストールすると、重要なファイルがインストールされません。
         このファイルはコピーまたは生成されていなければなりません。
         これを正しく行うために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行してください。
 @z

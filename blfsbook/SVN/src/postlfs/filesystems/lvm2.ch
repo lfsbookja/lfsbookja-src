@@ -21,7 +21,7 @@
 
 @x
     <para>The <application>lvm2</application> package is a package that manages
-    logical partitions.  It allows spanning of file systems across multiple
+    logical partitions. It allows spanning of file systems across multiple
     physical disks and disk partitions and provides for dynamic growing or shrinking
     of logical partitions.</para>
 @y
@@ -140,33 +140,34 @@
 @z
 
 @x
-    <para><parameter>--enable-pkgconfig</parameter>: This parameter installs
-    pkgconfig support.</para>
-@y
-    <para>
-    <parameter>--enable-pkgconfig</parameter>:
-    このパラメーターの指定により pkgconfig サポートをインストールします。
-    </para>
-@z
-
-@x
-    <para><option>--enable-dmeventd</option>: This option builds the
-    device-mapper event daemon.</para>
-@y
-    <para>
-    <option>--enable-dmeventd</option>:
-    このオプションは device-mapper イベントデーモンをビルドすることを指示します。
-    </para>
-@z
-
-@x
-    <para><option>--enable-cmdlib</option>: This option builds the shared
-    command library. It is required when building the daemon.</para>
+    <para><option>--enable-cmdlib</option>: This parameter enables
+    building of the shared command library. It is required when
+    building the event daemon.</para>
 @y
     <para>
     <option>--enable-cmdlib</option>:
     このオプションは共有コマンドライブラリをビルドすることを指示します。
     デーモンをビルドする際にはこれが必要になります。
+    </para>
+@z
+
+@x
+    <para><option>--enable-pkgconfig</option>: This parameter enables
+    installation of pkgconfig support files.</para>
+@y
+    <para>
+    <option>--enable-pkgconfig</option>:
+    このパラメーターの指定により pkgconfig サポートファイルをインストールします。
+    </para>
+@z
+
+@x
+    <para><option>--enable-dmeventd</option>: This parameter enables
+    building of the device-mapper event daemon.</para>
+@y
+    <para>
+    <option>--enable-dmeventd</option>:
+    このオプションは device-mapper イベントデーモンをビルドすることを指示します。
     </para>
 @z
 

@@ -82,14 +82,14 @@
     <para role="required">
       <xref linkend="curl"/>,
       <xref linkend="fuse"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
       <xref linkend="fuse"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @z
 

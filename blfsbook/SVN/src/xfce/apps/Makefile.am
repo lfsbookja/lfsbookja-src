@@ -9,6 +9,7 @@ BOOKdir = $(top_builddir)/@bookdir@/xfce/apps
 CHANGE_FILES = \
 	apps.ch          \
 	midori.ch        \
+	parole.ch        \
 	terminal.ch      \
 	vte2.ch          \
 	xfburn.ch        \
@@ -29,6 +30,7 @@ ctie:
 
 apps.xml:          $(BOOKdir)/$@ $(srcdir)/apps.ch
 midori.xml:        $(BOOKdir)/$@ $(srcdir)/midori.ch
+parole.xml:        $(BOOKdir)/$@ $(srcdir)/parole.ch
 terminal.xml:      $(BOOKdir)/$@ $(srcdir)/terminal.ch
 vte2.xml:          $(BOOKdir)/$@ $(srcdir)/vte2.ch
 xfburn.xml:        $(BOOKdir)/$@ $(srcdir)/xfburn.ch

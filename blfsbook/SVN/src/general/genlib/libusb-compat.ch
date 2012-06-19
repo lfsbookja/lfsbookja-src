@@ -26,15 +26,13 @@
 @z
 
 @x
-    <para>The <application>libusb-compat</application> package aims to look,
-    feel and behave exactly like <application>libusb-0.1</application>. It is a
-    compatibility layer needed by packages that have not upgraded to the
-    <application>libusb-1</application> API.</para>
+      The <application>libusb-compat</application> package aims to look,
+      feel and behave exactly like <application>libusb-0.1</application>. It is a
+      compatibility layer needed by packages that have not been upgraded to the
+      <application>libusb-1.0</application> API.
 @y
-    <para>
-    <application>libusb-compat</application> パッケージは、<application>libusb-0.1</application> パッケージとそっくり同じ見た目や動きを目指したライブラリです。
-    <application>libusb-1</application> の API へのアップグレードを行っていない各種パッケージ類にとって、必要となる互換レイヤーとなるものです。
-    </para>
+      <application>libusb-compat</application> パッケージは、<application>libusb-0.1</application> パッケージとそっくり同じ見た目や動きを目指したライブラリです。
+      <application>libusb-1.0</application> の API へのアップグレードを行っていない各種パッケージ類にとって、必要となる互換レイヤーとなるものです。
 @z
 
 @x
@@ -44,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libusb-compat-download-http;"/></para>
+          Download (HTTP): <ulink url="&libusb-compat-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libusb-compat-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libusb-compat-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libusb-compat-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libusb-compat-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libusb-compat-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libusb-compat-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libusb-compat-md5sum;</para>
+          Download MD5 sum: &libusb-compat-md5sum;
 @y
-        <para>&Download; MD5 sum: &libusb-compat-md5sum;</para>
+          &Download; MD5 sum: &libusb-compat-md5sum;
 @z
 
 @x
-        <para>Download size: &libusb-compat-size;</para>
+          Download size: &libusb-compat-size;
 @y
-        <para>&DownloadSize;: &libusb-compat-size;</para>
+          &DownloadSize;: &libusb-compat-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libusb-compat-buildsize;</para>
+          Estimated disk space required: &libusb-compat-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libusb-compat-buildsize;</para>
+          &Estimateddiskspacerequired;: &libusb-compat-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libusb-compat-time;</para>
+          Estimated build time: &libusb-compat-time;
 @y
-        <para>&Estimatedbuildtime;: &libusb-compat-time;</para>
+          &Estimatedbuildtime;: &libusb-compat-time;
 @z
 
 @x
@@ -87,20 +85,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><!-- <xref linkend="pkgconfig"/> and -->
-    <xref linkend="libusb"/></para>
+    <para role="required">
+      <xref linkend="libusb"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><!-- <xref linkend="pkgconfig"/> and -->
-    <xref linkend="libusb"/></para>
+    <para role="required">
+      <xref linkend="libusb"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libusb-compat"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libusb-compat"/></para>
 @z
 
 @x
@@ -110,28 +110,22 @@
 @z
 
 @x
-    <para>Install <application>libusb-compat</application> by running the
-    following commands:</para>
+      Install <application>libusb-compat</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libusb-compat</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libusb-compat</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -143,21 +137,17 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>libusb-config</seg>
         <seg>libusb.{so,a}</seg>
-        <seg>None</seg>
 @y
         <seg>libusb-config</seg>
         <seg>libusb.{so,a}</seg>
-        <seg>&None;</seg>
 @z
 
 @x
@@ -167,12 +157,10 @@
 @z
 
 @x libusb.{so,a}
-          <para>Libraries that are compatible with
-          <application>libusb-0.1</application>, but use
-          <application>libusb-1.0</application> to provide functionality.</para>
+            is a library that is compatible with
+            <application>libusb-0.1</application>, but uses
+            <application>libusb-1.0</application> to provide functionality.
 @y
-          <para>
-          <application>libusb-0.1</application> の互換ライブラリ。
-          ただし <application>libusb-1.0</application> を利用して機能拡張しています。
-          </para>
+            <application>libusb-0.1</application> の互換ライブラリ。
+            ただし <application>libusb-1.0</application> を利用して機能拡張しています。
 @z

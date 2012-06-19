@@ -11,8 +11,7 @@ CHANGE_FILES = \
 	bind.ch \
 	major.ch \
 	proftpd.ch \
-	vsftpd.ch \
-	xinetd.ch
+	vsftpd.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -32,4 +31,3 @@ bind.xml:    $(BOOKdir)/$@ $(srcdir)/bind.ch
 major.xml:   $(BOOKdir)/$@ $(srcdir)/major.ch
 proftpd.xml: $(BOOKdir)/$@ $(srcdir)/proftpd.ch
 vsftpd.xml:  $(BOOKdir)/$@ $(srcdir)/vsftpd.ch
-xinetd.xml:  $(BOOKdir)/$@ $(srcdir)/xinetd.ch

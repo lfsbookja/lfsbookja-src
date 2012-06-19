@@ -20,17 +20,17 @@
 @z
 
 @x
-    <para>The <application>GNOME Doc Utils</application> package is a collection
-    of documentation utilities for the <application>GNOME</application> project.
-    Notably, it contains utilities for building documentation and all auxiliary
-    files in your source tree, and it contains the DocBook XSLT stylesheets that
-    were once distributed with <application>Yelp</application>.</para>
+      The <application>GNOME Doc Utils</application> package is a collection
+      of documentation utilities for the <application>GNOME</application> project.
+      Notably, it contains utilities for building documentation and all auxiliary
+      files in your source tree, and it contains the DocBook XSLT stylesheets that
+      were once distributed with <application>Yelp</application>.
 @y
-    <para>The <application>GNOME Doc Utils</application> package is a collection
-    of documentation utilities for the <application>GNOME</application> project.
-    Notably, it contains utilities for building documentation and all auxiliary
-    files in your source tree, and it contains the DocBook XSLT stylesheets that
-    were once distributed with <application>Yelp</application>.</para>
+      The <application>GNOME Doc Utils</application> package is a collection
+      of documentation utilities for the <application>GNOME</application> project.
+      Notably, it contains utilities for building documentation and all auxiliary
+      files in your source tree, and it contains the DocBook XSLT stylesheets that
+      were once distributed with <application>Yelp</application>.
 @z
 
 @x
@@ -40,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-doc-utils-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-doc-utils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-doc-utils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-doc-utils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-doc-utils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-doc-utils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-doc-utils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-doc-utils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-doc-utils-md5sum;</para>
+          Download MD5 sum: &gnome-doc-utils-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-doc-utils-md5sum;</para>
+          &Download; MD5 sum: &gnome-doc-utils-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-doc-utils-size;</para>
+          Download size: &gnome-doc-utils-size;
 @y
-        <para>&DownloadSize;: &gnome-doc-utils-size;</para>
+          &DownloadSize;: &gnome-doc-utils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-doc-utils-buildsize;</para>
+          Estimated disk space required: &gnome-doc-utils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-doc-utils-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-doc-utils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-doc-utils-time;</para>
+          Estimated build time: &gnome-doc-utils-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-doc-utils-time;</para>
+          &Estimatedbuildtime;: &gnome-doc-utils-time;
 @z
 
 @x
@@ -116,30 +116,25 @@
 @z
 
 @x
-    <para>The packages are listed as recommended even though
-    <application>GNOME Doc Utils</application> will build fine without them.
-    If you don't install the recommended packages (and you pass the appropriate
-    flags to the <command>configure</command> command so that it will build
-    without them), functionality will be missing that is expected later in
-    other GNOME packages.</para>
+      The packages are listed as recommended even though
+      <application>GNOME Doc Utils</application> will build fine without them.
+      If you don't install the recommended packages (and you pass the appropriate
+      flags to the <command>configure</command> command so that it will build
+      without them), functionality will be missing that is expected later in
+      other <application>GNOME</application> packages.
 @y
-    <para>
-    
-    The packages are listed as recommended even though
-    <application>GNOME Doc Utils</application> will build fine without them.
-    If you don't install the recommended packages (and you pass the appropriate
-    flags to the <command>configure</command> command so that it will build
-    without them), functionality will be missing that is expected later in
-    other GNOME packages.
-    </para>
+      The packages are listed as recommended even though
+      <application>GNOME Doc Utils</application> will build fine without them.
+      If you don't install the recommended packages (and you pass the appropriate
+      flags to the <command>configure</command> command so that it will build
+      without them), functionality will be missing that is expected later in
+      other <application>GNOME</application> packages.
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-doc-utils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-doc-utils"/></para>
 @z
 
 @x
@@ -149,34 +144,22 @@
 @z
 
 @x
-    <para>Install <application>GNOME Doc Utils</application>
-    by running the following commands:</para>
+      Install <application>GNOME Doc Utils</application>
+      by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME Doc Utils</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Doc Utils</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -200,10 +183,12 @@
           gnome-doc-prepare, gnome-doc-tool and xml2po
         </seg>
         <seg>
-          /usr/lib/python2.7/site-packages/xml2po,
-          /usr/share/gnome-doc-utils, /usr/share/xml/gnome,
-          /usr/share/xml/mallard, /usr/share/gnome/help/gnome-doc-make
-          and /usr/share/gnome/help/gnome-doc-xslt
+          /usr/lib/python&python2-majorver;/site-packages/xml2po,
+          /usr/share/gnome-doc-utils,
+          /usr/share/xml/gnome,
+          /usr/share/xml/mallard,
+          /usr/share/gnome/help/gnome-doc-make and
+          /usr/share/gnome/help/gnome-doc-xslt
         </seg>
         <seg>
           Custom DocBook XSLT stylesheets
@@ -213,9 +198,11 @@
           gnome-doc-prepare, gnome-doc-tool, xml2po
         </seg>
         <seg>
-          /usr/lib/python2.7/site-packages/xml2po,
-          /usr/share/gnome-doc-utils, /usr/share/xml/gnome,
-          /usr/share/xml/mallard, /usr/share/gnome/help/gnome-doc-make,
+          /usr/lib/python&python2-majorver;/site-packages/xml2po,
+          /usr/share/gnome-doc-utils,
+          /usr/share/xml/gnome,
+          /usr/share/xml/mallard,
+          /usr/share/gnome/help/gnome-doc-make,
           /usr/share/gnome/help/gnome-doc-xslt
         </seg>
         <seg>
@@ -230,23 +217,23 @@
 @z
 
 @x gnome-doc-prepare
-          <para>prepares a package to use
-          <application>gnome-doc-utils</application>.</para>
+            prepares a package to use
+            <application>GNOME Doc Utils</application>.
 @y
-          <para>prepares a package to use
-          <application>gnome-doc-utils</application>.</para>
+            prepares a package to use
+            <application>GNOME Doc Utils</application>.
 @z
 
 @x gnome-doc-tool
-          <para>is used to convert documents to either HTML or XHTML.</para>
+            is used to convert documents to either HTML or XHTML.
 @y
-          <para>is used to convert documents to either HTML or XHTML.</para>
+            is used to convert documents to either HTML or XHTML.
 @z
 
 @x xml2po
-          <para>is a <application>Python</application> script used to
-          translate XML documents.</para>
+            is a <application>Python</application> script used to
+            translate XML documents.
 @y
-          <para>is a <application>Python</application> script used to
-          translate XML documents.</para>
+            is a <application>Python</application> script used to
+            translate XML documents.
 @z

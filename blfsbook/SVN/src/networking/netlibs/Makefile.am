@@ -11,13 +11,11 @@ CHANGE_FILES = \
 	geoclue.ch         \
 	geocode-glib.ch    \
 	glib-networking.ch \
-	gnet.ch            \
 	libchamplain.ch    \
 	libgdata.ch        \
 	libnice.ch         \
 	libnl.ch           \
 	libpcap.ch         \
-	libproxy.ch        \
 	librest.ch         \
 	libsoup.ch         \
 	libtirpc.ch        \
@@ -40,13 +38,11 @@ curl.xml:             $(BOOKdir)/$@ $(srcdir)/curl.ch
 geoclue.xml:          $(BOOKdir)/$@ $(srcdir)/geoclue.ch
 geocode-glib.xml:     $(BOOKdir)/$@ $(srcdir)/geocode-glib.ch
 glib-networking.xml:  $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
-gnet.xml:             $(BOOKdir)/$@ $(srcdir)/gnet.ch
 libchamplain.xml:     $(BOOKdir)/$@ $(srcdir)/libchamplain.ch
 libgdata.xml:         $(BOOKdir)/$@ $(srcdir)/libgdata.ch
 libnice.xml:          $(BOOKdir)/$@ $(srcdir)/libnice.ch
 libnl.xml:            $(BOOKdir)/$@ $(srcdir)/libnl.ch
 libpcap.xml:          $(BOOKdir)/$@ $(srcdir)/libpcap.ch
-libproxy.xml:         $(BOOKdir)/$@ $(srcdir)/libproxy.ch
 librest.xml:          $(BOOKdir)/$@ $(srcdir)/librest.ch
 libsoup.xml:          $(BOOKdir)/$@ $(srcdir)/libsoup.ch
 libtirpc.xml:         $(BOOKdir)/$@ $(srcdir)/libtirpc.ch

@@ -77,16 +77,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/>,
-      <xref linkend="libxml2"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/> and
+      <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="libxml2"/>
     </para>
 @z
 
@@ -123,7 +123,7 @@
       <ulink url="http://www.firebirdsql.org/">firebird</ulink>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtksourceview"/>,
-      <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
+      <xref linkend="openjdk"/>,
       <xref linkend="mysql"/>,
       <xref linkend="openldap"/> and
       <xref linkend="postgresql"/>
@@ -135,7 +135,7 @@
       <ulink url="http://www.firebirdsql.org/">firebird</ulink>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtksourceview"/>,
-      <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
+      <xref linkend="openjdk"/>,
       <xref linkend="mysql"/>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>
@@ -221,8 +221,10 @@
           libgda-xslt-5.0.so
         </seg>
         <seg>
-          /etc/libgda-5.0, /usr/include/libgda-5.0,
-          /usr/lib/libgda-5.0, /usr/share/gnome/help/{gda-browser,gda-sql},
+          /etc/libgda-5.0,
+          /usr/include/libgda-5.0,
+          /usr/lib/libgda-5.0,
+          /usr/share/gnome/help/{gda-browser,gda-sql},
           /usr/share/gtk-doc/html/{gda-browser,libgda-5.0} and
           /usr/share/libgda-5.0
         </seg>
@@ -237,8 +239,10 @@
           libgda-xslt-5.0.so
         </seg>
         <seg>
-          /etc/libgda-5.0, /usr/include/libgda-5.0,
-          /usr/lib/libgda-5.0, /usr/share/gnome/help/{gda-browser,gda-sql},
+          /etc/libgda-5.0,
+          /usr/include/libgda-5.0,
+          /usr/lib/libgda-5.0,
+          /usr/share/gnome/help/{gda-browser,gda-sql},
           /usr/share/gtk-doc/html/{gda-browser,libgda-5.0},
           /usr/share/libgda-5.0
         </seg>
@@ -251,10 +255,10 @@
 @z
 
 @x gda-browser-5.0
-            is a graphical tool to provide a quick access to a database&apos;s
+            is a graphical tool to provide a quick access to a database's
             structure and contents.
 @y
-            is a graphical tool to provide a quick access to a database&apos;s
+            is a graphical tool to provide a quick access to a database's
             structure and contents.
 @z
 
@@ -283,15 +287,15 @@
 @z
 
 @x gda-test-connection-5.0
-            is a &apos;ping&apos; like tool to test connectivity to databases.
+            is a 'ping' like tool to test connectivity to databases.
 @y
-            is a &apos;ping&apos; like tool to test connectivity to databases.
+            is a 'ping' like tool to test connectivity to databases.
 @z
 
 @x libgda-5.0.so
-            is the GNOME Data Access library.
+            is the <application>GNOME</application> Data Access library.
 @y
-            is the GNOME Data Access library.
+            is the <application>GNOME</application> Data Access library.
 @z
 
 @x libgda-ui-5.0.so

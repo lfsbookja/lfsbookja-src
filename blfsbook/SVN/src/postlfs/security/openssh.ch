@@ -121,16 +121,16 @@
 @x
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
     <para role="optional">
-      <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
+      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
       <xref linkend="net-tools"/> and
       <xref linkend="sysstat"/>.
     </para>
 @y
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
     <para role="optional">
-      <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
+      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
       <xref linkend="net-tools"/>,
-      <xref linkend="sysstat"/>
+      <xref linkend="sysstat"/>.
     </para>
 @z
 

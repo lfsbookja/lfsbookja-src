@@ -99,15 +99,10 @@
 @z
 
 @x
-    <para>The test suite is known to completely fail with GNU M4-&lfs-m4-version; as
-    installed in LFS.  There is one failure (#120) when using an older version
-    of <application>M4</application>.  To try to run the checks anyway, issue:
-    <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make check</command>.</para>
 @y
     <para>
-    LFS にてインストール済の GNU M4-&lfs-m4-version; においては、テストスイートが確実に失敗することが分かっています。
-    <application>M4</application> の旧バージョンを用いると、失敗するテストは1つのみ (#120) です。
-    これを理解した上でテストを実施する場合は <command>make check</command> を実行します。
+    ビルド結果をテストる場合は <command>make check</command> を実行します。
     </para>
 @z
 

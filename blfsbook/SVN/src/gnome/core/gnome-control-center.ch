@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>GNOME Control Center</application> package contains the
-    <application>GNOME</application> settings managers.</para>
+      The <application>GNOME Control Center</application> package contains the
+      <application>GNOME</application> settings manager.
 @y
-    <para>
-    <application>GNOME Control Center</application> パッケージは <application>GNOME</application> セッティングマネージャー (<application>GNOME</application> settings managers) を提供します。
-    </para>
+      <application>GNOME Control Center</application> パッケージは <application>GNOME</application> セッティングマネージャー (<application>GNOME</application> settings managers) を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-control-center-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-control-center-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-control-center-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-control-center-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-control-center-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-control-center-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-control-center-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-control-center-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-control-center-md5sum;</para>
+          Download MD5 sum: &gnome-control-center-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-control-center-md5sum;</para>
+          &Download; MD5 sum: &gnome-control-center-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-control-center-size;</para>
+          Download size: &gnome-control-center-size;
 @y
-        <para>&DownloadSize;: &gnome-control-center-size;</para>
+          &DownloadSize;: &gnome-control-center-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-control-center-buildsize;</para>
+          Estimated disk space required: &gnome-control-center-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-control-center-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-control-center-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-control-center-time;</para>
+          Estimated build time: &gnome-control-center-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-control-center-time;</para>
+          &Estimatedbuildtime;: &gnome-control-center-time;
 @z
 
 @x
@@ -128,10 +126,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-control-center"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-control-center"/></para>
 @z
 
 @x
@@ -141,48 +137,28 @@
 @z
 
 @x
-    <para>Install <application>GNOME Control Center</application> by running the
-    following commands:</para>
+      Install <application>GNOME Control Center</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME Control Center</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Control Center</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--with-cheese</option>: enable cheese 
-    webcam support.</para>
-@y
-    <para><option>--with-cheese</option>: enable cheese 
-    webcam support.</para>
-@z
-
-@x
-    <para><option>--with-libsocialweb</option>: enable 
-    libsocialweb support.</para>
-@y
-    <para><option>--with-libsocialweb</option>: enable 
-    libsocialweb support.</para>
 @z
 
 @x
@@ -204,15 +180,24 @@
           gnome-control-center and gnome-sound-applet
         </seg>
         <seg>
-          /usr/lib/control-center-1, /usr/share/gnome-control-center and
+          /usr/lib/control-center-1,
+          /usr/share/gnome-control-center and
           /usr/share/sounds/gnome
         </seg>
 @y
         <seg>
-          gnome-control-center, gnome-sound-applet
+          gnome-control-center and gnome-sound-applet
         </seg>
         <seg>
-          /usr/lib/control-center-1, /usr/share/gnome-control-center,
+          /usr/lib/control-center-1,
+          /usr/share/gnome-control-center and
           /usr/share/sounds/gnome
         </seg>
 @z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+

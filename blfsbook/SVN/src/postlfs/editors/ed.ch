@@ -14,7 +14,7 @@
 @z
 
 @x
-  <!ENTITY ed-time          "Less than 0.1 SBU">
+  <!ENTITY ed-time          "less than 0.1 SBU">
 @y
   <!ENTITY ed-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z

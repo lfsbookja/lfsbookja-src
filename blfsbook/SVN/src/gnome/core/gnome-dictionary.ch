@@ -14,16 +14,16 @@
 @z
 
 @x
-    <title>Introduction to gnome-dictionary</title>
+    <title>Introduction to GNOME Dictionary</title>
 @y
-    <title>&IntroductionTo1;gnome-dictionary&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNOME Dictionary&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>gnome-dictionary</application> package contains
-      dictionary for GNOME desktop.
+      The <application>GNOME Dictionary</application> package contains
+      dictionary for the <application>GNOME</application> Desktop.
 @y
-      <application>gnome-dictionary</application> パッケージは GNOME デスクトップの辞書を提供します。
+      <application>GNOME Dictionary</application> パッケージは <application>GNOME</application> デスクトップの辞書を提供します。
 @z
 
 @x
@@ -69,9 +69,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">gnome-dictionary Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GNOME Dictionary Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gnome-dictionary&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Dictionary&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -107,16 +107,16 @@
 @z
 
 @x
-    <title>Installation of gnome-dictionary</title>
+    <title>Installation of GNOME Dictionary</title>
 @y
-    <title>&InstallationOf1;gnome-dictionary&InstallationOf2;</title>
+    <title>&InstallationOf1;GNOME Dictionary&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>gnome-dictionary</application> by running the following
+      Install <application>GNOME Dictionary</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>gnome-dictionary</application> をビルドします。
+      以下のコマンドを実行して <application>GNOME Dictionary</application> をビルドします。
 @z
 
 @x
@@ -161,10 +161,12 @@
           libgdict.so
         </seg>
         <seg>
-          /usr/include/gdict-1.0, /usr/share/gdict-1.0,
+          /usr/include/gdict-1.0,
+          /usr/share/gdict-1.0,
           /usr/share/gnome/help/gnome-dictionary,
-          /usr/share/gtk-doc/html/gdict, /usr/share/gnome-dictionary 
-          and /usr/share/omf/gnome-dictionary
+          /usr/share/gtk-doc/html/gdict,
+          /usr/share/gnome-dictionary and
+          /usr/share/omf/gnome-dictionary
         </seg>
 @y
         <seg>
@@ -174,9 +176,11 @@
           libgdict.so
         </seg>
         <seg>
-          /usr/include/gdict-1.0, /usr/share/gdict-1.0,
+          /usr/include/gdict-1.0,
+          /usr/share/gdict-1.0,
           /usr/share/gnome/help/gnome-dictionary,
-          /usr/share/gtk-doc/html/gdict, /usr/share/gnome-dictionary,
+          /usr/share/gtk-doc/html/gdict,
+          /usr/share/gnome-dictionary,
           /usr/share/omf/gnome-dictionary
         </seg>
 @z
@@ -194,7 +198,7 @@
 @z
 
 @x libgdict.so
-            is GNOME Dictionary Protocol client library.
+            is <application>GNOME Dictionary</application> client library.
 @y
-            GNOME 辞書プロトコルに基づくクライアントライブラリ。
+            <application>GNOME Dictionary</application> クライアントライブラリ。
 @z

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY glib2-time          "1.2 SBU (additional 4.0 SBU to run the test suite)">
+  <!ENTITY glib2-time          "1.5 SBU (additional 4.0 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-time          "1.2 SBU (テストスイート実行時は追加で 4.0 SBU)">
+  <!ENTITY glib2-time          "1.5 SBU (テストスイート実行時は追加で 4.0 SBU)">
 @z
 
 @x
@@ -26,19 +26,15 @@
 @z
 
 @x
-    <para>The <application>GLib</application> package contains a low-level core
-    library. This is useful for providing data structure handling for C,
-    portability wrappers and interfaces for such runtime functionality as an
-    event loop, threads, dynamic loading, and an object system.</para>
+      The <application>GLib</application> package contains a low-level
+      libraries useful for providing data structure handling for C, portability 
+      wrappers and interfaces for such runtime functionality as an
+      event loop, threads, dynamic loading and an object system.
 @y
-    <para>
-    <application>GLib</application>
-    パッケージは低レベルなコアライブラリを提供します。
-    
-    This is useful for providing data structure handling for C,
-    portability wrappers and interfaces for such runtime functionality as an
-    event loop, threads, dynamic loading, and an object system.
-    </para>
+      The <application>GLib</application> package contains a low-level
+      libraries useful for providing data structure handling for C, portability 
+      wrappers and interfaces for such runtime functionality as an
+      event loop, threads, dynamic loading and an object system.
 @z
 
 @x
@@ -48,39 +44,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&glib2-download-http;"/></para>
+          Download (HTTP): <ulink url="&glib2-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&glib2-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&glib2-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&glib2-download-ftp;"/></para>
+          Download (FTP): <ulink url="&glib2-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&glib2-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&glib2-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &glib2-md5sum;</para>
+          Download MD5 sum: &glib2-md5sum;
 @y
-        <para>&Download; MD5 sum: &glib2-md5sum;</para>
+          &Download; MD5 sum: &glib2-md5sum;
 @z
 
 @x
-        <para>Download size: &glib2-size;</para>
+          Download size: &glib2-size;
 @y
-        <para>&DownloadSize;: &glib2-size;</para>
+          &DownloadSize;: &glib2-size;
 @z
 
 @x
-        <para>Estimated disk space required: &glib2-buildsize;</para>
+          Estimated disk space required: &glib2-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &glib2-buildsize;</para>
+          &Estimateddiskspacerequired;: &glib2-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &glib2-time;</para>
+          Estimated build time: &glib2-time;
 @y
-        <para>&Estimatedbuildtime;: &glib2-time;</para>
+          &Estimatedbuildtime;: &glib2-time;
 @z
 
 @x
@@ -92,13 +88,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libffi"/> and
+      <xref linkend="libffi"/>,
+      <xref linkend="pkgconfig"/> and
       <xref linkend="python2"/>
     </para> 
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libffi"/>,
+      <xref linkend="pkgconfig"/> and
       <xref linkend="python2"/>
     </para> 
 @z
@@ -135,28 +133,32 @@
 
 @x
     <bridgehead renderas="sect4">Additional Runtime Dependencies</bridgehead>
-    <para role="optional">Quoted directly from the <filename>INSTALL</filename>
-    file; <quote>Some of the mimetype-related functionality in GIO requires the
-    <command>update-mime-database</command> and
-    <command>update-desktop-database</command> utilities</quote>, which are part of
-    <xref linkend="shared-mime-info"/> and
-    <xref linkend="desktop-file-utils"/>, respectively.</para>
+    <para role="optional">
+      Quoted directly from the <filename>INSTALL</filename> file; 
+      <quote>Some of the mimetype-related functionality in GIO requires the
+      <command>update-mime-database</command> and
+      <command>update-desktop-database</command> utilities</quote>, 
+      which are part of
+      <xref linkend="shared-mime-info"/> and
+      <xref linkend="desktop-file-utils"/>, respectively.
+    </para>
 @y
     <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
-    <para role="optional">Quoted directly from the <filename>INSTALL</filename>
-    file; <quote>Some of the mimetype-related functionality in GIO requires the
-    <command>update-mime-database</command> and
-    <command>update-desktop-database</command> utilities</quote>, which are part of
-    <xref linkend="shared-mime-info"/> and
-    <xref linkend="desktop-file-utils"/>, respectively.</para>
+    <para role="optional">
+      Quoted directly from the <filename>INSTALL</filename> file; 
+      <quote>Some of the mimetype-related functionality in GIO requires the
+      <command>update-mime-database</command> and
+      <command>update-desktop-database</command> utilities</quote>, 
+      which are part of
+      <xref linkend="shared-mime-info"/> and
+      <xref linkend="desktop-file-utils"/>, respectively.
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/glib2"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/glib2"/></para>
 @z
 
 @x
@@ -166,52 +168,42 @@
 @z
 
 @x
-    <para>Install <application>GLib</application> by running the following
-    commands:</para>
+      Install <application>GLib</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GLib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GLib</application> をビルドします。
 @z
 
 @x
-    <para>The <application>GLib</application> test suite requires
-    <application>desktop-file-utils</application> in order to run. However,
-    <application>desktop-file-utils</application> requires
-    <application>GLib</application> in order to compile; therefore, you must
-    first install <application>GLib</application> and then run the test
-    suite.</para>
+      The <application>GLib</application> test suite requires
+      <application>desktop-file-utils</application> in order to run. However,
+      <application>desktop-file-utils</application> requires
+      <application>GLib</application> in order to compile; therefore, you must
+      first install <application>GLib</application> and then run the test
+      suite.
 @y
-    <para>
-    <application>GLib</application> のテストスイートを実行するには <application>desktop-file-utils</application> が必要です。
-    しかし <application>desktop-file-utils</application> をビルドするには <application>GLib</application> が必要なものとなっています。
-    したがってまずは <application>GLib</application> をインストールした後にテストスイートを実行することになります。
-    </para>
+      <application>GLib</application> のテストスイートを実行するには <application>desktop-file-utils</application> が必要です。
+      しかし <application>desktop-file-utils</application> をビルドするには <application>GLib</application> が必要なものとなっています。
+      したがってまずは <application>GLib</application> をインストールした後にテストスイートを実行することになります。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>You should now install <xref linkend="desktop-file-utils"/> and proceed to
-    run the test suite.</para>
+      You should now install <xref linkend="desktop-file-utils"/> and proceed to
+      run the test suite.
 @y
-    <para>
-    ここで <xref linkend="desktop-file-utils"/> をインストールした上で、テストスイートを実行してください。
-    </para>
+      ここで <xref linkend="desktop-file-utils"/> をインストールした上で、テストスイートを実行してください。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -221,47 +213,35 @@
 @z
 
 @x
-    <para><parameter>--with-pcre=system</parameter>: This parameter causes the
-    build to use a system-provided version of the
-    <application>PCRE</application> library instead of an internal
-    version.</para>
+      PCRE_* and LIBFFI_*: <application>Glib</application> is a prerequsite
+      for <application>pkg-config</application>, but it wants to use
+      <application>pkg-config</application> during the build process.
+      These environment variables work around not having
+      <application>pkg-config</application> available.
 @y
-    <para>
-    <parameter>--with-pcre=system</parameter>:
-    このパラメーターの指定により、バンドルされている <application>PCRE</application> ライブラリではなく、インストール済のライブラリを用いてビルドを行います。
-    </para>
+      PCRE_* and LIBFFI_*: <application>Glib</application> is a prerequsite
+      for <application>pkg-config</application>, but it wants to use
+      <application>pkg-config</application> during the build process.
+      These environment variables work around not having
+      <application>pkg-config</application> available.
 @z
 
 @x
-    <title>Configuring GLib</title>
+      <command>ln -v -sfn ... glibconfig.h</command>: Place a link to an
+      architecture dependent header file where programs can find it.
 @y
-    <title>&Configuring1;GLib&Configuring2;</title>
+      <command>ln -v -sfn ... glibconfig.h</command>: Place a link to an
+      architecture dependent header file where programs can find it.
 @z
 
 @x
-      <title>Configuration Information</title>
+      <parameter>--with-pcre=system</parameter>: This parameter causes the
+      build to use a system-provided version of the
+      <application>PCRE</application> library instead of an internal
+      version.
 @y
-      <title>&ConfigInfo;</title>
-@z
-
-@x
-      <para>By default, <application>GLib</application> assumes that all
-      filenames are in the UTF-8 charset. See the <xref
-      linkend="locale-wrong-filename-encoding"/> section of the <xref
-      linkend="locale-issues"/> page for more details on this kind of issue. In
-      order to tell <application>GLib</application> and applications that use
-      it that filenames are in the default locale encoding, set the variable
-      <envar>G_FILENAME_ENCODING</envar> to the value "@locale".  As the
-      <systemitem class="username">root</systemitem> user:</para>
-@y
-      <para>
-      デフォルトで <application>GLib</application> はファイル名がすべて UTF-8 エンコーディングであるものとして取り扱います。
-      このような問題に関しての詳細は <xref
-      linkend="locale-issues"/> ページの <xref
-      linkend="locale-wrong-filename-encoding"/> の項を参照してください。
-      <application>GLib</application> やこれを利用するアプリケーションに対して、ファイル名がデフォルトエンコーディングであることを指示するには、変数 <envar>G_FILENAME_ENCODING</envar> に対して "@locale" という値をセットします。
-      <systemitem class="username">root</systemitem> になって以下を実行します。
-      </para>
+      <parameter>--with-pcre=system</parameter>:
+      このパラメーターの指定により、バンドルされている <application>PCRE</application> ライブラリではなく、インストール済のライブラリを用いてビルドを行います。
 @z
 
 @x
@@ -324,44 +304,98 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x glib-genmarshal
-          <para>is a C code marshaller generation utility for GLib
-          closures.</para>
+@x gdbus
+            is a simple used tool for working with D-Bus objects.
 @y
-          <para>is a C code marshaller generation utility for GLib
-          closures.</para>
+            is a simple used tool for working with D-Bus objects.
+@z
+
+@x gdbus-codegen
+            is used to generate code and/or documentation for one or 
+            more <application>D-Bus</application> interfaces.
+@y
+            is used to generate code and/or documentation for one or 
+            more <application>D-Bus</application> interfaces.
+@z
+
+@x gio-querymodules
+            is used to create a giomodule.cache file in the listed directories. 
+            This file lists the implemented extension points for each module that has
+            been found.
+@y
+            is used to create a giomodule.cache file in the listed directories. 
+            This file lists the implemented extension points for each module that has
+            been found.
+@z
+
+@x glib-compile-resources
+            is used to read the resource description from file and 
+            the files that it references to create a binary resource 
+            bundle that is suitable for use with the GResource API.
+@y
+            is used to read the resource description from file and 
+            the files that it references to create a binary resource 
+            bundle that is suitable for use with the GResource API.
+@z
+
+@x glib-compile-schemas
+            is used to compile all the GSettings XML schema files 
+            in directory into a binary file with the name gschemas.compiled 
+            that can be used by GSettings.
+@y
+            is used to compile all the GSettings XML schema files 
+            in directory into a binary file with the name gschemas.compiled 
+            that can be used by GSettings.
+@z
+
+@x glib-genmarshal
+            is a C code marshaller generation utility for GLib closures.
+@y
+            is a C code marshaller generation utility for GLib closures.
 @z
 
 @x glib-gettextize
-          <para>is a variant of the <application>gettext</application>
-          internationalization utility.</para>
+            is a variant of the <application>gettext</application>
+            internationalization utility.
 @y
-          <para>is a variant of the <application>gettext</application>
-          internationalization utility.</para>
+            is a variant of the <application>gettext</application>
+            internationalization utility.
 @z
 
 @x glib-mkenums
-          <para>is a C language enum description generation utility.</para>
+            is a C language enum description generation utility.
 @y
-          <para>is a C language enum description generation utility.</para>
+            is a C language enum description generation utility.
 @z
 
 @x gobject-query
-          <para>is a small utility that draws a tree of types.</para>
+            is a small utility that draws a tree of types.
 @y
-          <para>is a small utility that draws a tree of types.</para>
+            is a small utility that draws a tree of types.
+@z
+
+@x gresource
+            offers a simple commandline interface to GResource.
+@y
+            offers a simple commandline interface to GResource.
+@z
+
+@x gsettings
+            offers a simple commandline interface to GSettings.
+@y
+            offers a simple commandline interface to GSettings.
 @z
 
 @x gtester
-          <para>is a test running utility.</para>
+            is a test running utility.
 @y
-          <para>is a test running utility.</para>
+            is a test running utility.
 @z
 
 @x gtester-report
-          <para>is a test report formatting utility.</para>
+            is a test report formatting utility.
 @y
-          <para>is a test report formatting utility.</para>
+            is a test report formatting utility.
 @z
 
 @x
@@ -370,9 +404,9 @@
         <term>GLib ライブラリ</term>
 @z
 @x
-          <para>contain a low-level core library for the
-          <application>GIMP</application> Toolkit.</para>
+            contain a low-level core libraries for the
+            <application>GIMP</application> Toolkit.
 @y
-          <para>contain a low-level core library for the
-          <application>GIMP</application> Toolkit.</para>
+            contain a low-level core libraries for the
+            <application>GIMP</application> Toolkit.
 @z

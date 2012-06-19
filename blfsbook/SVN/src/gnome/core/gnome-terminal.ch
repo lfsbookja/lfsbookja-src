@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>GNOME Terminal</application> package contains the
-    terminal emulator for GNOME Desktop.</para>
+      The <application>GNOME Terminal</application> package contains the
+      terminal emulator for <application>GNOME</application> Desktop.
 @y
-    <para>
-    <application>GNOME Terminal</application> パッケージは GNOME デスクトップにおける端末エミュレーターを提供します。
-    </para>
+      <application>GNOME Terminal</application> パッケージは <application>GNOME</application> デスクトップにおける端末エミュレーターを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-terminal-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-terminal-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-terminal-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-terminal-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-terminal-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-terminal-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-terminal-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-terminal-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-terminal-md5sum;</para>
+          Download MD5 sum: &gnome-terminal-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-terminal-md5sum;</para>
+          &Download; MD5 sum: &gnome-terminal-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-terminal-size;</para>
+          Download size: &gnome-terminal-size;
 @y
-        <para>&DownloadSize;: &gnome-terminal-size;</para>
+          &DownloadSize;: &gnome-terminal-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-terminal-buildsize;</para>
+          Estimated disk space required: &gnome-terminal-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-terminal-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-terminal-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-terminal-time;</para>
+          Estimated build time: &gnome-terminal-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-terminal-time;</para>
+          &Estimatedbuildtime;: &gnome-terminal-time;
 @z
 
 @x
@@ -108,10 +106,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-terminal"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-terminal"/></para>
 @z
 
 @x
@@ -121,26 +117,22 @@
 @z
 
 @x
-    <para>Install <application>GNOME Terminal</application> by
-    running the following commands:</para>
+      Install <application>GNOME Terminal</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME Terminal</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Terminal</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -190,9 +182,7 @@
 @z
 
 @x gnome-terminal
-          <para>is the GNOME Terminal Emulator.</para>
+            is the <application>GNOME</application> Terminal Emulator.
 @y
-          <para>
-          <application>GNOME</application> 端末エミュレーター。
-          </para>
+            <application>GNOME</application> 端末エミュレーター。
 @z

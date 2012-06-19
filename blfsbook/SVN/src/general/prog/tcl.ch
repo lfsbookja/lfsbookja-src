@@ -26,13 +26,11 @@
 @z
 
 @x
-    <para>The <application>Tcl</application> package contains the Tool Command
-    Language, a robust general-purpose scripting language.</para>
+      The <application>Tcl</application> package contains the Tool Command
+      Language, a robust general-purpose scripting language.
 @y
-    <para>
-    <application>Tcl</application> パッケージは Tool Command Language を提供します。
-    これは汎用目的のスクリプト言語です。
-    </para>
+      <application>Tcl</application> パッケージは Tool Command Language を提供します。
+      これは汎用目的のスクリプト言語です。
 @z
 
 @x
@@ -42,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&tcl-download-http;"/></para>
+          Download (HTTP): <ulink url="&tcl-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&tcl-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&tcl-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&tcl-download-ftp;"/></para>
+          Download (FTP): <ulink url="&tcl-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&tcl-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&tcl-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &tcl-md5sum;</para>
+          Download MD5 sum: &tcl-md5sum;
 @y
-        <para>&Download; MD5 sum: &tcl-md5sum;</para>
+          &Download; MD5 sum: &tcl-md5sum;
 @z
 
 @x
-        <para>Download size: &tcl-size;</para>
+          Download size: &tcl-size;
 @y
-        <para>&DownloadSize;: &tcl-size;</para>
+          &DownloadSize;: &tcl-size;
 @z
 
 @x
-        <para>Estimated disk space required: &tcl-buildsize;</para>
+          Estimated disk space required: &tcl-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &tcl-buildsize;</para>
+          &Estimateddiskspacerequired;: &tcl-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &tcl-time;</para>
+          Estimated build time: &tcl-time;
 @y
-        <para>&Estimatedbuildtime;: &tcl-time;</para>
+          &Estimatedbuildtime;: &tcl-time;
 @z
 
 @x
@@ -90,21 +88,21 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&tcl-doc-download;"/></para>
+          Download (HTTP): <ulink url="&tcl-doc-download;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&tcl-doc-download;"/></para>
+          &Download; (HTTP): <ulink url="&tcl-doc-download;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &tcl-doc-md5sum;</para>
+          Download MD5 sum: &tcl-doc-md5sum;
 @y
-        <para>&Download; MD5 sum: &tcl-doc-md5sum;</para>
+          &Download; MD5 sum: &tcl-doc-md5sum;
 @z
 
 @x
-        <para>Download size: &tcl-doc-size;</para>
+          Download size: &tcl-doc-size;
 @y
-        <para>&DownloadSize;: &tcl-doc-size;</para>
+          &DownloadSize;: &tcl-doc-size;
 @z
 
 @x
@@ -122,60 +120,48 @@
 @z
 
 @x
-    <para>This package is also installed in LFS during the bootstrap phase.
-    As it is not installed during Chapter 6 of LFS, installation instructions
-    are included here in BLFS.</para>
+      This package is also installed in LFS during the bootstrap phase.
+      As it is not installed during Chapter 6 of LFS, installation instructions
+      are included here in BLFS.
 @y
-    <para>
-    本パッケージは、LFS の初期段階でもインストールしていました。
-    しかし LFS の第6章ではインストールしていません。
-    インストール手順はここに示すものに従ってください。
-    </para>
+      本パッケージは、LFS の初期段階でもインストールしていました。
+      しかし LFS の第6章ではインストールしていません。
+      インストール手順はここに示すものに従ってください。
 @z
 
 @x
-    <para>If you downloaded the optional documentation, unpack the tarball
-    by issuing the following command:</para>
+      If you downloaded the optional documentation, unpack the tarball
+      by issuing the following command:
 @y
-    <para>
-    任意のドキュメントをダウンロードしている場合は、以下のコマンドにより tarball を伸張 (解凍) します。
-    </para>
+      任意のドキュメントをダウンロードしている場合は、以下のコマンドにより tarball を伸張 (解凍) します。
 @z
 
 @x
-    <para>Install <application>Tcl</application> by running the following
-    commands:</para>
+      Install <application>Tcl</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Tcl</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Tcl</application> をビルドします。
+z
+
+@x
+      To test the results, issue: <command>make test</command>.
+@y
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>.</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      If you downloaded the optional documentation, install it by issuing
+      the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <para>If you downloaded the optional documentation, install it by issuing
-    the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    任意のドキュメントをダウンロードしている場合は、<systemitem
-    class="username">root</systemitem> ユーザーになって以下を実行しインストールします。
-    </para>
+      任意のドキュメントをダウンロードしている場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行しインストールします。
 @z
 
 @x
@@ -185,55 +171,46 @@
 @z
 
 @x
-    <para><parameter>--enable-threads</parameter>: This switch forces the package
-    to build with thread support.</para>
+      <option>--enable-threads</option>: This switch forces the package
+      to build with threads support.
 @y
-    <para>
-    <parameter>--enable-threads</parameter>:
-    このパラメーターは、スレッド機能のサポートを含めて本パッケージをビルドすることを指示します。
-    </para>
+      <option>--enable-threads</option>:
+      このパラメーターは、スレッド機能のサポートを含めて本パッケージをビルドすることを指示します。
 @z
 
 @x
-    <para><command>make install-private-headers</command>: This command is
-    used to install the <application>Tcl</application> library interface
-    headers used by other packages if they link to the
-    <application>Tcl</application> library.</para>
+      <command>make install-private-headers</command>: This command is
+      used to install the <application>Tcl</application> library interface
+      headers used by other packages if they link to the
+      <application>Tcl</application> library.
 @y
-    <para>
-    <command>make install-private-headers</command>:
-    このコマンドは <application>Tcl</application> ライブラリインターフェースのヘッダファイルをインストールするものです。
-    他のパッケージが <application>Tcl</application> ライブラリをリンクしている場合に用いられます。
-    </para>
+      <command>make install-private-headers</command>:
+      このコマンドは <application>Tcl</application> ライブラリインターフェースのヘッダーファイルをインストールするものです。
+      他のパッケージが <application>Tcl</application> ライブラリをリンクしている場合に用いられます。
 @z
 
 @x
-    <para><command>ln -v -sf tclsh&tcl-ver; /usr/bin/tclsh</command>: This
-    command is used to create a compatibility symbolic link to the
-    <command>tclsh&tcl-ver;</command> file as many packages expect a file
-    named <command>tclsh</command>.</para>
+      <command>ln -v -sf tclsh&tcl-ver; /usr/bin/tclsh</command>: This
+      command is used to create a compatibility symbolic link to the
+      <command>tclsh&tcl-ver;</command> file as many packages expect a file
+      named <command>tclsh</command>.
 @y
-    <para>
-    <command>ln -v -sf tclsh&tcl-ver; /usr/bin/tclsh</command>:
-    このコマンドは <command>tclsh&tcl-ver;</command> に対するシンボリックリンクを生成するものであり、他のパッケージが <command>tclsh</command> という名を期待しているものに応えるものです。
-    </para>
+      <command>ln -v -sf tclsh&tcl-ver; /usr/bin/tclsh</command>:
+      このコマンドは <command>tclsh&tcl-ver;</command> に対するシンボリックリンクを生成するものであり、他のパッケージが <command>tclsh</command> という名を期待しているものに応えるものです。
 @z
 
 @x
-    <para><command>sed -i -e ... tclConfig.sh</command>: The
-    <application>Tcl</application> package expects that its source tree is
-    preserved so that packages depending on it for their compilation
-    can utilize it. This <command>sed</command> removes the references to the
-    build directory and replaces them with saner system-wide locations.</para>
+      <command>sed -e ... tclConfig.sh</command>: The
+      <application>Tcl</application> package expects that its source tree is
+      preserved so that packages depending on it for their compilation
+      can utilize it. This <command>sed</command> removes the references to the
+      build directory and replaces them with saner system-wide locations.
 @y
-    <para>
-    <command>sed -i -e ... tclConfig.sh</command>:
-    <application>Tcl</application> パッケージは、
-    expects that its source tree is
-    preserved so that packages depending on it for their compilation
-    can utilize it. This <command>sed</command> removes the references to the
-    build directory and replaces them with saner system-wide locations.
-    </para>
+      <command>sed -e ... tclConfig.sh</command>: The
+      <application>Tcl</application> package expects that its source tree is
+      preserved so that packages depending on it for their compilation
+      can utilize it. This <command>sed</command> removes the references to the
+      build directory and replaces them with saner system-wide locations.
 @z
 
 @x
@@ -253,15 +230,31 @@
 @z
 
 @x
-        <seg>tclsh and tclsh&tcl-ver;</seg>
-        <seg>libtcl&tcl-ver;.so and libtclstub&tcl-ver;.a</seg>
-        <seg>/usr/lib/tcl8, /usr/lib/tcl&tcl-ver;, /usr/share/man/mann,
-        and optionally, /usr/share/doc/&tcl-version;</seg>
+        <seg>
+          tclsh and tclsh&tcl-ver;
+        </seg>
+        <seg>
+          libtcl&tcl-ver;.so and libtclstub&tcl-ver;.a
+        </seg>
+        <seg>
+          /usr/lib/tcl8,
+          /usr/lib/tcl&tcl-ver;,
+          /usr/share/man/mann and optionally
+          /usr/share/doc/&tcl-version;
+        </seg>
 @y
-        <seg>tclsh, tclsh&tcl-ver;</seg>
-        <seg>libtcl&tcl-ver;.so, libtclstub&tcl-ver;.a</seg>
-        <seg>/usr/lib/tcl8, /usr/lib/tcl&tcl-ver;, /usr/share/man/mann,
-        また任意として /usr/share/doc/&tcl-version;</seg>
+        <seg>
+          tclsh, tclsh&tcl-ver;
+        </seg>
+        <seg>
+          libtcl&tcl-ver;.so, libtclstub&tcl-ver;.a
+        </seg>
+        <seg>
+          /usr/lib/tcl8,
+          /usr/lib/tcl&tcl-ver;,
+          /usr/share/man/mann また任意として
+          /usr/share/doc/&tcl-version;
+        </seg>
 @z
 
 @x
@@ -271,28 +264,21 @@
 @z
 
 @x tclsh
-          <para> is a symlink to the <command>tclsh&tcl-ver;</command>
-          program.</para>
+            is a symlink to the <command>tclsh&tcl-ver;</command> program.
 @y
-          <para>
-          <command>tclsh&tcl-ver;</command> へのシンボリックリンク。
-          </para>
+            <command>tclsh&tcl-ver;</command> へのシンボリックリンク。
 @z
 
 @x tclsh&tcl-ver;
-          <para> is a simple shell containing the
-          <application>Tcl</application> interpreter.</para>
+            is a simple shell containing the
+            <application>Tcl</application> interpreter.
 @y
-          <para>
-          <application>Tcl</application> インタープリタの実行シェル。
-          </para>
+            <application>Tcl</application> インタープリターの実行シェル。
 @z
 
-@x libtcl.so
-          <para>contains the API functions required
-          by <application>Tcl</application>.</para>
+@x libtcl&tcl-ver;.so
+            contains the API functions required by 
+            <application>Tcl</application>.
 @y
-          <para>
-          <application>Tcl</application> にて必要となる API 関数を提供します。
-          </para>
+            <application>Tcl</application> にて必要となる API 関数を提供します。
 @z

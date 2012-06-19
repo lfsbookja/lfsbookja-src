@@ -95,40 +95,46 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="db"/> or
-    <!-- <xref linkend="gdbm"/> -->
-    GDBM (GDBM built in LFS) or
-    <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink></para>
+    <para role="required">
+      <xref linkend="db"/> or
+      GDBM (GDBM built in LFS) or
+      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="db"/> または
-    <!-- <xref linkend="gdbm"/> -->
-    GDBM (GDBM built in LFS) または
-    <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink></para>
+    <para role="required">
+      <xref linkend="db"/> or
+      GDBM (GDBM built in LFS) or
+      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
-    <xref linkend="cyrus-sasl"/>,
-    <xref linkend="mysql"/>,
-    <xref linkend="postgresql"/>,
-    <xref linkend="sqlite"/>,
-    <xref linkend="tcpwrappers"/>, and
-    <xref linkend="linux-pam"/></para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="mysql"/>,
+      <xref linkend="postgresql"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="tcpwrappers"/>, and
+      <xref linkend="linux-pam"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
-    <xref linkend="cyrus-sasl"/>,
-    <xref linkend="mysql"/>,
-    <xref linkend="postgresql"/>,
-    <xref linkend="sqlite"/>,
-    <xref linkend="tcpwrappers"/>, and
-    <xref linkend="linux-pam"/></para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="mysql"/>,
+      <xref linkend="postgresql"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="tcpwrappers"/>,
+      <xref linkend="linux-pam"/>
+    </para>
 @z
 
 @x

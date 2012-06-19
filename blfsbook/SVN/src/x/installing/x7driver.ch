@@ -102,10 +102,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-server"/></para>
+    <para role="required"><xref linkend="xorg-server"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-server"/></para>
+    <para role="required"><xref linkend="xorg-server"/></para>
 @z
 
 @x

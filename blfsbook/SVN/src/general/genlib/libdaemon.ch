@@ -20,13 +20,10 @@
 @z
 
 @x
-    <para>The <application>libdaemon</application> package is a lightweight C
-    library that eases the writing of UNIX daemons.</para>
+      The <application>libdaemon</application> package is a lightweight C
+      library that eases the writing of UNIX daemons.
 @y
-    <para>
-    <application>libdaemon</application> 
-    パッケージは、UNIX デーモンを構築するための軽量な C ライブラリを提供します。
-    </para>
+      <application>libdaemon</application> パッケージは、UNIX デーモンを構築するための軽量な C ライブラリを提供します。
 @z
 
 @x
@@ -36,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libdaemon-download-http;"/></para>
+          Download (HTTP): <ulink url="&libdaemon-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libdaemon-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libdaemon-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libdaemon-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libdaemon-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libdaemon-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libdaemon-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libdaemon-md5sum;</para>
+          Download MD5 sum: &libdaemon-md5sum;
 @y
-        <para>&Download; MD5 sum: &libdaemon-md5sum;</para>
+          &Download; MD5 sum: &libdaemon-md5sum;
 @z
 
 @x
-        <para>Download size: &libdaemon-size;</para>
+          Download size: &libdaemon-size;
 @y
-        <para>&DownloadSize;: &libdaemon-size;</para>
+          &DownloadSize;: &libdaemon-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libdaemon-buildsize;</para>
+          Estimated disk space required: &libdaemon-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libdaemon-buildsize;</para>
+          &Estimateddiskspacerequired;: &libdaemon-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libdaemon-time;</para>
+          Estimated build time: &libdaemon-time;
 @y
-        <para>&Estimatedbuildtime;: &libdaemon-time;</para>
+          &Estimatedbuildtime;: &libdaemon-time;
 @z
 
 @x
@@ -79,12 +76,16 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="lynx"/> and
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="doxygen"/> and
+      <xref linkend="lynx"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="lynx"/>,
-    <xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="lynx"/>
+    </para>
 @z
 
 @x
@@ -102,48 +103,37 @@
 @z
 
 @x
-    <para>Install <application>libdaemon</application> by running the following
-    commands:</para>
+      Install <application>libdaemon</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libdaemon</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libdaemon</application> をビルドします。
 @z
 
 @x
-    <para>If you have <application>Doxygen</application> installed and wish to
-    build the API documentation, issue the following command:</para>
+      If you have <application>Doxygen</application> installed and wish to
+      build the API documentation, issue the following command:
 @y
-    <para>
-    <application>Doxygen</application> をインストールしていて
-    API ドキュメントをする場合は、以下のコマンドを実行します。
-    </para>
+      <application>Doxygen</application> をインストールしていて API ドキュメントをする場合は、以下のコマンドを実行します。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you built the API documentation, install it using the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      If you built the API documentation, install it using the following commands 
+      as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    API ドキュメントをビルドした場合は <systemitem class="username">root</systemitem>
-    ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
-    </para>
+      API ドキュメントをビルドした場合は <systemitem
+      class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
 @z
 
 @x
@@ -153,25 +143,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libdaemon.{so,a}</seg>
-        <seg>/usr/include/libdaemon and
-        /usr/share/doc/libdaemon-&libdaemon-version;</seg>
+        <seg>
+          libdaemon.so
+        </seg>
+        <seg>
+          /usr/include/libdaemon and
+          /usr/share/doc/libdaemon-&libdaemon-version;
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libdaemon.{so,a}</seg>
-        <seg>/usr/include/libdaemon,
-        /usr/share/doc/libdaemon-&libdaemon-version;</seg>
+        <seg>
+          libdaemon.so
+        </seg>
+        <seg>
+          /usr/include/libdaemon,
+          /usr/share/doc/libdaemon-&libdaemon-version;
+        </seg>
 @z
 
 @x
@@ -180,11 +174,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libdaemon.{so,a}
-          <para>contains the <application>libdaemon</application> API
-          functions.</para>
+@x libdaemon.so
+            contains the <application>libdaemon</application> API functions.
 @y
-          <para>
-          <application>libdaemon</application> の API 関数を提供します。
-          </para>
+            <application>libdaemon</application> の API 関数を提供します。
 @z

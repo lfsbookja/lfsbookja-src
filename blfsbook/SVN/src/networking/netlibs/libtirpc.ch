@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>libtirpc</application> package contains
-    libraries that support programs that use the Remote Procedure Call (RPC) 
-    API. It replaces the RPC, but not the NIS library entries that 
-    used to be in glibc.</para>
+      The <application>libtirpc</application> package contains
+      libraries that support programs that use the Remote Procedure Call (RPC) 
+      API. It replaces the RPC, but not the NIS library entries that 
+      used to be in glibc.
 @y
-    <para>
-    <application>libtirpc</application> パッケージは、リモートプロシジャーコール (Remote Procedure Call; RPC) の API を用いたプログラムをサポートするライブラリを提供します。
-    これは glibc において実現している RPC に置き換わるものですが、NIS ライブラリまでは提供しません。
-    </para>
+      <application>libtirpc</application> パッケージは、リモートプロシジャーコール (Remote Procedure Call; RPC) の API を用いたプログラムをサポートするライブラリを提供します。
+      これは glibc において実現している RPC に置き換わるものですが、NIS ライブラリまでは提供しません。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libtirpc-download-http;"/></para>
+          Download (HTTP): <ulink url="&libtirpc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libtirpc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libtirpc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libtirpc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libtirpc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libtirpc-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libtirpc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libtirpc-md5sum;</para>
+          Download MD5 sum: &libtirpc-md5sum;
 @y
-        <para>&Download; MD5 sum: &libtirpc-md5sum;</para>
+          &Download; MD5 sum: &libtirpc-md5sum;
 @z
 
 @x
-        <para>Download size: &libtirpc-size;</para>
+          Download size: &libtirpc-size;
 @y
-        <para>&DownloadSize;: &libtirpc-size;</para>
+          &DownloadSize;: &libtirpc-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libtirpc-buildsize;</para>
+          Estimated disk space required: &libtirpc-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libtirpc-buildsize;</para>
+          &Estimateddiskspacerequired;: &libtirpc-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libtirpc-time;</para>
+          Estimated build time: &libtirpc-time;
 @y
-        <para>&Estimatedbuildtime;: &libtirpc-time;</para>
+          &Estimatedbuildtime;: &libtirpc-time;
 @z
 
 @x
@@ -80,15 +78,15 @@
 @z
 
 @x
-        <para>Required header tar file (Add rpc/nis headers):
+          Required header tar file (Add rpc/nis headers):
 @y
-        <para>必須のヘッダー tar ファイル (rpc/nis ヘッダーの追加):
+          必須のヘッダー tar ファイル (rpc/nis ヘッダーの追加):
 @z
 
 @x
-        <para>Required Patch (Remove nis dependencies):
+          Required Patch (Remove nis dependencies):
 @y
-        <para>必須のパッチ (nis への依存を削除):
+          必須のパッチ (nis への依存を削除):
 @z
 
 @x
@@ -99,12 +97,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="optional">
+    <para role="required">
       <xref linkend="pkgconfig"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="optional">
+    <para role="required">
       <xref linkend="pkgconfig"/>
     </para>
 @z
@@ -136,36 +134,30 @@
 @z
 
 @x
-    <para>Glibc-2.14 and later do not install NIS and RPC related headers by
-    default.  If needed, install them here:</para>
+      Glibc-2.14 and later do not install NIS and RPC related headers by
+      default. If needed, install them here:
 @y
-    <para>
-    Glibc-2.14 以降において NIS および RPC 関連のヘッダーファイルは、デフォルトではインストールされなくなりました。
-    必要に応じてそれらをインストールします。
-    </para>
+      Glibc-2.14 以降において NIS および RPC 関連のヘッダーファイルは、デフォルトではインストールされなくなりました。
+      必要に応じてそれらをインストールします。
 @z
 
 @x
-    <para>Install <application>libtirpc</application> by running the following
-    commands:</para>
+      Install <application>libtirpc</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libtirpc</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libtirpc</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -175,45 +167,12 @@
 @z
 
 @x
-    <para><userinput>patch -Np1 -i
-    ../libtirpc-&libtirpc-version;-remove-nis-2.patch</userinput>: This patch
-    removes references to nis functions no longer in
-    <application>glibc</application>.</para>
+      <command>mv -v /usr/lib/libtirpc.so.* ...</command>: Move shared 
+      libraries into /lib so they are available before /usr is mounted.
 @y
-    <para><userinput>patch -Np1 -i
-    ../libtirpc-&libtirpc-version;-remove-nis-2.patch</userinput>:
-    このパッチは、<application>glibc</application> にて無くなった nis 関数の参照を取り除きます。
-    </para>
-@z
-
-@x
-    <para><option>--libdir=/lib</option>: Since this library may be used before 
-    /usr is mounted, place the library in /lib.</para>
-@y
-    <para>
-    <option>--libdir=/lib</option>:
-    このライブラリは /usr がマウントされる前に利用されるため、/lib に配置するようにします。
-    </para>
-@z
-
-@x
-    <para><option>pkgconfigdir=/usr/lib/pkgconfig</option>: Ensure the .pc file
-    is placed in the proper location.</para>
-@y
-    <para>
-    <option>pkgconfigdir=/usr/lib/pkgconfig</option>:
-    .pc ファイルを適切なディレクトリに配置します。
-    </para>
-@z
-
-@x
-    <para><option>mv -v /lib/libtirpc.*a</option>: Static libraries and .la files
-    belong in /usr/lib.</para>
-@y
-    <para>
-    <option>mv -v /lib/libtirpc.*a</option>:
-    スタティックライブラリと .la ファイルを /usr/lib に移動します。
-    </para>
+      <command>mv -v /usr/lib/libtirpc.so.* ...</command>:
+      共有ライブラリを移動させます。
+      これは /usr がマウントされる前にこれらのライブラリを利用できるようにするためです。
 @z
 
 @x
@@ -223,23 +182,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>liblibtirpc.{so,a}</seg>
-        <seg>/usr/include/libtirpc</seg>
+        <seg>
+          libtirpc.{so,a}
+        </seg>
+        <seg>
+          /etc/netconfig and
+          /usr/include/libtirpc
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>liblibtirpc.{so,a}</seg>
-        <seg>/usr/include/libtirpc</seg>
+        <seg>
+          libtirpc.{so,a}
+        </seg>
+        <seg>
+          /etc/netconfig,
+          /usr/include/libtirpc
+        </seg>
 @z
 
 @x
@@ -249,10 +214,8 @@
 @z
 
 @x libtirpc.{so,a}
-          <para>provides the Remote Procedure Call (RPC) API functions required by
-          other programs.</para>
+            provides the Remote Procedure Call (RPC) API functions required by
+            other programs.
 @y
-          <para>
-          他のプログラムが必要とするリモートプロシジャーコール (Remote Procedure Call; RPC) の API 関数を提供します。
-          </para>
+            他のプログラムが必要とするリモートプロシジャーコール (Remote Procedure Call; RPC) の API 関数を提供します。
 @z

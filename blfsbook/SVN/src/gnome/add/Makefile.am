@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	accerciser.ch          \
 	add.ch                 \
 	aisleriot.ch           \
+	alacarte.ch            \
 	anjuta.ch              \
 	cheese.ch              \
 	devhelp.ch             \
@@ -30,6 +31,7 @@ CHANGE_FILES = \
 	gnome-documents.ch     \
 	gnome-games.ch         \
 	gnome-nettool.ch       \
+	gnome-tweak-tool.ch    \
 	gssdp.ch               \
 	gtkhtml.ch             \
 	gtksourceviewmm.ch     \
@@ -65,6 +67,7 @@ ctie:
 accerciser.xml:          $(BOOKdir)/$@ $(srcdir)/accerciser.ch
 add.xml:                 $(BOOKdir)/$@ $(srcdir)/add.ch
 aisleriot.xml:           $(BOOKdir)/$@ $(srcdir)/aisleriot.ch
+alacarte.xml:            $(BOOKdir)/$@ $(srcdir)/alacarte.ch
 anjuta.xml:              $(BOOKdir)/$@ $(srcdir)/anjuta.ch
 cheese.xml:              $(BOOKdir)/$@ $(srcdir)/cheese.ch
 devhelp.xml:             $(BOOKdir)/$@ $(srcdir)/devhelp.ch
@@ -89,6 +92,7 @@ gnome-devel-docs.xml:    $(BOOKdir)/$@ $(srcdir)/gnome-devel-docs.ch \
 gnome-documents.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-documents.ch
 gnome-games.xml:         $(BOOKdir)/$@ $(srcdir)/gnome-games.ch
 gnome-nettool.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
+gnome-tweak-tool.xml:    $(BOOKdir)/$@ $(srcdir)/gnome-tweak-tool.ch
 gssdp.xml:               $(BOOKdir)/$@ $(srcdir)/gssdp.ch
 gtkhtml.xml:             $(BOOKdir)/$@ $(srcdir)/gtkhtml.ch
 gtksourceviewmm.xml:     $(BOOKdir)/$@ $(srcdir)/gtksourceviewmm.ch

@@ -14,16 +14,16 @@
 @z
 
 @x
-    <title>Introduction to gnome-font-viewer</title>
+    <title>Introduction to GNOME Font Viewer</title>
 @y
-    <title>&IntroductionTo1;gnome-font-viewer&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNOME Font Viewer&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>gnome-font-viewer</application> package contains 
-      font viewer for GNOME desktop.
+      The <application>GNOME Font Viewer</application> package contains 
+      font viewer for the <application>GNOME</application> Desktop.
 @y
-      <application>gnome-font-viewer</application> パッケージは GNOME デスクトップのフォントビューアーを提供します。
+      <application>GNOME Font Viewer</application> パッケージは GNOME デスクトップのフォントビューアーを提供します。
 @z
 
 @x
@@ -69,9 +69,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">gnome-font-viewer Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GNOME Font Viewer Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gnome-font-viewer&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Font Viewer&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -93,16 +93,16 @@
 @z
 
 @x
-    <title>Installation of gnome-font-viewer</title>
+    <title>Installation of GNOME Font Viewer</title>
 @y
-    <title>&InstallationOf1;gnome-font-viewer&InstallationOf2;</title>
+    <title>&InstallationOf1;GNOME Font Viewer&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>gnome-font-viewer</application> by running the following
+      Install <application>GNOME Font Viewer</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>gnome-font-viewer</application> をビルドします。
+      以下のコマンドを実行して <application>GNOME Font Viewer</application> をビルドします。
 @z
 
 @x
@@ -146,7 +146,7 @@
 @z
 
 @x gnome-font-viewer
-            is the GNOME font viewer.
+            is the GNOME Font Viewer.
 @y
             GNOME フォントビューアー。
 @z

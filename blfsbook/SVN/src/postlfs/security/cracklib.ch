@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY cracklib-time          "less than 0.1 SBU">
+@y
+  <!ENTITY cracklib-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to CrackLib</title>
 @y
     <title>&IntroductionTo1;CrackLib&IntroductionTo2;</title>
@@ -345,15 +351,19 @@
 @x
         <seg>cracklib-check, cracklib-format, cracklib-packer,
         cracklib-unpacker and create-cracklib-dict</seg>
-        <seg>libcrack.{so,a} and the cracklibmodule.{so,a}
-        <application>Python</application> module</seg>
+
+        <seg>libcrack.so and the _cracklibmodule.{so,a}
+          <application>Python</application> module</seg>
+        
         <seg>/lib/cracklib, /usr/share/dict and /usr/share/cracklib</seg>
 @y
         <seg>cracklib-check, cracklib-format, cracklib-packer,
-        cracklib-unpacker, create-cracklib-dict</seg>
-        <seg>libcrack.{so,a}, cracklibmodule.{so,a}
-        <application>Python</application> モジュール</seg>
-        <seg>/lib/cracklib, /usr/share/dict, /usr/share/cracklib</seg>
+        cracklib-unpacker and create-cracklib-dict</seg>
+
+        <seg>libcrack.so and the _cracklibmodule.{so,a}
+          <application>Python</application> module</seg>
+        
+        <seg>/lib/cracklib, /usr/share/dict and /usr/share/cracklib</seg>
 @z
 
 @x

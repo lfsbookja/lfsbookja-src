@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>The <application>Empathy</application> package is a messaging program
-    which supports text, voice, and video chat and file transfers over many
-    different protocols.</para>
+      <application>Empathy</application> is an instant messaging program
+      which supports text, voice, and video chat and file transfers over many
+      different protocols.
 @y
-    <para>
-    <application>Empathy</application> パッケージは、数多くのプロトコルを通じて、テキスト、音声、ビデオチャット、ファイル転送をサポートした、メッセージ送受信プログラムを提供します。
-    </para>
+      <application>Empathy</application> パッケージは、数多くのプロトコルを通じて、テキスト、音声、ビデオチャット、ファイル転送をサポートした、メッセージ送受信プログラムを提供します。
 @z
 
 @x
@@ -36,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&empathy-download-http;"/></para>
+          Download (HTTP): <ulink url="&empathy-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&empathy-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&empathy-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&empathy-download-ftp;"/></para>
+          Download (FTP): <ulink url="&empathy-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&empathy-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&empathy-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &empathy-md5sum;</para>
+          Download MD5 sum: &empathy-md5sum;
 @y
-        <para>&Download; MD5 sum: &empathy-md5sum;</para>
+          &Download; MD5 sum: &empathy-md5sum;
 @z
 
 @x
-        <para>Download size: &empathy-size;</para>
+          Download size: &empathy-size;
 @y
-        <para>&DownloadSize;: &empathy-size;</para>
+          &DownloadSize;: &empathy-size;
 @z
 
 @x
-        <para>Estimated disk space required: &empathy-buildsize;</para>
+          Estimated disk space required: &empathy-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &empathy-buildsize;</para>
+          &Estimateddiskspacerequired;: &empathy-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &empathy-time;</para>
+          Estimated build time: &empathy-time;
 @y
-        <para>&Estimatedbuildtime;: &empathy-time;</para>
+          &Estimatedbuildtime;: &empathy-time;
 @z
 
 @x
@@ -120,9 +118,8 @@
     <para role="recommended">
       <xref linkend="geocode-glib"/>,
       <xref linkend="libchamplain"/>,
-      <xref linkend="nautilus-sendto"/>,
-      <xref linkend="NetworkManager"/> and
-      <xref linkend="rarian"/>
+      <xref linkend="nautilus-sendto"/> and
+      <xref linkend="NetworkManager"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -130,8 +127,7 @@
       <xref linkend="geocode-glib"/>,
       <xref linkend="libchamplain"/>,
       <xref linkend="nautilus-sendto"/>,
-      <xref linkend="NetworkManager"/>,
-      <xref linkend="rarian"/>
+      <xref linkend="NetworkManager"/>
     </para>
 @z
 
@@ -158,37 +154,33 @@
 @x
     <bridgehead renderas="sect4">Optional (Protocols)</bridgehead>
     <para role="optional">
-      <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">telepathy-gabble</ulink>
-      (Jabber, Google Talk, XMPP), <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-haze/">telepathy-haze</ulink>
-      (AIM, ICQ, Yahoo!), <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-salut/">telepathy-salut</ulink>
-      (local network ("Bonjour" - iChat-compatible) and <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
-      (SIP)
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">
+      telepathy-gabble</ulink> (Jabber, Google Talk, XMPP),
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-haze/">
+      telepathy-haze</ulink> (AIM, ICQ, Yahoo!),
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-salut/">
+      telepathy-salut</ulink> (local network "Bonjour" - iChat-compatible) and
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">
+      telepathy-sofiasip</ulink> (SIP)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (プロトコル)</bridgehead>
     <para role="optional">
-      <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">telepathy-gabble</ulink>
-      (Jabber, Google Talk, XMPP), <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-haze/">telepathy-haze</ulink>
-      (AIM, ICQ, Yahoo!), <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-salut/">telepathy-salut</ulink>
-      (ローカルネットワーク ("Bonjour" - iChat-互換), <ulink
-      url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">telepathy-sofiasip</ulink>
-      (SIP)
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-gabble/">
+      telepathy-gabble</ulink> (Jabber, Google Talk, XMPP),
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-haze/">
+      telepathy-haze</ulink> (AIM, ICQ, Yahoo!),
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-salut/">
+      telepathy-salut</ulink> (ローカルネットワーク "Bonjour" - iChat-互換),
+      <ulink url="http://telepathy.freedesktop.org/releases/telepathy-sofiasip/">
+      telepathy-sofiasip</ulink> (SIP)
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/empathy"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/empathy"/></para>
 @z
 
 @x
@@ -198,26 +190,22 @@
 @z
 
 @x
-    <para>Install <application>Empathy</application> by running the following
-    commands:</para>
+      Install <application>Empathy</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Empathy</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Empathy</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>ビルド結果をテストする場合は <command>make check</command> を実行します。</para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -227,17 +215,16 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/empathy</parameter>: This
-    parameter is used so that the <application>Empathy</application> internal
-    support programs are installed in the preferred location of <filename
-    class='directory'>/usr/lib/empathy</filename> instead of <filename
-    class='directory'>/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/empathy</parameter>: This
+      parameter is used so that the <application>Empathy</application> internal
+      support programs are installed in the preferred location of <filename
+      class="directory">/usr/lib/empathy</filename> instead of <filename
+      class="directory">/usr/libexec</filename>.
 @y
-    <para><parameter>--libexecdir=/usr/lib/empathy</parameter>:
-    本パラメーターは <application>Empathy</application> の内部プログラムのインストール先を <filename
-    class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
-    class='directory'>/usr/lib/empathy</filename> とします。
-    </para>
+      <parameter>--libexecdir=/usr/lib/empathy</parameter>:
+      本パラメーターは <application>Empathy</application> の内部プログラムのインストール先を <filename
+      class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
+      class='directory'>/usr/lib/empathy</filename> とします。
 @z
 
 @x
@@ -259,16 +246,20 @@
           empathy, empathy-accounts and empathy-debugger
         </seg>
         <seg>
-          /usr/lib/empathy, /usr/lib/mission-control-plugins.0,
-          /usr/share/empathy and /usr/share/help/*/empathy
+          /usr/lib/empathy,
+          /usr/lib/mission-control-plugins.0,
+          /usr/share/empathy and
+          /usr/share/help/*/empathy
         </seg>
 @y
         <seg>
           empathy, empathy-accounts, empathy-debugger
         </seg>
         <seg>
-          /usr/lib/empathy, /usr/lib/mission-control-plugins.0,
-          /usr/share/empathy, /usr/share/help/*/empathy
+          /usr/lib/empathy,
+          /usr/lib/mission-control-plugins.0,
+          /usr/share/empathy,
+          /usr/share/help/*/empathy
         </seg>
 @z
 
@@ -279,16 +270,16 @@
 @z
 
 @x empathy
-          <para>is a <application>GNOME</application> instant messaging client
-          using Telepathy.</para>
+            is a <application>GNOME</application> instant messaging client
+            using <application>Telepathy</application>.
 @y
-          <para>
-          Telepathy を利用した <application>GNOME</application> のインスタントメッセージクライアントです。
-          </para>
+            <application>Telepathy</application> を利用した <application>GNOME</application> のインスタントメッセージクライアントです。
 @z
 
 @x empathy-accounts
-          <para>is an accounts configuration dialog for Empathy.</para>
+            is an accounts configuration dialog for 
+            <application>Empathy</application>.
 @y
-          <para>is an accounts configuration dialog for Empathy.</para>
+            is an accounts configuration dialog for 
+            <application>Empathy</application>.
 @z

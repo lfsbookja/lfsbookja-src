@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to gnome-disk-utility</title>
+    <title>Introduction to GNOME Disk Utility</title>
 @y
-    <title>&IntroductionTo1;gnome-disk-utility&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNOME Disk Utility&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gnome-disk-utility</application> package provides
-    applications for dealing with storage devices.</para>
+      The <application>GNOME Disk Utility</application> package provides
+      applications used for dealing with storage devices.
 @y
-    <para>The <application>gnome-disk-utility</application> package provides
-    applications for dealing with storage devices.</para>
+      The <application>GNOME Disk Utility</application> package provides
+      applications used for dealing with storage devices.
 @z
 
 @x
@@ -34,45 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-disk-utility-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-disk-utility-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-disk-utility-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-disk-utility-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-disk-utility-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-disk-utility-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-disk-utility-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-disk-utility-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-disk-utility-md5sum;</para>
+          Download MD5 sum: &gnome-disk-utility-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-disk-utility-md5sum;</para>
+          &Download; MD5 sum: &gnome-disk-utility-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-disk-utility-size;</para>
+          Download size: &gnome-disk-utility-size;
 @y
-        <para>&DownloadSize;: &gnome-disk-utility-size;</para>
+          &DownloadSize;: &gnome-disk-utility-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-disk-utility-buildsize;</para>
+          Estimated disk space required: &gnome-disk-utility-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-disk-utility-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-disk-utility-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-disk-utility-time;</para>
+          Estimated build time: &gnome-disk-utility-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-disk-utility-time;</para>
+          &Estimatedbuildtime;: &gnome-disk-utility-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gnome-disk-utility Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GNOME Disk Utility Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gnome-disk-utility&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Disk Utility&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -98,32 +98,28 @@
 @z
 
 @x
-    <title>Installation of gnome-disk-utility</title>
+    <title>Installation of GNOME Disk Utility</title>
 @y
-    <title>&InstallationOf1;gnome-disk-utility&InstallationOf2;</title>
+    <title>&InstallationOf1;GNOME Disk Utility&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gnome-disk-utility</application> by running the following
-    commands:</para>
+      Install <application>GNOME Disk Utility</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gnome-disk-utility</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Disk Utility</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -163,7 +159,7 @@
 @z
 
 @x palimpsest
-          <para>is a tool used to manage disk drives and removable media.</para>
+            is a tool used to manage disk drives and removable media.
 @y
-          <para>is a tool used to manage disk drives and removable media.</para>
+            is a tool used to manage disk drives and removable media.
 @z

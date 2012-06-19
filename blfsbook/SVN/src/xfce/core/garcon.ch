@@ -145,7 +145,7 @@
 
 @x
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Director(y,ies)</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
@@ -153,14 +153,10 @@
 
 @x
         <seg>libgarcon-1.so.</seg>
-        <seg>
-          /usr/share/gtk-doc/html/garcon.
-        </seg>
+        <seg>/usr/share/gtk-doc/html/garcon.</seg>
 @y
         <seg>libgarcon-1.so.</seg>
-        <seg>
-          /usr/share/gtk-doc/html/garcon.
-        </seg>
+        <seg>/usr/share/gtk-doc/html/garcon.</seg>
 @z
 
 @x

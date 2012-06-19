@@ -19,7 +19,6 @@ CHANGE_FILES = \
 	gnupg2.ch          \
 	gnutls.ch          \
 	gpgme.ch           \
-	heimdal.ch         \
 	iptables.ch        \
 	libcap2.ch         \
 	liboauth.ch        \
@@ -68,7 +67,6 @@ gnupg.xml:            $(BOOKdir)/$@ $(srcdir)/gnupg.ch
 gnupg2.xml:           $(BOOKdir)/$@ $(srcdir)/gnupg2.ch
 gnutls.xml:           $(BOOKdir)/$@ $(srcdir)/gnutls.ch
 gpgme.xml:            $(BOOKdir)/$@ $(srcdir)/gpgme.ch
-heimdal.xml:          $(BOOKdir)/$@ $(srcdir)/heimdal.ch
 iptables.xml:         $(BOOKdir)/$@ $(srcdir)/iptables.ch
 libcap2.xml:          $(BOOKdir)/$@ $(srcdir)/libcap2.ch
 liboauth.xml:         $(BOOKdir)/$@ $(srcdir)/liboauth.ch

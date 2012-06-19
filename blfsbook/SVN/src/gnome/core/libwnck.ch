@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libwnck</application> package contains a
-    Window Navigator Construction Kit.</para>
+      The <application>libwnck</application> package contains the
+      Window Navigator Construction Kit.
 @y
-    <para>
-    <application>libwnck</application> パッケージは、ウィンドウナビゲーター構築キット (Window Navigator Construction Kit) を提供します。
-    </para>
+      <application>libwnck</application> パッケージは、ウィンドウナビゲーター構築キット (Window Navigator Construction Kit) を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libwnck-download-http;"/></para>
+          Download (HTTP): <ulink url="&libwnck-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libwnck-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libwnck-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libwnck-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libwnck-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libwnck-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libwnck-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libwnck-md5sum;</para>
+          Download MD5 sum: &libwnck-md5sum;
 @y
-        <para>&Download; MD5 sum: &libwnck-md5sum;</para>
+          &Download; MD5 sum: &libwnck-md5sum;
 @z
 
 @x
-        <para>Download size: &libwnck-size;</para>
+          Download size: &libwnck-size;
 @y
-        <para>&DownloadSize;: &libwnck-size;</para>
+          &DownloadSize;: &libwnck-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libwnck-buildsize;</para>
+          Estimated disk space required: &libwnck-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libwnck-buildsize;</para>
+          &Estimateddiskspacerequired;: &libwnck-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libwnck-time;</para>
+          Estimated build time: &libwnck-time;
 @y
-        <para>&Estimatedbuildtime;: &libwnck-time;</para>
+          &Estimatedbuildtime;: &libwnck-time;
 @z
 
 @x
@@ -118,10 +116,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libwnck"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libwnck"/></para>
 @z
 
 @x
@@ -131,29 +127,22 @@
 @z
 
 @x
-    <para>Install <application>libwnck</application> by running the
-    following commands:</para>
+      Install <application>libwnck</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libwnck</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libwnck</application> をビルドします。
 @z
 
 @x
-    <para>This package's testsuite is only intended to be used by the
-    maintainer to check i18n files.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    本パッケージのテストスイートは、開発者が i18n ファイルをチェックするためだけに提供されています。
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -186,7 +175,8 @@
           libwnck-3.so
         </seg>
         <seg>
-          /usr/include/libwnck-3.0 and /usr/share/gtk-doc/html/libwnck-3.0
+          /usr/include/libwnck-3.0 and
+          /usr/share/gtk-doc/html/libwnck-3.0
         </seg>
 @y
         <seg>
@@ -196,7 +186,8 @@
           libwnck-3.so
         </seg>
         <seg>
-          /usr/include/libwnck-3.0, /usr/share/gtk-doc/html/libwnck-3.0
+          /usr/include/libwnck-3.0,
+          /usr/share/gtk-doc/html/libwnck-3.0
         </seg>
 @z
 
@@ -207,18 +198,14 @@
 @z
 
 @x wnckprop
-          <para>Print or modify the properties of a screen/workspace/window,
-          or interact with it.</para>
+            is used to print or modify the properties of a screen/workspace/window,
+            or to interact with it.
 @y
-          <para>
-          スクリーン/ワークスペース/ウィンドウのプロパティを表示したり更新したりします。
-          </para>
+            スクリーン/ワークスペース/ウィンドウのプロパティを表示したり更新したりします。
 @z
 
 @x libwnck-1.{so,a}
-          <para>contains functions for writing pagers and task lists.</para>
+            contains functions for writing pagers and task lists.
 @y
-          <para>
-          ページャー (pagers) やタスクリストへの更新を行う関数を提供します。
-          </para>
+            ページャー (pagers) やタスクリストへの更新を行う関数を提供します。
 @z

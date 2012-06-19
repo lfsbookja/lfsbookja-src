@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>OpenLDAP</application> package provides an open
-    source implementation of the Lightweight Directory Access Protocol.</para>
+      The <application>OpenLDAP</application> package provides an open
+      source implementation of the Lightweight Directory Access Protocol.
 @y
-    <para>
-    <application>OpenLDAP</application> パッケージはオープンソース実装による "軽量" ディレクトリアクセスプロトコル (Lightweight Directory Access Protocol) を提供します。
-    </para>
+      <application>OpenLDAP</application> パッケージはオープンソース実装による "軽量" ディレクトリアクセスプロトコル (Lightweight Directory Access Protocol) を提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&openldap-download-http;"/></para>
+          Download (HTTP): <ulink url="&openldap-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&openldap-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&openldap-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&openldap-download-ftp;"/></para>
+          Download (FTP): <ulink url="&openldap-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&openldap-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&openldap-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &openldap-md5sum;</para>
+          Download MD5 sum: &openldap-md5sum;
 @y
-        <para>&Download; MD5 sum: &openldap-md5sum;</para>
+          &Download; MD5 sum: &openldap-md5sum;
 @z
 
 @x
-        <para>Download size: &openldap-size;</para>
+          Download size: &openldap-size;
 @y
-        <para>&DownloadSize;: &openldap-size;</para>
+          &DownloadSize;: &openldap-size;
 @z
 
 @x
-        <para>Estimated disk space required: &openldap-buildsize;</para>
+          Estimated disk space required: &openldap-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &openldap-buildsize;</para>
+          &Estimateddiskspacerequired;: &openldap-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &openldap-time;</para>
+          Estimated build time: &openldap-time;
 @y
-        <para>&Estimatedbuildtime;: &openldap-time;</para>
+          &Estimatedbuildtime;: &openldap-time;
 @z
 
 @x
@@ -82,19 +80,19 @@
     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 @x
-        <para>Required patch: <ulink
+          Required patch:
 @y
-        <para>必須のパッチ: <ulink
+          必須のパッチ:
 @z
 @x
-        <para>Required patch: <ulink
+          Required patch:
 @y
-        <para>必須のパッチ: <ulink
+          必須のパッチ:
 @z
 @x
-        <para>Optional patch: <ulink
+          Optional patch:
 @y
-        <para>任意のパッチ: <ulink
+          任意のパッチ:
 @z
 
 @x
@@ -105,47 +103,58 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="db"/></para>
+    <para role="required">
+      <xref linkend="db"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="db"/></para>
+    <para role="required">
+      <xref linkend="db"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="cyrus-sasl"/>
-    and <xref linkend="openssl"/></para>
+    <para role="recommended">
+      <xref linkend="cyrus-sasl"/> and
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="cyrus-sasl"/>,
-    <xref linkend="openssl"/></para>
+    <para role="recommended">
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
-    <para role="optional"><xref linkend="icu"/>,
-    <xref linkend="tcpwrappers"/>,
-    <xref linkend="unixodbc"/>,
-    <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-    <xref linkend="pth"/>, and either
-    <xref linkend="mysql"/> or
-    <xref linkend="postgresql"/></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="icu"/>,
+      <xref linkend="mysql"/> or
+      <xref linkend="postgresql"/>,
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <xref linkend="pth"/>,
+      <xref linkend="tcpwrappers"/> and
+      <xref linkend="unixodbc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="icu"/>,
-    <xref linkend="tcpwrappers"/>,
-    <xref linkend="unixodbc"/>,
-    <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-    <xref linkend="pth"/>, また
-    <xref linkend="mysql"/> あるいは
-    <xref linkend="postgresql"/> のいずれか</para>
+    <para role="optional">
+      <xref linkend="icu"/>,
+      <xref linkend="mysql"/> or
+      <xref linkend="postgresql"/>,
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <xref linkend="pth"/>,
+      <xref linkend="tcpwrappers"/> and
+      <xref linkend="unixodbc"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/openldap"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/openldap"/></para>
 @z
 
 @x
@@ -155,34 +164,30 @@
 @z
 
 @x
-    <para>Install <application>OpenLDAP</application> by
-    running the following commands:</para>
+      Install <application>OpenLDAP</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>OpenLDAP</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>OpenLDAP</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>. If you've
-    enabled <application>tcp_wrappers</application>, ensure you add 127.0.0.1
-    to the <parameter>slapd</parameter> line in the
-    <filename>/etc/hosts.allow</filename> file if you have a restrictive
-    <filename>/etc/hosts.deny</filename> file.</para>
+      To test the results, issue: <command>make test</command>. If you've
+      enabled <application>tcp_wrappers</application>, ensure you add 127.0.0.1
+      to the <parameter>slapd</parameter> line in the
+      <filename>/etc/hosts.allow</filename> file if you have a restrictive
+      <filename>/etc/hosts.deny</filename> file.
 @y
-    <para>To test the results, issue: <command>make test</command>. If you've
-    enabled <application>tcp_wrappers</application>, ensure you add 127.0.0.1
-    to the <parameter>slapd</parameter> line in the
-    <filename>/etc/hosts.allow</filename> file if you have a restrictive
-    <filename>/etc/hosts.deny</filename> file.</para>
+      To test the results, issue: <command>make test</command>. If you've
+      enabled <application>tcp_wrappers</application>, ensure you add 127.0.0.1
+      to the <parameter>slapd</parameter> line in the
+      <filename>/etc/hosts.allow</filename> file if you have a restrictive
+      <filename>/etc/hosts.deny</filename> file.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -192,110 +197,101 @@
 @z
 
 @x
-    <para><parameter>--disable-debug</parameter>: Disable debugging code.</para>
+      <option>--disable-debug</option>: This parameter disables
+      the debugging code in <application>OpenLDAP</application>.
 @y
-    <para>
-    <parameter>--disable-debug</parameter>: デバッグコードを無効にします。
-    </para>
+      <option>--disable-debug</option>:
+      このパラメーターは <application>OpenLDAP</application> におけるデバッグコードを無効にします。
 @z
 
 @x
-    <para><parameter>--enable-dynamic</parameter>: This forces the
-    <application>OpenLDAP</application> libraries to be dynamically linked
-    to the executable programs.</para>
+      <option>--enable-dynamic</option>: This parameter forces the
+      <application>OpenLDAP</application> libraries to be dynamically
+      linked to the executable programs.
 @y
-    <para>
-    <parameter>--enable-dynamic</parameter>: This forces the
-    <application>OpenLDAP</application> libraries to be dynamically linked
-    to the executable programs.
-    </para>
+      <option>--enable-dynamic</option>: This parameter forces the
+      <application>OpenLDAP</application> libraries to be dynamically
+      linked to the executable programs.
 @z
 
 @x
-    <para><parameter>--enable-crypt</parameter>: Enables crypt(3)
-    passwords.</para>
+      <option>--enable-crypt</option>: This parameter enables using of
+      <command>crypt(3)</command> passwords.
 @y
-    <para>
-    <parameter>--enable-crypt</parameter>: Enables crypt(3)
-    passwords.
-    </para>
+      <option>--enable-crypt</option>: This parameter enables using of
+      <command>crypt(3)</command> passwords.
 @z
 
 @x
-    <para><parameter>--enable-modules</parameter>: Enables dynamic module
-    support.</para>
+      <option>--enable-modules</option>: This parameter enables dynamic
+      module support.
 @y
-    <para>
-    <parameter>--enable-modules</parameter>: Enables dynamic module
-    support.
-    </para>
+      <option>--enable-modules</option>: This parameter enables dynamic
+      module support.
 @z
 
 @x
-    <para><parameter>--enable-rlookups</parameter>: This parameter enables
-    reverse lookups of client hostnames.</para>
+      <option>--enable-rlookups</option>: This parameter enables
+      reverse lookups of client hostnames.
 @y
-    <para>
-    <parameter>--enable-rlookups</parameter>: This parameter enables
-    reverse lookups of client hostnames.
-    </para>
+      <option>--enable-rlookups</option>: This parameter enables
+      reverse lookups of client hostnames.
 @z
 
 @x
-    <para><parameter>--enable-backends</parameter>: This parameter enables
-    all available backends.</para>
+      <option>--enable-backends</option>: This parameter enables
+      all available backends.
 @y
-    <para>
-    <parameter>--enable-backends</parameter>: This parameter enables
-    all available backends.
-    </para>
+      <option>--enable-backends</option>: This parameter enables
+      all available backends.
 @z
 
 @x
-    <para><parameter>--enable-overlays</parameter>: This parameter enables
-    all available overlays.</para>
+      <option>--enable-overlays</option>: This parameter enables
+      all available overlays.
 @y
-    <para>
-    <parameter>--enable-overlays</parameter>: This parameter enables
-    all available overlays.
-    </para>
+      <option>--enable-overlays</option>: This parameter enables
+      all available overlays.
 @z
 
 @x
-    <para><parameter>--disable-sql</parameter>: This parameter explicitly
-    disables the sql backend.  Omit this switch if a SQL server is
-    installed and you are going to use a SQL backend (experimental).</para>
+      <option>--disable-ndb</option>: This parameter disables
+      <application>MySQL</application> NDB Cluster backend 
+      which causes configure to fail if
+      <application>MySQL</application> is present.
 @y
-    <para><parameter>--disable-sql</parameter>: This parameter explicitly
-    disables the sql backend.  Omit this switch if a SQL server is
-    installed and you are going to use a SQL backend (experimental).</para>
+      <option>--disable-ndb</option>: This parameter disables
+      <application>MySQL</application> NDB Cluster backend 
+      which causes configure to fail if
+      <application>MySQL</application> is present.
 @z
 
 @x
-    <para><option>--disable-bdb --disable-hdb --with-ldbm-api=gdbm</option>:
-    Pass these parameters to the <command>configure</command> command if you
-    wish to use <application>GDBM</application> instead of
-    <application>Berkeley DB</application> as the primary backend
-    database.</para>
+      <option>--disable-sql</option>: This parameter explicitly
+      disables the SQL backend.  Omit this switch if a SQL server is
+      installed and you are going to use a SQL backend.
 @y
-    <para><option>--disable-bdb --disable-hdb --with-ldbm-api=gdbm</option>:
-    Pass these parameters to the <command>configure</command> command if you
-    wish to use <application>GDBM</application> instead of
-    <application>Berkeley DB</application> as the primary backend
-    database.</para>
+      <option>--disable-sql</option>: This parameter explicitly
+      disables the SQL backend.  Omit this switch if a SQL server is
+      installed and you are going to use a SQL backend.
 @z
 
 @x
-      <para>You can run <command>./configure --help</command> to see if there
-      are other parameters you can pass to the <command>configure</command>
-      command to enable other options or dependency packages.</para>
+      <option>--enable-spasswd</option>: This parameter enables
+      <application>SASL</application> password verification.
 @y
-    <para>
-    
-    You can run <command>./configure --help</command> to see if there
-    are other parameters you can pass to the <command>configure</command>
-    command to enable other options or dependency packages.
-    </para>
+      <option>--enable-spasswd</option>: This parameter enables
+      <application>SASL</application> password verification.
+@z
+
+@x
+        You can run <command>./configure --help</command> to see if there
+        are other parameters you can pass to the <command>configure</command>
+        command to enable other options or dependency packages.
+@y
+        You can run <command>./configure --help</command> to see if there
+        are other parameters you can pass to the <command>configure</command>
+        command to enable other options or dependency packages.
 @z
 
 @x
@@ -317,19 +313,19 @@
 @z
 
 @x
-      <para>Configuring the <command>slapd</command> servers can be complex.
-      Securing the LDAP directory, especially if you are storing non-public
-      data such as password databases, can also be a challenging task. You'll
-      need to modify the <filename>/etc/openldap/slapd.conf</filename> and
-      <filename>/etc/openldap/ldap.conf</filename> files to set up
-      <application>OpenLDAP</application> for your particular needs.</para>
+        Configuring the <command>slapd</command> servers can be complex.
+        Securing the LDAP directory, especially if you are storing non-public
+        data such as password databases, can also be a challenging task. You'll
+        need to modify the <filename>/etc/openldap/slapd.conf</filename> and
+        <filename>/etc/openldap/ldap.conf</filename> files to set up
+        <application>OpenLDAP</application> for your particular needs.
 @y
-      <para>Configuring the <command>slapd</command> servers can be complex.
-      Securing the LDAP directory, especially if you are storing non-public
-      data such as password databases, can also be a challenging task. You'll
-      need to modify the <filename>/etc/openldap/slapd.conf</filename> and
-      <filename>/etc/openldap/ldap.conf</filename> files to set up
-      <application>OpenLDAP</application> for your particular needs.</para>
+        Configuring the <command>slapd</command> servers can be complex.
+        Securing the LDAP directory, especially if you are storing non-public
+        data such as password databases, can also be a challenging task. You'll
+        need to modify the <filename>/etc/openldap/slapd.conf</filename> and
+        <filename>/etc/openldap/ldap.conf</filename> files to set up
+        <application>OpenLDAP</application> for your particular needs.
 @z
 
 @x
@@ -345,59 +341,35 @@
 @z
 
 @x
-          <para>The <command>slapd</command> man page</para>
+            The <command>slapd</command> man page.
 @y
-          <para>The <command>slapd</command> man page</para>
+            The <command>slapd</command> man page.
 @z
 
 @x
-          <para>The <filename>slapd.conf</filename> man page</para>
+            The <filename>slapd.conf</filename> man page.
 @y
-          <para>The <filename>slapd.conf</filename> man page</para>
+            The <filename>slapd.conf</filename> man page.
 @z
 
 @x
-          <para>The <ulink
-          url="http://www.openldap.org/doc/admin24/">OpenLDAP 2.4
-          Administrator's Guide</ulink> (also installed locally in
-          <filename class='directory'>
-          /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>)</para>
+            The <ulink url="http://www.openldap.org/doc/admin24/">
+            OpenLDAP 2.4 Administrator's Guide</ulink> 
+            (also installed locally in <filename class='directory'>
+            /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @y
-          <para>The <ulink
-          url="http://www.openldap.org/doc/admin24/">OpenLDAP 2.4
-          Administrator's Guide</ulink> (also installed locally in
-          <filename class='directory'>
-          /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>)</para>
+            The <ulink url="http://www.openldap.org/doc/admin24/">
+            OpenLDAP 2.4 Administrator's Guide</ulink> 
+            (also installed locally in <filename class='directory'>
+            /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @z
 
 @x
-          <para>Documents located at
-          <ulink url="http://www.openldap.org/pub/"/></para>
+            Documents located at
+            <ulink url="http://www.openldap.org/pub/"/>.
 @y
-          <para>Documents located at
-          <ulink url="http://www.openldap.org/pub/"/></para>
-@z
-
-@x
-      <title>Utilizing GDBM</title>
-@y
-      <title>GDBM の利用</title>
-@z
-
-@x
-      <para>To utilize <application>GDBM</application> as the database
-      backend, the <quote>database</quote> entry in
-      <filename>/etc/openldap/slapd.conf</filename> must be changed from
-      <quote>bdb</quote> to <quote>ldbm</quote>. You can use both by
-      creating an additional database section in
-      <filename>/etc/openldap/slapd.conf</filename>.</para>
-@y
-      <para>To utilize <application>GDBM</application> as the database
-      backend, the <quote>database</quote> entry in
-      <filename>/etc/openldap/slapd.conf</filename> must be changed from
-      <quote>bdb</quote> to <quote>ldbm</quote>. You can use both by
-      creating an additional database section in
-      <filename>/etc/openldap/slapd.conf</filename>.</para>
+            Documents located at
+            <ulink url="http://www.openldap.org/pub/"/>.
 @z
 
 @x
@@ -407,17 +379,17 @@
 @z
 
 @x
-      <para>By default, LDAPv2 support is disabled in the
-      <filename>slapd.conf</filename> file. Once the database is properly
-      set up and <application>Mozilla</application> is configured to use the
-      directory, you must add <option>allow bind_v2</option> to the
-      <filename>slapd.conf</filename> file.</para>
+        By default, LDAPv2 support is disabled in the
+        <filename>slapd.conf</filename> file. Once the database is properly
+        set up and <application>Mozilla</application> is configured to use the
+        directory, you must add <option>allow bind_v2</option> to the
+        <filename>slapd.conf</filename> file.
 @y
-      <para>By default, LDAPv2 support is disabled in the
-      <filename>slapd.conf</filename> file. Once the database is properly
-      set up and <application>Mozilla</application> is configured to use the
-      directory, you must add <option>allow bind_v2</option> to the
-      <filename>slapd.conf</filename> file.</para>
+        By default, LDAPv2 support is disabled in the
+        <filename>slapd.conf</filename> file. Once the database is properly
+        set up and <application>Mozilla</application> is configured to use the
+        directory, you must add <option>allow bind_v2</option> to the
+        <filename>slapd.conf</filename> file.
 @z
 
 @x
@@ -427,30 +399,28 @@
 @z
 
 @x
-      <para>To automate the startup of the LDAP server at system bootup,
-      install the <filename>/etc/rc.d/init.d/openldap</filename> init script
-      included in the <xref linkend="bootscripts"/> package
-      using the following command:</para>
+        To automate the startup of the LDAP server at system bootup,
+        install the <filename>/etc/rc.d/init.d/openldap</filename> init script
+        included in the <xref linkend="bootscripts"/> package
+        using the following command:
 @y
-      <para>
-      LDAP サーバーをシステムブート時に自動起動するには <xref
-      linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/openldap</filename> を用います。
-      これは以下のコマンドによりインストールします。
-      </para>
+        LDAP サーバーをシステムブート時に自動起動するには <xref
+        linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/openldap</filename> を用います。
+        これは以下のコマンドによりインストールします。
 @z
 
 @x
-        <para>The init script starts the daemon without any parameters.
-        You'll need to modify the 
-        <filename>/etc/sysconfig/openldap</filename> to include the 
-        parameters needed for your specific configuration. See the 
-        <command>slapd</command> man page for parameter information.</para>
+          The init script starts the daemon without any parameters.
+          You'll need to modify the 
+          <filename>/etc/sysconfig/openldap</filename> to include the 
+          parameters needed for your specific configuration. See the 
+          <command>slapd</command> man page for parameter information.
 @y
-        <para>The init script starts the daemon without any parameters.
-        You'll need to modify the 
-        <filename>/etc/sysconfig/openldap</filename> to include the 
-        parameters needed for your specific configuration. See the 
-        <command>slapd</command> man page for parameter information.</para>
+          The init script starts the daemon without any parameters.
+          You'll need to modify the 
+          <filename>/etc/sysconfig/openldap</filename> to include the 
+          parameters needed for your specific configuration. See the 
+          <command>slapd</command> man page for parameter information.
 @z
 
 @x
@@ -460,28 +430,21 @@
 @z
 
 @x
-      <para>Start the LDAP server using the init script:</para>
+        Start the LDAP server using the init script:
 @y
-      <para>
-      初期化スクリプトを使って LDAP サーバーを起動します。
-      </para>
+        初期化スクリプトを使って LDAP サーバーを起動します。
 @z
 
 @x
-      <para>Verify access to the LDAP server with the following
-      command:</para>
+        Verify access to the LDAP server with the following command:
 @y
-      <para>
-      以下のコマンド実行により LDAP サーバーへのアクセスを確認します。
-      </para>
+        以下のコマンド実行により LDAP サーバーへのアクセスを確認します。
 @z
 
 @x
-      <para>The expected result is:</para>
+        The expected result is:
 @y
-      <para>
-      確認結果は以下のようになります。
-      </para>
+        確認結果は以下のようになります。
 @z
 
 @x
@@ -501,19 +464,33 @@
 @z
 
 @x
-        <seg>ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
-        ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
-        slapcat, slapd, slapdn, slapindex, slappasswd, slapschema and slaptest</seg>
-        <seg>liblber.so, libldap.so,a and libldap_r.so</seg>
-        <seg>/etc/openldap, /usr/lib/openldap
-        and /var/lib/openldap</seg>
+        <seg>
+          ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
+          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
+          slapcat, slapd, slapdn, slapindex, slappasswd, slapschema and slaptest
+        </seg>
+        <seg>
+          liblber.so, libldap.so,a and libldap_r.so
+        </seg>
+        <seg>
+          /etc/openldap,
+          /usr/lib/openldap and
+          /var/lib/openldap
+        </seg>
 @y
-        <seg>ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
-        ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
-        slapcat, slapd, slapdn, slapindex, slappasswd, slapschema, slaptest</seg>
-        <seg>liblber.so, libldap.so,a, libldap_r.so</seg>
-        <seg>/etc/openldap, /usr/lib/openldap,
-        /var/lib/openldap</seg>
+        <seg>
+          ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
+          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
+          slapcat, slapd, slapdn, slapindex, slappasswd, slapschema and slaptest
+        </seg>
+        <seg>
+          liblber.so, libldap.so,a and libldap_r.so
+        </seg>
+        <seg>
+          /etc/openldap,
+          /usr/lib/openldap and
+          /var/lib/openldap
+        </seg>
 @z
 
 @x
@@ -523,149 +500,185 @@
 @z
 
 @x ldapadd
-          <para>opens a connection to an LDAP server, binds and adds
-          entries.</para>
+            opens a connection to an LDAP server, binds and adds entries.
 @y
-          <para>opens a connection to an LDAP server, binds and adds
-          entries.</para>
+            opens a connection to an LDAP server, binds and adds entries.
 @z
 
 @x ldapcompare
-          <para>opens a connection to an LDAP server, binds and performs
-          a compare using specified parameters.</para>
+            opens a connection to an LDAP server, binds and performs
+            a compare using specified parameters.
 @y
-          <para>opens a connection to an LDAP server, binds and performs
-          a compare using specified parameters.</para>
+            opens a connection to an LDAP server, binds and performs
+            a compare using specified parameters.
 @z
 
 @x ldapdelete
-          <para> opens a connection to an LDAP server, binds and deletes
-          one or more entries.</para>
+            opens a connection to an LDAP server, binds and deletes
+            one or more entries.
 @y
-          <para> opens a connection to an LDAP server, binds and deletes
-          one or more entries.</para>
+            opens a connection to an LDAP server, binds and deletes
+            one or more entries.
+@z
+
+@x ldapexop
+            issues the LDAP extended operation specified by 
+            oid or one of the  special  keywords  whoami,
+            cancel, or refresh.
+@y
+            issues the LDAP extended operation specified by 
+            oid or one of the  special  keywords  whoami,
+            cancel, or refresh.
 @z
 
 @x ldapmodify
-          <para>opens a connection to an LDAP server, binds and modifies
-          entries.</para>
+            opens a connection to an LDAP server, binds and modifies entries.
 @y
-          <para>opens a connection to an LDAP server, binds and modifies
-          entries.</para>
+            opens a connection to an LDAP server, binds and modifies entries.
 @z
 
 @x ldapmodrdn
-          <para>opens a connection to an LDAP server, binds and modifies
-          the RDN of entries.</para>
+            opens a connection to an LDAP server, binds and modifies
+            the RDN of entries.
 @y
-          <para>opens a connection to an LDAP server, binds and modifies
-          the RDN of entries.</para>
+            opens a connection to an LDAP server, binds and modifies
+            the RDN of entries.
 @z
 
 @x ldappasswd
-          <para>is a tool to set the password of an LDAP user.</para>
+            is a tool used to set the password of an LDAP user.
 @y
-          <para>is a tool to set the password of an LDAP user.</para>
+            is a tool used to set the password of an LDAP user.
 @z
 
 @x ldapsearch
-          <para>opens a connection to an LDAP server, binds and performs
-          a search using specified parameters.</para>
+            opens a connection to an LDAP server, binds and performs
+            a search using specified parameters.
 @y
-          <para>opens a connection to an LDAP server, binds and performs
-          a search using specified parameters.</para>
+            opens a connection to an LDAP server, binds and performs
+            a search using specified parameters.
+@z
+
+@x ldapurl
+            is a command that allows to either compose or 
+            decompose LDAP URIs.
+@y
+            is a command that allows to either compose or 
+            decompose LDAP URIs.
 @z
 
 @x ldapwhoami
-          <para>opens a connection to an LDAP server, binds and displays
-          whoami information.</para>
+            opens a connection to an LDAP server, binds and displays
+            whoami information.
 @y
-          <para>opens a connection to an LDAP server, binds and displays
-          whoami information.</para>
+            opens a connection to an LDAP server, binds and displays
+            whoami information.
+@z
+
+@x slapacl
+            is used to check the behavior of slapd by verifying 
+            access to directory data according to the access control 
+            list directives defined in its configuration.
+@y
+            is used to check the behavior of slapd by verifying 
+            access to directory data according to the access control 
+            list directives defined in its configuration.
 @z
 
 @x slapadd
-          <para>is used to add entries specified in LDAP Directory Interchange
-          Format (LDIF) to an LDAP database.</para>
+            is used to add entries specified in LDAP Directory Interchange
+            Format (LDIF) to an LDAP database.
 @y
-          <para>is used to add entries specified in LDAP Directory Interchange
-          Format (LDIF) to an LDAP database.</para>
+            is used to add entries specified in LDAP Directory Interchange
+            Format (LDIF) to an LDAP database.
+@z
+
+@x slapauth
+            is used to check the behavior of the slapd 
+            in mapping identities for authentication and
+            authorization purposes, as specified in slapd.conf.
+@y
+            is used to check the behavior of the slapd 
+            in mapping identities for authentication and
+            authorization purposes, as specified in slapd.conf.
 @z
 
 @x slapcat
-          <para>is used to generate an LDAP LDIF output based upon the
-          contents of a slapd database.</para>
+            is used to generate an LDAP LDIF output based upon the
+            contents of a slapd database.
 @y
-          <para>is used to generate an LDAP LDIF output based upon the
-          contents of a slapd database.</para>
+            is used to generate an LDAP LDIF output based upon the
+            contents of a slapd database.
 @z
 
 @x slapd
-          <para>is the stand-alone LDAP server.</para>
+            is the standalone LDAP server.
 @y
-          <para>is the stand-alone LDAP server.</para>
+            is the standalone LDAP server.
 @z
 
 @x slapdn
-          <para>checks a list of string-represented DNs based on schema
-          syntax.</para>
+            checks a list of string-represented DNs based on schema syntax.
 @y
-          <para>checks a list of string-represented DNs based on schema
-          syntax.</para>
+            checks a list of string-represented DNs based on schema syntax.
 @z
 
 @x slapindex
-          <para>is used to regenerate slapd indexes based upon the current
-          contents of a database.</para>
+            is used to regenerate slapd indexes based upon the current
+            contents of a database.
 @y
-          <para>is used to regenerate slapd indexes based upon the current
-          contents of a database.</para>
+            is used to regenerate slapd indexes based upon the current
+            contents of a database.
 @z
 
 @x slappasswd
-          <para>is an <application>OpenLDAP</application> password
-          utility.</para>
+            is an <application>OpenLDAP</application> password utility.
 @y
-          <para>is an <application>OpenLDAP</application> password
-          utility.</para>
+            is an <application>OpenLDAP</application> password utility.
+@z
+
+@x slapschema
+            is used to check schema compliance of the contents 
+            of a slapd database.
+@y
+            is used to check schema compliance of the contents 
+            of a slapd database.
 @z
 
 @x slaptest
-          <para>checks the sanity of the <filename>slapd.conf</filename>
-          file.</para>
+            checks the sanity of the <filename>slapd.conf</filename> file.
 @y
-          <para>checks the sanity of the <filename>slapd.conf</filename>
-          file.</para>
+            checks the sanity of the <filename>slapd.conf</filename> file.
 @z
 
-@x liblber.{so,a}
-          <para>is a set of lightweight Basic Encoding Rules routines. These
-          routines are used by the LDAP library routines to encode and decode
-          LDAP protocol elements using the (slightly simplified) Basic
-          Encoding Rules defined by LDAP. They are not normally used directly
-          by an LDAP application program except in the handling of controls
-          and extended operations.</para>
+@x liblber.so
+            is a set of lightweight Basic Encoding Rules routines. These
+            routines are used by the LDAP library routines to encode and decode
+            LDAP protocol elements using the (slightly simplified) Basic
+            Encoding Rules defined by LDAP. They are not normally used directly
+            by an LDAP application program except in the handling of controls
+            and extended operations.
 @y
-          <para>is a set of lightweight Basic Encoding Rules routines. These
-          routines are used by the LDAP library routines to encode and decode
-          LDAP protocol elements using the (slightly simplified) Basic
-          Encoding Rules defined by LDAP. They are not normally used directly
-          by an LDAP application program except in the handling of controls
-          and extended operations.</para>
+            is a set of lightweight Basic Encoding Rules routines. These
+            routines are used by the LDAP library routines to encode and decode
+            LDAP protocol elements using the (slightly simplified) Basic
+            Encoding Rules defined by LDAP. They are not normally used directly
+            by an LDAP application program except in the handling of controls
+            and extended operations.
 @z
 
-@x libldap.{so,a}
-          <para>supports the LDAP programs and provide functionality for
-          other programs interacting with LDAP.</para>
+@x libldap.so
+            supports the LDAP programs and provide functionality for
+            other programs interacting with LDAP.
 @y
-          <para>supports the LDAP programs and provide functionality for
-          other programs interacting with LDAP.</para>
+            supports the LDAP programs and provide functionality for
+            other programs interacting with LDAP.
 @z
 
-@x libldap_r.{so,a}
-          <para>contains the functions required by the LDAP programs to
-          produce the results from LDAP requests.</para>
+@x libldap_r.so
+            contains the functions required by the LDAP programs to
+            produce the results from LDAP requests.
 @y
-          <para>contains the functions required by the LDAP programs to
-          produce the results from LDAP requests.</para>
+            contains the functions required by the LDAP programs to
+            produce the results from LDAP requests.
 @z

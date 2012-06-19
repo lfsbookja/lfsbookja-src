@@ -151,8 +151,7 @@ CHANGE_FILES = \
 	bind.ch \
 	major.ch \
 	proftpd.ch \
-	vsftpd.ch \
-	xinetd.ch
+	vsftpd.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -353,7 +352,6 @@ bind.xml:    $(BOOKdir)/$@ $(srcdir)/bind.ch
 major.xml:   $(BOOKdir)/$@ $(srcdir)/major.ch
 proftpd.xml: $(BOOKdir)/$@ $(srcdir)/proftpd.ch
 vsftpd.xml:  $(BOOKdir)/$@ $(srcdir)/vsftpd.ch
-xinetd.xml:  $(BOOKdir)/$@ $(srcdir)/xinetd.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

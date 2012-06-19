@@ -14,20 +14,18 @@
 @z
 
 @x
-    <title>Introduction to gvfs</title>
+    <title>Introduction to Gvfs</title>
 @y
-    <title>&IntroductionTo1;gvfs&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Gvfs&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gvfs</application> package is a userspace virtual
-    filesystem designed to work with the I/O abstractions of GLib's GIO
-    library.</para>
+      The <application>Gvfs</application> package is an userspace virtual
+      filesystem designed to work with the I/O abstractions of GLib's GIO
+      library.
 @y
-    <para>
-    The <application>gvfs</application> パッケージは、ユーザー空間での仮想ファイルシステムを提供します。
-    これは GLib の GIO ライブラリにおける I/O 抽象 (I/O abstractions) 機能とともに動作するものとして構築されています。
-    </para>
+      <application>Gvfs</application> パッケージは、ユーザー空間での仮想ファイルシステムを提供します。
+      これは GLib の GIO ライブラリにおける I/O 抽象 (I/O abstractions) 機能とともに動作するものとして構築されています。
 @z
 
 @x
@@ -37,154 +35,138 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gvfs-download-http;"/></para>
+          Download (HTTP): <ulink url="&gvfs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gvfs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gvfs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gvfs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gvfs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gvfs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gvfs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gvfs-md5sum;</para>
+          Download MD5 sum: &gvfs-md5sum;
 @y
-        <para>&Download; MD5 sum: &gvfs-md5sum;</para>
+          &Download; MD5 sum: &gvfs-md5sum;
 @z
 
 @x
-        <para>Download size: &gvfs-size;</para>
+          Download size: &gvfs-size;
 @y
-        <para>&DownloadSize;: &gvfs-size;</para>
+          &DownloadSize;: &gvfs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gvfs-buildsize;</para>
+          Estimated disk space required: &gvfs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gvfs-buildsize;</para>
+          &Estimateddiskspacerequired;: &gvfs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gvfs-time;</para>
+          Estimated build time: &gvfs-time;
 @y
-        <para>&Estimatedbuildtime;: &gvfs-time;</para>
+          &Estimatedbuildtime;: &gvfs-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gvfs Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Gvfs Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gvfs&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Gvfs&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="intltool"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="intltool"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="intltool"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended if building GNOME</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="libsoup"/> and
       <xref linkend="udisks2"/>
-      (Useful if you want to mount disks via Nautilus).
     </para>
 @y
-    <bridgehead renderas="sect4">GNOME ビルド時の推奨</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="udisks2"/>
-      (Nautilus を通じてディスクマウントを行う場合に有用)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="avahi"/> (For DNS/SD Backend),
-      <ulink url="http://www.bluez.org/">BlueZ</ulink>
-      (For ObexFTP Backend),
-      <xref linkend="fuse"/> (For gvfs-fuse-daemon),
+      <xref linkend="avahi"/>,
+      <ulink url="http://www.bluez.org/">BlueZ</ulink>,
+      <xref linkend="fuse"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
-      libbluray</ulink> (For accessing BluRay disks),
-      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>
-      (For accessing CD's),
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>
-      (For accessing GPhoto devices),
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>
-      (For mounting iPhone, iPad and other Apple devices) and
-      <xref linkend="samba3"/> (For mounting Samba shares).
+      libbluray</ulink>,
+      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>,
+      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink> and
+      <xref linkend="samba3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="avahi"/> (For DNS/SD Backend),
-      <ulink url="http://www.bluez.org/">BlueZ</ulink>
-      (For ObexFTP Backend),
-      <xref linkend="fuse"/> (For gvfs-fuse-daemon),
+      <xref linkend="avahi"/>,
+      <ulink url="http://www.bluez.org/">BlueZ</ulink>,
+      <xref linkend="fuse"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
-      libbluray</ulink> (For accessing BluRay disks),
-      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>
-      (For accessing CD's),
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>
-      (For accessing GPhoto devices),
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>
-      (For mounting iPhone, iPad and other Apple devices) and
-      <xref linkend="samba3"/> (For mounting Samba shares).
+      libbluray</ulink>,
+      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>,
+      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink> and
+      <xref linkend="samba3"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gvfs"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gvfs"/></para>
 @z
 
 @x
-    <title>Installation of gvfs</title>
+    <title>Installation of Gvfs</title>
 @y
-    <title>&InstallationOf1;gvfs&InstallationOf2;</title>
+    <title>&InstallationOf1;Gvfs&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gvfs</application> by running the following
-    commands:</para>
+      Install <application>Gvfs</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gvfs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Gvfs</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -215,7 +197,9 @@
           libgvfscommon.so and libgvfscommon-dnssd.so
         </seg>
         <seg>
-          /usr/include/gvfs-client, /usr/lib/gvfs and /usr/share/gvfs
+          /usr/include/gvfs-client,
+          /usr/lib/gvfs and
+          /usr/share/gvfs
         </seg>
 @y
         <seg>
@@ -223,12 +207,156 @@
           gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, 
           gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, 
           gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree 
-          /usr/lib/gvfs 配下に数種の実行モジュール
+          and several executables in /usr/lib/gvfs
         </seg>
         <seg>
           libgvfscommon.so, libgvfscommon-dnssd.so
         </seg>
         <seg>
-          /usr/include/gvfs-client, /usr/lib/gvfs, /usr/share/gvfs
+          /usr/include/gvfs-client,
+          /usr/lib/gvfs,
+          /usr/share/gvfs
         </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x gvfs-cat
+            prints a file to standard output using the virtual 
+            file system to access the file via a URI.
+@y
+            prints a file to standard output using the virtual 
+            file system to access the file via a URI.
+@z
+
+@x gvfs-info
+            prints information about files and directories using 
+            the virtual file system.
+@y
+            prints information about files and directories using 
+            the virtual file system.
+@z
+
+@x gvfs-less
+            executes <command>less</command> using the VFS as 
+            input preprocesor, so less can access any resource accessible 
+            by any of the <application>Gvfs</application> backends.
+@y
+            executes <command>less</command> using the VFS as 
+            input preprocesor, so less can access any resource accessible 
+            by any of the <application>Gvfs</application> backends.
+@z
+
+@x gvfs-ls
+            lists the content of directories using the virtual file 
+            system.
+@y
+            lists the content of directories using the virtual file 
+            system.
+@z
+
+@x gvfs-mkdir
+            makes a directory specified by an URI using 
+            the virtual file system.
+@y
+            makes a directory specified by an URI using 
+            the virtual file system.
+@z
+
+@x gvfs-monitor-dir
+            monitors the change content of a directory using 
+            the virtual file system.
+@y
+            monitors the change content of a directory using 
+            the virtual file system.
+@z
+
+@x gvfs-monitor-file
+            monitors the change of a file using the virtual file 
+            system.
+@y
+            monitors the change of a file using the virtual file 
+            system.
+@z
+
+@x gvfs-mount
+            mounts, unmounts and lists file systems using the 
+            virtual file system.
+@y
+            mounts, unmounts and lists file systems using the 
+            virtual file system.
+@z
+
+@x gvfs-move
+            moves a file from one URI location to another using 
+            the virtual file system.
+@y
+            moves a file from one URI location to another using 
+            the virtual file system.
+@z
+
+@x gvfs-open
+            opens an URI using the appropiate application.
+@y
+            opens an URI using the appropiate application.
+@z
+
+@x gvfs-rename
+            changes the name of a file or directory using the 
+            virtual file system.
+@y
+            changes the name of a file or directory using the 
+            virtual file system.
+@z
+
+@x gvfs-rm
+            removes a directory entry using the virtual file 
+            system via a URI.
+@y
+            removes a directory entry using the virtual file 
+            system via a URI.
+@z
+
+@x gvfs-save
+            saves information to a file using the virtual 
+            file system.
+@y
+            saves information to a file using the virtual 
+            file system.
+@z
+
+@x gvfs-trash
+            moves a directory entry to the trash using the 
+            virtual file system.
+@y
+            moves a directory entry to the trash using the 
+            virtual file system.
+@z
+
+@x gvfs-tree
+            lists contents of directories in a tree-like format 
+            using the virtual file system.
+@y
+            lists contents of directories in a tree-like format 
+            using the virtual file system.
+@z
+
+@x libgvfscommon.so
+            contains common API functions used in 
+            <application>Gvfs</application> programs.
+@y
+            contains common API functions used in 
+            <application>Gvfs</application> programs.
+@z
+
+@x libgvfscommon-dnssd.so
+            contains API functions used in
+            <application>Gvfs</application> DNS/SD backend.
+@y
+            contains API functions used in
+            <application>Gvfs</application> DNS/SD backend.
 @z

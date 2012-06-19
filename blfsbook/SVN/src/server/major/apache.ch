@@ -284,7 +284,8 @@
           htdigest, htpasswd, httpd, httxt2dbm, logresolve and rotatelogs
         </seg>
         <seg>
-          /etc/apache, /srv/www, /usr/include/apache and /var/log/apache.
+          /etc/apache, /srv/www, /usr/include/apache, /usr/libexec/apache,  
+          and /var/log/apache.
         </seg>
 @y
         <seg>
@@ -292,7 +293,8 @@
           htdigest, htpasswd, httpd, httxt2dbm, logresolve, rotatelogs
         </seg>
         <seg>
-          /etc/apache, /srv/www, /usr/include/apache, /var/log/apache.
+          /etc/apache, /srv/www, /usr/include/apache, /usr/libexec/apache,  
+          /var/log/apache.
         </seg>
 @z
 

@@ -124,7 +124,7 @@
       <xref linkend="fontconfig"/>,
       <xref linkend="libpng"/>,
       <xref linkend="x-window-system"/>,
-      <xref linkend="recode"/>,
+      <!-- <xref linkend="recode"/>, -->
       <xref linkend="icu"/>,
       <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
       <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>,
@@ -142,14 +142,14 @@
       <xref linkend="fontconfig"/>,
       <xref linkend="libpng"/>,
       <xref linkend="x-window-system"/>,
-      <xref linkend="recode"/>,
+      <!-- <xref linkend="recode"/>, -->
       <xref linkend="icu"/>,
       <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
       <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>,
       <ulink url="http://sourceforge.net/projects/zziplib/">ZZIPlib</ulink>,
       <ulink url="http://www.gnu.org/software/clisp/">CLISP</ulink>,
       <ulink url="http://www.lua.org/">Lua</ulink>,
-      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>,
+      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>, and
       <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=RenderingGraphite">
     Graphite</ulink></para>
 @z

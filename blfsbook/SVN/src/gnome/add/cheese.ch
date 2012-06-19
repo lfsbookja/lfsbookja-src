@@ -134,10 +134,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cheese"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cheese"/></para>
 @z
 
 @x
@@ -195,8 +193,9 @@
           libcheese.so and libcheese-gtk.so
         </seg>
         <seg>
-          /usr/include/cheese, /usr/share/cheese,
-          /usr/share/gtk-doc/html/cheese and 
+          /usr/include/cheese,
+          /usr/share/cheese,
+          /usr/share/gtk-doc/html/cheese and
           /usr/share/help/*/cheese
         </seg>
 @y
@@ -207,7 +206,8 @@
           libcheese.so, libcheese-gtk.so
         </seg>
         <seg>
-          /usr/include/cheese, /usr/share/cheese,
+          /usr/include/cheese,
+          /usr/share/cheese,
           /usr/share/gtk-doc/html/cheese,
           /usr/share/help/*/cheese
         </seg>
@@ -226,13 +226,13 @@
 @z
 
 @x libcheese.so
-            contains the <application>cheese</application> API functions.
+            contains the <application>Cheese</application> API functions.
 @y
-            <application>cheese</application> API 関数を提供します。
+            <application>Cheese</application> API 関数を提供します。
 @z
 
 @x libcheese-gtk.so
-            contains the <application>cheese</application> GTK+ Widgets.
+            contains the <application>cheese</application> GTK+ bindings.
 @y
-            <application>cheese</application> の GTK+ ウィジェットを提供します。
+            <application>cheese</application> の GTK+ バインディングを提供します。
 @z

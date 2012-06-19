@@ -81,7 +81,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>,
+      <xref linkend="glib2"/>,
       <xref linkend="python2"/>,
       <xref linkend="sdl"/>, and
       <xref linkend="x-window-system"/>
@@ -89,7 +89,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>,
+      <xref linkend="glib2"/>,
       <xref linkend="python2"/>,
       <xref linkend="sdl"/>,
       <xref linkend="x-window-system"/>

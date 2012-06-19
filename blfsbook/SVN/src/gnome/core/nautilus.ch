@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>Nautilus</application> package contains the
-    <application>GNOME</application> file manager.</para>
+      The <application>Nautilus</application> package contains the
+      <application>GNOME</application> file manager.
 @y
-    <para>
-    <application>Nautilus</application> パッケージは <application>GNOME</application> のファイルマネージャーを提供します。
-    </para>
+      <application>Nautilus</application> パッケージは <application>GNOME</application> のファイルマネージャーを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&nautilus-download-http;"/></para>
+          Download (HTTP): <ulink url="&nautilus-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&nautilus-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&nautilus-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&nautilus-download-ftp;"/></para>
+          Download (FTP): <ulink url="&nautilus-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&nautilus-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&nautilus-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &nautilus-md5sum;</para>
+          Download MD5 sum: &nautilus-md5sum;
 @y
-        <para>&Download; MD5 sum: &nautilus-md5sum;</para>
+          &Download; MD5 sum: &nautilus-md5sum;
 @z
 
 @x
-        <para>Download size: &nautilus-size;</para>
+          Download size: &nautilus-size;
 @y
-        <para>&DownloadSize;: &nautilus-size;</para>
+          &DownloadSize;: &nautilus-size;
 @z
 
 @x
-        <para>Estimated disk space required: &nautilus-buildsize;</para>
+          Estimated disk space required: &nautilus-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &nautilus-buildsize;</para>
+          &Estimateddiskspacerequired;: &nautilus-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &nautilus-time;</para>
+          Estimated build time: &nautilus-time;
 @y
-        <para>&Estimatedbuildtime;: &nautilus-time;</para>
+          &Estimatedbuildtime;: &nautilus-time;
 @z
 
 @x
@@ -135,40 +133,31 @@
 @z
 
 @x
-    <para>Install <application>Nautilus</application> by running the following
-    commands:</para>
+      Install <application>Nautilus</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Nautilus</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Nautilus</application> をビルドします。
 @z
 
 @x
-    <para>This package needs to be installed before its testsuite can run (or,
-    perhaps, you can run the tests if a previous version is already installed).
-    </para>
+      This package needs to be installed before its testsuite can run (or,
+      perhaps, you can run the tests if a previous version is already installed).
 @y
-    <para>
-    本パッケージはまずインストールしてからでないと、テストスイートを実行することはできません。
-    (あるいは本パッケージの古いバージョンが既にインストールされていれば、テスト実行することはできます。)
-    </para>
+      本パッケージはまずインストールしてからでないと、テストスイートを実行することはできません。
+      (あるいは本パッケージの古いバージョンが既にインストールされていれば、テスト実行することはできます。)
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you wish to run the testsuite, as a normal unprivileged user issue:
-    <command>make check</command>.</para>
+      If you wish to run the testsuite, as a normal unprivileged user issue:
+      <command>make check</command>.
 @y
-    <para>
-    テストスイートを実行する場合は、一般ユーザーになって <command>make check</command> を実行します。
-    </para>
+      テストスイートを実行する場合は、一般ユーザーになって <command>make check</command> を実行します。
 @z
 
 @x
@@ -178,24 +167,22 @@
 @z
 
 @x
-    <para><command>--libexecdir=/usr/lib/nautilus</command> : This ensures
-    that the <filename>nautilus-convert-metadata</filename> is
-    installed in a location consistent with the FHS, instead of in
-    <filename class="directory">/usr/libexec/</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/nautilus</parameter>: This ensures
+      that the <filename>nautilus-convert-metadata</filename> is
+      installed in a location consistent with the FHS, instead of in
+      <filename class="directory">/usr/libexec/</filename>.
 @y
-    <para><command>--libexecdir=/usr/lib/nautilus</command> :
-    これは <filename>nautilus-convert-metadata</filename> のインストール先を <filename
-    class="directory">/usr/libexec/</filename> ではなく、FHS に適合するディレクトリとします。
-    </para>
+      <command>--libexecdir=/usr/lib/nautilus</command> :
+      これは <filename>nautilus-convert-metadata</filename> のインストール先を <filename
+      class="directory">/usr/libexec/</filename> ではなく、FHS に適合するディレクトリとします。
 @z
 
 @x
-    <para><parameter>--disable-packagekit</parameter>: This parameter disables use
-    of PackageKit which isn't suitable for BLFS.</para>
+      <option>--disable-packagekit</option>: This parameter disables use
+      of PackageKit which isn't suitable for BLFS.
 @y
-    <para><parameter>--disable-packagekit</parameter>:
-    本パラメーターは BLFS には含めていない PackageKit を利用しないようにします。
-    </para>
+      <option>--disable-packagekit</option>:
+      本パラメーターは BLFS には含めていない PackageKit を利用しないようにします。
 @z
 
 @x
@@ -222,7 +209,8 @@
           libnautilus-extension.so
         </seg>
         <seg>
-          /usr/include/nautilus, /usr/lib/nautilus,
+          /usr/include/nautilus,
+          /usr/lib/nautilus,
           /usr/share/nautilus and
           /usr/share/gtk-doc/html/libnautilus-extension
         </seg>
@@ -234,7 +222,8 @@
           libnautilus-extension.so
         </seg>
         <seg>
-          /usr/include/nautilus, /usr/lib/nautilus,
+          /usr/include/nautilus,
+          /usr/lib/nautilus,
           /usr/share/nautilus,
           /usr/share/gtk-doc/html/libnautilus-extension
         </seg>
@@ -247,17 +236,13 @@
 @z
 
 @x nautilus
-          <para>is the <application>GNOME</application> file manager.</para>
+            is the <application>GNOME</application> file manager.
 @y
-          <para>
-          <application>GNOME</application> ファイルマネージャー。
-          </para>
+            <application>GNOME</application> ファイルマネージャー。
 @z
 
 @x libnautilus-extension.so
-          <para>supplies the functions needed by the file manager extensions.</para>
+            supplies the functions needed by the file manager extensions.
 @y
-          <para>
-          ファイルマネージャー拡張に必要となる関数を提供します。
-          </para>
+            ファイルマネージャー拡張に必要となる関数を提供します。
 @z

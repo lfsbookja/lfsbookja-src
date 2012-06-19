@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>libnice</application> package is an implementation of
-    the IETF's draft Interactice Connectivity Establishment standard (ICE). It
-    provides <application>GLib</application>-based library,
-    <application>libnice</application> and <application>GStreamer</application>
-    elements.</para>
+      The <application>libnice</application> package is an implementation of
+      the IETF's draft Interactice Connectivity Establishment standard (ICE). It
+      provides <application>GLib</application>-based library,
+      <application>libnice</application> and <application>GStreamer</application>
+      elements.
 @y
-    <para>
-    <application>libnice</application> パッケージは IETF による ICE (Interactice Connectivity Establishment) ドラフトに対する実装ライブラリであり、<application>GLib</application> ベースのライブラリ <application>libnice</application>ライブラリ, <application>GStreamer</application> ライブラリを提供します。
-    </para>
+      <application>libnice</application> パッケージは IETF による ICE (Interactice Connectivity Establishment) ドラフトに対する実装ライブラリであり、<application>GLib</application> ベースのライブラリ <application>libnice</application>ライブラリ, <application>GStreamer</application> ライブラリを提供します。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libnice-download-http;"/></para>
+          Download (HTTP): <ulink url="&libnice-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libnice-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libnice-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libnice-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libnice-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libnice-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libnice-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libnice-md5sum;</para>
+          Download MD5 sum: &libnice-md5sum;
 @y
-        <para>&Download; MD5 sum: &libnice-md5sum;</para>
+          &Download; MD5 sum: &libnice-md5sum;
 @z
 
 @x
-        <para>Download size: &libnice-size;</para>
+          Download size: &libnice-size;
 @y
-        <para>&DownloadSize;: &libnice-size;</para>
+          &DownloadSize;: &libnice-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libnice-buildsize;</para>
+          Estimated disk space required: &libnice-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libnice-buildsize;</para>
+          &Estimateddiskspacerequired;: &libnice-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libnice-time;</para>
+          Estimated build time: &libnice-time;
 @y
-        <para>&Estimatedbuildtime;: &libnice-time;</para>
+          &Estimatedbuildtime;: &libnice-time;
 @z
 
 @x
@@ -82,12 +80,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>
     </para>
 @z
 
@@ -119,10 +117,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libnice"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libnice"/></para>
 @z
 
 @x
@@ -132,29 +128,23 @@
 @z
 
 @x
-    <para>Install <application>libnice</application> by running the following
-    commands:</para>
+      Install <application>libnice</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libnice</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libnice</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -187,7 +177,8 @@
           libgstnice.so and libnice.so
         </seg>
         <seg>
-          /usr/include/nice, /usr/include/stun and
+          /usr/include/nice,
+          /usr/include/stun and
           /usr/share/gtk-doc/html/libnice
         </seg>
 @y
@@ -198,7 +189,8 @@
           libgstnice.so, libnice.so
         </seg>
         <seg>
-          /usr/include/nice, /usr/include/stun,
+          /usr/include/nice,
+          /usr/include/stun,
           /usr/share/gtk-doc/html/libnice
         </seg>
 @z
@@ -209,19 +201,26 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libgstnice.so
-          <para>is the <application>gstreamer</application> module.</para>
+@x stunbdc
+            performs Session Traversal for NAT (STUN) Binding Discovery.
 @y
-          <para>
-          <application>gstreamer</application> モジュール。
-          </para>
+            performs Session Traversal for NAT (STUN) Binding Discovery.
+@z
+
+@x stund
+            is a Session Traversal for NAT (STUN) daemon.
+@y
+            is a Session Traversal for NAT (STUN) daemon.
+@z
+
+@x libgstnice.so
+            is the <application>GStreamer</application> module.
+@y
+            <application>GStreamer</application> モジュール。
 @z
 
 @x libnice.so
-          <para>contains the <application>libnice</application> API
-          functions.</para>
+            contains the <application>libnice</application> API functions.
 @y
-          <para>
-          <application>libnice</application> API 関数を提供します。
-          </para>
+            <application>libnice</application> API 関数を提供します。
 @z

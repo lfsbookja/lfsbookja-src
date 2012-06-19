@@ -85,17 +85,17 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="glib2"/>,
       <xref linkend="iso-codes"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="pkgconfig"/> and
+      <xref linkend="libxml2"/>, and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="glib2"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="pkgconfig"/>,
       <xref linkend="xorg7-lib"/>
     </para>
 @z

@@ -20,53 +20,45 @@
 @z
 
 @x
-    <para>The <application>GnuTLS</application> package contains a library and
-    userspace tools which provide a secure layer over a reliable transport
-    layer. Currently the <application>GnuTLS</application> library implements
-    the proposed standards by the IETF's TLS working group. Quoting from the
-    TLS protocol specification:</para>
+      The <application>GnuTLS</application> package contains libraries and
+      userspace tools which provide a secure layer over a reliable transport
+      layer. Currently the <application>GnuTLS</application> library implements
+      the proposed standards by the IETF's TLS working group. Quoting from the
+      TLS protocol specification:
 @y
-    <para>
-    
-    The <application>GnuTLS</application> package contains a library and
-    userspace tools which provide a secure layer over a reliable transport
-    layer. Currently the <application>GnuTLS</application> library implements
-    the proposed standards by the IETF's TLS working group. Quoting from the
-    TLS protocol specification:
-    </para>
+      The <application>GnuTLS</application> package contains libraries and
+      userspace tools which provide a secure layer over a reliable transport
+      layer. Currently the <application>GnuTLS</application> library implements
+      the proposed standards by the IETF's TLS working group. Quoting from the
+      TLS protocol specification:
 @z
 
 @x
-    <para><quote>The TLS protocol provides communications privacy over the
-    Internet. The protocol allows client/server applications to communicate in
-    a way that is designed to prevent eavesdropping, tampering, or message
-    forgery.</quote></para>
+      <quote>The TLS protocol provides communications privacy over the
+      Internet. The protocol allows client/server applications to communicate in
+      a way that is designed to prevent eavesdropping, tampering, or message
+      forgery.</quote>
 @y
-    <para>
-    <quote>TLS プロトコルは、インターネット上にて通信プライバシーを提供します。
-    
-    The protocol allows client/server applications to communicate in
-    a way that is designed to prevent eavesdropping, tampering, or message
-    forgery.</quote>
-    </para>
+      <quote>The TLS protocol provides communications privacy over the
+      Internet. The protocol allows client/server applications to communicate in
+      a way that is designed to prevent eavesdropping, tampering, or message
+      forgery.</quote>
 @z
 
 @x
-    <para><application>GnuTLS</application> provides support for TLS 1.1, TLS
-    1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
-    record size. Additionally, the library supports authentication using the
-    SRP protocol, X.509 certificates and OpenPGP keys, along with support for
-    the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
-    extension and X.509 and OpenPGP certificate handling.</para>
+      <application>GnuTLS</application> provides support for TLS 1.1, TLS
+      1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
+      record size. Additionally, the library supports authentication using the
+      SRP protocol, X.509 certificates and OpenPGP keys, along with support for
+      the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
+      extension and X.509 and OpenPGP certificate handling.
 @y
-    <para>
-    <application>GnuTLS</application> provides support for TLS 1.1, TLS
-    1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
-    record size. Additionally, the library supports authentication using the
-    SRP protocol, X.509 certificates and OpenPGP keys, along with support for
-    the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
-    extension and X.509 and OpenPGP certificate handling.
-    </para>
+      <application>GnuTLS</application> provides support for TLS 1.1, TLS
+      1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
+      record size. Additionally, the library supports authentication using the
+      SRP protocol, X.509 certificates and OpenPGP keys, along with support for
+      the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
+      extension and X.509 and OpenPGP certificate handling.
 @z
 
 @x
@@ -76,39 +68,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnutls-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnutls-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnutls-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnutls-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnutls-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnutls-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnutls-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnutls-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnutls-md5sum;</para>
+          Download MD5 sum: &gnutls-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnutls-md5sum;</para>
+          &Download; MD5 sum: &gnutls-md5sum;
 @z
 
 @x
-        <para>Download size: &gnutls-size;</para>
+          Download size: &gnutls-size;
 @y
-        <para>&DownloadSize;: &gnutls-size;</para>
+          &DownloadSize;: &gnutls-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnutls-buildsize;</para>
+          Estimated disk space required: &gnutls-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnutls-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnutls-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnutls-time;</para>
+          Estimated build time: &gnutls-time;
 @y
-        <para>&Estimatedbuildtime;: &gnutls-time;</para>
+          &Estimatedbuildtime;: &gnutls-time;
 @z
 
 @x
@@ -119,10 +111,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="nettle"/></para>
+    <para role="required">
+      <xref linkend="nettle"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="nettle"/></para>
+    <para role="required">
+      <xref linkend="nettle"/>
+    </para>
 @z
 
 @x
@@ -133,7 +129,8 @@
       <xref linkend="libidn"/>,
       <xref linkend="libtasn1"/>,
       <xref linkend="p11-kit"/> and
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)</para>
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
@@ -142,25 +139,22 @@
       <xref linkend="libidn"/>,
       <xref linkend="libtasn1"/>,
       <xref linkend="p11-kit"/>,
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて用いられる)</para>
-@z
-
-@x
-    <para>Note that if you do not install <xref linkend="libtasn1"/>, an older
-    version shipped in the <application>GnuTLS</application> tarball will be
-    used instead.</para>
-@y
-    <para>
-    <xref linkend="libtasn1"/> をインストールしない場合、<application>GnuTLS</application> の tarball 内に含まれる旧バージョンが利用されます。
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて用いられる)
     </para>
 @z
 
 @x
+      Note that if you do not install <xref linkend="libtasn1"/>, an older
+      version shipped in the <application>GnuTLS</application> tarball will be
+      used instead.
+@y
+      <xref linkend="libtasn1"/> をインストールしない場合、<application>GnuTLS</application> の tarball 内に含まれる旧バージョンが利用されます。
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnutls"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnutls"/></para>
 @z
 
 @x
@@ -170,45 +164,36 @@
 @z
 
 @x
-    <para>Install <application>GnuTLS</application> by running the
-    following commands:</para>
+      Install <application>GnuTLS</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GnuTLS</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GnuTLS</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you did not pass the <option>--enable-gtk-doc</option> parameter
-    to the <command>configure</command> script, install the API documentation
-    to the <filename
-    class='directory'>/usr/share/gtk-doc/html/gnutls</filename> directory using
-    the following command as the <systemitem class="username">root</systemitem>
-    user:</para>
+      If you did not pass the <option>--enable-gtk-doc</option> parameter
+      to the <command>configure</command> script, install the API documentation
+      to the <filename class='directory'>/usr/share/gtk-doc/html/gnutls</filename> 
+      directory using the following command as the 
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
     <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定しなかった場合は、<systemitem
     class="username">root</systemitem> ユーザーになって以下のコマンドを実行して API ドキュメントをインストールします。
     ドキュメントは <filename
     class='directory'>/usr/share/gtk-doc/html/gnutls</filename> ディレクトリにインストールされます。
-    </para>
 @z
 
 @x
@@ -234,19 +219,31 @@
 @z
 
 @x
-        <seg>certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-        ocsptool, p11tool, psktool, and srptool</seg>
-        <seg>libgnutls.{so,a}, libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}</seg>
-        <seg>/usr/include/gnutls,
-        /usr/share/doc/gnutls-&gnutls-version;, and
-        /usr/share/gtk-doc/html/gnutls</seg>
+        <seg>
+          certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
+          ocsptool, p11tool, psktool, and srptool
+        </seg>
+        <seg>
+          libgnutls.{so,a}, libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}
+        </seg>
+        <seg>
+          /usr/include/gnutls,
+          /usr/share/doc/gnutls-&gnutls-version; and
+          /usr/share/gtk-doc/html/gnutls
+        </seg>
 @y
-        <seg>certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-        ocsptool, p11tool, psktool, srptool</seg>
-        <seg>libgnutls.{so,a}, libgnutls-openssl.{so,a}, libgnutlsxx.{so,a}</seg>
-        <seg>/usr/include/gnutls,
-        /usr/share/doc/gnutls-&gnutls-version;,
-        /usr/share/gtk-doc/html/gnutls</seg>
+        <seg>
+          certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
+          ocsptool, p11tool, psktool, srptool
+        </seg>
+        <seg>
+          libgnutls.{so,a}, libgnutls-openssl.{so,a}, libgnutlsxx.{so,a}
+        </seg>
+        <seg>
+          /usr/include/gnutls,
+          /usr/share/doc/gnutls-&gnutls-version;,
+          /usr/share/gtk-doc/html/gnutls
+        </seg>
 @z
 
 @x
@@ -256,60 +253,53 @@
 @z
 
 @x certtool
-          <para>is used to generate X.509 certificates, certificate requests,
-          and private keys.</para>
+            is used to generate X.509 certificates, certificate requests,
+            and private keys.
 @y
-          <para>
-          
-          is used to generate X.509 certificates, certificate requests,
-          and private keys.
-          </para>
+            is used to generate X.509 certificates, certificate requests,
+            and private keys.
 @z
 
 @x gnutls-cli
-          <para>is a simple client program to set up a TLS connection to some
-          other computer.</para>
+            is a simple client program to set up a TLS connection to some
+            other computer.
 @y
-          <para>is a simple client program to set up a TLS connection to some
-          other computer.</para>
+            is a simple client program to set up a TLS connection to some
+            other computer.
 @z
 
 @x gnutls-cli-debug
-          <para>is a simple client program to set up a TLS connection to some
-          other computer and produces very verbose progress results.</para>
+            is a simple client program to set up a TLS connection to some
+            other computer and produces very verbose progress results.
 @y
-          <para>is a simple client program to set up a TLS connection to some
-          other computer and produces very verbose progress results.</para>
+            is a simple client program to set up a TLS connection to some
+            other computer and produces very verbose progress results.
 @z
 
 @x gnutls-serv
-          <para>is a simple server program that listens to incoming TLS
-          connections.</para>
+            is a simple server program that listens to incoming TLS
+            connections.
 @y
-          <para>is a simple server program that listens to incoming TLS
-          connections.</para>
+            is a simple server program that listens to incoming TLS
+            connections.
 @z
 
 @x psktool
-          <para>is a simple program that generates random keys for use with
-          TLS-PSK.</para>
+            is a simple program that generates random keys for use with TLS-PSK.
 @y
-          <para>is a simple program that generates random keys for use with
-          TLS-PSK.</para>
+            is a simple program that generates random keys for use with TLS-PSK.
 @z
 
 @x srptool
-          <para>is a simple program that emulates the programs in the Stanford
-          SRP (Secure Remote Password) libraries using GNU TLS.</para>
+            is a simple program that emulates the programs in the Stanford
+            SRP (Secure Remote Password) libraries using GnuTLS.
 @y
-          <para>is a simple program that emulates the programs in the Stanford
-          SRP (Secure Remote Password) libraries using GNU TLS.</para>
+            is a simple program that emulates the programs in the Stanford
+            SRP (Secure Remote Password) libraries using GnuTLS.
 @z
 
 @x libgnutls.{so,a}
-          <para>contains the core API functions and X.509 certificate
-          API functions.</para>
+            contains the core API functions and X.509 certificate API functions.
 @y
-          <para>contains the core API functions and X.509 certificate
-          API functions.</para>
+            contains the core API functions and X.509 certificate API functions.
 @z

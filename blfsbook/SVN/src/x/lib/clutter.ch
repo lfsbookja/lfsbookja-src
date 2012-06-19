@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>The <application>Clutter</application> package is an open source
-    software library for creating fast, visually rich and animated graphical
-    user interfaces.</para>
+      The <application>Clutter</application> package is an open source
+      software library for creating fast, visually rich and animated graphical
+      user interfaces.
 @y
-    <para>
-    <application>clutter</application> パッケージは、高速で視覚性に富んだ、あるいはアニメーション機能を有したグラフィカルユーザーインターフェースを生成するオープンソースソフトウェアライブラリです。
-    </para>
+      <application>Clutter</application> パッケージは、高速で視覚性に富んだ、あるいはアニメーション機能を有したグラフィカルユーザーインターフェースを生成するオープンソースソフトウェアライブラリです。
 @z
 
 @x
@@ -36,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&clutter-download-http;"/></para>
+          Download (HTTP): <ulink url="&clutter-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&clutter-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&clutter-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&clutter-download-ftp;"/></para>
+          Download (FTP): <ulink url="&clutter-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&clutter-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&clutter-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &clutter-md5sum;</para>
+          Download MD5 sum: &clutter-md5sum;
 @y
-        <para>&Download; MD5 sum: &clutter-md5sum;</para>
+          &Download; MD5 sum: &clutter-md5sum;
 @z
 
 @x
-        <para>Download size: &clutter-size;</para>
+          Download size: &clutter-size;
 @y
-        <para>&DownloadSize;: &clutter-size;</para>
+          &DownloadSize;: &clutter-size;
 @z
 
 @x
-        <para>Estimated disk space required: &clutter-buildsize;</para>
+          Estimated disk space required: &clutter-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &clutter-buildsize;</para>
+          &Estimateddiskspacerequired;: &clutter-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &clutter-time;</para>
+          Estimated build time: &clutter-time;
 @y
-        <para>&Estimatedbuildtime;: &clutter-time;</para>
+          &Estimatedbuildtime;: &clutter-time;
 @z
 
 @x
@@ -118,8 +116,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (to build the application developers
-    manual)</bridgehead>
+    <bridgehead renderas="sect4">
+      Optional (to build the application developers manual)
+    </bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
       <xref linkend="jadetex"/>,
@@ -129,12 +128,13 @@
       <xref linkend="w3m"/>
      </para>
 @y
-    <bridgehead renderas="sect4">&Optional;
-    (アプリケーション開発マニュアルの構築時に必要)</bridgehead>
+    <bridgehead renderas="sect4">
+      &Optional; (アプリケーション開発マニュアルの構築時に必要)
+    </bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
       <xref linkend="jadetex"/>,
-      <xref linkend="xmlto"/>, 以下のいずれか: 
+      <xref linkend="xmlto"/> と以下のいずれか: 
       <xref linkend="Links"/>,
       <xref linkend="lynx"/>,
       <xref linkend="w3m"/>
@@ -143,10 +143,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/clutter"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/clutter"/></para>
 @z
 
 @x
@@ -156,30 +154,24 @@
 @z
 
 @x
-    <para>Install <application>clutter</application> by running the following
-    commands:</para>
+      Install <application>clutter</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>clutter</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>clutter</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command> (you must be
-    in an xterm or similar to do this, because it launches some windows).</para>
+      To test the results, issue: <command>make check</command> (you must be
+      in an xterm or similar to do this, because it launches some windows).
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    (この際にはウィンドウ起動が行われるため、xterm などから実行することが必要です。)
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      (この際にはウィンドウ起動が行われるため、xterm などから実行することが必要です。)
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -189,24 +181,19 @@
 @z
 
 @x
-    <para><option>--enable-manual</option>: Use this parameter if
-    <application>DocBook-utils</application>, <application>xmlto</application>,
-    <application>JadeTeX</application>, and either
-    <application>Links</application>, <application>Lynx</application>, or
-    <application>W3m</application> are installed and you wish to build the
-    application developers manual.</para>
+      <option>--enable-manual</option>: Use this parameter if
+      <application>DocBook-utils</application>, <application>xmlto</application>,
+      <application>JadeTeX</application>, and either
+      <application>Links</application>, <application>Lynx</application>, or
+      <application>W3m</application> are installed and you wish to build the
+      application developers manual.
 @y
-    <para>
-    <option>--enable-manual</option>:
-    このオプションは、アプリケーション開発マニュアルをビルドしたい場合に指定します。
-    その場合には以下がインストールされていることが必要です:
-    <application>DocBook-utils</application>, 
-    <application>xmlto</application>,
-    <application>JadeTeX</application>, 
-    さらに以下のいずれか：
-    <application>Links</application>,
-    <application>Lynx</application>,
-    <application>W3m</application></para>
+      <option>--enable-manual</option>: Use this parameter if
+      <application>DocBook-utils</application>, <application>xmlto</application>,
+      <application>JadeTeX</application>, and either
+      <application>Links</application>, <application>Lynx</application>, or
+      <application>W3m</application> are installed and you wish to build the
+      application developers manual.
 @z
 
 @x
@@ -248,9 +235,7 @@
 @z
 
 @x libclutter-glx-1.0.so
-          <para>contains the clutter API functions.</para>
+            contains the <application>Clutter</application> API functions.
 @y
-          <para>
-          clutter の API 関数を提供します。
-          </para>
+            <application>Clutter</application> の API 関数を提供します。
 @z

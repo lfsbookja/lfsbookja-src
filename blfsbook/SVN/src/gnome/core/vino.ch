@@ -20,13 +20,13 @@
 @z
 
 @x
-    <para>The <application>Vino</application> package is a VNC server for
-    <application>GNOME</application>. VNC is a protocol that allows remote
-    display of a user's desktop.</para>
+      The <application>Vino</application> package is a VNC server for
+      <application>GNOME</application>. VNC is a protocol that allows remote
+      display of a user's desktop.
 @y
-    <para>The <application>Vino</application> package is a VNC server for
-    <application>GNOME</application>. VNC is a protocol that allows remote
-    display of a user's desktop.</para>
+      The <application>Vino</application> package is a VNC server for
+      <application>GNOME</application>. VNC is a protocol that allows remote
+      display of a user's desktop.
 @z
 
 @x
@@ -36,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&vino-download-http;"/></para>
+          Download (HTTP): <ulink url="&vino-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&vino-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&vino-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&vino-download-ftp;"/></para>
+          Download (FTP): <ulink url="&vino-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&vino-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&vino-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &vino-md5sum;</para>
+          Download MD5 sum: &vino-md5sum;
 @y
-        <para>&Download; MD5 sum: &vino-md5sum;</para>
+          &Download; MD5 sum: &vino-md5sum;
 @z
 
 @x
-        <para>Download size: &vino-size;</para>
+          Download size: &vino-size;
 @y
-        <para>&DownloadSize;: &vino-size;</para>
+          &DownloadSize;: &vino-size;
 @z
 
 @x
-        <para>Estimated disk space required: &vino-buildsize;</para>
+          Estimated disk space required: &vino-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &vino-buildsize;</para>
+          &Estimateddiskspacerequired;: &vino-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &vino-time;</para>
+          Estimated build time: &vino-time;
 @y
-        <para>&Estimatedbuildtime;: &vino-time;</para>
+          &Estimatedbuildtime;: &vino-time;
 @z
 
 @x
@@ -140,26 +140,22 @@
 @z
 
 @x
-    <para>Install <application>Vino</application> by running the following
-    commands:</para>
+      Install <application>Vino</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Vino</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Vino</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -169,17 +165,17 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/vino</parameter>: This
-    parameter is used so that the <application>vino</application> internal
-    support programs are installed in the preferred location of <filename
-    class='directory'>/usr/lib/vino</filename> instead of <filename
-    class='directory'>/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/vino</parameter>: This
+      parameter is used so that the <application>vino</application> internal
+      support programs are installed in the preferred location of <filename
+      class="directory">/usr/lib/vino</filename> instead of <filename
+      class="directory">/usr/libexec</filename>.
 @y
-    <para><parameter>--libexecdir=/usr/lib/vino</parameter>: This
-    parameter is used so that the <application>vino</application> internal
-    support programs are installed in the preferred location of <filename
-    class='directory'>/usr/lib/vino</filename> instead of <filename
-    class='directory'>/usr/libexec</filename>.</para>
+      <parameter>--libexecdir=/usr/lib/vino</parameter>: This
+      parameter is used so that the <application>vino</application> internal
+      support programs are installed in the preferred location of <filename
+      class="directory">/usr/lib/vino</filename> instead of <filename
+      class="directory">/usr/libexec</filename>.
 @z
 
 @x
@@ -201,14 +197,16 @@
           vino-passwd, vino-preferences and vino-server
         </seg>
         <seg>
-          /usr/lib/vino and /usr/share/vino
+          /usr/lib/vino and
+          /usr/share/vino
         </seg>
 @y
         <seg>
           vino-passwd, vino-preferences, vino-server
         </seg>
         <seg>
-          /usr/lib/vino, /usr/share/vino
+          /usr/lib/vino,
+          /usr/share/vino
         </seg>
 @z
 
@@ -219,23 +217,21 @@
 @z
 
 @x vino-passwd
-          <para>is used to update Vino password.</para>
+            is used to update <application>Vino</application> password.
 @y
-          <para>is used to update Vino password.</para>
+            is used to update <application>Vino</application> password.
 @z
 
 @x vino-preferences
-          <para>is a GUI tool used to configure the machine for
-          VNC Access.</para>
+            is a GUI tool used to configure the machine for
+            VNC Access.
 @y
-          <para>is a GUI tool used to configure the machine for
-          VNC Access.</para>
+            is a GUI tool used to configure the machine for
+            VNC Access.
 @z
 
 @x vino-server
-          <para>is the <application>Vino</application> VNC server.</para>
+            is the <application>Vino</application> VNC server.
 @y
-          <para>
-          <application>Vino</application> VNC サーバー
-          </para>
+            <application>Vino</application> VNC サーバー
 @z

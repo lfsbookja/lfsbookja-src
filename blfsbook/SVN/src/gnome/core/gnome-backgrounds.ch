@@ -20,22 +20,20 @@
 @z
 
 @x
-    <title>Introduction to gnome-backgrounds</title>
+    <title>Introduction to GNOME Backgrounds</title>
 @y
-    <title>&IntroductionTo1;gnome-backgrounds&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNOME Backgrounds&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gnome-backgrounds</application> package contains
-    a collection of graphics files which can be used as backgrounds in the
-    GNOME desktop environment. Additionally, the package creates the proper
-    framework and directory structure so that you can add your own files to
-    the collection.</para>
+      The <application>GNOME Backgrounds</application> package contains
+      a collection of graphics files which can be used as backgrounds in the
+      <application>GNOME</application> Desktop environment. Additionally, 
+      the package creates the proper framework and directory structure so 
+      that you can add your own files to the collection.
 @y
-    <para>
-    <application>gnome-backgrounds</application> パッケージは、GNOME デスクトップ環境において背景イメージ (backgrounds) として利用可能なグラフィックファイルを提供します。
+    <application>GNOME Backgrounds</application> パッケージは、GNOME デスクトップ環境において背景イメージ (backgrounds) として利用可能なグラフィックファイルを提供します。
     また独自のファイルを追加するためのフレームワークやディレクトリ構造を生成します。
-    </para>
 @z
 
 @x
@@ -45,45 +43,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-backgrounds-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-backgrounds-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-backgrounds-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-backgrounds-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-backgrounds-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-backgrounds-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-backgrounds-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-backgrounds-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-backgrounds-md5sum;</para>
+          Download MD5 sum: &gnome-backgrounds-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-backgrounds-md5sum;</para>
+          &Download; MD5 sum: &gnome-backgrounds-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-backgrounds-size;</para>
+          Download size: &gnome-backgrounds-size;
 @y
-        <para>&DownloadSize;: &gnome-backgrounds-size;</para>
+          &DownloadSize;: &gnome-backgrounds-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-backgrounds-buildsize;</para>
+          Estimated disk space required: &gnome-backgrounds-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-backgrounds-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-backgrounds-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-backgrounds-time;</para>
+          Estimated build time: &gnome-backgrounds-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-backgrounds-time;</para>
+          &Estimatedbuildtime;: &gnome-backgrounds-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gnome-backgrounds Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GNOME Backgrounds Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gnome-backgrounds&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Backgrounds&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -100,45 +98,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-backgrounds"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-backgrounds"/></para>
 @z
 
 @x
-    <title>Installation of gnome-backgrounds</title>
+    <title>Installation of GNOME Backgrounds</title>
 @y
-    <title>&InstallationOf1;gnome-backgrounds&InstallationOf2;</title>
+    <title>&InstallationOf1;GNOME Backgrounds&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gnome-backgrounds</application> by running the
-    following commands:</para>
+      Install <application>GNOME Backgrounds</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gnome-backgrounds</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Backgrounds</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -170,9 +156,8 @@
 @z
 
 @x GNOME backgrounds
-          <para>are backgrounds for the GNOME desktop.</para>
+            are background images for the 
+            <application>GNOME</application> Desktop.
 @y
-          <para>
-          GNOME デスクトップの背景イメージ (backgrounds) です。
-          </para>
+            <application>GNOME</application> デスクトップの背景イメージ (backgrounds) です。
 @z

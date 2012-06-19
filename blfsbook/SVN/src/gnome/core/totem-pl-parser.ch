@@ -14,19 +14,19 @@
 @z
 
 @x
-    <title>Introduction to totem-pl-parser</title>
+    <title>Introduction to Totem PL Parser</title>
 @y
-    <title>&IntroductionTo1;totem-pl-parser&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Totem PL Parser&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>totem-pl-parser</application> package is a simple
-    GObject-based library to parse a host of playlist formats, as well as save
-    those.</para>
+      The <application>Totem PL Parser</application> package contains a simple
+      GObject-based library used to parse a host of playlist formats, as well
+      as save those.
 @y
-    <para>The <application>totem-pl-parser</application> package is a simple
-    GObject-based library to parse a host of playlist formats, as well as save
-    those.</para>
+      The <application>Totem PL Parser</application> package contains a simple
+      GObject-based library used to parse a host of playlist formats, as well
+      as save those.
 @z
 
 @x
@@ -36,45 +36,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&totem-pl-parser-download-http;"/></para>
+          Download (HTTP): <ulink url="&totem-pl-parser-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&totem-pl-parser-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&totem-pl-parser-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&totem-pl-parser-download-ftp;"/></para>
+          Download (FTP): <ulink url="&totem-pl-parser-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&totem-pl-parser-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&totem-pl-parser-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &totem-pl-parser-md5sum;</para>
+          Download MD5 sum: &totem-pl-parser-md5sum;
 @y
-        <para>&Download; MD5 sum: &totem-pl-parser-md5sum;</para>
+          &Download; MD5 sum: &totem-pl-parser-md5sum;
 @z
 
 @x
-        <para>Download size: &totem-pl-parser-size;</para>
+          Download size: &totem-pl-parser-size;
 @y
-        <para>&DownloadSize;: &totem-pl-parser-size;</para>
+          &DownloadSize;: &totem-pl-parser-size;
 @z
 
 @x
-        <para>Estimated disk space required: &totem-pl-parser-buildsize;</para>
+          Estimated disk space required: &totem-pl-parser-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &totem-pl-parser-buildsize;</para>
+          &Estimateddiskspacerequired;: &totem-pl-parser-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &totem-pl-parser-time;</para>
+          Estimated build time: &totem-pl-parser-time;
 @y
-        <para>&Estimatedbuildtime;: &totem-pl-parser-time;</para>
+          &Estimatedbuildtime;: &totem-pl-parser-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">totem-pl-parser Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Totem PL Parser Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;totem-pl-parser&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Totem PL Parser&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -111,7 +111,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libgcrypt"/> and
-      <ulink url="http://sourceforge.net/projects/quvi">quvi</ulink>
+      <ulink url="http://sourceforge.net/projects/quvi">Quvi</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -119,48 +119,41 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libgcrypt"/>,
-      <ulink url="http://sourceforge.net/projects/quvi">quvi</ulink>
+      <ulink url="http://sourceforge.net/projects/quvi">Quvi</ulink>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/totem-pl-parser"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/totem-pl-parser"/></para>
 @z
 
 @x
-    <title>Installation of totem-pl-parser</title>
+    <title>Installation of Totem PL Parser</title>
 @y
-    <title>&InstallationOf1;totem-pl-parser&InstallationOf2;</title>
+    <title>&InstallationOf1;Totem PL Parser&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>totem-pl-parser</application> by running the following
-    commands:</para>
+      Install <application>Totem PL Parser</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>totem-pl-parser</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>totem-pl-parser</application> をビルドします。
 @z
 
 @x
-    <para>A testsuite exists, but the tests require internet access and several
-    will fail.</para>
+      To test the results, issue: <command>make check</command>. You will need
+      an active internet connection in order to sucessfully complete all tests.
 @y
-    <para>
-    テストスイートが用意されていますが、テスト実施時にはインターネットアクセスを必要とし、中にはテストに失敗するものがあります。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      すべてのテストを成功させるためには、インターネット接続環境が必要です。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -208,17 +201,15 @@
 @z
 
 @x libtotem-plparser.{so,a}
-          <para>is a <application>Totem</application> Playlist Parser
-          library.</para>
+            is a <application>Totem</application> Playlist Parser library.
 @y
-          <para>is a <application>Totem</application> Playlist Parser
-          library.</para>
+            is a <application>Totem</application> Playlist Parser library.
 @z
 
 @x libtotem-plparser-mini.{so,a}
-          <para>is a <application>Totem</application> Playlist Parser library,
-          mini version.</para>
+            is a <application>Totem</application> Playlist Parser library,
+            mini version.
 @y
-          <para>is a <application>Totem</application> Playlist Parser library,
-          mini version.</para>
+            is a <application>Totem</application> Playlist Parser library,
+            mini version.
 @z

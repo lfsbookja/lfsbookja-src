@@ -14,9 +14,9 @@
 @z
 
 @x
-    <primary sortas="a-xorg7-server">Xorg Server</primary>
+    <primary sortas="a-xorg-server">Xorg Server</primary>
 @y
-    <primary sortas="a-Xorg-サーバー">Xorg サーバー</primary>
+    <primary sortas="a-xorg-サーバー">Xorg サーバー</primary>
 @z
 
 @x
@@ -184,29 +184,6 @@
 @z
 
 @x
-    <para><option>--disable-glx</option>: Disable building of the GLX
-    extension.  This parameter is required if building without
-    <application>Mesa</application>.</para>
-@y
-    <para>
-    <option>--disable-glx</option>:
-    GLX 拡張 (GLX extension) を利用しないようにします。
-    このパラメーターは <application>Mesa</application> がインストールされていない場合に必要となります。
-    </para>
-@z
-
-@x
-    <para><option>--disable-dri</option>: Disable building of the DRI
-    extension.  This parameter is required if building without
-    <application>Mesa</application>.</para>
-@y
-    <para><option>--disable-dri</option>:
-    DRI 拡張 (DRI extension) を利用しないようにします。
-    このパラメーターは <application>Mesa</application> がインストールされていない場合に必要となります。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -228,14 +205,13 @@
         <seg>None</seg>
         <seg>/var/lib/xkb and the following subdirectories of
         <envar>$XORG_PREFIX</envar>/: include/xorg, include/X11/pixmaps,
-        lib/X11/{getconfig,modules} and lib/xorg</seg>
+        lib/X11/modules and lib/xorg</seg>
 @y
         <seg>cvt, dmx*, gtf, vdltodmx, X, Xnest, Xorg, Xvfb,
-        xdmxconfig</seg>
+        and xdmxconfig</seg>
         <seg>&None;</seg>
         <seg>/var/lib/xkb と <envar>$XORG_PREFIX</envar>/ ディレクトリ配下の以下のディレクトリ:
-        include/xorg, include/X11/pixmaps,
-        lib/X11/{getconfig,modules}, lib/xorg</seg>
+        include/xorg, include/X11/pixmaps, lib/X11/modules, lib/xorg</seg>
 @z
 
 @x

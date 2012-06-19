@@ -14,27 +14,27 @@
 @z
 
 @x
-    <title>Introduction to gnome-menus</title>
+    <title>Introduction to GNOME Menus</title>
 @y
-    <title>&IntroductionTo1;gnome-menus&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNOME Menus&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>gnome-menus</application> package contains an
-    implementation of the draft <quote>Desktop Menu Specification</quote>
-    from freedesktop.org (<ulink
-    url="http://www.freedesktop.org/Standards/menu-spec"/>). Also contained
-    are the <application>GNOME</application> menu layout configuration files,
-    <filename>.directory</filename> files and a menu related utility
-    program.</para>
+      The <application>GNOME Menus</application> package contains an
+      implementation of the draft <quote>Desktop Menu Specification</quote>
+      from freedesktop.org (<ulink
+      url="http://www.freedesktop.org/Standards/menu-spec"/>).
+      Also contained
+      are the <application>GNOME</application> menu layout configuration files,
+      <filename>.directory</filename> files and a menu related utility program.
 @y
-    <para>The <application>gnome-menus</application> package contains an
-    implementation of the draft <quote>Desktop Menu Specification</quote>
-    from freedesktop.org (<ulink
-    url="http://www.freedesktop.org/Standards/menu-spec"/>). Also contained
-    are the <application>GNOME</application> menu layout configuration files,
-    <filename>.directory</filename> files and a menu related utility
-    program.</para>
+      The <application>GNOME Menus</application> package contains an
+      implementation of the draft <quote>Desktop Menu Specification</quote>
+      from freedesktop.org (<ulink
+      url="http://www.freedesktop.org/Standards/menu-spec"/>).
+      Also contained
+      are the <application>GNOME</application> menu layout configuration files,
+      <filename>.directory</filename> files and a menu related utility program.
 @z
 
 @x
@@ -44,180 +44,96 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-menus-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-menus-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-menus-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-menus-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-menus-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-menus-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-menus-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-menus-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-menus-md5sum;</para>
+          Download MD5 sum: &gnome-menus-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-menus-md5sum;</para>
+          &Download; MD5 sum: &gnome-menus-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-menus-size;</para>
+          Download size: &gnome-menus-size;
 @y
-        <para>&DownloadSize;: &gnome-menus-size;</para>
+          &DownloadSize;: &gnome-menus-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-menus-buildsize;</para>
+          Estimated disk space required: &gnome-menus-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-menus-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-menus-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-menus-time;</para>
+          Estimated build time: &gnome-menus-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-menus-time;</para>
+          &Estimatedbuildtime;: &gnome-menus-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">gnome-menus Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GNOME Menus Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gnome-menus の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GNOME Menus&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="intltool"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-menus"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-menus"/></para>
 @z
 
 @x
-    <title>Installation of gnome-menus</title>
+    <title>Installation of GNOME Menus</title>
 @y
-    <title>&InstallationOf1;gnome-menus&InstallationOf2;</title>
+    <title>&InstallationOf1;GNOME Menus&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gnome-menus</application> by running the following
-    commands:</para>
+      Install <application>GNOME Menus</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gnome-menus</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME Menus</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <title>Configuring gnome-menus</title>
-@y
-    <title>&Configuring1;gnome-menus&Configuring2;</title>
-@z
-
-@x
-      <title>Configuration Information</title>
-@y
-      <title>&ConfigInfo;</title>
-@z
-
-@x
-        <title>XDG_CONFIG_DIRS Variable</title>
-@y
-        <title>XDG_CONFIG_DIRS 変数</title>
-@z
-
-@x
-        <para>So that <application>GNOME</application> can find the desktop
-        configuration files, ensure you set the <envar>XDG_CONFIG_DIRS</envar>
-        environment variable in the individual user's profiles, or in the system
-        profile (use this option if you will be running
-        <application>GDM</application>) as shown below (you may add additional
-        directories, separated with colons, if desired):</para>
-@y
-        <para>So that <application>GNOME</application> can find the desktop
-        configuration files, ensure you set the <envar>XDG_CONFIG_DIRS</envar>
-        environment variable in the individual user's profiles, or in the system
-        profile (use this option if you will be running
-        <application>GDM</application>) as shown below (you may add additional
-        directories, separated with colons, if desired):</para>
-@z
-
-@x
-        <title>XDG_DATA_DIRS Variable</title>
-@y
-        <title>XDG_DATA_DIRS 変数</title>
-@z
-
-@x
-        <para>So that <application>GNOME</application> can find the data
-        to populate the menus, ensure you set the <envar>XDG_DATA_DIRS</envar>
-        environment variable in the individual user's profiles, or in the system
-        profile as shown below (you may add additional directories, separated
-        with colons, if desired):</para>
-@y
-        <para>So that <application>GNOME</application> can find the data
-        to populate the menus, ensure you set the <envar>XDG_DATA_DIRS</envar>
-        environment variable in the individual user's profiles, or in the system
-        profile as shown below (you may add additional directories, separated
-        with colons, if desired):</para>
-@z
-
-@x
-        <title>PYTHONPATH Variable</title>
-@y
-        <title>PYTHONPATH 変数</title>
-@z
-
-@x
-        <para>If your <application>GNOME</application> installation prefix is
-        anything other than <filename class='directory'>/usr</filename>
-        you need to update the
-        <envar>PYTHONPATH</envar> environment variable so that the
-        <filename>gmenu</filename> module can be located by
-        <application>Python</application>. Set the variable in the system
-        profile, or in individual user's profiles as shown below:</para>
-@y
-        <para>If your <application>GNOME</application> installation prefix is
-        anything other than <filename class='directory'>/usr</filename>
-        you need to update the
-        <envar>PYTHONPATH</envar> environment variable so that the
-        <filename>gmenu</filename> module can be located by
-        <application>Python</application>. Set the variable in the system
-        profile, or in individual user's profiles as shown below:</para>
 @z
 
 @x
@@ -244,8 +160,9 @@
           libgnome-menu.so
         </seg>
         <seg>
-          /etc/xdg/menus, /usr/include/gnome-menus-3.0,
-          /usr/lib/python2.7/site-packages/GMenuSimpleEditor and
+          /etc/xdg/menus,
+          /usr/include/gnome-menus-3.0,
+          /usr/lib/python&python2-majorver;/site-packages/GMenuSimpleEditor and
           /usr/share/gnome-menus
         </seg>
 @y
@@ -256,8 +173,9 @@
           libgnome-menu.so
         </seg>
         <seg>
-          /etc/xdg/menus, /usr/include/gnome-menus-3.0,
-          /usr/lib/python2.7/site-packages/GMenuSimpleEditor,
+          /etc/xdg/menus,
+          /usr/include/gnome-menus-3.0,
+          /usr/lib/python&python2-majorver;/site-packages/GMenuSimpleEditor,
           /usr/share/gnome-menus
         </seg>
 @z
@@ -268,16 +186,17 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+
 @x gmenu-simple-editor
-          <para>is used to modify GNOME Menu layout.</para>
+            is used to modify <application>GNOME</application> Menu layout.
 @y
-          <para>is used to modify GNOME Menu layout.</para>
+            is used to modify <application>GNOME</application> Menu layout.
 @z
 
-@x libgnome-menu.{so,a}
-          <para>contains functions required to support GNOME's implementation
-          of the Desktop Menu Specification.</para>
+@x libgnome-menu.so
+            contains functions required to support GNOME's implementation
+            of the Desktop Menu Specification.
 @y
-          <para>contains functions required to support GNOME's implementation
-          of the Desktop Menu Specification.</para>
+            contains functions required to support GNOME's implementation
+            of the Desktop Menu Specification.
 @z

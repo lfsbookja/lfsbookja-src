@@ -90,14 +90,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
-      <xref linkend="icedtea6"/> or <xref linkend="jdk"/>, and
+      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->, and
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
-      <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
+      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
       <xref linkend="sharutils"/> (<command>uudecode</command> コマンドのため)
     </para>
 @z
@@ -184,7 +184,7 @@
 @x
         If you plan on installing <application>Berkeley DB</application> with
         Java support, you should check the system for certain versions of
-        <xref linkend="jdk"/> and <xref linkend="gmime"/>. Specifically, if
+       <!-- <xref linkend="jdk"/> and--> <xref linkend="gmime"/>. Specifically, if
         <application>JDK</application>-6 Update X and the
         <command>uudecode</command> program from the
         <application>GMime</application> program is on the system, the build
@@ -199,7 +199,7 @@
         shown below.
 @y
         <application>Berkeley DB</application> のインストールにあたって Java サポートを有効にする場合は、<xref
-        linkend="jdk"/> と <xref linkend="gmime"/> の適正なバージョンがシステムにインストールされている必要があります。
+        linkend="gmime"/> の適正なバージョンがシステムにインストールされている必要があります。
         <application>JDK</application>-6 Update X と <application>GMime</application> パッケージによる <command>uudecode</command> プログラムがインストールされている場合にはビルドに失敗します。
         (以下に示す修正版の <command>./configure</command> コマンド実行を行えば解消します。)
         二つのコマンド、<command>javac -version</command> と <command>uudecode --version</command> を実行して、どのバージョンがインストールされているかを確認してください。

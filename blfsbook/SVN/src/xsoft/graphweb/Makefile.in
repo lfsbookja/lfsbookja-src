@@ -146,8 +146,8 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/graphweb
-EXTRA_DIST = dillo.ch firefox.ch galeon.ch graphweb.ch konq.ch seamonkey.ch
-srcs = dillo.xml firefox.xml galeon.xml graphweb.xml konq.xml seamonkey.xml
+EXTRA_DIST = firefox.ch graphweb.ch seamonkey.ch
+srcs = firefox.xml graphweb.xml seamonkey.xml
 SUFFIXES = .ch .xml
 all: all-am
 
@@ -340,11 +340,8 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-dillo.xml: $(BOOKdir)/$@ $(srcdir)/dillo.ch
 firefox.xml: $(BOOKdir)/$@ $(srcdir)/firefox.ch
-galeon.xml: $(BOOKdir)/$@ $(srcdir)/galeon.ch
 graphweb.xml: $(BOOKdir)/$@ $(srcdir)/graphweb.ch
-konq.xml: $(BOOKdir)/$@ $(srcdir)/konq.ch
 seamonkey.xml: $(BOOKdir)/$@ $(srcdir)/seamonkey.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

@@ -20,18 +20,16 @@
 @z
 
 @x
-    <title>Introduction to notification-daemon</title>
+    <title>Introduction to Notification Daemon</title>
 @y
-    <title>&IntroductionTo1;notification-daemon&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Notification Daemon&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>notification-daemon</application> package is a daemon
-    that displays passive pop-up notifications.</para>
+      The <application>Notification Daemon</application> package contains a daemon
+      that displays passive pop-up notifications.
 @y
-    <para>
-    <application>notification-daemon</application> パッケージは、受動的なポップアップ通知を表示します。
-    </para>
+      <application>Notification Daemon</application> パッケージは、受動的なポップアップ通知を表示します。
 @z
 
 @x
@@ -41,50 +39,51 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&notification-daemon-download-http;"/></para>
+          Download (HTTP): <ulink url="&notification-daemon-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&notification-daemon-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&notification-daemon-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&notification-daemon-download-ftp;"/></para>
+          Download (FTP): <ulink url="&notification-daemon-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&notification-daemon-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&notification-daemon-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &notification-daemon-md5sum;</para>
+          Download MD5 sum: &notification-daemon-md5sum;
 @y
-        <para>&Download; MD5 sum: &notification-daemon-md5sum;</para>
+          &Download; MD5 sum: &notification-daemon-md5sum;
 @z
 
 @x
-        <para>Download size: &notification-daemon-size;</para>
+          Download size: &notification-daemon-size;
 @y
-        <para>&DownloadSize;: &notification-daemon-size;</para>
+          &DownloadSize;: &notification-daemon-size;
 @z
 
 @x
-        <para>Estimated disk space required: &notification-daemon-buildsize;</para>
+          Estimated disk space required: &notification-daemon-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &notification-daemon-buildsize;</para>
+          &Estimateddiskspacerequired;: &notification-daemon-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &notification-daemon-time;</para>
+          Estimated build time: &notification-daemon-time;
 @y
-        <para>&Estimatedbuildtime;: &notification-daemon-time;</para>
+          &Estimatedbuildtime;: &notification-daemon-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">notification-daemon Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Notification Daemon Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;notification-daemon&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Notification Daemon&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="gtk3"/>,
       <xref linkend="intltool"/> and
       <xref linkend="libcanberra"/>
       (Built with <xref linkend="gtk3"/> support).
@@ -92,6 +91,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="gtk3"/>,
       <xref linkend="intltool"/>,
       <xref linkend="libcanberra"/>
       (<xref linkend="gtk3"/> サポートがビルドされたもの)
@@ -105,35 +105,28 @@
 @z
 
 @x
-    <title>Installation of notification-daemon</title>
+    <title>Installation of Notification Daemon</title>
 @y
-    <title>&InstallationOf1;notification-daemon&InstallationOf2;</title>
+    <title>&InstallationOf1;Notification Daemon&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>notification-daemon</application> by running the following
-    commands:</para>
+      Install <application>Notification Daemon</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>notification-daemon</application> を実行します。
-    </para>
+      以下のコマンドを実行して <application>Notification Daemon</application> を実行します。
 @z
 
 @x
-    <para>This package's testsuite is only intended to be used by the
-    maintainer to check i18n files.</para>
+      This package does not come with a testsuite.
 @y
-    <para>
-    本パッケージのテストスイートは、管理者が i18n ファイルをチェックする目的でのみ利用されます。
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -143,18 +136,16 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/notification-daemon</parameter>: This
-    parameter is used so that the <application>notification-daemon</application>
-    program is installed in the preferred location of
-    <filename class='directory'>/usr/lib/notification-daemon</filename> instead
-    of <filename class='directory'>/usr/libexec</filename>.</para> 
+      <parameter>--libexecdir=/usr/lib/notification-daemon</parameter>: This
+      parameter is used so that the <application>notification-daemon</application>
+      program is installed in the preferred location of
+      <filename class="directory">/usr/lib/notification-daemon</filename> instead
+      of <filename class="directory">/usr/libexec</filename>.
 @y
-    <para>
-    <parameter>--libexecdir=/usr/lib/notification-daemon</parameter>:
-    このパラメーターは <application>notification-daemon</application>プログラムのインストール先を <filename
-    class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
-    class='directory'>/usr/lib/notification-daemon</filename> にします。
-    </para> 
+      <parameter>--libexecdir=/usr/lib/notification-daemon</parameter>:
+      このパラメーターは <application>notification-daemon</application>プログラムのインストール先を <filename
+      class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
+      class='directory'>/usr/lib/notification-daemon</filename> にします。
 @z
 
 @x
@@ -194,9 +185,7 @@
 @z
 
 @x notification-daemon
-          <para>is the notification daemon itself.</para>
+            is the Notification Daemon itself.
 @y
-          <para>
-          通知デーモンプログラム。
-          </para>
+            通知デーモンプログラム。
 @z

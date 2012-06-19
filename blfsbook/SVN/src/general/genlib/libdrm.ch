@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY libdrm-time          "less than 0.1 SBU">
-@y
-  <!ENTITY libdrm-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to libdrm</title>
 @y
     <title>&IntroductionTo1;libdrm&IntroductionTo2;</title>
@@ -28,7 +22,7 @@
 @x
     <para><application>libdrm</application> provides core library routines
     for the X Window System to directly interface with video hardware using
-    the Linux kernel's Direct Rendering Modules.</para>
+    the Linux kernel's Direct Rendering Modules (DRM).</para>
 @y
     <para>
     <application>libdrm</application> は X ウィンドウシステムにおける重要なライブラリルーチンを提供します。
@@ -86,12 +80,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libpthread-stubs"/> and
-    <xref linkend="libatomic_ops"/> (required on x86 only)</para>
+    <para role="required">
+    <xref linkend="xorg7-lib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libpthread-stubs"/>,
-    <xref linkend="libatomic_ops"/> (x86 のみ必須)</para>
+    <para role="required">
+    <xref linkend="xorg7-lib"/>
+    </para>
 @z
 
 @x
@@ -143,21 +139,22 @@
 @z
 
 @x
-    <para><parameter>--enable-nouveau-experimental-api</parameter>: This parameter
-    enables use of nouveau's experimental kernel API.</para>
-@y
-    <para><parameter>--enable-nouveau-experimental-api</parameter>:
-    このパラメーターは nouveau の実験的なカーネル API の利用を可能にします。
-    </para>
-@z
-
-@x
     <para><option>--enable-vmwgfx-experimental-api</option>: This parameter 
     enables use of vmwgfx's experimental kernel API.</para>
 @y
     <para><option>--enable-vmwgfx-experimental-api</option>:
     このパラメーターは vmwgfx の実験的なカーネル API の利用を可能にします。
     </para>
+@z
+
+@x
+    <para><option>--enable-omap-experimental-api</option>: This option 
+    enables use of OMAP's experimental kernel API. OMAP is a series of 
+    system-on-chips (SoCs) developed by Texas Instruments.</para>
+@y
+    <para><option>--enable-omap-experimental-api</option>: This option 
+    enables use of OMAP's experimental kernel API. OMAP is a series of 
+    system-on-chips (SoCs) developed by Texas Instruments.</para>
 @z
 
 @x
@@ -169,7 +166,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -179,13 +176,13 @@
 @x
         <seg>None</seg>
         <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
-        libdrm_radeon.so, and libkms.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/{libdrm,libkms,nouveau}</seg>
+        libdrm_radeon.so and libkms.so</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/{libdrm,libkms}</seg>
 @y
         <seg>&None;</seg>
         <seg>libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
         libdrm_radeon.so, libkms.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/{libdrm,libkms,nouveau}</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/{libdrm,libkms}</seg>
 @z
 
 @x
@@ -196,11 +193,11 @@
 
 @x libdrm.{so,a}
           <para>contains the Direct Rendering Module library functions, and
-          additional vendor specific functions for Intel and NVidia, and Radeon
+          additional vendor specific functions for Intel, nVidia and Radeon
           devices.</para>
 @y
           <para>
-          ダイレクトレンダリングモジュール (Direct Rendering Module) のライブラリ関数と、Intel, NVidia, Radeon の各ベンダーに固有の追加関数を提供します。
+          ダイレクトレンダリングモジュール (Direct Rendering Module) のライブラリ関数と、Intel, nVidia, Radeon の各ベンダーに固有の追加関数を提供します。
           </para>
 @z
 

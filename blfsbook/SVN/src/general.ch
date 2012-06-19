@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "May 5th, &year;">
+<!ENTITY releasedate  "June 17th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20120506">
+<!ENTITY jversion     "20120617">
 <!ENTITY jratio       "46.9 &percnt;">
 @z
 
@@ -54,6 +54,7 @@
 <!ENTITY InstalledPrograms    "インストールプログラム">
 <!ENTITY InstalledLibraries   "インストールライブラリ">
 <!ENTITY InstalledDirectories "インストールディレクトリ">
+<!ENTITY InstalledThemes      "インストールテーマ">
 <!--
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>

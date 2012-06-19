@@ -20,19 +20,17 @@
 @z
 
 @x
-    <para><application>Zenity</application> is a rewrite of
-    <application>gdialog</application>, the <application>GNOME</application>
-    port of <application>dialog</application> which allows you to display
-    <application>GTK+</application> dialog boxes from the command line and
-    shell scripts.</para>
+      <application>Zenity</application> is a rewrite of
+      <application>gdialog</application>, the <application>GNOME</application>
+      port of <application>dialog</application> which allows you to display
+      <application>GTK+</application> dialog boxes from the command line and
+      shell scripts.
 @y
-    <para>
-    <application>Zenity</application> は <application>gdialog</application> のクローンです。
-    <application>GNOME</application>
-    port of <application>dialog</application> which allows you to display
-    <application>GTK+</application> dialog boxes from the command line and
-    shell scripts.
-    </para>
+      <application>Zenity</application> is a rewrite of
+      <application>gdialog</application>, the <application>GNOME</application>
+      port of <application>dialog</application> which allows you to display
+      <application>GTK+</application> dialog boxes from the command line and
+      shell scripts.
 @z
 
 @x
@@ -42,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&zenity-download-http;"/></para>
+          Download (HTTP): <ulink url="&zenity-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&zenity-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&zenity-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&zenity-download-ftp;"/></para>
+          Download (FTP): <ulink url="&zenity-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&zenity-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&zenity-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &zenity-md5sum;</para>
+          Download MD5 sum: &zenity-md5sum;
 @y
-        <para>&Download; MD5 sum: &zenity-md5sum;</para>
+          &Download; MD5 sum: &zenity-md5sum;
 @z
 
 @x
-        <para>Download size: &zenity-size;</para>
+          Download size: &zenity-size;
 @y
-        <para>&DownloadSize;: &zenity-size;</para>
+          &DownloadSize;: &zenity-size;
 @z
 
 @x
-        <para>Estimated disk space required: &zenity-buildsize;</para>
+          Estimated disk space required: &zenity-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &zenity-buildsize;</para>
+          &Estimateddiskspacerequired;: &zenity-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &zenity-time;</para>
+          Estimated build time: &zenity-time;
 @y
-        <para>&Estimatedbuildtime;: &zenity-time;</para>
+          &Estimatedbuildtime;: &zenity-time;
 @z
 
 @x
@@ -125,10 +123,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/zenity"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/zenity"/></para>
 @z
 
 @x
@@ -138,26 +134,22 @@
 @z
 
 @x
-    <para>Install <application>Zenity</application> by running the following
-    commands:</para>
+      Install <application>Zenity</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Zenity</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Zenity</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -185,14 +177,16 @@
           gdialog and zenity
         </seg>
         <seg>
-          /usr/share/gnome/help/zenity and /usr/share/zenity
+          /usr/share/gnome/help/zenity and
+          /usr/share/zenity
         </seg>
 @y
         <seg>
           gdialog, zenity
         </seg>
         <seg>
-          /usr/share/gnome/help/zenity, /usr/share/zenity
+          /usr/share/gnome/help/zenity,
+          /usr/share/zenity
         </seg>
 @z
 
@@ -203,21 +197,17 @@
 @z
 
 @x gdialog
-          <para>is a <application>Perl</application> wrapper script which
-          can be used with legacy scripts.</para>
+            is a <application>Perl</application> wrapper script which
+            can be used with legacy scripts.
 @y
-          <para>
-          is a <application>Perl</application> wrapper script which
-          can be used with legacy scripts.
-          </para>
+            is a <application>Perl</application> wrapper script which
+            can be used with legacy scripts.
 @z
 
 @x zenity
-          <para>is a program that will display <application>GTK+</application>
-          dialogs, and return the user's input.</para>
+            is a program that will display <application>GTK+</application>
+            dialogs, and return the user's input.
 @y
-          <para>
-          is a program that will display <application>GTK+</application>
-          dialogs, and return the user's input.
-          </para>
+            is a program that will display <application>GTK+</application>
+            dialogs, and return the user's input.
 @z

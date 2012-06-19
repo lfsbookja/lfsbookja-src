@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to glibmm</title>
+    <title>Introduction to GLibmm</title>
 @y
-    <title>&IntroductionTo1;glibmm&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GLibmm&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>glibmm</application> package is a set of C++ bindings
-    for <application>Glib</application>.</para>
+      The <application>GLibmm</application> package is a set of C++ bindings
+      for <application>GLib</application>.
 @y
-    <para>
-    <application>glibmm</application> パッケージは <application>Glib</application> に対する C++ バインディングを提供します。
-    </para>
+      <application>GLibmm</application> パッケージは <application>GLib</application> に対する C++ バインディングを提供します。
 @z
 
 @x
@@ -35,98 +33,90 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&glibmm-download-http;"/></para>
+          Download (HTTP): <ulink url="&glibmm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&glibmm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&glibmm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&glibmm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&glibmm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&glibmm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&glibmm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &glibmm-md5sum;</para>
+          Download MD5 sum: &glibmm-md5sum;
 @y
-        <para>&Download; MD5 sum: &glibmm-md5sum;</para>
+          &Download; MD5 sum: &glibmm-md5sum;
 @z
 
 @x
-        <para>Download size: &glibmm-size;</para>
+          Download size: &glibmm-size;
 @y
-        <para>&DownloadSize;: &glibmm-size;</para>
+          &DownloadSize;: &glibmm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &glibmm-buildsize;</para>
+          Estimated disk space required: &glibmm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &glibmm-buildsize;</para>
+          &Estimateddiskspacerequired;: &glibmm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &glibmm-time;</para>
+          Estimated build time: &glibmm-time;
 @y
-        <para>&Estimatedbuildtime;: &glibmm-time;</para>
+          &Estimatedbuildtime;: &glibmm-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">glibmm Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GLibmm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;glibmm&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GLibmm&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libsigc"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="libsigc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libsigc"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="libsigc"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/glibmm"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/glibmm"/></para>
 @z
 
 @x
-    <title>Installation of glibmm</title>
+    <title>Installation of GLibmm</title>
 @y
-    <title>&InstallationOf1;glibmm&InstallationOf2;</title>
+    <title>&InstallationOf1;GLibmm&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>glibmm</application> by running the following
-    commands:</para>
+      Install <application>GLibmm</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>glibmm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GLibmm</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -174,17 +164,13 @@
 @z
 
 @x libgiomm-2.4.so
-          <para>contains the Gio API classes.</para>
+            contains the Gio API classes.
 @y
-          <para>
-          Gio API クラスを提供します。
-          </para>
+            Gio API クラスを提供します。
 @z
 
 @x libglibmm-2.4.so
-          <para>contains the Glib API classes.</para>
+            contains the GLib API classes.
 @y
-          <para>
-          Glib API クラスを提供します。
-          </para>
+            Glib API クラスを提供します。
 @z

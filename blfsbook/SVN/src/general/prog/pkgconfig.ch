@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY pkgconfig-time          "less than 0.1 SBU">
-@y
-  <!ENTITY pkgconfig-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to pkg-config</title>
 @y
     <title>&IntroductionTo1;pkg-config&IntroductionTo2;</title>
@@ -86,10 +80,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="popt"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required"><xref linkend="popt"/></para>
 @z
 
 @x
@@ -107,29 +101,12 @@
 @z
 
 @x
-    <para>Fix a problem with one of Pkg-config's tests:</para>
-@y
-    <para>Pkg-config のテストにて発生する問題を修正します。</para>
-@z
-
-@x
     <para>Install <application>pkg-config</application> by running the
     following commands:</para>
 @y
     <para>
     以下のコマンドを実行して <application>pkg-config</application> をビルドします。
     </para>
-@z
-
-@x
-    <note><para>The make phase is known to fail if the configure option
-    '<option>--with-installed-popt</option>' is used with <xref
-    linkend="popt"/>.</para></note>
-@y
-    <note><para>
-    configure 時のオプションとして '<option>--with-installed-popt</option>' を与えて <xref
-    linkend="popt"/> とともにビルドを行うと、ビルドに失敗することが知られています。
-    </para></note>
 @z
 
 @x

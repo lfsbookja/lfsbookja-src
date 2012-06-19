@@ -14,21 +14,21 @@
 @z
 
 @x
-    <title>Introduction to telepathy-logger</title>
+    <title>Introduction to Telepathy Logger</title>
 @y
-    <title>&IntroductionTo1;telepathy-logger&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Telepathy Logger&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>telepathy-logger</application> package is a headless
-    Observer client that logs information received by the Telepathy framework.
-    It features pluggable backends to log different sorts of messages, in
-    different formats.</para>
+      The <application>Telepathy Logger</application> package is a headless
+      observer client that logs information received by the 
+      <application>Telepathy</application> framework. It features pluggable
+      backends to log different sorts of messages in different formats.
 @y
-    <para>The <application>telepathy-logger</application> package is a headless
-    Observer client that logs information received by the Telepathy framework.
-    It features pluggable backends to log different sorts of messages, in
-    different formats.</para>
+      The <application>Telepathy Logger</application> package is a headless
+      observer client that logs information received by the 
+      <application>Telepathy</application> framework. It features pluggable
+      backends to log different sorts of messages in different formats.
 @z
 
 @x
@@ -38,45 +38,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&telepathy-logger-download-http;"/></para>
+          Download (HTTP): <ulink url="&telepathy-logger-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&telepathy-logger-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&telepathy-logger-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&telepathy-logger-download-ftp;"/></para>
+          Download (FTP): <ulink url="&telepathy-logger-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&telepathy-logger-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&telepathy-logger-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &telepathy-logger-md5sum;</para>
+          Download MD5 sum: &telepathy-logger-md5sum;
 @y
-        <para>&Download; MD5 sum: &telepathy-logger-md5sum;</para>
+          &Download; MD5 sum: &telepathy-logger-md5sum;
 @z
 
 @x
-        <para>Download size: &telepathy-logger-size;</para>
+          Download size: &telepathy-logger-size;
 @y
-        <para>&DownloadSize;: &telepathy-logger-size;</para>
+          &DownloadSize;: &telepathy-logger-size;
 @z
 
 @x
-        <para>Estimated disk space required: &telepathy-logger-buildsize;</para>
+          Estimated disk space required: &telepathy-logger-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &telepathy-logger-buildsize;</para>
+          &Estimateddiskspacerequired;: &telepathy-logger-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &telepathy-logger-time;</para>
+          Estimated build time: &telepathy-logger-time;
 @y
-        <para>&Estimatedbuildtime;: &telepathy-logger-time;</para>
+          &Estimatedbuildtime;: &telepathy-logger-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">telepathy-logger Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Telepathy Logger Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;telepathy-logger&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Telepathy Logger&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -121,41 +121,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/telepathy-logger"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/telepathy-logger"/></para>
 @z
 
 @x
-    <title>Installation of telepathy-logger</title>
+    <title>Installation of Telepathy Logger</title>
 @y
-    <title>&InstallationOf1;telepathy-logger&InstallationOf2;</title>
+    <title>&InstallationOf1;Telepathy Logger&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>telepathy-logger</application> by running the following
-    commands:</para>
+      Install <application>Telepathy Logger</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>telepathy-logger</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Telepathy Logger</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -210,11 +202,14 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libtelepathy-logger.{so,a}
-          <para>contains the <application>telepathy-logger</application> API
-          functions.</para>
+@x telepathy-logger
+            is the <application>Telepathy Logger</application> D-Bus service.
 @y
-          <para>
-          <application>telepathy-logger</application> API 関数を提供します。
-          </para>
+            is the <application>Telepathy Logger</application> D-Bus service.
+@z
+
+@x libtelepathy-logger.so
+            contains the <application>Telepathy Logger</application> API functions.
+@y
+            <application>Telepathy Logger</application> API 関数を提供します。
 @z

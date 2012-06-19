@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>GNOME User Docs</application> package contains
-    documentation for <application>GNOME</application>.</para>
+      The <application>GNOME User Docs</application> package contains
+      documentation for <application>GNOME</application>.
 @y
-    <para>
-    <application>GNOME User Docs</application> パッケージは <application>GNOME</application> におけるドキュメントを提供します。
-    </para>
+      <application>GNOME User Docs</application> パッケージは <application>GNOME</application> におけるドキュメントを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnome-user-docs-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnome-user-docs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnome-user-docs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnome-user-docs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnome-user-docs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnome-user-docs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnome-user-docs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnome-user-docs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnome-user-docs-md5sum;</para>
+          Download MD5 sum: &gnome-user-docs-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnome-user-docs-md5sum;</para>
+          &Download; MD5 sum: &gnome-user-docs-md5sum;
 @z
 
 @x
-        <para>Download size: &gnome-user-docs-size;</para>
+          Download size: &gnome-user-docs-size;
 @y
-        <para>&DownloadSize;: &gnome-user-docs-size;</para>
+          &DownloadSize;: &gnome-user-docs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnome-user-docs-buildsize;</para>
+          Estimated disk space required: &gnome-user-docs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnome-user-docs-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnome-user-docs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnome-user-docs-time;</para>
+          Estimated build time: &gnome-user-docs-time;
 @y
-        <para>&Estimatedbuildtime;: &gnome-user-docs-time;</para>
+          &Estimatedbuildtime;: &gnome-user-docs-time;
 @z
 
 @x
@@ -92,10 +90,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnome-user-docs"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnome-user-docs"/></para>
 @z
 
 @x
@@ -105,32 +101,22 @@
 @z
 
 @x
-    <para>Install <application>GNOME User Docs</application>
-    by running the following commands:</para>
+      Install <application>GNOME User Docs</application>
+      by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GNOME User Docs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GNOME User Docs</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -167,11 +153,9 @@
         <term>OMF ファイル</term>
 @z
 @x
-          <para>contain user documentation. These include introductions
-          and help on the core packages.</para>
+            contain user documentation. These include introductions
+            and help on the core packages.
 @y
-          <para>
-          ユーザードキュメントを提供します。
-          GNOME コアパッケージの概略説明やヘルプが含まれます。
-          </para>
+            ユーザードキュメントを提供します。
+            GNOME コアパッケージの概略説明やヘルプが含まれます。
 @z

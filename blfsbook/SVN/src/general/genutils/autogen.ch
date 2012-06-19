@@ -14,21 +14,21 @@
 @z
 
 @x
-    <title>Introduction to autogen</title>
+    <title>Introduction to AutoGen</title>
 @y
-    <title>&IntroductionTo1;autogen&IntroductionTo2;</title>
+    <title>&IntroductionTo1;AutoGen&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Autogen</application> is a tool designed to simplify the
-    creation and maintenance of programs that contain large amounts of repetitious
-    text. It is especially valuable in programs that have several blocks of text
-    that must be kept synchronized.</para>
+      <application>AutoGen</application> is a tool designed to simplify the
+      creation and maintenance of programs that contain large amounts of
+      repetitious text. It is especially valuable in programs that have
+      several blocks of text that must be kept synchronized.
 @y
-    <para><application>Autogen</application> is a tool designed to simplify the
-    creation and maintenance of programs that contain large amounts of repetitious
-    text. It is especially valuable in programs that have several blocks of text
-    that must be kept synchronized.</para>
+      <application>AutoGen</application> is a tool designed to simplify the
+      creation and maintenance of programs that contain large amounts of
+      repetitious text. It is especially valuable in programs that have
+      several blocks of text that must be kept synchronized.
 @z
 
 @x
@@ -38,156 +38,96 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&autogen-download-http;"/></para>
+          Download (HTTP): <ulink url="&autogen-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&autogen-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&autogen-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&autogen-download-ftp;"/></para>
+          Download (FTP): <ulink url="&autogen-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&autogen-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&autogen-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &autogen-md5sum;</para>
+          Download MD5 sum: &autogen-md5sum;
 @y
-        <para>&Download; MD5 sum: &autogen-md5sum;</para>
+          &Download; MD5 sum: &autogen-md5sum;
 @z
 
 @x
-        <para>Download size: &autogen-size;</para>
+          Download size: &autogen-size;
 @y
-        <para>&DownloadSize;: &autogen-size;</para>
+          &DownloadSize;: &autogen-size;
 @z
 
 @x
-        <para>Estimated disk space required: &autogen-buildsize;</para>
+          Estimated disk space required: &autogen-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &autogen-buildsize;</para>
+          &Estimateddiskspacerequired;: &autogen-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &autogen-time;</para>
+          Estimated build time: &autogen-time;
 @y
-        <para>&Estimatedbuildtime;: &autogen-time;</para>
+          &Estimatedbuildtime;: &autogen-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">AutoGen Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Optional Patch: <ulink
-@y
-        <para>任意のパッチ: <ulink
-@z
-
-@x
-    <bridgehead renderas="sect3">autogen Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;autogen&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;AutoGen&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="guile"/></para>
+    <para role="required">
+      <xref linkend="guile"/> and
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="guile"/></para>
+    <para role="required">
+      <xref linkend="guile"/>,
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/autogen"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/autogen"/></para>
 @z
 
 @x
-    <title>Installation of autogen</title>
+    <title>Installation of AutoGen</title>
 @y
-    <title>&InstallationOf1;autogen&InstallationOf2;</title>
+    <title>&InstallationOf1;AutoGen&InstallationOf2;</title>
 @z
 
 @x
-    <!-- yes, I do mean if and only if (ken) : this package is an aggravation -->
-    <para>IFF you do not wish to install the static library, and will
-    add '--enable-static=no' to the configure, apply the patch.
-    This is not recommended, but included as an example of how a common
-    option may have an unexpected implementation. The preferred
-    approach for this package is to discard the static library after
-    the package has been installed.</para>
+      Install <application>AutoGen</application> by running the following
+      commands:
 @y
-    <!-- yes, I do mean if and only if (ken) : this package is an aggravation -->
-    <para>IFF you do not wish to install the static library, and will
-    add '--enable-static=no' to the configure, apply the patch.
-    This is not recommended, but included as an example of how a common
-    option may have an unexpected implementation. The preferred
-    approach for this package is to discard the static library after
-    the package has been installed.</para>
+      以下のコマンドを実行して <application>AutoGen</application> をビルドします。
 @z
 
 @x
-    <para>Install <application>autogen</application> by running the following
-    commands:</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    以下のコマンドを実行して <application>autogen</application> をビルドします。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.
-    You can expect some failures.  If you applied the patch, the
-    testsuite will fail because it is looking for the static library.</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    いくつかのテストは失敗します。
-    パッチを適用すると、テストスイートがスタティックライブラリを探しにいくようになるためです。
-    </para>
-@z
-
-@x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><command>patch -Np1 -i ...</command>: The patch modifies the
-    <filename>mk-agen-texi-in</filename> file so that it can use the shared
-    <filename>libopts.so</filename> when rebuilding the supplied documentation.
-    No doubt similar changes can be made to enable the testsuite to run in the
-    absence of the static library.</para>
-@y
-    <para><command>patch -Np1 -i ...</command>: The patch modifies the
-    <filename>mk-agen-texi-in</filename> file so that it can use the shared
-    <filename>libopts.so</filename> when rebuilding the supplied documentation.
-    No doubt similar changes can be made to enable the testsuite to run in the
-    absence of the static library.</para>
-@z
-
-@x
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    library being installed.  Unusually, in this package it prevents it being
-    created and used by the package itself.</para>
-@y
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    library being installed.  Unusually, in this package it prevents it being
-    created and used by the package itself.</para>
 @z
 
 @x
@@ -207,13 +147,27 @@
 @z
 
 @x
-        <seg>autogen, autoopts-config, columns, getdefs, and xml2ag</seg>
-        <seg>libopts.{so,a}</seg>
-        <seg>/usr/{include/autoopts,share/autogen}</seg>
+        <seg>
+          autogen, autoopts-config, columns, getdefs and xml2ag
+        </seg>
+        <seg>
+          libopts.so
+        </seg>
+        <seg>
+          /usr/include/autoopts and
+          /usr/share/autogen
+        </seg>
 @y
-        <seg>autogen, autoopts-config, columns, getdefs, xml2ag</seg>
-        <seg>libopts.{so,a}</seg>
-        <seg>/usr/{include/autoopts,share/autogen}</seg>
+        <seg>
+          autogen, autoopts-config, columns, getdefs, xml2ag
+        </seg>
+        <seg>
+          libopts.so
+        </seg>
+        <seg>
+          /usr/include/autoopts,
+          /usr/share/autogen
+        </seg>
 @z
 
 @x
@@ -223,8 +177,26 @@
 @z
 
 @x autogen
-          <para>is an automated text file generator.</para>
+            is designed for generating program files that contain 
+            repetitive text with varied substitutions.
 @y
-          <para>is an automated text file generator.</para>
+            is designed for generating program files that contain 
+            repetitive text with varied substitutions.
+@z
+
+@x autoopts-config
+            is a tool that is used by configure to determine the compiler and
+            linker flags that should be used to compile and link programs that
+            use <application>AutoOpts</application>.
+@y
+            is a tool that is used by configure to determine the compiler and
+            linker flags that should be used to compile and link programs that
+            use <application>AutoOpts</application>.
+@z
+
+@x columns
+            is used to columnize input text.
+@y
+            is used to columnize input text.
 @z
 

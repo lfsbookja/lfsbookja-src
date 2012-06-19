@@ -14,9 +14,9 @@
 @z
 
 @x
-    <title>Introduction to FOP</title>
+    <title>Introduction to fop</title>
 @y
-    <title>&IntroductionTo1;FOP&IntroductionTo2;</title>
+    <title>&IntroductionTo1;fop&IntroductionTo2;</title>
 @z
 
 @x
@@ -34,12 +34,6 @@
     output. Output formats currently supported include PDF, PCL, PostScript,
     SVG, XML (area tree representation), print, AWT, MIF and ASCII text. The
     primary output target is PDF.</para>
-@z
-
-@x
-    <para>&lfssvn_checked;20101029&lfssvn_checked2;</para>
-@y
-    <para>&lfssvn_checked;20101029&lfssvn_checked2;</para>
 @z
 
 @x
@@ -101,51 +95,54 @@
         <para>OFFO (Objects for Formatting Objects) ハイフネーションパターン:
 @z
 @x
-        <para>Java Advanced Imaging (JAI) API components:
+        <para>Java Advanced Imaging (JAI) API components (architecture dependent):
 @y
-        <para>JAI (Java Advanced Imaging) API コンポーネント:
+        <para>JAI (Java Advanced Imaging) API コンポーネント (アーキテクチャー依存):
 @z
 
 @x
-    <bridgehead renderas="sect3">FOP Dependencies</bridgehead>
+    <bridgehead renderas="sect3">fop Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;FOP&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;fop&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7"/>,
-    <xref linkend="apache-ant"/>, and
-    <ulink url="http://java.sun.com/javase/technologies/desktop/media/jai/">Java
-    Advanced Imaging (JAI) API components</ulink></para>
+    <para role="required">
+      <xref linkend="xorg7"/> and 
+      <xref linkend="apache-ant"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7"/>,
-    <xref linkend="apache-ant"/>,
-    <ulink url="http://java.sun.com/javase/technologies/desktop/media/jai/">JAI
-    (Java Advanced Imaging) API コンポーネント</ulink></para>
+    <para role="required">
+      <xref linkend="xorg7"/>,
+      <xref linkend="apache-ant"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
-    <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
-    <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
-    <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
-    <ulink url="http://pmd.sourceforge.net">PMD</ulink>
-    (requires <ulink url="http://jaxen.codehaus.org/">Jaxen</ulink>), and
-    <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest used only
-    to rebuild the documentation)</para>
+    <para role="optional">
+      <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
+      <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
+      <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
+      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
+      <ulink url="http://pmd.sourceforge.net">PMD</ulink>
+          (requires <ulink url="http://jaxen.codehaus.org/">Jaxen</ulink>), and
+      <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest used only
+      to rebuild the documentation)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
-    <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
-    <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
-    <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
-    <ulink url="http://pmd.sourceforge.net">PMD</ulink>
-    (<ulink url="http://jaxen.codehaus.org/">Jaxen</ulink> が必要),
-    <ulink url="http://forrest.apache.org/">Forrest</ulink>
-    (ドキュメントの再構築時のみ必要)</para>
+    <para role="optional">
+      <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
+      <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
+      <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
+      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
+      <ulink url="http://pmd.sourceforge.net">PMD</ulink>
+          (<ulink url="http://jaxen.codehaus.org/">Jaxen</ulink> が必要),
+      <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest はドキュメントの再構築時のみ必要)
+    </para>
 @z
 
 @x
@@ -157,22 +154,19 @@
 @z
 
 @x
-    <title>Installation of FOP</title>
+    <title>Installation of fop</title>
 @y
-    <title>&InstallationOf1;FOP&InstallationOf2;</title>
+    <title>&InstallationOf1;fop&InstallationOf2;</title>
 @z
 
 @x
       <para>You must run this installation from an X-window using a GL-aware
       <application>Xorg</application> server or some of the
-      <application>JUnit</application> tests will hang. Using an X-window from
-      the console is the preferred method.</para>
+      <application>JUnit</application> tests will hang.</para>
 @y
       <para>
       ここに示すインストール手順は、GL 機能を実装した <application>Xorg</application> サーバーのもとで X ウィンドウシステムから実施する必要があります。
       そうしないと <application>JUnit</application> のテストが失敗します。
-      Using an X-window from
-      the console is the preferred method.
       </para>
 @z
 
@@ -180,8 +174,8 @@
     <para>Ensure <envar>$JAVA_HOME</envar> is set correctly before beginning
     the build. To build the <application>JIMI SDK</application> and/or
     <application>XMLUnit</application> extension classes, ensure the
-    corresponding <filename class='extension'>.jar</filename> files are
-    identified in the <envar>CLASSPATH</envar> environment variable.</para>
+    corresponding <filename class='extension'>.jar</filename> files can be
+    found via the <envar>CLASSPATH</envar> environment variable.</para>
 @y
     <para>
     ビルド前には環境変数 <envar>$JAVA_HOME</envar> が適切に設定されていることを確認してください。
@@ -197,63 +191,37 @@
 @z
 
 @x
-      <para>Before beginning the build, unpack the
-      <application>FOP</application> source tarball and the hyphenation zipfile
-      from the same directory, then change directories into the root of the
-      <application>FOP</application> source tree. Copy the XML hyphenation
-      patterns into the <application>FOP</application> source tree by
-      running the following commands:</para>
+      <para>First, unpack the <application>fop</application> source tarball and
+      the hyphenation zipfile from the same directory, then change directories
+      into the root of the <application>fop</application> source tree. Copy the
+      XML hyphenation patterns into the <application>fop</application> source
+      tree by running the following commands:</para>
 @y
-      <para>Before beginning the build, unpack the
-      <application>FOP</application> source tarball and the hyphenation zipfile
-      from the same directory, then change directories into the root of the
-      <application>FOP</application> source tree. Copy the XML hyphenation
-      patterns into the <application>FOP</application> source tree by
-      running the following commands:</para>
+      <para>First, unpack the <application>fop</application> source tarball and
+      the hyphenation zipfile from the same directory, then change directories
+      into the root of the <application>fop</application> source tree. Copy the
+      XML hyphenation patterns into the <application>fop</application> source
+      tree by running the following commands:</para>
 @z
 
 @x
-      <title>Installing JAI</title>
+      <title>Installing Java Advanced Imaging (JAI) API components</title>
 @y
-      <title>&InstallationOf1;JAI&InstallationOf2;</title>
+      <title>&InstallationOf1;Java Advanced Imaging (JAI) API コンポーネント&InstallationOf2;</title>
 @z
 
 @x
-        <para>The <command>$FOP_PKG_DIR/jai-&jai-version;-lib-linux-i586-jdk.bin</command>
-        command below installs the JAI components in the JDK tree. You will be
-        required to view, and then accept (by entering a <keycap>y</keycap>
-        keypress), a license agreement before the installation will continue.
-        If you are scripting (automating) the build, you'll need to account for
-        this. There is information about automating build commands in the
-        <xref linkend="automating-builds"/> section of Chapter 2. Towards the
-        end of this section, specific information for automating this type of
-        installation is discussed.</para>
+      <para>Next install the JAI API components. As the <systemitem
+      class="username">root</systemitem> user:</para>
 @y
-        <para>The <command>$FOP_PKG_DIR/jai-&jai-version;-lib-linux-i586-jdk.bin</command>
-        command below installs the JAI components in the JDK tree. You will be
-        required to view, and then accept (by entering a <keycap>y</keycap>
-        keypress), a license agreement before the installation will continue.
-        If you are scripting (automating) the build, you'll need to account for
-        this. There is information about automating build commands in the
-        <xref linkend="automating-builds"/> section of Chapter 2. Towards the
-        end of this section, specific information for automating this type of
-        installation is discussed.</para>
+      <para>Next install the JAI API components. As the <systemitem
+      class="username">root</systemitem> user:</para>
 @z
 
 @x
-      <para>Install the JAI components by running the following commands as
-      the <systemitem class="username">root</systemitem> user while in the
-      root of the <application>FOP</application> source tree:</para>
+      <title>Installing fop Components</title>
 @y
-      <para>Install the JAI components by running the following commands as
-      the <systemitem class="username">root</systemitem> user while in the
-      root of the <application>FOP</application> source tree:</para>
-@z
-
-@x
-      <title>Installing FOP Components</title>
-@y
-      <title>FOP コンポーネントのインストール</title>
+      <title>fop コンポーネントのインストール</title>
 @z
 
 @x
@@ -266,11 +234,11 @@
 @z
 
 @x
-      <para>Compile <application>FOP</application> by running the
+      <para>Compile <application>fop</application> by running the
       following commands:</para>
 @y
       <para>
-      以下のコマンドを実行して <application>FOP</application> をビルドします。
+      以下のコマンドを実行して <application>fop</application> をビルドします。
       </para>
 @z
 
@@ -299,47 +267,18 @@
 @z
 
 @x
-    <para><command>FOP_PKG_DIR=$(pwd)/..</command>: This assumes that the
-    source packages are stored one level above the current working directory.
-    This is always the default; but may be different because of personal
-    taste. If necessary, change this to match the directory where the
-    <application>FOP</application> tarball can be found.</para>
-@y
-    <para><command>FOP_PKG_DIR=$(pwd)/..</command>: This assumes that the
-    source packages are stored one level above the current working directory.
-    This is always the default; but may be different because of personal
-    taste. If necessary, change this to match the directory where the
-    <application>FOP</application> tarball can be found.</para>
-@z
-
-@x
-    <para><command>sh
-    $FOP_PKG_DIR/jai-&jai-version;-lib-linux-i586-jdk.bin</command>: This
-    command installs the <application>JAI</application> components
-    into the <application>JDK</application> file structure.
-    <envar>$FOP_PKG_DIR</envar> is used as a reference point to the source
-    executable.</para>
-@y
-    <para><command>sh
-    $FOP_PKG_DIR/jai-&jai-version;-lib-linux-i586-jdk.bin</command>:
-    このコマンドにより <application>JAI</application> コンポーネントを <application>JDK</application> ファイル構成に合わせてインストールします。
-    <envar>$FOP_PKG_DIR</envar> is used as a reference point to the source
-    executable.</para>
-@z
-
-@x
     <para><command>ant dist</command>: This reads the
     <filename>build.xml</filename> file's <option>dist</option> target,
     builds the package and runs the unit regression tests. It also creates the
     Java API documentation and a directory where the newly created binaries
-    are placed. This directory is used to install <application>FOP</application>
+    are placed. This directory is used to install <application>fop</application>
     into its final place.</para>
 @y
     <para><command>ant dist</command>: This reads the
     <filename>build.xml</filename> file's <option>dist</option> target,
     builds the package and runs the unit regression tests. It also creates the
     Java API documentation and a directory where the newly created binaries
-    are placed. This directory is used to install <application>FOP</application>
+    are placed. This directory is used to install <application>fop</application>
     into its final place.</para>
 @z
 
@@ -354,9 +293,9 @@
 @z
 
 @x
-    <title>Configuring FOP</title>
+    <title>Configuring fop</title>
 @y
-    <title>&Configuring1;FOP&Configuring2;</title>
+    <title>&Configuring1;fop&Configuring2;</title>
 @z
 
 @x
@@ -372,13 +311,13 @@
 @z
 
 @x
-      <para>Using <application>FOP</application> to process some large FO's
+      <para>Using <application>fop</application> to process some large FO's
       (including the FO derived from the BLFS XML sources), can lead to memory
       errors. Unless you add a parameter to the <command>java</command> command
       used in the <command>fop</command> script you may receive messages
       similar to the one shown below:</para>
 @y
-      <para>Using <application>FOP</application> to process some large FO's
+      <para>Using <application>fop</application> to process some large FO's
       (including the FO derived from the BLFS XML sources), can lead to memory
       errors. Unless you add a parameter to the <command>java</command> command
       used in the <command>fop</command> script you may receive messages
@@ -412,13 +351,13 @@
 @x
       <para>The <command>fop</command> script looks for a
       <envar>FOP_HOME</envar> environment variable to locate the
-      <application>FOP</application> class libraries. You can create this
+      <application>fop</application> class libraries. You can create this
       variable using the <filename>~/.foprc</filename> file as well. Create
       a <filename>~/.foprc</filename> file using the following commands:</para>
 @y
       <para>The <command>fop</command> script looks for a
       <envar>FOP_HOME</envar> environment variable to locate the
-      <application>FOP</application> class libraries. You can create this
+      <application>fop</application> class libraries. You can create this
       variable using the <filename>~/.foprc</filename> file as well. Create
       a <filename>~/.foprc</filename> file using the following commands:</para>
 @z
@@ -428,14 +367,14 @@
       number representing the amount of RAM installed in your computer (in
       megabytes). An example would be
       <userinput>FOP_OPTS="-Xmx768m"</userinput>. For more information about
-      memory issues running <application>FOP</application>, see
+      memory issues running <application>fop</application>, see
       <ulink url="http://xml.apache.org/fop/running.html#memory"/>.</para>
 @y
       <para>Replace <replaceable>&lt;RAM_Installed&gt;</replaceable> with a
       number representing the amount of RAM installed in your computer (in
       megabytes). An example would be
       <userinput>FOP_OPTS="-Xmx768m"</userinput>. For more information about
-      memory issues running <application>FOP</application>, see
+      memory issues running <application>fop</application>, see
       <ulink url="http://xml.apache.org/fop/running.html#memory"/>.</para>
 @z
 
@@ -487,19 +426,19 @@
 
 @x fop
           <para>is a wrapper script to the <command>java</command> command
-          which sets up the <application>FOP</application>
+          which sets up the <application>fop</application>
           environment and passes the required parameters.</para>
 @y
           <para>is a wrapper script to the <command>java</command> command
-          which sets up the <application>FOP</application>
+          which sets up the <application>fop</application>
           environment and passes the required parameters.</para>
 @z
 
 @x fop.jar
-          <para>contains all the <application>FOP</application>
+          <para>contains all the <application>fop</application>
           <application>Java</application> classes.</para>
 @y
           <para>
-          <application>FOP</application> のすべての <application>Java</application> クラスを提供します。
+          <application>fop</application> のすべての <application>Java</application> クラスを提供します。
           </para>
 @z

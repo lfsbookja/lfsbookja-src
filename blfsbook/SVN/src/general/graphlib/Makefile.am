@@ -26,12 +26,10 @@ CHANGE_FILES = \
 	openjpeg.ch \
 	pixman.ch \
 	poppler.ch \
-	poppler-014.ch \
 	babl.ch \
 	gegl.ch \
 	exiv2.ch \
-	lcms2.ch \
-	colord.ch
+	lcms2.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -64,9 +62,7 @@ libtiff.xml:     $(BOOKdir)/$@ $(srcdir)/libtiff.ch
 openjpeg.xml:    $(BOOKdir)/$@ $(srcdir)/openjpeg.ch
 pixman.xml:      $(BOOKdir)/$@ $(srcdir)/pixman.ch
 poppler.xml:     $(BOOKdir)/$@ $(srcdir)/poppler.ch
-poppler-014.xml: $(BOOKdir)/$@ $(srcdir)/poppler-014.ch
 babl.xml:        $(BOOKdir)/$@ $(srcdir)/babl.ch
 gegl.xml:        $(BOOKdir)/$@ $(srcdir)/gegl.ch
 exiv2.xml:       $(BOOKdir)/$@ $(srcdir)/exiv2.ch
 lcms2.xml:       $(BOOKdir)/$@ $(srcdir)/lcms2.ch
-colord.xml:      $(BOOKdir)/$@ $(srcdir)/colord.ch

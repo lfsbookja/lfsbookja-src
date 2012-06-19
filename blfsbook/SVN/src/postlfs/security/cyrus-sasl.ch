@@ -101,7 +101,7 @@
     <para role="optional"><xref linkend="linux-pam"/>,
     <xref linkend="openldap"/>,
     <xref linkend="mitkrb"/>,
-    <xref linkend="icedtea6"/> or <xref linkend="jdk"/>,
+    <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
     <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>,
     <xref linkend="sqlite"/>,
@@ -112,7 +112,7 @@
     <para role="optional"><xref linkend="linux-pam"/>,
     <xref linkend="openldap"/>,
     <xref linkend="mitkrb"/>,
-    <xref linkend="icedtea6"/> または <xref linkend="jdk"/>,
+    <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
     <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>,
     <xref linkend="sqlite"/>,
@@ -122,10 +122,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cyrus-sasl"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cyrus-sasl"/></para>
 @z
 
 @x
@@ -236,12 +234,12 @@
 
 @x
     <para><command>install -v -m700 -d /var/lib/sasl</command>:
-    This directoriy must exist when starting <command>saslauthd</command> or
+    This directory must exist when starting <command>saslauthd</command> or
     using the sasldb plugin. If you're not going to be running the daemon or
     using the plugins, you may omit the creation of this directory.</para>
 @y
     <para><command>install -v -m700 -d /var/lib/sasl</command>:
-    This directoriy must exist when starting <command>saslauthd</command> or
+    This directory must exist when starting <command>saslauthd</command> or
     using the sasldb plugin. If you're not going to be running the daemon or
     using the plugins, you may omit the creation of this directory.</para>
 @z

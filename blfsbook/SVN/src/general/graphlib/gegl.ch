@@ -206,12 +206,12 @@
 
 @x
         <seg>gegl</seg>
-        <seg>libgegl-0.1.so, and libraries in /usr/lib/gegl-0.1/</seg>
-        <seg>/usr/include/gegl-0.1/</seg>
+        <seg>libgegl-0.2.so, and libraries in /usr/lib/gegl-0.2/</seg>
+        <seg>/usr/include/gegl-0.2/</seg>
 @y
         <seg>gegl</seg>
-        <seg>libgegl-0.1.so と /usr/lib/gegl-0.1 内のライブラリ</seg>
-        <seg>/usr/include/gegl-0.1/</seg>
+        <seg>libgegl-0.2.so と /usr/lib/gegl-0.2 内のライブラリ</seg>
+        <seg>/usr/include/gegl-0.2/</seg>
 @z
 
 @x
