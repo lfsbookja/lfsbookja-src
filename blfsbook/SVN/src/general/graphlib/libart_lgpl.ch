@@ -74,6 +74,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required patch: <ulink
+@y
+        <para>必須のパッチ: <ulink
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libart_lgpl"/></para>
 @y

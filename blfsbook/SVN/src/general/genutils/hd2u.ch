@@ -14,6 +14,12 @@
 @z
 
 @x
+<!ENTITY hd2u-time          "less than 0.1 SBU">
+@y
+<!ENTITY hd2u-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to Hd2u</title>
 @y
     <title>&IntroductionTo1;Hd2u&IntroductionTo2;</title>

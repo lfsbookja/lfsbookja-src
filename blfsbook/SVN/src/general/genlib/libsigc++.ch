@@ -77,6 +77,12 @@
 @z
 
 @x
+    <para condition="html" role="usernotes">User Notes:
+@y
+    <para condition="html" role="usernotes">&UserNotes;:
+@z
+
+@x
     <title>Installation of libsigc++</title>
 @y
     <title>&InstallationOf1;libsigc++&InstallationOf2;</title>

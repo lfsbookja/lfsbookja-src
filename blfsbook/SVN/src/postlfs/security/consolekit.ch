@@ -150,8 +150,7 @@
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して
-    <application>ConsoleKit</application> をビルドします。
+    以下のコマンドを実行して <application>ConsoleKit</application> をビルドします。
     </para>
 @z
 
@@ -269,7 +268,7 @@
         ck-log-system-restart, ck-log-system-start, ck-log-system-stop,
         console-kit-daemon, ck-collect-session-info, ck-get-x11-display-device,
         ck-get-x11-server-pid, ck-system-restart, ck-system-stop</seg>
-        <seg>libck-connector.so pam_ck_connector.so</seg>
+        <seg>libck-connector.so, pam_ck_connector.so</seg>
         <seg>/etc/ConsoleKit/{run-seat.d,run-session.d,seats.d},
         /usr/{include/ConsoleKit/ck-connector,lib/ConsoleKit/{run-seat.d,
         run-session.d,scripts},share/doc/ConsoleKit/spec}</seg>

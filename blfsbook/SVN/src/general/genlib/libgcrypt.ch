@@ -99,7 +99,7 @@
     <para role="optional"><xref linkend="pth"/> and
     <xref linkend="libcap2"/></para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="pth"/>,
     <xref linkend="libcap2"/></para>
 @z

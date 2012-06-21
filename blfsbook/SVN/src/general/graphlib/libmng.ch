@@ -144,6 +144,15 @@
 @z
 
 @x
+    <para><command>sed -i -e 's/unroll-loops/&amp; -fPIC/' Makefile</command>: 
+    Add a gcc option to make the build compatible with x86_64 systems.</para>
+@y
+    <para><command>sed -i -e 's/unroll-loops/&amp; -fPIC/' Makefile</command>: 
+    x86_64 システムとの互換性を保ったビルドを行うために gcc のオプションを追加します。
+    </para>
+@z
+
+@x
     <para><command>install ...</command>: The documentation files are not
     installed by the installation procedure, so they are copied manually.</para>
 @y

@@ -81,7 +81,7 @@
 @x
     <bridgehead renderas="sect3">boost Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;boost&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Boost&Dependencies2;</bridgehead>
 @z
 
 @x

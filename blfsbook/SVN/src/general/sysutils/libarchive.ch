@@ -134,6 +134,21 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--disable-static</option>: This option prevents building the 
+    static archive versions of the libraries.</para>
+@y
+    <para><option>--disable-static</option>:
+    このオプションはスタティックライブラリをビルドしないようにします。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

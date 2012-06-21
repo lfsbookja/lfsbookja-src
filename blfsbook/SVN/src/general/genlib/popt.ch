@@ -36,6 +36,18 @@
 @z
 
 @x
+    <note><para>Popt is now part of LFS. If you are using a system which includes it,
+    there is nothing more to do. If not (e.g. LFS releases up to and including 7.1),
+    you should follow these instructions.</para></note>
+@y
+    <note><para>
+    Popt は現在 LFS に含まれるようになりました。
+    これを含めたシステムを構築済であれば、それ以上に何もする必要はありません。
+    構築未済である場合 (例えば LFS が 7.1 以前である場合など) は、ここに示す手順に従ってください。
+    </para></note>
+@z
+
+@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>

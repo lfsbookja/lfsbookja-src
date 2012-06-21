@@ -140,6 +140,30 @@
 @z
 
 @x
+    <title>Configuring fuse</title>
+@y
+    <title>&Configuring1;fuse&Configuring2;</title>
+@z
+
+@x
+      <title>Config Files</title>
+@y
+      <title>&ConfigFiles;</title>
+@z
+
+@x
+      <para>Some options regarding mount policy can be set in the file
+      <filename>/etc/fuse.conf</filename>.  To install the file run the
+      following command as the  <systemitem class="username">root</systemitem>
+      user:</para>
+@y
+      <para>
+      マウントの方針に基づいた設定は、<filename>/etc/fuse.conf</filename> にて行うことができます。
+      このファイルを生成するために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -210,7 +234,7 @@
 @x libfuse.so
             contains the Fuse API functions.
 @y
-            contains the Fuse API functions.
+            Fuse API 関数を提供します。
 @z
 
 @x libulockmgr.so

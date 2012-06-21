@@ -91,6 +91,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+    <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/libdrm"/></para>
 @y
@@ -152,9 +164,10 @@
     enables use of OMAP's experimental kernel API. OMAP is a series of 
     system-on-chips (SoCs) developed by Texas Instruments.</para>
 @y
-    <para><option>--enable-omap-experimental-api</option>: This option 
-    enables use of OMAP's experimental kernel API. OMAP is a series of 
-    system-on-chips (SoCs) developed by Texas Instruments.</para>
+    <para><option>--enable-omap-experimental-api</option>:
+    このオプションは OMAP の実験的なカーネル API を有効にすることを指示します。
+    OMAP はテキサスインスツルメンツ社 (Texax Instruments) によって開発された、一連のシステムオンチップ (SoC) の一つです。
+    </para>
 @z
 
 @x

@@ -175,6 +175,15 @@
 @z
 
 @x
+    <para>If you downloaded the optional set of <application>Vim</application> patches, 
+    apply them now:</para>
+@y
+    <para>
+    任意の <application>Vim</application> のパッチをダウンロードしている場合は、以下のコマンドによりそれを適用します。
+    </para>
+@z
+
+@x
     <para>If desired, unpack the translated messages archive:</para>
 @y
     <para>必要であれば翻訳メッセージのアーカイブを解凍します。</para>
@@ -265,25 +274,13 @@
     <title>&CommandExplanations;</title>
 @z
 
-% @x
-%     <para><command>patch &hellip;</command>: These patches are the same as the
-%     ones in the LFS build used to update the package with upstream patches
-%     and ensure the man pages are placed in the proper locations.</para>
-% @y
-%     <para>
-%     <command>patch &hellip;</command>:
-%     これらのパッチは LFS にて用いたものと同じです。
-%     アップストリームによるパッチであり、man ページを適切なディレクトリにインストールするようにします。
-%     </para>
-% @z
-
 @x
     <para><parameter>--with-features=huge</parameter>: This switch enables all
     the additional features available in <application>Vim</application>.</para>
 @y
     <para>
     <parameter>--with-features=huge</parameter>:
-    このパラメーターは <application>Vim</application> における追加機能を実現します。
+    このスイッチは <application>Vim</application> における追加機能を実現します。
     </para>
 @z
 

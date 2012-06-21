@@ -118,17 +118,24 @@
       autotool files so that a shared library is built, the tests pass and the
       docs are installed where we want.
 @y
-      <command>sed -i 's#AC_PROG_RANLIB ...</command>: These seds massage the
-      autotool files so that a shared library is built, the tests pass and the
-      docs are installed where we want.
+      <command>sed -i 's#AC_PROG_RANLIB ...</command>:
+      この sed コマンドは、共有ライブラリのビルド、テストの正常実行、ドキュメントインストール先の適正化をそれぞれ行うように autotool ファイル類を修正します。
 @z
 
 @x
       <command>autoreconf -i</command>: This regenerates the configure script
       and the Makefile.in files and installs a missing file.
 @y
-      <command>autoreconf -i</command>: This regenerates the configure script
-      and the Makefile.in files and installs a missing file.
+      <command>autoreconf -i</command>:
+      このコマンドにより configure スクリプトや Makefile.in を再生成し、インストールするべきファイルを適切にインストールするようにします。
+@z
+
+@x
+      <option>--docdir=/usr/share/doc/libatomic_ops-&libatomic_ops-version;</option>:
+      This option installs the documentation in a versioned directory.
+@y
+      <option>--docdir=/usr/share/doc/libatomic_ops-&libatomic_ops-version;</option>:
+      このオプションはドキュメントのインストール先ディレクトリを、バージョン番号つきのものとします。
 @z
 
 @x

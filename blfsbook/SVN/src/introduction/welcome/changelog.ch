@@ -53,6 +53,136 @@
     <title>変更履歴</title>
 @z
 
+@x ----------------------------------------
+      <para>June 21st, 2012</para>
+@y
+      <para>2012/06/21</para>
+@z ----------------------------------------
+@x
+          <para>[dj] - Updated to OpenJDK-1.7.0.5.</para>
+@y
+          <para>[dj] - OpenJDK-1.7.0.5 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to blfs-bootscripts-20120620.</para>
+@y
+          <para>[dj] - blfs-bootscripts-20120620 へのアップデート。</para>
+@z
+
+@x ----------------------------------------
+      <para>June 17th, 2012</para>
+@y
+      <para>2012/06/17</para>
+@z ----------------------------------------
+@x
+          <para>[krejzi] - Removed Transcode as it is not
+          possible to build with recent FFMpeg.</para>
+@y
+          <para>[krejzi] - 最新の FFMpeg がビルドできるように Transcode を削除。</para>
+@z
+
+@x ----------------------------------------
+      <para>June 13th, 2012</para>
+@y
+      <para>2012/06/13</para>
+@z ----------------------------------------
+@x
+          <para>[abenton] - Updated Libatomic_Ops to 7.2.</para>
+@y
+          <para>[abenton] - Libatomic_Ops 7.2 へのアップデート。</para>
+@z
+@x
+          <para>[abenton] - Updated Gc to 7.2.</para>
+@y
+          <para>[abenton] - Gc 7.2 へのアップデート。</para>
+@z
+
+@x ----------------------------------------
+      <para>June 12th, 2012</para>
+@y
+      <para>June 12th, 2012</para>
+@z ----------------------------------------
+@x
+          <para>[dj] - Updated to util-macros-1.17.</para>
+@y
+          <para>[dj] - util-macros-1.17 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to makedepend-1.0.4.</para>
+@y
+          <para>[dj] - makedepend-1.0.4 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to libXau-1.0.7.</para>
+@y
+          <para>[dj] - libXau-1.0.7 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to libXdmcp-1.1.1.</para>
+@y
+          <para>[dj] - libXdmcp-1.1.1 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to xcb-proto-1.7.1.</para>
+@y
+          <para>[dj] - xcb-proto-1.7.1 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to libxcb-1.8.1.</para>
+@y
+          <para>[dj] - libxcb-1.8.1 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to xkeyboard-config-2.5.1.</para>
+@y
+          <para>[dj] - xkeyboard-config-2.5.1 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to xterm-279.</para>
+@y
+          <para>[dj] - xterm-279 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to xorg-server-1.12.2.</para>
+@y
+          <para>[dj] - xorg-server-1.12.2 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Updated to Xorg-7.7-1.</para>
+@y
+          <para>[dj] - Xorg-7.7-1 へのアップデート。</para>
+@z
+@x
+          <para>[dj] - Removed X.sh script from profile.d directory.</para>
+@y
+          <para>[dj] - profile.d ディレクトリから X.sh スクリプトを削除。</para>
+@z
+@x
+          <para>[abenton] - Updated MPlayer to 1.1.</para>
+@y
+          <para>[abenton] - MPlayer 1.1 へのアップデート。</para>
+@z
+@x
+          <para>[abenton] - Updated FFmpeg to 0.11.1.</para>
+@y
+          <para>[abenton] - FFmpeg 0.11.1 へのアップデート。</para>
+@z
+@x
+          <para>[abenton] - Updated Xine Lib to 1.2.2.</para>
+@y
+          <para>[abenton] - Xine Lib 1.2.2 へのアップデート。</para>
+@z
+@x
+          <para>[abenton] - Updated Xine Ui to 0.99.7.</para>
+@y
+          <para>[abenton] - Xine Ui 0.99.7 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Added Xorg Nouveau Driver.</para>
+@y
+          <para>[krejzi] - Xorg の Nouveau ドライバーの追加。</para>
+@z
+
 @x
       <para>May 2nd, 2012</para>
 @y

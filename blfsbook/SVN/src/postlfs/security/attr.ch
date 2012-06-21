@@ -133,6 +133,17 @@
 @z
 
 @x
+    <para><command>sed -i ... /usr/lib/libattr.la</command>: This command
+    corrects the location of the installed static library as referenced
+    in the libtool archive.</para>
+@y
+    <para>
+    <command>sed -i ... /usr/lib/libattr.la</command>:
+    このコマンドは、libtool アーカイブ内にて参照されるスタティックライブラリのインストール先を正しくします。
+    </para>
+@z
+
+@x
     <title>Configuring attr</title>
     <sect3><title>Configuration Information</title>
 @y
