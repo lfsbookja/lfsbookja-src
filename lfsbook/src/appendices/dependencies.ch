@@ -661,9 +661,9 @@ Typo ですが日本語訳には影響ありません。
          Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils</seg>
+          <seg>Diffutils. Less</seg>
 @y
-          <seg>Diffutils</seg>
+          <seg>Diffutils, Less</seg>
 @z
 @x
           <seg>Man-DB</seg>
@@ -784,9 +784,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Gzip</seg>
 @y
-          <seg>なし</seg>
+          <seg>Gzip</seg>
 @z
 
 %----------------------------------------------------------------------

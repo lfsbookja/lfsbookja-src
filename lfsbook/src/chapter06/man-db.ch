@@ -40,16 +40,6 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x PKG_CONFIG=, libpipeline_ ...
-          <para>These environment variables allow the configuration 
-          process to complete without the external <command>pkg-config</command> 
-          program.</para>
-@y
-          <para>
-          これらの環境変数は <command>pkg-config</command> プログラムが存在しなくても、ここでの処理が正常になるようにするものです。
-          </para>
-@z
-
 @x
           <para>This disables making the <command>man</command> program setuid
           to user <systemitem class="username">man</systemitem>.</para>

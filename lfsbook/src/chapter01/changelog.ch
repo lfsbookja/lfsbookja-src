@@ -48,6 +48,80 @@
 @z
 
 @x
+      <para>2012-06-23</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to XZ-5.0.4. Fixes
+           <ulink url="&lfs-ticket-root;3125">#3125</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Kmod-9. Fixes
+           <ulink url="&lfs-ticket-root;3124">#3124</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Psmisc-22.18. Fixes
+           <ulink url="&lfs-ticket-root;3123">#3123</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Man-DB-2.6.2. Fixes
+           <ulink url="&lfs-ticket-root;3122">#3122</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Gzip-1.5. Fixes
+           <ulink url="&lfs-ticket-root;3121">#3121</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to GCC-4.7.1. Fixes
+           <ulink url="&lfs-ticket-root;3117">#3117</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to E2fsprogs-1.42.4.  Fixes
+           <ulink url="&lfs-ticket-root;3116">#3116</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.4.3.  Fixes
+           <ulink url="&lfs-ticket-root;3114">#3114</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-06-23</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - XZ-5.0.4 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3125">#3125</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Kmod-9 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3124">#3124</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Psmisc-22.18 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3123">#3123</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Man-DB-2.6.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3122">#3122</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Gzip-1.5 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3121">#3121</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - GCC-4.7.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3117">#3117</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - E2fsprogs-1.42.4 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3116">#3116</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-3.4.3 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3114">#3114</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-06-17</para>
       <itemizedlist>
          <listitem>
