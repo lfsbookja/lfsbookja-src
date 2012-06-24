@@ -36,11 +36,11 @@
 @x
         The full url for this package is too long to fit on a page. The source 
         originates at 
-        <ulink url="ftp://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20110511/"/>
+        <ulink url="http://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20120614/"/>
 @y
         本パッケージに対する正確な url は長すぎるため、本節では表記しません。
-        正しい情報は <ulink
-        url="ftp://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20110511/"/> を参照してください。
+        正しい情報は 
+        <ulink url="http://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/20120614/"/> を参照してください。
 @z
 
 @x
@@ -51,21 +51,21 @@
 
 @x
           Download (HTTP): <ulink url="&mobile-broadband-provider-info-download-http;">
-          HTTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+          HTTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.xz
           </ulink>
 @y
           &Download; (HTTP): <ulink url="&mobile-broadband-provider-info-download-http;">
-          HTTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+          HTTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.xz
           </ulink>
 @z
 
 @x
            Download (FTP): <ulink url="&mobile-broadband-provider-info-download-ftp;">
-           FTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+           FTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.xz
            </ulink>
 @y
            &Download; (FTP): <ulink url="&mobile-broadband-provider-info-download-ftp;">
-           FTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.bz2
+           FTP link to mobile-broadband-provider-info-&mobile-broadband-provider-info-version;.tar.xz
            </ulink>
 @z
 

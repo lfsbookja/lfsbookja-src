@@ -35,45 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mesalib-download-http;"/></para>
+          Download (HTTP): <ulink url="&mesalib-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&mesalib-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&mesalib-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mesalib-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mesalib-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&mesalib-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&mesalib-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &mesalib-md5sum;</para>
+          Download MD5 sum: &mesalib-md5sum;
 @y
-        <para>&Download; MD5 sum: &mesalib-md5sum;</para>
+          &Download; MD5 sum: &mesalib-md5sum;
 @z
 
 @x
-        <para>Download size:
-        &mesalib-size;</para>
+          Download size: &mesalib-size;
 @y
-        <para>&DownloadSize;:
-        &mesalib-size;</para>
+          &DownloadSize;: &mesalib-size;
 @z
 
 @x
-        <para>Estimated disk space required:
-        &mesalib-buildsize;</para>
+          Estimated disk space required: &mesalib-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;:
-        &mesalib-buildsize;</para>
+          &Estimateddiskspacerequired;: &mesalib-buildsize;
 @z
 
 @x
-        <para>Estimated build time:
-        &mesalib-time;</para>
+          Estimated build time: &mesalib-time;
 @y
-        <para>&Estimatedbuildtime;:
-        &mesalib-time;</para>
+          &Estimatedbuildtime;: &mesalib-time;
 @z
 
 @x
