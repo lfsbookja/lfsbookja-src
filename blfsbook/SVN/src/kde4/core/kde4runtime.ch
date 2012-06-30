@@ -1,0 +1,226 @@
+%
+% This is part of LFSbookja package.
+%
+% This is a CTIE change file for the LFS hint text files.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
+@x
+<?xml version="1.0" encoding="ISO-8859-1"?>
+@y
+<?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+    <title>Introduction to Kde-runtime</title>
+@y
+    <title>&IntroductionTo1;Kde-runtime&IntroductionTo2;</title>
+@z
+
+@x
+    <para>Kde-runtime contains runtime applications and libraries essential 
+    for <application>KDE</application>.</para>
+@y
+    <para>
+    Kde-runtime は <application>KDE</application> の実行時に必要となるアプリケーションやライブラリを提供します。
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@y
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
+@z
+
+@x
+        <para>Download (HTTP): <ulink url="&kderuntime-download-http;"/></para>
+@y
+        <para>&Download; (HTTP): <ulink url="&kderuntime-download-http;"/></para>
+@z
+
+@x
+        <para>Download (FTP): <ulink url="&kderuntime-download-ftp;"/></para>
+@y
+        <para>&Download; (FTP): <ulink url="&kderuntime-download-ftp;"/></para>
+@z
+
+@x
+        <para>Download MD5 sum: &kderuntime-md5sum;</para>
+@y
+        <para>&Download; MD5 sum: &kderuntime-md5sum;</para>
+@z
+
+@x
+        <para>Download size: &kderuntime-size;</para>
+@y
+        <para>&DownloadSize;: &kderuntime-size;</para>
+@z
+
+@x
+        <para>Estimated disk space required: &kderuntime-buildsize;</para>
+@y
+        <para>&Estimateddiskspacerequired;: &kderuntime-buildsize;</para>
+@z
+
+@x
+        <para>Estimated build time: &kderuntime-time;</para>
+@y
+        <para>&Estimatedbuildtime;: &kderuntime-time;</para>
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required patch: <ulink
+@y
+        <para>必須のパッチ: <ulink
+@z
+
+@x
+    <bridgehead renderas="sect3">Kde-runtime Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Kde-runtime&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+    <xref linkend="kdelibs"/> and
+    <xref linkend="libtirpc"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+    <xref linkend="kdelibs"/>,
+    <xref linkend="libtirpc"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+    <xref linkend="libjpeg"/> and 
+    <xref linkend="exiv2"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+    <xref linkend="libjpeg"/>,
+    <xref linkend="exiv2"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+    <xref linkend="pulseaudio"/>, 
+    <xref linkend="xine-lib"/>, 
+    <xref linkend="libcanberra"/>, 
+    <xref linkend="samba3"/>, 
+    <ulink url="http://www.openslp.org/">OpenSLP</ulink>, 
+    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>, 
+    <ulink url="http://www.libssh.org/">LibSSH</ulink> and 
+    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+    <xref linkend="pulseaudio"/>, 
+    <xref linkend="xine-lib"/>, 
+    <xref linkend="libcanberra"/>, 
+    <xref linkend="samba3"/>, 
+    <ulink url="http://www.openslp.org/">OpenSLP</ulink>, 
+    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>, 
+    <ulink url="http://www.libssh.org/">LibSSH</ulink>,
+    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+    </para>
+@z
+
+@x
+    <para condition="html" role="usernotes">User Notes:
+@y
+    <para condition="html" role="usernotes">&UserNotes;:
+@z
+
+@x
+    <title>Installation of Kde-runtime</title>
+@y
+    <title>&InstallationOf1;Kde-runtime&InstallationOf2;</title>
+@z
+
+@x
+    <para>Install <application>kderuntime</application> by running the following
+    commands:</para>
+@y
+    <para>
+    以下のコマンドを実行して <application>kderuntime</application> をビルドします。
+    </para>
+@z
+
+@x
+    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@y
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+ <para><option>patch -Np1 -i ../kde-runt...</option>: This patch fixes linking 
+ to <application>libtirpc</application>.</para>
+@y
+ <para>
+ <option>patch -Np1 -i ../kde-runt...</option>:
+ このパッチは、<application>libtirpc</application> へのリンクを修正します。
+ </para>
+@z
+
+@x
+    <title>Contents</title>
+@y
+    <title>&Contents;</title>
+@z
+
+@x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@y
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
+@z
+
+@x
+	<seg>kcmshell4, kde4, kde4-menu, kdebugdialog, kde-cp, keditfiletype, 
+	kde-mv, kde-open, kfile4, kglobalaccel, khelpcenter, khotnewstuff4, 
+	khotnewstuff-upload, kiconfinder, kioclient, kmimetypefinder, knotify4, 
+	kreadconfig, ksvgtopng, ktraderclient, ktrash, kwriteconfig, kquitapp, 
+	kstart, kuiserver, kwalletd, nepomukbackup, nepomukcontroller, nepomukindexer, 
+	nepomukserver, nepomukservicestub and nepomuk-simpleresource-rcgen, plasmapkg, 
+	plasma-remote-helper and solid-hardware</seg>
+        <seg>several in &kde-dir;/lib</seg>
+        <seg>several in /etc/kde4, &kde-dir;/include and &kde-dir;/share</seg>
+@y
+	<seg>kcmshell4, kde4, kde4-menu, kdebugdialog, kde-cp, keditfiletype, 
+	kde-mv, kde-open, kfile4, kglobalaccel, khelpcenter, khotnewstuff4, 
+	khotnewstuff-upload, kiconfinder, kioclient, kmimetypefinder, knotify4, 
+	kreadconfig, ksvgtopng, ktraderclient, ktrash, kwriteconfig, kquitapp, 
+	kstart, kuiserver, kwalletd, nepomukbackup, nepomukcontroller, nepomukindexer, 
+	nepomukserver, nepomukservicestub and nepomuk-simpleresource-rcgen, plasmapkg, 
+	plasma-remote-helper, solid-hardware</seg>
+        <seg>&kde-dir;/lib 内に各種のライブラリ</seg>
+        <seg>/etc/kde4, &kde-dir;/include, &kde-dir;/share の各ディレクトリ</seg>
+@z
