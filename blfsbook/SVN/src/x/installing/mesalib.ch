@@ -82,10 +82,9 @@
       <xref linkend="expat"/>,
       <xref linkend="libdrm"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="makedepend"/>,
-      <xref linkend="talloc"/>, and
+      <xref linkend="makedepend"/> and
       <xref linkend="xorg7-lib"/>
-    </para>
+  </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
@@ -93,9 +92,8 @@
       <xref linkend="libdrm"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="makedepend"/>,
-      <xref linkend="talloc"/>,
       <xref linkend="xorg7-lib"/>
-    </para>
+  </para>
 @z
 
 @x

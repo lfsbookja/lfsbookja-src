@@ -144,10 +144,10 @@
 
 @x
         <seg>libusb-config</seg>
-        <seg>libusb.{so,a}</seg>
+        <seg>libusb.so</seg>
 @y
         <seg>libusb-config</seg>
-        <seg>libusb.{so,a}</seg>
+        <seg>libusb.so</seg>
 @z
 
 @x
@@ -156,7 +156,7 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libusb.{so,a}
+@x libusb.so
             is a library that is compatible with
             <application>libusb-0.1</application>, but uses
             <application>libusb-1.0</application> to provide functionality.

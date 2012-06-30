@@ -145,52 +145,58 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="optional"><xref linkend="expat"/>,
-    <xref linkend="freetype2"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libtiff"/>, and
-    <xref linkend="lcms2"/>.</para>
+    <para role="recommended">
+      <xref linkend="expat"/>,
+      <xref linkend="freetype2"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libtiff"/>, and
+      <xref linkend="lcms2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="optional"><xref linkend="expat"/>,
-    <xref linkend="freetype2"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libtiff"/>,
-    <xref linkend="lcms2"/>.</para>
+    <para role="recommended">
+      <xref linkend="expat"/>,
+      <xref linkend="freetype2"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="lcms2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="cairo"/>,
-    <xref linkend="fontconfig"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="jasper"/>,
-    <xref linkend="lcms"/>,
-    <xref linkend="libidn"/>,
-    <xref linkend="x-window-system"/>, and <ulink
-    url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>.</para>
+    <para role="optional">
+      <xref linkend="cairo"/>,
+      <xref linkend="fontconfig"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="jasper"/>,
+      <xref linkend="lcms"/>,
+      <xref linkend="libidn"/>,
+      <xref linkend="x-window-system"/> and
+      <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="cairo"/>,
-    <xref linkend="fontconfig"/>,
-    <xref linkend="gtk2"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="jasper"/>,
-    <xref linkend="lcms"/>,
-    <xref linkend="libidn"/>,
-    <xref linkend="x-window-system"/>, and <ulink
-    url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>.</para>
+    <para role="optional">
+      <xref linkend="cairo"/>,
+      <xref linkend="fontconfig"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="jasper"/>,
+      <xref linkend="lcms"/>,
+      <xref linkend="libidn"/>,
+      <xref linkend="x-window-system"/>,
+      <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gs"/></para>
+      User Notes: <ulink url="&blfs-wiki;/gs"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gs"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/gs"/>
 @z
 
 @x
@@ -200,77 +206,115 @@
 @z
 
 @x
-    <para>Install <application>GPL Ghostscript</application> by running the
-    following commands:</para>
+        The <application>Ghostscript</application> build system is not
+        user-friendly. In order to use system copies of various graphics
+        libraries, you must do it using unconventional methods.
 @y
-    <para>
-    以下のコマンドを実行して <application>GPL Ghostscript</application> をビルドします。
-    </para>
+        The <application>Ghostscript</application> build system is not
+        user-friendly. In order to use system copies of various graphics
+        libraries, you must do it using unconventional methods.
 @z
 
 @x
-      <para>The <application>Ghostscript</application> build system is not
-      user-friendly. In order to use system copies of various graphics
-      libraries, you must do it using unconventional methods.</para>
-@y
-      <para>
-      <application>Ghostscript</application> build system is not
-      user-friendly. In order to use system copies of various graphics
-      libraries, you must do it using unconventional methods.
-      </para>
-@z
-
-@x
-      <para><application>GPL Ghostscript</application> includes (old) copies of
+      <application>GPL Ghostscript</application> includes (old) copies of
       several libraries. Some of these seem to have been patched to fix known
       vulnerabilities, but others of these copies are less-well maintained.
       To ensure that any future fixes are applied throughout the whole system,
-      it is recommended that you install the released versions of these
+      it is recommended that you first install the released versions of these
       libraries and then configure <application>GPL Ghostscript</application>
-      to link to them.</para>
+      to link to them.
 @y
-      <para><application>GPL Ghostscript</application> includes (old) copies of
+      <application>GPL Ghostscript</application> includes (old) copies of
       several libraries. Some of these seem to have been patched to fix known
       vulnerabilities, but others of these copies are less-well maintained.
       To ensure that any future fixes are applied throughout the whole system,
-      it is recommended that you install the released versions of these
+      it is recommended that you first install the released versions of these
       libraries and then configure <application>GPL Ghostscript</application>
-      to link to them.</para>
+      to link to them.
 @z
 
 @x
-      <para>If you have installed these dependencies on your system, remove the
+      If you have installed these dependencies on your system, remove the
       copies of <application>expat</application>,
       <application>freetype</application>, <application>lcms2</application>,
       <application>libjpeg</application>, <application>libpng</application>,
       and <application>libtiff</application>:
-      </para>
 @y
-      <para>If you have installed these dependencies on your system, remove the
+      If you have installed these dependencies on your system, remove the
       copies of <application>expat</application>,
       <application>freetype</application>, <application>lcms2</application>,
       <application>libjpeg</application>, <application>libpng</application>,
       and <application>libtiff</application>:
-      </para>
 @z
 
 @x
-    <para>This package does not come with a test suite. However, you may test
-    the operation of the newly built <command>gs</command> program by
-    issuing the following command (issue from an X Windows terminal):</para>
+        If you have a multicore computer and try to run make with multiple
+        jobs (eg, make -j4) then the build may fail due to race conditions in
+        the <application>Ghostscript</application> build system. You can work
+        around that problem by simply running make again (eg,
+        <command>make -j4 || make -j4</command>).
 @y
-    <para>This package does not come with a test suite. However, you may test
-    the operation of the newly built <command>gs</command> program by
-    issuing the following command (issue from an X Windows terminal):</para>
+        If you have a multicore computer and try to run make with multiple
+        jobs (eg, make -j4) then the build may fail due to race conditions in
+        the <application>Ghostscript</application> build system. You can work
+        around that problem by simply running make again (eg,
+        <command>make -j4 || make -j4</command>).
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+        If you have installed Cups and your printer is <emphasis>not</emphasis>
+        a postscript printer you will need to add
+        <option>--with-install-cups</option> to the configure options below.
+        (This option makes Ghostscript compile and install the gstoraster filter
+        and the gstoraster.convs configuration file that allow Cups to convert a
+        PostScript file to raster.)
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+        If you have installed Cups and your printer is <emphasis>not</emphasis>
+        a postscript printer you will need to add
+        <option>--with-install-cups</option> to the configure options below.
+        (This option makes Ghostscript compile and install the gstoraster filter
+        and the gstoraster.convs configuration file that allow Cups to convert a
+        PostScript file to raster.)
+@z
+
+@x
+    <para>Compile <application>Ghostscript</application>:</para>
+@y
+    <para>Compile <application>Ghostscript</application>:</para>
+@z
+
+@x
+        The shared library depends on <xref linkend="gtk2"/>. It is only used in
+        external programs like <xref linkend="imagemagick"/>.
+@y
+        The shared library depends on <xref linkend="gtk2"/>. It is only used in
+        external programs like <xref linkend="imagemagick"/>.
+@z
+
+@x
+      To compile the shared library
+      <filename class="libraryfile">libgs.so</filename>, run the following
+      additional command as an unprivileged user:
+@y
+      To compile the shared library
+      <filename class="libraryfile">libgs.so</filename>, run the following
+      additional command as an unprivileged user:
+@z
+
+@x
+      This package does not come with a test suite. However, you may test the
+      operation of the newly built <command>gs</command> program by issuing the
+      following command (issue from an X Windows terminal):
+@y
+      This package does not come with a test suite. However, you may test the
+      operation of the newly built <command>gs</command> program by issuing the
+      following command (issue from an X Windows terminal):
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -286,21 +330,21 @@
 @z
 
 @x
-    <para>To finish the installation, unpack all fonts you've downloaded to
-    <filename class="directory">/usr/share/ghostscript</filename> and ensure
-    the ownerships of the files are
-    <systemitem class="username">root</systemitem>:
-    <systemitem class="groupname">root</systemitem>. Substitute
-    <replaceable>&lt;font-tarball&gt;</replaceable> appropriately in
-    the command below for the fonts you wish to install:</para>
+      To finish the installation, unpack all fonts you've downloaded to
+      <filename class="directory">/usr/share/ghostscript</filename> and ensure
+      the ownerships of the files are
+      <systemitem class="username">root</systemitem>:
+      <systemitem class="groupname">root</systemitem>. Substitute
+      <replaceable>&lt;font-tarball&gt;</replaceable> appropriately in the
+      command below for the fonts you wish to install:
 @y
-    <para>To finish the installation, unpack all fonts you've downloaded to
-    <filename class="directory">/usr/share/ghostscript</filename> and ensure
-    the ownerships of the files are
-    <systemitem class="username">root</systemitem>:
-    <systemitem class="groupname">root</systemitem>. Substitute
-    <replaceable>&lt;font-tarball&gt;</replaceable> appropriately in
-    the command below for the fonts you wish to install:</para>
+      To finish the installation, unpack all fonts you've downloaded to
+      <filename class="directory">/usr/share/ghostscript</filename> and ensure
+      the ownerships of the files are
+      <systemitem class="username">root</systemitem>:
+      <systemitem class="groupname">root</systemitem>. Substitute
+      <replaceable>&lt;font-tarball&gt;</replaceable> appropriately in the
+      command below for the fonts you wish to install:
 @z
 
 @x
@@ -310,11 +354,71 @@
 @z
 
 @x
-    <para><command>ln -v -s ghostscript /usr/include/ps</command>: Some packages
-    expect to find the interface headers in an alternate location.</para>
+      <command>rm -rf jasper lcms zlib</command>: The
+      <application>Ghostscript</application> build system defaults to using its
+      own version of <ulink url="http://www.openjpeg.org/">OpenJpeg</ulink> for
+      JPEG 2000 files <!-- I can't get it to compile using a system installed
+      version of openjpeg. It seems the ghostscript version has been heavily
+      modified... --> so we can all remove the jasper source. The default color
+      management system is now <application>lcms2</application> so the
+      <application>lcms</application> source is not needed.
+      <application>Zlib</application> was installed as part of LFS.
 @y
-    <para><command>ln -v -s ghostscript /usr/include/ps</command>: Some packages
-    expect to find the interface headers in an alternate location.</para>
+      <command>rm -rf jasper lcms zlib</command>: The
+      <application>Ghostscript</application> build system defaults to using its
+      own version of <ulink url="http://www.openjpeg.org/">OpenJpeg</ulink> for
+      JPEG 2000 files <!-- I can't get it to compile using a system installed
+      version of openjpeg. It seems the ghostscript version has been heavily
+      modified... --> so we can all remove the jasper source. The default color
+      management system is now <application>lcms2</application> so the
+      <application>lcms</application> source is not needed.
+      <application>Zlib</application> was installed as part of LFS.
+@z
+
+@x
+      <option>--with-system-libtiff</option>: Remove this option if you've not
+      installed <xref linkend="libtiff"/>.
+@y
+      <option>--with-system-libtiff</option>: Remove this option if you've not
+      installed <xref linkend="libtiff"/>.
+@z
+
+@x
+      <parameter>LIBS=-lz</parameter>: We use the LIBS variable to tell the
+      linker (ld) to link against the system installed
+      <application>zlib</application>.
+@y
+      <parameter>LIBS=-lz</parameter>: We use the LIBS variable to tell the
+      linker (ld) to link against the system installed
+      <application>zlib</application>.
+@z
+
+@x
+      <command>install -v -m644 base/*.h...</command>: Some packages
+      (<application>ImageMagick</application> is one) need the
+      <application>Ghostscript</application> interface headers in place to link
+      to the shared library. These commands install the headers.
+@y
+      <command>install -v -m644 base/*.h...</command>: Some packages
+      (<application>ImageMagick</application> is one) need the
+      <application>Ghostscript</application> interface headers in place to link
+      to the shared library. These commands install the headers.
+@z
+
+@x
+      <command>ln -v -s ghostscript /usr/include/ps</command>: Some packages
+      expect to find the interface headers in an alternate location.
+@y
+      <command>ln -v -s ghostscript /usr/include/ps</command>: Some packages
+      expect to find the interface headers in an alternate location.
+@z
+
+@x
+      <command>ln -sfv ../ghostscript-&gs-version;/doc ...</command>: This puts
+      a symbolic link to the documentation where it is expected to be found.
+@y
+      <command>ln -sfv ../ghostscript-&gs-version;/doc ...</command>: This puts
+      a symbolic link to the documentation where it is expected to be found.
 @z
 
 @x
@@ -334,27 +438,37 @@
 @z
 
 @x
-        <seg>bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
-        gsc (from soinstall), gsdj, gsdj500, gslj, gslp, gsnd, gsx
-        (from soinstall), lprsetup.sh, pdf2dsc, pdf2ps, pdfopt,
-        pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
-        ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh, and
-        wftopfa</seg>
+        <seg>
+          bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
+          gsc (from soinstall), gsdj, gsdj500, gslj, gslp, gsnd, gsx
+          (from soinstall), lprsetup.sh, pdf2dsc, pdf2ps, pdfopt,
+          pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
+          ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh, and
+          wftopfa
+        </seg>
         <seg>libgs.so</seg>
-        <seg>/usr/include/ghostscript, /usr/lib/ghostscript,
-        /usr/share/ghostscript, and
-        /usr/share/doc/ghostscript-&gs-version;</seg>
+        <seg>
+          /usr/include/ghostscript,
+          /usr/lib/ghostscript,
+          /usr/share/ghostscript and
+          /usr/share/doc/ghostscript-&gs-version;
+        </seg>
 @y
-        <seg>bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
-        gsc (from soinstall), gsdj, gsdj500, gslj, gslp, gsnd, gsx
-        (from soinstall), lprsetup.sh, pdf2dsc, pdf2ps, pdfopt,
-        pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
-        ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh, and
-        wftopfa</seg>
+        <seg>
+          bdftops, dumphint, dvipdf, eps2eps, fixmswrd.pl, font2c, gs, gsbj,
+          gsc (soinstall による), gsdj, gsdj500, gslj, gslp, gsnd, gsx
+          (soinstall による), lprsetup.sh, pdf2dsc, pdf2ps, pdfopt,
+          pf2afm, pfbtopfa, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12,
+          ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, pv.sh, unix-lpr.sh,
+          wftopfa
+        </seg>
         <seg>libgs.so</seg>
-        <seg>/usr/include/ghostscript, /usr/lib/ghostscript,
-        /usr/share/ghostscript, and
-        /usr/share/doc/ghostscript-&gs-version;</seg>
+        <seg>
+          /usr/include/ghostscript,
+          /usr/lib/ghostscript,
+          /usr/share/ghostscript,
+          /usr/share/doc/ghostscript-&gs-version;
+        </seg>
 @z
 
 @x
@@ -364,37 +478,33 @@
 @z
 
 @x gs
-          <para>is an interpreter for Adobe Systems' PostScript(tm) and Portable
-          Document Format (PDF).</para>
+            is an interpreter for Adobe Systems' PostScript(tm) and Portable
+            Document Format (PDF).
 @y
-          <para>is an interpreter for Adobe Systems' PostScript(tm) and Portable
-          Document Format (PDF).</para>
+            is an interpreter for Adobe Systems' PostScript(tm) and Portable
+            Document Format (PDF).
 @z
 
 @x libgs.so
-          <para>provides <application>Ghostscript</application> functionality
-          to other programs, such as <application>GSView</application>,
-          <application>ImageMagick</application>, and
-          <application>libspectre</application>.</para>
+            provides <application>Ghostscript</application> functionality to
+            other programs, such as <application>GSView</application>,
+            <application>ImageMagick</application>, and
+            <application>libspectre</application>.
 @y
-          <para>
-          provides <application>Ghostscript</application> functionality
-          to other programs, such as <application>GSView</application>,
-          <application>ImageMagick</application>, and
-          <application>libspectre</application>.
-          </para>
+            provides <application>Ghostscript</application> functionality to
+            other programs, such as <application>GSView</application>,
+            <application>ImageMagick</application>, and
+            <application>libspectre</application>.
 @z
 
 @x
-   <para><application>GPL Ghostscript</application> provides many different
-   scripts used to convert PostScript, PDF, and other formats. Please refer to
-   the HTML documentation or the man pages for information about the
-   capabilities provided.</para>
+     <application>GPL Ghostscript</application> provides many different
+     scripts used to convert PostScript, PDF, and other formats. Please refer to
+     the HTML documentation or the man pages for information about the
+     capabilities provided.
 @y
-   <para>
-   <application>GPL Ghostscript</application> provides many different
-   scripts used to convert PostScript, PDF, and other formats. Please refer to
-   the HTML documentation or the man pages for information about the
-   capabilities provided.
-   </para>
+     <application>GPL Ghostscript</application> provides many different
+     scripts used to convert PostScript, PDF, and other formats. Please refer to
+     the HTML documentation or the man pages for information about the
+     capabilities provided.
 @z

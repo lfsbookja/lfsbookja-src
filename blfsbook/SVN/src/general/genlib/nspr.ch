@@ -165,14 +165,6 @@
 @z
 
 @x
-      <command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>: This creates a 
-      pkg-config file to help other programs find the nspr libraries.
-@y
-      <command>cat &gt; /usr/lib/pkgconfig/nspr.pc ...</command>:
-      これは他のプログラムが nspr ライブラリを探し出せるように pkg-config ファイルを生成するものです。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

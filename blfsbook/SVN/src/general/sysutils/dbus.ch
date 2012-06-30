@@ -14,15 +14,15 @@
 @z
 
 @x
-    <title>Introduction to D-BUS</title>
+    <title>Introduction to D-Bus</title>
 @y
-    <title>&IntroductionTo1;D-BUS&IntroductionTo2;</title>
+    <title>&IntroductionTo1;D-Bus&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>D-BUS</application> is a message bus system, a simple
+    <para><application>D-Bus</application> is a message bus system, a simple
     way for applications to talk to one another.
-    <application>D-BUS</application> supplies both a system daemon (for events
+    <application>D-Bus</application> supplies both a system daemon (for events
     such as <quote>new hardware device added</quote> or <quote>printer queue
     changed</quote>) and a per-user-login-session daemon (for general IPC needs
     among user applications). Also, the message bus is built on top of a
@@ -30,9 +30,9 @@
     applications to communicate directly (without going through the message bus
     daemon).</para>
 @y
-    <para><application>D-BUS</application> is a message bus system, a simple
+    <para><application>D-Bus</application> is a message bus system, a simple
     way for applications to talk to one another.
-    <application>D-BUS</application> supplies both a system daemon (for events
+    <application>D-Bus</application> supplies both a system daemon (for events
     such as <quote>new hardware device added</quote> or <quote>printer queue
     changed</quote>) and a per-user-login-session daemon (for general IPC needs
     among user applications). Also, the message bus is built on top of a
@@ -84,9 +84,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">D-BUS Dependencies</bridgehead>
+    <bridgehead renderas="sect3">D-Bus Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;D-BUS&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;D-Bus&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -164,9 +164,9 @@
 @z
 
 @x
-    <title>Installation of D-BUS</title>
+    <title>Installation of D-Bus</title>
 @y
-    <title>&InstallationOf1;D-BUS&InstallationOf2;</title>
+    <title>&InstallationOf1;D-Bus&InstallationOf2;</title>
 @z
 
 @x
@@ -180,13 +180,13 @@
 @z
 
 @x
-    <para>Install <application>D-BUS</application> by running the following
+    <para>Install <application>D-Bus</application> by running the following
     commands (you may wish to review the output from
     <command>./configure --help</command> first and add any desired parameters
     to the <command>configure</command> command shown below):</para>
 @y
     <para>
-    以下のコマンドを実行して <application>D-BUS</application> をビルドします。
+    以下のコマンドを実行して <application>D-Bus</application> をビルドします。
     (<command>configure</command> コマンドに対しては、以下に示すパラメーター以外のものも必要になるかもしれません。
     実行する前に <command>./configure --help</command> を実行して出力内容を確認してください。)
     </para>
@@ -213,17 +213,6 @@
     </para>
 @z
 
-% @x
-%     <para>If you built the API documentation, install it by issuing the
-%     following commands as the <systemitem class="username">root</systemitem>
-%     user:</para>
-% @y
-%     <para>
-%     API ドキュメントをビルドした場合は
-%     <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してドキュメントをインストールしてください。
-%     </para>
-% @z
-
 @x
     <title>Command Explanations</title>
 @y
@@ -233,14 +222,14 @@
 @x
     <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This will
     install binaries meant to be only used internally by
-    <application>D-BUS</application>, and the directory
+    <application>D-Bus</application>, and the directory
     <filename class="directory">dbus-1</filename> into
     <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
     into <filename class="directory">/usr/libexec</filename>.</para>
 @y
     <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This will
     install binaries meant to be only used internally by
-    <application>D-BUS</application>, and the directory
+    <application>D-Bus</application>, and the directory
     <filename class="directory">dbus-1</filename> into
     <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
     into <filename class="directory">/usr/libexec</filename>.</para>
@@ -373,25 +362,22 @@
 
 @x
       <para>Note that this boot script only starts the system-wide
-      <application>D-BUS</application> daemon. Each user requiring access to
-      <application>D-BUS</application> services will also need to run a
+      <application>D-Bus</application> daemon. Each user requiring access to
+      <application>D-Bus</application> services will also need to run a
       session daemon as well. There are many methods you can use to start a
       session daemon using the <command>dbus-launch</command> command. Review
       the <command>dbus-launch</command> man page for details about the
       available parameters and options. Here are some suggestions and
       examples:</para>
 @y
-      <para>
-      このブートスクリプトは、システム共通の <application>D-BUS</application> デーモンを起動するにすぎません。
-      
-      Each user requiring access to
-      <application>D-BUS</application> services will also need to run a
+      <para>Note that this boot script only starts the system-wide
+      <application>D-Bus</application> daemon. Each user requiring access to
+      <application>D-Bus</application> services will also need to run a
       session daemon as well. There are many methods you can use to start a
       session daemon using the <command>dbus-launch</command> command. Review
       the <command>dbus-launch</command> man page for details about the
       available parameters and options. Here are some suggestions and
-      examples:
-      </para>
+      examples:</para>
 @z
 
 @x
@@ -486,7 +472,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -495,19 +481,17 @@
 @z
 
 @x
-        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-daemon-launch-helper,
-        dbus-launch, dbus-monitor, dbus-send and dbus-uuidgen</seg>
-        <seg>libdbus-1.{so,a}</seg>
-        <seg>/etc/dbus-1/{session.d,system.d}, /usr/{include/dbus-1.0/dbus,
-        lib/{dbus-1.0/include/dbus,dbus/dbus-1},share/dbus-1/{services,
-        system-services}}, /var/{lib/dbus,run/dbus}</seg>
+        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor, 
+	dbus-send and dbus-uuidgen</seg>
+        <seg>libdbus-1.so</seg>
+        <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0, 
+	/usr/share/dbus-1, /usr/share/doc/dbus-1.6.0 and /var/run/dbus</seg>
 @y
-        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-daemon-launch-helper,
-        dbus-launch, dbus-monitor, dbus-send, dbus-uuidgen</seg>
-        <seg>libdbus-1.{so,a}</seg>
-        <seg>/etc/dbus-1/{session.d,system.d}, /usr/{include/dbus-1.0/dbus,
-        lib/{dbus-1.0/include/dbus,dbus/dbus-1},share/dbus-1/{services,
-        system-services}}, /var/{lib/dbus,run/dbus}</seg>
+        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor, 
+	dbus-send, dbus-uuidgen</seg>
+        <seg>libdbus-1.so</seg>
+        <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0, 
+	/usr/share/dbus-1, /usr/share/doc/dbus-1.6.0, /var/run/dbus</seg>
 @z
 
 @x
@@ -525,14 +509,11 @@
 @z
 
 @x dbus-daemon
-          <para>is the <application>D-BUS</application> message bus
+          <para>is the <application>D-Bus</application> message bus
           daemon.</para>
 @y
-          <para>
-          
-          is the <application>D-BUS</application> message bus
-          daemon.
-          </para>
+          <para>is the <application>D-Bus</application> message bus
+          daemon.</para>
 @z
 
 @x dbus-launch
@@ -549,24 +530,18 @@
 
 @x dbus-monitor
           <para>is used to monitor messages going through a
-          <application>D-BUS</application> message bus.</para>
+          <application>D-Bus</application> message bus.</para>
 @y
-          <para>
-          
-          is used to monitor messages going through a
-          <application>D-BUS</application> message bus.
-          </para>
+          <para>is used to monitor messages going through a
+          <application>D-Bus</application> message bus.</para>
 @z
 
 @x dbus-send
-          <para>is used to send a message to a <application>D-BUS</application>
+          <para>is used to send a message to a <application>D-Bus</application>
           message bus.</para>
 @y
-          <para>
-          
-          is used to send a message to a <application>D-BUS</application>
-          message bus.
-          </para>
+          <para>is used to send a message to a <application>D-Bus</application>
+          message bus.</para>
 @z
 
 @x dbus-uuidgen
@@ -578,17 +553,17 @@
           </para>
 @z
 
-@x libdbus-1.{so,a}
+@x libdbus-1.so
           <para>contains the API functions used by the
-          <application>D-BUS</application> message daemon.
-          <application>D-BUS</application> is first a library that provides
+          <application>D-Bus</application> message daemon.
+          <application>D-Bus</application> is first a library that provides
           one-to-one communication between any two applications;
           <command>dbus-daemon</command> is an application that uses this
           library to implement a message bus daemon.</para>
 @y
           <para>contains the API functions used by the
-          <application>D-BUS</application> message daemon.
-          <application>D-BUS</application> is first a library that provides
+          <application>D-Bus</application> message daemon.
+          <application>D-Bus</application> is first a library that provides
           one-to-one communication between any two applications;
           <command>dbus-daemon</command> is an application that uses this
           library to implement a message bus daemon.</para>

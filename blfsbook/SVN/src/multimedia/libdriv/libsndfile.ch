@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libsndfile</application> package is a library of C
-    routines for reading and writing files containing sampled audio data.</para>
+      <application>Libsndfile</application> is a library of C routines for
+      reading and writing files containing sampled audio data.
 @y
-    <para>
-    <application>libsndfile</application> パッケージは、オーディオファイルの入出力を行うライブラリを提供するものであり C 言語により提供されます。
-    </para>
+      <application>Libsndfile</application> は、サンプルオーディオデータを含むファイルの入出力を行うライブラリを提供するものであり C 言語により提供されます。
 @z
 
 @x
@@ -78,26 +76,28 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="alsa-lib"/>,
-    <xref linkend="flac"/>,
-    <xref linkend="libogg"/>,
-    <xref linkend="libvorbis"/>, and
-    <xref linkend="sqlite"/></para>
+    <para role="optional">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="flac"/>,
+      <xref linkend="libogg"/>,
+      <xref linkend="libvorbis"/> and
+      <xref linkend="sqlite"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="alsa-lib"/>,
-    <xref linkend="flac"/>,
-    <xref linkend="libogg"/>,
-    <xref linkend="libvorbis"/>,
-    <xref linkend="sqlite"/></para>
+    <para role="optional">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="flac"/>,
+      <xref linkend="libogg"/>,
+      <xref linkend="libvorbis"/>,
+      <xref linkend="sqlite"/>
+    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libsndfile"/></para>
+      User Notes: <ulink url="&blfs-wiki;/libsndfile"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libsndfile"/></para>
+      &UserNotes;: <ulink url="&blfs-wiki;/libsndfile"/>
 @z
 
 @x
@@ -107,12 +107,10 @@
 @z
 
 @x
-    <para>Install <application>libsndfile</application> by running the following
-    commands:</para>
+      Install <application>libsndfile</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libsndfile</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libsndfile</application> をビルドします。
 @z
 
 @x
@@ -124,11 +122,9 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -148,21 +144,38 @@
 @z
 
 @x
-        <seg>sndfile-cmp,sndfile-concat,sndfile-convert,sndfile-deinterleave,
-        sndfile-info,sndfile-interleave,sndfile-metadata-get,
-        sndfile-metadata-set,sndfile-play,sndfile-regtest, and
-        sndfile-salvage</seg>
-        <seg>libsndfile.{so,a}</seg>
-        <seg>/usr/share/doc/libsndfile1-dev/html</seg>
+        <seg>
+          sndfile-cmp,
+          sndfile-concat,
+          sndfile-convert,
+          sndfile-deinterleave,
+          sndfile-info,
+          sndfile-interleave,
+          sndfile-metadata-get,
+          sndfile-metadata-set,
+          sndfile-play,
+          sndfile-regtest and
+          sndfile-salvage
+        </seg>
+        <seg>libsndfile.so</seg>
+        <seg>/usr/share/doc/libsndfile-&libsndfile-version;</seg>
 @y
-        <seg>sndfile-cmp,sndfile-concat,sndfile-convert,sndfile-deinterleave,
-        sndfile-info,sndfile-interleave,sndfile-metadata-get,
-        sndfile-metadata-set,sndfile-play,sndfile-regtest,
-        sndfile-salvage</seg>
-        <seg>libsndfile.{so,a}</seg>
-        <seg>/usr/share/doc/libsndfile1-dev/html</seg>
+        <seg>
+          sndfile-cmp,
+          sndfile-concat,
+          sndfile-convert,
+          sndfile-deinterleave,
+          sndfile-info,
+          sndfile-interleave,
+          sndfile-metadata-get,
+          sndfile-metadata-set,
+          sndfile-play,
+          sndfile-regtest,
+          sndfile-salvage
+        </seg>
+        <seg>libsndfile.so</seg>
+        <seg>/usr/share/doc/libsndfile-&libsndfile-version;</seg>
 @z
-
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>

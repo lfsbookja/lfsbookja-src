@@ -14,18 +14,6 @@
 @z
 
 @x
-  <!ENTITY db-buildsize     "264 MB (additional 100 MB to run parallel standard
-    test suite)">
-  <!ENTITY db-time          "0.8 SBU (add an additional 145 SBU to run parallel
-    standard test suite)">
-@y
-  <!ENTITY db-buildsize     "264 MB (additional 100 MB to run parallel standard
-    test suite)">
-  <!ENTITY db-time          "0.8 SBU (add an additional 145 SBU to run parallel
-    standard test suite)">
-@z
-
-@x
     <title>Introduction to Berkeley DB</title>
 @y
     <title>&IntroductionTo1;Berkeley DB&IntroductionTo2;</title>
@@ -90,15 +78,15 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->, and
+      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/> -->, and
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
-      <xref linkend="sharutils"/> (<command>uudecode</command> コマンドのため)
+      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/> -->,
+      <xref linkend="sharutils"/> (<command>uudecode</command> command コマンドのため)
     </para>
 @z
 
@@ -181,36 +169,36 @@
     <title>&InstallationOf1;Berkeley DB&InstallationOf2;</title>
 @z
 
-@x
-        If you plan on installing <application>Berkeley DB</application> with
-        Java support, you should check the system for certain versions of
-       <!-- <xref linkend="jdk"/> and--> <xref linkend="gmime"/>. Specifically, if
-        <application>JDK</application>-6 Update X and the
-        <command>uudecode</command> program from the
-        <application>GMime</application> program is on the system, the build
-        will fail (unless you run the modified <command>./configure</command>
-        command shown below). You can run two commands
-        (<command>javac -version</command> and
-        <command>uudecode --version</command>) to determine what versions are
-        installed. You can also download and run a shell script from
-        <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> that will alert you
-        to a non-working condition. If the identified programs exist on the
-        system, you must modify the <command>./configure</command> command as
-        shown below.
-@y
-        <application>Berkeley DB</application> のインストールにあたって Java サポートを有効にする場合は、<xref
-        linkend="gmime"/> の適正なバージョンがシステムにインストールされている必要があります。
-        <application>JDK</application>-6 Update X と <application>GMime</application> パッケージによる <command>uudecode</command> プログラムがインストールされている場合にはビルドに失敗します。
-        (以下に示す修正版の <command>./configure</command> コマンド実行を行えば解消します。)
-        二つのコマンド、<command>javac -version</command> と <command>uudecode --version</command> を実行して、どのバージョンがインストールされているかを確認してください。
-        <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> にてシェルスクリプトをダウンロードすることができ、これを用いて不適切であるかどうかを確認することもできます。
-        不適切なバージョンがシステムにインストールされていたら、<command>./configure</command> コマンドの実行を、以下のように修正してください。
-@z
-@x
-<screen><userinput>uudecode="no" ../dist/configure --(use the parameters shown below)</userinput></screen>
-@y
-<screen><userinput>uudecode="no" ../dist/configure --(以下に示すパラメーター)</userinput></screen>
-@z
+% @x
+%         If you plan on installing <application>Berkeley DB</application> with
+%         Java support, you should check the system for certain versions of
+%        <!-- <xref linkend="jdk"/> and--> <xref linkend="gmime"/>. Specifically, if
+%         <application>JDK</application>-6 Update X and the
+%         <command>uudecode</command> program from the
+%         <application>GMime</application> program is on the system, the build
+%         will fail (unless you run the modified <command>./configure</command>
+%         command shown below). You can run two commands
+%         (<command>javac -version</command> and
+%         <command>uudecode --version</command>) to determine what versions are
+%         installed. You can also download and run a shell script from
+%         <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> that will alert you
+%         to a non-working condition. If the identified programs exist on the
+%         system, you must modify the <command>./configure</command> command as
+%         shown below.
+% @y
+%         <application>Berkeley DB</application> のインストールにあたって Java サポートを有効にする場合は、<xref
+%         linkend="gmime"/> の適正なバージョンがシステムにインストールされている必要があります。
+%         <application>JDK</application>-6 Update X と <application>GMime</application> パッケージによる <command>uudecode</command> プログラムがインストールされている場合にはビルドに失敗します。
+%         (以下に示す修正版の <command>./configure</command> コマンド実行を行えば解消します。)
+%         二つのコマンド、<command>javac -version</command> と <command>uudecode --version</command> を実行して、どのバージョンがインストールされているかを確認してください。
+%         <ulink url="&files-anduin;/jdk-uudecode-check.sh"/> にてシェルスクリプトをダウンロードすることができ、これを用いて不適切であるかどうかを確認することもできます。
+%         不適切なバージョンがシステムにインストールされていたら、<command>./configure</command> コマンドの実行を、以下のように修正してください。
+% @z
+% @x
+% <screen><userinput>uudecode="no" ../dist/configure --(use the parameters shown below)</userinput></screen>
+% @y
+% <screen><userinput>uudecode="no" ../dist/configure --(以下に示すパラメーター)</userinput></screen>
+% @z
 
 @x
       Install <application>Berkeley DB</application> by running the following
@@ -245,47 +233,27 @@
 @z
 
 @x
-      <parameter>--enable-compat185</parameter>: This switch enables building
+      <option>--enable-compat185</option>: This switch enables building
       the DB-1.85 compatibility API.
 @y
-      <parameter>--enable-compat185</parameter>:
-      このパラメーターは、DB-1.85 互換 API をビルドすることを指定します。
+      <option>--enable-compat185</option>:
+      このスイッチは、DB-1.85 互換 API をビルドすることを指定します。
 @z
 
 @x
-      <parameter>--enable-cxx</parameter>: This switch enables building C++ API
+      <option>--enable-cxx</option>: This switch enables building C++ API
       libraries.
 @y
-      <parameter>--enable-cxx</parameter>:
-      このパラメーターは C++ API ライブラリをビルドすることを指定します。
+      <option>--enable-cxx</option>:
+      このスイッチは C++ API ライブラリをビルドすることを指定します。
 @z
 
 @x
-      <parameter>--enable-tcl --with-tcl=/usr/lib</parameter>: Enables
-      <application>Tcl</application> support in DB and creates the
-      <filename class="libraryfile">libdb_tcl</filename> libraries.
-@y
-      <parameter>--enable-tcl --with-tcl=/usr/lib</parameter>:
-      DB において <application>Tcl</application> サポートを有効にします。
-      また <filename class="libraryfile">libdb_tcl</filename> ライブラリを生成します。
-@z
-
-@x
-      <parameter>--enable-dbm</parameter>: Enables legacy interface support
+      <option>--enable-dbm</option>: Enables legacy interface support
       needed by some older packages.
 @y
-      <parameter>--enable-dbm</parameter>: 
+      <option>--enable-dbm</option>: 
       古いパッケージが必要としている、かつてのインターフェースサポートを有効にします。
-@z
-
-@x
-      <parameter>--enable-java</parameter>: Enables
-      <application>Java</application> support in DB and creates the
-      <filename class="libraryfile">libdb_java</filename> libraries.
-@y
-      <parameter>--enable-java</parameter>:
-      <application>Java</application> サポートを有効にします。
-      また <filename class='libraryfile'>libdb_java</filename> ライブラリを生成します。
 @z
 
 @x
@@ -308,6 +276,26 @@
 @z
 
 @x
+      <option>--enable-tcl --with-tcl=/usr/lib</option>: Enables
+      <application>Tcl</application> support in DB and creates the
+      <filename class="libraryfile">libdb_tcl</filename> libraries.
+@y
+      <option>--enable-tcl --with-tcl=/usr/lib</option>:
+      DB において <application>Tcl</application> サポートを有効にします。
+      また <filename class="libraryfile">libdb_tcl</filename> ライブラリを生成します。
+@z
+
+@x
+      <option>--enable-java</option>: Enables
+      <application>Java</application> support in DB and creates the
+      <filename class="libraryfile">libdb_java</filename> libraries.
+@y
+      <option>--enable-java</option>:
+      <application>Java</application> サポートを有効にします。
+      また <filename class='libraryfile'>libdb_java</filename> ライブラリを生成します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -325,22 +313,46 @@
 
 @x
         <seg>
-          db_archive, db_checkpoint, db_deadlock, db_dump, db_hotbackup,
-          db_load, db_log_verify, db_printlog, db_recover, db_replicate,
-          db_stat, db_tuner, db_upgrade and db_verify.
+          db_archive,
+          db_checkpoint,
+          db_deadlock,
+          db_dump,
+          db_hotbackup,
+          db_load,
+          db_log_verify,
+          db_printlog,
+          db_recover,
+          db_replicate,
+          db_stat,
+          db_tuner,
+          db_upgrade and
+          db_verify.
         </seg>
         <seg>
-          libdb.so, libdb_cxx.so, libdb_java.so, libdb_tcl.so and db.jar.
+          libdb.so and
+          libdb_cxx.so
         </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>
 @y
         <seg>
-          db_archive, db_checkpoint, db_deadlock, db_dump, db_hotbackup,
-          db_load, db_log_verify, db_printlog, db_recover, db_replicate,
-          db_stat, db_tuner, db_upgrade, db_verify
+          db_archive,
+          db_checkpoint,
+          db_deadlock,
+          db_dump,
+          db_hotbackup,
+          db_load,
+          db_log_verify,
+          db_printlog,
+          db_recover,
+          db_replicate,
+          db_stat,
+          db_tuner,
+          db_upgrade,
+          db_verify.
         </seg>
         <seg>
-          libdb.so, libdb_cxx.so, libdb_java.so, libdb_tcl.so, db.jar.
+          libdb.so,
+          libdb_cxx.so
         </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>
 @z

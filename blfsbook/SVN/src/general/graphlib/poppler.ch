@@ -123,31 +123,25 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="fontconfig"/> and
-      <xref linkend="glib2"/>
-    </para>
+    <para role="required"><xref linkend="fontconfig"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="fontconfig"/>,
-      <xref linkend="glib2"/>
-    </para>
+    <para role="required"><xref linkend="fontconfig"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libjpeg"/>,
-      <xref linkend="cairo"/> and
-      <xref linkend="openjpeg"/>.
+      <xref linkend="cairo"/>,
+      <xref linkend="libjpeg"/> and
+      <xref linkend="libpng"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libjpeg"/>,
       <xref linkend="cairo"/>,
-      <xref linkend="openjpeg"/>
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>
     </para>
 @z
 
@@ -158,7 +152,8 @@
       <xref linkend="gtk2"/>,
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="libxml2"/> and
+      <xref linkend="libxml2"/>,
+      <xref linkend="openjpeg"/> and
       <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
       is needed for PDF support in <application>Okular</application>).
     </para>
@@ -167,9 +162,10 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
+      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="openjpeg"/>,
       <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
       is needed for PDF support in <application>Okular</application>).
     </para>
@@ -185,16 +181,6 @@
     <title>Installation of Poppler</title>
 @y
     <title>&InstallationOf1;Poppler&InstallationOf2;</title>
-@z
-
-@x
-      If you have installed <xref linkend="lcms2"/> and would like
-      <application>Poppler</application> to use it, apply the
-      <application>Lcms 2</application> patch:
-@y
-      If you have installed <xref linkend="lcms2"/> and would like
-      <application>Poppler</application> to use it, apply the
-      <application>Lcms 2</application> patch:
 @z
 
 @x
@@ -250,12 +236,12 @@
 @z
 
 @x
-      <parameter>-enable-zlib</parameter>: This parameter makes
+      <option>--enable-zlib</option>: This option makes
       <application>Poppler</application> link with the system-installed
       <filename class='libraryfile'>libz</filename> library to enable compressed
       PDF functionality.
 @y
-      <parameter>-enable-zlib</parameter>: This parameter makes
+      <option>--enable-zlib</option>: This option makes
       <application>Poppler</application> link with the system-installed
       <filename class='libraryfile'>libz</filename> library to enable compressed
       PDF functionality.
@@ -279,29 +265,55 @@
 
 @x
         <seg>
-          pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
-          pdftoppm, pdftops, pdftotext, pdfunite and poppler-glib-demo
+          pdffonts,
+          pdfimages,
+          pdfinfo,
+          pdfseparate,
+          pdftocairo,
+          pdftohtml,
+          pdftoppm,
+          pdftops,
+          pdftotext,
+          pdfunite and
+          poppler-glib-demo
         </seg>
         <seg>
-          libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so and
+          libpoppler.so,
+          libpoppler-cpp.so,
+          libpoppler-glib.so and
           libpoppler-qt4.so
         </seg>
         <seg>
-          /usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
-          /usr/share/gtk-doc/html/poppler and /usr/share/poppler
+          /usr/include/poppler,
+          /usr/share/doc/poppler-&poppler-version;,
+          /usr/share/gtk-doc/html/poppler and
+          /usr/share/poppler
         </seg>
 @y
         <seg>
-          pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml,
-          pdftoppm, pdftops, pdftotext, pdfunite, poppler-glib-demo
+          pdffonts,
+          pdfimages,
+          pdfinfo,
+          pdfseparate,
+          pdftocairo,
+          pdftohtml,
+          pdftoppm,
+          pdftops,
+          pdftotext,
+          pdfunite,
+          poppler-glib-demo
         </seg>
         <seg>
-          libpoppler.so, libpoppler-cpp.so, libpoppler-glib.so,
+          libpoppler.so,
+          libpoppler-cpp.so,
+          libpoppler-glib.so,
           libpoppler-qt4.so
         </seg>
         <seg>
-          /usr/include/poppler, /usr/share/doc/poppler-&poppler-version;,
-          /usr/share/gtk-doc/html/poppler and /usr/share/poppler
+          /usr/include/poppler,
+          /usr/share/doc/poppler-&poppler-version;,
+          /usr/share/gtk-doc/html/poppler,
+          /usr/share/poppler
         </seg>
 @z
 

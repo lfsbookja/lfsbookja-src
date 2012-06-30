@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>libusb</application> package contains a library
-    used by some applications for USB device access.</para>
+      The <application>libusb</application> package contains a library
+      used by some applications for USB device access.
 @y
-    <para>
-    <application>libusb</application> パッケージは、USB デバイスへのアクセスを行うアプリケーションが利用するライブラリを提供します。
-    </para>
+      <application>libusb</application> パッケージは、USB デバイスへのアクセスを行うアプリケーションが利用するライブラリを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libusb-download-http;"/></para>
+          Download (HTTP): <ulink url="&libusb-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libusb-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libusb-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libusb-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libusb-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libusb-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libusb-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libusb-md5sum;</para>
+          Download MD5 sum: &libusb-md5sum;
 @y
-        <para>&Download; MD5 sum: &libusb-md5sum;</para>
+          &Download; MD5 sum: &libusb-md5sum;
 @z
 
 @x
-        <para>Download size: &libusb-size;</para>
+          Download size: &libusb-size;
 @y
-        <para>&DownloadSize;: &libusb-size;</para>
+          &DownloadSize;: &libusb-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libusb-buildsize;</para>
+          Estimated disk space required: &libusb-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libusb-buildsize;</para>
+          &Estimateddiskspacerequired;: &libusb-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libusb-time;</para>
+          Estimated build time: &libusb-time;
 @y
-        <para>&Estimatedbuildtime;: &libusb-time;</para>
+          &Estimatedbuildtime;: &libusb-time;
 @z
 
 @x
@@ -83,21 +81,21 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional
-    (Required to Build the API Documentation)</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional;
-    (API ドキュメント生成時に必要)</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libusb"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libusb"/></para>
 @z
 
 @x
@@ -107,44 +105,36 @@
 @z
 
 @x
-    <para>Install <application>libusb</application> by running the following
-    commands:</para>
+      Install <application>libusb</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libusb</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libusb</application> をビルドします。
 @z
 
 @x
-    <para>If <application>Doxygen</application> is installed and you wish to
-    build the API documentation, issue the following command:</para>
+      If <application>Doxygen</application> is installed and you wish to
+      build the API documentation, issue the following command:
 @y
-    <para>
-    <application>Doxygen</application> をインストールしていて API ドキュメントをビルドしたい場合は、以下のコマンドを実行します。
-    </para>
+      <application>Doxygen</application> をインストールしていて API ドキュメントをビルドしたい場合は、以下のコマンドを実行します。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you built the API documentation, install it using the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      If you built the API documentation, install it using the following
+      commands as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    API ドキュメントをビルドした場合、<systemitem class="username">root</systemitem> ユーザーのまま、以下を実行してドキュメントをインストールします。
-    </para>
+      API ドキュメントをビルドした場合、<systemitem class="username">root</systemitem> ユーザーのまま、以下を実行してドキュメントをインストールします。
 @z
 
 @x
@@ -154,26 +144,28 @@
 @z
 
 @x
-    <para id="libusb-kernel">To access raw USB devices (those not treated as a
-    disk by the mass-storage driver), appropriate support must be available in
-    the kernel.  Check your kernel configuration for Device Drivers &rArr; USB
-    support &rArr; Support for Host-side USB.  Select any USB hardware device
-    drivers you may need on the same page.</para>
+      To access raw USB devices (those not treated as a disk by the mass-storage
+      driver), appropriate support must be available in the kernel.  Check your
+      kernel configuration for Device Drivers &rArr; USB support &rArr; Support
+      for Host-side USB.  Select any USB hardware device drivers you may need
+      on the same page.
 @y
-    <para id="libusb-kernel">
-    USB のローデバイス (大容量ディスクドライバーでは扱うことができない) へアクセスするには、カーネルによる適切な機能サポートが必要となります。
-    カーネルの設定にて Device Drivers &rArr; USB support &rArr; Support for Host-side USB を確認してください。
-    設定ページでは、必要としている USB ハードウェアデバイスをすべて選択してください。
-    </para>
+      USB のローデバイス (大容量ディスクドライバーでは扱うことができない) へアクセスするには、カーネルによる適切な機能サポートが必要となります。
+      カーネルの設定にて Device Drivers &rArr; USB support &rArr; Support for Host-side USB を確認してください。
+      設定ページでは、必要としている USB ハードウェアデバイスをすべて選択してください。
 @z
 
 @x
-    <para>For more details on setting up USB devices, see <xref
-    linkend="usb-device-issues"/>.  </para>
+      <primary sortas="d-USB-device-filesystem">Support for Host-side USB</primary>
 @y
-    <para>
-    USB デバイスの設定に関する詳細は <xref linkend="usb-device-issues"/> を参照してください。
-    </para>
+      <primary sortas="d-USB-device-filesystem">Support for Host-side USB</primary>
+@z
+
+@x
+      For more details on setting up USB devices, see <xref
+      linkend="usb-device-issues"/>.
+@y
+      USB デバイスの設定に関する詳細は <xref linkend="usb-device-issues"/> を参照してください。
 @z
 
 @x
@@ -183,25 +175,29 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libusb-1.0.{so,a}</seg>
-        <seg>/usr/include/libusb-1.0 and
-        /usr/share/doc/libusb-&libusb-version;</seg>
+        <seg>
+          libusb-1.0.so
+        </seg>
+        <seg>
+          /usr/include/libusb-1.0 and
+          /usr/share/doc/libusb-&libusb-version;
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libusb-1.0.{so,a}</seg>
-        <seg>/usr/include/libusb-1.0,
-        /usr/share/doc/libusb-&libusb-version;</seg>
+        <seg>
+          libusb-1.0.so
+        </seg>
+        <seg>
+          /usr/include/libusb-1.0,
+          /usr/share/doc/libusb-&libusb-version;
+        </seg>
 @z
 
 @x
@@ -211,10 +207,7 @@
 @z
 
 @x libusb-1.0.{so,a}
-          <para> libraries contain C functions for accessing
-          USB hardware.</para>
+            contains API functions used for accessing USB hardware.
 @y
-          <para>
-          USB ハードウェアにアクセスするための C 関数を提供します。
-          </para>
+            USB ハードウェアにアクセスするための API 関数を提供します。
 @z

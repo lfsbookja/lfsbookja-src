@@ -192,12 +192,12 @@
 @x
       <para>To test the results, issue: <command>make check</command>. Note that
       more comprehensive tests can be run by following the same method used in
-      <application>D-BUS</application> instructions, which requires building the
+      <application>D-Bus</application> instructions, which requires building the
       package twice.</para>
 @y
       <para>
       ビルド結果をテストする場合は <command>make check</command> を入力します。
-      より総括的なテストも実施することができますが、それは <application>D-BUS</application> パッケージにおける手順と同様に行います。
+      より総括的なテストも実施することができますが、それは <application>D-Bus</application> パッケージにおける手順と同様に行います。
       その場合にはこのパッケージを二度ビルドしなければなりません。
       </para>
 @z
@@ -234,25 +234,27 @@
 @z
 
 @x
-        <segtitle>Installed Program</segtitle>
-        <segtitle>Installed Library</segtitle>
+        <segtitle>Installed Programs</segtitle>
+        <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
+        <segtitle>&InstalledPrograms;</segtitle>
+        <segtitle>&InstalledLibraries;</segtitle>
+        <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
           <seg>dbus-binding-tool</seg>
-          <seg>libdbus-glib-1.{so,a}</seg>
-          <seg>/etc/bash_completion.d, /usr/share/gtk-doc/html/dbus-glib, and
-          optionally /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
+          <seg>libdbus-glib-1.so</seg>
+          <seg>/etc/bash_completion.d and optionally 
+	  /usr/share/gtk-doc/html/dbus-glib and
+          /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
 @y
           <seg>dbus-binding-tool</seg>
-          <seg>libdbus-glib-1.{so,a}</seg>
-          <seg>/etc/bash_completion.d, /usr/share/gtk-doc/html/dbus-glib,
-          任意のビルド時に /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
+          <seg>libdbus-glib-1.so</seg>
+          <seg>/etc/bash_completion.d, 任意のビルド時に
+	  /usr/share/gtk-doc/html/dbus-glib,
+          /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
 @z
 
 @x
@@ -454,7 +456,7 @@
 @z
 
 @x
-          <seg>None</seg>
+          <seg>none</seg>
           <seg><application>Python</application>
           <application>D-Bus</application> modules</seg>
           <seg>/usr/lib/python&python2-majorver;/site-packages/dbus and
@@ -465,171 +467,4 @@
           <application>D-Bus</application> モジュール</seg>
           <seg>/usr/lib/python&python2-majorver;/site-packages/dbus,
           /usr/share/doc/dbus-python-&dbus-python-version;</seg>
-@z
-
-@x
-  <title>Trinity D-Bus Qt3 Bindings</title>
-@y
-  <title>Trinity D-Bus Qt3 &Bindings;</title>
-@z
-
-@x
-    <primary sortas="a-dbus-qt3">D-Bus Qt3 Bindings</primary>
-@y
-    <primary sortas="a-dbus-qt3">D-Bus Qt3 &Bindings;</primary>
-@z
-
-@x
-      <title>Introduction to D-Bus Qt3 Bindings</title>
-@y
-      <title>&IntroductionTo1;D-Bus Qt3 &Bindings;&IntroductionTo2;</title>
-@z
-
-@x
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-@y
-      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
-@z
-
-@x
-          <para>Download (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
-@y
-          <para>&Download; (HTTP): <ulink url="&dbus-qt3-download-http;"/></para>
-@z
-
-@x
-          <para>Download (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
-@y
-          <para>&Download; (FTP): <ulink url="&dbus-qt3-download-ftp;"/></para>
-@z
-
-@x
-          <para>Download MD5 sum: &dbus-qt3-md5sum;</para>
-@y
-          <para>&Download; MD5 sum: &dbus-qt3-md5sum;</para>
-@z
-
-@x
-          <para>Download size: &dbus-qt3-size;</para>
-@y
-          <para>&DownloadSize;: &dbus-qt3-size;</para>
-@z
-
-@x
-          <para>Estimated disk space required: &dbus-qt3-buildsize;</para>
-@y
-          <para>&Estimateddiskspacerequired;: &dbus-qt3-buildsize;</para>
-@z
-
-@x
-          <para>Estimated build time: &dbus-qt3-time;</para>
-@y
-          <para>&Estimatedbuildtime;: &dbus-qt3-time;</para>
-@z
-
-@x
-      <bridgehead renderas="sect4">D-Bus Qt3 Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;D-Bus Qt3&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required">
-        <xref linkend="dbus"/> and
-        <xref linkend="qt"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required">
-        <xref linkend="dbus"/>,
-        <xref linkend="qt"/>
-      </para>
-@z
-
-@x
-      <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/dbus-qt3"/></para>
-@y
-      <para condition="html" role="usernotes">&UserNotes;:
-      <ulink url="&blfs-wiki;/dbus-qt3"/></para>
-@z
-
-@x
-      <title>Installation of D-Bus Trinity/Qt3 Bindings</title>
-@y
-      <title>&InstallationOf1;D-Bus Trinity/Qt3 &Bindings;&InstallationOf2;</title>
-@z
-
-@x
-      <note><para>Be sure your environment is set up as described in 
-      <xref linkend='kde-pre-install-config'/></para></note>
-@y
-      <note><para>
-      <xref linkend='kde-pre-install-config'/> にて説明している設定を行っているかを確認してください。
-      </para></note>
-@z
-
-@x
-      <para>Install <application>D-Bus Trinity/Qt3 Bindings</application> by
-      running the following commands:</para>
-@y
-      <para>
-      以下のコマンドを実行して <application>D-Bus Trinity/Qt3 &Bindings;</application> をビルドします。
-      </para>
-@z
-
-@x
-      <para>This package does not come with a test suite.</para>
-@y
-      <para>&notTestSuite;</para>
-@z
-
-@x
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
-@y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
-@z
-
-@x
-      <title>Contents</title>
-@y
-      <title>&Contents;</title>
-@z
-
-@x
-        <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Library</segtitle>
-        <segtitle>Installed Directory</segtitle>
-@y
-        <segtitle>&InstalledPrograms;</segtitle>
-        <segtitle>&InstalledLibraries;</segtitle>
-        <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-          <seg>None</seg>
-          <seg>libdbus-tqt-1.so</seg>
-          <seg>$TRINITY_PREFIX/include/dbus-1.0</seg>
-@y
-          <seg>&None;</seg>
-          <seg>libdbus-tqt-1.so</seg>
-          <seg>$TRINITY_PREFIX/include/dbus-1.0</seg>
-@z
-
-@x
-        <bridgehead renderas="sect4">Short Descriptions</bridgehead>
-@y
-        <bridgehead renderas="sect4">&ShortDescriptions;</bridgehead>
-@z
-
-@x libdbus-tqt-1.so
-            <para>contains <application>Trinity/Qt3</application> interface functions
-            to the D-Bus API.</para>
-@y
-            <para>
-            D-Bus API への <application>Trinity/Qt3</application> インターフェース関数を提供します。
-            </para>
 @z
