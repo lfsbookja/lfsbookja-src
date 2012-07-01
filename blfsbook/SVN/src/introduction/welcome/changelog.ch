@@ -54,6 +54,46 @@
 @z
 
 @x ----------------------------------------
+      <para>June 30th, 2012</para>
+@y
+      <para>2012/06/30</para>
+@z ----------------------------------------
+@x
+          <para>[rthomsen] - Pixman 0.26.2.
+          Fixes <ulink url="&blfs-ticket-root;3447">#3447</ulink>.</para>
+@y
+          <para>[rthomsen] - Pixman 0.26.2.
+          <ulink url="&blfs-ticket-root;3447">#3447</ulink> を Fix に。</para>
+@z
+
+@x ----------------------------------------
+      <para>June 28th, 2012</para>
+@y
+      <para>2012/06/28</para>
+@z ----------------------------------------
+@x
+          <para>[rthomsen] - Upgrade to libvpx 1.1.0.
+          Fixes <ulink url="&blfs-ticket-root;3439">#3439</ulink>.</para>
+@y
+          <para>[rthomsen] - libvpx 1.1.0 へのアップグレード。
+          <ulink url="&blfs-ticket-root;3439">#3439</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - Upgrade to UPower 0.9.17.
+          Fixes <ulink url="&blfs-ticket-root;3437">#3437</ulink>.</para>
+@y
+          <para>[rthomsen] - UPower 0.9.17 へのアップグレード。
+          <ulink url="&blfs-ticket-root;3437">#3437</ulink> を Fix に。</para>
+@z
+@x
+          <para>[ken] - Updated gimp-help to 2.8.0. Fixes <ulink
+          url="&blfs-ticket-root;3443">#3443</ulink>.</para>
+@y
+          <para>[ken] - gimp-help to 2.8.0 へのアップデート。
+          <ulink url="&blfs-ticket-root;3443">#3443</ulink> を Fix に。</para>
+@z
+
+@x ----------------------------------------
       <para>June 21st, 2012</para>
 @y
       <para>2012/06/21</para>

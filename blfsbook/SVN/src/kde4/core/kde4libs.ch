@@ -245,13 +245,13 @@
         kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper, kfilemetadatareader, kjs, kjscmd, kross, 
         kshell4, kunittestmodrunner, kwrapper4, makekdewidgets, meinproc4, 
         meinproc_simple, nepomuk-rcgen and preparetips</seg>
-        <seg>several in $KDE4_PREFIX/lib</seg>
-	<seg>several in /etc/kde4, $KDE4_PREFIX/include and $KDE4_PREFIX/share</seg>
+        <seg>several in &kde-dir;/lib</seg>
+	<seg>several in /etc/kde4, &kde-dir;/include and &kde-dir;/share</seg>
 @y
         <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4, kde4-config, 
         kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper, kfilemetadatareader, kjs, kjscmd, kross, 
         kshell4, kunittestmodrunner, kwrapper4, makekdewidgets, meinproc4, 
         meinproc_simple, nepomuk-rcgen, preparetips</seg>
-        <seg>$KDE4_PREFIX/lib 内に数種のライブラリ</seg>
-	<seg>/etc/kde4, $KDE4_PREFIX/include, $KDE4_PREFIX/share の各ディレクトリ</seg>
+        <seg>&kde-dir;/lib 内に数種のライブラリ</seg>
+	<seg>/etc/kde4, &kde-dir;/include and &kde-dir;/share 内に数種のディレクトリ</seg>
 @z

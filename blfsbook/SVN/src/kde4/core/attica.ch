@@ -138,9 +138,9 @@
 @x
         <seg>None</seg>
         <seg>libattica.so</seg>
-	<seg>$KDE4_PREFIX/include/attica</seg>
+	<seg>&kde-dir;/include/attica</seg>
 @y
         <seg>&None;</seg>
         <seg>libattica.so</seg>
-	<seg>$KDE4_PREFIX/include/attica</seg>
+	<seg>&kde-dir;/include/attica</seg>
 @z

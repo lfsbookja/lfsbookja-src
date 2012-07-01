@@ -127,6 +127,12 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -134,8 +140,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -143,12 +149,12 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libpixman-1.{so,a}</seg>
+        <seg>none</seg>
+        <seg>libpixman-1.so</seg>
         <seg>/usr/include/pixman-1</seg>
 @y
         <seg>&None;</seg>
-        <seg>libpixman-1.{so,a}</seg>
+        <seg>libpixman-1.so</seg>
         <seg>/usr/include/pixman-1</seg>
 @z
 

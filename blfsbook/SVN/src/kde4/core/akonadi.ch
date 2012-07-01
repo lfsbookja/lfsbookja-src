@@ -169,10 +169,10 @@
         <seg>akonadi_agent_server, akonadi_agent_launcher, akonadiserver, 
         akonadictl, akonadi_control and akonadi_rds</seg>
         <seg>libakonadiprotocolinternals.so and libqsqlite3.so</seg>
-	<seg>$KDE4_PREFIX/share/config/akonadi and $KDE4_PREFIX/include/akonadi</seg>
+	<seg>&kde-dir;/share/config/akonadi and &kde-dir;/include/akonadi</seg>
 @y
         <seg>akonadi_agent_server, akonadi_agent_launcher, akonadiserver, 
         akonadictl, akonadi_control, akonadi_rds</seg>
         <seg>libakonadiprotocolinternals.so, libqsqlite3.so</seg>
-	<seg>$KDE4_PREFIX/share/config/akonadi, $KDE4_PREFIX/include/akonadi</seg>
+	<seg>&kde-dir;/share/config/akonadi, &kde-dir;/include/akonadi</seg>
 @z
