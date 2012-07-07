@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	apache-ant.ch    \
 	at.ch            \
 	autofs.ch        \
+	bluez.ch         \
 	colord.ch        \
 	cpio.ch          \
 	dbus.ch          \
@@ -23,6 +24,7 @@ CHANGE_FILES = \
 	libarchive.ch    \
 	lm_sensors.ch    \
 	mc.ch            \
+	obexd.ch         \
 	parted.ch        \
 	pciutils.ch      \
 	raptor.ch        \
@@ -58,6 +60,7 @@ ctie:
 apache-ant.xml:    $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
 at.xml:            $(BOOKdir)/$@ $(srcdir)/at.ch
 autofs.xml:        $(BOOKdir)/$@ $(srcdir)/autofs.ch
+bluez.xml:         $(BOOKdir)/$@ $(srcdir)/bluez.ch
 colord.xml:        $(BOOKdir)/$@ $(srcdir)/colord.ch
 cpio.xml:          $(BOOKdir)/$@ $(srcdir)/cpio.ch
 dbus.xml:          $(BOOKdir)/$@ $(srcdir)/dbus.ch
@@ -71,6 +74,7 @@ initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 libarchive.xml:    $(BOOKdir)/$@ $(srcdir)/libarchive.ch
 lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
 mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
+obexd.xml:         $(BOOKdir)/$@ $(srcdir)/obexd.ch
 parted.xml:        $(BOOKdir)/$@ $(srcdir)/parted.ch
 pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch
 raptor.xml:        $(BOOKdir)/$@ $(srcdir)/raptor.ch

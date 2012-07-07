@@ -54,6 +54,128 @@
 @z
 
 @x ----------------------------------------
+      <para>July 6th, 2012</para>
+@y
+      <para>2012/07/06</para>
+@z ----------------------------------------
+@x
+          <para>[krejzi] - Added OpenOBEX 1.6.</para>
+@y
+          <para>[krejzi] - OpenOBEX 1.6 追加。</para>
+@z
+
+@x ----------------------------------------
+      <para>July 5th, 2012</para>
+@y
+      <para>2012/07/05</para>
+@z ----------------------------------------
+@x
+          <para>[abenton] - Updated Sqlite to 3.7.13.</para>
+@y
+          <para>[abenton] - Sqlite 3.7.13 へのアップデート。</para>
+@z
+
+@x ----------------------------------------
+      <para>July 4th, 2012</para>
+@y
+      <para>2012/07/04</para>
+@z ----------------------------------------
+@x
+          <para>[bdubbs] - Updated to strigi-0.7.7.</para>
+@y
+          <para>[bdubbs] - strigi-0.7.7 へのアップデート。</para>
+@z
+
+@x ----------------------------------------
+      <para>July 3rd, 2012</para>
+@y
+      <para>July 3rd, 2012</para>
+@z ----------------------------------------
+@x
+          <para>[ken] - tweaked the libdv instructions.</para>
+@y
+          <para>[ken] - libdv の手順修正。</para>
+@z
+
+@x ----------------------------------------
+      <para>July 2nd, 2012</para>
+@y
+      <para>2012/07/02</para>
+@z ----------------------------------------
+@x
+         <para>[rthomsen] - Add Taglib dependencies.
+          Fixes <ulink url="&blfs-ticket-root;3455">#3455</ulink>.</para>
+@y
+         <para>[rthomsen] - Taglib の依存パッケージ修正。
+          <ulink url="&blfs-ticket-root;3455">#3455</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - Add command to the KDE Pre-installation 
+          Configuration page for creating the /etc/dbus-1 directory if not
+          already present.
+          Fixes <ulink url="&blfs-ticket-root;3454">#3454</ulink>.</para>
+@y
+          <para>[rthomsen] - Add command to the KDE Pre-installation 
+          Configuration page for creating the /etc/dbus-1 directory if not
+          already present.
+          <ulink url="&blfs-ticket-root;3454">#3454</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - Rasqal 0.9.29.
+          Fixes <ulink url="&blfs-ticket-root;3448">#3448</ulink>.</para>
+@y
+          <para>[rthomsen] - Rasqal 0.9.29.
+          <ulink url="&blfs-ticket-root;3448">#3448</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - Raptor 2.0.8.
+          Fixes <ulink url="&blfs-ticket-root;3449">#3449</ulink>.</para>
+@y
+          <para>[rthomsen] - Raptor 2.0.8.
+          <ulink url="&blfs-ticket-root;3449">#3449</ulink> を Fix に。</para>
+@z
+@x
+          <para>[krejzi] - Added BlueZ 4.101.</para>
+@y
+          <para>[krejzi] - BlueZ 4.101 追加。</para>
+@z
+@x
+          <para>[krejzi] - Added Obexd 0.46.</para>
+@y
+          <para>[krejzi] - Obexd 0.46 追加。</para>
+@z
+@x
+          <para>[krejzi] - Added Pyrex 0.9.9, a Python Module.</para>
+@y
+          <para>[krejzi] - Python モジュール Pyrex 0.9.9 追加。</para>
+@z
+@x
+          <para>[krejzi] - Bump bootscripts to 20120702 for BlueZ addition.</para>
+@y
+          <para>[krejzi] - Bump bootscripts to 20120702 for BlueZ addition.</para>
+@z
+
+@x ----------------------------------------
+      <para>July 1st, 2012</para>
+@y
+      <para>2012/07/01</para>
+@z ----------------------------------------
+@x
+          <para>[rthomsen] - VLC 2.0.2.
+          Fixes <ulink url="&blfs-ticket-root;3451">#3451</ulink>.</para>
+@y
+          <para>[rthomsen] - VLC 2.0.2.
+          <ulink url="&blfs-ticket-root;3451">#3451</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Change location of compressed gimp-help patch.
+          </para>
+@y
+          <para>[bdubbs] - 圧縮された gimp-help パッチの位置変更。
+          </para>
+@z
+
+@x ----------------------------------------
       <para>June 30th, 2012</para>
 @y
       <para>2012/06/30</para>

@@ -126,10 +126,14 @@
 
 @x
         If <xref linkend="libxslt"/> is installed then <xref linkend="DocBook"/> 
-        and <xref linkend="docbook-xsl"/> are required.
+        and <xref linkend="docbook-xsl"/> are required. If you have installed
+        <xref linkend="libxslt"/>, but you do not want to install any of the
+        DocBook packages mentioned, you will need to use
+        <option>--disable-man-pages</option> in the instructions below.
 @y
         <xref linkend="libxslt"/> をインストールしている場合は <xref
         linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
+        また <xref linkend="libxslt"/> はインストールしていても、その DocBook パッケージ類をインストールしたくない場合は、後述する手順にて <option>--disable-man-pages</option> を指定することになります。
 @z
 
 @x
@@ -150,10 +154,8 @@
       started. Issue the following commands as the
       <systemitem class="username">root</systemitem> user:
 @y
-      There should be a dedicated user and group to take control
-      of the <command>polkitd</command> daemon after it is
-      started. Issue the following commands as the
-      <systemitem class="username">root</systemitem> user:
+      <command>polkitd</command> デーモンの起動には、これを制御するための専用のユーザーおよびグループが必要です。
+      そこで <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -165,8 +167,14 @@
 
 @x
       To test the results, issue: <command>make check</command>.
+      Note that system <application>D-Bus</application> daemon
+      must be running for the testsuite to complete. There is
+      also a warning about <application>ConsoleKit</application>
+      database not present, but that one can be safely ignored.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      すべてのテストを成功させるためには <application>D-Bus</application> デーモンを実行しておく必要があります。
+      なお <application>ConsoleKit</application> データベースがない場合に警告メッセージが出力されますが、これは特に問題なく無視して構いません。
 @z
 
 @x
@@ -301,6 +309,12 @@
             allows an authorized user to execute a command as another user.
 @y
             認証されたユーザーが、他ユーザーとなってコマンド実行することを許可します。
+@z
+
+@x pkttyagent
+            is used to start a textual authentication agent for the subject.
+@y
+            is used to start a textual authentication agent for the subject.
 @z
 
 @x polkitd

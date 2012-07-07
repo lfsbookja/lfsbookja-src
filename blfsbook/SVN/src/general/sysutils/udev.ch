@@ -252,7 +252,7 @@
 @z
 
 @x
-        <seg>findkeyboards, firmware, hid2hci, input_id,
+        <seg>findkeyboards, firmware, input_id,
         keyboard-force-release.sh, keymap, modem-modeswitch, pci-db, udev-acl,
         usb-db, and v4l_id</seg>
         <seg>libgudev-1.0.so</seg>
@@ -260,7 +260,7 @@
         /usr/{include/gudev-1.0/gudev,share/{doc/udev-&udev-version;,
         gtk-doc/html/gudev}}</seg>
 @y
-        <seg>findkeyboards, firmware, hid2hci, input_id,
+        <seg>findkeyboards, firmware, input_id,
         keyboard-force-release.sh, keymap, modem-modeswitch, pci-db, udev-acl,
         usb-db, v4l_id</seg>
         <seg>libgudev-1.0.so</seg>
@@ -273,12 +273,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x hid2hci
-          <para>is a Bluetooth HID to HCI mode switching utility.</para>
-@y
-          <para>is a Bluetooth HID to HCI mode switching utility.</para>
 @z
 
 @x keymap

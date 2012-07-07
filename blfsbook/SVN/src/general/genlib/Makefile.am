@@ -52,6 +52,7 @@ CHANGE_FILES = \
 	libxslt.ch \
 	lzo.ch \
 	nspr.ch \
+	openobex.ch \
 	pcre.ch \
 	popt.ch \
 	pth.ch \
@@ -122,6 +123,7 @@ libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
 libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
 lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
 nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
+openobex.xml:              $(BOOKdir)/$@ $(srcdir)/openobex.ch
 pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch
 popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
 pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
