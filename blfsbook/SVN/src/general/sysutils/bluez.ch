@@ -290,7 +290,7 @@
 @x
     <title>Configuring BlueZ</title>
 @y
-    <title>&Configuring1;Configuring&Configuring2;</title>
+    <title>&Configuring1;BlueZ&Configuring2;</title>
 @z
 
 @x

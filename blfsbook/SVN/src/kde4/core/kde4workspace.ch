@@ -119,7 +119,7 @@
     <xref linkend="linux-pam"/>, 
     <xref linkend="libusb"/>, 
     <xref linkend="NetworkManager"/>,
-    <ulink url="http://lm-sensors.org/">lm-sensors</ulink>, 
+    <xref linkend="lm_sensors"/>, 
     <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>, 
     <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>, 
     <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
@@ -133,12 +133,12 @@
     <xref linkend="linux-pam"/>, 
     <xref linkend="libusb"/>, 
     <xref linkend="NetworkManager"/>,
-    <ulink url="http://lm-sensors.org/">lm-sensors</ulink>, 
+    <xref linkend="lm_sensors"/>, 
     <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>, 
     <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>, 
     <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
     <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>, 
-    <ulink url="http://www.xmms.org/">XMMS</ulink>,
+    <ulink url="http://www.xmms.org/">XMMS</ulink> and
     <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink>
     </para>
 @z

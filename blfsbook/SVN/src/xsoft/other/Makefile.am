@@ -8,6 +8,7 @@
 BOOKdir = $(top_builddir)/@bookdir@/xsoft/other
 CHANGE_FILES = \
 	balsa.ch       \
+	blueman.ch     \
 	gimp.ch        \
 	gnash.ch       \
 	gparted.ch     \
@@ -33,6 +34,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 balsa.xml:       $(BOOKdir)/$@ $(srcdir)/balsa.ch
+blueman.xml:     $(BOOKdir)/$@ $(srcdir)/blueman.ch
 gimp.xml:        $(BOOKdir)/$@ $(srcdir)/gimp.ch
 gnash.xml:       $(BOOKdir)/$@ $(srcdir)/gnash.ch
 gparted.xml:     $(BOOKdir)/$@ $(srcdir)/gparted.ch

@@ -54,6 +54,32 @@
 @z
 
 @x ----------------------------------------
+      <para>July 7th, 2012</para>
+@y
+      <para>2012/07/07</para>
+@z ----------------------------------------
+@x
+          <para>[krejzi] - Added Blueman 1.23.</para>
+@y
+          <para>[krejzi] - Blueman 1.23 追加。</para>
+@z
+@x
+          <para>[krejzi] - Added Notify Python 0.1.1, a Python Module.</para>
+@y
+          <para>[krejzi] - Python モジュール Notify Python 0.1.1 追加。</para>
+@z
+@x
+          <para>[krejzi] - Added OBEX Data Server 0.4.6.</para>
+@y
+          <para>[krejzi] - OBEX Data Server 0.4.6 追加。</para>
+@z
+@x
+          <para>[krejzi] - Removed Farsight2.</para>
+@y
+          <para>[krejzi] - Farsight2 削除。</para>
+@z
+
+@x ----------------------------------------
       <para>July 6th, 2012</para>
 @y
       <para>2012/07/06</para>

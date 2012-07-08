@@ -88,14 +88,12 @@
     <ulink url="http://www.endace.com/">DAG</ulink> and
     <ulink url="http://www.intel.com/">Septel</ulink> range of passive
     network monitoring cards and
-    <ulink url="http://www.bluez.org">BlueZ</ulink></para>
+    <xref linkend="bluez"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-    <ulink url="http://www.endace.com/">DAG</ulink> や <ulink
-    url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア,
-    <ulink url="http://www.bluez.org">BlueZ</ulink>
-</para>
+    <para role="optional"><ulink url="http://www.endace.com/">DAG</ulink> や
+    <ulink url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア,
+    <xref linkend="bluez"/></para>
 @z
 
 @x

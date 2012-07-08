@@ -112,7 +112,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
-      <ulink url="http://www.bluez.org/">BlueZ</ulink>,
+      <xref linkend="bluez"/>,
       <xref linkend="fuse"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
@@ -126,14 +126,14 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
-      <ulink url="http://www.bluez.org/">BlueZ</ulink>,
+      <xref linkend="bluez"/>,
       <xref linkend="fuse"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
       libbluray</ulink>,
       <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink> and
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
       <xref linkend="samba3"/>
     </para>
 @z

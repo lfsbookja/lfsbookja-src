@@ -25,6 +25,7 @@ CHANGE_FILES = \
 	lm_sensors.ch    \
 	mc.ch            \
 	obexd.ch         \
+	obex-data-server.ch \
 	parted.ch        \
 	pciutils.ch      \
 	raptor.ch        \
@@ -75,6 +76,7 @@ libarchive.xml:    $(BOOKdir)/$@ $(srcdir)/libarchive.ch
 lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
 mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
 obexd.xml:         $(BOOKdir)/$@ $(srcdir)/obexd.ch
+obex-data-server.xml: $(BOOKdir)/$@ $(srcdir)/obex-data-server.ch
 parted.xml:        $(BOOKdir)/$@ $(srcdir)/parted.ch
 pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch
 raptor.xml:        $(BOOKdir)/$@ $(srcdir)/raptor.ch
