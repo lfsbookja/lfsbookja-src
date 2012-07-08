@@ -72,10 +72,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/mdadm"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/mdadm"/></para>
 @z
 
 @x
@@ -167,7 +165,7 @@
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>mdadm and mdmon</seg>
+        <seg>mdadm, mdmon</seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z
