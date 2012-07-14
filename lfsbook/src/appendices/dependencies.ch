@@ -111,10 +111,10 @@
           <seg>Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
           Flex, GCC, Gettext, Gzip, Libtool, and Tar.</seg>
 @y
-<seg>
-Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
-Flex, GCC, Gettext, Gzip, Libtool, Tar.
-</seg>
+          <seg>
+          Binutils, Bison, Bzip2, DejaGNU, Diffutils, Expect, Findutils,
+          Flex, GCC, Gettext, Gzip, Libtool, Tar
+          </seg>
 @z
 @x
           <seg>None</seg>
@@ -514,30 +514,6 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-% @x Glib
-%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
-%          Grep, Gzip, Linux API Headers, Make, Perl, Sed, and Texinfo</seg>
-% @y
-%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
-%          Grep, Gzip, Linux API ヘッダー, Make, Perl, Sed, Texinfo</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-% 
-%----------------------------------------------------------------------
 @x Glibc
          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Gettext,
          Grep, Gzip, Linux API Headers, Make, Perl, Sed, and Texinfo</seg>
@@ -728,7 +704,7 @@ Typo ですが日本語訳には影響ありません。
          and Linux API Headers</seg>
 @y
          <seg>Bash, Bison, Coreutils, Flex, GCC, Glibc, Make,
-         Linux API ヘッダ</seg>
+         Linux API ヘッダー</seg>
 @z
 @x
           <seg>No test suite available</seg>
@@ -763,6 +739,30 @@ Typo ですが日本語訳には影響ありません。
           <seg>None</seg>
 @y
           <seg>なし</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Kmod
+         <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
+         Gzip, Make, Sed, Xz-Utils, Zlib</seg>
+@y
+         <seg>Bash, Binutils, Bison, Coreutils, Flex, GCC, Gettext, Glibc,
+         Gzip, Make, Sed, Xz-Utils, Zlib</seg>
+@z
+@x
+          <seg>No test suite available</seg>
+@y
+          <seg>テストスイートはありません</seg>
+@z
+@x
+          <seg>Udev</seg>
+@y
+          <seg>Udev</seg>
 @z
 @x
           <seg>None</seg>
@@ -1052,29 +1052,6 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-% @x PCRE
-%          <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed, and
-%          Texinfo</seg>
-% @y
-%          <seg>Bash, Binutils, Bzip2, Coreutils, Gawk, GCC, Glibc, Grep, Make, Sed,
-%          Texinfo</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-%----------------------------------------------------------------------
 @x Perl
          <seg>Bash, Binutils, Coreutils, Gawk, GCC, GDBM, Glibc, Grep,
          Groff, Make, Sed, and Zlib</seg>
@@ -1099,28 +1076,50 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-% @x Pkg-config
-%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
-%          Grep, Make, and Sed</seg>
-% @y
-%          <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glib, Glibc,
-%          Grep, Make, Sed</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
-% @x
-%           <seg>None</seg>
-% @y
-%           <seg>なし</seg>
-% @z
+@x Pkg-config
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, 
+         Popt, and Sed</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make, 
+         Popt, Sed</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+@x
+          <seg>Kmod</seg>
+@y
+          <seg>Kmod</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
+
+%----------------------------------------------------------------------
+@x Popt
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make</seg>
+@y
+         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make</seg>
+@z
+@x
+          <seg>Diffutils and Sed</seg>
+@y
+          <seg>Diffutils, Sed</seg>
+@z
+@x
+          <seg>Pkg-config</seg>
+@y
+          <seg>Pkg-config</seg>
+@z
+@x
+          <seg>None</seg>
+@y
+          <seg>なし</seg>
+@z
 
 %----------------------------------------------------------------------
 @x Procps

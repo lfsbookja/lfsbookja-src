@@ -82,19 +82,23 @@
 @z
 
 @x
-        <seg>grub-bin2h, grub-editenv, grub-fstest, grub-install, grub-kbdcomp,
-        grub-menulst2cfg, grub-mkconfig, grub-mkdevicemap, grub-mkimage,
-        grub-mklayout, grub-mknetdir, grub-mkpasswd-pbkdf2, grub-mkrelpath,
-        grub-mkrescue, grub-probe, grub-reboot, grub-script-check,
-        grub-set-default, grub-setup</seg>
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub</seg>
+       <seg>grub-bin2h,           grub-bios-setup, grub-editenv,     grub-fstest,
+            grub-install,         grub-kbdcomp,    grub-menulst2cfg, grub-mkconfig,
+            grub-mkdevicemap,     grub-mkimage,    grub-mklayout,    grub-mknetdir,
+            grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-script-check,
+            grub-set-default,     grub-setup,      grub-sparc64-setup </seg>
+
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub</seg>
 @y
-        <seg>grub-bin2h, grub-editenv, grub-fstest, grub-install, grub-kbdcomp,
-        grub-menulst2cfg, grub-mkconfig, grub-mkdevicemap, grub-mkimage,
-        grub-mklayout, grub-mknetdir, grub-mkpasswd-pbkdf2, grub-mkrelpath,
-        grub-mkrescue, grub-probe, grub-reboot, grub-script-check,
-        grub-set-default, grub-setup</seg>
-        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub</seg>
+       <seg>grub-bin2h,           grub-bios-setup, grub-editenv,     grub-fstest,
+            grub-install,         grub-kbdcomp,    grub-menulst2cfg, grub-mkconfig,
+            grub-mkdevicemap,     grub-mkimage,    grub-mklayout,    grub-mknetdir,
+            grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
+            grub-ofpathname,      grub-probe,      grub-reboot,      grub-script-check,
+            grub-set-default,     grub-setup,      grub-sparc64-setup </seg>
+
+        <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub</seg>
 @z
 
 @x
@@ -109,6 +113,12 @@
           <para>
           バイナリファイルを C ヘッダーファイルに変換します。
           </para>
+@z
+
+@x grub-bios-setup
+          <para>Is a helper program for grub-install</para>
+@y
+          <para>grub-install に対するヘルパープログラム。</para>
 @z
 
 @x grub-editenv
@@ -216,6 +226,18 @@
           <para>フロッピーディスクや CDROM/DVD 用の GRUB のブートイメージを生成します。</para>
 @z
 
+@x grub-mkstandalone
+          <para>Generates a standalone image</para>
+@y
+          <para>スタンドアロンイメージを生成します。</para>
+@z
+
+@x grub-ofpathname
+          <para>Is a helper program that prints the path of a GRUB device</para>
+@y
+          <para>GRUB デバイスのパスを出力するヘルパープログラム。</para>
+@z
+
 @x grub-probe
           <para>Probe device information for a given path or device</para>
 @y
@@ -255,4 +277,10 @@
           <para>
           デバイスからのブートを行うためにイメージファイルをセットアップします。
           </para>
+@z
+
+@x grub-sparc64-setup
+          <para>Is a helper program for grub-setup</para>
+@y
+          <para>grub-setup に対するヘルパープログラム。</para>
 @z

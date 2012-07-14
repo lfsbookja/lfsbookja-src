@@ -48,6 +48,109 @@
 @z
 
 @x
+      <para>2012-07-13</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Apply latest upstream patches for Bash.  Fixes
+           <ulink url="&lfs-ticket-root;3135">#3135</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Automake-1.12.2. Fixes
+           <ulink url="&lfs-ticket-root;3134">#3134</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to MPFR-3.1.1. Fixes
+           <ulink url="&lfs-ticket-root;3133">#3133</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Grep-2.13. Fixes
+           <ulink url="&lfs-ticket-root;3132">#3132</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Fix Kmod's test suite on x86 hosts. Fixes
+           <ulink url="&lfs-ticket-root;3129">#3129</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Psmisc-22.19. Fixes
+           <ulink url="&lfs-ticket-root;3127">#3127</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.4.4. Fixes
+           <ulink url="&lfs-ticket-root;3126">#3126</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-13</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Bash にてアップストリームにより最新パッチを適用。
+           <ulink url="&lfs-ticket-root;3135">#3135</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Automake-1.12.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3134">#3134</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - MPFR-3.1.1 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3133">#3133</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Grep-2.13 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3132">#3132</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Kmod にて x86 ホスト上でのテストスイートの調整。
+           <ulink url="&lfs-ticket-root;3129">#3129</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Psmisc-22.19 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3127">#3127</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-3.4.4 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3126">#3126</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-07-11</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Update to GRUB-2.00. Fixes 
+            <ulink url="&lfs-ticket-root;3130">#3130</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-11</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - GRUB-2.00 へのアップデート。
+            <ulink url="&lfs-ticket-root;3130">#3130</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-07-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Specify PKG_CONFIG_PATH for libpipeline
+           checks. Fixes 
+            <ulink url="&lfs-ticket-root;3120">#3120</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-10</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - libpipeline にて PKG_CONFIG_PATH を指定。
+            <ulink url="&lfs-ticket-root;3120">#3120</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-06-23</para>
       <itemizedlist>
          <listitem>

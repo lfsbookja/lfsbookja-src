@@ -40,12 +40,12 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
-          <para>These environment variables specify the location of the test
-          library built in <xref linkend="ch-tools-check"/>.</para>
+@x PKG_CONFIG_PATH
+          <para>Use pkg-config to obtain the location of the test
+          library metadata built in <xref linkend="ch-tools-check"/>.</para>
 @y
           <para>
-          これらの環境変数は <xref linkend="ch-tools-check"/>にて構築したテストライブラリの収容ディレクトリを指定するものです。
+          この環境変数は <xref linkend="ch-tools-check"/>にて構築したテストライブラリのメタデータを収容するディレクトリを指定するものです。
           </para>
 @z
 
