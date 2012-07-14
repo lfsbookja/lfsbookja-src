@@ -119,7 +119,8 @@
     <xref linkend="linux-pam"/>, 
     <xref linkend="libusb"/>, 
     <xref linkend="NetworkManager"/>,
-    <xref linkend="lm_sensors"/>, 
+    <xref linkend="lm_sensors"/>,
+    <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>, 
     <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>, 
     <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>, 
     <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
@@ -133,12 +134,13 @@
     <xref linkend="linux-pam"/>, 
     <xref linkend="libusb"/>, 
     <xref linkend="NetworkManager"/>,
-    <xref linkend="lm_sensors"/>, 
+    <xref linkend="lm_sensors"/>,
+    <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>, 
     <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>, 
     <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>, 
     <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
     <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>, 
-    <ulink url="http://www.xmms.org/">XMMS</ulink> and
+    <ulink url="http://www.xmms.org/">XMMS</ulink>,
     <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink>
     </para>
 @z

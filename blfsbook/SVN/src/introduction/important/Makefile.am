@@ -11,6 +11,7 @@ CHANGE_FILES = \
 	bootscripts.ch    \
 	building-notes.ch \
 	important.ch      \
+	libraries.ch      \
 	locale-issues.ch  \
 	patches.ch        \
 	pkgmgt.ch         \
@@ -29,11 +30,12 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-beyond.ch.xml:         $(BOOKdir)/$@ $(srcdir)/beyond.ch.ch
-bootscripts.ch.xml:    $(BOOKdir)/$@ $(srcdir)/bootscripts.ch.ch
-building-notes.ch.xml: $(BOOKdir)/$@ $(srcdir)/building-notes.ch.ch
-important.ch.xml:      $(BOOKdir)/$@ $(srcdir)/important.ch.ch
-locale-issues.ch.xml:  $(BOOKdir)/$@ $(srcdir)/locale-issues.ch.ch
-patches.ch.xml:        $(BOOKdir)/$@ $(srcdir)/patches.ch.ch
-pkgmgt.ch.xml:         $(BOOKdir)/$@ $(srcdir)/pkgmgt.ch.ch
-position.ch.xml:       $(BOOKdir)/$@ $(srcdir)/position.ch.ch
+beyond.xml:         $(BOOKdir)/$@ $(srcdir)/beyond.ch
+bootscripts.xml:    $(BOOKdir)/$@ $(srcdir)/bootscripts.ch
+building-notes.xml: $(BOOKdir)/$@ $(srcdir)/building-notes.ch
+important.xml:      $(BOOKdir)/$@ $(srcdir)/important.ch
+libraries.xml:      $(BOOKdir)/$@ $(srcdir)/libraries.ch
+locale-issues.xml:  $(BOOKdir)/$@ $(srcdir)/locale-issues.ch
+patches.xml:        $(BOOKdir)/$@ $(srcdir)/patches.ch
+pkgmgt.xml:         $(BOOKdir)/$@ $(srcdir)/pkgmgt.ch
+position.xml:       $(BOOKdir)/$@ $(srcdir)/position.ch

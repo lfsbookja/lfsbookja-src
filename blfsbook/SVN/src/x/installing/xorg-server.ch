@@ -14,24 +14,16 @@
 @z
 
 @x
-    <primary sortas="a-xorg-server">Xorg Server</primary>
+    <title>Introduction to Xorg Server</title>
 @y
-    <primary sortas="a-xorg-サーバー">Xorg サーバー</primary>
+    <title>&IntroductionTo1;Xorg サーバー&IntroductionTo2;</title>
 @z
 
 @x
-    <title>Introduction to Xorg-Server</title>
+      The <application>Xorg</application> Server is the core
+      of the X Window system.
 @y
-    <title>&IntroductionTo1;Xorg-Server&IntroductionTo2;</title>
-@z
-
-@x
-    <para>The <application>Xorg</application> Server is the core
-    of the X Window system.</para>
-@y
-    <para>
-    <application>Xorg</application> サーバーは、X ウィンドウシステムの中心となるソフトウェアです。
-    </para>
+      <application>Xorg</application> サーバーは、X ウィンドウシステムの中心となるソフトウェアです。
 @z
 
 @x
@@ -41,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xorg-server-download-http;"/></para>
+          Download (HTTP): <ulink url="&xorg-server-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xorg-server-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xorg-server-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xorg-server-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xorg-server-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xorg-server-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xorg-server-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xorg-server-md5sum;</para>
+          Download MD5 sum: &xorg-server-md5sum;
 @y
-        <para>&Download; MD5 sum: &xorg-server-md5sum;</para>
+          &Download; MD5 sum: &xorg-server-md5sum;
 @z
 
 @x
-        <para>Download size: &xorg-server-size;</para>
+          Download size: &xorg-server-size;
 @y
-        <para>&DownloadSize;: &xorg-server-size;</para>
+          &DownloadSize;: &xorg-server-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xorg-server-buildsize;</para>
+          Estimated disk space required: &xorg-server-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xorg-server-buildsize;</para>
+          &Estimateddiskspacerequired;: &xorg-server-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xorg-server-time;</para>
+          Estimated build time: &xorg-server-time;
 @y
-        <para>&Estimatedbuildtime;: &xorg-server-time;</para>
+          &Estimatedbuildtime;: &xorg-server-time;
 @z
 
 @x
@@ -84,44 +76,44 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="openssl"/>,
-    <xref linkend="pixman"/>,
-    <xref linkend="xorg7-font"/>, and
-    <xref linkend="xkeyboard-config"/></para>
+    <para role="required">
+      <xref linkend="openssl"/>,
+      <xref linkend="pixman"/>,
+      <xref linkend="xorg7-font"/> and
+      <xref linkend="xkeyboard-config"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="openssl"/>,
-    <xref linkend="pixman"/>,
-    <xref linkend="xorg7-font"/>,
-    <xref linkend="xkeyboard-config"/></para>
+    <para role="required">
+      <xref linkend="openssl"/>,
+      <xref linkend="pixman"/>,
+      <xref linkend="xorg7-font"/>,
+      <xref linkend="xkeyboard-config"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para><xref linkend="dbus"/>,
-    <xref linkend="doxygen"/> (to build API documentation),
-    <xref linkend="xmlto"/>, (to build documentation),
-    <xref linkend="fop"/>, (to build documentation),
-    <xref linkend="gs"/> (to build documentation),
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
-    <xref linkend="mesalib"/> (required for DRI)</para>
+    <para>
+      <xref linkend="doxygen"/> (to build API documentation),
+      <xref linkend="fop"/>, (to build documentation),
+      <xref linkend="gs"/> (to build documentation) and
+      <xref linkend="xmlto"/>, (to build documentation)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para><xref linkend="dbus"/>,
-    <xref linkend="doxygen"/> (API ドキュメント生成のため),
-    <xref linkend="xmlto"/>, (ドキュメント生成のため),
-    <xref linkend="fop"/>, (ドキュメント生成のため),
-    <xref linkend="gs"/> (ドキュメント生成のため),
-    <ulink url="http://www.freedesktop.org/wiki/Software/hal">Hal</ulink>,
-    <xref linkend="mesalib"/> (DRI のために必要)</para>
+    <para>
+      <xref linkend="doxygen"/> (API ドキュメント生成のため),
+      <xref linkend="fop"/> (ドキュメント生成のため),
+      <xref linkend="gs"/> (ドキュメント生成のため),
+      <xref linkend="xmlto"/> (ドキュメント生成のため)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/Xorg7Server'/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/Xorg7Server'/></para>
 @z
 
 @x
@@ -139,20 +131,16 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -162,25 +150,13 @@
 @z
 
 @x
-    <para><parameter>--with-module-dir=...</parameter>:  This parameter
-    sets the destination for the installed modules.</para>
+      <option>--enable-install-setuid</option>: The Xorg binary must run as
+      the root user. This switch ensures that the binary is installed
+      setuid when <command>make</command> is run by an unprivileged user.
 @y
-    <para>
-    <parameter>--with-module-dir=...</parameter>:
-    このパラメーターはモジュールのインストール先を指定します。
-    </para>
-@z
-
-@x
-    <para><parameter>--enable-install-setuid</parameter>: The Xorg binary must
-    run as the root user.  This switch ensures that the binary is installed
-    setuid when <command>make</command> is run by an unprivileged user.</para>
-@y
-    <para>
-    <parameter>--enable-install-setuid</parameter>:
-    Xorg の実行モジュールは root ユーザーにて実行される必要があります。
-    このパラメーターは一般ユーザーによって <command>make</command> によりビルドを行っても、実行モジュールに対して正しく setuid がセットされるようにします。
-    </para>
+      <option>--enable-install-setuid</option>:
+      Xorg の実行モジュールは root ユーザーにて実行される必要があります。
+      このパラメーターは一般ユーザーによって <command>make</command> によりビルドを行っても、実行モジュールに対して正しく setuid がセットされるようにします。
 @z
 
 @x
@@ -191,27 +167,36 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>cvt, dmx*, gtf, vdltodmx, X, Xnest, Xorg, Xvfb,
-        and xdmxconfig</seg>
-        <seg>None</seg>
-        <seg>/var/lib/xkb and the following subdirectories of
-        <envar>$XORG_PREFIX</envar>/: include/xorg, include/X11/pixmaps,
-        lib/X11/modules and lib/xorg</seg>
+        <seg>
+          cvt, dmxaddinput, dmxaddscreen, dmxinfo, dmxreconfig, dmxresize,
+          dmxrminput, dmxrmscreen, dmxtodmx, dmxwininfo, gtf, vdltodmx, X,
+          Xdmx, xdmxconfig, Xnest, Xorg and Xvfb
+        </seg>
+        <seg>
+          $XORG_PREFIX/include/xorg,
+          $XORG_PREFIX/lib/xorg,
+          $XORG_PREFIX/share/X11/xorg.conf.d and
+          /var/lib/xkb
+        </seg>
 @y
-        <seg>cvt, dmx*, gtf, vdltodmx, X, Xnest, Xorg, Xvfb,
-        and xdmxconfig</seg>
-        <seg>&None;</seg>
-        <seg>/var/lib/xkb と <envar>$XORG_PREFIX</envar>/ ディレクトリ配下の以下のディレクトリ:
-        include/xorg, include/X11/pixmaps, lib/X11/modules, lib/xorg</seg>
+        <seg>
+          cvt, dmxaddinput, dmxaddscreen, dmxinfo, dmxreconfig, dmxresize,
+          dmxrminput, dmxrmscreen, dmxtodmx, dmxwininfo, gtf, vdltodmx, X,
+          Xdmx, xdmxconfig, Xnest, Xorg, Xvfb
+        </seg>
+        <seg>
+          $XORG_PREFIX/include/xorg,
+          $XORG_PREFIX/lib/xorg,
+          $XORG_PREFIX/share/X11/xorg.conf.d,
+          /var/lib/xkb
+        </seg>
 @z
 
 @x
@@ -221,56 +206,56 @@
 @z
 
 @x cvt-x7
-          <para>calculates VESA CVT mode lines.</para>
+            calculates VESA CVT mode lines.
 @y
-          <para>VESA CVT モードの行数を算出します。</para>
+            VESA CVT モードの行数を算出します。
 @z
 
 @x dmx*
-          <para>are various tools for manipulating the dmx server.</para>
+            are various tools used for manipulating the dmx server.
 @y
-          <para>dmx サーバーを操作するためのさまざまなツール。</para>
+            dmx サーバーを操作するためのさまざまなツール。
 @z
 
 @x gtf-x7
-          <para>calculates VESA GTF mode lines.</para>
+            calculates VESA GTF mode lines.
 @y
-          <para>VESA GTF モードの行数を算出します。</para>
+            VESA GTF モードの行数を算出します。
 @z
 
 @x vdltodmx
-          <para>is a tool to convert VDL config files to DMX config
-          files.</para>
+            is a tool used to convert VDL config files to DMX config
+            files.
 @y
-          <para>VDL 設定ファイルを DMX 設定ファイルに変換するツール。</para>
+            VDL 設定ファイルを DMX 設定ファイルに変換するツール。
 @z
 
 @x X
-          <para>is a symbolic link to Xorg.</para>
+            is a symbolic link to Xorg.
 @y
-          <para>Xorg へのシンボリックリンク</para>
+            Xorg へのシンボリックリンク。
 @z
 
 @x Xnest-x7
-          <para>is a nested X server.</para>
+            is a nested X server.
 @y
-          <para>Nested X サーバー</para>
+            Nested X サーバー。
 @z
 
 @x Xorg-x7
-          <para>is the X11R7 X Server.</para>
+            is the X11R7 X Server.
 @y
-          <para>X11R7 X サーバー</para>
+            X11R7 X サーバー。
 @z
 
 @x Xvfb-x7
-          <para>is the virtual framebuffer X server for X Version 11.</para>
+            is the virtual framebuffer X server for X Version 11.
 @y
-          <para>X バージョン 11 における X サーバーの仮想フレームバッファー。</para>
+            X バージョン 11 における X サーバーの仮想フレームバッファー。
 @z
 
 @x xdmxconfig
-          <para>is a graphical configuration utility for the dmx server.</para>
+            is a graphical configuration utility for the dmx server.
 @y
-          <para>dmx サーバーに対するグラフィカルな設定ユーティリティー。</para>
+            dmx サーバーに対するグラフィカルな設定ユーティリティー。
 @z

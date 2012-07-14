@@ -90,13 +90,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/> and
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>
+      <xref linkend="vala"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/>,
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/vala/">vala</ulink>
+      <xref linkend="vala"/> 
     </para>
 @z
 

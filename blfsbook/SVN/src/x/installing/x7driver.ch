@@ -216,16 +216,6 @@
 @z
 
 @x
-    <para><parameter>--with-xorg-module-dir=...</parameter>: This switch
-    ensures that the drivers are installed into the correct directory.</para>
-@y
-    <para>
-    <parameter>--with-xorg-module-dir=...</parameter>:
-    このパラメーターは、ドライバーを適切なディレクトリにインストールすることを指示します。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

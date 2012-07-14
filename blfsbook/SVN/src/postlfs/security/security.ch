@@ -20,13 +20,14 @@
 @z
 
 @x
-  <para>Security takes many forms in a computing environment. This chapter
+  <para>Security takes many forms in a computing environment. After some
+  initial discussion, this chapter
   gives examples of three different types of security: access, prevention
   and detection.</para>
 @y
   <para>
   コンピューター環境におけるセキュリティというものには、実にさまざまなものがあります。
-  本章では三種類のセキュリティ、つまりアクセス制御、予防対策、検出についての例を示します。
+  基本的な議論を示した上で、本章では三種類のセキュリティ、つまりアクセス制御、予防対策、検出についての例を示します。
   </para>
 @z
 

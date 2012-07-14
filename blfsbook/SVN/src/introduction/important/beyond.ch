@@ -168,8 +168,8 @@
 @z
 
 @x
-      <para>If you know the name of the package, then search FreshMeat for
-      it at <ulink url="http://freshmeat.net/"/>. Also search Google at
+      <para>If you know the name of the package, then search Freecode for
+      it at <ulink url="http://freecode.com/"/>. Also search Google at
       <ulink url="http://google.com/"/>. Sometimes a search for the
       <filename class='extension'>rpm</filename> at
       <ulink url="http://rpmfind.net/"/> or the
@@ -178,7 +178,7 @@
       also lead to a link to the package.</para>
 @y
       <para>
-      パッケージ名が分かっている場合は FreshMeat <ulink url="http://freshmeat.net/"/> を検索してみてください。
+      パッケージ名が分かっている場合は Freecode <ulink url="http://freecode.com/"/> を検索してみてください。
       あるいは Google <ulink url="http://google.com/"/> を利用することもできます。
       また <filename class='extension'>rpm</filename> を検索する <ulink
       url="http://rpmfind.net/"/> や、<filename
@@ -238,14 +238,31 @@
       <para>If you are having a problem compiling the package, try
       searching the LFS archives at
       <ulink url="http://www.&lfs-domainname;/search.html"/> for the error or if
-      that fails, try searching Google. If everything else fails,
-      try the blfs-support mailing-list.</para>
+      that fails, try searching Google. Often, a distribution will have already
+      solved the problem (many of them use development versions of packages, so
+      they see the changes sooner than those of us who normally use stable released
+      versions).  But be cautious - all builders tend to carry patches which are no
+      longer necessary, and to have fixes which are only required because of their
+      particular choices in how they build a package. You may have to search
+      deeply to find a fix for the package version you are trying to use, or even
+      to find the package (names are sometimes not what you might expect, e.g.
+      <application>ghostscript</application> often has a prefix or a suffix in its
+      name), but the following notes might help:</para>
 @y
       <para>
       パッケージのコンパイルがうまくいかなった場合は、LFS のアーカイブ <ulink
       url="http://www.&lfs-domainname;/search.html"/> にエラー情報があるかどうかを確認してください。
-      情報が得られなければ Google で検索するのも一つの手です。
-      また blfs-support メーリングリストも確認してください。
+      情報が見つからなければ Google で検索するのも一つの手です。
+      Often, a distribution will have already
+      solved the problem (many of them use development versions of packages, so
+      they see the changes sooner than those of us who normally use stable released
+      versions).  But be cautious - all builders tend to carry patches which are no
+      longer necessary, and to have fixes which are only required because of their
+      particular choices in how they build a package. You may have to search
+      deeply to find a fix for the package version you are trying to use, or even
+      to find the package (names are sometimes not what you might expect, e.g.
+      <application>ghostscript</application> often has a prefix or a suffix in its
+      name), but the following notes might help:
       </para>
 @z
 

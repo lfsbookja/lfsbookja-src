@@ -188,13 +188,13 @@
 @z
 
 @x
-        <seg>dmsetup, fsadm, lvm, lvmconf, lvndump, vgimportclone.  There
-        are also numerous symbolic links to lvm to impement specific 
+        <seg>dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone.  There
+        are also numerous symbolic links to lvm to implement specific 
         functionality.</seg>
         <seg>libdevmapper.so</seg>
         <seg>None</seg>
 @y
-        <seg>dmsetup, fsadm, lvm, lvmconf, lvndump, vgimportclone.
+        <seg>dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone.
         この他に lvm に対してのシンボリックリンクが数多くあり、それらは特定の機能を提供します。</seg>
         <seg>libdevmapper.so</seg>
         <seg>&None;</seg>

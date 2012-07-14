@@ -8,6 +8,7 @@
 BOOKdir = $(top_builddir)/@bookdir@/x/wm
 CHANGE_FILES = \
 	fluxbox.ch   \
+	icewm.ch     \
 	other-wms.ch \
 	openbox.ch   \
 	sawfish.ch   \
@@ -27,6 +28,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 fluxbox.xml: $(BOOKdir)/$@ $(srcdir)/fluxbox.ch
+icewm.xml:   $(BOOKdir)/$@ $(srcdir)/icewm.ch
 other-wms.xml.tmp: $(BOOKdir)/other-wms.xml
 	sed -e "s/Motif\xAE/Motif\&reg;/" $^ > $@
 other-wms.xml: ./other-wms.xml.tmp $(srcdir)/other-wms.ch

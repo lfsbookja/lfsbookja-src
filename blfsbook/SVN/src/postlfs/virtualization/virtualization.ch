@@ -21,7 +21,7 @@
 
 @x
   <para>Virtualization allows running a complete operating system, or virtual
-  machine (VM) within another operting environment as a task.  There are
+  machine (VM), within another operating environment as a task.  There are
   several commercial and open source environments that either emulate another
   processor or utilize the hardware virtualization features of the host
   processor.</para>

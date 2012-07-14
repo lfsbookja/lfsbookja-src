@@ -265,6 +265,7 @@
 
 @x
         <seg>
+          pdfdetach,
           pdffonts,
           pdfimages,
           pdfinfo,
@@ -291,6 +292,7 @@
         </seg>
 @y
         <seg>
+          pdfdetach,
           pdffonts,
           pdfimages,
           pdfinfo,

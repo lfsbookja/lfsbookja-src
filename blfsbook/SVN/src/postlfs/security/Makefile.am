@@ -37,7 +37,8 @@ CHANGE_FILES = \
 	sudo.ch            \
 	syslog.ch          \
 	tcpwrappers.ch     \
-	tripwire.ch
+	tripwire.ch        \
+	vulnerabilities.ch
 
 EXTRA_DIST = $(CHANGE_FILES) firewalling.sed
 srcdir = @srcdir@
@@ -86,3 +87,4 @@ sudo.xml:             $(BOOKdir)/$@ $(srcdir)/sudo.ch
 syslog.xml:           $(BOOKdir)/$@ $(srcdir)/syslog.ch
 tcpwrappers.xml:      $(BOOKdir)/$@ $(srcdir)/tcpwrappers.ch
 tripwire.xml:         $(BOOKdir)/$@ $(srcdir)/tripwire.ch
+vulnerabilities.xml:  $(BOOKdir)/$@ $(srcdir)/vulnerabilities.ch
