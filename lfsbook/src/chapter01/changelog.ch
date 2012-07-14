@@ -83,7 +83,7 @@
       <para>2012-07-13</para>
       <itemizedlist>
          <listitem>
-           <para>[matthew] - Bash にてアップストリームにより最新パッチを適用。
+           <para>[matthew] - Bash にてアップストリームによる最新パッチを適用。
            <ulink url="&lfs-ticket-root;3135">#3135</ulink> を Fix に。</para>
          </listitem>
          <listitem>
