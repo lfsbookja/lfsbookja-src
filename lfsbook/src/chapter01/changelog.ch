@@ -48,6 +48,25 @@
 @z
 
 @x
+      <para>2012-07-14</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Correct the fix for Automake's testsuite. Thanks
+           to Fernando de Oliveira for the report.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-14</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Automake のテストスイートに対しての修正箇所の再調整。
+           報告をあげてくれた Fernando de Oliveira に感謝。
+           </para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-07-13</para>
       <itemizedlist>
          <listitem>
