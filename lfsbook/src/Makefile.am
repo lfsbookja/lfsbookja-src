@@ -163,5 +163,5 @@ md5sums:
 	  stylesheets/md5sum.xsl chapter03/chapter03.xml
 	sed -i -e "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.bz2 | cut -d' ' -f1)/" \
       $(BASEDIR)/md5sums
-	sed -i -e "s/UDEV-MD5SUM/$(shell md5sum udev-config*.tar.bz2 | cut -d' ' -f1)/" \
-      $(BASEDIR)/md5sums
+#	sed -i -e "s/UDEV-MD5SUM/$(shell md5sum udev-config*.tar.bz2 | cut -d' ' -f1)/" \
+#     $(BASEDIR)/md5sums

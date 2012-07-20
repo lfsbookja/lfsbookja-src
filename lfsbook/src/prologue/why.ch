@@ -112,6 +112,16 @@
         </para>
 @z
 
+@x Check
+        <para>This package contains a test harness for other programs.
+        It is only installed in the temporary toolchain.</para>
+@y
+        <para>
+        このパッケージは、他のプログラムに対するテストハーネス (test harness) を提供します。
+        これは一時的なツールチェーンにおいてのみインストールします。
+        </para>
+@z
+
 @x Coreutils
         <para>This package contains a number of essential programs for viewing 
         and manipulating files and directories. These programs are needed for

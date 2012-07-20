@@ -251,7 +251,7 @@
 @z
 
 @x
-      <para>As of Udev-&udev-version;, <command>udevd</command> no longer
+      <para>In recent version of udev, <command>udevd</command> no longer
       creates device files in <filename class="directory">/dev</filename>.
       Instead, this must be handled in the kernel, by the <systemitem
       class="filesystem">devtmpfs</systemitem> filesystem.  Any driver that
@@ -262,7 +262,7 @@
       will initially be created with a fixed name, permissions, and owner.</para>
 @y
       <para>
-      Udev-&udev-version; から <command>udevd</command> はデバイスファイルを <filename class="directory">/dev</filename> には作らなくなりました。
+      udev の最近のバージョンより <command>udevd</command> はデバイスファイルを <filename class="directory">/dev</filename> には作らなくなりました。
       このかわりに <systemitem class="filesystem">devtmpfs</systemitem> ファイルシステムを通じて、カーネルが制御していくものになりました。
       デバイスノードを登録しようとするドライバーは (デバイスコア経由で) <systemitem
       class="filesystem">devtmpfs</systemitem> を通じて登録を行います。

@@ -48,6 +48,69 @@
 @z
 
 @x
+      <para>2012-07-19</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Added Time Zone data package to
+           packages section of the book.</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Added Check to the Rationale section
+           of the book.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-19</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - 全パッケージの節にて Time Zone data パッケージの追加。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - 各パッケージを用いる理由の節に Check パッケージを追加。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-07-17</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.4.5. Fixes
+           <ulink url="&lfs-ticket-root;3137">#3137</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-17</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Linux-3.4.5 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3137">#3137</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-07-16</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Updated udev to version 186.  This update
+           has a major procedure change due to merging systemd and
+           udev.  Fixes 
+           <ulink url="&lfs-ticket-root;3098">#3098</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-16</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - udev 186 へのアップデート。
+           このアップデートは、systemd と udev がマージされたことに伴う大幅な変更。
+           <ulink url="&lfs-ticket-root;3098">#3098</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-07-14</para>
       <itemizedlist>
          <listitem>

@@ -621,6 +621,16 @@
 @z
 
 @x
+        <para>Home page: <ulink url="&tzdata-home;"/></para>
+        <para>Download: <ulink url="&tzdata-url;"/></para>
+        <para>MD5 sum: <literal>&tzdata-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&tzdata-home;"/></para>
+        <para>&Download;: <ulink url="&tzdata-url;"/></para>
+        <para>MD5 sum: <literal>&tzdata-md5;</literal></para>
+@z
+
+@x
         <para>Home page: <ulink url="&texinfo-home;"/></para>
         <para>Download: <ulink url="&texinfo-url;"/></para>
         <para>MD5 sum: <literal>&texinfo-md5;</literal></para>
@@ -630,22 +640,22 @@
         <para>MD5 sum: <literal>&texinfo-md5;</literal></para>
 @z
 
-@x Udev (&udev-version;) - <token>&udev-size;</token>:
-        <para>Home page: <ulink url="&udev-home;"/></para>
-        <para>Download: <ulink url="&udev-url;"/></para>
-        <para>MD5 sum: <literal>&udev-md5;</literal></para>
+@x Systemd
+        <para>Home page: <ulink url="&systemd-home;"/></para>
+        <para>Download: <ulink url="&systemd-url;"/></para>
+        <para>MD5 sum: <literal>&systemd-md5;</literal></para>
 @y
-        <para>&Homepage;: <ulink url="&udev-home;"/></para>
-        <para>&Download;: <ulink url="&udev-url;"/></para>
-        <para>MD5 sum: <literal>&udev-md5;</literal></para>
+        <para>&Homepage;: <ulink url="&systemd-home;"/></para>
+        <para>&Download;: <ulink url="&systemd-url;"/></para>
+        <para>MD5 sum: <literal>&systemd-md5;</literal></para>
 @z
 
-@x Udev Configuration Tarball
-        <para>Download: <ulink url="&udev-config-url;"/></para>
-        <para>MD5 sum: <literal>&udev-config-md5;</literal></para>
+@x Udev-lfs Tarball
+        <para>Download: <ulink url="&udev-lfs-url;"/></para>
+        <para>MD5 sum: <literal>&udev-lfs-md5;</literal></para>
 @y
-        <para>&Download;: <ulink url="&udev-config-url;"/></para>
-        <para>MD5 sum: <literal>&udev-config-md5;</literal></para>
+        <para>&Download;: <ulink url="&udev-lfs-url;"/></para>
+        <para>MD5 sum: <literal>&udev-lfs-md5;</literal></para>
 @z
 
 @x

@@ -26,12 +26,12 @@
 @z
 
 @x
-  <para>The rules from &udev-config;.tar.bz2 in this appendix are listed for
+  <para>The rules from &udev-lfs;.tar.bz2 in this appendix are listed for
   convenience.  Installation is normally done via instructions in <xref
   linkend='ch-system-udev'/>.  </para>
 @y
   <para>
-  本付録にて &udev-config;.tar.bz2 に含まれるルールを列記します。
+  本付録にて &udev-lfs;.tar.bz2 に含まれるルールを列記します。
   インストール手順は <xref linkend='ch-system-udev'/>を参照してください。
   </para>
 @z

@@ -68,10 +68,10 @@ CHANGE_FILES = \
 	shadow.ch            \
 	strippingagain.ch    \
 	sysklogd.ch          \
+	systemd.ch           \
 	sysvinit.ch          \
 	tar.ch               \
 	texinfo.ch           \
-	udev.ch              \
 	util-linux.ch        \
 	vim.ch               \
 	xz.ch                \
