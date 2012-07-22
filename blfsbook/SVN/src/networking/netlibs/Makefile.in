@@ -152,6 +152,7 @@ CHANGE_FILES = \
 	geocode-glib.ch    \
 	glib-networking.ch \
 	libchamplain.ch    \
+	libevent.ch        \
 	libgdata.ch        \
 	libnice.ch         \
 	libnl.ch           \
@@ -361,6 +362,7 @@ geoclue.xml:          $(BOOKdir)/$@ $(srcdir)/geoclue.ch
 geocode-glib.xml:     $(BOOKdir)/$@ $(srcdir)/geocode-glib.ch
 glib-networking.xml:  $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
 libchamplain.xml:     $(BOOKdir)/$@ $(srcdir)/libchamplain.ch
+libevent.xml:         $(BOOKdir)/$@ $(srcdir)/libevent.ch
 libgdata.xml:         $(BOOKdir)/$@ $(srcdir)/libgdata.ch
 libnice.xml:          $(BOOKdir)/$@ $(srcdir)/libnice.ch
 libnl.xml:            $(BOOKdir)/$@ $(srcdir)/libnl.ch

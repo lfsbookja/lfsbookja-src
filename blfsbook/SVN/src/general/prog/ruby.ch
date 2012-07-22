@@ -14,28 +14,18 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "403 MB (including tests)"> 
-  <!ENTITY ruby-time          "3.6 SBU (including tests)">
-@y
-  <!ENTITY ruby-buildsize     "403 MB (テスト実施を含む)"> 
-  <!ENTITY ruby-time          "3.6 SBU (テスト実施を含む)">
-@z
-
-@x
     <title>Introduction to Ruby</title>
 @y
     <title>&IntroductionTo1;Ruby&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Ruby</application> package contains the
-    <application>Ruby</application> development environment. This
-    is useful for object-oriented scripting.</para>
+      The <application>Ruby</application> package contains the
+      <application>Ruby</application> development environment. This
+      is useful for object-oriented scripting.
 @y
-    <para>
-    <application>Ruby</application> パッケージは <application>Ruby</application> 開発環境を提供します。
-    オブジェクト指向スクリプティングを実現するものです。
-    </para>
+      <application>Ruby</application> パッケージは <application>Ruby</application> 開発環境を提供します。
+      オブジェクト指向スクリプティングを実現するものです。
 @z
 
 @x
@@ -45,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&ruby-download-http;"/></para>
+          Download (HTTP): <ulink url="&ruby-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&ruby-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&ruby-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&ruby-download-ftp;"/></para>
+          Download (FTP): <ulink url="&ruby-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&ruby-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&ruby-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &ruby-md5sum;</para>
+          Download MD5 sum: &ruby-md5sum;
 @y
-        <para>&Download; MD5 sum: &ruby-md5sum;</para>
+          &Download; MD5 sum: &ruby-md5sum;
 @z
 
 @x
-        <para>Download size: &ruby-size;</para>
+          Download size: &ruby-size;
 @y
-        <para>&DownloadSize;: &ruby-size;</para>
+          &DownloadSize;: &ruby-size;
 @z
 
 @x
-        <para>Estimated disk space required: &ruby-buildsize;</para>
+          Estimated disk space required: &ruby-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &ruby-buildsize;</para>
+          &Estimateddiskspacerequired;: &ruby-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &ruby-time;</para>
+          Estimated build time: &ruby-time;
 @y
-        <para>&Estimatedbuildtime;: &ruby-time;</para>
+          &Estimatedbuildtime;: &ruby-time;
 @z
 
 @x
@@ -90,26 +80,26 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="tk"/>, and
-      <xref linkend="db"/>
+      <xref linkend="graphviz"/>,
+      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>,
+      <xref linkend="openssl"/> and
+      <xref linkend="tk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
+      <xref linkend="graphviz"/>,
+      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>,
       <xref linkend="openssl"/>,
-      <xref linkend="tk"/>,
-      <xref linkend="db"/>
+      <xref linkend="tk"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/ruby"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/ruby"/></para>
 @z
 
 @x
@@ -119,26 +109,22 @@
 @z
 
 @x
-    <para>Install <application>Ruby</application> by running the following
-    commands:</para>
+      Install <application>Ruby</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Ruby</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Ruby</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>.</para>
+      To test the results, issue: <command>make test</command>.
 @y
-    <para>ビルド結果をテストする場合は <command>make test</command> を実行します。</para>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -148,23 +134,19 @@
 @z
 
 @x
-    <para><parameter>--enable-shared</parameter>: This parameter builds the
-    <filename class='libraryfile'>libruby</filename> shared library.</para>
+      <option>--enable-shared</option>: This parameter enables building of
+      the <filename class="libraryfile">libruby</filename> shared library.
 @y
-    <para>
-    <parameter>--enable-shared</parameter>:
-    このパラメーターは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
-    </para>
+      <option>--enable-shared</option>:
+      このパラメーターは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
 @z
 
 @x
-    <para><parameter>--enable-pthread</parameter>: This parameter links the
-    threading library into the <application>Ruby</application> build.</para>
+      <option>--enable-pthread</option>: This parameter enables linking of the
+      threading library into the <application>Ruby</application> build.
 @y
-    <para>
-    <parameter>--enable-pthread</parameter>:
-    このパラメーターはスレッドライブラリをビルドします。
-    </para>
+      <option>--enable-pthread</option>:
+      このパラメーターはスレッドライブラリをビルドします。
 @z
 
 @x
@@ -184,15 +166,33 @@
 @z
 
 @x
-        <seg>erb, gem, irb, rake, rdoc, ri, ruby, and testrb</seg>
-        <seg>libruby.so, libruby-static.a and numerous modules located in the
-        <filename class='directory'>/usr/lib/ruby</filename> hierarchy.</seg>
-        <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby and /usr/share/ri</seg>
+        <seg>
+          erb, gem, irb, rake, rdoc, ri, ruby and testrb
+        </seg>
+        <seg>
+          libruby.so, libruby-static.a and numerous modules located in the
+          <filename class="directory">/usr/lib/ruby</filename> hierarchy.
+        </seg>
+        <seg>
+          /usr/include/ruby-1.9.1,
+          /usr/lib/ruby,
+          /usr/share/doc/ruby and
+          /usr/share/ri
+        </seg>
 @y
-        <seg>erb, gem, irb, rake, rdoc, ri, ruby, testrb</seg>
-        <seg>libruby.so, libruby-static.a,
-        <filename class='directory'>/usr/lib/ruby</filename> 配下にある数多くのモジュール</seg>
-        <seg>/usr/include/ruby-1.9.1, /usr/lib/ruby, /usr/share/ri</seg>
+        <seg>
+          erb, gem, irb, rake, rdoc, ri, ruby, testrb
+        </seg>
+        <seg>
+          libruby.so, libruby-static.a,
+          <filename class="directory">/usr/lib/ruby</filename> 配下にある数多くのモジュール
+        </seg>
+        <seg>
+          /usr/include/ruby-1.9.1,
+          /usr/lib/ruby,
+          /usr/share/doc/ruby,
+          /usr/share/ri
+        </seg>
 @z
 
 @x
@@ -202,47 +202,36 @@
 @z
 
 @x ruby
-          <para>is an interpreted scripting language for quick
-          and easy object-oriented programming.</para>
+            is an interpreted scripting language for quick
+            and easy object-oriented programming.
 @y
-          <para>
-          オブジェクト指向プログラミングを素早く容易に実現する、インタープリタースクリプト言語です。
-          </para>
+            オブジェクト指向プログラミングを素早く容易に実現する、インタープリタースクリプト言語です。
 @z
 
 @x irb
-          <para>is the interactive interface for
-          <application>Ruby</application>.</para>
+            is the interactive interface for
+            <application>Ruby</application>.
 @y
-          <para>
-          <application>Ruby</application> に対するインタラクティブなインターフェースを提供します。
-          </para>
+            <application>Ruby</application> に対するインタラクティブなインターフェースを提供します。
 @z
 
 @x erb
-          <para>is Tiny eRuby. It interprets a
-          <application>Ruby</application> code embedded text file.</para>
+            is Tiny eRuby. It interprets a
+            <application>Ruby</application> code embedded text file.
 @y
-          <para>
-          Tiny eRuby です。
-          これはテキストファイルに埋め込まれた <application>Ruby</application> コードを実行します。
-          </para>
+            Tiny eRuby です。
+            これはテキストファイルに埋め込まれた <application>Ruby</application> コードを実行します。
 @z
 
 @x ri
-          <para>displays documentation from a database on
-          <application>Ruby</application> classes, modules and methods.</para>
+            displays documentation from a database on
+            <application>Ruby</application> classes, modules and methods.
 @y
-          <para>
-          <application>Ruby</application> のクラス、モジュール、メソッドに対するドキュメントを、データベースより表示します。
-          </para>
+            <application>Ruby</application> のクラス、モジュール、メソッドに対するドキュメントを、データベースより表示します。
 @z
 
 @x libruby.so
-          <para>contains the API functions required
-          by <application>Ruby</application>.</para>
+            contains the API functions required by <application>Ruby</application>.
 @y
-          <para>
-          <application>Ruby</application> が必要とする API 関数を提供します。
-          </para>
+            <application>Ruby</application> が必要とする API 関数を提供します。
 @z

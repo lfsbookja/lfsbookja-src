@@ -20,7 +20,6 @@ CHANGE_FILES = \
 	util-macros.ch         \
 	x7app.ch               \
 	x7driver.ch            \
-	x7driveradd.ch         \
 	x7font.ch              \
 	x7lib.ch               \
 	x7proto.ch             \
@@ -62,7 +61,6 @@ twm.xml:                 $(BOOKdir)/$@ $(srcdir)/twm.ch
 util-macros.xml:         $(BOOKdir)/$@ $(srcdir)/util-macros.ch
 x7app.xml:               $(BOOKdir)/$@ $(srcdir)/x7app.ch
 x7driver.xml:            $(BOOKdir)/$@ $(srcdir)/x7driver.ch
-x7driveradd.xml:         $(BOOKdir)/$@ $(srcdir)/x7driveradd.ch
 x7font.xml:              $(BOOKdir)/$@ $(srcdir)/x7font.ch
 x7lib.xml:               $(BOOKdir)/$@ $(srcdir)/x7lib.ch
 x7proto.xml:             $(BOOKdir)/$@ $(srcdir)/x7proto.ch

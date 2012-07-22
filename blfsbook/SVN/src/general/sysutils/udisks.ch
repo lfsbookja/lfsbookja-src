@@ -85,8 +85,8 @@
       <xref linkend="lvm2"/>,
       <xref linkend="parted"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="sg3_utils"/> and
-      <xref linkend="udev"/>
+      <xref linkend="sg3_utils"/>, and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -97,7 +97,7 @@
       <xref linkend="parted"/>,
       <xref linkend="polkit"/>,
       <xref linkend="sg3_utils"/>,
-      <xref linkend="udev"/>
+      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (gudev 用)
     </para>
 @z
 

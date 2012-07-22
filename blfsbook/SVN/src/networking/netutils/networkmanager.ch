@@ -106,7 +106,7 @@
       <xref linkend="iptables"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>,
-      <xref linkend="udev"/> and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev), and
       <xref linkend="wireless_tools"/>
     </para>
 @y
@@ -116,7 +116,7 @@
       <xref linkend="iptables"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>,
-      <xref linkend="udev"/>,
+      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (gudev 向け),
       <xref linkend="wireless_tools"/>
     </para>
 @z

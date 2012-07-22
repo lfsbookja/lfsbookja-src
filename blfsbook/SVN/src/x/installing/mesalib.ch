@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>Mesa</application> is an OpenGL compatible 3D graphics
-    library.</para>
+      <application>Mesa</application> is an OpenGL compatible 3D graphics
+      library.
 @y
-    <para>
-    <application>Mesa</application> は OpenGL 互換の 3D グラフィックライブラリです。
-    </para>
+      <application>Mesa</application> は OpenGL 互換の 3D グラフィックライブラリです。
 @z
 
 @x
@@ -84,7 +82,7 @@
       <xref linkend="libxml2"/>,
       <xref linkend="makedepend"/> and
       <xref linkend="xorg7-lib"/>
-  </para>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
@@ -93,7 +91,7 @@
       <xref linkend="libxml2"/>,
       <xref linkend="makedepend"/>,
       <xref linkend="xorg7-lib"/>
-  </para>
+    </para>
 @z
 
 @x
@@ -111,54 +109,45 @@
 @z
 
 @x
-    <note><para>Unlike other packages, the
-    <filename>MesaLib-&mesalib-version;.tar.bz2</filename>
-    archive will extract to the
-    <filename class="directory">Mesa-&mesalib-version;</filename>
-    directory.</para></note>
+        Unlike other packages, the
+        <filename>MesaLib-&mesalib-version;.tar.bz2</filename>
+        archive will extract to the
+        <filename class="directory">Mesa-&mesalib-version;</filename>
+        directory.
 @y
-    <note><para>他のパッケージとは違い、<filename>MesaLib-&mesalib-version;.tar.bz2</filename> は <filename
-    class="directory">Mesa-&mesalib-version;</filename> ディレクトリに伸張 (解凍) されます。
-    </para></note>
+        他のパッケージとは違い、<filename>MesaLib-&mesalib-version;.tar.bz2</filename> は <filename
+        class="directory">Mesa-&mesalib-version;</filename> ディレクトリに伸張 (解凍) されます。
 @z
 
 @x
-    <para>Install <application>MesaLib</application> by running the following
-    commands:</para>
+      Install <application>MesaLib</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>MesaLib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>MesaLib</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Finally, if installing to any prefix other than
-    <filename class="directory">/usr</filename>, you should create symlinks
-    to the GL headers in <filename class="directory">/usr/include</filename>.
-    Execute the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+      Finally, if installing to any prefix other than
+      <filename class="directory">/usr</filename>, you should create symlinks
+      to the GL headers in <filename class="directory">/usr/include</filename>.
+      Execute the following command as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <filename class="directory">/usr</filename> 以外のプレフィックスを用いてインストールを行っている場合は、<filename
-    class="directory">/usr/include</filename> ディレクトリにある GL ヘッダーファイルへのシンボリックリンクを作成する必要があります。
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <filename class="directory">/usr</filename> 以外のプレフィックスを用いてインストールを行っている場合は、<filename
+      class="directory">/usr/include</filename> ディレクトリにある GL ヘッダーファイルへのシンボリックリンクを作成する必要があります。
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -168,16 +157,13 @@
 @z
 
 @x
-    <para><command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>: by
-    default, Mesa builds with debugging symbols.  Remove the -g switch from
-    both <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar> with this
-    command.</para>
+      <command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>: by default,
+      Mesa builds with debugging symbols. Remove the -g switch from both
+      <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar> with this command.
 @y
-    <para>
-    <command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>:
-    デフォルトでは Mesa はデバッグシンボルを含めたビルドを行います。
-    そこでこのコマンドにより <envar>CFLAGS</envar> と <envar>CXXFLAGS</envar> の双方から -g スイッチを取り除きます。
-    </para>
+      <command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>:
+      デフォルトでは Mesa はデバッグシンボルを含めたビルドを行います。
+      そこでこのコマンドにより <envar>CFLAGS</envar> と <envar>CXXFLAGS</envar> の双方から -g スイッチを取り除きます。
 @z
 
 @x
@@ -197,17 +183,31 @@
 @z
 
 @x
-        <seg>glxgears and glxinfo</seg>
-        <seg>libEGL.so, libGL.so, libGLU.so, libxatracker.so, and *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,GL,KHR},
-        <envar>$XORG_PREFIX</envar>/lib/dri, and
-        <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
+        <seg>
+          glxgears and glxinfo
+        </seg>
+        <seg>
+          libEGL.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
+          libGL.so, libGLU.so and libxatracker.so
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/{EGL,GL,GLES,GLES2,KHR},
+          <envar>$XORG_PREFIX</envar>/lib/dri, and
+          <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;
+        </seg>
 @y
-        <seg>glxgears, glxinfo</seg>
-        <seg>libEGL.so, libGL.so, libGLU.so, libxatracker.so, *_dri.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/{EGL,GL,KHR},
-        <envar>$XORG_PREFIX</envar>/lib/dri,
-        <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;</seg>
+        <seg>
+          glxgears, glxinfo
+        </seg>
+        <seg>
+          libEGL.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
+          libGL.so, libGLU.so, libxatracker.so
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/{EGL,GL,GLES,GLES2,KHR},
+          <envar>$XORG_PREFIX</envar>/lib/dri,
+          <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;
+        </seg>
 @z
 
 @x
@@ -217,46 +217,35 @@
 @z
 
 @x glxgears
-          <para>is a GL demo useful for troubleshooting graphics
-          problems.</para>
+            is a GL demo useful for troubleshooting graphics
+            problems.
 @y
-          <para>
-          GL のデモプログラム。グラフィックにて何か問題があった場合のトラブルシューティングとなります。
-          </para>
+            GL のデモプログラム。グラフィックにて何か問題があった場合のトラブルシューティングとなります。
 @z
 
 @x glxinfo
-          <para>is a diagnostic program that displays information about the
-          graphics hardware and installed GL libraries.</para>
+            is a diagnostic program that displays information about the
+            graphics hardware and installed GL libraries.
 @y
-          <para>
-          グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
-          </para>
+            グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
 @z
 
 @x libEGL.so
-          <para>provides a native platform graphics interface as defined by
-          the EGL-1.4 specification.</para>
+            provides a native platform graphics interface as defined by
+            the EGL-1.4 specification.
 @y
-          <para>
-          
-          provides a native platform graphics interface as defined by
-          the EGL-1.4 specification.
-          </para>
+            provides a native platform graphics interface as defined by
+            the EGL-1.4 specification.
 @z
 
 @x libGL.so
-          <para>is the main OpenGL library.</para>
+            is the main OpenGL library.
 @y
-          <para>
-          主要な OpenGL ライブラリ。
-          </para>
+            主要な OpenGL ライブラリ。
 @z
 
 @x libGLU.so
-          <para>is the OpenGL Utility library.</para>
+            is the OpenGL Utility library.
 @y
-          <para>
-          OpenGL ユーティリティライブラリ。
-          </para>
+            OpenGL ユーティリティライブラリ。
 @z

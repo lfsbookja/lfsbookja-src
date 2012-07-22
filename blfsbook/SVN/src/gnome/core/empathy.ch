@@ -137,8 +137,8 @@
       <xref linkend="cheese"/>,
       <xref linkend="enchant"/>,
       <xref linkend="iso-codes"/>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink> and
-      <xref linkend="udev"/>
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -146,8 +146,8 @@
       <xref linkend="cheese"/>,
       <xref linkend="enchant"/>,
       <xref linkend="iso-codes"/>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>,
-      <xref linkend="udev"/>
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data)
     </para>
 @z
 

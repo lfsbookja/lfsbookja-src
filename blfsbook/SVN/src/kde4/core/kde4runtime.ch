@@ -105,12 +105,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+    <xref linkend="alsa-lib"/>,
     <xref linkend="libjpeg"/> and 
     <xref linkend="exiv2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+    <xref linkend="alsa-lib"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="exiv2"/>
     </para>
@@ -122,7 +124,8 @@
     <xref linkend="pulseaudio"/>, 
     <xref linkend="xine-lib"/>, 
     <xref linkend="libcanberra"/>, 
-    <xref linkend="samba3"/>, 
+    <xref linkend="samba3"/>,
+    <xref linkend="NetworkManager"/>,
     <ulink url="http://www.openslp.org/">OpenSLP</ulink>, 
     <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>, 
     <ulink url="http://www.libssh.org/">LibSSH</ulink> and 
@@ -134,7 +137,8 @@
     <xref linkend="pulseaudio"/>, 
     <xref linkend="xine-lib"/>, 
     <xref linkend="libcanberra"/>, 
-    <xref linkend="samba3"/>, 
+    <xref linkend="samba3"/>,
+    <xref linkend="NetworkManager"/>,
     <ulink url="http://www.openslp.org/">OpenSLP</ulink>, 
     <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>, 
     <ulink url="http://www.libssh.org/">LibSSH</ulink>,
@@ -212,7 +216,7 @@
 	nepomukserver, nepomukservicestub and nepomuk-simpleresource-rcgen, plasmapkg, 
 	plasma-remote-helper and solid-hardware</seg>
         <seg>several in &kde-dir;/lib</seg>
-        <seg>several in /etc/kde4, &kde-dir;/include and &kde-dir;/share</seg>
+        <seg>several in /etc/kde, &kde-dir;/include and &kde-dir;/share</seg>
 @y
 	<seg>kcmshell4, kde4, kde4-menu, kdebugdialog, kde-cp, keditfiletype, 
 	kde-mv, kde-open, kfile4, kglobalaccel, khelpcenter, khotnewstuff4, 
@@ -222,5 +226,5 @@
 	nepomukserver, nepomukservicestub and nepomuk-simpleresource-rcgen, plasmapkg, 
 	plasma-remote-helper, solid-hardware</seg>
         <seg>&kde-dir;/lib 内に各種のライブラリ</seg>
-        <seg>/etc/kde4, &kde-dir;/include, &kde-dir;/share の各ディレクトリ</seg>
+        <seg>/etc/kde, &kde-dir;/include, &kde-dir;/share の各ディレクトリ</seg>
 @z

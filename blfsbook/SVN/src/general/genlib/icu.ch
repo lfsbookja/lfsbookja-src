@@ -121,28 +121,32 @@
 @x
         <seg>
           derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config, icuinfo,
-          makeconv, pkgdata and uconv.
+          makeconv, pkgdata and uconv
         </seg>
         <seg>
           libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
-          libicutest.so, libicutu.so and libicuuc.so.
+          libicutest.so, libicutu.so and libicuuc.so
         </seg>
         <seg>
-          /usr/include/layout, /usr/include/unicode, /usr/lib/icu and
-          /usr/share/icu.
+          /usr/include/layout,
+          /usr/include/unicode,
+          /usr/lib/icu and
+          /usr/share/icu
         </seg>
 @y
         <seg>
           derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config, icuinfo,
-          makeconv, pkgdata, uconv.
+          makeconv, pkgdata, uconv
         </seg>
         <seg>
           libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
-          libicutest.so, libicutu.so, libicuuc.so.
+          libicutest.so, libicutu.so, libicuuc.so
         </seg>
         <seg>
-          /usr/include/layout, /usr/include/unicode, /usr/lib/icu,
-          /usr/share/icu.
+          /usr/include/layout,
+          /usr/include/unicode,
+          /usr/lib/icu,
+          /usr/share/icu
         </seg>
 @z
 

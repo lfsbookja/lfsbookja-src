@@ -104,13 +104,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="qt4"/> and
+    <xref linkend="qt"/> and
     <xref linkend="dbus"/>    
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="qt4"/>,
+    <xref linkend="qt"/>,
     <xref linkend="dbus"/>    
     </para>
 @z

@@ -127,7 +127,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="libtasn1"/>,
       <xref linkend="p11-kit"/> and
       <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)
     </para>
@@ -137,8 +136,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="libtasn1"/>,
-      <xref linkend="p11-kit"/>,
+      <xref linkend="p11-kit"/> and
       <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて用いられる)
     </para>
 @z
@@ -224,7 +222,7 @@
           ocsptool, p11tool, psktool, and srptool
         </seg>
         <seg>
-          libgnutls.{so,a}, libgnutls-openssl.{so,a}, and libgnutlsxx.{so,a}
+          libgnutls.so, libgnutls-openssl.so, and libgnutlsxx.so
         </seg>
         <seg>
           /usr/include/gnutls,
@@ -237,7 +235,7 @@
           ocsptool, p11tool, psktool, srptool
         </seg>
         <seg>
-          libgnutls.{so,a}, libgnutls-openssl.{so,a}, libgnutlsxx.{so,a}
+          libgnutls.so, libgnutls-openssl.so, libgnutlsxx.so
         </seg>
         <seg>
           /usr/include/gnutls,

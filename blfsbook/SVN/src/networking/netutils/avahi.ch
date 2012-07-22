@@ -113,12 +113,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="qt4"/>
+      <xref linkend="qt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="qt4"/>
+      <xref linkend="qt"/>
     </para>
 @z
 

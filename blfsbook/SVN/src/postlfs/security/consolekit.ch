@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>ConsoleKit</application> package is a framework for
-    keeping track of the various users, sessions, and seats present on a system.
-    It provides a mechanism for software to react to changes of any of these
-    items or of any of the metadata associated with them.</para>
+      The <application>ConsoleKit</application> package is a framework for
+      keeping track of the various users, sessions, and seats present on a system.
+      It provides a mechanism for software to react to changes of any of these
+      items or of any of the metadata associated with them.
 @y
-    <para>
-    <application>ConsoleKit</application> パッケージは、システム上のユーザー、セッション、シート (seat) に関する情報を追跡管理するフレームワークを提供します。
-    そのような情報やこれに関するメタ情報が変更された際に、ソフトウェアがこれを検出する機構を提供するものです。
-    </para>
+      <application>ConsoleKit</application> パッケージは、システム上のユーザー、セッション、シート (seat) に関する情報を追跡管理するフレームワークを提供します。
+      そのような情報やこれに関するメタ情報が変更された際に、ソフトウェアがこれを検出する機構を提供するものです。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&consolekit-download-http;"/></para>
+          Download (HTTP): <ulink url="&consolekit-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&consolekit-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&consolekit-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&consolekit-download-ftp;"/></para>
+          Download (FTP): <ulink url="&consolekit-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&consolekit-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&consolekit-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &consolekit-md5sum;</para>
+          Download MD5 sum: &consolekit-md5sum;
 @y
-        <para>&Download; MD5 sum: &consolekit-md5sum;</para>
+          &Download; MD5 sum: &consolekit-md5sum;
 @z
 
 @x
-        <para>Download size: &consolekit-size;</para>
+          Download size: &consolekit-size;
 @y
-        <para>&DownloadSize;: &consolekit-size;</para>
+          &DownloadSize;: &consolekit-size;
 @z
 
 @x
-        <para>Estimated disk space required: &consolekit-buildsize;</para>
+          Estimated disk space required: &consolekit-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &consolekit-buildsize;</para>
+          &Estimateddiskspacerequired;: &consolekit-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &consolekit-time;</para>
+          Estimated build time: &consolekit-time;
 @y
-        <para>&Estimatedbuildtime;: &consolekit-time;</para>
+          &Estimatedbuildtime;: &consolekit-time;
 @z
 
 @x
@@ -108,15 +106,13 @@
 @z
 
 @x
-      <para>If you intend <emphasis role="strong">NOT</emphasis> to install
-      <application>polkit</application>, you will need to manually edit the
-      ConsoleKit.conf file to lock down the service. Failure to do so may be a
-      huge SECURITY HOLE.</para>
+        If you intend <emphasis role="strong">NOT</emphasis> to install
+        <application>polkit</application>, you will need to manually edit the
+        ConsoleKit.conf file to lock down the service. Failure to do so may be a
+        huge SECURITY HOLE.
 @y
-      <para>
-      <application>polkit</application> パッケージをインストール <emphasis role="strong">しない</emphasis> 場合、ConsoleKit.conf ファイルを編集してサービスを停止することが必要です。
-      これを行っていないと、極めて重大な <emphasis role="strong">セキュリティホール</emphasis> となる点に注意してください。
-      </para>
+        <application>polkit</application> パッケージをインストール <emphasis role="strong">しない</emphasis> 場合、ConsoleKit.conf ファイルを編集してサービスを停止することが必要です。
+        これを行っていないと、極めて重大な <emphasis role="strong">セキュリティホール</emphasis> となる点に注意してください。
 @z
 
 @x
@@ -133,10 +129,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/consolekit"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/consolekit"/></para>
 @z
 
 @x
@@ -146,26 +140,22 @@
 @z
 
 @x
-    <para>Install <application>ConsoleKit</application> by running the following
-    commands:</para>
+      Install <application>ConsoleKit</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>ConsoleKit</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>ConsoleKit</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -175,29 +165,39 @@
 @z
 
 @x
-    <para><parameter>--enable-pam-module</parameter>: This switch enables
-    <application>ConsoleKit</application> to use
-    <application>Linux-PAM</application> authentication. Remove this option if
-    <application>Linux-PAM</application> is
-    <emphasis role="strong">NOT</emphasis> installed.</para>
+      <option>--enable-udev-acl</option>: This switch enables building of the
+      <command>udev-acl</command> tool, which is used to allow normal users
+      to access device nodes normally only accessible to
+      <systemitem class="username">root</systemitem>.
 @y
-    <para>
-    <parameter>--enable-pam-module</parameter>:
-    このスイッチは <application>Linux-PAM</application> による認証機能を利用することを指示します。
-    <application>Linux-PAM</application> をインストールして <emphasis
-    role="strong">いない</emphasis> 場合はこのスイッチを取り除いてください。
-    </para>
+      <option>--enable-udev-acl</option>: This switch enables building of the
+      <command>udev-acl</command> tool, which is used to allow normal users
+      to access device nodes normally only accessible to
+      <systemitem class="username">root</systemitem>.
 @z
 
 @x
-    <para><option>--enable-docbook-docs</option>: Use this parameter if
-    <application>xmlto</application> is installed and you wish to build the API
-    documentation.</para>
+      <option>--enable-pam-module</option>: This switch enables building of the
+      <application>ConsoleKit</application> <application>PAM</application>
+      module which is needed for <application>ConsoleKit</application> to
+      work correctly with <application>PAM</application>. Remove if 
+      <application>Linux PAM</application> is 
+      <emphasis role="strong">NOT</emphasis> installed.
 @y
-    <para>
-    <option>--enable-docbook-docs</option>: 
-    <application>xmlto</application> をインストールしていて、API ドキュメントをインストールする場合にこのパラメーターを指定します。
-    </para>
+      <option>--enable-pam-module</option>:
+      このスイッチは <application>ConsoleKit</application> <application>PAM</application> モジュールをビルドすることを指定します。
+      <application>PAM</application> とともに <application>ConsoleKit</application> を動作させるためにはこの指定が必要です。
+      逆に <application>Linux-PAM</application> をインストールして <emphasis
+      role="strong">いない</emphasis> 場合はこのスイッチを取り除いてください。
+@z
+
+@x
+      <option>--enable-docbook-docs</option>: Use this switch if
+      <application>xmlto</application> is installed and you wish to
+      build the API documentation.
+@y
+      <option>--enable-docbook-docs</option>: 
+      <application>xmlto</application> をインストールしていて、API ドキュメントをインストールする場合にこのパラメーターを指定します。
 @z
 
 @x
@@ -207,35 +207,28 @@
 @z
 
 @x
-      <title>Config Files</title>
+      <title>PAM Module Configuration</title>
 @y
-      <title>&ConfigFiles;</title>
+      <title>PAM Module Configuration</title>
 @z
 
 @x
-    <sect3><title>Configuration Information</title>
+        If you use <application>Linux PAM</application> you need to
+        configure <application>Linux PAM</application> to activate
+        <application>ConsoleKit</application> upon user login.
+        This can be achieved by editing the 
+        <filename>/etc/pam.d/system-session</filename> file as the 
+        <systemitem class="username">root</systemitem> user:
 @y
-    <sect3><title>&ConfigInfo;</title>
+        <application>PAM</application> を導入している場合は、<application>PAM</application> において、ユーザーログイン時に <application>ConsoleKit</application> を有効とする設定を行う必要があります。
+        これを実現するには <systemitem class="username">root</systemitem> ユーザーになり、以下のように <filename>/etc/pam.d/system-session</filename> ファイルを編集します。
 @z
 
 @x
-      <para>If you use <application>PAM</application> you need to configure 
-      <application>PAM</application> to activate <application>ConsoleKit
-      </application> upon user login. This can be achieved by editing the 
-      <filename>/etc/pam.d/system-session</filename> file as the 
-      <systemitem class="username">root</systemitem> user:</para>
+        See /usr/share/doc/ConsoleKit/spec/ConsoleKit.html for more
+        configuration.
 @y
-      <para>
-      <application>PAM</application> を導入している場合は、<application>PAM</application> において、ユーザーログイン時に <application>ConsoleKit</application> を有効とする設定を行う必要があります。
-      これを実現するには <systemitem class="username">root</systemitem> ユーザーになり、以下のように <filename>/etc/pam.d/system-session</filename> ファイルを編集します。
-      </para>
-@z
-
-@x
-      <para>See /usr/share/doc/ConsoleKit/spec/ConsoleKit.html for more
-      configuration.</para>
-@y
-      <para>より詳細な設定に関しては /usr/share/doc/ConsoleKit/spec/ConsoleKit.html を参照のこと。</para>
+        より詳細な設定に関しては /usr/share/doc/ConsoleKit/spec/ConsoleKit.html を参照のこと。
 @z
 
 @x
@@ -255,21 +248,35 @@
 @z
 
 @x
-        <seg>ck-history, ck-launch-session, ck-list-sessions,
-        ck-log-system-restart, ck-log-system-start, ck-log-system-stop,
-        console-kit-daemon, ck-collect-session-info, ck-get-x11-display-device,
-        ck-get-x11-server-pid, ck-system-restart, and ck-system-stop</seg>
-        <seg>libck-connector.so and pam_ck_connector.so</seg>
-        <seg>/etc/ConsoleKit/{run-seat.d,run-session.d,seats.d},
-        /usr/{include/ConsoleKit/ck-connector,lib/ConsoleKit/{run-seat.d,
-        run-session.d,scripts},share/doc/ConsoleKit/spec}</seg>
+        <seg>
+          ck-history, ck-launch-session, ck-list-sessions,
+          ck-log-system-restart, ck-log-system-start,
+          ck-log-system-stop and console-kit-daemon
+        </seg>
+        <seg>
+          libck-connector.so and pam_ck_connector.so
+        </seg>
+        <seg>
+          /etc/ConsoleKit,
+          /usr/include/ConsoleKit,
+          /usr/lib/ConsoleKit,
+          /usr/share/doc/ConsoleKit and
+          /var/log/ConsoleKit
+        </seg>
 @y
-        <seg>ck-history, ck-launch-session, ck-list-sessions,
-        ck-log-system-restart, ck-log-system-start, ck-log-system-stop,
-        console-kit-daemon, ck-collect-session-info, ck-get-x11-display-device,
-        ck-get-x11-server-pid, ck-system-restart, ck-system-stop</seg>
-        <seg>libck-connector.so, pam_ck_connector.so</seg>
-        <seg>/etc/ConsoleKit/{run-seat.d,run-session.d,seats.d},
-        /usr/{include/ConsoleKit/ck-connector,lib/ConsoleKit/{run-seat.d,
-        run-session.d,scripts},share/doc/ConsoleKit/spec}</seg>
+        <seg>
+          ck-history, ck-launch-session, ck-list-sessions,
+          ck-log-system-restart, ck-log-system-start,
+          ck-log-system-stop, console-kit-daemon
+        </seg>
+        <seg>
+          libck-connector.so, pam_ck_connector.so
+        </seg>
+        <seg>
+          /etc/ConsoleKit,
+          /usr/include/ConsoleKit,
+          /usr/lib/ConsoleKit,
+          /usr/share/doc/ConsoleKit,
+          /var/log/ConsoleKit
+        </seg>
 @z

@@ -213,28 +213,6 @@
 @z
 
 @x
-      PCRE_* and LIBFFI_*: <application>Glib</application> is a prerequsite
-      for <application>pkg-config</application>, but it wants to use
-      <application>pkg-config</application> during the build process.
-      These environment variables work around not having
-      <application>pkg-config</application> available.
-@y
-      PCRE_* and LIBFFI_*: <application>Glib</application> is a prerequsite
-      for <application>pkg-config</application>, but it wants to use
-      <application>pkg-config</application> during the build process.
-      These environment variables work around not having
-      <application>pkg-config</application> available.
-@z
-
-@x
-      <command>ln -v -sfn ... glibconfig.h</command>: Place a link to an
-      architecture dependent header file where programs can find it.
-@y
-      <command>ln -v -sfn ... glibconfig.h</command>: Place a link to an
-      architecture dependent header file where programs can find it.
-@z
-
-@x
       <parameter>--with-pcre=system</parameter>: This parameter causes the
       build to use a system-provided version of the
       <application>PCRE</application> library instead of an internal

@@ -94,17 +94,17 @@
 @z
 
 @x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
     <para>To check the results, issue <command>make check</command>.</para>
 @y
     <para>
     ビルド結果をチェックする場合は <command>make check</command> を実行します。
     </para>
-@z
-
-@x
-      Now, as the <systemitem class="username">root</systemitem> user:
-@y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

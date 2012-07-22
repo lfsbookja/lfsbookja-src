@@ -135,9 +135,9 @@
 @x
         <seg>kactivitymanagerd</seg>
         <seg>libactivities.so and activitymanager_plugin_*.so</seg>
-	<seg>$KDE4_PREFIX/include/kactivities and $KDE4_PREFIX/include/KDE/KActivities</seg>
+	<seg>&kde-dir;/include/kactivities and &kde-dir;/include/KDE/KActivities</seg>
 @y
         <seg>kactivitymanagerd</seg>
-        <seg>libactivities.so,s activitymanager_plugin_*.so</seg>
-	<seg>$KDE4_PREFIX/include/kactivities, $KDE4_PREFIX/include/KDE/KActivities</seg>
+        <seg>libactivities.so, activitymanager_plugin_*.so</seg>
+	<seg>&kde-dir;/include/kactivities, &kde-dir;/include/KDE/KActivities</seg>
 @z

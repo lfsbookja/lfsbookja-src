@@ -26,13 +26,10 @@
 @z
 
 @x
-    <para>The <application>XKeyboardConfig</application> package contains
-    the keyboard configuration database for the X Window System.</para>
+      The <application>XKeyboardConfig</application> package contains
+      the keyboard configuration database for the X Window System.
 @y
-<para>
-<application>XKeyboardConfig</application>
-パッケージは X ウィンドウシステムにおけるキーボード設定データベースを提供します。
-</para>
+      <application>XKeyboardConfig</application> パッケージは X ウィンドウシステムにおけるキーボード設定データベースを提供します。
 @z
 
 @x
@@ -42,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xkeyboard-config-download-http;"/></para>
+          Download (HTTP): <ulink url="&xkeyboard-config-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xkeyboard-config-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xkeyboard-config-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xkeyboard-config-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xkeyboard-config-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xkeyboard-config-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xkeyboard-config-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xkeyboard-config-md5sum;</para>
+          Download MD5 sum: &xkeyboard-config-md5sum;
 @y
-        <para>&Download; MD5 sum: &xkeyboard-config-md5sum;</para>
+          &Download; MD5 sum: &xkeyboard-config-md5sum;
 @z
 
 @x
-        <para>Download size: &xkeyboard-config-size;</para>
+          Download size: &xkeyboard-config-size;
 @y
-        <para>&DownloadSize;: &xkeyboard-config-size;</para>
+          &DownloadSize;: &xkeyboard-config-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xkeyboard-config-buildsize;</para>
+          Estimated disk space required: &xkeyboard-config-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xkeyboard-config-buildsize;</para>
+          &Estimateddiskspacerequired;: &xkeyboard-config-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xkeyboard-config-time;</para>
+          Estimated build time: &xkeyboard-config-time;
 @y
-        <para>&Estimatedbuildtime;: &xkeyboard-config-time;</para>
+          &Estimatedbuildtime;: &xkeyboard-config-time;
 @z
 
 @x
@@ -85,20 +82,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="intltool"/> and
-    <xref linkend="xorg7-app"/></para>
+    <para role="required">
+      <xref linkend="intltool"/> and
+      <xref linkend="xorg7-app"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="intltool"/>,
-    <xref linkend="xorg7-app"/></para>
+    <para role="required">
+      <xref linkend="intltool"/>,
+      <xref linkend="xorg7-app"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/xkeyboard-config"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/xkeyboard-config"/></para>
 @z
 
 @x
@@ -108,26 +107,22 @@
 @z
 
 @x
-    <para>Install <application>XKeyboardConfig</application> by running the
-    following commands:</para>
+      Install <application>XKeyboardConfig</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>XKeyboardConfig</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>XKeyboardConfig</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -137,16 +132,14 @@
 @z
 
 @x
-    <para><parameter>--with-xkb-rules-symlink=xorg</parameter>: By default,
-    the XKB rules installed are named "base". This creates symlinks named
-    "xorg" to those rules, which is the default name used by Xorg.</para>
+      <parameter>--with-xkb-rules-symlink=xorg</parameter>: By default, the
+      XKB rules installed are named "base". This creates symlinks named
+      "xorg" to those rules, which is the default name used by Xorg.
 @y
-    <para>
-    <parameter>--with-xkb-rules-symlink=xorg</parameter>:
-    デフォルトにてインストールされる XKB ルールは "base" というファイル名です。
-    このパラメーターは、それらのルールに対して "xorg" というシンボリックリンクとして生成します。
-    この名前は Xorg にてデフォルトで用いられる名前です。
-    </para>
+      <parameter>--with-xkb-rules-symlink=xorg</parameter>:
+      デフォルトにてインストールされる XKB ルールは "base" というファイル名です。
+      このパラメーターは、それらのルールに対して "xorg" というシンボリックリンクとして生成します。
+      この名前は Xorg にてデフォルトで用いられる名前です。
 @z
 
 @x
@@ -156,23 +149,19 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/X11/xkb,
-        <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/X11/xkb and
+          <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/X11/xkb,
-        <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/X11/xkb and
+          <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;
+        </seg>
 @z

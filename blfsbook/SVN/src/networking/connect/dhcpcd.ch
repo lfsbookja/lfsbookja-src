@@ -275,7 +275,7 @@
 
 @x
         <seg>dhcpcd</seg>
-        <seg>None</seg>
+        <seg>none</seg>
         <seg>/lib/dhcpcd</seg>
 @y
         <seg>dhcpcd</seg>

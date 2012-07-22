@@ -79,8 +79,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/>, 
-    <xref linkend="alsa-lib"/>, 
+    <xref linkend="phonon"/>,  
     <xref linkend="attica"/>, 
     <xref linkend="soprano"/>, 
     <xref linkend="strigi"/>, 
@@ -94,8 +93,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/>, 
-    <xref linkend="alsa-lib"/>, 
+    <xref linkend="phonon"/>,  
     <xref linkend="attica"/>, 
     <xref linkend="soprano"/>, 
     <xref linkend="strigi"/>, 
@@ -200,27 +198,16 @@
 @z
 
 @x
-    <para><option>-DKDE_DEFAULT_HOME=.kde4</option>: This option is set to
-    avoid clashes with a KDE3 installation on the same machine.</para>
-@y
-    <para><option>-DKDE_DEFAULT_HOME=.kde4</option>:
-    このオプションは KDE3 がインストールされている場合にそれを壊すことがないようにします。
-    </para>
-@z
-@x
-    <para><option>-DSYSCONF_INSTALL_DIR=/etc/kde4</option>: This option is set to
+    <para><option>-DSYSCONF_INSTALL_DIR=/etc/kde</option>: This option is set to
     install configuration files in /etc.</para>
+    <para><option>-DDOCBOOKXML_CURRENTDTD_DIR=...</option>: This option is used to
+    find the DTDs.</para>
 @y
     <para><option>-DSYSCONF_INSTALL_DIR=/etc/kde4</option>:
     このオプションは、設定ファイル類を /etc にインストールすることを指定します。
     </para>
-@z
-@x
-    <para><option>-DDOCBOOKXML_CURRENTDTD_DIR=...</option>: This option is used to
-    find the DTDs.</para>
-@y
     <para><option>-DDOCBOOKXML_CURRENTDTD_DIR=...</option>:
-    このオプションは DTD ファイルを見つけるために指定します。
+    このオプションは DTDs を見つけ出すために指定します。
     </para>
 @z
 
@@ -246,12 +233,12 @@
         kshell4, kunittestmodrunner, kwrapper4, makekdewidgets, meinproc4, 
         meinproc_simple, nepomuk-rcgen and preparetips</seg>
         <seg>several in &kde-dir;/lib</seg>
-	<seg>several in /etc/kde4, &kde-dir;/include and &kde-dir;/share</seg>
+	<seg>several in /etc/kde, &kde-dir;/include and &kde-dir;/share</seg>
 @y
         <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4, kde4-config, 
         kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper, kfilemetadatareader, kjs, kjscmd, kross, 
         kshell4, kunittestmodrunner, kwrapper4, makekdewidgets, meinproc4, 
         meinproc_simple, nepomuk-rcgen, preparetips</seg>
         <seg>&kde-dir;/lib 内に数種のライブラリ</seg>
-	<seg>/etc/kde4, &kde-dir;/include and &kde-dir;/share 内に数種のディレクトリ</seg>
+	<seg>/etc/kde, &kde-dir;/include, &kde-dir;/share 内に数種のディレクトリ</seg>
 @z

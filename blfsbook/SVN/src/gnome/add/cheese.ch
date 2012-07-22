@@ -86,8 +86,8 @@
       <xref linkend="librsvg"/>,
       <xref linkend="mx"/>,
       <xref linkend="nautilus-sendto"/>,
-      <xref linkend="udev"/>,
-      <xref linkend="vala"/> and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data),
+      <xref linkend="vala"/>, and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
@@ -102,7 +102,7 @@
       <xref linkend="librsvg"/>,
       <xref linkend="mx"/>,
       <xref linkend="nautilus-sendto"/>,
-      <xref linkend="udev"/>,
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data),
       <xref linkend="vala"/>,
       <xref linkend="yelp-xsl"/>
     </para>

@@ -20,16 +20,14 @@
 @z
 
 @x
-    <para>The <application>sudo</application> package allows a system
-    administrator to give certain users (or groups of users) the ability to run
-    some (or all) commands as
-    <systemitem class="username">root</systemitem> or another user while
-    logging the commands and arguments.</para>
+      The <application>Sudo</application> package allows a system administrator
+      to give certain users (or groups of users) the ability to run
+      some (or all) commands as
+      <systemitem class="username">root</systemitem> or another user while
+      logging the commands and arguments.
 @y
-    <para>
-    <application>sudo</application> パッケージは、システム管理者が利用する機能として、特定のユーザー (あるいはユーザーグループ) が特定のコマンド (あるいはすべてのコマンド) を <systemitem
-    class="username">root</systemitem> ユーザーとして、あるいは他のユーザーとしてコマンド実行ができるようにする機能を提供します。
-    </para>
+      <application>Sudo</application> パッケージは、システム管理者が利用する機能として、特定のユーザー (あるいはユーザーグループ) が特定のコマンド (あるいはすべてのコマンド) を <systemitem
+      class="username">root</systemitem> ユーザーとして、あるいは他のユーザーとしてコマンド実行ができるようにする機能を提供します。
 @z
 
 @x
@@ -39,39 +37,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&sudo-download-http;"/></para>
+          Download (HTTP): <ulink url="&sudo-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&sudo-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&sudo-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&sudo-download-ftp;"/></para>
+          Download (FTP): <ulink url="&sudo-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&sudo-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&sudo-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &sudo-md5sum;</para>
+          Download MD5 sum: &sudo-md5sum;
 @y
-        <para>&Download; MD5 sum: &sudo-md5sum;</para>
+          &Download; MD5 sum: &sudo-md5sum;
 @z
 
 @x
-        <para>Download size: &sudo-size;</para>
+          Download size: &sudo-size;
 @y
-        <para>&DownloadSize;: &sudo-size;</para>
+          &DownloadSize;: &sudo-size;
 @z
 
 @x
-        <para>Estimated disk space required: &sudo-buildsize;</para>
+          Estimated disk space required: &sudo-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &sudo-buildsize;</para>
+          &Estimateddiskspacerequired;: &sudo-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &sudo-time;</para>
+          Estimated build time: &sudo-time;
 @y
-        <para>&Estimatedbuildtime;: &sudo-time;</para>
+          &Estimatedbuildtime;: &sudo-time;
 @z
 
 @x
@@ -82,33 +80,35 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink url="http://www.openafs.org/">AFS</ulink>,
-    <xref linkend="linux-pam"/>,
-    <ulink url="http://www.fwtk.org/">FWTK</ulink>,
-    <xref linkend="mitkrb"/>,
-    an <xref linkend="server-mail"/> (that provides a
-    <command>sendmail</command> command),
-    <xref linkend="openldap"/>,
-    <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink> and
-    <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink></para>
+    <para role="optional">
+      <ulink url="http://www.openafs.org/">AFS</ulink>,
+      <ulink url="http://www.fwtk.org/">FWTK</ulink>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/>,
+      an <xref linkend="server-mail"/> (that provides a
+      <command>sendmail</command> command),
+      <xref linkend="openldap"/>,
+      <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink> and
+      <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink url="http://www.openafs.org/">AFS</ulink>,
-    <xref linkend="linux-pam"/>,
-    <ulink url="http://www.fwtk.org/">FWTK</ulink>,
-    <xref linkend="mitkrb"/>,
-    <xref linkend="server-mail"/> (これは <command>sendmail</command> コマンドを提供するものです),
-    <xref linkend="openldap"/>,
-    <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink>,
-    <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink></para>
+    <para role="optional">
+      <ulink url="http://www.openafs.org/">AFS</ulink>,
+      <ulink url="http://www.fwtk.org/">FWTK</ulink>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="server-mail"/> (これは <command>sendmail</command> コマンドを提供するものです),
+      <xref linkend="openldap"/>,
+      <ulink url="ftp://ftp.nrl.navy.mil/pub/security/opie">Opie</ulink>,
+      <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/sudo"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/sudo"/></para>
 @z
 
 @x
@@ -118,26 +118,22 @@
 @z
 
 @x
-    <para>Install <application>sudo</application> by running
-    the following commands:</para>
+      Install <application>Sudo</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>sudo</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>sudo</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -147,56 +143,48 @@
 @z
 
 @x
-    <para><option>--with-all-insults</option>: This switch includes all the
-    <application>sudo</application> insult sets.</para>
+      <option>--with-all-insults</option>: This switch includes all the
+      <application>sudo</application> insult sets.
 @y
-    <para><option>--with-all-insults</option>:
-    このスイッチは <application>sudo</application> が表示する侮辱の文言をすべて含めます。
-    </para>
+      <option>--with-all-insults</option>:
+      このスイッチは <application>sudo</application> が表示する侮辱の文言をすべて含めます。
 @z
 
 @x
-    <para><option>--with-env-editor</option>: This switch enables use of the 
-    environment variable EDITOR for <command>visudo</command>.</para>
+      <option>--with-env-editor</option>: This switch enables use of the 
+      environment variable EDITOR for <command>visudo</command>.
 @y
-    <para><option>--with-env-editor</option>:
-    このスイッチは <command>visudo</command> において環境変数 EDITOR の利用を有効にします。
-    </para>
+      <option>--with-env-editor</option>:
+      このスイッチは <command>visudo</command> において環境変数 EDITOR の利用を有効にします。
 @z
 
 @x
-    <para><option>--without-pam</option>: This switch disables the use of
-    <application>PAM</application> authentication. Omit if you have
-    <application>Linux PAM</application> installed.</para>
+      <option>--without-pam</option>: This switch disables the use of
+      <application>PAM</application> authentication. Omit if you have
+      <application>Linux PAM</application> installed.
 @y
-    <para>
-    <option>--without-pam</option>:
-    このスイッチは <application>PAM</application> による権限制御を無効にすることを指示します。
-    <application>Linux PAM</application> をインストールしている場合は、このスイッチをはずしてください。
-    </para>
+      <option>--without-pam</option>:
+      このスイッチは <application>PAM</application> による権限制御を無効にすることを指示します。
+      <application>Linux PAM</application> をインストールしている場合は、このスイッチをはずしてください。
 @z
 
 @x
-    <para><option>--without-sendmail</option>: This switch disables the use of
-    sendmail. Remove if you have a sendmail compatible MTA.</para>
+      <option>--without-sendmail</option>: This switch disables the use of
+      sendmail. Remove if you have a sendmail compatible MTA.
 @y
-    <para>
-    <option>--without-sendmail</option>:
-    このスイッチは sendmail の利用を不可とします。
-    sendmail 互換の MTA をインストールしている場合は、このスイッチ指定をはずしてください。
-    </para>
+      <option>--without-sendmail</option>:
+      このスイッチは sendmail の利用を不可とします。
+      sendmail 互換の MTA をインストールしている場合は、このスイッチ指定をはずしてください。
 @z
 
 @x
-      <para>There are many options to <application>sudo</application>'s
-      <command>configure</command> command. Check the
-      <command>configure --help</command> output for a complete list.</para>
+        There are many options to <application>sudo</application>'s
+        <command>configure</command> command. Check the
+        <command>configure --help</command> output for a complete list.
 @y
-      <para>
-      <application>sudo</application> の <command>configure</command>
-      スクリプトにはオプションが数多くあります。
-      すべてを確認する場合は <command>configure --help</command> を実行してその出力を参照してください。
-      </para>
+        <application>sudo</application> の <command>configure</command>
+        スクリプトにはオプションが数多くあります。
+        すべてを確認する場合は <command>configure --help</command> を実行してその出力を参照してください。
 @z
 
 @x
@@ -218,64 +206,54 @@
 @z
 
 @x
-      <para>The <filename>sudoers</filename> file can be quite complicated.  It
-      is composed of two types of entries: aliases (basically variables) and
-      user specifications (which specify who may run what).  The installation
-      installs a default configuration that has no privileges installed for any
-      user.</para>
+        The <filename>sudoers</filename> file can be quite complicated.  It
+        is composed of two types of entries: aliases (basically variables) and
+        user specifications (which specify who may run what).  The installation
+        installs a default configuration that has no privileges installed for any
+        user.
 @y
-      <para>
-      <filename>sudoers</filename> ファイルは少々込み入っています。
-      このファイル内では２つの記述項目があります。
-      エイリアス (基本的には変数) とユーザー指定 (誰が何を実行できるか) を定めるものです。
-      インストール作業によってインストールされるこのファイルは、デフォルトの設定が行われているに過ぎず、どのユーザーにも権限は与えられていません。
-      </para>
+        <filename>sudoers</filename> ファイルは少々込み入っています。
+        このファイル内では２つの記述項目があります。
+        エイリアス (基本的には変数) とユーザー指定 (誰が何を実行できるか) を定めるものです。
+        インストール作業によってインストールされるこのファイルは、デフォルトの設定が行われているに過ぎず、どのユーザーにも権限は与えられていません。
 @z
 
 @x
-      <para>One example usage is to allow the system administrator to execute
-      any program without typing a password each time root privileges are
-      needed.  This can be configured as:</para>
+        One example usage is to allow the system administrator to execute
+        any program without typing a password each time root privileges are
+        needed. This can be configured as:
 @y
-      <para>
-      以下はシステム管理者に対する設定の例です。
-      root 権限を必要とする場合であっても、パスワードを入力せずにプログラムを実行できるようにします。
-      以下の設定により実現します。
-      </para>
+        以下はシステム管理者に対する設定の例です。
+        root 権限を必要とする場合であっても、パスワードを入力せずにプログラムを実行できるようにします。
+        以下の設定により実現します。
 @z
 
 @x
-      <para>For details, see <command>man sudoers</command>.</para>
+        For details, see <command>man sudoers</command>.
 @y
-      <para>
-      詳しいことは <command>man sudoers</command> を実行して確認してください。
-      </para>
+        詳しいことは <command>man sudoers</command> を実行して確認してください。
 @z
 
 @x
-        <para>The <application>Sudo</application> developers highly recommend
-        using the <command>visudo</command> program to edit the
-        <filename>sudoers</filename> file. This will provide basic sanity
-        checking like syntax parsing and file permission to avoid some possible
-        mistakes that could lead to a vulnerable configuration.</para>
+          The <application>Sudo</application> developers highly recommend
+          using the <command>visudo</command> program to edit the
+          <filename>sudoers</filename> file. This will provide basic sanity
+          checking like syntax parsing and file permission to avoid some possible
+          mistakes that could lead to a vulnerable configuration.
 @y
-        <para>
-        <application>Sudo</application> 開発者は <filename>sudoers</filename> ファイルを編集する際には <command>visudo</command> コマンドを利用することを強く推奨しています。
-        文法チェックやファイルパーミッションなどの基本的な整合性を確保するものであり、ちょっとしたミスによって脆弱な設定とならないようにするものです。
-        </para>
+          <application>Sudo</application> 開発者は <filename>sudoers</filename> ファイルを編集する際には <command>visudo</command> コマンドを利用することを強く推奨しています。
+          文法チェックやファイルパーミッションなどの基本的な整合性を確保するものであり、ちょっとしたミスによって脆弱な設定とならないようにするものです。
 @z
 
 @x
-      <para>If you've built <application>Sudo</application> with
-      <application>PAM</application> support, issue the following
-      command as the <systemitem class="username">root</systemitem> user
-      to create the <application>PAM</application> configuration file:</para>
+        If you've built <application>Sudo</application> with
+        <application>PAM</application> support, issue the following
+        command as the <systemitem class="username">root</systemitem> user
+        to create the <application>PAM</application> configuration file:
 @y
-      <para>
-      <application>Sudo</application> のビルドにあたって <application>PAM</application> サポートを有効にした場合は、<systemitem
-      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-      これにより <application>PAM</application> 設定ファイルが生成されます。
-      </para>
+        <application>Sudo</application> のビルドにあたって <application>PAM</application> サポートを有効にした場合は、<systemitem
+        class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+        これにより <application>PAM</application> 設定ファイルが生成されます。
 @z
 
 @x
@@ -295,13 +273,27 @@
 @z
 
 @x
-        <seg>sudo, sudoedit, sudoreplay and visudo</seg>
-        <seg>sudoers.so and sudo_noexec.so</seg>
-        <seg>None</seg>
+        <seg>
+          sudo, sudoedit, sudoreplay and visudo
+        </seg>
+        <seg>
+          sudoers.so and sudo_noexec.so
+        </seg>
+        <seg>
+          /usr/lib/sudo and
+          /usr/share/doc/sudo-&sudo-version;
+        </seg>
 @y
-        <seg>sudo, sudoedit, sudoreplay, visudo</seg>
-        <seg>sudoers.so, sudo_noexec.so</seg>
-        <seg>&None;</seg>
+        <seg>
+          sudo, sudoedit, sudoreplay, visudo
+        </seg>
+        <seg>
+          sudoers.so, sudo_noexec.so
+        </seg>
+        <seg>
+          /usr/lib/sudo,
+          /usr/share/doc/sudo-&sudo-version;
+        </seg>
 @z
 
 @x
@@ -311,54 +303,44 @@
 @z
 
 @x sudo
-          <para>executes a command as another user as permitted by
-          the <filename>/etc/sudoers</filename> configuration file.
-          </para>
+            executes a command as another user as permitted by
+            the <filename>/etc/sudoers</filename> configuration file.
 @y
-          <para>
-          設定ファイル <filename>/etc/sudoers</filename> によって許可された他ユーザーとなって、コマンドを実行します。
-          </para>
+            設定ファイル <filename>/etc/sudoers</filename> によって許可された他ユーザーとなって、コマンドを実行します。
 @z
 
 @x sudoedit
-          <para>is a hard link to <command>sudo</command> that implies
-          the <option>-e</option> option to invoke an editor as another
-          user.</para>
+            is a hard link to <command>sudo</command> that implies the
+            <option>-e</option> option to invoke an editor as another user.
 @y
-          <para>
-          <command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたハードリンクであり、他ユーザーとなってエディターを起動します。
-          </para>
+            <command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたハードリンクであり、他ユーザーとなってエディターを起動します。
 @z
 
 @x visudo
-          <para>allows for safer editing of the <filename>sudoers</filename>
-          file.</para>
+            allows for safer editing of the <filename>sudoers</filename>
+            file.
 @y
-          <para>
-          <filename>sudoers</filename> ファイルを安全な形で編集します。
-          </para>
+            <filename>sudoers</filename> ファイルを安全な形で編集します。
 @z
 
 @x sudoreplay
-          <para>is used to play back or list the output 
-          logs created by <command>sudo</command>.</para>
+            is used to play back or list the output 
+            logs created by <command>sudo</command>.
 @y
-          <para><command>sudo</command> によって生成されたログを一覧表示したり再実行したりします。</para>
+            <command>sudo</command> によって生成されたログを一覧表示したり再実行したりします。
 @z
 
 @x sudoers.so
-          <para>is default sudo security policy module.</para>
+            is default sudo security policy module.
 @y
-          <para>sudo のデフォルトのセキュリティポリシーモジュール。</para>
+            sudo のデフォルトのセキュリティポリシーモジュール。
 @z
 
 @x sudo_noexec.so
-          <para>enables support for the "noexec" functionality which prevents
-           a dynamically-linked program being run by sudo from executing
-           another program (think shell escapes).</para>
+             enables support for the "noexec" functionality which prevents
+             a dynamically-linked program being run by sudo from executing
+             another program (think shell escapes).
 @y
-          <para>
-          "noexec" 機能サポートを有効にします。
-          他のプログラム (シェルエスケープなどが想定される) によって sudo が動的リンクされ実行されるのを防ぎます。
-          </para>
+            "noexec" 機能サポートを有効にします。
+            他のプログラム (シェルエスケープなどが想定される) によって sudo が動的リンクされ実行されるのを防ぎます。
 @z

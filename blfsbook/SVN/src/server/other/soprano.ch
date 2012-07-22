@@ -83,7 +83,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
     <xref linkend="cmake"/>, 
-    <xref linkend="qt4"/>, 
+    <xref linkend="qt"/>, 
     <xref linkend="dbus"/> and
     <xref linkend="redland"/>
     </para>
@@ -91,7 +91,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="cmake"/>, 
-    <xref linkend="qt4"/>, 
+    <xref linkend="qt"/>, 
     <xref linkend="dbus"/>,
     <xref linkend="redland"/>
     </para>

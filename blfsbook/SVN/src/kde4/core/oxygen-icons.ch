@@ -124,9 +124,9 @@
 @x
         <seg>none</seg>
         <seg>none</seg>
-        <seg>$KDE4_PREFIX/share/icons/oxygen</seg>
+        <seg>&kde-dir;/share/icons/oxygen</seg>
 @y
         <seg>&None;</seg>
         <seg>&None;</seg>
-        <seg>$KDE4_PREFIX/share/icons/oxygen</seg>
+        <seg>&kde-dir;/share/icons/oxygen</seg>
 @z

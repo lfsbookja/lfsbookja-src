@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>xbitmaps</application> package contains bitmap
-    images used by multiple applications.</para>
+      The <application>xbitmaps</application> package contains bitmap
+      images used by multiple applications built in Xorg chapter.
 @y
-    <para>
-    <application>xbitmaps</application> は、Xorg アプリケーションが画面項目を描画するために必要となるスタティックなグラフィックを提供します。
-    </para>
+      <application>xbitmaps</application> は、Xorg の章においてビルドする複数のアプリケーションが、ビットマップを描画するために必要となるスタティックなグラフィックを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xbitmaps-download-http;"/></para>
+          Download (HTTP): <ulink url="&xbitmaps-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xbitmaps-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xbitmaps-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xbitmaps-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xbitmaps-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xbitmaps-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xbitmaps-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xbitmaps-md5sum;</para>
+          Download MD5 sum: &xbitmaps-md5sum;
 @y
-        <para>&Download; MD5 sum: &xbitmaps-md5sum;</para>
+          &Download; MD5 sum: &xbitmaps-md5sum;
 @z
 
 @x
-        <para>Download size: &xbitmaps-size;</para>
+          Download size: &xbitmaps-size;
 @y
-        <para>&DownloadSize;: &xbitmaps-size;</para>
+          &DownloadSize;: &xbitmaps-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xbitmaps-buildsize;</para>
+          Estimated disk space required: &xbitmaps-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xbitmaps-buildsize;</para>
+          &Estimateddiskspacerequired;: &xbitmaps-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xbitmaps-time;</para>
+          Estimated build time: &xbitmaps-time;
 @y
-        <para>&Estimatedbuildtime;: &xbitmaps-time;</para>
+          &Estimatedbuildtime;: &xbitmaps-time;
 @z
 
 @x
@@ -89,26 +87,22 @@
 @z
 
 @x
-    <para>Install <application>xbitmaps</application> by running the
-    following commands:</para>
+      Install <application>xbitmaps</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xbitmaps</application> パッケージをビルドします。
-    </para>
+      以下のコマンドを実行して <application>xbitmaps</application> パッケージをビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -118,21 +112,17 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg>$XORG_PREFIX/include/X11/bitmaps</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/X11/bitmaps
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg>$XORG_PREFIX/include/X11/bitmaps</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/X11/bitmaps
+        </seg>
 @z

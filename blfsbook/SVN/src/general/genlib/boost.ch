@@ -14,26 +14,16 @@
 @z
 
 @x
-  <!ENTITY boost-buildsize     "764 MB for default build - 634MB without static libs">
-  <!ENTITY boost-time          "10 SBU for default build - 5.5 SBU without static libs">
-@y
-  <!ENTITY boost-buildsize     "通常のビルドで 764 MB、スタティックライブラリなしで 634MB">
-  <!ENTITY boost-time          "通常のビルドで 10 SBU、スタティックライブラリなしで 5.5 SBU">
-@z
-
-@x
     <title>Introduction to Boost</title>
 @y
     <title>&IntroductionTo1;Boost&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Boost</application> provides free peer-reviewed
-    portable C++ source libraries.</para>
+      <application>Boost</application> provides free peer-reviewed
+      portable C++ source libraries.
 @y
-    <para>
-    <application>Boost</application> は、公開レビューされている、移植性に優れたフリーの C++ ソースライブラリです。
-    </para>
+      <application>Boost</application> は、公開レビューされている、移植性に優れたフリーの C++ ソースライブラリです。
 @z
 
 @x
@@ -43,43 +33,43 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&boost-download-http;"/></para>
+          Download (HTTP): <ulink url="&boost-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&boost-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&boost-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&boost-download-ftp;"/></para>
+          Download (FTP): <ulink url="&boost-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&boost-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&boost-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &boost-md5sum;</para>
+          Download MD5 sum: &boost-md5sum;
 @y
-        <para>&Download; MD5 sum: &boost-md5sum;</para>
+          &Download; MD5 sum: &boost-md5sum;
 @z
 
 @x
-        <para>Download size: &boost-size;</para>
+          Download size: &boost-size;
 @y
-        <para>&DownloadSize;: &boost-size;</para>
+          &DownloadSize;: &boost-size;
 @z
 
 @x
-        <para>Estimated disk space required: &boost-buildsize;</para>
+          Estimated disk space required: &boost-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &boost-buildsize;</para>
+          &Estimateddiskspacerequired;: &boost-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &boost-time;</para>
+          Estimated build time: &boost-time;
 @y
-        <para>&Estimatedbuildtime;: &boost-time;</para>
+          &Estimatedbuildtime;: &boost-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">boost Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Boost Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Boost&Dependencies2;</bridgehead>
 @z
@@ -87,21 +77,21 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="Optional">
-    <xref linkend="python2"/>
+      <xref linkend="icu"/> and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="Optional">
-    <xref linkend="python2"/>
+      <xref linkend="icu"/>,
+      <xref linkend="python2"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/boost"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/boost"/></para>
 @z
 
 @x
@@ -111,12 +101,10 @@
 @z
 
 @x
-    <para>Install <application>boost</application> by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Install <application>Boost</application> by running the following
+      commands as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <application>boost</application> をインストールします。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <application>Boost</application> をインストールします。
 @z
 
 @x
@@ -126,19 +114,26 @@
 @z
 
 @x
-    <para><parameter>link=shared</parameter>: This parameter ensures that only shared
-    libraries are created, except for libboost_exception and libboost_test_exec_monitor
-    which are created as static. Most people will not need the static libraries, indeed
-    most programs using boost only use the headers, but omit this parameter if you
-    do need them.</para>
+      <parameter>threading=multi</parameter>: This parameter ensures that
+      <application>Boost</application> is built with multithreading support.
 @y
-    <para><parameter>link=shared</parameter>:
-    このパラメーターは共有ライブラリのみを生成するようにします。
-    ただし libboost_exception と libboost_test_exec_monitor はスタティックライブラリを生成します。
-    スタティックライブラリは通常は必要がありません。
-    boost を利用するプログラムは、たいていはヘッダーファイルを単に指定するだけです。
-    もしスタティックライブラリを必要とするなら、このパラメーターを取り除いてください。
-    </para>
+      <parameter>threading=multi</parameter>: This parameter ensures that
+      <application>Boost</application> is built with multithreading support.
+@z
+
+@x
+      <parameter>link=shared</parameter>: This parameter ensures that only shared
+      libraries are created, except for libboost_exception and libboost_test_exec_monitor
+      which are created as static. Most people will not need the static libraries, indeed
+      most programs using boost only use the headers, but omit this parameter if you
+      do need them.
+@y
+      <parameter>link=shared</parameter>:
+      このパラメーターは共有ライブラリのみを生成するようにします。
+      ただし libboost_exception と libboost_test_exec_monitor はスタティックライブラリを生成します。
+      スタティックライブラリは通常は必要がありません。
+      boost を利用するプログラムは、たいていはヘッダーファイルを単に指定するだけです。
+      もしスタティックライブラリを必要とするなら、このパラメーターを取り除いてください。
 @z
 
 @x
@@ -148,27 +143,45 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libboost_{chrono, date_time, filesystem, graph, iostreams, locale, math_*,
-        prg_exec_monitor, program_options, python, random, regex, serialization,
-        signals, system, thread, unit_test_framework,
-        wave, wserialization}.{so,a}, libboost_exception.a, libboost_test_monitor.a</seg>
-        <seg>/usr/include/boost</seg>
+        <seg>
+          libboost_chrono.so, libboost_date_time.so, libboost_exception.a,
+          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
+          libboost_locale.so, libboost_math_c99f.so, libboost_math_c99l.so,
+          libboost_math_c99.so, libboost_math_tr1f.so,
+          libboost_math_tr1l.so, libboost_math_tr1.so,
+          libboost_prg_exec_monitor.so, libboost_program_options.so,
+          libboost_python.so, libboost_random.so, libboost_regex.so,
+          libboost_serialization.so, libboost_signals.so,
+          libboost_system.so, libboost_test_exec_monitor.a,
+          libboost_thread.so, libboost_timer.so, libboost_unit_test_framework.so,
+          libboost_wave.so and libboost_wserialization.so
+        </seg>
+        <seg>
+          /usr/include/boost
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libboost_{chrono, date_time, filesystem, graph, iostreams, locale, math_*,
-        prg_exec_monitor, program_options, python, random, regex, serialization,
-        signals, system, thread, unit_test_framework,
-        wave, wserialization}.{so,a}, libboost_exception.a, libboost_test_monitor.a</seg>
-        <seg>/usr/include/boost</seg>
+        <seg>
+          libboost_chrono.so, libboost_date_time.so, libboost_exception.a,
+          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
+          libboost_locale.so, libboost_math_c99f.so, libboost_math_c99l.so,
+          libboost_math_c99.so, libboost_math_tr1f.so,
+          libboost_math_tr1l.so, libboost_math_tr1.so,
+          libboost_prg_exec_monitor.so, libboost_program_options.so,
+          libboost_python.so, libboost_random.so, libboost_regex.so,
+          libboost_serialization.so, libboost_signals.so,
+          libboost_system.so, libboost_test_exec_monitor.a,
+          libboost_thread.so, libboost_timer.so, libboost_unit_test_framework.so,
+          libboost_wave.so, libboost_wserialization.so
+        </seg>
+        <seg>
+          /usr/include/boost
+        </seg>
 @z

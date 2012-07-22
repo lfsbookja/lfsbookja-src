@@ -22,12 +22,12 @@
 @x
     <para>The Kde-workspace package contains components that are central to 
     providing the <application>KDE</application> desktop environment. Of 
-    particular importance are KWin, the <application>KDE4</application>
+    particular importance are KWin, the <application>KDE</application>
     window manager, and Plasma, which provides the workspace interface.</para>
 @y
     <para>
     Kde-workspace パッケージは、<application>KDE</application> デスクトップ環境の重要なコンポーネントを提供います。
-    特に重要なのが <application>KDE4</application> ウィンドウマネージャーの KWin、ワークスペースのインターフェースである Plasma です。
+    特に重要なのが <application>KDE</application> ウィンドウマネージャーの KWin、ワークスペースのインターフェースである Plasma です。
     </para>
 @z
 
@@ -82,14 +82,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/> and 
-    <xref linkend="kactivities"/>  
+    <xref linkend="kdelibs"/>, 
+    <xref linkend="kactivities"/> and
+    <xref linkend="qimageblitz"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>,
-    <xref linkend="kactivities"/>  
+    <xref linkend="kdelibs"/>, 
+    <xref linkend="kactivities"/>,
+    <xref linkend="qimageblitz"/>
     </para>
 @z
 
@@ -158,11 +160,11 @@
 @z
 
 @x
-    <para>Install <application>Kde4-workspace</application> by running the following
+    <para>Install <application>Kde-workspace</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>Kde4-workspace</application> をビルドします。
+    以下のコマンドを実行して <application>Kde-workspace</application> をビルドします。
     </para>
 @z
 
@@ -182,10 +184,10 @@
 
 @x
     <para><option>-DPYTHON_SITE_PACKAGES_INSTALL...</option>: This option is 
-    set to install the KDE4 Python objects in the correct place.</para>
+    set to install the KDE Python objects in the correct place.</para>
 @y
     <para><option>-DPYTHON_SITE_PACKAGES_INSTALL...</option>:
-    このオプションは KDE4 Python オブジェクトを適切なディレクトリにインストールします。
+    このオプションは KDE Python オブジェクトを適切なディレクトリにインストールします。
     </para>
 @z
 
@@ -214,8 +216,8 @@
 	oxygen-settings, oxygen-shadow-demo, plasma-desktop, plasmaengineexplorer, 
 	plasmawallpaperviewer, plasma-windowed, plasmoidviewer, solid-network, 
 	solid-action-desktop-gen, startkde and systemsettings</seg>
-        <seg>several in $KDE4_PREFIX/lib</seg>
-        <seg>several in /etc/kde4, $KDE4_PREFIX/include and $KDE4_PREFIX/share</seg>
+        <seg>several in &kde-dir;/lib</seg>
+        <seg>several in /etc/kde, &kde-dir;/include and &kde-dir;/share</seg>
 @y
         <seg>genkdmconf, kaccess, kapplymousetheme, kblankscrn.kss, kcheckrunning, 
 	kcminit, kcminit_startup, kdm, kdmctl, kdostartupconfig4, kfontview, 
@@ -224,7 +226,7 @@
 	kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwrited, oxygen-demo, 
 	oxygen-settings, oxygen-shadow-demo, plasma-desktop, plasmaengineexplorer, 
 	plasmawallpaperviewer, plasma-windowed, plasmoidviewer, solid-network, 
-	solid-action-desktop-gen, startkde, systemsettings</seg>
-        <seg>$KDE4_PREFIX/lib に数種のライブラリ</seg>
-        <seg>/etc/kde4, $KDE4_PREFIX/include, $KDE4_PREFIX/share に数種のインクルードファイル</seg>
+	solid-action-desktop-gen, startkde and systemsettings</seg>
+        <seg>&kde-dir;/lib に数種のライブラリ</seg>
+        <seg>/etc/kde, &kde-dir;/include and &kde-dir;/share の各ディレクトリ</seg>
 @z

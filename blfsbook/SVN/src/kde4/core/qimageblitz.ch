@@ -21,10 +21,10 @@
 
 @x
     <para><application>QImageblitz</application> is a graphical effect and 
-    filter library for <application>KDE4</application>.</para>
+    filter library for <application>KDE</application>.</para>
 @y
     <para>
-    <application>QImageblitz</application> は、<application>KDE4</application> 向けのグラフィック効果やフィルターを実現するライブラリです。
+    <application>QImageblitz</application> は、<application>KDE</application> 向けのグラフィック効果やフィルターを実現するライブラリです。
     </para>
 @z
 
@@ -79,12 +79,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>
+    <xref linkend="qt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/>
+    <xref linkend="qt"/>
     </para>
 @z
 
@@ -138,11 +138,11 @@
 @x
         <seg>blitztest</seg>
         <seg>libqimageblitz.so</seg>
-	<seg>$KDE4_PREFIX/include/qimageblitz</seg>
+	<seg>&kde-dir;/include/qimageblitz</seg>
 @y
         <seg>blitztest</seg>
         <seg>libqimageblitz.so</seg>
-	<seg>$KDE4_PREFIX/include/qimageblitz</seg>
+	<seg>&kde-dir;/include/qimageblitz</seg>
 @z
 
 @x

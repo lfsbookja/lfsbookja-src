@@ -120,7 +120,7 @@
       <xref linkend="startup-notification"/>,
       <xref linkend="sqlite"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
-      <ulink url="http://libevent.org/">Libevent</ulink>,
+      <xref linkend="libevent"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for
       integration with the old version of <application>Gnome</application>),
@@ -139,7 +139,7 @@
       <xref linkend="startup-notification"/>,
       <xref linkend="sqlite"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
-      <ulink url="http://libevent.org/">Libevent</ulink>,
+      <xref linkend="libevent"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for
       integration with the old version of <application>Gnome</application>),

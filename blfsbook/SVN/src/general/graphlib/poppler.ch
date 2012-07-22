@@ -154,7 +154,7 @@
       <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="openjpeg"/> and
-      <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
+      <xref linkend="qt"/> (the <filename>libpoppler-qt4.so</filename> library
       is needed for PDF support in <application>Okular</application>).
     </para>
 @y
@@ -162,11 +162,11 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
+      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="openjpeg"/>,
-      <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
+      <xref linkend="qt"/> (the <filename>libpoppler-qt4.so</filename> library
       is needed for PDF support in <application>Okular</application>).
     </para>
 @z

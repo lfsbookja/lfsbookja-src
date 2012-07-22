@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libnl</application> suite is a collection of libraries
-    providing APIs to netlink protocol based Linux kernel interfaces.</para>
+      The <application>libnl</application> suite is a collection of libraries
+      providing APIs to netlink protocol based Linux kernel interfaces.
 @y
-    <para>
-    <application>libnl</application> スイートは、Linux カーネルインターフェースに基づく netlink プロトコルへアクセスするための API ライブラリ群を提供します。
-    </para>
+      <application>libnl</application> スイートは、Linux カーネルインターフェースに基づく netlink プロトコルへアクセスするための API ライブラリ群を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libnl-download-http;"/></para>
+          Download (HTTP): <ulink url="&libnl-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libnl-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libnl-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libnl-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libnl-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libnl-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libnl-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libnl-md5sum;</para>
+          Download MD5 sum: &libnl-md5sum;
 @y
-        <para>&Download; MD5 sum: &libnl-md5sum;</para>
+          &Download; MD5 sum: &libnl-md5sum;
 @z
 
 @x
-        <para>Download size: &libnl-size;</para>
+          Download size: &libnl-size;
 @y
-        <para>&DownloadSize;: &libnl-size;</para>
+          &DownloadSize;: &libnl-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libnl-buildsize;</para>
+          Estimated disk space required: &libnl-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libnl-buildsize;</para>
+          &Estimateddiskspacerequired;: &libnl-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libnl-time;</para>
+          Estimated build time: &libnl-time;
 @y
-        <para>&Estimatedbuildtime;: &libnl-time;</para>
+          &Estimatedbuildtime;: &libnl-time;
 @z
 
 @x
@@ -83,28 +81,22 @@
 @z
 
 @x
-    <para>Install <application>libnl</application> by running the following
-    commands:</para>
+      Install <application>libnl</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libnl</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libnl</application> をビルドします。
 @z
 
 @x
-    <para>This package does not have a testsuite.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -114,36 +106,11 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=/etc</parameter>: This parameter puts the
-    pktloc and classid files in <filename class="directory">/etc/libnl</filename>
-    which is their conventional location and recommended if you are building
-    this package to enable <application>NetworkManager</application> on a
-    desktop. If you are building this package for other reasons, you might
-    prefer to use <parameter>--sysconfdir=/var/lib</parameter> so that these
-    files, which are not expected to be edited, are placed in
-    <filename class="directory">/var/lib/nl</filename>.  The default for a
-    build with prefix <filename class="directory">/usr</filename> is, of course,
-    to create a directory <filename class="directory">/usr/etc</filename> which
-    is not desirable.</para>
+      <option>--disable-cli</option>: Use this parameter if you
+      don't want to install cli tools provided by the package.
 @y
-    <para><parameter>--sysconfdir=/etc</parameter>: 
-    このパラメーターは、pktloc および classid ファイルを <filename
-    class="directory">/etc/libnl</filename> ディレクトリにインストールします。
-    デスクトップ環境にて <application>NetworkManager</application> を利用する場合には、そのディレクトリとすることが有用であり、また推奨されています。
-    <application>NetworkManager</application> を利用するつもりがなく、本パッケージをビルドする場合は、上記ファイルを特に編集しないものとして <filename
-    class="directory">/var/lib/nl</filename> にインストールされるように <parameter>--sysconfdir=/var/lib</parameter> と指定するのでも構いません。
-    デフォルトにより <filename class="directory">/usr</filename> をプリフィックスとしてビルドを行うと、<filename
-    class="directory">/usr/etc</filename> が生成されることになりますが、これは望ましいものではありません。
-    </para>
-@z
-
-@x
-    <para><option>--disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--disable-static</option>:
-    このスイッチは、スタティックライブラリをビルドしないようにします。
-    </para>
+      <option>--disable-cli</option>: Use this parameter if you
+      don't want to install cli tools provided by the package.
 @z
 
 @x
@@ -163,17 +130,33 @@
 @z
 
 @x
-        <seg>genl-ctrl-list, nl-class-add, nl-class-delete, nl-class-list,
-        nl-classid-lookup, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
-        nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete and nl-qdisc-list</seg>
-        <seg>libnl-3.so, libnl-cli-3.so, libnl-genl-3.so, libnl-nf-3.so and 
-	libnl-route-3.so</seg>
-	<seg>/etc/libnl, /usr/include/libnl3 and /usr/lib/libnl</seg>
+        <seg>
+          genl-ctrl-list, nl-class-add, nl-class-delete, nl-classid-lookup,
+          nl-class-list, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
+          nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete and nl-qdisc-list
+        </seg>
+        <seg>
+          libnl-3.so, libnl-cli-3.so, libnl-genl-3.so,
+          libnl-nf-3.so and libnl-route-3.so
+        </seg>
+	<seg>
+          /etc/libnl,
+          /usr/include/libnl3 and
+          /usr/lib/libnl
+        </seg>
 @y
-        <seg>genl-ctrl-list, nl-class-add, nl-class-delete, nl-class-list,
-        nl-classid-lookup, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
-        nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete, nl-qdisc-list</seg>
-        <seg>libnl-3.so, libnl-cli-3.so, libnl-genl-3.so, libnl-nf-3.so,
-	libnl-route-3.so</seg>
-	<seg>/etc/libnl, /usr/include/libnl3, /usr/lib/libnl</seg>
+        <seg>
+          genl-ctrl-list, nl-class-add, nl-class-delete, nl-classid-lookup,
+          nl-class-list, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
+          nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete, nl-qdisc-list
+        </seg>
+        <seg>
+          libnl-3.so, libnl-cli-3.so, libnl-genl-3.so,
+          libnl-nf-3.so, libnl-route-3.so
+        </seg>
+	<seg>
+          /etc/libnl,
+          /usr/include/libnl3,
+          /usr/lib/libnl
+        </seg>
 @z

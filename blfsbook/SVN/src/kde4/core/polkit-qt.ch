@@ -154,9 +154,9 @@
 @x
         <seg>None</seg>
         <seg>libpolkit-qt-agent-1.so, libpolkit-qt-core-1.so and libpolkit-qt-gui-1.so</seg>
-	<seg>$KDE4_PREFIX/include/polkit-qt-1</seg>
+	<seg>&kde-dir;/include/polkit-qt-1</seg>
 @y
         <seg>&None;</seg>
         <seg>libpolkit-qt-agent-1.so, libpolkit-qt-core-1.so, libpolkit-qt-gui-1.so</seg>
-	<seg>$KDE4_PREFIX/include/polkit-qt-1</seg>
+	<seg>&kde-dir;/include/polkit-qt-1</seg>
 @z

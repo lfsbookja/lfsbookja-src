@@ -103,16 +103,16 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="udev"/> and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev), and
       <xref linkend="vala"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="udev"/> and
+      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (gudev 用),
       <xref linkend="vala"/>
     </para>
 @z

@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>xcursor-themes</application> package contains the
-    redglass and whiteglass animated cursor themes.</para>
+      The <application>xcursor-themes</application> package contains the
+      redglass and whiteglass animated cursor themes.
 @y
-    <para>
-    <application>xcursor-themes</application> パッケージは、赤と白のグラス状のアニメーションカーソルテーマを提供します。
-    </para>
+      <application>xcursor-themes</application> パッケージは、赤と白のグラス状のアニメーションカーソルテーマを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xcursor-themes-download-http;"/></para>
+          Download (HTTP): <ulink url="&xcursor-themes-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xcursor-themes-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xcursor-themes-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xcursor-themes-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xcursor-themes-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xcursor-themes-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xcursor-themes-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xcursor-themes-md5sum;</para>
+          Download MD5 sum: &xcursor-themes-md5sum;
 @y
-        <para>&Download; MD5 sum: &xcursor-themes-md5sum;</para>
+          &Download; MD5 sum: &xcursor-themes-md5sum;
 @z
 
 @x
-        <para>Download size: &xcursor-themes-size;</para>
+          Download size: &xcursor-themes-size;
 @y
-        <para>&DownloadSize;: &xcursor-themes-size;</para>
+          &DownloadSize;: &xcursor-themes-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xcursor-themes-buildsize;</para>
+          Estimated disk space required: &xcursor-themes-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xcursor-themes-buildsize;</para>
+          &Estimateddiskspacerequired;: &xcursor-themes-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xcursor-themes-time;</para>
+          Estimated build time: &xcursor-themes-time;
 @y
-        <para>&Estimatedbuildtime;: &xcursor-themes-time;</para>
+          &Estimatedbuildtime;: &xcursor-themes-time;
 @z
 
 @x
@@ -84,18 +82,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-app"/></para>
+    <para role="required">
+      <xref linkend="xorg7-app"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-app"/></para>
+    <para role="required">
+      <xref linkend="xorg7-app"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/xcursor-themes"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/xcursor-themes"/></para>
 @z
 
 @x
@@ -105,26 +105,22 @@
 @z
 
 @x
-    <para>Install <application>xcursor-themes</application> by running the
-    following commands:</para>
+      Install <application>xcursor-themes</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xcursor-themes</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xcursor-themes</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -134,21 +130,21 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg>$XORG_PREFIX/icons</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/icons/handhelds,
+          <envar>$XORG_PREFIX</envar>/share/icons/redglass and
+          <envar>$XORG_PREFIX</envar>/share/icons/whiteglass
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg>$XORG_PREFIX/icons</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/icons/handhelds,
+          <envar>$XORG_PREFIX</envar>/share/icons/redglass,
+          <envar>$XORG_PREFIX</envar>/share/icons/whiteglass
+        </seg>
 @z

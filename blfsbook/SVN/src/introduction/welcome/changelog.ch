@@ -54,6 +54,41 @@
 @z
 
 @x ----------------------------------------
+      <para>July 14th, 2012</para>
+@y
+      <para>2012/07/14</para>
+@z ----------------------------------------
+@x
+          <para>[rthomsen] - Changed the KDE system configuration file
+          installation directory from /etc/kde4 to /etc/kde.</para>
+@y
+          <para>[rthomsen] - Changed the KDE system configuration file
+          installation directory from /etc/kde4 to /etc/kde.</para>
+@z
+@x
+          <para>[rthomsen] - Removed the cmake option
+          -DKDE_DEFAULT_HOME=.kde4 from KDE packages.</para>
+@y
+          <para>[rthomsen] - KDE パッケージにて、cmake オプション -DKDE_DEFAULT_HOME=.kde4 を削除。
+          </para>
+@z
+@x
+          <para>[rthomsen] - Use $KDE_PREFIX instead of $KDE4_PREFIX.</para>
+@y
+          <para>[rthomsen] - $KDE4_PREFIX ではなく $KDE_PREFIX を利用することに。</para>
+@z
+@x
+          <para>[abenton] - Added Libevent 2.0.19</para>
+@y
+          <para>[abenton] - Libevent 2.0.19 追加。</para>
+@z
+@x
+          <para>[abenton] - Added Transmission 2.60</para>
+@y
+          <para>[abenton] - Transmission 2.60 追加。</para>
+@z
+
+@x ----------------------------------------
       <para>July 7th, 2012</para>
 @y
       <para>2012/07/07</para>

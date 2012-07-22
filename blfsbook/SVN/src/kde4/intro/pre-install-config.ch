@@ -71,10 +71,3 @@
 @y
     <para>Add to your <filename>/etc/ld.so.conf</filename>:</para>
 @z
-
-@x
-    <para>Add to your <filename>/etc/man_db.conf</filename>:</para>
-@y
-    <para>Add to your <filename>/etc/man_db.conf</filename>:</para>
-@z
-

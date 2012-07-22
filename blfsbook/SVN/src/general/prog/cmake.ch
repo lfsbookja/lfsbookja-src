@@ -20,13 +20,20 @@
 @z
 
 @x
-    <para>The <application>CMake</application> package contains a modern toolset used
-    for generating <filename>Makefile</filename>s. It is a successor of the auto-generated
-    <command>configure</command> script.</para>
+    <para>The <application>CMake</application> package contains a modern 
+    toolset used for generating Makefiles. It is a successor of the 
+    auto-generated <command>configure</command> script and aims to be platform-
+    and compiler-independent. A significant user of 
+    <application>CMake</application> is <application>KDE</application> since 
+    version 4.</para>
 @y
     <para>
-    <application>CMake</application> パッケージは <filename>Makefile</filename> を生成するための最新のツールセットを提供します。
+    <application>CMake</application> パッケージは Makefile を生成するための最新のツールセットを提供します。
     これは自動生成される <command>configure</command> スクリプトに続けて利用します。
+    and aims to be platform-
+    and compiler-independent. A significant user of 
+    <application>CMake</application> is <application>KDE</application> since 
+    version 4.
     </para>
 @z
 
@@ -82,7 +89,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="curl"/>, 
-      <xref linkend="libarchive"/>, and 
+      <xref linkend="libarchive"/> and 
       <xref linkend="expat"/>
     </para>
 @y
@@ -170,7 +177,7 @@
 
 @x
         <seg>ccmake, cmake, cmake-gui, cpack and ctest</seg>
-        <seg>None</seg>
+        <seg>none</seg>
         <seg>/usr/share/cmake-&cmake-major-version; and
         /usr/share/doc/cmake-&cmake-version;</seg>
 @y

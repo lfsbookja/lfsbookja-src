@@ -34,7 +34,7 @@ CHANGE_FILES = \
 	notification-daemon.ch \
 	pango.ch \
 	pangomm.ch \
-	qt4.ch \
+	qt.ch \
 	shared-mime-info.ch \
 	startup-notification.ch \
 	xulrunner.ch \
@@ -74,7 +74,7 @@ lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
 mx.xml:                   $(BOOKdir)/$@ $(srcdir)/mx.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
-qt4.xml:                  $(BOOKdir)/$@ $(srcdir)/qt4.ch
+qt.xml:                   $(BOOKdir)/$@ $(srcdir)/qt.ch
 shared-mime-info.xml:     $(BOOKdir)/$@ $(srcdir)/shared-mime-info.ch
 startup-notification.xml: $(BOOKdir)/$@ $(srcdir)/startup-notification.ch
 xulrunner.xml:            $(BOOKdir)/$@ $(srcdir)/xulrunner.ch

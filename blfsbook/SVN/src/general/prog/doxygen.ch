@@ -113,14 +113,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="qt4"/> (for doxywizard),
+    <para role="optional"><xref linkend="qt"/> (for doxywizard),
     <xref linkend="graphviz"/>,
     <xref linkend="python2"/>,
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
     <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="qt4"/> (for doxywizard),
+    <para role="optional"><xref linkend="qt"/> (for doxywizard),
     <xref linkend="graphviz"/>,
     <xref linkend="python2"/>,
     <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
