@@ -48,6 +48,34 @@
 @z
 
 @x
+      <para>2012-07-22</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Fix udev-retry boot script for latest
+           udev functioanlity. Remove 'udev info --run-dir'</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - Update to pkg-config-0.27.  
+           Remove popt.  Fixes
+           <ulink url="&lfs-ticket-root;3141">#3141</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-22</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - 最新の udev の機能に応じて udev-retry ブートスクリプトを変更。
+           'udev info --run-dir' は削除。</para>
+         </listitem>
+         <listitem>
+           <para>[bdubbs] - pkg-config-0.27 へのアップデート。
+           popt パッケージは削除。
+           <ulink url="&lfs-ticket-root;3141">#3141</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-07-19</para>
       <itemizedlist>
          <listitem>

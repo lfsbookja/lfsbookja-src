@@ -520,15 +520,15 @@
         <para>MD5 sum: <literal>&pkgconfig-md5;</literal></para>
 @z
 
-@x
-        <para>Home page: <ulink url="&popt-home;"/></para>
-        <para>Download: <ulink url="&popt-url;"/></para>
-        <para>MD5 sum: <literal>&popt-md5;</literal></para>
-@y
-        <para>&Homepage;: <ulink url="&popt-home;"/></para>
-        <para>&Download;: <ulink url="&popt-url;"/></para>
-        <para>MD5 sum: <literal>&popt-md5;</literal></para>
-@z
+% @x
+%         <para>Home page: <ulink url="&popt-home;"/></para>
+%         <para>Download: <ulink url="&popt-url;"/></para>
+%         <para>MD5 sum: <literal>&popt-md5;</literal></para>
+% @y
+%         <para>&Homepage;: <ulink url="&popt-home;"/></para>
+%         <para>&Download;: <ulink url="&popt-url;"/></para>
+%         <para>MD5 sum: <literal>&popt-md5;</literal></para>
+% @z
 
 @x
         <para>Home page: <ulink url="&procps-home;"/></para>
