@@ -54,13 +54,28 @@
 -->
 
     <listitem>
+      <para>2012-07-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20120722,
+          Changeset
+          <ulink url="&lfs-rev-root;9917">9917</ulink>,
+          <ulink url="&lfs-rev-root;9918">9918</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-07-23</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
           SVN-20120722,
           Changeset
-          <ulink url="&lfs-rev-root;9886">9916</ulink>
+          <ulink url="&lfs-rev-root;9916">9916</ulink>
           対応。
           </para>
         </listitem>
@@ -74,8 +89,8 @@
           <para>[matsuand] -
           SVN-20120719,
           Changeset
-          <ulink url="&lfs-rev-root;9886">9908</ulink> ～
-          <ulink url="&lfs-rev-root;9886">9915</ulink>
+          <ulink url="&lfs-rev-root;9908">9908</ulink> ～
+          <ulink url="&lfs-rev-root;9915">9915</ulink>
           対応。
           </para>
         </listitem>
@@ -89,7 +104,7 @@
           <para>[matsuand] -
           SVN-20120714,
           Changeset
-          <ulink url="&lfs-rev-root;9886">9907</ulink>
+          <ulink url="&lfs-rev-root;9907">9907</ulink>
           対応。
           </para>
         </listitem>
@@ -103,8 +118,8 @@
           <para>[matsuand] -
           SVN-20120713,
           Changeset
-          <ulink url="&lfs-rev-root;9886">9899</ulink> ～
-          <ulink url="&lfs-rev-root;9896">9906</ulink>
+          <ulink url="&lfs-rev-root;9899">9899</ulink> ～
+          <ulink url="&lfs-rev-root;9906">9906</ulink>
           対応。
           </para>
         </listitem>
@@ -118,8 +133,8 @@
           <para>[matsuand] -
           SVN-20120711,
           Changeset
-          <ulink url="&lfs-rev-root;9886">9897</ulink>,
-          <ulink url="&lfs-rev-root;9896">9898</ulink>
+          <ulink url="&lfs-rev-root;9897">9897</ulink>,
+          <ulink url="&lfs-rev-root;9898">9898</ulink>
           対応。
           </para>
         </listitem>

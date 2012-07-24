@@ -51,6 +51,10 @@
       <para>2012-07-22</para>
       <itemizedlist>
          <listitem>
+           <para>[bdubbs] - Update to udev (systemd)-187.  Fixes
+           <ulink url="&lfs-ticket-root;3143">#3143</ulink>.</para>
+         </listitem>
+         <listitem>
            <para>[bdubbs] - Fix udev-retry boot script for latest
            udev functioanlity. Remove 'udev info --run-dir'</para>
          </listitem>
@@ -63,6 +67,10 @@
 @y
       <para>2012-07-22</para>
       <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - udev (systemd)-187 へのアップデート。
+           <ulink url="&lfs-ticket-root;3143">#3143</ulink> を Fix に。</para>
+         </listitem>
          <listitem>
            <para>[bdubbs] - 最新の udev の機能に応じて udev-retry ブートスクリプトを変更。
            'udev info --run-dir' は削除。</para>

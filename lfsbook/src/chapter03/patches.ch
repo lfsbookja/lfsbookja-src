@@ -189,20 +189,6 @@
         <para>MD5 sum: <literal>&kmod-testsuite-patch-md5;</literal></para>
 @z
 
-@x
-      <term>Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
-        <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Kbd Backspace/Delete Fix Patch - <token>&kbd-backspace-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
-        <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
-      </listitem>
-@z
-
 @x Patch Testsuite Fix Patch
         <para>Download: <ulink url="&patches-root;&patch-test-patch;"/></para>
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
