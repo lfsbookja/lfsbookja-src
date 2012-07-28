@@ -181,6 +181,14 @@
       </listitem>
 @z
 
+@x Kbd Backspace/Delete Fix Patch
+        <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
+        <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
+        <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
+@z
+
 @x Kmod Testsuite Patch
         <para>Download: <ulink url="&patches-root;&kmod-testsuite-patch;"/></para>
         <para>MD5 sum: <literal>&kmod-testsuite-patch-md5;</literal></para>

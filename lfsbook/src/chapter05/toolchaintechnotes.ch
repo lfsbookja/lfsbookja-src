@@ -217,7 +217,7 @@
   これを示すのには重要な意味があります。
   GCC の configure スクリプトは、利用するツール類を探し出す際に PATH ディレクトリを参照していないということです。
   しかし <command>gcc</command> の実際の処理にあたっては、その検索パスが必ず使われるわけでもありません。
-  <command>gcc</command> が利用する標準的なリンカを確認するには <userinput>gcc -print-prog-name=ld</userinput> を実行します。
+  <command>gcc</command> が利用する標準的なリンカーを確認するには <userinput>gcc -print-prog-name=ld</userinput> を実行します。
   </para>
 @z
 
