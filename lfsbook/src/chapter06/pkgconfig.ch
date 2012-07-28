@@ -19,7 +19,7 @@
     execution.</para>
 @y
     <para>
-    pkg-cnofig パッケージは configure や make による処理を通じて、インクルードパスやライブラリパスを提供するツールです。
+    pkg-config パッケージは configure や make による処理を通じて、インクルードパスやライブラリパスを提供するツールです。
     </para>
 @z
 
@@ -72,7 +72,7 @@
         <seg>/usr/share/doc/pkg-config-0.26</seg>
 @y
         <seg>pkg-config</seg>
-        <seg>/usr/share/doc/pkg-config-0.26</seg>
+        <seg>/usr/share/doc/pkg-config-0.27</seg>
 @z
 
 @x
