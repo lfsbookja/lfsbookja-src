@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2012-07-25</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - Minor fixes to udev-lfs tarball.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-07-25</para>
+      <itemizedlist>
+         <listitem>
+           <para>[bdubbs] - udev-lfs tarball を若干修正。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-07-22</para>
       <itemizedlist>
          <listitem>
