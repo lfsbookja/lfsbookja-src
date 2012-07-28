@@ -14,38 +14,18 @@
 @z
 
 @x
-  <!ENTITY pciutils-time          "less than 0.1 SBU">
+    <title>Introduction to PCI Utils</title>
 @y
-  <!ENTITY pciutils-time          "&LessThan1;0.1 SBU&LessThan2;">
+    <title>&IntroductionTo1;PCI Utils&IntroductionTo2;</title>
 @z
 
 @x
-<sect1 id="pciutils" xreflabel="PCI Utilities-&pciutils-version;">
+      The <application>PCI Utils</application> package contains
+      a set of programs for listing PCI devices, inspecting
+      their status and setting their configuration registers.
 @y
-<sect1 id="pciutils" xreflabel="PCI Utilities-&pciutils-version;">
-@z
-
-@x
-  <title>PCI Utilities-&pciutils-version;</title>
-@y
-  <title>PCI Utilities-&pciutils-version;</title>
-@z
-
-@x
-    <title>Introduction to PCI Utilities</title>
-@y
-    <title>&IntroductionTo1;PCI Utilities&IntroductionTo2;</title>
-@z
-
-@x
-    <para>The <application>PCI Utilities</application> package
-    is a set of programs for listing PCI devices, inspecting
-    their status and setting their configuration registers.</para>
-@y
-    <para>
-    <application>PCI ユーティリティ</application> (PCI Utilties) パッケージは PCI デバイスを取り扱うプログラム類を提供します。
-    PCI デバイスの一覧の取得、動作ステータスの精査、設定レジスタの登録などを行うものです。
-    </para>
+      <application>PCI Utils</application> (PCI Utilties) パッケージは PCI デバイスを取り扱うプログラム類を提供します。
+      PCI デバイスの一覧の取得、動作ステータスの精査、設定レジスタの登録などを行うものです。
 @z
 
 @x
@@ -55,60 +35,58 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&pciutils-download-http;"/></para>
+          Download (HTTP): <ulink url="&pciutils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&pciutils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&pciutils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&pciutils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&pciutils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&pciutils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&pciutils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &pciutils-md5sum;</para>
+          Download MD5 sum: &pciutils-md5sum;
 @y
-        <para>&Download; MD5 sum: &pciutils-md5sum;</para>
+          &Download; MD5 sum: &pciutils-md5sum;
 @z
 
 @x
-        <para>Download size: &pciutils-size;</para>
+          Download size: &pciutils-size;
 @y
-        <para>&DownloadSize;: &pciutils-size;</para>
+          &DownloadSize;: &pciutils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &pciutils-buildsize;</para>
+          Estimated disk space required: &pciutils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &pciutils-buildsize;</para>
+          &Estimateddiskspacerequired;: &pciutils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &pciutils-time;</para>
+          Estimated build time: &pciutils-time;
 @y
-        <para>&Estimatedbuildtime;: &pciutils-time;</para>
+          &Estimatedbuildtime;: &pciutils-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/pciutils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/pciutils"/></para>
 @z
 
 @x
-    <title>Installation of PCI Utilities</title>
+    <title>Installation of PCI Utils</title>
 @y
-    <title>&InstallationOf1;PCI Utilities&InstallationOf2;</title>
+    <title>&InstallationOf1;PCI Utils&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>PCI Utilities</application> by
+      Install <application>PCI Utils</application> by
       running the following commands:
 @y
-      以下のコマンドを実行して <application>PCI Utilities</application> をビルドします。
+      以下のコマンドを実行して <application>PCI Utils</application> をビルドします。
 @z
 
 @x
@@ -130,6 +108,14 @@
 @z
 
 @x
+      <parameter>SHARED=yes</parameter>: This parameter enables building of
+      shared library instead of static one.
+@y
+      <parameter>SHARED=yes</parameter>:
+      このパラメーターはスタティックライブラリではなく共有ライブラリをビルドすることを指示します。
+@z
+
+@x
       <parameter>ZLIB=no</parameter>: This parameter prevents compression of
       the <filename>pci.ids</filename> file.
 @y
@@ -138,57 +124,37 @@
 @z
 
 @x
-      <parameter>SHARED=yes</parameter>: This parameter enables building of
-      shared library instead of static one.
+    <title>Configuring PCI Utils</title>
 @y
-      <parameter>SHARED=yes</parameter>:
-      このパラメーターは、スタティックライブラリのかわりに共有ライブラリをビルドすることを指示します。
+    <title>&Configuring1;PCI Utils&Configuring2;</title>
 @z
 
 @x
-      <parameter>PCI_COMPRESSED_IDS=0</parameter>: This parameter ensures
-      that compression won't be used when updating <filename>pci.ids</filename>.
+      The <filename>pci.ids</filename> data file is constantly being
+      updated. To get a current version of this file, run
+      <command>update-pciids</command> as the <systemitem
+      class="username">root</systemitem> user. This program requires the
+      <xref linkend="which"/> script or program to find <xref linkend="curl"/>,
+      <xref linkend="lynx"/> or <xref linkend="wget"/> which are used to
+      download the most current file, and then replace the existing file in
+      <filename class="directory">/usr/share/misc</filename>.
 @y
-      <parameter>PCI_COMPRESSED_IDS=0</parameter>: This parameter ensures
-      that compression won't be used when updating <filename>pci.ids</filename>.
+      <filename>pci.ids</filename> データファイルは、常に更新が行われています。
+      最新版を入手する場合は <systemitem class="username">root</systemitem> ユーザーになって <command>update-pciids</command> コマンドを実行します。
+      このプログラムは <xref linkend="curl"/>、<xref linkend="wget"/>、<xref linkend="lynx"/> が存在しているかどうかを調べるために <xref linkend="which"/> を用いています。
+      三つのプログラムのいずれかを使って、最新のデータファイルをダウンロードするものです。
+      ダウンロードが出来たら <filename class='directory'>/usr/share</filename> ディレクトリ配下にあるファイルが上書きされます。
 @z
 
 @x
-    <title>Configuring PCI Utilities</title>
+      You may wish to add an entry to
+      <systemitem class="username">root</systemitem>'s (or any other user who has
+      write privilege to <filename class="directory">/usr/share/misc</filename>)
+      crontab to automatically update the <filename>pci.ids</filename> file
+      periodically.
 @y
-    <title>&Configuring1;PCI Utilities&Configuring2;</title>
-@z
-
-@x
-    <para>The <filename>pci.ids</filename> data file is constantly being
-    updated. To get a current version of this file, run
-    <command>update-pciids</command> as the <systemitem
-    class="username">root</systemitem> user. This program requires the
-    <xref linkend="which"/> script or program to find <xref linkend="curl"/>,
-    <xref linkend="wget"/> or <xref linkend="lynx"/> which are used to
-    download the most current file, and then replace the existing file in
-    <filename class='directory'>/usr/share</filename>.</para>
-@y
-    <para>
-    <filename>pci.ids</filename> データファイルは、常に更新が行われています。
-    最新版を入手する場合は <systemitem class="username">root</systemitem> ユーザーになって <command>update-pciids</command> コマンドを実行します。
-    このプログラムは <xref linkend="curl"/>、<xref linkend="wget"/>、<xref linkend="lynx"/> が存在しているかどうかを調べるために <xref linkend="which"/> を用いています。
-    三つのプログラムのいずれかを使って、最新のデータファイルをダウンロードするものです。
-    ダウンロードが出来たら <filename class='directory'>/usr/share</filename> ディレクトリ配下にあるファイルが上書きされます。
-    </para>
-@z
-
-@x
-    <para>You may wish to add an entry to
-    <systemitem class="username">root</systemitem>'s (or any other user who
-    has write privilege to <filename class='directory'>/usr/share</filename>)
-    crontab to automatically update the <filename>pci.ids</filename> file
-    periodically.</para>
-@y
-    <para>
-    crontab に対して <systemitem class="username">root</systemitem> ユーザー (または <filename
-    class='directory'>/usr/share</filename> ディレクトリに対して書き込み権限を有する他のユーザー) の設定を行って、<filename>pci.ids</filename> ファイルの定期的な自動更新を実現することもできます。
-    </para>
+      crontab に対して <systemitem class="username">root</systemitem> ユーザー (または <filename
+      class='directory'>/usr/share</filename> ディレクトリに対して書き込み権限を有する他のユーザー) の設定を行って、<filename>pci.ids</filename> ファイルの定期的な自動更新を実現することもできます。
 @z
 
 @x
@@ -208,13 +174,25 @@
 @z
 
 @x
-        <seg>lspci, setpci and update-pciids</seg>
-        <seg>libpci.so</seg>
-        <seg>/usr/include/pci</seg>
+        <seg>
+          lspci, setpci and update-pciids
+        </seg>
+        <seg>
+          libpci.so
+        </seg>
+        <seg>
+          /usr/include/pci
+        </seg>
 @y
-        <seg>lspci, setpci, update-pciids</seg>
-        <seg>libpci.so</seg>
-        <seg>/usr/include/pci</seg>
+        <seg>
+          lspci, setpci, update-pciids
+        </seg>
+        <seg>
+          libpci.so
+        </seg>
+        <seg>
+          /usr/include/pci
+        </seg>
 @z
 
 @x
@@ -224,33 +202,33 @@
 @z
 
 @x lspci
-          <para>is a utility for displaying information about all PCI buses in the
-          system and all devices connected to them.</para>
+            is an utility for displaying information about all PCI buses
+            in the system and all devices connected to them.
 @y
-          <para>is a utility for displaying information about all PCI buses in the
-          system and all devices connected to them.</para>
+            is an utility for displaying information about all PCI buses
+            in the system and all devices connected to them.
 @z
 
 @x setpci
-          <para>is a utility for querying and configuring PCI devices.</para>
+            is an utility for querying and configuring PCI devices.
 @y
-          <para>is a utility for querying and configuring PCI devices.</para>
+            is an utility for querying and configuring PCI devices.
 @z
 
 @x update-pciids
-          <para>fetches the current version of the PCI ID list. Requires
-          <xref linkend="curl"/>, <xref linkend="wget"/> or
-          <xref linkend="lynx"/>.</para>
+            fetches the current version of the PCI ID list. Requires
+            <xref linkend="curl"/>, <xref linkend="lynx"/> or
+            <xref linkend="wget"/>.
 @y
-          <para>fetches the current version of the PCI ID list. Requires
-          <xref linkend="curl"/>, <xref linkend="wget"/> or
-          <xref linkend="lynx"/>.</para>
+            fetches the current version of the PCI ID list. Requires
+            <xref linkend="curl"/>, <xref linkend="lynx"/> or
+            <xref linkend="wget"/>.
 @z
 
 @x libpci.so
-        <para>is library that allows applications to access the PCI
-        subsystem.</para>
+          is library that allows applications to access the PCI
+          subsystem.
 @y
-        <para>is library that allows applications to access the PCI
-        subsystem.</para>
+          is library that allows applications to access the PCI
+          subsystem.
 @z

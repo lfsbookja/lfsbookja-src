@@ -87,7 +87,7 @@
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="geoclue"/>,
       <xref linkend="which"/> and
-      <xref linkend="sqlite"/>.
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -101,7 +101,7 @@
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="geoclue"/>,
       <xref linkend="which"/>,
-      <xref linkend="sqlite"/>.
+      <xref linkend="sqlite"/>
     </para>
 @z
 
@@ -123,7 +123,7 @@
       <xref linkend="curl"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gtk-doc"/> and
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -131,7 +131,7 @@
       <xref linkend="curl"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>.
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
 @z
 
@@ -191,15 +191,15 @@
 
 @x
       <option>--enable-introspection</option>: This option enables support for
-      <application>Gobject-Introspection</application> and is required for a
-      <application>GNOME</application> desktop. If you don't have
-      <application>Gobject-Introspection</application> installed and don't want
+      <application>Gobject Introspection</application> and is required for a
+      <application>GNOME</application> Desktop. If you don't have
+      <application>Gobject Introspection</application> installed and don't want
       to install <application>GNOME</application> remove this option.
 @y
       <option>--enable-introspection</option>:
-      このオプションは <application>Gobject-Introspection</application> サポートを有効にします。
+      このオプションは <application>Gobject Introspection</application> サポートを有効にします。
       これは <application>GNOME</application> デスクトップ環境において必要です。
-      <application>Gobject-Introspection</application> をインストールしていなくて、<application>GNOME</application> をインストールしないのであれば、このオプションを取り除いてください。
+      <application>Gobject Introspection</application> をインストールしていなくて、<application>GNOME</application> をインストールしないのであれば、このオプションを取り除いてください。
 @z
 
 @x
@@ -227,15 +227,15 @@
         <seg>
           libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or libwebkit-3.0.so
           and libjavascriptcoregtk-3.0.so (depending on whether you installed
-          the <application>Gtk+-2</application> or
-          <application>Gtk+-3</application> version of
+          the <application>GTK+ 2</application> or
+          <application>GTK+ 3</application> version of
           <application>WebKit</application>).
         </seg>
         <seg>
           /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
           /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on
-          whether you installed the <application>Gtk+-2</application> or
-          <application>Gtk+-3</application> version of
+          whether you installed the <application>GTK+ 2</application> or
+          <application>GTK+ 3</application> version of
           <application>WebKit</application>).
         </seg>
 @y
@@ -247,15 +247,15 @@
         <seg>
           libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or libwebkit-3.0.so
           and libjavascriptcoregtk-3.0.so (depending on whether you installed
-          the <application>Gtk+-2</application> or
-          <application>Gtk+-3</application> version of
+          the <application>GTK+ 2</application> or
+          <application>GTK+ 3</application> version of
           <application>WebKit</application>).
         </seg>
         <seg>
           /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
           /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on
-          whether you installed the <application>Gtk+-2</application> or
-          <application>Gtk+-3</application> version of
+          whether you installed the <application>GTK+ 2</application> or
+          <application>GTK+ 3</application> version of
           <application>WebKit</application>).
         </seg>
 @z
@@ -281,18 +281,18 @@
 
 @x libwebkit-1.0.so
             contains the <application>WebKit</application> API functions for
-            <application>gtk+-2</application>.
+            <application>GTK+ 2</application>.
 @y
             contains the <application>WebKit</application> API functions for
-            <application>gtk+-2</application>.
+            <application>GTK+ 2</application>.
 @z
 
 @x libwebkit-3.0.so
             contains the <application>WebKit</application> API functions for
-            <application>gtk+-3</application>.
+            <application>GTK+ 3</application>.
 @y
             contains the <application>WebKit</application> API functions for
-            <application>gtk+-3</application>.
+            <application>GTK+ 3</application>.
 @z
 
 @x libjavascriptcoregtk-1.0.so

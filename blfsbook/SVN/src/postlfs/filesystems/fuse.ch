@@ -152,15 +152,13 @@
 @z
 
 @x
-      <para>Some options regarding mount policy can be set in the file
-      <filename>/etc/fuse.conf</filename>.  To install the file run the
-      following command as the  <systemitem class="username">root</systemitem>
-      user:</para>
+        Some options regarding mount policy can be set in the file
+        <filename>/etc/fuse.conf</filename>. To install the file run the
+        following command as the <systemitem class="username">root</systemitem>
+        user:
 @y
-      <para>
-      マウントの方針に基づいた設定は、<filename>/etc/fuse.conf</filename> にて行うことができます。
-      このファイルを生成するために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        マウントの方針に基づいた設定は、<filename>/etc/fuse.conf</filename> にて行うことができます。
+        このファイルを生成するために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -183,13 +181,15 @@
         <seg>
           fusermount,
           mount.fuse and
-          ulockmgr_server.
+          ulockmgr_server
         </seg>
         <seg>
           libfuse.so and
-          libulockmgr.so.
+          libulockmgr.so
         </seg>
-        <seg>/usr/include/fuse.</seg>
+        <seg>
+          /usr/include/fuse
+        </seg>
 @y
         <seg>
           fusermount,
@@ -200,7 +200,9 @@
           libfuse.so,
           libulockmgr.so
         </seg>
-        <seg>/usr/include/fuse</seg>
+        <seg>
+          /usr/include/fuse
+        </seg>
 @z
 
 @x
@@ -232,9 +234,9 @@
 @z
 
 @x libfuse.so
-            contains the Fuse API functions.
+            contains the <application>FUSE</application> API functions.
 @y
-            Fuse API 関数を提供します。
+            <application>FUSE</application> API 関数を提供します。
 @z
 
 @x libulockmgr.so

@@ -14,18 +14,17 @@
 @z
 
 @x
-    <title>Introduction to Gtk+ 2</title>
+    <title>Introduction to GTK+ 2</title>
 @y
-    <title>&IntroductionTo1;Gtk+ 2&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GTK+ 2&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>Gtk+ 2</application> package contains
-      <application>|Gtk+ 2</application> libraries. These are useful for
-      creating graphical user interfaces for applications.
+      The <application>GTK+ 2</application> package contains
+      libraries used for creating graphical user interfaces
+      for applications.
 @y
-      <application>Gtk+ 2</application> パッケージは <application>Gtk+ 2</application> ライブラリを提供します。
-      これらはアプリケーションにおけるグラフィカルユーザーインターフェースの構築に有用です。
+      <application>Gtk+ 2</application> パッケージは、アプリケーションにおけるグラフィカルユーザーインターフェースの構築のために利用されるライブラリを提供します。
 @z
 
 @x
@@ -71,29 +70,28 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Gtk+ 2 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GTK+ 2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Gtk+ 2&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GTK+ 2&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/> (compiled with libX11 support),
+      <xref linkend="atk"/>,
+      <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
-      the <xref linkend="x-window-system"/> (specifically, libX11, libXext and
-      libXrender),
       <xref linkend="pango"/> and
-      <xref linkend="atk"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/> (libX11 サポートを含めてビルドされたもの),
+      <xref linkend="atk"/>,
+      <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="x-window-system"/> (特に libX11, libXext, libXrender),
-      <xref linkend="pango"/>,
-      <xref linkend="atk"/>
+      <xref linkend="pango"/> and
+      <xref linkend="xorg7-lib"/>
     </para>
 @z
 
@@ -114,27 +112,15 @@
     <para role="optional">
       <xref linkend="cups"/>,
       <xref linkend="docbook-utils"/>,
-      <!-- <ulink url="http://beagle-project.org/Main_Page">libbeagle</ulink>,
-      This beagle page appears to be just adverts -->
-      <!-- <ulink url="http://sourceforge.net/projects/openprinting/">papi</ulink>,
-      I think papi is just for solaris. It was a bugger to compile... -->
-      <!-- <ulink url="http://www.tracker-project.org/">Tracker</ulink>
-      This tracker page is a dead link -->
       <xref linkend="gobject-introspection"/> and
-      <xref linkend="gtk-doc"/>.
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cups"/>,
       <xref linkend="docbook-utils"/>,
-      <!-- <ulink url="http://beagle-project.org/Main_Page">libbeagle</ulink>,
-      This beagle page appears to be just adverts -->
-      <!-- <ulink url="http://sourceforge.net/projects/openprinting/">papi</ulink>,
-      I think papi is just for solaris. It was a bugger to compile... -->
-      <!-- <ulink url="http://www.tracker-project.org/">Tracker</ulink>
-      This tracker page is a dead link -->
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gobject-introspection"/> and
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -146,16 +132,16 @@
 @z
 
 @x
-    <title>Installation of Gtk+ 2</title>
+    <title>Installation of GTK+ 2</title>
 @y
-    <title>&InstallationOf1;Gtk+ 2&InstallationOf2;</title>
+    <title>&InstallationOf1;GTK+ 2&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Gtk+ 2</application> by running the following
+      Install <application>GTK+ 2</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Gtk+ 2</application> をビルドします。
+      以下のコマンドを実行して <application>GTK+ 2</application> をビルドします。
 @z
 
 @x
@@ -211,20 +197,19 @@
 @z
 
 @x
-      <command>sed -i 's#.*@man_#man_#'
-      docs/reference/gtk/Makefile.in</command>: this sed fixes one of the
-      <filename>Makefile</filename>s so it installs the man pages for
-      gtk-builder-convert, gtk-query-immodules-2.0 and gtk-update-icon-cache.
+      <command>sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in</command>:
+      This sed fixes one of the <filename>Makefile</filename>s so it installs the
+      man pages for gtk-builder-convert, gtk-query-immodules-2.0 and
+      gtk-update-icon-cache.
 @y
-      <command>sed -i 's#.*@man_#man_#'
-      docs/reference/gtk/Makefile.in</command>:
+      <command>sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in</command>:
       この sed 処理は gtk-builder-convert, gtk-query-immodules-2.0, gtk-update-icon-cache の各 man ページを正しくインストールするように Makefile を修正するものです。
 @z
 
 @x
-    <title>Configuring Gtk+ 2</title>
+    <title>Configuring GTK+ 2</title>
 @y
-    <title>&Configuring1;Gtk+ 2&Configuring2;</title>
+    <title>&Configuring1;GTK+ 2&Configuring2;</title>
 @z
 
 @x
@@ -248,25 +233,25 @@
 @z
 
 @x
-        <application>Gtk+ 2</application> themes change the way a
-        <application>Gtk+ 2</application> application looks. A
-        <application>Gtk+ 2</application> icon theme can be used to change the
+        <application>GTK+ 2</application> themes change the way a
+        <application>GTK+ 2</application> application looks. A
+        <application>GTK+ 2</application> icon theme can be used to change the
         icons that appear on the application's toolbar. If you have installed a
-        <application>Gtk+ 2</application> theme (such as <ulink
+        <application>GTK+ 2</application> theme (such as <ulink
         url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink>
         (requires <xref linkend="gtk-engines"/>)) or a
-        <application>Gtk+ 2</application> icon theme (such as
+        <application>GTK+ 2</application> icon theme (such as
         <xref linkend="gnome-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
 @y
-        <application>Gtk+ 2</application> themes change the way a
-        <application>Gtk+ 2</application> application looks. A
-        <application>Gtk+ 2</application> icon theme can be used to change the
+        <application>GTK+ 2</application> themes change the way a
+        <application>GTK+ 2</application> application looks. A
+        <application>GTK+ 2</application> icon theme can be used to change the
         icons that appear on the application's toolbar. If you have installed a
-        <application>Gtk+ 2</application> theme (such as <ulink
+        <application>GTK+ 2</application> theme (such as <ulink
         url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink>
         (requires <xref linkend="gtk-engines"/>)) or a
-        <application>Gtk+ 2</application> icon theme (such as
+        <application>GTK+ 2</application> icon theme (such as
         <xref linkend="gnome-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
 @z
@@ -291,11 +276,11 @@
 
 @x
         <ulink url="http://sourceforge.net/projects/lxde/files/LXAppearance/">
-        LXAppearance</ulink> is a <application>Gtk+ 2</application> application
+        LXAppearance</ulink> is a <application>GTK+ 2</application> application
         that can help you choose the themes you like.
 @y
         <ulink url="http://sourceforge.net/projects/lxde/files/LXAppearance/">
-        LXAppearance</ulink> is a <application>Gtk+ 2</application> application
+        LXAppearance</ulink> is a <application>GTK+ 2</application> application
         that can help you choose the themes you like.
 @z
 
@@ -321,42 +306,42 @@
           gtk-update-icon-cache
         </seg>
         <seg>
-          libpixmap.so, im-am-et.so, im-cedilla.so, im-cyrillic-translit.so,
-          im-inuktitut.so, im-ipa.so, im-multipress.so, im-thai.so, im-ti-er.so,
-          im-ti-et.so, im-viqr.so, im-xim.so, libprintbackend-cups.so
-          libprintbackend-file.so, libprintbackend-lpr.so,
-          libferret.so, libgail.so, libgailutil.so, libgdk-x11-2.0.so and
+          libgailutil.so, libgdk-x11-2.0.so and
           libgtk-x11-2.0.so
         </seg>
         <seg>
-          /etc/gtk-2.0, /usr/include/gail-1.0, /usr/include/gtk-2.0,
-          /usr/include/gtk-unix-print-2.0, /usr/lib/gtk-2.0,
+          /etc/gtk-2.0,
+          /usr/include/gail-1.0,
+          /usr/include/gtk-2.0,
+          /usr/include/gtk-unix-print-2.0,
+          /usr/lib/gtk-2.0,
           /usr/share/doc/gtk+-&gtk2-version;,
           /usr/share/gtk-doc/html/gail-libgail-util,
-          /usr/share/gtk-doc/html/gdk-pixbuf, /usr/share/gtk-doc/html/gtk,
-          /usr/share/themes/Default, /usr/share/themes/Emacs and
+          /usr/share/gtk-doc/html/gtk,
+          /usr/share/themes/Default,
+          /usr/share/themes/Emacs and
           /usr/share/themes/Raleigh
         </seg>
 @y
         <seg>
-          gtk-builder-convert, gtk-demo, gtk-query-immodules-2.0,
+          gtk-builder-convert, gtk-demo, gtk-query-immodules-2.0 and
           gtk-update-icon-cache
         </seg>
         <seg>
-          libpixmap.so, im-am-et.so, im-cedilla.so, im-cyrillic-translit.so,
-          im-inuktitut.so, im-ipa.so, im-multipress.so, im-thai.so, im-ti-er.so,
-          im-ti-et.so, im-viqr.so, im-xim.so, libprintbackend-cups.so
-          libprintbackend-file.so, libprintbackend-lpr.so,
-          libferret.so, libgail.so, libgailutil.so, libgdk-x11-2.0.so,
+          libgailutil.so, libgdk-x11-2.0.so and
           libgtk-x11-2.0.so
         </seg>
         <seg>
-          /etc/gtk-2.0, /usr/include/gail-1.0, /usr/include/gtk-2.0,
-          /usr/include/gtk-unix-print-2.0, /usr/lib/gtk-2.0,
+          /etc/gtk-2.0,
+          /usr/include/gail-1.0,
+          /usr/include/gtk-2.0,
+          /usr/include/gtk-unix-print-2.0,
+          /usr/lib/gtk-2.0,
           /usr/share/doc/gtk+-&gtk2-version;,
           /usr/share/gtk-doc/html/gail-libgail-util,
-          /usr/share/gtk-doc/html/gdk-pixbuf, /usr/share/gtk-doc/html/gtk,
-          /usr/share/themes/Default, /usr/share/themes/Emacs,
+          /usr/share/gtk-doc/html/gtk,
+          /usr/share/themes/Default,
+          /usr/share/themes/Emacs and
           /usr/share/themes/Raleigh
         </seg>
 @z
@@ -376,19 +361,19 @@
 @z
 
 @x gtk-demo
-            demonstrates <application>Gtk+ 2</application> functionality and
+            demonstrates <application>GTK+ 2</application> functionality and
             provides code for the examples.
 @y
-            demonstrates <application>Gtk+ 2</application> functionality and
+            demonstrates <application>GTK+ 2</application> functionality and
             provides code for the examples.
 @z
 
 @x gtk-query-immodules-2.0
             collects information about loadable input method modules for
-            <application>Gtk+ 2</application> and writes it to standard output.
+            <application>GTK+ 2</application> and writes it to standard output.
 @y
             collects information about loadable input method modules for
-            <application>Gtk+ 2</application> and writes it to standard output.
+            <application>GTK+ 2</application> and writes it to standard output.
 @z
 
 @x gtk-update-icon-cache
@@ -398,9 +383,9 @@
 @z
 
 @x
-        <term>Gtk+ 2 Libraries</term>
+        <term>GTK+ 2 Libraries</term>
 @y
-        <term>Gtk+ 2 ライブラリ</term>
+        <term>GTK+ 2 ライブラリ</term>
 @z
 @x
             provide an API to implement graphical user interfaces.

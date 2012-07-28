@@ -21,9 +21,9 @@
 
 @x
       The <application>Gtkmm</application> package provides a C++ interface to
-      <application>GTK+-3</application>.
+      <application>GTK+ 3</application>.
 @y
-      <application>Gtkmm</application> パッケージは <application>GTK+-3</application> への C++ インターフェースを提供します。
+      <application>Gtkmm</application> パッケージは <application>GTK+ 3</application> への C++ インターフェースを提供します。
 @z
 
 @x
@@ -137,23 +137,23 @@
 
 @x
         <seg>
-          libgdkmm-3.0.so and libgtkmm-3.0.so.
+          libgdkmm-3.0.so and libgtkmm-3.0.so
         </seg>
         <seg>
           /usr/include/{gdkmm-3.0,gtkmm-3.0},
           /usr/lib/{gdkmm-3.0,gtkmm-3.0},
           /usr/share/devhelp/books/gtkmm-3.0 and
-          /usr/share/doc/gtkmm-3.0.
+          /usr/share/doc/gtkmm-3.0
         </seg>
 @y
         <seg>
-          libgdkmm-3.0.so, libgtkmm-3.0.so.
+          libgdkmm-3.0.so, libgtkmm-3.0.so
         </seg>
         <seg>
           /usr/include/{gdkmm-3.0,gtkmm-3.0},
           /usr/lib/{gdkmm-3.0,gtkmm-3.0},
           /usr/share/devhelp/books/gtkmm-3.0,
-          /usr/share/doc/gtkmm-3.0.
+          /usr/share/doc/gtkmm-3.0
         </seg>
 @z
 
@@ -164,13 +164,13 @@
 @z
 
 @x libgdkmm-3.0.so
-        contains the GDK API classes.
+          contains the GDK API classes.
 @y
-        GDK の API クラスを提供します。
+          GDK の API クラスを提供します。
 @z
 
 @x libgtkmm-3.0.so
-        contains the <application>GTK+3</application> API classes.
+          contains the <application>GTK+ 3</application> API classes.
 @y
-        <application>GTK+3</application> の API クラスを提供します。
+          <application>GTK+ 3</application> の API クラスを提供します。
 @z

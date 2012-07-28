@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to atkmm</title>
+    <title>Introduction to Atkmm</title>
 @y
-    <title>&IntroductionTo1;atkmm&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Atkmm&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Atkmm</application> is the official C++ interface for the
-    ATK accessibility toolkit library.</para>
+      <application>Atkmm</application> is the official C++ interface for the
+      ATK accessibility toolkit library.
 @y
-    <para>
-    <application>Atkmm</application> は、ATK アクセサビリティツールキット (ATK accessibility toolkit) ライブラリに対する、公式の C++ インターフェースです。
-    </para>
+      <application>Atkmm</application> は、ATK アクセサビリティツールキット (ATK accessibility toolkit) ライブラリに対する、公式の C++ インターフェースです。
 @z
 
 @x
@@ -35,43 +33,43 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&atkmm-download-http;"/></para>
+          Download (HTTP): <ulink url="&atkmm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&atkmm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&atkmm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&atkmm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&atkmm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&atkmm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&atkmm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &atkmm-md5sum;</para>
+          Download MD5 sum: &atkmm-md5sum;
 @y
-        <para>&Download; MD5 sum: &atkmm-md5sum;</para>
+          &Download; MD5 sum: &atkmm-md5sum;
 @z
 
 @x
-        <para>Download size: &atkmm-size;</para>
+          Download size: &atkmm-size;
 @y
-        <para>&DownloadSize;: &atkmm-size;</para>
+          &DownloadSize;: &atkmm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &atkmm-buildsize;</para>
+          Estimated disk space required: &atkmm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &atkmm-buildsize;</para>
+          &Estimateddiskspacerequired;: &atkmm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &atkmm-time;</para>
+          Estimated build time: &atkmm-time;
 @y
-        <para>&Estimatedbuildtime;: &atkmm-time;</para>
+          &Estimatedbuildtime;: &atkmm-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">atkmm Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Atkmm Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;atkmm&Dependencies2;</bridgehead>
 @z
@@ -79,14 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glibmm"/> and
-      <xref linkend="atk"/>
+      <xref linkend="atk"/> and
+      <xref linkend="glibmm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glibmm"/>,
-      <xref linkend="atk"/>
+      <xref linkend="atk"/>,
+      <xref linkend="glibmm"/>
     </para>
 @z
 
@@ -97,32 +95,28 @@
 @z
 
 @x
-    <title>Installation of atkmm</title>
+    <title>Installation of Atkmm</title>
 @y
-    <title>&InstallationOf1;atkmm&InstallationOf2;</title>
+    <title>&InstallationOf1;Atkmm&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>atkmm</application> by running the following
-    commands:</para>
+      Install <application>Atkmm</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>atkmm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Atkmm</application> をビルドします。
 @z
 
 @x
-    <para>This package does not have a testsuite.</para>
+      This package does not come with a testsuite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -168,7 +162,7 @@
 @z
 
 @x libatkmm-1.6.so
-          <para>contains the <application>ATK</application> API classes.</para>
+            contains the <application>ATK</application> API classes.
 @y
-          <para><application>ATK</application> API クラスを提供します。</para>
+            <application>ATK</application> API クラスを提供します。
 @z

@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to cairomm</title>
+    <title>Introduction to Cairomm</title>
 @y
-    <title>cairomm の概要</title>
+    <title>Cairomm の概要</title>
 @z
 
 @x
-    <para>The <application>cairomm</application> package provides a C++
-    interface to <application>cairo</application>.</para>
+      The <application>Cairomm</application> package provides a C++
+      interface to <application>Cairo</application>.
 @y
-    <para>
-    <application>cairomm</application> パッケージは <application>cairo</application> に対する C++ インターフェースを提供します。
-    </para>
+      <application>Cairomm</application> パッケージは <application>Cairo</application> に対する C++ インターフェースを提供します。
 @z
 
 @x
@@ -35,45 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cairomm-download-http;"/></para>
+          Download (HTTP): <ulink url="&cairomm-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&cairomm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cairomm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cairomm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cairomm-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&cairomm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cairomm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cairomm-md5sum;</para>
+          Download MD5 sum: &cairomm-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &cairomm-md5sum;</para>
+          &Download; MD5 sum: &cairomm-md5sum;
 @z
 
 @x
-        <para>Download size: &cairomm-size;</para>
+          Download size: &cairomm-size;
 @y
-        <para>ダウンロードサイズ: &cairomm-size;</para>
+          &DownloadSize;: &cairomm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cairomm-buildsize;</para>
+          Estimated disk space required: &cairomm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cairomm-buildsize;</para>
+          &Estimateddiskspacerequired;: &cairomm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cairomm-time;</para>
+          Estimated build time: &cairomm-time;
 @y
-        <para>&Estimatedbuildtime;: &cairomm-time;</para>
+          &Estimatedbuildtime;: &cairomm-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">cairomm Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Cairomm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;cairomm&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Cairomm&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -106,41 +104,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cairomm"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cairomm"/></para>
 @z
 
 @x
-    <title>Installation of cairomm</title>
+    <title>Installation of Cairomm</title>
 @y
-    <title>cairomm のインストール</title>
+    <title>&InstallationOf1;Cairomm&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>cairomm</application> by running the following
-    commands:</para>
+      Install <application>Cairomm</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>cairomm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Cairomm</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -185,10 +175,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libcairomm-1.0.{so,a}
-          <para>contains the <application>Cairo</application> API classes.</para>
+@x libcairomm-1.0.so
+            contains the <application>Cairo</application> API classes.
 @y
-          <para>
-          <application>Cairo</application> API クラスを提供します。
-          </para>
+            <application>Cairo</application> API クラスを提供します。
 @z

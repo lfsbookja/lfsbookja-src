@@ -201,10 +201,10 @@
 @z
 
 @x
-      <parameter>--with-systemdsystemunitdir=no</parameter>: This parameter is
-      needed to avoid <application>systemd</application> files being installed.
+      <option>--without-systemdsystemunitdir</option>: This parameter is needed
+      to avoid <application>systemd</application> files being installed.
 @y
-      <parameter>--with-systemdsystemunitdir=no</parameter>:
+      <option>--with-systemdsystemunitdir=no</option>:
       このパラメーターは <application>systemd</application> ファイルをインストールしない場合に必要です。
 @z
 

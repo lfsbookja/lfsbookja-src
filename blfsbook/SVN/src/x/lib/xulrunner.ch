@@ -236,22 +236,24 @@
 
 @x
       <command>for library in
-      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.so; do ln -sfv
-      ${library#/usr/lib/} /usr${library#*sdk}; done</command>: The libraries
-      shipped with this package are installed into
-      <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;</filename>
+      /usr/lib/xulrunner-&xulrunner-version;/*.so; do ln -sfv $library /usr/lib;
+      done</command>: The libraries shipped with this package are installed into
+      <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make
       relative symbolic links to the shared libraries from
-      <filename class="directory">/usr/lib</filename>.
+      <filename class="directory">/usr/lib</filename>.  Debug versions of some,
+      but not all, of these libraries can also be found in
+ <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib</filename>.
 @y
       <command>for library in
-      /usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib/*.so; do ln -sfv
-      ${library#/usr/lib/} /usr${library#*sdk}; done</command>: The libraries
-      shipped with this package are installed into
-      <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;</filename>
+      /usr/lib/xulrunner-&xulrunner-version;/*.so; do ln -sfv $library /usr/lib;
+      done</command>: The libraries shipped with this package are installed into
+      <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make
       relative symbolic links to the shared libraries from
-      <filename class="directory">/usr/lib</filename>.
+      <filename class="directory">/usr/lib</filename>.  Debug versions of some,
+      but not all, of these libraries can also be found in
+ <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib</filename>.
 @z
 
 @x

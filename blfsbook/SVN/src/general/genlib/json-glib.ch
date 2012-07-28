@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to JSON-GLib</title>
+    <title>Introduction to JSON GLib</title>
 @y
-    <title>&IntroductionTo1;JSON-GLib&IntroductionTo2;</title>
+    <title>&IntroductionTo1;JSON GLib&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>JSON-GLib</application> package is a library
+      The <application>JSON GLib</application> package is a library
       providing serialization and deserialization support for the JavaScript
       Object Notation (JSON) format described by RFC 4627.
 @y
-      <application>JSON-GLib</application> パッケージは、RFC 4627 によって規定される JSON (JavaScript Object Notation) フォーマットに対してのシリアライズ、デシリアライズ機能を提供します。
+      <application>JSON GLib</application> パッケージは、RFC 4627 によって規定される JSON (JavaScript Object Notation) フォーマットに対してのシリアライズ、デシリアライズ機能を提供します。
 @z
 
 @x
@@ -118,16 +118,16 @@
 @z
 
 @x
-    <title>Installation of JSON-GLib</title>
+    <title>Installation of JSON GLib</title>
 @y
-    <title>&InstallationOf1;JSON-GLib&InstallationOf2;</title>
+    <title>&InstallationOf1;JSON GLib&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>JSON-GLib</application> by running the following
+      Install <application>JSON GLib</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>JSON-GLib</application> をビルドします。
+      以下のコマンドを実行して <application>JSON GLib</application> をビルドします。
 @z
 
 @x
@@ -187,7 +187,7 @@
 @z
 
 @x libjson-glib-1.0.so
-            contains the <application>JSON-GLib</application> API functions.
+            contains the <application>JSON GLib</application> API functions.
 @y
-            <application>JSON-GLib</application> API 関数を提供します。
+            <application>JSON GLib</application> API 関数を提供します。
 @z

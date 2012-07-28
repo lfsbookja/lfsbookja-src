@@ -20,14 +20,11 @@
 @z
 
 @x
-    <para>The <application>pkg-config</application> package contains a tool for
-    passing the include path and/or library paths to build tools during the
-    <command>configure</command> and <command>make</command> file
-    execution.</para>
+      The <application>pkg-config</application> package contains a tool for
+      passing the include path and/or library paths to build tools during the
+      <command>configure</command> and <command>make</command> file execution.
 @y
-    <para>
-    <application>pkg-config</application> は <command>configure</command> や <command>make</command> による処理を通じて、インクルードパスやライブラリパスを提供するツールです。
-    </para>
+      <application>pkg-config</application> は <command>configure</command> や <command>make</command> による処理を通じて、インクルードパスやライブラリパスを提供するツールです。
 @z
 
 @x
@@ -37,61 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&pkgconfig-download-http;"/></para>
+          Download (HTTP): <ulink url="&pkgconfig-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&pkgconfig-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&pkgconfig-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&pkgconfig-download-ftp;"/></para>
+          Download (FTP): <ulink url="&pkgconfig-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&pkgconfig-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&pkgconfig-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &pkgconfig-md5sum;</para>
+          Download MD5 sum: &pkgconfig-md5sum;
 @y
-        <para>&Download; MD5 sum: &pkgconfig-md5sum;</para>
+          &Download; MD5 sum: &pkgconfig-md5sum;
 @z
 
 @x
-        <para>Download size: &pkgconfig-size;</para>
+          Download size: &pkgconfig-size;
 @y
-        <para>&DownloadSize;: &pkgconfig-size;</para>
+          &DownloadSize;: &pkgconfig-size;
 @z
 
 @x
-        <para>Estimated disk space required: &pkgconfig-buildsize;</para>
+          Estimated disk space required: &pkgconfig-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &pkgconfig-buildsize;</para>
+          &Estimateddiskspacerequired;: &pkgconfig-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &pkgconfig-time;</para>
+          Estimated build time: &pkgconfig-time;
 @y
-        <para>&Estimatedbuildtime;: &pkgconfig-time;</para>
-@z
-
-@x
-    <bridgehead renderas="sect3">Pkg-config Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;Pkg-config&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="popt"/></para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="popt"/></para>
+          &Estimatedbuildtime;: &pkgconfig-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/pkgconfig"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/pkgconfig"/></para>
 @z
 
 @x
@@ -110,19 +91,29 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--with-internal-glib</option>: This switch causes
+      the package to use the shipped version of GLib2.
+@y
+      <option>--with-internal-glib</option>: This switch causes
+      the package to use the shipped version of GLib2.
 @z
 
 @x
@@ -132,21 +123,19 @@
 @z
 
 @x
-    <para>The default setting for <envar>PKG_CONFIG_PATH</envar> is <filename
-    class='directory'>/usr/lib/pkgconfig:/usr/share/pkgconfig</filename>
-    because of the prefix used to install
-    <application>pkg-config</application>. You may add to
-    <envar>PKG_CONFIG_PATH</envar> by exporting additional paths on your system
-    where <filename class='extension'>.pc</filename> files are installed. Note
-    that <envar>PKG_CONFIG_PATH</envar> is only needed when compiling packages,
-    not during run-time.</para>
+      The default setting for <envar>PKG_CONFIG_PATH</envar> is <filename
+      class="directory">/usr/lib/pkgconfig:/usr/share/pkgconfig</filename>
+      because of the prefix used to install
+      <application>pkg-config</application>. You may add to
+      <envar>PKG_CONFIG_PATH</envar> by exporting additional paths on your system
+      where <filename class="extension">.pc</filename> files are installed. Note
+      that <envar>PKG_CONFIG_PATH</envar> is only needed when compiling packages,
+      not during run-time.
 @y
-    <para>
-    <envar>PKG_CONFIG_PATH</envar> 変数のデフォルトは、<application>pkg-config</application> のデフォルトのインストールプレフィックスに従い、<filename
-    class='directory'>/usr/lib/pkgconfig:/usr/share/pkgconfig</filename> となります。
-    <filename class='extension'>.pc</filename> ファイルがインストールされるディレクトリを <envar>PKG_CONFIG_PATH</envar> に追加することもできます。
-    <envar>PKG_CONFIG_PATH</envar> が必要となるのはパッケージのコンパイル時であり、実行時には参照されません。
-    </para>
+      <envar>PKG_CONFIG_PATH</envar> 変数のデフォルトは、<application>pkg-config</application> のデフォルトのインストールプレフィックスに従い、<filename
+      class="directory">/usr/lib/pkgconfig:/usr/share/pkgconfig</filename> となります。
+      <filename class="extension">.pc</filename> ファイルがインストールされるディレクトリを <envar>PKG_CONFIG_PATH</envar> に追加することもできます。
+      <envar>PKG_CONFIG_PATH</envar> が必要となるのはパッケージのコンパイル時であり、実行時には参照されません。
 @z
 
 @x
@@ -157,22 +146,18 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>pkg-config</seg>
-        <seg>None</seg>
-        <seg>None</seg>
+        <seg>
+          pkg-config
+        </seg>
 @y
-        <seg>pkg-config</seg>
-        <seg>&None;</seg>
-        <seg>&None;</seg>
+        <seg>
+          pkg-config
+        </seg>
 @z
 
 @x
@@ -182,10 +167,8 @@
 @z
 
 @x pkg-config
-          <para>returns meta information for the specified library or
-          package.</para>
+            returns meta information for the specified library or
+            package.
 @y
-          <para>
-          指定されたライブラリやパッケージに対するメタ情報を返します。
-          </para>
+            指定されたライブラリやパッケージに対するメタ情報を返します。
 @z

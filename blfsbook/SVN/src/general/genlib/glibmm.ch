@@ -170,7 +170,7 @@
 @z
 
 @x libglibmm-2.4.so
-            contains the GLib API classes.
+            contains the <application>GLib</application> API classes.
 @y
-            Glib API クラスを提供します。
+            <application>GLib</application> API クラスを提供します。
 @z

@@ -14,25 +14,17 @@
 @z
 
 @x
-  <!ENTITY p11-kit-time          "less than 0.1 SBU">
-@y
-  <!ENTITY p11-kit-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to p11-kit</title>
 @y
     <title>&IntroductionTo1;p11-kit&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>p11-kit</application> package Provides a way to load
-    and enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.
-    </para>
+      The <application>p11-kit</application> package Provides a way to load and
+      enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.
 @y
-    <para>The <application>p11-kit</application> package Provides a way to load
-    and enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.
-    </para>
+      The <application>p11-kit</application> package Provides a way to load and
+      enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.
 @z
 
 @x
@@ -42,47 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&p11-kit-download-http;"/></para>
+          Download (HTTP): <ulink url="&p11-kit-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&p11-kit-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&p11-kit-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&p11-kit-download-ftp;"/></para>
+          Download (FTP): <ulink url="&p11-kit-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&p11-kit-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&p11-kit-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &p11-kit-md5sum;</para>
+          Download MD5 sum: &p11-kit-md5sum;
 @y
-        <para>&Download; MD5 sum: &p11-kit-md5sum;</para>
+          &Download; MD5 sum: &p11-kit-md5sum;
 @z
 
 @x
-        <para>Download size: &p11-kit-size;</para>
+          Download size: &p11-kit-size;
 @y
-        <para>&DownloadSize;: &p11-kit-size;</para>
+          &DownloadSize;: &p11-kit-size;
 @z
 
 @x
-        <para>Estimated disk space required: &p11-kit-buildsize;</para>
+          Estimated disk space required: &p11-kit-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &p11-kit-buildsize;</para>
+          &Estimateddiskspacerequired;: &p11-kit-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &p11-kit-time;</para>
+          Estimated build time: &p11-kit-time;
 @y
-        <para>&Estimatedbuildtime;: &p11-kit-time;</para>
+          &Estimatedbuildtime;: &p11-kit-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/p11-kit"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/p11-kit"/></para>
 @z
 
 @x
@@ -92,50 +82,28 @@
 @z
 
 @x
-    <para>Install <application>p11-kit</application> by running the following
-    commands:</para>
+      Install <application>p11-kit</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>p11-kit</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>p11-kit</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem>  ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--sysconfdir=/etc</parameter>: This parameter creates
-    the <filename class="directory">pkcs11</filename> directory in
-    <filename class="directory">/etc</filename> instead of
-    <filename class="directory">/usr/etc</filename>. If you are building
-    this for a server rather than a desktop, you might prefer to put this in
-    <filename class="directory">/var/lib</filename>.</para>
-@y
-    <para><parameter>--sysconfdir=/etc</parameter>: This parameter creates
-    the <filename class="directory">pkcs11</filename> directory in
-    <filename class="directory">/etc</filename> instead of
-    <filename class="directory">/usr/etc</filename>. If you are building
-    this for a server rather than a desktop, you might prefer to put this in
-    <filename class="directory">/var/lib</filename>.</para>
 @z
 
 @x
@@ -155,13 +123,29 @@
 @z
 
 @x
-        <seg>p11-kit</seg>
-        <seg>libp11-kit.so and p11-kit-proxy.so</seg>
-        <seg>/etc/pkcs11,/usr/{include/p11-kit-1/p11-kit,share/gtk-doc/html/p11-kit}</seg>
+        <seg>
+          p11-kit
+        </seg>
+        <seg>
+          libp11-kit.so and p11-kit-proxy.so
+        </seg>
+        <seg>
+          /etc/pkcs11,
+          /usr/include/p11-kit-1 and
+          /usr/share/gtk-doc/html/p11-kit
+        </seg>
 @y
-        <seg>p11-kit</seg>
-        <seg>libp11-kit.so, p11-kit-proxy.so</seg>
-        <seg>/etc/pkcs11,/usr/{include/p11-kit-1/p11-kit,share/gtk-doc/html/p11-kit}</seg>
+        <seg>
+          p11-kit
+        </seg>
+        <seg>
+          libp11-kit.so, p11-kit-proxy.so
+        </seg>
+        <seg>
+          /etc/pkcs11,
+          /usr/include/p11-kit-1,
+          /usr/share/gtk-doc/html/p11-kit
+        </seg>
 @z
 
 @x

@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to pangomm</title>
+    <title>Introduction to Pangomm</title>
 @y
-    <title>&IntroductionTo1;pangomm&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Pangomm&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>pangomm</application> package provides a C++
-    interface to <application>Pango</application>.</para>
+      The <application>Pangomm</application> package provides a C++
+      interface to <application>Pango</application>.
 @y
-    <para>
-    <application>pangomm</application> パッケージは <application>Pango</application> に対する C++ インターフェースを提供します。
-    </para>
+      <application>Pangomm</application> パッケージは <application>Pango</application> に対する C++ インターフェースを提供します。
 @z
 
 @x
@@ -35,45 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&pangomm-download-http;"/></para>
+          Download (HTTP): <ulink url="&pangomm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&pangomm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&pangomm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&pangomm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&pangomm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&pangomm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&pangomm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &pangomm-md5sum;</para>
+          Download MD5 sum: &pangomm-md5sum;
 @y
-        <para>&Download; MD5 sum: &pangomm-md5sum;</para>
+          &Download; MD5 sum: &pangomm-md5sum;
 @z
 
 @x
-        <para>Download size: &pangomm-size;</para>
+          Download size: &pangomm-size;
 @y
-        <para>&DownloadSize;: &pangomm-size;</para>
+          &Download; size: &pangomm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &pangomm-buildsize;</para>
+          Estimated disk space required: &pangomm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &pangomm-buildsize;</para>
+          &Estimateddiskspacerequired;: &pangomm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &pangomm-time;</para>
+          Estimated build time: &pangomm-time;
 @y
-        <para>&Estimatedbuildtime;: &pangomm-time;</para>
+          &Estimatedbuildtime;: &pangomm-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">pangomm Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Pangomm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;pangomm&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Pangomm&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -94,42 +92,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/pangomm"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/pangomm"/></para>
 @z
 
 @x
-    <title>Installation of pangomm</title>
+    <title>Installation of Pangomm</title>
 @y
-    <title>pangomm のインストール</title>
+    <title>&InstallationOf1;Pangomm&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>pangomm</application> by running the following
-    commands:</para>
+      Install <application>Pangomm</application> by running the following
+      commands:
 @y
-<para>
-以下のコマンドを実行して <application>pangomm</application> をビルドします。
-</para>
+      以下のコマンドを実行して <application>Pangomm</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-<para>
-&notTestSuite;
-</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -175,9 +164,7 @@
 @z
 
 @x libpangomm-1.4.so
-          <para>contains the <application>Pango</application> API classes.</para>
+            contains the <application>Pango</application> API classes.
 @y
-<para>
-<application>Pango</application> API クラスを提供します。
-</para>
+            <application>Pango</application> API クラスを提供します。
 @z

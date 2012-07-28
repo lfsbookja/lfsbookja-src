@@ -20,17 +20,15 @@
 @z
 
 @x
-    <para>The <application>libnotify</application> library is used to send
-    desktop notifications to a notification daemon, as defined in the Desktop
-    Notifications spec. These notifications can be used to inform the user about
-    an event or display some form of information without getting in the user's
-    way.</para>
+      The <application>libnotify</application> library is used to send desktop
+      notifications to a notification daemon, as defined in the Desktop
+      Notifications spec. These notifications can be used to inform the user about
+      an event or display some form of information without getting in the user's
+      way.
 @y
-    <para>
-    <application>libnotify</application> ライブラリは、デスクトップ通知 (desktop notifications) を通知デーモン (notification daemon) に送信します。
-    これはデスクトップ通知仕様 (Desktop Notifications spec) にて定義されます。
-    デスクトップ通知は、ユーザーに対しての情報を行ったり、ユーザーの操作によらず情報表示したりするために利用されます。
-    </para>
+      <application>libnotify</application> ライブラリは、デスクトップ通知 (desktop notifications) を通知デーモン (notification daemon) に送信します。
+      これはデスクトップ通知仕様 (Desktop Notifications spec) にて定義されます。
+      デスクトップ通知は、ユーザーに対して情報を伝えたり、ユーザーの操作によらず情報表示したりするために利用されます。
 @z
 
 @x
@@ -40,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libnotify-download-http;"/></para>
+          Download (HTTP): <ulink url="&libnotify-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libnotify-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libnotify-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libnotify-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libnotify-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libnotify-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libnotify-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libnotify-md5sum;</para>
+          Download MD5 sum: &libnotify-md5sum;
 @y
-        <para>&Download; MD5 sum: &libnotify-md5sum;</para>
+          &Download; MD5 sum: &libnotify-md5sum;
 @z
 
 @x
-        <para>Download size: &libnotify-size;</para>
+          Download size: &libnotify-size;
 @y
-        <para>&DownloadSize;: &libnotify-size;</para>
+          &DownloadSize;: &libnotify-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libnotify-buildsize;</para>
+          Estimated disk space required: &libnotify-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libnotify-buildsize;</para>
+          &Estimateddiskspacerequired;: &libnotify-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libnotify-time;</para>
+          Estimated build time: &libnotify-time;
 @y
-        <para>&Estimatedbuildtime;: &libnotify-time;</para>
+          &Estimatedbuildtime;: &libnotify-time;
 @z
 
 @x
@@ -119,10 +117,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libnotify"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libnotify"/></para>
 @z
 
 @x
@@ -132,26 +128,22 @@
 @z
 
 @x
-    <para>Install <application>libnotify</application> by running the following
-    commands:</para>
+      Install <application>libnotify</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libnotify</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libnotify</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -184,7 +176,8 @@
           libnotify.so
         </seg>
         <seg>
-         /usr/include/libnotify and /usr/share/gtk-doc/html/libnotify
+         /usr/include/libnotify and
+         /usr/share/gtk-doc/html/libnotify
         </seg>
 @y
         <seg>
@@ -194,7 +187,8 @@
           libnotify.so
         </seg>
         <seg>
-         /usr/include/libnotify, /usr/share/gtk-doc/html/libnotify
+         /usr/include/libnotify,
+         /usr/share/gtk-doc/html/libnotify
         </seg>
 @z
 
@@ -205,17 +199,13 @@
 @z
 
 @x notify-send
-          <para>is a command to send notifications.</para>
+            is a command used to send notifications.
 @y
-          <para>
-          通知を送信するコマンド。
-          </para>
+            通知を送信するコマンド。
 @z
 
-@x libnotify.{so,a}
-          <para>contains the notify API functions.</para>
+@x libnotify.so
+            contains the <application>libnotify</application> API functions.
 @y
-          <para>
-          通知 API 関数 (notify API functions) を提供します。
-          </para>
+            通知 API 関数 (notify API functions) を提供します。
 @z

@@ -213,8 +213,8 @@
             HTTP 非同期接続を行うための関数を提供します。
 @z
 
-@x libsoup-gnome-2.4.{so,a}
-            provides <application>Gnome</application> specific features.
+@x libsoup-gnome-2.4.so
+            provides <application>GNOME</application> specific features.
 @y
             <application>GNOME</application> に固有の機能を提供します。
 @z

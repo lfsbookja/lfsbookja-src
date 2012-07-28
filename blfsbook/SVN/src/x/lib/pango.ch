@@ -51,39 +51,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&pango-download-http;"/></para>
+          Download (HTTP): <ulink url="&pango-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&pango-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&pango-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&pango-download-ftp;"/></para>
+          Download (FTP): <ulink url="&pango-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&pango-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&pango-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &pango-md5sum;</para>
+          Download MD5 sum: &pango-md5sum;
 @y
-        <para>&Download; MD5 sum: &pango-md5sum;</para>
+          &Download; MD5 sum: &pango-md5sum;
 @z
 
 @x
-        <para>Download size: &pango-size;</para>
+          Download size: &pango-size;
 @y
-        <para>&DownloadSize;: &pango-size;</para>
+          &DownloadSize;: &pango-size;
 @z
 
 @x
-        <para>Estimated disk space required: &pango-buildsize;</para>
+          Estimated disk space required: &pango-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &pango-buildsize;</para>
+          &Estimateddiskspacerequired;: &pango-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &pango-time;</para>
+          Estimated build time: &pango-time;
 @y
-        <para>&Estimatedbuildtime;: &pango-time;</para>
+          &Estimatedbuildtime;: &pango-time;
 @z
 
 @x
@@ -93,20 +93,16 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required, one of:</bridgehead>
+    <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/>
-      <xref linkend="freetype2"/> or
+      <xref linkend="cairo"/> and
       <xref linkend="xorg7-lib"/>
-      (all 3 are required if you intend to install Gtk+)
     </para>
 @y
-    <bridgehead renderas="sect4">&Required; 以下のいずれか</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/>
-      <xref linkend="freetype2"/>,
+      <xref linkend="cairo"/> and
       <xref linkend="xorg7-lib"/>
-      (この３つは Gtk+ をインストールする場合は必須)
     </para>
 @z
 
@@ -232,13 +228,12 @@
 @z
 
 @x
-        <seg>pango-querymodules and pango-view</seg>
         <seg>
-          libpango-1.0.so,
-          libpangocairo-1.0.so,
-          libpangoft2-1.0.so,
-          libpangox-1.0.so and
-          libpangoxft-1.0.so
+          pango-querymodules and pango-view
+        </seg>
+        <seg>
+          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
+          libpangox-1.0.so and libpangoxft-1.0.so
         </seg>
         <seg>
           /etc/pango,
@@ -247,13 +242,12 @@
           /usr/share/gtk-doc/html/pango
         </seg>
 @y
-        <seg>pango-querymodules, pango-view</seg>
         <seg>
-          libpango-1.0.so,
-          libpangocairo-1.0.so,
-          libpangoft2-1.0.so,
-          libpangox-1.0.so,
-          libpangoxft-1.0.so
+          pango-querymodules, pango-view
+        </seg>
+        <seg>
+          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
+          libpangox-1.0.so, libpangoxft-1.0.so
         </seg>
         <seg>
           /etc/pango,

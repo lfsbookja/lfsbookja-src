@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>libxklavier</application> package contains a
-    utility library for <application>X</application> keyboard.</para>
+      The <application>libxklavier</application> package contains an
+      utility library for <application>X</application> keyboard.
 @y
-    <para>
-    <application>libxklavier</application> パッケージは、<application>X</application> のキーボードに対する有用なユーティリティを提供します。
-    </para>
+      <application>libxklavier</application> パッケージは、<application>X</application> のキーボードに対する有用なユーティリティを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libxklavier-download-http;"/></para>
+          Download (HTTP): <ulink url="&libxklavier-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libxklavier-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libxklavier-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libxklavier-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libxklavier-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libxklavier-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libxklavier-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libxklavier-md5sum;</para>
+          Download MD5 sum: &libxklavier-md5sum;
 @y
-        <para>&Download; MD5 sum: &libxklavier-md5sum;</para>
+          &Download; MD5 sum: &libxklavier-md5sum;
 @z
 
 @x
-        <para>Download size: &libxklavier-size;</para>
+          Download size: &libxklavier-size;
 @y
-        <para>&DownloadSize;: &libxklavier-size;</para>
+          &DownloadSize;: &libxklavier-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libxklavier-buildsize;</para>
+          Estimated disk space required: &libxklavier-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libxklavier-buildsize;</para>
+          &Estimateddiskspacerequired;: &libxklavier-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libxklavier-time;</para>
+          Estimated build time: &libxklavier-time;
 @y
-        <para>&Estimatedbuildtime;: &libxklavier-time;</para>
+          &Estimatedbuildtime;: &libxklavier-time;
 @z
 
 @x
@@ -126,10 +124,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libxklavier"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libxklavier"/></para>
 @z
 
 @x
@@ -139,26 +135,22 @@
 @z
 
 @x
-    <para>Install <application>libxklavier</application> by running the
-    following commands:</para>
+      Install <application>libxklavier</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libxklavier</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libxklavier</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -168,14 +160,12 @@
 @z
 
 @x
-    <para><option>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</option>:
-    Use this parameter if the $XORG_PREFIX is anything other than
-    <filename class='directory'>/usr</filename>.</para>
+      <parameter>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</parameter>:
+      Use this parameter if the $XORG_PREFIX is anything other than
+      <filename class="directory">/usr</filename>.
 @y
-    <para>
-    <option>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</option>:
-    $XORG_PREFIX が <filename class='directory'>/usr</filename> 以外である場合に、このパラメーターを指定します。
-    </para>
+      <parameter>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</parameter>:
+      $XORG_PREFIX が <filename class='directory'>/usr</filename> 以外である場合に、このパラメーターを指定します。
 @z
 
 @x
@@ -197,14 +187,16 @@
           libxklavier.so
         </seg>
         <seg>
-          /usr/include/libxklavier and /usr/share/gtk-doc/html/libxklavier
+          /usr/include/libxklavier and
+          /usr/share/gtk-doc/html/libxklavier
         </seg>
 @y
         <seg>
           libxklavier.so
         </seg>
         <seg>
-          /usr/include/libxklavier, /usr/share/gtk-doc/html/libxklavier
+          /usr/include/libxklavier,
+          /usr/share/gtk-doc/html/libxklavier
         </seg>
 @z
 
@@ -214,10 +206,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libxklavier.{so,a}
-          <para>contains XKB utility functions.</para>
+@x libxklavier.so
+            contains XKB utility functions.
 @y
-          <para>
-          XKB ユーティリティー関数を提供します。
-          </para>
+            XKB ユーティリティー関数を提供します。
 @z

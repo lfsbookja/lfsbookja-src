@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to gtk-vnc</title>
+    <title>Introduction to Gtk VNC</title>
 @y
-    <title>&IntroductionTo1;gtk-vnc&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Gtk VNC&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>gtk-vnc</application> package is a VNC viewer widget
-      for <application>GTK</application>. It is built using coroutines allowing it
-      to be completely asynchronous while remaining single threaded.
+      The <application>Gtk VNC</application> package contains a VNC viewer widget
+      for <application>GTK+</application>. It is built using coroutines allowing
+      it to be completely asynchronous while remaining single threaded.
 @y
-      <application>gtk-vnc</application> パッケージは <application>GTK</application> における VNC ビューワーウィジェットを提供します。
+      <application>Gtk VNC</application> パッケージは <application>GTK+</application> における VNC ビューワーウィジェットを提供します。
       これは完全に非同期で動作する処理ルーチンにより構築され、しかも単一のスレッドで動作します。
 @z
 
@@ -71,9 +71,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">gtk-vnc Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Gtk VNC Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gtk-vnc&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Gtk VNC&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +112,7 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="nspr"/>,
       <xref linkend="pulseaudio"/> and
-      <ulink url="https://developer.mozilla.org/en/XULRunner">Xulrunner</ulink>
+      <xref linkend="xulrunner"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -120,36 +120,33 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="nspr"/>,
       <xref linkend="pulseaudio"/>,
-      <ulink url="https://developer.mozilla.org/en/XULRunner">Xulrunner</ulink>
+      <xref linkend="xulrunner"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gtk-vnc"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gtk-vnc"/></para>
 @z
 
 @x
-    <title>Installation of gtk-vnc</title>
+    <title>Installation of Gtk VNC</title>
 @y
-    <title>&InstallationOf1;gtk-vnc&InstallationOf2;</title>
+    <title>&InstallationOf1;Gtk VNC&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>gtk-vnc</application> by running the following
+      Install <application>Gtk VNC</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>gtk-vnc</application> をビルドします。
+      以下のコマンドを実行して <application>Gtk VNC</application> をビルドします。
 @z
 
 @x
-      This package's testsuite is only intended to be used by the
-      maintainer to check the i18n files.
+      This package does not come with a testsuite.
 @y
-      本パッケージのテストスイートは、開発者が i18n ファイルをテストする目的でのみ提供されています。
+      &notTestSuite;
 @z
 
 @x
@@ -165,12 +162,12 @@
 @z
 
 @x
-      <parameter>--with-gtk=3.0</parameter>: This parameter enables building of
-      <application>GTK+3</application> library instead of 
-      <application>GTK+2</application> one.
+      <parameter>--with-gtk=3.0</parameter>: This parameter enables
+      building of <application>GTK+ 3</application> library instead
+      of <application>GTK+ 2</application> one.
 @y
       <parameter>--with-gtk=3.0</parameter>:
-      このパラメーターは <application>GTK+2</application> ではなく <application>GTK+3</application> を有効にします。
+      このパラメーターは <application>GTK+ 2</application> ではなく <application>GTK+ 3</application> を有効にします。
 @z
 
 @x
@@ -185,12 +182,12 @@
 
 @x
       <option>--without-sasl</option>: This parameter disables the use of 
-      <application>Cyrus SASL</application> for authentication. Remove it if you have 
-      <application>Cyrus SASL</application> installed and wish to enable it for 
-      authentication.
+      <application>Cyrus SASL</application> for authentication. Remove it if you
+      have installed <application>Cyrus SASL</application> and wish to enable it
+      for  authentication.
 @y
       <option>--without-sasl</option>:
-      このパラメーターは、認証処理にあたって <application>cyrus SASL</application> を利用しないことを指示します。
+      このパラメーターは、認証処理にあたって <application>Cyrus SASL</application> を利用しないことを指示します。
       <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は、本パラメーターを取り除いてください。
 @z
 
@@ -252,19 +249,21 @@
 @z
 
 @x libgtk-vnc-2.0.so
-            contains GTK+3 bindings for GTK VNC.
+            contains <application>GTK+ 3</application> bindings for 
+            <application>Gtk VNC</application>.
 @y
-            GTK VNC に対する GTK+3 バインディングを提供します。
+            <application>Gtk VNC</application> に対する <application>GTK+ 3</application> バインディングを提供します。
 @z
 
 @x libgvnc-1.0.so
-            contains GObject bindings for GTK VNC.
+            contains GObject bindings for <application>Gtk VNC</application>.
 @y
-            GTK VNC に対する GObject バインディングを提供します。
+            <application>Gtk VNC</application> に対する GObject バインディングを提供します。
 @z
 
 @x libgvncpulse-1.0.so
-            is Pulseaudio bridge for GTK VNC.
+            is the <application>PulseAudio</application> bridge for 
+            <application>Gtk VNC</application>.
 @y
-            GTK VNC に対する Pulseaudio ブリッジです。
+            <application>Gtk VNC</application> に対する <application>PulseAudio</application> ブリッジです。
 @z

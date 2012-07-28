@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para><application>ATK</application> provides the set of accessibility
-    interfaces that are implemented by other toolkits and applications. 
-    Using the <application>ATK</application> interfaces, accessibility tools 
-    have full access to view and control running applications.</para>
+      <application>ATK</application> provides the set of accessibility
+      interfaces that are implemented by other toolkits and applications. 
+      Using the <application>ATK</application> interfaces, accessibility
+      tools have full access to view and control running applications.
 @y
-    <para>
-    <application>ATK</application> は、他のツールキットやアプリケーションが実装する、アクセス性向上のためのインターフェースを提供します。
-    <application>ATK</application> インターフェースを使うことで、アプリケーションを参照したり実行を制御したりするアクセスツールの構築を可能とします。
-    </para>
+      <application>ATK</application> は、他のツールキットやアプリケーションが実装する、アクセス性向上のためのインターフェースを提供します。
+      <application>ATK</application> インターフェースを使うことで、アプリケーションを参照したり実行を制御したりするアクセスツールの構築を可能とします。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&atk-download-http;"/></para>
+          Download (HTTP): <ulink url="&atk-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&atk-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&atk-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&atk-download-ftp;"/></para>
+          Download (FTP): <ulink url="&atk-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&atk-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&atk-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &atk-md5sum;</para>
+          Download MD5 sum: &atk-md5sum;
 @y
-        <para>&Download; MD5 sum: &atk-md5sum;</para>
+          &Download; MD5 sum: &atk-md5sum;
 @z
 
 @x
-        <para>Download size: &atk-size;</para>
+          Download size: &atk-size;
 @y
-        <para>&DownloadSize;: &atk-size;</para>
+          &DownloadSize;: &atk-size;
 @z
 
 @x
-        <para>Estimated disk space required: &atk-buildsize;</para>
+          Estimated disk space required: &atk-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &atk-buildsize;</para>
+          &Estimateddiskspacerequired;: &atk-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &atk-time;</para>
+          Estimated build time: &atk-time;
 @y
-        <para>&Estimatedbuildtime;: &atk-time;</para>
+          &Estimatedbuildtime;: &atk-time;
 @z
 
 @x
@@ -117,41 +115,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/atk"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/atk"/></para>
 @z
 
 @x
     <title>Installation of ATK</title>
 @y
-    <title>ATK のインストール</title>
+    <title>&InstallationOf1;ATK&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>atk</application> by running
-    the following commands:</para>
+      Install <application>ATK</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>atk</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>atk</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -179,14 +169,16 @@
           libatk-1.0.so
         </seg>
         <seg>
-          /usr/include/atk-1.0 and /usr/share/gtk-doc/html/atk
+          /usr/include/atk-1.0 and
+          /usr/share/gtk-doc/html/atk
         </seg>
 @y
         <seg>
           libatk-1.0.so
         </seg>
         <seg>
-          /usr/include/atk-1.0, /usr/share/gtk-doc/html/atk
+          /usr/include/atk-1.0,
+          /usr/share/gtk-doc/html/atk
         </seg>
 @z
 
@@ -197,10 +189,8 @@
 @z
 
 @x atklib-1.0.so
-          <para>contains functions that are used by assistive technologies
-          to interact with the desktop applications.</para>
+            contains functions that are used by assistive technologies
+            to interact with the desktop applications.
 @y
-          <para>
-          デスクトップやアプリケーションにおける支援技術 (assistive technologies) にて用いられる関数を提供します。
-          </para>
+            デスクトップやアプリケーションにおける支援技術 (assistive technologies) にて用いられる関数を提供します。
 @z

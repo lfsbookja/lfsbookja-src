@@ -14,19 +14,17 @@
 @z
 
 @x
-    <title>Introduction to clutter-gtk</title>
+    <title>Introduction to Clutter Gtk</title>
 @y
-    <title>&IntroductionTo1;clutter-gtk&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Clutter Gtk&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>clutter-gtk</application> package is a library
-    providing facilities to integrate <application>Clutter</application> into
-    <application>GTK+</application> applications.</para>
+      The <application>Clutter Gtk</application> package is a library
+      providing facilities to integrate <application>Clutter</application>
+      into <application>GTK+</application> applications.
 @y
-    <para>
-    <application>clutter-gtk</application> パッケージは、<application>Clutter</application> を <application>GTK+</application> アプリケーションにて利用するための機能を提供するライブラリです。
-    </para>
+      <application>Clutter Gtk</application> パッケージは、<application>Clutter</application> を <application>GTK+</application> アプリケーションにて利用するための機能を提供するライブラリです。
 @z
 
 @x
@@ -36,45 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&clutter-gtk-download-http;"/></para>
+          Download (HTTP): <ulink url="&clutter-gtk-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&clutter-gtk-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&clutter-gtk-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&clutter-gtk-download-ftp;"/></para>
+          Download (FTP): <ulink url="&clutter-gtk-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&clutter-gtk-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&clutter-gtk-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &clutter-gtk-md5sum;</para>
+          Download MD5 sum: &clutter-gtk-md5sum;
 @y
-        <para>&Download; MD5 sum: &clutter-gtk-md5sum;</para>
+          &Download; MD5 sum: &clutter-gtk-md5sum;
 @z
 
 @x
-        <para>Download size: &clutter-gtk-size;</para>
+          Download size: &clutter-gtk-size;
 @y
-        <para>&DownloadSize;: &clutter-gtk-size;</para>
+          &DownloadSize;: &clutter-gtk-size;
 @z
 
 @x
-        <para>Estimated disk space required: &clutter-gtk-buildsize;</para>
+          Estimated disk space required: &clutter-gtk-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &clutter-gtk-buildsize;</para>
+          &Estimateddiskspacerequired;: &clutter-gtk-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &clutter-gtk-time;</para>
+          Estimated build time: &clutter-gtk-time;
 @y
-        <para>&Estimatedbuildtime;: &clutter-gtk-time;</para>
+          &Estimatedbuildtime;: &clutter-gtk-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">clutter-gtk Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Clutter Gtk Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;clutter-gtk&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Clutter Gtk&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -117,39 +115,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/clutter-gtk"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/clutter-gtk"/></para>
 @z
 
 @x
-    <title>Installation of clutter-gtk</title>
+    <title>Installation of Clutter Gtk</title>
 @y
-    <title>&InstallationOf1;clutter-gtk&InstallationOf2;</title>
+    <title>&InstallationOf1;Clutter Gtk&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>clutter-gtk</application> by running the following
-    commands:</para>
+      Install <application>Clutter Gtk</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>clutter-gtk</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Clutter Gtk</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -197,9 +189,7 @@
 @z
 
 @x libclutter-gtk-0.10.so
-          <para>contains the clutter-gtk API functions.</para>
+            contains the <application>Clutter Gtk</application> API functions.
 @y
-          <para>
-          clutter-gtk の API 関数を提供します。
-          </para>
+            <application>Clutter Gtk</application> の API 関数を提供します。
 @z

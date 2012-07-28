@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mysql-buildsize     "883 MB (additional 170 MB to run the test suite)">
-  <!ENTITY mysql-time          "3.9 SBU (Test suite is an additional 45 minutes, only partially CPU dependent)">
+  <!ENTITY mysql-buildsize     "930 MB (additional 170 MB to run the test suite)">
+  <!ENTITY mysql-time          "4.4 SBU (Test suite is an additional 45 minutes, only partially CPU dependent)">
 @y
-  <!ENTITY mysql-buildsize     "883 MB (テストスイート実行時はさらに 170 MB)">
-  <!ENTITY mysql-time          "3.9 SBU (テストスイート実行時はさらに 45 分; ただしある程度 CPU に依存)">
+  <!ENTITY mysql-buildsize     "930 MB (テストスイート実行時はさらに 170 MB)">
+  <!ENTITY mysql-time          "4.4 SBU (テストスイート実行時はさらに 45 分; ただしある程度 CPU に依存)">
 @z
 
 @x
@@ -166,13 +166,13 @@
 @x
     <note><para>There are a great many options available to
     <userinput>cmake</userinput>.  Check the output of the `<userinput>cmake .
-    -LH</userinput>` for additional customization options.  See ithe <ulink
+    -LH</userinput>` for additional customization options.  See the <ulink
     url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
     Documentation</ulink> for a full listing of all options.</para></note>
 @y
     <note><para>There are a great many options available to
     <userinput>cmake</userinput>.  Check the output of the `<userinput>cmake .
-    -LH</userinput>` for additional customization options.  See ithe <ulink
+    -LH</userinput>` for additional customization options.  See the <ulink
     url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
     Documentation</ulink> for a full listing of all options.</para></note>
 @z
@@ -195,7 +195,8 @@
     file, you will need to add an appropriate entry to the
     <filename>/etc/hosts.allow</filename> file for the
     <command>mysqld</command> daemon. Otherwise many of the tests will
-    fail.</para>
+    fail.  Also, two tests will fail if ipv6 is not available in the kernel
+    either as a module or built in.</para>
 @y
     <para>
     ビルド結果をテストする場合は <command>make test-force 2>&amp;1 | tee
@@ -204,6 +205,7 @@
     設定オプションや開発者の意向により、テストの中には実行されないものが出てきます。
     特に TCP Wrappers を利用していて、<filename>/etc/hosts.deny</filename> ファイルにて制限を設けている場合は、<command>mysqld</command> デーモンに対するエントリを適切に <filename>/etc/hosts.allow</filename> ファイルに加えてください。
     そうしておかないと相当数のテストが失敗します。
+    さらに ipv6 機能がカーネルに組み入れられていない場合には２つのテストが失敗します。
     </para>
 @z
 

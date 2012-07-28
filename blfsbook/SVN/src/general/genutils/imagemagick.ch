@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "256 MB typical (additional 69 MB if you run the Image::Magick demo)">
-  <!ENTITY imagemagick-time          "4.2 SBU typical (Additional 8.1 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "264 MB typical (additional 27MB if you run the testsuite, and additional 68 MB if you run the Image::Magick demo)">
+  <!ENTITY imagemagick-time          "3.2 SBU typical (Additional 0.8 SBU to run the test suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "256 MB typical (additional 69 MB if you run the Image::Magick demo)">
-  <!ENTITY imagemagick-time          "4.2 SBU typical (Additional 8.1 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "264 MB typical (additional 27MB if you run the testsuite, and additional 68 MB if you run the Image::Magick demo)">
+  <!ENTITY imagemagick-time          "3.2 SBU typical (Additional 0.8 SBU to run the test suite)">
 @z
 
 @x
@@ -419,7 +419,9 @@
         numerous plugin modules</seg>
         <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
         /usr/lib/ImageMagick-&imagemagick-version;,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/Image/Magick,
+        /usr/lib/perl5/site_perl/5.x.y/MYARCH-linux/auto/Image/Magick
+        (where 5.x.y is your version of <application>perl</application> and MYARCH
+        is i686 or x86_64),
         /usr/share/ImageMagick-&imagemagick-version; and
         /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
 @y
@@ -431,8 +433,10 @@
         numerous plugin modules</seg>
         <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
         /usr/lib/ImageMagick-&imagemagick-version;,
-        /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/Image/Magick,
-        /usr/share/ImageMagick-&imagemagick-version;,
+        /usr/lib/perl5/site_perl/5.x.y/MYARCH-linux/auto/Image/Magick
+        (where 5.x.y is your version of <application>perl</application> and MYARCH
+        is i686 or x86_64),
+        /usr/share/ImageMagick-&imagemagick-version; and
         /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
 @z
 

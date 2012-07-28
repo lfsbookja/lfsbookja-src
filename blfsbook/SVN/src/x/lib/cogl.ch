@@ -20,15 +20,15 @@
 @z
 
 @x
-    <para><application>Cogl</application> is a modern 3D graphics API with
-    associated utility APIs designed to expose the features of 3D graphics hardware
-    using a direct state access API design, as opposed to the state-machine style
-    of OpenGL.</para>
+      <application>Cogl</application> is a modern 3D graphics API with associated
+      utility APIs designed to expose the features of 3D graphics hardware using
+      a direct state access API design, as opposed to the state-machine style
+      of OpenGL.
 @y
-    <para><application>Cogl</application> is a modern 3D graphics API with
-    associated utility APIs designed to expose the features of 3D graphics hardware
-    using a direct state access API design, as opposed to the state-machine style
-    of OpenGL.</para>
+      <application>Cogl</application> is a modern 3D graphics API with associated
+      utility APIs designed to expose the features of 3D graphics hardware using
+      a direct state access API design, as opposed to the state-machine style
+      of OpenGL.
 @z
 
 @x
@@ -38,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cogl-download-http;"/></para>
+          Download (HTTP): <ulink url="&cogl-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cogl-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cogl-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cogl-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cogl-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&cogl-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cogl-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cogl-md5sum;</para>
+          Download MD5 sum: &cogl-md5sum;
 @y
-        <para>&Download; MD5 sum: &cogl-md5sum;</para>
+          &Download; MD5 sum: &cogl-md5sum;
 @z
 
 @x
-        <para>Download size: &cogl-size;</para>
+          Download size: &cogl-size;
 @y
-        <para>&DownloadSize;: &cogl-size;</para>
+          &DownloadSize;: &cogl-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cogl-buildsize;</para>
+          Estimated disk space required: &cogl-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cogl-buildsize;</para>
+          &Estimateddiskspacerequired;: &cogl-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cogl-time;</para>
+          Estimated build time: &cogl-time;
 @y
-        <para>&Estimatedbuildtime;: &cogl-time;</para>
+          &Estimatedbuildtime;: &cogl-time;
 @z
 
 @x
@@ -121,10 +121,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cogl"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cogl"/></para>
 @z
 
 @x
@@ -134,28 +132,22 @@
 @z
 
 @x
-    <para>Install <application>Cogl</application> by running the following
-    commands:</para>
+      Install <application>Cogl</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Cogl</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Cogl</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

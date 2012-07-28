@@ -185,7 +185,7 @@
 @z
 
 @x notification-daemon
-            is the Notification Daemon itself.
+            is the <application>Notification Daemon</application> itself.
 @y
-            通知デーモンプログラム。
+            <application>Notification Daemon</application> (通知デーモン)。
 @z

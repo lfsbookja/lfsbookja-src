@@ -20,21 +20,19 @@
 @z
 
 @x
-    <para><application>MIT Kerberos V5</application> is a free implementation
-    of Kerberos 5. Kerberos is a network authentication protocol. It
-    centralizes the authentication database and uses kerberized
-    applications to work with servers or services that support Kerberos
-    allowing single logins and encrypted communication over internal
-    networks or the Internet.</para>
+      <application>MIT Kerberos V5</application> is a free implementation
+      of Kerberos 5. Kerberos is a network authentication protocol. It
+      centralizes the authentication database and uses kerberized
+      applications to work with servers or services that support Kerberos
+      allowing single logins and encrypted communication over internal
+      networks or the Internet.
 @y
-    <para>
-    <application>MIT Kerberos V5</application> は Kerberos 5 のフリーな実装ソフトウェアです。
-    Kerberos とはネットワーク認証プロトコルです。
-    
-    centralizes the authentication database and uses kerberized
-    applications to work with servers or services that support Kerberos
-    allowing single logins and encrypted communication over internal
-    networks or the Internet.</para>
+      <application>MIT Kerberos V5</application> は Kerberos 5 のフリーな実装ソフトウェアです。
+      Kerberos とはネットワーク認証プロトコルです。
+      It centralizes the authentication database and uses kerberized
+      applications to work with servers or services that support Kerberos
+      allowing single logins and encrypted communication over internal
+      networks or the Internet.
 @z
 
 @x
@@ -44,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mitkrb-download-http;"/></para>
+          Download (HTTP): <ulink url="&mitkrb-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&mitkrb-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&mitkrb-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mitkrb-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mitkrb-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&mitkrb-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&mitkrb-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &mitkrb-md5sum;</para>
+          Download MD5 sum: &mitkrb-md5sum;
 @y
-        <para>&Download; MD5 sum: &mitkrb-md5sum;</para>
+          &Download; MD5 sum: &mitkrb-md5sum;
 @z
 
 @x
-        <para>Download size: &mitkrb-size;</para>
+          Download size: &mitkrb-size;
 @y
-        <para>&DownloadSize;: &mitkrb-size;</para>
+          &DownloadSize;: &mitkrb-size;
 @z
 
 @x
-        <para>Estimated disk space required: &mitkrb-buildsize;</para>
+          Estimated disk space required: &mitkrb-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &mitkrb-buildsize;</para>
+          &Estimateddiskspacerequired;: &mitkrb-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &mitkrb-time;</para>
+          Estimated build time: &mitkrb-time;
 @y
-        <para>&Estimatedbuildtime;: &mitkrb-time;</para>
+          &Estimatedbuildtime;: &mitkrb-time;
 @z
 
 @x
@@ -87,34 +85,38 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="keyutils"/>,
-    <xref linkend="openldap"/>, and
-    <xref linkend="dejagnu"/> (required to run the test suite)</para>
+    <para role="optional">
+      <xref linkend="dejagnu"/> (required to run the testsuite),
+      <xref linkend="keyutils"/>,
+      <xref linkend="openldap"/> and
+      <xref linkend="python2"/> (used during the testsuite).
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="keyutils"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="dejagnu"/> (テストスイート実行時に必要)</para>
+    <para role="optional">
+      <xref linkend="dejagnu"/> (テストスイート実行時に必要),
+      <xref linkend="keyutils"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="python2"/> (テストスイート実行時に必要).
+    </para>
 @z
 
 @x
-      <para>Some sort of time synchronization facility on your system (like
-      <xref linkend="ntp"/>) is required since Kerberos won't authenticate if
-      there is a time difference between a kerberized client and the
-      KDC server.</para>
+        Some sort of time synchronization facility on your system (like
+        <xref linkend="ntp"/>) is required since Kerberos won't authenticate
+        if there is a time difference between a kerberized client and the
+        KDC server.
 @y
-      <para>Some sort of time synchronization facility on your system (like
-      <xref linkend="ntp"/>) is required since Kerberos won't authenticate if
-      there is a time difference between a kerberized client and the
-      KDC server.</para>
+        Some sort of time synchronization facility on your system (like
+        <xref linkend="ntp"/>) is required since Kerberos won't authenticate
+        if there is a time difference between a kerberized client and the
+        KDC server.
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/mitkrb"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/mitkrb"/></para>
 @z
 
 @x
@@ -124,73 +126,55 @@
 @z
 
 @x
-    <para><application>MIT Kerberos V5</application> is distributed in a
-    TAR file containing a compressed TAR package and a detached PGP
-    <filename class="extension">ASC</filename> file. You'll need to unpack
-    the distribution tar file, then unpack the compressed tar file before
-    starting the build.</para>
+      <application>MIT Kerberos V5</application> is distributed in a
+      TAR file containing a compressed TAR package and a detached PGP
+      <filename class="extension">ASC</filename> file. You'll need to unpack
+      the distribution tar file, then unpack the compressed tar file before
+      starting the build.
 @y
-    <para><application>MIT Kerberos V5</application> is distributed in a
-    TAR file containing a compressed TAR package and a detached PGP
-    <filename class="extension">ASC</filename> file. You'll need to unpack
-    the distribution tar file, then unpack the compressed tar file before
-    starting the build.</para>
+      <application>MIT Kerberos V5</application> is distributed in a
+      TAR file containing a compressed TAR package and a detached PGP
+      <filename class="extension">ASC</filename> file. You'll need to unpack
+      the distribution tar file, then unpack the compressed tar file before
+      starting the build.
 @z
 
 @x
-    <para>After unpacking the distribution tarball and if you have
-    <xref linkend="gnupg"/> installed, you can
-    authenticate the package with the following command:</para>
+      After unpacking the distribution tarball and if you have
+      <xref linkend="gnupg"/> installed, you can
+      authenticate the package with the following command:
 @y
-    <para>After unpacking the distribution tarball and if you have
-    <xref linkend="gnupg"/> installed, you can
-    authenticate the package with the following command:</para>
+      After unpacking the distribution tarball and if you have
+      <xref linkend="gnupg"/> installed, you can
+      authenticate the package with the following command:
 @z
 
 @x
-    <para>Build <application>MIT Kerberos V5</application> by running the
-    following commands:</para>
+      Build <application>MIT Kerberos V5</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>MIT Kerberos V5</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>MIT Kerberos V5</application> をビルドします。
 @z
 
 @x
-    <para>The regression test suite is designed to be run after the
-    installation has been completed.</para>
+      The regression test suite is designed to be run after the
+      installation has been completed.
 @y
-    <para>
-    縮退テスト (regression test suite) は、インストール後に実行するものとなります。
-    </para>
+      縮退テスト (regression test suite) は、インストール後に実行するものとなります。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>To test the installation, you must have
-    <xref linkend="dejagnu"/> installed and issue: <command>make
-    check</command>. The RPC layer tests will require a portmap daemon
-    (see <xref linkend="portmap"/>) running and configured to listen on the
-    regular network interface (not localhost). See the <quote>Testing the
-    Build</quote> section of the <filename>krb5-install.html</filename> file
-    in the <filename class='directory'>../doc</filename> directory for complete
-    information on running the regression tests.</para>
+      To test the installation, you must have <xref linkend="dejagnu"/>
+      installed and issue: <command>make check</command>.
 @y
-    <para>To test the installation, you must have
-    <xref linkend="dejagnu"/> installed and issue: <command>make
-    check</command>. The RPC layer tests will require a portmap daemon
-    (see <xref linkend="portmap"/>) running and configured to listen on the
-    regular network interface (not localhost). See the <quote>Testing the
-    Build</quote> section of the <filename>krb5-install.html</filename> file
-    in the <filename class='directory'>../doc</filename> directory for complete
-    information on running the regression tests.</para>
+      To test the installation, you must have <xref linkend="dejagnu"/>
+      installed and issue: <command>make check</command>.
 @z
 
 @x
@@ -200,61 +184,73 @@
 @z
 
 @x
-    <para><parameter>--enable-dns-for-realm</parameter>: This parameter allows
-    realms to be resolved using the DNS server.</para>
+      <command>sed ... lib/krb5/krb/deltat.c</command>: This sed
+      fixes a problem when building with GCC 4.7.
 @y
-    <para>
-    <parameter>--enable-dns-for-realm</parameter>:
-    このパラメーターは
-    This parameter allows
-    realms to be resolved using the DNS server.
-    </para>
+      <command>sed ... lib/krb5/krb/deltat.c</command>: This sed
+      fixes a problem when building with GCC 4.7.
 @z
 
 @x
-    <para><parameter>--with-system-et</parameter>: This parameter causes the
-    build to use the system-installed versions of the error-table support
-    software.</para>
+      <option>--enable-dns-for-realm</option>: This parameter allows
+      realms to be resolved using the DNS server.
 @y
-    <para><parameter>--with-system-et</parameter>: This parameter causes the
-    build to use the system-installed versions of the error-table support
-    software.</para>
+      <option>--enable-dns-for-realm</option>: This parameter allows
+      realms to be resolved using the DNS server.
 @z
 
 @x
-    <para><parameter>--with-system-ss</parameter>: This parameter causes the
-    build to use the system-installed versions of the subsystem command-line
-    interface software.</para>
+      <option>--with-system-et</option>: This switch causes the build
+      to use the system-installed versions of the error-table support
+      software.
 @y
-    <para><parameter>--with-system-ss</parameter>: This parameter causes the
-    build to use the system-installed versions of the subsystem command-line
-    interface software.</para>
+      <option>--with-system-et</option>: This switch causes the build
+      to use the system-installed versions of the error-table support
+      software.
 @z
 
 @x
-    <para><parameter>--localstatedir=/var/lib</parameter>: This parameter is
-    used so that the Kerberos variable run-time data is located in
-    <filename class='directory'>/var/lib</filename> instead of
-    <filename class='directory'>/usr/var</filename>.</para>
+      <option>--with-system-ss</option>: This switch causes the build
+      to use the system-installed versions of the subsystem command-line
+      interface software.
 @y
-    <para><parameter>--localstatedir=/var/lib</parameter>: This parameter is
-    used so that the Kerberos variable run-time data is located in
-    <filename class='directory'>/var/lib</filename> instead of
-    <filename class='directory'>/usr/var</filename>.</para>
+      <option>--with-system-ss</option>: This switch causes the build
+      to use the system-installed versions of the subsystem command-line
+      interface software.
 @z
 
 @x
-    <para><command>mv -v /usr/bin/ksu /bin</command>: Moves the
-    <command>ksu</command> program to the
-    <filename class="directory">/bin</filename> directory so that it is
-    available when the <filename class="directory">/usr</filename>
-    filesystem is not mounted.</para>
+      <parameter>--localstatedir=/var/lib</parameter>: This parameter is
+      used so that the Kerberos variable run-time data is located in
+      <filename class="directory">/var/lib</filename> instead of
+      <filename class="directory">/usr/var</filename>.
 @y
-    <para><command>mv -v /usr/bin/ksu /bin</command>: Moves the
-    <command>ksu</command> program to the
-    <filename class="directory">/bin</filename> directory so that it is
-    available when the <filename class="directory">/usr</filename>
-    filesystem is not mounted.</para>
+      <parameter>--localstatedir=/var/lib</parameter>: This parameter is
+      used so that the Kerberos variable run-time data is located in
+      <filename class="directory">/var/lib</filename> instead of
+      <filename class="directory">/usr/var</filename>.
+@z
+
+@x
+      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
+      <command>ksu</command> program to the
+      <filename class="directory">/bin</filename> directory so that it is
+      available when the <filename class="directory">/usr</filename>
+      filesystem is not mounted.
+@y
+      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
+      <command>ksu</command> program to the
+      <filename class="directory">/bin</filename> directory so that it is
+      available when the <filename class="directory">/usr</filename>
+      filesystem is not mounted.
+@z
+
+@x
+      <option>--with-ldap</option>: Use this switch if you want to compile
+      <application>OpenLDAP</application> database backend module.
+@y
+      <option>--with-ldap</option>: Use this switch if you want to compile
+      <application>OpenLDAP</application> database backend module.
 @z
 
 @x
@@ -270,11 +266,11 @@
 @z
 
 @x
-      <para><filename>/etc/krb5.conf</filename> and
-      <filename>/var/lib/krb5kdc/kdc.conf</filename></para>
+        <filename>/etc/krb5.conf</filename> and
+        <filename>/var/lib/krb5kdc/kdc.conf</filename>
 @y
-      <para><filename>/etc/krb5.conf</filename>,
-      <filename>/var/lib/krb5kdc/kdc.conf</filename></para>
+        <filename>/etc/krb5.conf</filename>,
+        <filename>/var/lib/krb5kdc/kdc.conf</filename>
 @z
 
 @x
@@ -290,199 +286,195 @@
 @z
 
 @x
-          <para>You should consider installing some sort of password checking
-          dictionary so that you can configure the installation to only
-          accept strong passwords. A suitable dictionary to use is shown in
-          the <xref linkend="cracklib"/> instructions. Note that only one
-          file can be used, but you can concatenate many files into one. The
-          configuration file shown below assumes you have installed a
-          dictionary to <filename>/usr/share/dict/words</filename>.</para>
+            You should consider installing some sort of password checking
+            dictionary so that you can configure the installation to only
+            accept strong passwords. A suitable dictionary to use is shown in
+            the <xref linkend="cracklib"/> instructions. Note that only one
+            file can be used, but you can concatenate many files into one. The
+            configuration file shown below assumes you have installed a
+            dictionary to <filename>/usr/share/dict/words</filename>.
 @y
-          <para>You should consider installing some sort of password checking
-          dictionary so that you can configure the installation to only
-          accept strong passwords. A suitable dictionary to use is shown in
-          the <xref linkend="cracklib"/> instructions. Note that only one
-          file can be used, but you can concatenate many files into one. The
-          configuration file shown below assumes you have installed a
-          dictionary to <filename>/usr/share/dict/words</filename>.</para>
+            You should consider installing some sort of password checking
+            dictionary so that you can configure the installation to only
+            accept strong passwords. A suitable dictionary to use is shown in
+            the <xref linkend="cracklib"/> instructions. Note that only one
+            file can be used, but you can concatenate many files into one. The
+            configuration file shown below assumes you have installed a
+            dictionary to <filename>/usr/share/dict/words</filename>.
 @z
 
 @x
-        <para>Create the Kerberos configuration file with the following
-        commands issued by the <systemitem class="username">root</systemitem>
-        user:</para>
+          Create the Kerberos configuration file with the following
+          commands issued by the <systemitem class="username">root</systemitem>
+          user:
 @y
-        <para>Create the Kerberos configuration file with the following
-        commands issued by the <systemitem class="username">root</systemitem>
-        user:</para>
+          Create the Kerberos configuration file with the following
+          commands issued by the <systemitem class="username">root</systemitem>
+          user:
 @z
 
 @x
-        <para>You will need to substitute your domain and proper hostname
-        for the occurrences of the <replaceable>&lt;belgarath&gt;</replaceable> and
-        <replaceable>&lt;lfs.org&gt;</replaceable> names.</para>
+          You will need to substitute your domain and proper hostname for the
+          occurrences of the <replaceable>&lt;belgarath&gt;</replaceable> and
+          <replaceable>&lt;lfs.org&gt;</replaceable> names.
 @y
-        <para>You will need to substitute your domain and proper hostname
-        for the occurrences of the <replaceable>&lt;belgarath&gt;</replaceable> and
-        <replaceable>&lt;lfs.org&gt;</replaceable> names.</para>
+          You will need to substitute your domain and proper hostname for the
+          occurrences of the <replaceable>&lt;belgarath&gt;</replaceable> and
+          <replaceable>&lt;lfs.org&gt;</replaceable> names.
 @z
 
 @x
-        <para><option>default_realm</option> should be the name of your
-        domain changed to ALL CAPS. This isn't required, but both
-        <application>Heimdal</application> and MIT recommend it.</para>
+          <option>default_realm</option> should be the name of your
+          domain changed to ALL CAPS. This isn't required, but both
+          <application>Heimdal</application> and MIT recommend it.
 @y
-        <para><option>default_realm</option> should be the name of your
-        domain changed to ALL CAPS. This isn't required, but both
-        <application>Heimdal</application> and MIT recommend it.</para>
+          <option>default_realm</option> should be the name of your
+          domain changed to ALL CAPS. This isn't required, but both
+          <application>Heimdal</application> and MIT recommend it.
 @z
 
 @x
-        <para><option>encrypt = true</option> provides encryption of all
-        traffic between kerberized clients and servers. It's not necessary
-        and can be left off. If you leave it off, you can encrypt all traffic
-        from the client to the server using a switch on the client program
-        instead.</para>
+          <option>encrypt = true</option> provides encryption of all traffic
+          between kerberized clients and servers. It's not necessary and can
+          be left off. If you leave it off, you can encrypt all traffic from
+          the client to the server using a switch on the client program
+          instead.
 @y
-        <para><option>encrypt = true</option> provides encryption of all
-        traffic between kerberized clients and servers. It's not necessary
-        and can be left off. If you leave it off, you can encrypt all traffic
-        from the client to the server using a switch on the client program
-        instead.</para>
+          <option>encrypt = true</option> provides encryption of all traffic
+          between kerberized clients and servers. It's not necessary and can
+          be left off. If you leave it off, you can encrypt all traffic from
+          the client to the server using a switch on the client program
+          instead.
 @z
 
 @x
-        <para>The <option>[realms]</option> parameters tell the client
-        programs where to look for the KDC authentication services.</para>
+          The <option>[realms]</option> parameters tell the client programs
+          where to look for the KDC authentication services.
 @y
-        <para>The <option>[realms]</option> parameters tell the client
-        programs where to look for the KDC authentication services.</para>
+          The <option>[realms]</option> parameters tell the client programs
+          where to look for the KDC authentication services.
 @z
 
 @x
-        <para>The <option>[domain_realm]</option> section maps a domain to
-        a realm.</para>
+          The <option>[domain_realm]</option> section maps a domain to a realm.
 @y
-        <para>The <option>[domain_realm]</option> section maps a domain to
-        a realm.</para>
+          The <option>[domain_realm]</option> section maps a domain to a realm.
 @z
 
 @x
-        <para>Create the KDC database:</para>
+          Create the KDC database:
 @y
-        <para>Create the KDC database:</para>
+          Create the KDC database:
 @z
 
 @x
-        <para>Now you should populate the database with principles
-        (users). For now, just use your regular login name or
-        <systemitem class="username">root</systemitem>.</para>
+          Now you should populate the database with principles
+          (users). For now, just use your regular login name or
+          <systemitem class="username">root</systemitem>.
 @y
-        <para>Now you should populate the database with principles
-        (users). For now, just use your regular login name or
-        <systemitem class="username">root</systemitem>.</para>
+          Now you should populate the database with principles
+          (users). For now, just use your regular login name or
+          <systemitem class="username">root</systemitem>.
 @z
 
 @x
-        <para>The KDC server and any machine running kerberized
-        server daemons must have a host key installed:</para>
+          The KDC server and any machine running kerberized
+          server daemons must have a host key installed:
 @y
-        <para>The KDC server and any machine running kerberized
-        server daemons must have a host key installed:</para>
+          The KDC server and any machine running kerberized
+          server daemons must have a host key installed:
 @z
 
 @x
-        <para>After choosing the defaults when prompted, you will have to
-        export the data to a keytab file:</para>
+          After choosing the defaults when prompted, you will have to
+          export the data to a keytab file:
 @y
-        <para>After choosing the defaults when prompted, you will have to
-        export the data to a keytab file:</para>
+          After choosing the defaults when prompted, you will have to
+          export the data to a keytab file:
 @z
 
 @x
-        <para>This should have created a file in
-        <filename class="directory">/etc</filename> named
-        <filename>krb5.keytab</filename> (Kerberos 5). This file should
-        have 600 (<systemitem class="username">root</systemitem> rw only)
-        permissions. Keeping the keytab files from public access is crucial
-        to the overall security of the Kerberos installation.</para>
+          This should have created a file in
+          <filename class="directory">/etc</filename> named
+          <filename>krb5.keytab</filename> (Kerberos 5). This file should
+          have 600 (<systemitem class="username">root</systemitem> rw only)
+          permissions. Keeping the keytab files from public access is crucial
+          to the overall security of the Kerberos installation.
 @y
-        <para>This should have created a file in
-        <filename class="directory">/etc</filename> named
-        <filename>krb5.keytab</filename> (Kerberos 5). This file should
-        have 600 (<systemitem class="username">root</systemitem> rw only)
-        permissions. Keeping the keytab files from public access is crucial
-        to the overall security of the Kerberos installation.</para>
+          This should have created a file in
+          <filename class="directory">/etc</filename> named
+          <filename>krb5.keytab</filename> (Kerberos 5). This file should
+          have 600 (<systemitem class="username">root</systemitem> rw only)
+          permissions. Keeping the keytab files from public access is crucial
+          to the overall security of the Kerberos installation.
 @z
 
 @x
-        <para>Exit the <command>kadmin</command> program (use
-        <command>quit</command> or <command>exit</command>) and return
-        back to the shell prompt. Start the KDC daemon manually, just to
-        test out the installation:</para>
+          Exit the <command>kadmin</command> program (use
+          <command>quit</command> or <command>exit</command>) and return
+          back to the shell prompt. Start the KDC daemon manually, just to
+          test out the installation:
 @y
-        <para>Exit the <command>kadmin</command> program (use
-        <command>quit</command> or <command>exit</command>) and return
-        back to the shell prompt. Start the KDC daemon manually, just to
-        test out the installation:</para>
+          Exit the <command>kadmin</command> program (use
+          <command>quit</command> or <command>exit</command>) and return
+          back to the shell prompt. Start the KDC daemon manually, just to
+          test out the installation:
 @z
 
 @x
-        <para>Attempt to get a ticket with the following command:</para>
+          Attempt to get a ticket with the following command:
 @y
-        <para>Attempt to get a ticket with the following command:</para>
+          Attempt to get a ticket with the following command:
 @z
 
 @x
-        <para>You will be prompted for the password you created. After you
-        get your ticket, you can list it with the following command:</para>
+          You will be prompted for the password you created. After you
+          get your ticket, you can list it with the following command:
 @y
-        <para>You will be prompted for the password you created. After you
-        get your ticket, you can list it with the following command:</para>
+          You will be prompted for the password you created. After you
+          get your ticket, you can list it with the following command:
 @z
 
 @x
-        <para>Information about the ticket should be displayed on the
-        screen.</para>
+          Information about the ticket should be displayed on the
+          screen.
 @y
-        <para>Information about the ticket should be displayed on the
-        screen.</para>
+          Information about the ticket should be displayed on the
+          screen.
 @z
 
 @x
-        <para>To test the functionality of the keytab file, issue the
-        following command:</para>
+          To test the functionality of the keytab file, issue the
+          following command:
 @y
-        <para>To test the functionality of the keytab file, issue the
-        following command:</para>
+          To test the functionality of the keytab file, issue the
+          following command:
 @z
 
 @x
-        <para>This should dump a list of the host principal, along with
-        the encryption methods used to access the principal.</para>
+          This should dump a list of the host principal, along with
+          the encryption methods used to access the principal.
 @y
-        <para>This should dump a list of the host principal, along with
-        the encryption methods used to access the principal.</para>
+          This should dump a list of the host principal, along with
+          the encryption methods used to access the principal.
 @z
 
 @x
-        <para>At this point, if everything has been successful so far, you
-        can feel fairly confident in the installation and configuration of
-        the package.</para>
+          At this point, if everything has been successful so far, you
+          can feel fairly confident in the installation and configuration of
+          the package.
 @y
-        <para>At this point, if everything has been successful so far, you
-        can feel fairly confident in the installation and configuration of
-        the package.</para>
+          At this point, if everything has been successful so far, you
+          can feel fairly confident in the installation and configuration of
+          the package.
 @z
 
 @x
-        <para>Install the <filename>/etc/rc.d/init.d/kerberos</filename> init
-        script included in the <xref linkend="bootscripts"/>
-        package.</para>
+          Install the <filename>/etc/rc.d/init.d/kerberos</filename> init
+          script included in the <xref linkend="bootscripts"/> package.
 @y
-        <para>Install the <filename>/etc/rc.d/init.d/kerberos</filename> init
-        script included in the <xref linkend="bootscripts"/>
-        package.</para>
+          Install the <filename>/etc/rc.d/init.d/kerberos</filename> init
+          script included in the <xref linkend="bootscripts"/> package.
 @z
 
 @x
@@ -492,21 +484,21 @@
 @z
 
 @x
-        <para>For additional information consult <ulink
-        url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
-        Documentation for krb-&mitkrb-version;</ulink> on which the above
-        instructions are based.</para>
+          For additional information consult <ulink
+          url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
+          Documentation for krb-&mitkrb-version;</ulink> on which the above
+          instructions are based.
 @y
-        <para>For additional information consult <ulink
-        url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
-        Documentation for krb-&mitkrb-version;</ulink> on which the above
-        instructions are based.</para>
+          For additional information consult <ulink
+          url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
+          Documentation for krb-&mitkrb-version;</ulink> on which the above
+          instructions are based.
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -520,31 +512,47 @@
 @z
 
 @x
-        <seg>gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
-        kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
-        kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
-        ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
-        sserver, uuclient, and uuserver</seg>
-        <seg>libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
-        libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
-        libkrb5.so, libkrb5support.so, libverto-k5ev.so and 
-        libverto.so</seg>
-        <seg>/usr/include/{gssapi,gssrpc,kadm5,krb5}, /usr/lib/krb5, 
-        /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5,gnats}
-        and /var/lib/krb5kdc</seg>
+        <seg>
+          gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
+          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
+          kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
+          ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
+          sserver, uuclient and uuserver
+        </seg>
+        <seg>
+          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
+          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
+          libkrb5.so, libkrb5support.so, libverto-k5ev.so and 
+          libverto.so
+        </seg>
+        <seg>
+          /usr/include/{gssapi,gssrpc,kadm5,krb5},
+          /usr/lib/krb5, 
+          /usr/share/doc/krb5-&mitkrb-version;,
+          /usr/share/examples/krb5 and
+          /var/lib/krb5kdc
+        </seg>
 @y
-        <seg>gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
-        kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
-        kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
-        ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
-        sserver, uuclient, and uuserver</seg>
-        <seg>libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
-        libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
-        libkrb5.so, libkrb5support.so, libverto-k5ev.so and 
-        libverto.so</seg>
-        <seg>/usr/include/{gssapi,gssrpc,kadm5,krb5}, /usr/lib/krb5, 
-        /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5,gnats}
-        and /var/lib/krb5kdc</seg>
+        <seg>
+          gss-client, gss-server, k5srvutil, kadmin, kadmin.local, 
+          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist, 
+          kpasswd, kprop, kpropd, krb5-config, krb5kdc, krb5-send-pr, 
+          ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server, 
+          sserver, uuclient, uuserver
+        </seg>
+        <seg>
+          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
+          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
+          libkrb5.so, libkrb5support.so, libverto-k5ev.so,
+          libverto.so
+        </seg>
+        <seg>
+          /usr/include/{gssapi,gssrpc,kadm5,krb5},
+          /usr/lib/krb5, 
+          /usr/share/doc/krb5-&mitkrb-version;,
+          /usr/share/examples/krb5,
+          /var/lib/krb5kdc
+        </seg>
 @z
 
 @x
@@ -554,83 +562,113 @@
 @z
 
 @x k5srvutil
-          <para>is a host keytable manipulation utility.</para>
+            is a host keytable manipulation utility.
 @y
-          <para>is a host keytable manipulation utility.</para>
+            is a host keytable manipulation utility.
 @z
 
 @x kadmin
-          <para>is an utility used to make modifications
-          to the Kerberos database.</para>
+            is an utility used to make modifications
+            to the Kerberos database.
 @y
-          <para>is an utility used to make modifications
-          to the Kerberos database.</para>
+            is an utility used to make modifications
+            to the Kerberos database.
 @z
 
 @x kadmind
-          <para>is a server for administrative access
-          to a Kerberos database.</para>
+            is a server for administrative access
+            to a Kerberos database.
 @y
-          <para>is a server for administrative access
-          to a Kerberos database.</para>
+            is a server for administrative access
+            to a Kerberos database.
 @z
 
 @x kdb5_util
-          <para>is the KDC database utility.</para>
+            is the KDC database utility.
 @y
-          <para>is the KDC database utility.</para>
+            is the KDC database utility.
 @z
 
 @x kdestroy
-          <para>removes the current set of tickets.</para>
+            removes the current set of tickets.
 @y
-          <para>removes the current set of tickets.</para>
+            removes the current set of tickets.
 @z
 
 @x kinit
-          <para>is used to authenticate to the Kerberos server as a
-          principal and acquire a ticket granting ticket that can
-          later be used to obtain tickets for other services.</para>
+            is used to authenticate to the Kerberos server as a
+            principal and acquire a ticket granting ticket that can
+            later be used to obtain tickets for other services.
 @y
-          <para>is used to authenticate to the Kerberos server as a
-          principal and acquire a ticket granting ticket that can
-          later be used to obtain tickets for other services.</para>
+            is used to authenticate to the Kerberos server as a
+            principal and acquire a ticket granting ticket that can
+            later be used to obtain tickets for other services.
 @z
 
 @x klist
-          <para>reads and displays the current tickets in
-          the credential cache.</para>
+            reads and displays the current tickets in
+            the credential cache.
 @y
-          <para>reads and displays the current tickets in
-          the credential cache.</para>
+            reads and displays the current tickets in
+            the credential cache.
 @z
 
 @x kpasswd
-          <para>is a program for changing Kerberos 5 passwords.</para>
+            is a program for changing Kerberos 5 passwords.
 @y
-          <para>is a program for changing Kerberos 5 passwords.</para>
+            is a program for changing Kerberos 5 passwords.
 @z
 
 @x kprop
-          <para>takes a principal database in a specified format and
-          converts it into a stream of database records.</para>
+            takes a principal database in a specified format and
+            converts it into a stream of database records.
 @y
-          <para>takes a principal database in a specified format and
-          converts it into a stream of database records.</para>
+            takes a principal database in a specified format and
+            converts it into a stream of database records.
 @z
 
 @x kpropd
-          <para>receives a database sent by <command>kprop</command>
-          and writes it as a local database.</para>
+            receives a database sent by <command>kprop</command>
+            and writes it as a local database.
 @y
-          <para>receives a database sent by <command>kprop</command>
-          and writes it as a local database.</para>
+            receives a database sent by <command>kprop</command>
+            and writes it as a local database.
 @z
 
 @x krb5-config
-          <para>gives information on how to link programs against
-          libraries.</para>
+            gives information on how to link programs against
+            libraries.
 @y
-          <para>gives information on how to link programs against
-          libraries.</para>
+            gives information on how to link programs against
+            libraries.
+@z
+
+@x krb5kdc
+            is the <application>Kerberos 5</application> server.
+@y
+            is the <application>Kerberos 5</application> server.
+@z
+
+@x ksu
+            is the super user program using Kerberos protocol.
+            Requires a properly configured
+            <filename>/etc/shells</filename> and
+            <filename>~/.k5login</filename> containing principals
+            authorized to become super users.
+@y
+            is the super user program using Kerberos protocol.
+            Requires a properly configured
+            <filename>/etc/shells</filename> and
+            <filename>~/.k5login</filename> containing principals
+            authorized to become super users.
+@z
+
+@x kswitch
+            makes the specified credential cache the 
+            primary cache for the collection, if a cache 
+            collection is available.
+@y
+            makes the specified credential cache the 
+            primary cache for the collection, if a cache 
+            collection is available.
 @z

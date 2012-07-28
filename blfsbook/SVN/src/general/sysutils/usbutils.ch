@@ -14,20 +14,17 @@
 @z
 
 @x
-    <title>Introduction to usbutils</title>
+    <title>Introduction to USB Utils</title>
 @y
-    <title>&IntroductionTo1;usbutils&IntroductionTo2;</title>
+    <title>&IntroductionTo1;USB Utils&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>usbutils</application> package contains a utility
-    used to display information about USB buses in the system and the devices
-    connected to them.</para>
+      The <application>USB Utils</application> package contains an utility
+      used to display information about USB buses in the system and the
+      devices connected to them.
 @y
-    <para>
-    <application>usbutils</application>
-    パッケージは USB バスやそこに接続されるデバイスの情報を参照する機能を提供します。
-    </para>
+      <application>USB Utils</application> パッケージは USB バスやそこに接続されるデバイスの情報を参照する機能を提供します。
 @z
 
 @x
@@ -37,45 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&usbutils-download-http;"/></para>
+          Download (HTTP): <ulink url="&usbutils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&usbutils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&usbutils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&usbutils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&usbutils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&usbutils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&usbutils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &usbutils-md5sum;</para>
+          Download MD5 sum: &usbutils-md5sum;
 @y
-        <para>&Download; MD5 sum: &usbutils-md5sum;</para>
+          &Download; MD5 sum: &usbutils-md5sum;
 @z
 
 @x
-        <para>Download size: &usbutils-size;</para>
+          Download size: &usbutils-size;
 @y
-        <para>&DownloadSize;: &usbutils-size;</para>
+          &DownloadSize;: &usbutils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &usbutils-buildsize;</para>
+          Estimated disk space required: &usbutils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &usbutils-buildsize;</para>
+          &Estimateddiskspacerequired;: &usbutils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &usbutils-time;</para>
+          Estimated build time: &usbutils-time;
 @y
-        <para>&Estimatedbuildtime;: &usbutils-time;</para>
+          &Estimatedbuildtime;: &usbutils-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">usbutils Dependencies</bridgehead>
+    <bridgehead renderas="sect3">USB Utils Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;usbutils&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;USB Utils&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -94,39 +91,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/usbutils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/usbutils"/></para>
 @z
 
 @x
-    <title>Installation of usbutils</title>
+    <title>Installation of USB Utils</title>
 @y
-    <title>&InstallationOf1;usbutils&InstallationOf2;</title>
+    <title>&InstallationOf1;USB Utils&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>usbutils</application> by
-    running the following commands:</para>
+      Install <application>USB Utils</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>usbutils</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>USB Utils</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -136,58 +127,52 @@
 @z
 
 @x
-    <para><parameter>--disable-zlib</parameter>: This stops 
-    <application>usbutils</application> from installing a compressed usb.ids 
-    alongside the uncompressed one.</para>
+      <option>--disable-zlib</option>: This stops
+      <application>USB Utils</application> from installing a 
+      compressed <filename>usb.ids</filename>  alongside the
+      uncompressed one.
 @y
-    <para>
-    <parameter>--disable-zlib</parameter>:
-    
-    This stops 
-    <application>usbutils</application> from installing a compressed usb.ids 
-    alongside the uncompressed one.
-    </para>
+      <option>--disable-zlib</option>: This stops
+      <application>USB Utils</application> from installing a 
+      compressed <filename>usb.ids</filename>  alongside the
+      uncompressed one.
 @z
 
 @x
-    <title>Configuring usbutils</title>
+    <title>Configuring USB Utils</title>
 @y
-    <title>&Configuring1;usbutils&Configuring2;</title>
+    <title>&Configuring1;USB Utils&Configuring2;</title>
 @z
 
 @x
-    <para>The <filename>usb.ids</filename> data file is constantly being
-    updated. To get a current version of this file, run
-    <command>update-usbids</command> as the <systemitem
-    class="username">root</systemitem> user. This program requires the
-    <xref linkend="which"/> script or program to find <xref linkend="wget"/>
-    or <xref linkend="lynx"/> which are used to download the most current file,
-    and replace the existing file in
-    <filename class='directory'>/usr/share</filename>.</para>
+      The <filename>usb.ids</filename> data file is constantly being
+      updated. To get a current version of this file, run
+      <command>update-usbids</command> as the <systemitem
+      class="username">root</systemitem> user. This program requires the
+      <xref linkend="which"/> script or program to find <xref linkend="lynx"/>
+      or <xref linkend="wget"/> which are used to download the most current file,
+      and replace the existing file in
+      <filename class="directory">/usr/share/misc</filename>.
 @y
-    <para>
-    <filename>usb.ids</filename> というデータファイルは常に更新されています。
-    最新版を入手するには <systemitem
-    class="username">root</systemitem> ユーザーになって <command>update-usbids</command> コマンドを実行します。
-    このプログラムは <xref linkend="which"/> に示すスクリプトまたはプログラムが必要であり、
-    <xref linkend="wget"/> あるいは <xref linkend="lynx"/> を見つけ出すために利用されます。
-    <xref linkend="wget"/> や <xref linkend="lynx"/> はデータファイル最新版をダウンロードするために必要となります。
-    ファイルをダウンロードすると <filename class='directory'>/usr/share</filename> ディレクトリ内の既存のファイルを上書き更新します。
-    </para>
+      <filename>usb.ids</filename> というデータファイルは常に更新されています。
+      最新版を入手するには <systemitem
+      class="username">root</systemitem> ユーザーになって <command>update-usbids</command> コマンドを実行します。
+      このプログラムは <xref linkend="which"/> に示すスクリプトまたはプログラムが必要であり、<xref 
+      linkend="wget"/> あるいは <xref linkend="lynx"/> を見つけ出すために利用されます。
+      <xref linkend="wget"/> や <xref linkend="lynx"/> はデータファイル最新版をダウンロードするために必要となります。
+      ファイルをダウンロードすると <filename class='directory'>/usr/share/misc</filename> ディレクトリ内の既存のファイルを上書き更新します。
 @z
 
 @x
-    <para>You may wish to add an entry to
-    <systemitem class="username">root</systemitem>'s (or any other user who
-    has write privilege to <filename class='directory'>/usr/share</filename>)
-    crontab to automatically update the <filename>usb.ids</filename> file
-    periodically.</para>
+      You may wish to add an entry to
+      <systemitem class="username">root</systemitem>'s (or any other user who has
+      write privilege to <filename class="directory">/usr/share/misc</filename>)
+      crontab to automatically update the <filename>usb.ids</filename> file
+      periodically.
 @y
-    <para>
-    crontab において <systemitem
-    class="username">root</systemitem> ユーザー (あるいは <filename
-    class='directory'>/usr/share</filename> ディレクトリに対する書き込み権限を有するユーザー) に対する項目を追加して、<filename>usb.ids</filename> ファイルを定期的に自動更新することもできます。
-    </para>
+      crontab において <systemitem
+      class="username">root</systemitem> ユーザー (あるいは <filename
+      class='directory'>/usr/share</filename> ディレクトリに対する書き込み権限を有するユーザー) に対する項目を追加して、<filename>usb.ids</filename> ファイルを定期的に自動更新することもできます。
 @z
 
 @x
@@ -198,22 +183,18 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>lsusb, update-usbids, and usb-devices</seg>
-        <seg>None</seg>
-        <seg>None</seg>
+        <seg>
+          lsusb, update-usbids, usb-devices and usbhid-dump
+        </seg>
 @y
-        <seg>lsusb, update-usbids, usb-devices</seg>
-        <seg>&None;</seg>
-        <seg>&None;</seg>
+        <seg>
+          lsusb, update-usbids, usb-devices, usbhid-dump
+        </seg>
 @z
 
 @x
@@ -223,36 +204,35 @@
 @z
 
 @x lsusb
-          <para>is a utility for displaying information about all USB buses in the
-          system and all devices connected to them.</para>
+            is an utility for displaying information about all USB buses
+            in the system and all devices connected to them.
 @y
-          <para>
-          
-          is a utility for displaying information about all USB buses in the
-          system and all devices connected to them.
-          </para>
+            is an utility for displaying information about all USB buses
+            in the system and all devices connected to them.
 @z
 
 @x update-usbids
-          <para>downloads the current version of the USB ID list. Requires
-          <xref linkend="wget"/> or <xref linkend="lynx"/>.</para>
+            downloads the current version of the USB ID list. Requires
+            <xref linkend="lynx"/> or <xref linkend="wget"/>.
 @y
-          <para>
-          
-          downloads the current version of the USB ID list. Requires
-          <xref linkend="wget"/> or <xref linkend="lynx"/>.
-          </para>
+            downloads the current version of the USB ID list. Requires
+            <xref linkend="lynx"/> or <xref linkend="wget"/>.
 @z
 
 @x usb-devices
-          <para>is a shell script that displays details of USB buses and devices
-          connected to them. It is designed to be used if /proc/bus/usb/devices
-          is not available on your system.</para>
+            is a shell script that displays details of USB buses and devices
+            connected to them. It is designed to be used if /proc/bus/usb/devices
+            is not available on your system.
 @y
-          <para>
-          
-          is a shell script that displays details of USB buses and devices
-          connected to them. It is designed to be used if /proc/bus/usb/devices
-          is not available on your system.
-          </para>
+            is a shell script that displays details of USB buses and devices
+            connected to them. It is designed to be used if /proc/bus/usb/devices
+            is not available on your system.
+@z
+
+@x usbhid-dump
+            is used to dump report descriptors and streams from HID
+            (human interface device) interfaces of USB devices.
+@y
+            is used to dump report descriptors and streams from HID
+            (human interface device) interfaces of USB devices.
 @z
