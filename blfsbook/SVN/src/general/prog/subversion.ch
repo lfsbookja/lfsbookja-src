@@ -289,32 +289,32 @@
         </seg>
         <seg>
           /usr/include/subversion-1,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/SVN (optional),
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/SVN (optional),
-          /usr/lib/ruby/site_ruby/x.x/i686-linux/svn (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
+          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (al),
           /usr/lib/svn-javahl (optional),
           /usr/lib/svn-python (optional) and
           /usr/share/doc/subversion-&subversion-version;
         </seg>
 @y
         <seg>
-          svn, svnadmin, svndumpfilter, svnlook, svnserve, svnsync and
+          svn, svnadmin, svndumpfilter, svnlook, svnserve, svnsync,
           svnversion
         </seg>
         <seg>
           libsvn*.so and optionally, a Java library, the mod_dav_svn.so, and
           and mod_authz_svn.so <application>Apache HTTP</application> DSO
-          modules and various <application>Perl</application> and
+          modules and various <application>Perl</application>,
           <application>Python</application>
           <!-- <application>Ruby</application> --> modules.
         </seg>
         <seg>
           /usr/include/subversion-1,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/auto/SVN (optional),
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/i686-linux/SVN (optional),
-          /usr/lib/ruby/site_ruby/x.x/i686-linux/svn (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
+          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (al),
           /usr/lib/svn-javahl (optional),
-          /usr/lib/svn-python (optional) and
+          /usr/lib/svn-python (optional),
           /usr/share/doc/subversion-&subversion-version;
         </seg>
 @z

@@ -54,6 +54,85 @@
 @z
 
 @x ----------------------------------------
+      <para>July 27th, 2012</para>
+@y
+      <para>2012/07/27</para>
+@z ----------------------------------------
+@x
+          <para>[bdubbs] - Update to git-1.7.11.3.  Fixes
+          <ulink url="&blfs-ticket-root;3420">#3420</ulink>.</para>
+@y
+          <para>[bdubbs] - git-1.7.11.3 へのアップデート。
+          <ulink url="&blfs-ticket-root;3420">#3420</ulink> を Fix に。</para>
+@z
+@x
+          <para>[ken] - Update to firefox- and xulrunner- 14.0.1.</para>
+@y
+          <para>[ken] - firefox- および xulrunner- 14.0.1 へのアップデート。</para>
+@z
+
+@x ----------------------------------------
+      <para>July 24th, 2012</para>
+@y
+      <para>2012/07/24</para>
+@z ----------------------------------------
+
+@x ----------------------------------------
+      <para>July 23rd, 2012</para>
+@y
+      <para>2012/07/23</para>
+@z ----------------------------------------
+@x
+          <para>[bdubbs] - Update to Doxygen 1.8.1.2.  Fixes
+          <ulink url="&blfs-ticket-root;3417">#3417</ulink>.</para>
+@y
+          <para>[bdubbs] - Doxygen 1.8.1.2 へのアップデート。
+          <ulink url="&blfs-ticket-root;3417">#3417</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to GC 7.2c.  Fixes
+          <ulink url="&blfs-ticket-root;3452">#3452</ulink>.</para>
+@y
+          <para>[bdubbs] - GC 7.2c へのアップデート。
+          <ulink url="&blfs-ticket-root;3452">#3452</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to MySQL 5.5.25a.  Fixes
+          <ulink url="&blfs-ticket-root;3424">#3424</ulink>.</para>
+@y
+          <para>[bdubbs] - MySQL 5.5.25a へのアップデート。
+          <ulink url="&blfs-ticket-root;3424">#3424</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to PHP 5.4.5.  Fixes
+          <ulink url="&blfs-ticket-root;3426">#3426</ulink>.</para>
+@y
+          <para>[bdubbs] - PHP 5.4.5 へのアップデート。
+          <ulink url="&blfs-ticket-root;3426">#3426</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to Subversion 1.7.5.  Fixes
+          <ulink url="&blfs-ticket-root;3428">#3428</ulink>.</para>
+@y
+          <para>[bdubbs] - Subversion 1.7.5 へのアップデート。
+          <ulink url="&blfs-ticket-root;3428">#3428</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to Whois 5.0.18.  Fixes
+          <ulink url="&blfs-ticket-root;3471">#3471</ulink>.</para>
+@y
+          <para>[bdubbs] - Whois 5.0.18 へのアップデート。
+          <ulink url="&blfs-ticket-root;3471">#3471</ulink> を Fix に。</para>
+@z
+@x
+          <para>[krejzi] - Added fix for Gnash security issue addressed
+           upstream.</para>
+@y
+          <para>[krejzi] - Added fix for Gnash security issue addressed
+           upstream.</para>
+@z
+
+@x ----------------------------------------
       <para>July 14th, 2012</para>
 @y
       <para>2012/07/14</para>

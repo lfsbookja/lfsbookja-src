@@ -419,9 +419,8 @@
         numerous plugin modules</seg>
         <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
         /usr/lib/ImageMagick-&imagemagick-version;,
-        /usr/lib/perl5/site_perl/5.x.y/MYARCH-linux/auto/Image/Magick
-        (where 5.x.y is your version of <application>perl</application> and MYARCH
-        is i686 or x86_64),
+        /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
+        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
         /usr/share/ImageMagick-&imagemagick-version; and
         /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
 @y
@@ -433,10 +432,9 @@
         numerous plugin modules</seg>
         <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
         /usr/lib/ImageMagick-&imagemagick-version;,
-        /usr/lib/perl5/site_perl/5.x.y/MYARCH-linux/auto/Image/Magick
-        (where 5.x.y is your version of <application>perl</application> and MYARCH
-        is i686 or x86_64),
-        /usr/share/ImageMagick-&imagemagick-version; and
+        /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
+        /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
+        /usr/share/ImageMagick-&imagemagick-version;,
         /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
 @z
 
