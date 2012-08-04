@@ -93,6 +93,7 @@
       <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
       <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
       <xref linkend="libidn"/>,
+      <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/> and
@@ -105,9 +106,10 @@
       <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
       <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
       <xref linkend="libidn"/>,
+      <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="openldap"/>,
+      <xref linkend="openldap"/> and
       <ulink url="http://www.vintela.com/resources/topics/spnego/">
       SPNEGO</ulink>
     </para>
@@ -145,14 +147,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Note that
-      if you have <application>Stunnel</application> and
-      <application>TCP Wrapper</application> installed and you wish to perform
-      the HTTPS tests, you'll need to have an unrestrictive
-      <filename>/etc/hosts.deny</filename> file.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <application>Stunnel</application> と <application>TCP Wrapper</application> をインストールしていて、HTTPS テストを実行しようとする場合は <filename>/etc/hosts.deny</filename> ファイルにて、制限を解除しておく必要があります。
 @z
 
 @x
@@ -175,15 +172,6 @@
 @y
       <option>--with-gssapi</option>:
       このパラメーターは <filename class="libraryfile">libcurl</filename> に対して <application>Kerberos 5</application> サポートを追加します。
-@z
-
-@x
-      <option>--with-libssh2</option>: This parameter adds
-      SSH2 protocol support to
-      <filename class="libraryfile">libcurl</filename>.
-@y
-      <option>--with-libssh2</option>:
-      このパラメーターは <filename class="libraryfile">libcurl</filename> に対して SSH2 プロトコルサポートを追加します。
 @z
 
 @x

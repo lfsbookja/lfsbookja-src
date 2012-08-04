@@ -96,8 +96,7 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-      <xref linkend="tcpwrappers"/>,
+    <para role="optional">
       <xref linkend="dbus"/>,
       <xref linkend="libusb"/>,
       <xref linkend="acl"/>,
@@ -108,19 +107,18 @@
       <xref linkend="php"/>,
       <xref linkend="gs"/>,
       <xref linkend="python2"/>,
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
+      <xref linkend="openjdk"/>,
       <ulink url="http://portland.freedesktop.org/wiki/">Xdg-utils</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
       <ulink
-      url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
+      url="http://packages.debian.org/source/sid/libpaper">libpaper</ulink>,
       <ulink url="http://www.easysw.com/htmldoc/">HTMLDOC</ulink>, and
       <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally used if
       running the test suites)
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><!-- <xref linkend="pkgconfig"/>, -->
-      <xref linkend="tcpwrappers"/>,
+    <para role="optional">
       <xref linkend="dbus"/>,
       <xref linkend="libusb"/>,
       <xref linkend="acl"/>,
@@ -131,11 +129,11 @@
       <xref linkend="php"/>,
       <xref linkend="gs"/>,
       <xref linkend="python2"/>,
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
+      <xref linkend="openjdk"/>,
       <ulink url="http://portland.freedesktop.org/wiki/">Xdg-utils</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
       <ulink
-      url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
+      url="http://packages.debian.org/source/sid/libpaper">libpaper</ulink>,
       <ulink url="http://www.easysw.com/htmldoc/">HTMLDOC</ulink>, and
       <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally used if
       running the test suites)

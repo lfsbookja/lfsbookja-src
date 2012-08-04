@@ -180,12 +180,12 @@
 @z
 
 @x
-        <seg>b2m, ctags, ebrowse, emacs, emacsclient, etags, grep-changelog,
+        <seg>ctags, ebrowse, emacs, emacsclient, etags, grep-changelog,
         and rcs-checkin</seg>
         <seg>None</seg>
         <seg>/usr/lib/emacs, /usr/share/emacs and /var/games/emacs</seg>
 @y
-        <seg>b2m, ctags, ebrowse, emacs, emacsclient, etags, grep-changelog,
+        <seg>ctags, ebrowse, emacs, emacsclient, etags, grep-changelog,
         rcs-checkin</seg>
         <seg>&None;</seg>
         <seg>/usr/lib/emacs, /usr/share/emacs, /var/games/emacs</seg>
@@ -195,15 +195,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x b2m
-          <para>is a program to convert mail files from RMAIL
-          format to Unix <quote>mbox</quote> format.</para>
-@y
-          <para>
-          メールファイルを RMAIL フォーマットから Unix の <quote>mbox</quote> フォーマットに変換します。
-          </para>
 @z
 
 @x ctags

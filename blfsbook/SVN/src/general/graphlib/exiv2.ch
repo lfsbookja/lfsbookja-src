@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>Exiv2</application> is a C++ library and a command 
-    line utility to manage image metadata.</para>
+      <application>Exiv2</application> is a C++ library and a command 
+      line utility for managing image metadata.
 @y
-    <para>
-    <application>Exiv2</application> は、イメージメタデータ (image metadata) を管理する C++ library およびコマンドラインユーティリティです。
-    </para>
+      <application>Exiv2</application> は、イメージメタデータ (image metadata) を管理する C++ library およびコマンドラインユーティリティです。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&exiv2-download-http;"/></para>
+          Download (HTTP): <ulink url="&exiv2-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&exiv2-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&exiv2-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&exiv2-download-ftp;"/></para>
+          Download (FTP): <ulink url="&exiv2-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&exiv2-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&exiv2-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &exiv2-md5sum;</para>
+          Download MD5 sum: &exiv2-md5sum;
 @y
-        <para>&Download; MD5 sum: &exiv2-md5sum;</para>
+          &Download; MD5 sum: &exiv2-md5sum;
 @z
 
 @x
-        <para>Download size: &exiv2-size;</para>
+          Download size: &exiv2-size;
 @y
-        <para>&DownloadSize;: &exiv2-size;</para>
+          &DownloadSize;: &exiv2-size;
 @z
 
 @x
-        <para>Estimated disk space required: &exiv2-buildsize;</para>
+          Estimated disk space required: &exiv2-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &exiv2-buildsize;</para>
+          &Estimateddiskspacerequired;: &exiv2-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &exiv2-time;</para>
+          Estimated build time: &exiv2-time;
 @y
-        <para>&Estimatedbuildtime;: &exiv2-time;</para>
+          &Estimatedbuildtime;: &exiv2-time;
 @z
 
 @x
@@ -79,21 +77,19 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="expat"/>
+      <xref linkend="expat"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="expat"/>
+      <xref linkend="expat"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/exiv2"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/exiv2"/></para>
 @z
 
 @x
@@ -103,28 +99,22 @@
 @z
 
 @x
-    <para>Install <application>exiv2</application> by running the following
-    commands:</para>
+      Install <application>Exiv2</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>exiv2</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Exiv2</application> をビルドします。
 @z
 
 @x
-    <para><application>Exiv2</application> does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    <application>Exiv2</application> にはテストスイートはありません。
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -135,22 +125,26 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Library</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>exiv2</seg>
-        <seg>libexiv2.{so,a}</seg>
-        <seg></seg>
+        <seg>
+          exiv2
+        </seg>
+        <seg>
+          libexiv2.so
+        </seg>
 @y
-        <seg>exiv2</seg>
-        <seg>libexiv2.{so,a}</seg>
-        <seg></seg>
+        <seg>
+          exiv2
+        </seg>
+        <seg>
+          libexiv2.so
+        </seg>
 @z
 
 @x
@@ -160,7 +154,7 @@
 @z
 
 @x exiv2
-          <para>is an utility to dump Exif data.</para>
+            is an utility used to dump Exif data.
 @y
-          <para>Exif データをダンプするユーティリティです。</para>
+            Exif データをダンプするユーティリティです。
 @z

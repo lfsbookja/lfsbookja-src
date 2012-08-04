@@ -96,7 +96,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/>,
-      <xref linkend="tcpwrappers"/>,
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
@@ -108,7 +107,6 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/>,
-      <xref linkend="tcpwrappers"/>,
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
@@ -121,16 +119,16 @@
 @x
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
     <para role="optional">
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
+      <xref linkend="openjdk"/>,
       <xref linkend="net-tools"/> and
       <xref linkend="sysstat"/>.
     </para>
 @y
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
     <para role="optional">
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
+      <xref linkend="openjdk"/>,
       <xref linkend="net-tools"/>,
-      <xref linkend="sysstat"/>.
+      <xref linkend="sysstat"/>
     </para>
 @z
 
@@ -162,19 +160,19 @@
       commands as the <systemitem class="username">root</systemitem> user:
 @z
 
-@x
-      <application>OpenSSH</application> is very sensitive to changes in the
-      linked <application>OpenSSL</application> libraries. If you recompile
-      <application>OpenSSL</application>, <application>OpenSSH</application> may
-      fail to start up. An alternative is to link against the static
-      <application>OpenSSL</application> library. To link against the static
-      library, execute the following command:
-@y
-      <application>OpenSSH</application> は、リンクされる <application>OpenSSL</application> ライブラリの変更に大きく影響を受けます。
-      <application>OpenSSL</application> を再コンパイルすると、場合によっては <application>OpenSSH</application> が起動しないかもしれません。
-      これを避ける方法として、スタティックな <application>OpenSSL</application> ライブラリをリンクする方法があります。
-      これを行うには、以下のコマンドを実行します。
-@z
+% @x
+%       <application>OpenSSH</application> is very sensitive to changes in the
+%       linked <application>OpenSSL</application> libraries. If you recompile
+%       <application>OpenSSL</application>, <application>OpenSSH</application> may
+%       fail to start up. An alternative is to link against the static
+%       <application>OpenSSL</application> library. To link against the static
+%       library, execute the following command:
+% @y
+%       <application>OpenSSH</application> は、リンクされる <application>OpenSSL</application> ライブラリの変更に大きく影響を受けます。
+%       <application>OpenSSL</application> を再コンパイルすると、場合によっては <application>OpenSSH</application> が起動しないかもしれません。
+%       これを避ける方法として、スタティックな <application>OpenSSL</application> ライブラリをリンクする方法があります。
+%       これを行うには、以下のコマンドを実行します。
+% @z
 
 @x
       Install <application>OpenSSH</application> by running the following
@@ -183,23 +181,23 @@
       以下のコマンドを実行して <application>OpenSSH</application> をビルドします。
 @z
 
-@x
-      If you linked <application>tcp_wrappers</application> into the build using
-      the <option>--with-tcp-wrappers</option> parameter, ensure you add
-      127.0.0.1 to the sshd line in <filename>/etc/hosts.allow</filename> if you
-      have a restrictive <filename>/etc/hosts.deny</filename> file, or the test
-      suite will fail. Additionally, the testsuite requires an installed copy of
-      <command>scp</command> to complete the multiplexing tests. To run the test
-      suite, first copy the scp program to
-      <filename class="directory">/usr/bin</filename>, making sure that you back
-      up any existing copy first.
-@y
-      ビルド時に <option>--with-tcp-wrappers</option> パラメーターを使って <application>tcp_wrappers</application> をリンクした場合、以下に注意してください。
-      <filename>/etc/hosts.deny</filename> ファイルにて、きつい制限を与えているなら <filename>/etc/hosts.allow</filename> ファイル内の sshd の行に 127.0.0.1 を加えておく必要があります。。
-      これを行っておかないとテストに失敗します。
-      またマルチプレックステスト (multiplexing tests) を行うためには <command>scp</command> が既にインストールされている必要があります。
-      テストスイートの実行前には、<filename class="directory">/usr/bin</filename> ディレクトリに scp プログラムがあるなら、そのバックアップを取った上で scp プログラムをそのディレクトリにコピーしておいてください。
-@z
+% @x
+%       If you linked <application>tcp_wrappers</application> into the build using
+%       the <option>--with-tcp-wrappers</option> parameter, ensure you add
+%       127.0.0.1 to the sshd line in <filename>/etc/hosts.allow</filename> if you
+%       have a restrictive <filename>/etc/hosts.deny</filename> file, or the test
+%       suite will fail. Additionally, the testsuite requires an installed copy of
+%       <command>scp</command> to complete the multiplexing tests. To run the test
+%       suite, first copy the scp program to
+%       <filename class="directory">/usr/bin</filename>, making sure that you back
+%       up any existing copy first.
+% @y
+%       ビルド時に <option>--with-tcp-wrappers</option> パラメーターを使って <application>tcp_wrappers</application> をリンクした場合、以下に注意してください。
+%       <filename>/etc/hosts.deny</filename> ファイルにて、きつい制限を与えているなら <filename>/etc/hosts.allow</filename> ファイル内の sshd の行に 127.0.0.1 を加えておく必要があります。。
+%       これを行っておかないとテストに失敗します。
+%       またマルチプレックステスト (multiplexing tests) を行うためには <command>scp</command> が既にインストールされている必要があります。
+%       テストスイートの実行前には、<filename class="directory">/usr/bin</filename> ディレクトリに scp プログラムがあるなら、そのバックアップを取った上で scp プログラムをそのディレクトリにコピーしておいてください。
+% @z
 
 @x
       To run the test suite, issue the following commands:

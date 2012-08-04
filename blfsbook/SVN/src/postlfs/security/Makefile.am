@@ -36,7 +36,6 @@ CHANGE_FILES = \
 	stunnel.ch         \
 	sudo.ch            \
 	syslog.ch          \
-	tcpwrappers.ch     \
 	tripwire.ch        \
 	vulnerabilities.ch
 
@@ -85,6 +84,5 @@ shadow.xml:           $(BOOKdir)/$@ $(srcdir)/shadow.ch
 stunnel.xml:          $(BOOKdir)/$@ $(srcdir)/stunnel.ch
 sudo.xml:             $(BOOKdir)/$@ $(srcdir)/sudo.ch
 syslog.xml:           $(BOOKdir)/$@ $(srcdir)/syslog.ch
-tcpwrappers.xml:      $(BOOKdir)/$@ $(srcdir)/tcpwrappers.ch
 tripwire.xml:         $(BOOKdir)/$@ $(srcdir)/tripwire.ch
 vulnerabilities.xml:  $(BOOKdir)/$@ $(srcdir)/vulnerabilities.ch

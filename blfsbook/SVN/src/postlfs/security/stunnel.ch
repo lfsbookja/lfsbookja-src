@@ -96,19 +96,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/></para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/></para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/stunnel"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/stunnel"/></para>
 @z
 
 @x

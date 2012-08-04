@@ -26,19 +26,16 @@
 @z
 
 @x
-    <para>The <application>intltool</application> package contains an
-    internationalization tool. This is useful for extracting translatable
-    strings from source files, collecting the extracted strings with messages
-    from traditional source files (<filename class="directory">&lt;source
-    directory&gt;/&lt;package&gt;/po</filename>) and merging the translations
-    into <filename>.xml</filename>, <filename>.desktop</filename> and
-    <filename>.oaf</filename> files.</para>
+      The <application>Intltool</application> is an internationalization 
+      tool used for extracting translatable strings from source files,
+      collecting the extracted strings with messages from traditional
+      source files (<filename class="directory">&lt;source
+      directory&gt;/&lt;package&gt;/po</filename>) and merging the
+      translations into <filename>.xml</filename>,
+      <filename>.desktop</filename> and <filename>.oaf</filename> files.
 @y
-    <para>
-    <application>intltool</application> パッケージは国際化ツールを提供します。
-    ソースファイルから翻訳可能な文字列を抽出したり、元のソースファイル (<filename
-    class="directory">&lt;ソースディレクトリ&gt;/&lt;パッケージ名&gt;/po</filename>) 内のメッセージに対しての翻訳文字列を収集したりして、<filename>.xml</filename>、<filename>.desktop</filename>、<filename>.oaf</filename> といったファイルに翻訳文字列をマージします。
-    </para>
+      <application>Intltool</application> パッケージは、プログラムソースファイルから翻訳対象の文字列を抽出するために利用する国際化ツールです。
+      基本的な翻訳ファイル (<filename class="directory">&lt;ソースディレクトリ&gt;/&lt;package&gt;/po</filename>) から翻訳対象の文字列を収集して、<filename>.xml</filename>、<filename>.desktop</filename>、<filename>.oaf</filename> などの翻訳ファイルにマージします。
 @z
 
 @x
@@ -48,39 +45,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&intltool-download-http;"/></para>
+          Download (HTTP): <ulink url="&intltool-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&intltool-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&intltool-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&intltool-download-ftp;"/></para>
+          Download (FTP): <ulink url="&intltool-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&intltool-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&intltool-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &intltool-md5sum;</para>
+          Download MD5 sum: &intltool-md5sum;
 @y
-        <para>&Download; MD5 sum: &intltool-md5sum;</para>
+          &Download; MD5 sum: &intltool-md5sum;
 @z
 
 @x
-        <para>Download size: &intltool-size;</para>
+          Download size: &intltool-size;
 @y
-        <para>&DownloadSize;: &intltool-size;</para>
+          &DownloadSize;: &intltool-size;
 @z
 
 @x
-        <para>Estimated disk space required: &intltool-buildsize;</para>
+          Estimated disk space required: &intltool-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &intltool-buildsize;</para>
+          &Estimateddiskspacerequired;: &intltool-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &intltool-time;</para>
+          Estimated build time: &intltool-time;
 @y
-        <para>&Estimatedbuildtime;: &intltool-time;</para>
+          &Estimatedbuildtime;: &intltool-time;
 @z
 
 @x
@@ -91,18 +88,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="perl-xml-parser"/></para>
+    <para role="required">
+      <xref linkend="perl-xml-parser"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="perl-xml-parser"/></para>
+    <para role="required">
+      <xref linkend="perl-xml-parser"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/intltool"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/intltool"/></para>
 @z
 
 @x
@@ -112,28 +111,22 @@
 @z
 
 @x
-    <para>Install <application>intltool</application> by running the following
-    commands:</para>
+      Install <application>Intltool</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>intltool</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>intltool</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -144,24 +137,30 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>intltool-extract, intltool-merge, intltool-prepare,
-        intltool-update, and intltoolize</seg>
-        <seg>None</seg>
-        <seg>/usr/share/{doc/intltool-&intltool-version;,intltool}</seg>
+        <seg>
+          intltool-extract, intltool-merge, intltool-prepare,
+          intltool-update and intltoolize
+        </seg>
+        <seg>
+          /usr/share/doc/intltool-&intltool-version; and
+          /usr/share/intltool
+        </seg>
 @y
-        <seg>intltool-extract, intltool-merge, intltool-prepare,
-        intltool-update, intltoolize</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/{doc/intltool-&intltool-version;,intltool}</seg>
+        <seg>
+          intltool-extract, intltool-merge, intltool-prepare,
+          intltool-update, intltoolize
+        </seg>
+        <seg>
+          /usr/share/doc/intltool-&intltool-version;,
+          /usr/share/intltool
+        </seg>
 @z
 
 @x
@@ -171,44 +170,34 @@
 @z
 
 @x intltoolize
-          <para>prepares a package to use
-          <application>intltool</application>.</para>
+            prepares a package to use
+            <application>intltool</application>.
 @y
-          <para>
-          パッケージに対して <application>intltool</application> を利用できるようにします。
-          </para>
+            パッケージに対して <application>intltool</application> を利用できるようにします。
 @z
 
 @x intltool-extract
-          <para>generates header files that can be read by
-          <command>gettext</command>.</para>
+            generates header files that can be read by
+            <command>gettext</command>.
 @y
-          <para>
-          <command>gettext</command> が読み込むことの出来るヘッダファイルを生成します。
-          </para>
+          <command>gettext</command> が読み込むことの出来るヘッダーファイルを生成します。
 @z
 
 @x intltool-merge
-          <para> merges translated strings into various file types.</para>
+            merges translated strings into various file types.
 @y
-          <para>
-          翻訳された文字列を様々な種類のファイルにマージします。
-          </para>
+            翻訳された文字列を様々な種類のファイルにマージします。
 @z
 
 @x intltool-prepare
-          <para>updates pot files and merges them with translation files.</para>
+            updates pot files and merges them with translation files.
 @y
-          <para>
-          pot ファイルを更新し、翻訳ファイルにマージします。
-          </para>
+            pot ファイルを更新し、翻訳ファイルにマージします。
 @z
 
 @x intltool-update
-          <para>updates the <filename>po</filename> template files and merges
-          them with the translations.</para>
+            updates the <filename>po</filename> template files and merges
+            them with the translations.
 @y
-          <para>
-          テンプレートファイル <filename>po</filename> を更新し、翻訳ファイルにマージします。
-          </para>
+            テンプレートファイル <filename>po</filename> を更新し、翻訳ファイルにマージします。
 @z

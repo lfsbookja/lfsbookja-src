@@ -134,19 +134,17 @@
       <xref linkend="mysql"/> or
       <xref linkend="postgresql"/>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-      <xref linkend="pth"/>,
-      <xref linkend="tcpwrappers"/> and
+      <xref linkend="pth"/> and
       <xref linkend="unixodbc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
-      <xref linkend="mysql"/> or
+      <xref linkend="mysql"/> または
       <xref linkend="postgresql"/>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
       <xref linkend="pth"/>,
-      <xref linkend="tcpwrappers"/> and
       <xref linkend="unixodbc"/>
     </para>
 @z
@@ -171,17 +169,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>. If you've
-      enabled <application>tcp_wrappers</application>, ensure you add 127.0.0.1
-      to the <parameter>slapd</parameter> line in the
-      <filename>/etc/hosts.allow</filename> file if you have a restrictive
-      <filename>/etc/hosts.deny</filename> file.
+      To test the results, issue: <command>make test</command>.
 @y
-      To test the results, issue: <command>make test</command>. If you've
-      enabled <application>tcp_wrappers</application>, ensure you add 127.0.0.1
-      to the <parameter>slapd</parameter> line in the
-      <filename>/etc/hosts.allow</filename> file if you have a restrictive
-      <filename>/etc/hosts.deny</filename> file.
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
@@ -329,15 +319,15 @@
 @z
 
 @x
-      <para>Resources to assist you with topics such as choosing a directory
-      configuration, backend and database definitions, access control settings,
-      running as a user other than <systemitem class="username">root</systemitem>
-      and setting a <command>chroot</command> environment include:</para>
+        Resources to assist you with topics such as choosing a directory
+        configuration, backend and database definitions, access control settings,
+        running as a user other than <systemitem class="username">root</systemitem>
+        and setting a <command>chroot</command> environment include:
 @y
-      <para>Resources to assist you with topics such as choosing a directory
-      configuration, backend and database definitions, access control settings,
-      running as a user other than <systemitem class="username">root</systemitem>
-      and setting a <command>chroot</command> environment include:</para>
+        Resources to assist you with topics such as choosing a directory
+        configuration, backend and database definitions, access control settings,
+        running as a user other than <systemitem class="username">root</systemitem>
+        and setting a <command>chroot</command> environment include:
 @z
 
 @x

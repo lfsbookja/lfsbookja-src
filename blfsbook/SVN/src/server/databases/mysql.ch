@@ -132,20 +132,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/> and
-    <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
+    <para role="optional">
+      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/>,
-    <ulink url="http://packages.debian.org/squeeze/libaio-dev">libaio</ulink></para>
+    <para role="optional">
+      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/mysql"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/mysql"/></para>
 @z
 
 @x

@@ -21,13 +21,13 @@
 
 @x
       <application>Bluefish</application> is a
-      <application>Gtk</application> text editor targeted towards
+      <application>GTK+</application> text editor targeted towards
       programmers and web designers, with many options to write websites,
       scripts and programming code. <application>Bluefish</application>
       supports many programming and markup languages, and it focuses on
       editing dynamic and interactive websites.
 @y
-      <application>Bluefish</application> は <application>Gtk</application> による、プログラマーやウェブデザイナー向けテキストエディターです。
+      <application>Bluefish</application> は <application>Gtk+</application> による、プログラマーやウェブデザイナー向けテキストエディターです。
       ウェブサイト、スクリプト、プログラミングコードなどの記述を行うためのさまざまなオプションが用意されています。
       <application>Bluefish</application> では、プログラミング言語やマークアップ言語の多くをサポートしており、特に XML ファイルや HTML ファイルを編集するエディターとして優れています。
 @z
@@ -85,35 +85,31 @@
     <para role="required">
       <xref linkend="gtk2"/> or <xref linkend="gtk3"/>.
       If both are installed, <command>configure</command> defaults to using
-      <application>Gtk 3</application>.
+      <application>GTK+ 3</application>.
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk2"/> または <xref linkend="gtk3"/>
-      両方がインストールされている場合、<command>configure</command> はデフォルトで <application>Gtk 3</application> を利用します。
+      両方がインストールされている場合、<command>configure</command> はデフォルトで <application>Gtk+ 3</application> を利用します。
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="desktop-file-utils"/>,
-      <xref linkend="enchant"/> (for spellchecking),
+      <xref linkend="enchant"/> (for spell checking),
       <xref linkend="gucharmap"/>,
-      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink>,
-      <xref linkend="pcre"/> and
-      <xref linkend="shared-mime-info"/>.
+      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink> and
+      <xref linkend="pcre"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="desktop-file-utils"/>,
       <xref linkend="enchant"/> (スペルチェックのため),
       <xref linkend="gucharmap"/>,
       <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink>,
-      <xref linkend="pcre"/>,
-      <xref linkend="shared-mime-info"/>.
+      <xref linkend="pcre"/>
     </para>
 @z
 
@@ -164,20 +160,24 @@
 @z
 
 @x
-        <seg>bluefish</seg>
         <seg>
-          /usr/lib/bluefish
-          /usr/share/doc/bluefish,
-          /usr/share/xml/bluefish and
-          /usr/share/bluefish.
+          bluefish
+        </seg>
+        <seg>
+          /usr/lib/bluefish,
+          /usr/share/bluefish,
+          /usr/share/doc/bluefish and
+          /usr/share/xml/bluefish
         </seg>
 @y
-        <seg>bluefish</seg>
         <seg>
-          /usr/lib/bluefish
+          bluefish
+        </seg>
+        <seg>
+          /usr/lib/bluefish,
+          /usr/share/bluefish,
           /usr/share/doc/bluefish,
-          /usr/share/xml/bluefish,
-          /usr/share/bluefish.
+          /usr/share/xml/bluefish
         </seg>
 @z
 
@@ -188,8 +188,8 @@
 @z
 
 @x bluefish
-            is a <application>Gtk</application> text editor for markup and
+            is a <application>GTK+</application> text editor for markup and
             programming.
 @y
-            <application>Gtk</application> により実装されたエディターです。マークアップやプログラミングに用いられます。
+            <application>GTK+</application> により実装されたエディターです。マークアップやプログラミングに用いられます。
 @z

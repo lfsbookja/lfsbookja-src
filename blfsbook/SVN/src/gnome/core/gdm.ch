@@ -144,14 +144,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="check"/> (required to run the testsuite) and
-      <xref linkend="tcpwrappers"/>
+      <xref linkend="check"/> (required to run the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="check"/> (テストスイート実行時),
-      <xref linkend="tcpwrappers"/>
+      <xref linkend="check"/> (テストスイート実行時)
     </para>
 @z
 

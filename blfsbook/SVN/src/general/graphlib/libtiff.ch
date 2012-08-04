@@ -20,16 +20,14 @@
 @z
 
 @x
-    <para>The <application>LibTIFF</application> package contains the
-    TIFF libraries and associated utilities. The libraries are used by many
-    programs for reading and writing TIFF files and the utilities are useful
-    for general work with TIFF files.</para>
+      The <application>LibTIFF</application> package contains the TIFF 
+      libraries and associated utilities. The libraries are used by many
+      programs for reading and writing TIFF files and the utilities are
+      used for general work with TIFF files.
 @y
-    <para>
-    <application>LibTIFF</application> パッケージは TIFF ライブラリと関連ユーティリティを提供します。
-    ライブラリは TIFF ファイルを入出力するために各種のプログラムが利用しています。
-    またユーティリティは TIFF ファイルを全般的に取り扱う有用なものです。
-    </para>
+      <application>LibTIFF</application> パッケージは TIFF ライブラリと関連ユーティリティを提供します。
+      ライブラリは TIFF ファイルを入出力するために各種のプログラムが利用しています。
+      またユーティリティは TIFF ファイルを全般的に取り扱う有用なものです。
 @z
 
 @x
@@ -39,39 +37,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libtiff-download-http;"/></para>
+          Download (HTTP): <ulink url="&libtiff-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libtiff-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libtiff-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libtiff-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libtiff-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libtiff-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libtiff-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libtiff-md5sum;</para>
+          Download MD5 sum: &libtiff-md5sum;
 @y
-        <para>&Download; MD5 sum: &libtiff-md5sum;</para>
+          &Download; MD5 sum: &libtiff-md5sum;
 @z
 
 @x
-        <para>Download size: &libtiff-size;</para>
+          Download size: &libtiff-size;
 @y
-        <para>&DownloadSize;: &libtiff-size;</para>
+          &DownloadSize;: &libtiff-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libtiff-buildsize;</para>
+          Estimated disk space required: &libtiff-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libtiff-buildsize;</para>
+          &Estimateddiskspacerequired;: &libtiff-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libtiff-time;</para>
+          Estimated build time: &libtiff-time;
 @y
-        <para>&Estimatedbuildtime;: &libtiff-time;</para>
+          &Estimatedbuildtime;: &libtiff-time;
 @z
 
 @x
@@ -82,24 +80,26 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libjpeg"/>,
-    <xref linkend="x-window-system"/>,
-    <xref linkend="freeglut"/>, and
-    <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink></para>
+    <para role="optional">
+      <xref linkend="freeglut"/>,
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
+      <xref linkend="libjpeg"/> and
+      <xref linkend="xorg7-lib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="libjpeg"/>,
-    <xref linkend="x-window-system"/>,
-    <xref linkend="freeglut"/>,
-    <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink></para>
+    <para role="optional">
+      <xref linkend="freeglut"/>,
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
+      <xref linkend="libjpeg"/> and
+      <xref linkend="xorg7-lib"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libtiff"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libtiff"/></para>
 @z
 
 @x
@@ -109,45 +109,29 @@
 @z
 
 @x
-    <para>Install <application>LibTIFF</application> by running the following
-    commands:</para>
+      Install <application>LibTIFF</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>LibTIFF</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>LibTIFF</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストするなら <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--disable-static</option>: This switch prevents the
-    static library from being built.</para>
-@y
-    <para>
-    <option>--disable-static</option>:
-    このオプションは、スタティックライブラリをビルドしないようにします。
-    </para>
 @z
 
 @x
@@ -167,19 +151,31 @@
 @z
 
 @x
-        <seg>bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
-        raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps, tiff2rgba,
-        tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffinfo, tiffmedian,
-        tiffset, and tiffsplit</seg>
-        <seg>libtiff.so and libtiffxx.so</seg>
-        <seg>/usr/share/doc/tiff-&libtiff-version;</seg>
+        <seg>
+          bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
+          raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps,
+          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump,
+          tiffinfo, tiffmedian, tiffset and tiffsplit
+        </seg>
+        <seg>
+          libtiff.so and libtiffxx.so
+        </seg>
+        <seg>
+          /usr/share/doc/tiff-&libtiff-version;
+        </seg>
 @y
-        <seg>bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
-        raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps, tiff2rgba,
-        tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffinfo, tiffmedian,
-        tiffset, tiffsplit</seg>
-        <seg>libtiff.so, libtiffxx.so</seg>
-        <seg>/usr/share/doc/tiff-&libtiff-version;</seg>
+        <seg>
+          bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
+          raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps,
+          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump,
+          tiffinfo, tiffmedian, tiffset, tiffsplit
+        </seg>
+        <seg>
+          libtiff.so, libtiffxx.so
+        </seg>
+        <seg>
+          /usr/share/doc/tiff-&libtiff-version;
+        </seg>
 @z
 
 @x
@@ -189,208 +185,158 @@
 @z
 
 @x bmp2tiff
-          <para>converts a Microsoft Windows Device Independent Bitmap image
-          file to a TIFF image.</para>
+            converts a Microsoft Windows Device Independent Bitmap image
+            file to a TIFF image.
 @y
-          <para>
-          Microsoft Windows の Device Independent Bitmap イメージを TIFF イメージに変換します。
-          </para>
+            Microsoft Windows の Device Independent Bitmap イメージを TIFF イメージに変換します。
 @z
 
 @x fax2ps
-          <para>converts a TIFF facsimile to compressed PostScript file.</para>
+            converts a TIFF facsimile to compressed PostScript file.
 @y
-          <para>
-          TIFF のファクシミリを、圧縮された PostScript ファイルに変換します。
-          </para>
+            TIFF のファクシミリを、圧縮された PostScript ファイルに変換します。
 @z
 
 @x fax2tiff
-          <para>creates a TIFF Class F fax file from raw fax data.</para>
+            creates a TIFF Class F fax file from raw fax data.
 @y
-          <para>
-          Raw Fax データからクラス F の Fax データを生成します。
-          </para>
+            Raw Fax データからクラス F の Fax データを生成します。
 @z
 
 @x gif2tiff
-          <para>creates a TIFF file from a GIF87 format image file.</para>
+            creates a TIFF file from a GIF87 format image file.
 @y
-          <para>
-          GIF87 フォーマットのイメージファイルから TIFF ファイルを生成します。
-          </para>
+            GIF87 フォーマットのイメージファイルから TIFF ファイルを生成します。
 @z
 
 @x pal2rgb
-          <para>converts a palette color TIFF image to a full color
-          image.</para>
+            converts a palette color TIFF image to a full color
+            image.
 @y
-          <para>
-          パレットカラーの TIFF イメージをフルカラーイメージに変換します。
-          </para>
+            パレットカラーの TIFF イメージをフルカラーイメージに変換します。
 @z
 
 @x ppm2tiff
-          <para>creates a TIFF file from a PPM image file.</para>
+            creates a TIFF file from a PPM image file.
 @y
-          <para>
-          PPM イメージファイルから TIFF ファイルを生成します。
-          </para>
+            PPM イメージファイルから TIFF ファイルを生成します。
 @z
 
 @x ras2tiff
-          <para>creates a TIFF file from a Sun rasterfile.</para>
+            creates a TIFF file from a Sun rasterfile.
 @y
-          <para>
-          Sun ラスターファイルから TIFF ファイルを生成します。
-          </para>
+            Sun ラスターファイルから TIFF ファイルを生成します。
 @z
 
 @x raw2tiff
-          <para>converts a raw byte sequence into TIFF.</para>
+            converts a raw byte sequence into TIFF.
 @y
-          <para>
-          Raw バイトシーケンスを TIFF に変換します。
-          </para>
+            Raw バイトシーケンスを TIFF に変換します。
 @z
 
 @x rgb2ycbcr
-          <para>converts non-YCbCr TIFF images to YCbCr TIFF images.</para>
+            converts non-YCbCr TIFF images to YCbCr TIFF images.
 @y
-          <para>
-          Non-YCbCr TIFF イメージを YCbCr TIFF イメージに変換します。
-          </para>
+            Non-YCbCr TIFF イメージを YCbCr TIFF イメージに変換します。
 @z
 
 @x thumbnail
-          <para>creates a TIFF file with thumbnail images.</para>
+            creates a TIFF file with thumbnail images.
 @y
-          <para>
-          TIFF ファイルにてサムネイル (thumbnail) イメージを生成します。
-          </para>
+            TIFF ファイルにてサムネイル (thumbnail) イメージを生成します。
 @z
 
 @x tiff2bw
-          <para>converts a color TIFF image to grayscale.</para>
+            converts a color TIFF image to grayscale.
 @y
-          <para>
-          カラー TIFF イメージをグレースケールに変換します。
-          </para>
+            カラー TIFF イメージをグレースケールに変換します。
 @z
 
 @x tiff2pdf
-          <para>converts a TIFF image to a PDF document.</para>
+            converts a TIFF image to a PDF document.
 @y
-          <para>
-          TIFF イメージを PDF ファイルに変換します。
-          </para>
+            TIFF イメージを PDF ファイルに変換します。
 @z
 
 @x tiff2ps
-          <para>converts a TIFF image to a PostScript file.</para>
+            converts a TIFF image to a PostScript file.
 @y
-          <para>
-          TIFF イメージを PostScript ファイルに変換します。
-          </para>
+            TIFF イメージを PostScript ファイルに変換します。
 @z
 
 @x tiff2rgba
-          <para>converts a wide variety of TIFF images into an RGBA
-          TIFF image.</para>
+            converts a wide variety of TIFF images into an RGBA
+            TIFF image.
 @y
-          <para>
-          さまざまな形式の TIFF イメージを RGBA TIFF イメージに変換します。
-          </para>
+            さまざまな形式の TIFF イメージを RGBA TIFF イメージに変換します。
 @z
 
 @x tiffcmp
-          <para>compares two TIFF files.</para>
+            compares two TIFF files.
 @y
-          <para>
-          二つの TIFF ファイルを比較します。
-          </para>
+            二つの TIFF ファイルを比較します。
 @z
 
 @x tiffcp
-          <para> copies (and possibly converts) a TIFF file.</para>
+            copies (and possibly converts) a TIFF file.
 @y
-          <para>
-          TIFF ファイルをコピー (また可能なら変換) を行います。
-          </para>
+            TIFF ファイルをコピー (また可能なら変換) を行います。
 @z
 
 @x tiffcrop
-          <para> selects, copies, crops, converts, extracts, and/or processes
-          one or more TIFF files. .</para>
+            selects, copies, crops, converts, extracts and/or processes
+            one or more TIFF files.
 @y
-          <para>
-          複数の TIFF ファイルに対してのコピー、切り取り、変換、抽出などを行います。
-          </para>
+            複数の TIFF ファイルに対してのコピー、切り取り、変換、抽出などを行います。
 @z
 
 @x tiffdither
-          <para>converts a grayscale image to bilevel using dithering.</para>
+            converts a grayscale image to bilevel using dithering.
 @y
-          <para>
-          グレースケールイメージを、ディザリング (dithering) を使ってバイレベル (bilevel) に変換します。
-          </para>
+            グレースケールイメージを、ディザリング (dithering) を使ってバイレベル (bilevel) に変換します。
 @z
 
 @x tiffdump
-          <para>prints verbatim information about TIFF files.</para>
+            prints verbatim information about TIFF files.
 @y
-          <para>
-          TIFF ファイルのそのままの情報を出力します。
-          </para>
+            TIFF ファイルのそのままの情報を出力します。
 @z
 
 @x tiffinfo
-          <para>prints information about TIFF files.</para>
+            prints information about TIFF files.
 @y
-          <para>
-          TIFF ファイルの情報を出力します。
-          </para>
+            TIFF ファイルの情報を出力します。
 @z
 
 @x tiffmedian
-          <para>applies the median cut algorithm to data in a TIFF file.</para>
+            applies the median cut algorithm to data in a TIFF file.
 @y
-          <para>
-          TIFF ファイル内のデータに対し、中央値分割 (median cut) アルゴリズムを適用します。
-          </para>
+            TIFF ファイル内のデータに対し、中央値分割 (median cut) アルゴリズムを適用します。
 @z
 
 @x tiffset
-          <para>sets the value of a TIFF header to a specified value.</para>
+            sets the value of a TIFF header to a specified value.
 @y
-          <para>
-          TIFF のヘッダーに指定値をセットします。
-          </para>
+            TIFF のヘッダーに指定値をセットします。
 @z
 
 @x tiffsplit
-          <para>splits a multi-image TIFF into single-image TIFF files.</para>
+            splits a multi-image TIFF into single-image TIFF files.
 @y
-          <para>
-          複数イメージを持つ TIFF ファイルを単一イメージの TIFF ファイルに分割します。
-          </para>
+            複数イメージを持つ TIFF ファイルを単一イメージの TIFF ファイルに分割します。
 @z
 
-@x libtiff.{so,a}
-          <para>contains the API functions used by the
-          <application>libtiff</application> programs as well as other
-          programs to read and write TIFF files.</para>
+@x libtiff.so
+            contains the API functions used by the
+            <application>libtiff</application> programs as well as other
+            programs to read and write TIFF files.
 @y
-          <para>
-          TIFF ファイルの入出力を行う <application>libtiff</application> プログラムや他のプログラムに対しての API 関数を提供します。
-          </para>
+            TIFF ファイルの入出力を行う <application>libtiff</application> プログラムや他のプログラムに対しての API 関数を提供します。
 @z
 
-@x libtiffxx.{so,a}
-          <para>contains the C++ API functions used
-          by programs to read and write TIFF files.</para>
+@x libtiffxx.so
+            contains the C++ API functions used
+            by programs to read and write TIFF files.
 @y
-          <para>
-          TIFF ファイルの入出力を行うプログラムが利用する C++ の API 関数を提供します。
-          </para>
+            TIFF ファイルの入出力を行うプログラムが利用する C++ の API 関数を提供します。
 @z

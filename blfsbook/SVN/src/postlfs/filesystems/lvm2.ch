@@ -14,21 +14,19 @@
 @z
 
 @x
-    <title>Introduction to lvm2</title>
+    <title>Introduction to LVM2</title>
 @y
-    <title>&IntroductionTo1;lvm2&IntroductionTo2;</title>
+    <title>&IntroductionTo1;LVM2&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>lvm2</application> package is a package that manages
-    logical partitions. It allows spanning of file systems across multiple
-    physical disks and disk partitions and provides for dynamic growing or shrinking
-    of logical partitions.</para>
+      The <application>LVM2</application> package is a package that manages
+      logical partitions. It allows spanning of file systems across multiple
+      physical disks and disk partitions and provides for dynamic growing or
+      shrinking of logical partitions.
 @y
-    <para>
-    <application>lvm2</application> パッケージは論理パーティションを管理します。
-    複数の物理ディスク間やディスクパーティション間にわたってのファイルシステム構築を実現し、論理パーティションの動的な拡大縮小の機能も提供します。
-    </para>
+      <application>LVM2</application> パッケージは論理パーティションを管理します。
+      複数の物理ディスク間やディスクパーティション間にわたってのファイルシステム構築を実現し、論理パーティションの動的な拡大縮小の機能も提供します。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&lvm2-download-http;"/></para>
+          Download (HTTP): <ulink url="&lvm2-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&lvm2-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&lvm2-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&lvm2-download-ftp;"/></para>
+          Download (FTP): <ulink url="&lvm2-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&lvm2-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&lvm2-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &lvm2-md5sum;</para>
+          Download MD5 sum: &lvm2-md5sum;
 @y
-        <para>&Download; MD5 sum: &lvm2-md5sum;</para>
+          &Download; MD5 sum: &lvm2-md5sum;
 @z
 
 @x
-        <para>Download size: &lvm2-size;</para>
+          Download size: &lvm2-size;
 @y
-        <para>&DownloadSize;: &lvm2-size;</para>
+          &DownloadSize;: &lvm2-size;
 @z
 
 @x
-        <para>Estimated disk space required: &lvm2-buildsize;</para>
+          Estimated disk space required: &lvm2-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &lvm2-buildsize;</para>
+          &Estimateddiskspacerequired;: &lvm2-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &lvm2-time;</para>
+          Estimated build time: &lvm2-time;
 @y
-        <para>&Estimatedbuildtime;: &lvm2-time;</para>
+          &Estimatedbuildtime;: &lvm2-time;
 @z
 
 @x
@@ -86,12 +84,10 @@
 @z
 
 @x
-    <para>Enable the following option in the kernel configuration
-    and recompile the kernel:</para>
+      Enable the following option in the kernel configuration
+      and recompile the kernel:
 @y
-    <para>
-    以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
-    </para>
+      以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
 @z
 
 @x
@@ -104,33 +100,35 @@
 @y
 <screen><literal>Device Drivers ---&gt;
   Multiple devices driver support (RAID and LVM): Y
-    Device mapper support: Y または M
-    Crypt target support: (任意)
-    Snapshot target: (任意)
-    Mirror target: (任意) </literal></screen>
+    Device mapper support: Y or M
+    Crypt target support: (optional)
+    Snapshot target: (optional)
+    Mirror target: (optional) </literal></screen>
 @z
 
 @x
-    <title>Installation of lvm2</title>
+    <title>Installation of LVM2</title>
 @y
-    <title>&InstallationOf1;lvm2&InstallationOf2;</title>
+    <title>&InstallationOf1;LVM2&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>lvm2</application> by running the following
-    commands:</para>
+      Install <application>LVM2</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>lvm2</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>LVM2</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -140,35 +138,30 @@
 @z
 
 @x
-    <para><option>--enable-cmdlib</option>: This parameter enables
-    building of the shared command library. It is required when
-    building the event daemon.</para>
+      <option>--enable-cmdlib</option>: This switch enables
+      building of the shared command library. It is required
+      when building the event daemon.
 @y
-    <para>
-    <option>--enable-cmdlib</option>:
-    このオプションは共有コマンドライブラリをビルドすることを指示します。
-    デーモンをビルドする際にはこれが必要になります。
-    </para>
+      <option>--enable-cmdlib</option>:
+      このスイッチは共有コマンドライブラリをビルドすることを指示します。
+      デーモンをビルドする際にはこれが必要になります。
 @z
 
 @x
-    <para><option>--enable-pkgconfig</option>: This parameter enables
-    installation of pkgconfig support files.</para>
+      <option>--enable-pkgconfig</option>: This switch enables
+      installation of <command>pkg-config</command> support files.
 @y
-    <para>
-    <option>--enable-pkgconfig</option>:
-    このパラメーターの指定により pkgconfig サポートファイルをインストールします。
-    </para>
+      <option>--enable-pkgconfig</option>:
+      このスイッチの指定により pkgconfig サポートファイルをインストールします。
 @z
 
 @x
-    <para><option>--enable-dmeventd</option>: This parameter enables
-    building of the device-mapper event daemon.</para>
+      <option>--enable-dmeventd</option>: This switch enables
+      building of the <application>Device Mapper</application>
+      event daemon.
 @y
-    <para>
-    <option>--enable-dmeventd</option>:
-    このオプションは device-mapper イベントデーモンをビルドすることを指示します。
-    </para>
+      <option>--enable-dmeventd</option>:
+      このスイッチは <application>Device Mapper</application> イベントデーモンをビルドすることを指示します。
 @z
 
 @x
@@ -180,24 +173,28 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone.  There
-        are also numerous symbolic links to lvm to implement specific 
-        functionality.</seg>
-        <seg>libdevmapper.so</seg>
-        <seg>None</seg>
+        <seg>
+          dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone. There
+          are also numerous symbolic links to lvm that implement
+          specific functionality.
+        </seg>
+        <seg>
+          libdevmapper.so, liblvm2app.so and liblvm2cmd.so
+        </seg>
 @y
-        <seg>dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone.
-        この他に lvm に対してのシンボリックリンクが数多くあり、それらは特定の機能を提供します。</seg>
-        <seg>libdevmapper.so</seg>
-        <seg>&None;</seg>
+        <seg>
+          dmsetup, fsadm, lvm, lvmconf, lvmdump, vgimportclone. 
+          この他に lvm に対してのシンボリックリンクが数多くあり、それらは特定の機能を提供します。
+        </seg>
+        <seg>
+          libdevmapper.so, liblvm2app.so, liblvm2cmd.so
+        </seg>
 @z
 
 @x
@@ -207,51 +204,55 @@
 @z
 
 @x dmsetup
-          <para>is a low level logical volume management tool.</para>
+            is a low level logical volume management tool.
 @y
-          <para>is a low level logical volume management tool.</para>
+            is a low level logical volume management tool.
 @z
 
 @x fsadm
-          <para>is a utility to resize or check filesystem on a device.</para>
+            is an utility used to resize or check filesystem on a device.
 @y
-          <para>is a utility to resize or check filesystem on a device.</para>
+            is an utility used to resize or check filesystem on a device.
 @z
 
 @x lvm
-          <para>provides the command-line tools for lvm2.  Commands are
-          implemented via sympolic links to this program to manage physical 
-          devices (pv*), volume groups (vg*), and logical volumes (lv*).</para>
+            provides the command-line tools for <application>LVM2</application>.
+            Commands are implemented via sympolic links to this program to
+            manage physical devices (pv*), volume groups (vg*) and logical
+            volumes (lv*).
 @y
-          <para>provides the command-line tools for lvm2.  Commands are
-          implemented via sympolic links to this program to manage physical 
-          devices (pv*), volume groups (vg*), and logical volumes (lv*).</para>
+            provides the command-line tools for <application>LVM2</application>.
+            Commands are implemented via sympolic links to this program to
+            manage physical devices (pv*), volume groups (vg*) and logical
+            volumes (lv*).
 @z
 
 @x lvmconf
-          <para>is a script that modifies the locking configuration in 
-          an lvm configuration file.</para>
+            is a script that modifies the locking configuration in 
+            the <application>LVM2</application> configuration file.
 @y
-          <para>is a script that modifies the locking configuration in 
-          an lvm configuration file.</para>
+            is a script that modifies the locking configuration in 
+            the <application>LVM2</application> configuration file.
 @z
 
 @x lvmdump
-          <para>is a tool to dump various information concerning lvm2.</para>
+            is a tool used to dump various information concerning
+            <application>LVM2</application>.
 @y
-          <para>is a tool to dump various information concerning lvm2.</para>
+            is a tool used to dump various information concerning
+            <application>LVM2</application>.
 @z
 
 @x vgimportclone
-          <para>is used to import a duplicated VG (e.g. hardware snapshot).</para>
+            is used to import a duplicated VG (e.g. hardware snapshot).
 @y
-          <para>is used to import a duplicated VG (e.g. hardware snapshot).</para>
+            is used to import a duplicated VG (e.g. hardware snapshot).
 @z
 
 @x libdevmapper.so
-          <para>contains the <application>device-mapper</application> API
-          functions.</para>
+            contains the <application>Device Mapper</application> API
+            functions.
 @y
-          <para>contains the <application>device-mapper</application> API
-          functions.</para>
+            contains the <application>Device Mapper</application> API
+            functions.
 @z

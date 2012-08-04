@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>The <application>libatasmart</application> package is a disk reporting
-    library. It only supports a subset of the ATA S.M.A.R.T. functionality.</para>
+      The <application>libatasmart</application> package is a disk reporting
+      library. It only supports a subset of the ATA S.M.A.R.T. functionality.
 @y
-    <para>
-    <application>libatasmart</application> パッケージはディスクに関する情報を取得するライブラリです。
-    このライブラリがサポートするのは、ATA S.M.A.R.T. 機能の一部のみです。
-    </para>
+      <application>libatasmart</application> パッケージはディスクに関する情報を取得するライブラリです。
+      このライブラリがサポートするのは、ATA S.M.A.R.T. 機能の一部のみです。
 @z
 
 @x
@@ -36,47 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libatasmart-download-http;"/></para>
+          Download (HTTP): <ulink url="&libatasmart-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libatasmart-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libatasmart-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libatasmart-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libatasmart-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libatasmart-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libatasmart-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libatasmart-md5sum;</para>
+          Download MD5 sum: &libatasmart-md5sum;
 @y
-        <para>&Download; MD5 sum: &libatasmart-md5sum;</para>
+          &Download; MD5 sum: &libatasmart-md5sum;
 @z
 
 @x
-        <para>Download size: &libatasmart-size;</para>
+          Download size: &libatasmart-size;
 @y
-        <para>&DownloadSize;: &libatasmart-size;</para>
+          &DownloadSize;: &libatasmart-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libatasmart-buildsize;</para>
+          Estimated disk space required: &libatasmart-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libatasmart-buildsize;</para>
+          &Estimateddiskspacerequired;: &libatasmart-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libatasmart-time;</para>
+          Estimated build time: &libatasmart-time;
 @y
-        <para>&Estimatedbuildtime;: &libatasmart-time;</para>
+          &Estimatedbuildtime;: &libatasmart-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libatasmart"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libatasmart"/></para>
 @z
 
 @x
@@ -86,26 +82,22 @@
 @z
 
 @x
-    <para>Install <application>libatasmart</application> by running the following
-    commands:</para>
+      Install <application>libatasmart</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libatasmart</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libatasmart</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -159,25 +151,19 @@
 @z
 
 @x skdump
-          <para>is a utility that reports on the status of the disk.</para>
+            is an utility that reports on the status of the disk.
 @y
-          <para>
-          ディスクの状態を検出するユーティリティです。
-          </para>
+            ディスクの状態を検出するユーティリティです。
 @z
 
 @x sktest
-          <para>is a utility to issue disks tests.</para>
+            is an utility to issue disks tests.
 @y
-          <para>
-          ディスクに対するテストを実施するユーティリティです。
-          </para>
+            ディスクに対するテストを実施するユーティリティです。
 @z
 
 @x libatasmart.{so,a}
-          <para>contains the ATA S.M.A.R.T API functions.</para>
+            contains the ATA S.M.A.R.T API functions.
 @y
-          <para>
-          ATA の S.M.A.R.T API 関数を提供します。
-          </para>
+            ATA の S.M.A.R.T API 関数を提供します。
 @z

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>Introduction to Xorg-&xorg7-release;</title>
+  <title>Introduction to Xorg-&xorg-version;</title>
 @y
-  <title>&IntroductionTo1;Xorg-&xorg7-release;&IntroductionTo2;</title>
+  <title>&IntroductionTo1;Xorg-&xorg-version;&IntroductionTo2;</title>
 @z
 
 @x
@@ -52,16 +52,16 @@
 @x
   <para>Xorg-7.0 introduced a completely auto-tooled, modular build system.
   With the new modular build system, it is no longer possible to download
-  the entire package in a single file.  In fact, there may be as many as
-  293 files that need to be fetched from the download location.  To assist
+  the entire package in a single file. In fact, there will be well over 100
+  packages that need to be fetched from the download location. To assist
   with such a large task, installing <xref linkend="wget"/> is strongly
   recommended for downloading the needed files.  A complete
-  <application>wget</application> file list is provided for each section
+  <application>wget</application> file list is provided for each page
   that includes multiple packages.</para>
 @y
   <para>
   Xorg-7.0 では、完全に自動ツール化されたモジュールのビルドシステムが構築されていましたが、そのビルドシステムが新しいものとなったため、パッケージ全体を１つのファイルとしてダウンロードすることは出来なくなりました。
-  実際にダウンロードサイトから入手すべきファイルは 293 個にも及びます。
+  実際にダウンロードサイトから入手すべきファイルは 100 個を超えます。
   必要となる大量のファイルのダウンロードを容易に行うために、<xref linkend="wget"/> のインストールを是非行ってください。
   <application>wget</application> にて用いる正確なファイルリストについては、各節において明示します。
   そのファイルリストには数多くのパッケージが含まれます。
@@ -124,17 +124,16 @@
 
 @x
   <para>Additionally, because of the large number of repetitive commands,
-  you are encouraged to partially automate the build.  The commands below
-  (or similar) can be entered at the command line to compile each
-  section (proto, util, lib, app, driver).  The wiki links on each
-  section's page contain specific commands to compile the entire group of
-  packages, based on the content of the wget files.</para>
+  you are encouraged to partially automate the build. Instructions have been
+  given that utilize the <xref linkend="sudo"/> package. It is recommended that
+  you use the <parameter>:NOPASSWD</parameter> configuration option for the
+  user that will be building the xorg packages.</para>
 @y
-  <para>
-  さらに、これから行うコマンド実行は、何度も繰り返し行うものになるため、部分的にでも自動的なビルドを行うものとしています。
-  以下に示すようなコマンドは、コマンドラインより入力しパッケージのビルドを行うものであり、各節 (プロト、ユーティリティ、ライブラリ、アプリケーション、ドライバ) において実施します。
-  各節において示される wiki ページへのリンクには、パッケージ群のすべてをコンパイルする特定のコマンドを説明しており、wget ファイルに示される内容に基づいています。
-  </para>
+  <para>Additionally, because of the large number of repetitive commands,
+  you are encouraged to partially automate the build. Instructions have been
+  given that utilize the <xref linkend="sudo"/> package. It is recommended that
+  you use the <parameter>:NOPASSWD</parameter> configuration option for the
+  user that will be building the xorg packages.</para>
 @z
 
 @x

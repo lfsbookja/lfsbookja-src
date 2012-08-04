@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Dash</title>
 @y
-    <title>Dash の概要</title>
+    <title>&IntroductionTo1;Dash&IntroductionTo2;</title>
 @z
 
 @x
@@ -207,11 +207,11 @@ with libedit support.
 @x
       <para><application>Dash</application> sources
       <filename>/etc/profile</filename> and
-      <filename>$HOME/.profile</filename></para>
+      <filename>~/.profile</filename></para>
 @y
-      <para><application>Dash</application> ソース
-      <filename>/etc/profile</filename>,
-      <filename>$HOME/.profile</filename></para>
+      <para><application>Dash</application> sources
+      <filename>/etc/profile</filename> and
+      <filename>~/.profile</filename></para>
 @z
 
 @x

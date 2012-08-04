@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>ISO Codes</application> package contains a list of
-    country, language and currency names. This is useful when used as a central
-    database for accessing this data.</para>
+      The <application>ISO Codes</application> package contains a list of
+      country, language and currency names and it is used as a central
+      database for accessing this data.
 @y
-    <para>
-    <application>ISO Codes</application> パッケージは、国、言語、通貨の名称一覧を提供します。
-    これは、名称一覧データを管理する中心的なデータベースとして活用することができます。
-    </para>
+      <application>ISO Codes</application> パッケージは、国、言語、通貨の名称一覧を提供します。
+      これは、名称一覧データを管理する中心的なデータベースとして活用することができます。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&iso-codes-download-http;"/></para>
+          Download (HTTP): <ulink url="&iso-codes-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&iso-codes-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&iso-codes-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&iso-codes-download-ftp;"/></para>
+          Download (FTP): <ulink url="&iso-codes-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&iso-codes-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&iso-codes-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &iso-codes-md5sum;</para>
+          Download MD5 sum: &iso-codes-md5sum;
 @y
-        <para>&Download; MD5 sum: &iso-codes-md5sum;</para>
+          &Download; MD5 sum: &iso-codes-md5sum;
 @z
 
 @x
-        <para>Download size: &iso-codes-size;</para>
+          Download size: &iso-codes-size;
 @y
-        <para>&DownloadSize;: &iso-codes-size;</para>
+          &DownloadSize;: &iso-codes-size;
 @z
 
 @x
-        <para>Estimated disk space required: &iso-codes-buildsize;</para>
+          Estimated disk space required: &iso-codes-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &iso-codes-buildsize;</para>
+          &Estimateddiskspacerequired;: &iso-codes-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &iso-codes-time;</para>
+          Estimated build time: &iso-codes-time;
 @y
-        <para>&Estimatedbuildtime;: &iso-codes-time;</para>
+          &Estimatedbuildtime;: &iso-codes-time;
 @z
 
 @x
@@ -80,18 +78,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="python2"/></para>
+    <para role="required">
+      <xref linkend="python2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="python2"/></para>
+    <para role="required">
+      <xref linkend="python2"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/iso-codes"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/iso-codes"/></para>
 @z
 
 @x
@@ -101,26 +101,22 @@
 @z
 
 @x
-    <para>Install <application>ISO Codes</application> by running the following
-    commands:</para>
+      Install <application>ISO Codes</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>ISO Codes</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>ISO Codes</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -130,23 +126,17 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg>/usr/share/xml/iso-codes and
-        many directories in the /usr/share/locale hierarchy</seg>
+        <seg>
+          /usr/share/xml/iso-codes
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/xml/iso-codes と
-        /usr/share/locale hierarchy 配下の各種ディレクトリ</seg>
+        <seg>
+          /usr/share/xml/iso-codes
+        </seg>
 @z

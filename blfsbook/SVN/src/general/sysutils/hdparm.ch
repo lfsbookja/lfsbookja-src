@@ -26,32 +26,27 @@
 @z
 
 @x
-    <para>The <application>hdparm</application> package contains a utility
-    that is useful for controlling ATA/IDE controllers and hard drives both to
-    increase performance and sometimes to increase stability.</para>
+      The <application>Hdparm</application> package contains an utility that
+      is useful for controlling ATA/IDE controllers and hard drives both to
+      increase performance and sometimes to increase stability.
 @y
-<para>
-The <application>hdparm</application> package contains a utility
-that is useful for controlling ATA/IDE controllers and hard drives both to
-increase performance and sometimes to increase stability.
-</para>
+      The <application>Hdparm</application> package contains an utility that
+      is useful for controlling ATA/IDE controllers and hard drives both to
+      increase performance and sometimes to increase stability.
 @z
 
 @x
-      <para>As well as being useful, incorrect usage of
-      <application>hdparm</application> can destroy your information and in
-      rare cases, drives. Use with caution and make sure you know what you are
-      doing. If in doubt, it is recommended that you leave the default kernel
-      parameters alone.</para>
+        As well as being useful, incorrect usage of
+        <application>Hdparm</application> can destroy your information and in
+        rare cases, drives. Use with caution and make sure you know what you
+        are doing. If in doubt, it is recommended that you leave the default
+        kernel parameters alone.
 @y
-<para>
-
-As well as being useful, incorrect usage of
-<application>hdparm</application> can destroy your information and in
-rare cases, drives. Use with caution and make sure you know what you are
-doing. If in doubt, it is recommended that you leave the default kernel
-parameters alone.
-</para>
+        As well as being useful, incorrect usage of
+        <application>Hdparm</application> can destroy your information and in
+        rare cases, drives. Use with caution and make sure you know what you
+        are doing. If in doubt, it is recommended that you leave the default
+        kernel parameters alone.
 @z
 
 @x
@@ -61,47 +56,45 @@ parameters alone.
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&hdparm-download-http;"/></para>
+          Download (HTTP): <ulink url="&hdparm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&hdparm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&hdparm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&hdparm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&hdparm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&hdparm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&hdparm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &hdparm-md5sum;</para>
+          Download MD5 sum: &hdparm-md5sum;
 @y
-        <para>&Download; MD5 sum: &hdparm-md5sum;</para>
+          &Download; MD5 sum: &hdparm-md5sum;
 @z
 
 @x
-        <para>Download size: &hdparm-size;</para>
+          Download size: &hdparm-size;
 @y
-        <para>&DownloadSize;: &hdparm-size;</para>
+          &DownloadSize;: &hdparm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &hdparm-buildsize;</para>
+          Estimated disk space required: &hdparm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &hdparm-buildsize;</para>
+          &Estimateddiskspacerequired;: &hdparm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &hdparm-time;</para>
+          Estimated build time: &hdparm-time;
 @y
-        <para>&Estimatedbuildtime;: &hdparm-time;</para>
+          &Estimatedbuildtime;: &hdparm-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/hdparm"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/hdparm"/></para>
 @z
 
 @x
@@ -111,50 +104,39 @@ parameters alone.
 @z
 
 @x
-    <para>Build <application>hdparm</application> by running the following
-    command:</para>
+      Build <application>Hdparm</application> by running the following
+      command:
 @y
-<para>
-
-Build <application>hdparm</application> by running the following
-command:
-</para>
+      Build <application>Hdparm</application> by running the following
+      command:
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-<para>
-&notTestSuite;
-</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-<para>
-<systemitem class="username">root</systemitem>
-ユーザーになって以下を実行します。
-</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Note that by default, <command>hdparm</command> is installed in
-    <filename class="directory">/sbin</filename> as some systems may require it
-    during the boot process before <filename class="directory">/usr</filename>
-    is mounted.  If you wish to install <command>hdparm</command> under the
-    <filename class="directory">/usr</filename> hierarchy, then replace the above
-    command with the following:</para>
+      Note that by default, <command>hdparm</command> is installed in
+      <filename class="directory">/sbin</filename> as some systems may require it
+      during the boot process before <filename class="directory">/usr</filename>
+      is mounted.  If you wish to install <command>hdparm</command> under the
+      <filename class="directory">/usr</filename> hierarchy, then replace the above
+      command with the following:
 @y
-<para>
-
-Note that by default, <command>hdparm</command> is installed in
-<filename class="directory">/sbin</filename> as some systems may require it
-during the boot process before <filename class="directory">/usr</filename>
-is mounted.  If you wish to install <command>hdparm</command> under the
-<filename class="directory">/usr</filename> hierarchy, then replace the above
-command with the following:
-</para>
+      Note that by default, <command>hdparm</command> is installed in
+      <filename class="directory">/sbin</filename> as some systems may require it
+      during the boot process before <filename class="directory">/usr</filename>
+      is mounted.  If you wish to install <command>hdparm</command> under the
+      <filename class="directory">/usr</filename> hierarchy, then replace the above
+      command with the following:
 @z
 
 @x
@@ -165,22 +147,18 @@ command with the following:
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>hdparm</seg>
-        <seg>None</seg>
-        <seg>None</seg>
+        <seg>
+          hdparm
+        </seg>
 @y
-        <seg>hdparm</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>
+          hdparm
+        </seg>
 @z
 
 @x
@@ -190,13 +168,9 @@ command with the following:
 @z
 
 @x hdparm
-          <para>provides a command-line interface to various hard disk ioctls
-          supported by the stock Linux ATA/IDE device driver subsystem.</para>
+            provides a command-line interface to various hard disk ioctls
+            supported by the stock Linux ATA/IDE device driver subsystem.
 @y
-<para>
-
-provides a command-line interface to various hard disk ioctls
-supported by the stock Linux ATA/IDE device driver subsystem.
-</para>
+            provides a command-line interface to various hard disk ioctls
+            supported by the stock Linux ATA/IDE device driver subsystem.
 @z
-

@@ -69,12 +69,6 @@
 @z
 
 @x
-        <para>Download MD5 sum: <ulink url="&x7fonts-md5sum;"/></para>
-@y
-        <para>&Download; MD5 sum: <ulink url="&x7fonts-md5sum;"/></para>
-@z
-
-@x
         <para>Download size: &x7fonts-size;</para>
 @y
         <para>&DownloadSize;: &x7fonts-size;</para>
@@ -90,18 +84,6 @@
         <para>Estimated build time: &x7fonts-time;</para>
 @y
         <para>&Estimatedbuildtime;: &x7fonts-time;</para>
-@z
-
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required download list: <ulink url="&x7fonts-wget;"/></para>
-@y
-        <para>必要なダウンロードリスト: <ulink url="&x7fonts-wget;"/></para>
 @z
 
 @x
@@ -144,28 +126,24 @@
 @z
 
 @x
-    <para>Run the following commands for each package:</para>
+    <para>First, start a subshell that will exit on error:</para>
+@y
+    <para>まずはサブシェルを実行することで、エラー発生時には終了するようにします。</para>
+@z
+
+@x
+    <para>Install all of the applications by running the following
+    commands:</para>
 @y
     <para>
-    各パッケージに対して以下のコマンドを実行します。
+    以下のコマンドを実行して個々のアプリケーションのインストールを行います。
     </para>
 @z
 
 @x
-    <para>These packages do not provide test suites.</para>
+    <para>Finally, exit the shell that was started earlier:</para>
 @y
-    <para>
-    個々のパッケージにテストスイートはありません。
-    </para>
-@z
-
-@x
-    <para>Now as the <systemitem class="username">root</systemitem>
-    user:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <para>上で実行したサブシェルから抜けます。</para>
 @z
 
 @x

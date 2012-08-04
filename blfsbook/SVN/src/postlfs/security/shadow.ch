@@ -79,18 +79,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch: <ulink
-@y
-          必須のパッチ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">Shadow Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Shadow&Dependencies2;</bridgehead>

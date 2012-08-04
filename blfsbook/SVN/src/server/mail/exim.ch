@@ -118,8 +118,7 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="tcpwrappers"/>, and
+      <xref linkend="sqlite"/> and
       <xref linkend="linux-pam"/>
     </para>
 @y
@@ -127,12 +126,11 @@
     <para role="optional">
       <xref linkend="x-window-system"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
+      <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="tcpwrappers"/>,
+      <xref linkend="sqlite"/> and
       <xref linkend="linux-pam"/>
     </para>
 @z

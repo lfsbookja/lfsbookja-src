@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>Xorg-&xorg7-release; Testing and Configuration</title>
+  <title>Xorg-&xorg-version; Testing and Configuration</title>
 @y
-  <title>Xorg-&xorg7-release; のテストと設定</title>
+  <title>Xorg-&xorg-version; のテストと設定</title>
 @z
 
 @x

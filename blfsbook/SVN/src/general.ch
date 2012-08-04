@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "July 27th, &year;">
+<!ENTITY releasedate  "August 1st, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20120729">
+<!ENTITY jversion     "20120804">
 <!ENTITY jratio       "48.4 &percnt;">
 @z
 
@@ -171,4 +171,66 @@
 @y
 <!ENTITY lfssvn_built         "本パッケージは LFS-SVN-">
 <!ENTITY lfssvn_built2        "においてビルドできることが確認されていますが、まだ動作テストは行われていません。">
+@z
+
+@x
+<!ENTITY as_root              "<note><para>When installing multiple packages in
+                              a script, the installation needs to be done as
+                              the root user. There are three general options
+                              that can be used to do this:</para>
+
+                              <orderedlist>
+                              <listitem><para>Run the entire script as the root
+                              user (not recommended).</para></listitem>
+
+                              <listitem><para>Use the '<command>sudo</command>'
+                              command from the <xref linkend='sudo'/>
+                              package.</para></listitem>
+
+                              <listitem><para>Use '<command>su -c</command>'
+                              which will ask for the root password for every
+                              iteration of the loop.</para></listitem>
+                              </orderedlist>
+
+                              <para>Select a preferred method and export a
+                              variable <parameter>AS_ROOT</parameter> with the
+                              following command replacing
+                              <parameter>&lt;as_root&gt;</parameter> with the
+                              selected command (unset or use an empty variable
+                              if you intend to run the entire loop as the
+                              root user):</para>
+
+                              <screen><userinput>export AS_ROOT='<replaceable>&lt;as_root&gt;</replaceable>'</userinput></screen>
+                              </note>">
+@y
+<!ENTITY as_root              "<note>
+                              <para>
+                              スクリプトを用いて複数のパッケージをビルドする際には、root ユーザーによる実行が必要です。
+                              これを行うためには一般に以下の３つの方法があります。
+                              </para>
+
+                              <orderedlist>
+                              <listitem><para>
+                              root ユーザーになってスクリプトを実行します。(ただしあまりお勧めしません。)
+                              </para></listitem>
+
+                              <listitem><para>
+                              <xref linkend='sudo'/> パッケージが提供する '<command>sudo</command>' コマンドを利用します。
+                              </para></listitem>
+
+                              <listitem><para>Use '<command>su -c</command>'
+                              which will ask for the root password for every
+                              iteration of the loop.</para></listitem>
+                              </orderedlist>
+
+                              <para>Select a preferred method and export a
+                              variable <parameter>AS_ROOT</parameter> with the
+                              following command replacing
+                              <parameter>&lt;as_root&gt;</parameter> with the
+                              selected command (unset or use an empty variable
+                              if you intend to run the entire loop as the
+                              root user):</para>
+
+                              <screen><userinput>export AS_ROOT='<replaceable>&lt;as_root&gt;</replaceable>'</userinput></screen>
+                              </note>">
 @z

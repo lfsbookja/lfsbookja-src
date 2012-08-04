@@ -72,12 +72,6 @@
 @z
 
 @x
-        <para>Download MD5 sum: <ulink url="&x7proto-md5sum;"/></para>
-@y
-        <para>&Download; MD5 sum: <ulink url="&x7proto-md5sum;"/></para>
-@z
-
-@x
         <para>Download size: &x7proto-size;</para>
 @y
         <para>&DownloadSize;: &x7proto-size;</para>
@@ -93,18 +87,6 @@
         <para>Estimated build time: &x7proto-time;</para>
 @y
         <para>&Estimatedbuildtime;: &x7proto-time;</para>
-@z
-
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required download list: <ulink url="&x7proto-wget;"/></para>
-@y
-        <para>必要なダウンロードリスト: <ulink url="&x7proto-wget;"/></para>
 @z
 
 @x
@@ -173,29 +155,23 @@
 @z
 
 @x
-    <para>Install the <application>Xorg</application> protocol headers
-    by running the following commands for each package to be installed.</para>
+    <para>First, start a subshell that will exit on error:</para>
 @y
-    <para>
-    <application>Xorg</application> プロトコルヘッダーをインストールするために、以下を実行して個々のパッケージのインストールを行います。
-    </para>
+    <para>First, start a subshell that will exit on error:</para>
 @z
 
 @x
-    <para>These packages do not provide test suites.</para>
+    <para>Install all of the applications by running the following
+    commands:</para>
 @y
-    <para>
-    これらのパッケージにはテストスイートはありません。
-    </para>
+    <para>Install all of the applications by running the following
+    commands:</para>
 @z
 
 @x
-    <para>Now as the <systemitem class="username">root</systemitem>
-    user:</para>
+    <para>Finally, exit the shell that was started earlier:</para>
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <para>Finally, exit the shell that was started earlier:</para>
 @z
 
 @x

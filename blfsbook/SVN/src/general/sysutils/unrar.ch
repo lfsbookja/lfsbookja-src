@@ -14,30 +14,22 @@
 @z
 
 @x
-  <!ENTITY unrar-time "less than 0.1 SBU">
-@y
-  <!ENTITY unrar-time "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to UnRar</title>
 @y
     <title>&IntroductionTo1;UnRar&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>UnRar</application> package contains a
-    <filename>RAR</filename> extraction utility. This is useful for
-    extracting files from <filename>RAR</filename> archives.
-    <filename>RAR</filename> archives are usually
-    created with <application>WinRAR</application>,
-    primarily in a Windows environment.</para>
+      The <application>UnRar</application> package contains a
+      <filename>RAR</filename> extraction utility used for
+      extracting files from <filename>RAR</filename> archives.
+      <filename>RAR</filename> archives are usually created
+      with <application>WinRAR</application>, primarily in a
+      Windows environment.
 @y
-    <para>
-    <application>UnRar</application> パッケージは <filename>RAR</filename> 形式ファイルの抽出ユーティリティを提供します。
-    <filename>RAR</filename> アーカイブからファイルを抽出する際に利用します。
-    <filename>RAR</filename> アーカイブは、主に Windows 環境において <application>WinRAR</application> というアプリケーションを使って生成することができます。
-    </para>
+      <application>UnRar</application> パッケージは <filename>RAR</filename> 形式ファイルの抽出ユーティリティを提供します。
+      <filename>RAR</filename> アーカイブからファイルを抽出する際に利用します。
+      <filename>RAR</filename> アーカイブは、主に Windows 環境において <application>WinRAR</application> というアプリケーションを使って生成することができます。
 @z
 
 @x
@@ -47,47 +39,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&unrar-download-http;"/></para>
+          Download (HTTP): <ulink url="&unrar-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&unrar-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&unrar-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&unrar-download-ftp;"/></para>
+          Download (FTP): <ulink url="&unrar-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&unrar-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&unrar-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &unrar-md5sum;</para>
+          Download MD5 sum: &unrar-md5sum;
 @y
-        <para>&Download; MD5 sum: &unrar-md5sum;</para>
+          &Download; MD5 sum: &unrar-md5sum;
 @z
 
 @x
-        <para>Download size: &unrar-size;</para>
+          Download size: &unrar-size;
 @y
-        <para>&DownloadSize;: &unrar-size;</para>
+          &DownloadSize;: &unrar-size;
 @z
 
 @x
-        <para>Estimated disk space required: &unrar-buildsize;</para>
+          Estimated disk space required: &unrar-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &unrar-buildsize;</para>
+          &Estimateddiskspacerequired;: &unrar-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &unrar-time;</para>
+          Estimated build time: &unrar-time;
 @y
-        <para>&Estimatedbuildtime;: &unrar-time;</para>
+          &Estimatedbuildtime;: &unrar-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/unrar"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/unrar"/></para>
 @z
 
 @x
@@ -97,26 +87,22 @@
 @z
 
 @x
-    <para>Install <application>UnRar</application> by running the following
-    commands:</para>
+      Install <application>UnRar</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>UnRar</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>UnRar</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> になって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> になって以下を実行します。
 @z
 
 @x
@@ -127,22 +113,18 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>unrar</seg>
-        <seg>None</seg>
-        <seg>None</seg>
+        <seg>
+          unrar
+        </seg>
 @y
-        <seg>unrar</seg>
-        <seg>&None;</seg>
-        <seg>&None;</seg>
+        <seg>
+          unrar
+        </seg>
 @z
 
 @x
@@ -152,9 +134,7 @@
 @z
 
 @x unrar
-          <para>uncompresses a <filename>RAR</filename> archive.</para>
+            uncompresses a <filename>RAR</filename> archive.
 @y
-          <para>
-          <filename>RAR</filename> 形式アーカイブを解凍します。
-          </para>
+            <filename>RAR</filename> 形式アーカイブを解凍します。
 @z

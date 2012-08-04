@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>xcb-util</application> package provides additional
-    extensions to the <application>XCB</application> library, many that were
-    previously found in <application>Xlib</application>, but are not part of
-    core X protocol.</para>
+      The <application>xcb-util</application> package provides additional
+      extensions to the <application>XCB</application> library, many that were
+      previously found in <application>Xlib</application>, but are not part of
+      core X protocol.
 @y
-    <para>
-    <application>xcb-util</application> パッケージは <application>XCB</application> ライブラリに対する拡張機能を提供します。
-    たいていの機能は <application>Xlib</application> に存在するものですが、ただし X プロトコルのコアな部分には含まれないものです。
-    </para>
+      <application>xcb-util</application> パッケージは <application>XCB</application> ライブラリに対する拡張機能を提供します。
+      たいていの機能は <application>Xlib</application> に存在するものですが、ただし X プロトコルのコアな部分には含まれないものです。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xcb-util-download-http;"/></para>
+          Download (HTTP): <ulink url="&xcb-util-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xcb-util-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xcb-util-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xcb-util-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xcb-util-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xcb-util-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xcb-util-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xcb-util-md5sum;</para>
+          Download MD5 sum: &xcb-util-md5sum;
 @y
-        <para>&Download; MD5 sum: &xcb-util-md5sum;</para>
+          &Download; MD5 sum: &xcb-util-md5sum;
 @z
 
 @x
-        <para>Download size: &xcb-util-size;</para>
+          Download size: &xcb-util-size;
 @y
-        <para>&DownloadSize;: &xcb-util-size;</para>
+          &DownloadSize;: &xcb-util-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xcb-util-buildsize;</para>
+          Estimated disk space required: &xcb-util-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xcb-util-buildsize;</para>
+          &Estimateddiskspacerequired;: &xcb-util-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xcb-util-time;</para>
+          Estimated build time: &xcb-util-time;
 @y
-        <para>&Estimatedbuildtime;: &xcb-util-time;</para>
+          &Estimatedbuildtime;: &xcb-util-time;
 @z
 
 @x
@@ -81,20 +79,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libxcb"/> and
-    <xref linkend="gperf"/></para>
+    <para role="required">
+      <xref linkend="gperf"/> and
+      <xref linkend="libxcb"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libxcb"/>, 
-    <xref linkend="gperf"/></para>
+    <para role="required">
+      <xref linkend="gperf"/>,
+      <xref linkend="libxcb"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/xcb-util"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/xcb-util"/></para>
 @z
 
 @x
@@ -104,28 +104,22 @@
 @z
 
 @x
-    <para>Install <application>xcb-util</application> by running the following
-    commands:</para>
+      Install <application>xcb-util</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xcb-util</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xcb-util</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> になって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> になって以下を実行します。
 @z
 
 @x
@@ -135,23 +129,15 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
         <seg>libxcb-util.{a,so}</seg>
-        <seg>None</seg>
 @y
-        <seg>&None;</seg>
         <seg>libxcb-util.{a,so}</seg>
-        <seg>&None;</seg>
 @z
 
 @x
@@ -160,8 +146,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x
-          <para>Provides utility functions for other XCB utilities.</para>
+@x libxcb-util.{so,a}
+            Provides utility functions for other XCB utilities.
 @y
-          <para>他の XCB ユーティリティーに対して、ユーティリティー関数を提供します。</para>
+            他の XCB ユーティリティーに対して、ユーティリティー関数を提供します。
 @z

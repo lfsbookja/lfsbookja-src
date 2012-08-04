@@ -101,18 +101,16 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk3"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev), and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for GUdev) and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk3"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (gudev 用),
+      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (GUdev 用),
       <xref linkend="vala"/>
     </para>
 @z
@@ -180,7 +178,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -194,7 +192,7 @@
           colord-sane and colormgr
         </seg>
         <seg>
-          libcolord.so and libcolord-gtk.so
+          libcolord.so
         </seg>
         <seg>
           /usr/include/colord-1,
@@ -204,14 +202,13 @@
           /usr/share/gtk-doc/html/colord and
           /var/lib/colord
         </seg>
-      </seglistitem>
 @y
         <seg>
           cd-create-profile, cd-fix-profile, colord, 
           colord-sane, colormgr
         </seg>
         <seg>
-          libcolord.so, libcolord-gtk.so
+          libcolord.so
         </seg>
         <seg>
           /usr/include/colord-1,
@@ -221,7 +218,6 @@
           /usr/share/gtk-doc/html/colord,
           /var/lib/colord
         </seg>
-      </seglistitem>
 @z
 
 @x

@@ -26,17 +26,17 @@
 @z
 
 @x
-    <para><application>Liboauth</application> is a collection of POSIX-C
-    functions implementing the OAuth Core RFC 5849 standard. Liboauth provides
-    functions to escape and encode parameters according to OAuth specification and
-    offers high-level functionality to sign requests or verify OAuth signatures as
-    well as perform HTTP requests.</para>
+      <application>liboauth</application> is a collection of POSIX-C functions
+      implementing the OAuth Core RFC 5849 standard. Liboauth provides functions
+      to escape and encode parameters according to OAuth specification and
+      offers high-level functionality to sign requests or verify OAuth signatures
+      as well as perform HTTP requests.
 @y
-    <para><application>Liboauth</application> is a collection of POSIX-C
-    functions implementing the OAuth Core RFC 5849 standard. Liboauth provides
-    functions to escape and encode parameters according to OAuth specification and
-    offers high-level functionality to sign requests or verify OAuth signatures as
-    well as perform HTTP requests.</para>
+      <application>liboauth</application> is a collection of POSIX-C functions
+      implementing the OAuth Core RFC 5849 standard. Liboauth provides functions
+      to escape and encode parameters according to OAuth specification and
+      offers high-level functionality to sign requests or verify OAuth signatures
+      as well as perform HTTP requests.
 @z
 
 @x
@@ -46,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&liboauth-download-http;"/></para>
+          Download (HTTP): <ulink url="&liboauth-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&liboauth-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&liboauth-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&liboauth-download-ftp;"/></para>
+          Download (FTP): <ulink url="&liboauth-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&liboauth-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&liboauth-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &liboauth-md5sum;</para>
+          Download MD5 sum: &liboauth-md5sum;
 @y
-        <para>&Download; MD5 sum: &liboauth-md5sum;</para>
+          &Download; MD5 sum: &liboauth-md5sum;
 @z
 
 @x
-        <para>Download size: &liboauth-size;</para>
+          Download size: &liboauth-size;
 @y
-        <para>&DownloadSize;: &liboauth-size;</para>
+          &DownloadSize;: &liboauth-size;
 @z
 
 @x
-        <para>Estimated disk space required: &liboauth-buildsize;</para>
+          Estimated disk space required: &liboauth-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &liboauth-buildsize;</para>
+          &Estimateddiskspacerequired;: &liboauth-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &liboauth-time;</para>
+          Estimated build time: &liboauth-time;
 @y
-        <para>&Estimatedbuildtime;: &liboauth-time;</para>
+          &Estimatedbuildtime;: &liboauth-time;
 @z
 
 @x
@@ -91,22 +91,22 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="curl"/> and
-      <xref linkend="openssl"/> or <xref linkend="nss"/>
+      <xref linkend="openssl"/> or
+      <xref linkend="nss"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="openssl"/> または <xref linkend="nss"/>
+      <xref linkend="openssl"/> または
+      <xref linkend="nss"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/liboauth"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/liboauth"/></para>
 @z
 
 @x
@@ -116,42 +116,35 @@
 @z
 
 @x
-    <para>Install <application>liboauth</application> by running the following
-    commands:</para>
+      Install <application>liboauth</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>liboauth</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>liboauth</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      If you have <xref linkend="doxygen"/>, issue <command>make dox</command>
+      to build documentation.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      <xref linkend="doxygen"/> をインストールしている場合は <command>make dox</command> を実行するとドキュメントをビルドできます。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--disable-static</option>: This switch prevents static
-    libraries from being installed.</para>
-@y
-    <para><option>--disable-static</option>:
-    このスイッチはスタティックライブラリをビルドしないようにします。</para>
 @z
 
 @x
@@ -167,27 +160,43 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>liboauth.{so,a}</seg>
-        <seg></seg>
+        <seg>
+          liboauth.so
+        </seg>
+        <seg>
+          /usr/share/doc/liboauth-&liboauth-version;
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>liboauth.{so,a}</seg>
-        <seg></seg>
+        <seg>
+          liboauth.so
+        </seg>
+        <seg>
+          /usr/share/doc/liboauth-&liboauth-version;
+        </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x liboauth.so
+            provides functions to escape and encode stings according to
+            OAuth specifications and offers high-level functionality built 
+            on top to sign requests or verify signatures using either NSS or 
+            OpenSSL for calculating the hash/signatures.
+@y
+            provides functions to escape and encode stings according to
+            OAuth specifications and offers high-level functionality built 
+            on top to sign requests or verify signatures using either NSS or 
+            OpenSSL for calculating the hash/signatures.
 @z

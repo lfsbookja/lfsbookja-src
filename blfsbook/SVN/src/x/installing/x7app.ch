@@ -26,9 +26,9 @@
 @z
 
 @x
-    <primary sortas="a-xorg7-app">Xorg-&xorg7-version; Applications</primary>
+    <primary sortas="a-xorg7-app">Xorg-&xorg-version; Applications</primary>
 @y
-    <primary sortas="a-xorg7-app">Xorg-&xorg7-version; アプリケーション</primary>
+    <primary sortas="a-xorg7-app">Xorg-&xorg-version; アプリケーション</primary>
 @z
 
 @x
@@ -70,12 +70,6 @@
 @z
 
 @x
-        <para>Download MD5 sum: <ulink url="&x7apps-md5sum;"/></para>
-@y
-        <para>&Download; MD5 sum: <ulink url="&x7apps-md5sum;"/></para>
-@z
-
-@x
         <para>Download size: &x7apps-size;</para>
 @y
         <para>&DownloadSize;: &x7apps-size;</para>
@@ -91,18 +85,6 @@
         <para>Estimated build time: &x7apps-time;</para>
 @y
         <para>&Estimatedbuildtime;: &x7apps-time;</para>
-@z
-
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required download list: <ulink url="&x7apps-wget;"/></para>
-@y
-        <para>必要なダウンロードリスト: <ulink url="&x7apps-wget;"/></para>
 @z
 
 @x
@@ -165,28 +147,11 @@
 @z
 
 @x
-    <para>Install the applications by running the following commands for each
-    package:</para>
+    <para>Install all of the applications by running the following
+    commands:</para>
 @y
     <para>
-    以下を実行して個々のパッケージのインストールを行います。
-    </para>
-@z
-
-@x
-    <para>These packages do not provide test suites.</para>
-@y
-    <para>
-    これらのパッケージにはテストスイートはありません。
-    </para>
-@z
-
-@x
-    <para>Now as the <systemitem class="username">root</systemitem>
-    user:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    以下のコマンドを実行して個々のアプリケーションのインストールを行います。
     </para>
 @z
 
