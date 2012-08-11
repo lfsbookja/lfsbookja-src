@@ -20,14 +20,15 @@
 @z
 
 @x
-  <para><application>KDE</application> version 4 is a comprehensive desktop
-  environment with a huge number of applications written for it and a huge
-  amount of users. It is based on the <application>Qt</application> framework.</para>
-  <para>For more information visit the official KDE project site at <ulink
-  url="http://www.kde.org/"/>.</para>
+  <para><application>KDE</application> Software Compilation 4 is a 
+  comprehensive desktop environment with a huge number of applications 
+  written for it and a huge amount of users. It is based on the 
+  <application>Qt</application> framework.</para>
+  <para>For more information visit the official KDE project site at 
+  <ulink url="http://www.kde.org/"/>.</para>
 @y
   <para>
-  <application>KDE</application> のバージョン 4 は、分かりやすいデスクトップ環境であり、これに対応した数多くのアプリケーションが提供され、数多くのユーザーも抱えています。
+  <application>KDE</application> Software Compilation 4 は、分かりやすいデスクトップ環境であり、これに対応した数多くのアプリケーションが提供され、数多くのユーザーも抱えています。
   これは <application>Qt</application> フレームワークに基づいています。
   </para>
   <para>

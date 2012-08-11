@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/>,
+    <xref linkend="phonon"/> and
     <xref linkend="gstreamer"/> 
     </para>
 @y
@@ -95,7 +95,7 @@
     <para role="recommended">
     <xref linkend="gst-plugins-base"/> (needed for output to ALSA),
     <xref linkend="gst-plugins-good"/> (needed for output to PulseAudio),
-    <xref linkend="gst-plugins-bad"/> (needed for AAC/M4A support),
+    <xref linkend="gst-plugins-bad"/> (needed for AAC/M4A support) and
     <xref linkend="gst-plugins-ugly"/> (needed for MP3 support)
     </para>
 @y

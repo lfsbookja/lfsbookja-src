@@ -136,7 +136,7 @@
 @z
 
 @x
-        <seg>None</seg>
+        <seg>none</seg>
         <seg>libattica.so</seg>
 	<seg>&kde-dir;/include/attica</seg>
 @y

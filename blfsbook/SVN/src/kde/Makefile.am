@@ -5,11 +5,10 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/kde4/intro
+SUBDIRS=add core intro
+BOOKdir = $(top_builddir)/@bookdir@/kde
 CHANGE_FILES = \
-	introduction.ch \
-	kde4-intro.ch   \
-	pre-install-config.ch
+	kde.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -24,6 +23,4 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
-kde4-intro.xml:         $(BOOKdir)/$@ $(srcdir)/kde4-intro.ch
-pre-install-config.xml: $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
+kde.xml: $(BOOKdir)/$@ $(srcdir)/kde.ch

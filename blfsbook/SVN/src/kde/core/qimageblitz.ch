@@ -103,11 +103,11 @@
 @z
 
 @x
-    <para>Install <application>qimageblitz</application> by running the following
+    <para>Install <application>QImageblitz</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>qimageblitz</application> をビルドします。
+    以下のコマンドを実行して <application>QImageblitz</application> をビルドします。
     </para>
 @z
 

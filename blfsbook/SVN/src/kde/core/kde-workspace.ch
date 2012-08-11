@@ -38,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&kdeworkspace-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&kde-workspace-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&kdeworkspace-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kde-workspace-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&kdeworkspace-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&kde-workspace-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&kdeworkspace-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kde-workspace-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &kdeworkspace-md5sum;</para>
+        <para>Download MD5 sum: &kde-workspace-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &kdeworkspace-md5sum;</para>
+        <para>&Download; MD5 sum: &kde-workspace-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &kdeworkspace-size;</para>
+        <para>Download size: &kde-workspace-size;</para>
 @y
-        <para>&DownloadSize;: &kdeworkspace-size;</para>
+        <para>&DownloadSize;: &kde-workspace-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &kdeworkspace-buildsize;</para>
+        <para>Estimated disk space required: &kde-workspace-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &kdeworkspace-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kde-workspace-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &kdeworkspace-time;</para>
+        <para>Estimated build time: &kde-workspace-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &kdeworkspace-time;</para>
+        <para>&Estimatedbuildtime;: &kde-workspace-time;</para>
 @z
 
 @x
@@ -82,14 +82,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>, 
     <xref linkend="kactivities"/> and
     <xref linkend="qimageblitz"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>, 
     <xref linkend="kactivities"/>,
     <xref linkend="qimageblitz"/>
     </para>
@@ -208,25 +206,33 @@
 @z
 
 @x
-        <seg>genkdmconf, kaccess, kapplymousetheme, kblankscrn.kss, kcheckrunning, 
-	kcminit, kcminit_startup, kdm, kdmctl, kdostartupconfig4, kfontview, 
-	kfontinst, kinfocenter, klipper, kmenuedit, krandom.kss, krandrtray, 
-	krunner, ksmserver, ksplashqml, ksplashsimple, ksplashx, ksplashx_scale, 
-	kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwrited, oxygen-demo, 
-	oxygen-settings, oxygen-shadow-demo, plasma-desktop, plasmaengineexplorer, 
-	plasmawallpaperviewer, plasma-windowed, plasmoidviewer, solid-network, 
-	solid-action-desktop-gen, startkde and systemsettings</seg>
+        <seg>genkdmconf, kaccess, kapplymousetheme, kblankscrn.kss,
+        kcheckrunning, kcminit, kcminit_startup, kdm, kdmctl,
+        kdostartupconfig4, kfontinst, kfontview, kinfocenter, klipper,
+        kmenuedit, krandom.kss, krandrstartup, krandrtray, krdb, krunner,
+        ksmserver, ksplashqml, ksplashsimple, ksplashx, ksplashx_scale,
+        kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwrited,
+        oxygen-demo, oxygen-settings, oxygen-shadow-demo, plasma-desktop,
+        plasma-netbook, plasma-overlay, plasma-windowed, plasmaengineexplorer,
+        plasmawallpaperviewer, plasmoidviewer, remote-widgets-browser,
+        solid-action-desktop-gen, solid-network, startkde and systemsettings
+        </seg>
         <seg>several in &kde-dir;/lib</seg>
-        <seg>several in /etc/kde, &kde-dir;/include and &kde-dir;/share</seg>
+        <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
+        </seg>
 @y
-        <seg>genkdmconf, kaccess, kapplymousetheme, kblankscrn.kss, kcheckrunning, 
-	kcminit, kcminit_startup, kdm, kdmctl, kdostartupconfig4, kfontview, 
-	kfontinst, kinfocenter, klipper, kmenuedit, krandom.kss, krandrtray, 
-	krunner, ksmserver, ksplashqml, ksplashsimple, ksplashx, ksplashx_scale, 
-	kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwrited, oxygen-demo, 
-	oxygen-settings, oxygen-shadow-demo, plasma-desktop, plasmaengineexplorer, 
-	plasmawallpaperviewer, plasma-windowed, plasmoidviewer, solid-network, 
-	solid-action-desktop-gen, startkde and systemsettings</seg>
-        <seg>&kde-dir;/lib に数種のライブラリ</seg>
-        <seg>/etc/kde, &kde-dir;/include and &kde-dir;/share の各ディレクトリ</seg>
+        <seg>genkdmconf, kaccess, kapplymousetheme, kblankscrn.kss,
+        kcheckrunning, kcminit, kcminit_startup, kdm, kdmctl,
+        kdostartupconfig4, kfontinst, kfontview, kinfocenter, klipper,
+        kmenuedit, krandom.kss, krandrstartup, krandrtray, krdb, krunner,
+        ksmserver, ksplashqml, ksplashsimple, ksplashx, ksplashx_scale,
+        kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwrited,
+        oxygen-demo, oxygen-settings, oxygen-shadow-demo, plasma-desktop,
+        plasma-netbook, plasma-overlay, plasma-windowed, plasmaengineexplorer,
+        plasmawallpaperviewer, plasmoidviewer, remote-widgets-browser,
+        solid-action-desktop-gen, solid-network, startkde and systemsettings
+        </seg>
+        <seg>several in &kde-dir;/lib</seg>
+        <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
+        </seg>
 @z

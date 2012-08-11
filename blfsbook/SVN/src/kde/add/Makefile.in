@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/kde4/intro
+subdir = src/kde/add
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
@@ -145,11 +145,23 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/kde4/intro
+BOOKdir = $(top_builddir)/@bookdir@/kde/add
 CHANGE_FILES = \
-	introduction.ch \
-	kde4-intro.ch   \
-	pre-install-config.ch
+	add.ch              \
+	add-pkgs.ch         \
+	ark.ch              \
+	gwenview.ch         \
+	kate.ch             \
+	kdeadmin.ch         \
+	kde-base-artwork.ch \
+	kmix.ch             \
+	kdenetwork.ch       \
+	kdepim.ch           \
+	kdepim-runtime.ch   \
+	kdeplasma-addons.ch \
+	konsole.ch          \
+	libkexiv2.ch        \
+	okular.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -167,9 +179,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/kde4/intro/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/kde/add/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/kde4/intro/Makefile
+	  $(AUTOMAKE) --gnu src/kde/add/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -345,9 +357,21 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
-kde4-intro.xml:         $(BOOKdir)/$@ $(srcdir)/kde4-intro.ch
-pre-install-config.xml: $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
+add.xml:               $(BOOKdir)/$@ $(srcdir)/add.ch
+add-pkgs.xml:          $(BOOKdir)/$@ $(srcdir)/add-pkgs.ch
+ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
+gwenview.xml:          $(BOOKdir)/$@ $(srcdir)/gwenview.ch
+kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
+kdeadmin.xml:          $(BOOKdir)/$@ $(srcdir)/kdeadmin.ch
+kde-base-artwork.xml:  $(BOOKdir)/$@ $(srcdir)/kde-base-artwork.ch
+kmix.xml:              $(BOOKdir)/$@ $(srcdir)/kmix.ch
+kdenetwork.xml:        $(BOOKdir)/$@ $(srcdir)/kdenetwork.ch
+kdepim.xml:            $(BOOKdir)/$@ $(srcdir)/kdepim.ch
+kdepim-runtime.xml:    $(BOOKdir)/$@ $(srcdir)/kdepim-runtime.ch
+kdeplasma-addons.xml:  $(BOOKdir)/$@ $(srcdir)/kdeplasma-addons.ch
+konsole.xml:           $(BOOKdir)/$@ $(srcdir)/konsole.ch
+libkexiv2.xml:         $(BOOKdir)/$@ $(srcdir)/libkexiv2.ch
+okular.xml:            $(BOOKdir)/$@ $(srcdir)/okular.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

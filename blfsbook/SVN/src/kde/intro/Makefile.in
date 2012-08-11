@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src/kde4/core
+subdir = src/kde/intro
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
@@ -145,27 +145,11 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/kde4/core
+BOOKdir = $(top_builddir)/@bookdir@/kde/intro
 CHANGE_FILES = \
-	attica.ch                   \
-	akonadi.ch                  \
-	automoc4.ch                 \
-	config.ch                   \
-	core.ch                     \
-	kactivities.ch              \
-	kde4baseapps.ch             \
-	kde4libs.ch                 \
-	kde4pimlibs.ch              \
-	kde4runtime.ch              \
-	kde4workspace.ch            \
-	oxygen-icons.ch             \
-	phonon.ch                   \
-	phonon-backend-gstreamer.ch \
-	phonon-backend-vlc.ch       \
-	polkit-kde-agent.ch         \
-	polkit-qt.ch                \
-	qimageblitz.ch              \
-	shrdesktopontologies.ch
+	introduction.ch \
+	kde-intro.ch    \
+	pre-install-config.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -183,9 +167,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/kde4/core/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/kde/intro/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/kde4/core/Makefile
+	  $(AUTOMAKE) --gnu src/kde/intro/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -361,25 +345,9 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-attica.xml:                   $(BOOKdir)/$@ $(srcdir)/attica.ch
-akonadi.xml:                  $(BOOKdir)/$@ $(srcdir)/akonadi.ch
-automoc4.xml:                 $(BOOKdir)/$@ $(srcdir)/automoc4.ch
-config.xml:                   $(BOOKdir)/$@ $(srcdir)/config.ch
-core.xml:                     $(BOOKdir)/$@ $(srcdir)/core.ch
-kactivities.xml:              $(BOOKdir)/$@ $(srcdir)/kactivities.ch
-kde4baseapps.xml:             $(BOOKdir)/$@ $(srcdir)/kde4baseapps.ch
-kde4libs.xml:                 $(BOOKdir)/$@ $(srcdir)/kde4libs.ch
-kde4pimlibs.xml:              $(BOOKdir)/$@ $(srcdir)/kde4pimlibs.ch
-kde4runtime.xml:              $(BOOKdir)/$@ $(srcdir)/kde4runtime.ch
-kde4workspace.xml:            $(BOOKdir)/$@ $(srcdir)/kde4workspace.ch
-oxygen-icons.xml:             $(BOOKdir)/$@ $(srcdir)/oxygen-icons.ch
-phonon.xml:                   $(BOOKdir)/$@ $(srcdir)/phonon.ch
-phonon-backend-gstreamer.xml: $(BOOKdir)/$@ $(srcdir)/phonon-backend-gstreamer.ch
-phonon-backend-vlc.xml:       $(BOOKdir)/$@ $(srcdir)/phonon-backend-vlc.ch
-polkit-kde-agent.xml:         $(BOOKdir)/$@ $(srcdir)/polkit-kde-agent.ch
-polkit-qt.xml:                $(BOOKdir)/$@ $(srcdir)/polkit-qt.ch
-qimageblitz.xml:              $(BOOKdir)/$@ $(srcdir)/qimageblitz.ch
-shrdesktopontologies.xml:     $(BOOKdir)/$@ $(srcdir)/shrdesktopontologies.ch
+introduction.xml:       $(BOOKdir)/$@ $(srcdir)/introduction.ch
+kde-intro.xml:          $(BOOKdir)/$@ $(srcdir)/kde-intro.ch
+pre-install-config.xml: $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

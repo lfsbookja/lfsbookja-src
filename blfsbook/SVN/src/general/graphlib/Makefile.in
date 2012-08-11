@@ -147,29 +147,30 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/general/graphlib
 CHANGE_FILES = \
-	aalib.ch \
-	fontconfig.ch \
-	freetype2.ch \
-	fribidi.ch \
-	giflib.ch \
-	graphlib.ch \
-	imlib2.ch \
-	jasper.ch \
-	lcms.ch \
+	aalib.ch       \
+	babl.ch        \
+	exiv2.ch       \
+	fontconfig.ch  \
+	freetype2.ch   \
+	fribidi.ch     \
+	gegl.ch        \
+	giflib.ch      \
+	graphlib.ch    \
+	ijs.ch         \
+	imlib2.ch      \
+	jasper.ch      \
+	lcms.ch        \
+	lcms2.ch       \
 	libart_lgpl.ch \
-	libexif.ch \
-	libjpeg.ch \
-	libmng.ch \
-	libpng.ch \
-	librsvg.ch \
-	libtiff.ch \
-	openjpeg.ch \
-	pixman.ch \
-	poppler.ch \
-	babl.ch \
-	gegl.ch \
-	exiv2.ch \
-	lcms2.ch
+	libexif.ch     \
+	libjpeg.ch     \
+	libmng.ch      \
+	libpng.ch      \
+	librsvg.ch     \
+	libtiff.ch     \
+	openjpeg.ch    \
+	pixman.ch      \
+	poppler.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -366,14 +367,19 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 aalib.xml:       $(BOOKdir)/$@ $(srcdir)/aalib.ch
+babl.xml:        $(BOOKdir)/$@ $(srcdir)/babl.ch
+exiv2.xml:       $(BOOKdir)/$@ $(srcdir)/exiv2.ch
 fontconfig.xml:  $(BOOKdir)/$@ $(srcdir)/fontconfig.ch
 freetype2.xml:   $(BOOKdir)/$@ $(srcdir)/freetype2.ch
 fribidi.xml:     $(BOOKdir)/$@ $(srcdir)/fribidi.ch
+gegl.xml:        $(BOOKdir)/$@ $(srcdir)/gegl.ch
 giflib.xml:      $(BOOKdir)/$@ $(srcdir)/giflib.ch
 graphlib.xml:    $(BOOKdir)/$@ $(srcdir)/graphlib.ch
+ijs.xml:         $(BOOKdir)/$@ $(srcdir)/ijs.ch
 imlib2.xml:      $(BOOKdir)/$@ $(srcdir)/imlib2.ch
 jasper.xml:      $(BOOKdir)/$@ $(srcdir)/jasper.ch
 lcms.xml:        $(BOOKdir)/$@ $(srcdir)/lcms.ch
+lcms2.xml:       $(BOOKdir)/$@ $(srcdir)/lcms2.ch
 libart_lgpl.xml: $(BOOKdir)/$@ $(srcdir)/libart_lgpl.ch
 libexif.xml:     $(BOOKdir)/$@ $(srcdir)/libexif.ch
 libjpeg.xml:     $(BOOKdir)/$@ $(srcdir)/libjpeg.ch
@@ -384,10 +390,6 @@ libtiff.xml:     $(BOOKdir)/$@ $(srcdir)/libtiff.ch
 openjpeg.xml:    $(BOOKdir)/$@ $(srcdir)/openjpeg.ch
 pixman.xml:      $(BOOKdir)/$@ $(srcdir)/pixman.ch
 poppler.xml:     $(BOOKdir)/$@ $(srcdir)/poppler.ch
-babl.xml:        $(BOOKdir)/$@ $(srcdir)/babl.ch
-gegl.xml:        $(BOOKdir)/$@ $(srcdir)/gegl.ch
-exiv2.xml:       $(BOOKdir)/$@ $(srcdir)/exiv2.ch
-lcms2.xml:       $(BOOKdir)/$@ $(srcdir)/lcms2.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

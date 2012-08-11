@@ -59,10 +59,10 @@ AC_CONFIG_FILES([Makefile
 		 src/introduction/Makefile
 		 src/introduction/important/Makefile
 		 src/introduction/welcome/Makefile
-		 src/kde4/Makefile
-		 src/kde4/add/Makefile
-		 src/kde4/core/Makefile
-		 src/kde4/intro/Makefile
+		 src/kde/Makefile
+		 src/kde/add/Makefile
+		 src/kde/core/Makefile
+		 src/kde/intro/Makefile
 		 src/multimedia/Makefile
 		 src/multimedia/audioutils/Makefile
 		 src/multimedia/cdwriteutils/Makefile

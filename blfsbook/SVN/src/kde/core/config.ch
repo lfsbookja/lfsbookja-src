@@ -70,10 +70,10 @@
 
 @x
     <para>KDE comes with a graphical login interface called KDM (the KDE Display 
-    Manager). KDM provides a customizable graphical login at boot. To use KDM, 
+    Manager), which provides a customizable graphical login at boot. To use KDM,
     you need to edit your <filename>/etc/inittab</filename> file (as the 
     <systemitem class="username">root</systemitem> user).
-    First, setup run-level 5 to start KDM by adding the following line (adjust 
+    First, setup run-level 5 to start KDM (adjust
     the path to kdm according to your system):</para>
 @y
     <para>
@@ -81,33 +81,25 @@
     ブート時のグラフィカルログインはカスタマイズが可能です。
     KDM を利用するには <filename>/etc/inittab</filename> ファイルを変更します。
     (<systemitem class="username">root</systemitem> ユーザーになって作業します。)
-    KDM を起動するランレベルを 5 とするように、以下の行を加えます。
+    KDM を起動するランレベルを 5 とします。
     (kdm へのパスは、システムに応じて書き換えてください。)
     </para>
 @z
 
 @x
-    <para>Additionally, you need to change the default run-level from 3 to 5. This 
-    is done by changing the line:</para>
+    <para>Additionally, you need to change the default run-level from 3 to 5:</para>
 @y
     <para>
     またデフォルトのランレベルを 3 から 5 に変更します。
-    以下のような記述行があります。
     </para>
 @z
 
 @x
-    <para>To:</para>
-@y
-    <para>上を以下のように変更します。</para>
-@z
-
-@x
-    <para>You can now restart your system and see the beautiful KDE login 
+    <para>You can now restart your system and see the KDE login
     screen.</para>
 @y
     <para>
-    システムを再起動すれば、KDE の美しいログイン画面が表示されます。
+    システムを再起動すれば、KDE のログイン画面が表示されます。
     </para>
 @z
 

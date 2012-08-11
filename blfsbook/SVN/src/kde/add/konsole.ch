@@ -78,12 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>
+    <xref linkend="kde-baseapps"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>
+    <xref linkend="kde-baseapps"/>
     </para>
 @z
 
@@ -133,11 +133,15 @@
 @z
 
 @x
-        <seg>konsole</seg>
-        <seg>libkdeinit4_konsole.so and libkonsoleprivate.so</seg>
-        <seg>...</seg>
+        <seg>konsole and konsoleprofile</seg>
+        <seg>libkdeinit4_konsole.so, libkonsolepart.so and libkonsoleprivate.so
+        </seg>
+        <seg>&kde-dir;/share/apps/konsole and
+        &kde-dir;/share/doc/HTML/en/konsole</seg>
 @y
-        <seg>konsole</seg>
-        <seg>libkdeinit4_konsole.so, libkonsoleprivate.so</seg>
-        <seg>...</seg>
+        <seg>konsole and konsoleprofile</seg>
+        <seg>libkdeinit4_konsole.so, libkonsolepart.so and libkonsoleprivate.so
+        </seg>
+        <seg>&kde-dir;/share/apps/konsole and
+        &kde-dir;/share/doc/HTML/en/konsole</seg>
 @z

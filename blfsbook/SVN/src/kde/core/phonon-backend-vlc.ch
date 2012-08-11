@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/>,
+    <xref linkend="phonon"/> and
     <xref linkend="vlc"/>
     </para>
 @y

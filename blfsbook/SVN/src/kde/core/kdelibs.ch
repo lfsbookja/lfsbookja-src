@@ -228,17 +228,21 @@
 @z
 
 @x
-        <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4, kde4-config, 
-        kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper, kfilemetadatareader, kjs, kjscmd, kross, 
-        kshell4, kunittestmodrunner, kwrapper4, makekdewidgets, meinproc4, 
-        meinproc_simple, nepomuk-rcgen and preparetips</seg>
+        <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4,
+        kde4-config, kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper,
+        kfilemetadatareader, kjs, kjscmd, kross, kshell4, kunittestmodrunner,
+        kwrapper4, makekdewidgets, meinproc4, meinproc4_simple, nepomuk-rcgen
+        and preparetips</seg>
         <seg>several in &kde-dir;/lib</seg>
-	<seg>several in /etc/kde, &kde-dir;/include and &kde-dir;/share</seg>
+        <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
+        </seg>
 @y
-        <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4, kde4-config, 
-        kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper, kfilemetadatareader, kjs, kjscmd, kross, 
-        kshell4, kunittestmodrunner, kwrapper4, makekdewidgets, meinproc4, 
-        meinproc_simple, nepomuk-rcgen, preparetips</seg>
-        <seg>&kde-dir;/lib 内に数種のライブラリ</seg>
-	<seg>/etc/kde, &kde-dir;/include, &kde-dir;/share 内に数種のディレクトリ</seg>
+        <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4,
+        kde4-config, kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper,
+        kfilemetadatareader, kjs, kjscmd, kross, kshell4, kunittestmodrunner,
+        kwrapper4, makekdewidgets, meinproc4, meinproc4_simple, nepomuk-rcgen
+        and preparetips</seg>
+        <seg>several in &kde-dir;/lib</seg>
+        <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
+        </seg>
 @z

@@ -130,12 +130,16 @@
 
 @x
         <seg>kate, ktesnippets_editor and kwrite</seg>
-        <seg>libkdeinit4_kwrite.so, libktexteditor_codesnippets_core.so, 
-	libkdeinit4_kate.so, libkateinterfaces.so and libkatepartinterfaces.so</seg>
-        <seg>...</seg>
+        <seg>libkateinterfaces.so, libkatepartinterfaces.so,
+        libkdeinit4_kate.so, libkdeinit4_kwrite.so,
+        libktexteditor_codesnippets_core.so and several in &kde-dir;/lib/kde4
+        </seg>
+        <seg>several in &kde-dir;/include and &kde-dir;/share</seg>
 @y
-        <seg>kate, ktesnippets_editor, kwrite</seg>
-        <seg>libkdeinit4_kwrite.so, libktexteditor_codesnippets_core.so, 
-	libkdeinit4_kate.so, libkateinterfaces.so, libkatepartinterfaces.so</seg>
-        <seg>...</seg>
+        <seg>kate, ktesnippets_editor and kwrite</seg>
+        <seg>libkateinterfaces.so, libkatepartinterfaces.so,
+        libkdeinit4_kate.so, libkdeinit4_kwrite.so,
+        libktexteditor_codesnippets_core.so and several in &kde-dir;/lib/kde4
+        </seg>
+        <seg>several in &kde-dir;/include and &kde-dir;/share</seg>
 @z

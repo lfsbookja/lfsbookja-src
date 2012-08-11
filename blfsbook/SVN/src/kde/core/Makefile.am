@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/kde4/core
+BOOKdir = $(top_builddir)/@bookdir@/kde/core
 CHANGE_FILES = \
 	attica.ch                   \
 	akonadi.ch                  \
@@ -13,11 +13,12 @@ CHANGE_FILES = \
 	config.ch                   \
 	core.ch                     \
 	kactivities.ch              \
-	kde4baseapps.ch             \
-	kde4libs.ch                 \
-	kde4pimlibs.ch              \
-	kde4runtime.ch              \
-	kde4workspace.ch            \
+	kde-baseapps.ch             \
+	kdelibs.ch                  \
+	kdepimlibs.ch               \
+	kde-runtime.ch              \
+	kde-workspace.ch            \
+	nepomuk-core.ch             \
 	oxygen-icons.ch             \
 	phonon.ch                   \
 	phonon-backend-gstreamer.ch \
@@ -46,11 +47,12 @@ automoc4.xml:                 $(BOOKdir)/$@ $(srcdir)/automoc4.ch
 config.xml:                   $(BOOKdir)/$@ $(srcdir)/config.ch
 core.xml:                     $(BOOKdir)/$@ $(srcdir)/core.ch
 kactivities.xml:              $(BOOKdir)/$@ $(srcdir)/kactivities.ch
-kde4baseapps.xml:             $(BOOKdir)/$@ $(srcdir)/kde4baseapps.ch
-kde4libs.xml:                 $(BOOKdir)/$@ $(srcdir)/kde4libs.ch
-kde4pimlibs.xml:              $(BOOKdir)/$@ $(srcdir)/kde4pimlibs.ch
-kde4runtime.xml:              $(BOOKdir)/$@ $(srcdir)/kde4runtime.ch
-kde4workspace.xml:            $(BOOKdir)/$@ $(srcdir)/kde4workspace.ch
+kde-baseapps.xml:             $(BOOKdir)/$@ $(srcdir)/kde-baseapps.ch
+kdelibs.xml:                  $(BOOKdir)/$@ $(srcdir)/kdelibs.ch
+kdepimlibs.xml:               $(BOOKdir)/$@ $(srcdir)/kdepimlibs.ch
+kde-runtime.xml:              $(BOOKdir)/$@ $(srcdir)/kde-runtime.ch
+kde-workspace.xml:            $(BOOKdir)/$@ $(srcdir)/kde-workspace.ch
+nepomuk-core.xml:             $(BOOKdir)/$@ $(srcdir)/nepomuk-core.ch
 oxygen-icons.xml:             $(BOOKdir)/$@ $(srcdir)/oxygen-icons.ch
 phonon.xml:                   $(BOOKdir)/$@ $(srcdir)/phonon.ch
 phonon-backend-gstreamer.xml: $(BOOKdir)/$@ $(srcdir)/phonon-backend-gstreamer.ch

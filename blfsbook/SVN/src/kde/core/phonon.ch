@@ -22,7 +22,7 @@
 @x
     <para><application>Phonon</application> is the multimedia API for KDE4.
     It replaces the old <application>aRts</application>, that is no longer
-    supported by KDE. It supports backends like GStreamer and VLC.</para>
+    supported by KDE. Phonon needs either the GStreamer or VLC backend.</para>
 @y
     <para>
     <application>Phonon</application> は KDE4 に対するマルチメディア API です。
@@ -82,7 +82,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>,
+    <xref linkend="automoc4"/> and
     <xref linkend="glib2"/>
     </para>
 @y
@@ -96,14 +96,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend='pulseaudio'/>, 
-      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+    <xref linkend='pulseaudio'/> and
+    <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
     </para>   
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend='pulseaudio'/>, 
-      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+    <xref linkend='pulseaudio'/>,
+    <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
     </para>   
 @z
 

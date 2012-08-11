@@ -105,11 +105,11 @@
 @z
 
 @x
-    <para>Install <application>polkit-qt</application> by running the following
+    <para>Install <application>Polkit-Qt</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>polkit-qt</application> をビルドします。
+    以下のコマンドを実行して <application>Polkit-Qt</application> をビルドします。
     </para>
 @z
 
@@ -152,7 +152,7 @@
 @z
 
 @x
-        <seg>None</seg>
+        <seg>none</seg>
         <seg>libpolkit-qt-agent-1.so, libpolkit-qt-core-1.so and libpolkit-qt-gui-1.so</seg>
 	<seg>&kde-dir;/include/polkit-qt-1</seg>
 @y

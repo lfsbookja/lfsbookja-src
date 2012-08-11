@@ -20,14 +20,13 @@
 @z
 
 @x
-    <para>The Common Unix Printing System (CUPS) is a print spooler and
-    associated utilities. It is based on the "Internet Printing
-    Protocol" and provides printing services to most PostScript and raster
-    printers.</para>
+      The Common Unix Printing System (CUPS) is a print spooler and
+      associated utilities. It is based on the "Internet Printing
+      Protocol" and provides printing services to most PostScript
+      and raster printers.
 @y
-    <para>汎用 Unix 印刷システム (The Common Unix Printing System; CUPS) は、プリントスプーラーであり関連ユーティリティを含みます。
-    これは "インターネット印刷プロトコル" ("Internet Printing Protocol") に準拠するもので、ほとんどの PostScript プリンターやラスタープリンターに対して印刷サービスを提供します。
-    </para>
+      汎用 Unix 印刷システム (The Common Unix Printing System; CUPS) は、プリントスプーラーであり関連ユーティリティを含みます。
+      これは "インターネット印刷プロトコル" ("Internet Printing Protocol") に準拠するもので、ほとんどの PostScript プリンターやラスタープリンターに対して印刷サービスを提供します。
 @z
 
 @x
@@ -37,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cups-download-http;"/></para>
+          Download (HTTP): <ulink url="&cups-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cups-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cups-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cups-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cups-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&cups-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cups-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cups-md5sum;</para>
+          Download MD5 sum: &cups-md5sum;
 @y
-        <para>&Download; MD5 sum: &cups-md5sum;</para>
+          &Download; MD5 sum: &cups-md5sum;
 @z
 
 @x
-        <para>Download size: &cups-size;</para>
+          Download size: &cups-size;
 @y
-        <para>&DownloadSize;: &cups-size;</para>
+          &DownloadSize;: &cups-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cups-buildsize;</para>
+          Estimated disk space required: &cups-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cups-buildsize;</para>
+          &Estimateddiskspacerequired;: &cups-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cups-time;</para>
+          Estimated build time: &cups-time;
 @y
-        <para>&Estimatedbuildtime;: &cups-time;</para>
+          &Estimatedbuildtime;: &cups-time;
 @z
 
 @x
@@ -81,62 +80,52 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>, and
-      <xref linkend="libtiff"/>
+      <xref linkend="colord"/>,
+      <xref linkend="dbus"/> and
+      <xref linkend="libusb"/>
     </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>, and
-      <xref linkend="libtiff"/>
+      <xref linkend="colord"/>,
+      <xref linkend="dbus"/>,
+      <xref linkend="libusb"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/>,
-      <xref linkend="libusb"/>,
       <xref linkend="acl"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="gnutls"/> or <xref linkend="openssl"/> (looked for in that
-      order), <xref linkend="mitkrb"/>,
-      <xref linkend="php"/>,
-      <xref linkend="gs"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="openjdk"/>,
-      <ulink url="http://portland.freedesktop.org/wiki/">Xdg-utils</ulink>,
-      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <xref linkend="avahi"/>,
+      <xref linkend="gnutls"/> or <xref linkend="openssl"/>,
       <ulink
       url="http://packages.debian.org/source/sid/libpaper">libpaper</ulink>,
-      <ulink url="http://www.easysw.com/htmldoc/">HTMLDOC</ulink>, and
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally used if
-      running the test suites)
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="openjdk"/>,
+      <xref linkend="php"/>,
+      <xref linkend="python2"/>,
+      <!-- <ulink url="http://valgrind.org/">Valgrind</ulink>
+      (optionaly used during the test suites) -->and
+      <xref linkend="xdg-utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/>,
-      <xref linkend="libusb"/>,
       <xref linkend="acl"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="gnutls"/> or <xref linkend="openssl"/> (looked for in that
-      order), <xref linkend="mitkrb"/>,
-      <xref linkend="php"/>,
-      <xref linkend="gs"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="openjdk"/>,
-      <ulink url="http://portland.freedesktop.org/wiki/">Xdg-utils</ulink>,
-      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <xref linkend="avahi"/>,
+      <xref linkend="gnutls"/> or <xref linkend="openssl"/>,
       <ulink
       url="http://packages.debian.org/source/sid/libpaper">libpaper</ulink>,
-      <ulink url="http://www.easysw.com/htmldoc/">HTMLDOC</ulink>, and
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally used if
-      running the test suites)
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="openjdk"/>,
+      <xref linkend="php"/>,
+      <xref linkend="python2"/>,
+      <!-- <ulink url="http://valgrind.org/">Valgrind</ulink>
+      (optionaly used during the test suites) -->and
+      <xref linkend="xdg-utils"/>
     </para>
 @z
 
@@ -153,37 +142,33 @@
 @z
 
 @x
-    <para>If you have a parallel printer enable the following options in your
-    kernel configuration and recompile the kernel:</para>
+        There is a conflict between the <application>Cups</application>
+        <application>libusb</application> backend and the usblp kernel
+        driver. If you want to use <application>Cups</application> with
+        <application>libusb</application> <emphasis>do not</emphasis>
+        enable USB Printer support in your kernel.
 @y
-    <para>If you have a parallel printer enable the following options in your
-    kernel configuration and recompile the kernel:</para>
+        There is a conflict between the <application>Cups</application>
+        <application>libusb</application> backend and the usblp kernel
+        driver. If you want to use <application>Cups</application> with
+        <application>libusb</application> <emphasis>do not</emphasis>
+        enable USB Printer support in your kernel.
 @z
 
 @x
-    <note><para>If you have a USB printer there is a conflict between the
-    <application>Cups</application> <application>libusb</application>
-    backend and the kernel driver. If you want to use
-    <application>Cups</application> with <application>libusb</application>
-    support <emphasis>do not</emphasis> enable USB Printer support in your
-    kernel and remove the <option>--disable-libusb</option> when you
-    configure <application>Cups</application>.</para></note>
+      If you want to use the kernel usblp driver enable the following
+      options in your kernel configuration and recompile the kernel:
 @y
-    <note><para>If you have a USB printer there is a conflict between the
-    <application>Cups</application> <application>libusb</application>
-    backend and the kernel driver. If you want to use
-    <application>Cups</application> with <application>libusb</application>
-    support <emphasis>do not</emphasis> enable USB Printer support in your
-    kernel and remove the <option>--disable-libusb</option> when you
-    configure <application>Cups</application>.</para></note>
+      If you want to use the kernel usblp driver enable the following
+      options in your kernel configuration and recompile the kernel:
 @z
 
 @x
-    <para>If you want to use the kernel usblp driver enable the following
-    options in your kernel configuration and recompile the kernel:</para>
+      If you have a parallel printer enable the following options in your
+      kernel configuration and recompile the kernel:
 @y
-    <para>If you want to use the kernel usblp driver enable the following
-    options in your kernel configuration and recompile the kernel:</para>
+      If you have a parallel printer enable the following options in your
+      kernel configuration and recompile the kernel:
 @z
 
 @x
@@ -193,65 +178,99 @@
 @z
 
 @x
-    <para>Create an <systemitem class="username">lp</systemitem> user, as
-    <application>Cups</application> will create some files owned by this user.
-    (The <systemitem class="username">lp</systemitem> user is the default used
-    by <application>Cups</application>, but may be changed to a different user
-    by passing a parameter to the <command>configure</command> script.) Use the
-    following command as the <systemitem class="username">root</systemitem>
-    user:</para>
+      You will need to add the <systemitem class="username">lp</systemitem>
+      user, as <application>Cups</application> will create some files owned
+      by this user. (The <systemitem class="username">lp</systemitem> user
+      is the default used by <application>Cups</application>, but may be
+      changed to a different user by passing a parameter to the
+      <command>configure</command> script.) Use the following command as
+      the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Create an <systemitem class="username">lp</systemitem> user, as
-    <application>Cups</application> will create some files owned by this user.
-    (The <systemitem class="username">lp</systemitem> user is the default used
-    by <application>Cups</application>, but may be changed to a different user
-    by passing a parameter to the <command>configure</command> script.) Use the
-    following command as the <systemitem class="username">root</systemitem>
-    user:</para>
+      You will need to add the <systemitem class="username">lp</systemitem>
+      user, as <application>Cups</application> will create some files owned
+      by this user. (The <systemitem class="username">lp</systemitem> user
+      is the default used by <application>Cups</application>, but may be
+      changed to a different user by passing a parameter to the
+      <command>configure</command> script.) Use the following command as
+      the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Install <application>Cups</application> by running the
-    following commands:</para>
+      You will also need dedicated group that will contain users allowed to
+      do <application>Cups</application> administrative tasks. Add the group
+      by running the following command as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>Install <application>Cups</application> by running the
-    following commands:</para>
+      You will also need dedicated group that will contain users allowed to
+      do <application>Cups</application> administrative tasks. Add the group
+      by running the following command as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. This will
-    run a basic test suite without any load testing. If you wish to run the
-    tests specifying non-default parameters, issue:
-    <command>make test</command>. Note that the <quote>torture load
-    testing</quote> test uses more resources than those displayed in the
-    prompt.</para>
+      If you want to add an user to the <application>Cups</application>
+      administrative group, run the following command as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>To test the results, issue: <command>make check</command>. This will
-    run a basic test suite without any load testing. If you wish to run the
-    tests specifying non-default parameters, issue:
-    <command>make test</command>. Note that the <quote>torture load
-    testing</quote> test uses more resources than those displayed in the
-    prompt.</para>
+      If you want to add an user to the <application>Cups</application>
+      administrative group, run the following command as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      If you didn't install <xref linkend="xdg-utils"/>, use the following
+      <command>sed</command> to change the default browser that will be used
+      to access the <application>Cups</application> web interface:
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      If you didn't install <xref linkend="xdg-utils"/>, use the following
+      <command>sed</command> to change the default browser that will be used
+      to access the <application>Cups</application> web interface:
 @z
 
 @x
-    <para>The <application>man</application> files are installed in compressed
-    (<filename class="extension">.gz</filename>) format. If desired, use the
-    following commands to uncompress them as the 
-    <systemitem class="username">root</systemitem> user:</para>
+      Replace <command>firefox</command> with the web browser of your
+      choice.
 @y
-    <para>The <application>man</application> files are installed in compressed
-    (<filename class="extension">.gz</filename>) format. If desired, use the
-    following commands to uncompress them as the 
-    <systemitem class="username">root</systemitem> user:</para>
+      Replace <command>firefox</command> with the web browser of your
+      choice.
+@z
+
+@x
+      Install <application>Cups</application> by running the
+      following commands:
+@y
+      Install <application>Cups</application> by running the
+      following commands:
+@z
+
+@x
+     This package does not have working testsuite.
+@y
+     This package does not have working testsuite.
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
+@y
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
+@z
+
+@x
+      If you have built <application>Cups</application> with
+      <application>libusb</application> support, fix the
+      backend permissions so that it will be executed as the
+      <systemitem class="username">root</systemitem> user.
+      Run the following command as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      If you have built <application>Cups</application> with
+      <application>libusb</application> support, fix the
+      backend permissions so that it will be executed as the
+      <systemitem class="username">root</systemitem> user.
+      Run the following command as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -261,45 +280,23 @@
 @z
 
 @x
-    <para><command>sed -i 's#@CUPS_HTMLVIEW@#firefox#' ...</command>: This
-     changes the browser that the <application>Cups</application> desktop file
-     uses for its web interface.</para>
+      <parameter>--with-rcdir=/tmp/cupsinit</parameter>: This switch tells
+      build process to install the shipped bootscript into
+      <filename class="directory">/tmp</filename> instead of
+      <filename class="directory">/etc/rc.d</filename>.
 @y
-    <para><command>sed -i 's#@CUPS_HTMLVIEW@#firefox#' ...</command>: This
-     changes the browser that the <application>Cups</application> desktop file
-     uses for its web interface.</para>
+      <parameter>--with-rcdir=/tmp/cupsinit</parameter>: This switch tells
+      build process to install the shipped bootscript into
+      <filename class="directory">/tmp</filename> instead of
+      <filename class="directory">/etc/rc.d</filename>.
 @z
 
 @x
-    <para><option>--localstatedir=/var</option>: This changes the location of
-    the cache, log, run and spool directories from /usr/var to /var.</para>
+      <option>--disable-libusb</option>: Use this switch if you have installed
+      <xref linkend="libusb"/>, but wish to use the kernel usblp driver.
 @y
-    <para><option>--localstatedir=/var</option>: This changes the location of
-    the cache, log, run and spool directories from /usr/var to /var.</para>
-@z
-
-@x
-    <para><option>--disable-libusb</option>: This disables the
-    <application>Cups</application> <application>libusb</application> backend.
-    If you&apos;d like <application>Cups</application> to use
-    <application>libusb</application>, delete this option and make sure you
-    compile your kernel with: # CONFIG_USB_PRINTER is not set</para>
-@y
-    <para><option>--disable-libusb</option>: This disables the
-    <application>Cups</application> <application>libusb</application> backend.
-    If you&apos;d like <application>Cups</application> to use
-    <application>libusb</application>, delete this option and make sure you
-    compile your kernel with: # CONFIG_USB_PRINTER is not set</para>
-@z
-
-@x
-    <para><option>--with-rcdir=/tmp/cupsinit</option>: This option makes it install its
-    bootscript into <filename class="directory">/tmp</filename> instead of
-    <filename class="directory">/etc/rc.d</filename>.</para>
-@y
-    <para><option>--with-rcdir=/tmp/cupsinit</option>: This option makes it install its
-    bootscript into <filename class="directory">/tmp</filename> instead of
-    <filename class="directory">/etc/rc.d</filename>.</para>
+      <option>--disable-libusb</option>: Use this switch if you have installed
+      <xref linkend="libusb"/>, but wish to use the kernel usblp driver.
 @z
 
 @x
@@ -309,41 +306,41 @@
 @z
 
 @x
-    <para>Configuration of <application>Cups</application> is dependent on
-    the type of printer and can be complex. Generally, PostScript printers
-    are easier. For detailed instructions on configuration and use of
-    <application>Cups</application>, see <ulink
-    url="http://www.cups.org/documentation.php"/>. The Software Administrators
-    Manual and Software Users Manual are particularly useful.</para>
+      Configuration of <application>Cups</application> is dependent on
+      the type of printer and can be complex. Generally, PostScript printers
+      are easier. For detailed instructions on configuration and use of
+      <application>Cups</application>, see <ulink
+      url="http://www.cups.org/documentation.php"/>. The Software
+      Administrators Manual and Software Users Manual are particularly useful.
 @y
-    <para>Configuration of <application>Cups</application> is dependent on
-    the type of printer and can be complex. Generally, PostScript printers
-    are easier. For detailed instructions on configuration and use of
-    <application>Cups</application>, see <ulink
-    url="http://www.cups.org/documentation.php"/>. The Software Administrators
-    Manual and Software Users Manual are particularly useful.</para>
+      Configuration of <application>Cups</application> is dependent on
+      the type of printer and can be complex. Generally, PostScript printers
+      are easier. For detailed instructions on configuration and use of
+      <application>Cups</application>, see <ulink
+      url="http://www.cups.org/documentation.php"/>. The Software
+      Administrators Manual and Software Users Manual are particularly useful.
 @z
 
 @x
-    <para>For non-PostScript printers to print with
-    <application>Cups</application>, you need to install <xref linkend="gs"/>
-    to convert PostScript to raster images and a driver (e.g., from
-    <xref linkend="gutenprint"/>) to convert the resulting raster images to a
-    form that the printer understands.
-    <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
-    drivers use Ghostscript to convert PostScript to a printable form directly,
-    but this is considered to be a hack by
-    <application>Cups</application> developers.</para>
+      For non-PostScript printers to print with
+      <application>Cups</application>, you need to install <xref linkend="gs"/>
+      to convert PostScript to raster images and a driver (e.g., from
+      <xref linkend="gutenprint"/>) to convert the resulting raster images to a
+      form that the printer understands.
+      <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
+      drivers use Ghostscript to convert PostScript to a printable form directly,
+      but this is considered to be a hack by <application>Cups</application>
+      developers.
 @y
-    <para>For non-PostScript printers to print with
-    <application>Cups</application>, you need to install <xref linkend="gs"/>
-    to convert PostScript to raster images and a driver (e.g., from
-    <xref linkend="gutenprint"/>) to convert the resulting raster images to a
-    form that the printer understands.
-    <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
-    drivers use Ghostscript to convert PostScript to a printable form directly,
-    but this is considered to be a hack by
-    <application>Cups</application> developers.</para>
+      For non-PostScript printers to print with
+      <application>Cups</application>, you need to install <xref linkend="gs"/>
+      to convert PostScript to raster images and a driver (e.g., from
+      <xref linkend="gutenprint"/>) to convert the resulting raster images to a
+      form that the printer understands.
+      <ulink url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
+      drivers use Ghostscript to convert PostScript to a printable form directly,
+      but this is considered to be a hack by <application>Cups</application>
+      developers.
 @z
 
 @x
@@ -353,13 +350,15 @@
 @z
 
 @x
-      <para>If you want the <application>Cups</application> to start
-      automatically when the system is booted, install the init script included
-      in the <xref linkend="bootscripts"/> package:</para>
+        If you want the <application>Cups</application> to start
+        automatically when the system is booted, install the init
+        script included in the <xref linkend="bootscripts"/>
+        package:
 @y
-      <para>If you want the <application>Cups</application> to start
-      automatically when the system is booted, install the init script included
-      in the <xref linkend="bootscripts"/> package:</para>
+        If you want the <application>Cups</application> to start
+        automatically when the system is booted, install the init
+        script included in the <xref linkend="bootscripts"/>
+        package:
 @z
 
 @x
@@ -379,29 +378,53 @@
 @z
 
 @x
-        <seg>accept, cancel, cups-config, cupsaccept, cupsaddsmb, cupsctl,
-        cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject, cupstestdsc,
-        cupstestppd, lp, lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
-        lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge, ppdpo,
-        reject</seg>
-        <seg>libcups.so, libcupscgi.so, libcupsdriver.so,
-        libcupsimage.so, libcupsmime.so, libcupsppdc.so, and
-        various filters and backend drivers</seg>
-        <seg>/etc/cups, /usr/include/cups, /usr/lib/cups, /usr/share/cups,
-        /usr/share/doc/cups-&cups-version;, /var/cache/cups, /var/log/cups,
-        /var/run/cups and /var/spool/cups.</seg>
+        <seg>
+          accept, cancel, cupsaccept, cupsaddsmb, cups-config,
+          cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter,
+          cupsreject, cupstestdsc, cupstestppd, ipptool, lp,
+          lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
+          lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge,
+          ppdpo and reject
+        </seg>
+        <seg>
+          libcupscgi.so, libcupsimage.so, libcupsmime.so,
+          libcupsppdc.so and libcups.so
+        </seg>
+        <seg>
+          /etc/cups,
+          /usr/include/cups,
+          /usr/lib/cups,
+          /usr/share/cups,
+          /usr/share/doc/cups-&cups-version;,
+          /var/cache/cups,
+          /var/log/cups,
+          /var/run/cups and
+          /var/spool/cups
+        </seg>
 @y
-        <seg>accept, cancel, cups-config, cupsaccept, cupsaddsmb, cupsctl,
-        cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject, cupstestdsc,
-        cupstestppd, lp, lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
-        lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge, ppdpo,
-        reject</seg>
-        <seg>libcups.so, libcupscgi.so, libcupsdriver.so,
-        libcupsimage.so, libcupsmime.so, libcupsppdc.so, and
-        various filters and backend drivers</seg>
-        <seg>/etc/cups, /usr/include/cups, /usr/lib/cups, /usr/share/cups,
-        /usr/share/doc/cups-&cups-version;, /var/cache/cups, /var/log/cups,
-        /var/run/cups and /var/spool/cups.</seg>
+        <seg>
+          accept, cancel, cupsaccept, cupsaddsmb, cups-config,
+          cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter,
+          cupsreject, cupstestdsc, cupstestppd, ipptool, lp,
+          lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
+          lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge,
+          ppdpo and reject
+        </seg>
+        <seg>
+          libcupscgi.so, libcupsimage.so, libcupsmime.so,
+          libcupsppdc.so and libcups.so
+        </seg>
+        <seg>
+          /etc/cups,
+          /usr/include/cups,
+          /usr/lib/cups,
+          /usr/share/cups,
+          /usr/share/doc/cups-&cups-version;,
+          /var/cache/cups,
+          /var/log/cups,
+          /var/run/cups and
+          /var/spool/cups
+        </seg>
 @z
 
 @x
@@ -411,56 +434,36 @@
 @z
 
 @x accept
-          <para>instructs the printing system to accept print jobs to the
-          specified destinations.</para>
+            instructs the printing system to accept print jobs to the
+            specified destinations.
 @y
-          <para>instructs the printing system to accept print jobs to the
-          specified destinations.</para>
+            instructs the printing system to accept print jobs to the
+            specified destinations.
 @z
 
-@x
-          <para>cancels existing print jobs from the print queues.</para>
+@x cancel
+            cancels existing print jobs from the print queues.
 @y
-          <para>cancels existing print jobs from the print queues.</para>
+            cancels existing print jobs from the print queues.
 @z
 
 @x cups-config
-          <para>is a <application>Cups</application>
-          program configuration utility.</para>
+            is a <application>Cups</application>
+            program configuration utility.
 @y
-          <para>is a <application>Cups</application>
-          program configuration utility.</para>
-@z
-
-@x cupsaddsmb
-          <para>exports printers to the <application>Samba</application>
-          software for use with Windows clients.</para>
-@y
-          <para>exports printers to the <application>Samba</application>
-          software for use with Windows clients.</para>
+            is a <application>Cups</application>
+            program configuration utility.
 @z
 
 @x cupsd
-          <para>is the scheduler for the Common Unix Printing System.</para>
+            is the scheduler for the Common Unix Printing System.
 @y
-          <para>is the scheduler for the Common Unix Printing System.</para>
+            is the scheduler for the Common Unix Printing System.
 @z
 
 @x cupstestppd
-          <para>tests the conformance of PPD files.</para>
+            tests the conformance of PPD files.
 @y
-          <para>tests the conformance of PPD files.</para>
-@z
-
-@x disable
-          <para>stops the named printers or classes.</para>
-@y
-          <para>stops the named printers or classes.</para>
-@z
-
-@x enable
-          <para>starts the named printers or classes.</para>
-@y
-          <para>starts the named printers or classes.</para>
+            tests the conformance of PPD files.
 @z
 

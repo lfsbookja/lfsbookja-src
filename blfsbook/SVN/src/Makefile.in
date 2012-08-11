@@ -186,7 +186,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = appendices book general gnome introduction kde4 \
+SUBDIRS = appendices book general gnome introduction kde \
 	networking \
 	multimedia postlfs pst server stylesheets template x \
 	xfce xincludes xsoft

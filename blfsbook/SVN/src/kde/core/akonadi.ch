@@ -20,15 +20,15 @@
 @z
 
 @x
-    <para><application>Akonadi</application> is an extensible cross-desktop storage 
-    service for PIM data and meta data providing concurrent read, write, and query 
-    access. It will provide unique desktop wide object identification and retrieval.</para>
+    <para><application>Akonadi</application> is an extensible cross-desktop 
+    storage service for PIM data and metadata providing concurrent read, write,
+    and query access. It provides unique desktop-wide object identification and
+    retrieval.</para>
 @y
-    <para>
-    <application>Akonadi</application> is an extensible cross-desktop storage 
-    service for PIM data and meta data providing concurrent read, write, and query 
-    access. It will provide unique desktop wide object identification and retrieval.
-    </para>
+    <para><application>Akonadi</application> is an extensible cross-desktop 
+    storage service for PIM data and metadata providing concurrent read, write,
+    and query access. It provides unique desktop-wide object identification and
+    retrieval.</para>
 @z
 
 @x
@@ -141,10 +141,19 @@
 @z
 
 @x
-    <para><option>CMAKE_PREFIX_PATH=&qt-dir;</option>: This option is set to find automoc4.</para>
+    <para><command>sed -i 's#qt4/plugins...</command>: This sed fixes the 
+    installation path of the SQLite plugin.</para>
+@y
+    <para><command>sed -i 's#qt4/plugins...</command>: This sed fixes the 
+    installation path of the SQLite plugin.</para>
+@z
+
+@x
+    <para><option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>: This option is set to
+    find automoc4.</para>
 @y
     <para>
-    <option>CMAKE_PREFIX_PATH=&qt-dir;</option>:
+    <option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>:
     本オプションは automoc4 を見出すためのものです。
     </para>
 @z
@@ -166,13 +175,15 @@
 @z
 
 @x
-        <seg>akonadi_agent_server, akonadi_agent_launcher, akonadiserver, 
-        akonadictl, akonadi_control and akonadi_rds</seg>
+        <seg>akonadi_agent_launcher, akonadi_agent_server, akonadi_control,
+        akonadi_rds, akonadictl and akonadiserver</seg>
         <seg>libakonadiprotocolinternals.so and libqsqlite3.so</seg>
-	<seg>&kde-dir;/share/config/akonadi and &kde-dir;/include/akonadi</seg>
+	<seg>&kde-dir;/include/akonadi, &kde-dir;/lib/cmake/Akonadi and 
+	&kde-dir;/share/config/akonadi</seg>
 @y
-        <seg>akonadi_agent_server, akonadi_agent_launcher, akonadiserver, 
-        akonadictl, akonadi_control, akonadi_rds</seg>
+        <seg>akonadi_agent_launcher, akonadi_agent_server, akonadi_control,
+        akonadi_rds, akonadictl, akonadiserver</seg>
         <seg>libakonadiprotocolinternals.so, libqsqlite3.so</seg>
-	<seg>&kde-dir;/share/config/akonadi, &kde-dir;/include/akonadi</seg>
+	<seg>&kde-dir;/include/akonadi, &kde-dir;/lib/cmake/Akonadi,
+	&kde-dir;/share/config/akonadi</seg>
 @z

@@ -35,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&kderuntime-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&kde-runtime-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&kderuntime-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&kde-runtime-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&kderuntime-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&kde-runtime-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&kderuntime-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&kde-runtime-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &kderuntime-md5sum;</para>
+        <para>Download MD5 sum: &kde-runtime-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &kderuntime-md5sum;</para>
+        <para>Download MD5 sum: &kde-runtime-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &kderuntime-size;</para>
+        <para>Download size: &kde-runtime-size;</para>
 @y
-        <para>&DownloadSize;: &kderuntime-size;</para>
+        <para>Download size: &kde-runtime-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &kderuntime-buildsize;</para>
+        <para>Estimated disk space required: &kde-runtime-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &kderuntime-buildsize;</para>
+        <para>Estimated disk space required: &kde-runtime-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &kderuntime-time;</para>
+        <para>Estimated build time: &kde-runtime-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &kderuntime-time;</para>
+        <para>Estimated build time: &kde-runtime-time;</para>
 @z
 
 @x
@@ -91,13 +91,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/> and
+    <xref linkend="kactivities"/> and
     <xref linkend="libtirpc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>,
+    <xref linkend="kactivities"/>,
     <xref linkend="libtirpc"/>
     </para>
 @z
@@ -105,6 +105,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+    <xref linkend="nepomuk-core"/>,
     <xref linkend="alsa-lib"/>,
     <xref linkend="libjpeg"/> and 
     <xref linkend="exiv2"/>
@@ -112,8 +113,9 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+    <xref linkend="nepomuk-core"/>,
     <xref linkend="alsa-lib"/>,
-    <xref linkend="libjpeg"/>,
+    <xref linkend="libjpeg"/> and 
     <xref linkend="exiv2"/>
     </para>
 @z
@@ -159,11 +161,11 @@
 @z
 
 @x
-    <para>Install <application>kderuntime</application> by running the following
+    <para>Install <application>kde-runtime</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>kderuntime</application> をビルドします。
+    以下のコマンドを実行して <application>kde-runtime</application> をビルドします。
     </para>
 @z
 
@@ -182,12 +184,12 @@
 @z
 
 @x
- <para><option>patch -Np1 -i ../kde-runt...</option>: This patch fixes linking 
- to <application>libtirpc</application>.</para>
+ <para><option>patch -Np1 -i ../kde-runtime-&kde-version;-rpc_fix-1.patch</option>:
+ This patch fixes linking to <application>libtirpc</application>.</para>
 @y
  <para>
- <option>patch -Np1 -i ../kde-runt...</option>:
- このパッチは、<application>libtirpc</application> へのリンクを修正します。
+ <option>patch -Np1 -i ../kde-runtime-&kde-version;-rpc_fix-1.patch</option>:
+ このパッチは <application>libtirpc</application> へのリンクを修正します。
  </para>
 @z
 
@@ -208,23 +210,23 @@
 @z
 
 @x
-	<seg>kcmshell4, kde4, kde4-menu, kdebugdialog, kde-cp, keditfiletype, 
-	kde-mv, kde-open, kfile4, kglobalaccel, khelpcenter, khotnewstuff4, 
-	khotnewstuff-upload, kiconfinder, kioclient, kmimetypefinder, knotify4, 
-	kreadconfig, ksvgtopng, ktraderclient, ktrash, kwriteconfig, kquitapp, 
-	kstart, kuiserver, kwalletd, nepomukbackup, nepomukcontroller, nepomukindexer, 
-	nepomukserver, nepomukservicestub and nepomuk-simpleresource-rcgen, plasmapkg, 
-	plasma-remote-helper and solid-hardware</seg>
+        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kde4, kde4-menu,
+        kdebugdialog, keditfiletype, kfile4, kglobalaccel, khelpcenter,
+        khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
+        kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
+        ktraderclient, ktrash, kuiserver, kwalletd, kwriteconfig,
+        nepomukcontroller, plasma-remote-helper, plasmapkg and solid-hardware.
+        </seg>
         <seg>several in &kde-dir;/lib</seg>
-        <seg>several in /etc/kde, &kde-dir;/include and &kde-dir;/share</seg>
+        <seg>several in &kde-dir;/lib and &kde-dir;/share</seg>
 @y
-	<seg>kcmshell4, kde4, kde4-menu, kdebugdialog, kde-cp, keditfiletype, 
-	kde-mv, kde-open, kfile4, kglobalaccel, khelpcenter, khotnewstuff4, 
-	khotnewstuff-upload, kiconfinder, kioclient, kmimetypefinder, knotify4, 
-	kreadconfig, ksvgtopng, ktraderclient, ktrash, kwriteconfig, kquitapp, 
-	kstart, kuiserver, kwalletd, nepomukbackup, nepomukcontroller, nepomukindexer, 
-	nepomukserver, nepomukservicestub and nepomuk-simpleresource-rcgen, plasmapkg, 
-	plasma-remote-helper, solid-hardware</seg>
-        <seg>&kde-dir;/lib 内に各種のライブラリ</seg>
-        <seg>/etc/kde, &kde-dir;/include, &kde-dir;/share の各ディレクトリ</seg>
+        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kde4, kde4-menu,
+        kdebugdialog, keditfiletype, kfile4, kglobalaccel, khelpcenter,
+        khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
+        kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
+        ktraderclient, ktrash, kuiserver, kwalletd, kwriteconfig,
+        nepomukcontroller, plasma-remote-helper, plasmapkg and solid-hardware.
+        </seg>
+        <seg>several in &kde-dir;/lib</seg>
+        <seg>several in &kde-dir;/lib and &kde-dir;/share</seg>
 @z
