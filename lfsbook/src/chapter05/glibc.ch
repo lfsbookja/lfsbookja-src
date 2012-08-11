@@ -32,27 +32,6 @@
 @z
 
 @x
-     <para>Address a header check that fails due to an incomplete build
-     environment at this point:</para>
-@y
-     <para>
-     この時点での構築環境が不十分であるために処理に失敗することから、ヘッダーチェックを修正します。
-     </para>
-@z
-
-@x
-    <para>Fix a path that is hardcoded:</para>
-@y
-    <para>ハードコーディングされているパスを修正します。</para>
-@z
-
-@x
-  <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
-@y
-  <para>Glibc が GCC-&gcc-version; ではビルドできなくなるバグを修正します。</para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
@@ -79,6 +58,14 @@
     もっとも試してみれば分かりますが、ビルド時の変数<quote>CFLAGS</quote>にて設定しておくのが一番です。
     Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設定するのとは別に <filename>configparms</filename> ファイルという特別なファイルを使って CFLAGS に対して追加設定を行うこともできます。
     -mtune=native というフラグも必要で -march を設定した際に変更される -mtune の値を適切にリセットします。
+    </para>
+@z
+
+@x
+    <para>Fix an issue when building Glibc-&glibc-version; with GCC-&gcc-version;:</para>
+@y
+    <para>
+    Glibc-&glibc-version; を GCC-&gcc-version; にてビルドする際の問題を以下により解消します。
     </para>
 @z
 

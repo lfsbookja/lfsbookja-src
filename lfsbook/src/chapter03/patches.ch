@@ -112,34 +112,6 @@
 @z
 
 @x
-      <term>Glibc Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc Fixes Patch - <token>&glibc-fixes-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&glibc-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-fixes-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
-      <term>Glibc GCC Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Glibc GCC Fix Patch - <token>&glibc-gcc_fix-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&glibc-gcc_fix-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-gcc_fix-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>

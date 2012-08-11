@@ -108,6 +108,14 @@
 @z
 
 @x
+    <para>Fix an incompatibility between this package and Glibc-&glibc-version;:</para>
+@y
+    <para>
+    本パッケージと Glibc-&glibc-version; との互換性がないため、これを修正します。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

@@ -28,6 +28,20 @@
 @z
 
 @x
+    <para>Fix an incompatibility between this package and Glibc-&glibc-version;</para>
+@y
+    <para>
+    本パッケージと Glibc-&glibc-version; との互換性がないため、これを修正します。
+    </para>
+@z
+
+@x
+    <para>Prepare Inetutils for compilation:</para>
+@y
+    <para>&PreparePackage1;Inetutils&PreparePackage2;</para>
+@z
+
+@x
       <title>The meaning of the configure options:</title>
 @y
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>

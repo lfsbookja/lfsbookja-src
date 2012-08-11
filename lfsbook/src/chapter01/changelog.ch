@@ -48,6 +48,89 @@
 @z
 
 @x
+      <para>2012-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Install a couple more files from the tzdata tarball
+          so that tzselect works again.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - tzselect が正常動作するように、再度 tzdata tarball からさらにいくつかのファイルをインストールすることに。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-08-05</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - Upgrade to IPRoute2-3.5.0.  Fixes
+           <ulink url="&lfs-ticket-root;3148">#3148</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Tcl-8.5.12.  Fixes
+           <ulink url="&lfs-ticket-root;3147">#3147</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to E2fsprogs-1.42.5.  Fixes
+           <ulink url="&lfs-ticket-root;3146">#3146</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to MPC-1.0. Fixes
+           <ulink url="&lfs-ticket-root;3142">#3142</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Bison-2.6.2. Fixes
+           <ulink url="&lfs-ticket-root;3140">#3140</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Linux-3.5. Fixes
+           <ulink url="&lfs-ticket-root;3138">#3138</ulink>.</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Upgrade to Glibc-2.16.0. Fixes
+           <ulink url="&lfs-ticket-root;3131">#3131</ulink>.</para>
+         </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-05</para>
+      <itemizedlist>
+         <listitem>
+           <para>[matthew] - IPRoute2-3.5.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3148">#3148</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Tcl-8.5.12 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3147">#3147</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - E2fsprogs-1.42.5 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3146">#3146</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - MPC-1.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3142">#3142</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Bison-2.6.2 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3140">#3140</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Linux-3.5 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3138">#3138</ulink> を Fix に。</para>
+         </listitem>
+         <listitem>
+           <para>[matthew] - Glibc-2.16.0 へのアップグレード。
+           <ulink url="&lfs-ticket-root;3131">#3131</ulink> を Fix に。</para>
+         </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-07-25</para>
       <itemizedlist>
          <listitem>

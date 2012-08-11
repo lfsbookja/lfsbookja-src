@@ -34,7 +34,7 @@
 @x
     <para>Compile the package:</para>
 @y
-    <para>CompileThePackage;</para>
+    <para>&CompileThePackage;</para>
 @z
 
 @x

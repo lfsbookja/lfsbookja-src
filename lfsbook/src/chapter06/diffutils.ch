@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>Fix an incompatibility between this package and Glibc-&glibc-version;</para>
+@y
+    <para>
+    本パッケージと Glibc-&glibc-version; との互換性がないため、これを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Diffutils for compilation:</para>
 @y
     <para>&PreparePackage1;Diffutils&PreparePackage2;</para>

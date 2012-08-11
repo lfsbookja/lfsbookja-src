@@ -69,30 +69,21 @@
 @z
 
 @x
-    <para>When running <command>make install</command>, a script called
-    <filename>test-installation.pl</filename> performs a small sanity test on
-    our newly installed Glibc. However, because our toolchain still points to
-    the <filename class="directory">/tools</filename> directory, the sanity
-    test would be carried out against the wrong Glibc. We can force the script
-    to check the Glibc we have just installed with the following:</para>
+    <para>Fix a bug that causes the build to fail:</para>
 @y
-    <para>
-    <command>make install</command> を実行すると <filename>test-installation.pl</filename> というスクリプトが実行され、新たに作り出された Glibc に対しての簡単な健全性テストが実施されます。
-    しかしこの時点ではツールチェーンが <filename class="directory">/tools</filename> ディレクトリを指し示しているため、誤った Glibc を対象としてテストが実施されてしまいます。
-    このスクリプトのテスト対象が、これから作り出す Glibc となるように以下を実行します。
-    </para>
+    <para>ビルドが失敗するバグを修正します。</para>
 @z
 
 @x
-    <para>In addition, there is a bug in the
-    <filename>test-installation.pl</filename> script in that it tries to link
-    a test program to a library that isn't installed by
-    <command>make install</command>.  Issue the following <command>sed</command>
-    command to fix it:</para>
+    <para>When running <command>make install</command>, a script called
+    <filename>test-installation.pl</filename> performs a small sanity test on
+    our newly installed Glibc. However, it contains a bug that causes it to
+    fail, so prevent it from running by issuing the following command:</para>
 @y
     <para>
-    また <filename>test-installation.pl</filename> スクリプトにはバグがあり、<command>make install</command> ではインストールされないライブラリに、テストプログラムをリンクしてしまいます。
-    そこで以下の <command>sed</command> コマンドを実行してこれを修正します。
+    <command>make install</command> の実行時には <filename>test-installation.pl</filename> スクリプトが呼び出され、ここで作り出された新たな Glibc に対しての健全性テスト (sanity test) が実行されます。
+    テストが失敗するバグが含まれるため、テストが正常実行できません。
+    そこでこれを回避するために以下のコマンドを実行します。
     </para>
 @z
 
@@ -108,20 +99,6 @@
     デフォルトで記述されているインタープリターを <command>/bin/bash</command> に変更します。
     BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink> で説明しているように、別の <command>/bin/sh</command> がインストールされている場合もあるからです。
     </para>
-@z
-
-@x
-  <para>Fix a bug that causes several BLFS packages to segfault:</para>
-@y
-  <para>
-  BLFS におけるパッケージにて、セグメンテーションフォールトを引き起こすことがあるため、これを修正します。
-  </para>
-@z
-
-@x
-  <para>Fix a bug that prevents Glibc from building with GCC-&gcc-version;:</para>
-@y
-  <para>Glibc が GCC-&gcc-version; ではビルドできなくなるバグを修正します。</para>
 @z
 
 @x
@@ -402,6 +379,12 @@ minor timing issues が何を意味するのか不明であった。
     <para>
     以下のコマンドを実行して <filename>/etc/nsswitch.conf</filename> ファイルを生成します。
     </para>
+@z
+
+@x
+    <para>Install timezone data:</para>
+@y
+    <para>タイムゾーンデータをインストールします。</para>
 @z
 
 @x

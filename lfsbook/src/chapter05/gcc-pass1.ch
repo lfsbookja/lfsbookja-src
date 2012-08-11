@@ -114,6 +114,18 @@
 @z
 
 @x
+    <para>GCC doesn't detect stack protection correctly, which causes problems
+    for the build of Glibc-&glibc-version;, so fix that by issuing the following
+    command:</para>
+@y
+    <para>
+    GCC はスタックプロテクション (stack protection) を正しく検出しません。
+    このことは Glibc-&glibc-version; においてビルドする際には問題となります。
+    そこで以下のコマンドを実行することで解消します。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC outside of the
     source directory in a dedicated build directory:</para>
 @y
