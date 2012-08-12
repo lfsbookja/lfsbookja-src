@@ -28,6 +28,16 @@
 @z
 
 @x
+        Pkg-config is part of LFS, but was omitted from  the 7.0 and 7.1
+        releases. If you are using a system which includes it, there is
+        nothing more to do. If not, you should follow these instructions.
+@y
+        Pkg-config は LFS に含まれるようになりましたが、バージョン 7.0 や 7.1 では含まれていません。
+        このパッケージが既に含まれているシステムであれば、ここでの作業を行う必要がありません。
+        逆に含まれていなければ、ここに示す手順に従ってください。
+@z
+
+@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
@@ -112,8 +122,8 @@
       <option>--with-internal-glib</option>: This switch causes
       the package to use the shipped version of GLib2.
 @y
-      <option>--with-internal-glib</option>: This switch causes
-      the package to use the shipped version of GLib2.
+      <option>--with-internal-glib</option>:
+      このスイッチは、本パッケージ内に含まれる GLib2 を使って本パッケージをビルドすることを指示します。
 @z
 
 @x

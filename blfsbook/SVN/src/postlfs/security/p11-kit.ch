@@ -23,8 +23,7 @@
       The <application>p11-kit</application> package Provides a way to load and
       enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.
 @y
-      The <application>p11-kit</application> package Provides a way to load and
-      enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.
+      <application>p11-kit</application> パッケージは、PKCS #11 (暗号トークンインターフェース標準; Cryptographic Token Interface Standard) モジュールをロードし繰返し処理を実現するための機能を提供します。
 @z
 
 @x
@@ -67,6 +66,24 @@
           Estimated build time: &p11-kit-time;
 @y
           &Estimatedbuildtime;: &p11-kit-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">p11-kit Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;p11-kit&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -152,4 +169,17 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x libp11-kit.so
+            contains functions used to coordinate initialization and 
+            finalization of any PKCS#11 module.
+@y
+            あらゆる PKCS#11 モジュールの初期化や終了化を行う機能を提供します。
+@z
+
+@x p11-kit-proxy.so
+            is the PKCS#11 proxy module.
+@y
+            PKCS#11 プロキシーモジュール。
 @z

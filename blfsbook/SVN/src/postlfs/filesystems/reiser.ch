@@ -98,7 +98,7 @@
   Reiserfs support: M or Y</literal></screen>
 @y
 <screen><literal>File Systems:
-  Reiserfs support: M または Y</literal></screen>
+  Reiserfs support: M or Y</literal></screen>
 @z
 
 @x

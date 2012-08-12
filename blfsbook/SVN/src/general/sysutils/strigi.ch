@@ -151,14 +151,17 @@
     <para>Install <application>strigi</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>strigi</application> by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して <application>strigi</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -168,13 +171,25 @@
 @z
 
 @x
+    <para><command>sed -i '/stdio/a...</command>: This sed fixes compiling with
+    <application>GCC</application> 4.7. It is safe to omit if compiling with older 
+    <application>GCC</application> versions.</para>
+@y
+    <para><command>sed -i '/stdio/a...</command>:
+    この sed コマンドは、<application>GCC</application> 4.7 によりコンパイルできるようにします。
+    <application>GCC</application> がこれよりも古いバージョンを用いる場合には、このコマンドを実行しなくて構いません。
+    </para>
+@z
+
+@x
     <para><command>patch -Np1 -i ../strigi-&strigi-version;-ffmpeg.patch</command>: This
     patch fixes compiling with <application>ffmpeg</application>. It is safe to omit 
     if you don't have <application>ffmpeg</application>.</para>
 @y
-    <para><command>patch -Np1 -i ../strigi-&strigi-version;-ffmpeg.patch</command>: This
-    patch fixes compiling with <application>ffmpeg</application>. It is safe to omit 
-    if you don't have <application>ffmpeg</application>.</para>
+    <para><command>patch -Np1 -i ../strigi-&strigi-version;-ffmpeg.patch</command>:
+    このパッチは <application>ffmpeg</application> とともにコンパイルするためのものです。
+    <application>ffmpeg</application> をインストールしていない場合は、このコマンドを実行しなくて構いません。
+    </para>
 @z
 
 @x

@@ -23,8 +23,7 @@
       The <application>spice-gtk</application> package contains 
       a Gtk client and libraries for SPICE remote desktop servers.
 @y
-      The <application>spice-gtk</application> package contains 
-      a Gtk client and libraries for SPICE remote desktop servers.
+      <application>spice-gtk</application> パッケージは、SPICE リモートデスクトップサーバーに対する Gtk クライアントおよびライブラリを提供します。
 @z
 
 @x
@@ -132,33 +131,32 @@
 @x
     <title>Installation of spice-gtk</title>
 @y
-    <title>Installation of spice-gtk</title>
+    <title>&InstallationOf1;spice-gtk&InstallationOf2;</title>
 @z
 
 @x
       Install <application>spice-gtk</application> by running the following
       commands:
 @y
-      Install <application>spice-gtk</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>spice-gtk</application> をビルドします。
 @z
 
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -166,23 +164,24 @@
       building of the Vala bindings. Remove if you don't have
       <xref linkend="vala"/> installed.
 @y
-      <option>--enable-vala</option>: This option enables
-      building of the Vala bindings. Remove if you don't have
-      <xref linkend="vala"/> installed.
+      <option>--enable-vala</option>:
+      このオプションは Vala バインディングを生成することを指示します。
+      <xref linkend="vala"/> をインストールしている場合はこれを取り除いてください。
 @z
 
 @x
       <option>--disable-smartcard</option>: This option disables use of 
       libcacard. Remove if you have libcacard installed.
 @y
-      <option>--disable-smartcard</option>: This option disables use of 
-      libcacard. Remove if you have libcacard installed.
+      <option>--disable-smartcard</option>:
+      このオプションは libcacard の利用を無効にします。
+      libcacard をインストールしている場合はこれを取り除いてください。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -190,9 +189,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -209,14 +208,14 @@
         </seg>
 @y
         <seg>
-          snappy, spicy and spicy-stats
+          snappy, spicy, spicy-stats
         </seg>
         <seg>
-          libspice-client-glib-2.0.so, libspice-client-gtk-3.0.so
-          and libspice-controller.so
+          libspice-client-glib-2.0.so, libspice-client-gtk-3.0.so,
+          libspice-controller.so
         </seg>
         <seg>
-          /usr/include/{spice-client-glib-2.0,spice-client-gtk-3.0,spice-controller} and
+          /usr/include/{spice-client-glib-2.0,spice-client-gtk-3.0,spice-controller},
           /usr/share/gtk-doc/spice-gtk
         </seg>
 @z
@@ -224,7 +223,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x snappy

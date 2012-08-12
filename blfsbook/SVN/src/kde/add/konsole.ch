@@ -139,9 +139,9 @@
         <seg>&kde-dir;/share/apps/konsole and
         &kde-dir;/share/doc/HTML/en/konsole</seg>
 @y
-        <seg>konsole and konsoleprofile</seg>
+        <seg>konsole, konsoleprofile</seg>
         <seg>libkdeinit4_konsole.so, libkonsolepart.so and libkonsoleprivate.so
         </seg>
-        <seg>&kde-dir;/share/apps/konsole and
+        <seg>&kde-dir;/share/apps/konsole,
         &kde-dir;/share/doc/HTML/en/konsole</seg>
 @z

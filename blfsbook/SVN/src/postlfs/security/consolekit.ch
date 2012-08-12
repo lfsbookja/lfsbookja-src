@@ -170,10 +170,9 @@
       to access device nodes normally only accessible to
       <systemitem class="username">root</systemitem>.
 @y
-      <option>--enable-udev-acl</option>: This switch enables building of the
-      <command>udev-acl</command> tool, which is used to allow normal users
-      to access device nodes normally only accessible to
-      <systemitem class="username">root</systemitem>.
+      <option>--enable-udev-acl</option>:
+      このスイッチは <command>udev-acl</command> ツールをビルドすることを指示します。
+      デバイスノードへは通常、<systemitem class="username">root</systemitem> ユーザーのみがアクセスできるものですが、このツールにより一般ユーザーでもアクセスできるようになります。
 @z
 
 @x
@@ -197,7 +196,7 @@
       build the API documentation.
 @y
       <option>--enable-docbook-docs</option>: 
-      <application>xmlto</application> をインストールしていて、API ドキュメントをインストールする場合にこのパラメーターを指定します。
+      <application>xmlto</application> をインストールしていて、API ドキュメントをインストールする場合にこのスイッチを指定します。
 @z
 
 @x
@@ -209,7 +208,7 @@
 @x
       <title>PAM Module Configuration</title>
 @y
-      <title>PAM Module Configuration</title>
+      <title>PAM モジュールの設定</title>
 @z
 
 @x
@@ -222,6 +221,22 @@
 @y
         <application>PAM</application> を導入している場合は、<application>PAM</application> において、ユーザーログイン時に <application>ConsoleKit</application> を有効とする設定を行う必要があります。
         これを実現するには <systemitem class="username">root</systemitem> ユーザーになり、以下のように <filename>/etc/pam.d/system-session</filename> ファイルを編集します。
+@z
+
+@x
+        You will also need a helper script that creates a file in
+        <filename class="directory">/var/run/console</filename>
+        named as the currently logged in user and that contains the
+        <application>D-Bus</application> address of the session. You
+        can create the script by running the following commands as
+        the <systemitem class="username">root</systemitem> user:
+@y
+        You will also need a helper script that creates a file in
+        <filename class="directory">/var/run/console</filename>
+        named as the currently logged in user and that contains the
+        <application>D-Bus</application> address of the session. You
+        can create the script by running the following commands as
+        the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
