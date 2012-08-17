@@ -36,12 +36,8 @@
 @z
 
 @x
-<!ENTITY gzip-ch5-sbu "less than 0.1 SBU">
-<!ENTITY gzip-ch6-du "3.3 MB">
 <!ENTITY gzip-ch6-sbu "less than 0.1 SBU">
 @y
-<!ENTITY gzip-ch5-sbu "0.1 SBU 以下">
-<!ENTITY gzip-ch6-du "3.3 MB">
 <!ENTITY gzip-ch6-sbu "0.1 SBU 以下">
 @z
 
@@ -76,12 +72,8 @@
 @z
 
 @x
-<!ENTITY patch-ch5-sbu "less than 0.1 SBU">
-<!ENTITY patch-ch6-du "1.9 MB">
 <!ENTITY patch-ch6-sbu "less than 0.1 SBU">
 @y
-<!ENTITY patch-ch5-sbu "0.1 SBU 以下">
-<!ENTITY patch-ch6-du "1.9 MB">
 <!ENTITY patch-ch6-sbu "0.1 SBU 以下">
 @z
 

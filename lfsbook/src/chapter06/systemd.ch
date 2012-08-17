@@ -61,6 +61,23 @@
 @z
 
 @x
+    <para>Finally set up the persistent network udev rules.  This task will be
+    explained in detail in <xref linkend='stable-net-names'/>.  Note that the
+    <filename class='directory'>/sys</filename> and <filename
+    class='directory'>/proc</filename> filesystems must be mounted in the
+    chroot environment as explained at the beginning of this chapter for the
+    following script to work.</para>
+@y
+    <para>
+    最後に恒常的なネットワーク udev ルールを設定します。
+    この作業の詳細は<xref linkend='stable-net-names'/>にて説明しています。
+    本章のはじめにて説明しているように、<filename class='directory'>/sys</filename> と <filename
+    class='directory'>/proc</filename> は chroot 環境にてマウントされている必要があります。
+    これは以下のスクリプトを実行する際に必要となります。
+    </para>
+@z
+
+@x
     <title>Contents of Udev</title>
 @y
     <title>&ContentsOf1;Udev&ContentsOf2;</title>

@@ -95,22 +95,29 @@
 @z
 
 @x
-    <para>Pre-generate the rules to ensure the same names get assigned to the
-    same devices at every boot, including the first:</para>
+    <para>The rules were pre-generated in the build instructions for
+    <application>udev (systemd)</application> in the last chapter.  Inspect the
+    <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> file, to
+    find out which name was assigned to which network device:</para>
 @y
     <para>
-    ブートを繰り返しても特定のデバイスには同一の名前が割り当たるようなルール記述を試しに生成します。
-    まずは以下を実行します。
+    このルールは、前章の <application>udev (systemd)</application> におけるビルド手順にて事前生成されています。
+    <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> を確認すれば、どんな名前がどのネットワークデバイスに割り当てられているかが分かります。
     </para>
 @z
 
 @x
-    <para>Now, inspect the <filename>/etc/udev/rules.d/70-persistent-net.rules</filename>
-    file, to find out which name was assigned to which network device:</para>
+    <note><para>In some cases such as when MAC addresess have been assigned to
+    a network card manually or in a virtual envirnment such as Xen,
+    the network rules file may not have been generated because addresses 
+    are not consistently assigned.  In these cases, just continue to
+    the next section.</para></note>
 @y
-    <para>
-    そして <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> ファイルを見て、どのネットワークデバイスにどんな名前が割り当てられているかを確認します。
-    </para>
+    <note><para>
+    ネットワークカードに対して手動で MAC アドレスを割り当てた場合や Xen のような仮想環境における場合などにおいて、ネットワークルールファイルが生成されないことがあります。
+    これはアドレスの割り当てが確定されないためです。
+    こういった場合は次節に進んでください。
+    </para></note>
 @z
 
 @x

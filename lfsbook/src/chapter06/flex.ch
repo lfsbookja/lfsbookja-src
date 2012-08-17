@@ -29,15 +29,6 @@
 @z
 
 @x
-    <para>Apply a patch that fixes a bug in the C++ scanner generator, that causes scanner compilation to fail when using GCC-&gcc-version;:</para>
-@y
-    <para>
-    C++ のスキャナー生成に含まれるバグを修正するためのパッチを適用します。
-    これがないと GCC-&gcc-version; を用いた時にスキャナーに関するコンパイルに失敗します。
-    </para>
-@z
-
-@x
     <para>Prepare Flex for compilation:</para>
 @y
     <para>&PreparePackage1;Flex&PreparePackage2;</para>

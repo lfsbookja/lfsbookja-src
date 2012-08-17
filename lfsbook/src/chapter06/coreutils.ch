@@ -129,10 +129,14 @@
 @z
 
 @x
-    <para>Now run the tests:</para>
+    <para>Now run the tests.  One test case, test-parse-datetime, will 
+    fail because the regression test has not been updated for the latest
+    time zone data.</para>
 @y
     <para>
     テストを実行します。
+    テストの１つ test-parse-datetime は失敗します。
+    縮退テストが最新のタイムゾーンデータに応じて更新されていないためです。
     </para>
 @z
 

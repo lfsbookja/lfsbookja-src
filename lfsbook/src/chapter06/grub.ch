@@ -40,12 +40,15 @@
 @z
 
 @x
-    <para>The --disable switches minimize what is built by disabling features
-    and testing programs not really needed for LFS.</para>
+    <para>The --disable-werror option allows the build to complete with
+    warnings introduced by more recent flex versions.  The other --disable
+    switches minimize what is built by disabling features and testing programs
+    not needed for LFS.</para>
 @y
-    <para>
-    --disable オプションは、LFS で本当に必要となる機能やテストプログラムだけを生成するもので、ビルド結果を最小限に抑えます。
-    </para>
+    <para>The --disable-werror option allows the build to complete with
+    warnings introduced by more recent flex versions.  The other --disable
+    switches minimize what is built by disabling features and testing programs
+    not needed for LFS.</para>
 @z
 
 @x

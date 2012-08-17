@@ -48,6 +48,144 @@
 @z
 
 @x
+      <para>2012-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to linux-3.5.1. Fixes
+          <ulink url="&lfs-ticket-root;3154">#3154</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to man-pages-3.42. Fixes
+          <ulink url="&lfs-ticket-root;3159">#3159</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to automake-1.12.3. Fixes
+          <ulink url="&lfs-ticket-root;3161">#3161</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Move shadow to before coreutils to 
+          have su available.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.5.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3154">#3154</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.42 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3159">#3159</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.12.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3161">#3161</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - su コマンドが利用できるように shadow を coreutils の前に移動。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to coreutils-8.18. Fixes
+          <ulink url="&lfs-ticket-root;3157">#3157</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - coreutils-8.18 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3157">#3157</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to perl-5.16.1. Fixes
+          <ulink url="&lfs-ticket-root;3155">#3155</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Removed unneeded sed instruction from
+          Chapter 6 perl. Fixes
+          <ulink url="&lfs-ticket-root;3160">#3160</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - perl-5.16.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3155">#3155</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第6章の Perl にて不要な sed 処理を削除。
+          <ulink url="&lfs-ticket-root;3160">#3160</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-08-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to flex-2.5.37. Fixes
+          <ulink url="&lfs-ticket-root;3139">#3139</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.5.1. Fixes
+          <ulink url="&lfs-ticket-root;3158">#3158</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - flex-2.5.37 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3139">#3139</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.5.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3158">#3158</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to tzcode2012e. Fixes 
+          <ulink url="&lfs-ticket-root;3156">#3156</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to udev (systemd)-188. Fixes 
+          <ulink url="&lfs-ticket-root;3152">#3152</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - tzcode2012e へのアップデート。
+          <ulink url="&lfs-ticket-root;3156">#3156</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - udev (systemd)-188 へのアップデート。
+          <ulink url="&lfs-ticket-root;3152">#3152</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-06</para>
       <itemizedlist>
         <listitem>

@@ -140,11 +140,6 @@
 @y
           <seg>なし</seg>
 @z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
 
 %----------------------------------------------------------------------
 @x binutils
@@ -227,9 +222,9 @@
          Patch, Perl, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Diffutils, E2fsprogs, Findutils, and Util-linux</seg>
+          <seg>Diffutils, E2fsprogs, Findutils, Shadow, and Util-linux</seg>
 @y
-          <seg>Diffutils, E2fsprogs, Findutils, Util-linux</seg>
+          <seg>Diffutils, E2fsprogs, Findutils, Shadow, Util-linux</seg>
 @z
 @x
           <seg>Bash, Diffutils, Findutils, Man-DB, and Udev</seg>
@@ -1224,9 +1219,9 @@ Typo ですが日本語訳には影響ありません。
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>None</seg>
+          <seg>Coreutils</seg>
 @y
-          <seg>なし</seg>
+          <seg>Coreutils</seg>
 @z
 @x
           <seg>Acl, Attr, Cracklib, PAM</seg>

@@ -98,20 +98,6 @@
 @z
 
 @x
-      <term>Flex GCC-4.4.x Patch - <token>&flex-gcc-patch-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&patches-root;&flex-gcc-patch;"/></para>
-        <para>MD5 sum: <literal>&flex-gcc-patch-md5;</literal></para>
-      </listitem>
-@y
-      <term>Flex GCC-4.4.x Patch - <token>&flex-gcc-patch-size;</token>:</term>
-      <listitem>
-        <para>&Download;: <ulink url="&patches-root;&flex-gcc-patch;"/></para>
-        <para>MD5 sum: <literal>&flex-gcc-patch-md5;</literal></para>
-      </listitem>
-@z
-
-@x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
