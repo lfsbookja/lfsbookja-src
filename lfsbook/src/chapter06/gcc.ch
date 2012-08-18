@@ -53,6 +53,14 @@
 @z
 
 @x
+    <para>Also fix an error in one of the check Makefiles:</para>
+@y
+    <para>
+    また Makefile のチェックにおける誤りを修正します。
+    </para>
+@z
+
+@x
     <para>The GCC documentation recommends building GCC outside of the source
     directory in a dedicated build directory:</para>
 @y

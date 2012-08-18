@@ -49,6 +49,15 @@
 @z
 
 @x
+    <para>There are two tests that fail due to incompatibilities
+    with the most recent version of bison.</para>
+@y
+    <para>
+    最新の bison との互換性がないことから、失敗するテストが二つあります。
+    </para>
+@z
+
+@x
     <para>Install the package:</para>
 @y
     <para>&InstallThePackage;</para>
