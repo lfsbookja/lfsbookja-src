@@ -20,16 +20,14 @@
 @z
 
 @x
-  <para>The next part of this chapter deals with firewalls.  The principal
-  firewall tool for Linux is <application>iptables</application>.  You will
-  need to install <application>iptables</application> if you intend on using
-  any form of a firewall.</para>
+      The next part of this chapter deals with firewalls.  The principal
+      firewall tool for Linux is <application>Iptables</application>. You will
+      need to install <application>Iptables</application> if you intend on using
+      any form of a firewall.
 @y
-  <para>
-  この節の次ではファイアウォールについて説明します。
-  Linux においてファイアウォールを取り扱う重要なツールが <application>iptables</application> です。
-  どのような形にせよ、ファイアウォールを実現するなら <application>iptables</application> をインストールすることが必要です。
-  </para>
+      この節の次ではファイアウォールについて説明します。
+      Linux においてファイアウォールを取り扱う重要なツールが <application>Iptables</application> です。
+      どのような形にせよ、ファイアウォールを実現するなら <application>Iptables</application> をインストールすることが必要です。
 @z
 
 @x
@@ -39,47 +37,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&iptables-download-http;"/></para>
+          Download (HTTP): <ulink url="&iptables-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&iptables-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&iptables-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&iptables-download-ftp;"/></para>
+          Download (FTP): <ulink url="&iptables-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&iptables-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&iptables-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &iptables-md5sum;</para>
+          Download MD5 sum: &iptables-md5sum;
 @y
-        <para>&Download; MD5 sum: &iptables-md5sum;</para>
+          &Download; MD5 sum: &iptables-md5sum;
 @z
 
 @x
-        <para>Download size: &iptables-size;</para>
+          Download size: &iptables-size;
 @y
-        <para>&DownloadSize;: &iptables-size;</para>
+          &DownloadSize;: &iptables-size;
 @z
 
 @x
-        <para>Estimated disk space required: &iptables-buildsize;</para>
+          Estimated disk space required: &iptables-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &iptables-buildsize;</para>
+          &Estimateddiskspacerequired;: &iptables-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &iptables-time;</para>
+          Estimated build time: &iptables-time;
 @y
-        <para>&Estimatedbuildtime;: &iptables-time;</para>
+          &Estimatedbuildtime;: &iptables-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/iptables"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/iptables"/></para>
 @z
 
 @x
@@ -89,19 +85,17 @@
 @z
 
 @x
-    <para>A firewall in Linux is accomplished through a portion of the
-    kernel called netfilter. The interface to netfilter is
-    <application>iptables</application>. To use it, the appropriate
-    kernel configuration parameters are found in Networking Support &rArr;
-    Networking Options &rArr; Network Packet Filtering Framework.</para>
+      A firewall in Linux is accomplished through a portion of the
+      kernel called netfilter. The interface to netfilter is
+      <application>Iptables</application>. To use it, the appropriate
+      kernel configuration parameters are found in Networking Support &rArr;
+      Networking Options &rArr; Network Packet Filtering Framework.
 @y
-    <para>
-    Linux におけるファイアウォールは、カーネルの機能の一部である netfilter を通じて実現されます。
-    その netfilter へのインターフェースが <application>iptables</application> です。
-    これを使うには、カーネルのパラメーター Networking Support &rArr;
-    Networking Options &rArr; Network Packet Filtering Framework
-    を設定します。
-    </para>
+      Linux におけるファイアウォールは、カーネルの機能の一部である netfilter を通じて実現されます。
+      その netfilter へのインターフェースが <application>Iptables</application> です。
+      これを使うには、カーネルのパラメーター Networking Support &rArr;
+      Networking Options &rArr; Network Packet Filtering Framework
+      を設定します。
 @z
 
 @x
@@ -111,44 +105,38 @@
 @z
 
 @x
-      <para>The installation below does not include building some specialized
-      extension libraries which require the raw headers in the
-      <application>Linux</application> source code. If you wish to build the
-      additional extensions (if you aren't sure, then you probably don't), you
-      can look at the <filename>INSTALL</filename> file to see an example of
-      how to change the <parameter>KERNEL_DIR=</parameter> parameter to point
-      at the <application>Linux</application> source code. Note that if you
-      upgrade the kernel version, you may also need to recompile
-      <application>iptables</application> and that the BLFS team has not tested
-      using the raw kernel headers.</para>
+        The installation below does not include building some specialized
+        extension libraries which require the raw headers in the
+        <application>Linux</application> source code. If you wish to build the
+        additional extensions (if you aren't sure, then you probably don't), you
+        can look at the <filename>INSTALL</filename> file to see an example of
+        how to change the <parameter>KERNEL_DIR=</parameter> parameter to point
+        at the <application>Linux</application> source code. Note that if you
+        upgrade the kernel version, you may also need to recompile
+        <application>Iptables</application> and that the BLFS team has not tested
+        using the raw kernel headers.
 @y
-      <para>
-      以降にて示しているインストール手順では <application>Linux</application> ソースコード内の、生のヘッダーファイルを必要とする、特定の拡張ライブラリまではビルドしません。
-      そのような拡張ライブラリをビルドする場合 (不明であればビルドする必要はないでしょう) <filename>INSTALL</filename> ファイルを参照して <application>Linux</application> ソースコードの場所を指定する <parameter>KERNEL_DIR=</parameter> パラメーターの設定例を確認してください。
-      カーネルバージョンをアップグレードする際には、<application>iptables</application> も再コンパイルする必要があることを覚えておいてください。
-      なお BLFS チームでは、生のカーネルヘッダーを用いたテストは行っていません。
-      </para>
+        以降にて示しているインストール手順では <application>Linux</application> ソースコード内の、生のヘッダーファイルを必要とする、特定の拡張ライブラリまではビルドしません。
+        そのような拡張ライブラリをビルドする場合 (不明であればビルドする必要はないでしょう) <filename>INSTALL</filename> ファイルを参照して <application>Linux</application> ソースコードの場所を指定する <parameter>KERNEL_DIR=</parameter> パラメーターの設定例を確認してください。
+        カーネルバージョンをアップグレードする際には、<application>iptables</application> も再コンパイルする必要があることを覚えておいてください。
+        なお BLFS チームでは、生のカーネルヘッダーを用いたテストは行っていません。
 @z
 
 @x
-      <para>For some non-x86 architectures, the raw kernel headers may be
-      required. In that case, modify the <parameter>KERNEL_DIR=</parameter>
-      parameter to point at the <application>Linux</application> source
-      code.</para>
+        For some non-x86 architectures, the raw kernel headers may be
+        required. In that case, modify the <parameter>KERNEL_DIR=</parameter>
+        parameter to point at the <application>Linux</application> source
+        code.
 @y
-      <para>
-      x86 ではないアーキテクチャーでは、生のカーネルヘッダーを必要とするものがあります。
-      そのような場合は <parameter>KERNEL_DIR=</parameter> パラメーターにて <application>Linux</application> のソースコードを指し示すようにしてください。
-      </para>
+        x86 ではないアーキテクチャーでは、生のカーネルヘッダーを必要とするものがあります。
+        そのような場合は <parameter>KERNEL_DIR=</parameter> パラメーターにて <application>Linux</application> のソースコードを指し示すようにしてください。
 @z
 
 @x
-    <para>Install <application>iptables</application> by running the following
-    commands:</para>
+      Install <application>Iptables</application> by running the following
+      commands:
 @y
-    <para>
-    <application>iptables</application> をインストールするために以下を実行します。
-    </para>
+      <application>iptables</application> をインストールするために以下を実行します。
 @z
 
 @x
@@ -172,23 +160,39 @@
 @z
 
 @x
-    <para><parameter>--bindir=/sbin</parameter>: Ensure all the executables go
-    in <filename class="directory">/sbin</filename>.</para>
+      <parameter>--exec-prefix=</parameter>: Ensure all binaries and
+      libraries end up in <filename class="directory">/</filename>
+      directory tree.
 @y
-    <para>
-    <parameter>--bindir=/sbin</parameter>:
-    実行モジュールを <filename class="directory">/sbin</filename> にインストールします。
-    </para>
+      <parameter>--exec-prefix=</parameter>: Ensure all binaries and
+      libraries end up in <filename class="directory">/</filename>
+      directory tree.
 @z
 
 @x
-    <para><parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
-    Ensure all the pkgconfig files are in the standard location.</para>
+      <parameter>--bindir=/sbin</parameter>: Ensure all the executables go
+      in <filename class="directory">/sbin</filename>.
 @y
-    <para>
-    <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
-    pkgconfig ファイルの配置をすべて標準的なディレクトリとします。
-    </para>
+      <parameter>--bindir=/sbin</parameter>:
+      実行モジュールを <filename class="directory">/sbin</filename> にインストールします。
+@z
+
+@x
+      <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all 
+      Iptables modules are installed in the 
+      <filename class="directory">/lib/xtables</filename> directory.
+@y
+      <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all 
+      Iptables modules are installed in the 
+      <filename class="directory">/lib/xtables</filename> directory.
+@z
+
+@x
+      <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
+      Ensure all the pkgconfig files are in the standard location.
+@y
+      <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
+      pkgconfig ファイルの配置をすべて標準的なディレクトリとします。
 @z
 
 @x
@@ -198,12 +202,10 @@
 @z
 
 @x
-    <para>Introductory instructions for configuring your firewall are
-    presented in the next section: <xref linkend="fw-firewall"/></para>
+      Introductory instructions for configuring your firewall are
+      presented in the next section: <xref linkend="fw-firewall"/>
 @y
-    <para>
-    ファイアウォールの設定手順は、次の節 <xref linkend="fw-firewall"/> にて説明しています。
-    </para>
+      ファイアウォールの設定手順は、次の節 <xref linkend="fw-firewall"/> にて説明しています。
 @z
 
 @x
@@ -213,14 +215,12 @@
 @z
 
 @x
-      <para>To set up the iptables firewall at boot, install the
-      <filename>/etc/rc.d/init.d/iptables</filename> init script included
-      in the <xref linkend="bootscripts"/> package.</para>
+        To set up the iptables firewall at boot, install the
+        <filename>/etc/rc.d/init.d/iptables</filename> init script included
+        in the <xref linkend="bootscripts"/> package.
 @y
-      <para>
-      iptables によるファイアウォールの設定を起動時に有効とするには、<xref
-      linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/iptables</filename> をインストールします。
-      </para>
+        iptables によるファイアウォールの設定を起動時に有効とするには、<xref
+        linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/iptables</filename> をインストールします。
 @z
 
 @x
@@ -240,19 +240,27 @@
 @z
 
 @x
-        <seg>iptables, iptables-restore, iptables-save, iptables-xml, 
-        ip6tables, ip6tables-restore, ip6tables-save,
-        and xtables-multi</seg>
-        <seg>libip4tc.so, libip6tc.so, libiptc.so, libxtables.so,
-        and numerous modules in /lib/xtables</seg>
-        <seg>/lib/xtables, /usr/include/libiptc and /usr/share/xtables</seg>
+        <seg>
+          ip6tables, ip6tables-restore, ip6tables-save, iptables, iptables-restore,
+          iptables-save, iptables-xml and xtables-multi
+        </seg>
+        <seg>
+          libip4tc.so, libip6tc.so, libipq.so, libiptc.so and libxtables.so
+        </seg>
+        <seg>
+          /lib/xtables and /usr/include/libiptc
+        </seg>
 @y
-        <seg>iptables, iptables-restore, iptables-save, iptables-xml, 
-        ip6tables, ip6tables-restore, ip6tables-save,
-        xtables-multi</seg>
-        <seg>libip4tc.so, libip6tc.so, libiptc.so, libxtables.so,
-        and numerous modules in /lib/xtables</seg>
-        <seg>/lib/xtables, /usr/include/libiptc, /usr/share/xtables</seg>
+        <seg>
+          ip6tables, ip6tables-restore, ip6tables-save, iptables, iptables-restore,
+          iptables-save, iptables-xml, xtables-multi
+        </seg>
+        <seg>
+          libip4tc.so, libip6tc.so, libipq.so, libiptc.so, libxtables.so
+        </seg>
+        <seg>
+          /lib/xtables, /usr/include/libiptc
+        </seg>
 @z
 
 @x
@@ -262,60 +270,48 @@
 @z
 
 @x iptables
-          <para>is used to set up, maintain, and inspect the tables of
-          IP packet filter rules in the Linux kernel.  It is a
-          symbolic link to xtables-multi.</para>
+            is used to set up, maintain, and inspect the tables of
+            IP packet filter rules in the Linux kernel.
 @y
-          <para>
-          Linux カーネル内の IP パケットフィルタルール (IP packet filter rules) のテーブルを設定、管理、検証します。
-          これは xtables-multi へのシンボリックリンクです。
-          </para>
+            Linux カーネル内の IP パケットフィルタルール (IP packet filter rules) のテーブルを設定、管理、検証します。
 @z
 
 @x iptables-restore
-          <para>is used to restore IP Tables from data
-          specified on STDIN. Use I/O redirection provided by your
-          shell to read from a file. It is a symbolic link to
-          xtables-multi.</para>
+            is used to restore IP Tables from data specified on
+            STDIN. Use I/O redirection provided by your
+            shell to read from a file.
 @y
-          <para>is used to restore IP Tables from data
-          specified on STDIN. Use I/O redirection provided by your
-          shell to read from a file. It is a symbolic link to
-          xtables-multi.</para>
+            is used to restore IP Tables from data specified on
+            STDIN. Use I/O redirection provided by your
+            shell to read from a file.
 @z
 
 @x iptables-save
-          <para>is used to dump the contents of an IP Table
-          in easily parseable format to STDOUT. Use I/O-redirection
-          provided by your shell to write to a file. It is a symbolic link to
-          xtables-multi.</para>
+            is used to dump the contents of an IP Table in easily
+            parseable format to STDOUT. Use I/O-redirection
+            provided by your shell to write to a file.
 @y
-          <para>is used to dump the contents of an IP Table
-          in easily parseable format to STDOUT. Use I/O-redirection
-          provided by your shell to write to a file. It is a symbolic link to
-          xtables-multi.</para>
+            is used to dump the contents of an IP Table in easily
+            parseable format to STDOUT. Use I/O-redirection
+            provided by your shell to write to a file.
 @z
 
 @x iptables-xml
-          <para>is used to convert the output of
-          <command>iptables-save</command> to an XML format. Using the
-          <filename>iptables.xslt</filename> stylesheet converts the XML
-          back to the format of <command>iptables-restore</command>.
-          It is a symbolic link to xtables-multi.</para>
+            is used to convert the output of
+            <command>iptables-save</command> to an XML format. Using the
+            <filename>iptables.xslt</filename> stylesheet converts the XML
+            back to the format of <command>iptables-restore</command>.
 @y
-          <para>is used to convert the output of
-          <command>iptables-save</command> to an XML format. Using the
-          <filename>iptables.xslt</filename> stylesheet converts the XML
-          back to the format of <command>iptables-restore</command>.
-          It is a symbolic link to xtables-multi.</para>
+            is used to convert the output of
+            <command>iptables-save</command> to an XML format. Using the
+            <filename>iptables.xslt</filename> stylesheet converts the XML
+            back to the format of <command>iptables-restore</command>.
 @z
 
 @x ip6tables
-          <para>are a set of commands for IPV6 that parallel the iptables
-          commands above.  All of these commands are symbolic
-          links to xtables-multi.</para>
+            are a set of commands for IPV6 that parallel the iptables
+            commands above.
 @y
-          <para>are a set of commands for IPV6 that parallel the iptables
-          commands above.  All of these commands are symbolic
-          links to xtables-multi.</para>
+            are a set of commands for IPV6 that parallel the iptables
+            commands above.
 @z

@@ -76,24 +76,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required Patch:
-@y
-          必須のパッチ:
-@z
-
-@x
-          Required Patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">NetworkManager Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;NetworkManager&Dependencies2;</bridgehead>
@@ -103,20 +85,18 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="iptables"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>,
-      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev), and
+      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for GUdev), and
       <xref linkend="wireless_tools"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="iptables"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>,
-      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (gudev 向け),
+      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (GUdev 用),
       <xref linkend="wireless_tools"/>
     </para>
 @z
@@ -126,8 +106,9 @@
     <para role="recommended">
       <xref linkend="consolekit"/>,
       <xref linkend="dhcpcd"/> or
-      <xref linkend="dhcp-client"/>,
+      <xref linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="iptables"/>,
       <xref linkend="libsoup"/> and
       <xref linkend="polkit"/>
     </para>
@@ -136,8 +117,9 @@
     <para role="recommended">
       <xref linkend="consolekit"/>,
       <xref linkend="dhcpcd"/> または
-      <xref linkend="dhcp-client"/>,
+      <xref linkend="dhcp"/> (クライアントのみ),
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="iptables"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="polkit"/>
     </para>
@@ -150,7 +132,7 @@
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
       ModemManager</ulink>,
       <xref linkend="ppp"/> and
-      <xref linkend="wpa_supplicant"/> (Built with DBus support).
+      <xref linkend="wpa_supplicant"/> (Built with D-Bus support).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -183,9 +165,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      This package does not come with a testsuite.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      &notTestSuite;
 @z
 
 @x

@@ -312,22 +312,22 @@
 
 @x
       <para>If you need to run the <command>saslauthd</command> daemon at system
-      startup, install the <filename>/etc/rc.d/init.d/cyrus-sasl</filename>
+      startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
       init script included in the <xref linkend="bootscripts"/>
-      package.</para>
+      package using the following command:</para>
 @y
       <para>If you need to run the <command>saslauthd</command> daemon at system
-      startup, install the <filename>/etc/rc.d/init.d/cyrus-sasl</filename>
+      startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
       init script included in the <xref linkend="bootscripts"/>
-      package.</para>
+      package using the following command:</para>
 @z
 
 @x
-        <para>You'll need to modify /etc/sysconfig/cyrus-sasl and replace the
+        <para>You'll need to modify /etc/sysconfig/saslauthd and replace the
         <option><replaceable>AUTHMECH</replaceable></option> parameter
         with your desired authentication mechanism.</para>
 @y
-        <para>You'll need to modify /etc/sysconfig/cyrus-sasl and replace the
+        <para>You'll need to modify /etc/sysconfig/saslauthd and replace the
         <option><replaceable>AUTHMECH</replaceable></option> parameter
         with your desired authentication mechanism.</para>
 @z

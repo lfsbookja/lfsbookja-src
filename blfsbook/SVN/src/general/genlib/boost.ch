@@ -20,10 +20,13 @@
 @z
 
 @x
-      <application>Boost</application> provides free peer-reviewed
-      portable C++ source libraries.
+      <application>Boost</application> provides a set of free peer-reviewed
+      portable C++ source libraries. It includes libraries for linear algebra,
+      pseudorandom number generation, multithreading, image processing, regular
+      expressions and unit testing.
 @y
       <application>Boost</application> は、公開レビューされている、移植性に優れたフリーの C++ ソースライブラリです。
+      ライブラリには、線形計算、擬似乱数生成、マルチスレッド、画像イメージ処理、正規表現、ユニットテストなどが含まれます。
 @z
 
 @x

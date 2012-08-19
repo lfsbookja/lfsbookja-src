@@ -152,10 +152,10 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>This package does not have a working testsuite.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    &notTestSuite;
     </para>
 @z
 

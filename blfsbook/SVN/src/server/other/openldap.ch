@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY openldap-time          "2.0 SBU and approximately 35 minutes to run the tests (processor independent)">
+  <!ENTITY openldap-time          "3.8 SBU and approximately 35 minutes to run the tests (processor independent)">
 @y
-  <!ENTITY openldap-time          "2.0 SBU and approximately 35 minutes to run the tests (processor independent)">
+  <!ENTITY openldap-time          "3.8 SBU and approximately 35 minutes to run the tests (processor independent)">
 @z
 
 @x
@@ -390,25 +390,25 @@
 
 @x
         To automate the startup of the LDAP server at system bootup,
-        install the <filename>/etc/rc.d/init.d/openldap</filename> init script
+        install the <filename>/etc/rc.d/init.d/slapd</filename> init script
         included in the <xref linkend="bootscripts"/> package
         using the following command:
 @y
         LDAP サーバーをシステムブート時に自動起動するには <xref
-        linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/openldap</filename> を用います。
+        linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/slapd</filename> を用います。
         これは以下のコマンドによりインストールします。
 @z
 
 @x
           The init script starts the daemon without any parameters.
           You'll need to modify the 
-          <filename>/etc/sysconfig/openldap</filename> to include the 
+          <filename>/etc/sysconfig/slapd</filename> to include the 
           parameters needed for your specific configuration. See the 
           <command>slapd</command> man page for parameter information.
 @y
           The init script starts the daemon without any parameters.
           You'll need to modify the 
-          <filename>/etc/sysconfig/openldap</filename> to include the 
+          <filename>/etc/sysconfig/slapd</filename> to include the 
           parameters needed for your specific configuration. See the 
           <command>slapd</command> man page for parameter information.
 @z
@@ -642,14 +642,14 @@
 @z
 
 @x liblber.so
-            is a set of lightweight Basic Encoding Rules routines. These
+            is a set of Lightweight Basic Encoding Rules routines. These
             routines are used by the LDAP library routines to encode and decode
             LDAP protocol elements using the (slightly simplified) Basic
             Encoding Rules defined by LDAP. They are not normally used directly
             by an LDAP application program except in the handling of controls
             and extended operations.
 @y
-            is a set of lightweight Basic Encoding Rules routines. These
+            is a set of Lightweight Basic Encoding Rules routines. These
             routines are used by the LDAP library routines to encode and decode
             LDAP protocol elements using the (slightly simplified) Basic
             Encoding Rules defined by LDAP. They are not normally used directly

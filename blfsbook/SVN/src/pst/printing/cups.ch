@@ -258,18 +258,22 @@
 @z
 
 @x
-      If you have built <application>Cups</application> with
-      <application>libusb</application> support, fix the
-      backend permissions so that it will be executed as the
-      <systemitem class="username">root</systemitem> user.
-      Run the following command as the
+      Create basic <application>Cups</application> client configuration
+      file by running the following command as the
       <systemitem class="username">root</systemitem> user:
 @y
-      If you have built <application>Cups</application> with
-      <application>libusb</application> support, fix the
-      backend permissions so that it will be executed as the
-      <systemitem class="username">root</systemitem> user.
-      Run the following command as the
+      Create basic <application>Cups</application> client configuration
+      file by running the following command as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      Remove filters that are now part of <application>Cups Filters</application>
+      package by running the following commands as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      Remove filters that are now part of <application>Cups Filters</application>
+      package by running the following commands as the
       <systemitem class="username">root</systemitem> user:
 @z
 

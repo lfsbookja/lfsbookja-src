@@ -216,35 +216,29 @@
 @z
 
 @x
-        <seg>certutil, nss-config and pk12util</seg>
         <seg>
-          libcrmf.a,
-          libfreebl3.so,
-          libnss3.so,
-          libnssckbi.so,
-          libnssdbm3.so,
-          libnsssysinit.so,
-          libnssutil3.so,
-          libsmime3.so,
-          libsoftokn3.so and
-          libssl3.so
+          certutil, nss-config and pk12util
         </seg>
-        <seg>/usr/include/nss</seg>
+        <seg>
+          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so,
+          libnssdbm3.so, libnsssysinit.so, libnssutil3.so,
+          libsmime3.so, libsoftokn3.so and libssl3.so
+        </seg>
+        <seg>
+          /usr/include/nss
+        </seg>
 @y
-        <seg>certutil, nss-config, pk12util</seg>
         <seg>
-          libcrmf.a,
-          libfreebl3.so,
-          libnss3.so,
-          libnssckbi.so,
-          libnssdbm3.so,
-          libnsssysinit.so,
-          libnssutil3.so,
-          libsmime3.so,
-          libsoftokn3.so,
-          libssl3.so
+          certutil, nss-config, pk12util
         </seg>
-        <seg>/usr/include/nss</seg>
+        <seg>
+          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so,
+          libnssdbm3.so, libnsssysinit.so, libnssutil3.so,
+          libsmime3.so, libsoftokn3.so, libssl3.so
+        </seg>
+        <seg>
+          /usr/include/nss
+        </seg>
 @z
 
 @x

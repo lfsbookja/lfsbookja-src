@@ -70,23 +70,23 @@
           &Estimatedbuildtime;: &iso-codes-time;
 @z
 
-@x
-    <bridgehead renderas="sect3">ISO Codes Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;ISO Codes&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="python2"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="python2"/>
-    </para>
-@z
+% @x
+%     <bridgehead renderas="sect3">ISO Codes Dependencies</bridgehead>
+% @y
+%     <bridgehead renderas="sect3">&Dependencies1;ISO Codes&Dependencies2;</bridgehead>
+% @z
+% 
+% @x
+%     <bridgehead renderas="sect4">Required</bridgehead>
+%     <para role="required">
+%       <xref linkend="python2"/>
+%     </para>
+% @y
+%     <bridgehead renderas="sect4">&Required;</bridgehead>
+%     <para role="required">
+%       <xref linkend="python2"/>
+%     </para>
+% @z
 
 @x
     <para condition="html" role="usernotes">User Notes:

@@ -78,41 +78,39 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="geoclue"/>,
       <xref linkend="gperf"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="gtk3"/> or <xref linkend="gtk2"/>,
       <xref linkend="icu"/>,
       <xref linkend="libxslt"/>,
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
-      (<command>configure</command> defaults to using gtk+-3),
       <xref linkend="libsoup"/>,
-      <xref linkend="gst-plugins-base"/>,
-      <xref linkend="geoclue"/>,
-      <xref linkend="which"/> and
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/> and
+      <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="geoclue"/>,
       <xref linkend="gperf"/>,
+      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="gtk3"/> または <xref linkend="gtk2"/>,
       <xref linkend="icu"/>,
       <xref linkend="libxslt"/>,
-      <xref linkend="gtk2"/> または <xref linkend="gtk3"/>
-      (<command>configure</command> のデフォルトは gtk+-3 を利用),
       <xref linkend="libsoup"/>,
-      <xref linkend="gst-plugins-base"/>,
-      <xref linkend="geoclue"/>,
-      <xref linkend="which"/>,
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="which"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -148,27 +146,37 @@
 @z
 
 @x
-      <application>WebKit</application> takes a long time to compile, so if you
+      If you have <application>pkg-config 0.23</application> or older installed
+      fix a bug in the configure script that will stop it detecting
+      <application>Gstreamer</application> correctly: 
+@y
+      If you have <application>pkg-config 0.23</application> or older installed
+      fix a bug in the configure script that will stop it detecting
+      <application>Gstreamer</application> correctly: 
+@z
+
+@x
+      <application>WebKitGTK+</application> takes a long time to compile, so if you
       have a multicore CPU it can be useful to speed up the build by running
       make with multiple jobs.
 @y
-      <application>WebKit</application> のコンパイルには時間がかかります。
+      <application>WebKitGTK+</application> のコンパイルには時間がかかります。
       マルチコア CPU で処理をする場合には、マルチ処理によりビルド実行を行えば、処理を早く実現することができます。
 @z
 
 @x
       If you want to run make with just one core, install
-      <application>WebKit</application> by running the following commands:
+      <application>WebKitGTK+</application> by running the following commands:
 @y
-      シングルコア CPU にてビルド実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
+      シングルコア CPU にてビルド実行する場合は、以下のコマンドにより <application>WebKitGTK+</application> をビルドします。
 @z
 
 @x
       If you have a multicore CPU and want to run make with multiple jobs
-      running in parallel, install <application>WebKit</application> with the
+      running in parallel, install <application>WebKitGTK+</application> with the
       following commands:
 @y
-      マルチコア CPU にてマルチ処理によりビルドを実行する場合は、以下のコマンドにより <application>WebKit</application> をビルドします。
+      マルチコア CPU にてマルチ処理によりビルドを実行する場合は、以下のコマンドにより <application>WebKitGTK+</application> をビルドします。
 @z
 
 @x
@@ -191,13 +199,13 @@
 
 @x
       <option>--enable-introspection</option>: This option enables support for
-      <application>Gobject Introspection</application> and is required for a
+      <application>GObject Introspection</application> and is required for a
       <application>GNOME</application> Desktop. If you don't have
       <application>Gobject Introspection</application> installed and don't want
       to install <application>GNOME</application> remove this option.
 @y
       <option>--enable-introspection</option>:
-      このオプションは <application>Gobject Introspection</application> サポートを有効にします。
+      このオプションは <application>GObject Introspection</application> サポートを有効にします。
       これは <application>GNOME</application> デスクトップ環境において必要です。
       <application>Gobject Introspection</application> をインストールしていなくて、<application>GNOME</application> をインストールしないのであれば、このオプションを取り除いてください。
 @z
@@ -220,43 +228,31 @@
 
 @x
         <seg>
-          jsc-1 or jsc-3 (depending on whether you installed the
-          <application>Gtk+-2</application> or <application>Gtk+-3</application>
-          version of <application>WebKit</application>).
+          jsc-1 or jsc-3
         </seg>
         <seg>
-          libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or libwebkit-3.0.so
-          and libjavascriptcoregtk-3.0.so (depending on whether you installed
-          the <application>GTK+ 2</application> or
-          <application>GTK+ 3</application> version of
-          <application>WebKit</application>).
+          libjavascriptcoregtk-1.0.so and libwebkit-1.0.so or
+          libjavascriptcoregtk-3.0.so and libwebkit-3.0.so and
+          optionaly libwebkit2gtk-3.0.so
         </seg>
         <seg>
           /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
-          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on
-          whether you installed the <application>GTK+ 2</application> or
-          <application>GTK+ 3</application> version of
-          <application>WebKit</application>).
+          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 and
+          optionaly /usr/lib/WebKit
         </seg>
 @y
         <seg>
-          jsc-1 or jsc-3 (depending on whether you installed the
-          <application>Gtk+-2</application> or <application>Gtk+-3</application>
-          version of <application>WebKit</application>).
+          jsc-1 または jsc-3
         </seg>
         <seg>
-          libwebkit-1.0.so and libjavascriptcoregtk-1.0.so or libwebkit-3.0.so
-          and libjavascriptcoregtk-3.0.so (depending on whether you installed
-          the <application>GTK+ 2</application> or
-          <application>GTK+ 3</application> version of
-          <application>WebKit</application>).
+          libjavascriptcoregtk-1.0.so and libwebkit-1.0.so or
+          libjavascriptcoregtk-3.0.so and libwebkit-3.0.so and
+          optionaly libwebkit2gtk-3.0.so
         </seg>
         <seg>
           /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
-          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 (depending on
-          whether you installed the <application>GTK+ 2</application> or
-          <application>GTK+ 3</application> version of
-          <application>WebKit</application>).
+          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 and
+          optionaly /usr/lib/WebKit
         </seg>
 @z
 
@@ -279,30 +275,27 @@
             ウェブブラウザーのコンテキスト外にて JavaScript を実行します。
 @z
 
-@x libwebkit-1.0.so
-            contains the <application>WebKit</application> API functions for
-            <application>GTK+ 2</application>.
-@y
-            contains the <application>WebKit</application> API functions for
-            <application>GTK+ 2</application>.
-@z
-
-@x libwebkit-3.0.so
-            contains the <application>WebKit</application> API functions for
-            <application>GTK+ 3</application>.
-@y
-            contains the <application>WebKit</application> API functions for
-            <application>GTK+ 3</application>.
-@z
-
 @x libjavascriptcoregtk-1.0.so
-            contains functions that are used by <command>jsc-1</command>.
+            contains core JavaScript API functions used by <command>jsc-1</command>
+            and <filename class="libraryfile">libwebkitgtk-1.0.so</filename>.
 @y
-            contains functions that are used by <command>jsc-1</command>.
+            contains core JavaScript API functions used by <command>jsc-1</command>
+            and <filename class="libraryfile">libwebkitgtk-1.0.so</filename>.
+@z
+
+@x libwebkit-1.0.so
+            contains the <application>WebKitGTK+</application> API functions for
+            <application>GTK+ 2</application>.
+@y
+            contains the <application>WebKitGTK+</application> API functions for
+            <application>GTK+ 2</application>.
 @z
 
 @x libjavascriptcoregtk-3.0.so
-            contains functions that are used by <command>jsc-3</command>.
+            contains core JavaScript API functions used by <command>jsc-3</command>
+            and <filename class="libraryfile">libwebkitgtk-3.0.so</filename>.
 @y
-            contains functions that are used by <command>jsc-3</command>.
+            contains core JavaScript API functions used by <command>jsc-3</command>
+            and <filename class="libraryfile">libwebkitgtk-3.0.so</filename>.
 @z
+

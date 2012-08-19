@@ -51,6 +51,7 @@ CHANGE_FILES = \
 	libxml2.ch \
 	libxslt.ch \
 	lzo.ch \
+	mtdev.ch \
 	nspr.ch \
 	openobex.ch \
 	pcre.ch \
@@ -122,6 +123,7 @@ libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
 libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
 libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
 lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
+mtdev.xml:                 $(BOOKdir)/$@ $(srcdir)/mtdev.ch
 nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
 openobex.xml:              $(BOOKdir)/$@ $(srcdir)/openobex.ch
 pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch

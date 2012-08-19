@@ -39,20 +39,6 @@
 @z
 
 @x
-    <para>There may be a more recent release available from the
-    <application>MySQL</application> home page. You can check
-    <ulink url="http://dev.mysql.com/"/> and probably use the
-    existing BLFS instructions. Note that versions other than the one shown
-    in the download URLs have not been tested in a BLFS environment.</para>
-@y
-    <para>
-    <application>MySQL</application> のホームページでは、より最新のリリースが公開されているかもしれません。
-    <ulink url="http://dev.mysql.com/"/> を確認した上で BLFS によるインストール手順に従ってください。
-    ただし本書のダウンロード URL に示されているバージョンでないものは、BLFS 環境でのテストが行われていない点に注意してください。
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
@@ -156,29 +142,76 @@
 
 @x
     <para>For security reasons, running the server as an unprivileged user
-    and group is strongly encouraged:</para>
+    and group is strongly encouraged. Issue the following (as
+    <systemitem class="username">root</systemitem>) to create the user and
+    group:</para>
 @y
     <para>
     セキュリティ上の理由から、サーバープロセスは一般ユーザーおよびグループに起動することが強く推奨されています。
+    Issue the following (as
+    <systemitem class="username">root</systemitem>) to create the user and
+    group:
     </para>
 @z
 
 @x
-    <note><para>There are a great many options available to
-    <userinput>cmake</userinput>.  Check the output of the `<userinput>cmake .
-    -LH</userinput>` for additional customization options.  See the <ulink
-    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
-    Documentation</ulink> for a full listing of all options.</para></note>
+    <para>If the MySQL server is not needed, it is possible to build only the
+    client libraries of MySQL. To do this you need to apply the optional patch,
+    use the cmake option <parameter>-DWITHOUT_SERVER=ON</parameter> and the
+    client-only installation instructions below.</para>
 @y
-    <note><para>There are a great many options available to
-    <userinput>cmake</userinput>.  Check the output of the `<userinput>cmake .
-    -LH</userinput>` for additional customization options.  See the <ulink
-    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
-    Documentation</ulink> for a full listing of all options.</para></note>
+    <para>If the MySQL server is not needed, it is possible to build only the
+    client libraries of MySQL. To do this you need to apply the optional patch,
+    use the cmake option <parameter>-DWITHOUT_SERVER=ON</parameter> and the
+    client-only installation instructions below.</para>
 @z
 
 @x
-    <para>Build and install <application>MySQL</application> by
+    <para>MySQL contains an embedded server library which can be enabled with
+    the cmake option <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>. By default
+    this server is built as a statically linked library,
+    <filename>libmysqld.a</filename>, but by applying the optional patch, a
+    shared version of this library can be built. The shared library is needed
+    by certain applications, such as <application>Amarok</application>.</para>
+@y
+    <para>MySQL contains an embedded server library which can be enabled with
+    the cmake option <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>. By default
+    this server is built as a statically linked library,
+    <filename>libmysqld.a</filename>, but by applying the optional patch, a
+    shared version of this library can be built. The shared library is needed
+    by certain applications, such as <application>Amarok</application>.</para>
+@z
+
+@x
+    <para>There are numerous options available to
+    <userinput>cmake</userinput>. Check the output of the `<userinput>cmake .
+    -LH</userinput>` for additional customization options. See the <ulink
+    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
+    Documentation</ulink> for a full listing of all options.</para>
+@y
+    <para>There are numerous options available to
+    <userinput>cmake</userinput>. Check the output of the `<userinput>cmake .
+    -LH</userinput>` for additional customization options. See the <ulink
+    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
+    Documentation</ulink> for a full listing of all options.</para>
+@z
+
+@x
+    <para>If you want the shared version of the embedded server library, apply
+    the patch:</para>
+@y
+    <para>If you want the shared version of the embedded server library, apply
+    the patch:</para>
+@z
+
+@x
+     <para>If building the client-only, apply the patch:</para>
+@y
+     <para>If building the client-only, apply the patch:</para>
+@z
+
+@x
+    <para>Configure and build <application>MySQL</application> by
     running the following commands:</para>
 @y
     <para>
@@ -209,25 +242,18 @@
     </para>
 @z
 
-@x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
 
 @x
-      <para>The only documentation shipped in the source tarball are
+      <tip><para>The only documentation shipped in the source tarball are
       <filename>mysql.info</filename> and man pages. You can download various
       formats of the <application>MySQL</application> Reference Manual
-      from <ulink url="http://dev.mysql.com/doc/"/>.</para>
+      from <ulink url="http://dev.mysql.com/doc/"/>.</para></tip>
 @y
-    <para>
-    ソース tarball に含まれるドキュメントは <filename>mysql.info</filename> と man ページのみです。
-    <application>MySQL</application> のその他の形式のリファレンスマニュアルは、<ulink
-    url="http://dev.mysql.com/doc/"/> からダウンロードすることができます。
-    </para>
+      <tip><para>
+      ソース tarball に含まれるドキュメントは <filename>mysql.info</filename> と man ページのみです。
+      <application>MySQL</application> のその他の形式のリファレンスマニュアルは、<ulink
+      url="http://dev.mysql.com/doc/"/> からダウンロードすることができます。
+      </para></tip>
 @z
 
 @x
@@ -237,19 +263,17 @@
 @z
 
 @x
-    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
-    command installs the appropriate portion of the package.  Different
-    segemnts may be added or deleted as desired.  Valid segments are listed
-    with `<command>make list_install_components</command>`.  Note that the
-    'DataFiles' install segment does not honor the -DMYSQL_DATADIR or
-    -DINSTALL_MYSQLDATADIR statements.</para>
+    <para><parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>: The default
+    instructions only build the innobase (InnoDB) storage engine. If other
+    storage engines are desired use this switch to enable them. Valid choices
+    are ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
+    PARTITION and PERFSCHEMA.</para>
 @y
-    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
-    command installs the appropriate portion of the package.  Different
-    segemnts may be added or deleted as desired.  Valid segments are listed
-    with `<command>make list_install_components</command>`.  Note that the
-    'DataFiles' install segment does not honor the -DMYSQL_DATADIR or
-    -DINSTALL_MYSQLDATADIR statements.</para>
+    <para><parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>: The default
+    instructions only build the innobase (InnoDB) storage engine. If other
+    storage engines are desired use this switch to enable them. Valid choices
+    are ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
+    PARTITION and PERFSCHEMA.</para>
 @z
 
 @x
@@ -376,40 +400,34 @@
 @z
 
 @x
-        <seg>comp_err, innochecksum, msql2mysql, my_print_defaults,
-        myisam_ftdump, myisamchk, myisamlog, myisampack, mysql,
-        mysql_client_test, mysql_config, mysql_convert_table_format,
-        mysql_create_system_tables, mysql_explain_log, mysql_find_rows,
-        mysql_fix_extensions, mysql_fix_privilege_tables, mysql_install_db,
-        mysql_secure_installation, mysql_setpermission, mysql_tableinfo,
-        mysql_tzinfo_to_sql, mysql_waitpid, mysql_zap, mysqlaccess, mysqladmin,
+        <seg>innochecksum, msql2mysql, my_print_defaults, myisam_ftdump,
+        myisamchk, myisamlog, myisampack, mysql, mysql_client_test,
+        mysql_config, mysql_convert_table_format, mysql_find_rows,
+        mysql_fix_extensions, mysql_install_db, mysql_plugin,
+        mysql_secure_installation, mysql_setpermission, mysql_tzinfo_to_sql,
+        mysql_upgrade, mysql_waitpid, mysql_zap, mysqlaccess, mysqladmin,
         mysqlbinlog, mysqlbug, mysqlcheck, mysqld, mysqld_multi, mysqld_safe,
-        mysqldump, mysqldumpslow, mysqlhotcopy, mysqlimport, mysqlmanager,
-        mysqlshow, mysqltest, mysqltestmanager, mysqltestmanager-pwgen,
-        mysqltestmanagerc, perror, replace, resolve_stack_dump, and
+        mysqldump, mysqldumpslow, mysqlhotcopy, mysqlimport, mysqlshow,
+        mysqlslap, mysqltest, perror, replace, resolve_stack_dump and
         resolveip</seg>
-        <seg>libdbug.a, libheap.a, libmyisam.a, libmyisammrg.a,
-        libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmystrings.a,
-        libmysys.a, and libvio.a</seg>
-        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/plugin, /usr/share/mysql and
+        <seg>libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqlservices.a
+        and several in /usr/lib/mysql</seg>
+        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/mysql, /usr/share/mysql and
         /var/run/mysql</seg>
 @y
-        <seg>comp_err, innochecksum, msql2mysql, my_print_defaults,
-        myisam_ftdump, myisamchk, myisamlog, myisampack, mysql,
-        mysql_client_test, mysql_config, mysql_convert_table_format,
-        mysql_create_system_tables, mysql_explain_log, mysql_find_rows,
-        mysql_fix_extensions, mysql_fix_privilege_tables, mysql_install_db,
-        mysql_secure_installation, mysql_setpermission, mysql_tableinfo,
-        mysql_tzinfo_to_sql, mysql_waitpid, mysql_zap, mysqlaccess, mysqladmin,
+        <seg>innochecksum, msql2mysql, my_print_defaults, myisam_ftdump,
+        myisamchk, myisamlog, myisampack, mysql, mysql_client_test,
+        mysql_config, mysql_convert_table_format, mysql_find_rows,
+        mysql_fix_extensions, mysql_install_db, mysql_plugin,
+        mysql_secure_installation, mysql_setpermission, mysql_tzinfo_to_sql,
+        mysql_upgrade, mysql_waitpid, mysql_zap, mysqlaccess, mysqladmin,
         mysqlbinlog, mysqlbug, mysqlcheck, mysqld, mysqld_multi, mysqld_safe,
-        mysqldump, mysqldumpslow, mysqlhotcopy, mysqlimport, mysqlmanager,
-        mysqlshow, mysqltest, mysqltestmanager, mysqltestmanager-pwgen,
-        mysqltestmanagerc, perror, replace, resolve_stack_dump,
+        mysqldump, mysqldumpslow, mysqlhotcopy, mysqlimport, mysqlshow,
+        mysqlslap, mysqltest, perror, replace, resolve_stack_dump and
         resolveip</seg>
-        <seg>libdbug.a, libheap.a, libmyisam.a, libmyisammrg.a,
-        libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmystrings.a,
-        libmysys.a, libvio.a</seg>
-        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/plugin, /usr/share/mysql,
+        <seg>libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqlservices.a
+        and several in /usr/lib/mysql</seg>
+        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/mysql, /usr/share/mysql and
         /var/run/mysql</seg>
 @z
 
@@ -423,12 +441,12 @@
     <para>Descriptions of all the programs and libraries would be several
     pages long. Instead, consult the <filename>mysql.info</filename>
     documentation or the on-line reference manual at <ulink
-    url="http://dev.mysql.com/doc/refman/5.1/en/index.html"/>.</para>
+    url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/>.</para>
 @y
     <para>
     プログラムやライブラリについてすべて説明しようとすると、かなりのページ数になります。
     詳細は <filename>mysql.info</filename> を参照するか、あるいは <ulink
-    url="http://dev.mysql.com/doc/refman/5.1/en/index.html"/> にあるオンラインリファレンスマニュアルを参照してください。
+    url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/> にあるオンラインリファレンスマニュアルを参照してください。
     </para>
 @z
 

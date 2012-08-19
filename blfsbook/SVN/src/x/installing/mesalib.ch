@@ -69,6 +69,28 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
+          Recommended patch:
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-3.patch"/>
+          (Needed if testing the Xorg installation per BLFS instructions)
+@y
+          推奨のパッチ:
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-3.patch"/>
+          (BLFS でのビルド手順に従って Xorg をテストする場合に必要。)
+@z
+
+@x
     <bridgehead renderas="sect3">MesaLib Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;MesaLib&Dependencies2;</bridgehead>
@@ -95,11 +117,31 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="llvm"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="llvm"/>
+    </para>
+@z
+
+@x
+        The <application>libxml2</application>
+        <application>Python</application> module must have been built
+        during the installation of <application>libxml2</application>
+        or else <application>MesaLib</application> build will fail.
+@y
+        <application>libxml2</application> の <application>Python</application> モジュールは <application>libxml2</application> においてビルドしておく必要があります。
+        これがない場合、<application>MesaLib</application> のビルドは失敗します。
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/mesalib"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/mesalib"/></para>
 @z
 
 @x

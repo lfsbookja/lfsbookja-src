@@ -20,14 +20,16 @@
 @z
 
 @x
-    <para>This package provides several administration tools for <application>KDE
-    </application>. These include a tool for managing users, a cron command schedule editor,
-    a printer administration tool and a log file viewer.</para>
+    <para>This package provides several administration tools for
+    <application>KDE</application>. These include a tool for managing users,
+    a cron command schedule editor, a printer administration tool and a log
+    file viewer.</para>
 @y
     <para>
     このパッケージは、<application>KDE</application> に対する管理ツール類を提供します。
-    These include a tool for managing users, a cron command schedule editor,
-    a printer administration tool and a log file viewer.
+    These include a tool for managing users,
+    a cron command schedule editor, a printer administration tool and a log
+    file viewer.
     </para>
 @z
 

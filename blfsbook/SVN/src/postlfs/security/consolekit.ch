@@ -80,12 +80,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="acl"/>,
       <xref linkend="dbus-glib"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="acl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="xorg7-lib"/>
     </para>

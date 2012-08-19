@@ -470,14 +470,6 @@
 @z
 
 @x
-          Install the <filename>/etc/rc.d/init.d/kerberos</filename> init
-          script included in the <xref linkend="bootscripts"/> package.
-@y
-          Install the <filename>/etc/rc.d/init.d/kerberos</filename> init
-          script included in the <xref linkend="bootscripts"/> package.
-@z
-
-@x
         <title>Additional Information</title>
 @y
         <title>Additional Information</title>
