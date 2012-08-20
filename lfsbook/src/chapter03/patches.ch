@@ -98,6 +98,20 @@
 @z
 
 @x
+      <term>Flex Regression Tests Patch - <token>&flex-bison-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&flex-bison-patch;"/></para>
+        <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Flex Regression Tests Patch - <token>&flex-bison-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&flex-bison-patch;"/></para>
+        <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
       <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
       <listitem>
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>

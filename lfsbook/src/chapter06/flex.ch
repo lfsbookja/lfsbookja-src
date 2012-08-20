@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>First, fix some regression tests:</para>
+@y
+    <para>
+    まずは縮退テスト (regression test) に関しての修正を行います。
+    </para>
+@z
+
+@x
     <para>Prepare Flex for compilation:</para>
 @y
     <para>&PreparePackage1;Flex&PreparePackage2;</para>

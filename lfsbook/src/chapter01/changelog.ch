@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2012-08-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add patch to fix Flex regression test
+          failures.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Flex の縮退テストの失敗を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-15</para>
       <itemizedlist>
         <listitem>
