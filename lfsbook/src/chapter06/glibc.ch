@@ -388,11 +388,63 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
-    <para>One way to determine the local time zone, run the following
+      <title>The meaning of the zic commands:</title>
+@y
+      <title>&MeaningOfCommand1;zic&MeaningOfCommand2;</title>
+@z
+
+@x
+          <para>This creates posix timezones, without any leap seconds.  It is
+          conventional to put these in both
+          <filename class="directory">zoneinfo</filename> and
+          <filename class="directory">zoneinfo/posix</filename>. It is
+          necessary to put the POSIX timezones in
+          <filename class="directory">zoneinfo</filename>, otherwise various
+          test-suites will report errors. On an embedded system, where space is
+          tight and you do not intend to ever update the timezones, you could save
+          1.9MB by not using the <filename class="directory">posix</filename>
+          directory, but some applications or test-suites might give less good
+          results</para>
+@y
+          <para>
+          これは、うるう秒を含まない posix タイムゾーンデータを生成します。
+          これらは <filename class="directory">zoneinfo</filename> や <filename
+          class="directory">zoneinfo/posix</filename> に収容するものとして適切なものです。
+          <filename class="directory">zoneinfo</filename> へは POSIX 準拠のタイムゾーンデータを含めることが必要であり、こうしておかないと数々のテストスイートにてエラーが発生してしまいます。
+          組み込みシステムなどでは容量の制約が厳しいため、タイムゾーンデータはあまり更新したくない場合があり、<filename
+          class="directory">posix</filename> ディレクトリを設けなければ 1.9 MB もの容量を節約できます。
+          ただしアプリケーションやテストスイートによっては、適正な結果が得られないかもしれません。
+          </para>
+@z
+
+@x
+          <para>This creates right timezones, including leap seconds. On an
+          embedded system, where space is tight and you do not intend to
+          ever update the timezones, or care about the correct time, you could
+          save 1.9MB by omitting the <filename class="directory">right</filename>
+          directory.</para>
+@y
+          <para>
+          これは、うるう秒を含んだ正しいタイムゾーンデータを生成します。
+          組み込みシステムなどでは容量の制約が厳しいため、タイムゾーンデータはあまり更新したくない場合や、さほど気にかけない場合もあります。
+          <filename class="directory">right</filename> ディレクトリを省略することにすれば 1.9MB の容量を節約することができます。
+          </para>
+@z
+
+@x
+          <para>This creates the <filename>posixrules</filename> file.</para>
+@y
+          <para>
+          これは <filename>posixrules</filename> ファイルを生成します。
+          </para>
+@z
+
+@x
+    <para>One way to determine the local time zone is to run the following
     script:</para>
 @y
     <para>
-    ローカルなタイムゾーンの設定を行うために、ここでは以下のスクリプトを実行します。
+    ローカルなタイムゾーンの設定を行う１つの方法として、ここでは以下のスクリプトを実行します。
     </para>
 @z
 

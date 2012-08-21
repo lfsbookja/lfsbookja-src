@@ -8,16 +8,16 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version "SVN-20120816">
-<!ENTITY releasedate "August 16, 2012">
+<!ENTITY version "SVN-20120820">
+<!ENTITY releasedate "August 20, 2012">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version "SVN-20120816">
-<!ENTITY releasedate "2012年8月16日">
-<!ENTITY jversion "20120818">
+<!ENTITY version "SVN-20120820">
+<!ENTITY releasedate "2012年8月20日">
+<!ENTITY jversion "20120821">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
@@ -57,6 +57,8 @@
 <!ENTITY MeaningOfOption2     " オプションの意味">
 <!ENTITY MeaningOfParameter1  "">
 <!ENTITY MeaningOfParameter2  " パラメーターの意味">
+<!ENTITY MeaningOfCommand1    "">
+<!ENTITY MeaningOfCommand2    " コマンドの意味">
 <!ENTITY Configuring1         "">
 <!ENTITY Configuring2         " の設定">
 <!ENTITY ContentsOf1          "">

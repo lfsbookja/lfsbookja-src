@@ -51,6 +51,17 @@
       <para>2012-08-20</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Upgrade to coreutils-8.19. Fixes
+          <ulink url="&lfs-ticket-root;3163">#3163</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to grep-2.14. Fixes
+          <ulink url="&lfs-ticket-root;3164">#3164</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Fix how the timezones are installed.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Add patch to fix Flex regression test
           failures.</para>
         </listitem>
@@ -59,7 +70,18 @@
       <para>2012-08-20</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Flex の縮退テストの失敗を修正。</para>
+          <para>[bdubbs] - coreutils-8.19 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3163">#3163</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - grep-2.14 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3164">#3164</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - タイムゾーンデータのインストール方法を修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Flex の縮退テストの失敗を修正するパッチを追加。</para>
         </listitem>
       </itemizedlist>
 @z

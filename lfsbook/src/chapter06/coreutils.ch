@@ -129,14 +129,12 @@
 @z
 
 @x
-    <para>Now run the tests.  One test case, test-parse-datetime, will 
-    fail because the regression test has not been updated for the latest
-    time zone data.</para>
+    <para>Now run the tests. Make sure the PATH in the <userinput>su</userinput>
+    environment includes /tools/bin.</para>
 @y
     <para>
     テストを実行します。
-    テストの１つ test-parse-datetime は失敗します。
-    縮退テストが最新のタイムゾーンデータに応じて更新されていないためです。
+    <userinput>su</userinput> 環境において PATH に /tools/bin が含まれていることを確認してください。
     </para>
 @z
 
