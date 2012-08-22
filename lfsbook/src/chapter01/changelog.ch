@@ -48,6 +48,43 @@
 @z
 
 @x
+      <para>2012-08-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update udev-lfs tarball for BLFS
+          compatibility.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Add four locales to the minimum set for test
+          coverage.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Add patch to fix sed utf8 regression test
+          failures.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update statistics for packages.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - BLFS との互換のため udev-lfs tarball を更新。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - ロケールでのテストをカバーするために4つのロケールを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - sed での utf8 縮退テスト (regression test) が失敗するのを修正するために、パッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 各種パッケージの計測情報を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-20</para>
       <itemizedlist>
         <listitem>

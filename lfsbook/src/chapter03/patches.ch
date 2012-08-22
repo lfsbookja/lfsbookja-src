@@ -234,6 +234,20 @@
 @z
 
 @x
+      <term>Sed Regression Tests Patch - <token>&sed-testsuite-patch-size;</token>:</term>
+      <listitem>
+        <para>Download: <ulink url="&patches-root;&sed-testsuite-patch;"/></para>
+        <para>MD5 sum: <literal>&sed-testsuite-patch-md5;</literal></para>
+      </listitem>
+@y
+      <term>Sed Regression Tests Patch - <token>&sed-testsuite-patch-size;</token>:</term>
+      <listitem>
+        <para>&Download;: <ulink url="&patches-root;&sed-testsuite-patch;"/></para>
+        <para>MD5 sum: <literal>&sed-testsuite-patch-md5;</literal></para>
+      </listitem>
+@z
+
+@x
   <para>Total size of these patches: about <returnvalue/></para>
 @y
   <para>全パッチの合計サイズ: 約 <returnvalue/></para>

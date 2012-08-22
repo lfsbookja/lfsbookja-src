@@ -26,6 +26,14 @@
 @z
 
 @x
+    <para>First, fix some regression tests:</para>
+@y
+    <para>
+    まずは縮退テスト (regression test) の不備を修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Sed for compilation:</para>
 @y
     <para>&PreparePackage1;Sed&PreparePackage2;</para>

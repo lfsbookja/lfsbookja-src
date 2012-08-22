@@ -14,18 +14,18 @@
 @z
 
 @x
-<!ENTITY automake-ch6-sbu "less than 0.1 SBU (without tests)">
+<!ENTITY automake-ch6-sbu "less than 0.1 SBU (34.1 SBU with tests)">
 @y
-<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テストスイートを除く)">
+<!ENTITY automake-ch6-sbu "0.1 SBU 以下 (テストスイートを含めると 34.1 SBU)">
 @z
 
 @x
 <!ENTITY bzip2-ch5-sbu "less than 0.1 SBU">
-<!ENTITY bzip2-ch6-du "6.4 MB">
+<!ENTITY bzip2-ch6-du "6.9 MB">
 <!ENTITY bzip2-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY bzip2-ch5-sbu "0.1 SBU 以下">
-<!ENTITY bzip2-ch6-du "6.4 MB">
+<!ENTITY bzip2-ch6-du "6.9 MB">
 <!ENTITY bzip2-ch6-sbu "0.1 SBU 以下">
 @z
 
@@ -36,21 +36,9 @@
 @z
 
 @x
-<!ENTITY gzip-ch6-sbu "less than 0.1 SBU">
-@y
-<!ENTITY gzip-ch6-sbu "0.1 SBU 以下">
-@z
-
-@x
 <!ENTITY iana-etc-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY iana-etc-ch6-sbu "0.1 SBU 以下">
-@z
-
-@x
-<!ENTITY kmod-ch6-sbu "less than 0.1 SBU">
-@y
-<!ENTITY kmod-ch6-sbu "0.1 SBU 以下">
 @z
 
 @x
@@ -93,10 +81,4 @@
 <!ENTITY sysvinit-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY sysvinit-ch6-sbu "0.1 SBU 以下">
-@z
-
-@x
-<!ENTITY zlib-ch6-sbu "less than 0.1 SBU">
-@y
-<!ENTITY zlib-ch6-sbu "0.1 SBU 以下">
 @z
