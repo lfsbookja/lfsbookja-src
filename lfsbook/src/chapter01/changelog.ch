@@ -48,6 +48,29 @@
 @z
 
 @x
+      <para>2012-08-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update glibc text removing noatime mount 
+          caution and text regarding test issues.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix packaging for udev-lfs tarball.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc の説明にて、noatime マウントオプションに関して削除、およびテストスイートでの問題に関して修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - udev-lfs tarball の生成方法を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-21</para>
       <itemizedlist>
         <listitem>

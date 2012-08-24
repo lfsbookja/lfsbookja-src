@@ -163,25 +163,24 @@
 @z
 
 @x
-    <para>Before running the tests, copy a file from the source tree into our
-    build tree to prevent a couple of test failures, then test the
-    results:</para>
+    <para>Generally a few tests do not pass, but you can generally ignore
+    any of the test failures listed below. Now test the build results:</para>
 @y
     <para>
-    テストを実施する前に、ソースディレクトリからビルドディレクトリにファイルを一つコピーします。
-    いくつかのテストが失敗してしまうことを回避するためです。
-    こうしておいてコンパイル結果をテストします。
+    全般にテストの中には失敗するものがありますが、以下に示すものであれば無視しても構いません。
+    ビルド結果のテストは以下のようにします。
     </para>
 @z
 
 @x
     <para>You will probably see an expected (ignored) failure in the
-    <emphasis>posix/annexc</emphasis> test.  In addition the Glibc test suite
-    is somewhat dependent on the host system.  This is a list of the most
-    common issues:</para>
+    <emphasis>posix/annexc</emphasis> and
+    <emphasis>conform/run-conformtest</emphasis> tests.  In addition the Glibc
+    test suite is somewhat dependent on the host system.  This is a list of the
+    most common issues:</para>
 @y
     <para>
-    <emphasis>posix/annexc</emphasis> のテストはおそらく失敗します。
+    <emphasis>posix/annexc</emphasis> と <emphasis>conform/run-conformtest</emphasis> のテストはおそらく失敗します。
     これは想定されていることであり無視することができます。
     そもそも Glibc のテストスイートはホストシステムにある程度依存します。
     発生しがちな問題を以下に示します。
@@ -199,7 +198,8 @@
 
 @x
         <para>The <emphasis>nptl/tst-clock2</emphasis>,
-        <emphasis>nptl/tst-attr3</emphasis>, and 
+        <emphasis>nptl/tst-attr3</emphasis>, 
+        <emphasis>tst/tst-cputimer1</emphasis>, and 
         <emphasis>rt/tst-cpuclock2</emphasis>
         tests have been known to fail.  The
         reason is not completely understood, but indications are that minor
@@ -211,8 +211,9 @@ minor timing issues が何を意味するのか不明であった。
 -->
         <para>
         <emphasis>nptl/tst-clock2</emphasis>,
-        <emphasis>nptl/tst-clock2</emphasis>,
-        <emphasis>tst-attr3</emphasis> の各テストは失敗することがあります。
+        <emphasis>nptl/tst-attr3</emphasis>,
+        <emphasis>tst/tst-cputimer1</emphasis>,
+        <emphasis>rt/tst-cpuclock2</emphasis> の各テストは失敗することがあります。
         失敗の理由は明確ではありません。
         ただ処理速度が原因してそれらが発生すると思われます。
         </para>
