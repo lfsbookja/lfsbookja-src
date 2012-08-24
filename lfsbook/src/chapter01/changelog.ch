@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2012-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - remove redundant sed from automake.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - automake にて不要な sed コマンドを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-22</para>
       <itemizedlist>
         <listitem>
