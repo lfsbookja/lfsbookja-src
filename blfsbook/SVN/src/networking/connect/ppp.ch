@@ -175,19 +175,27 @@
 @z
 
 @x
-    <para><command>rm include/linux/if_pppol2tp.h</command>: ppp-2.4.5 contains
-    an out of date copy of the kernel header linux/if_pppol2tp.h. This needs to
+    <para><command>rm include/linux/if_pppol2tp.h</command>:
+    <application>PPP-&ppp-version;</application> contains an out of date copy
+    of the kernel header <filename>linux/if_pppol2tp.h</filename>. This needs to
     be removed to <emphasis>force</emphasis> it to use the one installed in
-    /usr. If you don't remove this file the build will still succeed (thanks to
-    a poorly written Makefile) but it will fail to compile the openl2tp.so,
-    pppol2tp.so and rp-pppoe.so plugins:</para>
+    <filename class="directory">/usr</filename>. If you don't remove this file
+    the build will still succeed (thanks to a poorly written
+    <filename>Makefile</filename>) but it will fail to compile the
+    <filename class="libraryfile">openl2tp.so</filename>,
+    <filename class="libraryfile">pppol2tp.so</filename>,
+    and <filename class="libraryfile">rp-pppoe.so</filename> plugins:</para>
 @y
-    <para><command>rm include/linux/if_pppol2tp.h</command>: ppp-2.4.5 contains
-    an out of date copy of the kernel header linux/if_pppol2tp.h. This needs to
+    <para><command>rm include/linux/if_pppol2tp.h</command>:
+    <application>PPP-&ppp-version;</application> contains an out of date copy
+    of the kernel header <filename>linux/if_pppol2tp.h</filename>. This needs to
     be removed to <emphasis>force</emphasis> it to use the one installed in
-    /usr. If you don't remove this file the build will still succeed (thanks to
-    a poorly written Makefile) but it will fail to compile the openl2tp.so,
-    pppol2tp.so and rp-pppoe.so plugins:</para>
+    <filename class="directory">/usr</filename>. If you don't remove this file
+    the build will still succeed (thanks to a poorly written
+    <filename>Makefile</filename>) but it will fail to compile the
+    <filename class="libraryfile">openl2tp.so</filename>,
+    <filename class="libraryfile">pppol2tp.so</filename>,
+    and <filename class="libraryfile">rp-pppoe.so</filename> plugins:</para>
 @z
 
 @x

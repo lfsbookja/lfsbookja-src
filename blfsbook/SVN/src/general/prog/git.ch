@@ -333,10 +333,10 @@
 
 @x
       <para>If you want to use <command>git svn</command> you will need to
-      install <xref linkend="subversion"/> and its perl bindings.</para>
+      install <xref linkend="subversion"/> and its Perl bindings.</para>
 @y
       <para>If you want to use <command>git svn</command> you will need to
-      install <xref linkend="subversion"/> and its perl bindings.</para>
+      install <xref linkend="subversion"/> and its Perl bindings.</para>
 @z
 
 @x

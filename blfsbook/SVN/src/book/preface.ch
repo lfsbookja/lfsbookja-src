@@ -261,8 +261,8 @@ BLFS 編集者 (2006年12月 &ndash; 2011年1月)</literallayout>
 @z
 
 @x
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="errata.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="organization.xml"/>
 @y
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="errata.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="organization.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="japanese.xml"/>
 @z

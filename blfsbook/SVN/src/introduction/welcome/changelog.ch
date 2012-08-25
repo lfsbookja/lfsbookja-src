@@ -811,12 +811,12 @@
 @z
 @x
           <para>[bdubbs] - Rename a lesstif man page to prevent
-          overwriting a perl man page with the same name. Fixes
+          overwriting a Perl man page with the same name. Fixes
           <ulink url="&blfs-ticket-root;3059">#3059</ulink>.</para>
 @y
           <para>[bdubbs] -
           lesstif の man ページの名称変更。
-          perl による同名の man ページを上書きしないようにするため。
+          Perl による同名の man ページを上書きしないようにするため。
           <ulink url="&blfs-ticket-root;3059">#3059</ulink> を Fix に。</para>
 @z
 

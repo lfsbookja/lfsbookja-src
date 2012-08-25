@@ -120,17 +120,6 @@
 @z
 
 @x
-      <option>-&#45;with-installbuilddir=/usr/libexec/apache/build</option>:
-      This option puts its private executables into
-      <filename class="directory">/usr/libexec/apache/build</filename> instead
-      of the default <filename class="directory">/usr/build-1</filename>.
-@y
-      <option>-&#45;with-installbuilddir=/usr/libexec/apache/build</option>:
-      このオプションは、プライベートにビルドされた実行モジュールのインストール先を、デフォルトの <filename
-      class="directory">/usr/build-1</filename> ではなく <filename class="directory">/usr/libexec/apache/build</filename> とします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -149,11 +138,11 @@
 @x
         <seg>apr-1-config</seg>
         <seg>libapr-1.so</seg>
-        <seg>/usr/include/apr and /usr/libexec/apache/build</seg>
+        <seg>/usr/include/apr and /usr/share/apr-1/build</seg>
 @y
         <seg>apr-1-config</seg>
         <seg>libapr-1.so</seg>
-        <seg>/usr/include/apr, /usr/libexec/apache/build</seg>
+        <seg>/usr/include/apr, /usr/share/apr-1/build</seg>
 @z
 
 @x

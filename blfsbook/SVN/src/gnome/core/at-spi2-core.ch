@@ -21,12 +21,12 @@
 
 @x
       The <application>At-Spi2 Core</application> package is a part of the GNOME
-      Accessibility Project. It provides a Service Provider Interface for the Assisstive
+      Accessibility Project. It provides a Service Provider Interface for the Assistive
       Technologies available on the <application>GNOME</application> platform and a
       library against which applications can be linked.
 @y
       The <application>At-Spi2 Core</application> package is a part of the GNOME
-      Accessibility Project. It provides a Service Provider Interface for the Assisstive
+      Accessibility Project. It provides a Service Provider Interface for the Assistive
       Technologies available on the <application>GNOME</application> platform and a
       library against which applications can be linked.
 @z
@@ -158,13 +158,13 @@
 
 @x
       <parameter>--libexecdir=/usr/lib/at-spi2-core</parameter>: This
-      parameter ensures that programs will be installed into
-      given directory instead of the
+      parameter ensures that programs will be installed into the
+      given directory instead of
       <filename class="directory">/usr/libexec</filename>.
 @y
       <parameter>--libexecdir=/usr/lib/at-spi2-core</parameter>: This
-      parameter ensures that programs will be installed into
-      given directory instead of the
+      parameter ensures that programs will be installed into the
+      given directory instead of
       <filename class="directory">/usr/libexec</filename>.
 @z
 

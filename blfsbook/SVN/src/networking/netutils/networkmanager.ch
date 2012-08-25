@@ -24,13 +24,13 @@
       tools that make networking simple and straightforward. Whether WiFi, wired,
       3G, or Bluetooth, NetworkManager allows you to quickly move from one network
       to another: once a network has been configured and joined once, it can be
-      detected and re-joined automatically the next time its available.
+      detected and re-joined automatically the next time it's available.
 @y
       <application>NetworkManager</application> is a set of co-operative
       tools that make networking simple and straightforward. Whether WiFi, wired,
       3G, or Bluetooth, NetworkManager allows you to quickly move from one network
       to another: once a network has been configured and joined once, it can be
-      detected and re-joined automatically the next time its available.
+      detected and re-joined automatically the next time it's available.
 @z
 
 @x

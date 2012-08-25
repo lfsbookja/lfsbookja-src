@@ -220,16 +220,6 @@
 @z
 
 @x
-      <command>sed -i.bak '/K5LIBS=/s/ -ldes//' configure</command>: This sed
-      fixes a build crash if you used the <option>--with-kerberos5</option>
-      option. The command is harmless in all other instances.
-@y
-      <command>sed -i.bak '/K5LIBS=/s/ -ldes//' configure</command>: This sed
-      fixes a build crash if you used the <option>--with-kerberos5</option>
-      option. The command is harmless in all other instances.
-@z
-
-@x
       <parameter>--sysconfdir=/etc/ssh</parameter>: This prevents the
       configuration files from being installed in
       <filename class="directory">/usr/etc</filename>.

@@ -234,11 +234,11 @@
 @z
 
 @x guild
-            is a wrapper program installed along with <command>guile</command>
+            is a wrapper program installed along with <command>guile</command>,
             which knows where a particular module is installed and calls it,
             passing its arguments to the program.
 @y
-            is a wrapper program installed along with <command>guile</command>
+            is a wrapper program installed along with <command>guile</command>,
             which knows where a particular module is installed and calls it,
             passing its arguments to the program.
 @z

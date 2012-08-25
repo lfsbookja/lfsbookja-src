@@ -20,12 +20,12 @@
 @z
 
 @x
-      The <application>GNOME Desktop</application> package contains library
-      which provides API shared by several applications on the 
+      The <application>GNOME Desktop</application> package contains a library
+      that provides an API shared by several applications on the 
       <application>GNOME</application> Desktop.
 @y
-      The <application>GNOME Desktop</application> package contains library
-      which provides API shared by several applications on the 
+      The <application>GNOME Desktop</application> package contains a library
+      that provides an API shared by several applications on the 
       <application>GNOME</application> Desktop.
 @z
 

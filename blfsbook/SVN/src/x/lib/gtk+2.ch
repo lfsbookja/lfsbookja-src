@@ -185,25 +185,29 @@
       <command>sed -i 's#l \(gtk-.*\).sgml#&amp; -o \1#'
       docs/{faq,tutorial}/Makefile.in</command>: If you have
       <xref linkend="docbook-utils"/> installed (specifically, if configure
-      finds db2html) then it will try to use it to rebuild some of it's html
-      documentation and fail due to bugs in some of the Makefiles. This sed
-      fixes the Makefiles.
+      finds <command>db2html</command>) then it will try to use it to rebuild
+      some of its HTML documentation and fail due to bugs in some of the
+      <filename>Makefile</filename>s. This <command>sed</command> fixes the
+      <filename>Makefile</filename>s.
 @y
       <command>sed -i 's#l \(gtk-.*\).sgml#&amp; -o \1#'
       docs/{faq,tutorial}/Makefile.in</command>:
-      <xref linkend="docbook-utils"/> をインストールしていると (正確には configure が db2html を検出すると) これを利用して HTML 形式のドキュメントを生成しようとします。
-      ただし Makefile にバグがあるため、ドキュメント生成に失敗します。
-      ここで行う sed 処理は Makefile を修正するものです。
+      <xref linkend="docbook-utils"/> をインストールしていると (正確には configure が <command>db2html</command> を検出すると) これを利用して HTML 形式のドキュメントを生成しようとします。
+      ただし <filename>Makefile</filename> にバグがあるため、ドキュメント生成に失敗します。
+      ここで行う <command>sed</command> 処理は <filename>Makefile</filename> を修正するものです。
 @z
 
 @x
       <command>sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in</command>:
-      This sed fixes one of the <filename>Makefile</filename>s so it installs the
-      man pages for gtk-builder-convert, gtk-query-immodules-2.0 and
-      gtk-update-icon-cache.
+      This <command>sed</command> fixes one of the <filename>Makefile</filename>s
+      so it installs the man pages for <command>gtk-builder-convert</command>,
+      <command>gtk-query-immodules-2.0</command>, and
+      <command>gtk-update-icon-cache</command>.
 @y
       <command>sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in</command>:
-      この sed 処理は gtk-builder-convert, gtk-query-immodules-2.0, gtk-update-icon-cache の各 man ページを正しくインストールするように Makefile を修正するものです。
+      この <command>sed</command> 処理は <command>gtk-builder-convert</command>, 
+      <command>gtk-query-immodules-2.0</command>, 
+      <command>gtk-update-icon-cache</command> の各 man ページを正しくインストールするように <filename>Makefile</filename> を修正するものです。
 @z
 
 @x

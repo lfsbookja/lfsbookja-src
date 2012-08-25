@@ -48,12 +48,12 @@
 @z
 
 @x
-  <para>Since Release 5.0, the BLFS book version matches the LFS book version.
+  <!-- <para>Since Release 5.0, the BLFS book version matches the LFS book version.
   This book may be incompatible with a previous or later release of the LFS
-  book.</para>
+  book.</para> -->
 @y
-  <para>
+  <!-- <para>
   バージョン 5.0 以降は、BLFS ブックのバージョンと LFS ブックのバージョンは一致させています。
   本書は、LFS の前版や将来の版とは互換性がありません。
-  </para>
+  </para> -->
 @z

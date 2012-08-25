@@ -368,11 +368,11 @@
 @z
 
 @x
-          Now you should populate the database with principles
+          Now you should populate the database with principals
           (users). For now, just use your regular login name or
           <systemitem class="username">root</systemitem>.
 @y
-          Now you should populate the database with principles
+          Now you should populate the database with principals
           (users). For now, just use your regular login name or
           <systemitem class="username">root</systemitem>.
 @z

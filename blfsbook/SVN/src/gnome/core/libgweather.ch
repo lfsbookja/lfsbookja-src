@@ -153,11 +153,11 @@
 @z
 
 @x
-      <option>--enable-locations-compression</option>: This
-      parameter enables compression of Locations.xml files.
+      <option>--enable-locations-compression</option>: This parameter enables
+      compression of <filename>Locations.xml</filename> files.
 @y
-      <option>--enable-locations-compression</option>: This
-      parameter enables compression of Locations.xml files.
+      <option>--enable-locations-compression</option>: This parameter enables
+      compression of <filename>Locations.xml</filename> files.
 @z
 
 @x

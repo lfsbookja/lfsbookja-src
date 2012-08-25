@@ -137,7 +137,7 @@
         For the authentification framework to work,
         <command>polkit-gnome-authentification-agent-1</command> needs to be
         started. However, <command>make install</command> did not 
-        install startup file for the <application>Polkit GNOME</application> 
+        install a startup file for the <application>Polkit GNOME</application> 
         so you have to create it by yourself.
 @y
         認証フレームワークを正しく動作させるために、<command>polkit-gnome-authentification-agent-1</command> を起動しておく必要があります。
@@ -149,7 +149,7 @@
 @x
         Issue the following commands as the 
         <systemitem class="username">root</systemitem> user to create 
-        startup file for <application>Polkit GNOME</application>:
+        a startup file for <application>Polkit GNOME</application>:
 @y
         <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
         これにより <application>Polkit GNOME</application> の起動ファイルを生成します。

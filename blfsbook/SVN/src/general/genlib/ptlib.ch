@@ -21,7 +21,7 @@
 
 @x
     <para>The <application>ptlib</application> (Portable Tools Library) package
-    is a class library that has it's genesis many years ago as PWLib (portable
+    is a class library that has its genesis many years ago as PWLib (portable
     Windows Library), a method to produce applications to run on various
     platforms.</para>
 @y

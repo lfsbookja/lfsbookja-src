@@ -88,18 +88,22 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="xorg7-lib"/> and
+      <xref linkend="xcb-util"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="xcb-util"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/startup-notification"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/startup-notification"/></para>
 @z
 
 @x
