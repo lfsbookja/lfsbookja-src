@@ -8,9 +8,10 @@
 BOOKdir = $(top_builddir)/@bookdir@/server/other
 CHANGE_FILES = \
 	openldap.ch \
-	other.ch \
-	soprano.ch \
-	virtuoso.ch
+	other.ch    \
+	soprano.ch  \
+	virtuoso.ch \
+	xinetd.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -29,3 +30,4 @@ openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
 other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
 soprano.xml:  $(BOOKdir)/$@ $(srcdir)/soprano.ch
 virtuoso.xml: $(BOOKdir)/$@ $(srcdir)/virtuoso.ch
+xinetd.xml:   $(BOOKdir)/$@ $(srcdir)/xinetd.ch

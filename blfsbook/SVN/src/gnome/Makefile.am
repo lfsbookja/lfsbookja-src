@@ -5,10 +5,10 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=add core deprecated
+SUBDIRS=applications core deprecated
 BOOKdir = $(top_builddir)/@bookdir@/gnome
 CHANGE_FILES = \
-	gnome.ch \
+	gnome.ch      \
 	gnome-intro.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

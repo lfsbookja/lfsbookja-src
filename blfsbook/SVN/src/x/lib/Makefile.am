@@ -8,6 +8,8 @@
 BOOKdir = $(top_builddir)/@bookdir@/x/lib
 CHANGE_FILES = \
 	agg.ch \
+        at-spi2-atk.ch  \
+        at-spi2-core.ch \
 	atk.ch \
 	atkmm.ch \
 	cairo.ch \
@@ -54,6 +56,8 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 agg.xml:                  $(BOOKdir)/$@ $(srcdir)/agg.ch
+at-spi2-atk.xml:          $(BOOKdir)/$@ $(srcdir)/at-spi2-atk.ch
+at-spi2-core.xml:         $(BOOKdir)/$@ $(srcdir)/at-spi2-core.ch
 atk.xml:                  $(BOOKdir)/$@ $(srcdir)/atk.ch
 cairo.xml:                $(BOOKdir)/$@ $(srcdir)/cairo.ch
 clutter.xml:              $(BOOKdir)/$@ $(srcdir)/clutter.ch

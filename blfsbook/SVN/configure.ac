@@ -53,7 +53,7 @@ AC_CONFIG_FILES([Makefile
 		 src/general/prog/Makefile
 		 src/general/sysutils/Makefile
 		 src/gnome/Makefile
-		 src/gnome/add/Makefile
+		 src/gnome/applications/Makefile
 		 src/gnome/core/Makefile
 		 src/gnome/deprecated/Makefile
 		 src/introduction/Makefile

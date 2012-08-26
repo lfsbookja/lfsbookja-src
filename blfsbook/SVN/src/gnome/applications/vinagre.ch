@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -114,13 +114,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/> and
-      <xref linkend="spice-gtk"/>
+      <ulink url="http://spice-space.org/">Spice GTK</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
-      <xref linkend="spice-gtk"/>
+      <ulink url="http://spice-space.org/">Spice GTK</ulink>
     </para>
 @z
 

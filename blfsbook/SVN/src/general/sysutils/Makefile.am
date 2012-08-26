@@ -18,7 +18,6 @@ CHANGE_FILES = \
 	eject.ch         \
 	fcron.ch         \
 	gpm.ch           \
-	gvfs.ch          \
 	hdparm.ch        \
 	initdtools.ch    \
 	libarchive.ch    \
@@ -70,7 +69,6 @@ dbus-bindings.xml: $(BOOKdir)/$@ $(srcdir)/dbus-bindings.ch
 eject.xml:         $(BOOKdir)/$@ $(srcdir)/eject.ch
 fcron.xml:         $(BOOKdir)/$@ $(srcdir)/fcron.ch
 gpm.xml:           $(BOOKdir)/$@ $(srcdir)/gpm.ch
-gvfs.xml:          $(BOOKdir)/$@ $(srcdir)/gvfs.ch
 hdparm.xml:        $(BOOKdir)/$@ $(srcdir)/hdparm.ch
 initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 libarchive.xml:    $(BOOKdir)/$@ $(srcdir)/libarchive.ch

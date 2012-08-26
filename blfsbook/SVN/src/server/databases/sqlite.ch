@@ -199,14 +199,6 @@
 @z
 
 @x
-      <option>-DSQLITE_ENABLE_COLUMN_METADATA</option>: Add this to the CFLAGS
-      if you want to use this as a system version for <xref linkend="libgda"/>.
-@y
-      <option>-DSQLITE_ENABLE_COLUMN_METADATA</option>: Add this to the CFLAGS
-      if you want to use this as a system version for <xref linkend="libgda"/>.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

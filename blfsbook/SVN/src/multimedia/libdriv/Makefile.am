@@ -15,11 +15,9 @@ CHANGE_FILES = \
 	alsa-utils.ch       \
 	alsa.ch             \
 	audiofile.ch        \
-	celt051.ch          \
 	esound.ch           \
 	faac.ch             \
 	faad2.ch            \
-	farsight2.ch        \
 	farstream.ch        \
 	flac.ch             \
 	gst-ffmpeg.ch       \
@@ -79,11 +77,9 @@ alsa-tools.xml:              $(BOOKdir)/$@ $(srcdir)/alsa-tools.ch
 alsa-utils.xml:              $(BOOKdir)/$@ $(srcdir)/alsa-utils.ch
 alsa.xml:                    $(BOOKdir)/$@ $(srcdir)/alsa.ch
 audiofile.xml:               $(BOOKdir)/$@ $(srcdir)/audiofile.ch
-celt051.xml:                 $(BOOKdir)/$@ $(srcdir)/celt051.ch
 esound.xml:                  $(BOOKdir)/$@ $(srcdir)/esound.ch
 faac.xml:                    $(BOOKdir)/$@ $(srcdir)/faac.ch
 faad2.xml:                   $(BOOKdir)/$@ $(srcdir)/faad2.ch
-farsight2.xml:               $(BOOKdir)/$@ $(srcdir)/farsight2.ch
 farstream.xml:               $(BOOKdir)/$@ $(srcdir)/farstream.ch
 flac.xml:                    $(BOOKdir)/$@ $(srcdir)/flac.ch
 gst-ffmpeg.xml:              $(BOOKdir)/$@ $(srcdir)/gst-ffmpeg.ch

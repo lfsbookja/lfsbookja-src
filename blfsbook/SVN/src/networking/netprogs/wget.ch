@@ -75,6 +75,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/> or <xref linkend="gnutls"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/> または <xref linkend="gnutls"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libidn"/>,

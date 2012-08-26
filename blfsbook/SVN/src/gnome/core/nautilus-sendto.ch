@@ -102,26 +102,26 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="evolution-data-server"/> and
-      <xref linkend="gupnp"/>
+      <xref linkend="evolution-data-server"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="evolution-data-server"/>,
-      <xref linkend="gupnp"/>
+      <xref linkend="evolution-data-server"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <ulink url="http://live.gnome.org/GUPnP/">GUPnP</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://live.gnome.org/GUPnP/">GUPnP</ulink>
     </para>
 @z
 

@@ -116,16 +116,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="geocode-glib"/>,
-      <xref linkend="libchamplain"/>,
+      <xref linkend="iso-codes"/>,
       <xref linkend="nautilus-sendto"/> and
       <xref linkend="NetworkManager"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="geocode-glib"/>,
-      <xref linkend="libchamplain"/>,
+      <xref linkend="iso-codes"/>,
       <xref linkend="nautilus-sendto"/>,
       <xref linkend="NetworkManager"/>
     </para>
@@ -136,18 +134,26 @@
     <para role="optional">
       <xref linkend="cheese"/>,
       <xref linkend="enchant"/>,
-      <xref linkend="iso-codes"/>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
-      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data)
+      <ulink url="&gnome-download-http;/geocode-glib">
+      geocode-glib</ulink>,
+      <ulink url="http://projects.gnome.org/libchamplain/">
+      libchamplain</ulink>,
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink> and
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cheese"/>,
       <xref linkend="enchant"/>,
-      <xref linkend="iso-codes"/>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>, and
-      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data)
+      <ulink url="&gnome-download-http;/geocode-glib">
+      geocode-glib</ulink>,
+      <ulink url="http://projects.gnome.org/libchamplain/">
+      libchamplain</ulink>,
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink> and
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @z
 

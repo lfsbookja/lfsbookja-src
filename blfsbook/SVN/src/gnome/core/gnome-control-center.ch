@@ -112,14 +112,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cheese"/> and
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/libsocialweb/">
+      <ulink url="&gnome-download-http;/libsocialweb/">
       libsocialweb</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cheese"/>,
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/libsocialweb/">
+      <ulink url="&gnome-download-http;/libsocialweb/">
       libsocialweb</ulink>
     </para>
 @z

@@ -7,7 +7,6 @@
 ##
 BOOKdir = $(top_builddir)/@bookdir@/postlfs/security
 CHANGE_FILES = \
-	accountsservice.ch \
 	acl.ch             \
 	attr.ch            \
 	cacerts.ch         \
@@ -52,7 +51,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-accountsservice.xml:  $(BOOKdir)/$@ $(srcdir)/accountsservice.ch
 acl.xml:              $(BOOKdir)/$@ $(srcdir)/acl.ch
 attr.xml:             $(BOOKdir)/$@ $(srcdir)/attr.ch
 cacerts.xml:          $(BOOKdir)/$@ $(srcdir)/cacerts.ch

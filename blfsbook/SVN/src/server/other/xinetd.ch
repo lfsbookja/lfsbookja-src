@@ -85,12 +85,10 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/> and
-    <xref linkend="avahi"/></para>
+    <para role="optional"><ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers (deprecated)</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="tcpwrappers"/>,
-    <xref linkend="avahi"/></para>
+    <para role="optional"><ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers (deprecated)</ulink></para>
 @z
 
 @x
@@ -159,7 +157,7 @@
 @x
       <para>Ensure the path to all daemons is
       <filename class="directory">/usr/sbin</filename>, rather than the default
-      path of <filename class="directory">/usr/etc</filename>, and install the
+      path of <filename class="directory">/usr/bin</filename>, and install the
       <application>xinetd</application> configuration files by running the
       following commands as the <systemitem class="username">root</systemitem>
       user:</para>
@@ -167,7 +165,7 @@
       <para>
       デーモンを配置するパスはすべて <filename
       class="directory">/usr/sbin</filename> としており、デフォルトのパス <filename
-      class="directory">/usr/etc</filename> ではありません。
+      class="directory">/usr/bin</filename> ではありません。
       <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し <application>xinetd</application> の設定ファイルをインストールします。
       </para>
 @z
@@ -184,9 +182,9 @@
 @z
 
 @x
-        <para>The following files are listed to demonstrate classic
+        <para>The following files are listed to demonstrate several
         <application>xinetd</application> applications. In many cases, these
-        applications are not needed. In some cases, the applications are
+        applications are not needed. Some classic applications are
         considered security risks. For example, <command>telnet</command>,
         <command>rlogin</command>, <command>rexec</command>, and
         <command>rsh</command> transmit unencrypted usernames and passwords
@@ -194,7 +192,7 @@
         alternative: <command>ssh</command>.</para>
 @y
         <para>
-        以下に示すファイルは、かつての <application>xinetd</application> アプリケーションを例示するものです。
+        以下に示すファイルは、<application>xinetd</application> アプリケーションを例示するものです。
         これらのアプリケーションは、いまどきはほとんど必要ありません。
         中にはセキュリティリスクを抱えているものすらあります。
         例えば <command>telnet</command>, <command>rlogin</command>, <command>rexec</command>, <command>rsh</command> といったプログラムでは、ネットワーク上に暗号化されていないユーザー名やパスワードを送信します。
@@ -241,14 +239,13 @@
 @z
 
 @x
-      <para>Checking the <filename>/var/log/daemon.log</filename> file
-      should prove quite entertaining. This file may contain entries
-      similar to the following:</para>
+      <para>Check the <filename>/var/log/daemon.log</filename> to ensure the
+      appropriate services are started. If no services are enabled, the program
+      will not start without the <option>-stayalive</option> option.</para>
 @y
-      <para>
-      <filename>/var/log/daemon.log</filename> ファイルを確認してみると、非常におもしろい状況を見ることができます。
-      このファイルには、以下のような出力がなされているはずです。
-      </para>
+      <para>Check the <filename>/var/log/daemon.log</filename> to ensure the
+      appropriate services are started. If no services are enabled, the program
+      will not start without the <option>-stayalive</option> option.</para>
 @z
 
 @x

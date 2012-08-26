@@ -149,9 +149,7 @@ BOOKdir = $(top_builddir)/@bookdir@/networking/netlibs
 CHANGE_FILES = \
 	curl.ch            \
 	geoclue.ch         \
-	geocode-glib.ch    \
 	glib-networking.ch \
-	libchamplain.ch    \
 	libevent.ch        \
 	libgdata.ch        \
 	libnice.ch         \
@@ -359,9 +357,7 @@ ctie:
 
 curl.xml:             $(BOOKdir)/$@ $(srcdir)/curl.ch
 geoclue.xml:          $(BOOKdir)/$@ $(srcdir)/geoclue.ch
-geocode-glib.xml:     $(BOOKdir)/$@ $(srcdir)/geocode-glib.ch
 glib-networking.xml:  $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
-libchamplain.xml:     $(BOOKdir)/$@ $(srcdir)/libchamplain.ch
 libevent.xml:         $(BOOKdir)/$@ $(srcdir)/libevent.ch
 libgdata.xml:         $(BOOKdir)/$@ $(srcdir)/libgdata.ch
 libnice.xml:          $(BOOKdir)/$@ $(srcdir)/libnice.ch

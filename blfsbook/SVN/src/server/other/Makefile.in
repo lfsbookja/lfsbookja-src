@@ -148,9 +148,10 @@ top_srcdir = @top_srcdir@
 BOOKdir = $(top_builddir)/@bookdir@/server/other
 CHANGE_FILES = \
 	openldap.ch \
-	other.ch \
-	soprano.ch \
-	virtuoso.ch
+	other.ch    \
+	soprano.ch  \
+	virtuoso.ch \
+	xinetd.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -350,6 +351,7 @@ openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
 other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
 soprano.xml:  $(BOOKdir)/$@ $(srcdir)/soprano.ch
 virtuoso.xml: $(BOOKdir)/$@ $(srcdir)/virtuoso.ch
+xinetd.xml:   $(BOOKdir)/$@ $(srcdir)/xinetd.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

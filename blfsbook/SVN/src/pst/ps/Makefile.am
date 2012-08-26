@@ -11,7 +11,6 @@ CHANGE_FILES = \
 	enscript.ch \
 	epdfview.ch \
 	fop.ch      \
-	libgxps.ch  \
 	paps.ch     \
 	ps.ch       \
 	psutils.ch
@@ -33,7 +32,6 @@ a2ps.xml:     $(BOOKdir)/$@ $(srcdir)/a2ps.ch
 enscript.xml: $(BOOKdir)/$@ $(srcdir)/enscript.ch
 epdfview.xml: $(BOOKdir)/$@ $(srcdir)/epdfview.ch
 fop.xml:      $(BOOKdir)/$@ $(srcdir)/fop.ch
-libgxps.xml:  $(BOOKdir)/$@ $(srcdir)/libgxps.ch
 paps.xml:     $(BOOKdir)/$@ $(srcdir)/paps.ch
 ps.xml:       $(BOOKdir)/$@ $(srcdir)/ps.ch
 psutils.xml:  $(BOOKdir)/$@ $(srcdir)/psutils.ch

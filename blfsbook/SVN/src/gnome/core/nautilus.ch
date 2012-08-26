@@ -106,7 +106,7 @@
       <xref linkend="docbook-utils"/>,
       <xref linkend="exempi"/>,
       <xref linkend="libexif"/>,
-      <xref linkend="tracker"/> and
+      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink> and
       <ulink url="http://valgrind.org/">Valgrind</ulink>
     </para>
 @y
@@ -115,7 +115,7 @@
       <xref linkend="docbook-utils"/>,
       <xref linkend="exempi"/>,
       <xref linkend="libexif"/>,
-      <xref linkend="tracker"/>,
+      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>,
       <ulink url="http://valgrind.org/">Valgrind</ulink>
     </para>
 @z

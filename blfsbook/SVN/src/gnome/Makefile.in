@@ -185,10 +185,10 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = add core deprecated
+SUBDIRS = applications core deprecated
 BOOKdir = $(top_builddir)/@bookdir@/gnome
 CHANGE_FILES = \
-	gnome.ch \
+	gnome.ch      \
 	gnome-intro.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
