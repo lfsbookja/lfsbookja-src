@@ -26,6 +26,14 @@
 @z
 
 @x
+    <para>First apply some upstream patches:</para>
+@y
+    <para>
+    まずアップストリームによる修正を適用します。
+    </para>
+@z
+
+@x
     <para>Prepare Make for compilation:</para>
 @y
     <para>&PreparePackage1;Make&PreparePackage2;</para>

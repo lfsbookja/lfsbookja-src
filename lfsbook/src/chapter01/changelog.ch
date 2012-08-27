@@ -48,10 +48,32 @@
 @z
 
 @x
+      <para>2012-08-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Install both .tab files in tzdata.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Apply upstream patches to make.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Install both .tab files in tzdata.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Apply upstream patches to make.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-24</para>
       <itemizedlist>
         <listitem>
-          <para>[ken] - remove redundant sed from automake.</para>
+          <para>[ken] - Remove redundant sed from automake.</para>
         </listitem>
       </itemizedlist>
 @y
