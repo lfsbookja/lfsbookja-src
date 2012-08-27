@@ -61,10 +61,10 @@
       <para>2012-08-26</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Install both .tab files in tzdata.</para>
+          <para>[bdubbs] - tzdata における .tab ファイルをインストール。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Apply upstream patches to make.</para>
+          <para>[bdubbs] - make のアップストリームによるパッチを適用。</para>
         </listitem>
       </itemizedlist>
 @z
