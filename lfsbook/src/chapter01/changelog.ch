@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2012-08-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add patch to fix glibc occasional crash
+          with problem nameservers. Fixes
+          <ulink url="&lfs-ticket-root;3172">#3172</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add instructions to Chapter 5 glibc
+          to add rpc headers to the host system if they are missing.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ネームサーバーにおいて glibc がクラッシュする問題を修正するパッチを追加。
+          <ulink url="&lfs-ticket-root;3172">#3172</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 第5章にて、ホストシステムに rpc ヘッダーがなかった場合に、これをインストールする手順を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-26</para>
       <itemizedlist>
         <listitem>

@@ -69,9 +69,9 @@
 @z
 
 @x
-    <para>Fix a bug that causes the build to fail:</para>
+    <para>Fix a problem that causes the build to fail in the LFS environment:</para>
 @y
-    <para>ビルドが失敗するバグを修正します。</para>
+    <para>LFS 環境にて種々のビルド不備を引き起こす問題を修正します。</para>
 @z
 
 @x
@@ -98,6 +98,15 @@
     <command>ldd</command> シェルスクリプトは Bash が定める文法書式により構成されています。
     デフォルトで記述されているインタープリターを <command>/bin/bash</command> に変更します。
     BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink> で説明しているように、別の <command>/bin/sh</command> がインストールされている場合もあるからです。
+    </para>
+@z
+
+@x
+    <para>Now fix a problem that causes some applications to crash when 
+    utilizing problem nameservers:</para>
+@y
+    <para>
+    ネームサーバーの利用時に特定のアプリケーションがクラッシュする問題を解消します。
     </para>
 @z
 
@@ -283,11 +292,12 @@ minor timing issues が何を意味するのか不明であった。
 
 @x
     <para>Install NIS and RPC related headers that are not installed by
-    default; these are required by several BLFS packages:</para>
+    default; these are required ito rebuild glibc and by several BLFS 
+    packages:</para>
 @y
     <para>
     デフォルトではインストールされない、NIS と RPC に関するヘッダーファイルをインストールします。
-    これは BLFS の各種パッケージにて必要となります。
+    これは glibc の再ビルド時や BLFS の各種パッケージにて必要となります。
     </para>
 @z
 

@@ -32,6 +32,25 @@
 @z
 
 @x
+    <para>In some cases, particularly LFS 7.1, the rpc headers were not
+    installed properly.  Test to see if they are installed in the host system
+    and install if they are not:</para>
+@y
+    <para>
+    例えば LFS 7.1 などにおいて、rpc ヘッダーが適切にインストールされていない場合があります。
+    ホストシステムにそれらがインストールされているかを確認し、なければそれらをインストールするようにします。
+    </para>
+@z
+
+@x
+    <para>Fix an issue when building Glibc-&glibc-version; with GCC-&gcc-version;:</para>
+@y
+    <para>
+    Glibc-&glibc-version; を GCC-&gcc-version; にてビルドする際の問題を以下により解消します。
+    </para>
+@z
+
+@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
@@ -58,14 +77,6 @@
     もっとも試してみれば分かりますが、ビルド時の変数<quote>CFLAGS</quote>にて設定しておくのが一番です。
     Glibc の内部的なビルドシステムが利用する CFLAGS を上書き設定するのとは別に <filename>configparms</filename> ファイルという特別なファイルを使って CFLAGS に対して追加設定を行うこともできます。
     -mtune=native というフラグも必要で -march を設定した際に変更される -mtune の値を適切にリセットします。
-    </para>
-@z
-
-@x
-    <para>Fix an issue when building Glibc-&glibc-version; with GCC-&gcc-version;:</para>
-@y
-    <para>
-    Glibc-&glibc-version; を GCC-&gcc-version; にてビルドする際の問題を以下により解消します。
     </para>
 @z
 

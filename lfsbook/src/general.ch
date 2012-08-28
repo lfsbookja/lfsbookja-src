@@ -8,16 +8,16 @@
 % $Date::                           $
 %
 @x
-<!ENTITY version "SVN-20120826">
-<!ENTITY releasedate "August 26, 2012">
+<!ENTITY version "SVN-20120827">
+<!ENTITY releasedate "August 27, 2012">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version "SVN-20120826">
-<!ENTITY releasedate "2012年8月26日">
-<!ENTITY jversion "20120827">
+<!ENTITY version "SVN-20120827">
+<!ENTITY releasedate "2012年8月27日">
+<!ENTITY jversion "20120828">
 <!ENTITY copyrightdate "1999-2012"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.2">
 <!ENTITY generic-version "development"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->

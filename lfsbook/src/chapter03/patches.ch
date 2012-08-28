@@ -41,116 +41,76 @@
 </note>
 @z
 
-@x
-      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-      <listitem>
+@x Bash Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Bash Upstream Fixes Patch - <token>&bash-fixes-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Binutils Build Fix Patch - <token>&binutils-build-patch-size;</token>:</term>
-      <listitem>
+@x Binutils Build Fix Patch
         <para>Download: <ulink url="&patches-root;&binutils-build-patch;"/></para>
         <para>MD5 sum: <literal>&binutils-build-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Binutils Build Fix Patch - <token>&binutils-build-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&binutils-build-patch;"/></para>
         <para>MD5 sum: <literal>&binutils-build-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
-      <listitem>
+@x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
         <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Bzip2 Documentation Patch - <token>&bzip2-docs-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
         <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>
-      <listitem>
+@x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
         <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Coreutils Internationalization Fixes Patch - <token>&coreutils-i18n-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
         <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Flex Regression Tests Patch - <token>&flex-bison-patch-size;</token>:</term>
-      <listitem>
+@x Flex Regression Tests Patch
         <para>Download: <ulink url="&patches-root;&flex-bison-patch;"/></para>
         <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Flex Regression Tests Patch - <token>&flex-bison-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&flex-bison-patch;"/></para>
         <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
-      <listitem>
+@x Glibc DNS Resolve Patch
+        <para>Download: <ulink url="&patches-root;&glibc-fix-resolv-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-fix-resolv-patch-md5;</literal></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&glibc-fix-resolv-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-fix-resolv-patch-md5;</literal></para>
+@z
+
+@x GRUB Disk Geometry Patch
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
         <para>MD5 sum: <literal>&grub-geometry-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>GRUB Disk Geometry Patch - <token>&grub-geometry-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
         <para>MD5 sum: <literal>&grub-geometry-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>GRUB 256-Byte Inodes Patch - <token>&grub-inode-patch-size;</token>:</term>
-      <listitem>
+@x GRUB 256-Byte Inodes Patch
         <para>Download: <ulink url="&patches-root;&grub-inode-patch;"/></para>
         <para>MD5 sum: <literal>&grub-inode-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>GRUB 256-Byte Inodes Patch - <token>&grub-inode-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&grub-inode-patch;"/></para>
         <para>MD5 sum: <literal>&grub-inode-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Kbd Loadkeys Fix Patch - <token>&kbd-fixes-patch-size;</token>:</term>
-      <listitem>
+@x Kbd Loadkeys Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Kbd Loadkeys Fix Patch - <token>&kbd-fixes-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>
-      </listitem>
 @z
 
 @x Kbd Backspace/Delete Fix Patch
@@ -185,74 +145,44 @@
         <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
 @z
 
-@x
-      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
-      <listitem>
+@x Perl Libc Patch
         <para>Download: <ulink url="&patches-root;&perl-libc-patch;"/></para>
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Perl Libc Patch - <token>&perl-libc-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&perl-libc-patch;"/></para>
         <para>MD5 sum: <literal>&perl-libc-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Procps HZ Errors Patch - <token>&procps-hz_fixes-patch-size;</token>:</term>
-      <listitem>
+@x Procps HZ Errors Patch
         <para>Download: <ulink url="&patches-root;&procps-hz_fixes-patch;"/></para>
         <para>MD5 sum: <literal>&procps-hz_fixes-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Procps HZ Errors Patch - <token>&procps-hz_fixes-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&procps-hz_fixes-patch;"/></para>
         <para>MD5 sum: <literal>&procps-hz_fixes-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Procps Watch Patch - <token>&procps-watch-patch-size;</token>:</term>
-      <listitem>
+@x Procps Watch Patch
         <para>Download: <ulink url="&patches-root;&procps-watch-patch;"/></para>
         <para>MD5 sum: <literal>&procps-watch-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Procps Watch Patch - <token>&procps-watch-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&procps-watch-patch;"/></para>
         <para>MD5 sum: <literal>&procps-watch-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
-      <listitem>
+@x Readline Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Readline Upstream Fixes Patch - <token>&readline-fixes-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-      </listitem>
 @z
 
-@x
-      <term>Sed Regression Tests Patch - <token>&sed-testsuite-patch-size;</token>:</term>
-      <listitem>
+@x Sed Regression Tests Patch
         <para>Download: <ulink url="&patches-root;&sed-testsuite-patch;"/></para>
         <para>MD5 sum: <literal>&sed-testsuite-patch-md5;</literal></para>
-      </listitem>
 @y
-      <term>Sed Regression Tests Patch - <token>&sed-testsuite-patch-size;</token>:</term>
-      <listitem>
         <para>&Download;: <ulink url="&patches-root;&sed-testsuite-patch;"/></para>
         <para>MD5 sum: <literal>&sed-testsuite-patch-md5;</literal></para>
-      </listitem>
 @z
 
 @x
