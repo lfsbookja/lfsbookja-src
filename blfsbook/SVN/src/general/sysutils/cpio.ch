@@ -137,6 +137,16 @@
 @z
 
 @x
+    <para><parameter>sed -i -e '/gets is a/d' gnu/stdio.in.h &amp;&amp;</parameter>:
+    This fixes an incompatability with <application>glibc-2.16.0</application>.
+    </para>
+@y
+    <para><parameter>sed -i -e '/gets is a/d' gnu/stdio.in.h &amp;&amp;</parameter>:
+    <application>glibc-2.16.0</application> との非互換性を修正します。
+    </para>
+@z
+
+@x
     <para><parameter>--bindir=/bin</parameter>: This parameter installs
     <command>cpio</command> to <filename class="directory">/bin</filename>
     instead of <filename class="directory">/usr/bin</filename> as recommended

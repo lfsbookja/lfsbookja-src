@@ -99,7 +99,7 @@
     <xref linkend="gst-plugins-ugly"/> (needed for MP3 support)
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="gst-plugins-base"/> (ALSA への出力に必要),
     <xref linkend="gst-plugins-good"/> (PulseAudio への出力に必要),

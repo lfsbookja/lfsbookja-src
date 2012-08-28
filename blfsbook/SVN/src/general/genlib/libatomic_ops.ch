@@ -94,6 +94,15 @@
 @z
 
 @x
+    <para>The checks for this package will fail until after
+    installation.</para>
+@y
+    <para>
+    本パッケージのテストは、インストール前であると失敗します。
+    </para>
+@z
+
+@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。

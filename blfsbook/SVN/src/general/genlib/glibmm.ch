@@ -83,7 +83,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/>,
       <xref linkend="libsigc"/>
     </para>
 @z

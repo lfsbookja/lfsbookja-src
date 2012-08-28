@@ -91,7 +91,7 @@
     <para role="optional">
       <xref linkend="freeglut"/>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <xref linkend="libjpeg"/> and
+      <xref linkend="libjpeg"/>,
       <xref linkend="xorg7-lib"/>
     </para>
 @z

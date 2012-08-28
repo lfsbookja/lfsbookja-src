@@ -160,7 +160,9 @@
 @x
     <para>Recompile and install the new kernel, if necessary.</para>
 @y
-    <para>Recompile and install the new kernel, if necessary.</para>
+    <para>
+    必要な場合は、カーネルを再コンパイル、再インストールします。
+    </para>
 @z
 
 @x

@@ -197,8 +197,7 @@
             is a shell script that provides configuration information for
             applications wanting to use <application>libpng</application>.
 @y
-            is a shell script that provides configuration information for
-            applications wanting to use <application>libpng</application>.
+            <application>libpng</application> を利用しようとするアプリケーションに対して、設定情報を提供するためのシェルスクリプトです。
 @z
 
 @x
