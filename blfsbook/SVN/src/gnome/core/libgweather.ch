@@ -156,8 +156,8 @@
       <option>--enable-locations-compression</option>: This parameter enables
       compression of <filename>Locations.xml</filename> files.
 @y
-      <option>--enable-locations-compression</option>: This parameter enables
-      compression of <filename>Locations.xml</filename> files.
+      <option>--enable-locations-compression</option>:
+      本パラメーターは <filename>Locations.xml</filename> ファイルの圧縮を有効にします。
 @z
 
 @x
