@@ -517,34 +517,34 @@
     the root directory (about 250MB uncompressed for a base LFS build), copying
     that file via network transfer or CD-ROM to the new system and expanding
     it.  From that point, a few configuration files will have to be changed.
-    Configuration files that may need to be updated include:
+    Configuration files that may need to be updated include: 
     <filename>/etc/hosts</filename>,
     <filename>/etc/fstab</filename>,
     <filename>/etc/passwd</filename>,
     <filename>/etc/group</filename>,
     <filename>/etc/shadow</filename>,
     <filename>/etc/ld.so.conf</filename>,
-    <filename>/etc/scsi_id.config</filename>,
-    <filename>/etc/sysconfig/network</filename> and
-    <filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>.
+    <filename>/etc/sysconfig/rc.site</filename>,
+    <filename>/etc/sysconfig/network</filename>, and
+    <filename>/etc/sysconfig/ifconfig.eth0</filename>.    
     </para>
 @y
-      <para>
-      LFS システムの利点の一つとして、どのファイルもディスク上のどこに位置していても構わないことです。
-      他のコンピューターに対してビルドした LFS の複製を作ろうとするなら、それが同等のアーキテクチャーであれば容易に実現できます。
-      つまり <command>tar</command> コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度) をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
-      この場合でも、設定ファイルはいくらか変更することが必要です。
-      変更が必要となる設定ファイルは以下のとおりです。
-      <filename>/etc/hosts</filename>、
-      <filename>/etc/fstab</filename>、
-      <filename>/etc/passwd</filename>、
-      <filename>/etc/group</filename>、
-      <filename>/etc/shadow</filename>、
-      <filename>/etc/ld.so.conf</filename>、
-      <filename>/etc/scsi_id.config</filename>、
-      <filename>/etc/sysconfig/network</filename>、
-      <filename>/etc/sysconfig/network-devices/ifconfig.eth0/ipv4</filename>
-      </para>
+    <para>
+    LFS システムの利点の一つとして、どのファイルもディスク上のどこに位置していても構わないことです。
+    他のコンピューターに対してビルドした LFS の複製を作ろうとするなら、それが同等のアーキテクチャーであれば容易に実現できます。
+    つまり <command>tar</command> コマンドを使って LFS のルートディレクトリを含むパーティション (LFS の基本的なビルドの場合、非圧縮で 250MB 程度) をまとめ、これをネットワーク転送か、あるいは CD-ROM を通じて新しいシステムにコピーし、伸張 (解凍) するだけです。
+    この場合でも、設定ファイルはいくらか変更することが必要です。
+    変更が必要となる設定ファイルは以下のとおりです。
+    <filename>/etc/hosts</filename>,
+    <filename>/etc/fstab</filename>,
+    <filename>/etc/passwd</filename>,
+    <filename>/etc/group</filename>,
+    <filename>/etc/shadow</filename>,
+    <filename>/etc/ld.so.conf</filename>,
+    <filename>/etc/sysconfig/rc.site</filename>,
+    <filename>/etc/sysconfig/network</filename>,
+    <filename>/etc/sysconfig/ifconfig.eth0</filename>
+    </para>
 @z
 
 @x

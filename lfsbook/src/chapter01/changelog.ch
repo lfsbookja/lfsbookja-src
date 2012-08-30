@@ -48,6 +48,30 @@
 @z
 
 @x
+      <para>2012-08-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix spelling typos.  Thanks to Gilles
+          Espinasse.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add additional explanations for time zone 
+          installation, udev, and network configuration.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - スペルミスの修正。Gilles Espinasse に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - タイムゾーンデータ、udev、ネットワーク設定にて、それぞれ説明を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-27</para>
       <itemizedlist>
         <listitem>

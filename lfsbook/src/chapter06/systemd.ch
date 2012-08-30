@@ -39,12 +39,26 @@
 @z
 
 @x
+    <note><para>This package is a little different from other packages.  The
+    initial package that is extracted is
+    <filename>systemd-&systemd-version;.tar.xz</filename> even though the 
+    application we are installing is udev. After changing to the 
+    systemd directory, follow the instructions below.</para></note>
+@y
+    <note><para>
+    本パッケージは他に比べると多少異なっています。
+    はじめに <filename>systemd-&systemd-version;.tar.xz</filename> からパッケージのソースを取り出しますが、インストールするのは udev です。
+    systemd ディレクトリに移動してから、これ以降に示す手順に従ってください。
+    </para></note>
+@z
+
+@x
     <para>The udev-lfs tarball contains LFS-specific files used to build
-    Udev. Unpack it into the Udev source directory:</para>
+    Udev. Unpack it into the systemd source directory:</para>
 @y
     <para>
     udev-lfs という Tar アーカイブファイルには Udev パッケージをビルドする際の LFS 独自のファイルが含まれています。
-    以下のようにしてこのファイルを Udev ソースディレクトリに展開します。
+    以下のようにしてこのファイルを systemd ソースディレクトリに展開します。
     </para>
 @z
 

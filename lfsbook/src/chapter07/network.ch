@@ -39,16 +39,18 @@
 @z
 
 @x
-  <para>If a network card will not be used, there is likely no need to
-  create any configuration files relating to network cards. If that is
-  the case, remove the <filename class="symlink">network</filename>
-  symlinks from all run-level directories (<filename
-  class="directory">/etc/rc.d/rc*.d</filename>).</para>
+  <para>If a network card will not be used, there is likely no need to create
+  any configuration files relating to network cards. If that is the case, you
+  will need to remove the <filename class="symlink">network</filename> symlinks
+  from all run-level directories (<filename
+  class="directory">/etc/rc.d/rc*.d</filename>) after the bootscripts are
+  installed in <xref linkend="ch-scripts-bootscripts"/>.</para>
 @y
   <para>
   ネットワークカードを利用しないのであれば、ネットワークカードに関する設定は、おそらくすべて不要なはずです。
   そのような場合は、ランレベルディレクトリ (<filename
   class="directory">/etc/rc.d/rc*.d</filename>) から、シンボリックリンク <filename class="symlink">network</filename> を削除してください。
+  これは <xref linkend="ch-scripts-bootscripts"/> にてブートスクリプトをインストールした後に行ってください。
   </para>
 @z
 

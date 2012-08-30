@@ -500,7 +500,7 @@
 @z
 
 @x lscpu
-          <para>Prints CPU architechture information</para>
+          <para>Prints CPU architecture information</para>
 @y
           <para>
           CPU アーキテクチャーの情報を表示します。

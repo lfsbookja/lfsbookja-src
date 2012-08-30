@@ -191,7 +191,7 @@
           <para><command>ip mroute</command> allows users to set, change, or
           delete the multicast routing</para>
 
-          <para><command>ip monitor</command> allows users to continously monitor
+          <para><command>ip monitor</command> allows users to continuously monitor
           the state of devices, addresses and routes</para>
 @y
           <para>

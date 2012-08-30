@@ -151,10 +151,10 @@ sed.xml:               $(BOOKdir)/$@ $(srcdir)/sed.ch
 shadow.xml:            $(BOOKdir)/$@ $(srcdir)/shadow.ch
 strippingagain.xml:    $(BOOKdir)/$@ $(srcdir)/strippingagain.ch
 sysklogd.xml:          $(BOOKdir)/$@ $(srcdir)/sysklogd.ch
+systemd.xml:           $(BOOKdir)/$@ $(srcdir)/systemd.ch
 sysvinit.xml:          $(BOOKdir)/$@ $(srcdir)/sysvinit.ch
 tar.xml:               $(BOOKdir)/$@ $(srcdir)/tar.ch
 texinfo.xml:           $(BOOKdir)/$@ $(srcdir)/texinfo.ch
-udev.xml:              $(BOOKdir)/$@ $(srcdir)/udev.ch
 util-linux.xml:        $(BOOKdir)/$@ $(srcdir)/util-linux.ch
 vim.xml:               $(BOOKdir)/$@ $(srcdir)/vim.ch
 xz.xml:                $(BOOKdir)/$@ $(srcdir)/xz.ch
