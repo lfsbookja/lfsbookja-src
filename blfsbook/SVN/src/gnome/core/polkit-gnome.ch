@@ -192,7 +192,7 @@
 @z
 
 @x polkit-gnome-authentication-agent-1
-            is the <application>Polkit GNOME</application> authentication agent.
+            is the <application>Polkit</application> authentication agent.
 @y
-            <application>Polkit GNOME</application> 認証エージェント (Authentication Agent)。
+            <application>Polkit</application> 認証エージェント (Authentication Agent)。
 @z

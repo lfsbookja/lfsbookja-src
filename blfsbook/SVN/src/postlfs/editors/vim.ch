@@ -389,14 +389,14 @@
       <para>Alternatively you can manually download the *.spl and *.sug files
       from: <ulink url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> and save
       them to <filename class="directory"> ~/.vim/spell </filename> or in
-      <filename class="directory">/usr/share/vim/vim72/spell/</filename>.</para>
+      <filename class="directory">/usr/share/vim/vim73/spell/</filename>.</para>
 @y
       <para>
       *.spl や *.sug というファイルは <ulink
       url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から手動でダウンロードすることもできます。
       これらのファイルは <filename
       class="directory"> ~/.vim/spell </filename> に書き加えるか、<filename
-      class="directory">/usr/share/vim/vim72/spell/</filename> ディレクトリに保存して利用します。
+      class="directory">/usr/share/vim/vim73/spell/</filename> ディレクトリに保存して利用します。
       </para>
 @z
 

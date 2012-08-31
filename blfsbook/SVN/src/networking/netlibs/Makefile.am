@@ -11,7 +11,6 @@ CHANGE_FILES = \
 	geoclue.ch         \
 	glib-networking.ch \
 	libevent.ch        \
-	libgdata.ch        \
 	libnice.ch         \
 	libnl.ch           \
 	libpcap.ch         \
@@ -37,7 +36,6 @@ curl.xml:             $(BOOKdir)/$@ $(srcdir)/curl.ch
 geoclue.xml:          $(BOOKdir)/$@ $(srcdir)/geoclue.ch
 glib-networking.xml:  $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
 libevent.xml:         $(BOOKdir)/$@ $(srcdir)/libevent.ch
-libgdata.xml:         $(BOOKdir)/$@ $(srcdir)/libgdata.ch
 libnice.xml:          $(BOOKdir)/$@ $(srcdir)/libnice.ch
 libnl.xml:            $(BOOKdir)/$@ $(srcdir)/libnl.ch
 libpcap.xml:          $(BOOKdir)/$@ $(srcdir)/libpcap.ch

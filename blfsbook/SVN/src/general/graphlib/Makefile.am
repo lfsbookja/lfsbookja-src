@@ -13,6 +13,7 @@ CHANGE_FILES = \
 	fontconfig.ch  \
 	freetype2.ch   \
 	fribidi.ch     \
+	harfbuzz.ch    \
 	gegl.ch        \
 	giflib.ch      \
 	graphlib.ch    \
@@ -51,6 +52,7 @@ exiv2.xml:       $(BOOKdir)/$@ $(srcdir)/exiv2.ch
 fontconfig.xml:  $(BOOKdir)/$@ $(srcdir)/fontconfig.ch
 freetype2.xml:   $(BOOKdir)/$@ $(srcdir)/freetype2.ch
 fribidi.xml:     $(BOOKdir)/$@ $(srcdir)/fribidi.ch
+harfbuzz.xml:    $(BOOKdir)/$@ $(srcdir)/harfbuzz.ch
 gegl.xml:        $(BOOKdir)/$@ $(srcdir)/gegl.ch
 giflib.xml:      $(BOOKdir)/$@ $(srcdir)/giflib.ch
 graphlib.xml:    $(BOOKdir)/$@ $(srcdir)/graphlib.ch

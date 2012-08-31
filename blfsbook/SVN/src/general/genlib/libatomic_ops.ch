@@ -94,26 +94,17 @@
 @z
 
 @x
-    <para>The checks for this package will fail until after
-    installation.</para>
+      To check the results, issue 
+      <command>LD_LIBRARY_PATH=../src/.libs make check</command>.
 @y
-    <para>
-    本パッケージのテストは、インストール前であると失敗します。
-    </para>
+      To check the results, issue 
+      <command>LD_LIBRARY_PATH=../src/.libs make check</command>.
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <para>To check the results, issue <command>make check</command>.</para>
-@y
-    <para>
-    ビルド結果をチェックする場合は <command>make check</command> を実行します。
-    </para>
 @z
 
 @x
@@ -140,14 +131,6 @@
 @z
 
 @x
-      <option>--docdir=/usr/share/doc/libatomic_ops-&libatomic_ops-version;</option>:
-      This option installs the documentation in a versioned directory.
-@y
-      <option>--docdir=/usr/share/doc/libatomic_ops-&libatomic_ops-version;</option>:
-      このオプションはドキュメントのインストール先ディレクトリを、バージョン番号つきのものとします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -163,16 +146,18 @@
 
 @x
         <seg>
-          libatomic_ops.so and
-          libatomic_ops_gpl.so
+          libatomic_ops.so and libatomic_ops_gpl.so
         </seg>
-        <seg>/usr/include/libatomic_ops</seg>
+        <seg>
+          /usr/include/libatomic_ops
+        </seg>
 @y
         <seg>
-          libatomic_ops.so,
-          libatomic_ops_gpl.so
+          libatomic_ops.so, libatomic_ops_gpl.so
         </seg>
-        <seg>/usr/include/libatomic_ops</seg>
+        <seg>
+          /usr/include/libatomic_ops
+        </seg>
 @z
 
 @x
@@ -181,8 +166,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libatomic_ops{,_gpl}.a
-          <para>contain functions for atomic memory operations.</para>
+@x libatomic_ops.so
+          <para>contains functions for atomic memory operations.</para>
 @y
           <para>
           atomic メモリ制御のための関数を提供します。

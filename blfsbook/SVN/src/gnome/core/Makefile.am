@@ -51,6 +51,7 @@ CHANGE_FILES = \
 	gtkhtml.ch                  \
 	gtksourceview.ch            \
 	gvfs.ch                     \
+	libgdata.ch                 \
 	libgee.ch                   \
 	libgnome-keyring.ch         \
 	libgnomekbd.ch              \
@@ -128,6 +129,7 @@ gtkhtml.xml:                   $(BOOKdir)/$@ $(srcdir)/gtkhtml.ch
 gtksourceview.xml:             $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
 gsettings-desktop-schemas.xml: $(BOOKdir)/$@ $(srcdir)/gsettings-desktop-schemas.ch
 gvfs.xml:                      $(BOOKdir)/$@ $(srcdir)/gvfs.ch
+libgdata.xml:                  $(BOOKdir)/$@ $(srcdir)/libgdata.ch
 libgee.xml:                    $(BOOKdir)/$@ $(srcdir)/libgee.ch
 libgnome-keyring.xml:          $(BOOKdir)/$@ $(srcdir)/libgnome-keyring.ch
 libgnomekbd.xml:               $(BOOKdir)/$@ $(srcdir)/libgnomekbd.ch

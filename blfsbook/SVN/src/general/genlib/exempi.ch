@@ -14,9 +14,9 @@
 @z
 
 @x
-    <title>Introduction to exempi</title>
+    <title>Introduction to Exempi</title>
 @y
-    <title>&IntroductionTo1;exempi&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Exempi&IntroductionTo2;</title>
 @z
 
 @x
@@ -71,17 +71,21 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">exempi Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Exempi Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;exempi&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Exempi&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="boost"/></para>
+    <para role="required">
+      <xref linkend="boost"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="boost"/></para>
+    <para role="required">
+      <xref linkend="boost"/>
+    </para>
 @z
 
 @x
@@ -93,17 +97,17 @@
 @z
 
 @x
-    <title>Installation of exempi</title>
+    <title>Installation of Exempi</title>
 @y
-    <title>&InstallationOf1;exempi&InstallationOf2;</title>
+    <title>&InstallationOf1;Exempi&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>exempi</application> by running the following
+    <para>Install <application>Exempi</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>exempi</application> をビルドします。
+    以下のコマンドを実行して <application>Exempi</application> をビルドします。
     </para>
 @z
 
@@ -130,22 +134,13 @@
 @z
 
 @x
-    <para><option>--enable-static=no</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--enable-static=no</option>:
-    このスイッチによりスタティックライブラリをインストールしないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
@@ -155,13 +150,13 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libexempi.{so,a}</seg>
-        <seg>/usr/include/exempi-2.0/exempi</seg>
+        <seg>exempi</seg>
+        <seg>libexempi.so</seg>
+        <seg>/usr/include/exempi-2.0</seg>
 @y
-        <seg>&None;</seg>
-        <seg>libexempi.{so,a}</seg>
-        <seg>/usr/include/exempi-2.0/exempi</seg>
+        <seg>exempi</seg>
+        <seg>libexempi.so</seg>
+        <seg>/usr/include/exempi-2.0</seg>
 @z
 
 @x
@@ -170,10 +165,10 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libexempi.{so,a}
-          <para>is a library to parse XMP metadata.</para>
+@x libexempi.so
+          <para>is a library used to parse XMP metadata.</para>
 @y
           <para>
-          XMP メタデータを解析するライブラリ。
+          XMP メタデータの解析に用いるライブラリ。
           </para>
 @z
