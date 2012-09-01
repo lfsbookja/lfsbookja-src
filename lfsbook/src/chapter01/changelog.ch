@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2012-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix spelling typos in bootscripts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-08-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプトにおけるスペルミスを修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-08-29</para>
       <itemizedlist>
         <listitem>

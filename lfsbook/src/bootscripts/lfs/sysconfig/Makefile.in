@@ -151,7 +151,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/bootscripts/lfs/sysconfig
-srcs = createfiles modules rc rc.site udev_retry
+srcs = createfiles modules rc.site udev_retry
 all: all-am
 
 .SUFFIXES:
@@ -340,8 +340,6 @@ all: $(srcs)
 createfiles: $(BOOKdir)/createfiles
 	cp -p $(BOOKdir)/$@ $@
 modules: $(BOOKdir)/modules
-	cp -p $(BOOKdir)/$@ $@
-rc: $(BOOKdir)/rc
 	cp -p $(BOOKdir)/$@ $@
 rc.site: $(BOOKdir)/rc.site
 	cp -p $(BOOKdir)/$@ $@

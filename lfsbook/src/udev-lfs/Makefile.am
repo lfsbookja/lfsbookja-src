@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=contrib
-BOOKdir = @abs_bookdir@/udev-config
+BOOKdir = @abs_bookdir@/udev-lfs
 srcdir = @srcdir@
 srcs = 55-lfs.rules
 

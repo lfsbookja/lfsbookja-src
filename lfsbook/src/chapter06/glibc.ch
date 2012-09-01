@@ -292,7 +292,7 @@ minor timing issues が何を意味するのか不明であった。
 
 @x
     <para>Install NIS and RPC related headers that are not installed by
-    default; these are required ito rebuild glibc and by several BLFS 
+    default; these are required to rebuild glibc and by several BLFS 
     packages:</para>
 @y
     <para>
