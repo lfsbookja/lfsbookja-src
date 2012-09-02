@@ -170,8 +170,9 @@
        </seg>
         <seg>
          /usr/include/cogl,
-         /usr/share/cogl and 
-         /usr/share/gtk-doc/html/{cogl,cogl-2.0-experimental}
+         /usr/share/cogl,
+         /usr/share/gtk-doc/html/cogl and
+         /usr/share/gtk-doc/html/cogl-2.0-experimental
        </seg>
 @y
         <seg>
@@ -180,7 +181,8 @@
         <seg>
          /usr/include/cogl,
          /usr/share/cogl,
-         /usr/share/gtk-doc/html/{cogl,cogl-2.0-experimental}
+         /usr/share/gtk-doc/html/cogl,
+         /usr/share/gtk-doc/html/cogl-2.0-experimental
        </seg>
 @z
 

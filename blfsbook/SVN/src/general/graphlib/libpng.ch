@@ -166,15 +166,15 @@
         </seg>
 @y
         <seg>
-          libpng-config and
+          libpng-config,
           libpng15-config
         </seg>
         <seg>
-          libpng.so and
+          libpng.so,
           libpng15.so
         </seg>
         <seg>
-          /usr/include/libpng15 and
+          /usr/include/libpng15,
           /usr/share/doc/libpng-&libpng-version;
         </seg>
 @z

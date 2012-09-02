@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "375 MB (552 MB with checks)">
-  <!ENTITY gdb-time          "1.8 SBU (5.9 SBU with checks)">
+  <!ENTITY gdb-buildsize     "314 MB (444 MB with checks)">
+  <!ENTITY gdb-time          "1.9 SBU (5.9 SBU with checks)">
 @y
-  <!ENTITY gdb-buildsize     "375 MB (テスト実施時は 552 MB)">
-  <!ENTITY gdb-time          "1.8 SBU (テスト実施時は 5.9 SBU)">
+  <!ENTITY gdb-buildsize     "314 MB (テスト実施時は 444 MB)">
+  <!ENTITY gdb-time          "1.9 SBU (テスト実施時は 5.9 SBU)">
 @z
 
 @x

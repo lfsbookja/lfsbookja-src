@@ -198,8 +198,10 @@ CHANGE_FILES = \
 	libgtop.ch                  \
 	libgweather.ch              \
 	libpeas.ch                  \
+	libsecret.ch                \
 	libwacom.ch                 \
 	libwnck.ch                  \
+	libzeitgeist.ch             \
 	metacity.ch                 \
 	mutter.ch                   \
 	nautilus.ch                 \
@@ -457,8 +459,10 @@ libgnomekbd.xml:               $(BOOKdir)/$@ $(srcdir)/libgnomekbd.ch
 libgtop.xml:                   $(BOOKdir)/$@ $(srcdir)/libgtop.ch
 libgweather.xml:               $(BOOKdir)/$@ $(srcdir)/libgweather.ch
 libpeas.xml:                   $(BOOKdir)/$@ $(srcdir)/libpeas.ch
+libsecret.xml:                 $(BOOKdir)/$@ $(srcdir)/libsecret.ch
 libwacom.xml:                  $(BOOKdir)/$@ $(srcdir)/libwacom.ch
 libwnck.xml:                   $(BOOKdir)/$@ $(srcdir)/libwnck.ch
+libzeitgeist.xml:              $(BOOKdir)/$@ $(srcdir)/libzeitgeist.ch
 metacity.xml:                  $(BOOKdir)/$@ $(srcdir)/metacity.ch
 mutter.xml:                    $(BOOKdir)/$@ $(srcdir)/mutter.ch
 nautilus.xml:                  $(BOOKdir)/$@ $(srcdir)/nautilus.ch

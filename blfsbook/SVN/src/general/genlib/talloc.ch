@@ -16,7 +16,7 @@
 @x
     <title>Introduction to talloc</title>
 @y
-    <title>&IntroductionTo1;talloc&IntroductionTo2;s</title>
+    <title>&IntroductionTo1;talloc&IntroductionTo2;</title>
 @z
 
 @x
@@ -31,11 +31,8 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 指すのか不明であったため、訳さなかった。
 -->
 <para>
-<application>talloc</application>
-は、メモリの参照回数をカウントするメモリプールシステム (memory pool system)
-であり、メモリ開放の機能も含みます。
-これは <application>Samba</application> や <application>MesaLib</application>
-において、メモリ管理を行う主要な機能として組み入れられています。
+<application>talloc</application> は、メモリの参照回数をカウントするメモリプールシステム (memory pool system) であり、メモリ開放の機能も含みます。
+これは <application>Samba</application> や <application>MesaLib</application> において、メモリ管理を行う主要な機能として組み入れられています。
 </para>
 @z
 
@@ -148,8 +145,7 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
           <para>contains a replacemnt for the <application>glibc</application>
           malloc function.</para>
 @y
-<para>
-<application>glibc</application>
-の malloc に対応する代替関数を提供します。
-</para>
+          <para>
+          <application>glibc</application> の malloc に対応する代替関数を提供します。
+          </para>
 @z

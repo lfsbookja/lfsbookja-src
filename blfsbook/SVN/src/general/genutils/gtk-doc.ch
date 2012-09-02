@@ -99,6 +99,16 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended"><xref linkend="pkgconfig"/>
+    (to use some of the optional deps)</para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended"><xref linkend="pkgconfig"/>
+    (任意の依存パッケージ利用時に必要となる場合あり)</para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
     <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
@@ -181,10 +191,10 @@
     does not behave as expected. See upstream bug at
     <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=627223"/>.</para>
 @y
-    <para><command>sed -i '...' gtkdoc-fixxref.in</command>: This command fixes
-    an issue where invocations of the <application>Vim</application> editor
-    does not behave as expected. See upstream bug at
-    <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=627223"/>.</para>
+    <para><command>sed -i '...' gtkdoc-fixxref.in</command>:
+    本コマンドは <application>Vim</application> エディターを起動した際に、思うように動作しない不備を修正するものです。
+    詳細はアップストリームが示すバグ <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=627223"/> を参照してください。
+    </para>
 @z
 
 @x

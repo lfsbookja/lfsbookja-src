@@ -180,8 +180,10 @@
           libtelepathy-logger.so
         </seg>
         <seg>
-          /usr/include/telepathy-logger-0.2 and
-          /usr/share/gtk-doc/html/telepathy-logger
+          /usr/include/telepathy-logger-0.2,
+          /usr/lib/telepathy,
+          /usr/share/gtk-doc/html/telepathy-logger and
+          /usr/share/telepathy
         </seg>
 @y
         <seg>
@@ -192,7 +194,9 @@
         </seg>
         <seg>
           /usr/include/telepathy-logger-0.2,
-          /usr/share/gtk-doc/html/telepathy-logger
+          /usr/lib/telepathy,
+          /usr/share/gtk-doc/html/telepathy-logger,
+          /usr/share/telepathy
         </seg>
 @z
 

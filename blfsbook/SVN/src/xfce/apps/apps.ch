@@ -23,6 +23,5 @@
     This is a small collection of optional applications that add extra
     capabilities to your <application>Xfce</application> desktop.
 @y
-    This is a small collection of optional applications that add extra
-    capabilities to your <application>Xfce</application> desktop.
+    ここには <application>Xfce</application> デスクトップ環境に対して、さらなる機能追加を行うアプリケーションをいくつか示します。
 @z

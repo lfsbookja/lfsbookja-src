@@ -40,6 +40,7 @@ CHANGE_FILES = \
 	libmpeg3.ch         \
 	libmusicbrainz.ch   \
 	libmusicbrainz3.ch  \
+	libmusicbrainz5.ch  \
 	libogg.ch           \
 	libquicktime.ch     \
 	libsamplerate.ch    \
@@ -104,6 +105,7 @@ libmpeg2.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg2.ch
 libmpeg3.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg3.ch
 libmusicbrainz.xml:          $(BOOKdir)/$@ $(srcdir)/libmusicbrainz.ch
 libmusicbrainz3.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz3.ch
+libmusicbrainz5.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz5.ch
 libogg.xml:                  $(BOOKdir)/$@ $(srcdir)/libogg.ch
 libquicktime.xml:            $(BOOKdir)/$@ $(srcdir)/libquicktime.ch
 libsamplerate.xml:           $(BOOKdir)/$@ $(srcdir)/libsamplerate.ch
