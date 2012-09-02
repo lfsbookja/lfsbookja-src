@@ -89,6 +89,14 @@
         <para>MD5 sum: <literal>&glibc-fix-resolv-patch-md5;</literal></para>
 @z
 
+@x Glibc test-installation.pl Patch
+        <para>Download: <ulink url="&patches-root;&glibc-installation-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-installation-patch-md5;</literal></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&glibc-installation-patch;"/></para>
+        <para>MD5 sum: <literal>&glibc-installation-patch-md5;</literal></para>
+@z
+
 @x GRUB Disk Geometry Patch
         <para>Download: <ulink url="&patches-root;&grub-geometry-patch;"/></para>
         <para>MD5 sum: <literal>&grub-geometry-patch-md5;</literal></para>

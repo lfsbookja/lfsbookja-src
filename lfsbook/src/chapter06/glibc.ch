@@ -77,13 +77,13 @@
 @x
     <para>When running <command>make install</command>, a script called
     <filename>test-installation.pl</filename> performs a small sanity test on
-    our newly installed Glibc. However, it contains a bug that causes it to
-    fail, so prevent it from running by issuing the following command:</para>
+    our newly installed Glibc. Use a patch to fix the bug that causes it to
+    fail:</para>
 @y
     <para>
     <command>make install</command> の実行時には <filename>test-installation.pl</filename> スクリプトが呼び出され、ここで作り出された新たな Glibc に対しての健全性テスト (sanity test) が実行されます。
     テストが失敗するバグが含まれるため、テストが正常実行できません。
-    そこでこれを回避するために以下のコマンドを実行します。
+    そこでこれを回避するために以下のパッチを適用します。
     </para>
 @z
 
