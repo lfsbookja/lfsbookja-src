@@ -26,7 +26,7 @@ PDF_OUTPUT = ../lfsbookja-7.2.pdf
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
 
-all: ctie $(srcs) stylesheets _bootscripts udev-config lfs md5sums
+all: ctie $(srcs) stylesheets _bootscripts udev-lfs lfs md5sums
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
@@ -59,9 +59,9 @@ _bootscripts:
 	$(MKDIR_P) bootscripts
 #cp -R $(BOOKdir)/bootscripts/* bootscripts
 
-udev-config:
-	$(MKDIR_P) udev-config
-#	cp -R $(BOOKdir)/udev-config/* udev-config
+udev-lfs:
+	$(MKDIR_P) udev-lfs
+#	cp -R $(BOOKdir)/udev-lfs/* udev-lfs
 
 lfs: maketar validxml profile-html wget-list
 	@echo "Generating chunked XHTML files..."
@@ -163,5 +163,5 @@ md5sums:
 	  stylesheets/md5sum.xsl chapter03/chapter03.xml
 	sed -i -e "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.bz2 | cut -d' ' -f1)/" \
       $(BASEDIR)/md5sums
-#	sed -i -e "s/UDEV-MD5SUM/$(shell md5sum udev-config*.tar.bz2 | cut -d' ' -f1)/" \
+#	sed -i -e "s/UDEV-MD5SUM/$(shell md5sum udev-lfs*.tar.bz2 | cut -d' ' -f1)/" \
 #     $(BASEDIR)/md5sums
