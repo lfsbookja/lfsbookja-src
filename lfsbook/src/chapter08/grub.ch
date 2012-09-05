@@ -95,13 +95,13 @@
     </para>
 @z
 
-@x
-    <para>You can determine what GRUB thinks your disk devices are by running:</para>
-@y
-    <para>
-    ディスクデバイスを GRUB がどのような名称で取り扱うかを確認する場合は以下を実行してください。
-    </para>
-@z
+% @x
+%     <para>You can determine what GRUB thinks your disk devices are by running:</para>
+% @y
+%     <para>
+%     ディスクデバイスを GRUB がどのような名称で取り扱うかを確認する場合は以下を実行してください。
+%     </para>
+% @z
 
 @x
     <title>Setting Up the Configuration</title>

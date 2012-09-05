@@ -48,6 +48,31 @@
 @z
 
 @x
+      <para>2012-09-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update grub packages and naming 
+          conventions example.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.22.  Fixes
+          <ulink url="&lfs-ticket-root;3145">#3145</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-09-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - grub パッケージの更新と命名規則の例を追記。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.22 へのアップデート。
+          <ulink url="&lfs-ticket-root;3145">#3145</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-09-02</para>
       <itemizedlist>
         <listitem>

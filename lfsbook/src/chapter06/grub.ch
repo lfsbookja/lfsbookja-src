@@ -93,21 +93,21 @@
 @z
 
 @x
-       <seg>grub-bin2h,           grub-bios-setup, grub-editenv,     grub-fstest,
+       <seg>                      grub-bios-setup, grub-editenv,     grub-fstest,
             grub-install,         grub-kbdcomp,    grub-menulst2cfg, grub-mkconfig,
-            grub-mkdevicemap,     grub-mkimage,    grub-mklayout,    grub-mknetdir,
+                                  grub-mkimage,    grub-mklayout,    grub-mknetdir,
             grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
             grub-ofpathname,      grub-probe,      grub-reboot,      grub-script-check,
-            grub-set-default,     grub-setup,      grub-sparc64-setup </seg>
+            grub-set-default,                      grub-sparc64-setup </seg>
 
         <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub</seg>
 @y
-       <seg>grub-bin2h,           grub-bios-setup, grub-editenv,     grub-fstest,
+       <seg>                      grub-bios-setup, grub-editenv,     grub-fstest,
             grub-install,         grub-kbdcomp,    grub-menulst2cfg, grub-mkconfig,
-            grub-mkdevicemap,     grub-mkimage,    grub-mklayout,    grub-mknetdir,
+                                  grub-mkimage,    grub-mklayout,    grub-mknetdir,
             grub-mkpasswd-pbkdf2, grub-mkrelpath,  grub-mkrescue,    grub-mkstandalone,
             grub-ofpathname,      grub-probe,      grub-reboot,      grub-script-check,
-            grub-set-default,     grub-setup,      grub-sparc64-setup </seg>
+            grub-set-default,                      grub-sparc64-setup </seg>
 
         <seg>/usr/lib/grub, /etc/grub.d, /usr/share/grub, /boot/grub</seg>
 @z
@@ -118,14 +118,14 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x grub-bin2h
-          <para>Converts a binary file to a C header</para>
-@y
-          <para>
-          バイナリファイルを C ヘッダーファイルに変換します。
-          </para>
-@z
-
+% @x grub-bin2h
+%           <para>Converts a binary file to a C header</para>
+% @y
+%           <para>
+%           バイナリファイルを C ヘッダーファイルに変換します。
+%           </para>
+% @z
+% 
 @x grub-bios-setup
           <para>Is a helper program for grub-install</para>
 @y
@@ -182,13 +182,13 @@
           </para>
 @z
 
-@x grub-mkdevicemap
-          <para>Generate a device map file automatically</para>
-@y
-          <para>
-          デバイスマップファイルを自動的に生成します。
-          </para>
-@z
+% @x grub-mkdevicemap
+%           <para>Generate a device map file automatically</para>
+% @y
+%           <para>
+%           デバイスマップファイルを自動的に生成します。
+%           </para>
+% @z
 
 @x grub-mkimage
           <para>Make a bootable image of GRUB</para>
@@ -282,13 +282,13 @@
           </para>
 @z
 
-@x grub-setup
-          <para>Set up images to boot from a device</para>
-@y
-          <para>
-          デバイスからのブートを行うためにイメージファイルをセットアップします。
-          </para>
-@z
+% @x grub-setup
+%           <para>Set up images to boot from a device</para>
+% @y
+%           <para>
+%           デバイスからのブートを行うためにイメージファイルをセットアップします。
+%           </para>
+% @z
 
 @x grub-sparc64-setup
           <para>Is a helper program for grub-setup</para>

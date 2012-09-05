@@ -98,7 +98,9 @@
         setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
         uuidd, uuidgen, wall, whereis, wipefs, and x86_64</seg>
+
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
+        
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
         /usr/share/getopt, /var/lib/hwclock</seg>
 @y
@@ -110,10 +112,12 @@
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
         prlimit, raw, readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
-        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
+        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
         uuidd, uuidgen, wall, whereis, wipefs, x86_64</seg>
+
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
+        
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
         /usr/share/getopt, /var/lib/hwclock</seg>
 @z
