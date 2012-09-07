@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>libsigc++</application> package implements a typesafe
-    callback system for standard C++.</para>
+      The <application>libsigc++</application> package implements a typesafe
+      callback system for standard C++.
 @y
-    <para>
-    <application>libsigc++</application> パッケージは、標準 C++ に対しタイプセーフなコールバックシステムを提供します。
-    </para>
+      <application>libsigc++</application> パッケージは、標準 C++ に対しタイプセーフなコールバックシステムを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libsigc-download-http;"/></para>
+          Download (HTTP): <ulink url="&libsigc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libsigc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libsigc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libsigc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libsigc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libsigc-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libsigc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libsigc-md5sum;</para>
+          Download MD5 sum: &libsigc-md5sum;
 @y
-        <para>&Download; MD5 sum: &libsigc-md5sum;</para>
+          &Download; MD5 sum: &libsigc-md5sum;
 @z
 
 @x
-        <para>Download size: &libsigc-size;</para>
+          Download size: &libsigc-size;
 @y
-        <para>&DownloadSize;: &libsigc-size;</para>
+          &DownloadSize;: &libsigc-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libsigc-buildsize;</para>
+          Estimated disk space required: &libsigc-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libsigc-buildsize;</para>
+          &Estimateddiskspacerequired;: &libsigc-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libsigc-time;</para>
+          Estimated build time: &libsigc-time;
 @y
-        <para>&Estimatedbuildtime;: &libsigc-time;</para>
+          &Estimatedbuildtime;: &libsigc-time;
 @z
 
 @x
@@ -89,28 +87,22 @@
 @z
 
 @x
-    <para>Install <application>libsigc++</application> by running the following
-    commands:</para>
+      Install <application>libsigc++</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libsigc++</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libsigc++</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストするなら <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストするなら <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -120,27 +112,33 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libsigc-2.0.so</seg>
-        <seg>/usr/{include/sigc++-2.0/sigc++/{adaptors/lambda,functors},
-        lib/sigc++-2.0/include,share/{devhelp/books/libsigc++-2.0,
-        doc/libsigc++-2.0/{images,reference/html,tutorial/html}}}</seg>
+        <seg>
+          libsigc-2.0.so
+        </seg>
+        <seg>
+          /usr/include/sigc++-2.0,
+          /usr/lib/sigc++-2.0,
+          /usr/share/share/devhelp/books/libsigc++-2.0 and
+          /usr/share/doc/libsigc++-2.0
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libsigc-2.0.so</seg>
-        <seg>/usr/{include/sigc++-2.0/sigc++/{adaptors/lambda,functors},
-        lib/sigc++-2.0/include,share/{devhelp/books/libsigc++-2.0,
-        doc/libsigc++-2.0/{images,reference/html,tutorial/html}}}</seg>
+        <seg>
+          libsigc-2.0.so
+        </seg>
+        <seg>
+          /usr/include/sigc++-2.0,
+          /usr/lib/sigc++-2.0,
+          /usr/share/share/devhelp/books/libsigc++-2.0,
+          /usr/share/doc/libsigc++-2.0
+        </seg>
 @z
 
 @x
@@ -150,9 +148,7 @@
 @z
 
 @x libsigc-2.0.so
-          <para>contains the <application>libsigc++</application> API methods.</para>
+            contains the <application>libsigc++</application> API methods.
 @y
-          <para>
-          <application>libsigc++</application> API メソッドを提供します。
-          </para>
+            <application>libsigc++</application> API メソッドを提供します。
 @z

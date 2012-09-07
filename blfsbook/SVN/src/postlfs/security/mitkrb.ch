@@ -142,11 +142,13 @@
 @x
       After unpacking the distribution tarball and if you have
       <xref linkend="gnupg"/> installed, you can
-      authenticate the package with the following command:
+      authenticate the package.  First, check the contents of the file
+      <filename>krb5-1.10.3.tar.gz.asc</filename>.
 @y
       After unpacking the distribution tarball and if you have
       <xref linkend="gnupg"/> installed, you can
-      authenticate the package with the following command:
+      authenticate the package.  First, check the contents of the file
+      <filename>krb5-1.10.3.tar.gz.asc</filename>.
 @z
 
 @x

@@ -105,9 +105,21 @@
 
 @x
       Install <application>Boost</application> by running the following
-      commands as the <systemitem class="username">root</systemitem> user:
+      commands:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <application>Boost</application> をインストールします。
+      以下のコマンドを実行して <application>Boost</application> をビルドします。
+@z
+
+@x
+      This package does not come with a test suite.
+@y
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

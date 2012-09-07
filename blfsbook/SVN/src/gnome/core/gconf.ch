@@ -160,37 +160,13 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/GConf</parameter>:
-      This parameter causes the libexec files to be installed in the preferred
-      location of <filename class="directory">/usr/lib/GConf</filename>
-      instead of <filename class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/GConf</parameter>:
-      This parameter causes the libexec files to be installed in the preferred
-      location of <filename class="directory">/usr/lib/GConf</filename>
-      instead of <filename class="directory">/usr/libexec</filename>.
-@z
-
-@x
-      <option>--disable-orbit</option>: This parameter is required if
+      <option>--disable-orbit</option>: This switch is required if
       <application>ORBit2</application> is not installed.
       <application>ORBit2</application> is a deprecated package.
 @y
-      <option>--disable-orbit</option>: This parameter is required if
+      <option>--disable-orbit</option>: This switch is required if
       <application>ORBit2</application> is not installed.
       <application>ORBit2</application> is a deprecated package.
-@z
-
-@x
-      <command>install -v -m755 -d /etc/gconf/gconf.xml.system</command>:
-      Creates a missing directory. Without this directory, 
-      <command>gconf-sanity-check-2</command> will fail during 
-      <application>GDM</application> startup and login.
-@y
-      <command>install -v -m755 -d /etc/gconf/gconf.xml.system</command>:
-      Creates a missing directory. Without this directory, 
-      <command>gconf-sanity-check-2</command> will fail during 
-      <application>GDM</application> startup and login.
 @z
 
 @x

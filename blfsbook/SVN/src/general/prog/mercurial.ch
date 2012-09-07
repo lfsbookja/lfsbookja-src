@@ -98,13 +98,27 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation)
-    </para>
+    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
+    <xref linkend="git"/>,
+    <xref linkend="gpg2"/> (with Python bindings),
+    <xref linkend="subversion"/> (with Python bindings),
+    <ulink url="http://bazaar.canonical.com/en/">bazaar</ulink>,
+    <ulink url="http://www.nongnu.org/cvs/">cvs</ulink>,
+    <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
+    <ulink url="http://pygments.org/">pygments</ulink>, and
+    <ulink url="https://launchpad.net/pyopenssl">pyOpenSSL</ulink>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (ドキュメントのビルド時に必要)
-    </para>
+    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (ドキュメントのビルド時に必要),
+    <xref linkend="git"/>,
+    <xref linkend="gpg2"/> (Python バインディングを含む),
+    <xref linkend="subversion"/> (Python バインディングを含む),
+    <ulink url="http://bazaar.canonical.com/en/">bazaar</ulink>,
+    <ulink url="http://www.nongnu.org/cvs/">cvs</ulink>,
+    <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
+    <ulink url="http://pygments.org/">pygments</ulink>,
+    <ulink url="https://launchpad.net/pyopenssl">pyOpenSSL</ulink>
 @z
 
 @x

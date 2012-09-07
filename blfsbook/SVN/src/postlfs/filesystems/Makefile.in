@@ -149,7 +149,6 @@ BOOKdir = $(top_builddir)/@bookdir@/postlfs/filesystems
 CHANGE_FILES = \
 	aboutlvm.ch    \
 	aboutraid.ch   \
-	curlftpfs.ch   \
 	ext3.ch        \
 	filesystems.ch \
 	fuse.ch        \
@@ -358,7 +357,6 @@ ctie:
 
 aboutlvm.xml:    $(BOOKdir)/$@ $(srcdir)/aboutlvm.ch
 aboutraid.xml:   $(BOOKdir)/$@ $(srcdir)/aboutraid.ch
-curlftpfs.xml:   $(BOOKdir)/$@ $(srcdir)/curlftpfs.ch
 ext3.xml:        $(BOOKdir)/$@ $(srcdir)/ext3.ch
 filesystems.xml: $(BOOKdir)/$@ $(srcdir)/filesystems.ch
 fuse.xml:        $(BOOKdir)/$@ $(srcdir)/fuse.ch

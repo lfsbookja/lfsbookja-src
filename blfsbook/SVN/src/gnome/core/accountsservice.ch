@@ -155,18 +155,6 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/accountsservice</parameter>: This
-      parameter causes the libexec files to be installed in the preferred location
-      of <filename class="directory">/usr/lib/accountsservice</filename> instead
-      of <filename class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/accountsservice</parameter>:
-      このパラメーターにより libexec ファイルを <filename
-      class="directory">/usr/libexec</filename> ではなく、より適切な <filename
-      class="directory">/usr/lib/accountsservice</filename> にインストールします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

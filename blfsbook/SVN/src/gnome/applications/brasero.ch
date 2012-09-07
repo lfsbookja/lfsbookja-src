@@ -203,28 +203,32 @@
           brasero
         </seg>
         <seg>
-          libbrasero-burn3.so, libbrasero-media3.so and libbrasero-utils3.so
-        </seg>
-        <seg>
-          /usr/include/brasero3,
-          /usr/lib/brasero3,
-          /usr/share/brasero,
-          /usr/share/gnome/help/brasero and
-          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} 
-        </seg>
-@y
-        <seg>
-          brasero
-        </seg>
-        <seg>
-          libbrasero-burn3.so, libbrasero-media3.so, libbrasero-utils3.so
+          libbrasero-burn3.so, libbrasero-media3.so and
+          libbrasero-utils3.so
         </seg>
         <seg>
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
           /usr/share/gnome/help/brasero,
-          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} 
+          /usr/share/gtk-doc/html/libbrasero-burn and
+          /usr/share/gtk-doc/html/libbrasero-media 
+        </seg>
+@y
+        <seg>
+          brasero
+        </seg>
+        <seg>
+          libbrasero-burn3.so, libbrasero-media3.so,
+          libbrasero-utils3.so
+        </seg>
+        <seg>
+          /usr/include/brasero3,
+          /usr/lib/brasero3,
+          /usr/share/brasero,
+          /usr/share/gnome/help/brasero,
+          /usr/share/gtk-doc/html/libbrasero-burn,
+          /usr/share/gtk-doc/html/libbrasero-media 
         </seg>
 @z
 

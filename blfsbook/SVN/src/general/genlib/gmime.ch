@@ -101,6 +101,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
+      <xref linkend="gpgme"/>,
       <xref linkend="gtk-doc"/> and
       <ulink url="http://go-mono.com/sources/">Gtk#</ulink> (requires
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>)
@@ -109,9 +110,10 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
+      <xref linkend="gpgme"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="http://go-mono.com/sources/">Gtk#</ulink>
-     (<ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
+      (<ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
     </para>
 @z
 
@@ -135,34 +137,15 @@
 @z
 
 @x
-      If you have <xref linkend="docbook-utils"/> installed and you wish
-      to generate the API tutorials, issue the following commands:
-@y
-      <xref linkend="docbook-utils"/> をインストールしていて、API のチュートリアルの生成を行う場合は、以下のコマンドを実行します。
-@z
-
-@x
-      To test the results, issue: <command>make check</command>. Note that
-      some tests may fail because the corresponding sub-system is not installed
-      or configured properly.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストはいくつか失敗します。
-      これは対応するサブシステムがインストールされていなかったり、設定が適切に行われていなかったりする場合です。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      If you generated the API tutorials, still as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      API のチュートリアルを生成した場合は <systemitem
-      class="username">root</systemitem> ユーザーのまま、さらに以下を実行します。
 @z
 
 @x
@@ -187,20 +170,18 @@
 
 @x
         <seg>
-          libgmime-2.4.so
+          libgmime-2.6.so
         </seg>
         <seg>
-          /usr/include/gmime-2.4,
-          /usr/share/doc/gmime-&gmime-version; and
+          /usr/include/gmime-2.6 and
           /usr/share/gtk-doc/html/gmime
         </seg>
 @y
         <seg>
-          libgmime-2.4.so
+          libgmime-2.6.so
         </seg>
         <seg>
-          /usr/include/gmime-2.4,
-          /usr/share/doc/gmime-&gmime-version;,
+          /usr/include/gmime-2.6,
           /usr/share/gtk-doc/html/gmime
         </seg>
 @z

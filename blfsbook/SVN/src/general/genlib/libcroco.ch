@@ -198,12 +198,11 @@
             is used to parse one or more CSS files specified on 
             the command line.
 @y
-            is used to parse one or more CSS files specified on 
-            the command line.
+            コマンドラインより指定された複数の CSS ファイルを解析します。
 @z
 
 @x libcroco-0.6.so
             contains the API functions for CSS2 parsing and manipulation.
 @y
-            contains the API functions for CSS2 parsing and manipulation.
+            CSS2 の解析や処理を行う API 関数を提供します。
 @z

@@ -21,12 +21,10 @@
 
 @x
       The <application>librsvg</application> package contains
-      <filename class="libraryfile">librsvg</filename> libraries and tools used
-      to manipulate, convert and view Scalable Vector Graphic (SVG) images.
+      a library and tools used to manipulate, convert and view
+      Scalable Vector Graphic (SVG) images.
 @y
-      <application>librsvg</application> パッケージは <filename
-      class="libraryfile">librsvg</filename> ライブラリと関連ツールを提供します。
-      これらは、グラフィックイメージフォーマット SVG (Scalable Vector Graphic) を取り扱い、フォーマット変換や表示を行います。
+      <application>librsvg</application> パッケージは、 グラフィックイメージフォーマット SVG (Scalable Vector Graphic) を取り扱い、フォーマット変換や表示を行なうライブラリを提供します。
 @z
 
 @x
@@ -110,12 +108,14 @@
 @x
     <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -171,18 +171,6 @@
 @z
 
 @x
-      <command>sed -i '/_gir_CFLAGS/s#$# -I/usr/include/cairo#'
-      Makefile.in</command>: This sed fixes a problem compiling if you have
-      Gobject-Introspection installed. It has no effect if you've not installed
-      Gobject-Introspection.
-@y
-      <command>sed -i '/_gir_CFLAGS/s#$# -I/usr/include/cairo#'
-      Makefile.in</command>: This sed fixes a problem compiling if you have
-      Gobject-Introspection installed. It has no effect if you've not installed
-      Gobject-Introspection.
-@z
-
-@x
       <option>--disable-gtk-theme</option>: Add this option if you have not
       installed GTK+ 2.
 @y
@@ -214,8 +202,9 @@
           librsvg-2.so and libpixbufloader-svg.so
         </seg>
         <seg>
-          /usr/include/librsvg-2 and
-          /usr/share/gtk-doc/html/rsvg
+          /usr/include/librsvg-2,
+          /usr/share/gtk-doc/html/rsvg and
+          /usr/share/themes/bubble
         </seg>
 @y
         <seg>
@@ -226,7 +215,8 @@
         </seg>
         <seg>
           /usr/include/librsvg-2,
-          /usr/share/gtk-doc/html/rsvg
+          /usr/share/gtk-doc/html/rsvg,
+          /usr/share/themes/bubble
         </seg>
 @z
 

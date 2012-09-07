@@ -83,7 +83,15 @@
 @z
 
 @x
-    <para>Install <application>sharutils</application> by running the following commands:</para>
+    <para>First fix an obsolete definition in the included gnulib:</para>
+@y
+    <para>
+    同梱されている gnulib において古い定義を修正します。
+    </para>
+@z
+
+@x
+    <para>Now, install <application>sharutils</application> by running the following commands:</para>
 @y
     <para>
     以下のコマンドを実行して <application>sharutils</application> をビルドします。
@@ -100,7 +108,7 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>As the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。

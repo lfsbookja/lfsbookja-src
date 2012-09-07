@@ -107,18 +107,33 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally, 
-    <xref linkend="virtuoso"/> is required as a runtime dependency for this 
-    backend.)
+    <xref linkend="libiodbc"/> (Virtuoso バックエンドにて必要。
+    またランタイムの依存パッケージとして <xref linkend="virtuoso"/> が必要。)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+    <xref linkend="doxygen"/> (to build the documentation), 
+    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
+    (no longer required to use soprano in KDE) and 
+    <ulink url="http://www.openrdf.org/">Sesame2</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+    <xref linkend="doxygen"/> (ドキュメントのビルド時), 
+    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
+    (no longer required to use soprano in KDE),
+    <ulink url="http://www.openrdf.org/">Sesame2</ulink>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/soprano"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/soprano"/></para>
 @z
 
 @x
@@ -142,6 +157,20 @@
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>-DSOPRANO_DISABLE_CLUCENE_INDEX=1</option>: Soprano might not 
+    build with recent Clucene versions. Use this option to fix it.</para>
+@y
+    <para><option>-DSOPRANO_DISABLE_CLUCENE_INDEX=1</option>: Soprano might not 
+    build with recent Clucene versions. Use this option to fix it.</para>
 @z
 
 @x
@@ -174,6 +203,14 @@
       <title>Boot Script</title>
 @y
       <title>&BootScript;</title>
+@z
+
+@x
+      <para>It is not required to start the soprano server at boottime for KDE. 
+      KDE will start soprano as needed.</para>
+@y
+      <para>It is not required to start the soprano server at boottime for KDE. 
+      KDE will start soprano as needed.</para>
 @z
 
 @x

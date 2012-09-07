@@ -319,7 +319,6 @@
           /usr/include/gtk-2.0,
           /usr/include/gtk-unix-print-2.0,
           /usr/lib/gtk-2.0,
-          /usr/share/doc/gtk+-&gtk2-version;,
           /usr/share/gtk-doc/html/gail-libgail-util,
           /usr/share/gtk-doc/html/gtk,
           /usr/share/themes/Default,
@@ -328,11 +327,11 @@
         </seg>
 @y
         <seg>
-          gtk-builder-convert, gtk-demo, gtk-query-immodules-2.0 and
+          gtk-builder-convert, gtk-demo, gtk-query-immodules-2.0,
           gtk-update-icon-cache
         </seg>
         <seg>
-          libgailutil.so, libgdk-x11-2.0.so and
+          libgailutil.so, libgdk-x11-2.0.so,
           libgtk-x11-2.0.so
         </seg>
         <seg>
@@ -341,11 +340,10 @@
           /usr/include/gtk-2.0,
           /usr/include/gtk-unix-print-2.0,
           /usr/lib/gtk-2.0,
-          /usr/share/doc/gtk+-&gtk2-version;,
           /usr/share/gtk-doc/html/gail-libgail-util,
           /usr/share/gtk-doc/html/gtk,
           /usr/share/themes/Default,
-          /usr/share/themes/Emacs and
+          /usr/share/themes/Emacs,
           /usr/share/themes/Raleigh
         </seg>
 @z
@@ -386,13 +384,20 @@
             creates mmap()able cache files for icon themes.
 @z
 
-@x
-        <term>GTK+ 2 Libraries</term>
+@x libgdk-x11-2.0.so
+            contains functions that act as a wrapper around the low-level
+            drawing and windowing functions provided by the underlying graphics
+            system.
 @y
-        <term>GTK+ 2 ライブラリ</term>
+            contains functions that act as a wrapper around the low-level
+            drawing and windowing functions provided by the underlying graphics
+            system.
 @z
-@x
-            provide an API to implement graphical user interfaces.
+
+@x libgtk-x11-2.0.so
+            contains functions that provide an API to implement graphical user
+            interfaces.
 @y
-            グラフィカルユーザーインターフェースを実装するための API を提供します。
+            contains functions that provide an API to implement graphical user
+            interfaces.
 @z

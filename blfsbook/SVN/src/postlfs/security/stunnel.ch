@@ -14,25 +14,25 @@
 @z
 
 @x
-    <title>Introduction to Stunnel</title>
+    <title>Introduction to stunnel</title>
 @y
-    <title>&IntroductionTo1;Stunnel&IntroductionTo2;</title>
+    <title>&IntroductionTo1;stunnel&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Stunnel</application> package contains a program
+    <para>The <application>stunnel</application> package contains a program
     that allows you to encrypt arbitrary TCP connections inside SSL (Secure
     Sockets Layer) so you can easily communicate with clients over secure
-    channels. <application>Stunnel</application> can be used to add SSL
+    channels. <application>stunnel</application> can be used to add SSL
     functionality to commonly used <application>Inetd</application> daemons
     like POP-2, POP-3, and IMAP servers, to standalone daemons like NNTP,
     SMTP and HTTP, and in tunneling PPP over network sockets without changes
     to the server package source code.</para>
 @y
-    <para>The <application>Stunnel</application> package contains a program
+    <para>The <application>stunnel</application> package contains a program
     that allows you to encrypt arbitrary TCP connections inside SSL (Secure
     Sockets Layer) so you can easily communicate with clients over secure
-    channels. <application>Stunnel</application> can be used to add SSL
+    channels. <application>stunnel</application> can be used to add SSL
     functionality to commonly used <application>Inetd</application> daemons
     like POP-2, POP-3, and IMAP servers, to standalone daemons like NNTP,
     SMTP and HTTP, and in tunneling PPP over network sockets without changes
@@ -82,9 +82,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Stunnel Dependencies</bridgehead>
+    <bridgehead renderas="sect3">stunnel Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Stunnel&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;stunnel&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -102,9 +102,9 @@
 @z
 
 @x
-    <title>Installation of Stunnel</title>
+    <title>Installation of stunnel</title>
 @y
-    <title>&InstallationOf1;Stunnel&InstallationOf2;</title>
+    <title>&InstallationOf1;stunnel&InstallationOf2;</title>
 @z
 
 @x
@@ -144,11 +144,11 @@
 @z
 
 @x
-    <para>Install <application>Stunnel</application> by running the following
+    <para>Install <application>stunnel</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>Stunnel</application> をビルドします。
+    以下のコマンドを実行して <application>stunnel</application> をビルドします。
     </para>
 @z
 
@@ -233,9 +233,9 @@
 @z
 
 @x
-    <title>Configuring Stunnel</title>
+    <title>Configuring stunnel</title>
 @y
-    <title>&Configuring1;Stunnel&Configuring2;</title>
+    <title>&Configuring1;stunnel&Configuring2;</title>
 @z
 
 @x
@@ -260,12 +260,12 @@
       <para>As the <systemitem class="username">root</systemitem> user,
       create the directory used for the
       <filename class='extension'>.pid</filename> file that is created
-      when the <application>Stunnel</application> daemon starts:</para>
+      when the <application>stunnel</application> daemon starts:</para>
 @y
       <para>As the <systemitem class="username">root</systemitem> user,
       create the directory used for the
       <filename class='extension'>.pid</filename> file that is created
-      when the <application>Stunnel</application> daemon starts:</para>
+      when the <application>stunnel</application> daemon starts:</para>
 @z
 
 @x
@@ -287,14 +287,14 @@
 @z
 
 @x
-      <para>If you use <application>Stunnel</application> to encrypt a daemon
+      <para>If you use <application>stunnel</application> to encrypt a daemon
       started from <command>[x]inetd</command>, you may need to disable that
       daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
       corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel service. You
       may have to add an appropriate entry in <filename>/etc/services</filename>
       as well.</para>
 @y
-      <para>If you use <application>Stunnel</application> to encrypt a daemon
+      <para>If you use <application>stunnel</application> to encrypt a daemon
       started from <command>[x]inetd</command>, you may need to disable that
       daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
       corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel service. You
@@ -392,8 +392,8 @@
 
 @x libstunnel.so
           <para> contains the API functions required by
-          <application>Stunnel</application>.</para>
+          <application>stunnel</application>.</para>
 @y
           <para> contains the API functions required by
-          <application>Stunnel</application>.</para>
+          <application>stunnel</application>.</para>
 @z

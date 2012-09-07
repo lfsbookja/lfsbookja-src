@@ -21,14 +21,13 @@
 
 @x
       The <application>Gtkmm</application> package provides a C++ interface to
-      <application>GTK+-2</application>. It can be installed alongside
-      <xref linkend="gtkmm3"/> (the <application>GTK+-3</application> version)
+      <application>GTK+ 2</application>. It can be installed alongside
+      <xref linkend="gtkmm3"/> (the <application>GTK+ 3</application> version)
       with no namespace conflicts.
 @y
-      <application>Gtkmm</application> パッケージは <application>GTK+-2</application> に対する C++ インターフェースを提供します。
-      
-. It can be installed alongside
-      <xref linkend="gtkmm3"/> (the <application>GTK+-3</application> version)
+      <application>Gtkmm</application> パッケージは <application>GTK+ 2</application> に対する C++ インターフェースを提供します。
+      It can be installed alongside
+      <xref linkend="gtkmm3"/> (the <application>GTK+ 3</application> version)
       with no namespace conflicts.
 @z
 
@@ -142,24 +141,28 @@
 @z
 
 @x
-        <seg>libgdkmm-2.4.so and libgtkmm-2.4.so.</seg>
+        <seg>
+          libgdkmm-2.4.so and libgtkmm-2.4.so
+        </seg>
         <seg>
           /usr/include/gdkmm-2.4,
           /usr/include/gtkmm-2.4,
           /usr/lib/gdkmm-2.4,
           /usr/lib/gtkmm-2.4,
           /usr/share/devhelp/books/gtkmm-2.4 and
-          /usr/share/doc/gtkmm-2.4.
+          /usr/share/doc/gtkmm-2.4
         </seg>
 @y
-        <seg>libgdkmm-2.4.so, libgtkmm-2.4.so.</seg>
+        <seg>
+          libgdkmm-2.4.so, libgtkmm-2.4.so
+        </seg>
         <seg>
           /usr/include/gdkmm-2.4,
           /usr/include/gtkmm-2.4,
           /usr/lib/gdkmm-2.4,
           /usr/lib/gtkmm-2.4,
           /usr/share/devhelp/books/gtkmm-2.4,
-          /usr/share/doc/gtkmm-2.4.
+          /usr/share/doc/gtkmm-2.4
         </seg>
 @z
 

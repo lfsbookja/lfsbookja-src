@@ -162,40 +162,41 @@
 @z
 
 @x
-      <parameter>--with-gtk=3.0</parameter>: This parameter enables
-      building of <application>GTK+ 3</application> library instead
-      of <application>GTK+ 2</application> one.
+      <parameter>--with-gtk=3.0</parameter>: This switch enables
+      building of the <application>GTK+ 3</application> library
+      instead of the <application>GTK+ 2</application> one.
 @y
       <parameter>--with-gtk=3.0</parameter>:
-      このパラメーターは <application>GTK+ 2</application> ではなく <application>GTK+ 3</application> を有効にします。
+      このスイッチは <application>GTK+ 2</application> ではなく <application>GTK+ 3</application> をビルドするようにします。
 @z
 
 @x
-      <option>--enable-vala</option>: This option enables
+      <option>--enable-vala</option>: This switch enables
       building of the Vala bindings. Remove if you don't have
       <xref linkend="vala"/> installed.
 @y
       <option>--enable-vala</option>:
-      このオプションは Vala バインディングを有効にします。
+      このスイッチは Vala バインディングを有効にします。
       <xref linkend="vala"/> をインストールしていない場合は、本オプションを取り除いてください。
 @z
 
 @x
-      <option>--without-sasl</option>: This parameter disables the use of 
-      <application>Cyrus SASL</application> for authentication. Remove it if you
-      have installed <application>Cyrus SASL</application> and wish to enable it
-      for  authentication.
+      <option>--without-sasl</option>: This switch disables the use of 
+      <application>Cyrus SASL</application> for authentication. Remove
+      it if you have installed <application>Cyrus SASL</application>
+      and wish to enable it for  authentication.
 @y
       <option>--without-sasl</option>:
-      このパラメーターは、認証処理にあたって <application>Cyrus SASL</application> を利用しないことを指示します。
+      このスイッチは、認証処理にあたって <application>Cyrus SASL</application> を利用しないことを指示します。
       <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は、本パラメーターを取り除いてください。
 @z
 
 @x
-      <option>--enable-plugin</option>: This option enables the browser plugin.
+      <option>--enable-plugin</option>: This switch enables building of
+      the browser plugin.
 @y
       <option>--enable-plugin</option>:
-      このオプションはブラウザープラグインを有効にします。
+      このスイッチはブラウザープラグインをビルドします。
 @z
 
 @x
@@ -222,7 +223,9 @@
           libgtk-vnc-2.0.so, libgvnc-1.0.so and libgvncpulse-1.0.so
         </seg>
         <seg>
-          /usr/include/{gtk-vnc-2.0,gvnc-1.0,gvncpulse-1.0}
+          /usr/include/gtk-vnc-2.0,
+          /usr/include/gvnc-1.0 and
+          /usr/include/gvncpulse-1.0
         </seg>
 @y
         <seg>
@@ -232,7 +235,9 @@
           libgtk-vnc-2.0.so, libgvnc-1.0.so, libgvncpulse-1.0.so
         </seg>
         <seg>
-          /usr/include/{gtk-vnc-2.0,gvnc-1.0,gvncpulse-1.0}
+          /usr/include/gtk-vnc-2.0,
+          /usr/include/gvnc-1.0,
+          /usr/include/gvncpulse-1.0
         </seg>
 @z
 
