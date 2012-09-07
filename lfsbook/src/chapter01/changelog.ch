@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2012-09-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add udevadm trigger --action=change line 
+          to udev script to support initramfs better.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-09-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - udev スクリプトにおいて udevadm trigger --action=change の行を追加。
+          initramfs のサポートを的確に行うために。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-09-04</para>
       <itemizedlist>
         <listitem>
