@@ -132,8 +132,8 @@
       <parameter>threading=multi</parameter>: This parameter ensures that
       <application>Boost</application> is built with multithreading support.
 @y
-      <parameter>threading=multi</parameter>: This parameter ensures that
-      <application>Boost</application> is built with multithreading support.
+      <parameter>threading=multi</parameter>:
+      このパラメーターは、マルチスレッドサポートを含めて <application>Boost</application> をビルドすることを指示します。
 @z
 
 @x

@@ -21,7 +21,6 @@ CHANGE_FILES = \
 	gdm.ch                      \
 	gjs.ch                      \
 	gnome-control-center.ch     \
-	gnome-applets.ch            \
 	gnome-backgrounds.ch        \
 	gnome-bluetooth.ch          \
 	gnome-dbus-python.ch        \
@@ -101,7 +100,6 @@ gconf.xml:                 $(BOOKdir)/$@ $(srcdir)/gconf.ch
 gcr.xml:                   $(BOOKdir)/$@ $(srcdir)/gcr.ch
 gdm.xml:                   $(BOOKdir)/$@ $(srcdir)/gdm.ch
 gjs.xml:                   $(BOOKdir)/$@ $(srcdir)/gjs.ch
-gnome-applets.xml:         $(BOOKdir)/$@ $(srcdir)/gnome-applets.ch
 gnome-backgrounds.xml:         $(BOOKdir)/$@ $(srcdir)/gnome-backgrounds.ch
 gnome-bluetooth.xml:           $(BOOKdir)/$@ $(srcdir)/gnome-bluetooth.ch
 gnome-control-center.xml:      $(BOOKdir)/$@ $(srcdir)/gnome-control-center.ch

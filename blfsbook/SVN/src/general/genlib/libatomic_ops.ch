@@ -97,8 +97,7 @@
       To check the results, issue 
       <command>LD_LIBRARY_PATH=../src/.libs make check</command>.
 @y
-      To check the results, issue 
-      <command>LD_LIBRARY_PATH=../src/.libs make check</command>.
+      ビルド結果をテストする場合は <command>LD_LIBRARY_PATH=../src/.libs make check</command> を実行します。
 @z
 
 @x

@@ -88,13 +88,17 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libxml2"/> (Python Module) and
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="libxslt"/> and
       <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libxml2"/> (Python モジュール),
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="libxslt"/>,
       <xref linkend="python2"/>
     </para>
 @z

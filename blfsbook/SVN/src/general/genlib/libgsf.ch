@@ -209,3 +209,28 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x gsf
+            is a simple archive utility, somewhat similar to tar(1).
+@y
+            簡易なアーカイブユーティリティー。tar(1) に類似するものです。
+@z
+
+@x gsf-office-thumbnailer
+            is used internally by <application>GNOME</application> applications
+            such as <application>Nautilus</application> to generate 
+            thumbnails of several types of office application files.
+@y
+            <application>Nautilus</application> などの <application>GNOME</application> アプリケーションが、その内部にて利用しているもので、数種のオフィスアプリケーションファイルに対するサムネイルを生成します。
+@z
+
+@x gsf-vba-dump
+            is used to extract Visual Basic for Applications macros from files.
+@y
+            Visual Basic for Applications のマクロをファイルから抽出します。
+@z
+
+@x libgsf-1.so
+            contains the <application>libgsf</application> API functions.
+@y
+            <application>libgsf</application> API 関数を提供します。
+@z

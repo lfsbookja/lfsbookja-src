@@ -22,12 +22,8 @@
     respectively.
 @y
     <application>OpenSSH</application> パッケージは <command>ssh</command> クライアントと <command>sshd</command> デーモンを提供します。
-    
-    This
-    is useful for encrypting authentication and subsequent traffic over a
-    network. The <command>ssh</command> and <command>scp</command> commands are
-    secure implementions of <command>telnet</command> and <command>rcp</command>
-    respectively.
+    これはネットワーク越しの通信にあたり、権限情報をはじめとする情報を暗号化します。
+    <command>ssh</command> コマンドと <command>scp</command> コマンドは、それぞれ <command>telnet</command> と <command>rcp</command> に対するセキュアな実装です。
 @z
 
 @x
@@ -110,8 +106,8 @@
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
-      (provides a command-line history feature to <command>sftp</command>),
-      <ulink url="http://www.opensc-project.org/">OpenSC</ulink> and
+      (<command>sftp</command> においてコマンドライン履歴機能を提供します),
+      <ulink url="http://www.opensc-project.org/">OpenSC</ulink>,
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
 @z

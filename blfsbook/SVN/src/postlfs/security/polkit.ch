@@ -314,7 +314,7 @@
 @x pkttyagent
             is used to start a textual authentication agent for the subject.
 @y
-            is used to start a textual authentication agent for the subject.
+            プロセスなどに対して、テキスト情報による権限エージェントを開始します。
 @z
 
 @x polkitd
@@ -334,5 +334,5 @@
 @x libpolkit-gobject-1.{so,a}
             contains the <application>Polkit</application> authorization API functions.
 @y
-            <application>polkit</application> 認証 API 関数を提供します。
+            <application>Polkit</application> 認証 API 関数を提供します。
 @z

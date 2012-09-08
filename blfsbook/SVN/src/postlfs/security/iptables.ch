@@ -73,6 +73,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -164,8 +176,8 @@
       libraries end up in <filename class="directory">/</filename>
       directory tree.
 @y
-      <parameter>--exec-prefix=</parameter>: Ensure all binaries and
-      libraries end up in <filename class="directory">/</filename>
+      <parameter>--exec-prefix=</parameter>:
+      実行バイナリやライブラリをすべて <filename class="directory">/</filename> ディレクトリツリー配下となるようにします。
       directory tree.
 @z
 
@@ -182,9 +194,8 @@
       Iptables modules are installed in the 
       <filename class="directory">/lib/xtables</filename> directory.
 @y
-      <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all 
-      Iptables modules are installed in the 
-      <filename class="directory">/lib/xtables</filename> directory.
+      <parameter>--with-xtlibdir=/lib/xtables</parameter>:
+      Iptables モジュールをすべて <filename class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
 @z
 
 @x
@@ -193,6 +204,34 @@
 @y
       <parameter>--with-pkgconfigdir=/usr/lib/pkgconfig</parameter>:
       pkgconfig ファイルの配置をすべて標準的なディレクトリとします。
+@z
+
+@x
+      <option>--enable-libipq</option>: This switch enables building
+      of <filename class="libraryfile">libipq.so</filename> which
+      can be used by some packages outside of BLFS.
+@y
+      <option>--enable-libipq</option>:
+      本スイッチは <filename class="libraryfile">libipq.so</filename> をビルドするようにします。
+      これは BLFS には含めていない他のパッケージにて利用されています。
+@z
+
+@x
+      <option>--enable-devel</option>: This switch enables installation
+      of <application>Iptables</application> development headers that
+      can be used by some packages outside of BLFS.
+@y
+      <option>--enable-devel</option>:
+      本スイッチは <application>Iptables</application> の開発用ヘッダーをインストールするようにします。
+      これは BLFS には含めていない他のパッケージにて利用されています。
+@z
+
+@x
+      <command>ln -sfv xtables-multi /sbin/iptables-xml</command>: Ensure
+      the symbolic link for <command>iptables-xml</command> is relative.
+@y
+      <command>ln -sfv xtables-multi /sbin/iptables-xml</command>:
+      <command>iptables-xml</command> へのシンボリックリンクを相対的なものとします。
 @z
 
 @x

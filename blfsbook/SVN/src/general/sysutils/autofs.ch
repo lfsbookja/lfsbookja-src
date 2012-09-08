@@ -254,12 +254,14 @@
       <para>The installation process creates <filename>auto.master</filename>,
       <filename>auto.misc</filename>,  <filename>auto.smb</filename>, and
       <filename>auto.net</filename>. Replace the
-      <filename>auto.master</filename> file with the following commands:</para>
+      <filename>auto.master</filename> file with the following commands
+      as the <systemitem class="username">root</systemitem> user:</para>
 @y
       <para>The installation process creates <filename>auto.master</filename>,
       <filename>auto.misc</filename>,  <filename>auto.smb</filename>, and
       <filename>auto.net</filename>. Replace the
-      <filename>auto.master</filename> file with the following commands:</para>
+      <filename>auto.master</filename> file with the following commands
+      as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -387,7 +389,7 @@
 @x
         <seg>automount</seg>
         <seg>lookup_dir.so, lookup_file.so, lookup_hosts.so, lookup_ldap.so,
-             lookup_multi.so, lookup_nisplus.so, lookup_program.so, lookup_sss.so,
+             lookup_multi.so, lookup_nisplus.so, lookup_program.so, 
              lookup_userhome.so, lookup_yp.so, mount_afs.so, mount_autofs.so, 
              mount_bind.so, mount_changer.so, mount_ext2.so, mount_generic.so,
              mount_nfs.so, parse_sun.so</seg>
@@ -395,7 +397,7 @@
 @y
         <seg>automount</seg>
         <seg>lookup_dir.so, lookup_file.so, lookup_hosts.so, lookup_ldap.so,
-             lookup_multi.so, lookup_nisplus.so, lookup_program.so, lookup_sss.so,
+             lookup_multi.so, lookup_nisplus.so, lookup_program.so, 
              lookup_userhome.so, lookup_yp.so, mount_afs.so, mount_autofs.so, 
              mount_bind.so, mount_changer.so, mount_ext2.so, mount_generic.so,
              mount_nfs.so, parse_sun.so</seg>
