@@ -188,14 +188,14 @@
 @z
 
 @x
-    <para><option>--program-transform-name</option>: Both, 
-    <application>Virtuoso</application> as well as <application>unixODBC</application>
-    installs a program named <command>isql</command>. Use this option to rename
+    <para><option>--program-transform-name</option>: Both 
+    <application>Virtuoso</application> and <application>unixODBC</application>
+    install a program named <command>isql</command>. Use this option to rename
     <application>virtuoso</application>s program to <command>isql-v</command></para>
 @y
-    <para><option>--program-transform-name</option>: Both, 
-    <application>Virtuoso</application> as well as <application>unixODBC</application>
-    installs a program named <command>isql</command>. Use this option to rename
+    <para><option>--program-transform-name</option>: Both 
+    <application>Virtuoso</application> and <application>unixODBC</application>
+    install a program named <command>isql</command>. Use this option to rename
     <application>virtuoso</application>s program to <command>isql-v</command></para>
 @z
 

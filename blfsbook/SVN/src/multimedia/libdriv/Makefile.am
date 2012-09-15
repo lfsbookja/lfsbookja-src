@@ -53,6 +53,7 @@ CHANGE_FILES = \
 	opal.ch               \
 	pulseaudio.ch         \
 	sdl.ch                \
+	soundtouch.ch         \
 	sound-theme-freedesktop.ch \
 	speex.ch              \
 	taglib.ch             \
@@ -120,6 +121,7 @@ libvpx.xml:                  $(BOOKdir)/$@ $(srcdir)/libvpx.ch
 opal.xml:                    $(BOOKdir)/$@ $(srcdir)/opal.ch
 pulseaudio.xml:              $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
 sdl.xml:                     $(BOOKdir)/$@ $(srcdir)/sdl.ch
+soundtouch.xml:              $(BOOKdir)/$@ $(srcdir)/soundtouch.ch
 sound-theme-freedesktop.xml: $(BOOKdir)/$@ $(srcdir)/sound-theme-freedesktop.ch
 speex.xml:                   $(BOOKdir)/$@ $(srcdir)/speex.ch
 taglib.xml:                  $(BOOKdir)/$@ $(srcdir)/taglib.ch

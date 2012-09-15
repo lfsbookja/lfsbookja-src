@@ -15,12 +15,12 @@
 
 @x
   <!ENTITY gs-buildsize
-  "252 MB (includes installing libgs.so and both font tarballs)">
+  "195 MB (includes installing libgs.so and both font tarballs)">
   <!ENTITY gs-time
   "2.5 SBU (includes building and installing libgs.so)">
 @y
   <!ENTITY gs-buildsize
-  "252 MB (includes installing libgs.so and both font tarballs)">
+  "195 MB (includes installing libgs.so and both font tarballs)">
   <!ENTITY gs-time
   "2.5 SBU (includes building and installing libgs.so)">
 @z
@@ -252,13 +252,13 @@
         jobs (eg, make -j4) then the build may fail due to race conditions in
         the <application>Ghostscript</application> build system. You can work
         around that problem by simply running make again (eg,
-        <command>make -j4 || make -j4</command>).
+        <command>make -j4 || make -j1</command>).
 @y
         If you have a multicore computer and try to run make with multiple
         jobs (eg, make -j4) then the build may fail due to race conditions in
         the <application>Ghostscript</application> build system. You can work
         around that problem by simply running make again (eg,
-        <command>make -j4 || make -j4</command>).
+        <command>make -j4 || make -j1</command>).
 @z
 
 @x

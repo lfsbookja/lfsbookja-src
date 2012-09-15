@@ -24,9 +24,10 @@
     Transport Agent written by the University of Cambridge, released
     under the GNU Public License.</para>
 @y
-    <para>The <application>Exim</application> package contains a Mail
-    Transport Agent written by the University of Cambridge, released
-    under the GNU Public License.</para>
+    <para>
+    <application>Exim</application> パッケージは、メール転送エージェント (mail transfer agent) を提供します。
+    ケンブリッジ大学にて開発され、GNU Public License により公開されています。
+    </para>
 @z
 
 @x
@@ -103,8 +104,8 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="db"/> or
-      GDBM (GDBM built in LFS) or
+      <xref linkend="db"/> または
+      GDBM (LFS において構築) または
       <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
     </para>
 @z
@@ -126,21 +127,19 @@
     <para role="optional">
       <xref linkend="x-window-system"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
+      <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mysql"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/> and
+      <xref linkend="sqlite"/>,
       <xref linkend="linux-pam"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/exim"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/exim"/></para>
 @z
 
 @x
@@ -155,10 +154,12 @@
     the group and user <systemitem class="username">exim</systemitem> which
     will run the <command>exim</command> daemon:</para>
 @y
-    <para>Before building <application>Exim</application>, as the
-    <systemitem class="username">root</systemitem> user you should create
-    the group and user <systemitem class="username">exim</systemitem> which
-    will run the <command>exim</command> daemon:</para>
+    <para>
+    <application>Exim</application> をビルドするにあたっては、<systemitem
+    class="username">root</systemitem> ユーザーになって <systemitem
+    class="username">exim</systemitem> というユーザーおよびグループを作成する必要があります。
+    これは <command>exim</command> デーモンを起動するものになります。
+    </para>
 @z
 
 @x

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY doxygen-time          "2.0 SBU (includes building the GUI frontend and all docs)">
+  <!ENTITY doxygen-time          "1.4 SBU (includes building the GUI frontend and all docs)">
 @y
-  <!ENTITY doxygen-time          "2.0 SBU (GUI フロントエンドのビルドとドキュメントインストールを含む)">
+  <!ENTITY doxygen-time          "1.4 SBU (GUI フロントエンドのビルドとドキュメントインストールを含む)">
 @z
 
 @x
@@ -115,16 +115,16 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="qt"/> (for doxywizard),
     <xref linkend="graphviz"/>,
-    <xref linkend="python2"/>,
-    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
-    <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
+    <xref linkend="python2"/>,  
+    <xref linkend="texlive"/>, and
+    <xref linkend="gs"/></para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="qt"/> (for doxywizard),
+    <para role="optional"><xref linkend="qt"/> (doxywizard に必要),
     <xref linkend="graphviz"/>,
-    <xref linkend="python2"/>,
-    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
-    <!-- <xref linkend="espgs"/> or --><xref linkend="gs"/></para>
+    <xref linkend="python2"/>,  
+    <xref linkend="texlive"/>,
+    <xref linkend="gs"/></para>
 @z
 
 @x

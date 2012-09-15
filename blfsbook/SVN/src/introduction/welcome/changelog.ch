@@ -54,6 +54,59 @@
 @z
 
 @x ----------------------------------------
+      <para>September 9th, 2012</para>
+@y
+      <para>2012/09/09</para>
+@z ----------------------------------------
+@x
+          <para>[bdubbs] - Update to libiodbc-3.52.8. Fixes
+          <ulink url="&blfs-ticket-root;3522">#3522</ulink>.</para>
+@y
+          <para>[bdubbs] - libiodbc-3.52.8 へのアップデート。
+          <ulink url="&blfs-ticket-root;3522">#3522</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to qemu-kvm-1.1.1. Fixes
+          <ulink url="&blfs-ticket-root;3519">#3519</ulink>.</para>
+@y
+          <para>[bdubbs] - qemu-kvm-1.1.1 へのアップデート。
+          <ulink url="&blfs-ticket-root;3519">#3519</ulink> を Fix に。</para>
+@z
+
+@x ----------------------------------------
+      <para>September 8th, 2012</para>
+@y
+      <para>2012/09/08</para>
+@z ----------------------------------------
+@x
+          <para>[bdubbs] - Update to sysstat-10.0.5. Fixes
+          <ulink url="&blfs-ticket-root;3530">#3530</ulink>.</para>
+@y
+          <para>[bdubbs] - sysstat-10.0.5 へのアップデート。
+          <ulink url="&blfs-ticket-root;3530">#3530</ulink> を Fix に。</para>
+@z
+
+@x ----------------------------------------
+      <para>September 6th, 2012</para>
+@y
+      <para>2012/09/06</para>
+@z ----------------------------------------
+@x
+          <para>[bdubbs] - Update to exim-4.80. Fixes
+          <ulink url="&blfs-ticket-root;3500">#3500</ulink>.</para>
+@y
+          <para>[bdubbs] - exim-4.80 へのアップデート。
+          <ulink url="&blfs-ticket-root;3500">#3500</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to autofs-5.0.7. Fixes
+          <ulink url="&blfs-ticket-root;3528">#3528</ulink>.</para>
+@y
+          <para>[bdubbs] - autofs-5.0.7 へのアップデート。
+          <ulink url="&blfs-ticket-root;3528">#3528</ulink> を Fix に。</para>
+@z
+
+@x ----------------------------------------
       <para>July 27th, 2012</para>
 @y
       <para>2012/07/27</para>
