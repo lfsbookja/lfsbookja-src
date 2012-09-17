@@ -31,15 +31,6 @@
 @z
 
 @x
-    <para>Apply a patch to prevent the test suite from running a test that
-    requires <command>ed</command>:</para>
-@y
-    <para>
-    <command>ed</command> プログラムを必要とするテストスイートの実行を行わないよう、パッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Patch for compilation:</para>
 @y
     <para>&PreparePackage1;Patch&PreparePackage2;</para>

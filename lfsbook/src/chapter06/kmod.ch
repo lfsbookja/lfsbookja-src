@@ -29,15 +29,6 @@
 @z
 
 @x
-    <para>Apply the following patch to fix a problem when running the testsuite
-    on x86 hosts:</para>
-@y
-    <para>
-    x86 ホスト上にてテストスイートを実行する際に問題が発生するため、これを修正するパッチを適用します。
-    </para>
-@z
-
-@x
     <para>Prepare Kmod for compilation:</para>
 @y
     <para>&PreparePackage1;Kmod&PreparePackage2;</para>

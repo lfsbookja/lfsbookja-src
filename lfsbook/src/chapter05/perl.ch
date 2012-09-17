@@ -55,7 +55,7 @@
 
 @x
     <para>Although Perl comes with a test suite, it would be better to wait
-    until it is insalled in the next chapter.</para>
+    until it is installed in the next chapter.</para>
 @y
     <para>
     Perl にはテストスイートがありますが、次章にてインストールする際に実施するのがよいでしょう。

@@ -48,6 +48,80 @@
 @z
 
 @x
+      <para>2012-09-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Patch-2.7.  Fixes
+          <ulink url="&lfs-ticket-root;3182">#3182</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to MPC-1.0.1.  Fixes
+          <ulink url="&lfs-ticket-root;3181">#3181</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Kmod-10.  Fixes
+          <ulink url="&lfs-ticket-root;3180">#3180</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Fix link to Linux User's Guide.  Fixes
+          <ulink url="&lfs-ticket-root;3179">#3179</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Less-451.  Fixes
+          <ulink url="&lfs-ticket-root;3178">#3178</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bash-4.2.37.  Fixes
+          <ulink url="&lfs-ticket-root;3177">#3177</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Pkg-Config-0.27.1.  Fixes
+          <ulink url="&lfs-ticket-root;3174">#3174</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.5.4.  Fixes
+          <ulink url="&lfs-ticket-root;3173">#3173</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-09-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Patch-2.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;3182">#3182</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPC-1.0.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3181">#3181</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Kmod-10 へのアップデート。
+          <ulink url="&lfs-ticket-root;3180">#3180</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux ユーザーズガイドのリンクを修正。
+          <ulink url="&lfs-ticket-root;3179">#3179</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Less-451 へのアップデート。
+          <ulink url="&lfs-ticket-root;3178">#3178</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bash-4.2.37 へのアップデート。
+          <ulink url="&lfs-ticket-root;3177">#3177</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Pkg-Config-0.27.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3174">#3174</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.5.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3173">#3173</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-09-05</para>
       <itemizedlist>
         <listitem>

@@ -129,28 +129,12 @@
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>
 @z
 
-@x Kmod Testsuite Patch
-        <para>Download: <ulink url="&patches-root;&kmod-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&kmod-testsuite-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&kmod-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&kmod-testsuite-patch-md5;</literal></para>
-@z
-
 @x Make Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&make-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&make-fixes-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&make-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&make-fixes-patch-md5;</literal></para>
-@z
-
-@x Patch Testsuite Fix Patch
-        <para>Download: <ulink url="&patches-root;&patch-test-patch;"/></para>
-        <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&patch-test-patch;"/></para>
-        <para>MD5 sum: <literal>&patch-test-patch-md5;</literal></para>
 @z
 
 @x Perl Libc Patch

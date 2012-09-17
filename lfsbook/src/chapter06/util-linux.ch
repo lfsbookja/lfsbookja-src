@@ -53,6 +53,28 @@
 @z
 
 @x
+      <title>The meaning of the configure option:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
+@z
+
+@x
+          <para>These switches disable building su, sulogin, and login.  They
+          duplicate the same programs provided by <xref
+          linkend='ch-system-shadow'/>.  They also require <ulink
+          url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink>
+          which is not available in LFS.</para>
+@y
+          <para>
+          これらのスイッチは su, sulogin, login をビルドしないようにするものです。
+          同名のプログラムが <xref linkend='ch-system-shadow'/> により提供されます。
+          このプログラムは <ulink
+          url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink> を必要とします。
+          Linux-PAM は LFS ではビルドしません。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
@@ -112,7 +134,7 @@
         logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
         mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
         prlimit, raw, readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
-        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
+        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
         swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
         uuidd, uuidgen, wall, whereis, wipefs, x86_64</seg>
 
