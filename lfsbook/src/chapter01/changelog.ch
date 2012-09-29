@@ -48,6 +48,42 @@
 @z
 
 @x
+      <para>2012-09-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to systemd/udev-lfs-193. Fixes
+          <ulink url="&lfs-ticket-root;3192">#3192</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-09-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd/udev-lfs-193 へのアップデート。
+          <ulink url="&lfs-ticket-root;3192">#3192</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-09-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to systemd/udev-lfs-192. Fixes
+          <ulink url="&lfs-ticket-root;3189">#3189</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-09-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd/udev-lfs-192 へのアップデート。
+          <ulink url="&lfs-ticket-root;3189">#3189</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-09-16</para>
       <itemizedlist>
         <listitem>

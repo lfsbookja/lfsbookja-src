@@ -20,21 +20,9 @@
 @z
 
 @x
-<para>The primary target architecture of LFS is the 32-bit Intel CPU. If you
-have not built an LFS system before, you should probably start with that
-target. The 32-bit architecture is the most widely supported Linux system and
-is most compatible with both open source and proprietary software.</para>
-@y
-<para>
-LFS が対象としている CPU アーキテクチャーは 32 ビットインテル CPU が主となります。
-LFS システムの構築に初めて取りかかる方は、おそらくこのアーキテクチャーを用いることでしょう。
-32 ビットアーキテクチャーは Linux システムが最も広くサポートしているもので、このアーキテクチャーなら、オープンソースも製品ソフトウェアも互換性があります。
-</para>
-@z
-
-@x
-<para>On the other hand, the instructions in this book are known to work, with
-some modifications, with both Power PC and 64-bit AMD/Intel CPUs. To build a
+<para>The primary target architectures of LFS are the AMD/Intel x86 (32-bit)
+and x86_64 (64-bit) CPUs.  On the other hand, the instructions in this book are
+also known to work, with some modifications, with the Power PC CPU. To build a
 system that utilizes one of these CPUs, the main prerequisite, in addition to
 those on the next few pages, is an existing Linux system such as an earlier LFS
 installation, Ubuntu, Red Hat/Fedora, SuSE, or other distribution that targets
@@ -42,12 +30,29 @@ the architecture that you have. Also note that a 32-bit distribution can be
 installed and used as a host system on a 64-bit AMD/Intel computer.</para>
 @y
 <para>
-本書の作業手順は、多少の変更を加えれば Power PC や 64 ビットAMD／インテル CPU でも動作することは検証されています。
-その CPU を使ったシステムをビルドするには、これ以降の数ページで説明している条件以外に必要となることがあります。
-LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などのディストリビューションをホストとするわけですが、それは 64 ビットシステムである必要があるということです。
-ホストが 64 ビットAMD／インテルによるシステムであったとしても 32 ビットシステムは問題なくインストールできます。
+LFS が対象としている CPU アーキテクチャーは AMD/インテル x86 CPU (32ビット) と x86_64 CPU (64ビット) です。
+Power PC CPU については、本書の手順を多少修正することで動作することが確認されています。
+これらの CPU を利用したシステムをビルドする場合は、この後に示す諸条件を満たす必要がありますが、まずはそのアーキテクチャーをターゲットとする、LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などの Linux システムが必要です。
+ホストが 64 ビット AMD/インテルによるシステムであったとしても 32 ビットシステムは問題なくインストールできます。
 </para>
 @z
+
+% @x
+% <para>On the other hand, the instructions in this book are known to work, with
+% some modifications, with both Power PC and 64-bit AMD/Intel CPUs. To build a
+% system that utilizes one of these CPUs, the main prerequisite, in addition to
+% those on the next few pages, is an existing Linux system such as an earlier LFS
+% installation, Ubuntu, Red Hat/Fedora, SuSE, or other distribution that targets
+% the architecture that you have. Also note that a 32-bit distribution can be
+% installed and used as a host system on a 64-bit AMD/Intel computer.</para>
+% @y
+% <para>
+% 本書の作業手順は、多少の変更を加えれば Power PC や 64 ビットAMD／インテル CPU でも動作することは検証されています。
+% その CPU を使ったシステムをビルドするには、これ以降の数ページで説明している条件以外に必要となることがあります。
+% LFS システムそのものや Ubuntu、Red Hat/Fedora、SuSE などのディストリビューションをホストとするわけですが、それは 64 ビットシステムである必要があるということです。
+% ホストが 64 ビットAMD／インテルによるシステムであったとしても 32 ビットシステムは問題なくインストールできます。
+% </para>
+% @z
 
 @x
 <para>Some other facts about 64-bit systems need to be added here. When
@@ -112,22 +117,23 @@ url="http://trac.cross-lfs.org/">Cross Linux From Scratch</ulink> プロジェ�
 @z
 
 @x
-<para>There is one last comment about 64-bit systems. There are some packages
-that cannot currently be built in a "pure" 64-bit system or require specialized
-build instructions. Generally, these packages have some embedded 32-bit
-specific assembly language instructions that fail when building on a 64-bit
-system.  This includes some Xorg drivers from <ulink
-url="http://www.linuxfromscratch.org/blfs/view/svn/">Beyond Linux From Scratch
-(BLFS)</ulink>. Many of these problems can be worked around, but may require
-some specialized procedures or patches.</para>
+<para>There is one last comment about 64-bit systems. There are some older
+packages that cannot currently be built in a "pure" 64-bit system or require
+specialized build instructions. Generally, these packages have some embedded
+32-bit specific assembly language instructions that fail when building on a
+64-bit system.  This includes some Xorg drivers for some legacy video cards at
+<ulink url="http://xorg.freedesktop.org/releases/individual/driver/">
+http://xorg.freedesktop.org/releases/individual/driver/</ulink>. Many of these
+problems can be worked around, but may require some specialized procedures or
+patches.</para>
 @y
 <para>
 最後に 64 ビットシステムについてもう一つ述べておきます。
-パッケージの中には現時点にて "純粋な" 64 ビットシステム上でビルドできないものがあり、あるいは特別なビルド手順を必要とするものがあります。
+古いパッケージの中には現時点にて "純粋な" 64 ビットシステム上でビルドできないものがあり、あるいは特別なビルド手順を必要とするものがあります。
 一般的に言えば、そのようなパッケージには 32 ビット固有のアセンブリ言語の命令が含まれるからであり、
 だから 64 ビットシステムでのビルドに失敗するということです。
-例としては <ulink url="http://www.linuxfromscratch.org/blfs/view/svn/">
-Beyond Linux From Scratch (BLFS)</ulink> にある Xorg ドライバーの一部分などです。
+例としては <ulink url="http://xorg.freedesktop.org/releases/individual/driver/">
+http://xorg.freedesktop.org/releases/individual/driver/</ulink> にある、古いビデオカードに対応する Xorg ドライバーなどです。
 このような問題はたいていは解消していくことができますが、中には特別なビルド手順やパッチを要するものとなるかもしれません。
 </para>
 @z

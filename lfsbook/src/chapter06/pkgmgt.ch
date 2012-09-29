@@ -436,7 +436,7 @@
       <para>This approach is used by most of the package managers found in the
       commercial distributions. Examples of package managers that follow this
       approach are RPM (which, incidentally, is required by the <ulink
-      url="http://www.linux-foundation.org/en/Specifications">Linux
+      url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
       Standard Base Specification</ulink>), pkg-utils, Debian's apt, and
       Gentoo's Portage system.  A hint describing how to adopt this style of
       package management for LFS systems is located at <ulink
@@ -445,7 +445,9 @@
       <para>
       商用ディストリビューションが採用しているパッケージ管理ツールは、ほとんどがこの方法によるものです。
       この方法に従ったパッケージ管理ツールの例に RPM があります。
-      (これは <ulink url="http://www.linux-foundation.org/en/Specifications">Linux Standard Base Specification</ulink> が規定しています。)
+      (これは <ulink
+      url="http://refspecs.linuxfoundation.org/lsb.shtml">Linux
+      Standard Base Specification</ulink> が規定しています。)
       また pkg-utils、Debian の apt、Gentoo の Portage システムがあります。
       このパッケージ管理手法を LFS システムに適用するヒント情報が <ulink url="&hints-root;fakeroot.txt"/> にあります。
       </para>
