@@ -48,6 +48,106 @@
 @z
 
 @x
+      <para>2012-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.6.0.  Fixes
+          <ulink url="&lfs-ticket-root;3196">#3196</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.6.  Fixes
+          <ulink url="&lfs-ticket-root;3195">#3195</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Psmisc-22.20. Fixes
+          <ulink url="&lfs-ticket-root;3194">#3194</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Patch-2.7.1. Fixes
+          <ulink url="&lfs-ticket-root;3193">#3193</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add a patch to allow Kmod's testsuite to pass on 32-bit
+          systems. Fixes <ulink url="&lfs-ticket-root;3191">#3191</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GCC-4.7.2. Fixes
+          <ulink url="&lfs-ticket-root;3190">#3190</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Use latest upstream fixes patch for Make, which
+          enables WebKitGtk to build with parallel builds. Fixes
+          <ulink url="&lfs-ticket-root;3188">#3188</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-DB-2.6.3. Fixes
+          <ulink url="&lfs-ticket-root;3187">#3187</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Libpipeline-1.2.2. Fixes
+          <ulink url="&lfs-ticket-root;3186">#3186</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Automake-1.12.4.  Fixes
+          <ulink url="&lfs-ticket-root;3185">#3185</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Fix Flex instructions; the directory creation for
+          its documentation is performed by the Makefile since r9999.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-10-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.6.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3196">#3196</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3195">#3195</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Psmisc-22.20 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3194">#3194</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Patch-2.7.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3193">#3193</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Kmod にてパッチを追加し、32ビットシステムにてテストスイートを正常実行できるように。
+          <ulink url="&lfs-ticket-root;3191">#3191</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC-4.7.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3190">#3190</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Make においてアップストリームの最新パッチを適用。
+          WebKitGtk を並行ビルドできるようにするもの。
+          <ulink url="&lfs-ticket-root;3188">#3188</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-DB-2.6.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3187">#3187</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Libpipeline-1.2.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3186">#3186</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Automake-1.12.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3185">#3185</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Flex の手順を修正。
+          ドキュメント収容ディレクトリは Makefile のリビジョン r9999 から生成されるものとなった。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-09-27</para>
       <itemizedlist>
         <listitem>

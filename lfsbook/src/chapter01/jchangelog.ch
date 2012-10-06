@@ -54,6 +54,26 @@
 -->
 
     <listitem>
+      <para>2012-10-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>
+          wget-list の国内サイト向け sed 置換を若干修正。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20121002,
+          Changeset
+          <ulink url="&lfs-rev-root;10004">10004</ulink> ～
+          <ulink url="&lfs-rev-root;10015">10015</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-09-29</para>
       <itemizedlist>
         <listitem>

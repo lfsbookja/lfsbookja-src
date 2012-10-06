@@ -29,6 +29,14 @@
 @z
 
 @x
+    <para>Apply a patch to fix a testsuite issue on 32-bit machines:</para>
+@y
+    <para>
+    32ビットマシンにてテストスイートが失敗するため、パッチを適用して解消します。
+    </para>
+@z
+
+@x
     <para>Prepare Kmod for compilation:</para>
 @y
     <para>&PreparePackage1;Kmod&PreparePackage2;</para>

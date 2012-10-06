@@ -154,93 +154,29 @@
 @z
 
 @x
-      <para>The <systemitem class="filesystem">sysfs</systemitem> filesystem was
-      mentioned briefly above. One may wonder how <systemitem
+      <para>The <systemitem class="filesystem">sysfs</systemitem> filesystem
+      was mentioned briefly above. One may wonder how <systemitem
       class="filesystem">sysfs</systemitem> knows about the devices present on
       a system and what device numbers should be used for them. Drivers that
-      have been compiled into the kernel directly register their objects with
-      <systemitem class="filesystem">sysfs</systemitem> as they are detected by
-      the kernel. For drivers compiled as modules, this registration will happen
-      when the module is loaded. Once the <systemitem
-      class="filesystem">sysfs</systemitem> filesystem is mounted (on <filename
-      class="directory">/sys</filename>), data which the built-in drivers
-      registered with <systemitem class="filesystem">sysfs</systemitem> are
-      available to userspace processes and to <command>udevd</command> for
-      processing (including modifications to device nodes).</para>
+      have been compiled into the kernel directly register their objects with a
+      <systemitem class="filesystem">sysfs</systemitem> (devtmpfs internally)
+      as they are detected by the kernel. For drivers compiled as modules, this
+      registration will happen when the module is loaded. Once the <systemitem
+      class="filesystem">sysfs</systemitem> filesystem is mounted (on /sys),
+      data which the drivers register with <systemitem
+      class="filesystem">sysfs</systemitem> are available to userspace
+      processes and to udevd for processing (including modifications to device
+      nodes).</para> 
 @y
       <para>
       <systemitem class="filesystem">sysfs</systemitem> ファイルシステムについては上で簡単に触れました。
-      <systemitem class="filesystem">sysfs</systemitem> はどのようにしてシステム上に存在するデバイスを知るのか、そしてどのデバイス番号が利用されるのか。
+      <systemitem class="filesystem">sysfs</systemitem> はどのようにしてシステム上に存在するデバイスを知るのか、そしてどのデバイス番号を用いるべきなのか。
       そこが知りたいところです。
-      カーネルに直接組み込まれて構築されたドライバーでは、対象のオブジェクトがカーネルによって検出されたものとしてそのオブジェクトを <systemitem
-      class="filesystem">sysfs</systemitem> に登録します。
-      モジュールとしてコンパイルされたドライバーでは、その登録がモジュールのロード時に行われます。
-      <systemitem class="filesystem">sysfs</systemitem> ファイルシステムが (<filename class="directory">/sys</filename> に) マウントされると、組み込みのドライバーによって <systemitem
-      class="filesystem">sysfs</systemitem> に登録されたデータは、ユーザー空間のプロセスと (デバイスノードの修正を含む) さまざまな処理を行う <command>udevd</command> にて利用可能となります。
-      </para>
-@z
-
-@x
-      <title>Udev Bootscripts</title>
-@y
-      <title>Udev ブートスクリプト</title>
-@z
-
-@x
-      <para>The <command>/etc/rc.d/init.d/udev</command> initscript takes care
-      of creating device nodes when Linux is booted. The script unsets the
-      uevent handler from the default of <command>/sbin/hotplug</command>.
-      This is done because the kernel no longer needs to call out to an
-      external binary.  Instead <command>udevd</command> will listen on a
-      netlink socket for uevents that the kernel raises. Next, the bootscript
-      copies any static device nodes that exist in <filename
-      class="directory">/lib/udev/devices</filename> to <filename
-      class="directory">/dev</filename>. This is necessary because some
-      devices, directories, and symlinks are needed before the dynamic device
-      handling processes are available during the early stages of booting a
-      system, or are required by <command>udevd</command> itself.  Creating
-      static device nodes in <filename
-      class="directory">/lib/udev/devices</filename> also provides an easy
-      workaround for devices that are not supported by the dynamic device
-      handling infrastructure. The bootscript then starts the Udev daemon,
-      <command>udevd</command>, which will act on any uevents it receives.
-      Finally, the bootscript forces the kernel to replay uevents for any
-      devices that have already been registered and then waits for
-      <command>udevd</command> to handle them.</para>
-@y
-      <para>
-      初期起動スクリプト <command>/etc/rc.d/init.d/udev</command> は、Linux のブート時にデバイスノードの生成を受け持ちます。
-      このスクリプトは <command>/sbin/hotplug</command> のデフォルトから uevent ハンドラを取り除きます。
-      この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
-      そのかわりに、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
-      そしてブートスクリプトが <filename class="directory">/lib/udev/devices</filename> 内にある静的なデバイスノードをすべて <filename class="directory">/dev</filename> にコピーします。
-      デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
-      あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
-      <filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
-      こうしてブートスクリプトは Udev デーモン、つまり <command>udevd</command> を起動し、それがどのような uevent であっても対応できるものとなります。
-      最後にブートスクリプトはカーネルに対して、すべてのデバイスにおいて既に登録されている uevent を再起動させ、<command>udevd</command> がそれを待ち受けるものとなります。
-      </para>
-@z
-
-@x
-      <para>The <command>/etc/rc.d/init.d/udev_retry</command> initscript takes
-      care of re-triggering events for subsystems whose rules may rely on
-      filesystems that are not mounted until the <command>mountfs</command>
-      script is run (in particular, /usr and /var may cause this).  This script
-      runs after the <command>mountfs</command> script, so those rules (if
-      re-triggered) should succeed the second time around.  It is configured
-      from the <filename>/etc/sysconfig/udev_retry</filename> file; any words
-      in this file other than comments are considered subsystem names to
-      trigger at retry time.  (To find the subsystem of a device, use
-      <command>udevadm info --attribute-walk</command>.)</para>
-@y
-      <para>
-      初期起動スクリプト <command>/etc/rc.d/init.d/udev_retry</command> は、サブシステムに対するイベントの再起動を行ないます。
-      そのサブシステムとはファイルシステムに依存するもので、<command>mountfs</command> が実行されるまでマウントされません。
-      (特に /usr や /var がこれに該当します。)
-      <command>mountfs</command> スクリプトの後にこのスクリプトが実行されるので、(イベントが再起動されるものであれば) 二度目には成功します。
-      このスクリプトは <filename>/etc/sysconfig/udev_retry</filename> ファイルにより設定が可能で、コメントを除く記述項目はすべてサブシステム名を表わし、二度目の起動時のリトライ対象となります。
-      (デバイスのサブシステムを知るには <command>udevadm info --attribute-walk</command> を実行します。)
+      カーネルに直接組み込まれて構築されたドライバーの場合は、対象のオブジェクトをカーネルが検出し、そのオブジェクトを <systemitem
+      class="filesystem">sysfs</systemitem> (内部的には devtmpfs) に登録します。
+      モジュールとしてコンパイルされたドライバーの場合は、その登録がモジュールのロード時に行われます。
+      <systemitem class="filesystem">sysfs</systemitem> ファイルシステムが (/sys に) マウントされると、ドライバーによって <systemitem
+      class="filesystem">sysfs</systemitem> に登録されたデータは、ユーザー空間のプロセスと (デバイスノードの修正を含む) さまざまな処理を行う udevd にて利用可能となります。
       </para>
 @z
 
@@ -251,23 +187,22 @@
 @z
 
 @x
-      <para>In recent version of udev, <command>udevd</command> no longer
-      creates device files in <filename class="directory">/dev</filename>.
-      Instead, this must be handled in the kernel, by the <systemitem
+      <para>Device files are created by the kernel by the <systemitem
       class="filesystem">devtmpfs</systemitem> filesystem.  Any driver that
       wishes to register a device node will go through <systemitem
       class="filesystem">devtmpfs</systemitem> (via the driver core) to do it.
       When a <systemitem class="filesystem">devtmpfs</systemitem> instance is
       mounted on <filename class="directory">/dev</filename>, the device node
-      will initially be created with a fixed name, permissions, and owner.</para>
+      will initially be created with a fixed name, permissions, and
+      owner.</para>
 @y
       <para>
-      udev の最近のバージョンより <command>udevd</command> はデバイスファイルを <filename class="directory">/dev</filename> には作らなくなりました。
-      このかわりに <systemitem class="filesystem">devtmpfs</systemitem> ファイルシステムを通じて、カーネルが制御していくものになりました。
+      デバイスファイルはカーネルによって、<systemitem
+      class="filesystem">devtmpfs</systemitem> ファイルシステム上に作り出されます。
       デバイスノードを登録しようとするドライバーは (デバイスコア経由で) <systemitem
       class="filesystem">devtmpfs</systemitem> を通じて登録を行います。
       <systemitem class="filesystem">devtmpfs</systemitem> のインスタンスが <filename
-      class="directory">/dev</filename> 上にマウントされると、デバイスノードには固定的な名称、パーミッション、所有者の情報が設定され生成されます。
+       class="directory">/dev</filename> 上にマウントされると、デバイスノードには固定的な名称、パーミッション、所有者の情報が設定され生成されます。
       </para>
 @z
 
@@ -277,32 +212,105 @@
       <filename class="directory">/etc/udev/rules.d</filename>, <filename
       class="directory">/lib/udev/rules.d</filename>, and <filename
       class="directory">/run/udev/rules.d</filename> directories, <command>
-      udevd</command> will create additional symlinks to the device node,
-      or change its permissions, owner, or group, or modify the internal
-      <command>udevd</command> database entry for that object.</para>
+      udevd</command> will create additional symlinks to the device node, or
+      change its permissions, owner, or group, or modify the internal
+      <command>udevd</command> database entry (name) for that object.</para>
 @y
       <para>
-      その後にカーネルは <command>udevd</command> に対して uevent を送信します。
+      この後にカーネルは <command>udevd</command> に対して uevent を送信します。
       <command>udevd</command> は、<filename
       class="directory">/etc/udev/rules.d</filename>, <filename
       class="directory">/lib/udev/rules.d</filename>, <filename
-      class="directory">/run/udev/rules.d</filename> の各ディレクトリ内にあるファイルの設定ルールに従って、デバイスノードに対するシンボリックリンクを生成したり、
-      パーミッション、所有者、グループの情報を変更したり、内部的な <command>udevd</command> データベースの項目を修正したりします。
+      class="directory">/run/udev/rules.d</filename> の各ディレクトリ内にあるファイルの設定ルールに従って、デバイスノードに対するシンボリックリンクを生成したり、パーミッション、所有者、グループの情報を変更したり、内部的な <command>udevd</command> データベースの項目を修正したりします。
       </para>
 @z
 
 @x
       <para>The rules in these three directories are numbered in a similar
-      fashion to the LFS-Bootscripts package, and all three directories are
+      fashion to the LFS-Bootscripts package and all three directories are
       merged together. If <command>udevd</command> can't find a rule for the
       device it is creating, it will leave the permissions and ownership at
       whatever <systemitem class="filesystem">devtmpfs</systemitem> used
-      initially.</para>
+      initially.</para> </sect3>
 @y
       <para>
       上の三つのディレクトリ内にて指定されるルールは、LFS ブートスクリプトパッケージと同様の方法で番号づけされており、三つのディレクトリの内容は一つにまとめられます。
       デバイスノードの生成時に <command>udevd</command> がそのルールを見つけ出せなかった時は、<systemitem
       class="filesystem">devtmpfs</systemitem> が利用される際の初期のパーミッションと所有者の情報のままとなります。
+      </para> </sect3>
+@z
+
+@x
+      <title>Udev Bootscripts</title>
+@y
+      <title>Udev ブートスクリプト</title>
+@z
+
+@x
+      <para>The first LFS bootscript,
+      <filename>/etc/init.d/mountvirtfs</filename> will copy any devices
+      located in <filename class="directory">/lib/udev/devices</filename> to
+      <filename class="directory">/dev</filename>. This is necessary because
+      some devices, directories, and symlinks are needed before the dynamic
+      device handling processes are available during the early stages of
+      booting a system, or are required by <command>udevd</command> itself.
+      Creating static device nodes in <filename
+      class="directory">/lib/udev/devices</filename> also provides an easy
+      workaround for devices that are not supported by the dynamic device
+      handling infrastructure.</para> 
+@y
+      <para>
+      初期に起動される LFS ブートスクリプト <filename>/etc/init.d/mountvirtfs</filename> は、<filename
+      class="directory">/lib/udev/devices</filename> に存在するデバイスノードを、すべて <filename
+      class="directory">/dev</filename> にコピーします。
+      デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
+      あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
+      <filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
+      </para>
+@z
+
+@x
+      <para>The <filename>/etc/rc.d/init.d/udev</filename> initscript starts
+      <command>udevd</command>, triggers any "coldplug" devices that have
+      already been created by the kernel and waits for any rules to complete.
+      The script also unsets the uevent handler from the default of
+      <filename>/sbin/hotplug </filename>.  This is done because the kernel no
+      longer needs to call out to an external binary.  Instead
+      <command>udevd</command> will listen on a netlink socket for uevents that
+      the kernel raises.</para> 
+@y
+      <para>
+      初期起動スクリプト <filename>/etc/rc.d/init.d/udev</filename> は <command>udevd</command> を起動し、カーネルにより既に生成されている "コールドプラグ" のデバイスをすべて稼動させます。
+      そしてすべてのルールが起動完了するのを待ちます。
+      このスクリプトは <filename>/sbin/hotplug</filename> のデフォルトから uevent ハンドラーを取り除きます。
+      この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
+      そのかわりに、<command>udevd</command>は、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
+      </para>
+@z
+
+@x
+      <para>The <command>/etc/rc.d/init.d/udev_retry</command> initscript takes
+      care of re-triggering events for subsystems whose rules may rely on
+      filesystems that are not mounted until the <command>mountfs</command>
+      script is run (in particular, <filename class="directory">/usr</filename>
+      and <filename class="directory">/var</filename> may cause this).  This
+      script runs after the <command>mountfs</command> script, so those rules
+      (if re-triggered) should succeed the second time around.  It is
+      configured from the <filename>/etc/sysconfig/udev_retry</filename> file;
+      any words in this file other than comments are considered subsystem names
+      to trigger at retry time.  To find the subsystem of a device, use
+      <command>udevadm info --attribute-walk &lt;device&gt;</command> where
+      &lt;device&gt; is a an absolure path in /dev or /sys such as /dev/sr0 or
+      /sys/class/rtc.</para>
+@y
+      <para>
+      初期起動スクリプト <command>/etc/rc.d/init.d/udev_retry</command> は、サブシステムに対するイベントの再起動を行ないます。
+      そのサブシステムとはファイルシステムに依存するもので、<command>mountfs</command> が実行されるまでマウントされません。
+      (特に <filename class="directory">/usr</filename> や <filename class="directory">/var</filename> がこれに該当します。)
+      <command>mountfs</command> スクリプトの後にこのスクリプトが実行されるので、(イベントが再起動されるものであれば) 二度目には成功します。
+      このスクリプトは <filename>/etc/sysconfig/udev_retry</filename> ファイルにより設定が可能で、コメントを除く記述項目はすべてサブシステム名を表わし、二度目の起動時のリトライ対象となります。
+      (デバイスのサブシステムを知るには <command>udevadm info --attribute-walk &lt;device&gt;</command> を実行します。
+      ここで &lt;device&gt; は、/dev や /sys から始まる絶対パスであり /dev/sr0 や /sys/class/rtc などを表します。)
       </para>
 @z
 
