@@ -46,12 +46,14 @@
 @z
 
 @x
-    <para>Fix a bug in the Makefile, which prevents procps from building with
+    <para>Do not install the kill program because it was installed by util-linux.
+    Also fix a bug in the Makefile, which prevents procps from building with
     make-&make-version;:</para>
 @y
     <para>
-    Makefile におけるバグを修正します。
-    これは make-&make-version; を利用した場合に Procps がビルドできない点を修正するものです。
+    kill プログラムは util-linux によりインストールされるため、ここではインストールしません。
+    ここでは同時に Makefile のバグを修正します。
+    これは make-&make-version; において procps がビルドできるようにするものです。
     </para>
 @z
 

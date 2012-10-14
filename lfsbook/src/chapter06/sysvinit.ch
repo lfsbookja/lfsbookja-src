@@ -50,13 +50,13 @@
 @z
 
 @x
-    <para>Maintained versions of the <command>wall</command> and 
-    <command>mountpoint</command> programs were
+    <para>Maintained versions of the <command>wall</command>,
+    <command>mountpoint</command>, and <command>utmpdump</command> programs were
     installed earlier by Util-linux. Suppress the installation of Sysvinit's
     versions of these programs and their man pages:</para>
 @y
     <para>
-    <command>wall</command> コマンドおよび <command>mountpoint</command> は Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
+    <command>wall</command>, <command>mountpoint</command>, <command>utmpdump</command> は Util-linux パッケージにおいてメンテナンスされており、既にインストールが出来ています。
     そこで Sysvinit が提供するこれらのコマンドはインストールせず、その man ページもインストールしないようにします。
     </para>
 @z
@@ -95,12 +95,12 @@
         <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
         lastb (link to last), mesg, pidof (link to killall5),
         poweroff (link to halt), reboot (link to halt), runlevel, shutdown,
-        sulogin, telinit (link to init), and utmpdump</seg>
+        sulogin, and telinit (link to init)</seg>
 @y
         <seg>bootlogd, fstab-decode, halt, init, killall5, last, 
         lastb (last へのリンク), mesg, pidof (killall5 へのリンク),
         poweroff (halt へのリンク), reboot (halt へのリンク), runlevel, shutdown,
-        sulogin, telinit (init へのリンク), utmpdump</seg>
+        sulogin, telinit (init へのリンク)</seg>
 @z
 
 @x
@@ -255,14 +255,5 @@
 @y
           <para>
           <command>init</command> に対してランレベルの変更を指示します。
-          </para>
-@z
-
-@x utmpdump
-          <para>Displays the content of the given login file in a more
-          user-friendly format</para>
-@y
-          <para>
-          指定されたログファイル内の情報を分かりやすく表示します。
           </para>
 @z

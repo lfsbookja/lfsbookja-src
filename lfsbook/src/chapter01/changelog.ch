@@ -48,6 +48,61 @@
 @z
 
 @x
+      <para>2012-09-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove utmpdump from sysvinit 
+          because it is now installed by util-linux.  Thanks to
+          Chris Staub for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;3202">#3202</ulink>.</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Change procps to not install the
+          kill program that is now installed by util-linux.  Fixes
+          <ulink url="&lfs-ticket-root;3201">#3201</ulink>.</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.22.1.  Fixes
+          <ulink url="&lfs-ticket-root;3199">#3199</ulink>.</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.6.2.  Fixes
+          <ulink url="&lfs-ticket-root;3198">#3198</ulink>.</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add boot/shutdown script customization
+          instructions.</para> 
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-10-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - sysvinit から utmpdump を削除。
+          util-linux によりインストールされるため。
+          パッチを提供してくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;3202">#3202</ulink> を Fix に。</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - procps にて kill プログラムをインストールしないように。
+          これは uti-linux にてインストールされるため。
+          <ulink url="&lfs-ticket-root;3201">#3201</ulink> を Fix に。</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.22.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3199">#3199</ulink> を Fix に。</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.6.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3198">#3198</ulink> を Fix に。</para> 
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - ブート時/シャットダウン時のスクリプトのカスタマイズ方法の説明を追加。</para> 
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-10-02</para>
       <itemizedlist>
         <listitem>

@@ -54,10 +54,25 @@
 -->
 
     <listitem>
+      <para>2012-10-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20121002,
+          Changeset
+          <ulink url="&lfs-rev-root;10016">10016</ulink> ～
+          <ulink url="&lfs-rev-root;10020">10020</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-10-06</para>
       <itemizedlist>
         <listitem>
-          <para>
+          <para>[matsuand] -
           wget-list の国内サイト向け sed 置換を若干修正。
           </para>
         </listitem>
