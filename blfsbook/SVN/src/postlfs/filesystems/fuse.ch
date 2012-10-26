@@ -179,26 +179,20 @@
 
 @x
         <seg>
-          fusermount,
-          mount.fuse and
-          ulockmgr_server
+          fusermount, mount.fuse and ulockmgr_server
         </seg>
         <seg>
-          libfuse.so and
-          libulockmgr.so
+          libfuse.so and libulockmgr.so
         </seg>
         <seg>
           /usr/include/fuse
         </seg>
 @y
         <seg>
-          fusermount,
-          mount.fuse,
-          ulockmgr_server
+          fusermount, mount.fuse, ulockmgr_server
         </seg>
         <seg>
-          libfuse.so,
-          libulockmgr.so
+          libfuse.so, libulockmgr.so
         </seg>
         <seg>
           /usr/include/fuse

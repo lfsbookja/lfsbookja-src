@@ -112,7 +112,7 @@
 @z
 
 @x
-      <option>-&#45;disable-static</option>: This stops it compiling a static
+      <option>-&#45;disable-static</option>: This stops it from compiling a static
       version of <filename class="libraryfile">libapr-1</filename>.
 @y
       <option>-&#45;disable-static</option>:

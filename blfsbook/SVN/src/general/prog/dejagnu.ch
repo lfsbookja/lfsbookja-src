@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY dejagnu-time          "less than 0.1 SBU">
+@y
+  <!ENTITY dejagnu-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to DejaGnu</title>
 @y
     <title>&IntroductionTo1;DejaGnu&IntroductionTo2;</title>
@@ -181,7 +187,7 @@
           used to control what tests to run, and variations on how to run them.</para>
 @y
           <para>
-          <application>DejaGnu</application> のテストドライバプログラム。
+          <application>DejaGnu</application> のテストドライバープログラム。
           テストとして何を実行するか、あるいはどのようにして実行するかを制御します。
           </para>
 @z

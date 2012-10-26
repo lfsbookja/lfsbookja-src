@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY git-time          "3.3 SBU (including tests)">
+@y
+  <!ENTITY git-time          "3.3 SBU (テストの実行を含む)">
+@z
+
+@x
     <title>Introduction to Git</title>
 @y
     <title>&IntroductionTo1;Git&IntroductionTo2;</title>
@@ -153,9 +159,8 @@
     <para role="optional">
       <xref linkend="pcre"/>, 
       <xref linkend="openssl"/>, 
-      <xref linkend="expat"/>, and 
-      <xref linkend="tk"/> (gitk, a simple <application>Git</application>
-      repository viewer, uses <application>Tk</application> at runtime)
+      <xref linkend="expat"/>,
+      <xref linkend="tk"/> (簡易な <application>Git</application>リポジトリビューワー gitk が実行時に <application>Tk</application> を必要とします)
     </para>
 @z
 
@@ -166,19 +171,17 @@
       <xref linkend="xmlto"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional (to create the man pages and html docs)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (man ページと html ドキュメントを生成する場合)</bridgehead>
     <para>
-      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
+      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
       <xref linkend="xmlto"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/git"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/git"/></para>
 @z
 
 @x
@@ -191,8 +194,9 @@
     <para>Install <application>Git</application> by running the following
     commands:</para>
 @y
-    <para>Install <application>Git</application> by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して <application>Git</application> をビルドします。
+    </para>
 @z
 
 @x
@@ -200,9 +204,10 @@
     url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and you wish to
     create the man pages:</para>
 @y
-    <para>If you have installed <ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and you wish to
-    create the man pages:</para>
+    <para>
+    <ulink
+    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> をインストールしていて man ページを生成したい場合は、以下を実行します。
+    </para>
 @z
 
 @x
@@ -211,40 +216,48 @@
     <xref linkend="xmlto"/> you can create the html version of the man
     pages and other docs:</para>
 @y
-    <para>If you have installed <ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
-    <xref linkend="xmlto"/> you can create the html version of the man
-    pages and other docs:</para>
+    <para>
+    <ulink
+    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> と <xref
+    linkend="xmlto"/> をインストールしている場合、以下のコマンドを実行すれば、man ページの html バージョンなどのドキュメントを生成することができます。
+    </para>
 @z
 
 @x
     <para>To check the results, issue: <command>make test</command>.</para>
 @y
-    <para>To check the results, issue: <command>make test</command>.</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <para>If you created the man pages, install them as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you created the man pages, install them as the
-    <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    man ページを生成した場合は、<systemitem
+    class="username">root</systemitem> ユーザーになって以下のコマンドを実行してインストールします。
+    </para>
 @z
 
 @x
     <para>If you created the html docs, install them as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you created the html docs, install them as the
-    <systemitem class="username">root</systemitem> user:</para>
+    <para>
+    html ドキュメントを生成した場合は、<systemitem
+    class="username">root</systemitem>  ユーザーになって以下のコマンドを実行してインストールします。
+    </para>
 @z
 
 @x
@@ -322,23 +335,24 @@
       <para><filename>~/.gitconfig</filename> and
       <filename>/etc/gitconfig</filename></para>
 @y
-      <title>Config Files</title>
-      <para><filename>~/.gitconfig</filename> and
+      <title>&ConfigFiles;</title>
+      <para><filename>~/.gitconfig</filename>,
       <filename>/etc/gitconfig</filename></para>
 @z
 
 @x
     <sect3><title>Configuration Information</title>
 @y
-    <sect3><title>Configuration Information</title>
+    <sect3><title>&ConfigInfo;</title>
 @z
 
 @x
       <para>If you want to use <command>git svn</command> you will need to
       install <xref linkend="subversion"/> and its Perl bindings.</para>
 @y
-      <para>If you want to use <command>git svn</command> you will need to
-      install <xref linkend="subversion"/> and its Perl bindings.</para>
+      <para>
+      <command>git svn</command> コマンドを利用したい場合は、<xref linkend="subversion"/> とその Perl バインディングをインストールする必要があります。
+      </para>
 @z
 
 @x
@@ -363,8 +377,8 @@
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -375,7 +389,7 @@
         /usr/share/gitweb</seg>
 @y
         <seg>git, git-cvsserver, gitk, git-receive-pack, git-shell,
-        git-upload-archive, git-upload-pack.</seg>
+        git-upload-archive, git-upload-pack</seg>
         <seg>/usr/libexec/git-core, /usr/share/git-&git-version;,
         /usr/share/git-core, /usr/share/git-gui, /usr/share/gitk,
         /usr/share/gitweb</seg>
@@ -402,7 +416,8 @@
 @x gitk
           <para>is a git repository browser (needs <xref linkend="tk"/>).</para>
 @y
-          <para>is a git repository browser (needs <xref linkend="tk"/>).</para>
+          <para>
+          git リポジトリブラウザー (<xref linkend="tk"/> が必要)</para>
 @z
 
 @x git-receive-pack

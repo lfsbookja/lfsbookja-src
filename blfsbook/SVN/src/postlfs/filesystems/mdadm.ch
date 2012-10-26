@@ -21,7 +21,7 @@
 
 @x
     <para>The <application>mdadm</application> package contains administration
-    tools for sorfware RAID.</para>
+    tools for software RAID.</para>
 @y
     <para>
     <application>mdadm</application> パッケージは、ソフトウェア RAID を実現する管理ツールを提供します。

@@ -160,6 +160,7 @@ CHANGE_FILES = \
 	kdepim-runtime.ch   \
 	kdeplasma-addons.ch \
 	konsole.ch          \
+	libkcddb.ch         \
 	libkexiv2.ch        \
 	okular.ch
 
@@ -370,6 +371,7 @@ kdepim.xml:            $(BOOKdir)/$@ $(srcdir)/kdepim.ch
 kdepim-runtime.xml:    $(BOOKdir)/$@ $(srcdir)/kdepim-runtime.ch
 kdeplasma-addons.xml:  $(BOOKdir)/$@ $(srcdir)/kdeplasma-addons.ch
 konsole.xml:           $(BOOKdir)/$@ $(srcdir)/konsole.ch
+libkcddb.xml:          $(BOOKdir)/$@ $(srcdir)/libkcddb.ch
 libkexiv2.xml:         $(BOOKdir)/$@ $(srcdir)/libkexiv2.ch
 okular.xml:            $(BOOKdir)/$@ $(srcdir)/okular.ch
 

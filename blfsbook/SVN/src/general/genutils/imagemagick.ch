@@ -182,6 +182,7 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional"><ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
     <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or
     <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/libfpx-1.3.0-1.tar.bz2">
@@ -190,7 +191,7 @@
     <xref linkend="jasper"/>,
     <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
     <xref linkend="lcms"/> or
-    <ulink url="http://sourceforge.net/projects/lcms/files/">lcms2</ulink>,
+    <xref linkend="lcms2"/>,
     <xref linkend="libexif"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,
@@ -203,6 +204,7 @@
     <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
     </para>
 @y
+    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional"><ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
     <ulink url="http://www.i3a.org/i_flashpix.html">FlashPIX</ulink> (or
     <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/libfpx-1.3.0-1.tar.bz2">
@@ -211,7 +213,7 @@
     <xref linkend="jasper"/>,
     <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
     <xref linkend="lcms"/> or
-    <ulink url="http://sourceforge.net/projects/lcms/files/">lcms2</ulink>,
+    <xref linkend="lcms2"/>,
     <xref linkend="libexif"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="libpng"/>,

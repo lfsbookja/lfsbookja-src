@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY pyxml-time          "less than 0.1 SBU">
-@y
-  <!ENTITY pyxml-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
   <!ENTITY py2cairo-time          "less than 0.1 SBU">
 @y
   <!ENTITY py2cairo-time          "&LessThan1;0.1 SBU&LessThan2;">
@@ -66,193 +60,6 @@
       along with their dependencies.
       Installation of the modules shown on this page is meant to follow from top
       to bottom to handle optional dependencies in each module.
-@z
-
-@x
-      <title>Introduction to PyXML Module</title>
-@y
-      <title>&IntroductionTo1;PyXML &Module;&IntroductionTo2;</title>
-@z
-
-@x
-        The <application>PyXML</application> package contains a validating XML
-        parser, an implementation of the SAX and DOM programming interfaces, an
-        interface to the Expat parser, and a C helper module that can speed up
-        <filename>xmllib.py</filename> by a factor of five. This is useful for
-        validating, parsing and manipulating XML files using Python programs.
-@y
-        The <application>PyXML</application> package contains a validating XML
-        parser, an implementation of the SAX and DOM programming interfaces, an
-        interface to the Expat parser, and a C helper module that can speed up
-        <filename>xmllib.py</filename> by a factor of five. This is useful for
-        validating, parsing and manipulating XML files using Python programs.
-@z
-
-@x
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-@y
-      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
-@z
-
-@x
-            Download (HTTP): <ulink url="&pyxml-download-http;"/>
-@y
-            &Download; (HTTP): <ulink url="&pyxml-download-http;"/>
-@z
-
-@x
-            Download (FTP): <ulink url="&pyxml-download-ftp;"/>
-@y
-            &Download; (FTP): <ulink url="&pyxml-download-ftp;"/>
-@z
-
-@x
-            Download MD5 sum: &pyxml-md5sum;
-@y
-            &Download; MD5 sum: &pyxml-md5sum;
-@z
-
-@x
-            Download size: &pyxml-size;
-@y
-            &DownloadSize;: &pyxml-size;
-@z
-
-@x
-            Estimated disk space required: &pyxml-buildsize;
-@y
-            &Estimateddiskspacerequired;: &pyxml-buildsize;
-@z
-
-@x
-            Estimated build time: &pyxml-time;
-@y
-            &Estimatedbuildtime;: &pyxml-time;
-@z
-
-@x
-      <bridgehead renderas="sect4">PyXML Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;PyXML&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required">
-        <xref linkend="python2"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required">
-        <xref linkend="python2"/>
-      </para>
-@z
-
-@x
-        User Notes: <ulink url="&blfs-wiki;/pyxml"/>
-@y
-        &UserNotes;: <ulink url="&blfs-wiki;/pyxml"/>
-@z
-
-@x
-      <title>Installation of PyXML</title>
-@y
-      <title>&InstallationOf1;PyXML&InstallationOf2;</title>
-@z
-
-@x
-        Install <application>PyXML</application> by running the following
-        commands:
-@y
-        以下のコマンドを実行して <application>PyXML</application> をビルドします。
-@z
-
-@x
-        Now, as the <systemitem class="username">root</systemitem> user:
-@y
-        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-        To run the regression tests, the package must first be installed. Then,
-        as an unprivileged user, issue the following commands:
-@y
-        縮退テストを実施するには、まず本パッケージをインストールしなければなりません。
-        そして一般ユーザーになって以下のコマンドを実行します。
-@z
-
-@x
-      <title>Command Explanations</title>
-@y
-      <title>&CommandExplanations;</title>
-@z
-
-@x
-        <command>python setup.py build</command>: This command copies the
-        <filename>*.py</filename> files to a staging area and compiles the C
-        extensions.
-@y
-        <command>python setup.py build</command>: This command copies the
-        <filename>*.py</filename> files to a staging area and compiles the C
-        extensions.
-@z
-
-@x
-        <command>python setup.py install</command>: This command installs the
-        package.
-@y
-        <command>python setup.py install</command>: This command installs the
-        package.
-@z
-
-@x
-      <title>Contents</title>
-@y
-      <title>&Contents;</title>
-@z
-
-@x
-        <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Libraries</segtitle>
-        <segtitle>Installed Directories</segtitle>
-@y
-        <segtitle>&InstalledPrograms;</segtitle>
-        <segtitle>&InstalledLibraries;</segtitle>
-        <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-          <seg>xmlproc_parse and xmlproc_val</seg>
-          <seg>PyXML Python library modules</seg>
-          <seg>
-            /usr/lib/python&python2-majorver;/site-packages/_xmlplus and
-            /usr/share/doc/PyXML-&pyxml-version;
-          </seg>
-@y
-          <seg>xmlproc_parse, xmlproc_val</seg>
-          <seg>PyXML Python ライブラリ&Module;</seg>
-          <seg>
-            /usr/lib/python&python2-majorver;/site-packages/_xmlplus,
-            /usr/share/doc/PyXML-&pyxml-version;
-          </seg>
-@z
-
-@x
-        <bridgehead renderas="sect4">Short Descriptions</bridgehead>
-@y
-        <bridgehead renderas="sect4">&ShortDescriptions;</bridgehead>
-@z
-
-@x xmlproc_parse
-              is a simple XML file parser using the xmlproc parser.
-@y
-              is a simple XML file parser using the xmlproc parser.
-@z
-
-@x xmlproc_val
-              is a validating XML file parser using the xmlproc parser.
-@y
-              is a validating XML file parser using the xmlproc parser.
 @z
 
 %
@@ -409,143 +216,6 @@
           </seg>
 @z
 
-%
-%  Begin Pycairo
-%
-@x
-      <title>Introduction to Pycairo Module</title>
-@y
-      <title>&IntroductionTo1;Pycairo &Module;&IntroductionTo2;</title>
-@z
-
-@x
-        Pycairo provides <application>Python 3</application> bindings to
-        <application>Cairo</application>.
-@y
-        Pycairo は、<application>Cairo</application> に対する <application>Python</application> バインディングを提供します。
-@z
-
-@x
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-@y
-      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
-@z
-
-@x
-            Download (HTTP): <ulink url="&pycairo-download-http;"/>
-@y
-            &Download; (HTTP): <ulink url="&pycairo-download-http;"/>
-@z
-
-@x
-            Download (FTP): <ulink url="&pycairo-download-ftp;"/>
-@y
-            &Download; (FTP): <ulink url="&pycairo-download-ftp;"/>
-@z
-
-@x
-            Download MD5 sum: &pycairo-md5sum;
-@y
-            &Download; MD5 sum: &pycairo-md5sum;
-@z
-
-@x
-            Download size: &pycairo-size;
-@y
-            &DownloadSize;: &pycairo-size;
-@z
-
-@x
-            Estimated disk space required: &pycairo-buildsize;
-@y
-            &Estimateddiskspacerequired;: &pycairo-buildsize;
-@z
-
-@x
-            Estimated build time: &pycairo-time;
-@y
-            &Estimatedbuildtime;: &pycairo-time;
-@z
-
-@x
-      <bridgehead renderas="sect4">Pycairo Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;Pycairo&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required">
-        <xref linkend="python3"/> and
-        <xref linkend="cairo"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required">
-        <xref linkend="python3"/>,
-        <xref linkend="cairo"/>
-      </para>
-@z
-
-@x
-        User Notes: <ulink url="&blfs-wiki;/pycairo"/>
-@y
-        &UserNotes;: <ulink url="&blfs-wiki;/pycairo"/>
-@z
-
-@x
-      <title>Installation of Pycairo</title>
-@y
-      <title>&InstallationOf1;Pycairo&InstallationOf2;</title>
-@z
-
-@x
-        Install <application>Pycairo</application> by running the following
-        commands:
-@y
-        以下のコマンドを実行して <application>Pycairo</application> をビルドします。
-@z
-
-@x
-        This package does not come with a test suite.
-@y
-        &notTestSuite;
-@z
-
-@x
-        Now, as the <systemitem class="username">root</systemitem> user:
-@y
-        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      <title>Contents</title>
-@y
-      <title>&Contents;</title>
-@z
-
-@x
-        <segtitle>Installed Libraries</segtitle>
-        <segtitle>Installed Directories</segtitle>
-@y
-        <segtitle>&InstalledLibraries;</segtitle>
-        <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-          <seg>Pycairo Python library module</seg>
-          <seg>
-            /usr/include/pycairo and
-            /usr/lib/python&python3-majorver;/site-packages/cairo
-          </seg>
-@y
-          <seg>Pycairo Python ライブラリ&Module;</seg>
-          <seg>
-            /usr/include/pycairo,
-            /usr/lib/python&python3-majorver;/site-packages/cairo
-          </seg>
-@z
-
 @x
       <title>Introduction to PyGObject Module</title>
 @y
@@ -643,13 +313,11 @@
 @x
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <xref linkend="gobject-introspection"/> and
         <xref linkend="libxslt"/> (to Build Documentation)
       </para>
 @y
       <bridgehead renderas="sect5">&Optional;</bridgehead>
       <para role="optional">
-        <xref linkend="gobject-introspection"/>,
         <xref linkend="libxslt"/> (ドキュメント生成時)
       </para>
 @z
@@ -690,16 +358,6 @@
       <title>Command Explanations</title>
 @y
       <title>&CommandExplanations;</title>
-@z
-
-@x
-        <parameter>--disable-introspection</parameter>: This switch is required
-        if you have not installed
-        <application>gobject-introspection</application>.
-@y
-        <parameter>--disable-introspection</parameter>: This switch is required
-        if you have not installed
-        <application>gobject-introspection</application>.
 @z
 
 @x

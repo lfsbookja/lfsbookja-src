@@ -21,7 +21,7 @@
 
 @x
       <application>Check</application> is a unit testing framework for C.
-      It was installed by LFS in the temprary /tools directory. These
+      It was installed by LFS in the temporary /tools directory. These
       instructions install it permanently.
 @y
       <application>Check</application> は、C 言語に対してのユニットテストのフレームワークです。
@@ -103,6 +103,12 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -151,9 +157,7 @@
             generating C unit tests for use with the
             <application>Check</application> unit testing framework.
 @y
-            is an <application>Awk</application> script used for
-            generating C unit tests for use with the
-            <application>Check</application> unit testing framework.
+            <application>Check</application> ユニットテストフレームワークにて用いられる C ユニットテストを生成するための <application>Awk</application> スクリプト。
 @z
 
 @x libcheck.so
