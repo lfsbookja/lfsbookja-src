@@ -34,7 +34,7 @@
 @x
     <para>All software has bugs. Sometimes, a bug can be exploited, for example
     to allow users to gain enhanced privileges (perhaps gaining a root shell, or
-    simply accessing or deleting other users&apos; files), or to allow a remote
+    simply accessing or deleting other user&apos;s files), or to allow a remote
     site to crash an application (denial of service), or for theft of data. These
     bugs are labelled as vulnerabilities.</para>
 @y
@@ -51,7 +51,7 @@
 @x
     <para>The main place where vulnerabilities get logged is
     <ulink url="http://cve.mitre.org">cve.mitre.org</ulink>.
-    Unfortunately, many vulnerabily numbers (CVE-yyyy-nnnn) are initially only
+    Unfortunately, many vulnerability numbers (CVE-yyyy-nnnn) are initially only
     labelled as "reserved" when distributions start issuing fixes.  Also, some
     vulnerabilities apply to particular combinations of
     <command>configure</command> options, or only apply to old versions of
@@ -59,11 +59,10 @@
 @y
     <para>
     脆弱性に関する情報を取りまとめているサイトとして <ulink url="http://cve.mitre.org">cve.mitre.org</ulink> があります。
-    Unfortunately, many vulnerabily numbers (CVE-yyyy-nnnn) are initially only
+    Unfortunately, many vulnerability numbers (CVE-yyyy-nnnn) are initially only
     labelled as "reserved" when distributions start issuing fixes.  Also, some
     vulnerabilities apply to particular combinations of
     <command>configure</command> options, or only apply to old versions of
-    packages which have long since been updated in BLFS.
-    </para>
+    packages which have long since been updated in BLFS.</para>
 @z
 

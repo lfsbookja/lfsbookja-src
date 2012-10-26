@@ -42,7 +42,7 @@ CHANGE_FILES = \
 	vinagre.ch              \
 	vino.ch
 
-EXTRA_DIST = $(CHANGE_FILES) gnome-devel-docs.sed
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
 

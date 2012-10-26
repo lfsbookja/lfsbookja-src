@@ -36,13 +36,13 @@
 @z
 
 @x
-  <para>The types of RAID organization are descrbed in the <ulink
-  url="https://raid.wiki.kernel.org/articles/i/n/t/Introduction.html#The_RAID_levels">
+  <para>The types of RAID organization are described in the <ulink
+  url="https://raid.wiki.kernel.org/index.php/Overview#The_RAID_levels">
   RAID Wiki</ulink>.</para>
 @y
   <para>
   RAID 構成の種類については <ulink
-  url="https://raid.wiki.kernel.org/articles/i/n/t/Introduction.html#The_RAID_levels">
+  url="https://raid.wiki.kernel.org/index.php/Overview#The_RAID_levels">
   RAID Wiki</ulink> にて説明されています。</para>
 @z
 
@@ -75,7 +75,7 @@
     available by the device manufacturer.  The capabilities are
     generally supplied via a PCI card, although there are some 
     instances of RAID components integrated in to the motherboard.
-    Hardware RAID may also be available ina sthand-alone enclosure.</para>
+    Hardware RAID may also be available in a stand-alone enclosure.</para>
 @y
     <title>ハードウェア RAID</title>
     <para>
@@ -87,7 +87,7 @@
 @z
 
 @x
-    <para>One advantage of hardware based RAID is that the drives
+    <para>One advantage of hardware-based RAID is that the drives
     are offered to the operating system as a logical drive and no
     operating system dependent configuration is needed.</para>
 @y
