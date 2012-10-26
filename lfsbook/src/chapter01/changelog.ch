@@ -48,7 +48,45 @@
 @z
 
 @x
-      <para>2012-09-27</para>
+      <para>2012-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add notes to the gcc and binutils
+           sections in Chapter 6 about "link time optimization" 
+           and the extra files built by gcc.  Fixes
+          <ulink url="&lfs-ticket-root;3200">#3200</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to tzdata-2012f.  Fixes
+          <ulink url="&lfs-ticket-root;3205">#3205</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update installed program description
+          for several packages. Thanks to Chris Staub for the patch.  
+          Fixes <ulink url="&lfs-ticket-root;3203">#3203</ulink>.</para> 
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-10-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第6章の gcc と binutils において「リンク時の最適化」の説明、および gcc にてビルドされる追加のファイルについて加筆。
+          <ulink url="&lfs-ticket-root;3200">#3200</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2012f へのアップグレード。
+          <ulink url="&lfs-ticket-root;3205">#3205</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 各種パッケージにおいて、インストールされるプログラムを更新。
+          パッチを提供してくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;3203">#3203</ulink> を Fix に。</para> 
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-10-14</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Remove utmpdump from sysvinit 

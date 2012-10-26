@@ -183,16 +183,16 @@
 @z
 
 @x
-        <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbd_mode,
-        kbdrate, loadkeys, loadunimap,
+        <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbdinfo, 
+        kbd_mode, kbdrate, loadkeys, loadunimap,
         mapscrn, openvt, psfaddtable (link to psfxtable), psfgettable (link to
         psfxtable), psfstriptable (link to psfxtable), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, and unicode_stop</seg>
         <seg>/lib/kbd</seg>
 @y
-        <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbd_mode,
-        kbdrate, loadkeys, loadunimap,
+        <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbdinfo, 
+        kbd_mode, kbdrate, loadkeys, loadunimap,
         mapscrn, openvt, psfaddtable (psfxtable へのリンク), psfgettable (psfxtable へのリンク),
         psfstriptable (psfxtable へのリンク), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode,
@@ -243,6 +243,14 @@
 @y
           <para>
           カーネルのスキャンコード-キーコード (scancode-to-keycode) マッピングテーブルを表示します。
+          </para>
+@z
+
+@x kbdinfo
+          <para>Obtains information about the status of a console</para>
+@y
+          <para>
+          コンソール状態に関しての情報を取得します。
           </para>
 @z
 

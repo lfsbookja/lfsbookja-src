@@ -109,34 +109,36 @@
 @z
 
 @x
-        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu, chkdupexe,
+        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
-        dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        dmesg, eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
-        logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
-        mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
-        prlimit, raw, readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
-        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (link to swapon),
-        swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
-        uuidd, uuidgen, wall, whereis, wipefs, and x86_64</seg>
+        logger, look, losetup, lsblk, lscpu, lslocks, mcookie, mkfs, mkfs.bfs,
+        mkfs.cramfs, mkfs.minix, mkswap, more, mount, mountpoint, namei, partx,
+        pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
+        rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
+        swaplabel, swapoff (link to swapon), swapon, switch_root, tailf,
+        taskset, tunelp, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
+        wdctl, whereis, wipefs, and x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
         
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
         /usr/share/getopt, /var/lib/hwclock</seg>
 @y
-        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu, chkdupexe,
+        <seg>addpart, agetty, blkid, blockdev, cal, cfdisk, chcpu,
         chrt, col, colcrt, colrm, column, ctrlaltdel, cytune, delpart,
-        dmesg, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
+        dmesg, eject, fallocate, fdformat, fdisk, findfs, findmnt, flock, fsck,
         fsck.cramfs, fsck.minix, fsfreeze, fstrim, getopt, hexdump, hwclock, i386,
         ionice, ipcmk, ipcrm, ipcs, isosize, ldattach, linux32, linux64,
-        logger, look, losetup, lsblk, lscpu, mcookie, mkfs, mkfs.bfs, mkfs.cramfs,
-        mkfs.minix, mkswap, more, mount, mountpoint, namei, partx, pg, pivot_root,
-        prlimit, raw, readprofile, rename, renice, rev, rtcwake, script, scriptreplay,
-        setarch, setsid, setterm, sfdisk, swaplabel, swapoff (swapon へのリンク),
-        swapon, switch_root, tailf, taskset, tunelp, ul, umount, unshare,
-        uuidd, uuidgen, wall, whereis, wipefs, x86_64</seg>
+        logger, look, losetup, lsblk, lscpu, lslocks, mcookie, mkfs, mkfs.bfs,
+        mkfs.cramfs, mkfs.minix, mkswap, more, mount, mountpoint, namei, partx,
+        pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
+        rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
+        swaplabel, swapoff (swapon へのリンク), swapon, switch_root, tailf,
+        taskset, tunelp, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
+        wdctl, whereis, wipefs, x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
         
@@ -206,14 +208,6 @@
           <para>Modifies the state of CPUs</para>
 @y
           <para>CPU の状態を変更します。</para>
-@z
-
-@x chkdupexe
-          <para>Finds duplicate executables</para>
-@y
-          <para>
-          重複している実行モジュールを探します。
-          </para>
 @z
 
 @x chrt
@@ -288,6 +282,14 @@
 @y
           <para>
           カーネルのブートメッセージをダンプします。
+          </para>
+@z
+
+@x eject
+          <para>Ejects removable media</para>
+@y
+          <para>
+          リムーバブルメディアをイジェクトします。
           </para>
 @z
 
@@ -533,6 +535,14 @@
           </para>
 @z
 
+@x
+          <para>Lists local system locks</para>
+@y
+          <para>
+          ローカルのシステムロックを一覧表示します。
+          </para>
+@z
+
 @x mcookie
           <para>Generates magic cookies (128-bit random hexadecimal numbers) for
           <command>xauth</command></para>
@@ -686,6 +696,14 @@
 @y
           <para>
           実行中のプロセスの優先度を変更します。
+          </para>
+@z
+
+@x resizepart
+          <para>Asks the Linux kernel to resize a partition</para>
+@y
+          <para>
+          Linux カーネルに対してパーティションのリサイズを指示します。
           </para>
 @z
 
@@ -850,6 +868,15 @@
           </para>
 @z
 
+@x utmpdump
+          <para>Displays the content of the given login file in a more
+          user-friendly format</para>
+@y
+          <para>
+          指定されたログインファイルの内容を分かりやすい書式で表示します。
+          </para>
+@z
+
 @x uuidd
           <para>A daemon used by the UUID library to generate time-based
           UUIDs in a secure and guranteed-unique fashion.</para>
@@ -877,6 +904,14 @@
 @y
           <para>
           ファイルの内容、あるいはデフォルトでは標準入力から入力された内容を、現在ログインしている全ユーザーの端末上に表示します。
+          </para>
+@z
+
+@x wdctl
+          <para>Shows hardware watchdog status</para>
+@y
+          <para>
+          ハードウェアの watchdog ステータスを表示します。
           </para>
 @z
 
@@ -911,6 +946,15 @@
 @y
           <para>
           デバイスの識別やトークンの抽出を行う処理ルーチンを提供します。
+          </para>
+@z
+
+@x libmount
+          <para>Contains routines for block device mounting and
+          unmounting</para>
+@y
+          <para>
+          ブロックデバイスのマウントとアンマウントに関する処理ルーチンを提供します。
           </para>
 @z
 

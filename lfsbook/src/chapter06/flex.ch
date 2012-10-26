@@ -116,17 +116,21 @@
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
-        <seg>flex and lex</seg>
+        <seg>flex, flex++ (link to flex), and lex</seg>
         <seg>libfl.a and libfl_pic.a</seg>
+        <seg>/usr/share/doc/flex-&flex-version;</seg>
 @y
-        <seg>flex, lex</seg>
+        <seg>flex, flex++ (flex へのリンク), lex</seg>
         <seg>libfl.a, libfl_pic.a</seg>
+        <seg>/usr/share/doc/flex-&flex-version;</seg>
 @z
 
 @x
@@ -144,6 +148,17 @@
           テキスト内のパターンを認識するためのプログラムを生成するツール。
           これは多彩なパターン検索の規則構築を可能とします。
           これを利用することで特別なプログラムの生成が不要となります。
+          </para>
+@z
+
+@x flex++
+          <para>An extension of flex, is used for generating C++ code 
+          and classes. It is a symbolic link to <command>flex</command></para>
+@y
+          <para>
+          flex の拡張。
+          C++ コードやクラスの生成に利用されます。
+          これは <command>flex</command> へのシンボリックリンクです。
           </para>
 @z
 

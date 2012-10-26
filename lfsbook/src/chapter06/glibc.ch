@@ -595,8 +595,8 @@ minor timing issues が何を意味するのか不明であった。
 
 @x
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4, locale, localedef, mtrace, nscd, pcprofiledump,
-        pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
+        pldd, pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -616,8 +616,8 @@ minor timing issues が何を意味するのか不明であった。
         /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo</seg>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
-        ldd, lddlibc4, locale, localedef, mtrace, nscd, pcprofiledump,
-        pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
+        pldd, pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -735,6 +735,14 @@ minor timing issues が何を意味するのか不明であった。
           </para>
 @z
 
+@x makedb
+          <para>Creates a simple database from textual input</para>
+@y
+          <para>
+          テキストを入力として単純なデータベースを生成します。
+          </para>
+@z
+
 @x mtrace
           <para>Reads and interprets a memory trace file and displays a summary
           in human-readable format</para>
@@ -759,6 +767,14 @@ minor timing issues が何を意味するのか不明であった。
 @y
           <para>
           PC プロファイリングによって生成される情報をダンプします。
+          </para>
+@z
+
+@x pldd
+          <para>Lists dynamic shared objects used by running processes</para>
+@y
+          <para>
+          稼動中のプロセスにて利用されている、動的共有オブジェクト (dynamic shared objects) を一覧出力します。
           </para>
 @z
 

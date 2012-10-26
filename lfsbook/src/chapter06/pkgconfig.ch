@@ -69,10 +69,10 @@
 
 @x
         <seg>pkg-config</seg>
-        <seg>/usr/share/doc/pkg-config-0.26</seg>
+        <seg>/usr/share/doc/pkg-config-&pkgconfig-version;</seg>
 @y
         <seg>pkg-config</seg>
-        <seg>/usr/share/doc/pkg-config-0.27</seg>
+        <seg>/usr/share/doc/pkg-config-&pkgconfig-version;</seg>
 @z
 
 @x

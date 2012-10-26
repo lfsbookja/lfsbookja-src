@@ -118,13 +118,13 @@
 @z
 
 @x
-        <seg>ctstat (link to lnstat), genl, ifcfg, ifstat, ip, lnstat,
+        <seg>bridge, ctstat (link to lnstat), genl, ifcfg, ifstat, ip, lnstat,
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (link to lnstat), ss,
         and tc</seg>
         <seg>/etc/iproute2, /lib/tc, /usr/share/doc/iproute2-&iproute2-version;,
         /usr/lib/tc</seg>
 @y
-        <seg>ctstat (lnstat へのリンク), genl, ifcfg, ifstat, ip, lnstat,
+        <seg>bridge, ctstat (lnstat へのリンク), genl, ifcfg, ifstat, ip, lnstat,
         nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (lnstat へのリンク), ss,
         tc</seg>
         <seg>/etc/iproute2, /lib/tc, /usr/share/doc/iproute2-&iproute2-version;,
@@ -135,6 +135,14 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x
+          <para>Configures network bridges</para>
+@y
+          <para>
+          ネットワークブリッジを設定します。
+          </para>
 @z
 
 @x ctstat

@@ -89,6 +89,22 @@
 @z
 
 @x
+    <note><para>There is an optional argument to <command>configure</command>,
+    <option>--enable-lto</option>, that can be used to allow the
+    <command>ar</command>, <command>nm</command>, and <command>ranlib</command>
+    commands to accept a <option>--plugin</option> parameter.  This is used to
+    allow <command>gcc</command> to do "link time optimization" if specified.
+    No packages in LFS or BLFS currently use this capability.</para></note>
+@y
+    <note><para>
+    <command>configure</command> のオプション引数として <option>--enable-lto</option> があります。
+    これは <command>ar</command>, <command>nm</command>, <command>ranlib</command> の各コマンドが <option>--plugin</option> パラメーターを受け入れるようにするものです。
+    こうすることで <command>gcc</command> において「リンク時の最適化 (link time optimization)」機能が実現されます。
+    ただし現時点の LFS や BLFS に含まれるパッケージ類にて、この機能を利用しているものはありません。
+    </para></note>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

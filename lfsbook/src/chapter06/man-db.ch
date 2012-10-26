@@ -411,20 +411,24 @@
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
         <seg>accessdb, apropos (link to whatis), catman, lexgrog, man, mandb,
         manpath, whatis, and zsoelim</seg>
-        <seg>/usr/lib/man-db, /usr/share/doc/man-db</seg>
+        <seg>libman.so, libmandb.so</seg>
+        <seg>/usr/lib/man-db, /usr/share/doc/man-db-&man-db-version;</seg>
 @y
         <seg>accessdb, apropos (whatis へのリンク), catman, lexgrog, man, mandb,
         manpath, whatis, zsoelim</seg>
-        <seg>/usr/lib/man-db, /usr/share/doc/man-db</seg>
+        <seg>libman.so, libmandb.so</seg>
+        <seg>/usr/lib/man-db, /usr/share/doc/man-db-&man-db-version;</seg>
 @z
 
 @x
@@ -517,5 +521,21 @@
 @y
           <para>
           ファイルの内容を読み込んで、<emphasis>.so file</emphasis> の形で書かれている記述行を、その <emphasis>file</emphasis> の内容に置き換えます。
+          </para>
+@z
+
+@x libman
+          <para>Contains run-time support for <command>man</command></para>
+@y
+          <para>
+          <command>man</command> に対しての実行時のサポート機能を提供します。
+          </para>
+@z
+
+@x libmandb
+          <para>Contains run-time support for <command>man</command></para>
+@y
+          <para>
+          <command>man</command> に対しての実行時のサポート機能を提供します。
           </para>
 @z

@@ -102,6 +102,25 @@
 @z
 
 @x
+      <para>There is an optional argument to <command>configure</command>,
+      <option>--enable-lto</option>, that can be used to allow
+      <command>gcc</command> to do do "link time optimization" if specified.  No
+      packages in LFS or BLFS currently use this capability.</para>
+    
+      <para>To use this feature, it must also be enabled in
+      <application>binutils</application>.</para> 
+@y
+      <para>
+      <command>configure</command> のオプション引数として <option>--enable-lto</option> があります。
+      これは <command>ar</command>, <command>nm</command>, <command>ranlib</command> の各コマンドが <option>--plugin</option> パラメーターを受け入れるようにするものです。
+      こうすることで <command>gcc</command> において「リンク時の最適化 (link time optimization)」機能が実現されます。
+      ただし現時点の LFS や BLFS に含まれるパッケージ類にて、この機能を利用しているものはありません。
+      </para>
+
+      <para>この機能を利用するには <application>binutils</application> でも同じようにビルドしておかなければなりません。</para> 
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
@@ -296,18 +315,24 @@
 @z
 
 @x
-        <seg>c++, cc (link to gcc), cpp, g++, gcc, gccbug, and gcov</seg>
+        <seg>c++, cc (link to gcc), cpp, g++, gcc, 
+        gcc-ar, gcc-nm, gcc-ranlib, gccbug, and gcov</seg>
+
         <seg>libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so} and libsupc++.a</seg>
+        
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
 @y
-        <seg>c++, cc (gcc へのリンク), cpp, g++, gcc, gccbug, gcov</seg>
+        <seg>c++, cc (gcc へのリンク), cpp, g++, gcc, 
+        gcc-ar, gcc-nm, gcc-ranlib, gccbug, gcov</seg>
+
         <seg>libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so},
         liblto_plugin.so, libmudflap.{a,so}, libmudflapth.{a,so},
         libquadmath.{a,so}, libssp.{a,so},
         libssp_nonshared.a, libstdc++.{a,so}, libsupc++.a</seg>
+        
         <seg>/usr/include/c++, /usr/lib/gcc, /usr/share/gcc-&gcc-version;</seg>
 @z
 
@@ -349,6 +374,45 @@
           <para>The C compiler</para>
 @y
           <para>C コンパイラー</para>
+@z
+
+@x gcc-ar
+          <para>A wrapper around <command>ar</command> that adds a
+          plugin to the command line.  This program is only used
+          to add "link time optization" and is not useful with the
+          default build options.</para>
+@y
+          <para>
+          <command>ar</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
+          このプログラムは「リンク時の最適化 (link time optimization)」機能を付与する場合にのみ利用されます。
+          デフォルトのビルドオプションでは有効にはなりません。
+          </para>
+@z
+
+@x gcc-nm
+          <para>A wrapper around <command>nm</command> that adds a
+          plugin to the command line.  This program is only used
+          to add "link time optization" and is not useful with the
+          default build options.</para>
+@y
+          <para>
+          <command>nm</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
+          このプログラムは「リンク時の最適化 (link time optimization)」機能を付与する場合にのみ利用されます。
+          デフォルトのビルドオプションでは有効にはなりません。
+          </para>
+@z
+
+@x
+          <para>A wrapper around <command>ranlib</command> that adds a
+          plugin to the command line.  This program is only used
+          to add "link time optization" and is not useful with the
+          default build options.</para>
+@y
+          <para>
+          <command>ranlib</command> に関連するラッパーであり、コマンドラインへのプラグインを追加します。
+          このプログラムは「リンク時の最適化 (link time optimization)」機能を付与する場合にのみ利用されます。
+          デフォルトのビルドオプションでは有効にはなりません。
+          </para>
 @z
 
 @x gccbug
