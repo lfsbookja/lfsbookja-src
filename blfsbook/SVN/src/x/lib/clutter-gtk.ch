@@ -79,13 +79,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="clutter"/> and
-      <xref linkend="gtk2"/>
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="clutter"/>,
-      <xref linkend="gtk2"/>
+      <xref linkend="gtk3"/>
     </para>
 @z
 

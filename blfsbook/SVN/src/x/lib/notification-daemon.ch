@@ -130,25 +130,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--libexecdir=/usr/lib/notification-daemon</parameter>: This
-      parameter is used so that the <application>notification-daemon</application>
-      program is installed in the preferred location of
-      <filename class="directory">/usr/lib/notification-daemon</filename> instead
-      of <filename class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/notification-daemon</parameter>:
-      このパラメーターは <application>notification-daemon</application>プログラムのインストール先を <filename
-      class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
-      class='directory'>/usr/lib/notification-daemon</filename> にします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

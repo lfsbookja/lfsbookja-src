@@ -35,13 +35,15 @@
 @x
       <application>Pango</application> is a library for laying out and rendering
       of text, with an emphasis on internationalization. It can be used anywhere
-      that text layout is needed, though most of the work on Pango so far has
-      been done in the context of the GTK+ widget toolkit.
+      that text layout is needed, though most of the work on
+      <application>Pango</application> so far has been done in the context of
+      the <application>GTK+</application> widget toolkit.
 @y
       <application>Pango</application> is a library for laying out and rendering
       of text, with an emphasis on internationalization. It can be used anywhere
-      that text layout is needed, though most of the work on Pango so far has
-      been done in the context of the GTK+ widget toolkit.
+      that text layout is needed, though most of the work on
+      <application>Pango</application> so far has been done in the context of
+      the <application>GTK+</application> widget toolkit.
 @z
 
 @x
@@ -95,13 +97,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/> and
+      <xref linkend="cairo"/>,
+      <xref linkend="harfbuzz"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/> and
+      <xref linkend="cairo"/>,
+      <xref linkend="harfbuzz"/>,
       <xref linkend="xorg7-lib"/>
     </para>
 @z
@@ -121,14 +125,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <ulink url="http://linux.thai.net/libthai">LibThai</ulink>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 
@@ -152,14 +154,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. You can install
-      <xref linkend="gtk-doc"/> if you wish to test the documentation section of
-      the test suite. Also, the <quote>testboundries</quote> test could fail if
-      you have <application>LibThai</application> installed.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストスイートのうち、ドキュメントに関するテストを実施する場合は <xref linkend="gtk-doc"/> をインストールしておく必要があります。
-      また <quote>testboundries</quote> テストは、<application>LibThai</application> をインストールしていない場合には失敗します。
 @z
 
 @x
@@ -232,8 +229,8 @@
           pango-querymodules and pango-view
         </seg>
         <seg>
-          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so and libpangoxft-1.0.so
+          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so and
+          libpangoxft-1.0.so
         </seg>
         <seg>
           /etc/pango,
@@ -247,7 +244,7 @@
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so, libpangoxft-1.0.so
+          libpangoxft-1.0.so
         </seg>
         <seg>
           /etc/pango,

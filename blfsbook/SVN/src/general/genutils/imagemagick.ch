@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "264 MB typical (additional 27MB if you run the testsuite, and additional 68 MB if you run the Image::Magick demo)">
+  <!ENTITY imagemagick-buildsize     "300 MB typical (additional 27MB if you run the testsuite)">
   <!ENTITY imagemagick-time          "3.2 SBU typical (Additional 0.8 SBU to run the test suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "264 MB typical (additional 27MB if you run the testsuite, and additional 68 MB if you run the Image::Magick demo)">
+  <!ENTITY imagemagick-buildsize     "300 MB typical (additional 27MB if you run the testsuite)">
   <!ENTITY imagemagick-time          "3.2 SBU typical (Additional 0.8 SBU to run the test suite)">
 @z
 
@@ -82,7 +82,7 @@
 @z
 
 @x
-    <para>The <application>ImageMagick</application> source releases are
+    <note><para>The <application>ImageMagick</application> source releases are
     updated frequently and the version shown above may no longer be available
     from the download locations. You can download a more recent version and use
     the existing BLFS instructions to install it. Chances are that it will
@@ -93,9 +93,9 @@
     from the BLFS package server at
     <ulink
     url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.xz"/>.
-    </para>
+    </para></note>
 @y
-    <para>The <application>ImageMagick</application> source releases are
+    <note><para>The <application>ImageMagick</application> source releases are
     updated frequently and the version shown above may no longer be available
     from the download locations. You can download a more recent version and use
     the existing BLFS instructions to install it. Chances are that it will
@@ -106,7 +106,7 @@
     from the BLFS package server at
     <ulink
     url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.xz"/>.
-    </para>
+    </para></note>
 @z
 
 @x
@@ -248,6 +248,7 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
     <para role="optional"><ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
     <xref linkend="enscript"/>,
     <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
@@ -255,17 +256,17 @@
     <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
     <ulink url="http://www.mpeg.org/MSSG/">MPEG-2 Video Codec</ulink>,
     <ulink url="http://netpbm.sourceforge.net/">Netpbm</ulink>,
-    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
+    <xref linkend="texlive"/>,
     <ulink url="http://www.xfig.org/">Transfig</ulink>,
     <ulink url="http://txt2html.sourceforge.net/">txt2html</ulink>
     (requires Perl Module
     <ulink url="http://cpan.org/authors/id/J/JS/JSTENZEL/Getopt-ArgvFile-1.11.tar.gz">
     Getopt::ArgvFile</ulink>), and
     <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
-    <!-- url="http://www.funet.fi/pub/graphics/packages/Utah-Raster-Toolkit/rel3/urt-3.1b.mlg.tar.gz"> -->
     (or <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)
     </para>
 @y
+    <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
     <para role="optional"><ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
     <xref linkend="enscript"/>,
     <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
@@ -273,14 +274,13 @@
     <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
     <ulink url="http://www.mpeg.org/MSSG/">MPEG-2 Video Codec</ulink>,
     <ulink url="http://netpbm.sourceforge.net/">Netpbm</ulink>,
-    <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>,
+    <xref linkend="texlive"/>,
     <ulink url="http://www.xfig.org/">Transfig</ulink>,
     <ulink url="http://txt2html.sourceforge.net/">txt2html</ulink>
     (requires Perl Module
     <ulink url="http://cpan.org/authors/id/J/JS/JSTENZEL/Getopt-ArgvFile-1.11.tar.gz">
     Getopt::ArgvFile</ulink>), and
     <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
-    <!-- url="http://www.funet.fi/pub/graphics/packages/Utah-Raster-Toolkit/rel3/urt-3.1b.mlg.tar.gz"> -->
     (or <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)
     </para>
 @z
@@ -306,14 +306,6 @@
     <para>
     以下のコマンドを実行して <application>Imagemagick</application> をビルドします。
     </para>
-@z
-
-@x
-    <para>If you wish to build the <application>PerlMagick</application>
-    <application>perl</application> module, use the following commands:</para>
-@y
-    <para>If you wish to build the <application>PerlMagick</application>
-    <application>perl</application> module, use the following commands:</para>
 @z
 
 @x
@@ -412,12 +404,14 @@
 
 @x
         <seg>animate, compare, composite, conjure, convert, display,
-        identify, import, Magick++-config, Magick-config, MagickCore-config,
+        identify, import, Magick-config, MagickCore-config,
         MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
-        <seg>libMagick.{so,a}, libMagickCore.{so,a} libMagick++.{so,a},
-	libMagickWand.{so,a}, optionally the Magick.so Perl module, and
+
+        <seg>libMagickCore.{so,a}, libMagickWand.{so,a}, and
         numerous plugin modules</seg>
-        <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
+        
+        <seg>/etc/ImageMagick,
+        /usr/include/ImageMagick, 
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
@@ -425,12 +419,14 @@
         /usr/share/doc/ImageMagick-&imagemagick-version;</seg>
 @y
         <seg>animate, compare, composite, conjure, convert, display,
-        identify, import, Magick++-config, Magick-config, MagickCore-config,
-        MagickWand-config, mogrify, montage, stream, and Wand-config</seg>
-        <seg>libMagick.{so,a}, libMagickCore.{so,a} libMagick++.{so,a},
-	libMagickWand.{so,a}, optionally the Magick.so Perl module, and
+        identify, import, Magick-config, MagickCore-config,
+        MagickWand-config, mogrify, montage, stream, Wand-config</seg>
+
+        <seg>libMagickCore.{so,a}, libMagickWand.{so,a}, and
         numerous plugin modules</seg>
-        <seg>/usr/include/Magick++, /usr/include/magick, /usr/include/wand,
+        
+        <seg>/etc/ImageMagick,
+        /usr/include/ImageMagick, 
         /usr/lib/ImageMagick-&imagemagick-version;,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/Image,
         /usr/lib/perl5/site_perl/&lfs-perl-version;/Image/Magick,
@@ -497,17 +493,11 @@
 @z
 
 @x
-      <term><command>Magick-config</command> and
-      <command>Magick++-config, MagickCore-config, MagickWand-config</command></term>
-      <listitem>
         <para>show information about the installed versions of the
-        <application>ImageMagick</application> Magick++, MagickCore and MagickWand libraries.</para>
+        <application>ImageMagick</application> libraries.</para>
 @y
-      <term><command>Magick-config</command> と
-      <command>Magick++-config, MagickCore-config, MagickWand-config</command></term>
-      <listitem>
         <para>show information about the installed versions of the
-        <application>ImageMagick</application> Magick++, MagickCore and MagickWand libraries.</para>
+        <application>ImageMagick</application> libraries.</para>
 @z
 
 @x mogrify

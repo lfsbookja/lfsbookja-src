@@ -134,18 +134,20 @@
 @z
 
 @x
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          /usr/share/backgrounds/gnome
+          /usr/share/backgrounds/gnome and
+          /usr/share/gnome-background-properties
         </seg>
 @y
         <seg>
-          /usr/share/backgrounds/gnome
+          /usr/share/backgrounds/gnome,
+          /usr/share/gnome-background-properties
         </seg>
 @z
 

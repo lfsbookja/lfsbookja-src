@@ -128,7 +128,7 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.  Note
+      To test the results, issue: <command>make check</command>. Note
       that a <application>D-Bus</application> session daemon must be
       running for the tests to succeed.
 @y
@@ -160,33 +160,35 @@
 
 @x
         <seg>
-          vala, vala-0.16, valac, valac-0.16, vala-gen-introspect, 
-          vala-gen-introspect-0.16, vapicheck, vapicheck-0.16, 
-          vapigen and vapigen-0.16
+          vala, vala-0.18, valac, valac-0.18, vala-gen-introspect, 
+          vala-gen-introspect-0.18, vapicheck, vapicheck-0.18, 
+          vapigen and vapigen-0.18
         </seg>
         <seg>
-          libvala-0.16.so
+          libvala-0.18.so
         </seg>
         <seg>
-          /usr/include/vala-0.16,
-          /usr/lib/vala-0.16,
-          /usr/share/devhelp/books/vala-0.16 and
-          /usr/share/{vala,vala-0.16}
+          /usr/include/vala-0.18,
+          /usr/lib/vala-0.18,
+          /usr/share/devhelp/books/vala-0.18,
+          /usr/share/vala and
+          /usr/share/vala-0.18
         </seg>
 @y
         <seg>
-          vala, vala-0.16, valac, valac-0.16, vala-gen-introspect, 
-          vala-gen-introspect-0.16, vapicheck, vapicheck-0.16, 
-          vapigen, vapigen-0.16
+          vala, vala-0.18, valac, valac-0.18, vala-gen-introspect, 
+          vala-gen-introspect-0.18, vapicheck, vapicheck-0.18, 
+          vapigen, vapigen-0.18
         </seg>
         <seg>
-          libvala-0.16.so
+          libvala-0.18.so
         </seg>
         <seg>
-          /usr/include/vala-0.16,
-          /usr/lib/vala-0.16,
-          /usr/share/devhelp/books/vala-0.16,
-          /usr/share/{vala,vala-0.16}
+          /usr/include/vala-0.18,
+          /usr/lib/vala-0.18,
+          /usr/share/devhelp/books/vala-0.18,
+          /usr/share/vala,
+          /usr/share/vala-0.18
         </seg>
 @z
 
@@ -204,9 +206,11 @@
 @z
 
 @x vala-gen-introspect
-            generates a GI file for GObject and GLib based packages.
+            generates a GI file for GObject and
+            <application>GLib</application> based packages.
 @y
-            generates a GI file for GObject and GLib based packages.
+            generates a GI file for GObject and
+            <application>GLib</application> based packages.
 @z
 
 @x vapicheck

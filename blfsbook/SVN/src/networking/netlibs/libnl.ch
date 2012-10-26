@@ -139,7 +139,7 @@
           libnl-3.so, libnl-cli-3.so, libnl-genl-3.so,
           libnl-nf-3.so and libnl-route-3.so
         </seg>
-	<seg>
+        <seg>
           /etc/libnl,
           /usr/include/libnl3 and
           /usr/lib/libnl
@@ -154,7 +154,7 @@
           libnl-3.so, libnl-cli-3.so, libnl-genl-3.so,
           libnl-nf-3.so, libnl-route-3.so
         </seg>
-	<seg>
+        <seg>
           /etc/libnl,
           /usr/include/libnl3,
           /usr/lib/libnl

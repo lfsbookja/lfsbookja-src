@@ -95,14 +95,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/> and
       <xref linkend="udisks2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="udisks2"/>
     </para>
@@ -113,13 +115,16 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
+      <xref linkend="dbus-glib"/>,
       <xref linkend="fuse"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
       libbluray</ulink>,
       <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>,
+      <xref linkend="libgcrypt"/>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink> and
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <xref linkend="openssh"/> and
       <xref linkend="samba3"/>
     </para>
 @y
@@ -127,13 +132,16 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
+      <xref linkend="dbus-glib"/>,
       <xref linkend="fuse"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
       libbluray</ulink>,
       <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>,
+      <xref linkend="libgcrypt"/>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <xref linkend="openssh"/> and
       <xref linkend="samba3"/>
     </para>
 @z
@@ -177,7 +185,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -187,14 +195,14 @@
 
 @x
         <seg>
-          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, 
-          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, 
-          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, 
-          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree 
-          and several executables in /usr/lib/gvfs
+          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls,
+          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file,
+          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm,
+          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree,
+          gvfsd, gvfsd-fuse and gvfsd-metadata
         </seg>
         <seg>
-          libgvfscommon.so and libgvfscommon-dnssd.so
+          libgvfscommon.so
         </seg>
         <seg>
           /usr/include/gvfs-client,
@@ -203,14 +211,14 @@
         </seg>
 @y
         <seg>
-          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, 
-          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, 
-          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, 
-          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree 
-          and several executables in /usr/lib/gvfs
+          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls,
+          gvfs-mime, gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file,
+          gvfs-mount, gvfs-move, gvfs-open, gvfs-rename, gvfs-rm,
+          gvfs-save, gvfs-set-attribute, gvfs-trash, gvfs-tree,
+          gvfsd, gvfsd-fuse, gvfsd-metadata
         </seg>
         <seg>
-          libgvfscommon.so, libgvfscommon-dnssd.so
+          libgvfscommon.so
         </seg>
         <seg>
           /usr/include/gvfs-client,
@@ -226,19 +234,17 @@
 @z
 
 @x gvfs-cat
-            prints a file to standard output using the virtual 
-            file system to access the file via a URI.
+            concatenates the given files and prints them
+            to the standard output.
 @y
-            prints a file to standard output using the virtual 
-            file system to access the file via a URI.
+            concatenates the given files and prints them
+            to the standard output.
 @z
 
 @x gvfs-info
-            prints information about files and directories using 
-            the virtual file system.
+            shows information about the given locations.
 @y
-            prints information about files and directories using 
-            the virtual file system.
+            shows information about the given locations.
 @z
 
 @x gvfs-less
@@ -252,111 +258,95 @@
 @z
 
 @x gvfs-ls
-            lists the content of directories using the virtual file 
-            system.
+            lists information about the given locations.
 @y
-            lists the content of directories using the virtual file 
-            system.
+            lists information about the given locations.
 @z
 
 @x gvfs-mkdir
-            makes a directory specified by an URI using 
-            the virtual file system.
+            creates a directory specified by an URI.
 @y
-            makes a directory specified by an URI using 
-            the virtual file system.
+            creates a directory specified by an URI.
 @z
 
 @x gvfs-monitor-dir
-            monitors the change content of a directory using 
-            the virtual file system.
+            prints information about file creation, deletion, file content and
+            attribute changes and mount and unmount operations inside the
+            specified directories.
 @y
-            monitors the change content of a directory using 
-            the virtual file system.
+            prints information about file creation, deletion, file content and
+            attribute changes and mount and unmount operations inside the
+            specified directories.
 @z
 
 @x gvfs-monitor-file
-            monitors the change of a file using the virtual file 
-            system.
+            prints information about creation, deletion, content and attribute
+            changes and mount and unmount operations affecting the monitored files.
 @y
-            monitors the change of a file using the virtual file 
-            system.
+            prints information about creation, deletion, content and attribute
+            changes and mount and unmount operations affecting the monitored files.
 @z
 
 @x gvfs-mount
-            mounts, unmounts and lists file systems using the 
-            virtual file system.
+            provides commandline access to various aspects of GIOs mounting
+            functionality.
 @y
-            mounts, unmounts and lists file systems using the 
-            virtual file system.
+            provides commandline access to various aspects of GIOs mounting
+            functionality.
 @z
 
 @x gvfs-move
-            moves a file from one URI location to another using 
-            the virtual file system.
+            moves a file from one URI location to another.
 @y
-            moves a file from one URI location to another using 
-            the virtual file system.
+            moves a file from one URI location to another.
 @z
 
 @x gvfs-open
-            opens an URI using the appropiate application.
+            opens files with the default application that is registered
+            to handle files of that type.
 @y
-            opens an URI using the appropiate application.
+            opens files with the default application that is registered
+            to handle files of that type.
 @z
 
 @x gvfs-rename
-            changes the name of a file or directory using the 
-            virtual file system.
+            changes the name of a file or directory.
 @y
-            changes the name of a file or directory using the 
-            virtual file system.
+            changes the name of a file or directory.
 @z
 
 @x gvfs-rm
-            removes a directory entry using the virtual file 
-            system via a URI.
+            removes a file.
 @y
-            removes a directory entry using the virtual file 
-            system via a URI.
+            removes a file.
 @z
 
 @x gvfs-save
-            saves information to a file using the virtual 
-            file system.
+            reads from the standard input and saves the data to
+            the given location.
 @y
-            saves information to a file using the virtual 
-            file system.
+            reads from the standard input and saves the data to
+            the given location.
 @z
 
 @x gvfs-trash
-            moves a directory entry to the trash using the 
-            virtual file system.
+            sends files or directories to the "Trashcan".
 @y
-            moves a directory entry to the trash using the 
-            virtual file system.
+            sends files or directories to the "Trashcan".
 @z
 
 @x gvfs-tree
-            lists contents of directories in a tree-like format 
-            using the virtual file system.
+            lists the contents of the given directories recursively,
+            in a tree-like format.
 @y
-            lists contents of directories in a tree-like format 
-            using the virtual file system.
+            lists the contents of the given directories recursively,
+            in a tree-like format.
 @z
 
 @x libgvfscommon.so
-            contains common API functions used in 
+            contains the common API functions used in 
             <application>Gvfs</application> programs.
 @y
-            contains common API functions used in 
+            contains the common API functions used in 
             <application>Gvfs</application> programs.
-@z
-
-@x libgvfscommon-dnssd.so
-            contains API functions used in
-            <application>Gvfs</application> DNS/SD backend.
-@y
-            contains API functions used in
-            <application>Gvfs</application> DNS/SD backend.
 @z

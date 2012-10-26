@@ -14,7 +14,7 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=<envar>&gnome-etc-dir;</envar></parameter>:
+    <para><parameter>--sysconfdir=<envar>&gnome-old-etc-dir;</envar></parameter>:
     This parameter causes the configuration files to be installed in
     <filename class="directory">/etc/gnome/2.30.2</filename> instead of
     <filename class="directory">$GNOME_PREFIX/etc</filename>.  You may
@@ -22,7 +22,7 @@
     <filename class="directory">/etc/gnome</filename> or even
     <filename class="directory">/etc</filename>.</para>
 @y
-    <para><parameter>--sysconfdir=<envar>&gnome-etc-dir;</envar></parameter>:
+    <para><parameter>--sysconfdir=<envar>&gnome-old-etc-dir;</envar></parameter>:
     このパラメーターは、設定ファイルのインストール先を <filename
     class="directory">$GNOME_PREFIX/etc</filename> ではなく <filename
     class="directory">/etc/gnome/2.30.2</filename> とします。

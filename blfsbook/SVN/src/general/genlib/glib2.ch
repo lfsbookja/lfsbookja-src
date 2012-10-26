@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY glib2-time          "1.5 SBU (additional 4.0 SBU to run the test suite)">
+  <!ENTITY glib2-time          "1.6 SBU (additional 5.0 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-time          "1.5 SBU (テストスイート実行時は追加で 4.0 SBU)">
+  <!ENTITY glib2-time          "1.6 SBU (テストスイート実行時は追加で 5.0 SBU)">
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="pcre"/> (built with unicode properties)
+      <xref linkend="pcre"/> (built with Unicode properties)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -117,8 +117,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="attr"/>,
-      <xref linkend="dbus"/> (required to run the tests),
-      <xref linkend="gamin"/> and
+      <xref linkend="dbus"/> (required to run the tests) and
       <xref linkend="gtk-doc"/>
     </para>
 @y
@@ -126,7 +125,6 @@
     <para role="optional">
       <xref linkend="attr"/>,
       <xref linkend="dbus"/> (テストスイート実行時に必要),
-      <xref linkend="gamin"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -213,13 +211,13 @@
 @z
 
 @x
-      <parameter>--with-pcre=system</parameter>: This parameter causes the
+      <parameter>--with-pcre=system</parameter>: This switch causes the
       build to use a system-provided version of the
       <application>PCRE</application> library instead of an internal
       version.
 @y
       <parameter>--with-pcre=system</parameter>:
-      このパラメーターの指定により、バンドルされている <application>PCRE</application> ライブラリではなく、インストール済のライブラリを用いてビルドを行います。
+      このスイッチの指定により、バンドルされている <application>PCRE</application> ライブラリではなく、インストール済のライブラリを用いてビルドを行います。
 @z
 
 @x
@@ -248,13 +246,18 @@
         </seg>
         <seg>
           libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-          libgobject-2.0.so, libgthread-2.0.so and libgiofam.so
+          libgobject-2.0.so and libgthread-2.0.so
         </seg>
         <seg>
-          /usr/include/{gio-unix-2.0,glib-2.0},
-          /usr/lib/{gdbus-2.0,gio,glib-2.0},
-          /usr/share/glib-2.0 and
-          /usr/share/gtk-doc/html/{gio,glib,gobject}
+          /usr/include/gio-unix-2.0,
+          /usr/include/glib-2.0,
+          /usr/lib/gdbus-2.0,
+          /usr/lib/gio,
+          /usr/lib/glib-2.0,
+          /usr/share/glib-2.0,
+          /usr/share/gtk-doc/html/gio,
+          /usr/share/gtk-doc/html/glib and
+          /usr/share/gtk-doc/html/gobject
         </seg>
 @y
         <seg>
@@ -266,13 +269,18 @@
         </seg>
         <seg>
           libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-          libgobject-2.0.so, libgthread-2.0.so, libgiofam.so
+          libgobject-2.0.so, libgthread-2.0.so
         </seg>
         <seg>
-          /usr/include/{gio-unix-2.0,glib-2.0},
-          /usr/lib/{gdbus-2.0,gio,glib-2.0},
+          /usr/include/gio-unix-2.0,
+          /usr/include/glib-2.0,
+          /usr/lib/gdbus-2.0,
+          /usr/lib/gio,
+          /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
-          /usr/share/gtk-doc/html/{gio,glib,gobject}
+          /usr/share/gtk-doc/html/gio,
+          /usr/share/gtk-doc/html/glib,
+          /usr/share/gtk-doc/html/gobject
         </seg>
 @z
 
@@ -283,9 +291,11 @@
 @z
 
 @x gdbus
-            is a simple used tool for working with D-Bus objects.
+            is a simple tool used for working with
+            <application>D-Bus</application> objects.
 @y
-            is a simple used tool for working with D-Bus objects.
+            is a simple tool used for working with
+            <application>D-Bus</application> objects.
 @z
 
 @x gdbus-codegen
@@ -298,12 +308,12 @@
 
 @x gio-querymodules
             is used to create a giomodule.cache file in the listed directories. 
-            This file lists the implemented extension points for each module that has
-            been found.
+            This file lists the implemented extension points for each module
+            that has been found.
 @y
             is used to create a giomodule.cache file in the listed directories. 
-            This file lists the implemented extension points for each module that has
-            been found.
+            This file lists the implemented extension points for each module
+            that has been found.
 @z
 
 @x glib-compile-resources

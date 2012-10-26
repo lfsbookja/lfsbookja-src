@@ -78,7 +78,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtksourceview"/>,
       <xref linkend="libpeas"/> and
@@ -87,7 +86,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtksourceview"/>,
       <xref linkend="libpeas"/>,
@@ -99,43 +97,31 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="enchant"/> and
-      <xref linkend="iso-codes"/> (to provide Spell-Checking Capability),
-      <xref linkend="libsoup"/> and
+      <xref linkend="iso-codes"/>,
+      <xref linkend="libsoup"/>,
+      <xref linkend="libzeitgeist"/> and
       <xref linkend="pygobject3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="enchant"/>,
-      <xref linkend="iso-codes"/> (to provide Spell-Checking Capability),
+      <xref linkend="iso-codes"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="libzeitgeist"/>,
       <xref linkend="pygobject3"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <ulink url="http://launchpad.net/libzeitgeist">libzeitgeist</ulink>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <ulink url="http://launchpad.net/libzeitgeist">libzeitgeist</ulink>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 
@@ -159,9 +145,13 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue <command>make check</command>. Note
+      that you should run tests from an already active
+      <application>GNOME</application> session.
 @y
-      &notTestSuite;
+      To test the results, issue <command>make check</command>. Note
+      that you should run tests from an already active
+      <application>GNOME</application> session.
 @z
 
 @x
@@ -177,22 +167,12 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib</parameter>: This parameter
-      ensures the bugreport script is installed to the same 
-      directory as the plugins.
-@y
-      <parameter>--libexecdir=/usr/lib</parameter>: This parameter
-      ensures the bugreport script is installed to the same 
-      directory as the plugins.
-@z
-
-@x
-      <option>--disable-spell</option>: Use this parameter to disables
-      spell-checking capability and is required if
+      <option>--disable-spell</option>: Use this switch to disable
+      spell-checking capability. It is required if
       <application>Enchant</application> is not installed.
 @y
-      <option>--disable-spell</option>: Use this parameter to disables
-      spell-checking capability and is required if
+      <option>--disable-spell</option>: Use this switch to disable
+      spell-checking capability. It is required if
       <application>Enchant</application> is not installed.
 @z
 
@@ -204,20 +184,15 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           gedit
-        </seg>
-        <seg>
-          libgedit-private.so
         </seg>
         <seg>
           /usr/include/gedit-3.0,
@@ -231,13 +206,10 @@
           gedit
         </seg>
         <seg>
-          libgedit-private.so
-        </seg>
-        <seg>
           /usr/include/gedit-3.0,
           /usr/lib/gedit,
           /usr/share/gedit,
-          /usr/share/gtk-doc/html/gedit
+          /usr/share/gtk-doc/html/gedit,
           /usr/share/help/*/gedit
         </seg>
 @z

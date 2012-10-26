@@ -223,12 +223,12 @@
 @z
 
 @x
-      <command>chmod -v 4755 /sbin/security/unix_chkpwd</command>:
+      <command>chmod -v 4755 /sbin/unix_chkpwd</command>:
       The <command>unix_chkpwd</command> helper program must be setuid
       so that non-<systemitem class="username">root</systemitem>
       processes can access the shadow file.
 @y
-      <command>chmod -v 4755 /sbin/security/unix_chkpwd</command>: パスワードヘルパープログラム <command>unix_chkpwd</command> に対して setuid を設定します。
+      <command>chmod -v 4755 /sbin/unix_chkpwd</command>: パスワードヘルパープログラム <command>unix_chkpwd</command> に対して setuid を設定します。
       <systemitem class="username">root</systemitem> 権限ではないプロセスが shadow ファイルにアクセスできるようにするためです。
 @z
 

@@ -190,18 +190,6 @@
 @z
 
 @x
-    <para><command>make ... install installinfo</command>: This command
-    installs the package and the <command>info</command> documentation into the
-    indicated directories.</para>
-@y
-    <para>
-    <command>make ... install installinfo</command>: This command
-    installs the package and the <command>info</command> documentation into the
-    indicated directories.
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

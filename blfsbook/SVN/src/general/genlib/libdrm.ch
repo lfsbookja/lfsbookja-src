@@ -113,17 +113,6 @@
 @z
 
 @x
-        You may notice that there are several newer version of
-        <application>libdrm</application> available upstream.
-        However, we do not recommend using any later version than
-        this one if you are going to build
-        <xref linkend="mesalib"/> using BLFS instructions.
-@y
-        ここに示す <application>libdrm</application> のバージョンよりも新しいものが、アップストリームにより提供されているかもしれません。
-        しかし BLFS の手順に従って <xref linkend="mesalib"/> をビルドしようとする場合には、必ずここに示す <application>libdrm</application> のバージョンを用いることを推奨します。
-@z
-
-@x
       Install <application>libdrm</application> by running the following
       commands:
 @y
@@ -131,12 +120,9 @@
 @z
 
 @x
-      To check the results, issue <command>make check</command>. Note that
-      some tests may fail depending on the video hardware installed in the
-      machine.
+      To check the results, issue <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストの中には、搭載されているビデオ関連のハードウェアにてエラーとなる場合があります。
 @z
 
 @x
@@ -152,27 +138,18 @@
 @z
 
 @x
-      <option>--enable-nouveau-experimental-api</option>: This parameter
-      enables building of Nouveau (Open Source NVidia drivers) DRM interface
-      library as well as corresponding headers.
-@y
-      <option>--enable-nouveau-experimental-api</option>:
-      このパラメーターは Nouveau (Open Source NVidia drivers) DRM インターフェースライブラリをビルドすることを指示します。
-@z
-
-@x
       <option>--enable-vmwgfx-experimental-api</option>: This parameter
-      enables use of vmwgfx experimental kernel API used by the
+      enables use of VMWGFX experimental kernel API used by the
       VMware 3D Gallium driver.
 @y
       <option>--enable-vmwgfx-experimental-api</option>:
-      このパラメーターは、VMware 3D Gallium ドライバーによって用いられる vmwgfx の実験的なカーネル API の利用を可能にします。
+      このパラメーターは、VMware 3D Gallium ドライバーによって用いられる VMWGFX の実験的なカーネル API の利用を可能にします。
 @z
 
 @x
       <option>--enable-omap-experimental-api</option>: This option
-      enables use of OMAP's experimental kernel API. OMAP is a series of
-      system-on-chips (SoCs) developed by Texas Instruments.
+      enables use of OMAP's experimental kernel API. OMAP is a series
+      of system-on-chips (SoCs) developed by Texas Instruments.
 @y
       <option>--enable-omap-experimental-api</option>:
       このオプションは OMAP の実験的なカーネル API を有効にすることを指示します。
@@ -195,19 +172,27 @@
 
 @x
         <seg>
-          libdrm.so, libdrm_intel.so, libdrm_nouveau.so, libdrm_omap.so
+          libdrm.so, libdrm_exynos.so, libdrm_intel.so,
+          libdrm_nouveau.so, libdrm_omap.so,
           libdrm_radeon.so and libkms.so
         </seg>
         <seg>
-          <envar>$XORG_PREFIX</envar>/include/{libdrm,libkms,nouveau,omap}
+          /usr/include/exynos,
+          /usr/include/libdrm,
+          /usr/include/libkms and
+          /usr/include/omap
         </seg>
 @y
         <seg>
-          libdrm.so, libdrm_intel.so, libdrm_nouveau.so, libdrm_omap.so
+          libdrm.so, libdrm_exynos.so, libdrm_intel.so,
+          libdrm_nouveau.so, libdrm_omap.so,
           libdrm_radeon.so, libkms.so
         </seg>
         <seg>
-          <envar>$XORG_PREFIX</envar>/include/{libdrm,libkms,nouveau,omap}
+          /usr/include/exynos,
+          /usr/include/libdrm,
+          /usr/include/libkms,
+          /usr/include/omap
         </seg>
 @z
 
@@ -217,16 +202,54 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libdrm{,_intel,_nouveau,_omap,_radeon}.so
-            contains the Direct Rendering Manager library functions, and
-            additional vendor specific functions for Intel, nVidia, Omap
-            and Radeon devices.
+@x libdrm.so
+            contains the Direct Rendering Manager API functions.
 @y
-            ダイレクトレンダリングモジュール (Direct Rendering Module) のライブラリ関数と、Intel, nVidia, Omap, Radeon の各ベンダーに固有の追加関数を提供します。
+            ダイレクトレンダリングモジュール (Direct Rendering Module) の API 関数を提供します。
+@z
+
+@x libdrm_exynos.so
+            contains the Samsung Exynos specific Direct Rendering
+            Manager functions.
+@y
+            contains the Samsung Exynos specific Direct Rendering
+            Manager functions.
+@z
+
+@x libdrm_intel.so
+            contains the Intel specific Direct Rendering Manager
+            functions.
+@y
+            contains the Intel specific Direct Rendering Manager
+            functions.
+@z
+
+@x libdrm_nouveau.so
+            contains the open source nVidia (Nouveau) specific Direct
+            Rendering Manager functions.
+@y
+            contains the open source nVidia (Nouveau) specific Direct
+            Rendering Manager functions.
+@z
+
+@x libdrm_omap.so
+            contains the TI Omap specific Direct Rendering Manager
+            functions.
+@y
+            contains the TI Omap specific Direct Rendering Manager
+            functions.
+@z
+
+@x libdrm_radeon.so
+            contains the AMD Radeon specific Direct Rendering Manager
+            functions.
+@y
+            contains the AMD Radeon specific Direct Rendering Manager
+            functions.
 @z
 
 @x libkms.so
-            contains functions necessary for kernel modesetting.
+            contains API functions necessary for kernel modesetting.
 @y
-            カーネルモールモードセッティング (kernel modesetting) に必要な関数を提供します。
+            カーネルのモード設定 (kernel modesetting) に必要な API 関数を提供します。
 @z

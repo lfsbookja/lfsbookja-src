@@ -21,20 +21,20 @@
 
 @x
       The <application>GNOME Menus</application> package contains an
-      implementation of the draft <quote>Desktop Menu Specification</quote>
-      from freedesktop.org (<ulink
-      url="http://www.freedesktop.org/Standards/menu-spec"/>).
-      Also contained
-      are the <application>GNOME</application> menu layout configuration files,
-      <filename>.directory</filename> files and a menu related utility program.
+      implementation of the draft
+      <ulink url="http://www.freedesktop.org/Standards/menu-spec">
+      Desktop Menu Specification</ulink> from freedesktop.org. It also
+      contains the <application>GNOME</application> menu layout configuration
+      files, <filename>.directory</filename> files and a menu related utility
+      program.
 @y
       The <application>GNOME Menus</application> package contains an
-      implementation of the draft <quote>Desktop Menu Specification</quote>
-      from freedesktop.org (<ulink
-      url="http://www.freedesktop.org/Standards/menu-spec"/>).
-      Also contained
-      are the <application>GNOME</application> menu layout configuration files,
-      <filename>.directory</filename> files and a menu related utility program.
+      implementation of the draft
+      <ulink url="http://www.freedesktop.org/Standards/menu-spec">
+      Desktop Menu Specification</ulink> from freedesktop.org. It also
+      contains the <application>GNOME</application> menu layout configuration
+      files, <filename>.directory</filename> files and a menu related utility
+      program.
 @z
 
 @x
@@ -194,9 +194,11 @@
 @z
 
 @x libgnome-menu.so
-            contains functions required to support GNOME's implementation
-            of the Desktop Menu Specification.
+            contains functions required to support
+            <application>GNOME</application>'s implementation of the
+            Desktop Menu Specification.
 @y
-            contains functions required to support GNOME's implementation
-            of the Desktop Menu Specification.
+            contains functions required to support
+            <application>GNOME</application>'s implementation of the
+            Desktop Menu Specification.
 @z

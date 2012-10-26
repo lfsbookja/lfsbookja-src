@@ -37,39 +37,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libpng-download-http;"/></para>
+          Download (HTTP): <ulink url="&libpng-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libpng-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libpng-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libpng-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libpng-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libpng-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libpng-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libpng-md5sum;</para>
+          Download MD5 sum: &libpng-md5sum;
 @y
-        <para>&Download; MD5 sum: &libpng-md5sum;</para>
+          &Download; MD5 sum: &libpng-md5sum;
 @z
 
 @x
-        <para>Download size: &libpng-size;</para>
+          Download size: &libpng-size;
 @y
-        <para>&DownloadSize;: &libpng-size;</para>
+          &DownloadSize;: &libpng-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libpng-buildsize;</para>
+          Estimated disk space required: &libpng-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libpng-buildsize;</para>
+          &Estimateddiskspacerequired;: &libpng-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libpng-time;</para>
+          Estimated build time: &libpng-time;
 @y
-        <para>&Estimatedbuildtime;: &libpng-time;</para>
+          &Estimatedbuildtime;: &libpng-time;
 @z
 
 @x
@@ -116,11 +116,9 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -153,12 +151,10 @@
 
 @x
         <seg>
-          libpng-config and
-          libpng15-config
+          libpng-config and libpng15-config
         </seg>
         <seg>
-          libpng.so and
-          libpng15.so
+          libpng.so and libpng15.so
         </seg>
         <seg>
           /usr/include/libpng15 and
@@ -166,12 +162,10 @@
         </seg>
 @y
         <seg>
-          libpng-config,
-          libpng15-config
+          libpng-config, libpng15-config
         </seg>
         <seg>
-          libpng.so,
-          libpng15.so
+          libpng.so, libpng15.so
         </seg>
         <seg>
           /usr/include/libpng15,

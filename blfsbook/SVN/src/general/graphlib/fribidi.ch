@@ -20,16 +20,14 @@
 @z
 
 @x
-    <para>The <application>FriBidi</application> package is an implementation
-    of the <ulink url="http://www.unicode.org/reports/tr9/">Unicode
-    Bidirectional Algorithm (bidi)</ulink>. This is useful for supporting
-    Arabic and Hebrew alphabets in other packages.</para>
+      The <application>FriBidi</application> package is an implementation
+      of the <ulink url="http://www.unicode.org/reports/tr9/">Unicode
+      Bidirectional Algorithm (BIDI)</ulink>. This is useful for supporting
+      Arabic and Hebrew alphabets in other packages.
 @y
-    <para>
-    <application>FriBidi</application> パッケージは <ulink
-    url="http://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム</ulink> (Unicode Bidirectional Algorithm; bidi) を実現するものです。
-    これはアラビア語やヘブライ語を用いる他のパッケージにて活用されます。
-    </para>
+      <application>FriBidi</application> パッケージは <ulink
+      url="http://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム</ulink> (Unicode Bidirectional Algorithm; bidi) を実現するものです。
+      これはアラビア語やヘブライ語を用いる他のパッケージにて活用されます。
 @z
 
 @x
@@ -39,47 +37,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&fribidi-download-http;"/></para>
+          Download (HTTP): <ulink url="&fribidi-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&fribidi-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&fribidi-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&fribidi-download-ftp;"/></para>
+          Download (FTP): <ulink url="&fribidi-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&fribidi-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&fribidi-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &fribidi-md5sum;</para>
+          Download MD5 sum: &fribidi-md5sum;
 @y
-        <para>&Download; MD5 sum: &fribidi-md5sum;</para>
+          &Download; MD5 sum: &fribidi-md5sum;
 @z
 
 @x
-        <para>Download size: &fribidi-size;</para>
+          Download size: &fribidi-size;
 @y
-        <para>&DownloadSize;: &fribidi-size;</para>
+          &DownloadSize;: &fribidi-size;
 @z
 
 @x
-        <para>Estimated disk space required: &fribidi-buildsize;</para>
+          Estimated disk space required: &fribidi-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &fribidi-buildsize;</para>
+          &Estimateddiskspacerequired;: &fribidi-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &fribidi-time;</para>
+          Estimated build time: &fribidi-time;
 @y
-        <para>&Estimatedbuildtime;: &fribidi-time;</para>
+          &Estimatedbuildtime;: &fribidi-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/fribidi"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/fribidi"/></para>
 @z
 
 @x
@@ -89,44 +85,22 @@
 @z
 
 @x
-    <para>Install <application>FriBidi</application> by running the following
-    commands:</para>
+      Install <application>FriBidi</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>FriBidi</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>FriBidi</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--disable-static</parameter>: prevent static libraries
-    being built and installed.</para>
-@y
-    <para>
-    <parameter>--disable-static</parameter>:
-    スタティックライブラリをビルドせずインストールしないようにします。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -136,7 +110,7 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
@@ -146,13 +120,25 @@
 @z
 
 @x
-        <seg>fribidi</seg>
-        <seg>libfribidi.{so,a}</seg>
-        <seg>/usr/include/fribidi</seg>
+        <seg>
+          fribidi
+        </seg>
+        <seg>
+          libfribidi.so
+        </seg>
+        <seg>
+          /usr/include/fribidi
+        </seg>
 @y
-        <seg>fribidi</seg>
-        <seg>libfribidi.{so,a}</seg>
-        <seg>/usr/include/fribidi</seg>
+        <seg>
+          fribidi
+        </seg>
+        <seg>
+          libfribidi.so
+        </seg>
+        <seg>
+          /usr/include/fribidi
+        </seg>
 @z
 
 @x
@@ -162,21 +148,21 @@
 @z
 
 @x fribidi
-          <para>is a command-line interface to the
-          <filename class='libraryfile'>libfribidi</filename> library and can
-          be used to convert a logical string to visual output.</para>
+            is a command-line interface to the
+            <filename class="libraryfile">libfribidi</filename> library and
+            can be used to convert a logical string to visual output.
 @y
-          <para>is a command-line interface to the
-          <filename class='libraryfile'>libfribidi</filename> library and can
-          be used to convert a logical string to visual output.</para>
+            is a command-line interface to the
+            <filename class="libraryfile">libfribidi</filename> library and
+            can be used to convert a logical string to visual output.
 @z
 
-@x libfribidi.{so,a}
-          <para>contains functions used to implement the <ulink
-          url="http://www.unicode.org/reports/tr9/"> Unicode Bidirectional
-          Algorithm</ulink>.</para>
+@x libfribidi.so
+            contains functions used to implement the <ulink
+            url="http://www.unicode.org/reports/tr9/">Unicode
+            Bidirectional Algorithm</ulink>.
 @y
-          <para>contains functions used to implement the <ulink
-          url="http://www.unicode.org/reports/tr9/"> Unicode Bidirectional
-          Algorithm</ulink>.</para>
+            contains functions used to implement the <ulink
+            url="http://www.unicode.org/reports/tr9/">Unicode
+            Bidirectional Algorithm</ulink>.
 @z

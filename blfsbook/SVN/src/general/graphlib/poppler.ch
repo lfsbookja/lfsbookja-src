@@ -123,10 +123,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="fontconfig"/></para>
+    <para role="required">
+      <xref linkend="fontconfig"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="fontconfig"/></para>
+    <para role="required">
+      <xref linkend="fontconfig"/>
+    </para>
 @z
 
 @x

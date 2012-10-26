@@ -79,8 +79,9 @@
     <para role="required">
       <xref linkend="GConf"/>,
       <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gsettings-desktop-schemas"/> and
-      <xref linkend="vte"/>
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="vte"/> and
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -88,7 +89,8 @@
       <xref linkend="GConf"/>,
       <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="vte"/>
+      <xref linkend="vte"/>,
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 
@@ -136,12 +138,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -160,18 +156,16 @@
           gnome-terminal
         </seg>
         <seg>
-          /usr/share/gnome/help/gnome-terminal,
           /usr/share/gnome-terminal and
-          /usr/share/omf/gnome-terminal
+          /usr/share/help/*/gnome-terminal
         </seg>
 @y
         <seg>
           gnome-terminal
         </seg>
         <seg>
-          /usr/share/gnome/help/gnome-terminal,
           /usr/share/gnome-terminal,
-          /usr/share/omf/gnome-terminal
+          /usr/share/help/*/gnome-terminal
         </seg>
 @z
 

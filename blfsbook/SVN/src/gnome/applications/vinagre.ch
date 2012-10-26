@@ -77,21 +77,17 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gnome-icon-theme"/>,
       <xref linkend="gtk-vnc"/>,
-      <xref linkend="libgnome-keyring"/>,
-      <xref linkend="vala"/> and
+      <xref linkend="libsecret"/> and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gnome-icon-theme"/>,
       <xref linkend="gtk-vnc"/>,
-      <xref linkend="libgnome-keyring"/>,
-      <xref linkend="vala"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="yelp-xsl"/>
     </para>
 @z
@@ -99,13 +95,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="optional">
-      <xref linkend="telepathy-glib"/> and
+      <xref linkend="telepathy-glib"/>,
+      <xref linkend="vala"/> and
       <xref linkend="vte"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="optional">
       <xref linkend="telepathy-glib"/>,
+      <xref linkend="vala"/>,
       <xref linkend="vte"/>
     </para>
 @z

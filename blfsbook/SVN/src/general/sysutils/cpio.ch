@@ -94,7 +94,7 @@
 @z
 
 @x
-    <para>If you have <!-- <xref linkend="tetex"/> or --><xref linkend="texlive"/>
+    <para>If you have <xref linkend="texlive"/>
     installed and wish to create PDF or Postscript documentation, issue one or
     both of the following commands:</para>
 @y

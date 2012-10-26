@@ -89,8 +89,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
-      <xref linkend="libxslt"/> and
+      <xref linkend="docbook-xsl"/> and
       <xref linkend="python2"/>
     </para>
 @y
@@ -98,7 +97,6 @@
     <para role="required">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="libxslt"/>,
       <xref linkend="python2"/>
     </para>
 @z

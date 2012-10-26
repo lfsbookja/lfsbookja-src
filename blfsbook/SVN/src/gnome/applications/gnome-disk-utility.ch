@@ -79,7 +79,9 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="intltool"/> and
+      <xref linkend="intltool"/>,
+      <xref linkend="libsecret"/>,
+      <xref linkend="libpwquality"/> and
       <xref linkend="udisks2"/>
     </para>
 @y
@@ -87,6 +89,8 @@
     <para role="required">
       <xref linkend="gtk3"/>,
       <xref linkend="intltool"/>,
+      <xref linkend="libsecret"/>,
+      <xref linkend="libpwquality"/>,
       <xref linkend="udisks2"/>
     </para>
 @z
@@ -138,14 +142,14 @@
 
 @x
         <seg>
-          palimpsest
+          gnome-disk-image-mounter and gnome-disks
         </seg>
         <seg>
           /usr/share/gnome-disk-utility
         </seg>
 @y
         <seg>
-          palimpsest
+          gnome-disk-image-mounter, gnome-disks
         </seg>
         <seg>
           /usr/share/gnome-disk-utility
@@ -158,8 +162,16 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x palimpsest
-            is a tool used to manage disk drives and removable media.
+@x gnome-disk-image-mounter
+            is used to set up disk images.
 @y
-            is a tool used to manage disk drives and removable media.
+            is used to set up disk images.
+@z
+
+@x gnome-disks
+            is used to to inspect, format, partition and configure disks
+            and block devices.
+@y
+            is used to to inspect, format, partition and configure disks
+            and block devices.
 @z

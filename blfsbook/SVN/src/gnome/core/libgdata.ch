@@ -23,7 +23,7 @@
       The <application>libgdata</application> package is a GLib-based
       library for accessing online service APIs using the GData protocol, most
       notably, Google's services. It provides APIs to access the common Google
-      services, and has full asynchronous support.
+      services and has full asynchronous support.
 @y
       <application>libgdata</application> パッケージは、GData プロトコルを利用したオンラインサービス API にアクセスするための GLib ベースのライブラリを提供します。
       そのようなサービスとして特に Google のサービスがあります。
@@ -81,26 +81,30 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="liboauth"/> and
-      <xref linkend="libsoup"/>
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="libsoup"/> and
+      <xref linkend="liboauth"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="liboauth"/>,
-      <xref linkend="libsoup"/>
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="libsoup"/>,
+      <xref linkend="liboauth"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -136,13 +140,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command> Note that
-      the tests need network access, will generate network traffic for uploading
-      and downloading, and seem to stall when testing Connection: Keep-Alive.
+      To test the results, issue: <command>make check</command>. Note that
+      the tests need network access.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストの際にはネットワークアクセスが行われ、アップロード、ダウンロードのネットワークトラフィックが発生します。
-      ネットワークアクセスを行うテストの Keep-Alive では、ネットワークアクセスが不調になるようなので、注意してください。
+      テストの際にはネットワークアクセスが必要です。
 @z
 
 @x

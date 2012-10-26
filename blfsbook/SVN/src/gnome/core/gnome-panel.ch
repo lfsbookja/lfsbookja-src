@@ -20,10 +20,11 @@
 @z
 
 @x
-      The <application>GNOME Panel</application> package
-      contains hooks to the menu sub-system and the applet sub-system.
+      <application>GNOME Panel</application> is an area on the desktop from
+      which you can run applications and applets, and perform other tasks.
 @y
-      <application>GNOME Panel</application> パッケージは、メニューやアプレットシステムに対してのフック関数を提供します。
+      <application>GNOME Panel</application> is an area on the desktop from
+      which you can run applications and applets, and perform other tasks.
 @z
 
 @x
@@ -77,22 +78,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-desktop"/>,
-      <xref linkend="gnome-menus"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libgweather"/>,
-      <xref linkend="librsvg"/> and
-      <xref linkend="libwnck"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
+      <xref linkend="dconf"/>,
+      <xref linkend="GConf"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-menus"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="libgweather"/>,
       <xref linkend="librsvg"/>,
-      <xref linkend="libwnck"/>
+      <xref linkend="libwnck"/> and
+      <xref linkend="yelp-xsl"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="dconf"/>,
+      <xref linkend="GConf"/>,
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="gnome-menus"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="libgweather"/>,
+      <xref linkend="librsvg"/>,
+      <xref linkend="libwnck"/>,
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 
@@ -101,9 +108,8 @@
     <para role="recommended">
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="NetworkManager"/>,
-      <xref linkend="telepathy-glib"/> and
-      <xref linkend="rarian"/>
+      <xref linkend="NetworkManager"/> and
+      <xref linkend="telepathy-glib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -111,8 +117,7 @@
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="NetworkManager"/>,
-      <xref linkend="telepathy-glib"/>,
-      <xref linkend="rarian"/>
+      <xref linkend="telepathy-glib"/>
     </para>
 @z
 
@@ -176,20 +181,6 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
-      This parameter causes the libexec files to be installed in the preferred
-      location of <filename
-      class="directory">/usr/lib/gnome-applets</filename> instead of
-      <filename class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/gnome-applets</parameter>:
-      This parameter causes the libexec files to be installed in the preferred
-      location of <filename
-      class="directory">/usr/lib/gnome-applets</filename> instead of
-      <filename class="directory">/usr/libexec</filename>.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -215,14 +206,14 @@
         <seg>
           /usr/include/gnome-panel-4.0,
           /usr/lib/gnome-applets,
-          /usr/share/gnome/help/{clock,fish},
-          /usr/share/gnome-panel,
-          /usr/share/gtk-doc/html/panel-applet-4.0 and
-          /usr/share/omf/{clock,fish}
+          /usr/share/gnome-applets,
+          /usr/share/gtk-doc/html/panel-applet-4.0,
+          /usr/share/help/*/clock and
+          /usr/share/help/*/fish
         </seg>
 @y
         <seg>
-          gnome-desktop-item-edit, gnome-panel and panel-test-applets
+          gnome-desktop-item-edit, gnome-panel, panel-test-applets
         </seg>
         <seg>
           libpanel-applet-4.so
@@ -230,10 +221,10 @@
         <seg>
           /usr/include/gnome-panel-4.0,
           /usr/lib/gnome-applets,
-          /usr/share/gnome/help/{clock,fish},
-          /usr/share/gnome-panel,
-          /usr/share/gtk-doc/html/panel-applet-4.0 and
-          /usr/share/omf/{clock,fish}
+          /usr/share/gnome-applets,
+          /usr/share/gtk-doc/html/panel-applet-4.0,
+          /usr/share/help/*/clock,
+          /usr/share/help/*/fish
         </seg>
 @z
 

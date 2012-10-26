@@ -188,7 +188,7 @@
         <seg>
           /usr/include/libsoup-2.4,
           /usr/include/libsoup-gnome-2.4 and
-          /usr/share/gtk-doc/html/libsoup-2.4.
+          /usr/share/gtk-doc/html/libsoup-2.4
         </seg>
 @y
         <seg>
@@ -197,7 +197,7 @@
         <seg>
           /usr/include/libsoup-2.4,
           /usr/include/libsoup-gnome-2.4,
-          /usr/share/gtk-doc/html/libsoup-2.4.
+          /usr/share/gtk-doc/html/libsoup-2.4
         </seg>
 @z
 

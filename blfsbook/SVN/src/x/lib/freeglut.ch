@@ -14,23 +14,21 @@
 @z
 
 @x
-    <title>Introduction to freeglut</title>
+    <title>Introduction to Freeglut</title>
 @y
-    <title>&IntroductionTo1;freeglut&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Freeglut&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>freeglut</application> is intended to be a 100%
-    compatible, completely opensourced clone of the GLUT library. GLUT is a
-    window system independent toolkit for writing OpenGL programs, implementing
-    a simple windowing API, which makes learning about and exploring OpenGL
-    programming very easy.</para>
+      <application>Freeglut</application> is intended to be a 100%
+      compatible, completely opensourced clone of the GLUT library.
+      GLUT is a window system independent toolkit for writing OpenGL
+      programs, implementing a simple windowing API, which makes
+      learning about and exploring OpenGL programming very easy.
 @y
-    <para>
-    <application>freeglut</application> は GLUT ライブラリの 100% 互換ライブラリであり、オープンソースとして提供されています。
-    GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL プログラムや単純なウィンドウ API を構築するためのツールキットです。
-    このライブラリを利用すれば、OpenGL プログラミングの学習が容易となります。
-    </para>
+      <application>Freeglut</application> は GLUT ライブラリの 100% 互換ライブラリであり、オープンソースとして提供されています。
+      GLUT ライブラリは、ウィンドウシステムに依存せずに OpenGL プログラムや単純なウィンドウ API を構築するためのツールキットです。
+      このライブラリを利用すれば、OpenGL プログラミングの学習が容易となります。
 @z
 
 @x
@@ -40,91 +38,89 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&freeglut-download-http;"/></para>
+          Download (HTTP): <ulink url="&freeglut-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&freeglut-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&freeglut-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&freeglut-download-ftp;"/></para>
+          Download (FTP): <ulink url="&freeglut-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&freeglut-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&freeglut-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &freeglut-md5sum;</para>
+          Download MD5 sum: &freeglut-md5sum;
 @y
-        <para>&Download; MD5 sum: &freeglut-md5sum;</para>
+          &Download; MD5 sum: &freeglut-md5sum;
 @z
 
 @x
-        <para>Download size: &freeglut-size;</para>
+          Download size: &freeglut-size;
 @y
-        <para>&DownloadSize;: &freeglut-size;</para>
+          &DownloadSize;: &freeglut-size;
 @z
 
 @x
-        <para>Estimated disk space required: &freeglut-buildsize;</para>
+          Estimated disk space required: &freeglut-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &freeglut-buildsize;</para>
+          &Estimateddiskspacerequired;: &freeglut-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &freeglut-time;</para>
+          Estimated build time: &freeglut-time;
 @y
-        <para>&Estimatedbuildtime;: &freeglut-time;</para>
+          &Estimatedbuildtime;: &freeglut-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">freeglut Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Freeglut Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;freeglut&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Freeglut&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="mesalib"/></para>
+    <para role="required">
+      <xref linkend="mesalib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="mesalib"/></para>
+    <para role="required">
+      <xref linkend="mesalib"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/freeglut"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/freeglut"/></para>
 @z
 
 @x
-    <title>Installation of freeglut</title>
+    <title>Installation of Freeglut</title>
 @y
-    <title>&InstallationOf1;freeglut&InstallationOf2;</title>
+    <title>&InstallationOf1;Freeglut&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>freeglut</application> by running the
-    following commands:</para>
+      Install <application>Freeglut</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>freeglut</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>freeglut</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -134,34 +130,25 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: This option stops it compiling a
-    static version of the library.</para>
-@y
-    <para><option>--disable-static</option>:
-    このオプションはスタティックライブラリをビルドしないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Library</segtitle>
 @y
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>libglut.so</seg>
-        <seg><replaceable>&lt;$XORG_PREFIX&gt;</replaceable>/share/doc/freeglut-&freeglut-version;</seg>
+        <seg>
+          libglut.so
+        </seg>
 @y
-        <seg>libglut.so</seg>
-        <seg><replaceable>&lt;$XORG_PREFIX&gt;</replaceable>/share/doc/freeglut-&freeglut-version;</seg>
+        <seg>
+          libglut.so
+        </seg>
 @z
 
 @x
@@ -170,11 +157,9 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libglut.{so,a}
-          <para>contains functions that implement the OpenGL Utility
-          Toolkit.</para>
+@x libglut.so
+            contains functions that implement the OpenGL Utility
+            Toolkit.
 @y
-          <para>
-          OpenGL ユーティリティーツールキット (OpenGL Utility Toolkit) を実装した関数を提供します。
-          </para>
+            OpenGL ユーティリティーツールキット (OpenGL Utility Toolkit) を実装した関数を提供します。
 @z

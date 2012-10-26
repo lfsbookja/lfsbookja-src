@@ -155,9 +155,9 @@ CHANGE_FILES = \
 	cairo.ch                \
 	cairomm.ch              \
 	clutter.ch              \
-	clutter-gst.ch          \
 	clutter-gst2.ch         \
 	clutter-gtk.ch          \
+	colord-gtk.ch           \
 	cogl.ch                 \
 	freeglut.ch             \
 	gdk-pixbuf.ch           \
@@ -171,9 +171,7 @@ CHANGE_FILES = \
 	hicolor-icon-theme.ch   \
 	lib.ch                  \
 	libnotify.ch            \
-	libsexy.ch              \
 	libxklavier.ch          \
-	mx.ch                   \
 	notification-daemon.ch  \
 	pango.ch                \
 	pangomm.ch              \
@@ -385,9 +383,9 @@ atkmm.xml:                $(BOOKdir)/$@ $(srcdir)/atkmm.ch
 cairo.xml:                $(BOOKdir)/$@ $(srcdir)/cairo.ch
 cairomm.xml:              $(BOOKdir)/$@ $(srcdir)/cairomm.ch
 clutter.xml:              $(BOOKdir)/$@ $(srcdir)/clutter.ch
-clutter-gst.xml:          $(BOOKdir)/$@ $(srcdir)/clutter-gst.ch
 clutter-gst2.xml:         $(BOOKdir)/$@ $(srcdir)/clutter-gst2.ch
 clutter-gtk.xml:          $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
+colord-gtk.xml:           $(BOOKdir)/$@ $(srcdir)/colord-gtk.ch
 cogl.xml:                 $(BOOKdir)/$@ $(srcdir)/cogl.ch
 freeglut.xml:             $(BOOKdir)/$@ $(srcdir)/freeglut.ch
 gdk-pixbuf.xml:           $(BOOKdir)/$@ $(srcdir)/gdk-pixbuf.ch
@@ -405,10 +403,8 @@ hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
 #	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 #	cp -p $(BOOKdir)/$@{.orig,}
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
-libnotify.xml: $(BOOKdir)/$@ $(srcdir)/libnotify.ch
-libsexy.xml: $(BOOKdir)/$@ $(srcdir)/libsexy.ch
+libnotify.xml:            $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
-mx.xml:                   $(BOOKdir)/$@ $(srcdir)/mx.ch
 notification-daemon.xml:  $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
 pangomm.xml:              $(BOOKdir)/$@ $(srcdir)/pangomm.ch

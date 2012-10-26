@@ -19,6 +19,7 @@ CHANGE_FILES = \
 	fcron.ch         \
 	gpm.ch           \
 	hdparm.ch        \
+	ibus.ch          \
 	initdtools.ch    \
 	libarchive.ch    \
 	lm_sensors.ch    \
@@ -70,6 +71,7 @@ eject.xml:         $(BOOKdir)/$@ $(srcdir)/eject.ch
 fcron.xml:         $(BOOKdir)/$@ $(srcdir)/fcron.ch
 gpm.xml:           $(BOOKdir)/$@ $(srcdir)/gpm.ch
 hdparm.xml:        $(BOOKdir)/$@ $(srcdir)/hdparm.ch
+ibus.xml:          $(BOOKdir)/$@ $(srcdir)/ibus.ch
 initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
 libarchive.xml:    $(BOOKdir)/$@ $(srcdir)/libarchive.ch
 lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch

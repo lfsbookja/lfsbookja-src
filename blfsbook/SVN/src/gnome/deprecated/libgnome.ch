@@ -151,7 +151,7 @@
     <para><parameter>--localstatedir=/var/lib</parameter>: This
     parameter sets <envar>LIBGNOME_LOCALSTATEDIR</envar> to
     <filename class='directory'>/var/lib</filename> instead
-    of <filename class='directory'>$GNOME_PREFIX/var</filename>
+    of <filename class='directory'>/usr/var</filename>
     to synchronize with the <application>GNOME Games</application>
     installation and properly record high scores in
     <filename class='directory'>/var/lib/games</filename>.</para>
@@ -159,7 +159,7 @@
     <para>
     <parameter>--localstatedir=/var/lib</parameter>:
     このパラメーターは、環境変数 <envar>LIBGNOME_LOCALSTATEDIR</envar> を <filename
-    class='directory'>$GNOME_PREFIX/var</filename> ではなく <filename
+    class='directory'>/usr/var</filename> ではなく <filename
     class='directory'>/var/lib</filename> に設定します。
     これは <application>GNOME Games</application> との同期をとるためであり、ハイスコアの記録ファイルを <filename
     class='directory'>/var/lib/games</filename> ディレクトリに保存するためです。
@@ -195,13 +195,14 @@
         <seg>gnome-open</seg>
         <seg>libgnome-2.{so,a} and the libmoniker_extra_2.{so,a} (bonobo
         library)</seg>
-        <seg>&gnome-etc-dir;/sound/events,
+        <seg>&gnome-old-etc-dir;/sound/events,
         <envar>$GNOME_PREFIX</envar>/{include/libgnome-2.0/libgnome,
         share/gtk-doc/html/libgnome}</seg>
 @y
         <seg>gnome-open</seg>
-        <seg>libgnome-2.{so,a} libmoniker_extra_2.{so,a} (bonobo ライブラリ)</seg>
-        <seg>&gnome-etc-dir;/sound/events,
+        <seg>libgnome-2.{so,a}, libmoniker_extra_2.{so,a} (bonobo
+        ライブラリ)</seg>
+        <seg>&gnome-old-etc-dir;/sound/events,
         <envar>$GNOME_PREFIX</envar>/{include/libgnome-2.0/libgnome,
         share/gtk-doc/html/libgnome}</seg>
 @z

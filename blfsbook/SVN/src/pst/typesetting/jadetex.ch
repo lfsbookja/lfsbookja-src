@@ -152,13 +152,13 @@
 @x
     <para>First, as the <systemitem class="username">root</systemitem> user,
     make some required modifications to the <filename>texmf.cnf</filename>
-    file already installed on the system by the <application>teTeX</application>
+    file already installed on the system by the <application>texlive</application>
     package, then build a new <filename>latex.fmt</filename> file using the
     following commands:</para>
 @y
     <para>
     まずは <systemitem class="username">root</systemitem> ユーザーになります。
-    <application>teTeX</application> パッケージによって既にインストールされている <filename>texmf.cnf</filename> ファイルに対して若干の修正を行います。
+    <application>texlive</application> パッケージによって既にインストールされている <filename>texmf.cnf</filename> ファイルに対して若干の修正を行います。
     そして <filename>latex.fmt</filename> ファイルをもう一度生成するために、以下を実行します。
     </para>
 @z
@@ -211,7 +211,7 @@
     <para><command>sed -i -e ... -e ... $(kpsewhich texmf.cnf)</command>:
     This command uses <command>kpsewhich</command> to locate the installed
     <filename>texmf.cnf</filename>. The first change is used to modify the
-    header of the file so that if <application>teTeX</application> is upgraded,
+    header of the file so that if <application>texlive</application> is upgraded,
     the file won't get overwritten. The next change adds a parameter to
     increase ConTeXt's memory size to accommodate
     <application>JadeTeX</application>.</para>
@@ -220,7 +220,7 @@
     <command>sed -i -e ... -e ... $(kpsewhich texmf.cnf)</command>:
     このコマンドは <command>kpsewhich</command> コマンドを使って、既にインストールされている <filename>texmf.cnf</filename> ファイルを探し出します。
     そして一つめの修正として、そのファイルのヘッダー部分を書き換えます。
-    これは <application>teTeX</application> がアップグレードされても、このファイルを上書き更新しないようにするものです。
+    これは <application>texlive</application> がアップグレードされても、このファイルを上書き更新しないようにするものです。
     二つめの修正は ConTeXt に対しメモリサイズの指定パラメーターの値を増やして、<application>JadeTeX</application> 用に変更します。
     </para>
 @z
@@ -241,19 +241,19 @@
 @x
     <para><command>mktexlsr; ln -v -sf tex ...; ln -v -sf pdftex ...</command>:
     The <application>JadeTeX</application> programs are actually just symlinks
-    to the <application>teTeX</application> programs. <command>mktexlsr</command>
-    updates <application>teTeX</application>'s <filename>ls-R</filename> databases
+    to the <application>texlive</application> programs. <command>mktexlsr</command>
+    updates <application>texlive</application>'s <filename>ls-R</filename> databases
     used by the <filename class='libraryfile'>libkpathsea</filename> library so
-    that <application>teTeX</application> knows to use the
+    that <application>texlive</application> knows to use the
     <application>JadeTeX</application> <filename>.fmt</filename> files when
     <command>jadetex</command> or <command>pdfjadetex</command> is called.</para>
 @y
     <para>
     <command>mktexlsr; ln -v -sf tex ...; ln -v -sf pdftex ...</command>:
-    <application>JadeTeX</application> プログラムは、実際には <application>teTeX</application> プログラムへのシンボリックとなっています。
-    <command>mktexlsr</command> は <application>teTeX</application> のデータベースファイル <filename>ls-R</filename> を更新するもので、<filename
+    <application>JadeTeX</application> プログラムは、実際には <application>texlive</application> プログラムへのシンボリックとなっています。
+    <command>mktexlsr</command> は <application>texlive</application> のデータベースファイル <filename>ls-R</filename> を更新するもので、<filename
     class='libraryfile'>libkpathsea</filename> ライブラリが用いられています。
-    これを行うことで、<command>jadetex</command> や <command>pdfjadetex</command> が実行された際に、<application>teTeX</application> が <application>JadeTeX</application> の <filename>.fmt</filename> ファイルを認識できるようになります。
+    これを行うことで、<command>jadetex</command> や <command>pdfjadetex</command> が実行された際に、<application>texlive</application> が <application>JadeTeX</application> の <filename>.fmt</filename> ファイルを認識できるようになります。
     </para>
 @z
 

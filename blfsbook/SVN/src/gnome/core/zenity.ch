@@ -84,28 +84,26 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/> and
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/> and
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libnotify"/> and
-      <xref linkend="rarian"/>
+      <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libnotify"/>,
-      <xref linkend="rarian"/>
+      <xref linkend="libnotify"/>
     </para>
 @z
 
@@ -153,12 +151,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -177,7 +169,7 @@
           gdialog and zenity
         </seg>
         <seg>
-          /usr/share/gnome/help/zenity and
+          /usr/share/help/*/zenity and
           /usr/share/zenity
         </seg>
 @y
@@ -185,7 +177,7 @@
           gdialog, zenity
         </seg>
         <seg>
-          /usr/share/gnome/help/zenity,
+          /usr/share/help/*/zenity,
           /usr/share/zenity
         </seg>
 @z

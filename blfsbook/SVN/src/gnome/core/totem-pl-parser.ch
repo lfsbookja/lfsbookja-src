@@ -111,7 +111,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libgcrypt"/> and
-      <ulink url="http://sourceforge.net/projects/quvi">Quvi</ulink>
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -119,7 +119,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libgcrypt"/>,
-      <ulink url="http://sourceforge.net/projects/quvi">Quvi</ulink>
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi</ulink>
     </para>
 @z
 

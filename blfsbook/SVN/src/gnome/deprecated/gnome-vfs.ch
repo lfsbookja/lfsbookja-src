@@ -285,7 +285,7 @@
         libfile.{so,a}, libftp.{so,a}, libgzip.{so,a}, libhttp.{so,a},
         libnetwork.{so,a}, libnntp.{so,a}, libsftp.{so,a}, libtar.{so,a},
         libvfs-test.{so,a}, and libgnomevfs-2.{so,a}</seg>
-        <seg>&gnome-etc-dir;/gnome-vfs-2.0/modules,
+        <seg>&gnome-old-etc-dir;/gnome-vfs-2.0/modules,
         <envar>$GNOME_PREFIX</envar>/{include/{gnome-vfs-2.0/libgnomevfs,
         gnome-vfs-module-2.0/libgnomevfs},lib/gnome-vfs-2.0/{include,modules},
         share/gtk-doc/html/gnome-vfs-2.0}</seg>
@@ -297,7 +297,7 @@
         libfile.{so,a}, libftp.{so,a}, libgzip.{so,a}, libhttp.{so,a},
         libnetwork.{so,a}, libnntp.{so,a}, libsftp.{so,a}, libtar.{so,a},
         libvfs-test.{so,a}, libgnomevfs-2.{so,a}</seg>
-        <seg>&gnome-etc-dir;/gnome-vfs-2.0/modules,
+        <seg>&gnome-old-etc-dir;/gnome-vfs-2.0/modules,
         <envar>$GNOME_PREFIX</envar>/{include/{gnome-vfs-2.0/libgnomevfs,
         gnome-vfs-module-2.0/libgnomevfs},lib/gnome-vfs-2.0/{include,modules},
         share/gtk-doc/html/gnome-vfs-2.0}</seg>

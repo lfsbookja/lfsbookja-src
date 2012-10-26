@@ -83,13 +83,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
+      <xref linkend="gtk3"/> or
+      <xref linkend="gtk2"/> and
       <xref linkend="icon-naming-utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk3"/> または
+      <xref linkend="gtk2"/>,
       <xref linkend="icon-naming-utils"/>
     </para>
 @z

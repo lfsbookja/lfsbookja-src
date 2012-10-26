@@ -88,11 +88,11 @@
 
 @x
     <bridgehead renderas="sect4">Optional to Build Documentation</bridgehead>
-    <para role="optional"><!-- <xref linkend="tetex"/> or -->
+    <para role="optional">
     <xref linkend="texlive"/></para>
 @y
     <bridgehead renderas="sect4">任意; ドキュメント生成時</bridgehead>
-    <para role="optional"><!-- <xref linkend="tetex"/> or -->
+    <para role="optional">
     <xref linkend="texlive"/></para>
 @z
 
@@ -118,13 +118,13 @@
 @z
 
 @x
-    <para>If you have <application>teTeX</application> or
+    <para>If you have 
     <application>Live TeX</application> installed and wish to
     build alternate forms of the documentation, issue the following
     command:</para>
 @y
     <para>
-    <application>teTeX</application> または <application>Live TeX</application> をインストール済で、ドキュメントを生成したい場合は、以下のコマンドを実行します。
+    <application>Live TeX</application> をインストール済で、ドキュメントを生成したい場合は、以下のコマンドを実行します。
     </para>
 @z
 

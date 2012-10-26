@@ -96,14 +96,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
-      <xref linkend="gst10-plugins-bad"/>
+      <xref linkend="gobject-introspection"/><!-- and
+      <xref linkend="gst10-plugins-bad"/> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gst10-plugins-bad"/>
+      <xref linkend="gobject-introspection"/><!-- and
+      <xref linkend="gst10-plugins-bad"/> -->
     </para>
 @z
 

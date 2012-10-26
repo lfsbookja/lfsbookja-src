@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY samba3-time          "2.2 SBU (add about 2.9 SBU to run the test suite)">
-@y
-  <!ENTITY samba3-time          "2.2 SBU (テストスイート実行の場合は 約 2.9 SBU 追加)">
-@z
-
-@x
     <title>Introduction to Samba</title>
 @y
     <title>&IntroductionTo1;Samba&IntroductionTo2;</title>
@@ -107,13 +101,10 @@
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <xref linkend="libcap2"/>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-    <!-- <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
-    (required to build the <command>cifs.upcall</command> program), -->
     <xref linkend="avahi"/>,
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
     used by the test suite)</para>
-
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="popt"/>,
@@ -128,8 +119,6 @@
     <ulink url="http://tdb.samba.org/">tdb</ulink> (version 1.2.1),
     <xref linkend="libcap2"/>,
     <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-    <!-- <ulink url="http://people.redhat.com/dhowells/keyutils/">keyutils</ulink>
-    (required to build the <command>cifs.upcall</command> program), -->
     <xref linkend="avahi"/>,
     <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
     and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally

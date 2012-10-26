@@ -184,14 +184,14 @@
 @x
       If you did not pass the <option>--enable-gtk-doc</option> parameter
       to the <command>configure</command> script, install the API documentation
-      to the <filename class='directory'>/usr/share/gtk-doc/html/gnutls</filename> 
+      to the <filename class="directory">/usr/share/gtk-doc/html/gnutls</filename> 
       directory using the following command as the 
       <systemitem class="username">root</systemitem> user:
 @y
-    <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定しなかった場合は、<systemitem
-    class="username">root</systemitem> ユーザーになって以下のコマンドを実行して API ドキュメントをインストールします。
-    ドキュメントは <filename
-    class='directory'>/usr/share/gtk-doc/html/gnutls</filename> ディレクトリにインストールされます。
+      <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定しなかった場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行して API ドキュメントをインストールします。
+      ドキュメントは <filename
+      class='directory'>/usr/share/gtk-doc/html/gnutls</filename> ディレクトリにインストールされます。
 @z
 
 @x
@@ -225,8 +225,7 @@
           libgnutls.so, libgnutls-openssl.so, and libgnutlsxx.so
         </seg>
         <seg>
-          /usr/include/gnutls,
-          /usr/share/doc/gnutls-&gnutls-version; and
+          /usr/include/gnutls and
           /usr/share/gtk-doc/html/gnutls
         </seg>
 @y
@@ -239,7 +238,6 @@
         </seg>
         <seg>
           /usr/include/gnutls,
-          /usr/share/doc/gnutls-&gnutls-version;,
           /usr/share/gtk-doc/html/gnutls
         </seg>
 @z

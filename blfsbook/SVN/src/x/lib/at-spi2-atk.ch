@@ -20,11 +20,11 @@
 @z
 
 @x
-      The <application>At-Spi2 Atk</application> package is a GTK+ module that
-      bridges ATK to D-Bus At-Spi2.
+      The <application>At-Spi2 Atk</application> package contains a library
+      that bridges <application>ATK</application> to At-Spi2 D-Bus service.
 @y
-      The <application>At-Spi2 Atk</application> package is a GTK+ module that
-      bridges ATK to D-Bus At-Spi2.
+      The <application>At-Spi2 Atk</application> package contains a library
+      that bridges <application>ATK</application> to At-Spi2 D-Bus service.
 @z
 
 @x
@@ -129,18 +129,26 @@
 @z
 
 @x
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          libatk-bridge.so
+          libatk-bridge.so and libatk-bridge-2.0.so
+        </seg>
+        <seg>
+          /usr/include/at-spi2-atk
         </seg>
 @y
         <seg>
-          libatk-bridge.so
+          libatk-bridge.so, libatk-bridge-2.0.so
+        </seg>
+        <seg>
+          /usr/include/at-spi2-atk
         </seg>
 @z
 
@@ -151,7 +159,15 @@
 @z
 
 @x libatk-bridge.so
-            is the Accessibility Toolkit GTK+ module.
+            is the Accessibility Toolkit <application>GTK+</application> module.
 @y
-            is the Accessibility Toolkit GTK+ module.
+            is the Accessibility Toolkit <application>GTK+</application> module.
+@z
+
+@x libatk-bridge-2.0.so
+            Contains the common functions used by <application>GTK+</application>
+            Accessibility Toolkit Bridge.
+@y
+            Contains the common functions used by <application>GTK+</application>
+            Accessibility Toolkit Bridge.
 @z

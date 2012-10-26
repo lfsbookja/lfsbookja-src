@@ -77,14 +77,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-desktop"/> and
-      <xref linkend="shared-mime-info"/>
+      <xref linkend="gnome-desktop"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-desktop"/>,
-      <xref linkend="shared-mime-info"/>
+      <xref linkend="gnome-desktop"/>
     </para>
 @z
 
@@ -140,11 +138,9 @@
 @z
 
 @x
-      This package needs to be installed before its testsuite can run (or,
-      perhaps, you can run the tests if a previous version is already installed).
+      This package needs to be installed before its testsuite can be run.
 @y
       本パッケージはまずインストールしてからでないと、テストスイートを実行することはできません。
-      (あるいは本パッケージの古いバージョンが既にインストールされていれば、テスト実行することはできます。)
 @z
 
 @x
@@ -154,10 +150,9 @@
 @z
 
 @x
-      If you wish to run the testsuite, as a normal unprivileged user issue:
-      <command>make check</command>.
+      To test the results, issue: <command>make check</command>.
 @y
-      テストスイートを実行する場合は、一般ユーザーになって <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -167,22 +162,11 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/nautilus</parameter>: This ensures
-      that the <filename>nautilus-convert-metadata</filename> is
-      installed in a location consistent with the FHS, instead of in
-      <filename class="directory">/usr/libexec/</filename>.
-@y
-      <command>--libexecdir=/usr/lib/nautilus</command> :
-      これは <filename>nautilus-convert-metadata</filename> のインストール先を <filename
-      class="directory">/usr/libexec/</filename> ではなく、FHS に適合するディレクトリとします。
-@z
-
-@x
-      <option>--disable-packagekit</option>: This parameter disables use
+      <option>--disable-packagekit</option>: This switch disables use
       of PackageKit which isn't suitable for BLFS.
 @y
       <option>--disable-packagekit</option>:
-      本パラメーターは BLFS には含めていない PackageKit を利用しないようにします。
+      本スイッチは BLFS には含めていない PackageKit を利用しないようにします。
 @z
 
 @x
@@ -211,6 +195,7 @@
         <seg>
           /usr/include/nautilus,
           /usr/lib/nautilus,
+          /usr/share/gnome-shell/search-providers,
           /usr/share/nautilus and
           /usr/share/gtk-doc/html/libnautilus-extension
         </seg>
@@ -224,6 +209,7 @@
         <seg>
           /usr/include/nautilus,
           /usr/lib/nautilus,
+          /usr/share/gnome-shell/search-providers,
           /usr/share/nautilus,
           /usr/share/gtk-doc/html/libnautilus-extension
         </seg>

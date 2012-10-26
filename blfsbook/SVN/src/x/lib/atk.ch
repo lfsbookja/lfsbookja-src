@@ -133,9 +133,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      This package does not come with a testsuite.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      &notTestSuite;
 @z
 
 @x

@@ -92,24 +92,26 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gst-plugins-base"/>
+      <xref linkend="gst10-plugins-base"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gst-plugins-base"/>
+      <xref linkend="gst10-plugins-base"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gst-plugins-base"/>,
       <xref linkend="gtk-doc"/> and
       <ulink url="http://gupnp.org/">gupnp-igd</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gst-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="http://gupnp.org/">gupnp-igd</ulink>
     </para>
@@ -174,7 +176,8 @@
           stunbdc and stund
         </seg>
         <seg>
-          libgstnice.so and libnice.so
+          libnice.so and libgstnice.so
+          (<application>GStreamer</application> Plugin)
         </seg>
         <seg>
           /usr/include/nice,
@@ -186,7 +189,8 @@
           stunbdc, stund
         </seg>
         <seg>
-          libgstnice.so, libnice.so
+          libnice.so, libgstnice.so
+          (<application>GStreamer</application> プラグイン)
         </seg>
         <seg>
           /usr/include/nice,
@@ -211,12 +215,6 @@
             is a Session Traversal for NAT (STUN) daemon.
 @y
             is a Session Traversal for NAT (STUN) daemon.
-@z
-
-@x libgstnice.so
-            is the <application>GStreamer</application> module.
-@y
-            <application>GStreamer</application> モジュール。
 @z
 
 @x libnice.so

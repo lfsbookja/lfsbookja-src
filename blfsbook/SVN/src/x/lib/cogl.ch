@@ -175,10 +175,8 @@
           libcogl-pango.so and libcogl.so
        </seg>
         <seg>
-         /usr/include/cogl,
-         /usr/share/cogl,
-         /usr/share/gtk-doc/html/cogl and
-         /usr/share/gtk-doc/html/cogl-2.0-experimental
+         /usr/include/cogl and
+         /usr/share/cogl
        </seg>
 @y
         <seg>
@@ -186,9 +184,7 @@
        </seg>
         <seg>
          /usr/include/cogl,
-         /usr/share/cogl,
-         /usr/share/gtk-doc/html/cogl,
-         /usr/share/gtk-doc/html/cogl-2.0-experimental
+         /usr/share/cogl
        </seg>
 @z
 

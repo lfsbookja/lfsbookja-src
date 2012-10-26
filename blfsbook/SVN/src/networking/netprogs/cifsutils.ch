@@ -82,13 +82,29 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="samba3"/></para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="samba3"/></para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="mitkrb"/> and
-    <xref linkend="keyutils"/></para>
+    <para role="optional">
+      <xref linkend="keyutils"/>,
+      <xref linkend="libcap2"/>, and
+      <xref linkend="mitkrb"/> and
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="mitkrb"/>,
-    <xref linkend="keyutils"/></para>
+    <para role="optional">
+      <xref linkend="keyutils"/>,
+      <xref linkend="libcap2"/>,
+      <xref linkend="mitkrb"/> and
+    </para>
 @z
 
 @x
@@ -145,25 +161,29 @@
 @z
 
 @x
-        <seg>cifs.idmap, getcifsacl, mount.cifs, and setcifsacl</seg>
+        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs, 
+        and setcifsacl</seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>cifs.idmap, getcifsacl, mount.cifs, setcifsacl</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>cifs.idmap, cifs.upcall, cifscreds, getcifsacl, mount.cifs, 
+        setcifsacl</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x cifs.idmap
           <para>is a userspace helper program for the linux CIFS client
           filesystem. There are a number of activities that the kernel cannot
           easily do itself. This program is a callout program that does these
-          things for the kernel and then returns the result.</para>
+          things for the kernel and then returns the result. It is not intended 
+          to be run from the command-line.</para>
 @y
           <para>is a userspace helper program for the linux CIFS client
           filesystem. There are a number of activities that the kernel cannot
           easily do itself. This program is a callout program that does these
-          things for the kernel and then returns the result.</para>
+          things for the kernel and then returns the result. It is not intended 
+          to be run from the command-line.</para>
 @z
 
 @x getcifsacl

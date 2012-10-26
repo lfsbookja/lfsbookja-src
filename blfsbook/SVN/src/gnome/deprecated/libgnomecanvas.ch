@@ -172,11 +172,11 @@
 @x
         <seg>None</seg>
         <seg>libgnomecanvas-2.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomecanvas-2.0/libgnomecanvas,
+        <seg>/usr/{include/libgnomecanvas-2.0/libgnomecanvas,
         share/gtk-doc/html/libgnomecanvas}</seg>
 @y
         <seg>&None;</seg>
         <seg>libgnomecanvas-2.{so,a}</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomecanvas-2.0/libgnomecanvas,
+        <seg>/usr/{include/libgnomecanvas-2.0/libgnomecanvas,
         share/gtk-doc/html/libgnomecanvas}</seg>
 @z

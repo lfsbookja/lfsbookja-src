@@ -116,7 +116,7 @@
 
 @x
     <para>If you wish to build alternate formats of the documentation, you
-    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/> installed,
+    must have <xref linkend="texlive"/> installed,
     then issue the following commands:</para>
 @y
     <para>

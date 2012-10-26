@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "September 14th, &year;">
+<!ENTITY releasedate  "October 25th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20120915">
+<!ENTITY jversion     "20121026">
 <!ENTITY jratio       "52.7 &percnt;">
 @z
 
@@ -68,6 +68,12 @@
 <!ENTITY DownloadSize "ダウンロードサイズ">
 <!ENTITY LessThan1    "">
 <!ENTITY LessThan2    " 以下">
+<!ENTITY LinkTo1      "">
+<!ENTITY LinkTo2      " へのリンク">
+<!ENTITY SymLinkTo1   "">
+<!ENTITY SymLinkTo2   " へのシンボリックリンク">
+<!ENTITY HardLinkTo1  "">
+<!ENTITY HardLinkTo2  " へのハードリンク">
 <!ENTITY None         "なし">
 <!ENTITY Module       "モジュール">
 <!ENTITY Bindings     "バインディング">
@@ -187,63 +193,71 @@
 @z
 
 @x
-<!ENTITY as_root              "<note><para>When installing multiple packages in
-                              a script, the installation needs to be done as
-                              the root user. There are three general options
-                              that can be used to do this:</para>
+<!ENTITY as_root "<note><para>When installing multiple packages in a script,
+  the installation needs to be done as the root user. There are three general
+  options that can be used to do this:</para>
 
-                              <orderedlist>
-                              <listitem><para>Run the entire script as the root
-                              user (not recommended).</para></listitem>
+  <orderedlist>
 
-                              <listitem><para>Use the '<command>sudo</command>'
-                              command from the <xref linkend='sudo'/>
-                              package.</para></listitem>
+  <listitem><para>Run the entire script as the root user (not
+  recommended).</para></listitem>
 
-                              <listitem><para>Use '<command>su -c</command>'
-                              which will ask for the root password for every
-                              iteration of the loop.</para></listitem>
-                              </orderedlist>
+  <listitem><para>Use the <command>sudo</command> command from the <xref
+  linkend='sudo'/> package.</para></listitem>
 
-                              <para>Select a preferred method and export a
-                              variable <parameter>AS_ROOT</parameter> with the
-                              following command replacing
-                              <parameter>&lt;as_root&gt;</parameter> with the
-                              selected command (unset or use an empty variable
-                              if you intend to run the entire loop as the
-                              root user):</para>
+  <listitem><para>Use <command>su -c &quot;command arguments&quot;</command>
+  (quotes required) which will ask for the root  password for every iteration
+  of the loop.</para></listitem> 
+  
+  </orderedlist>
 
-                              <screen><userinput>export AS_ROOT='<replaceable>&lt;as_root&gt;</replaceable>'</userinput></screen>
-                              </note>">
+  <para>One way to handle this situation is to create a short
+  <command>bash</command> function that automatically selects the appropriate
+  method.  Once the command is set in the environment, it does not need to be
+  set again.</para>
+  
+  <screen><userinput>as_root()
+{
+  if   [ $EUID = 0 ];        then $*
+  elif [ -x /usr/bin/sudo ]; then sudo $*
+  else                            su -c \\&quot;$*\\&quot;
+  fi 
+}
+
+export -f as_root</userinput></screen>
+</note>">
 @y
-<!ENTITY as_root              "<note>
-                              <para>
-                              スクリプトを用いて複数のパッケージをビルドする際には、root ユーザーによる実行が必要です。
-                              これを行うためには一般に以下の３つの方法があります。
-                              </para>
+<!ENTITY as_root "<note><para>When installing multiple packages in a script,
+  the installation needs to be done as the root user. There are three general
+  options that can be used to do this:</para>
 
-                              <orderedlist>
-                              <listitem><para>
-                              root ユーザーになってスクリプトを実行します。(ただしあまりお勧めしません。)
-                              </para></listitem>
+  <orderedlist>
 
-                              <listitem><para>
-                              <xref linkend='sudo'/> パッケージが提供する '<command>sudo</command>' コマンドを利用します。
-                              </para></listitem>
+  <listitem><para>Run the entire script as the root user (not
+  recommended).</para></listitem>
 
-                              <listitem><para>Use '<command>su -c</command>'
-                              which will ask for the root password for every
-                              iteration of the loop.</para></listitem>
-                              </orderedlist>
+  <listitem><para>Use the <command>sudo</command> command from the <xref
+  linkend='sudo'/> package.</para></listitem>
 
-                              <para>Select a preferred method and export a
-                              variable <parameter>AS_ROOT</parameter> with the
-                              following command replacing
-                              <parameter>&lt;as_root&gt;</parameter> with the
-                              selected command (unset or use an empty variable
-                              if you intend to run the entire loop as the
-                              root user):</para>
+  <listitem><para>Use <command>su -c &quot;command arguments&quot;</command>
+  (quotes required) which will ask for the root  password for every iteration
+  of the loop.</para></listitem> 
+  
+  </orderedlist>
 
-                              <screen><userinput>export AS_ROOT='<replaceable>&lt;as_root&gt;</replaceable>'</userinput></screen>
-                              </note>">
+  <para>One way to handle this situation is to create a short
+  <command>bash</command> function that automatically selects the appropriate
+  method.  Once the command is set in the environment, it does not need to be
+  set again.</para>
+  
+  <screen><userinput>as_root()
+{
+  if   [ $EUID = 0 ];        then $*
+  elif [ -x /usr/bin/sudo ]; then sudo $*
+  else                            su -c \\&quot;$*\\&quot;
+  fi 
+}
+
+export -f as_root</userinput></screen>
+</note>">
 @z

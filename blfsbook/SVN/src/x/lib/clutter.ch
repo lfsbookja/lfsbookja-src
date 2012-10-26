@@ -20,9 +20,9 @@
 @z
 
 @x
-      The <application>Clutter</application> package is an open source
-      software library for creating fast, visually rich and animated graphical
-      user interfaces.
+      The <application>Clutter</application> package contains an open
+      source software library used for creating fast, visually rich
+      and animated graphical user interfaces.
 @y
       <application>Clutter</application> パッケージは、高速で視覚性に富んだ、あるいはアニメーション機能を有したグラフィカルユーザーインターフェースを生成するオープンソースソフトウェアライブラリです。
 @z
@@ -148,16 +148,16 @@
 @z
 
 @x
-    <title>Installation of clutter</title>
+    <title>Installation of Clutter</title>
 @y
-    <title>&InstallationOf1;clutter&InstallationOf2;</title>
+    <title>&InstallationOf1;Clutter&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>clutter</application> by running the following
+      Install <application>Clutter</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>clutter</application> をビルドします。
+      以下のコマンドを実行して <application>Clutter</application> をビルドします。
 @z
 
 @x
@@ -212,19 +212,21 @@
 
 @x
         <seg>
-          libclutter-glx-1.0.so
-        </seg>
-        <seg>
-          /usr/include/clutter-1.0 and
-          /usr/share/gtk-doc/html/{cally,clutter}
-        </seg>
-@y
-        <seg>
-          libclutter-glx-1.0.so
+          libclutter-1.0.so
         </seg>
         <seg>
           /usr/include/clutter-1.0,
-          /usr/share/gtk-doc/html/{cally,clutter}
+          /usr/share/gtk-doc/html/cally and
+          /usr/share/gtk-doc/html/clutter
+        </seg>
+@y
+        <seg>
+          libclutter-1.0.so
+        </seg>
+        <seg>
+          /usr/include/clutter-1.0,
+          /usr/share/gtk-doc/html/cally,
+          /usr/share/gtk-doc/html/clutter
         </seg>
 @z
 

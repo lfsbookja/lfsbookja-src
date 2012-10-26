@@ -189,19 +189,19 @@
         <seg>bonobo-browser and test-moniker</seg>
         <seg>libbonoboui-2.so and libbonobo.so Glade library</seg>
         <seg>
-          <envar>${GNOME_PREFIX}</envar>/include/libbonoboui-2.0/bonobo,
-          <envar>${GNOME_PREFIX}</envar>/share/doc/libbonoboui-2.24.3,
-          <envar>${GNOME_PREFIX}</envar>/share/gnome-2.0/ui and
-          <envar>${GNOME_PREFIX}</envar>/share/gtk-doc/html/libbonoboui
+          /usr/include/libbonoboui-2.0/bonobo,
+          /usr/share/doc/libbonoboui-2.24.3,
+          /usr/share/gnome-2.0/ui and
+          /usr/share/gtk-doc/html/libbonoboui
         </seg>
 @y
         <seg>bonobo-browser, test-moniker</seg>
         <seg>libbonoboui-2.so, libbonobo.so Glade ライブラリ</seg>
         <seg>
-          <envar>${GNOME_PREFIX}</envar>/include/libbonoboui-2.0/bonobo,
-          <envar>${GNOME_PREFIX}</envar>/share/doc/libbonoboui-2.24.3,
-          <envar>${GNOME_PREFIX}</envar>/share/gnome-2.0/ui,
-          <envar>${GNOME_PREFIX}</envar>/share/gtk-doc/html/libbonoboui
+          /usr/include/libbonoboui-2.0/bonobo,
+          /usr/share/doc/libbonoboui-2.24.3,
+          /usr/share/gnome-2.0/ui,
+          /usr/share/gtk-doc/html/libbonoboui
         </seg>
 @z
 

@@ -249,10 +249,10 @@
   <para>The PST part of the book covers document handling with applications like
   <application>Ghostscript</application>, <application>CUPS</application> and
   <application>DocBook</application> to installing
-  <application>teTeX</application>.</para>
+  <application>texlive</application>.</para>
 @y
   <para>
-  印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST) の部では、文書を取り扱うアプリケーションとして <application>Ghostscript</application>、<application>CUPS</application>、<application>DocBook</application>、<application>teTeX</application> について説明します。
+  印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST) の部では、文書を取り扱うアプリケーションとして <application>Ghostscript</application>、<application>CUPS</application>、<application>DocBook</application>、<application>texlive</application> について説明します。
   </para>
 @z
 

@@ -117,18 +117,18 @@
 @z
 
 @x
-    <warning><para>The default configuration is to use a local MTA. If
+    <note><para>The default configuration is to use a local MTA. If
     you don't have an MTA installed and have no wish to install
     one, modify <filename>install/install.cfg</filename> to use an SMTP
-    server instead.  Otherwise the install will fail.</para></warning>
+    server instead.  Otherwise the install will fail.</para></note>
 @y
-    <warning>
+    <note>
     <para>
     デフォルトの設定はローカルな MTA 用となっています。
     MTA をインストールしていない場合で、これをインストールするつもりがないなら、<filename>install/install.cfg</filename> を修正して SMTP サーバーを利用するように変更することが必要です。
     これを行っておかないとインストールが失敗します。
     </para>
-    </warning>
+    </note>
 @z
 
 @x

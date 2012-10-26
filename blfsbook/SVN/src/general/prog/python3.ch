@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "200 MB (30 MB for the test suite)">
-  <!ENTITY python3-time          "1.0 SBU (additional 3.0 SBU to run the test suite)">
+  <!ENTITY python3-buildsize     "141 MB (additional 32 MB for the test suite)">
+  <!ENTITY python3-time          "1.2 SBU (additional 2.2 SBU to run the test suite)">
 @y
-  <!ENTITY python3-buildsize     "200 MB (テストスイート実行時は 30MB)">
-  <!ENTITY python3-time          "1.0 SBU (テストスイート実行時はさらに 3.0 SBU)">
+  <!ENTITY python3-buildsize     "141 MB (テストスイート実行時は 32MB)">
+  <!ENTITY python3-time          "1.2 SBU (テストスイート実行時はさらに 2.2 SBU)">
 @z
 
 @x
@@ -238,53 +238,53 @@
           pydoc3 (symbolic link to pydoc&python3-majorver;),
           pydoc&python3-majorver;,
 
-          python3 (hard link to python&python3-majorver;mu), 
-          python&python3-majorver; (hard link to python&python3-majorver;mu), 
-          python&python3-majorver;mu, 
+          python3 (hard link to python&python3-majorver;m), 
+          python&python3-majorver; (hard link to python&python3-majorver;m), 
+          python&python3-majorver;m, 
 
           python3-config (symbolic link to python&python3-majorver;-config),
           python&python3-majorver;-config (symbolic link to python3-config),
-          python&python3-majorver;mu-config,
+          python&python3-majorver;m-config,
 
           and optionally if Tk is installed,
           idle3 (symbolic link to idle&python3-majorver;),
           idle&python3-majorver;
         </seg>
         <seg>
-          libpython&python3-majorver;mu.so, libpython3.so and numerous
+          libpython&python3-majorver;m.so, libpython3.so and numerous
           modules installed in /usr/lib/python&python3-majorver;
         </seg>
         <seg>
-          /usr/include/python&python3-majorver;mu,
+          /usr/include/python&python3-majorver;m,
           /usr/lib/python&python3-majorver;, and
           /usr/share/doc/python-&python3-version;
         </seg>
 @y
         <seg>
-          2to3 (symbolic link to 2to3-&python3-majorver;),
+          2to3 (&SymLinkTo1;2to3-&python3-majorver;&SymLinkTo2;),
           2to3-&python3-majorver;,
 
-          pydoc3 (symbolic link to pydoc&python3-majorver;),
+          pydoc3 (&SymLinkTo1;pydoc&python3-majorver;&SymLinkTo2;),
           pydoc&python3-majorver;,
 
-          python3 (hard link to python&python3-majorver;mu), 
-          python&python3-majorver; (hard link to python&python3-majorver;mu), 
-          python&python3-majorver;mu, 
+          python3 (&HardLinkTo1;python&python3-majorver;m&HardLinkTo2;), 
+          python&python3-majorver; (&HardLinkTo1;python&python3-majorver;m&HardLinkTo2;), 
+          python&python3-majorver;m, 
 
-          python3-config (symbolic link to python&python3-majorver;-config),
-          python&python3-majorver;-config (symbolic link to python3-config),
-          python&python3-majorver;mu-config,
+          python3-config (&SymLinkTo1;python&python3-majorver;-config&SymLinkTo2;),
+          python&python3-majorver;-config (&SymLinkTo1;python3-config&SymLinkTo2;),
+          python&python3-majorver;m-config,
 
           and optionally if Tk is installed,
-          idle3 (symbolic link to idle&python3-majorver;),
+          idle3 (&SymLinkTo1;idle&python3-majorver;&SymLinkTo2;),
           idle&python3-majorver;
         </seg>
         <seg>
-          libpython&python3-majorver;mu.so, libpython3.so and numerous
+          libpython&python3-majorver;m.so, libpython3.so and numerous
           modules installed in /usr/lib/python&python3-majorver;
         </seg>
         <seg>
-          /usr/include/python&python3-majorver;mu,
+          /usr/include/python&python3-majorver;m,
           /usr/lib/python&python3-majorver;,
           /usr/share/doc/python-&python3-version;
         </seg>

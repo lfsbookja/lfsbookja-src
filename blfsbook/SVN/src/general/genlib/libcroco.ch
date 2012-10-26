@@ -120,20 +120,9 @@
 @z
 
 @x
-      To test the results, issue:
-      <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command>.
+      This package does not have a working testsuite.
 @y
-      ビルド結果をテストする場合は <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command> を実行します。
-@z
-
-@x
-      If there are test failures, issue:
-      <command>patch -Np1 -i tests/tests-error.log</command>.
-      This will update the failed tests from CVS. You should now rerun the test.
-@y
-      テストに失敗した場合は <command>patch -Np1 -i tests/tests-error.log</command> を実行してください。
-      これにより CVS から失敗したテストを更新します。
-      これを行ってから再度テストを行ってください。
+      &notTestSuite;
 @z
 
 @x

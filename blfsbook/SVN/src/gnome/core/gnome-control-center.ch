@@ -80,8 +80,10 @@
       <xref linkend="gnome-menus"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gnome-settings-daemon"/>,
-      <xref linkend="libgtop"/> and
-      <xref linkend="shared-mime-info"/>
+      <xref linkend="iso-codes"/>,
+      <xref linkend="libgtop"/>,
+      <xref linkend="libpwquality"/> and
+      <xref linkend="mitkrb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -89,21 +91,41 @@
       <xref linkend="gnome-menus"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gnome-settings-daemon"/>,
+      <xref linkend="iso-codes"/>,
       <xref linkend="libgtop"/>,
-      <xref linkend="shared-mime-info"/>
+      <xref linkend="libpwquality"/>,
+      <xref linkend="mitkrb"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required (Runtime)</bridgehead>
+    <para role="required">
+      <xref linkend="accountsservice"/> and
+      <xref linkend="consolekit"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required; (ランタイム時)</bridgehead>
+    <para role="required">
+      <xref linkend="accountsservice"/>,
+      <xref linkend="consolekit"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gnome-bluetooth"/> and
+      <xref linkend="cups"/>,
+      <xref linkend="gnome-bluetooth"/>,
+      <xref linkend="ibus"/> and
       <xref linkend="NetworkManager"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="cups"/>,
       <xref linkend="gnome-bluetooth"/>,
+      <xref linkend="ibus"/>,
       <xref linkend="NetworkManager"/>
     </para>
 @z

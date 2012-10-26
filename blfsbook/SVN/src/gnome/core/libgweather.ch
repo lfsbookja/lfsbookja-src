@@ -78,14 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="GConf"/>,
       <xref linkend="gtk3"/> and
       <xref linkend="libsoup"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="GConf"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libsoup"/>
     </para>
@@ -153,11 +151,11 @@
 @z
 
 @x
-      <option>--enable-locations-compression</option>: This parameter enables
+      <option>--enable-locations-compression</option>: This switch enables
       compression of <filename>Locations.xml</filename> files.
 @y
       <option>--enable-locations-compression</option>:
-      本パラメーターは <filename>Locations.xml</filename> ファイルの圧縮を有効にします。
+      本スイッチは <filename>Locations.xml</filename> ファイルの圧縮を有効にします。
 @z
 
 @x

@@ -157,18 +157,6 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/at-spi2-core</parameter>: This
-      parameter ensures that programs will be installed into the
-      given directory instead of
-      <filename class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/at-spi2-core</parameter>: This
-      parameter ensures that programs will be installed into the
-      given directory instead of
-      <filename class="directory">/usr/libexec</filename>.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

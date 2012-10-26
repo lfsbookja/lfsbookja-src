@@ -140,8 +140,10 @@
           libgdkmm-3.0.so and libgtkmm-3.0.so
         </seg>
         <seg>
-          /usr/include/{gdkmm-3.0,gtkmm-3.0},
-          /usr/lib/{gdkmm-3.0,gtkmm-3.0},
+          /usr/include/gdkmm-3.0,
+          /usr/include/gtkmm-3.0,
+          /usr/lib/gdkmm-3.0,
+          /usr/lib/gtkmm-3.0,
           /usr/share/devhelp/books/gtkmm-3.0 and
           /usr/share/doc/gtkmm-3.0
         </seg>
@@ -150,8 +152,10 @@
           libgdkmm-3.0.so, libgtkmm-3.0.so
         </seg>
         <seg>
-          /usr/include/{gdkmm-3.0,gtkmm-3.0},
-          /usr/lib/{gdkmm-3.0,gtkmm-3.0},
+          /usr/include/gdkmm-3.0,
+          /usr/include/gtkmm-3.0,
+          /usr/lib/gdkmm-3.0,
+          /usr/lib/gtkmm-3.0,
           /usr/share/devhelp/books/gtkmm-3.0,
           /usr/share/doc/gtkmm-3.0
         </seg>

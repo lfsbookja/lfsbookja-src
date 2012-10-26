@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>libxslt</application> package contains
-    XSLT libraries. These are useful for extending <filename
-    class="libraryfile">libxml2</filename> libraries to support
-    XSLT files.</para>
+      The <application>libxslt</application> package contains
+      XSLT libraries used for extending <filename
+      class="libraryfile">libxml2</filename> libraries to
+      support XSLT files.
 @y
-    <para>
-    <application>libxslt</application> パッケージは XSLT ライブラリを提供します。
-    これは <filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT ファイルをサポートするために利用します。
-    </para>
+      <application>libxslt</application> パッケージは XSLT ライブラリを提供します。
+      これは <filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT ファイルをサポートするために利用します。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libxslt-download-http;"/></para>
+          Download (HTTP): <ulink url="&libxslt-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libxslt-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libxslt-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libxslt-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libxslt-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libxslt-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libxslt-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libxslt-md5sum;</para>
+          Download MD5 sum: &libxslt-md5sum;
 @y
-        <para>&Download; MD5 sum: &libxslt-md5sum;</para>
+          &Download; MD5 sum: &libxslt-md5sum;
 @z
 
 @x
-        <para>Download size: &libxslt-size;</para>
+          Download size: &libxslt-size;
 @y
-        <para>&DownloadSize;: &libxslt-size;</para>
+          &DownloadSize;: &libxslt-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libxslt-buildsize;</para>
+          Estimated disk space required: &libxslt-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libxslt-buildsize;</para>
+          &Estimateddiskspacerequired;: &libxslt-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libxslt-time;</para>
+          Estimated build time: &libxslt-time;
 @y
-        <para>&Estimatedbuildtime;: &libxslt-time;</para>
+          &Estimatedbuildtime;: &libxslt-time;
 @z
 
 @x
@@ -81,28 +79,34 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libxml2"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python2"/> and
-    <xref linkend="libgcrypt"/></para>
+    <para role="optional">
+      <xref linkend="libgcrypt"/> and
+      <xref linkend="python2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="python2"/>,
-    <xref linkend="libgcrypt"/></para>
+    <para role="optional">
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="python2"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libxslt"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libxslt"/></para>
 @z
 
 @x
@@ -112,28 +116,22 @@
 @z
 
 @x
-    <para>Install <application>libxslt</application> by running the following
-    commands:</para>
+      Install <application>libxslt</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libxslt</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libxslt</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    コンパイル結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
@@ -153,18 +151,30 @@
 @z
 
 @x
-        <seg>xslt-config and xsltproc</seg>
-        <seg>libexslt.{so,a}, libxslt.{so,a} and optionally, libxsltmod.{so,a}
-        <application>Python</application> modules</seg>
-        <seg>/usr/include/lib{e}xslt,
+        <seg>
+          xslt-config and xsltproc
+        </seg>
+        <seg>
+          libexslt.so, libxslt.so and optionally, libxsltmod.so
+          <application>Python</application> modules
+        </seg>
+        <seg>
+        /usr/include/libexslt,
+        /usr/include/libxslt,
         /usr/lib/libxslt-plugins,
         /usr/share/doc/libxslt-&libxslt-version;, and
         /usr/share/doc/libxslt-python-&libxslt-version;</seg>
 @y
-        <seg>xslt-config, xsltproc</seg>
-        <seg>libexslt.{so,a}, libxslt.{so,a} さらに任意として
-        <application>Python</application> モジュールの libxsltmod.{so,a}</seg>
-        <seg>/usr/include/lib{e}xslt,
+        <seg>
+          xslt-config, xsltproc
+        </seg>
+        <seg>
+          libexslt.so, libxslt.so さらに任意として libxsltmod.so
+          <application>Python</application> モジュール
+        </seg>
+        <seg>
+        /usr/include/libexslt,
+        /usr/include/libxslt,
         /usr/lib/libxslt-plugins,
         /usr/share/doc/libxslt-&libxslt-version;,
         /usr/share/doc/libxslt-python-&libxslt-version;</seg>
@@ -177,37 +187,29 @@
 @z
 
 @x xslt-config
-          <para>is used to find out the pre-processor, linking and
-          compiling flags necessary to use the <application>libxslt</application>
-          libraries in 3rd-party programs.</para>
+            is used to find out the pre-processor, linking and
+            compiling flags necessary to use the <application>libxslt</application>
+            libraries in 3rd-party programs.
 @y
-          <para>
-          サードパーティー製のプログラムが <application>libxslt</application> ライブラリを利用するにあたって、必要となるプリプロセッサー、コンパイルフラグ、リンクフラグを決定するために利用します。
-          </para>
+            サードパーティー製のプログラムが <application>libxslt</application> ライブラリを利用するにあたって、必要となるプリプロセッサー、コンパイルフラグ、リンクフラグを決定するために利用します。
 @z
 
 @x xsltproc
-          <para>is used to apply XSLT stylesheets to XML documents.</para>
+            is used to apply XSLT stylesheets to XML documents.
 @y
-          <para>
-          XML ドキュメントファイルに対して XSLT スタイルシートを適用します。
-          </para>
+            XML ドキュメントファイルに対して XSLT スタイルシートを適用します。
 @z
 
-@x libxslt.{so,a}
-          <para> provides extensions to the
-          <filename class="libraryfile">libxml2</filename>
-          libraries to parse files that use the XSLT format.</para>
+@x libexslt.so
+            is used to provide extensions to XSLT functions.
 @y
-          <para>
-          <filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT 形式のファイルを取り扱う機能を提供します。
-          </para>
+            XSLT 関数を取り扱う拡張機能を提供します。
 @z
 
-@x libexslt.{so,a}
-          <para>is used to provide extensions to XSLT functions.</para>
+@x libxslt.so
+            provides extensions to the
+            <filename class="libraryfile">libxml2</filename>
+            libraries to parse files that use the XSLT format.
 @y
-          <para>
-          XSLT 関数を取り扱う拡張機能を提供します。
-          </para>
+            <filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT 形式のファイルを取り扱う機能を提供します。
 @z

@@ -31,7 +31,8 @@ CHANGE_FILES = \
 	libtiff.ch     \
 	openjpeg.ch    \
 	pixman.ch      \
-	poppler.ch
+	poppler.ch     \
+	qpdf.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -71,3 +72,4 @@ libtiff.xml:     $(BOOKdir)/$@ $(srcdir)/libtiff.ch
 openjpeg.xml:    $(BOOKdir)/$@ $(srcdir)/openjpeg.ch
 pixman.xml:      $(BOOKdir)/$@ $(srcdir)/pixman.ch
 poppler.xml:     $(BOOKdir)/$@ $(srcdir)/poppler.ch
+qpdf.xml:        $(BOOKdir)/$@ $(srcdir)/qpdf.ch

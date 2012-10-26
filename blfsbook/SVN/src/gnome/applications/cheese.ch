@@ -20,8 +20,8 @@
 @z
 
 @x
-      The <application>Cheese</application> package is used to 
-      take photos and videos with fun graphical effects.
+      <application>Cheese</application> is used to take
+      photos and videos with fun graphical effects.
 @y
       <application>Cheese</application> パッケージは、ウェブカメラを使って写真やビデオを撮ったり、さまざまなグラフィック効果を付与する機能を提供します。
 @z
@@ -77,33 +77,33 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gst2"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-video-effects"/>,
+      <xref linkend="gst10-plugins-bad"/>,
+      <xref linkend="gst10-plugins-good"/>,
       <xref linkend="libgee"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
-      <xref linkend="mx"/>,
-      <xref linkend="nautilus-sendto"/>,
-      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data),
-      <xref linkend="vala"/>, and
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev) and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gst2"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-video-effects"/>,
+      <xref linkend="gst10-plugins-bad"/>,
+      <xref linkend="gst10-plugins-good"/>,
       <xref linkend="libgee"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
-      <xref linkend="mx"/>,
-      <xref linkend="nautilus-sendto"/>,
-      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for gudev and gir-data),
-      <xref linkend="vala"/>,
+      <xref linkend="udev"/> または
+      <xref linkend="udev-extras"/> (for GUdev),
       <xref linkend="yelp-xsl"/>
     </para>
 @z
@@ -111,12 +111,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="nautilus-sendto"/> and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="nautilus-sendto"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -152,9 +156,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x

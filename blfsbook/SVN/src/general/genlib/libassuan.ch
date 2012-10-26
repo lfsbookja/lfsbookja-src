@@ -128,11 +128,11 @@
 
 @x
     <para>If you wish to build alternate formats of the documentation, you
-    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
+    must have <xref linkend="texlive"/>
     installed, then issue the following command:</para>
 @y
     <para>If you wish to build alternate formats of the documentation, you
-    must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
+    must have <xref linkend="texlive"/>
     installed, then issue the following command:</para>
 @z
 

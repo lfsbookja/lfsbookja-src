@@ -82,18 +82,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gst-plugins-base"/>,
-      <xref linkend="libcanberra"/> and
-      <xref linkend="libnotify"/>
+      <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="libnotify"/> and
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libnotify"/>
+      <xref linkend="libnotify"/>,
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 
@@ -102,9 +102,8 @@
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libburn"/> and
-      <xref linkend="libisofs"/> (For CD/DVD burning),
-      <xref linkend="nautilus"/>,
-      <xref linkend="rarian"/> and
+      <xref linkend="libisofs"/>,
+      <xref linkend="nautilus"/> and
       <xref linkend="totem-pl-parser"/>
     </para>
 @y
@@ -112,9 +111,8 @@
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libburn"/>,
-      <xref linkend="libisofs"/> (CD/DVD 書き込み時),
+      <xref linkend="libisofs"/>,
       <xref linkend="nautilus"/>,
-      <xref linkend="rarian"/>,
       <xref linkend="totem-pl-parser"/>
     </para>
 @z
@@ -136,12 +134,14 @@
 @x
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
     <para role="recommended">
-      <xref linkend="gvfs"/> (Built with libcdio support - for gvfsd-burn)
+      <xref linkend="dvd-rw-tools"/> and
+      <xref linkend="gvfs"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
     <para role="recommended">
-      <xref linkend="gvfs"/> (Built with libcdio support - for gvfsd-burn)
+      <xref linkend="dvd-rw-tools"/>,
+      <xref linkend="gvfs"/>
     </para>
 @z
 
@@ -210,9 +210,9 @@
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
-          /usr/share/gnome/help/brasero,
-          /usr/share/gtk-doc/html/libbrasero-burn and
-          /usr/share/gtk-doc/html/libbrasero-media 
+          /usr/share/gtk-doc/html/libbrasero-burn,
+          /usr/share/gtk-doc/html/libbrasero-media and
+          /usr/share/help/*/brasero 
         </seg>
 @y
         <seg>
@@ -226,9 +226,9 @@
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
-          /usr/share/gnome/help/brasero,
           /usr/share/gtk-doc/html/libbrasero-burn,
-          /usr/share/gtk-doc/html/libbrasero-media 
+          /usr/share/gtk-doc/html/libbrasero-media,
+          /usr/share/help/*/brasero 
         </seg>
 @z
 
@@ -240,10 +240,10 @@
 
 @x brasero
             is a simple and easy to use CD/DVD burning application for the
-            <application>GNOME</application> Desktop
+            <application>GNOME</application> Desktop.
 @y
             is a simple and easy to use CD/DVD burning application for the
-            <application>GNOME</application> Desktop
+            <application>GNOME</application> Desktop.
 @z
 
 @x libbrasero-burn3.so

@@ -20,14 +20,14 @@
 @z
 
 @x
-      The <application>Telepathy GLib</application> package is a library for
-      GLib based <application>Telepathy</application> components. Telepathy is a
-      <application>D-Bus</application> framework for unifying real time
-      communication, including instant messaging, voice calls and video calls. It
-      abstracts differences between protocols to provide a unified interface for
-      applications.
+      The <application>Telepathy GLib</application> contains a library used by
+      <application>GLib</application> based <application>Telepathy</application>
+      components. Telepathy is a <application>D-Bus</application> framework for
+      unifying real time communication, including instant messaging, voice calls
+      and video calls. It abstracts differences between protocols to provide a
+      unified interface for applications.
 @y
-      <application>Telepathy GLib</application> パッケージは、GLib ベースの Telepathy コンポーネントに対するライブラリです。
+      <application>Telepathy GLib</application> パッケージは、<application>GLib</application> ベースの <application>Telepathy</application> コンポーネントに対するライブラリです。
       Telepathy コンポーネントは <application>D-Bus</application> フレームワークであり、リアルタイムなコミュニケーション、インスタントメッセージ、音声あるいはビデオコールを共通化します。
       アプリケーションに対し共通化されたインターフェースを提供することで、各種プロトコルの差異を抽象化するものです。
 @z
@@ -83,16 +83,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="libxslt"/> and
-      <xref linkend="python2"/>
+      <xref linkend="dbus-glib"/> and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="python2"/>
+      <xref linkend="libxslt"/>
     </para>
 @z
 
@@ -160,22 +158,12 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/telepathy</parameter>:
-      This parameter prevents creating of
-      <filename class="directory">/usr/libexec</filename> directory.
-@y
-      <parameter>--libexecdir=/usr/lib/telepathy</parameter>:
-      このパラメーターは、各種ファイルを <filename
-      class="directory">/usr/libexec</filename> へインストールしないようにします。
-@z
-
-@x
-      <option>--enable-vala-bindings</option>: This option enables
+      <option>--enable-vala-bindings</option>: This switch enables
       building of the Vala bindings. Remove if you don't have 
       <xref linkend="vala"/> installed.
 @y
       <option>--enable-vala-bindings</option>:
-      このオプションは Vala バインディングをビルドします。
+      このスイッチは Vala バインディングをビルドします。
       <xref linkend="vala"/> をインストールしていない場合はこれを取り除いてください。
 @z
 
@@ -198,8 +186,7 @@
           libtelepathy-glib.so
         </seg>
         <seg>
-          /usr/include/telepathy-1.0/telepathy-glib,
-          /usr/lib/telepathy and
+          /usr/include/telepathy-1.0 and
           /usr/share/gtk-doc/html/telepathy-glib
         </seg>
 @y
@@ -207,8 +194,7 @@
           libtelepathy-glib.so
         </seg>
         <seg>
-          /usr/include/telepathy-1.0/telepathy-glib,
-          /usr/lib/telepathy,
+          /usr/include/telepathy-1.0,
           /usr/share/gtk-doc/html/telepathy-glib
         </seg>
 @z

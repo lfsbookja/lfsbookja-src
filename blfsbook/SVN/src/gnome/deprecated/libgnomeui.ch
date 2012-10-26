@@ -220,13 +220,13 @@
 @x
         <seg>None</seg>
         <seg>libgnomeui-2.{so,a} and libgnome.{so,a} Glade library</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomeui-2.0/libgnomeui,
-        share/gtk-doc/html/libgnomeui}</seg>
+        <seg>/usr/include/libgnomeui-2.0/libgnomeui,
+             /usr/share/gtk-doc/html/libgnomeui</seg>
 @y
         <seg>&None;</seg>
-        <seg>libgnomeui-2.{so,a}, libgnome.{so,a} Glade ライブラリ</seg>
-        <seg><envar>$GNOME_PREFIX</envar>/{include/libgnomeui-2.0/libgnomeui,
-        share/gtk-doc/html/libgnomeui}</seg>
+        <seg>libgnomeui-2.{so,a} and libgnome.{so,a} Glade library</seg>
+        <seg>/usr/include/libgnomeui-2.0/libgnomeui,
+             /usr/share/gtk-doc/html/libgnomeui</seg>
 @z
 
 @x

@@ -85,7 +85,7 @@
     <para role="required">
       <xref linkend="glib2"/>,
       <xref linkend="iso-codes"/>,
-      <xref linkend="libxml2"/>, and
+      <xref linkend="libxml2"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
@@ -161,11 +161,11 @@
 
 @x
       <parameter>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</parameter>:
-      Use this parameter if the $XORG_PREFIX is anything other than
+      Use this swithc if the $XORG_PREFIX is anything other than
       <filename class="directory">/usr</filename>.
 @y
       <parameter>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</parameter>:
-      $XORG_PREFIX が <filename class='directory'>/usr</filename> 以外である場合に、このパラメーターを指定します。
+      $XORG_PREFIX が <filename class='directory'>/usr</filename> 以外である場合に、このスイッチを指定します。
 @z
 
 @x

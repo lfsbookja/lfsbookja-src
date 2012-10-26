@@ -141,14 +141,9 @@
 @z
 
 @x
-      Running <command>make check</command> will build a battery of test
-      programs which are built using the just-created
-      <filename class="libraryfile">libgsf-1</filename> library. All the programs
-      should build successfully with no errors displayed.
+      To test the results, issue: <command>make check</command>.
 @y
-      <command>make check</command> を実行すると、今まさに作り出された <filename
-      class="libraryfile">libgsf-1</filename> ライブラリを用いて、一連のテストプログラムがビルドされます。
-      それらのテストプログラムは、特にエラーもなく正常にビルドされるはずです。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x

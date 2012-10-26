@@ -82,61 +82,35 @@
     <para role="required">
       <xref linkend="accountsservice"/>,
       <xref linkend="dconf"/>,
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gtk3"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="linux-pam"/> and
-      <xref linkend="nss"/>
+      <xref linkend="linux-pam"/>,
+      <xref linkend="nss"/> and
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="accountsservice"/>,
       <xref linkend="dconf"/>,
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gtk3"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="nss"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required (runtime)</bridgehead>
-    <para role="required">
-      <xref linkend="gnome-session"/> and either
-      <xref linkend="gnome-shell"/> or
-      <xref linkend="gnome-panel"/> and
-      <xref linkend="metacity"/> (for the Greeter Window Manager).
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required; (ランタイム)</bridgehead>
-    <para role="required">
-      <xref linkend="gnome-session"/>,
-      <xref linkend="gnome-shell"/> または
-      <xref linkend="gnome-panel"/> のいずれか,
-      <xref linkend="metacity"/> (Greeter ウィンドウマネージャー利用時)
+      <xref linkend="nss"/>,
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="consolekit"/>
-      (Required for Shutdown/Restart functionality),
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libxklavier"/>,
-      <xref linkend="rarian"/> and
+      <xref linkend="iso-codes"/> and
       <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="consolekit"/>
-      (Required for Shutdown/Restart functionality),
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libxklavier"/>,
-      <xref linkend="rarian"/>,
+      <xref linkend="iso-codes"/>,
       <xref linkend="upower"/>
     </para>
 @z
@@ -144,12 +118,30 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="check"/> (required to run the testsuite)
+      <xref linkend="check"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="check"/> (テストスイート実行時)
+      <xref linkend="check"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
+    <para role="required">
+      <xref linkend="consolekit"/>,
+      <xref linkend="gnome-session"/> and either
+      <xref linkend="gnome-shell"/> or
+      <xref linkend="metacity"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
+    <para role="required">
+      <xref linkend="consolekit"/>,
+      <xref linkend="gnome-session"/> and either
+      <xref linkend="gnome-shell"/> or
+      <xref linkend="metacity"/>
     </para>
 @z
 
@@ -204,20 +196,6 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/gdm</parameter>: This
-      parameter is used so that the <application>GDM</application> internal
-      support programs are installed in the preferred location of <filename
-      class="directory">/usr/lib/gdm</filename> instead of <filename
-      class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/gdm</parameter>: This
-      parameter is used so that the <application>GDM</application> internal
-      support programs are installed in the preferred location of <filename
-      class="directory">/usr/lib/gdm</filename> instead of <filename
-      class="directory">/usr/libexec</filename>.
-@z
-
-@x
     <title>Configuring GDM</title>
 @y
     <title>&Configuring1;GDM&Configuring2;</title>
@@ -238,7 +216,7 @@
 @x
         The GDM daemon is configured using the
         <filename>/etc/gdm/custom.conf</filename> file.
-        Default values are stored in GConf in the
+        Default values are stored in GSettings in the
         <filename>gdm.schemas</filename> file. It is recommended that end-users
         modify the <filename>/etc/gdm/custom.conf</filename> file
         because the schemas file may be overwritten when the user updates their
@@ -246,7 +224,7 @@
 @y
         The GDM daemon is configured using the
         <filename>/etc/gdm/custom.conf</filename> file.
-        Default values are stored in GConf in the
+        Default values are stored in GSettings in the
         <filename>gdm.schemas</filename> file. It is recommended that end-users
         modify the <filename>/etc/gdm/custom.conf</filename> file
         because the schemas file may be overwritten when the user updates their
@@ -317,10 +295,10 @@
 
 @x
         <seg>
-          gdm, gdmflexiserver and gdm-screenshot
+          gdm and gdm-screenshot
         </seg>
         <seg>
-          libgdmgreeter.so and libgdmsimplegreeter.so
+          libgdm.so and libgdmsimplegreeter.so
         </seg>
         <seg>
           /etc/dconf/db/gdm.d,
@@ -328,16 +306,19 @@
           /usr/include/gdm,
           /usr/lib/gdm,
           /usr/share/gdm,
-          /usr/share/gnome/help/gdm,
-          /usr/share/omf/gdm and
-          /var/{cache,lib,log,run}/gdm
+          /usr/share/help/*/gdm,
+          /var/cache/gdm,
+          /var/gdm,
+          /var/lib/gdm,
+          /var/log/gdm and
+          /var/run/gdm
         </seg>
 @y
         <seg>
-          gdm, gdmflexiserver, gdm-screenshot
+          gdm, gdm-screenshot
         </seg>
         <seg>
-          libgdmgreeter.so, libgdmsimplegreeter.so
+          libgdm.so, libgdmsimplegreeter.so
         </seg>
         <seg>
           /etc/dconf/db/gdm.d,
@@ -345,9 +326,12 @@
           /usr/include/gdm,
           /usr/lib/gdm,
           /usr/share/gdm,
-          /usr/share/gnome/help/gdm,
-          /usr/share/omf/gdm,
-          /var/{cache,lib,log,run}/gdm
+          /usr/share/help/*/gdm,
+          /var/cache/gdm,
+          /var/gdm,
+          /var/lib/gdm,
+          /var/log/gdm,
+          /var/run/gdm
         </seg>
 @z
 
@@ -363,18 +347,8 @@
             is the <application>GNOME</application> based login prompt.
 @z
 
-@x gdmflexiserver
-            is the flexi server mechanism which allows to run 
-            <application>GDM sessions</application>
-            on demand in a new virtual console.
-@y
-            is the flexi server mechanism which allows to run 
-            <application>GDM sessions</application>
-            on demand in a new virtual console.
-@z
-
 @x gdm-screenshot
-            is a screenshot tool.
+            is a <application>GDM</application> screenshot tool.
 @y
-            is a screenshot tool.
+            is a <application>GDM</application> screenshot tool.
 @z

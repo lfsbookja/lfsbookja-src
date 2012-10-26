@@ -142,6 +142,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="pcre"/>, 
       <xref linkend="openssl"/>, 
       <xref linkend="expat"/>, and 
       <xref linkend="tk"/> (gitk, a simple <application>Git</application>
@@ -150,6 +151,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="pcre"/>, 
       <xref linkend="openssl"/>, 
       <xref linkend="expat"/>, and 
       <xref linkend="tk"/> (gitk, a simple <application>Git</application>

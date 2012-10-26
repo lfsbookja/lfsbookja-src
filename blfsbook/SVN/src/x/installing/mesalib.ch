@@ -75,18 +75,18 @@
 @z
 
 @x
-          Required patch:
+    <bridgehead renderas="sect3">Additional Patches</bridgehead>
 @y
-          必須のパッチ:
+    <bridgehead renderas="sect3">Additional Patches</bridgehead>
 @z
 
 @x
           Recommended patch:
-          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-3.patch"/>
-          (Needed if testing the Xorg installation per BLFS instructions)
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-4.patch"/>
+          (Needed if testing the Xorg installation per BLFS instructions).
 @y
           推奨のパッチ:
-          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-3.patch"/>
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-4.patch"/>
           (BLFS でのビルド手順に従って Xorg をテストする場合に必要。)
 @z
 
@@ -181,31 +181,9 @@
 @z
 
 @x
-      Finally, if installing to any prefix other than
-      <filename class="directory">/usr</filename>, you should create symlinks
-      to the GL headers in <filename class="directory">/usr/include</filename>.
-      Execute the following command as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      <filename class="directory">/usr</filename> 以外のプレフィックスを用いてインストールを行っている場合は、<filename
-      class="directory">/usr/include</filename> ディレクトリにある GL ヘッダーファイルへのシンボリックリンクを作成する必要があります。
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>: by default,
-      Mesa builds with debugging symbols. Remove the -g switch from both
-      <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar> with this command.
-@y
-      <command>sed 's@FLAGS=\"-g@FLAGS=\"@' -i configure</command>:
-      デフォルトでは Mesa はデバッグシンボルを含めたビルドを行います。
-      そこでこのコマンドにより <envar>CFLAGS</envar> と <envar>CXXFLAGS</envar> の双方から -g スイッチを取り除きます。
 @z
 
 @x
@@ -229,26 +207,36 @@
           glxgears and glxinfo
         </seg>
         <seg>
-          libEGL.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
-          libGL.so, libGLU.so and libxatracker.so
+          libdricore9.0.0.so, libEGL.so, libgbm.so, libglapi.so,
+          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
+          libOpenVG.so and libxatracker.so
         </seg>
         <seg>
-          <envar>$XORG_PREFIX</envar>/include/{EGL,GL,GLES,GLES2,KHR},
-          <envar>$XORG_PREFIX</envar>/lib/dri, and
-          <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;
+          /usr/include/EGL,
+          /usr/include/GL,
+          /usr/include/GLES,
+          /usr/include/GLES2,
+          /usr/include/KHR,
+          /usr/include/VG and
+          /usr/lib/dri
         </seg>
 @y
         <seg>
           glxgears, glxinfo
         </seg>
         <seg>
-          libEGL.so, libglapi.so, libGLESv1_CM.so, libGLESv2.so,
-          libGL.so, libGLU.so, libxatracker.so
+          libdricore9.0.0.so, libEGL.so, libgbm.so, libglapi.so,
+          libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
+          libOpenVG.so, libxatracker.so
         </seg>
         <seg>
-          <envar>$XORG_PREFIX</envar>/include/{EGL,GL,GLES,GLES2,KHR},
-          <envar>$XORG_PREFIX</envar>/lib/dri,
-          <envar>$XORG_PREFIX</envar>/share/doc/MesaLib-&mesalib-version;
+          /usr/include/EGL,
+          /usr/include/GL,
+          /usr/include/GLES,
+          /usr/include/GLES2,
+          /usr/include/KHR,
+          /usr/include/VG,
+          /usr/lib/dri
         </seg>
 @z
 
@@ -273,21 +261,22 @@
 @z
 
 @x libEGL.so
-            provides a native platform graphics interface as defined by
-            the EGL-1.4 specification.
+            provides a native platform graphics interface as
+            defined by the EGL-1.4 specification.
 @y
-            provides a native platform graphics interface as defined by
-            the EGL-1.4 specification.
+            provides a native platform graphics interface as
+            defined by the EGL-1.4 specification.
 @z
 
 @x libGL.so
-            is the main OpenGL library.
+            is the main <application>Mesa</application> OpenGL library.
 @y
-            主要な OpenGL ライブラリ。
+            主要な <application>Mesa</application> OpenGL ライブラリ。
 @z
 
 @x libGLU.so
-            is the OpenGL Utility library.
+            is the <application>Mesa</application> OpenGL
+            Utility library.
 @y
-            OpenGL ユーティリティライブラリ。
+            <application>Mesa</application> OpenGL ユーティリティライブラリ。
 @z

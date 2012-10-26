@@ -132,13 +132,13 @@
       Install <application>GNOME Keyring</application> by running the
       following commands:
 @y
-    以下のコマンドを実行して <application>GNOME Keyring</application> をビルドします。
+      以下のコマンドを実行して <application>GNOME Keyring</application> をビルドします。
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -154,21 +154,19 @@
 @z
 
 @x
-      <parameter>--with-pam-dir=/lib/security</parameter>: This parameter
-      specifies where the pam modules will be installed: you can omit this if you
-      have not installed <application>Linux-PAM</application>.
+      <parameter>--with-pam-dir=/lib/security</parameter>: This switch
+      specifies where the PAM module will be installed.
 @y
       <parameter>--with-pam-dir=/lib/security</parameter>:
-      このパラメーターは pam モジュールのインストール先ディレクトリを指定します。
-      <application>Linux-PAM</application> をインストールしていない場合は、このパラメーターを取り除きます。
+      このスイッチは PAM モジュールのインストール先ディレクトリを指定します。
 @z
 
 @x
       <parameter>--with-root-certs=/etc/ssl/certs</parameter>: This
-      parameter specifies where the trusted root certificates are located.
+      switch specifies where the trusted root certificates are located.
 @y
       <parameter>--with-root-certs=/etc/ssl/certs</parameter>:
-      このパラメーターは、信頼できるルート証明書 (root cetificates) が収容されているディレクトリを指定します。
+      このスイッチは、信頼できるルート証明書 (root cetificates) が収容されているディレクトリを指定します。
 @z
 
 @x
@@ -180,7 +178,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -195,7 +193,8 @@
           gnome-keyring-pkcs11.so and pam_gnome_keyring.so
         </seg>
         <seg>
-          /usr/lib/gnome-keyring/devel
+          /usr/lib/gnome-keyring/devel and
+          /usr/lib/pkcs11
         </seg>
 @y
         <seg>
@@ -205,7 +204,8 @@
           gnome-keyring-pkcs11.so, pam_gnome_keyring.so
         </seg>
         <seg>
-          /usr/lib/gnome-keyring/devel
+          /usr/lib/gnome-keyring/devel,
+          /usr/lib/pkcs11
         </seg>
 @z
 

@@ -14,27 +14,19 @@
 @z
 
 @x
-  <!ENTITY check-time          "3.4 SBU (including about 3 SBU for the test suite)">
-@y
-  <!ENTITY check-time          "3.4 SBU (テストスイートでの 3 SBU を含む)">
-@z
-
-@x
     <title>Introduction to Check</title>
 @y
     <title>&IntroductionTo1;Check&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Check</application> is a unit testing framework for C.
-    It was installed by LFS in the temprary /tools directory.  These
-    instructions install it permanently.</para>
+      <application>Check</application> is a unit testing framework for C.
+      It was installed by LFS in the temprary /tools directory. These
+      instructions install it permanently.
 @y
-    <para>
-    <application>Check</application> は、C 言語に対してのユニットテストのフレームワークです。
-    LFS においては、一時的に /tools ディレクトリにインストールしていました。
-    本手順ではこれを常時利用するものとしてインストールします。
-    </para>
+      <application>Check</application> は、C 言語に対してのユニットテストのフレームワークです。
+      LFS においては、一時的に /tools ディレクトリにインストールしていました。
+      本手順ではこれを常時利用するものとしてインストールします。
 @z
 
 @x
@@ -44,33 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&check-download-http;"/></para>
+          Download (HTTP): <ulink url="&check-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&check-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&check-download-http;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &check-md5sum;</para>
+          Download (FTP): <ulink url="&check-download-ftp;"/>
 @y
-        <para>&Download; MD5 sum: &check-md5sum;</para>
+          &Download; (FTP): <ulink url="&check-download-ftp;"/>
 @z
 
 @x
-        <para>Download size: &check-size;</para>
+          Download MD5 sum: &check-md5sum;
 @y
-        <para>&DownloadSize;: &check-size;</para>
+          &Download; MD5 sum: &check-md5sum;
 @z
 
 @x
-        <para>Estimated disk space required: &check-buildsize;</para>
+          Download size: &check-size;
 @y
-        <para>&Estimateddiskspacerequired;: &check-buildsize;</para>
+          &DownloadSize;: &check-size;
 @z
 
 @x
-        <para>Estimated build time: &check-time;</para>
+          Estimated disk space required: &check-buildsize;
 @y
-        <para>&Estimatedbuildtime;: &check-time;</para>
+          &Estimateddiskspacerequired;: &check-buildsize;
+@z
+
+@x
+          Estimated build time: &check-time;
+@y
+          &Estimatedbuildtime;: &check-time;
 @z
 
 @x
@@ -86,28 +84,22 @@
 @z
 
 @x
-    <para>Install <application>Check</application> by running the following
-    commands:</para>
+      Install <application>Check</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Check</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Check</application> をビルドします。
 @z
 
 @x
-    <para>To test the installation, issue <userinput>make check</userinput>.</para>
+      To test the installation, issue <userinput>make check</userinput>.
 @y
-    <para>
-    ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。
-    </para>
+      ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -117,9 +109,9 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -127,13 +119,25 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libcheck.{so,a}</seg>
-        <seg>None</seg>
+        <seg>
+          checkmk
+        </seg>
+        <seg>
+          libcheck.so
+        </seg>
+        <seg>
+          /usr/share/doc/check-&check-version;
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libcheck.{so,a}</seg>
-        <seg>&None;</seg>
+        <seg>
+          checkmk
+        </seg>
+        <seg>
+          libcheck.so
+        </seg>
+        <seg>
+          /usr/share/doc/check-&check-version;
+        </seg>
 @z
 
 @x
@@ -142,10 +146,18 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libcheck.{so,a}
-          <para>contains the <application>Check</application> API functions.</para>
+@x checkmk
+            is an <application>Awk</application> script used for
+            generating C unit tests for use with the
+            <application>Check</application> unit testing framework.
 @y
-          <para>
-          <application>Check</application> API 関数を提供します。
-          </para>
+            is an <application>Awk</application> script used for
+            generating C unit tests for use with the
+            <application>Check</application> unit testing framework.
+@z
+
+@x libcheck.so
+            contains the <application>Check</application> API functions.
+@y
+            <application>Check</application> API 関数を提供します。
 @z

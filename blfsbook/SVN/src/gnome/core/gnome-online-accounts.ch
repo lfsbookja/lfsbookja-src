@@ -77,18 +77,22 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="gcr"/>,
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="librest"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="json-glib"/> and
       <xref linkend="webkitgtk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="gcr"/>,
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="librest"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="webkitgtk"/>
     </para>
@@ -109,12 +113,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="mitkrb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="mitkrb"/>
     </para>
 @z
 
@@ -153,17 +159,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--libexecdir=/usr/lib/gnome-online-accounts</parameter>:
-      This parameter ensures the <command>goa-demon</command> program is installed in
-      <filename class="directory">/usr/lib/gnome-online-accounts</filename> for
-      conformance with the FHS.
-@y
-      <parameter>--libexecdir=/usr/lib/gnome-online-accounts</parameter>:
-      このパラメーターは、FHS の基準に沿うように <command>goa-demon</command> を <filename
-      class="directory">/usr/lib/gnome-online-accounts</filename> にインストールします。
 @z
 
 @x
@@ -232,9 +227,8 @@
 @z
 
 @x libgoa-backend-1.0.so
-          <para>contains functions used by gnome-online-accounts backends.</para>
+            contains functions used by <application>GNOME Online Accounts</application>
+            backends.
 @y
-          <para>
-          gnome-online-accounts バックエンドにより利用される関数を提供します。
-          </para>
+            <application>GNOME Online Accounts</application> バックエンドにより利用される関数を提供します。
 @z

@@ -144,10 +144,11 @@
           gjs and gjs-console
         </seg>
         <seg>
-          libgjs-dbus.so, libgjs-gdbus.so and libgjs.so
+          libgjs-dbus.so and libgjs.so
         </seg>
         <seg>
           /usr/include/gjs-1.0,
+          /usr/lib/gjs,
           /usr/lib/gjs-1.0 and
           /usr/share/gjs-1.0
         </seg>
@@ -156,10 +157,11 @@
           gjs, gjs-console
         </seg>
         <seg>
-          libgjs-dbus.so, libgjs-gdbus.so, libgjs.so
+          libgjs-dbus.so, libgjs.so
         </seg>
         <seg>
           /usr/include/gjs-1.0,
+          /usr/lib/gjs,
           /usr/lib/gjs-1.0,
           /usr/share/gjs-1.0
         </seg>

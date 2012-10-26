@@ -188,16 +188,6 @@
 @z
 
 @x
-    <para><command>sed ...</command>: These commands change the configuration
-    directory to <filename class='directory'>/etc/ant</filename> to conform
-    with FHS guidelines.</para>
-@y
-    <para><command>sed ...</command>:
-    これらのコマンドは FHS ガイドラインに従って、設定ファイルの収容ディレクトリを <filename class='directory'>/etc/ant</filename> とします。
-    </para>
-@z
-
-@x
     <para><command>cp -v
     /usr/share/junit-&junit-version;/&junit-version;.jar ...</command>:
     This command copies the JUnit jar file into the directory where Apache Ant
@@ -223,24 +213,10 @@
 @z
 
 @x
-    <para><command>ln -v -sf /etc/ant /opt/ant-&apache-ant-version;/etc</command>:
-    The <command>sed</command> commands change the configuration directory to
-    <filename class='directory'>/etc/ant</filename> and this command creates a
-    symlink from the configuration directory back to the installation directory
-    as the package is expecting to find some files there.</para>
-@y
-    <para><command>ln -v -sf /etc/ant /opt/ant-&apache-ant-version;/etc</command>:
-    この <command>sed</command> コマンドは、設定ファイルの収容ディレクトリを <filename
-    class='directory'>/etc/ant</filename> に変更し、またインストールディレクトリからこの設定ファイルディレクトリへのシンボリックリンクを生成します。
-    本パッケージが設定ファイルのありかを見つけ出せるようにするためです。
-    </para>
-@z
-
-@x
-    <para><command>ln -v -sf ant-&apache-ant-version; /opt/ant</command>: This
+    <para><command>ln -v -sfn ant-&apache-ant-version; /opt/ant</command>: This
     command is optional, and creates a convenience symlink.</para>
 @y
-    <para><command>ln -v -sf ant-&apache-ant-version; /opt/ant</command>:
+    <para><command>ln -v -sfn ant-&apache-ant-version; /opt/ant</command>:
     このコマンドを実行するのは任意であり、有用なシンボリックリンクを生成します。
     </para>
 @z
@@ -304,12 +280,12 @@
 
 @x
         <seg>ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, and runant.py</seg>
-        <seg>ant.jar, ant-*.jar, xercesImpl.jar, and xml-apis.jar</seg>
-        <seg>/etc/ant and /opt/ant-&apache-ant-version;</seg>
+        <seg>ant*.jar</seg>
+        <seg>/opt/ant-&apache-ant-version;</seg>
 @y
         <seg>ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, runant.py</seg>
-        <seg>ant.jar, ant-*.jar, xercesImpl.jar, xml-apis.jar</seg>
-        <seg>/etc/ant, /opt/ant-&apache-ant-version;</seg>
+        <seg>ant*.jar</seg>
+        <seg>/opt/ant-&apache-ant-version;</seg>
 @z
 
 @x
@@ -380,23 +356,5 @@
 @y
           <para>
           <application>Apache Ant</application> の <application>Java</application> クラスライブラリです。
-          </para>
-@z
-
-@x xercesImpl.jar
-          <para>is a <application>Java</application> class library used by
-          <application>Apache Ant</application> to perform XML parsing.</para>
-@y
-          <para>
-          <application>Java</application> のクラスライブラリであり、<application>Apache Ant</application> により XML 解析を実現します。
-          </para>
-@z
-
-@x xml-apis.jar
-          <para>contains the DOM <application>Java</application> classes required
-          by the <application>Apache Ant</application> XML formatter.</para>
-@y
-          <para>
-          DOM の <application>Java</application> クラスであり、<application>Apache Ant</application> の XML フォーマッターが利用します。
           </para>
 @z

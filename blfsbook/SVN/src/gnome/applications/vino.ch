@@ -81,8 +81,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="intltool"/>,
-      <xref linkend="libgnome-keyring"/> and
+      <xref linkend="intltool"/> and
       <xref linkend="libsoup"/>
     </para>
 @y
@@ -90,7 +89,6 @@
     <para role="required">
       <xref linkend="gtk3"/>,
       <xref linkend="intltool"/>,
-      <xref linkend="libgnome-keyring"/>,
       <xref linkend="libsoup"/>
     </para>
 @z
@@ -99,6 +97,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libnotify"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="NetworkManager"/> and
       <xref linkend="telepathy-glib"/>
     </para>
@@ -106,6 +105,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libnotify"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="NetworkManager"/>,
       <xref linkend="telepathy-glib"/>
     </para>
@@ -156,26 +156,6 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--libexecdir=/usr/lib/vino</parameter>: This
-      parameter is used so that the <application>vino</application> internal
-      support programs are installed in the preferred location of <filename
-      class="directory">/usr/lib/vino</filename> instead of <filename
-      class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/vino</parameter>: This
-      parameter is used so that the <application>vino</application> internal
-      support programs are installed in the preferred location of <filename
-      class="directory">/usr/lib/vino</filename> instead of <filename
-      class="directory">/usr/libexec</filename>.
 @z
 
 @x

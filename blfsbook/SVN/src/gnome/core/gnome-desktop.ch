@@ -80,33 +80,29 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="DocBook"/>,
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gsettings-desktop-schemas"/> and
-      <xref linkend="gtk3"/>
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gtk3"/> and
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="DocBook"/>,
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="rarian"/> and
+      <xref linkend="gobject-introspection"/> and
       <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="rarian"/>,
       <xref linkend="startup-notification"/>
     </para>
 @z
@@ -190,9 +186,12 @@
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
-          /usr/share/gnome/help/{gpl,lgpl,fdl},
-          /usr/share/omf/{gpl,lgpl,fdl} and
-          /usr/share/gtk-doc/html/gnome-desktop3
+          /usr/lib/gnome-desktop-3.0,
+          /usr/share/help/*/gpl,
+          /usr/share/help/*/lgpl,
+          /usr/share/help/*/fdl,
+          /usr/share/gtk-doc/html/gnome-desktop3 and
+          /usr/share/libgnome-desktop-3.0
         </seg>
 @y
         <seg>
@@ -200,9 +199,12 @@
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
-          /usr/share/gnome/help/{gpl,lgpl,fdl},
-          /usr/share/omf/{gpl,lgpl,fdl},
-          /usr/share/gtk-doc/html/gnome-desktop3
+          /usr/lib/gnome-desktop-3.0,
+          /usr/share/help/*/gpl,
+          /usr/share/help/*/lgpl,
+          /usr/share/help/*/fdl,
+          /usr/share/gtk-doc/html/gnome-desktop3,
+          /usr/share/libgnome-desktop-3.0
         </seg>
 @z
 

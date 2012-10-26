@@ -130,7 +130,7 @@
 @x
     <para>Only <command>info</command> documentation is shipped in the package
     tarball. If you wish to build alternate formats of the documentation,
-    (you must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
+    (you must have <xref linkend="texlive"/>
     installed to build the PDF and PostScript), then issue the following
     commands:</para>
 @y

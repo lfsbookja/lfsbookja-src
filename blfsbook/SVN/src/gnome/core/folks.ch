@@ -84,15 +84,19 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="intltool"/>,
-      <xref linkend="libgee"/>, and
+      <xref linkend="libgee"/>,
+      <xref linkend="libzeitgeist"/> and
       <xref linkend="telepathy-glib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="intltool"/>,
       <xref linkend="libgee"/>,
+      <xref linkend="libzeitgeist"/>,
       <xref linkend="telepathy-glib"/>
     </para>
 @z
@@ -100,15 +104,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="evolution-data-server"/>,
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="evolution-data-server"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="evolution-data-server"/>,
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -154,9 +156,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue <command>make check</command>.
 @z
 
 @x
@@ -172,28 +174,28 @@
 @z
 
 @x
-      <option>--enable-vala</option>: This option enables
+      <option>--enable-vala</option>: This switch enables
       building of the Vala bindings. Remove if you don't have
       <xref linkend="vala"/> installed.
 @y
-      <option>--enable-vala</option>: This option enables
+      <option>--enable-vala</option>: This switch enables
       building of the Vala bindings. Remove if you don't have
       <xref linkend="vala"/> installed.
 @z
 
 @x
-      <option>--enable-tracker-backend</option>: This parameter enables
+      <option>--enable-tracker-backend</option>: This switch enables
       building of the the <application>Tracker</application> backend.
 @y
-      <option>--enable-tracker-backend</option>: This parameter enables
+      <option>--enable-tracker-backend</option>: This switch enables
       building of the the <application>Tracker</application> backend.
 @z
 
 @x
-      <option>--enable-docs</option>: This parameter enables
+      <option>--enable-docs</option>: This switch enables
       documentation generation.
 @y
-      <option>--enable-docs</option>: This parameter enables
+      <option>--enable-docs</option>: This switch enables
       documentation generation.
 @z
 
@@ -260,15 +262,15 @@
 @z
 
 @x libfolks-eds.so
-            contains Evolution-specific implementations of the libfolks classes.
+            contains Evolution specific implementations of the libfolks classes.
 @y
-            contains Evolution-specific implementations of the libfolks classes.
+            contains Evolution specific implementations of the libfolks classes.
 @z
 
 @x libfolks-libsocialweb.so
-            contains libsocialweb-specific implementations of the libfolks classes.
+            contains libsocialweb specific implementations of the libfolks classes.
 @y
-            contains libsocialweb-specific implementations of the libfolks classes.
+            contains libsocialweb specific implementations of the libfolks classes.
 @z
 
 @x libfolks.so
@@ -278,13 +280,13 @@
 @z
 
 @x libfolks-telepathy.so
-            contains Telepathy-specific implementations of the libfolks classes.
+            contains Telepathy specific implementations of the libfolks classes.
 @y
-            contains Telepathy-specific implementations of the libfolks classes.
+            contains Telepathy specific implementations of the libfolks classes.
 @z
 
 @x libfolks-tracker.so
-            contains Tracker-specific implementations of the libfolks classes.
+            contains Tracker specific implementations of the libfolks classes.
 @y
-            contains Tracker-specific implementations of the libfolks classes.
+            contains Tracker specific implementations of the libfolks classes.
 @z

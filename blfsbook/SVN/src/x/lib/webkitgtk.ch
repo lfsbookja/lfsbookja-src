@@ -78,26 +78,32 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="geoclue"/>,
       <xref linkend="gperf"/>,
+      <xref linkend="gst10-plugins-base"/> or
       <xref linkend="gst-plugins-base"/>,
-      <xref linkend="gtk3"/> or <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/> or
+      <xref linkend="gtk2"/>,
       <xref linkend="icu"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="mesalib"/>,
+      <xref linkend="ruby"/>,
       <xref linkend="sqlite"/> and
       <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="geoclue"/>,
       <xref linkend="gperf"/>,
+      <xref linkend="gst10-plugins-base"/> または
       <xref linkend="gst-plugins-base"/>,
-      <xref linkend="gtk3"/> または <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/> または
+      <xref linkend="gtk2"/>,
       <xref linkend="icu"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="mesalib"/>,
+      <xref linkend="ruby"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="which"/>
     </para>
@@ -106,11 +112,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="geoclue"/> and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="geoclue"/>,
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -146,37 +154,35 @@
 @z
 
 @x
-      If you have <application>pkg-config 0.23</application> or older installed
-      fix a bug in the configure script that will stop it detecting
-      <application>Gstreamer</application> correctly: 
+        If you are building <application>WebKitGTK+</application>
+        with <command>make</command> 3.82, make sure that you have built
+        it with the following
+        <ulink url="&patch-downloads;/make/make-3.82-upstream_fixes-3.patch">
+        patch</ulink> applied or <application>WebKitGTK+</application>
+        build will fail.
 @y
-      If you have <application>pkg-config 0.23</application> or older installed
-      fix a bug in the configure script that will stop it detecting
-      <application>Gstreamer</application> correctly: 
+        If you are building <application>WebKitGTK+</application>
+        with <command>make</command> 3.82, make sure that you have built
+        it with the following
+        <ulink url="&patch-downloads;/make/make-3.82-upstream_fixes-3.patch">
+        patch</ulink> applied or <application>WebKitGTK+</application>
+        build will fail.
 @z
 
 @x
-      <application>WebKitGTK+</application> takes a long time to compile, so if you
-      have a multicore CPU it can be useful to speed up the build by running
-      make with multiple jobs.
+      If you have not installed <xref linkend="gtk-doc"/>, fix a bug that will
+      cause <command>make install</command> to fail:
 @y
-      <application>WebKitGTK+</application> のコンパイルには時間がかかります。
-      マルチコア CPU で処理をする場合には、マルチ処理によりビルド実行を行えば、処理を早く実現することができます。
+      If you have not installed <xref linkend="gtk-doc"/>, fix a bug that will
+      cause <command>make install</command> to fail:
 @z
 
 @x
-      If you want to run make with just one core, install
-      <application>WebKitGTK+</application> by running the following commands:
-@y
-      シングルコア CPU にてビルド実行する場合は、以下のコマンドにより <application>WebKitGTK+</application> をビルドします。
-@z
-
-@x
-      If you have a multicore CPU and want to run make with multiple jobs
-      running in parallel, install <application>WebKitGTK+</application> with the
+      Install <application>WebKitGTK+</application> by running the
       following commands:
 @y
-      マルチコア CPU にてマルチ処理によりビルドを実行する場合は、以下のコマンドにより <application>WebKitGTK+</application> をビルドします。
+      Install <application>WebKitGTK+</application> by running the
+      following commands:
 @z
 
 @x
@@ -198,11 +204,11 @@
 @z
 
 @x
-      <option>--enable-introspection</option>: This option enables support for
-      <application>GObject Introspection</application> and is required for a
-      <application>GNOME</application> Desktop. If you don't have
-      <application>Gobject Introspection</application> installed and don't want
-      to install <application>GNOME</application> remove this option.
+      <option>--enable-introspection</option>: This switch enables support for
+      <application>Gobject Introspection</application> and is required for a
+      <application>GNOME</application> Desktop. Remove if you don't have
+      <application>Gobject Introspection</application> installed or you don't
+      want to install <application>GNOME</application>.
 @y
       <option>--enable-introspection</option>:
       このオプションは <application>GObject Introspection</application> サポートを有効にします。
@@ -232,27 +238,27 @@
         </seg>
         <seg>
           libjavascriptcoregtk-1.0.so and libwebkit-1.0.so or
-          libjavascriptcoregtk-3.0.so and libwebkit-3.0.so and
-          optionaly libwebkit2gtk-3.0.so
+          libjavascriptcoregtk-3.0.so, libwebkit2gtk-3.0.so and
+          libwebkit-3.0.so
         </seg>
         <seg>
           /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
-          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 and
-          optionaly /usr/lib/WebKit
+          /usr/include/webkit-3.0, /usr/lib/WebKit and
+          /usr/share/webkit-3.0
         </seg>
 @y
         <seg>
           jsc-1 または jsc-3
         </seg>
         <seg>
-          libjavascriptcoregtk-1.0.so and libwebkit-1.0.so or
-          libjavascriptcoregtk-3.0.so and libwebkit-3.0.so and
-          optionaly libwebkit2gtk-3.0.so
+          libjavascriptcoregtk-1.0.so, libwebkit-1.0.so または
+          libjavascriptcoregtk-3.0.so, libwebkit2gtk-3.0.so,
+          libwebkit-3.0.so
         </seg>
         <seg>
-          /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
-          /usr/include/webkit-3.0 and /usr/share/webkit-3.0 and
-          optionaly /usr/lib/WebKit
+          /usr/include/webkit-1.0, /usr/share/webkit-1.0 または
+          /usr/include/webkit-3.0, /usr/lib/WebKit,
+          /usr/share/webkit-3.0
         </seg>
 @z
 

@@ -122,7 +122,7 @@
 @z
 
 @x
-    <para>If you have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
+    <para>If you have <xref linkend="texlive"/>
     installed and you wish to create documentation in alternate formats, issue
     the following command:</para>
 @y

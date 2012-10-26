@@ -25,9 +25,13 @@ CHANGE_FILES = \
 	gst-plugins-base.ch   \
 	gst-plugins-good.ch   \
 	gst-plugins-ugly.ch   \
+	gst10-libav.ch        \
 	gst10-plugins-bad.ch  \
+	gst10-plugins-base.ch \
 	gst10-plugins-good.ch \
+	gst10-plugins-ugly.ch \
 	gstreamer.ch          \
+	gstreamer10.ch        \
 	liba52.ch             \
 	libao.ch              \
 	libcanberra.ch        \
@@ -54,7 +58,6 @@ CHANGE_FILES = \
 	pulseaudio.ch         \
 	sdl.ch                \
 	soundtouch.ch         \
-	sound-theme-freedesktop.ch \
 	speex.ch              \
 	taglib.ch             \
 	xine-lib.ch           \
@@ -93,9 +96,13 @@ gst-plugins-bad.xml:         $(BOOKdir)/$@ $(srcdir)/gst-plugins-bad.ch $(srcdir
 gst-plugins-base.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-base.ch
 gst-plugins-good.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-good.ch
 gst-plugins-ugly.xml:        $(BOOKdir)/$@ $(srcdir)/gst-plugins-ugly.ch
+gst10-libav.xml:             $(BOOKdir)/$@ $(srcdir)/gst10-libav.ch
 gst10-plugins-bad.xml:       $(BOOKdir)/$@ $(srcdir)/gst10-plugins-bad.ch
+gst10-plugins-base.xml:      $(BOOKdir)/$@ $(srcdir)/gst10-plugins-base.ch
 gst10-plugins-good.xml:      $(BOOKdir)/$@ $(srcdir)/gst10-plugins-good.ch
+gst10-plugins-ugly.xml:      $(BOOKdir)/$@ $(srcdir)/gst10-plugins-ugly.ch
 gstreamer.xml:               $(BOOKdir)/$@ $(srcdir)/gstreamer.ch
+gstreamer10.xml:             $(BOOKdir)/$@ $(srcdir)/gstreamer10.ch
 liba52.xml:                  $(BOOKdir)/$@ $(srcdir)/liba52.ch
 libao.xml:                   $(BOOKdir)/$@ $(srcdir)/libao.ch
 libcanberra.xml:             $(BOOKdir)/$@ $(srcdir)/libcanberra.ch
@@ -122,7 +129,6 @@ opal.xml:                    $(BOOKdir)/$@ $(srcdir)/opal.ch
 pulseaudio.xml:              $(BOOKdir)/$@ $(srcdir)/pulseaudio.ch
 sdl.xml:                     $(BOOKdir)/$@ $(srcdir)/sdl.ch
 soundtouch.xml:              $(BOOKdir)/$@ $(srcdir)/soundtouch.ch
-sound-theme-freedesktop.xml: $(BOOKdir)/$@ $(srcdir)/sound-theme-freedesktop.ch
 speex.xml:                   $(BOOKdir)/$@ $(srcdir)/speex.ch
 taglib.xml:                  $(BOOKdir)/$@ $(srcdir)/taglib.ch
 xine-lib.xml:                $(BOOKdir)/$@ $(srcdir)/xine-lib.ch

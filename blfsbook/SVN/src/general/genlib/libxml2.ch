@@ -20,11 +20,10 @@
 @z
 
 @x
-      The <application>libxml2</application> package contains XML libraries.
-      These are useful for parsing XML files.
+      The <application>libxml2</application> package contains libraries
+      and utilities used for parsing XML files.
 @y
-      <application>libxml2</application> パッケージは XML ライブラリを提供します。
-      XML ファイルの処理に用いられます。
+      <application>libxml2</application> パッケージは、XML ファイルを解析するライブラリやユーティリティーを提供します。
 @z
 
 @x
@@ -34,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libxml2-download-http;"/></para>
+          Download (HTTP): <ulink url="&libxml2-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libxml2-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libxml2-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libxml2-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libxml2-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libxml2-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libxml2-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libxml2-md5sum;</para>
+          Download MD5 sum: &libxml2-md5sum;
 @y
-        <para>&Download; MD5 sum: &libxml2-md5sum;</para>
+          &Download; MD5 sum: &libxml2-md5sum;
 @z
 
 @x
-        <para>Download size: &libxml2-size;</para>
+          Download size: &libxml2-size;
 @y
-        <para>&DownloadSize;: &libxml2-size;</para>
+          &DownloadSize;: &libxml2-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libxml2-buildsize;</para>
+          Estimated disk space required: &libxml2-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libxml2-buildsize;</para>
+          &Estimateddiskspacerequired;: &libxml2-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libxml2-time;</para>
+          Estimated build time: &libxml2-time;
 @y
-        <para>&Estimatedbuildtime;: &libxml2-time;</para>
+          &Estimatedbuildtime;: &libxml2-time;
 @z
 
 @x
@@ -111,7 +110,7 @@
         Some packages which utilize <application>libxml2</application> (such as
         <application>GNOME Doc Utils</application>) need the
         <application>Python</application> module installed to function properly
-        and some packages (such as GNOME Panel) will not build properly if the
+        and some packages (such as MesaLib) will not build properly if the
         <application>Python</application> module is not available.
 @y
         <application>libxml2</application> を利用するパッケージの中には <application>Python</application> モジュールがないと正しく動作しないものがあります。
@@ -148,11 +147,9 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    コンパイル結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -168,12 +165,12 @@
 @z
 
 @x
-      <option>--with-history</option>: If this option is used, it enables
+      <option>--with-history</option>: If this switch is used, it enables
       <application>Readline</application> support when running
       <command>xmlcatalog</command> or <command>xmllint</command> in shell mode.
 @y
       <parameter>--with-history</parameter>:
-      このオプションを指定すれば <command>xmlcatalog</command> や <command>xmllint</command> をシェルモードで実行する際に <application>Readline</application> サポートを利用することができます。
+      このスイッチを指定すれば <command>xmlcatalog</command> や <command>xmllint</command> をシェルモードで実行する際に <application>Readline</application> サポートを利用することができます。
 @z
 
 @x
@@ -194,9 +191,7 @@
 
 @x
         <seg>
-          xml2-config,
-          xmlcatalog and
-          xmllint
+          xml2-config, xmlcatalog and xmllint
         </seg>
         <seg>
           libxml2.so and optionally, the libxml2mod.so
@@ -210,12 +205,10 @@
         </seg>
 @y
         <seg>
-          xml2-config,
-          xmlcatalog,
-          xmllint
+          xml2-config, xmlcatalog and xmllint
         </seg>
         <seg>
-          libxml2.so さらに任意として libxml2mod.so
+          libxml2.so, また任意のビルドとして libxml2mod.so
           <application>Python</application> モジュール
         </seg>
         <seg>

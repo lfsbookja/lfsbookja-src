@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mysql-buildsize     "930 MB (additional 170 MB to run the test suite)">
-  <!ENTITY mysql-time          "4.4 SBU (Test suite is an additional 45 minutes, only partially CPU dependent)">
+  <!ENTITY mysql-buildsize     "932 MB (additional 170 MB to run the test suite)">
+  <!ENTITY mysql-time          "4.0 SBU (Test suite is an additional 45 minutes, only partially CPU dependent)">
 @y
-  <!ENTITY mysql-buildsize     "930 MB (テストスイート実行時はさらに 170 MB)">
-  <!ENTITY mysql-time          "4.4 SBU (テストスイート実行時はさらに 45 分; ただしある程度 CPU に依存)">
+  <!ENTITY mysql-buildsize     "932 MB (テストスイート実行時はさらに 170 MB)">
+  <!ENTITY mysql-time          "4.0 SBU (テストスイート実行時はさらに 45 分; ただしある程度 CPU に依存)">
 @z
 
 @x

@@ -77,13 +77,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/> and
       <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="yelp-xsl"/>
     </para>
 @z
@@ -133,29 +131,12 @@
 
 @x
         <seg>
-          /usr/share/help/*/gnome-help
+          /usr/share/help/*/gnome-help and
+          /usr/share/help/*/system-admin-guide
         </seg>
 @y
         <seg>
-          /usr/share/help/*/gnome-help
+          /usr/share/help/*/gnome-help,
+          /usr/share/help/*/system-admin-guide
         </seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x
-        <term>OMF files</term>
-@y
-        <term>OMF ファイル</term>
-@z
-@x
-            contain user documentation. These include introductions
-            and help on the core packages.
-@y
-            ユーザードキュメントを提供します。
-            GNOME コアパッケージの概略説明やヘルプが含まれます。
 @z

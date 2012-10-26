@@ -135,9 +135,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -153,37 +153,25 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/vte</parameter>: This parameter
-      causes <command>gnome-pty-helper</command> to be installed in the preferred
-      location of  <filename class="directory">/usr/lib/vte</filename>
-      instead of <filename class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/vte</parameter>:
-      このパラメーターは <command>gnome-pty-helper</command> のインストール先を <filename
-      class="directory">/usr/libexec</filename> ではなく、より適切な <filename
-      class="directory">/usr/lib/vte</filename> とします。
-@z
-
-@x
-      <option>--with-glX</option>: This parameter can be passed to
-      the <command>configure</command> script to enable additional
-      drawing methods in the <application>VTE</application> library.
-@y
-      <option>--with-glX</option>: This parameter can be passed to
-      the <command>configure</command> script to enable additional
-      drawing methods in the <application>VTE</application> library.
-@z
-
-@x
-      <option>--enable-introspection</option>: This option enables
-      <application>GObject Introspection</application> bindings.
+      <option>--enable-introspection</option>: This switch enables
+      <application>Gobject Introspection</application> bindings.
       Remove if you don't have <xref linkend="gobject-introspection"/>
       installed.
 @y
-      <option>--enable-introspection</option>: This option enables
-      <application>GObject Introspection</application> bindings.
+      <option>--enable-introspection</option>: This switch enables
+      <application>Gobject Introspection</application> bindings.
       Remove if you don't have <xref linkend="gobject-introspection"/>
       installed.
+@z
+
+@x
+      <option>--with-glX</option>: This switch can be passed to
+      the <command>configure</command> script to enable additional
+      drawing methods in the <application>VTE</application> library.
+@y
+      <option>--with-glX</option>: This switch can be passed to
+      the <command>configure</command> script to enable additional
+      drawing methods in the <application>VTE</application> library.
 @z
 
 @x
@@ -211,7 +199,7 @@
         </seg>
         <seg>
           /usr/include/vte-2.90,
-          /usr/lib/vte and
+          /usr/lib/vte-2.90 and
           /usr/share/gtk-doc/html/vte-2.90
         </seg>
 @y
@@ -223,7 +211,7 @@
         </seg>
         <seg>
           /usr/include/vte-2.90,
-          /usr/lib/vte,
+          /usr/lib/vte-2.90,
           /usr/share/gtk-doc/html/vte-2.90
         </seg>
 @z
@@ -243,8 +231,8 @@
 
 @x libvte2_90.so
             is a library which implements a terminal emulator
-            widget for <application>GTK+-3</application>.
+            widget for <application>GTK+ 3</application>.
 @y
             is a library which implements a terminal emulator
-            widget for <application>GTK+-3</application>.
+            widget for <application>GTK+ 3</application>.
 @z

@@ -78,16 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gst2"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="evolution-data-server"/>,
       <xref linkend="folks"/>,
-      <xref linkend="gcr"/>,
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gnome-online-accounts"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="pulseaudio"/>,
-      <xref linkend="sound-theme-freedesktop"/>,
       <xref linkend="telepathy-farstream"/>,
       <xref linkend="telepathy-logger"/>,
       <xref linkend="telepathy-mission-control"/> and
@@ -96,16 +92,12 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gst"/>,
+      <xref linkend="clutter-gst2"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="evolution-data-server"/>,
       <xref linkend="folks"/>,
-      <xref linkend="gcr"/>,
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gnome-online-accounts"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="pulseaudio"/>,
-      <xref linkend="sound-theme-freedesktop"/>,
       <xref linkend="telepathy-farstream"/>,
       <xref linkend="telepathy-logger"/>,
       <xref linkend="telepathy-mission-control"/>,
@@ -116,16 +108,20 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="enchant"/> and
       <xref linkend="iso-codes"/>,
       <xref linkend="nautilus-sendto"/> and
-      <xref linkend="NetworkManager"/>
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="enchant"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="nautilus-sendto"/>,
-      <xref linkend="NetworkManager"/>
+      <xref linkend="udev"/> または
+      <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @z
 
@@ -133,27 +129,23 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cheese"/>,
-      <xref linkend="enchant"/>,
+      <xref linkend="geoclue"/>,
       <ulink url="&gnome-download-http;/geocode-glib">
       geocode-glib</ulink>,
       <ulink url="http://projects.gnome.org/libchamplain/">
-      libchamplain</ulink>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink> and
-      <xref linkend="udev"/> or
-      <xref linkend="udev-extras"/> (for GUdev)
+      libchamplain</ulink> and
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cheese"/>,
-      <xref linkend="enchant"/>,
+      <xref linkend="geoclue"/>,
       <ulink url="&gnome-download-http;/geocode-glib">
       geocode-glib</ulink>,
       <ulink url="http://projects.gnome.org/libchamplain/">
       libchamplain</ulink>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink> and
-      <xref linkend="udev"/> or
-      <xref linkend="udev-extras"/> (for GUdev)
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @z
 
@@ -221,19 +213,6 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/empathy</parameter>: This
-      parameter is used so that the <application>Empathy</application> internal
-      support programs are installed in the preferred location of <filename
-      class="directory">/usr/lib/empathy</filename> instead of <filename
-      class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/empathy</parameter>:
-      本パラメーターは <application>Empathy</application> の内部プログラムのインストール先を <filename
-      class='directory'>/usr/libexec</filename> ではなく、より適切な <filename
-      class='directory'>/usr/lib/empathy</filename> とします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -254,6 +233,7 @@
         <seg>
           /usr/lib/empathy,
           /usr/lib/mission-control-plugins.0,
+          /usr/share/adium,
           /usr/share/empathy and
           /usr/share/help/*/empathy
         </seg>
@@ -264,6 +244,7 @@
         <seg>
           /usr/lib/empathy,
           /usr/lib/mission-control-plugins.0,
+          /usr/share/adium,
           /usr/share/empathy,
           /usr/share/help/*/empathy
         </seg>

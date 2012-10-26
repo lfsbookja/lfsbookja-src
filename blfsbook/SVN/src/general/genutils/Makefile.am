@@ -7,30 +7,29 @@
 ##
 BOOKdir = $(top_builddir)/@bookdir@/general/genutils
 CHANGE_FILES = \
-	apr-util.ch \
-	bc.ch \
-	compface.ch \
+	apr-util.ch           \
+	bc.ch                 \
+	compface.ch           \
 	desktop-file-utils.ch \
-	genutils.ch \
-	gperf.ch \
-	graphviz.ch \
-	gtk-doc.ch \
-	hd2u.ch \
-	icon-naming-utils.ch \
-	imagemagick.ch \
-	intltool.ch \
-	pinentry.ch \
-	rep-gtk.ch \
-	rxvt-unicode.ch \
-	screen.ch \
-	tidy.ch \
-	unixodbc.ch \
-	xscreensaver.ch \
-	rarian.ch \
-	libiodbc.ch \
-	sharutils.ch \
-	spidermonkey.ch \
-	autogen.ch
+	genutils.ch           \
+	gperf.ch              \
+	graphviz.ch           \
+	gtk-doc.ch            \
+	hd2u.ch               \
+	icon-naming-utils.ch  \
+	imagemagick.ch        \
+	intltool.ch           \
+	libiodbc.ch           \
+	pinentry.ch           \
+	rarian.ch             \
+	rep-gtk.ch            \
+	rxvt-unicode.ch       \
+	screen.ch             \
+	sharutils.ch          \
+	spidermonkey.ch       \
+	tidy.ch               \
+	unixodbc.ch           \
+	xscreensaver.ch 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -67,4 +66,3 @@ rarian.xml:             $(BOOKdir)/$@ $(srcdir)/rarian.ch
 libiodbc.xml:           $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 sharutils.xml:          $(BOOKdir)/$@ $(srcdir)/sharutils.ch
 spidermonkey.xml:       $(BOOKdir)/$@ $(srcdir)/spidermonkey.ch
-autogen.xml:            $(BOOKdir)/$@ $(srcdir)/autogen.ch

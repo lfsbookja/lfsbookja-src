@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY openldap-time          "3.8 SBU and approximately 35 minutes to run the tests (processor independent)">
-@y
-  <!ENTITY openldap-time          "3.8 SBU and approximately 35 minutes to run the tests (processor independent)">
-@z
-
-@x
     <title>Introduction to OpenLDAP</title>
 @y
     <title>&IntroductionTo1;OpenLDAP&IntroductionTo2;</title>

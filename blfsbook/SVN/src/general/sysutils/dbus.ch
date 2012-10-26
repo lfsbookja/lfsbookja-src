@@ -92,13 +92,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="expat"/> (preferred) or
+      <xref linkend="expat"/> or
       <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="expat"/> (推奨) または <xref linkend="libxml2"/>
+      <xref linkend="expat"/> または
+      <xref linkend="libxml2"/>
     </para>
 @z
 
@@ -219,27 +220,13 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This will
-      ensure that <application>D-Bus</application> internal support
-      program is installed in the prefered directory
-      <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
-      <filename class="directory">/usr/libexec</filename>.
-@y
-      <parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This will
-      ensure that <application>D-Bus</application> internal support
-      program is installed in the prefered directory
-      <filename class="directory">/usr/lib/dbus-1.0</filename> instead of
-      <filename class="directory">/usr/libexec</filename>.
-@z
-
-@x
       <parameter>--with-console-auth-dir=/run/console/</parameter>: This
       parameter specifies location of the
-      <application>ConsoleKit</application>  auth dir.
+      <application>ConsoleKit</application> auth dir.
 @y
       <parameter>--with-console-auth-dir=/run/console/</parameter>: This
       parameter specifies location of the
-      <application>ConsoleKit</application>  auth dir.
+      <application>ConsoleKit</application> auth dir.
 @z
 
 @x

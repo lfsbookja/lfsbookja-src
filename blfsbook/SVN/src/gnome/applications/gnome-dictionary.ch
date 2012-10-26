@@ -77,14 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/> and
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/> and
+      <xref linkend="yelp-xsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="yelp-xsl"/>
     </para>
 @z
 
@@ -163,10 +163,9 @@
         <seg>
           /usr/include/gdict-1.0,
           /usr/share/gdict-1.0,
-          /usr/share/gnome/help/gnome-dictionary,
-          /usr/share/gtk-doc/html/gdict,
-          /usr/share/gnome-dictionary and
-          /usr/share/omf/gnome-dictionary
+          /usr/share/gnome-dictionary,
+          /usr/share/gtk-doc/html/gdict and
+          /usr/share/help/*/gnome-dictionary
         </seg>
 @y
         <seg>
@@ -178,10 +177,9 @@
         <seg>
           /usr/include/gdict-1.0,
           /usr/share/gdict-1.0,
-          /usr/share/gnome/help/gnome-dictionary,
-          /usr/share/gtk-doc/html/gdict,
           /usr/share/gnome-dictionary,
-          /usr/share/omf/gnome-dictionary
+          /usr/share/gtk-doc/html/gdict,
+          /usr/share/help/*/gnome-dictionary
         </seg>
 @z
 

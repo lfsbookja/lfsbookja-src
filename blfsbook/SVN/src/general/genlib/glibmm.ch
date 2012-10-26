@@ -139,8 +139,10 @@
           libglibmm_generate_extra_defs-2.4.so
         </seg>
         <seg>
-          /usr/include/{giomm-2.4,glibmm-2.4},
-          /usr/lib/{giomm-2.4,glibmm-2.4},
+          /usr/include/giomm-2.4,
+          /usr/include/glibmm-2.4,
+          /usr/lib/giomm-2.4,
+          /usr/lib/glibmm-2.4,
           /usr/share/devhelp/books/glibmm-2.4 and
           /usr/share/doc/glibmm-2.4
         </seg>
@@ -150,8 +152,10 @@
           libglibmm_generate_extra_defs-2.4.so
         </seg>
         <seg>
-          /usr/include/{giomm-2.4,glibmm-2.4},
-          /usr/lib/{giomm-2.4,glibmm-2.4},
+          /usr/include/giomm-2.4,
+          /usr/include/glibmm-2.4,
+          /usr/lib/giomm-2.4,
+          /usr/lib/glibmm-2.4,
           /usr/share/devhelp/books/glibmm-2.4,
           /usr/share/doc/glibmm-2.4
         </seg>

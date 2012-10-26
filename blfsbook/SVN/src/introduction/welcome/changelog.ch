@@ -54,6 +54,52 @@
 @z
 
 @x ----------------------------------------
+      <para>September 15th, 2012</para>
+@y
+      <para>2012/09/15</para>
+@z ----------------------------------------
+@x
+          <para>[rthomsen] - Modify Qt instructions to set the $QTDIR
+          environment variable even when installing Qt in /usr. This is needed
+          by KDE packages.</para>
+@y
+          <para>[rthomsen] - 
+          Qt の手順にて、Qt を /usr にインストールしている場合でも環境変数 $QTDIR セットすることに。
+          これは各種 KDE パッケージにて必要。</para>
+@z
+@x
+          <para>[rthomsen] - Modify Phonon instructions so D-Bus files get
+          installed in the correct location.</para>
+@y
+          <para>[rthomsen] - 
+          Phonon の手順を修正し、D-Bus ファイルが適切なディレクトリにインストールされるように。
+          </para>
+@z
+
+@x ----------------------------------------
+      <para>September 14th, 2012</para>
+@y
+      <para>2012/09/14</para>
+@z ----------------------------------------
+@x
+          <para>[bdubbs] - Update to poppler-0.20.4.</para>
+@y
+          <para>[bdubbs] - poppler-0.20.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to doxygen-1.8.2.</para>
+@y
+          <para>[bdubbs] - doxygen-1.8.2 へのアップデート。</para>
+@z
+@x
+          <para>[ken] - Change the comment about ffmpeg functionality
+          in transcode to a note.</para>
+@y
+          <para>[ken] - transcode において ffmpeg 機能に関する注記を変更。
+          </para>
+@z
+
+@x ----------------------------------------
       <para>September 9th, 2012</para>
 @y
       <para>2012/09/09</para>

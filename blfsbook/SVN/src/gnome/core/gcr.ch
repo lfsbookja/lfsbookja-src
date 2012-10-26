@@ -22,11 +22,13 @@
 @x
       The <application>Gcr</application> package contains libraries used
       for displaying certificates and accessing key stores. It also
-      provides the viewer for crypto files on the GNOME Desktop.
+      provides the viewer for crypto files on the
+      <application>GNOME</application> Desktop.
 @y
       The <application>Gcr</application> package contains libraries used
       for displaying certificates and accessing key stores. It also
-      provides the viewer for crypto files on the GNOME Desktop.
+      provides the viewer for crypto files on the
+      <application>GNOME</application> Desktop.
 @z
 
 @x
@@ -112,12 +114,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gnupg"/> or
+      <xref linkend="gnupg2"/>,
       <xref linkend="gtk-doc"/> and
       <ulink url="http://www.valgrind.org">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gnupg"/> or
+      <xref linkend="gnupg2"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="http://www.valgrind.org">Valgrind</ulink>
     </para>
@@ -185,10 +191,12 @@
           libmock-test-module.so
         </seg>
         <seg>
-          /usr/include/{gck-1,gcr-3},
+          /usr/include/gck-1,
+          /usr/include/gcr-3,
           /usr/lib/gnome-keyring,
-          /usr/share/gcr-3 and
-          /usr/share/gtk-doc/html/{gck,gcr-3}
+          /usr/share/gcr-3,
+          /usr/share/gtk-doc/html/gck and
+          /usr/share/gtk-doc/html/gcr-3
         </seg>
 @y
         <seg>
@@ -199,10 +207,12 @@
           libmock-test-module.so
         </seg>
         <seg>
-          /usr/include/{gck-1,gcr-3},
+          /usr/include/gck-1,
+          /usr/include/gcr-3,
           /usr/lib/gnome-keyring,
           /usr/share/gcr-3,
-          /usr/share/gtk-doc/html/{gck,gcr-3}
+          /usr/share/gtk-doc/html/gck,
+          /usr/share/gtk-doc/html/gcr-3
         </seg>
 @z
 

@@ -78,28 +78,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gsettings-desktop-schemas"/> and
       <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-doc-utils"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="rarian"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="rarian"/>
     </para>
 @z
 
@@ -135,12 +121,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -148,7 +128,7 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
@@ -159,18 +139,14 @@
           mousetweaks
         </seg>
         <seg>
-          /usr/share/gnome/help/mousetweaks,
-          /usr/share/mousetweaks and
-          /usr/share/omf/mousetweaks
+          /usr/share/mousetweaks
         </seg>
 @y
         <seg>
           mousetweaks
         </seg>
         <seg>
-          /usr/share/gnome/help/mousetweaks,
-          /usr/share/mousetweaks,
-          /usr/share/omf/mousetweaks
+          /usr/share/mousetweaks
         </seg>
 @z
 

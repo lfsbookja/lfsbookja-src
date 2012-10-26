@@ -133,16 +133,6 @@
 @z
 
 @x
-      <parameter>--disable-tests</parameter>: This parameter disable test
-      libraries. Remove the parameter if you have <application>Cairo</application>
-      installed and would like the tests to be performed.
-@y
-      <parameter>--disable-tests</parameter>:
-      このパラメーターによりテストライブラリをビルドしません。
-      <application>Cairo</application> をインストールしていて、かつテストを実施したい場合は、このパラメーターを取り除いてください。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -168,8 +158,10 @@
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,
-          /usr/lib/{girepository-1.0,gobject-introspection},
-          /usr/share/{gir-1.0,gobject-introspection-1.0} and
+          /usr/lib/girepository-1.0,
+          /usr/lib/gobject-introspection,
+          /usr/share/gir-1.0,
+          /usr/share/gobject-introspection-1.0 and
           /usr/share/gtk-doc/html/gi
         </seg>
 @y
@@ -182,8 +174,10 @@
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,
-          /usr/lib/{girepository-1.0,gobject-introspection},
-          /usr/share/{gir-1.0,gobject-introspection-1.0},
+          /usr/lib/girepository-1.0,
+          /usr/lib/gobject-introspection,
+          /usr/share/gir-1.0,
+          /usr/share/gobject-introspection-1.0,
           /usr/share/gtk-doc/html/gi
         </seg>
 @z

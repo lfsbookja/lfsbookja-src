@@ -152,24 +152,6 @@
 @z
 
 @x
-    <para><parameter>--prefix=$GNOME_PREFIX</parameter>: This is the base
-    installation for <application>GNOME-2</application> from which all future
-    package installations will receive their prefix parameter. Be sure that
-    <envar>$GNOME_PREFIX</envar> is set for this install or globally to your
-    install directory as described in the introduction of this Chapter.</para>
-@y
-    <para>
-    <parameter>--prefix=$GNOME_PREFIX</parameter>:
-    
-    This is the base
-    installation for <application>GNOME-2</application> from which all future
-    package installations will receive their prefix parameter. Be sure that
-    <envar>$GNOME_PREFIX</envar> is set for this install or globally to your
-    install directory as described in the introduction of this Chapter.
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
