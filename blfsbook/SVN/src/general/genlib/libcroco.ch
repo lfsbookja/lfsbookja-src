@@ -120,9 +120,10 @@
 @z
 
 @x
-      This package does not have a working testsuite.
+      To run the test suite, run 
+      <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command>.
 @y
-      &notTestSuite;
+      テストスイートを実行する場合は <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command> を実行します。
 @z
 
 @x

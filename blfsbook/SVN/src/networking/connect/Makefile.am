@@ -9,8 +9,7 @@ BOOKdir = $(top_builddir)/@bookdir@/networking/connect
 CHANGE_FILES = \
 	connect.ch       \
 	dhcp.ch          \
-	dhcpcd.ch        \
-        ppp.ch
+	dhcpcd.ch 
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -28,4 +27,3 @@ ctie:
 connect.xml:     $(BOOKdir)/$@ $(srcdir)/connect.ch
 dhcp.xml:        $(BOOKdir)/$@ $(srcdir)/dhcp.ch
 dhcpcd.xml:      $(BOOKdir)/$@ $(srcdir)/dhcpcd.ch
-ppp.xml:         $(BOOKdir)/$@ $(srcdir)/ppp.ch

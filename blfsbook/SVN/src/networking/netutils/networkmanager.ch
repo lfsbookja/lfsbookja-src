@@ -130,8 +130,7 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
-      ModemManager</ulink>,
-      <xref linkend="ppp"/> and
+      ModemManager</ulink>, and
       <xref linkend="wpa_supplicant"/> (Built with D-Bus support).
     </para>
 @y
@@ -140,7 +139,6 @@
       <xref linkend="gtk-doc"/>,
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
       ModemManager</ulink>,
-      <xref linkend="ppp"/>,
       <xref linkend="wpa_supplicant"/> (DBus サポートがビルドされたもの)
     </para>
 @z
@@ -193,11 +191,11 @@
 @x
       <option>--disable-ppp</option>: This parameter disables optional
       <application>PPP</application> support in <application>NetworkManager</application>.
-      Omit if you have <xref linkend="ppp"/> installed.
+      <!-- Omit if you have <xref linkend="ppp"/> installed. -->
 @y
       <option>--disable-ppp</option>: This parameter disables optional
       <application>PPP</application> support in <application>NetworkManager</application>.
-      Omit if you have <xref linkend="ppp"/> installed.
+      <!-- Omit if you have <xref linkend="ppp"/> installed. -->
 @z
 
 @x

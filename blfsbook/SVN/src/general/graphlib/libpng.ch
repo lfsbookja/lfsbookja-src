@@ -84,10 +84,8 @@
           <application>libpng</application> in
           <application>Firefox</application>): <ulink url="&apng-patch;"/>
 @y
-          Optional patch to include animated png functionality in
-          <application>libpng</application> (required to use the system
-          <application>libpng</application> in
-          <application>Firefox</application>): <ulink url="&apng-patch;"/>
+          <application>libpng</application> にアニメーション png の機能を含めるための任意のパッチ
+          (<application>Firefox</application> にてシステムにインストールされた <application>libpng</application> として利用する場合に必要): <ulink url="&apng-patch;"/>
 @z
 
 @x
