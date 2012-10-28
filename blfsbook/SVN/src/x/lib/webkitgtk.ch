@@ -116,7 +116,7 @@
       <xref linkend="gobject-introspection"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="geoclue"/>,
       <xref linkend="gobject-introspection"/>
@@ -161,28 +161,23 @@
         patch</ulink> applied or <application>WebKitGTK+</application>
         build will fail.
 @y
-        If you are building <application>WebKitGTK+</application>
-        with <command>make</command> 3.82, make sure that you have built
-        it with the following
-        <ulink url="&patch-downloads;/make/make-3.82-upstream_fixes-3.patch">
-        patch</ulink> applied or <application>WebKitGTK+</application>
-        build will fail.
+        <command>make</command> 3.82 を用いて <application>WebKitGTK+</application> をビルドする場合は、<command>make</command> を <ulink
+        url="&patch-downloads;/make/make-3.82-upstream_fixes-3.patch">このパッチ</ulink> を適用してビルドしておく必要があります。
+        これを行っておかないと <application>WebKitGTK+</application> のビルドに失敗します。
 @z
 
 @x
       If you have not installed <xref linkend="gtk-doc"/>, fix a bug that will
       cause <command>make install</command> to fail:
 @y
-      If you have not installed <xref linkend="gtk-doc"/>, fix a bug that will
-      cause <command>make install</command> to fail:
+      <xref linkend="gtk-doc"/> をインストールしていない場合は、<command>make install</command> が失敗するバグを以下により修正します。
 @z
 
 @x
       Install <application>WebKitGTK+</application> by running the
       following commands:
 @y
-      Install <application>WebKitGTK+</application> by running the
-      following commands:
+      以下のコマンドを実行して <application>WebKitGTK+</application> をビルドします。
 @z
 
 @x
@@ -214,6 +209,50 @@
       このオプションは <application>GObject Introspection</application> サポートを有効にします。
       これは <application>GNOME</application> デスクトップ環境において必要です。
       <application>Gobject Introspection</application> をインストールしていなくて、<application>GNOME</application> をインストールしないのであれば、このオプションを取り除いてください。
+@z
+
+@x
+      <parameter>--with-gstreamer=1.0</parameter>: This switch forces use of
+      <application>GStreamer</application> 1.0 series which
+      <application>GNOME</application> 3.6 uses. Remove if you don't want
+      to install <application>GStreamer</application> 1.0 or you don't
+      want to install <application>GNOME</application>.
+@y
+      <parameter>--with-gstreamer=1.0</parameter>:
+      このスイッチは、<application>GNOME</application> 3.6 が利用している <application>GStreamer</application> 1.0 シリーズを、強制的に利用することを指示します。
+      <application>GStreamer</application> 1.0 や <application>GNOME</application> をインストールするつもりがない場合には、このスイッチを取り除いてください。
+@z
+
+@x
+      <option>--disable-geolocation</option>: Use this option if you did not
+      install <xref linkend="geoclue"/> or <command>configure</command> will
+      fail.
+@y
+      <option>--disable-geolocation</option>:
+      <xref linkend="geoclue"/> をインストールしていない場合にはこのオプションを指定します。
+      こうしておかないと <command>configure</command> の実行が失敗します。
+@z
+
+@x
+      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>: These parameters
+      force <application>WebKitGTK+</application> to compile against
+      <application>GTK+ 2</application>, even if
+      <application>GTK+ 3</application> is also installed. With
+      <application>GTK+ 2</application>, everything
+      <application>WebKitGTK+</application> installs is suffixed with 1.0. When it
+      is compiled against <application>GTK+ 3</application> everything it
+      installs is suffixed with 3.0. Both versions can be installed alongside
+      one another with no namespace conflicts.
+@y
+      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>:
+      これらのパラメーターは、<application>GTK+ 3</application> がインストールされていても <application>GTK+ 2</application> を用いて <application>WebKitGTK+</application> をビルドすることを指示します。
+      
+      With
+      <application>GTK+ 2</application>, everything
+      <application>WebKitGTK+</application> installs is suffixed with 1.0. When it
+      is compiled against <application>GTK+ 3</application> everything it
+      installs is suffixed with 3.0. Both versions can be installed alongside
+      one another with no namespace conflicts.
 @z
 
 @x

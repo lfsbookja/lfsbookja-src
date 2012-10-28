@@ -153,8 +153,23 @@
     <para>Verify that kernel support has been compiled in or built as
     modules in the following areas:</para>
 @y
-    <para>Verify that kernel support has been compiled in or built as
-    modules in the following areas:</para>
+    <para>
+    以下に示すカーネル設定が、カーネルモジュールに組み込み済であるか、モジュールとしてコンパイル済であることを確認してください。
+    </para>
+@z
+
+@x
+<screen><literal>File systems &rArr;
+    Kernel automounter version 4 support  Y or M
+    Network File Systems &rArr;
+        NFS client support   Y or M (optional)
+        CIFS support         Y or M (optional)</literal></screen>
+@y
+<screen><literal>File systems &rArr;
+    Kernel automounter version 4 support  Y または M
+    Network File Systems &rArr;
+        NFS client support   Y または M (任意)
+        CIFS support         Y または M (任意)</literal></screen>
 @z
 
 @x
