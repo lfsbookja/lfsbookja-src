@@ -50,9 +50,7 @@
   <xsl:param name="title.font.family" select="'TakaoGothic'"/>
   <xsl:param name="italic.font.family" select="'TakaoGothic'"/>
   <xsl:param name="sans.font.family" select="'TakaoGothic'"/>
-<!--
-  <xsl:param name="monospace.font.family" select="'TakaoGothic'"/>
--->
+  <xsl:param name="monospace.font.family" select="'Courier,TakaoGothic'"/>
   <xsl:param name="hyphenate">false</xsl:param>
   <xsl:param name="l10n.gentext.default.language" select="'ja'"/>
 @z

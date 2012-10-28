@@ -73,13 +73,9 @@ were measured:</para>
 32-bit       198.5 minutes  648 MB 
 64-bit       190.6 minutes  709 MB</computeroutput></screen>
 @y
-<!--
-日本語訳註： 日本語に訳した場合に PDF版でうまく日本語フォント表現が
-できないため、日本語訳断念
--->
-<screen><computeroutput>Architecture Build Time     Build Size 
-32-bit       198.5 minutes  648 MB 
-64-bit       190.6 minutes  709 MB</computeroutput></screen>
+<screen><computeroutput>アーキテクチャー ビルド時間  ビルドサイズ
+32 ビット        198.5 分    648 MB 
+64 ビット        190.6 分    709 MB</computeroutput></screen>
 @z
 
 @x
