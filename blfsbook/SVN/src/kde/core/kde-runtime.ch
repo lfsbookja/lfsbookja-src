@@ -37,37 +37,37 @@
 @x
         <para>Download (HTTP): <ulink url="&kde-runtime-download-http;"/></para>
 @y
-        <para>Download (HTTP): <ulink url="&kde-runtime-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&kde-runtime-download-http;"/></para>
 @z
 
 @x
         <para>Download (FTP): <ulink url="&kde-runtime-download-ftp;"/></para>
 @y
-        <para>Download (FTP): <ulink url="&kde-runtime-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&kde-runtime-download-ftp;"/></para>
 @z
 
 @x
         <para>Download MD5 sum: &kde-runtime-md5sum;</para>
 @y
-        <para>Download MD5 sum: &kde-runtime-md5sum;</para>
+        <para>&Download; MD5 sum: &kde-runtime-md5sum;</para>
 @z
 
 @x
         <para>Download size: &kde-runtime-size;</para>
 @y
-        <para>Download size: &kde-runtime-size;</para>
+        <para>&DownloadSize;: &kde-runtime-size;</para>
 @z
 
 @x
         <para>Estimated disk space required: &kde-runtime-buildsize;</para>
 @y
-        <para>Estimated disk space required: &kde-runtime-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &kde-runtime-buildsize;</para>
 @z
 
 @x
         <para>Estimated build time: &kde-runtime-time;</para>
 @y
-        <para>Estimated build time: &kde-runtime-time;</para>
+        <para>&Estimatedbuildtime;: &kde-runtime-time;</para>
 @z
 
 @x
@@ -225,8 +225,8 @@
         khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
         kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
         ktraderclient, ktrash, kuiserver, kwalletd, kwriteconfig,
-        nepomukcontroller, plasma-remote-helper, plasmapkg and solid-hardware.
+        nepomukcontroller, plasma-remote-helper, plasmapkg, solid-hardware.
         </seg>
-        <seg>several in &kde-dir;/lib</seg>
-        <seg>several in &kde-dir;/lib and &kde-dir;/share</seg>
+        <seg>&kde-dir;/lib 内に数種のライブラリ</seg>
+        <seg>&kde-dir;/lib, &kde-dir;/share 内に数種のディレクトリ</seg>
 @z

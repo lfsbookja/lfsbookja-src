@@ -80,18 +80,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required Patch: <ulink
-@y
-        <para>必要なパッチ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">Rep-gtk Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Rep-gtk&Dependencies2;</bridgehead>
@@ -163,11 +151,11 @@
 @x
         <seg>None</seg>
         <seg>Lisp bindings</seg>
-        <seg>/usr/lib/rep/i686-pc-linux-gnu/gui/</seg>
+        <seg>/usr/lib/rep/gui/</seg>
 @y
         <seg>&None;</seg>
         <seg>Lisp バインディング</seg>
-        <seg>/usr/lib/rep/i686-pc-linux-gnu/gui/</seg>
+        <seg>/usr/lib/rep/gui/</seg>
 @z
 
 @x
@@ -183,12 +171,17 @@
 @z
 @x
           <para>are libraries stored in <filename
-          class="directory">/usr/lib/rep/i686-pc-linux-gnu/gui/</filename> that assist
+          class="directory">/usr/lib/rep/gui/</filename> that assist
           communication between Lisp and the <application>GTK</application>
           libraries.</para>
 @y
           <para>are libraries stored in <filename
-          class="directory">/usr/lib/rep/i686-pc-linux-gnu/gui/</filename> that assist
+          class="directory">/usr/lib/rep/gui/</filename> that assist
           communication between Lisp and the <application>GTK</application>
           libraries.</para>
+@z
+@x
+            <primary sortas="c-Lisp-bindings">Lisp bindings</primary>
+@y
+            <primary sortas="c-Lisp-bindings">Lisp バインディング</primary>
 @z

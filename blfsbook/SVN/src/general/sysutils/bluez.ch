@@ -131,6 +131,30 @@
 @z
 
 @x
+<screen><literal>[*] Networking support --->
+  &lt;*&gt; or &lt;M&gt; Bluetooth subsystem support --->
+    &lt;*&gt; or &lt;M&gt; RFCOMM protocol support
+    [*] RFCOMM TTY support
+    &lt;*&gt; or &lt;M&gt; BNEP protocol support
+    [*] Multicast filter support
+    [*] Protocol filter support
+    &lt;*&gt; or &lt;M&gt; HIDP protocol support
+
+    Bluetooth device drivers ---></literal></screen>
+@y
+<screen><literal>[*] Networking support --->
+  &lt;*&gt; または &lt;M&gt; Bluetooth subsystem support --->
+    &lt;*&gt; または &lt;M&gt; RFCOMM protocol support
+    [*] RFCOMM TTY support
+    &lt;*&gt; または &lt;M&gt; BNEP protocol support
+    [*] Multicast filter support
+    [*] Protocol filter support
+    &lt;*&gt; または &lt;M&gt; HIDP protocol support
+
+    Bluetooth device drivers ---></literal></screen>
+@z
+
+@x
       Select the appropriate drivers for your Bluetooth hardware.
 @y
       Select the appropriate drivers for your Bluetooth hardware.

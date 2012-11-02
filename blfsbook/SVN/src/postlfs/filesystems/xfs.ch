@@ -123,7 +123,7 @@ Unfortunately, this has led to
   XFS filesystem support: M or Y</literal></screen>
 @y
 <screen><literal>File Systems:
-  XFS filesystem support: M or Y</literal></screen>
+  XFS filesystem support: M または Y</literal></screen>
 @z
 
 @x

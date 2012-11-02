@@ -171,11 +171,12 @@
 @z
 
 @x
-      <option>-&#45;with-openssl=/usr</option>: If you have installed
-      <xref linkend="openssl"/> use this option to compile the
+      <option>-&#45;with-openssl=/usr</option> and 
+      <option>-&#45;with-crypto</option>: If you have installed
+      <xref linkend="openssl"/>, use these options to compile the
       <filename class="libraryfile">apr_crypto_openssl-1.so</filename> plugin.
 @y
-      <option>-&#45;with-openssl=/usr</option>:
+      <option>-&#45;with-openssl=/usr</option>, <option>-&#45;with-crypto</option>:
       <xref linkend="openssl"/> をインストールしている場合、このオプションによりプラグイン <filename
       class="libraryfile">apr_crypto_openssl-1.so</filename> をビルドすることを指示します。
 @z

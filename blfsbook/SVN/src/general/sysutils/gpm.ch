@@ -124,7 +124,7 @@
 @z
 
 @x
-    <para><command>install-info ...</command>: This package installs a
+    <para><command>install-info ...</command>: This package installs an
     <filename class="extension">.info</filename> file, but does not update the
     system <filename>dir</filename> file. This command makes the update.</para>
 @y
@@ -136,12 +136,12 @@
 @z
 
 @x
-    <para><command>ln -v -s libgpm.so.2.1.0 /usr/lib/libgpm.so</command>: This
-    command is used to create the <filename class="extension">.so</filename>
+    <para><command>ln -v -sfn libgpm.so.2.1.0 /usr/lib/libgpm.so</command>: This
+    command is used to create (or update) the <filename class="extension">.so</filename>
     symlink to the library.</para>
 @y
-    <para><command>ln -v -s libgpm.so.2.1.0 /usr/lib/libgpm.so</command>:
-    このコマンドはライブラリに対しての <filename class="extension">.so</filename> シンボリックリンクを作成します。
+    <para><command>ln -v -sfn libgpm.so.2.1.0 /usr/lib/libgpm.so</command>:
+    このコマンドはライブラリに対しての <filename class="extension">.so</filename> シンボリックリンクを作成 (または更新) します。
     </para>
 @z
 

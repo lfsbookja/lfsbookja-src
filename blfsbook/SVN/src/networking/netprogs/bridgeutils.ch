@@ -119,6 +119,16 @@ This is useful in setting up
 @z
 
 @x
+<screen><literal>Networking support: Y
+  Networking options: 
+    802.1d Ethernet Bridging: M or Y</literal></screen>
+@y
+<screen><literal>Networking support: Y
+  Networking options: 
+    802.1d Ethernet Bridging: M または Y</literal></screen>
+@z
+
+@x
       <primary sortas="d-bridgeutils">Bridge Utilities</primary>
 @y
       <primary sortas="d-bridgeutils">Bridge ユーティリティー</primary>

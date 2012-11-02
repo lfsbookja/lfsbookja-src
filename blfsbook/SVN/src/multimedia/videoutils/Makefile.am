@@ -7,7 +7,6 @@
 ##
 BOOKdir = $(top_builddir)/@bookdir@/multimedia/videoutils
 CHANGE_FILES = \
-	dvb-apps.ch   \
 	ffmpeg.ch     \
 	mplayer.ch    \
 	videoutils.ch \
@@ -27,7 +26,6 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-dvb-apps.xml:   $(BOOKdir)/$@ $(srcdir)/dvb-apps.ch
 ffmpeg.xml:     $(BOOKdir)/$@ $(srcdir)/ffmpeg.ch
 mplayer.xml:    $(BOOKdir)/$@ $(srcdir)/mplayer.ch
 videoutils.xml: $(BOOKdir)/$@ $(srcdir)/videoutils.ch

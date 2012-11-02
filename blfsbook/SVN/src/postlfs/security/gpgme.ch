@@ -86,12 +86,10 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libassuan"/> and
-    <xref linkend="libgpg-error"/></para>
+    <para role="required"><xref linkend="libassuan"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libassuan"/>,
-    <xref linkend="libgpg-error"/></para>
+    <para role="required"><xref linkend="libassuan"/></para>
 @z
 
 @x

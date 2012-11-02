@@ -84,12 +84,14 @@ controlled through the extension language.
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="rep-gtk"/> and
-    <xref linkend="esound"/></para>
+    <para role="required">
+       <xref linkend="rep-gtk"/> and
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="rep-gtk"/>,
-    <xref linkend="esound"/></para>
+    <para role="required">
+       <xref linkend="rep-gtk"/>
+    </para>
 @z
 
 @x
@@ -130,48 +132,9 @@ controlled through the extension language.
 @z
 
 @x
-    <para><parameter>--disable-themer</parameter>: This
-    option prevents building the <application>sawfish</application> themer.
-    This program was not migrated to <application>GTK-2</application>.</para>
-@y
-<para>
-<parameter>--disable-themer</parameter>:
-このパラメーターは <application>sawfish</application> themer をビルドしないようにします。
-
-This program was not migrated to <application>GTK-2</application>.
-</para>
-@z
-
-@x
-    <para><option>--with-audiofile</option>: This command directs
-    <application>sawfish</application> to use
-    <filename class="libraryfile">libaudiofile</filename>
-    for sound manipulation.</para>
-@y
-<para>
-<option>--with-audiofile</option>:
-このオプションは <application>sawfish</application>
-に対して、サウンド制御を行う <filename class="libraryfile">libaudiofile</filename>
-を利用するように指示します。
-</para>
-@z
-
-@x
-    <para><option>--with-esd</option>: This command directs
-    <application>sawfish</application> to use the Enlightened Sound
-    Daemon.</para>
-@y
-<para>
-<option>--with-esd</option>:
-このオプションは <application>sawfish</application>
-に対して、Enlightened Sound デーモンを利用するように指示します。
-</para>
-@z
-
-@x
     <title>Configuring sawfish</title>
 @y
-    <title>sawfish の設定</title>
+    <title>&Configuring1;sawfish&Configuring2;</title>
 @z
 
 @x
@@ -184,9 +147,9 @@ This program was not migrated to <application>GTK-2</application>.
       <para>Be sure to backup your current <filename>.xinitrc</filename>
       before proceeding.</para>
 @y
-<para>
-以下を行う前に、現時点の <filename>.xinitrc</filename> のバックアップをとってください。
-</para>
+      <para>
+      以下を行う前に、現時点の <filename>.xinitrc</filename> のバックアップをとってください。
+      </para>
 @z
 
 @x
@@ -206,13 +169,13 @@ This program was not migrated to <application>GTK-2</application>.
 @z
 
 @x
-        <seg>sawfish, sawfish-client, and sawfish-ui</seg>
+        <seg>sawfish, sawfish-about, sawfish-client, and sawfish-config</seg>
         <seg>None</seg>
-        <seg>/usr/share/sawfish, /usr/sbin/sawfish, and /usr/lib/rep/*/</seg>
+        <seg>/usr/share/sawfish</seg>
 @y
-        <seg>sawfish, sawfish-client, sawfish-ui</seg>
-        <seg>なし</seg>
-        <seg>/usr/share/sawfish, /usr/sbin/sawfish, /usr/lib/rep/*/</seg>
+        <seg>sawfish, sawfish-about, sawfish-client, sawfish-config</seg>
+        <seg>&None;</seg>
+        <seg>/usr/share/sawfish</seg>
 @z
 
 @x
@@ -225,29 +188,20 @@ This program was not migrated to <application>GTK-2</application>.
           <para>is the extensible window manager using a
           <application>Lisp</application>-based scripting language.</para>
 @y
-<para>
-
-is the extensible window manager using a
-<application>Lisp</application>-based scripting language.
-</para>
+          <para>is the extensible window manager using a
+          <application>Lisp</application>-based scripting language.</para>
 @z
 
 @x sawfish-client
           <para>allows you to connect to a window manager process and
           evaluate arbitrary <application>Lisp</application> forms.</para>
 @y
-<para>
-
-allows you to connect to a window manager process and
-evaluate arbitrary <application>Lisp</application> forms.
-</para>
+          <para>allows you to connect to a window manager process and
+          evaluate arbitrary <application>Lisp</application> forms.</para>
 @z
 
-@x sawfish-ui
-          <para>is the <application>sawfish</application> configurator.</para>
+@x sawfish-config
+          <para>is the <application>sawfish</application> configuration manager.</para>
 @y
-<para>
-
-is the <application>sawfish</application> configurator.
-</para>
+          <para>is the <application>sawfish</application> configuration manager.</para>
 @z

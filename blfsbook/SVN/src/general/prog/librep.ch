@@ -80,13 +80,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libffi"/> or
-    <xref linkend="gcc"/> (build Java so that the
-    <filename class='libraryfile'>libffi</filename> library is built)</para>
+    <para role="optional">i
+      <xref linkend="libffi"/> 
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="libffi"/> または
-    <xref linkend="gcc"/> (<filename class='libraryfile'>libffi</filename> がビルドできるように Java がビルドされていること)</para>
+    <para role="optional">i
+      <xref linkend="libffi"/> 
+    </para>
 @z
 
 @x
@@ -133,12 +134,12 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib</parameter>: This parameter installs
+    <para><parameter>- -libexecdir=/usr/lib</parameter>: This parameter installs
     files to <filename class="directory">/usr/lib/rep</filename> instead of
     <filename class="directory">/usr/libexec/rep</filename>.</para>
 @y
     <para>
-    <parameter>--libexecdir=/usr/lib</parameter>:
+    <parameter>- -libexecdir=/usr/lib</parameter>:
     このパラメーターは、各種ファイルのインストール先を <filename
     class="directory">/usr/libexec/rep</filename> ではなく <filename
     class="directory">/usr/lib/rep</filename> とします。

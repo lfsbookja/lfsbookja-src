@@ -123,6 +123,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="junit"/> (to run tests),
       <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
       <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
       <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
@@ -130,11 +131,12 @@
       <ulink url="http://pmd.sourceforge.net">PMD</ulink>
           (requires <ulink url="http://jaxen.codehaus.org/">Jaxen</ulink>), and
       <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest used only
-      to rebuild the documentation)
+      to build the documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="junit"/> (テスト実行のため),
       <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
       <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
       <ulink url="https://jai-imageio.dev.java.net/">JAI Image I/O Tools</ulink>,
@@ -225,29 +227,11 @@
 @z
 
 @x
-      <para>If <application>Forrest</application> is not installed, remove
-      a reference to it in the build.xml:</para>
-@y
-      <para>
-      <application>Forrest</application> をインストールしていない場合は、build.xml における参照箇所を削除します。
-      </para>
-@z
-
-@x
       <para>Compile <application>fop</application> by running the
       following commands:</para>
 @y
       <para>
       以下のコマンドを実行して <application>fop</application> をビルドします。
-      </para>
-@z
-
-@x
-      <para>The unit regression tests were performed in the build step
-      above.</para>
-@y
-      <para>
-      上のビルド中にはユニット縮退テスト (unit regression tests) も実施されます。
       </para>
 @z
 
@@ -267,19 +251,11 @@
 @z
 
 @x
-    <para><command>ant dist</command>: This reads the
-    <filename>build.xml</filename> file's <option>dist</option> target,
-    builds the package and runs the unit regression tests. It also creates the
-    Java API documentation and a directory where the newly created binaries
-    are placed. This directory is used to install <application>fop</application>
-    into its final place.</para>
+    <para><command>ant <option>target</option></command>: This reads the file
+    <filename>build.xml</filename> and builds the target files.</para>
 @y
-    <para><command>ant dist</command>: This reads the
-    <filename>build.xml</filename> file's <option>dist</option> target,
-    builds the package and runs the unit regression tests. It also creates the
-    Java API documentation and a directory where the newly created binaries
-    are placed. This directory is used to install <application>fop</application>
-    into its final place.</para>
+    <para><command>ant <option>target</option></command>: This reads the file
+    <filename>build.xml</filename> and builds the target files.</para>
 @z
 
 @x

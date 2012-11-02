@@ -107,10 +107,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/tcl"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/tcl"/></para>
 @z
 
 @x
@@ -141,7 +139,7 @@
       commands:
 @y
       以下のコマンドを実行して <application>Tcl</application> をビルドします。
-z
+@z
 
 @x
       To test the results, issue: <command>make test</command>.

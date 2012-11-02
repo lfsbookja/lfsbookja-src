@@ -166,6 +166,16 @@
 @z
 
 @x
+    <para><option>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</option>:
+    This option sets the correct installation path for a D-Bus interfaces file.
+    </para>
+@y
+    <para><option>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</option>:
+    このオプションは D-Bus インターフェースファイルを、適切なパスにインストールします。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

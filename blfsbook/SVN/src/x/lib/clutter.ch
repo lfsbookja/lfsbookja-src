@@ -121,7 +121,6 @@
     </bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
-      <xref linkend="jadetex"/>,
       <xref linkend="xmlto"/> and either
       <xref linkend="Links"/>,
       <xref linkend="lynx"/> or
@@ -133,10 +132,9 @@
     </bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
-      <xref linkend="jadetex"/>,
-      <xref linkend="xmlto"/> と以下のいずれか: 
+      <xref linkend="xmlto"/> and either
       <xref linkend="Links"/>,
-      <xref linkend="lynx"/>,
+      <xref linkend="lynx"/> or
       <xref linkend="w3m"/>
      </para>
 @z

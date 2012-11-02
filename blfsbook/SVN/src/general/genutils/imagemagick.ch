@@ -152,8 +152,7 @@
 @x
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional"><xref linkend="pkgconfig"/>,
-    <xref linkend="cups"/> or <xref linkend="LPRng"/> (or any other print
-    utility that provides an <command>lpr</command> command),
+    <xref linkend="cups"/>, 
     <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (only for raw formats listed in
    <filename>www/formats.html</filename>),
     <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
@@ -167,8 +166,7 @@
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional"><xref linkend="pkgconfig"/>,
-    <xref linkend="cups"/> or <xref linkend="LPRng"/> (or any other print
-    utility that provides an <command>lpr</command> command),
+    <xref linkend="cups"/>, 
     <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (only for raw formats listed in
    <filename>www/formats.html</filename>),
     <ulink url="http://dmalloc.com/">Dmalloc</ulink>,

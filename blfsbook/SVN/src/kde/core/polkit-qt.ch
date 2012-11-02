@@ -79,16 +79,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>, 
-    <xref linkend="polkit"/> and
-    <xref linkend="glib2"/>
+    <xref linkend="automoc4"/> and 
+    <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>, 
-    <xref linkend="polkit"/>,
-    <xref linkend="glib2"/>
+    <xref linkend="automoc4"/>,
+    <xref linkend="polkit"/>
     </para>
 @z
 

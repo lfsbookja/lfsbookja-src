@@ -11,7 +11,6 @@ CHANGE_FILES = \
 	cups-filters.ch \
 	gs.ch           \
 	gutenprint.ch   \
-	lprng.ch        \
 	printing.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -31,5 +30,4 @@ cups.xml:         $(BOOKdir)/$@ $(srcdir)/cups.ch
 cups-filters.xml: $(BOOKdir)/$@ $(srcdir)/cups-filters.ch
 gs.xml:           $(BOOKdir)/$@ $(srcdir)/gs.ch
 gutenprint.xml:   $(BOOKdir)/$@ $(srcdir)/gutenprint.ch
-lprng.xml:        $(BOOKdir)/$@ $(srcdir)/lprng.ch
 printing.xml:     $(BOOKdir)/$@ $(srcdir)/printing.ch
