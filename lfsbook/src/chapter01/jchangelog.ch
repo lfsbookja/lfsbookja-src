@@ -54,6 +54,32 @@
 -->
 
     <listitem>
+      <para>2012-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20121101,
+          Changeset
+          <ulink url="&lfs-rev-root;10025">10025</ulink>,
+          <ulink url="&lfs-rev-root;10026">10026</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2012-10-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          PDF処理において、Monospaceへの日本語フォント指定方法がようやく分かったので対処。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2012-10-20</para>
       <itemizedlist>
         <listitem>

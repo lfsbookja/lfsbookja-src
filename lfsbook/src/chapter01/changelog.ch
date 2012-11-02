@@ -47,6 +47,25 @@
     <title>変更履歴：</title>
 @z
 
+
+@x
+      <para>2012-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to systemd/lfs-udev-195.  Fixes
+          <ulink url="&lfs-ticket-root;3197">#3197</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd/lfs-udev-195 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3197">#3197</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
 @x
       <para>2012-10-15</para>
       <itemizedlist>

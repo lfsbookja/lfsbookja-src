@@ -445,7 +445,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
           <para>This creates the <filename>posixrules</filename> file. We use
           New York because POSIX requires the daylight savings time rules
-          to be in accordance with US rules,</para>
+          to be in accordance with US rules.</para>
 @y
           <para>
           これは <filename>posixrules</filename> ファイルを生成します。
