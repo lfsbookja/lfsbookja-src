@@ -61,17 +61,17 @@
 @z
 
 @x
-          <para>Freshmeat.net (<ulink url="http://freshmeat.net/"/>)</para>
+          <para>Freecode (<ulink url="http://freecode.com/"/>)</para>
 @y
-          <para>Freshmeat.net (<ulink url="http://freshmeat.net/"/>)</para>
+          <para>Freecode (<ulink url="http://freecode.com/"/>)</para>
 @z
 
 @x
-          <para>Freshmeat can notify you (via email) of new versions of packages
+          <para>Freecode can notify you (via email) of new versions of packages
           installed on your system.</para>
 @y
           <para>
-          Freshmeat は、システムにインストールされているパッケージの新しいバージョンが提供されると、それを (電子メールで) 通知してくれます。
+          Freecode は、システムにインストールされているパッケージの新しいバージョンが提供されると、それを (電子メールで) 通知してくれます。
           </para>
 @z
 

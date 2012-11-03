@@ -99,15 +99,6 @@
 @z
 
 @x
-    <para>If desired, install the <filename>flex.pdf</filename> documentation
-    file:</para>
-@y
-    <para>
-    必要ならドキュメントファイル <filename>flex.pdf</filename> をインストールします。
-    </para>
-@z
-
-@x
     <title>Contents of Flex</title>
 @y
     <title>&ContentsOf1;Flex&ContentsOf2;</title>

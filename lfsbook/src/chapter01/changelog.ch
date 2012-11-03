@@ -47,6 +47,76 @@
     <title>変更履歴：</title>
 @z
 
+@x
+      <para>2012-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Change Freshmeat.net references to Freecode. Thanks
+          to Chris Staub for the report and patch. Fixes
+          <ulink url="&lfs-ticket-root;3216">#3216</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Check-0.9.9.  Fixes
+          <ulink url="&lfs-ticket-root;3214">#3214</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bison-2.6.4.  Fixes
+          <ulink url="&lfs-ticket-root;3212">#3212</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.6.5.  Fixes
+          <ulink url="&lfs-ticket-root;3211">#3211</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tzdata-2012h.  Fixes
+          <ulink url="&lfs-ticket-root;3209">#3209</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.43.  Fixes
+          <ulink url="&lfs-ticket-root;3208">#3208</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Clean up a couple of instructions for Flex, made
+          possible by the upgrade to Flex-2.5.37.  Fixes
+          <ulink url="&lfs-ticket-root;3206">3206</ulink> and
+          <ulink url="&lfs-ticket-root;3210">3210</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Freshmeat.net への参照リンクを Freecode に変更。
+          報告とパッチをあげてくれた Chris Staub に感謝。
+          <ulink url="&lfs-ticket-root;3216">#3216</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Check-0.9.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3214">#3214</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bison-2.6.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3212">#3212</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.6.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3211">#3211</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2012h へのアップグレード。
+          <ulink url="&lfs-ticket-root;3209">#3209</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.43 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3208">#3208</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Flex-2.5.37 へのアップグレードにより Flex の手順を整理。
+          <ulink url="&lfs-ticket-root;3206">3206</ulink>,
+          <ulink url="&lfs-ticket-root;3210">3210</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
 
 @x
       <para>2012-11-01</para>
