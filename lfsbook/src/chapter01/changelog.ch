@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2012-11-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Perl-5.6.2.  Fixes
+          <ulink url="&lfs-ticket-root;3218">#3218</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bash-4.2.39.  Fixes
+          <ulink url="&lfs-ticket-root;3217">#3217</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Perl-5.6.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3218">#3218</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bash-4.2.39 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3217">#3217</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-11-02</para>
       <itemizedlist>
         <listitem>
