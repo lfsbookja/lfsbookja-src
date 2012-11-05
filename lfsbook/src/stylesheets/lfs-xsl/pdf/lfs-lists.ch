@@ -12,7 +12,7 @@
                    provisional-label-separation="1em"
                    keep-together.within-column="always">
 @y
-    <fo:list-block id="{$id}" provisional-distance-between-starts="14em"
+    <fo:list-block id="{$id}" provisional-distance-between-starts="16em"
                    provisional-label-separation="1em"
                    keep-together.within-column="always">
 @z
