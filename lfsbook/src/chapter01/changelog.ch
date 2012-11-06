@@ -51,7 +51,7 @@
       <para>2012-11-03</para>
       <itemizedlist>
         <listitem>
-          <para>[matthew] - Upgrade to Perl-5.6.2.  Fixes
+          <para>[matthew] - Upgrade to Perl-5.16.2.  Fixes
           <ulink url="&lfs-ticket-root;3218">#3218</ulink>.</para>
         </listitem>
         <listitem>
@@ -63,7 +63,7 @@
       <para>2012-11-03</para>
       <itemizedlist>
         <listitem>
-          <para>[matthew] - Perl-5.6.2 へのアップグレード。
+          <para>[matthew] - Perl-5.16.2 へのアップグレード。
           <ulink url="&lfs-ticket-root;3218">#3218</ulink> を Fix に。</para>
         </listitem>
         <listitem>
