@@ -145,6 +145,17 @@
 @z
 
 @x
+      <option>--disable-python-bindings</option>: This switch disables
+      building of the optional <application>Python</application>
+      bindings. Remove it if you have installed
+      <application>Python</application>.
+@y
+      <option>--disable-python-bindings</option>:
+      このスイッチは <application>Python</application> をビルドしないようにします。
+      <application>Python</application> をインストールしている場合は、このスイッチを取り除いてください。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

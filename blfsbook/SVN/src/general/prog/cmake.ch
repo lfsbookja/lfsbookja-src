@@ -125,12 +125,10 @@
 @z
 
 @x
-    <para>To test the results, issue: <userinput>make test</userinput>.
-    The SVN test may fail.</para>
+    <para>To test the results, issue: <userinput>make test</userinput>.</para>
 @y
     <para>
     ビルド結果をテストする場合は <userinput>make test</userinput> を実行します。
-    ただし SVN テストは失敗します。
     </para>
 @z
 

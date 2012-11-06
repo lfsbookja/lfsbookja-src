@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY poppler-buildsize          "105 MB (excluding the encoding data) and
+           130 MB (including the encoding data)">
+@y
+  <!ENTITY poppler-buildsize          "105 MB (エンコーディングデータを除いた場合),
+           130 MB (エンコーディングデータを含めた場合)">
+@z
+
+@x
     <title>Introduction to Poppler</title>
 @y
     <title>&IntroductionTo1;Poppler&IntroductionTo2;</title>
@@ -24,9 +32,8 @@
       library and command line tools used to manipulate PDF files. This is
       useful for providing PDF rendering functionality as a shared library.
 @y
-      The <application>Poppler</application> package contains a PDF rendering
-      library and command line tools used to manipulate PDF files. This is
-      useful for providing PDF rendering functionality as a shared library.
+      <application>Poppler</application> パッケージは、PDF ファイルを操作するためのライブラリ、またはコマンドラインツールを提供します。
+      PDF レンダリング機能を、共有ライブラリとして提供します。
 @z
 
 @x
@@ -108,11 +115,9 @@
       are present. When installed, they enable
       <application>Poppler</application> to render CJK and Cyrillic properly.
 @y
-      The additional package consists of encoding files for use with
-      <application>Poppler</application>. The encoding files are optional and
-      <application>Poppler</application> will automatically read them if they
-      are present. When installed, they enable
-      <application>Poppler</application> to render CJK and Cyrillic properly.
+      追加のパッケージは、<application>Poppler</application> にて利用するエンコーディングデータです。
+      このファイルは任意であり、<application>Poppler</application> はこのファイルがあれば自動的に読み込んで利用します。
+      このファイルがインストールされていれば、<application>Poppler</application> において CJK やキリル文字を適切に処理できるようになります。
 @z
 
 @x
@@ -166,12 +171,11 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
+      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="openjpeg"/>,
-      <xref linkend="qt"/> (the <filename>libpoppler-qt4.so</filename> library
-      is needed for PDF support in <application>Okular</application>).
+      <xref linkend="qt"/> (ライブラリ <filename>libpoppler-qt4.so</filename> は <application>Okular</application> の PDF サポートにおいて必要となります)
     </para>
 @z
 
@@ -191,8 +195,7 @@
       Install <application>Poppler</application> by running the following
       commands:
 @y
-      Install <application>Poppler</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Poppler</application> をビルドします。
 @z
 
 @x
@@ -211,8 +214,7 @@
       If you downloaded the additional encoding data package, install it by
       issuing the following commands:
 @y
-      If you downloaded the additional encoding data package, install it by
-      issuing the following commands:
+      追加のエンコーディングデータをダウンロードしている場合は、以下のコマンドを実行してインストールします。
 @z
 
 @x
@@ -233,10 +235,8 @@
       <application>Okular</application>, <application>Libre Office</application>
       and <application>Inkscape</application>).
 @y
-      <option>--enable-xpdf-headers</option>: Install some old
-      <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Okular</application>, <application>Libre Office</application>
-      and <application>Inkscape</application>).
+      <option>--enable-xpdf-headers</option>:
+      <application>Okular</application>, <application>Libre Office</application>, <application>Inkscape</application> などにおいて必要とされる <application>Xpdf</application> ヘッダーファイルをインストールします。
 @z
 
 @x
@@ -401,34 +401,31 @@
             is a tool to demonstrate the API, and for use when debugging and
             testing <application>poppler</application>.
 @y
-            is a tool to demonstrate the API, and for use when debugging and
-            testing <application>poppler</application>.
+            <application>poppler</application> の API をデモしたり、デバッグやテストを行うためのツールです。
 @z
 
 @x libpoppler.so
             contains the API functions to render PDF files.
 @y
-            contains the API functions to render PDF files.
+            レンダリング PDF ファイルに対する API 関数を提供します。
 @z
 
 @x libpoppler-cpp.so
             is a C++ backend for rendering PDF files.
 @y
-            is a C++ backend for rendering PDF files.
+            レンダリング PDF ファイルへの C++ バックエンドです。
 @z
 
 @x libpoppler-glib.so
             is a wrapper library used to interface the PDF rendering functions
             with <application>GTK+</application>.
 @y
-            is a wrapper library used to interface the PDF rendering functions
-            with <application>GTK+</application>.
+            <application>GTK+</application> に対しての PDF レンダリング機能を提供するラッパーライブラリです。
 @z
 
 @x libpoppler-qt4.so
             is a wrapper library used to interface the PDF rendering functions
             with <application>Qt</application>-4.
 @y
-            is a wrapper library used to interface the PDF rendering functions
-            with <application>Qt</application>-4.
+            <application>Qt</application>-4 に対しての PDF レンダリング機能を提供するラッパーライブラリです。
 @z

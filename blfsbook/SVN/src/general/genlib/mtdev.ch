@@ -31,10 +31,8 @@
       variants of kernel MT (Multitouch) events to the slotted type B
       protocol.
 @y
-      The <application>mtdev</application> package contains Multitouch
-      Protocol Translation Library which is used to transform all
-      variants of kernel MT (Multitouch) events to the slotted type B
-      protocol.
+      <application>mtdev</application> パッケージは、マルチタッチプロトコル変換ライブラリ (Multitouch Protocol Translation Library) を提供します。
+      これはカーネルの各種 MT (Muititouch) イベントを、スロット B タイプのプロトコルに変換するものです。
 @z
 
 @x
@@ -155,5 +153,5 @@
 @x libmtdev.so
             contains Multitouch Protocol Translation API functions.
 @y
-            contains Multitouch Protocol Translation API functions.
+            マルチタッチプロトコル変換 (Multitouch Protocol Translation) API 関数を提供します。
 @z
