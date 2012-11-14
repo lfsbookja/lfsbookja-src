@@ -29,14 +29,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix a testsuite issue on 32-bit machines:</para>
-@y
-    <para>
-    32ビットマシンにてテストスイートが失敗するため、パッチを適用して解消します。
-    </para>
-@z
-
-@x
     <para>Prepare Kmod for compilation:</para>
 @y
     <para>&PreparePackage1;Kmod&PreparePackage2;</para>
@@ -62,6 +54,17 @@
           <para>
           これらのオプションは、Kmod が圧縮されたカーネルモジュールを取り扱えるようにするものです。
           シェル変数は、pkg-config が無くても、xz や zlib のヘッダーあるいはライブラリを見出せるようにするために必要になります。
+          </para>
+@z
+
+@x --disable-manpages
+          <para>This option prevents the man pages from being built, as they
+          rely on libxslt, which isn't available in the chroot
+          environment.</para>
+@y
+          <para>
+          このオプションは man ページをビルドしないようにします。
+          libxslt パッケージに依存するものであり、chroot 環境では利用できないためです。
           </para>
 @z
 

@@ -48,6 +48,64 @@
 @z
 
 @x
+      <para>2012-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Tcl-8.5.13.  Fixes
+          <ulink url="&lfs-ticket-root;3224">#3224</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Kmod-11.  Fixes
+          <ulink url="&lfs-ticket-root;3223">#3223</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.44.  Fixes
+          <ulink url="&lfs-ticket-root;3222">#3222</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bison-2.6.5.  Fixes
+          <ulink url="&lfs-ticket-root;3221">#3221</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tzdata-2012i.  Fixes
+          <ulink url="&lfs-ticket-root;3220">#3220</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.6.6.  Fixes
+          <ulink url="&lfs-ticket-root;3218">#3219</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Tcl-8.5.13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3224">#3224</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Kmod-11 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3223">#3223</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.44 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3222">#3222</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bison-2.6.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3221">#3221</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2012i へのアップグレード。
+          <ulink url="&lfs-ticket-root;3220">#3220</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.6.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3218">#3219</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-11-03</para>
       <itemizedlist>
         <listitem>
