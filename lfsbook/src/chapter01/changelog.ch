@@ -48,6 +48,58 @@
 @z
 
 @x
+      <para>2012-11-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.6.7.  Fixes
+          <ulink url="&lfs-ticket-root;3232">#3232</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Automake-1.12.5.  Fixes
+          <ulink url="&lfs-ticket-root;3231">#3231</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.6.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3232">#3232</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Automake-1.12.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3231">#3231</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-11-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Tzdata-2012j.  Fixes
+          <ulink url="&lfs-ticket-root;3227">#3227</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Binutils-2.23.1.  Fixes
+          <ulink url="&lfs-ticket-root;3226">#3226</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Tzdata-2012j へのアップグレード。
+          <ulink url="&lfs-ticket-root;3227">#3227</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Binutils-2.23.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3226">#3226</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-11-13</para>
       <itemizedlist>
         <listitem>

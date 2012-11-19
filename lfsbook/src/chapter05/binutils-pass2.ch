@@ -38,12 +38,6 @@
 @z
 
 @x
-    <para>Apply a patch to prevent a build failure when using compiler optimizations:</para>
-@y
-    <para>コンパイラーの最適化を行った場合にビルドに失敗するため、これを修正するパッチを適用します。</para>
-@z
-
-@x
     <para>Create a separate build directory again:</para>
 @y
     <para>

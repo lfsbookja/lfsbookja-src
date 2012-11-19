@@ -613,7 +613,8 @@ minor timing issues が何を意味するのか不明であった。
         /usr/include/netrom, /usr/include/netrose, /usr/include/nfs,
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
-        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo</seg>
+        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo, /var/db</seg>
+      </seglistitem>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
@@ -634,7 +635,8 @@ minor timing issues が何を意味するのか不明であった。
         /usr/include/netrom, /usr/include/netrose, /usr/include/nfs,
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
-        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo</seg>
+        /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo, /var/db</seg>
+      </seglistitem>
 @z
 
 @x

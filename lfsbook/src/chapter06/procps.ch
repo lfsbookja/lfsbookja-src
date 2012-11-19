@@ -90,11 +90,13 @@
 @z
 
 @x
-        <seg>free, kill, pgrep, pkill, pmap, ps, pwdx, skill, slabtop, snice,
+        <seg>free, pgrep, pkill, pmap, ps, pwdx, skill, slabtop, snice,
         sysctl, tload, top, uptime, vmstat, w, and watch</seg>
+        <seg>libproc.so</seg>
 @y
-        <seg>free, kill, pgrep, pkill, pmap, ps, pwdx, skill, slabtop, snice,
+        <seg>free, pgrep, pkill, pmap, ps, pwdx, skill, slabtop, snice,
         sysctl, tload, top, uptime, vmstat, w, watch</seg>
+        <seg>libproc.so</seg>
 @z
 
 @x
@@ -109,14 +111,6 @@
 @y
           <para>
           物理メモリ、スワップメモリの双方において、メモリの使用量、未使用量を表示します。
-          </para>
-@z
-
-@x kill
-          <para>Sends signals to processes</para>
-@y
-          <para>
-          プロセスに対してシグナルを送信します。
           </para>
 @z
 

@@ -61,13 +61,14 @@
 @x
           <para>These switches disable building su, sulogin, and login.  They
           duplicate the same programs provided by <xref
-          linkend='ch-system-shadow'/>.  They also require <ulink
-          url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink>
+          linkend='ch-system-shadow'/> and <xref linkend='ch-system-sysvinit'/>.
+          They also require
+          <ulink url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink>
           which is not available in LFS.</para>
 @y
           <para>
           これらのスイッチは su, sulogin, login をビルドしないようにするものです。
-          同名のプログラムが <xref linkend='ch-system-shadow'/> により提供されます。
+          同名のプログラムが <xref linkend='ch-system-shadow'/> と <xref linkend='ch-system-sysvinit'/> により提供されます。
           このプログラムは <ulink
           url="&blfs-root;/view/svn/postlfs/linux-pam.html">Linux-PAM</ulink> を必要とします。
           Linux-PAM は LFS ではビルドしません。
@@ -464,6 +465,14 @@
 @y
           <para>
           iso9660 ファイルシステムのサイズを表示します。
+          </para>
+@z
+
+@x kill
+          <para>Sends signals to processes</para>
+@y
+          <para>
+          プロセスに対してシグナルを送信します。
           </para>
 @z
 

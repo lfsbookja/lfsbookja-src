@@ -41,19 +41,10 @@
 @z
 
 @x
-        <term><parameter>lib* and --with-*</parameter></term>
-@y
-        <term><parameter>lib* と --with-*</parameter></term>
-@z
-
-@x
-          <para>These options enable Kmod to handle compressed kernel modules.
-          The shell variables are required in order for the xz and zlib headers
-          and libraries to be found in the absence of pkg-config.</para>
+          <para>These options enable Kmod to handle compressed kernel modules.</para>
 @y
           <para>
           これらのオプションは、Kmod が圧縮されたカーネルモジュールを取り扱えるようにするものです。
-          シェル変数は、pkg-config が無くても、xz や zlib のヘッダーあるいはライブラリを見出せるようにするために必要になります。
           </para>
 @z
 
