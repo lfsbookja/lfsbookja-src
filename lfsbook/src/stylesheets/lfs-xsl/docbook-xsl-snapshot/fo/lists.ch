@@ -21,6 +21,6 @@
             <xsl:text>em</xsl:text>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:text>em * 1.20</xsl:text>
+            <xsl:text>em * 0.60</xsl:text>
           </xsl:otherwise>
 @z

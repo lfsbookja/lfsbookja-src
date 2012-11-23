@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2012-11-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to systemd-196/lfs-udev-196. Fixes
+          <ulink url="&lfs-ticket-root;3233">#3233</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd-196/lfs-udev-196 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3233">#3233</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-11-18</para>
       <itemizedlist>
         <listitem>
