@@ -86,13 +86,17 @@
     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
-% @x
-%         <para>Required Patch:
-%           <ulink url="&patch-root;/mysql-&mysql-version;-makefile-1.patch"/>
-% @y
-%         <para>必須のパッチ:
-%           <ulink url="&patch-root;/mysql-&mysql-version;-makefile-1.patch"/>
-% @z
+@x
+        <para>Optional patch (required if building for Amarok): <ulink
+@y
+        <para>任意のパッチ (Amarok をビルドする場合に必要): <ulink
+@z
+
+@x
+        <para>Optional patch (required if building only the client): <ulink
+@y
+        <para>任意のパッチ (クライアントプログラムのみをビルドする場合に必要): <ulink
+@z
 
 @x
         <para>Optional Documentation (see tip below):
@@ -106,6 +110,14 @@
     <bridgehead renderas="sect3">MySQL Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;MySQL&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="optional"><xref linkend="cmake"/></para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="optional"><xref linkend="cmake"/></para>
 @z
 
 @x
@@ -141,6 +153,12 @@
 @z
 
 @x
+    <title>Building</title>
+@y
+    <title>ビルド</title>
+@z
+
+@x
     <para>For security reasons, running the server as an unprivileged user
     and group is strongly encouraged. Issue the following (as
     <systemitem class="username">root</systemitem>) to create the user and
@@ -148,9 +166,7 @@
 @y
     <para>
     セキュリティ上の理由から、サーバープロセスは一般ユーザーおよびグループに起動することが強く推奨されています。
-    Issue the following (as
-    <systemitem class="username">root</systemitem>) to create the user and
-    group:
+    <systemitem class="username">root</systemitem> ユーザーとなって、ユーザーとグループを生成する以下のコマンドを実行します。
     </para>
 @z
 
@@ -160,10 +176,11 @@
     use the cmake option <parameter>-DWITHOUT_SERVER=ON</parameter> and the
     client-only installation instructions below.</para>
 @y
-    <para>If the MySQL server is not needed, it is possible to build only the
-    client libraries of MySQL. To do this you need to apply the optional patch,
-    use the cmake option <parameter>-DWITHOUT_SERVER=ON</parameter> and the
-    client-only installation instructions below.</para>
+    <para>
+    MySQL のサーバープログラムが不要である場合は、MySQL のクライアントプログラムのみをビルドすることも可能です。
+    クライアントプログラムのみとする場合は、これを行うための任意のパッチを適用した上で、cmake のオプション <parameter>-DWITHOUT_SERVER=ON</parameter> を指定します。
+    そして以下に示す、クライアントのみのインストール手順を実施してください。
+   </para>
 @z
 
 @x
@@ -174,12 +191,12 @@
     shared version of this library can be built. The shared library is needed
     by certain applications, such as <application>Amarok</application>.</para>
 @y
-    <para>MySQL contains an embedded server library which can be enabled with
-    the cmake option <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>. By default
-    this server is built as a statically linked library,
-    <filename>libmysqld.a</filename>, but by applying the optional patch, a
-    shared version of this library can be built. The shared library is needed
-    by certain applications, such as <application>Amarok</application>.</para>
+    <para>
+    MySQL には cmake のオプション <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter> の指定により有効となる、内部サーバーライブラリを含んでいます。
+    そしてこのサーバーライブラリは、デフォルトでは <filename>libmysqld.a</filename> というスタティックライブラリとして構築されます。
+    任意のパッチを適用すれば、これを共有ライブラリとして構築することも可能です。
+    共有ライブラリは、例えば <application>Amarok</application> などのアプリケーションにおいて必要となります。
+    </para>
 @z
 
 @x
@@ -189,25 +206,30 @@
     url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
     Documentation</ulink> for a full listing of all options.</para>
 @y
-    <para>There are numerous options available to
-    <userinput>cmake</userinput>. Check the output of the `<userinput>cmake .
-    -LH</userinput>` for additional customization options. See the <ulink
+    <para>
+    <userinput>cmake</userinput> に対しては数多くのオプションを指定することが可能です。
+    `<userinput>cmake . -LH</userinput>` を実行すれば、その出力結果により、カスタマイズオプションの内容を確認することができます。
+    <ulink
     url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
-    Documentation</ulink> for a full listing of all options.</para>
+    Documentation</ulink> では、すべてのオプションについて説明しています。
+    </para>
 @z
 
 @x
     <para>If you want the shared version of the embedded server library, apply
     the patch:</para>
 @y
-    <para>If you want the shared version of the embedded server library, apply
-    the patch:</para>
+    <para>
+    内部サーバーライブラリを共有ライブラリとして構築したい場合は、以下のパッチを適用します。
+    </para>
 @z
 
 @x
      <para>If building the client-only, apply the patch:</para>
 @y
-     <para>If building the client-only, apply the patch:</para>
+     <para>
+     クライアントプログラムのみを構築する場合は、以下のパッチを適用します。
+     </para>
 @z
 
 @x
@@ -242,6 +264,39 @@
     </para>
 @z
 
+@x
+    <note><para>The SSL tests may fail due to expired certificates.</para></note>
+@y
+    <note><para>
+    SSL テストは、期限切れの証明書を用いていることから失敗します。
+    </para></note>
+@z
+
+@x
+      <title>Installation (server and client)</title>
+@y
+      <title>インストール (サーバープログラムおよびクライアントプログラム)</title>
+@z
+
+@x
+      <para>To install the server and client, issue the following command (as
+      the <systemitem class="username">root</systemitem> user):</para>
+@y
+      <para>
+      サーバープログラムとクライアントプログラムをともにインストールする場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+      </para>
+@z
+
+@x
+      <note><para>If you built the embedded server library add
+      <userinput>Embedded</userinput> to the <userinput>SEGMENTS</userinput>
+      variable above.</para></note>
+@y
+      <note><para>
+      内部サーバーライブラリをビルドしている場合は、上の変数 <userinput>SEGMENTS</userinput> の定義において <userinput>Embedded</userinput> を追加してください。
+      </para></note>
+@z
 
 @x
       <tip><para>The only documentation shipped in the source tarball are
@@ -257,6 +312,17 @@
 @z
 
 @x
+      <title>Installation (client only)</title>
+      <para>If you would like to install the client software only, issue the
+      following (as <systemitem class="username">root</systemitem>):</para>
+@y
+      <title>インストール (クライアントプログラムのみ)</title>
+      <para>
+      クライアントプログラムのみをインストールする場合は <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
+@z
+
+@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
@@ -269,11 +335,56 @@
     are ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
     PARTITION and PERFSCHEMA.</para>
 @y
-    <para><parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>: The default
-    instructions only build the innobase (InnoDB) storage engine. If other
-    storage engines are desired use this switch to enable them. Valid choices
-    are ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
-    PARTITION and PERFSCHEMA.</para>
+    <para><parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>:
+    デフォルトのインストール手順では innobase (InnoDB) ストレージエンジンのみしかインストールしません。
+    これ以外のストレージエンジンを必要とする場合は、本スイッチを用いてそれらを有効化する必要があります。
+    指定できるエンジンは ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
+    PARTITION, PERFSCHEMA です。</para>
+@z
+
+@x
+    <para><parameter>-DWITHOUT_SERVER=ON</parameter>: Use this switch if you don't
+    want the server and would like to build the client only.</para>
+@y
+    <para><parameter>-DWITHOUT_SERVER=ON</parameter>:
+    サーバープログラムは必要でなく、クライアントプログラムのみを利用する場合には本スイッチを指定します。
+    </para>
+@z
+
+@x
+    <para><parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: Use this switch to build
+    the embedded server library.</para>
+@y
+    <para><parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>:
+    内部サーバーライブラリをビルドするには本スイッチを指定します。
+    </para>
+@z
+
+@x
+    <para><parameter>-DWITH_SSL=system</parameter>: Use this switch to build
+    against a system version of SSL.</para>
+@y
+    <para><parameter>-DWITH_SSL=system</parameter>:
+    システムにインストール済の SSL を利用したビルドとする場合には、本スイッチを指定します。
+    </para>
+@z
+
+@x
+    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
+    command installs the appropriate portion of the package. Different
+    segments may be added or deleted as desired.  Valid segments are listed
+    with `<command>make list_install_components</command>`.
+    Note that the 'DataFiles' install segment does not honor the
+    -DMYSQL_DATADIR or -DINSTALL_MYSQLDATADIR statements and installs datafiles
+    in <filename class="directory">/usr/data</filename>.</para>
+@y
+    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
+    command installs the appropriate portion of the package. Different
+    segments may be added or deleted as desired.  Valid segments are listed
+    with `<command>make list_install_components</command>`.
+    Note that the 'DataFiles' install segment does not honor the
+    -DMYSQL_DATADIR or -DINSTALL_MYSQLDATADIR statements and installs datafiles
+    in <filename class="directory">/usr/data</filename>.</para>
 @z
 
 @x

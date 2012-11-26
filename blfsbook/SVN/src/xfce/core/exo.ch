@@ -80,14 +80,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libxfce4ui"/> and
-      <xref linkend="libxfce4util"/>.
+      <xref linkend="libxfce4ui"/>,
+      <xref linkend="libxfce4util"/> and
+      <xref linkend="perl-uri"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libxfce4ui"/>,
-      <xref linkend="libxfce4util"/>
+      <xref linkend="libxfce4util"/>,
+      <xref linkend="perl-uri"/>
     </para>
 @z
 

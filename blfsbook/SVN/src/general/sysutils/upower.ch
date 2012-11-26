@@ -84,6 +84,7 @@
     <para role="required">
       <xref linkend="dbus-glib"/>,
       <xref linkend="intltool"/>,
+      <xref linkend="libusb"/>,
       <xref linkend="polkit"/>, and
       <xref linkend="udev"/> or  <xref linkend="udev-extras"/> (for GUdev)
     </para>
@@ -92,8 +93,9 @@
     <para role="required">
       <xref linkend="dbus-glib"/>,
       <xref linkend="intltool"/>,
+      <xref linkend="libusb"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="udev"/> または  <xref linkend="udev-extras"/> (GUdev 用)
+      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (GUdev のため)
     </para>
 @z
 

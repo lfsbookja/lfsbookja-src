@@ -79,13 +79,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="Optional">
+    <para role="optional">
       <xref linkend="icu"/> and
       <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="Optional">
+    <para role="optional">
       <xref linkend="icu"/>,
       <xref linkend="python2"/>
     </para>

@@ -14,6 +14,12 @@
 @z
 
 @x
+    <title>Introduction to OpenSSH</title>
+@y
+    <title>&IntroductionTo1;OpenSSH&IntroductionTo2;</title>
+@z
+
+@x
     The <application>OpenSSH</application> package contains
     <command>ssh</command> clients and the <command>sshd</command> daemon. This
     is useful for encrypting authentication and subsequent traffic over a
@@ -24,12 +30,6 @@
     <application>OpenSSH</application> パッケージは <command>ssh</command> クライアントと <command>sshd</command> デーモンを提供します。
     これはネットワーク越しの通信にあたり、権限情報をはじめとする情報を暗号化します。
     <command>ssh</command> コマンドと <command>scp</command> コマンドは、それぞれ <command>telnet</command> と <command>rcp</command> に対するセキュアな実装です。
-@z
-
-@x
-    <title>Introduction to OpenSSH</title>
-@y
-    <title>&IntroductionTo1;OpenSSH&IntroductionTo2;</title>
 @z
 
 @x

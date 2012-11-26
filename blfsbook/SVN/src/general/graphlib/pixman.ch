@@ -14,19 +14,17 @@
 @z
 
 @x
-    <title>Introduction to pixman</title>
+    <title>Introduction to Pixman</title>
 @y
-    <title>&IntroductionTo1;pixman&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Pixman&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>pixman</application> package contains a library that
-    provides low-level pixel manipulation features such as image compositing
-    and trapezoid rasterization.</para>
+      The <application>Pixman</application> package contains a library that
+      provides low-level pixel manipulation features such as image
+      compositing and trapezoid rasterization.
 @y
-    <para>
-    <application>pixman</application> パッケージは、イメージ合成 (image compositing) や "矩形分割" によるラスター処理 (trapezoid rasterization) など、低レベルなピクセル操作を実現するライブラリを提供します。
-    </para>
+      <application>pixman</application> パッケージは、イメージ合成 (image compositing) や "矩形分割" によるラスター処理 (trapezoid rasterization) など、低レベルなピクセル操作を実現するライブラリを提供します。
 @z
 
 @x
@@ -36,94 +34,94 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&pixman-download-http;"/></para>
+          Download (HTTP): <ulink url="&pixman-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&pixman-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&pixman-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&pixman-download-ftp;"/></para>
+          Download (FTP): <ulink url="&pixman-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&pixman-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&pixman-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &pixman-md5sum;</para>
+          Download MD5 sum: &pixman-md5sum;
 @y
-        <para>&Download; MD5 sum: &pixman-md5sum;</para>
+          &Download; MD5 sum: &pixman-md5sum;
 @z
 
 @x
-        <para>Download size: &pixman-size;</para>
+          Download size: &pixman-size;
 @y
-        <para>&DownloadSize;: &pixman-size;</para>
+          &DownloadSize;: &pixman-size;
 @z
 
 @x
-        <para>Estimated disk space required: &pixman-buildsize;</para>
+          Estimated disk space required: &pixman-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &pixman-buildsize;</para>
+          &Estimateddiskspacerequired;: &pixman-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &pixman-time;</para>
+          Estimated build time: &pixman-time;
 @y
-        <para>&Estimatedbuildtime;: &pixman-time;</para>
+          &Estimatedbuildtime;: &pixman-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">pixman Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Pixman Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;pixman&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Pixman&Dependencies2;</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (required to run the test suite)</bridgehead>
-    <para role="optional"><xref linkend="gtk2"/></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk2"/> and
+      <xref linkend="libpng"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (テストスイート実行に必要)</bridgehead>
-    <para role="optional"><xref linkend="gtk2"/></para>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk2"/>,
+      <xref linkend="libpng"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/pixman"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/pixman"/></para>
 @z
 
 @x
-    <title>Installation of pixman</title>
+    <title>Installation of Pixman</title>
 @y
-    <title>&InstallationOf1;pixman&InstallationOf2;</title>
+    <title>&InstallationOf1;Pixman&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>pixman</application> by running the following
+    <para>Install <application>Pixman</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>pixman</application> をビルドします。
+    以下のコマンドを実行して <application>Pixman</application> をビルドします。
     </para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. Note that
-    <application>GTK+2</application> must be installed.</para>
+      To test the results, issue: <command>make check</command>. Note that
+      <application>GTK+2</application> must be installed.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    <application>GTK+2</application> がインストールされている必要があります。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      <application>GTK+2</application> がインストールされている必要があります。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -139,23 +137,27 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>none</seg>
-        <seg>libpixman-1.so</seg>
-        <seg>/usr/include/pixman-1</seg>
+        <seg>
+          libpixman-1.so
+        </seg>
+        <seg>
+          /usr/include/pixman-1
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libpixman-1.so</seg>
-        <seg>/usr/include/pixman-1</seg>
+        <seg>
+          libpixman-1.so
+        </seg>
+        <seg>
+          /usr/include/pixman-1
+        </seg>
 @z
 
 @x
@@ -164,11 +166,9 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libpixman1.{so,a}
-          <para>contains functions that provide low-level pixel manipulation
-          features.</para>
+@x libpixman1.so
+            contains functions that provide low-level pixel manipulation
+            features.
 @y
-          <para>
-          ピクセルを取り扱う低レベル関数を提供します。
-          </para>
+            ピクセルを取り扱う低レベル関数を提供します。
 @z

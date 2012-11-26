@@ -133,9 +133,9 @@
 @z
 
 @x ----------------------------------------
-      <para>September 6th, 2012</para>
+      <para>September 7th, 2012</para>
 @y
-      <para>2012/09/06</para>
+      <para>2012/09/07</para>
 @z ----------------------------------------
 @x
           <para>[bdubbs] - Update to exim-4.80. Fixes

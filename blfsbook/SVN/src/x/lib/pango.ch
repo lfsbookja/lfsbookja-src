@@ -229,8 +229,8 @@
           pango-querymodules and pango-view
         </seg>
         <seg>
-          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so and
-          libpangoxft-1.0.so
+          libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
+          libpangox-1.0.so and libpangoxft-1.0.so
         </seg>
         <seg>
           /etc/pango,
@@ -244,7 +244,7 @@
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangoxft-1.0.so
+          libpangox-1.0.so, libpangoxft-1.0.so
         </seg>
         <seg>
           /etc/pango,

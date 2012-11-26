@@ -171,11 +171,11 @@
 @z
 
 @x
-      <option>--disable-gtk-theme</option>: Add this option if you have not
-      installed GTK+ 2.
+      <option>--disable-introspection</option>: Use this switch if you have
+      not installed <application>Gobject Introspection</application>.
 @y
-      <option>--disable-gtk-theme</option>: Add this option if you have not
-      installed GTK+ 2.
+      <option>--disable-introspection</option>:
+      <application>Gobject Introspection</application> をインストールしていない場合はこのスイッチを指定します。
 @z
 
 @x

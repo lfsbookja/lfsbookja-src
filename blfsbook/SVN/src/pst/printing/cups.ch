@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Cups</title>
 @y
-    <title>&IntroductionTo1;Introduction&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Cups&IntroductionTo2;</title>
 @z
 
 @x
@@ -72,6 +72,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Cups Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Cups&Dependencies2;</bridgehead>
@@ -85,7 +103,7 @@
       <xref linkend="libusb"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="colord"/>,
       <xref linkend="dbus"/>,
@@ -111,11 +129,11 @@
       <xref linkend="xdg-utils"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="acl"/>,
       <xref linkend="avahi"/>,
-      <xref linkend="gnutls"/> or <xref linkend="openssl"/>,
+      <xref linkend="gnutls"/> または <xref linkend="openssl"/>,
       <ulink
       url="http://packages.debian.org/source/sid/libpaper">libpaper</ulink>,
       <xref linkend="linux-pam"/>,
@@ -124,21 +142,33 @@
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
       <!-- <ulink url="http://valgrind.org/">Valgrind</ulink>
-      (optionaly used during the test suites) -->and
+      (optionaly used during the test suites) -->,
       <xref linkend="xdg-utils"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required (Runtime)</bridgehead>
+    <para role="optional"><!-- Yes, optional -->
+      <xref linkend="cups-filters"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="optional"><!-- Yes, optional -->
+      <xref linkend="cups-filters"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Kernel Configuration</title>
 @y
-    <title>Kernel Configuration</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
@@ -253,8 +283,7 @@
       Now, as the <systemitem class="username">root</systemitem>
       user:
 @y
-      Now, as the <systemitem class="username">root</systemitem>
-      user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -280,7 +309,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -368,7 +397,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -376,9 +405,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -412,11 +441,11 @@
           cupsreject, cupstestdsc, cupstestppd, ipptool, lp,
           lpadmin, lpc, lpinfo, lpmove, lpoptions, lppasswd,
           lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge,
-          ppdpo and reject
+          ppdpo, reject
         </seg>
         <seg>
           libcupscgi.so, libcupsimage.so, libcupsmime.so,
-          libcupsppdc.so and libcups.so
+          libcupsppdc.so, libcups.so
         </seg>
         <seg>
           /etc/cups,
@@ -426,7 +455,7 @@
           /usr/share/doc/cups-&cups-version;,
           /var/cache/cups,
           /var/log/cups,
-          /var/run/cups and
+          /var/run/cups,
           /var/spool/cups
         </seg>
 @z
@@ -434,7 +463,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x accept
@@ -470,4 +499,3 @@
 @y
             tests the conformance of PPD files.
 @z
-

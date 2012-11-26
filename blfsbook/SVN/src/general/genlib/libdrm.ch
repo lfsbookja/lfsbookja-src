@@ -138,15 +138,6 @@
 @z
 
 @x
-      <option>--enable-vmwgfx-experimental-api</option>: This parameter
-      enables use of VMWGFX experimental kernel API used by the
-      VMware 3D Gallium driver.
-@y
-      <option>--enable-vmwgfx-experimental-api</option>:
-      このパラメーターは、VMware 3D Gallium ドライバーによって用いられる VMWGFX の実験的なカーネル API の利用を可能にします。
-@z
-
-@x
       <option>--enable-omap-experimental-api</option>: This option
       enables use of OMAP's experimental kernel API. OMAP is a series
       of system-on-chips (SoCs) developed by Texas Instruments.

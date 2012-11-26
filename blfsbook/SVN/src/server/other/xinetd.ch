@@ -84,6 +84,14 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"><xref linkend="libtirpc"/></para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required"><xref linkend="libtirpc"/></para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers (deprecated)</ulink></para>
 @y
@@ -126,6 +134,31 @@
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
+@z
+
+@x
+     <title>Command Explanations</title>
+@y
+     <title>&CommandExplanations;</title>
+@z
+
+@x
+     <para><command>sed ... xinetd/Makefile.in</command>: Ensure the program
+     links against the libtirpc library.</para>
+@y
+     <para>
+     <command>sed ... xinetd/Makefile.in</command>:
+     libtirc ライブラリにリンクするようにします。
+     </para>
+@z
+
+@x
+     <para><command>sed ... xinetd/itox.c</command>: Fix some compiler 
+     warnings.</para>
+@y
+     <para><command>sed ... xinetd/itox.c</command>:
+     コンパイラーの警告メッセージを調整します。
+     </para>
 @z
 
 @x
@@ -243,9 +276,10 @@
       appropriate services are started. If no services are enabled, the program
       will not start without the <option>-stayalive</option> option.</para>
 @y
-      <para>Check the <filename>/var/log/daemon.log</filename> to ensure the
-      appropriate services are started. If no services are enabled, the program
-      will not start without the <option>-stayalive</option> option.</para>
+      <para>
+      <filename>/var/log/daemon.log</filename> を参照して、意図しているサービスが起動しているかどうかを確認してください。
+      サービスが全く起動していなかったら、<option>-stayalive</option> オプションを指定する必要があります。
+      </para>
 @z
 
 @x

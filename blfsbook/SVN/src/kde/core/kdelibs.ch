@@ -242,7 +242,7 @@
         kfilemetadatareader, kjs, kjscmd, kross, kshell4, kunittestmodrunner,
         kwrapper4, makekdewidgets, meinproc4, meinproc4_simple, nepomuk-rcgen
         and preparetips</seg>
-        <seg>several in &kde-dir;/lib</seg>
-        <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
+        <seg>&kde-dir;/lib 配下に数種のライブラリ</seg>
+        <seg>&kde-dir;/include, &kde-dir;/lib and &kde-dir;/share 配下に数種のディレクトリ
         </seg>
 @z
