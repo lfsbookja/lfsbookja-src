@@ -83,6 +83,26 @@
 @z
 
 @x
+    <caution><para>There are several places within the
+    <application>systemd</application> source code that have explicit directory
+    paths embedded.  For instance, the binary version of the hardware
+    database's path and file name used at run time,
+    <filename>/etc/udev/hwdb.bin</filename>, cannot be changed without explict
+    changes to the source code.</para></caution>
+@y
+    <caution><para>
+    <application>systemd</application> のソースコード内には、明示的にディレクトリ名を含めたコードがいくつかあります。
+    例えばバイナリ版のハードウェアデータベースファイル <filename>/etc/udev/hwdb.bin</filename> は実行時に利用されますが、ソースコードを書き換えない限りそのパスを変更することはできません。
+    </para></caution>
+@z
+
+@x
+    <para>Now initialize the hardware database:</para>
+@y
+    <para>ハードウェアデータベースを初期化します。</para>
+@z
+
+@x
     <para>Finally set up the persistent network udev rules.  This task will be
     explained in detail in <xref linkend='stable-net-names'/>.  Note that the
     <filename class='directory'>/sys</filename> and <filename

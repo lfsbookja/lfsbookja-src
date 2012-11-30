@@ -14,6 +14,12 @@
 @z
 
 @x
+<sect1 id="pre-hostreqs" xreflabel="Host System Requirements">
+@y
+<sect1 id="pre-hostreqs" xreflabel="ホストシステム要件">
+@z
+
+@x
   <title>Host System Requirements</title>
 @y
   <title>ホストシステム要件</title>

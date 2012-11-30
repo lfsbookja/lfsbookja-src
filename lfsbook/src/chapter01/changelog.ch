@@ -48,10 +48,62 @@
 @z
 
 @x
+      <para>2012-11-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update makefile and instructions for
+          systemd-196/udev-lfs-196.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd-196/udev-lfs-196 の Makefile と手順を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-11-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.6.8.  Fixes
+          <ulink url="&lfs-ticket-root;3234">#3234</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.6.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3234">#3234</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Re-emphasize host system requirements in
+          Chapter 5 General Compilation Instructions.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-11-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 第5章 全般的なコンパイル手順にて、ホスト要件を明確化。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-11-22</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Upgrade to systemd-196/lfs-udev-196. Fixes
+          <para>[bdubbs] - Upgrade to systemd-196/udev-lfs-196. Fixes
           <ulink url="&lfs-ticket-root;3233">#3233</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -59,7 +111,7 @@
       <para>2012-11-22</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - systemd-196/lfs-udev-196 へのアップグレード。
+          <para>[bdubbs] - systemd-196/udev-lfs-196 へのアップグレード。
           <ulink url="&lfs-ticket-root;3233">#3233</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>

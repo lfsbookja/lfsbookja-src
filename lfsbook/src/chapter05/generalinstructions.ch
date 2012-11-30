@@ -94,12 +94,43 @@
 @z
 
 @x
-      <para>The build instructions assume that the <command>bash</command> 
-      shell is in use.</para>
+      <para>The build instructions assume that the <xref
+      linkend='pre-hostreqs'/>, including symbolic links, have been set
+      properly:</para>
 @y
       <para>
-      ビルド作業においては <command>bash</command> シェルの利用を想定しています。
+      ビルドにあたっては <xref
+      linkend='pre-hostreqs'/>にて示す要件やシンボリックリンクが、正しくインストールされていることを前提とします。
       </para>
+@z
+
+@x
+        <listitem override='bullet'><para><command>bash</command> is the shell
+        in use.</para></listitem>
+@y
+        <listitem override='bullet'><para><command>bash</command> シェルの利用を想定しています。</para></listitem>
+@z
+
+@x
+        <listitem override='bullet'><para><command>sh</command> is a symbolic
+        link to <command>bash</command>.</para></listitem>
+@y
+        <listitem override='bullet'><para><command>sh</command> は <command>bash</command> へのシンボリックリンクであるものとします。</para></listitem>
+@z
+
+@x
+        <listitem override='bullet'><para><command>/usr/bin/awk</command> is a
+        symbolic link to <command>gawk</command>.</para></listitem>
+@y
+        <listitem override='bullet'><para><command>/usr/bin/awk</command> は <command>gawk</command> へのシンボリックリンクであるものとします。</para></listitem>
+@z
+
+@x
+        <listitem override='bullet'><para><command>/usr/bin/yacc</command> is a
+        symbolic link to <command>bison</command> or a small script that
+        executes bison.</para></listitem>
+@y
+        <listitem override='bullet'><para><command>/usr/bin/yacc</command> は <command>bison</command> へのシンボリックリンクであるか、あるいは bison を実行するためのスクリプトであるものとします。</para></listitem>
 @z
 
 @x
