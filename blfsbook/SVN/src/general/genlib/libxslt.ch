@@ -165,11 +165,11 @@
           <application>Python</application> modules
         </seg>
         <seg>
-        /usr/include/libexslt,
-        /usr/include/libxslt,
-        /usr/lib/libxslt-plugins,
-        /usr/share/doc/libxslt-&libxslt-version;, and
-        /usr/share/doc/libxslt-python-&libxslt-version;</seg>
+          /usr/include/libexslt,
+          /usr/include/libxslt,
+          /usr/lib/libxslt-plugins,
+          /usr/share/doc/libxslt-&libxslt-version;, and
+          /usr/share/doc/libxslt-python-&libxslt-version;</seg>
 @y
         <seg>
           xslt-config, xsltproc
@@ -179,11 +179,11 @@
           <application>Python</application> モジュール
         </seg>
         <seg>
-        /usr/include/libexslt,
-        /usr/include/libxslt,
-        /usr/lib/libxslt-plugins,
-        /usr/share/doc/libxslt-&libxslt-version;,
-        /usr/share/doc/libxslt-python-&libxslt-version;</seg>
+          /usr/include/libexslt,
+          /usr/include/libxslt,
+          /usr/lib/libxslt-plugins,
+          /usr/share/doc/libxslt-&libxslt-version;,
+          /usr/share/doc/libxslt-python-&libxslt-version;</seg>
 @z
 
 @x

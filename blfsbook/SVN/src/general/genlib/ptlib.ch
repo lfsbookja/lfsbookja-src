@@ -14,21 +14,19 @@
 @z
 
 @x
-    <title>Introduction to ptlib</title>
+    <title>Introduction to Ptlib</title>
 @y
-    <title>&IntroductionTo1;ptlib&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Ptlib&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>ptlib</application> (Portable Tools Library) package
-    is a class library that has its genesis many years ago as PWLib (portable
-    Windows Library), a method to produce applications to run on various
-    platforms.</para>
+      The <application>Ptlib</application> (Portable Tools Library) package
+      contains a class library that has its genesis many years ago as PWLib
+      (portable Windows Library), a method to produce applications to run on
+      various platforms.
 @y
-    <para>
-    <application>ptlib</application> (Portable Tools Library) パッケージは、かつて PWLib (ポータブル ウィンドウ ライブラリ; portable Windows Library) とされていたクラスライブラリです。
-    数々のプラットフォーム上にてアプリケーションを動作させる方法を提供します。
-    </para>
+      <application>Ptlib</application> (Portable Tools Library) パッケージは、かつて PWLib (ポータブル ウィンドウ ライブラリ; portable Windows Library) とされていたクラスライブラリです。
+      数々のプラットフォーム上にてアプリケーションを動作させる方法を提供します。
 @z
 
 @x
@@ -38,108 +36,132 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&ptlib-download-http;"/></para>
+          Download (HTTP): <ulink url="&ptlib-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&ptlib-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&ptlib-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&ptlib-download-ftp;"/></para>
+          Download (FTP): <ulink url="&ptlib-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&ptlib-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&ptlib-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &ptlib-md5sum;</para>
+          Download MD5 sum: &ptlib-md5sum;
 @y
-        <para>&Download; MD5 sum: &ptlib-md5sum;</para>
+          &Download; MD5 sum: &ptlib-md5sum;
 @z
 
 @x
-        <para>Download size: &ptlib-size;</para>
+          Download size: &ptlib-size;
 @y
-        <para>&DownloadSize;: &ptlib-size;</para>
+          &DownloadSize;: &ptlib-size;
 @z
 
 @x
-        <para>Estimated disk space required: &ptlib-buildsize;</para>
+          Estimated disk space required: &ptlib-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &ptlib-buildsize;</para>
+          &Estimateddiskspacerequired;: &ptlib-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &ptlib-time;</para>
+          Estimated build time: &ptlib-time;
 @y
-        <para>&Estimatedbuildtime;: &ptlib-time;</para>
+          &Estimatedbuildtime;: &ptlib-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">ptlib Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Ptlib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;ptlib&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Ptlib&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="pkgconfig"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="expat"/> and
+      <xref linkend="openssl"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="expat"/>,
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="alsa-lib"/>,
-    <xref linkend="cyrus-sasl"/>
-    <xref linkend="expat"/>
-    <ulink url="http://sourceforge.net/projects/libavc1394/">libavc1394</ulink>,
-    <xref linkend="libdv"/>,
-    <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
-    <xref linkend="openldap"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="sdl"/>, and
-    <xref linkend="speex"/></para>
+    <para role="optional">
+      <xref linkend="cyrus-sasl"/>,
+      <ulink url="http://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
+      <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
+      <ulink url="http://www.lua.org/">Lua</ulink>,
+      <xref linkend="openldap"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="sdl"/>,
+      <xref linkend="unixodbc"/> and
+      <ulink url="http://linuxtv.org/downloads/v4l-utils/">Video4Linux</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="alsa-lib"/>,
-    <xref linkend="cyrus-sasl"/>
-    <xref linkend="expat"/>
-    <ulink url="http://sourceforge.net/projects/libavc1394/">libavc1394</ulink>,
-    <xref linkend="libdv"/>,
-    <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
-    <xref linkend="openldap"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="sdl"/>,
-    <xref linkend="speex"/></para>
+    <para role="optional">
+      <xref linkend="cyrus-sasl"/>,
+      <ulink url="http://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
+      <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
+      <ulink url="http://www.lua.org/">Lua</ulink>,
+      <xref linkend="openldap"/>,
+      <xref linkend="pulseaudio"/>,
+      <xref linkend="sdl"/>,
+      <xref linkend="unixodbc"/>,
+      <ulink url="http://linuxtv.org/downloads/v4l-utils/">Video4Linux</ulink>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/ptlib"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/ptlib"/></para>
 @z
 
 @x
-    <title>Installation of ptlib</title>
+    <title>Installation of Ptlib</title>
 @y
-    <title>&InstallationOf1;ptlib&InstallationOf2;</title>
+    <title>&InstallationOf1;Ptlib&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>ptlib</application> by running the following
-    commands:</para>
+      Install <application>Ptlib</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>ptlib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Ptlib</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -149,8 +171,8 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -159,17 +181,31 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libpt.so, libpt_s.a, alsa_pwplugin.so, and v4l2_pwplugin.so</seg>
-        <seg>/usr/{include/{ptclib,ptlib/unix/ptlib},
-        lib/ptlib-&ptlib-version;/devices/{sound,videoinput},
-        share/ptlib/make}</seg>
+        <seg>
+          ptlib-config
+        </seg>
+        <seg>
+          libpt.so and libpt_s.a
+        </seg>
+        <seg>
+          /usr/include/ptclib,
+          /usr/include/ptlib,
+          /usr/lib/ptlib-&ptlib-version; and
+          /usr/share/ptlib
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libpt.so, libpt_s.a, alsa_pwplugin.so, v4l2_pwplugin.so</seg>
-        <seg>/usr/{include/{ptclib,ptlib/unix/ptlib},
-        lib/ptlib-&ptlib-version;/devices/{sound,videoinput},
-        share/ptlib/make}</seg>
+        <seg>
+          ptlib-config
+        </seg>
+        <seg>
+          libpt.so, libpt_s.a
+        </seg>
+        <seg>
+          /usr/include/ptclib,
+          /usr/include/ptlib,
+          /usr/lib/ptlib-&ptlib-version;,
+          /usr/share/ptlib
+        </seg>
 @z
 
 @x
@@ -178,10 +214,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libpt{.so,_s.a}
-          <para>contains the <application>ptlib</application> API methods.</para>
+@x libpt.so
+            contains the <application>Ptlib</application> API functions.
 @y
-          <para>
-          <application>ptlib</application> API メソッドを提供します。
-          </para>
+            <application>ptlib</application> API 関数を提供します。
 @z

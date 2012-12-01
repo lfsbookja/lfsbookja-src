@@ -149,6 +149,7 @@ BOOKdir = $(top_builddir)/@bookdir@/xsoft/other
 CHANGE_FILES = \
 	balsa.ch        \
 	blueman.ch      \
+	ekiga.ch        \
 	gimp.ch         \
 	gnash.ch        \
 	gparted.ch      \
@@ -358,6 +359,7 @@ ctie:
 
 balsa.xml:        $(BOOKdir)/$@ $(srcdir)/balsa.ch
 blueman.xml:      $(BOOKdir)/$@ $(srcdir)/blueman.ch
+ekiga.xml:        $(BOOKdir)/$@ $(srcdir)/ekiga.ch
 gimp.xml:         $(BOOKdir)/$@ $(srcdir)/gimp.ch
 gnash.xml:        $(BOOKdir)/$@ $(srcdir)/gnash.ch
 gparted.xml:      $(BOOKdir)/$@ $(srcdir)/gparted.ch
