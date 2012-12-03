@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2012-13-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix build issues in makefile for
+          systemd-196/udev-lfs-196.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-12-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd-196/udev-lfs-196 における Makefile の不備を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-11-28</para>
       <itemizedlist>
         <listitem>
