@@ -116,15 +116,6 @@
 @z
 
 @x
-          <para>This tells Glibc to use the NPTL add-on as its threading
-          library.</para>
-@y
-          <para>
-          スレッド処理のライブラリとして NPTL アドオンを利用することを指示します。
-          </para>
-@z
-
-@x
           <para>This tells Glibc to compile the library with support
           for 2.6.25 and later Linux kernels.  Workarounds for older
           kernels are not enabled.</para>

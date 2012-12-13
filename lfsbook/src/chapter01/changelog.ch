@@ -48,6 +48,87 @@
 @z
 
 @x
+      <para>2012-12-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.7.0.  Fixes
+          <ulink url="&lfs-ticket-root;3246">#3246</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update Check's list of installed
+          programs. Fixes
+          <ulink url="&lfs-ticket-root;3245">#3245</ulink>. Thanks
+          to Chris Staub for the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - All of Flex's tests pass, so remove the
+          &quot;-k&quot; option to its testsuite invocation. Fixes
+          <ulink url="&lfs-ticket-root;3244">#3244</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to E2fsprogs-1.42.6.  Fixes
+          <ulink url="&lfs-ticket-root;3243">#3243</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Remove redundant --enable-addons parameter to
+          Glibc's configure script. Fixes
+          <ulink url="&lfs-ticket-root;3241">#3241</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Update IRC server information.  Fixes
+          <ulink url="&lfs-ticket-root;3240">#3240</ulink>. Thanks
+          to Chris Staub for the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Kmod-12.  Fixes
+          <ulink url="&lfs-ticket-root;3238">#3238</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.7.  Fixes
+          <ulink url="&lfs-ticket-root;3237">#3237</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-12-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.7.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3246">#3246</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Check パッケージのインストールプログラムの一覧を更新。
+          <ulink url="&lfs-ticket-root;3245">#3245</ulink> を Fix に。
+          パッチを提供してくれた Chris Staub に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Flex のテストスイートはすべて正常処理されるため、テストスイート実行時の &quot;-k&quot; オプションを取り除く。
+          <ulink url="&lfs-ticket-root;3244">#3244</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - E2fsprogs-1.42.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3243">#3243</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Glibc の configure スクリプトにおいて、不要なパラメーター --enable-addons parameter を削除。
+          <ulink url="&lfs-ticket-root;3241">#3241</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - IRC サーバー情報を更新。
+          <ulink url="&lfs-ticket-root;3240">#3240</ulink> を Fix に。
+          パッチを提供してくれた Chris Staub に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Kmod-12 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3238">#3238</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3237">#3237</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-13-03</para>
       <itemizedlist>
         <listitem>

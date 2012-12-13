@@ -29,16 +29,6 @@
 @z
 
 @x
-    <para>Apply a patch to fix a compilation issue caused by the absence of the
-    iptables package:</para>
-@y
-    <para>
-    iptables パッケージを導入していないため、コンパイル時に問題が発生します。
-    そこでパッチを適用して解消します。
-    </para>
-@z
-
-@x
     <para>The <command>arpd</command> binary included in this package is
     dependent on Berkeley DB.  Because <command>arpd</command> is not a very
     common requirement on a base Linux system, remove the dependency on Berkeley

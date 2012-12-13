@@ -89,14 +89,6 @@
         <para>MD5 sum: <literal>&glibc-installation-patch-md5;</literal></para>
 @z
 
-@x
-        <para>Download: <ulink url="&patches-root;&iproute2-ipset-patch;"/></para>
-        <para>MD5 sum: <literal>&iproute2-ipset-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&iproute2-ipset-patch;"/></para>
-        <para>MD5 sum: <literal>&iproute2-ipset-patch-md5;</literal></para>
-@z
-
 @x Kbd Loadkeys Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>

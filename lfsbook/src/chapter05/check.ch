@@ -71,8 +71,10 @@
 @z
 
 @x
+      <segtitle>Installed program</segtitle>
       <segtitle>Installed library</segtitle>
 @y
+      <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledLibrary;</segtitle>
 @z
 
@@ -80,6 +82,15 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x checkmk
+          <para>Awk script for generating C unit tests for use with the Check
+          unit testing framework</para>
+@y
+          <para>
+          Check ユニットテストフレームワークにて利用される、C 言語ユニットテストを生成するための Awk スクリプト。
+          </para>
 @z
 
 @x libcheck.{a,so}
