@@ -129,7 +129,7 @@
 @z
 
 @x
-      <para>2012-13-03</para>
+      <para>2012-12-03</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Fix build issues in makefile for
