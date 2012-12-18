@@ -48,6 +48,43 @@
 @z
 
 @x
+      <para>2012-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Util-Linux-2.22.2.  Fixes
+          <ulink url="&lfs-ticket-root;3250">#3250</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Remove a few entries from the acronym list as they
+          are no longer referenced in the book.  Fixes
+          <ulink url="&lfs-ticket-root;3249">#3249</ulink>. Thanks to Chris
+          Staub for the patch.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bison-2.7.  Fixes
+          <ulink url="&lfs-ticket-root;3247">#3247</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-12-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Util-Linux-2.22.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3250">#3250</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - 略語と用語の説明において、ブック内で参照されなくなった語を削除。
+          <ulink url="&lfs-ticket-root;3249">#3249</ulink> を Fix に。
+          パッチを提供してくれた Chris Staub に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bison-2.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3247">#3247</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-12-12</para>
       <itemizedlist>
         <listitem>

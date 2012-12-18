@@ -40,12 +40,6 @@
         <para>Automated Linux From Scratch</para>
 @z
 
-@x ALSA
-        <para>Advanced Linux Sound Architecture</para>
-@y
-        <para>Advanced Linux Sound Architecture</para>
-@z
-
 @x API
         <para>Application Programming Interface</para>
 @y
@@ -148,12 +142,6 @@
         <para>式 (equation)</para>
 @z
 
-@x EVMS
-        <para>Enterprise Volume Management System</para>
-@y
-        <para>Enterprise Volume Management System</para>
-@z
-
 @x ext2
         <para>second extended file system</para>
 @y
@@ -224,12 +212,6 @@
         <para>Greenwich Mean Time</para>
 @y
         <para>グリニッジ標準時 (Greenwich Mean Time)</para>
-@z
-
-@x GPG
-        <para>GNU Privacy Guard</para>
-@y
-        <para>GNU Privacy Guard</para>
 @z
 
 @x HTML
@@ -376,22 +358,10 @@
         <para>プロセス識別子 (Process Identifier)</para>
 @z
 
-@x PLFS
-        <para>Pure Linux From Scratch</para>
-@y
-        <para>Pure Linux From Scratch</para>
-@z
-
 @x PTY
         <para>pseudo terminal</para>
 @y
         <para>仮想端末 (pseudo terminal)</para>
-@z
-
-@x QA
-        <para>Quality Assurance</para>
-@y
-        <para>品質保証 (Quality Assurance)</para>
 @z
 
 @x QOS
@@ -430,22 +400,10 @@
         <para>サンタ クルズ オペレーション社 (The Santa Cruz Operation)</para>
 @z
 
-@x SGR
-        <para>Select Graphic Rendition</para>
-@y
-        <para>Select Graphic Rendition</para>
-@z
-
 @x SHA1
         <para>Secure-Hash Algorithm 1</para>
 @y
         <para>Secure-Hash Algorithm 1</para>
-@z
-
-@x SMP
-        <para>Symmetric Multi-Processor</para>
-@y
-        <para>対称型マルチプロセッサー (Symmetric Multi-Processor)</para>
 @z
 
 @x TLDP
