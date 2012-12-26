@@ -76,8 +76,8 @@
 
 @x
   <para>There are certain libraries which nearly <emphasis>everyone</emphasis>
-  will need at some point.  In this chapter we list these and some others and
-  explain why you may want to install them.</para>
+  will need at some point.  In this chapter these and some others are listed and
+  it is explained why you may want to install them.</para>
 @y
   <para>
   ライブラリの中には <emphasis>誰もが</emphasis> 必要とするものがあります。

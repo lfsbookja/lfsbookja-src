@@ -1,7 +1,7 @@
 %
-% This is part of LFSbookja package.
+% This is part of BLFSbookja package.
 %
-% This is a CTIE change file for the original XML source of the LFSbook.
+% This is a CTIE change file for the original XML source of the BLFSbook.
 %
 % $Author$
 % $Rev$
@@ -100,10 +100,10 @@
 @y
 <screen><literal>Device Drivers ---&gt;
   Multiple devices driver support (RAID and LVM): Y
-    Device mapper support: Y or M
-    Crypt target support: (optional)
-    Snapshot target: (optional)
-    Mirror target: (optional) </literal></screen>
+    Device mapper support: Y または M
+    Crypt target support: (任意)
+    Snapshot target: (任意)
+    Mirror target: (任意) </literal></screen>
 @z
 
 @x
@@ -138,6 +138,14 @@
 @z
 
 @x
+      <option>--enable-applib</option>: This switch enables
+      building of the shared application library.
+@y
+      <option>--enable-applib</option>:
+      このスイッチは共有アプリケーションライブラリをビルドすることを指示します。
+@z
+
+@x
       <option>--enable-cmdlib</option>: This switch enables
       building of the shared command library. It is required
       when building the event daemon.
@@ -153,6 +161,14 @@
 @y
       <option>--enable-pkgconfig</option>:
       このスイッチの指定により pkgconfig サポートファイルをインストールします。
+@z
+
+@x
+     <option>--enable-udev_sync</option>: This switch enables
+      synchronisation with <application>Udev</application> processing.
+@y
+     <option>--enable-udev_sync</option>:
+     このスイッチは <application>Udev</application> との同期処理を有効にします。
 @z
 
 @x

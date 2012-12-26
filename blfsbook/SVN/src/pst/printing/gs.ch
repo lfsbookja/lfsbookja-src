@@ -359,7 +359,7 @@
       own version of <ulink url="http://www.openjpeg.org/">OpenJpeg</ulink> for
       JPEG 2000 files <!-- I can't get it to compile using a system installed
       version of openjpeg. It seems the ghostscript version has been heavily
-      modified... --> so we can all remove the jasper source. The default color
+      modified... --> so jasper source can be removed. The default color
       management system is now <application>lcms2</application> so the
       <application>lcms</application> source is not needed.
       <application>Zlib</application> was installed as part of LFS.
@@ -369,7 +369,7 @@
       own version of <ulink url="http://www.openjpeg.org/">OpenJpeg</ulink> for
       JPEG 2000 files <!-- I can't get it to compile using a system installed
       version of openjpeg. It seems the ghostscript version has been heavily
-      modified... --> so we can all remove the jasper source. The default color
+      modified... --> so jasper source can be removed. The default color
       management system is now <application>lcms2</application> so the
       <application>lcms</application> source is not needed.
       <application>Zlib</application> was installed as part of LFS.
@@ -384,12 +384,12 @@
 @z
 
 @x
-      <parameter>LIBS=-lz</parameter>: We use the LIBS variable to tell the
-      linker (ld) to link against the system installed
+      <parameter>LIBS=-lz</parameter>: Use the <envar>LIBS</envar> variable to
+      tell the linker (ld) to link against the system installed
       <application>zlib</application>.
 @y
-      <parameter>LIBS=-lz</parameter>: We use the LIBS variable to tell the
-      linker (ld) to link against the system installed
+      <parameter>LIBS=-lz</parameter>: Use the <envar>LIBS</envar> variable to
+      tell the linker (ld) to link against the system installed
       <application>zlib</application>.
 @z
 

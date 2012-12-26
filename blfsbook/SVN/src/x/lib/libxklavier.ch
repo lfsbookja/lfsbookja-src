@@ -26,7 +26,7 @@
 @z
 
 @x
-      The <application>libxklavier</application> package contains an
+      The <application>libxklavier</application> package contains a
       utility library for <application>X</application> keyboard.
 @y
       <application>libxklavier</application> パッケージは、<application>X</application> のキーボードに対する有用なユーティリティを提供します。

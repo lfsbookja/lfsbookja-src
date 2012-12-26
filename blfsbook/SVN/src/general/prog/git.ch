@@ -103,24 +103,24 @@
         <para><ulink
         url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
         http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink> 
-        (only needed if you've not installed asciidoc)</para>
+        (only needed if you've not installed asciidoc and xmlto)</para>
 @y
         <para><ulink
         url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
         http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink> 
-        (only needed if you've not installed asciidoc)</para>
+        (only needed if you've not installed asciidoc and xmlto)</para>
 @z
 
 @x
         <para><ulink
         url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
         http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink> 
-        and other docs (only needed if you've not installed asciidoc and xmlto).</para>
+        and other docs (only needed if you've not installed asciidoc).</para>
 @y
         <para><ulink
         url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
         http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink> 
-        and other docs (only needed if you've not installed asciidoc and xmlto).</para>
+        and other docs (only needed if you've not installed asciidoc).</para>
 @z
 
 @x
@@ -201,8 +201,8 @@
 
 @x
     <para>If you have installed <ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and you wish to
-    create the man pages:</para>
+    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> you can create
+    the html version of the man pages and other docs:</para>
 @y
     <para>
     <ulink
@@ -213,13 +213,12 @@
 @x
     <para>If you have installed <ulink
     url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
-    <xref linkend="xmlto"/> you can create the html version of the man
-    pages and other docs:</para>
+    <xref linkend="xmlto"/> you can create the man pages:</para>
 @y
     <para>
     <ulink
     url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> と <xref
-    linkend="xmlto"/> をインストールしている場合、以下のコマンドを実行すれば、man ページの html バージョンなどのドキュメントを生成することができます。
+    linkend="xmlto"/> をインストールしている場合、以下のコマンドを実行すれば、man ページを生成することができます。
     </para>
 @z
 

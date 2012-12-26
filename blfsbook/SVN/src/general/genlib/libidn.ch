@@ -14,13 +14,13 @@
 @z
 
 @x
-    <title>Introduction to libidn</title>
+    <title>Introduction to Libidn</title>
 @y
-    <title>&IntroductionTo1;libidn&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Libidn&IntroductionTo2;</title>
 @z
 
 @x
-      <application>libidn</application> is a package designed for
+      <application>Libidn</application> is a package designed for
       internationalized string handling based on the 
       <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
       <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
@@ -34,7 +34,7 @@
       converting entire domain names to and from the ASCII Compatible Encoding
       (ACE) form.
 @y
-      <application>libidn</application> is a package designed for
+      <application>Libidn</application> is a package designed for
       internationalized string handling based on the 
       <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
       <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
@@ -100,18 +100,22 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="pth"/>,
       <xref linkend="emacs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> and
+      <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> or
+      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>, and
       <ulink url="http://valgrind.org/">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="pth"/>,
       <xref linkend="emacs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
+      <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> または
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
       <ulink url="http://valgrind.org/">Valgrind</ulink>
     </para>
@@ -126,16 +130,16 @@
 @z
 
 @x
-    <title>Installation of libidn</title>
+    <title>Installation of Libidn</title>
 @y
-    <title>&InstallationOf1;libidn&InstallationOf2;</title>
+    <title>&InstallationOf1;Libidn&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>libidn</application> by running the following
+      Install <application>Libidn</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>libidn</application> をビルドします。
+      以下のコマンドを実行して <application>Libidn</application> をビルドします。
 @z
 
 @x

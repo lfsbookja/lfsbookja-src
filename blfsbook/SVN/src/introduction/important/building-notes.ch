@@ -21,29 +21,28 @@
 
 @x
   <para>Those people who have built an LFS system may be aware
-  of the general principles of downloading and unpacking software.  We will
-  however repeat some of that information here for those new to building
+  of the general principles of downloading and unpacking software. Some
+  of that information is repeated here for those new to building
   their own software.</para>
 @y
   <para>
   LFS システムを構築した皆さんであれば、ソフトウェアのダウンロードと伸張 (解凍) の方法は既にご存知のはずです。
-  しかしここでは、ソフトウェア構築に不慣れな方に向けてそういった情報も再度説明することにします。
+  しかしここでは、ソフトウェア構築に不慣れな方に向けてそういった情報も何度か説明することにします。
   </para>
 @z
 
 @x
   <para>Each set of installation instructions contains a URL from which you
-  can download the package.  We do however keep a selection of patches
-  available via HTTP.  These are referenced as needed in the installation
-  instructions.</para>
+  can download the package.  The patches; however, are stored on the LFS
+  servers and are available via HTTP.  These are referenced as needed in the
+  installation instructions.</para>
 @y
   <para>
   インストール説明を行っている個々のページでは、パッケージのダウンロード先 URL を示しています。
   
-  We do however keep a selection of patches
-  available via HTTP.  These are referenced as needed in the installation
-  instructions.
-  </para>
+  The patches; however, are stored on the LFS
+  servers and are available via HTTP.  These are referenced as needed in the
+  installation instructions.</para>
 @z
 
 @x

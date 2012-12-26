@@ -28,18 +28,6 @@
 @z
 
 @x
-  <para>Please note that the Change Log only lists which editor was
-  responsible for putting the changes into SVN; please read the
-  <xref linkend="credits"/> page in Chapter 1 for details on
-  who wrote what.</para>
-@y
-  <para>
-  この変更履歴には、各編集者が Subversion に登録した変更内容のみを示しています。
-  誰が何を担当しているかについては<xref linkend="credits"/>のページを参照してください。
-  </para>
-@z
-
-@x
   <para>Current release: &version; &ndash; &releasedate;</para>
 @y
   <para>

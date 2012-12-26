@@ -90,15 +90,16 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libidn"/>,
-      Perl Module HTTP::Server (for the test suite: see the standard Perl
-      <xref linkend="perl-standard-install"/>) and
+      <xref linkend="pcre"/>,
+      <xref linkend="perl-lwp"/> (required for the majority of the test suite), and
       <ulink url="http://www.inet.no/dante/">Dante</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libidn"/>,
-      Perl Module HTTP::Server (テストスイート実行のため: 標準的な Perl モジュール <xref linkend="perl-standard-install"/>を参照),
+      <xref linkend="pcre"/>,
+      <xref linkend="perl-lwp"/> (大半のテストスイートにおいて必要),
       <ulink url="http://www.inet.no/dante/">Dante</ulink>
     </para>
 @z
@@ -153,11 +154,11 @@
 @x
       <parameter>--with-ssl=openssl</parameter>: This allows the program to work
       with <xref linkend="openssl"/>. It can be omitted if
-      <xref linkend="gnutls"/> is found or the https protocol is not needed. 
+      <xref linkend="gnutls"/> is found or the HTTPS protocol is not needed. 
 @y
       <parameter>--with-ssl=openssl</parameter>:
       このパラメーターにより <xref linkend="openssl"/> を用いたプログラムとします。
-      <xref linkend="gnutls"/> がある場合や https プロトコルを必要としない場合は、このパラメーターを省略することができます。
+      <xref linkend="gnutls"/> がある場合や HTTPS プロトコルを必要としない場合は、このパラメーターを省略することができます。
 @z
 
 @x

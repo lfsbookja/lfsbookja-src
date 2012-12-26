@@ -113,20 +113,22 @@
 @z
 
 @x
-      <command>sed -i 's#AC_PROG_RANLIB ...</command>: These seds massage the
-      autotool files so that a shared library is built, the tests pass and the
-      docs are installed where we want.
+      <command>sed -i 's#AC_PROG_RANLIB ...</command>: These
+      <command>sed</command>s massage the autotool files so that a shared 
+      library is built, the tests pass, and the docs are installed in an
+      appropriate directory.
 @y
       <command>sed -i 's#AC_PROG_RANLIB ...</command>:
-      この sed コマンドは、共有ライブラリのビルド、テストの正常実行、ドキュメントインストール先の適正化をそれぞれ行うように autotool ファイル類を修正します。
+      この <command>sed</command> コマンドは、共有ライブラリのビルド、テストの正常実行、ドキュメントインストール先の適正化をそれぞれ行うように autotool ファイル類を修正します。
 @z
 
 @x
-      <command>autoreconf -i</command>: This regenerates the configure script
-      and the Makefile.in files and installs a missing file.
+      <command>autoreconf -i</command>: This regenerates the
+      <command>configure</command> script and the <filename>Makefile.in</filename>
+      files and installs a missing file.
 @y
       <command>autoreconf -i</command>:
-      このコマンドにより configure スクリプトや Makefile.in を再生成し、インストールするべきファイルを適切にインストールするようにします。
+      このコマンドにより <command>configure</command> スクリプトや <filename>Makefile.in</filename> を再生成し、インストールするべきファイルを適切にインストールするようにします。
 @z
 
 @x

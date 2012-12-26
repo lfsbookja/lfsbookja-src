@@ -44,12 +44,12 @@
 @z
 
 @x
-    <para>On almost all Linux platforms we also have shared libraries 
+    <para>On almost all Linux platforms there are also shared libraries 
     (libfoo.so) - one copy of the library is loaded into virtual memory, and 
     shared by all the programs which call any of its functions. This is space 
     efficient.</para>
 @y
-    <para>On almost all Linux platforms we also have shared libraries 
+    <para>On almost all Linux platforms there are also shared libraries 
     (libfoo.so) - one copy of the library is loaded into virtual memory, and 
     shared by all the programs which call any of its functions. This is space 
     efficient.</para>

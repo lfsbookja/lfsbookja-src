@@ -134,6 +134,16 @@
 @z
 
 @x
+    <para>First, create a list of files to be downloaded. This file will also
+    be used to verify the integrity of the downloads when complete:</para>
+@y
+    <para>
+    まずはダウンロードするファイル一覧を生成します。
+    このファイルは、ダウンロード後に各ファイルのチェックサムを確認する際にも利用します。
+    </para>
+@z
+
+@x
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
@@ -151,21 +161,27 @@
 @x
     <para>First, start a subshell that will exit on error:</para>
 @y
-    <para>First, start a subshell that will exit on error:</para>
+    <para>
+    サブシェルを起動します。
+    エラーが発生した時に終了します。
+    </para>
 @z
 
 @x
     <para>Install all of the applications by running the following
     commands:</para>
 @y
-    <para>Install all of the applications by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行して、すべてのパッケージをインストールします。
+    </para>
 @z
 
 @x
     <para>Finally, exit the shell that was started earlier:</para>
 @y
-    <para>Finally, exit the shell that was started earlier:</para>
+    <para>
+    はじめに起動していたサブシェルを終了します。
+    </para>
 @z
 
 @x
@@ -275,3 +291,22 @@
 @y
           <para>XPM ファイルのフォーマットをチェックします。</para>
 @z
+
+@x sxpm
+          <para>shows an XPM file and/or converts XPM 1 or 2 files to
+          XPM 3.</para>
+@y
+          <para>
+          XPM ファイルを参照したり、XPM 1、XPM 2 ファイルを XPM 3 ファイルに変換します。
+          </para>
+@z
+
+@x xft-config
+          <para>reports Xft version, compiler, linker, and/or installation
+          directory information.</para>
+@y
+          <para>
+          Xft のバージョン、コンパイラー、リンカー、インストールディレクトリの情報などを出力します。
+          </para>
+@z
+

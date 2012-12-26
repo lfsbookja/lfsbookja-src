@@ -185,7 +185,7 @@
 
 @x
       <para><filename>/etc/sysconfig/mouse</filename>:
-      This file contains the name of your mouse device and the protocol which
+      This file contains the name of your mouse device and the protocol
       it uses.  To create this file, run the following as the
       <systemitem class="username">root</systemitem> user:</para>
 @y

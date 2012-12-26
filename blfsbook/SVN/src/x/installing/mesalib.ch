@@ -75,9 +75,45 @@
 @z
 
 @x
+          GLU Download (HTTP): <ulink url="&glu-download-http;"/>
+@y
+          GLU &Download; (HTTP): <ulink url="&glu-download-http;"/>
+@z
+
+@x
+          GLU Download (FTP): <ulink url="&glu-download-ftp;"/>
+@y
+          GLU &Download; (FTP): <ulink url="&glu-download-ftp;"/>
+@z
+
+@x
+          GLU Download MD5 sum: &glu-md5sum;
+@y
+          GLU &Download; MD5 sum: &glu-md5sum;
+@z
+
+@x
+          GLU Download size: &glu-size;
+@y
+          GLU &DownloadSize;: &glu-size;
+@z
+
+@x
+          Estimated GLU disk space required: &glu-buildsize;
+@y
+          GLU &Estimateddiskspacerequired;: &glu-buildsize;
+@z
+
+@x
+          Estimated GLU build time: &glu-time;
+@y
+          GLU &Estimatedbuildtime;: &glu-time;
+@z
+
+@x
     <bridgehead renderas="sect3">Additional Patches</bridgehead>
 @y
-    <bridgehead renderas="sect3">Additional Patches</bridgehead>
+    <bridgehead renderas="sect3">追加のパッチ</bridgehead>
 @z
 
 @x
@@ -162,10 +198,75 @@
 @z
 
 @x
+      If you have downloaded the recommended patch, apply it by running the
+      following command:
+@y
+      推奨パッチをダウンロードしている場合は、以下のコマンドによりそのパッチを適用します。
+@z
+
+@x
       Install <application>MesaLib</application> by running the following
       commands:
 @y
       以下のコマンドを実行して <application>MesaLib</application> をビルドします。
+@z
+
+@x
+      If you have applied the recommended patch, build the demo programs by
+      running the following command:
+@y
+      推奨パッチを適用した場合は、以下のコマンドを実行してデモプログラムをビルドします。
+@z
+
+@x
+      This package does not come with a test suite.
+@y
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      If you have built the demo programs, install them by running the
+      following command as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      デモプログラムをビルドした場合は、<systemitem class="username">root</systemitem> ユーザーとなって以下を実行することでそれらをインストールします。
+@z
+
+@x
+      If you would like to save some space, strip the installed libraries
+      by running the following commands as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      インストールした容量を少しでも削減したい場合は、<systemitem
+      class="username">root</systemitem> ユーザーとなって以下を実行することで、インストール済ライブラリをストリップします。
+@z
+
+@x
+      If desired, install the optional documentation by running
+      the following commands as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      任意インストールのドキュメントを導入したい場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Installation of GLU</title>
+@y
+    <title>&InstallationOf1;GLU&InstallationOf2;</title>
+@z
+
+@x
+      Install <application>GLU</application> by running the following
+      commands:
+@y
+      以下のコマンドを実行して <application>GLU</application> をビルドします。
 @z
 
 @x
@@ -184,6 +285,17 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--enable-texture-float</option>: This switch enables
+      floating-point textures and render buffers. Please consult
+      <filename>docs/patents.txt</filename> to see if there are
+      any legal issues if you use this feature.
+@y
+      <option>--enable-texture-float</option>:
+      このスイッチは浮動小数点によるテクスチャーとレンダーバッファーを有効にします。
+      本機能を利用する際の法的な問題に関しては <filename>docs/patents.txt</filename> を参照してください。
 @z
 
 @x

@@ -120,8 +120,9 @@
 
 @x
         <seg>
-          derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config, icuinfo,
-          makeconv, pkgdata and uconv
+          derb, genbrk, genccode, gencfu, gencmn, gencnval, gendict, gennorm2,
+          genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata and
+          uconv
         </seg>
         <seg>
           libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
@@ -135,8 +136,9 @@
         </seg>
 @y
         <seg>
-          derb, genbrk, gencfu, gencnval, genctd, genrb, icu-config, icuinfo,
-          makeconv, pkgdata, uconv
+          derb, genbrk, genccode, gencfu, gencmn, gencnval, gendict, gennorm2,
+          genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata,
+          uconv
         </seg>
         <seg>
           libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
@@ -183,8 +185,8 @@
             変換エイリアスファイル (converters aliases file) をコンパイルします。
 @z
 
-@x genctd
-            compiles a word list into an ICU compact trie dictionary.
+@x gendict
+            compiles word list into ICU string trie dictionary.
 @y
             ワードリスト (word list) を ICU の compact trie 辞書 へコンパイルします。
 @z

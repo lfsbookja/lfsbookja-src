@@ -112,13 +112,13 @@
 <screen><literal>File Systems:
   Device Drivers: 
     Multiple devices driver support (RAID and LVM): Y
-      RAID support: Y or M
+      RAID support: Y または M
         Autodetect RAID arrays during kernel boot: Y
-        Linear (append) mode: Y or M
-        RAID-0 (striping) mode : Y or M
-        RAID-1 (mirroring) mode : Y or M
-        RAID-10 (mirrored striping) mode: Y or M
-        RAID-4/RAID-5/RAID-6 mode : Y or M</literal></screen>
+        Linear (append) mode: Y または M
+        RAID-0 (striping) mode : Y または M
+        RAID-1 (mirroring) mode : Y または M
+        RAID-10 (mirrored striping) mode: Y または M
+        RAID-4/RAID-5/RAID-6 mode : Y または M</literal></screen>
 @z
 
 @x
