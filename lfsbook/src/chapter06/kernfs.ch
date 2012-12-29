@@ -117,13 +117,12 @@
 @x
       <para>In some host systems, <filename>/dev/shm</filename> is a 
       symbolic link to <filename class="directory">/run/shm</filename>.
-      Inside a chroot environment, this symbolic link needs to be
-      changed to a normal directory before mounting as a temporary
-      file system:</para>
+      Inside a chroot environment, this temporary file system needs
+      to be mounted separate from the host file system:</para>
 @y
       <para>
       ホストシステムによっては <filename>/dev/shm</filename> が <filename
       class="directory">/run/shm</filename> へのシンボリックリンクになっているものがあります。
-      chroot 環境内では、一時的なファイルシステムとしてマウントする際には、このシンボリックリンクを通常のディレクトリとして変更しておく必要があります。
+      chroot 環境内では、ホストファイルシステムとは別のファイルシステムとして、テンポラリファイルシステムをマウントしておく必要があります。
       </para>
 @z

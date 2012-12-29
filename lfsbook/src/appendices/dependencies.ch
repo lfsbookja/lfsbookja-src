@@ -316,9 +316,9 @@
          Gzip, Make, Sed, Texinfo, Util-linux</seg>
 @z
 @x
-          <seg>Psmisc</seg>
+          <seg>Procps,Psmisc</seg>
 @y
-          <seg>Psmisc</seg>
+          <seg>Procps,Psmisc</seg>
 @z
 @x
           <seg>None</seg>

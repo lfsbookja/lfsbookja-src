@@ -68,47 +68,47 @@
     </para>
 @z
 
-@x
-    <para>Fix a problem that causes the build to fail in the LFS environment:</para>
-@y
-    <para>LFS 環境にて種々のビルド不備を引き起こす問題を修正します。</para>
-@z
+% @x
+%     <para>Fix a problem that causes the build to fail in the LFS environment:</para>
+% @y
+%     <para>LFS 環境にて種々のビルド不備を引き起こす問題を修正します。</para>
+% @z
 
-@x
-    <para>When running <command>make install</command>, a script called
-    <filename>test-installation.pl</filename> performs a small sanity test on
-    our newly installed Glibc. Use a patch to fix the bug that causes it to
-    fail:</para>
-@y
-    <para>
-    <command>make install</command> の実行時には <filename>test-installation.pl</filename> スクリプトが呼び出され、ここで作り出された新たな Glibc に対しての健全性テスト (sanity test) が実行されます。
-    テストが失敗するバグが含まれるため、テストが正常実行できません。
-    そこでこれを回避するために以下のパッチを適用します。
-    </para>
-@z
+% @x
+%     <para>When running <command>make install</command>, a script called
+%     <filename>test-installation.pl</filename> performs a small sanity test on
+%     our newly installed Glibc. Use a patch to fix the bug that causes it to
+%     fail:</para>
+% @y
+%     <para>
+%     <command>make install</command> の実行時には <filename>test-installation.pl</filename> スクリプトが呼び出され、ここで作り出された新たな Glibc に対しての健全性テスト (sanity test) が実行されます。
+%     テストが失敗するバグが含まれるため、テストが正常実行できません。
+%     そこでこれを回避するために以下のパッチを適用します。
+%     </para>
+% @z
 
-@x
-    <para>The <command>ldd</command> shell script contains Bash-specific
-    syntax. Change its default program interpreter to <command>/bin/bash</command>
-    in case another <command>/bin/sh</command> is installed as described in the
-    <ulink url="&blfs-root;view/svn/postlfs/shells.html">Shells</ulink>
-    chapter of the BLFS book:</para>
-@y
-    <para>
-    <command>ldd</command> シェルスクリプトは Bash が定める文法書式により構成されています。
-    デフォルトで記述されているインタープリターを <command>/bin/bash</command> に変更します。
-    BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink> で説明しているように、別の <command>/bin/sh</command> がインストールされている場合もあるからです。
-    </para>
-@z
+% @x
+%     <para>The <command>ldd</command> shell script contains Bash-specific
+%     syntax. Change its default program interpreter to <command>/bin/bash</command>
+%     in case another <command>/bin/sh</command> is installed as described in the
+%     <ulink url="&blfs-root;view/svn/postlfs/shells.html">Shells</ulink>
+%     chapter of the BLFS book:</para>
+% @y
+%     <para>
+%     <command>ldd</command> シェルスクリプトは Bash が定める文法書式により構成されています。
+%     デフォルトで記述されているインタープリターを <command>/bin/bash</command> に変更します。
+%     BLFS ブックの <ulink url="&blfs-root;view/svn/postlfs/shells.html">シェル (Shells)</ulink> で説明しているように、別の <command>/bin/sh</command> がインストールされている場合もあるからです。
+%     </para>
+% @z
 
-@x
-    <para>Now fix a problem that causes some applications to crash when 
-    utilizing problem nameservers:</para>
-@y
-    <para>
-    ネームサーバーの利用時に特定のアプリケーションがクラッシュする問題を解消します。
-    </para>
-@z
+% @x
+%     <para>Now fix a problem that causes some applications to crash when 
+%     utilizing problem nameservers:</para>
+% @y
+%     <para>
+%     ネームサーバーの利用時に特定のアプリケーションがクラッシュする問題を解消します。
+%     </para>
+% @z
 
 @x
     <para>The Glibc documentation recommends building Glibc outside of the source
@@ -119,16 +119,16 @@
     </para>
 @z
 
-@x
-    <para>As in Chapter 5, add the needed compiler flags to CFLAGS for x86 machines.
-    Here, the optimization of the library is also set for the gcc compiler to
-    enhance compilation speed (-pipe) and package performance (-O3).</para>
-@y
-    <para>
-    第5章と同じように x86 マシンにおいては CFLAGS に対してコンパイラーフラグの追加が必要です。
-    ライブラリ構築においても gcc コンパイラーに対して最適化フラグをセットすることで、コンパイル時間を向上 (-pipe) させ、パッケージのパフォーマンスも向上 (-O3) させます。
-    </para>
-@z
+% @x
+%     <para>As in Chapter 5, add the needed compiler flags to CFLAGS for x86 machines.
+%     Here, the optimization of the library is also set for the gcc compiler to
+%     enhance compilation speed (-pipe) and package performance (-O3).</para>
+% @y
+%     <para>
+%     第5章と同じように x86 マシンにおいては CFLAGS に対してコンパイラーフラグの追加が必要です。
+%     ライブラリ構築においても gcc コンパイラーに対して最適化フラグをセットすることで、コンパイル時間を向上 (-pipe) させ、パッケージのパフォーマンスも向上 (-O3) させます。
+%     </para>
+% @z
 
 @x
     <para>Prepare Glibc for compilation:</para>
@@ -196,14 +196,14 @@
     </para>
 @z
 
-@x
-        <para>The <emphasis>nptl/tst-cancel1</emphasis> test will fail when
-        using the 4.1 series of GCC.</para>
-@y
-        <para>
-        <emphasis>nptl/tst-cancel1</emphasis> テストは GCC 4.1 シリーズでは失敗します。
-        </para>
-@z
+% @x
+%         <para>The <emphasis>nptl/tst-cancel1</emphasis> test will fail when
+%         using the 4.1 series of GCC.</para>
+% @y
+%         <para>
+%         <emphasis>nptl/tst-cancel1</emphasis> テストは GCC 4.1 シリーズでは失敗します。
+%         </para>
+% @z
 
 @x
         <para>The <emphasis>nptl/tst-clock2</emphasis>,
@@ -238,17 +238,17 @@ minor timing issues が何を意味するのか不明であった。
         </para>
 @z
 
-@x
-        <para>If you have mounted the LFS partition with the
-        <parameter>noatime</parameter> option, the <emphasis>atime</emphasis>
-        test will fail. As mentioned in <xref linkend="space-mounting"/>, do not
-        use the <parameter>noatime</parameter> option while building LFS.</para>
-@y
-        <para>
-        LFS パーティションを <parameter>noatime</parameter> オプションを用いてマウントしている場合 <emphasis>atime</emphasis> テストが失敗します。
-        <xref linkend="space-mounting"/>で説明しているように、LFS のビルド中は <parameter>noatime</parameter> オプションを使わないようにしてください。
-        </para>
-@z
+% @x
+%         <para>If you have mounted the LFS partition with the
+%         <parameter>noatime</parameter> option, the <emphasis>atime</emphasis>
+%         test will fail. As mentioned in <xref linkend="space-mounting"/>, do not
+%         use the <parameter>noatime</parameter> option while building LFS.</para>
+% @y
+%         <para>
+%         LFS パーティションを <parameter>noatime</parameter> オプションを用いてマウントしている場合 <emphasis>atime</emphasis> テストが失敗します。
+%         <xref linkend="space-mounting"/>で説明しているように、LFS のビルド中は <parameter>noatime</parameter> オプションを使わないようにしてください。
+%         </para>
+% @z
 
 @x
         <para>When running on older and slower hardware or on systems under

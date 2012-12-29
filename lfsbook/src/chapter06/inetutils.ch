@@ -131,10 +131,11 @@
 @z
 
 @x
-    <para>Move some programs to their FHS-compliant place:</para>
+    <para>Move some programs so they are available if <filename
+    class='directory'>/usr</filename> is not accessable:</para>
 @y
     <para>
-    プログラムのいくつかを FHS コンプライアントが定めるディレクトリに移動させます。
+    <filename class='directory'>/usr</filename> がアクセス不能であっても各種プログラムが実行できるように、それらを移動させます。
     </para>
 @z
 

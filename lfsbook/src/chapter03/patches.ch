@@ -73,22 +73,6 @@
         <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
 @z
 
-@x Glibc DNS Resolve Patch
-        <para>Download: <ulink url="&patches-root;&glibc-fix-resolv-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-fix-resolv-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&glibc-fix-resolv-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-fix-resolv-patch-md5;</literal></para>
-@z
-
-@x Glibc test-installation.pl Patch
-        <para>Download: <ulink url="&patches-root;&glibc-installation-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-installation-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&glibc-installation-patch;"/></para>
-        <para>MD5 sum: <literal>&glibc-installation-patch-md5;</literal></para>
-@z
-
 @x Kbd Loadkeys Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>
@@ -143,14 +127,6 @@
 @y
         <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
-@z
-
-@x Sed Regression Tests Patch
-        <para>Download: <ulink url="&patches-root;&sed-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&sed-testsuite-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&sed-testsuite-patch;"/></para>
-        <para>MD5 sum: <literal>&sed-testsuite-patch-md5;</literal></para>
 @z
 
 @x

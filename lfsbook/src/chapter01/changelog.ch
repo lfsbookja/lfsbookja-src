@@ -48,6 +48,126 @@
 @z
 
 @x
+      <para>2012-12-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Put traceroute in /bin for consistency.
+          Fixes
+          <ulink url="&lfs-ticket-root;3264">#3264</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Fix the location for mounting /dev/shm 
+          inside chroot.  Fixes
+          <ulink url="&lfs-ticket-root;3258">#3258</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Move the build of Procps to before E2fsprogs as the
+          latter requires <command>ps</command> to be available during its
+          testsuite run.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Gettext-0.18.2.  Fixes
+          <ulink url="&lfs-ticket-root;3263">#3263</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Gawk-4.0.2.  Fixes
+          <ulink url="&lfs-ticket-root;3262">#3262</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Glibc-2.17.  Fixes
+          <ulink url="&lfs-ticket-root;3261">#3261</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Sed-4.2.2.  Fixes
+          <ulink url="&lfs-ticket-root;3260">#3260</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GMP-5.1.0.  Fixes
+          <ulink url="&lfs-ticket-root;3259">#3259</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tcl-8.6.0.  Fixes
+          <ulink url="&lfs-ticket-root;3257">#3257</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.45.  Fixes
+          <ulink url="&lfs-ticket-root;3256">#3256</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-12-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 一貫性のため traceroute を /bin へ移動。
+          <ulink url="&lfs-ticket-root;3264">#3264</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - chroot 環境下での /dev/shm のマウント位置を修正。
+          <ulink url="&lfs-ticket-root;3258">#3258</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Procps を E2fsprogs よりも前にビルドすることに。
+          これは E2fsprogs のテストスイートを実行するために <command>ps</command> コマンドが必要であるため。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Gettext-0.18.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3263">#3263</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Gawk-4.0.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3262">#3262</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Glibc-2.17 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3261">#3261</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Sed-4.2.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3260">#3260</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GMP-5.1.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3259">#3259</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tcl-8.6.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3257">#3257</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.45 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3256">#3256</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-12-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Automake-1.12.6.  Fixes
+          <ulink url="&lfs-ticket-root;3253">#3253</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.7.1.  Fixes
+          <ulink url="&lfs-ticket-root;3254">#3254</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-12-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Automake-1.12.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3253">#3253</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-3.7.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3254">#3254</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-12-16</para>
       <itemizedlist>
         <listitem>

@@ -43,14 +43,6 @@
 @z
 
 @x
-    <para>Fix an issue when building Glibc-&glibc-version; with GCC-&gcc-version;:</para>
-@y
-    <para>
-    Glibc-&glibc-version; を GCC-&gcc-version; にてビルドする際の問題を以下により解消します。
-    </para>
-@z
-
-@x
     <para>The Glibc documentation recommends building Glibc outside of the source
     directory in a dedicated build directory:</para>
 @y
