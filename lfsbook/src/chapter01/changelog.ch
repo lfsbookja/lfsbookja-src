@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2012-12-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Kbd-1.15.5.  Fixes
+          <ulink url="&lfs-ticket-root;3239">#3239</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - All E2fsprogs tests pass now, so remove the
+          &quot;-k&quot; flag from its invocation.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-12-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Kbd-1.15.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3239">#3239</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - E2fsprogs のテストはすべて正常処理されるようになった。
+          そこでテスト実行時の &quot;-k&quot; フラグを取り除く。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-12-28</para>
       <itemizedlist>
         <listitem>

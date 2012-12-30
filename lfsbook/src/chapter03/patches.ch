@@ -73,14 +73,6 @@
         <para>MD5 sum: <literal>&flex-bison-patch-md5;</literal></para>
 @z
 
-@x Kbd Loadkeys Fix Patch
-        <para>Download: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&kbd-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&kbd-fixes-patch-md5;</literal></para>
-@z
-
 @x Kbd Backspace/Delete Fix Patch
         <para>Download: <ulink url="&patches-root;&kbd-backspace-patch;"/></para>
         <para>MD5 sum: <literal>&kbd-backspace-patch-md5;</literal></para>

@@ -29,15 +29,6 @@
 @z
 
 @x
-    <para>The behaviour of <command>loadkeys</command> when run without a
-    filename was broken in this release. The following patch fixes this:</para>
-@y
-    <para>
-    <command>loadkeys</command> に対してファイル名を与えずに実行するとエラーになります。
-    以下のパッチによりこれを修正します。</para>
-@z
-
-@x
     <para>The behaviour of the Backspace and Delete keys is not consistent
     across the keymaps in the Kbd package. The following patch fixes this
     issue for i386 keymaps:</para>
@@ -58,41 +49,9 @@
 @z
 
 @x
-    <para>Fix a bug in the Spanish message translations which prevents kbd from
-    building with gettext-&gettext-version;:</para>
+    <para>Fix a bug that causes some keymaps not to be loaded correctly:</para>
 @y
-    <para>
-    gettext-&gettext-version; を用いた際にスペイン語の翻訳メッセージがビルドができないため、このバグを修正します。
-    </para>
-@z
-
-@x
-    <para>Remove the redundant <command>resizecons</command> program (32-bit x86
-    only, needs the defunct svgalib, which predates linux-2.6 and is incompatible
-    with modern KMS, to provide the video mode files - for normal use
-    <command>setfont</command> sizes the console appropriately) and its manpage.</para>
-@y
-    <para>
-    無用なプログラム <command>resizecons</command> とその man ページを削除します。
-    (これは 32 ビット x86 においてのみのプログラムで、ビデオモードファイルを提供するために古い svgalib を利用しています。
-     linux-2.6 以前より作られたことから最近の KMS との互換性がありません。
-     通常は <command>setfont</command> がコンソールサイズを適切に取り扱います。)
-    </para>
-@z
-
-@x
-    <para>The shipped version of <filename>configure.ac</filename> is newer than
-    <filename>aclocal.m4</filename>, so autotools will be run by <command>make</command>
-    which will overwrite the change to <filename>configure</filename>. Alter the date
-    and time of <filename>configure.ac</filename> - this uses the system timezone, so we
-    pick a time that is sufficiently old in all timezones.</para>
-@y
-    <para>
-    提供されている <filename>configure.ac</filename> は <filename>aclocal.m4</filename> よりもタイムスタンプが新しいものになっています。
-    したがって <command>make</command> によって autotools が実行されると <filename>configure</filename> を更新されてしまうことになります。
-    そこで <filename>configure.ac</filename> の日付と時刻を変更します。
-    ここではシステム日付を用いるものであり、あらゆるタイムゾーンにとって十分に古い日付を採用できます。
-    </para>
+    <para>キーマップが正しくロードされないものがあるため、これを修正します。</para>
 @z
 
 @x
@@ -115,6 +74,17 @@
           <para>
           このオプションによりキーボードレイアウトのデータを <filename
           class="directory">/usr/share/kbd</filename> ディレクトリではなく、ルートパーティションとなるようにします。
+          </para>
+@z
+
+@x --disable-vlock
+          <para>This option prevents the vlock utility from being built, as it
+          requires the PAM library, which isn't available in the chroot
+          environment.</para>
+@y
+          <para>
+          このオプションは vlock ユーティリティーをビルドしないようにします。
+          そのユーティリティーは PAM ライブラリが必要ですが、chroot 環境では利用することができません。
           </para>
 @z
 
