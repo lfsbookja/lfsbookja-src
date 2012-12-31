@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "December 19th, &year;">
+<!ENTITY releasedate  "December 30th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20121226">
+<!ENTITY jversion     "20121231">
 <!ENTITY jratio       "52.9 &percnt;">
 @z
 
@@ -227,28 +227,24 @@
 export -f as_root</userinput></screen>
 </note>">
 @y
-<!ENTITY as_root "<note><para>When installing multiple packages in a script,
-  the installation needs to be done as the root user. There are three general
-  options that can be used to do this:</para>
+<!ENTITY as_root "<note><para>複数のパッケージを一つのスクリプトを使って一気にインストールする場合には、ルートユーザーとして実行することが必要となります。
+  その場合には、以下に示す３つの方法のいずれかを採用することになります。</para>
 
   <orderedlist>
 
-  <listitem><para>Run the entire script as the root user (not
-  recommended).</para></listitem>
+  <listitem><para>スクリプトの実行自体をルートユーザーにより行う。(ただし推奨はしません。)</para></listitem>
 
-  <listitem><para>Use the <command>sudo</command> command from the <xref
-  linkend='sudo'/> package.</para></listitem>
+  <listitem><para><xref linkend='sudo'/> パッケージの <command>sudo</command> コマンドを利用する。</para></listitem>
 
-  <listitem><para>Use <command>su -c &quot;command arguments&quot;</command>
-  (quotes required) which will ask for the root  password for every iteration
-  of the loop.</para></listitem> 
+  <listitem><para><command>su -c &quot;コマンド 引数&quot;</command> の形 (クォーテーションが必要) を利用する。
+  この場合はコマンドの実行の都度、ルートパスワードの入力が必要になります。
+  </para></listitem> 
   
   </orderedlist>
 
-  <para>One way to handle this situation is to create a short
-  <command>bash</command> function that automatically selects the appropriate
-  method.  Once the command is set in the environment, it does not need to be
-  set again.</para>
+  <para>この状況を取り扱う一つの手法として、以下のような <command>bash</command> スクリプトにより適切な方法を自動的に選択する方法が考えられます。
+  一度コマンドをセットしておけば、再びセットする必要はありません。
+  </para>
   
   <screen><userinput>as_root()
 {
@@ -260,4 +256,14 @@ export -f as_root</userinput></screen>
 
 export -f as_root</userinput></screen>
 </note>">
+@z
+
+@x
+<!ENTITY not-katamari         "<para>This package is not a part of the Xorg
+                              katamari and is provided only as a dependency to
+                              other packages or for testing the completed Xorg
+                              installation.</para>">
+@y
+<!ENTITY not-katamari         "<para>本パッケージは Xorg の一連の提供物 (Xorg katamari) ではありません。
+                              他のパッケージが必要としていたり、Xorg のテストを完了させたりするために必要となるものです。</para>">
 @z

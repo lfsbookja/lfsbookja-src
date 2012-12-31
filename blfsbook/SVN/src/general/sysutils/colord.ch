@@ -120,6 +120,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="colord-gtk"/> and <xref linkend="gnome-desktop"/>
+      (To build example tools),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="http://people.freedesktop.org/~hughsient/releases/">libgusb</ulink> and
@@ -128,9 +130,11 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="colord-gtk"/>, <xref linkend="gnome-desktop"/>
+      (サンプルツール構築のため),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://people.freedesktop.org/~hughsient/releases/">libgusb</ulink> and
+      <ulink url="http://people.freedesktop.org/~hughsient/releases/">libgusb</ulink>,
       <xref linkend="sane"/>
     </para>
 @z

@@ -149,19 +149,17 @@
 @z
 
 @x
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          <envar>$XORG_PREFIX</envar>/share/X11/xkb and
-          <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;
+          <envar>$XORG_PREFIX</envar>/share/X11/xkb
         </seg>
 @y
         <seg>
-          <envar>$XORG_PREFIX</envar>/share/X11/xkb and
-          <envar>$XORG_PREFIX</envar>/share/doc/xkeyboard-config-&xkeyboard-config-version;
+          <envar>$XORG_PREFIX</envar>/share/X11/xkb
         </seg>
 @z

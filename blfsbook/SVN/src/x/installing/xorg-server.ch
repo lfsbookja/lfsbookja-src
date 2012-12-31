@@ -125,11 +125,17 @@
 @z
 
 @x
-    <para>Install the server by running the following commands:</para>
+      If you have downloaded the optional patch, apply it by running
+      the following command:
 @y
-    <para>
-    サーバーをビルドするために以下のコマンドを実行します。
-    </para>
+      If you have downloaded the optional patch, apply it by running
+      the following command:
+@z
+
+@x
+      Install the server by running the following commands:
+@y
+      サーバーをビルドするために以下のコマンドを実行します。
 @z
 
 @x

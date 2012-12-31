@@ -104,6 +104,16 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="required"> <xref linkend="sudo"/> and
+    <xref linkend="wget"/></para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="required"> <xref linkend="sudo"/>,
+    <xref linkend="wget"/></para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"> <xref linkend="fop"/> and <xref linkend="xmlto"/>
     (to build additional documentation)</para>
@@ -140,6 +150,16 @@
 @z
 
 @x
+    <para>First, create a list of files to be downloaded. This file will also
+    be used to verify the integrity of the downloads when complete:</para>
+@y
+    <para>
+    まずはダウンロードするファイル一覧を生成します。
+    このファイルは、ダウンロード後に各ファイルのチェックサムを確認する際にも利用します。
+    </para>
+@z
+
+@x
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
@@ -157,21 +177,47 @@
 @x
     <para>First, start a subshell that will exit on error:</para>
 @y
-    <para>First, start a subshell that will exit on error:</para>
+    <para>
+    まずはサブシェルを起動します。
+    こうしておけばエラー発生時に終了させることができます。
+    </para>
 @z
 
 @x
     <para>Install all of the applications by running the following
     commands:</para>
 @y
-    <para>Install all of the applications by running the following
-    commands:</para>
+    <para>
+    以下のコマンドを実行してすべてのアプリケーションをインストールします。
+    </para>
 @z
 
 @x
     <para>Finally, exit the shell that was started earlier:</para>
 @y
-    <para>Finally, exit the shell that was started earlier:</para>
+    <para>
+    最後は、起動していたサブシェルを終了します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>bash -e</command>: This command starts a subshell that will
+    exit if any command returns a value other than 0, causing the for loop to
+    exit immediately if an error occurs. This also eliminates the need for the
+    <command>&amp;&amp;</command> construct used elsewhere in the book.</para>
+@y
+    <para><command>bash -e</command>:
+    このコマンドは
+    This command starts a subshell that will
+    exit if any command returns a value other than 0, causing the for loop to
+    exit immediately if an error occurs. This also eliminates the need for the
+    <command>&amp;&amp;</command> construct used elsewhere in the book.</para>
 @z
 
 @x
@@ -181,23 +227,55 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg>The following subdirectories of <envar>$XORG_PREFIX</envar>/:
-        include/X11, include/GL, and lib/pkgconfig</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/GL,
+          <envar>$XORG_PREFIX</envar>/include/X11,
+          <envar>$XORG_PREFIX</envar>/lib/pkgconfig,
+          <envar>$XORG_PREFIX</envar>/share/doc/bigreqsproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/compositeproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/damageproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/dri2proto,
+          <envar>$XORG_PREFIX</envar>/share/doc/fixesproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/fontsproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/inputproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/kbproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/randrproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/recordproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/renderproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/resourceproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/scrnsaverproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/videoproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/xcmiscproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/xextproto and
+          <envar>$XORG_PREFIX</envar>/share/doc/xproto
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg><envar>$XORG_PREFIX</envar>/ 配下の以下のサブディレクトリ:
-        include/X11, include/GL, lib/pkgconfig</seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/GL,
+          <envar>$XORG_PREFIX</envar>/include/X11,
+          <envar>$XORG_PREFIX</envar>/lib/pkgconfig,
+          <envar>$XORG_PREFIX</envar>/share/doc/bigreqsproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/compositeproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/damageproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/dri2proto,
+          <envar>$XORG_PREFIX</envar>/share/doc/fixesproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/fontsproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/inputproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/kbproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/randrproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/recordproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/renderproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/resourceproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/scrnsaverproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/videoproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/xcmiscproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/xextproto,
+          <envar>$XORG_PREFIX</envar>/share/doc/xproto
+        </seg>
 @z

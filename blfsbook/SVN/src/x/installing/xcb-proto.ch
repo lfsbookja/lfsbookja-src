@@ -147,21 +147,13 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>None</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/xcb</seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/xcb</seg>
 @z

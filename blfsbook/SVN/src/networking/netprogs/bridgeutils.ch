@@ -207,17 +207,17 @@ This is useful in setting up
 @z
 
 @x
-      <para>The following configuration file will create a bridge device
-      at boot time and attach the eth0 device to it.  If more than one
-      device is desired, use a space separated list of INTERFACES.  This
-      configuration is useful when planning to run a virtual machine
-      such as kvm/qemu.</para>
+      <para>The following configuration file will create a bridge device at
+      boot time and attach the eth0 device to it.  If more than one device is
+      desired, use a space separated list of INTERFACE_COMPONENTS.  This
+      configuration is useful when planning to run a virtual machine such as
+      kvm/qemu.</para>
 @y
-      <para>The following configuration file will create a bridge device
-      at boot time and attach the eth0 device to it.  If more than one
-      device is desired, use a space separated list of INTERFACES.  This
-      configuration is useful when planning to run a virtual machine
-      such as kvm/qemu.</para>
+      <para>The following configuration file will create a bridge device at
+      boot time and attach the eth0 device to it.  If more than one device is
+      desired, use a space separated list of INTERFACE_COMPONENTS.  This
+      configuration is useful when planning to run a virtual machine such as
+      kvm/qemu.</para>
 @z
 
 @x
@@ -235,19 +235,19 @@ This is useful in setting up
 @z
 
 @x
-      <caution><para>Do not run a parallel configuration for a device
-      in the INTERFACES list.  For instance, in the example below,
-      do not configure <filename>/etc/sysconfig/ifconfig.eth0</filename>
-      to run at boot time.  The command <command>ifdown br0</command>
-      followed by  command <command>ifup eth0</command> will work, but
-      don't try to have both up at the same time.</para></caution>
+      <caution><para>Do not run a parallel configuration for a device in the
+      INTERFACE_COMPONENTS list.  For instance, in the example below, do not
+      configure <filename>/etc/sysconfig/ifconfig.eth0</filename> to run at
+      boot time.  The command <command>ifdown br0</command> followed by
+      command <command>ifup eth0</command> will work, but don't try to have
+      both up at the same time.</para></caution>
 @y
-      <caution><para>Do not run a parallel configuration for a device
-      in the INTERFACES list.  For instance, in the example below,
-      do not configure <filename>/etc/sysconfig/ifconfig.eth0</filename>
-      to run at boot time.  The command <command>ifdown br0</command>
-      followed by  command <command>ifup eth0</command> will work, but
-      don't try to have both up at the same time.</para></caution>
+      <caution><para>Do not run a parallel configuration for a device in the
+      INTERFACE_COMPONENTS list.  For instance, in the example below, do not
+      configure <filename>/etc/sysconfig/ifconfig.eth0</filename> to run at
+      boot time.  The command <command>ifdown br0</command> followed by
+      command <command>ifup eth0</command> will work, but don't try to have
+      both up at the same time.</para></caution>
 @z
 
 @x

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY freetype2-buildsize     "26 MB (includes installing additional documentation)">
+  <!ENTITY freetype2-buildsize     "30 MB (includes installing additional documentation)">
 @y
-  <!ENTITY freetype2-buildsize     "26 MB (追加ドキュメントのインストールを含む)">
+  <!ENTITY freetype2-buildsize     "30 MB (追加ドキュメントのインストールを含む)">
 @z
 
 @x

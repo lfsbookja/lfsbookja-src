@@ -118,11 +118,11 @@
 
 @x
           Recommended patch:
-          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-4.patch"/>
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-5.patch"/>
           (Needed if testing the Xorg installation per BLFS instructions).
 @y
           推奨のパッチ:
-          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-4.patch"/>
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-5.patch"/>
           (BLFS でのビルド手順に従って Xorg をテストする場合に必要。)
 @z
 
@@ -321,7 +321,7 @@
         <seg>
           libdricore9.0.0.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libOpenVG.so and libxatracker.so
+          libOpenVG.so, libOSMesa.so and libxatracker.so
         </seg>
         <seg>
           /usr/include/EGL,
@@ -339,7 +339,7 @@
         <seg>
           libdricore9.0.0.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libOpenVG.so, libxatracker.so
+          libOpenVG.so, libOSMesa.so, libxatracker.so
         </seg>
         <seg>
           /usr/include/EGL,

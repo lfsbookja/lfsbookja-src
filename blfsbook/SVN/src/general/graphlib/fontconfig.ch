@@ -178,21 +178,13 @@
 @z
 
 @x
-      <parameter>--docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
-      Though this parameter seems counter-intuitive following the preceding
-      parameter to the <command>configure</command> command, it is used so that
-      if the builder removes the <parameter>--disable-docs</parameter> parameter,
-      the documentation will be installed in a versioned directory name instead
-      of the default
-      <filename class='directory'>/usr/share/doc/fontconfig</filename>.
+      <option>--disable-docs</option>: This switch avoids building the
+      documentation (the release tarball includes pre-generated
+      documentation).
 @y
-      <parameter>--docdir=/usr/share/doc/fontconfig-&fontconfig-version;</parameter>:
-      Though this parameter seems counter-intuitive following the preceding
-      parameter to the <command>configure</command> command, it is used so that
-      if the builder removes the <parameter>--disable-docs</parameter> parameter,
-      the documentation will be installed in a versioned directory name instead
-      of the default
-      <filename class='directory'>/usr/share/doc/fontconfig</filename>.
+      <option>--disable-docs</option>: This switch avoids building the
+      documentation (the release tarball includes pre-generated
+      documentation).
 @z
 
 @x

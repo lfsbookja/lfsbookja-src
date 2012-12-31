@@ -251,33 +251,69 @@
 @z
 
 @x
-        <seg>cxpm, sxpm, xft-config</seg>
-        <seg>libdmx.{so,a}, libfontenc.{so,a},
-        libFS.{so,a}, libICE.{so,a}, libpciaccess.{so,a}, libSM.{so,a},
-        libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
-        libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
-        libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
-        libXfont.{so,a}, libXft.{so,a}, libXinerama.{so,a}, libXi.{so,a},
-        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a},
-        libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a}, libXRes.{so,a},
-        libXss.{so,a}, libXt.{so,a}, libXtst.{so,a}, libXvMC.{so,a},
-        libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a}, and
-        libXxf86vm.{so,a}</seg>
-        <seg>None</seg>
+        <seg>
+          cxpm and sxpm
+        </seg>
+        <seg>
+          libdmx.so, libfontenc.so, libFS.so, libICE.so,
+          libpciaccess.so, libSM.so, libX11.so, libXaw6.so,
+          libXaw7.so, libXaw.so, libXcomposite.so,
+          libXcursor.so, libXdamage.so, libXext.so,
+          libXfixes.so, libXfont.so, libXft.so, libXinerama.so,
+          libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
+          libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
+          libXss.so, libXt.so, libXtst.so, libXvMC.so,
+          libXvMCW.so, libXv.so, libXxf86dga.so and
+          libXxf86vm.so
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/doc/libFS,
+          <envar>$XORG_PREFIX</envar>/share/doc/libICE,
+          <envar>$XORG_PREFIX</envar>/share/doc/libSM,
+          <envar>$XORG_PREFIX</envar>/share/doc/libX11,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXaw,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXext,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXi,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXmu,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXrender,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXt,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXtst,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXvMC,
+          <envar>$XORG_PREFIX</envar>/share/doc/xtrans and
+          <envar>$XORG_PREFIX</envar>/share/X11/locale
+        </seg>
 @y
-        <seg>cxpm, sxpm, xft-config</seg>
-        <seg>libdmx.{so,a}, libfontenc.{so,a},
-        libFS.{so,a}, libICE.{so,a}, libpciaccess.{so,a}, libSM.{so,a},
-        libX11.{so,a}, libXaw6.{so,a}, libXaw7.{so,a},
-        libXaw.{so,a}, libXcomposite.{so,a}, libXcursor.{so,a},
-        libXdamage.{so,a}, libXext.{so,a}, libXfixes.{so,a},
-        libXfont.{so,a}, libXft.{so,a}, libXinerama.{so,a}, libXi.{so,a},
-        libxkbfile.{so,a}, libXmu.{so,a}, libXmuu.{so,a},
-        libXpm.{so,a}, libXrandr.{so,a}, libXrender.{so,a}, libXRes.{so,a},
-        libXss.{so,a}, libXt.{so,a}, libXtst.{so,a}, libXvMC.{so,a},
-        libXvMCW.{so,a}, libXv.{so,a}, libXxf86dga.{so,a},
-        libXxf86vm.{so,a}</seg>
-        <seg>&None;</seg>
+        <seg>
+          cxpm, sxpm
+        </seg>
+        <seg>
+          libdmx.so, libfontenc.so, libFS.so, libICE.so,
+          libpciaccess.so, libSM.so, libX11.so, libXaw6.so,
+          libXaw7.so, libXaw.so, libXcomposite.so,
+          libXcursor.so, libXdamage.so, libXext.so,
+          libXfixes.so, libXfont.so, libXft.so, libXinerama.so,
+          libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
+          libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
+          libXss.so, libXt.so, libXtst.so, libXvMC.so,
+          libXvMCW.so, libXv.so, libXxf86dga.so,
+          libXxf86vm.so
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/share/doc/libFS,
+          <envar>$XORG_PREFIX</envar>/share/doc/libICE,
+          <envar>$XORG_PREFIX</envar>/share/doc/libSM,
+          <envar>$XORG_PREFIX</envar>/share/doc/libX11,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXaw,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXext,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXi,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXmu,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXrender,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXt,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXtst,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXvMC,
+          <envar>$XORG_PREFIX</envar>/share/doc/xtrans,
+          <envar>$XORG_PREFIX</envar>/share/X11/locale
+        </seg>
 @z
 
 @x
@@ -298,15 +334,6 @@
 @y
           <para>
           XPM ファイルを参照したり、XPM 1、XPM 2 ファイルを XPM 3 ファイルに変換します。
-          </para>
-@z
-
-@x xft-config
-          <para>reports Xft version, compiler, linker, and/or installation
-          directory information.</para>
-@y
-          <para>
-          Xft のバージョン、コンパイラー、リンカー、インストールディレクトリの情報などを出力します。
           </para>
 @z
 

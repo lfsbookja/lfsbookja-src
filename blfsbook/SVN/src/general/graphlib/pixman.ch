@@ -111,11 +111,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Note that
-      <application>GTK+2</application> must be installed.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <application>GTK+2</application> がインストールされている必要があります。
 @z
 
 @x

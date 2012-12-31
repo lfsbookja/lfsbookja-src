@@ -161,6 +161,15 @@
 @z
 
 @x
+    <para><option>--enable-xinput</option>: This switch enables XCB Xinput
+    extension.</para>
+@y
+    <para><option>--enable-xinput</option>:
+    本スイッチは XCB Xinput 拡張を有効にします。
+    </para>
+@z
+
+@x
     <para><parameter>--docdir='${datadir}'/doc/libxcb-&libxcb-version;</parameter>:
     This parameter ensures the <application>libxcb</application> documentation
     is installed to a versioned directory.</para>
@@ -244,13 +253,13 @@
 
 @x
         <seg>None</seg>
-        <seg>libxcb.{so,a} and libxcb-*.{so,a}</seg>
+        <seg>libxcb.so and libxcb-*.so</seg>
         <seg><envar>$XORG_PREFIX</envar>/include/xcb and
         <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;</seg>
 @y
         <seg>&None;</seg>
-        <seg>libxcb.{so,a} と libxcb-*.{so,a}</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/xcb と
+        <seg>libxcb.so, libxcb-*.so</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/xcb,
         <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;</seg>
 @z
 

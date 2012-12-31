@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY llvm-time "13.0 SBU (add about 7 SBU for clang)">
+  <!ENTITY llvm-time          "13.0 SBU (Additional 7.0 SBU for Clang)">
 @y
-  <!ENTITY llvm-time "13.0 SBU (add about 7 SBU for clang)">
+  <!ENTITY llvm-time          "13.0 SBU (Additional 7.0 SBU for Clang)">
 @z
 
 @x
@@ -26,29 +26,29 @@
 @z
 
 @x
-    <para>The <application>llvm</application> package contains a collection of
-    modular and reusable compiler and toolchain technologies. The Low Level
-    Virtual MAchine (LLVM)  Core libraries provide a modern source- and
-    target-independent optimizer, along with code generation support for many
-    popular CPUs (as well as some less common ones!) These libraries are built
-    around a well specified code representation known as the LLVM intermediate
-    representation ("LLVM IR").</para>
+      The <application>LLVM</application> package contains a collection of modular and 
+      reusable compiler and toolchain technologies. The Low Level Virtual Machine
+      (LLVM) Core libraries provide a modern source and target-independent optimizer,
+      along with code generation support for many popular CPUs (as well as some less
+      common ones!). These libraries are built around a well specified code
+      representation known as the LLVM intermediate representation ("LLVM IR").
 @y
-    <para>The <application>llvm</application> package contains a collection of
-    modular and reusable compiler and toolchain technologies. The Low Level
-    Virtual MAchine (LLVM)  Core libraries provide a modern source- and
-    target-independent optimizer, along with code generation support for many
-    popular CPUs (as well as some less common ones!) These libraries are built
-    around a well specified code representation known as the LLVM intermediate
-    representation ("LLVM IR").</para>
+      The <application>LLVM</application> package contains a collection of modular and 
+      reusable compiler and toolchain technologies. The Low Level Virtual Machine
+      (LLVM) Core libraries provide a modern source and target-independent optimizer,
+      along with code generation support for many popular CPUs (as well as some less
+      common ones!). These libraries are built around a well specified code
+      representation known as the LLVM intermediate representation ("LLVM IR").
 @z
 
 @x
-    <para>The optional <application>clang</application> package provides a
-    new C, C++, Objective C and Objective C++ front-end for the LLVM compiler.</para>
+      The optional <application>Clang</application> and <application>Compiler RT</application>
+      packages provide a new C, C++, Objective C and Objective C++ front-ends and runtime
+      libraries for the <application>LLVM</application>.
 @y
-    <para>The optional <application>clang</application> package provides a
-    new C, C++, Objective C and Objective C++ front-end for the LLVM compiler.</para>
+      The optional <application>Clang</application> and <application>Compiler RT</application>
+      packages provide a new C, C++, Objective C and Objective C++ front-ends and runtime
+      libraries for the <application>LLVM</application>.
 @z
 
 @x
@@ -58,39 +58,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&llvm-download-http;"/></para>
+          Download (HTTP): <ulink url="&llvm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&llvm-download-http;"/></para>
+          Download (HTTP): <ulink url="&llvm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&llvm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&llvm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&llvm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&llvm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &llvm-md5sum;</para>
+          Download MD5 sum: &llvm-md5sum;
 @y
-        <para>&Download; MD5 sum: &llvm-md5sum;</para>
+          Download MD5 sum: &llvm-md5sum;
 @z
 
 @x
-        <para>Download size: &llvm-size;</para>
+          Download size: &llvm-size;
 @y
-        <para>&DownloadSize;: &llvm-size;</para>
+          Download size: &llvm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &llvm-buildsize;</para>
+          Estimated disk space required: &llvm-buildsize;
 @y
-        <para>Estimated disk space required: &llvm-buildsize;</para>
+          Estimated disk space required: &llvm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &llvm-time;</para>
+          Estimated build time: &llvm-time;
 @y
-        <para>Estimated build time: &llvm-time;</para>
+          Estimated build time: &llvm-time;
 @z
 
 @x
@@ -100,9 +100,51 @@
 @z
 
 @x
-        <para>Optional package: 
+          Required patch:
 @y
-        <para>Optional package: 
+          Required patch:
+@z
+
+@x
+    <bridgehead renderas="sect3">Optional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">Optional Downloads</bridgehead>
+@z
+
+@x
+          Clang Download (HTTP): <ulink url="&clang-download-http;"/>
+@y
+          Clang Download (HTTP): <ulink url="&clang-download-http;"/>
+@z
+
+@x
+          Clang Download MD5 sum: &clang-md5sum;
+@y
+          Clang Download MD5 sum: &clang-md5sum;
+@z
+
+@x
+          Clang Download size: &clang-size;
+@y
+          Clang Download size: &clang-size;
+@z
+
+@x
+          Compiler RT Download (HTTP): <ulink url="&compiler-rt-download-http;"/>
+@y
+          Compiler RT Download (HTTP): <ulink url="&compiler-rt-download-http;"/>
+@z
+
+@x
+          Compiler RT Download MD5 sum: &compiler-rt-md5sum;
+@y
+          Compiler RT Download MD5 sum: &compiler-rt-md5sum;
+@z
+
+@x
+          Compiler RT Download size: &compiler-rt-size;
+@y
+          Compiler RT Download size: &compiler-rt-size;
 @z
 
 @x
@@ -114,26 +156,36 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-       <xref linkend="libffi"/>
+      <xref linkend="libffi"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-       <xref linkend="libffi"/>
+      <xref linkend="libffi"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-       <xref linkend="doxygen"/> and 
-       <xref linkend="graphviz"/>
+      <xref linkend="doxygen"/>,
+      <xref linkend="graphviz"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="zip"/>,
+      <ulink url="http://www.ocaml.org/">OCaml</ulink>,
+      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink> and
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-       <xref linkend="doxygen"/>,
-       <xref linkend="graphviz"/>
+      <xref linkend="doxygen"/>,
+      <xref linkend="graphviz"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="zip"/>,
+      <ulink url="http://www.ocaml.org/">OCaml</ulink>,
+      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink> and
+      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @z
 
@@ -150,36 +202,48 @@
 @z
 
 @x
-    <para>If you downloaded the optional <application>clang</application> package,
-    install it into the source tree:</para>
+      If you have downloaded the optional packages, install them into
+      the source tree by running the following commands:
 @y
-    <para>If you downloaded the optional <application>clang</application> package,
-    install it into the source tree:</para>
+      If you have downloaded the optional packages, install them into
+      the source tree by running the following commands:
 @z
 
 @x
-    <para>Install <application>llvm</application> by running the following
-    commands:</para>
+      Install <application>LLVM</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>llvm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>llvm</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      If you have installed <application>Sphinx</application> and wish
+      to generate manual pages, issue the following command:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      If you have installed <application>Sphinx</application> and wish
+      to generate manual pages, issue the following command:
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      If you have built manual pages, install them by running the
+      following command as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      If you have built manual pages, install them by running the
+      following command as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -199,11 +263,189 @@
 @z
 
 @x
-        <seg>clang, clang++, and numerous llvm-* build tools</seg>
-        <seg>numerous custom libraries to support llvm and clang programs</seg>
-        <seg>/usr/lib/{clang,llvm}, /usr/share/doc/llvm</seg>
+        <seg>
+          bugpoint, c-index-test, clang, clang++, clang-check, clang-tblgen, llc, lli,
+          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff, llvm-dis,
+          llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
+          llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld, llvm-size,
+          llvm-stress, llvm-tblgen, macho-dump and opt
+        </seg>
+        <seg>
+          libclang.so, libLLVM-&llvm-version;.so, libprofile_rt.so
+          and numerous libraries in /usr/lib/llvm
+        </seg>
+        <seg>
+          /usr/include/clang,
+          /usr/include/clang-c,
+          /usr/include/llvm,
+          /usr/include/llvm-c,
+          /usr/lib/clang,
+          /usr/lib/llvm and
+          /usr/share/doc/llvm
+        </seg>
 @y
-        <seg>clang, clang++, and numerous llvm-* build tools</seg>
-        <seg>numerous custom libraries to support llvm and clang programs</seg>
-        <seg>/usr/lib/{clang,llvm}, /usr/share/doc/llvm</seg>
+        <seg>
+          bugpoint, c-index-test, clang, clang++, clang-check, clang-tblgen, llc, lli,
+          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff, llvm-dis,
+          llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
+          llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld, llvm-size,
+          llvm-stress, llvm-tblgen, macho-dump, opt
+        </seg>
+        <seg>
+          libclang.so, libLLVM-&llvm-version;.so, libprofile_rt.so,
+          /usr/lib/llvm 配下に多くのライブラリ
+        </seg>
+        <seg>
+          /usr/include/clang,
+          /usr/include/clang-c,
+          /usr/include/llvm,
+          /usr/include/llvm-c,
+          /usr/lib/clang,
+          /usr/lib/llvm,
+          /usr/share/doc/llvm
+        </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x bugpoint
+            is the automatic test case reduction tool.
+@y
+            is the automatic test case reduction tool.
+@z
+
+@x clang
+            is the <application>Clang</application> C, C++,
+            and Objective-C compiler.
+@y
+            is the <application>Clang</application> C, C++,
+            and Objective-C compiler.
+@z
+
+@x llc
+            is the <application>LLVM</application> static compiler.
+@y
+            is the <application>LLVM</application> static compiler.
+@z
+
+@x lli
+            is used to directly execute programs from
+            <application>LLVM</application> bitcode.
+@y
+            is used to directly execute programs from
+            <application>LLVM</application> bitcode.
+@z
+
+@x llvm-ar
+            is the <application>LLVM</application> archiver.
+@y
+            is the <application>LLVM</application> archiver.
+@z
+
+@x llvm-as
+            is the <application>LLVM</application> assembler.
+@y
+            is the <application>LLVM</application> assembler.
+@z
+
+@x llvm-bcanalyzer
+            is the <application>LLVM</application> bitcode analyzer.
+@y
+            is the <application>LLVM</application> bitcode analyzer.
+@z
+
+@x llvm-config
+            Prints <application>LLVM</application> compilation options.
+@y
+            Prints <application>LLVM</application> compilation options.
+@z
+
+@x llvm-cov
+            is used to emit coverage information.
+@y
+            is used to emit coverage information.
+@z
+
+@x llvm-diff
+            is the <application>LLVM</application> structural
+            '<command>diff</command>'.
+@y
+            is the <application>LLVM</application> structural
+            '<command>diff</command>'.
+@z
+
+@x llvm-dis
+            is the <application>LLVM</application> disassembler.
+@y
+            is the <application>LLVM</application> disassembler.
+@z
+
+@x llvm-extract
+            is used to extract a function from an
+            <application>LLVM</application> module.
+@y
+            is used to extract a function from an
+            <application>LLVM</application> module.
+@z
+
+@x llvm-link
+            is the <application>LLVM</application> linker.
+@y
+            is the <application>LLVM</application> linker.
+@z
+
+@x llvm-nm
+            is used to list <application>LLVM</application> bitcode
+            and object file's symbol table.
+@y
+            is used to list <application>LLVM</application> bitcode
+            and object file's symbol table.
+@z
+
+@x llvm-prof
+            is used to print execution profile of
+            <application>LLVM</application> program.
+@y
+            is used to print execution profile of
+            <application>LLVM</application> program.
+@z
+
+@x llvm-ranlib
+            is used to generate index for <application>LLVM</application>
+            archive.
+@y
+            is used to generate index for <application>LLVM</application>
+            archive.
+@z
+
+@x llvm-stress
+            is used to generate random
+            <filename class="extension">.ll</filename> files.
+@y
+            is used to generate random
+            <filename class="extension">.ll</filename> files.
+@z
+
+@x llvm-tblgen
+            is the <application>LLVM</application> Target Description
+            To C++ Code Generator.
+@y
+            is the <application>LLVM</application> Target Description
+            To C++ Code Generator.
+@z
+
+@x opt
+            is the <application>LLVM</application> optimizer.
+@y
+            is the <application>LLVM</application> optimizer.
+@z
+
+@x libLLVM-&llvm-version;.so
+            contains the <application>LLVM</application> API functions.
+@y
+            contains the <application>LLVM</application> API functions.
 @z

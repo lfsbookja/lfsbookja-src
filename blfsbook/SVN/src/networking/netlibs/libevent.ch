@@ -14,20 +14,21 @@
 @z
 
 @x
-    <title>Introduction to Libevent</title>
+    <title>Introduction to libevent</title>
 @y
-    <title>&IntroductionTo1;Libevent&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libevent&IntroductionTo2;</title>
 @z
 
 @x
-      <application>Libevent</application> is an asynchronous event notification
-      software library. The Libevent API provides a mechanism to execute a
-      callback function when a specific event occurs on a file descriptor or
-      after a timeout has been reached. Furthermore, Libevent also supports
-      callbacks due to signals or regular timeouts.
+      <application>libevent</application> is an asynchronous event notification
+      software library. The <application>libevent</application> API provides a
+      mechanism to execute a callback function when a specific event occurs on
+      a file descriptor or after a timeout has been reached. Furthermore,
+      <application>libevent</application> also supports callbacks due to
+      signals or regular timeouts.
 @y
-      <application>Libevent</application> は非同期のイベント通知を行うライブラリです。
-      Libevent API はコールバック関数の実行メカニズムを提供します。
+      <application>libevent</application> は非同期のイベント通知を行うライブラリです。
+      <application>libevent</application> API はコールバック関数の実行メカニズムを提供します。
       ファイル上にて指定されたイベントが発生したり、そのイベントがタイムアウトが発生したりした時のコールバック関数を呼び出します。
       またシグナルや通常のタイムアウトのコールバックにも対応します。
 @z
@@ -75,17 +76,21 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Libevent Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libevent Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Libevent&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libevent&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="openssl"/></para>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="openssl"/></para>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
@@ -95,22 +100,22 @@
 @z
 
 @x
-    <title>Installation of Libevent</title>
+    <title>Installation of libevent</title>
 @y
-    <title>&InstallationOf1;Libevent&InstallationOf2;</title>
+    <title>&InstallationOf1;libevent&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Libevent</application> by running the following
+      Install <application>libevent</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Libevent</application> をビルドします。
+      以下のコマンドを実行して <application>libevent</application> をビルドします。
 @z
 
 @x
-      This package does not have a working testsuite
+      To test the results, issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -142,7 +147,9 @@
 @z
 
 @x
-        <seg>event_rpcgen.py</seg>
+        <seg>
+          event_rpcgen.py
+        </seg>
         <seg>
           libevent_core.so,
           libevent_extra.so,
@@ -150,9 +157,13 @@
           libevent_pthreads.so and
           libevent.so
         </seg>
-        <seg>/usr/include/event2</seg>
+        <seg>
+         /usr/include/event2
+        </seg>
 @y
-        <seg>event_rpcgen.py</seg>
+        <seg>
+          event_rpcgen.py
+        </seg>
         <seg>
           libevent_core.so,
           libevent_extra.so,
@@ -160,5 +171,7 @@
           libevent_pthreads.so,
           libevent.so
         </seg>
-        <seg>/usr/include/event2</seg>
+        <seg>
+         /usr/include/event2
+        </seg>
 @z
