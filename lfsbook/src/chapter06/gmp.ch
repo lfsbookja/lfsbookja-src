@@ -60,14 +60,6 @@
 @z
 
 @x
-          <para>This builds the Berkeley MP compatibility library</para>
-@y
-          <para>
-          Berkeley MP に対する互換ライブラリをビルドします。
-          </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

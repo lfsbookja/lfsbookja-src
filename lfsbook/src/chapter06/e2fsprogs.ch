@@ -122,16 +122,15 @@
 @z
 
 @x
-    <para>One of the E2fsprogs tests will attempt to allocate 256 MB
-    of memory. If you do not have significantly more RAM than this, it
-    is recommended to enable sufficient swap space for the test. See
-    <xref linkend="space-creatingfilesystem"/> and
-    <xref linkend="space-mounting"/> for details on creating and enabling
-    swap space.</para>
+    <para>One of the E2fsprogs tests will attempt to allocate 256 MB of memory.
+    If you do not have significantly more RAM than this, be sure to enable
+    sufficient swap space for the test. See <xref
+    linkend="space-creatingfilesystem"/> and <xref linkend="space-mounting"/>
+    for details on creating and enabling swap space.</para>
 @y
     <para>
     E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
-    この容量を確保できるだけの RAM がない場合は、十分なスワップ領域を確保することが推奨されています。
+    この容量を確保できるだけの RAM がない場合は、十分なスワップ領域が利用可能であることを確認してください。
     スワップ領域の生成と有効化については <xref
     linkend="space-creatingfilesystem"/>と <xref linkend="space-mounting"/>を参照してください。
     </para>

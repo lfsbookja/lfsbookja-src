@@ -29,10 +29,10 @@
 @z
 
 @x
-    <para>Fix a bug in a test case:</para>
+    <para>Fix a couple of test failures:</para>
 @y
     <para>
-    テスト処理におけるバグを修正します。
+    テスト処理がいくつか失敗するのを修正します。
     </para>
 @z
 

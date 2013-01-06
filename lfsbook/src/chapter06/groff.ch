@@ -47,7 +47,15 @@
 @z
 
 @x
-    <para>Prepare Groff for compilation:</para>
+    <para>First, fix a bug in a Makefile, that prevents a symlink to a PDF from
+being created correctly:</para>
+@y
+    <para>First, fix a bug in a Makefile, that prevents a symlink to a PDF from
+being created correctly:</para>
+@z
+
+@x
+    <para>Now, prepare Groff for compilation:</para>
 @y
     <para>&PreparePackage1;Groff&PreparePackage2;</para>
 @z

@@ -68,6 +68,14 @@
 @z
 
 @x
+    <para>Fix some test suite scripts so all tests pass:</para>
+@y
+    <para>
+    テストをすべて実行できるようにするために、テストスイートスクリプトをいくつか修正します。
+    </para>
+@z
+
+@x
     <para>The Binutils documentation recommends building Binutils outside of the
     source directory in a dedicated build directory:</para>
 @y

@@ -48,6 +48,95 @@
 @z
 
 @x
+      <para>2013-01-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Bash-4.2.42.  Fixes
+          <ulink url="&lfs-ticket-root;3268">#3268</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Groff-1.22.1.  Fixes
+          <ulink url="&lfs-ticket-root;3266">#3266</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Automake-1.13.1.  Fixes
+          <ulink url="&lfs-ticket-root;3265">#3265</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Coreutils-8.20.  Fixes
+          <ulink url="&lfs-ticket-root;3215">#3215</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Bash-4.2.42 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3268">#3268</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Groff-1.22.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3266">#3266</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Automake-1.13.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3265">#3265</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Coreutils-8.20 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3215">#3215</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add additional recommendations for
+          additional packages in the 'Rebooting the System'
+          section.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Remove obsolete --enable-mpbsd from gmp 
+          instructions. Thanks to hauradou for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 'システムの再起動' の節にて、追加していくお勧めのパッケージについての説明を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gmp において古くなった --enable-mpbsd を削除。
+          報告を挙げてくれた hauradou に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2012-12-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add patch to fix binutils test suite.
+          All binutils tests now pass, so remove the "-k" flag
+          from test invocation.
+          Thanks to Pierre Labastie for the patch.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2012-12-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - binutils のテストスイートに対するパッチを追加。
+          これによりすべてのテストが正常処理されるため、その起動時の "-k" フラグは削除。
+          パッチを提供してくれた Pierre Labastie に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2012-12-30</para>
       <itemizedlist>
         <listitem>
