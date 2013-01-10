@@ -186,18 +186,10 @@
 @z
 
 @x
-      <command>sed ... lib/krb5/krb/deltat.c</command>: This sed
-      fixes a problem when building with GCC 4.7.
-@y
-      <command>sed ... lib/krb5/krb/deltat.c</command>: This sed
-      fixes a problem when building with GCC 4.7.
-@z
-
-@x
-      <option>--enable-dns-for-realm</option>: This parameter allows
+      <option>--enable-dns-for-realm</option>: This switch allows
       realms to be resolved using the DNS server.
 @y
-      <option>--enable-dns-for-realm</option>: This parameter allows
+      <option>--enable-dns-for-realm</option>: This switch allows
       realms to be resolved using the DNS server.
 @z
 
@@ -516,11 +508,13 @@
         <seg>
           libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
           libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
-          libkrb5.so, libkrb5support.so, libverto-k5ev.so and 
-          libverto.so
+          libkrb5.so, libkrb5support.so, and libverto.so
         </seg>
         <seg>
-          /usr/include/{gssapi,gssrpc,kadm5,krb5},
+          /usr/include/gssapi,
+          /usr/include/gssrpc,
+          /usr/include/kadm5,
+          /usr/include/krb5,
           /usr/lib/krb5, 
           /usr/share/doc/krb5-&mitkrb-version;,
           /usr/share/examples/krb5 and
@@ -537,11 +531,13 @@
         <seg>
           libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, 
           libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so, 
-          libkrb5.so, libkrb5support.so, libverto-k5ev.so,
-          libverto.so
+          libkrb5.so, libkrb5support.so, libverto.so
         </seg>
         <seg>
-          /usr/include/{gssapi,gssrpc,kadm5,krb5},
+          /usr/include/gssapi,
+          /usr/include/gssrpc,
+          /usr/include/kadm5,
+          /usr/include/krb5,
           /usr/lib/krb5, 
           /usr/share/doc/krb5-&mitkrb-version;,
           /usr/share/examples/krb5,

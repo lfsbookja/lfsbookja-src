@@ -22,24 +22,22 @@
 @x
     <title>Introduction to libdiscid</title>
 @y
-    <title>libdiscid の概要</title>
+    <title>&IntroductionTo1;libdiscid&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>libdiscid</application> package is a library for
-    creating MusicBrainz DiscIDs from audio CDs. It reads a CD's table of
-    contents (TOC) and generates an identifier which can be used to lookup the
-    CD at MusicBrainz (<ulink url="http://musicbrainz.org"/>). Additionally, it
-    provides a submission URL for adding the DiscID to the database.</para>
+      The <application>libdiscid</application> package contains a library for
+      creating MusicBrainz DiscIDs from audio CDs. It reads a CD's table of
+      contents (TOC) and generates an identifier which can be used to lookup the
+      CD at MusicBrainz (<ulink url="http://musicbrainz.org"/>). Additionally, it
+      provides a submission URL for adding the DiscID to the database.
 @y
-    <para>
-    <application>libdiscid</application> パッケージは、オーディオ CD から MusicBrainz ディスク ID を生成するライブラリを提供します。
-    
-    creating MusicBrainz DiscIDs from audio CDs. It reads a CD's table of
-    contents (TOC) and generates an identifier which can be used to lookup the
-    CD at MusicBrainz (<ulink url="http://musicbrainz.org"/>). Additionally, it
-    provides a submission URL for adding the DiscID to the database.
-    </para>
+      <application>libdiscid</application> パッケージは、オーディオ CD から MusicBrainz ディスク ID を生成するライブラリを提供します。
+      
+      It reads a CD's table of
+      contents (TOC) and generates an identifier which can be used to lookup the
+      CD at MusicBrainz (<ulink url="http://musicbrainz.org"/>). Additionally, it
+      provides a submission URL for adding the DiscID to the database.
 @z
 
 @x
@@ -49,62 +47,58 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libdiscid-download-http;"/></para>
+          Download (HTTP): <ulink url="&libdiscid-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libdiscid-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libdiscid-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libdiscid-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libdiscid-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libdiscid-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libdiscid-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libdiscid-md5sum;</para>
+          Download MD5 sum: &libdiscid-md5sum;
 @y
-        <para>&Download; MD5 sum: &libdiscid-md5sum;</para>
+          &Download; MD5 sum: &libdiscid-md5sum;
 @z
 
 @x
-        <para>Download size: &libdiscid-size;</para>
+          Download size: &libdiscid-size;
 @y
-        <para>&DownloadSize;: &libdiscid-size;</para>
+          &DownloadSize;: &libdiscid-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libdiscid-buildsize;</para>
+          Estimated disk space required: &libdiscid-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libdiscid-buildsize;</para>
+          &Estimateddiskspacerequired;: &libdiscid-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libdiscid-time;</para>
+          Estimated build time: &libdiscid-time;
 @y
-        <para>&Estimatedbuildtime;: &libdiscid-time;</para>
+          &Estimatedbuildtime;: &libdiscid-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libdiscid"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libdiscid"/></para>
 @z
 
 @x
     <title>Installation of libdiscid</title>
 @y
-    <title>libdiscid のインストール</title>
+    <title>&InstallationOf1;libdiscid&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>libdiscid</application> by running the following
-    commands:</para>
+      Install <application>libdiscid</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libdiscid</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libdiscid</application> をビルドします。
 @z
 
 @x
@@ -130,23 +124,27 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libdiscid.{so,a}</seg>
-        <seg>/usr/include/discid</seg>
+        <seg>
+          libdiscid.so
+        </seg>
+        <seg>
+          /usr/include/discid
+        </seg>
 @y
-        <seg>なし</seg>
-        <seg>libdiscid.{so,a}</seg>
-        <seg>/usr/include/discid</seg>
+        <seg>
+          libdiscid.so
+        </seg>
+        <seg>
+          /usr/include/discid
+        </seg>
 @z
 
 @x
@@ -155,8 +153,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libdiscid.{so,a}
-          <para>contains the DiscID API functions.</para>
+@x libdiscid.so
+            contains the DiscID API functions.
 @y
-          <para>DiscID API 関数を提供します。</para>
+            DiscID API 関数を提供します。
 @z

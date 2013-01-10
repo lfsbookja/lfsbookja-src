@@ -27,10 +27,12 @@ dist_changes = \
 	jchangelog-2009.txt \
 	jchangelog-2010.txt \
 	jchangelog-2011.txt \
+	jchangelog-2012.txt \
 	changelog-2008.ch \
 	changelog-2009.ch \
 	changelog-2010.ch \
-	changelog-2011.ch
+	changelog-2011.ch \
+	changelog-2012.ch
 
 EXTRA_DIST = $(CHANGE_FILES) $(dist_changes)
 srcdir = @srcdir@
@@ -67,4 +69,6 @@ jchangelog-2009.txt: $(BOOKdir)/changelog-2009.txt $(srcdir)/changelog-2009.ch
 jchangelog-2010.txt: $(BOOKdir)/changelog-2010.txt $(srcdir)/changelog-2010.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
 jchangelog-2011.txt: $(BOOKdir)/changelog-2011.txt $(srcdir)/changelog-2011.ch
+	$(top_builddir)/$(CTIE) -m $@ $^
+jchangelog-2012.txt: $(BOOKdir)/changelog-2012.txt $(srcdir)/changelog-2012.ch
 	$(top_builddir)/$(CTIE) -m $@ $^

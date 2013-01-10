@@ -5,7 +5,7 @@
 %
 % $Author$
 % $Rev$
-% $Date::                          $
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -14,9 +14,9 @@
 @z
 
 @x
-    <title>Introduction to Parted</title>
+    <title>Introduction to parted</title>
 @y
-    <title>&IntroductionTo1;Parted&IntroductionTo2;</title>
+    <title>&IntroductionTo1;parted&IntroductionTo2;</title>
 @z
 
 @x
@@ -94,9 +94,9 @@
 @z
 
 @x
-    <title>Installation of Parted</title>
+    <title>Installation of parted</title>
 @y
-    <title>&InstallationOf1;Parted&InstallationOf2;</title>
+    <title>&InstallationOf1;parted&InstallationOf2;</title>
 @z
 
 @x

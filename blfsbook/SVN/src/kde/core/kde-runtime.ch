@@ -123,6 +123,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+    <xref linkend="gdb"/>,
     <xref linkend="pulseaudio"/>, 
     <xref linkend="xine-lib"/>, 
     <xref linkend="libcanberra"/>, 
@@ -136,6 +137,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+    <xref linkend="gdb"/>,
     <xref linkend="pulseaudio"/>, 
     <xref linkend="xine-lib"/>, 
     <xref linkend="libcanberra"/>, 
@@ -178,22 +180,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
- <para><option>patch -Np1 -i ../kde-runtime-&kde-version;-rpc_fix-1.patch</option>:
- This patch fixes linking to <application>libtirpc</application>.</para>
-@y
- <para>
- <option>patch -Np1 -i ../kde-runtime-&kde-version;-rpc_fix-1.patch</option>:
- このパッチは <application>libtirpc</application> へのリンクを修正します。
- </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -210,7 +196,7 @@
 @z
 
 @x
-        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kde4, kde4-menu,
+        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kdesu, kde4, kde4-menu,
         kdebugdialog, keditfiletype, kfile4, kglobalaccel, khelpcenter,
         khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
         kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
@@ -220,7 +206,7 @@
         <seg>several in &kde-dir;/lib</seg>
         <seg>several in &kde-dir;/lib and &kde-dir;/share</seg>
 @y
-        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kde4, kde4-menu,
+        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kdesu, kde4, kde4-menu,
         kdebugdialog, keditfiletype, kfile4, kglobalaccel, khelpcenter,
         khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
         kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,

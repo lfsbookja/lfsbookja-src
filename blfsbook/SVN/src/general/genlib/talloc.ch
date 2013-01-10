@@ -14,26 +14,23 @@
 @z
 
 @x
-    <title>Introduction to talloc</title>
+    <title>Introduction to Talloc</title>
 @y
-    <title>&IntroductionTo1;talloc&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Talloc&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>talloc</application> provides a hierarchical, reference
-    counted memory pool system with destructors. It is the core memory
-    allocator used in <application>Samba</application> and
-    <application>MesaLib</application>.</para>
+      <application>Talloc</application> provides a hierarchical, reference
+      counted memory pool system with destructors. It is the core memory
+      allocator used in <application>Samba</application>.
 @y
-<!--
-日本語訳註： matsuand
-hierarchical、つまり階層的というのが、メモリ管理のどのような仕組みを
-指すのか不明であったため、訳さなかった。
--->
-<para>
-<application>talloc</application> は、メモリの参照回数をカウントするメモリプールシステム (memory pool system) であり、メモリ開放の機能も含みます。
-これは <application>Samba</application> や <application>MesaLib</application> において、メモリ管理を行う主要な機能として組み入れられています。
-</para>
+      <!--
+      日本語訳註： matsuand
+      hierarchical、つまり階層的というのが、メモリ管理のどのような仕組みを
+      指すのか不明であったため、訳さなかった。
+      -->
+      <application>Talloc</application> は、メモリの参照回数をカウントするメモリプールシステム (memory pool system) であり、メモリ開放の機能も含みます。
+      これは <application>Samba</application> において、メモリ管理を行う主要な機能として組み入れられています。
 @z
 
 @x
@@ -43,70 +40,96 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&talloc-download-http;"/></para>
+          Download (HTTP): <ulink url="&talloc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&talloc-download-http;"/></para>
+          Download (HTTP): <ulink url="&talloc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&talloc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&talloc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&talloc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&talloc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &talloc-md5sum;</para>
+          Download MD5 sum: &talloc-md5sum;
 @y
-        <para>&Download; MD5 sum: &talloc-md5sum;</para>
+          Download MD5 sum: &talloc-md5sum;
 @z
 
 @x
-        <para>Download size: &talloc-size;</para>
+          Download size: &talloc-size;</para>
 @y
-        <para>&DownloadSize;: &talloc-size;</para>
+          Download size: &talloc-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &talloc-buildsize;</para>
+          Estimated disk space required: &talloc-buildsize;
 @y
+          Estimated disk space required: &talloc-buildsize;
         <para>&Estimateddiskspacerequired;: &talloc-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &talloc-time;</para>
+          Estimated build time: &talloc-time;
 @y
+          Estimated build time: &talloc-time;
         <para>&Estimatedbuildtime;: &talloc-time;</para>
 @z
 
 @x
-    <title>Installation of talloc</title>
+    <bridgehead renderas="sect3">Talloc Dependencies</bridgehead>
 @y
-    <title>&InstallationOf1;talloc&InstallationOf2;</title>
+    <bridgehead renderas="sect3">Talloc Dependencies</bridgehead>
 @z
 
 @x
-    <para>Install <application>talloc</application> by running the following
-    commands:</para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/> and
+      <xref linkend="libxslt"/> (To generate man pages) and
+      <xref linkend="python2"/> (To build Python module).
+    </para>
 @y
-    <para>
-    以下のコマンドを実行して <application>talloc</application> をビルドします。
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="libxslt"/> (man ページ生成のため),
+      <xref linkend="python2"/> (Python モジュール構築のため)
     </para>
 @z
 
 @x
-    <para>To check the results, issue <command>make check</command>.</para>
+      User Notes: <ulink url="&blfs-wiki;/talloc"/>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      &UserNotes;: <ulink url="&blfs-wiki;/talloc"/>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <title>Installation of Talloc</title>
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <title>&InstallationOf1;Talloc&InstallationOf2;</title>
+@z
+
+@x
+      Install <application>Talloc</application> by running the following
+      commands:
+@y
+      以下のコマンドを実行して <application>talloc</application> をビルドします。
+@z
+
+@x
+      To check the results, issue <command>make check</command>.
+@y
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -116,23 +139,21 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libtalloc.{a,so}</seg>
-        <seg>None</seg>
+        <seg>
+          libpytalloc-util.so, libtalloc.so and
+          talloc.so (Python Module)
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libtalloc.{a,so}</seg>
-        <seg>&None;</seg>
+        <seg>
+          libpytalloc-util.so, libtalloc.so,
+          talloc.so (Python モジュール)
+        </seg>
 @z
 
 @x
@@ -141,11 +162,9 @@ hierarchical、つまり階層的というのが、メモリ管理のどのよ�
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libtalloc.{a,so}
-          <para>contains a replacemnt for the <application>glibc</application>
-          malloc function.</para>
+@x libtalloc.so
+            contains a replacemnt for the <application>Glibc</application>
+            malloc function.
 @y
-          <para>
-          <application>glibc</application> の malloc に対応する代替関数を提供します。
-          </para>
+            <application>Glibc</application> の malloc に対応する代替関数を提供します。
 @z

@@ -218,8 +218,8 @@
 
 @x
         <seg>
-          certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-          ocsptool, p11tool, psktool, and srptool
+          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
+          gnutls-serv, ocsptool, p11tool, psktool, and srptool
         </seg>
         <seg>
           libgnutls.so, libgnutls-openssl.so, and libgnutlsxx.so
@@ -230,8 +230,8 @@
         </seg>
 @y
         <seg>
-          certtool, crywrap, gnutls-cli, gnutls-cli-debug, gnutls-serv,
-          ocsptool, p11tool, psktool, srptool
+          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
+          gnutls-serv, ocsptool, p11tool, psktool, srptool
         </seg>
         <seg>
           libgnutls.so, libgnutls-openssl.so, libgnutlsxx.so

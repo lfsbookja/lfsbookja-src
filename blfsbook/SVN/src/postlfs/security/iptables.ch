@@ -182,20 +182,13 @@
 @z
 
 @x
-      <parameter>--bindir=/sbin</parameter>: Ensure all the executables go
-      in <filename class="directory">/sbin</filename>.
-@y
-      <parameter>--bindir=/sbin</parameter>:
-      実行モジュールを <filename class="directory">/sbin</filename> にインストールします。
-@z
-
-@x
       <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all 
-      Iptables modules are installed in the 
+      <application>Iptables</application> modules are installed in the 
       <filename class="directory">/lib/xtables</filename> directory.
 @y
       <parameter>--with-xtlibdir=/lib/xtables</parameter>:
-      Iptables モジュールをすべて <filename class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
+      <application>Iptables</application> モジュールをすべて <filename
+      class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
 @z
 
 @x
@@ -227,10 +220,10 @@
 @z
 
 @x
-      <command>ln -sfv xtables-multi /sbin/iptables-xml</command>: Ensure
-      the symbolic link for <command>iptables-xml</command> is relative.
+      <command>ln -sfv ../../sbin/xtables-multi /usr/bin/iptables-xml</command>:
+      Ensure  the symbolic link for <command>iptables-xml</command> is relative.
 @y
-      <command>ln -sfv xtables-multi /sbin/iptables-xml</command>:
+      <command>ln -sfv ../../sbin/xtables-multi /usr/bin/iptables-xml</command>:
       <command>iptables-xml</command> へのシンボリックリンクを相対的なものとします。
 @z
 

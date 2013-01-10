@@ -71,36 +71,9 @@
 @z
 
 @x
-    <caution><para>The XFS developers regularly remove the current
-    package when a new package is available.  Unfortunately, this has led to
-    severe incompatibilities, including
-    <ulink url="http://bugs.debian.org/465737">unmountable filesystems</ulink>,
-    due to kernel version requirements in new versions of the package.  Using a
-    version not in the book is strongly discouraged. Additional information,
-    is available at the
-    <ulink url="http://oss.sgi.com/projects/xfs/">XFS</ulink> project
-    page.</para></caution>
-@y
-    <caution><para>
-    XFS の開発者は、新たなパッケージを提供する際には、それまでのパッケージを削除することを行っています。
-    
-Unfortunately, this has led to
-    severe incompatibilities, including
-    <ulink url="http://bugs.debian.org/465737">unmountable filesystems</ulink>,
-    due to kernel version requirements in new versions of the package.  Using a
-    version not in the book is strongly discouraged. Additional information,
-    is available at the
-    <ulink url="http://oss.sgi.com/projects/xfs/">XFS</ulink> project
-    page.
-    </para></caution>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/xfs"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/xfs"/></para>
 @z
 
 @x
@@ -183,19 +156,17 @@ Unfortunately, this has led to
 @x
     <para><parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
     extra configuration options to the <filename>configure</filename> script.
-    The example <parameter>--enable-readline=yes</parameter> parameter
+    The example <parameter>--enable-readline</parameter> parameter
     enables linking the XFS programs with the
     <filename class="libraryfile">libreadline.so</filename> library, in order
     to allow editing interactive commands.</para>
 @y
-    <para>
-    <parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
+    <para><parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
     extra configuration options to the <filename>configure</filename> script.
-    The example <parameter>--enable-readline=yes</parameter> parameter
+    The example <parameter>--enable-readline</parameter> parameter
     enables linking the XFS programs with the
     <filename class="libraryfile">libreadline.so</filename> library, in order
-    to allow editing interactive commands.
-    </para>
+    to allow editing interactive commands.</para>
 @z
 
 @x
@@ -211,18 +182,6 @@ Unfortunately, this has led to
 @z
 
 @x
-    <para><command>make install-dev</command>: This command installs
-    static XFS libraries, their headers and the corresponding
-    documentation.</para>
-@y
-    <para>
-    <command>make install-dev</command>: This command installs
-    static XFS libraries, their headers and the corresponding
-    documentation.
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -231,7 +190,7 @@ Unfortunately, this has led to
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -243,17 +202,15 @@ Unfortunately, this has led to
         xfs_db, xfs_freeze, xfs_growfs, xfs_info, xfs_io, xfs_logprint,
         xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck, xfs_quota,
         xfs_repair, and xfs_rtcp</seg>
-        <seg>libdisk.a, libhandle.{so,a}, libxcmd.a, libxfs.a, and
-        libxlog.a </seg>
-        <seg>/usr/share/doc/xfsprogs</seg>
+        <seg>libhandle.{so,a}</seg>
+        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs</seg>
 @y
         <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_check, xfs_copy,
         xfs_db, xfs_freeze, xfs_growfs, xfs_info, xfs_io, xfs_logprint,
         xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck, xfs_quota,
         xfs_repair, xfs_rtcp</seg>
-        <seg>libdisk.a, libhandle.{so,a}, libxcmd.a, libxfs.a,
-        libxlog.a </seg>
-        <seg>/usr/share/doc/xfsprogs</seg>
+        <seg>libhandle.{so,a}</seg>
+        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs</seg>
 @z
 
 @x

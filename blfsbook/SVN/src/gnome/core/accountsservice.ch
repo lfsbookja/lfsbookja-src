@@ -179,7 +179,8 @@
         </seg>
         <seg>
           /usr/include/accountsservice-1.0,
-          /usr/lib/accountsservice and
+          /usr/lib/accountsservice,
+          /usr/share/gtk-doc/html/libaccountsservice and
           /var/lib/AccountsService
         </seg>
 @y
@@ -192,6 +193,7 @@
         <seg>
           /usr/include/accountsservice-1.0,
           /usr/lib/accountsservice,
+          /usr/share/gtk-doc/html/libaccountsservice,
           /var/lib/AccountsService
         </seg>
 @z

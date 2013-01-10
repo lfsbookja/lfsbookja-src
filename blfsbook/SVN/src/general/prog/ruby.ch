@@ -134,19 +134,19 @@
 @z
 
 @x
-      <option>--enable-shared</option>: This parameter enables building of
+      <option>--enable-shared</option>: This switch enables building of
       the <filename class="libraryfile">libruby</filename> shared library.
 @y
       <option>--enable-shared</option>:
-      このパラメーターは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
+      このスイッチは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
 @z
 
 @x
-      <option>--enable-pthread</option>: This parameter enables linking of the
+      <option>--enable-pthread</option>: This switch enables linking of the
       threading library into the <application>Ruby</application> build.
 @y
       <option>--enable-pthread</option>:
-      このパラメーターはスレッドライブラリをビルドします。
+      このスイッチはスレッドライブラリをビルドします。
 @z
 
 @x

@@ -115,11 +115,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="tcl"/> and
       <xref linkend="unzip"/> (required to unzip the documentation).
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="tcl"/> and
       <xref linkend="unzip"/> (ドキュメントを伸張するために必要)
     </para>
 @z
@@ -177,7 +179,8 @@
 @z
 
 @x
-      <parameter>CFLAGS="-g -O2 -DSQLITE_SECURE_DELETE
+      <parameter>CFLAGS="-g -O2 -DSQLITE_ENABLE_FTS3=1
+      -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_SECURE_DELETE
       -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
       <application>Firefox</application> require secure delete and enable unlock
       notify to be turned on. The only way to do this is to include them in the
@@ -187,7 +190,8 @@
       information. For further information on what can be specified see
       <ulink url="http://www.sqlite.org/compile.html"/>.
 @y
-      <parameter>CFLAGS="-g -O2 -DSQLITE_SECURE_DELETE
+      <parameter>CFLAGS="-g -O2 -DSQLITE_ENABLE_FTS3=1
+      -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_SECURE_DELETE
       -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
       <application>Firefox</application> require secure delete and enable unlock
       notify to be turned on. The only way to do this is to include them in the
@@ -207,17 +211,35 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>sqlite3</seg>
-        <seg>libsqlite3.so</seg>
+        <seg>
+          sqlite3
+        </seg>
+        <seg>
+          libsqlite3.so
+        </seg>
+        <seg>
+          /usr/lib/sqlite&sqlite-version; and
+          /usr/share/doc/sqlite-&sqlite-version;
+        </seg>
 @y
-        <seg>sqlite3</seg>
-        <seg>libsqlite3.so</seg>
+        <seg>
+          sqlite3
+        </seg>
+        <seg>
+          libsqlite3.so
+        </seg>
+        <seg>
+          /usr/lib/sqlite&sqlite-version; and
+          /usr/share/doc/sqlite-&sqlite-version;
+        </seg>
 @z
 
 @x

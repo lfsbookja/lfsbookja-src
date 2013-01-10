@@ -166,7 +166,6 @@ CHANGE_FILES = \
 	mc.ch            \
 	obexd.ch         \
 	obex-data-server.ch \
-	parted.ch        \
 	pciutils.ch      \
 	raptor.ch        \
 	rasqal.ch        \
@@ -399,7 +398,6 @@ lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
 mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
 obexd.xml:         $(BOOKdir)/$@ $(srcdir)/obexd.ch
 obex-data-server.xml: $(BOOKdir)/$@ $(srcdir)/obex-data-server.ch
-parted.xml:        $(BOOKdir)/$@ $(srcdir)/parted.ch
 pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch
 raptor.xml:        $(BOOKdir)/$@ $(srcdir)/raptor.ch
 rasqal.xml:        $(BOOKdir)/$@ $(srcdir)/rasqal.ch

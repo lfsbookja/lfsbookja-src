@@ -142,7 +142,7 @@
 
 @x
       If you have installed <xref linkend="qt"/> and would like to compile the
-      Qt GUI:
+      Qt GUI, run the following commands:
 @y
       <xref linkend="qt"/> をインストールしていて Qt GUI をビルドする場合は以下を実行します。
 @z
@@ -160,8 +160,8 @@
 @z
 
 @x
-      If you compiled the Qt GUI, install it as the
-      <systemitem class="username">root</systemitem> user:
+      If you compiled the Qt GUI, install it by running the following commands
+      as the <systemitem class="username">root</systemitem> user:
 @y
       Qt GUI をビルドしている場合は <systemitem class="username">root</systemitem> ユーザーとなって以下を実行することでインストールします。
 @z
@@ -208,14 +208,14 @@
 
 @x transmission-cli
             is a lightweight, command-line BitTorrent client with scripting
-            capabilities
+            capabilities.
 @y
             軽量なコマンドラインベースの BitTorrent クライアントです。
             スクリプト生成機能も含みます。
 @z
 
 @x transmission-create
-            is a command line tool to create .torrent files
+            is a command line tool used to create .torrent files.
 @y
             .torrent ファイルを生成するためのコマンドラインツール。
 @z
@@ -223,38 +223,38 @@
 @x transmission-daemon
             is a daemon-based Transmission session that can be controlled via
             RPC commands from transmission's web interface or
-            transmission-remote
+            <command>transmission-remote</command>.
 @y
             デーモンベースの Transmission セッション。
-            transmission のウェブインターフェースからの PRC コマンドや transmission-remote から制御することができます。
+            transmission のウェブインターフェースからの PRC コマンドや <command>transmission-remote</command> から制御することができます。
 @z
 
 @x transmission-edit
-            is a command-line utility to modify .torrent files' announce URLs
+            is a command-line utility to modify .torrent files' announce URLs.
 @y
             .torrent ファイルのアナウンス URL を修正するコマンドラインユーティリティー。
 @z
 
 @x transmission-gtk
-            is a Gtk+ bittorrent client
+            is a GTK+ bittorrent client.
 @y
             Gtk+ ベースの bittorrent クライアント。
 @z
 
 @x transmission-qt
-            is a Qt bittorrent client
+            is a Qt bittorrent client.
 @y
             Qt ベースの bittorrent クライアント。
 @z
 
 @x transmission-remote
-            is a remote control utility for transmission-daemon and transmission
+            is a remote control utility for transmission-daemon and transmission.
 @y
             transmission-daemon と transmission に対するリモート制御ユーティリティー。
 @z
 
 @x transmission-show
-            is a command line tool to display bittorrent .torrent file metadata
+            is a command line tool to display bittorrent .torrent file metadata.
 @y
             .torrent ファイルのメタデータを表示するコマンドラインツール。
 @z

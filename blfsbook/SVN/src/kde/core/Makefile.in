@@ -154,6 +154,7 @@ CHANGE_FILES = \
 	core.ch                     \
 	kactivities.ch              \
 	kde-baseapps.ch             \
+	kde-base-artwork.ch         \
 	kdelibs.ch                  \
 	kdepimlibs.ch               \
 	kde-runtime.ch              \
@@ -369,6 +370,7 @@ config.xml:                   $(BOOKdir)/$@ $(srcdir)/config.ch
 core.xml:                     $(BOOKdir)/$@ $(srcdir)/core.ch
 kactivities.xml:              $(BOOKdir)/$@ $(srcdir)/kactivities.ch
 kde-baseapps.xml:             $(BOOKdir)/$@ $(srcdir)/kde-baseapps.ch
+kde-base-artwork.xml:         $(BOOKdir)/$@ $(srcdir)/kde-base-artwork.ch
 kdelibs.xml:                  $(BOOKdir)/$@ $(srcdir)/kdelibs.ch
 kdepimlibs.xml:               $(BOOKdir)/$@ $(srcdir)/kdepimlibs.ch
 kde-runtime.xml:              $(BOOKdir)/$@ $(srcdir)/kde-runtime.ch

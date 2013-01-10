@@ -198,16 +198,28 @@
 @z
 
 @x
-    <para><option>-DSYSCONF_INSTALL_DIR=/etc/kde</option>: This option is set to
-    install configuration files in /etc.</para>
-    <para><option>-DDOCBOOKXML_CURRENTDTD_DIR=...</option>: This option is used to
-    find the DTDs.</para>
+    <para><option>-DSYSCONF_INSTALL_DIR=/etc</option>: This switch is used to install
+    configuration files in /etc.</para>
 @y
     <para><option>-DSYSCONF_INSTALL_DIR=/etc/kde4</option>:
-    このオプションは、設定ファイル類を /etc にインストールすることを指定します。
+    このスイッチは、設定ファイル類を /etc にインストールすることを指定します。
     </para>
+@z
+
+@x
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to apply
+    higher level of compiler optimizations.</para>
+@y
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to apply
+    higher level of compiler optimizations.</para>
+@z
+
+@x
+    <para><option>-DDOCBOOKXML_CURRENTDTD_DIR=...</option>: This switch is used to
+    tell <command>cmake</command> where to find the XML DTDs.</para>          
+@y
     <para><option>-DDOCBOOKXML_CURRENTDTD_DIR=...</option>:
-    このオプションは DTDs を見つけ出すために指定します。
+    このスイッチは <command>cmake</command> に対して XML DTDs を見つけ出す場所を指示します。
     </para>
 @z
 

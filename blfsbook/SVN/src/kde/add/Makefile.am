@@ -13,7 +13,6 @@ CHANGE_FILES = \
 	gwenview.ch         \
 	kate.ch             \
 	kdeadmin.ch         \
-	kde-base-artwork.ch \
 	kmix.ch             \
 	kdenetwork.ch       \
 	kdepim.ch           \
@@ -43,7 +42,6 @@ ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
 gwenview.xml:          $(BOOKdir)/$@ $(srcdir)/gwenview.ch
 kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
 kdeadmin.xml:          $(BOOKdir)/$@ $(srcdir)/kdeadmin.ch
-kde-base-artwork.xml:  $(BOOKdir)/$@ $(srcdir)/kde-base-artwork.ch
 kmix.xml:              $(BOOKdir)/$@ $(srcdir)/kmix.ch
 kdenetwork.xml:        $(BOOKdir)/$@ $(srcdir)/kdenetwork.ch
 kdepim.xml:            $(BOOKdir)/$@ $(srcdir)/kdepim.ch

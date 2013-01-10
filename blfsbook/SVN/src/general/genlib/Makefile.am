@@ -59,6 +59,7 @@ CHANGE_FILES = \
 	pth.ch \
 	ptlib.ch \
 	qca.ch \
+	sbc.ch \
 	slib.ch \
 	talloc.ch \
 	telepathy-farstream.ch \
@@ -131,6 +132,7 @@ popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
 pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
 ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
 qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
+sbc.xml:                   $(BOOKdir)/$@ $(srcdir)/sbc.ch
 slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
 talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
 telepathy-farstream.xml:   $(BOOKdir)/$@ $(srcdir)/telepathy-farstream.ch

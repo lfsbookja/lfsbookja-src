@@ -118,11 +118,11 @@
 @z
 
 @x
-    <para>Install <application>akonadi</application> by running the following
+    <para>Install <application>Akonadi</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>akonadi</application> をビルドします。
+    以下のコマンドを実行して <application>Akonadi</application> をビルドします。
     </para>
 @z
 
@@ -141,21 +141,11 @@
 @z
 
 @x
-    <para><command>sed -i 's#qt4/plugins...</command>: This sed fixes the 
-    installation path of the SQLite plugin.</para>
+    <para><option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>: This switch is used to
+    help <command>cmake</command> find <command>automoc4</command>.</para>
 @y
-    <para><command>sed -i 's#qt4/plugins...</command>: This sed fixes the 
-    installation path of the SQLite plugin.</para>
-@z
-
-@x
-    <para><option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>: This option is set to
-    find automoc4.</para>
-@y
-    <para>
-    <option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>:
-    本オプションは automoc4 を見出すためのものです。
-    </para>
+    <para><option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>:
+    このスイッチにより <command>cmake</command> が <command>automoc4</command> を見出せるようにします。</para>
 @z
 
 @x

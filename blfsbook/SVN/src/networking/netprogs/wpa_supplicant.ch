@@ -89,50 +89,30 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libnl"/> and
-      <!-- From defconfig: WEXT is deprecated in the current Linux kernel
-      version and no new functionality is added to it. nl80211-based
-      interface is the new replacement for WEXT -->
       <xref linkend="openssl"/>
-      <!-- For EAP-* Methods -->
     </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libnl"/> and
-      <!-- From defconfig: WEXT is deprecated in the current Linux kernel
-      version and no new functionality is added to it. nl80211-based
-      interface is the new replacement for WEXT -->
+      <xref linkend="libnl"/>,
       <xref linkend="openssl"/>
-      <!-- For EAP-* Methods -->
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> and
-      <xref linkend="libxml2"/>
-      <!-- D-Bus and libxml2 are required for D-Bus Interface which
-      NetworkManager uses.
-
-      WPA Supplicant uses internal Linux specific implemenation
-      for L2_PACKET, libpcap or libdnet are only there for portability
-      with other OS'es. See README if you don't believe me. -->
+      <xref linkend="dbus"/>,
+      <xref linkend="libxml2"/> and
+      <xref linkend="qt"/>
     </para>
-
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> and
-      <xref linkend="libxml2"/>
-      <!-- D-Bus and libxml2 are required for D-Bus Interface which
-      NetworkManager uses.
-
-      WPA Supplicant uses internal Linux specific implemenation
-      for L2_PACKET, libpcap or libdnet are only there for portability
-      with other OS'es. See README if you don't believe me. -->
+      <xref linkend="dbus"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="qt"/>
     </para>
-
 @z
 
 @x
@@ -372,9 +352,9 @@
 @z
 
 @x
-        <seg>wpa_supplicant, wpa_passphrase and wpa_cli</seg>
+          wpa_gui, wpa_supplicant, wpa_passphrase and wpa_cli
 @y
-        <seg>wpa_supplicant, wpa_passphrase and wpa_cli</seg>
+          wpa_gui, wpa_supplicant, wpa_passphrase, wpa_cli
 @z
 
 @x
