@@ -42,39 +42,37 @@
 @x
           Download (HTTP): <ulink url="&talloc-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&talloc-download-http;"/>
+          &Download; (HTTP): <ulink url="&talloc-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&talloc-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&talloc-download-ftp;"/>
+          &Download; (FTP): <ulink url="&talloc-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &talloc-md5sum;
 @y
-          Download MD5 sum: &talloc-md5sum;
+          &Download; MD5 sum: &talloc-md5sum;
 @z
 
 @x
           Download size: &talloc-size;</para>
 @y
-          Download size: &talloc-size;</para>
+          &DownloadSize;: &talloc-size;</para>
 @z
 
 @x
           Estimated disk space required: &talloc-buildsize;
 @y
-          Estimated disk space required: &talloc-buildsize;
-        <para>&Estimateddiskspacerequired;: &talloc-buildsize;</para>
+          &Estimateddiskspacerequired;: &talloc-buildsize;
 @z
 
 @x
           Estimated build time: &talloc-time;
 @y
-          Estimated build time: &talloc-time;
-        <para>&Estimatedbuildtime;: &talloc-time;</para>
+          &Estimatedbuildtime;: &talloc-time;
 @z
 
 @x
