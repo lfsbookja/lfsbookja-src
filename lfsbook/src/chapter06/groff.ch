@@ -50,8 +50,9 @@
     <para>First, fix a bug in a Makefile, that prevents a symlink to a PDF from
 being created correctly:</para>
 @y
-    <para>First, fix a bug in a Makefile, that prevents a symlink to a PDF from
-being created correctly:</para>
+    <para>まずは Makefile のバグを修正します。
+これは PDF ファイルに対するシンボリックリンクを適切に生成できるようにするものです。
+</para>
 @z
 
 @x

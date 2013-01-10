@@ -49,6 +49,14 @@
         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
 @z
 
+@x Binutils Test Suite Patch
+        <para>Download: <ulink url="&patches-root;&binutils-testsuite-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&binutils-testsuite-fixes-patch-md5;</literal></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&binutils-testsuite-fixes-patch;"/></para>
+        <para>MD5 sum: <literal>&binutils-testsuite-fixes-patch-md5;</literal></para>
+@z
+
 @x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
         <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
@@ -57,12 +65,20 @@
         <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>
 @z
 
-@x Bzip2 Documentation Patch
+@x Coreutils Internationalization Fixes Patch
         <para>Download: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
         <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
 @y
         <para>&Download;: <ulink url="&patches-root;&coreutils-i18n-patch;"/></para>
         <para>MD5 sum: <literal>&coreutils-i18n-patch-md5;</literal></para>
+@z
+
+@x Coreutils Test Fixes Patch
+        <para>Download: <ulink url="&patches-root;&coreutils-test-patch;"/></para>
+        <para>MD5 sum: <literal>&coreutils-test-patch-md5;</literal></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&coreutils-test-patch;"/></para>
+        <para>MD5 sum: <literal>&coreutils-test-patch-md5;</literal></para>
 @z
 
 @x Flex Regression Tests Patch

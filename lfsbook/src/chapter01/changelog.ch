@@ -48,6 +48,31 @@
 @z
 
 @x
+      <para>2013-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Reformat 'Rebooting the System'
+          recommendations.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update udev-lfs scripts.  Update to
+          systemd-197.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Reformat 'システムの再起動' の節における推奨手順を再整形。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - udev-lfs スクリプト更新。
+          systemd-197 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-01-02</para>
       <itemizedlist>
         <listitem>
@@ -85,32 +110,6 @@
         <listitem>
           <para>[matthew] - Coreutils-8.20 へのアップグレード。
           <ulink url="&lfs-ticket-root;3215">#3215</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Add additional recommendations for
-          additional packages in the 'Rebooting the System'
-          section.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Remove obsolete --enable-mpbsd from gmp 
-          instructions. Thanks to hauradou for the report.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - 'システムの再起動' の節にて、追加していくお勧めのパッケージについての説明を追加。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - gmp において古くなった --enable-mpbsd を削除。
-          報告を挙げてくれた hauradou に感謝。</para>
         </listitem>
       </itemizedlist>
 @z

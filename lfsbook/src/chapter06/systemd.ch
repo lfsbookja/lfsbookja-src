@@ -63,14 +63,6 @@
 @z
 
 @x
-    <para>Fix a typo in the <userinput>udevadm</userinput> usage output:</para>
-@y
-    <para>
-    <userinput>udevadm</userinput> が出力する利用方法の文言にて、表現の誤りを訂正します。
-    </para>
-@z
-
-@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
