@@ -48,6 +48,33 @@
 @z
 
 @x
+      <para>2013-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Revised explanation for /etc/modprobe.conf.
+          Fixes <ulink url="&lfs-ticket-root;3270">#3270</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update udev-lfs init-net-rules.sh
+          script for "en*" devices introduced in systemd-197.  
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /etc/modprobe.conf に対する説明を更新。
+          <ulink url="&lfs-ticket-root;3270">#3270</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - udev-lfs の init-net-rules.sh スクリプトにおいて sytemd-197 で導入された "en*" デバイスのための修正。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-01-09</para>
       <itemizedlist>
         <listitem>
@@ -63,7 +90,7 @@
       <para>2013-01-09</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Reformat 'システムの再起動' の節における推奨手順を再整形。</para>
+          <para>[bdubbs] - 'システムの再起動' の節における推奨手順を再整形。</para>
         </listitem>
         <listitem>
           <para>[bdubbs] - udev-lfs スクリプト更新。

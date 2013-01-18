@@ -311,16 +311,20 @@
 @z
 
 @x
-    <para>The <filename>/etc/modprobe.d/usb.conf</filename> file needs to be
-    created so that if the USB drivers (ehci_hcd, ohci_hcd and uhci_hcd) have
-    been built as modules, they will be loaded in the correct order; ehci_hcd
-    needs to be loaded prior to ohci_hcd and uhci_hcd in order to avoid a
-    warning being output at boot time.</para>
+    <para>Most of the time Linux modules are loaded automatically, but
+    sometimes it needs some specific direction.  The program that loads
+    modules, <command>modprobe</command> or <command>insmod</command>, uses
+    <filename>/etc/modprobe.d/usb.conf</filename> for this purpose.  This file
+    needs to be created so that if the USB drivers (ehci_hcd, ohci_hcd and
+    uhci_hcd) have been built as modules, they will be loaded in the correct
+    order; ehci_hcd needs to be loaded prior to ohci_hcd and uhci_hcd in order
+    to avoid a warning being output at boot time.</para>
 @y
     <para>
-    USB ドライバーをモジュールとして構築した場合は <filename>/etc/modprobe.d/usb.conf</filename> ファイルを生成する必要があります。
-    USB ドライバーには ehci_hcd、ohci_hcd、uhci_hcd があります。
-    これらのロード順は正しく行う必要があります。
+    たいていの場合 Linux モジュールは自動的にロードされます。
+    しかし中には特定の指示を必要とするものもあります。
+    モジュールをロードするプログラム、<command>modprobe</command> または <command>insmod</command> は、そのような指示を行う目的で <filename>/etc/modprobe.d/usb.conf</filename> を利用します。
+    USB ドライバー (ehci_hcd, ohci_hcd, uhci_hcd) がモジュールとしてビルドされていた場合には、それらを正しい順でロードしなければならず、そのために <filename>/etc/modprobe.d/usb.conf</filename> ファイルが必要となります。
     ehci_hcd は ohci_hcd や uhci_hcd よりも先にロードしなければなりません。
     これを行わないとブート時に警告メッセージが出力されます。
     </para>
