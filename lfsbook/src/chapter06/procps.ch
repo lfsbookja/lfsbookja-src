@@ -14,47 +14,48 @@
 @z
 
 @x
-    <para>The Procps package contains programs for monitoring processes.</para>
+    <para>The Procps-ng package contains programs for monitoring processes.</para>
 @y
     <para>
-    Procps パッケージはプロセス監視を行うプログラムを提供します。
+    Procps-ng パッケージはプロセス監視を行うプログラムを提供します。
     </para>
 @z
 
 @x
-    <title>Installation of Procps</title>
+    <title>Installation of Procps-ng</title>
 @y
-    <title>&InstallationOf1;Procps&InstallationOf2;</title>
+    <title>&InstallationOf1;Procps-ng&InstallationOf2;</title>
 @z
 
 @x
-    <para>Apply a patch to prevent an error message from being displayed when
-    determining the kernel clock tick rate:</para>
+    <para>Now prepare procps-ng for compilation:</para>
 @y
-    <para>
-    以下のパッチを適用して、カーネルが時間きざみの率 (clock tick rate) を決定する際に表示されるエラーメッセージを抑えます。
-    </para>
+    <para>procps-ng をコンパイルするための準備をします。</para>
 @z
 
 @x
-    <para>Apply a patch to fix a unicode related issue in the
-    <command>watch</command> program:</para>
+      <title>The meaning of the configure options:</title>
 @y
-    <para>
-    <command>watch</command> コマンドにおいて、ユニコードに関する問題を修正するためにパッチを適用します。
-    </para>
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;</title>
 @z
 
-@x
-    <para>Do not install the kill program because it was installed by util-linux.
-    Also fix a bug in the Makefile, which prevents procps from building with
-    make-&make-version;:</para>
+@x --disable-skill
+          <para>This switch disables the obsolete and unportable
+          skill and snice commands.</para> 
 @y
-    <para>
-    kill プログラムは util-linux によりインストールされるため、ここではインストールしません。
-    ここでは同時に Makefile のバグを修正します。
-    これは make-&make-version; において procps がビルドできるようにするものです。
-    </para>
+          <para>
+          本スイッチは、可搬性のない古いコマンド skill と snice をビルドしないようにします。
+          </para> 
+@z
+
+@x --disable-kill
+          <para>This switch disables building the kill command that
+          was installed in the util-linux package.</para>
+@y
+          <para>
+          本スイッチは kill コマンドをビルドしないようにします。
+          このコマンドは util-linux パッケージにてインストールされます。
+          </para>
 @z
 
 @x
@@ -64,9 +65,16 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>The test suite needs some custom modifications for LFS. 
+    The <command>which</command> is not available and the
+    <command>pmap</command> test does not match a newline character in 
+    two tests. To run the test suite, run the following commands:</para>
 @y
-    <para>&NotExistTestsuite;</para>
+    <para>
+    LFS においてテストスイートを実行するには多少の修正が必要です。
+    <command>which</command> が利用できず、<command>pmap</command> の2つのテストでは改行文字が適切に処理されないためです。
+    テストスイートを実行するには、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -76,9 +84,9 @@
 @z
 
 @x
-    <title>Contents of Procps</title>
+    <title>Contents of Procps-ng</title>
 @y
-    <title>&ContentsOf1;Procps&ContentsOf2;</title>
+    <title>&ContentsOf1;Procps-ng&ContentsOf2;</title>
 @z
 
 @x
@@ -90,13 +98,13 @@
 @z
 
 @x
-        <seg>free, pgrep, pkill, pmap, ps, pwdx, skill, slabtop, snice,
-        sysctl, tload, top, uptime, vmstat, w, and watch</seg>
-        <seg>libproc.so</seg>
+        <seg>free, pgrep, pkill, pmap, ps, pwdx, slabtop, 
+        sysctl, tload, top, uptime, vmstat, w, and, watch</seg>
+        <seg>libprocps.so</seg>
 @y
-        <seg>free, pgrep, pkill, pmap, ps, pwdx, skill, slabtop, snice,
+        <seg>free, pgrep, pkill, pmap, ps, pwdx, slabtop, 
         sysctl, tload, top, uptime, vmstat, w, watch</seg>
-        <seg>libproc.so</seg>
+        <seg>libprocps.so</seg>
 @z
 
 @x
@@ -154,28 +162,11 @@
           </para>
 @z
 
-@x skill
-          <para>Sends signals to processes matching the given criteria</para>
-@y
-          <para>
-          指定された条件に合致するプロセスに対してシグナルを送信します。
-          </para>
-@z
-
 @x slabtop
           <para>Displays detailed kernel slap cache information in real time</para>
 @y
           <para>
           リアルタイムにカーネルのスラブキャッシュ (slab cache) 情報を詳細に示します。
-          </para>
-@z
-
-@x snice
-          <para>Changes the scheduling priority of processes matching the given
-          criteria</para>
-@y
-          <para>
-          指定された条件に合致するプロセスのスケジュール優先度 (scheduleing priority) を表示します。
           </para>
 @z
 

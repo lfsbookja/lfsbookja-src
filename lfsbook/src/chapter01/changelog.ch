@@ -48,6 +48,42 @@
 @z
 
 @x
+      <para>2013-01-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.7.4.  Fixes
+          <ulink url="&lfs-ticket-root;3273">#3273</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.7.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3273">#3273</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-01-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Procps-ng-3.3.6.  Fixes
+          <ulink url="&lfs-ticket-root;3095">#3095</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Procps-ng-3.3.6 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3095">#3095</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-01-20</para>
       <itemizedlist>
         <listitem>

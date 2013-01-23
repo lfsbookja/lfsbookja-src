@@ -316,9 +316,9 @@
          Gzip, Make, Sed, Texinfo, Util-linux</seg>
 @z
 @x
-          <seg>Procps,Psmisc</seg>
+          <seg>Procps-ng,Psmisc</seg>
 @y
-          <seg>Procps,Psmisc</seg>
+          <seg>Procps-ng,Psmisc</seg>
 @z
 @x
           <seg>None</seg>
@@ -889,9 +889,9 @@ Typo ですが日本語訳には影響ありません。
          Make, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Perl and Procps</seg>
+          <seg>Perl and Procps-ng</seg>
 @y
-          <seg>Perl, Procps</seg>
+          <seg>Perl, Procps-ng</seg>
 @z
 @x
           <seg>None</seg>
@@ -1012,10 +1012,10 @@ Typo ですが日本語訳には影響ありません。
           <seg>テストスイートはありません</seg>
 @z
 @x
-          <seg>Bash, GRUB, Inetutils, Less, Procps, Psmisc, Readline, Texinfo,
+          <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline, Texinfo,
           Util-linux, and Vim</seg>
 @y
-          <seg>Bash, GRUB, Inetutils, Less, Procps, Psmisc, Readline, Texinfo,
+          <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline, Texinfo,
           Util-linux, Vim</seg>
 @z
 @x
@@ -1055,9 +1055,9 @@ Typo ですが日本語訳には影響ありません。
          Groff, Make, Sed, Zlib</seg>
 @z
 @x
-          <seg>Iana-Etc and Procps</seg>
+          <seg>Iana-Etc and Procps-ng</seg>
 @y
-          <seg>Iana-Etc, Procps</seg>
+          <seg>Iana-Etc, Procps-ng</seg>
 @z
 @x
           <seg>Autoconf</seg>
@@ -1117,15 +1117,10 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x Procps
+@x Procps-ng
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, and Ncurses</seg>
 @y
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Make, Ncurses</seg>
-@z
-@x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
 @z
 @x
           <seg>None</seg>
