@@ -48,6 +48,41 @@
 @z
 
 @x
+      <para>2013-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove bashisms from init-functions 
+          file in the boot scripts. </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプト内の init-functions において bash 互換性を改善。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to e2fsprogs-1.42.7.  Fixes
+          <ulink url="&lfs-ticket-root;3274">#3274</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.42.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3274">#3274</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-01-22</para>
       <itemizedlist>
         <listitem>
