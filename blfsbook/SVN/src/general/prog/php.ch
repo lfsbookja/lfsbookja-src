@@ -479,11 +479,11 @@
 @z
 
 @x
-      <para><parameter>--disable-libxml</parameter>: This parameter
+      <para><option>--disable-libxml</option>: This option
       allows building PHP without <application>libxml2</application>
       installed.</para>
 @y
-      <para><parameter>--disable-libxml</parameter>: This parameter
+      <para><option>--disable-libxml</option>: This option
       allows building PHP without <application>libxml2</application>
       installed.</para>
 @z

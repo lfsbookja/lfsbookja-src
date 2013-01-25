@@ -79,6 +79,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>,
@@ -88,6 +89,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>,
@@ -139,14 +141,6 @@
 @y
       <option>--enable-shared</option>:
       このスイッチは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
-@z
-
-@x
-      <option>--enable-pthread</option>: This switch enables linking of the
-      threading library into the <application>Ruby</application> build.
-@y
-      <option>--enable-pthread</option>:
-      このスイッチはスレッドライブラリをビルドします。
 @z
 
 @x

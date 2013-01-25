@@ -274,9 +274,9 @@
 @z
 
 @x
-     This package does not have working testsuite.
+     This package does not have a working testsuite.
 @y
-     This package does not have working testsuite.
+     This package does not have a working testsuite.
 @z
 
 @x

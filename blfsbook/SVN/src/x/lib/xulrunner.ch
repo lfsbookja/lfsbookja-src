@@ -42,25 +42,25 @@
 @x
           Download (HTTP): <ulink url="&xulrunner-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&xulrunner-download-http;"/>
+          &Download; (HTTP): <ulink url="&xulrunner-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&xulrunner-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&xulrunner-download-ftp;"/>
+          &Download; (FTP): <ulink url="&xulrunner-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &xulrunner-md5sum;
 @y
-          Download MD5 sum: &xulrunner-md5sum;
+          &Download; MD5 sum: &xulrunner-md5sum;
 @z
 
 @x
           Download size: &xulrunner-size;
 @y
-          Download size: &xulrunner-size;
+          &DownloadSize;: &xulrunner-size;
 @z
 
 @x
@@ -87,7 +87,7 @@
       <xref linkend="alsa-lib"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="zip"/> and
-      <xref linkend="unzip"/>.
+      <xref linkend="unzip"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -102,14 +102,22 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="yasm"/> or <xref linkend="libvpx"/>
-      (to allow <application>Xulrunner</application> to play webm videos).
+      <xref linkend="libevent"/>,
+      <xref linkend="libvpx"/>,
+      <xref linkend="nspr"/>,
+      <xref linkend="nss"/>,
+      <xref linkend="sqlite"/> and
+      <xref linkend="yasm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="yasm"/> または <xref linkend="libvpx"/>
-      (to allow <application>Xulrunner</application> to play webm videos).
+      <xref linkend="libevent"/>,
+      <xref linkend="libvpx"/>,
+      <xref linkend="nspr"/>,
+      <xref linkend="nss"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="yasm"/>
     </para>
 @z
 
@@ -117,39 +125,27 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="startup-notification"/>,
-      <xref linkend="sqlite"/>,
-      <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
-      <xref linkend="libevent"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for
-      integration with the old version of <application>Gnome</application>),
+      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
+      (for integration with the old version of <application>GNOME</application>),
+      <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
-      <xref linkend="nspr"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="wireless_tools"/>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
-      the jemalloc code) and
-      <xref linkend="wget"/>
+      <xref linkend="startup-notification"/>,
+      <xref linkend="wget"/> and
+      <xref linkend="wireless_tools"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="startup-notification"/>,
-      <xref linkend="sqlite"/>,
-      <ulink url="http://sourceforge.net/projects/hunspell/">Hunspell</ulink>,
-      <xref linkend="libevent"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/> (for
-      integration with the old version of <application>Gnome</application>),
+      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
+      (for integration with the old version of <application>GNOME</application>),
+      <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
-      <xref linkend="nspr"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="wireless_tools"/>,
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink> (only for testing
-      the jemalloc code) and
-      <xref linkend="wget"/>
+      <xref linkend="startup-notification"/>,
+      <xref linkend="wget"/> and
+      <xref linkend="wireless_tools"/>
     </para>
 @z
 
@@ -221,13 +217,13 @@
 @z
 
 @x
-      <command>ln -sv ../mozilla/plugins ...</command>: Some packages will
+      <command>ln -sfv ../mozilla/plugins ...</command>: Some packages will
       install browser plugins into
       <filename class="directory">/usr/lib/mozilla/plugins</filename>.
       Creating this symlink <application>Xulrunner</application> keeps
       additional plugins in a common directory.
 @y
-      <command>ln -sv ../mozilla/plugins ...</command>: Some packages will
+      <command>ln -sfv ../mozilla/plugins ...</command>: Some packages will
       install browser plugins into
       <filename class="directory">/usr/lib/mozilla/plugins</filename>.
       Creating this symlink <application>Xulrunner</application> keeps
@@ -235,25 +231,25 @@
 @z
 
 @x
-      <command>for library in
-      /usr/lib/xulrunner-&xulrunner-version;/*.so; do ln -sfv $library /usr/lib;
-      done</command>: The libraries shipped with this package are installed into
+      <command>for library in libmozalloc.so libmozjs.so libxpcom.so libxul.so ...
+      </command>: The libraries shipped with this package are installed into
       <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make
       relative symbolic links to the shared libraries from
-      <filename class="directory">/usr/lib</filename>.  Debug versions of some,
-      but not all, of these libraries can also be found in
- <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib</filename>.
+      <filename class="directory">/usr/lib</filename>. They will also replace duplicate
+      libraries that are installed in
+      <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib</filename>
+      with symlinks in order to save some space.
 @y
-      <command>for library in
-      /usr/lib/xulrunner-&xulrunner-version;/*.so; do ln -sfv $library /usr/lib;
-      done</command>: The libraries shipped with this package are installed into
+      <command>for library in libmozalloc.so libmozjs.so libxpcom.so libxul.so ...
+      </command>: The libraries shipped with this package are installed into
       <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make
       relative symbolic links to the shared libraries from
-      <filename class="directory">/usr/lib</filename>.  Debug versions of some,
-      but not all, of these libraries can also be found in
- <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib</filename>.
+      <filename class="directory">/usr/lib</filename>. They will also replace duplicate
+      libraries that are installed in
+      <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib</filename>
+      with symlinks in order to save some space.
 @z
 
 @x
@@ -273,22 +269,34 @@
 @z
 
 @x
-        <seg>xulrunner</seg>
-        <seg>Numerous libraries, browser components, plugins, extensions, and
-        helper modules installed in <filename
-        class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename></seg>
-        <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
-        /usr/lib/xulrunner-&xulrunner-version;,
-        /usr/lib/xulrunner-devel-&xulrunner-version;, and
-        /usr/share/idl/xulrunner-&xulrunner-version;</seg>
+        <seg>
+          xulrunner
+        </seg>
+        <seg>
+          Numerous libraries, browser components, plugins, extensions, and
+          helper modules installed in <filename
+          class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
+        </seg>
+        <seg>
+          /usr/include/xulrunner-&xulrunner-version;,
+          /usr/lib/xulrunner-&xulrunner-version;,
+          /usr/lib/xulrunner-devel-&xulrunner-version; and
+          /usr/share/idl/xulrunner-&xulrunner-version;
+        </seg>
 @y
-        <seg>xulrunner</seg>
-        <seg><filename
-        class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename> にインストールされる数々のライブラリ、ブラウザコンポーネント、プラグイン、機能拡張モジュール、ヘルパーモジュール</seg>
-        <seg>/etc/gre.d, /usr/include/xulrunner-&xulrunner-version;,
-        /usr/lib/xulrunner-&xulrunner-version;,
-        /usr/lib/xulrunner-devel-&xulrunner-version;,
-        /usr/share/idl/xulrunner-&xulrunner-version;</seg>
+        <seg>
+          xulrunner
+        </seg>
+        <seg>
+          <filename
+          class="directory">/usr/lib/xulrunner-&xulrunner-version;  にインストールされる数々のライブラリ、ブラウザコンポーネント、プラグイン、機能拡張モジュール、ヘルパーモジュール</filename>
+        </seg>
+        <seg>
+          /usr/include/xulrunner-&xulrunner-version;,
+          /usr/lib/xulrunner-&xulrunner-version;,
+          /usr/lib/xulrunner-devel-&xulrunner-version;,
+          /usr/share/idl/xulrunner-&xulrunner-version;
+        </seg>
 @z
 
 @x
@@ -298,7 +306,9 @@
 @z
 
 @x xulrunner
-            is a shell script, useful for identifying the version installed.
+            is a shell script used for identifying the installed version
+            and running <application>Xulrunner</application> applications.
 @y
-            is a shell script, useful for identifying the version installed.
+            is a shell script used for identifying the installed version
+            and running <application>Xulrunner</application> applications.
 @z

@@ -106,7 +106,7 @@
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>
+      <xref linkend="db"/>,
       <xref linkend="openssl"/>,
       <xref linkend="sqlite"/> and
       <xref linkend="tk"/>
@@ -114,7 +114,7 @@
 @y
     <bridgehead renderas="sect4">&Optional; (追加モジュール用)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>
+      <xref linkend="db"/>,
       <xref linkend="openssl"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="tk"/>

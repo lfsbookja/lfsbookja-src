@@ -200,6 +200,7 @@
     <xref linkend="libxml2"/>,
     <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>, and
     <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
+    (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
     </para>
 @y
     <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
@@ -222,6 +223,7 @@
     <xref linkend="libxml2"/>,
     <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>, and
     <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
+    (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
     </para>
 @z
 

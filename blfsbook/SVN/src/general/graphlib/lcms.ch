@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to little cms</title>
+    <title>Introduction to Little CMS</title>
 @y
-    <title>&IntroductionTo1;little cms&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Little CMS&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>little cms</application> library is used by other
+    <para>The <application>Little CMS</application> library is used by other
     programs to provide color management facilities.</para>
 @y
     <para>
-    <application>little cms</application> ライブラリは色に関する制御を管理して他のプログラムに機能を提供します。
+    <application>Little CMS</application> ライブラリは色に関する制御を管理して他のプログラムに機能を提供します。
     </para>
 @z
 
@@ -71,9 +71,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">little cms Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Little CMS Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;little cms&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Little CMS&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -99,17 +99,17 @@
 @z
 
 @x
-    <title>Installation of little cms</title>
+    <title>Installation of Little CMS</title>
 @y
-    <title>&InstallationOf1;little cms&InstallationOf2;</title>
+    <title>&InstallationOf1;Little CMS&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>little cms</application> by running the
+    <para>Install <application>Little CMS</application> by running the
     following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>little cms</application> をビルドします。
+    以下のコマンドを実行して <application>Little CMS</application> をビルドします。
     </para>
 @z
 
@@ -143,16 +143,6 @@
     <para>
     <option>--with-python</option>:
     <application>Python</application> と <application>SWIG</application> をインストールしている場合に指定します。
-    </para>
-@z
-
-@x
-    <para><option>--disable-static</option>: Prevent static libraries
-    being built and installed.</para>
-@y
-    <para>
-    <option>--disable-static</option>:
-    スタティックライブラリのビルドとインストールを行わないようにします。
     </para>
 @z
 

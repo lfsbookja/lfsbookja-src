@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY tcl-buildsize     "48 MB (includes documentation installation)">
+  <!ENTITY tcl-buildsize     "80 MB (includes documentation installation)">
 @y
-  <!ENTITY tcl-buildsize     "48 MB (ドキュメントのインストールを含む)">
+  <!ENTITY tcl-buildsize     "80 MB (ドキュメントのインストールを含む)">
 @z
 
 @x
@@ -169,11 +169,15 @@
 @z
 
 @x
-      <option>--enable-threads</option>: This switch forces the package
-      to build with threads support.
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: This switch is used to enable 64 bit
+      support in <application>Tcl</application> on 64 bit operating
+      systems.
 @y
-      <option>--enable-threads</option>:
-      このパラメーターは、スレッド機能のサポートを含めて本パッケージをビルドすることを指示します。
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: This switch is used to enable 64 bit
+      support in <application>Tcl</application> on 64 bit operating
+      systems.
 @z
 
 @x
@@ -236,21 +240,35 @@
         </seg>
         <seg>
           /usr/lib/tcl8,
+          /usr/lib/thread2.7.0,
+          /usr/lib/tdbcodbc1.0.0,
+          /usr/lib/tdbc1.0.0,
+          /usr/lib/sqlite3.7.15.1,
+          /usr/lib/tdbcpostgres1.0.0,
           /usr/lib/tcl&tcl-ver;,
-          /usr/share/man/mann and optionally
+          /usr/lib/tdbcmysql1.0.0,
+          /usr/lib/itcl4.0.0,
+          /usr/share/man/mann and optionaly
           /usr/share/doc/&tcl-version;
         </seg>
 @y
         <seg>
-          tclsh, tclsh&tcl-ver;
+          tclsh and tclsh&tcl-ver;
         </seg>
         <seg>
           libtcl&tcl-ver;.so, libtclstub&tcl-ver;.a
         </seg>
         <seg>
           /usr/lib/tcl8,
+          /usr/lib/thread2.7.0,
+          /usr/lib/tdbcodbc1.0.0,
+          /usr/lib/tdbc1.0.0,
+          /usr/lib/sqlite3.7.15.1,
+          /usr/lib/tdbcpostgres1.0.0,
           /usr/lib/tcl&tcl-ver;,
-          /usr/share/man/mann また任意として
+          /usr/lib/tdbcmysql1.0.0,
+          /usr/lib/itcl4.0.0,
+          /usr/share/man/mann and optionaly
           /usr/share/doc/&tcl-version;
         </seg>
 @z

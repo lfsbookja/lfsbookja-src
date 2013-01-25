@@ -27,13 +27,13 @@
 
 @x
       The <application>Python 2</application> package contains the
-      <application>Python</application> development environment. This is useful
+      <application>Python</application> development environment. It is useful
       for object-oriented programming, writing scripts, prototyping large
       programs or developing entire applications. This version is for backward
       compatibility with other dependent packages.
 @y
       The <application>Python 2</application> package contains the
-      <application>Python</application> development environment. This is useful
+      <application>Python</application> development environment. It is useful
       for object-oriented programming, writing scripts, prototyping large
       programs or developing entire applications. This version is for backward
       compatibility with other dependent packages.
@@ -120,50 +120,32 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <!-- <xref linkend="pth"/> can only be used if you've overwritten glibc's
-      libpthread. -->
-      <xref linkend="libffi"/> and <xref linkend="pkgconfig"/>
-      (<command>configure</command> uses <command>pkgconfig</command> to find
-      <application>libffi</application>. There is a circular dependency here:
-      <application>Pkgconfig</application> requires
-      <application>Glib</application> which requires
-      <application>Python 2</application>),
-      <!-- gcc's libffi does not install a pkgconfig file -->
-      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink> (to create the docs),
-      <xref linkend="bluez"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="tk"/> (there is a circular dependency with the
-      <application>Tk</application> package as it requires Xorg to be installed
-      but parts of Xorg depend on <application>Python</application>),
-      <!--<xref linkend="db"/> and-->
-      <ulink
-      url="http://www.oracle.com/technetwork/products/berkeleydb/downloads/">BerkeleyDB</ulink>
-      (only versions up to 4.8), and
-      <xref linkend="sqlite"/>.
+      <xref linkend="bluez"/> and
+      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <!-- <xref linkend="pth"/> can only be used if you've overwritten glibc's
-      libpthread. -->
-      <xref linkend="libffi"/> and <xref linkend="pkgconfig"/>
-      (<command>configure</command> uses <command>pkgconfig</command> to find
-      <application>libffi</application>. There is a circular dependency here:
-      <application>Pkgconfig</application> requires
-      <application>Glib</application> which requires
-      <application>Python 2</application>),
-      <!-- gcc's libffi does not install a pkgconfig file -->
-      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink> (to create the docs),
       <xref linkend="bluez"/>,
+      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
+    <para role="optional">
+      <xref linkend="db"/>,
       <xref linkend="openssl"/>,
-      <xref linkend="tk"/> (there is a circular dependency with the
-      <application>Tk</application> package as it requires Xorg to be installed
-      but parts of Xorg depend on <application>Python</application>),
-      <!--<xref linkend="db"/> and-->
-      <ulink
-      url="http://www.oracle.com/technetwork/products/berkeleydb/downloads/">BerkeleyDB</ulink>
-      (only versions up to 4.8), and
-      <xref linkend="sqlite"/>.
+      <xref linkend="sqlite"/> and
+      <xref linkend="tk"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional; (For Additional Modules)</bridgehead>
+    <para role="optional">
+      <xref linkend="db"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="tk"/>
     </para>
 @z
 
@@ -243,31 +225,23 @@
 @z
 
 @x
-      <option>--with-system-ffi</option>: If you have installed
-      <application>Libffi</application> and
-      <application>Pkgconfig</application>, add this option to compile
-      <application>Python</application>'s _ctypes module using the system
-      installed <application>Libffi</application>. Otherwise
-      <application>Python</application> will compile its own copy of
-      <application>Libffi</application>.
+      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
+      used to fix a build problem with the <application>GDBM</application>
+      library.
 @y
-      <option>--with-system-ffi</option>: If you have installed
-      <application>Libffi</application> and
-      <application>Pkgconfig</application>, add this option to compile
-      <application>Python</application>'s _ctypes module using the system
-      installed <application>Libffi</application>. Otherwise
-      <application>Python</application> will compile its own copy of
-      <application>Libffi</application>.
+      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
+      used to fix a build problem with the <application>GDBM</application>
+      library.
 @z
 
 @x
-      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
-      used to fix a build problem with the <application>GDBM</application>
-      library.
+      <option>--with-system-ffi</option>: This switch enables linking against
+      system version of <application>libffi</application>. Remove if you have
+      not installed recommended dependency <xref linkend="libffi"/>.
 @y
-      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
-      used to fix a build problem with the <application>GDBM</application>
-      library.
+      <option>--with-system-ffi</option>: This switch enables linking against
+      system version of <application>libffi</application>. Remove if you have
+      not installed recommended dependency <xref linkend="libffi"/>.
 @z
 
 @x

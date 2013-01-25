@@ -121,10 +121,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libtirpc"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libtirpc"/></para>
 @z
 
 @x
@@ -134,11 +132,12 @@
 @z
 
 @x
-      Glibc-2.14 and later do not install NIS and RPC related headers by
-      default. If needed, install them here:
+      Glibc 2.14 and later does not install NIS and RPC related headers by
+      default. If needed, install them by running the following command
+      as the <systemitem class="username">root</systemitem> user:
 @y
       Glibc-2.14 以降において NIS および RPC 関連のヘッダーファイルは、デフォルトではインストールされなくなりました。
-      必要に応じてそれらをインストールします。
+      必要であれば <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してインストールします。
 @z
 
 @x

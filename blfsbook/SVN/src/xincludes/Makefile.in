@@ -153,9 +153,8 @@ CHANGE_FILES = \
 	gnome2.ch \
 	gnome-old-sysconfdir.ch \
 	gnome-old-prefix.ch \
+	gsettings-destdir.ch \
 	gtk-doc-rebuild.ch \
-	kde-apidocs.ch \
-	kde-sysconfdir.ch \
 	lib-config.ch \
 	scrollkeeper-dir.ch \
 	static-libraries.ch \
@@ -361,9 +360,8 @@ ctie:
 gnome-mandir.xml:         $(BOOKdir)/$@ $(srcdir)/gnome-mandir.ch
 gnome-prefix.xml:         $(BOOKdir)/$@ $(srcdir)/gnome-prefix.ch
 gnome-sysconfdir.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-sysconfdir.ch
+gsettings-destdir.xml:    $(BOOKdir)/$@ $(srcdir)/gsettings-destdir.ch
 gtk-doc-rebuild.xml:      $(BOOKdir)/$@ $(srcdir)/gtk-doc-rebuild.ch
-kde-apidocs.xml:          $(BOOKdir)/$@ $(srcdir)/kde-apidocs.ch
-kde-sysconfdir.xml:       $(BOOKdir)/$@ $(srcdir)/kde-sysconfdir.ch
 lib-config.xml:           $(BOOKdir)/$@ $(srcdir)/lib-config.ch
 scrollkeeper-dir.xml:     $(BOOKdir)/$@ $(srcdir)/scrollkeeper-dir.ch
 use-unzip.xml:            $(BOOKdir)/$@ $(srcdir)/use-unzip.ch

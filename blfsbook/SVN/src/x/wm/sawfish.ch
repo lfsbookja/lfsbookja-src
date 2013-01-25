@@ -25,13 +25,13 @@
     window decorations are configurable and all user-interface policy is
     controlled through the extension language.</para>
 @y
-<para>
-<application>sawfish</application> はウィンドウマネージャーです。
-
-This is useful for organizing and displaying windows where all
-window decorations are configurable and all user-interface policy is
-controlled through the extension language.
-</para>
+    <para>
+    <application>sawfish</application> はウィンドウマネージャーです。
+    
+    This is useful for organizing and displaying windows where all
+    window decorations are configurable and all user-interface policy is
+    controlled through the extension language.
+    </para>
 @z
 
 @x
@@ -86,11 +86,13 @@ controlled through the extension language.
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
        <xref linkend="rep-gtk"/> and
+       <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-       <xref linkend="rep-gtk"/>
+       <xref linkend="rep-gtk"/>,
+       <xref linkend="which"/>
     </para>
 @z
 

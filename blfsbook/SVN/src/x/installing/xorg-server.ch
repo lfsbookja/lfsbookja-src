@@ -69,6 +69,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Optional patch:
+@y
+          任意のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Xorg Server Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Xorg サーバー&Dependencies2;</bridgehead>
@@ -128,8 +140,7 @@
       If you have downloaded the optional patch, apply it by running
       the following command:
 @y
-      If you have downloaded the optional patch, apply it by running
-      the following command:
+      任意のパッチをダウンロードしている場合は、以下のコマンドを実行して適用します。
 @z
 
 @x

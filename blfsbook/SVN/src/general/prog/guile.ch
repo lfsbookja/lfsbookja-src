@@ -80,7 +80,8 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="pkgconfig"/>,
-      <xref linkend="gc"/> and 
+      <xref linkend="gc"/>,
+      <xref linkend="libffi"/>, and 
       <xref linkend="libunistring"/>
     </para>
 @y
@@ -88,6 +89,7 @@
     <para role="required">
       <xref linkend="pkgconfig"/>,
       <xref linkend="gc"/>,
+      <xref linkend="libffi"/>,
       <xref linkend="libunistring"/>
     </para>
 @z

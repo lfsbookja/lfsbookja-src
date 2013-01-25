@@ -93,7 +93,7 @@
     <para role="optional">
       <xref linkend="alsa-lib"/>,
       <xref linkend="check"/>,
-      <xref linkend="cups"/>,
+      <!-- <xref linkend="cups"/>, -->
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="libsndfile"/> and
       <xref linkend="libusb-compat"/>
@@ -103,7 +103,7 @@
     <para role="optional">
       <xref linkend="alsa-lib"/>,
       <xref linkend="check"/>,
-      <xref linkend="cups"/>,
+      <!-- <xref linkend="cups"/>, -->
       <xref linkend="gst-plugins-base"/>,
       <xref linkend="libsndfile"/>,
       <xref linkend="libusb-compat"/>
@@ -206,109 +206,85 @@
 @z
 
 @x
-      <option>--enable-bccmd</option>: This switch enables building of the BCCMD
+      <parameter>--enable-bccmd</parameter>: This switch enables building of the BCCMD
       interface utility. 
 @y
-      <option>--enable-bccmd</option>: This switch enables building of the BCCMD
+      <parameter>--enable-bccmd</parameter>: This switch enables building of the BCCMD
       interface utility. 
 @z
 
 @x
-      <option>--enable-dfutool</option>: This switch enables building of the DFU
+      <parameter>--enable-dfutool</parameter>: This switch enables building of the DFU
       firmware upgrade utility. 
 @y
-      <option>--enable-dfutool</option>: This switch enables building of the DFU
+      <parameter>--enable-dfutool</parameter>: This switch enables building of the DFU
       firmware upgrade utility. 
 @z
 
 @x
-      <option>--enable-dund</option>: This switch enables building of the DUN daemon. 
+      <parameter>--enable-dund</parameter>: This switch enables building of the DUN daemon. 
 @y
-      <option>--enable-dund</option>: This switch enables building of the DUN daemon. 
+      <parameter>--enable-dund</parameter>: This switch enables building of the DUN daemon. 
 @z
 
 @x
-      <option>--enable-hid2hci</option>: This switch enables building of the HID
+      <parameter>--enable-hid2hci</parameter>: This switch enables building of the HID
       mode switching utility. 
 @y
-      <option>--enable-hid2hci</option>: This switch enables building of the HID
+      <parameter>--enable-hid2hci</parameter>: This switch enables building of the HID
       mode switching utility. 
 @z
 
 @x
-      <option>--enable-hidd</option>: This switch enables building of the HID daemon. 
+      <parameter>--enable-hidd</parameter>: This switch enables building of the HID daemon. 
 @y
-      <option>--enable-hidd</option>: This switch enables building of the HID daemon. 
+      <parameter>--enable-hidd</parameter>: This switch enables building of the HID daemon. 
 @z
 
 @x
-      <option>--enable-pand</option>: This switch enables building of the PAN daemon. 
+      <parameter>--enable-pand</parameter>: This switch enables building of the PAN daemon. 
 @y
-      <option>--enable-pand</option>: This switch enables building of the PAN daemon. 
+      <parameter>--enable-pand</parameter>: This switch enables building of the PAN daemon. 
 @z
 
 @x
-      <option>--enable-tools</option>: This switch enables building of the Bluetooth
+      <parameter>--enable-tools</parameter>: This switch enables building of the Bluetooth
       utilities. 
 @y
-      <option>--enable-tools</option>: This switch enables building of the Bluetooth
+      <parameter>--enable-tools</parameter>: This switch enables building of the Bluetooth
       utilities. 
 @z
 
 @x
-      <option>--enable-wiimote</option>: This switch enables building of the Wii
+      <parameter>--enable-wiimote</parameter>: This switch enables building of the Wii
       Remote plugin. 
 @y
-      <option>--enable-wiimote</option>: This switch enables building of the Wii
+      <parameter>--enable-wiimote</parameter>: This switch enables building of the Wii
       Remote plugin. 
 @z
 
 @x
-      <option>--disable-test</option>: This switch disables installation of the
+      <parameter>--disable-test</parameter>: This switch disables installation of the
       test programs. 
 @y
-      <option>--disable-test</option>: This switch disables installation of the
+      <parameter>--disable-test</parameter>: This switch disables installation of the
       test programs. 
 @z
 
 @x
-      <option>--without-systemdunitdir</option>: This switch disables installation
+      <parameter>--without-systemdunitdir</parameter>: This switch disables installation
       of the systemd units. 
 @y
-      <option>--without-systemdunitdir</option>: This switch disables installation
+      <parameter>--without-systemdunitdir</parameter>: This switch disables installation
       of the systemd units. 
 @z
 
 @x
-      <option>--enable-alsa</option>: This switch enables ALSA support. Use if you
-      have <xref linkend="alsa-lib"/> installed. 
+      <option>--enable-cups</option>: This switch enables CUPS backend support. Note
+      that CUPS does not need to be installed for this support.
 @y
-      <option>--enable-alsa</option>: This switch enables ALSA support. Use if you
-      have <xref linkend="alsa-lib"/> installed. 
-@z
-
-@x
-      <option>--enable-cups</option>: This switch enables CUPS backend support. Use
-      if you have <xref linkend="cups"/> installed. 
-@y
-      <option>--enable-cups</option>: This switch enables CUPS backend support. Use
-      if you have <xref linkend="cups"/> installed. 
-@z
-
-@x
-      <option>--enable-gstreamer</option>: This switch enables GStreamer support. Use
-      if you have <xref linkend="gst-plugins-base"/> installed. 
-@y
-      <option>--enable-gstreamer</option>: This switch enables GStreamer support. Use
-      if you have <xref linkend="gst-plugins-base"/> installed. 
-@z
-
-@x
-      <option>--enable-usb</option>: This switch enables USB support. Use if you have
-      <xref linkend="libusb-compat"/> installed. 
-@y
-      <option>--enable-usb</option>: This switch enables USB support. Use if you have
-      <xref linkend="libusb-compat"/> installed. 
+      <option>--enable-cups</option>: This switch enables CUPS backend support. Note
+      that CUPS does not need to be installed for this support.
 @z
 
 @x

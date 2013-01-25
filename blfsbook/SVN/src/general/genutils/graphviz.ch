@@ -151,7 +151,7 @@
       <ulink url="http://www.iolanguage.com/about/">Io</ulink>,
       <ulink url="http://www.lua.org/">Lua</ulink>,
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://caml.inria.fr/ocaml/index.en.html">Objective Caml</ulink>,
+      <ulink url="http://ocaml.org/">OCaml</ulink>,
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
       <ulink url="http://www.r-project.org/">R</ulink>,
@@ -160,7 +160,7 @@
       <xref linkend="tk"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional (To Build Language Bindings)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (To Build Language Bindings)</bridgehead>
     <para role="optional">
       <ulink url="http://www.swig.org/">SWIG</ulink>
       (<application>SWIG</application> must be installed or no bindings will be built),
@@ -169,7 +169,7 @@
       <ulink url="http://www.iolanguage.com/about/">Io</ulink>,
       <ulink url="http://www.lua.org/">Lua</ulink>,
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://caml.inria.fr/ocaml/index.en.html">Objective Caml</ulink>,
+      <ulink url="http://ocaml.org/">OCaml</ulink>,
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
       <ulink url="http://www.r-project.org/">R</ulink>,
@@ -213,13 +213,13 @@
 @x
       If desired, create a symbolic link in the system documents directory
       to the documentation installed in
-      <filename class='directory'>/usr/share/graphviz/doc</filename> using the
+      <filename class="directory">/usr/share/graphviz/doc</filename> using the
       following command as the <systemitem class="username">root</systemitem>
       user:
 @y
       If desired, create a symbolic link in the system documents directory
       to the documentation installed in
-      <filename class='directory'>/usr/share/graphviz/doc</filename> using the
+      <filename class="directory">/usr/share/graphviz/doc</filename> using the
       following command as the <systemitem class="username">root</systemitem>
       user:
 @z
@@ -251,7 +251,7 @@
         <command>dot -c</command> (as the
         <systemitem class="username">root</systemitem> user) to update the
         <filename>config</filename> file in
-        <filename class='directory'>/usr/lib/graphviz</filename>.
+        <filename class="directory">/usr/lib/graphviz</filename>.
 @y
         There are no specific configuration requirements for
         <application>Graphviz</application>. You may consider installing the
@@ -261,7 +261,7 @@
         <command>dot -c</command> (as the
         <systemitem class="username">root</systemitem> user) to update the
         <filename>config</filename> file in
-        <filename class='directory'>/usr/lib/graphviz</filename>.
+        <filename class="directory">/usr/lib/graphviz</filename>.
 @z
 
 @x
@@ -295,7 +295,8 @@
         <seg>
           /usr/include/graphviz,
           /usr/lib/graphviz and
-          /usr/share/graphviz</seg>
+          /usr/share/graphviz
+        </seg>
 @y
         <seg>
           acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
@@ -311,7 +312,8 @@
         <seg>
           /usr/include/graphviz,
           /usr/lib/graphviz,
-          /usr/share/graphviz</seg>
+          /usr/share/graphviz
+        </seg>
 @z
 
 @x

@@ -172,14 +172,9 @@
 @z
 
 @x
-        The test suite requires the optional <application>pytest</application>
-        package.  If installed, it is run by changing to the 
-        <filename class='directory'>test</filename> directory and running 
-        <userinput>py.test</userinput>.
+        The test suite must be run after the package is installed.
 @y
-        テストスイートを実行するには、任意の依存パッケージ <application>pytest</application> が必要です。
-        既にインストールしていれば <filename
-        class='directory'>test</filename> ディレクトリに移動し、<userinput>py.test</userinput> を実行します。
+        テストスイートは本パッケージをインストールした後でないと実行することはできません。
 @z
 
 @x

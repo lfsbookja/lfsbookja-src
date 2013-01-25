@@ -124,11 +124,12 @@
 @z
 
 @x
-      <parameter>INIT_D_PATH=/tmp/init.d</parameter>: This parameter makes it
-      install its bootscript into <filename>/tmp/init.d</filename>.
+      <parameter>INIT_D_PATH=/tmp/init.d</parameter>: This parameter installs
+      the bootscript into <filename class="directory">/tmp/init.d</filename> as
+      a bootscript is not required.
 @y
       <parameter>INIT_D_PATH=/tmp/init.d</parameter>: 
-      このパラメーターは、ブートスクリプトを <filename>/tmp/init.d</filename> にインストールします。
+      このパラメーターは、ブートスクリプトを不要なものとして <filename>/tmp/init.d</filename> にインストールします。
 @z
 
 @x

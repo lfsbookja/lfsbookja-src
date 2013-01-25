@@ -14,9 +14,9 @@
 @z
 
 @x
-      <option>--disable-static</option>: This switch prevents 
+      <parameter>--disable-static</parameter>: This switch prevents 
       installation of static versions of the libraries.
 @y
-      <option>--disable-static</option>:
+      <parameter>--disable-static</parameter>:
       このスイッチはスタティックライブラリをインストールしないようにします。
 @z

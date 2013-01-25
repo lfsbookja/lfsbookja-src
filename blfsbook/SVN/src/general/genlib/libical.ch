@@ -77,19 +77,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="db"/></para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="db"/></para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libical"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libical"/></para>
 @z
 
 @x
@@ -120,22 +110,6 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--with-bdb4</option>: This option adds support for
-    <application>Berkeley DB 4.0</application>.</para>
-@y
-    <para>
-    <option>--with-bdb4</option>:
-    このオプションは <application>Berkeley DB 4.0</application> に対するサポート機能を追加します。
     </para>
 @z
 

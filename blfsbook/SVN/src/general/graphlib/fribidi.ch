@@ -73,6 +73,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="glib2"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="glib2"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -101,6 +113,30 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed -i ...</command>: These commands fix two header files if
+    <application>GLib-2</application> is linked into the build.</para>
+@y
+    <para><command>sed -i ...</command>:
+    これらのコマンドは <application>GLib-2</application> がリンクされる際に二つのヘッダーファイルを修正します。</para>
+@z
+
+@x
+    <para><option>--with-glib=yes</option>: Add this option to the
+    <command>configure</command> script so that the build will link against the
+    <application>GLib-2</application> library.</para>
+@y
+    <para><option>--with-glib=yes</option>:
+    <command>configure</command> スクリプトにこのオプションを追加することで <application>GLib-2</application> ライブラリへリンクしビルドします。
+    </para>
 @z
 
 @x
@@ -152,9 +188,8 @@
             <filename class="libraryfile">libfribidi</filename> library and
             can be used to convert a logical string to visual output.
 @y
-            is a command-line interface to the
-            <filename class="libraryfile">libfribidi</filename> library and
-            can be used to convert a logical string to visual output.
+            <filename class="libraryfile">libfribidi</filename> ライブラリへのコマンドラインインターフェース。
+            論理文字 (logical string) を視覚的に出力します。
 @z
 
 @x libfribidi.so
@@ -162,7 +197,5 @@
             url="http://www.unicode.org/reports/tr9/">Unicode
             Bidirectional Algorithm</ulink>.
 @y
-            contains functions used to implement the <ulink
-            url="http://www.unicode.org/reports/tr9/">Unicode
-            Bidirectional Algorithm</ulink>.
+            <ulink url="http://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム (Unicode Bidirectional Algorithm)</ulink> を実装するための関数を提供します。
 @z

@@ -75,11 +75,29 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">yasm Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;yasm&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="python2"/> or <xref linkend="python3"/>, and
+      <ulink url="http://cython.org/">Cython</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="python2"/> または <xref linkend="python3"/>,
+      <ulink url="http://cython.org/">Cython</ulink>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/yasm"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/yasm"/></para>
 @z
 
 @x

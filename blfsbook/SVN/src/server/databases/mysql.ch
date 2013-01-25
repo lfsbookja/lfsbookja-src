@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY mysql-buildsize     "932 MB (additional 170 MB to run the test suite)">
+  <!ENTITY mysql-buildsize     "760 MB (additional 170 MB to run the test suite)">
   <!ENTITY mysql-time          "4.0 SBU (Test suite is an additional 45 minutes, only partially CPU dependent)">
 @y
-  <!ENTITY mysql-buildsize     "932 MB (テストスイート実行時はさらに 170 MB)">
+  <!ENTITY mysql-buildsize     "760 MB (テストスイート実行時はさらに 170 MB)">
   <!ENTITY mysql-time          "4.0 SBU (テストスイート実行時はさらに 45 分; ただしある程度 CPU に依存)">
 @z
 
@@ -28,14 +28,12 @@
 @z
 
 @x
-    <para><application>MySQL</application> is a widely used and fast SQL
-    database server. It is a client/server implementation that consists of a
-    server daemon and many different client programs and libraries.</para>
+      <application>MySQL</application> is a widely used and fast SQL database
+      server. It is a client/server implementation that consists of a
+      server daemon and many different client programs and libraries.
 @y
-    <para>
-    <application>MySQL</application> は、広く活用されている高速な SQL データベースサーバーです。
-    このパッケージはクライアント/サーバーの各種モジュールにより構成されており、サーバーデーモンや数多くのクライアントプログラム、ライブラリが含まれます。
-    </para>
+      <application>MySQL</application> は、広く活用されている高速な SQL データベースサーバーです。
+      このパッケージはクライアント/サーバーの各種モジュールにより構成されており、サーバーデーモンや数多くのクライアントプログラム、ライブラリが含まれます。
 @z
 
 @x
@@ -45,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mysql-download-http;"/></para>
+          Download (HTTP): <ulink url="&mysql-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&mysql-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&mysql-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mysql-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mysql-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&mysql-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&mysql-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &mysql-md5sum;</para>
+          Download MD5 sum: &mysql-md5sum;
 @y
-        <para>&Download; MD5 sum: &mysql-md5sum;</para>
+          &Download; MD5 sum: &mysql-md5sum;
 @z
 
 @x
-        <para>Download size: &mysql-size;</para>
+          Download size: &mysql-size;
 @y
-        <para>&DownloadSize;: &mysql-size;</para>
+          &DownloadSize;: &mysql-size;
 @z
 
 @x
-        <para>Estimated disk space required: &mysql-buildsize;</para>
+          Estimated disk space required: &mysql-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &mysql-buildsize;</para>
+          &Estimateddiskspacerequired;: &mysql-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &mysql-time;</para>
+          Estimated build time: &mysql-time;
 @y
-        <para>&Estimatedbuildtime;: &mysql-time;</para>
+          &Estimatedbuildtime;: &mysql-time;
 @z
 
 @x
@@ -87,23 +85,15 @@
 @z
 
 @x
-        <para>Optional patch (required if building for Amarok): <ulink
+          Optional patch (recommended if building for Amarok):
 @y
-        <para>任意のパッチ (Amarok をビルドする場合に必要): <ulink
+          任意のパッチ (Amarok をビルドする場合に必要):
 @z
 
 @x
-        <para>Optional patch (required if building only the client): <ulink
+          Optional Documentation (see tip below):
 @y
-        <para>任意のパッチ (クライアントプログラムのみをビルドする場合に必要): <ulink
-@z
-
-@x
-        <para>Optional Documentation (see tip below):
-          <ulink url="http://dev.mysql.com/doc/"/>
-@y
-        <para>任意のドキュメント (後述の情報を参照のこと):
-          <ulink url="http://dev.mysql.com/doc/"/>
+          任意のパッチ (後述の情報を参照のこと):
 @z
 
 @x
@@ -114,18 +104,26 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="optional"><xref linkend="cmake"/></para>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="optional"><xref linkend="cmake"/></para>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="optional"><xref linkend="openssl"/></para>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/></para>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
@@ -153,173 +151,105 @@
 @z
 
 @x
-    <title>Building</title>
+      For security reasons, running the server as an unprivileged user
+      and group is strongly encouraged. Issue the following (as
+      <systemitem class="username">root</systemitem>) to create the
+      user and group:
 @y
-    <title>ビルド</title>
+      セキュリティ上の理由から、サーバープロセスは一般ユーザーおよびグループに起動することが強く推奨されています。
+      <systemitem class="username">root</systemitem> ユーザーとなって、ユーザーとグループを生成する以下のコマンドを実行します。
 @z
 
 @x
-    <para>For security reasons, running the server as an unprivileged user
-    and group is strongly encouraged. Issue the following (as
-    <systemitem class="username">root</systemitem>) to create the user and
-    group:</para>
+      If the MySQL server is not needed, it is possible to build only the
+      client libraries of MySQL. To do this you need to add
+      <parameter>-DWITHOUT_SERVER=ON</parameter> to the <command>cmake</command>
+      command below.
 @y
-    <para>
-    セキュリティ上の理由から、サーバープロセスは一般ユーザーおよびグループに起動することが強く推奨されています。
-    <systemitem class="username">root</systemitem> ユーザーとなって、ユーザーとグループを生成する以下のコマンドを実行します。
-    </para>
+      MySQL のサーバープログラムが不要である場合は、MySQL のクライアントプログラムのみをビルドすることも可能です。
+      クライアントプログラムのみとする場合は、これを行うための任意のパッチを適用した上で、cmake のオプション <parameter>-DWITHOUT_SERVER=ON</parameter> を追加します。
 @z
 
 @x
-    <para>If the MySQL server is not needed, it is possible to build only the
-    client libraries of MySQL. To do this you need to apply the optional patch,
-    use the cmake option <parameter>-DWITHOUT_SERVER=ON</parameter> and the
-    client-only installation instructions below.</para>
+      MySQL contains an embedded server library which can be enabled with
+      the cmake option <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>. By
+      default this server is built as a statically linked library,
+      <filename>libmysqld.a</filename>, but by applying the optional patch, a
+      shared version of this library can be built. The library is needed
+      by certain applications, such as <application>Amarok</application> and
+      we recommend use of the shared libraries.
 @y
-    <para>
-    MySQL のサーバープログラムが不要である場合は、MySQL のクライアントプログラムのみをビルドすることも可能です。
-    クライアントプログラムのみとする場合は、これを行うための任意のパッチを適用した上で、cmake のオプション <parameter>-DWITHOUT_SERVER=ON</parameter> を指定します。
-    そして以下に示す、クライアントのみのインストール手順を実施してください。
-   </para>
+      MySQL には cmake のオプション <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter> の指定により有効となる、内部サーバーライブラリを含んでいます。
+      そしてこのサーバーライブラリは、デフォルトでは <filename>libmysqld.a</filename> というスタティックライブラリとして構築されます。
+      任意のパッチを適用すれば、これを共有ライブラリとして構築することも可能です。
+      共有ライブラリは、例えば <application>Amarok</application> などのアプリケーションにおいて必要となっており、これを利用することを推奨します。
 @z
 
 @x
-    <para>MySQL contains an embedded server library which can be enabled with
-    the cmake option <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>. By default
-    this server is built as a statically linked library,
-    <filename>libmysqld.a</filename>, but by applying the optional patch, a
-    shared version of this library can be built. The shared library is needed
-    by certain applications, such as <application>Amarok</application>.</para>
+      There are numerous options available to
+      <userinput>cmake</userinput>. Check the output of the `<userinput>cmake .
+      -LH</userinput>` for additional customization options. See the <ulink
+      url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
+      Documentation</ulink> for a full listing of all options.
 @y
-    <para>
-    MySQL には cmake のオプション <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter> の指定により有効となる、内部サーバーライブラリを含んでいます。
-    そしてこのサーバーライブラリは、デフォルトでは <filename>libmysqld.a</filename> というスタティックライブラリとして構築されます。
-    任意のパッチを適用すれば、これを共有ライブラリとして構築することも可能です。
-    共有ライブラリは、例えば <application>Amarok</application> などのアプリケーションにおいて必要となります。
-    </para>
+      <userinput>cmake</userinput> に対しては数多くのオプションを指定することが可能です。
+      `<userinput>cmake . -LH</userinput>` を実行すれば、その出力結果により、カスタマイズオプションの内容を確認することができます。
+      <ulink
+      url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
+      Documentation</ulink> では、すべてのオプションについて説明しています。
 @z
 
 @x
-    <para>There are numerous options available to
-    <userinput>cmake</userinput>. Check the output of the `<userinput>cmake .
-    -LH</userinput>` for additional customization options. See the <ulink
-    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
-    Documentation</ulink> for a full listing of all options.</para>
+      If you want to build shared version of the embedded server library, apply
+      the following patch:
 @y
-    <para>
-    <userinput>cmake</userinput> に対しては数多くのオプションを指定することが可能です。
-    `<userinput>cmake . -LH</userinput>` を実行すれば、その出力結果により、カスタマイズオプションの内容を確認することができます。
-    <ulink
-    url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
-    Documentation</ulink> では、すべてのオプションについて説明しています。
-    </para>
+      内部サーバーライブラリを共有ライブラリとして構築したい場合は、以下のパッチを適用します。
 @z
 
 @x
-    <para>If you want the shared version of the embedded server library, apply
-    the patch:</para>
+      Install <application>MySQL</application> by running the
+      following commands:
 @y
-    <para>
-    内部サーバーライブラリを共有ライブラリとして構築したい場合は、以下のパッチを適用します。
-    </para>
+      以下のコマンドを実行して <application>MySQL</application> をビルドします。
 @z
 
 @x
-     <para>If building the client-only, apply the patch:</para>
+      To test the results, issue: <command>make test-force 2>&amp;1 | tee
+      test.log</command>. This forces the test to run to completion and logs all
+      the test output. There will be many tests that are not run due to
+      configuration options and developer considerations. Otherwise many of the
+      tests will fail. Also, two tests will fail if ipv6 is not available in
+      the kernel either as a module or built in.
 @y
-     <para>
-     クライアントプログラムのみを構築する場合は、以下のパッチを適用します。
-     </para>
+      ビルド結果をテストする場合は <command>make test-force 2>&amp;1 | tee
+      test.log</command> を実行します。
+      このコマンドによりテストを実行するとともに、そのテスト結果をログに出力します。
+      設定オプションや開発者の意向により、テストの中には実行されないものが出てきます。
+      また相当数のテストは失敗します。
+      さらに ipv6 機能がカーネルに組み入れられていない場合には２つのテストが失敗します。
 @z
 
 @x
-    <para>Configure and build <application>MySQL</application> by
-    running the following commands:</para>
+        The SSL tests may fail due to expired certificates.
 @y
-    <para>
-    以下のコマンドを実行して <application>MySQL</application> をビルドします。
-    </para>
+        SSL テストは、期限切れの証明書を用いていることから失敗します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make test-force 2>&amp;1 | tee
-    test.log</command>.  This forces the test to run to completion and logs all
-    the test output.  There will be many tests that are not run due to
-    configuration options and developer considerations.  Note that if you use
-    TCP Wrappers and have a restrictive <filename>/etc/hosts.deny</filename>
-    file, you will need to add an appropriate entry to the
-    <filename>/etc/hosts.allow</filename> file for the
-    <command>mysqld</command> daemon. Otherwise many of the tests will
-    fail.  Also, two tests will fail if ipv6 is not available in the kernel
-    either as a module or built in.</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test-force 2>&amp;1 | tee
-    test.log</command> を実行します。
-    このコマンドによりテストを実行するとともに、そのテスト結果をログに出力します。
-    設定オプションや開発者の意向により、テストの中には実行されないものが出てきます。
-    特に TCP Wrappers を利用していて、<filename>/etc/hosts.deny</filename> ファイルにて制限を設けている場合は、<command>mysqld</command> デーモンに対するエントリを適切に <filename>/etc/hosts.allow</filename> ファイルに加えてください。
-    そうしておかないと相当数のテストが失敗します。
-    さらに ipv6 機能がカーネルに組み入れられていない場合には２つのテストが失敗します。
-    </para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <note><para>The SSL tests may fail due to expired certificates.</para></note>
+        The only documentation shipped in the source tarball are
+        <filename>mysql.info</filename> and man pages. You can download
+        various formats of the <application>MySQL</application>
+        Reference Manual from <ulink url="http://dev.mysql.com/doc/"/>.
 @y
-    <note><para>
-    SSL テストは、期限切れの証明書を用いていることから失敗します。
-    </para></note>
-@z
-
-@x
-      <title>Installation (server and client)</title>
-@y
-      <title>インストール (サーバープログラムおよびクライアントプログラム)</title>
-@z
-
-@x
-      <para>To install the server and client, issue the following command (as
-      the <systemitem class="username">root</systemitem> user):</para>
-@y
-      <para>
-      サーバープログラムとクライアントプログラムをともにインストールする場合は、<systemitem
-      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-      </para>
-@z
-
-@x
-      <note><para>If you built the embedded server library add
-      <userinput>Embedded</userinput> to the <userinput>SEGMENTS</userinput>
-      variable above.</para></note>
-@y
-      <note><para>
-      内部サーバーライブラリをビルドしている場合は、上の変数 <userinput>SEGMENTS</userinput> の定義において <userinput>Embedded</userinput> を追加してください。
-      </para></note>
-@z
-
-@x
-      <tip><para>The only documentation shipped in the source tarball are
-      <filename>mysql.info</filename> and man pages. You can download various
-      formats of the <application>MySQL</application> Reference Manual
-      from <ulink url="http://dev.mysql.com/doc/"/>.</para></tip>
-@y
-      <tip><para>
-      ソース tarball に含まれるドキュメントは <filename>mysql.info</filename> と man ページのみです。
-      <application>MySQL</application> のその他の形式のリファレンスマニュアルは、<ulink
-      url="http://dev.mysql.com/doc/"/> からダウンロードすることができます。
-      </para></tip>
-@z
-
-@x
-      <title>Installation (client only)</title>
-      <para>If you would like to install the client software only, issue the
-      following (as <systemitem class="username">root</systemitem>):</para>
-@y
-      <title>インストール (クライアントプログラムのみ)</title>
-      <para>
-      クライアントプログラムのみをインストールする場合は <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        ソース tarball に含まれるドキュメントは <filename>mysql.info</filename> と man ページのみです。
+        <application>MySQL</application> のその他の形式のリファレンスマニュアルは、<ulink
+        url="http://dev.mysql.com/doc/"/> からダウンロードすることができます。
 @z
 
 @x
@@ -329,62 +259,52 @@
 @z
 
 @x
-    <para><parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>: The default
-    instructions only build the innobase (InnoDB) storage engine. If other
-    storage engines are desired use this switch to enable them. Valid choices
-    are ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
-    PARTITION and PERFSCHEMA.</para>
+      <command>sed -i ...</command>: First two seds fix client-only builds. Last
+      two seds set correct installation directories for some components.
 @y
-    <para><parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>:
-    デフォルトのインストール手順では innobase (InnoDB) ストレージエンジンのみしかインストールしません。
-    これ以外のストレージエンジンを必要とする場合は、本スイッチを用いてそれらを有効化する必要があります。
-    指定できるエンジンは ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
-    PARTITION, PERFSCHEMA です。</para>
+      <command>sed -i ...</command>: First two seds fix client-only builds. Last
+      two seds set correct installation directories for some components.
 @z
 
 @x
-    <para><parameter>-DWITHOUT_SERVER=ON</parameter>: Use this switch if you don't
-    want the server and would like to build the client only.</para>
+      <parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>: The default
+      instructions only build the innobase (InnoDB) storage engine. If other
+      storage engines are desired use this switch to enable them. Valid choices
+      are ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
+      PARTITION and PERFSCHEMA.
 @y
-    <para><parameter>-DWITHOUT_SERVER=ON</parameter>:
-    サーバープログラムは必要でなく、クライアントプログラムのみを利用する場合には本スイッチを指定します。
-    </para>
+      <parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>:
+      デフォルトのインストール手順では innobase (InnoDB) ストレージエンジンのみしかインストールしません。
+      これ以外のストレージエンジンを必要とする場合は、本スイッチを用いてそれらを有効化する必要があります。
+      指定できるエンジンは ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
+      PARTITION, PERFSCHEMA です。
 @z
 
 @x
-    <para><parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: Use this switch to build
-    the embedded server library.</para>
+      <parameter>-DWITHOUT_SERVER=ON</parameter>: Use this switch if you don't
+      want the server and would like to build the client only.
 @y
-    <para><parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>:
-    内部サーバーライブラリをビルドするには本スイッチを指定します。
-    </para>
+      <parameter>-DWITHOUT_SERVER=ON</parameter>:
+      サーバープログラムは必要でなく、クライアントプログラムのみを利用する場合には本スイッチを指定します。
 @z
 
 @x
-    <para><parameter>-DWITH_SSL=system</parameter>: Use this switch to build
-    against a system version of SSL.</para>
+      <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: Use this switch to build
+      the embedded server library.
 @y
-    <para><parameter>-DWITH_SSL=system</parameter>:
-    システムにインストール済の SSL を利用したビルドとする場合には、本スイッチを指定します。
-    </para>
+      <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>:
+      内部サーバーライブラリをビルドするには本スイッチを指定します。
 @z
 
 @x
-    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
-    command installs the appropriate portion of the package. Different
-    segments may be added or deleted as desired.  Valid segments are listed
-    with `<command>make list_install_components</command>`.
-    Note that the 'DataFiles' install segment does not honor the
-    -DMYSQL_DATADIR or -DINSTALL_MYSQLDATADIR statements and installs datafiles
-    in <filename class="directory">/usr/data</filename>.</para>
+      <parameter>-DWITH_SSL=system</parameter>: This switch is used to tell the
+      build system to use system version of the
+      <application>OpenSSL</application>. Remove it if you didn't install
+      <application>OpenSSL</application>.
 @y
-    <para><command>cmake -DCMAKE_INSTALL_COMPONENT=$segment ...</command>: This
-    command installs the appropriate portion of the package. Different
-    segments may be added or deleted as desired.  Valid segments are listed
-    with `<command>make list_install_components</command>`.
-    Note that the 'DataFiles' install segment does not honor the
-    -DMYSQL_DATADIR or -DINSTALL_MYSQLDATADIR statements and installs datafiles
-    in <filename class="directory">/usr/data</filename>.</para>
+      <parameter>-DWITH_SSL=system</parameter>:
+      システムにインストール済の <application>OpenSSL</application> を利用したビルドとする場合には、本スイッチを指定します。
+      <application>OpenSSL</application> をインストールしていない場合は、本スイッチを取り除いてください。
 @z
 
 @x
@@ -400,11 +320,11 @@
 @z
 
 @x
-      <para><filename>/etc/my.cnf</filename> and
-      <filename>~/.my.cnf</filename></para>
+        <filename>/etc/mysql/my.cnf</filename> and
+        <filename>~/.my.cnf</filename>
 @y
-      <para><filename>/etc/my.cnf</filename>,
-      <filename>~/.my.cnf</filename></para>
+        <filename>/etc/mysql/my.cnf</filename>,
+        <filename>~/.my.cnf</filename>
 @z
 
 @x
@@ -414,66 +334,56 @@
 @z
 
 @x
-      <para>There are several default configuration files available in
-      <filename class="directory">/usr/share/mysql</filename> which you can
-      use. When creating the file, ensure binary logs are disabled unless you
-      are doing database replication.  Create <filename>/etc/my.cnf</filename>
-      using the following commands as the <systemitem
-      class="username">root</systemitem> user:</para>
+        There are several default configuration files available in
+        <filename class="directory">/usr/share/mysql</filename> which you can
+        use. When creating the file, ensure binary logs are disabled unless you
+        are doing database replication. Create <filename>/etc/mysql/my.cnf</filename>
+        using the following commands as the <systemitem
+        class="username">root</systemitem> user:
 @y
-      <para>
-      利用可能なデフォルトの設定ファイルが <filename
-      class="directory">/usr/share/mysql</filename> にあります。
-      <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <filename>/etc/my.cnf</filename> を生成します。
-      </para>
+        利用可能なデフォルトの設定ファイルが <filename
+        class="directory">/usr/share/mysql</filename> にあります。
+        <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <filename>/etc/mysql/my.cnf</filename> を生成します。
 @z
 
 @x
-      <para>You can now install a database and change the ownership to the
-      unprivileged user and group (perform as the <systemitem
-      class="username">root</systemitem> user):</para>
+        You can now install a database and change the ownership to the
+        unprivileged user and group (perform as the <systemitem
+        class="username">root</systemitem> user):
 @y
-      <para>
-      データベースをインストールします。
-      そして一般ユーザーの所有へと変更します。
-      (変更は <systemitem class="username">root</systemitem> ユーザーになって行います。)
-      </para>
+        データベースをインストールします。
+        そして一般ユーザーの所有へと変更します。
+        (変更は <systemitem class="username">root</systemitem> ユーザーになって行います。)
 @z
 
 @x
-      <para>Further configuration requires that the
-      <application>MySQL</application> server is running. Start
-      the server using the following commands as the <systemitem
-      class="username">root</systemitem> user:</para>
+        Further configuration requires that the
+        <application>MySQL</application> server is running. Start
+        the server using the following commands as the <systemitem
+        class="username">root</systemitem> user:
 @y
-      <para>
-      さらに設定を進めるには <application>MySQL</application> サーバーが起動していることが必要です。
-      そこで <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してサーバーを起動します。
-      </para>
+        さらに設定を進めるには <application>MySQL</application> サーバーが起動していることが必要です。
+        そこで <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してサーバーを起動します。
 @z
 
 @x
-      <para>A default installation does not set up a password for the
-      administrator, so use the following command as the <systemitem
-      class="username">root</systemitem> user to set one. Replace
-      <replaceable>&lt;new-password&gt;</replaceable> with your own.</para>
+        A default installation does not set up a password for the
+        administrator, so use the following command as the <systemitem
+        class="username">root</systemitem> user to set one. Replace
+        <replaceable>&lt;new-password&gt;</replaceable> with your own.
 @y
-      <para>
-      デフォルトのインストール手順では、管理者のパスワードが設定されません。
-      そこで <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してパスワードを設定します。
-      <replaceable>&lt;new-password&gt;</replaceable> の部分は適切なものに置き換えてください。
-      </para>
+        デフォルトのインストール手順では、管理者のパスワードが設定されません。
+        そこで <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してパスワードを設定します。
+        <replaceable>&lt;new-password&gt;</replaceable> の部分は適切なものに置き換えてください。
 @z
 
 @x
-      <para>Configuration of the server is now finished. Shut the server
-      down using the following command as the <systemitem
-      class="username">root</systemitem> user:</para>
+        Configuration of the server is now finished. Shut the server
+        down using the following command as the <systemitem
+        class="username">root</systemitem> user:
 @y
-      <para>
-      サーバーの設定は以上です。
-      <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してサーバーを停止します。
-      </para>
+        サーバーの設定は以上です。
+        <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してサーバーを停止します。
 @z
 
 @x
@@ -483,15 +393,13 @@
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/mysql</filename> init script
-      included in the <xref linkend="bootscripts"/> package as
-      the <systemitem class="username">root</systemitem> user to start the
-      <application>MySQL</application> server during system boot-up.</para>
+        Install the <filename>/etc/rc.d/init.d/mysql</filename> init script
+        included in the <xref linkend="bootscripts"/> package as
+        the <systemitem class="username">root</systemitem> user to start the
+        <application>MySQL</application> server during system boot-up.
 @y
-      <para>
-      <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/mysql</filename> をインストールします。
-      これにより、システム起動時に <application>MySQL</application> サーバーを自動起動します。
-      </para>
+        <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/mysql</filename> をインストールします。
+        これにより、システム起動時に <application>MySQL</application> サーバーを自動起動します。
 @z
 
 @x
@@ -511,35 +419,55 @@
 @z
 
 @x
-        <seg>innochecksum, msql2mysql, my_print_defaults, myisam_ftdump,
-        myisamchk, myisamlog, myisampack, mysql, mysql_client_test,
-        mysql_config, mysql_convert_table_format, mysql_find_rows,
-        mysql_fix_extensions, mysql_install_db, mysql_plugin,
-        mysql_secure_installation, mysql_setpermission, mysql_tzinfo_to_sql,
-        mysql_upgrade, mysql_waitpid, mysql_zap, mysqlaccess, mysqladmin,
-        mysqlbinlog, mysqlbug, mysqlcheck, mysqld, mysqld_multi, mysqld_safe,
-        mysqldump, mysqldumpslow, mysqlhotcopy, mysqlimport, mysqlshow,
-        mysqlslap, mysqltest, perror, replace, resolve_stack_dump and
-        resolveip</seg>
-        <seg>libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqlservices.a
-        and several in /usr/lib/mysql</seg>
-        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/mysql, /usr/share/mysql and
-        /var/run/mysql</seg>
+        <seg>
+          innochecksum, msql2mysql, myisamchk, myisam_ftdump, myisamlog,
+          myisampack, my_print_defaults, mysql, mysqlaccess, mysqlaccess.conf,
+          mysqladmin, mysqlbinlog, mysqlbug, mysqlcheck, mysql_client_test,
+          mysql_client_test_embedded, mysql_config, mysql_convert_table_format,
+          mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow,
+          mysql_embedded, mysql_find_rows, mysql_fix_extensions, mysqlhotcopy,
+          mysqlimport, mysql_install_db, mysql_plugin, mysql_secure_installation,
+          mysql_setpermission, mysqlshow, mysqlslap, mysqltest,
+          mysqltest_embedded, mysql_tzinfo_to_sql, mysql_upgrade, mysql_waitpid,
+          mysql_zap, perror, replace, resolveip and resolve_stack_dump
+        </seg>
+        <seg>
+          libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a},
+          libmysqlservices.a and several in /usr/lib/mysql
+        </seg>
+        <seg>
+          /etc/mysql,
+          /srv/mysql,
+          /usr/include/mysql,
+          /usr/lib/mysql,
+          /usr/share/doc/mysql and
+          /usr/share/mysql
+        </seg>
 @y
-        <seg>innochecksum, msql2mysql, my_print_defaults, myisam_ftdump,
-        myisamchk, myisamlog, myisampack, mysql, mysql_client_test,
-        mysql_config, mysql_convert_table_format, mysql_find_rows,
-        mysql_fix_extensions, mysql_install_db, mysql_plugin,
-        mysql_secure_installation, mysql_setpermission, mysql_tzinfo_to_sql,
-        mysql_upgrade, mysql_waitpid, mysql_zap, mysqlaccess, mysqladmin,
-        mysqlbinlog, mysqlbug, mysqlcheck, mysqld, mysqld_multi, mysqld_safe,
-        mysqldump, mysqldumpslow, mysqlhotcopy, mysqlimport, mysqlshow,
-        mysqlslap, mysqltest, perror, replace, resolve_stack_dump and
-        resolveip</seg>
-        <seg>libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqlservices.a
-        and several in /usr/lib/mysql</seg>
-        <seg>/srv/mysql, /usr/include/mysql, /usr/lib/mysql, /usr/share/mysql and
-        /var/run/mysql</seg>
+        <seg>
+          innochecksum, msql2mysql, myisamchk, myisam_ftdump, myisamlog,
+          myisampack, my_print_defaults, mysql, mysqlaccess, mysqlaccess.conf,
+          mysqladmin, mysqlbinlog, mysqlbug, mysqlcheck, mysql_client_test,
+          mysql_client_test_embedded, mysql_config, mysql_convert_table_format,
+          mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow,
+          mysql_embedded, mysql_find_rows, mysql_fix_extensions, mysqlhotcopy,
+          mysqlimport, mysql_install_db, mysql_plugin, mysql_secure_installation,
+          mysql_setpermission, mysqlshow, mysqlslap, mysqltest,
+          mysqltest_embedded, mysql_tzinfo_to_sql, mysql_upgrade, mysql_waitpid,
+          mysql_zap, perror, replace, resolveip, resolve_stack_dump
+        </seg>
+        <seg>
+          libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a},
+          libmysqlservices.a, /usr/lib/mysql 配下に数種のライブラリ
+        </seg>
+        <seg>
+          /etc/mysql,
+          /srv/mysql,
+          /usr/include/mysql,
+          /usr/lib/mysql,
+          /usr/share/doc/mysql,
+          /usr/share/mysql
+        </seg>
 @z
 
 @x
@@ -549,24 +477,20 @@
 @z
 
 @x
-    <para>Descriptions of all the programs and libraries would be several
-    pages long. Instead, consult the <filename>mysql.info</filename>
-    documentation or the on-line reference manual at <ulink
-    url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/>.</para>
+      Descriptions of all the programs and libraries would be several
+      pages long. Instead, consult the <filename>mysql.info</filename>
+      documentation or the on-line reference manual at <ulink
+      url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/>.
 @y
-    <para>
-    プログラムやライブラリについてすべて説明しようとすると、かなりのページ数になります。
-    詳細は <filename>mysql.info</filename> を参照するか、あるいは <ulink
-    url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/> にあるオンラインリファレンスマニュアルを参照してください。
-    </para>
+      プログラムやライブラリについてすべて説明しようとすると、かなりのページ数になります。
+      詳細は <filename>mysql.info</filename> を参照するか、あるいは <ulink
+      url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/> にあるオンラインリファレンスマニュアルを参照してください。
 @z
 
 @x
-    <para>The <application>Perl</application> DBI modules must be installed
-    for some of the <application>MySQL</application> support programs to
-    function properly.</para>
+      The <application>Perl</application> DBI modules must be installed
+      for some of the <application>MySQL</application> support programs to
+      function properly.
 @y
-    <para>
-    <application>MySQL</application> サポートプログラムの中には <application>Perl</application> DBI モジュールを利用しているものがあるため、適切に機能させるためには <application>Perl</application> DBI モジュールをインストールしておく必要があります。
-    </para>
+      <application>MySQL</application> サポートプログラムの中には <application>Perl</application> DBI モジュールを利用しているものがあるため、適切に機能させるためには <application>Perl</application> DBI モジュールをインストールしておく必要があります。
 @z

@@ -206,6 +206,7 @@
           /usr/lib/colord-plugins,
           /usr/lib/colord-sensors,
           /usr/share/color,
+          /usr/share/colord,
           /usr/share/gtk-doc/html/colord and
           /var/lib/colord
         </seg>
@@ -223,6 +224,7 @@
           /usr/lib/colord-plugins,
           /usr/lib/colord-sensors,
           /usr/share/color,
+          /usr/share/colord,
           /usr/share/gtk-doc/html/colord,
           /var/lib/colord
         </seg>

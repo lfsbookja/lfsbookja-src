@@ -86,7 +86,8 @@
       <xref linkend="intltool"/>,
       <xref linkend="libusb"/>,
       <xref linkend="polkit"/>, and
-      <xref linkend="udev"/> or  <xref linkend="udev-extras"/> (for GUdev)
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -95,7 +96,8 @@
       <xref linkend="intltool"/>,
       <xref linkend="libusb"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (GUdev のため)
+      <xref linkend="udev"/> または
+      <xref linkend="udev-extras"/> (GUdev のため)
     </para>
 @z
 

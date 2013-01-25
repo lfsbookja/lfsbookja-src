@@ -151,13 +151,13 @@
 @z
 
 @x skdump
-            is an utility that reports on the status of the disk.
+            is a utility that reports on the status of the disk.
 @y
             ディスクの状態を検出するユーティリティです。
 @z
 
 @x sktest
-            is an utility to issue disks tests.
+            is a utility to issue disks tests.
 @y
             ディスクに対するテストを実施するユーティリティです。
 @z

@@ -20,21 +20,19 @@
 @z
 
 @x
-    <para>The <application>CMake</application> package contains a modern 
-    toolset used for generating Makefiles. It is a successor of the 
-    auto-generated <command>configure</command> script and aims to be platform-
-    and compiler-independent. A significant user of 
-    <application>CMake</application> is <application>KDE</application> since 
-    version 4.</para>
+      The <application>CMake</application> package contains a modern 
+      toolset used for generating Makefiles. It is a successor of the 
+      auto-generated <command>configure</command> script and aims to
+      be platform- and compiler-independent. A significant user of 
+      <application>CMake</application> is <application>KDE</application>
+      since version 4.
 @y
-    <para>
-    <application>CMake</application> パッケージは Makefile を生成するための最新のツールセットを提供します。
-    これは自動生成される <command>configure</command> スクリプトに続けて利用します。
-    and aims to be platform-
-    and compiler-independent. A significant user of 
-    <application>CMake</application> is <application>KDE</application> since 
-    version 4.
-    </para>
+      <application>CMake</application> パッケージは Makefile を生成するための最新のツールセットを提供します。
+      これは自動生成される <command>configure</command> スクリプトに続けて利用します。
+      and aims to be platform-
+      and compiler-independent. A significant user of 
+      <application>CMake</application> is <application>KDE</application> since 
+      version 4.
 @z
 
 @x
@@ -44,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cmake-download-http;"/></para>
+          Download (HTTP): <ulink url="&cmake-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cmake-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cmake-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cmake-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cmake-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&cmake-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cmake-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cmake-md5sum;</para>
+          Download MD5 sum: &cmake-md5sum;
 @y
-        <para>&Download; MD5 sum: &cmake-md5sum;</para>
+          &Download; MD5 sum: &cmake-md5sum;
 @z
 
 @x
-        <para>Download size: &cmake-size;</para>
+          Download size: &cmake-size;
 @y
-        <para>&DownloadSize;: &cmake-size;</para>
+          &DownloadSize;: &cmake-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cmake-buildsize;</para>
+          Estimated disk space required: &cmake-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cmake-buildsize;</para>
+          &Estimateddiskspacerequired;: &cmake-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cmake-time;</para>
+          Estimated build time: &cmake-time;
 @y
-        <para>&Estimatedbuildtime;: &cmake-time;</para>
+          &Estimatedbuildtime;: &cmake-time;
 @z
 
 @x
@@ -103,10 +101,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cmake"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cmake"/></para>
 @z
 
 @x
@@ -116,28 +112,22 @@
 @z
 
 @x
-    <para>Install <application>CMake</application> by running the following
-    commands:</para>
+      Install <application>CMake</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>CMake</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>CMake</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <userinput>make test</userinput>.</para>
+      To test the results, issue: <userinput>make test</userinput>.
 @y
-    <para>
-    ビルド結果をテストする場合は <userinput>make test</userinput> を実行します。
-    </para>
+      ビルド結果をテストする場合は <userinput>make test</userinput> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -147,14 +137,23 @@
 @z
 
 @x
-    <para><option>--system-libs</option>: This option forces the build system
-    to link against <application>Zlib</application>, <application>Bzip2</application>, 
-    <application>cURL</application> and <application>Expat</application> installed 
-    on the system.</para>
+      <option>--system-libs</option>: This switch forces the build system to
+      link against <application>Zlib</application>, <application>Bzip2</application>, 
+      <application>cURL</application> and <application>Expat</application> installed 
+      on the system.
 @y
-    <para><option>--system-libs</option>:
-    このオプションは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application> をリンクすることを指示します。
-    </para>
+      <option>--system-libs</option>:
+      このオプションは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application> をリンクすることを指示します。
+@z
+
+@x
+      <option>--qt-gui</option>: This switch enables building of the
+      <application>Qt</application>-based  GUI for
+      <application>CMake</application>.
+@y
+      <option>--qt-gui</option>: This switch enables building of the
+      <application>Qt</application>-based  GUI for
+      <application>CMake</application>.
 @z
 
 @x
@@ -165,24 +164,28 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>ccmake, cmake, cmake-gui, cpack and ctest</seg>
-        <seg>none</seg>
-        <seg>/usr/share/cmake-&cmake-major-version; and
-        /usr/share/doc/cmake-&cmake-version;</seg>
+        <seg>
+          ccmake, cmake, cmake-gui, cpack and ctest
+        </seg>
+        <seg>
+          /usr/share/cmake-&cmake-major-version; and
+          /usr/share/doc/cmake-&cmake-version;
+        </seg>
 @y
-        <seg>ccmake, cmake, cmake-gui, cpack, ctest</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/cmake-&cmake-major-version;,
-        /usr/share/doc/cmake-&cmake-version;</seg>
+        <seg>
+          ccmake, cmake, cmake-gui, cpack, ctest
+        </seg>
+        <seg>
+          /usr/share/cmake-&cmake-major-version;,
+          /usr/share/doc/cmake-&cmake-version;
+        </seg>
 @z
 
 @x
@@ -192,38 +195,34 @@
 @z
 
 @x ccmake
-          <para>is a curses based interactive frontend to cmake.</para>
+            is a curses based interactive frontend to
+            <command>cmake</command>.
 @y
-          <para>
-          cmake に対しての、curses ベースの対話フロントエンドです。
-          </para>
+            <command>cmake</command> に対しての curses ベースの対話フロントエンドです。
 @z
 
 @x cmake
-          <para>is the makefile generator.</para>
+            is the makefile generator.
 @y
-          <para>
-          Makefile 生成ツールです。
-          </para>
+            Makefile 生成ツールです。
 @z
+
 @x cmake-gui
-          <para>is the Qt-based frontent to CMake.</para>
+            is the <application>Qt</application>-based frontent to 
+            <command>cmake</command>.
 @y
-          <para>is the Qt-based frontent to CMake.</para>
+            is the <application>Qt</application>-based frontent to 
+            <command>cmake</command>.
 @z
 
 @x cpack
-          <para>is the CMake packaging program.</para>
+            is the <application>CMake</application> packaging program.
 @y
-          <para>
-          CMake のパッケージングプログラムです。
-          </para>
+            <application>CMake</application> のパッケージングプログラムです。
 @z
 
 @x ctest
-          <para>is a testing utility for cmake-generated build trees.</para>
+            is a testing utility for cmake-generated build trees.
 @y
-          <para>
-          cmake により生成されたディレクトリツリーをテストするユーティリティーです。
-          </para>
+            cmake により生成されたディレクトリツリーをテストするユーティリティーです。
 @z

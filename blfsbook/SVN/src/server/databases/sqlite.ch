@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY sqlite-buildsize     "28 MB (includes optional documentation)">
+  <!ENTITY sqlite-buildsize     "35 MB (includes optional documentation)">
 @y
-  <!ENTITY sqlite-buildsize     "28 MB (任意のドキュメントを含む)">
+  <!ENTITY sqlite-buildsize     "35 MB (任意のドキュメントを含む)">
 @z
 
 @x
@@ -115,13 +115,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="tcl"/> and
       <xref linkend="unzip"/> (required to unzip the documentation).
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="tcl"/> and
       <xref linkend="unzip"/> (ドキュメントを伸張するために必要)
     </para>
 @z
@@ -211,7 +209,7 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -226,7 +224,6 @@
           libsqlite3.so
         </seg>
         <seg>
-          /usr/lib/sqlite&sqlite-version; and
           /usr/share/doc/sqlite-&sqlite-version;
         </seg>
 @y
@@ -237,7 +234,6 @@
           libsqlite3.so
         </seg>
         <seg>
-          /usr/lib/sqlite&sqlite-version; and
           /usr/share/doc/sqlite-&sqlite-version;
         </seg>
 @z

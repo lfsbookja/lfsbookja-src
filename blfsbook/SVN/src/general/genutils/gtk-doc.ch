@@ -178,26 +178,6 @@
 @z
 
 @x
-  <sect2 role="commands">
-    <title>Command Explanations</title>
-@y
-  <sect2 role="commands">
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><command>sed -i '...' gtkdoc-fixxref.in</command>: This command fixes
-    an issue where invocations of the <application>Vim</application> editor
-    does not behave as expected. See upstream bug at
-    <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=627223"/>.</para>
-@y
-    <para><command>sed -i '...' gtkdoc-fixxref.in</command>:
-    本コマンドは <application>Vim</application> エディターを起動した際に、思うように動作しない不備を修正するものです。
-    詳細はアップストリームが示すバグ <ulink url="https://bugzilla.gnome.org/show_bug.cgi?id=627223"/> を参照してください。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

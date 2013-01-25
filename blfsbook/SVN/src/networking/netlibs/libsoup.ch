@@ -114,8 +114,7 @@
       <xref linkend="apache"/> (required to run the test suite),
       <xref linkend="curl"/> (required to run the test suite),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="php"/> compiled with
-      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
+      <xref linkend="php"/> compiled with XMLRPC-EPI <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
       support (only used for the XMLRPC regression tests) and
       <xref linkend="samba3"/> (ntlm_auth is required to run the test suite).
     </para>
@@ -125,8 +124,9 @@
       <xref linkend="apache"/> (テストスイート実行時に必要),
       <xref linkend="curl"/> (テストスイート実行時に必要),
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink> サポートがビルドされている <xref linkend="php"/> (XMLRPC の縮退テストにおいてのみ利用される),
-      <xref linkend="samba3"/> (テストスイートを実行する場合は ntlm_auth が必要)
+      XMLRPC-EPI サポートがビルドされている <xref linkend="php"/> <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
+      (XMLRPC の縮退テストにおいてのみ利用される),
+      <xref linkend="samba3"/> (テストスイートを実行する場合は ntlm_auth が必要).
     </para>
 @z
 

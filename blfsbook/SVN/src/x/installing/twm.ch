@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY twm-time          "less than 0.1 SBU">
+@y
+  <!ENTITY twm-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to twm</title>
 @y
     <title>&IntroductionTo1;twm&IntroductionTo2;</title>
@@ -23,8 +29,9 @@
     <para>The <application>twm</application> package contains a very minimal
     window manager.</para>
 @y
-    <para>The <application>twm</application> package contains a very minimal
-    window manager.</para>
+    <para>
+    <application>twm</application> パッケージは、非常に軽量なウィンドウマネージャーを提供します。
+    </para>
 @z
 
 @x

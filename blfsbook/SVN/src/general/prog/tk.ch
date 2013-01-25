@@ -133,11 +133,15 @@
 @z
 
 @x
-      <option>--enable-threads</option>: This switch forces the
-      package to build with thread support.
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: This switch is used to enable 64 bit
+      support in <application>Tk</application> on 64 bit operating
+      systems.
 @y
-      <option>--enable-threads</option>:
-      このスイッチは、スレッドサポートを含めてパッケージをビルドすることを指示します。
+      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
+      --enable-64bit)</parameter>: This switch is used to enable 64 bit
+      support in <application>Tk</application> on 64 bit operating
+      systems.
 @z
 
 @x
