@@ -60,6 +60,14 @@
           <para>[matsuand] -
           SVN-20130124,
           Changeset
+          <ulink url="&lfs-rev-root;10106">10106</ulink>
+          対応。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20130124,
+          Changeset
           <ulink url="&lfs-rev-root;10103">10103</ulink> ～
           <ulink url="&lfs-rev-root;10105">10105</ulink>
           対応。
