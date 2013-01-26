@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2013-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Revise procps-ng install instructions
+          to place files in the proper locations.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-25</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng にて、ファイルのインストール先を適正なものとするように、インストール手順を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-01-24</para>
       <itemizedlist>
         <listitem>

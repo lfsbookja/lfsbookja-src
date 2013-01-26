@@ -84,6 +84,15 @@
 @z
 
 @x
+<para>Finally move the library to a location that can be found if
+<filename class="directory">/usr</filename> is not mounted.</para>
+@y
+<para>
+<filename class="directory">/usr</filename> がマウントされていない場合でもライブラリが識別されるように、ライブラリの収容ディレクトリを移動させます。
+</para>
+@z
+
+@x
     <title>Contents of Procps-ng</title>
 @y
     <title>&ContentsOf1;Procps-ng&ContentsOf2;</title>
