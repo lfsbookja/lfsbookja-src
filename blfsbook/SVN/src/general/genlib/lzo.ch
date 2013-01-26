@@ -122,14 +122,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           liblzo2.{so,a}
         </seg>
@@ -138,6 +143,9 @@
           /usr/share/doc/lzo
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           liblzo2.{so,a}
         </seg>

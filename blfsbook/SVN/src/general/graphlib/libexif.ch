@@ -151,14 +151,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libexif.so
         </seg>
@@ -168,10 +173,13 @@
         </seg>
 @y
         <seg>
+          &None;
+        </seg>
+        <seg>
           libexif.so
         </seg>
         <seg>
-          /usr/include/libexif,
+          /usr/include/libexif and
           /usr/share/doc/libexif-&libexif-version;
         </seg>
 @z

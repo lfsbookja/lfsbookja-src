@@ -190,21 +190,33 @@
 @z
 
 @x
-        <segtitle>Installed Libraries</segtitle>
+        <segtitle>Installed Programs</segtitle>
+        <segtitle>Installed Library</segtitle>
         <segtitle>Installed Directory</segtitle>
 @y
+        <segtitle>&InstalledPrograms;</segtitle>
         <segtitle>&InstalledLibraries;</segtitle>
         <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-          <seg>_cairo.so</seg>
+          <seg>
+            None
+          </seg>
+          <seg>
+            _cairo.so
+          </seg>
           <seg>
             /usr/include/pycairo and
             /usr/lib/python&python2-majorver;/site-packages/cairo
           </seg>
 @y
-          <seg>_cairo.so</seg>
+          <seg>
+            &None;
+          </seg>
+          <seg>
+            _cairo.so
+          </seg>
           <seg>
             /usr/include/pycairo,
             /usr/lib/python&python2-majorver;/site-packages/cairo

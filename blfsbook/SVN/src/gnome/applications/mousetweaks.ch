@@ -128,9 +128,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -139,11 +141,17 @@
           mousetweaks
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/mousetweaks
         </seg>
 @y
         <seg>
           mousetweaks
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/mousetweaks

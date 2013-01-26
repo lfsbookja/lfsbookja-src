@@ -184,15 +184,20 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           gedit
+        </seg>
+        <seg>
+          None
         </seg>
         <seg>
           /usr/include/gedit-3.0,
@@ -204,6 +209,9 @@
 @y
         <seg>
           gedit
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/include/gedit-3.0,

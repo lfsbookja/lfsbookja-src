@@ -220,15 +220,20 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           empathy, empathy-accounts and empathy-debugger
+        </seg>
+        <seg>
+          None
         </seg>
         <seg>
           /usr/lib/empathy,
@@ -240,6 +245,9 @@
 @y
         <seg>
           empathy, empathy-accounts, empathy-debugger
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/lib/empathy,

@@ -120,14 +120,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libkcddb.so and kcm_cddb.so in &kde-dir;/lib/kde4
         </seg>
@@ -137,6 +142,9 @@
           several in &kde-dir;/share
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           &kde-dir;/lib/kde4 内に libkcddb.so, kcm_cddb.so
         </seg>

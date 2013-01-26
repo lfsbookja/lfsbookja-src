@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to Apache</title>
+    <title>Introduction to Apache HTTPD</title>
 @y
-    <title>&IntroductionTo1;Apache&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Apache HTTPD&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>Apache</application> package contains an open-source HTTP
+      The <application>Apache HTTPD</application> package contains an open-source HTTP
       server. It is useful for creating local intranet web sites or running huge
       web serving operations.
 @y
-      <application>Apache</application> パッケージはオープンソースの HTTP サーバーです。
+      <application>Apache HTTPD</application> パッケージはオープンソースの HTTP サーバーです。
       ローカルなイントラネットウェブサイトでも、大規模なウェブサービスの運用にも利用することができます。
 @z
 
@@ -71,36 +71,58 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Apache Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Apache HTTPD Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Apache&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Apache HTTPD&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="apr-util"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="apr-util"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="db"/>,  
+      <xref linkend="doxygen"/>,
+      <xref linkend="lynx"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="db"/>,
-      <xref linkend="expat"/>,
-      <xref linkend="openssl"/>,
       <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="lynx"/> and
-      <ulink url="http://www.distcache.org/">distcache</ulink>
+      <ulink url="http://www.distcache.org/">Distcache</ulink> and
+      <ulink url="http://www.lua.org/">Lua (5.1)</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openldap"/>,
-      <xref linkend="db"/>,
-      <xref linkend="expat"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="pcre"/>,
-      <xref linkend="rsync"/>,
+      <xref linkend="db"/>,  
       <xref linkend="doxygen"/>,
       <xref linkend="lynx"/>,
-      <ulink url="http://www.distcache.org/">distcache</ulink>
+      <xref linkend="openldap"/>,
+      <xref linkend="pcre"/>,
+      <xref linkend="rsync"/>,
+      <ulink url="http://www.distcache.org/">Distcache</ulink>,
+      <ulink url="http://www.lua.org/">Lua (5.1)</ulink>
     </para>
 @z
 
@@ -111,9 +133,9 @@
 @z
 
 @x
-    <title>Installation of Apache</title>
+    <title>Installation of Apache HTTPD</title>
 @y
-    <title>&InstallationOf1;Apache&InstallationOf2;</title>
+    <title>&InstallationOf1;Apache HTTPD&InstallationOf2;</title>
 @z
 
 @x
@@ -126,24 +148,10 @@
 @z
 
 @x
-        The above command directs the <application>Apache</application> user's
-        home directory to <filename>/dev/null</filename>.  This may not work
-        for some add-ons such as
-        <ulink url='http://www.viewvc.org/'><application>ViewVC</application></ulink>,
-        a browser interface for CVS and Subversion version control repositories.
-        See the User Notes for details for specific applications.
-@y
-        上のコマンドでは <application>Apache</application> ユーザーのホームディレクトリを <filename>/dev/null</filename> としています。
-        ただしこれを行うと <ulink url='http://www.viewvc.org/'><application>ViewVC</application></ulink> のようなアドオンが動作しないものが出てきます。
-        この ViewVC はちなみに、CVS や Subversion といったバージョン管理システムのリポジトリを、ブラウザ上から操作可能とするものです。
-        特定のアプリケーションに対する詳細は&UserNotes;を参照してください。
-@z
-
-@x
-      Build and install <application>Apache</application> by running the
+      Build and install <application>Apache HTTPD</application> by running the
       following commands:
 @y
-      <application>Apache</application> をビルドするために、以下のコマンドを実行します。
+      <application>Apache HTTPD</application> をビルドするために、以下のコマンドを実行します。
 @z
 
 @x
@@ -159,37 +167,69 @@
 @z
 
 @x
-      Also as the <systemitem class="username">root</systemitem> user,
-      optionally install the html docs:
-@y
-      Also as the <systemitem class="username">root</systemitem> user,
-      optionally install the html docs:
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z
 
 @x
-      <parameter>--enable-mods-shared=all</parameter>: The modules should be
+      <parameter>--enable-mods-shared="all cgi"</parameter>: The modules should be
       compiled and used as Dynamic Shared Objects (DSOs) so they can be included
       and excluded from the server using the run-time configuration directives.
 @y
-      <parameter>--enable-mods-shared=all</parameter>: The modules should be
+      <parameter>--enable-mods-shared="all cgi"</parameter>: The modules should be
       compiled and used as Dynamic Shared Objects (DSOs) so they can be included
       and excluded from the server using the run-time configuration directives.
 @z
 
 @x
-      <command>chown root:root ...</command>: This command changes the ownership
-      of some installed files, the result of building the package as a user
-      other than <systemitem class="username">root</systemitem>.
+      <parameter>--enable-mpm-shared=all</parameter>: This switch ensures that all
+      MPM (Multi Processing Modules) are built as Dynamic Shared Objects (DSOs),
+      so the user can choose which one to use at runtime.
 @y
-      <command>chown root:root ...</command>: This command changes the ownership
-      of some installed files, the result of building the package as a user
-      other than <systemitem class="username">root</systemitem>.
+      <parameter>--enable-mpm-shared=all</parameter>: This switch ensures that all
+      MPM (Multi Processing Modules) are built as Dynamic Shared Objects (DSOs),
+      so the user can choose which one to use at runtime.
+@z
+
+@x
+      <parameter>--enable-suexec</parameter>: This switch enables building of the
+      <application>Apache</application> suEXEC module which can be used to allow
+      users to run CGI and SSI scripts under user IDs different from the user ID
+      of the calling web server.
+@y
+      <parameter>--enable-suexec</parameter>: This switch enables building of the
+      <application>Apache</application> suEXEC module which can be used to allow
+      users to run CGI and SSI scripts under user IDs different from the user ID
+      of the calling web server.
+@z
+
+@x
+      <parameter>--with-suexec-*</parameter>: These switches control suEXEC module
+      behavior, such as default document root, minimal UID that can be used to
+      run the script under the suEXEC. Please note that with minimal UID 100, you
+      can't run CGI or SSI scripts under suEXEC as the
+      <systemitem class="username">apache</systemitem> user.
+@y
+      <parameter>--with-suexec-*</parameter>: These switches control suEXEC module
+      behavior, such as default document root, minimal UID that can be used to
+      run the script under the suEXEC. Please note that with minimal UID 100, you
+      can't run CGI or SSI scripts under suEXEC as the
+      <systemitem class="username">apache</systemitem> user.
+@z
+
+@x
+      <command>... /usr/lib/httpd/suexec</command>: These commands put
+      <command>suexec</command> wrapper into proper location, since it
+      is not meant to be run directly. They also adjust proper
+      permissions of the binary, making it segid
+      <systemitem class="username">apache</systemitem>.
+@y
+      <command>... /usr/lib/httpd/suexec</command>: These commands put
+      <command>suexec</command> wrapper into proper location, since it
+      is not meant to be run directly. They also adjust proper
+      permissions of the binary, making it segid
+      <systemitem class="username">apache</systemitem>.
 @z
 
 @x
@@ -231,21 +271,12 @@
 @z
 
 @x
-        The main configuration file is named
-        <filename>/etc/apache/httpd.conf</filename>. Modify it so that the HTTP
-        server runs as the dedicated user and group:
-@y
-        主要な設定ファイルは <filename>/etc/apache/httpd.conf</filename> です。
-        特定のユーザーやグループにて HTTP サーバーを実行する場合は、設定を変更してください。
-@z
-
-@x
-        See <ulink url="/usr/share/doc/httpd-&apache-version;/configuring.html"/>
+        See <ulink url="/usr/share/httpd/manual/configuring.html"/>
         for detailed instructions on customising your
         <application>Apache</application> HTTP server configuration file.
 @y
         <application>Apache</application> HTTP サーバーの設定ファイルに関する設定方法の詳細は <ulink
-        url="/usr/share/doc/httpd-&apache-version;/configuring.html"/> を参照してください。
+        url="/usr/share/httpd/manual/configuring.html"/> を参照してください。
 @z
 
 @x
@@ -256,11 +287,11 @@
 
 @x
         If you want the <application>Apache</application> server to
-      start automatically when the system is booted, install the
-      <filename>/etc/rc.d/init.d/httpd</filename> init script included
-      in the <xref linkend="bootscripts"/> package.
+        start automatically when the system is booted, install the
+        <filename>/etc/rc.d/init.d/httpd</filename> init script included
+        in the <xref linkend="bootscripts"/> package.
 @y
-       システム起動時に <application>Apache</application> サーバーを自動で起動する場合は、<xref
+        システム起動時に <application>Apache</application> サーバーを自動で起動する場合は、<xref
         linkend="bootscripts"/> パッケージに含まれる、初期起動スクリプト <filename>/etc/rc.d/init.d/httpd</filename> をインストールします。
 @z
 
@@ -272,29 +303,47 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          ab, apachectl, apxs, checkgid, dbmmanage, htcacheclean, htdbm,
-          htdigest, htpasswd, httpd, httxt2dbm, logresolve and rotatelogs
+          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter, htcacheclean,
+          htdbm, htdigest, htpasswd, httpd, httxt2dbm, logresolve and rotatelogs
         </seg>
         <seg>
-          /etc/apache, /srv/www, /usr/include/apache, /usr/libexec/apache,  
-          and /var/log/apache.
+          None
+        </seg>
+        <seg>
+          /etc/httpd,
+          /srv/www,
+          /usr/include/httpd,
+          /usr/lib/httpd,
+          /usr/share/httpd
+          /var/log/httpd and
+          /var/run/httpd
         </seg>
 @y
         <seg>
-          ab, apachectl, apxs, checkgid, dbmmanage, htcacheclean, htdbm,
-          htdigest, htpasswd, httpd, httxt2dbm, logresolve, rotatelogs
+          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter, htcacheclean,
+          htdbm, htdigest, htpasswd, httpd, httxt2dbm, logresolve, rotatelogs
         </seg>
         <seg>
-          /etc/apache, /srv/www, /usr/include/apache, /usr/libexec/apache,  
-          /var/log/apache.
+          &None;
+        </seg>
+        <seg>
+          /etc/httpd,
+          /srv/www,
+          /usr/include/httpd,
+          /usr/lib/httpd,
+          /usr/share/httpd
+          /var/log/httpd,
+          /var/run/httpd
         </seg>
 @z
 

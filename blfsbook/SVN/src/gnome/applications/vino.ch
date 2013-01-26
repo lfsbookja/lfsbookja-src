@@ -166,9 +166,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -177,12 +179,18 @@
           vino-passwd, vino-preferences and vino-server
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/lib/vino and
           /usr/share/vino
         </seg>
 @y
         <seg>
           vino-passwd, vino-preferences, vino-server
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/lib/vino,

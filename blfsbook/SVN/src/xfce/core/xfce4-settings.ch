@@ -148,8 +148,12 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -162,7 +166,13 @@
           xfce4-mouse-settings,
           xfce4-settings-editor,
           xfce4-settings-manager and
-          xfsettingsd.
+          xfsettingsd
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
         </seg>
 @y
         <seg>
@@ -175,6 +185,12 @@
           xfce4-settings-editor,
           xfce4-settings-manager,
           xfsettingsd
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

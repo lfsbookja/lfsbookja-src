@@ -161,9 +161,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -172,12 +174,18 @@
           vinagre
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/help/*/vinagre and
           /usr/share/vinagre
         </seg>
 @y
         <seg>
           vinagre
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/help/*/vinagre,

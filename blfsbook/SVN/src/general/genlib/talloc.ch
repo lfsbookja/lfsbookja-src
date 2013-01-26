@@ -137,20 +137,36 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
+          None
+        </seg>
+        <seg>
           libpytalloc-util.so, libtalloc.so and
           talloc.so (Python Module)
         </seg>
+        <seg>
+          None
+        </seg>
 @y
         <seg>
+          &None;
+        </seg>
+        <seg>
           libpytalloc-util.so, libtalloc.so,
-          talloc.so (Python モジュール)
+          talloc.so (Python Module)
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

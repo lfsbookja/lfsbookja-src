@@ -186,9 +186,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -197,6 +199,9 @@
           cvt, dmxaddinput, dmxaddscreen, dmxinfo, dmxreconfig, dmxresize,
           dmxrminput, dmxrmscreen, dmxtodmx, dmxwininfo, gtf, vdltodmx, X,
           Xdmx, xdmxconfig, Xnest, Xorg and Xvfb
+        </seg>
+        <seg>
+          None
         </seg>
         <seg>
           $XORG_PREFIX/include/xorg,
@@ -209,6 +214,9 @@
           cvt, dmxaddinput, dmxaddscreen, dmxinfo, dmxreconfig, dmxresize,
           dmxrminput, dmxrmscreen, dmxtodmx, dmxwininfo, gtf, vdltodmx, X,
           Xdmx, xdmxconfig, Xnest, Xorg, Xvfb
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           $XORG_PREFIX/include/xorg,

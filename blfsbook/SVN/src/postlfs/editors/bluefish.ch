@@ -153,15 +153,20 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           bluefish
+        </seg>
+        <seg>
+          None
         </seg>
         <seg>
           /usr/lib/bluefish,
@@ -172,6 +177,9 @@
 @y
         <seg>
           bluefish
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/lib/bluefish,

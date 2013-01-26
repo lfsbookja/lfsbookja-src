@@ -166,14 +166,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           librest-0.7.so and librest-extras-0.7.so
         </seg>
@@ -182,6 +187,9 @@
           /usr/share/gtk-doc/html/rest-0.7
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           librest-0.7.so, librest-extras-0.7.so
         </seg>

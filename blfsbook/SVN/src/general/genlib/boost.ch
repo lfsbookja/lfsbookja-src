@@ -158,14 +158,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libboost_chrono.so, libboost_date_time.so, libboost_exception.a,
           libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
@@ -183,6 +188,9 @@
           /usr/include/boost
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libboost_chrono.so, libboost_date_time.so, libboost_exception.a,
           libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,

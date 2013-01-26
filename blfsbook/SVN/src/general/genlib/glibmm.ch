@@ -126,14 +126,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libgiomm-2.4.so, libglibmm-2.4.so and
           libglibmm_generate_extra_defs-2.4.so
@@ -147,6 +152,9 @@
           /usr/share/doc/glibmm-2.4
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libgiomm-2.4.so, libglibmm-2.4.so,
           libglibmm_generate_extra_defs-2.4.so

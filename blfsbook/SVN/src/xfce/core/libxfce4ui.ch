@@ -149,14 +149,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libxfce4kbd-private-2.so and libxfce4ui-1.so.
         </seg>
@@ -168,13 +173,16 @@
         </seg>
 @y
         <seg>
+          &None;
+        </seg>
+        <seg>
           libxfce4kbd-private-2.so, libxfce4ui-1.so.
         </seg>
         <seg>
           /etc/xdg/xfce4,
           /usr/include/xfce4/libxfce4kbd-private-2,
           /usr/include/xfce4/libxfce4ui-1,
-          /usr/share/gtk-doc/html/libxfce4ui.
+          /usr/share/gtk-doc/html/libxfce4ui
         </seg>
 @z
 

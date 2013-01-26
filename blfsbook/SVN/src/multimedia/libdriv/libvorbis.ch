@@ -157,14 +157,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libvorbis.so, libvorbisenc.so and libvorbisfile.so
         </seg>
@@ -172,6 +177,9 @@
           /usr/include/vorbis and /usr/share/doc/libvorbis-&libvorbis-version;
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libvorbis.so, libvorbisenc.so, libvorbisfile.so
         </seg>

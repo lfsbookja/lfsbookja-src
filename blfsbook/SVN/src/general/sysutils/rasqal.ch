@@ -20,17 +20,17 @@
 @z
 
 @x
-    <para><application>Rasqal</application> is a C library that handles Resource 
-    Description Framework (RDF) query language syntaxes, query construction and 
-    execution of queries returning results as bindings, boolean, RDF graphs/triples 
-    or syntaxes. It is required by <application>Soprano</application> to build 
-    <application>Nepomuk</application>.</para>
+      <application>Rasqal</application> is a C library that handles Resource 
+      Description Framework (RDF) query language syntaxes, query construction and 
+      execution of queries returning results as bindings, boolean, RDF graphs/triples 
+      or syntaxes. It is required by <application>Soprano</application> to build 
+      <application>Nepomuk</application>.
 @y
-    <para><application>Rasqal</application> is a C library that handles Resource 
-    Description Framework (RDF) query language syntaxes, query construction and 
-    execution of queries returning results as bindings, boolean, RDF graphs/triples 
-    or syntaxes. It is required by <application>Soprano</application> to build 
-    <application>Nepomuk</application>.</para>
+      <application>Rasqal</application> is a C library that handles Resource 
+      Description Framework (RDF) query language syntaxes, query construction and 
+      execution of queries returning results as bindings, boolean, RDF graphs/triples 
+      or syntaxes. It is required by <application>Soprano</application> to build 
+      <application>Nepomuk</application>.
 @z
 
 @x
@@ -40,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&rasqal-download-http;"/></para>
+          Download (HTTP): <ulink url="&rasqal-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&rasqal-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&rasqal-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&rasqal-download-ftp;"/></para>
+          Download (FTP): <ulink url="&rasqal-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&rasqal-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&rasqal-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &rasqal-md5sum;</para>
+          Download MD5 sum: &rasqal-md5sum;
 @y
-        <para>&Download; MD5 sum: &rasqal-md5sum;</para>
+          &Download; MD5 sum: &rasqal-md5sum;
 @z
 
 @x
-        <para>Download size: &rasqal-size;</para>
+          Download size: &rasqal-size;
 @y
-        <para>&DownloadSize;: &rasqal-size;</para>
+          &DownloadSize;: &rasqal-size;
 @z
 
 @x
-        <para>Estimated disk space required: &rasqal-buildsize;</para>
+          Estimated disk space required: &rasqal-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &rasqal-buildsize;</para>
+          &Estimateddiskspacerequired;: &rasqal-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &rasqal-time;</para>
+          Estimated build time: &rasqal-time;
 @y
-        <para>&Estimatedbuildtime;: &rasqal-time;</para>
+          &Estimatedbuildtime;: &rasqal-time;
 @z
 
 @x
@@ -84,12 +84,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="raptor"/>
+      <xref linkend="raptor"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="raptor"/>
+      <xref linkend="raptor"/>
     </para>
 @z
 
@@ -106,36 +106,22 @@
 @z
 
 @x
-    <para>Install <application>Rasqal</application> by running the following
-    commands:</para>
+      Install <application>Rasqal</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Rasqal</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Rasqal</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--disable-static</option>: This option prevents compiling the 
-    static archive versions of the libraries.</para>
-@y
-    <para><option>--disable-static</option>:
-    This option prevents compiling the 
-    static archive versions of the libraries.
-    </para>
 @z
 
 @x
@@ -146,7 +132,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -155,13 +141,27 @@
 @z
 
 @x
-        <seg>rasqal-config and roqet</seg>
-        <seg>librasqal.so</seg>
-	<seg>/usr/include/rasqal and /usr/share/gtk-doc/html/rasqal</seg>
+        <seg>
+          rasqal-config and roqet
+        </seg>
+        <seg>
+          librasqal.so
+        </seg>
+	<seg>
+          /usr/include/rasqal and
+          /usr/share/gtk-doc/html/rasqal
+        </seg>
 @y
-        <seg>rasqal-config, roqet</seg>
-        <seg>librasqal.so</seg>
-	<seg>/usr/include/rasqal, /usr/share/gtk-doc/html/rasqal</seg>
+        <seg>
+          rasqal-config, roqet
+        </seg>
+        <seg>
+          librasqal.so
+        </seg>
+	<seg>
+          /usr/include/rasqal,
+          /usr/share/gtk-doc/html/rasqal
+        </seg>
 @z
 
 @x
@@ -171,13 +171,15 @@
 @z
 
 @x rasqal-config
-          <para>is a utility for retrieving the installation options of rasqal</para>
+            is a utility for retrieving the installation options
+            of <application>Rasqal</application>.
 @y
-          <para>is a utility for retrieving the installation options of rasqal</para>
+            is a utility for retrieving the installation options
+            of <application>Rasqal</application>.
 @z
 
 @x roqet
-          <para>is a RDF query utility.</para>
+            is an RDF query utility.
 @y
-          <para>is a RDF query utility.</para>
+            is an RDF query utility.
 @z

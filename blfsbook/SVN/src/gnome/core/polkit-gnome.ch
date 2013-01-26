@@ -163,9 +163,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -174,11 +176,17 @@
           polkit-gnome-authentication-agent-1
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/lib/polkit-gnome
         </seg>
 @y
         <seg>
           polkit-gnome-authentication-agent-1
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/lib/polkit-gnome

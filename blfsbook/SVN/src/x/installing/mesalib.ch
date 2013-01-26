@@ -239,15 +239,6 @@
 @z
 
 @x
-      If you would like to save some space, strip the installed libraries
-      by running the following commands as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      インストールした容量を少しでも削減したい場合は、<systemitem
-      class="username">root</systemitem> ユーザーとなって以下を実行することで、インストール済ライブラリをストリップします。
-@z
-
-@x
       If desired, install the optional documentation by running
       the following commands as the
       <systemitem class="username">root</systemitem> user:

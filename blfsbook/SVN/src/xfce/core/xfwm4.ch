@@ -141,9 +141,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -152,7 +154,10 @@
           xfwm4,
           xfwm4-settings,
           xfwm4-tweaks-settings and
-          xfwm4-workspace-settings.
+          xfwm4-workspace-settings
+        </seg>
+        <seg>
+          None
         </seg>
         <seg>
           /usr/share/themes/Daloa,
@@ -167,6 +172,9 @@
           xfwm4-settings,
           xfwm4-tweaks-settings,
           xfwm4-workspace-settings
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/themes/Daloa,

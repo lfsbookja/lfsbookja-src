@@ -135,14 +135,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libpixman-1.so
         </seg>
@@ -150,6 +155,9 @@
           /usr/include/pixman-1
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libpixman-1.so
         </seg>

@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -140,9 +140,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -151,11 +153,17 @@
           itstool
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/itstool
         </seg>
 @y
         <seg>
           itstool
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/itstool

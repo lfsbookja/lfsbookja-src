@@ -20,15 +20,15 @@
 @z
 
 @x
-    <para><application>Soprano</application> (formally known as QRDF) is a 
-    library which provides a nice Qt interface to RDF storage solutions. It 
-    has a modular structure which allows to  replace the actual RDF storage 
-    implementation used.</para>
+      <application>Soprano</application> (formally known as QRDF) is a 
+      library which provides a nice Qt interface to RDF storage solutions.
+      It has a modular structure which allows to replace the actual RDF
+      storage  implementation used.
 @y
-    <para><application>Soprano</application> (formally known as QRDF) is a 
-    library which provides a nice Qt interface to RDF storage solutions. It 
-    has a modular structure which allows to  replace the actual RDF storage 
-    implementation used.</para>
+      <application>Soprano</application> (formally known as QRDF) is a 
+      library which provides a nice Qt interface to RDF storage solutions.
+      It has a modular structure which allows to replace the actual RDF
+      storage  implementation used.
 @z
 
 @x
@@ -38,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&soprano-download-http;"/></para>
+          Download (HTTP): <ulink url="&soprano-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&soprano-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&soprano-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&soprano-download-ftp;"/></para>
+          Download (FTP): <ulink url="&soprano-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&soprano-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&soprano-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &soprano-md5sum;</para>
+          Download MD5 sum: &soprano-md5sum;
 @y
-        <para>&Download; MD5 sum: &soprano-md5sum;</para>
+          &Download; MD5 sum: &soprano-md5sum;
 @z
 
 @x
-        <para>Download size: &soprano-size;</para>
+          Download size: &soprano-size;
 @y
-        <para>&DownloadSize;: &soprano-size;</para>
+          &DownloadSize;: &soprano-size;
 @z
 
 @x
-        <para>Estimated disk space required: &soprano-buildsize;</para>
+          Estimated disk space required: &soprano-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &soprano-buildsize;</para>
+          &Estimateddiskspacerequired;: &soprano-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &soprano-time;</para>
+          Estimated build time: &soprano-time;
 @y
-        <para>&Estimatedbuildtime;: &soprano-time;</para>
+          &Estimatedbuildtime;: &soprano-time;
 @z
 
 @x
@@ -82,30 +82,30 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>, 
-    <xref linkend="qt"/>, 
-    <xref linkend="dbus"/> and
-    <xref linkend="redland"/>
+      <xref linkend="dbus"/>,
+      <xref linkend="cmake"/>, 
+      <xref linkend="qt"/> and 
+      <xref linkend="redland"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="cmake"/>, 
-    <xref linkend="qt"/>, 
-    <xref linkend="dbus"/>,
-    <xref linkend="redland"/>
+      <xref linkend="dbus"/>,
+      <xref linkend="cmake"/>, 
+      <xref linkend="qt"/>,
+      <xref linkend="redland"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">Recommended (Required if building KDE)</bridgehead>
     <para role="recommended">
-    <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally, 
-    <xref linkend="virtuoso"/> is required as a runtime dependency for this 
-    backend.)
+      <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally, 
+      <xref linkend="virtuoso"/> is required as a runtime dependency for this 
+      backend.)
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended; (KDE ビルド時に必要)</bridgehead>
     <para role="recommended">
     <xref linkend="libiodbc"/> (Virtuoso バックエンドにて必要。
     またランタイムの依存パッケージとして <xref linkend="virtuoso"/> が必要。)
@@ -115,18 +115,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="doxygen"/> (to build the documentation), 
-    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
-    (no longer required to use soprano in KDE) and 
-    <ulink url="http://www.openrdf.org/">Sesame2</ulink>
+      <xref linkend="doxygen"/> (to build the documentation), 
+      <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
+      (no longer required to use Soprano in KDE) and 
+      <ulink url="http://www.openrdf.org/">Sesame2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="doxygen"/> (ドキュメントのビルド時), 
-    <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
-    (no longer required to use soprano in KDE),
-    <ulink url="http://www.openrdf.org/">Sesame2</ulink>
+      <xref linkend="doxygen"/> (ドキュメントビルドのため), 
+      <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
+      (no longer required to use Soprano in KDE),
+      <ulink url="http://www.openrdf.org/">Sesame2</ulink>
     </para>
 @z
 
@@ -152,11 +152,9 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -166,11 +164,11 @@
 @z
 
 @x
-    <para><option>-DSOPRANO_DISABLE_CLUCENE_INDEX=1</option>: Soprano might not 
-    build with recent Clucene versions. Use this option to fix it.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
 @y
-    <para><option>-DSOPRANO_DISABLE_CLUCENE_INDEX=1</option>: Soprano might not 
-    build with recent Clucene versions. Use this option to fix it.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
 @z
 
 @x
@@ -180,23 +178,19 @@
 @z
 
 @x
-    <para>Create a directory where <application>soprano</application> places some
-    runtime data:</para>
+      Create a directory where <application>Soprano</application> places some
+      runtime data:
 @y
-    <para>
-    <application>soprano</application> が実行時に利用するファイルを配置するディレクトリを生成します。
-    </para>
+      <application>soprano</application> が実行時に利用するファイルを配置するディレクトリを生成します。
 @z
 
 @x
-    <para>The <application>soprano</application>d accepts some parameter. To not
-    hardcode them in the startscript, create a configuration file:</para>
+      The <command>sopranod</command> accepts some parameters. To configure
+      how the bootscript starts <command>sopranod</command>,
+      create a configuration file:
 @y
-    <para>
-    <application>soprano</application>d にはパラメーターがいくつかあります。
-    スタートスクリプトにハードコーディングはされていません。
-    その設定を為すための設定ファイルを生成します。
-    </para>
+      <application>soprano</application>d にはパラメーターがいくつかあります。
+      ブートスクリプトにより <command>sopranod</command> を起動するためには設定ファイルを生成します。
 @z
 
 @x
@@ -206,23 +200,25 @@
 @z
 
 @x
-      <para>It is not required to start the soprano server at boottime for KDE. 
-      KDE will start soprano as needed.</para>
+          It is not required to start the <application>Soprano</application>
+          server at boottime for <application>KDE</application>. 
+          <application>KDE</application> will start
+          <application>Soprano</application> as needed.
 @y
-      <para>It is not required to start the soprano server at boottime for KDE. 
-      KDE will start soprano as needed.</para>
+          It is not required to start the <application>Soprano</application>
+          server at boottime for <application>KDE</application>. 
+          <application>KDE</application> will start
+          <application>Soprano</application> as needed.
 @z
 
 @x
-      <para>In order to get <application>Soprano</application> started
-      automatically when the system is booted, install the
-      <filename>/etc/rc.d/init.d/soprano</filename> init script included
-      in the <xref linkend="bootscripts"/> package.</para>
+        In order to get <application>Soprano</application> started
+        automatically when the system is booted, install the
+        <filename>/etc/rc.d/init.d/soprano</filename> init script included
+        in the <xref linkend="bootscripts"/> package.
 @y
-      <para>
-      システム起動時に <application>Soprano</application> を自動起動するには、<xref
-      linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/soprano</filename> をインストールします。
-      </para>
+        システム起動時に <application>Soprano</application> を自動起動するには、<xref
+        linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/soprano</filename> をインストールします。
 @z
 
 @x
@@ -242,13 +238,29 @@
 @z
 
 @x
-        <seg>sopranod, sopranocmd and onto2vocabularyclass</seg>
-        <seg>libsoprano.so, libsopranoclient.so, libsopranoserver.so and
-        several libraries in /usr/lib/soprano/</seg>
-	<seg>/usr/include/soprano, /usr/include/Soprano and /usr/share/soprano</seg>
+        <seg>
+          onto2vocabularyclass, sopranocmd and sopranod
+        </seg>
+        <seg>
+          libsopranoclient.so, libsopranoserver.so and libsoprano.so
+        </seg>
+	<seg>
+          /usr/include/soprano,
+          /usr/include/Soprano,
+          /usr/lib/soprano and
+          /usr/share/soprano
+        </seg>
 @y
-        <seg>sopranod, sopranocmd, onto2vocabularyclass</seg>
-        <seg>libsoprano.so, libsopranoclient.so, libsopranoserver.so,
-        /usr/lib/soprano/ 配下のその他のライブラリ</seg>
-	<seg>/usr/include/soprano, /usr/include/Soprano, /usr/share/soprano</seg>
+        <seg>
+          onto2vocabularyclass, sopranocmd, sopranod
+        </seg>
+        <seg>
+          libsopranoclient.so, libsopranoserver.so, libsoprano.so
+        </seg>
+	<seg>
+          /usr/include/soprano,
+          /usr/include/Soprano,
+          /usr/lib/soprano,
+          /usr/share/soprano
+        </seg>
 @z

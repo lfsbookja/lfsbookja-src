@@ -154,14 +154,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libdrm.so, libdrm_exynos.so, libdrm_intel.so,
           libdrm_nouveau.so, libdrm_omap.so,
@@ -174,6 +179,9 @@
           /usr/include/omap
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libdrm.so, libdrm_exynos.so, libdrm_intel.so,
           libdrm_nouveau.so, libdrm_omap.so,

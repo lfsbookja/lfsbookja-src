@@ -112,14 +112,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libsigc-2.0.so
         </seg>
@@ -130,6 +135,9 @@
           /usr/share/doc/libsigc++-2.0
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libsigc-2.0.so
         </seg>

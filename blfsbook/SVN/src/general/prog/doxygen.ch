@@ -26,41 +26,41 @@
 @z
 
 @x
-    <para>The <application>Doxygen</application> package contains a
-    documentation system for C++, C, Java, Objective-C, Corba IDL and to some
-    extent PHP, C# and D. This is useful for generating HTML documentation
-    and/or an off-line reference manual from a set of documented source files.
-    There is also support for generating output in RTF, PostScript, hyperlinked
-    PDF, compressed HTML, and Unix man pages. The documentation is extracted
-    directly from the sources, which makes it much easier to keep the
-    documentation consistent with the source code.</para>
+      The <application>Doxygen</application> package contains a documentation
+      system for C++, C, Java, Objective-C, Corba IDL and to some extent PHP,
+      C# and D. It is useful for generating HTML documentation and/or an
+      off-line reference manual from a set of documented source files. There
+      is also support for generating output in RTF, PostScript, hyperlinked
+      PDF, compressed HTML, and Unix man pages. The documentation is extracted
+      directly from the sources, which makes it much easier to keep the
+      documentation consistent with the source code.
 @y
-    <para>The <application>Doxygen</application> package contains a
-    documentation system for C++, C, Java, Objective-C, Corba IDL and to some
-    extent PHP, C# and D. This is useful for generating HTML documentation
-    and/or an off-line reference manual from a set of documented source files.
-    There is also support for generating output in RTF, PostScript, hyperlinked
-    PDF, compressed HTML, and Unix man pages. The documentation is extracted
-    directly from the sources, which makes it much easier to keep the
-    documentation consistent with the source code.</para>
+      The <application>Doxygen</application> package contains a documentation
+      system for C++, C, Java, Objective-C, Corba IDL and to some extent PHP,
+      C# and D. It is useful for generating HTML documentation and/or an
+      off-line reference manual from a set of documented source files. There
+      is also support for generating output in RTF, PostScript, hyperlinked
+      PDF, compressed HTML, and Unix man pages. The documentation is extracted
+      directly from the sources, which makes it much easier to keep the
+      documentation consistent with the source code.
 @z
 
 @x
-    <para>You can also configure <application>Doxygen</application> to extract
-    the code structure from undocumented source files. This is very useful to
-    quickly find your way in large source distributions. Used along with
-    <application>Graphviz</application>, you can also visualize the relations
-    between the various elements by means of include dependency graphs,
-    inheritance diagrams, and collaboration diagrams, which are all generated
-    automatically.</para>
+      You can also configure <application>Doxygen</application> to extract
+      the code structure from undocumented source files. This is very useful
+      to quickly find your way in large source distributions. Used along with
+      <application>Graphviz</application>, you can also visualize the relations
+      between the various elements by means of include dependency graphs,
+      inheritance diagrams, and collaboration diagrams, which are all generated
+      automatically.
 @y
-    <para>You can also configure <application>Doxygen</application> to extract
-    the code structure from undocumented source files. This is very useful to
-    quickly find your way in large source distributions. Used along with
-    <application>Graphviz</application>, you can also visualize the relations
-    between the various elements by means of include dependency graphs,
-    inheritance diagrams, and collaboration diagrams, which are all generated
-    automatically.</para>
+      You can also configure <application>Doxygen</application> to extract
+      the code structure from undocumented source files. This is very useful
+      to quickly find your way in large source distributions. Used along with
+      <application>Graphviz</application>, you can also visualize the relations
+      between the various elements by means of include dependency graphs,
+      inheritance diagrams, and collaboration diagrams, which are all generated
+      automatically.
 @z
 
 @x
@@ -70,39 +70,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&doxygen-download-http;"/></para>
+          Download (HTTP): <ulink url="&doxygen-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&doxygen-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&doxygen-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&doxygen-download-ftp;"/></para>
+          Download (FTP): <ulink url="&doxygen-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&doxygen-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&doxygen-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &doxygen-md5sum;</para>
+          Download MD5 sum: &doxygen-md5sum;
 @y
-        <para>&Download; MD5 sum: &doxygen-md5sum;</para>
+          &Download; MD5 sum: &doxygen-md5sum;
 @z
 
 @x
-        <para>Download size: &doxygen-size;</para>
+          Download size: &doxygen-size;
 @y
-        <para>&DownloadSize;: &doxygen-size;</para>
+          &DownloadSize;: &doxygen-size;
 @z
 
 @x
-        <para>Estimated disk space required: &doxygen-buildsize;</para>
+          Estimated disk space required: &doxygen-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &doxygen-buildsize;</para>
+          &Estimateddiskspacerequired;: &doxygen-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &doxygen-time;</para>
+          Estimated build time: &doxygen-time;
 @y
-        <para>&Estimatedbuildtime;: &doxygen-time;</para>
+          &Estimatedbuildtime;: &doxygen-time;
 @z
 
 @x
@@ -113,26 +113,28 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="qt"/> (for doxywizard),
-    <xref linkend="graphviz"/>,
-    <xref linkend="python2"/>,  
-    <xref linkend="texlive"/>, and
-    <xref linkend="gs"/></para>
+    <para role="optional">
+      <xref linkend="graphviz"/>,
+      <xref linkend="gs"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="qt"/> (for doxywizard) and
+      <xref linkend="texlive"/>
+    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="qt"/> (doxywizard に必要),
-    <xref linkend="graphviz"/>,
-    <xref linkend="python2"/>,  
-    <xref linkend="texlive"/>,
-    <xref linkend="gs"/></para>
+    <para role="optional">
+      <xref linkend="graphviz"/>,
+      <xref linkend="gs"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="qt"/> (doxywizard に必要),
+      <xref linkend="texlive"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/doxygen"/></para>
 @y
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/doxygen"/></para>
 @z
 
 @x
@@ -142,41 +144,40 @@
 @z
 
 @x
-    <para>Install <application>Doxygen</application> by running the following
-    commands:</para>
+      Install <application>Doxygen</application> by running the following
+      commands:
 @y
-    <para>Install <application>Doxygen</application> by running the following
-    commands:</para>
+      以下のコマンドを実行して <application>Doxygen</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>This package does not come with a test suite.</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you wish to generate and install the package documentation
-    (note that man pages have already been installed), you must have
-    <application>Python</application>, 
-    <application>TeX Live</application> (for HTML docs) and
-    <application>Ghostscript</application> (for PDF docs)
-    installed, then issue the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+      If you wish to generate and install the package documentation
+      (note that man pages have already been installed), you must have
+      <application>Python</application>, 
+      <application>TeX Live</application> (for HTML docs) and
+      <application>Ghostscript</application> (for PDF docs)
+      installed, then issue the following command as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>If you wish to generate and install the package documentation
-    (note that man pages have already been installed), you must have
-    <application>Python</application>, 
-    <application>TeX Live</application> (for HTML docs) and
-    <application>Ghostscript</application> (for PDF docs)
-    installed, then issue the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+      If you wish to generate and install the package documentation
+      (note that man pages have already been installed), you must have
+      <application>Python</application>, 
+      <application>TeX Live</application> (for HTML docs) and
+      <application>Ghostscript</application> (for PDF docs)
+      installed, then issue the following command as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -186,39 +187,39 @@
 @z
 
 @x
-    <para><option>--with-doxywizard</option>: Use this parameter if
-    <application>Qt</application> is installed and you wish to build the
-    GUI front-end.</para>
+      <option>--with-doxywizard</option>: Use this parameter if
+      <application>Qt</application> is installed and you wish to
+      build the GUI front-end.
 @y
-    <para><option>--with-doxywizard</option>: Use this parameter if
-    <application>Qt</application> is installed and you wish to build the
-    GUI front-end.</para>
+      <option>--with-doxywizard</option>: Use this parameter if
+      <application>Qt</application> is installed and you wish to
+      build the GUI front-end.
 @z
 
 @x
     <title>Configuring Doxygen</title>
 @y
-    <title>Configuring Doxygen</title>
+    <title>&Configuring1;Doxygen&Configuring2;</title>
 @z
 
 @x
-    <para>There is no real configuration necessary for the
-    <application>Doxygen</application> package although three additional
-    packages are required if you wish to use extended capabilities. If you need
-    to use the language translation features, you must have <xref
-    linkend="python2"/> installed. If you require formulas to create PDF
-    documentation, then you must have <xref linkend="texlive"/> installed. If
-    you require formulas to convert PostScript files to bitmaps, then you must
-    have <xref linkend="gs"/> installed.</para>
+      There is no real configuration necessary for the
+      <application>Doxygen</application> package although three additional
+      packages are required if you wish to use extended capabilities. If you
+      need to use the language translation features, you must have <xref
+       linkend="python2"/> installed. If you require formulas to create PDF
+      documentation, then you must have <xref linkend="texlive"/> installed.
+      If you require formulas to convert PostScript files to bitmaps, then
+      you must have <xref linkend="gs"/> installed.
 @y
-    <para>There is no real configuration necessary for the
-    <application>Doxygen</application> package although three additional
-    packages are required if you wish to use extended capabilities. If you need
-    to use the language translation features, you must have <xref
-    linkend="python2"/> installed. If you require formulas to create PDF
-    documentation, then you must have <xref linkend="texlive"/> installed. If
-    you require formulas to convert PostScript files to bitmaps, then you must
-    have <xref linkend="gs"/> installed.</para>
+      There is no real configuration necessary for the
+      <application>Doxygen</application> package although three additional
+      packages are required if you wish to use extended capabilities. If you
+      need to use the language translation features, you must have <xref
+       linkend="python2"/> installed. If you require formulas to create PDF
+      documentation, then you must have <xref linkend="texlive"/> installed.
+      If you require formulas to convert PostScript files to bitmaps, then
+      you must have <xref linkend="gs"/> installed.
 @z
 
 @x
@@ -238,13 +239,25 @@
 @z
 
 @x
-        <seg>doxygen, doxytag, and optionally, doxywizard</seg>
-        <seg>None</seg>
-        <seg>/usr/share/doc/doxygen</seg>
+        <seg>
+          doxygen and optionally, doxywizard
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          /usr/share/doc/doxygen-&doxygen-version;
+        </seg>
 @y
-        <seg>doxygen, doxytag, and optionally, doxywizard</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/doc/doxygen</seg>
+        <seg>
+          doxygen, 任意ビルドとして doxywizard
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          /usr/share/doc/doxygen-&doxygen-version;
+        </seg>
 @z
 
 @x
@@ -254,29 +267,20 @@
 @z
 
 @x doxygen
-          <para>is a command-line based utility used to generate template
-          configuration files and then generate documentation from these templates. Use
-          <command>doxygen --help</command> for an explanation of the command-line
-          parameters.</para>
+            is a command-line based utility used to generate template
+            configuration files and then generate documentation from these
+            templates. Use <command>doxygen --help</command> for an
+            explanation of the command-line parameters.
 @y
-          <para>is a command-line based utility used to generate template
-          configuration files and then generate documentation from these templates. Use
-          <command>doxygen --help</command> for an explanation of the command-line
-          parameters.</para>
-@z
-
-@x doxytag
-          <para>is used to generate a tag file and/or a search index for a set
-          of HTML files.</para>
-@y
-          <para>is used to generate a tag file and/or a search index for a set
-          of HTML files.</para>
+            is a command-line based utility used to generate template
+            configuration files and then generate documentation from these
+            templates. Use <command>doxygen --help</command> for an
+            explanation of the command-line parameters.
 @z
 
 @x doxywizard
-          <para>is a GUI front-end for configuring and
-          running <command>doxygen</command>.</para>
+            is a GUI front-end for configuring and
+            running <command>doxygen</command>.
 @y
-          <para>is a GUI front-end for configuring and
-          running <command>doxygen</command>.</para>
+            <command>doxygen</command> の設定および実行を行う GUI フロントエンド。
 @z

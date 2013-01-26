@@ -374,21 +374,25 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>git, git-cvsserver, gitk, git-receive-pack, git-shell,
-        git-upload-archive and git-upload-pack.</seg>
+        git-upload-archive and git-upload-pack</seg>
+        <seg>None</seg>
         <seg>/usr/libexec/git-core, /usr/share/git-&git-version;,
         /usr/share/git-core, /usr/share/git-gui, /usr/share/gitk and
         /usr/share/gitweb</seg>
 @y
         <seg>git, git-cvsserver, gitk, git-receive-pack, git-shell,
         git-upload-archive, git-upload-pack</seg>
+        <seg>&None;</seg>
         <seg>/usr/libexec/git-core, /usr/share/git-&git-version;,
         /usr/share/git-core, /usr/share/git-gui, /usr/share/gitk,
         /usr/share/gitweb</seg>

@@ -174,9 +174,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -187,6 +189,9 @@
           transmission-remote and transmission-show
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/transmission
         </seg>
 @y
@@ -194,6 +199,9 @@
           transmission-cli, transmission-create, transmission-daemon,
           transmission-edit, transmission-gtk, transmission-qt,
           transmission-remote, transmission-show
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/transmission

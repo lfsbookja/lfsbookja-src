@@ -159,18 +159,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python2"/></para>
+    <para role="optional">
+      <xref linkend="python2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="python2"/></para>
+    <para role="optional">
+      <xref linkend="python2"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cracklib"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cracklib"/></para>
 @z
 
 @x
@@ -202,7 +204,7 @@
     recommended word list and create the <application>CrackLib</application>
     dictionary. Other word lists (text based, one word per line) can also be
     used by simply installing them into
-    <filename class='directory'>/usr/share/dict</filename> and adding them
+    <filename class="directory">/usr/share/dict</filename> and adding them
     to the <command>create-cracklib-dict</command> command.</para>
 @y
     <para>
@@ -210,7 +212,7 @@
     これにより、推奨されている語句リストをインストールし <application>CrackLib</application> の辞書情報を生成します。
     これ以外の語句リストでも、テキストベースであり、一語につき一行のものであれば利用することができます。
     利用する場合は、そのファイルを <filename
-    class='directory'>/usr/share/dict</filename> にインストールし <command>create-cracklib-dict</command> コマンドを使ってそのファイルの追加登録を行います。
+    class="directory">/usr/share/dict</filename> にインストールし <command>create-cracklib-dict</command> コマンドを使ってそのファイルの追加登録を行います。
     </para>
 @z
 
@@ -250,41 +252,41 @@
     <para><parameter>--with-default-dict=/lib/cracklib/pw_dict</parameter>:
     This parameter forces the installation of the
     <application>CrackLib</application> dictionary to the
-    <filename class='directory'>/lib</filename> hierarchy.</para>
+    <filename class="directory">/lib</filename> hierarchy.</para>
 @y
     <para>
     <parameter>--with-default-dict=/lib/cracklib/pw_dict</parameter>:
-    このパラメーターは <application>CrackLib</application> の辞書情報を <filename class='directory'>/lib</filename> ディレクトリ配下にインストールすることを指示します。
+    このパラメーターは <application>CrackLib</application> の辞書情報を <filename class="directory">/lib</filename> ディレクトリ配下にインストールすることを指示します。
     </para>
 @z
 
 @x
     <para><command>mv -v /usr/lib/libcrack.so.2* /lib</command> and
     <command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>: These two
-    commands move the <filename class='libraryfile'>libcrack.so.2.8.1</filename>
+    commands move the <filename class="libraryfile">libcrack.so.2.8.1</filename>
     library and associated symlink from
-    <filename class='directory'>/usr/lib</filename> to
-    <filename class='directory'>/lib</filename>, then recreates the
-    <filename class='symlink'>/usr/lib/libcrack.so</filename> symlink pointing
+    <filename class="directory">/usr/lib</filename> to
+    <filename class="directory">/lib</filename>, then recreates the
+    <filename class="symlink">/usr/lib/libcrack.so</filename> symlink pointing
     to the relocated file.</para>
 @y
     <para>
     <command>mv -v /usr/lib/libcrack.so.2* /lib</command> と
     <command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>:
     この２つのコマンドは、<filename
-    class='libraryfile'>libcrack.so.2.8.1</filename> ライブラリとこれに関するシンボリックリンクを <filename
-    class='directory'>/usr/lib</filename> ディレクトリから <filename class='directory'>/lib</filename> ディレクトリに移動します。
-    そして移動したファイルを指し示すシンボリックリンク <filename class='symlink'>/usr/lib/libcrack.so</filename> を生成します。
+    class="libraryfile">libcrack.so.2.8.1</filename> ライブラリとこれに関するシンボリックリンクを <filename
+    class="directory">/usr/lib</filename> ディレクトリから <filename class="directory">/lib</filename> ディレクトリに移動します。
+    そして移動したファイルを指し示すシンボリックリンク <filename class="symlink">/usr/lib/libcrack.so</filename> を生成します。
     </para>
 @z
 
 @x
     <para><command>install -v -m644 -D ...</command>: This command creates the
-    <filename class='directory'>/usr/share/dict</filename> directory (if it
+    <filename class="directory">/usr/share/dict</filename> directory (if it
     doesn't already exist) and installs the compressed word list there.</para>
 @y
     <para><command>install -v -m644 -D ...</command>: This command creates the
-    <filename class='directory'>/usr/share/dict</filename> directory (if it
+    <filename class="directory">/usr/share/dict</filename> directory (if it
     doesn't already exist) and installs the compressed word list there.</para>
 @z
 
@@ -352,18 +354,18 @@
         <seg>cracklib-check, cracklib-format, cracklib-packer,
         cracklib-unpacker and create-cracklib-dict</seg>
 
-        <seg>libcrack.so and the _cracklibmodule.{so,a}
+        <seg>libcrack.so and the _cracklibmodule.so
           <application>Python</application> module</seg>
         
         <seg>/lib/cracklib, /usr/share/dict and /usr/share/cracklib</seg>
 @y
         <seg>cracklib-check, cracklib-format, cracklib-packer,
-        cracklib-unpacker and create-cracklib-dict</seg>
+        cracklib-unpacker, create-cracklib-dict</seg>
 
-        <seg>libcrack.so and the _cracklibmodule.{so,a}
-          <application>Python</application> module</seg>
+        <seg>libcrack.so, _cracklibmodule.so
+          <application>Python</application> モジュール</seg>
         
-        <seg>/lib/cracklib, /usr/share/dict and /usr/share/cracklib</seg>
+        <seg>/lib/cracklib, /usr/share/dict, /usr/share/cracklib</seg>
 @z
 
 @x

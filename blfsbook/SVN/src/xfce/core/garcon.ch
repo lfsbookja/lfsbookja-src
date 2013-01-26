@@ -144,19 +144,23 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>libgarcon-1.so.</seg>
-        <seg>/usr/share/gtk-doc/html/garcon.</seg>
+        <seg>None</seg>
+        <seg>libgarcon-1.so</seg>
+        <seg>/usr/share/gtk-doc/html/garcon</seg>
 @y
-        <seg>libgarcon-1.so.</seg>
-        <seg>/usr/share/gtk-doc/html/garcon.</seg>
+        <seg>&None;</seg>
+        <seg>libgarcon-1.so</seg>
+        <seg>/usr/share/gtk-doc/html/garcon</seg>
 @z
 
 @x

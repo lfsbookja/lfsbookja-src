@@ -144,9 +144,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -155,11 +157,17 @@
           obex-data-server
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /etc/obex-data-server
         </seg>
 @y
         <seg>
           obex-data-server
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /etc/obex-data-server
@@ -175,5 +183,5 @@
 @x obex-data-server
             is a D-Bus service providing OBEX functionality.
 @y
-            is a D-Bus service providing OBEX functionality.
+            OBEX 機能を提供する D-Bus サービス。
 @z

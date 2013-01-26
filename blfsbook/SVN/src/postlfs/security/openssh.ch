@@ -402,27 +402,35 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-          ssh-keygen, ssh-keyscan and ssh-keysign.
+          ssh-keygen, ssh-keyscan and ssh-keysign
+        </seg>
+        <seg>
+          None
         </seg>
         <seg>
           /etc/ssh,
           /var/lib/sshd,
           /usr/lib/openssh and
-          /usr/share/doc/openssh-&openssh-version;.
+          /usr/share/doc/openssh-&openssh-version;
         </seg>
 @y
         <seg>
           scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-          ssh-keygen, ssh-keyscan, ssh-keysign.
+          ssh-keygen, ssh-keyscan, ssh-keysign
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /etc/ssh,

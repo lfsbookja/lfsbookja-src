@@ -191,9 +191,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -202,12 +204,18 @@
           nano and rnano
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/nano and
           /usr/share/doc/nano-&nano-version;
         </seg>
 @y
         <seg>
           nano, rnano
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/nano,

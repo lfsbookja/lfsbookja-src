@@ -129,9 +129,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -140,11 +142,17 @@
           obex-client and obexd
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/lib/obex
         </seg>
 @y
         <seg>
           obex-client, obexd
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/lib/obex

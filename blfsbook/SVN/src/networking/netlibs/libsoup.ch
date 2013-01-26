@@ -174,14 +174,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libsoup-2.4.so and libsoup-gnome-2.4.so
         </seg>
@@ -191,6 +196,9 @@
           /usr/share/gtk-doc/html/libsoup-2.4
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libsoup-2.4.so, libsoup-gnome-2.4.so
         </seg>

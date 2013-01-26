@@ -160,9 +160,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -170,6 +172,9 @@
         <seg>
           udisks, udisks-daemon, udisks-tcp-bridge and
           umount.udisks
+        </seg>
+        <seg>
+          None
         </seg>
         <seg> 
           /usr/lib/udisks,
@@ -180,6 +185,9 @@
         <seg>
           udisks, udisks-daemon, udisks-tcp-bridge,
           umount.udisks
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg> 
           /usr/lib/udisks,

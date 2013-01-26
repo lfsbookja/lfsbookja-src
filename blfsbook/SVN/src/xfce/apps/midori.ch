@@ -170,28 +170,32 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>midori.</seg>
+        <seg>midori</seg>
+        <seg>None</seg>
         <seg>
           /etc/xdg/midori,
           /usr/include/midori-0.4,
           /usr/lib/midori,
           /usr/share/midori and
-          /usr/share/doc/midori.
+          /usr/share/doc/midori
         </seg>
 @y
         <seg>midori</seg>
+        <seg>&None;</seg>
         <seg>
           /etc/xdg/midori,
           /usr/include/midori-0.4,
           /usr/lib/midori,
-          /usr/share/midori,
+          /usr/share/midori and
           /usr/share/doc/midori
         </seg>
 @z

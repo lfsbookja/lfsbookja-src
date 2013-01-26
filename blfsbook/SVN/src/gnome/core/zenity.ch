@@ -158,9 +158,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -169,12 +171,18 @@
           gdialog and zenity
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/help/*/zenity and
           /usr/share/zenity
         </seg>
 @y
         <seg>
           gdialog, zenity
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/help/*/zenity,

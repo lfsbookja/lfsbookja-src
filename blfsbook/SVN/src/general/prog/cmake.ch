@@ -164,9 +164,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -175,12 +177,18 @@
           ccmake, cmake, cmake-gui, cpack and ctest
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/cmake-&cmake-major-version; and
           /usr/share/doc/cmake-&cmake-version;
         </seg>
 @y
         <seg>
           ccmake, cmake, cmake-gui, cpack, ctest
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/cmake-&cmake-major-version;,

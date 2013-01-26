@@ -137,9 +137,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -149,6 +151,9 @@
           intltool-update and intltoolize
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/doc/intltool-&intltool-version; and
           /usr/share/intltool
         </seg>
@@ -156,6 +161,9 @@
         <seg>
           intltool-extract, intltool-merge, intltool-prepare,
           intltool-update, intltoolize
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/doc/intltool-&intltool-version;,

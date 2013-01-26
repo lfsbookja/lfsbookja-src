@@ -14,18 +14,16 @@
 @z
 
 @x
-    <title>Introduction to sharutils</title>
+    <title>Introduction to Sharutils</title>
 @y
-    <title>&IntroductionTo1;sharutils&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Sharutils&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>sharutils</application> package contains
-    utilities that can create 'shell' archives.</para>
+      The <application>Sharutils</application> package contains
+      utilities that can create 'shell' archives.
 @y
-    <para>
-    <application>sharutils</application> パッケージは 'シェル' アーカイブを生成するユーティリティを提供します。
-    </para>
+      <application>Sharutils</application> パッケージは 'シェル' アーカイブを生成するユーティリティを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&sharutils-download-http;"/></para>
+          Download (HTTP): <ulink url="&sharutils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&sharutils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&sharutils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&sharutils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&sharutils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&sharutils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&sharutils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &sharutils-md5sum;</para>
+          Download MD5 sum: &sharutils-md5sum;
 @y
-        <para>&Download; MD5 sum: &sharutils-md5sum;</para>
+          &Download; MD5 sum: &sharutils-md5sum;
 @z
 
 @x
-        <para>Download size: &sharutils-size;</para>
+          Download size: &sharutils-size;
 @y
-        <para>&DownloadSize;: &sharutils-size;</para>
+          &DownloadSize;: &sharutils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &sharutils-buildsize;</para>
+          Estimated disk space required: &sharutils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &sharutils-buildsize;</para>
+          &Estimateddiskspacerequired;: &sharutils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &sharutils-time;</para>
+          Estimated build time: &sharutils-time;
 @y
-        <para>&Estimatedbuildtime;: &sharutils-time;</para>
+          &Estimatedbuildtime;: &sharutils-time;
 @z
 
 @x
@@ -77,42 +75,28 @@
 @z
 
 @x
-    <title>Installation of sharutils</title>
+    <title>Installation of Sharutils</title>
 @y
-    <title>&InstallationOf1;sharutils&InstallationOf2;</title>
+    <title>&InstallationOf1;Sharutils&InstallationOf2;</title>
 @z
 
 @x
-    <para>First fix an obsolete definition in the included gnulib:</para>
+      Install <application>Sharutils</application> by running
+      the following commands:
 @y
-    <para>
-    同梱されている gnulib において古い定義を修正します。
-    </para>
+      以下のコマンドを実行して <application>Sharutils</application> をビルドします。
 @z
 
 @x
-    <para>Now, install <application>sharutils</application> by running the following commands:</para>
+      To test the results, issue <command>make check</command>.
 @y
-    <para>
-    以下のコマンドを実行して <application>sharutils</application> をビルドします。
-    </para>
+      ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。
 @z
 
 @x
-    <para>To test <application>sharutils</application>, run 
-    <userinput>make check</userinput>.</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。
-    </para>
-@z
-
-@x
-    <para>As the <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -132,13 +116,25 @@
 @z
 
 @x
-        <seg>shar, unshar, uudecode, and uuencode</seg>
-        <seg>None</seg>
-        <seg>None</seg>
+        <seg>
+          shar, unshar, uudecode and uuencode
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
-        <seg>shar, unshar, uudecode, uuencode</seg>
-        <seg>&None;</seg>
-        <seg>&None;</seg>
+        <seg>
+          shar, unshar, uudecode, uuencode
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
+        </seg>
 @z
 
 @x
@@ -148,37 +144,31 @@
 @z
 
 @x shar
-          <para>creates "shell archives" (or shar files) which are in 
-          text format and can be mailed.</para>
+            creates "shell archives" (or shar files) which are in 
+            text format and can be mailed.
 @y
-          <para>
-          "シェルアーカイブ" (shell archives または shar ファイル) を生成します。
-          これはテキストフォーマットであり、メールに添付することもできます。
-          </para>
+            "シェルアーカイブ" (shell archives または shar ファイル) を生成します。
+            これはテキストフォーマットであり、メールに添付することもできます。
 @z
 
 @x unshar
-          <para>unpacks a shar file.</para>
+            unpacks a shar file.
 @y
-          <para>shar ファイルを復元します。</para>
+            shar ファイルを復元します。
 @z
 
 @x uudecode
-          <para>reads a file (or by default the standard input) and writes an encoded 
-          version to the standard output. The encoding uses only printing 
-          ASCII characters.</para>
+            reads a file (or by default the standard input) and writes an
+            encoded  version to the standard output. The encoding uses only
+            printing ASCII characters.
 @y
-          <para>
-          ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、標準出力にエンコード結果を出力します。
-          エンコード結果は印字可能なアスキー文字のみが用いられます。
-          </para>
+            ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、標準出力にエンコード結果を出力します。
+            エンコード結果は印字可能なアスキー文字のみが用いられます。
 @z
 
 @x uuencode
-          <para>reads a file (or by default the standard input) and decodes
-          the uuencoded version to the standard output.</para>
+            reads a file (or by default the standard input) and decodes
+            the uuencoded version to the standard output.
 @y
-          <para>
-          ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、uuencode により処理された内容を復元して標準出力に出力します。
-          </para>
+            ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、uuencode により処理された内容を復元して標準出力に出力します。
 @z

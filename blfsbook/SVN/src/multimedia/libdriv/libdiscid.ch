@@ -16,7 +16,7 @@
 @x
   <!ENTITY libdiscid-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libdiscid-time          "0.1 SBU 以下">
+  <!ENTITY libdiscid-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -124,14 +124,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libdiscid.so
         </seg>
@@ -139,6 +144,9 @@
           /usr/include/discid
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libdiscid.so
         </seg>

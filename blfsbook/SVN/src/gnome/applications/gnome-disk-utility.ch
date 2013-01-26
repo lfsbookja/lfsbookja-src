@@ -134,9 +134,11 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -145,11 +147,17 @@
           gnome-disk-image-mounter and gnome-disks
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/gnome-disk-utility
         </seg>
 @y
         <seg>
           gnome-disk-image-mounter, gnome-disks
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/gnome-disk-utility

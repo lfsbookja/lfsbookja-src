@@ -160,14 +160,34 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>sshfs.</seg>
+        <seg>
+          sshfs
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
-        <seg>sshfs</seg>
+        <seg>
+          sshfs
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
+        </seg>
 @z
 
 @x

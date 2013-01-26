@@ -121,14 +121,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libjson.so
         </seg>
@@ -136,6 +141,9 @@
           /usr/include/json
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libjson.so
         </seg>

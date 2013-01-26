@@ -138,14 +138,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libatomic_ops.so and libatomic_ops_gpl.so
         </seg>
@@ -153,6 +158,9 @@
           /usr/include/libatomic_ops
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libatomic_ops.so, libatomic_ops_gpl.so
         </seg>

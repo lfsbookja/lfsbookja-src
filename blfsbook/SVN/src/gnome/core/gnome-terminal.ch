@@ -145,15 +145,20 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           gnome-terminal
+        </seg>
+       <seg>
+          None
         </seg>
         <seg>
           /usr/share/gnome-terminal and
@@ -162,6 +167,9 @@
 @y
         <seg>
           gnome-terminal
+        </seg>
+       <seg>
+          &None;
         </seg>
         <seg>
           /usr/share/gnome-terminal,

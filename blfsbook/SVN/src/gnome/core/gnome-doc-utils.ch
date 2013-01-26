@@ -170,10 +170,12 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
       <segtitle>Installed Stylesheets</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
       <segtitle>&InstalledStylesheets;</segtitle>
 @z
@@ -181,6 +183,9 @@
 @x
         <seg>
           gnome-doc-prepare, gnome-doc-tool and xml2po
+        </seg>
+        <seg>
+          None
         </seg>
         <seg>
           /usr/lib/python&python2-majorver;/site-packages/xml2po,
@@ -198,6 +203,9 @@
           gnome-doc-prepare, gnome-doc-tool, xml2po
         </seg>
         <seg>
+          &None;
+        </seg>
+        <seg>
           /usr/lib/python&python2-majorver;/site-packages/xml2po,
           /usr/share/gnome-doc-utils,
           /usr/share/xml/gnome,
@@ -206,7 +214,7 @@
           /usr/share/gnome/help/gnome-doc-xslt
         </seg>
         <seg>
-          カスタム DocBook XSLT スタイルシート
+          Custom DocBook XSLT stylesheets
         </seg>
 @z
 

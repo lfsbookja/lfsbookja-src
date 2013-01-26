@@ -124,22 +124,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--bindir=/bin</parameter>: This parameter places the
-    <command>ed</command> binary into the root filesystem.</para>
-@y
-    <para>
-    <parameter>--bindir=/bin</parameter>:
-    このパラメーターは <command>ed</command> の実行バイナリをルートファイルシステムにインストールします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

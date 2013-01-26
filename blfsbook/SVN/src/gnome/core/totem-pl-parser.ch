@@ -169,14 +169,19 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>
+          None
+        </seg>
         <seg>
           libtotem-plparser-mini.so and libtotem-plparser.so
         </seg>
@@ -185,6 +190,9 @@
           /usr/share/gtk-doc/html/totem-pl-parser
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
         <seg>
           libtotem-plparser-mini.so, libtotem-plparser.so
         </seg>

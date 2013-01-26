@@ -134,16 +134,32 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
           /usr/share/icons/gnome/scalable
         </seg>
 @y
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
+        </seg>
         <seg>
           /usr/share/icons/gnome/scalable
         </seg>

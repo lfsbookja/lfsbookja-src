@@ -191,9 +191,11 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -202,17 +204,23 @@
           gnome-control-center and gnome-sound-applet
         </seg>
         <seg>
+          None
+        </seg>
+        <seg>
           /usr/lib/control-center-1,
           /usr/share/gnome-control-center and
           /usr/share/sounds/gnome
         </seg>
 @y
         <seg>
-          gnome-control-center and gnome-sound-applet
+          gnome-control-center, gnome-sound-applet
+        </seg>
+        <seg>
+          &None;
         </seg>
         <seg>
           /usr/lib/control-center-1,
-          /usr/share/gnome-control-center and
+          /usr/share/gnome-control-center,
           /usr/share/sounds/gnome
         </seg>
 @z

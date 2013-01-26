@@ -144,25 +144,29 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>xfce4-notifyd-config.</seg>
+        <seg>xfce4-notifyd-config</seg>
+        <seg>None</seg>
         <seg>
           /usr/share/themes/Default/xfce-notify-4.0,
           /usr/share/themes/Smoke/xfce-notify-4.0 and
-          /usr/share/themes/ZOMG-PONIES!/xfce-notify-4.0.
+          /usr/share/themes/ZOMG-PONIES!/xfce-notify-4.0
         </seg>
 @y
-        <seg>xfce4-notifyd-config.</seg>
+        <seg>xfce4-notifyd-config</seg>
+        <seg>&None;</seg>
         <seg>
           /usr/share/themes/Default/xfce-notify-4.0,
           /usr/share/themes/Smoke/xfce-notify-4.0,
-          /usr/share/themes/ZOMG-PONIES!/xfce-notify-4.0.
+          /usr/share/themes/ZOMG-PONIES!/xfce-notify-4.0
         </seg>
 @z
 
