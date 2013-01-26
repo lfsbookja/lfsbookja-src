@@ -122,7 +122,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -131,12 +131,14 @@
 
 @x
         <seg>None</seg>
-        <seg>libical.{so,a}, libicalss.{so,a}, and libicalvcal.{so,a}</seg>
-        <seg>/usr/include/libical</seg>
+        <seg>libical{,_cxx}.{so,a}, libicalss{,_cxx}.{so,a}, libicalvcal.{so,a},
+        and (optionally) the Python _LibicalWrap.{so,a} modules</seg>
+        <seg>/usr/include/libical and /usr/share/doc/libical-&libical-version;</seg>
 @y
         <seg>&None;</seg>
-        <seg>libical.{so,a}, libicalss.{so,a}, libicalvcal.{so,a}</seg>
-        <seg>/usr/include/libical</seg>
+        <seg>libical{,_cxx}.{so,a}, libicalss{,_cxx}.{so,a}, libicalvcal.{so,a},
+        (任意のビルドにより) _LibicalWrap.{so,a} Python モジュール</seg>
+        <seg>/usr/include/libical, /usr/share/doc/libical-&libical-version;</seg>
 @z
 
 @x
