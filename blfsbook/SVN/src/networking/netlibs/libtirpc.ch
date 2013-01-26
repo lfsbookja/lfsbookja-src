@@ -166,6 +166,15 @@
 @z
 
 @x
+      <command>sed "s@AM_CONFIG_HEADER@AC_CONFIG_HEADERS@g"
+      -i configure.ac</command>: This sed fixes some issues with
+      <application>Automake</application> 1.13 and later.
+@y
+      <command>sed "s@AM_CONFIG_HEADER@AC_CONFIG_HEADERS@g"
+      -i configure.ac</command>: この sed コマンドは <application>Automake</application> 1.13 以降にて発生する問題を修正します。
+@z
+
+@x
       <command>mv -v /usr/lib/libtirpc.so.* ...</command>: Move shared 
       libraries into /lib so they are available before /usr is mounted.
 @y

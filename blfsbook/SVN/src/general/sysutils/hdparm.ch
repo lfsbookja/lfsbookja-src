@@ -30,9 +30,8 @@
       is useful for controlling ATA/IDE controllers and hard drives both to
       increase performance and sometimes to increase stability.
 @y
-      The <application>Hdparm</application> package contains an utility that
-      is useful for controlling ATA/IDE controllers and hard drives both to
-      increase performance and sometimes to increase stability.
+      <application>Hdparm</application> パッケージは ATA/IDE コントローラーやハードディスクを取り扱う有用なユーティリティーを提供します。
+      これらはパフォーマンスを向上させたり、安定性を向上させたりするものです。
 @z
 
 @x
@@ -42,11 +41,9 @@
         are doing. If in doubt, it is recommended that you leave the default
         kernel parameters alone.
 @y
-        As well as being useful, incorrect usage of
-        <application>Hdparm</application> can destroy your information and in
-        rare cases, drives. Use with caution and make sure you know what you
-        are doing. If in doubt, it is recommended that you leave the default
-        kernel parameters alone.
+        本パッケージは有用であるのと同時に、もし誤って用いたとすると、データを失ったり、場合によってはハードディスクを破壊することも起こり得ます。
+        利用にあたっては十分に注意し、何を行っているかを理解した上で用いてください。
+        利用方法が不明であるなら、デフォルトのカーネルパラメーターをそのまま用いることをお勧めします。
 @z
 
 @x
@@ -107,8 +104,7 @@
       Build <application>Hdparm</application> by running the following
       command:
 @y
-      Build <application>Hdparm</application> by running the following
-      command:
+      以下のコマンドを実行して <application>Hdparm</application> をビルドします。
 @z
 
 @x
@@ -147,17 +143,33 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           hdparm
         </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
         <seg>
           hdparm
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

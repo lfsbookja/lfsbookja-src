@@ -156,17 +156,33 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           pkg-config
         </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
         <seg>
           pkg-config
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

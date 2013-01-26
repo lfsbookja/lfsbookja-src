@@ -122,6 +122,20 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>sed -i 's/#include ...</command>: This sed fixes building against
+      the <application>Glibc</application> 2.17.
+@y
+      <command>sed -i 's/#include ...</command>:
+      この sed コマンドにより、<application>Glibc</application> 2.17 にてビルドできるように修正します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

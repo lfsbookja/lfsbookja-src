@@ -85,7 +85,7 @@
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">i
+    <para role="optional">
       <xref linkend="libffi"/> 
     </para>
 @z

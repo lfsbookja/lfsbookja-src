@@ -152,6 +152,15 @@
 @z
 
 @x
+    <para>otherwise copy the <application>junit</application> jar file to the 
+    local directory tree.</para>
+@y
+    <para>
+    あるいは <application>junit</application> jar ファイルをローカルディレクトリにコピーしても構いません。
+    </para>
+@z
+
+@x
     <para>Install <application>Apache Ant</application> by running the following
     commands:</para>
 @y

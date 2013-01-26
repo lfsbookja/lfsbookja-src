@@ -148,6 +148,16 @@
 @z
 
 @x
+    <para><application>Fcron</application> does not handle the <option>--without-sendmail</option>
+    option correctly. Fix it by running he following commands:</para>
+@y
+    <para>
+    <application>Fcron</application> は <option>--without-sendmail</option> オプションを正しく処理しません。
+    以下のコマンドを実行してこれを修正します。
+    </para>
+@z
+
+@x
     <para>Install <application>Fcron</application> by running the following
     commands:</para>
 @y
