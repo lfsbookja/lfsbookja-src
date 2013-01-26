@@ -77,6 +77,17 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <!-- <para role="optional"><xref linkend="db"/></para> -->
+    <para role="optional"><xref linkend="python2"/> (must have
+    <ulink url="http://www.swig.org/">SWIG</ulink> also)</para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <!-- <para role="optional"><xref linkend="db"/></para> -->
+    <para role="optional"><xref linkend="python2"/> (<ulink url="http://www.swig.org/">SWIG</ulink> も必要)</para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -110,6 +121,30 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><parameter>--enable-cxx</parameter>: This parameter builds C++
+    <application>libical</application> library bindings.</para>
+@y
+    <para><parameter>--enable-cxx</parameter>:
+    本パラメーターは <application>libical</application> ライブラリの C++ バインディングをビルドします。
+    </para>
+@z
+
+@x
+    <para><option>--enable-python</option>: This option builds Python
+    <application>libical</application> bindings.</para>
+@y
+    <para><option>--enable-python</option>:
+    本オプションは <application>libical</application> の Python バインディングをビルドします。
     </para>
 @z
 

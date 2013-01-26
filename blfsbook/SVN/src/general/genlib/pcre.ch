@@ -73,6 +73,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">PCRE Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;PCRE&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <ulink url="http://valgrind.org/">Valgrind</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <ulink url="http://valgrind.org/">Valgrind</ulink>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -109,27 +127,6 @@
     <title>&CommandExplanations;</title>
 @z
 
-% @x
-%     <para><option>--libdir=/lib</option>: This option makes it install its
-%     libraries into /lib. If you reinstall <application>Grep</application> after
-%     installing <application>PCRE</application>, <application>Grep</application>
-%     will get linked against <application>PCRE</application> and this may cause
-%     problems during the boot process if
-%     <filename class="directory">/usr</filename> is a separate mount
-%     point. If you have <filename class="directory">/usr/lib</filename> on the
-%     same partition as <filename class="directory">/lib</filename> you can omit
-%     this option</para>
-% @y
-%     <para><option>--libdir=/lib</option>:
-%     このオプションは各ライブラリを /lib にインストールすることを指示します。
-%     <application>PCRE</application> をインストールした後に <application>Grep</application> を再インストールする場合には注意が必要です。
-%     <application>PCRE</application> をリンクした <application>Grep</application> は、<filename
-%     class="directory">/usr</filename> が独立したマウントポイントにマウントされていると、システム起動時に問題が発生します。
-%     <filename class="directory">/usr/lib</filename> が <filename
-%     class="directory">/lib</filename> と同一パーティションにあるなら、このオプションを省略して構いません。
-%     </para>
-% @z
-
 @x
       <option>--enable-utf</option>: This switch includes the code for
       handling UTF-8 character strings in the library.
@@ -165,6 +162,17 @@
 @y
       <option>--enable-pcregrep-libbz2</option>:
       このスイッチは <command>pcregrep</command> に対して、<filename class="extension">.bz2</filename> により圧縮されたファイルの読込機能を付与します。
+@z
+
+@x
+      <command>mv -v /usr/lib/libpcre.so.* /lib</command>: Moves the
+      <application>PCRE</application> library on the root filesystem
+      so that it is available in case <command>grep</command>
+      gets reinstalled with <application>PCRE</application> support.
+@y
+      <command>mv -v /usr/lib/libpcre.so.* /lib</command>:
+      <application>PCRE</application> ライブラリをルートファイルシステムに移動します。
+      これは <command>grep</command> が <application>PCRE</application> サポートとともに再ビルドされても正常動作するようにするためです。
 @z
 
 @x

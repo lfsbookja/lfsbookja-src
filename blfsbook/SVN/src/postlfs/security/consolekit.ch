@@ -236,9 +236,9 @@
         You will also need a helper script that creates a file in
         <filename class="directory">/var/run/console</filename>
         named as the currently logged in user and that contains the
-        <application>D-Bus</application> address of the session. You
-        can create the script by running the following commands as
-        the <systemitem class="username">root</systemitem> user:
+        <application>D-Bus</application> address of the session. 
+
+        <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し、そのスクリプトファイルを生成します。
 @z
 
 @x

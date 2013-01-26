@@ -123,6 +123,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required (Runtime)</bridgehead>
+    <para role="required">    
+      <xref linkend="SpiderMonkey"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="required">    
+      <xref linkend="SpiderMonkey"/>
+    </para>
+@z
+
+@x
         If <xref linkend="libxslt"/> is installed then <xref linkend="DocBook"/> 
         and <xref linkend="docbook-xsl"/> are required. If you have installed
         <xref linkend="libxslt"/>, but you do not want to install any of the

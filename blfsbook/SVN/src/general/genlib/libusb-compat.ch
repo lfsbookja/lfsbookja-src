@@ -137,17 +137,21 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>libusb-config</seg>
         <seg>libusb.so</seg>
+        <seg>None</seg>
 @y
         <seg>libusb-config</seg>
         <seg>libusb.so</seg>
+        <seg>&None;</seg>
 @z
 
 @x

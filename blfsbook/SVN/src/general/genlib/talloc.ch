@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect3">Talloc Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Talloc Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Talloc&Dependencies2;</bridgehead>
 @z
 
 @x
