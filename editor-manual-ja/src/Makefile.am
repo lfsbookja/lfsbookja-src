@@ -1,6 +1,5 @@
 SUBDIRS = chapter01 chapter02 chapter03 chapter04 \
 	chapter05 chapter06 prologue
-#stylesheets
 CHANGE_FILES = \
 	general.ch \
 	index.ch
@@ -26,7 +25,11 @@ general.ent: $(ORGdir)/general.ent $(srcdir)/general.ch
 index.xml: $(ORGdir)/index.xml $(srcdir)/index.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
 
-lfs:
+_stylesheets:
+	$(MKDIR_P) stylesheets
+	cp -R $(ORGdir)/stylesheets/* stylesheets
+
+lfs: _stylesheets
 	$(XSLTPROC) --xinclude --nonet -stringparam chunk.quietly $(CHUNK_QUIET) \
 	-stringparam base.dir $(BASEDIR)/ stylesheets/lfs-chunked.xsl index.xml
 
