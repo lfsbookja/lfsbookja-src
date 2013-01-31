@@ -40,7 +40,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x --enable-widec
           <para>This switch causes wide-character libraries (e.g., <filename
           class="libraryfile">libncursesw.so.&ncurses-version;</filename>)
           to be built instead of normal ones (e.g., <filename
@@ -51,12 +51,21 @@
           source-compatible, but not binary-compatible.</para>
 @y
           <para>
-          このオプションは通常のライブラリ (<filename
+          本スイッチは通常のライブラリ (<filename
           class="libraryfile">libncurses.so.&ncurses-version;</filename>) ではなくワイド文字対応のライブラリ (<filename
           class="libraryfile">libncursesw.so.&ncurses-version;</filename>) をビルドすることを指示します。
           ワイド文字対応のライブラリは、マルチバイトロケールと従来の 8ビットロケールの双方に対して利用可能です。
           通常のライブラリでは 8ビットロケールに対してしか動作しません。
           ワイド文字対応と通常のものとでは、ソース互換があるもののバイナリ互換がありません。
+          </para>
+@z
+
+@x --enable-pc-files
+          <para>This switch generates and installs .pc files for pkg-config.
+          </para>
+@y
+          <para>
+          本スイッチは pkg-config 用の .pc ファイルを生成しインストールすることを指示します。
           </para>
 @z
 

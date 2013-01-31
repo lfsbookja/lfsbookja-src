@@ -29,8 +29,8 @@
     LFS ブック日本語版の変更履歴を示すために設けています。
    </para>
    <para>
-   「SVN-20100101」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
-   また「Changeset 1234」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
+   「SVN-20130123」という表記は、オリジナル LFS ブック SVN 版のバージョン番号を意味します。
+   また「Changeset 12345」という表記は、オリジナル XML ソースファイルの Subversion 管理下でのリビジョン (その参照ページ) を意味します。
    </para>
   </note>
 
@@ -52,6 +52,36 @@
     </listitem>
 
 -->
+
+    <listitem>
+      <para>2013-01-31</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20130130,
+          Changeset
+          <ulink url="&lfs-rev-root;10111">10111</ulink> ～
+          <ulink url="&lfs-rev-root;10113">10113</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>2013-01-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SVN-20130127,
+          Changeset
+          <ulink url="&lfs-rev-root;10108">10108</ulink> ～
+          <ulink url="&lfs-rev-root;10110">10110</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
 
     <listitem>
       <para>2013-01-26</para>

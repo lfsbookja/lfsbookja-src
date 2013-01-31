@@ -48,6 +48,69 @@
 @z
 
 @x
+      <para>2013-01-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change ncurses instructions to create
+          and install .pc files.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Ncurses にて .pc ファイルを生成しインストールする手順とする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-01-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.46.  Fixes
+          <ulink url="&lfs-ticket-root;3278">#3278</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.7.5.  Fixes
+          <ulink url="&lfs-ticket-root;3277">#3277</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.46 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3278">#3278</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.7.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3277">#3277</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to pkg-config-0.28. Fixes
+          <ulink url="&lfs-ticket-root;3276">#3276</ulink>
+          </para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-01-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - pkg-config-0.28 へのアップデート。
+          <ulink url="&lfs-ticket-root;3276">#3276</ulink> を Fix に。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-01-25</para>
       <itemizedlist>
         <listitem>

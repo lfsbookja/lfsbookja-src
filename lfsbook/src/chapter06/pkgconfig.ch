@@ -36,6 +36,31 @@
 @z
 
 @x
+      <title>The meaning of the new configure options:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+@z
+
+@x --with-internal-glib
+          <para>This will allow pkg-config to use it's internal version of 
+          glib because an external version is not available in LFS.</para>
+@y
+          <para>
+          これは pkg-config が内包しているバージョンの glib を利用するようにします。
+          LFS においては glib をインストールせず利用できないからです。
+          </para>
+@z
+
+@x --disable-host-tool
+          <para>This option disables the creation of an undesired hard link
+          to the pkg-config program.</para>
+@y
+          <para>
+          本オプションは、pkg-config プログラムに対しての不要なハードリンクを生成しないようにします。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
