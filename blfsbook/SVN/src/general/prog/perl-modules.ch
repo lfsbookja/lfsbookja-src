@@ -109,7 +109,7 @@
 @z
 
 @x
-              <xref linkend="perl-lwp"/> (optionally used during the tests)
+              <xref linkend="perl-lwp"/> (optionally used in the test suite)
 @y
               <xref linkend="perl-lwp"/> (任意; テスト時に利用される)
 @z

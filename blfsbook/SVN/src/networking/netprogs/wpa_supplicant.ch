@@ -170,13 +170,13 @@
 @x
       If you wish to use <application>WPA Supplicant</application> with
       <xref linkend="NetworkManager"/>, make sure that you have installed
-      <xref linkend="dbus"/> and <xref linkend="libxml2"/>, then add
+      <xref linkend="dbus"/> and <xref linkend="libxml2"/>, then add the
       following options to the <application>WPA Supplicant</application>
       build configuration file by running the following command:
 @y
       If you wish to use <application>WPA Supplicant</application> with
       <xref linkend="NetworkManager"/>, make sure that you have installed
-      <xref linkend="dbus"/> and <xref linkend="libxml2"/>, then add
+      <xref linkend="dbus"/> and <xref linkend="libxml2"/>, then add the
       following options to the <application>WPA Supplicant</application>
       build configuration file by running the following command:
 @z
@@ -196,11 +196,9 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem>
-      user:
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem>
-      user:
+      Now, as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -218,12 +216,12 @@
 @z
 
 @x
-        You will need to restart system <application>D-Bus</application> daemon
-        before you can use <application>WPA Supplicant</application>
+        You will need to restart the system <application>D-Bus</application> daemon
+        before you can use the <application>WPA Supplicant</application>
         <application>D-Bus</application> interface.
 @y
-        You will need to restart system <application>D-Bus</application> daemon
-        before you can use <application>WPA Supplicant</application>
+        You will need to restart the system <application>D-Bus</application> daemon
+        before you can use the <application>WPA Supplicant</application>
         <application>D-Bus</application> interface.
 @z
 
@@ -246,13 +244,13 @@
 @z
 
 @x
-        To connect to an access point that uses a password you need to put
+        To connect to an access point that uses a password, you need to put
         the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
         <command>wpa_passphrase</command> to generate this. SSID is the string
         that the access point/router transmits to identify itself. As the
         <systemitem class="username">root</systemitem> user:
 @y
-        To connect to an access point that uses a password you need to put
+        To connect to an access point that uses a password, you need to put
         the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
         <command>wpa_passphrase</command> to generate this. SSID is the string
         that the access point/router transmits to identify itself. As the

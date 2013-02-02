@@ -20,7 +20,7 @@
 @z
 
 @x
-      The <application>Gvfs</application> package is an userspace virtual
+      The <application>Gvfs</application> package is a userspace virtual
       filesystem designed to work with the I/O abstractions of GLib's GIO
       library.
 @y

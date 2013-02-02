@@ -175,29 +175,29 @@
         There is a conflict between the <application>Cups</application>
         <application>libusb</application> backend and the usblp kernel
         driver. If you want to use <application>Cups</application> with
-        <application>libusb</application> <emphasis>do not</emphasis>
+        <application>libusb</application>, <emphasis>do not</emphasis>
         enable USB Printer support in your kernel.
 @y
         There is a conflict between the <application>Cups</application>
         <application>libusb</application> backend and the usblp kernel
         driver. If you want to use <application>Cups</application> with
-        <application>libusb</application> <emphasis>do not</emphasis>
+        <application>libusb</application>, <emphasis>do not</emphasis>
         enable USB Printer support in your kernel.
 @z
 
 @x
-      If you want to use the kernel usblp driver enable the following
+      If you want to use the kernel usblp driver, enable the following
       options in your kernel configuration and recompile the kernel:
 @y
-      If you want to use the kernel usblp driver enable the following
+      If you want to use the kernel usblp driver, enable the following
       options in your kernel configuration and recompile the kernel:
 @z
 
 @x
-      If you have a parallel printer enable the following options in your
+      If you have a parallel printer, enable the following options in your
       kernel configuration and recompile the kernel:
 @y
-      If you have a parallel printer enable the following options in your
+      If you have a parallel printer, enable the following options in your
       kernel configuration and recompile the kernel:
 @z
 
@@ -208,7 +208,7 @@
 @z
 
 @x
-      You will need to add the <systemitem class="username">lp</systemitem>
+      You will need to add an <systemitem class="username">lp</systemitem>
       user, as <application>Cups</application> will create some files owned
       by this user. (The <systemitem class="username">lp</systemitem> user
       is the default used by <application>Cups</application>, but may be
@@ -216,7 +216,7 @@
       <command>configure</command> script.) Use the following command as
       the <systemitem class="username">root</systemitem> user:
 @y
-      You will need to add the <systemitem class="username">lp</systemitem>
+      You will need to add an <systemitem class="username">lp</systemitem>
       user, as <application>Cups</application> will create some files owned
       by this user. (The <systemitem class="username">lp</systemitem> user
       is the default used by <application>Cups</application>, but may be
@@ -226,23 +226,23 @@
 @z
 
 @x
-      You will also need dedicated group that will contain users allowed to
+      You will also need a dedicated group that will contain users allowed to
       do <application>Cups</application> administrative tasks. Add the group
       by running the following command as the
       <systemitem class="username">root</systemitem> user:
 @y
-      You will also need dedicated group that will contain users allowed to
+      You will also need a dedicated group that will contain users allowed to
       do <application>Cups</application> administrative tasks. Add the group
       by running the following command as the
       <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      If you want to add an user to the <application>Cups</application>
+      If you want to add a user to the <application>Cups</application>
       administrative group, run the following command as the
       <systemitem class="username">root</systemitem> user:
 @y
-      If you want to add an user to the <application>Cups</application>
+      If you want to add a user to the <application>Cups</application>
       administrative group, run the following command as the
       <systemitem class="username">root</systemitem> user:
 @z
@@ -287,21 +287,21 @@
 @z
 
 @x
-      Create basic <application>Cups</application> client configuration
+      Create a basic <application>Cups</application> client configuration
       file by running the following command as the
       <systemitem class="username">root</systemitem> user:
 @y
-      Create basic <application>Cups</application> client configuration
+      Create a basic <application>Cups</application> client configuration
       file by running the following command as the
       <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      Remove filters that are now part of <application>Cups Filters</application>
+      Remove filters that are now part of the <application>Cups Filters</application>
       package by running the following commands as the
       <systemitem class="username">root</systemitem> user:
 @y
-      Remove filters that are now part of <application>Cups Filters</application>
+      Remove filters that are now part of the <application>Cups Filters</application>
       package by running the following commands as the
       <systemitem class="username">root</systemitem> user:
 @z
@@ -314,12 +314,12 @@
 
 @x
       <parameter>--with-rcdir=/tmp/cupsinit</parameter>: This switch tells
-      build process to install the shipped bootscript into
+      the build process to install the shipped bootscript into
       <filename class="directory">/tmp</filename> instead of
       <filename class="directory">/etc/rc.d</filename>.
 @y
       <parameter>--with-rcdir=/tmp/cupsinit</parameter>: This switch tells
-      build process to install the shipped bootscript into
+      the build process to install the shipped bootscript into
       <filename class="directory">/tmp</filename> instead of
       <filename class="directory">/etc/rc.d</filename>.
 @z
@@ -383,12 +383,12 @@
 @z
 
 @x
-        If you want the <application>Cups</application> to start
+        If you want the <application>Cups</application> print service to start
         automatically when the system is booted, install the init
         script included in the <xref linkend="bootscripts"/>
         package:
 @y
-        If you want the <application>Cups</application> to start
+        If you want the <application>Cups</application> print service to start
         automatically when the system is booted, install the init
         script included in the <xref linkend="bootscripts"/>
         package:
