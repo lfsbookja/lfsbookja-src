@@ -77,14 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/>
-      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
+      <xref linkend="intltool"/> and
+      <xref linkend="pkgconfig"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/>
-      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
+      <xref linkend="intltool"/>,
+      <xref linkend="pkgconfig"/>
     </para>
 @z
 

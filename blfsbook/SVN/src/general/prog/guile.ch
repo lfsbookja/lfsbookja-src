@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <!-- Installed in LFS <xref linkend="pkgconfig"/>, -->
+      <xref linkend="pkgconfig"/>,
       <xref linkend="gc"/>,
       <xref linkend="libffi"/>, and 
       <xref linkend="libunistring"/>
@@ -87,7 +87,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <!-- Installed in LFS <xref linkend="pkgconfig"/>, -->
+      <xref linkend="pkgconfig"/>,
       <xref linkend="gc"/>,
       <xref linkend="libffi"/>,
       <xref linkend="libunistring"/>

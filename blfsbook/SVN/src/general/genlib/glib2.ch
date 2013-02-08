@@ -88,15 +88,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libffi"/> and
-      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
+      <xref linkend="libffi"/>,
+      <xref linkend="pkgconfig"/> and
       <xref linkend="python2"/>
     </para> 
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libffi"/>,
-      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
+      <xref linkend="pkgconfig"/>,
       <xref linkend="python2"/>
     </para> 
 @z

@@ -116,7 +116,7 @@
     <xref linkend="pcre"/>,
     <xref linkend="aspell"/>,
     <xref linkend="enchant"/>,
-    <!-- <xref linkend="pkgconfig"/>, -->
+    <xref linkend="pkgconfig"/>,
     <!-- <xref linkend="recode"/>, -->
     <xref linkend="expat"/> (deprecated alternative to <xref linkend="libxml2"/>),
     <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
@@ -134,7 +134,7 @@
     <xref linkend="pcre"/>,
     <xref linkend="aspell"/>,
     <xref linkend="enchant"/>,
-    <!-- <xref linkend="pkgconfig"/>, -->
+    <xref linkend="pkgconfig"/>,
     <!-- <xref linkend="recode"/>, -->
     <xref linkend="expat"/> (deprecated alternative to <xref linkend="libxml2"/>),
     <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
