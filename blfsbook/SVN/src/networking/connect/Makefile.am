@@ -1,8 +1,8 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author:$
-## $Rev:$
+## $Author$
+## $Rev$
 ## $Date::                           $
 ##
 BOOKdir = $(top_builddir)/@bookdir@/networking/connect
