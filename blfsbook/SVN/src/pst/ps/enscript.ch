@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY enscript-time          "less than 0.1 SBU">
-@y
-  <!ENTITY enscript-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to Enscript</title>
 @y
     <title>&IntroductionTo1;Enscript&IntroductionTo2;</title>
@@ -93,20 +87,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-        url="&patch-root;/enscript-&enscript-version;-security_fixes-1.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink
-        url="&patch-root;/enscript-&enscript-version;-security_fixes-1.patch"/></para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/Enscript"/></para>
 @y
@@ -131,10 +111,11 @@
 
 @x
     <para>If you have <xref linkend="texlive"/> installed, you can create
-    Postscript and PDF documentation by issuing the following command:</para>
+    Postscript and PDF documentation by issuing:
+    <command>make -C docs ps pdf</command>.</para>
 @y
     <para>
-    <xref linkend="texlive"/> をインストールしている場合は、以下のコマンドを実行すれば Postscript および PDF によるドキュメントを生成することができます。
+    <xref linkend="texlive"/> をインストールしている場合は、<command>make -C docs ps pdf</command> を実行すれば Postscript および PDF によるドキュメントを生成することができます。
     </para>
 @z
 
@@ -199,11 +180,11 @@
 
 @x
     <para><parameter>--with-media=Letter</parameter>: This switch sets the
-    medium format to letter.</para>
+    medium format to letter size instead of the A4 default.</para>
 @y
     <para>
     <parameter>--with-media=Letter</parameter>:
-    このパラメーターはメディアフォーマットを letter とします。
+    このパラメーターはメディアフォーマットを、デフォルトの A4 ではなく letter とします。
     </para>
 @z
 

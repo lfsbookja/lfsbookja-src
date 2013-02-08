@@ -84,12 +84,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-proto"/> and
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="xorg7-proto"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-proto"/>,
-    <xref linkend="pkgconfig"/></para>
+    <para role="required">
+      <xref linkend="xorg7-proto"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
+    </para>
 @z
 
 @x

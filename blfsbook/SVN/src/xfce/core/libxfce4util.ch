@@ -77,20 +77,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/>  and
-      <xref linkend="pkgconfig"/>.
+      <xref linkend="intltool"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="intltool"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>.</para>
+    <para role="optional"><xref linkend="gtk-doc"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="gtk-doc"/></para>

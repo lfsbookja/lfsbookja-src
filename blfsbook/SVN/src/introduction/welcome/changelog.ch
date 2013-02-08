@@ -42,6 +42,83 @@
 @z
 
 @x
+      <para>February 7th, 2013</para>
+@y
+      <para>2013/02/07</para>
+@z
+@x
+          <para>[randy] - Minor modifications and added dependencies to the
+          SANE instructions.</para>
+@y
+          <para>[randy] - SANE において若干の修正と依存パッケージの追加。</para>
+@z
+
+@x
+      <para>February 4th, 2013</para>
+@y
+      <para>2013/02/04</para>
+@z
+@x
+          <para>[randy] - Updated Enscript to 1.6.6.</para>
+@y
+          <para>[randy] - Enscript 1.6.6 へのアップデート。</para>
+@z
+
+@x
+      <para>February 3rd, 2013</para>
+@y
+      <para>2013/02/03</para>
+@z
+
+@x
+      <para>February 2nd, 2013</para>
+@y
+      <para>2013/02/02</para>
+@z
+@x
+          <para>[randy] - Modified the build commands and dependencies in the
+          VLC instructions.</para>
+@y
+          <para>[randy] - VLC パッケージにて、ビルド時のコマンドと依存パッケージの情報を修正。</para>
+@z
+
+@x
+      <para>January 29th, 2013</para>
+@y
+      <para>2013/01/29</para>
+@z
+@x
+          <para>[randy] - Modified the dependencies for the XML::Simple Perl
+          Module instructions.</para>
+@y
+          <para>[randy] - Perl モジュール XML::Simple において依存パッケージの情報を修正。</para>
+@z
+
+@x
+      <para>January 26th, 2013</para>
+@y
+      <para>2013/01/26</para>
+@z
+@x
+          <para>[randy] - Added a dependency and modified the libical
+          instructions.</para>
+@y
+          <para>[randy] - libical パッケージにて依存パッケージの情報の追加と修正。</para>
+@z
+
+@x
+      <para>January 25th, 2013</para>
+@y
+      <para>2013/01/25</para>
+@z
+@x
+          <para>[krejzi] - Updated some GNOME Core packages to latest
+          available upstream.</para>
+@y
+          <para>[krejzi] - GNOME コアパッケージを、現時点にてアップストリームから入手できる最新のものにアップデート。</para>
+@z
+
+@x
       <para>January 5th, 2013</para>
       <itemizedlist>
         <listitem>

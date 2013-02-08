@@ -86,14 +86,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="libusb"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/>,
-      <xref linkend="pkgconfig"/>
+      <xref linkend="libusb"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
     </para>
 @z
 

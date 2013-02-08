@@ -78,14 +78,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/> and
-      <xref linkend="pkgconfig"/>
+      <xref linkend="libusb"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/>,
-      <xref linkend="pkg-config"/>
+      <xref linkend="libusb"/>
+      <!-- Installed in LFS <xref linkend="pkgconfig"/> -->
     </para>
 @z
 
@@ -132,10 +132,8 @@
       compressed <filename>usb.ids</filename>  alongside the
       uncompressed one.
 @y
-      <option>--disable-zlib</option>: This stops
-      <application>USB Utils</application> from installing a 
-      compressed <filename>usb.ids</filename>  alongside the
-      uncompressed one.
+      <option>--disable-zlib</option>:
+      本オプションの指定により、非圧縮版 <filename>usb.ids</filename> とともに提供される圧縮版 <filename>usb.ids</filename> はインストールしないようにします。
 @z
 
 @x
@@ -183,17 +181,33 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
           lsusb, update-usbids, usb-devices and usbhid-dump
         </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
         <seg>
           lsusb, update-usbids, usb-devices, usbhid-dump
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

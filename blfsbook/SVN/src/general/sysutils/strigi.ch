@@ -70,21 +70,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">Strigi Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-@y
-        <para>必須のパッチ: <ulink
-@z
-
-@x
-    <bridgehead renderas="sect3">strigi Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;strigi&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Strigi&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -165,34 +153,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><command>sed -i '/stdio/a...</command>: This sed fixes compiling with
-    <application>GCC</application> 4.7. It is safe to omit if compiling with older 
-    <application>GCC</application> versions.</para>
-@y
-    <para><command>sed -i '/stdio/a...</command>:
-    この sed コマンドは、<application>GCC</application> 4.7 によりコンパイルできるようにします。
-    <application>GCC</application> がこれよりも古いバージョンを用いる場合には、このコマンドを実行しなくて構いません。
-    </para>
-@z
-
-@x
-    <para><command>patch -Np1 -i ../strigi-&strigi-version;-ffmpeg.patch</command>: This
-    patch fixes compiling with <application>ffmpeg</application>. It is safe to omit 
-    if you don't have <application>ffmpeg</application>.</para>
-@y
-    <para><command>patch -Np1 -i ../strigi-&strigi-version;-ffmpeg.patch</command>:
-    このパッチは <application>ffmpeg</application> とともにコンパイルするためのものです。
-    <application>ffmpeg</application> をインストールしていない場合は、このコマンドを実行しなくて構いません。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -212,12 +172,10 @@
         <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd, strigidaemon and xmlindexer</seg>
         <seg>libsearchclient.so, libstreamanalyzer.so, libstreams.so, libstrigihtmlgui.so, 
 	  libstrigiqtdbusclient.so and several in /usr/lib/strigi</seg>
-	<seg>/usr/include/strigi, /usr/lib/strigi, /usr/lib/libsearchclient, /usr/lib/libstreamanalyzer, 
-	  /usr/lib/libstreams and /usr/share/strigi</seg>
+	<seg>/usr/include/strigi, /usr/lib/strigi and /usr/share/strigi</seg>
 @y
-        <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd, strigidaemon, xmlindexer</seg>
+        <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd, strigidaemon and xmlindexer</seg>
         <seg>libsearchclient.so, libstreamanalyzer.so, libstreams.so, libstrigihtmlgui.so, 
-	  libstrigiqtdbusclient.so, /usr/lib/strigi 配下にも数種のライブラリ</seg>
-	<seg>/usr/include/strigi, /usr/lib/strigi, /usr/lib/libsearchclient, /usr/lib/libstreamanalyzer, 
-	  /usr/lib/libstreams, /usr/share/strigi</seg>
+	  libstrigiqtdbusclient.so, /usr/lib/strigi 配下に数種のライブラリ</seg>
+	<seg>/usr/include/strigi, /usr/lib/strigi, /usr/share/strigi</seg>
 @z

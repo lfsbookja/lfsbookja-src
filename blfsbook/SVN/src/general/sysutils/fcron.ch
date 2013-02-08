@@ -73,6 +73,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Fcron Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Fcron&Dependencies2;</bridgehead>
@@ -148,16 +160,6 @@
 @z
 
 @x
-    <para><application>Fcron</application> does not handle the <option>--without-sendmail</option>
-    option correctly. Fix it by running he following commands:</para>
-@y
-    <para>
-    <application>Fcron</application> は <option>--without-sendmail</option> オプションを正しく処理しません。
-    以下のコマンドを実行してこれを修正します。
-    </para>
-@z
-
-@x
     <para>Install <application>Fcron</application> by running the following
     commands:</para>
 @y
@@ -184,6 +186,14 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>autoconf</command>: This command is required to rebuild 
+    <filename>configure</filename> using the fixed input file.</para>
+@y
+    <para><command>autoconf</command>:
+    修正したファイルに基づいて <filename>configure</filename> を再生成するために本コマンドを実行します。</para>
 @z
 
 @x

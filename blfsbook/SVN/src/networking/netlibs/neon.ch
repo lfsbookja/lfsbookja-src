@@ -78,12 +78,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libxml2"/> or
-    <xref linkend="expat"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/> or
+      <xref linkend="expat"/></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libxml2"/> または
-    <xref linkend="expat"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/> または
+      <xref linkend="expat"/></para>
 @z
 
 @x
@@ -91,20 +93,20 @@
     <para role="optional">
       <xref linkend="openssl"/> or
       <xref linkend="gnutls"/>,
-      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>
-      (requires <xref linkend="pkgconfig"/> to find it),
+      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>,
+      <!-- Installed in LFS (requires <xref linkend="pkgconfig"/> to find it), -->
       <xref linkend="mitkrb"/> and
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>.
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="openssl"/> または
       <xref linkend="gnutls"/>,
-      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>
-      (これを探し出すために <xref linkend="pkgconfig"/> も必要),
+      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>,
+      <!-- Installed in LFS (requires <xref linkend="pkgconfig"/> to find it), -->
       <xref linkend="mitkrb"/>,
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>.
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
     </para>
 @z
 
