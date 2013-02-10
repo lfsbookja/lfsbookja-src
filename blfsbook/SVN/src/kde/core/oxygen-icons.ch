@@ -77,6 +77,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Oxygen-icons Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Oxygen-icons&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+    <xref linkend="cmake"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+    <xref linkend="cmake"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:

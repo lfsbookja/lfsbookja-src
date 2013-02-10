@@ -82,21 +82,26 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kactivities"/> and
-    <xref linkend="qimageblitz"/>
+    <xref linkend="kactivities"/>,
+    <xref linkend="qimageblitz"/>,
+    <xref linkend="xcb-util-image"/> and
+    <xref linkend="xcb-util-renderutil"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="kactivities"/>,
-    <xref linkend="qimageblitz"/>
+    <xref linkend="qimageblitz"/>,
+    <xref linkend="xcb-util-image"/>,
+    <xref linkend="xcb-util-renderutil"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="kdepimlibs"/>, 
+    <xref linkend="kdepimlibs"/>,
+    <xref linkend="nepomuk-core"/>,
     <xref linkend="boost"/>, 
     <xref linkend="freetype2"/>, 
     <xref linkend="pciutils"/> and
@@ -105,7 +110,8 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="kdepimlibs"/>, 
+    <xref linkend="kdepimlibs"/>,
+    <xref linkend="nepomuk-core"/>,
     <xref linkend="boost"/>, 
     <xref linkend="freetype2"/>, 
     <xref linkend="pciutils"/>,
@@ -125,8 +131,9 @@
     <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>, 
     <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
     <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>, 
-    <ulink url="http://www.xmms.org/">XMMS</ulink> and
-    <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink>
+    <ulink url="http://www.xmms.org/">XMMS</ulink>,
+    <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink> and
+    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -141,7 +148,8 @@
     <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
     <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>, 
     <ulink url="http://www.xmms.org/">XMMS</ulink>,
-    <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink>
+    <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink> and
+    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
     </para>
 @z
 
@@ -181,10 +189,10 @@
 @z
 
 @x
-    <para><option>-DPYTHON_SITE_PACKAGES_INSTALL...</option>: This option is 
+    <para><option>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</option>: This option is 
     set to install the KDE Python objects in the correct place.</para>
 @y
-    <para><option>-DPYTHON_SITE_PACKAGES_INSTALL...</option>:
+    <para><option>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</option>:
     このオプションは KDE Python オブジェクトを適切なディレクトリにインストールします。
     </para>
 @z
@@ -211,10 +219,9 @@
         kdostartupconfig4, kfontinst, kfontview, kinfocenter, klipper,
         kmenuedit, krandom.kss, krandrstartup, krandrtray, krdb, krunner,
         ksmserver, ksplashqml, ksplashsimple, ksplashx, ksplashx_scale,
-        kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwrited,
-        oxygen-demo, oxygen-settings, oxygen-shadow-demo, plasma-desktop,
-        plasma-netbook, plasma-overlay, plasma-windowed, plasmaengineexplorer,
-        plasmawallpaperviewer, plasmoidviewer, remote-widgets-browser,
+        kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwin_gles,
+        kwrited, oxygen-demo, oxygen-settings, oxygen-shadow-demo,
+        plasma-desktop, plasma-netbook, plasma-overlay, plasma-windowed,
         solid-action-desktop-gen, solid-network, startkde and systemsettings
         </seg>
         <seg>several in &kde-dir;/lib</seg>
@@ -226,10 +233,9 @@
         kdostartupconfig4, kfontinst, kfontview, kinfocenter, klipper,
         kmenuedit, krandom.kss, krandrstartup, krandrtray, krdb, krunner,
         ksmserver, ksplashqml, ksplashsimple, ksplashx, ksplashx_scale,
-        kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwrited,
-        oxygen-demo, oxygen-settings, oxygen-shadow-demo, plasma-desktop,
-        plasma-netbook, plasma-overlay, plasma-windowed, plasmaengineexplorer,
-        plasmawallpaperviewer, plasmoidviewer, remote-widgets-browser,
+        kstartupconfig4, ksysguard, ksysguardd, ksystraycmd, kwin, kwin_gles,
+        kwrited, oxygen-demo, oxygen-settings, oxygen-shadow-demo,
+        plasma-desktop, plasma-netbook, plasma-overlay, plasma-windowed,
         solid-action-desktop-gen, solid-network, startkde and systemsettings
         </seg>
         <seg>several in &kde-dir;/lib</seg>

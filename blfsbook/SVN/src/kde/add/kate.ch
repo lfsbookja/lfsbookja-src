@@ -129,17 +129,14 @@
 @z
 
 @x
-        <seg>kate, ktesnippets_editor and kwrite</seg>
+        <seg>kate and kwrite</seg>
         <seg>libkateinterfaces.so, libkatepartinterfaces.so,
-        libkdeinit4_kate.so, libkdeinit4_kwrite.so,
-        libktexteditor_codesnippets_core.so and several in &kde-dir;/lib/kde4
-        </seg>
-        <seg>several in &kde-dir;/include and &kde-dir;/share</seg>
+        libkdeinit4_kate.so, libkdeinit4_kwrite.so and several in 
+        &kde-dir;/lib/kde4</seg>
+        <seg>&kde-dir;/include/kate and several in &kde-dir;/share</seg>
 @y
-        <seg>kate, ktesnippets_editor and kwrite</seg>
+        <seg>kate, kwrite</seg>
         <seg>libkateinterfaces.so, libkatepartinterfaces.so,
-        libkdeinit4_kate.so, libkdeinit4_kwrite.so,
-        libktexteditor_codesnippets_core.so and several in &kde-dir;/lib/kde4
-        </seg>
-        <seg>several in &kde-dir;/include and &kde-dir;/share</seg>
+        libkdeinit4_kate.so, libkdeinit4_kwrite.so, &kde-dir;/lib/kde4 に数種のライブラリ</seg>
+        <seg>&kde-dir;/include/kate, &kde-dir;/share に数種のディレクトリ</seg>
 @z

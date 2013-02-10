@@ -20,6 +20,7 @@ CHANGE_FILES = \
 	kde-runtime.ch              \
 	kde-workspace.ch            \
 	nepomuk-core.ch             \
+	nepomuk-widgets.ch          \
 	oxygen-icons.ch             \
 	phonon.ch                   \
 	phonon-backend-gstreamer.ch \
@@ -55,6 +56,7 @@ kdepimlibs.xml:               $(BOOKdir)/$@ $(srcdir)/kdepimlibs.ch
 kde-runtime.xml:              $(BOOKdir)/$@ $(srcdir)/kde-runtime.ch
 kde-workspace.xml:            $(BOOKdir)/$@ $(srcdir)/kde-workspace.ch
 nepomuk-core.xml:             $(BOOKdir)/$@ $(srcdir)/nepomuk-core.ch
+nepomuk-widgets.xml:          $(BOOKdir)/$@ $(srcdir)/nepomuk-widgets.ch
 oxygen-icons.xml:             $(BOOKdir)/$@ $(srcdir)/oxygen-icons.ch
 phonon.xml:                   $(BOOKdir)/$@ $(srcdir)/phonon.ch
 phonon-backend-gstreamer.xml: $(BOOKdir)/$@ $(srcdir)/phonon-backend-gstreamer.ch

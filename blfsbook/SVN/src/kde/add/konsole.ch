@@ -24,7 +24,7 @@
 @y
     <para>
     本パッケージは KDE の端末エミュレーターを提供します。
-    </para> 
+    </para>
 @z
 
 @x
@@ -78,11 +78,23 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kde-baseapps"/>
+    <xref linkend="kdelibs"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+    <xref linkend="kdelibs"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+    <xref linkend="kde-baseapps"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
     <xref linkend="kde-baseapps"/>
     </para>
 @z
@@ -140,8 +152,20 @@
         &kde-dir;/share/doc/HTML/en/konsole</seg>
 @y
         <seg>konsole, konsoleprofile</seg>
-        <seg>libkdeinit4_konsole.so, libkonsolepart.so and libkonsoleprivate.so
+        <seg>libkdeinit4_konsole.so, libkonsolepart.so, libkonsoleprivate.so
         </seg>
         <seg>&kde-dir;/share/apps/konsole,
         &kde-dir;/share/doc/HTML/en/konsole</seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x konsole
+          <para>is the KDE terminal emulator.</para>
+@y
+          <para>KDE 端末エミュレーター。</para>
 @z

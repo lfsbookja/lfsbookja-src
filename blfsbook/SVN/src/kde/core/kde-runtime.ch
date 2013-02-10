@@ -91,13 +91,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kactivities"/> and
+    <xref linkend="kdelibs"/> and
     <xref linkend="libtirpc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kactivities"/>,
+    <xref linkend="kdelibs"/>,
     <xref linkend="libtirpc"/>
     </para>
 @z
@@ -105,7 +105,8 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="nepomuk-core"/>,
+    <xref linkend="kactivities"/>,
+    <xref linkend="kdepimlibs"/>
     <xref linkend="alsa-lib"/>,
     <xref linkend="libjpeg"/> and 
     <xref linkend="exiv2"/>
@@ -113,9 +114,10 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="nepomuk-core"/>,
+    <xref linkend="kactivities"/>,
+    <xref linkend="kdepimlibs"/>
     <xref linkend="alsa-lib"/>,
-    <xref linkend="libjpeg"/> and 
+    <xref linkend="libjpeg"/>,
     <xref linkend="exiv2"/>
     </para>
 @z
@@ -196,7 +198,7 @@
 @z
 
 @x
-        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kdesu, kde4, kde4-menu,
+        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kde4, kde4-menu,
         kdebugdialog, keditfiletype, kfile4, kglobalaccel, khelpcenter,
         khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
         kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
@@ -206,13 +208,13 @@
         <seg>several in &kde-dir;/lib</seg>
         <seg>several in &kde-dir;/lib and &kde-dir;/share</seg>
 @y
-        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kdesu, kde4, kde4-menu,
+        <seg>kcmshell4, kde-cp, kde-mv, kde-open, kde4, kde4-menu,
         kdebugdialog, keditfiletype, kfile4, kglobalaccel, khelpcenter,
         khotnewstuff-upload, khotnewstuff4, kiconfinder, kioclient,
         kmimetypefinder, knotify4, kquitapp, kreadconfig, kstart, ksvgtopng,
         ktraderclient, ktrash, kuiserver, kwalletd, kwriteconfig,
         nepomukcontroller, plasma-remote-helper, plasmapkg, solid-hardware.
         </seg>
-        <seg>&kde-dir;/lib 内に数種のライブラリ</seg>
-        <seg>&kde-dir;/lib, &kde-dir;/share 内に数種のディレクトリ</seg>
+        <seg>&kde-dir;/lib 配下に数種のライブラリ</seg>
+        <seg>&kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ</seg>
 @z

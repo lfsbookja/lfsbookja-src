@@ -135,9 +135,9 @@
 @z
 
 @x
-        <seg>libxcb-util.{a,so}</seg>
+        <seg>libxcb-util.so</seg>
 @y
-        <seg>libxcb-util.{a,so}</seg>
+        <seg>libxcb-util.so</seg>
 @z
 
 @x

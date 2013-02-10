@@ -26,6 +26,8 @@ CHANGE_FILES = \
 	xbitmaps.ch            \
 	xcb-proto.ch           \
 	xcb-util.ch            \
+	xcb-util-image.ch      \
+	xcb-util-renderutil.ch \
 	xclock.ch              \
 	xcursor-themes.ch      \
 	xinit.ch               \
@@ -67,6 +69,8 @@ x7proto.xml:             $(BOOKdir)/$@ $(srcdir)/x7proto.ch
 xbitmaps.xml:            $(BOOKdir)/$@ $(srcdir)/xbitmaps.ch
 xcb-proto.xml:           $(BOOKdir)/$@ $(srcdir)/xcb-proto.ch
 xcb-util.xml:            $(BOOKdir)/$@ $(srcdir)/xcb-util.ch
+xcb-util-image.xml:      $(BOOKdir)/$@ $(srcdir)/xcb-util-image.ch
+xcb-util-renderutil.xml: $(BOOKdir)/$@ $(srcdir)/xcb-util-renderutil.ch
 xclock.xml:              $(BOOKdir)/$@ $(srcdir)/xclock.ch
 xcursor-themes.xml:      $(BOOKdir)/$@ $(srcdir)/xcursor-themes.ch
 xinit.xml:               $(BOOKdir)/$@ $(srcdir)/xinit.ch

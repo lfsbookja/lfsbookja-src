@@ -79,48 +79,38 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kdelibs"/>, 
-    <xref linkend="libxslt"/>, 
-    <xref linkend="gpgme"/>, 
-    <xref linkend="libical"/>,
-    <xref linkend="akonadi"/> and
-    <xref linkend="cyrus-sasl"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-    <xref linkend="kdelibs"/>, 
+    <xref linkend="nepomuk-core"/>,
     <xref linkend="libxslt"/>, 
     <xref linkend="gpgme"/>, 
     <xref linkend="libical"/>,
     <xref linkend="akonadi"/>,
-    <xref linkend="cyrus-sasl"/>
+    <xref linkend="cyrus-sasl"/> and
+    <xref linkend="boost"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+    <xref linkend="nepomuk-core"/>,
+    <xref linkend="libxslt"/>, 
+    <xref linkend="gpgme"/>, 
+    <xref linkend="libical"/>,
+    <xref linkend="akonadi"/>,
+    <xref linkend="cyrus-sasl"/>,
+    <xref linkend="boost"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="boost"/> and
-    <xref linkend="openldap"/>
+    <xref linkend="openldap"/> and
+    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="boost"/>,
-    <xref linkend="openldap"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-    <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-    <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>
+    <xref linkend="openldap"/>,
+    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
     </para>
 @z
 
@@ -170,13 +160,11 @@
 @z
 
 @x
-        <seg>none</seg>
+        <seg>akonadi_benchmarker and akonaditest</seg>
         <seg>several in &kde-dir;/lib</seg>
         <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
-        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>&kde-dir;/lib 内に数種のライブラリ</seg>
+        <seg>akonadi_benchmarker, akonaditest</seg>
+        <seg>&kde-dir;/lib 配下に数種のライブラリ</seg>
         <seg>&kde-dir;/include, &kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ
-        </seg>
 @z

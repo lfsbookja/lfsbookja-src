@@ -92,20 +92,22 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+    <xref linkend="kactivities"/>,
     <xref linkend="freetype2"/>, 
     <xref linkend="qimageblitz"/>, 
     <xref linkend="libtiff"/>, 
     <xref linkend="libjpeg"/> and
-    <xref linkend="poppler"/> (required for pdf support)
+    <xref linkend="poppler"/> (required for PDF support)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+    <xref linkend="kactivities"/>,
     <xref linkend="freetype2"/>, 
     <xref linkend="qimageblitz"/>, 
     <xref linkend="libtiff"/>, 
     <xref linkend="libjpeg"/>,
-    <xref linkend="poppler"/> (PDF サポートが必要)
+    <xref linkend="poppler"/> (PDF サポートに必要)
     </para>
 @z
 
@@ -123,6 +125,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="https://projects.kde.org/projects/extragear/base/plasma-mobile">ActiveApp</ulink>
+      (for developing applications for Plasma Active),
       <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (for PostScript support), 
       <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>, 
       <ulink url="http://djvu.org/">DjVuLibre</ulink> and
@@ -132,7 +136,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (PostScript サポートに必要), 
+      <ulink url="https://projects.kde.org/projects/extragear/base/plasma-mobile">ActiveApp</ulink>
+      (Plasma Active のアプリケーション開発のため),
+      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> (PostScript サポートのため), 
       <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>, 
       <ulink url="http://djvu.org/">DjVuLibre</ulink>,
       <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>
@@ -188,11 +194,10 @@
 @x
         <seg>okular</seg>
 	<seg>libokularcore.so and several in &kde-dir;/lib/kde4</seg>
-	<seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
-        </seg>
+        <seg>&kde-dir;/include/okular and several in &kde-dir;/lib and
+        &kde-dir;/share</seg>
 @y
         <seg>okular</seg>
-	<seg>libokularcore.so と &kde-dir;/lib/kde4 の配下に数種のライブラリ</seg>
-	<seg>&kde-dir;/include, &kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ
-        </seg>
+	<seg>libokularcore.so と &kde-dir;/lib/kde4 配下に数種のライブラリ</seg>
+        <seg>&kde-dir;/include/okular と &kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ</seg>
 @z

@@ -142,8 +142,10 @@
     <ulink url="http://www.gitorious.org/grantlee/pages/Home">Grantlee</ulink>, 
     <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>, 
     <ulink url="http://www.herqq.org/">HUPnP</ulink>, 
-    <xref linkend="mitkrb"/> and
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+    <xref linkend="mitkrb"/>,
+    <ulink url="http://www.openexr.com/">OpenEXR</ulink> and
+    <ulink url="http://www.freedesktop.org/wiki/Software/media-player-info">media-player-info</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
@@ -159,7 +161,9 @@
     <ulink url="http://oss.sgi.com/projects/fam/">FAM</ulink>, 
     <ulink url="http://www.herqq.org/">HUPnP</ulink>, 
     <xref linkend="mitkrb"/>,
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+    <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
+    <ulink url="http://www.freedesktop.org/wiki/Software/media-player-info">media-player-info</ulink>
+    </para>
 @z
 
 @x
@@ -242,19 +246,19 @@
 @x
         <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4,
         kde4-config, kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper,
-        kfilemetadatareader, kjs, kjscmd, kross, kshell4, kunittestmodrunner,
-        kwrapper4, makekdewidgets, meinproc4, meinproc4_simple, nepomuk-rcgen
-        and preparetips</seg>
+        kfilemetadatareader, kjs, kjscmd, kmailservice, kross, kshell4, 
+        ktelnetservice, kunittestmodrunner, kwrapper4, makekdewidgets,
+        meinproc4, meinproc4_simple, nepomuk-rcgen and preparetips</seg>
         <seg>several in &kde-dir;/lib</seg>
         <seg>several in &kde-dir;/include, &kde-dir;/lib and &kde-dir;/share
         </seg>
 @y
         <seg>checkXML, kbuildsycoca4, kconfig_compiler, kcookiejar4,
         kde4-config, kded4, kdeinit4, kdeinit4_shutdown, kdeinit4_wrapper,
-        kfilemetadatareader, kjs, kjscmd, kross, kshell4, kunittestmodrunner,
-        kwrapper4, makekdewidgets, meinproc4, meinproc4_simple, nepomuk-rcgen
-        and preparetips</seg>
+        kfilemetadatareader, kjs, kjscmd, kmailservice, kross, kshell4, 
+        ktelnetservice, kunittestmodrunner, kwrapper4, makekdewidgets,
+        meinproc4, meinproc4_simple, nepomuk-rcgen and preparetips</seg>
         <seg>&kde-dir;/lib 配下に数種のライブラリ</seg>
-        <seg>&kde-dir;/include, &kde-dir;/lib and &kde-dir;/share 配下に数種のディレクトリ
+        <seg>&kde-dir;/include, &kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ
         </seg>
 @z

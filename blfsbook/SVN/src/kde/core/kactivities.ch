@@ -88,6 +88,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+    <xref linkend="nepomuk-core"/> 
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+    <xref linkend="nepomuk-core"/> 
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -134,12 +146,16 @@
 
 @x
         <seg>kactivitymanagerd</seg>
-        <seg>libkactivities.so and several in &kde-dir;/lib/kde4</seg>
-        <seg>&kde-dir;/include/kactivities, &kde-dir;/include/KDE/KActivities
+        <seg>libkactivities.so, libkactivities-models.so and several in
+        &kde-dir;/lib/kde4</seg>
+        <seg>&kde-dir;/include/kactivities,
+        &kde-dir;/include/kactivities-models, &kde-dir;/include/KDE/KActivities,
+        &kde-dir;/lib/cmake/KActivities, &kde-dir;/lib/cmake/KActivities-models,
         and several in &kde-dir;/share</seg>
 @y
         <seg>kactivitymanagerd</seg>
-        <seg>libkactivities.so and several in &kde-dir;/lib/kde4</seg>
-        <seg>&kde-dir;/include/kactivities, &kde-dir;/include/KDE/KActivities
-        and several in &kde-dir;/share</seg>
+        <seg>libkactivities.so, libkactivities-models.so と &kde-dir;/lib/kde4 配下に数種のライブラリ</seg>
+        <seg>&kde-dir;/include/kactivities,
+        &kde-dir;/include/kactivities-models, &kde-dir;/include/KDE/KActivities,
+        &kde-dir;/lib/cmake/KActivities, &kde-dir;/lib/cmake/KActivities-models と &kde-dir;/share 配下に数種のディレクトリ</seg>
 @z
