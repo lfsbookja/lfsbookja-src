@@ -271,10 +271,10 @@
 
 @x
         Now edit <filename>/etc/inittab</filename> with the following
-        commands.
+        command.
 @y
         Now edit <filename>/etc/inittab</filename> with the following
-        commands.
+        command.
 @z
 
 @x

@@ -24,9 +24,8 @@
       graphical toolkit. It can be used in many areas of computer programming
       where high quality 2D graphics is an essential part of the project.
 @y
-      The Anti-Grain Geometry (AGG) package contains a general purpose C++
-      graphical toolkit. It can be used in many areas of computer programming
-      where high quality 2D graphics is an essential part of the project.
+      AGG (Anti-Grain Geometry) パッケージは、汎用的な C++ グラフィックツールキットです。
+      これは高品質な 2D グラフィックスを必要とするシステムに対して多用されています。
 @z
 
 @x
@@ -197,23 +196,31 @@
 @x libagg.so
           <para>contains the AGG API functions.</para>
 @y
-          <para>contains the AGG API functions.</para>
+          <para>
+          AGG API 関数を提供します。
+          </para>
 @z
 
 @x libaggfontfreetype.so
           <para>contains the AGG freetype font API functions.</para>
 @y
-          <para>contains the AGG freetype font API functions.</para>
+          <para>
+          AGG freetype フォント API 関数を提供します。
+          </para>
 @z
 
 @x libaggplatformsdl.so
           <para>contains the AGG SDL API functions that.</para>
 @y
-          <para>contains the AGG SDL API functions that.</para>
+          <para>
+          AGG SDL API 関数を提供します。
+          </para>
 @z
 
 @x libaggplatformX11.so
           <para>contains the AGG LibX11 API functions.</para>
 @y
-          <para>contains the AGG LibX11 API functions.</para>
+          <para>
+          AGG LibX11 API 関数を提供します。
+          </para>
 @z

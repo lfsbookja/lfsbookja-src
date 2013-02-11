@@ -165,9 +165,8 @@
       <application>PCRE-8.30</application>.
 @y
       <command>sed -i 's#info (r, NULL#full&amp;, 0#'
-      goffice/utils/regutf8.c</command>: This sed removes a reference to
-      pcre_info, a deprecated function that was removed from
-      <application>PCRE-8.30</application>.
+      goffice/utils/regutf8.c</command>: 本 sed コマンドは pcre_info への参照を取り除きます。
+      これは <application>PCRE-8.30</application> において削除された古い関数であるからです。
 @z
 
 @x

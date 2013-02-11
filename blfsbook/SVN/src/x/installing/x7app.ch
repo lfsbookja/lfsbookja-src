@@ -132,6 +132,16 @@
 @z
 
 @x
+    <para>First, create a list of files to be downloaded. This file will also
+    be used to verify the integrity of the downloads when complete:</para>
+@y
+    <para>
+    まずはダウンロードするファイル一覧を生成します。
+    このファイルは、ダウンロード後に各ファイルのチェックサムを確認する際にも利用します。 
+    </para>
+@z
+
+@x
     <para>To download the needed files using <application>wget</application>,
     use the following commands:</para>
 @y
@@ -144,6 +154,15 @@
     <title>Installation of Xorg Applications</title>
 @y
     <title>&InstallationOf1;Xorg アプリケーション&InstallationOf2;</title>
+@z
+
+@x
+    <para>First, start a subshell that will exit on error:</para>
+@y
+    <para>
+    まずはサブシェルを起動します。
+    こうしておけばエラー発生時に終了させることができます。
+    </para>
 @z
 
 @x

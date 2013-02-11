@@ -108,14 +108,6 @@
     <bridgehead renderas="sect3">TeX Live の依存パッケージ</bridgehead>
 @z
 
-% @x
-%     <bridgehead renderas="sect4">Required</bridgehead>
-%     <para role="required"><xref linkend="xz-utils"/></para>
-% @y
-%     <bridgehead renderas="sect4">&Required;</bridgehead>
-%     <para role="required"><xref linkend="xz-utils"/></para>
-% @z
-
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="gs"/>,
@@ -149,17 +141,15 @@
       <ulink url="http://sourceforge.net/projects/zziplib/">ZZIPlib</ulink>,
       <ulink url="http://www.gnu.org/software/clisp/">CLISP</ulink>,
       <ulink url="http://www.lua.org/">Lua</ulink>,
-      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>, and
+      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>,
       <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;cat_id=RenderingGraphite">
     Graphite</ulink></para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/texlive"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/texlive"/></para>
 @z
 
 @x
@@ -168,27 +158,69 @@
     <title>&InstallationOf1;TeX Live&InstallationOf2;</title>
 @z
 
-% @x
-%     <para>Before building <application>TeX Live</application>, the macros and
-%     fonts package (<filename>texmf</filename> tarball) must be installed and
-%     two temporary symbolic links need to be created. Install the macros, fonts
-%     and symlinks using the following commands as the
-%     <systemitem class="username">root</systemitem> user:</para>
-% @y
-%     <para>
-%     <application>TeX Live</application> をビルドするには、その前にマクロやフォントを納めたパッケージ (<filename>texmf</filename> tarball) をインストールして、以下の二つの一時的なシンボリックリンクを生成する必要があります。
-%     それには <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-%     </para>
-% @z
+@x
+    <para>The <application>TeX Live</application> set of programs with its
+    supporting documents, fonts, and utilities is very large.  The upstream
+    maintainers recommend placing all files in a single directory structure.
+    BLFS recommends <filename class='directory'>/opt/texlive</filename>.</para>
+@y
+    <para>
+    <application>TeX Live</application> には一連のプログラムに加えて、これをサポートするドキュメント、フォント、ユーティリティーツールが含まれ、実に膨大なものとなっています。
+    アップストリームの管理者は、すべてのファイルを単一のディレクトリ構造配下に収容することを推奨しています。
+    BLFS では <filename class='directory'>/opt/texlive</filename> を推奨します。
+    </para>
+@z
 
-% @x
-%     <para>Install <application>TeX Live</application> by running the following
-%     commands:</para>
-% @y
-%     <para>
-%     以下のコマンドを実行して <application>TeX Live</application> をビルドします。
-%     </para>
-% @z
+@x
+    <para>First, unpack the installer and change into the installer's 
+    directory, <filename class='directory'>install-tl-20111204</filename>.  
+    This directory name may change if the installer package is updated
+    by the upstream maintainers.</para>
+@y
+    <para>
+    まずはインストーラーを伸張 (解凍) してそのディレクトリ <filename class='directory'>install-tl-20111204</filename> に入ります。
+    このディレクトリ名は、アップストリームによりインストーラーパッケージが更新されると、名称変更されます。
+    </para>
+@z
+
+@x
+    <note><para>The distribution binaries installed below use static linking
+    for internal <application>TeX Live</application> libraries.  Additional
+    libraries as specified in the dependencies section do not need to be
+    present during the install, but the programs that need them will not run
+    until their specific dependencies are installed.</para></note>
+@y
+    <note><para>
+    
+The distribution binaries installed below use static linking
+    for internal <application>TeX Live</application> libraries.  Additional
+    libraries as specified in the dependencies section do not need to be
+    present during the install, but the programs that need them will not run
+    until their specific dependencies are installed.</para></note>
+@z
+
+@x
+    <para>Now, as the <systemitem class="username">root</systemitem>
+    user:</para>
+@y
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <para>This command is interactive and allows selection or modification of
+    platform, packages, directories, and other options.  The full installation
+    scheme will require about 3 gigabytes of disk space.  The time to complete
+    the download time will depend on your internet connection speed and the
+    number of packages selected.</para>
+@y
+    <para>This command is interactive and allows selection or modification of
+    platform, packages, directories, and other options.  The full installation
+    scheme will require about 3 gigabytes of disk space.  The time to complete
+    the download time will depend on your internet connection speed and the
+    number of packages selected.</para>
+@z
 
 @x
     <para>To test the results, issue: <command>make check</command>.</para>
@@ -197,16 +229,6 @@
     ビルド結果をテストする場合は <command>make check</command> を実行します。
     </para>
 @z
-
-% @x
-%     <para>Now, as the <systemitem class="username">root</systemitem> user,
-%     put the files in their permanent location:</para> 
-% @y
-%     <para>
-%     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-%     各ファイルを一定のディレクトリにインストールします。
-%     </para>
-% @z
 
 % @x
 %     <title>Command Explanations</title>

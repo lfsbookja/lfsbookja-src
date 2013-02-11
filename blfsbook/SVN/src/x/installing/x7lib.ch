@@ -162,8 +162,8 @@
     <para>First, start a subshell that will exit on error:</para>
 @y
     <para>
-    サブシェルを起動します。
-    エラーが発生した時に終了します。
+    まずはサブシェルを起動します。
+    こうしておけばエラー発生時に終了させることができます。
     </para>
 @z
 

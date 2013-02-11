@@ -42,6 +42,36 @@
 @z
 
 @x
+      <para>February 10th, 2013</para>
+@y
+      <para>2013/02/10</para>
+@z
+@x
+          <para>[randy] - Updated ImageMagick to 6.8.2-8.</para>
+@y
+          <para>[randy] - ImageMagick 6.8.2-8 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Updated GCC instructions to install Ada and
+          Go compilers. Thanks to Pierre Labastie for the patch.</para>
+@y
+          <para>[krejzi] - GCC の手順更新。Ada および Go コンパイラーをインストールすることに。
+          パッチを提供してくれた Pierre Labastie に感謝。</para>
+@z
+
+@x
+      <para>February 9th, 2013</para>
+@y
+      <para>2013/02/09</para>
+@z
+@x
+          <para>[rthomsen] - Added xcb-util-image 0.3.9 and
+          xcb-util-renderutil 0.3.8.</para>
+@y
+          <para>[rthomsen] - xcb-util-image 0.3.9, xcb-util-renderutil 0.3.8 を追加。</para>
+@z
+
+@x
       <para>February 7th, 2013</para>
 @y
       <para>2013/02/07</para>
