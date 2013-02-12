@@ -54,6 +54,23 @@
 -->
 
     <listitem>
+      <para>2013-02-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          オリジナル XML ソースの空白文字除去変更に伴う更新。
+          日本語訳変更なし。
+          手順等変更なし。
+          SVN-20130211,
+          Changeset
+          <ulink url="&lfs-rev-root;10121">10121</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2013-01-31</para>
       <itemizedlist>
         <listitem>
