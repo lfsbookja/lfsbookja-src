@@ -146,7 +146,7 @@
 @z
 
 @x Diffutils
-        <para>This package contains programs that show the differences 
+        <para>This package contains programs that show the differences
         between files or directories. These programs can be used to create
         patches, and are also used in many packages' build procedures.</para>
 @y
@@ -154,19 +154,6 @@
         このパッケージは、ファイルやディレクトリ間の差異を表示するプログラムを提供します。
         各プログラムはパッチを生成するために利用されます。
         したがってパッケージのビルド時に利用されることが多々あります。
-        </para>
-@z
-
-@x Expect
-        <para>This package contains a program for carrying out scripted 
-        dialogues with other interactive programs.  It is commonly used
-        for testing other packages.  It is only installed in the temporary 
-        toolchain.</para>
-@y
-        <para>
-        このパッケージは、スクリプトで作られた対話型プログラムを通じて、他のプログラムとのやりとりを行うプログラムを提供します。
-        通常は他のパッケージをテストするために利用します。
-        本書では一時的なツールチェーンの構築時にしかインストールしません。
         </para>
 @z
 
@@ -178,6 +165,19 @@
         <para>
         このパッケージは ext2, ext3, ext4 の各ファイルシステムを取り扱うユーティリティを提供します。
         各ファイルシステムは Linux がサポートする一般的なものであり、十分なテストが実施されているものです。
+        </para>
+@z
+
+@x Expect
+        <para>This package contains a program for carrying out scripted
+        dialogues with other interactive programs.  It is commonly used
+        for testing other packages.  It is only installed in the temporary
+        toolchain.</para>
+@y
+        <para>
+        このパッケージは、スクリプトで作られた対話型プログラムを通じて、他のプログラムとのやりとりを行うプログラムを提供します。
+        通常は他のパッケージをテストするために利用します。
+        本書では一時的なツールチェーンの構築時にしかインストールしません。
         </para>
 @z
 
@@ -377,6 +377,17 @@
         </para>
 @z
 
+@x Libpipeline
+        <para>The Libpipeline package contains a library for manipulating
+        pipelines of subprocesses in a flexible and convenient way. It is
+        required by the Man-DB package.</para>
+@y
+        <para>
+        Libpipeline パッケージは、サブプロセスのパイプラインを柔軟にかつ容易に操作するライブラリを提供します。
+        これは Man-DB パッケージが必要としています。
+        </para>
+@z
+
 @x Libtool
         <para>This package contains the GNU generic library support 
         script. It wraps the complexity of using shared libraries in a 
@@ -486,19 +497,6 @@
         </para>
 @z
 
-@x PCRE
-        <para>This package provides a library that can be used to implement
-        regular expression pattern matching using the same syntax and semantics
-        as Perl 5.  It is a mandatory dependency of Glib, and can also be used
-        by Grep.</para>
-@y
-        <para>
-        このパッケージは、正規表現によるパターンマッチングを実装するために利用されます。
-        その正規表現は Perl 5 にて用いられる文法と同様です。
-        Glib が必要とする必須パッケージであり、Grep もこれを利用します。
-        </para>
-@z
-
 @x Perl
         <para>This package is an interpreter for the runtime language
         PERL. It is needed for the installation and test suites of several LFS
@@ -516,15 +514,6 @@
 @y
         <para>
         このパッケージは、既にインストールされたライブラリやパッケージのメタデータを取得するプログラムを提供します。
-        </para>
-@z
-
-@x Popt
-        <para>This package is a library used by some programs to parse
-        command line inputs.</para>
-@y
-        <para>
-        このパッケージは、コマンドライン入力を処理するプログラムがライブラリを利用しています。
         </para>
 @z
 

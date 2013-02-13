@@ -54,6 +54,22 @@
 -->
 
     <listitem>
+      <para>2013-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          「各パッケージを用いる理由」の改定。
+          手順等変更なし。
+          SVN-20130211,
+          Changeset
+          <ulink url="&lfs-rev-root;10127">10127</ulink>
+          対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2013-02-12</para>
       <itemizedlist>
         <listitem>
