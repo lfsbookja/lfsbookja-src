@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author: matsuand $
-% $Rev: 627 $
-% $Date:: 2012-11-23 10:54:14 +0900#$
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
           <!-- workaround for passivetex lack of support for non-constant expressions -->

@@ -3,21 +3,21 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author: matsuand $
-% $Rev: 670 $
-% $Date:: 2013-02-12 10:16:49 +0900#$
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
-<!ENTITY version "SYSTEMD-20130211">
-<!ENTITY releasedate "February 11, 2013">
+<!ENTITY version "SYSTEMD-20130213">
+<!ENTITY releasedate "February 13, 2013">
 <!ENTITY copyrightdate "1999-2013"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.3">
 <!ENTITY generic-version "systemd"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY version "SYSTEMD-20130211">
-<!ENTITY releasedate "2013年2月11日">
-<!ENTITY jversion "20130212">
+<!ENTITY version "SYSTEMD-20130213">
+<!ENTITY releasedate "2013年2月13日">
+<!ENTITY jversion "20130213">
 <!ENTITY copyrightdate "1999-2013"><!-- jhalfs needs a literal dash, not &ndash; -->
 <!ENTITY milestone "7.3">
 <!ENTITY generic-version "systemd"> <!-- Use "development", "testing", or "x.y[-pre{x}]" -->
@@ -81,4 +81,5 @@
 <!ENTITY Homepage             "ホームページ">
 <!ENTITY Download             "ダウンロード">
 <!ENTITY Tools                "ツール">
+<!ENTITY None                 "なし">
 @z

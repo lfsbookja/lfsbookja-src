@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author: matsuand $
-% $Rev: 545 $
-% $Date:: 2012-06-09 14:09:43 +0900#$
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>

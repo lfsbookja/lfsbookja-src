@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author: matsuand $
-% $Rev: 649 $
-% $Date:: 2013-01-23 10:19:19 +0900#$
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -631,11 +631,14 @@
 @z
 
 @x Udev-lfs Tarball
+    <varlistentry>
+      <term>Udev-lfs Tarball (&systemd-version;) - <token>&udev-lfs-size;</token>:</term>
+      <listitem>
         <para>Download: <ulink url="&udev-lfs-url;"/></para>
         <para>MD5 sum: <literal>&udev-lfs-md5;</literal></para>
+      </listitem>
+    </varlistentry>
 @y
-        <para>&Download;: <ulink url="&udev-lfs-url;"/></para>
-        <para>MD5 sum: <literal>&udev-lfs-md5;</literal></para>
 @z
 
 @x

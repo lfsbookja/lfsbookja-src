@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x

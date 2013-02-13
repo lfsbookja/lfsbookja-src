@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author: matsuand $
-% $Rev: 620 $
-% $Date:: 2012-11-05 17:32:26 +0900#$
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
     <fo:list-block id="{$id}" provisional-distance-between-starts="12em"

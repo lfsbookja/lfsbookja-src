@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author: matsuand $
-% $Rev: 562 $
-% $Date:: 2012-07-20 21:49:43 +0900#$
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -157,6 +157,17 @@
         </para>
 @z
 
+@x E2fsprogs
+        <para>This package contains the utilities for handling the ext2, ext3
+        and ext4 file systems.  These are the most common and thoroughly
+        tested file systems that Linux supports.</para>
+@y
+        <para>
+        このパッケージは ext2, ext3, ext4 の各ファイルシステムを取り扱うユーティリティを提供します。
+        各ファイルシステムは Linux がサポートする一般的なものであり、十分なテストが実施されているものです。
+        </para>
+@z
+
 @x Expect
         <para>This package contains a program for carrying out scripted 
         dialogues with other interactive programs.  It is commonly used
@@ -167,17 +178,6 @@
         このパッケージは、スクリプトで作られた対話型プログラムを通じて、他のプログラムとのやりとりを行うプログラムを提供します。
         通常は他のパッケージをテストするために利用します。
         本書では一時的なツールチェーンの構築時にしかインストールしません。
-        </para>
-@z
-
-@x E2fsprogs
-        <para>This package contains the utilities for handling the ext2, ext3
-        and ext4 file systems.  These are the most common and thoroughly
-        tested file systems that Linux supports.</para>
-@y
-        <para>
-        このパッケージは ext2, ext3, ext4 の各ファイルシステムを取り扱うユーティリティを提供します。
-        各ファイルシステムは Linux がサポートする一般的なものであり、十分なテストが実施されているものです。
         </para>
 @z
 
@@ -519,15 +519,6 @@
         </para>
 @z
 
-@x Popt
-        <para>This package is a library used by some programs to parse
-        command line inputs.</para>
-@y
-        <para>
-        このパッケージは、コマンドライン入力を処理するプログラムがライブラリを利用しています。
-        </para>
-@z
-
 @x Procps
         <para>This package contains programs for monitoring processes. These
         programs are useful for system administration, and are also used by
@@ -592,17 +583,6 @@
         </para>
 @z
 
-@x Sysvinit
-        <para>This package provides the <application>init</application>
-        program, which is the parent of all other processes on the Linux
-        system. </para>
-@y
-        <para>
-        このパッケージは <application>init</application> プログラムを提供します。
-        これは Linux システム上のすべてのプロセスの基点となるものです。
-        </para>
-@z
-
 @x Tar
         <para>This package provides archiving and extraction capabilities
         of virtually all packages used in LFS.</para>
@@ -632,17 +612,6 @@
         <para>
         このパッケージは Info ページに関しての入出力や変換を行うプログラムを提供します。
         LFS が扱うパッケージのインストール時には、たいてい利用されます。
-        </para>
-@z
-
-@x Udev
-        <para>This package contains programs for dynamic creation of 
-        device nodes.  It is an alternative to creating thousands of
-        static devices in the /dev directory.</para>
-@y
-        <para>
-        このパッケージはデバイスノードの動的生成を行うプログラムを提供します。
-        /dev ディレクトリに、デバイスを静的にいくつも作り出す方法を取らないためのものです。
         </para>
 @z
 

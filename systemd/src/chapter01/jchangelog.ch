@@ -8,9 +8,9 @@
 <!--
  This is part of LFSbookja package.
 
- $Author: matsuand $
- $Rev: 670 $
- $Date:: 2013-02-12 10:16:49 +0900#$
+ $Author$
+ $Rev$
+ $Date::                           $
 -->
 
 <sect1 id="ch-scatter-jchangelog">
@@ -52,6 +52,18 @@
     </listitem>
 
 -->
+
+    <listitem>
+      <para>2013-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SYSTEMD-20130213,
+          <ulink url="&lfs-rev-root;10126">10126</ulink> までに対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
 
     <listitem>
       <para>2013-02-12</para>

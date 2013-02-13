@@ -8,8 +8,8 @@
 <!--
  This is part of LFSbookja package.
 
- $Author: matsuand $
- $Rev: 516 $
+ $Author$
+ $Rev$
  $Date:: 2011-03-31 16:51:52 +0900$
 -->
 
@@ -17,7 +17,7 @@
   <?dbhtml filename="japanese.html"?>
 
   <sect1info>
-    <othername>$LastChangedBy: matsuand $</othername>
+    <othername>$LastChangedBy$</othername>
     <date>$Date:: 2011-03-31 16:51:52 +0900$</date>
   </sect1info>
 

@@ -1,14 +1,15 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 592 $
-## $Date:: 2012-08-30 15:59:52 +0900#$
+## $Author$
+## $Rev$
+## $Date::                           $
 ##
 BOOKdir = @abs_bookdir@/chapter06
 CHANGE_FILES = \
 	aboutdebug.ch        \
 	adjusting.ch         \
+	attr.ch              \
 	autoconf.ch          \
 	automake.ch          \
 	bash.ch              \
@@ -33,18 +34,21 @@ CHANGE_FILES = \
 	gettext.ch           \
 	glibc.ch             \
 	gmp.ch               \
+	gperf.ch             \
 	grep.ch              \
 	groff.ch             \
 	grub.ch              \
 	gzip.ch              \
 	iana-etc.ch          \
 	inetutils.ch         \
+	intltool.ch          \
 	introduction.ch      \
 	iproute2.ch          \
 	kbd.ch               \
 	kernfs.ch            \
 	kmod.ch              \
 	less.ch              \
+	libcap2.ch           \
 	libpipeline.ch       \
 	libtool.ch           \
 	linux-headers.ch     \
@@ -74,6 +78,7 @@ CHANGE_FILES = \
 	texinfo.ch           \
 	util-linux.ch        \
 	vim.ch               \
+	xml-parser.ch        \
 	xz.ch                \
 	zlib.ch
 
@@ -92,6 +97,7 @@ ctie:
 
 aboutdebug.xml:        $(BOOKdir)/$@ $(srcdir)/aboutdebug.ch
 adjusting.xml:         $(BOOKdir)/$@ $(srcdir)/adjusting.ch
+attr.xml:              $(BOOKdir)/$@ $(srcdir)/attr.ch
 autoconf.xml:          $(BOOKdir)/$@ $(srcdir)/autoconf.ch
 automake.xml:          $(BOOKdir)/$@ $(srcdir)/automake.ch
 bash.xml:              $(BOOKdir)/$@ $(srcdir)/bash.ch
@@ -116,18 +122,21 @@ gdbm.xml:              $(BOOKdir)/$@ $(srcdir)/gdbm.ch
 gettext.xml:           $(BOOKdir)/$@ $(srcdir)/gettext.ch
 glibc.xml:             $(BOOKdir)/$@ $(srcdir)/glibc.ch
 gmp.xml:               $(BOOKdir)/$@ $(srcdir)/gmp.ch
+gperf.xml:             $(BOOKdir)/$@ $(srcdir)/gperf.ch
 grep.xml:              $(BOOKdir)/$@ $(srcdir)/grep.ch
 groff.xml:             $(BOOKdir)/$@ $(srcdir)/groff.ch
 grub.xml:              $(BOOKdir)/$@ $(srcdir)/grub.ch
 gzip.xml:              $(BOOKdir)/$@ $(srcdir)/gzip.ch
 iana-etc.xml:          $(BOOKdir)/$@ $(srcdir)/iana-etc.ch
 inetutils.xml:         $(BOOKdir)/$@ $(srcdir)/inetutils.ch
+intltool.xml:          $(BOOKdir)/$@ $(srcdir)/intltool.ch
 introduction.xml:      $(BOOKdir)/$@ $(srcdir)/introduction.ch
 iproute2.xml:          $(BOOKdir)/$@ $(srcdir)/iproute2.ch
 kbd.xml:               $(BOOKdir)/$@ $(srcdir)/kbd.ch
 kernfs.xml:            $(BOOKdir)/$@ $(srcdir)/kernfs.ch
 kmod.xml:              $(BOOKdir)/$@ $(srcdir)/kmod.ch
 less.xml:              $(BOOKdir)/$@ $(srcdir)/less.ch
+libcap2.xml:           $(BOOKdir)/$@ $(srcdir)/libcap2.ch
 libpipeline.xml:       $(BOOKdir)/$@ $(srcdir)/libpipeline.ch
 libtool.xml:           $(BOOKdir)/$@ $(srcdir)/libtool.ch
 linux-headers.xml:     $(BOOKdir)/$@ $(srcdir)/linux-headers.ch
@@ -157,5 +166,6 @@ tar.xml:               $(BOOKdir)/$@ $(srcdir)/tar.ch
 texinfo.xml:           $(BOOKdir)/$@ $(srcdir)/texinfo.ch
 util-linux.xml:        $(BOOKdir)/$@ $(srcdir)/util-linux.ch
 vim.xml:               $(BOOKdir)/$@ $(srcdir)/vim.ch
+xml-parser.xml:        $(BOOKdir)/$@ $(srcdir)/xml-parser.ch
 xz.xml:                $(BOOKdir)/$@ $(srcdir)/xz.ch
 zlib.xml:              $(BOOKdir)/$@ $(srcdir)/zlib.ch

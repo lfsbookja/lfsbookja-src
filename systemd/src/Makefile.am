@@ -1,9 +1,9 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 597 $
-## $Date:: 2012-09-02 13:51:26 +0900#$
+## $Author$
+## $Rev$
+## $Date::                           $
 ##
 SUBDIRS=appendices chapter01 chapter02 chapter03 chapter04 chapter05 \
 	chapter06 chapter07 chapter08 chapter09 prologue stylesheets

@@ -3,9 +3,9 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author: matsuand $
-% $Rev: 662 $
-% $Date:: 2013-01-31 11:15:51 +0900#$
+% $Author$
+% $Rev$
+% $Date::                           $
 %
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -45,6 +45,23 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴：</title>
+@z
+
+@x
+      <para>2013-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Added full build of Systemd including its remaining
+          dependencies (attr, gperf, intltool and libcap2).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Systemd をフルビルドするように、その依存パッケージ (attr, gperf, intltool,libcap2) を追加。</para>
+        </listitem>
+      </itemizedlist>
 @z
 
 @x

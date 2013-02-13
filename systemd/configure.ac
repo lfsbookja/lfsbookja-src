@@ -5,9 +5,9 @@
 #
 # This is a CTIE change file for the original XML source of the LFSbook.
 #
-# $Author: matsuand $
-# $Rev: 594 $
-# $Date:: 2012-09-01 15:28:06 +0900#$
+# $Author$
+# $Rev$
+# $Date::                           $
 #
 
 m4_include([version.ac])[] dnl define lfs_version

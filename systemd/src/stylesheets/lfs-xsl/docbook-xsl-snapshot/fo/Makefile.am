@@ -1,9 +1,9 @@
 ##
 ## This is part of LFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 620 $
-## $Date:: 2012-11-05 17:32:26 +0900#$
+## $Author$
+## $Rev$
+## $Date::                           $
 ##
 BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo
 srcdir = @srcdir@
