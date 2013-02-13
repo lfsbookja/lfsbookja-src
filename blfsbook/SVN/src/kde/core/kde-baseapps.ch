@@ -166,7 +166,7 @@
 @x
         <seg>dolphin, fsview, kbookmarkmerger, kdepasswd, kdialog, keditbookmarks, kfind,
         kfmclient, konqueror, nspluginscan, nspluginviewer, servicemenudeinstallation and
-	servicemenuinstallation</seg>
+        servicemenuinstallation</seg>
         <seg>libdolphinprivate.so, libkbookmarkmodel_private.so,
         libkdeinit4_dolphin.so, libkdeinit4_keditbookmarks.so,
         libkdeinit4_kfmclient.so, libkdeinit4_konqueror.so, libkonq.so,
@@ -176,7 +176,7 @@
 @y
         <seg>dolphin, fsview, kbookmarkmerger, kdepasswd, kdialog, keditbookmarks, kfind,
         kfmclient, konqueror, nspluginscan, nspluginviewer, servicemenudeinstallation,
-	servicemenuinstallation</seg>
+        servicemenuinstallation</seg>
         <seg>libdolphinprivate.so, libkbookmarkmodel_private.so,
         libkdeinit4_dolphin.so, libkdeinit4_keditbookmarks.so,
         libkdeinit4_kfmclient.so, libkdeinit4_konqueror.so, libkonq.so,

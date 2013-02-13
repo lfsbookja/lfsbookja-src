@@ -167,10 +167,10 @@
 
 @x
         <seg>None</seg>
-	<seg>libdbusmenu-qt.so</seg>
-	<seg>&qt-dir;/include/dbusmenu-qt</seg>
+        <seg>libdbusmenu-qt.so</seg>
+        <seg>&qt-dir;/include/dbusmenu-qt</seg>
 @y
         <seg>&None;</seg>
-	<seg>libdbusmenu-qt.so</seg>
-	<seg>&qt-dir;/include/dbusmenu-qt</seg>
+        <seg>libdbusmenu-qt.so</seg>
+        <seg>&qt-dir;/include/dbusmenu-qt</seg>
 @z

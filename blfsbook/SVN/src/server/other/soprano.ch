@@ -244,7 +244,7 @@
         <seg>
           libsopranoclient.so, libsopranoserver.so and libsoprano.so
         </seg>
-	<seg>
+        <seg>
           /usr/include/soprano,
           /usr/include/Soprano,
           /usr/lib/soprano and
@@ -257,7 +257,7 @@
         <seg>
           libsopranoclient.so, libsopranoserver.so, libsoprano.so
         </seg>
-	<seg>
+        <seg>
           /usr/include/soprano,
           /usr/include/Soprano,
           /usr/lib/soprano,

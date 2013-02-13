@@ -138,11 +138,11 @@
 @x
         <seg>blitztest</seg>
         <seg>libqimageblitz.so</seg>
-	<seg>&kde-dir;/include/qimageblitz</seg>
+        <seg>&kde-dir;/include/qimageblitz</seg>
 @y
         <seg>blitztest</seg>
         <seg>libqimageblitz.so</seg>
-	<seg>&kde-dir;/include/qimageblitz</seg>
+        <seg>&kde-dir;/include/qimageblitz</seg>
 @z
 
 @x

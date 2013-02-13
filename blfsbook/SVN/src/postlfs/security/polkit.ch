@@ -272,12 +272,12 @@
           libpolkit-agent-1.so and 
           libpolkit-gobject-1.so
         </seg>
-	<seg>
+        <seg>
           /etc/polkit-1,
           /usr/include/polkit-1,
           /usr/lib/polkit-1,
           /usr/share/gtk-doc/html/polkit-1 and
-	  /usr/share/polkit-1
+          /usr/share/polkit-1
         </seg>
 @y
         <seg>
@@ -288,12 +288,12 @@
           libpolkit-agent-1.so,
           libpolkit-gobject-1.so
         </seg>
-	<seg>
+        <seg>
           /etc/polkit-1,
           /usr/include/polkit-1,
           /usr/lib/polkit-1,
           /usr/share/gtk-doc/html/polkit-1,
-	  /usr/share/polkit-1
+          /usr/share/polkit-1
         </seg>
 @z
 

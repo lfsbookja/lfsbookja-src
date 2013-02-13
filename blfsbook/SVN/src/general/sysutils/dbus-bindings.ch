@@ -247,13 +247,13 @@
           <seg>dbus-binding-tool</seg>
           <seg>libdbus-glib-1.so</seg>
           <seg>/etc/bash_completion.d and optionally 
-	  /usr/share/gtk-doc/html/dbus-glib and
+          /usr/share/gtk-doc/html/dbus-glib and
           /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
 @y
           <seg>dbus-binding-tool</seg>
           <seg>libdbus-glib-1.so</seg>
           <seg>/etc/bash_completion.d, 任意のビルド時に
-	  /usr/share/gtk-doc/html/dbus-glib,
+          /usr/share/gtk-doc/html/dbus-glib,
           /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
 @z
 

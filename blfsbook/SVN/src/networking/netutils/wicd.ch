@@ -378,14 +378,14 @@
 
 @x
         <seg>wicd, wicd-cli, wicd-client, wicd-curses and wicd-gtk</seg>
-	<seg>none</seg>
-	<seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd, 
-	/usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd and /var/log/wicd</seg>
+        <seg>none</seg>
+        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd, 
+        /usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd and /var/log/wicd</seg>
 @y
         <seg>wicd, wicd-cli, wicd-client, wicd-curses, wicd-gtk</seg>
-	<seg>&None;</seg>
-	<seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd, 
-	/usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd, /var/log/wicd</seg>
+        <seg>&None;</seg>
+        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd, 
+        /usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd, /var/log/wicd</seg>
 @z
 
 @x
@@ -410,7 +410,7 @@
 
 @x wicd-client
           <para>is the wicd client. This script attempts to automatically choose 
-	  the relevant configuration interface.</para>
+          the relevant configuration interface.</para>
 @y
           <para>
           wicd クライアント。

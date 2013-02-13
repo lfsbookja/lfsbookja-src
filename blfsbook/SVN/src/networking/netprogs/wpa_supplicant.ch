@@ -245,40 +245,42 @@
 
 @x
         To connect to an access point that uses a password, you need to put
-        the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
-        <command>wpa_passphrase</command> to generate this. SSID is the string
-        that the access point/router transmits to identify itself. As the
+        the pre-shared key in <filename>
+        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        SSID is the string that the access point/router transmits to
+        identify itself. Run the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         To connect to an access point that uses a password, you need to put
-        the pre-shared key in <filename>/etc/wpa_supplicant.conf</filename>. Use
-        <command>wpa_passphrase</command> to generate this. SSID is the string
-        that the access point/router transmits to identify itself. As the
+        the pre-shared key in <filename>
+        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        SSID is the string that the access point/router transmits to
+        identify itself. Run the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-        <filename>/etc/wpa_supplicant.conf</filename> can hold the details of
-        several access points. When you run <command>wpa_supplicant</command>
-        it will scan for the SSIDs it can see and choose the appropriate
-        password to connect.
+        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf
+        </filename> can hold the details of several access points. When
+        <command>wpa_supplicant</command> is started, it will scan for the
+        SSIDs it can see and choose the appropriate password to connect.
 @y
-        <filename>/etc/wpa_supplicant.conf</filename> can hold the details of
-        several access points. When you run <command>wpa_supplicant</command>
-        it will scan for the SSIDs it can see and choose the appropriate
-        password to connect.
+        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf
+        </filename> can hold the details of several access points. When
+        <command>wpa_supplicant</command> is started, it will scan for the
+        SSIDs it can see and choose the appropriate password to connect.
 @z
 
 @x
         If you want to connect to an access point that isn't password
-        protected, put an entry like this in
-        <filename>/etc/wpa_supplicant.conf</filename>. Replace
-        "Some-SSID" with the SSID of the access point/router.
+        protected, put an entry like this in <filename>
+        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        Replace "Some-SSID" with the SSID of the access point/router.
 @y
         If you want to connect to an access point that isn't password
-        protected, put an entry like this in
-        <filename>/etc/wpa_supplicant.conf</filename>. Replace
-        "Some-SSID" with the SSID of the access point/router.
+        protected, put an entry like this in <filename>
+        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        Replace "Some-SSID" with the SSID of the access point/router.
 @z
 
 @x
@@ -294,47 +296,83 @@
 @z
 
 @x
-        To use <command>wpa_cli</command> to control the running
-        <command>>wpa_supplicant</command> daemon, add a control interface to
-        <filename>/etc/wpa_supplicant.conf</filename> as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        To use <command>wpa_cli</command> to control the running
-        <command>>wpa_supplicant</command> daemon, add a control interface to
-        <filename>/etc/wpa_supplicant.conf</filename> as the
-        <systemitem class="username">root</systemitem> user:
-@z
-
-@x
       <title>Connecting to an Access Point</title>
 @y
       <title>Connecting to an Access Point</title>
 @z
 
 @x
-        If your router/access point uses DHCP to allocate IP addresses you
-        can install <xref linkend="dhcpcd"/> and use it to connect. As the
+        If you want to configure network interfaces at boot using
+        <command>wpa_supplicant</command>, you need to install the
+        <filename>/lib/services/wpa</filename> script
+        included in <xref linkend="bootscripts"/> package:
+@y
+        If you want to configure network interfaces at boot using
+        <command>wpa_supplicant</command>, you need to install the
+        <filename>/lib/services/wpa</filename> script
+        included in <xref linkend="bootscripts"/> package:
+@z
+
+@x
+        If your router/access point uses DHCP to allocate IP addresses, you
+        can install <xref linkend="dhcp"/> client and use it to
+        automatically obtain network addresses. Create the
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
-        If your router/access point uses DHCP to allocate IP addresses you
-        can install <xref linkend="dhcpcd"/> and use it to connect. As the
+        If your router/access point uses DHCP to allocate IP addresses, you
+        can install <xref linkend="dhcp"/> client and use it to
+        automatically obtain network addresses. Create the
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-        Alternatively, you can use static addresses on your local network.
-        This has the advantage that you can put the hostnames in
-        <filename>/etc/hosts</filename>. Replace 192.168.1.6 with the static
-        address you've chosen. Replace 192.168.1.1 with the local IP address of
-        the access point/router. Run the following commands as the
+        If you prefer <xref linkend="dhcpcd"/> instead of
+        <xref linkend="dhcp"/> client, then create the
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
-        Alternatively, you can use static addresses on your local network.
-        This has the advantage that you can put the hostnames in
-        <filename>/etc/hosts</filename>. Replace 192.168.1.6 with the static
-        address you've chosen. Replace 192.168.1.1 with the local IP address of
-        the access point/router. Run the following commands as the
+        If you prefer <xref linkend="dhcpcd"/> instead of
+        <xref linkend="dhcp"/> client, then create the
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        Alternatively, if you use static addresses on your local network,
+        then create the
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        </filename> by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        Alternatively, if you use static addresses on your local network,
+        then create the
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        </filename> by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        You can connect to the wireless access point by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        You can connect to the wireless access point by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        Replace <replaceable>wlan0</replaceable> with the correct
+        wireless interface.
+@y
+        Replace <replaceable>wlan0</replaceable> with the correct
+        wireless interface.
 @z
 
 @x

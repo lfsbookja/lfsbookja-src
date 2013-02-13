@@ -161,9 +161,9 @@
 @x
         <seg>qcatool2 and qcatool2.debug</seg>
         <seg>libqca.so and libqca.so.&qca-version;.debug</seg>
-	<seg>&qt-dir;/include/QtCrypto and &qt-dir;/share/qca</seg>
+        <seg>&qt-dir;/include/QtCrypto and &qt-dir;/share/qca</seg>
 @y
         <seg>qcatool2, qcatool2.debug</seg>
         <seg>libqca.so, libqca.so.&qca-version;.debug</seg>
-	<seg>&qt-dir;/include/QtCrypto, &qt-dir;/share/qca</seg>
+        <seg>&qt-dir;/include/QtCrypto, &qt-dir;/share/qca</seg>
 @z

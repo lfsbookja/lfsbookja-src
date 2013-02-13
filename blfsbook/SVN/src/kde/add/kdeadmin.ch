@@ -169,9 +169,9 @@
 @x
         <seg>ksystemlog and kuser</seg>
         <seg>kcm_cron.so</seg>
-	<seg>several in &kde-dir;/share</seg>
+        <seg>several in &kde-dir;/share</seg>
 @y
         <seg>ksystemlog, kuser</seg>
         <seg>kcm_cron.so</seg>
-	<seg>&kde-dir;/share 配下に数個のディレクトリ</seg>
+        <seg>&kde-dir;/share 配下に数個のディレクトリ</seg>
 @z

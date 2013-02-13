@@ -100,8 +100,8 @@
     <para role="recommended">
     <xref linkend="libiodbc"/>,
     <xref linkend="libxml2"/>,
-    <xref linkend="openssl"/> and
-    <xref linkend="openldap"/>.
+    <xref linkend="openssl"/>, and
+    <xref linkend="openldap"/>
    <!--<xref linkend="jdk"/>-->
     </para>
 @y
@@ -110,7 +110,7 @@
     <xref linkend="libiodbc"/>,
     <xref linkend="libxml2"/>,
     <xref linkend="openssl"/>,
-    <xref linkend="openldap"/>.
+    <xref linkend="openldap"/>
    <!--<xref linkend="jdk"/>-->
     </para>
 @z
@@ -118,14 +118,26 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="imagemagick"/> and
-    <xref linkend="python2"/>
+    <xref linkend="imagemagick"/>,
+    <xref linkend="python2"/>, and
+    <xref linkend="mitkrb"/>
+    <!-- Currently broken
+    <xref linkend="php"/>
+    <xref linkend="ruby"/>
+    <ulink url="https://libwbxml.opensync.org/">libwbxml</ulink
+    -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="imagemagick"/>,
-    <xref linkend="python2"/>
+    <xref linkend="python2"/>,
+    <xref linkend="mitkrb"/>
+    <!-- Currently broken
+    <xref linkend="php"/>
+    <xref linkend="ruby"/>
+    <ulink url="https://libwbxml.opensync.org/">libwbxml</ulink
+    -->
     </para>
 @z
 
@@ -153,12 +165,10 @@
 @z
 
 @x
-    <para><application>Virtuoso</application> does not come with a callable test
-    suite. An intensive check routine is part of the build process.</para>
+    <para>To test the results, issue <command>make -k check</command>.</para>
 @y
     <para>
-    <application>Virtuoso</application> には簡単に実行できるテストスイートはありません。
-    ただしビルド処理の一部として、徹底的なチェック処理が行われます。
+    ビルド結果をテストする場合は <command>make -k check</command> を実行します。
     </para>
 @z
 
@@ -177,35 +187,35 @@
 @z
 
 @x
-    <para><option>--without-internal-zlib</option>: This option is set to use
-    the installed <application>zlib</application> and not the bundled
-    one.</para>
+    <para><parameter>--without-internal-zlib</parameter>: This parameter is set
+    so that the installed <application>zlib</application> library is used and
+    not the bundled one.</para>
 @y
     <para>
-    <option>--without-internal-zlib</option>:
+    <parameter>--without-internal-zlib</parameter>:
     このパラメーターは、既にインストール済の <application>zlib</application> ライブラリを利用することを指示するもので、バンドルされているものは用いないようにします。
     </para>
 @z
 
 @x
-    <para><option>--program-transform-name</option>: Both 
+    <para><parameter>--program-transform-name</parameter>: Both
     <application>Virtuoso</application> and <application>unixODBC</application>
-    install a program named <command>isql</command>. Use this option to rename
-    <application>virtuoso</application>s program to <command>isql-v</command></para>
+    install a program named <command>isql</command>. Use this parameter to rename
+    <application>virtuoso</application>s program to <command>isql-v</command>.</para>
 @y
-    <para><option>--program-transform-name</option>: Both 
+    <para><parameter>--program-transform-name</parameter>: Both
     <application>Virtuoso</application> and <application>unixODBC</application>
-    install a program named <command>isql</command>. Use this option to rename
-    <application>virtuoso</application>s program to <command>isql-v</command></para>
+    install a program named <command>isql</command>. Use this parameter to rename
+    <application>virtuoso</application>s program to <command>isql-v</command>.</para>
 @z
 
 @x
-    <para><option>--with-port</option>: Add this if you want the  
-    <application>virtuoso</application> server to listen on another port than
+    <para><option>--with-port</option>: Add this if you want the
+    <application>Virtuoso</application> server to listen on a port other than
     1111.</para>
 @y
-    <para><option>--with-port</option>: Add this if you want the  
-    <application>virtuoso</application> server to listen on another port than
+    <para><option>--with-port</option>: Add this if you want the
+    <application>Virtuoso</application> server to listen on a port other than
     1111.</para>
 @z
 

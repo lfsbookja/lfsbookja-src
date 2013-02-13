@@ -140,9 +140,9 @@
 @x
         <seg>none</seg>
         <seg>libattica.so</seg>
-	<seg>&kde-dir;/include/attica</seg>
+        <seg>&kde-dir;/include/attica</seg>
 @y
         <seg>&None;</seg>
         <seg>libattica.so</seg>
-	<seg>&kde-dir;/include/attica</seg>
+        <seg>&kde-dir;/include/attica</seg>
 @z

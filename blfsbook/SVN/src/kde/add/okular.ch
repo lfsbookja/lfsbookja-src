@@ -193,11 +193,11 @@
 
 @x
         <seg>okular</seg>
-	<seg>libokularcore.so and several in &kde-dir;/lib/kde4</seg>
+        <seg>libokularcore.so and several in &kde-dir;/lib/kde4</seg>
         <seg>&kde-dir;/include/okular and several in &kde-dir;/lib and
         &kde-dir;/share</seg>
 @y
         <seg>okular</seg>
-	<seg>libokularcore.so と &kde-dir;/lib/kde4 配下に数種のライブラリ</seg>
+        <seg>libokularcore.so と &kde-dir;/lib/kde4 配下に数種のライブラリ</seg>
         <seg>&kde-dir;/include/okular と &kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ</seg>
 @z

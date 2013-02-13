@@ -450,7 +450,7 @@
 @x
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor, 
-	  dbus-send and dbus-uuidgen
+          dbus-send and dbus-uuidgen
         </seg>
         <seg>
            libdbus-1.so
@@ -459,14 +459,14 @@
           /etc/dbus-1,
           /usr/include/dbus-1.0,
           /usr/lib/dbus-1.0, 
-	  /usr/share/dbus-1,
+          /usr/share/dbus-1,
           /usr/share/doc/dbus-&dbus-version; and
           /var/lib/dbus
         </seg>
 @y
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor, 
-	  dbus-send, dbus-uuidgen
+          dbus-send, dbus-uuidgen
         </seg>
         <seg>
            libdbus-1.so
@@ -475,7 +475,7 @@
           /etc/dbus-1,
           /usr/include/dbus-1.0,
           /usr/lib/dbus-1.0, 
-	  /usr/share/dbus-1,
+          /usr/share/dbus-1,
           /usr/share/doc/dbus-&dbus-version;,
           /var/lib/dbus
         </seg>

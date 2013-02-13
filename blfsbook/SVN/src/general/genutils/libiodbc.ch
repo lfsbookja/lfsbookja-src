@@ -79,7 +79,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="gtk2"/> (in order to get the admin tool created)
+    <xref linkend="gtk2"/> (to create the GUI admin tool)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -103,20 +103,22 @@
 @z
 
 @x
-    <para>Install <application>libiodbc</application> by running the following
-    commands:</para>
+      Install <application>libiodbc</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libiodbc</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libiodbc</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -126,13 +128,11 @@
 @z
 
 @x
-    <para><option>--with-iodbc-inidir</option>: <application>libiodbc</application> will
-    install config files in this directory.</para>
+      <parameter>--with-iodbc-inidir</parameter>: <application>libiodbc</application>
+      will install configuration files in this directory.
 @y
-    <para>
-    <option>--with-iodbc-inidir</option>:
-    <application>libiodbc</application> は設定ファイルをこのディレクトリにインストールします。
-    </para>
+      <parameter>--with-iodbc-inidir</parameter>:
+      <application>libiodbc</application> は設定ファイルをこのディレクトリにインストールします。
 @z
 
 @x
@@ -152,13 +152,15 @@
 @z
 
 @x
-        <seg>iodbc-config, iodbctest, iodbctestw, iodbcadm</seg>
-        <seg>libodbc.{a,so}, libiodbc.{a,so}, libiodbcinst.{a,so}, libiodbcadm.{a,so}</seg>
-        <seg>/usr/share/libiodbc, /etc/iodbc</seg>
+        <seg>iodbc-config, iodbctest, iodbctestw, and iodbcadm</seg>
+        <seg>libiodbc.{a,so}, libiodbcinst.{a,so}, and
+        libiodbcadm.{a,so}</seg>
+        <seg>/usr/include/iodbc, /usr/share/libiodbc, and /etc/iodbc</seg>
 @y
         <seg>iodbc-config, iodbctest, iodbctestw, iodbcadm</seg>
-        <seg>libodbc.{a,so}, libiodbc.{a,so}, libiodbcinst.{a,so}, libiodbcadm.{a,so}</seg>
-        <seg>/usr/share/libiodbc, /etc/iodbc</seg>
+        <seg>libiodbc.{a,so}, libiodbcinst.{a,so},
+        libiodbcadm.{a,so}</seg>
+        <seg>/usr/include/iodbc, /usr/share/libiodbc, /etc/iodbc</seg>
 @z
 
 @x
@@ -168,7 +170,7 @@
 @z
 
 @x iodbc-config
-          <para>is a utility for retrieving the installation options of libiodbc</para>
+          <para>is a utility for retrieving the installation options of libiodbc.</para>
 @y
           <para>
           libiodbc のインストールオプションを検出するためのユーティリティ。
@@ -176,7 +178,7 @@
 @z
 
 @x iodbctest{,w}
-          <para>is an interactive SQL processor</para>
+          <para>are interactive SQL processors.</para>
 @y
           <para>
           対話的な SQL プロセッサー。
@@ -184,7 +186,7 @@
 @z
 
 @x iodbcadm
-          <para>is a graphical administration utility</para>
+          <para>is a graphical administration utility.</para>
 @y
           <para>
           グラフィカルな管理ユーティリティ。

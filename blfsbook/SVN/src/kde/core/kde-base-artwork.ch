@@ -140,10 +140,10 @@
 
 @x
         <seg>none</seg>
-	<seg>none</seg>
+        <seg>none</seg>
         <seg>&kde-dir;/share/apps/ksplash/Themes/Default</seg>
 @y
         <seg>&None;</seg>
-	<seg>&None;</seg>
+        <seg>&None;</seg>
         <seg>&kde-dir;/share/apps/ksplash/Themes/Default</seg>
 @z

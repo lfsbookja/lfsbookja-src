@@ -1,4 +1,4 @@
-%
+	%
 % This is part of BLFSbookja package.
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
@@ -147,7 +147,7 @@
         <seg>
           librasqal.so
         </seg>
-	<seg>
+        <seg>
           /usr/include/rasqal and
           /usr/share/gtk-doc/html/rasqal
         </seg>
@@ -158,7 +158,7 @@
         <seg>
           librasqal.so
         </seg>
-	<seg>
+        <seg>
           /usr/include/rasqal,
           /usr/share/gtk-doc/html/rasqal
         </seg>

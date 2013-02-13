@@ -168,11 +168,11 @@
 @x
         <seg>rapper</seg>
         <seg>libraptor2.so</seg>
-	<seg>/usr/include/raptor2 and /usr/share/gtk-doc/html/raptor2</seg>
+        <seg>/usr/include/raptor2 and /usr/share/gtk-doc/html/raptor2</seg>
 @y
         <seg>rapper</seg>
         <seg>libraptor2.so</seg>
-	<seg>/usr/include/raptor2, /usr/share/gtk-doc/html/raptor2</seg>
+        <seg>/usr/include/raptor2, /usr/share/gtk-doc/html/raptor2</seg>
 @z
 
 @x
