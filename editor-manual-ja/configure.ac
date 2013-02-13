@@ -51,5 +51,8 @@ AC_CONFIG_FILES([Makefile
                  src/chapter04/Makefile
                  src/chapter05/Makefile
                  src/chapter06/Makefile
-                 src/prologue/Makefile])
+                 src/prologue/Makefile
+                 src/stylesheets/Makefile
+                 src/stylesheets/pdf/Makefile
+                 src/stylesheets/xhtml/Makefile])
 AC_OUTPUT

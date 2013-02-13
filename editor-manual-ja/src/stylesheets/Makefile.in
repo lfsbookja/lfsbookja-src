@@ -47,7 +47,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src
+subdir = src/stylesheets
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
@@ -240,26 +240,33 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = chapter01 chapter02 chapter03 chapter04 \
-	chapter05 chapter06 prologue stylesheets
+SUBDIRS = pdf xhtml
+ORGdir = @abs_orgdir@/stylesheets
+CHANGE_FILES_XML = \
+	lfs-l10n.ch
 
-CHANGE_FILES = \
-	general.ch \
-	index.ch   \
-        tidy.ch
+CHANGE_FILES_XSL = \
+	lfs-chunked.ch  \
+	lfs-chunked2.ch \
+	lfs-nochunks.ch \
+	lfs-pdf.ch      \
+	lfs-profile.ch  \
+	lfs-tex.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-ORGdir = @abs_orgdir@
-srcs = general.ent index.xml tidy.conf
-EXTRACLEANFILES = $(srcs)
-BASEDIR = ../lfs-editors-guide
-CHUNK_QUIET = 1
-PDF_OUTPUT = LFS-EDITORS-GUIDE.pdf
-NOCHUNKS_OUTPUT = LFS-EDITORS-GUIDE.html
-XSLROOTDIR = /usr/share/xml/docbook/xsl-stylesheets-1.69.1
+FILES_OTHER = \
+	lfs-print.css \
+	lfs.css
+
+EXTRA_DIST = $(CHANGE_FILES_XML) $(CHANGE_FILES_XSL)
+srcs = $(CHANGE_FILES_XML:.ch=.xml) \
+	$(CHANGE_FILES_XSL:.ch=.xsl) \
+	$(FILES_OTHER)
+
+SUFFIXES = .ch .xml .xsl
 all: all-recursive
 
 .SUFFIXES:
+.SUFFIXES: .ch .xml .xsl
 $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -269,9 +276,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/stylesheets/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/Makefile
+	  $(AUTOMAKE) --gnu src/stylesheets/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -537,6 +544,8 @@ mostlyclean: mostlyclean-recursive
 
 mostlyclean-am: mostlyclean-generic
 
+pdf: pdf-recursive
+
 pdf-am:
 
 ps: ps-recursive
@@ -559,71 +568,29 @@ uninstall-am:
 	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
 	pdf-am ps ps-am tags tags-am uninstall uninstall-am
 
+.ch.xml:
+	$(top_builddir)/$(CTIE) -m $@ $(ORGdir)/$@ $(srcdir)/$*.ch
+.ch.xsl:
+	$(top_builddir)/$(CTIE) -m $@ $(ORGdir)/$@ $(srcdir)/$*.ch
 
-all: ctie $(srcs) lfs
+all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-general.ent: $(ORGdir)/general.ent $(srcdir)/general.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
-index.xml: $(ORGdir)/index.xml $(srcdir)/index.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
-tidy.conf: $(ORGdir)/tidy.conf $(srcdir)/tidy.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+lfs-l10n.xml: $(ORGdir)/$@ $(srcdir)/lfs-l10n.ch
 
-#_stylesheets:
-#	$(MKDIR_P) stylesheets
-#	cp -R $(ORGdir)/stylesheets/* stylesheets
+lfs-chunked.xsl:  $(ORGdir)/$@ $(srcdir)/lfs-chunked.ch
+lfs-chunked2.xsl: $(ORGdir)/$@ $(srcdir)/lfs-chunked2.ch
+lfs-nochunks.xsl: $(ORGdir)/$@ $(srcdir)/lfs-nochunks.ch
+lfs-pdf.xsl:      $(ORGdir)/$@ $(srcdir)/lfs-pdf.ch
+lfs-profile.xsl:  $(ORGdir)/$@ $(srcdir)/lfs-profile.ch
+lfs-tex.xsl:      $(ORGdir)/$@ $(srcdir)/lfs-tex.ch
 
-lfs:
-	$(XSLTPROC) --xinclude --nonet -stringparam chunk.quietly $(CHUNK_QUIET) \
-	-stringparam base.dir $(BASEDIR)/ stylesheets/lfs-chunked.xsl index.xml
-
-	if [ ! -e $(BASEDIR)/stylesheets ]; then \
-	  mkdir -p $(BASEDIR)/stylesheets; \
-	fi;
-	cp stylesheets/*.css $(BASEDIR)/stylesheets
-
-	if [ ! -e $(BASEDIR)/images ]; then \
-	  mkdir -p $(BASEDIR)/images; \
-	fi;
-	cp $(XSLROOTDIR)/images/*.png \
-	  $(BASEDIR)/images
-	cd $(BASEDIR)/; sed -i -e "s@../stylesheets@stylesheets@g" \
-	  *.html
-	cd $(BASEDIR)/; sed -i -e "s@../images@images@g" \
-	  *.html
-
-	for filename in `find $(BASEDIR) -name "*.html"`; do \
-	  tidy -config tidy.conf $$filename; \
-	  true; \
-	done;
-
-	for filename in `find $(BASEDIR) -name "*.html"`; do \
-	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
-	done;
-#	  sed -i -e "s@../stylesheets@stylesheets@g" $$filename; 
-
-pdf:
-	xsltproc --xinclude --nonet --output $(BASEDIR)/lfs-pdf.fo \
-		stylesheets/lfs-pdf.xsl index.xml
-	sed -i -e "s/inherit/all/" $(BASEDIR)/lfs-pdf.fo
-	fop.sh $(BASEDIR)/lfs-pdf.fo $(BASEDIR)/$(PDF_OUTPUT)
-	rm $(BASEDIR)/lfs-pdf.fo
-
-nochunks:
-	xsltproc --xinclude --nonet -stringparam profile.condition html \
-	--output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
-	  stylesheets/lfs-nochunks.xsl index.xml
-
-	tidy -config tidy.conf $(BASEDIR)/$(NOCHUNKS_OUTPUT) || true
-
-	sed -i -e "s@text/html@application/xhtml+xml@g"  \
-	  $(BASEDIR)/$(NOCHUNKS_OUTPUT)
-
-validate:
-	xmllint --noout --nonet --xinclude --postvalid index.xml
+lfs-print.css: $(ORGdir)/$@
+	cp -p $(ORGdir)/$@ $@
+lfs.css:       $(ORGdir)/$@
+	cp -p $(ORGdir)/$@ $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

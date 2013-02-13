@@ -1,19 +1,20 @@
 SUBDIRS = chapter01 chapter02 chapter03 chapter04 \
-	chapter05 chapter06 prologue
+	chapter05 chapter06 prologue stylesheets
 CHANGE_FILES = \
 	general.ch \
-	index.ch
+	index.ch   \
+        tidy.ch
 EXTRA_DIST = $(CHANGE_FILES)
 
 ORGdir = @abs_orgdir@
-srcs = general.ent index.xml
+srcs = general.ent index.xml tidy.conf
 EXTRACLEANFILES = $(srcs)
 
 BASEDIR=../lfs-editors-guide
 CHUNK_QUIET=1
 PDF_OUTPUT=LFS-EDITORS-GUIDE.pdf
 NOCHUNKS_OUTPUT=LFS-EDITORS-GUIDE.html
-XSLROOTDIR=/usr/share/xml/docbook/xsl-stylesheets-1.76.1
+XSLROOTDIR=/usr/share/xml/docbook/xsl-stylesheets-1.69.1
 
 all: ctie $(srcs) lfs
 
@@ -24,12 +25,14 @@ general.ent: $(ORGdir)/general.ent $(srcdir)/general.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
 index.xml: $(ORGdir)/index.xml $(srcdir)/index.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
+tidy.conf: $(ORGdir)/tidy.conf $(srcdir)/tidy.ch
+	$(top_builddir)/$(CTIE) -m $@ $^
 
-_stylesheets:
-	$(MKDIR_P) stylesheets
-	cp -R $(ORGdir)/stylesheets/* stylesheets
+#_stylesheets:
+#	$(MKDIR_P) stylesheets
+#	cp -R $(ORGdir)/stylesheets/* stylesheets
 
-lfs: _stylesheets
+lfs:
 	$(XSLTPROC) --xinclude --nonet -stringparam chunk.quietly $(CHUNK_QUIET) \
 	-stringparam base.dir $(BASEDIR)/ stylesheets/lfs-chunked.xsl index.xml
 
@@ -55,8 +58,8 @@ lfs: _stylesheets
 
 	for filename in `find $(BASEDIR) -name "*.html"`; do \
 	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
-	  sed -i -e "s@../stylesheets@stylesheets@g" $$filename; \
 	done;
+#	  sed -i -e "s@../stylesheets@stylesheets@g" $$filename; 
 
 pdf:
 	xsltproc --xinclude --nonet --output $(BASEDIR)/lfs-pdf.fo \
