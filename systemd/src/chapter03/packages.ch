@@ -630,17 +630,6 @@
         <para>MD5 sum: <literal>&systemd-md5;</literal></para>
 @z
 
-@x Udev-lfs Tarball
-    <varlistentry>
-      <term>Udev-lfs Tarball (&systemd-version;) - <token>&udev-lfs-size;</token>:</term>
-      <listitem>
-        <para>Download: <ulink url="&udev-lfs-url;"/></para>
-        <para>MD5 sum: <literal>&udev-lfs-md5;</literal></para>
-      </listitem>
-    </varlistentry>
-@y
-@z
-
 @x
         <para>Home page: <ulink url="&util-linux-home;"/></para>
         <para>Download: <ulink url="&util-linux-url;"/></para>

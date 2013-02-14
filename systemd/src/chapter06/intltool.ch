@@ -99,7 +99,7 @@
 @z
 
 @x intltool-extract
-          <para>Generates header files that can be read by <command>gettext.</command></para>
+          <para>Generates header files that can be read by <command>gettext</command>.</para>
 @y
           <para>
           <command>gettext</command> コマンドが読み取ることができるヘッダーファイルを生成します。

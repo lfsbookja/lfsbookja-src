@@ -22,6 +22,7 @@ CHANGE_FILES = \
 	createfiles.ch       \
 	creatingdirs.ch      \
 	db.ch                \
+	dbus.ch              \
 	diffutils.ch         \
 	e2fsprogs.ch         \
 	expat.ch             \
@@ -82,7 +83,7 @@ CHANGE_FILES = \
 	xz.ch                \
 	zlib.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
+EXTRA_DIST = $(CHANGE_FILES) dbus.sed
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
 
@@ -110,6 +111,9 @@ coreutils.xml:         $(BOOKdir)/$@ $(srcdir)/coreutils.ch
 createfiles.xml:       $(BOOKdir)/$@ $(srcdir)/createfiles.ch
 creatingdirs.xml:      $(BOOKdir)/$@ $(srcdir)/creatingdirs.ch
 db.xml:                $(BOOKdir)/$@ $(srcdir)/db.ch
+dbus.xml:              $(BOOKdir)/$@ $(srcdir)/dbus.ch $(srcdir)/dbus.sed
+	sed -f $(srcdir)/dbus.sed $(BOOKdir)/$@ > dbus-sed.xml
+	$(top_builddir)/$(CTIE) -m $@ dbus-sed.xml $(srcdir)/dbus.ch
 diffutils.xml:         $(BOOKdir)/$@ $(srcdir)/diffutils.ch
 e2fsprogs.xml:         $(BOOKdir)/$@ $(srcdir)/e2fsprogs.ch
 expat.xml:             $(BOOKdir)/$@ $(srcdir)/expat.ch

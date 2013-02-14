@@ -75,6 +75,25 @@
           </para>
 @z
 
+@x --enable-mesg
+          <para>This switch enables building of the mesg utility which
+          was previously provided by Sysvinit package.</para>
+@y
+          <para>
+          本スイッチは mesg ユーティリティをビルドするようにします。
+          これはかつては Sysvinit パッケージにより提供されていたものです。
+          </para>
+@z
+
+@x --with-systemdsystemunitdir=/lib/systemd/system
+          <para>This switch sets install location for the Systemd units provided
+          with the package.</para>
+@y
+          <para>
+          本スイッチは Systemd ユニットファイルの収容ディレクトリを指定します。
+          </para>
+@z
+
 @x
     <para>Compile the package:</para>
 @y
@@ -561,6 +580,15 @@
           </para>
 @z
 
+@x mesg
+          <para>Controls whether other users can send messages to the current
+          user's terminal</para>
+@y
+          <para>
+          カレントなユーザー端末に対して、他ユーザーがメッセージ送信できるかどうかを制御します。
+          </para>
+@z
+
 @x mkfs
           <para>Builds a file system on a device (usually a hard disk
           partition)</para>
@@ -780,6 +808,17 @@
 @y
           <para>
           ディスクパーティションテーブルを操作します。
+          </para>
+@z
+
+@x sulogin
+          <para>Allows <systemitem class="username">root</systemitem> to log in;
+          it is normally invoked by <command>init</command> when the system goes
+          into single user mode</para>
+@y
+          <para>
+          <systemitem class="username">root</systemitem> ユーザーによるログインを許可します。
+          通常は、シングルユーザーモードによりシステムが起動した際に <command>init</command> によって起動されます。
           </para>
 @z
 

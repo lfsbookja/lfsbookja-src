@@ -52,14 +52,14 @@
       <itemizedlist>
         <listitem>
           <para>[matthew] - Added full build of Systemd including its remaining
-          dependencies (attr, gperf, intltool and libcap2).</para>
+          dependencies (attr, dbus, gperf, intltool and libcap2).</para>
         </listitem>
       </itemizedlist>
 @y
       <para>2013-02-13</para>
       <itemizedlist>
         <listitem>
-          <para>[matthew] - Systemd をフルビルドするように、その依存パッケージ (attr, gperf, intltool,libcap2) を追加。</para>
+          <para>[matthew] - Systemd をフルビルドするように、その依存パッケージ (attr, dbus, gperf, intltool,libcap2) を追加。</para>
         </listitem>
       </itemizedlist>
 @z
