@@ -42,6 +42,40 @@
 @z
 
 @x
+      <para>February 13th, 2013</para>
+@y
+      <para>2013/02/13</para>
+@z
+@x
+          <para>[randy] - Added instructions to libiodbc and Virtuoso so
+          they play nice with unixODBC.</para>
+@y
+          <para>[randy] - libiodbc と Virtuoso にて unixODBC が活用できることから手順を追加。</para>
+@z
+
+@x
+      <para>February 11th, 2013</para>
+@y
+      <para>2013/02/11</para>
+@z
+@x
+          <para>[randy] - Updated Perl Module Date::Manip to 6.38.</para>
+@y
+          <para>[randy] - Perl モジュール Date::Manip 6.38 へのアップデート。</para>
+@z
+@x
+          <para>[randy] - Updated FFmpeg to 1.1.2.</para>
+@y
+          <para>[randy] - FFmpeg 1.1.2 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Added wpa service configuration to
+          wpa_supplicant instructions.</para>
+@y
+          <para>[krejzi] - wpa_supplicant 手順にて wpa サービスの設定を追加。</para>
+@z
+
+@x
       <para>February 10th, 2013</para>
 @y
       <para>2013/02/10</para>
