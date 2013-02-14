@@ -27,6 +27,16 @@
   </para>
 @z
 
+@x Attr
+        <para>Home page: <ulink url="&attr-home;"/></para>
+        <para>Download: <ulink url="&attr-url;"/></para>
+        <para>MD5 sum: <literal>&attr-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&attr-home;"/></para>
+        <para>&Download;: <ulink url="&attr-url;"/></para>
+        <para>MD5 sum: <literal>&attr-md5;</literal></para>
+@z
+
 @x autoconf
         <para>Home page: <ulink url="&autoconf-home;"/></para>
         <para>Download: <ulink url="&autoconf-url;"/></para>
@@ -107,6 +117,16 @@
         <para>MD5 sum: <literal>&coreutils-md5;</literal></para>
 @z
 
+@x D-Bus
+        <para>Home page: <ulink url="&dbus-home;"/></para>
+        <para>Download: <ulink url="&dbus-url;"/></para>
+        <para>MD5 sum: <literal>&dbus-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&dbus-home;"/></para>
+        <para>&Download;: <ulink url="&dbus-url;"/></para>
+        <para>MD5 sum: <literal>&dbus-md5;</literal></para>
+@z
+
 @x
         <para>Home page: <ulink url="&dejagnu-home;"/></para>
         <para>Download: <ulink url="&dejagnu-url;"/></para>
@@ -135,6 +155,16 @@
         <para>&Homepage;: <ulink url="&e2fsprogs-home;"/></para>
         <para>&Download;: <ulink url="&e2fsprogs-url;"/></para>
         <para>MD5 sum: <literal>&e2fsprogs-md5;</literal></para>
+@z
+
+@x
+        <para>Home page: <ulink url="&expat-home;"/></para>
+        <para>Download: <ulink url="&expat-url;"/></para>
+        <para>MD5 sum: <literal>&expat-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&expat-home;"/></para>
+        <para>&Download;: <ulink url="&expat-url;"/></para>
+        <para>MD5 sum: <literal>&expat-md5;</literal></para>
 @z
 
 @x
@@ -254,6 +284,16 @@
 @z
 
 @x
+        <para>Home page: <ulink url="&gperf-home;"/></para>
+        <para>Download: <ulink url="&gperf-url;"/></para>
+        <para>MD5 sum: <literal>&gperf-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&gperf-home;"/></para>
+        <para>&Download;: <ulink url="&gperf-url;"/></para>
+        <para>MD5 sum: <literal>&gperf-md5;</literal></para>
+@z
+
+@x
         <para>Home page: <ulink url="&grep-home;"/></para>
         <para>Download: <ulink url="&grep-url;"/></para>
         <para>MD5 sum: <literal>&grep-md5;</literal></para>
@@ -314,6 +354,16 @@
 @z
 
 @x
+        <para>Home page: <ulink url="&intltool-home;"/></para>
+        <para>Download: <ulink url="&intltool-url;"/></para>
+        <para>MD5 sum: <literal>&intltool-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&intltool-home;"/></para>
+        <para>&Download;: <ulink url="&intltool-url;"/></para>
+        <para>MD5 sum: <literal>&intltool-md5;</literal></para>
+@z
+
+@x
         <para>Home page: <ulink url="&iproute2-home;"/></para>
         <para>Download: <ulink url="&iproute2-url;"/></para>
         <para>MD5 sum: <literal>&iproute2-md5;</literal></para>
@@ -361,6 +411,16 @@
         <para>&Homepage;: <ulink url="&lfs-bootscripts-home;"/></para>
         <para>&Download;: <ulink url="&lfs-bootscripts-url;"/></para>
         <para>MD5 sum: <literal>&lfs-bootscripts-md5;</literal></para>
+@z
+
+@x
+        <para>Home page: <ulink url="&libcap2-home;"/></para>
+        <para>Download: <ulink url="&libcap2-url;"/></para>
+        <para>MD5 sum: <literal>&libcap2-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&libcap2-home;"/></para>
+        <para>&Download;: <ulink url="&libcap2-url;"/></para>
+        <para>MD5 sum: <literal>&libcap2-md5;</literal></para>
 @z
 
 @x
@@ -648,6 +708,16 @@
         <para>&Homepage;: <ulink url="&vim-home;"/></para>
         <para>&Download;: <ulink url="&vim-url;"/></para>
         <para>MD5 sum: <literal>&vim-md5;</literal></para>
+@z
+
+@x
+        <para>Home page: <ulink url="&xml-parser-home;"/></para>
+        <para>Download: <ulink url="&xml-parser-url;"/></para>
+        <para>MD5 sum: <literal>&xml-parser-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&xml-parser-home;"/></para>
+        <para>&Download;: <ulink url="&xml-parser-url;"/></para>
+        <para>MD5 sum: <literal>&xml-parser-md5;</literal></para>
 @z
 
 @x Xz

@@ -54,12 +54,24 @@
 -->
 
     <listitem>
+      <para>2013-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SYSTEMD-20130213,
+          <ulink url="&lfs-rev-root;10147">10147</ulink> 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2013-02-13</para>
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
           SYSTEMD-20130213,
-          <ulink url="&lfs-rev-root;10126">10126</ulink> までに対応。
+          <ulink url="&lfs-rev-root;10126">10126</ulink> 対応。
           </para>
         </listitem>
       </itemizedlist>
