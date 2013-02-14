@@ -48,6 +48,56 @@
 @z
 
 @x
+      <para>2013-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-pages-3.47.  Fixes
+          <ulink url="&lfs-ticket-root;3284">#3284</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GMP-5.1.1.  Fixes
+          <ulink url="&lfs-ticket-root;3283">#3283</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Use latest Coreutils-i18n patch from Fedora. Fixes
+          <ulink url="&lfs-ticket-root;3282">#3282</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.7.7.  Fixes
+          <ulink url="&lfs-ticket-root;3281">#3281</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Groff-1.22.2.  Fixes
+          <ulink url="&lfs-ticket-root;3280">#3280</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Man-pages-3.47 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3284">#3284</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GMP-5.1.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3283">#3283</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Fedora が提供する最新の Coreutils-i18n パッチを採用。
+          <ulink url="&lfs-ticket-root;3282">#3282</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.7.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3281">#3281</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Groff-1.22.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3280">#3280</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-01-30</para>
       <itemizedlist>
         <listitem>
