@@ -1,4 +1,11 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling
 EXTRA_DIST = profile.ch profile-mode.ch strip-attributes.ch xsl2profile.ch
 srcdir = @srcdir@
 srcs = profile.xsl profile-mode.xsl strip-attributes.xsl xsl2profile.xsl

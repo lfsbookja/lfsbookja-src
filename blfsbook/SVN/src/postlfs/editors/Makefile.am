@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/postlfs/editors
+BOOKdir = @abs_bookdir@/postlfs/editors
 CHANGE_FILES = \
 	bluefish.ch \
 	ed.ch       \

@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=databases mail major other
-BOOKdir = $(top_builddir)/@bookdir@/server
+BOOKdir = @abs_bookdir@/server
 CHANGE_FILES = \
 	server.ch
 

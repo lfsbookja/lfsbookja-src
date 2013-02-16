@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/introduction/important
+BOOKdir = @abs_bookdir@/introduction/important
 CHANGE_FILES = \
 	beyond.ch         \
 	bootscripts.ch    \

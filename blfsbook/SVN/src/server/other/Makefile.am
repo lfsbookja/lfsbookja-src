@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/server/other
+BOOKdir = @abs_bookdir@/server/other
 CHANGE_FILES = \
 	openldap.ch \
 	other.ch    \

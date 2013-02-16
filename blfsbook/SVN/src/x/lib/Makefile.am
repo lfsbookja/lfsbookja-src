@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/x/lib
+BOOKdir = @abs_bookdir@/x/lib
 CHANGE_FILES = \
 	agg.ch                  \
         at-spi2-atk.ch          \

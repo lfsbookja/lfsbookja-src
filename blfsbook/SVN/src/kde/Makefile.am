@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=add core intro
-BOOKdir = $(top_builddir)/@bookdir@/kde
+BOOKdir = @abs_bookdir@/kde
 CHANGE_FILES = \
 	kde.ch
 

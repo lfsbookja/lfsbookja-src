@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/xsoft/graphweb
+BOOKdir = @abs_bookdir@/xsoft/graphweb
 EXTRA_DIST = firefox.ch graphweb.ch seamonkey.ch
 srcdir = @srcdir@
 srcs = firefox.xml graphweb.xml seamonkey.xml

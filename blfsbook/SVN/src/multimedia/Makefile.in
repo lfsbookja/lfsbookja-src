@@ -241,7 +241,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = audioutils cdwriteutils libdriv videoutils
-BOOKdir = $(top_builddir)/@bookdir@/multimedia
+BOOKdir = @abs_bookdir@/multimedia
 CHANGE_FILES = \
 	multimedia.ch
 

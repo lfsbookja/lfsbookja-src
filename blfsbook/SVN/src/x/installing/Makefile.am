@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/x/installing
+BOOKdir = @abs_bookdir@/x/installing
 CHANGE_FILES = \
 	installing.ch          \
 	libpthread-stubs.ch    \

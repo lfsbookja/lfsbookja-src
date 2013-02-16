@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=installing lib wm
-BOOKdir = $(top_builddir)/@bookdir@/x
+BOOKdir = @abs_bookdir@/x
 CHANGE_FILES = x.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

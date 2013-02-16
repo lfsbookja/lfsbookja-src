@@ -10,7 +10,7 @@ SUBDIRS=appendices book general gnome introduction kde \
 	multimedia postlfs pst server stylesheets template x \
 	xfce xincludes xsoft
 EXTRA_DIST = general.ch index.ch tidy.ch tidy.sed ipam.xml ipag.xml
-BOOKdir = $(top_builddir)/@bookdir@
+BOOKdir = @abs_bookdir@
 srcdir = @srcdir@
 srcs = general.ent index.xml tidy.conf
 EXTRACLEANFILES = $(srcs)

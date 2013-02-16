@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/pst/typesetting
+BOOKdir = @abs_bookdir@/pst/typesetting
 CHANGE_FILES = \
 	typesetting.ch \
 	texlive.ch

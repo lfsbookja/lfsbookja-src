@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=applications core deprecated
-BOOKdir = $(top_builddir)/@bookdir@/gnome
+BOOKdir = @abs_bookdir@/gnome
 CHANGE_FILES = \
 	gnome.ch      \
 	gnome-intro.ch

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/xfce/core
+BOOKdir = @abs_bookdir@/xfce/core
 CHANGE_FILES = \
 	core.ch \
 	exo.ch \

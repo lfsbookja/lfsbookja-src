@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=apps core
-BOOKdir = $(top_builddir)/@bookdir@/xfce
+BOOKdir = @abs_bookdir@/xfce
 CHANGE_FILES = \
 	xfce.ch
 

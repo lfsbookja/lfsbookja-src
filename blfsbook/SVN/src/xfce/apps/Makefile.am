@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/xfce/apps
+BOOKdir = @abs_bookdir@/xfce/apps
 CHANGE_FILES = \
 	apps.ch          \
 	midori.ch        \

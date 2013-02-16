@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/kde/core
+BOOKdir = @abs_bookdir@/kde/core
 CHANGE_FILES = \
 	attica.ch                   \
 	akonadi.ch                  \

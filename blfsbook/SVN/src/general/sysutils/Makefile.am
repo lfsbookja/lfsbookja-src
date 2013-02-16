@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/general/sysutils
+BOOKdir = @abs_bookdir@/general/sysutils
 CHANGE_FILES = \
 	apache-ant.ch    \
 	at.ch            \

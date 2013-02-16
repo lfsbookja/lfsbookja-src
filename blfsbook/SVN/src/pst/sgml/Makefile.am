@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/pst/sgml
+BOOKdir = @abs_bookdir@/pst/sgml
 CHANGE_FILES = \
 	docbook-dsssl.ch \
 	docbook-utils.ch \

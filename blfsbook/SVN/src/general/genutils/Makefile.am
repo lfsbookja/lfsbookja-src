@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/general/genutils
+BOOKdir = @abs_bookdir@/general/genutils
 CHANGE_FILES = \
 	apr-util.ch           \
 	bc.ch                 \

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/book
+BOOKdir = @abs_bookdir@/book
 CHANGE_FILES = \
 	bookinfo.ch     \
 	dedication.ch   \

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/general/genlib
+BOOKdir = @abs_bookdir@/general/genlib
 CHANGE_FILES = \
 	apr.ch \
 	aspell.ch \

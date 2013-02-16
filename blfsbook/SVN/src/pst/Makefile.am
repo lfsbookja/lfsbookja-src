@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=printing ps scanning sgml typesetting xml
-BOOKdir = $(top_builddir)/@bookdir@/pst
+BOOKdir = @abs_bookdir@/pst
 CHANGE_FILES = \
 	pst.ch
 

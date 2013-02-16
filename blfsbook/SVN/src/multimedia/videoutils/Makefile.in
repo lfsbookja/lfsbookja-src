@@ -180,7 +180,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/multimedia/videoutils
+BOOKdir = @abs_bookdir@/multimedia/videoutils
 CHANGE_FILES = \
 	ffmpeg.ch     \
 	mplayer.ch    \

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/appendices
+BOOKdir = @abs_bookdir@/appendices
 CHANGE_FILES = \
 	creat-comm.ch \
 	glossary.ch \

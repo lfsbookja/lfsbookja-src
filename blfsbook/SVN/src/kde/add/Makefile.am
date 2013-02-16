@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/kde/add
+BOOKdir = @abs_bookdir@/kde/add
 CHANGE_FILES = \
 	add.ch              \
 	add-pkgs.ch         \

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/kde/devel
+BOOKdir = @abs_bookdir@/kde/devel
 CHANGE_FILES = \
 	devel.ch       \
 	kdebindings.ch \

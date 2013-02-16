@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/general/prog
+BOOKdir = @abs_bookdir@/general/prog
 CHANGE_FILES = \
 	bazaar.ch         \
 	check.ch          \

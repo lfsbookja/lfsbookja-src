@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/server/mail
+BOOKdir = @abs_bookdir@/server/mail
 CHANGE_FILES = \
 	exim.ch    \
 	mail.ch    \

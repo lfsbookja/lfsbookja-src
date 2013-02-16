@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/gnome/core
+BOOKdir = @abs_bookdir@/gnome/core
 CHANGE_FILES = \
 	accountsservice.ch          \
 	caribou.ch                  \

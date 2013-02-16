@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=docbook-xsl-snapshot pdf xhtml
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl
 EXTRA_DIST = lfs.ch pdf.ch nochunks.ch chunk-slave.ch common.ch \
 	lfs-l10n.ch profile.ch chunkfast.ch \
 	chunk-master.ch

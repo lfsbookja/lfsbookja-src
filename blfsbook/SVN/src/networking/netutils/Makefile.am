@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/networking/netutils
+BOOKdir = @abs_bookdir@/networking/netutils
 CHANGE_FILES = \
 	avahi.ch          \
 	bind-utils.ch     \

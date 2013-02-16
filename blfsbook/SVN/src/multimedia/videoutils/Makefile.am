@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/multimedia/videoutils
+BOOKdir = @abs_bookdir@/multimedia/videoutils
 CHANGE_FILES = \
 	ffmpeg.ch     \
 	mplayer.ch    \

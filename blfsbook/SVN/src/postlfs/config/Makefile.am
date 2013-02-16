@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/postlfs/config
+BOOKdir = @abs_bookdir@/postlfs/config
 CHANGE_FILES = \
 	bootdisk.ch    \
 	compressdoc.ch \

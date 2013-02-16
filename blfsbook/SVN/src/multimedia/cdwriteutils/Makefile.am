@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/multimedia/cdwriteutils
+BOOKdir = @abs_bookdir@/multimedia/cdwriteutils
 CHANGE_FILES = \
 	cdrdao.ch       \
 	cdwriteutils.ch \

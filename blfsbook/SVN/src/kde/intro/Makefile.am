@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/kde/intro
+BOOKdir = @abs_bookdir@/kde/intro
 CHANGE_FILES = \
 	introduction.ch \
 	kde-intro.ch    \

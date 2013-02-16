@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=genlib genutils graphlib prog sysutils
-BOOKdir = $(top_builddir)/@bookdir@/general
+BOOKdir = @abs_bookdir@/general
 CHANGE_FILES = \
 	general.ch
 

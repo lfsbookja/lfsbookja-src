@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/networking/textweb
+BOOKdir = @abs_bookdir@/networking/textweb
 CHANGE_FILES = \
 	links.ch   \
 	lynx.ch    \

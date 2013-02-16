@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/server/major
+BOOKdir = @abs_bookdir@/server/major
 CHANGE_FILES = \
 	apache.ch \
 	bind.ch \

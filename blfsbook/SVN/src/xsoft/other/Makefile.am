@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/xsoft/other
+BOOKdir = @abs_bookdir@/xsoft/other
 CHANGE_FILES = \
 	balsa.ch        \
 	blueman.ch      \

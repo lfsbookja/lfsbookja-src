@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/postlfs/virtualization
+BOOKdir = @abs_bookdir@/postlfs/virtualization
 CHANGE_FILES = \
 	virtualization.ch \
 	qemu-kvm.ch

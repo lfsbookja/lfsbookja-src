@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/general/graphlib
+BOOKdir = @abs_bookdir@/general/graphlib
 CHANGE_FILES = \
 	aalib.ch         \
 	babl.ch          \

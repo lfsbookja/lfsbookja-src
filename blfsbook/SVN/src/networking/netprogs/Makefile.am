@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/networking/netprogs
+BOOKdir = @abs_bookdir@/networking/netprogs
 CHANGE_FILES = \
 	bridgeutils.ch      \
 	cifsutils.ch        \

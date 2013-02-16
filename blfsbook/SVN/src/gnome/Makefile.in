@@ -241,7 +241,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = applications core deprecated
-BOOKdir = $(top_builddir)/@bookdir@/gnome
+BOOKdir = @abs_bookdir@/gnome
 CHANGE_FILES = \
 	gnome.ch      \
 	gnome-intro.ch

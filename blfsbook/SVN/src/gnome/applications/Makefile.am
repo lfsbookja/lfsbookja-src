@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/gnome/applications
+BOOKdir = @abs_bookdir@/gnome/applications
 CHANGE_FILES = \
 	applications.ch         \
 	aisleriot.ch            \

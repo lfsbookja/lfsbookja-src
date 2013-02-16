@@ -180,7 +180,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/pst/typesetting
+BOOKdir = @abs_bookdir@/pst/typesetting
 CHANGE_FILES = \
 	typesetting.ch \
 	texlive.ch

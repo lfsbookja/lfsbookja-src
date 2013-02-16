@@ -1,4 +1,11 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/pdf
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/pdf
 CHANGE_FILES = \
 	lfs-admon.ch \
 	lfs-index.ch \

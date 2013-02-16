@@ -241,7 +241,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = installing lib wm
-BOOKdir = $(top_builddir)/@bookdir@/x
+BOOKdir = @abs_bookdir@/x
 CHANGE_FILES = x.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)

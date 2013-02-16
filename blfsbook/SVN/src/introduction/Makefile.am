@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=important welcome
-BOOKdir = $(top_builddir)/@bookdir@/introduction
+BOOKdir = @abs_bookdir@/introduction
 CHANGE_FILES = \
 	introduction.ch
 

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/multimedia/audioutils
+BOOKdir = @abs_bookdir@/multimedia/audioutils
 CHANGE_FILES = \
 	amarok.ch      \
 	audacious.ch   \

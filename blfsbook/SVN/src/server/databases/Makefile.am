@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/server/databases
+BOOKdir = @abs_bookdir@/server/databases
 CHANGE_FILES = \
 	databases.ch  \
 	db.ch         \

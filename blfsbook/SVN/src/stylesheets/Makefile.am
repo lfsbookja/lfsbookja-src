@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=lfs-xsl
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets
+BOOKdir = @abs_bookdir@/stylesheets
 CHANGE_FILES = \
 	blfs-chunked.ch  \
 	blfs-nochunks.ch \

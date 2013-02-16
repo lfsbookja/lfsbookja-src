@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/pst/printing
+BOOKdir = @abs_bookdir@/pst/printing
 CHANGE_FILES = \
 	cups.ch         \
 	cups-filters.ch \

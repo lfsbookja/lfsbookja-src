@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/multimedia/libdriv
+BOOKdir = @abs_bookdir@/multimedia/libdriv
 CHANGE_FILES = \
 	alsa-firmware.ch      \
 	alsa-lib.ch           \

@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=config editors filesystems security shells virtualization
-BOOKdir = $(top_builddir)/@bookdir@/postlfs
+BOOKdir = @abs_bookdir@/postlfs
 CHANGE_FILES = \
 	postlfs.ch
 

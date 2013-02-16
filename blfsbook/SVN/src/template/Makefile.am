@@ -1,4 +1,11 @@
-BOOKdir = $(top_builddir)/@bookdir@/template
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
+BOOKdir = @abs_bookdir@/template
 EXTRA_DIST = template.ch
 srcdir = @srcdir@
 srcs = template.xml

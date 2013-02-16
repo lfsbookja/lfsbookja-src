@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/pst/xml
+BOOKdir = @abs_bookdir@/pst/xml
 CHANGE_FILES = \
 	docbook-xsl.ch \
 	docbook.ch     \

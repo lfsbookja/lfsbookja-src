@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/postlfs/shells
+BOOKdir = @abs_bookdir@/postlfs/shells
 CHANGE_FILES = \
 	dash.ch   \
 	shells.ch \

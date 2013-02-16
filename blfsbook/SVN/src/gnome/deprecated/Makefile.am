@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/gnome/deprecated
+BOOKdir = @abs_bookdir@/gnome/deprecated
 CHANGE_FILES = \
 	deprecated.ch       \
 	dummy-deprecated.ch \

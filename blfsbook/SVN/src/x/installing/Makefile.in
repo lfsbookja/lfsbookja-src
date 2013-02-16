@@ -180,7 +180,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-BOOKdir = $(top_builddir)/@bookdir@/x/installing
+BOOKdir = @abs_bookdir@/x/installing
 CHANGE_FILES = \
 	installing.ch          \
 	libpthread-stubs.ch    \

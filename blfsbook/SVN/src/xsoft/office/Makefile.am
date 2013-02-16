@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/xsoft/office
+BOOKdir = @abs_bookdir@/xsoft/office
 CHANGE_FILES = \
 	abiword.ch     \
 	gnucash.ch     \

@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=connect mailnews netlibs netprogs netutils textweb
-BOOKdir = $(top_builddir)/@bookdir@/networking
+BOOKdir = @abs_bookdir@/networking
 CHANGE_FILES = \
 	networking.ch
 

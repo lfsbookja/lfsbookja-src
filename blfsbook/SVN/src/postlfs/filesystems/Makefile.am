@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/postlfs/filesystems
+BOOKdir = @abs_bookdir@/postlfs/filesystems
 CHANGE_FILES = \
 	aboutlvm.ch    \
 	aboutraid.ch   \

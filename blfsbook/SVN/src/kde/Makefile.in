@@ -241,7 +241,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = add core intro
-BOOKdir = $(top_builddir)/@bookdir@/kde
+BOOKdir = @abs_bookdir@/kde
 CHANGE_FILES = \
 	kde.ch
 

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/networking/netlibs
+BOOKdir = @abs_bookdir@/networking/netlibs
 CHANGE_FILES = \
 	curl.ch            \
 	geoclue.ch         \

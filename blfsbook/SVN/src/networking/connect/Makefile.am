@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/networking/connect
+BOOKdir = @abs_bookdir@/networking/connect
 CHANGE_FILES = \
 	connect.ch       \
 	dhcp.ch          \

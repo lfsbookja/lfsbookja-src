@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/x/wm
+BOOKdir = @abs_bookdir@/x/wm
 CHANGE_FILES = \
 	fluxbox.ch   \
 	icewm.ch     \

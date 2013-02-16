@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/pst/scanning
+BOOKdir = @abs_bookdir@/pst/scanning
 CHANGE_FILES = \
 	sane.ch     \
 	scanning.ch \

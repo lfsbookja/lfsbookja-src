@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/pst/ps
+BOOKdir = @abs_bookdir@/pst/ps
 CHANGE_FILES = \
 	a2ps.ch     \
 	enscript.ch \

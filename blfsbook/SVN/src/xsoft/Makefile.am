@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=graphweb office other
-BOOKdir = $(top_builddir)/@bookdir@/xsoft
+BOOKdir = @abs_bookdir@/xsoft
 EXTRA_DIST = xsoft.ch
 srcdir = @srcdir@
 srcs = xsoft.xml

@@ -1,4 +1,11 @@
-BOOKdir = $(top_builddir)/@bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/common
+##
+## This is part of BLFSbookja package.
+##
+## $Author$
+## $Rev$
+## $Date::                           $
+##
+BOOKdir = @abs_bookdir@/stylesheets/lfs-xsl/docbook-xsl-snapshot/common
 CHANGE_FILES = common.ch entities.ch gentext.ch \
 	insertfile.ch l10n_dtd.ch l10n_xml.ch l10n_xsl.ch labels.ch \
 	olink.ch pi.ch refentry.ch stripns.ch subtitles.ch \

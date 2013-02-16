@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/postlfs/security
+BOOKdir = @abs_bookdir@/postlfs/security
 CHANGE_FILES = \
 	acl.ch             \
 	attr.ch            \

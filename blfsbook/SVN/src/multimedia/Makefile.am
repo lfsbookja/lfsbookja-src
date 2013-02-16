@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=audioutils cdwriteutils libdriv videoutils
-BOOKdir = $(top_builddir)/@bookdir@/multimedia
+BOOKdir = @abs_bookdir@/multimedia
 CHANGE_FILES = \
 	multimedia.ch
 

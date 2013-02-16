@@ -241,7 +241,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = apps core
-BOOKdir = $(top_builddir)/@bookdir@/xfce
+BOOKdir = @abs_bookdir@/xfce
 CHANGE_FILES = \
 	xfce.ch
 

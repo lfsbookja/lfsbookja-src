@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/networking/mailnews
+BOOKdir = @abs_bookdir@/networking/mailnews
 CHANGE_FILES = \
 	fetchmail.ch \
 	mailnews.ch  \

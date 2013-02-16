@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-BOOKdir = $(top_builddir)/@bookdir@/xincludes
+BOOKdir = @abs_bookdir@/xincludes
 CHANGE_FILES = \
 	gnome-mandir.ch             \
 	gnome-prefix.ch             \
