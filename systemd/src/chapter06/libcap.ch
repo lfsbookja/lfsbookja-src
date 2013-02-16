@@ -14,21 +14,21 @@
 @z
 
 @x
-    <para>The Libcap2 package implements the user-space interfaces to the POSIX
+    <para>The Libcap package implements the user-space interfaces to the POSIX
     1003.1e capabilities available in Linux kernels. These capabilities are a
     partitioning of the all powerful root privilege into a set of distinct
     privileges.</para>
 @y
     <para>
-    Libcap2 パッケージは、Linux カーネルにて利用可能な POSIX 1003.1e 特性に対し、ユーザー空間インターフェースを提供します。
+    Libcap パッケージは、Linux カーネルにて利用可能な POSIX 1003.1e 特性に対し、ユーザー空間インターフェースを提供します。
     この特性 (capability) は、強力なルート権限を他の権限に分割します。
     </para>
 @z
 
 @x
-    <title>Installation of Libcap2</title>
+    <title>Installation of Libcap</title>
 @y
-    <title>&InstallationOf1;Libcap2&InstallationOf2;</title>
+    <title>&InstallationOf1;Libcap&InstallationOf2;</title>
 @z
 
 @x
@@ -52,9 +52,22 @@
 @z
 
 @x
-    <title>Contents of Libcap2</title>
+    <para>The shared library needs to be moved to
+    <filename class="directory">/lib</filename>, and as a result the
+    <filename class="extension">.so</filename> file in
+    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
 @y
-    <title>&ContentsOf1;Libcap2&ContentsOf2;</title>
+    <para>
+    共有ライブラリは <filename class="directory">/lib</filename> に移す必要があります。
+    これに伴って、<filename class="directory">/usr/lib</filename> にある <filename
+    class="extension">.so</filename> ファイルも再生成する必要があります。
+     </para>
+@z
+
+@x
+    <title>Contents of Libcap</title>
+@y
+    <title>&ContentsOf1;Libcap&ContentsOf2;</title>
 @z
 
 @x
@@ -67,10 +80,10 @@
 
 @x
         <seg>capsh, getcap, getpcaps, and setcap</seg>
-        <seg>libcap2.{so,a}</seg>
+        <seg>libcap.{so,a}</seg>
 @y
         <seg>capsh, getcap, getpcaps, setcap</seg>
-        <seg>libcap2.{so,a}</seg>
+        <seg>libcap.{so,a}</seg>
 @z
 
 @x
@@ -103,10 +116,11 @@
           </para>
 @z
 
-@x libcap2.{so,a}
-          <para>Contains the libcap2 API functions</para>
+@x libcap.{so,a}
+          <para>Contains the libcap API functions</para>
 @y
           <para>
-          libcap2 API 関数を提供します。
+          libcap API 関数を提供します。
           </para>
 @z
+\

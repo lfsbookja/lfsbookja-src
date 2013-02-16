@@ -413,14 +413,14 @@
         <para>MD5 sum: <literal>&lfs-bootscripts-md5;</literal></para>
 @z
 
-@x
-        <para>Home page: <ulink url="&libcap2-home;"/></para>
-        <para>Download: <ulink url="&libcap2-url;"/></para>
-        <para>MD5 sum: <literal>&libcap2-md5;</literal></para>
+@x Libcap
+        <para>Home page: <ulink url="&libcap-home;"/></para>
+        <para>Download: <ulink url="&libcap-url;"/></para>
+        <para>MD5 sum: <literal>&libcap-md5;</literal></para>
 @y
-        <para>&Homepage;: <ulink url="&libcap2-home;"/></para>
-        <para>&Download;: <ulink url="&libcap2-url;"/></para>
-        <para>MD5 sum: <literal>&libcap2-md5;</literal></para>
+        <para>&Homepage;: <ulink url="&libcap-home;"/></para>
+        <para>&Download;: <ulink url="&libcap-url;"/></para>
+        <para>MD5 sum: <literal>&libcap-md5;</literal></para>
 @z
 
 @x
@@ -630,14 +630,14 @@
         <para>MD5 sum: <literal>&shadow-md5;</literal></para>
 @z
 
-@x
-        <para>Home page: <ulink url="&sysklogd-home;"/></para>
-        <para>Download: <ulink url="&sysklogd-url;"/></para>
-        <para>MD5 sum: <literal>&sysklogd-md5;</literal></para>
+@x Sysvinit
+        <para>Home page: <ulink url="&sysvinit-home;"/></para>
+        <para>Download: <ulink url="&sysvinit-url;"/></para>
+        <para>MD5 sum: <literal>&sysvinit-md5;</literal></para>
 @y
-        <para>&Homepage;: <ulink url="&sysklogd-home;"/></para>
-        <para>&Download;: <ulink url="&sysklogd-url;"/></para>
-        <para>MD5 sum: <literal>&sysklogd-md5;</literal></para>
+        <para>&Homepage;: <ulink url="&sysvinit-home;"/></para>
+        <para>&Download;: <ulink url="&sysvinit-url;"/></para>
+        <para>MD5 sum: <literal>&sysvinit-md5;</literal></para>
 @z
 
 @x

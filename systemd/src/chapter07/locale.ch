@@ -14,81 +14,28 @@
 @z
 
 @x
-  <title>The Bash Shell Startup Files</title>
+  <title>Configuring the System Locale</title>
 @y
-  <title>Bash シェルの初期起動ファイル</title>
+  <title>システムロケールの設定</title>
 @z
 
 @x
-  <para>The shell program <command>/bin/bash</command> (hereafter referred to
-  as <quote>the shell</quote>) uses a collection of startup files to help
-  create an environment to run in. Each file has a specific use and may affect
-  login and interactive environments differently. The files in the <filename
-  class="directory">/etc</filename> directory provide global settings. If an
-  equivalent file exists in the home directory, it may override the global
-  settings.</para>
-@y
-  <para>
-  シェルプログラムである <filename>/bin/bash</filename> (これ以降は単に<quote>シェル</quote>と表現します) は、初期起動ファイルをいくつも利用して環境設定を行います。
-  個々のファイルにはそれぞれに目的があり、ログインや対話環境をさまざまに制御します。
-  <filename class="directory">/etc</filename> ディレクトリにあるファイルは一般にグローバルな設定を行います。
-  これに対応づいたファイルがユーザーのホームディレクトリにある場合は、グローバルな設定を上書きします。
-  </para>
-@z
-
-@x
-  <para>An interactive login shell is started after a successful login, using
-  <command>/bin/login</command>, by reading the <filename>/etc/passwd</filename>
-  file. An interactive non-login shell is started at the command-line (e.g.,
-  <prompt>[prompt]$</prompt><command>/bin/bash</command>). A non-interactive
-  shell is usually present when a shell script is running. It is non-interactive
-  because it is processing a script and not waiting for user input between
-  commands.</para>
-@y
-  <para>
-  対話型ログインシェルは <command>/bin/login</command> プログラムを利用して <filename>/etc/passwd</filename> ファイルを読み込み、ログインが成功することで起動します。
-  同じ対話型でも非ログインシェルの場合は <prompt>[prompt]$</prompt><command>/bin/bash</command> のようなコマンドラインからの入力を経て起動します。
-  非対話型のシェルはシェルスクリプト動作中に実行されます。
-  非対話型であるのは、スクリプトの実行の最中にユーザーからの入力を待つことがないためです。
-  </para>
-@z
-
-@x
-  <para>For more information, see <command>info bash</command> under the
-  <emphasis>Bash Startup Files and Interactive Shells</emphasis> section.</para>
-@y
-  <para>
-  より詳しい情報は <command>info bash</command> の <emphasis>Bash Startup Files and Interactive Shells</emphasis> の節を参照してください。
-  </para>
-@z
-
-@x
-  <para>The files <filename>/etc/profile</filename> and
-  <filename>~/.bash_profile</filename> are read when the shell is
-  invoked as an interactive login shell.</para>
-@y
-  <para>
-  <filename>/etc/profile</filename> ファイルと <filename>~/.bash_profile</filename> ファイルは、対話型のログインシェルとして起動した時に読み込まれます。
-  </para>
-@z
-
-@x
-  <para>The base <filename>/etc/profile</filename> below sets some
+  <para>The <filename>/etc/locale.conf</filename> below sets some
   environment variables necessary for native language support. Setting
   them properly results in:</para>
 @y
   <para>
-  本節の終わりに示す <filename>/etc/profile</filename> ファイルは言語を設定するために必要となる環境変数を定義します。
-  これを設定することによって以下の内容が定められます。
+  以下に示す <filename>/etc/locale.conf</filename> では、ネイティブな言語サポートに必要となる環境変数を定めます。
+  これを適切に設定することにより以下の内容が定められます。
   </para>
 @z
 
 @x
       <para>The output of programs translated into the native language</para>
 @y
-  <para>
-  プログラムの出力結果を指定した言語で得ることができます。
-  </para>
+      <para>
+      プログラムの出力結果を指定した言語で得ることができます。
+      </para>
 @z
 
 @x
@@ -96,10 +43,10 @@
       classes. This is necessary for <command>bash</command> to properly accept
       non-ASCII characters in command lines in non-English locales</para>
 @y
-  <para>
-  キャラクターを英字、数字、その他のクラスに分類します。
-  この設定は、英語以外のロケールにおいて、コマンドラインに非アスキー文字が入力された場合に <command>bash</command> が正しく入力を受け付けるために必要となります。
-  </para>
+      <para>
+      キャラクターを英字、数字、その他のクラスに分類します。
+      この設定は、英語以外のロケールにおいて、コマンドラインに非アスキー文字が入力された場合に <command>bash</command> が正しく入力を受け付けるために必要となります。
+      </para>
 @z
 
 @x
@@ -266,10 +213,10 @@
 
 @x
   <para>Once the proper locale settings have been determined, create the
-  <filename>/etc/profile</filename> file:</para>
+  <filename>/etc/locale.conf</filename> file:</para>
 @y
   <para>
-  適切なロケール設定が決まったら <filename>/etc/profile</filename> ファイルを生成します。
+  適切なロケール設定が決まったら <filename>/etc/locale.conf</filename> ファイルを生成します。
   </para>
 @z
 

@@ -48,6 +48,35 @@
 @z
 
 @x
+      <para>2013-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>Move newly added components into place.</para>
+        </listitem>
+        <listitem>  
+          <para>Removed Sysklogd-1.5. Journald will be used for logging.</para>
+        </listitem>
+        <listitem>  
+          <para>Re-add Sysvinit package. Few programs are needed from the
+          package.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>新たに加えたパッケージ類を適宜移動。</para>
+        </listitem>
+        <listitem>  
+          <para>Sysklogd-1.5 を削除。ログ取得には Journald を利用。</para>
+        </listitem>
+        <listitem>  
+          <para>Sysvinit パッケージを改めて追加。このパッケージが提供するプログラムを多少必要とするため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-13</para>
       <itemizedlist>
         <listitem>

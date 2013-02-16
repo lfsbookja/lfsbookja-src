@@ -16,7 +16,7 @@
 @x
     <para>D-Bus is a message bus system, a simple way for applications to talk
     to one another. D-Bus supplies both a system daemon (for events such as
-    “new hardware device added” or “printer queue changed”) and a
+    "new hardware device added" or "printer queue changed") and a
     per-user-login-session daemon (for general IPC needs among user
     applications). Also, the message bus is built on top of a general one-to-one
     message passing framework, which can be used by any two applications to
@@ -40,15 +40,6 @@
 @z
 
 @x
-    <para>The D-Bus system daemon (the message bus) needs to run as a non-priveleged user, so create a suitable group and user:</para>
-@y
-    <para>
-    D-Bus システムデーモン (メッセージバス) は、非特権ユーザーにて実行する必要があります。
-    そこで適切なグループとユーザーを生成します。
-    </para>
-@z
-
-@x
     <para>Prepare D-Bus for compilation:</para>
 @y
     <para>&PreparePackage1;D-Bus&PreparePackage2;</para>
@@ -66,27 +57,6 @@
 @y
           <para>
           これは ConsoleKit の認証ディレクトリの位置を指定します。
-          </para>
-@z
-
-@x --without-systemdsystemunitdir
-          <para>This prevents installation of Systemd unit files as Systemd
-          has not been installed yet (due to a circular dependency; Systemd
-          requires D-Bus, but D-Bus can also use Systemd functionality).</para>
-@y
-          <para>
-          これは Systemd をまだインストールしていないため、Systemd のユニットファイルをインストールしないようにします。
-          (循環的な依存関係にあり、Systemd は D-Bus を必要としていますが、一方で D-Bus は Systemd の機能を利用しています。)
-          </para>
-@z
-
-@x --disable-systemd
-          <para>This disables Systemd support in D-Bus, again due to the
-          circular dependency between D-Bus and Systemd.</para>
-@y
-          <para>
-          これは D-Bus において Systemd のサポートを無効にします。
-          D-Bus と Systemd の間で循環的な依存関係があるためです。
           </para>
 @z
 
@@ -120,19 +90,27 @@
 @x
       <segtitle>Installed programs</segtitle>
       <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
-        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-monitor, dbus-send,
-        dbus-uuidgen</seg>
+        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
+        dbus-send and dbus-uuidgen</seg>
         <seg>libdbus-1.{so,a}</seg>
+        <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
+        /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version; and
+        /var/lib/dbus</seg>
 @y
-        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-monitor, dbus-send,
-        dbus-uuidgen</seg>
+        <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
+        dbus-send, dbus-uuidgen</seg>
         <seg>libdbus-1.{so,a}</seg>
+        <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
+        /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
+        /var/lib/dbus</seg>
 @z
 
 @x
@@ -154,6 +132,15 @@
 @y
           <para>
           D-Bus メッセージバスデーモン。
+          </para>
+@z
+
+@x dbus-launch
+          <para>Starts <command>dbus-daemon</command> from a shell
+          script.</para>
+@y
+          <para>
+          シェルスクリプトから <command>dbus-daemon</command> を起動します。
           </para>
 @z
 

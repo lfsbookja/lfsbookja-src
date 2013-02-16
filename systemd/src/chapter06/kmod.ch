@@ -40,7 +40,19 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x --with-rootlibdir
+          <para>This switch ensures that shared library is installed in
+          <filename class="directory">/lib</filename> instead of
+          <filename class="directory">/usr/lib</filename>.</para>
+@y
+          <para>
+          本スイッチは共有ライブラリのインストール先を <filename
+          class="directory">/usr/lib</filename> ではなく <filename
+          class="directory">/lib</filename> とします。
+          .</para>
+@z
+
+@x --with-*
           <para>These options enable Kmod to handle compressed kernel modules.</para>
 @y
           <para>
@@ -105,7 +117,7 @@
 @y
         <seg>depmod (kmod へのリンク), insmod (kmod へのリンク), kmod, kmod-nolib,
         lsmod (kmod へのリンク), modinfo (kmod へのリンク), modprobe (kmod へのリンク),
-        and rmmod (kmod へのリンク)</seg>
+        rmmod (kmod へのリンク)</seg>
         <seg>libkmod.so</seg>
 @z
 
@@ -139,15 +151,6 @@
           <para>カーネルモジュールのロード、アンロードを行います。</para>
 @z
 
-@x libkmod
-          <para>This library is used by other programs to load and unload kernel
-           modules</para>
-@y
-          <para>
-          このライブラリは、カーネルモジュールのロード、アンロードを行う他のプログラムが利用します。
-          </para>
-@z
-
 @x lsmod
           <para>Lists currently loaded modules</para>
 @y
@@ -178,5 +181,14 @@
 @y
           <para>
           稼動中のカーネルからモジュールをアンロードします。
+          </para>
+@z
+
+@x libkmod
+          <para>This library is used by other programs to load and unload kernel
+           modules</para>
+@y
+          <para>
+          このライブラリは、カーネルモジュールのロード、アンロードを行う他のプログラムが利用します。
           </para>
 @z

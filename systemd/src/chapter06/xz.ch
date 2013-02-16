@@ -58,6 +58,19 @@
 @z
 
 @x
+    <para>The shared library needs to be moved to
+    <filename class="directory">/lib</filename>, and as a result the
+    <filename class="extension">.so</filename> file in
+    <filename class="directory">/usr/lib</filename> will need to be recreated:</para>
+@y
+    <para>
+    共有ライブラリは <filename class="directory">/lib</filename> へ移す必要があります。
+    これに伴って <filename class="directory">/usr/lib</filename> にある <filename
+    class="extension">.so</filename> ファイルも再生成する必要があります。
+    </para>
+@z
+
+@x
     <title>Contents of Xz</title>
 @y
     <title>&ContentsOf1;Xz&ContentsOf2;</title>

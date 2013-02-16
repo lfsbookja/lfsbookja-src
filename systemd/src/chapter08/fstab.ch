@@ -51,28 +51,28 @@
   </para>
 @z
 
-@x
-  <para>The <filename class="directory">/dev/shm</filename> mount point
-  for <systemitem class="filesystem">tmpfs</systemitem> is included to
-  allow enabling POSIX-shared memory. The kernel must have the required
-  support built into it for this to work (more about this is in the next
-  section). Please note that very little software currently uses
-  POSIX-shared memory.  Therefore, consider the <filename
-  class="directory">/dev/shm</filename> mount point optional. For more
-  information, see
-  <filename>Documentation/filesystems/tmpfs.txt</filename> in the kernel
-  source tree.</para>
-@y
-  <para>
-  マウントポイント <filename class="directory">/dev/shm</filename> は <systemitem
-  class="filesystem">tmpfs</systemitem> ファイルシステムを指し示すもので POSIX 共有メモリ (POSIX-shared memory) を利用するためのものです。
-  この共有メモリを正しく動作させるためには、これをサポートする機能をカーネルに組み入れておく必要があります。
-  (詳しくは次節にて説明します。)
-  POSIX 共有ライブラリを利用するソフトウェアは、今のところは非常に少ないことを覚えておいてください。
-  したがってマウントポイント <filename class="directory">/dev/shm</filename> は設定しなくても構いません。
-  詳細については、カーネルのソース内にある <filename>Documentation/filesystems/tmpfs.txt</filename> を参照してください。
-  </para>
-@z
+% @x
+%   <para>The <filename class="directory">/dev/shm</filename> mount point
+%   for <systemitem class="filesystem">tmpfs</systemitem> is included to
+%   allow enabling POSIX-shared memory. The kernel must have the required
+%   support built into it for this to work (more about this is in the next
+%   section). Please note that very little software currently uses
+%   POSIX-shared memory.  Therefore, consider the <filename
+%   class="directory">/dev/shm</filename> mount point optional. For more
+%   information, see
+%   <filename>Documentation/filesystems/tmpfs.txt</filename> in the kernel
+%   source tree.</para>
+% @y
+%   <para>
+%   マウントポイント <filename class="directory">/dev/shm</filename> は <systemitem
+%   class="filesystem">tmpfs</systemitem> ファイルシステムを指し示すもので POSIX 共有メモリ (POSIX-shared memory) を利用するためのものです。
+%   この共有メモリを正しく動作させるためには、これをサポートする機能をカーネルに組み入れておく必要があります。
+%   (詳しくは次節にて説明します。)
+%   POSIX 共有ライブラリを利用するソフトウェアは、今のところは非常に少ないことを覚えておいてください。
+%   したがってマウントポイント <filename class="directory">/dev/shm</filename> は設定しなくても構いません。
+%   詳細については、カーネルのソース内にある <filename>Documentation/filesystems/tmpfs.txt</filename> を参照してください。
+%   </para>
+% @z
 
 @x
   <para>Filesystems with MS-DOS or Windows origin (i.e.: vfat, ntfs, smbfs, cifs,

@@ -38,223 +38,223 @@
   </para>
 @z
 
-@x
-  <para>If a network card will not be used, there is likely no need to create
-  any configuration files relating to network cards. If that is the case, you
-  will need to remove the <filename class="symlink">network</filename> symlinks
-  from all run-level directories (<filename
-  class="directory">/etc/rc.d/rc*.d</filename>) after the bootscripts are
-  installed in <xref linkend="ch-scripts-bootscripts"/>.</para>
-@y
-  <para>
-  ネットワークカードを利用しないのであれば、ネットワークカードに関する設定は、おそらくすべて不要なはずです。
-  そのような場合は、ランレベルディレクトリ (<filename
-  class="directory">/etc/rc.d/rc*.d</filename>) から、シンボリックリンク <filename class="symlink">network</filename> を削除してください。
-  これは <xref linkend="ch-scripts-bootscripts"/> にてブートスクリプトをインストールした後に行ってください。
-  </para>
-@z
-
-@x
-    <title>Creating stable names for network interfaces</title>
-@y
-    <title>
-    ネットワークインターフェースに対する固定名称の作成
-    </title>
-@z
-
-@x
-    <para>If there is only one network interface in the system to be
-    configured, this section is optional, although it will never be wrong to do
-    it.  In many cases (e.g. a laptop with a wireless and a wired interface),
-    accomplishing the configuration in this section is necessary.</para>  
-@y
-    <para>
-    設定を行うべきネットワークインターフェースが、システム内にただ一つであるなら、本節に示す内容は任意となります。
-    設定を行ったとしても間違いにはなりません。
-    ラップトップＰＣでのワイヤレスネットワークやケーブル接続のネットワークにおいては、たいていは本節における設定が必要となるでしょう。
-    </para>  
-@z
-
-@x
-    <para>With Udev and modular network drivers, the network interface numbering
-    is not persistent across reboots by default, because the drivers are loaded
-    in parallel and, thus, in random order. For example, on a computer having
-    two network cards made by Intel and Realtek, the network card manufactured
-    by Intel may become <filename class="devicefile">eth0</filename> and the
-    Realtek card becomes  <filename class="devicefile">eth1</filename>. In some
-    cases, after a reboot the cards get renumbered the other way around. To
-    avoid this, Udev comes with a script and some rules to assign stable names
-    to network cards based on their MAC address.</para>
-@y
-    <para>
-    Udev やモジュラー化されたネットワークドライバーにおいて、ネットワークインターフェースの番号の割振りは再起動により変更されます。
-    ドライバーモジュールの読み込みが並列で行われるためランダムになるからです。
-    例えば Intel 製と Realtek 製の二つのネットワークカードを持つコンピューターにおいて、
-    Intel 製が <filename class="devicefile">eth0</filename>、Realtek 製が <filename class="devicefile">eth1</filename> となったとします。
-    しかし時にはシステムの再起動によって番号割り振りが逆転することもあります。
-    これを避けるには Udev ルールを生成して、ネットワークカードの MAC アドレスに基づいて固定的に名称を定める方法があります。
-    </para>
-@z
-
-@x
-    <para>The rules were pre-generated in the build instructions for
-    <application>udev (systemd)</application> in the last chapter.  Inspect the
-    <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> file, to
-    find out which name was assigned to which network device:</para>
-@y
-    <para>
-    このルールは、前章の <application>udev (systemd)</application> におけるビルド手順にて事前生成されています。
-    <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> を確認すれば、どんな名前がどのネットワークデバイスに割り当てられているかが分かります。
-    </para>
-@z
-
-@x
-    <note><para>In some cases such as when MAC addresess have been assigned to
-    a network card manually or in a virtual environment such as Xen,
-    the network rules file may not have been generated because addresses 
-    are not consistently assigned.  In these cases, just continue to
-    the next section.</para></note>
-@y
-    <note><para>
-    ネットワークカードに対して手動で MAC アドレスを割り当てた場合や Xen のような仮想環境における場合などにおいて、ネットワークルールファイルが生成されないことがあります。
-    これはアドレスの割り当てが確定されないためです。
-    こういった場合は次節に進んでください。
-    </para></note>
-@z
-
-@x
-    <para>The file begins with a comment block followed by two lines for each
-    NIC. The first line for each NIC is a commented description showing its
-    hardware IDs (e.g. its PCI vendor and device IDs, if it's a PCI card),
-    along with its driver in parentheses, if the driver can be found. Neither
-    the hardware ID nor the driver is used to determine which name to give an
-    interface; this information is only for reference. The second line is the
-    Udev rule that matches this NIC and actually assigns it a name.</para>
-@y
-    <para>
-    このファイルの先頭にはコメントが数行あり、続いてそれぞれの NIC に対する行があります。
-    NIC ごとの記述では一行めがコメントで、そのハードウェア ID が記されています。
-    (PCI カードである場合、PCI ベンダとデバイス ID が記述されます。)
-    またドライバーが検出できている場合には、カッコ書きでドライバー名も示されます。
-    ハードウェア ID もドライバー名も、インターフェースに対して与えられる名称とは無関係で、単に分かりやすくするために記されているにすぎません。
-    二行めは Udev ルールであり、その NIC を定め、名称を割り当てている記述です。
-    </para>
-@z
-
-@x
-    <para>All Udev rules are made up of several keys, separated by commas and
-    optional whitespace. This rule's keys and an explanation of each of them
-    are as follows:</para>
-@y
-    <para>
-    Udev ルールはいくつかのキー項目で構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
-    このキー項目とその内容は以下のようになります。
-    </para>
-@z
-
-@x
-        <para><literal>SUBSYSTEM=="net"</literal> - This tells Udev to ignore
-        devices that are not network cards.</para>
-@y
-        <para>
-        <literal>SUBSYSTEM=="net"</literal> - 
-        ネットワークカードではないデバイスは無視することを指示します。
-        </para>
-@z
-
-@x
-        <para><literal>ACTION=="add"</literal> - This tells Udev to ignore this
-        rule for a uevent that isn't an add ("remove" and "change" uevents also
-        happen, but don't need to rename network interfaces).</para>
-@y
-        <para>
-        <literal>ACTION=="add"</literal> - 
-        uevent の add イベントではないものは無視することを指示します。
-        (uevent の "remove" イベントや "change" イベントも発生しますが、これらはネットワークインターフェースの名前を変更するものではありません。)
-        </para>
-@z
-
-@x
-        <para><literal>DRIVERS=="?*"</literal> - This exists so that Udev will
-        ignore VLAN or bridge sub-interfaces (because these sub-interfaces do
-        not have drivers). These sub-interfaces are skipped because the name
-        that would be assigned would collide with their parent devices.</para>
-@y
-        <para>
-        <literal>DRIVERS=="?*"</literal> - 
-        Udev に対して VLAN やブリッジサブインターフェース (bridge sub-interfaces) を無視することを指示します。
-        (サブインターフェースにはドライバーがないためです。)
-        サブインターフェースに名前が割り当てられたとすると、親デバイスの名前と衝突してしまうため、サブインターフェースの名前割り当てはスキップされます。
-        </para>
-@z
-
-@x
-        <para><literal>ATTR{address}</literal> - The value of this key is the
-        NIC's MAC address.</para>
-@y
-        <para>
-        <literal>ATTR{address}</literal> - 
-        このキーの値は NIC の MAC アドレスを表します。
-        </para>
-@z
-
-@x
-        <para><literal>ATTR{type}=="1"</literal> - This ensures the rule only
-        matches the primary interface in the case of certain wireless drivers,
-        which create multiple virtual interfaces. The secondary interfaces are
-        skipped for the same reason that VLAN and bridge sub-interfaces are
-        skipped: there would be a name collision otherwise.</para>
-@y
-        <para>
-        <literal>ATTR{type}=="1"</literal> - 
-        特定のワイヤレスドライバーでは複数の仮想インターフェースが生成されますが、そのうちの主となるインターフェースにのみルールが合致するようにします。
-        二つめ以降のインターフェースに対する処理は、VLAN やブリッジサブインターフェースがスキップされるのと同じくスキップされます。
-        名前割り当てが行われてしまうと名前衝突を起こすためです。
-        </para>
-@z
-
-@x
-        <para><literal>KERNEL=="eth*"</literal> - This key was added to the
-        Udev rule generator to handle machines that have multiple network
-        interfaces, all with the same MAC address (the PS3 is one such
-        machine).  If the independent interfaces have different basenames,
-        this key will allow Udev to tell them apart.  This is generally not
-        necessary for most Linux From Scratch users, but does not hurt.</para>
-@y
-        <para>
-        <literal>KERNEL=="eth*"</literal> - 
-        複数のネットワークインターフェースを有するマシンを取り扱うためのルールを加えます。
-        このルールでは全インターフェースに同一の MAC アドレスが用いられます。
-        (PS3 などがそういったマシンになります。)
-        各インターフェースに対して個別の命名が行われたとすると Udev はそれぞれを別のものとして取り扱います。
-        これはたいていの Linux From Scratch ユーザーにとって必要ありません。
-        ただそうなったとしても問題はありません。
-        </para>
-@z
-
-@x
-        <para><literal>NAME</literal> - The value of this key is the name that
-        Udev will assign to this interface.</para>
-@y
-        <para>
-        <literal>NAME</literal> - 
-        Udev がインターフェースに対して割り当てる名前をキーの値として指定します。
-        </para>
-@z
-
-@x
-    <para>The value of <literal>NAME</literal> is the important part. Make sure
-    you know which name has been assigned to each of your network cards before
-    proceeding, and be sure to use that <literal>NAME</literal> value when
-    creating your configuration files below.</para>
-@y
-    <para>
-    <literal>NAME</literal> に定義される値が重要です。
-    どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
-    そして以下において設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
-    </para>
-@z
-
+% @x
+%   <para>If a network card will not be used, there is likely no need to create
+%   any configuration files relating to network cards. If that is the case, you
+%   will need to remove the <filename class="symlink">network</filename> symlinks
+%   from all run-level directories (<filename
+%   class="directory">/etc/rc.d/rc*.d</filename>) after the bootscripts are
+%   installed in <xref linkend="ch-scripts-bootscripts"/>.</para>
+% @y
+%   <para>
+%   ネットワークカードを利用しないのであれば、ネットワークカードに関する設定は、おそらくすべて不要なはずです。
+%   そのような場合は、ランレベルディレクトリ (<filename
+%   class="directory">/etc/rc.d/rc*.d</filename>) から、シンボリックリンク <filename class="symlink">network</filename> を削除してください。
+%   これは <xref linkend="ch-scripts-bootscripts"/> にてブートスクリプトをインストールした後に行ってください。
+%   </para>
+% @z
+% 
+% @x
+%     <title>Creating stable names for network interfaces</title>
+% @y
+%     <title>
+%     ネットワークインターフェースに対する固定名称の作成
+%     </title>
+% @z
+% 
+% @x
+%     <para>If there is only one network interface in the system to be
+%     configured, this section is optional, although it will never be wrong to do
+%     it.  In many cases (e.g. a laptop with a wireless and a wired interface),
+%     accomplishing the configuration in this section is necessary.</para>  
+% @y
+%     <para>
+%     設定を行うべきネットワークインターフェースが、システム内にただ一つであるなら、本節に示す内容は任意となります。
+%     設定を行ったとしても間違いにはなりません。
+%     ラップトップＰＣでのワイヤレスネットワークやケーブル接続のネットワークにおいては、たいていは本節における設定が必要となるでしょう。
+%     </para>  
+% @z
+% 
+% @x
+%     <para>With Udev and modular network drivers, the network interface numbering
+%     is not persistent across reboots by default, because the drivers are loaded
+%     in parallel and, thus, in random order. For example, on a computer having
+%     two network cards made by Intel and Realtek, the network card manufactured
+%     by Intel may become <filename class="devicefile">eth0</filename> and the
+%     Realtek card becomes  <filename class="devicefile">eth1</filename>. In some
+%     cases, after a reboot the cards get renumbered the other way around. To
+%     avoid this, Udev comes with a script and some rules to assign stable names
+%     to network cards based on their MAC address.</para>
+% @y
+%     <para>
+%     Udev やモジュラー化されたネットワークドライバーにおいて、ネットワークインターフェースの番号の割振りは再起動により変更されます。
+%     ドライバーモジュールの読み込みが並列で行われるためランダムになるからです。
+%     例えば Intel 製と Realtek 製の二つのネットワークカードを持つコンピューターにおいて、
+%     Intel 製が <filename class="devicefile">eth0</filename>、Realtek 製が <filename class="devicefile">eth1</filename> となったとします。
+%     しかし時にはシステムの再起動によって番号割り振りが逆転することもあります。
+%     これを避けるには Udev ルールを生成して、ネットワークカードの MAC アドレスに基づいて固定的に名称を定める方法があります。
+%     </para>
+% @z
+% 
+% @x
+%     <para>The rules were pre-generated in the build instructions for
+%     <application>udev (systemd)</application> in the last chapter.  Inspect the
+%     <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> file, to
+%     find out which name was assigned to which network device:</para>
+% @y
+%     <para>
+%     このルールは、前章の <application>udev (systemd)</application> におけるビルド手順にて事前生成されています。
+%     <filename>/etc/udev/rules.d/70-persistent-net.rules</filename> を確認すれば、どんな名前がどのネットワークデバイスに割り当てられているかが分かります。
+%     </para>
+% @z
+% 
+% @x
+%     <note><para>In some cases such as when MAC addresess have been assigned to
+%     a network card manually or in a virtual environment such as Xen,
+%     the network rules file may not have been generated because addresses 
+%     are not consistently assigned.  In these cases, just continue to
+%     the next section.</para></note>
+% @y
+%     <note><para>
+%     ネットワークカードに対して手動で MAC アドレスを割り当てた場合や Xen のような仮想環境における場合などにおいて、ネットワークルールファイルが生成されないことがあります。
+%     これはアドレスの割り当てが確定されないためです。
+%     こういった場合は次節に進んでください。
+%     </para></note>
+% @z
+% 
+% @x
+%     <para>The file begins with a comment block followed by two lines for each
+%     NIC. The first line for each NIC is a commented description showing its
+%     hardware IDs (e.g. its PCI vendor and device IDs, if it's a PCI card),
+%     along with its driver in parentheses, if the driver can be found. Neither
+%     the hardware ID nor the driver is used to determine which name to give an
+%     interface; this information is only for reference. The second line is the
+%     Udev rule that matches this NIC and actually assigns it a name.</para>
+% @y
+%     <para>
+%     このファイルの先頭にはコメントが数行あり、続いてそれぞれの NIC に対する行があります。
+%     NIC ごとの記述では一行めがコメントで、そのハードウェア ID が記されています。
+%     (PCI カードである場合、PCI ベンダとデバイス ID が記述されます。)
+%     またドライバーが検出できている場合には、カッコ書きでドライバー名も示されます。
+%     ハードウェア ID もドライバー名も、インターフェースに対して与えられる名称とは無関係で、単に分かりやすくするために記されているにすぎません。
+%     二行めは Udev ルールであり、その NIC を定め、名称を割り当てている記述です。
+%     </para>
+% @z
+% 
+% @x
+%     <para>All Udev rules are made up of several keys, separated by commas and
+%     optional whitespace. This rule's keys and an explanation of each of them
+%     are as follows:</para>
+% @y
+%     <para>
+%     Udev ルールはいくつかのキー項目で構成され、それぞれがカンマで区切られるか、場合によっては空白文字で区切られています。
+%     このキー項目とその内容は以下のようになります。
+%     </para>
+% @z
+% 
+% @x
+%         <para><literal>SUBSYSTEM=="net"</literal> - This tells Udev to ignore
+%         devices that are not network cards.</para>
+% @y
+%         <para>
+%         <literal>SUBSYSTEM=="net"</literal> - 
+%         ネットワークカードではないデバイスは無視することを指示します。
+%         </para>
+% @z
+% 
+% @x
+%         <para><literal>ACTION=="add"</literal> - This tells Udev to ignore this
+%         rule for a uevent that isn't an add ("remove" and "change" uevents also
+%         happen, but don't need to rename network interfaces).</para>
+% @y
+%         <para>
+%         <literal>ACTION=="add"</literal> - 
+%         uevent の add イベントではないものは無視することを指示します。
+%         (uevent の "remove" イベントや "change" イベントも発生しますが、これらはネットワークインターフェースの名前を変更するものではありません。)
+%         </para>
+% @z
+% 
+% @x
+%         <para><literal>DRIVERS=="?*"</literal> - This exists so that Udev will
+%         ignore VLAN or bridge sub-interfaces (because these sub-interfaces do
+%         not have drivers). These sub-interfaces are skipped because the name
+%         that would be assigned would collide with their parent devices.</para>
+% @y
+%         <para>
+%         <literal>DRIVERS=="?*"</literal> - 
+%         Udev に対して VLAN やブリッジサブインターフェース (bridge sub-interfaces) を無視することを指示します。
+%         (サブインターフェースにはドライバーがないためです。)
+%         サブインターフェースに名前が割り当てられたとすると、親デバイスの名前と衝突してしまうため、サブインターフェースの名前割り当てはスキップされます。
+%         </para>
+% @z
+% 
+% @x
+%         <para><literal>ATTR{address}</literal> - The value of this key is the
+%         NIC's MAC address.</para>
+% @y
+%         <para>
+%         <literal>ATTR{address}</literal> - 
+%         このキーの値は NIC の MAC アドレスを表します。
+%         </para>
+% @z
+% 
+% @x
+%         <para><literal>ATTR{type}=="1"</literal> - This ensures the rule only
+%         matches the primary interface in the case of certain wireless drivers,
+%         which create multiple virtual interfaces. The secondary interfaces are
+%         skipped for the same reason that VLAN and bridge sub-interfaces are
+%         skipped: there would be a name collision otherwise.</para>
+% @y
+%         <para>
+%         <literal>ATTR{type}=="1"</literal> - 
+%         特定のワイヤレスドライバーでは複数の仮想インターフェースが生成されますが、そのうちの主となるインターフェースにのみルールが合致するようにします。
+%         二つめ以降のインターフェースに対する処理は、VLAN やブリッジサブインターフェースがスキップされるのと同じくスキップされます。
+%         名前割り当てが行われてしまうと名前衝突を起こすためです。
+%         </para>
+% @z
+% 
+% @x
+%         <para><literal>KERNEL=="eth*"</literal> - This key was added to the
+%         Udev rule generator to handle machines that have multiple network
+%         interfaces, all with the same MAC address (the PS3 is one such
+%         machine).  If the independent interfaces have different basenames,
+%         this key will allow Udev to tell them apart.  This is generally not
+%         necessary for most Linux From Scratch users, but does not hurt.</para>
+% @y
+%         <para>
+%         <literal>KERNEL=="eth*"</literal> - 
+%         複数のネットワークインターフェースを有するマシンを取り扱うためのルールを加えます。
+%         このルールでは全インターフェースに同一の MAC アドレスが用いられます。
+%         (PS3 などがそういったマシンになります。)
+%         各インターフェースに対して個別の命名が行われたとすると Udev はそれぞれを別のものとして取り扱います。
+%         これはたいていの Linux From Scratch ユーザーにとって必要ありません。
+%         ただそうなったとしても問題はありません。
+%         </para>
+% @z
+% 
+% @x
+%         <para><literal>NAME</literal> - The value of this key is the name that
+%         Udev will assign to this interface.</para>
+% @y
+%         <para>
+%         <literal>NAME</literal> - 
+%         Udev がインターフェースに対して割り当てる名前をキーの値として指定します。
+%         </para>
+% @z
+% 
+% @x
+%     <para>The value of <literal>NAME</literal> is the important part. Make sure
+%     you know which name has been assigned to each of your network cards before
+%     proceeding, and be sure to use that <literal>NAME</literal> value when
+%     creating your configuration files below.</para>
+% @y
+%     <para>
+%     <literal>NAME</literal> に定義される値が重要です。
+%     どのネットワークカードにどんな名前が割り当てられているかをよく確認してください。
+%     そして以下において設定ファイルを生成する際には <literal>NAME</literal> に定義されている名称を利用してください。
+%     </para>
+% @z
+% 
 @x
     <title>Creating Network Interface Configuration Files</title>
 @y

@@ -78,7 +78,7 @@
 @z
 
 @x
-<!ENTITY sysklogd-ch6-sbu "less than 0.1 SBU">
+<!ENTITY sysvinit-ch6-sbu "less than 0.1 SBU">
 @y
-<!ENTITY sysklogd-ch6-sbu "0.1 SBU 以下">
+<!ENTITY sysvinit-ch6-sbu "0.1 SBU 以下">
 @z

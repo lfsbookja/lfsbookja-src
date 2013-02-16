@@ -572,15 +572,18 @@
         </para>
 @z
 
-@x Sysklogd
-        <para>This package contains programs for logging system messages, 
-        such as those given by the kernel or daemon processes when unusual 
-        events occur.</para>
+@x Systemd
+        <para>This package contains programs for controlling the startup,
+        running, and shutdown of the system.</para>
 @y
-        <para>
-        このパッケージは、システムメッセージログを扱うプログラムを提供します。
-        例えばカーネルが出力するログや、デーモンプロセスが異常発生時に出力するログなどです。
-        </para>
+        <para>This package contains programs for controlling the startup,
+        running, and shutdown of the system.</para>
+@z
+
+@x Sysvinit
+        <para>This package provides misc. utils needed by some packages.</para>
+@y
+        <para>This package provides misc. utils needed by some packages.</para>
 @z
 
 @x Tar

@@ -119,12 +119,12 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -138,7 +138,7 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -157,12 +157,12 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -200,17 +200,17 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -251,12 +251,12 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -275,12 +275,12 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -294,17 +294,17 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -323,12 +323,12 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -342,17 +342,17 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -371,12 +371,12 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -400,7 +400,7 @@
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -424,12 +424,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -450,7 +450,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg><ulink url="http://gcc.gnu.org/wiki/Graphite">CLooG-PPL</ulink>,
@@ -471,17 +471,17 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -505,7 +505,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -524,12 +524,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -543,7 +543,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>MPFR, GCC</seg>
@@ -553,7 +553,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -610,17 +610,17 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -644,7 +644,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -666,7 +666,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -690,7 +690,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -709,12 +709,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -733,12 +733,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -762,7 +762,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -805,7 +805,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -824,12 +824,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -848,12 +848,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -896,12 +896,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -920,12 +920,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -942,12 +942,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -961,7 +961,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>GCC</seg>
@@ -971,7 +971,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -985,7 +985,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>GCC</seg>
@@ -995,7 +995,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1021,7 +1021,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1038,7 +1038,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>Ed</seg>
@@ -1067,7 +1067,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1081,7 +1081,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>Kmod</seg>
@@ -1091,29 +1091,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
-@x Popt
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Gawk, GCC, Glibc, Grep, Make</seg>
-@z
-@x
-          <seg>Diffutils and Sed</seg>
-@y
-          <seg>Diffutils, Sed</seg>
-@z
-@x
-          <seg>Pkg-config</seg>
-@y
-          <seg>Pkg-config</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1125,12 +1103,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1149,12 +1127,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1178,7 +1156,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1225,28 +1203,6 @@ Typo ですが日本語訳には影響ありません。
 @z
 
 %----------------------------------------------------------------------
-@x Sysklogd
-         <seg>Binutils, Coreutils, GCC, Glibc, Make, and Patch</seg>
-@y
-         <seg>Binutils, Coreutils, GCC, Glibc, Make, Patch</seg>
-@z
-@x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
 @x Sysvinit
          <seg>Binutils, Coreutils, GCC, Glibc, Make, and Sed</seg>
 @y
@@ -1260,12 +1216,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1284,12 +1240,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1303,17 +1259,17 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1327,41 +1283,17 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
-@z
-
-%----------------------------------------------------------------------
-@x Udev
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, and Sed</seg>
-@y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Gawk, GCC, Glibc, Grep,
-         Kmod, Make, Sed</seg>
-@z
-@x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
-@z
-@x
-          <seg>Glib, Pci-Utils, Python, Systemd, USB-Utils</seg>
-@y
-          <seg>Glib, Pci-Utils, Python, Systemd, USB-Utils</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1380,12 +1312,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1399,12 +1331,12 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>Xorg, GTK+2, LessTif, Python, Tcl, Ruby, and GPM</seg>
@@ -1421,7 +1353,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>GRUB, Kmod, Man-DB, Udev</seg>
@@ -1431,7 +1363,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1443,7 +1375,7 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z
 @x
           <seg>File, Kmod, Perl, and Util-linux</seg>
@@ -1453,5 +1385,5 @@ Typo ですが日本語訳には影響ありません。
 @x
           <seg>None</seg>
 @y
-          <seg>なし</seg>
+          <seg>&None;</seg>
 @z

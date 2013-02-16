@@ -32,23 +32,20 @@
 @z
 
 @x
-  <para>Part of the job of the <command>localnet</command> script is setting the
-  system's hostname. This needs to be configured in the
-  <filename>/etc/sysconfig/network</filename> file.</para>
+  <para>Systemd reads <filename>/etc/hostname</filename> to determine which
+  hostname should be set.</para>
 @y
   <para>
-  <command>localnet</command>
-  スクリプトの行う作業の１つが、システムのホスト名を定めることです。
-  この設定は <filename>/etc/sysconfig/network</filename> ファイルにて行います。
+  Systemd では、ホスト名を決定するために <filename>/etc/hostname</filename> ファイルを必要とします。
   </para>
 @z
 
 @x
-  <para>Create the <filename>/etc/sysconfig/network</filename> file and enter a
+  <para>Create the <filename>/etc/hostname</filename> file and enter a
   hostname by running:</para>
 @y
   <para>
-  以下のコマンドにより <filename>/etc/sysconfig/network</filename> ファイルを生成しホスト名を定めます。
+  以下のようにして <filename>/etc/hostname</filename> ファイルを生成し、ホスト名を定めます。
   </para>
 @z
 
@@ -58,8 +55,8 @@
   information is put in the <filename>/etc/hosts</filename> file.</para>
 @y
   <para>
-  <replaceable>&lt;lfs&gt;</replaceable> の部分はコンピューターに与える名称に置き換えてください。
-  ここには完全修飾ドメイン名 (Fully Qualified Domain Name; FQDN) を記述しないでください。
-  それは <filename>/etc/hosts</filename> ファイルにて設定します。
+  <replaceable>&lt;lfs&gt;</replaceable> の部分は、コンピューターに対して定めた名前に置き換えてください。
+  ここでは完全修飾ドメイン名 (fully-qualified domain name; FQDN) は用いないでください。
+  これらの情報は <filename>/etc/hosts</filename> ファイルにセットされます。
   </para>
 @z

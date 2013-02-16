@@ -35,16 +35,12 @@
 
 @x
   <para>A proper Linux system maintains a list of the mounted file systems in
-  the file <filename>/etc/mtab</filename>.  Normally, this file would be
-  created when we mount a new file system. Since we will not be mounting any
-  file systems inside our chroot environment, create an empty file for
-  utilities that expect the presence of <filename>/etc/mtab</filename>:</para>
+  the file <filename>/etc/mtab</filename>. Systemd requires it to be a
+  symbolic link to  <filename>/proc/self/mounts</filename>:</para>
 @y
   <para>
   Linux システムが適切に動作しているなら、マウントしているファイルシステムの情報を <filename>/etc/mtab</filename> ファイルに保持しています。
-  このファイルは普通は、新しいファイルシステムをマウントした際に生成されます。
-  しかし今の我々の chroot 環境では、ファイルシステムを一つもマウントしていません。
-  そこで、このファイルの存在を前提としているプログラムを正しく動作させるため、空の <filename>/etc/mtab</filename> を作成しておきます。
+  Systemd パッケージは、このファイルに対するシンボリックリンク <filename>/proc/self/mounts</filename> を必要とします。
   </para>
 @z
 

@@ -62,24 +62,20 @@
 
 @x
       <segtitle>Installed program</segtitle>
-      <segtitle>Installed library</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
-      <segtitle>&InstalledLibrary;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
         <seg>intltool-extract, intltool-merge, intltool-prepare,
         intltool-update, and intltoolize</seg>
-        <seg>None</seg>
         <seg>/usr/share/doc/intltool-&intltool-version; and
         /usr/share/intltool</seg>
 @y
         <seg>intltool-extract, intltool-merge, intltool-prepare,
         intltool-update, intltoolize</seg>
-        <seg>&None;</seg>
         <seg>/usr/share/doc/intltool-&intltool-version;,
         /usr/share/intltool</seg>
 @z

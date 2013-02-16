@@ -74,20 +74,6 @@
 @z
 
 @x
-    <para>Some of the scripts in the LFS-Bootscripts package depend on
-    <command>find</command>.  As <filename class="directory">/usr</filename>
-    may not be available during the early stages of booting, this program
-    needs to be on the root partition.  The <command>updatedb</command>
-    script also needs to be modified to correct an explicit path:</para>
-@y
-    <para>
-    LFS ブートスクリプトパッケージでは、いくつかのスクリプトが <command>find</command> を利用しています。
-    <filename class="directory">/usr</filename> ディレクトリはブート処理の初めでは認識できないため、このプログラムはルートパーティションに置く必要があります。
-    同じく <command>updatedb</command> スクリプトは明示的なパスを修正する必要があります。
-    </para>
-@z
-
-@x
     <title>Contents of Findutils</title>
 @y
     <title>&ContentsOf1;Findutils&ContentsOf2;</title>

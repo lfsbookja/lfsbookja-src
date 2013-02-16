@@ -240,80 +240,80 @@
       </para> </sect3>
 @z
 
-@x
-      <title>Udev Bootscripts</title>
-@y
-      <title>Udev ブートスクリプト</title>
-@z
-
-@x
-      <para>The first LFS bootscript,
-      <filename>/etc/init.d/mountvirtfs</filename> will copy any devices
-      located in <filename class="directory">/lib/udev/devices</filename> to
-      <filename class="directory">/dev</filename>. This is necessary because
-      some devices, directories, and symlinks are needed before the dynamic
-      device handling processes are available during the early stages of
-      booting a system, or are required by <command>udevd</command> itself.
-      Creating static device nodes in <filename
-      class="directory">/lib/udev/devices</filename> also provides an easy
-      workaround for devices that are not supported by the dynamic device
-      handling infrastructure.</para> 
-@y
-      <para>
-      初期に起動される LFS ブートスクリプト <filename>/etc/init.d/mountvirtfs</filename> は、<filename
-      class="directory">/lib/udev/devices</filename> に存在するデバイスノードを、すべて <filename
-      class="directory">/dev</filename> にコピーします。
-      デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
-      あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
-      <filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
-      </para>
-@z
-
-@x
-      <para>The <filename>/etc/rc.d/init.d/udev</filename> initscript starts
-      <command>udevd</command>, triggers any "coldplug" devices that have
-      already been created by the kernel and waits for any rules to complete.
-      The script also unsets the uevent handler from the default of
-      <filename>/sbin/hotplug </filename>.  This is done because the kernel no
-      longer needs to call out to an external binary.  Instead
-      <command>udevd</command> will listen on a netlink socket for uevents that
-      the kernel raises.</para> 
-@y
-      <para>
-      初期起動スクリプト <filename>/etc/rc.d/init.d/udev</filename> は <command>udevd</command> を起動し、カーネルにより既に生成されている "コールドプラグ" のデバイスをすべて稼動させます。
-      そしてすべてのルールが起動完了するのを待ちます。
-      このスクリプトは <filename>/sbin/hotplug</filename> のデフォルトから uevent ハンドラーを取り除きます。
-      この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
-      そのかわりに、<command>udevd</command>は、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
-      </para>
-@z
-
-@x
-      <para>The <command>/etc/rc.d/init.d/udev_retry</command> initscript takes
-      care of re-triggering events for subsystems whose rules may rely on
-      filesystems that are not mounted until the <command>mountfs</command>
-      script is run (in particular, <filename class="directory">/usr</filename>
-      and <filename class="directory">/var</filename> may cause this).  This
-      script runs after the <command>mountfs</command> script, so those rules
-      (if re-triggered) should succeed the second time around.  It is
-      configured from the <filename>/etc/sysconfig/udev_retry</filename> file;
-      any words in this file other than comments are considered subsystem names
-      to trigger at retry time.  To find the subsystem of a device, use
-      <command>udevadm info --attribute-walk &lt;device&gt;</command> where
-      &lt;device&gt; is a an absolure path in /dev or /sys such as /dev/sr0 or
-      /sys/class/rtc.</para>
-@y
-      <para>
-      初期起動スクリプト <command>/etc/rc.d/init.d/udev_retry</command> は、サブシステムに対するイベントの再起動を行ないます。
-      そのサブシステムとはファイルシステムに依存するもので、<command>mountfs</command> が実行されるまでマウントされません。
-      (特に <filename class="directory">/usr</filename> や <filename class="directory">/var</filename> がこれに該当します。)
-      <command>mountfs</command> スクリプトの後にこのスクリプトが実行されるので、(イベントが再起動されるものであれば) 二度目には成功します。
-      このスクリプトは <filename>/etc/sysconfig/udev_retry</filename> ファイルにより設定が可能で、コメントを除く記述項目はすべてサブシステム名を表わし、二度目の起動時のリトライ対象となります。
-      (デバイスのサブシステムを知るには <command>udevadm info --attribute-walk &lt;device&gt;</command> を実行します。
-      ここで &lt;device&gt; は、/dev や /sys から始まる絶対パスであり /dev/sr0 や /sys/class/rtc などを表します。)
-      </para>
-@z
-
+% @x
+%       <title>Udev Bootscripts</title>
+% @y
+%       <title>Udev ブートスクリプト</title>
+% @z
+% 
+% @x
+%       <para>The first LFS bootscript,
+%       <filename>/etc/init.d/mountvirtfs</filename> will copy any devices
+%       located in <filename class="directory">/lib/udev/devices</filename> to
+%       <filename class="directory">/dev</filename>. This is necessary because
+%       some devices, directories, and symlinks are needed before the dynamic
+%       device handling processes are available during the early stages of
+%       booting a system, or are required by <command>udevd</command> itself.
+%       Creating static device nodes in <filename
+%       class="directory">/lib/udev/devices</filename> also provides an easy
+%       workaround for devices that are not supported by the dynamic device
+%       handling infrastructure.</para> 
+% @y
+%       <para>
+%       初期に起動される LFS ブートスクリプト <filename>/etc/init.d/mountvirtfs</filename> は、<filename
+%       class="directory">/lib/udev/devices</filename> に存在するデバイスノードを、すべて <filename
+%       class="directory">/dev</filename> にコピーします。
+%       デバイスやディレクトリ、シンボリックリンクがこの時点で利用可能になっていないと、システム起動の初期段階において動的デバイスを扱う処理が動作しないためです。
+%       あるいは <command>udevd</command> 自身がそれを必要とするからでもあります。
+%       <filename class="directory">/lib/udev/devices</filename> 内に静的なデバイスノードを生成することで、動的デバイスを取り扱うことができないデバイスも動作させることができます。
+%       </para>
+% @z
+% 
+% @x
+%       <para>The <filename>/etc/rc.d/init.d/udev</filename> initscript starts
+%       <command>udevd</command>, triggers any "coldplug" devices that have
+%       already been created by the kernel and waits for any rules to complete.
+%       The script also unsets the uevent handler from the default of
+%       <filename>/sbin/hotplug </filename>.  This is done because the kernel no
+%       longer needs to call out to an external binary.  Instead
+%       <command>udevd</command> will listen on a netlink socket for uevents that
+%       the kernel raises.</para> 
+% @y
+%       <para>
+%       初期起動スクリプト <filename>/etc/rc.d/init.d/udev</filename> は <command>udevd</command> を起動し、カーネルにより既に生成されている "コールドプラグ" のデバイスをすべて稼動させます。
+%       そしてすべてのルールが起動完了するのを待ちます。
+%       このスクリプトは <filename>/sbin/hotplug</filename> のデフォルトから uevent ハンドラーを取り除きます。
+%       この時点でカーネルは、他の実行モジュールを呼び出す必要がないからです。
+%       そのかわりに、<command>udevd</command>は、カーネルが起動する uevent をネットリンクソケット (netlink socket) 上で待ち受けます。
+%       </para>
+% @z
+% 
+% @x
+%       <para>The <command>/etc/rc.d/init.d/udev_retry</command> initscript takes
+%       care of re-triggering events for subsystems whose rules may rely on
+%       filesystems that are not mounted until the <command>mountfs</command>
+%       script is run (in particular, <filename class="directory">/usr</filename>
+%       and <filename class="directory">/var</filename> may cause this).  This
+%       script runs after the <command>mountfs</command> script, so those rules
+%       (if re-triggered) should succeed the second time around.  It is
+%       configured from the <filename>/etc/sysconfig/udev_retry</filename> file;
+%       any words in this file other than comments are considered subsystem names
+%       to trigger at retry time.  To find the subsystem of a device, use
+%       <command>udevadm info --attribute-walk &lt;device&gt;</command> where
+%       &lt;device&gt; is a an absolure path in /dev or /sys such as /dev/sr0 or
+%       /sys/class/rtc.</para>
+% @y
+%       <para>
+%       初期起動スクリプト <command>/etc/rc.d/init.d/udev_retry</command> は、サブシステムに対するイベントの再起動を行ないます。
+%       そのサブシステムとはファイルシステムに依存するもので、<command>mountfs</command> が実行されるまでマウントされません。
+%       (特に <filename class="directory">/usr</filename> や <filename class="directory">/var</filename> がこれに該当します。)
+%       <command>mountfs</command> スクリプトの後にこのスクリプトが実行されるので、(イベントが再起動されるものであれば) 二度目には成功します。
+%       このスクリプトは <filename>/etc/sysconfig/udev_retry</filename> ファイルにより設定が可能で、コメントを除く記述項目はすべてサブシステム名を表わし、二度目の起動時のリトライ対象となります。
+%       (デバイスのサブシステムを知るには <command>udevadm info --attribute-walk &lt;device&gt;</command> を実行します。
+%       ここで &lt;device&gt; は、/dev や /sys から始まる絶対パスであり /dev/sr0 や /sys/class/rtc などを表します。)
+%       </para>
+% @z
+% 
 @x
       <title>Module Loading</title>
 @y

@@ -35,15 +35,64 @@
 @z
 
 @x
+      <title>The meaning of the configure options:</title>
+@y
+      <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
+@z
+
+@x --with-root*
+          <para>These switches ensure that core programs and
+          shared libraries are installed in the subdirectories
+          of the root partition.</para>
+@y
+          <para>
+          これらのスイッチは、コアプログラムや共有ライブラリが、ルートパーティション内のサブディレクトリにインストールされるようにするものです。
+          </para>
+@z
+
+@x --with-kbd-*
+          <para>These switches tell Systemd where to find
+          Kbd programs.</para>
+@y
+          <para>
+          これらのスイッチは Systemd に対して Kbd プログラムのありかを指示するものです。
+          </para>
+@z
+
+@x --enable-split-usr
+          <para>This switch ensures that Systemd will work on
+          systems where /bin, /lib and /sbin directories are not
+          symlinks to their /usr counterparts.</para>
+@y
+          <para>
+          このスイッチは、/bin, /lib, /sbin の各ディレクトリが /usr 配下のシンボリックリンクとはなっていないシステムであっても、Systemd が動作するようにするものです。
+          </para>
+@z
+
+@x --disable-gudev --without-python
+          <para>These switches disable optional features because
+          LFS does not provide their dependencies.</para>
+@y
+          <para>
+          これらのスイッチはオプション機能を無効化します。
+          これらのパッケージは LFS では提供していないためです。
+          </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>The package comes with a testsuite, but it doesn't work in
+    chroot. It needs to be run from a system booted using Systemd.</para>
 @y
-    <para>ビルド結果をテストする場合は以下を実行します。</para>
+    <para>
+    本パッケージにテストスイートはありますが、chroot 環境では正常動作しません。
+    これを実行するには、Systemd を使ってシステムを起動してからになります。
+    </para>
 @z
 
 @x
@@ -52,47 +101,50 @@
     <para>&InstallThePackage;</para>
 @z
 
-# @x
-#     <caution><para>There are several places within the
-#     <application>systemd</application> source code that have explicit directory
-#     paths embedded.  For instance, the binary version of the hardware
-#     database's path and file name used at run time,
-#     <filename>/etc/udev/hwdb.bin</filename>, cannot be changed without explict
-#     changes to the source code.</para></caution>
-# @y
-#     <caution><para>
-#     <application>systemd</application> のソースコード内には、明示的にディレクトリ名を含めたコードがいくつかあります。
-#     例えばバイナリ版のハードウェアデータベースファイル <filename>/etc/udev/hwdb.bin</filename> は実行時に利用されますが、ソースコードを書き換えない限りそのパスを変更することはできません。
-#     </para></caution>
-# @z
-# 
-# @x
-#     <para>Now initialize the hardware database:</para>
-# @y
-#     <para>ハードウェアデータベースを初期化します。</para>
-# @z
-# 
-# @x
-#     <para>Finally set up the persistent network udev rules.  This task will be
-#     explained in detail in <xref linkend='stable-net-names'/>.  Note that the
-#     <filename class='directory'>/sys</filename> and <filename
-#     class='directory'>/proc</filename> filesystems must be mounted in the
-#     chroot environment as explained at the beginning of this chapter for the
-#     following script to work.</para>
-# @y
-#     <para>
-#     最後に恒常的なネットワーク udev ルールを設定します。
-#     この作業の詳細は<xref linkend='stable-net-names'/>にて説明しています。
-#     本章のはじめにて説明しているように、<filename class='directory'>/sys</filename> と <filename
-#     class='directory'>/proc</filename> は chroot 環境にてマウントされている必要があります。
-#     これは以下のスクリプトを実行する際に必要となります。
-#     </para>
-# @z
+@x
+    <para>Create the <filename>/etc/machine-id</filename> file needed by
+    Journald:</para>
+@y
+    <para>
+    Journald にて必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
+    </para>
+@z
 
 @x
-    <title>Contents of Udev</title>
+    <para>Create the Sysvinit compatibility symlinks, so Systemd is used
+    as the default init system:</para>
 @y
-    <title>&ContentsOf1;Udev&ContentsOf2;</title>
+    <para>
+    Sysvinit との互換のためのシンボリックリンクを生成します。
+    こうすることで Systemd をデフォルトの起動システムとして用いることができます。
+    </para>
+@z
+
+@x
+    <para>By default, Journald logs to a tmpfs which means that logs
+    are not persistent through reboots. To make it log to a disk,
+    create the <filename class="directory">
+    /var/log/journal</filename> directory:</para>
+@y
+    <para>
+    デフォルトにて Journald ログは tmpfs に出力されますが、これはリブートにより失われてしまいます。
+    ディスク上に確実にログとして残すために <filename
+    class="directory">/var/log/journal</filename> ディレクトリを生成します。
+    </para>
+@z
+
+@x
+    <para>Remove reference to a non-existent group:</para>
+@y
+    <para>
+    参照されていないグループに対する参照を削除します。
+    </para>
+@z
+
+@x
+    <title>Contents of Systemd</title>
+@y
+    <title>&ContentsOf1;Systemd&ContentsOf2;</title>
 @z
 
 @x
@@ -102,21 +154,39 @@
 @z
 
 @x
-        <seg>hostnamectl, journalctl, localectl, loginctl, systemctl,
-             systemd-analyze, systemd-ask-password, systemd-cat,
-             systemd-cgls, systemd-cgtop, systemd-coredumpctl,
-             systemctl-delta, systemd-detect-virt, systemd-inhibit,
-             systemd-machine-id-setup, systemd-notify, systemd-nspawn,
-             systemd-stdio-bridge, systemd-tmpfiles,
-             systemd-tty-ask-password-agent, timedatectl, udevadm</seg>
+        <seg>halt, hostnamectl, init, journalctl, localectl, loginctl,
+        poweroff, reboot, runlevel, shutdown, systemctl, systemd-analyze,
+        systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
+        systemd-coredumpctl, systemd-delta, systemd-detect-virt,
+        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
+        systemd-nspawn, systemd-stdio-bridge, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, telinit, timedatectl and
+        udevadm</seg>
+        <seg>libnss_myhostname.so.2, libsystemd-daemon.so, libsystemd-id128.so,
+        libsystemd-journal.so, libsystemd-login.so and libudev.so</seg>
+        <seg>/etc/binfmt.d, /etc/init.d, /etc/modules-load.d, /etc/rpm,
+        /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
+        /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
+        /usr/lib/binfmt.d, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
+        /usr/lib/systemd, /usr/lib/tmpfiles.d, /usr/share/doc/systemd-&systemd-version;,
+        /usr/share/systemd, /var/lib/systemd and /var/log/journald</seg>
 @y
-        <seg>hostnamectl, journalctl, localectl, loginctl, systemctl,
-             systemd-analyze, systemd-ask-password, systemd-cat,
-             systemd-cgls, systemd-cgtop, systemd-coredumpctl,
-             systemctl-delta, systemd-detect-virt, systemd-inhibit,
-             systemd-machine-id-setup, systemd-notify, systemd-nspawn,
-             systemd-stdio-bridge, systemd-tmpfiles,
-             systemd-tty-ask-password-agent, timedatectl, udevadm</seg>
+        <seg>halt, hostnamectl, init, journalctl, localectl, loginctl,
+        poweroff, reboot, runlevel, shutdown, systemctl, systemd-analyze,
+        systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
+        systemd-coredumpctl, systemd-delta, systemd-detect-virt,
+        systemd-inhibit, systemd-machine-id-setup, systemd-notify,
+        systemd-nspawn, systemd-stdio-bridge, systemd-tmpfiles,
+        systemd-tty-ask-password-agent, telinit, timedatectl,
+        udevadm</seg>
+        <seg>libnss_myhostname.so.2, libsystemd-daemon.so, libsystemd-id128.so,
+        libsystemd-journal.so, libsystemd-login.so, libudev.so</seg>
+        <seg>/etc/binfmt.d, /etc/init.d, /etc/modules-load.d, /etc/rpm,
+        /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
+        /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
+        /usr/lib/binfmt.d, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
+        /usr/lib/systemd, /usr/lib/tmpfiles.d, /usr/share/doc/systemd-&systemd-version;,
+        /usr/share/systemd, /var/lib/systemd, /var/log/journald</seg>
 @z
 
 @x
