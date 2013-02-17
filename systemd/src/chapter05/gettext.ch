@@ -33,10 +33,10 @@
 
 @x
     <para>For our temporary set of tools, we only need to build and install
-    one binary from Gettext.</para>
+    three programs from Gettext.</para>
 @y
     <para>
-    ここで構築している一時的なツールに際して、Gettext パッケージからは1つのバイナリをビルドしてインストールするだけで十分です。
+    ここで構築している一時的なツールに際して、Gettext パッケージからは3つのバイナリをビルドしてインストールするだけで十分です。
     </para>
 @z
 
@@ -78,21 +78,24 @@
 @z
 
 @x
-    <para>As only one binary has been compiled, it is not possible to run the
+    <para>As only three programs have been compiled, it is not possible to run the
     test suite without compiling additional support libraries from the Gettext
     package. It is therefore not recommended to attempt to run the test suite at
     this stage.</para>
 @y
     <para>
-    1つのバイナリしかコンパイルしなかったため、その他のライブラリをコンパイルしない限り、テストスイートを成功させることはできません。
+    3つのバイナリしかコンパイルしなかったため、その他のライブラリをコンパイルしない限り、テストスイートを成功させることはできません。
     したがってテストスイートをこの段階で実行することはお勧めしません。
     </para>
 @z
 
 @x
-    <para>Install the <command>msgfmt</command> binary:</para>
+    <para>Install the <command>msgfmt</command>, <command>msgmerge</command> and
+     <command>xgettext</command> programs:</para>
 @y
-    <para><command>msgfmt</command> プログラムをインストールします。</para>
+    <para>
+    <command>msgfmt</command>, <command>msgmerge</command>. <command>xgettext</command> の各プログラムをインストールします。
+    </para>
 @z
 
 @x
