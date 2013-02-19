@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-02-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Coreutils-8.21.  Fixes
+          <ulink url="&lfs-ticket-root;3286">#3286</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Texinfo-5.0.  Fixes
+          <ulink url="&lfs-ticket-root;3289">#3284</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.7.9.  Fixes
+          <ulink url="&lfs-ticket-root;3287">#3281</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Coreutils-8.21 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3286">#3286</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Texinfo-5.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3289">#3284</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-3.7.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3287">#3281</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-13</para>
       <itemizedlist>
         <listitem>
