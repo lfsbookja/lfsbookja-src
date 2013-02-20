@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2013-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update file name for adjusting CD-ROM
+          rules mode in section 7.5.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 7.5.1 節にて、CD-ROM デバイスのルールを調整するファイル名を更新。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-18</para>
       <itemizedlist>
         <listitem>

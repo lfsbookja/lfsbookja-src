@@ -147,12 +147,12 @@
 @x
     <para>If the default mode is not suitable for your situation, then the
     following modification can be made to the
-    <filename>/lib/udev/rules.d/75-cd-aliases-generator.rules</filename> file,
+    <filename>/etc/udev/rules.d/83-cdrom-symlinks.rules</filename> file,
     as follows (where <replaceable>mode</replaceable> is one of
     <quote>by-id</quote> or <quote>by-path</quote>):</para>
 @y
     <para>
-    デフォルトモードが利用状況に合わない場合は、<filename>/lib/udev/rules.d/75-cd-aliases-generator.rules</filename> ファイルに対して以下のように修正を行います。
+    デフォルトモードが利用状況に合わない場合は、<filename>/etc/udev/rules.d/83-cdrom-symlinks.rules</filename> ファイルに対して以下のように修正を行います。
     <replaceable>mode</replaceable> の部分は<quote>by-id</quote>か<quote>by-path</quote>に置き換えます。
     </para>
 @z
