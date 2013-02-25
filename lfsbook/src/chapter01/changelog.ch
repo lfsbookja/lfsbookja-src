@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2013-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.8.0.  Fixes
+          <ulink url="&lfs-ticket-root;3291">#3291</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.  Fixes
+          <ulink url="&lfs-ticket-root;3290">#3290</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.8.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3291">#3291</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3290">#3290</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-19</para>
       <itemizedlist>
         <listitem>
