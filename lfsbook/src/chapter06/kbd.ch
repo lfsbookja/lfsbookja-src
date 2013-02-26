@@ -55,6 +55,18 @@
 @z
 
 @x
+    <para>Remove the redundant <command>resizecons</command> program (it requires
+    the defunct svgalib to provide the video mode files - for normal use
+    <command>setfont</command> sizes the console appropriately) together with its
+    manpage.</para>
+@y
+    <para>
+    不要なプログラム <command>resizecons</command> とその man ページを削除します。
+    (今はもう存在しない svgalib がビデオモードファイルを提供するために利用していたものであり、普通は <command>setfont</command> コマンドがコンソールサイズを適切に設定します。)
+    </para>
+@z
+
+@x
     <para>Prepare Kbd for compilation:</para>
 @y
     <para>&PreparePackage1;Kbd&PreparePackage2;</para>

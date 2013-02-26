@@ -48,6 +48,22 @@
 @z
 
 @x
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Remove the obsolete resizecons program from kbd, again.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - 再度、不要なプログラム resizecons を kbd パッケージから削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-24</para>
       <itemizedlist>
         <listitem>
