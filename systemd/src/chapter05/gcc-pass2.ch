@@ -100,6 +100,16 @@
 @z
 
 @x
+    <para>Again, do not build the .info files.  They are not needed here and
+    are broken with the current version of <command>makeinfo</command>.</para>
+@y
+    <para>
+    .info ファイルはビルドしないようにします。
+    このファイルは今時点は不要なものであり、また現在の <command>makeinfo</command> で生成しても不十分なものが生成されてしまうためです。
+    </para>
+@z
+
+@x
     <para>Create a separate build directory again:</para>
 @y
     <para>

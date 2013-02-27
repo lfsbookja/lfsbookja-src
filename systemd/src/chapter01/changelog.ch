@@ -48,6 +48,118 @@
 @z
 
 @x
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to File-5.13.  Fixes
+          <ulink url="&lfs-ticket-root;3292">#3292</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - File-5.13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3292">#3292</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Remove the obsolete resizecons program from kbd, again.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - 再度、不要なプログラム resizecons を kbd パッケージから削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.8.0.  Fixes
+          <ulink url="&lfs-ticket-root;3291">#3291</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.  Fixes
+          <ulink url="&lfs-ticket-root;3290">#3290</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.8.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3291">#3291</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3290">#3290</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update file name for adjusting CD-ROM
+          rules mode in section 7.5.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - 7.5.1 節にて、CD-ROM デバイスのルールを調整するファイル名を更新。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-02-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Coreutils-8.21.  Fixes
+          <ulink url="&lfs-ticket-root;3286">#3286</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Texinfo-5.0.  Fixes
+          <ulink url="&lfs-ticket-root;3289">#3284</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.7.9.  Fixes
+          <ulink url="&lfs-ticket-root;3287">#3281</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Coreutils-8.21 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3286">#3286</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Texinfo-5.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3289">#3284</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-3.7.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3287">#3281</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-15</para>
       <itemizedlist>
         <listitem>

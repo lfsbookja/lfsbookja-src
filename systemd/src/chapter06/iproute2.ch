@@ -47,6 +47,14 @@
 @z
 
 @x
+    <para>Remove a compiler flag that causes the compilation to fail:</para>
+@y
+    <para>
+    コンパイルに失敗しないように、コンパイラーフラグは取り除いておきます。
+    </para>
+@z
+
+@x
     <para>Compile the package:</para>
 @y
     <para>&CompileThePackage;</para>

@@ -403,16 +403,6 @@
         <para>MD5 sum: <literal>&less-md5;</literal></para>
 @z
 
-@x
-        <para>Home page: <ulink url="&lfs-bootscripts-home;"/></para>
-        <para>Download: <ulink url="&lfs-bootscripts-url;"/></para>
-        <para>MD5 sum: <literal>&lfs-bootscripts-md5;</literal></para>
-@y
-        <para>&Homepage;: <ulink url="&lfs-bootscripts-home;"/></para>
-        <para>&Download;: <ulink url="&lfs-bootscripts-url;"/></para>
-        <para>MD5 sum: <literal>&lfs-bootscripts-md5;</literal></para>
-@z
-
 @x Libcap
         <para>Home page: <ulink url="&libcap-home;"/></para>
         <para>Download: <ulink url="&libcap-url;"/></para>

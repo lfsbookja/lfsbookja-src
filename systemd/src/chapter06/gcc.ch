@@ -42,6 +42,16 @@
 @z
 
 @x
+    <para>Again, do not build the .info files. They are broken with the current
+    version of <command>makeinfo</command>.</para>
+@y
+    <para>
+    .info ファイルはビルドしないようにします。
+    現在の <command>makeinfo</command> で生成しても不十分なものが生成されてしまうためです。
+    </para>
+@z
+
+@x
     <para>As in <xref linkend="ch-tools-gcc-pass2"/>, apply the following
     <command>sed</command> to force the build to use the
     <option>-fomit-frame-pointer</option> compiler flag in order to ensure

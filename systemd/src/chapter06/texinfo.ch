@@ -109,12 +109,12 @@
 @z
 
 @x
-        <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, texi2dvi, texi2pdf, and
-        texindex</seg>
+        <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, 
+        pod2texi, texi2any, texi2dvi, texi2pdf, and texindex</seg>
         <seg>/usr/share/texinfo</seg>
 @y
-        <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, texi2dvi, texi2pdf,
-        texindex</seg>
+        <seg>info, infokey, install-info, makeinfo, pdftexi2dvi, 
+        pod2texi, texi2any, texi2dvi, texi2pdf, texindex</seg>
         <seg>/usr/share/texinfo</seg>
 @z
 
@@ -171,6 +171,23 @@
 @y
           <para>
           指定された Texinfo ドキュメントファイルを PDF (Portable Document Format) ファイルに変換します。
+          </para>
+@z
+
+@x pod2texi
+          <para>Converts Pod to Texinfo format</para>
+@y
+          <para>
+          Pod フォーマットを Texinfo フォーマットに変換します。
+          </para>
+@z
+
+@x texi2any
+          <para>Translate Texinfo source documentation to 
+          various other formats</para>
+@y
+          <para>
+          Texinfo のソースファイルを他のさまざまなフォーマットに変換します。
           </para>
 @z
 
