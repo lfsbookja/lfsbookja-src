@@ -51,6 +51,24 @@
       <para>2013-02-26</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Upgrade to File-5.13.  Fixes
+          <ulink url="&lfs-ticket-root;3292">#3292</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - File-5.13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3292">#3292</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-02-26</para>
+      <itemizedlist>
+        <listitem>
           <para>[ken] - Remove the obsolete resizecons program from kbd, again.</para>
         </listitem>
       </itemizedlist>
