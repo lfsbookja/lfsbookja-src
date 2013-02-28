@@ -48,6 +48,26 @@
 @z
 
 @x
+      <para>2013-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix a potential test error in procps-ng.
+          Thanks to Pierre Labastie for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;3293">#3293</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng におけるテストエラーを修正。
+          パッチを提供してくれた Pierre Labastie に感謝。
+          <ulink url="&lfs-ticket-root;3293">#3293</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-26</para>
       <itemizedlist>
         <listitem>
