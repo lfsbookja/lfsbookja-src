@@ -48,6 +48,44 @@
 @z
 
 @x
+      <para>2013-03-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.8.1. Fixes 
+          <ulink url="&lfs-ticket-root;3295">#3295</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.8.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3295">#3295</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix a potential test error in procps-ng.
+          Thanks to Pierre Labastie for the patch.  Fixes
+          <ulink url="&lfs-ticket-root;3293">#3293</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-02-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng におけるテストエラーを修正。
+          パッチを提供してくれた Pierre Labastie に感謝。
+          <ulink url="&lfs-ticket-root;3293">#3293</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-02-26</para>
       <itemizedlist>
         <listitem>

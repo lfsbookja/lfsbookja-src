@@ -46,11 +46,11 @@
 @z
 
 @x
-        <para><ulink url="http://refspecs.freestandards.org/LSB_4.0.0/">Linux 
-        Standard Base (LSB) Core Specification 4.0</ulink></para>
+        <para><ulink url="http://refspecs.freestandards.org/lsb.shtml">Linux
+        Standard Base (LSB) Specifications</ulink></para>
 @y
-        <para><ulink url="http://refspecs.freestandards.org/LSB_4.0.0/">Linux 
-        Standard Base (LSB) Core Specification 4.0</ulink></para>
+        <para><ulink url="http://refspecs.freestandards.org/lsb.shtml">Linux
+        Standard Base (LSB) Specifications</ulink></para>
 @z
 
 @x
