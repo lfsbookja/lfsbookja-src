@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2013-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Remove extraneous ampersands in Kbd instructions.
+          Thanks to Jason Daly for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Kbd の手順にて無用なアンパサントを削除。
+          報告してくれた Jason Daly に感謝。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-01</para>
       <itemizedlist>
         <listitem>
