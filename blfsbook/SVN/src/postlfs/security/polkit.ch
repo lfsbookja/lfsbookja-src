@@ -21,8 +21,8 @@
 
 @x
       <application>Polkit</application> is a toolkit for defining and handling
-      authorizations. It is used for allowing unprivileged processes to speak
-      to privileged processes.
+      authorizations. It is used for allowing unprivileged processes to
+      comminicate with privileged processes.
 @y
       <application>Polkit</application> パッケージは、権限情報を定義し操作するためのツールキットです。
       非特権 (unprivileged) プロセス から特権 (privileged) プロセスへのアクセスを行う際に利用されます。
@@ -135,7 +135,7 @@
 @z
 
 @x
-        If <xref linkend="libxslt"/> is installed then <xref linkend="DocBook"/> 
+        If <xref linkend="libxslt"/> is installed, then <xref linkend="DocBook"/>
         and <xref linkend="docbook-xsl"/> are required. If you have installed
         <xref linkend="libxslt"/>, but you do not want to install any of the
         DocBook packages mentioned, you will need to use
@@ -230,19 +230,15 @@
 @z
 
 @x
-        If you have built <application>Polkit</application> with 
-        <application>Linux PAM</application> support, you need to modify 
-        default PAM configuration file which was installed by default to get 
-        <application>Polkit</application> to work correctly with BLFS.
+        If you have built <application>Polkit</application> with
+        <application>Linux PAM</application> support, you need to modify
+        the default PAM configuration file which was installed by default to get
+        <application>Polkit</application> to work correctly with BLFS. Issue the
+        following commands as the <systemitem class="username">root</systemitem>
+        user to create the configuration file for <application>Linux PAM</application>:
 @y
         <application>Linux PAM</application> サポートを含めて <application>Polkit</application> をビルドしている場合、デフォルトでインストールされている PAM 設定ファイルを修正する必要があります。
         これにより BLFS において <application>polkit</application> が正しく動作するものとなります。
-@z
-
-@x
-        Issue the following commands as the <systemitem class="username">root</systemitem>
-        user to create the configuration file for <application>Linux PAM</application>:
-@y
         <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してください。
         <application>Linux PAM</application> 用の設定ファイルを生成します。
 @z

@@ -20,11 +20,11 @@
 @z
 
 @x
-    <para>This library provides a Qt implementation of the DBusMenu specs which goal 
-    is to expose menus on DBus.</para>
+    <para>This library provides a <application>Qt</application> implementation
+    of the DBusMenu specs, which goal is to expose menus on DBus.</para>
 @y
     <para>
-    このライブラリは DBusMenu 仕様の Qt による実装です。
+    このライブラリは DBusMenu 仕様の <application>Qt</application> による実装です。
     DBus 上にてメニュー表示を行うことを目的としています。
     </para>
 @z
@@ -139,9 +139,9 @@
 @z
 
 @x
-    <para><option>-DWITH_DOC=OFF</option>: This option is set to avoid building 
+    <para><option>-DWITH_DOC=OFF</option>: This option is set to avoid building
     the API documentation. Omit it if you have <application>doxygen</application>
-    and want the documentation.</para>
+    installed and want the documentation.</para>
 @y
     <para><option>-DWITH_DOC=OFF</option>:
     このオプションは API ドキュメントのビルドを行わないようにします。

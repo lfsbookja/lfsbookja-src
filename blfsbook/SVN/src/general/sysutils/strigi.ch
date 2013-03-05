@@ -169,13 +169,17 @@
 @z
 
 @x
-        <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd, strigidaemon and xmlindexer</seg>
-        <seg>libsearchclient.so, libstreamanalyzer.so, libstreams.so, libstrigihtmlgui.so, 
-        libstrigiqtdbusclient.so and several in /usr/lib/strigi</seg>
+        <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd,
+        strigidaemon and xmlindexer</seg>
+        <seg>libsearchclient.so, libstreamanalyzer.so, libstreams.so,
+        libstrigihtmlgui.so, libstrigiqtdbusclient.so and several in
+        /usr/lib/strigi</seg>
         <seg>/usr/include/strigi, /usr/lib/strigi and /usr/share/strigi</seg>
 @y
-        <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd, strigidaemon and xmlindexer</seg>
-        <seg>libsearchclient.so, libstreamanalyzer.so, libstreams.so, libstrigihtmlgui.so, 
-        libstrigiqtdbusclient.so, /usr/lib/strigi 配下に数種のライブラリ</seg>
+        <seg>deepfind, deepgrep, rdfindexer, strigiclient, strigicmd,
+        strigidaemon, xmlindexer</seg>
+        <seg>libsearchclient.so, libstreamanalyzer.so, libstreams.so,
+        libstrigihtmlgui.so, libstrigiqtdbusclient.so,
+        /usr/lib/strigi 配下に数種のライブラリ</seg>
         <seg>/usr/include/strigi, /usr/lib/strigi, /usr/share/strigi</seg>
 @z

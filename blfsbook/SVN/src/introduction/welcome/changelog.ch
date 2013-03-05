@@ -42,6 +42,53 @@
 @z
 
 @x
+      <para>February 27th, 2013</para>
+@y
+      <para>2013/02/27</para>
+@z
+@x
+          <para>[ken] - Update message about NIS and RPC headers
+          in libtirpc.</para>
+@y
+          <para>[ken] - libtirpc において NIS および RPC のヘッダーファイルに関する説明を更新。</para>
+@z
+
+@x
+      <para>February 21st, 2013</para>
+@y
+      <para>2013/02/21</para>
+@z
+@x
+          <para>[wblaszcz] - Fixed JSON-C missing headers issue. Fixes
+          <ulink url="&blfs-ticket-root;3808">#3808</ulink>.</para>
+@y
+          <para>[wblaszcz] - JSON-C にて不足するヘッダーファイルの問題を修正。
+          <ulink url="&blfs-ticket-root;3808">#3808</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>February 20th, 2013</para>
+@y
+      <para>2013/02/20</para>
+@z
+@x
+          <para>[randy] - Updated GnuPG to 1.4.13.</para>
+@y
+          <para>[randy] - GnuPG 1.4.13 へのアップデート。</para>
+@z
+
+@x
+      <para>February 18th, 2013</para>
+@y
+      <para>2013/02/18</para>
+@z
+@x
+          <para>[randy] - Minor fixes and dependency updates.</para>
+@y
+          <para>[randy] - 若干の修正。依存パッケージの更新。</para>
+@z
+
+@x
       <para>February 13th, 2013</para>
 @y
       <para>2013/02/13</para>

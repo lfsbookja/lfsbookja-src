@@ -82,22 +82,22 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>, 
-    <xref linkend="shared-mime-info"/>, 
-    <xref linkend="boost"/>, 
-    <xref linkend="soprano"/> and one of:
-    <xref linkend="sqlite"/>, 
-    <xref linkend="mysql"/> and 
+    <xref linkend="automoc4"/>,
+    <xref linkend="shared-mime-info"/>,
+    <xref linkend="boost"/>,
+    <xref linkend="soprano"/>, and one of:
+    <xref linkend="sqlite"/>,
+    <xref linkend="mysql"/>, or
     <xref linkend="postgresql"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>, 
-    <xref linkend="shared-mime-info"/>, 
-    <xref linkend="boost"/>, 
-    <xref linkend="soprano"/> と以下のいずれか:
-    <xref linkend="sqlite"/>, 
+    <xref linkend="automoc4"/>,
+    <xref linkend="shared-mime-info"/>,
+    <xref linkend="boost"/>,
+    <xref linkend="soprano"/>, と以下のいずれか:
+    <xref linkend="sqlite"/>,
     <xref linkend="mysql"/>,
     <xref linkend="postgresql"/>
     </para>
@@ -105,10 +105,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/akonadi"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/akonadi"/></para>
 @z
 
 @x

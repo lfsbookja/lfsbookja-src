@@ -21,7 +21,7 @@
 
 @x
     <para>The <application>GnuPG</application> package contains a
-    public/private key encryptor. This is becoming useful for signing
+    public/private key encryptor. This is useful for signing
     files or emails as proof of identity and preventing tampering with
     the contents of the file or email. For a more enhanced version of
     GnuPG which supports S/MIME, see the <xref linkend="gnupg2"/>
@@ -140,11 +140,15 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Note that if you have already installed <application>GnuPG
+    2</application>, the instructions below will overwrite
+    <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
+    <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <para>Note that if you have already installed <application>GnuPG
+    2</application>, the instructions below will overwrite
+    <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x

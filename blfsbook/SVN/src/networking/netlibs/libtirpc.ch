@@ -132,12 +132,12 @@
 @z
 
 @x
-      Glibc 2.14 and later does not install NIS and RPC related headers by
-      default. If needed, install them by running the following command
-      as the <systemitem class="username">root</systemitem> user:
+      In LFS-7.1 the NIS and RPC related headers were not installed by default.
+      If that applies to your system, install them by running the following
+      command as the <systemitem class="username">root</systemitem> user:
 @y
-      Glibc-2.14 以降において NIS および RPC 関連のヘッダーファイルは、デフォルトではインストールされなくなりました。
-      必要であれば <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してインストールします。
+      LFS-7.1 において、NIS および RPC に関連するヘッダーファイルは、デフォルトではインストールされません。
+      これらを導入するには <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行しインストールします。
 @z
 
 @x

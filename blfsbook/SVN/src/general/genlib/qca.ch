@@ -132,12 +132,12 @@
 @z
 
 @x
-    <para><command>sed -i '217s@set@...</command>: This sed fixes compiling with 
-    <application>GCC</application> 4.7. It is safe to omit when compiling with 
+    <para><command>sed -i '217s@set@...</command>: This sed fixes compiling with
+    <application>GCC</application> 4.7.x. It is safe to omit when compiling with
     older <application>GCC</application> versions.</para>
 @y
     <para><command>sed -i '217s@set@...</command>:
-    この sed コマンドは <application>GCC</application> 4.7 を用いてコンパイルできるようにするものです。
+    この sed コマンドは <application>GCC</application> 4.7.x を用いてコンパイルできるようにするものです。
     <application>GCC</application> の古いバージョンを使ってコンパイルする場合には、このコマンド実行を省略するのが無難です。
     </para>
 @z
