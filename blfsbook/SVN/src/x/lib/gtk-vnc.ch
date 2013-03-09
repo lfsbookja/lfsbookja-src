@@ -254,14 +254,14 @@
 @z
 
 @x libgtk-vnc-2.0.so
-            contains <application>GTK+ 3</application> bindings for 
+            contains the <application>GTK+ 3</application> bindings for
             <application>Gtk VNC</application>.
 @y
             <application>Gtk VNC</application> に対する <application>GTK+ 3</application> バインディングを提供します。
 @z
 
 @x libgvnc-1.0.so
-            contains GObject bindings for <application>Gtk VNC</application>.
+            contains the GObject bindings for <application>Gtk VNC</application>.
 @y
             <application>Gtk VNC</application> に対する GObject バインディングを提供します。
 @z

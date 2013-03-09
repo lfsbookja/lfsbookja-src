@@ -57,73 +57,73 @@
     </para>
 @z
 
-@x
-    <sect2 role="configuration" id='X11R6-compat-symlink'
-         xreflabel="Creating an X11R6 Compatibility Symlink">
-@y
-    <sect2 role="configuration" id='X11R6-compat-symlink'
-         xreflabel="X11R6 互換のシンボリックリンク生成">
-@z
+% @x
+%     <sect2 role="configuration" id='X11R6-compat-symlink'
+%          xreflabel="Creating an X11R6 Compatibility Symlink">
+% @y
+%     <sect2 role="configuration" id='X11R6-compat-symlink'
+%          xreflabel="X11R6 互換のシンボリックリンク生成">
+% @z
 
-@x
-    <title>Creating an X11R6 Compatibility Symlink</title>
-@y
-    <title>X11R6 互換のシンボリックリンク生成</title>
-@z
+% @x
+%     <title>Creating an X11R6 Compatibility Symlink</title>
+% @y
+%     <title>X11R6 互換のシンボリックリンク生成</title>
+% @z
 
-@x
-    <para>Until recently (relatively speaking) almost every
-    <application>X Window</application> installation you performed or came
-    across was installed in the
-    <filename class='directory'>/usr/X11R6</filename> directory. That was the
-    standard for years. Developers picked up on this and wrote their package
-    installation scripts looking for <application>X</application> in the
-    standard location. Things have changed and the trend is to now install
-    <application>X</application> in
-    <filename class='directory'>/usr</filename>. Some people want to install
-    it in a custom location.</para>
-@y
-    <para>
-    比較的最近まで、みなさんが利用したり見たりしてきた <application>X ウィンドウ</application> は、<filename
-    class='directory'>/usr/X11R6</filename> ディレクトリ配下にインストールされてきました。
-    これが長い間の標準となっています。
-    開発者はこのことを意識して、<application>X</application> のありかがこの標準的なディレクトリであるものとしてインストールスクリプトを構築しています。
-    しかし状況は変化し、現在の趨勢として、<application>X</application> は <filename class='directory'>/usr</filename> ディレクトリ配下にインストールするものとなりました。
-    もっとも、そうではないディレクトリにインストールすることを望む声もあります。
-    </para>
-@z
+% @x
+%     <para>Until recently (relatively speaking) almost every
+%     <application>X Window</application> installation you performed or came
+%     across was installed in the
+%     <filename class='directory'>/usr/X11R6</filename> directory. That was the
+%     standard for years. Developers picked up on this and wrote their package
+%     installation scripts looking for <application>X</application> in the
+%     standard location. Things have changed and the trend is to now install
+%     <application>X</application> in
+%     <filename class='directory'>/usr</filename>. Some people want to install
+%     it in a custom location.</para>
+% @y
+%     <para>
+%     比較的最近まで、みなさんが利用したり見たりしてきた <application>X ウィンドウ</application> は、<filename
+%     class='directory'>/usr/X11R6</filename> ディレクトリ配下にインストールされてきました。
+%     これが長い間の標準となっています。
+%     開発者はこのことを意識して、<application>X</application> のありかがこの標準的なディレクトリであるものとしてインストールスクリプトを構築しています。
+%     しかし状況は変化し、現在の趨勢として、<application>X</application> は <filename class='directory'>/usr</filename> ディレクトリ配下にインストールするものとなりました。
+%     もっとも、そうではないディレクトリにインストールすることを望む声もあります。
+%     </para>
+% @z
 
-@x
-    <para>Many package developers have not caught up to the change and their
-    packages are still trying to find <application>X</application> in
-    <filename class='directory'>/usr/X11R6</filename> and subsequently fail
-    when you try to build the package. Though for most packages it is not
-    difficult to 'hack' the installation script to fix the problem, that is not
-    the long term solution to the problem. Upstream developers need to modernize
-    their installation scripts and eliminate the problem altogether.</para>
-@y
-    <para>
-    まだこの状況に対応していない開発者もいるため、開発されたパッケージがこれまでと変わらず、<filename
-    class='directory'>/usr/X11R6</filename> 配下に <application>X</application> があるものとして動作するものがあります。
-    そのようなパッケージは、ビルドに失敗してしまうことになります。
-    パッケージのほとんどが抱えるインストールスクリプトの問題を'ハック'することは、難しい話ではありませんし、時間をかけなければ解決しない問題でもありません。
-    開発者としては、インストールスクリプトを最近の傾向に合わせるよう修正して、この問題を解決することが求められています。
-    </para>
-@z
+% @x
+%     <para>Many package developers have not caught up to the change and their
+%     packages are still trying to find <application>X</application> in
+%     <filename class='directory'>/usr/X11R6</filename> and subsequently fail
+%     when you try to build the package. Though for most packages it is not
+%     difficult to 'hack' the installation script to fix the problem, that is not
+%     the long term solution to the problem. Upstream developers need to modernize
+%     their installation scripts and eliminate the problem altogether.</para>
+% @y
+%     <para>
+%     まだこの状況に対応していない開発者もいるため、開発されたパッケージがこれまでと変わらず、<filename
+%     class='directory'>/usr/X11R6</filename> 配下に <application>X</application> があるものとして動作するものがあります。
+%     そのようなパッケージは、ビルドに失敗してしまうことになります。
+%     パッケージのほとんどが抱えるインストールスクリプトの問題を'ハック'することは、難しい話ではありませんし、時間をかけなければ解決しない問題でもありません。
+%     開発者としては、インストールスクリプトを最近の傾向に合わせるよう修正して、この問題を解決することが求められています。
+%     </para>
+% @z
 
-@x
-    <para>Until then, you can create a symbolic link to satisfy the
-    <filename class='directory'>/usr/X11R6</filename> requirement so that you
-    won't be inconvenienced with a package build failure due to this known
-    issue. If you wish to create the symlink, issue the following command as
-    the <systemitem class="username">root</systemitem>:</para>
-@y
-    <para>
-    <filename class='directory'>/usr/X11R6</filename> に対する問題が解決するまでは、シンボリックリンクを生成して回避するものとします。
-    こうすればパッケージのビルドが失敗するという状況がなくなります。
-    シンボリックリンクを生成するには <systemitem class="username">root</systemitem> ユーザーになって、以下のコマンドを実行します。
-    </para>
-@z
+% @x
+%     <para>Until then, you can create a symbolic link to satisfy the
+%     <filename class='directory'>/usr/X11R6</filename> requirement so that you
+%     won't be inconvenienced with a package build failure due to this known
+%     issue. If you wish to create the symlink, issue the following command as
+%     the <systemitem class="username">root</systemitem>:</para>
+% @y
+%     <para>
+%     <filename class='directory'>/usr/X11R6</filename> に対する問題が解決するまでは、シンボリックリンクを生成して回避するものとします。
+%     こうすればパッケージのビルドが失敗するという状況がなくなります。
+%     シンボリックリンクを生成するには <systemitem class="username">root</systemitem> ユーザーになって、以下のコマンドを実行します。
+%     </para>
+% @z
 
 @x
     <sect2 role="configuration" id="xft-font-protocol"  xreflabel="Xft Font Protocol">
@@ -284,48 +284,48 @@
           url="http://corefonts.sourceforge.net/">Microsoft Core fonts</ulink>
           - These fonts provide slightly worse Unicode coverage than FreeFont,
           but are better hinted.  Be sure to read the license before using
-          them. These fonts are listed in the aliases in the 
-          <filename class="directory">/etc/fonts/fonts.d</filename> directory
+          them. These fonts are listed in the aliases in the
+          <filename class="directory">/etc/fonts/conf.d</filename> directory
           by default.</para>
 @y
           <para><ulink
           url="http://corefonts.sourceforge.net/">Microsoft Core fonts</ulink>
           - These fonts provide slightly worse Unicode coverage than FreeFont,
           but are better hinted.  Be sure to read the license before using
-          them. These fonts are listed in the aliases in the 
-          <filename class="directory">/etc/fonts/fonts.d</filename> directory
+          them. These fonts are listed in the aliases in the
+          <filename class="directory">/etc/fonts/conf.d</filename> directory
           by default.</para>
 @z
 
 @x
           <para><ulink
-          url="http://cle.linux.org.tw/fonts/FireFly">Firefly New Sung font</ulink>
+          url="http://sourceforge.jp/projects/sfnet_chinesepuppy/downloads/ChineseSupport/Fonts/fireflysung-1.3.0.tar.gz">Firefly New Sung font</ulink>
           - This font provides Chinese coverage. This font is listed in the
           aliases in the
-          the <filename class="directory">/etc/fonts/fonts.d</filename>
+          the <filename class="directory">/etc/fonts/conf.d</filename>
           directory by default.</para>
 @y
           <para><ulink
-          url="http://cle.linux.org.tw/fonts/FireFly">Firefly New Sung font</ulink>
+          url="http://sourceforge.jp/projects/sfnet_chinesepuppy/downloads/ChineseSupport/Fonts/fireflysung-1.3.0.tar.gz">Firefly New Sung font</ulink>
           - This font provides Chinese coverage. This font is listed in the
           aliases in the
-          the <filename class="directory">/etc/fonts/fonts.d</filename>
+          the <filename class="directory">/etc/fonts/conf.d</filename>
           directory by default.</para>
 @z
 
 @x
           <para><ulink
-          url="http://cle.linux.org.tw/fonts/Arphic">Arphic fonts</ulink> -
+          url="http://packages.debian.org/sid/fonts-arphic-ukai">Arphic fonts</ulink> -
           A similar set of Chinese fonts to the Firefly New Sung font.
           These fonts are listed in the aliases in the
-          <filename class="directory">/etc/fonts/fonts.d</filename> directory
+          <filename class="directory">/etc/fonts/conf.d</filename> directory
           by default.</para>
 @y
           <para><ulink
-          url="http://cle.linux.org.tw/fonts/Arphic">Arphic fonts</ulink> -
+          url="http://packages.debian.org/sid/fonts-arphic-ukai">Arphic fonts</ulink> -
           A similar set of Chinese fonts to the Firefly New Sung font.
           These fonts are listed in the aliases in the
-          <filename class="directory">/etc/fonts/fonts.d</filename> directory
+          <filename class="directory">/etc/fonts/conf.d</filename> directory
           by default.</para>
 @z
 
@@ -333,13 +333,13 @@
           <para><ulink
           url="http://sourceforge.jp/projects/efont/">Kochi fonts</ulink> -
           These provide Japanese characters, and are listed in the aliases
-          in the <filename class="directory">/etc/fonts/fonts.d</filename>
+          in the <filename class="directory">/etc/fonts/conf.d</filename>
           directory by default.</para>
 @y
           <para><ulink
           url="http://sourceforge.jp/projects/efont/">Kochi fonts</ulink> -
           These provide Japanese characters, and are listed in the aliases
-          in the <filename class="directory">/etc/fonts/fonts.d</filename>
+          in the <filename class="directory">/etc/fonts/conf.d</filename>
           directory by default.</para>
 @z
 
@@ -348,14 +348,14 @@
           url="http://kldp.net/projects/baekmuk/">Baekmuk fonts</ulink>
           - These fonts provide Korean coverage, and are listed in the
           aliases in the
-          <filename class="directory">/etc/fonts/fonts.d</filename> directory
+          <filename class="directory">/etc/fonts/conf.d</filename> directory
           by default.</para>
 @y
           <para><ulink
           url="http://kldp.net/projects/baekmuk/">Baekmuk fonts</ulink>
           - These fonts provide Korean coverage, and are listed in the
           aliases in the
-          <filename class="directory">/etc/fonts/fonts.d</filename> directory
+          <filename class="directory">/etc/fonts/conf.d</filename> directory
           by default.</para>
 @z
 
@@ -386,26 +386,40 @@
 @z
 
 @x
-      <para>As an example, consider the installation of the DejaVu fonts.  From
-      the unpacked source directory, run the following commands as the
-      <systemitem class="username">root</systemitem> user:</para>
+      <para>Rendered examples of many of the above fonts can be found at this
+      <ulink url="http://homepage.ntlworld.com/zarniwhoop/ttf-font-analysis/ttf-otf-notes.html#examples">
+      font analysis</ulink> site.</para>
 @y
-      <para>As an example, consider the installation of the DejaVu fonts.  From
-      the unpacked source directory, run the following commands as the
-      <systemitem class="username">root</systemitem> user:</para>
+      <para>Rendered examples of many of the above fonts can be found at this
+      <ulink url="http://homepage.ntlworld.com/zarniwhoop/ttf-font-analysis/ttf-otf-notes.html#examples">
+      font analysis</ulink> site.</para>
+@z
+
+@x
+      <para>As a font installation example, consider the installation of the 
+      DejaVu fonts.  From the unpacked source directory, run the following 
+      commands as the <systemitem class="username">root</systemitem> user:</para>
+@y
+      <para>As a font installation example, consider the installation of the 
+      DejaVu fonts.  From the unpacked source directory, run the following 
+      commands as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
   <sect2 role="configuration" id='xconfig'>
     <title>Setting up Xorg Devices</title>
+@y
+  <sect2 role="configuration" id='xconfig' xreflabel="Xorg デバイスの設定">
+    <title>Xorg デバイスの設定</title>
+@z
+
+@x
     <para>For most hardware configurations, modern Xorg will automatically
     get the server configuration correct without any user intervention. There
     are, however, some cases where auto-configuration will be incorrect.
     Following are some example manual configuration items that may be of use in
     these instances.</para>
 @y
-  <sect2 role="configuration" id='xconfig' xreflabel="Xorg デバイスの設定">
-    <title>Xorg デバイスの設定</title>
     <para>For most hardware configurations, modern Xorg will automatically
     get the server configuration correct without any user intervention. There
     are, however, some cases where auto-configuration will be incorrect.
@@ -433,12 +447,16 @@
 
 @x
   <title>Fine Tuning Display Settings</title>
+@y
+  <title>画面設定のチューニング</title>
+@z
+
+@x
   <para>Again, with modern Xorg, little or no additional configuration is
   necessary. If you should need extra options passed to your video driver,
   for instance, you could use something like the following (again, executed as
   the <systemitem class="username">root</systemitem> user):</para>
 @y
-  <title>画面設定のチューニング</title>
   <para>
   再度述べますが、最近の Xorg では追加の設定を行う必要はほとんどありません。
   例えばお手元のビデオドライバーに特別なオプションを与えなければならないのであれば、以下のような設定とすることも考えられます。

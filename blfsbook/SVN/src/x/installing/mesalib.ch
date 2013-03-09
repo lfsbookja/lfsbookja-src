@@ -118,11 +118,11 @@
 
 @x
           Recommended patch:
-          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-5.patch"/>
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-1.patch"/>
           (Needed if testing the Xorg installation per BLFS instructions).
 @y
           推奨のパッチ:
-          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-5.patch"/>
+          <ulink url="&patch-root;/MesaLib-&mesalib-version;-add_xdemos-1.patch"/>
           (BLFS でのビルド手順に従って Xorg をテストする場合に必要。)
 @z
 
@@ -310,7 +310,7 @@
           glxgears and glxinfo
         </seg>
         <seg>
-          libdricore9.0.0.so, libEGL.so, libgbm.so, libglapi.so,
+          libdricore9.1.0.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
           libOpenVG.so, libOSMesa.so and libxatracker.so
         </seg>
@@ -319,16 +319,20 @@
           /usr/include/GL,
           /usr/include/GLES,
           /usr/include/GLES2,
+          /usr/include/GLES3,
           /usr/include/KHR,
-          /usr/include/VG and
-          /usr/lib/dri
+          /usr/include/VG,
+          /usr/lib/dri,
+          /usr/lib/egl,
+          /usr/lib/gallium-pipe and
+          /usr/lib/gbm
         </seg>
 @y
         <seg>
           glxgears, glxinfo
         </seg>
         <seg>
-          libdricore9.0.0.so, libEGL.so, libgbm.so, libglapi.so,
+          libdricore9.1.0.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
           libOpenVG.so, libOSMesa.so, libxatracker.so
         </seg>
@@ -337,9 +341,13 @@
           /usr/include/GL,
           /usr/include/GLES,
           /usr/include/GLES2,
+          /usr/include/GLES3,
           /usr/include/KHR,
           /usr/include/VG,
-          /usr/lib/dri
+          /usr/lib/dri,
+          /usr/lib/egl,
+          /usr/lib/gallium-pipe,
+          /usr/lib/gbm
         </seg>
 @z
 

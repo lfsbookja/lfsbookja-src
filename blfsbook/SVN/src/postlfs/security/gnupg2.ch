@@ -84,9 +84,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">GnuPG Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GnuPG 2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GnuPG の依存関係</bridgehead>
+    <bridgehead renderas="sect3">GnuPG 2 の依存関係</bridgehead>
 @z
 
 @x
@@ -170,11 +170,15 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>Note that if you have already installed
+    <application>GnuPG</application>, the instructions below will overwrite
+    <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
+    <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <para>Note that if you have already installed
+    <application>GnuPG</application>, the instructions below will overwrite
+    <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
+    <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x

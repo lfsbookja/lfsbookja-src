@@ -178,7 +178,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -193,8 +193,7 @@
           gnome-keyring-pkcs11.so and pam_gnome_keyring.so
         </seg>
         <seg>
-          /usr/lib/gnome-keyring/devel and
-          /usr/lib/pkcs11
+          /usr/lib/gnome-keyring/devel
         </seg>
 @y
         <seg>
@@ -204,8 +203,7 @@
           gnome-keyring-pkcs11.so, pam_gnome_keyring.so
         </seg>
         <seg>
-          /usr/lib/gnome-keyring/devel,
-          /usr/lib/pkcs11
+          /usr/lib/gnome-keyring/devel
         </seg>
 @z
 

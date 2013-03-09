@@ -88,8 +88,9 @@
     <para role="optional">
       <xref linkend="dejagnu"/> (required to run the testsuite),
       <xref linkend="keyutils"/>,
-      <xref linkend="openldap"/> and
-      <xref linkend="python2"/> (used during the testsuite).
+      <xref linkend="openldap"/>,
+      <xref linkend="python2"/> (used during the testsuite) and
+      <xref linkend="rpcbind"/> (used during the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -97,7 +98,8 @@
       <xref linkend="dejagnu"/> (テストスイート実行時に必要),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="python2"/> (テストスイート実行時に必要).
+      <xref linkend="python2"/> (テストスイート実行時に必要),
+      <xref linkend="rpcbind"/> (テストスイート実行時に必要)
     </para>
 @z
 
@@ -143,12 +145,12 @@
       After unpacking the distribution tarball and if you have
       <xref linkend="gnupg"/> installed, you can
       authenticate the package.  First, check the contents of the file
-      <filename>krb5-1.10.3.tar.gz.asc</filename>.
+      <filename>krb5-&mitkrb-version;.tar.gz.asc</filename>.
 @y
       After unpacking the distribution tarball and if you have
       <xref linkend="gnupg"/> installed, you can
       authenticate the package.  First, check the contents of the file
-      <filename>krb5-1.10.3.tar.gz.asc</filename>.
+      <filename>krb5-&mitkrb-version;.tar.gz.asc</filename>.
 @z
 
 @x
@@ -472,12 +474,12 @@
 @x
           For additional information consult <ulink
           url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
-          Documentation for krb-&mitkrb-version;</ulink> on which the above
+          Documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
 @y
           For additional information consult <ulink
           url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
-          Documentation for krb-&mitkrb-version;</ulink> on which the above
+          Documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
 @z
 

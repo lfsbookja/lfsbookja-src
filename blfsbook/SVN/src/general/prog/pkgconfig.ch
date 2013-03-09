@@ -92,12 +92,10 @@
 @z
 
 @x
-    <para>Install <application>pkg-config</application> by running the
-    following commands:</para>
+      Install <application>pkg-config</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>pkg-config</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>pkg-config</application> をビルドします。
 @z
 
 @x

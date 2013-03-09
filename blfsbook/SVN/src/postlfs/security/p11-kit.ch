@@ -77,12 +77,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>
     </para>
 @z
 
@@ -148,8 +150,10 @@
         </seg>
         <seg>
           /etc/pkcs11,
-          /usr/include/p11-kit-1 and
-          /usr/share/gtk-doc/html/p11-kit
+          /usr/include/p11-kit-1,
+          /usr/lib/pkcs11,
+          /usr/share/gtk-doc/html/p11-kit and
+          /usr/share/p11-kit
         </seg>
 @y
         <seg>
@@ -161,7 +165,9 @@
         <seg>
           /etc/pkcs11,
           /usr/include/p11-kit-1,
-          /usr/share/gtk-doc/html/p11-kit
+          /usr/lib/pkcs11,
+          /usr/share/gtk-doc/html/p11-kit,
+          /usr/share/p11-kit
         </seg>
 @z
 

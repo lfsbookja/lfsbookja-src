@@ -83,7 +83,8 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
@@ -91,6 +92,7 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
+      <xref linkend="intltool"/>,
       <xref linkend="xorg7-lib"/>
     </para>
 @z

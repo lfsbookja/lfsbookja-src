@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libarchive</application> library provides a single interface for
-    reading/writing various compression formats.</para>
+      The <application>libarchive</application> library provides a single
+      interface for reading/writing various compression formats.
 @y
-    <para>
-    <application>libarchive</application> ライブラリは、さまざまな圧縮フォーマットとの入出力を、ただ一つのインターフェースにより提供するものです。
-    </para>
+      <application>libarchive</application> ライブラリは、さまざまな圧縮フォーマットとの入出力を、ただ一つのインターフェースにより提供するものです。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libarchive-download-http;"/></para>
+Download (HTTP): <ulink url="&libarchive-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libarchive-download-http;"/></para>
+&Download; (HTTP): <ulink url="&libarchive-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libarchive-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libarchive-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libarchive-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libarchive-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libarchive-md5sum;</para>
+          Download MD5 sum: &libarchive-md5sum;
 @y
-        <para>&Download; MD5 sum: &libarchive-md5sum;</para>
+          &Download; MD5 sum: &libarchive-md5sum;
 @z
 
 @x
-        <para>Download size: &libarchive-size;</para>
+          Download size: &libarchive-size;
 @y
-        <para>&DownloadSize;: &libarchive-size;</para>
+          &DownloadSize;: &libarchive-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libarchive-buildsize;</para>
+          Estimated disk space required: &libarchive-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libarchive-buildsize;</para>
+          &Estimateddiskspacerequired;: &libarchive-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libarchive-time;</para>
+          Estimated build time: &libarchive-time;
 @y
-        <para>&Estimatedbuildtime;: &libarchive-time;</para>
+          &Estimatedbuildtime;: &libarchive-time;
 @z
 
 @x
@@ -79,29 +77,29 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="libxml2"/> or 
-    <xref linkend="expat"/>, 
-    <xref linkend="openssl"/>, 
-    <xref linkend="nettle"/> and
-    <xref linkend="acl"/>
+      <xref linkend="acl"/>,
+      <xref linkend="libxml2"/> or
+      <xref linkend="expat"/>,
+      <xref linkend="LZO"/>,
+      <xref linkend="nettle"/> and
+      <xref linkend="openssl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="libxml2"/> または 
-    <xref linkend="expat"/>, 
-    <xref linkend="openssl"/>, 
-    <xref linkend="nettle"/>,
-    <xref linkend="acl"/>
+      <xref linkend="acl"/>,
+      <xref linkend="libxml2"/> または
+      <xref linkend="expat"/>,
+      <xref linkend="LZO"/>,
+      <xref linkend="nettle"/>,
+      <xref linkend="openssl"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libarchive"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libarchive"/></para>
 @z
 
 @x
@@ -111,41 +109,28 @@
 @z
 
 @x
-    <para>Install <application>libarchive</application> by running the following
-    commands:</para>
+      Install <application>libarchive</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libarchive</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libarchive</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <userinput>make check</userinput>.</para>
+      To test the results, issue: <userinput>make check</userinput>.
 @y
-    <para>ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。</para>
+      ビルド結果をテストする場合は <userinput>make check</userinput> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--disable-static</option>: This option prevents building the 
-    static archive versions of the libraries.</para>
-@y
-    <para><option>--disable-static</option>:
-    このオプションはスタティックライブラリをビルドしないようにします。
-    </para>
 @z
 
 @x
@@ -165,13 +150,25 @@
 @z
 
 @x
-        <seg>bsdcpio and bsdtar</seg>
-        <seg>libarchive.so</seg>
-        <seg>none</seg>
+        <seg>
+          bsdcpio and bsdtar
+        </seg>
+        <seg>
+          libarchive.so
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
-        <seg>bsdcpio, bsdtar</seg>
-        <seg>libarchive.so</seg>
-        <seg>&None;</seg>
+        <seg>
+          bsdcpio, bsdtar
+        </seg>
+        <seg>
+          libarchive.so
+        </seg>
+        <seg>
+          &None;
+        </seg>
 @z
 
 @x
@@ -181,17 +178,21 @@
 @z
 
 @x bsdcpio
-          <para>is a tool similar to <command>cpio</command>.</para>
+            is a tool similar to <command>cpio</command>.
 @y
-          <para>
-          <command>cpio</command> と同等のツール。
-          </para>
+            <command>cpio</command> と同等のツール。
 @z
 
 @x bsdtar
-          <para>is a tool similar to GNU <command>tar</command>.</para>
+            is a tool similar to GNU <command>tar</command>.
 @y
-          <para>
-          GNU <command>tar</command> と同等のツール。
-          </para>
+            GNU <command>tar</command> と同等のツール。
+@z
+
+@x libarchive.so
+            is a library that can create and read several streaming
+            archive formats.
+@y
+            is a library that can create and read several streaming
+            archive formats.
 @z

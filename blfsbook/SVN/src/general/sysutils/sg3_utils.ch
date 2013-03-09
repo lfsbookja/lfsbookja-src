@@ -124,40 +124,52 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          sg_dd, sg_decode_sense, sg_emc_trespass, sg_format, sg_get_config,
-          sg_get_lba_status, sg_ident, sginfo, sg_inq, sg_logs, sg_luns, sg_map,
-          sg_map26, sgm_dd, sg_modes, sg_opcodes, sgp_dd, sg_persist, sg_prevent,
-          sg_raw, sg_rbuf, sg_rdac, sg_read, sg_read_block_limits, sg_read_buffer,
-          sg_readcap, sg_read_long, sg_reassign, sg_referrals, sg_requests, sg_reset,
-          sg_rmsn, sg_rtpg, sg_safte, sg_sanitize, sg_sat_identify, sg_sat_phy_event,
-          sg_sat_set_features, sg_scan, sg_senddiag, sg_ses, sg_start, sg_stpg,
-          sg_sync, sg_test_rwbuf, sg_turs, sg_unmap, sg_verify, sg_vpd,
-          sg_write_buffer, sg_write_long, sg_write_same and sg_wr_mode
+          sg_compare_and_write, sg_copy_results, sg_dd, sg_decode_sense,
+          sg_emc_trespass, sg_format, sg_get_config, sg_get_lba_status,
+          sg_ident, sginfo, sg_inq, sg_logs, sg_luns, sg_map, sg_map26,
+          sgm_dd, sg_modes, sg_opcodes, sgp_dd, sg_persist, sg_prevent, sg_raw,
+          sg_rbuf, sg_rdac, sg_read, sg_read_block_limits, sg_read_buffer,
+          sg_readcap, sg_read_long, sg_reassign, sg_referrals, sg_requests,
+          sg_reset, sg_rmsn, sg_rtpg, sg_safte, sg_sanitize, sg_sat_identify,
+          sg_sat_phy_event, sg_sat_set_features, sg_scan, sg_senddiag,
+          sg_ses, sg_start, sg_stpg, sg_sync, sg_test_rwbuf, sg_turs, sg_unmap,
+          sg_verify, sg_vpd, sg_write_buffer, sg_write_long, sg_write_same,
+          sg_wr_mode and sg_xcopy
         </seg>
         <seg>
           libsgutils2.so
+        </seg>
+        <seg>
+          None
         </seg>
 @y
         <seg>
-          sg_dd, sg_decode_sense, sg_emc_trespass, sg_format, sg_get_config,
-          sg_get_lba_status, sg_ident, sginfo, sg_inq, sg_logs, sg_luns, sg_map,
-          sg_map26, sgm_dd, sg_modes, sg_opcodes, sgp_dd, sg_persist, sg_prevent,
-          sg_raw, sg_rbuf, sg_rdac, sg_read, sg_read_block_limits, sg_read_buffer,
-          sg_readcap, sg_read_long, sg_reassign, sg_referrals, sg_requests, sg_reset,
-          sg_rmsn, sg_rtpg, sg_safte, sg_sanitize, sg_sat_identify, sg_sat_phy_event,
-          sg_sat_set_features, sg_scan, sg_senddiag, sg_ses, sg_start, sg_stpg,
-          sg_sync, sg_test_rwbuf, sg_turs, sg_unmap, sg_verify, sg_vpd,
-          sg_write_buffer, sg_write_long, sg_write_same, sg_wr_mode
+          sg_compare_and_write, sg_copy_results, sg_dd, sg_decode_sense,
+          sg_emc_trespass, sg_format, sg_get_config, sg_get_lba_status,
+          sg_ident, sginfo, sg_inq, sg_logs, sg_luns, sg_map, sg_map26,
+          sgm_dd, sg_modes, sg_opcodes, sgp_dd, sg_persist, sg_prevent, sg_raw,
+          sg_rbuf, sg_rdac, sg_read, sg_read_block_limits, sg_read_buffer,
+          sg_readcap, sg_read_long, sg_reassign, sg_referrals, sg_requests,
+          sg_reset, sg_rmsn, sg_rtpg, sg_safte, sg_sanitize, sg_sat_identify,
+          sg_sat_phy_event, sg_sat_set_features, sg_scan, sg_senddiag,
+          sg_ses, sg_start, sg_stpg, sg_sync, sg_test_rwbuf, sg_turs, sg_unmap,
+          sg_verify, sg_vpd, sg_write_buffer, sg_write_long, sg_write_same,
+          sg_wr_mode, sg_xcopy
         </seg>
         <seg>
           libsgutils2.so
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

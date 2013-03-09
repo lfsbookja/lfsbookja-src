@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The Kde-workspace package contains components that are central to 
-    providing the <application>KDE</application> desktop environment. Of 
-    particular importance are KWin, the <application>KDE</application>
-    window manager, and Plasma, which provides the workspace interface.</para>
+      The Kde-workspace package contains components that are central to
+      providing the <application>KDE</application> desktop environment. Of
+      particular importance are KWin, the <application>KDE</application>
+      window manager, and Plasma, which provides the workspace interface.
 @y
-    <para>
-    Kde-workspace パッケージは、<application>KDE</application> デスクトップ環境の重要なコンポーネントを提供います。
-    特に重要なのが <application>KDE</application> ウィンドウマネージャーの KWin、ワークスペースのインターフェースである Plasma です。
-    </para>
+      Kde-workspace パッケージは、<application>KDE</application> デスクトップ環境の重要なコンポーネントを提供います。
+      特に重要なのが <application>KDE</application> ウィンドウマネージャーの KWin、ワークスペースのインターフェースである Plasma です。
 @z
 
 @x
@@ -82,74 +80,76 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="kactivities"/>,
-    <xref linkend="qimageblitz"/>,
-    <xref linkend="xcb-util-image"/> and
-    <xref linkend="xcb-util-renderutil"/>
+      <xref linkend="kactivities"/>,
+      <xref linkend="qimageblitz"/>,
+      <xref linkend="xcb-util-image"/>, and
+      <xref linkend="xcb-util-renderutil"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="kactivities"/>,
-    <xref linkend="qimageblitz"/>,
-    <xref linkend="xcb-util-image"/>,
-    <xref linkend="xcb-util-renderutil"/>
+      <xref linkend="kactivities"/>,
+      <xref linkend="qimageblitz"/>,
+      <xref linkend="xcb-util-image"/>,
+      <xref linkend="xcb-util-renderutil"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="kdepimlibs"/>,
-    <xref linkend="nepomuk-core"/>,
-    <xref linkend="boost"/>, 
-    <xref linkend="freetype2"/>, 
-    <xref linkend="pciutils"/> and
-    <xref linkend="consolekit"/>
+      <xref linkend="kdepimlibs"/>,
+      <xref linkend="nepomuk-core"/>,
+      <xref linkend="boost"/>,
+      <xref linkend="freetype2"/>,
+      <xref linkend="pciutils"/>, and
+      <xref linkend="consolekit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="kdepimlibs"/>,
-    <xref linkend="nepomuk-core"/>,
-    <xref linkend="boost"/>, 
-    <xref linkend="freetype2"/>, 
-    <xref linkend="pciutils"/>,
-    <xref linkend="consolekit"/>
+      <xref linkend="kdepimlibs"/>,
+      <xref linkend="nepomuk-core"/>,
+      <xref linkend="boost"/>,
+      <xref linkend="freetype2"/>,
+      <xref linkend="pciutils"/>,
+      <xref linkend="consolekit"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="linux-pam"/>, 
-    <xref linkend="libusb"/>, 
-    <xref linkend="NetworkManager"/>,
-    <xref linkend="lm_sensors"/>,
-    <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>, 
-    <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>, 
-    <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>, 
-    <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
-    <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>, 
-    <ulink url="http://www.xmms.org/">XMMS</ulink>,
-    <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink> and
-    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
+      <xref linkend="linux-pam"/>,
+      <xref linkend="libusb"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="lm_sensors"/>,
+      <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>,
+      <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>,
+      <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>,
+      <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>,
+      <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>,
+      <ulink url="http://www.xmms.org/">XMMS</ulink>,
+      <ulink url="http://qalculate.sourceforge.net/">libqalculate</ulink>
+      (wants <ulink url="http://www.ginac.de/CLN/">CLN</ulink>), and
+      <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="linux-pam"/>, 
-    <xref linkend="libusb"/>, 
-    <xref linkend="NetworkManager"/>,
-    <xref linkend="lm_sensors"/>,
-    <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>, 
-    <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>, 
-    <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>, 
-    <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>, 
-    <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>, 
-    <ulink url="http://www.xmms.org/">XMMS</ulink>,
-    <ulink url="http://qalculate.sourceforge.net/">Qalculate!</ulink> and
-    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
+      <xref linkend="linux-pam"/>,
+      <xref linkend="libusb"/>,
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="lm_sensors"/>,
+      <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>,
+      <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>,
+      <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>,
+      <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>,
+      <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>,
+      <ulink url="http://www.xmms.org/">XMMS</ulink>,
+      <ulink url="http://qalculate.sourceforge.net/">libqalculate</ulink>
+      (wants <ulink url="http://www.ginac.de/CLN/">CLN</ulink>), and
+      <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
     </para>
 @z
 
@@ -166,20 +166,16 @@
 @z
 
 @x
-    <para>Install <application>Kde-workspace</application> by running the following
-    commands:</para>
+      Install <application>Kde-workspace</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Kde-workspace</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Kde-workspace</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -189,12 +185,17 @@
 @z
 
 @x
-    <para><option>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</option>: This option is 
-    set to install the KDE Python objects in the correct place.</para>
+      <parameter>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</parameter>:
+      Installs the <application>KDE</application> <application>Python</application>
+      objects in the standard location. This parameter can be removed and
+      instead replaced with an update to the <envar>PYTHONPATH</envar>
+      environment variable in the system or user's profile.
 @y
-    <para><option>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</option>:
-    このオプションは KDE Python オブジェクトを適切なディレクトリにインストールします。
-    </para>
+      <parameter>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</parameter>:
+      Installs the <application>KDE</application> <application>Python</application>
+      objects in the standard location. This parameter can be removed and
+      instead replaced with an update to the <envar>PYTHONPATH</envar>
+      environment variable in the system or user's profile.
 @z
 
 @x

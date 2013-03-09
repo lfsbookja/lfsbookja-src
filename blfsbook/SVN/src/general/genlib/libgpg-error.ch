@@ -26,16 +26,11 @@
 @z
 
 @x
-    <para>The <application>libgpg-error</application> package contains a
-    library that defines common error values for all
-    <application>GnuPG</application> components. Among these are GPG, GPGSM,
-    GPGME, GPG-Agent, libgcrypt, Libksba, DirMngr, Pinentry, SmartCard Daemon
-    and more.</para>
+      The <application>libgpg-error</application> package contains a
+      library that defines common error values for all
+      <application>GnuPG</application> components.
 @y
-    <para>
     <application>libgpg-error</application> パッケージは、<application>GnuPG</application> コンポーネントすべてにおいての共通的なエラー値を定義するライブラリを提供します。
-    <application>GnuPG</application> コンポーネントには GPG, GPGSM, GPGME, GPG-Agent, libgcrypt, Libksba, DirMngr, Pinentry, SmartCard デーモンなどがあります。
-    </para>
 @z
 
 @x
@@ -45,47 +40,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libgpg-error-download-http;"/></para>
+Download (HTTP): <ulink url="&libgpg-error-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libgpg-error-download-http;"/></para>
+&Download; (HTTP): <ulink url="&libgpg-error-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libgpg-error-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libgpg-error-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libgpg-error-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libgpg-error-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libgpg-error-md5sum;</para>
+          Download MD5 sum: &libgpg-error-md5sum;
 @y
-        <para>&Download; MD5 sum: &libgpg-error-md5sum;</para>
+          &Download; MD5 sum: &libgpg-error-md5sum;
 @z
 
 @x
-        <para>Download size: &libgpg-error-size;</para>
+          Download size: &libgpg-error-size;
 @y
-        <para>&DownloadSize;: &libgpg-error-size;</para>
+          &DownloadSize;: &libgpg-error-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libgpg-error-buildsize;</para>
+          Estimated disk space required: &libgpg-error-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libgpg-error-buildsize;</para>
+          &Estimateddiskspacerequired;: &libgpg-error-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libgpg-error-time;</para>
+          Estimated build time: &libgpg-error-time;
 @y
-        <para>&Estimatedbuildtime;: &libgpg-error-time;</para>
+          &Estimatedbuildtime;: &libgpg-error-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libgpg-error"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libgpg-error"/></para>
 @z
 
 @x
@@ -95,29 +88,22 @@
 @z
 
 @x
-    <para>Install <application>libgpg-error</application> by running the
-    following commands:</para>
+      Install <application>libgpg-error</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libgpg-error</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libgpg-error</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -137,15 +123,27 @@
 @z
 
 @x
-        <seg>gpg-error and gpg-error-config</seg>
-        <seg>libgpg-error.so</seg>
-        <seg>/usr/share/common-lisp and
-        /usr/share/doc/libgpg-error-&libgpg-error-version;</seg>
+        <seg>
+          gpg-error and gpg-error-config
+        </seg>
+        <seg>
+          libgpg-error.so
+        </seg>
+        <seg>
+          /usr/share/common-lisp and
+          /usr/share/doc/libgpg-error-&libgpg-error-version;
+        </seg>
 @y
-        <seg>gpg-error, gpg-error-config</seg>
-        <seg>libgpg-error.so</seg>
-        <seg>/usr/share/common-lisp,
-        /usr/share/doc/libgpg-error-&libgpg-error-version;</seg>
+        <seg>
+          gpg-error, gpg-error-config
+        </seg>
+        <seg>
+          libgpg-error.so
+        </seg>
+        <seg>
+          /usr/share/common-lisp,
+          /usr/share/doc/libgpg-error-&libgpg-error-version;
+        </seg>
 @z
 
 @x
@@ -155,32 +153,26 @@
 @z
 
 @x gpg-error
-          <para>is used to determine <application>libgpg-error</application>
-          error codes.</para>
+            is used to determine <application>libgpg-error</application>
+            error codes.
 @y
-          <para>
-          <application>libgpg-error</application> のエラーコードを決定するために利用します。
-          </para>
+            <application>libgpg-error</application> のエラーコードを決定するために利用します。
 @z
 
 @x gpg-error-config
-          <para>is a utility used to configure and build applications based on
-          the <application>libgpg-error</application> library. It can be used
-          to query the C compiler and linker flags which are required to correctly
-          compile and link the application against the
-          <application>libgpg-error</application> library.</para>
+            is a utility used to configure and build applications based on
+            the <application>libgpg-error</application> library. It can be used
+            to query the C compiler and linker flags which are required to
+            correctly compile and link the application against the
+            <application>libgpg-error</application> library.
 @y
-          <para>
-          <application>libgpg-error</application> ライブラリに基づいて生成されるアプリケーションの設定と構築のために利用するユーティリティです。
-          <application>libgpg-error</application> ライブラリに対してアプリケーションをコンパイルしリンクする際の C コンパイラーフラグやリンカーフラグを決定するために利用します。
-          </para>
+            <application>libgpg-error</application> ライブラリに基づいて生成されるアプリケーションの設定と構築のために利用するユーティリティです。
+            <application>libgpg-error</application> ライブラリに対してアプリケーションをコンパイルしリンクする際の C コンパイラーフラグやリンカーフラグを決定するために利用します。
 @z
 
-@x liblibgpg-error.{so,a}
-          <para>contains the <application>libgpg-error</application> API
-          functions.</para>
+@x liblibgpg-error.so
+            contains the <application>libgpg-error</application> API
+            functions.
 @y
-          <para>
-          <application>libgpg-error</application> の API 関数を提供します。
-          </para>
+            <application>libgpg-error</application> の API 関数を提供します。
 @z

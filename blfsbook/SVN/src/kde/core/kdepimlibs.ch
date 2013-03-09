@@ -20,11 +20,12 @@
 @z
 
 @x
-    <para><application>Kdepimlibs</application> is the common library for 
-    <application>KDE</application> PIM applications like kmail, kalarm etc.</para>
+    <para><application>Kdepimlibs</application> is the common library for
+    <application>KDE</application> PIM applications like
+    <command>kmail</command>, <command>kalarm</command>, etc.</para>
 @y
     <para>
-    <application>Kdepimlibs</application> は kmail や kalarm などの <application>KDE</application> PIM アプリケーションに対する共通ライブラリを提供します。
+    <application>Kdepimlibs</application> は <command>kmail</command> や <command>kalarm</command> などの <application>KDE</application> PIM アプリケーションに対する共通ライブラリを提供します。
     </para>
 @z
 
@@ -104,13 +105,13 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
     <xref linkend="openldap"/> and
-    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
+    <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="openldap"/>,
-    <ulink url="http://qjson.sourceforge.net/">qjson</ulink>
+    <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
     </para>
 @z
 

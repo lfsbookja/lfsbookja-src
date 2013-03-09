@@ -14,20 +14,18 @@
 @z
 
 @x
-    <title>Introduction to shared-mime-info</title>
+    <title>Introduction to Shared Mime Info</title>
 @y
-    <title>&IntroductionTo1;shared-mime-info&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Shared Mime Info&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>shared-mime-info</application> package contains a
-    MIME database. This allows central updates of MIME information for all
-    supporting applications.</para>
+      The <application>Shared Mime Info</application> package contains a
+      MIME database. This allows central updates of MIME information for all
+      supporting applications.
 @y
-    <para>
-    <application>shared-mime-info</application> パッケージは MIME データベースを提供します。
-    これに対応するアプリケーションに対して、MIME 情報を一元管理します。
-    </para>
+      <application>Shared Mime Info</application> パッケージは MIME データベースを提供します。
+      これに対応するアプリケーションに対して、MIME 情報を一元管理します。
 @z
 
 @x
@@ -37,45 +35,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&shared-mime-info-download-http;"/></para>
+          Download (HTTP): <ulink url="&shared-mime-info-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&shared-mime-info-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&shared-mime-info-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&shared-mime-info-download-ftp;"/></para>
+          Download (FTP): <ulink url="&shared-mime-info-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&shared-mime-info-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&shared-mime-info-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &shared-mime-info-md5sum;</para>
+          Download MD5 sum: &shared-mime-info-md5sum;
 @y
-        <para>&Download; MD5 sum: &shared-mime-info-md5sum;</para>
+          &Download; MD5 sum: &shared-mime-info-md5sum;
 @z
 
 @x
-        <para>Download size: &shared-mime-info-size;</para>
+          Download size: &shared-mime-info-size;
 @y
-        <para>&DownloadSize;: &shared-mime-info-size;</para>
+          &DownloadSize;: &shared-mime-info-size;
 @z
 
 @x
-        <para>Estimated disk space required: &shared-mime-info-buildsize;</para>
+          Estimated disk space required: &shared-mime-info-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &shared-mime-info-buildsize;</para>
+          &Estimateddiskspacerequired;: &shared-mime-info-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &shared-mime-info-time;</para>
+          Estimated build time: &shared-mime-info-time;
 @y
-        <para>&Estimatedbuildtime;: &shared-mime-info-time;</para>
+          &Estimatedbuildtime;: &shared-mime-info-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">shared-mime-info Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Shared Mime Info Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;shared-mime-info&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Shared Mime Info&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -103,34 +101,28 @@
 @z
 
 @x
-    <title>Installation of shared-mime-info</title>
+    <title>Installation of Shared Mime Info</title>
 @y
-    <title>&InstallationOf1;shared-mime-info&InstallationOf2;</title>
+    <title>&InstallationOf1;Shared Mime Info&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>shared-mime-info</application> by running the
-    following commands:</para>
+      Install <application>Shared Mime Info</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>shared-mime-info</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Shared Mime Info</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -170,9 +162,7 @@
 @z
 
 @x update-mime-database
-          <para>assists in adding MIME data to the database.</para>
+            assists in adding MIME data to the database.
 @y
-          <para>
-          MIME データをデータベースに追加します。
-          </para>
+            MIME データをデータベースに追加します。
 @z

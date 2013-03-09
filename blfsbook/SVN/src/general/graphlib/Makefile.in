@@ -199,7 +199,6 @@ CHANGE_FILES = \
 	lcms2.ch         \
 	libart_lgpl.ch   \
 	libexif.ch       \
-	libjpeg.ch       \
 	libjpeg-turbo.ch \
 	libmng.ch        \
 	libpng.ch        \
@@ -422,7 +421,6 @@ lcms.xml:          $(BOOKdir)/$@ $(srcdir)/lcms.ch
 lcms2.xml:         $(BOOKdir)/$@ $(srcdir)/lcms2.ch
 libart_lgpl.xml:   $(BOOKdir)/$@ $(srcdir)/libart_lgpl.ch
 libexif.xml:       $(BOOKdir)/$@ $(srcdir)/libexif.ch
-libjpeg.xml:       $(BOOKdir)/$@ $(srcdir)/libjpeg.ch
 libjpeg-turbo.xml: $(BOOKdir)/$@ $(srcdir)/libjpeg-turbo.ch
 libmng.xml:        $(BOOKdir)/$@ $(srcdir)/libmng.ch
 libpng.xml:        $(BOOKdir)/$@ $(srcdir)/libpng.ch

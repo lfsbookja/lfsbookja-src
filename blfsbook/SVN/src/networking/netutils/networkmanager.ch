@@ -85,19 +85,21 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
+      <xref linkend="intltool"/>,
       <xref linkend="libnl"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="udev"/> or <xref linkend="udev-extras"/> (for GUdev), and
-      <xref linkend="wireless_tools"/>
+      <xref linkend="nss"/> and
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
+      <xref linkend="intltool"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>,
-      <xref linkend="udev"/> または <xref linkend="udev-extras"/> (GUdev 用),
-      <xref linkend="wireless_tools"/>
+      <xref linkend="udev"/> または
+      <xref linkend="udev-extras"/> (GUdev 用)
     </para>
 @z
 
@@ -109,8 +111,10 @@
       <xref linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="libsoup"/> and
-      <xref linkend="polkit"/>
+      <xref linkend="libsoup"/>,
+      <xref linkend="polkit"/>,
+      <xref linkend="upower"/> and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -121,7 +125,9 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="polkit"/>
+      <xref linkend="polkit"/>,
+      <xref linkend="upower"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -130,7 +136,7 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
-      ModemManager</ulink>, and
+      ModemManager</ulink> (0.7 and later), and
       <xref linkend="wpa_supplicant"/> (Built with D-Bus support).
     </para>
 @y
@@ -138,8 +144,8 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
-      ModemManager</ulink>,
-      <xref linkend="wpa_supplicant"/> (DBus サポートがビルドされたもの)
+      ModemManager</ulink> (0.7 and later),
+      <xref linkend="wpa_supplicant"/> ((D-Bus サポートがビルドされたもの).
     </para>
 @z
 
@@ -190,20 +196,12 @@
 
 @x
       <option>--disable-ppp</option>: This parameter disables optional
-      <application>PPP</application> support in <application>NetworkManager</application>.
-      <!-- Omit if you have <xref linkend="ppp"/> installed. -->
+      <application>PPP</application> support in
+      <application>NetworkManager</application>.
 @y
       <option>--disable-ppp</option>: This parameter disables optional
-      <application>PPP</application> support in <application>NetworkManager</application>.
-      <!-- Omit if you have <xref linkend="ppp"/> installed. -->
-@z
-
-@x
-      <parameter>--with-distro=lfs</parameter>: This parameter is only needed if you
-      failed to create <filename>/etc/lfs-release</filename> when you installed LFS.
-@y
-      <parameter>--with-distro=lfs</parameter>:
-      このパラメーターは、LFS のインストール時に <filename>/etc/lfs-release</filename> を生成していない場合にのみ指定します。
+      <application>PPP</application> support in
+      <application>NetworkManager</application>.
 @z
 
 @x
@@ -292,9 +290,10 @@
           /usr/include/libnm-glib,
           /usr/include/NetworkManager,
           /usr/lib/NetworkManager,
-          /usr/share/NetworkManager,
-          /var/lib/NetworkManager and
-          /var/run/NetworkManager
+          /usr/share/gtk-doc/html/libnm-glib,
+          /usr/share/gtk-doc/html/libnm-util,
+          /usr/share/gtk-doc/html/NetworkManager and
+          /var/lib/NetworkManager
         </seg>
 @y
         <seg>
@@ -308,9 +307,10 @@
           /usr/include/libnm-glib,
           /usr/include/NetworkManager,
           /usr/lib/NetworkManager,
-          /usr/share/NetworkManager,
-          /var/lib/NetworkManager,
-          /var/run/NetworkManager
+          /usr/share/gtk-doc/html/libnm-glib,
+          /usr/share/gtk-doc/html/libnm-util,
+          /usr/share/gtk-doc/html/NetworkManager,
+          /var/lib/NetworkManager
         </seg>
 @z
 

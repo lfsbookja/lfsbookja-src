@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>libffi</application> library provides a portable,
-    high level programming interface to various calling conventions.  This
-    allows a programmer to call any function specified by a call interface
-    description at run time.</para>
+      The <application>libffi</application> library provides a portable,
+      high level programming interface to various calling conventions.  This
+      allows a programmer to call any function specified by a call interface
+      description at run time.
 @y
-    <para>
-    <application>libffi</application> ライブラリは、さまざまな呼出規約 (calling conventions) に対しての、移植性に優れた高レベルのプログラミングインターフェースを提供します。
-    このライブラリを用いることにより、プログラム実行時に呼出インターフェース記述 (call interface description) により関数を指定し呼び出すことができるようになります。
-    </para>
+      <application>libffi</application> ライブラリは、さまざまな呼出規約 (calling conventions) に対しての、移植性に優れた高レベルのプログラミングインターフェースを提供します。
+      このライブラリを用いることにより、プログラム実行時に呼出インターフェース記述 (call interface description) により関数を指定し呼び出すことができるようになります。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libffi-download-http;"/></para>
+          Download (HTTP): <ulink url="&libffi-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libffi-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libffi-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libffi-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libffi-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libffi-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libffi-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libffi-md5sum;</para>
+          Download MD5 sum: &libffi-md5sum;
 @y
-        <para>&Download; MD5 sum: &libffi-md5sum;</para>
+          &Download; MD5 sum: &libffi-md5sum;
 @z
 
 @x
-        <para>Download size: &libffi-size;</para>
+          Download size: &libffi-size;
 @y
-        <para>&DownloadSize;: &libffi-size;</para>
+          &DownloadSize;: &libffi-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libffi-buildsize;</para>
+          Estimated disk space required: &libffi-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libffi-buildsize;</para>
+          &Estimateddiskspacerequired;: &libffi-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libffi-time;</para>
+          Estimated build time: &libffi-time;
 @y
-        <para>&Estimatedbuildtime;: &libffi-time;</para>
+          &Estimatedbuildtime;: &libffi-time;
 @z
 
 @x
@@ -92,26 +90,22 @@
 @z
 
 @x
-    <para>Install <application>libffi</application> by running the following
-    commands:</para>
+      Install <application>libffi</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libffi</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libffi</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>&notTestSuite;</para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -131,13 +125,25 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libffi.{so,a}</seg>
-        <seg>None</seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          libffi.so
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libffi.{so,a}</seg>
-        <seg>&None;</seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          libffi.so
+        </seg>
+        <seg>
+          &None;
+        </seg>
 @z
 
 @x
@@ -146,11 +152,9 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libffi.{so,a}
-          <para>contains the <application>libffi</application> API
-          functions.</para>
+@x libffi.so
+            contains the <application>libffi</application> API
+            functions.
 @y
-          <para>
-          <application>libffi</application> API 関数を提供します。
-          </para>
+            <application>libffi</application> API 関数を提供します。
 @z

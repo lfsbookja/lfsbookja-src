@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to Audio File</title>
+    <title>Introduction to AudioFile</title>
 @y
-    <title>&IntroductionTo1;Audio File&IntroductionTo2;</title>
+    <title>&IntroductionTo1;AudioFile&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>Audio File</application> package contains the
+      The <application>AudioFile</application> package contains the
       audio file libraries and two sound file support programs useful
       to support basic sound file formats.
 @y
-      The <application>Audio File</application> package contains the
+      The <application>AudioFile</application> package contains the
       audio file libraries and two sound file support programs useful
       to support basic sound file formats.
 @z
@@ -73,23 +73,21 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/audiofile"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/audiofile"/></para>
 @z
 
 @x
-    <title>Installation of Audio File</title>
+    <title>Installation of AudioFile</title>
 @y
-    <title>&InstallationOf1;Audio File&InstallationOf2;</title>
+    <title>&InstallationOf1;AudioFile&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Audio File</application> by running the following
+      Install <application>AudioFile</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Audio File</application> をビルドします。
+      以下のコマンドを実行して <application>AudioFile</application> をビルドします。
 @z
 
 @x
@@ -113,9 +111,11 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -123,14 +123,20 @@
           sfconvert and sfinfo
         </seg>
         <seg>
-          libaudiofile.{so,a}
+          libaudiofile.so
+        </seg>
+        <seg>
+          None
         </seg>
 @y
         <seg>
           sfconvert, sfinfo
         </seg>
         <seg>
-          libaudiofile.{so,a}
+          libaudiofile.so
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

@@ -86,7 +86,6 @@
     <para role="required">
       <xref linkend="libXau"/>,
       <xref linkend="libXdmcp"/>,
-      <xref linkend="libpthread-stubs"/>,
       <xref linkend="libxslt"/>, and
       <xref linkend="xcb-proto"/>
     </para>
@@ -95,7 +94,6 @@
     <para role="required">
       <xref linkend="libXau"/>,
       <xref linkend="libXdmcp"/>,
-      <xref linkend="libpthread-stubs"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="xcb-proto"/>
     </para>
@@ -166,17 +164,6 @@
 @y
     <para><option>--enable-xinput</option>:
     本スイッチは XCB Xinput 拡張を有効にします。
-    </para>
-@z
-
-@x
-    <para><parameter>--docdir='${datadir}'/doc/libxcb-&libxcb-version;</parameter>:
-    This parameter ensures the <application>libxcb</application> documentation
-    is installed to a versioned directory.</para>
-@y
-    <para>
-    <parameter>--docdir='${datadir}'/doc/libxcb-&libxcb-version;</parameter>:
-    このパラメーターを指定することにより <application>libxcb</application> のドキュメントを、バージョン番号つきのディレクトリにインストールするようにします。
     </para>
 @z
 

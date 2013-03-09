@@ -68,11 +68,10 @@
 @x
     <para>Choosing a Window Manager or Desktop Environment is highly
     subjective. The choice depends on the look and feel of the packages, the
-    resources (RAM, disk space) required, and the utilities included.
-    One web site that provides a very good summary of what is available,
-    screenshots, and their respective features is
-    <ulink url="http://www.plig.org/xwinman/">Window Managers for
-    X</ulink>.</para>
+    resources (RAM, disk space) required, and the utilities included.  One web
+    site that provides a very good summary of what is available, screenshots,
+    and their respective features is <ulink url="http://xwinman.org/">Window
+    Managers for X</ulink>.</para>
 @y
     <para>
     ウィンドウマネージャーやデスクトップ環境をどれにするかは極めて主観的なものです。

@@ -91,11 +91,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/> and
+      <xref linkend="libxslt"/> (to build manual pages) and
       <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="libxslt"/> (man ページ生成のため),
       <ulink url="http://www.valgrind.org/">Valgrind</ulink>
     </para>
 @z

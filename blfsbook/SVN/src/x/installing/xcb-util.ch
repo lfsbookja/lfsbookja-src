@@ -80,13 +80,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gperf"/> and
       <xref linkend="libxcb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gperf"/>,
       <xref linkend="libxcb"/>
     </para>
 @z

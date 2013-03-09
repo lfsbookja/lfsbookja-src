@@ -230,25 +230,25 @@
 @z
 
 @x
-      <option>--enable-xpdf-headers</option>: Install some old
-      <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Okular</application>, <application>Libre Office</application>
-      and <application>Inkscape</application>).
+      <option>--enable-zlib</option>: This option makes
+      <application>Poppler</application> link with the system-installed
+      <filename class='libraryfile'>libz</filename> library to enable compressed
+      PDF functionality.
 @y
-      <option>--enable-xpdf-headers</option>:
-      <application>Okular</application>, <application>Libre Office</application>, <application>Inkscape</application> などにおいて必要とされる <application>Xpdf</application> ヘッダーファイルをインストールします。
+      <option>--enable-zlib</option>: This option makes
+      <application>Poppler</application> link with the system-installed
+      <filename class='libraryfile'>libz</filename> library to enable compressed
+      PDF functionality.
 @z
 
 @x
-      <option>--enable-zlib</option>: This option makes
-      <application>Poppler</application> link with the system-installed
-      <filename class='libraryfile'>libz</filename> library to enable compressed
-      PDF functionality.
+      <option>--enable-xpdf-headers</option>: Install some old
+      <application>Xpdf</application> headers required by certain programs (e.g.
+      <application>Okular</application>, <application>LibreOffice</application>
+      and <application>Inkscape</application>).
 @y
-      <option>--enable-zlib</option>: This option makes
-      <application>Poppler</application> link with the system-installed
-      <filename class='libraryfile'>libz</filename> library to enable compressed
-      PDF functionality.
+      <option>--enable-xpdf-headers</option>:
+      <application>Okular</application>, <application>LibreOffice</application>, <application>Inkscape</application> などにおいて必要とされる <application>Xpdf</application> ヘッダーファイルをインストールします。
 @z
 
 @x
@@ -269,22 +269,12 @@
 
 @x
         <seg>
-          pdfdetach,
-          pdffonts,
-          pdfimages,
-          pdfinfo,
-          pdfseparate,
-          pdftocairo,
-          pdftohtml,
-          pdftoppm,
-          pdftops,
-          pdftotext,
-          pdfunite and
-          poppler-glib-demo
+          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate,
+          pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
+          pdfunite and poppler-glib-demo
         </seg>
         <seg>
-          libpoppler.so,
-          libpoppler-cpp.so,
+          libpoppler.so, libpoppler-cpp.so,
           libpoppler-glib.so and
           libpoppler-qt4.so
         </seg>
@@ -296,22 +286,12 @@
         </seg>
 @y
         <seg>
-          pdfdetach,
-          pdffonts,
-          pdfimages,
-          pdfinfo,
-          pdfseparate,
-          pdftocairo,
-          pdftohtml,
-          pdftoppm,
-          pdftops,
-          pdftotext,
-          pdfunite,
-          poppler-glib-demo
+          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate,
+          pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
+          pdfunite, poppler-glib-demo
         </seg>
         <seg>
-          libpoppler.so,
-          libpoppler-cpp.so,
+          libpoppler.so, libpoppler-cpp.so,
           libpoppler-glib.so,
           libpoppler-qt4.so
         </seg>
@@ -399,9 +379,9 @@
 
 @x poppler-glib-demo
             is a tool to demonstrate the API, and for use when debugging and
-            testing <application>poppler</application>.
+            testing <application>Poppler</application>.
 @y
-            <application>poppler</application> の API をデモしたり、デバッグやテストを行うためのツールです。
+            <application>Poppler</application> の API をデモしたり、デバッグやテストを行うためのツールです。
 @z
 
 @x libpoppler.so

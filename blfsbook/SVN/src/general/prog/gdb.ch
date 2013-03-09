@@ -22,20 +22,22 @@
 @z
 
 @x
-    <title>Introduction to gdb</title>
+    <title>Introduction to GDB</title>
 @y
-    <title>&IntroductionTo1;gdb&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GDB&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>GDB</application>, the GNU Project debugger, allows you
-    to see what is going on `inside' another program while it executes -- or
-    what another program was doing at the moment it crashed.</para>
+      <application>GDB</application>, the GNU Project debugger, allows you
+      to see what is going on <quote>inside</quote> another program while it
+      executes -- or what another program was doing at the moment it crashed.
+      Note that <application>GDB</application> is most effective when tracing
+      programs and libraries that were built with debugging symbols and not
+      stripped.
 @y
-    <para>
-    <application>GDB</application> (GNU プロジェクトデバッガー; the GNU Project debugger) は、プログラム実行時に &apos;内部&apos; にて何が起こっているかを調べるものです。
-    あるいはそのプログラムがクラッシュする時に何が起きていたかを調べることもできます。
-    </para>
+      <application>GDB</application> (GNU プロジェクトデバッガー; the GNU Project debugger) は、プログラム実行時に &apos;内部&apos; にて何が起こっているかを調べるものです。
+      あるいはそのプログラムがクラッシュする時に何が起きていたかを調べることもできます。
+      <application>GDB</application> によりプログラムやライブラリを効果的にトレースするには、そのプログラムやライブラリをデバッグシンボル付きでビルドし、ストリップしていないことが必要となります。
 @z
 
 @x
@@ -81,9 +83,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">gdb Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GDB Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;gdb&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GDB&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,34 +107,28 @@
 @z
 
 @x
-    <title>Installation of gdb</title>
+    <title>Installation of GDB</title>
 @y
-    <title>&InstallationOf1;gdb&InstallationOf2;</title>
+    <title>&InstallationOf1;GDB&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>gdb</application> by running the following
-    commands:</para>
+      Install <application>GDB</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>gdb</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>gdb</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make -k check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -152,13 +148,15 @@
 @z
 
 @x
-        <seg>gdb, gdbserver, and gdbtui</seg>
+        <seg>gdb and gdbserver</seg>
         <seg>libinproctrace.so</seg>
-        <seg>/usr/share/gdb/{python/gdb/command,syscalls}</seg>
+        <seg>/usr/include/gdb, /usr/share/gdb, and
+        /usr/share/doc/gdb-&gdb-version;</seg>
 @y
-        <seg>gdb, gdbserver, gdbtui</seg>
+        <seg>gdb, gdbserver</seg>
         <seg>libinproctrace.so</seg>
-        <seg>/usr/share/gdb/{python/gdb/command,syscalls}</seg>
+        <seg>/usr/include/gdb, /usr/share/gdb,
+        /usr/share/doc/gdb-&gdb-version;</seg>
 @z
 
 @x
@@ -168,26 +166,26 @@
 @z
 
 @x gdb
-          <para>is the GNU Debugger.</para>
+            is the GNU Debugger.
 @y
-          <para>
-          GNU デバッガー。
-          </para>
+            GNU デバッガー。
 @z
 
 @x gdbserver
-          <para>is a remote server for the GNU debugger (it allows programs to be
-          debugged from a different machine).</para>
+            is a remote server for the GNU debugger (it allows programs to be
+            debugged from a different machine).
 @y
-          <para>
-          GNU デバッガーに対するリモートサーバー。(他端末からのプログラムのデバッグが可能となります。)
-          </para>
+            GNU デバッガーに対するリモートサーバー。(他端末からのプログラムのデバッグが可能となります。)
 @z
 
-@x gdbtui
-          <para>is a text user interface for <application>gdb</application>.</para>
+@x libinproctrace.so
+            contains functions for the in-process tracing agent. The agent
+            allows for installing fast tracepoints, listing static tracepoint
+            markers, probing static tracepoints markers, and starting trace
+            monitoring.
 @y
-          <para>
-          <application>gdb</application> に対するテキストユーザーインターフェース。
-          </para>
+            contains functions for the in-process tracing agent. The agent
+            allows for installing fast tracepoints, listing static tracepoint
+            markers, probing static tracepoints markers, and starting trace
+            monitoring.
 @z

@@ -140,14 +140,14 @@
       <parameter>link=shared</parameter>: This parameter ensures that only shared
       libraries are created, except for libboost_exception and libboost_test_exec_monitor
       which are created as static. Most people will not need the static libraries, indeed
-      most programs using boost only use the headers, but omit this parameter if you
-      do need them.
+      most programs using <application>Boost</application> only use the headers, but omit
+      this parameter if you do need them.
 @y
       <parameter>link=shared</parameter>:
       このパラメーターは共有ライブラリのみを生成するようにします。
       ただし libboost_exception と libboost_test_exec_monitor はスタティックライブラリを生成します。
       スタティックライブラリは通常は必要がありません。
-      boost を利用するプログラムは、たいていはヘッダーファイルを単に指定するだけです。
+      <application>Boost</application> を利用するプログラムは、たいていはヘッダーファイルを単に指定するだけです。
       もしスタティックライブラリを必要とするなら、このパラメーターを取り除いてください。
 @z
 
@@ -172,15 +172,14 @@
           None
         </seg>
         <seg>
-          libboost_chrono.so, libboost_date_time.so, libboost_exception.a,
-          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
-          libboost_locale.so, libboost_math_c99f.so, libboost_math_c99l.so,
-          libboost_math_c99.so, libboost_math_tr1f.so,
-          libboost_math_tr1l.so, libboost_math_tr1.so,
-          libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python.so, libboost_random.so, libboost_regex.so,
-          libboost_serialization.so, libboost_signals.so,
-          libboost_system.so, libboost_test_exec_monitor.a,
+          libboost_atomic.so, libboost_chrono.so, libboost_context.so,
+          libboost_date_time.so, libboost_exception.a, libboost_filesystem.so,
+          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_c99.so,
+          libboost_math_tr1f.so, libboost_math_tr1l.so, libboost_math_tr1.so,
+          libboost_prg_exec_monitor.so, libboost_program_options.so, libboost_python.so,
+          libboost_random.so, libboost_regex.so, libboost_serialization.so,
+          libboost_signals.so, libboost_system.so, libboost_test_exec_monitor.a,
           libboost_thread.so, libboost_timer.so, libboost_unit_test_framework.so,
           libboost_wave.so and libboost_wserialization.so
         </seg>
@@ -192,15 +191,14 @@
           &None;
         </seg>
         <seg>
-          libboost_chrono.so, libboost_date_time.so, libboost_exception.a,
-          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
-          libboost_locale.so, libboost_math_c99f.so, libboost_math_c99l.so,
-          libboost_math_c99.so, libboost_math_tr1f.so,
-          libboost_math_tr1l.so, libboost_math_tr1.so,
-          libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python.so, libboost_random.so, libboost_regex.so,
-          libboost_serialization.so, libboost_signals.so,
-          libboost_system.so, libboost_test_exec_monitor.a,
+          libboost_atomic.so, libboost_chrono.so, libboost_context.so,
+          libboost_date_time.so, libboost_exception.a, libboost_filesystem.so,
+          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_c99.so,
+          libboost_math_tr1f.so, libboost_math_tr1l.so, libboost_math_tr1.so,
+          libboost_prg_exec_monitor.so, libboost_program_options.so, libboost_python.so,
+          libboost_random.so, libboost_regex.so, libboost_serialization.so,
+          libboost_signals.so, libboost_system.so, libboost_test_exec_monitor.a,
           libboost_thread.so, libboost_timer.so, libboost_unit_test_framework.so,
           libboost_wave.so, libboost_wserialization.so
         </seg>

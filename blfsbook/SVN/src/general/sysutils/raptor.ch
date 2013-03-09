@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para><application>Raptor</application> is a C library that provides a set 
-    of parsers and serializers that generate Resource Description Framework (RDF) 
-    triples.</para>
+      <application>Raptor</application> is a C library that provides a set of
+      parsers and serializers that generate Resource Description Framework
+      (RDF) triples.
 @y
-    <para>
-    <application>Raptor</application> は C ライブラリであり、RDF (Resource Description Framework) の三つの要素 ＝ トリプル (triples) に対してのパーサーおよびシリアライザーを提供します。
-    </para>
+      <application>Raptor</application> は C ライブラリであり、RDF (Resource Description Framework) の三つの要素 ＝ トリプル (triples) に対してのパーサーおよびシリアライザーを提供します。
 @z
 
 @x
@@ -36,51 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&raptor-download-http;"/></para>
+          Download (HTTP): <ulink url="&raptor-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&raptor-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&raptor-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&raptor-download-ftp;"/></para>
+          Download (FTP): <ulink url="&raptor-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&raptor-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&raptor-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &raptor-md5sum;</para>
+          Download MD5 sum: &raptor-md5sum;
 @y
-        <para>&Download; MD5 sum: &raptor-md5sum;</para>
+          &Download; MD5 sum: &raptor-md5sum;
 @z
 
 @x
-        <para>Download size: &raptor-size;</para>
+          Download size: &raptor-size;
 @y
-        <para>&DownloadSize;: &raptor-size;</para>
+          &DownloadSize;: &raptor-size;
 @z
 
 @x
-        <para>Estimated disk space required: &raptor-buildsize;</para>
+          Estimated disk space required: &raptor-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &raptor-buildsize;</para>
+          &Estimateddiskspacerequired;: &raptor-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &raptor-time;</para>
+          Estimated build time: &raptor-time;
 @y
-        <para>&Estimatedbuildtime;: &raptor-time;</para>
-@z
-
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-@y
-        <para>必須のパッチ: <ulink
+          &Estimatedbuildtime;: &raptor-time;
 @z
 
 @x
@@ -92,23 +78,37 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="expat"/> or <xref linkend="libxml2"/>, 
-    <xref linkend="curl"/>
+      <xref linkend="curl"/> and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="expat"/> または <xref linkend="libxml2"/>, 
-    <xref linkend="curl"/>
+      <xref linkend="curl"/>,
+      <xref linkend="libxslt"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="icu"/> and
+      <ulink url="http://lloyd.github.com/yajl/">libyajl</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="icu"/>,
+      <ulink url="http://lloyd.github.com/yajl/">libyajl</ulink>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/raptor"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/raptor"/></para>
 @z
 
 @x
@@ -118,20 +118,22 @@
 @z
 
 @x
-    <para>Install <application>Raptor</application> by running the following
-    commands:</para>
+      Install <application>Raptor</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Raptor</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Raptor</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -141,12 +143,13 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: This option prevents compiling the 
-    static archive versions of the libraries.</para>
+      <parameter>--with-icu-config=/usr/bin/icu-config</parameter>: Use
+      this switch if you have installed <xref linkend="icu"/> and wish
+      to build <application>Raptor</application> with its support.
 @y
-    <para><option>--disable-static</option>:
-    このオプションはスタティックライブラリをビルドしないようにします。
-    </para>
+      <parameter>--with-icu-config=/usr/bin/icu-config</parameter>: Use
+      this switch if you have installed <xref linkend="icu"/> and wish
+      to build <application>Raptor</application> with its support.
 @z
 
 @x
@@ -166,13 +169,27 @@
 @z
 
 @x
-        <seg>rapper</seg>
-        <seg>libraptor2.so</seg>
-        <seg>/usr/include/raptor2 and /usr/share/gtk-doc/html/raptor2</seg>
+        <seg>
+          rapper
+        </seg>
+        <seg>
+          libraptor2.so
+        </seg>
+        <seg>
+          /usr/include/raptor2 and
+          /usr/share/gtk-doc/html/raptor2
+        </seg>
 @y
-        <seg>rapper</seg>
-        <seg>libraptor2.so</seg>
-        <seg>/usr/include/raptor2, /usr/share/gtk-doc/html/raptor2</seg>
+        <seg>
+          rapper
+        </seg>
+        <seg>
+          libraptor2.so
+        </seg>
+        <seg>
+          /usr/include/raptor2,
+          /usr/share/gtk-doc/html/raptor2
+        </seg>
 @z
 
 @x
@@ -182,9 +199,13 @@
 @z
 
 @x rapper
-          <para>is a RDF parsing and serializing utility.</para>
+            is a RDF parsing and serializing utility.
 @y
-          <para>
-          RDF 解析およびシリアライズを行うユーティリティ。
-          </para>
+            RDF 解析およびシリアライズを行うユーティリティ。
+@z
+
+@x libraptor2.so
+            contains the <application>Raptor</application> API functions.
+@y
+            <application>Raptor</application> API 関数を提供します。
 @z

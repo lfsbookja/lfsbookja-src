@@ -42,6 +42,133 @@
 @z
 
 @x
+      <para>March 8th, 2013</para>
+@y
+      <para>2013/03/08</para>
+@z
+@x
+          <para>[bdubbs] - Update to hdparm-9.43.  Fixes
+          <ulink url="&blfs-ticket-root;3654">#3654</ulink>.</para>
+@y
+          <para>[bdubbs] - hdparm-9.43 へのアップデート。
+          <ulink url="&blfs-ticket-root;3654">#3654</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Added qemu-kvm patch to correct .texi error
+          exposed by texinfo-5.0.  Also added environment variables
+          to correctly link executables. Fixes
+          <ulink url="&blfs-ticket-root;3823">#3823</ulink>.</para>
+@y
+          <para>[bdubbs] - qemu-kvm にて texinfo-5.0 により発生する .texi エラーを修正するパッチを追加。
+          また実行モジュールへのリンクを正しくするように環境変数を追加。
+          <ulink url="&blfs-ticket-root;3823">#3823</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to Subversion-1.7.8.  Fixes
+          <ulink url="&blfs-ticket-root;3827">#3827</ulink>.</para>
+@y
+          <para>[bdubbs] - Subversion-1.7.8 へのアップデート。
+          <ulink url="&blfs-ticket-root;3827">#3827</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 7th, 2013</para>
+@y
+      <para>2013/03/07</para>
+@z
+@x
+          <para>[bdubbs] - Fix link to Chineese fonts.  Fixes
+          <ulink url="&blfs-ticket-root;3821">#3821</ulink>.</para>
+@y
+          <para>[bdubbs] - 中国フォントへのリンクを修正。
+          <ulink url="&blfs-ticket-root;3821">#3821</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update wording of DRI detection in Xorg
+          configuration.</para>
+@y
+          <para>[bdubbs] - Xorg 設定において DRI 検出に関する説明を更新。</para>
+@z
+
+@x
+      <para>March 6th, 2013</para>
+@y
+      <para>2013/03/06</para>
+@z
+@x
+          <para>[bdubbs] - Update to xterm-291.  Fixes
+          <ulink url="&blfs-ticket-root;3728">#3728</ulink>.</para>
+@y
+          <para>[bdubbs] - xterm-291 へのアップデート。
+          <ulink url="&blfs-ticket-root;3728">#3728</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 5th, 2013</para>
+@y
+      <para>2013/03/05</para>
+@z
+@x
+          <para>[bdubbs] - Remove gperf dependency from xcb-util 
+          because is is no longer used.</para>
+@y
+          <para>[bdubbs] - xcb-util にて gperf を依存パッケージから削除。もはや利用されていない。</para>
+@z
+@x
+          <para>[bdubbs] - Remove optional generation of text 
+          documents from gperf because it breaks the install 
+          without TeXLive. </para>
+@y
+          <para>[bdubbs] - gperf からのドキュメント生成を行わないように。
+          これがあると TeXLive がない時にインストールできなくなるため。
+          </para>
+@z
+
+@x
+      <para>March 4th, 2013</para>
+@y
+      <para>2013/03/04</para>
+@z
+@x
+          <para>[bdubbs] - Updated to traceroute-2.0.19. Add a note
+          about the differences between this package and the
+          version installed in the LFS package inetutils.  Fixes
+          <ulink url="&blfs-ticket-root;3730">#3730</ulink>.</para>
+@y
+          <para>[bdubbs] - traceroute-2.0.19 へのアップデート。
+          また本パッケージと LFS にてインストールする inetutils との違いについての説明を追加。
+          <ulink url="&blfs-ticket-root;3730">#3730</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 3rd, 2013</para>
+@y
+      <para>2013/03/03</para>
+@z
+@x
+          <para>[krejzi] - Added a patch to fix segfault in cURL.</para>
+@y
+          <para>[krejzi] - cURL にてセグメントフォールトを解消するためのパッチを追加。</para>
+@z
+@x
+          <para>[krejzi] - Updated to latest GNOME packages.</para>
+@y
+          <para>[krejzi] - 最新の GNOME パッケージへのアップデート。</para>
+@z
+
+@x
+      <para>March 2nd, 2013</para>
+@y
+      <para>2013/03/02</para>
+@z
+
+@x
+      <para>March 1st, 2013</para>
+@y
+      <para>2013/03/01</para>
+@z
+
+@x
       <para>February 27th, 2013</para>
 @y
       <para>2013/02/27</para>

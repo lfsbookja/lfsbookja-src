@@ -26,18 +26,16 @@
 @z
 
 @x
-    <para><application>DejaGnu</application> is a framework for running test
-    suites on GNU tools. It is written in <command>expect</command>, which
-    uses <application>Tcl</application> (Tool command language). It was installed
-    by LFS in the temprary /tools directory.  These instructions install it
-    permanently.</para>
+      <application>DejaGnu</application> is a framework for running test
+      suites on GNU tools. It is written in <command>expect</command>, which
+      uses <application>Tcl</application> (Tool command language). It was installed
+      by LFS in the temporary <filename class="directory">/tools</filename>
+      directory.  These instructions install it permanently.
 @y
-    <para>
-    <application>DejaGnu</application> パッケージは GNU ツールにおいて、テストスイートを実行するフレームワークです。
-    これは <application>Tcl</application> (ツールコマンド言語; Tool command language) によって書かれています。
-    LFS ではこれを /tools ディレクトリに一時的にインストールしていました。
-    ここでの手順は、それを恒常的にインストールするものです。
-    </para>
+      <application>DejaGnu</application> パッケージは GNU ツールにおいて、テストスイートを実行するフレームワークです。
+      これは <application>Tcl</application> (ツールコマンド言語; Tool command language) によって書かれています。
+      LFS ではこれを <filename class="directory">/tools</filename> ディレクトリに一時的にインストールしていました。
+      本手順は、これを恒常的にインストールするものです。
 @z
 
 @x
@@ -90,26 +88,37 @@
 
 @x
     <bridgehead renderas="sect4">Required (Run-time Only)</bridgehead>
-    <para role="required"><xref linkend="expect"/></para>
+    <para role="required">
+      <xref linkend="expect"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required; (ランタイム利用時のみ)</bridgehead>
-    <para role="required"><xref linkend="expect"/></para>
+    <para role="required">
+      <xref linkend="expect"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="docbook-utils"/></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/> and
+      <ulink url="http://sourceforge.net/projects/docbook2x/">docbook2X</ulink>
+      (both looked for by the <command>configure</command> script but not used
+      in the build)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="docbook-utils"/></para>
+    <para role="optional">
+      <xref linkend="docbook-utils"/>,
+      <ulink url="http://sourceforge.net/projects/docbook2x/">docbook2X</ulink>
+      (両者とも <command>configure</command> スクリプトが検出しようとしますが、ビルド時には利用されません。)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/dejagnu"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/dejagnu"/></para>
 @z
 
 @x
@@ -119,29 +128,40 @@
 @z
 
 @x
-    <para>Install <application>DejaGnu</application> by running the following
-    commands:</para>
+      Install <application>DejaGnu</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>DejaGnu</application> パッケージをビルドします。
-    </para>
+      以下のコマンドを実行して <application>DejaGnu</application> パッケージをビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      HTML and text documentation was created in the previous step. There
+      are different ways to create additional forms of documentation, if desired.
+      If you have <xref linkend="texlive"/> installed, create PDF and Postscript
+      docs in the <filename class="directory">doc</filename> directory by issuing
+      <command>make pdf ps</command>. If you have <xref linkend="docbook-utils"/>
+      installed, create PDF and Postscript docs in the top-level directory
+      by issuing <command>make dejagnu.{pdf,ps}</command>.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      HTML and text documentation was created in the previous step. There
+      are different ways to create additional forms of documentation, if desired.
+      If you have <xref linkend="texlive"/> installed, create PDF and Postscript
+      docs in the <filename class="directory">doc</filename> directory by issuing
+      <command>make pdf ps</command>. If you have <xref linkend="docbook-utils"/>
+      installed, create PDF and Postscript docs in the top-level directory
+      by issuing <command>make dejagnu.{pdf,ps}</command>.
 @z
 
 @x
-    <para>To test the installation, issue <command>make check</command> as
-    an unprivileged user.</para>
+      To test the results, issue <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は、一般ユーザーにて <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -183,11 +203,9 @@
 @z
 
 @x runtest
-          <para>is the <application>DejaGnu</application> test driver program. It is
-          used to control what tests to run, and variations on how to run them.</para>
+            is the <application>DejaGnu</application> test driver program. It is
+            used to control what tests to run, and variations on how to run them.
 @y
-          <para>
-          <application>DejaGnu</application> のテストドライバープログラム。
-          テストとして何を実行するか、あるいはどのようにして実行するかを制御します。
-          </para>
+            <application>DejaGnu</application> のテストドライバープログラム。
+            テストとして何を実行するか、あるいはどのようにして実行するかを制御します。
 @z

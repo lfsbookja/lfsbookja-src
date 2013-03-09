@@ -106,16 +106,16 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
     <xref linkend="kactivities"/>,
-    <xref linkend="kdepimlibs"/>
+    <xref linkend="kdepimlibs"/>,
     <xref linkend="alsa-lib"/>,
-    <xref linkend="libjpeg"/> and 
+    <xref linkend="libjpeg"/> and
     <xref linkend="exiv2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
     <xref linkend="kactivities"/>,
-    <xref linkend="kdepimlibs"/>
+    <xref linkend="kdepimlibs"/>,
     <xref linkend="alsa-lib"/>,
     <xref linkend="libjpeg"/>,
     <xref linkend="exiv2"/>

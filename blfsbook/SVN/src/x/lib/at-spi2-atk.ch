@@ -78,16 +78,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="at-spi2-core"/>,
-      <xref linkend="atk"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="at-spi2-core"/> and
+      <xref linkend="atk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="at-spi2-core"/>,
-      <xref linkend="atk"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="atk"/>
     </para>
 @z
 

@@ -8,7 +8,6 @@
 BOOKdir = @abs_bookdir@/x/installing
 CHANGE_FILES = \
 	installing.ch          \
-	libpthread-stubs.ch    \
 	libXau.ch              \
 	libxcb.ch              \
 	libXdmcp.ch            \
@@ -51,7 +50,6 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 installing.xml:          $(BOOKdir)/$@ $(srcdir)/installing.ch
-libpthread-stubs.xml:    $(BOOKdir)/$@ $(srcdir)/libpthread-stubs.ch
 libXau.xml:              $(BOOKdir)/$@ $(srcdir)/libXau.ch
 libxcb.xml:              $(BOOKdir)/$@ $(srcdir)/libxcb.ch
 libXdmcp.xml:            $(BOOKdir)/$@ $(srcdir)/libXdmcp.ch

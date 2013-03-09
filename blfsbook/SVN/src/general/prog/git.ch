@@ -26,29 +26,29 @@
 @z
 
 @x
-    <para><application>Git</application> is a free and open source, distributed
-    version control system designed to handle everything from small to very
-    large projects with speed and efficiency. Every
-    <application>Git</application> clone is a full-fledged repository with
-    complete history and full revision tracking capabilities, not dependent on
-    network access or a central server. Branching and merging are fast and easy
-    to do. <application>Git</application> is used for version control of files,
-    much like tools such as <application>Mercurial</application>,
-    <application>Bazaar</application>, <xref linkend="subversion"/>,
-    <xref linkend="cvs"/>, <application>Perforce</application>, and
-    <application>Team Foundation Server</application>.</para>
+      <application>Git</application> is a free and open source, distributed
+      version control system designed to handle everything from small to very
+      large projects with speed and efficiency. Every
+      <application>Git</application> clone is a full-fledged repository with
+      complete history and full revision tracking capabilities, not dependent on
+      network access or a central server. Branching and merging are fast and easy
+      to do. <application>Git</application> is used for version control of files,
+      much like tools such as <application>Mercurial</application>,
+      <application>Bazaar</application>, <xref linkend="subversion"/>,
+      <xref linkend="cvs"/>, <application>Perforce</application>, and
+      <application>Team Foundation Server</application>.
 @y
-    <para><application>Git</application> is a free and open source, distributed
-    version control system designed to handle everything from small to very
-    large projects with speed and efficiency. Every
-    <application>Git</application> clone is a full-fledged repository with
-    complete history and full revision tracking capabilities, not dependent on
-    network access or a central server. Branching and merging are fast and easy
-    to do. <application>Git</application> is used for version control of files,
-    much like tools such as <application>Mercurial</application>,
-    <application>Bazaar</application>, <xref linkend="subversion"/>,
-    <xref linkend="cvs"/>, <application>Perforce</application>, and
-    <application>Team Foundation Server</application>.</para>
+      <application>Git</application> is a free and open source, distributed
+      version control system designed to handle everything from small to very
+      large projects with speed and efficiency. Every
+      <application>Git</application> clone is a full-fledged repository with
+      complete history and full revision tracking capabilities, not dependent on
+      network access or a central server. Branching and merging are fast and easy
+      to do. <application>Git</application> is used for version control of files,
+      much like tools such as <application>Mercurial</application>,
+      <application>Bazaar</application>, <xref linkend="subversion"/>,
+      <xref linkend="cvs"/>, <application>Perforce</application>, and
+      <application>Team Foundation Server</application>.
 @z
 
 @x
@@ -58,39 +58,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&git-download-http;"/></para>
+          Download (HTTP): <ulink url="&git-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&git-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&git-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&git-download-ftp;"/></para>
+          Download (FTP): <ulink url="&git-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&git-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&git-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &git-md5sum;</para>
+          Download MD5 sum: &git-md5sum;
 @y
-        <para>&Download; MD5 sum: &git-md5sum;</para>
+          &Download; MD5 sum: &git-md5sum;
 @z
 
 @x
-        <para>Download size: &git-size;</para>
+          Download size: &git-size;
 @y
-        <para>&DownloadSize;: &git-size;</para>
+          &DownloadSize;: &git-size;
 @z
 
 @x
-        <para>Estimated disk space required: &git-buildsize;</para>
+          Estimated disk space required: &git-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &git-buildsize;</para>
+          &Estimateddiskspacerequired;: &git-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &git-time;</para>
+          Estimated build time: &git-time;
 @y
-        <para>&Estimatedbuildtime;: &git-time;</para>
+          &Estimatedbuildtime;: &git-time;
 @z
 
 @x
@@ -100,27 +100,23 @@
 @z
 
 @x
-        <para><ulink
-        url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
-        http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink> 
-        (only needed if you've not installed asciidoc and xmlto)</para>
+          <ulink url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
+          http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink>
+          (only needed if you've not installed asciidoc and xmlto)
 @y
-        <para><ulink
-        url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
-        http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink> 
-        (only needed if you've not installed asciidoc and xmlto)</para>
+          <ulink url="http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz">
+          http://git-core.googlecode.com/files/git-manpages-&git-version;.tar.gz</ulink>
+          (only needed if you've not installed asciidoc and xmlto)
 @z
 
 @x
-        <para><ulink
-        url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
-        http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink> 
-        and other docs (only needed if you've not installed asciidoc).</para>
+          <ulink url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
+          http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink>
+          and other docs (only needed if you've not installed asciidoc).
 @y
-        <para><ulink
-        url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
-        http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink> 
-        and other docs (only needed if you've not installed asciidoc).</para>
+          <ulink url="http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz">
+          http://git-core.googlecode.com/files/git-htmldocs-&git-version;.tar.gz</ulink>
+          and other docs (only needed if you've not installed asciidoc).
 @z
 
 @x
@@ -132,34 +128,33 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="python2"/> and
-      <xref linkend="curl"/> (needed to use <application>Git</application> over http, 
-      https, ftp or ftps)
+      <xref linkend="curl"/> (needed to use <application>Git</application> over http,
+      https, ftp or ftps),
+      <xref linkend="expat"/>,
+      <xref linkend="openssl"/> and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="python2"/>,
-      <xref linkend="curl"/>
-      (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要)
+      <xref linkend="curl"/> (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要),
+      <xref linkend="expat"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="python2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/>, 
-      <xref linkend="openssl"/>, 
-      <xref linkend="expat"/>, and 
+      <xref linkend="pcre"/> and
       <xref linkend="tk"/> (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/>, 
-      <xref linkend="openssl"/>, 
-      <xref linkend="expat"/>,
+      <xref linkend="pcre"/> and
       <xref linkend="tk"/> (簡易な <application>Git</application>リポジトリビューワー gitk が実行時に <application>Tk</application> を必要とします)
     </para>
 @z
@@ -191,88 +186,74 @@
 @z
 
 @x
-    <para>Install <application>Git</application> by running the following
-    commands:</para>
+      Install <application>Git</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Git</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Git</application> をビルドします。
 @z
 
 @x
-    <para>If you have installed <ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> you can create
-    the html version of the man pages and other docs:</para>
+      If you have installed <ulink
+      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> you can
+      create the html version of the man pages and other docs:
 @y
-    <para>
-    <ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> をインストールしていて man ページを生成したい場合は、以下を実行します。
-    </para>
+      <ulink
+      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> をインストールしていて man ページを生成したい場合は、以下を実行します。
 @z
 
 @x
-    <para>If you have installed <ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
-    <xref linkend="xmlto"/> you can create the man pages:</para>
+      If you have installed <ulink
+      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
+      <xref linkend="xmlto"/> you can create the man pages:
 @y
-    <para>
-    <ulink
-    url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> と <xref
-    linkend="xmlto"/> をインストールしている場合、以下のコマンドを実行すれば、man ページを生成することができます。
-    </para>
+      <ulink
+      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> と <xref
+      linkend="xmlto"/> をインストールしている場合、以下のコマンドを実行すれば、man ページを生成することができます。
 @z
 
 @x
-    <para>To check the results, issue: <command>make test</command>.</para>
+      To check the results, issue: <command>make test</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+.@z
+
+@x
+      If you created the man pages, install them as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      man ページを生成した場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行してインストールします。
 @z
 
 @x
-    <para>If you created the man pages, install them as the
-    <systemitem class="username">root</systemitem> user:</para>
+      If you created the html docs, install them as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    man ページを生成した場合は、<systemitem
-    class="username">root</systemitem> ユーザーになって以下のコマンドを実行してインストールします。
-    </para>
+      html ドキュメントを生成した場合は、<systemitem
+      class="username">root</systemitem>  ユーザーになって以下のコマンドを実行してインストールします。
 @z
 
 @x
-    <para>If you created the html docs, install them as the
-    <systemitem class="username">root</systemitem> user:</para>
+      Alternatively, If you downloaded the man pages untar them as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    html ドキュメントを生成した場合は、<systemitem
-    class="username">root</systemitem>  ユーザーになって以下のコマンドを実行してインストールします。
-    </para>
+      Alternatively, If you downloaded the man pages untar them as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Alternatively, If you downloaded the man pages untar them as the
-    <systemitem class="username">root</systemitem> user:</para>
+      If you downloaded the html docs untar them as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>Alternatively, If you downloaded the man pages untar them as the
-    <systemitem class="username">root</systemitem> user:</para>
-@z
-
-@x
-    <para>If you downloaded the html docs untar them as the
-    <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>If you downloaded the html docs untar them as the
-    <systemitem class="username">root</systemitem> user:</para>
+      If you downloaded the html docs untar them as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -282,45 +263,51 @@
 @z
 
 @x
-    <para><option>--with-gitconfig=/etc/gitconfig</option>: This sets
-    <filename>/etc/gitconfig</filename> as the file that stores the default,
-    system wide, <application>Git</application> settings.</para>
+      <option>--without-python</option>: Use this switch if
+      <application>Python</application> is not installed.
 @y
-    <para><option>--with-gitconfig=/etc/gitconfig</option>: This sets
-    <filename>/etc/gitconfig</filename> as the file that stores the default,
-    system wide, <application>Git</application> settings.</para>
+      <option>--without-python</option>: Use this switch if
+      <application>Python</application> is not installed.
 @z
 
 @x
-    <para><command>tar -xf ../git-manpages-&git-version;.tar.gz -C
-    /usr/share/man --no-same-owner</command>: This untars
-    <filename>git-manpages-&git-version;.tar.gz</filename>. The
-    <option>-C</option> option makes tar change directory to
-    <filename class="directory">/usr/share/man</filename> before it starts to
-    decompress the docs. The <option>--no-same-owner</option> option stops tar
-    from preserving the user and group details of the files. This is useful as
-    that user or group may not exist on your system; this could
-    (potentially) be a security risk.</para>
+      <option>--with-libpcre</option>: Use this switch if
+      <application>PCRE</application> is installed.
 @y
-    <para><command>tar -xf ../git-manpages-&git-version;.tar.gz -C
-    /usr/share/man --no-same-owner</command>: This untars
-    <filename>git-manpages-&git-version;.tar.gz</filename>. The
-    <option>-C</option> option makes tar change directory to
-    <filename class="directory">/usr/share/man</filename> before it starts to
-    decompress the docs. The <option>--no-same-owner</option> option stops tar
-    from preserving the user and group details of the files. This is useful as
-    that user or group may not exist on your system; this could
-    (potentially) be a security risk.</para>
+      <option>--with-libpcre</option>: Use this switch if
+      <application>PCRE</application> is installed.
 @z
 
 @x
-    <para><command>mv /usr/share/doc/git-&git-version; ...</command>: These
-    commands move some of the files into subfolders to make it easier to sort
-    through the docs and find what you're looking for.</para>
+      <command>tar -xf ../git-manpages-&git-version;.tar.gz -C
+      /usr/share/man --no-same-owner</command>: This untars
+      <filename>git-manpages-&git-version;.tar.gz</filename>. The
+      <option>-C</option> option makes tar change directory to
+      <filename class="directory">/usr/share/man</filename> before
+      it starts to decompress the docs. The <option>--no-same-owner</option>
+      option stops tar from preserving the user and group details of the
+      files. This is useful as that user or group may not exist on your
+      system; this could (potentially) be a security risk.
 @y
-    <para><command>mv /usr/share/doc/git-&git-version; ...</command>: These
-    commands move some of the files into subfolders to make it easier to sort
-    through the docs and find what you're looking for.</para>
+      <command>tar -xf ../git-manpages-&git-version;.tar.gz -C
+      /usr/share/man --no-same-owner</command>: This untars
+      <filename>git-manpages-&git-version;.tar.gz</filename>. The
+      <option>-C</option> option makes tar change directory to
+      <filename class="directory">/usr/share/man</filename> before
+      it starts to decompress the docs. The <option>--no-same-owner</option>
+      option stops tar from preserving the user and group details of the
+      files. This is useful as that user or group may not exist on your
+      system; this could (potentially) be a security risk.
+@z
+
+@x
+      <command>mv /usr/share/doc/git-&git-version; ...</command>: These
+      commands move some of the files into subfolders to make it easier to sort
+      through the docs and find what you're looking for.
+@y
+      <command>mv /usr/share/doc/git-&git-version; ...</command>: These
+      commands move some of the files into subfolders to make it easier to sort
+      through the docs and find what you're looking for.
 @z
 
 @x
@@ -331,12 +318,16 @@
 
 @x
       <title>Config Files</title>
-      <para><filename>~/.gitconfig</filename> and
-      <filename>/etc/gitconfig</filename></para>
 @y
       <title>&ConfigFiles;</title>
-      <para><filename>~/.gitconfig</filename>,
-      <filename>/etc/gitconfig</filename></para>
+@z
+
+@x
+        <filename>~/.gitconfig</filename> and
+        <filename>/etc/gitconfig</filename>
+@y
+        <filename>~/.gitconfig</filename>,
+        <filename>/etc/gitconfig</filename>
 @z
 
 @x
@@ -346,24 +337,22 @@
 @z
 
 @x
-      <para>If you want to use <command>git svn</command> you will need to
-      install <xref linkend="subversion"/> and its Perl bindings.</para>
+        If you want to use <command>git svn</command> you will need to
+        install <xref linkend="subversion"/> and its Perl bindings.
 @y
-      <para>
-      <command>git svn</command> コマンドを利用したい場合は、<xref linkend="subversion"/> とその Perl バインディングをインストールする必要があります。
-      </para>
+        <command>git svn</command> コマンドを利用したい場合は、<xref linkend="subversion"/> とその Perl バインディングをインストールする必要があります。
 @z
 
 @x
-      <para>To be able to use git to pull from a https source you need first
-      install the <xref linkend="cacerts"/> and then configure git to know where
-      they are. To set the default location of the SSL certificates, as the
-      <systemitem class="username">root</systemitem> user:</para>
+        To be able to use git to pull from a https source you need first install
+        the <xref linkend="cacerts"/> and then configure git to know where they
+        are. To set the default location of the SSL certificates, as the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para>To be able to use git to pull from a https source you need first
-      install the <xref linkend="cacerts"/> and then configure git to know where
-      they are. To set the default location of the SSL certificates, as the
-      <systemitem class="username">root</systemitem> user:</para>
+        To be able to use git to pull from a https source you need first install
+        the <xref linkend="cacerts"/> and then configure git to know where they
+        are. To set the default location of the SSL certificates, as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -383,19 +372,37 @@
 @z
 
 @x
-        <seg>git, git-cvsserver, gitk, git-receive-pack, git-shell,
-        git-upload-archive and git-upload-pack</seg>
-        <seg>None</seg>
-        <seg>/usr/libexec/git-core, /usr/share/git-&git-version;,
-        /usr/share/git-core, /usr/share/git-gui, /usr/share/gitk and
-        /usr/share/gitweb</seg>
+        <seg>
+          git, git-cvsserver, gitk, git-receive-pack, git-shell,
+          git-upload-archive and git-upload-pack
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          /usr/lib/git-core,
+          /usr/share/doc/git-&git-version;,
+          /usr/share/git-core,
+          /usr/share/git-gui,
+          /usr/share/gitk and
+          /usr/share/gitweb
+        </seg>
 @y
-        <seg>git, git-cvsserver, gitk, git-receive-pack, git-shell,
-        git-upload-archive, git-upload-pack</seg>
-        <seg>&None;</seg>
-        <seg>/usr/libexec/git-core, /usr/share/git-&git-version;,
-        /usr/share/git-core, /usr/share/git-gui, /usr/share/gitk,
-        /usr/share/gitweb</seg>
+        <seg>
+          git, git-cvsserver, gitk, git-receive-pack, git-shell,
+          git-upload-archive, git-upload-pack
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          /usr/lib/git-core,
+          /usr/share/doc/git-&git-version;,
+          /usr/share/git-core,
+          /usr/share/git-gui,
+          /usr/share/gitk,
+          /usr/share/gitweb
+        </seg>
 @z
 
 @x
@@ -405,54 +412,54 @@
 @z
 
 @x git
-          <para>is the stupid content tracker.</para>
+            is the stupid content tracker.
 @y
-          <para>is the stupid content tracker.</para>
+            is the stupid content tracker.
 @z
 
 @x git-cvsserver
-          <para>is a CVS server emulator for git.</para>
+            is a CVS server emulator for <application>Git</application>.
 @y
-          <para>is a CVS server emulator for git.</para>
+            is a CVS server emulator for <application>Git</application>.
 @z
 
 @x gitk
-          <para>is a git repository browser (needs <xref linkend="tk"/>).</para>
+            is a graphical <application>Git</application> repository browser
+            (needs <xref linkend="tk"/>).
 @y
-          <para>
-          git リポジトリブラウザー (<xref linkend="tk"/> が必要)</para>
+            <application>Git</application> リポジトリブラウザー (<xref linkend="tk"/> が必要)
 @z
 
 @x git-receive-pack
-          <para>is invoked by <command>git send-pack</command> and updates the
-          repository with the information fed from the remote end.</para>
+            is invoked by <command>git send-pack</command> and updates the
+            repository with the information fed from the remote end.
 @y
-          <para>is invoked by <command>git send-pack</command> and updates the
-          repository with the information fed from the remote end.</para>
+            is invoked by <command>git send-pack</command> and updates the
+            repository with the information fed from the remote end.
 @z
 
 @x git-shell
-          <para>is a login shell for SSH accounts to provide restricted Git
-          access.</para>
+            is a login shell for SSH accounts to provide restricted Git
+            access.
 @y
-          <para>is a login shell for SSH accounts to provide restricted Git
-          access.</para>
+            is a login shell for SSH accounts to provide restricted Git
+            access.
 @z
 
 @x git-upload-archive
-          <para>is invoked by <command>git archive --remote</command> and sends
-          a generated archive to the other end over the git protocol.</para>
+            is invoked by <command>git archive --remote</command> and sends
+            a generated archive to the other end over the git protocol.
 @y
-          <para>is invoked by <command>git archive --remote</command> and sends
-          a generated archive to the other end over the git protocol.</para>
+            is invoked by <command>git archive --remote</command> and sends
+            a generated archive to the other end over the git protocol.
 @z
 
 @x git-upload-pack
-          <para>is invoked by <command>git fetch-pack</command>, it discovers
-          what objects the other side is missing, and sends them after
-          packing.</para>
+            is invoked by <command>git fetch-pack</command>, it discovers
+            what objects the other side is missing, and sends them after
+            packing.
 @y
-          <para>is invoked by <command>git fetch-pack</command>, it discovers
-          what objects the other side is missing, and sends them after
-          packing.</para>
+            is invoked by <command>git fetch-pack</command>, it discovers
+            what objects the other side is missing, and sends them after
+            packing.
 @z

@@ -192,7 +192,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -207,7 +207,6 @@
           libtirpc.{so,a}
         </seg>
         <seg>
-          /etc/netconfig and
           /usr/include/libtirpc
         </seg>
 @y
@@ -218,7 +217,6 @@
           libtirpc.{so,a}
         </seg>
         <seg>
-          /etc/netconfig,
           /usr/include/libtirpc
         </seg>
 @z

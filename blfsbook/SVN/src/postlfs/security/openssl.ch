@@ -95,15 +95,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="mitkrb"/> and
       <xref linkend="bc"/> (required for full coverage by the test suite during
-      the build)
+      the build) and
+      <xref linkend="mitkrb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="mitkrb"/>,
-      <xref linkend="bc"/> (ビルド時にテストスイートすべてを実行する場合に必要。)
+      <xref linkend="bc"/> (ビルド時にテストスイートすべてを実行する場合に必要。),
+      <xref linkend="mitkrb"/>
     </para>
 @z
 
@@ -248,30 +248,30 @@
 @z
 
 @x
-        <seg>c_rehash and openssl.</seg>
         <seg>
-          libcrypto.{so,a}, libssl.{so,a}, and additional encryption
-          libraries in /usr/lib/engines/ (lib4758cca.so, libaep.so,
-          libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so,
-          libgost.so, libnuron.so, libpadlock.so, libsureware.so, and
-          libubsec.so).
+          c_rehash and openssl
         </seg>
         <seg>
-          /etc/ssl, /usr/include/openssl, /usr/lib/engines and
-          /usr/share/doc/openssl-&openssl-version;.
+          libcrypto.{so,a} and libssl.{so,a}
+        </seg>
+        <seg>
+          /etc/ssl,
+          /usr/include/openssl,
+          /usr/lib/engines and
+          /usr/share/doc/openssl-&openssl-version;
         </seg>
 @y
-        <seg>c_rehash, openssl</seg>
         <seg>
-          libcrypto.{so,a}, libssl.{so,a},
-          /usr/lib/engines/ にインストールされるその他の暗号化ライブラリ (lib4758cca.so, libaep.so,
-          libatalla.so, libcapi.so, libchil.so, libcswift.so, libgmp.so,
-          libgost.so, libnuron.so, libpadlock.so, libsureware.so,
-          libubsec.so).
+          c_rehash, openssl
         </seg>
         <seg>
-          /etc/ssl, /usr/include/openssl, /usr/lib/engines,
-          /usr/share/doc/openssl-&openssl-version;.
+          libcrypto.{so,a}, libssl.{so,a}
+        </seg>
+        <seg>
+          /etc/ssl,
+          /usr/include/openssl,
+          /usr/lib/engines,
+          /usr/share/doc/openssl-&openssl-version;
         </seg>
 @z
 
