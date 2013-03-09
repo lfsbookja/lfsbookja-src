@@ -105,10 +105,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libdbusmenu-qt"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libdbusmenu-qt"/></para>
 @z
 
 @x
@@ -123,6 +121,17 @@
 @y
     <para>
     以下のコマンドを実行して <application>libdbusmenu-qt</application> をビルドします。
+    </para>
+@z
+
+@x
+    <para>To test the results
+    (<ulink url="http://qjson.sourceforge.net/">QJson</ulink> must be installed),
+    issue: <command>make check</command>.</para>
+@y
+    <para>
+    ビルド結果をテストする場合 (その場合は <ulink
+    url="http://qjson.sourceforge.net/">QJson</ulink> のインストールが必要であり)、<command>make check</command> を実行します。
     </para>
 @z
 

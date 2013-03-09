@@ -75,6 +75,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="cacerts"/> and
+      <xref linkend="libtasn1"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="cacerts"/>,
+      <xref linkend="libtasn1"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
@@ -123,6 +137,15 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--enable-doc</option>: Use this switch if you have installed
+      <xref linkend="gtk-doc"/> and <xref linkend="libxslt"/> and wish to
+      rebuild the documentation and generate manual pages.
+@y
+      <option>--enable-doc</option>: 
+      <xref linkend="gtk-doc"/> と <xref linkend="libxslt"/> をインストールしていて、ドキュメントを再生成したり man ページを生成したいときに、本スイッチを指定します。
 @z
 
 @x
@@ -175,6 +198,13 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x p11-kit
+            is a command line tool that can be used to perform operations
+             on PKCS#11 modules configured on the system.
+@y
+            システム内に導入されている PKCS#11 モジュールを制御するためのコマンドラインツール。
 @z
 
 @x libp11-kit.so

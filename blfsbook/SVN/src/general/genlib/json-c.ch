@@ -115,6 +115,14 @@
 @z
 
 @x
+      <command>sed -e 's/json_object...</command>: This <command>sed</command>
+      make sure that all the necessary headers are installed correctly.
+@y
+      <command>sed -e 's/json_object...</command>:
+      この <command>sed</command> コマンドは、必要なヘッダーファイルを正しくインストールするようにします。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

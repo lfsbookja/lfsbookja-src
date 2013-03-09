@@ -96,10 +96,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/qca"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/qca"/></para>
 @z
 
 @x
@@ -114,6 +112,14 @@
 @y
     <para>
     以下のコマンドを実行して <application>Qca</application> をビルドします。
+    </para>
+@z
+
+@x
+    <para>To test the results, issue <command>make test</command>.</para>
+@y
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
     </para>
 @z
 
@@ -139,6 +145,16 @@
     <para><command>sed -i '217s@set@...</command>:
     この sed コマンドは <application>GCC</application> 4.7.x を用いてコンパイルできるようにするものです。
     <application>GCC</application> の古いバージョンを使ってコンパイルする場合には、このコマンド実行を省略するのが無難です。
+    </para>
+@z
+
+@x
+    <para><parameter>--certstore-path=/etc/ssl/ca-bundle.crt</parameter>: Causes
+    the build to use the system-installed CA Certificates instead of a bundled
+    copy.</para>
+@y
+    <para><parameter>--certstore-path=/etc/ssl/ca-bundle.crt</parameter>:
+    本パッケージのビルドにおいて、バンドルされている電子証明書データを用いず、システムにインストールされたものを用いるようにします。
     </para>
 @z
 

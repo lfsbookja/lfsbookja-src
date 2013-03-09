@@ -84,6 +84,30 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">libffi Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;libffi&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="dejagnu"/> (required to run the testsuite)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="dejagnu"/> (テストスイート実行に必要)
+    </para>
+@z
+
+@x
+      User Notes: <ulink url="&blfs-wiki;/libffi"/>
+@y
+      &UserNotes;: <ulink url="&blfs-wiki;/libffi"/>
+@z
+
+@x
     <title>Installation of libffi</title>
 @y
     <title>&InstallationOf1;libffi&InstallationOf2;</title>
@@ -106,6 +130,12 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
 @z
 
 @x

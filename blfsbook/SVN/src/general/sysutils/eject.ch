@@ -29,10 +29,20 @@
     <para>The <application>Eject</application> package is a program for ejecting
     removable media under software control.</para>
 @y
-<para>
-<application>Eject</application>
-パッケージは、ソフトウェアからの制御によりリムーバブルメディアのイジェクトを行うプログラムを提供します。
-</para>
+    <para>
+    <application>Eject</application> パッケージは、ソフトウェアからの制御によりリムーバブルメディアのイジェクトを行うプログラムを提供します。
+    </para>
+@z
+
+@x
+    <note><para>Starting with util-linux-2.22, the <command>eject</command>
+    program has been incorporated into that package.  If you have installed
+    util-linux-2.22 or later, this package is not needed.</para></note>
+@y
+    <note><para>
+    <command>eject</command> プログラムは util-linux-2.22 に含まれるようになりました。
+    util-linux-2.22 以降をインストールしていれば、本パッケージは不要です。
+    </para></note>
 @z
 
 @x

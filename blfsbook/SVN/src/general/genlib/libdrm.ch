@@ -144,6 +144,16 @@
 @z
 
 @x
+      <command>sed -e "/pthread-stubs/d" -i configure.ac</command>:
+      This sed removes dependency on libpthread-stubs package
+      which is useless on Linux.
+@y
+      <command>sed -e "/pthread-stubs/d" -i configure.ac</command>:
+      この sed コマンドは libpthread-stubs パッケージへの依存箇所を取り除くものです。
+      libpthread-stubs は Linux においては無用なものです。
+@z
+
+@x
       <option>--enable-omap-experimental-api</option>: This option
       enables use of OMAP's experimental kernel API. OMAP is a series
       of system-on-chips (SoCs) developed by Texas Instruments.
@@ -151,6 +161,16 @@
       <option>--enable-omap-experimental-api</option>:
       このオプションは OMAP の実験的なカーネル API を有効にすることを指示します。
       OMAP はテキサスインスツルメンツ社 (Texax Instruments) によって開発された、一連のシステムオンチップ (SoC) の一つです。
+@z
+
+@x
+      <option>--enable-exynos-experimental-api</option>: This option
+      enables use of Exynos experimental kernel API. Exynos is a
+      series  of system-on-chips (SoCs) developed by Samsung.
+@y
+      <option>--enable-exynos-experimental-api</option>:
+      本オプションは、Exynos の実験的なカーネル API を利用することを指示します。
+      Exynos は Samsung 社により開発されている一連のシステムオンチップ (SoC) です。
 @z
 
 @x

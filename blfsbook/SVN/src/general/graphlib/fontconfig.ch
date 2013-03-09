@@ -182,9 +182,9 @@
       documentation (the release tarball includes pre-generated
       documentation).
 @y
-      <option>--disable-docs</option>: This switch avoids building the
-      documentation (the release tarball includes pre-generated
-      documentation).
+      <option>--disable-docs</option>: 
+      本スイッチはドキュメントの再生成を行わないようにします。
+      (リリース tarball には事前生成済みのドキュメントが含まれています。)
 @z
 
 @x
@@ -339,7 +339,7 @@
 @x fc-query
             is used to query fonts files and print resulting patterns.
 @y
-            is used to query fonts files and print resulting patterns.
+            フォントファイルを検索し結果を出力します。
 @z
 
 @x fc-scan
@@ -354,7 +354,6 @@
             programs and also by other programs to configure or customize font
             access.
 @y
-            contains functions used by the <application>Fontconfig</application>
-            programs and also by other programs to configure or customize font
-            access.
+            フォントへのアクセスを行ったり設定したりするための関数を提供します。
+            これは <application>Fontconfig</application> やその他のプログラムからも利用されます。
 @z

@@ -164,9 +164,11 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -176,12 +178,18 @@
         <seg>
           libpwquality.so and pam_pwquality.so
         </seg>
+        <seg>
+          None
+        </seg>
 @y
         <seg>
           pwmake, pwscore
         </seg>
         <seg>
           libpwquality.so, pam_pwquality.so
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 
