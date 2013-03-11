@@ -112,39 +112,39 @@
 @z
 
 @x
-          Clang Download (HTTP): <ulink url="&clang-download-http;"/>
+          Clang: <ulink url="&clang-download-http;"/>
 @y
-          Clang Download (HTTP): <ulink url="&clang-download-http;"/>
+          Clang: <ulink url="&clang-download-http;"/>
 @z
 
 @x
-          Clang Download MD5 sum: &clang-md5sum;
+          Clang MD5 sum: &clang-md5sum;
 @y
-          Clang Download MD5 sum: &clang-md5sum;
+          Clang MD5 sum: &clang-md5sum;
 @z
 
 @x
-          Clang Download size: &clang-size;
+          Clang size: &clang-size;
 @y
-          Clang Download size: &clang-size;
+          Clang size: &clang-size;
 @z
 
 @x
-          Compiler RT Download (HTTP): <ulink url="&compiler-rt-download-http;"/>
+          Compiler RT: <ulink url="&compiler-rt-download-http;"/>
 @y
-          Compiler RT Download (HTTP): <ulink url="&compiler-rt-download-http;"/>
+          Compiler RT: <ulink url="&compiler-rt-download-http;"/>
 @z
 
 @x
-          Compiler RT Download MD5 sum: &compiler-rt-md5sum;
+          Compiler RT MD5 sum: &compiler-rt-md5sum;
 @y
-          Compiler RT Download MD5 sum: &compiler-rt-md5sum;
+          Compiler RT MD5 sum: &compiler-rt-md5sum;
 @z
 
 @x
-          Compiler RT Download size: &compiler-rt-size;
+          Compiler RT size: &compiler-rt-size;
 @y
-          Compiler RT Download size: &compiler-rt-size;
+          Compiler RT size: &compiler-rt-size;
 @z
 
 @x

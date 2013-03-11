@@ -82,7 +82,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>,
     <xref linkend="shared-mime-info"/>,
     <xref linkend="boost"/>,
     <xref linkend="soprano"/>, and one of:
@@ -93,7 +92,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>,
     <xref linkend="shared-mime-info"/>,
     <xref linkend="boost"/>,
     <xref linkend="soprano"/>, と以下のいずれか:

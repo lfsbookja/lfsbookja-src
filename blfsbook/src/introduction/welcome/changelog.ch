@@ -47,7 +47,7 @@
       <para>2013/03/08</para>
 @z
 @x
-          <para>[bdubbs] - Update to hdparm-9.43.  Fixes
+          <para>[bdubbs] - Update to hdparm-9.43. Fixes
           <ulink url="&blfs-ticket-root;3654">#3654</ulink>.</para>
 @y
           <para>[bdubbs] - hdparm-9.43 へのアップデート。
@@ -64,7 +64,7 @@
           <ulink url="&blfs-ticket-root;3823">#3823</ulink> を Fix に。</para>
 @z
 @x
-          <para>[bdubbs] - Update to Subversion-1.7.8.  Fixes
+          <para>[bdubbs] - Update to Subversion-1.7.8. Fixes
           <ulink url="&blfs-ticket-root;3827">#3827</ulink>.</para>
 @y
           <para>[bdubbs] - Subversion-1.7.8 へのアップデート。
