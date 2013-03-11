@@ -134,11 +134,11 @@
 @z
 
 @x
-        <seg>tclsh (link to tclsh8.5) and tclsh8.5</seg>
-        <seg>libtcl8.5.so, libtclstub8.5.a</seg>
+        <seg>tclsh (link to tclsh&tcl-major-version;) and tclsh&tcl-major-version;</seg>
+        <seg>libtcl&tcl-major-version;.so, libtclstub&tcl-major-version;.a</seg>
 @y
-        <seg>tclsh (tclsh8.5 へのリンク), tclsh8.5</seg>
-        <seg>libtcl8.5.so, libtclstub8.5.a</seg>
+        <seg>tclsh (tclsh&tcl-major-version; へのリンク), tclsh&tcl-major-version;</seg>
+        <seg>libtcl&tcl-major-version;.so, libtclstub&tcl-major-version;.a</seg>
 @z
 
 @x
@@ -154,9 +154,9 @@
 @z
 
 @x tclsh
-          <para>A link to tclsh8.5</para>
+          <para>A link to tclsh&tcl-major-version;</para>
 @y
-          <para>tclsh8.5 へのリンク</para>
+          <para>tclsh&tcl-major-version; へのリンク</para>
 @z
 
 @x libtcl8.5.so
