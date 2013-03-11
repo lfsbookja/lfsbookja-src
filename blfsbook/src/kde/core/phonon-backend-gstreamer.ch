@@ -158,9 +158,11 @@
 @x
         <seg>none</seg>
         <seg>phonon_gstreamer.so</seg>
-        <seg>none</seg>
+        <seg>&kde-dir;/lib/kde4/plugins/phonon_backend and 
+        &kde-dir;/share/kde4/services/phononbackends</seg>
 @y
         <seg>&None;</seg>
         <seg>phonon_gstreamer.so</seg>
-        <seg>&None;</seg>
+        <seg>&kde-dir;/lib/kde4/plugins/phonon_backend,
+        &kde-dir;/share/kde4/services/phononbackends</seg>
 @z

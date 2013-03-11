@@ -185,17 +185,11 @@
 @z
 
 @x
-      <parameter>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</parameter>:
-      Installs the <application>KDE</application> <application>Python</application>
-      objects in the standard location. This parameter can be removed and
-      instead replaced with an update to the <envar>PYTHONPATH</envar>
-      environment variable in the system or user's profile.
+    <para><option>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</option>: This option is
+    set to install the KDE Python objects in the correct place.</para>
 @y
-      <parameter>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</parameter>:
-      Installs the <application>KDE</application> <application>Python</application>
-      objects in the standard location. This parameter can be removed and
-      instead replaced with an update to the <envar>PYTHONPATH</envar>
-      environment variable in the system or user's profile.
+    <para><option>-DINSTALL_PYTHON_FILES_IN_PYTHON_PREFIX=TRUE</option>: This option is
+    set to install the KDE Python objects in the correct place.</para>
 @z
 
 @x
