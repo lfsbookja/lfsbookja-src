@@ -42,6 +42,57 @@
 @z
 
 @x
+      <para>March 13th, 2013</para>
+@y
+      <para>2013/03/13</para>
+@z
+@x
+          <para>[bdubbs] - Update to php-5.4.11. Fixes
+          <ulink url="&blfs-ticket-root;3694">#3694</ulink>.</para>
+@y
+          <para>[bdubbs] - php-5.4.11 へのアップデート。
+          <ulink url="&blfs-ticket-root;3694">#3694</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 10th, 2013</para>
+@y
+      <para>2013/03/10</para>
+@z
+@x
+          <para>[bdubbs] - Added patch to bridge-utils caused
+          by linux-3.8 include file change.</para>
+@y
+          <para>[bdubbs] - bridge-utils にてパッチ追加。
+          linux-3.8 でのインクルードファイル変更による。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gptfdisk-0.8.6.</para>
+@y
+          <para>[bdubbs] - gptfdisk-0.8.6 へのアップデート。</para>
+@z
+@x
+          <para>[rthomsen] - Phonon-backend-vlc 0.6.2. Fixes
+          <ulink url="&blfs-ticket-root;3784">#3784</ulink>.</para>
+@y
+          <para>[rthomsen] - Phonon-backend-vlc 0.6.2. 
+          <ulink url="&blfs-ticket-root;3784">#3784</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 9th, 2013</para>
+@y
+      <para>2013/03/09</para>
+@z
+@x
+          <para>[bdubbs] - Update to Lynx-2.8.8dev.15. Fixes
+          <ulink url="&blfs-ticket-root;3655">#3655</ulink>.</para>
+@y
+          <para>[bdubbs] - Lynx-2.8.8dev.15 へのアップデート。
+          <ulink url="&blfs-ticket-root;3655">#3655</ulink> を Fix に。</para>
+@z
+
+@x
       <para>March 8th, 2013</para>
 @y
       <para>2013/03/08</para>
