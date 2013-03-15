@@ -26,7 +26,7 @@
 @y
   <para>
   この章では、設定ファイルやブートスクリプトについて説明します。
-  まずはネットワークの設定に必要となる全般的な設定ファイルについて説明します。
+  まずはネットワークの設定に必要となる全般的な設定ファイルに2ついて説明します。
   </para>
 @z
 
@@ -47,7 +47,8 @@
 @z
 
 @x
-  <para>Second, issues that affect the proper setup of devices diescussed.</para>
+  <para>Second, issues that affect the proper setup of devices are
+  discussed.</para>
 @y
   <para>
   次にデバイス設定を適切に行う方法について説明します。

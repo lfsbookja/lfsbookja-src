@@ -48,6 +48,75 @@
 @z
 
 @x
+      <para>2013-03-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Fix a build issue with Check-0.9.9 on some hosts by
+          adding the &quot;sysroot&quot; feature to Binutils. Thanks to Billy
+          O'Connor, Yaacov-Yoseph Weiss and Pierre Labastie for the reports, and
+          to Pierre again for the fix.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Perl-5.16.3. Fixes
+          <ulink url="&lfs-ticket-root;3303">#3303</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bash-4.2.45. Fixes
+          <ulink url="&lfs-ticket-root;3301">#3301</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Systemd-198. Fixes
+          <ulink url="&lfs-ticket-root;3300">#3300</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.48. Fixes
+          <ulink url="&lfs-ticket-root;3299">#3299</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.2. Fixes
+          <ulink url="&lfs-ticket-root;3297">#3297</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tzdata-2013b. Fixes
+          <ulink url="&lfs-ticket-root;3296">#3296</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Binutils に対して &quot;sysroot&quot; 機能を付与されたホストにて、Check-0.9.9 が正常ビルドできない問題へ対処。
+          報告をあげてくれた Billy O'Connor, Yaacov-Yoseph Weiss, Pierre Labastie に感謝。
+          また再修正をあげてくれた Pierre に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Perl-5.16.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3303">#3303</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bash-4.2.45 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3301">#3301</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Systemd-198 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3300">#3300</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.48 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3299">#3299</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3297">#3297</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2013b へのアップグレード。
+          <ulink url="&lfs-ticket-root;3296">#3296</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-03</para>
       <itemizedlist>
         <listitem>

@@ -57,7 +57,7 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
-@x
+@x CC=$LFS_TGT-gcc AR=$LFS_TGT-ar RANLIB=$LFS_TGT-ranlib
           <para>Because this is really a native build of Binutils, setting these
           variables ensures that the build system uses the cross-compiler and
           associated tools instead of the ones on the host system.</para>
@@ -67,7 +67,7 @@
           </para>
 @z
 
-@x
+@x --with-lib-path=/tools/lib
           <para>This tells the configure script to specify the library
           search path during the compilation of Binutils, resulting in
           <filename class="directory">/tools/lib</filename> being passed
@@ -78,6 +78,19 @@
           configure スクリプトに対して Binutils のコンパイル中でのライブラリパスを指定します。
           リンカーに対して <filename class="directory">/tools/lib</filename> ディレクトリを指定するものです。
           こうすることでリンカーがホスト上のライブラリを検索しないようにします。
+          </para>
+@z
+
+@x --with-sysroot
+          <para>The sysroot feature enables the linker to find shared objects
+          which are required by other shared objects explicitly included on the
+          linker's command line. Without this, some packages may not build
+          successfully on some hosts.</para>
+@y
+          <para>
+          sysroot 機能は、特定の共有オブジェクトを必要とする他の共有オブジェクトを、リンカーが見つけ出せるようにする機能です。
+          その場合には明示的にリンカーのコマンドラインにて、共有オブジェクトを指定する必要があります。
+          コマンドラインでのその指定がない場合には、特定のホストにてパッケージビルドに失敗するものが出てきます。
           </para>
 @z
 
