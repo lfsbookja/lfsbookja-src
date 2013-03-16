@@ -165,6 +165,18 @@
 @z
 
 @x
+        The instructions below assume that <application>LLVM</application>
+        is installed. You will need to modify the instructions if you
+        choose not to install it. Please note that
+        <application>LLVM</application> is <emphasis>required</emphasis> for
+        Radeon 3D drivers.
+@y
+        これ以降の手順は <application>LLVM</application> がインストールされていることを前提とします。
+        <application>LLVM</application> をインストールしていない場合には、実行手順を変える必要があります。
+        特に Radeon 3D ドライバーを利用する場合には <application>LLVM</application> が<emphasis>必須</emphasis>です。
+@z
+
+@x
         The <application>libxml2</application>
         <application>Python</application> module must have been built
         during the installation of <application>libxml2</application>
@@ -369,6 +381,13 @@
             graphics hardware and installed GL libraries.
 @y
             グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
+@z
+
+@x libdricore9.1.0.so
+            contains common DRI routines used by <application>Mesa</application>
+            DRI drivers.
+@y
+            <application>Mesa</application> DRI ドライバーによって利用されている共通 DRI ルーチンを提供します。
 @z
 
 @x libEGL.so

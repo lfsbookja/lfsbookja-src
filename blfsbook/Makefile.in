@@ -53,7 +53,8 @@ DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog \
 	$(top_srcdir)/configure $(am__configure_deps) COPYING depcomp \
 	install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/progs.m4 \
+am__aclocal_m4_deps = $(top_srcdir)/version.ac \
+	$(top_srcdir)/m4/progs.m4 \
 	$(top_srcdir)/m4/ax_compare_version.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
@@ -213,6 +214,7 @@ PDF = @PDF@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
+SVNVER = @SVNVER@
 TIDY = @TIDY@
 TXT = @TXT@
 VERSION = @VERSION@
@@ -263,6 +265,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = ctie src
+EXTRA_DIST = version.ac
 all: all-recursive
 
 .SUFFIXES:

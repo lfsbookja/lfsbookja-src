@@ -175,6 +175,14 @@
 @z
 
 @x
+    <para>Finally, exit the shell that was started earlier:</para>
+@y
+    <para>
+    上で実行したサブシェルから抜けます。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

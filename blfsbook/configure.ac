@@ -8,6 +8,8 @@
 # $Date:: 2012-02-26 00:38:21 +0900#$
 #
 
+m4_include([version.ac])[] dnl define blfs_version
+
 AC_PREREQ([2.63])
 AC_INIT([BLFSbookja], [svn], [matsuand AT users DOT sourceforge DOT jp])
 AM_INIT_AUTOMAKE
@@ -39,6 +41,22 @@ AC_PROG_TIDY
 AC_PROG_LYNX
 AC_PROG_FOP
 AC_CHECK_IPAFONTDIR
+
+TARGETVER=blfs_version()
+
+ORGDAY=`grep 'ENTITY day' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[[^\"]]*\"\([[0-9]]*\)\".*$/\1/'`
+ORGMONTH=`grep 'ENTITY month' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[[^\"]]*\"\([[0-9]]*\)\".*$/\1/'`
+ORGYEAR=`grep 'ENTITY year' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[[^\"]]*\"\([[0-9]]*\)\".*$/\1/'`
+
+SVNVER=$ORGYEAR$ORGMONTH$ORGDAY
+AC_MSG_CHECKING([for the original XML version])
+if test ! "$SVNVER" = "$TARGETVER"; then
+  AC_MSG_RESULT([$SVNVER])
+  AC_MSG_WARN([Version of the original XML not $TARGETVER])
+else
+  AC_MSG_RESULT([$SVNVER])
+fi
+AC_SUBST(SVNVER)
 
 AC_CONFIG_FILES([Makefile
 		 ctie/Makefile

@@ -196,7 +196,7 @@
     <para>Finally, exit the shell that was started earlier:</para>
 @y
     <para>
-    最後は、起動していたサブシェルを終了します。
+    上で実行したサブシェルから抜けます。
     </para>
 @z
 

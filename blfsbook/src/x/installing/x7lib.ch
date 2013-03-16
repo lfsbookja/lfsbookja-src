@@ -180,7 +180,7 @@
     <para>Finally, exit the shell that was started earlier:</para>
 @y
     <para>
-    はじめに起動していたサブシェルを終了します。
+    上で実行したサブシェルから抜けます。
     </para>
 @z
 
