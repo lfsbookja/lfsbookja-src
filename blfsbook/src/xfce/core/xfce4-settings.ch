@@ -90,14 +90,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
       <xref linkend="libnotify"/> and
       <xref linkend="libxklavier"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="libnotify"/>,
       <xref linkend="libxklavier"/>
     </para>
@@ -201,10 +201,10 @@
 @z
 
 @x xfce4-accessibility-settings
-            is a <application>Gtk 2</application> GUI to allow you to change
+            is a <application>GTK+ 2</application> GUI to allow you to change
             some of your keyboard and mouse preferences.
 @y
-            is a <application>Gtk 2</application> GUI to allow you to change
+            is a <application>GTK+ 2</application> GUI to allow you to change
             some of your keyboard and mouse preferences.
 @z
 

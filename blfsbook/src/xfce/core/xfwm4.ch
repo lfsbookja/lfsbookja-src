@@ -79,7 +79,7 @@
     <para role="required">
       <xref linkend="libwnck2"/>,
       <xref linkend="libxfce4ui"/> and
-      <xref linkend="libxfce4util"/>.
+      <xref linkend="libxfce4util"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -91,13 +91,13 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="startup-notification"/>.
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="startup-notification"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="startup-notification"/>
     </para>
 @z
@@ -198,27 +198,27 @@
 @z
 
 @x xfwm4-settings
-            is a <application>Gtk 2</application> application that allows you to
+            is a <application>GTK+ 2</application> application that allows you to
             set some preferences such as your theme, keyboard shortcuts and
             mouse focus behaviour.
 @y
-            is a <application>Gtk 2</application> application that allows you to
+            is a <application>GTK+ 2</application> application that allows you to
             set some preferences such as your theme, keyboard shortcuts and
             mouse focus behaviour.
 @z
 
 @x xfwm4-tweaks-settings
-            is a <application>Gtk 2</application> application that allows you to
+            is a <application>GTK+ 2</application> application that allows you to
             set some more preferences for <application>Xfwm4</application>.
 @y
-            is a <application>Gtk 2</application> application that allows you to
+            is a <application>GTK+ 2</application> application that allows you to
             set some more preferences for <application>Xfwm4</application>.
 @z
 
 @x xfwm4-workspace-settings
-            is a <application>Gtk 2</application> application that allows you to
+            is a <application>GTK+ 2</application> application that allows you to
             set your workspace preferences.
 @y
-            is a <application>Gtk 2</application> application that allows you to
+            is a <application>GTK+ 2</application> application that allows you to
             set your workspace preferences.
 @z

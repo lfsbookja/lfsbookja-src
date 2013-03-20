@@ -14,18 +14,18 @@
 @z
 
 @x
-    <title>Introduction to LibXfce4UI</title>
+    <title>Introduction to libxfce4ui</title>
 @y
-    <title>&IntroductionTo1;LibXfce4UI&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libxfce4ui&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>LibXfce4UI</application> package contains
-      <application>Gtk 2</application> widgets that are used by other
+      The <application>libxfce4ui</application> package contains
+      <application>GTK+ 2</application> widgets that are used by other
       <application>Xfce</application> applications.
 @y
-      The <application>LibXfce4UI</application> package contains
-      <application>Gtk 2</application> widgets that are used by other
+      The <application>libxfce4ui</application> package contains
+      <application>GTK+ 2</application> widgets that are used by other
       <application>Xfce</application> applications.
 @z
 
@@ -72,9 +72,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">LibXfce4UI Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libxfce4ui Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;LibXfce4UI&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libxfce4ui&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -92,16 +92,26 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="startup-notification"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="startup-notification"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="startup-notification"/>.
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="startup-notification"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 
@@ -112,16 +122,16 @@
 @z
 
 @x
-    <title>Installation of LibXfce4UI</title>
+    <title>Installation of libxfce4ui</title>
 @y
-    <title>&InstallationOf1;LibXfce4UI&InstallationOf2;</title>
+    <title>&InstallationOf1;libxfce4ui&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>LibXfce4UI</application> by running the following
+      Install <application>libxfce4ui</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>LibXfce4UI</application> をビルドします。
+      以下のコマンドを実行して <application>libxfce4ui</application> をビルドします。
 @z
 
 @x
@@ -163,20 +173,20 @@
           None
         </seg>
         <seg>
-          libxfce4kbd-private-2.so and libxfce4ui-1.so.
+          libxfce4kbd-private-2.so and libxfce4ui-1.so
         </seg>
         <seg>
           /etc/xdg/xfce4,
           /usr/include/xfce4/libxfce4kbd-private-2,
           /usr/include/xfce4/libxfce4ui-1 and
-          /usr/share/gtk-doc/html/libxfce4ui.
+          /usr/share/gtk-doc/html/libxfce4ui
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libxfce4kbd-private-2.so, libxfce4ui-1.so.
+          libxfce4kbd-private-2.so, libxfce4ui-1.so
         </seg>
         <seg>
           /etc/xdg/xfce4,
@@ -195,11 +205,11 @@
 @x libxfce4kbd-private-2.so
             is a private <application>Xfce</application> library for sharing
             code between <application>Xfwm4</application> and
-            <application>Xfce4-Settings</application>. 
+            <application>Xfce4 Settings</application>.
 @y
             is a private <application>Xfce</application> library for sharing
             code between <application>Xfwm4</application> and
-            <application>Xfce4-Settings</application>. 
+            <application>Xfce4 Settings</application>.
 @z
 
 @x libxfce4ui-1.so

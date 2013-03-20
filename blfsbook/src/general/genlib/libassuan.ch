@@ -20,31 +20,31 @@
 @z
 
 @x
-    <title>Introduction to Libassuan</title>
+    <title>Introduction to libassuan</title>
 @y
-    <title>&IntroductionTo1;Libassuan&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libassuan&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>Libassuan</application> package contains an inter
-    process communication library used by some of the other
-    <application>GnuPG</application> related packages.
-    <application>Libassuan</application>'s primary use is to allow a client to
-    interact with a non-persistent server. <application>Libassuan</application>
-    is not, however, limited to use with <application>GnuPG</application>
-    servers and clients. It was designed to be flexible enough to meet the
-    demands of many transaction based environments with non-persistent
-    servers.</para>
+      The <application>libassuan</application> package contains an inter
+      process communication library used by some of the other
+      <application>GnuPG</application> related packages.
+      <application>libassuan</application>'s primary use is to allow a
+      client to interact with a non-persistent server.
+      <application>libassuan</application> is not, however, limited to
+      use with <application>GnuPG</application> servers and clients. It
+      was designed to be flexible enough to meet the demands of many
+      transaction based environments with non-persistent servers.
 @y
-    <para>The <application>Libassuan</application> package contains an inter
-    process communication library used by some of the other
-    <application>GnuPG</application> related packages.
-    <application>Libassuan</application>'s primary use is to allow a client to
-    interact with a non-persistent server. <application>Libassuan</application>
-    is not, however, limited to use with <application>GnuPG</application>
-    servers and clients. It was designed to be flexible enough to meet the
-    demands of many transaction based environments with non-persistent
-    servers.</para>
+      The <application>libassuan</application> package contains an inter
+      process communication library used by some of the other
+      <application>GnuPG</application> related packages.
+      <application>libassuan</application>'s primary use is to allow a
+      client to interact with a non-persistent server.
+      <application>libassuan</application> is not, however, limited to
+      use with <application>GnuPG</application> servers and clients. It
+      was designed to be flexible enough to meet the demands of many
+      transaction based environments with non-persistent servers.
 @z
 
 @x
@@ -54,116 +54,120 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libassuan-download-http;"/></para>
+          Download (HTTP): <ulink url="&libassuan-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libassuan-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libassuan-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libassuan-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libassuan-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libassuan-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libassuan-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libassuan-md5sum;</para>
+          Download MD5 sum: &libassuan-md5sum;
 @y
-        <para>&Download; MD5 sum: &libassuan-md5sum;</para>
+          &Download; MD5 sum: &libassuan-md5sum;
 @z
 
 @x
-        <para>Download size: &libassuan-size;</para>
+          Download size: &libassuan-size;
 @y
-        <para>&DownloadSize;: &libassuan-size;</para>
+          &DownloadSize;: &libassuan-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libassuan-buildsize;</para>
+          Estimated disk space required: &libassuan-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libassuan-buildsize;</para>
+          &Estimateddiskspacerequired;: &libassuan-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libassuan-time;</para>
+          Estimated build time: &libassuan-time;
 @y
-        <para>&Estimatedbuildtime;: &libassuan-time;</para>
+          &Estimatedbuildtime;: &libassuan-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">Libassuan Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libassuan Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Libassuan&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libassuan&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libgpg-error"/></para>
+    <para role="required">
+      <xref linkend="libgpg-error"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libgpg-error"/></para>
+    <para role="required">
+      <xref linkend="libgpg-error"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libassuan"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libassuan"/></para>
 @z
 
 @x
-    <title>Installation of Libassuan</title>
+    <title>Installation of libassuan</title>
 @y
-    <title>&InstallationOf1;Libassuan&InstallationOf2;</title>
+    <title>&InstallationOf1;libassuan&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Libassuan</application> by running the
-    following commands:</para>
+      Install <application>libassuan</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Libassuan</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libassuan</application> をビルドします。
 @z
 
 @x
-    <para>If you wish to build alternate formats of the documentation, you
-    must have <xref linkend="texlive"/>
-    installed, then issue the following command:</para>
+      If you wish to build documentation, you must have
+      <xref linkend="texlive"/> installed, then issue
+      the following command:
 @y
-    <para>If you wish to build alternate formats of the documentation, you
-    must have <xref linkend="texlive"/>
-    installed, then issue the following command:</para>
+      If you wish to build documentation, you must have
+      <xref linkend="texlive"/> installed, then issue
+      the following command:
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you built the additional documentation, install it by issuing the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
+      If you built the documentation, install it by running the
+      following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    
-    If you built the additional documentation, install it by issuing the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:
-    </para>
+      If you built the documentation, install it by running the
+      following commands as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -174,7 +178,7 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -183,13 +187,25 @@
 @z
 
 @x
-        <seg>libassuan-config</seg>
-        <seg>libassuan.so</seg>
-        <seg>/usr/share/doc/libassuan-&libassuan-version;</seg>
+        <seg>
+          libassuan-config
+        </seg>
+        <seg>
+          libassuan.so
+        </seg>
+        <seg>
+          /usr/share/doc/libassuan-&libassuan-version;
+        </seg>
 @y
-        <seg>libassuan-config</seg>
-        <seg>libassuan.so</seg>
-        <seg>/usr/share/doc/libassuan-&libassuan-version;</seg>
+        <seg>
+          libassuan-config
+        </seg>
+        <seg>
+          libassuan.so
+        </seg>
+        <seg>
+          /usr/share/doc/libassuan-&libassuan-version;
+        </seg>
 @z
 
 @x
@@ -198,22 +214,10 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libassuan-config
-          <para>is a utility used to configure and build applications based on
-          the libassuan library. It can be used to query the C compiler and
-          linker flags which are required to correctly compile and link the
-          application against the libassuan library.</para>
-@y
-          <para>is a utility used to configure and build applications based on
-          the libassuan library. It can be used to query the C compiler and
-          linker flags which are required to correctly compile and link the
-          application against the libassuan library.</para>
-@z
-
 @x libassuan.so
-          <para>is an inter process communication library which implements the
-          Assuan protocol.</para>
+            is an inter process communication library which
+            implements the Assuan protocol.
 @y
-          <para>is an inter process communication library which implements the
-          Assuan protocol.</para>
+            is an inter process communication library which
+            implements the Assuan protocol.
 @z

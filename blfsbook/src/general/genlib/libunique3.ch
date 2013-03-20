@@ -33,39 +33,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&libunique-download-http;"/>
+          Download (HTTP): <ulink url="&libunique3-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&libunique-download-http;"/>
+          &Download; (HTTP): <ulink url="&libunique3-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&libunique-download-ftp;"/>
+          Download (FTP): <ulink url="&libunique3-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&libunique-download-ftp;"/>
+          &Download; (FTP): <ulink url="&libunique3-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &libunique-md5sum;
+          Download MD5 sum: &libunique3-md5sum;
 @y
-          &Download; MD5 sum: &libunique-md5sum;
+          &Download; MD5 sum: &libunique3-md5sum;
 @z
 
 @x
-          Download size: &libunique-size;
+          Download size: &libunique3-size;
 @y
-          &DownloadSize;: &libunique-size;
+          &DownloadSize;: &libunique3-size;
 @z
 
 @x
-          Estimated disk space required: &libunique-buildsize;
+          Estimated disk space required: &libunique3-buildsize;
 @y
-          &Estimateddiskspacerequired;: &libunique-buildsize;
+          &Estimateddiskspacerequired;: &libunique3-buildsize;
 @z
 
 @x
-          Estimated build time: &libunique-time;
+          Estimated build time: &libunique3-time;
 @y
-          &Estimatedbuildtime;: &libunique-time;
+          &Estimatedbuildtime;: &libunique3-time;
 @z
 
 @x

@@ -14,18 +14,18 @@
 @z
 
 @x
-    <title>Introduction to qemu-kvm</title>
+    <title>Introduction to qemu</title>
 @y
-    <title>&IntroductionTo1;qemu-kvm&IntroductionTo2;</title>
+    <title>&IntroductionTo1;qemu&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>qemu-kvm</application> is a full virtualization solution
+    <para><application>qemu</application> is a full virtualization solution
     for Linux on x86 hardware containing virtualization extensions (Intel VT or
     AMD-V).</para>
 @y
     <para>
-    <application>qemu-kvm</application> は Linux 上における仮想化ソリューションを提供します。
+    <application>qemu</application> は Linux 上における仮想化ソリューションを提供します。
     仮想化拡張 (Intel VT または AMD-V) を持つ x86 ハードウェア上にて動作します。
     </para>
 @z
@@ -37,45 +37,57 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&qemu-kvm-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&qemu-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&qemu-kvm-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&qemu-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&qemu-kvm-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&qemu-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&qemu-kvm-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&qemu-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &qemu-kvm-md5sum;</para>
+        <para>Download MD5 sum: &qemu-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &qemu-kvm-md5sum;</para>
+        <para>&Download; MD5 sum: &qemu-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &qemu-kvm-size;</para>
+        <para>Download size: &qemu-size;</para>
 @y
-        <para>&DownloadSize;: &qemu-kvm-size;</para>
+        <para>&DownloadSize;: &qemu-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &qemu-kvm-buildsize;</para>
+        <para>Estimated disk space required: &qemu-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &qemu-kvm-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &qemu-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &qemu-kvm-time;</para>
+        <para>Estimated build time: &qemu-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &qemu-kvm-time;</para>
+        <para>&Estimatedbuildtime;: &qemu-time;</para>
 @z
 
 @x
-    <bridgehead renderas="sect3">Qemu-kvm Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Qemu-kvm&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required Patch: <ulink
+@y
+        <para>必須のパッチ: <ulink
+@z
+
+@x
+    <bridgehead renderas="sect3">Qemu Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Qemu&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -137,11 +149,11 @@
 @z
 
 @x
-    <para>Before building <application>qemu-kvm</application>, check to see if 
+    <para>Before building <application>qemu</application>, check to see if
     your processor supports Virtualization Technology (VT):</para>
 @y
     <para>
-    <application>qemu-kvm</application> をビルドするにあたっては、まずあなたのプロセッサーが仮想化技術 (Virtualization Technology; VT) をサポートしているかを確認してください。
+    <application>qemu</application> をビルドするにあたっては、まずあなたのプロセッサーが仮想化技術 (Virtualization Technology; VT) をサポートしているかを確認してください。
     </para>
 @z
 
@@ -208,9 +220,9 @@
 @z
 
 @x
-    <title>Installation of qemu-kvm</title>
+    <title>Installation of qemu</title>
 @y
-    <title>&InstallationOf1;qemu-kvm&InstallationOf2;</title>
+    <title>&InstallationOf1;qemu&InstallationOf2;</title>
 @z
 
 @x
@@ -226,25 +238,19 @@
 @z
 
 @x
-    <para>Install <application>qemu-kvm</application> by running the following
+    <para>Install <application>qemu</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>qemu-kvm</application> をビルドします。
+    以下のコマンドを実行して <application>qemu</application> をビルドします。
     </para>
 @z
 
 @x
-    <para>Testing the results is not automated. To run individual tests, change
-    to the <filename class='directory'>tests/</filename> directory, and examine
-    the <filename>Makefile</filename>.  Each test may be run individually with
-    <command>make run-&lt;test name&gt;</command>.</para>
+    <para>To run the built in tests, run <command>make V=1 check</command>.</para>
 @y
     <para>
-    ビルド結果のテストは自動化されていません。
-    テストを実行するなら、まず <filename
-    class='directory'>tests/</filename> ディレクトリに入って <filename>Makefile</filename> を確認します。
-    複数あるテストに対して <command>make run-&lt;テスト名&gt;</command> の実行により実施します。
+    ビルド結果をテストする場合は <command>make V=1 check</command> を実行します。
     </para>
 @z
 
@@ -253,17 +259,6 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <note><para>The main program <command>qemu-system-x86_64</command> doesn't
-    make a distinction between i386 and x86_64 so even on an i386 system you
-    should use <emphasis>qemu-system-x86_64</emphasis></para>
-@y
-    <note><para>
-    メインとなるプログラム <command>qemu-system-x86_64</command> は、i386 と x86_64 の間で違いはありません。
-    したがって i386 のシステムであっても <emphasis>qemu-system-x86_64</emphasis> を利用することになります。
     </para>
 @z
 
@@ -277,9 +272,27 @@
 @z
 
 @x
-    <title>Configuring qemu-kvm</title>
+    <title>Command Explanations</title>
 @y
-    <title>&Configuring1;qemu-kvm&Configuring2;</title>
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><parameter>--target-list=x86_64-softmmu</parameter>: This option
+    limits the build target to the x86_64 architecture.  For other 
+    hardware emulation see the --target-list list in <command>configure</command>'s
+    help output.  Omitting this option will build all architectures.</para>
+@y
+    <para><parameter>--target-list=x86_64-softmmu</parameter>: This option
+    limits the build target to the x86_64 architecture.  For other 
+    hardware emulation see the --target-list list in <command>configure</command>'s
+    help output.  Omitting this option will build all architectures.</para>
+@z
+
+@x
+    <title>Configuring qemu</title>
+@y
+    <title>&Configuring1;qemu&Configuring2;</title>
 @z
 
 @x
@@ -302,15 +315,12 @@
 @x
     <note><para>The following instructions assume you have created the optional
     symbolic link, <userinput>qemu</userinput>.  Additionally, you must run
-    <userinput>qemu</userinput> as the <systemitem
-    class="username">root</systemitem> user command from an X-Windows based
-    terminal.</para></note>
+    <userinput>qemu</userinput> from an X-Windows based terminal.</para></note>
 @y
     <note><para>
     これ以降の手順においては、以下を前提として説明を進めます。
     まずシンボリックリンク <userinput>qemu</userinput> を生成しているものとします。
-    また <userinput>qemu</userinput> は <systemitem
-    class="username">root</systemitem> ユーザーにより、X-Windows ベースの端末から実行するものとします。
+    また <userinput>qemu</userinput> は X-Windows ベースの端末から実行するものとします。
     </para></note>
 @z
 
@@ -329,23 +339,45 @@
     </para>
 @z
 
+% @x
+%     <para>Follow the normal installation procedures for the chosen
+%     distribution.  The -boot option specifies the boot order of drives as a string
+%     of drive letters. Valid drive letters are: a, b (floppy 1 and 2), c (first
+%     hard disk), d (first CD-ROM).  The -m option is the amount of memory to use
+%     for the virtual machine.  If you have sufficient memory (2G or more), 1G is
+%     a reasonable value.  For computers with 512MB of RAM it's safe to use -m
+%     192, or even -m 128 (the default).</para>
+% @y
+%     <para>
+%     目的のディストリビューションを、以下のような標準的な手順によりインストールします。
+%     オプションの -boot は、ブートするドライブの順を定めるもので、ドライブ文字を指定します。
+%     許容されるドライブ文字は、a, b (フロッピー1 と 2)、c (1つめのハードディスク)、d (1つめの CD-ROM) です。
+%     オプション -m は、仮想マシンにて利用するメモリ容量を指定します。
+%     十分なメモリ容量 (2G 以上) を有しているのであれば、1G としたらよいでしょう。
+%     メモリ容量が 512MB しかなかったなら、-m 192 や -m 128 (これがデフォルト) とするのが安全です。
+%     </para>
+% @z
+
 @x
     <para>Follow the normal installation procedures for the chosen
-    distribution.  The -boot option specifies the boot order of drives as a string
-    of drive letters. Valid drive letters are: a, b (floppy 1 and 2), c (first
-    hard disk), d (first CD-ROM).  The -m option is the amount of memory to use
-    for the virtual machine.  If you have sufficient memory (2G or more), 1G is
-    a reasonable value.  For computers with 512MB of RAM it's safe to use -m
-    192, or even -m 128 (the default).</para>
+    distribution.  The -boot option specifies the boot order of drives as a
+    string of drive letters. Valid drive letters are: a, b (floppy 1 and 2), c
+    (first hard disk), d (first CD-ROM).  The -m option is the amount of memory
+    to use for the virtual machine.  If you have sufficient memory (2G or
+    more), 1G is a reasonable value.  For computers with 512MB of RAM it's safe
+    to use -m 192, or even -m 128 (the default).  The -enable-kvm option allows
+    for hardware acceleeration.  Without this switch, the emulation is
+    relatively slow.</para>
 @y
-    <para>
-    目的のディストリビューションを、以下のような標準的な手順によりインストールします。
-    オプションの -boot は、ブートするドライブの順を定めるもので、ドライブ文字を指定します。
-    許容されるドライブ文字は、a, b (フロッピー1 と 2)、c (1つめのハードディスク)、d (1つめの CD-ROM) です。
-    オプション -m は、仮想マシンにて利用するメモリ容量を指定します。
-    十分なメモリ容量 (2G 以上) を有しているのであれば、1G としたらよいでしょう。
-    メモリ容量が 512MB しかなかったなら、-m 192 や -m 128 (これがデフォルト) とするのが安全です。
-    </para>
+    <para>Follow the normal installation procedures for the chosen
+    distribution.  The -boot option specifies the boot order of drives as a
+    string of drive letters. Valid drive letters are: a, b (floppy 1 and 2), c
+    (first hard disk), d (first CD-ROM).  The -m option is the amount of memory
+    to use for the virtual machine.  If you have sufficient memory (2G or
+    more), 1G is a reasonable value.  For computers with 512MB of RAM it's safe
+    to use -m 192, or even -m 128 (the default).  The -enable-kvm option allows
+    for hardware acceleeration.  Without this switch, the emulation is
+    relatively slow.</para>
 @z
 
 @x

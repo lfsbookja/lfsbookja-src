@@ -30,7 +30,7 @@
       suites on GNU tools. It is written in <command>expect</command>, which
       uses <application>Tcl</application> (Tool command language). It was installed
       by LFS in the temporary <filename class="directory">/tools</filename>
-      directory.  These instructions install it permanently.
+      directory. These instructions install it permanently.
 @y
       <application>DejaGnu</application> パッケージは GNU ツールにおいて、テストスイートを実行するフレームワークです。
       これは <application>Tcl</application> (ツールコマンド言語; Tool command language) によって書かれています。
@@ -45,39 +45,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&dejagnu-download-http;"/></para>
+          Download (HTTP): <ulink url="&dejagnu-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&dejagnu-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&dejagnu-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&dejagnu-download-ftp;"/></para>
+          Download (FTP): <ulink url="&dejagnu-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&dejagnu-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&dejagnu-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &dejagnu-md5sum;</para>
+          Download MD5 sum: &dejagnu-md5sum;
 @y
-        <para>&Download; MD5 sum: &dejagnu-md5sum;</para>
+          &Download; MD5 sum: &dejagnu-md5sum;
 @z
 
 @x
-        <para>Download size: &dejagnu-size;</para>
+          Download size: &dejagnu-size;
 @y
-        <para>&DownloadSize;: &dejagnu-size;</para>
+          &DownloadSize;: &dejagnu-size;
 @z
 
 @x
-        <para>Estimated disk space required: &dejagnu-buildsize;</para>
+          Estimated disk space required: &dejagnu-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &dejagnu-buildsize;</para>
+          &Estimateddiskspacerequired;: &dejagnu-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &dejagnu-time;</para>
+          Estimated build time: &dejagnu-time;
 @y
-        <para>&Estimatedbuildtime;: &dejagnu-time;</para>
+          &Estimatedbuildtime;: &dejagnu-time;
 @z
 
 @x
@@ -135,24 +135,6 @@
 @z
 
 @x
-      HTML and text documentation was created in the previous step. There
-      are different ways to create additional forms of documentation, if desired.
-      If you have <xref linkend="texlive"/> installed, create PDF and Postscript
-      docs in the <filename class="directory">doc</filename> directory by issuing
-      <command>make pdf ps</command>. If you have <xref linkend="docbook-utils"/>
-      installed, create PDF and Postscript docs in the top-level directory
-      by issuing <command>make dejagnu.{pdf,ps}</command>.
-@y
-      HTML and text documentation was created in the previous step. There
-      are different ways to create additional forms of documentation, if desired.
-      If you have <xref linkend="texlive"/> installed, create PDF and Postscript
-      docs in the <filename class="directory">doc</filename> directory by issuing
-      <command>make pdf ps</command>. If you have <xref linkend="docbook-utils"/>
-      installed, create PDF and Postscript docs in the top-level directory
-      by issuing <command>make dejagnu.{pdf,ps}</command>.
-@z
-
-@x
       To test the results, issue <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
@@ -173,27 +155,33 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Scripts</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>インストールスクリプト</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>runtest</seg>
-        <seg>None</seg>
-        <seg>There are numerous <application>Expect</application> scripts installed in
-        the <filename class='directory'>/usr/share/dejagnu</filename> hierarchy.</seg>
-        <seg>/usr/share/dejagnu</seg>
+        <seg>
+          runtest
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          /usr/share/dejagnu
+        </seg>
 @y
-        <seg>runtest</seg>
-        <seg>&None;</seg>
-        <seg><filename class='directory'>/usr/share/dejagnu</filename>
-        ディレクトリ配下にインストールされる数多くの <application>Expect</application> スクリプト</seg>
-        <seg>/usr/share/dejagnu</seg>
+        <seg>
+          runtest
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          /usr/share/dejagnu
+        </seg>
 @z
 
 @x

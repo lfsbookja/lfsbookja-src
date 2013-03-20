@@ -14,21 +14,21 @@
 @z
 
 @x
-    <title>Introduction to GTK-Xfce-Engine</title>
+    <title>Introduction to GTK Xfce Engine</title>
 @y
-    <title>&IntroductionTo1;GTK-Xfce-Engine&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GTK Xfce Engine&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>GTK-Xfce-Engine</application> package contains several
-      <application>GTK+-2</application> themes and the applications and
-      libraries needed to display them.
+      The <application>GTK Xfce Engine</application> package contains several
+      <application>GTK+ 2</application> and <application>GTK+ 3</application>
+      themes and libraries needed to display them.
       This is useful for customising the appearance of your
       <application>Xfce</application> desktop.
 @y
-      The <application>GTK-Xfce-Engine</application> package contains several
-      <application>GTK+-2</application> themes and the applications and
-      libraries needed to display them.
+      The <application>GTK Xfce Engine</application> package contains several
+      <application>GTK+ 2</application> and <application>GTK+ 3</application>
+      themes and libraries needed to display them.
       This is useful for customising the appearance of your
       <application>Xfce</application> desktop.
 @z
@@ -76,15 +76,15 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">GTK-Xfce-Engine Dependencies</bridgehead>
+    <bridgehead renderas="sect3">GTK Xfce Engine Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;GTK-Xfce-Engine&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GTK Xfce Engine&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>.
+      <xref linkend="gtk2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -100,16 +100,16 @@
 @z
 
 @x
-    <title>Installation of GTK-Xfce-Engine</title>
+    <title>Installation of GTK Xfce Engine</title>
 @y
-    <title>&InstallationOf1;GTK-Xfce-Engine&InstallationOf2;</title>
+    <title>&InstallationOf1;GTK Xfce Engine&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>GTK-Xfce-Engine</application> by running the
+      Install <application>GTK Xfce Engine</application> by running the
       following commands:
 @y
-      以下のコマンドを実行して <application>GTK-Xfce-Engine</application> をビルドします。
+      以下のコマンドを実行して <application>GTK Xfce Engine</application> をビルドします。
 @z
 
 @x
@@ -125,44 +125,48 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          libxfce.so (in /usr/lib/gtk-&gtk2-libdir;/engines).
+          None
         </seg>
         <seg>
-          Xfce, Xfce-4.6, Xfce-curve, Xfce-kolors, Xfce-saltlake, Xfce-4.0,
-          Xfce-b5, Xfce-dawn, Xfce-light, Xfce-smooth, Xfce-4.2, Xfce-basic,
-          Xfce-dusk, Xfce-orange, Xfce-stellar, Xfce-4.4, Xfce-cadmium,
-          Xfce-kde2, Xfce-redmondxp and Xfce-winter.
+          libxfce.so (in /usr/lib/gtk-&gtk2-libdir;/engines and
+          /usr/lib/gtk-3.0/3.0.0/theming-engines)
+        </seg>
+        <seg>
+          Xfce, Xfce-4.0, Xfce-4.2, Xfce-4.4, Xfce-4.6, Xfce-b5, Xfce-basic,
+          Xfce-cadmium, Xfce-curve, Xfce-dawn, Xfce-dusk, Xfce-kde2,
+          Xfce-kolors, Xfce-light, Xfce-orange, Xfce-redmondxp, Xfce-saltlake,
+          Xfce-smooth, Xfce-stellar, Xfce-winter in /usr/share/themes
         </seg>
 @y
         <seg>
-          libxfce.so (/usr/lib/gtk-&gtk2-libdir;/engines 内)
+          &None;
         </seg>
         <seg>
-          Xfce, Xfce-4.6, Xfce-curve, Xfce-kolors, Xfce-saltlake, Xfce-4.0,
-          Xfce-b5, Xfce-dawn, Xfce-light, Xfce-smooth, Xfce-4.2, Xfce-basic,
-          Xfce-dusk, Xfce-orange, Xfce-stellar, Xfce-4.4, Xfce-cadmium,
-          Xfce-kde2, Xfce-redmondxp, Xfce-winter.
+          libxfce.so (in /usr/lib/gtk-&gtk2-libdir;/engines,
+          /usr/lib/gtk-3.0/3.0.0/theming-engines)
+        </seg>
+        <seg>
+          Xfce, Xfce-4.0, Xfce-4.2, Xfce-4.4, Xfce-4.6, Xfce-b5, Xfce-basic,
+          Xfce-cadmium, Xfce-curve, Xfce-dawn, Xfce-dusk, Xfce-kde2,
+          Xfce-kolors, Xfce-light, Xfce-orange, Xfce-redmondxp, Xfce-saltlake,
+          Xfce-smooth, Xfce-stellar, Xfce-winter in /usr/share/themes
         </seg>
 @z
 
@@ -174,8 +178,10 @@
 
 @x libxfce.so
             contains functions that allow <application>Xfce</application> to
-            apply and change <application>Gtk+-2</application> themes.
+            apply and change <application>GTK+ 2</application> and
+            <application>GTK+ 3</application> themes.
 @y
             contains functions that allow <application>Xfce</application> to
-            apply and change <application>Gtk+-2</application> themes.
+            apply and change <application>GTK+ 2</application> and
+            <application>GTK+ 3</application> themes.
 @z

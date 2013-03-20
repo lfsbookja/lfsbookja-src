@@ -78,8 +78,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cairo"/> (Built with
-      <xref linkend="fontconfig"/> support),
       <xref linkend="glib2"/>,
       <xref linkend="icu"/> and
       <xref linkend="freetype2"/>
@@ -87,8 +85,6 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cairo"/>
-      (<xref linkend="fontconfig"/> サポートがビルドされていること),
       <xref linkend="glib2"/>,
       <xref linkend="icu"/>,
       <xref linkend="freetype2"/>
@@ -98,11 +94,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="cairo"/> and
       <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>.
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="cairo"/>,
       <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>.
     </para>
 @z

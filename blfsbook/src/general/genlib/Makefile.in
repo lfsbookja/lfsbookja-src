@@ -215,13 +215,14 @@ CHANGE_FILES = \
 	libglade.ch \
 	libgpg-error.ch \
 	libgsf.ch \
+	libgusb.ch \
 	libical.ch \
 	libidl.ch \
 	libidn.ch \
 	libksba.ch \
 	libsigc++.ch \
 	libtasn1.ch \
-	libunique.ch \
+	libunique3.ch \
 	libunistring.ch \
 	libusb.ch \
 	libusb-compat.ch \
@@ -471,13 +472,14 @@ libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
 libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
 libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
+libgusb.xml:               $(BOOKdir)/$@ $(srcdir)/libgusb.ch
 libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
 libidl.xml:                $(BOOKdir)/$@ $(srcdir)/libidl.ch
 libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
 libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
 libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
 libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
-libunique.xml:             $(BOOKdir)/$@ $(srcdir)/libunique.ch
+libunique3.xml:            $(BOOKdir)/$@ $(srcdir)/libunique3.ch
 libunistring.xml:          $(BOOKdir)/$@ $(srcdir)/libunistring.ch
 libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
 libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch

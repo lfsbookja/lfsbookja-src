@@ -78,25 +78,29 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="perl-glib"/> and
+      <xref linkend="dbus-glib"/> and
       <xref linkend="libxfce4util"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="perl-glib"/>,
       <xref linkend="libxfce4util"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/>.</para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="perl-glib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="perl-glib"/>
+    </para>
 @z
 
 @x
@@ -154,15 +158,23 @@
 @z
 
 @x
-        <seg>xfconf-query.</seg>
-        <seg>libxfconf.so.</seg>
+        <seg>
+          xfconf-query
+        </seg>
+        <seg>
+          libxfconf.so
+        </seg>
         <seg>
           /usr/include/xfconf-0, /usr/lib/xfce4 and
-          /usr/share/gtk-doc/html/xfconf.
+          /usr/share/gtk-doc/html/xfconf
         </seg>
 @y
-        <seg>xfconf-query</seg>
-        <seg>libxfconf.so</seg>
+        <seg>
+          xfconf-query
+        </seg>
+        <seg>
+          libxfconf.so
+        </seg>
         <seg>
           /usr/include/xfconf-0, /usr/lib/xfce4,
           /usr/share/gtk-doc/html/xfconf
@@ -177,10 +189,10 @@
 
 @x xfconf-query
             is a commandline utility to view or change any setting stored in
-            <application>xfconf</application>.
+            <application>Xfconf</application>.
 @y
             is a commandline utility to view or change any setting stored in
-            <application>xfconf</application>.
+            <application>Xfconf</application>.
 @z
 
 @x libxfconf.so

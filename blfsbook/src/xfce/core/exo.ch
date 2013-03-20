@@ -14,9 +14,9 @@
 @z
 
 @x
-    <title>Introduction to exo</title>
+    <title>Introduction to Exo</title>
 @y
-    <title>&IntroductionTo1;exo&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Exo&IntroductionTo2;</title>
 @z
 
 @x
@@ -72,9 +72,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">exo Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Exo Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;exo&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Exo&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -96,14 +96,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="pygtk"/>.
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="pygtk"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 
@@ -114,16 +112,16 @@
 @z
 
 @x
-    <title>Installation of exo</title>
+    <title>Installation of Exo</title>
 @y
-    <title>&InstallationOf1;exo&InstallationOf2;</title>
+    <title>&InstallationOf1;Exo&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>exo</application> by running the following
+      Install <application>Exo</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>exo</application> をビルドします。
+      以下のコマンドを実行して <application>Exo</application> をビルドします。
 @z
 
 @x
@@ -163,33 +161,35 @@
 @x
         <seg>
           exo-csource, exo-desktop-item-edit, exo-open and
-          exo-preferred-applications.
+          exo-preferred-applications
         </seg>
-        <seg>libexo-1.so.</seg>
+        <seg>
+          libexo-1.so
+        </seg>
         <seg>
           /etc/xdg/xfce4,
           /usr/include/exo-1,
-          /usr/lib/xfce4,
+          /usr/lib/xfce4/exo-1,
           /usr/share/doc/exo-&exo-version;,
-          /usr/share/gtk-doc/exo,
-          /usr/share/pixmaps/exo-1,
-          /usr/share/pygtk/2.0/defs/exo-0.6 and
-          /usr/share/xfce4.
+          /usr/share/gtk-doc/html/exo-1,
+          /usr/share/pixmaps/exo-1 and
+          /usr/share/xfce4
         </seg>
 @y
         <seg>
           exo-csource, exo-desktop-item-edit, exo-open,
           exo-preferred-applications
         </seg>
-        <seg>libexo-1.so</seg>
+        <seg>
+          libexo-1.so
+        </seg>
         <seg>
           /etc/xdg/xfce4,
           /usr/include/exo-1,
-          /usr/lib/xfce4,
+          /usr/lib/xfce4/exo-1,
           /usr/share/doc/exo-&exo-version;,
-          /usr/share/gtk-doc/exo,
+          /usr/share/gtk-doc/html/exo-1,
           /usr/share/pixmaps/exo-1,
-          /usr/share/pygtk/2.0/defs/exo-0.6,
           /usr/share/xfce4
         </seg>
 @z

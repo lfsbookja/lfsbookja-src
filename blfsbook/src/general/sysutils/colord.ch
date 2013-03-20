@@ -83,7 +83,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>,
+      <xref linkend="libgusb"/>,
       <xref linkend="lcms2"/> and
       <xref linkend="sqlite"/>
     </para>
@@ -91,7 +91,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>,
+      <xref linkend="libgusb"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="sqlite"/>
     </para>
@@ -123,8 +123,7 @@
       <xref linkend="colord-gtk"/> and <xref linkend="gnome-desktop"/>
       (To build example tools),
       <xref linkend="docbook-utils"/>,
-      <xref linkend="gtk-doc"/>,
-      <ulink url="http://people.freedesktop.org/~hughsient/releases/">libgusb</ulink> and
+      <xref linkend="gtk-doc"/> and
       <xref linkend="sane"/>
     </para>
 @y
@@ -134,7 +133,6 @@
       (サンプルツール構築のため),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://people.freedesktop.org/~hughsient/releases/">libgusb</ulink>,
       <xref linkend="sane"/>
     </para>
 @z
@@ -159,15 +157,20 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
-@y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      To test the results, issue: <command>make check</command>. Note
+      that system-wide <application>D-Bus</application> daemon must
+      be running or the tests will fail.
+@y
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      Note
+      that system-wide <application>D-Bus</application> daemon must
+      be running or the tests will fail.
 @z
 
 @x
@@ -184,7 +187,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -194,11 +197,13 @@
 
 @x
         <seg>
-          cd-create-profile, cd-fix-profile, colord, 
-          colord-sane and colormgr
+          cd-create-profile, cd-fix-profile, colord,
+          colord-sane, colord-session and colormgr
         </seg>
         <seg>
-          libcolord.so
+          libcolordprivate.so, libcolord.so, libcolorhug.so,
+          libdtp94-private.so, libhuey-private.so and
+          libmunki-private.so
         </seg>
         <seg>
           /usr/include/colord-1,
@@ -212,11 +217,13 @@
         </seg>
 @y
         <seg>
-          cd-create-profile, cd-fix-profile, colord, 
-          colord-sane, colormgr
+          cd-create-profile, cd-fix-profile, colord,
+          colord-sane, colord-session, colormgr
         </seg>
         <seg>
-          libcolord.so
+          libcolordprivate.so, libcolord.so, libcolorhug.so,
+          libdtp94-private.so, libhuey-private.so,
+          libmunki-private.so
         </seg>
         <seg>
           /usr/include/colord-1,
@@ -246,12 +253,6 @@
             is a tool used to fix metadata in ICC profiles.
 @y
             is a tool used to fix metadata in ICC profiles.
-@z
-
-@x colord
-            is the Color Daemon.
-@y
-            is the Color Daemon.
 @z
 
 @x colormgr

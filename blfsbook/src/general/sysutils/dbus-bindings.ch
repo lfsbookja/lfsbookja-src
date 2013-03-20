@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY dbus-qt3-time          "less than 0.1 SBU">
-@y
-  <!ENTITY dbus-qt3-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
 <sect1 id="dbus-bindings" xreflabel="D-Bus Bindings">
 @y
 <sect1 id="dbus-bindings" xreflabel="D-Bus &Bindings;">
@@ -97,38 +91,40 @@
 @z
 
 @x
-          <para>Download (HTTP): <ulink url="&dbus-glib-download-http;"/></para>
+            Download (HTTP): <ulink url="&dbus-glib-download-http;"/>
 @y
-          <para>&Download; (HTTP): <ulink url="&dbus-glib-download-http;"/></para>
+            &Download; (HTTP): <ulink url="&dbus-glib-download-http;"/>
 @z
 
 @x
-          <para>Download (FTP): <ulink url="&dbus-glib-download-ftp;"/></para>
+            Download (FTP): <ulink url="&dbus-glib-download-ftp;"/>
 @y
-          <para>&Download; (FTP): <ulink url="&dbus-glib-download-ftp;"/></para>
+            Download (FTP): <ulink url="&dbus-glib-download-ftp;"/>
 @z
 
 @x
-         <para>Download MD5 sum: &dbus-glib-md5sum;</para>
+            Download MD5 sum: &dbus-glib-md5sum;
 @y
-         <para>&Download; MD5 sum: &dbus-glib-md5sum;</para>
+            Download MD5 sum: &dbus-glib-md5sum;
 @z
 
 @x
-          <para>Download size: &dbus-glib-size;</para>
+            Download size: &dbus-glib-size;
 @y
-          <para>&DownloadSize;: &dbus-glib-size;</para>
+            Download size: &dbus-glib-size;
 @z
 
 @x
-          <para>Estimated disk space required: &dbus-glib-buildsize;</para>
+            Estimated disk space required: &dbus-glib-buildsize;
 @y
+            Estimated disk space required: &dbus-glib-buildsize;
           <para>&Estimateddiskspacerequired;: &dbus-glib-buildsize;</para>
 @z
 
 @x
-          <para>Estimated build time: &dbus-glib-time;</para>
+            Estimated build time: &dbus-glib-time;
 @y
+            Estimated build time: &dbus-glib-time;
           <para>&Estimatedbuildtime;: &dbus-glib-time;</para>
 @z
 
@@ -142,7 +138,7 @@
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="dbus"/>,
-        <xref linkend="expat"/>, and
+        <xref linkend="expat"/> and
         <xref linkend="glib2"/>
       </para>
 @y
@@ -168,10 +164,8 @@
 
 @x
       <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/dbus-glib"/></para>
 @y
       <para condition="html" role="usernotes">&UserNotes;:
-      <ulink url="&blfs-wiki;/dbus-glib"/></para>
 @z
 
 @x
@@ -181,33 +175,27 @@
 @z
 
 @x
-      <para>Install <application>D-Bus GLib Bindings</application> by
-      running the following commands:</para>
+        Install <application>D-Bus GLib Bindings</application> by
+        running the following commands:
 @y
-      <para>
-      以下のコマンドを実行して <application>D-Bus GLib &Bindings;</application> をビルドします。
-      </para>
+        以下のコマンドを実行して <application>D-Bus GLib &Bindings;</application> をビルドします。
 @z
 
 @x
-      <para>To test the results, issue: <command>make check</command>. Note that
-      more comprehensive tests can be run by following the same method used in
-      <application>D-Bus</application> instructions, which requires building the
-      package twice.</para>
+        To test the results, issue: <command>make check</command>. Note that
+        more comprehensive tests can be run by following the same method used in
+        <application>D-Bus</application> instructions, which requires building the
+        package twice.
 @y
-      <para>
-      ビルド結果をテストする場合は <command>make check</command> を入力します。
-      より総括的なテストも実施することができますが、それは <application>D-Bus</application> パッケージにおける手順と同様に行います。
-      その場合にはこのパッケージを二度ビルドしなければなりません。
-      </para>
+        ビルド結果をテストする場合は <command>make check</command> を入力します。
+        より総括的なテストも実施することができますが、それは <application>D-Bus</application> パッケージにおける手順と同様に行います。
+        その場合にはこのパッケージを二度ビルドしなければなりません。
 @z
 
 @x
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+        Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -217,25 +205,14 @@
 @z
 
 @x
-      <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: This
-      moves <command>dbus-bash-completion-helper</command> out of <filename
-      class="directory">/usr/libexec</filename>.</para>
-@y
-      <para><parameter>--libexecdir=/usr/lib/dbus-1.0</parameter>: 
-      このパラメーターは <command>dbus-bash-completion-helper</command> を <filename
-      class="directory">/usr/libexec</filename> ディレクトリから移動します。
-      </para>
-@z
-
-@x
       <title>Contents</title>
 @y
       <title>&Contents;</title>
 @z
 
 @x
-        <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Libraries</segtitle>
+        <segtitle>Installed Program</segtitle>
+        <segtitle>Installed Library</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
         <segtitle>&InstalledPrograms;</segtitle>
@@ -244,17 +221,27 @@
 @z
 
 @x
-          <seg>dbus-binding-tool</seg>
-          <seg>libdbus-glib-1.so</seg>
-          <seg>/etc/bash_completion.d and optionally 
-          /usr/share/gtk-doc/html/dbus-glib and
-          /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
+          <seg>
+            dbus-binding-tool
+          </seg>
+          <seg>
+            libdbus-glib-1.so
+          </seg>
+          <seg>
+            /usr/share/gtk-doc/html/dbus-glib and
+            /usr/share/doc/dbus-glib-&dbus-glib-version;
+          </seg>
 @y
-          <seg>dbus-binding-tool</seg>
-          <seg>libdbus-glib-1.so</seg>
-          <seg>/etc/bash_completion.d, 任意のビルド時に
-          /usr/share/gtk-doc/html/dbus-glib,
-          /usr/share/doc/dbus-glib-&dbus-glib-version;/api</seg>
+          <seg>
+            dbus-binding-tool
+          </seg>
+          <seg>
+            libdbus-glib-1.so
+          </seg>
+          <seg>
+            /usr/share/gtk-doc/html/dbus-glib,
+            /usr/share/doc/dbus-glib-&dbus-glib-version;
+          </seg>
 @z
 
 @x
@@ -264,20 +251,16 @@
 @z
 
 @x dbus-binding-tool
-            <para>is a tool used to interface with the D-Bus API.</para>
+              is a tool used to interface with the D-Bus API.
 @y
-            <para>
-            D-Bus API とのインターフェースに対し利用するツール。
-            </para>
+              D-Bus API とのインターフェースに対し利用するツール。
 @z
 
 @x libdbus-glib-1.{so,a}
-            <para>contains <application>GLib</application> interface functions
-            to the D-Bus API.</para>
+              contains <application>GLib</application> interface functions
+              to the <application>D-Bus</application> API.
 @y
-            <para>
-            D-Bus API に対しての <application>GLib</application> インターフェース関数を提供します。
-            </para>
+              <application>D-Bus</application> API に対しての <application>GLib</application> インターフェース関数を提供します。
 @z
 
 @x

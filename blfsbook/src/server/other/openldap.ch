@@ -181,100 +181,110 @@
 @z
 
 @x
-      <option>--disable-debug</option>: This parameter disables
+      <option>--disable-debug</option>: This switch disables
       the debugging code in <application>OpenLDAP</application>.
 @y
       <option>--disable-debug</option>:
-      このパラメーターは <application>OpenLDAP</application> におけるデバッグコードを無効にします。
+      このスイッチは <application>OpenLDAP</application> におけるデバッグコードを無効にします。
 @z
 
 @x
-      <option>--enable-dynamic</option>: This parameter forces the
+      <option>--enable-dynamic</option>: This switch forces the
       <application>OpenLDAP</application> libraries to be dynamically
       linked to the executable programs.
 @y
-      <option>--enable-dynamic</option>: This parameter forces the
+      <option>--enable-dynamic</option>: This switch forces the
       <application>OpenLDAP</application> libraries to be dynamically
       linked to the executable programs.
 @z
 
 @x
-      <option>--enable-crypt</option>: This parameter enables using of
+      <option>--enable-crypt</option>: This switch enables using of
       <command>crypt(3)</command> passwords.
 @y
-      <option>--enable-crypt</option>: This parameter enables using of
+      <option>--enable-crypt</option>: This switch enables using of
       <command>crypt(3)</command> passwords.
 @z
 
 @x
-      <option>--enable-modules</option>: This parameter enables dynamic
+      <option>--enable-spasswd</option>: This switch enables
+      <application>SASL</application> password verification.
+@y
+      <option>--enable-spasswd</option>: This switch enables
+      <application>SASL</application> password verification.
+@z
+
+@x
+      <option>--enable-modules</option>: This switch enables dynamic
       module support.
 @y
-      <option>--enable-modules</option>: This parameter enables dynamic
+      <option>--enable-modules</option>: This switch enables dynamic
       module support.
 @z
 
 @x
-      <option>--enable-rlookups</option>: This parameter enables
+      <option>--enable-rlookups</option>: This switch enables
       reverse lookups of client hostnames.
 @y
-      <option>--enable-rlookups</option>: This parameter enables
+      <option>--enable-rlookups</option>: This switch enables
       reverse lookups of client hostnames.
 @z
 
 @x
-      <option>--enable-backends</option>: This parameter enables
+      <option>--enable-backends</option>: This switch enables
       all available backends.
 @y
-      <option>--enable-backends</option>: This parameter enables
+      <option>--enable-backends</option>: This switch enables
       all available backends.
 @z
 
 @x
-      <option>--enable-overlays</option>: This parameter enables
+      <option>--enable-overlays</option>: This switch enables
       all available overlays.
 @y
-      <option>--enable-overlays</option>: This parameter enables
+      <option>--enable-overlays</option>: This switch enables
       all available overlays.
 @z
 
 @x
-      <option>--disable-ndb</option>: This parameter disables
-      <application>MySQL</application> NDB Cluster backend 
+      <option>--disable-ndb</option>: This switch disables
+      <application>MySQL</application> NDB Cluster backend
       which causes configure to fail if
       <application>MySQL</application> is present.
 @y
-      <option>--disable-ndb</option>: This parameter disables
-      <application>MySQL</application> NDB Cluster backend 
+      <option>--disable-ndb</option>: This switch disables
+      <application>MySQL</application> NDB Cluster backend
       which causes configure to fail if
       <application>MySQL</application> is present.
 @z
 
 @x
-      <option>--disable-sql</option>: This parameter explicitly
+      <option>--disable-sql</option>: This switch explicitly
       disables the SQL backend.  Omit this switch if a SQL server is
       installed and you are going to use a SQL backend.
 @y
-      <option>--disable-sql</option>: This parameter explicitly
+      <option>--disable-sql</option>: This switch explicitly
       disables the SQL backend.  Omit this switch if a SQL server is
       installed and you are going to use a SQL backend.
 @z
 
 @x
-      <option>--enable-spasswd</option>: This parameter enables
-      <application>SASL</application> password verification.
+      <option>--enable-slp</option>: This switch enables
+      SLPv2 support. Use it if you have installed
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>.
 @y
-      <option>--enable-spasswd</option>: This parameter enables
-      <application>SASL</application> password verification.
+      <option>--enable-slp</option>: This switch enables
+      SLPv2 support. Use it if you have installed
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>.
 @z
 
 @x
         You can run <command>./configure --help</command> to see if there
-        are other parameters you can pass to the <command>configure</command>
+        are other switch you can pass to the <command>configure</command>
         command to enable other options or dependency packages.
 @y
         You can run <command>./configure --help</command> to see if there
-        are other parameters you can pass to the <command>configure</command>
+        are other switch you can pass to the <command>configure</command>
         command to enable other options or dependency packages.
 @z
 
@@ -454,7 +464,7 @@
           slapcat, slapd, slapdn, slapindex, slappasswd, slapschema and slaptest
         </seg>
         <seg>
-          liblber.so, libldap.so,a and libldap_r.so
+          liblber.so, libldap.so and libldap_r.so
         </seg>
         <seg>
           /etc/openldap,
@@ -465,14 +475,14 @@
         <seg>
           ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
           ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd, slapauth,
-          slapcat, slapd, slapdn, slapindex, slappasswd, slapschema and slaptest
+          slapcat, slapd, slapdn, slapindex, slappasswd, slapschema, slaptest
         </seg>
         <seg>
-          liblber.so, libldap.so,a and libldap_r.so
+          liblber.so, libldap.so, libldap_r.so
         </seg>
         <seg>
           /etc/openldap,
-          /usr/lib/openldap and
+          /usr/lib/openldap,
           /var/lib/openldap
         </seg>
 @z

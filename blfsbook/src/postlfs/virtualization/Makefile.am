@@ -8,7 +8,7 @@
 BOOKdir = @abs_bookdir@/postlfs/virtualization
 CHANGE_FILES = \
 	virtualization.ch \
-	qemu-kvm.ch
+	qemu.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -24,4 +24,4 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 virtualization.xml: $(BOOKdir)/$@ $(srcdir)/virtualization.ch
-qemu-kvm.xml:       $(BOOKdir)/$@ $(srcdir)/qemu-kvm.ch
+qemu.xml:           $(BOOKdir)/$@ $(srcdir)/qemu.ch

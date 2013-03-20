@@ -324,7 +324,8 @@
         <seg>
           libdricore9.1.0.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libOpenVG.so, libOSMesa.so and libxatracker.so
+          libllvmradeon9.1.0.so, libOpenVG.so, libOSMesa.so and
+          libxatracker.so
         </seg>
         <seg>
           /usr/include/EGL,
@@ -346,7 +347,8 @@
         <seg>
           libdricore9.1.0.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libOpenVG.so, libOSMesa.so, libxatracker.so
+          libllvmradeon9.1.0.so, libOpenVG.so, libOSMesa.so,
+          libxatracker.so
         </seg>
         <seg>
           /usr/include/EGL,

@@ -14,16 +14,16 @@
 @z
 
 @x
-    <title>Introduction to LibXfce4Util</title>
+    <title>Introduction to libxfce4util</title>
 @y
-    <title>&IntroductionTo1;LibXfce4Util&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libxfce4util&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>LibXfce4Util</application> package is a basic utility
+      The <application>libxfce4util</application> package is a basic utility
       library for the <application>Xfce</application> desktop environment.
 @y
-      <application>LibXfce4Util</application> パッケージは、<application>Xfce</application> デスクトップ環境に対する基本的なユーティリティライブラリを提供します。
+      <application>libxfce4util</application> パッケージは、<application>Xfce</application> デスクトップ環境に対する基本的なユーティリティライブラリを提供します。
 @z
 
 @x
@@ -69,20 +69,22 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">LibXfce4Util Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libxfce4util Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;LibXfce4Util&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libxfce4util&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/> and
       <xref linkend="pkgconfig"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
       <xref linkend="pkgconfig"/>
     </para>
@@ -90,10 +92,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
@@ -103,16 +109,16 @@
 @z
 
 @x
-    <title>Installation of LibXfce4Util</title>
+    <title>Installation of libxfce4util</title>
 @y
-    <title>&InstallationOf1;LibXfce4Util&InstallationOf2;</title>
+    <title>&InstallationOf1;libxfce4util&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>LibXfce4Util</application> by running the following
+      Install <application>libxfce4util</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>LibXfce4Util</application> をビルドします。
+      以下のコマンドを実行して <application>libxfce4util</application> をビルドします。
 @z
 
 @x
@@ -150,13 +156,27 @@
 @z
 
 @x
-        <seg>xfce4-kiosk-query.</seg>
-        <seg>libxfce4util.so.</seg>
-        <seg>/usr/include/xfce4 and /usr/share/gtk-doc/html/libxfce4util.</seg>
+        <seg>
+          xfce4-kiosk-query
+        </seg>
+        <seg>
+          libxfce4util.so
+        </seg>
+        <seg>
+          /usr/include/xfce4 and
+          /usr/share/gtk-doc/html/libxfce4util
+        </seg>
 @y
-        <seg>xfce4-kiosk-query</seg>
-        <seg>libxfce4util.so</seg>
-        <seg>/usr/include/xfce4, /usr/share/gtk-doc/html/libxfce4util</seg>
+        <seg>
+          xfce4-kiosk-query
+        </seg>
+        <seg>
+          libxfce4util.so
+        </seg>
+        <seg>
+          /usr/include/xfce4,
+          /usr/share/gtk-doc/html/libxfce4util
+        </seg>
 @z
 
 @x

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY midori-buildsize     "29 MB (5 MB installed)">
+  <!ENTITY midori-buildsize     "50 MB (9 MB installed)">
 @y
-  <!ENTITY midori-buildsize     "29 MB (5 MB installed)">
+  <!ENTITY midori-buildsize     "50 MB (9 MB installed)">
 @z
 
 @x
@@ -27,10 +27,10 @@
 
 @x
       <application>Midori</application> is a lightweight web browser that uses
-      <application>WebKitGTK</application>.
+      <application>WebKitGTK+</application>.
 @y
       <application>Midori</application> is a lightweight web browser that uses
-      <application>WebKitGTK</application>.
+      <application>WebKitGTK+</application>.
 @z
 
 @x
@@ -84,30 +84,52 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="webkitgtk"/> (configured --with-gtk=2.0) and
-      <xref linkend="vala"/>.
+      <xref linkend="webkitgtk"/> (configured --with-gtk=2.0) or
+      <xref linkend="webkitgtk"/> (configured --with-gtk=3.0) and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="webkitgtk"/> (configured --with-gtk=2.0),
+      <xref linkend="webkitgtk"/> (configured --with-gtk=2.0) or
+      <xref linkend="webkitgtk"/> (configured --with-gtk=3.0) and
       <xref linkend="vala"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="libnotify"/> and
+      <xref linkend="librsvg"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="libnotify"/>,
+      <xref linkend="librsvg"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libnotify"/>,
-      <xref linkend="librsvg"/> and
-      <xref linkend="libunique"/>.
+      <ulink url="&gnome-download-http;/gnome-keyring">GNOME Keyring (2.x)</ulink> or
+      <xref linkend="gcr"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libunique"/> or
+      <xref linkend="libunique3"/> and
+      <xref linkend="libzeitgeist"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libnotify"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libunique"/>
+      <ulink url="&gnome-download-http;/gnome-keyring">GNOME Keyring (2.x)</ulink> または
+      <xref linkend="gcr"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libunique"/> または
+      <xref linkend="libunique3"/>,
+      <xref linkend="libzeitgeist"/>
     </para>
 @z
 
@@ -149,17 +171,19 @@
 @z
 
 @x
-      <command>export NOCOLOR=1</command>: This prevents the build process
-      outputting coloured text. Coloured text is fine if you're running the
-      commands in a terminal, but if you compile it with a script and pipe the
-      output to a log file the control characters that colour the text can make
-      the log file difficult to read with a text editor.
+      <command>export NOCOLOR=1</command>: This prevents the build
+      process outputting colored text. Colored text is fine if
+      you're running the commands in a terminal, but if you compile
+      it with a script and pipe the output to a log file the control
+      characters that color the text can makehe log file difficult
+      to read with a text editor.
 @y
-      <command>export NOCOLOR=1</command>: This prevents the build process
-      outputting coloured text. Coloured text is fine if you're running the
-      commands in a terminal, but if you compile it with a script and pipe the
-      output to a log file the control characters that colour the text can make
-      the log file difficult to read with a text editor.
+      <command>export NOCOLOR=1</command>: This prevents the build
+      process outputting colored text. Colored text is fine if
+      you're running the commands in a terminal, but if you compile
+      it with a script and pipe the output to a log file the control
+      characters that color the text can makehe log file difficult
+      to read with a text editor.
 @z
 
 @x
@@ -179,24 +203,32 @@
 @z
 
 @x
-        <seg>midori</seg>
-        <seg>None</seg>
+        <seg>
+          midori
+        </seg>
+        <seg>
+          None
+        </seg>
         <seg>
           /etc/xdg/midori,
           /usr/include/midori-0.4,
           /usr/lib/midori,
-          /usr/share/midori and
-          /usr/share/doc/midori
+          /usr/share/doc/midori-&midori-version; and
+          /usr/share/midori
         </seg>
 @y
-        <seg>midori</seg>
-        <seg>&None;</seg>
+        <seg>
+          midori
+        </seg>
+        <seg>
+          &None;
+        </seg>
         <seg>
           /etc/xdg/midori,
           /usr/include/midori-0.4,
           /usr/lib/midori,
-          /usr/share/midori and
-          /usr/share/doc/midori
+          /usr/share/doc/midori-&midori-version;,
+          /usr/share/midori
         </seg>
 @z
 
@@ -207,7 +239,7 @@
 @z
 
 @x midori
-            is a lightweight <application>WebKitGTK</application> browser.
+            is a lightweight <application>WebKitGTK+</application> browser.
 @y
-            軽量な <application>WebKitGTK</application> ブラウザー。
+            軽量な <application>WebKitGTK+</application> ブラウザー。
 @z

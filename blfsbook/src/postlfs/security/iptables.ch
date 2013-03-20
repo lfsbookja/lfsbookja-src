@@ -20,7 +20,7 @@
 @z
 
 @x
-      The next part of this chapter deals with firewalls.  The principal
+      The next part of this chapter deals with firewalls. The principal
       firewall tool for Linux is <application>Iptables</application>. You will
       need to install <application>Iptables</application> if you intend on using
       any form of a firewall.
@@ -70,18 +70,6 @@
           Estimated build time: &iptables-time;
 @y
           &Estimatedbuildtime;: &iptables-time;
-@z
-
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
 @z
 
 @x

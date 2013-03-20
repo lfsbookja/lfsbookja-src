@@ -91,7 +91,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>.
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -154,13 +154,25 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libgarcon-1.so</seg>
-        <seg>/usr/share/gtk-doc/html/garcon</seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          libgarcon-1.so
+        </seg>
+        <seg>
+          /usr/share/gtk-doc/html/garcon
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libgarcon-1.so</seg>
-        <seg>/usr/share/gtk-doc/html/garcon</seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          libgarcon-1.so
+        </seg>
+        <seg>
+          /usr/share/gtk-doc/html/garcon
+        </seg>
 @z
 
 @x
