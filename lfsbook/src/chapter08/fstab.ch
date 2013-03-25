@@ -36,8 +36,8 @@
   <para>Replace <replaceable>&lt;xxx&gt;</replaceable>,
   <replaceable>&lt;yyy&gt;</replaceable>, and <replaceable>&lt;fff&gt;</replaceable>
   with the values appropriate for the system, for example, <filename
-  class="partition">hda2</filename>, <filename
-  class="partition">hda5</filename>, and <systemitem
+  class="partition">sda2</filename>, <filename
+  class="partition">sda5</filename>, and <systemitem
   class="filesystem">ext3</systemitem>. For details on the six
   fields in this file, see <command>man 5 fstab</command>.</para>
 @y
@@ -45,7 +45,7 @@
   <replaceable>&lt;xxx&gt;</replaceable>、
   <replaceable>&lt;yyy&gt;</replaceable>、
   <replaceable>&lt;fff&gt;</replaceable> の部分はシステムに合わせて正しい記述に書き換えてください。
-  例えば <filename class="partition">hda2</filename>、<filename class="partition">hda5</filename>、<systemitem
+  例えば <filename class="partition">sda2</filename>、<filename class="partition">sda5</filename>、<systemitem
   class="filesystem">ext3</systemitem> といったものです。
   上のファイルの6行分の記述内容の詳細は <command>man 5 fstab</command> により確認してください。
   </para>

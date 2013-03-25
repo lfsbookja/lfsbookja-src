@@ -83,14 +83,14 @@
   most likely cause is that the host system does not have the
   <systemitem class="filesystem">devpts</systemitem> file system set up
   correctly. This issue is discussed in greater detail at
-  <ulink url="&lfs-root;/lfs/faq.html#no-ptys"/>.</para>
+  <ulink url="&lfs-root;lfs/faq.html#no-ptys"/>.</para>
 @y
   <para>
   Binutils と GCC におけるテストスイートの実行では、擬似端末 (pseudo terminals; PTY) を使い尽くす問題が発生します。
   これにより相当数のテストが失敗します。
   これが発生する理由はいくつかありますが、もっともありがちな理由としてはホストシステムの <systemitem
   class="filesystem">devpts</systemitem> ファイルシステムが正しく構成されていないことがあげられます。
-  この点については <ulink url="&lfs-root;/lfs/faq.html#no-ptys"/> においてかなり詳しく説明しています。
+  この点については <ulink url="&lfs-root;lfs/faq.html#no-ptys"/> においてかなり詳しく説明しています。
   </para>
 @z
 
