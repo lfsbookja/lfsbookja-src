@@ -45,6 +45,17 @@
     </para>
 @z
 
+@x Attr
+        <para>This package contains programs for working with extended
+        attributes on filesystem objects.  It is required by the libcap
+        library.</para>
+@y
+        <para>
+        このパッケージは、ファイルシステムオブジェクトにおける拡張属性を実現するプログラムを提供します。
+        libcap ライブラリがこれを必要とします。
+        </para>
+@z
+
 @x Autoconf
         <para>This package contains programs for producing shell scripts that
         can automatically configure source code from a developer's
@@ -135,6 +146,17 @@
         </para>
 @z
 
+@x D-Bus
+        <para>D-Bus is a message bus system, a simple way for applications to
+        communicate with one another; it is required by Systemd.</para>
+@y
+        <para>
+        D-Bus はメッセージバスシステムです。
+        アプリケーション間での通信を容易に実現する方法を提供します。
+        これは Systemd が必要としています。
+        </para>
+@z
+
 @x DejaGNU
         <para>This package contains a framework for testing other programs.
         It is only installed in the temporary toolchain.</para>
@@ -165,6 +187,16 @@
         <para>
         このパッケージは ext2, ext3, ext4 の各ファイルシステムを取り扱うユーティリティを提供します。
         各ファイルシステムは Linux がサポートする一般的なものであり、十分なテストが実施されているものです。
+        </para>
+@z
+
+@x Expat
+        <para>This package contains a relatively small XML parsing library.  It
+        is required by the XML::Parser Perl module.</para>
+@y
+        <para>
+        このパッケージは比較的軽量な XML パーサーライブラリを提供します。
+        これは Perl モジュール XML::Parser が必要としています。
         </para>
 @z
 
@@ -275,6 +307,16 @@
         </para>
 @z
 
+@x Gperf
+        <para>This package generates a perfect hash from a key set; it is
+        required by Systemd.</para>
+@y
+        <para>
+        このパッケージは、キーセットから完全ハッシュ値を生成します。
+        これは Systemd が必要としています。
+        </para>
+@z
+
 @x Grep
         <para>This package contains programs for searching through files. These
         programs are used by most packages' build scripts.</para>
@@ -336,6 +378,16 @@
         </para>
 @z
 
+@x Intltool
+        <para>This package contains internationalization tools; it is required
+        by Systemd.</para>
+@y
+        <para>
+        このパッケージは国際化ツールを提供します。
+        これは Systemd が必要としています。
+        </para>
+@z
+
 @x IProute2
         <para>This package contains programs for basic and advanced IPv4 and
         IPv6 networking.  It was chosen over the other common network
@@ -374,6 +426,28 @@
         <para>
         このパッケージはテキストファイルを表示する機能を提供するものであり、表示中にスクロールを可能とします。
         また Man-DB において man ページを表示する際にも利用されます。
+        </para>
+@z
+
+@x Libcap
+        <para>This package contains functions that enable root privileges to be
+        partitioned into a set of distinct privileges.  It is required by
+        Systemd.</para>
+@y
+        <para>
+        このパッケージはルート権限を他の権限に分割します。
+        これは Systemd が必要としています。
+        </para>
+@z
+
+@x Libpipeline
+        <para>The Libpipeline package contains a library for manipulating
+        pipelines of subprocesses in a flexible and convenient way. It is
+        required by the Man-DB package.</para>
+@y
+        <para>
+        このパッケージは、サブプロセスのパイプラインを柔軟かつ便利に取り扱うライブラリを提供します。
+        これは Man-DB パッケージが必要としています。
         </para>
 @z
 
@@ -576,14 +650,17 @@
         <para>This package contains programs for controlling the startup,
         running, and shutdown of the system.</para>
 @y
-        <para>This package contains programs for controlling the startup,
-        running, and shutdown of the system.</para>
+        <para>
+        このパッケージは、システムの起動からシャットダウンまでを制御するプログラムを提供します。 
+        </para>
 @z
 
 @x Sysvinit
         <para>This package provides misc. utils needed by some packages.</para>
 @y
-        <para>This package provides misc. utils needed by some packages.</para>
+        <para>
+        このパッケージは、他のパッケージが必要とするさまざまなユーティリティーを提供します。
+        </para>
 @z
 
 @x Tar
@@ -639,6 +716,16 @@
         このパッケージはテキストエディターを提供します。
         これを採用しているのは、従来の vi エディタとの互換性があり、しかも数々の有用な機能を提供するものだからです。
         テキストエディターは個人により好みはさまざまですから、もし別のエディターを利用したいなら、そちらを用いても構いません。
+        </para>
+@z
+
+@x XML::Parser
+        <para>This package contains an XML Parsing library for Perl.  It is
+        required by the Intltool package.</para>
+@y
+        <para>
+        このパッケージは Perl における XML パーサーライブラリを提供します。
+        これは Intltool パッケージが必要としています。
         </para>
 @z
 

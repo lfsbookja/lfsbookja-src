@@ -48,6 +48,200 @@
 @z
 
 @x
+      <para>2013-03-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Create an empty
+          <filename>/etc/sysctl.conf</filename> file to prevent a boot error
+          being logged by Systemd.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - 空のファイル <filename>/etc/sysctl.conf</filename> を生成することに。
+          これは Systemd によってログ出力されるブートエラーを回避するため。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-03-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.50. Fixes
+          <ulink url="&lfs-ticket-root;3308">#3308</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.3. Fixes
+          <ulink url="&lfs-ticket-root;3307">#3307</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to MPFR-3.1.2. Fixes
+          <ulink url="&lfs-ticket-root;3306">#3306</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Dejagnu-1.5.1. Fixes
+          <ulink url="&lfs-ticket-root;3305">#3305</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Texinfo-5.1. Fixes
+          <ulink url="&lfs-ticket-root;3304">#3304</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.50 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3308">#3308</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3307">#3307</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPFR-3.1.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3306">#3306</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Dejagnu-1.5.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3305">#3305</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Texinfo-5.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3304">#3304</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-03-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Fix a build issue with Check-0.9.9 on some hosts by
+          adding the &quot;sysroot&quot; feature to Binutils. Thanks to Billy
+          O'Connor, Yaacov-Yoseph Weiss and Pierre Labastie for the reports, and
+          to Pierre again for the fix.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Perl-5.16.3. Fixes
+          <ulink url="&lfs-ticket-root;3303">#3303</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Bash-4.2.45. Fixes
+          <ulink url="&lfs-ticket-root;3301">#3301</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Systemd-198. Fixes
+          <ulink url="&lfs-ticket-root;3300">#3300</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.48. Fixes
+          <ulink url="&lfs-ticket-root;3299">#3299</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.2. Fixes
+          <ulink url="&lfs-ticket-root;3297">#3297</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tzdata-2013b. Fixes
+          <ulink url="&lfs-ticket-root;3296">#3296</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - 特定のホストでの Check-0.9.9 のビルドの問題を解消するために、Binutils に &quot;sysroot&quot; 機能を追加。
+          報告をあげてくれた Billy O'Connor, Yaacov-Yoseph Weiss, Pierre Labastie に感謝。
+          また再修正をあげてくれた Pierre に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Perl-5.16.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3303">#3303</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Bash-4.2.45 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3301">#3301</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Systemd-198 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3300">#3300</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.48 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3299">#3299</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3297">#3297</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2013b へのアップグレード。
+          <ulink url="&lfs-ticket-root;3296">#3296</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-03-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Make the <filename>/etc/localtime</filename> file a
+          symlink again, so that <command>timedatectl</command> displays the
+          timezone correctly.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Document how to configure the virtual console under
+          Systemd.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - <filename>/etc/localtime</filename> ファイルへのシンボリックリンクを再生成。
+          <command>timedatectl</command> がタイムゾーンを正しく表示できるようにするため。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Systemd での仮想コンソール設定方法を追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Have DBus use the same
+          <filename>machine-id</filename> file as Systemd.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Improve the tagging and placement of some post
+          install instructions for DBus and Systemd. Thanks to Pierre Labastie
+          for the report.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - DBus にて Systemd と同じ <filename>machine-id</filename> ファイルを利用。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - DBus、Systemd にてタグを改正。
+          またインストール直後の手順を変更。
+          報告を上げてくれた Pierre Labastie に感謝。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-01</para>
       <itemizedlist>
         <listitem>

@@ -95,6 +95,22 @@
 @z
 
 @x
+    <title>Configuring Procps</title>
+@y
+    <title>&Configuring1;Procps&Configuring2;</title>
+@z
+
+@x
+    <para>The <filename>/etc/sysctl.conf</filename> file needs to be present,
+    otherwise Systemd will output an error when booting:</para>
+@y
+    <para>
+    <filename>/etc/sysctl.conf</filename> ファイルが存在していることが必要になります。
+    もしない場合は Systemd がブート時にエラーを出力します。
+    </para>
+@z
+
+@x
     <title>Contents of Procps-ng</title>
 @y
     <title>&ContentsOf1;Procps-ng&ContentsOf2;</title>

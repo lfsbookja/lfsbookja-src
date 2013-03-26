@@ -132,7 +132,7 @@
 
 @x
     <para>Move some programs so they are available if <filename
-    class='directory'>/usr</filename> is not accessable:</para>
+    class='directory'>/usr</filename> is not accessible:</para>
 @y
     <para>
     <filename class='directory'>/usr</filename> がアクセス不能であっても各種プログラムが実行できるように、それらを移動させます。

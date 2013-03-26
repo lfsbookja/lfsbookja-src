@@ -102,15 +102,6 @@
 @z
 
 @x
-    <para>Create the <filename>/etc/machine-id</filename> file needed by
-    Journald:</para>
-@y
-    <para>
-    Journald にて必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
-    </para>
-@z
-
-@x
     <para>Create the Sysvinit compatibility symlinks, so Systemd is used
     as the default init system:</para>
 @y
@@ -134,10 +125,19 @@
 @z
 
 @x
-    <para>Remove reference to a non-existent group:</para>
+    <para>Remove a reference to a non-existent group:</para>
 @y
     <para>
     参照されていないグループに対する参照を削除します。
+    </para>
+@z
+
+@x
+    <para>Create the <filename>/etc/machine-id</filename> file needed by
+    Journald:</para>
+@y
+    <para>
+    Journald にて必要となる <filename>/etc/machine-id</filename> ファイルを生成します。
     </para>
 @z
 

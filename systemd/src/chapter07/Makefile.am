@@ -15,7 +15,6 @@ CHANGE_FILES = \
 	introduction.ch \
 	locale.ch       \
 	network.ch      \
-	setclock.ch     \
 	symlinks.ch     \
 	udev.ch
 
@@ -40,6 +39,5 @@ inputrc.xml:      $(BOOKdir)/$@ $(srcdir)/inputrc.ch
 introduction.xml: $(BOOKdir)/$@ $(srcdir)/introduction.ch
 network.xml:      $(BOOKdir)/$@ $(srcdir)/network.ch
 locale.xml:       $(BOOKdir)/$@ $(srcdir)/locale.ch
-setclock.xml:     $(BOOKdir)/$@ $(srcdir)/setclock.ch
 symlinks.xml:     $(BOOKdir)/$@ $(srcdir)/symlinks.ch
 udev.xml:         $(BOOKdir)/$@ $(srcdir)/udev.ch

@@ -47,7 +47,8 @@
 @z
 
 @x
-  <para>Second, issues that affect the proper setup of devices diescussed.</para>
+  <para>Second, issues that affect the proper setup of devices are
+  discussed.</para>
 @y
   <para>
   次にデバイス設定を適切に行う方法について説明します。
@@ -71,9 +72,9 @@
 @z
 
 @x
-  <para>Third, configuring hostname, keyboard layout and system clock.</para>
+  <para>Third, configuring the hostname, and keyboard layout.</para>
 @y
-  <para>ホスト名、キーボードレイアウト、システムクロックについても設定します。</para>
+  <para>ホスト名、キーボードレイアウトについても設定します。</para>
 @z
 
 @x
@@ -81,17 +82,11 @@
        <para><xref linkend="ch-scripts-hostname" role="."/></para>
      </listitem>
      <listitem>
-       <para><xref linkend="ch-scripts-setclock" role="."/></para>
-     </listitem>
-     <listitem>
        <para><xref linkend="ch-scripts-console" role="."/></para>
      </listitem>
 @y
      <listitem>
        <para><xref linkend="ch-scripts-hostname" role=""/></para>
-     </listitem>
-     <listitem>
-       <para><xref linkend="ch-scripts-setclock" role=""/></para>
      </listitem>
      <listitem>
        <para><xref linkend="ch-scripts-console" role=""/></para>

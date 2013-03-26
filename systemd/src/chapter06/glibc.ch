@@ -522,27 +522,6 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
-      <title>The meaning of the cp option:</title>
-@y
-      <title>&MeaningOfOption1;cp&MeaningOfOption2;:</title>
-@z
-
-@x
-          <para>This is needed to force removal of the already existing symbolic
-          link. The reason for copying the file instead of using a symlink is to
-          cover the situation where <filename class="directory">/usr</filename>
-          is on a separate partition. This could be important when booted into
-          single user mode.</para>
-@y
-    <para>
-    このオプションは既に存在するシンボリックリンクを削除します。
-    ここではシンボリックリンクを再生成するのではなく、ファイルのコピーを行います。
-    これは別パーティション内に <filename class="directory">/usr</filename> ディレクトリが存在するケースに対応するためです。
-    シングルユーザーモードでシステムを起動する際にはこのことが必要となります。
-    </para>
-@z
-
-@x
     <title>Configuring the Dynamic Loader</title>
 @y
     <title>&Configuring1;ダイナミックローダー&Configuring2;</title>
