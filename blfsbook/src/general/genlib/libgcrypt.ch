@@ -26,16 +26,14 @@
 @z
 
 @x
-    <para>The <application>libgcrypt</application> package contains a general
-    purpose crypto library based on the code used in
-    <application>GnuPG</application>. The library provides a high level
-    interface to cryptographic building blocks using an extendable and flexible
-    API.</para>
+      The <application>libgcrypt</application> package contains a general
+      purpose crypto library based on the code used in
+      <application>GnuPG</application>. The library provides a high level
+      interface to cryptographic building blocks using an extendable and flexible
+      API.
 @y
-    <para>
-    <application>libgcrypt</application> パッケージは <application>GnuPG</application> にて用いられるコードに基づいた、汎用的な暗号化ライブラリです。
-    このライブラリは、拡張性と柔軟性に優れた API 関数を利用して、暗号化に対しての高度なインターフェースを提供します。
-    </para>
+      <application>libgcrypt</application> パッケージは <application>GnuPG</application> にて用いられるコードに基づいた、汎用的な暗号化ライブラリです。
+      このライブラリは、拡張性と柔軟性に優れた API 関数を利用して、暗号化に対しての高度なインターフェースを提供します。
 @z
 
 @x
@@ -45,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libgcrypt-download-http;"/></para>
+          Download (HTTP): <ulink url="&libgcrypt-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libgcrypt-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libgcrypt-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libgcrypt-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libgcrypt-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libgcrypt-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libgcrypt-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libgcrypt-md5sum;</para>
+          Download MD5 sum: &libgcrypt-md5sum;
 @y
-        <para>&Download; MD5 sum: &libgcrypt-md5sum;</para>
+          &Download; MD5 sum: &libgcrypt-md5sum;
 @z
 
 @x
-        <para>Download size: &libgcrypt-size;</para>
+          Download size: &libgcrypt-size;
 @y
-        <para>&DownloadSize;: &libgcrypt-size;</para>
+          &DownloadSize;: &libgcrypt-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libgcrypt-buildsize;</para>
+          Estimated disk space required: &libgcrypt-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libgcrypt-buildsize;</para>
+          &Estimateddiskspacerequired;: &libgcrypt-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libgcrypt-time;</para>
+          Estimated build time: &libgcrypt-time;
 @y
-        <para>&Estimatedbuildtime;: &libgcrypt-time;</para>
+          &Estimatedbuildtime;: &libgcrypt-time;
 @z
 
 @x
@@ -88,28 +86,34 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libgpg-error"/></para>
+    <para role="required">
+      <xref linkend="libgpg-error"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libgpg-error"/></para>
+    <para role="required">
+      <xref linkend="libgpg-error"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="pth"/> and
-    <xref linkend="libcap2"/></para>
+    <para role="optional">
+    <xref linkend="libcap2"/> and
+      <xref linkend="pth"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="pth"/>,
-    <xref linkend="libcap2"/></para>
+    <para role="optional">
+    <xref linkend="libcap2"/>,
+      <xref linkend="pth"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libgcrypt"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libgcrypt"/></para>
 @z
 
 @x
@@ -119,52 +123,40 @@
 @z
 
 @x
-    <para>Install <application>libgcrypt</application> by running the
-    following commands:</para>
+      Install <application>libgcrypt</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libgcrypt</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libgcrypt</application> をビルドします。
 @z
 
 @x
-    <para>Only <command>info</command> documentation is shipped in the package
-    tarball. If you wish to build alternate formats of the documentation,
-    (you must have <xref linkend="texlive"/>
-    installed to build the PDF and PostScript), then issue the following
-    commands:</para>
+      Only <command>info</command> documentation is shipped in the package
+      tarball. If you wish to build alternate formats of the documentation,
+      (you must have <xref linkend="texlive"/> installed to build the PDF
+      and PostScript documentation), then issue the following commands:
 @y
-    <para>
-    パッケージの tarball には <command>info</command> ドキュメントのみが提供されています。
-    他の書式のドキュメントをビルドする場合 (その場合は<xref linkend="texlive"/> をインストールしておく必要があり)、以下のコマンドを実行します。
-    </para>
+      パッケージの tarball には <command>info</command> ドキュメントのみが提供されています。
+      他の書式のドキュメントをビルドする場合 (その場合は<xref linkend="texlive"/> をインストールしておく必要があり)、以下のコマンドを実行します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストするなら <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストするなら <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you built the additional documentation, install it by issuing the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
+      If you built the additional documentation, install it by issuing the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    他の書式のドキュメントをビルドしていた場合は、<systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してドキュメントをインストールします。
-    </para>
+      他の書式のドキュメントをビルドしていた場合は、<systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してドキュメントをインストールします。
 @z
 
 @x
@@ -184,13 +176,25 @@
 @z
 
 @x
-        <seg>dumpsexp, hmac256 and libgcrypt-config</seg>
-        <seg>libgcrypt.{so,a}</seg>
-        <seg>/usr/share/doc/libgcrypt-&libgcrypt-version;</seg>
+        <seg>
+          dumpsexp, hmac256 and libgcrypt-config
+        </seg>
+        <seg>
+          libgcrypt.so
+        </seg>
+        <seg>
+          /usr/share/doc/libgcrypt-&libgcrypt-version;
+        </seg>
 @y
-        <seg>dumpsexp, hmac256, libgcrypt-config</seg>
-        <seg>libgcrypt.{so,a}</seg>
-        <seg>/usr/share/doc/libgcrypt-&libgcrypt-version;</seg>
+        <seg>
+          dumpsexp, hmac256, libgcrypt-config
+        </seg>
+        <seg>
+          libgcrypt.so
+        </seg>
+        <seg>
+          /usr/share/doc/libgcrypt-&libgcrypt-version;
+        </seg>
 @z
 
 @x
@@ -199,20 +203,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libgcrypt-config
-          <para>is a utility used to configure and build applications based on
-          the libgcrypt(3) library. It can be used to query the C compiler and
-          linker flags which are required to correctly compile and link the
-          application against the libgcrypt(3) library.</para>
+@x libgcrypt.so
+            contains the cryptographic API functions.
 @y
-          <para>
-          libgcrypt(3) ライブラリを利用するアプリケーションを設定し構築するためのユーティリティ。
-          そのようなアプリケーションをビルドする際に必要となるコンパイラーフラグ、リンカーフラグを調べることができます。
-          </para>
-@z
-
-@x libgcrypt.{so,a}
-          <para>contains the cryptographic API functions.</para>
-@y
-          <para>暗号化 API 関数を提供します。</para>
+            暗号化 API 関数を提供します。
 @z

@@ -246,26 +246,26 @@
 @x
         To connect to an access point that uses a password, you need to put
         the pre-shared key in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
         SSID is the string that the access point/router transmits to
         identify itself. Run the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         To connect to an access point that uses a password, you need to put
         the pre-shared key in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
         SSID is the string that the access point/router transmits to
         identify itself. Run the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf
+        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf
         </filename> can hold the details of several access points. When
         <command>wpa_supplicant</command> is started, it will scan for the
         SSIDs it can see and choose the appropriate password to connect.
 @y
-        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf
+        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf
         </filename> can hold the details of several access points. When
         <command>wpa_supplicant</command> is started, it will scan for the
         SSIDs it can see and choose the appropriate password to connect.
@@ -274,12 +274,12 @@
 @x
         If you want to connect to an access point that isn't password
         protected, put an entry like this in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
         Replace "Some-SSID" with the SSID of the access point/router.
 @y
         If you want to connect to an access point that isn't password
         protected, put an entry like this in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wlan0</replaceable>.conf</filename>.
+        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
         Replace "Some-SSID" with the SSID of the access point/router.
 @z
 
@@ -317,14 +317,14 @@
         If your router/access point uses DHCP to allocate IP addresses, you
         can install <xref linkend="dhcp"/> client and use it to
         automatically obtain network addresses. Create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         If your router/access point uses DHCP to allocate IP addresses, you
         can install <xref linkend="dhcp"/> client and use it to
         automatically obtain network addresses. Create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
@@ -332,13 +332,13 @@
 @x
         If you prefer <xref linkend="dhcpcd"/> instead of
         <xref linkend="dhcp"/> client, then create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         If you prefer <xref linkend="dhcpcd"/> instead of
         <xref linkend="dhcp"/> client, then create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
@@ -346,13 +346,13 @@
 @x
         Alternatively, if you use static addresses on your local network,
         then create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         Alternatively, if you use static addresses on your local network,
         then create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wlan0</replaceable>
+        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
@@ -369,10 +369,20 @@
 
 @x
         Replace <replaceable>wlan0</replaceable> with the correct
-        wireless interface.
+        wireless interface and <replaceable>wifi0</replaceable>
+        with desired name for the configuration file. Please note
+        that <filename>wpa_supplicant-*.conf</filename> and
+        <filename>ifconfig.*</filename> configuration files need
+        to have identical names, ie both contain
+        <replaceable>wifi0</replaceable> in their name.
 @y
         Replace <replaceable>wlan0</replaceable> with the correct
-        wireless interface.
+        wireless interface and <replaceable>wifi0</replaceable>
+        with desired name for the configuration file. Please note
+        that <filename>wpa_supplicant-*.conf</filename> and
+        <filename>ifconfig.*</filename> configuration files need
+        to have identical names, ie both contain
+        <replaceable>wifi0</replaceable> in their name.
 @z
 
 @x

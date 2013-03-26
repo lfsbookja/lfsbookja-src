@@ -99,33 +99,31 @@
 @x
             Download (FTP): <ulink url="&dbus-glib-download-ftp;"/>
 @y
-            Download (FTP): <ulink url="&dbus-glib-download-ftp;"/>
+            &Download; (FTP): <ulink url="&dbus-glib-download-ftp;"/>
 @z
 
 @x
             Download MD5 sum: &dbus-glib-md5sum;
 @y
-            Download MD5 sum: &dbus-glib-md5sum;
+            &Download; MD5 sum: &dbus-glib-md5sum;
 @z
 
 @x
             Download size: &dbus-glib-size;
 @y
-            Download size: &dbus-glib-size;
+            &DownloadSize;: &dbus-glib-size;
 @z
 
 @x
             Estimated disk space required: &dbus-glib-buildsize;
 @y
-            Estimated disk space required: &dbus-glib-buildsize;
-          <para>&Estimateddiskspacerequired;: &dbus-glib-buildsize;</para>
+            &Estimateddiskspacerequired;: &dbus-glib-buildsize;
 @z
 
 @x
             Estimated build time: &dbus-glib-time;
 @y
-            Estimated build time: &dbus-glib-time;
-          <para>&Estimatedbuildtime;: &dbus-glib-time;</para>
+            &Estimatedbuildtime;: &dbus-glib-time;
 @z
 
 @x

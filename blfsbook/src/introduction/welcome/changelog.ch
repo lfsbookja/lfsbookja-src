@@ -42,6 +42,12 @@
 @z
 
 @x
+      <para>March 23rd, 2013</para>
+@y
+      <para>2013/03/23</para>
+@z
+
+@x
       <para>March 18th, 2013</para>
 @y
       <para>2013/03/18</para>
@@ -450,7 +456,7 @@
           <para>[krejzi] - Iptables 1.4.17.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - KDE 4.9.5..</para>
+          <para>[krejzi] - KDE 4.9.5.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - libdiscid 0.3.0.</para>
@@ -484,7 +490,7 @@
         </listitem>
       </itemizedlist>
 @y
-      <para>2013/01/05</para>
+      <para>January 5th, 2013</para>
       <itemizedlist>
         <listitem>
           <para>[krejzi] - Added SBC 1.0.</para>
@@ -514,7 +520,7 @@
           <para>[krejzi] - Iptables 1.4.17.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - KDE 4.9.5..</para>
+          <para>[krejzi] - KDE 4.9.5.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - libdiscid 0.3.0.</para>

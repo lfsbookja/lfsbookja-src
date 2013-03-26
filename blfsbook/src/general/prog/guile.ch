@@ -179,21 +179,21 @@
         </seg>
         <seg>
           /usr/include/guile,
-          /usr/lib/guile,
-          /usr/share/doc/guile-&guile-version; and
+          /usr/lib/guile<!--,
+          /usr/share/doc/guile-&guile-version;--> and
           /usr/share/guile
         </seg>
 @y
         <seg>
-          guild, guile, guile-config, guile-snarf, guile-tools
+          guild, guile, guile-config, guile-snarf and guile-tools
         </seg>
         <seg>
-          libguile-2.0.so, libguilereadline-v-18.so
+          libguile-2.0.so and libguilereadline-v-18.so
         </seg>
         <seg>
           /usr/include/guile,
-          /usr/lib/guile,
-          /usr/share/doc/guile-&guile-version;,
+          /usr/lib/guile<!--,
+          /usr/share/doc/guile-&guile-version;-->,
           /usr/share/guile
         </seg>
 @z

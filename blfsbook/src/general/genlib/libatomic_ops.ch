@@ -39,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libatomic_ops-download-http;"/></para>
+          Download (HTTP): <ulink url="&libatomic_ops-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libatomic_ops-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libatomic_ops-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libatomic_ops-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libatomic_ops-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libatomic_ops-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libatomic_ops-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libatomic_ops-md5sum;</para>
+          Download MD5 sum: &libatomic_ops-md5sum;
 @y
-        <para>&Download; MD5 sum: &libatomic_ops-md5sum;</para>
+          &Download; MD5 sum: &libatomic_ops-md5sum;
 @z
 
 @x
-        <para>Download size: &libatomic_ops-size;</para>
+          Download size: &libatomic_ops-size;
 @y
-        <para>&DownloadSize;: &libatomic_ops-size;</para>
+          &DownloadSize;: &libatomic_ops-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libatomic_ops-buildsize;</para>
+          Estimated disk space required: &libatomic_ops-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libatomic_ops-buildsize;</para>
+          &Estimateddiskspacerequired;: &libatomic_ops-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libatomic_ops-time;</para>
+          Estimated build time: &libatomic_ops-time;
 @y
-        <para>&Estimatedbuildtime;: &libatomic_ops-time;</para>
+          &Estimatedbuildtime;: &libatomic_ops-time;
 @z
 
 @x
@@ -113,6 +113,16 @@
 @z
 
 @x
+      <command>sed -i 's#AM_CONFIG_HEADER ...</command>: This
+      <command>sed</command> fixes building with
+      <application>Automake</application> 1.13.
+@y
+      <command>sed -i 's#AM_CONFIG_HEADER ...</command>: This
+      <command>sed</command> fixes building with
+      <application>Automake</application> 1.13.
+@z
+
+@x
       <command>sed -i 's#AC_PROG_RANLIB ...</command>: These
       <command>sed</command>s massage the autotool files so that a shared 
       library is built, the tests pass, and the docs are installed in an
@@ -123,11 +133,11 @@
 @z
 
 @x
-      <command>autoreconf -i</command>: This regenerates the
+      <command>autoreconf -fi</command>: This regenerates the
       <command>configure</command> script and the <filename>Makefile.in</filename>
       files and installs a missing file.
 @y
-      <command>autoreconf -i</command>:
+      <command>autoreconf -fi</command>:
       このコマンドにより <command>configure</command> スクリプトや <filename>Makefile.in</filename> を再生成し、インストールするべきファイルを適切にインストールするようにします。
 @z
 
@@ -176,9 +186,7 @@
 @z
 
 @x libatomic_ops.so
-          <para>contains functions for atomic memory operations.</para>
+            contains functions for atomic memory operations.
 @y
-          <para>
-          atomic メモリ制御のための関数を提供します。
-          </para>
+            atomic メモリ制御のための関数を提供します。
 @z

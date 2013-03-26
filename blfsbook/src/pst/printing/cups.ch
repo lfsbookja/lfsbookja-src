@@ -84,12 +84,6 @@
 @z
 
 @x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">Cups Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Cups&Dependencies2;</bridgehead>
@@ -123,9 +117,7 @@
       <xref linkend="mitkrb"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="php"/>,
-      <xref linkend="python2"/>,
-      <!-- <ulink url="http://valgrind.org/">Valgrind</ulink>
-      (optionaly used during the test suites) -->and
+      <xref linkend="python2"/> and
       <xref linkend="xdg-utils"/>
     </para>
 @y
@@ -141,8 +133,6 @@
       <xref linkend="openjdk"/>,
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
-      <!-- <ulink url="http://valgrind.org/">Valgrind</ulink>
-      (optionaly used during the test suites) -->,
       <xref linkend="xdg-utils"/>
     </para>
 @z

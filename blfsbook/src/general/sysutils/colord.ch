@@ -121,7 +121,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="colord-gtk"/> and <xref linkend="gnome-desktop"/>
-      (To build example tools),
+      (To build the example tools),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/> and
       <xref linkend="sane"/>
@@ -129,7 +129,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="colord-gtk"/>, <xref linkend="gnome-desktop"/>
+      <xref linkend="colord-gtk"/> and <xref linkend="gnome-desktop"/>
       (サンプルツール構築のため),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>,
@@ -201,9 +201,8 @@
           colord-sane, colord-session and colormgr
         </seg>
         <seg>
-          libcolordprivate.so, libcolord.so, libcolorhug.so,
-          libdtp94-private.so, libhuey-private.so and
-          libmunki-private.so
+          libcolordprivate.so, libcolord.so and
+          libcolorhug.so
         </seg>
         <seg>
           /usr/include/colord-1,
@@ -221,9 +220,8 @@
           colord-sane, colord-session, colormgr
         </seg>
         <seg>
-          libcolordprivate.so, libcolord.so, libcolorhug.so,
-          libdtp94-private.so, libhuey-private.so,
-          libmunki-private.so
+          libcolordprivate.so, libcolord.so,
+          libcolorhug.so
         </seg>
         <seg>
           /usr/include/colord-1,
