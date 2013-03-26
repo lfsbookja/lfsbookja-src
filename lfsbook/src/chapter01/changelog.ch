@@ -48,6 +48,84 @@
 @z
 
 @x
+      <para>2013-03-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-lfs-198-3 to fix issues with libdrm
+          installation in BLFS. Thanks to Nico P for the report, and to Armin
+          for the fix.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - BLFS での libdrm のインストールに問題が発生するため、Udev-lfs-198-3 へのアップグレード。
+          報告を上げてくれた Nico P および修正を上げてくれた Armin に感謝。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-03-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Udev-lfs-198-2 to fix issues with keymap
+          installation in BLFS.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.50. Fixes
+          <ulink url="&lfs-ticket-root;3308">#3308</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.3. Fixes
+          <ulink url="&lfs-ticket-root;3307">#3307</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to MPFR-3.1.2. Fixes
+          <ulink url="&lfs-ticket-root;3306">#3306</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Dejagnu-1.5.1. Fixes
+          <ulink url="&lfs-ticket-root;3305">#3305</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Texinfo-5.1. Fixes
+          <ulink url="&lfs-ticket-root;3304">#3304</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - BLFS での keymap のインストールに問題が発生するため、Udev-lfs-198-2 へのアップグレード。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.50 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3308">#3308</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3307">#3307</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - MPFR-3.1.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3306">#3306</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Dejagnu-1.5.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3305">#3305</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Texinfo-5.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3304">#3304</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-13</para>
       <itemizedlist>
         <listitem>
@@ -85,7 +163,7 @@
       <para>2013-03-13</para>
       <itemizedlist>
         <listitem>
-          <para>[matthew] - Binutils に対して &quot;sysroot&quot; 機能を付与されたホストにて、Check-0.9.9 が正常ビルドできない問題へ対処。
+          <para>[matthew] - 特定のホストでの Check-0.9.9 のビルドの問題を解消するために、Binutils に &quot;sysroot&quot; 機能を追加。
           報告をあげてくれた Billy O'Connor, Yaacov-Yoseph Weiss, Pierre Labastie に感謝。
           また再修正をあげてくれた Pierre に感謝。</para>
         </listitem>
