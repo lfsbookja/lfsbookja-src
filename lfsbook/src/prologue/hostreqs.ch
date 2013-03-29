@@ -90,12 +90,12 @@
 @z
 
 @x
-      <para><emphasis role="strong">Gcc-4.1.2</emphasis> (Versions
+      <para><emphasis role="strong">GCC-4.1.2</emphasis> (Versions
       greater than &gcc-version; are not recommended as they have not
       been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Gcc-4.1.2</emphasis> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">GCC-4.1.2</emphasis> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 

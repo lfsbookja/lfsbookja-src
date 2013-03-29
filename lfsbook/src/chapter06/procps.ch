@@ -86,7 +86,7 @@
 @z
 
 @x
-<para>Finally move the library to a location that can be found if
+<para>Finally, move the library to a location that can be found if
 <filename class="directory">/usr</filename> is not mounted.</para>
 @y
 <para>

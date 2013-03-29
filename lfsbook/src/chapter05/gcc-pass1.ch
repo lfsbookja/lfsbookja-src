@@ -224,13 +224,14 @@
 
 @x --disable-decimal-float, --disable-threads, --disable-libmudflap, --disable-libssp, --disable-libgomp, --disable-libquadmath
           <para>These switches disable support for the decimal floating point
-          extension, threading, libmudflap, libssp and libgomp and libquadmath
+          extension, threading, libatomic, libgomp, libitm, libmudflap,
+          libquadmath, libsanitizer, libssp and the C++ standard library
           respectively. These features will fail to compile when building a
           cross-compiler and are not necessary for the task of cross-compiling
           the temporary libc.</para>
 @y
           <para>
-          これらのオプションは順に、十進浮動小数点制御、スレッド処理、libmudflap、libssp、libgomp, libquadmath, libiberty, zlib のサポートをいずれも無効にすることを指示します。
+          これらのオプションは順に、十進浮動小数点制御、スレッド処理、libatomic, libgomp, libitm, libmudflap, libquadmath, libsanitizer, libssp, C++ 標準ライブラリのサポートをいずれも無効にすることを指示します。
           これらの機能を含めていると、クロスコンパイラーをビルドする際にはコンパイルに失敗します。
           またクロスコンパイルによって一時的な libc ライブラリを構築する際には不要なものです。
           </para>
@@ -246,12 +247,12 @@
           </para>
 @z
 
-@x --enable-languages=c
-          <para>This option ensures that only the C compiler is built.
-          This is the only language needed now.</para>
+@x --enable-languages=c,c++
+          <para>This option ensures that only the C and C++ compilers are built.
+          These are the only languages needed now.</para>
 @y
           <para>
-          このオプションは C コンパイラーのみビルドすることを指示します。
+          このオプションは C コンパイラーおよび C++ コンパイラーのみビルドすることを指示します。
           この時点で必要なのはこの言語だけだからです。
           </para>
 @z

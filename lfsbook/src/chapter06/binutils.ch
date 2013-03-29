@@ -68,10 +68,11 @@
 @z
 
 @x
-    <para>Fix some test suite scripts so all tests pass:</para>
+    <para>Fix a couple of syntax errors that prevent the documentation from
+    building with Texinfo-&texinfo-version;:</para>
 @y
     <para>
-    テストをすべて実行できるようにするために、テストスイートスクリプトをいくつか修正します。
+    Texinfo-&texinfo-version; にてドキュメントビルドが文法エラーにより失敗する点を修正します。
     </para>
 @z
 

@@ -34,6 +34,7 @@ CHANGE_FILES = \
 	grep.ch                \
 	gzip.ch                \
 	introduction.ch        \
+	libstdc++.ch           \
 	linux-headers.ch       \
 	m4.ch                  \
 	make.ch                \
@@ -90,6 +91,7 @@ gmp.xml:                 $(BOOKdir)/$@  $(srcdir)/gmp.ch
 grep.xml:                $(BOOKdir)/$@  $(srcdir)/grep.ch
 gzip.xml:                $(BOOKdir)/$@  $(srcdir)/gzip.ch
 introduction.xml:        $(BOOKdir)/$@  $(srcdir)/introduction.ch
+libstdc++.xml:           $(BOOKdir)/$@  $(srcdir)/libstdc++.ch
 linux-headers.xml:       $(BOOKdir)/$@  $(srcdir)/linux-headers.ch
 m4.xml:                  $(BOOKdir)/$@  $(srcdir)/m4.ch
 make.xml:                $(BOOKdir)/$@  $(srcdir)/make.ch
