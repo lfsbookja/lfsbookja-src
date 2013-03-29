@@ -48,6 +48,74 @@
 @z
 
 @x
+      <para>2013-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Binutils-2.23.2. Fixes
+          <ulink url="&lfs-ticket-root;3318">#3318</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Systemd-199. Fixes
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Procps-NG-3.3.7. Fixes
+          <ulink url="&lfs-ticket-root;3316">#3316</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Diffutils-3.3. Fixes
+          <ulink url="&lfs-ticket-root;3315">#3315</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to File-5.14. Fixes
+          <ulink url="&lfs-ticket-root;3313">#3313</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GCC-4.8.0. Fixes
+          <ulink url="&lfs-ticket-root;3312">#3312</ulink>. Thanks to Pierre
+          Labastie for the patch on which this was based.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.4. Fixes
+          <ulink url="&lfs-ticket-root;3310">#3310</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Binutils-2.23.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3318">#3318</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Systemd-199 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Procps-NG-3.3.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3316">#3316</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Diffutils-3.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3315">#3315</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - File-5.14 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3313">#3313</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC-4.8.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3312">#3312</ulink>  を Fix に。
+          パッチ報告を上げてくれた Pierre Labastie に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3310">#3310</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-20</para>
       <itemizedlist>
         <listitem>
