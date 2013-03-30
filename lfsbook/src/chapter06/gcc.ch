@@ -29,29 +29,6 @@
 @z
 
 @x
-    <para>Apply a <command>sed</command> substitution that will suppress the
-    installation of <filename class="libraryfile">libiberty.a</filename>. The
-    version of <filename class="libraryfile">libiberty.a</filename> provided by
-    Binutils will be used instead:</para>
-@y
-    <para>
-    <command>sed</command> による置換を行って <filename
-    class="libraryfile">libiberty.a</filename> をインストールしないようにします。
-    <filename class="libraryfile">libiberty.a</filename> は Binutils が提供するものを利用することにします。
-    </para>
-@z
-
-@x
-    <para>Again, do not build the .info files. They are broken with the current
-    version of <command>makeinfo</command>.</para>
-@y
-    <para>
-    .info ファイルはビルドしないようにします。
-    現在の <command>makeinfo</command> で生成しても不十分なものが生成されてしまうためです。
-    </para>
-@z
-
-@x
     <para>As in <xref linkend="ch-tools-gcc-pass2"/>, apply the following
     <command>sed</command> to force the build to use the
     <option>-fomit-frame-pointer</option> compiler flag in order to ensure
@@ -59,6 +36,17 @@
 @y
     <para>
     <xref linkend="ch-tools-gcc-pass2"/>にて行ったように <command>sed</command> を使って以下のようにコンパイラーフラグ <option>-fomit-frame-pointer</option> を強制的に指定し、一貫したコンパイルを実現します。
+    </para>
+@z
+
+@x
+    <para>Workaround a bug so that GCC doesn't install
+    <filename class="libraryfile">libiberty.a</filename>, which is already
+    provided by Binutils:</para>
+@y
+    <para>
+    GCC パッケージでは <filename class="libraryfile">libiberty.a</filename> をインストールしないようにします。
+    これは Binutils にて既に提供されています。
     </para>
 @z
 
@@ -102,6 +90,16 @@
       <title>&MeaningOfOption1;Configure&MeaningOfOption2;:</title>
 @z
 
+@x --disable-install-libiberty
+          <para>This prevents GCC from installing its own copy of libiberty,
+          which is already provided by Binutils-&binutils-version;.</para>
+@y
+          <para>
+          libiberty をインストールしないようにします。
+          これは Binutils-&binutils-version; により既に提供されています。
+          </para>
+@z
+
 @x --with-system-zlib
           <para>This switch tells GCC to link to the system installed copy of
           the Zlib library, rather than its own internal copy.</para>
@@ -109,25 +107,6 @@
           <para>
           このオプションはシステムに既にインストールされている Zlib ライブラリをリンクすることを指示するものであり、内部にて作成されるライブラリを用いないようにします。
           </para>
-@z
-
-@x
-      <para>There is an optional argument to <command>configure</command>,
-      <option>--enable-lto</option>, that can be used to allow
-      <command>gcc</command> to do do "link time optimization" if specified.  No
-      packages in LFS or BLFS currently use this capability.</para>
-    
-      <para>To use this feature, it must also be enabled in
-      <application>binutils</application>.</para> 
-@y
-      <para>
-      <command>configure</command> のオプション引数として <option>--enable-lto</option> があります。
-      これは <command>ar</command>, <command>nm</command>, <command>ranlib</command> の各コマンドが <option>--plugin</option> パラメーターを受け入れるようにするものです。
-      こうすることで <command>gcc</command> において「リンク時の最適化 (link time optimization)」機能が実現されます。
-      ただし現時点の LFS や BLFS に含まれるパッケージ類にて、この機能を利用しているものはありません。
-      </para>
-
-      <para>この機能を利用するには <application>binutils</application> でも同じようにビルドしておかなければなりません。</para> 
 @z
 
 @x

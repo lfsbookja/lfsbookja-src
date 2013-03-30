@@ -48,6 +48,55 @@
 @z
 
 @x
+      <para>2013-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Remove notes about enabling LTO support; both GCC
+          and Binutils enable it by default now.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add texinfo related seds to Binutils pass1 and pass2
+          as hosts may have a new enough version of Texinfo to cause
+          issues.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Use --disable-install-libiberty to prevent GCC from
+          installing libiberty.a (thanks to Armin K. for the pointer).  Retain
+          the existing sed, though, as the flag doesn't work correctly
+          yet.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Remove the now unnecessary instructions that
+          prevented GCC's info files from being built; GCC-4.8.0 contains
+          upstream fixes.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - GCC と Binutils にてデフォルトで利用可能な LTO サポートに関するメモを削除。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Binutils の１回目、２回目にて、texinfo ファイルに対しての sed 処理を追加。
+          ホストによっては最新の Texinfo により問題が発生することがあるため。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC にて --disable-install-libiberty を指定することにより、libiberty.a をインストールしないように。
+          (指摘を上げてくれた Armin K. に感謝。)
+          フラグがまだ正常動作しないため、それまでの sed コマンドは残す。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC にて info ファイルを生成する、不要な手順を削除。
+          GCC-4.8.0 にはアップストリームによる修正が含まれるため。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-28</para>
       <itemizedlist>
         <listitem>

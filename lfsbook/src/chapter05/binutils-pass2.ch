@@ -46,6 +46,15 @@
 @z
 
 @x
+    <para>Fix a couple of syntax errors that prevent the documentation from
+    building with Texinfo-&texinfo-version;:</para>
+@y
+    <para>
+    Texinfo-&texinfo-version; によりドキュメントをビルドする際の文法エラーを修正します。
+    </para>
+@z
+
+@x
     <para>Prepare Binutils for compilation:</para>
 @y
     <para>&PreparePackage1;Binutils&PreparePackage2;</para>

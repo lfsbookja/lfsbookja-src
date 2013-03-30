@@ -66,15 +66,13 @@
 
 @x
     <para>The test suite needs some custom modifications for LFS.
-    The <command>which</command> command is not available, the
-    <command>pmap</command> test does not match a newline character in
-    two tests, and the <command>slabtop</command> test may return more than 
-    999,999 objects. To run the test suite, run the following commands:</para>
+    The <command>which</command> command is not available, and the
+    <command>slabtop</command> test may return more than 999,999 objects. To run
+    the test suite, run the following commands:</para>
 @y
     <para>
     LFS においてテストスイートを実行するには多少の修正が必要です。
-    <command>which</command> コマンドが利用できず、<command>pmap</command> の2つのテストでは改行文字が適切に処理されません。
-    さらに <command>slabtop</command> のテストでは 999,999 個ものオブジェクトを返すものになっています。
+    <command>which</command> コマンドが利用できず、<command>slabtop</command> のテストでは 999,999 個ものオブジェクトを返すものになっています。
     テストスイートを実行するために、以下のコマンドを実行します。
     </para>
 @z

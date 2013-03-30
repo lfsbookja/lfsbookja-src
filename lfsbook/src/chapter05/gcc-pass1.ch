@@ -126,16 +126,6 @@
 @z
 
 @x
-    <para>Do not build the .info files.  They are not needed here and 
-    are broken with the current version of <command>makeinfo</command>.</para>
-@y
-    <para>
-    .info ファイルはビルドしないようにします。
-    このファイルは今時点は不要なものであり、また現在の <command>makeinfo</command> で生成しても不十分なものが生成されてしまうためです。
-    </para>
-@z
-
-@x
     <para>The GCC documentation recommends building GCC outside of the
     source directory in a dedicated build directory:</para>
 @y
