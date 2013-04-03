@@ -61,6 +61,15 @@
 @z
 
 @x
+    <para>Fix a couple of syntax errors that prevent the documentation from
+    building with Texinfo-&texinfo-version;:</para>
+@y
+    <para>
+    Texinfo-&texinfo-version; によりドキュメントをビルドする際の文法エラーを修正します。
+    </para>
+@z
+
+@x
     <para>The Binutils documentation recommends building Binutils outside of the
     source directory in a dedicated build directory:</para>
 @y
@@ -92,15 +101,6 @@
     <note><para>
     概算ビルド時間と必要ディスク容量は、この第5章ではテストスイートに関わる時間や容量は含めないことにします。
     </para></note>
-@z
-
-@x
-    <para>Fix a couple of syntax errors that prevent the documentation from
-    building with Texinfo-&texinfo-version;:</para>
-@y
-    <para>
-    Texinfo-&texinfo-version; によりドキュメントをビルドする際の文法エラーを修正します。
-    </para>
 @z
 
 @x

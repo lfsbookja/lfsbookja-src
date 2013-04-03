@@ -38,19 +38,19 @@
 @z
 
 @x
-    <para>Create a separate build directory again:</para>
-@y
-    <para>
-    ビルドのためのディレクトリを再び生成します。
-    </para>
-@z
-
-@x
     <para>Fix a couple of syntax errors that prevent the documentation from
     building with Texinfo-&texinfo-version;:</para>
 @y
     <para>
     Texinfo-&texinfo-version; によりドキュメントをビルドする際の文法エラーを修正します。
+    </para>
+@z
+
+@x
+    <para>Create a separate build directory again:</para>
+@y
+    <para>
+    ビルドのためのディレクトリを再び生成します。
     </para>
 @z
 

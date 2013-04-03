@@ -51,10 +51,11 @@
 @z
 
 @x
-    <para>Also fix an error in one of the check Makefiles:</para>
+    <para>Also fix an error in one of the check Makefiles and disable one test in
+    the g++ libmudflap test suite:</para>
 @y
     <para>
-    また Makefile のチェックにおける誤りを修正します。
+    Makefile のチェックにおける誤りを一つ修正し、また g++ libmudflap のテストスイートは実行しないようにします。
     </para>
 @z
 

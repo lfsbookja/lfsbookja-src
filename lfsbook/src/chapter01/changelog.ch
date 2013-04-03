@@ -48,6 +48,50 @@
 @z
 
 @x
+      <para>2013-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.8.5. Fixes
+          <ulink url="&lfs-ticket-root;3320">#3320</ulink>.</para>
+        </listitem>
+
+        <listitem>
+          <para>[bdubbs] - Upgrade to Systemd-200. Fixes
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink> and
+          <ulink url="&lfs-ticket-root;3321">#3321</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Expand tcl space for regular expressions
+          needed for some tests.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Disable a g++ libmudflap test that always
+          fails.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.8.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3320">#3320</ulink> を Fix に。</para>
+        </listitem>
+
+        <listitem>
+          <para>[bdubbs] - Systemd-200 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink> と
+          <ulink url="&lfs-ticket-root;3321">#3321</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl のテストにおいて正規表現の処理に必要となる容量を増やす。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - g++ の libmudflap のテストが常に失敗するため無効化する。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-29</para>
       <itemizedlist>
         <listitem>

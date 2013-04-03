@@ -44,6 +44,15 @@
 @z
 
 @x
+    <para>First increase the amount of space needed by some regular expressions
+    in regression tests.</para>
+@y
+    <para>
+    縮退テスト (regression test) において正規表現の処理に必要となる容量を増やしておきます。
+    </para>
+@z
+
+@x
     <para>Prepare Tcl for compilation:</para>
 @y
     <para>&PreparePackage1;Tcl&PreparePackage2;</para>
