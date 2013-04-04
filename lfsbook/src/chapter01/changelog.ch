@@ -48,13 +48,28 @@
 @z
 
 @x
+      <para>2013-04-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix a failure in the procps-ng test suite.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng でのテストスイート実行の失敗を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-04-01</para>
       <itemizedlist>
         <listitem>
           <para>[bdubbs] - Upgrade to Linux-3.8.5. Fixes
           <ulink url="&lfs-ticket-root;3320">#3320</ulink>.</para>
         </listitem>
-
         <listitem>
           <para>[bdubbs] - Upgrade to Systemd-200. Fixes
           <ulink url="&lfs-ticket-root;3317">#3317</ulink> and
@@ -76,7 +91,6 @@
           <para>[bdubbs] - Linux-3.8.5 へのアップグレード。
           <ulink url="&lfs-ticket-root;3320">#3320</ulink> を Fix に。</para>
         </listitem>
-
         <listitem>
           <para>[bdubbs] - Systemd-200 へのアップグレード。
           <ulink url="&lfs-ticket-root;3317">#3317</ulink> と

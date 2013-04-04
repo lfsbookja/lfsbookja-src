@@ -67,12 +67,14 @@
 @x
     <para>The test suite needs some custom modifications for LFS.
     The <command>which</command> command is not available, and the
-    <command>slabtop</command> test may return more than 999,999 objects. To run
-    the test suite, run the following commands:</para>
+    <command>slabtop</command> test may return more than 999,999 objects. 
+    Also fix one test that fails when scripting does not use a tty device.
+    To run the test suite, run the following commands:</para>
 @y
     <para>
     LFS においてテストスイートを実行するには多少の修正が必要です。
     <command>which</command> コマンドが利用できず、<command>slabtop</command> のテストでは 999,999 個ものオブジェクトを返すものになっています。
+    また tty デバイスを利用しないスクリプトが1つ失敗するため、これを修正します。
     テストスイートを実行するために、以下のコマンドを実行します。
     </para>
 @z
