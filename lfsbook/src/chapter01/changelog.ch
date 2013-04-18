@@ -48,6 +48,62 @@
 @z
 
 @x
+      <para>2013-04-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Linux-3.8.8. Fixes
+          <ulink url="&lfs-ticket-root;3322">#3322</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Kmod-13. Fixes
+          <ulink url="&lfs-ticket-root;3324">#3324</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Bison-2.7.1. Fixes
+          <ulink url="&lfs-ticket-root;3327">#3327</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.8.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;3322">#3322</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Kmod-13 へのアップデート。
+          <ulink url="&lfs-ticket-root;3324">#3324</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Bison-2.7.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3327">#3327</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update list of installed libraries in GMP.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to udev-201 (systemd-201).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - GMP のインストールライブラリを更新。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - udev-201 (systemd-201) へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-04-03</para>
       <itemizedlist>
         <listitem>
