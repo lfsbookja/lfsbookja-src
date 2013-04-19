@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "294 MB (additional 146 MB to run the testsuite)">
-  <!ENTITY postgresql-time          "1.7 SBU (additional 0.2 SBU to run the testsuite)">
+  <!ENTITY postgresql-buildsize     "181 MB (additional 151 MB to run the testsuite)">
+  <!ENTITY postgresql-time          "1.4 SBU (additional 0.2 SBU to run the testsuite)">
 @y
-  <!ENTITY postgresql-buildsize     "294 MB (テストスイート実行時はさらに 146 MB)">
-  <!ENTITY postgresql-time          "1.7 SBU (テストスイート実行時はさらに 0.2 SBU)">
+  <!ENTITY postgresql-buildsize     "181 MB (テストスイート実行時はさらに 151 MB)">
+  <!ENTITY postgresql-time          "1.4 SBU (テストスイート実行時はさらに 0.2 SBU)">
 @z
 
 @x
@@ -159,13 +159,6 @@
     <para>
     <application>PostgreSQL</application> をビルドします。
     </para>
-@z
-
-@x
-    <para>Now configure and build the package:</para>
-@y
-    <para>
-    以下のコマンドを実行してパッケージを設定およびビルドします。</para>
 @z
 
 @x

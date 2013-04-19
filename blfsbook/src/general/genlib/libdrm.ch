@@ -154,26 +154,6 @@
 @z
 
 @x
-      <option>--enable-omap-experimental-api</option>: This option
-      enables use of OMAP's experimental kernel API. OMAP is a series
-      of system-on-chips (SoCs) developed by Texas Instruments.
-@y
-      <option>--enable-omap-experimental-api</option>:
-      このオプションは OMAP の実験的なカーネル API を有効にすることを指示します。
-      OMAP はテキサスインスツルメンツ社 (Texax Instruments) によって開発された、一連のシステムオンチップ (SoC) の一つです。
-@z
-
-@x
-      <option>--enable-exynos-experimental-api</option>: This option
-      enables use of Exynos experimental kernel API. Exynos is a
-      series  of system-on-chips (SoCs) developed by Samsung.
-@y
-      <option>--enable-exynos-experimental-api</option>:
-      本オプションは、Exynos の実験的なカーネル API を利用することを指示します。
-      Exynos は Samsung 社により開発されている一連のシステムオンチップ (SoC) です。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -194,30 +174,24 @@
           None
         </seg>
         <seg>
-          libdrm.so, libdrm_exynos.so, libdrm_intel.so,
-          libdrm_nouveau.so, libdrm_omap.so,
+          libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
           libdrm_radeon.so and libkms.so
         </seg>
         <seg>
-          /usr/include/exynos,
-          /usr/include/libdrm,
-          /usr/include/libkms and
-          /usr/include/omap
+          /usr/include/libdrm and
+          /usr/include/libkms
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libdrm.so, libdrm_exynos.so, libdrm_intel.so,
-          libdrm_nouveau.so, libdrm_omap.so,
+          libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
           libdrm_radeon.so, libkms.so
         </seg>
         <seg>
-          /usr/include/exynos,
           /usr/include/libdrm,
-          /usr/include/libkms,
-          /usr/include/omap
+          /usr/include/libkms
         </seg>
 @z
 
@@ -233,44 +207,25 @@
             ダイレクトレンダリングモジュール (Direct Rendering Module) の API 関数を提供します。
 @z
 
-@x libdrm_exynos.so
-            contains the Samsung Exynos specific Direct Rendering
-            Manager functions.
-@y
-            contains the Samsung Exynos specific Direct Rendering
-            Manager functions.
-@z
-
 @x libdrm_intel.so
             contains the Intel specific Direct Rendering Manager
             functions.
 @y
-            contains the Intel specific Direct Rendering Manager
-            functions.
+            Intel に固有のダイレクトレンダリングモジュールを提供します。
 @z
 
 @x libdrm_nouveau.so
             contains the open source nVidia (Nouveau) specific Direct
             Rendering Manager functions.
 @y
-            contains the open source nVidia (Nouveau) specific Direct
-            Rendering Manager functions.
-@z
-
-@x libdrm_omap.so
-            contains the TI Omap specific Direct Rendering Manager
-            functions.
-@y
-            contains the TI Omap specific Direct Rendering Manager
-            functions.
+            nVidia (Nouveau) に固有のダイレクトレンダリングモジュールを提供します。
 @z
 
 @x libdrm_radeon.so
             contains the AMD Radeon specific Direct Rendering Manager
             functions.
 @y
-            contains the AMD Radeon specific Direct Rendering Manager
-            functions.
+            AMD Radeon に固有のダイレクトレンダリングモジュールを提供します。
 @z
 
 @x libkms.so

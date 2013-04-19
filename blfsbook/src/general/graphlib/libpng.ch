@@ -20,10 +20,10 @@
 @z
 
 @x
-      The <application>libpng</application> package contains libraries used by
-      other programs for reading and writing PNG files. The PNG format was
-      designed as a replacement for GIF and, to a lesser extent, TIFF, with many
-      improvements and extensions and lack of patent problems.
+      The <application>libpng</application> package contains libraries used
+      by other programs for reading and writing PNG files. The PNG format
+      was designed as a replacement for GIF and, to a lesser extent, TIFF,
+      with many improvements and extensions and lack of patent problems.
 @y
       <application>libpng</application> パッケージは、他のプログラムが PNG ファイルの読み書きを行うためのライブラリを提供します。
       PNG フォーマットは GIF フォーマットの代替として、また TIFF フォーマットもある程度組み入れて構築されています。
@@ -149,24 +149,24 @@
 
 @x
         <seg>
-          libpng-config and libpng15-config
+          libpng-config and libpng16-config
         </seg>
         <seg>
-          libpng.so and libpng15.so
+          libpng.so and libpng16.so
         </seg>
         <seg>
-          /usr/include/libpng15 and
+          /usr/include/libpng16 and
           /usr/share/doc/libpng-&libpng-version;
         </seg>
 @y
         <seg>
-          libpng-config, libpng15-config
+          libpng-config, libpng16-config
         </seg>
         <seg>
-          libpng.so, libpng15.so
+          libpng.so, libpng16.so
         </seg>
         <seg>
-          /usr/include/libpng15,
+          /usr/include/libpng16,
           /usr/share/doc/libpng-&libpng-version;
         </seg>
 @z
@@ -178,31 +178,18 @@
 @z
 
 @x libpng-config
-          <para>is a symlink to <command>libpng15-config</command>.</para>
+            is a shell script that provides configuration information
+            for applications wanting to use
+            <application>libpng</application>.
 @y
-          <para>
-          <command>libpng15-config</command> へのシンボリックリンク。
-          </para>
+            is a shell script that provides configuration information
+            for applications wanting to use
+            <application>libpng</application>.
 @z
 
-@x libpng15-config
-            is a shell script that provides configuration information for
-            applications wanting to use <application>libpng</application>.
-@y
-            <application>libpng</application> を利用しようとするアプリケーションに対して、設定情報を提供するためのシェルスクリプトです。
-@z
-
-@x
-        <term><filename class="libraryfile">libpng.so and
-        libpng15.so</filename></term>
-@y
-        <term><filename class="libraryfile">libpng.so,
-        libpng15.so</filename></term>
-@z
-
-@x libpng.so and libpng15.so
-            contain routines used to create and manipulate PNG format graphics
-            files.
+@x libpng.so
+            contain routines used to create and manipulate PNG
+            format graphics files.
 @y
             グラフィックフォーマットの一つである PNG を生成したり取り扱ったりするための処理ルーチンを提供します。
 @z

@@ -228,7 +228,8 @@
           /usr/include/alsa,
           /usr/lib/alsa-lib,
           /usr/share/alsa and
-          /usr/share/doc/alsa-lib-&alsa-lib-version;</seg>
+          /usr/share/doc/alsa-lib-&alsa-lib-version;
+        </seg>
 @y
         <seg>
           aserver
@@ -240,7 +241,8 @@
           /usr/include/alsa,
           /usr/lib/alsa-lib,
           /usr/share/alsa,
-          /usr/share/doc/alsa-lib-&alsa-lib-version;</seg>
+          /usr/share/doc/alsa-lib-&alsa-lib-version;
+        </seg>
 @z
 
 @x
@@ -254,4 +256,3 @@
 @y
             is the ALSA server.
 @z
-

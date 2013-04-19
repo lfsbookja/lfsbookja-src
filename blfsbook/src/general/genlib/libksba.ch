@@ -173,11 +173,11 @@
 @x
         <seg>ksba-config</seg>
         <seg>libksba.{so,a}</seg>
-        <seg>/usr/share/doc/libksba-&libksba-version;</seg>
+        <seg>None<!--/usr/share/doc/libksba-&libksba-version;--></seg>
 @y
         <seg>ksba-config</seg>
         <seg>libksba.{so,a}</seg>
-        <seg>/usr/share/doc/libksba-&libksba-version;</seg>
+        <seg>&None;<!--/usr/share/doc/libksba-&libksba-version;--></seg>
 @z
 
 @x

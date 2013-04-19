@@ -4,7 +4,6 @@
 ## $Author$
 ## $Rev$
 ## $Date::                           $
-## $Date::                           $
 ##
 SUBDIRS = ctie src
 EXTRA_DIST = version.ac

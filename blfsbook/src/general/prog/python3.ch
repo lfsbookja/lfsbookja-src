@@ -14,26 +14,26 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "141 MB (additional 32 MB for the test suite)">
-  <!ENTITY python3-time          "1.2 SBU (additional 2.2 SBU to run the test suite)">
+  <!ENTITY python3-buildsize     "260 MB (not including the testsuite)">
+  <!ENTITY python3-time          "1.2 SBU (not including the testsuite)">
 @y
-  <!ENTITY python3-buildsize     "141 MB (テストスイート実行時は 32MB)">
-  <!ENTITY python3-time          "1.2 SBU (テストスイート実行時はさらに 2.2 SBU)">
+  <!ENTITY python3-buildsize     "260 MB (テストスイートを含まない場合)">
+  <!ENTITY python3-time          "1.2 SBU (テストスイートを含まない場合)">
 @z
 
 @x
-    <title>Introduction to Python</title>
+    <title>Introduction to Python 3</title>
 @y
-    <title>&IntroductionTo1;Python&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Python 3&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>Python</application> package contains the
+      The <application>Python 3</application> package contains the
       <application>Python</application> development environment.
       This is useful for object-oriented programming, writing scripts,
       prototyping large programs or developing entire applications.
 @y
-      <application>Python</application> パッケージは <application>Python</application> 開発環境を提供します。
+      <application>Python 3</application> パッケージは <application>Python</application> 開発環境を提供します。
       この環境は、オブジェクト指向プログラミング、スクリプト構築、大規模なプロトタイプ開発、一連のアプリケーション開発を可能とします。
 @z
 
@@ -86,9 +86,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Python Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Python 3 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Python&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Python 3&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -128,26 +128,22 @@
 @z
 
 @x
-    <title>Installation of Python</title>
+    <title>Installation of Python 3</title>
 @y
-    <title>&InstallationOf1;Python&InstallationOf2;</title>
+    <title>&InstallationOf1;Python 3&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Python</application> by running the following
+      Install <application>Python 3</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Python</application> をビルドします。
+      以下のコマンドを実行して <application>Python 3</application> をビルドします。
 @z
 
 @x
-      To test the results, issue: <command>make test</command>. Note that
-      if you have an existing <application>Python</application> installation
-      which includes the <application>PyXML</application> module, the tests could
-      produce a segmentation fault.
+      To test the results, issue: <command>make test</command>.
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
-      既に <application>Python</application> をインストールしていて、それが <application>PyXML</application> モジュールも含んでいる場合、テストにてセグメンテーションフォールトが発生する場合があります。
 @z
 
 @x
@@ -157,29 +153,13 @@
 @z
 
 @x
-      There is no documentation installed using the instructions above.
-      See the <filename>Doc/README.txt</filename> file in the source
-      distribution for instructions on how to create the html. Alternatively,
-      you can download preformatted documentation from
-      <ulink url="http://docs.python.org/download.html"/>.
+      If you have downloaded the preformatted documentation from
+      <ulink url="http://docs.python.org/download.html"/>, install it
+      as the <systemitem class="username">root</systemitem> user:
 @y
-      上のコマンド実行ではドキュメントがインストールされません。
-      HTML ドキュメントを生成する場合は、ソースディレクトリ内にある <filename>Doc/README.txt</filename> ファイルを参照してください。
-      あるいは既に構築済のドキュメントを <ulink url="http://docs.python.org/download.html"/> からダウンロードすることもできます。
-@z
-
-@x
-      In order to use the <command>help ('name_string')</command> feature
-      of the <command>python</command> interpreter with some statements and
-      keywords, you must download (or create) the optional HTML documentation
-      and install it. If you downloaded the HTML docs, issue the following
-      commands as the <systemitem class="username">root</systemitem> user:
-@y
-      In order to use the <command>help ('name_string')</command> feature
-      of the <command>python</command> interpreter with some statements and
-      keywords, you must download (or create) the optional HTML documentation
-      and install it. If you downloaded the HTML docs, issue the following
-      commands as the <systemitem class="username">root</systemitem> user:
+      If you have downloaded the preformatted documentation from
+      <ulink url="http://docs.python.org/download.html"/>, install it
+      as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -189,27 +169,17 @@
 @z
 
 @x
-      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command
-      is used to fix a build problem with the <application>GDBM</application>
-      library.
+    <title>Configuring Python 3</title>
 @y
-      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command
-      is used to fix a build problem with the <application>GDBM</application>
-      library.
+    <title>&Configuring1;Python 3&Configuring2;</title>
 @z
 
 @x
-    <title>Configuring Python</title>
-@y
-    <title>&Configuring1;Python&Configuring2;</title>
-@z
-
-@x
-      In order for <command>python</command> to find the installed
+      In order for <command>python3</command> to find the installed
       documentation, you must add the following environment variable to
       individual user's or the system's profile:
 @y
-      In order for <command>python</command> to find the installed
+      In order for <command>python3</command> to find the installed
       documentation, you must add the following environment variable to
       individual user's or the system's profile:
 @z
@@ -238,9 +208,9 @@
           pydoc3 (symbolic link to pydoc&python3-majorver;),
           pydoc&python3-majorver;,
 
-          python3 (hard link to python&python3-majorver;m), 
-          python&python3-majorver; (hard link to python&python3-majorver;m), 
-          python&python3-majorver;m, 
+          python3 (hard link to python&python3-majorver;m),
+          python&python3-majorver; (hard link to python&python3-majorver;m),
+          python&python3-majorver;m,
 
           python3-config (symbolic link to python&python3-majorver;-config),
           python&python3-majorver;-config (symbolic link to python3-config),
@@ -251,8 +221,7 @@
           idle&python3-majorver;
         </seg>
         <seg>
-          libpython&python3-majorver;m.so, libpython3.so and numerous
-          modules installed in /usr/lib/python&python3-majorver;
+          libpython&python3-majorver;m.so and libpython3.so
         </seg>
         <seg>
           /usr/include/python&python3-majorver;m,
@@ -261,31 +230,30 @@
         </seg>
 @y
         <seg>
-          2to3 (&SymLinkTo1;2to3-&python3-majorver;&SymLinkTo2;),
+          2to3 (symbolic link to 2to3-&python3-majorver;),
           2to3-&python3-majorver;,
 
-          pydoc3 (&SymLinkTo1;pydoc&python3-majorver;&SymLinkTo2;),
+          pydoc3 (symbolic link to pydoc&python3-majorver;),
           pydoc&python3-majorver;,
 
-          python3 (&HardLinkTo1;python&python3-majorver;m&HardLinkTo2;), 
-          python&python3-majorver; (&HardLinkTo1;python&python3-majorver;m&HardLinkTo2;), 
-          python&python3-majorver;m, 
+          python3 (hard link to python&python3-majorver;m),
+          python&python3-majorver; (hard link to python&python3-majorver;m),
+          python&python3-majorver;m,
 
-          python3-config (&SymLinkTo1;python&python3-majorver;-config&SymLinkTo2;),
-          python&python3-majorver;-config (&SymLinkTo1;python3-config&SymLinkTo2;),
+          python3-config (symbolic link to python&python3-majorver;-config),
+          python&python3-majorver;-config (symbolic link to python3-config),
           python&python3-majorver;m-config,
 
           and optionally if Tk is installed,
-          idle3 (&SymLinkTo1;idle&python3-majorver;&SymLinkTo2;),
+          idle3 (symbolic link to idle&python3-majorver;),
           idle&python3-majorver;
         </seg>
         <seg>
-          libpython&python3-majorver;m.so, libpython3.so and numerous
-          modules installed in /usr/lib/python&python3-majorver;
+          libpython&python3-majorver;m.so and libpython3.so
         </seg>
         <seg>
           /usr/include/python&python3-majorver;m,
-          /usr/lib/python&python3-majorver;,
+          /usr/lib/python&python3-majorver;, and
           /usr/share/doc/python-&python3-version;
         </seg>
 @z

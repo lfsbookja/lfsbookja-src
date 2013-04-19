@@ -230,18 +230,6 @@
 @z
 
 @x
-      <option>--enable-zlib</option>: This option makes
-      <application>Poppler</application> link with the system-installed
-      <filename class='libraryfile'>libz</filename> library to enable compressed
-      PDF functionality.
-@y
-      <option>--enable-zlib</option>: This option makes
-      <application>Poppler</application> link with the system-installed
-      <filename class='libraryfile'>libz</filename> library to enable compressed
-      PDF functionality.
-@z
-
-@x
       <option>--enable-xpdf-headers</option>: Install some old
       <application>Xpdf</application> headers required by certain programs (e.g.
       <application>Okular</application>, <application>LibreOffice</application>

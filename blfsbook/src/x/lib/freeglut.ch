@@ -74,18 +74,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">Freeglut Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Freeglut&Dependencies2;</bridgehead>
@@ -148,18 +136,34 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
+          None
+        </seg>
+        <seg>
           libglut.so
+        </seg>
+        <seg>
+          None
         </seg>
 @y
         <seg>
+          &None;
+        </seg>
+        <seg>
           libglut.so
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

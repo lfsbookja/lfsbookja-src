@@ -179,13 +179,32 @@
 @z
 
 @x
+      <command>sed -e '274cerr ...</command>: Fixes building against
+      <application>FFMpeg</application> 0.11.1.
+@y
+      <command>sed -e '274cerr ...</command>:
+      <application>FFMpeg</application> 0.11.1 とともにビルドするための修正を行います。
+@z
+
+@x
+      <parameter>install -v -m644/docs/*/{css,html} ...</parameter>:
+      This and the subsequent commands install all the provided documentation
+      instead of only <filename>operations.html</filename> and the stylesheet
+      <filename>gegl.css</filename>.
+@y
+      <parameter>install -v -m644/docs/*/{css,html} ...</parameter>:
+      本コマンドおよび次のコマンドにより、提供されるドキュメントをすべてインストールするようにします。
+      これを行わない場合は、単に <filename>operations.html</filename> とスタイルシート <filename>gegl.css</filename> しかインストールされません。
+@z
+
+@x
       <option>--without-vala</option>: Do not create a
       <application>vala</application> API - use this if
       <command>vapigen</command> breaks the build.
 @y
-      <option>--without-vala</option>: Do not create a
-      <application>vala</application> API - use this if
-      <command>vapigen</command> breaks the build.
+      <option>--without-vala</option>:
+      <application>vala</application> API を生成しないようにします。
+      <command>vapigen</command> によりビルドが失敗する場合に指定します。
 @z
 
 @x
@@ -230,6 +249,7 @@
             provides infrastructure to do demand based cached non destructive
             image editing on larger than RAM buffers.
 @y
+            
             provides infrastructure to do demand based cached non destructive
             image editing on larger than RAM buffers.
 @z

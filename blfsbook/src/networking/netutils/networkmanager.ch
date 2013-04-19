@@ -23,13 +23,13 @@
       <application>NetworkManager</application> is a set of co-operative
       tools that make networking simple and straightforward. Whether WiFi, wired,
       3G, or Bluetooth, NetworkManager allows you to quickly move from one network
-      to another: once a network has been configured and joined once, it can be
+      to another: Once a network has been configured and joined once, it can be
       detected and re-joined automatically the next time it's available.
 @y
       <application>NetworkManager</application> is a set of co-operative
       tools that make networking simple and straightforward. Whether WiFi, wired,
       3G, or Bluetooth, NetworkManager allows you to quickly move from one network
-      to another: once a network has been configured and joined once, it can be
+      to another: Once a network has been configured and joined once, it can be
       detected and re-joined automatically the next time it's available.
 @z
 
@@ -137,15 +137,15 @@
       <xref linkend="gtk-doc"/>,
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
       ModemManager</ulink> (0.7 and later), and
-      <xref linkend="wpa_supplicant"/> (Built with D-Bus support).
+      <xref linkend="wpa_supplicant"/> (built with D-Bus support).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
-      ModemManager</ulink> (0.7 and later),
-      <xref linkend="wpa_supplicant"/> ((D-Bus サポートがビルドされたもの).
+      ModemManager</ulink> (0.7 and later), and
+      <xref linkend="wpa_supplicant"/> (D-Bus サポートがビルドされたもの)
     </para>
 @z
 

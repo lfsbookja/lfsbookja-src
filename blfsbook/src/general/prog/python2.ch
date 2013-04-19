@@ -112,22 +112,36 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Python Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Python 2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Python&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Python 2&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="expat"/>,
+      <xref linkend="libffi"/> and
+      <xref linkend="pkgconfig"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="expat"/>,
+      <xref linkend="libffi"/>,
+      <xref linkend="pkgconfig"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="bluez"/> and
-      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
+      <xref linkend="bluez"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="bluez"/>,
-      <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
+      <xref linkend="bluez"/>
     </para>
 @z
 
@@ -156,16 +170,16 @@
 @z
 
 @x
-    <title>Installation of Python</title>
+    <title>Installation of Python 2</title>
 @y
-    <title>&InstallationOf1;Python&InstallationOf2;</title>
+    <title>&InstallationOf1;Python 2&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Python</application> by running the following
+      Install <application>Python 2</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Python</application> をビルドします。
+      以下のコマンドを実行して <application>Python 2</application> をビルドします。
 @z
 
 @x
@@ -174,23 +188,23 @@
       ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
-@x
-      In order to use the <command>help ('name_string')</command> feature of the
-      <command>python</command> interpreter with some statements and keywords,
-      you must create or download the optional HTML documentation.
-@y
-      In order to use the <command>help ('name_string')</command> feature of the
-      <command>python</command> interpreter with some statements and keywords,
-      you must create or download the optional HTML documentation.
-@z
+% @x
+%       In order to use the <command>help ('name_string')</command> feature of the
+%       <command>python</command> interpreter with some statements and keywords,
+%       you must create or download the optional HTML documentation.
+% @y
+%       In order to use the <command>help ('name_string')</command> feature of the
+%       <command>python</command> interpreter with some statements and keywords,
+%       you must create or download the optional HTML documentation.
+% @z
 
-@x
-      If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
-      and wish to create the HTML documentation:
-@y
-      If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
-      and wish to create the HTML documentation:
-@z
+% @x
+%       If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
+%       and wish to create the HTML documentation:
+% @y
+%       If you have installed <ulink url="http://sphinx.pocoo.org/">Sphinx</ulink>
+%       and wish to create the HTML documentation:
+% @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
@@ -199,24 +213,34 @@
 @z
 
 @x
-      If you created the html documentation with
-      <application>Sphinx</application> then install it as the
-      <systemitem class="username">root</systemitem> user:
+      If you have downloaded the preformatted documentation from
+      <ulink url="http://docs.python.org/download.html"/>, install it
+      as the <systemitem class="username">root</systemitem> user:
 @y
-      If you created the html documentation with
-      <application>Sphinx</application> then install it as the
-      <systemitem class="username">root</systemitem> user:
+      If you have downloaded the preformatted documentation from
+      <ulink url="http://docs.python.org/download.html"/>, install it
+      as the <systemitem class="username">root</systemitem> user:
 @z
 
-@x
-      Alternatively, you can download preformatted documentation from
-      <ulink url="http://docs.python.org/download.html"/> and install it as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      Alternatively, you can download preformatted documentation from
-      <ulink url="http://docs.python.org/download.html"/> and install it as the
-      <systemitem class="username">root</systemitem> user:
-@z
+% @x
+%       If you created the html documentation with
+%       <application>Sphinx</application> then install it as the
+%       <systemitem class="username">root</systemitem> user:
+% @y
+%       If you created the html documentation with
+%       <application>Sphinx</application> then install it as the
+%       <systemitem class="username">root</systemitem> user:
+% @z
+
+% @x
+%       Alternatively, you can download preformatted documentation from
+%       <ulink url="http://docs.python.org/download.html"/> and install it as the
+%       <systemitem class="username">root</systemitem> user:
+% @y
+%       Alternatively, you can download preformatted documentation from
+%       <ulink url="http://docs.python.org/download.html"/> and install it as the
+%       <systemitem class="username">root</systemitem> user:
+% @z
 
 @x
     <title>Command Explanations</title>
@@ -225,23 +249,13 @@
 @z
 
 @x
-      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
-      used to fix a build problem with the <application>GDBM</application>
-      library.
-@y
-      <command>sed -i "s/ndbm_libs = ..." setup.py</command>: This command is
-      used to fix a build problem with the <application>GDBM</application>
-      library.
-@z
-
-@x
       <option>--with-system-ffi</option>: This switch enables linking against
       system version of <application>libffi</application>. Remove if you have
-      not installed recommended dependency <xref linkend="libffi"/>.
+      not installed <xref linkend="libffi"/>.
 @y
       <option>--with-system-ffi</option>: This switch enables linking against
       system version of <application>libffi</application>. Remove if you have
-      not installed recommended dependency <xref linkend="libffi"/>.
+      not installed <xref linkend="libffi"/>.
 @z
 
 @x
@@ -276,7 +290,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>Installed Programs</segtitle>
@@ -286,13 +300,13 @@
 
 @x
         <seg>
-          2to3, pydoc, python, python-config, python&python2-majorver;,
-          python&python2-majorver;-config, smtpd.py, and optionally if
-          <application>Tk</application> is installed, idle
+          2to3, pydoc, python, python-config, python2, python2-config,
+          python&python2-majorver;, python&python2-majorver;-config,
+          smtpd.py, and optionally if <application>Tk</application>
+          is installed, idle
         </seg>
         <seg>
-          libpython&python2-majorver;.so and numerous modules installed in
-          /usr/lib/python&python2-majorver;/lib-dynload
+          libpython&python2-majorver;.so
         </seg>
         <seg>
           /usr/include/python&python2-majorver;,
@@ -300,17 +314,17 @@
           /usr/share/doc/python-&python2-version;</seg>
 @y
         <seg>
-          2to3, pydoc, python, python-config, python&python2-majorver;,
-          python&python2-majorver;-config, smtpd.py, and optionally if
-          <application>Tk</application> is installed, idle
+          2to3, pydoc, python, python-config, python2, python2-config,
+          python&python2-majorver;, python&python2-majorver;-config,
+          smtpd.py, and optionally if <application>Tk</application>
+          is installed, idle
         </seg>
         <seg>
-          libpython&python2-majorver;.so and numerous modules installed in
-          /usr/lib/python&python2-majorver;/lib-dynload
+          libpython&python2-majorver;.so
         </seg>
         <seg>
           /usr/include/python&python2-majorver;,
-          /usr/lib/python&python2-majorver;, and
+          /usr/lib/python&python2-majorver;,
           /usr/share/doc/python-&python2-version;</seg>
 @z
 

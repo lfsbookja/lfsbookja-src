@@ -473,12 +473,12 @@
 
 @x
           For additional information consult <ulink
-          url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
+          url="http://web.mit.edu/kerberos/www/krb5-1.11/#documentation">
           Documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
 @y
           For additional information consult <ulink
-          url="http://web.mit.edu/kerberos/www/krb5-1.10/#documentation">
+          url="http://web.mit.edu/kerberos/www/krb5-1.11/#documentation">
           Documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
 @z

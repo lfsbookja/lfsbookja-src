@@ -117,9 +117,8 @@
       <command>sed</command> fixes building with
       <application>Automake</application> 1.13.
 @y
-      <command>sed -i 's#AM_CONFIG_HEADER ...</command>: This
-      <command>sed</command> fixes building with
-      <application>Automake</application> 1.13.
+      <command>sed -i 's#AM_CONFIG_HEADER ...</command>:
+      この <command>sed</command> コマンドは <application>Automake</application> 1.13 にてビルドできるようにします。
 @z
 
 @x

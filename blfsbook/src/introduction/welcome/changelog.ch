@@ -14,10 +14,10 @@
 @z
 
 @x
-<sect1 id="changelog" xreflabel='Change Log'>
+<sect1 id="changelog" xreflabel="Change Log">
   <?dbhtml filename="changelog.html"?>
 @y
-<sect1 id="changelog" xreflabel='変更履歴'>
+<sect1 id="changelog" xreflabel="変更履歴">
   <?dbhtml filename="changelog.html"?>
 @z
 
@@ -39,6 +39,81 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴</title>
+@z
+
+@x
+      <para>April 17th, 2013</para>
+@y
+      <para>2013/04/17</para>
+@z
+
+@x
+      <para>April 14th, 2013</para>
+@y
+      <para>2013/04/14</para>
+@z
+
+@x
+      <para>April 8th, 2013</para>
+@y
+      <para>2013/04/08</para>
+@z
+
+@x
+      <para>April 7th, 2013</para>
+@y
+      <para>2013/04/07</para>
+@z
+
+@x
+      <para>April 5th, 2013</para>
+@y
+      <para>2013/04/05</para>
+@z
+@x
+          <para>[ken] - Postgresql-9.2.4. Fixes
+           <ulink url="&blfs-ticket-root;3796">#3796</ulink>.</para>
+@y
+          <para>[ken] - Postgresql-9.2.4. 
+           <ulink url="&blfs-ticket-root;3796">#3796</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 31st, 2013</para>
+@y
+      <para>2013/03/31</para>
+@z
+@x
+          <para>[rthomsen] - Mercurial 2.5.2. Fixes
+           <ulink url="&blfs-ticket-root;3797">#3797</ulink>.</para>
+@y
+          <para>[rthomsen] - Mercurial 2.5.2. 
+           <ulink url="&blfs-ticket-root;3797">#3797</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 26th, 2013</para>
+@y
+      <para>2013/03/26</para>
+@z
+@x
+          <para>[bdubbs] - Update to bind-9.9.2-P1. Fixes
+           <ulink url="&blfs-ticket-root;3697">#3697</ulink>.</para>
+@y
+          <para>[bdubbs] - bind-9.9.2-P1 へのアップデート。
+           <ulink url="&blfs-ticket-root;3697">#3697</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>March 25th, 2013</para>
+@y
+      <para>2013/03/25</para>
+@z
+
+@x
+      <para>March 24th, 2013</para>
+@y
+      <para>2013/03/24</para>
 @z
 
 @x
