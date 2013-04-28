@@ -48,6 +48,129 @@
 @z
 
 @x
+      <para>2013-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.10. Fixes
+          <ulink url="&lfs-ticket-root;3335">#3335</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.8.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3335">#3335</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to less-458. Fixes
+          <ulink url="&lfs-ticket-root;3333">#3334</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to util-linux-2.23. Fixes
+          <ulink url="&lfs-ticket-root;3311">#3311</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - less-458 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3333">#3334</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.23 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3311">#3311</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Libpipeline-1.2.3. Fixes
+          <ulink url="&lfs-ticket-root;3333">#3333</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tzdata-2013c. Fixes
+          <ulink url="&lfs-ticket-root;3332">#3332</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.51. Fixes
+          <ulink url="&lfs-ticket-root;3331">#3331</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Check-0.9.10. Fixes
+          <ulink url="&lfs-ticket-root;3330">#3330</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Libpipeline-1.2.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3333">#3333</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2013c へのアップグレード。
+          <ulink url="&lfs-ticket-root;3332">#3332</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.51 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3331">#3331</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Check-0.9.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3330">#3330</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Use default locations for kbd files 
+          because custom locations are no longer needed by the
+          boot scripts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - kbd パッケージにてデフォルトのインストールディレクトリを利用することに。
+          別に指示したディレクトリをブートスクリプトが利用していたが、それが無用となったため。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to udev-202 (systemd-202). Fixes
+          <ulink url="&lfs-ticket-root;3329">#3329</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - udev-202 (systemd-202) へのアップデート。
+          <ulink url="&lfs-ticket-root;3329">#3329</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-04-17</para>
       <itemizedlist>
         <listitem>
