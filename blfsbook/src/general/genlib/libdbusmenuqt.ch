@@ -92,13 +92,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://qjson.sourceforge.net/">QJson</ulink> (for building the test suite) and
+    <xref linkend="qjson"/> (for building the test suite) and
     <xref linkend="doxygen"/> (for building the API documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://qjson.sourceforge.net/">QJson</ulink> (テストスイート実行のために),
+    <xref linkend="qjson"/> (テストスイート実行のために),
     <xref linkend="doxygen"/> (API ドキュメント生成時)
     </para>
 @z

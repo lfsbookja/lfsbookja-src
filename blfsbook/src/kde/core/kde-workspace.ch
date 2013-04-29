@@ -124,15 +124,15 @@
       <xref linkend="libusb"/>,
       <xref linkend="NetworkManager"/>,
       <xref linkend="lm_sensors"/>,
+      <xref linkend="qjson"/>,
       <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>,
       <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>,
       <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>,
       <ulink url="https://ieee1394.wiki.kernel.org/index.html">libraw1394</ulink>,
       <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>,
-      <ulink url="http://www.xmms.org/">XMMS</ulink>,
+      <ulink url="http://www.xmms.org/">XMMS</ulink> and
       <ulink url="http://qalculate.sourceforge.net/">libqalculate</ulink>
-      (wants <ulink url="http://www.ginac.de/CLN/">CLN</ulink>), and
-      <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
+      (wants <ulink url="http://www.ginac.de/CLN/">CLN</ulink>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -141,6 +141,7 @@
       <xref linkend="libusb"/>,
       <xref linkend="NetworkManager"/>,
       <xref linkend="lm_sensors"/>,
+      <xref linkend="qjson"/>,
       <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>,
       <ulink url="http://code.google.com/p/google-gadgets-for-linux/">GoogleGadgets</ulink>,
       <ulink url="ftp://ftp.kde.org/pub/kde/stable/prison/1.0/src/">Prison</ulink>,
@@ -148,8 +149,7 @@
       <ulink url="http://www.catb.org/gpsd/">gpsd</ulink>,
       <ulink url="http://www.xmms.org/">XMMS</ulink>,
       <ulink url="http://qalculate.sourceforge.net/">libqalculate</ulink>
-      (wants <ulink url="http://www.ginac.de/CLN/">CLN</ulink>), and
-      <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
+      (<ulink url="http://www.ginac.de/CLN/">CLN</ulink> が必要)
     </para>
 @z
 

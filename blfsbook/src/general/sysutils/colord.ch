@@ -197,7 +197,7 @@
 
 @x
         <seg>
-          cd-create-profile, cd-fix-profile, colord,
+          cd-create-profile, cd-fix-profile, cd-iccdump, colord,
           colord-sane, colord-session and colormgr
         </seg>
         <seg>
@@ -216,7 +216,7 @@
         </seg>
 @y
         <seg>
-          cd-create-profile, cd-fix-profile, colord,
+          cd-create-profile, cd-fix-profile, cd-iccdump, colord,
           colord-sane, colord-session, colormgr
         </seg>
         <seg>

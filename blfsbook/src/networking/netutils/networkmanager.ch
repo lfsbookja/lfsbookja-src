@@ -187,14 +187,6 @@
 @z
 
 @x
-      <option>--without-systemdsystemunitdir</option>: This parameter is needed
-      to avoid <application>systemd</application> files being installed.
-@y
-      <option>--with-systemdsystemunitdir=no</option>:
-      このパラメーターは <application>systemd</application> ファイルをインストールしない場合に必要です。
-@z
-
-@x
       <option>--disable-ppp</option>: This parameter disables optional
       <application>PPP</application> support in
       <application>NetworkManager</application>.

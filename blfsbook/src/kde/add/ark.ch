@@ -90,12 +90,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
+      <xref linkend="qjson"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
+      <xref linkend="qjson"/>
     </para>
 @z
 

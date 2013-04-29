@@ -148,9 +148,11 @@
 @z
 
 @x
-    <para><option>--enable-nss</option>: Use NSS instead of OpenSSL.</para>
+      <option>--enable-nss</option>: Use this switch if you want to
+      use Mozilla NSS instead of <application>OpenSSL</application>.
 @y
-    <para><option>--enable-nss</option>: OpenSSL ではなく NSS を利用するようにします。</para>
+      <option>--enable-nss</option>:
+      <application>OpenSSL</application> ではなく Mozilla NSS を利用したい場合にこのスイッチを指定します。
 @z
 
 @x

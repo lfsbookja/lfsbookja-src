@@ -74,18 +74,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">NFS Utilities Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;NFS Utilities&Dependencies2;</bridgehead>
@@ -274,10 +262,10 @@ The classic uid and gid values are 65534 which is also -2 when
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>This package does not come with a working test suite.</para>
 @y
     <para>
-    &notTestSuite;
+    このパッケージには有効なテストスイートはありません。
     </para>
 @z
 

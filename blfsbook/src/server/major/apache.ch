@@ -313,8 +313,9 @@
 
 @x
         <seg>
-          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter, htcacheclean,
-          htdbm, htdigest, htpasswd, httpd, httxt2dbm, logresolve and rotatelogs
+          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter,
+          htcacheclean, htdbm, htdigest, htpasswd, httpd,
+          httxt2dbm, logresolve and rotatelogs
         </seg>
         <seg>
           None
@@ -330,8 +331,9 @@
         </seg>
 @y
         <seg>
-          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter, htcacheclean,
-          htdbm, htdigest, htpasswd, httpd, httxt2dbm, logresolve, rotatelogs
+          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter,
+          htcacheclean, htdbm, htdigest, htpasswd, httpd,
+          httxt2dbm, logresolve, rotatelogs
         </seg>
         <seg>
           &None;

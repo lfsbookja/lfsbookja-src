@@ -42,6 +42,50 @@
 @z
 
 @x
+      <para>April 27th, 2013</para>
+@y
+      <para>2013/04/27</para>
+@z
+@x
+          <para>[rthomsen] - Added sed to allow Akonadi to use MySQL 5.6.
+          </para>
+@y
+          <para>[rthomsen] - Akonadi が MySQL 5.6 を利用できるように sed コマンドを追加。
+          </para>
+@z
+
+@x
+      <para>April 24th, 2013</para>
+@y
+      <para>2013/04/24</para>
+@z
+@x
+          <para>[krejzi] - Added Xorg Cirrus Driver, used by Qemu
+          virtual GPU.</para>
+@y
+          <para>[krejzi] - Xorg Cirrus Driver を追加。
+          Qemu の仮想 GPU にて利用される。</para>
+@z
+@x
+          <para>[rthomsen] - Added QJson 0.8.1.</para>
+@y
+          <para>[rthomsen] - QJson 0.8.1 追加。</para>
+@z
+
+@x
+      <para>April 21st, 2013</para>
+@y
+      <para>2013/04/21</para>
+@z
+@x
+          <para>[ken] - patch xine-ui-0.99.7 so that opening files from the menu
+	  works.</para>
+@y
+          <para>[ken] - xine-ui-0.99.7 へのパッチ追加。
+          メニューからのファイルオープンを正常処理させるため。</para>
+@z
+
+@x
       <para>April 17th, 2013</para>
 @y
       <para>2013/04/17</para>

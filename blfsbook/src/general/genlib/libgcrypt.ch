@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-time          "0.6 SBU (including 0.5 SBU to run the test suite)">
-@y
-  <!ENTITY libgcrypt-time          "0.6 SBU (テストスイートを実行する場合、さらに 0.5 SBU を追加)">
-@z
-
-@x
     <title>Introduction to libgcrypt</title>
 @y
     <title>&IntroductionTo1;libgcrypt&IntroductionTo2;</title>
@@ -99,13 +93,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="libcap2"/> and
+      <xref linkend="libcap2"/> and
       <xref linkend="pth"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="libcap2"/>,
+      <xref linkend="libcap2"/>,
       <xref linkend="pth"/>
     </para>
 @z

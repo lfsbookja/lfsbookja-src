@@ -60,6 +60,7 @@ CHANGE_FILES = \
 	pth.ch \
 	ptlib.ch \
 	qca.ch \
+	qjson.ch \
 	sbc.ch \
 	slib.ch \
 	talloc.ch \
@@ -134,6 +135,7 @@ popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
 pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
 ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
 qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
+qjson.xml:                 $(BOOKdir)/$@ $(srcdir)/qjson.ch
 sbc.xml:                   $(BOOKdir)/$@ $(srcdir)/sbc.ch
 slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
 talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch

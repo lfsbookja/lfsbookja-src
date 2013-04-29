@@ -181,6 +181,15 @@
 @z
 
 @x
+  <note><para>Make sure the JAVA_HOME environment variable is set for the
+  <systemitem class="username">root</systemitem> user.</para></note>
+@y
+  <note><para>
+  <systemitem class="username">root</systemitem> ユーザーにおいて、環境変数 JAVA_HOME が設定されていることを確認してください。
+  </para></note>
+@z
+
+@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>

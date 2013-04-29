@@ -219,23 +219,30 @@
 @x at
           <para>queues, examines or deletes jobs for later execution.</para>
 @y
-          <para>queues, examines or deletes jobs for later execution.</para>
+          <para>
+          遅延実行ジョブをキューに溜めたり、検証や削除を行ったりします。
+          </para>
 @z
 
 @x atd
           <para>is the daemon that runs jobs queued for later execution.</para>
 @y
-          <para>is the daemon that runs jobs queued for later execution.</para>
+          <para>
+          遅延実行ジョブとしてキューに溜められたものを実行するデーモン。
+          </para>
 @z
 
 @x atrun
           <para>runs jobs queued for later execution.</para>
 @y
-          <para>runs jobs queued for later execution.</para>
+          <para>
+          遅延実行ジョブを実行します。
+          </para>
 @z
 
 @x batch
           <para>is a script that executes commands when system load levels permit.
 @y
-          <para>is a script that executes commands when system load levels permit.
+          <para>
+          システムのロードレベルが許容されている場合に、コマンドを実行するスクリプトです。
 @z

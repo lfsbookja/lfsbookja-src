@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "314 MB (444 MB with checks)">
-  <!ENTITY gdb-time          "1.9 SBU (5.9 SBU with checks)">
+  <!ENTITY gdb-buildsize     "360 MB (450 MB with checks)">
+  <!ENTITY gdb-time          "2.0 SBU (6.0 SBU with checks)">
 @y
-  <!ENTITY gdb-buildsize     "314 MB (テスト実施時は 444 MB)">
-  <!ENTITY gdb-time          "1.9 SBU (テスト実施時は 5.9 SBU)">
+  <!ENTITY gdb-buildsize     "360 MB (テスト実施時は 450 MB)">
+  <!ENTITY gdb-time          "2.0 SBU (テスト実施時は 6.0 SBU)">
 @z
 
 @x
@@ -47,39 +47,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gdb-download-http;"/></para>
+          Download (HTTP): <ulink url="&gdb-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gdb-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gdb-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gdb-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gdb-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gdb-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gdb-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gdb-md5sum;</para>
+          Download MD5 sum: &gdb-md5sum;
 @y
-        <para>&Download; MD5 sum: &gdb-md5sum;</para>
+          &Download; MD5 sum: &gdb-md5sum;
 @z
 
 @x
-        <para>Download size: &gdb-size;</para>
+          Download size: &gdb-size;
 @y
-        <para>&DownloadSize;: &gdb-size;</para>
+          &DownloadSize;: &gdb-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gdb-buildsize;</para>
+          Estimated disk space required: &gdb-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gdb-buildsize;</para>
+          &Estimateddiskspacerequired;: &gdb-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gdb-time;</para>
+          Estimated build time: &gdb-time;
 @y
-        <para>&Estimatedbuildtime;: &gdb-time;</para>
+          &Estimatedbuildtime;: &gdb-time;
 @z
 
 @x
@@ -91,12 +91,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (for tests)
+      <xref linkend="dejagnu"/> (for tests) and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (テスト時に利用)
+      <xref linkend="dejagnu"/> (テスト時に利用),
+      <xref linkend="python2"/>
     </para>
 @z
 
@@ -148,15 +150,27 @@
 @z
 
 @x
-        <seg>gdb and gdbserver</seg>
-        <seg>libinproctrace.so</seg>
-        <seg>/usr/include/gdb, /usr/share/gdb, and
-        /usr/share/doc/gdb-&gdb-version;</seg>
+        <seg>
+          gdb and gdbserver
+        </seg>
+        <seg>
+          libinproctrace.so
+        </seg>
+        <seg>
+          /usr/include/gdb and
+          /usr/share/gdb
+        </seg>
 @y
-        <seg>gdb, gdbserver</seg>
-        <seg>libinproctrace.so</seg>
-        <seg>/usr/include/gdb, /usr/share/gdb,
-        /usr/share/doc/gdb-&gdb-version;</seg>
+        <seg>
+          gdb, gdbserver
+        </seg>
+        <seg>
+          libinproctrace.so
+        </seg>
+        <seg>
+          /usr/include/gdb,
+          /usr/share/gdb
+        </seg>
 @z
 
 @x
@@ -172,8 +186,8 @@
 @z
 
 @x gdbserver
-            is a remote server for the GNU debugger (it allows programs to be
-            debugged from a different machine).
+            is a remote server for the GNU debugger (it allows programs
+            to be debugged from a different machine).
 @y
             GNU デバッガーに対するリモートサーバー。(他端末からのプログラムのデバッグが可能となります。)
 @z

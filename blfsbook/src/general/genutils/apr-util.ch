@@ -14,9 +14,9 @@
 @z
 
 @x
-    <title>Introduction to Apr-Util</title>
+    <title>Introduction to Apr Util</title>
 @y
-    <title>&IntroductionTo1;Apr-Util&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Apr Util&IntroductionTo2;</title>
 @z
 
 @x
@@ -74,44 +74,58 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Apr-Util Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Apr Util Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Apr-Util&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Apr Util&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="apr"/>.</para>
+    <para role="required">
+      <xref linkend="apr"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="apr"/>.</para>
+    <para role="required">
+      <xref linkend="apr"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openldap"/>,
-      <xref linkend="openssl"/>,
+      <xref linkend="db"/>,
       <xref linkend="expat"/>,
-      <xref linkend="unixodbc"/>,
+      <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
       <xref linkend="mysql"/>,
+      <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
-      <ulink url="http://www.oracle.com/us/products/database/index.html">Oracle 11g</ulink>,
-      <ulink url="http://www.freetds.org/">FreeTDS</ulink>
-      <xref linkend="sqlite"/> and <xref linkend="db"/>.
+      <xref linkend="sqlite"/> and
+      <xref linkend="unixodbc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openldap"/>,
-      <xref linkend="openssl"/>,
+      <xref linkend="db"/>,
       <xref linkend="expat"/>,
-      <xref linkend="unixodbc"/>,
+      <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
       <xref linkend="mysql"/>,
+      <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
-      <ulink url="http://www.oracle.com/us/products/database/index.html">Oracle 11g</ulink>,
-      <ulink url="http://www.freetds.org/">FreeTDS</ulink>
-      <xref linkend="sqlite"/>, <xref linkend="db"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="unixodbc"/>
     </para>
 @z
 
@@ -122,16 +136,16 @@
 @z
 
 @x
-    <title>Installation of Apr-Util</title>
+    <title>Installation of Apr Util</title>
 @y
-    <title>&InstallationOf1;Apr-Util&InstallationOf2;</title>
+    <title>&InstallationOf1;Apr Util&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Apr-Util</application> by running the following
+      Install <application>Apr Util</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Apr-Util</application> をビルドします。
+      以下のコマンドを実行して <application>Apr Util</application> をビルドします。
 @z
 
 @x
@@ -153,32 +167,33 @@
 @z
 
 @x
-      <option>-&#45;with-gdbm=/usr</option>: This option makes it compile the
+      <parameter>--with-gdbm=/usr</parameter>: This switch enables the
       <filename class="libraryfile">apr_dbm_gdbm-1.so</filename> plugin.
 @y
-      <option>-&#45;with-gdbm=/usr</option>:
-      このオプションはプラグイン <filename class="libraryfile">apr_dbm_gdbm-1.so</filename> をビルドすることを指示します。
+      <parameter>--with-gdbm=/usr</parameter>:
+      このスイッチはプラグイン <filename class="libraryfile">apr_dbm_gdbm-1.so</filename> を有効にします。
 @z
 
 @x
-      <option>-&#45;with-berkeley-db=/usr</option>: If you have installed
-      <xref linkend="db"/> use this option to compile the
+      <parameter>--with-openssl=/usr --with-crypto</parameter>: These
+      switches enable the
+      <filename class="libraryfile">apr_crypto_openssl-1.so</filename>
+      plugin. Remove them if you have not installed
+      <xref linkend="openssl"/>.
+@y
+      <parameter>--with-openssl=/usr --with-crypto</parameter>:
+      このスイッチにより、プラグイン <filename class="libraryfile">apr_crypto_openssl-1.so</filename> を有効にします。
+      <xref linkend="openssl"/> をインストールしていない場合はこれを取り除いてください。
+@z
+
+@x
+      <parameter>--with-berkeley-db=/usr</parameter>: If you have
+      installed <xref linkend="db"/>, use this switch to compile the
       <filename class="libraryfile">apr_dbm_db-1.so</filename> plugin.
 @y
-      <option>-&#45;with-berkeley-db=/usr</option>: 
-      <xref linkend="db"/> をインストールしている場合、このオプションによりプラグイン <filename
+      <parameter>--with-berkeley-db=/usr</parameter>:
+      <xref linkend="db"/> をインストールしている場合、このスイッチによりプラグイン <filename
       class="libraryfile">apr_dbm_db-1.so</filename> をビルドすることを指示します。
-@z
-
-@x
-      <option>-&#45;with-openssl=/usr</option> and 
-      <option>-&#45;with-crypto</option>: If you have installed
-      <xref linkend="openssl"/>, use these options to compile the
-      <filename class="libraryfile">apr_crypto_openssl-1.so</filename> plugin.
-@y
-      <option>-&#45;with-openssl=/usr</option>, <option>-&#45;with-crypto</option>:
-      <xref linkend="openssl"/> をインストールしている場合、このオプションによりプラグイン <filename
-      class="libraryfile">apr_crypto_openssl-1.so</filename> をビルドすることを指示します。
 @z
 
 @x
@@ -198,13 +213,25 @@
 @z
 
 @x
-        <seg>apu-1-config</seg>
-        <seg>libaprutil-1.so</seg>
-        <seg>/usr/lib/apr-util-1</seg>
+        <seg>
+          apu-1-config
+        </seg>
+        <seg>
+          libaprutil-1.so
+        </seg>
+        <seg>
+          /usr/lib/apr-util-1
+        </seg>
 @y
-        <seg>apu-1-config</seg>
-        <seg>libaprutil-1.so</seg>
-        <seg>/usr/lib/apr-util-1</seg>
+        <seg>
+          apu-1-config
+        </seg>
+        <seg>
+          libaprutil-1.so
+        </seg>
+        <seg>
+          /usr/lib/apr-util-1
+        </seg>
 @z
 
 @x
@@ -213,13 +240,13 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x apu-1-config
-          <para>is a simple script that provides information about the
-          installed APR-Util program.</para>
-@y
-          <para>is a simple script that provides information about the
-          installed APR-Util program.</para>
-@z
+% @x apu-1-config
+%           <para>is a simple script that provides information about the
+%           installed APR-Util program.</para>
+% @y
+%           <para>is a simple script that provides information about the
+%           installed APR-Util program.</para>
+% @z
 
 @x libaprutil-1.so
             contains functions that provide a predictable and consistent

@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY mysql-buildsize     "760 MB (additional 170 MB to run the test suite)">
-  <!ENTITY mysql-time          "4.0 SBU (Test suite is an additional 45 minutes, only partially CPU dependent)">
-@y
-  <!ENTITY mysql-buildsize     "760 MB (テストスイート実行時はさらに 170 MB)">
-  <!ENTITY mysql-time          "4.0 SBU (テストスイート実行時はさらに 45 分; ただしある程度 CPU に依存)">
-@z
-
-@x
     <title>Introduction to MySQL</title>
 @y
     <title>&IntroductionTo1;MySQL&IntroductionTo2;</title>
@@ -117,11 +109,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="libevent"/> and
       <xref linkend="openssl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="libevent"/>,
       <xref linkend="openssl"/>
     </para>
 @z
@@ -129,12 +123,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>
+      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink> and
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>
+      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>,
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
     </para>
 @z
 
@@ -171,31 +167,30 @@
 @z
 
 @x
-      MySQL contains an embedded server library which can be enabled with
-      the cmake option <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>. By
-      default this server is built as a statically linked library,
-      <filename>libmysqld.a</filename>, but by applying the optional patch, a
-      shared version of this library can be built. The library is needed
-      by certain applications, such as <application>Amarok</application> and
-      we recommend use of the shared libraries.
+      MySQL contains an embedded server library. By default, it is built as a
+      statically linked library, <filename>libmysqld.a</filename>, but by
+      applying the optional patch, a shared version of this library can be built.
+      The library is needed by certain applications, such as
+      <application>Amarok</application> and it is recommend to use the shared
+      libraries whenever it is possible.
 @y
-      MySQL には cmake のオプション <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter> の指定により有効となる、内部サーバーライブラリを含んでいます。
+      MySQL には内部サーバーライブラリを含んでいます。
       そしてこのサーバーライブラリは、デフォルトでは <filename>libmysqld.a</filename> というスタティックライブラリとして構築されます。
       任意のパッチを適用すれば、これを共有ライブラリとして構築することも可能です。
-      共有ライブラリは、例えば <application>Amarok</application> などのアプリケーションにおいて必要となっており、これを利用することを推奨します。
+      共有ライブラリは、例えば <application>Amarok</application> などのアプリケーションにおいて必要となっており、可能な限りはこれを利用することを推奨します。
 @z
 
 @x
       There are numerous options available to
-      <userinput>cmake</userinput>. Check the output of the `<userinput>cmake .
-      -LH</userinput>` for additional customization options. See the <ulink
-      url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
-      Documentation</ulink> for a full listing of all options.
+      <command>cmake</command>. Check the output of the `<command>cmake .
+      -LH</command>` for additional customization options. See the <ulink
+      url="http://dev.mysql.com/doc/refman/5.6/en/source-configuration-options.html">
+      MySQL Documentation</ulink> for a full listing of all options.
 @y
-      <userinput>cmake</userinput> に対しては数多くのオプションを指定することが可能です。
-      `<userinput>cmake . -LH</userinput>` を実行すれば、その出力結果により、カスタマイズオプションの内容を確認することができます。
+      <command>cmake</command> に対しては数多くのオプションを指定することが可能です。
+      `<command>cmake . -LH</command>` を実行すれば、その出力結果により、カスタマイズオプションの内容を確認することができます。
       <ulink
-      url="http://dev.mysql.com/doc/refman/5.5/en/source-configuration-options.html">MySQL
+      url="http://dev.mysql.com/doc/refman/5.6/en/source-configuration-options.html">MySQL
       Documentation</ulink> では、すべてのオプションについて説明しています。
 @z
 
@@ -214,25 +209,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make test-force 2>&amp;1 | tee
-      test.log</command>. This forces the test to run to completion and logs all
-      the test output. There will be many tests that are not run due to
-      configuration options and developer considerations. Otherwise many of the
-      tests will fail. Also, two tests will fail if ipv6 is not available in
-      the kernel either as a module or built in.
+      To test the results, issue: <command>make test</command>.
 @y
-      ビルド結果をテストする場合は <command>make test-force 2>&amp;1 | tee
-      test.log</command> を実行します。
-      このコマンドによりテストを実行するとともに、そのテスト結果をログに出力します。
-      設定オプションや開発者の意向により、テストの中には実行されないものが出てきます。
-      また相当数のテストは失敗します。
-      さらに ipv6 機能がカーネルに組み入れられていない場合には２つのテストが失敗します。
-@z
-
-@x
-        The SSL tests may fail due to expired certificates.
-@y
-        SSL テストは、期限切れの証明書を用いていることから失敗します。
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
@@ -267,20 +246,6 @@
 @z
 
 @x
-      <parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>: The default
-      instructions only build the innobase (InnoDB) storage engine. If other
-      storage engines are desired use this switch to enable them. Valid choices
-      are ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
-      PARTITION and PERFSCHEMA.
-@y
-      <parameter>-DWITH_&lt;engine&gt;_STORAGE_ENGINE=ON</parameter>:
-      デフォルトのインストール手順では innobase (InnoDB) ストレージエンジンのみしかインストールしません。
-      これ以外のストレージエンジンを必要とする場合は、本スイッチを用いてそれらを有効化する必要があります。
-      指定できるエンジンは ARCHIVE, BLACKHOLE, EXAMPLE, FEDERATED, INNOBASE, NDBCLUSTER,
-      PARTITION, PERFSCHEMA です。
-@z
-
-@x
       <parameter>-DWITHOUT_SERVER=ON</parameter>: Use this switch if you don't
       want the server and would like to build the client only.
 @y
@@ -289,18 +254,27 @@
 @z
 
 @x
-      <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: Use this switch to build
-      the embedded server library.
+      <parameter>-DWITH_EXTRA_CHARSETS=complex</parameter>: This switch enables
+      support for the complex character sets.
 @y
-      <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>:
-      内部サーバーライブラリをビルドするには本スイッチを指定します。
+      <parameter>-DWITH_EXTRA_CHARSETS=complex</parameter>: This switch enables
+      support for the complex character sets.
+@z
+
+@x
+      <parameter>-DWITH_LIBEVENT=system</parameter>: This switch is used to
+      tell the build system to use installed <application>libevent</application>.
+      Remove it if you didn't install <application>libevent</application>.
+@y
+      <parameter>-DWITH_LIBEVENT=system</parameter>: This switch is used to
+      tell the build system to use installed <application>libevent</application>.
+      Remove it if you didn't install <application>libevent</application>.
 @z
 
 @x
       <parameter>-DWITH_SSL=system</parameter>: This switch is used to tell the
-      build system to use system version of the
-      <application>OpenSSL</application>. Remove it if you didn't install
-      <application>OpenSSL</application>.
+      build system to use installed <application>OpenSSL</application>. Remove
+      it if you didn't install <application>OpenSSL</application>.
 @y
       <parameter>-DWITH_SSL=system</parameter>:
       システムにインストール済の <application>OpenSSL</application> を利用したビルドとする場合には、本スイッチを指定します。
@@ -334,16 +308,29 @@
 @z
 
 @x
-        There are several default configuration files available in
-        <filename class="directory">/usr/share/mysql</filename> which you can
-        use. When creating the file, ensure binary logs are disabled unless you
-        are doing database replication. Create <filename>/etc/mysql/my.cnf</filename>
-        using the following commands as the <systemitem
+          If you are upgrading from previous major version of
+          <application>MySQL</application>, be sure to consult
+          the <ulink
+          url="https://dev.mysql.com/doc/refman/5.6/en/upgrading-from-previous-series.html">
+          MySQL Reference Manual</ulink> for notes on
+          upgrading the software.
+@y
+          If you are upgrading from previous major version of
+          <application>MySQL</application>, be sure to consult
+          the <ulink
+          url="https://dev.mysql.com/doc/refman/5.6/en/upgrading-from-previous-series.html">
+          MySQL Reference Manual</ulink> for notes on
+          upgrading the software.
+@z
+
+@x
+        Create basic <filename>/etc/mysql/my.cnf</filename>
+        using the following command as the <systemitem
         class="username">root</systemitem> user:
 @y
-        利用可能なデフォルトの設定ファイルが <filename
-        class="directory">/usr/share/mysql</filename> にあります。
-        <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <filename>/etc/mysql/my.cnf</filename> を生成します。
+        Create basic <filename>/etc/mysql/my.cnf</filename>
+        using the following command as the <systemitem
+        class="username">root</systemitem> user:
 @z
 
 @x
@@ -351,9 +338,9 @@
         unprivileged user and group (perform as the <systemitem
         class="username">root</systemitem> user):
 @y
-        データベースをインストールします。
-        そして一般ユーザーの所有へと変更します。
-        (変更は <systemitem class="username">root</systemitem> ユーザーになって行います。)
+        You can now install a database and change the ownership to the
+        unprivileged user and group (perform as the <systemitem
+        class="username">root</systemitem> user):
 @z
 
 @x
@@ -423,17 +410,18 @@
           innochecksum, msql2mysql, myisamchk, myisam_ftdump, myisamlog,
           myisampack, my_print_defaults, mysql, mysqlaccess, mysqlaccess.conf,
           mysqladmin, mysqlbinlog, mysqlbug, mysqlcheck, mysql_client_test,
-          mysql_client_test_embedded, mysql_config, mysql_convert_table_format,
-          mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow,
-          mysql_embedded, mysql_find_rows, mysql_fix_extensions, mysqlhotcopy,
-          mysqlimport, mysql_install_db, mysql_plugin, mysql_secure_installation,
-          mysql_setpermission, mysqlshow, mysqlslap, mysqltest,
-          mysqltest_embedded, mysql_tzinfo_to_sql, mysql_upgrade, mysql_waitpid,
-          mysql_zap, perror, replace, resolveip and resolve_stack_dump
+          mysql_client_test_embedded, mysql_config, mysql_config_editor,
+          mysql_convert_table_format, mysqld, mysqld_multi, mysqld_safe, mysqldump,
+          mysqldumpslow, mysql_embedded, mysql_find_rows, mysql_fix_extensions,
+          mysqlhotcopy, mysqlimport, mysql_install_db, mysql_plugin,
+          mysql_secure_installation, mysql_setpermission, mysqlshow, mysqlslap,
+          mysqltest, mysqltest_embedded, mysql_tzinfo_to_sql, mysql_upgrade,
+          mysql_waitpid, mysql_zap, perror, replace, resolveip and
+          resolve_stack_dump
         </seg>
         <seg>
-          libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a},
-          libmysqlservices.a and several in /usr/lib/mysql
+          libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a} and
+          libmysqlservices.a
         </seg>
         <seg>
           /etc/mysql,
@@ -448,17 +436,18 @@
           innochecksum, msql2mysql, myisamchk, myisam_ftdump, myisamlog,
           myisampack, my_print_defaults, mysql, mysqlaccess, mysqlaccess.conf,
           mysqladmin, mysqlbinlog, mysqlbug, mysqlcheck, mysql_client_test,
-          mysql_client_test_embedded, mysql_config, mysql_convert_table_format,
-          mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow,
-          mysql_embedded, mysql_find_rows, mysql_fix_extensions, mysqlhotcopy,
-          mysqlimport, mysql_install_db, mysql_plugin, mysql_secure_installation,
-          mysql_setpermission, mysqlshow, mysqlslap, mysqltest,
-          mysqltest_embedded, mysql_tzinfo_to_sql, mysql_upgrade, mysql_waitpid,
-          mysql_zap, perror, replace, resolveip, resolve_stack_dump
+          mysql_client_test_embedded, mysql_config, mysql_config_editor,
+          mysql_convert_table_format, mysqld, mysqld_multi, mysqld_safe, mysqldump,
+          mysqldumpslow, mysql_embedded, mysql_find_rows, mysql_fix_extensions,
+          mysqlhotcopy, mysqlimport, mysql_install_db, mysql_plugin,
+          mysql_secure_installation, mysql_setpermission, mysqlshow, mysqlslap,
+          mysqltest, mysqltest_embedded, mysql_tzinfo_to_sql, mysql_upgrade,
+          mysql_waitpid, mysql_zap, perror, replace, resolveip,
+          resolve_stack_dump
         </seg>
         <seg>
           libmysqlclient.{so,a}, libmysqlclient_r.{so,a}, libmysqld.{so,a},
-          libmysqlservices.a, /usr/lib/mysql 配下に数種のライブラリ
+          libmysqlservices.a
         </seg>
         <seg>
           /etc/mysql,
@@ -480,11 +469,11 @@
       Descriptions of all the programs and libraries would be several
       pages long. Instead, consult the <filename>mysql.info</filename>
       documentation or the on-line reference manual at <ulink
-      url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/>.
+      url="http://dev.mysql.com/doc/refman/5.6/en/index.html"/>.
 @y
       プログラムやライブラリについてすべて説明しようとすると、かなりのページ数になります。
       詳細は <filename>mysql.info</filename> を参照するか、あるいは <ulink
-      url="http://dev.mysql.com/doc/refman/5.5/en/index.html"/> にあるオンラインリファレンスマニュアルを参照してください。
+      url="http://dev.mysql.com/doc/refman/5.6/en/index.html"/> にあるオンラインリファレンスマニュアルを参照してください。
 @z
 
 @x

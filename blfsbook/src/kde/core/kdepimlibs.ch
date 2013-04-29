@@ -81,37 +81,37 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
     <xref linkend="nepomuk-core"/>,
-    <xref linkend="libxslt"/>, 
-    <xref linkend="gpgme"/>, 
+    <xref linkend="libxslt"/>,
+    <xref linkend="gpgme"/>,
     <xref linkend="libical"/>,
     <xref linkend="akonadi"/>,
-    <xref linkend="cyrus-sasl"/> and
-    <xref linkend="boost"/>
+    <xref linkend="cyrus-sasl"/>,
+    <xref linkend="boost"/> and
+    <xref linkend="qjson"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="nepomuk-core"/>,
-    <xref linkend="libxslt"/>, 
-    <xref linkend="gpgme"/>, 
+    <xref linkend="libxslt"/>,
+    <xref linkend="gpgme"/>,
     <xref linkend="libical"/>,
     <xref linkend="akonadi"/>,
     <xref linkend="cyrus-sasl"/>,
-    <xref linkend="boost"/>
+    <xref linkend="boost"/>,
+    <xref linkend="qjson"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="openldap"/> and
-    <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
+    <xref linkend="openldap"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="openldap"/>,
-    <ulink url="http://qjson.sourceforge.net/">QJson</ulink>
+    <xref linkend="openldap"/>
     </para>
 @z
 

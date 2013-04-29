@@ -95,13 +95,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> and
-      <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>.
+      <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/>,
-      <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>.
+      <ulink url="http://projects.palaso.org/projects/graphitedev/files">Graphite2</ulink>
     </para>
 @z
 
