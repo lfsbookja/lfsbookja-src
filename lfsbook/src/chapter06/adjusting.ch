@@ -142,12 +142,11 @@
 
 @x
   <para os="k">If everything is working correctly, there should be no errors,
-  and the output of the last command (allowing for platform-specific target triplets)
+  and the output of the last command
   will be:</para>
 @y
   <para os="k">
   問題なく動作した場合はエラーがなかったということで、最後のコマンドの出力は以下のようになるはずです。
-  (作業するプラットフォームに応じて<quote>三つの組 (target triplet)</quote>の表記は異なります。)
   </para>
 @z
 

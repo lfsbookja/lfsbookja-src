@@ -834,10 +834,10 @@ Typo ですが日本語訳には影響ありません。
 
 %----------------------------------------------------------------------
 @x Linux Kernel
-         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
+         <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
          Gzip, Kmod, Make, Ncurses, Perl, and Sed</seg>
 @y
-         <seg>Bash, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
+         <seg>Bash, Bc, Binutils, Coreutils, Diffutils, Findutils, GCC, Glibc, Grep,
          Gzip, Kmod, Make, Ncurses, Perl, Sed</seg>
 @z
 @x

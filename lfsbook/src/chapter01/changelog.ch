@@ -48,6 +48,50 @@
 @z
 
 @x
+      <para>2013-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Upgrade to linux-3.9.0. Fixes
+          <ulink url="&lfs-ticket-root;3336">#3336</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Upgrade to zlib-1.2.8. Fixes
+          <ulink url="&lfs-ticket-root;3337">#3337</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - linux-3.9.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3336">#3336</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - zlib-1.2.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3337">#3337</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add bc to Chapter 6 to support Linux-3.9. Fixes
+          <ulink url="&lfs-ticket-root;3338">#3338</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.9 に対応するために、第6章に bc パッケージを追加。
+          <ulink url="&lfs-ticket-root;3338">#3338</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-04-28</para>
       <itemizedlist>
         <listitem>

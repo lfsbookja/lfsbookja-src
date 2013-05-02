@@ -106,14 +106,14 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>Bash, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
+          <para>Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
                 Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
                 Shadow, Tar, Util-linux, Zlib</para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>Bash, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
+          <para>Bash, Bc, Binutils, Coreutils, Diffutils, File, Findutils, Gawk,
                 Grep, Gzip, M4, Man-DB, Ncurses, Procps, Psmisc, Sed,
                 Shadow, Tar, Util-linux, Zlib</para>
         </listitem>
@@ -189,13 +189,13 @@
 @x
         <term><emphasis>LSB Core:</emphasis></term>
         <listitem>
-          <para>At, Batch (a part of At), Bc, Cpio, Ed, Fcrontab, Initd-tools, 
+          <para>At, Batch (a part of At), Cpio, Ed, Fcrontab, Initd-tools,
           Lsb_release, PAM, Sendmail (or Postfix or Exim) </para>
         </listitem>
 @y
         <term><emphasis>LSB コア:</emphasis></term>
         <listitem>
-          <para>At, Batch (At の一部), Bc, Cpio, Ed, Fcrontab, Initd-tools, 
+          <para>At, Batch (At の一部), Cpio, Ed, Fcrontab, Initd-tools,
           Lsb_release, PAM, Sendmail (または Postfix または Exim) </para>
         </listitem>
 @z
@@ -217,14 +217,14 @@
         <listitem>
           <para>ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
                 Glib2, GTK+2, Icon-naming-utils, Libjpeg, Libpng, Libxml2,
-                MesaLib, Pango, Qt3, Qt4, Xorg</para>
+                MesaLib, Pango, Qt4, Xorg</para>
         </listitem>
 @y
         <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
           <para>ATK, Cairo, Desktop-file-utils, Freetype, Fontconfig,
                 Glib2, GTK+2, Icon-naming-utils, Libjpeg, Libpng, Libxml2,
-                MesaLib, Pango, Qt3, Qt4, Xorg</para>
+                MesaLib, Pango, Qt4, Xorg</para>
         </listitem>
 @z
 
@@ -298,12 +298,12 @@
 @x
         <term><emphasis>LSB Desktop:</emphasis></term>
         <listitem>
-          <para>None</para>
+          <para>Qt3</para>
         </listitem>
 @y
         <term><emphasis>LSB デスクトップ:</emphasis></term>
         <listitem>
-          <para>なし</para>
+          <para>Qt3</para>
         </listitem>
 @z
 
