@@ -64,14 +64,14 @@
 @z
 
 @x
-  <para>At this point, you should have at least 850 MB of free space in
-  <envar>$LFS</envar> that can be used to build and install Glibc in the
-  next phase. If you can build and install Glibc, you can build and install
+  <para>At this point, you should have at least 3 GB of free space in
+  <envar>$LFS</envar> that can be used to build and install Glibc and Gcc in
+  the next phase. If you can build and install Glibc, you can build and install
   the rest too.</para>
 @y
   <para>
-  この時点において環境変数 <envar>$LFS</envar> の配下には最低でも 850 MB の空き容量が必要になります。
-  これは次のフェーズにて Glibc をビルドしインストールするためです。
+  この時点において環境変数 <envar>$LFS</envar> の配下には最低でも 3 GB の空き容量が必要になります。
+  これは次のフェーズにて Glibc と Gcc をビルドしインストールするためです。
   Glibc のビルドとインストールができさえすれば、残りのものもすべてビルド、インストールができます。
   </para>
 @z

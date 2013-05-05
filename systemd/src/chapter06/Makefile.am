@@ -13,6 +13,7 @@ CHANGE_FILES = \
 	autoconf.ch          \
 	automake.ch          \
 	bash.ch              \
+	bc.ch                \
 	binutils.ch          \
 	bison.ch             \
 	bzip2.ch             \
@@ -102,6 +103,7 @@ attr.xml:              $(BOOKdir)/$@ $(srcdir)/attr.ch
 autoconf.xml:          $(BOOKdir)/$@ $(srcdir)/autoconf.ch
 automake.xml:          $(BOOKdir)/$@ $(srcdir)/automake.ch
 bash.xml:              $(BOOKdir)/$@ $(srcdir)/bash.ch
+bc.xml:                $(BOOKdir)/$@ $(srcdir)/bc.ch
 binutils.xml:          $(BOOKdir)/$@ $(srcdir)/binutils.ch
 bison.xml:             $(BOOKdir)/$@ $(srcdir)/bison.ch
 bzip2.xml:             $(BOOKdir)/$@ $(srcdir)/bzip2.ch

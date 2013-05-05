@@ -560,19 +560,6 @@
         </para>
 @z
 
-@x PCRE
-        <para>This package provides a library that can be used to implement
-        regular expression pattern matching using the same syntax and semantics
-        as Perl 5.  It is a mandatory dependency of Glib, and can also be used
-        by Grep.</para>
-@y
-        <para>
-        このパッケージは、正規表現によるパターンマッチングを実装するために利用されます。
-        その正規表現は Perl 5 にて用いられる文法と同様です。
-        Glib が必要とする必須パッケージであり、Grep もこれを利用します。
-        </para>
-@z
-
 @x Perl
         <para>This package is an interpreter for the runtime language
         PERL. It is needed for the installation and test suites of several LFS

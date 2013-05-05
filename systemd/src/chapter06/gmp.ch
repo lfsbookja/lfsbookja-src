@@ -118,9 +118,11 @@
 @z
 
 @x
-        <seg>libgmp.{a,so}, libgmpxx.{a,so}, and libmp.{a,so}</seg>
+        <seg>libgmp.{a,so} and libgmpxx.{a,so}</seg>
+        <seg>/usr/share/doc/gmp-&gmp-version;</seg>
 @y
-        <seg>libgmp.{a,so}, libgmpxx.{a,so}, libmp.{a,so}</seg>
+        <seg>libgmp.{a,so}, libgmpxx.{a,so}</seg>
+        <seg>/usr/share/doc/gmp-&gmp-version;</seg>
 @z
 
 @x
@@ -142,13 +144,5 @@
 @y
           <para>
           C++ 用の精度演算関数を提供します。
-          </para>
-@z
-
-@x
-          <para>Contains the Berkeley MP math functions.</para>
-@y
-          <para>
-          Berkley MP 演算関数を提供します。
           </para>
 @z

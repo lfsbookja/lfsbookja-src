@@ -158,7 +158,7 @@
 
 @x
       <segtitle>Installed programs</segtitle>
-      <segtitle>Installed directory</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
@@ -168,18 +168,20 @@
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbdinfo,
         kbd_mode, kbdrate, loadkeys, loadunimap,
         mapscrn, openvt, psfaddtable (link to psfxtable), psfgettable (link to
-        psfxtable), psfstriptable (link to psfxtable), psfxtable, resizecons,
+        psfxtable), psfstriptable (link to psfxtable), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, and unicode_stop</seg>
-        <seg>/lib/kbd</seg>
+        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps,
+        /usr/share/unimaps</seg>
 @y
         <seg>chvt, deallocvt, dumpkeys, fgconsole, getkeycodes, kbdinfo,
         kbd_mode, kbdrate, loadkeys, loadunimap,
         mapscrn, openvt, psfaddtable (psfxtable へのリンク), psfgettable (psfxtable へのリンク),
-        psfstriptable (psfxtable へのリンク), psfxtable, resizecons,
+        psfstriptable (psfxtable へのリンク), psfxtable, <!--resizecons,-->
         setfont, setkeycodes, setleds, setmetamode,
         showconsolefont, showkey, unicode_start, unicode_stop</seg>
-        <seg>/lib/kbd</seg>
+        <seg>/usr/share/consolefonts, /usr/share/consoletrans, /usr/share/keymaps,
+        /usr/share/unimaps</seg>
 @z
 
 @x

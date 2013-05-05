@@ -67,6 +67,16 @@
         <para>MD5 sum: <literal>&bash-md5;</literal></para>
 @z
 
+@x bc
+        <para>Home page: <ulink url="&bc-home;"/></para>
+        <para>Download: <ulink url="&bc-url;"/></para>
+        <para>MD5 sum: <literal>&bc-md5;</literal></para>
+@y
+        <para>&Homepage;: <ulink url="&bc-home;"/></para>
+        <para>&Download;: <ulink url="&bc-url;"/></para>
+        <para>MD5 sum: <literal>&bc-md5;</literal></para>
+@z
+
 @x
         <para>Home page: <ulink url="&binutils-home;"/></para>
         <para>Download: <ulink url="&binutils-url;"/></para>

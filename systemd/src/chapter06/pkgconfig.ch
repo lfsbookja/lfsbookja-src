@@ -42,8 +42,8 @@
 @z
 
 @x --with-internal-glib
-          <para>This will allow pkg-config to use it's internal version of 
-          glib because an external version is not available in LFS.</para>
+          <para>This will allow pkg-config to use its internal version of
+          Glib because an external version is not available in LFS.</para>
 @y
           <para>
           これは pkg-config が内包しているバージョンの glib を利用するようにします。

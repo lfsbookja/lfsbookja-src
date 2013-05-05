@@ -68,10 +68,11 @@
 @z
 
 @x
-    <para>Fix some test suite scripts so all tests pass:</para>
+    <para>Fix a couple of syntax errors that prevent the documentation from
+    building with Texinfo-&texinfo-version;:</para>
 @y
     <para>
-    テストをすべて実行できるようにするために、テストスイートスクリプトをいくつか修正します。
+    Texinfo-&texinfo-version; にてドキュメントビルドが文法エラーにより失敗する点を修正します。
     </para>
 @z
 
@@ -88,22 +89,6 @@
     <para>Prepare Binutils for compilation:</para>
 @y
     <para>&PreparePackage1;Binutils&PreparePackage2;</para>
-@z
-
-@x
-    <note><para>There is an optional argument to <command>configure</command>,
-    <option>--enable-lto</option>, that can be used to allow the
-    <command>ar</command>, <command>nm</command>, and <command>ranlib</command>
-    commands to accept a <option>--plugin</option> parameter.  This is used to
-    allow <command>gcc</command> to do "link time optimization" if specified.
-    No packages in LFS or BLFS currently use this capability.</para></note>
-@y
-    <note><para>
-    <command>configure</command> のオプション引数として <option>--enable-lto</option> があります。
-    これは <command>ar</command>, <command>nm</command>, <command>ranlib</command> の各コマンドが <option>--plugin</option> パラメーターを受け入れるようにするものです。
-    こうすることで <command>gcc</command> において「リンク時の最適化 (link time optimization)」機能が実現されます。
-    ただし現時点の LFS や BLFS に含まれるパッケージ類にて、この機能を利用しているものはありません。
-    </para></note>
 @z
 
 @x

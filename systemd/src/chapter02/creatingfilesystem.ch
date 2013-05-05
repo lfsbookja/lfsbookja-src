@@ -57,12 +57,12 @@
 
 @x
   <para>Replace <replaceable>&lt;xxx&gt;</replaceable> with the name of the LFS
-  partition (<filename class="devicefile">hda5</filename> in our previous
+  partition (<filename class="devicefile">sda5</filename> in our previous
   example).</para>
 @y
   <para>
   <replaceable>&lt;xxx&gt;</replaceable> の部分は LFS パーティション名に合わせて置き換えてください。
-  (本書の例では <filename class="devicefile">hda5</filename> としています。)
+  (本書の例では <filename class="devicefile">sda5</filename> としています。)
   </para>
 @z
 

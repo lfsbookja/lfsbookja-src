@@ -76,7 +76,7 @@
   <para>Start a disk partitioning program such as <command>cfdisk</command>
   or <command>fdisk</command> with a command line option naming the hard
   disk on which the new partition will be created&mdash;for example
-  <filename class="devicefile">/dev/hda</filename> for the primary Integrated
+  <filename class="devicefile">/dev/sda</filename> for the primary Integrated
   Drive Electronics (IDE) disk. Create a Linux native partition and a
   <systemitem class="filesystem">swap</systemitem> partition, if needed. Please
   refer to <filename>cfdisk(8)</filename> or <filename>fdisk(8)</filename> if
@@ -86,7 +86,7 @@
   ディスクのパーティション生成は <command>cfdisk</command> コマンドや <command>fdisk</command> コマンドを使って行います。
   コマンドラインオプションにはパーティションを生成するハードディスク名を指定します。
   例えば IDE (Integrated Drive Electronics) ディスクであれば <filename
-  class="devicefile">/dev/hda</filename> といったものになります。
+  class="devicefile">/dev/sda</filename> といったものになります。
   そして Linux ネイティブパーティションと、必要なら <systemitem
   class="filesystem">swap</systemitem> パーティションを生成します。
   プログラムの利用方法について不明であれば <filename>cfdisk(8)</filename> や <filename>fdisk(8)</filename> を参照してください。
@@ -116,14 +116,14 @@
 
 @x
   <para>Remember the designation of the new partition (e.g., <filename
-  class="devicefile">hda5</filename>). This book will refer to this as
+  class="devicefile">sda5</filename>). This book will refer to this as
   the LFS partition. Also remember the designation of the <systemitem
   class="filesystem">swap</systemitem> partition. These names will be
   needed later for the <filename>/etc/fstab</filename> file.</para>
 @y
   <para>
   新しく生成したパーティションの名前を覚えておいてください。
-  (例えば <filename class="devicefile">hda5</filename> など。) 本書ではこのパーティションを LFS パーティションとして説明していきます。
+  (例えば <filename class="devicefile">sda5</filename> など。) 本書ではこのパーティションを LFS パーティションとして説明していきます。
   また <systemitem class="filesystem">swap</systemitem> パーティションの名前も忘れないでください。
   これらの名前は、後に生成する <filename>/etc/fstab</filename> ファイルに記述するために必要となります。
   </para>

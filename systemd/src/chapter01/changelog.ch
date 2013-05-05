@@ -48,6 +48,429 @@
 @z
 
 @x
+      <para>2013-05-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to DBus-1.6.10.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.9.0. Fixes
+          <ulink url="&lfs-ticket-root;3339">#3339</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - DBus-1.6.10 へのアップグレード。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.9.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3339">#3339</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - Upgrade to linux-3.9.0. Fixes
+          <ulink url="&lfs-ticket-root;3336">#3336</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - Upgrade to zlib-1.2.8. Fixes
+          <ulink url="&lfs-ticket-root;3337">#3337</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[ken] - linux-3.9.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3336">#3336</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[ken] - zlib-1.2.8 へのアップグレード
+          <ulink url="&lfs-ticket-root;3337">#3337</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add bc to Chapter 6 to support Linux-3.9. Fixes
+          <ulink url="&lfs-ticket-root;3338">#3338</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.9 への対応のため、第6章に bc パッケージを追加。
+          <ulink url="&lfs-ticket-root;3338">#3338</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.10. Fixes
+          <ulink url="&lfs-ticket-root;3335">#3335</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.8.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3335">#3335</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to less-458. Fixes
+          <ulink url="&lfs-ticket-root;3333">#3334</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to util-linux-2.23. Fixes
+          <ulink url="&lfs-ticket-root;3311">#3311</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-26</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - less-458 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3333">#3334</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.23 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3311">#3311</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Libpipeline-1.2.3. Fixes
+          <ulink url="&lfs-ticket-root;3333">#3333</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Tzdata-2013c. Fixes
+          <ulink url="&lfs-ticket-root;3332">#3332</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Man-Pages-3.51. Fixes
+          <ulink url="&lfs-ticket-root;3331">#3331</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Check-0.9.10. Fixes
+          <ulink url="&lfs-ticket-root;3330">#3330</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Libpipeline-1.2.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3333">#3333</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Tzdata-2013c へのアップグレード。
+          <ulink url="&lfs-ticket-root;3332">#3332</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Man-Pages-3.51 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3331">#3331</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Check-0.9.10 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3330">#3330</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Use default locations for kbd files 
+          because custom locations are no longer needed by the
+          boot scripts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-23</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] -  kbd パッケージにてデフォルトのインストールディレクトリを利用することに。
+           別に指示したディレクトリをブートスクリプトが利用していたが、それが無用となったため。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to udev-202 (systemd-202). Fixes
+          <ulink url="&lfs-ticket-root;3329">#3329</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - udev-202 (systemd-202) へのアップグレード。
+          <ulink url="&lfs-ticket-root;3329">#3329</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Linux-3.8.8. Fixes
+          <ulink url="&lfs-ticket-root;3322">#3322</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Kmod-13. Fixes
+          <ulink url="&lfs-ticket-root;3324">#3324</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Bison-2.7.1. Fixes
+          <ulink url="&lfs-ticket-root;3327">#3327</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-17</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.8.8 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3322">#3322</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Kmod-13 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3324">#3324</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Bison-2.7.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3327">#3327</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update list of installed libraries in GMP.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to udev-201 (systemd-201).</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - GMP のインストールライブラリを更新。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - udev-201 (systemd-201) へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Fix a failure in the procps-ng test suite.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-ng でのテストスイート実行の失敗を修正。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Linux-3.8.5. Fixes
+          <ulink url="&lfs-ticket-root;3320">#3320</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to Systemd-200. Fixes
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink> and
+          <ulink url="&lfs-ticket-root;3321">#3321</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Expand tcl space for regular expressions
+          needed for some tests.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Disable a g++ libmudflap test that always
+          fails.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-04-01</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Linux-3.8.5 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3320">#3320</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Systemd-200 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink> と
+          <ulink url="&lfs-ticket-root;3321">#3321</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tcl のテストにおいて正規表現の処理に必要となる容量を増やす。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - g++ の libmudflap のテストが常に失敗するため無効化する。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Remove notes about enabling LTO support; both GCC
+          and Binutils enable it by default now.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add texinfo related seds to Binutils pass1 and pass2
+          as hosts may have a new enough version of Texinfo to cause
+          issues.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Use --disable-install-libiberty to prevent GCC from
+          installing libiberty.a (thanks to Armin K. for the pointer).  Retain
+          the existing sed, though, as the flag doesn't work correctly
+          yet.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Remove the now unnecessary instructions that
+          prevented GCC's info files from being built; GCC-4.8.0 contains
+          upstream fixes.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - GCC と Binutils にてデフォルトで利用可能な LTO サポートに関するメモを削除。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Binutils の１回目、２回目にて、texinfo ファイルに対しての sed 処理を追加。
+          ホストによっては最新の Texinfo により問題が発生することがあるため。
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC にて --disable-install-libiberty を指定することにより、libiberty.a をインストールしないように。
+          (指摘を上げてくれた Armin K. に感謝。)
+          フラグがまだ正常動作しないため、それまでの sed コマンドは残す。 
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC にて info ファイルを生成する、不要な手順を削除。
+          GCC-4.8.0 にはアップストリームによる修正が含まれるため。
+          </para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Binutils-2.23.2. Fixes
+          <ulink url="&lfs-ticket-root;3318">#3318</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Systemd-199. Fixes
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Procps-NG-3.3.7. Fixes
+          <ulink url="&lfs-ticket-root;3316">#3316</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Diffutils-3.3. Fixes
+          <ulink url="&lfs-ticket-root;3315">#3315</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to File-5.14. Fixes
+          <ulink url="&lfs-ticket-root;3313">#3313</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to GCC-4.8.0. Fixes
+          <ulink url="&lfs-ticket-root;3312">#3312</ulink>. Thanks to Pierre
+          Labastie for the patch on which this was based.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.8.4. Fixes
+          <ulink url="&lfs-ticket-root;3310">#3310</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-03-28</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Binutils-2.23.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3318">#3318</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Systemd-199 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3317">#3317</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Procps-NG-3.3.7 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3316">#3316</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Diffutils-3.3 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3315">#3315</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - File-5.14 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3313">#3313</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - GCC-4.8.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3312">#3312</ulink> を Fix に。
+          パッチ報告を上げてくれた Pierre Labastie に感謝。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Linux-3.8.4 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3310">#3310</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-03-24</para>
       <itemizedlist>
         <listitem>
@@ -245,1519 +668,15 @@
       <para>2013-03-01</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Upgrade to Linux-3.8.1. Fixes 
-          <ulink url="&lfs-ticket-root;3295">#3295</ulink>.</para>
+          <para>[bdubbs] - LFS-7.3 released.
+          </para>
         </listitem>
       </itemizedlist>
 @y
       <para>2013-03-01</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Linux-3.8.1 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3295">#3295</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Fix a potential test error in procps-ng.
-          Thanks to Pierre Labastie for the patch.  Fixes
-          <ulink url="&lfs-ticket-root;3293">#3293</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - procps-ng におけるテストエラーを修正。
-          パッチを提供してくれた Pierre Labastie に感謝。
-          <ulink url="&lfs-ticket-root;3293">#3293</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to File-5.13.  Fixes
-          <ulink url="&lfs-ticket-root;3292">#3292</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - File-5.13 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3292">#3292</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[ken] - Remove the obsolete resizecons program from kbd, again.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[ken] - 再度、不要なプログラム resizecons を kbd パッケージから削除。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-24</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to IPRoute2-3.8.0.  Fixes
-          <ulink url="&lfs-ticket-root;3291">#3291</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.8.  Fixes
-          <ulink url="&lfs-ticket-root;3290">#3290</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-24</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - IPRoute2-3.8.0 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3291">#3291</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux-3.8 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3290">#3290</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-19</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Update file name for adjusting CD-ROM
-          rules mode in section 7.5.1.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-19</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - 7.5.1 節にて、CD-ROM デバイスのルールを調整するファイル名を更新。
-          </para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-18</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to Coreutils-8.21.  Fixes
-          <ulink url="&lfs-ticket-root;3286">#3286</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Upgrade to Texinfo-5.0.  Fixes
-          <ulink url="&lfs-ticket-root;3289">#3284</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Upgrade to Linux-3.7.9.  Fixes
-          <ulink url="&lfs-ticket-root;3287">#3281</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-18</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Coreutils-8.21 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3286">#3286</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Texinfo-5.0 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3289">#3284</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Linux-3.7.9 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3287">#3281</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>Move newly added components into place.</para>
-        </listitem>
-        <listitem>  
-          <para>Removed Sysklogd-1.5. Journald will be used for logging.</para>
-        </listitem>
-        <listitem>  
-          <para>Re-add Sysvinit package. Few programs are needed from the
-          package.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>新たに加えたパッケージ類を適宜移動。</para>
-        </listitem>
-        <listitem>  
-          <para>Sysklogd-1.5 を削除。ログ取得には Journald を利用。</para>
-        </listitem>
-        <listitem>  
-          <para>Sysvinit パッケージを改めて追加。このパッケージが提供するプログラムを多少必要とするため。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-13</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Added full build of Systemd including its remaining
-          dependencies (attr, dbus, gperf, intltool and libcap2).</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-13</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Systemd をフルビルドするように、その依存パッケージ (attr, dbus, gperf, intltool,libcap2) を追加。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-11</para>
-      <itemizedlist>
-        <listitem>
-          <para>[krejzi] - Added a patch to Glibc that removes
-          references to /var/db and replaces it with FHS-compliant
-          location.</para>
-        </listitem>
-        <listitem>
-        <para>[krejzi] - Added instructions to install nscd configuration
-          file and runtime directory.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-11</para>
-      <itemizedlist>
-        <listitem>
-          <para>[krejzi] - Glibc にパッチ追加。
-          /var/db への参照を除去し FHS 準拠のディレクトリへ変更。
-          </para>
-        </listitem>
-        <listitem>
-        <para>[krejzi] - nscd 設定ファイルと実行時ディレクトリをインストールするように手順追加。
-          </para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-10</para>
-      <itemizedlist>
-        <listitem>
-          <para>[krejzi] - Modified Util-Linux instructions to
-          install mesg and sulogin utilities that were part of
-          Sysvinit.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-10</para>
-      <itemizedlist>
-        <listitem>
-          <para>[krejzi] - Util-Linux の手順を修正。
-          Sysvinit に含まれていた mesg、sulogin をインストールするものに。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-02-06</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Remove Sysvinit package; Systemd will be used to
-          boot the OS now.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Remove Sysvinit bootscripts and custom Udev rules,
-          to aid with Systemd integration.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-02-06</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Sysvinit パッケージを削除。
-          OS の起動には Systemd を利用することに。
-          </para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Sysvinit ブートスクリプトと Udev カスタムルールを削除。
-          </para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-30</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Change ncurses instructions to create
-          and install .pc files.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-30</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Ncurses にて .pc ファイルを生成しインストールする手順とする。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-29</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Man-Pages-3.46.  Fixes
-          <ulink url="&lfs-ticket-root;3278">#3278</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.7.5.  Fixes
-          <ulink url="&lfs-ticket-root;3277">#3277</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-29</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Man-Pages-3.46 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3278">#3278</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux-3.7.5 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3277">#3277</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Update to pkg-config-0.28. Fixes
-          <ulink url="&lfs-ticket-root;3276">#3276</ulink>
-          </para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - pkg-config-0.28 へのアップデート。
-          <ulink url="&lfs-ticket-root;3276">#3276</ulink> を Fix に。
-          </para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-25</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Revise procps-ng install instructions
-          to place files in the proper locations.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-25</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - procps-ng にて、ファイルのインストール先を適正なものとするように、インストール手順を修正。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-24</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Remove bashisms from init-functions 
-          file in the boot scripts. </para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-24</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - ブートスクリプト内の init-functions において bash 互換性を改善。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-24</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to e2fsprogs-1.42.7.  Fixes
-          <ulink url="&lfs-ticket-root;3274">#3274</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-24</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - e2fsprogs-1.42.7 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3274">#3274</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-22</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to Linux-3.7.4.  Fixes
-          <ulink url="&lfs-ticket-root;3273">#3273</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-22</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Linux-3.7.4 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3273">#3273</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-21</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to Procps-ng-3.3.6.  Fixes
-          <ulink url="&lfs-ticket-root;3095">#3095</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-21</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Procps-ng-3.3.6 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3095">#3095</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-20</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.7.3.  Fixes
-          <ulink url="&lfs-ticket-root;3272">#3272</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-20</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Linux-3.7.3 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3272">#3272</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-11</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Revised explanation for /etc/modprobe.conf.
-          Fixes <ulink url="&lfs-ticket-root;3270">#3270</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update udev-lfs init-net-rules.sh
-          script for "en*" devices introduced in systemd-197.  
-          </para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-11</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - /etc/modprobe.conf に対する説明を更新。
-          <ulink url="&lfs-ticket-root;3270">#3270</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - udev-lfs の init-net-rules.sh スクリプトにおいて sytemd-197 で導入された "en*" デバイスのための修正。
-          </para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-09</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Reformat 'Rebooting the System'
-          recommendations.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update udev-lfs scripts.  Update to
-          systemd-197.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-09</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - 'システムの再起動' の節における推奨手順を再整形。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - udev-lfs スクリプト更新。
-          systemd-197 へのアップデート。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2013-01-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Bash-4.2.42.  Fixes
-          <ulink url="&lfs-ticket-root;3268">#3268</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Groff-1.22.1.  Fixes
-          <ulink url="&lfs-ticket-root;3266">#3266</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Automake-1.13.1.  Fixes
-          <ulink url="&lfs-ticket-root;3265">#3265</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Coreutils-8.20.  Fixes
-          <ulink url="&lfs-ticket-root;3215">#3215</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2013-01-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Bash-4.2.42 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3268">#3268</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Groff-1.22.1 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3266">#3266</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Automake-1.13.1 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3265">#3265</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Coreutils-8.20 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3215">#3215</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-12-31</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Add patch to fix binutils test suite.
-          All binutils tests now pass, so remove the "-k" flag
-          from test invocation.
-          Thanks to Pierre Labastie for the patch.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-12-31</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - binutils のテストスイートに対するパッチを追加。
-          これによりすべてのテストが正常処理されるため、その起動時の "-k" フラグは削除。
-          パッチを提供してくれた Pierre Labastie に感謝。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-12-30</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Kbd-1.15.5.  Fixes
-          <ulink url="&lfs-ticket-root;3239">#3239</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - All E2fsprogs tests pass now, so remove the
-          &quot;-k&quot; flag from its invocation.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-12-30</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Kbd-1.15.5 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3239">#3239</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - E2fsprogs のテストはすべて正常処理されるようになった。
-          そこでテスト実行時の &quot;-k&quot; フラグを取り除く。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-12-28</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Put traceroute in /bin for consistency.
-          Fixes
-          <ulink url="&lfs-ticket-root;3264">#3264</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Fix the location for mounting /dev/shm 
-          inside chroot.  Fixes
-          <ulink url="&lfs-ticket-root;3258">#3258</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Move the build of Procps to before E2fsprogs as the
-          latter requires <command>ps</command> to be available during its
-          testsuite run.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Gettext-0.18.2.  Fixes
-          <ulink url="&lfs-ticket-root;3263">#3263</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Gawk-4.0.2.  Fixes
-          <ulink url="&lfs-ticket-root;3262">#3262</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Glibc-2.17.  Fixes
-          <ulink url="&lfs-ticket-root;3261">#3261</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Sed-4.2.2.  Fixes
-          <ulink url="&lfs-ticket-root;3260">#3260</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to GMP-5.1.0.  Fixes
-          <ulink url="&lfs-ticket-root;3259">#3259</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Tcl-8.6.0.  Fixes
-          <ulink url="&lfs-ticket-root;3257">#3257</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Man-Pages-3.45.  Fixes
-          <ulink url="&lfs-ticket-root;3256">#3256</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-12-28</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - 一貫性のため traceroute を /bin へ移動。
-          <ulink url="&lfs-ticket-root;3264">#3264</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - chroot 環境下での /dev/shm のマウント位置を修正。
-          <ulink url="&lfs-ticket-root;3258">#3258</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Procps を E2fsprogs よりも前にビルドすることに。
-          これは E2fsprogs のテストスイートを実行するために <command>ps</command> コマンドが必要であるため。
-          </para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Gettext-0.18.2 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3263">#3263</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Gawk-4.0.2 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3262">#3262</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Glibc-2.17 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3261">#3261</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Sed-4.2.2 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3260">#3260</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - GMP-5.1.0 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3259">#3259</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Tcl-8.6.0 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3257">#3257</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Man-Pages-3.45 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3256">#3256</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-12-18</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to Automake-1.12.6.  Fixes
-          <ulink url="&lfs-ticket-root;3253">#3253</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Upgrade to Linux-3.7.1.  Fixes
-          <ulink url="&lfs-ticket-root;3254">#3254</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-12-18</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Automake-1.12.6 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3253">#3253</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Linux-3.7.1 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3254">#3254</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-12-16</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Util-Linux-2.22.2.  Fixes
-          <ulink url="&lfs-ticket-root;3250">#3250</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Remove a few entries from the acronym list as they
-          are no longer referenced in the book.  Fixes
-          <ulink url="&lfs-ticket-root;3249">#3249</ulink>. Thanks to Chris
-          Staub for the patch.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Bison-2.7.  Fixes
-          <ulink url="&lfs-ticket-root;3247">#3247</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-12-16</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Util-Linux-2.22.2 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3250">#3250</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - 略語と用語の説明において、ブック内で参照されなくなった語を削除。
-          <ulink url="&lfs-ticket-root;3249">#3249</ulink> を Fix に。
-          パッチを提供してくれた Chris Staub に感謝。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Bison-2.7 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3247">#3247</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-12-12</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to IPRoute2-3.7.0.  Fixes
-          <ulink url="&lfs-ticket-root;3246">#3246</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Update Check's list of installed
-          programs. Fixes
-          <ulink url="&lfs-ticket-root;3245">#3245</ulink>. Thanks
-          to Chris Staub for the patch.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - All of Flex's tests pass, so remove the
-          &quot;-k&quot; option to its testsuite invocation. Fixes
-          <ulink url="&lfs-ticket-root;3244">#3244</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to E2fsprogs-1.42.6.  Fixes
-          <ulink url="&lfs-ticket-root;3243">#3243</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Remove redundant --enable-addons parameter to
-          Glibc's configure script. Fixes
-          <ulink url="&lfs-ticket-root;3241">#3241</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Update IRC server information.  Fixes
-          <ulink url="&lfs-ticket-root;3240">#3240</ulink>. Thanks
-          to Chris Staub for the patch.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Kmod-12.  Fixes
-          <ulink url="&lfs-ticket-root;3238">#3238</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.7.  Fixes
-          <ulink url="&lfs-ticket-root;3237">#3237</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-12-12</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - IPRoute2-3.7.0 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3246">#3246</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Check パッケージのインストールプログラムの一覧を更新。
-          <ulink url="&lfs-ticket-root;3245">#3245</ulink> を Fix に。
-          パッチを提供してくれた Chris Staub に感謝。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Flex のテストスイートはすべて正常処理されるため、テストスイート実行時の &quot;-k&quot; オプションを取り除く。
-          <ulink url="&lfs-ticket-root;3244">#3244</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - E2fsprogs-1.42.6 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3243">#3243</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Glibc の configure スクリプトにおいて、不要なパラメーター --enable-addons parameter を削除。
-          <ulink url="&lfs-ticket-root;3241">#3241</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - IRC サーバー情報を更新。
-          <ulink url="&lfs-ticket-root;3240">#3240</ulink> を Fix に。
-          パッチを提供してくれた Chris Staub に感謝。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Kmod-12 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3238">#3238</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux-3.7 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3237">#3237</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-12-03</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Fix build issues in makefile for
-          systemd-196/udev-lfs-196.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-12-03</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - systemd-196/udev-lfs-196 における Makefile の不備を修正。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-28</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Update makefile and instructions for
-          systemd-196/udev-lfs-196.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-28</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - systemd-196/udev-lfs-196 の Makefile と手順を更新。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.6.8.  Fixes
-          <ulink url="&lfs-ticket-root;3234">#3234</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Linux-3.6.8 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3234">#3234</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Re-emphasize host system requirements in
-          Chapter 5 General Compilation Instructions.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-26</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - 第5章 全般的なコンパイル手順にて、ホスト要件を明確化。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-22</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to systemd-196/udev-lfs-196. Fixes
-          <ulink url="&lfs-ticket-root;3233">#3233</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-22</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - systemd-196/udev-lfs-196 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3233">#3233</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-18</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.6.7.  Fixes
-          <ulink url="&lfs-ticket-root;3232">#3232</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Automake-1.12.5.  Fixes
-          <ulink url="&lfs-ticket-root;3231">#3231</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-18</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Linux-3.6.7 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3232">#3232</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Automake-1.12.5 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3231">#3231</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-14</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Tzdata-2012j.  Fixes
-          <ulink url="&lfs-ticket-root;3227">#3227</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Binutils-2.23.1.  Fixes
-          <ulink url="&lfs-ticket-root;3226">#3226</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-14</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Tzdata-2012j へのアップグレード。
-          <ulink url="&lfs-ticket-root;3227">#3227</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Binutils-2.23.1 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3226">#3226</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-13</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Tcl-8.5.13.  Fixes
-          <ulink url="&lfs-ticket-root;3224">#3224</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Kmod-11.  Fixes
-          <ulink url="&lfs-ticket-root;3223">#3223</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Man-Pages-3.44.  Fixes
-          <ulink url="&lfs-ticket-root;3222">#3222</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Bison-2.6.5.  Fixes
-          <ulink url="&lfs-ticket-root;3221">#3221</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Tzdata-2012i.  Fixes
-          <ulink url="&lfs-ticket-root;3220">#3220</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.6.6.  Fixes
-          <ulink url="&lfs-ticket-root;3218">#3219</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-13</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Tcl-8.5.13 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3224">#3224</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Kmod-11 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3223">#3223</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Man-Pages-3.44 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3222">#3222</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Bison-2.6.5 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3221">#3221</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Tzdata-2012i へのアップグレード。
-          <ulink url="&lfs-ticket-root;3220">#3220</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux-3.6.6 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3218">#3219</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-03</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Perl-5.16.2.  Fixes
-          <ulink url="&lfs-ticket-root;3218">#3218</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Bash-4.2.39.  Fixes
-          <ulink url="&lfs-ticket-root;3217">#3217</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-03</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Perl-5.16.2 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3218">#3218</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Bash-4.2.39 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3217">#3217</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Change Freshmeat.net references to Freecode. Thanks
-          to Chris Staub for the report and patch. Fixes
-          <ulink url="&lfs-ticket-root;3216">#3216</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Check-0.9.9.  Fixes
-          <ulink url="&lfs-ticket-root;3214">#3214</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Bison-2.6.4.  Fixes
-          <ulink url="&lfs-ticket-root;3212">#3212</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.6.5.  Fixes
-          <ulink url="&lfs-ticket-root;3211">#3211</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Tzdata-2012h.  Fixes
-          <ulink url="&lfs-ticket-root;3209">#3209</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Man-Pages-3.43.  Fixes
-          <ulink url="&lfs-ticket-root;3208">#3208</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Clean up a couple of instructions for Flex, made
-          possible by the upgrade to Flex-2.5.37.  Fixes
-          <ulink url="&lfs-ticket-root;3206">3206</ulink> and
-          <ulink url="&lfs-ticket-root;3210">3210</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Freshmeat.net への参照リンクを Freecode に変更。
-          報告とパッチをあげてくれた Chris Staub に感謝。
-          <ulink url="&lfs-ticket-root;3216">#3216</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Check-0.9.9 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3214">#3214</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Bison-2.6.4 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3212">#3212</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux-3.6.5 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3211">#3211</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Tzdata-2012h へのアップグレード。
-          <ulink url="&lfs-ticket-root;3209">#3209</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Man-Pages-3.43 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3208">#3208</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Flex-2.5.37 へのアップグレードにより Flex の手順を整理。
-          <ulink url="&lfs-ticket-root;3206">3206</ulink>,
-          <ulink url="&lfs-ticket-root;3210">3210</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-11-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Upgrade to systemd/lfs-udev-195.  Fixes
-          <ulink url="&lfs-ticket-root;3197">#3197</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-11-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - systemd/lfs-udev-195 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3197">#3197</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-10-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Add notes to the gcc and binutils
-           sections in Chapter 6 about "link time optimization" 
-           and the extra files built by gcc.  Fixes
-          <ulink url="&lfs-ticket-root;3200">#3200</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Upgrade to tzdata-2012f.  Fixes
-          <ulink url="&lfs-ticket-root;3205">#3205</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update installed program description
-          for several packages. Thanks to Chris Staub for the patch.  
-          Fixes <ulink url="&lfs-ticket-root;3203">#3203</ulink>.</para> 
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-10-15</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - 第6章の gcc と binutils において「リンク時の最適化」の説明、および gcc にてビルドされる追加のファイルについて加筆。
-          <ulink url="&lfs-ticket-root;3200">#3200</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - tzdata-2012f へのアップグレード。
-          <ulink url="&lfs-ticket-root;3205">#3205</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - 各種パッケージにおいて、インストールされるプログラムを更新。
-          パッチを提供してくれた Chris Staub に感謝。
-          <ulink url="&lfs-ticket-root;3203">#3203</ulink> を Fix に。</para> 
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-10-14</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Remove utmpdump from sysvinit 
-          because it is now installed by util-linux.  Thanks to
-          Chris Staub for the patch.  Fixes
-          <ulink url="&lfs-ticket-root;3202">#3202</ulink>.</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Change procps to not install the
-          kill program that is now installed by util-linux.  Fixes
-          <ulink url="&lfs-ticket-root;3201">#3201</ulink>.</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to util-linux-2.22.1.  Fixes
-          <ulink url="&lfs-ticket-root;3199">#3199</ulink>.</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to linux-3.6.2.  Fixes
-          <ulink url="&lfs-ticket-root;3198">#3198</ulink>.</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Add boot/shutdown script customization
-          instructions.</para> 
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-10-14</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - sysvinit から utmpdump を削除。
-          util-linux によりインストールされるため。
-          パッチを提供してくれた Chris Staub に感謝。
-          <ulink url="&lfs-ticket-root;3202">#3202</ulink> を Fix に。</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - procps にて kill プログラムをインストールしないように。
-          これは uti-linux にてインストールされるため。
-          <ulink url="&lfs-ticket-root;3201">#3201</ulink> を Fix に。</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - util-linux-2.22.1 へのアップデート。
-          <ulink url="&lfs-ticket-root;3199">#3199</ulink> を Fix に。</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - linux-3.6.2 へのアップデート。
-          <ulink url="&lfs-ticket-root;3198">#3198</ulink> を Fix に。</para> 
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - ブート時/シャットダウン時のスクリプトのカスタマイズ方法の説明を追加。</para> 
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-10-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to IPRoute2-3.6.0.  Fixes
-          <ulink url="&lfs-ticket-root;3196">#3196</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.6.  Fixes
-          <ulink url="&lfs-ticket-root;3195">#3195</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Psmisc-22.20. Fixes
-          <ulink url="&lfs-ticket-root;3194">#3194</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Patch-2.7.1. Fixes
-          <ulink url="&lfs-ticket-root;3193">#3193</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Add a patch to allow Kmod's testsuite to pass on 32-bit
-          systems. Fixes <ulink url="&lfs-ticket-root;3191">#3191</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to GCC-4.7.2. Fixes
-          <ulink url="&lfs-ticket-root;3190">#3190</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Use latest upstream fixes patch for Make, which
-          enables WebKitGtk to build with parallel builds. Fixes
-          <ulink url="&lfs-ticket-root;3188">#3188</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Man-DB-2.6.3. Fixes
-          <ulink url="&lfs-ticket-root;3187">#3187</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Libpipeline-1.2.2. Fixes
-          <ulink url="&lfs-ticket-root;3186">#3186</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Automake-1.12.4.  Fixes
-          <ulink url="&lfs-ticket-root;3185">#3185</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Fix Flex instructions; the directory creation for
-          its documentation is performed by the Makefile since r9999.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-10-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - IPRoute2-3.6.0 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3196">#3196</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux-3.6 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3195">#3195</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Psmisc-22.20 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3194">#3194</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Patch-2.7.1 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3193">#3193</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Kmod にてパッチを追加し、32ビットシステムにてテストスイートを正常実行できるように。
-          <ulink url="&lfs-ticket-root;3191">#3191</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - GCC-4.7.2 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3190">#3190</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Make においてアップストリームの最新パッチを適用。
-          WebKitGtk を並行ビルドできるようにするもの。
-          <ulink url="&lfs-ticket-root;3188">#3188</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Man-DB-2.6.3 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3187">#3187</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Libpipeline-1.2.2 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3186">#3186</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Automake-1.12.4 へのアップグレード。
-          <ulink url="&lfs-ticket-root;3185">#3185</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Flex の手順を修正。
-          ドキュメント収容ディレクトリは Makefile のリビジョン r9999 から生成されるものとなった。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-09-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Update to systemd/udev-lfs-193. Fixes
-          <ulink url="&lfs-ticket-root;3192">#3192</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-09-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - systemd/udev-lfs-193 へのアップデート。
-          <ulink url="&lfs-ticket-root;3192">#3192</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-09-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Update to systemd/udev-lfs-192. Fixes
-          <ulink url="&lfs-ticket-root;3189">#3189</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-09-27</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - systemd/udev-lfs-192 へのアップデート。
-          <ulink url="&lfs-ticket-root;3189">#3189</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-09-16</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Upgrade to Patch-2.7.  Fixes
-          <ulink url="&lfs-ticket-root;3182">#3182</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to MPC-1.0.1.  Fixes
-          <ulink url="&lfs-ticket-root;3181">#3181</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Kmod-10.  Fixes
-          <ulink url="&lfs-ticket-root;3180">#3180</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Fix link to Linux User's Guide.  Fixes
-          <ulink url="&lfs-ticket-root;3179">#3179</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Less-451.  Fixes
-          <ulink url="&lfs-ticket-root;3178">#3178</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Bash-4.2.37.  Fixes
-          <ulink url="&lfs-ticket-root;3177">#3177</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Pkg-Config-0.27.1.  Fixes
-          <ulink url="&lfs-ticket-root;3174">#3174</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Upgrade to Linux-3.5.4.  Fixes
-          <ulink url="&lfs-ticket-root;3173">#3173</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-09-16</para>
-      <itemizedlist>
-        <listitem>
-          <para>[matthew] - Patch-2.7 へのアップデート。
-          <ulink url="&lfs-ticket-root;3182">#3182</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - MPC-1.0.1 へのアップデート。
-          <ulink url="&lfs-ticket-root;3181">#3181</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Kmod-10 へのアップデート。
-          <ulink url="&lfs-ticket-root;3180">#3180</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux ユーザーズガイドのリンクを修正。
-          <ulink url="&lfs-ticket-root;3179">#3179</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Less-451 へのアップデート。
-          <ulink url="&lfs-ticket-root;3178">#3178</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Bash-4.2.37 へのアップデート。
-          <ulink url="&lfs-ticket-root;3177">#3177</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Pkg-Config-0.27.1 へのアップデート。
-          <ulink url="&lfs-ticket-root;3174">#3174</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[matthew] - Linux-3.5.4 へのアップデート。
-          <ulink url="&lfs-ticket-root;3173">#3173</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-09-05</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Add udevadm trigger --action=change line 
-          to udev script to support initramfs better.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-09-05</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - udev スクリプトにおいて udevadm trigger --action=change の行を追加。
-          initramfs のサポートを的確に行うために。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-09-04</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Update grub packages and naming 
-          conventions example.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to util-linux-2.22.  Fixes
-          <ulink url="&lfs-ticket-root;3145">#3145</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-09-04</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - grub パッケージの更新と命名規則の例を追記。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - util-linux-2.22 へのアップデート。
-          <ulink url="&lfs-ticket-root;3145">#3145</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-09-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - Add a patch to Chapter 6 glibc to fix
-          the test-installation.pl script instead of just preventing
-          it from running. Fixes
-          <ulink url="&lfs-ticket-root;3175">#3175</ulink>.</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - Update to systemd-189.  Fixes
-          <ulink url="&lfs-ticket-root;3167">#3167</ulink>.</para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-09-02</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - 第6章の glibc において test-installation.pl スクリプトを実行しないようにするのではなく、パッチを適用して対処。
-          <ulink url="&lfs-ticket-root;3175">#3175</ulink> を Fix に。</para>
-        </listitem>
-        <listitem>
-          <para>[bdubbs] - systemd-189 へのアップデート。
-          <ulink url="&lfs-ticket-root;3167">#3167</ulink> を Fix に。</para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-      <para>2012-09-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - LFS-7.2 released.
-          </para>
-        </listitem>
-      </itemizedlist>
-@y
-      <para>2012-09-01</para>
-      <itemizedlist>
-        <listitem>
-          <para>[bdubbs] - LFS-7.2 リリース。
+          <para>[bdubbs] - LFS-7.3 リリース。
           </para>
         </listitem>
       </itemizedlist>

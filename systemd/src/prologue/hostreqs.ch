@@ -90,12 +90,12 @@
 @z
 
 @x
-      <para><emphasis role="strong">Gcc-4.1.2</emphasis> (Versions
-      greater than &gcc-version; are not recommended as they have not
-      been tested)</para>
+      <para><emphasis role="strong">GCC-4.1.2</emphasis> including the C++
+      compiler, <command>g++</command> (Versions greater than &gcc-version; are
+      not recommended as they have not been tested)</para>
 @y
       <para>
-      <emphasis role="strong">Gcc-4.1.2</emphasis> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
+      <emphasis role="strong">Gcc-4.1.2</emphasis> と C++ コンパイラーである <command>g++</command> (&gcc-version; 以上のバージョンは、テストしていないためお勧めしません。)
       </para>
 @z
 

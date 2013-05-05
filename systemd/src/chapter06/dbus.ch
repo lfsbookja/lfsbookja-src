@@ -82,6 +82,16 @@
 @z
 
 @x
+    <para>Create a symlink, so that DBus and Systemd can use the same
+    <filename>machine-id</filename> file:</para>
+@y
+    <para>
+    シンボリックリンクを生成します。
+    これは DBus と Systemd において同じ <filename>machine-id</filename> ファイルを利用するためです。
+    </para>
+@z
+
+@x
     <title>Contents of D-Bus</title>
 @y
     <title>&ContentsOf1;D-Bus&ContentsOf2;</title>

@@ -49,14 +49,6 @@
         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
 @z
 
-@x Binutils Test Suite Patch
-        <para>Download: <ulink url="&patches-root;&binutils-testsuite-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&binutils-testsuite-fixes-patch-md5;</literal></para>
-@y
-        <para>&Download;: <ulink url="&patches-root;&binutils-testsuite-fixes-patch;"/></para>
-        <para>MD5 sum: <literal>&binutils-testsuite-fixes-patch-md5;</literal></para>
-@z
-
 @x Bzip2 Documentation Patch
         <para>Download: <ulink url="&patches-root;&bzip2-docs-patch;"/></para>
         <para>MD5 sum: <literal>&bzip2-docs-patch-md5;</literal></para>

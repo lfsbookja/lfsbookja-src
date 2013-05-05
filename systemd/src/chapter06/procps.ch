@@ -66,15 +66,15 @@
 
 @x
     <para>The test suite needs some custom modifications for LFS.
-    The <command>which</command> command is not available, the
-    <command>pmap</command> test does not match a newline character in
-    two tests, and the <command>slabtop</command> test may return more than 
-    999,999 objects. To run the test suite, run the following commands:</para>
+    The <command>which</command> command is not available, and the
+    <command>slabtop</command> test may return more than 999,999 objects. 
+    Also fix one test that fails when scripting does not use a tty device.
+    To run the test suite, run the following commands:</para>
 @y
     <para>
     LFS においてテストスイートを実行するには多少の修正が必要です。
-    <command>which</command> コマンドが利用できず、<command>pmap</command> の2つのテストでは改行文字が適切に処理されません。
-    さらに <command>slabtop</command> のテストでは 999,999 個ものオブジェクトを返すものになっています。
+    <command>which</command> コマンドが利用できず、<command>slabtop</command> のテストでは 999,999 個ものオブジェクトを返すものになっています。
+    また tty デバイスを利用しないスクリプトが1つ失敗するため、これを修正します。
     テストスイートを実行するために、以下のコマンドを実行します。
     </para>
 @z
@@ -86,7 +86,7 @@
 @z
 
 @x
-<para>Finally move the library to a location that can be found if
+<para>Finally, move the library to a location that can be found if
 <filename class="directory">/usr</filename> is not mounted.</para>
 @y
 <para>
