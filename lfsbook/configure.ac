@@ -44,7 +44,7 @@ AC_PROG_TIDY
 
 TARGETVER=lfs_version()
 
-SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
+SVNVER=`grep 'ENTITY version' ${bookdir}/general.ent | sed -e 's/^<!ENTITY version         \"//' -e 's/\">$//' | tr 'A-Z' 'a-z'`
 AC_MSG_CHECKING([for the original XML version])
 if test ! "$SVNVER" = "$TARGETVER"; then
   AC_MSG_RESULT([$SVNVER])

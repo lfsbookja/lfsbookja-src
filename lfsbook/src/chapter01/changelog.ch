@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2013-05-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to IPRoute2-3.9.0. Fixes
+          <ulink url="&lfs-ticket-root;3339">#3339</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-04</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - IPRoute2-3.9.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3339">#3339</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-01</para>
       <itemizedlist>
         <listitem>
