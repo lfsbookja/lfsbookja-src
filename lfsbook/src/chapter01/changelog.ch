@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-05-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to linus-3.9.1. Fixes
+          <ulink url="&lfs-ticket-root;3342">#3342</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to systemd/udev-lfs-204. Fixes
+          <ulink url="&lfs-ticket-root;3341">#3341</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Upgrade to gettest-0.18.2.1. Fixes
+          <ulink url="&lfs-ticket-root;3298">#3298</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linus-3.9.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3342">#3342</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd/udev-lfs-204 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3341">#3341</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettest-0.18.2.1 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3298">#3298</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-04</para>
       <itemizedlist>
         <listitem>
