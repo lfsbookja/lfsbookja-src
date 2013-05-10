@@ -92,12 +92,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="libcanberra"/>,
       <xref linkend="libnotify"/> and
       <xref linkend="libxklavier"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="libcanberra"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libxklavier"/>
     </para>

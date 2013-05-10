@@ -69,6 +69,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Nettle Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Nettle&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="openssl"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="openssl"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:

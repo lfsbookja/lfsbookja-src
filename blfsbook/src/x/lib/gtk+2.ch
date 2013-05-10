@@ -79,19 +79,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="atk"/>,
-      <xref linkend="cairo"/>,
-      <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="pango"/> and
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="gdk-pixbuf"/> and
+      <xref linkend="pango"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="atk"/>,
-      <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="pango"/> and
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="pango"/>
     </para>
 @z
 

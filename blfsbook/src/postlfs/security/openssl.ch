@@ -79,11 +79,9 @@
 @z
 
 @x
-          Required patch: <ulink
-          url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/>
+          Required patch:
 @y
-          必要なパッチ: <ulink
-          url="&patch-root;/openssl-&openssl-version;-fix_manpages-1.patch"/>
+          必要なパッチ:
 @z
 
 @x
@@ -177,14 +175,19 @@
 @z
 
 @x
-      <command>make MANDIR=/usr/share/man install</command>: This command
-      installs <application>OpenSSL</application> with the man pages in
-      <filename class='directory'>/usr/share/man</filename> instead of
-      <filename class='directory'>/etc/ssl/man</filename>.
+      <command>make MANDIR=/usr/share/man MANSUFFIX=ssl install</command>:
+      This command installs <application>OpenSSL</application> with the man
+      pages in <filename class="directory">/usr/share/man</filename>
+      instead of <filename class="directory">/etc/ssl/man</filename> and
+      appends "ssl" suffix to the manual page names to avoid conflicts with
+      manual pages installed by other packages.
 @y
-      <command>make MANDIR=/usr/share/man install</command>:
-      このコマンドにより <application>OpenSSL</application> の man ページのインストール先を <filename
-      class='directory'>/etc/ssl/man</filename> ではなく <filename class='directory'>/usr/share/man</filename> とします。
+      <command>make MANDIR=/usr/share/man MANSUFFIX=ssl install</command>:
+      This command installs <application>OpenSSL</application> with the man
+      pages in <filename class="directory">/usr/share/man</filename>
+      instead of <filename class="directory">/etc/ssl/man</filename> and
+      appends "ssl" suffix to the manual page names to avoid conflicts with
+      manual pages installed by other packages.
 @z
 
 @x

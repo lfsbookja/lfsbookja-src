@@ -42,6 +42,44 @@
 @z
 
 @x
+      <para>May 9th, 2013</para>
+@y
+      <para>2013/05/13</para>
+@z
+
+@x
+      <para>May 8th, 2013</para>
+@y
+      <para>2013/05/08</para>
+@z
+
+@x
+      <para>May 7th, 2013</para>
+@y
+      <para>2013/05/07</para>
+@z
+@x
+          <para>[krejzi] - Updated Xfce4 components to latest available ones.</para>
+@y
+          <para>[krejzi] - Xfce4 のコンポーネントを最新のものに。</para>
+@z
+
+@x
+      <para>May 5th, 2013</para>
+@y
+      <para>2013/05/05</para>
+@z
+@x
+          <para>[krejzi] - Updated Xorg Applications to latest available ones. Fixed Luit and
+          XModMap build.</para>
+@y
+          <para>[krejzi] - 
+          Xorg アプリケーションを最新のものに。
+          また Luit と XModMap のビルド方法を修正。
+          </para>
+@z
+
+@x
       <para>April 27th, 2013</para>
 @y
       <para>2013/04/27</para>

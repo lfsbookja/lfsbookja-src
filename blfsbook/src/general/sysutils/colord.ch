@@ -120,6 +120,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="bash-completion.alioth.debian.org">Bash Completion</ulink>,
       <xref linkend="colord-gtk"/> and <xref linkend="gnome-desktop"/>
       (To build the example tools),
       <xref linkend="docbook-utils"/>,
@@ -129,7 +130,8 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="colord-gtk"/> and <xref linkend="gnome-desktop"/>
+      <ulink url="bash-completion.alioth.debian.org">Bash Completion</ulink>,
+      <xref linkend="colord-gtk"/> と <xref linkend="gnome-desktop"/>
       (サンプルツール構築のため),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>,

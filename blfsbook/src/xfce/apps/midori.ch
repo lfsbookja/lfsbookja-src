@@ -211,7 +211,7 @@
         </seg>
         <seg>
           /etc/xdg/midori,
-          /usr/include/midori-0.4,
+          /usr/include/midori-0.5,
           /usr/lib/midori,
           /usr/share/doc/midori-&midori-version; and
           /usr/share/midori
@@ -225,7 +225,7 @@
         </seg>
         <seg>
           /etc/xdg/midori,
-          /usr/include/midori-0.4,
+          /usr/include/midori-0.5,
           /usr/lib/midori,
           /usr/share/doc/midori-&midori-version;,
           /usr/share/midori

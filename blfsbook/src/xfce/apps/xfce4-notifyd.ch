@@ -88,11 +88,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="libnotify"/> and
       <xref linkend="libxfce4ui"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="libnotify"/>,
       <xref linkend="libxfce4ui"/>
     </para>
 @z
@@ -129,11 +131,11 @@
 @z
 
 @x
-      If you have installed <xref linkend="libnotify"/> you can test the
-      notification daemon with the command <command>notify-send</command>:
+      You can test the notification daemon with the command
+      <command>notify-send</command>:
 @y
-      If you have installed <xref linkend="libnotify"/> you can test the
-      notification daemon with the command <command>notify-send</command>:
+      You can test the notification daemon with the command
+      <command>notify-send</command>:
 @z
 
 @x
