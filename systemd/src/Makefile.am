@@ -16,6 +16,7 @@ EXTRACLEANFILES = $(srcs)
 
 SVNVER=@SVNVER@
 BASEDIR=../systemd.ja
+DUMPDIR = ../lfs-commands
 ROOT_ID =
 RENDERTMP = ./tmp
 CHUNK_QUIET = 1
@@ -25,7 +26,7 @@ PDF_OUTPUT = ../lfsbookja-systemd.pdf
 ALLXML := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xml ./*/*.xml))
 
-all: ctie $(srcs) stylesheets lfs md5sums
+all: ctie $(srcs) stylesheets lfs
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
@@ -62,7 +63,7 @@ stylesheets:
 #	$(MKDIR_P) udev-lfs
 #	cp -R $(BOOKdir)/udev-lfs/* udev-lfs
 
-lfs: maketar validxml profile-html wget-list
+lfs: validate profile-html
 	@echo "Generating chunked XHTML files..."
 	$(XSLTPROC) --nonet -stringparam chunk.quietly $(CHUNK_QUIET) \
 	  -stringparam rootid "$(ROOT_ID)" -stringparam base.dir $(BASEDIR)/ \
@@ -87,7 +88,9 @@ lfs: maketar validxml profile-html wget-list
 	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
 	done;
 
-@TXT@nochunks: maketar validxml profile-html wget-list
+	make wget-list
+
+@TXT@nochunks: validate profile-html
 @TXT@	@echo "Generating non chunked XHTML file..."
 @TXT@	$(XSLTPROC) --nonet -stringparam rootid "$(ROOT_ID)" \
 @TXT@	  --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
@@ -103,7 +106,7 @@ lfs: maketar validxml profile-html wget-list
 @TXT@txt: nochunks
 @TXT@	$(LYNX) -width=44 -dump ../lfsbookja-systemd.html > ../lfsbookja-systemd.txt
 
-@PDF@@TAKAO@pdf: validxml userconfig.xml
+@PDF@@TAKAO@pdf: validate userconfig.xml
 @PDF@@TAKAO@	@echo "Generating profiled XML for PDF..."
 @PDF@@TAKAO@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
 @PDF@@TAKAO@	--output $(RENDERTMP)/lfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
@@ -129,15 +132,11 @@ tmpdir: $(ALLXML)
 	rm -f $(RENDERTMP)/lfs-{full,html,pdf}.xml
 	rm -f $(RENDERTMP)/lfs-pdf.fo
 
-validxml: tmpdir
+validate: tmpdir
 	@echo "Validating the book..."
 	$(XMLLINT) --nonet --noent --xinclude --postvalid \
 	  -o $(RENDERTMP)/lfs-full.xml index.xml
 	@echo "Validation complete."
-
-maketar:
-	@echo "Making tarballs..."
-#	sh make-aux-files.sh
 
 profile-html: $(ALLXML)
 	@echo "Generating profiled XML for XHTML..."
@@ -157,7 +156,14 @@ md5sums:
 	$(MKDIR_P) $(BASEDIR)
 	$(XSLTPROC) --xinclude --nonet --output $(BASEDIR)/md5sums \
 	  stylesheets/md5sum.xsl chapter03/chapter03.xml
-#	sed -i -e "s/BOOTSCRIPTS-MD5SUM/$(shell md5sum lfs-bootscripts*.tar.bz2 | cut -d' ' -f1)/" \
-#     $(BASEDIR)/md5sums
-#	sed -i -e "s/UDEV-MD5SUM/$(shell md5sum udev-lfs*.tar.bz2 | cut -d' ' -f1)/" \
-#     $(BASEDIR)/md5sums
+
+dump-commands: validate
+	@echo "Dumping book commands..."
+	$(Q)xsltproc --output $(DUMPDIR)/ \
+	   stylesheets/dump-commands.xsl $(RENDERTMP)/lfs-full.xml
+
+
+#all: lfs nochunks pdf dump-commands md5sums
+
+.PHONY : all dump-commands lfs nochunks pdf profile-html tmpdir validate \
+	 validate wget-list maketar md5sums
