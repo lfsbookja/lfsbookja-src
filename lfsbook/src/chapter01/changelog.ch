@@ -48,10 +48,28 @@
 @z
 
 @x
+      <para>2013-05-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Upgrade to gawk-4.1.0. Fixes
+          <ulink url="&lfs-ticket-root;3343">#3343</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gawk-4.1.0 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3343">#3343</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-10</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Upgrade to linus-3.9.1. Fixes
+          <para>[bdubbs] - Upgrade to linux-3.9.1. Fixes
           <ulink url="&lfs-ticket-root;3342">#3342</ulink>.</para>
         </listitem>
         <listitem>
@@ -67,7 +85,7 @@
       <para>2013-05-10</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - linus-3.9.1 へのアップグレード。
+          <para>[bdubbs] - linux-3.9.1 へのアップグレード。
           <ulink url="&lfs-ticket-root;3342">#3342</ulink> を Fix に。</para>
         </listitem>
         <listitem>
