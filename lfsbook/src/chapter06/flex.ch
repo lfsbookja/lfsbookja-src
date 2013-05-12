@@ -69,8 +69,8 @@
     this:</para>
 @y
     <para>
-    他のパッケージの中には <filename class="libraryfile">lex</filename> ライブラリが <filename
-    class="directory">/usr/lib</filename> ディレクトリにあるものとして動作しています。
+    パッケージの中には <filename class="libraryfile">lex</filename> ライブラリが <filename
+    class="directory">/usr/lib</filename> ディレクトリにあるものとして動作しているものがあります。
     これに対応するためシンボリックリンクを作成します。
     </para>
 @z
