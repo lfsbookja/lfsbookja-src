@@ -51,6 +51,10 @@
       <para>2013-05-11</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Minor update to boot script mountfs 
+          to ensure clean shutdown.</para>
+        </listitem>
+        <listitem>
           <para>[bdubbs] - Upgrade to gawk-4.1.0. Fixes
           <ulink url="&lfs-ticket-root;3343">#3343</ulink>.</para>
         </listitem>
@@ -58,6 +62,10 @@
 @y
       <para>2013-05-11</para>
       <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ブートスクリプト mountfs を修正。
+          適切にシャットダウンできるように。</para>
+        </listitem>
         <listitem>
           <para>[bdubbs] - gawk-4.1.0 へのアップグレード。
           <ulink url="&lfs-ticket-root;3343">#3343</ulink> を Fix に。</para>
@@ -77,7 +85,7 @@
           <ulink url="&lfs-ticket-root;3341">#3341</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Upgrade to gettest-0.18.2.1. Fixes
+          <para>[bdubbs] - Upgrade to gettext-0.18.2.1. Fixes
           <ulink url="&lfs-ticket-root;3298">#3298</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -93,7 +101,7 @@
           <ulink url="&lfs-ticket-root;3341">#3341</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - gettest-0.18.2.1 へのアップグレード。
+          <para>[bdubbs] - gettext-0.18.2.1 へのアップグレード。
           <ulink url="&lfs-ticket-root;3298">#3298</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
