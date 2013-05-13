@@ -48,6 +48,24 @@
 @z
 
 @x
+      <para>2013-05-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.9.2. Fixes
+          <ulink url="&lfs-ticket-root;3345">#3345</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.9.2 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3345">#3345</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-11</para>
       <itemizedlist>
         <listitem>
