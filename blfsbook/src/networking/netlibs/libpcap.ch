@@ -80,8 +80,8 @@
       <xref linkend="bluez"/>,
       Software distribution for the
       <ulink url="http://www.endace.com/">DAG</ulink>,
-      <ulink url="http://www.infradead.org/~tgr/libnl/">
-      libnl (version 1 or 2)</ulink> and
+      <xref linkend="libnl"/>,
+      <xref linkend="libusb"/> and
       <ulink url="http://www.intel.com/">Septel</ulink> range of passive
       network monitoring cards.
     </para>
@@ -89,11 +89,10 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
-      Software distribution for the
       <ulink url="http://www.endace.com/">DAG</ulink>,
-      <ulink url="http://www.infradead.org/~tgr/libnl/">
-      libnl (version 1 or 2)</ulink>,
-      <ulink url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア
+      <xref linkend="libnl"/>,
+      <xref linkend="libusb"/>,
+      <ulink url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア。
     </para>
 @z
 

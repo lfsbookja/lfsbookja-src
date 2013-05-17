@@ -118,10 +118,10 @@
 @x
     <note><para>Installing this version of <command>mkpasswd</command> will
     overwrite the same command installed by <xref
-    linkend='expect'/>.</para></note>
+    linkend="expect"/>.</para></note>
 @y
     <note><para>
-    <command>mkpasswd</command> のこのバージョンをインストールすると、<xref linkend='expect'/> によってインストールされた同じコマンドを上書きします。
+    <command>mkpasswd</command> のこのバージョンをインストールすると、<xref linkend="expect"/> によってインストールされた同じコマンドを上書きします。
     </para></note>
 @z
 

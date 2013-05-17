@@ -20,24 +20,22 @@
 @z
 
 @x
-    <para>The <application>Cyrus SASL</application> package contains a Simple
-    Authentication and Security Layer, a method for adding authentication
-    support to connection-based protocols. To use SASL, a protocol includes a
-    command for identifying and authenticating a user to a server and for
-    optionally negotiating protection of subsequent protocol interactions. If
-    its use is negotiated, a security layer is inserted between the protocol
-    and the connection.</para>
+      The <application>Cyrus SASL</application> package contains a Simple
+      Authentication and Security Layer, a method for adding authentication
+      support to connection-based protocols. To use SASL, a protocol includes
+      a command for identifying and authenticating a user to a server and for
+      optionally negotiating protection of subsequent protocol interactions.
+      If its use is negotiated, a security layer is inserted between the
+      protocol and the connection.
 @y
-    <para>
-    <application>Cyrus SASL</application> パッケージはシンプルな認証層 (Authentication Layer) およびセキュリティ層 (Security Layer) を提供するものです。
-    接続を前提とするプロトコルに対しての認証機能のサポートを実現します。
-    SASL を利用すれば、
-    To use SASL, a protocol includes a
-    command for identifying and authenticating a user to a server and for
-    optionally negotiating protection of subsequent protocol interactions. If
-    its use is negotiated, a security layer is inserted between the protocol
-    and the connection.
-    </para>
+      <application>Cyrus SASL</application> パッケージはシンプルな認証層 (Authentication Layer) およびセキュリティ層 (Security Layer) を提供するものです。
+      接続を前提とするプロトコルに対しての認証機能のサポートを実現します。
+      SASL を利用すれば、
+      To use SASL, a protocol includes a
+      command for identifying and authenticating a user to a server and for
+      optionally negotiating protection of subsequent protocol interactions. If
+      its use is negotiated, a security layer is inserted between the protocol
+      and the connection.
 @z
 
 @x
@@ -47,39 +45,51 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cyrus-sasl-download-http;"/></para>
+          Download (HTTP): <ulink url="&cyrus-sasl-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cyrus-sasl-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cyrus-sasl-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cyrus-sasl-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cyrus-sasl-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&cyrus-sasl-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cyrus-sasl-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cyrus-sasl-md5sum;</para>
+          Download MD5 sum: &cyrus-sasl-md5sum;
 @y
-        <para>&Download; MD5 sum: &cyrus-sasl-md5sum;</para>
+          &Download; MD5 sum: &cyrus-sasl-md5sum;
 @z
 
 @x
-        <para>Download size: &cyrus-sasl-size;</para>
+          Download size: &cyrus-sasl-size;
 @y
-        <para>&DownloadSize;: &cyrus-sasl-size;</para>
+          &DownloadSize;: &cyrus-sasl-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cyrus-sasl-buildsize;</para>
+          Estimated disk space required: &cyrus-sasl-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cyrus-sasl-buildsize;</para>
+          &Estimateddiskspacerequired;: &cyrus-sasl-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cyrus-sasl-time;</para>
+          Estimated build time: &cyrus-sasl-time;
 @y
-        <para>&Estimatedbuildtime;: &cyrus-sasl-time;</para>
+          &Estimatedbuildtime;: &cyrus-sasl-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
 @z
 
 @x
@@ -90,34 +100,54 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <para role="required">
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <para role="required">
+      <xref linkend="openssl"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="db"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="db"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="mitkrb"/>,
-    <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
-    <xref linkend="mysql"/>,
-    <xref linkend="postgresql"/>,
-    <xref linkend="sqlite"/>,
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>, and
-    <ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="mysql"/>,
+      <xref linkend="openjdk"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="postgresql"/>,
+      <xref linkend="sqlite"/>,
+      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink> and
+      <ulink url="http://dmalloc.com/">Dmalloc</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="mitkrb"/>,
-    <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/>-->,
-    <xref linkend="mysql"/>,
-    <xref linkend="postgresql"/>,
-    <xref linkend="sqlite"/>,
-    <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
-    <ulink url="http://dmalloc.com/">Dmalloc</ulink></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="mysql"/>,
+      <xref linkend="openjdk"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="postgresql"/>,
+      <xref linkend="sqlite"/>,
+      <ulink url="http://www.pdc.kth.se/kth-krb/">krb4</ulink>,
+      <ulink url="http://dmalloc.com/">Dmalloc</ulink>
+    </para>
 @z
 
 @x
@@ -133,33 +163,33 @@
 @z
 
 @x
-    <para>Install <application>Cyrus SASL</application> by
-    running the following commands:</para>
+      Install <application>Cyrus SASL</application> by
+      running the following commands:
 @y
-    <para>Install <application>Cyrus SASL</application> by
-    running the following commands:</para>
+      Install <application>Cyrus SASL</application> by
+      running the following commands:
 @z
 
 @x
-    <para>This package does not come with a test suite. If you are planning
-    on using the GSSAPI authentication mechanism, it is recommended to test
-    it after installing the package using the sample server and client programs
-    which were built in the preceding step. Instructions for performing the
-    tests can be found at <ulink
-    url="&hints-root;/downloads/files/cyrus-sasl.txt"/>.</para>
+      This package does not come with a test suite. If you are planning
+      on using the GSSAPI authentication mechanism, it is recommended to test
+      it after installing the package using the sample server and client
+      programs which were built in the preceding step. Instructions for
+      performing the tests can be found at
+      <ulink url="&hints-root;/downloads/files/cyrus-sasl.txt"/>.
 @y
-    <para>This package does not come with a test suite. If you are planning
-    on using the GSSAPI authentication mechanism, it is recommended to test
-    it after installing the package using the sample server and client programs
-    which were built in the preceding step. Instructions for performing the
-    tests can be found at <ulink
-    url="&hints-root;/downloads/files/cyrus-sasl.txt"/>.</para>
+      This package does not come with a test suite. If you are planning
+      on using the GSSAPI authentication mechanism, it is recommended to test
+      it after installing the package using the sample server and client
+      programs which were built in the preceding step. Instructions for
+      performing the tests can be found at
+      <ulink url="&hints-root;/downloads/files/cyrus-sasl.txt"/>.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -169,79 +199,103 @@
 @z
 
 @x
-    <para><parameter>--with-dbpath=/var/lib/sasl/sasldb2</parameter>: This
-    parameter forces the <command>sasldb</command> database to be created
-    in <filename class='directory'>/var/lib/sasl</filename> instead of
-    <filename class='directory'>/etc</filename>.</para>
+      <parameter>--with-dbpath=/var/lib/sasl/sasldb2</parameter>: This
+      switch forces the <command>sasldb</command> database to be created
+      in <filename class="directory">/var/lib/sasl</filename> instead of
+      <filename class="directory">/etc</filename>.
 @y
-    <para><parameter>--with-dbpath=/var/lib/sasl/sasldb2</parameter>: This
-    parameter forces the <command>sasldb</command> database to be created
-    in <filename class='directory'>/var/lib/sasl</filename> instead of
-    <filename class='directory'>/etc</filename>.</para>
+      <parameter>--with-dbpath=/var/lib/sasl/sasldb2</parameter>: This
+      switch forces the <command>sasldb</command> database to be created
+      in <filename class="directory">/var/lib/sasl</filename> instead of
+      <filename class="directory">/etc</filename>.
 @z
 
 @x
-    <para><parameter>--with-saslauthd=/var/run/saslauthd</parameter>: This
-    parameter forces <command>saslauthd</command> to use the FHS compliant
-    directory <filename class='directory'>/var/run/saslauthd</filename> for
-    variable run-time data.</para>
+      <parameter>--with-saslauthd=/var/run/saslauthd</parameter>: This
+      switch forces <command>saslauthd</command> to use the FHS compliant
+      directory <filename class="directory">/var/run/saslauthd</filename>
+      for variable run-time data.
 @y
-    <para><parameter>--with-saslauthd=/var/run/saslauthd</parameter>: This
-    parameter forces <command>saslauthd</command> to use the FHS compliant
-    directory <filename class='directory'>/var/run/saslauthd</filename> for
-    variable run-time data.</para>
+      <parameter>--with-saslauthd=/var/run/saslauthd</parameter>: This
+      switch forces <command>saslauthd</command> to use the FHS compliant
+      directory <filename class="directory">/var/run/saslauthd</filename>
+      for variable run-time data.
 @z
 
 @x
-    <para><parameter>--with-dblib=gdbm</parameter>: This parameter forces
-    <application>GDBM</application> to be used instead of
-    <application>Berkeley DB</application>.</para>
+      <parameter>--with-dblib=gdbm</parameter>: This switch forces
+      <application>GDBM</application> to be used instead of
+      <application>Berkeley DB</application>.
 @y
-    <para><parameter>--with-dblib=gdbm</parameter>: This parameter forces
-    <application>GDBM</application> to be used instead of
-    <application>Berkeley DB</application>.</para>
+      <parameter>--with-dblib=gdbm</parameter>: This switch forces
+      <application>GDBM</application> to be used instead of
+      <application>Berkeley DB</application>.
 @z
 
 @x
-    <para><option>--with-ldap</option>: This parameter enables use
-    with <application>OpenLDAP</application>.</para>
+      <option>--with-ldap</option>: This switch enables the
+      <application>OpenLDAP</application> support.
 @y
-    <para><option>--with-ldap</option>: This parameter enables use
-    with <application>OpenLDAP</application>.</para>
+      <option>--with-ldap</option>: This switch enables the
+      <application>OpenLDAP</application> support.
 @z
 
 @x
-    <para><option>--enable-ldapdb</option>: This parameter enables the
-    LDAPDB authentication backend. There is a circular dependency with this
-    parameter. See <ulink url="&blfs-wiki;/cyrus-sasl"/> for a solution to
-    this problem.</para>
+      <option>--enable-ldapdb</option>: This switch enables the
+      LDAPDB authentication backend. There is a circular dependency with this
+      parameter. See <ulink url="&blfs-wiki;/cyrus-sasl"/> for a solution to
+      this problem.
 @y
-    <para><option>--enable-ldapdb</option>: This parameter enables the
-    LDAPDB authentication backend. There is a circular dependency with this
-    parameter. See <ulink url="&blfs-wiki;/cyrus-sasl"/> for a solution to
-    this problem.</para>
+      <option>--enable-ldapdb</option>: This switch enables the
+      LDAPDB authentication backend. There is a circular dependency with this
+      parameter. See <ulink url="&blfs-wiki;/cyrus-sasl"/> for a solution to
+      this problem.
 @z
 
 @x
-    <para><command>install -v -m644 ...</command>: These commands
-    install documentation which is not installed by the
-    <command>make install</command> command.</para>
+      <option>--enable-java</option>: This switch enables compiling of the
+      <application>Java</application> support libraries.
 @y
-    <para><command>install -v -m644 ...</command>: These commands
-    install documentation which is not installed by the
-    <command>make install</command> command.</para>
+      <option>--enable-java</option>: This switch enables compiling of the
+      <application>Java</application> support libraries.
 @z
 
 @x
-    <para><command>install -v -m700 -d /var/lib/sasl</command>:
-    This directory must exist when starting <command>saslauthd</command> or
-    using the sasldb plugin. If you're not going to be running the daemon or
-    using the plugins, you may omit the creation of this directory.</para>
+      <option>--enable-login</option>: This option enables unsupported
+      LOGIN authentication.
 @y
-    <para><command>install -v -m700 -d /var/lib/sasl</command>:
-    This directory must exist when starting <command>saslauthd</command> or
-    using the sasldb plugin. If you're not going to be running the daemon or
-    using the plugins, you may omit the creation of this directory.</para>
+      <option>--enable-login</option>: This option enables unsupported
+      LOGIN authentication.
+@z
+
+@x
+      <option>--enable-ntlm</option>: This option enables unsupported
+      NTLM authentication.
+@y
+      <option>--enable-ntlm</option>: This option enables unsupported
+      NTLM authentication.
+@z
+
+@x
+      <command>install -v -m644 ...</command>: These commands
+      install documentation which is not installed by the
+      <command>make install</command> command.
+@y
+      <command>install -v -m644 ...</command>: These commands
+      install documentation which is not installed by the
+      <command>make install</command> command.
+@z
+
+@x
+      <command>install -v -m700 -d /var/lib/sasl</command>: This directory
+      must exist when starting <command>saslauthd</command> or using the
+      sasldb plugin. If you're not going to be running the daemon or
+      using the plugins, you may omit the creation of this directory.
+@y
+      <command>install -v -m700 -d /var/lib/sasl</command>: This directory
+      must exist when starting <command>saslauthd</command> or using the
+      sasldb plugin. If you're not going to be running the daemon or
+      using the plugins, you may omit the creation of this directory.
 @z
 
 @x
@@ -257,15 +311,15 @@
 @z
 
 @x
-      <para><filename>/etc/saslauthd.conf</filename> (for
-      <command>saslauthd</command> LDAP configuration)
-      and <filename>/etc/sasl2/Appname.conf</filename> (where "Appname"
-      is the application defined name of the application)</para>
+        <filename>/etc/saslauthd.conf</filename>
+        (for <command>saslauthd</command> LDAP configuration) and
+        <filename>/etc/sasl2/Appname.conf</filename>
+        (where "Appname" is the application defined name of the application)
 @y
-      <para><filename>/etc/saslauthd.conf</filename> (for
-      <command>saslauthd</command> LDAP configuration)
-      and <filename>/etc/sasl2/Appname.conf</filename> (where "Appname"
-      is the application defined name of the application)</para>
+        <filename>/etc/saslauthd.conf</filename>
+        (for <command>saslauthd</command> LDAP configuration) and
+        <filename>/etc/sasl2/Appname.conf</filename>
+        (where "Appname" is the application defined name of the application)
 @z
 
 @x
@@ -275,33 +329,35 @@
 @z
 
 @x
-      <para>See <ulink
-      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
-      for information on what to include in the application configuration files.
-      </para><para>
-      See <ulink
-      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/LDAP_SASLAUTHD"/>
-      for configuring <command>saslauthd</command> with
-      <application>OpenLDAP</application>.</para><para>
-      See <ulink 
-      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
-      for configuring <command>saslauthd</command> with
-      <application>Kerberos</application>.
-      </para>
+        See
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
+        for information on what to include in the application configuration files.
 @y
-      <para>See <ulink
-      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
-      for information on what to include in the application configuration files.
-      </para><para>
-      See <ulink
-      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/LDAP_SASLAUTHD"/>
-      for configuring <command>saslauthd</command> with
-      <application>OpenLDAP</application>.</para><para>
-      See <ulink 
-      url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
-      for configuring <command>saslauthd</command> with
-      <application>Kerberos</application>.
-      </para>
+        See
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
+        for information on what to include in the application configuration files.
+@z
+
+@x
+        See
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/LDAP_SASLAUTHD"/>
+        for configuring <command>saslauthd</command> with
+        <application>OpenLDAP</application>.
+@y
+        See
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/LDAP_SASLAUTHD"/>
+        for configuring <command>saslauthd</command> with
+        <application>OpenLDAP</application>.
+@z
+
+@x
+        See
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
+        for configuring <command>saslauthd</command> with <application>Kerberos</application>.
+@y
+        See
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
+        for configuring <command>saslauthd</command> with <application>Kerberos</application>.
 @z
 
 @x
@@ -311,25 +367,25 @@
 @z
 
 @x
-      <para>If you need to run the <command>saslauthd</command> daemon at system
-      startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
-      init script included in the <xref linkend="bootscripts"/>
-      package using the following command:</para>
+        If you need to run the <command>saslauthd</command> daemon at system
+        startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
+        init script included in the <xref linkend="bootscripts"/>
+        package using the following command:
 @y
-      <para>If you need to run the <command>saslauthd</command> daemon at system
-      startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
-      init script included in the <xref linkend="bootscripts"/>
-      package using the following command:</para>
+        If you need to run the <command>saslauthd</command> daemon at system
+        startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
+        init script included in the <xref linkend="bootscripts"/>
+        package using the following command:
 @z
 
 @x
-        <para>You'll need to modify /etc/sysconfig/saslauthd and replace the
-        <option><replaceable>AUTHMECH</replaceable></option> parameter
-        with your desired authentication mechanism.</para>
+          You'll need to modify /etc/sysconfig/saslauthd and replace the
+          <option><replaceable>AUTHMECH</replaceable></option> parameter
+          with your desired authentication mechanism.
 @y
-        <para>You'll need to modify /etc/sysconfig/saslauthd and replace the
-        <option><replaceable>AUTHMECH</replaceable></option> parameter
-        with your desired authentication mechanism.</para>
+          You'll need to modify /etc/sysconfig/saslauthd and replace the
+          <option><replaceable>AUTHMECH</replaceable></option> parameter
+          with your desired authentication mechanism.
 @z
 
 @x
@@ -340,7 +396,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -349,15 +405,33 @@
 @z
 
 @x
-        <seg>pluginviewer, saslauthd, sasldblistusers2, saslpasswd2 and testsaslauthd</seg>
-        <seg>libsasl2.so, and numerous SASL plugins</seg>
-        <seg>/usr/include/sasl, /usr/lib/sasl2,
-        /usr/share/doc/cyrus-sasl-&cyrus-sasl-version;, and /var/lib/sasl</seg>
+        <seg>
+          pluginviewer, saslauthd, sasldblistusers2, saslpasswd2 and
+          testsaslauthd
+        </seg>
+        <seg>
+          libsasl2.so
+        </seg>
+        <seg>
+          /usr/include/sasl,
+          /usr/lib/sasl2,
+          /usr/share/doc/cyrus-sasl-&cyrus-sasl-version; and
+          /var/lib/sasl
+        </seg>
 @y
-        <seg>pluginviewer, saslauthd, sasldblistusers2, saslpasswd2 and testsaslauthd</seg>
-        <seg>libsasl2.so, and numerous SASL plugins</seg>
-        <seg>/usr/include/sasl, /usr/lib/sasl2,
-        /usr/share/doc/cyrus-sasl-&cyrus-sasl-version;, and /var/lib/sasl</seg>
+        <seg>
+          pluginviewer, saslauthd, sasldblistusers2, saslpasswd2,
+          testsaslauthd
+        </seg>
+        <seg>
+          libsasl2.so
+        </seg>
+        <seg>
+          /usr/include/sasl,
+          /usr/lib/sasl2,
+          /usr/share/doc/cyrus-sasl-&cyrus-sasl-version;,
+          /var/lib/sasl
+        </seg>
 @z
 
 @x
@@ -366,34 +440,46 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x saslauthd
-          <para>is the SASL authentication server.</para>
+@x pluginviewer
+            is used to list loadable SASL plugins and their properties.
 @y
-          <para>is the SASL authentication server.</para>
+            is used to list loadable SASL plugins and their properties.
+@z
+
+@x saslauthd
+            is the SASL authentication server.
+@y
+            is the SASL authentication server.
 @z
 
 @x sasldblistusers2
-          <para>is used to list the users in the SASL password database
-          <filename>sasldb2</filename>.</para>
+            is used to list the users in the SASL password database
+            <filename>sasldb2</filename>.
 @y
-          <para>is used to list the users in the SASL password database
-          <filename>sasldb2</filename>.</para>
+            is used to list the users in the SASL password database
+            <filename>sasldb2</filename>.
 @z
 
 @x saslpasswd2
-          <para>is used to set and delete a user's SASL password and
-          mechanism specific secrets in the SASL password database
-          <filename>sasldb2</filename>.</para>
+            is used to set and delete a user's SASL password and
+            mechanism specific secrets in the SASL password
+            database <filename>sasldb2</filename>.
 @y
-          <para>is used to set and delete a user's SASL password and
-          mechanism specific secrets in the SASL password database
-          <filename>sasldb2</filename>.</para>
+            is used to set and delete a user's SASL password and
+            mechanism specific secrets in the SASL password
+            database <filename>sasldb2</filename>.
+@z
+
+@x testsaslauthd
+            is a test utility for the SASL authentication server.
+@y
+            is a test utility for the SASL authentication server.
 @z
 
 @x libsasl2.so
-          <para>is a general purpose authentication library for server and
-          client applications.</para>
+            is a general purpose authentication library for server
+            and client applications.
 @y
-          <para>is a general purpose authentication library for server and
-          client applications.</para>
+            is a general purpose authentication library for server
+            and client applications.
 @z
