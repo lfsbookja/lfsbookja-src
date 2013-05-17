@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Remove unnecessary options in bootscripts
+          due to mtab change.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - mtab を変更したことから、ブートスクリプトにおける不要なオプションを削除。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change /etc/mtab to be a symbolic link
+          to /proc/self/mounts.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-14</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - /etc/mtab に対し、/proc/self/mounts へのシンボリックリンクとする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-12</para>
       <itemizedlist>
         <listitem>
