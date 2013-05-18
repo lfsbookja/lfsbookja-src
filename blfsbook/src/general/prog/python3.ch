@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "260 MB (not including the testsuite)">
-  <!ENTITY python3-time          "1.2 SBU (not including the testsuite)">
-@y
-  <!ENTITY python3-buildsize     "260 MB (テストスイートを含まない場合)">
-  <!ENTITY python3-time          "1.2 SBU (テストスイートを含まない場合)">
-@z
-
-@x
     <title>Introduction to Python 3</title>
 @y
     <title>&IntroductionTo1;Python 3&IntroductionTo2;</title>

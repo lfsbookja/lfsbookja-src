@@ -124,6 +124,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
@@ -137,6 +138,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>

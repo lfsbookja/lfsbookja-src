@@ -115,14 +115,6 @@
 @z
 
 @x
-      <command>sed -e 's/json_object...</command>: This <command>sed</command>
-      make sure that all the necessary headers are installed correctly.
-@y
-      <command>sed -e 's/json_object...</command>:
-      この <command>sed</command> コマンドは、必要なヘッダーファイルを正しくインストールするようにします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -130,8 +122,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -143,20 +135,22 @@
           None
         </seg>
         <seg>
-          libjson.so
+          libjson-c.so and libjson.so
         </seg>
         <seg>
-          /usr/include/json
+          /usr/include/json and
+          /usr/include/json-c
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libjson.so
+          libjson-c.so, libjson.so
         </seg>
         <seg>
-          /usr/include/json
+          /usr/include/json,
+          /usr/include/json-c
         </seg>
 @z
 
@@ -166,8 +160,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libjson.{a,so}
-            contains <application>JSON-C</application> API functions.
+@x libjson.so
+            contains the <application>JSON-C</application> API functions.
 @y
             <application>JSON-C</application> API 関数を提供します。
 @z

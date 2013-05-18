@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY python2-buildsize     "235 MB (not including the test suite)">
-@y
-  <!ENTITY python2-buildsize     "235 MB (not including the test suite)">
-@z
-
-@x
     <title>Introduction to Python 2</title>
 @y
     <title>&IntroductionTo1;Python 2&IntroductionTo2;</title>

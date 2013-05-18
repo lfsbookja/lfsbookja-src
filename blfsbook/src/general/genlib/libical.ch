@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>libical</application> package is an implementation of
-    iCalendar protocols and data formats.</para>
+      The <application>libical</application> package contains an implementation
+      of the iCalendar protocols and data formats.
 @y
-    <para>
-    <application>libical</application> パッケージは、iCalendar プロトコルおよびそのデータフォーマットを実装し提供します。
-    </para>
+      <application>libical</application> パッケージは、iCalendar プロトコルおよびそのデータフォーマットを実装し提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libical-download-http;"/></para>
+          Download (HTTP): <ulink url="&libical-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libical-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libical-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libical-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libical-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libical-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libical-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libical-md5sum;</para>
+          Download MD5 sum: &libical-md5sum;
 @y
-        <para>&Download; MD5 sum: &libical-md5sum;</para>
+          &Download; MD5 sum: &libical-md5sum;
 @z
 
 @x
-        <para>Download size: &libical-size;</para>
+          Download size: &libical-size;
 @y
-        <para>&DownloadSize;: &libical-size;</para>
+          &DownloadSize;: &libical-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libical-buildsize;</para>
+          Estimated disk space required: &libical-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libical-buildsize;</para>
+          &Estimateddiskspacerequired;: &libical-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libical-time;</para>
+          Estimated build time: &libical-time;
 @y
-        <para>&Estimatedbuildtime;: &libical-time;</para>
+          &Estimatedbuildtime;: &libical-time;
 @z
 
 @x
@@ -77,14 +75,15 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <!-- <para role="optional"><xref linkend="db"/></para> -->
-    <para role="optional"><xref linkend="python2"/> (must have
-    <ulink url="http://www.swig.org/">SWIG</ulink> also)</para>
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <!-- <para role="optional"><xref linkend="db"/></para> -->
-    <para role="optional"><xref linkend="python2"/> (<ulink url="http://www.swig.org/">SWIG</ulink> も必要)</para>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
 @z
 
 @x
@@ -100,28 +99,22 @@
 @z
 
 @x
-    <para>Install <application>libical</application> by running the following
-    commands:</para>
+      Install <application>libical</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libical</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libical</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make test</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -131,21 +124,11 @@
 @z
 
 @x
-    <para><parameter>--enable-cxx</parameter>: This parameter builds C++
-    <application>libical</application> library bindings.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
 @y
-    <para><parameter>--enable-cxx</parameter>:
-    本パラメーターは <application>libical</application> ライブラリの C++ バインディングをビルドします。
-    </para>
-@z
-
-@x
-    <para><option>--enable-python</option>: This option builds Python
-    <application>libical</application> bindings.</para>
-@y
-    <para><option>--enable-python</option>:
-    本オプションは <application>libical</application> の Python バインディングをビルドします。
-    </para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      本スイッチは、より的確なレベルのコンパイラー最適化オプションを採用します。
 @z
 
 @x
@@ -157,7 +140,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -165,15 +148,25 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libical{,_cxx}.{so,a}, libicalss{,_cxx}.{so,a}, libicalvcal.{so,a},
-        and (optionally) the Python _LibicalWrap.{so,a} modules</seg>
-        <seg>/usr/include/libical and /usr/share/doc/libical-&libical-version;</seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          libical.{so,a}, libicalss.{so,a} and libicalvcal.{so,a}
+        </seg>
+        <seg>
+          /usr/include/libical
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libical{,_cxx}.{so,a}, libicalss{,_cxx}.{so,a}, libicalvcal.{so,a},
-        (任意のビルドにより) _LibicalWrap.{so,a} Python モジュール</seg>
-        <seg>/usr/include/libical, /usr/share/doc/libical-&libical-version;</seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          libical.{so,a}, libicalss.{so,a}, libicalvcal.{so,a}
+        </seg>
+        <seg>
+          /usr/include/libical
+        </seg>
 @z
 
 @x
@@ -183,27 +176,21 @@
 @z
 
 @x libical.{so,a}
-          <para>contains the <application>libical</application> API
-          functions.</para>
+            contains the <application>libical</application> API
+            functions.
 @y
-          <para>
-          <application>libical</application> API 関数を提供します。
-          </para>
+            <application>libical</application> API 関数を提供します。
 @z
 
 @x libicalss.{so,a}
-          <para>is a libary that allows you to store iCal component data to disk
-          in a variety of ways.</para>
+            is a libary that allows you to store iCal component data
+            to disk in a variety of ways.
 @y
-          <para>
-          iCal コンポーネントデータを、さまざまな方法でディスクに保存するためのライブラリを提供します。
-          </para>
+            iCal コンポーネントデータを、さまざまな方法でディスクに保存するためのライブラリを提供します。
 @z
 
 @x libicalvcal.{so,a}
-          <para>is a vCard/vCalendar C interface.</para>
+            is a vCard/vCalendar C interface.
 @y
-          <para>
-          vCard/vCalendar C インターフェース。
-          </para>
+            vCard/vCalendar C インターフェース。
 @z

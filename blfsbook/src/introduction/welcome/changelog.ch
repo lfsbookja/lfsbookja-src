@@ -42,6 +42,23 @@
 @z
 
 @x
+      <para>May 17th, 2013</para>
+@y
+      <para>2013/05/17</para>
+@z
+
+@x
+      <para>May 12th, 2013</para>
+@y
+      <para>2013/05/12</para>
+@z
+@x
+          <para>[krejzi] - Fluxbox 1.3.5. Thanks to Igor &#381;ivkovi&#263; for the patch.</para>
+@y
+          <para>[krejzi] - Fluxbox 1.3.5. パッチを提供してくれた Igor &#381;ivkovi&#263; に感謝。</para>
+@z
+
+@x
       <para>May 9th, 2013</para>
 @y
       <para>2013/05/13</para>

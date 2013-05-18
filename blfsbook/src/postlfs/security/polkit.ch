@@ -79,14 +79,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="intltool"/> and
+      <xref linkend="SpiderMonkey"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="intltool"/>,
+      <xref linkend="SpiderMonkey"/>
     </para>
 @z
 
@@ -119,18 +121,6 @@
       <xref linkend="gtk-doc"/>, 
       <xref linkend="libxslt"/>,
       <xref linkend="linux-pam"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required (Runtime)</bridgehead>
-    <para role="required">    
-      <xref linkend="SpiderMonkey"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
-    <para role="required">    
-      <xref linkend="SpiderMonkey"/>
     </para>
 @z
 
