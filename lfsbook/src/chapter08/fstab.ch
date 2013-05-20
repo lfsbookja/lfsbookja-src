@@ -38,7 +38,7 @@
   with the values appropriate for the system, for example, <filename
   class="partition">sda2</filename>, <filename
   class="partition">sda5</filename>, and <systemitem
-  class="filesystem">ext3</systemitem>. For details on the six
+  class="filesystem">ext4</systemitem>. For details on the six
   fields in this file, see <command>man 5 fstab</command>.</para>
 @y
   <para>
@@ -46,7 +46,7 @@
   <replaceable>&lt;yyy&gt;</replaceable>、
   <replaceable>&lt;fff&gt;</replaceable> の部分はシステムに合わせて正しい記述に書き換えてください。
   例えば <filename class="partition">sda2</filename>、<filename class="partition">sda5</filename>、<systemitem
-  class="filesystem">ext3</systemitem> といったものです。
+  class="filesystem">ext4</systemitem> といったものです。
   上のファイルの6行分の記述内容の詳細は <command>man 5 fstab</command> により確認してください。
   </para>
 @z

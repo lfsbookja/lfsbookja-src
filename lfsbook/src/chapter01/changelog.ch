@@ -48,6 +48,26 @@
 @z
 
 @x
+      <para>2013-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Expand discussion of file system types and 
+          make ext4 the example LFS partition type. Fixes 
+          <ulink url="&lfs-ticket-root;3346">#3346</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ファイルシステムタイプの説明を充足。
+          また LFS のパーティションタイプとして ext4 を例示。
+          <ulink url="&lfs-ticket-root;3346">#3346</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-15</para>
       <itemizedlist>
         <listitem>
