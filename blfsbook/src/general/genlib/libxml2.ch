@@ -165,12 +165,12 @@
 @z
 
 @x
-      <option>--with-history</option>: If this switch is used, it enables
+      <option>--with-history</option>: This switch enables
       <application>Readline</application> support when running
       <command>xmlcatalog</command> or <command>xmllint</command> in shell mode.
 @y
       <parameter>--with-history</parameter>:
-      このスイッチを指定すれば <command>xmlcatalog</command> や <command>xmllint</command> をシェルモードで実行する際に <application>Readline</application> サポートを利用することができます。
+      このスイッチは <command>xmlcatalog</command> や <command>xmllint</command> をシェルモードで実行する際に <application>Readline</application> サポートを有効にします。
 @z
 
 @x

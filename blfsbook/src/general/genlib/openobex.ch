@@ -78,25 +78,33 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="bluez"/> and
-      <xref linkend="libusb-compat"/>
+      <xref linkend="bluez"/>,
+      <xref linkend="cmake"/> and
+      <xref linkend="libusb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="bluez"/>,
-      <xref linkend="libusb-compat"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="libusb"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openjdk"/> and
       <xref linkend="xmlto"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openjdk"/>,
       <xref linkend="xmlto"/>
     </para>
 @z

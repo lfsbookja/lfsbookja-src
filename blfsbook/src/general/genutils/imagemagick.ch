@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "450 MB (full build with all dependencies)">
-  <!ENTITY imagemagick-time          "5.0 SBU (full build - additional 20 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "208 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 20 SBU to run the test suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "450 MB (full build with all dependencies)">
-  <!ENTITY imagemagick-time          "5.0 SBU (full build - additional 20 SBU to run the test suite)">
+  <!ENTITY imagemagick-buildsize     "208 MB (with typical dependencies, reputedly 450 MB with all dependencies)">
+  <!ENTITY imagemagick-time          "1.9 SBU (typical build - additional 20 SBU to run the test suite)">
 @z
 
 @x
@@ -153,8 +153,8 @@
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional">
       <xref linkend="pkgconfig"/>,
-      <xref linkend="cups"/>, 
-      <xref linkend="curl"/>, 
+      <xref linkend="cups"/>,
+      <xref linkend="curl"/>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
@@ -163,7 +163,7 @@
       or <xref linkend="gnupg"/> or <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
       <xref linkend="sane"/>,
-      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (only for raw formats listed in
+      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
       <filename>www/formats.html</filename>),
       <xref linkend="wget"/>, and
       <xref linkend="xdg-utils"/>
@@ -172,8 +172,8 @@
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional">
       <xref linkend="pkgconfig"/>,
-      <xref linkend="cups"/>, 
-      <xref linkend="curl"/>, 
+      <xref linkend="cups"/>,
+      <xref linkend="curl"/>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://perens.com/FreeSoftware/">Electric Fence</ulink>,
       <xref linkend="ffmpeg"/>,
@@ -182,7 +182,7 @@
       or <xref linkend="gnupg"/> or <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
       <xref linkend="sane"/>,
-      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (only for raw formats listed in
+      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
       <filename>www/formats.html</filename>),
       <xref linkend="wget"/>, and
       <xref linkend="xdg-utils"/>

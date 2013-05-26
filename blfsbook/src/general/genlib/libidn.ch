@@ -14,13 +14,13 @@
 @z
 
 @x
-    <title>Introduction to Libidn</title>
+    <title>Introduction to libidn</title>
 @y
-    <title>&IntroductionTo1;Libidn&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libidn&IntroductionTo2;</title>
 @z
 
 @x
-      <application>Libidn</application> is a package designed for
+      <application>libidn</application> is a package designed for
       internationalized string handling based on the 
       <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
       <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
@@ -34,7 +34,7 @@
       converting entire domain names to and from the ASCII Compatible Encoding
       (ACE) form.
 @y
-      <application>Libidn</application> is a package designed for
+      <application>libidn</application> is a package designed for
       internationalized string handling based on the 
       <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
       <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
@@ -56,45 +56,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libidn-download-http;"/></para>
+          Download (HTTP): <ulink url="&libidn-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libidn-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libidn-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libidn-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libidn-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libidn-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libidn-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libidn-md5sum;</para>
+          Download MD5 sum: &libidn-md5sum;
 @y
-        <para>&Download; MD5 sum: &libidn-md5sum;</para>
+          &Download; MD5 sum: &libidn-md5sum;
 @z
 
 @x
-        <para>Download size: &libidn-size;</para>
+          Download size: &libidn-size;
 @y
-        <para>&DownloadSize;: &libidn-size;</para>
+          &DownloadSize;: &libidn-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libidn-buildsize;</para>
+          Estimated disk space required: &libidn-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libidn-buildsize;</para>
+          &Estimateddiskspacerequired;: &libidn-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libidn-time;</para>
+          Estimated build time: &libidn-time;
 @y
-        <para>&Estimatedbuildtime;: &libidn-time;</para>
+          &Estimatedbuildtime;: &libidn-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">Libidn Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libidn Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Libidn&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libidn&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -123,23 +123,21 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libidn"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libidn"/></para>
 @z
 
 @x
-    <title>Installation of Libidn</title>
+    <title>Installation of libidn</title>
 @y
-    <title>&InstallationOf1;Libidn&InstallationOf2;</title>
+    <title>&InstallationOf1;libidn&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Libidn</application> by running the following
+      Install <application>libidn</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Libidn</application> をビルドします。
+      以下のコマンドを実行して <application>libidn</application> をビルドします。
 @z
 
 @x

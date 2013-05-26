@@ -31,10 +31,10 @@
     kernels. These capabilities are a partitioning of the all powerful root
     privilege into a set of distinct privileges.  </para>
 @y
-    <para>The <application>libcap2</application> package implements the
-    user-space interfaces to the POSIX 1003.1e capabilities available in Linux
-    kernels. These capabilities are a partitioning of the all powerful root
-    privilege into a set of distinct privileges.  </para>
+    <para>
+    <application>libcap2</application> パッケージは、Linux カーネルにて利用される POSIX 1003.1e 機能へのユーザー空間からのインターフェースを実装します。
+    この機能は、強力な root 権限機能を他の権限へと分散します。
+    </para>
 @z
 
 @x
