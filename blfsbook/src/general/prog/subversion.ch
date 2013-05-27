@@ -122,7 +122,7 @@
       <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="gnome-keyring"/>,
-      KWallet from KDE and
+      <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> and
       <xref linkend="apache"/>.
     </para>
 @y
@@ -134,7 +134,7 @@
       <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="gnome-keyring"/>,
-      KDE4 の KWallet,
+      <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink>,
       <xref linkend="apache"/>.
     </para>
 @z
@@ -199,14 +199,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <option>--disable-static</option>: This stops it installing static
-      versions of the libraries.
-@y
-      <option>--disable-static</option>: This stops it installing static
-      versions of the libraries.
 @z
 
 @x

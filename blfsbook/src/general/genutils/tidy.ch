@@ -223,11 +223,11 @@
 
 @x
     <seg>tab2space and tidy</seg>
-    <seg>libtidy.{so,a}</seg>
+    <seg>libtidy.so</seg>
     <seg>/usr/share/doc/tidy-&tidy-version;</seg>
 @y
     <seg>tab2space, tidy</seg>
-    <seg>libtidy.{so,a}</seg>
+    <seg>libtidy.so</seg>
     <seg>/usr/share/doc/tidy-&tidy-version;</seg>
 @z
 
@@ -257,8 +257,8 @@
           </para>
 @z
 
-@x libtidy.{so,a}
-          <para>libraries provide the <application>HTML Tidy</application> API
+@x libtidy.so
+          <para>library provides the <application>HTML Tidy</application> API
           functions to <command>tidy</command> and can also be called by other
           programs.</para>
 @y

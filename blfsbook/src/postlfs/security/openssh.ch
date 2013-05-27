@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY openssh-buildsize     "32 MB (plus 10MB if running the tests)">
+  <!ENTITY openssh-time          "0.4 SBU (running the tests takes at least 10 minutes, irrespective of processor speed)">
+@y
+  <!ENTITY openssh-buildsize     "32 MB (テスト実施時は 10MB 追加)">
+  <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理性能には関係なく 10分ほど必要)">
+@z
+
+@x
     <title>Introduction to OpenSSH</title>
 @y
     <title>&IntroductionTo1;OpenSSH&IntroductionTo2;</title>
@@ -120,7 +128,7 @@
       <xref linkend="sysstat"/>.
     </para>
 @y
-    <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
+    <bridgehead renderas="sect4">&Optional;, 実行時 (エントロピー収集のためにのみ利用される)</bridgehead>
     <para role="optional">
       <xref linkend="openjdk"/>,
       <xref linkend="net-tools"/>,
@@ -148,27 +156,12 @@
       the proper environment, which are performed by issuing the following
       commands as the <systemitem class="username">root</systemitem> user:
 @y
-      <application>OpenSSH</application> runs as two processes when connecting
-      to other computers. The first process is a privileged process and controls
-      the issuance of privileges as necessary. The second process communicates
-      with the network. Additional installation steps are necessary to set up
-      the proper environment, which are performed by issuing the following
-      commands as the <systemitem class="username">root</systemitem> user:
+      他のコンピューターへの接続の際に、<application>OpenSSH</application> は二つのプロセスとして起動します。
+      初めのプロセスは特権プロセスであり、必要に応じて特権の発行を制御します。
+      二つめのプロセスはネットワーク通信を行います。
+      環境設定を適切に行うためには、インストール手順において追加作業が必要となります。
+      それは <systemitem class="username">root</systemitem> ユーザーとなって、以下のコマンドを行うものです。
 @z
-
-% @x
-%       <application>OpenSSH</application> is very sensitive to changes in the
-%       linked <application>OpenSSL</application> libraries. If you recompile
-%       <application>OpenSSL</application>, <application>OpenSSH</application> may
-%       fail to start up. An alternative is to link against the static
-%       <application>OpenSSL</application> library. To link against the static
-%       library, execute the following command:
-% @y
-%       <application>OpenSSH</application> は、リンクされる <application>OpenSSL</application> ライブラリの変更に大きく影響を受けます。
-%       <application>OpenSSL</application> を再コンパイルすると、場合によっては <application>OpenSSH</application> が起動しないかもしれません。
-%       これを避ける方法として、スタティックな <application>OpenSSL</application> ライブラリをリンクする方法があります。
-%       これを行うには、以下のコマンドを実行します。
-% @z
 
 @x
       Install <application>OpenSSH</application> by running the following
@@ -177,35 +170,27 @@
       以下のコマンドを実行して <application>OpenSSH</application> をビルドします。
 @z
 
-% @x
-%       If you linked <application>tcp_wrappers</application> into the build using
-%       the <option>--with-tcp-wrappers</option> parameter, ensure you add
-%       127.0.0.1 to the sshd line in <filename>/etc/hosts.allow</filename> if you
-%       have a restrictive <filename>/etc/hosts.deny</filename> file, or the test
-%       suite will fail. Additionally, the testsuite requires an installed copy of
-%       <command>scp</command> to complete the multiplexing tests. To run the test
-%       suite, first copy the scp program to
-%       <filename class="directory">/usr/bin</filename>, making sure that you back
-%       up any existing copy first.
-% @y
-%       ビルド時に <option>--with-tcp-wrappers</option> パラメーターを使って <application>tcp_wrappers</application> をリンクした場合、以下に注意してください。
-%       <filename>/etc/hosts.deny</filename> ファイルにて、きつい制限を与えているなら <filename>/etc/hosts.allow</filename> ファイル内の sshd の行に 127.0.0.1 を加えておく必要があります。。
-%       これを行っておかないとテストに失敗します。
-%       またマルチプレックステスト (multiplexing tests) を行うためには <command>scp</command> が既にインストールされている必要があります。
-%       テストスイートの実行前には、<filename class="directory">/usr/bin</filename> ディレクトリに scp プログラムがあるなら、そのバックアップを取った上で scp プログラムをそのディレクトリにコピーしておいてください。
-% @z
-
 @x
-      To run the test suite, issue the following commands:
+      The testsuite requires an installed copy of <command>scp</command> to
+      complete the multiplexing tests. To run the test suite, first copy the
+      <command>scp</command> program to
+      <filename class="directory">/usr/bin</filename>, making sure that you
+      back up any existing copy first.
 @y
-      ビルド結果をテストする場合は以下のコマンドを実行します。
+      テストスイートの実行には、インストール済の <command>scp</command> が必要であり、これがないとマルチプレックステストが失敗します。
+      テスト実施前にはまず <command>scp</command> プログラムを <filename class="directory">/usr/bin</filename> にコピーしてください。
+      もしすでにこのプログラムが存在していた場合にはバックアップをとっておいてください。
 @z
 
 @x
-      If the above command produces no 'FATAL' errors, then proceed with the
-      installation, as the <systemitem class="username">root</systemitem> user:
+      To test the results, issue: <command>make test</command>.
 @y
-      上記のコマンド実行により 'FATAL' と表記されるエラーがなければ、次へ進みます。
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
@@ -239,8 +224,8 @@
       <parameter>--with-md5-passwords</parameter>: This enables the use of MD5
       passwords.
 @y
-      <parameter>--with-md5-passwords</parameter>: This enables the use of MD5
-      passwords.
+      <parameter>--with-md5-passwords</parameter>:
+      MD5 パスワードの利用を有効にします。
 @z
 
 @x
@@ -259,12 +244,11 @@
       <filename>sshd_config</filename> with the XAuthLocation keyword. You can
       omit this switch if <application>Xorg</application> is already installed.
 @y
-      <parameter>--with-xauth=/usr/bin/xauth</parameter>: Set the default
-      location for the <command>xauth</command> binary for X authentication.
-      Change the location if <command>xauth</command> will be installed to a
-      different path. This can also be controlled from
-      <filename>sshd_config</filename> with the XAuthLocation keyword. You can
-      omit this switch if <application>Xorg</application> is already installed.
+      <parameter>--with-xauth=/usr/bin/xauth</parameter>:
+      X における認証を行う <command>xauth</command> 実行モジュールのデフォルトインストール先を指定します。
+      <command>xauth</command> のインストール先に合わせて適宜修正してください。
+      このディレクトリは <filename>sshd_config</filename> ファイルの XAuthLocation キーワードにおいても設定することができます。
+      <application>Xorg</application> を既にインストールしている場合は、本スイッチを省略して構いません。
 @z
 
 @x
@@ -382,7 +366,7 @@
 @x
       <title>Boot Script</title>
 @y
-      <title>ブートスクリプト</title>
+      <title>&BootScript;</title>
 @z
 
 @x
