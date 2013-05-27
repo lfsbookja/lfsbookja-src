@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY xcb-util-time          "less than 0.1 SBU">
+@y
+  <!ENTITY xcb-util-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to xcb-util</title>
 @y
     <title>&IntroductionTo1;xcb-util&IntroductionTo2;</title>

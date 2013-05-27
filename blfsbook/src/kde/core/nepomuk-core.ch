@@ -132,6 +132,14 @@
 @z
 
 @x
+    <para>This package does not come with a working test suite.</para>
+@y
+    <para>
+    このパッケージには有効なテストスイートはありません。
+    </para>
+@z
+
+@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>

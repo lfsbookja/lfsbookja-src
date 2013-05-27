@@ -140,6 +140,21 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to apply
+    higher level of compiler optimizations.</para>
+@y
+    <para><option>-DCMAKE_BUILD_TYPE=Release</option>:
+    このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
+    </para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

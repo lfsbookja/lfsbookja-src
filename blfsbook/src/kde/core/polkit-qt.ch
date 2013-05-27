@@ -112,6 +112,12 @@
 @z
 
 @x
+      This package does not come with a test suite.
+@y
+      &notTestSuite;
+@z
+
+@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>

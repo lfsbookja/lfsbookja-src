@@ -30,9 +30,7 @@
       <application>GTK+</application> bindings for
       <application>Colord</application>.
 @y
-      The <application>Colord GTK</application> package contains
-      <application>GTK+</application> bindings for
-      <application>Colord</application>.
+      <application>Colord GTK</application> パッケージは、<application>Colord</application> に対する <application>GTK+</application> バインディングを提供します。
 @z
 
 @x
@@ -106,7 +104,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>m
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -132,33 +130,32 @@
 @x
     <title>Installation of Colord GTK</title>
 @y
-    <title>Installation of Colord GTK</title>
+    <title>&InstallationOf1;Colord GTK&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Colord GTK</application> by running the following
       commands:
 @y
-      Install <application>Colord GTK</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Colord GTK</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -166,23 +163,23 @@
       building of the Vala bindings. Remove if you don't
       have <xref linkend="vala"/> installed.
 @y
-      <option>--enable-vala</option>: This switch enables
-      building of the Vala bindings. Remove if you don't
-      have <xref linkend="vala"/> installed.
+      <option>--enable-vala</option>:
+      このスイッチにより Vala バインディングをビルドすることを指示します。
+      <xref linkend="vala"/> をインストールしていない場合はこれを取り除いてください。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -204,13 +201,12 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libcolord-gtk.so
             contains the <application>Colord</application>
             <application>GTK+</application> bindings.
 @y
-            contains the <application>Colord</application>
-            <application>GTK+</application> bindings.
+            <application>Colord</application> の <application>GTK+</application> バインディングを提供します。
 @z
