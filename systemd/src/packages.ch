@@ -54,6 +54,14 @@
 @z
 
 @x
+<!ENTITY linux-ch8-du "700 - 6800 MB (typically about 800-900 MB)">
+<!ENTITY linux-ch8-sbu "3.0 - 49.0 SBU (typically about 6 SBU)">
+@y
+<!ENTITY linux-ch8-du "700 - 6800 MB (一般的には 800-900 MB 程度)">
+<!ENTITY linux-ch8-sbu "3.0 - 49.0 SBU (一般的には 6 SBU 程度)">
+@z
+
+@x
 <!ENTITY man-pages-ch6-sbu "less than 0.1 SBU">
 @y
 <!ENTITY man-pages-ch6-sbu "0.1 SBU 以下">

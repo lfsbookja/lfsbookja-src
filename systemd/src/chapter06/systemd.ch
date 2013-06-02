@@ -111,19 +111,6 @@
     </para>
 @z
 
-% @x
-%     <para>By default, Journald logs to a tmpfs which means that logs
-%     are not persistent through reboots. To make it log to a disk,
-%     create the <filename class="directory">
-%     /var/log/journal</filename> directory:</para>
-% @y
-%     <para>
-%     デフォルトにて Journald ログは tmpfs に出力されますが、これはリブートにより失われてしまいます。
-%     ディスク上に確実にログとして残すために <filename
-%     class="directory">/var/log/journal</filename> ディレクトリを生成します。
-%     </para>
-% @z
-
 @x
     <para>Remove a reference to a non-existent group:</para>
 @y
@@ -149,8 +136,12 @@
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed libraries</segtitle>
+      <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
+      <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
@@ -195,80 +186,68 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-# @x ata_id
-#           <para>Provides Udev with a unique string and
-#           additional information (uuid, label) for an ATA drive</para>
-# @y
-#           <para>
-#           ATA ドライブに対するユニークな文字列と追加情報 (uuid、ラベル) を Udev に提供します。
-#           </para>
-# @z
-# 
-# @x cdrom_id
-#           <para>Provides Udev with the capabilities of a
-#           CD-ROM or DVD-ROM drive</para>
-# @y
-#           <para>
-#           CD-ROM ドライブや DVD-ROM ドライブの情報を Udev に提供します。
-#           </para>
-# @z
-# 
-# @x collect
-#           <para>Given an ID for the current uevent and a list of
-#           IDs (for all target uevents), registers the current ID
-#           and indicates whether all target IDs have been registered</para>
-# @y
-#           <para>
-#           現在の uevent の ID と (すべての対象 uevent に対する) ID のリストを与えることで、現在の ID を登録し、すべての対象 ID が既に登録済みであるかどうかを示します。
-#           </para>
-# @z
-# 
-# @x scsi_id
-#           <para>Provides Udev with a unique SCSI identifier
-#           based on the data returned from sending a SCSI INQUIRY command to
-#           the specified device</para>
-# @y
-#           <para>
-#           特定のデバイスに対する SCSI INQUIRY コマンド送信の結果として得られるデータに基づく、ユニークな SCSI 識別子を Udev に対して提供します。
-#           </para>
-# @z
-# 
-# @x udevadm
-#           <para>Generic udev administration tool: controls the udevd daemon,
-#           provides info from the Udev database, monitors uevents, waits for
-#           uevents to finish, tests Udev configuration, and triggers uevents
-#           for a given device</para>
-# @y
-#           <para>
-#           汎用的な Udev 管理ツール。
-#           udevd デーモンの制御、Udev データベースデータの提供、uevent の監視、uevent の完了までの待機、Udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
-#           </para>
-# @z
-# 
-# @x udevd
-#           <para>A daemon that listens for uevents on the netlink socket,
-#           creates devices and runs the configured external programs in
-#           response to these uevents</para>
-# @y
-#           <para>
-#           ネットワークソケット上の uevent を待ち受けるデーモン。
-#           デバイスを生成し、その uevent に対応する外部プログラムを起動します。
-#           </para>
-# @z
-# 
-# @x libudev
-#           <para>A library interface to udev device information</para>
-# @y
-#           <para>
-#           Udev デバイス情報のインターフェースライブラリ。
-#           </para>
-# @z
-# 
-# @x /etc/udev
-#           <para>Contains Udev configuration files,
-#           device permissions, and rules for device naming</para>
-# @y
-#           <para>
-#           Udev 設定ファイル、デバイスのパーミッション、デバイス命名規則を定めます。
-#           </para>
-# @z
+@x halt
+          <para>Normally invokes <command>shutdown</command> with the
+          <parameter>-h</parameter> option, except when already in run-level 0,
+          then it tells the kernel to halt the system; it notes in the
+          file <filename>/var/log/wtmp</filename> that the system is being
+          brought down.</para>
+@y
+          <para>
+          
+Normally invokes <command>shutdown</command> with the
+          <parameter>-h</parameter> option, except when already in run-level 0,
+          then it tells the kernel to halt the system; it notes in the
+          file <filename>/var/log/wtmp</filename> that the system is being
+          brought down.</para>
+@z
+
+@x hostnamectl
+          <para>used to query and change the system hostname and related
+          settings.</para>
+@y
+          <para>
+          ホスト名や関連する情報を取得、設定を行います。
+          </para>
+@z
+
+@x init
+          <para>The first process to be started when the kernel has initialized
+          the hardware which takes over the boot process and starts all the
+          proceses it is instructed to.</para>
+@y
+          <para>
+          カーネルがブート処理においてハードウェアを初期化する際に、起動される最初のプロセスです。
+          このプロセスがさらに各プロセスを起動していきます。
+          </para>
+@z
+
+@x journalctl
+          <para>used to query the contents of the Systemd Journal.</para>
+@y
+          <para>
+          Systemd ジャーナルの内容を取得します。
+          </para>
+@z
+
+@x kernel-install
+          <para>used to add and remove kernel and initramfs images to and
+          from /boot.</para>
+@y
+          <para>
+          /boot ディレクトリにおいて、カーネルや initramfs イメージを追加したり削除したりします。
+          </para>
+@z
+
+
+@x udevadm
+          <para>Generic Udev administration tool: controls the udevd daemon,
+          provides info from the Udev database, monitors uevents, waits for
+          uevents to finish, tests Udev configuration, and triggers uevents
+          for a given device.</para>
+@y
+          <para>
+          汎用的な Udev 管理ツール。
+          udevd デーモンの制御、Udev データベースデータの提供、uevent の監視、uevent の完了までの待機、Udev 設定のテスト、指定デバイスに対する uevent の起動、といったことを行います。
+          </para>
+@z

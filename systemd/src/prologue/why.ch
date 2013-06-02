@@ -45,6 +45,19 @@
     </para>
 @z
 
+@x Acl
+        <para>This package contains programs to administer Access Control
+        Lists, which are used to define more fine-grained discretionary access
+        rights for files and directories. It is required by Systemd
+        and can be used by Coreutils.</para>
+@y
+        <para>
+        このパッケージは、アクセスコントロールリスト (Access Control Lists) を制御するプログラムを提供します。
+        これはファイルやディレクトリに対して、きめ細かなアクセス権限を定義するために利用されます。
+        Systemd がこれを必要としており、Coreutils も利用します。
+        </para>
+@z
+
 @x Attr
         <para>This package contains programs for working with extended
         attributes on filesystem objects.  It is required by the libcap
