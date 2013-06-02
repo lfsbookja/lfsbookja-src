@@ -168,9 +168,9 @@
           <filename class="directory">/usr/lib/ruby</filename> hierarchy.
         </seg>
         <seg>
-          /usr/include/ruby-1.9.1,
+          /usr/include/ruby-&ruby-version;,
           /usr/lib/ruby,
-          /usr/share/doc/ruby and
+          /usr/share/doc/ruby-&ruby-version; and
           /usr/share/ri
         </seg>
 @y
@@ -182,9 +182,9 @@
           <filename class="directory">/usr/lib/ruby</filename> 配下にある数多くのモジュール
         </seg>
         <seg>
-          /usr/include/ruby-1.9.1,
+          /usr/include/ruby-&ruby-version;,
           /usr/lib/ruby,
-          /usr/share/doc/ruby,
+          /usr/share/doc/ruby-&ruby-version;,
           /usr/share/ri
         </seg>
 @z
