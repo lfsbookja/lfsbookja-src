@@ -5,11 +5,10 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=applications core deprecated
+SUBDIRS=applications platform deprecated
 BOOKdir = @abs_bookdir@/gnome
 CHANGE_FILES = \
-	gnome.ch      \
-	gnome-intro.ch
+	gnome.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -25,4 +24,3 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 gnome.xml:       $(BOOKdir)/$@ $(srcdir)/gnome.ch
-gnome-intro.xml: $(BOOKdir)/$@ $(srcdir)/gnome-intro.ch

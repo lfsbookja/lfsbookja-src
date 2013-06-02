@@ -111,31 +111,35 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
-    <xref linkend="fop"/> (XML PDF support),
-    <xref linkend="glib2"/> (for the test suite),
-    <xref linkend="gnome-doc-utils"/> and
-    <xref linkend="which"/> (required for the test suite and gtk-doc documentation),
-    <xref linkend="openjade"/> with
-    <xref linkend="sgml-dtd"/> and
-    <xref linkend="docbook-dsssl"/>
-    (SGML support, not actively maintained any more),
-    <xref linkend="python2"/> (builds gtkdoc-depscan), and
-    <xref linkend="rarian"/></para>
+      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
+      <xref linkend="fop"/> (XML PDF support),
+      <xref linkend="glib2"/> (for the test suite),
+      <ulink url="&gnome-download-http;/gnome-doc-utils/">
+      GNOME Doc Utils</ulink> and
+      <xref linkend="which"/> (required for the test suite and gtk-doc documentation),
+      <xref linkend="openjade"/> with
+      <xref linkend="sgml-dtd"/> and
+      <xref linkend="docbook-dsssl"/>
+      (SGML support, not actively maintained any more),
+      <xref linkend="python2"/> (builds gtkdoc-depscan), and
+      <xref linkend="rarian"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> または
-    <xref linkend="fop"/> (XML PDF サポート),
-    <xref linkend="glib2"/> (テストスイート実行のため),
-    <xref linkend="gnome-doc-utils"/>,
-    <xref linkend="which"/> (テストスイート実行と gtk-doc 文書生成時に必要),
-    <xref linkend="openjade"/> with
-    <xref linkend="sgml-dtd"/> and
-    <xref linkend="docbook-dsssl"/>
-    (SGML support, not actively maintained any more),
-    <xref linkend="python2"/> (builds gtkdoc-depscan), and
-    <xref linkend="rarian"/></para>
+      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
+      <xref linkend="fop"/> (XML PDF サポート),
+      <xref linkend="glib2"/> (テストスイートのため),
+      <ulink url="&gnome-download-http;/gnome-doc-utils/">
+      GNOME Doc Utils</ulink>,
+      <xref linkend="which"/> (テストスイートと gtk-doc 文書生成時に必要),
+      <xref linkend="openjade"/> with
+      <xref linkend="sgml-dtd"/> and
+      <xref linkend="docbook-dsssl"/>
+      (SGML support, not actively maintained any more),
+      <xref linkend="python2"/> (builds gtkdoc-depscan), and
+      <xref linkend="rarian"/>
+    </para>
 @z
 
 @x

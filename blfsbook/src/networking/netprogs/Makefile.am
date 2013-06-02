@@ -15,7 +15,6 @@ CHANGE_FILES = \
 	netprogs.ch         \
 	nfs-utils.ch        \
 	ntp.ch              \
-	openssh-client.ch   \
 	othernetprogs.ch    \
 	rpcbind.ch          \
 	rsync.ch            \
@@ -45,7 +44,6 @@ netfs.xml:            $(BOOKdir)/$@ $(srcdir)/netfs.ch
 netprogs.xml:         $(BOOKdir)/$@ $(srcdir)/netprogs.ch
 nfs-utils.xml:        $(BOOKdir)/$@ $(srcdir)/nfs-utils.ch
 ntp.xml:              $(BOOKdir)/$@ $(srcdir)/ntp.ch
-openssh-client.xml:   $(BOOKdir)/$@ $(srcdir)/openssh-client.ch
 othernetprogs.xml:    $(BOOKdir)/$@ $(srcdir)/othernetprogs.ch
 rpcbind.xml:          $(BOOKdir)/$@ $(srcdir)/rpcbind.ch
 rsync.xml:            $(BOOKdir)/$@ $(srcdir)/rsync.ch

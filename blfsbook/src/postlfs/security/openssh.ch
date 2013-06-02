@@ -102,8 +102,7 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
-      (provides a command-line history feature to <command>sftp</command>),
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="http://www.opensc-project.org/">OpenSC</ulink> and
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
@@ -113,8 +112,7 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
-      (<command>sftp</command> においてコマンドライン履歴機能を提供します),
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="http://www.opensc-project.org/">OpenSC</ulink>,
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>

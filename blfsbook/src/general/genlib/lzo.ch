@@ -136,10 +136,10 @@
           None
         </seg>
         <seg>
-          liblzo2.{so,a}
+          liblzo2.so
         </seg>
         <seg>
-          /usr/include/lzo and 
+          /usr/include/lzo and
           /usr/share/doc/lzo
         </seg>
 @y
@@ -147,7 +147,7 @@
           &None;
         </seg>
         <seg>
-          liblzo2.{so,a}
+          liblzo2.so
         </seg>
         <seg>
           /usr/include/lzo,

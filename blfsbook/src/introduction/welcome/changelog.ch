@@ -42,6 +42,66 @@
 @z
 
 @x
+      <para>June 1st, 2013</para>
+@y
+      <para>2013/06/01</para>
+@z
+
+@x
+      <para>June 1st, 2013</para>
+@y
+      <para>2013/06/01</para>
+@z
+@x
+          <para>[krejzi] - Removed GNOME from the book.</para>
+@y
+          <para>[krejzi] - GNOME を削除。</para>
+@z
+
+@x
+      <para>May 30th, 2013</para>
+@y
+      <para>2013/05/30</para>
+@z
+
+@x
+      <para>May 24th, 2013</para>
+@y
+      <para>2013/05/24</para>
+@z
+@x
+          <para>[igor] - Updated libxml2 and Screen instructions to reflect
+          changes in newer LFS versions.</para>
+@y
+          <para>[igor] - 最新の LFS ブックに合わせて libxml2 と Screen の手順を更新。</para>
+@z
+
+@x
+      <para>May 22nd, 2013</para>
+@y
+      <para>2013/05/22</para>
+@z
+@x
+          <para>[krejzi] - Updated Kernel Configuration for Xorg Drivers.
+          Thanks to Igor &#381;ivkovi&#263; for the patch.</para>
+@y
+          <para>[krejzi] - Xorg ドライバーに対するカーネル設定を更新。
+          パッチを提供してくれた Igor &#381;ivkovi&#263; に感謝。</para>
+@z
+
+@x
+      <para>May 21st, 2013</para>
+@y
+      <para>2013/05/21</para>
+@z
+
+@x
+      <para>May 19th, 2013</para>
+@y
+      <para>2013/05/19</para>
+@z
+
+@x
       <para>May 17th, 2013</para>
 @y
       <para>2013/05/17</para>

@@ -158,16 +158,6 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: prevent static libraries
-    being built and installed.</para>
-@y
-    <para>
-    <option>--disable-static</option>:
-    このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -185,12 +175,12 @@
 
 @x
         <seg>libglade-convert (requires <command>python</command>)</seg>
-        <seg>libglade-2.0.{so,a}</seg>
+        <seg>libglade-2.0.so</seg>
         <seg>/usr/{include/libglade-2.0/glade,share/{gtk-doc/html/libglade,
         xml/libglade}}</seg>
 @y
         <seg>libglade-convert (<command>python</command> が必要)</seg>
-        <seg>libglade-2.0.{so,a}</seg>
+        <seg>libglade-2.0.so</seg>
         <seg>/usr/{include/libglade-2.0/glade,share/{gtk-doc/html/libglade,
         xml/libglade}}</seg>
 @z

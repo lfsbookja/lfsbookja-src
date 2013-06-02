@@ -171,7 +171,7 @@
           hb-ot-shape-closure, hb-shape and hb-view
         </seg>
         <seg>
-          libharfbuzz.so
+          libharfbuzz.so and libharfbuzz-icu.so
         </seg>
         <seg>
           /usr/include/harfbuzz
@@ -181,7 +181,7 @@
           hb-ot-shape-closure, hb-shape, hb-view
         </seg>
         <seg>
-          libharfbuzz.so
+          libharfbuzz.so, libharfbuzz-icu.so
         </seg>
         <seg>
           /usr/include/harfbuzz

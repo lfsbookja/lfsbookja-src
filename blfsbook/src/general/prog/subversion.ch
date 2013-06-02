@@ -89,7 +89,7 @@
       <xref linkend="sqlite"/>,
       <xref linkend="apr-util"/> and
       <xref linkend="neon"/> or
-      <ulink url="http://code.google.com/p/serf/">serf</ulink>.
+      <ulink url="http://code.google.com/p/serf/">serf</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -97,7 +97,7 @@
       <xref linkend="sqlite"/>,
       <xref linkend="apr-util"/>,
       <xref linkend="neon"/> または
-      <ulink url="http://code.google.com/p/serf/">serf</ulink>.
+      <ulink url="http://code.google.com/p/serf/">serf</ulink>
     </para>
 @z
 
@@ -121,9 +121,9 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="gnome-keyring"/>,
-      <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> and
-      <xref linkend="apache"/>.
+      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support) and
+      <xref linkend="apache"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -133,9 +133,9 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="gnome-keyring"/>,
-      <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink>,
-      <xref linkend="apache"/>.
+      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support) and
+      <xref linkend="apache"/>
     </para>
 @z
 

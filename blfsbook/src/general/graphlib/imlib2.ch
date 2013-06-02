@@ -180,13 +180,13 @@
 @x
         <seg>imlib2_bumpmap, imlib2_colorspace, imlib2-config, imlib2_conv,
         imlib2_grab, imlib2_poly, imlib2_show, imlib2_test, and imlib2_view</seg>
-        <seg>libImlib2.{so,a} and various filters and image loader modules.</seg>
+        <seg>libImlib2.so and various filters and image loader modules.</seg>
         <seg>/usr/lib/imlib2, /usr/share/doc/imlib2-&imlib2-version;, and
         /usr/share/imlib2</seg>
 @y
         <seg>imlib2_bumpmap, imlib2_colorspace, imlib2-config, imlib2_conv,
         imlib2_grab, imlib2_poly, imlib2_show, imlib2_test, imlib2_view</seg>
-        <seg>libImlib2.{so,a} と、数多くのフィルタモジュールやイメージロードモジュール</seg>
+        <seg>libImlib2.so と、数多くのフィルタモジュールやイメージロードモジュール</seg>
         <seg>/usr/lib/imlib2, /usr/share/doc/imlib2-&imlib2-version;,
         /usr/share/imlib2</seg>
 @z

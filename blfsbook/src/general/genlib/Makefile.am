@@ -45,7 +45,6 @@ CHANGE_FILES = \
 	libksba.ch \
 	libsigc++.ch \
 	libtasn1.ch \
-	libunique3.ch \
 	libunistring.ch \
 	libusb.ch \
 	libusb-compat.ch \
@@ -64,10 +63,6 @@ CHANGE_FILES = \
 	sbc.ch \
 	slib.ch \
 	talloc.ch \
-	telepathy-farstream.ch \
-	telepathy-glib.ch \
-	telepathy-logger.ch \
-	telepathy-mission-control.ch \
 	wv.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -120,7 +115,6 @@ libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
 libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
 libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
 libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
-libunique3.xml:            $(BOOKdir)/$@ $(srcdir)/libunique3.ch
 libunistring.xml:          $(BOOKdir)/$@ $(srcdir)/libunistring.ch
 libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
 libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
@@ -139,8 +133,4 @@ qjson.xml:                 $(BOOKdir)/$@ $(srcdir)/qjson.ch
 sbc.xml:                   $(BOOKdir)/$@ $(srcdir)/sbc.ch
 slib.xml:                  $(BOOKdir)/$@ $(srcdir)/slib.ch
 talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
-telepathy-farstream.xml:   $(BOOKdir)/$@ $(srcdir)/telepathy-farstream.ch
-telepathy-glib.xml:        $(BOOKdir)/$@ $(srcdir)/telepathy-glib.ch
-telepathy-logger.xml:      $(BOOKdir)/$@ $(srcdir)/telepathy-logger.ch
-telepathy-mission-control.xml: $(BOOKdir)/$@ $(srcdir)/telepathy-mission-control.ch
 wv.xml:                    $(BOOKdir)/$@ $(srcdir)/wv.ch

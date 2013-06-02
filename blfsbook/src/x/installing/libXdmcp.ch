@@ -148,12 +148,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libXdmcp.{so,a}</seg>
+        <seg>libXdmcp.so</seg>
         <seg>None</seg>
 @y
-        <seg>なし</seg>
-        <seg>libXdmcp.{so,a}</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>libXdmcp.so</seg>
+        <seg>&None;</seg>
 @z
 
 @x

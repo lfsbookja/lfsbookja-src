@@ -181,11 +181,11 @@
 
 @x
         <seg>None</seg>
-        <seg>libmng.{so,a}</seg>
+        <seg>libmng.so</seg>
         <seg>/usr/share/doc/libmng-&libmng-version;</seg>
 @y
         <seg>&None;</seg>
-        <seg>libmng.{so,a}</seg>
+        <seg>libmng.so</seg>
         <seg>/usr/share/doc/libmng-&libmng-version;</seg>
 @z
 

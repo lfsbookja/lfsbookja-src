@@ -165,12 +165,12 @@
 @x
         <seg>icc2ps, icclink, icctrans, wtpt and
         optionally, jpegicc, tiffdiff and tifficc</seg>
-        <seg>liblcms.{so,a} and the optional _lcms.{so,a} Python module</seg>
+        <seg>liblcms.so and the optional _lcms.so Python module</seg>
         <seg>/usr/share/doc/lcms-&lcms-version;</seg>
 @y
         <seg>icc2ps, icclink, icctrans, wtpt,
         また任意インストールとして jpegicc, tiffdiff, tifficc</seg>
-        <seg>liblcms.{so,a}, また任意インストールとして、Python モジュール _lcms.{so,a}</seg>
+        <seg>liblcms.so, また任意インストールとして Python モジュール _lcms.so</seg>
         <seg>/usr/share/doc/lcms-&lcms-version;</seg>
 @z
 

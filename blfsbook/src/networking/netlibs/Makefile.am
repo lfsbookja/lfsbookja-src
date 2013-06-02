@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	libnice.ch         \
 	libnl.ch           \
 	libpcap.ch         \
-	librest.ch         \
 	libsoup.ch         \
 	libtirpc.ch        \
 	neon.ch            \
@@ -39,7 +38,6 @@ libevent.xml:         $(BOOKdir)/$@ $(srcdir)/libevent.ch
 libnice.xml:          $(BOOKdir)/$@ $(srcdir)/libnice.ch
 libnl.xml:            $(BOOKdir)/$@ $(srcdir)/libnl.ch
 libpcap.xml:          $(BOOKdir)/$@ $(srcdir)/libpcap.ch
-librest.xml:          $(BOOKdir)/$@ $(srcdir)/librest.ch
 libsoup.xml:          $(BOOKdir)/$@ $(srcdir)/libsoup.ch
 libtirpc.xml:         $(BOOKdir)/$@ $(srcdir)/libtirpc.ch
 neon.xml:             $(BOOKdir)/$@ $(srcdir)/neon.ch

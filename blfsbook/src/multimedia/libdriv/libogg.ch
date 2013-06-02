@@ -124,16 +124,6 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: prevent static libraries
-    being built and installed.</para>
-@y
-    <para>
-    <option>--disable-static</option>:
-    このオプションの指定により、スタティックライブラリのビルドおよびインストールを行わないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -151,12 +141,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libogg.{so,a}</seg>
+        <seg>libogg.so</seg>
         <seg>/usr/include/ogg and /usr/share/doc/libogg-&libogg-version;</seg>
 @y
         <seg>&None;</seg>
-        <seg>libogg.{so,a}</seg>
-        <seg>/usr/include/ogg, /usr/share/doc/libogg-&libogg-version;</seg>
+        <seg>libogg.so</seg>
+        <seg>/usr/include/ogg and /usr/share/doc/libogg-&libogg-version;</seg>
 @z
 
 @x
@@ -165,8 +155,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libogg.{so,a}
-          <para>libraries provide the functions required for programs to
+@x libogg.so
+          <para>provides the functions required for programs to
           read or write Ogg formatted bit streams.</para>
 @y
           <para>

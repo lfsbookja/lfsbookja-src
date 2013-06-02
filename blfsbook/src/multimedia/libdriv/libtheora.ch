@@ -172,13 +172,12 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: This switch prevents building static
-    libraries.</para>
+      <command>sed -i 's/png_\(sizeof\)/\1/g' examples/png2theora.c</command>:
+      This <command>sed</command> fixes build with
+      <application>libpng</application> 1.6.
 @y
-    <para>
-    <option>--disable-static</option>:
-    本スイッチはスタティックライブラリをビルドしないようにします。
-    </para>
+      <command>sed -i 's/png_\(sizeof\)/\1/g' examples/png2theora.c</command>:
+      <command>sed</command> コマンドは <application>libpng</application> 1.6 とともにビルドするための修正を行います。
 @z
 
 @x
@@ -199,13 +198,13 @@
 
 @x
         <seg>None, unless you installed the examples</seg>
-        <seg>libtheora.{so,a}, libtheoraenc.{so,a}, and
-        libtheoradec.{so,a}</seg>
+        <seg>libtheora.so, libtheoraenc.so, and
+        libtheoradec.so</seg>
         <seg>/usr/include/theora and /usr/share/doc/libtheora-&libtheora-version;</seg>
 @y
         <seg>サンプルをインストールしていなければ&None;</seg>
-        <seg>libtheora.{so,a}, libtheoraenc.{so,a},
-        libtheoradec.{so,a}</seg>
+        <seg>libtheora.so, libtheoraenc.so,
+        libtheoradec.so</seg>
         <seg>/usr/include/theora, /usr/share/doc/libtheora-&libtheora-version;</seg>
 @z
 

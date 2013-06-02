@@ -83,7 +83,6 @@
       <xref linkend="gnome-video-effects"/>,
       <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gst10-plugins-good"/>,
-      <xref linkend="libgee"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="udev"/> or
@@ -99,11 +98,10 @@
       <xref linkend="gnome-video-effects"/>,
       <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gst10-plugins-good"/>,
-      <xref linkend="libgee"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="udev"/> または
-      <xref linkend="udev-extras"/> (for GUdev),
+      <xref linkend="udev-extras"/> (GUdev が必要),
       <xref linkend="yelp-xsl"/>
     </para>
 @z
@@ -111,15 +109,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="nautilus-sendto"/> and
+      <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="nautilus-sendto"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -127,12 +123,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>
 @z
 

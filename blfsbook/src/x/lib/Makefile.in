@@ -194,7 +194,6 @@ CHANGE_FILES = \
 	clutter.ch              \
 	clutter-gst2.ch         \
 	clutter-gtk.ch          \
-	colord-gtk.ch           \
 	cogl.ch                 \
 	freeglut.ch             \
 	gdk-pixbuf.ch           \
@@ -204,13 +203,11 @@ CHANGE_FILES = \
 	gtk+3.ch                \
 	gtkmm2.ch               \
 	gtkmm3.ch               \
-	gtk-vnc.ch              \
 	gtk-engines.ch          \
 	hicolor-icon-theme.ch   \
 	lib.ch                  \
 	libnotify.ch            \
 	libxklavier.ch          \
-	notification-daemon.ch  \
 	pango.ch                \
 	pangomm.ch              \
 	qt.ch                   \
@@ -424,7 +421,6 @@ cairomm.xml:              $(BOOKdir)/$@ $(srcdir)/cairomm.ch
 clutter.xml:              $(BOOKdir)/$@ $(srcdir)/clutter.ch
 clutter-gst2.xml:         $(BOOKdir)/$@ $(srcdir)/clutter-gst2.ch
 clutter-gtk.xml:          $(BOOKdir)/$@ $(srcdir)/clutter-gtk.ch
-colord-gtk.xml:           $(BOOKdir)/$@ $(srcdir)/colord-gtk.ch
 cogl.xml:                 $(BOOKdir)/$@ $(srcdir)/cogl.ch
 freeglut.xml:             $(BOOKdir)/$@ $(srcdir)/freeglut.ch
 gdk-pixbuf.xml:           $(BOOKdir)/$@ $(srcdir)/gdk-pixbuf.ch
@@ -433,7 +429,6 @@ goffice010.xml:           $(BOOKdir)/$@ $(srcdir)/goffice010.ch
 gtk+2.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+2.ch
 gtk+3.xml:                $(BOOKdir)/$@ $(srcdir)/gtk+3.ch
 gtk-engines.xml:          $(BOOKdir)/$@ $(srcdir)/gtk-engines.ch
-gtk-vnc.xml:              $(BOOKdir)/$@ $(srcdir)/gtk-vnc.ch
 gtkmm2.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm2.ch
 gtkmm3.xml:               $(BOOKdir)/$@ $(srcdir)/gtkmm3.ch
 hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
@@ -445,7 +440,6 @@ hicolor-icon-theme.xml:   $(BOOKdir)/$@ $(srcdir)/hicolor-icon-theme.ch
 lib.xml:                  $(BOOKdir)/$@ $(srcdir)/lib.ch
 libnotify.xml:            $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
-notification-daemon.xml:  $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
 pangomm.xml:              $(BOOKdir)/$@ $(srcdir)/pangomm.ch
 qt.xml:                   $(BOOKdir)/$@ $(srcdir)/qt.ch

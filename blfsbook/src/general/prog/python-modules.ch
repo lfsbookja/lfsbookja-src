@@ -288,13 +288,9 @@
 @z
 
 @x
-          Required patch (if you have installed
-          <xref linkend="gobject-introspection"/>):
-          <ulink url="&patch-root;/pygobject-&pygobject2-version;-introspection-1.patch"/>
+          Optional patch:
 @y
-          Required patch (if you have installed
-          <xref linkend="gobject-introspection"/>):
-          <ulink url="&patch-root;/pygobject-&pygobject2-version;-introspection-1.patch"/>
+          Optional patch:
 @z
 
 @x
@@ -320,11 +316,13 @@
 @x
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
+        <xref linkend="gobject-introspection"/> and
         <xref linkend="libxslt"/> (to Build Documentation)
       </para>
 @y
       <bridgehead renderas="sect5">&Optional;</bridgehead>
       <para role="optional">
+        <xref linkend="gobject-introspection"/>,
         <xref linkend="libxslt"/> (ドキュメント生成時)
       </para>
 @z

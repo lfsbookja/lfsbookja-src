@@ -134,12 +134,12 @@
 
 @x
     <para><command>sed -i ... /usr/lib/libattr.la</command>: This command
-    corrects the location of the installed static library as referenced
+    corrects the location of the installed library as referenced
     in the libtool archive.</para>
 @y
     <para>
     <command>sed -i ... /usr/lib/libattr.la</command>:
-    このコマンドは、libtool アーカイブ内にて参照されるスタティックライブラリのインストール先を正しくします。
+    このコマンドは、libtool アーカイブ内にて参照されるライブラリのインストール先を正しくします。
     </para>
 @z
 
@@ -191,11 +191,11 @@
 
 @x
         <seg>attr, getfattr, and setfattr</seg>
-        <seg>libattr.{so,a}</seg>
+        <seg>libattr.so</seg>
         <seg>/usr/{include/attr,share/doc/attr-&attr-version;}</seg>
 @y
         <seg>attr, getfattr, setfattr</seg>
-        <seg>libattr.{so,a}</seg>
+        <seg>libattr.so</seg>
         <seg>/usr/{include/attr,share/doc/attr-&attr-version;}</seg>
 @z
 

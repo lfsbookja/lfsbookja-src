@@ -135,15 +135,6 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: This switch prevents the
-    static library from being built.</para>
-@y
-    <para>
-    <option>--disable-static</option>: このオプションはスタティックライブラリをビルドしないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -164,14 +155,14 @@
         gifclrmp, gifcolor, gifcomb, gifcompose, giffiltr, giffix, gifflip, gifhisto,
         gifinfo, gifinter, gifinto, gifovly, gifpos, gifrotat, gifrsize, gifspnge,
         giftext, gifwedge, icon2gif, raw2gif, rgb2gif, and text2gif</seg>
-        <seg>libgif.{so,a}</seg>
+        <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @y
         <seg>gif2epsn, gif2ps, gif2rgb, gif2x11, gifasm, gifbg, gifburst, gifclip,
         gifclrmp, gifcolor, gifcomb, gifcompose, giffiltr, giffix, gifflip, gifhisto,
         gifinfo, gifinter, gifinto, gifovly, gifpos, gifrotat, gifrsize, gifspnge,
         giftext, gifwedge, icon2gif, raw2gif, rgb2gif, text2gif</seg>
-        <seg>libgif.{so,a}</seg>
+        <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @z
 

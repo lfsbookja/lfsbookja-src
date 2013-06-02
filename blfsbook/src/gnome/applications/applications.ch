@@ -20,11 +20,11 @@
 @z
 
 @x
-    These packages are desktop applications and assorted utilities for
-    the <application>GNOME</application> environment. Feel free to
+    These packages are desktop applications and assorted utilities from
+    the <application>GNOME</application> project. Feel free to
     install them on an as needed or as desired basis.
 @y
-    These packages are desktop applications and assorted utilities for
-    the <application>GNOME</application> environment. Feel free to
+    These packages are desktop applications and assorted utilities from
+    the <application>GNOME</application> project. Feel free to
     install them on an as needed or as desired basis.
 @z

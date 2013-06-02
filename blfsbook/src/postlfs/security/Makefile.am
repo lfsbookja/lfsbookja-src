@@ -20,8 +20,6 @@ CHANGE_FILES = \
 	gpgme.ch           \
 	iptables.ch        \
 	libcap2.ch         \
-	liboauth.ch        \
-	libpwquality.ch    \
 	linux-pam.ch       \
 	mitkrb.ch          \
 	nessus.ch          \
@@ -68,8 +66,6 @@ gnutls.xml:           $(BOOKdir)/$@ $(srcdir)/gnutls.ch
 gpgme.xml:            $(BOOKdir)/$@ $(srcdir)/gpgme.ch
 iptables.xml:         $(BOOKdir)/$@ $(srcdir)/iptables.ch
 libcap2.xml:          $(BOOKdir)/$@ $(srcdir)/libcap2.ch
-liboauth.xml:         $(BOOKdir)/$@ $(srcdir)/liboauth.ch
-libpwquality.xml:     $(BOOKdir)/$@ $(srcdir)/libpwquality.ch
 linux-pam.xml:        $(BOOKdir)/$@ $(srcdir)/linux-pam.ch
 mitkrb.xml:           $(BOOKdir)/$@ $(srcdir)/mitkrb.ch
 nessus.xml:           $(BOOKdir)/$@ $(srcdir)/nessus.ch

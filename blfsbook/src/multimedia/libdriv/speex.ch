@@ -150,11 +150,11 @@
 
 @x
         <seg>speexdec and speexenc</seg>
-        <seg>libspeex.{so,a} and libspeexdsp.{so,a}</seg>
+        <seg>libspeex.so and libspeexdsp.so</seg>
         <seg>/usr/share/doc/speex</seg>
 @y
         <seg>speexdec, speexenc</seg>
-        <seg>libspeex.{so,a}, libspeexdsp.{so,a}</seg>
+        <seg>libspeex.so, libspeexdsp.so</seg>
         <seg>/usr/share/doc/speex</seg>
 @z
 

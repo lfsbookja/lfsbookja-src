@@ -150,11 +150,11 @@
 
 @x
         <seg>xmlwf</seg>
-        <seg>libexpat.{so,a}</seg>
+        <seg>libexpat.so</seg>
         <seg>/usr/share/doc/expat-&expat-version;</seg>
 @y
         <seg>xmlwf</seg>
-        <seg>libexpat.{so,a}</seg>
+        <seg>libexpat.so</seg>
         <seg>/usr/share/doc/expat-&expat-version;</seg>
 @z
 

@@ -93,18 +93,24 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/></para>
+    <para role="optional">
+      <xref linkend="libcap2"/>,
+      <xref linkend="libxml2"/> and
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/></para>
+    <para role="optional">
+      <xref linkend="libcap2"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="openssl"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/bind-utils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/bind-utils"/></para>
 @z
 
 @x

@@ -118,9 +118,19 @@
 
 @x
     <para>This package does not come with a test suite.</para>
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>&notTestSuite;</para>
+@z
+
+@x
+      If you want to disable installing the static library, use this sed:
+@y
+      スタティックライブラリをインストールしない場合は、以下の sed コマンドを実行します。
+@z
+
+@x
+    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
