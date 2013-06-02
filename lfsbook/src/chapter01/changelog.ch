@@ -48,6 +48,73 @@
 @z
 
 @x
+      <para>2013-05-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to procps-3.3.8. Fixes 
+          <ulink url="&lfs-ticket-root;3354">#3354</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.18.0. Fixes 
+          <ulink url="&lfs-ticket-root;3344">#3344</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.13.2. Fixes 
+          <ulink url="&lfs-ticket-root;3347">#3347</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gmp-5.1.2. Fixes 
+          <ulink url="&lfs-ticket-root;3352">#3352</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.9.4. Fixes 
+          <ulink url="&lfs-ticket-root;3348">#3348</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a reference to a book on configuring
+          the kernel.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update check program dependencies.  Thanks to 
+          Gilles Espinasse for the patch. Fixes 
+          <ulink url="&lfs-ticket-root;3353">#3353</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - procps-3.3.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;3354">#3354</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.18.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3344">#3344</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.13.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3347">#3347</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gmp-5.1.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3352">#3352</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.9.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3348">#3348</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - カーネル設定方法の解説本のリンクを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check プログラムの依存パッケージを更新。
+          パッチを提供してくれた Gilles Espinasse に感謝。
+          <ulink url="&lfs-ticket-root;3353">#3353</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-19</para>
       <itemizedlist>
         <listitem>

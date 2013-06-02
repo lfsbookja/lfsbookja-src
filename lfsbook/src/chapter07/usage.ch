@@ -119,7 +119,7 @@
   <emphasis>inittab</emphasis>.  For LFS, the key command that is run is
   <command>rc</command>. The intialization file above will instruct
   <command>rc</command> to run all the scripts starting with an S in the
-  <filename class="directory">/etc/rc.d/rcsysinit.d</filename> directory
+  <filename class="directory">/etc/rc.d/rcS.d</filename> directory
   followed by all the scripts starting with an S in the <filename
   class="directory">/etc/rc.d/rc?.d</filename> directory where the question
   mark is specified by the initdefault value.</para>
@@ -129,7 +129,7 @@
   LFS において重要となるコマンドは <command>rc</command> です。
   初期化ファイルは <command>rc</command> コマンドに対してスクリプトの実行を指示します。
   実行されるスクリプトは <filename
-  class="directory">/etc/rc.d/rcsysinit.d</filename> ディレクトリにて S で始まるスクリプトです。
+  class="directory">/etc/rc.d/rcS.d</filename> ディレクトリにて S で始まるスクリプトです。
   そしてその後に <filename
   class="directory">/etc/rc.d/rc?.d</filename> ディレクトリにて、同じく S で始まるスクリプトも実行されます。
   ここで ? は、初期化を行う際の数値を示します。

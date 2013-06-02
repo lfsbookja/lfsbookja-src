@@ -244,11 +244,6 @@
          <seg>Bash, Coreutils, Diffutils, GCC, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
-@z
-@x
           <seg>None</seg>
 @y
           <seg>なし</seg>
@@ -793,19 +788,14 @@ Typo ですが日本語訳には影響ありません。
          Make, Sed, Texinfo</seg>
 @z
 @x
-        <segtitle>&testsuites;</segtitle>
+          <seg>Check</seg>
 @y
-        <segtitle>&testsuites;</segtitle>
+          <seg>Check</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>Man-DB</seg>
 @y
-          <seg>テストスイートはありません</seg>
-@z
-@x
-          <seg>None</seg>
-@y
-          <seg>なし</seg>
+          <seg>Man-DB</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1031,9 +1021,9 @@ Typo ですが日本語訳には影響ありません。
          <seg>Bash, Binutils, Coreutils, GCC, Glibc, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>Diffutils</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>Diffutils</seg>
 @z
 @x
           <seg>None</seg>
