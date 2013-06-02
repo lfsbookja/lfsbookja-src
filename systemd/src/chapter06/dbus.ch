@@ -51,6 +51,15 @@
       <title>&MeaningOfOption1;configure&MeaningOfOption2;:</title>
 @z
 
+@x --enable-systemd
+          <para>This enables support for authentication check using
+          Systemd Logind.</para>
+@y
+          <para>
+          これは Systemd Logind を利用して認証チェックを行うことを指示します。
+          </para>
+@z
+
 @x --with-console-auth-dir=/run/console
           <para>This specifies the location of the ConsoleKit auth
           directory.</para>
@@ -82,12 +91,12 @@
 @z
 
 @x
-    <para>Create a symlink, so that DBus and Systemd can use the same
+    <para>Create a symlink, so that D-Bus and Systemd can use the same
     <filename>machine-id</filename> file:</para>
 @y
     <para>
     シンボリックリンクを生成します。
-    これは DBus と Systemd において同じ <filename>machine-id</filename> ファイルを利用するためです。
+    これは D-Bus と Systemd において同じ <filename>machine-id</filename> ファイルを利用するためです。
     </para>
 @z
 
@@ -110,14 +119,14 @@
 @x
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
         dbus-send and dbus-uuidgen</seg>
-        <seg>libdbus-1.{so,a}</seg>
+        <seg>libdbus-1.so</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version; and
         /var/lib/dbus</seg>
 @y
         <seg>dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
         dbus-send, dbus-uuidgen</seg>
-        <seg>libdbus-1.{so,a}</seg>
+        <seg>libdbus-1.so</seg>
         <seg>/etc/dbus-1, /usr/include/dbus-1.0, /usr/lib/dbus-1.0,
         /usr/share/dbus-1, /usr/share/doc/dbus-&dbus-version;,
         /var/lib/dbus</seg>

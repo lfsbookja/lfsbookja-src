@@ -63,20 +63,26 @@
 
 @x
       <segtitle>Installed programs</segtitle>
+      <segtitle>Installed libraries</segtitle>
       <segtitle>Installed directories</segtitle>
 @y
       <segtitle>&InstalledProgram;</segtitle>
+      <segtitle>&InstalledLibrary;</segtitle>
       <segtitle>&InstalledDirectory;</segtitle>
 @z
 
 @x
-        <seg>awk (link to gawk), dgawk, gawk, gawk-&gawk-version;, grcat, igawk,
-        pgawk, pgawk-&gawk-version;, and pwcat</seg>
-        <seg>/usr/lib/awk, /usr/share/awk</seg>
+        <seg>awk (link to gawk), gawk, gawk-&gawk-version;, and igawk</seg>
+        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, ordchr.so,
+        readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
+        testext.so, and time.so</seg>
+        <seg>/usr/lib/{,g}awk, /usr/share/awk</seg>
 @y
-        <seg>awk (gawk へのリンク), dgawk, gawk, gawk-&gawk-version;, grcat, igawk,
-        pgawk, pgawk-&gawk-version;, pwcat</seg>
-        <seg>/usr/lib/awk, /usr/share/awk</seg>
+        <seg>awk (gawk へのリンク), gawk, gawk-&gawk-version;, igawk</seg>
+        <seg>filefuncs.so, fnmatch.so, fork.so, inplace.so, ordchr.so,
+        readdir.so, readfile.so, revoutput.so, revtwoway.so, rwarray.so,
+        testext.so, time.so</seg>
+        <seg>/usr/lib/{,g}awk, /usr/share/awk</seg>
 @z
 
 @x
@@ -89,12 +95,6 @@
           <para>A link to <command>gawk</command></para>
 @y
           <para><command>gawk</command> へのリンク。</para>
-@z
-
-@x dgawk
-          <para>An awk debugger</para>
-@y
-          <para>Awk デバッガー。</para>
 @z
 
 @x
@@ -114,39 +114,9 @@
 @z
 
 @x
-          <para>Dumps the group database <filename>/etc/group</filename></para>
-@y
-          <para>
-          グループデータベースファイル <filename>/etc/group</filename> をダンプします。
-          </para>
-@z
-
-@x
           <para>Gives <command>gawk</command> the ability to include files</para>
 @y
           <para>
           <command>gawk</command> に対してファイルをインクルードする機能を付与します。
-          </para>
-@z
-
-@x
-          <para>The profiling version of <command>gawk</command></para>
-@y
-          <para>
-          <command>gawk</command> のプロファイル版。
-          </para>
-@z
-
-@x
-          <para>Hard link to <command>pgawk</command></para>
-@y
-          <para><command>pgawk</command> へのハードリンク。</para>
-@z
-
-@x
-          <para>Dumps the password database <filename>/etc/passwd</filename></para>
-@y
-          <para>
-          パスワードデータベースファイル <filename>/etc/passwd</filename> をダンプします。
           </para>
 @z

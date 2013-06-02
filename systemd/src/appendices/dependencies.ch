@@ -244,11 +244,6 @@
          <seg>Bash, Coreutils, Diffutils, GCC, Grep, Make, Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
-@y
-          <seg>テストスイートはありません</seg>
-@z
-@x
           <seg>None</seg>
 @y
           <seg>&None;</seg>
@@ -774,14 +769,19 @@ Typo ですが日本語訳には影響ありません。
          Ncurses, Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>Check</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>Check</seg>
 @z
 @x
           <seg>Gzip</seg>
 @y
           <seg>Gzip</seg>
+@z
+@x
+          <seg>Pcre</seg>
+@y
+          <seg>Pcre</seg>
 @z
 
 %----------------------------------------------------------------------
@@ -1007,9 +1007,9 @@ Typo ですが日本語訳には影響ありません。
          Make, Patch, Sed</seg>
 @z
 @x
-          <seg>No test suite available</seg>
+          <seg>Diffutils</seg>
 @y
-          <seg>テストスイートはありません</seg>
+          <seg>Diffutils</seg>
 @z
 @x
           <seg>Bash, GRUB, Inetutils, Less, Procps-ng, Psmisc, Readline, Texinfo,

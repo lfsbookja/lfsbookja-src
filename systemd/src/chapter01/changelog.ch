@@ -48,6 +48,123 @@
 @z
 
 @x
+      <para>2013-05-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Procps-3.3.8. Fixes 
+          <ulink url="&lfs-ticket-root;3354">#3354</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Perl-5.18.0. Fixes 
+          <ulink url="&lfs-ticket-root;3344">#3344</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Automake-1.13.2. Fixes 
+          <ulink url="&lfs-ticket-root;3347">#3347</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to GMP-5.1.2. Fixes 
+          <ulink url="&lfs-ticket-root;3352">#3352</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to Linux-3.9.4. Fixes 
+          <ulink url="&lfs-ticket-root;3348">#3348</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add a reference to a book on configuring
+          the kernel.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update check program dependencies.  Thanks to 
+          Gilles Espinasse for the patch. Fixes 
+          <ulink url="&lfs-ticket-root;3353">#3353</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Procps-3.3.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;3354">#3354</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Perl-5.18.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3344">#3344</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Automake-1.13.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3347">#3347</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - GMP-5.1.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3352">#3352</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Linux-3.9.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3348">#3348</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - カーネル設定方法の解説本のリンクを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - check プログラムの依存パッケージを更新。
+          パッチを提供してくれた Gilles Espinasse に感謝。
+          <ulink url="&lfs-ticket-root;3353">#3353</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Expand discussion of file system types and 
+          make ext4 the example LFS partition type. Fixes 
+          <ulink url="&lfs-ticket-root;3346">#3346</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-19</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ファイルシステムタイプの説明を充足。
+          また LFS のパーティションタイプとして ext4 を例示。
+          <ulink url="&lfs-ticket-root;3346">#3346</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-05-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Added Acl package for Systemd (setfacl).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Add temporary libdbus package to satisfy
+          circular depdendency between Systemd and D-Bus.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated Systemd instructions for version 204.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-05-18</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Systemd のために Acl パッケージ (setfacl) を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - libdbus パッケージ追加。
+          Systemd と D-Bus の循環的な依存関係を満たすため。</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Systemd 手順をバージョン 204 向けに更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-04</para>
       <itemizedlist>
         <listitem>
@@ -75,11 +192,11 @@
       <para>2013-05-01</para>
       <itemizedlist>
         <listitem>
-          <para>[ken] - Upgrade to linux-3.9.0. Fixes
+          <para>[ken] - Upgrade to Linux-3.9.0. Fixes
           <ulink url="&lfs-ticket-root;3336">#3336</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[ken] - Upgrade to zlib-1.2.8. Fixes
+          <para>[ken] - Upgrade to Zlib-1.2.8. Fixes
           <ulink url="&lfs-ticket-root;3337">#3337</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -87,11 +204,11 @@
       <para>2013-05-01</para>
       <itemizedlist>
         <listitem>
-          <para>[ken] - linux-3.9.0 へのアップグレード。
+          <para>[ken] - Linux-3.9.0 へのアップグレード。
           <ulink url="&lfs-ticket-root;3336">#3336</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[ken] - zlib-1.2.8 へのアップグレード
+          <para>[ken] - Zlib-1.2.8 へのアップグレード
           <ulink url="&lfs-ticket-root;3337">#3337</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
@@ -101,7 +218,7 @@
       <para>2013-04-29</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Add bc to Chapter 6 to support Linux-3.9. Fixes
+          <para>[bdubbs] - Add Bc to Chapter 6 to support Linux-3.9. Fixes
           <ulink url="&lfs-ticket-root;3338">#3338</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -109,7 +226,7 @@
       <para>2013-04-29</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Linux-3.9 への対応のため、第6章に bc パッケージを追加。
+          <para>[bdubbs] - Linux-3.9 への対応のため、第6章に Bc パッケージを追加。
           <ulink url="&lfs-ticket-root;3338">#3338</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
@@ -137,11 +254,11 @@
       <para>2013-04-26</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Upgrade to less-458. Fixes
+          <para>[bdubbs] - Upgrade to Less-458. Fixes
           <ulink url="&lfs-ticket-root;3333">#3334</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Upgrade to util-linux-2.23. Fixes
+          <para>[bdubbs] - Upgrade to Util-Linux-2.23. Fixes
           <ulink url="&lfs-ticket-root;3311">#3311</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -149,11 +266,11 @@
       <para>2013-04-26</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - less-458 へのアップグレード。
+          <para>[bdubbs] - Less-458 へのアップグレード。
           <ulink url="&lfs-ticket-root;3333">#3334</ulink> を Fix に。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - util-linux-2.23 へのアップグレード。
+          <para>[bdubbs] - Util-Linux-2.23 へのアップグレード。
           <ulink url="&lfs-ticket-root;3311">#3311</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
@@ -225,7 +342,7 @@
       <para>2013-04-19</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - Update to udev-202 (systemd-202). Fixes
+          <para>[bdubbs] - Update to Systemd-202. Fixes
           <ulink url="&lfs-ticket-root;3329">#3329</ulink>.</para>
         </listitem>
       </itemizedlist>
@@ -233,7 +350,7 @@
       <para>2013-04-19</para>
       <itemizedlist>
         <listitem>
-          <para>[bdubbs] - udev-202 (systemd-202) へのアップグレード。
+          <para>[bdubbs] - Systemd-202 へのアップグレード。
           <ulink url="&lfs-ticket-root;3329">#3329</ulink> を Fix に。</para>
         </listitem>
       </itemizedlist>
@@ -280,7 +397,7 @@
           <para>[bdubbs] - Update list of installed libraries in GMP.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update to udev-201 (systemd-201).</para>
+          <para>[bdubbs] - Update to Systemd-201.</para>
         </listitem>
       </itemizedlist>
 @y
@@ -290,7 +407,7 @@
           <para>[bdubbs] - GMP のインストールライブラリを更新。</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - udev-201 (systemd-201) へのアップデート。</para>
+          <para>[bdubbs] - Systemd-201 へのアップデート。</para>
         </listitem>
       </itemizedlist>
 @z

@@ -127,46 +127,46 @@
     <para>&InstallThePackage;</para>
 @z
 
-@x
-    <title>Installation of XML::Parser</title>
-@y
-    <title>&InstallationOf1;XML::Parser&InstallationOf2;</title>
-@z
-
-@x
-    <para>Extract the XML::Parser tarball and change to the extracted
-    directory:</para>
-@y
-    <para>
-    XML Parser の tarball を伸張 (解凍) し、生成されたディレクトリに入ります。
-    </para>
-@z
-
-@x
-    <para>Prepare XML::Parser for compilation:</para>
-@y
-    <para>&PreparePackage1;XML::Parser&PreparePackage2;</para>
-@z
-
-@x
-    <para>Compile the package:</para>
-@y
-    <para>&CompileThePackage;</para>
-@z
-
-@x
-    <para>To test the results, issue:</para>
-@y
-    <para>
-    ビルド結果をテストする場合は以下を実行します。
-    </para>
-@z
-
-@x
-    <para>Install the package:</para>
-@y
-    <para>&InstallThePackage;</para>
-@z
+% @x
+%     <title>Installation of XML::Parser</title>
+% @y
+%     <title>&InstallationOf1;XML::Parser&InstallationOf2;</title>
+% @z
+% 
+% @x
+%     <para>Extract the XML::Parser tarball and change to the extracted
+%     directory:</para>
+% @y
+%     <para>
+%     XML Parser の tarball を伸張 (解凍) し、生成されたディレクトリに入ります。
+%     </para>
+% @z
+% 
+% @x
+%     <para>Prepare XML::Parser for compilation:</para>
+% @y
+%     <para>&PreparePackage1;XML::Parser&PreparePackage2;</para>
+% @z
+% 
+% @x
+%     <para>Compile the package:</para>
+% @y
+%     <para>&CompileThePackage;</para>
+% @z
+% 
+% @x
+%     <para>To test the results, issue:</para>
+% @y
+%     <para>
+%     ビルド結果をテストする場合は以下を実行します。
+%     </para>
+% @z
+% 
+% @x
+%     <para>Install the package:</para>
+% @y
+%     <para>&InstallThePackage;</para>
+% @z
 
 @x
     <title>Contents of Perl</title>

@@ -34,13 +34,18 @@
 @z
 
 @x
-  <para>A proper Linux system maintains a list of the mounted file systems in
-  the file <filename>/etc/mtab</filename>. Systemd requires it to be a
-  symbolic link to  <filename>/proc/self/mounts</filename>:</para>
+  <para>Historically, Linux maintains a list of the mounted file systems in the
+  file <filename>/etc/mtab</filename>. Modern kernels maintain this list
+  internally and exposes it to the user via the <filename
+  class="directory">/proc</filename> filesystem. To satisfy utilities that
+  expect the presence of <filename>/etc/mtab</filename>, create the following
+  symbolic link:</para>
 @y
   <para>
-  Linux システムが適切に動作しているなら、マウントしているファイルシステムの情報を <filename>/etc/mtab</filename> ファイルに保持しています。
-  Systemd パッケージは、このファイルに対するシンボリックリンク <filename>/proc/self/mounts</filename> を必要とします。
+  Linux のこれまでの経緯として、マウントされているファイルシステムの情報は <filename>/etc/mtab</filename> ファイルに保持されています。
+  最新の Linux であれば、内部的にこのファイルを管理し、ユーザーに対しては <filename
+  class="directory">/proc</filename> ファイルシステムを通じて情報提示しています。
+  <filename>/etc/mtab</filename> ファイルの存在を前提としているプログラムが正常動作するように、以下のシンボリックリンクを作成します。
   </para>
 @z
 

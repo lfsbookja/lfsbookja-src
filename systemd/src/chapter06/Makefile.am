@@ -8,6 +8,7 @@
 BOOKdir = @abs_bookdir@/chapter06
 CHANGE_FILES = \
 	aboutdebug.ch        \
+	acl.ch               \
 	adjusting.ch         \
 	attr.ch              \
 	autoconf.ch          \
@@ -51,6 +52,7 @@ CHANGE_FILES = \
 	kmod.ch              \
 	less.ch              \
 	libcap.ch            \
+	libdbus.ch           \
 	libpipeline.ch       \
 	libtool.ch           \
 	linux-headers.ch     \
@@ -81,6 +83,7 @@ CHANGE_FILES = \
 	texinfo.ch           \
 	util-linux.ch        \
 	vim.ch               \
+	xml-parser.ch        \
 	xz.ch                \
 	zlib.ch
 
@@ -98,6 +101,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 aboutdebug.xml:        $(BOOKdir)/$@ $(srcdir)/aboutdebug.ch
+acl.xml:               $(BOOKdir)/$@ $(srcdir)/acl.ch
 adjusting.xml:         $(BOOKdir)/$@ $(srcdir)/adjusting.ch
 attr.xml:              $(BOOKdir)/$@ $(srcdir)/attr.ch
 autoconf.xml:          $(BOOKdir)/$@ $(srcdir)/autoconf.ch
@@ -141,6 +145,7 @@ kernfs.xml:            $(BOOKdir)/$@ $(srcdir)/kernfs.ch
 kmod.xml:              $(BOOKdir)/$@ $(srcdir)/kmod.ch
 less.xml:              $(BOOKdir)/$@ $(srcdir)/less.ch
 libcap.xml:            $(BOOKdir)/$@ $(srcdir)/libcap.ch
+libdbus.xml:           $(BOOKdir)/$@ $(srcdir)/libdbus.ch
 libpipeline.xml:       $(BOOKdir)/$@ $(srcdir)/libpipeline.ch
 libtool.xml:           $(BOOKdir)/$@ $(srcdir)/libtool.ch
 linux-headers.xml:     $(BOOKdir)/$@ $(srcdir)/linux-headers.ch
@@ -171,5 +176,6 @@ tar.xml:               $(BOOKdir)/$@ $(srcdir)/tar.ch
 texinfo.xml:           $(BOOKdir)/$@ $(srcdir)/texinfo.ch
 util-linux.xml:        $(BOOKdir)/$@ $(srcdir)/util-linux.ch
 vim.xml:               $(BOOKdir)/$@ $(srcdir)/vim.ch
+xml-parser.xml:        $(BOOKdir)/$@ $(srcdir)/xml-parser.ch
 xz.xml:                $(BOOKdir)/$@ $(srcdir)/xz.ch
 zlib.xml:              $(BOOKdir)/$@ $(srcdir)/zlib.ch

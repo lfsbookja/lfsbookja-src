@@ -50,11 +50,11 @@
 @z
 
 @x
-    <para>The attr tests need to be run on a filesystem that supports extended
-    attributes.  To test the results, issue:</para>
+    <para>The Attr tests need to be run on a filesystem that supports extended
+    attributes. To test the results, issue:</para>
 @y
     <para>
-    attr におけるテストを実行するためには、拡張属性をサポートしているファイルシステムが必要です。
+    Attr におけるテストを実行するためには、拡張属性をサポートしているファイルシステムが必要です。
     ビルド結果をテストする場合は以下を実行します。
     </para>
 @z
@@ -137,7 +137,7 @@
 @z
 
 @x libattr.{so,a}
-          <para>Contains the <application>attr</application> API functions.</para>
+          <para>Contains the <application>Attr</application> API functions.</para>
 @y
-          <para><application>attr</application> API 関数を提供します。</para>
+          <para><application>Attr</application> API 関数を提供します。</para>
 @z

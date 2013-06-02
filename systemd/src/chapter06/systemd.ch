@@ -50,12 +50,12 @@
           </para>
 @z
 
-@x --with-kbd-*
-          <para>These switches tell Systemd where to find
-          Kbd programs.</para>
+@x --with-firmware-path=...
+          <para>This switch enables Udev firmware loader and
+          sets the default firmware search path.</para>
 @y
           <para>
-          これらのスイッチは Systemd に対して Kbd プログラムのありかを指示するものです。
+          このスイッチは、Udev ファームウェアローダーを有効にし、ファームウェアの探索パスのデフォルトを設定します。
           </para>
 @z
 
@@ -111,18 +111,18 @@
     </para>
 @z
 
-@x
-    <para>By default, Journald logs to a tmpfs which means that logs
-    are not persistent through reboots. To make it log to a disk,
-    create the <filename class="directory">
-    /var/log/journal</filename> directory:</para>
-@y
-    <para>
-    デフォルトにて Journald ログは tmpfs に出力されますが、これはリブートにより失われてしまいます。
-    ディスク上に確実にログとして残すために <filename
-    class="directory">/var/log/journal</filename> ディレクトリを生成します。
-    </para>
-@z
+% @x
+%     <para>By default, Journald logs to a tmpfs which means that logs
+%     are not persistent through reboots. To make it log to a disk,
+%     create the <filename class="directory">
+%     /var/log/journal</filename> directory:</para>
+% @y
+%     <para>
+%     デフォルトにて Journald ログは tmpfs に出力されますが、これはリブートにより失われてしまいます。
+%     ディスク上に確実にログとして残すために <filename
+%     class="directory">/var/log/journal</filename> ディレクトリを生成します。
+%     </para>
+% @z
 
 @x
     <para>Remove a reference to a non-existent group:</para>
@@ -154,39 +154,39 @@
 @z
 
 @x
-        <seg>halt, hostnamectl, init, journalctl, localectl, loginctl,
-        poweroff, reboot, runlevel, shutdown, systemctl, systemd-analyze,
-        systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-coredumpctl, systemd-delta, systemd-detect-virt,
+        <seg>halt, hostnamectl, init, journalctl, kernel-install, localectl,
+        loginctl, poweroff, reboot, runlevel, shutdown, systemctl,
+        systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls,
+        systemd-cgtop, systemd-coredumpctl, systemd-delta, systemd-detect-virt,
         systemd-inhibit, systemd-machine-id-setup, systemd-notify,
         systemd-nspawn, systemd-stdio-bridge, systemd-tmpfiles,
         systemd-tty-ask-password-agent, telinit, timedatectl and
         udevadm</seg>
         <seg>libnss_myhostname.so.2, libsystemd-daemon.so, libsystemd-id128.so,
         libsystemd-journal.so, libsystemd-login.so and libudev.so</seg>
-        <seg>/etc/binfmt.d, /etc/init.d, /etc/modules-load.d, /etc/rpm,
+        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d, /etc/rpm,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
+        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
         /usr/lib/systemd, /usr/lib/tmpfiles.d, /usr/share/doc/systemd-&systemd-version;,
-        /usr/share/systemd, /var/lib/systemd and /var/log/journald</seg>
+        /usr/share/systemd, /var/lib/systemd and /var/log/journal</seg>
 @y
-        <seg>halt, hostnamectl, init, journalctl, localectl, loginctl,
-        poweroff, reboot, runlevel, shutdown, systemctl, systemd-analyze,
-        systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop,
-        systemd-coredumpctl, systemd-delta, systemd-detect-virt,
+        <seg>halt, hostnamectl, init, journalctl, kernel-install, localectl,
+        loginctl, poweroff, reboot, runlevel, shutdown, systemctl,
+        systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls,
+        systemd-cgtop, systemd-coredumpctl, systemd-delta, systemd-detect-virt,
         systemd-inhibit, systemd-machine-id-setup, systemd-notify,
         systemd-nspawn, systemd-stdio-bridge, systemd-tmpfiles,
         systemd-tty-ask-password-agent, telinit, timedatectl,
         udevadm</seg>
         <seg>libnss_myhostname.so.2, libsystemd-daemon.so, libsystemd-id128.so,
         libsystemd-journal.so, libsystemd-login.so, libudev.so</seg>
-        <seg>/etc/binfmt.d, /etc/init.d, /etc/modules-load.d, /etc/rpm,
+        <seg>/etc/binfmt.d, /etc/init.d, /etc/kernel, /etc/modules-load.d, /etc/rpm,
         /etc/sysctl.d, /etc/systemd, /etc/tmpfiles.d, /etc/udev,
         /etc/xdg/systemd, /lib/systemd, /lib/udev, /usr/include/systemd,
-        /usr/lib/binfmt.d, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
+        /usr/lib/binfmt.d, /usr/lib/kernel, /usr/lib/modules-load.d, /usr/lib/sysctl.d,
         /usr/lib/systemd, /usr/lib/tmpfiles.d, /usr/share/doc/systemd-&systemd-version;,
-        /usr/share/systemd, /var/lib/systemd, /var/log/journald</seg>
+        /usr/share/systemd, /var/lib/systemd, /var/log/journal</seg>
 @z
 
 @x
