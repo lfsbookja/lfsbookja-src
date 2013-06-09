@@ -82,9 +82,26 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>If desired, run the test suite as a non-root user:</para>
 @y
-    <para>&NotExistTestsuite;</para>
+    <para>
+    必要なら root ユーザー以外にて、以下のようにテストスイートを実行します。
+    </para>
+@z
+
+@x
+    <warning><para>Running the test suite as the root user can be harmful to
+    your system.  To run it, the kernel CONFIG_SCSI_DEBUG option for the 
+    kernel must be available in the currently running system.  For complete
+    coverage, other BLFS packages must be installed.  If desired, this
+    test can be run after rebooting into the completed LFS system and running:</para>
+@y
+    <warning><para>
+    root ユーザーによりテストスイートを実行すると、システムに悪影響を及ぼすことがあります。
+    テストスイートを実行するためには、カーネルオプション CONFIG_SCSI_DEBUG が現環境にて有効でなければなりません。
+    またテストを完全に実施するには BLFS での各種パッケージのインストールも必要になります。
+    テストが必要であるなら、LFS システムを完成した後に、再起動したシステムにて以下を実行します。
+    </para>
 @z
 
 @x

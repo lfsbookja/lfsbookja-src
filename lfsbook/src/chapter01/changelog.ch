@@ -48,6 +48,56 @@
 @z
 
 @x
+      <para>2013-06-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.13.3. Fixes 
+          <ulink url="&lfs-ticket-root;3358">#3358</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update file program contents,</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-06-05</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - automake-1.13.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3358">#3358</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - file パッケージのプログラム内容を更新。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-06-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to Util-linux-2.23.1. Fixes 
+          <ulink url="&lfs-ticket-root;3355">#3355</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gcc-4.8.1. Fixes 
+          <ulink url="&lfs-ticket-root;3356">#3356</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-06-03</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Util-linux-2.23.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3355">#3355</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gcc-4.8.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3356">#3356</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-05-27</para>
       <itemizedlist>
         <listitem>
