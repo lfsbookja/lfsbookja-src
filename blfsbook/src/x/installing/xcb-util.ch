@@ -115,9 +115,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+    <para>This package does not come with a test suite.</para>
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+    <para>
+    &notTestSuite;
+    </para>
 @z
 
 @x
@@ -133,15 +135,23 @@
 @z
 
 @x
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>None</seg>
         <seg>libxcb-util.so</seg>
+        <seg>None</seg>
 @y
+        <seg>&None;</seg>
         <seg>libxcb-util.so</seg>
+        <seg>&None;</seg>
 @z
 
 @x

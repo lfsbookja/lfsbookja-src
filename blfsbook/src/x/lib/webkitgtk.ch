@@ -20,11 +20,11 @@
 @z
 
 @x
-      The <application>WebKitGTK+</application> package is the port of the
-      portable web rendering engine <application>WebKit</application> to the
-      <application>GTK+</application> platform.
+      The <application>WebKitGTK+</application> is the port of the portable
+      web rendering engine <application>WebKit</application> to the
+      <application>GTK+ 2</application> platform.
 @y
-      <application>WebKitGTK+</application> パッケージは、可搬性に優れたウェブレンダリングエンジン <application>WebKit</application> の <application>GTK+</application> プラットフォームでのポートです。
+      <application>WebKitGTK+</application> は、可搬性に優れたウェブレンダリングエンジン <application>WebKit</application> の <application>GTK+</application> プラットフォームでのポートです。
 @z
 
 @x
@@ -79,12 +79,9 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gperf"/>,
-      <xref linkend="gst10-plugins-base"/> or
       <xref linkend="gst-plugins-base"/>,
-      <xref linkend="gtk3"/> or
       <xref linkend="gtk2"/>,
       <xref linkend="icu"/>,
-      <xref linkend="libxslt"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="mesalib"/>,
       <xref linkend="ruby"/>,
@@ -95,12 +92,9 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gperf"/>,
-      <xref linkend="gst10-plugins-base"/> または
       <xref linkend="gst-plugins-base"/>,
-      <xref linkend="gtk3"/> または
       <xref linkend="gtk2"/>,
       <xref linkend="icu"/>,
-      <xref linkend="libxslt"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="mesalib"/>,
       <xref linkend="ruby"/>,
@@ -112,14 +106,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="geoclue"/> and
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="enchant"/> and
+      <xref linkend="geoclue"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="geoclue"/>,
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="enchant"/>,
+      <xref linkend="geoclue"/>
     </para>
 @z
 
@@ -127,7 +121,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
-      <xref linkend="enchant"/>,
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/> and
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
@@ -135,7 +129,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
-      <xref linkend="enchant"/>,
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
@@ -199,28 +193,15 @@
 @z
 
 @x
-      <option>--enable-introspection</option>: This switch enables support for
-      <application>Gobject Introspection</application> and is required for a
-      <application>GNOME</application> Desktop. Remove if you don't have
-      <application>Gobject Introspection</application> installed or you don't
-      want to install <application>GNOME</application>.
+      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>: These parameters
+      force <application>WebKitGTK+</application> to compile against
+      <application>GTK+ 2</application>, even if
+      <application>GTK+ 3</application> is also installed.
 @y
-      <option>--enable-introspection</option>:
-      このオプションは <application>GObject Introspection</application> サポートを有効にします。
-      これは <application>GNOME</application> デスクトップ環境において必要です。
-      <application>Gobject Introspection</application> をインストールしていなくて、<application>GNOME</application> をインストールしないのであれば、このオプションを取り除いてください。
-@z
-
-@x
-      <parameter>--with-gstreamer=1.0</parameter>: This switch forces use of
-      <application>GStreamer</application> 1.0 series which
-      <application>GNOME</application> 3.6 uses. Remove if you don't want
-      to install <application>GStreamer</application> 1.0 or you don't
-      want to install <application>GNOME</application>.
-@y
-      <parameter>--with-gstreamer=1.0</parameter>:
-      このスイッチは、<application>GNOME</application> 3.6 が利用している <application>GStreamer</application> 1.0 シリーズを、強制的に利用することを指示します。
-      <application>GStreamer</application> 1.0 や <application>GNOME</application> をインストールするつもりがない場合には、このスイッチを取り除いてください。
+      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>: These parameters
+      force <application>WebKitGTK+</application> to compile against
+      <application>GTK+ 2</application>, even if
+      <application>GTK+ 3</application> is also installed.
 @z
 
 @x
@@ -234,28 +215,6 @@
 @z
 
 @x
-      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>: These parameters
-      force <application>WebKitGTK+</application> to compile against
-      <application>GTK+ 2</application>, even if
-      <application>GTK+ 3</application> is also installed. With
-      <application>GTK+ 2</application>, everything
-      <application>WebKitGTK+</application> installs is suffixed with 1.0. When it
-      is compiled against <application>GTK+ 3</application> everything it
-      installs is suffixed with 3.0. Both versions can be installed alongside
-      one another with no namespace conflicts.
-@y
-      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>:
-      これらのパラメーターは、<application>GTK+ 3</application> がインストールされていても <application>GTK+ 2</application> を用いて <application>WebKitGTK+</application> をビルドすることを指示します。
-      
-      With
-      <application>GTK+ 2</application>, everything
-      <application>WebKitGTK+</application> installs is suffixed with 1.0. When it
-      is compiled against <application>GTK+ 3</application> everything it
-      installs is suffixed with 3.0. Both versions can be installed alongside
-      one another with no namespace conflicts.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -263,7 +222,7 @@
 
 @x
       <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -273,31 +232,25 @@
 
 @x
         <seg>
-          jsc-1 or jsc-3
+          jsc-1
         </seg>
         <seg>
-          libjavascriptcoregtk-1.0.so and libwebkit-1.0.so or
-          libjavascriptcoregtk-3.0.so, libwebkit2gtk-3.0.so and
-          libwebkit-3.0.so
+          libjavascriptcoregtk-1.0.so and libwebkit-1.0.so
         </seg>
         <seg>
-          /usr/include/webkit-1.0 and /usr/share/webkit-1.0 or
-          /usr/include/webkit-3.0, /usr/lib/WebKit and
-          /usr/share/webkit-3.0
+          /usr/include/webkit-1.0, /usr/share/webkit-1.0 and
+          /usr/lib/webkitgtk2
         </seg>
 @y
         <seg>
-          jsc-1 または jsc-3
+          jsc-1
         </seg>
         <seg>
-          libjavascriptcoregtk-1.0.so, libwebkit-1.0.so または
-          libjavascriptcoregtk-3.0.so, libwebkit2gtk-3.0.so,
-          libwebkit-3.0.so
+          libjavascriptcoregtk-1.0.so, libwebkit-1.0.so
         </seg>
         <seg>
-          /usr/include/webkit-1.0, /usr/share/webkit-1.0 または
-          /usr/include/webkit-3.0, /usr/lib/WebKit,
-          /usr/share/webkit-3.0
+          /usr/include/webkit-1.0, /usr/share/webkit-1.0,
+          /usr/lib/webkitgtk2
         </seg>
 @z
 
@@ -307,12 +260,7 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x
-        <term><command>jsc-1</command> or <command>jsc-3</command></term>
-@y
-        <term><command>jsc-1</command> または <command>jsc-3</command></term>
-@z
-@x
+@x jsc-1
             is a command-line utility that allows you to run JavaScript programs
             outside of the context of a web browser.
 @y
@@ -335,12 +283,3 @@
             contains the <application>WebKitGTK+</application> API functions for
             <application>GTK+ 2</application>.
 @z
-
-@x libjavascriptcoregtk-3.0.so
-            contains core JavaScript API functions used by <command>jsc-3</command>
-            and <filename class="libraryfile">libwebkitgtk-3.0.so</filename>.
-@y
-            contains core JavaScript API functions used by <command>jsc-3</command>
-            and <filename class="libraryfile">libwebkitgtk-3.0.so</filename>.
-@z
-

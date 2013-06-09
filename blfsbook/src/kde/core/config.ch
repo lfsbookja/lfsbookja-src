@@ -106,11 +106,11 @@
 @x
     <title>Installing further KDE packages</title>
     <para>Every subsequent package can be built while having <application>KDE</application> up and 
-    running, but remember to keep <envar>&kde-dir;</envar> and <envar>&qt-dir;</envar> set.</para>
+    running, but remember to keep <envar>&kde-dir;</envar> and <envar>&qt4-dir;</envar> set.</para>
 @y
     <title>KDE のその他のパッケージのインストール</title>
     <para>
     <application>KDE</application> を稼動させることができたら、その他のパッケージもビルドしていくことができます。
-    その際には <envar>&kde-dir;</envar> と <envar>&qt-dir;</envar> を正しく設定しておくことを忘れないでください。
+    その際には <envar>&kde-dir;</envar> と <envar>&qt4-dir;</envar> を正しく設定しておくことを忘れないでください。
     </para>
 @z

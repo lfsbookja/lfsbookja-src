@@ -139,7 +139,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -149,11 +149,11 @@
 @x
         <seg>None</seg>
         <seg>libXdmcp.so</seg>
-        <seg>None</seg>
+        <seg><envar>$XORG_PREFIX</envar>/share/doc/libXdmcp</seg>
 @y
         <seg>&None;</seg>
         <seg>libXdmcp.so</seg>
-        <seg>&None;</seg>
+        <seg><envar>$XORG_PREFIX</envar>/share/doc/libXdmcp</seg>
 @z
 
 @x

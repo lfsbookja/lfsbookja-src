@@ -52,12 +52,6 @@
 @y
       <para>2013/06/01</para>
 @z
-
-@x
-      <para>June 1st, 2013</para>
-@y
-      <para>2013/06/01</para>
-@z
 @x
           <para>[krejzi] - Removed GNOME from the book.</para>
 @y

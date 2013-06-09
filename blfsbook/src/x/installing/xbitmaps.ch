@@ -112,17 +112,21 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>
-          <envar>$XORG_PREFIX</envar>/include/X11/bitmaps
-        </seg>
+        <seg>None</seg>
+        <seg>None</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/X11/bitmaps</seg>
 @y
-        <seg>
-          <envar>$XORG_PREFIX</envar>/include/X11/bitmaps
-        </seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
+        <seg><envar>$XORG_PREFIX</envar>/include/X11/bitmaps</seg>
 @z

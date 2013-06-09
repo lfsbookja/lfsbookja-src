@@ -86,71 +86,73 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="sqlite"/>,
-      <xref linkend="apr-util"/> and
+      <xref linkend="apr-util"/>,
       <xref linkend="neon"/> or
-      <ulink url="http://code.google.com/p/serf/">serf</ulink>
+      <ulink url="http://code.google.com/p/serf/">serf</ulink>, and
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="sqlite"/>,
       <xref linkend="apr-util"/>,
       <xref linkend="neon"/> または
-      <ulink url="http://code.google.com/p/serf/">serf</ulink>
+      <ulink url="http://code.google.com/p/serf/">serf</ulink>,
+      <xref linkend="sqlite"/>
     </para>
 @z
 
 @x
-      If you require the <application>Berkeley DB</application> back-end hooks
-      in <application>Subversion</application> to build or support BDB based
-      repositories, you must have <application>APR-util</application> linked to
-      the <application>Berkeley DB</application> library.
+        If you require the <application>Berkeley DB</application> back-end hooks
+        in <application>Subversion</application> to build or support BDB based
+        repositories, you must have <application>APR-util</application> linked to
+        the <application>Berkeley DB</application> library.
 @y
-      If you require the <application>Berkeley DB</application> back-end hooks
-      in <application>Subversion</application> to build or support BDB based
-      repositories, you must have <application>APR-util</application> linked to
-      the <application>Berkeley DB</application> library.
+        If you require the <application>Berkeley DB</application> back-end hooks
+        in <application>Subversion</application> to build or support BDB based
+        repositories, you must have <application>APR-util</application> linked to
+        the <application>Berkeley DB</application> library.
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> (required to run the test suite),
+      <xref linkend="apache"/>,
       <xref linkend="db"/>,
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="libgnome-keyring"/>,
-      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support) and
-      <xref linkend="apache"/>
+      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
+      <xref linkend="openssl"/>,
+      <xref linkend="python2"/> (required to run the test suite) and
+      <xref linkend="ruby"/> (version 1.8.x)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> (テストスイート実行に必要),
+      <xref linkend="apache"/>,
       <xref linkend="db"/>,
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="openssl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="libgnome-keyring"/>,
-      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support) and
-      <xref linkend="apache"/>
+      <xref linkend="kdelibs"/> (<ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> サポートのため),
+      <xref linkend="openssl"/>,
+      <xref linkend="python2"/> (テストスイート実行に必要),
+      <xref linkend="ruby"/> (version 1.8.x)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (for the Java Bindings)</bridgehead>
     <para role="optional">
-      One of <xref linkend="openjdk"/>, 
-      <ulink url="http://www.inet.no/dante/">Dante</ulink>, or
+      One of <xref linkend="openjdk"/>,
+      <ulink url="http://www.inet.no/dante/">Dante</ulink> or
       <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
       and <xref linkend="junit"/> (to test the Java bindings)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;; (Java バインディングビルド時)</bridgehead>
     <para role="optional">
-      One of <xref linkend="openjdk"/>, 
+      One of <xref linkend="openjdk"/>,
       <ulink url="http://www.inet.no/dante/">Dante</ulink> または
       <ulink url="http://oss.software.ibm.com/developerworks/opensource/jikes/">Jikes</ulink>,
       and <xref linkend="junit"/> (Java バインディングのテスト時に必要)
@@ -267,11 +269,11 @@
 
 @x
         <seg>
-          svn, svnadmin, svndumpfilter, svnlook, svnserve, svnsync and
+          svn, svnadmin, svndumpfilter, svnlook, svnrdump, svnserve, svnsync and
           svnversion
         </seg>
         <seg>
-          libsvn*.so and optionally, a Java library, the mod_dav_svn.so, and
+          libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
           and mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application> and
           <application>Python</application>
@@ -288,11 +290,11 @@
         </seg>
 @y
         <seg>
-          svn, svnadmin, svndumpfilter, svnlook, svnserve, svnsync,
+          svn, svnadmin, svndumpfilter, svnlook, svnrdump, svnserve, svnsync and
           svnversion
         </seg>
         <seg>
-          libsvn*.so and optionally, a Java library, the mod_dav_svn.so, and
+          libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
           and mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application>,
           <application>Python</application>

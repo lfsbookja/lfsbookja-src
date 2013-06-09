@@ -83,13 +83,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt"/> and
+    <xref linkend="qt4"/> and
     <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt"/>,
+    <xref linkend="qt4"/> and
     <xref linkend="which"/>
     </para>
 @z
@@ -177,9 +177,9 @@
 @x
         <seg>qcatool2 and qcatool2.debug</seg>
         <seg>libqca.so and libqca.so.&qca-version;.debug</seg>
-        <seg>&qt-dir;/include/QtCrypto and &qt-dir;/share/qca</seg>
+        <seg>&qt4-dir;/include/QtCrypto and &qt4-dir;/share/qca</seg>
 @y
         <seg>qcatool2, qcatool2.debug</seg>
         <seg>libqca.so, libqca.so.&qca-version;.debug</seg>
-        <seg>&qt-dir;/include/QtCrypto, &qt-dir;/share/qca</seg>
+        <seg>&qt4-dir;/include/QtCrypto, &qt4-dir;/share/qca</seg>
 @z

@@ -115,12 +115,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"> <xref linkend="fop"/> and <xref linkend="xmlto"/>
-    (to build additional documentation)</para>
+    <para role="optional"><xref linkend="fop"/>, <xref linkend="xmlto"/> and
+    <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> (to build
+    additional documentation)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"> <xref linkend="fop"/> and <xref linkend="xmlto"/>
-    (追加ドキュメントの生成時に必要)</para>
+    <para role="optional"><xref linkend="fop"/>, <xref linkend="xmlto"/>,
+    <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> (追加ドキュメントの生成時に必要)</para>
 @z
 
 @x
@@ -227,23 +228,27 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
+        <seg>None</seg>
+        <seg>None</seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/GL,
           <envar>$XORG_PREFIX</envar>/include/X11,
-          <envar>$XORG_PREFIX</envar>/lib/pkgconfig,
           <envar>$XORG_PREFIX</envar>/share/doc/bigreqsproto,
           <envar>$XORG_PREFIX</envar>/share/doc/compositeproto,
           <envar>$XORG_PREFIX</envar>/share/doc/damageproto,
           <envar>$XORG_PREFIX</envar>/share/doc/dri2proto,
           <envar>$XORG_PREFIX</envar>/share/doc/fixesproto,
           <envar>$XORG_PREFIX</envar>/share/doc/fontsproto,
-          <envar>$XORG_PREFIX</envar>/share/doc/inputproto,
           <envar>$XORG_PREFIX</envar>/share/doc/kbproto,
           <envar>$XORG_PREFIX</envar>/share/doc/randrproto,
           <envar>$XORG_PREFIX</envar>/share/doc/recordproto,
@@ -256,17 +261,17 @@
           <envar>$XORG_PREFIX</envar>/share/doc/xproto
         </seg>
 @y
+        <seg>&None;</seg>
+        <seg>&None;</seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/GL,
           <envar>$XORG_PREFIX</envar>/include/X11,
-          <envar>$XORG_PREFIX</envar>/lib/pkgconfig,
           <envar>$XORG_PREFIX</envar>/share/doc/bigreqsproto,
           <envar>$XORG_PREFIX</envar>/share/doc/compositeproto,
           <envar>$XORG_PREFIX</envar>/share/doc/damageproto,
           <envar>$XORG_PREFIX</envar>/share/doc/dri2proto,
           <envar>$XORG_PREFIX</envar>/share/doc/fixesproto,
           <envar>$XORG_PREFIX</envar>/share/doc/fontsproto,
-          <envar>$XORG_PREFIX</envar>/share/doc/inputproto,
           <envar>$XORG_PREFIX</envar>/share/doc/kbproto,
           <envar>$XORG_PREFIX</envar>/share/doc/randrproto,
           <envar>$XORG_PREFIX</envar>/share/doc/recordproto,

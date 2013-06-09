@@ -308,11 +308,11 @@
 @z
 
 @x
-      <segtitle>Optionally Installed Programs</segtitle>
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>任意ビルド時の&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
@@ -329,7 +329,6 @@
         </seg>
         <seg>
           /usr/include/EGL,
-          /usr/include/GL,
           /usr/include/GLES,
           /usr/include/GLES2,
           /usr/include/GLES3,
@@ -352,7 +351,6 @@
         </seg>
         <seg>
           /usr/include/EGL,
-          /usr/include/GL,
           /usr/include/GLES,
           /usr/include/GLES2,
           /usr/include/GLES3,

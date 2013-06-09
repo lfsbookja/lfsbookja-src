@@ -33,11 +33,12 @@ CHANGE_FILES = \
 	libxklavier.ch          \
 	pango.ch                \
 	pangomm.ch              \
-	qt.ch                   \
+	qt4.ch                  \
 	shared-mime-info.ch     \
 	startup-notification.ch \
 	xulrunner.ch            \
-	webkitgtk.ch
+	webkitgtk.ch            \
+	webkitgtk2.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -83,8 +84,9 @@ libnotify.xml:            $(BOOKdir)/$@ $(srcdir)/libnotify.ch
 libxklavier.xml:          $(BOOKdir)/$@ $(srcdir)/libxklavier.ch
 pango.xml:                $(BOOKdir)/$@ $(srcdir)/pango.ch
 pangomm.xml:              $(BOOKdir)/$@ $(srcdir)/pangomm.ch
-qt.xml:                   $(BOOKdir)/$@ $(srcdir)/qt.ch
+qt4.xml:                  $(BOOKdir)/$@ $(srcdir)/qt4.ch
 shared-mime-info.xml:     $(BOOKdir)/$@ $(srcdir)/shared-mime-info.ch
 startup-notification.xml: $(BOOKdir)/$@ $(srcdir)/startup-notification.ch
 xulrunner.xml:            $(BOOKdir)/$@ $(srcdir)/xulrunner.ch
 webkitgtk.xml:            $(BOOKdir)/$@ $(srcdir)/webkitgtk.ch
+webkitgtk2.xml:           $(BOOKdir)/$@ $(srcdir)/webkitgtk2.ch

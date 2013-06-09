@@ -117,7 +117,7 @@
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
       <xref linkend="python2"/>,
-      <xref linkend="qt"/> (for doxywizard) and
+      <xref linkend="qt4"/> (for doxywizard) and
       <xref linkend="texlive"/>
     </para>
 @y
@@ -126,7 +126,7 @@
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
       <xref linkend="python2"/>,
-      <xref linkend="qt"/> (doxywizard に必要),
+      <xref linkend="qt4"/> (doxywizard に必要),
       <xref linkend="texlive"/>
     </para>
 @z

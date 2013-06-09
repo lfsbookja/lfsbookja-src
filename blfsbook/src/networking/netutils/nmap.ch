@@ -81,18 +81,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="libpcap"/>,
-    <xref linkend="gtk2"/> (run time dependency), and
-    <ulink url="http://sourceforge.net/projects/libdnet/">libdnet</ulink></para>
+    <para role="optional">
+      <xref linkend="openssl"/>,
+      <xref linkend="pygtk"/> (required for <command>zenmap</command>),
+      <xref linkend="python2"/> (required for <command>ndiff</command>) and
+      <xref linkend="subversion"/> (required for <command>nmap-update</command>)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openssl"/>,
-    <xref linkend="pcre"/>,
-    <xref linkend="libpcap"/>,
-    <xref linkend="gtk2"/> (実行時に必要),
-    <ulink url="http://sourceforge.net/projects/libdnet/">libdnet</ulink></para>
+    <para role="optional">
+      <xref linkend="openssl"/>,
+      <xref linkend="pygtk"/> (required for <command>zenmap</command>),
+      <xref linkend="python2"/> (required for <command>ndiff</command>) and
+      <xref linkend="subversion"/> (required for <command>nmap-update</command>)
+    </para>
 @z
 
 @x
@@ -141,7 +143,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -149,13 +151,15 @@
 @z
 
 @x
-        <seg>ncat, ndiff, nmap, nmapfe, nping, uninstall_zenmap, xnmap, and zenmap</seg>
+        <seg>ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_zenmap,
+        xnmap and zenmap</seg>
         <seg>/usr/lib/python&python2-version;/site-packages/</seg>
-        <seg>/usr/share/nmap</seg>
+        <seg>/usr/share/ncat, /usr/share/nmap and /usr/share/zenmap</seg>
 @y
-        <seg>ncat, ndiff, nmap, nmapfe, nping, uninstall_zenmap, xnmap, zenmap</seg>
+        <seg>ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_zenmap,
+        xnmap, zenmap</seg>
         <seg>/usr/lib/python&python2-version;/site-packages/</seg>
-        <seg>/usr/share/nmap</seg>
+        <seg>/usr/share/ncat, /usr/share/nmap, /usr/share/zenmap</seg>
 @z
 
 @x
@@ -175,13 +179,13 @@
 @z
 
 @x nmapfe
-          <para>is a symbolic link to <command>zenmap.</command>.</para>
+          <para>is a symbolic link to <command>zenmap</command>.</para>
 @y
-          <para>is a symbolic link to <command>zenmap.</command>.</para>
+          <para>is a symbolic link to <command>zenmap</command>.</para>
 @z
 
 @x xnmap
-          <para>is a symbolic link to <command>zenmap.</command>.</para>
+          <para>is a symbolic link to <command>zenmap</command>.</para>
 @y
           <para>
           <command>zenmap</command> へのシンボリックリンク。

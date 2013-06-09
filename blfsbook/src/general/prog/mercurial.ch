@@ -20,19 +20,17 @@
 @z
 
 @x
-    <para><application>Mercurial</application> is a distributed source control 
-    management tool similar to <application>CVS</application>, 
-    <application>Subversion</application> and <application>Git</application>.
-    <application>Mercurial</application> is written in 
-    <application>Python</application> and is used by projects such as Mozilla, 
-    Vim and Audacious.</para>
+    <para><application>Mercurial</application> is a distributed source control
+    management tool similar to <application>Git</application> and
+    <application>Bazaar</application>. <application>Mercurial</application> is
+    written in <application>Python</application> and is used by projects such as
+    Mozilla and Vim.</para>
 @y
-    <para><application>Mercurial</application> is a distributed source control 
-    management tool similar to <application>CVS</application>, 
-    <application>Subversion</application> and <application>Git</application>.
-    <application>Mercurial</application> is written in 
-    <application>Python</application> and is used by projects such as Mozilla, 
-    Vim and Audacious.</para>
+    <para><application>Mercurial</application> is a distributed source control
+    management tool similar to <application>Git</application> and
+    <application>Bazaar</application>. <application>Mercurial</application> is
+    written in <application>Python</application> and is used by projects such as
+    Mozilla and Vim.</para>
 @z
 
 @x
@@ -100,7 +98,7 @@
     <para role="optional">
     <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <xref linkend="git"/>,
-    <xref linkend="gpg2"/> (with Python bindings),
+    <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
     <xref linkend="subversion"/> (with Python bindings),
     <xref linkend="bazaar"/>,
     <xref linkend="cvs"/>,
@@ -112,7 +110,7 @@
     <para role="optional">
     <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (ドキュメントのビルド時に必要),
     <xref linkend="git"/>,
-    <xref linkend="gpg2"/> (Python バインディングを含む),
+    <xref linkend="gnupg2"/> (Python バインディングによりビルドされた <command>gpg2</command>),
     <xref linkend="subversion"/> (Python バインディングを含む),
     <xref linkend="bazaar"/>,
     <xref linkend="cvs"/>,

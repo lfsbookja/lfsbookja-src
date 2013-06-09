@@ -199,21 +199,21 @@
 @z
 
 @x
-        <seg>bdftopcf, iceauth, luit, mkfontdir,mkfontscale, sessreg,
-        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, 
+        <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
+        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
         xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
-        xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
-        xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
+        xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh,
+        xset, xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>bdftopcf, iceauth, luit, mkfontdir,mkfontscale, sessreg,
-        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, 
+        <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
+        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
         xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill, xlsatoms,
-        xlsclients, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh, xset,
-        xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
+        xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb, xrefresh,
+        xset, xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z

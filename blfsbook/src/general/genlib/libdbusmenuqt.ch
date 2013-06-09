@@ -80,12 +80,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt"/>
+    <xref linkend="qt4"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt"/>
+    <xref linkend="qt4"/>
     </para>
 @z
 
@@ -177,9 +177,9 @@
 @x
         <seg>None</seg>
         <seg>libdbusmenu-qt.so</seg>
-        <seg>&qt-dir;/include/dbusmenu-qt</seg>
+        <seg>&qt4-dir;/include/dbusmenu-qt</seg>
 @y
         <seg>&None;</seg>
         <seg>libdbusmenu-qt.so</seg>
-        <seg>&qt-dir;/include/dbusmenu-qt</seg>
+        <seg>&qt4-dir;/include/dbusmenu-qt</seg>
 @z

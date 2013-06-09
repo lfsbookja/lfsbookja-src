@@ -155,18 +155,6 @@
 @z
 
 @x
-    <para><parameter>--with-app-defaults=...</parameter>: Sets the location
-    for the <filename class="directory">app-defaults</filename>
-    directory.</para>
-@y
-    <para>
-    <parameter>--with-app-defaults=...</parameter>: Sets the location
-    for the <filename class="directory">app-defaults</filename>
-    directory.
-    </para>
-@z
-
-@x
     <para><parameter>--enable-luit</parameter>: Enables the luit filter for
     translation between Unicode (used by xterm internally in the configuration
     below) and the locale encoding. If <command>luit</command> is not found
@@ -189,6 +177,18 @@
     <para>
     <parameter>--enable-wide-chars</parameter>:
     ワイド文字 (wide characters) の機能を追加します。
+    </para>
+@z
+
+@x
+    <para><parameter>--with-app-defaults=...</parameter>: Sets the location
+    for the <filename class="directory">app-defaults</filename>
+    directory.</para>
+@y
+    <para>
+    <parameter>--with-app-defaults=...</parameter>: Sets the location
+    for the <filename class="directory">app-defaults</filename>
+    directory.
     </para>
 @z
 

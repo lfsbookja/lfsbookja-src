@@ -99,13 +99,13 @@
     <bridgehead renderas="sect4">Recommended (to build a GUI)</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/> or
-      <xref linkend="qt"/>
+      <xref linkend="qt4"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GUI ビルド時)</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/> または
-      <xref linkend="qt"/>
+      <xref linkend="qt4"/>
     </para>
 @z
 
@@ -141,10 +141,10 @@
 @z
 
 @x
-      If you have installed <xref linkend="qt"/> and would like to compile the
+      If you have installed <xref linkend="qt4"/> and would like to compile the
       Qt GUI, run the following commands:
 @y
-      <xref linkend="qt"/> をインストールしていて Qt GUI をビルドする場合は以下を実行します。
+      <xref linkend="qt4"/> をインストールしていて Qt GUI をビルドする場合は以下を実行します。
 @z
 
 @x

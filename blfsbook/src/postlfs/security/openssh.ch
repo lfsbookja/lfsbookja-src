@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "32 MB (plus 10MB if running the tests)">
+  <!ENTITY openssh-buildsize     "31 MB (additional 10 MB if running the tests)">
   <!ENTITY openssh-time          "0.4 SBU (running the tests takes at least 10 minutes, irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "32 MB (テスト実施時は 10MB 追加)">
+  <!ENTITY openssh-buildsize     "31 MB (テスト実施時は 10MB 追加)">
   <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理性能には関係なく 10分ほど必要)">
 @z
 
@@ -181,9 +181,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make tests</command>.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>make tests</command> を実行します。
 @z
 
 @x
@@ -395,7 +395,8 @@
 @x
         <seg>
           scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-          ssh-keygen, ssh-keyscan and ssh-keysign
+          ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign and
+          ssh-pkcs11-helper
         </seg>
         <seg>
           None
@@ -409,7 +410,8 @@
 @y
         <seg>
           scp, sftp, sftp-server, slogin, ssh, sshd, ssh-add, ssh-agent,
-          ssh-keygen, ssh-keyscan, ssh-keysign
+          ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign,
+          ssh-pkcs11-helper
         </seg>
         <seg>
           &None;

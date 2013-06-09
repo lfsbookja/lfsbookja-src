@@ -159,25 +159,6 @@
 @z
 
 @x
-      <option>--without-pam</option>: This switch disables the use of
-      <application>PAM</application> authentication. Omit if you have
-      <application>Linux PAM</application> installed.
-@y
-      <option>--without-pam</option>:
-      このスイッチは <application>PAM</application> による権限制御を無効にすることを指示します。
-      <application>Linux PAM</application> をインストールしている場合は、このスイッチをはずしてください。
-@z
-
-@x
-      <option>--without-sendmail</option>: This switch disables the use of
-      sendmail. Remove if you have a sendmail compatible MTA.
-@y
-      <option>--without-sendmail</option>:
-      このスイッチは sendmail の利用を不可とします。
-      sendmail 互換の MTA をインストールしている場合は、このスイッチ指定をはずしてください。
-@z
-
-@x
         There are many options to <application>sudo</application>'s
         <command>configure</command> command. Check the
         <command>configure --help</command> output for a complete list.

@@ -84,15 +84,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="webkitgtk"/> (configured --with-gtk=2.0) or
-      <xref linkend="webkitgtk"/> (configured --with-gtk=3.0) and
+      <xref linkend="webkitgtk"/> or
+      <xref linkend="webkitgtk2"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="webkitgtk"/> (configured --with-gtk=2.0) or
-      <xref linkend="webkitgtk"/> (configured --with-gtk=3.0) and
+      <xref linkend="webkitgtk"/> または
+      <xref linkend="webkitgtk2"/>,
       <xref linkend="vala"/>
     </para>
 @z

@@ -122,12 +122,12 @@
 @z
 
 @x
-    <para>Make sure that <xref linkend="qt"/> is compiled without the bundled
+    <para>Make sure that <xref linkend="qt4"/> is compiled without the bundled
     <application>Phonon</application> library. This package provides
     a better implementation.</para>
 @y
     <para>
-    <xref linkend="qt"/> は、バンドルされている <application>Phonon</application> ライブラリによりビルドしないでください。
+    <xref linkend="qt4"/> は、バンドルされている <application>Phonon</application> ライブラリによりビルドしないでください。
     本パッケージの方がより適切な実装です。
     </para>
 @z

@@ -124,7 +124,7 @@
       <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gtk2"/> and
-      <xref linkend="qt"/>
+      <xref linkend="qt4"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -137,7 +137,7 @@
       <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="qt"/>
+      <xref linkend="qt4"/>
     </para>
 @z
 

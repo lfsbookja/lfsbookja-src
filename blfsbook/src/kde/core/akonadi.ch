@@ -137,10 +137,10 @@
 @z
 
 @x
-    <para><option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>: This switch is used to
+    <para><option>-DCMAKE_PREFIX_PATH=&qt4-dir;</option>: This switch is used to
     help <command>cmake</command> find <command>automoc4</command>.</para>
 @y
-    <para><option>-DCMAKE_PREFIX_PATH=&qt-dir;</option>:
+    <para><option>-DCMAKE_PREFIX_PATH=&qt4-dir;</option>:
     このスイッチにより <command>cmake</command> が <command>automoc4</command> を見出せるようにします。</para>
 @z
 
