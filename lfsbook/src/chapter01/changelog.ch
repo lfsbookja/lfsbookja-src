@@ -48,6 +48,50 @@
 @z
 
 @x
+      <para>2013-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to gzip-1.6. Fixes 
+          <ulink url="&lfs-ticket-root;3362">#3362</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-06-10</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - gzip-1.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3362">#3362</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-06-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to libpipeline-1.2.4. Fixes 
+          <ulink url="&lfs-ticket-root;3360">#3360</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.9.5. Fixes
+          <ulink url="&lfs-ticket-root;3361">#3361</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-06-09</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - libpipeline-1.2.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3360">#3360</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.9.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3361">#3361</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-06-05</para>
       <itemizedlist>
         <listitem>
@@ -55,7 +99,7 @@
           <ulink url="&lfs-ticket-root;3358">#3358</ulink>.</para>
         </listitem>
         <listitem>
-          <para>[bdubbs] - Update file program contents,</para>
+          <para>[bdubbs] - Update file program contents.</para>
         </listitem>
       </itemizedlist>
 @y
