@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2013-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.13.4. Fixes 
+          <ulink url="&lfs-ticket-root;3364">#3364</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.9.6. Fixes
+          <ulink url="&lfs-ticket-root;3363">#3363</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-06-16</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - automake-1.13.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3364">#3364</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.9.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3363">#3363</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-06-10</para>
       <itemizedlist>
         <listitem>
