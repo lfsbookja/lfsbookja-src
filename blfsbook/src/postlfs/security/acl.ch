@@ -144,15 +144,27 @@
 @z
 
 @x
-    <para>There are three sets of tests that come with this package. Issue the
-    following to execute all three:
-    <command>make tests root-tests ext-tests</command>.</para>
+    <para>There are three sets of tests that come with this package. The local
+    partition where the tests are run must be mounted with acl configured as
+    described below.  Additionally, the users <systemitem
+    class="username">bin</systemitem> and <systemitem
+    class="username">daemon</systemitem> must be created or modified to have a
+    proper shell and home directory and the group <systemitem
+    class="groupname">daemon</systemitem> must be a member of the <systemitem
+    class="groupname">bin</systemitem> group.  The kernel must also be
+    configured with the appropriate ACL options (there are nine different
+    options).</para>
 @y
-    <para>
-    このパッケージには三種類のテストがあります。
-    三つのテストすべてを実行するには、以下のコマンドを実行します。
-    <command>make tests root-tests ext-tests</command>
-    </para>
+    <para>There are three sets of tests that come with this package. The local
+    partition where the tests are run must be mounted with acl configured as
+    described below.  Additionally, the users <systemitem
+    class="username">bin</systemitem> and <systemitem
+    class="username">daemon</systemitem> must be created or modified to have a
+    proper shell and home directory and the group <systemitem
+    class="groupname">daemon</systemitem> must be a member of the <systemitem
+    class="groupname">bin</systemitem> group.  The kernel must also be
+    configured with the appropriate ACL options (there are nine different
+    options).</para>
 @z
 
 @x

@@ -201,3 +201,17 @@
         <seg>libokularcore.so と &kde-dir;/lib/kde4 配下に数種のライブラリ</seg>
         <seg>&kde-dir;/include/okular と &kde-dir;/lib, &kde-dir;/share 配下に数種のディレクトリ</seg>
 @z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x okular
+          <para>is the KDE document viewer.</para>
+@y
+          <para>
+          KDE ドキュメントビューアー。
+          </para>
+@z

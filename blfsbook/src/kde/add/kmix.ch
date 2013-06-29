@@ -157,3 +157,17 @@
         plasma_engine_mixer.so</seg>
         <seg>&kde-dir;/share 内に数種のディレクトリ</seg>
 @z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x kmix
+          <para>is the KDE Volume Control.</para>
+@y
+          <para>
+          KDE のボリュームコントロール。
+          </para>
+@z

@@ -222,7 +222,7 @@
 
 @x
         <seg>
-          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
+          certtool, danetool, gnutls-cli, gnutls-cli-debug,
           gnutls-serv, ocsptool, p11tool, psktool and srptool
         </seg>
         <seg>
@@ -230,12 +230,13 @@
           libgnutlsxx.so
         </seg>
         <seg>
-          /usr/include/gnutls and
+          /usr/include/gnutls,
+          /usr/share/doc/gnutls-3.2.1, and
           /usr/share/gtk-doc/html/gnutls
         </seg>
 @y
         <seg>
-          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
+          certtool, danetool, gnutls-cli, gnutls-cli-debug,
           gnutls-serv, ocsptool, p11tool, psktool, srptool
         </seg>
         <seg>
@@ -244,6 +245,7 @@
         </seg>
         <seg>
           /usr/include/gnutls,
+          /usr/share/doc/gnutls-3.2.1,
           /usr/share/gtk-doc/html/gnutls
         </seg>
 @z

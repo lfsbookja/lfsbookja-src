@@ -42,6 +42,188 @@
 @z
 
 @x
+      <para>June 28th, 2013</para>
+@y
+      <para>2013/06/28</para>
+@z
+@x
+          <para>[bdubbs] - Updated to pango-1.34.1.</para>
+@y
+          <para>[bdubbs] - pango-1.34.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gobject-introspection-1.36.0.</para>
+@y
+          <para>[bdubbs] - gobject-introspection-1.36.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gtk+-2.24.19.</para>
+@y
+          <para>[bdubbs] - gtk+-2.24.19 へのアップデート。</para>
+@z
+
+@x
+      <para>June 27th, 2013</para>
+@y
+      <para>2013/06/27</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gdk-pixbuf-2.28.2.</para>
+@y
+          <para>[bdubbs] - gdk-pixbuf-2.28.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to freetype-2.5.0.1.</para>
+@y
+          <para>[bdubbs] - freetype-2.5.0.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gnutls-3.2.1.</para>
+@y
+          <para>[bdubbs] - gnutls-3.2.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to dbus-1.6.12.</para>
+@y
+          <para>[bdubbs] - dbus-1.6.12 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to curl-7.31.0.</para>
+@y
+          <para>[bdubbs] - curl-7.31.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to Berkeley db-6.0.19.</para>
+@y
+          <para>[bdubbs] - Berkeley db-6.0.19 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to glibmm-2.36.2.</para>
+@y
+          <para>[bdubbs] - glibmm-2.36.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to atkmm-2.22.7.</para>
+@y
+          <para>[bdubbs] - atkmm-2.22.7 へのアップデート。</para>
+@z
+
+@x
+      <para>June 26th, 2013</para>
+@y
+      <para>2013/06/26</para>
+@z
+@x
+          <para>[bdubbs] - Updated to at-spi2-atk-2.8.1.</para>
+@y
+          <para>[bdubbs] - at-spi2-atk-2.8.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to at-spi2-core-2.8.0.</para>
+@y
+          <para>[bdubbs] - at-spi2-core-2.8.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to atk-2.8.0.</para>
+@y
+          <para>[bdubbs] - atk-2.8.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to glib-2.36.3.</para>
+@y
+          <para>[bdubbs] - glib-2.36.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to acl-2.2.52.</para>
+@y
+          <para>[bdubbs] - acl-2.2.52 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to apr-1.4.8.</para>
+@y
+          <para>[bdubbs] - apr-1.4.8 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to sudo-1.8.7.</para>
+@y
+          <para>[bdubbs] - sudo-1.8.7 へのアップデート。</para>
+@z
+
+@x
+      <para>June 25th, 2013</para>
+@y
+      <para>2013/06/25</para>
+@z
+@x
+          <para>[bdubbs] - Updated to qemu-1.5.0. Fixes 
+          <ulink url="&blfs-ticket-root;3862">#3862</ulink></para>
+@y
+          <para>[bdubbs] - qemu-1.5.0 へのアップデート。
+          <ulink url="&blfs-ticket-root;3862">#3862</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>June 19th, 2013</para>
+@y
+      <para>2013/06/19</para>
+@z
+@x
+          <para>[igor] - Added Lua-5.2.2.</para>
+@y
+          <para>[igor] - Lua-5.2.2 追加。</para>
+@z
+
+@x
+      <para>June 18th, 2013</para>
+@y
+      <para>2013/06/18</para>
+@z
+@x
+          <para>[ken] - patch openssl-1.0.1e and wget-1.14 for perl-5.18.</para>
+@y
+          <para>[ken] - perl-5.18 により openssl-1.0.1e と wget-1.14 へのパッチを追加。</para>
+@z
+
+@x
+      <para>June 16th, 2013</para>
+@y
+      <para>2013/06/16</para>
+@z
+@x
+          <para>[krejzi] - Added xcb-util-keysyms and xcb-util-wm.</para>
+@y
+          <para>[krejzi] - xcb-util-keysyms と xcb-util-wm の追加。</para>
+@z
+
+@x
+      <para>June 14th, 2013</para>
+@y
+      <para>2013/06/14</para>
+@z
+@x
+          <para>[ken] - libXrender-0.9.8 and libXvMC-1.0.8.</para>
+@y
+          <para>[ken] - libXrender-0.9.8, libXvMC-1.0.8.</para>
+@z
+
+@x
+      <para>June 6th, 2013</para>
+@y
+      <para>2013/06/06</para>
+@z
+@x
+          <para>[krejzi] - Added libwebp 0.3.0.</para>
+@y
+          <para>[krejzi] - libwebp 0.3.0 追加。</para>
+@z
+
+@x
+      <para>June 5th, 2013</para>
+@y
+      <para>2013/06/05</para>
+@z
+
+@x
       <para>June 2nd, 2013</para>
 @y
       <para>2013/06/02</para>

@@ -137,6 +137,15 @@
 @z
 
 @x
+    <para>The full test suite for this package is not enabled by default and not
+    tested by the BLFS team.</para>
+@y
+    <para>
+    テストスイートはデフォルトではすべて実行できるわけではなく、BLFS チームもテストは行っていません。
+    </para>
+@z
+
+@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>

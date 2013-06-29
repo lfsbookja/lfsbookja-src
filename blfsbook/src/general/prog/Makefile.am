@@ -23,6 +23,7 @@ CHANGE_FILES = \
 	junit.ch          \
 	librep.ch         \
 	llvm.ch           \
+	lua.ch            \
 	mercurial.ch      \
 	nasm.ch           \
 	openjdk.ch        \
@@ -72,6 +73,7 @@ guile.xml:          $(BOOKdir)/$@ $(srcdir)/guile.ch
 junit.xml:          $(BOOKdir)/$@ $(srcdir)/junit.ch
 librep.xml:         $(BOOKdir)/$@ $(srcdir)/librep.ch
 llvm.xml:           $(BOOKdir)/$@ $(srcdir)/llvm.ch
+lua.xml:            $(BOOKdir)/$@ $(srcdir)/lua.ch
 mercurial.xml:      $(BOOKdir)/$@ $(srcdir)/mercurial.ch
 nasm.xml:           $(BOOKdir)/$@ $(srcdir)/nasm.ch
 openjdk.xml:        $(BOOKdir)/$@ $(srcdir)/openjdk.ch

@@ -153,3 +153,17 @@
         <seg>libkerfuffle.so, &kde-dir;/lib/kde4 に数種のライブラリ</seg>
         <seg>&kde-dir;/share 配下に数種のディレクトリ</seg>
 @z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x ark
+          <para>is the KDE archiving utility.</para>
+@y
+          <para>
+          KDE のアーカイブユーティリティー。
+          </para>
+@z

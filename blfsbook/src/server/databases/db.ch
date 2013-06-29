@@ -325,7 +325,7 @@
           db_replicate,
           db_stat,
           db_tuner,
-          db_upgrade and
+          db_upgrade, and
           db_verify.
         </seg>
         <seg>

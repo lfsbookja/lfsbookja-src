@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY freetype2-buildsize     "30 MB (includes installing additional documentation)">
+  <!ENTITY freetype2-buildsize     "35 MB (includes installing additional documentation)">
 @y
-  <!ENTITY freetype2-buildsize     "30 MB (追加ドキュメントのインストールを含む)">
+  <!ENTITY freetype2-buildsize     "35 MB (追加ドキュメントのインストールを含む)">
 @z
 
 @x
@@ -155,35 +155,19 @@
     <title>&CommandExplanations;</title>
 @z
 
-% @x
-%       <command>sed -i -r 's:.*(#.*SUBPIXEL.*) .*:\1:'
-%       include/freetype/config/ftoption.h</command>:
-%       This command enables LCD optimized rendering. This option results in improved
-%       rendering of fonts, but may have patent restrictions. Be sure to read the
-%       <literal>'Other patent issues'</literal> part of
-%       <ulink url="http://www.freetype.org/patents.html"/> before enabling this
-%       option.
-% @y
-%       <command>sed -i -r 's:.*(#.*SUBPIXEL.*) .*:\1:'
-%       include/freetype/config/ftoption.h</command>:
-%       このコマンドは LCD 最適化レンダリング (LCD optimized rendering) 機能を有効にします。
-%       これによりフォントの表示が改善されるものとなりますが、一方で版権の制約が発生するかもしれません。
-%       以下のリンク <ulink url="http://www.freetype.org/patents.html"/> における <literal>'Other patent issues'</literal> の項の内容を十分に確認してから、これらの機能の有効化を行ってください。
-% @z
-
 @x
-      <command>sed -e ...</command>: First command enables Adobe CFF Engine,
-      second command enables GX/AAT and OpenType table validation and third
+      <command>sed -e ...</command>: 
+      First command enables GX/AAT and OpenType table validation and second
       command enables Subpixel Rendering and Subpixel Hinting in order to
-      improve font rendering. Note that Subpixel Rendering has patent issues.
+      improve font rendering. Note that Subpixel Rendering may have patent issues.
       Be sure to read the <literal>'Other patent issues'</literal> part of
       <ulink url="http://www.freetype.org/patents.html"/> before enabling this
       option.
 @y
-      <command>sed -e ...</command>: First command enables Adobe CFF Engine,
-      second command enables GX/AAT and OpenType table validation and third
+      <command>sed -e ...</command>: 
+      First command enables GX/AAT and OpenType table validation and second
       command enables Subpixel Rendering and Subpixel Hinting in order to
-      improve font rendering. Note that Subpixel Rendering has patent issues.
+      improve font rendering. Note that Subpixel Rendering may have patent issues.
       Be sure to read the <literal>'Other patent issues'</literal> part of
       <ulink url="http://www.freetype.org/patents.html"/> before enabling this
       option.

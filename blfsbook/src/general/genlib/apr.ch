@@ -138,11 +138,11 @@
 @x
         <seg>apr-1-config</seg>
         <seg>libapr-1.so</seg>
-        <seg>/usr/include/apr and /usr/share/apr-1/build</seg>
+        <seg>/usr/include/apr-1 and /usr/share/apr-1</seg>
 @y
         <seg>apr-1-config</seg>
         <seg>libapr-1.so</seg>
-        <seg>/usr/include/apr, /usr/share/apr-1/build</seg>
+        <seg>/usr/include/apr-1, /usr/share/apr-1</seg>
 @z
 
 @x

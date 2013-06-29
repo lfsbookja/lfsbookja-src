@@ -193,12 +193,12 @@
 @x
         <seg>hg</seg>
         <seg>none</seg>
-        <seg>/usr/lib/python2.7/site-packages/hgext and 
+        <seg>/etc/mercurial, /usr/lib/python2.7/site-packages/hgext and
         /usr/lib/python2.7/site-packages/mercurial</seg>
 @y
         <seg>hg</seg>
         <seg>&None;</seg>
-        <seg>/usr/lib/python2.7/site-packages/hgext,
+        <seg>/etc/mercurial, /usr/lib/python2.7/site-packages/hgext,
         /usr/lib/python2.7/site-packages/mercurial</seg>
 @z
 

@@ -121,6 +121,14 @@
 @z
 
 @x
+    <para>This package does not ship a default test suite.</para>
+@y
+    <para>
+    本パッケージはデフォルトではテストスイートは提供されません。
+    </para>
+@z
+
+@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>

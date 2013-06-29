@@ -175,19 +175,11 @@
 @z
 
 @x
-    <para><command>--enable-shared</command>: This command
+    <para><option>--enable-shared</option>: This command
     causes the shared library to be built.</para>
 @y
-    <para><command>--enable-shared</command>: This command
+    <para><option>--enable-shared</option>: This command
     causes the shared library to be built.</para>
-@z
-
-@x
-    <para><option>--disable-static</option>: This causes the
-    static library to not be built.</para>
-@y
-    <para><option>--disable-static</option>: This causes the
-    static library to not be built.</para>
 @z
 
 @x
@@ -224,12 +216,12 @@
 
 @x
         <seg>imgcmp, imginfo, jasper, jiv, and tmrdemo</seg>
-        <seg>libjasper.{so,a}</seg>
+        <seg>libjasper.so</seg>
         <seg>/usr/include/jasper and /usr/share/doc/jasper-&jasper-version;</seg>
 @y
         <seg>imgcmp, imginfo, jasper, jiv, tmrdemo</seg>
-        <seg>libjasper.{so,a}</seg>
-        <seg>/usr/include/jasper, /usr/share/doc/jasper-&jasper-version;</seg>
+        <seg>libjasper.so</seg>
+        <seg>/usr/include/jasper and /usr/share/doc/jasper-&jasper-version;</seg>
 @z
 
 @x

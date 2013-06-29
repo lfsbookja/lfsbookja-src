@@ -103,26 +103,26 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,  
+      <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="lynx"/>,
       <xref linkend="openldap"/>,
       <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
       <ulink url="http://www.distcache.org/">Distcache</ulink> and
-      <ulink url="http://www.lua.org/">Lua (5.1)</ulink>
+      <xref linkend="lua"/> (version 5.1)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,  
+      <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="lynx"/>,
       <xref linkend="openldap"/>,
       <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
       <ulink url="http://www.distcache.org/">Distcache</ulink>,
-      <ulink url="http://www.lua.org/">Lua (5.1)</ulink>
+      <xref linkend="lua"/> (version 5.1)
     </para>
 @z
 

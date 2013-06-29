@@ -279,20 +279,8 @@
 
 @x
         <seg>
-          fc-cache, fc-cat, fc-list, fc-match, fc-query and fc-scan
-        </seg>
-        <seg>
-          libfontconfig.so
-        </seg>
-        <seg>
-          /etc/fonts,
-          /usr/include/fontconfig,
-          /usr/share/doc/fontconfig-&fontconfig-version; and
-          /var/cache/fontconfig
-        </seg>
-@y
-        <seg>
-          fc-cache, fc-cat, fc-list, fc-match, fc-query, fc-scan
+          fc-cache, fc-cat, fc-list, fc-match, fc-pattern, fc-query,
+          fc-scan and fc-validate
         </seg>
         <seg>
           libfontconfig.so
@@ -301,6 +289,22 @@
           /etc/fonts,
           /usr/include/fontconfig,
           /usr/share/doc/fontconfig-&fontconfig-version;,
+          /usr/share/xml/fontconfig and
+          /var/cache/fontconfig
+        </seg>
+@y
+        <seg>
+          fc-cache, fc-cat, fc-list, fc-match, fc-pattern, fc-query,
+          fc-scan, fc-validate
+        </seg>
+        <seg>
+          libfontconfig.so
+        </seg>
+        <seg>
+          /etc/fonts,
+          /usr/include/fontconfig,
+          /usr/share/doc/fontconfig-&fontconfig-version;,
+          /usr/share/xml/fontconfig,
           /var/cache/fontconfig
         </seg>
 @z

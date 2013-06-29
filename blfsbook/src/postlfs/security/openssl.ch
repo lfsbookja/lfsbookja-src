@@ -79,9 +79,14 @@
 @z
 
 @x
-          Required patch:
+          Required patches:
+          <ulink url="&patch-root;/openssl-&openssl-version;-fix_parallel_build-1.patch"/>
+          and
+          <ulink url="&patch-root;/openssl-&openssl-version;-fix_pod_syntax-1.patch"/>
 @y
           必要なパッチ:
+          <ulink url="&patch-root;/openssl-&openssl-version;-fix_parallel_build-1.patch"/>,
+          <ulink url="&patch-root;/openssl-&openssl-version;-fix_pod_syntax-1.patch"/>
 @z
 
 @x

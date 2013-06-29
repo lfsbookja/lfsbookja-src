@@ -84,14 +84,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cairo"/> (required for the tests) and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="cairo"/> (required for the tests),
+      <xref linkend="gtk-doc"/> and
+      <ulink url="http://www.makotemplates.org/">Mako</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (テスト実施時に必要),
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://www.makotemplates.org/">Mako</ulink>
     </para>
 @z
 
@@ -150,8 +152,8 @@
 
 @x
         <seg>
-          g-ir-annotation-tool, g-ir-compiler, g-ir-generate and
-          g-ir-scanner
+          g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool,
+          g-ir-generate, and g-ir-scanner
         </seg>
         <seg>
           libgirepository-1.0.so
@@ -160,14 +162,13 @@
           /usr/include/gobject-introspection-1.0,
           /usr/lib/girepository-1.0,
           /usr/lib/gobject-introspection,
-          /usr/share/gir-1.0,
-          /usr/share/gobject-introspection-1.0 and
-          /usr/share/gtk-doc/html/gi
+          /usr/share/gir-1.0, and
+          /usr/share/gobject-introspection-1.0
         </seg>
 @y
         <seg>
-          g-ir-annotation-tool, g-ir-compiler, g-ir-generate,
-          g-ir-scanner
+          g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool,
+          g-ir-generate, g-ir-scanner
         </seg>
         <seg>
           libgirepository-1.0.so
@@ -177,8 +178,7 @@
           /usr/lib/girepository-1.0,
           /usr/lib/gobject-introspection,
           /usr/share/gir-1.0,
-          /usr/share/gobject-introspection-1.0,
-          /usr/share/gtk-doc/html/gi
+          /usr/share/gobject-introspection-1.0
         </seg>
 @z
 

@@ -153,13 +153,13 @@
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <!-- <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>, -->
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>, and
-      <ulink url="http://www.lua.org/">Lua</ulink>
+      <xref linkend="lua"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="pkgconfig"/>,
-      <xref linkend="gtk2"/> または <xref linkend="gtk3"/> (GUI フロントエンドをビルドするため),
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/> (GUI フロントエンドをビルドするため),
       <xref linkend="openssl"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="python2"/>,
@@ -169,7 +169,7 @@
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <!-- <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>, -->
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
-      <ulink url="http://www.lua.org/">Lua</ulink>
+      <xref linkend="lua"/>
     </para>
 @z
 

@@ -149,7 +149,7 @@
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <ulink url="http://www.iolanguage.com/about/">Io</ulink>,
-      <ulink url="http://www.lua.org/">Lua</ulink>,
+      <xref linkend="lua"/> (version 5.1),
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
       <ulink url="http://ocaml.org/">OCaml</ulink>,
       <xref linkend="php"/>,
@@ -160,14 +160,14 @@
       <xref linkend="tk"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (To Build Language Bindings)</bridgehead>
+    <bridgehead renderas="sect4">&Optional; (言語バインディング構築に必要)</bridgehead>
     <para role="optional">
       <ulink url="http://www.swig.org/">SWIG</ulink>
       (<application>SWIG</application> must be installed or no bindings will be built),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <ulink url="http://www.iolanguage.com/about/">Io</ulink>,
-      <ulink url="http://www.lua.org/">Lua</ulink>,
+      <xref linkend="lua"/> (version 5.1),
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
       <ulink url="http://ocaml.org/">OCaml</ulink>,
       <xref linkend="php"/>,

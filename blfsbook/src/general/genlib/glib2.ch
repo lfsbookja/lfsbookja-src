@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY glib2-time          "1.6 SBU (additional 5.0 SBU to run the test suite)">
+  <!ENTITY glib2-time          "1.7 SBU (additional 4.8 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-time          "1.6 SBU (テストスイート実行時は追加で 5.0 SBU)">
+  <!ENTITY glib2-time          "1.7 SBU (テストスイート実行時は追加で 4.0 SBU)">
 @z
 
 @x
@@ -199,9 +199,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>.  The
+      tests need to be run in a graphical environment.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      ただしテストはグラフィック環境下にて実行する必要があります。
 @z
 
 @x

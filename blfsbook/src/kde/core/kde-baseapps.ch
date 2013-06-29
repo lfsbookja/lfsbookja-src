@@ -140,6 +140,14 @@
 @z
 
 @x
+    <para>To test the results, issue <command>make test</command>.</para>
+@y
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    </para>
+@z
+
+@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>

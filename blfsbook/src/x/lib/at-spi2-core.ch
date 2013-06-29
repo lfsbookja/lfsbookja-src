@@ -165,32 +165,32 @@
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <!-- <segtitle>Installed Programs</segtitle> -->
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>&InstalledPrograms;</segtitle>
+      <!-- <segtitle>&InstalledPrograms;</segtitle> -->
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-        <seg>
+        <!-- <seg> Not user executable programs
           at-spi-bus-launcher and at-spi2-registryd
-        </seg>
+        </seg> -->
         <seg>
           libatspi.so
         </seg>
         <seg>
           /etc/at-spi2,
           /usr/include/at-spi-2.0,
-          /usr/lib/at-spi2-core and
+          /usr/lib/at-spi2-core, and
           /usr/share/gtk-doc/html/libatspi
         </seg>
 @y
-        <seg>
-          at-spi-bus-launcher, at-spi2-registryd
-        </seg>
+        <!-- <seg> Not user executable programs
+          at-spi-bus-launcher and at-spi2-registryd
+        </seg> -->
         <seg>
           libatspi.so
         </seg>

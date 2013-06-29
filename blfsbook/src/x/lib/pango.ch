@@ -235,7 +235,7 @@
         <seg>
           /etc/pango,
           /usr/include/pango-1.0,
-          /usr/lib/pango and
+          /usr/lib/pango, and
           /usr/share/gtk-doc/html/pango
         </seg>
 @y

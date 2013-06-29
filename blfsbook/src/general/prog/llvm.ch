@@ -94,57 +94,45 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          Required patch:
-@z
-
-@x
     <bridgehead renderas="sect3">Optional Downloads</bridgehead>
 @y
     <bridgehead renderas="sect3">Optional Downloads</bridgehead>
 @z
 
 @x
-          Clang: <ulink url="&clang-download-http;"/>
+            Download: <ulink url="&clang-download-http;"/>
 @y
-          Clang: <ulink url="&clang-download-http;"/>
+            Download: <ulink url="&clang-download-http;"/>
 @z
 
 @x
-          Clang MD5 sum: &clang-md5sum;
+            Download MD5 sum: &clang-md5sum;
 @y
-          Clang MD5 sum: &clang-md5sum;
+            Download MD5 sum: &clang-md5sum;
 @z
 
 @x
-          Clang size: &clang-size;
+            Download size: &clang-size;
 @y
-          Clang size: &clang-size;
+            Download size: &clang-size;
 @z
 
 @x
-          Compiler RT: <ulink url="&compiler-rt-download-http;"/>
+            Download: <ulink url="&compiler-rt-download-http;"/>
 @y
-          Compiler RT: <ulink url="&compiler-rt-download-http;"/>
+            Download: <ulink url="&compiler-rt-download-http;"/>
 @z
 
 @x
-          Compiler RT MD5 sum: &compiler-rt-md5sum;
+            Download MD5 sum: &compiler-rt-md5sum;
 @y
-          Compiler RT MD5 sum: &compiler-rt-md5sum;
+            Download MD5 sum: &compiler-rt-md5sum;
 @z
 
 @x
-          Compiler RT size: &compiler-rt-size;
+            Download size: &compiler-rt-size;
 @y
-          Compiler RT size: &compiler-rt-size;
+            Download size: &compiler-rt-size;
 @z
 
 @x
@@ -156,12 +144,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libffi"/>
+      <xref linkend="libffi"/> and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libffi"/>
+      <xref linkend="libffi"/>,
+      <xref linkend="python2"/>
     </para>
 @z
 
@@ -264,15 +254,17 @@
 
 @x
         <seg>
-          bugpoint, c-index-test, clang, clang++, clang-check, clang-tblgen, llc, lli,
-          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff, llvm-dis,
-          llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
-          llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld, llvm-size,
-          llvm-stress, llvm-tblgen, macho-dump and opt
+          bugpoint, c-index-test, clang, clang++, clang-check, clang-format, clang-tblgen,
+          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
+          llvm-dis, llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup,
+          llvm-nm, llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld,
+          llvm-size, llvm-stress, llvm-symbolizer, llvm-tblgen, macho-dump, opt, 
+          scan-build and scan-view
         </seg>
         <seg>
-          libclang.so, libLLVM-&llvm-version;.so, libprofile_rt.so
-          and numerous libraries in /usr/lib/llvm
+          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so, 
+          libLTO.so, libprofile_rt.so, LLVMHello.so and numerous
+          static libraries in /usr/lib
         </seg>
         <seg>
           /usr/include/clang,
@@ -280,20 +272,22 @@
           /usr/include/llvm,
           /usr/include/llvm-c,
           /usr/lib/clang,
-          /usr/lib/llvm and
-          /usr/share/doc/llvm
+          /usr/lib/clang-analyzer and
+          /usr/share/doc/llvm-&llvm-version;
         </seg>
 @y
         <seg>
-          bugpoint, c-index-test, clang, clang++, clang-check, clang-tblgen, llc, lli,
-          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff, llvm-dis,
-          llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
-          llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld, llvm-size,
-          llvm-stress, llvm-tblgen, macho-dump, opt
+          bugpoint, c-index-test, clang, clang++, clang-check, clang-format, clang-tblgen,
+          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov, llvm-diff,
+          llvm-dis, llvm-dwarfdump, llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup,
+          llvm-nm, llvm-objdump, llvm-prof, llvm-ranlib, llvm-readobj, llvm-rtdyld,
+          llvm-size, llvm-stress, llvm-symbolizer, llvm-tblgen, macho-dump, opt, 
+          scan-build, scan-view
         </seg>
         <seg>
-          libclang.so, libLLVM-&llvm-version;.so, libprofile_rt.so,
-          /usr/lib/llvm 配下に多くのライブラリ
+          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so, 
+          libLTO.so, libprofile_rt.so, LLVMHello.so,
+          /usr/lib 配下に多くのスタティックライブラリ
         </seg>
         <seg>
           /usr/include/clang,
@@ -301,8 +295,8 @@
           /usr/include/llvm,
           /usr/include/llvm-c,
           /usr/lib/clang,
-          /usr/lib/llvm,
-          /usr/share/doc/llvm
+          /usr/lib/clang-analyzer,
+          /usr/share/doc/llvm-&llvm-version;
         </seg>
 @z
 

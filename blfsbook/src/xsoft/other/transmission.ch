@@ -99,13 +99,15 @@
     <bridgehead renderas="sect4">Recommended (to build a GUI)</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/> or
-      <xref linkend="qt4"/>
+      <xref linkend="qt4"/> and
+      <xref linkend="gdb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GUI ビルド時)</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/> または
-      <xref linkend="qt4"/>
+      <xref linkend="qt4"/>,
+      <xref linkend="gdb"/>
     </para>
 @z
 

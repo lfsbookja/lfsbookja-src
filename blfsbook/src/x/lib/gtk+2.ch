@@ -302,24 +302,20 @@
 
 @x
         <seg>
-          gtk-builder-convert, gtk-demo, gtk-query-immodules-2.0 and
+          gtk-builder-convert, gtk-demo, gtk-query-immodules-2.0, and
           gtk-update-icon-cache
         </seg>
         <seg>
-          libgailutil.so, libgdk-x11-2.0.so and
+          libgailutil.so, libgdk-x11-2.0.so, and
           libgtk-x11-2.0.so
         </seg>
         <seg>
           /etc/gtk-2.0,
-          /usr/include/gail-1.0,
-          /usr/include/gtk-2.0,
-          /usr/include/gtk-unix-print-2.0,
+          /usr/include/{gail-1.0,gtk-2.0,gtk-unix-print-2.0},
           /usr/lib/gtk-2.0,
-          /usr/share/gtk-doc/html/gail-libgail-util,
-          /usr/share/gtk-doc/html/gtk,
-          /usr/share/themes/Default,
-          /usr/share/themes/Emacs and
-          /usr/share/themes/Raleigh
+          /usr/share/doc/gtk+-&gtk2-version;,
+          /usr/share/gtk-doc/html/{gail-libgail-util,gdk2,gtk2}, and
+          /usr/share/themes/{Default,Emacs,Raleigh}
         </seg>
 @y
         <seg>
@@ -332,15 +328,11 @@
         </seg>
         <seg>
           /etc/gtk-2.0,
-          /usr/include/gail-1.0,
-          /usr/include/gtk-2.0,
-          /usr/include/gtk-unix-print-2.0,
+          /usr/include/{gail-1.0,gtk-2.0,gtk-unix-print-2.0},
           /usr/lib/gtk-2.0,
-          /usr/share/gtk-doc/html/gail-libgail-util,
-          /usr/share/gtk-doc/html/gtk,
-          /usr/share/themes/Default,
-          /usr/share/themes/Emacs,
-          /usr/share/themes/Raleigh
+          /usr/share/doc/gtk+-&gtk2-version;,
+          /usr/share/gtk-doc/html/{gail-libgail-util,gdk2,gtk2},
+          /usr/share/themes/{Default,Emacs,Raleigh}
         </seg>
 @z
 

@@ -255,25 +255,31 @@
 
 @x
         <seg>
-          sudo, sudoedit, sudoreplay and visudo
+          sudo, sudoedit, sudoreplay, and visudo
         </seg>
         <seg>
-          sudoers.so and sudo_noexec.so
+          group_file.so, sudoers.so, system_group.so, and
+          sudo_noexec.so
         </seg>
         <seg>
-          /usr/lib/sudo and
-          /usr/share/doc/sudo-&sudo-version;
+          /etc/sudoers.d,
+          /usr/lib/sudo,
+          /usr/share/doc/sudo-&sudo-version;, and
+          /var/lib/sudo
         </seg>
 @y
         <seg>
           sudo, sudoedit, sudoreplay, visudo
         </seg>
         <seg>
-          sudoers.so, sudo_noexec.so
+          group_file.so, sudoers.so, system_group.so,
+          sudo_noexec.so
         </seg>
         <seg>
+          /etc/sudoers.d,
           /usr/lib/sudo,
-          /usr/share/doc/sudo-&sudo-version;
+          /usr/share/doc/sudo-&sudo-version;,
+          /var/lib/sudo
         </seg>
 @z
 
@@ -309,19 +315,4 @@
             logs created by <command>sudo</command>.
 @y
             <command>sudo</command> によって生成されたログを一覧表示したり再実行したりします。
-@z
-
-@x sudoers.so
-            is default sudo security policy module.
-@y
-            sudo のデフォルトのセキュリティポリシーモジュール。
-@z
-
-@x sudo_noexec.so
-             enables support for the "noexec" functionality which prevents
-             a dynamically-linked program being run by sudo from executing
-             another program (think shell escapes).
-@y
-            "noexec" 機能サポートを有効にします。
-            他のプログラム (シェルエスケープなどが想定される) によって sudo が動的リンクされ実行されるのを防ぎます。
 @z
