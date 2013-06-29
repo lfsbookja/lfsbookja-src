@@ -48,6 +48,48 @@
 @z
 
 @x
+      <para>2013-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to e2fsprogs-1.42.8. Fixes 
+          <ulink url="&lfs-ticket-root;3368">#3368</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.6.4. Fixes 
+          <ulink url="&lfs-ticket-root;3369">#3369</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to automake-1.14. Fixes 
+          <ulink url="&lfs-ticket-root;3366">#3366</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.9.7. Fixes
+          <ulink url="&lfs-ticket-root;3367">#3367</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-06-24</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - e2fsprogs-1.42.8 へのアップデート。
+          <ulink url="&lfs-ticket-root;3368">#3368</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-db-2.6.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3369">#3369</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - automake-1.14 へのアップデート。
+          <ulink url="&lfs-ticket-root;3366">#3366</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.9.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;3367">#3367</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-06-16</para>
       <itemizedlist>
         <listitem>

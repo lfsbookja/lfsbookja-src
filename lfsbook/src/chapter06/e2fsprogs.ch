@@ -126,13 +126,17 @@
     If you do not have significantly more RAM than this, be sure to enable
     sufficient swap space for the test. See <xref
     linkend="space-creatingfilesystem"/> and <xref linkend="space-mounting"/>
-    for details on creating and enabling swap space.</para>
+    for details on creating and enabling swap space.  Additionally,
+    three tests try to allocate a two terabyte partition and will fail
+    unless you have at least that much unused disk space available.</para>
 @y
     <para>
     E2fsprogs にて行われるテストの中には 256 MB のメモリ割り当てを行うものがあります。
     この容量を確保できるだけの RAM がない場合は、十分なスワップ領域が利用可能であることを確認してください。
     スワップ領域の生成と有効化については <xref
     linkend="space-creatingfilesystem"/>と <xref linkend="space-mounting"/>を参照してください。
+    またテストの中に、以下のようなものが三つあります。
+    そのテストとは、テラバイトの容量を有する二つのパーティションを割り当てようとし、未使用のそのようなディスクがなければテストに失敗するというものです。
     </para>
 @z
 
@@ -202,20 +206,20 @@
 @z
 
 @x
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
-        e2fsck, e2image, e2initrd_helper, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, 
+        e2fsck, e2image, e2label, e2undo, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
-        mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
+        mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, and tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so},
         libquota.a and libss.{a,so}</seg>
         <seg>/usr/include/e2p, /usr/include/et, /usr/include/ext2fs,
         /usr/include/quota, /usr/include/ss, /usr/share/et, /usr/share/ss</seg>
 @y
-        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, e2freefrag,
-        e2fsck, e2image, e2initrd_helper, e2label, e2undo, e4defrag, filefrag, fsck.ext2,
+        <seg>badblocks, chattr, compile_et, debugfs, dumpe2fs, 
+        e2fsck, e2image, e2label, e2undo, fsck.ext2,
         fsck.ext3, fsck.ext4, fsck.ext4dev, logsave, lsattr, mk_cmds, mke2fs,
-        mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, mklost+found,
+        mkfs.ext2, mkfs.ext3, mkfs.ext4, mkfs.ext4dev, 
         resize2fs, tune2fs</seg>
         <seg>libcom_err.{a,so}, libe2p.{a,so}, libext2fs.{a,so},
         libquota.a, libss.{a,so}</seg>
@@ -284,14 +288,6 @@
           </para>
 @z
 
-@x e2freefrag
-          <para> Reports free space fragmentation information</para>
-@y
-          <para>
-          空きディスク部分のフラグメンテーションに関する情報を表示します。
-          </para>
-@z
-
 @x e2fsck
           <para>Is used to check, and optionally repair <systemitem
           class="filesystem">ext2</systemitem> file systems and <systemitem
@@ -309,16 +305,6 @@
 @y
           <para>
           <systemitem class="filesystem">ext2</systemitem> ファイルシステムの重要なデータをファイルに保存します。
-          </para>
-@z
-
-@x e2initrd_helper
-          <para>Prints the FS type of a given filesystem, given either a
-          device name or label</para>
-@y
-          <para>
-          指定されたファイルシステムの FS タイプを表示します。
-          デバイス名やラベルを指定することもできます。
           </para>
 @z
 
@@ -341,20 +327,6 @@
           <para>
           デバイス上にある ext2/ext3/ext4 ファイルシステムの undo ログを再実行します。
           これは e2fsprogs プログラムが処理に失敗した際に undo を行うこともできます。
-          </para>
-@z
-
-@x e4defrag
-          <para>Online defragmenter for ext4 filesystems</para>
-@y
-          <para>ext4 ファイルシステムに対するオンラインのデフラグツール。</para>
-@z
-
-@x filefrag
-          <para>Reports on how badly fragmented a particular file might be</para>
-@y
-          <para>
-          特定のファイルのフラグメンテーション化がどれほど進んでいるかを表示します。
           </para>
 @z
 
@@ -484,19 +456,6 @@
           デフォルトでは <systemitem
           class="filesystem">ext4</systemitem> ファイルシステム開発版を生成します。
           これは <command>mke2fs</command> へのハードリンクです。
-          </para>
-@z
-
-@x mklost-found
-          <para>Used to create a <filename class="directory">lost+found</filename>
-          directory on an <systemitem class="filesystem">ext2</systemitem> file
-          system; it pre-allocates disk blocks to this directory to lighten the
-          task of <command>e2fsck</command></para>
-@y
-          <para>
-          <systemitem class="filesystem">ext2</systemitem> ファイルシステム上に <filename
-          class="directory">lost+found</filename> ディレクトリを生成するために利用します。
-          このコマンドはそのディレクトリに対してあらかじめディスクブロックの情報を割り当てておくことで、<command>e2fsck</command> コマンドの負荷を軽減します。
           </para>
 @z
 
