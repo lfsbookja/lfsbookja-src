@@ -42,6 +42,47 @@
 @z
 
 @x
+      <para>June 29th, 2013</para>
+@y
+      <para>2013/06/29</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gst-plugins-{base,good,bad,ugly}-1.1.1.</para>
+@y
+          <para>[bdubbs] - gst-plugins-{base,good,bad,ugly}-1.1.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gstreamer-1.1.1.</para>
+@y
+          <para>[bdubbs] - gstreamer-1.1.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gpgme-1.4.2.</para>
+@y
+          <para>[bdubbs] - gpgme-1.4.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gtkmm-3.8.1.</para>
+@y
+          <para>[bdubbs] - gtkmm-3.8.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gtkmm-2.24.4.</para>
+@y
+          <para>[bdubbs] - gtkmm-2.24.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to pangomm-2.34.0.</para>
+@y
+          <para>[bdubbs] - pangomm-2.34.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to gtk+-3.8.2.</para>
+@y
+          <para>[bdubbs] - gtk+-3.8.2 へのアップデート。</para>
+@z
+
+@x
       <para>June 28th, 2013</para>
 @y
       <para>2013/06/28</para>

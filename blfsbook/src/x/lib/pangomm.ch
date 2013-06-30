@@ -142,7 +142,7 @@
         <seg>
           /usr/include/pangomm-1.4,
           /usr/lib/pangomm-1.4,
-          /usr/share/devhelp/books/pangomm-1.4 and
+          /usr/share/devhelp/books/pangomm-1.4, and
           /usr/share/doc/pangomm-1.4
         </seg>
 @y

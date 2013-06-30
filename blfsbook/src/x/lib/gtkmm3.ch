@@ -144,7 +144,7 @@
           /usr/include/gtkmm-3.0,
           /usr/lib/gdkmm-3.0,
           /usr/lib/gtkmm-3.0,
-          /usr/share/devhelp/books/gtkmm-3.0 and
+          /usr/share/devhelp/books/gtkmm-3.0, and
           /usr/share/doc/gtkmm-3.0
         </seg>
 @y

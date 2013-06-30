@@ -149,7 +149,7 @@
           /usr/include/gtkmm-2.4,
           /usr/lib/gdkmm-2.4,
           /usr/lib/gtkmm-2.4,
-          /usr/share/devhelp/books/gtkmm-2.4 and
+          /usr/share/devhelp/books/gtkmm-2.4, and
           /usr/share/doc/gtkmm-2.4
         </seg>
 @y
