@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-06-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to man-db-2.6.5. Fixes 
+          <ulink url="&lfs-ticket-root;3370">#3370</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.10. Fixes 
+          <ulink url="&lfs-ticket-root;3371">#3371</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xz-5.0.5. Fixes 
+          <ulink url="&lfs-ticket-root;3372">#3372</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-06-30</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - man-db-2.6.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3370">#3370</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.10 へのアップデート。
+          <ulink url="&lfs-ticket-root;3371">#3371</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - xz-5.0.5 へのアップデート。
+          <ulink url="&lfs-ticket-root;3372">#3372</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-06-24</para>
       <itemizedlist>
         <listitem>
