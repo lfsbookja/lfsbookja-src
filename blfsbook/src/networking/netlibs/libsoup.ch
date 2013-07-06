@@ -81,30 +81,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib-networking"/> and
-      <xref linkend="libxml2"/>
+      <xref linkend="glib-networking"/>,
+      <xref linkend="libxml2"/> and
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib-networking"/>,
-      <xref linkend="libxml2"/>
+      <xref linkend="libxml2"/>,
+      <xref linkend="sqlite"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgnome-keyring"/> and 
-      <xref linkend="sqlite"/>
+      <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgnome-keyring"/>,
-      <xref linkend="sqlite"/>
+      <xref linkend="gobject-introspection"/>
     </para>
 @z
 

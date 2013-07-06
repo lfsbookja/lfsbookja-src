@@ -17,7 +17,8 @@ CHANGE_FILES = \
 	libsoup.ch         \
 	libtirpc.ch        \
 	neon.ch            \
-	netlibs.ch
+	netlibs.ch         \
+	serf.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -42,3 +43,4 @@ libsoup.xml:          $(BOOKdir)/$@ $(srcdir)/libsoup.ch
 libtirpc.xml:         $(BOOKdir)/$@ $(srcdir)/libtirpc.ch
 neon.xml:             $(BOOKdir)/$@ $(srcdir)/neon.ch
 netlibs.xml:          $(BOOKdir)/$@ $(srcdir)/netlibs.ch
+serf.xml:             $(BOOKdir)/$@ $(srcdir)/serf.ch

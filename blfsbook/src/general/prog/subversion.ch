@@ -86,17 +86,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="apr-util"/>,
-      <xref linkend="neon"/> or
-      <ulink url="http://code.google.com/p/serf/">serf</ulink>, and
+      <xref linkend="apr-util"/> and
       <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="apr-util"/>,
-      <xref linkend="neon"/> または
-      <ulink url="http://code.google.com/p/serf/">serf</ulink>,
       <xref linkend="sqlite"/>
     </para>
 @z
@@ -119,12 +115,11 @@
       <xref linkend="apache"/>,
       <xref linkend="db"/>,
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="dbus-glib"/>,
+      <xref linkend="dbus"/>,
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
-      <xref linkend="openssl"/>,
       <xref linkend="python2"/> (required to run the test suite) and
-      <xref linkend="ruby"/> (version 1.8.x)
+      <xref linkend="ruby"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -132,12 +127,11 @@
       <xref linkend="apache"/>,
       <xref linkend="db"/>,
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="dbus-glib"/>,
+      <xref linkend="dbus"/>,
       <xref linkend="libgnome-keyring"/>,
       <xref linkend="kdelibs"/> (<ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> サポートのため),
-      <xref linkend="openssl"/>,
       <xref linkend="python2"/> (テストスイート実行に必要),
-      <xref linkend="ruby"/> (version 1.8.x)
+      <xref linkend="ruby"/>
     </para>
 @z
 
@@ -269,42 +263,42 @@
 
 @x
         <seg>
-          svn, svnadmin, svndumpfilter, svnlook, svnrdump, svnserve, svnsync and
-          svnversion
-        </seg>
-        <seg>
-          libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
-          and mod_authz_svn.so <application>Apache HTTP</application> DSO
-          modules and various <application>Perl</application> and
-          <application>Python</application>
-          <!-- <application>Ruby</application> --> modules.
-        </seg>
-        <seg>
-          /usr/include/subversion-1,
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
-          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (al),
-          /usr/lib/svn-javahl (optional),
-          /usr/lib/svn-python (optional) and
-          /usr/share/doc/subversion-&subversion-version;
-        </seg>
-@y
-        <seg>
-          svn, svnadmin, svndumpfilter, svnlook, svnrdump, svnserve, svnsync and
-          svnversion
+          svn, svnadmin, svndumpfilter, svnlook, svnmucc, svnrdump, svnserve,
+          svnsync, and svnversion
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
           and mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application>,
-          <application>Python</application>
-          <!-- <application>Ruby</application> --> modules.
+          <application>Python</application> and
+          <application>Ruby</application> modules.
         </seg>
         <seg>
           /usr/include/subversion-1,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
           /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
-          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (al),
+          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (optional),
+          /usr/lib/svn-javahl (optional),
+          /usr/lib/svn-python (optional), and
+          /usr/share/doc/subversion-&subversion-version;
+        </seg>
+@y
+        <seg>
+          svn, svnadmin, svndumpfilter, svnlook, svnmucc, svnrdump, svnserve,
+          svnsync, svnversion
+        </seg>
+        <seg>
+          libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
+          and mod_authz_svn.so <application>Apache HTTP</application> DSO
+          modules and various <application>Perl</application>,
+          <application>Python</application>,
+          <application>Ruby</application> modules.
+        </seg>
+        <seg>
+          /usr/include/subversion-1,
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/auto/SVN (optional),
+          /usr/lib/perl5/site_perl/&lfs-perl-version;/SVN (optional),
+          /usr/lib/ruby/site_ruby/&lt;x.y&gt;/i686-linux/svn (optional),
           /usr/lib/svn-javahl (optional),
           /usr/lib/svn-python (optional),
           /usr/share/doc/subversion-&subversion-version;

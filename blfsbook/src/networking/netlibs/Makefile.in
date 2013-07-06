@@ -194,7 +194,8 @@ CHANGE_FILES = \
 	libsoup.ch         \
 	libtirpc.ch        \
 	neon.ch            \
-	netlibs.ch
+	netlibs.ch         \
+	serf.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -402,6 +403,7 @@ libsoup.xml:          $(BOOKdir)/$@ $(srcdir)/libsoup.ch
 libtirpc.xml:         $(BOOKdir)/$@ $(srcdir)/libtirpc.ch
 neon.xml:             $(BOOKdir)/$@ $(srcdir)/neon.ch
 netlibs.xml:          $(BOOKdir)/$@ $(srcdir)/netlibs.ch
+serf.xml:             $(BOOKdir)/$@ $(srcdir)/serf.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

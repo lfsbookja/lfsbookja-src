@@ -160,35 +160,39 @@
 
 @x
         <seg>
-          vala, vala-0.18, valac, valac-0.18, vala-gen-introspect, 
-          vala-gen-introspect-0.18, vapicheck, vapicheck-0.18, 
-          vapigen and vapigen-0.18
+          vala, vala-&vala-major-version;, valac,
+          valac-&vala-major-version;, vala-gen-introspect,
+          vala-gen-introspect-&vala-major-version;,
+          vapicheck, vapicheck-&vala-major-version;,
+          vapigen and vapigen-&vala-major-version;
         </seg>
         <seg>
-          libvala-0.18.so
+          libvala-&vala-major-version;.so
         </seg>
         <seg>
-          /usr/include/vala-0.18,
-          /usr/lib/vala-0.18,
-          /usr/share/devhelp/books/vala-0.18,
+          /usr/include/vala-&vala-major-version;,
+          /usr/lib/vala-&vala-major-version;,
+          /usr/share/devhelp/books/vala-&vala-major-version;,
           /usr/share/vala and
-          /usr/share/vala-0.18
+          /usr/share/vala-&vala-major-version;
         </seg>
 @y
         <seg>
-          vala, vala-0.18, valac, valac-0.18, vala-gen-introspect, 
-          vala-gen-introspect-0.18, vapicheck, vapicheck-0.18, 
-          vapigen, vapigen-0.18
+          vala, vala-&vala-major-version;, valac,
+          valac-&vala-major-version;, vala-gen-introspect,
+          vala-gen-introspect-&vala-major-version;,
+          vapicheck, vapicheck-&vala-major-version;,
+          vapigen, vapigen-&vala-major-version;
         </seg>
         <seg>
-          libvala-0.18.so
+          libvala-&vala-major-version;.so
         </seg>
         <seg>
-          /usr/include/vala-0.18,
-          /usr/lib/vala-0.18,
-          /usr/share/devhelp/books/vala-0.18,
+          /usr/include/vala-&vala-major-version;,
+          /usr/lib/vala-&vala-major-version;,
+          /usr/share/devhelp/books/vala-&vala-major-version;,
           /usr/share/vala,
-          /usr/share/vala-0.18
+          /usr/share/vala-&vala-major-version;
         </seg>
 @z
 

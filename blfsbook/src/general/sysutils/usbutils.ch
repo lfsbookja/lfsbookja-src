@@ -191,7 +191,7 @@
 
 @x
         <seg>
-          lsusb, update-usbids, usb-devices and usbhid-dump
+          lsusb, update-usbids, usb-devices, and usbhid-dump
         </seg>
         <seg>
           None

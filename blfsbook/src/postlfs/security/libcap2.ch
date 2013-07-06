@@ -177,9 +177,9 @@
 @z
 
 @x capsh
-          <para>is a shell wrapper to exploredand constraine capability support.</para>
+          <para>is a shell wrapper to explore and constrain capability support.</para>
 @y
-          <para>is a shell wrapper to exploredand constraine capability support.</para>
+          <para>is a shell wrapper to explore and constrain capability support.</para>
 @z
 
 @x getcap

@@ -94,14 +94,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk2"/> and
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk2"/> (For the Theming Engine) and
+      <xref linkend="gtk3"/> (For the <command>rsvg-view-3</command>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk2"/>,
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk2"/> (For the Theming Engine),
+      <xref linkend="gtk3"/> (For the <command>rsvg-view-3</command>)
     </para>
 @z
 
@@ -122,13 +122,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/> and
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -153,9 +151,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>.
+      Some tests are known to fail for unknown reasons.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      テストの中に失敗するものがありますが、原因は不明です。
 @z
 
 @x

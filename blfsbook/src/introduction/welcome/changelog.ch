@@ -42,6 +42,114 @@
 @z
 
 @x
+      <para>July 5th, 2013</para>
+@y
+      <para>2013/07/05</para>
+@z
+
+@x
+      <para>July 4th, 2013</para>
+@y
+      <para>2013/07/04</para>
+@z
+@x
+          <para>[igor] - libmad: x84_64 and optimization fixes (thanks Mykyta
+            Iziumtsev).</para>
+@y
+          <para>[igor] - libmad: x84_64 と最適化について修正。
+            (Mykyta Iziumtsev に感謝。)</para>
+@z
+
+@x
+      <para>July 3rd, 2013</para>
+@y
+      <para>2013/07/03</para>
+@z
+@x
+          <para>[ken] - libXv-1.0.9 and libXi-1.7.2.</para>
+@y
+          <para>[ken] - libXv-1.0.9, libXi-1.7.2.</para>
+@z
+
+@x
+      <para>July 2nd, 2013</para>
+@y
+      <para>2013/07/02</para>
+@z
+@x
+          <para>[krejzi] - Added Serf 1.2.1.</para>
+@y
+          <para>[krejzi] - Serf 1.2.1 追加。</para>
+@z
+
+@x
+      <para>June 30th, 2013</para>
+@y
+      <para>2013/06/30</para>
+@z
+@x
+          <para>[bdubbs] - Updated to subversion-1.8.0.</para>
+@y
+          <para>[bdubbs] - subversion-1.8.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to qemu-1.5.1.</para>
+@y
+          <para>[bdubbs] - qemu-1.5.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to poppler-0.22.5.</para>
+@y
+          <para>[bdubbs] - poppler-0.22.5 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to libusb-compat-0.1.5.</para>
+@y
+          <para>[bdubbs] - libusb-compat-0.1.5 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to usbutils-007.</para>
+@y
+          <para>[bdubbs] - usbutils-007 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to nss-3.15.</para>
+@y
+          <para>[bdubbs] - nss-3.15 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to nspr-4.10.</para>
+@y
+          <para>[bdubbs] - nspr-4.10 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to libgpg-error-1.12.</para>
+@y
+          <para>[bdubbs] - libgpg-error-1.12 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to libassuan-2.1.1.</para>
+@y
+          <para>[bdubbs] - libassuan-2.1.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to iso-codes-3.43.</para>
+@y
+          <para>[bdubbs] - iso-codes-3.43 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Reverted gst-plugins-{base,good,bad,ugly} to stable 
+          versions.</para>
+@y
+          <para>[bdubbs] - gst-plugins-{base,good,bad,ugly} を安定版に戻す。</para>
+@z
+@x
+          <para>[bdubbs] - Reverted gstreamer to stable version.</para>
+@y
+          <para>[bdubbs] - gstreamer を安定版に戻す。</para>
+@z
+
+@x
       <para>June 29th, 2013</para>
 @y
       <para>2013/06/29</para>

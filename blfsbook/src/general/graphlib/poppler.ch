@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY poppler-buildsize          "135 MB (excluding the encoding data) and
-           145 MB (including the encoding data)">
+  <!ENTITY poppler-buildsize          "112 MB (excluding the encoding data) and
+           122 MB (including the encoding data)">
 @y
-  <!ENTITY poppler-buildsize          "135 MB (エンコーディングデータを除いた場合),
-           145 MB (エンコーディングデータを含めた場合)">
+  <!ENTITY poppler-buildsize          "112 MB (エンコーディングデータを除いた場合),
+           122 MB (エンコーディングデータを含めた場合)">
 @z
 
 @x
@@ -259,17 +259,17 @@
         <seg>
           pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate,
           pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
-          pdfunite and poppler-glib-demo
+          pdfunite, and poppler-glib-demo
         </seg>
         <seg>
           libpoppler.so, libpoppler-cpp.so,
-          libpoppler-glib.so and
+          libpoppler-glib.so, and
           libpoppler-qt4.so
         </seg>
         <seg>
           /usr/include/poppler,
           /usr/share/doc/poppler-&poppler-version;,
-          /usr/share/gtk-doc/html/poppler and
+          /usr/share/gtk-doc/html/poppler, and
           /usr/share/poppler
         </seg>
 @y

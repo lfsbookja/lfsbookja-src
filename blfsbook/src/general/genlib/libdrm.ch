@@ -229,7 +229,7 @@
 @z
 
 @x libkms.so
-            contains API functions necessary for kernel modesetting.
+            contains API functions for kernel mode setting abstraction.
 @y
-            カーネルのモード設定 (kernel modesetting) に必要な API 関数を提供します。
+            カーネルのモード設定 (kernel mode setting abstraction) に必要な API 関数を提供します。
 @z
