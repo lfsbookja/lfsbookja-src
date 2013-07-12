@@ -48,6 +48,75 @@
 @z
 
 @x
+      <para>2013-07-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to kmod-14.  Fixes
+          <ulink url="&lfs-ticket-root;3373">#3373</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-205.  Fixes
+          <ulink url="&lfs-ticket-root;3375">#3375</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.52.  Fixes
+          <ulink url="&lfs-ticket-root;3376">#3376</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tzdata-2013d.  Fixes
+          <ulink url="&lfs-ticket-root;3377">#3377</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gettext-0.18.3.  Fixes
+          <ulink url="&lfs-ticket-root;3378">#3378</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-07-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - kmod-14 へのアップデート。
+          <ulink url="&lfs-ticket-root;3373">#3373</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - systemd-205 へのアップデート。
+          <ulink url="&lfs-ticket-root;3375">#3375</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.52 へのアップデート。
+          <ulink url="&lfs-ticket-root;3376">#3376</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - tzdata-2013d へのアップデート。
+          <ulink url="&lfs-ticket-root;3377">#3377</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - gettext-0.18.3 へのアップデート。
+          <ulink url="&lfs-ticket-root;3378">#3378</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-07-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Change the --enable-kernel parameter 
+          in glibc to 2.6.34 which is the minimum needed by
+          the current udev packages.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-07-06</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc にて --enable-kernel パラメーターを 2.6.34 に。
+          現状の udev パッケージ にて必要となる最小バージョンを採用。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-06-30</para>
       <itemizedlist>
         <listitem>
