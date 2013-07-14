@@ -80,13 +80,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">i
-      <xref linkend="libffi"/> 
+    <para role="optional">
+      <xref linkend="libffi"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libffi"/> 
+      <xref linkend="libffi"/>
     </para>
 @z
 

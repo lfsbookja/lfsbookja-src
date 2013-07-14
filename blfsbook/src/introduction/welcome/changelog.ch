@@ -42,6 +42,168 @@
 @z
 
 @x
+      <para>July 13th, 2013</para>
+@y
+      <para>2013/07/13</para>
+@z
+@x
+          <para>[bdubbs] - Update to libidn-1.28.</para>
+@y
+          <para>[bdubbs] - libidn-1.28 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to libgsf-1.14.26.</para>
+@y
+          <para>[bdubbs] - libgsf-1.14.26 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to iso-codes-3.44.</para>
+@y
+          <para>[bdubbs] - iso-codes-3.44 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gmime-2.6.16.</para>
+@y
+          <para>[bdubbs] - gmime-2.6.16 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to exempi-2.2.1.</para>
+@y
+          <para>[bdubbs] - exempi-2.2.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to boost_1_54_0.</para>
+@y
+          <para>[bdubbs] - boost_1_54_0 へのアップデート。</para>
+@z
+
+@x
+      <para>July 12th, 2013</para>
+@y
+      <para>2013/07/12</para>
+@z
+@x
+          <para>[bdubbs] - Update to zsh-5.0.2.</para>
+@y
+          <para>[bdubbs] - zsh-5.0.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to emacs-24.3.</para>
+@y
+          <para>[bdubbs] - emacs-24.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to ed-1.9.</para>
+@y
+          <para>[bdubbs] - ed-1.9 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to xfsprogs-3.1.11.</para>
+@y
+          <para>[bdubbs] - xfsprogs-3.1.11 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gptfdisk-0.8.7.</para>
+@y
+          <para>[bdubbs] - gptfdisk-0.8.7 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to fuse-2.9.3.</para>
+@y
+          <para>[bdubbs] - fuse-2.9.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to stunnel-4.56.</para>
+@y
+          <para>[bdubbs] - stunnel-4.56 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to p11-kit-0.18.4.</para>
+@y
+          <para>[bdubbs] - p11-kit-0.18.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to nettle-2.7.1.</para>
+@y
+          <para>[bdubbs] - nettle-2.7.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to MIT Kerberos V5-1.11.3.</para>
+@y
+          <para>[bdubbs] - MIT Kerberos V5-1.11.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to iptables-1.4.19.1.</para>
+@y
+          <para>[bdubbs] - iptables-1.4.19.1 へのアップデート。</para>
+@z
+
+@x
+      <para>July 11th, 2013</para>
+@y
+      <para>2013/07/11</para>
+@z
+@x
+          <para>[bdubbs] - Updated to cracklib-2.9.0.</para>
+@y
+          <para>[bdubbs] - cracklib-2.9.0 へのアップデート。</para>
+@z
+
+@x
+      <para>July 10th, 2013</para>
+@y
+      <para>2013/07/10</para>
+@z
+@x
+          <para>[igor] - Added acpid-2.0.19.</para>
+@y
+          <para>[igor] - acpid-2.0.19 追加。</para>
+@z
+@x
+          <para>[igor] - Added pm-utils-1.4.1.</para>
+@y
+          <para>[igor] - pm-utils-1.4.1 追加。</para>
+@z
+
+@x
+      <para>July 8th, 2013</para>
+@y
+      <para>2013/07/08</para>
+@z
+@x
+          <para>[igor] - alsa-lib-1.0.27.2 and alsa-utils-1.0.27.1.</para>
+@y
+          <para>[igor] - alsa-lib-1.0.27.2, alsa-utils-1.0.27.1.</para>
+@z
+
+@x
+      <para>July 7th, 2013</para>
+@y
+      <para>2013/07/07</para>
+@z
+@x
+          <para>[igor] - libxcb: Automake fix and XKB extension.</para>
+@y
+          <para>[igor] - libxcb: Automake 修正と XKB の拡張。</para>
+@z
+@x
+          <para>[ken] - fixes for firefox built on xulrunner.</para>
+@y
+          <para>[ken] - xulrunner での firefox ビルドの修正。</para>
+@z
+
+@x
+      <para>July 6th, 2013</para>
+@y
+      <para>2013/07/06</para>
+@z
+@x
+          <para>[ken] - firefox- and xulrunner-22.0.</para>
+@y
+          <para>[ken] - firefox-, xulrunner-22.0.</para>
+@z
+
+@x
       <para>July 5th, 2013</para>
 @y
       <para>2013/07/05</para>

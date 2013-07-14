@@ -180,15 +180,29 @@
 @z
 
 @x
-        <seg>ctags, ebrowse, emacs, emacsclient, etags, grep-changelog,
-        and rcs-checkin</seg>
+        <seg>ctags, 
+             ebrowse, 
+             emacs, 
+             emacsclient, 
+             etags, 
+             grep-changelog, and 
+             rcs-checkin</seg>
         <seg>None</seg>
-        <seg>/usr/lib/emacs, /usr/share/emacs and /var/games/emacs</seg>
+        <seg>/usr/lib/emacs, 
+             /usr/share/emacs, and 
+             /var/games/emacs</seg>
 @y
-        <seg>ctags, ebrowse, emacs, emacsclient, etags, grep-changelog,
-        rcs-checkin</seg>
+        <seg>ctags, 
+             ebrowse, 
+             emacs, 
+             emacsclient, 
+             etags, 
+             grep-changelog,
+             rcs-checkin</seg>
         <seg>&None;</seg>
-        <seg>/usr/lib/emacs, /usr/share/emacs, /var/games/emacs</seg>
+        <seg>/usr/lib/emacs, 
+             /usr/share/emacs,
+             /var/games/emacs</seg>
 @z
 
 @x

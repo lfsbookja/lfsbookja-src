@@ -180,7 +180,7 @@
 
 @x
         <seg>
-          fusermount, mount.fuse and ulockmgr_server
+          fusermount, mount.fuse, and ulockmgr_server
         </seg>
         <seg>
           libfuse.so and libulockmgr.so

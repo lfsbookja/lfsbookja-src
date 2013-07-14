@@ -7,6 +7,7 @@
 ##
 BOOKdir = @abs_bookdir@/general/sysutils
 CHANGE_FILES = \
+	acpid.ch         \
 	apache-ant.ch    \
 	at.ch            \
 	autofs.ch        \
@@ -27,6 +28,7 @@ CHANGE_FILES = \
 	obexd.ch         \
 	obex-data-server.ch \
 	pciutils.ch      \
+	pm-utils.ch      \
 	raptor.ch        \
 	rasqal.ch        \
 	redland.ch       \
@@ -58,6 +60,7 @@ all: $(top_builddir)/$(CTIE) $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+acpid.xml:         $(BOOKdir)/$@ $(srcdir)/acpid.ch
 apache-ant.xml:    $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
 at.xml:            $(BOOKdir)/$@ $(srcdir)/at.ch
 autofs.xml:        $(BOOKdir)/$@ $(srcdir)/autofs.ch
@@ -78,6 +81,7 @@ mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
 obexd.xml:         $(BOOKdir)/$@ $(srcdir)/obexd.ch
 obex-data-server.xml: $(BOOKdir)/$@ $(srcdir)/obex-data-server.ch
 pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch
+pm-utils.xml:      $(BOOKdir)/$@ $(srcdir)/pm-utils.ch
 raptor.xml:        $(BOOKdir)/$@ $(srcdir)/raptor.ch
 rasqal.xml:        $(BOOKdir)/$@ $(srcdir)/rasqal.ch
 redland.xml:       $(BOOKdir)/$@ $(srcdir)/redland.ch

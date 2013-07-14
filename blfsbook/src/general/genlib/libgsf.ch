@@ -174,7 +174,7 @@
 
 @x
         <seg>
-          gsf, gsf-office-thumbnailer and gsf-vba-dump
+          gsf, gsf-office-thumbnailer, and gsf-vba-dump
         </seg>
         <seg>
           libgsf-1.so
@@ -185,7 +185,7 @@
         </seg>
 @y
         <seg>
-          gsf, gsf-office-thumbnailer, gsf-vba-dump
+          gsf, gsf-office-thumbnailer, and gsf-vba-dump
         </seg>
         <seg>
           libgsf-1.so

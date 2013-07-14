@@ -147,11 +147,11 @@
 @x
         <seg>sndfile-resample</seg>
         <seg>libsamplerate.so</seg>
-        <seg>/usr/share/doc/libsamplerate0-dev</seg>
+        <seg>/usr/share/doc/libsamplerate-&libsamplerate-version;</seg>
 @y
         <seg>sndfile-resample</seg>
         <seg>libsamplerate.so</seg>
-        <seg>/usr/share/doc/libsamplerate0-dev</seg>
+        <seg>/usr/share/doc/libsamplerate-&libsamplerate-version;</seg>
 @z
 
 @x

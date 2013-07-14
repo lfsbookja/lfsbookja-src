@@ -109,6 +109,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para>
+      <xref linkend="acpid"/> (runtime),
       <xref linkend="doxygen"/> (to build API documentation),
       <xref linkend="fop"/>, (to build documentation),
       <xref linkend="gs"/> (to build documentation) and
@@ -117,6 +118,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para>
+      <xref linkend="acpid"/> (実行時),
       <xref linkend="doxygen"/> (API ドキュメント生成のため),
       <xref linkend="fop"/> (ドキュメント生成のため),
       <xref linkend="gs"/> (ドキュメント生成のため),

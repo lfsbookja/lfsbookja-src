@@ -150,15 +150,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <ulink url="http://excess.org/urwid/">Urwid</ulink> (for the Curses-based frontend),
-    <ulink url="http://pm-utils.freedesktop.org/wiki/">pm-utils</ulink> (for suspend/resume integration) and
+    <xref linkend="pm-utils"/> (for suspend/resume integration),
+    <ulink url="http://excess.org/urwid/">Urwid</ulink> (for the Curses-based frontend) and
     <ulink url="http://babel.edgewall.org/">Babel</ulink> (for internationalization)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+    <xref linkend="pm-utils"/> (for suspend/resume integration),
     <ulink url="http://excess.org/urwid/">Urwid</ulink> (Curses ベースのフロントエンドのため),
-    <ulink url="http://pm-utils.freedesktop.org/wiki/">pm-utils</ulink> (for suspend/resume integration) and
     <ulink url="http://babel.edgewall.org/">Babel</ulink> (国際化のため)
     </para>
 @z

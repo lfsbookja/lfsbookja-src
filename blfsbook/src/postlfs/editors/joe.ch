@@ -149,13 +149,27 @@
 @z
 
 @x
-        <seg>jmacs, joe, jpico, jstar, rjoe, and termidx</seg>
+        <seg>jmacs, 
+             joe, 
+             jpico, 
+             jstar, 
+             rjoe, and 
+             termidx</seg>
         <seg>None</seg>
-        <seg>/etc/joe, /usr/share/joe, and /usr/share/doc/joe</seg>
+        <seg>/etc/joe, 
+             /usr/share/joe, and 
+             /usr/share/doc/joe</seg>
 @y
-        <seg>jmacs, joe, jpico, jstar, rjoe, termidx</seg>
+        <seg>jmacs, 
+             joe, 
+             jpico, 
+             jstar, 
+             rjoe,
+             termidx</seg>
         <seg>&None;</seg>
-        <seg>/etc/joe, /usr/share/joe, /usr/share/doc/joe</seg>
+        <seg>/etc/joe, 
+             /usr/share/joe,
+             /usr/share/doc/joe</seg>
 @z
 
 @x

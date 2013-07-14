@@ -176,7 +176,7 @@
           /usr/include/p11-kit-1,
           /usr/lib/p11-kit,
           /usr/lib/pkcs11,
-          /usr/share/gtk-doc/html/p11-kit and
+          /usr/share/gtk-doc/html/p11-kit, and
           /usr/share/p11-kit
         </seg>
 @y
@@ -184,7 +184,7 @@
           p11-kit
         </seg>
         <seg>
-          libp11-kit.so, p11-kit-proxy.so
+          libp11-kit.so and p11-kit-proxy.so
         </seg>
         <seg>
           /etc/pkcs11,

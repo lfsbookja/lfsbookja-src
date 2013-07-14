@@ -233,7 +233,7 @@
 @z
 
 @x
-      <command>for library in libmozalloc.so libmozjs.so libxpcom.so libxul.so ...
+      <command>for library in libmozalloc.so libmozjs.so libxul.so ...
       </command>: The libraries shipped with this package are installed into
       <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make
@@ -243,7 +243,7 @@
       <filename class="directory">/usr/lib/xulrunner-devel-&xulrunner-version;/sdk/lib</filename>
       with symlinks in order to save some space.
 @y
-      <command>for library in libmozalloc.so libmozjs.so libxpcom.so libxul.so ...
+      <command>for library in libmozalloc.so libmozjs.so libxul.so ...
       </command>: The libraries shipped with this package are installed into
       <filename class="directory">/usr/lib/xulrunner-&xulrunner-version;</filename>
       which means they will not be found at runtime. These commands make

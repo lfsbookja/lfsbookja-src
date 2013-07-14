@@ -354,13 +354,13 @@
         <seg>stunnel and stunnel3</seg>
         <seg>libstunnel.so</seg>
         <seg>/etc/stunnel, /usr/lib/stunnel,
-        /usr/share/doc/stunnel-&stunnel-version; and
+        /usr/share/doc/stunnel-&stunnel-version;, and
         /var/lib/stunnel</seg>
 @y
-        <seg>stunnel and stunnel3</seg>
+        <seg>stunnel, stunnel3</seg>
         <seg>libstunnel.so</seg>
         <seg>/etc/stunnel, /usr/lib/stunnel,
-        /usr/share/doc/stunnel-&stunnel-version; and
+        /usr/share/doc/stunnel-&stunnel-version;,
         /var/lib/stunnel</seg>
 @z
 
