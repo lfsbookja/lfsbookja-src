@@ -8,14 +8,12 @@
 BOOKdir = @abs_bookdir@/general/sysutils
 CHANGE_FILES = \
 	acpid.ch         \
-	apache-ant.ch    \
 	at.ch            \
 	autofs.ch        \
 	bluez.ch         \
 	colord.ch        \
 	cpio.ch          \
 	dbus.ch          \
-	dbus-bindings.ch \
 	eject.ch         \
 	fcron.ch         \
 	gpm.ch           \
@@ -61,14 +59,12 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 acpid.xml:         $(BOOKdir)/$@ $(srcdir)/acpid.ch
-apache-ant.xml:    $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
 at.xml:            $(BOOKdir)/$@ $(srcdir)/at.ch
 autofs.xml:        $(BOOKdir)/$@ $(srcdir)/autofs.ch
 bluez.xml:         $(BOOKdir)/$@ $(srcdir)/bluez.ch
 colord.xml:        $(BOOKdir)/$@ $(srcdir)/colord.ch
 cpio.xml:          $(BOOKdir)/$@ $(srcdir)/cpio.ch
 dbus.xml:          $(BOOKdir)/$@ $(srcdir)/dbus.ch
-dbus-bindings.xml: $(BOOKdir)/$@ $(srcdir)/dbus-bindings.ch
 eject.xml:         $(BOOKdir)/$@ $(srcdir)/eject.ch
 fcron.xml:         $(BOOKdir)/$@ $(srcdir)/fcron.ch
 gpm.xml:           $(BOOKdir)/$@ $(srcdir)/gpm.ch

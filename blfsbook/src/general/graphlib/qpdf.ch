@@ -158,7 +158,7 @@
 
 @x
         <seg>
-          fix-qdf, qpdf and zlib-deflate
+          fix-qdf, qpdf, and zlib-flate
         </seg>
         <seg>
           libqpdf.so
@@ -169,7 +169,7 @@
         </seg>
 @y
         <seg>
-          fix-qdf, qpdf, zlib-deflate
+          fix-qdf, qpdf, zlib-flate
         </seg>
         <seg>
           libqpdf.so

@@ -166,10 +166,10 @@
 @z
 
 @x
-    <para>This package does not have a working testsuite.</para>
+    <para>To test the results, issue: <command>make check</command>.</para>
 @y
     <para>
-    &notTestSuite;
+    ビルド結果をテストする場合は <command>make check</command> を実行します。
     </para>
 @z
 
@@ -198,17 +198,17 @@
 @z
 
 @x
-        <seg>gtkdoc-check, gtkdoc-depscan, gtkdoc-fixxref, gtkdocize,
-        gtkdoc-mkdb, gtkdoc-mkhtml, gtkdoc-mkman, gtkdoc-mkpdf, gtkdoc-mktmpl,
-        gtkdoc-rebase, gtkdoc-scan, gtkdoc-scangobj, and gtkdoc-scanobj</seg>
+        <seg>gtkdoc-check,  gtkdoc-depscan, gtkdoc-fixxref,      gtkdocize,
+             gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf, gtkdoc-mktmpl,
+             gtkdoc-rebase, gtkdoc-scan,    gtkdoc-scangobj, and gtkdoc-scanobj</seg>
         <seg>None</seg>
-        <seg>/usr/share/{gnome/help/gtk-doc-manual/*,gtk-doc/data,omf/gtk-doc-manual,sgml/gtk-doc}</seg>
+        <seg>/usr/share/{gtk-doc,help,sgml/gtk-doc} </seg>
 @y
-        <seg>gtkdoc-check, gtkdoc-depscan, gtkdoc-fixxref, gtkdocize,
-        gtkdoc-mkdb, gtkdoc-mkhtml, gtkdoc-mkman, gtkdoc-mkpdf, gtkdoc-mktmpl,
-        gtkdoc-rebase, gtkdoc-scan, gtkdoc-scangobj, gtkdoc-scanobj</seg>
+        <seg>gtkdoc-check,  gtkdoc-depscan, gtkdoc-fixxref,      gtkdocize,
+             gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf, gtkdoc-mktmpl,
+             gtkdoc-rebase, gtkdoc-scan,    gtkdoc-scangobj,     gtkdoc-scanobj</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/{gnome/help/gtk-doc-manual/*,gtk-doc/data,omf/gtk-doc-manual,sgml/gtk-doc}</seg>
+        <seg>/usr/share/{gtk-doc,help,sgml/gtk-doc} </seg>
 @z
 
 @x

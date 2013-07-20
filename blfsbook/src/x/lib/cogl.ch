@@ -110,12 +110,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="sdl"/>,
+      <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink> and
+      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="sdl"/>,
+      <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink>,
+      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @z
 
@@ -139,9 +145,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. The
+      tests should be ran from an X terminal running on the hardware
+      accelerated Xorg Server.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      The tests should be ran from an X terminal running on the hardware
+      accelerated Xorg Server.
 @z
 
 @x
@@ -163,16 +173,21 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          libcogl-pango.so and libcogl.so
+          None
+        </seg>
+        <seg>
+          libcogl-gles2.so, libcogl-pango.so and libcogl.so
        </seg>
         <seg>
          /usr/include/cogl and
@@ -180,7 +195,10 @@
        </seg>
 @y
         <seg>
-          libcogl-pango.so, libcogl.so
+          &None;
+        </seg>
+        <seg>
+          libcogl-gles2.so, libcogl-pango.so, libcogl.so
        </seg>
         <seg>
          /usr/include/cogl,

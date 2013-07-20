@@ -91,12 +91,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="openjdk"/> <!-- or <xref linkend="jdk"/> -->
+      A JDK (<xref linkend="java-bin"/> or <xref linkend="openjdk"/>) 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="openjdk"/> <!-- or <xref linkend="jdk"/> -->
+      JDK (<xref linkend="java-bin"/> または <xref linkend="openjdk"/>) 
     </para>
 @z
 
@@ -129,12 +129,14 @@
       requirements of various packages installed using
       <application>Apache Ant</application>. Review the table at
       <ulink url="http://ant.apache.org/manual/install.html#librarydependencies"/>
-      for any prerequisite libraries you may need.</para>
+      for any prerequisite libraries you may need. Place any needed libraries 
+      in <filename>lib/optional</filename>.</para>
 @y
       <para>
       <application>Apache Ant</application> を利用してインストールする各種のパッケージにて、ビルド要件を満たすためのライブラリを追加することが必要になる場合があります。
       必要となるライブラリの詳細については <ulink
       url="http://ant.apache.org/manual/install.html#librarydependencies"/> に示される表を参照してください。
+      必要なライブラリは <filename>lib/optional</filename> に配置します。
       </para>
 @z
 
@@ -196,23 +198,23 @@
 @z
 
 @x
-    <para><command>sed -i 's;jars...</command>: If the
+    <para><command>sed -i 's/jars...</command>: If the
     <application>JUnit</application> package is not installed, the regression
     tests cannot be performed.</para>
 @y
-    <para><command>sed -i 's;jars...</command>:
+    <para><command>sed -i 's/jars...</command>:
     <application>JUnit</application> パッケージがインストールされていなければ、縮退テスト (regression tests) は実施されません。
     </para>
 @z
 
 @x
     <para><command>cp -v
-    /usr/share/junit-&junit-version;/&junit-version;.jar ...</command>:
+    /usr/share/java/junit-&junit-version;.jar ...</command>:
     This command copies the JUnit jar file into the directory where Apache Ant
     will look for it.</para>
 @y
     <para><command>cp -v
-    /usr/share/junit-&junit-version;/&junit-version;.jar ...</command>:
+    /usr/share/java/junit-&junit-version;.jar ...</command>:
     このコマンドは JUnit jar ファイルを Apache Ant が見つけ出せるディレクトリにコピーします。
     </para>
 @z

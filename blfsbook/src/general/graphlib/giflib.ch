@@ -77,18 +77,18 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/> and
-    <ulink
-    url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
-    (or <ulink
-    url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)</para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="xmlto"/> (for html documentation), and 
+      <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink> (or 
+      <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <ulink
-    url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
-    (または <ulink
-    url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)</para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="xmlto"/> (for html documentation),
+      <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink> (または 
+      <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)</para>
 @z
 
 @x
@@ -151,14 +151,14 @@
 @z
 
 @x
-        <seg>gif2epsn, gif2ps, gif2rgb, gif2x11, gifasm, gifbg, gifburst, gifclip,
+        <seg>gif2rgb, gif2x11, gifasm, gifbg, gifburst, gifclip,
         gifclrmp, gifcolor, gifcomb, gifcompose, giffiltr, giffix, gifflip, gifhisto,
         gifinfo, gifinter, gifinto, gifovly, gifpos, gifrotat, gifrsize, gifspnge,
         giftext, gifwedge, icon2gif, raw2gif, rgb2gif, and text2gif</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @y
-        <seg>gif2epsn, gif2ps, gif2rgb, gif2x11, gifasm, gifbg, gifburst, gifclip,
+        <seg>gif2rgb, gif2x11, gifasm, gifbg, gifburst, gifclip,
         gifclrmp, gifcolor, gifcomb, gifcompose, giffiltr, giffix, gifflip, gifhisto,
         gifinfo, gifinter, gifinto, gifovly, gifpos, gifrotat, gifrsize, gifspnge,
         giftext, gifwedge, icon2gif, raw2gif, rgb2gif, text2gif</seg>
@@ -170,22 +170,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x gif2epsn
-          <para>dumps images saved as GIF files on Epson type printers.</para>
-@y
-          <para>
-          Epson タイププリンター上に保存されている GIF ファイルのイメージをダンプします。
-          </para>
-@z
-
-@x gif2ps
-          <para>prints GIF files on laser printers supporting PostScript.</para>
-@y
-          <para>
-          PostScript をサポートするレーザープリンターに GIF ファイルを出力します。
-          </para>
 @z
 
 @x gif2rgb

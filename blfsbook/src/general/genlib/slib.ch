@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY slib-buildsize     "31 MB (includes building and installing docs)">
-  <!ENTITY slib-time          "less than 0.1 SBU">
+  <!ENTITY slib-buildsize     "10 MB (includes building and installing docs)">
 @y
-  <!ENTITY slib-buildsize     "31 MB (includes building and installing docs)">
-  <!ENTITY slib-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY slib-buildsize     "10 MB (includes building and installing docs)">
 @z
 
 @x
@@ -100,19 +98,11 @@
 @z
 
 @x
-    <para>There are no build dependencies as this package is nothing but many
-    text script files which are copied to the system. If you are installing
-    this package to support a <application>GnuCash</application> installation,
-    you should ensure that <xref linkend="guile"/> is installed so the
-    <application>SLIB</application> catalog for <application>Guile</application>
-    can be created.</para>
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"><xref linkend="guile"/>.</para>
 @y
-    <para>There are no build dependencies as this package is nothing but many
-    text script files which are copied to the system. If you are installing
-    this package to support a <application>GnuCash</application> installation,
-    you should ensure that <xref linkend="guile"/> is installed so the
-    <application>SLIB</application> catalog for <application>Guile</application>
-    can be created.</para>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required"><xref linkend="guile"/>.</para>
 @z
 
 @x
@@ -208,11 +198,15 @@
 @x
         <seg>slib</seg>
         <seg>a <application>Scheme</application> library system</seg>
-        <seg>/usr/share/slib and /usr/share/doc/slib-&slib-version;</seg>
+        <seg>/usr/share/slib, 
+             /usr/share/guile/site/2.0, and 
+             /usr/share/doc/slib-&slib-version;</seg>
 @y
         <seg>slib</seg>
         <seg>a <application>Scheme</application> library system</seg>
-        <seg>/usr/share/slib and /usr/share/doc/slib-&slib-version;</seg>
+        <seg>/usr/share/slib, 
+             /usr/share/guile/site/2.0,
+             /usr/share/doc/slib-&slib-version;</seg>
 @z
 
 @x

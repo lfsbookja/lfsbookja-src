@@ -72,12 +72,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Required Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">必要な追加ダウンロード</bridgehead>
-@z
-
-@x
     <bridgehead renderas="sect3">Bazaar Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Bazaar&Dependencies2;</bridgehead>
@@ -98,18 +92,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openssh"/>, 
-       <ulink url="http://www.python.org/pypi/pycrypto/">pyCrypto</ulink>,
-       <ulink url="http://www.python.org/pypi/paramiko/">paramike</ulink>, and
-       <ulink url="http://wiki.bazaar.canonical.com/BzrTools">bzrtools</ulink>
+      <xref linkend="cacerts"/>,
+      <ulink url="http://www.python.org/pypi/paramiko/">paramiko</ulink> with
+      <xref linkend="openssh"/> or
+      <ulink url="http://www.python.org/pypi/pycrypto/">PyCrypto</ulink> (to access branches over SSH), and
+      <ulink url="http://wiki.bazaar.canonical.com/BzrTools">BzrTools</ulink> (for rsync support and other extra functionality)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openssh"/>, 
-       <ulink url="http://www.python.org/pypi/pycrypto/">pyCrypto</ulink>,
-       <ulink url="http://www.python.org/pypi/paramiko/">paramike</ulink>,
-       <ulink url="http://wiki.bazaar.canonical.com/BzrTools">bzrtools</ulink>
+      <xref linkend="cacerts"/>,
+      <ulink url="http://www.python.org/pypi/paramiko/">paramiko</ulink> with
+      <xref linkend="openssh"/> or
+      <ulink url="http://www.python.org/pypi/pycrypto/">PyCrypto</ulink> (to access branches over SSH), and
+      <ulink url="http://wiki.bazaar.canonical.com/BzrTools">BzrTools</ulink> (for rsync support and other extra functionality)
     </para>
 @z
 
@@ -126,12 +122,10 @@
 @z
 
 @x
-    <para>Install <application>Bazaar</application> by first installing a required
-    package.</para>
+      Install <application>Bazaar</application> by running the following
+      commands:
 @y
-    <para>
-    <application>Bazaar</application> をビルドするにあたり、必要となるパッケージを導入します。
-    </para>
+      以下のコマンドを実行して <application>Bazaar</application> をビルドします。
 @z
 
 @x
@@ -144,24 +138,15 @@
 @z
 
 @x
-     <para>Continue with installing the main package as the 
-     <systemitem class="username">root</systemitem> user:</para>
-@y
-     <para>
-     <systemitem class="username">root</systemitem> ユーザーになり、メインとなるパッケージをインストールします。
-     </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
 @z
 
 @x
-      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -169,13 +154,13 @@
 @z
 
 @x
-        <seg>bzr, pyrexc</seg>
+        <seg>bzr</seg>
         <seg>None</seg>
-        <seg>/usr/share/doc/Pyrex, /usr/lib/python2.7/site-packages/bzrlib</seg>
+        <seg>/usr/lib/python2.7/site-packages/bzrlib</seg>
 @y
-        <seg>bzr, pyrexc</seg>
+        <seg>bzr</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/doc/Pyrex, /usr/lib/python2.7/site-packages/bzrlib</seg>
+        <seg>/usr/lib/python2.7/site-packages/bzrlib</seg>
 @z
 
 @x
@@ -189,13 +174,5 @@
 @y
           <para>
           bcr リポジトリにアクセスするためのコマンドライン形式のクライアントプログラム。
-          </para>
-@z
-
-@x pyrexc
-          <para>is a Python-like compiler that is used to create C modules for Python.</para>
-@y
-          <para>
-          Python に対する C モジュールを生成するための、Python に似たコンパイラー。
           </para>
 @z

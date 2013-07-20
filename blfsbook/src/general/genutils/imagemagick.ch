@@ -207,7 +207,7 @@
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
-      <ulink url="http://www.webmproject.org/code/">libwebp</ulink>,
+      <xref linkend="libwebp"/>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
       <xref linkend="pango"/>, and
@@ -232,7 +232,7 @@
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
-      <ulink url="http://www.webmproject.org/code/">libwebp</ulink>,
+      <xref linkend="libwebp"/>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
       <xref linkend="pango"/>, and

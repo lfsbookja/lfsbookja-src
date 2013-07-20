@@ -94,49 +94,37 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
+      <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev) and
+      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
+      <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
+      <xref linkend="udev"/> または
+      <xref linkend="udev-extras"/> (GUdev のため),
+      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
     </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">
-      Optional (to build the application developers manual)
-    </bridgehead>
-    <para role="optional">
-      <xref linkend="docbook-utils"/>,
-      <xref linkend="xmlto"/> and either
-      <xref linkend="Links"/>,
-      <xref linkend="lynx"/> or
-      <xref linkend="w3m"/>
-     </para>
-@y
-    <bridgehead renderas="sect4">
-      &Optional; (アプリケーション開発マニュアルの構築時に必要)
-    </bridgehead>
-    <para role="optional">
-      <xref linkend="docbook-utils"/>,
-      <xref linkend="xmlto"/> and either
-      <xref linkend="Links"/>,
-      <xref linkend="lynx"/> or
-      <xref linkend="w3m"/>
-     </para>
 @z
 
 @x
@@ -179,19 +167,11 @@
 @z
 
 @x
-      <option>--enable-manual</option>: Use this parameter if
-      <application>DocBook-utils</application>, <application>xmlto</application>,
-      <application>JadeTeX</application>, and either
-      <application>Links</application>, <application>Lynx</application>, or
-      <application>W3m</application> are installed and you wish to build the
-      application developers manual.
+      <parameter>--enable-egl-backend</parameter>: This switch enables
+      the experimental EGL windowing backend.
 @y
-      <option>--enable-manual</option>: Use this parameter if
-      <application>DocBook-utils</application>, <application>xmlto</application>,
-      <application>JadeTeX</application>, and either
-      <application>Links</application>, <application>Lynx</application>, or
-      <application>W3m</application> are installed and you wish to build the
-      application developers manual.
+      <parameter>--enable-egl-backend</parameter>: This switch enables
+      the experimental EGL windowing backend.
 @z
 
 @x
@@ -201,30 +181,36 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
+          None
+        </seg>
+        <seg>
           libclutter-1.0.so
         </seg>
         <seg>
-          /usr/include/clutter-1.0,
-          /usr/share/gtk-doc/html/cally and
-          /usr/share/gtk-doc/html/clutter
+          /usr/include/clutter-1.0 and
+          /usr/share/gtk-doc/html/{cally,clutter}
         </seg>
 @y
         <seg>
+          &None;
+        </seg>
+        <seg>
           libclutter-1.0.so
         </seg>
         <seg>
           /usr/include/clutter-1.0,
-          /usr/share/gtk-doc/html/cally,
-          /usr/share/gtk-doc/html/clutter
+          /usr/share/gtk-doc/html/{cally,clutter}
         </seg>
 @z
 

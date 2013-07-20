@@ -187,13 +187,13 @@
 
 @x
       If you did not pass the <option>--enable-gtk-doc</option> parameter
-      to the <command>configure</command> script, install the API documentation
-      to the <filename class="directory">/usr/share/gtk-doc/html/gnutls</filename> 
-      directory using the following command as the 
+      to the <command>configure</command> script, you can install the API documentation
+      to the <filename class="directory">/usr/share/gtk-doc/html/gnutls</filename>
+      directory using the following command as the
       <systemitem class="username">root</systemitem> user:
 @y
       <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定しなかった場合は、<systemitem
-      class="username">root</systemitem> ユーザーになって以下のコマンドを実行して API ドキュメントをインストールします。
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行して API ドキュメントをインストールすることができます。
       ドキュメントは <filename
       class='directory'>/usr/share/gtk-doc/html/gnutls</filename> ディレクトリにインストールされます。
 @z
@@ -222,7 +222,7 @@
 
 @x
         <seg>
-          certtool, danetool, gnutls-cli, gnutls-cli-debug,
+          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
           gnutls-serv, ocsptool, p11tool, psktool and srptool
         </seg>
         <seg>
@@ -236,7 +236,7 @@
         </seg>
 @y
         <seg>
-          certtool, danetool, gnutls-cli, gnutls-cli-debug,
+          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
           gnutls-serv, ocsptool, p11tool, psktool, srptool
         </seg>
         <seg>

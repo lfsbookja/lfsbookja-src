@@ -110,7 +110,7 @@
       <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
       <ulink url="http://www.distcache.org/">Distcache</ulink> and
-      <xref linkend="lua"/> (version 5.1)
+      <xref linkend="lua"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -122,7 +122,7 @@
       <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
       <ulink url="http://www.distcache.org/">Distcache</ulink>,
-      <xref linkend="lua"/> (version 5.1)
+      <xref linkend="lua"/>
     </para>
 @z
 

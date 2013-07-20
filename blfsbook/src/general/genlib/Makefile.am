@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	apr.ch \
 	aspell.ch \
 	boost.ch \
+	dbus-glib.ch \
 	enchant.ch \
 	exempi.ch \
 	expat.ch \
@@ -80,6 +81,7 @@ ctie:
 apr.xml:                   $(BOOKdir)/$@ $(srcdir)/apr.ch
 aspell.xml:                $(BOOKdir)/$@ $(srcdir)/aspell.ch
 boost.xml:                 $(BOOKdir)/$@ $(srcdir)/boost.ch
+dbus-glib.xml:             $(BOOKdir)/$@ $(srcdir)/dbus-glib.ch
 enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
 exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
 expat.xml:                 $(BOOKdir)/$@ $(srcdir)/expat.ch

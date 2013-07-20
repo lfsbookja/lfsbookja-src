@@ -118,7 +118,7 @@
 
 @x
         <seg>
-          gsl-config, gsl-histogram and gsl-randist.
+          gsl-config, gsl-histogram, and gsl-randist.
         </seg>
         <seg>
           libgslcblas.so and libgsl.so.

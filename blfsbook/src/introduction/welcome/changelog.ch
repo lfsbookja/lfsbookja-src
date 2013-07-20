@@ -42,6 +42,149 @@
 @z
 
 @x
+      <para>July 18th, 2013</para>
+@y
+      <para>2013/07/18</para>
+@z
+
+@x
+      <para>July 17th, 2013</para>
+@y
+      <para>2013/07/17</para>
+@z
+@x
+          <para>[bdubbs] - Update to OpenJDK-1.7.0.40/IcedTea-2.4.1.</para> 
+@y
+          <para>[bdubbs] - OpenJDK-1.7.0.40/IcedTea-2.4.1 へのアップデート。</para> 
+@z
+@x
+          <para>[bdubbs] - Update to JUnit-4.11.</para> 
+@y
+          <para>[bdubbs] - JUnit-4.11 へのアップデート。</para> 
+@z
+@x
+          <para>[igor] - Downgraded Lua to 5.1.5</para> 
+@y
+          <para>[igor] - Lua 5.1.5 へのダウングレード。</para> 
+@z
+@x
+          <para>[bdubbs] - Update to apache-ant-1.9.2.</para>
+@y
+          <para>[bdubbs] - apache-ant-1.9.2 へのアップデート。</para>
+@z
+
+@x
+      <para>July 16th, 2013</para>
+@y
+      <para>2013/07/16</para>
+@z
+@x
+          <para>[bdubbs] - Reorganized the Programming chapter to 
+          put all Java related packages together in a sub-section.
+          Moved Apache-ant to this sub-section.</para>
+@y
+          <para>[bdubbs] - プログラミングの章にて Java 関連のパッケージをサブセクションに取りまとめる。
+          Apache-ant もそのサブセクションに移動。</para>
+@z
+
+@x
+      <para>July 15th, 2013</para>
+@y
+      <para>2013/07/15</para>
+@z
+@x
+          <para>[bdubbs] - Update to unrar-5.0.8.</para>
+@y
+          <para>[bdubbs] - unrar-5.0.8 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to sysstat-10.1.6.</para>
+@y
+          <para>[bdubbs] - sysstat-10.1.6 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to sg3_utils-1.36.</para>
+@y
+          <para>[bdubbs] - sg3_utils-1.36 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to mc-4.8.9.</para>
+@y
+          <para>[bdubbs] - mc-4.8.9 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to lm_sensors-3.3.4.</para>
+@y
+          <para>[bdubbs] - lm_sensors-3.3.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to colord-1.0.2.</para>
+@y
+          <para>[bdubbs] - colord-1.0.2 へのアップデート。</para>
+@z
+
+@x
+      <para>July 14th, 2013</para>
+@y
+      <para>2013/07/14</para>
+@z
+@x
+          <para>[bdubbs] - Update to ImageMagick-6.8.6-5.</para>
+@y
+          <para>[bdubbs] - ImageMagick-6.8.6-5 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gtk-doc-1.19.</para>
+@y
+          <para>[bdubbs] - gtk-doc-1.19 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Added PyXDG 0.25, a Python Module.</para>
+@y
+          <para>[krejzi] - Python モジュール PyXDG 0.25 追加。</para>
+@z
+@x
+          <para>[bdubbs] - Update to qpdf-5.0.0.</para>
+@y
+          <para>[bdubbs] - qpdf-5.0.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to libwebp-0.3.1.</para>
+@y
+          <para>[bdubbs] - libwebp-0.3.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to giflib-4.2.1.</para>
+@y
+          <para>[bdubbs] - giflib-4.2.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to slib-3b4.</para>
+@y
+          <para>[bdubbs] - slib-3b4 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Added PyCairo 1.10.0, a Python 3 module.</para>
+@y
+          <para>[krejzi] - Python 3 モジュール PyCairo 1.10.0 追加。</para>
+@z
+@x
+          <para>[igor] - VLC: fix compilation with FLAC-1.3.0.</para>
+@y
+          <para>[igor] - VLC: FLAC-1.3.0 にてコンパイルできるように修正。</para>
+@z
+@x
+          <para>[ken] - Fixed SoundTouch for recent Automake.</para>
+@y
+          <para>[ken] - SoundTouch 修正。最新の Automake への対応。</para>
+@z
+@x
+          <para>[igor] - Fixed SDL for compilation with libX11-1.6.0.</para>
+@y
+          <para>[igor] - SDL 修正。libX11-1.6.0 にてコンパイルできるように。</para>
+@z
+
+@x
       <para>July 13th, 2013</para>
 @y
       <para>2013/07/13</para>
@@ -72,9 +215,9 @@
           <para>[bdubbs] - exempi-2.2.1 へのアップデート。</para>
 @z
 @x
-          <para>[bdubbs] - Update to boost_1_54_0.</para>
+          <para>[bdubbs] - Update to boost-1.54.0.</para>
 @y
-          <para>[bdubbs] - boost_1_54_0 へのアップデート。</para>
+          <para>[bdubbs] - boost-1.54.0 へのアップデート。</para>
 @z
 
 @x

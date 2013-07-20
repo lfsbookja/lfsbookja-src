@@ -184,6 +184,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/general/prog
 CHANGE_FILES = \
+	apache-ant.ch     \
 	bazaar.ch         \
 	check.ch          \
 	cmake.ch          \
@@ -191,12 +192,14 @@ CHANGE_FILES = \
 	cvsserver.ch      \
 	dejagnu.ch        \
 	doxygen.ch        \
+	dummy-java.ch     \
 	expect.ch         \
 	gc.ch             \
 	gcc.ch            \
 	gdb.ch            \
 	git.ch            \
 	guile.ch          \
+	java.ch           \
 	junit.ch          \
 	librep.ch         \
 	llvm.ch           \
@@ -416,6 +419,7 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
+apache-ant.xml:     $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
 bazaar.xml:         $(BOOKdir)/$@ $(srcdir)/bazaar.ch
 check.xml:          $(BOOKdir)/$@ $(srcdir)/check.ch
 cmake.xml:          $(BOOKdir)/$@ $(srcdir)/cmake.ch
@@ -423,12 +427,14 @@ cvs.xml:            $(BOOKdir)/$@ $(srcdir)/cvs.ch
 cvsserver.xml:      $(BOOKdir)/$@ $(srcdir)/cvsserver.ch
 dejagnu.xml:        $(BOOKdir)/$@ $(srcdir)/dejagnu.ch
 doxygen.xml:        $(BOOKdir)/$@ $(srcdir)/doxygen.ch
+dummy-java.xml:     $(BOOKdir)/$@ $(srcdir)/dummy-java.ch
 expect.xml:         $(BOOKdir)/$@ $(srcdir)/expect.ch
 gc.xml:             $(BOOKdir)/$@ $(srcdir)/gc.ch
 gcc.xml:            $(BOOKdir)/$@ $(srcdir)/gcc.ch
 gdb.xml:            $(BOOKdir)/$@ $(srcdir)/gdb.ch
 git.xml:            $(BOOKdir)/$@ $(srcdir)/git.ch
 guile.xml:          $(BOOKdir)/$@ $(srcdir)/guile.ch
+java.xml:           $(BOOKdir)/$@ $(srcdir)/java.ch
 junit.xml:          $(BOOKdir)/$@ $(srcdir)/junit.ch
 librep.xml:         $(BOOKdir)/$@ $(srcdir)/librep.ch
 llvm.xml:           $(BOOKdir)/$@ $(srcdir)/llvm.ch

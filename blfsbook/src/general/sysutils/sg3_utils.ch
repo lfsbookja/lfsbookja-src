@@ -143,7 +143,7 @@
           sg_sat_phy_event, sg_sat_set_features, sg_scan, sg_senddiag,
           sg_ses, sg_start, sg_stpg, sg_sync, sg_test_rwbuf, sg_turs, sg_unmap,
           sg_verify, sg_vpd, sg_write_buffer, sg_write_long, sg_write_same,
-          sg_wr_mode and sg_xcopy
+          sg_wr_mode, and sg_xcopy
         </seg>
         <seg>
           libsgutils2.so

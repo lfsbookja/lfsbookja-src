@@ -92,7 +92,7 @@
     <para role="required">
       <xref linkend="dbus-glib"/>,
       <xref linkend="imagemagick"/> or
-      <xref linkend="gdk-pixbuf"/> and
+      <xref linkend="gdk-pixbuf"/>, and
       <xref linkend="openobex"/>
     </para>
 @y

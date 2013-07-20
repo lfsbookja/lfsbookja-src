@@ -96,14 +96,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/><!-- and
-      <xref linkend="gst10-plugins-bad"/> -->
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gst10-plugins-bad"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/><!-- and
-      <xref linkend="gst10-plugins-bad"/> -->
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gst10-plugins-bad"/>
     </para>
 @z
 
@@ -157,16 +157,21 @@
 @z
 
 @x
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          libclutter-gst-2.0.so
+          None
+        </seg>
+        <seg>
+          libclutter-gst-2.0.so and libgstclutter.so
         </seg>
         <seg>
           /usr/include/clutter-gst-2.0 and
@@ -174,10 +179,13 @@
         </seg>
 @y
         <seg>
-          libclutter-gst-2.0.so
+          &None;
         </seg>
         <seg>
-          /usr/include/clutter-gst-2.0 and
+          libclutter-gst-2.0.so, libgstclutter.so
+        </seg>
+        <seg>
+          /usr/include/clutter-gst-2.0,
           /usr/share/gtk-doc/html/clutter-gst
         </seg>
 @z

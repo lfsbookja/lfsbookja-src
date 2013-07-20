@@ -142,15 +142,6 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: This switch prevents the static
-    libraries being installed.</para>
-@y
-    <para><option>--disable-static</option>:
-    このスイッチはスタティックライブラリをインストールしないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -168,14 +159,14 @@
 
 @x
         <seg>None</seg>
-        <seg>libstartup-notification-1.{so,a}</seg>
-        <seg>/usr/{include/startup-notification-1.0/libsn,
-        share/doc/startup-notification-&startup-notification-version;}</seg>
+        <seg>libstartup-notification-1.so</seg>
+        <seg>/usr/include/startup-notification-1.0 and
+        /usr/share/doc/startup-notification-&startup-notification-version;</seg>
 @y
         <seg>&None;</seg>
-        <seg>libstartup-notification-1.{so,a}</seg>
-        <seg>/usr/{include/startup-notification-1.0/libsn,
-        share/doc/startup-notification-&startup-notification-version;}</seg>
+        <seg>libstartup-notification-1.so</seg>
+        <seg>/usr/include/startup-notification-1.0,
+        /usr/share/doc/startup-notification-&startup-notification-version;</seg>
 @z
 
 @x

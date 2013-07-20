@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY junit-time          "less than 0.1 SBU">
-@y
-  <!ENTITY junit-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to JUnit</title>
 @y
     <title>&IntroductionTo1;JUnit&IntroductionTo2;</title>
@@ -92,10 +86,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="unzip"/></para>
+    <para role="required">
+      <xref linkend="apache-ant"/> and
+      <xref linkend="unzip"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="unzip"/></para>
+    <para role="required">
+      <xref linkend="apache-ant"/>,
+      <xref linkend="unzip"/>
+    </para>
 @z
 
 @x
@@ -113,7 +113,19 @@
 @z
 
 @x
-    <para>Install <application>JUnit</application> by running the following
+    <para>To do a full build of JUnit from source, <xref linkend='apache-ant'/>
+    is required.  However JUnit is useful in building Apache Ant.  Copy the
+    JUnit-&junit-version; jar file to get started.  Then come back to build
+    from source, if desired.</para>
+@y
+    <para>To do a full build of JUnit from source, <xref linkend='apache-ant'/>
+    is required.  However JUnit is useful in building Apache Ant.  Copy the
+    JUnit-&junit-version; jar file to get started.  Then come back to build
+    from source, if desired.</para>
+@z
+
+@x
+    <para>Install the <application>JUnit</application> jar file by running the following
     commands as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
@@ -122,30 +134,35 @@
 @z
 
 @x
-    <para>Add the <filename
-    class='libraryfile'>junit-&junit-version;.jar</filename> and <filename
-    class='directory'>/usr/share/junit-&junit-version;</filename> directory to
-    your system <envar>CLASSPATH</envar> environment variable:</para>
+    <para>At this point, make sure Apache-Ant is installed and then continue
+    with the source build and instalation.  From the directory created when
+    extracting the JUnit sources, place the required hamcrest jar files where
+    needed and build the package:</para> 
 @y
-    <para>
-    <filename class='libraryfile'>junit-&junit-version;.jar</filename> と <filename
-    class='directory'>/usr/share/junit-&junit-version;</filename> ディレクトリを <envar>CLASSPATH</envar> 変数に追加します。
-    </para>
+    <para>At this point, make sure Apache-Ant is installed and then continue
+    with the source build and instalation.  From the directory created when
+    extracting the JUnit sources, place the required hamcrest jar files where
+    needed and build the package:</para> 
 @z
 
 @x
-    <para>To run the <application>JUnit</application> regression self-tests,
-    you'll need to have <xref linkend="openjdk"/>,<!-- <xref linkend="jdk"/>,--> or
-    <ulink url="http://jikes.sourceforge.net/">Jikes</ulink> installed and the
-    <envar>CLASSPATH</envar> environment variable updated. Then, as an
-    unprivileged user, issue:</para>
+    <para>Testing is automatically done as a part of the build step.</para>
 @y
-    <para>
-    <application>JUnit</application> の縮退テストを実施する場合は <xref
-    linkend="openjdk"/> あるいは <ulink
-    url="http://jikes.sourceforge.net/">Jikes</ulink> をインストールしておく必要があり、<envar>CLASSPATH</envar> を適切に設定しておく必要があります。
-    準備が出来たら一般ユーザーにて以下を実行します。
-    </para>
+    <para>Testing is automatically done as a part of the build step.</para>
+@z
+
+@x
+    <para>Install the files in the final location as the 
+    <systemitem class="username">root</systemitem> user:</para>
+@y
+    <para>Install the files in the final location as the 
+    <systemitem class="username">root</systemitem> user:</para>
+@z
+
+@x
+    <para>Finally, update the <envar>CLASSPATH</envar> variable:</para>
+@y
+    <para>Finally, update the <envar>CLASSPATH</envar> variable:</para>
 @z
 
 @x
@@ -156,7 +173,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraies</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -166,14 +183,14 @@
 
 @x
         <seg>None</seg>
-        <seg>junit-&junit-version;.jar</seg>
-        <seg>/usr/share/junit-&junit-version;,
-        /usr/share/doc/junit-&junit-version;</seg>
+        <seg>hamcrest-core and junit jar files</seg>
+        <seg>/usr/share/doc/junit-&junit-version; and
+             /usr/share/java/junit-&junit-version;</seg>
 @y
         <seg>&None;</seg>
-        <seg>junit-&junit-version;.jar</seg>
-        <seg>/usr/share/junit-&junit-version;,
-        /usr/share/doc/junit-&junit-version;</seg>
+        <seg>hamcrest-core, junit jar ファイル</seg>
+        <seg>/usr/share/doc/junit-&junit-version;,
+             /usr/share/java/junit-&junit-version;</seg>
 @z
 
 @x
