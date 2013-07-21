@@ -54,6 +54,19 @@
 -->
 
     <listitem>
+      <para>2013-07-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matsuand] -
+          SYSTEMD-20130626,
+          <ulink url="&lfs-rev-root;10295">10295</ulink>,
+          <ulink url="&lfs-rev-root;10298">10298</ulink> 対応。
+          </para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>2013-06-02</para>
       <itemizedlist>
         <listitem>
