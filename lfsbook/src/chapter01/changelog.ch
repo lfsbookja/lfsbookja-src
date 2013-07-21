@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-07-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Add comments about the kernel 
+          <command>make defconfig</command> option when configuring 
+          the kernel.  Fixes 
+          <ulink url="&lfs-ticket-root;3379">#3379</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to iproute2-3.10.1.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.10.1.  Fixes
+          <ulink url="&lfs-ticket-root;3380">#3380</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-07-20</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - カーネル設定時の <command>make defconfig</command> の利用について説明を追加。
+          <ulink url="&lfs-ticket-root;3379">#3379</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - iproute2-3.10.1 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.10.1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3380">#3380</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-07-11</para>
       <itemizedlist>
         <listitem>
