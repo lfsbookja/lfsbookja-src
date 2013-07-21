@@ -42,6 +42,18 @@
 @z
 
 @x
+      <para>July 20th, 2013</para>
+@y
+      <para>2013/07/20</para>
+@z
+@x
+          <para>[bdubbs] - Touch up OpenJDK-1.7.0.40/IcedTea-2.4.1 
+          instructions and data.</para>
+@y
+          <para>[bdubbs] - OpenJDK-1.7.0.40/IcedTea-2.4.1 の手順およびデータを修正。</para>
+@z
+
+@x
       <para>July 18th, 2013</para>
 @y
       <para>2013/07/18</para>
