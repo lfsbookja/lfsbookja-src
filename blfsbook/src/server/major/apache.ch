@@ -71,6 +71,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Apache HTTPD Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Apache HTTPD&Dependencies2;</bridgehead>
@@ -177,9 +189,9 @@
       compiled and used as Dynamic Shared Objects (DSOs) so they can be included
       and excluded from the server using the run-time configuration directives.
 @y
-      <parameter>--enable-mods-shared="all cgi"</parameter>: The modules should be
-      compiled and used as Dynamic Shared Objects (DSOs) so they can be included
-      and excluded from the server using the run-time configuration directives.
+      <parameter>--enable-mods-shared="all cgi"</parameter>:
+      モジュール類は動的共有オブジェクト (Dynamic Shared Objects; DSO) としてビルドされ利用されます。
+      そして実行時の設定ファイル内のディレクティブにより設定されます。
 @z
 
 @x
@@ -187,9 +199,9 @@
       MPM (Multi Processing Modules) are built as Dynamic Shared Objects (DSOs),
       so the user can choose which one to use at runtime.
 @y
-      <parameter>--enable-mpm-shared=all</parameter>: This switch ensures that all
-      MPM (Multi Processing Modules) are built as Dynamic Shared Objects (DSOs),
-      so the user can choose which one to use at runtime.
+      <parameter>--enable-mpm-shared=all</parameter>:
+      本スイッチは MPM (マルチプロセスモジュール; Multi Processing Modules) を動的共有オブジェクト (Dynamic Shared Objects; DSO) としてビルドすることを指示します。
+      こうすることによって、実行時にいずれのモジュールを用いるかを設定できるようになります。
 @z
 
 @x
@@ -198,10 +210,9 @@
       users to run CGI and SSI scripts under user IDs different from the user ID
       of the calling web server.
 @y
-      <parameter>--enable-suexec</parameter>: This switch enables building of the
-      <application>Apache</application> suEXEC module which can be used to allow
-      users to run CGI and SSI scripts under user IDs different from the user ID
-      of the calling web server.
+      <parameter>--enable-suexec</parameter>:
+      本スイッチは <application>Apache</application> の suEXEC モジュールをビルドするようにします。
+      suEXEC モジュールは、Web サーバーを呼び出すユーザーとは異なるユーザーのもとで、CGI や SSI スクリプトを実行できるようにするものです。
 @z
 
 @x
@@ -211,11 +222,11 @@
       can't run CGI or SSI scripts under suEXEC as the
       <systemitem class="username">apache</systemitem> user.
 @y
-      <parameter>--with-suexec-*</parameter>: These switches control suEXEC module
-      behavior, such as default document root, minimal UID that can be used to
-      run the script under the suEXEC. Please note that with minimal UID 100, you
-      can't run CGI or SSI scripts under suEXEC as the
-      <systemitem class="username">apache</systemitem> user.
+      <parameter>--with-suexec-*</parameter>:
+      これらのスイッチは suEXEC モジュールの挙動を制御するものです。
+      例えばデフォルトのドキュメントルートや最小 UID といったもので、これは suEXEC のもとでスクリプトを実行するために利用されます。
+      ただし最小 UID が 100 であると、<systemitem
+      class="username">apache</systemitem> ユーザーとしては suEXEC のもとで CGI や SSI を実行することはできません。
 @z
 
 @x
@@ -225,11 +236,11 @@
       permissions of the binary, making it segid
       <systemitem class="username">apache</systemitem>.
 @y
-      <command>... /usr/lib/httpd/suexec</command>: These commands put
-      <command>suexec</command> wrapper into proper location, since it
-      is not meant to be run directly. They also adjust proper
-      permissions of the binary, making it segid
-      <systemitem class="username">apache</systemitem>.
+      <command>... /usr/lib/httpd/suexec</command>:
+      これらのコマンドは <command>suexec</command> ラッパースクリプトを適切なディレクトリに移動します。
+      こうするのは、このスクリプトが直接実行されるものではないためです。
+      また segid を <systemitem
+      class="username">apache</systemitem> とすることにより、実行モジュールのパーミッションを修正します。
 @z
 
 @x
@@ -242,14 +253,11 @@
       process with (r-x) permissions and files need to be readable (r--) by the
       <systemitem class="username">apache</systemitem> user.
 @y
-      <command>chown -R apache:apache /srv/www</command>: By default, the
-      installation process installs files (documentation, error messages,
-      default icons, etc.) with the ownership of the user that extracted the
-      files from the tar file. If you want to change the ownership to another
-      user, you should do so at this point. The only requirement is that the
-      document directories need to be accessible by the <command>httpd</command>
-      process with (r-x) permissions and files need to be readable (r--) by the
-      <systemitem class="username">apache</systemitem> user.
+      <command>chown -R apache:apache /srv/www</command>:
+      デフォルトにて、インストール時にインストールされるファイル類 (ドキュメントファイル、エラーメッセージ、デフォルトアイコンなど) は、tar ファイルを解凍したユーザーが所有者となります。
+      この所有者を他ユーザーに変更したい場合は、この時点において実行する必要があります。
+      また必要なこととして、ドキュメントディレクトリは、パーミッション (r-x) とし <command>httpd</command> プロセスがアクセス可能でなければなりません。
+      また各種ファイル類は、パーミッション (r--) とし <systemitem class="username">apache</systemitem> ユーザーが読み込み可能でなければなりません。
 @z
 
 @x
@@ -402,21 +410,21 @@
 @x htcacheclean
             is used to clean up the disk cache.
 @y
-            is used to clean up the disk cache.
+            ディスクキャッシュをクリーンアップします。
 @z
 
 @x htdbm
             is used to manipulate the DBM password databases.
 @y
-            is used to manipulate the DBM password databases.
+            DBM パスワードデータベースを操作します。
 @z
 
 @x htdigest
             is used to create and update the flat-files used to store usernames,
             realms and passwords for digest authentication of HTTP users.
 @y
-            is used to create and update the flat-files used to store usernames,
-            realms and passwords for digest authentication of HTTP users.
+            HTTP におけるダイジェスト認証を行うためのファイルを生成し更新します。
+            そのファイルはフラットファイルであり、ユーザー名、領域名、パスワードを保持します。
 @z
 
 @x htpasswd
@@ -430,13 +438,13 @@
 @x httpd
             is the <application>Apache</application> HTTP server program.
 @y
-            is the <application>Apache</application> HTTP server program.
+            <application>Apache</application> HTTP サーバープログラム。
 @z
 
 @x httxt2dbm
             is used to generate DBM files from text, for use in RewriteMap.
 @y
-            is used to generate DBM files from text, for use in RewriteMap.
+            DBM ファイルをテキストファイルから生成するもので、RewiteMap 内にて利用されます。
 @z
 
 @x logresolve

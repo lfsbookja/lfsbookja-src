@@ -7,9 +7,9 @@
 ##
 BOOKdir = @abs_bookdir@/server/major
 CHANGE_FILES = \
-	apache.ch \
-	bind.ch \
-	major.ch \
+	apache.ch  \
+	bind.ch    \
+	major.ch   \
 	proftpd.ch \
 	vsftpd.ch
 
