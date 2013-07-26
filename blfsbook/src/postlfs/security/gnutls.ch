@@ -128,8 +128,7 @@
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
       <xref linkend="p11-kit"/>,
-      <ulink url="http://unbound.net/">Unbound</ulink> (to build the DANE library and requires
-      <ulink url="http://www.nlnetlabs.nl/projects/ldns/">ldns</ulink>), and
+      <xref linkend="unbound"/> (to build the DANE library), and 
       <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)
     </para>
 @y
@@ -139,9 +138,8 @@
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
       <xref linkend="p11-kit"/>,
-      <ulink url="http://unbound.net/">Unbound</ulink> (DANE ライブラリのビルド用。<ulink
-      url="http://www.nlnetlabs.nl/projects/ldns/">ldns</ulink> が必要),
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて用いられる)
+      <xref linkend="unbound"/> (to build the DANE library),
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて利用)
     </para>
 @z
 

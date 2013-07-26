@@ -42,6 +42,193 @@
 @z
 
 @x
+      <para>July 25th, 2013</para>
+@y
+      <para>2013/07/25</para>
+@z
+@x
+          <para>[bdubbs] - Update to virtuoso-2.1.7.</para>
+@y
+          <para>[bdubbs] - virtuoso-2.1.7 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to soprano-2.9.3.</para>
+@y
+          <para>[bdubbs] - soprano-2.9.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to sendmail.8.14.7.</para>
+@y
+          <para>[bdubbs] - sendmail.8.14.7 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to postfix-2.10.1.</para>
+@y
+          <para>[bdubbs] - postfix-2.10.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to proftpd-1.3.4d.</para>
+@y
+          <para>[bdubbs] - proftpd-1.3.4d へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to bind-9.9.3-P1.</para>
+@y
+          <para>[bdubbs] - bind-9.9.3-P1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to apache-2.4.6.</para>
+@y
+          <para>[bdubbs] - apache-2.4.6 へのアップデート。</para>
+@z
+
+@x
+      <para>July 24th, 2013</para>
+@y
+      <para>2013/07/24</para>
+@z
+@x
+          <para>[bdubbs] - Update to NASM-2.10.09.</para>
+@y
+          <para>[bdubbs] - NASM-2.10.09 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to git-1.8.3.4.</para>
+@y
+          <para>[bdubbs] - git-1.8.3.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to xscreensaver-5.22.</para>
+@y
+          <para>[bdubbs] - xscreensaver-5.22 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to libpng-1.6.3.</para>
+@y
+          <para>[bdubbs] - libpng-1.6.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to openobex-1.7.1.</para>
+@y
+          <para>[bdubbs] - openobex-1.7.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to p11-kit-0.18.5.</para>
+@y
+          <para>[bdubbs] - p11-kit-0.18.5 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to Network-Manager-0.9.8.2.</para>
+@y
+          <para>[bdubbs] - Network-Manager-0.9.8.2 へのアップデート。</para>
+@z
+@x
+          <para>[igor] - Restored libgee-0.6.8 from archive as it is needed by
+          LXDE.</para>
+@y
+          <para>[igor] - 過去アーカイブから libgee-0.6.8 を復活。
+          LXDE にて必要なため。</para>
+@z
+@x
+          <para>[bdubbs] - Update to fetchmail-6.3.26.</para>
+@y
+          <para>[bdubbs] - fetchmail-6.3.26 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to re-alpine-2.03.</para>
+@y
+          <para>[bdubbs] - re-alpine-2.03 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to libnice-0.1.4.</para>
+@y
+          <para>[bdubbs] - libnice-0.1.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to dhcpcd-6.0.3.</para>
+@y
+          <para>[bdubbs] - dhcpcd-6.0.3 へのアップデート。</para>
+@z
+
+@x
+      <para>July 23rd, 2013</para>
+@y
+      <para>2013/07/23</para>
+@z
+@x
+          <para>[bdubbs] - Update to wireshark-1.10.0.</para>
+@y
+          <para>[bdubbs] - wireshark-1.10.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gsl-1.16.</para>
+@y
+          <para>[bdubbs] - gsl-1.16 へのアップデート。</para>
+@z
+
+@x
+      <para>July 22nd, 2013</para>
+@y
+      <para>2013/07/22</para>
+@z
+@x
+          <para>[bdubbs] - Update to ruby-2.0.0-p247.</para>
+@y
+          <para>[bdubbs] - ruby-2.0.0-p247 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to php-5.5.0.</para>
+@y
+          <para>[bdubbs] - php-5.5.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to librep-0.92.3.</para>
+@y
+          <para>[bdubbs] - librep-0.92.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gcc-4.8.1 to bring in sync with
+          LFS.</para>
+@y
+          <para>[bdubbs] - LFS に合わせて gcc-4.8.1 へのアップデート。</para>
+@z
+
+@x
+      <para>July 21st, 2013</para>
+@y
+      <para>2013/07/21</para>
+@z
+@x
+          <para>[bdubbs] - Updated to current perl modules:
+          Data::Manio-6.40, HTML::Parser-3.71, LWP-6.05, and
+          Net::DNS-0.72.</para>
+@y
+          <para>[bdubbs] - Perl モジュールを最新のものにアップデート。
+          Data::Manio-6.40, HTML::Parser-3.71, LWP-6.05, Net::DNS-0.72.</para>
+@z
+@x
+          <para>[bdubbs] - Updated to cmake-2.8.11.2.</para>
+@y
+          <para>[bdubbs] - cmake-2.8.11.2 へのアップデート。</para>
+@z
+@x
+          <para>[igor] - Added Unbound-1.4.20.</para>
+@y
+          <para>[igor] - Unbound-1.4.20 追加。</para>
+@z
+@x
+          <para>[igor] - Added ldns-1.6.16.</para>
+@y
+          <para>[igor] - ldns-1.6.16 追加。</para>
+@z
+@x
+          <para>[igor] - Fix giflib build if xmlto is not installed (thanks
+          Nathan Coulson).</para>
+@y
+          <para>[igor] - giflib のビルドにあたり xmlto がインストールされていない場合に対応。(Nathan Coulson に感謝。)</para>
+@z
+
+@x
       <para>July 20th, 2013</para>
 @y
       <para>2013/07/20</para>

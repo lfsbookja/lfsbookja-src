@@ -322,9 +322,9 @@
           glxgears and glxinfo
         </seg>
         <seg>
-          libdricore9.1.4.so, libEGL.so, libgbm.so, libglapi.so,
+          libdricore&mesalib-version;.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libllvmradeon9.1.4.so, libOpenVG.so, libOSMesa.so and
+          libllvmradeon&mesalib-version;.so, libOpenVG.so, libOSMesa.so and
           libxatracker.so
         </seg>
         <seg>
@@ -344,9 +344,9 @@
           glxgears, glxinfo
         </seg>
         <seg>
-          libdricore9.1.4.so, libEGL.so, libgbm.so, libglapi.so,
+          libdricore&mesalib-version;.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libllvmradeon9.1.4.so, libOpenVG.so, libOSMesa.so,
+          libllvmradeon&mesalib-version;.so, libOpenVG.so, libOSMesa.so,
           libxatracker.so
         </seg>
         <seg>
@@ -358,7 +358,7 @@
           /usr/include/VG,
           /usr/lib/dri,
           /usr/lib/egl,
-          /usr/lib/gallium-pipe,
+          /usr/lib/gallium-pipe
           /usr/lib/gbm
         </seg>
 @z

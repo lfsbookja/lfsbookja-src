@@ -83,7 +83,7 @@
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>,
-      <xref linkend="openssl"/> and
+      <xref linkend="openssl"/>, and
       <xref linkend="tk"/>
     </para>
 @y
@@ -161,10 +161,10 @@
 
 @x
         <seg>
-          erb, gem, irb, rake, rdoc, ri, ruby and testrb
+          erb, gem, irb, rake, rdoc, ri, ruby, and testrb
         </seg>
         <seg>
-          libruby.so, libruby-static.a and numerous modules located in the
+          libruby.so, libruby-static.a, and numerous modules located in the
           <filename class="directory">/usr/lib/ruby</filename> hierarchy.
         </seg>
         <seg>
@@ -178,8 +178,7 @@
           erb, gem, irb, rake, rdoc, ri, ruby, testrb
         </seg>
         <seg>
-          libruby.so, libruby-static.a,
-          <filename class="directory">/usr/lib/ruby</filename> 配下にある数多くのモジュール
+          libruby.so, libruby-static.a, <filename class="directory">/usr/lib/ruby</filename>  配下にある数多くのモジュール
         </seg>
         <seg>
           /usr/include/ruby-&ruby-version;,
@@ -219,7 +218,7 @@
 
 @x ri
             displays documentation from a database on
-            <application>Ruby</application> classes, modules and methods.
+            <application>Ruby</application> classes, modules, and methods.
 @y
             <application>Ruby</application> のクラス、モジュール、メソッドに対するドキュメントを、データベースより表示します。
 @z

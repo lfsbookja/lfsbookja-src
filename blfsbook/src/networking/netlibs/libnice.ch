@@ -23,7 +23,7 @@
       The <application>libnice</application> package is an implementation of
       the IETF's draft Interactice Connectivity Establishment standard (ICE). It
       provides <application>GLib</application>-based library,
-      <application>libnice</application> and <application>GStreamer</application>
+      <application>libnice</application> and <application>GStreamer</application>,
       elements.
 @y
       <application>libnice</application> パッケージは IETF による ICE (Interactice Connectivity Establishment) ドラフトに対する実装ライブラリであり、<application>GLib</application> ベースのライブラリ <application>libnice</application>ライブラリ, <application>GStreamer</application> ライブラリを提供します。
@@ -105,7 +105,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gst-plugins-base"/>,
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/>, and
       <ulink url="http://gupnp.org/">gupnp-igd</ulink>
     </para>
 @y
@@ -181,7 +181,7 @@
         </seg>
         <seg>
           /usr/include/nice,
-          /usr/include/stun and
+          /usr/include/stun, and
           /usr/share/gtk-doc/html/libnice
         </seg>
 @y

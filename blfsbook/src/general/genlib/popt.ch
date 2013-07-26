@@ -154,11 +154,11 @@
 
 @x
         <seg>None</seg>
-        <seg>libpopt.{so,a}</seg>
+        <seg>libpopt.so</seg>
         <seg>/usr/share/doc/popt-&popt-version;</seg>
 @y
         <seg>&None;</seg>
-        <seg>libpopt.{so,a}</seg>
+        <seg>libpopt.so</seg>
         <seg>/usr/share/doc/popt-&popt-version;</seg>
 @z
 

@@ -84,7 +84,7 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="cmake"/>,
-      <xref linkend="qt4"/> and
+      <xref linkend="qt4"/>, and
       <xref linkend="redland"/>
     </para>
 @y
@@ -115,15 +115,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (to build the documentation), 
+      <xref linkend="doxygen"/> (to build the documentation),
       <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
-      (no longer required to use Soprano in KDE) and 
+      (no longer required to use Soprano in KDE), and
       <ulink url="http://www.openrdf.org/">Sesame2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (ドキュメントビルドのため), 
+      <xref linkend="doxygen"/> (ドキュメントビルドのため),
       <ulink url="http://sourceforge.net/projects/clucene/">CLucene</ulink>
       (no longer required to use Soprano in KDE),
       <ulink url="http://www.openrdf.org/">Sesame2</ulink>
@@ -239,15 +239,15 @@
 
 @x
         <seg>
-          onto2vocabularyclass, sopranocmd and sopranod
+          onto2vocabularyclass, sopranocmd, and sopranod
         </seg>
         <seg>
-          libsopranoclient.so, libsopranoserver.so and libsoprano.so
+          libsopranoclient.so, libsopranoserver.so, and libsoprano.so
         </seg>
         <seg>
           /usr/include/soprano,
           /usr/include/Soprano,
-          /usr/lib/soprano and
+          /usr/lib/soprano, and
           /usr/share/soprano
         </seg>
 @y

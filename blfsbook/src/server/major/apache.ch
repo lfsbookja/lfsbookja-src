@@ -121,7 +121,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="pcre"/>,
       <xref linkend="rsync"/>,
-      <ulink url="http://www.distcache.org/">Distcache</ulink> and
+      <ulink url="http://www.distcache.org/">Distcache</ulink>, and
       <xref linkend="lua"/>
     </para>
 @y
@@ -233,13 +233,13 @@
       <command>... /usr/lib/httpd/suexec</command>: These commands put
       <command>suexec</command> wrapper into proper location, since it
       is not meant to be run directly. They also adjust proper
-      permissions of the binary, making it segid
+      permissions of the binary, making it setgid
       <systemitem class="username">apache</systemitem>.
 @y
       <command>... /usr/lib/httpd/suexec</command>:
       これらのコマンドは <command>suexec</command> ラッパースクリプトを適切なディレクトリに移動します。
       こうするのは、このスクリプトが直接実行されるものではないためです。
-      また segid を <systemitem
+      また setgid を <systemitem
       class="username">apache</systemitem> とすることにより、実行モジュールのパーミッションを修正します。
 @z
 
@@ -321,9 +321,9 @@
 
 @x
         <seg>
-          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter,
-          htcacheclean, htdbm, htdigest, htpasswd, httpd,
-          httxt2dbm, logresolve and rotatelogs
+          ab,           apachectl, apxs,     checkgid, dbmmanage, fcgistarter,
+          htcacheclean, htdbm,     htdigest, htpasswd, httpd,
+          httxt2dbm,    logresolve,      and rotatelogs
         </seg>
         <seg>
           None
@@ -334,14 +334,14 @@
           /usr/include/httpd,
           /usr/lib/httpd,
           /usr/share/httpd
-          /var/log/httpd and
+          /var/log/httpd, and
           /var/run/httpd
         </seg>
 @y
         <seg>
-          ab, apachectl, apxs, checkgid, dbmmanage, fcgistarter,
-          htcacheclean, htdbm, htdigest, htpasswd, httpd,
-          httxt2dbm, logresolve, rotatelogs
+          ab,           apachectl, apxs,     checkgid, dbmmanage, fcgistarter,
+          htcacheclean, htdbm,     htdigest, htpasswd, httpd,
+          httxt2dbm,    logresolve,          rotatelogs
         </seg>
         <seg>
           &None;

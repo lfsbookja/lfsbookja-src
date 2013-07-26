@@ -165,10 +165,12 @@
 @z
 
 @x
-    <para>To test the results, issue <command>make -k check</command>.</para>
+    <para>To test the results, issue <command>make -k check</command>.
+    Some tests are known to fail.</para>
 @y
     <para>
     ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+    テストでは失敗するものがいくつかあります。
     </para>
 @z
 
@@ -303,15 +305,19 @@
 @z
 
 @x
-        <seg>inifile, isql-v, isql-vw, virt_mail and virtuoso-t</seg>
-        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so and virtodbcu_r.so</seg>
-        <seg>/var/lib/virtuoso, /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso} and
-        /usr/share/virtuoso</seg>
+        <seg>inifile, isql-v, isql-vw, virt_maili, and virtuoso-t</seg>
+        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so, 
+             and virtodbcu_r.so</seg>
+        <seg>/var/lib/virtuoso, 
+             /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso}, and
+             /usr/share/virtuoso</seg>
 @y
-        <seg>inifile, isql-v, isql-vw, virt_mail, virtuoso-t</seg>
-        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so, virtodbcu_r.so</seg>
-        <seg>/var/lib/virtuoso, /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso},
-        /usr/share/virtuoso</seg>
+        <seg>inifile, isql-v, isql-vw, virt_maili, virtuoso-t</seg>
+        <seg>libvirtuoso-t.a, virtodbc.so, virtodbc_r.so, virtodbcu.so, 
+             virtodbcu_r.so</seg>
+        <seg>/var/lib/virtuoso, 
+             /usr/lib/{hibernate,jdbc-{2,3,4}.0,jena,sesame,virtuoso},
+             /usr/share/virtuoso</seg>
 @z
 
 @x
@@ -321,7 +327,7 @@
 @z
 
 @x isql-v
-          <para>is a interactive SQL utility.</para>
+          <para>is an interactive SQL utility.</para>
 @y
           <para>
           対話的な SQL ユーティリティ。

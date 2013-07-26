@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	openldap.ch \
 	other.ch    \
 	soprano.ch  \
+	unbound.ch  \
 	virtuoso.ch \
 	xinetd.ch
 
@@ -29,5 +30,6 @@ ctie:
 openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
 other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
 soprano.xml:  $(BOOKdir)/$@ $(srcdir)/soprano.ch
+unbound.xml:  $(BOOKdir)/$@ $(srcdir)/unbound.ch
 virtuoso.xml: $(BOOKdir)/$@ $(srcdir)/virtuoso.ch
 xinetd.xml:   $(BOOKdir)/$@ $(srcdir)/xinetd.ch

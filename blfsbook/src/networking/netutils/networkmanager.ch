@@ -87,7 +87,7 @@
       <xref linkend="dbus-glib"/>,
       <xref linkend="intltool"/>,
       <xref linkend="libnl"/>,
-      <xref linkend="nss"/> and
+      <xref linkend="nss"/>, and
       <xref linkend="udev"/> or
       <xref linkend="udev-extras"/> (for GUdev)
     </para>
@@ -113,7 +113,7 @@
       <xref linkend="iptables"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="upower"/> and
+      <xref linkend="upower"/>, and
       <xref linkend="vala"/>
     </para>
 @y
@@ -272,10 +272,10 @@
 
 @x
         <seg>
-          nmcli, nm-online, nm-tool and NetworkManager
+          nmcli, nm-online, nm-tool, and NetworkManager
         </seg>
         <seg>
-          libnm-glib.so, libnm-glib-vpn.so and libnm-util.so
+          libnm-glib.so, libnm-glib-vpn.so, and libnm-util.so
         </seg>
         <seg>
           /etc/NetworkManager,
@@ -284,7 +284,7 @@
           /usr/lib/NetworkManager,
           /usr/share/gtk-doc/html/libnm-glib,
           /usr/share/gtk-doc/html/libnm-util,
-          /usr/share/gtk-doc/html/NetworkManager and
+          /usr/share/gtk-doc/html/NetworkManager, and
           /var/lib/NetworkManager
         </seg>
 @y

@@ -22,18 +22,18 @@ CHANGE_FILES = \
 	gnome-video-effects.ch       \
 	gsettings-desktop-schemas.ch \
 	gtksourceview.ch             \
-	gvfs.ch                     \
-	libgnome-keyring.ch         \
-	libgtop.ch                  \
-	libpeas.ch                  \
-	libsecret.ch                \
-	libwnck.ch                  \
-	libzeitgeist.ch             \
-	platform.ch                 \
-	polkit-gnome.ch             \
-	totem-pl-parser.ch          \
-	vte.ch                      \
-	yelp.ch                     \
+	gvfs.ch                      \
+	libgnome-keyring.ch          \
+	libgtop.ch                   \
+	libpeas.ch                   \
+	libsecret.ch                 \
+	libwnck.ch                   \
+	libzeitgeist.ch              \
+	platform.ch                  \
+	polkit-gnome.ch              \
+	totem-pl-parser.ch           \
+	vte.ch                       \
+	yelp.ch                      \
 	yelp-xsl.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

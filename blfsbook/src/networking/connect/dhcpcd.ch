@@ -120,17 +120,14 @@
 
 @x
     <para>By default, a plain text lease info file isn't created but the
-      <application>dhcpcd</application> provides a hook which can be used for creating
-      such a file. Install the hook by running the following
-      commands as the <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>
-    
-    By default, a plain text lease info file isn't created but the
     <application>dhcpcd</application> provides a hook which can be used for creating
     such a file. Install the hook by running the following
-    commands as the <systemitem class="username">root</systemitem> user:
-    </para>
+    commands as the <systemitem class="username">root</systemitem> user:</para>
+@y
+    <para>By default, a plain text lease info file isn't created but the
+    <application>dhcpcd</application> provides a hook which can be used for creating
+    such a file. Install the hook by running the following
+    commands as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x

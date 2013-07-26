@@ -296,7 +296,7 @@
 
 @x
         <seg>ftpcount, ftpdctl, ftpasswd, ftpmail, ftpquota, ftpscrub,
-             ftptop, ftpshut, ftpcount, ftpwho, proftpd</seg>
+             ftptop, ftpshut, ftpcount, ftpwho, and proftpd</seg>
         <seg>None</seg>
         <seg>/var/run/proftpd</seg>
 @y

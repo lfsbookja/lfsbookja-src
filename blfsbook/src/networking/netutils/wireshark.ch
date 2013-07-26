@@ -24,7 +24,7 @@
     protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
     for analyzing data captured <quote>off the wire</quote> from a live network
     connection, or data read from a capture file.
-    <application>Wireshark</application> provides both a graphical and TTY-mode
+    <application>Wireshark</application> provides both a graphical and a TTY-mode
     front-end for examining captured network packets from over 500 protocols,
     as well as the capability to read capture files from many other popular
     network analyzers.</para>
@@ -33,7 +33,7 @@
     protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
     for analyzing data captured <quote>off the wire</quote> from a live network
     connection, or data read from a capture file.
-    <application>Wireshark</application> provides both a graphical and TTY-mode
+    <application>Wireshark</application> provides both a graphical and a TTY-mode
     front-end for examining captured network packets from over 500 protocols,
     as well as the capability to read capture files from many other popular
     network analyzers.</para>
@@ -109,12 +109,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><!--<xref linkend="GLib"/> or --><xref linkend="glib2"/>
-    (to build the TTY-mode front-end only)</para>
+    <para role="required">
+      <xref linkend="glib2"/> (to build the TTY-mode front-end only)
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><!--<xref linkend="GLib"/> or --><xref linkend="glib2"/>
-    (to build the TTY-mode front-end only)</para>
+    <para role="required">
+      <xref linkend="glib2"/> (to build the TTY-mode front-end only)
+    </para>
 @z
 
 @x
@@ -190,19 +192,19 @@
 @x
       <para>The kernel must have the Packet protocol enabled for
       <application>Wireshark</application> to capture live packets from the
-      network. Enable the Packet protocol by choosing <quote>Y</quote> in the
-      <quote>Networking</quote> &ndash; <quote>Packet socket</quote>
-      configuration parameter. Alternatively, build the
-      <filename>af_packet.ko</filename> module by choosing <quote>M</quote> in
-      this parameter.</para>
+      network.</para>
 @y
       <para>The kernel must have the Packet protocol enabled for
       <application>Wireshark</application> to capture live packets from the
-      network. Enable the Packet protocol by choosing <quote>Y</quote> in the
-      <quote>Networking</quote> &ndash; <quote>Packet socket</quote>
-      configuration parameter. Alternatively, build the
-      <filename>af_packet.ko</filename> module by choosing <quote>M</quote> in
-      this parameter.</para>
+      network.</para>
+@z
+
+@x
+      <para>If built as a module, the name is
+      <filename>af_packet.ko</filename>.</para>
+@y
+      <para>If built as a module, the name is
+      <filename>af_packet.ko</filename>.</para>
 @z
 
 @x
@@ -239,14 +241,22 @@
     <para><application>Wireshark</application> is a very large and complex
     application.  These instructions provide additional security measures to
     ensure that only trusted users are allowed to view network traffic.  First,
-    set up a system groub for wireshark.  As the <systemitem
+    set up a system group for wireshark.  As the <systemitem
     class="username">root</systemitem> user:</para>
 @y
     <para><application>Wireshark</application> is a very large and complex
     application.  These instructions provide additional security measures to
     ensure that only trusted users are allowed to view network traffic.  First,
-    set up a system groub for wireshark.  As the <systemitem
+    set up a system group for wireshark.  As the <systemitem
     class="username">root</systemitem> user:</para>
+@z
+
+@x
+    <para>There are a few issues that prevent the build from completing
+    when generating the man pages.  Fix them up with:</para>
+@y
+    <para>There are a few issues that prevent the build from completing
+    when generating the man pages.  Fix them up with:</para>
 @z
 
 @x
@@ -381,18 +391,18 @@
 
 @x
         <seg>capinfos, dftest, dumpcap, editcap, idl2wrs, mergecap, randpkt,
-        rawshark, text2pcap, tshark and wireshark</seg>
-        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and 
+        rawshark, text2pcap, tshark, and wireshark</seg>
+        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and
         numerous plugin modules</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
-        /usr/share/pixmaps/wireshark and /usr/share/wireshark</seg>
+        /usr/share/pixmaps/wireshark, and /usr/share/wireshark</seg>
 @y
         <seg>capinfos, dftest, dumpcap, editcap, idl2wrs, mergecap, randpkt,
-        rawshark, text2pcap, tshark and wireshark</seg>
-        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and 
+        rawshark, text2pcap, tshark, and wireshark</seg>
+        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and
         numerous plugin modules</seg>
         <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
-        /usr/share/pixmaps/wireshark and /usr/share/wireshark</seg>
+        /usr/share/pixmaps/wireshark, and /usr/share/wireshark</seg>
 @z
 
 @x

@@ -36,6 +36,7 @@ CHANGE_FILES = \
 	libesmtp.ch \
 	libffi.ch \
 	libgcrypt.ch \
+	libgee.ch \
 	libglade.ch \
 	libgpg-error.ch \
 	libgsf.ch \
@@ -107,6 +108,7 @@ libdrm.xml:                $(BOOKdir)/$@ $(srcdir)/libdrm.ch
 libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
 libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
 libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
+libgee.xml:                $(BOOKdir)/$@ $(srcdir)/libgee.ch
 libglade.xml:              $(BOOKdir)/$@ $(srcdir)/libglade.ch
 libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
 libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch

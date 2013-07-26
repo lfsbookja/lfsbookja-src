@@ -333,11 +333,11 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>. Some of
-    the tests are known to fail.</para>
+    <para>To test the results, issue: <command>make test</command>. A few
+    tests may fail.</para>
 @y
-    <para>To test the results, issue: <command>make test</command>. Some of
-    the tests are known to fail.</para>
+    <para>To test the results, issue: <command>make test</command>. A few
+    tests may fail.</para>
 @z
 
 @x

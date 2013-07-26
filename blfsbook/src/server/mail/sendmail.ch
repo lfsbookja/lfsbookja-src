@@ -132,18 +132,16 @@
 @z
 
 @x
-    <para><emphasis>Note:</emphasis> See the source tree
-    <filename>sendmail/README</filename> file for information on linking
-    optional packages into the build. Use the example below, which adds
-    support for SASL, StartTLS
+    <note><para>See the source tree <filename>sendmail/README</filename> file
+    for information on linking optional packages into the build. Use the
+    example below, which adds support for SASL, StartTLS
     (<application>OpenSSL</application>) and
-    <application>OpenLDAP</application>, as a starting point.
-    Of course, modify it to suit your particular needs.</para>
+    <application>OpenLDAP</application>, as a starting point.  Of course,
+    modify it to suit your particular needs.</para></note>
 @y
-    <para><emphasis>メモ:</emphasis>
-    ビルドにあたって任意のパッケージをリンクする方法については、ソースツリー内の <filename>sendmail/README</filename> ファイルを参照してください。
+    <note><para>ビルドにあたって任意のパッケージをリンクする方法については、ソースツリー内の <filename>sendmail/README</filename> ファイルを参照してください。
     以下は本パッケージを利用する一つの例であり、SASLサポート、StartTLS (<application>OpenSSL</application>) サポート、<application>OpenLDAP</application> サポートを加えるものです。
     もちろん必要な状況に応じて設定を変えてください。
-    </para>
+    </para></note>
 @z
 

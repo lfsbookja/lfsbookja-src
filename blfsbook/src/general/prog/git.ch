@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY git-time          "0.6 SBU (additional 2.9 SBU for tests)">
+  <!ENTITY git-time          "0.9 SBU (additional 2.9 SBU for tests)">
 @y
-  <!ENTITY git-time          "0.6 SBU (テスト実行時はさらに 2.9 SBU)">
+  <!ENTITY git-time          "0.9 SBU (テスト実行時はさらに 2.9 SBU)">
 @z
 
 @x

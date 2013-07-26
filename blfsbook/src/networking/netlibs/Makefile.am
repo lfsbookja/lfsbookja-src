@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	curl.ch            \
 	geoclue.ch         \
 	glib-networking.ch \
+	ldns.ch            \
 	libevent.ch        \
 	libnice.ch         \
 	libnl.ch           \
@@ -35,6 +36,7 @@ ctie:
 curl.xml:             $(BOOKdir)/$@ $(srcdir)/curl.ch
 geoclue.xml:          $(BOOKdir)/$@ $(srcdir)/geoclue.ch
 glib-networking.xml:  $(BOOKdir)/$@ $(srcdir)/glib-networking.ch
+ldns.xml:             $(BOOKdir)/$@ $(srcdir)/ldns.ch
 libevent.xml:         $(BOOKdir)/$@ $(srcdir)/libevent.ch
 libnice.xml:          $(BOOKdir)/$@ $(srcdir)/libnice.ch
 libnl.xml:            $(BOOKdir)/$@ $(srcdir)/libnl.ch

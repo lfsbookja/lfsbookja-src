@@ -97,11 +97,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="libgnome-keyring"/> and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="libgnome-keyring"/>,
       <xref linkend="gobject-introspection"/>
     </para>
 @z
