@@ -48,6 +48,50 @@
 @z
 
 @x
+      <para>2013-07-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.10.4.  Fixes
+          <ulink url="&lfs-ticket-root;3383">#3383</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to bison-3.0.  Fixes
+          <ulink url="&lfs-ticket-root;3382">#3382</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-07-29</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.10.4 へのアップデート。
+          <ulink url="&lfs-ticket-root;3383">#3383</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - bison-3.0 へのアップデート。
+          <ulink url="&lfs-ticket-root;3382">#3382</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-07-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-206/udev-lfs-206-1.  Fixes
+          <ulink url="&lfs-ticket-root;3384">#3384</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-07-27</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - systemd-206/udev-lfs-206-1 へのアップデート。
+          <ulink url="&lfs-ticket-root;3384">#3384</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-07-20</para>
       <itemizedlist>
         <listitem>
