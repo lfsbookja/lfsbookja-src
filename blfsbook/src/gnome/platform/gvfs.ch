@@ -97,7 +97,9 @@
     <para role="recommended">
       <xref linkend="gtk3"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/> and
+      <xref linkend="libsoup"/>,
+      <xref linkend="udev"/> or
+      <xref linkend="udev-extras"/> (for GUdev) and
       <xref linkend="udisks2"/>
     </para>
 @y
@@ -106,6 +108,8 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="udev"/> または
+      <xref linkend="udev-extras"/> (GUdev のため),
       <xref linkend="udisks2"/>
     </para>
 @z
@@ -114,18 +118,22 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
+      <xref linkend="bluez"/> and
       <xref linkend="dbus-glib"/>,
       <xref linkend="fuse"/>,
+      <ulink url="&gnome-download-http;/gnome-online-accounts">
+      GNOME Online Accounts</ulink>,
+      <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
       libbluray</ulink>,
-      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>,
+      <ulink url="http://www.gnu.org/software/libcdio/">libcdio-paranoia</ulink>,
       <xref linkend="libgcrypt"/>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
       <xref linkend="openssh"/> and
-      <xref linkend="samba3"/>
+      <xref linkend="samba"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -134,15 +142,19 @@
       <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="fuse"/>,
+      <ulink url="&gnome-download-http;/gnome-online-accounts">
+      GNOME Online Accounts</ulink>,
+      <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <ulink url="http://www.videolan.org/developers/libbluray.html">
       libbluray</ulink>,
-      <ulink url="http://www.gnu.org/software/libcdio/">libcdio</ulink>,
+      <ulink url="http://www.gnu.org/software/libcdio/">libcdio-paranoia</ulink>,
       <xref linkend="libgcrypt"/>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <xref linkend="openssh"/> and
-      <xref linkend="samba3"/>
+      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
+      <xref linkend="openssh"/>,
+      <xref linkend="samba"/>
     </para>
 @z
 

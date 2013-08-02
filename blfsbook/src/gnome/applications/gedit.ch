@@ -98,30 +98,34 @@
     <para role="recommended">
       <xref linkend="enchant"/> and
       <xref linkend="iso-codes"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="libzeitgeist"/> and
+      <xref linkend="gvfs"/>,
+      <xref linkend="libsoup"/> and
       <xref linkend="pygobject3"/>
+      (<application>Python</application> 3 module)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="enchant"/>,
       <xref linkend="iso-codes"/>,
+      <xref linkend="gvfs"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="libzeitgeist"/>,
       <xref linkend="pygobject3"/>
+      (<application>Python</application> 3 モジュール)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <ulink url="https://launchpad.net/zeitgeist/">Zeitgeist</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="https://launchpad.net/zeitgeist/">Zeitgeist</ulink>
     </para>
 @z
 
@@ -203,8 +207,8 @@
           /usr/include/gedit-3.0,
           /usr/lib/gedit,
           /usr/share/gedit,
-          /usr/share/gtk-doc/html/gedit
-          and /usr/share/help/*/gedit
+          /usr/share/gtk-doc/html/gedit and
+          /usr/share/help/*/gedit
         </seg>
 @y
         <seg>

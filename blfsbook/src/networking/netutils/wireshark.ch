@@ -252,11 +252,11 @@
 @z
 
 @x
-    <para>There are a few issues that prevent the build from completing
-    when generating the man pages.  Fix them up with:</para>
+    <para>There is one issues that prevents the build from completing
+    when generating the man pages.  Fix it up with:</para>
 @y
-    <para>There are a few issues that prevent the build from completing
-    when generating the man pages.  Fix them up with:</para>
+    <para>There is one issues that prevents the build from completing
+    when generating the man pages.  Fix it up with:</para>
 @z
 
 @x

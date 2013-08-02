@@ -210,9 +210,8 @@
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
-          /usr/share/gtk-doc/html/libbrasero-burn,
-          /usr/share/gtk-doc/html/libbrasero-media and
-          /usr/share/help/*/brasero 
+          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media} and
+          /usr/share/help/*/brasero
         </seg>
 @y
         <seg>
@@ -226,9 +225,8 @@
           /usr/include/brasero3,
           /usr/lib/brasero3,
           /usr/share/brasero,
-          /usr/share/gtk-doc/html/libbrasero-burn,
-          /usr/share/gtk-doc/html/libbrasero-media,
-          /usr/share/help/*/brasero 
+          /usr/share/gtk-doc/html/{libbrasero-burn,libbrasero-media},
+          /usr/share/help/*/brasero
         </seg>
 @z
 

@@ -52,6 +52,7 @@ CHANGE_FILES = \
 	libusb-compat.ch \
 	libxml2.ch \
 	libxslt.ch \
+	libzeitgeist.ch \
 	lzo.ch \
 	mtdev.ch \
 	nspr.ch \
@@ -124,6 +125,7 @@ libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
 libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
 libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
 libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
+libzeitgeist.xml:          $(BOOKdir)/$@ $(srcdir)/libzeitgeist.ch
 lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
 mtdev.xml:                 $(BOOKdir)/$@ $(srcdir)/mtdev.ch
 nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch

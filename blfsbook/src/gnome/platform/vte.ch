@@ -80,14 +80,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -106,11 +104,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="http://glade.gnome.org/">Glade</ulink> and
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <ulink url="http://glade.gnome.org/">Glade</ulink>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -162,16 +162,6 @@
       <application>Gobject Introspection</application> bindings.
       Remove if you don't have <xref linkend="gobject-introspection"/>
       installed.
-@z
-
-@x
-      <option>--with-glX</option>: This switch can be passed to
-      the <command>configure</command> script to enable additional
-      drawing methods in the <application>VTE</application> library.
-@y
-      <option>--with-glX</option>: This switch can be passed to
-      the <command>configure</command> script to enable additional
-      drawing methods in the <application>VTE</application> library.
 @z
 
 @x

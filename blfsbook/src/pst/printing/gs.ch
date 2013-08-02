@@ -15,14 +15,14 @@
 
 @x
   <!ENTITY gs-buildsize
-  "195 MB (includes installing libgs.so and both font tarballs)">
+  "215 MB (includes installing libgs.so and both font tarballs)">
   <!ENTITY gs-time
-  "2.5 SBU (includes building and installing libgs.so)">
+  "3.3 SBU (includes building and installing libgs.so)">
 @y
   <!ENTITY gs-buildsize
-  "195 MB (includes installing libgs.so and both font tarballs)">
+  "215 MB (includes installing libgs.so and both font tarballs)">
   <!ENTITY gs-time
-  "2.5 SBU (includes building and installing libgs.so)">
+  "3.3 SBU (includes building and installing libgs.so)">
 @z
 
 @x
@@ -450,7 +450,7 @@
         <seg>
           /usr/include/ghostscript,
           /usr/lib/ghostscript,
-          /usr/share/ghostscript and
+          /usr/share/ghostscript, and
           /usr/share/doc/ghostscript-&gs-version;
         </seg>
 @y

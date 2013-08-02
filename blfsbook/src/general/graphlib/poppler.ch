@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY poppler-buildsize          "112 MB (excluding the encoding data) and
+  <!ENTITY poppler-buildsize          "123 MB (excluding the encoding data) and
            122 MB (including the encoding data)">
 @y
-  <!ENTITY poppler-buildsize          "112 MB (エンコーディングデータを除いた場合),
+  <!ENTITY poppler-buildsize          "123 MB (エンコーディングデータを除いた場合),
            122 MB (エンコーディングデータを含めた場合)">
 @z
 

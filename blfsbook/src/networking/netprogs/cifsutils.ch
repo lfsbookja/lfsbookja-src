@@ -84,11 +84,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="samba3"/></para>
+      <xref linkend="samba"/></para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="samba3"/></para>
+      <xref linkend="samba"/></para>
 @z
 
 @x

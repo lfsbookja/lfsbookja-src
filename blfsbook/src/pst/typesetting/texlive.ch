@@ -82,24 +82,10 @@
     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
-% @x
-%         <para>Required TeX MetaFonts and additional components:
-%         <ulink url="&texlive-texmf-download-ftp;"/></para>
-% @y
-%         <para>必要となる TeX、MetaFonts や他のコンポーネント:
-%         <ulink url="&texlive-texmf-download-ftp;"/></para>
-% @z
-
 @x
-        <para>Download MD5 sum: &texlive-texmf-md5sum;</para>
+        <para>The TeX Live installer: <ulink url="&texlive-installer;"/></para>
 @y
-        <para>&Download; MD5 sum: &texlive-texmf-md5sum;</para>
-@z
-
-@x
-        <para>Download size: &texlive-texmf-size;</para>
-@y
-        <para>&DownloadSize;: &texlive-texmf-size;</para>
+        <para>TeX Live インストーラー: <ulink url="&texlive-installer;"/></para>
 @z
 
 @x
@@ -116,7 +102,6 @@
       <xref linkend="fontconfig"/>,
       <xref linkend="libpng"/>,
       <xref linkend="x-window-system"/>,
-      <!-- <xref linkend="recode"/>, -->
       <xref linkend="icu"/>,
       <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
       <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>,
@@ -134,7 +119,6 @@
       <xref linkend="fontconfig"/>,
       <xref linkend="libpng"/>,
       <xref linkend="x-window-system"/>,
-      <!-- <xref linkend="recode"/>, -->
       <xref linkend="icu"/>,
       <ulink url="http://www.libgd.org/Main_Page">GD</ulink>,
       <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>,
@@ -172,13 +156,13 @@
 @z
 
 @x
-    <para>First, unpack the installer and change into the installer's 
-    directory, <filename class='directory'>install-tl-20111204</filename>.  
+    <para>First, unpack the installer and change into the installer's
+    directory, <filename class='directory'>install-tl-20130730</filename>.
     This directory name may change if the installer package is updated
     by the upstream maintainers.</para>
 @y
     <para>
-    まずはインストーラーを伸張 (解凍) してそのディレクトリ <filename class='directory'>install-tl-20111204</filename> に入ります。
+    まずはインストーラーを伸張 (解凍) してそのディレクトリ <filename class='directory'>install-tl-20130730</filename> に入ります。
     このディレクトリ名は、アップストリームによりインストーラーパッケージが更新されると、名称変更されます。
     </para>
 @z
@@ -211,22 +195,22 @@ The distribution binaries installed below use static linking
 @x
     <para>This command is interactive and allows selection or modification of
     platform, packages, directories, and other options.  The full installation
-    scheme will require about 3 gigabytes of disk space.  The time to complete
-    the download time will depend on your internet connection speed and the
+    scheme will require about 3.5 gigabytes of disk space.  The time to complete
+    the download will depend on your internet connection speed and the
     number of packages selected.</para>
 @y
     <para>This command is interactive and allows selection or modification of
     platform, packages, directories, and other options.  The full installation
-    scheme will require about 3 gigabytes of disk space.  The time to complete
-    the download time will depend on your internet connection speed and the
+    scheme will require about 3.5 gigabytes of disk space.  The time to complete
+    the download will depend on your internet connection speed and the
     number of packages selected.</para>
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make -k check</command>.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    ビルド結果をテストする場合は <command>make -k check</command> を実行します。
     </para>
 @z
 
@@ -428,14 +412,5 @@ The distribution binaries installed below use static linking
           <para>
           <application>TeX Live</application> パッケージには、あまりにも数多くのプログラムが含まれるため、一覧列記することができません。
           詳しくは、各プログラムの man ページを参照するか、あるいはインストールディレクトリの 2011/index.html にある html ページを参照してください。
-          </para>
-@z
-
-@x
-          <para>contains the functions used by the TeX programs to resolve
-          and catalog pathnames used in the Tex installation.</para>
-@y
-          <para>
-          TeX がインストールされているパスを識別するために、TeX 関連プログラムが利用する機能を提供します。
           </para>
 @z

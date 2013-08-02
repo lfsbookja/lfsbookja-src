@@ -101,7 +101,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="nautilus"/> and
       <xref linkend="poppler"/>
     </para>
@@ -109,7 +109,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgnome-keyring"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="nautilus"/>,
       <xref linkend="poppler"/>
     </para>
@@ -186,12 +186,12 @@
 
 @x
       <option>--without-keyring</option>: This switch disables use of
-      the <application>libgnome-keyring</application>. Use this switch
-      if <application>libgnome-keyring</application> is not installed.
+      the <application>libsecret</application>. Use this switch
+      if <application>libsecret</application> is not installed.
 @y
       <option>--without-keyring</option>:
-      本スイッチは <application>libgnome-keyring</application> を利用しないようにします。
-      <application>libgnome-keyring</application> をインストールしていない場合に本スイッチを指定してください。
+      本スイッチは <application>libsecret</application> を利用しないようにします。
+      <application>libsecret</application> をインストールしていない場合に本スイッチを指定してください。
 @z
 
 @x
@@ -231,9 +231,7 @@
           /usr/include/evince,
           /usr/lib/evince,
           /usr/share/evince,
-          /usr/share/gtk-doc/html/evince,
-          /usr/share/gtk-doc/html/libevdocument-3.0,
-          /usr/share/gtk-doc/html/libevview-3.0 and
+          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0} and
           /usr/share/help/*/evince
         </seg>
 @y
@@ -247,9 +245,7 @@
           /usr/include/evince,
           /usr/lib/evince,
           /usr/share/evince,
-          /usr/share/gtk-doc/html/evince,
-          /usr/share/gtk-doc/html/libevdocument-3.0,
-          /usr/share/gtk-doc/html/libevview-3.0,
+          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0},
           /usr/share/help/*/evince
         </seg>
 @z

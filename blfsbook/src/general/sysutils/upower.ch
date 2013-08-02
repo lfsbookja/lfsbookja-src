@@ -147,9 +147,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. Some
+      checks may not pass due to missing files.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストの中には、必要なファイルがないために失敗するものがあります。
 @z
 
 @x

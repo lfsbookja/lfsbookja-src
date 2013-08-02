@@ -80,14 +80,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -106,11 +104,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="http://glade.gnome.org/">Glade</ulink> and
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <ulink url="http://glade.gnome.org/">Glade</ulink>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -177,8 +177,8 @@
         </seg>
         <seg>
           /usr/include/gtksourceview-3.0,
-          /usr/share/gtksourceview-3.0 and
-          /usr/share/gtk-doc/html/gtksourceview-3.0
+          /usr/share/gtk-doc/html/gtksourceview-3.0 and
+          /usr/share/gtksourceview-3.0
         </seg>
 @y
         <seg>
@@ -189,8 +189,8 @@
         </seg>
         <seg>
           /usr/include/gtksourceview-3.0,
-          /usr/share/gtksourceview-3.0 and
-          /usr/share/gtk-doc/html/gtksourceview-3.0
+          /usr/share/gtk-doc/html/gtksourceview-3.0,
+          /usr/share/gtksourceview-3.0
         </seg>
 @z
 

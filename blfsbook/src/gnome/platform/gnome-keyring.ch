@@ -162,14 +162,6 @@
 @z
 
 @x
-      <parameter>--with-root-certs=/etc/ssl/certs</parameter>: This
-      switch specifies where the trusted root certificates are located.
-@y
-      <parameter>--with-root-certs=/etc/ssl/certs</parameter>:
-      このスイッチは、信頼できるルート証明書 (root cetificates) が収容されているディレクトリを指定します。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

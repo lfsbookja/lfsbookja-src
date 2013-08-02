@@ -18,7 +18,7 @@ CHANGE_FILES = \
 	othernetprogs.ch    \
 	rpcbind.ch          \
 	rsync.ch            \
-	samba3.ch           \
+	samba.ch            \
 	wget.ch             \
 	wireless-tools.ch   \
 	wpa_supplicant.ch
@@ -47,7 +47,7 @@ ntp.xml:              $(BOOKdir)/$@ $(srcdir)/ntp.ch
 othernetprogs.xml:    $(BOOKdir)/$@ $(srcdir)/othernetprogs.ch
 rpcbind.xml:          $(BOOKdir)/$@ $(srcdir)/rpcbind.ch
 rsync.xml:            $(BOOKdir)/$@ $(srcdir)/rsync.ch
-samba3.xml:           $(BOOKdir)/$@ $(srcdir)/samba3.ch
+samba.xml:            $(BOOKdir)/$@ $(srcdir)/samba.ch
 wget.xml:             $(BOOKdir)/$@ $(srcdir)/wget.ch
 wireless-tools.xml:   $(BOOKdir)/$@ $(srcdir)/wireless-tools.ch
 wpa_supplicant.xml:   $(BOOKdir)/$@ $(srcdir)/wpa_supplicant.ch

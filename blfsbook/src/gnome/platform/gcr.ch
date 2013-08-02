@@ -82,7 +82,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libtasn1"/> and
@@ -91,7 +91,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
+      <xref linkend="glib2"/>,
       <xref linkend="intltool"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libtasn1"/>,
@@ -102,28 +102,30 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gnupg"/> or
+      <xref linkend="gnupg2"/>,
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gnupg"/> or
+      <xref linkend="gnupg2"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg"/> or
-      <xref linkend="gnupg2"/>,
       <xref linkend="gtk-doc"/> and
       <ulink url="http://www.valgrind.org">Valgrind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg"/> or
-      <xref linkend="gnupg2"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="http://www.valgrind.org">Valgrind</ulink>
     </para>

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=applications platform deprecated
+SUBDIRS=applications platform
 BOOKdir = @abs_bookdir@/gnome
 CHANGE_FILES = \
 	gnome.ch

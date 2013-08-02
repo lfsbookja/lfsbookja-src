@@ -88,14 +88,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="DocBook"/>,
-    <xref linkend="docbook-xsl"/>, and
-    <xref linkend="libxslt"/></para>
+    <para role="required">
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="itstool"/> and
+      <xref linkend="libxslt"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="DocBook"/>,
-    <xref linkend="docbook-xsl"/>,
-    <xref linkend="libxslt"/></para>
+    <para role="required">
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="libxslt"/>
+    </para>
 @z
 
 @x

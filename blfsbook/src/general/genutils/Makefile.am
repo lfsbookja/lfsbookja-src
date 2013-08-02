@@ -19,6 +19,7 @@ CHANGE_FILES = \
 	icon-naming-utils.ch  \
 	imagemagick.ch        \
 	intltool.ch           \
+	js.ch                 \
 	libiodbc.ch           \
 	pinentry.ch           \
 	rarian.ch             \
@@ -26,7 +27,6 @@ CHANGE_FILES = \
 	rxvt-unicode.ch       \
 	screen.ch             \
 	sharutils.ch          \
-	spidermonkey.ch       \
 	tidy.ch               \
 	unixodbc.ch           \
 	xscreensaver.ch 
@@ -55,6 +55,7 @@ hd2u.xml:               $(BOOKdir)/$@ $(srcdir)/hd2u.ch
 icon-naming-utils.xml:  $(BOOKdir)/$@ $(srcdir)/icon-naming-utils.ch
 imagemagick.xml:        $(BOOKdir)/$@ $(srcdir)/imagemagick.ch
 intltool.xml:           $(BOOKdir)/$@ $(srcdir)/intltool.ch
+js.xml:                 $(BOOKdir)/$@ $(srcdir)/js.ch
 pinentry.xml:           $(BOOKdir)/$@ $(srcdir)/pinentry.ch
 rep-gtk.xml:            $(BOOKdir)/$@ $(srcdir)/rep-gtk.ch
 rxvt-unicode.xml:       $(BOOKdir)/$@ $(srcdir)/rxvt-unicode.ch
@@ -65,4 +66,3 @@ xscreensaver.xml:       $(BOOKdir)/$@ $(srcdir)/xscreensaver.ch
 rarian.xml:             $(BOOKdir)/$@ $(srcdir)/rarian.ch
 libiodbc.xml:           $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 sharutils.xml:          $(BOOKdir)/$@ $(srcdir)/sharutils.ch
-spidermonkey.xml:       $(BOOKdir)/$@ $(srcdir)/spidermonkey.ch

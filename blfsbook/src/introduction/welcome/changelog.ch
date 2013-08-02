@@ -42,6 +42,204 @@
 @z
 
 @x
+      <para>August 1st, 2013</para>
+@y
+      <para>2013/08/01</para>
+@z
+@x
+          <para>[bdubbs] - Update to balsa-2.5.1.</para>
+@y
+          <para>[bdubbs] - balsa-2.5.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to icedtea-web-1.4.</para>
+@y
+          <para>[bdubbs] - icedtea-web-1.4 へのアップデート。</para>
+@z
+
+@x
+      <para>July 31st, 2013</para>
+@y
+      <para>2013/07/31</para>
+@z
+@x
+          <para>[bdubbs] - Move gnucash and deprecated gnome packages
+          to the archive.</para>
+@y
+          <para>[bdubbs] - gnucash と gnome の旧パッケージ類をアーカイブへ。</para>
+@z
+@x
+          <para>[bdubbs] - Update to xfce4-settings-4.11.0.</para>
+@y
+          <para>[bdubbs] - xfce4-settings-4.11.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gnome-icon-theme-symbolic-3.8.3.</para>
+@y
+          <para>[bdubbs] - gnome-icon-theme-symbolic-3.8.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to dhcpcd-6.0.4.</para>
+@y
+          <para>[bdubbs] - dhcpcd-6.0.4 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Updated GNOME Applications to latest ones.</para>
+@y
+          <para>[krejzi] - GNOME アプリケーションを最新版へアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to cups-1.6.3.</para>
+@y
+          <para>[bdubbs] - cups-1.6.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Updated to texlive-20130530.</para>
+@y
+          <para>[bdubbs] - texlive-20130530 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Added SCons 2.3.0.</para>
+@y
+          <para>[krejzi] - SCons 2.3.0 の追加。</para>
+@z
+
+@x
+      <para>July 30th, 2013</para>
+@y
+      <para>2013/07/30</para>
+@z
+@x
+          <para>[bdubbs] - Update to ghostscript-9.07.</para>
+@y
+          <para>[bdubbs] - ghostscript-9.07 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to docbook-xsl-1.78.1.</para>
+@y
+          <para>[bdubbs] - docbook-xsl-1.78.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to audacious{,-plugins}-3.4.</para>
+@y
+          <para>[bdubbs] - audacious{,-plugins}-3.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gnutls-3.2.3.</para>
+@y
+          <para>[bdubbs] - gnutls-3.2.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to xine-lib-1.2.3.</para>
+@y
+          <para>[bdubbs] - xine-lib-1.2.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to libdiscid-0.5.1.</para>
+@y
+          <para>[bdubbs] - libdiscid-0.5.1 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Updated Xorg components to latest ones.</para>
+@y
+          <para>[krejzi] - Xorg コンポーネントの最新版へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to poppler-0.24.0.</para>
+@y
+          <para>[bdubbs] - poppler-0.24.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to nmap-6.40.</para>
+@y
+          <para>[bdubbs] - nmap-6.40 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to lynx2.8.8dev.16.</para>
+@y
+          <para>[bdubbs] - lynx2.8.8dev.16 へのアップデート。</para>
+@z
+
+@x
+      <para>July 29th, 2013</para>
+@y
+      <para>2013/07/29</para>
+@z
+@x
+          <para>[bdubbs] - Update to bind-9.9.3-P2 and bind-utils.</para>
+@y
+          <para>[bdubbs] - bind-9.9.3-P2 と bind-utils のアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to wireshark-1.10.1.</para>
+@y
+          <para>[bdubbs] - wireshark-1.10.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to upower-0.9.21.</para>
+@y
+          <para>[bdubbs] - upower-0.9.21 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to ibus-1.5.3.</para>
+@y
+          <para>[bdubbs] - ibus-1.5.3 へのアップデート。</para>
+@z
+
+@x
+      <para>July 28th, 2013</para>
+@y
+      <para>2013/07/28</para>
+@z
+@x
+          <para>[bdubbs] - Update to libgcrypt-1.5.3.</para>
+@y
+          <para>[bdubbs] - libgcrypt-1.5.3 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to qemu-1.5.2.</para>
+@y
+          <para>[bdubbs] - qemu-1.5.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to gnupg-1.4.14.</para>
+@y
+          <para>[bdubbs] - gnupg-1.4.14 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to cifs-utils-6.1.</para>
+@y
+          <para>[bdubbs] - cifs-utils-6.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to samba-4.0.7.</para>
+@y
+          <para>[bdubbs] - samba-4.0.7 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Updated GNOME Core packages to latest ones.</para>
+@y
+          <para>[krejzi] - GNOME コアパッケージの最新版へのアップデート。</para>
+@z
+@x
+          <para>[igor] - FAAD2: prevent installation of mp4ff library and header
+          files.</para>
+@y
+          <para>[igor] - FAAD2: mf4ff ライブラリおよびヘッダーファイルをインストールしないように。</para>
+@z
+
+@x
+      <para>July 27th, 2013</para>
+@y
+      <para>2013/07/27</para>
+@z
+@x
+          <para>[bdubbs] - Update to nfs-utils-1.2.8.</para>
+@y
+          <para>[bdubbs] - nfs-utils-1.2.8 へのアップデート。</para>
+@z
+
+@x
       <para>July 25th, 2013</para>
 @y
       <para>2013/07/25</para>
@@ -118,9 +316,9 @@
           <para>[bdubbs] - p11-kit-0.18.5 へのアップデート。</para>
 @z
 @x
-          <para>[bdubbs] - Update to Network-Manager-0.9.8.2.</para>
+          <para>[bdubbs] - Update to NetworkManager-0.9.8.2.</para>
 @y
-          <para>[bdubbs] - Network-Manager-0.9.8.2 へのアップデート。</para>
+          <para>[bdubbs] - NetworkManager-0.9.8.2 へのアップデート。</para>
 @z
 @x
           <para>[igor] - Restored libgee-0.6.8 from archive as it is needed by

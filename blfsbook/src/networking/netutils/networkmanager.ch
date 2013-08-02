@@ -135,16 +135,16 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
-      ModemManager</ulink> (0.7 and later), and
-      <xref linkend="wpa_supplicant"/> (built with D-Bus support).
+      <ulink url="http://www.freedesktop.org/software/ModemManager/">
+      ModemManager</ulink> and
+      <xref linkend="wpa_supplicant"/> (built with D-Bus support)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/ModemManager/">
-      ModemManager</ulink> (0.7 and later), and
+      <ulink url="http://www.freedesktop.org/software/ModemManager/">
+      ModemManager</ulink>,
       <xref linkend="wpa_supplicant"/> (D-Bus サポートがビルドされたもの)
     </para>
 @z

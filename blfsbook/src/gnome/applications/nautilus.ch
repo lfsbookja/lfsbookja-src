@@ -77,12 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gnome-desktop"/>
+      <xref linkend="gnome-desktop"/> and
+      <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gnome-desktop"/>
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="libnotify"/>
     </para>
 @z
 
@@ -101,20 +103,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>,
       <xref linkend="exempi"/>,
-      <xref linkend="libexif"/>,
-      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink> and
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libexif"/> and
+      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>,
       <xref linkend="exempi"/>,
+      <xref linkend="gtk-doc"/>,
       <xref linkend="libexif"/>,
-      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>,
-      <ulink url="http://valgrind.org/">Valgrind</ulink>
+      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
     </para>
 @z
 
@@ -196,8 +196,8 @@
           /usr/include/nautilus,
           /usr/lib/nautilus,
           /usr/share/gnome-shell/search-providers,
-          /usr/share/nautilus and
-          /usr/share/gtk-doc/html/libnautilus-extension
+          /usr/share/gtk-doc/html/libnautilus-extension and
+          /usr/share/nautilus
         </seg>
 @y
         <seg>
@@ -210,8 +210,8 @@
           /usr/include/nautilus,
           /usr/lib/nautilus,
           /usr/share/gnome-shell/search-providers,
-          /usr/share/nautilus,
-          /usr/share/gtk-doc/html/libnautilus-extension
+          /usr/share/gtk-doc/html/libnautilus-extension,
+          /usr/share/nautilus
         </seg>
 @z
 

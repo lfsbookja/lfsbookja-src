@@ -84,6 +84,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="libzeitgeist"/>,
       <xref linkend="webkitgtk"/> or
       <xref linkend="webkitgtk2"/> and
       <xref linkend="vala"/>
@@ -91,6 +92,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="libzeitgeist"/>,
       <xref linkend="webkitgtk"/> または
       <xref linkend="webkitgtk2"/>,
       <xref linkend="vala"/>
@@ -116,10 +118,9 @@
     <para role="optional">
       <ulink url="&gnome-download-http;/gnome-keyring/">GNOME Keyring (2.x)</ulink> or
       <xref linkend="gcr"/>,
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gtk-doc"/> and
       <xref linkend="libunique"/> or
-      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink> and
-      <xref linkend="libzeitgeist"/>
+      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -128,8 +129,7 @@
       <xref linkend="gcr"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libunique"/> または
-      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>,
-      <xref linkend="libzeitgeist"/>
+      <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>
     </para>
 @z
 

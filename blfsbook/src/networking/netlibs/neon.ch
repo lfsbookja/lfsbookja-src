@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>neon</application> package is an HTTP and WebDAV
-    client library, with a C interface.</para>
+      <application>neon</application> is an HTTP and WebDAV
+      client library, with a C interface.
 @y
-    <para>
-    <application>neon</application> パッケージは、HTTP と WebDAV のクライアントライブラリであり、C 言語によるインターフェースを提供します。
-    </para>
+      <application>neon</application> パッケージは、HTTP と WebDAV のクライアントライブラリであり、C 言語によるインターフェースを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&neon-download-http;"/></para>
+          Download (HTTP): <ulink url="&neon-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&neon-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&neon-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&neon-download-ftp;"/></para>
+          Download (FTP): <ulink url="&neon-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&neon-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&neon-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &neon-md5sum;</para>
+          Download MD5 sum: &neon-md5sum;
 @y
-        <para>&Download; MD5 sum: &neon-md5sum;</para>
+          &Download; MD5 sum: &neon-md5sum;
 @z
 
 @x
-        <para>Download size: &neon-size;</para>
+          Download size: &neon-size;
 @y
-        <para>&DownloadSize;: &neon-size;</para>
+          &DownloadSize;: &neon-size;
 @z
 
 @x
-        <para>Estimated disk space required: &neon-buildsize;</para>
+          Estimated disk space required: &neon-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &neon-buildsize;</para>
+          &Estimateddiskspacerequired;: &neon-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &neon-time;</para>
+          Estimated build time: &neon-time;
 @y
-        <para>&Estimatedbuildtime;: &neon-time;</para>
+          &Estimatedbuildtime;: &neon-time;
 @z
 
 @x
@@ -80,31 +78,41 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libxml2"/> or
-      <xref linkend="expat"/></para>
+      <xref linkend="expat"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libxml2"/> または
-      <xref linkend="expat"/></para>
+      <xref linkend="expat"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/> or
+      <xref linkend="gnutls"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="openssl"/> または
+      <xref linkend="gnutls"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/> or
-      <xref linkend="gnutls"/>,
-      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>
-      (requires <xref linkend="pkgconfig"/> to find it),
+      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>,
       <xref linkend="mitkrb"/> and
       <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/> または
-      <xref linkend="gnutls"/>,
-      <ulink url="http://code.google.com/p/libproxy/">Libproxy</ulink>
-      (これを見出すために <xref linkend="pkgconfig"/> も必要),
+      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
     </para>
@@ -112,10 +120,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/neon"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/neon"/></para>
 @z
 
 @x
@@ -125,28 +131,24 @@
 @z
 
 @x
-    <para>Install <application>neon</application> by running the following
-    commands:</para>
+      Install <application>neon</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>neon</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>neon</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make -k check</command>.
+      Some tests are known to fail.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストの中には失敗するものがあります。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -156,68 +158,30 @@
 @z
 
 @x
-    <para><parameter>--enable-shared</parameter>: This parameter is needed to
-    build the shared libraries, otherwise only static libraries are built and
-    installed.</para>
+      <option>--with-ssl</option>: This switch enables SSL support
+      using <application>OpenSSL</application> or
+      <application>GnuTLS</application> respectively. Remove it if
+      you don't have any of these installed. To force
+      <application>GnuTLS</application> usage when both are present,
+      simply pass <parameter>--with-ssl=gnutls</parameter> to the
+      <command>configure</command> script.
 @y
-    <para><parameter>--enable-shared</parameter>: 
-    このオプションは共有ライブラリをビルド際に指定します。
-    指定しなかった場合は、スタティックライブラリのみがビルドされインストールされます。
-    </para>
+      <option>--with-ssl</option>: This switch enables SSL support
+      using <application>OpenSSL</application> or
+      <application>GnuTLS</application> respectively. Remove it if
+      you don't have any of these installed. To force
+      <application>GnuTLS</application> usage when both are present,
+      simply pass <parameter>--with-ssl=gnutls</parameter> to the
+      <command>configure</command> script.
 @z
 
 @x
-    <para><parameter>--disable-static</parameter>: This parameter prevents the
-    static libraries being installed.</para>
+      <option>--with-libxml2</option>: This switch forces the use of
+      <application>libxml2</application> instead of
+      <application>Expat</application>.
 @y
-    <para><parameter>--disable-static</parameter>:
-    このパラメーターはスタティックライブラリをインストールしないようにします。
-    </para>
-@z
-
-@x
-    <para><option>--with-ssl=openssl</option>: This option enables SSL support
-    using <application>openssl</application>.</para>
-@y
-    <para><option>--with-ssl=openssl</option>:
-    このパラメーターは <application>openssl</application> を利用した SSL サポートを有効にします。
-    </para>
-@z
-
-@x
-    <para><option>--with-ssl=gnutls</option>: This option enables SSL support
-    using <application>gnutls</application>.</para>
-@y
-    <para><option>--with-ssl=gnutls</option>:
-    このパラメーターは <application>gnutls</application> を利用した SSL サポートを有効にします。
-    </para>
-@z
-
-@x
-    <para><option>--with-libxml2</option>: This option forces the use of
-    <application>libxml2</application>.</para>
-@y
-    <para><option>--with-libxml2</option>:
-    このパラメーターは <application>libxml2</application> を必ず利用するように指示します。
-    </para>
-@z
-
-@x
-    <para><option>--with-expat</option>: This option forces the use of
-    <application>expat</application>.</para>
-@y
-    <para><option>--with-expat</option>:
-    このパラメーターは <application>expat</application> を必ず利用するように指示します。
-    </para>
-@z
-
-@x
-    <para>If you wish to use the other optional dependencies, consult the
-    output of <command>./configure --help</command>.</para>
-@y
-    <para>
-    その他の依存パッケージを利用したい場合は <command>./configure --help</command> による出力結果を参照してください。
-    </para>
+      <option>--with-libxml2</option>:
+      このスイッチは <application>Expat</application> は利用せず <application>libxml2</application> を利用することを指示します。
 @z
 
 @x
@@ -237,13 +201,27 @@
 @z
 
 @x
-        <seg>neon-config</seg>
-        <seg>libneon.so</seg>
-        <seg>/usr/{include/neon,share/doc/neon-0.29.6/html}</seg>
+        <seg>
+          neon-config
+        </seg>
+        <seg>
+          libneon.so
+        </seg>
+        <seg>
+          /usr/include/neon and
+          /usr/share/doc/neon-&neon-version;
+        </seg>
 @y
-        <seg>neon-config</seg>
-        <seg>libneon.so</seg>
-        <seg>/usr/{include/neon,share/doc/neon-0.29.6/html}</seg>
+        <seg>
+          neon-config
+        </seg>
+        <seg>
+          libneon.so
+        </seg>
+        <seg>
+          /usr/include/neon,
+          /usr/share/doc/neon-&neon-version;
+        </seg>
 @z
 
 @x
@@ -252,20 +230,9 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x neon-config
-          <para>is a script which provides information about an installed copy
-          of the <application>neon</application> library.</para>
+@x libneon.so
+            is used as a high-level interface to common HTTP and WebDAV
+            methods.
 @y
-          <para>
-          インストール済の <application>neon</application> ライブラリについての情報を提供します。
-          </para>
-@z
-
-@x libneon.{so,a}
-          <para>is used as a high-level interface to common HTTP and WebDAV
-          methods.</para>
-@y
-          <para>
-          一般的な HTTP や WebDAV に対する高レベルインターフェースとして用いられます。
-          </para>
+            一般的な HTTP や WebDAV に対する高レベルインターフェースとして用いられます。
 @z

@@ -22,21 +22,17 @@
 @x
     <para>The <application>Samba</application> package provides file and print
     services to SMB/CIFS clients and Windows networking to Linux clients.
-    <application>Samba</application> can also be configured as a Windows NT
-    4.0 Domain Controller replacement (with caveats working with NT PDC's and
-    BDC's), a file/print server acting as a member of a Windows NT 4.0 or
+    <application>Samba</application> can also be configured as a Windows Domain
+    Controller replacement, a file/print server acting as a member of a Windows
     Active Directory domain and a NetBIOS (rfc1001/1002) nameserver (which
-    amongst other things provides LAN browsing support).</para>
+    among other things provides LAN browsing support).</para>
 @y
-    <para>
-    <application>Samba</application> パッケージは、package provides file and print
+    <para>The <application>Samba</application> package provides file and print
     services to SMB/CIFS clients and Windows networking to Linux clients.
-    <application>Samba</application> can also be configured as a Windows NT
-    4.0 Domain Controller replacement (with caveats working with NT PDC's and
-    BDC's), a file/print server acting as a member of a Windows NT 4.0 or
+    <application>Samba</application> can also be configured as a Windows Domain
+    Controller replacement, a file/print server acting as a member of a Windows
     Active Directory domain and a NetBIOS (rfc1001/1002) nameserver (which
-    amongst other things provides LAN browsing support).
-    </para>
+    among other things provides LAN browsing support).</para>
 @z
 
 @x
@@ -46,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&samba3-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&samba-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&samba3-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&samba-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&samba3-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&samba-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&samba3-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&samba-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &samba3-md5sum;</para>
+        <para>Download MD5 sum: &samba-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &samba3-md5sum;</para>
+        <para>&Download; MD5 sum: &samba-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &samba3-size;</para>
+        <para>Download size: &samba-size;</para>
 @y
-        <para>&DownloadSize;: &samba3-size;</para>
+        <para>&DownloadSize;: &samba-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &samba3-buildsize;</para>
+        <para>Estimated disk space required: &samba-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &samba3-buildsize;</para>
+        <para>&Estimateddiskspacerequired;: &samba-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &samba3-time;</para>
+        <para>Estimated build time: &samba-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &samba3-time;</para>
+        <para>&Estimatedbuildtime;: &samba-time;</para>
 @z
 
 @x
@@ -89,50 +85,52 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="popt"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="gamin"/>,
-    <xref linkend="acl"/>,
-    <xref linkend="xfsprogs"/>,
-    <xref linkend="mitkrb"/>,
-    <xref linkend="python2"/> (used only in parts of the test suite),
-    <ulink url="http://tdb.samba.org/">tdb</ulink>,
-    <ulink url="http://ctdb.samba.org/">ctdb</ulink>,
-    <xref linkend="libcap2"/>,
-    <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-    <xref linkend="avahi"/>,
-    <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-    and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
-    used by the test suite)</para>
+    <para role="optional">
+      <xref linkend="popt"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="gamin"/>,
+      <xref linkend="acl"/>,
+      <xref linkend="xfsprogs"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="python2"/> (used only in parts of the test suite),
+      <xref linkend="libxslt"/> (used only for documentation),
+      <ulink url="http://tdb.samba.org/">tdb</ulink>,
+      <ulink url="http://ctdb.samba.org/">ctdb</ulink>,
+      <xref linkend="libcap2"/>,
+      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
+      <xref linkend="avahi"/>,
+      <ulink url="http://www.openafs.org/">OpenAFS</ulink>, and
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
+        used by the test suite)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="popt"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="cups"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="gamin"/>,
-    <xref linkend="acl"/>,
-    <xref linkend="xfsprogs"/>,
-    <xref linkend="mitkrb"/>,
-    <xref linkend="python2"/> (used only in parts of the test suite),
-    <ulink url="http://tdb.samba.org/">tdb</ulink>,
-    <ulink url="http://ctdb.samba.org/">ctdb</ulink>,
-    <xref linkend="libcap2"/>,
-    <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-    <xref linkend="avahi"/>,
-    <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-    and <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
-    used by the test suite)</para>
+    <para role="optional">
+      <xref linkend="popt"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="cups"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="gamin"/>,
+      <xref linkend="acl"/>,
+      <xref linkend="xfsprogs"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="python2"/> (used only in parts of the test suite),
+      <xref linkend="libxslt"/> (used only for documentation),
+      <ulink url="http://tdb.samba.org/">tdb</ulink>,
+      <ulink url="http://ctdb.samba.org/">ctdb</ulink>,
+      <xref linkend="libcap2"/>,
+      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
+      <xref linkend="avahi"/>,
+      <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
+      <ulink url="http://valgrind.org/">Valgrind</ulink> (optionally
+        used by the test suite)</para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/samba3"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/samba3"/></para>
 @z
 
 @x
@@ -143,15 +141,16 @@
 
 @x
       <para>If you wish to run the test suite after the binaries are built,
-      you must add the <option>--enable-socket-wrapper</option> parameter to
+      you must add the <option>--enable-socket-wrapper</option> 
+      and <option>--enable-selftest</option> parameters to
       the <command>configure</command> script below. You may want to run
       <command>configure</command> with the <option>--help</option> parameter
       first. There may be other parameters needed to take advantage of
       optional dependencies.</para>
 @y
       <para>
-      実行モジュール類をビルドしテストスイートを実行するなら、以下の <command>configure</command> スクリプトに対して <option>--enable-socket-wrapper</option> パラメーターを指定する必要があります。
-      まずは <command>configure</command> スクリプトに <option>--help</option> パラメータをつけて実行してみてください。
+      実行モジュール類をビルドしテストスイートを実行するなら、以下の <command>configure</command> スクリプトに対して <option>--enable-socket-wrapper</option> パラメーターや <option>--enable-selftest</option> パラメーターを指定する必要があります。
+      まずは <command>configure</command> スクリプトに <option>--help</option> パラメーターをつけて実行してみてください。
       さまざまな機能を利用するために必要となる他のパラメーターの情報が得られます。
       </para>
 @z
@@ -166,15 +165,15 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>. If you have
-    <application>Linux-PAM</application> installed and built the PAM library
-    modules, you can perform a dlopen test by issuing:
-    <command>make test_pam_modules</command>.</para>
+    <para>To test the results, as the <systemitem
+    class="username">root</systemitem> user,issue: <command>make
+    quicktest</command> (about 8 SBU).  There are other targets (test,
+    subunit-test) available, but take a very long (over 100 SBU) time.</para>
 @y
-    <para>To test the results, issue: <command>make test</command>. If you have
-    <application>Linux-PAM</application> installed and built the PAM library
-    modules, you can perform a dlopen test by issuing:
-    <command>make test_pam_modules</command>.</para>
+    <para>To test the results, as the <systemitem
+    class="username">root</systemitem> user,issue: <command>make
+    quicktest</command> (about 8 SBU).  There are other targets (test,
+    subunit-test) available, but take a very long (over 100 SBU) time.</para>
 @z
 
 @x
@@ -223,30 +222,6 @@
     <parameter>--with-fhs</parameter>:
     インストール先とするパスを、ファイルシステム階層標準 (Filesystem Hierarchy Standard; FHS) にならうようにします。
     </para>
-@z
-
-@x
-    <para><command>install -v -m755 nsswitch/libnss_win{s,bind}.so /lib</command>:
-    The nss libraries are not installed by default. If you intend to use
-    winbindd for Windows NT domain authentication, and/or WINS name resolution,
-    you need these libraries.</para>
-@y
-    <para><command>install -v -m755 nsswitch/libnss_win{s,bind}.so /lib</command>:
-    The nss libraries are not installed by default. If you intend to use
-    winbindd for Windows NT domain authentication, and/or WINS name resolution,
-    you need these libraries.</para>
-@z
-
-@x
-    <para><command>ln -v -sf libnss_winbind.so /lib/libnss_winbind.so.2</command>
-    and <command>ln -v -sf libnss_wins.so /lib/libnss_wins.so.2</command>:
-    These symlinks are required by <application>Glibc</application> to use the
-    NSS libraries.</para>
-@y
-    <para><command>ln -v -sf libnss_winbind.so /lib/libnss_winbind.so.2</command>
-    and <command>ln -v -sf libnss_wins.so /lib/libnss_wins.so.2</command>:
-    These symlinks are required by <application>Glibc</application> to use the
-    NSS libraries.</para>
 @z
 
 @x
@@ -550,26 +525,18 @@
 
 @x
         <para>More complex scenarios involving domain control or membership are
-        possible if the right flags are passed to the ./configure script when
-        the package is built. Such setups are advanced topics and cannot be
-        adequately covered in BLFS. Many complete books have been written on
-        these topics alone. It should be noted, however, that a
-        <application>Samba</application> BDC cannot be used as a fallback
-        for a Windows PDC, and conversely, a Windows BDC cannot be used as a
-        fallback for a <application>Samba</application> PDC. Also in some
-        domain membership scenarios, the <command>winbindd</command> daemon and
-        the corresponding bootscript are needed.</para>
+        possible.  Such setups are advanced topics and cannot be adequately
+        covered in BLFS. Many complete books have been written on these topics
+        alone.  Note that in some domain membership scenarios, the
+        <command>winbindd</command> daemon and the corresponding bootscript are
+        needed.</para>
 @y
         <para>More complex scenarios involving domain control or membership are
-        possible if the right flags are passed to the ./configure script when
-        the package is built. Such setups are advanced topics and cannot be
-        adequately covered in BLFS. Many complete books have been written on
-        these topics alone. It should be noted, however, that a
-        <application>Samba</application> BDC cannot be used as a fallback
-        for a Windows PDC, and conversely, a Windows BDC cannot be used as a
-        fallback for a <application>Samba</application> PDC. Also in some
-        domain membership scenarios, the <command>winbindd</command> daemon and
-        the corresponding bootscript are needed.</para>
+        possible.  Such setups are advanced topics and cannot be adequately
+        covered in BLFS. Many complete books have been written on these topics
+        alone.  Note that in some domain membership scenarios, the
+        <command>winbindd</command> daemon and the corresponding bootscript are
+        needed.</para>
 @z
 
 @x
@@ -586,38 +553,38 @@
 
 @x
             <para>Using Samba, 2nd Edition; a popular book published by O'Reilly
-            <ulink url="file:///usr/share/samba/swat/using_samba/toc.html"/></para>
+            <ulink url="http://www.samba.org/samba/docs/using_samba/toc.html"/></para>
 @y
             <para>Using Samba, 2nd Edition; a popular book published by O'Reilly
-            <ulink url="file:///usr/share/samba/swat/using_samba/toc.html"/></para>
+            <ulink url="http://www.samba.org/samba/docs/using_samba/toc.html"/></para>
 @z
 
 @x
             <para>The Official Samba HOWTO and Reference Guide <ulink
-            url="file:///usr/share/samba/swat/help/Samba-HOWTO-Collection/index.html"/>
+            url="http://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/"/>
             </para>
 @y
             <para>The Official Samba HOWTO and Reference Guide <ulink
-            url="file:///usr/share/samba/swat/help/Samba-HOWTO-Collection/index.html"/>
+            url="http://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/"/>
             </para>
 @z
 
 @x
             <para>Samba-3 by Example
-            <ulink url="file:///usr/share/samba/swat/help/Samba-Guide/index.html"/>
+            <ulink url="http://www.samba.org/samba/docs/man/Samba-Guide/"/>
             </para>
 @y
             <para>Samba-3 by Example
-            <ulink url="file:///usr/share/samba/swat/help/Samba-Guide/index.html"/>
+            <ulink url="http://www.samba.org/samba/docs/man/Samba-Guide/"/>
             </para>
 @z
 
 @x
             <para>The Samba-3 man Pages
-            <ulink url="file:///usr/share/samba/swat/help/samba.7.html"/></para>
+            <ulink url="file:///usr/share/samba/swat/help/manpages/samba.7.html"/></para>
 @y
             <para>The Samba-3 man Pages
-            <ulink url="file:///usr/share/samba/swat/help/samba.7.html"/></para>
+            <ulink url="file:///usr/share/samba/swat/help/manpages/samba.7.html"/></para>
 @z
 
 @x
@@ -634,11 +601,5 @@
       <para>The SWAT (<application>Samba</application> Web Administration Tool)
       utility can be used for configuration of the
       <application>Samba</application> installation.</para>
-@z
-
-@x
-        <title>Setting up SWAT using inetd</title>
-@y
-        <title>Setting up SWAT using inetd</title>
 @z
 

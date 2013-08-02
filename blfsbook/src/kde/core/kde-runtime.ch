@@ -126,27 +126,27 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
     <xref linkend="gdb"/>,
-    <xref linkend="pulseaudio"/>, 
-    <xref linkend="xine-lib"/>, 
-    <xref linkend="libcanberra"/>, 
-    <xref linkend="samba3"/>,
+    <xref linkend="pulseaudio"/>,
+    <xref linkend="xine-lib"/>,
+    <xref linkend="libcanberra"/>,
+    <xref linkend="samba"/>,
     <xref linkend="NetworkManager"/>,
-    <ulink url="http://www.openslp.org/">OpenSLP</ulink>, 
-    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>, 
-    <ulink url="http://www.libssh.org/">LibSSH</ulink> and 
+    <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>,
+    <ulink url="http://www.libssh.org/">LibSSH</ulink> and
     <ulink url="http://www.openexr.com/">OpenEXR</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="gdb"/>,
-    <xref linkend="pulseaudio"/>, 
-    <xref linkend="xine-lib"/>, 
-    <xref linkend="libcanberra"/>, 
-    <xref linkend="samba3"/>,
+    <xref linkend="pulseaudio"/>,
+    <xref linkend="xine-lib"/>,
+    <xref linkend="libcanberra"/>,
+    <xref linkend="samba"/>,
     <xref linkend="NetworkManager"/>,
-    <ulink url="http://www.openslp.org/">OpenSLP</ulink>, 
-    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>, 
+    <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+    <ulink url="http://launchpad.net/ntrack">QNtrack</ulink>,
     <ulink url="http://www.libssh.org/">LibSSH</ulink>,
     <ulink url="http://www.openexr.com/">OpenEXR</ulink>
     </para>

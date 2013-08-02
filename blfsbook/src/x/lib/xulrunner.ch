@@ -127,8 +127,6 @@
       <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
-      (for integration with the old version of <application>GNOME</application>),
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
       <xref linkend="startup-notification"/>,
@@ -141,12 +139,10 @@
       <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="gnome-vfs"/> and <xref linkend="libgnomeui"/>
-      (for integration with the old version of <application>GNOME</application>),
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
       <xref linkend="startup-notification"/>,
-      <xref linkend="wget"/> and
+      <xref linkend="wget"/>,
       <xref linkend="wireless_tools"/>
     </para>
 @z

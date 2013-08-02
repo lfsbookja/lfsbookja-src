@@ -80,18 +80,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="openssl"/>,
       <xref linkend="curl"/>,
+      <xref linkend="intltool"/>,
       <xref linkend="libevent"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="openssl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="openssl"/>,
       <xref linkend="curl"/>,
+      <xref linkend="intltool"/>,
       <xref linkend="libevent"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="openssl"/>
     </para>
 @z
 
@@ -166,6 +166,23 @@
       as the <systemitem class="username">root</systemitem> user:
 @y
       Qt GUI をビルドしている場合は <systemitem class="username">root</systemitem> ユーザーとなって以下を実行することでインストールします。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--without-gtk</option>: This switch disables building of the
+      <application>GTK+</application> interface if
+      <application>GTK+</application> is present on the system (useful for
+      <application>Qt4</application> or cli only builds).
+@y
+      <option>--without-gtk</option>:
+      このスイッチは <application>GTK+</application> がインストールされている場合にはそのインターフェースをビルドしないようにします。
+      (これは <application>Qt4</application> または cli のみのビルド時には有用です。)
 @z
 
 @x

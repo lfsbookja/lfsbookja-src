@@ -45,7 +45,6 @@ CHANGE_FILES = \
 	libmpeg2.ch           \
 	libmpeg3.ch           \
 	libmusicbrainz.ch     \
-	libmusicbrainz3.ch    \
 	libmusicbrainz5.ch    \
 	libogg.ch             \
 	libquicktime.ch       \
@@ -116,7 +115,6 @@ libmad.xml:                  $(BOOKdir)/$@ $(srcdir)/libmad.ch
 libmpeg2.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg2.ch
 libmpeg3.xml:                $(BOOKdir)/$@ $(srcdir)/libmpeg3.ch
 libmusicbrainz.xml:          $(BOOKdir)/$@ $(srcdir)/libmusicbrainz.ch
-libmusicbrainz3.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz3.ch
 libmusicbrainz5.xml:         $(BOOKdir)/$@ $(srcdir)/libmusicbrainz5.ch
 libogg.xml:                  $(BOOKdir)/$@ $(srcdir)/libogg.ch
 libquicktime.xml:            $(BOOKdir)/$@ $(srcdir)/libquicktime.ch

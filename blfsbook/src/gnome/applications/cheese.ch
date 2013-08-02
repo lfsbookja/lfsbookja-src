@@ -235,7 +235,7 @@
 
 @x libcheese-gtk.so
             contains the <application>Cheese</application>
-            <application>GTK+</application> bindings.
+            <application>GTK+</application> widgets.
 @y
-            <application>Cheese</application> の <application>GTK+</application> バインディングを提供します。
+            <application>Cheese</application> の <application>GTK+</application> ウィジェットを提供します。
 @z

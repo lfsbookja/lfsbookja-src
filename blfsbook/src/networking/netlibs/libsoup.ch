@@ -97,13 +97,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libgnome-keyring"/> and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libgnome-keyring"/>,
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -116,7 +114,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="php"/> compiled with XMLRPC-EPI <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
       support (only used for the XMLRPC regression tests) and
-      <xref linkend="samba3"/> (ntlm_auth is required to run the test suite).
+      <xref linkend="samba"/> (ntlm_auth is required to run the test suite).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -126,7 +124,7 @@
       <xref linkend="gtk-doc"/>,
       XMLRPC-EPI サポートがビルドされている <xref linkend="php"/> <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
       (XMLRPC の縮退テストにおいてのみ利用される),
-      <xref linkend="samba3"/> (テストスイートを実行する場合は ntlm_auth が必要).
+      <xref linkend="samba"/> (テストスイートを実行する場合は ntlm_auth が必要)
     </para>
 @z
 

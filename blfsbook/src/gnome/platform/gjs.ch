@@ -78,17 +78,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="gobject-introspection"/> and
-      <xref linkend="SpiderMonkey"/>
+      <xref linkend="JS"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="SpiderMonkey"/>
+      <xref linkend="JS"/>
     </para>
 @z
 
@@ -131,7 +129,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -144,7 +142,7 @@
           gjs and gjs-console
         </seg>
         <seg>
-          libgjs-dbus.so and libgjs.so
+          libgjs.so
         </seg>
         <seg>
           /usr/include/gjs-1.0,
@@ -157,7 +155,7 @@
           gjs, gjs-console
         </seg>
         <seg>
-          libgjs-dbus.so, libgjs.so
+          libgjs.so
         </seg>
         <seg>
           /usr/include/gjs-1.0,

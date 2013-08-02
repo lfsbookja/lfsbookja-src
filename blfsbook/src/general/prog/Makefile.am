@@ -39,6 +39,7 @@ CHANGE_FILES = \
 	python2.ch        \
 	python3.ch        \
 	ruby.ch           \
+	scons.ch          \
 	slang.ch          \
 	subversion.ch     \
 	svnserver.ch      \
@@ -92,6 +93,7 @@ python-modules.xml: $(BOOKdir)/$@ $(srcdir)/python-modules.ch
 python2.xml:        $(BOOKdir)/$@ $(srcdir)/python2.ch
 python3.xml:        $(BOOKdir)/$@ $(srcdir)/python3.ch
 ruby.xml:           $(BOOKdir)/$@ $(srcdir)/ruby.ch
+scons.xml:          $(BOOKdir)/$@ $(srcdir)/scons.ch
 slang.xml:          $(BOOKdir)/$@ $(srcdir)/slang.ch
 subversion.xml:     $(BOOKdir)/$@ $(srcdir)/subversion.ch
 svnserver.xml:      $(BOOKdir)/$@ $(srcdir)/svnserver.ch

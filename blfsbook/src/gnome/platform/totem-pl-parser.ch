@@ -96,29 +96,29 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libarchive"/> and
+      <xref linkend="libgcrypt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libarchive"/>,
+      <xref linkend="libgcrypt"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libgcrypt"/> and
+      <xref linkend="gtk-doc"/> and
       <ulink url="http://sourceforge.net/projects/quvi">libquvi</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libgcrypt"/>,
       <ulink url="http://sourceforge.net/projects/quvi">libquvi</ulink>
     </para>
 @z

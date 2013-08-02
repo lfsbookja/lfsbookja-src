@@ -77,7 +77,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="GConf"/>,
+      <xref linkend="dconf"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="vte"/> and
       <xref linkend="yelp-xsl"/>
@@ -85,7 +85,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="GConf"/>,
+      <xref linkend="dconf"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="vte"/>,
       <xref linkend="yelp-xsl"/>
@@ -147,7 +147,7 @@
           None
         </seg>
         <seg>
-          /usr/share/gnome-terminal and
+          /usr/lib/gnome-terminal and
           /usr/share/help/*/gnome-terminal
         </seg>
 @y
@@ -158,7 +158,7 @@
           &None;
         </seg>
         <seg>
-          /usr/share/gnome-terminal,
+          /usr/lib/gnome-terminal and
           /usr/share/help/*/gnome-terminal
         </seg>
 @z
