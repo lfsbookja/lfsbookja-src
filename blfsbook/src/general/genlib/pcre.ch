@@ -171,6 +171,14 @@
 @z
 
 @x
+      <option>--enable-pcretest-libreadline</option>: This switch adds line
+      editing and history features to <command>pcretest</command> program.
+@y
+      <option>--enable-pcretest-libreadline</option>:
+      このスイッチは <command>pcretest</command> プログラムにおいて、行編集および履歴機能を付与します。
+@z
+
+@x
       <command>mv -v /usr/lib/libpcre.so.* /lib</command>: Moves the
       <application>PCRE</application> library on the root filesystem
       so that it is available in case <command>grep</command>

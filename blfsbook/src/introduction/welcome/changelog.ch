@@ -44,7 +44,6 @@
 @x
       <para>August 2nd, 2013</para>
 @y
-    <listitem>
       <para>2013/08/02</para>
 @z
 @x
@@ -61,11 +60,6 @@
           <para>[bdubbs] - Update to iso-codes-3.45.</para>
 @y
           <para>[bdubbs] - iso-codes-3.45 へのアップデート。</para>
-@z
-@x
-          <para>[bdubbs] - Update to vala-0.21.1.</para>
-@y
-          <para>[bdubbs] - vala-0.21.1 へのアップデート。</para>
 @z
 @x
           <para>[bdubbs] - Added sections on stripping and removing

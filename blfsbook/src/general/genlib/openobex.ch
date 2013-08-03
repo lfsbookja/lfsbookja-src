@@ -147,6 +147,14 @@
 @z
 
 @x
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
+@y
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      本スイッチは、より高レベルのコンパイラー最適化オプションを採用することを指定します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

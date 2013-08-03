@@ -90,6 +90,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="DocBook"/> and
+      <xref linkend="docbook-xsl"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libgcrypt"/> and
@@ -101,6 +115,16 @@
       <xref linkend="libgcrypt"/>,
       <xref linkend="python2"/>
     </para>
+@z
+
+@x
+        Although it is not a direct dependency, many applications
+        using <application>libxslt</application> will expect
+        <xref linkend="DocBook"/> and <xref linkend="docbook-xsl"/>
+        to be present.
+@y
+        <application>libxslt</application> を利用しているアプリケーションは、直接の依存関係ではないにせよ、<xref
+        linkend="DocBook"/> や <xref linkend="docbook-xsl"/> を必要としているものが多々あります。
 @z
 
 @x

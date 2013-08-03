@@ -90,6 +90,12 @@
 @z
 
 @x
+        This package does not support parallel build.
+@y
+        本パッケージは並行ビルドをサポートしていません。
+@z
+
+@x
       Install <application>JSON-C</application> by running the following
       commands:
 @y
@@ -161,6 +167,12 @@
 @z
 
 @x libjson.so
+            contains the <application>JSON-C</application> API functions.
+@y
+            <application>JSON-C</application> API 関数を提供します。
+@z
+
+@x libjson-c.so
             contains the <application>JSON-C</application> API functions.
 @y
             <application>JSON-C</application> API 関数を提供します。

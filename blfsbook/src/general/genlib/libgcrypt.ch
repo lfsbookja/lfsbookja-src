@@ -154,6 +154,18 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--with-capabilities</option>: This option enables libcap2 support.
+@y
+      <option>--with-capabilities</option>: 本オプションは libcap2 サポートを有効にします。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
