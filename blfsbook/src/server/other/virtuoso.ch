@@ -277,14 +277,14 @@
         <title>パスワードの変更</title>
 @z
 @x
-        <para>Remember to immediatly change the password of user
+        <para>Remember to immediately change the password of user
         <systemitem class="username">dba</systemitem> as well as of all other
-        predefined users. Click on <literal>[System Admin]</literal> and 
+        predefined users. Click on <literal>[System Admin]</literal> and
         than on <literal>[User Accounts]</literal>.</para>
 @y
-        <para>Remember to immediatly change the password of user
+        <para>Remember to immediately change the password of user
         <systemitem class="username">dba</systemitem> as well as of all other
-        predefined users. Click on <literal>[System Admin]</literal> and 
+        predefined users. Click on <literal>[System Admin]</literal> and
         than on <literal>[User Accounts]</literal>.</para>
 @z
 

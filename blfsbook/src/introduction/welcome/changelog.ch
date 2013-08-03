@@ -42,9 +42,69 @@
 @z
 
 @x
+      <para>August 2nd, 2013</para>
+@y
+    <listitem>
+      <para>2013/08/02</para>
+@z
+@x
+          <para>[fernando] - Fix download URLs for sane-frontends.</para>
+@y
+          <para>[fernando] - sane フロントエンドに対するダウンロード URL を修正。</para>
+@z
+@x
+          <para>[bdubbs] - Update to LVM2-2.02.99.</para>
+@y
+          <para>[bdubbs] - LVM2-2.02.99 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to iso-codes-3.45.</para>
+@y
+          <para>[bdubbs] - iso-codes-3.45 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to vala-0.21.1.</para>
+@y
+          <para>[bdubbs] - vala-0.21.1 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Added sections on stripping and removing
+          .la files to Notes on Buiiding Software in the Introduction.
+          Fixes <ulink url="&blfs-ticket-root;3764">#3764</ulink></para>
+@y
+          <para>[bdubbs] - 「ソフトウェア構築に関するメモ」において .la ファイルのストリップや削除についての説明を追加。
+          <ulink url="&blfs-ticket-root;3764">#3764</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to libdiscid-0.5.2.</para>
+@y
+          <para>[bdubbs] - libdiscid-0.5.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to graphviz-2.32.0.</para>
+@y
+          <para>[bdubbs] - graphviz-2.32.0 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to libgsf-1.14.28.</para>
+@y
+          <para>[bdubbs] - libgsf-1.14.28 へのアップデート。</para>
+@z
+
+@x
       <para>August 1st, 2013</para>
 @y
       <para>2013/08/01</para>
+@z
+@x
+          <para>[bdubbs] - Update to seamonkey-2.19.</para>
+@y
+          <para>[bdubbs] - seamonkey-2.19 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to cups-filters-1.0.35.</para>
+@y
+          <para>[bdubbs] - cups-filters-1.0.35 へのアップデート。</para>
 @z
 @x
           <para>[bdubbs] - Update to balsa-2.5.1.</para>
@@ -67,11 +127,6 @@
           to the archive.</para>
 @y
           <para>[bdubbs] - gnucash と gnome の旧パッケージ類をアーカイブへ。</para>
-@z
-@x
-          <para>[bdubbs] - Update to xfce4-settings-4.11.0.</para>
-@y
-          <para>[bdubbs] - xfce4-settings-4.11.0 へのアップデート。</para>
 @z
 @x
           <para>[bdubbs] - Update to gnome-icon-theme-symbolic-3.8.3.</para>

@@ -621,9 +621,9 @@
 @z
 
 @x libecpg_compat.{so,a}
-          <para>is the ecpg compatability library.</para>
+          <para>is the ecpg compatibility library.</para>
 @y
-          <para>is the ecpg compatability library.</para>
+          <para>is the ecpg compatibility library.</para>
 @z
 
 @x libgport.a

@@ -33,10 +33,10 @@
 
 @x
       The <application>Xorg Drivers</application> page contains the
-      instructions for building Xorg drivers that are necesary in order
+      instructions for building Xorg drivers that are necessary in order
       for Xorg Server to take the advantage of the hardware that it is
       running on. At least one input and one video driver is required
-      for Xorg Server to start. 
+      for Xorg Server to start.
 @y
       この <application>Xorg ドライバー</application> の節では、稼働中のハードウェアを Xorg サーバーが活用するための Xorg ドライバーの構築手順を示すものです。
       Xorg サーバーを起動するためには、最低でも１つの入力ドライバー、および１つのビデオドライバーが必要です。

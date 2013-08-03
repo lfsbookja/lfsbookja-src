@@ -138,7 +138,7 @@
 
 @x
     <para><parameter>sed -i -e '/gets is a/d' gnu/stdio.in.h &amp;&amp;</parameter>:
-    This fixes an incompatability with <application>glibc-2.16.0</application>.
+    This fixes an incompatibility with <application>glibc-2.16.0</application>.
     </para>
 @y
     <para><parameter>sed -i -e '/gets is a/d' gnu/stdio.in.h &amp;&amp;</parameter>:

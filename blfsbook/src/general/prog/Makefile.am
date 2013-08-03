@@ -16,6 +16,7 @@ CHANGE_FILES = \
 	dejagnu.ch        \
 	doxygen.ch        \
 	dummy-java.ch     \
+	elfutils.ch       \
 	expect.ch         \
 	gc.ch             \
 	gcc.ch            \
@@ -70,6 +71,7 @@ cvsserver.xml:      $(BOOKdir)/$@ $(srcdir)/cvsserver.ch
 dejagnu.xml:        $(BOOKdir)/$@ $(srcdir)/dejagnu.ch
 doxygen.xml:        $(BOOKdir)/$@ $(srcdir)/doxygen.ch
 dummy-java.xml:     $(BOOKdir)/$@ $(srcdir)/dummy-java.ch
+elfutils.xml:       $(BOOKdir)/$@ $(srcdir)/elfutils.ch
 expect.xml:         $(BOOKdir)/$@ $(srcdir)/expect.ch
 gc.xml:             $(BOOKdir)/$@ $(srcdir)/gc.ch
 gcc.xml:            $(BOOKdir)/$@ $(srcdir)/gcc.ch

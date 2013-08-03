@@ -144,7 +144,7 @@
 
 @x
       To test the results, issue: <command>make check</command>. You will need
-      an active internet connection in order to sucessfully complete all tests.
+      an active internet connection in order to successfully complete all tests.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       すべてのテストを成功させるためには、インターネット接続環境が必要です。

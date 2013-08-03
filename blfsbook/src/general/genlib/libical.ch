@@ -183,7 +183,7 @@
 @z
 
 @x libicalss.{so,a}
-            is a libary that allows you to store iCal component data
+            is a library that allows you to store iCal component data
             to disk in a variety of ways.
 @y
             iCal コンポーネントデータを、さまざまな方法でディスクに保存するためのライブラリを提供します。
