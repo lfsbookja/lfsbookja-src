@@ -48,6 +48,32 @@
 @z
 
 @x
+      <para>2013-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to util-linux-2.23.2.  Fixes
+          <ulink url="&lfs-ticket-root;3386">#3386</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to man-pages-3.53.  Fixes
+          <ulink url="&lfs-ticket-root;3385">#3385</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - util-linux-2.23.2 へのアップデート。
+          <ulink url="&lfs-ticket-root;3386">#3386</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - man-pages-3.53 へのアップデート。
+          <ulink url="&lfs-ticket-root;3385">#3385</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-07-29</para>
       <itemizedlist>
         <listitem>
