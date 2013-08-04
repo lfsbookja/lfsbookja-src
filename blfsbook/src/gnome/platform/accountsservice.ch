@@ -157,6 +157,14 @@
 @z
 
 @x
+      <parameter>--enable-admin-group=adm</parameter>: This switch sets
+      group for administrator accounts.
+@y
+      <parameter>--enable-admin-group=adm</parameter>:
+      このスイッチは管理者権限に対するグループを設定します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

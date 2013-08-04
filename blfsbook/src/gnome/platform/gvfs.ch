@@ -159,6 +159,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional (Runtime)</bridgehead>
+    <para role="optional">
+      <xref linkend="obex-data-server"/> and
+      <xref linkend="obexd"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional; (実行時)</bridgehead>
+    <para role="optional">
+      <xref linkend="obex-data-server"/>,
+      <xref linkend="obexd"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -187,6 +201,23 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--disable-gphoto2</parameter>: This switch is required if
+      <application>libgphoto2</application> is not installed. Remove
+      it if you installed <application>libgphoto2</application> and
+      wish to use it with <application>Gvfs</application>.
+@y
+      <parameter>--disable-gphoto2</parameter>:
+      このスイッチは <application>libgphoto2</application> がインストールされていない場合に必要です。
+      <application>libgphoto2</application> をインストールしていて、これを <application>Gvfs</application> にて利用したい場合は、このスイッチを取り除いてください。
 @z
 
 @x
@@ -249,14 +280,19 @@
             concatenates the given files and prints them
             to the standard output.
 @y
-            concatenates the given files and prints them
-            to the standard output.
+            指定された複数ファイルを連結し、標準出力へ出力します。
+@z
+
+@x gvfs-copy
+            copies a file from one URI location to another.
+@y
+            １つの URI 位置から１つのファイルを他へコピーします。
 @z
 
 @x gvfs-info
             shows information about the given locations.
 @y
-            shows information about the given locations.
+            指定された位置 (locations) についての情報を出力します。
 @z
 
 @x gvfs-less
@@ -272,13 +308,13 @@
 @x gvfs-ls
             lists information about the given locations.
 @y
-            lists information about the given locations.
+           指定された位置 (locations) についての情報を一覧出力します。
 @z
 
 @x gvfs-mkdir
             creates a directory specified by an URI.
 @y
-            creates a directory specified by an URI.
+            URI により指定されたディレクトリを生成します。
 @z
 
 @x gvfs-monitor-dir
@@ -310,7 +346,7 @@
 @x gvfs-move
             moves a file from one URI location to another.
 @y
-            moves a file from one URI location to another.
+            １つの URI 位置から１つのファイルを他へ移動します。
 @z
 
 @x gvfs-open
@@ -324,13 +360,13 @@
 @x gvfs-rename
             changes the name of a file or directory.
 @y
-            changes the name of a file or directory.
+            ファイル名またはディレクトリ名を変更します。
 @z
 
 @x gvfs-rm
             removes a file.
 @y
-            removes a file.
+            ファイルを削除します。
 @z
 
 @x gvfs-save
@@ -344,7 +380,7 @@
 @x gvfs-trash
             sends files or directories to the "Trashcan".
 @y
-            sends files or directories to the "Trashcan".
+            ファイルまたはディレクトリを "ごみ箱" に移動します。
 @z
 
 @x gvfs-tree

@@ -340,6 +340,13 @@
             利用可能なフォントを、検索指定パターンを用いて検索します。
 @z
 
+@x fc-pattern
+            is used to parse pattern (empty pattern by default) and show
+            the parsed result.
+@y
+            パターンを解析し（空パターンをデフォルトとする）、解析結果を出力する。
+@z
+
 @x fc-query
             is used to query fonts files and print resulting patterns.
 @y
@@ -351,6 +358,12 @@
             patterns.
 @y
             フォントファイルとディレクトリをスキャンして、結果を表示します。
+@z
+
+@x fc-validate
+            is used to validate font files.
+@y
+            フォントファイルを検証します。
 @z
 
 @x libfontconfig.{so,a}

@@ -153,6 +153,14 @@
 @z
 
 @x
+    <para><command>sed -i '/^install\|cp.*libmng.a/ s/libmng.a//' Makefile</command>
+    This command disables installing the static library.</para>
+@y
+    <para><command>sed -i '/^install\|cp.*libmng.a/ s/libmng.a//' Makefile</command>
+    このコマンドはスタティックライブラリをインストールしないようにします。</para>
+@z
+
+@x
     <para><command>install ...</command>: The documentation files are not
     installed by the installation procedure, so they are copied manually.</para>
 @y

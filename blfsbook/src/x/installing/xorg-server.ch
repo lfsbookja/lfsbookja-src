@@ -181,6 +181,19 @@
 @z
 
 @x
+      <command>cat &gt;&gt; /etc/sysconfig/createfiles...</command>: This
+      command creates the <filename class="directory">/tmp/.ICE-unix</filename>
+      and <filename class="directory">/tmp/.X11-unix</filename> directories at
+      startup, and ensures that the permissions and ownership are correct as
+      required by the server.
+@y
+      <command>cat &gt;&gt; /etc/sysconfig/createfiles...</command>:
+      このコマンドは起動時に <filename class="directory">/tmp/.ICE-unix</filename> ディレクトリと <filename
+      class="directory">/tmp/.X11-unix</filename> ディレクトリを生成します。
+      そしてサーバーが必要としているパーミッションおよび所有者を適切に設定します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

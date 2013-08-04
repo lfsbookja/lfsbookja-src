@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY openobex-time          "less than 0.1 SBU">
+@y
+  <!ENTITY openobex-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to OpenOBEX</title>
 @y
     <title>&IntroductionTo1;OpenOBEX&IntroductionTo2;</title>

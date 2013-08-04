@@ -182,9 +182,8 @@
             for applications wanting to use
             <application>libpng</application>.
 @y
-            is a shell script that provides configuration information
-            for applications wanting to use
-            <application>libpng</application>.
+            設定情報を提供するシェルスクリプト。
+            <application>libpng</application> を利用するアプリケーションがこれを利用します。
 @z
 
 @x libpng.so

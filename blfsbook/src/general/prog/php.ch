@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY php-time          "2.8 SBU (additional 3.0 SBU to run the test suite)">
+@y
+  <!ENTITY php-time          "2.8 SBU (テストスイート実行時は、さらに 3.0 SBU)">
+@z
+
+@x
     <title>Introduction to PHP</title>
 @y
     <title>&IntroductionTo1;PHP&IntroductionTo2;</title>
@@ -25,10 +31,11 @@
     directly embedded into the HTML markup.  It is also useful as a 
     general purpose scripting language.</para>
 @y
-    <para><application>PHP</application> is the PHP Hypertext Preprocessor.
-    Primarily used in dynamic web sites, it allows for programming code to be
-    directly embedded into the HTML markup.  It is also useful as a 
-    general purpose scripting language.</para>
+    <para>
+    <application>PHP</application> は PHP ハイパーテキスト プリプロセッサー (PHP Hypertext Preprocessor) です。
+    主に動的ウェブサイトにおいて利用され、プログラミングコードを HTML マークアップ内に直接埋め込むことができます。
+    また一般的なスクリプト言語としても利用することができます。
+    </para>
 @z
 
 @x
@@ -128,7 +135,7 @@
     an <xref linkend="server-mail"/> (that provides a
     <command>sendmail</command> command)</para>
 @y
-    <bridgehead renderas="sect4">Optional System Utilities and Libraries</bridgehead>
+    <bridgehead renderas="sect4">任意のシステムユーティリティーおよびライブラリ</bridgehead>
     <para role="optional"><xref linkend="libxslt"/>,
     <!-- <xref linkend="gamin"/>, -->
     <xref linkend="pcre"/>,
@@ -136,15 +143,14 @@
     <xref linkend="enchant"/>,
     <xref linkend="pkgconfig"/>,
     <!-- <xref linkend="recode"/>, -->
-    <xref linkend="expat"/> (deprecated alternative to <xref linkend="libxml2"/>),
+    <xref linkend="expat"/> (かつての選択肢としては <xref linkend="libxml2"/>),
     <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
     <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
     <xref linkend="pth"/>,
     <ulink url="http://re2c.org/">re2c</ulink>,
     <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>,
-    <ulink url="http://dmalloc.com/">Dmalloc</ulink>, and
-    an <xref linkend="server-mail"/> (that provides a
-    <command>sendmail</command> command)</para>
+    <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
+    <xref linkend="server-mail"/> (<command>sendmail</command> コマンドを提供するもの)</para>
 @z
 
 @x
@@ -160,7 +166,7 @@
     <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @y
-    <bridgehead renderas="sect4">Optional Graphics Utilities and Libraries</bridgehead>
+    <bridgehead renderas="sect4">任意のグラフィックユーティリティーおよびライブラリ</bridgehead>
     <para role="optional"><xref linkend="libjpeg"/>,
     <xref linkend="libtiff"/>,
     <xref linkend="libpng"/>,
@@ -168,8 +174,8 @@
     <xref linkend="freetype2"/>,
     <xref linkend="x-window-system"/>,
     <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
-    <ulink url="http://fossies.org/unix/www/gd-2.0.35.tar.gz/">GD (has bugs)</ulink>,
-    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>, and
+    <ulink url="http://fossies.org/unix/www/gd-2.0.35.tar.gz/">GD (バグあり)</ulink>,
+    <ulink url="http://www.sfr-fresh.com/linux/misc/t1lib">t1lib</ulink>,
     <ulink url="http://partners.adobe.com/asn/acrobat/forms.jsp">FDF Toolkit</ulink></para>
 @z
 
@@ -183,13 +189,13 @@
     <ulink url="http://caudium.net/">Caudium</ulink>, and
     <ulink url="http://www.openwddx.org/">WDDX</ulink></para>
 @y
-    <bridgehead renderas="sect4">Optional Web Utilities</bridgehead>
+    <bridgehead renderas="sect4">任意のウェブユーティリティー</bridgehead>
     <para role="optional"><xref linkend="curl"/>,
     <xref linkend="html-tidy"/>,
     <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
     <ulink url="http://www.hyperwave.com/">Hyperwave</ulink>,
     <ulink url="http://www.roxen.com/products/webserver/">Roxen WebServer</ulink>,
-    <ulink url="http://caudium.net/">Caudium</ulink>, and
+    <ulink url="http://caudium.net/">Caudium</ulink>,
     <ulink url="http://www.openwddx.org/">WDDX</ulink></para>
 @z
 
@@ -212,7 +218,7 @@
     <ulink url="http://www.frontbase.com/">FrontBase</ulink>, and
     <ulink url="http://www.mainstreetsoftworks.com/">Monetra</ulink></para>
 @y
-    <bridgehead renderas="sect4">Optional Data Management Utilities and Libraries</bridgehead>
+    <bridgehead renderas="sect4">任意のデータ管理ユーティリティーおよびライブラリ</bridgehead>
     <para role="optional"><xref linkend="openldap"/>,
     <!-- <xref linkend="gdbm"/>, -->
     <xref linkend="db"/>,
@@ -227,7 +233,7 @@
     <ulink url="http://www.birdstep.com/">Birdstep</ulink>,
     <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
     <ulink url="http://www.softwareag.com/">Adabas</ulink>,
-    <ulink url="http://www.frontbase.com/">FrontBase</ulink>, and
+    <ulink url="http://www.frontbase.com/">FrontBase</ulink>,
     <ulink url="http://www.mainstreetsoftworks.com/">Monetra</ulink></para>
 @z
 
@@ -251,11 +257,11 @@
     <ulink url="http://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
     <ulink url="http://mhash.sourceforge.net/">mhash</ulink></para>
 @y
-    <bridgehead renderas="sect4">Optional Security/Encryption Utilities and Libraries</bridgehead>
+    <bridgehead renderas="sect4">任意のセキュリティ/暗号化ユーティリティおよびライブラリ</bridgehead>
     <para role="optional"><xref linkend="openssl"/>,
     <xref linkend="cyrus-sasl"/>,
     <xref linkend="mitkrb"/>,
-    <ulink url="http://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
+    <ulink url="http://mcrypt.sourceforge.net/">libmcrypt</ulink>,
     <ulink url="http://mhash.sourceforge.net/">mhash</ulink></para>
 @z
 
@@ -279,10 +285,10 @@
     book provides instructions for setting up <application>PHP</application>
     for server-side scripting as it is the most common form.</para>
 @y
-    <para>You can use <application>PHP</application> for server-side
-    scripting, command-line scripting or client-side GUI applications. This
-    book provides instructions for setting up <application>PHP</application>
-    for server-side scripting as it is the most common form.</para>
+    <para>
+    <application>PHP</application> は、サーバーサイドのスクリプティング、コマンドラインのスクリプティング、クライアントサイドのGUIアプリケーション、といった場面にて利用することができます。
+    本書では、ごく普通に利用されている形式である、サーバーサイドのスクリプティングについての手順を説明していくことにします。
+    </para>
 @z
 
 @x
@@ -297,15 +303,13 @@
       url="&files-anduin;/php_configure.txt"/>.
       </para>
 @y
-      <para><application>PHP</application> has many more
-      <command>configure</command> options that will enable support for various
-      things. You can use <command>./configure --help</command> to see a full
-      list of the available options. Also, use of the
-      <ulink url="http://www.php.net/">PHP web site</ulink>
-      is highly recommended, as their online docs are very good. An example of
-      a <command>configure</command> command that utilizes many of the most
-      common dependencies can be found at <ulink
-      url="&files-anduin;/php_configure.txt"/>.
+      <para>
+      <application>PHP</application> の <command>configure</command> には、各種サポートを実現するためのオプションが数多くあります。
+      <command>./configure --help</command> の実行により、利用可能なオプションをすべて確認することができます。
+      また <ulink url="http://www.php.net/">PHP ウェブサイト</ulink> を参照することもお勧めします。
+      このサイトが提供するオンラインドキュメントは、よく仕上がっています。
+      一般的な依存関係を実現するような  <command>configure</command> コマンドの実行例が <ulink
+      url="&files-anduin;/php_configure.txt"/> に示されているので参照してください。
       </para>
 @z
 
@@ -316,11 +320,10 @@
       this will prevent the <command>pear</command> command from being
       built.</para>
 @y
-      <para>If, for whatever reason, you don't have <xref linkend="libxml2"/>
-      installed, you need to add <option>--disable-libxml</option> to the
-      <command>configure</command> command in the instructions below. Note that
-      this will prevent the <command>pear</command> command from being
-      built.</para>
+      <para>
+      何らかの理由により <xref linkend="libxml2"/> をインストールしてない場合は、これ以降に示す <command>configure</command> コマンドにて <option>--disable-libxml</option> オプションを指定することが必要です。
+      これを指定すると <command>pear</command> コマンドがビルドされなくなります。
+      </para>
 @z
 
 @x
@@ -336,8 +339,10 @@
     <para>To test the results, issue: <command>make test</command>. A few
     tests may fail.</para>
 @y
-    <para>To test the results, issue: <command>make test</command>. A few
-    tests may fail.</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    テストはいくつかは失敗します。
+    </para>
 @z
 
 @x
@@ -358,26 +363,32 @@
     these instructions assume English docs, modify the tarball names below if
     necessary).</para>
 @y
-    <para>The pre-built HTML documentation is packaged in two forms: a tarball
-    containing many individual files, useful for quick loading into your
-    browser, and one large individual file, which is useful for using the
-    search utility of your browser. If you downloaded either, or both, of the
-    documentation files, issue the following commands as the
-    <systemitem class='username'>root</systemitem> user to install them (note
-    these instructions assume English docs, modify the tarball names below if
-    necessary).</para>
+    <para>
+    構築済の HTML ドキュメントが２つの形式で提供されています。
+    １つは複数ファイルを収容した１つの tarball です。
+    ブラウザー上へは即座に表示できるメリットがあります。
+    もう１つはただ１つのファイルとして構築されているものです。
+    ブラウザー上の検索機能を適切に活用することができます。
+    ダウンロードした形式がいずれかである場合に、<systemitem
+    class='username'>root</systemitem> ユーザーになって以下のコマンドを実行しドキュメントをインストールします。
+    (以下の説明ではインストールするドキュメントは英語版であるものとしています。必要に応じて tarball 名を置き換えて実行してください。)
+    </para>
 @z
 
 @x
     <para>For the <quote>Single HTML</quote> file:</para>
 @y
-    <para>For the <quote>Single HTML</quote> file:</para>
+    <para>
+    <quote>ただ１つの HTML</quote>である場合は以下を実行します。
+    </para>
 @z
 
 @x
     <para>For the <quote>Many HTML files</quote> tarball:</para>
 @y
-    <para>For the <quote>Many HTML files</quote> tarball:</para>
+    <para>
+    <quote>複数 HTML ファイル</quote>である場合は以下を実行します。
+    </para>
 @z
 
 @x
@@ -390,8 +401,9 @@
       <para><parameter>--with-apxs2</parameter>: This parameter
       builds the Apache HTTPD 2.0 module.</para>
 @y
-      <para><parameter>--with-apxs2</parameter>: This parameter
-      builds the Apache HTTPD 2.0 module.</para>
+      <para><parameter>--with-apxs2</parameter>:
+      このパラメーターは Apache HTTPD 2.0 モジュールを生成します。
+      </para>
 @z
 
 @x
@@ -400,42 +412,46 @@
       <filename>php.ini</filename> configuration file in
       <filename class='directory'>/etc</filename>.</para>
 @y
-      <para><parameter>--with-config-file-path=/etc</parameter>: This parameter
-      makes <application>PHP</application> look for the
-      <filename>php.ini</filename> configuration file in
-      <filename class='directory'>/etc</filename>.</para>
+      <para><parameter>--with-config-file-path=/etc</parameter>:
+      このパラメーターは、<application>PHP</application> が利用する設定ファイル <filename>php.ini</filename> を <filename
+      class='directory'>/etc</filename> ディレクトリとすることを指示します。
+      </para>
 @z
 
 @x
       <para><parameter>--with-zlib</parameter>: This parameter adds
       support for <application>Zlib</application> compression.</para>
 @y
-      <para><parameter>--with-zlib</parameter>: This parameter adds
-      support for <application>Zlib</application> compression.</para>
+      <para><parameter>--with-zlib</parameter>:
+      このパラメーターは <application>Zlib</application> 圧縮へのサポートを追加します。
+      </para>
 @z
 
 @x
       <para><parameter>--enable-bcmath</parameter>: Enables
       <command>bc</command> style precision math functions.</para>
 @y
-      <para><parameter>--enable-bcmath</parameter>: Enables
-      <command>bc</command> style precision math functions.</para>
+      <para><parameter>--enable-bcmath</parameter>:
+      <command>bc</command> スタイルの精度計算を有効にします。
+      </para>
 @z
 
 @x
       <para><parameter>--with-bz2</parameter>: Adds support for
       <application>Bzip2</application> compression functions.</para>
 @y
-      <para><parameter>--with-bz2</parameter>: Adds support for
-      <application>Bzip2</application> compression functions.</para>
+      <para><parameter>--with-bz2</parameter>:
+      <application>Bzip2</application> 圧縮へのサポートを追加します。
+      </para>
 @z
 
 @x
       <para><parameter>--enable-calendar</parameter>: This parameter
       provides support for calendar conversion.</para>
 @y
-      <para><parameter>--enable-calendar</parameter>: This parameter
-      provides support for calendar conversion.</para>
+      <para><parameter>--enable-calendar</parameter>:
+      このパラメーターはカレンダー変換へのサポートを追加します。
+      </para>
 @z
 
 @x

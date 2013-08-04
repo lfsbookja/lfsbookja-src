@@ -76,6 +76,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required patch: <ulink
+@y
+        <para>必須のパッチ: <ulink
+@z
+
+@x
     <bridgehead renderas="sect3">libxcb Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libxcb&Dependencies2;</bridgehead>
@@ -159,11 +171,31 @@
 @z
 
 @x
+    <para><command>sed -e "s/pthread-stubs//" -i configure.ac</command>: This
+    sed removes dependency on libpthread-stubs package which is useless on
+    Linux.</para>
+@y
+    <para><command>sed -e "s/pthread-stubs//" -i configure.ac</command>:
+    この sed コマンドは libpthread-stubs パッケージへの依存を除きます。
+    これは Linux では不要なものです。
+    </para>
+@z
+
+@x
     <para><option>--enable-xinput</option>: This switch enables XCB Xinput
     extension.</para>
 @y
     <para><option>--enable-xinput</option>:
     本スイッチは XCB Xinput 拡張を有効にします。
+    </para>
+@z
+
+@x
+    <para><option>--enable-xkb</option>: This switch enables XCB XKB
+    extension.</para>
+@y
+    <para><option>--enable-xkb</option>:
+    本スイッチは XCB の XKB 拡張を有効にします。
     </para>
 @z
 

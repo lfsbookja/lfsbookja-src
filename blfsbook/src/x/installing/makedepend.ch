@@ -143,8 +143,22 @@
 
 @x
       <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
+@z
+
+@x
+        <seg>makedepend</seg>
+        <seg>None</seg>
+        <seg>None</seg>
+@y
+        <seg>makedepend</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

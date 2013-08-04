@@ -125,6 +125,14 @@
 @z
 
 @x
+      <option>--disable-host-tool</option>: This switch disables
+      creation of the unnecessary symlink.
+@y
+      <option>--disable-host-tool</option>:
+      このスイッチは不要なシンボリックリンクを生成しないようにします。
+@z
+
+@x
     <title>Configuring pkg-config</title>
 @y
     <title>&Configuring1;Pkg-config&Configuring2;</title>

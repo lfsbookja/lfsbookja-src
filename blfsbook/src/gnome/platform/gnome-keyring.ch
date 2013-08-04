@@ -111,7 +111,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">
-      libcap-ng</ulink> and
+      libcap-ng</ulink>,
       <ulink url="http://www.valgrind.org">Valgrind</ulink>
     </para>
 @z

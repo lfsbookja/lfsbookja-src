@@ -199,8 +199,10 @@
       <para>For client access to remote files, you may need to install the
       <xref linkend="openssh"/> package to connect to the remote server.</para>
 @y
-      <para>For client access to remote files, you may need to install the
-      <xref linkend="openssh"/> package to connect to the remote server.</para>
+      <para>
+      クライアントがリモートファイルにアクセスできるようにするためには、<xref
+      linkend="openssh"/> パッケージをインストールしてリモートサーバーへ接続できるようにする必要があります。
+      </para>
 @z
 
 @x
@@ -208,9 +210,10 @@
       <command>rsync</command> as a server. See the rsyncd.conf(5)
       man-page for additional options (i.e., user authentication).</para>
 @y
-      <para>This is a simple download-only configuration to set up running
-      <command>rsync</command> as a server. See the rsyncd.conf(5)
-      man-page for additional options (i.e., user authentication).</para>
+      <para>
+      以下は、<command>rsync</command> をサーバーにて起動させて、ダウンロードだけができるようにする設定例です。
+      詳細なオプション (ユーザー認証など) については man ページの rsyncd.conf(5) を参照してください。
+      </para>
 @z
 
 @x
@@ -218,9 +221,9 @@
     documentation about <command>rsync</command> at
     <ulink url="http://rsync.samba.org/documentation.html"/>.</para>
 @y
-    <para>You can find additional configuration information and general
-    documentation about <command>rsync</command> at
-    <ulink url="http://rsync.samba.org/documentation.html"/>.</para>
+    <para>
+    <command>rsync</command> における、より詳細な設定情報は <ulink url="http://rsync.samba.org/documentation.html"/> を参照してください。
+    </para>
 @z
 
 @x
@@ -236,11 +239,14 @@
       You don't need this script to run the
       <application>rsync</application> client.</para>
 @y
-      <para>Note that you only want to start the
+      <para>
+      
+Note that you only want to start the
       <application>rsync</application> server if you want to provide an
       <application>rsync</application> archive on your local machine.
       You don't need this script to run the
-      <application>rsync</application> client.</para>
+      <application>rsync</application> client.
+      </para>
 @z
 
 @x

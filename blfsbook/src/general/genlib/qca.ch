@@ -89,7 +89,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/> and
+    <xref linkend="qt4"/>,
     <xref linkend="which"/>
     </para>
 @z

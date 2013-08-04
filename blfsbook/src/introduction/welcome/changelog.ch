@@ -42,6 +42,22 @@
 @z
 
 @x
+      <para>August 3rd, 2013</para>
+@y
+      <para>2013/08/03</para>
+@z
+@x
+          <para>[bdubbs] - Update to mc-4.8.10.</para>
+@y
+          <para>[bdubbs] - mc-4.8.10 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to dhcpcd-6.0.5.</para>
+@y
+          <para>[bdubbs] - dhcpcd-6.0.5 へのアップデート。</para>
+@z
+
+@x
       <para>August 2nd, 2013</para>
 @y
       <para>2013/08/02</para>

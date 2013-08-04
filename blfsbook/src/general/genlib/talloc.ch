@@ -163,7 +163,7 @@
         </seg>
         <seg>
           libpytalloc-util.so, libtalloc.so,
-          talloc.so (Python Module)
+          talloc.so (Python &Module;)
         </seg>
         <seg>
           &None;

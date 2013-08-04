@@ -114,41 +114,31 @@
     <para>Install <application>wv</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>wv</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>wv</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not have a testsuite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>
+    &notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--disable-static</option>: This switch prevents the static
-    library being built.</para>
-@y
-<para>
-<option>--disable-static</option>:
-このパラメーターはスタティックライブラリをビルドしないことを指示します。
-</para>
 @z
 
 @x
@@ -159,8 +149,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -171,13 +161,13 @@
         <seg>wvSummary, and several other wv* programs which are deprecated in
         favour of abiword: see
         <ulink url="http://wvware.sourceforge.net/"></ulink></seg>
-        <seg>libwv-1.2.{so,a}</seg>
-        <seg>/usr/share/wv/</seg>
+        <seg>libwv-1.2.so</seg>
+        <seg>/usr/share/wv</seg>
 @y
         <seg>wvSummary, wv で始まるプログラム
         (これらは abiword を利用するのが望ましい。
         <ulink url="http://wvware.sourceforge.net/"></ulink> を参照のこと。)</seg>
-        <seg>libwv-1.2.{so,a}</seg>
+        <seg>libwv-1.2.so</seg>
         <seg>/usr/share/wv/</seg>
 @z
 
@@ -190,15 +180,15 @@
 @x wvSummary
           <para>displays the summary information from an MS Word document.</para>
 @y
-<para>
-MS Word 文書ファイルからの情報を要約して出力します。
-</para>
+          <para>
+          MS Word 文書ファイルからの情報を要約して出力します。
+          </para>
 @z
 
 @x libwv-1.2.{so,a}
           <para>provides functions to access MS Word documents.</para>
 @y
-<para>
-MS Word 文書ファイルにアクセスするための関数を提供します。
-</para>
+          <para>
+          MS Word 文書ファイルにアクセスするための関数を提供します。
+          </para>
 @z

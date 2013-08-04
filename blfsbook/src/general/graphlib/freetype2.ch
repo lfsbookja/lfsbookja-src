@@ -112,6 +112,26 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">FreeType2 Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;FreeType2&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="which"/> and
+      <xref linkend="libpng"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="which"/>,
+      <xref linkend="libpng"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -165,12 +185,10 @@
       option.
 @y
       <command>sed -e ...</command>: 
-      First command enables GX/AAT and OpenType table validation and second
-      command enables Subpixel Rendering and Subpixel Hinting in order to
-      improve font rendering. Note that Subpixel Rendering may have patent issues.
-      Be sure to read the <literal>'Other patent issues'</literal> part of
-      <ulink url="http://www.freetype.org/patents.html"/> before enabling this
-      option.
+      １つめのコマンドは GX/AAT と OpenType テーブルの検証を有効にします。
+      ２つめのコマンドは、フォントレンダリングを改善するために、サブピクセルレンダリングとサブピクセルヒンティングを有効にします。
+      なおサブピクセルレンダリングは特許問題にからむ場合があります。
+      このオプションを用いる際には <ulink url="http://www.freetype.org/patents.html"/> に示されている <literal>'Other patent issues'</literal> の項を十分に確認してください。
 @z
 
 @x

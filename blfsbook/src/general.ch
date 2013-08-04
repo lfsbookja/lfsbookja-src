@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "August 2nd, &year;">
+<!ENTITY releasedate  "August 3rd, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20130803">
-<!ENTITY jratio       "56.2 &percnt;">
+<!ENTITY jversion     "20130804">
+<!ENTITY jratio       "56.5 &percnt;">
 @z
 
 @x
@@ -93,86 +93,6 @@
 <!ENTITY lfs-root             "http://www.&lfs-domainname;/lfs/view/&lfs-version;">
 <!ENTITY lfs-dev              "../../../../lfs/view/development">
 <!ENTITY lfsja-dev            "http://lfsbookja.sourceforge.jp/svn.ja">
-@z
-
-% @x
-% <!ENTITY lfs65_checked        "<para>This package is known to build and work
-%                               properly using an LFS-6.5 platform.</para>">
-% <!ENTITY lfs65_built          "<para>This package is known to build using an LFS
-%                               6.5 platform but has not been tested.</para>">
-% <!ENTITY lfs65_needs_update   "<para>This package is known to build and work
-%                               properly using an LFS-6.5 platform if you use
-%                               current package sources. See <xref
-%                               linkend='package_updates'/> for more
-%                               information.</para>">
-% @y
-% <!ENTITY lfs65_checked        "<para>本パッケージは LFS-6.5 において正しくビルドでき動作することが確認されています。</para>">
-% <!ENTITY lfs65_built          "<para>本パッケージは LFS-6.5 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
-% <!ENTITY lfs65_needs_update   "<para>This package is known to build and work
-%                               properly using an LFS-6.5 platform if you use
-%                               current package sources. See <xref
-%                               linkend='package_updates'/> for more
-%                               information.</para>">
-% @z
-
-% @x
-% <!ENTITY lfs66_checked        "<para>This package is known to build and work
-%                               properly using an LFS-6.6 platform.</para>">
-% <!ENTITY lfs66_built          "<para>This package is known to build using an LFS
-%                               6.6 platform but has not been tested.</para>">
-% @y
-% <!ENTITY lfs66_checked        "<para>本パッケージは LFS-6.6 において正しくビルドでき動作することが確認されています。</para>">
-% <!ENTITY lfs66_built          "<para>本パッケージは LFS-6.6 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
-% @z
-
-% @x
-% <!ENTITY lfs67_checked        "<para>This package is known to build and work
-%                               properly using an LFS-6.7 platform.</para>">
-% <!ENTITY lfs67_built          "<para>This package is known to build using an LFS
-%                               6.7 platform but has not been tested.</para>">
-% @y
-% <!ENTITY lfs67_checked        "<para>本パッケージは LFS-6.7 において正しくビルドでき動作することが確認されています。</para>">
-% <!ENTITY lfs67_built          "<para>本パッケージは LFS-6.7 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
-% @z
-
-% @x
-% <!ENTITY lfs68_checked        "<para>This package is known to build and work
-%                               properly using an LFS-6.8 platform.</para>">
-% <!ENTITY lfs68_built          "<para>This package is known to build using an LFS
-%                               6.8 platform but has not been tested.</para>">
-% @y
-% <!ENTITY lfs68_checked        "<para>本パッケージは LFS-6.8 において正しくビルドでき動作することが確認されています。</para>">
-% <!ENTITY lfs68_built          "<para>本パッケージは LFS-6.8 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
-% @z
-
-% @x
-% <!ENTITY lfs70_checked        "<para>This package is known to build and work
-%                               properly using an LFS-7.0 platform.</para>">
-% <!ENTITY lfs70_built          "<para>This package is known to build using an LFS
-%                               7.0 platform but has not been tested.</para>">
-% @y
-% <!ENTITY lfs70_checked        "<para>本パッケージは LFS-7.0 において正しくビルドでき動作することが確認されています。</para>">
-% <!ENTITY lfs70_built          "<para>本パッケージは LFS-7.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
-% @z
-
-% @x
-% <!ENTITY lfs71_checked        "<para>This package is known to build and work
-%                               properly using an LFS-7.1 platform.</para>">
-% <!ENTITY lfs71_built          "<para>This package is known to build using an LFS
-%                               7.1 platform but has not been tested.</para>">
-% @y
-% <!ENTITY lfs71_checked        "<para>本パッケージは LFS-7.1 において正しくビルドでき動作することが確認されています。</para>">
-% <!ENTITY lfs71_built          "<para>本パッケージは LFS-7.1 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
-% @z
-
-@x
-<!ENTITY lfs72_checked        "<para>This package is known to build and work
-                              properly using an LFS-7.2 platform.</para>">
-<!ENTITY lfs72_built          "<para>This package is known to build using an LFS
-                              7.2 platform but has not been tested.</para>">
-@y
-<!ENTITY lfs72_checked        "<para>本パッケージは LFS-7.2 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs72_built          "<para>本パッケージは LFS-7.2 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x
