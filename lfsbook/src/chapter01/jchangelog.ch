@@ -58,6 +58,11 @@
       <itemizedlist>
         <listitem>
           <para>[matsuand] -
+          訳出漏れ修正。(src/packages.ch)
+          </para>
+        </listitem>
+        <listitem>
+          <para>[matsuand] -
           SVN-20130805,
           Changeset
           <ulink url="&lfs-rev-root;10310">10310</ulink>
