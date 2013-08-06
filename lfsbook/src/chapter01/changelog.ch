@@ -51,6 +51,30 @@
       <para>2013-08-02</para>
       <itemizedlist>
         <listitem>
+          <para>[bdubbs] - Update to linux-3.10.5.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to lfs-bootscripts-20130805.  Fixes
+          an issue with ipv4-static-route.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-02</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.10.5 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - lfs-bootscripts-20130805 へのアップデート。
+          ipv4-static-route に関する問題を解消。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-08-02</para>
+      <itemizedlist>
+        <listitem>
           <para>[bdubbs] - Update to util-linux-2.23.2.  Fixes
           <ulink url="&lfs-ticket-root;3386">#3386</ulink>.</para>
         </listitem>
