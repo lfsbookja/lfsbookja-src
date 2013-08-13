@@ -48,6 +48,40 @@
 @z
 
 @x
+      <para>2013-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.10.6. Fixes
+          <ulink url="&lfs-ticket-root;3387">#3387</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-12</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - linux-3.10.6 へのアップデート。
+          <ulink url="&lfs-ticket-root;3387">#3387</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to vim-7.4.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-11</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - vim-7.4 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-08-02</para>
       <itemizedlist>
         <listitem>
