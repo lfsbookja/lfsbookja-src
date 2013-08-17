@@ -183,7 +183,20 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/general/prog
+CHANGE_FILES_pythonmodules = \
+	dbus-python.ch   \
+	notify-python.ch \
+	py2cairo.ch      \
+	pycairo.ch       \
+	pygobject2.ch    \
+	pygobject3.ch    \
+	pygtk.ch         \
+	pyatspi2.ch      \
+	pyrex.ch         \
+	pyxdg.ch
+
 CHANGE_FILES = \
+	${CHANGE_FILES_pythonmodules} \
 	apache-ant.ch     \
 	bazaar.ch         \
 	check.ch          \
@@ -420,6 +433,17 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
+
+dbus-python.xml:   $(BOOKdir)/$@ $(srcdir)/dbus-python.ch
+notify-python.xml: $(BOOKdir)/$@ $(srcdir)/notify-python.ch
+py2cairo.xml:      $(BOOKdir)/$@ $(srcdir)/py2cairo.ch
+pycairo.xml:       $(BOOKdir)/$@ $(srcdir)/pycairo.ch
+pygobject2.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject2.ch
+pygobject3.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject3.ch
+pygtk.xml:         $(BOOKdir)/$@ $(srcdir)/pygtk.ch
+pyatspi2.xml:      $(BOOKdir)/$@ $(srcdir)/pyatspi2.ch
+pyrex.xml:         $(BOOKdir)/$@ $(srcdir)/pyrex.ch
+pyxdg.xml:         $(BOOKdir)/$@ $(srcdir)/pyxdg.ch
 
 apache-ant.xml:     $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
 bazaar.xml:         $(BOOKdir)/$@ $(srcdir)/bazaar.ch

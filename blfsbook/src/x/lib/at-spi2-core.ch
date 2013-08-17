@@ -165,11 +165,11 @@
 @z
 
 @x
-      <!-- <segtitle>Installed Programs</segtitle> -->
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <!-- <segtitle>&InstalledPrograms;</segtitle> -->
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
@@ -178,6 +178,9 @@
         <!-- <seg> Not user executable programs
           at-spi-bus-launcher and at-spi2-registryd
         </seg> -->
+	<seg>
+	  None
+	</seg>
         <seg>
           libatspi.so
         </seg>
@@ -191,6 +194,9 @@
         <!-- <seg> Not user executable programs
           at-spi-bus-launcher and at-spi2-registryd
         </seg> -->
+	<seg>
+	  &None;
+	</seg>
         <seg>
           libatspi.so
         </seg>

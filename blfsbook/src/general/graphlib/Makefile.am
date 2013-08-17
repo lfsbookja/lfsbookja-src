@@ -22,7 +22,6 @@ CHANGE_FILES = \
 	jasper.ch        \
 	lcms.ch          \
 	lcms2.ch         \
-	libart_lgpl.ch   \
 	libexif.ch       \
 	libjpeg-turbo.ch \
 	libmng.ch        \
@@ -63,7 +62,6 @@ imlib2.xml:        $(BOOKdir)/$@ $(srcdir)/imlib2.ch
 jasper.xml:        $(BOOKdir)/$@ $(srcdir)/jasper.ch
 lcms.xml:          $(BOOKdir)/$@ $(srcdir)/lcms.ch
 lcms2.xml:         $(BOOKdir)/$@ $(srcdir)/lcms2.ch
-libart_lgpl.xml:   $(BOOKdir)/$@ $(srcdir)/libart_lgpl.ch
 libexif.xml:       $(BOOKdir)/$@ $(srcdir)/libexif.ch
 libjpeg-turbo.xml: $(BOOKdir)/$@ $(srcdir)/libjpeg-turbo.ch
 libmng.xml:        $(BOOKdir)/$@ $(srcdir)/libmng.ch

@@ -105,11 +105,11 @@
 @z
 
 @x
-    <para>Install <application>attica</application> by running the following
+    <para>Install <application>Attica</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>attica</application> をビルドします。
+    以下のコマンドを実行して <application>Attica</application> をビルドします。
     </para>
 @z
 

@@ -82,17 +82,11 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="http://valgrind.org/">Valgrind</ulink>
-<!-- -&#45;enable-pcretest-libedit (redundant as long as LFS installs libreadline
-      and <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
--->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://valgrind.org/">Valgrind</ulink>
-<!-- -&#45;enable-pcretest-libedit (redundant as long as LFS installs libreadline
-      and <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
--->
     </para>
 @z
 
@@ -210,7 +204,8 @@
           pcregrep, pcretest and pcre-config
         </seg>
         <seg>
-          libpcre.so, libpcrecpp.so and libpcreposix.so
+          libpcre.so, libpcre16.so, libpcre32.so,
+          libpcrecpp.so and libpcreposix.so
         </seg>
         <seg>
           /usr/share/doc/pcre-&pcre-version;
@@ -220,7 +215,8 @@
           pcregrep, pcretest, pcre-config
         </seg>
         <seg>
-          libpcre.so, libpcrecpp.so, libpcreposix.so
+          libpcre.so, libpcre16.so, libpcre32.so,
+          libpcrecpp.so, libpcreposix.so
         </seg>
         <seg>
           /usr/share/doc/pcre-&pcre-version;

@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	kate.ch             \
 	kdeadmin.ch         \
 	kmix.ch             \
-	kdenetwork.ch       \
 	kdepim.ch           \
 	kdepim-runtime.ch   \
 	kdeplasma-addons.ch \
@@ -43,7 +42,6 @@ gwenview.xml:          $(BOOKdir)/$@ $(srcdir)/gwenview.ch
 kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
 kdeadmin.xml:          $(BOOKdir)/$@ $(srcdir)/kdeadmin.ch
 kmix.xml:              $(BOOKdir)/$@ $(srcdir)/kmix.ch
-kdenetwork.xml:        $(BOOKdir)/$@ $(srcdir)/kdenetwork.ch
 kdepim.xml:            $(BOOKdir)/$@ $(srcdir)/kdepim.ch
 kdepim-runtime.xml:    $(BOOKdir)/$@ $(srcdir)/kdepim-runtime.ch
 kdeplasma-addons.xml:  $(BOOKdir)/$@ $(srcdir)/kdeplasma-addons.ch

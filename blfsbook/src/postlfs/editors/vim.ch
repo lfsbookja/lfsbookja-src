@@ -96,12 +96,6 @@
 @z
 
 @x
-        <para>Optional Patch: <ulink
-@y
-        <para>任意のパッチ: <ulink
-@z
-
-@x
         <para>Translated Vim messages: <ulink
 @y
         <para>翻訳された Vim メッセージ: <ulink
@@ -172,15 +166,6 @@
       このことに対処するには、他のエディターをインストールするか、<application>Vim</application> を <application>X</application> にリンクさせないようにするか、あるいは現在ある <command>vim</command> を <filename
       class="directory">/bin</filename> に移動させて <filename>vi</filename> などの別名にして利用するなどの方法を取る必要があります。
       </para>
-@z
-
-@x
-    <para>If you downloaded the optional set of <application>Vim</application> patches, 
-    apply them now:</para>
-@y
-    <para>
-    任意の <application>Vim</application> のパッチをダウンロードしている場合は、以下のコマンドによりそれを適用します。
-    </para>
 @z
 
 @x
@@ -389,14 +374,14 @@
       <para>Alternatively you can manually download the *.spl and *.sug files
       from: <ulink url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> and save
       them to <filename class="directory"> ~/.vim/spell </filename> or in
-      <filename class="directory">/usr/share/vim/vim73/spell/</filename>.</para>
+      <filename class="directory">/usr/share/vim/vim74/spell/</filename>.</para>
 @y
       <para>
       *.spl や *.sug というファイルは <ulink
       url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から手動でダウンロードすることもできます。
       これらのファイルは <filename
       class="directory"> ~/.vim/spell </filename> に書き加えるか、<filename
-      class="directory">/usr/share/vim/vim73/spell/</filename> ディレクトリに保存して利用します。
+      class="directory">/usr/share/vim/vim74/spell/</filename> ディレクトリに保存して利用します。
       </para>
 @z
 

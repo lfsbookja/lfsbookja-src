@@ -224,25 +224,51 @@
     </para>
 @z
 
+% @x
+%     <para>If you've decided to use the standard
+%     <filename class="directory">/usr</filename> prefix, you can omit the
+%     remainder of this page. Otherwise, be sure to add
+%     <filename class="directory">$XORG_PREFIX/bin</filename> to your
+%     <envar>PATH</envar> environment variable, and <filename class="directory">
+%     $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
+%     $XORG_PREFIX/share/pkgconfig</filename>
+%     to your <envar>PKG_CONFIG_PATH</envar> variable. Issue the following
+%     commands as the <systemitem class="username">root</systemitem> user:</para>
+% @y
+%     <para>
+%     インストールプレフィックスとして、標準的な <filename class="directory">/usr</filename> を選択した場合は、本節のこれ以降の設定は不要です。
+%     そうでない場合は、<envar>PATH</envar> に対して <filename
+%     class="directory">$XORG_PREFIX/bin</filename> を加え、<envar>PKG_CONFIG_PATH</envar> に対して <filename
+%     class="directory">$XORG_PREFIX/lib/pkgconfig</filename> と <filename
+%     class="directory">$XORG_PREFIX/share/pkgconfig</filename> を加える必要があります。
+%     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+%     </para>
+% @z
+
 @x
-    <para>If you've decided to use the standard
-    <filename class="directory">/usr</filename> prefix, you can omit the
-    remainder of this page. Otherwise, be sure to add
-    <filename class="directory">$XORG_PREFIX/bin</filename> to your
-    <envar>PATH</envar> environment variable, and <filename class="directory">
+    <para>If you've decided to use the standard <filename
+    class="directory">/usr</filename> prefix, you can omit the remainder of
+    this page. Otherwise, be sure to add <filename
+    class="directory">$XORG_PREFIX/bin</filename> to your <envar>PATH</envar>
+    environment variable, and <filename class="directory">
     $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
-    $XORG_PREFIX/share/pkgconfig</filename>
-    to your <envar>PKG_CONFIG_PATH</envar> variable. Issue the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+    $XORG_PREFIX/share/pkgconfig</filename> to your
+    <envar>PKG_CONFIG_PATH</envar> variable. It is also helpful to specify
+    additional search paths for <command>gcc</command> and an include directory
+    for the <command>aclocal</command> program.  Issue the following commands
+    as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>
-    インストールプレフィックスとして、標準的な <filename class="directory">/usr</filename> を選択した場合は、本節のこれ以降の設定は不要です。
-    そうでない場合は、<envar>PATH</envar> に対して <filename
-    class="directory">$XORG_PREFIX/bin</filename> を加え、<envar>PKG_CONFIG_PATH</envar> に対して <filename
-    class="directory">$XORG_PREFIX/lib/pkgconfig</filename> と <filename
-    class="directory">$XORG_PREFIX/share/pkgconfig</filename> を加える必要があります。
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+    <para>If you've decided to use the standard <filename
+    class="directory">/usr</filename> prefix, you can omit the remainder of
+    this page. Otherwise, be sure to add <filename
+    class="directory">$XORG_PREFIX/bin</filename> to your <envar>PATH</envar>
+    environment variable, and <filename class="directory">
+    $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
+    $XORG_PREFIX/share/pkgconfig</filename> to your
+    <envar>PKG_CONFIG_PATH</envar> variable. It is also helpful to specify
+    additional search paths for <command>gcc</command> and an include directory
+    for the <command>aclocal</command> program.  Issue the following commands
+    as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY glib2-time          "1.7 SBU (additional 4.8 SBU to run the test suite)">
+  <!ENTITY glib2-time          "1.9 SBU (additional 4.8 SBU to run the test suite)">
 @y
-  <!ENTITY glib2-time          "1.7 SBU (テストスイート実行時は追加で 4.0 SBU)">
+  <!ENTITY glib2-time          "1.9 SBU (テストスイート実行時は追加で 4.8 SBU)">
 @z
 
 @x

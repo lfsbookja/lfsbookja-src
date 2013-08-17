@@ -82,7 +82,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus"/>,
       <xref linkend="cmake"/>,
       <xref linkend="qt4"/>, and
       <xref linkend="redland"/>
@@ -90,7 +89,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="dbus"/>,
       <xref linkend="cmake"/>,
       <xref linkend="qt4"/>,
       <xref linkend="redland"/>
@@ -100,15 +98,17 @@
 @x
     <bridgehead renderas="sect4">Recommended (Required if building KDE)</bridgehead>
     <para role="recommended">
-      <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally, 
-      <xref linkend="virtuoso"/> is required as a runtime dependency for this 
+      <xref linkend="dbus"/>,
+      <xref linkend="libiodbc"/> (required for the Virtuoso backend. Additionally,
+      <xref linkend="virtuoso"/> is required as a runtime dependency for this
       backend.)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (KDE ビルド時に必要)</bridgehead>
     <para role="recommended">
-    <xref linkend="libiodbc"/> (Virtuoso バックエンドにて必要。
-    またランタイムの依存パッケージとして <xref linkend="virtuoso"/> が必要。)
+      <xref linkend="dbus"/>,
+      <xref linkend="libiodbc"/> (Virtuoso バックエンドにて必要。
+      またランタイムの依存パッケージとして <xref linkend="virtuoso"/> が必要。)
     </para>
 @z
 

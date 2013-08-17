@@ -128,15 +128,20 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
+	  None
+	</seg>
+	<seg>
           libgdkmm-3.0.so and libgtkmm-3.0.so
         </seg>
         <seg>
@@ -149,6 +154,9 @@
         </seg>
 @y
         <seg>
+	  &None;
+	</seg>
+	<seg>
           libgdkmm-3.0.so, libgtkmm-3.0.so
         </seg>
         <seg>

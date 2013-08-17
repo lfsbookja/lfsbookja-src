@@ -262,10 +262,10 @@
 @x
         <seg>
           ip6tables, ip6tables-restore, ip6tables-save, iptables, iptables-restore,
-          iptables-save, iptables-xml and xtables-multi
+          iptables-save, iptables-xml, and xtables-multi
         </seg>
         <seg>
-          libip4tc.so, libip6tc.so, libipq.so, libiptc.so and libxtables.so
+          libip4tc.so, libip6tc.so, libipq.so, libiptc.so, and libxtables.so
         </seg>
         <seg>
           /lib/xtables and /usr/include/libiptc

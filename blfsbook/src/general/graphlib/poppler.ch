@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY poppler-buildsize          "123 MB (excluding the encoding data) and
-           122 MB (including the encoding data)">
+  <!ENTITY poppler-buildsize          "180 MB (excluding the encoding data) and
+           205 MB (including the encoding data)">
 @y
-  <!ENTITY poppler-buildsize          "123 MB (エンコーディングデータを除いた場合),
-           122 MB (エンコーディングデータを含めた場合)">
+  <!ENTITY poppler-buildsize          "180 MB (エンコーディングデータを除いた場合),
+           205 MB (エンコーディングデータを含めた場合)">
 @z
 
 @x
@@ -162,20 +162,22 @@
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="openjpeg"/> and
+      <xref linkend="openjpeg"/>,
       <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
-      is needed for PDF support in <application>Okular</application>).
+      is needed for PDF support in <application>Okular</application>) and
+      <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
+      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="openjpeg"/>,
-      <xref linkend="qt4"/> (ライブラリ <filename>libpoppler-qt4.so</filename> は <application>Okular</application> の PDF サポートにおいて必要となります)
+      <xref linkend="qt4"/> (ライブラリ <filename>libpoppler-qt4.so</filename> は <application>Okular</application> の PDF サポートにおいて必要となります),
+      <xref linkend="qt5"/>
     </para>
 @z
 
@@ -263,8 +265,9 @@
         </seg>
         <seg>
           libpoppler.so, libpoppler-cpp.so,
-          libpoppler-glib.so, and
-          libpoppler-qt4.so
+          libpoppler-glib.so,
+          libpoppler-qt4.so, and
+          libpoppler-qt5.so
         </seg>
         <seg>
           /usr/include/poppler,
@@ -281,7 +284,8 @@
         <seg>
           libpoppler.so, libpoppler-cpp.so,
           libpoppler-glib.so,
-          libpoppler-qt4.so
+          libpoppler-qt4.so,
+          libpoppler-qt5.so
         </seg>
         <seg>
           /usr/include/poppler,
@@ -393,7 +397,14 @@
 
 @x libpoppler-qt4.so
             is a wrapper library used to interface the PDF rendering functions
-            with <application>Qt</application>-4.
+            with <application>Qt</application>4.
 @y
-            <application>Qt</application>-4 に対しての PDF レンダリング機能を提供するラッパーライブラリです。
+            <application>Qt</application>4 に対しての PDF レンダリング機能を提供するラッパーライブラリです。
+@z
+
+@x libpoppler-qt5.so
+            is a wrapper library used to interface the PDF rendering functions
+            with <application>Qt</application>5.
+@y
+            <application>Qt</application>5 に対しての PDF レンダリング機能を提供するラッパーライブラリです。
 @z

@@ -20,7 +20,6 @@ CHANGE_FILES = \
 	hdparm.ch        \
 	ibus.ch          \
 	initdtools.ch    \
-	libarchive.ch    \
 	lm_sensors.ch    \
 	mc.ch            \
 	obexd.ch         \
@@ -71,7 +70,6 @@ gpm.xml:           $(BOOKdir)/$@ $(srcdir)/gpm.ch
 hdparm.xml:        $(BOOKdir)/$@ $(srcdir)/hdparm.ch
 ibus.xml:          $(BOOKdir)/$@ $(srcdir)/ibus.ch
 initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
-libarchive.xml:    $(BOOKdir)/$@ $(srcdir)/libarchive.ch
 lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
 mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
 obexd.xml:         $(BOOKdir)/$@ $(srcdir)/obexd.ch

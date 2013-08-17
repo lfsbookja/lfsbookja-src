@@ -22,7 +22,11 @@
 @x
     This section contains required packages for the
     <application>GNOME</application> applications to build and
-    function properly.
+    function properly. We don't provide any desktop related
+    packages due to dependency on Systemd which BLFS doesn't
+    support.
 @y
     本節は <application>GNOME</application> アプリケーションをビルドし適切に動作させるために必要となるパッケージを示します。
+    本書ではデスクトップに関連するパッケージは取り上げないことにします。
+    それらは Systemd に依存しており BLFS では Systemd をサポートしていないからです。
 @z

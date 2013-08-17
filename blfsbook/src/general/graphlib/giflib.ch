@@ -22,14 +22,10 @@
 @x
     <para>The <application>giflib</application> package contains libraries
     for reading and writing GIFs as well as programs for converting and
-    working with GIF files. The libraries are useful for any graphics program
-    wishing to deal with GIF files while the programs are useful for conversion
-    purposes as well as cleaning up images.</para>
+    working with GIF files.</para>
 @y
     <para>
     <application>giflib</application> パッケージは GIF ファイルの入出力を行うライブラリを提供し、また GIF ファイルの変換処理などを行うプログラムを提供します。
-    ライブラリは GIF ファイルを取り扱うプログラムにて活用することができます。
-    プログラムは変換処理やイメージのクリーニングなどを行います。
     </para>
 @z
 
@@ -78,25 +74,19 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="xmlto"/> (for html documentation), and 
-      <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink> (or 
-      <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)</para>
+      <xref linkend="xmlto"/> (for html documentation)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="xmlto"/> (for html documentation),
-      <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink> (または 
-      <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)</para>
+      <xref linkend="xmlto"/> (html ドキュメントのため)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/giflib"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/giflib"/></para>
 @z
 
 @x
@@ -115,9 +105,9 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>This package does not have a working test suite.</para>
 @y
-    <para>&notTestSuite;</para>
+    <para>このパッケージに有効なテストスイートはありません。</para>
 @z
 
 @x
@@ -151,17 +141,13 @@
 @z
 
 @x
-        <seg>gif2rgb, gif2x11, gifasm, gifbg, gifburst, gifclip,
-        gifclrmp, gifcolor, gifcomb, gifcompose, giffiltr, giffix, gifflip, gifhisto,
-        gifinfo, gifinter, gifinto, gifovly, gifpos, gifrotat, gifrsize, gifspnge,
-        giftext, gifwedge, icon2gif, raw2gif, rgb2gif, and text2gif</seg>
+        <seg>gif2raw, gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
+        giftext and giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @y
-        <seg>gif2rgb, gif2x11, gifasm, gifbg, gifburst, gifclip,
-        gifclrmp, gifcolor, gifcomb, gifcompose, giffiltr, giffix, gifflip, gifhisto,
-        gifinfo, gifinter, gifinto, gifovly, gifpos, gifrotat, gifrsize, gifspnge,
-        giftext, gifwedge, icon2gif, raw2gif, rgb2gif, text2gif</seg>
+        <seg>gif2raw, gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
+        giftext, giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @z
@@ -177,38 +163,6 @@
 @y
           <para>
           GIF イメージを 24 ビット RGB イメージに変換します。
-          </para>
-@z
-
-@x gif2x11
-          <para>displays images saved as GIF files under X Window System.</para>
-@y
-          <para>
-          GIF ファイルイメージを X ウィンドウシステム上において表示します。
-          </para>
-@z
-
-@x gifasm
-          <para>assembles multiple GIFs into one, or burst a multiple-image GIF.</para>
-@y
-          <para>
-          複数の GIF を一つにまとめたり、逆に複数イメージの GIF に分割したりします。
-          </para>
-@z
-
-@x gifbg
-          <para>generates a single-color test pattern GIF.</para>
-@y
-          <para>
-          単一色のテストパターン GIF ファイルを生成します。
-          </para>
-@z
-
-@x gifburst
-          <para>bursts a GIF image into subrectangles.</para>
-@y
-          <para>
-          bursts a GIF image into subrectangles.
           </para>
 @z
 

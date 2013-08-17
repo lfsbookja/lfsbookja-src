@@ -183,7 +183,29 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/x/installing
+CHANGE_FILES_x7drivers = \
+	x7driver-glamor.ch      \
+	x7driver-evdev.ch       \
+	x7driver-synaptics.ch   \
+	x7driver-vmmouse.ch     \
+	x7driver-wacom.ch       \
+	x7driver-ati.ch         \
+	x7driver-cirrus.ch      \
+	x7driver-fbdev.ch       \
+	x7driver-intel.ch       \
+	x7driver-mach64.ch      \
+	x7driver-mga.ch         \
+	x7driver-nouveau.ch     \
+	x7driver-openchrome.ch  \
+	x7driver-r128.ch        \
+	x7driver-savage.ch      \
+	x7driver-sis.ch         \
+	x7driver-tdfx.ch        \
+	x7driver-vesa.ch        \
+	x7driver-vmware.ch
+
 CHANGE_FILES = \
+	${CHANGE_FILES_x7drivers} \
 	installing.ch          \
 	libXau.ch              \
 	libxcb.ch              \
@@ -409,6 +431,28 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
+
+.xml: $(BOOKdir)/$@ $(srcdir)/.ch
+
+x7driver-glamor.xml:    $(BOOKdir)/$@ $(srcdir)/x7driver-glamor.ch
+x7driver-evdev.xml:     $(BOOKdir)/$@ $(srcdir)/x7driver-evdev.ch
+x7driver-synaptics.xml: $(BOOKdir)/$@ $(srcdir)/x7driver-synaptics.ch
+x7driver-vmmouse.xml:   $(BOOKdir)/$@ $(srcdir)/x7driver-vmmouse.ch
+x7driver-wacom.xml:     $(BOOKdir)/$@ $(srcdir)/x7driver-wacom.ch
+x7driver-ati.xml:       $(BOOKdir)/$@ $(srcdir)/x7driver-ati.ch
+x7driver-cirrus.xml:    $(BOOKdir)/$@ $(srcdir)/x7driver-cirrus.ch
+x7driver-fbdev.xml:     $(BOOKdir)/$@ $(srcdir)/x7driver-fbdev.ch
+x7driver-intel.xml:     $(BOOKdir)/$@ $(srcdir)/x7driver-intel.ch
+x7driver-m.xml:         $(BOOKdir)/$@ $(srcdir)/x7driver-m.ch
+x7driver-mga.xml:       $(BOOKdir)/$@ $(srcdir)/x7driver-mga.ch
+x7driver-nouveau.xml:   $(BOOKdir)/$@ $(srcdir)/x7driver-nouveau.ch
+x7driver-ope.xml:       $(BOOKdir)/$@ $(srcdir)/x7driver-ope.ch
+x7driver-r128.xml:      $(BOOKdir)/$@ $(srcdir)/x7driver-r128.ch
+x7driver-savage.xml:    $(BOOKdir)/$@ $(srcdir)/x7driver-savage.ch
+x7driver-sis.xml:       $(BOOKdir)/$@ $(srcdir)/x7driver-sis.ch
+x7driver-tdfx.xml:      $(BOOKdir)/$@ $(srcdir)/x7driver-tdfx.ch
+x7driver-vesa.xml:      $(BOOKdir)/$@ $(srcdir)/x7driver-vesa.ch
+x7driver-vmware.xml:    $(BOOKdir)/$@ $(srcdir)/x7driver-vmware.ch
 
 installing.xml:          $(BOOKdir)/$@ $(srcdir)/installing.ch
 libXau.xml:              $(BOOKdir)/$@ $(srcdir)/libXau.ch

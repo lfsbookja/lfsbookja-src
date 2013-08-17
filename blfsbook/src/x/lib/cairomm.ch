@@ -140,15 +140,20 @@
 @z
 
 @x
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
+	  None
+	</seg>
+	<seg>
           libcairomm-1.0.so
         </seg>
         <seg>
@@ -159,6 +164,9 @@
         </seg>
 @y
         <seg>
+	  &None;
+	</seg>
+	<seg>
           libcairomm-1.0.so
         </seg>
         <seg>

@@ -84,18 +84,32 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="curl"/>, 
-      <xref linkend="libarchive"/> and 
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="curl"/>,
+      <xref linkend="libarchive"/> and
       <xref linkend="expat"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="curl"/>, 
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="curl"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="expat"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="subversion"/> (for testing) and
+      <xref linkend="qt4"/> (for the Qt-based GUI)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="subversion"/> (テスト時),
+      <xref linkend="qt4"/> (Qt ベースの GUI 構築に必要)
     </para>
 @z
 
@@ -138,12 +152,12 @@
 
 @x
       <option>--system-libs</option>: This switch forces the build system to
-      link against <application>Zlib</application>, <application>Bzip2</application>, 
-      <application>cURL</application> and <application>Expat</application> installed 
-      on the system.
+      link against <application>Zlib</application>, <application>Bzip2</application>,
+      <application>cURL</application>, <application>Expat</application> and
+      <application>libarchive</application> installed on the system.
 @y
       <option>--system-libs</option>:
-      このオプションは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application> をリンクすることを指示します。
+      このオプションは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application>, <application>libarchive</application> をリンクすることを指示します。
 @z
 
 @x

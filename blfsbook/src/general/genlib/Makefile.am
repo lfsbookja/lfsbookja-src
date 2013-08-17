@@ -8,6 +8,7 @@
 BOOKdir = @abs_bookdir@/general/genlib
 CHANGE_FILES = \
 	apr.ch \
+	apr-util.ch \
 	aspell.ch \
 	boost.ch \
 	dbus-glib.ch \
@@ -23,9 +24,11 @@ CHANGE_FILES = \
 	gsl.ch \
 	icu.ch \
 	iso-codes.ch \
+	js.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
+	libarchive.ch \
 	libassuan.ch \
 	libatasmart.ch \
 	libatomic_ops.ch \
@@ -44,6 +47,7 @@ CHANGE_FILES = \
 	libical.ch \
 	libidl.ch \
 	libidn.ch \
+	libiodbc.ch \
 	libksba.ch \
 	libsigc++.ch \
 	libtasn1.ch \
@@ -81,6 +85,7 @@ ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 apr.xml:                   $(BOOKdir)/$@ $(srcdir)/apr.ch
+apr-util.xml:              $(BOOKdir)/$@ $(srcdir)/apr-util.ch
 aspell.xml:                $(BOOKdir)/$@ $(srcdir)/aspell.ch
 boost.xml:                 $(BOOKdir)/$@ $(srcdir)/boost.ch
 dbus-glib.xml:             $(BOOKdir)/$@ $(srcdir)/dbus-glib.ch
@@ -96,9 +101,11 @@ gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
 gsl.xml:                   $(BOOKdir)/$@ $(srcdir)/gsl.ch
 icu.xml:                   $(BOOKdir)/$@ $(srcdir)/icu.ch
 iso-codes.xml:             $(BOOKdir)/$@ $(srcdir)/iso-codes.ch
+js.xml:                    $(BOOKdir)/$@ $(srcdir)/js.ch
 json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
 json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch
 keyutils.xml:              $(BOOKdir)/$@ $(srcdir)/keyutils.ch
+libarchive.xml:            $(BOOKdir)/$@ $(srcdir)/libarchive.ch
 libassuan.xml:             $(BOOKdir)/$@ $(srcdir)/libassuan.ch
 libatasmart.xml:           $(BOOKdir)/$@ $(srcdir)/libatasmart.ch
 libatomic_ops.xml:         $(BOOKdir)/$@ $(srcdir)/libatomic_ops.ch
@@ -117,6 +124,7 @@ libgusb.xml:               $(BOOKdir)/$@ $(srcdir)/libgusb.ch
 libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
 libidl.xml:                $(BOOKdir)/$@ $(srcdir)/libidl.ch
 libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
+libiodbc.xml:              $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
 libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
 libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
 libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
