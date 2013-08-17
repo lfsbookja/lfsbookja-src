@@ -41,10 +41,10 @@
 @z
 
 @x
-    <note><para>Two tests in the test suite fail due to out of date
+    <note><para>One test in the test suite fails due to out of date
     perl code.</para></note>
 @y
-    <note><para>テストスイートにて２つのテストは失敗します。
+    <note><para>テストスイートにて１つのテストは失敗します。
     これは古くなった perl コードが用いられているためです。</para></note>
 @z
 

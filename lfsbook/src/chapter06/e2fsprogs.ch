@@ -35,6 +35,12 @@
 @z
 
 @x
+    <para>First, fix a regression test:</para>
+@y
+    <para>はじめに縮退テストに対する修正を行います。</para>
+@z
+
+@x
     <para>The E2fsprogs documentation recommends that the package be built in
     a subdirectory of the source tree: </para>
 @y

@@ -265,6 +265,15 @@ minor timing issues が何を意味するのか不明であった。
 @z
 
 @x
+        <para>posix/tst-getaddrinfo4 will always fail due to not having a network
+        connection when the test is run.</para>
+@y
+        <para>
+        posix/tst-getaddrinfo4 は、テスト実行時にネットワークに接続されていないため失敗します。
+        </para>
+@z
+
+@x
         <para>Other tests known to fail on some architectures are posix/bug-regex32, 
         misc/tst-writev, elf/check-textrel, nptl/tst-getpid2, and stdio-common/bug22.</para>
 @y

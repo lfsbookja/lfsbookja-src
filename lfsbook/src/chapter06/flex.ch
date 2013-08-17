@@ -29,10 +29,10 @@
 @z
 
 @x
-    <para>First, fix some regression tests:</para>
+    <para>First, skip running three regression tests that require bison.</para>
 @y
     <para>
-    まずは縮退テスト (regression test) に関しての修正を行います。
+    bison を必要としている三つの縮退テストを実行しないようにします。
     </para>
 @z
 

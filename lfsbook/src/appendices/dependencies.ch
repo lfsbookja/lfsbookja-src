@@ -174,14 +174,14 @@
          Grep, M4, Make, Sed</seg>
 @z
 @x
-          <seg>Diffutils and Findutils</seg>
+          <seg>Diffutils, Findutils, and Flex</seg>
 @y
-          <seg>Diffutils, Findutils</seg>
+          <seg>Diffutils, Findutils, Flex</seg>
 @z
 @x
-          <seg>Flex, Kbd, and Tar</seg>
+          <seg>Kbd and Tar</seg>
 @y
-          <seg>Flex, Kbd, Tar</seg>
+          <seg>Kbd, Tar</seg>
 @z
 @x
           <seg>Doxygen (test suite)</seg>
@@ -383,9 +383,9 @@
          Patch, Sed, Texinfo</seg>
 @z
 @x
-          <seg>Bison and Gawk</seg>
+          <seg>Bison (suppressed) and Gawk</seg>
 @y
-          <seg>Bison, Gawk</seg>
+          <seg>Bison (suppressed), Gawk</seg>
 @z
 @x
           <seg>IPRoute2, Kbd, and Man-DB</seg>

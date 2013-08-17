@@ -48,6 +48,67 @@
 @z
 
 @x
+      <para>2013-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bryan] - Add explanation for new devpts mount
+          options</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update several pages to fix regression
+          test failures.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add options when mounting /dev/pts when
+          creating virtual file systems in Section 6.2.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to linux-3.10.7. Fixes
+          <ulink url="&lfs-ticket-root;3388">#3388</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-15</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bryan] - 新しい devpts のマウントオプションについての説明を追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 縮退テストの失敗に関しての説明をいくつか修正。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - 6.2節にて、仮想ファイルシステムを生成する際の、/dev/pts のマウントオプションを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - linux-3.10.7 へのアップデート。
+          <ulink url="&lfs-ticket-root;3388">#3388</ulink> を Fix に。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
+      <para>2013-08-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to glibc-2.18.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to perl-5.18.1.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-13</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - glibc-2.18 へのアップデート。</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - perl-5.18.1 へのアップデート。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-08-12</para>
       <itemizedlist>
         <listitem>
