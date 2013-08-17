@@ -189,7 +189,6 @@ CHANGE_FILES = \
 	ark.ch              \
 	gwenview.ch         \
 	kate.ch             \
-	kdeadmin.ch         \
 	kmix.ch             \
 	kdepim.ch           \
 	kdepim-runtime.ch   \
@@ -399,7 +398,6 @@ add-pkgs.xml:          $(BOOKdir)/$@ $(srcdir)/add-pkgs.ch
 ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
 gwenview.xml:          $(BOOKdir)/$@ $(srcdir)/gwenview.ch
 kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
-kdeadmin.xml:          $(BOOKdir)/$@ $(srcdir)/kdeadmin.ch
 kmix.xml:              $(BOOKdir)/$@ $(srcdir)/kmix.ch
 kdepim.xml:            $(BOOKdir)/$@ $(srcdir)/kdepim.ch
 kdepim-runtime.xml:    $(BOOKdir)/$@ $(srcdir)/kdepim-runtime.ch

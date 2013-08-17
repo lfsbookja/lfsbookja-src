@@ -82,8 +82,10 @@
     <para role="required">
       <xref linkend="kactivities"/>,
       <xref linkend="qimageblitz"/>,
-      <xref linkend="xcb-util-image"/>, and
-      <xref linkend="xcb-util-renderutil"/>
+      <xref linkend="xcb-util-image"/>,
+      <xref linkend="xcb-util-renderutil"/>,
+      <xref linkend="xcb-util-keysyms"/> and
+      <xref linkend="xcb-util-wm"/>      
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -91,7 +93,9 @@
       <xref linkend="kactivities"/>,
       <xref linkend="qimageblitz"/>,
       <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-renderutil"/>
+      <xref linkend="xcb-util-renderutil"/>,
+      <xref linkend="xcb-util-keysyms"/>,
+      <xref linkend="xcb-util-wm"/>      
     </para>
 @z
 

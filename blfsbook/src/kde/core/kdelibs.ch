@@ -109,22 +109,22 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="polkit-qt"/>, 
-    <xref linkend="libpng"/>, 
-    <xref linkend="libjpeg"/>, 
-    <xref linkend="giflib"/>, 
-    <xref linkend="upower"/> and
-    <xref linkend="udisks"/>
+    <xref linkend="polkit-qt"/>,
+    <xref linkend="libpng"/>,
+    <xref linkend="libjpeg"/>,
+    <xref linkend="giflib"/>,
+    <xref linkend="upower"/>, and
+    <xref linkend="udisks"/> or <xref linkend="udisks2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="polkit-qt"/>, 
-    <xref linkend="libpng"/>, 
-    <xref linkend="libjpeg"/>, 
-    <xref linkend="giflib"/>, 
+    <xref linkend="polkit-qt"/>,
+    <xref linkend="libpng"/>,
+    <xref linkend="libjpeg"/>,
+    <xref linkend="giflib"/>,
     <xref linkend="upower"/>,
-    <xref linkend="udisks"/>
+    <xref linkend="udisks"/> または <xref linkend="udisks2"/>
     </para>
 @z
 
