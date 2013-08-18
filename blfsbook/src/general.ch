@@ -106,6 +106,16 @@
 @z
 
 @x
+<!ENTITY lfs74_checked        "<para>This package is known to build and work
+                              properly using an LFS-7.4 platform.</para>">
+<!ENTITY lfs74_built          "<para>This package is known to build using an LFS
+                              7.4 platform but has not been tested.</para>">
+@y
+<!ENTITY lfs74_checked        "<para>本パッケージは LFS-7.4 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs74_built          "<para>本パッケージは LFS-7.4 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+@z
+
+@x
 <!ENTITY lfssvn_checked       "This package is known to build and work properly
                                using an LFS-SVN-">
 <!ENTITY lfssvn_checked2      " platform.">

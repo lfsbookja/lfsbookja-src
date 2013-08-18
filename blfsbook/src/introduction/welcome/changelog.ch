@@ -47,6 +47,16 @@
       <para>2013/08/18</para>
 @z
 @x
+          <para>[fernando] - Update to Firefox-23.0.1/Xulrunner-23.0.1.</para>
+@y
+          <para>[fernando] - Firefox-23.0.1/Xulrunner-23.0.1 へのアップデート。</para>
+@z
+@x
+          <para>[fernando] - Libreoffice: Fix build with system neon.</para>
+@y
+          <para>[fernando] - Libreoffice: neon 利用時のビルド手順を修正。</para>
+@z
+@x
           <para>[rthomsen] - Amarok 2.8.0. Fixes
            <ulink url="&blfs-ticket-root;3981">#3981</ulink>.</para>
 @y
@@ -60,10 +70,10 @@
       <para>2013/08/17</para>
 @z
 @x
-          <para>[bdubbs] Update to gpgme-1.4.3. Fixes
+          <para>[bdubbs] - Update to gpgme-1.4.3. Fixes
            <ulink url="&blfs-ticket-root;3974">#3974</ulink>.</para>
 @y
-          <para>[bdubbs] gpgme-1.4.3 へのアップデート。
+          <para>[bdubbs] - gpgme-1.4.3 へのアップデート。
            <ulink url="&blfs-ticket-root;3974">#3974</ulink> を Fix に。</para>
 @z
 @x
@@ -80,10 +90,10 @@
       <para>2013/08/16</para>
 @z
 @x
-          <para>[fernando] LibreOffice: fixes to build dictionaries, 
+          <para>[fernando] - LibreOffice: fixes to build dictionaries, 
           help and languages support. Thanks to David B.</para>
 @y
-          <para>[fernando] LibreOffice: 辞書、ヘルプ、言語サポートのビルドについて修正。
+          <para>[fernando] - LibreOffice: 辞書、ヘルプ、言語サポートのビルドについて修正。
           David B に感謝。</para>
 @z
 
