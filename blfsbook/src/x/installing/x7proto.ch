@@ -214,11 +214,10 @@
     <command>&amp;&amp;</command> construct used elsewhere in the book.</para>
 @y
     <para><command>bash -e</command>:
-    このコマンドは
-    This command starts a subshell that will
-    exit if any command returns a value other than 0, causing the for loop to
-    exit immediately if an error occurs. This also eliminates the need for the
-    <command>&amp;&amp;</command> construct used elsewhere in the book.</para>
+    このコマンドはサブシェルを起動するものであり、実行コマンドがゼロ以外を返したときに終了するようにします。
+    for ループ内にてエラーが発生しても、即座に終了させるためです。
+    この方法を使えば <command>&amp;&amp;</command> を用いたコマンド実行が不要となります。
+    </para>
 @z
 
 @x

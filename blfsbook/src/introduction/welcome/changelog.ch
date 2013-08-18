@@ -42,6 +42,206 @@
 @z
 
 @x
+      <para>August 18th, 2013</para>
+@y
+      <para>2013/08/18</para>
+@z
+@x
+          <para>[rthomsen] - Amarok 2.8.0. Fixes
+           <ulink url="&blfs-ticket-root;3981">#3981</ulink>.</para>
+@y
+          <para>[rthomsen] - Amarok 2.8.0.
+           <ulink url="&blfs-ticket-root;3981">#3981</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>August 17th, 2013</para>
+@y
+      <para>2013/08/17</para>
+@z
+@x
+          <para>[bdubbs] Update to gpgme-1.4.3. Fixes
+           <ulink url="&blfs-ticket-root;3974">#3974</ulink>.</para>
+@y
+          <para>[bdubbs] gpgme-1.4.3 へのアップデート。
+           <ulink url="&blfs-ticket-root;3974">#3974</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - KDE 4.11.0. Fixes
+           <ulink url="&blfs-ticket-root;3976">#3976</ulink>.</para>
+@y
+          <para>[rthomsen] - KDE 4.11.0.
+           <ulink url="&blfs-ticket-root;3976">#3976</ulink> を Fix に。</para>
+@z
+
+@x
+      <para>August 16th, 2013</para>
+@y
+      <para>2013/08/16</para>
+@z
+@x
+          <para>[fernando] LibreOffice: fixes to build dictionaries, 
+          help and languages support. Thanks to David B.</para>
+@y
+          <para>[fernando] LibreOffice: 辞書、ヘルプ、言語サポートのビルドについて修正。
+          David B に感謝。</para>
+@z
+
+@x
+      <para>August 14th, 2013</para>
+@y
+      <para>2013/08/14</para>
+@z
+
+@x
+      <para>August 12th, 2013</para>
+@y
+      <para>2013/08/12</para>
+@z
+@x
+          <para>[bdubbs] - Update to openbox-3.5.2.</para>
+@y
+          <para>[bdubbs] - openbox-3.5.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to curl-7.32.0.</para>
+@y
+          <para>[bdubbs] - curl-7.32.0 へのアップデート。</para>
+@z
+
+@x
+      <para>August 11th, 2013</para>
+@y
+      <para>2013/08/11</para>
+@z
+@x
+          <para>[bdubbs] - Update to glib-2.36.4.</para>
+@y
+          <para>[bdubbs] - glib-2.36.4 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to samba-4.0.8.</para>
+@y
+          <para>[bdubbs] - samba-4.0.8 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to vim-7.4.</para>
+@y
+          <para>[bdubbs] - vim-7.4 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Added Qt 5.1.0.</para>
+@y
+          <para>[krejzi] - Qt 5.1.0 追加。</para>
+@z
+@x
+          <para>[krejzi] - Added qtchooser 31.</para>
+@y
+          <para>[krejzi] - qtchooser 31 追加。</para>
+@z
+
+@x
+      <para>August 9th, 2013</para>
+@y
+      <para>2013/08/09</para>
+@z
+@x
+          <para>[bdubbs] - Update to gmime-2.6.17.</para>
+@y
+          <para>[bdubbs] - gmime-2.6.17 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to xprop-1.2.2, xset-1.2.3, and
+          xwd-1.0.6 in Xorg Apps.</para>
+@y
+          <para>[bdubbs] - Xorg アプリケーションにて xprop-1.2.2, xset-1.2.3, xwd-1.0.6 へのアップデート。</para>
+@z
+
+@x
+      <para>August 8th, 2013</para>
+@y
+      <para>2013/08/08</para>
+@z
+@x
+          <para>[bdubbs] - Update to pixman-0.30.2.</para>
+@y
+          <para>[bdubbs] - pixman-0.30.2 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to {libburn,libisoburn,libisofs}-1.3.2.</para>
+@y
+          <para>[bdubbs] - {libburn,libisoburn,libisofs}-1.3.2 へのアップデート。</para>
+@z
+@x
+          <para>[krejzi] - Split Python Modules and Xorg Drivers into several
+          XML files. Thanks to Denis Mugnier for the patches.</para>
+@y
+          <para>[krejzi] - Python モジュールと Xorg ドライバーについて複数 XML ファイルに分割。
+          パッチを提供してくれた Denis Mugnier に感謝。</para>
+@z
+@x
+          <para>[fernando] - Update to thunderbird-17.0.8.</para>
+@y
+          <para>[fernando] - thunderbird-17.0.8 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to seamonkey-2.20.</para>
+@y
+          <para>[bdubbs] - seamonkey-2.20 へのアップデート。</para>
+@z
+@x
+          <para>[fernando] - Update to firefox-23.0 and xulrunner-23.0</para>
+@y
+          <para>[fernando] - firefox-23.0, xulrunner-23.0 へのアップデート。</para>
+@z
+
+@x
+      <para>August 7th, 2013</para>
+@y
+      <para>2013/08/07</para>
+@z
+@x
+          <para>[bdubbs] - Update to libwnck-3.4.6.</para>
+@y
+          <para>[bdubbs] - libwnck-3.4.6 へのアップデート。</para>
+@z
+@x
+          <para>[bdubbs] - Update to iptables-1.4.20.</para>
+@y
+          <para>[bdubbs] - iptables-1.4.20 へのアップデート。</para>
+@z
+
+@x
+      <para>August 6th, 2013</para>
+@y
+      <para>2013/08/06</para>
+@z
+@x
+          <para>[bdubbs] - Refine Xorg environment instructions.</para>
+@y
+          <para>[bdubbs] - Xorg 環境構築手順を改正。</para>
+@z
+
+@x
+      <para>August 4th, 2013</para>
+@y
+      <para>2013/08/04</para>
+@z
+@x
+          <para>[bdubbs] - Update to unrar-5.0.10.</para>
+@y
+          <para>[bdubbs] - unrar-5.0.10 へのアップデート。</para>
+@z
+@x
+          <para>[fernando] - Tag xsane for lfs73_checked, add
+          xscanimage.desktop, add a note for xscanimage GIMP plugin</para>
+@y
+          <para>[fernando] - xsane を LFS 7.3 対応済に。
+          xscanimage.desktop を追加。
+          xscanimage GIMP プラグインの説明を追加。</para>
+@z
+
+@x
       <para>August 3rd, 2013</para>
 @y
       <para>2013/08/03</para>
