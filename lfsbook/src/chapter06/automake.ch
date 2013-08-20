@@ -81,15 +81,15 @@
 @x
         <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
         automake-&am-minor-version;, compile, config.guess, config.sub,
-        depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
-        py-compile, symlink-tree, and ylwrap</seg>
+        depcomp, install-sh, mdate-sh, missing, mkinstalldirs,
+        py-compile, and ylwrap</seg>
         <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;,
         /usr/share/doc/automake-&automake-version;</seg>
 @y
         <seg>acinstall, aclocal, aclocal-&am-minor-version;, automake,
         automake-&am-minor-version;, compile, config.guess, config.sub,
-        depcomp, elisp-comp, install-sh, mdate-sh, missing, mkinstalldirs,
-        py-compile, symlink-tree, ylwrap</seg>
+        depcomp, install-sh, mdate-sh, missing, mkinstalldirs,
+        py-compile, ylwrap</seg>
         <seg>/usr/share/aclocal-&am-minor-version;, /usr/share/automake-&am-minor-version;,
         /usr/share/doc/automake-&automake-version;</seg>
 @z
@@ -185,14 +185,6 @@
           </para>
 @z
 
-@x elisp-comp
-          <para>Byte-compiles Emacs Lisp code</para>
-@y
-          <para>
-          Emacs Lisp コードをバイトコンパイルします。
-          </para>
-@z
-
 @x install-sh
           <para>A script that installs a program, script, or data file</para>
 @y
@@ -232,14 +224,6 @@
 @y
           <para>
           Python プログラムをコンパイルします。
-          </para>
-@z
-
-@x symlink-tree
-          <para>A script to create a symlink tree of a directory tree</para>
-@y
-          <para>
-          ディレクトリツリーに対するシンボリックリンクのツリーを生成するスクリプト。
           </para>
 @z
 

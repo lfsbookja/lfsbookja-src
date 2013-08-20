@@ -143,13 +143,12 @@
 @z
 
 @x
-          <para>This changes the location of the <command>pt_chown</command>
-          program from its default of <filename
-          class="directory">/usr/libexec</filename> to <filename
-          class="directory">/usr/lib/glibc</filename>.</para>
+          <para>This changes the location of some auxillary files from the
+          default of <filename class="directory">/usr/libexec</filename> to
+          <filename class="directory">/usr/lib/glibc</filename>.</para>
 @y
           <para>
-          このオプションは <command>pt_chown</command> プログラムのインストール先を、デフォルトの <filename
+          このオプションはいくつかの補助ファイル群のインストール先を、デフォルトの <filename
           class="directory">/usr/libexec</filename> から <filename
           class="directory">/usr/lib/glibc</filename> に変更します。
           </para>
@@ -605,7 +604,7 @@ minor timing issues が何を意味するのか不明であった。
 @x
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
-        pldd, pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, and zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -623,11 +622,10 @@ minor timing issues が何を意味するのか不明であった。
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
         /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo, /var/db</seg>
-      </seglistitem>
 @y
         <seg>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig,
         ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump,
-        pldd, pt_chown, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
+        pldd, rpcgen, sln, sotruss, sprof, tzselect, xtrace,
         zdump, zic</seg>
         <seg>ld.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so},
         libbsd-compat.a, libc.{a,so}, libc_nonshared.a, libcidn.so,
@@ -645,7 +643,6 @@ minor timing issues が何を意味するのか不明であった。
         /usr/include/protocols, /usr/include/rpc, /usr/include/rpcsvc,
         /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/glibc,
         /usr/lib/locale, /usr/share/i18n, /usr/share/zoneinfo, /var/db</seg>
-      </seglistitem>
 @z
 
 @x

@@ -137,11 +137,11 @@
         pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
         rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
         swaplabel, swapoff (link to swapon), swapon, switch_root, tailf,
-        taskset, tunelp, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
+        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
         wdctl, whereis, wipefs, and x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
-        
+
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
         /usr/share/getopt, /var/lib/hwclock</seg>
 @y
@@ -155,11 +155,11 @@
         pg, pivot_root, prlimit, raw, readprofile, rename, renice, resizepart,
         rev, rtcwake, script, scriptreplay, setarch, setsid, setterm, sfdisk,
         swaplabel, swapoff (swapon へのリンク), swapon, switch_root, tailf,
-        taskset, tunelp, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
+        taskset, ul, umount, unshare, utmpdump, uuidd, uuidgen, wall,
         wdctl, whereis, wipefs, x86_64</seg>
 
         <seg>libblkid.{a,so}, libmount.{a,so}, libuuid.{a,so}</seg>
-        
+
         <seg>/usr/include/blkid, /usr/include/libmount, /usr/include/uuid,
         /usr/share/getopt, /var/lib/hwclock</seg>
 @z
@@ -853,14 +853,6 @@
 @y
           <para>
           プロセスの CPU 親和性 (affinity) を表示または設定します。
-          </para>
-@z
-
-@x tunelp
-          <para>Tunes the parameters of the line printer</para>
-@y
-          <para>
-          ラインプリンターのパラメーターを設定します。
           </para>
 @z
 
