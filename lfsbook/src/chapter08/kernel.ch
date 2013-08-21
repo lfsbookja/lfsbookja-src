@@ -369,13 +369,13 @@
 @z
 
 @x
-        <seg>config-&linux-version;, 
-        vmlinux-&linux-version;-lfs-&version;-&linux-version;, and
+        <seg>config-&linux-version;,
+        vmlinuz-&linux-version;-lfs-&version;, and
         System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @y
-        <seg>config-&linux-version;, 
-        vmlinux-&linux-version;-lfs-&version;-&linux-version;,
+        <seg>config-&linux-version;,
+        vmlinuz-&linux-version;-lfs-&version;,
         System.map-&linux-version;</seg>
         <seg>/lib/modules, /usr/share/doc/linux-&linux-version;</seg>
 @z
