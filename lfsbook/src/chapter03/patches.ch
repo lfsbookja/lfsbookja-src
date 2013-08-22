@@ -41,6 +41,12 @@
 </note>
 @z
 
+@x Automake Test Fix Patch
+        <para>Download: <ulink url="&patches-root;&automake-test-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&automake-test-patch;"/></para>
+@z
+
 @x Bash Upstream Fixes Patch
         <para>Download: <ulink url="&patches-root;&bash-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&bash-fixes-patch-md5;</literal></para>
@@ -127,6 +133,12 @@
 @y
         <para>&Download;: <ulink url="&patches-root;&readline-fixes-patch;"/></para>
         <para>MD5 sum: <literal>&readline-fixes-patch-md5;</literal></para>
+@z
+
+@x Texinfo Test Patch
+        <para>Download: <ulink url="&patches-root;&texinfo-test-patch;"/></para>
+@y
+        <para>&Download;: <ulink url="&patches-root;&texinfo-test-patch;"/></para>
 @z
 
 @x

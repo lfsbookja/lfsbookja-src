@@ -48,6 +48,37 @@
 @z
 
 @x
+      <para>2013-08-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Upgrade to Linux-3.10.9. Fixes
+          <ulink url="&lfs-ticket-root;3391">#3391</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add a patch to fix a test failure in Texinfo.</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Add a patch to fix an intermittent test failure in
+          Automake.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-21</para>
+      <itemizedlist>
+        <listitem>
+          <para>[matthew] - Linux-3.10.9 へのアップグレード。
+          <ulink url="&lfs-ticket-root;3391">#3391</ulink> を Fix に。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Texinfo にてテストの失敗を回避するためのパッチを追加。</para>
+        </listitem>
+        <listitem>
+          <para>[matthew] - Automake にて断続的に発生するテストの失敗を回避するためのパッチを追加。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-08-15</para>
       <itemizedlist>
         <listitem>

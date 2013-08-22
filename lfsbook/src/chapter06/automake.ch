@@ -29,6 +29,12 @@
 @z
 
 @x
+    <para>Fix an intermittent test failure:</para>
+@y
+    <para>断続的にテストが失敗する点を修正します。</para>
+@z
+
+@x
     <para>Prepare Automake for compilation:</para>
 @y
     <para>&PreparePackage1;Automake&PreparePackage2;</para>
@@ -41,14 +47,10 @@
 @z
 
 @x
-    <note><para>The tests take a very long time: over 30 SBUs.  Running
-    the tests is not recommended. At least one test (of over 3000) is
-    known to intermittently fail.</para></note>
+    <note><para>The tests take a very long time: over 30 SBUs.</para></note>
 @y
     <note><para>
     テスト処理には 30 SBU 以上の時間を要します。
-    テストを実施することは、あまりお勧めしません。
-    特に (3000 にも及ぶテストの中の) １つのテストは、断続的に失敗するものになっています。
     </para></note>
 @z
 
