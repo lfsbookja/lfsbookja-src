@@ -110,12 +110,9 @@
 @z
 
 @x
-      <para><emphasis role="strong">Linux Kernel-2.6.25</emphasis>
-      (having been compiled with GCC-4.1.2 or greater)</para>
+      <para><emphasis role="strong">Linux Kernel-&min-kernel;</emphasis></para>
 @y
-      <para>
-      <emphasis role="strong">Linux Kernel-2.6.25</emphasis> (GCC-4.1.2 以上でコンパイルされたもの)
-      </para>
+      <para><emphasis role="strong">Linux Kernel-&min-kernel;</emphasis></para>
 @z
 
 @x
@@ -131,10 +128,9 @@
 @z
 
 @x
-      <para>If the host kernel is either earlier than 2.6.25, or it was not
-      compiled using a GCC-4.1.2 (or later) compiler, you will need to replace
-      the kernel with one adhering to the specifications. There are two ways
-      you can go about this. First, see if your Linux vendor provides a 2.6.25
+      <para>If the host kernel is earlier than &min-kernel; you will need to replace
+      the kernel with a more up to date version. There are two ways
+      you can go about this. First, see if your Linux vendor provides a &min-kernel;
       or later kernel package. If so, you may wish to install it. If your
       vendor doesn't offer an acceptable kernel package, or you would prefer not to
       install it, you can compile a kernel yourself. Instructions for
@@ -142,9 +138,9 @@
       uses GRUB) are located in <xref linkend="chapter-bootable"/>.</para>
 @y
       <para>
-      ホストシステムのカーネルバージョンが 2.6.25 より古い場合、あるいはカーネルをビルドした際の GCC のバージョンが 4.1.2 よりも古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
+      ホストシステムのカーネルバージョンが &min-kernel; より古い場合は、ここに示した条件に合致するカーネルに置き換えることが必要です。
       これを実施するには２つの方法があります。
-      お使いの Linux システムのベンダーが 2.6.25 以上のバージョンのカーネルを提供しているかを調べることです。
+      お使いの Linux システムのベンダーが &min-kernel; 以上のバージョンのカーネルを提供しているかを調べることです。
       提供していれば、それをインストールします。
       もしそれがない場合や、あったとしてもそれをインストールしたくない場合、カーネルをご自身でコンパイルする必要があります。
       カーネルのコンパイルと (ホストシステムが GRUB を利用しているとして) ブートローダーの設定方法については <xref linkend="chapter-bootable"/> を参照してください。

@@ -48,6 +48,23 @@
 @z
 
 @x
+      <para>2013-08-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update the minimum kernel requirement to 
+          2.6.34 in host system requirements.</para>
+        </listitem>
+      </itemizedlist>
+@y
+      <para>2013-08-22</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - ホスト要件として、最低必要となるカーネルバージョンを 2.6.34 とする。</para>
+        </listitem>
+      </itemizedlist>
+@z
+
+@x
       <para>2013-08-21</para>
       <itemizedlist>
         <listitem>

@@ -109,11 +109,11 @@
 
 @x
           <para>This tells Glibc to compile the library with support
-          for 2.6.34 and later Linux kernels.  Workarounds for older
+          for &min-kernel; and later Linux kernels.  Workarounds for older
           kernels are not enabled.</para>
 @y
           <para>
-          Linux カーネル 2.6.34 以上のサポートを行うよう指示します。
+          Linux カーネル &min-kernel; 以上のサポートを行うよう指示します。
           これ以前のカーネルは利用することができません。
           </para>
 @z
