@@ -25,7 +25,9 @@ CHANGE_FILES_x7drivers = \
 	x7driver-sis.ch         \
 	x7driver-tdfx.ch        \
 	x7driver-vesa.ch        \
-	x7driver-vmware.ch
+	x7driver-vmware.ch      \
+	libva.ch                \
+	libvdpau.ch
 
 CHANGE_FILES = \
 	${CHANGE_FILES_x7drivers} \
@@ -96,6 +98,8 @@ x7driver-vesa.xml:      $(BOOKdir)/$@ $(srcdir)/x7driver-vesa.ch
 x7driver-vmware.xml:    $(BOOKdir)/$@ $(srcdir)/x7driver-vmware.ch
 
 installing.xml:          $(BOOKdir)/$@ $(srcdir)/installing.ch
+libva.xml:               $(BOOKdir)/$@ $(srcdir)/libva.ch
+libvdpau.xml:            $(BOOKdir)/$@ $(srcdir)/libvdpau.ch
 libXau.xml:              $(BOOKdir)/$@ $(srcdir)/libXau.ch
 libxcb.xml:              $(BOOKdir)/$@ $(srcdir)/libxcb.ch
 libXdmcp.xml:            $(BOOKdir)/$@ $(srcdir)/libXdmcp.ch

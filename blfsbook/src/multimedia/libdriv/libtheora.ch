@@ -157,11 +157,13 @@
 @z
 
 @x
-    <para>If you built the examples and wish to install them (so that you can hack on
-    <literal>theora</literal>):</para>
+    <para>If you wish to install the examples (so that you can hack on
+    <literal>theora</literal>), install them as the <systemitem
+    class="username">root</systemitem> user:</para>
 @y
     <para>
-    サンプルをビルドしインストールしたい場合は以下を実行します。 (<literal>theora</literal> をハックできます。)
+    サンプルをビルドしインストールしたい場合 (<literal>theora</literal> をハックしたい場合) は、<systemitem
+    class="username">root</systemitem> ユーザーになって以下を実行しインストールします。 
     </para>
 @z
 

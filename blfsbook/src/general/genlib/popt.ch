@@ -110,10 +110,10 @@
 @z
 
 @x
-    <para>To test the results, issue:</para>
+    <para>To test the results, issue:<userinput>make check</userinput>.</para>
 @y
     <para>
-    コンパイル結果をテストする場合は以下を実行します。
+    コンパイル結果をテストする場合は <userinput>make check</userinput> を実行します。
     </para>
 @z
 

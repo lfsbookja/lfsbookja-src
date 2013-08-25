@@ -80,12 +80,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libjpeg"/> and
-    <xref linkend="lcms"/></para>
+    <para role="required">
+      <xref linkend="libjpeg"/> and
+      <xref linkend="lcms2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libjpeg"/>,
-    <xref linkend="lcms"/></para>
+    <para role="required">
+      <xref linkend="libjpeg"/>,
+      <xref linkend="lcms2"/>
+    </para>
 @z
 
 @x
@@ -132,43 +136,13 @@
 @z
 
 @x
-    <para><command>cp makefiles/makefile.linux Makefile</command>: There are no
-    autotools shipped with this package. The Linux <filename>Makefile</filename>
-    is copied to the root of the source tree, facilitating the installation.</para>
+      <command>sed -i "..." libmng_types.h</command>: This command adds a
+      missing header which would cause other apps that link to this
+      package fail to compile.
 @y
-    <para>
-    <command>cp makefiles/makefile.linux Makefile</command>:
-    このパッケージには autotools が含まれていません。
-    Linux に対する <filename>Makefile</filename> をソースツリーのルートからコピーして、インストールに利用します。
-    </para>
-@z
-
-@x
-    <para><command>sed -i -e 's/unroll-loops/&amp; -fPIC/' Makefile</command>: 
-    Add a gcc option to make the build compatible with x86_64 systems.</para>
-@y
-    <para><command>sed -i -e 's/unroll-loops/&amp; -fPIC/' Makefile</command>: 
-    x86_64 システムとの互換性を保ったビルドを行うために gcc のオプションを追加します。
-    </para>
-@z
-
-@x
-    <para><command>sed -i '/^install\|cp.*libmng.a/ s/libmng.a//' Makefile</command>
-    This command disables installing the static library.</para>
-@y
-    <para><command>sed -i '/^install\|cp.*libmng.a/ s/libmng.a//' Makefile</command>
-    このコマンドはスタティックライブラリをインストールしないようにします。</para>
-@z
-
-@x
-    <para><command>install ...</command>: The documentation files are not
-    installed by the installation procedure, so they are copied manually.</para>
-@y
-    <para>
-    <command>install ...</command>:
-    インストール処理において文書ファイルはインストールされません。
-    したがって手動によりコピーを行います。
-    </para>
+      <command>sed -i "..." libmng_types.h</command>:
+      このコマンドは不足するヘッダーファイル指定を追加するものです。
+      これを行っていないと、他のアプリケーションが当パッケージをリンクする際にコンパイルエラーとなります。
 @z
 
 @x

@@ -103,14 +103,14 @@
     <bridgehead renderas="sect4">Optional for NFSv4 Support</bridgehead>
     <para role="optional">
       <xref linkend="libevent"/>,
-      <xref linkend="sqlite3"/>, and
+      <xref linkend="sqlite"/>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">NFSv4 サポートのための任意のパッケージ</bridgehead>
     <para role="optional">
       <xref linkend="libevent"/>,
-      <xref linkend="sqlite3"/>,
+      <xref linkend="sqlite"/>,
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
     </para>
 @z

@@ -139,21 +139,21 @@
 
 @x
     <para><command>sed -i '217s@set@...</command>: This sed fixes compiling with
-    <application>GCC</application> 4.7.x. It is safe to omit when compiling with
-    older <application>GCC</application> versions.</para>
+    <application>GCC</application> 4.7 and newer. It is safe to omit when compiling
+    with older <application>GCC</application> versions.</para>
 @y
     <para><command>sed -i '217s@set@...</command>:
-    この sed コマンドは <application>GCC</application> 4.7.x を用いてコンパイルできるようにするものです。
+    この sed コマンドは <application>GCC</application> 4.7 またはそれ以上を用いてコンパイルできるようにするものです。
     <application>GCC</application> の古いバージョンを使ってコンパイルする場合には、このコマンド実行を省略するのが無難です。
     </para>
 @z
 
 @x
-    <para><parameter>--certstore-path=/etc/ssl/ca-bundle.crt</parameter>: Causes
+    <para><option>--certstore-path=/etc/ssl/ca-bundle.crt</option>: Causes
     the build to use the system-installed CA Certificates instead of a bundled
     copy.</para>
 @y
-    <para><parameter>--certstore-path=/etc/ssl/ca-bundle.crt</parameter>:
+    <para><option>--certstore-path=/etc/ssl/ca-bundle.crt</option>:
     本パッケージのビルドにおいて、バンドルされている電子証明書データを用いず、システムにインストールされたものを用いるようにします。
     </para>
 @z
@@ -175,11 +175,31 @@
 @z
 
 @x
-        <seg>qcatool2 and qcatool2.debug</seg>
-        <seg>libqca.so and libqca.so.&qca-version;.debug</seg>
-        <seg>&qt4-dir;/include/QtCrypto and &qt4-dir;/share/qca</seg>
+        <seg>qcatool2</seg>
+        <seg>libqca.so</seg>
+        <seg>&qt4-dir;/include/QtCrypto</seg>
 @y
-        <seg>qcatool2, qcatool2.debug</seg>
-        <seg>libqca.so, libqca.so.&qca-version;.debug</seg>
-        <seg>&qt4-dir;/include/QtCrypto, &qt4-dir;/share/qca</seg>
+        <seg>qcatool2</seg>
+        <seg>libqca.so</seg>
+        <seg>&qt4-dir;/include/QtCrypto</seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x qcatool2
+          <para>is a command line tool for performing various cryptographic
+	  operations with Qca.</para>
+@y
+          <para>is a command line tool for performing various cryptographic
+	  operations with Qca.</para>
+@z
+
+@x libqca.so
+          <para>is the Qt Cryptography Architecture (Qca) library.</para>
+@y
+          <para>Qt 暗号アーキテクチャー (Qt Cryptography Architecture; Qca) ライブラリ。</para>
 @z

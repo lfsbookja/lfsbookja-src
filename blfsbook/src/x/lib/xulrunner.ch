@@ -127,6 +127,7 @@
       <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
+      <xref linkend="gst-plugins-base"/>,
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
       <xref linkend="startup-notification"/>,
@@ -139,10 +140,11 @@
       <xref linkend="curl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
+      <xref linkend="gst-plugins-base"/>,
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <xref linkend="libnotify"/>,
       <xref linkend="startup-notification"/>,
-      <xref linkend="wget"/>,
+      <xref linkend="wget"/> and
       <xref linkend="wireless_tools"/>
     </para>
 @z
@@ -176,7 +178,7 @@
 @z
 
 @x
-      Install <application>Xulrunner</application> by issuing the following
+      Build <application>Xulrunner</application> by issuing the following
       commands:
 @y
       <application>Xulrunner</application> をビルドするために以下を実行します。
@@ -189,7 +191,7 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Install, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z

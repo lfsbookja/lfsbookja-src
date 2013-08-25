@@ -42,6 +42,113 @@
 @z
 
 @x
+      <para>August 24th, 2013</para>
+@y
+      <para>2013/08/24</para>
+@z
+@x
+          <para>[bdubbs] - Update to git-1.8.4. Fixes 
+          <ulink url="&blfs-ticket-root;3998">#3998</ulink>.</para>
+@y
+          <para>[bdubbs] - git-1.8.4 へのアップデート。
+          <ulink url="&blfs-ticket-root;3998">#3998</ulink> を Fix に。</para>
+@z
+@x
+          <para>[bdubbs] - Update to doxygen-1.8.5. Fixes 
+          <ulink url="&blfs-ticket-root;3999">#3999</ulink>.</para>
+@y
+          <para>[bdubbs] - doxygen-1.8.5 へのアップデート。
+          <ulink url="&blfs-ticket-root;3999">#3999</ulink> を Fix に。</para>
+@z
+@x
+          <para>[rthomsen] - Add <option>--no-separate-debug-info</option> 
+          switch to Qca instructions.</para>
+@y
+          <para>[rthomsen] - Qca のビルド手順にて <option>--no-separate-debug-info</option> スイッチを追加。</para>
+@z
+
+@x
+      <para>August 23rd, 2013</para>
+@y
+      <para>2013/08/23</para>
+@z
+@x
+          <para>[fernando] - freetype: comment broken ftp link; compressdoc:
+          note to alternatively use editor; cacerts: change wget to
+          recommended and cut-and-pasting to copy-and-pasting.</para>
+@y
+          <para>[fernando] - freetype: 無効になった FTP リンクについて言及。
+          compressdoc: エディタ利用を勧めるメモ追加。
+          cacerts: wget を推奨パッケージに。
+          またカットアンドペーストをコピーアンドペーストに。</para>
+@z
+
+@x
+      <para>August 22nd, 2013</para>
+@y
+      <para>2013/08/22</para>
+@z
+@x
+          <para>[bdubbs] - Update to gnupg-2.0.21. Fixes
+          <ulink url="&blfs-ticket-root;3985">#3985</ulink>.</para>
+@y
+          <para>[bdubbs] - gnupg-2.0.21 へのアップデート。
+          <ulink url="&blfs-ticket-root;3985">#3985</ulink> を Fix に。</para>
+@z
+@x
+          <para>[ken] - libjpeg-turbo can be built with either NASM or yasm
+          (now tested with yasm on i686).</para>
+@y
+          <para>[ken] - libjpeg-turbo は NASM, yasm のいずれでも良いように。
+          (i686 にて yasm 利用を確認済。)</para>
+@z
+
+@x
+      <para>August 20th, 2013</para>
+@y
+      <para>2013/08/20</para>
+@z
+@x
+          <para>[bdubbs] - Update to qemu-1.6.0. Fixes
+          <ulink url="&blfs-ticket-root;3979">#3979</ulink>.</para>
+@y
+          <para>[bdubbs] - qemu-1.6.0 へのアップデート。
+          <ulink url="&blfs-ticket-root;3979">#3979</ulink> を Fix に。</para>
+@z
+@x
+          <para>[ken] - Note that yasm can build libjpeg-turbo on x86_64.</para>
+@y
+          <para>[ken] - x86_64 にて libjpeg-turbo は yasm とともにビルド可能。</para>
+@z
+@x
+          <para>[krejzi] - Added libva 1.2.1.</para>
+@y
+          <para>[krejzi] - libva 1.2.1 追加。</para>
+@z
+@x
+          <para>[krejzi] - Added libvdpau 0.7.</para>
+@y
+          <para>[krejzi] - libvdpau 0.7 追加。</para>
+@z
+
+@x
+      <para>August 19th, 2013</para>
+@y
+      <para>2013/08/19</para>
+@z
+@x
+          <para>[fernando] - Xulrunner: tweaks, note for memory used for building.
+          </para>
+@y
+          <para>[fernando] - Xulrunner: 微修正。ビルド時のメモリ消費についてメモ追記。</para>
+@z
+@x
+          <para>[ken] - Add sed to postfix to compile with current BerkeleyDB.
+@y
+          <para>[ken] - postfix にて、最新の BerkeleyDB を用いてビルドできるように sed コマンドを追加。
+@z
+
+@x
       <para>August 18th, 2013</para>
 @y
       <para>2013/08/18</para>

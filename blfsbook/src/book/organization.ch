@@ -174,11 +174,11 @@
 
 @x
   <para><application>GNOME</application> is the main alternative to
-  <application>KDE</application> in the Desktop Environment arena and
-  we cover <application>GNOME</application>-&gnome-version; here.</para>
+  <application>KDE</application> in the Desktop Environment arena.
+  </para>
 @y
   <para>
-  <application>GNOME</application> は <application>KDE</application> とは別の選択肢となるデスクトップ環境であり <application>GNOME</application>-&gnome-version; を説明します。
+  <application>GNOME</application> は <application>KDE</application> とは別の選択肢となるデスクトップ環境です。
   </para>
 @z
 

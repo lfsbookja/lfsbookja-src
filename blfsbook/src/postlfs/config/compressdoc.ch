@@ -27,7 +27,7 @@
   contain links&mdash;hard and symbolic&mdash;which defeat simple ideas like
   recursively calling <command>gzip</command> on them. A better way to go is
   to use the script below. If you would prefer to download the file instead of
-  creating it by typing or cut-and-pasting, you can find it at
+  creating it by typing or copy-and-pasting, you can find it at
   <ulink url="&files-anduin;/compressdoc"/> (the file should be installed in
   the <filename class="directory">/usr/sbin</filename> directory).</para>
 @y
@@ -39,10 +39,9 @@ However, things are not that simple; man directories tend to
   contain links&mdash;hard and symbolic&mdash;which defeat simple ideas like
   recursively calling <command>gzip</command> on them. A better way to go is
   to use the script below. If you would prefer to download the file instead of
-  creating it by typing or cut-and-pasting, you can find it at
+  creating it by typing or copy-and-pasting, you can find it at
   <ulink url="&files-anduin;/compressdoc"/> (the file should be installed in
-  the <filename class="directory">/usr/sbin</filename> directory).
-  </para>
+  the <filename class="directory">/usr/sbin</filename> directory).</para>
 @z
 
 @x

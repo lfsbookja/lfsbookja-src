@@ -155,11 +155,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="libvdpau"/> (to build VDPAU drivers) and
       <xref linkend="llvm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="libvdpau"/> (VDPAU ドライバーのビルド時),
       <xref linkend="llvm"/>
     </para>
 @z
@@ -328,38 +330,38 @@
           libxatracker.so
         </seg>
         <seg>
-          /usr/include/EGL,
-          /usr/include/GLES,
-          /usr/include/GLES2,
-          /usr/include/GLES3,
-          /usr/include/KHR,
-          /usr/include/VG,
-          /usr/lib/dri,
-          /usr/lib/egl,
-          /usr/lib/gallium-pipe and
-          /usr/lib/gbm
+          $XORG_PREFIX/include/EGL,
+          $XORG_PREFIX/include/GLES,
+          $XORG_PREFIX/include/GLES2,
+          $XORG_PREFIX/include/GLES3,
+          $XORG_PREFIX/include/KHR,
+          $XORG_PREFIX/include/VG,
+          $XORG_PREFIX/lib/dri,
+          $XORG_PREFIX/lib/egl,
+          $XORG_PREFIX/lib/gallium-pipe and
+          $XORG_PREFIX/lib/gbm
         </seg>
 @y
         <seg>
-          glxgears, glxinfo
+          glxgears and glxinfo
         </seg>
         <seg>
           libdricore&mesalib-version;.so, libEGL.so, libgbm.so, libglapi.so,
           libGLESv1_CM.so, libGLESv2.so, libGL.so, libGLU.so,
-          libllvmradeon&mesalib-version;.so, libOpenVG.so, libOSMesa.so,
+          libllvmradeon&mesalib-version;.so, libOpenVG.so, libOSMesa.so and
           libxatracker.so
         </seg>
         <seg>
-          /usr/include/EGL,
-          /usr/include/GLES,
-          /usr/include/GLES2,
-          /usr/include/GLES3,
-          /usr/include/KHR,
-          /usr/include/VG,
-          /usr/lib/dri,
-          /usr/lib/egl,
-          /usr/lib/gallium-pipe
-          /usr/lib/gbm
+          $XORG_PREFIX/include/EGL,
+          $XORG_PREFIX/include/GLES,
+          $XORG_PREFIX/include/GLES2,
+          $XORG_PREFIX/include/GLES3,
+          $XORG_PREFIX/include/KHR,
+          $XORG_PREFIX/include/VG,
+          $XORG_PREFIX/lib/dri,
+          $XORG_PREFIX/lib/egl,
+          $XORG_PREFIX/lib/gallium-pipe and
+          $XORG_PREFIX/lib/gbm
         </seg>
 @z
 

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY midori-buildsize     "50 MB (9 MB installed)">
+  <!ENTITY midori-buildsize     "95 MB (10 MB installed)">
 @y
-  <!ENTITY midori-buildsize     "50 MB (9 MB installed)">
+  <!ENTITY midori-buildsize     "95 MB (10 MB installed)">
 @z
 
 @x
@@ -116,8 +116,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="&gnome-download-http;/gnome-keyring/">GNOME Keyring (2.x)</ulink> or
-      <xref linkend="gcr"/>,
       <xref linkend="gtk-doc"/> and
       <xref linkend="libunique"/> or
       <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>
@@ -125,8 +123,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="&gnome-download-http;/gnome-keyring/">GNOME Keyring (2.x)</ulink> または
-      <xref linkend="gcr"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libunique"/> または
       <ulink url="&gnome-download-http;/libunique/">libunique (3.x)</ulink>

@@ -17,6 +17,7 @@ CHANGE_FILES = \
 	gnome-desktop.ch             \
 	gnome-icon-theme.ch          \
 	gnome-icon-theme-symbolic.ch \
+	gnome-icon-theme-extras.ch   \
 	gnome-keyring.ch             \
 	gnome-themes-standard.ch     \
 	gnome-video-effects.ch       \
@@ -58,6 +59,7 @@ gjs.xml:                   $(BOOKdir)/$@ $(srcdir)/gjs.ch
 gnome-desktop.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-desktop.ch
 gnome-icon-theme.xml:          $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme.ch
 gnome-icon-theme-symbolic.xml: $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-symbolic.ch
+gnome-icon-theme-extras.xml:   $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-extras.ch
 gnome-keyring.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-keyring.ch
 gnome-video-effects.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-video-effects.ch
 gtksourceview.xml:             $(BOOKdir)/$@ $(srcdir)/gtksourceview.ch
