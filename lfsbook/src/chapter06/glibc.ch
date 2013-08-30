@@ -68,6 +68,12 @@
     </para>
 @z
 
+@x
+    <para>An upstream change needs to be reverted:</para>
+@y
+    <para>アップストリームの変更の中に、元に戻すことが必要なものがあります。</para>
+@z
+
 % @x
 %     <para>Fix a problem that causes the build to fail in the LFS environment:</para>
 % @y
