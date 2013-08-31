@@ -161,6 +161,20 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>-DENABLE_DBUS=OFF</option>: Use this <command>cmake</command>
+      variable if you don't have <application>D-Bus</application> installed.
+@y
+      <option>-DENABLE_DBUS=OFF</option>:
+      この <command>cmake</command> 変数は <application>D-Bus</application> をインストールしていない場合に指定します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

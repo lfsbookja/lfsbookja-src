@@ -85,6 +85,19 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      An MTA such as <xref linkend="postfix"/>, <xref linkend="sendmail"/>, or 
+      <xref linkend="exim"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      以下のような MTA のいずれか： <xref linkend="postfix"/>, <xref linkend="sendmail"/>, <xref linkend="exim"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/>

@@ -69,6 +69,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Wget Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Wget&Dependencies2;</bridgehead>

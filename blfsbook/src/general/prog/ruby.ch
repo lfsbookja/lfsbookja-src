@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY ruby-time          "3.9 SBU (including all tests)">
+@y
+  <!ENTITY ruby-time          "3.9 SBU (すべてのテスト実行を含む)">
+@z
+
+@x
     <title>Introduction to Ruby</title>
 @y
     <title>&IntroductionTo1;Ruby&IntroductionTo2;</title>
